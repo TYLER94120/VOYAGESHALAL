@@ -1,536 +1,497 @@
 {
-  "slug": "dakhla",
-  "nom": "Dakhla",
-  "pays": "Maroc",
-  "pays_slug": "maroc",
-  "continent": "Afrique",
-  "region": "Sud du Maroc / Sahara",
-  "coordonnees": {
-    "lat": 23.6848,
-    "lng": -15.9579
-  },
-  "codeISO": "MA",
-  "score_halal": 4.5,
-  "halalScore": 9.1,
-  "description": "Presqu'île du Sahara atlantique entre désert et océan, Dakhla est l'un des meilleurs spots de kitesurf au monde, avec sa lagune turquoise.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Dakhla_magic1.png/1920px-Dakhla_magic1.png",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Dakhla_magic1.png/1920px-Dakhla_magic1.png",
-  "metaDescription": "Presqu'île du Sahara atlantique entre désert et océan, Dakhla est l'un des meilleurs spots de kitesurf au monde, avec sa lagune turquoise.",
+ "slug": "dakhla",
+ "nom": "Dakhla",
+ "pays": "Maroc",
+ "pays_slug": "maroc",
+ "continent": "Afrique",
+ "region": "Sud du Maroc / Sahara",
+ "coordonnees": {
+  "lat": 23.6848,
+  "lng": -15.9579
+ },
+ "codeISO": "MA",
+ "score_halal": 4.5,
+ "halalScore": 9.1,
+ "description": "Presqu'île du Sahara atlantique entre désert et océan, Dakhla est l'un des meilleurs spots de kitesurf au monde, avec sa lagune turquoise.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Dakhla_magic1.png/1920px-Dakhla_magic1.png",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Dakhla_magic1.png/1920px-Dakhla_magic1.png",
+ "metaDescription": "Presqu'île du Sahara atlantique entre désert et océan, Dakhla est l'un des meilleurs spots de kitesurf au monde, avec sa lagune turquoise.",
+ "monnaie": "MAD (Dirham marocain)",
+ "langue": "Arabe, Tamazight, Français",
+ "statistiques": {
+  "restaurants_halal": 0,
+  "mosquees": 2,
+  "hotels": 33
+ },
+ "infoPratique": {
   "monnaie": "MAD (Dirham marocain)",
   "langue": "Arabe, Tamazight, Français",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 34
+  "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
+  "meilleureEpoque": "Printemps et automne (climat doux)."
+ },
+ "tags": [
+  "halal",
+  "Maroc"
+ ],
+ "restaurants": [],
+ "hotels": [
+  {
+   "nom": "Hotel Ayouz",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=23.6890907,-15.9438801",
+   "lat": 23.6890907,
+   "lng": -15.9438801,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=23.6890907,-15.9438801",
+   "source": "osm"
   },
-  "infoPratique": {
-    "monnaie": "MAD (Dirham marocain)",
-    "langue": "Arabe, Tamazight, Français",
-    "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
-    "meilleureEpoque": "Printemps et automne (climat doux)."
+  {
+   "nom": "Hôtel Rias Dakhla",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=23.6879659,-15.9407708",
+   "lat": 23.6879659,
+   "lng": -15.9407708,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=23.6879659,-15.9407708",
+   "source": "osm"
   },
-  "tags": [
-    "halal",
-    "Maroc"
-  ],
-  "restaurants": [],
-  "hotels": [
-    {
-      "nom": "Hotel Ayouz",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=23.6890907,-15.9438801",
-      "lat": 23.6890907,
-      "lng": -15.9438801,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=23.6890907,-15.9438801",
-      "source": "osm"
-    },
-    {
-      "nom": "Hôtel Rias Dakhla",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=23.6879659,-15.9407708",
-      "lat": 23.6879659,
-      "lng": -15.9407708,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=23.6879659,-15.9407708",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel El Massira",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=23.6907922,-15.9406993",
-      "lat": 23.6907922,
-      "lng": -15.9406993,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=23.6907922,-15.9406993",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel El Pescador",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=23.6901569,-15.9400143",
-      "lat": 23.6901569,
-      "lng": -15.9400143,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=23.6901569,-15.9400143",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Tafoudart",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=23.6898629,-15.9383078",
-      "lat": 23.6898629,
-      "lng": -15.9383078,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=23.6898629,-15.9383078",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Erraha",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=23.6897726,-15.9376931",
-      "lat": 23.6897726,
-      "lng": -15.9376931,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=23.6897726,-15.9376931",
-      "source": "osm"
-    },
-    {
-      "nom": "فندق المحيط",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=23.6934625,-15.9372971",
-      "lat": 23.6934625,
-      "lng": -15.9372971,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=23.6934625,-15.9372971",
-      "source": "osm"
-    },
-    {
-      "nom": "Bab Al Bahar Hotel & Spa",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=23.6935195,-15.9339168",
-      "lat": 23.6935195,
-      "lng": -15.9339168,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.bab-al-bahar.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Le Palais Rhoul Hotel & Spa",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=23.6940447,-15.933445",
-      "lat": 23.6940447,
-      "lng": -15.933445,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=23.6940447,-15.933445",
-      "source": "osm"
-    },
-    {
-      "nom": "فندق بولوتاد",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=23.6944779,-15.933544",
-      "lat": 23.6944779,
-      "lng": -15.933544,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=23.6944779,-15.933544",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Tirs",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=23.6976629,-15.931901",
-      "lat": 23.6976629,
-      "lng": -15.931901,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=23.6976629,-15.931901",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Mansour",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=23.69718,-15.931571",
-      "lat": 23.69718,
-      "lng": -15.931571,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=23.69718,-15.931571",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Annakhil",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=23.6981121,-15.9321074",
-      "lat": 23.6981121,
-      "lng": -15.9321074,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=23.6981121,-15.9321074",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Aigue",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=23.6979431,-15.9315659",
-      "lat": 23.6979431,
-      "lng": -15.9315659,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=23.6979431,-15.9315659",
-      "source": "osm"
-    },
-    {
-      "nom": "Sahara",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=23.6978706,-15.9314724",
-      "lat": 23.6978706,
-      "lng": -15.9314724,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=23.6978706,-15.9314724",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Ahram",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=23.6977493,-15.9313223",
-      "lat": 23.6977493,
-      "lng": -15.9313223,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=23.6977493,-15.9313223",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel al Ahram",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=23.6977632,-15.9312825",
-      "lat": 23.6977632,
-      "lng": -15.9312825,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=23.6977632,-15.9312825",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Al Quds",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=23.6985568,-15.9313552",
-      "lat": 23.6985568,
-      "lng": -15.9313552,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=23.6985568,-15.9313552",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Atlas",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=23.6988817,-15.9310894",
-      "lat": 23.6988817,
-      "lng": -15.9310894,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=23.6988817,-15.9310894",
-      "source": "osm"
-    },
-    {
-      "nom": "Bahia",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=23.698501,-15.9306806",
-      "lat": 23.698501,
-      "lng": -15.9306806,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=23.698501,-15.9306806",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Dubai",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=23.6987612,-15.9308273",
-      "lat": 23.6987612,
-      "lng": -15.9308273,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=23.6987612,-15.9308273",
-      "source": "osm"
-    },
-    {
-      "nom": "Ramsis",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=23.7006043,-15.9297691",
-      "lat": 23.7006043,
-      "lng": -15.9297691,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=23.7006043,-15.9297691",
-      "source": "osm"
-    },
-    {
-      "nom": "Sahara Regency",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 4,
-      "mapsUrl": "https://maps.google.com/?q=23.7021441,-15.9281192",
-      "lat": 23.7021441,
-      "lng": -15.9281192,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=23.7021441,-15.9281192",
-      "source": "osm"
-    },
-    {
-      "nom": "Boutique Hôtel Albaraka",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=23.7021989,-15.9266045",
-      "lat": 23.7021989,
-      "lng": -15.9266045,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=23.7021989,-15.9266045",
-      "source": "osm"
-    },
-    {
-      "nom": "Dar Rio Oro",
-      "categorie": "Hôtel",
-      "priceRange": "€€€",
-      "score": 3,
-      "mapsUrl": "https://maps.google.com/?q=23.7032552,-15.925559",
-      "lat": 23.7032552,
-      "lng": -15.925559,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=23.7032552,-15.925559",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Doumss فندق دومس",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=23.707731,-15.9261069",
-      "lat": 23.707731,
-      "lng": -15.9261069,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=23.707731,-15.9261069",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Imperial Playa",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=23.7061894,-15.9243299",
-      "lat": 23.7061894,
-      "lng": -15.9243299,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=23.7061894,-15.9243299",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel El Bachir",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=23.7182738,-15.9225388",
-      "lat": 23.7182738,
-      "lng": -15.9225388,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=23.7182738,-15.9225388",
-      "source": "osm"
-    },
-    {
-      "nom": "Ocean Vagabond Lassarga",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=23.6346221,-15.9980403",
-      "lat": 23.6346221,
-      "lng": -15.9980403,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.oceanvagabond.com/fr/dakhla-maroc/dakhla-lassarga/",
-      "source": "osm"
-    },
-    {
-      "nom": "Surf House",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=23.7350022,-15.915758",
-      "lat": 23.7350022,
-      "lng": -15.915758,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=23.7350022,-15.915758",
-      "source": "osm"
-    },
-    {
-      "nom": "Dakhla Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=23.7345857,-15.9144176",
-      "lat": 23.7345857,
-      "lng": -15.9144176,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=23.7345857,-15.9144176",
-      "source": "osm"
-    },
-    {
-      "nom": "Résidence Johara",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=23.7380894,-15.9133835",
-      "lat": 23.7380894,
-      "lng": -15.9133835,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=23.7380894,-15.9133835",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Calipau Sahara",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=23.7488159,-15.9086242",
-      "lat": 23.7488159,
-      "lng": -15.9086242,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=23.7488159,-15.9086242",
-      "source": "osm"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Dakhla",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Dakhla",
-      "description": "Mosquée principale de la ville, prière du vendredi.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20Dakhla%20Dakhla%20Maroc"
-    },
-    {
-      "nom": "مسجد البيعة",
-      "lat": 23.7043819,
-      "lng": -15.9492369,
-      "coordonnees": {
-        "lat": 23.7043819,
-        "lng": -15.9492369
-      },
-      "mapsUrl": "https://maps.google.com/?q=23.7043819,-15.9492369",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد السنة",
-      "lat": 23.6965777,
-      "lng": -15.9357653,
-      "coordonnees": {
-        "lat": 23.6965777,
-        "lng": -15.9357653
-      },
-      "mapsUrl": "https://maps.google.com/?q=23.6965777,-15.9357653",
-      "source": "osm"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Lagune de Dakhla (kitesurf)",
-      "categorie": "Sport nautique",
-      "description": "Spot de kitesurf de réputation mondiale, eaux plates turquoise.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Lagune%20de%20Dakhla%20%28kitesurf%29%20Dakhla%20Maroc"
-    },
-    {
-      "id": "a2",
-      "nom": "Dune blanche",
-      "categorie": "Nature",
-      "description": "Dune de sable plongeant dans la lagune, excursion incontournable.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Dune%20blanche%20Dakhla%20Maroc",
-      "lat": 23.821995,
-      "lng": -15.7447573,
-      "geocoded": true
-    },
-    {
-      "id": "a3",
-      "nom": "Sources chaudes & désert atlantique",
-      "categorie": "Nature",
-      "description": "Bains naturels et étendues sahariennes face à l'océan.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Sources%20chaudes%20%26%20d%C3%A9sert%20atlantique%20Dakhla%20Maroc"
-    },
-    {
-      "nom": "Peninsule de Dakhla شبه جزيرة الداخلة",
-      "lat": 23.7010399,
-      "lng": -15.928781,
-      "coordonnees": {
-        "lat": 23.7010399,
-        "lng": -15.928781
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=23.7010399,-15.928781",
-      "source": "osm"
-    },
-    {
-      "nom": "Bureau de Sahara Sailing",
-      "lat": 23.7351318,
-      "lng": -15.9145209,
-      "coordonnees": {
-        "lat": 23.7351318,
-        "lng": -15.9145209
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=23.7351318,-15.9145209",
-      "source": "osm"
-    },
-    {
-      "nom": "Foum El Bouir Parc",
-      "lat": 23.7673313,
-      "lng": -15.9197943,
-      "coordonnees": {
-        "lat": 23.7673313,
-        "lng": -15.9197943
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=23.7673313,-15.9197943",
-      "source": "osm"
-    },
-    {
-      "nom": "Autruches",
-      "lat": 23.794275,
-      "lng": -15.9123833,
-      "coordonnees": {
-        "lat": 23.794275,
-        "lng": -15.9123833
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=23.794275,-15.9123833",
-      "source": "osm"
-    },
-    {
-      "nom": "جاكوزي الكبريت",
-      "lat": 23.7959511,
-      "lng": -15.9105423,
-      "coordonnees": {
-        "lat": 23.7959511,
-        "lng": -15.9105423
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=23.7959511,-15.9105423",
-      "source": "osm"
-    }
-  ],
-  "imageCredit": "Wikimedia Commons",
-  "osmEnriched": true,
-  "osmEnrichedAt": "2026-06-30",
-  "description_en": "Dakhla, in Morocco, is a halal-friendly destination with a Halal Trust Score of 4.5/5. Muslim travelers will find a selection of halal restaurants, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
-  "metaDescription_en": "Halal guide to Dakhla: halal restaurants, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.5/5.",
-  "nom_en": "Dakhla"
+  {
+   "nom": "Hotel El Massira",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=23.6907922,-15.9406993",
+   "lat": 23.6907922,
+   "lng": -15.9406993,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=23.6907922,-15.9406993",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel El Pescador",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=23.6901569,-15.9400143",
+   "lat": 23.6901569,
+   "lng": -15.9400143,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=23.6901569,-15.9400143",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Tafoudart",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=23.6898629,-15.9383078",
+   "lat": 23.6898629,
+   "lng": -15.9383078,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=23.6898629,-15.9383078",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Erraha",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=23.6897726,-15.9376931",
+   "lat": 23.6897726,
+   "lng": -15.9376931,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=23.6897726,-15.9376931",
+   "source": "osm"
+  },
+  {
+   "nom": "فندق المحيط",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=23.6934625,-15.9372971",
+   "lat": 23.6934625,
+   "lng": -15.9372971,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=23.6934625,-15.9372971",
+   "source": "osm"
+  },
+  {
+   "nom": "Bab Al Bahar Hotel & Spa",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=23.6935195,-15.9339168",
+   "lat": 23.6935195,
+   "lng": -15.9339168,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.bab-al-bahar.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Le Palais Rhoul Hotel & Spa",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=23.6940447,-15.933445",
+   "lat": 23.6940447,
+   "lng": -15.933445,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=23.6940447,-15.933445",
+   "source": "osm"
+  },
+  {
+   "nom": "فندق بولوتاد",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=23.6944779,-15.933544",
+   "lat": 23.6944779,
+   "lng": -15.933544,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=23.6944779,-15.933544",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Tirs",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=23.6976629,-15.931901",
+   "lat": 23.6976629,
+   "lng": -15.931901,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=23.6976629,-15.931901",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Mansour",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=23.69718,-15.931571",
+   "lat": 23.69718,
+   "lng": -15.931571,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=23.69718,-15.931571",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Annakhil",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=23.6981121,-15.9321074",
+   "lat": 23.6981121,
+   "lng": -15.9321074,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=23.6981121,-15.9321074",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Aigue",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=23.6979431,-15.9315659",
+   "lat": 23.6979431,
+   "lng": -15.9315659,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=23.6979431,-15.9315659",
+   "source": "osm"
+  },
+  {
+   "nom": "Sahara",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=23.6978706,-15.9314724",
+   "lat": 23.6978706,
+   "lng": -15.9314724,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=23.6978706,-15.9314724",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Ahram",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=23.6977493,-15.9313223",
+   "lat": 23.6977493,
+   "lng": -15.9313223,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=23.6977493,-15.9313223",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel al Ahram",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=23.6977632,-15.9312825",
+   "lat": 23.6977632,
+   "lng": -15.9312825,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=23.6977632,-15.9312825",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Al Quds",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=23.6985568,-15.9313552",
+   "lat": 23.6985568,
+   "lng": -15.9313552,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=23.6985568,-15.9313552",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Atlas",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=23.6988817,-15.9310894",
+   "lat": 23.6988817,
+   "lng": -15.9310894,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=23.6988817,-15.9310894",
+   "source": "osm"
+  },
+  {
+   "nom": "Bahia",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=23.698501,-15.9306806",
+   "lat": 23.698501,
+   "lng": -15.9306806,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=23.698501,-15.9306806",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Dubai",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=23.6987612,-15.9308273",
+   "lat": 23.6987612,
+   "lng": -15.9308273,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=23.6987612,-15.9308273",
+   "source": "osm"
+  },
+  {
+   "nom": "Ramsis",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=23.7006043,-15.9297691",
+   "lat": 23.7006043,
+   "lng": -15.9297691,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=23.7006043,-15.9297691",
+   "source": "osm"
+  },
+  {
+   "nom": "Sahara Regency",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 4,
+   "mapsUrl": "https://maps.google.com/?q=23.7021441,-15.9281192",
+   "lat": 23.7021441,
+   "lng": -15.9281192,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=23.7021441,-15.9281192",
+   "source": "osm"
+  },
+  {
+   "nom": "Boutique Hôtel Albaraka",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=23.7021989,-15.9266045",
+   "lat": 23.7021989,
+   "lng": -15.9266045,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=23.7021989,-15.9266045",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar Rio Oro",
+   "categorie": "Hôtel",
+   "priceRange": "€€€",
+   "score": 3,
+   "mapsUrl": "https://maps.google.com/?q=23.7032552,-15.925559",
+   "lat": 23.7032552,
+   "lng": -15.925559,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=23.7032552,-15.925559",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Doumss فندق دومس",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=23.707731,-15.9261069",
+   "lat": 23.707731,
+   "lng": -15.9261069,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=23.707731,-15.9261069",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Imperial Playa",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=23.7061894,-15.9243299",
+   "lat": 23.7061894,
+   "lng": -15.9243299,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=23.7061894,-15.9243299",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel El Bachir",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=23.7182738,-15.9225388",
+   "lat": 23.7182738,
+   "lng": -15.9225388,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=23.7182738,-15.9225388",
+   "source": "osm"
+  },
+  {
+   "nom": "Ocean Vagabond Lassarga",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=23.6346221,-15.9980403",
+   "lat": 23.6346221,
+   "lng": -15.9980403,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.oceanvagabond.com/fr/dakhla-maroc/dakhla-lassarga/",
+   "source": "osm"
+  },
+  {
+   "nom": "Surf House",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=23.7350022,-15.915758",
+   "lat": 23.7350022,
+   "lng": -15.915758,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=23.7350022,-15.915758",
+   "source": "osm"
+  },
+  {
+   "nom": "Dakhla Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=23.7345857,-15.9144176",
+   "lat": 23.7345857,
+   "lng": -15.9144176,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=23.7345857,-15.9144176",
+   "source": "osm"
+  },
+  {
+   "nom": "Résidence Johara",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=23.7380894,-15.9133835",
+   "lat": 23.7380894,
+   "lng": -15.9133835,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=23.7380894,-15.9133835",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Calipau Sahara",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=23.7488159,-15.9086242",
+   "lat": 23.7488159,
+   "lng": -15.9086242,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=23.7488159,-15.9086242",
+   "source": "osm"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "مسجد البيعة",
+   "lat": 23.7043819,
+   "lng": -15.9492369,
+   "coordonnees": {
+    "lat": 23.7043819,
+    "lng": -15.9492369
+   },
+   "mapsUrl": "https://maps.google.com/?q=23.7043819,-15.9492369",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد السنة",
+   "lat": 23.6965777,
+   "lng": -15.9357653,
+   "coordonnees": {
+    "lat": 23.6965777,
+    "lng": -15.9357653
+   },
+   "mapsUrl": "https://maps.google.com/?q=23.6965777,-15.9357653",
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Peninsule de Dakhla شبه جزيرة الداخلة",
+   "lat": 23.7010399,
+   "lng": -15.928781,
+   "coordonnees": {
+    "lat": 23.7010399,
+    "lng": -15.928781
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=23.7010399,-15.928781",
+   "source": "osm"
+  },
+  {
+   "nom": "Bureau de Sahara Sailing",
+   "lat": 23.7351318,
+   "lng": -15.9145209,
+   "coordonnees": {
+    "lat": 23.7351318,
+    "lng": -15.9145209
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=23.7351318,-15.9145209",
+   "source": "osm"
+  },
+  {
+   "nom": "Foum El Bouir Parc",
+   "lat": 23.7673313,
+   "lng": -15.9197943,
+   "coordonnees": {
+    "lat": 23.7673313,
+    "lng": -15.9197943
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=23.7673313,-15.9197943",
+   "source": "osm"
+  },
+  {
+   "nom": "Autruches",
+   "lat": 23.794275,
+   "lng": -15.9123833,
+   "coordonnees": {
+    "lat": 23.794275,
+    "lng": -15.9123833
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=23.794275,-15.9123833",
+   "source": "osm"
+  },
+  {
+   "nom": "جاكوزي الكبريت",
+   "lat": 23.7959511,
+   "lng": -15.9105423,
+   "coordonnees": {
+    "lat": 23.7959511,
+    "lng": -15.9105423
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=23.7959511,-15.9105423",
+   "source": "osm"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30",
+ "description_en": "Dakhla, in Morocco, is a halal-friendly destination with a Halal Trust Score of 4.5/5. Muslim travelers will find a selection of halal restaurants, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
+ "metaDescription_en": "Halal guide to Dakhla: halal restaurants, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.5/5.",
+ "nom_en": "Dakhla",
+ "dataPurgedAt": "2026-07-15"
 }

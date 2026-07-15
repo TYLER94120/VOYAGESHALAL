@@ -1,1002 +1,973 @@
 {
-  "slug": "el-jadida",
-  "nom": "El Jadida",
-  "pays": "Maroc",
-  "pays_slug": "maroc",
-  "continent": "Afrique",
-  "region": "Centre du Maroc",
-  "coordonnees": {
-    "lat": 33.2316,
-    "lng": -8.5007
-  },
-  "codeISO": "MA",
-  "score_halal": 4.5,
-  "halalScore": 8.9,
-  "description": "Ancienne cité portugaise de Mazagan classée UNESCO sur la côte atlantique. Citerne souterraine spectaculaire et longue plage.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Morocco_-_El_Jadida_-_Medina.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Morocco_-_El_Jadida_-_Medina.jpg",
-  "metaDescription": "Ancienne cité portugaise de Mazagan classée UNESCO sur la côte atlantique. Citerne souterraine spectaculaire et longue plage.",
+ "slug": "el-jadida",
+ "nom": "El Jadida",
+ "pays": "Maroc",
+ "pays_slug": "maroc",
+ "continent": "Afrique",
+ "region": "Centre du Maroc",
+ "coordonnees": {
+  "lat": 33.2316,
+  "lng": -8.5007
+ },
+ "codeISO": "MA",
+ "score_halal": 4.5,
+ "halalScore": 8.9,
+ "description": "Ancienne cité portugaise de Mazagan classée UNESCO sur la côte atlantique. Citerne souterraine spectaculaire et longue plage.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Morocco_-_El_Jadida_-_Medina.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Morocco_-_El_Jadida_-_Medina.jpg",
+ "metaDescription": "Ancienne cité portugaise de Mazagan classée UNESCO sur la côte atlantique. Citerne souterraine spectaculaire et longue plage.",
+ "monnaie": "MAD (Dirham marocain)",
+ "langue": "Arabe, Tamazight, Français",
+ "statistiques": {
+  "restaurants_halal": 3,
+  "mosquees": 1,
+  "hotels": 56
+ },
+ "infoPratique": {
   "monnaie": "MAD (Dirham marocain)",
   "langue": "Arabe, Tamazight, Français",
-  "statistiques": {
-    "restaurants_halal": 3,
-    "mosquees": 1,
-    "hotels": 64
+  "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
+  "meilleureEpoque": "Printemps et automne (climat doux)."
+ },
+ "tags": [
+  "halal",
+  "Maroc"
+ ],
+ "restaurants": [
+  {
+   "nom": "Snack Al Massira",
+   "type": "moroccan, pizza, sandwich",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2425,-8.498013",
+   "lat": 33.2425,
+   "lng": -8.498013,
+   "halalConfidence": "likely",
+   "source": "osm"
   },
-  "infoPratique": {
-    "monnaie": "MAD (Dirham marocain)",
-    "langue": "Arabe, Tamazight, Français",
-    "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
-    "meilleureEpoque": "Printemps et automne (climat doux)."
+  {
+   "nom": "Snack Elbraija",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2536814,-8.5026094",
+   "lat": 33.2536814,
+   "lng": -8.5026094,
+   "halalConfidence": "likely",
+   "source": "osm"
   },
-  "tags": [
-    "halal",
-    "Maroc"
-  ],
-  "restaurants": [
-    {
-      "nom": "Snack Al Massira",
-      "type": "moroccan, pizza, sandwich",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2425,-8.498013",
-      "lat": 33.2425,
-      "lng": -8.498013,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Snack Elbraija",
-      "type": "moroccan",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2536814,-8.5026094",
-      "lat": 33.2536814,
-      "lng": -8.5026094,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Snack Bismillah",
-      "type": "moroccan, local",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2558431,-8.5044118",
-      "lat": 33.2558431,
-      "lng": -8.5044118,
-      "halalConfidence": "likely",
-      "source": "osm"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "Villa Amira",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.233306,-8.5000263",
-      "lat": 33.233306,
-      "lng": -8.5000263,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.233306,-8.5000263",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Yahya",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2425336,-8.4964888",
-      "lat": 33.2425336,
-      "lng": -8.4964888,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2425336,-8.4964888",
-      "source": "osm"
-    },
-    {
-      "nom": "Ragazzi",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2435419,-8.4963274",
-      "lat": 33.2435419,
-      "lng": -8.4963274,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2435419,-8.4963274",
-      "source": "osm"
-    },
-    {
-      "nom": "Al Khansaa",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2449208,-8.4979461",
-      "lat": 33.2449208,
-      "lng": -8.4979461,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2449208,-8.4979461",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel El Morabitine",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2443623,-8.4952286",
-      "lat": 33.2443623,
-      "lng": -8.4952286,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2443623,-8.4952286",
-      "source": "osm"
-    },
-    {
-      "nom": "PalmTree",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2422306,-8.49036",
-      "lat": 33.2422306,
-      "lng": -8.49036,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2422306,-8.49036",
-      "source": "osm"
-    },
-    {
-      "nom": "Hôtel Aboulanwar",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2421717,-8.5130568",
-      "lat": 33.2421717,
-      "lng": -8.5130568,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2421717,-8.5130568",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Verdi",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2463164,-8.5062374",
-      "lat": 33.2463164,
-      "lng": -8.5062374,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2463164,-8.5062374",
-      "source": "osm"
-    },
-    {
-      "nom": "Pyramides",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2435874,-8.4888541",
-      "lat": 33.2435874,
-      "lng": -8.4888541,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2435874,-8.4888541",
-      "source": "osm"
-    },
-    {
-      "nom": "Ibis",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2449103,-8.4903621",
-      "lat": 33.2449103,
-      "lng": -8.4903621,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2449103,-8.4903621",
-      "source": "osm"
-    },
-    {
-      "nom": "Mia Mazagan",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2444706,-8.4893106",
-      "lat": 33.2444706,
-      "lng": -8.4893106,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2444706,-8.4893106",
-      "source": "osm"
-    },
-    {
-      "nom": "Centre Ville",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2482845,-8.4984573",
-      "lat": 33.2482845,
-      "lng": -8.4984573,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2482845,-8.4984573",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Royal",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2486984,-8.5016173",
-      "lat": 33.2486984,
-      "lng": -8.5016173,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2486984,-8.5016173",
-      "source": "osm"
-    },
-    {
-      "nom": "Dar El Breija",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2487715,-8.4995141",
-      "lat": 33.2487715,
-      "lng": -8.4995141,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2487715,-8.4995141",
-      "source": "osm"
-    },
-    {
-      "nom": "Del Mar Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2436998,-8.4833209",
-      "lat": 33.2436998,
-      "lng": -8.4833209,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2436998,-8.4833209",
-      "source": "osm"
-    },
-    {
-      "nom": "Oceana Mazagan",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2437949,-8.4833002",
-      "lat": 33.2437949,
-      "lng": -8.4833002,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2437949,-8.4833002",
-      "source": "osm"
-    },
-    {
-      "nom": "Art Suites El Jadida",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.25067,-8.5026803",
-      "lat": 33.25067,
-      "lng": -8.5026803,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.25067,-8.5026803",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel de La Place",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2512971,-8.5035112",
-      "lat": 33.2512971,
-      "lng": -8.5035112,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2512971,-8.5035112",
-      "source": "osm"
-    },
-    {
-      "nom": "Hôtel La Place",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2513354,-8.5035402",
-      "lat": 33.2513354,
-      "lng": -8.5035402,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2513354,-8.5035402",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Cristour",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2515907,-8.5029521",
-      "lat": 33.2515907,
-      "lng": -8.5029521,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2515907,-8.5029521",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel France ( Ex Atlantis )",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2529548,-8.5024774",
-      "lat": 33.2529548,
-      "lng": -8.5024774,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2529548,-8.5024774",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Le Palais Andalous",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2516714,-8.5097191",
-      "lat": 33.2516714,
-      "lng": -8.5097191,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2516714,-8.5097191",
-      "source": "osm"
-    },
-    {
-      "nom": "Le Palais Andalous",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2516792,-8.5097204",
-      "lat": 33.2516792,
-      "lng": -8.5097204,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2516792,-8.5097204",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Maghreb",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2531458,-8.5025822",
-      "lat": 33.2531458,
-      "lng": -8.5025822,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2531458,-8.5025822",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Jahwara El Jadida",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2429225,-8.4784871",
-      "lat": 33.2429225,
-      "lng": -8.4784871,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2429225,-8.4784871",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Amwaj",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2439817,-8.4787844",
-      "lat": 33.2439817,
-      "lng": -8.4787844,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2439817,-8.4787844",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad La Maison des Épices à El Jadida",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2534475,-8.5051557",
-      "lat": 33.2534475,
-      "lng": -8.5051557,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2534475,-8.5051557",
-      "source": "osm"
-    },
-    {
-      "nom": "Maison des Epices",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2534837,-8.5052648",
-      "lat": 33.2534837,
-      "lng": -8.5052648,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2534837,-8.5052648",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Bordeaux",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2539328,-8.5053416",
-      "lat": 33.2539328,
-      "lng": -8.5053416,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2539328,-8.5053416",
-      "source": "osm"
-    },
-    {
-      "nom": "Hôtel Suisse",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2538331,-8.5081889",
-      "lat": 33.2538331,
-      "lng": -8.5081889,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2538331,-8.5081889",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel En Ruine",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2545235,-8.5046121",
-      "lat": 33.2545235,
-      "lng": -8.5046121,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2545235,-8.5046121",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel De Nice",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2545206,-8.5049173",
-      "lat": 33.2545206,
-      "lng": -8.5049173,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2545206,-8.5049173",
-      "source": "osm"
-    },
-    {
-      "nom": "Foundouk El Bacha",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2536748,-8.5095868",
-      "lat": 33.2536748,
-      "lng": -8.5095868,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2536748,-8.5095868",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel El Jadida",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2549224,-8.5056638",
-      "lat": 33.2549224,
-      "lng": -8.5056638,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2549224,-8.5056638",
-      "source": "osm"
-    },
-    {
-      "nom": "Brihi",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2306602,-8.5292669",
-      "lat": 33.2306602,
-      "lng": -8.5292669,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2306602,-8.5292669",
-      "source": "osm"
-    },
-    {
-      "nom": "Burn out",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2539013,-8.5127491",
-      "lat": 33.2539013,
-      "lng": -8.5127491,
-      "halalFriendly": false,
-      "bookingUrl": "http://www.riadburnout.com",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Ksar El Jadida",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2560776,-8.5019743",
-      "lat": 33.2560776,
-      "lng": -8.5019743,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2560776,-8.5019743",
-      "source": "osm"
-    },
-    {
-      "nom": "Maison D'Hôtes Cité Portugaise",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2561339,-8.5020073",
-      "lat": 33.2561339,
-      "lng": -8.5020073,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2561339,-8.5020073",
-      "source": "osm"
-    },
-    {
-      "nom": "La Cité Portugaise",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2561532,-8.501965",
-      "lat": 33.2561532,
-      "lng": -8.501965,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2561532,-8.501965",
-      "source": "osm"
-    },
-    {
-      "nom": "Art House",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2561551,-8.5030016",
-      "lat": 33.2561551,
-      "lng": -8.5030016,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2561551,-8.5030016",
-      "source": "osm"
-    },
-    {
-      "nom": "L'Iglesia",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2562652,-8.5012348",
-      "lat": 33.2562652,
-      "lng": -8.5012348,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2562652,-8.5012348",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Le Mazagao",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2562886,-8.5045917",
-      "lat": 33.2562886,
-      "lng": -8.5045917,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2562886,-8.5045917",
-      "source": "osm"
-    },
-    {
-      "nom": "Dar Yasmina",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2564292,-8.5033501",
-      "lat": 33.2564292,
-      "lng": -8.5033501,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2564292,-8.5033501",
-      "source": "osm"
-    },
-    {
-      "nom": "Dar Statia",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2569986,-8.5024068",
-      "lat": 33.2569986,
-      "lng": -8.5024068,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2569986,-8.5024068",
-      "source": "osm"
-    },
-    {
-      "nom": "Dar Fatima",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2569824,-8.503513",
-      "lat": 33.2569824,
-      "lng": -8.503513,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2569824,-8.503513",
-      "source": "osm"
-    },
-    {
-      "nom": "Dar Ettaki Workation Riad Cité Portugaise Mazagan",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2570726,-8.5020647",
-      "lat": 33.2570726,
-      "lng": -8.5020647,
-      "halalFriendly": false,
-      "bookingUrl": "https://dar-ettaki-com",
-      "source": "osm"
-    },
-    {
-      "nom": "B&B Dar El Jadida",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2574792,-8.5022164",
-      "lat": 33.2574792,
-      "lng": -8.5022164,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2574792,-8.5022164",
-      "source": "osm"
-    },
-    {
-      "nom": "Art Riad",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2575547,-8.5018114",
-      "lat": 33.2575547,
-      "lng": -8.5018114,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2575547,-8.5018114",
-      "source": "osm"
-    },
-    {
-      "nom": "A Casa Da Maré",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2577165,-8.5014859",
-      "lat": 33.2577165,
-      "lng": -8.5014859,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2577165,-8.5014859",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Soleil D'Orient",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2567576,-8.5092751",
-      "lat": 33.2567576,
-      "lng": -8.5092751,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2567576,-8.5092751",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad La VIlla & SPA",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2589196,-8.5059665",
-      "lat": 33.2589196,
-      "lng": -8.5059665,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2589196,-8.5059665",
-      "source": "osm"
-    },
-    {
-      "nom": "Dar Al Manar",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2438916,-8.436638",
-      "lat": 33.2438916,
-      "lng": -8.436638,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2438916,-8.436638",
-      "source": "osm"
-    },
-    {
-      "nom": "Centre d'Estivage FM6",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2536497,-8.4378954",
-      "lat": 33.2536497,
-      "lng": -8.4378954,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2536497,-8.4378954",
-      "source": "osm"
-    },
-    {
-      "nom": "Zephyr Mazagan",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2542044,-8.4368547",
-      "lat": 33.2542044,
-      "lng": -8.4368547,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2542044,-8.4368547",
-      "source": "osm"
-    },
-    {
-      "nom": "Wizone Mazagan",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.2578885,-8.4231587",
-      "lat": 33.2578885,
-      "lng": -8.4231587,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.2578885,-8.4231587",
-      "source": "osm"
-    },
-    {
-      "nom": "Pullman Mazagan Royal Golf & Spa Hotel El Jadida",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.25934,-8.4229495",
-      "lat": 33.25934,
-      "lng": -8.4229495,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.25934,-8.4229495",
-      "source": "osm"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "nom": "Mosquée Fqih Ettaleb El Aouni",
-      "lat": 33.2467937,
-      "lng": -8.5004327,
-      "coordonnees": {
-        "lat": 33.2467937,
-        "lng": -8.5004327
-      },
-      "mapsUrl": "https://maps.google.com/?q=33.2467937,-8.5004327",
-      "source": "osm"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Citerne portugaise",
-      "categorie": "Histoire",
-      "description": "Citerne souterraine aux reflets d'eau, décor de cinéma.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Citerne%20portugaise%20El%20Jadida%20Maroc",
-      "lat": 33.2565611,
-      "lng": -8.5024821,
-      "geocoded": true
-    },
-    {
-      "id": "a2",
-      "nom": "Cité portugaise (UNESCO)",
-      "categorie": "Culture",
-      "description": "Remparts et bastions de la forteresse de Mazagan.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Cit%C3%A9%20portugaise%20%28UNESCO%29%20El%20Jadida%20Maroc"
-    },
-    {
-      "id": "a3",
-      "nom": "Plage d'El Jadida & Oualidia",
-      "categorie": "Nature",
-      "description": "Plages atlantiques et lagune d'Oualidia réputée pour les huîtres.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Plage%20d%27El%20Jadida%20%26%20Oualidia%20El%20Jadida%20Maroc"
-    },
-    {
-      "nom": "Parc Mohammed V",
-      "lat": 33.2472333,
-      "lng": -8.4964086,
-      "coordonnees": {
-        "lat": 33.2472333,
-        "lng": -8.4964086
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=33.2472333,-8.4964086",
-      "source": "osm"
-    },
-    {
-      "nom": "Big Foot",
-      "lat": 33.2480928,
-      "lng": -8.4966905,
-      "coordonnees": {
-        "lat": 33.2480928,
-        "lng": -8.4966905
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=33.2480928,-8.4966905",
-      "source": "osm"
-    },
-    {
-      "nom": "Parc Ahmed Chawqui",
-      "lat": 33.2488956,
-      "lng": -8.5074558,
-      "coordonnees": {
-        "lat": 33.2488956,
-        "lng": -8.5074558
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=33.2488956,-8.5074558",
-      "source": "osm"
-    },
-    {
-      "nom": "Nes Qaws",
-      "lat": 33.2540146,
-      "lng": -8.5043649,
-      "coordonnees": {
-        "lat": 33.2540146,
-        "lng": -8.5043649
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=33.2540146,-8.5043649",
-      "source": "osm"
-    },
-    {
-      "nom": "Cadran Solaire",
-      "lat": 33.2542641,
-      "lng": -8.5019971,
-      "coordonnees": {
-        "lat": 33.2542641,
-        "lng": -8.5019971
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=33.2542641,-8.5019971",
-      "source": "osm"
-    },
-    {
-      "nom": "Jawad",
-      "lat": 33.2526478,
-      "lng": -8.5125358,
-      "coordonnees": {
-        "lat": 33.2526478,
-        "lng": -8.5125358
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=33.2526478,-8.5125358",
-      "source": "osm"
-    },
-    {
-      "nom": "Tayana",
-      "lat": 33.2543298,
-      "lng": -8.5074988,
-      "coordonnees": {
-        "lat": 33.2543298,
-        "lng": -8.5074988
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=33.2543298,-8.5074988",
-      "source": "osm"
-    },
-    {
-      "nom": "Bastion de l'Anges",
-      "lat": 33.2559138,
-      "lng": -8.5003963,
-      "coordonnees": {
-        "lat": 33.2559138,
-        "lng": -8.5003963
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=33.2559138,-8.5003963",
-      "source": "osm"
-    },
-    {
-      "nom": "Bab Saint-Esprit",
-      "lat": 33.2558272,
-      "lng": -8.5033696,
-      "coordonnees": {
-        "lat": 33.2558272,
-        "lng": -8.5033696
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=33.2558272,-8.5033696",
-      "source": "osm"
-    },
-    {
-      "nom": "Bab Dar Narzareth",
-      "lat": 33.2564256,
-      "lng": -8.5014908,
-      "coordonnees": {
-        "lat": 33.2564256,
-        "lng": -8.5014908
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=33.2564256,-8.5014908",
-      "source": "osm"
-    },
-    {
-      "nom": "Bab Saint-Antoine",
-      "lat": 33.2568975,
-      "lng": -8.5041992,
-      "coordonnees": {
-        "lat": 33.2568975,
-        "lng": -8.5041992
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=33.2568975,-8.5041992",
-      "source": "osm"
-    },
-    {
-      "nom": "Bab Des Boeufs",
-      "lat": 33.2573955,
-      "lng": -8.5030774,
-      "coordonnees": {
-        "lat": 33.2573955,
-        "lng": -8.5030774
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=33.2573955,-8.5030774",
-      "source": "osm"
-    },
-    {
-      "nom": "Bab Qobbat Lkhiyattine",
-      "lat": 33.2581236,
-      "lng": -8.5015064,
-      "coordonnees": {
-        "lat": 33.2581236,
-        "lng": -8.5015064
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=33.2581236,-8.5015064",
-      "source": "osm"
-    },
-    {
-      "nom": "Le Cheval",
-      "lat": 33.244272,
-      "lng": -8.4661231,
-      "coordonnees": {
-        "lat": 33.244272,
-        "lng": -8.4661231
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=33.244272,-8.4661231",
-      "source": "osm"
-    },
-    {
-      "nom": "Parc Soundouss",
-      "lat": 33.2491937,
-      "lng": -8.4493833,
-      "coordonnees": {
-        "lat": 33.2491937,
-        "lng": -8.4493833
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=33.2491937,-8.4493833",
-      "source": "osm"
-    },
-    {
-      "nom": "Fahs Ed Dwib",
-      "lat": 33.1766656,
-      "lng": -8.510002,
-      "coordonnees": {
-        "lat": 33.1766656,
-        "lng": -8.510002
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=33.1766656,-8.510002",
-      "source": "osm"
-    },
-    {
-      "nom": "Ribate Lamjahdines",
-      "lat": 33.2413104,
-      "lng": -8.4308966,
-      "coordonnees": {
-        "lat": 33.2413104,
-        "lng": -8.4308966
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=33.2413104,-8.4308966",
-      "source": "osm"
-    },
-    {
-      "nom": "Bab Jdida",
-      "lat": 33.2018957,
-      "lng": -8.5863627,
-      "coordonnees": {
-        "lat": 33.2018957,
-        "lng": -8.5863627
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=33.2018957,-8.5863627",
-      "source": "osm"
-    },
-    {
-      "nom": "Bab El Qabli",
-      "lat": 33.1949854,
-      "lng": -8.5839644,
-      "coordonnees": {
-        "lat": 33.1949854,
-        "lng": -8.5839644
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=33.1949854,-8.5839644",
-      "source": "osm"
-    },
-    {
-      "nom": "Tit Ribat",
-      "lat": 33.1950547,
-      "lng": -8.587473,
-      "coordonnees": {
-        "lat": 33.1950547,
-        "lng": -8.587473
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=33.1950547,-8.587473",
-      "source": "osm"
-    },
-    {
-      "nom": "Bab El Bhar",
-      "lat": 33.1984573,
-      "lng": -8.5897464,
-      "coordonnees": {
-        "lat": 33.1984573,
-        "lng": -8.5897464
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=33.1984573,-8.5897464",
-      "source": "osm"
-    },
-    {
-      "nom": "Bab Asfi",
-      "lat": 33.1945334,
-      "lng": -8.5928498,
-      "coordonnees": {
-        "lat": 33.1945334,
-        "lng": -8.5928498
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=33.1945334,-8.5928498",
-      "source": "osm"
-    }
-  ],
-  "imageCredit": "Wikimedia Commons",
-  "osmEnriched": true,
-  "osmEnrichedAt": "2026-06-30",
-  "description_en": "El Jadida, in Morocco, is a halal-friendly destination with a Halal Trust Score of 4.5/5. Muslim travelers will find 3 halal restaurants listed, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
-  "metaDescription_en": "Halal guide to El Jadida: 3 halal restaurants listed, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.5/5.",
-  "nom_en": "El Jadida",
-  "boucheries": []
+  {
+   "nom": "Snack Bismillah",
+   "type": "moroccan, local",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2558431,-8.5044118",
+   "lat": 33.2558431,
+   "lng": -8.5044118,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "Villa Amira",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.233306,-8.5000263",
+   "lat": 33.233306,
+   "lng": -8.5000263,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.233306,-8.5000263",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Yahya",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2425336,-8.4964888",
+   "lat": 33.2425336,
+   "lng": -8.4964888,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2425336,-8.4964888",
+   "source": "osm"
+  },
+  {
+   "nom": "Ragazzi",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2435419,-8.4963274",
+   "lat": 33.2435419,
+   "lng": -8.4963274,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2435419,-8.4963274",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Khansaa",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2449208,-8.4979461",
+   "lat": 33.2449208,
+   "lng": -8.4979461,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2449208,-8.4979461",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel El Morabitine",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2443623,-8.4952286",
+   "lat": 33.2443623,
+   "lng": -8.4952286,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2443623,-8.4952286",
+   "source": "osm"
+  },
+  {
+   "nom": "PalmTree",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2422306,-8.49036",
+   "lat": 33.2422306,
+   "lng": -8.49036,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2422306,-8.49036",
+   "source": "osm"
+  },
+  {
+   "nom": "Hôtel Aboulanwar",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2421717,-8.5130568",
+   "lat": 33.2421717,
+   "lng": -8.5130568,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2421717,-8.5130568",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Verdi",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2463164,-8.5062374",
+   "lat": 33.2463164,
+   "lng": -8.5062374,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2463164,-8.5062374",
+   "source": "osm"
+  },
+  {
+   "nom": "Pyramides",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2435874,-8.4888541",
+   "lat": 33.2435874,
+   "lng": -8.4888541,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2435874,-8.4888541",
+   "source": "osm"
+  },
+  {
+   "nom": "Ibis",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2449103,-8.4903621",
+   "lat": 33.2449103,
+   "lng": -8.4903621,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2449103,-8.4903621",
+   "source": "osm"
+  },
+  {
+   "nom": "Mia Mazagan",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2444706,-8.4893106",
+   "lat": 33.2444706,
+   "lng": -8.4893106,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2444706,-8.4893106",
+   "source": "osm"
+  },
+  {
+   "nom": "Centre Ville",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2482845,-8.4984573",
+   "lat": 33.2482845,
+   "lng": -8.4984573,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2482845,-8.4984573",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Royal",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2486984,-8.5016173",
+   "lat": 33.2486984,
+   "lng": -8.5016173,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2486984,-8.5016173",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar El Breija",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2487715,-8.4995141",
+   "lat": 33.2487715,
+   "lng": -8.4995141,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2487715,-8.4995141",
+   "source": "osm"
+  },
+  {
+   "nom": "Del Mar Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2436998,-8.4833209",
+   "lat": 33.2436998,
+   "lng": -8.4833209,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2436998,-8.4833209",
+   "source": "osm"
+  },
+  {
+   "nom": "Oceana Mazagan",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2437949,-8.4833002",
+   "lat": 33.2437949,
+   "lng": -8.4833002,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2437949,-8.4833002",
+   "source": "osm"
+  },
+  {
+   "nom": "Art Suites El Jadida",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.25067,-8.5026803",
+   "lat": 33.25067,
+   "lng": -8.5026803,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.25067,-8.5026803",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel de La Place",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2512971,-8.5035112",
+   "lat": 33.2512971,
+   "lng": -8.5035112,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2512971,-8.5035112",
+   "source": "osm"
+  },
+  {
+   "nom": "Hôtel La Place",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2513354,-8.5035402",
+   "lat": 33.2513354,
+   "lng": -8.5035402,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2513354,-8.5035402",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Cristour",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2515907,-8.5029521",
+   "lat": 33.2515907,
+   "lng": -8.5029521,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2515907,-8.5029521",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel France ( Ex Atlantis )",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2529548,-8.5024774",
+   "lat": 33.2529548,
+   "lng": -8.5024774,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2529548,-8.5024774",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Le Palais Andalous",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2516714,-8.5097191",
+   "lat": 33.2516714,
+   "lng": -8.5097191,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2516714,-8.5097191",
+   "source": "osm"
+  },
+  {
+   "nom": "Le Palais Andalous",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2516792,-8.5097204",
+   "lat": 33.2516792,
+   "lng": -8.5097204,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2516792,-8.5097204",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Maghreb",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2531458,-8.5025822",
+   "lat": 33.2531458,
+   "lng": -8.5025822,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2531458,-8.5025822",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Jahwara El Jadida",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2429225,-8.4784871",
+   "lat": 33.2429225,
+   "lng": -8.4784871,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2429225,-8.4784871",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Amwaj",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2439817,-8.4787844",
+   "lat": 33.2439817,
+   "lng": -8.4787844,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2439817,-8.4787844",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad La Maison des Épices à El Jadida",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2534475,-8.5051557",
+   "lat": 33.2534475,
+   "lng": -8.5051557,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2534475,-8.5051557",
+   "source": "osm"
+  },
+  {
+   "nom": "Maison des Epices",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2534837,-8.5052648",
+   "lat": 33.2534837,
+   "lng": -8.5052648,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2534837,-8.5052648",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Bordeaux",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2539328,-8.5053416",
+   "lat": 33.2539328,
+   "lng": -8.5053416,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2539328,-8.5053416",
+   "source": "osm"
+  },
+  {
+   "nom": "Hôtel Suisse",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2538331,-8.5081889",
+   "lat": 33.2538331,
+   "lng": -8.5081889,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2538331,-8.5081889",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel En Ruine",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2545235,-8.5046121",
+   "lat": 33.2545235,
+   "lng": -8.5046121,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2545235,-8.5046121",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel De Nice",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2545206,-8.5049173",
+   "lat": 33.2545206,
+   "lng": -8.5049173,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2545206,-8.5049173",
+   "source": "osm"
+  },
+  {
+   "nom": "Foundouk El Bacha",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2536748,-8.5095868",
+   "lat": 33.2536748,
+   "lng": -8.5095868,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2536748,-8.5095868",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel El Jadida",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2549224,-8.5056638",
+   "lat": 33.2549224,
+   "lng": -8.5056638,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2549224,-8.5056638",
+   "source": "osm"
+  },
+  {
+   "nom": "Brihi",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2306602,-8.5292669",
+   "lat": 33.2306602,
+   "lng": -8.5292669,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2306602,-8.5292669",
+   "source": "osm"
+  },
+  {
+   "nom": "Burn out",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2539013,-8.5127491",
+   "lat": 33.2539013,
+   "lng": -8.5127491,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.riadburnout.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Ksar El Jadida",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2560776,-8.5019743",
+   "lat": 33.2560776,
+   "lng": -8.5019743,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2560776,-8.5019743",
+   "source": "osm"
+  },
+  {
+   "nom": "Maison D'Hôtes Cité Portugaise",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2561339,-8.5020073",
+   "lat": 33.2561339,
+   "lng": -8.5020073,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2561339,-8.5020073",
+   "source": "osm"
+  },
+  {
+   "nom": "La Cité Portugaise",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2561532,-8.501965",
+   "lat": 33.2561532,
+   "lng": -8.501965,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2561532,-8.501965",
+   "source": "osm"
+  },
+  {
+   "nom": "Art House",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2561551,-8.5030016",
+   "lat": 33.2561551,
+   "lng": -8.5030016,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2561551,-8.5030016",
+   "source": "osm"
+  },
+  {
+   "nom": "L'Iglesia",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2562652,-8.5012348",
+   "lat": 33.2562652,
+   "lng": -8.5012348,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2562652,-8.5012348",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Le Mazagao",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2562886,-8.5045917",
+   "lat": 33.2562886,
+   "lng": -8.5045917,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2562886,-8.5045917",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar Yasmina",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2564292,-8.5033501",
+   "lat": 33.2564292,
+   "lng": -8.5033501,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2564292,-8.5033501",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar Statia",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2569986,-8.5024068",
+   "lat": 33.2569986,
+   "lng": -8.5024068,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2569986,-8.5024068",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar Fatima",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2569824,-8.503513",
+   "lat": 33.2569824,
+   "lng": -8.503513,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2569824,-8.503513",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar Ettaki Workation Riad Cité Portugaise Mazagan",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2570726,-8.5020647",
+   "lat": 33.2570726,
+   "lng": -8.5020647,
+   "halalFriendly": false,
+   "bookingUrl": "https://dar-ettaki-com",
+   "source": "osm"
+  },
+  {
+   "nom": "B&B Dar El Jadida",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2574792,-8.5022164",
+   "lat": 33.2574792,
+   "lng": -8.5022164,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2574792,-8.5022164",
+   "source": "osm"
+  },
+  {
+   "nom": "Art Riad",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2575547,-8.5018114",
+   "lat": 33.2575547,
+   "lng": -8.5018114,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2575547,-8.5018114",
+   "source": "osm"
+  },
+  {
+   "nom": "A Casa Da Maré",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2577165,-8.5014859",
+   "lat": 33.2577165,
+   "lng": -8.5014859,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2577165,-8.5014859",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Soleil D'Orient",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2567576,-8.5092751",
+   "lat": 33.2567576,
+   "lng": -8.5092751,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2567576,-8.5092751",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad La VIlla & SPA",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2589196,-8.5059665",
+   "lat": 33.2589196,
+   "lng": -8.5059665,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2589196,-8.5059665",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar Al Manar",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2438916,-8.436638",
+   "lat": 33.2438916,
+   "lng": -8.436638,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2438916,-8.436638",
+   "source": "osm"
+  },
+  {
+   "nom": "Centre d'Estivage FM6",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2536497,-8.4378954",
+   "lat": 33.2536497,
+   "lng": -8.4378954,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2536497,-8.4378954",
+   "source": "osm"
+  },
+  {
+   "nom": "Zephyr Mazagan",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2542044,-8.4368547",
+   "lat": 33.2542044,
+   "lng": -8.4368547,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2542044,-8.4368547",
+   "source": "osm"
+  },
+  {
+   "nom": "Wizone Mazagan",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2578885,-8.4231587",
+   "lat": 33.2578885,
+   "lng": -8.4231587,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.2578885,-8.4231587",
+   "source": "osm"
+  },
+  {
+   "nom": "Pullman Mazagan Royal Golf & Spa Hotel El Jadida",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.25934,-8.4229495",
+   "lat": 33.25934,
+   "lng": -8.4229495,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.25934,-8.4229495",
+   "source": "osm"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "Mosquée Fqih Ettaleb El Aouni",
+   "lat": 33.2467937,
+   "lng": -8.5004327,
+   "coordonnees": {
+    "lat": 33.2467937,
+    "lng": -8.5004327
+   },
+   "mapsUrl": "https://maps.google.com/?q=33.2467937,-8.5004327",
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Parc Mohammed V",
+   "lat": 33.2472333,
+   "lng": -8.4964086,
+   "coordonnees": {
+    "lat": 33.2472333,
+    "lng": -8.4964086
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=33.2472333,-8.4964086",
+   "source": "osm"
+  },
+  {
+   "nom": "Big Foot",
+   "lat": 33.2480928,
+   "lng": -8.4966905,
+   "coordonnees": {
+    "lat": 33.2480928,
+    "lng": -8.4966905
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=33.2480928,-8.4966905",
+   "source": "osm"
+  },
+  {
+   "nom": "Parc Ahmed Chawqui",
+   "lat": 33.2488956,
+   "lng": -8.5074558,
+   "coordonnees": {
+    "lat": 33.2488956,
+    "lng": -8.5074558
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=33.2488956,-8.5074558",
+   "source": "osm"
+  },
+  {
+   "nom": "Nes Qaws",
+   "lat": 33.2540146,
+   "lng": -8.5043649,
+   "coordonnees": {
+    "lat": 33.2540146,
+    "lng": -8.5043649
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=33.2540146,-8.5043649",
+   "source": "osm"
+  },
+  {
+   "nom": "Cadran Solaire",
+   "lat": 33.2542641,
+   "lng": -8.5019971,
+   "coordonnees": {
+    "lat": 33.2542641,
+    "lng": -8.5019971
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=33.2542641,-8.5019971",
+   "source": "osm"
+  },
+  {
+   "nom": "Jawad",
+   "lat": 33.2526478,
+   "lng": -8.5125358,
+   "coordonnees": {
+    "lat": 33.2526478,
+    "lng": -8.5125358
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=33.2526478,-8.5125358",
+   "source": "osm"
+  },
+  {
+   "nom": "Tayana",
+   "lat": 33.2543298,
+   "lng": -8.5074988,
+   "coordonnees": {
+    "lat": 33.2543298,
+    "lng": -8.5074988
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=33.2543298,-8.5074988",
+   "source": "osm"
+  },
+  {
+   "nom": "Bastion de l'Anges",
+   "lat": 33.2559138,
+   "lng": -8.5003963,
+   "coordonnees": {
+    "lat": 33.2559138,
+    "lng": -8.5003963
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=33.2559138,-8.5003963",
+   "source": "osm"
+  },
+  {
+   "nom": "Bab Saint-Esprit",
+   "lat": 33.2558272,
+   "lng": -8.5033696,
+   "coordonnees": {
+    "lat": 33.2558272,
+    "lng": -8.5033696
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=33.2558272,-8.5033696",
+   "source": "osm"
+  },
+  {
+   "nom": "Bab Dar Narzareth",
+   "lat": 33.2564256,
+   "lng": -8.5014908,
+   "coordonnees": {
+    "lat": 33.2564256,
+    "lng": -8.5014908
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=33.2564256,-8.5014908",
+   "source": "osm"
+  },
+  {
+   "nom": "Bab Saint-Antoine",
+   "lat": 33.2568975,
+   "lng": -8.5041992,
+   "coordonnees": {
+    "lat": 33.2568975,
+    "lng": -8.5041992
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=33.2568975,-8.5041992",
+   "source": "osm"
+  },
+  {
+   "nom": "Bab Des Boeufs",
+   "lat": 33.2573955,
+   "lng": -8.5030774,
+   "coordonnees": {
+    "lat": 33.2573955,
+    "lng": -8.5030774
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=33.2573955,-8.5030774",
+   "source": "osm"
+  },
+  {
+   "nom": "Bab Qobbat Lkhiyattine",
+   "lat": 33.2581236,
+   "lng": -8.5015064,
+   "coordonnees": {
+    "lat": 33.2581236,
+    "lng": -8.5015064
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=33.2581236,-8.5015064",
+   "source": "osm"
+  },
+  {
+   "nom": "Le Cheval",
+   "lat": 33.244272,
+   "lng": -8.4661231,
+   "coordonnees": {
+    "lat": 33.244272,
+    "lng": -8.4661231
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=33.244272,-8.4661231",
+   "source": "osm"
+  },
+  {
+   "nom": "Parc Soundouss",
+   "lat": 33.2491937,
+   "lng": -8.4493833,
+   "coordonnees": {
+    "lat": 33.2491937,
+    "lng": -8.4493833
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=33.2491937,-8.4493833",
+   "source": "osm"
+  },
+  {
+   "nom": "Fahs Ed Dwib",
+   "lat": 33.1766656,
+   "lng": -8.510002,
+   "coordonnees": {
+    "lat": 33.1766656,
+    "lng": -8.510002
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=33.1766656,-8.510002",
+   "source": "osm"
+  },
+  {
+   "nom": "Ribate Lamjahdines",
+   "lat": 33.2413104,
+   "lng": -8.4308966,
+   "coordonnees": {
+    "lat": 33.2413104,
+    "lng": -8.4308966
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=33.2413104,-8.4308966",
+   "source": "osm"
+  },
+  {
+   "nom": "Bab Jdida",
+   "lat": 33.2018957,
+   "lng": -8.5863627,
+   "coordonnees": {
+    "lat": 33.2018957,
+    "lng": -8.5863627
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=33.2018957,-8.5863627",
+   "source": "osm"
+  },
+  {
+   "nom": "Bab El Qabli",
+   "lat": 33.1949854,
+   "lng": -8.5839644,
+   "coordonnees": {
+    "lat": 33.1949854,
+    "lng": -8.5839644
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=33.1949854,-8.5839644",
+   "source": "osm"
+  },
+  {
+   "nom": "Tit Ribat",
+   "lat": 33.1950547,
+   "lng": -8.587473,
+   "coordonnees": {
+    "lat": 33.1950547,
+    "lng": -8.587473
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=33.1950547,-8.587473",
+   "source": "osm"
+  },
+  {
+   "nom": "Bab El Bhar",
+   "lat": 33.1984573,
+   "lng": -8.5897464,
+   "coordonnees": {
+    "lat": 33.1984573,
+    "lng": -8.5897464
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=33.1984573,-8.5897464",
+   "source": "osm"
+  },
+  {
+   "nom": "Bab Asfi",
+   "lat": 33.1945334,
+   "lng": -8.5928498,
+   "coordonnees": {
+    "lat": 33.1945334,
+    "lng": -8.5928498
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=33.1945334,-8.5928498",
+   "source": "osm"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30",
+ "description_en": "El Jadida, in Morocco, is a halal-friendly destination with a Halal Trust Score of 4.5/5. Muslim travelers will find 3 halal restaurants listed, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
+ "metaDescription_en": "Halal guide to El Jadida: 3 halal restaurants listed, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.5/5.",
+ "nom_en": "El Jadida",
+ "boucheries": [],
+ "dataPurgedAt": "2026-07-15"
 }

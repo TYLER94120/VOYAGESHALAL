@@ -1,719 +1,677 @@
 {
-  "slug": "nizwa",
-  "nom": "Nizwa",
-  "pays": "Oman",
-  "pays_slug": "oman",
-  "continent": "Asie",
-  "region": "Moyen-Orient",
-  "coordonnees": {
-    "lat": 22.9333,
-    "lng": 57.5333
+ "slug": "nizwa",
+ "nom": "Nizwa",
+ "pays": "Oman",
+ "pays_slug": "oman",
+ "continent": "Asie",
+ "region": "Moyen-Orient",
+ "coordonnees": {
+  "lat": 22.9333,
+  "lng": 57.5333
+ },
+ "codeISO": "",
+ "score_halal": 4.7,
+ "halalScore": 9.3,
+ "description": "Ancienne capitale d'Oman au pied du Djebel Akhdar, Nizwa est célèbre pour son fort circulaire, son souk d'argent et son marché aux bestiaux du vendredi.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Nizwa_%287%29.jpg/1920px-Nizwa_%287%29.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Nizwa_%287%29.jpg/1920px-Nizwa_%287%29.jpg",
+ "metaDescription": "Ancienne capitale d'Oman au pied du Djebel Akhdar, Nizwa est célèbre pour son fort circulaire, son souk d'argent et son marché aux bestiaux du vendredi.",
+ "statistiques": {
+  "restaurants_halal": 10,
+  "mosquees": 13,
+  "hotels": 21
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "Al Zuhly Restaurant",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=22.9329756,57.5338101",
+   "lat": 22.9329756,
+   "lng": 57.5338101,
+   "halalConfidence": "likely",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.7,
-  "halalScore": 9.3,
-  "description": "Ancienne capitale d'Oman au pied du Djebel Akhdar, Nizwa est célèbre pour son fort circulaire, son souk d'argent et son marché aux bestiaux du vendredi.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Nizwa_%287%29.jpg/1920px-Nizwa_%287%29.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Nizwa_%287%29.jpg/1920px-Nizwa_%287%29.jpg",
-  "metaDescription": "Ancienne capitale d'Oman au pied du Djebel Akhdar, Nizwa est célèbre pour son fort circulaire, son souk d'argent et son marché aux bestiaux du vendredi.",
-  "statistiques": {
-    "restaurants_halal": 6,
-    "mosquees": 1,
-    "hotels": 21
+  {
+   "nom": "Bin Ateeq",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=22.9346075,57.5323135",
+   "lat": 22.9346075,
+   "lng": 57.5323135,
+   "halalConfidence": "likely",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "مطعم مرسى الصياد لشوي الأسماك والمأكولات البحرية وغيرها Marsa Alsaiyaad Fish Seafood",
+   "type": "fish, grill, arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=22.9309526,57.5326877",
+   "lat": 22.9309526,
+   "lng": 57.5326877,
+   "halalConfidence": "likely",
+   "source": "osm"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [
-    {
-      "nom": "Al Zuhly Restaurant",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=22.9329756,57.5338101",
-      "lat": 22.9329756,
-      "lng": 57.5338101,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Bin Ateeq",
-      "type": "arab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=22.9346075,57.5323135",
-      "lat": 22.9346075,
-      "lng": 57.5323135,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "مطعم مرسى الصياد لشوي الأسماك والمأكولات البحرية وغيرها Marsa Alsaiyaad Fish Seafood",
-      "type": "fish, grill, arab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=22.9309526,57.5326877",
-      "lat": 22.9309526,
-      "lng": 57.5326877,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Ayadina",
-      "type": "arab, turkish",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=22.9297727,57.5362549",
-      "lat": 22.9297727,
-      "lng": 57.5362549,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "شاورما أنقرة",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=22.97259,57.5487518",
-      "lat": 22.97259,
-      "lng": 57.5487518,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "المشارف للاكلات التركية",
-      "type": "turkish",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=22.8903621,57.5275528",
-      "lat": 22.8903621,
-      "lng": 57.5275528,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Peppercorns",
-      "lat": 22.8815561,
-      "lng": 57.5392532,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=22.8815561,57.5392532",
-      "source": "osm"
-    },
-    {
-      "nom": "مطعم أطياف ظفار",
-      "lat": 22.8753453,
-      "lng": 57.5360838,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=22.8753453,57.5360838",
-      "source": "osm"
-    },
-    {
-      "nom": "مطعم تلي",
-      "lat": 22.8745541,
-      "lng": 57.5328686,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=22.8745541,57.5328686",
-      "source": "osm"
-    },
-    {
-      "nom": "مطعم وفاء الخير",
-      "lat": 22.8604803,
-      "lng": 57.557376,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=22.8604803,57.557376",
-      "source": "osm"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "Omani Guesthouse",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=22.9319639,57.5310691",
-      "lat": 22.9319639,
-      "lng": 57.5310691,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=22.9319639,57.5310691",
-      "source": "osm"
-    },
-    {
-      "nom": "Nizwa Heritage Inn",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=22.9317548,57.5309799",
-      "lat": 22.9317548,
-      "lng": 57.5309799,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=22.9317548,57.5309799",
-      "source": "osm"
-    },
-    {
-      "nom": "Antique Inn",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=22.9315219,57.5305239",
-      "lat": 22.9315219,
-      "lng": 57.5305239,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=22.9315219,57.5305239",
-      "source": "osm"
-    },
-    {
-      "nom": "Al Jalilain inn",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=22.9309935,57.530653",
-      "lat": 22.9309935,
-      "lng": 57.530653,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=22.9309935,57.530653",
-      "source": "osm"
-    },
-    {
-      "nom": "Salem House Hostel Nizwa",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=22.930339,57.5361491",
-      "lat": 22.930339,
-      "lng": 57.5361491,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=22.930339,57.5361491",
-      "source": "osm"
-    },
-    {
-      "nom": "Bait Al Aqr",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=22.9317437,57.5290536",
-      "lat": 22.9317437,
-      "lng": 57.5290536,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=22.9317437,57.5290536",
-      "source": "osm"
-    },
-    {
-      "nom": "Nima Guest House",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=22.9357058,57.5293807",
-      "lat": 22.9357058,
-      "lng": 57.5293807,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=22.9357058,57.5293807",
-      "source": "osm"
-    },
-    {
-      "nom": "Nizwa Residence",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=22.9248637,57.5363275",
-      "lat": 22.9248637,
-      "lng": 57.5363275,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=22.9248637,57.5363275",
-      "source": "osm"
-    },
-    {
-      "nom": "خروصي",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=22.9487978,57.5289469",
-      "lat": 22.9487978,
-      "lng": 57.5289469,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=22.9487978,57.5289469",
-      "source": "osm"
-    },
-    {
-      "nom": "Al Diyar",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=22.9061284,57.5330755",
-      "lat": 22.9061284,
-      "lng": 57.5330755,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=22.9061284,57.5330755",
-      "source": "osm"
-    },
-    {
-      "nom": "Falaj Daris Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=22.8955101,57.5310941",
-      "lat": 22.8955101,
-      "lng": 57.5310941,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=22.8955101,57.5310941",
-      "source": "osm"
-    },
-    {
-      "nom": "Lalit Harsh",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=22.8911287,57.5307308",
-      "lat": 22.8911287,
-      "lng": 57.5307308,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=22.8911287,57.5307308",
-      "source": "osm"
-    },
-    {
-      "nom": "إستراحة تنوف",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=22.8904508,57.5275791",
-      "lat": 22.8904508,
-      "lng": 57.5275791,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=22.8904508,57.5275791",
-      "source": "osm"
-    },
-    {
-      "nom": "Majan Guesthouse",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=22.8870434,57.526386",
-      "lat": 22.8870434,
-      "lng": 57.526386,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=22.8870434,57.526386",
-      "source": "osm"
-    },
-    {
-      "nom": "Al Karam Hotel Apartments",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=22.8948402,57.5670914",
-      "lat": 22.8948402,
-      "lng": 57.5670914,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=22.8948402,57.5670914",
-      "source": "osm"
-    },
-    {
-      "nom": "Dream House Appartments",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=22.8814509,57.5389926",
-      "lat": 22.8814509,
-      "lng": 57.5389926,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=22.8814509,57.5389926",
-      "source": "osm"
-    },
-    {
-      "nom": "Hilal’s Airbnb",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=22.8982631,57.5772015",
-      "lat": 22.8982631,
-      "lng": 57.5772015,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=22.8982631,57.5772015",
-      "source": "osm"
-    },
-    {
-      "nom": "نزوى للشقق الفندقية",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=22.9043985,57.5826674",
-      "lat": 22.9043985,
-      "lng": 57.5826674,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.nizwahotelapartments.net/",
-      "source": "osm"
-    },
-    {
-      "nom": "فندق سفاري",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=22.8793472,57.5366527",
-      "lat": 22.8793472,
-      "lng": 57.5366527,
-      "halalFriendly": false,
-      "bookingUrl": "http://safarihoteloman.com",
-      "source": "osm"
-    },
-    {
-      "nom": "Intercity Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=22.8736919,57.5365246",
-      "lat": 22.8736919,
-      "lng": 57.5365246,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=22.8736919,57.5365246",
-      "source": "osm"
-    },
-    {
-      "nom": "جولدن توليب",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 4,
-      "mapsUrl": "https://maps.google.com/?q=22.9246622,57.6187902",
-      "lat": 22.9246622,
-      "lng": 57.6187902,
-      "halalFriendly": false,
-      "bookingUrl": "https://nizwa.goldentulip.com",
-      "source": "osm"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Nizwa",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Nizwa",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Nizwa%20Nizwa"
-    },
-    {
-      "nom": "مسجد غاف الشيخ",
-      "lat": 22.9139109,
-      "lng": 57.5295859,
-      "coordonnees": {
-        "lat": 22.9139109,
-        "lng": 57.5295859
-      },
-      "mapsUrl": "https://maps.google.com/?q=22.9139109,57.5295859",
-      "source": "osm"
-    },
-    {
-      "nom": "جامع عبداللة بن أباض",
-      "lat": 22.9706344,
-      "lng": 57.5441475,
-      "coordonnees": {
-        "lat": 22.9706344,
-        "lng": 57.5441475
-      },
-      "mapsUrl": "https://maps.google.com/?q=22.9706344,57.5441475",
-      "source": "osm"
-    },
-    {
-      "nom": "جامع عرفة",
-      "lat": 22.9111582,
-      "lng": 57.571618,
-      "coordonnees": {
-        "lat": 22.9111582,
-        "lng": 57.571618
-      },
-      "adresse": "حي التراث",
-      "mapsUrl": "https://maps.google.com/?q=22.9111582,57.571618",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد الحق",
-      "lat": 22.891688,
-      "lng": 57.5290267,
-      "coordonnees": {
-        "lat": 22.891688,
-        "lng": 57.5290267
-      },
-      "mapsUrl": "https://maps.google.com/?q=22.891688,57.5290267",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد أبو بكر",
-      "lat": 22.901601,
-      "lng": 57.565165,
-      "coordonnees": {
-        "lat": 22.901601,
-        "lng": 57.565165
-      },
-      "adresse": "طريق إزكي - فرق",
-      "mapsUrl": "https://maps.google.com/?q=22.901601,57.565165",
-      "source": "osm"
-    },
-    {
-      "nom": "Sultan Qaboos Grand Mosque Nizwa",
-      "lat": 22.8554417,
-      "lng": 57.5301648,
-      "coordonnees": {
-        "lat": 22.8554417,
-        "lng": 57.5301648
-      },
-      "mapsUrl": "https://maps.google.com/?q=22.8554417,57.5301648",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد شغة",
-      "lat": 23.0488797,
-      "lng": 57.5681297,
-      "coordonnees": {
-        "lat": 23.0488797,
-        "lng": 57.5681297
-      },
-      "mapsUrl": "https://maps.google.com/?q=23.0488797,57.5681297",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد السلام",
-      "lat": 22.9215372,
-      "lng": 57.6644455,
-      "coordonnees": {
-        "lat": 22.9215372,
-        "lng": 57.6644455
-      },
-      "mapsUrl": "https://maps.google.com/?q=22.9215372,57.6644455",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد الأئمة اليعاربة",
-      "lat": 22.9237894,
-      "lng": 57.6671282,
-      "coordonnees": {
-        "lat": 22.9237894,
-        "lng": 57.6671282
-      },
-      "mapsUrl": "https://maps.google.com/?q=22.9237894,57.6671282",
-      "source": "osm"
-    },
-    {
-      "nom": "جامع أبي سعيد الكدمي",
-      "lat": 22.9138185,
-      "lng": 57.6714539,
-      "coordonnees": {
-        "lat": 22.9138185,
-        "lng": 57.6714539
-      },
-      "mapsUrl": "https://maps.google.com/?q=22.9138185,57.6714539",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد المتونية",
-      "lat": 22.9233577,
-      "lng": 57.6730453,
-      "coordonnees": {
-        "lat": 22.9233577,
-        "lng": 57.6730453
-      },
-      "mapsUrl": "https://maps.google.com/?q=22.9233577,57.6730453",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد الشريحة",
-      "lat": 23.052162,
-      "lng": 57.466682,
-      "coordonnees": {
-        "lat": 23.052162,
-        "lng": 57.466682
-      },
-      "mapsUrl": "https://maps.google.com/?q=23.052162,57.466682",
-      "source": "osm"
-    },
-    {
-      "nom": "جامع السلطان قابوس بولاية منح",
-      "lat": 22.7925783,
-      "lng": 57.6131873,
-      "coordonnees": {
-        "lat": 22.7925783,
-        "lng": 57.6131873
-      },
-      "adresse": "ولاية منح",
-      "mapsUrl": "https://maps.google.com/?q=22.7925783,57.6131873",
-      "source": "osm"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Fort de Nizwa",
-      "categorie": "Histoire",
-      "description": "Tour-citadelle du XVIIe siècle offrant une vue panoramique.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Fort%20de%20Nizwa%20Nizwa",
-      "lat": 22.9331832,
-      "lng": 57.5300879,
-      "geocoded": true
-    },
-    {
-      "id": "a2",
-      "nom": "Souk de Nizwa",
-      "categorie": "Shopping",
-      "description": "Argenterie, poterie, dattes et khanjars traditionnels.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Souk%20de%20Nizwa%20Nizwa",
-      "lat": 22.9319264,
-      "lng": 57.5318997,
-      "geocoded": true
-    },
-    {
-      "id": "a3",
-      "nom": "Djebel Akhdar",
-      "categorie": "Nature",
-      "description": "Montagne verte en terrasses, roseraies et villages perchés.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Djebel%20Akhdar%20Nizwa"
-    },
-    {
-      "nom": "فلج دارس",
-      "lat": 22.9728069,
-      "lng": 57.5493623,
-      "coordonnees": {
-        "lat": 22.9728069,
-        "lng": 57.5493623
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=22.9728069,57.5493623",
-      "source": "osm"
-    },
-    {
-      "nom": "Nizwa Gate",
-      "lat": 22.8778844,
-      "lng": 57.5268497,
-      "coordonnees": {
-        "lat": 22.8778844,
-        "lng": 57.5268497
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=22.8778844,57.5268497",
-      "source": "osm"
-    },
-    {
-      "nom": "حديقة النعام الحيوان",
-      "lat": 22.8268343,
-      "lng": 57.4855403,
-      "coordonnees": {
-        "lat": 22.8268343,
-        "lng": 57.4855403
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=22.8268343,57.4855403",
-      "source": "osm"
-    },
-    {
-      "nom": "فلج الخطمين",
-      "lat": 22.92558,
-      "lng": 57.666677,
-      "coordonnees": {
-        "lat": 22.92558,
-        "lng": 57.666677
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=22.92558,57.666677",
-      "source": "osm"
-    },
-    {
-      "nom": "فلج الخطمين-2",
-      "lat": 22.9230292,
-      "lng": 57.6678421,
-      "coordonnees": {
-        "lat": 22.9230292,
-        "lng": 57.6678421
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=22.9230292,57.6678421",
-      "source": "osm"
-    },
-    {
-      "nom": "The Mudstone Village",
-      "lat": 22.924549,
-      "lng": 57.6736519,
-      "coordonnees": {
-        "lat": 22.924549,
-        "lng": 57.6736519
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=22.924549,57.6736519",
-      "source": "osm"
-    },
-    {
-      "nom": "Little Mudstone Village",
-      "lat": 22.9253305,
-      "lng": 57.6767129,
-      "coordonnees": {
-        "lat": 22.9253305,
-        "lng": 57.6767129
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=22.9253305,57.6767129",
-      "source": "osm"
-    },
-    {
-      "nom": "الشريجة",
-      "lat": 22.7913272,
-      "lng": 57.5810802,
-      "coordonnees": {
-        "lat": 22.7913272,
-        "lng": 57.5810802
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=22.7913272,57.5810802",
-      "source": "osm"
-    },
-    {
-      "nom": "Bani Habib Viewpoint",
-      "lat": 23.0710967,
-      "lng": 57.6039182,
-      "coordonnees": {
-        "lat": 23.0710967,
-        "lng": 57.6039182
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=23.0710967,57.6039182",
-      "source": "osm"
-    },
-    {
-      "nom": "Entrance of the old city of Manah",
-      "lat": 22.788633,
-      "lng": 57.5994307,
-      "coordonnees": {
-        "lat": 22.788633,
-        "lng": 57.5994307
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=22.788633,57.5994307",
-      "source": "osm"
-    },
-    {
-      "nom": "المركز الترفيهي بمنح",
-      "lat": 22.7787503,
-      "lng": 57.5644325,
-      "coordonnees": {
-        "lat": 22.7787503,
-        "lng": 57.5644325
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=22.7787503,57.5644325",
-      "source": "osm"
-    },
-    {
-      "nom": "متحف عمان عبر الزمان",
-      "lat": 22.7776742,
-      "lng": 57.5578517,
-      "coordonnees": {
-        "lat": 22.7776742,
-        "lng": 57.5578517
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=22.7776742,57.5578517",
-      "source": "osm"
-    },
-    {
-      "nom": "Old Manah",
-      "lat": 22.7867856,
-      "lng": 57.5984216,
-      "coordonnees": {
-        "lat": 22.7867856,
-        "lng": 57.5984216
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=22.7867856,57.5984216",
-      "source": "osm"
-    }
-  ],
-  "imageCredit": "Wikimedia Commons",
-  "osmEnriched": true,
-  "osmEnrichedAt": "2026-06-30",
-  "description_en": "Nizwa, in Oman, is a halal-friendly destination with a Halal Trust Score of 4.7/5. Muslim travelers will find 10 halal restaurants listed, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
-  "metaDescription_en": "Halal guide to Nizwa: 10 halal restaurants listed, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.7/5.",
-  "nom_en": "Nizwa",
-  "boucheries": []
+  {
+   "nom": "Ayadina",
+   "type": "arab, turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=22.9297727,57.5362549",
+   "lat": 22.9297727,
+   "lng": 57.5362549,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "شاورما أنقرة",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=22.97259,57.5487518",
+   "lat": 22.97259,
+   "lng": 57.5487518,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "المشارف للاكلات التركية",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=22.8903621,57.5275528",
+   "lat": 22.8903621,
+   "lng": 57.5275528,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Peppercorns",
+   "lat": 22.8815561,
+   "lng": 57.5392532,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=22.8815561,57.5392532",
+   "source": "osm"
+  },
+  {
+   "nom": "مطعم أطياف ظفار",
+   "lat": 22.8753453,
+   "lng": 57.5360838,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=22.8753453,57.5360838",
+   "source": "osm"
+  },
+  {
+   "nom": "مطعم تلي",
+   "lat": 22.8745541,
+   "lng": 57.5328686,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=22.8745541,57.5328686",
+   "source": "osm"
+  },
+  {
+   "nom": "مطعم وفاء الخير",
+   "lat": 22.8604803,
+   "lng": 57.557376,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=22.8604803,57.557376",
+   "source": "osm"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "Omani Guesthouse",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=22.9319639,57.5310691",
+   "lat": 22.9319639,
+   "lng": 57.5310691,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=22.9319639,57.5310691",
+   "source": "osm"
+  },
+  {
+   "nom": "Nizwa Heritage Inn",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=22.9317548,57.5309799",
+   "lat": 22.9317548,
+   "lng": 57.5309799,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=22.9317548,57.5309799",
+   "source": "osm"
+  },
+  {
+   "nom": "Antique Inn",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=22.9315219,57.5305239",
+   "lat": 22.9315219,
+   "lng": 57.5305239,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=22.9315219,57.5305239",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Jalilain inn",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=22.9309935,57.530653",
+   "lat": 22.9309935,
+   "lng": 57.530653,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=22.9309935,57.530653",
+   "source": "osm"
+  },
+  {
+   "nom": "Salem House Hostel Nizwa",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=22.930339,57.5361491",
+   "lat": 22.930339,
+   "lng": 57.5361491,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=22.930339,57.5361491",
+   "source": "osm"
+  },
+  {
+   "nom": "Bait Al Aqr",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=22.9317437,57.5290536",
+   "lat": 22.9317437,
+   "lng": 57.5290536,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=22.9317437,57.5290536",
+   "source": "osm"
+  },
+  {
+   "nom": "Nima Guest House",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=22.9357058,57.5293807",
+   "lat": 22.9357058,
+   "lng": 57.5293807,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=22.9357058,57.5293807",
+   "source": "osm"
+  },
+  {
+   "nom": "Nizwa Residence",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=22.9248637,57.5363275",
+   "lat": 22.9248637,
+   "lng": 57.5363275,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=22.9248637,57.5363275",
+   "source": "osm"
+  },
+  {
+   "nom": "خروصي",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=22.9487978,57.5289469",
+   "lat": 22.9487978,
+   "lng": 57.5289469,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=22.9487978,57.5289469",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Diyar",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=22.9061284,57.5330755",
+   "lat": 22.9061284,
+   "lng": 57.5330755,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=22.9061284,57.5330755",
+   "source": "osm"
+  },
+  {
+   "nom": "Falaj Daris Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=22.8955101,57.5310941",
+   "lat": 22.8955101,
+   "lng": 57.5310941,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=22.8955101,57.5310941",
+   "source": "osm"
+  },
+  {
+   "nom": "Lalit Harsh",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=22.8911287,57.5307308",
+   "lat": 22.8911287,
+   "lng": 57.5307308,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=22.8911287,57.5307308",
+   "source": "osm"
+  },
+  {
+   "nom": "إستراحة تنوف",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=22.8904508,57.5275791",
+   "lat": 22.8904508,
+   "lng": 57.5275791,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=22.8904508,57.5275791",
+   "source": "osm"
+  },
+  {
+   "nom": "Majan Guesthouse",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=22.8870434,57.526386",
+   "lat": 22.8870434,
+   "lng": 57.526386,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=22.8870434,57.526386",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Karam Hotel Apartments",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=22.8948402,57.5670914",
+   "lat": 22.8948402,
+   "lng": 57.5670914,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=22.8948402,57.5670914",
+   "source": "osm"
+  },
+  {
+   "nom": "Dream House Appartments",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=22.8814509,57.5389926",
+   "lat": 22.8814509,
+   "lng": 57.5389926,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=22.8814509,57.5389926",
+   "source": "osm"
+  },
+  {
+   "nom": "Hilal’s Airbnb",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=22.8982631,57.5772015",
+   "lat": 22.8982631,
+   "lng": 57.5772015,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=22.8982631,57.5772015",
+   "source": "osm"
+  },
+  {
+   "nom": "نزوى للشقق الفندقية",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=22.9043985,57.5826674",
+   "lat": 22.9043985,
+   "lng": 57.5826674,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.nizwahotelapartments.net/",
+   "source": "osm"
+  },
+  {
+   "nom": "فندق سفاري",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=22.8793472,57.5366527",
+   "lat": 22.8793472,
+   "lng": 57.5366527,
+   "halalFriendly": false,
+   "bookingUrl": "http://safarihoteloman.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Intercity Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=22.8736919,57.5365246",
+   "lat": 22.8736919,
+   "lng": 57.5365246,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=22.8736919,57.5365246",
+   "source": "osm"
+  },
+  {
+   "nom": "جولدن توليب",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 4,
+   "mapsUrl": "https://maps.google.com/?q=22.9246622,57.6187902",
+   "lat": 22.9246622,
+   "lng": 57.6187902,
+   "halalFriendly": false,
+   "bookingUrl": "https://nizwa.goldentulip.com",
+   "source": "osm"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "مسجد غاف الشيخ",
+   "lat": 22.9139109,
+   "lng": 57.5295859,
+   "coordonnees": {
+    "lat": 22.9139109,
+    "lng": 57.5295859
+   },
+   "mapsUrl": "https://maps.google.com/?q=22.9139109,57.5295859",
+   "source": "osm"
+  },
+  {
+   "nom": "جامع عبداللة بن أباض",
+   "lat": 22.9706344,
+   "lng": 57.5441475,
+   "coordonnees": {
+    "lat": 22.9706344,
+    "lng": 57.5441475
+   },
+   "mapsUrl": "https://maps.google.com/?q=22.9706344,57.5441475",
+   "source": "osm"
+  },
+  {
+   "nom": "جامع عرفة",
+   "lat": 22.9111582,
+   "lng": 57.571618,
+   "coordonnees": {
+    "lat": 22.9111582,
+    "lng": 57.571618
+   },
+   "adresse": "حي التراث",
+   "mapsUrl": "https://maps.google.com/?q=22.9111582,57.571618",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد الحق",
+   "lat": 22.891688,
+   "lng": 57.5290267,
+   "coordonnees": {
+    "lat": 22.891688,
+    "lng": 57.5290267
+   },
+   "mapsUrl": "https://maps.google.com/?q=22.891688,57.5290267",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد أبو بكر",
+   "lat": 22.901601,
+   "lng": 57.565165,
+   "coordonnees": {
+    "lat": 22.901601,
+    "lng": 57.565165
+   },
+   "adresse": "طريق إزكي - فرق",
+   "mapsUrl": "https://maps.google.com/?q=22.901601,57.565165",
+   "source": "osm"
+  },
+  {
+   "nom": "Sultan Qaboos Grand Mosque Nizwa",
+   "lat": 22.8554417,
+   "lng": 57.5301648,
+   "coordonnees": {
+    "lat": 22.8554417,
+    "lng": 57.5301648
+   },
+   "mapsUrl": "https://maps.google.com/?q=22.8554417,57.5301648",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد شغة",
+   "lat": 23.0488797,
+   "lng": 57.5681297,
+   "coordonnees": {
+    "lat": 23.0488797,
+    "lng": 57.5681297
+   },
+   "mapsUrl": "https://maps.google.com/?q=23.0488797,57.5681297",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد السلام",
+   "lat": 22.9215372,
+   "lng": 57.6644455,
+   "coordonnees": {
+    "lat": 22.9215372,
+    "lng": 57.6644455
+   },
+   "mapsUrl": "https://maps.google.com/?q=22.9215372,57.6644455",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد الأئمة اليعاربة",
+   "lat": 22.9237894,
+   "lng": 57.6671282,
+   "coordonnees": {
+    "lat": 22.9237894,
+    "lng": 57.6671282
+   },
+   "mapsUrl": "https://maps.google.com/?q=22.9237894,57.6671282",
+   "source": "osm"
+  },
+  {
+   "nom": "جامع أبي سعيد الكدمي",
+   "lat": 22.9138185,
+   "lng": 57.6714539,
+   "coordonnees": {
+    "lat": 22.9138185,
+    "lng": 57.6714539
+   },
+   "mapsUrl": "https://maps.google.com/?q=22.9138185,57.6714539",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد المتونية",
+   "lat": 22.9233577,
+   "lng": 57.6730453,
+   "coordonnees": {
+    "lat": 22.9233577,
+    "lng": 57.6730453
+   },
+   "mapsUrl": "https://maps.google.com/?q=22.9233577,57.6730453",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد الشريحة",
+   "lat": 23.052162,
+   "lng": 57.466682,
+   "coordonnees": {
+    "lat": 23.052162,
+    "lng": 57.466682
+   },
+   "mapsUrl": "https://maps.google.com/?q=23.052162,57.466682",
+   "source": "osm"
+  },
+  {
+   "nom": "جامع السلطان قابوس بولاية منح",
+   "lat": 22.7925783,
+   "lng": 57.6131873,
+   "coordonnees": {
+    "lat": 22.7925783,
+    "lng": 57.6131873
+   },
+   "adresse": "ولاية منح",
+   "mapsUrl": "https://maps.google.com/?q=22.7925783,57.6131873",
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "فلج دارس",
+   "lat": 22.9728069,
+   "lng": 57.5493623,
+   "coordonnees": {
+    "lat": 22.9728069,
+    "lng": 57.5493623
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=22.9728069,57.5493623",
+   "source": "osm"
+  },
+  {
+   "nom": "Nizwa Gate",
+   "lat": 22.8778844,
+   "lng": 57.5268497,
+   "coordonnees": {
+    "lat": 22.8778844,
+    "lng": 57.5268497
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=22.8778844,57.5268497",
+   "source": "osm"
+  },
+  {
+   "nom": "حديقة النعام الحيوان",
+   "lat": 22.8268343,
+   "lng": 57.4855403,
+   "coordonnees": {
+    "lat": 22.8268343,
+    "lng": 57.4855403
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=22.8268343,57.4855403",
+   "source": "osm"
+  },
+  {
+   "nom": "فلج الخطمين",
+   "lat": 22.92558,
+   "lng": 57.666677,
+   "coordonnees": {
+    "lat": 22.92558,
+    "lng": 57.666677
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=22.92558,57.666677",
+   "source": "osm"
+  },
+  {
+   "nom": "فلج الخطمين-2",
+   "lat": 22.9230292,
+   "lng": 57.6678421,
+   "coordonnees": {
+    "lat": 22.9230292,
+    "lng": 57.6678421
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=22.9230292,57.6678421",
+   "source": "osm"
+  },
+  {
+   "nom": "The Mudstone Village",
+   "lat": 22.924549,
+   "lng": 57.6736519,
+   "coordonnees": {
+    "lat": 22.924549,
+    "lng": 57.6736519
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=22.924549,57.6736519",
+   "source": "osm"
+  },
+  {
+   "nom": "Little Mudstone Village",
+   "lat": 22.9253305,
+   "lng": 57.6767129,
+   "coordonnees": {
+    "lat": 22.9253305,
+    "lng": 57.6767129
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=22.9253305,57.6767129",
+   "source": "osm"
+  },
+  {
+   "nom": "الشريجة",
+   "lat": 22.7913272,
+   "lng": 57.5810802,
+   "coordonnees": {
+    "lat": 22.7913272,
+    "lng": 57.5810802
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=22.7913272,57.5810802",
+   "source": "osm"
+  },
+  {
+   "nom": "Bani Habib Viewpoint",
+   "lat": 23.0710967,
+   "lng": 57.6039182,
+   "coordonnees": {
+    "lat": 23.0710967,
+    "lng": 57.6039182
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=23.0710967,57.6039182",
+   "source": "osm"
+  },
+  {
+   "nom": "Entrance of the old city of Manah",
+   "lat": 22.788633,
+   "lng": 57.5994307,
+   "coordonnees": {
+    "lat": 22.788633,
+    "lng": 57.5994307
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=22.788633,57.5994307",
+   "source": "osm"
+  },
+  {
+   "nom": "المركز الترفيهي بمنح",
+   "lat": 22.7787503,
+   "lng": 57.5644325,
+   "coordonnees": {
+    "lat": 22.7787503,
+    "lng": 57.5644325
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=22.7787503,57.5644325",
+   "source": "osm"
+  },
+  {
+   "nom": "متحف عمان عبر الزمان",
+   "lat": 22.7776742,
+   "lng": 57.5578517,
+   "coordonnees": {
+    "lat": 22.7776742,
+    "lng": 57.5578517
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=22.7776742,57.5578517",
+   "source": "osm"
+  },
+  {
+   "nom": "Old Manah",
+   "lat": 22.7867856,
+   "lng": 57.5984216,
+   "coordonnees": {
+    "lat": 22.7867856,
+    "lng": 57.5984216
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=22.7867856,57.5984216",
+   "source": "osm"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30",
+ "description_en": "Nizwa, in Oman, is a halal-friendly destination with a Halal Trust Score of 4.7/5. Muslim travelers will find 10 halal restaurants listed, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
+ "metaDescription_en": "Halal guide to Nizwa: 10 halal restaurants listed, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.7/5.",
+ "nom_en": "Nizwa",
+ "boucheries": [],
+ "dataPurgedAt": "2026-07-15"
 }

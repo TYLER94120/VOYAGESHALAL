@@ -1,2371 +1,2332 @@
 {
-  "slug": "agra",
-  "nom": "Agra",
-  "pays": "Inde",
-  "pays_slug": "inde",
-  "continent": "Asie",
-  "region": "Inde",
-  "coordonnees": {
-    "lat": 27.1767,
-    "lng": 78.0081
+ "slug": "agra",
+ "nom": "Agra",
+ "pays": "Inde",
+ "pays_slug": "inde",
+ "continent": "Asie",
+ "region": "Inde",
+ "coordonnees": {
+  "lat": 27.1767,
+  "lng": 78.0081
+ },
+ "codeISO": "",
+ "score_halal": 4.5,
+ "halalScore": 9.1,
+ "description": "Ville du Taj Mahal, chef-d'oeuvre de l'architecture moghole et islamique, Agra fut la capitale de l'empire moghol avec son fort rouge classé UNESCO.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/El_Taj_Mahal-Agra_India0023.JPG/1920px-El_Taj_Mahal-Agra_India0023.JPG",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/El_Taj_Mahal-Agra_India0023.JPG/1920px-El_Taj_Mahal-Agra_India0023.JPG",
+ "metaDescription": "Ville du Taj Mahal, chef-d'oeuvre de l'architecture moghole et islamique, Agra fut la capitale de l'empire moghol avec son fort rouge classé UNESCO.",
+ "statistiques": {
+  "restaurants_halal": 17,
+  "mosquees": 13,
+  "hotels": 118
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "Mama Franky (Time2Eat)",
+   "type": "chicken, kebab, indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1606493,78.0114653",
+   "lat": 27.1606493,
+   "lng": 78.0114653,
+   "halalConfidence": "likely",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.5,
-  "halalScore": 9.1,
-  "description": "Ville du Taj Mahal, chef-d'oeuvre de l'architecture moghole et islamique, Agra fut la capitale de l'empire moghol avec son fort rouge classé UNESCO.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/El_Taj_Mahal-Agra_India0023.JPG/1920px-El_Taj_Mahal-Agra_India0023.JPG",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/El_Taj_Mahal-Agra_India0023.JPG/1920px-El_Taj_Mahal-Agra_India0023.JPG",
-  "metaDescription": "Ville du Taj Mahal, chef-d'oeuvre de l'architecture moghole et islamique, Agra fut la capitale de l'empire moghol avec son fort rouge classé UNESCO.",
-  "statistiques": {
-    "restaurants_halal": 2,
-    "mosquees": 1,
-    "hotels": 120
+  {
+   "nom": "The Global Savour Restaurant",
+   "type": "italian, chinese, indian, arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1639827,78.0537341",
+   "lat": 27.1639827,
+   "lng": 78.0537341,
+   "halalConfidence": "likely",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "FAMOUS RESTAURANT",
+   "lat": 27.1704565,
+   "lng": 78.0092957,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=27.1704565,78.0092957",
+   "source": "osm"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [
-    {
-      "nom": "Mama Franky (Time2Eat)",
-      "type": "chicken, kebab, indian",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1606493,78.0114653",
-      "lat": 27.1606493,
-      "lng": 78.0114653,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "The Global Savour Restaurant",
-      "type": "italian, chinese, indian, arab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1639827,78.0537341",
-      "lat": 27.1639827,
-      "lng": 78.0537341,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "FAMOUS RESTAURANT",
-      "lat": 27.1704565,
-      "lng": 78.0092957,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=27.1704565,78.0092957",
-      "source": "osm"
-    },
-    {
-      "nom": "The Kesar",
-      "lat": 27.1718195,
-      "lng": 78.0179157,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=27.1718195,78.0179157",
-      "source": "osm"
-    },
-    {
-      "nom": "Pure Veg - good and cheap",
-      "lat": 27.1822432,
-      "lng": 78.018654,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=27.1822432,78.018654",
-      "source": "osm"
-    },
-    {
-      "nom": "Gaylord Hotel",
-      "lat": 27.1591488,
-      "lng": 78.0113968,
-      "type": "North Indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=27.1591488,78.0113968",
-      "source": "osm"
-    },
-    {
-      "nom": "Bikanerwala",
-      "lat": 27.1591273,
-      "lng": 78.0135204,
-      "type": "regional, indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=27.1591273,78.0135204",
-      "source": "osm"
-    },
-    {
-      "nom": "Lakshmi Vilas",
-      "lat": 27.158774,
-      "lng": 78.012715,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=27.158774,78.012715",
-      "source": "osm"
-    },
-    {
-      "nom": "Sardaar Ji Da Dhaba",
-      "lat": 27.159432,
-      "lng": 77.9935278,
-      "type": "indian, chinese",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=27.159432,77.9935278",
-      "source": "osm"
-    },
-    {
-      "nom": "Thali Bhojnalay",
-      "lat": 27.1673658,
-      "lng": 78.0369412,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=27.1673658,78.0369412",
-      "source": "osm"
-    },
-    {
-      "nom": "Pashtun",
-      "lat": 27.1626913,
-      "lng": 78.0358794,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=27.1626913,78.0358794",
-      "source": "osm"
-    },
-    {
-      "nom": "Nawaabs",
-      "lat": 27.161978,
-      "lng": 78.0377869,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=27.161978,78.0377869",
-      "source": "osm"
-    },
-    {
-      "nom": "Joney's place",
-      "lat": 27.1692084,
-      "lng": 78.0418721,
-      "type": "italian, indian, asian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=27.1692084,78.0418721",
-      "source": "osm"
-    },
-    {
-      "nom": "Taj View Rooftop Restaurant",
-      "lat": 27.1686732,
-      "lng": 78.0431941,
-      "type": "international, indian, chinese",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=27.1686732,78.0431941",
-      "source": "osm"
-    },
-    {
-      "nom": "Oshun Global Café",
-      "lat": 27.1698414,
-      "lng": 78.0436827,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=27.1698414,78.0436827",
-      "source": "osm"
-    },
-    {
-      "nom": "vaishnau sweet house",
-      "lat": 27.1418604,
-      "lng": 78.0086308,
-      "type": "indian, samosa, sweets",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=27.1418604,78.0086308",
-      "source": "osm"
-    },
-    {
-      "nom": "Thaaliwala, pure veg Restaurant",
-      "lat": 27.1594022,
-      "lng": 78.0443218,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=27.1594022,78.0443218",
-      "source": "osm"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "Sai president hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1749197,78.0084326",
-      "lat": 27.1749197,
-      "lng": 78.0084326,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1749197,78.0084326",
-      "source": "osm"
-    },
-    {
-      "nom": "splender hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1740869,78.0092453",
-      "lat": 27.1740869,
-      "lng": 78.0092453,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1740869,78.0092453",
-      "source": "osm"
-    },
-    {
-      "nom": "moti palace hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1793172,78.0054876",
-      "lat": 27.1793172,
-      "lng": 78.0054876,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1793172,78.0054876",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel fvimal Dhara",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1795589,78.0058215",
-      "lat": 27.1795589,
-      "lng": 78.0058215,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1795589,78.0058215",
-      "source": "osm"
-    },
-    {
-      "nom": "Taj way hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1798565,78.0045112",
-      "lat": 27.1798565,
-      "lng": 78.0045112,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1798565,78.0045112",
-      "source": "osm"
-    },
-    {
-      "nom": "Pentas hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1721075,78.0090452",
-      "lat": 27.1721075,
-      "lng": 78.0090452,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1721075,78.0090452",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Marc Royal OYO 15493",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1749424,78.0011693",
-      "lat": 27.1749424,
-      "lng": 78.0011693,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1749424,78.0011693",
-      "source": "osm"
-    },
-    {
-      "nom": "Sanjay hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1689863,78.0072884",
-      "lat": 27.1689863,
-      "lng": 78.0072884,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1689863,78.0072884",
-      "source": "osm"
-    },
-    {
-      "nom": "Laurie's Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1681349,78.00856",
-      "lat": 27.1681349,
-      "lng": 78.00856,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1681349,78.00856",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Royale",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.171544,78.0163356",
-      "lat": 27.171544,
-      "lng": 78.0163356,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.171544,78.0163356",
-      "source": "osm"
-    },
-    {
-      "nom": "HOTEL SURYA",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1668235,78.0067997",
-      "lat": 27.1668235,
-      "lng": 78.0067997,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1668235,78.0067997",
-      "source": "osm"
-    },
-    {
-      "nom": "REST HOUSE",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1678826,78.0146375",
-      "lat": 27.1678826,
-      "lng": 78.0146375,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1678826,78.0146375",
-      "source": "osm"
-    },
-    {
-      "nom": "mathur vaishay hostel (boys hostel)",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1812902,77.9972672",
-      "lat": 27.1812902,
-      "lng": 77.9972672,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1812902,77.9972672",
-      "source": "osm"
-    },
-    {
-      "nom": "Akbar Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1711181,78.0184537",
-      "lat": 27.1711181,
-      "lng": 78.0184537,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1711181,78.0184537",
-      "source": "osm"
-    },
-    {
-      "nom": "sapru hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1875736,78.0009025",
-      "lat": 27.1875736,
-      "lng": 78.0009025,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1875736,78.0009025",
-      "source": "osm"
-    },
-    {
-      "nom": "hotel sakura",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1661994,77.9992134",
-      "lat": 27.1661994,
-      "lng": 77.9992134,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1661994,77.9992134",
-      "source": "osm"
-    },
-    {
-      "nom": "lic office;thomson hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1884901,78.0010227",
-      "lat": 27.1884901,
-      "lng": 78.0010227,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1884901,78.0010227",
-      "source": "osm"
-    },
-    {
-      "nom": "King Park Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1943372,78.0106275",
-      "lat": 27.1943372,
-      "lng": 78.0106275,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1943372,78.0106275",
-      "source": "osm"
-    },
-    {
-      "nom": "Marina",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1974545,78.0026026",
-      "lat": 27.1974545,
-      "lng": 78.0026026,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1974545,78.0026026",
-      "source": "osm"
-    },
-    {
-      "nom": "Youth Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1991292,78.0049243",
-      "lat": 27.1991292,
-      "lng": 78.0049243,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1991292,78.0049243",
-      "source": "osm"
-    },
-    {
-      "nom": "Clarks Shiraz",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1584871,78.0248611",
-      "lat": 27.1584871,
-      "lng": 78.0248611,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1584871,78.0248611",
-      "source": "osm"
-    },
-    {
-      "nom": "Ray of Maya",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1661393,78.0364429",
-      "lat": 27.1661393,
-      "lng": 78.0364429,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1661393,78.0364429",
-      "source": "osm"
-    },
-    {
-      "nom": "Amar Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1609539,78.0335616",
-      "lat": 27.1609539,
-      "lng": 78.0335616,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1609539,78.0335616",
-      "source": "osm"
-    },
-    {
-      "nom": "Maya",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.166379,78.0373174",
-      "lat": 27.166379,
-      "lng": 78.0373174,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.166379,78.0373174",
-      "source": "osm"
-    },
-    {
-      "nom": "Daawat",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1665216,78.0375916",
-      "lat": 27.1665216,
-      "lng": 78.0375916,
-      "halalFriendly": false,
-      "bookingUrl": "www.hoteldaawatplaceagra.com",
-      "source": "osm"
-    },
-    {
-      "nom": "Ganga Ratan",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1626216,78.0358315",
-      "lat": 27.1626216,
-      "lng": 78.0358315,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1626216,78.0358315",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Attiti",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.160808,78.0345771",
-      "lat": 27.160808,
-      "lng": 78.0345771,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.160808,78.0345771",
-      "source": "osm"
-    },
-    {
-      "nom": "Amar Palace Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1613146,78.0349937",
-      "lat": 27.1613146,
-      "lng": 78.0349937,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1613146,78.0349937",
-      "source": "osm"
-    },
-    {
-      "nom": "Sleep inn",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1606463,78.0349906",
-      "lat": 27.1606463,
-      "lng": 78.0349906,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1606463,78.0349906",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Mansingh Palace",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1609788,78.0353623",
-      "lat": 27.1609788,
-      "lng": 78.0353623,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1609788,78.0353623",
-      "source": "osm"
-    },
-    {
-      "nom": "Howard Park Plaza",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1628283,78.0368457",
-      "lat": 27.1628283,
-      "lng": 78.0368457,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.parkplaza.com/agrain",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Ashish Palace",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1621798,78.0364533",
-      "lat": 27.1621798,
-      "lng": 78.0364533,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1621798,78.0364533",
-      "source": "osm"
-    },
-    {
-      "nom": "Bansi Homestay",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.160306,78.0352371",
-      "lat": 27.160306,
-      "lng": 78.0352371,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.160306,78.0352371",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel the Oasis",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.161931,78.0366311",
-      "lat": 27.161931,
-      "lng": 78.0366311,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.161931,78.0366311",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Shyam Palace",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.168818,78.0402239",
-      "lat": 27.168818,
-      "lng": 78.0402239,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.168818,78.0402239",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Jyoti Continental",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1584991,78.0344114",
-      "lat": 27.1584991,
-      "lng": 78.0344114,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1584991,78.0344114",
-      "source": "osm"
-    },
-    {
-      "nom": "Jahangir Lodge",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.16732,78.0397505",
-      "lat": 27.16732,
-      "lng": 78.0397505,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.16732,78.0397505",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Dasaprakash",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.158385,78.0344094",
-      "lat": 27.158385,
-      "lng": 78.0344094,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.158385,78.0344094",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Sidhartha",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1694194,78.040645",
-      "lat": 27.1694194,
-      "lng": 78.040645,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.hotelsidharthaagra.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Hôtel Sia Palace",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1695257,78.0409048",
-      "lat": 27.1695257,
-      "lng": 78.0409048,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1695257,78.0409048",
-      "source": "osm"
-    },
-    {
-      "nom": "Lucky Guest House",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1689759,78.0407721",
-      "lat": 27.1689759,
-      "lng": 78.0407721,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1689759,78.0407721",
-      "source": "osm"
-    },
-    {
-      "nom": "BPCL AGRA TRANSIT FLAT",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1576122,78.0343273",
-      "lat": 27.1576122,
-      "lng": 78.0343273,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1576122,78.0343273",
-      "source": "osm"
-    },
-    {
-      "nom": "N.homestay",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1575547,78.0350877",
-      "lat": 27.1575547,
-      "lng": 78.0350877,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1575547,78.0350877",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Seven Hills Tower",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1612015,78.0380478",
-      "lat": 27.1612015,
-      "lng": 78.0380478,
-      "halalFriendly": false,
-      "bookingUrl": "http://www.hotelsevenhillstower.in",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Shahjahan",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.169003,78.0417649",
-      "lat": 27.169003,
-      "lng": 78.0417649,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.169003,78.0417649",
-      "source": "osm"
-    },
-    {
-      "nom": "Taj inn hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1619624,78.0390367",
-      "lat": 27.1619624,
-      "lng": 78.0390367,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1619624,78.0390367",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Kamal",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1691467,78.0424911",
-      "lat": 27.1691467,
-      "lng": 78.0424911,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1691467,78.0424911",
-      "source": "osm"
-    },
-    {
-      "nom": "shanti lodge",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.168997,78.0429333",
-      "lat": 27.168997,
-      "lng": 78.0429333,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.168997,78.0429333",
-      "source": "osm"
-    },
-    {
-      "nom": "Joey’s Hostel Agra",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1691191,78.0432423",
-      "lat": 27.1691191,
-      "lng": 78.0432423,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1691191,78.0432423",
-      "source": "osm"
-    },
-    {
-      "nom": "Sai palace",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1686711,78.0431531",
-      "lat": 27.1686711,
-      "lng": 78.0431531,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1686711,78.0431531",
-      "source": "osm"
-    },
-    {
-      "nom": "Taj City Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1688592,78.0432307",
-      "lat": 27.1688592,
-      "lng": 78.0432307,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1688592,78.0432307",
-      "source": "osm"
-    },
-    {
-      "nom": "Saniya Palace",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1691149,78.0433777",
-      "lat": 27.1691149,
-      "lng": 78.0433777,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1691149,78.0433777",
-      "source": "osm"
-    },
-    {
-      "nom": "The Gateway Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1615917,78.0407622",
-      "lat": 27.1615917,
-      "lng": 78.0407622,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1615917,78.0407622",
-      "source": "osm"
-    },
-    {
-      "nom": "Sheela",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1712717,78.0447017",
-      "lat": 27.1712717,
-      "lng": 78.0447017,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1712717,78.0447017",
-      "source": "osm"
-    },
-    {
-      "nom": "JP hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.2101291,78.0041491",
-      "lat": 27.2101291,
-      "lng": 78.0041491,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.2101291,78.0041491",
-      "source": "osm"
-    },
-    {
-      "nom": "the kamta hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.2103421,78.0072791",
-      "lat": 27.2103421,
-      "lng": 78.0072791,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.2103421,78.0072791",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Taj Kema",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1712851,78.0462163",
-      "lat": 27.1712851,
-      "lng": 78.0462163,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1712851,78.0462163",
-      "source": "osm"
-    },
-    {
-      "nom": "ZIGZAG HOSTEL AGRA",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1524497,78.0360422",
-      "lat": 27.1524497,
-      "lng": 78.0360422,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1524497,78.0360422",
-      "source": "osm"
-    },
-    {
-      "nom": "ITC Mughal",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 5,
-      "mapsUrl": "https://maps.google.com/?q=27.1610537,78.0439887",
-      "lat": 27.1610537,
-      "lng": 78.0439887,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1610537,78.0439887",
-      "source": "osm"
-    },
-    {
-      "nom": "mughal hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1602348,78.0444991",
-      "lat": 27.1602348,
-      "lng": 78.0444991,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1602348,78.0444991",
-      "source": "osm"
-    },
-    {
-      "nom": "The Oberoi Amarvilas",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 5,
-      "mapsUrl": "https://maps.google.com/?q=27.167935,78.0489443",
-      "lat": 27.167935,
-      "lng": 78.0489443,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.167935,78.0489443",
-      "source": "osm"
-    },
-    {
-      "nom": "The Oberoi Amarvilas Agra",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1679979,78.0490141",
-      "lat": 27.1679979,
-      "lng": 78.0490141,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.oberoihotels.com",
-      "source": "osm"
-    },
-    {
-      "nom": "Mission Backpack Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1673257,78.0498279",
-      "lat": 27.1673257,
-      "lng": 78.0498279,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1673257,78.0498279",
-      "source": "osm"
-    },
-    {
-      "nom": "Vijay Vilas Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.2149719,78.0066246",
-      "lat": 27.2149719,
-      "lng": 78.0066246,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.2149719,78.0066246",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Taj Plaza",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1684817,78.0502138",
-      "lat": 27.1684817,
-      "lng": 78.0502138,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.hoteltajplazaagra.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Rashmi Agra hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1683643,78.050536",
-      "lat": 27.1683643,
-      "lng": 78.050536,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1683643,78.050536",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Atulyaa Taj",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1684804,78.0507154",
-      "lat": 27.1684804,
-      "lng": 78.0507154,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1684804,78.0507154",
-      "source": "osm"
-    },
-    {
-      "nom": "Hoel Rashmi",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1681266,78.0506456",
-      "lat": 27.1681266,
-      "lng": 78.0506456,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1681266,78.0506456",
-      "source": "osm"
-    },
-    {
-      "nom": "big brother hostel agra",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1677322,78.0506849",
-      "lat": 27.1677322,
-      "lng": 78.0506849,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1677322,78.0506849",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Taj Resorts",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1683242,78.0510533",
-      "lat": 27.1683242,
-      "lng": 78.0510533,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1683242,78.0510533",
-      "source": "osm"
-    },
-    {
-      "nom": "Hosteller",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1670169,78.0507762",
-      "lat": 27.1670169,
-      "lng": 78.0507762,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.thehosteller.com/hostels/the-hosteller-agra",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel tara Grand",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1682765,78.0511311",
-      "lat": 27.1682765,
-      "lng": 78.0511311,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1682765,78.0511311",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Sheela Inn",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1675087,78.051029",
-      "lat": 27.1675087,
-      "lng": 78.051029,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1675087,78.051029",
-      "source": "osm"
-    },
-    {
-      "nom": "Anant Plaza",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1576047,78.0469384",
-      "lat": 27.1576047,
-      "lng": 78.0469384,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1576047,78.0469384",
-      "source": "osm"
-    },
-    {
-      "nom": "The Coral Tree Boutique Homestay",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1667334,78.0512558",
-      "lat": 27.1667334,
-      "lng": 78.0512558,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.thecoraltreehomestay.com",
-      "source": "osm"
-    },
-    {
-      "nom": "The Coral House Homestay by the Taj",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.166644,78.0512523",
-      "lat": 27.166644,
-      "lng": 78.0512523,
-      "halalFriendly": false,
-      "bookingUrl": "https://coralcourthomestay.com",
-      "source": "osm"
-    },
-    {
-      "nom": "The Coral Court Homestay",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1661969,78.051229",
-      "lat": 27.1661969,
-      "lng": 78.051229,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1661969,78.051229",
-      "source": "osm"
-    },
-    {
-      "nom": "HOTEL AREEBA",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1575121,78.0479832",
-      "lat": 27.1575121,
-      "lng": 78.0479832,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1575121,78.0479832",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Taj Sapphire",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1577181,78.0481516",
-      "lat": 27.1577181,
-      "lng": 78.0481516,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1577181,78.0481516",
-      "source": "osm"
-    },
-    {
-      "nom": "OYO Hotel Rj Palace",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1928871,77.9658132",
-      "lat": 27.1928871,
-      "lng": 77.9658132,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1928871,77.9658132",
-      "source": "osm"
-    },
-    {
-      "nom": "Surasena Regal Vista",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1569097,78.0498483",
-      "lat": 27.1569097,
-      "lng": 78.0498483,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1569097,78.0498483",
-      "source": "osm"
-    },
-    {
-      "nom": "Namastey Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1638528,78.0535333",
-      "lat": 27.1638528,
-      "lng": 78.0535333,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1638528,78.0535333",
-      "source": "osm"
-    },
-    {
-      "nom": "Backpacker Panda Friends",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1634384,78.0534034",
-      "lat": 27.1634384,
-      "lng": 78.0534034,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1634384,78.0534034",
-      "source": "osm"
-    },
-    {
-      "nom": "Om",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1642277,78.0537096",
-      "lat": 27.1642277,
-      "lng": 78.0537096,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.booking.com/Share-0nGpfe",
-      "source": "osm"
-    },
-    {
-      "nom": "Good Vibes Guesthouse",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1638716,78.053596",
-      "lat": 27.1638716,
-      "lng": 78.053596,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1638716,78.053596",
-      "source": "osm"
-    },
-    {
-      "nom": "OM Homestay Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1642426,78.0537652",
-      "lat": 27.1642426,
-      "lng": 78.0537652,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1642426,78.0537652",
-      "source": "osm"
-    },
-    {
-      "nom": "OM Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1641657,78.0537606",
-      "lat": 27.1641657,
-      "lng": 78.0537606,
-      "halalFriendly": false,
-      "bookingUrl": "https://om-hostel-student-dormitory.business.site/",
-      "source": "osm"
-    },
-    {
-      "nom": "Moustache Hostel Correct Location",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.163803,78.0536511",
-      "lat": 27.163803,
-      "lng": 78.0536511,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.163803,78.0536511",
-      "source": "osm"
-    },
-    {
-      "nom": "Treebo White Inn",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1646686,78.054145",
-      "lat": 27.1646686,
-      "lng": 78.054145,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1646686,78.054145",
-      "source": "osm"
-    },
-    {
-      "nom": "Yatri Sadan",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.2192881,78.0125777",
-      "lat": 27.2192881,
-      "lng": 78.0125777,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.2192881,78.0125777",
-      "source": "osm"
-    },
-    {
-      "nom": "Aman Homestay, A Boutique Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1636378,78.053897",
-      "lat": 27.1636378,
-      "lng": 78.053897,
-      "halalFriendly": false,
-      "bookingUrl": "https://amanhomestay.com",
-      "source": "osm"
-    },
-    {
-      "nom": "राइन",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1633872,78.0538102",
-      "lat": 27.1633872,
-      "lng": 78.0538102,
-      "halalFriendly": false,
-      "bookingUrl": "http://www.rhinestay.com",
-      "source": "osm"
-    },
-    {
-      "nom": "G Vibes Guest House",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.163753,78.0539794",
-      "lat": 27.163753,
-      "lng": 78.0539794,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.163753,78.0539794",
-      "source": "osm"
-    },
-    {
-      "nom": "Thomas home Stay",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1601538,78.0525328",
-      "lat": 27.1601538,
-      "lng": 78.0525328,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1601538,78.0525328",
-      "source": "osm"
-    },
-    {
-      "nom": "Spiritual Yoga Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1644959,78.0544288",
-      "lat": 27.1644959,
-      "lng": 78.0544288,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1644959,78.0544288",
-      "source": "osm"
-    },
-    {
-      "nom": "Crystal Sarovar Premiere Agra",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1574931,78.0513315",
-      "lat": 27.1574931,
-      "lng": 78.0513315,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1574931,78.0513315",
-      "source": "osm"
-    },
-    {
-      "nom": "The Taj Vista",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1642562,78.0543686",
-      "lat": 27.1642562,
-      "lng": 78.0543686,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1642562,78.0543686",
-      "source": "osm"
-    },
-    {
-      "nom": "Agra Hotel Marygold",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1619965,78.0535816",
-      "lat": 27.1619965,
-      "lng": 78.0535816,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1619965,78.0535816",
-      "source": "osm"
-    },
-    {
-      "nom": "yoga guest house hostel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1644655,78.0545248",
-      "lat": 27.1644655,
-      "lng": 78.0545248,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1644655,78.0545248",
-      "source": "osm"
-    },
-    {
-      "nom": "The Retreat",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1622346,78.0540179",
-      "lat": 27.1622346,
-      "lng": 78.0540179,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1622346,78.0540179",
-      "source": "osm"
-    },
-    {
-      "nom": "Pyrenees Home Stay",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1599101,78.053023",
-      "lat": 27.1599101,
-      "lng": 78.053023,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1599101,78.053023",
-      "source": "osm"
-    },
-    {
-      "nom": "Zostel Agra",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1643508,78.0558587",
-      "lat": 27.1643508,
-      "lng": 78.0558587,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1643508,78.0558587",
-      "source": "osm"
-    },
-    {
-      "nom": "Radisson Agra",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1585877,78.0540075",
-      "lat": 27.1585877,
-      "lng": 78.0540075,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1585877,78.0540075",
-      "source": "osm"
-    },
-    {
-      "nom": "Taj Hotel & Convention Center",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1628269,78.0563887",
-      "lat": 27.1628269,
-      "lng": 78.0563887,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.tajhotels.com/en-in/hotels/taj-agra",
-      "source": "osm"
-    },
-    {
-      "nom": "Mata Mohini Dharamshala",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.2211461,78.0191878",
-      "lat": 27.2211461,
-      "lng": 78.0191878,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.2211461,78.0191878",
-      "source": "osm"
-    },
-    {
-      "nom": "DoubleTree by Hilton Hotel Agra",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 5,
-      "mapsUrl": "https://maps.google.com/?q=27.1515883,78.0508426",
-      "lat": 27.1515883,
-      "lng": 78.0508426,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.hilton.com/en/hotels/agrdtdi-doubletree-agra/",
-      "source": "osm"
-    },
-    {
-      "nom": "Taj Village",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1675188,78.0583174",
-      "lat": 27.1675188,
-      "lng": 78.0583174,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1675188,78.0583174",
-      "source": "osm"
-    },
-    {
-      "nom": "Shiv Kothi Homestay",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1606032,78.0573211",
-      "lat": 27.1606032,
-      "lng": 78.0573211,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1606032,78.0573211",
-      "source": "osm"
-    },
-    {
-      "nom": "Crystal Inn",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1618732,78.0579291",
-      "lat": 27.1618732,
-      "lng": 78.0579291,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1618732,78.0579291",
-      "source": "osm"
-    },
-    {
-      "nom": "utkash vilas",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1581604,78.0577298",
-      "lat": 27.1581604,
-      "lng": 78.0577298,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1581604,78.0577298",
-      "source": "osm"
-    },
-    {
-      "nom": "Zigzag",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1639332,78.0608891",
-      "lat": 27.1639332,
-      "lng": 78.0608891,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1639332,78.0608891",
-      "source": "osm"
-    },
-    {
-      "nom": "Royale Sarovar Portico",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1581601,78.0593337",
-      "lat": 27.1581601,
-      "lng": 78.0593337,
-      "halalFriendly": false,
-      "bookingUrl": "https://sarovarhotels.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "New Youth Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.2254151,78.015923",
-      "lat": 27.2254151,
-      "lng": 78.015923,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.2254151,78.015923",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Marine House",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1504695,78.0549047",
-      "lat": 27.1504695,
-      "lng": 78.0549047,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1504695,78.0549047",
-      "source": "osm"
-    },
-    {
-      "nom": "Khas mahal homestay",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1464391,78.0525582",
-      "lat": 27.1464391,
-      "lng": 78.0525582,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1464391,78.0525582",
-      "source": "osm"
-    },
-    {
-      "nom": "Courtyard by Marriott Agra",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 5,
-      "mapsUrl": "https://maps.google.com/?q=27.1563143,78.0596665",
-      "lat": 27.1563143,
-      "lng": 78.0596665,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1563143,78.0596665",
-      "source": "osm"
-    },
-    {
-      "nom": "soul'Stay",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1565768,78.0609077",
-      "lat": 27.1565768,
-      "lng": 78.0609077,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1565768,78.0609077",
-      "source": "osm"
-    },
-    {
-      "nom": "rajasthani hotel bhilwara",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.1241559,78.0046412",
-      "lat": 27.1241559,
-      "lng": 78.0046412,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.1241559,78.0046412",
-      "source": "osm"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Agra",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Agra",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Agra%20Agra"
-    },
-    {
-      "nom": "Purani Masjid",
-      "lat": 27.1762855,
-      "lng": 78.0119662,
-      "coordonnees": {
-        "lat": 27.1762855,
-        "lng": 78.0119662
-      },
-      "mapsUrl": "https://maps.google.com/?q=27.1762855,78.0119662",
-      "source": "osm"
-    },
-    {
-      "nom": "masjid,nagar pracharni",
-      "lat": 27.1856041,
-      "lng": 78.0012973,
-      "coordonnees": {
-        "lat": 27.1856041,
-        "lng": 78.0012973
-      },
-      "mapsUrl": "https://maps.google.com/?q=27.1856041,78.0012973",
-      "source": "osm"
-    },
-    {
-      "nom": "Mosquée",
-      "lat": 27.1678358,
-      "lng": 78.0155645,
-      "coordonnees": {
-        "lat": 27.1678358,
-        "lng": 78.0155645
-      },
-      "mapsUrl": "https://maps.google.com/?q=27.1678358,78.0155645",
-      "source": "osm"
-    },
-    {
-      "nom": "Moti Masjid",
-      "lat": 27.1803423,
-      "lng": 78.0217092,
-      "coordonnees": {
-        "lat": 27.1803423,
-        "lng": 78.0217092
-      },
-      "mapsUrl": "https://maps.google.com/?q=27.1803423,78.0217092",
-      "source": "osm"
-    },
-    {
-      "nom": "Nagina Masjid",
-      "lat": 27.1794172,
-      "lng": 78.0225932,
-      "coordonnees": {
-        "lat": 27.1794172,
-        "lng": 78.0225932
-      },
-      "mapsUrl": "https://maps.google.com/?q=27.1794172,78.0225932",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid",
-      "lat": 27.1780122,
-      "lng": 77.9906219,
-      "coordonnees": {
-        "lat": 27.1780122,
-        "lng": 77.9906219
-      },
-      "mapsUrl": "https://maps.google.com/?q=27.1780122,77.9906219",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Raja Mandi Station",
-      "lat": 27.1938658,
-      "lng": 77.9958609,
-      "coordonnees": {
-        "lat": 27.1938658,
-        "lng": 77.9958609
-      },
-      "mapsUrl": "https://maps.google.com/?q=27.1938658,77.9958609",
-      "source": "osm"
-    },
-    {
-      "nom": "Gumbad Mosque",
-      "lat": 27.1518693,
-      "lng": 77.999879,
-      "coordonnees": {
-        "lat": 27.1518693,
-        "lng": 77.999879
-      },
-      "mapsUrl": "https://maps.google.com/?q=27.1518693,77.999879",
-      "source": "osm"
-    },
-    {
-      "nom": "Ahamad Sa Baba Ki Dargah",
-      "lat": 27.1982374,
-      "lng": 77.9917008,
-      "coordonnees": {
-        "lat": 27.1982374,
-        "lng": 77.9917008
-      },
-      "mapsUrl": "https://maps.google.com/?q=27.1982374,77.9917008",
-      "source": "osm"
-    },
-    {
-      "nom": "mazaar-e-muqaddas shaheed-e-saalis",
-      "lat": 27.2121366,
-      "lng": 78.0050393,
-      "coordonnees": {
-        "lat": 27.2121366,
-        "lng": 78.0050393
-      },
-      "mapsUrl": "https://maps.google.com/?q=27.2121366,78.0050393",
-      "source": "osm"
-    },
-    {
-      "nom": "Hazrat Ahmad Shah Bukhari Rahmatullah Aleh Dargah",
-      "lat": 27.1769071,
-      "lng": 78.0483946,
-      "coordonnees": {
-        "lat": 27.1769071,
-        "lng": 78.0483946
-      },
-      "adresse": "Near Secret Temple Taj View, Agra, Uttar Pradesh",
-      "mapsUrl": "https://maps.google.com/?q=27.1769071,78.0483946",
-      "source": "osm"
-    },
-    {
-      "nom": "Lal Masjid",
-      "lat": 27.2073504,
-      "lng": 78.0305259,
-      "coordonnees": {
-        "lat": 27.2073504,
-        "lng": 78.0305259
-      },
-      "mapsUrl": "https://maps.google.com/?q=27.2073504,78.0305259",
-      "source": "osm"
-    },
-    {
-      "nom": "4 shayad",
-      "lat": 27.2077321,
-      "lng": 78.0437401,
-      "coordonnees": {
-        "lat": 27.2077321,
-        "lng": 78.0437401
-      },
-      "mapsUrl": "https://maps.google.com/?q=27.2077321,78.0437401",
-      "source": "osm"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Taj Mahal (UNESCO)",
-      "categorie": "Histoire",
-      "description": "Mausolée de marbre blanc, merveille du monde.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Taj%20Mahal%20%28UNESCO%29%20Agra"
-    },
-    {
-      "id": "a2",
-      "nom": "Fort d'Agra (UNESCO)",
-      "categorie": "Histoire",
-      "description": "Citadelle moghole en grès rouge.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Fort%20d%27Agra%20%28UNESCO%29%20Agra"
-    },
-    {
-      "id": "a3",
-      "nom": "Itimad-ud-Daulah",
-      "categorie": "Histoire",
-      "description": "'Petit Taj', tombeau moghol finement incrusté.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Itimad-ud-Daulah%20Agra",
-      "lat": 27.1927827,
-      "lng": 78.0314359,
-      "geocoded": true
-    },
-    {
-      "nom": "Saraswati garden",
-      "lat": 27.1849703,
-      "lng": 78.0021817,
-      "coordonnees": {
-        "lat": 27.1849703,
-        "lng": 78.0021817
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=27.1849703,78.0021817",
-      "source": "osm"
-    },
-    {
-      "nom": "Hathi Pol",
-      "lat": 27.1803739,
-      "lng": 78.0186461,
-      "coordonnees": {
-        "lat": 27.1803739,
-        "lng": 78.0186461
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.1803739,78.0186461",
-      "source": "osm"
-    },
-    {
-      "nom": "Rawatpara Spice Market",
-      "lat": 27.1841542,
-      "lng": 78.0169307,
-      "coordonnees": {
-        "lat": 27.1841542,
-        "lng": 78.0169307
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.1841542,78.0169307",
-      "source": "osm"
-    },
-    {
-      "nom": "John Russel Colvin's Grave",
-      "lat": 27.1787377,
-      "lng": 78.0222447,
-      "coordonnees": {
-        "lat": 27.1787377,
-        "lng": 78.0222447
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=27.1787377,78.0222447",
-      "source": "osm"
-    },
-    {
-      "nom": "big ground",
-      "lat": 27.1743433,
-      "lng": 77.9939656,
-      "coordonnees": {
-        "lat": 27.1743433,
-        "lng": 77.9939656
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=27.1743433,77.9939656",
-      "source": "osm"
-    },
-    {
-      "nom": "Hauz-i-Jehangir",
-      "lat": 27.1776632,
-      "lng": 78.0225118,
-      "coordonnees": {
-        "lat": 27.1776632,
-        "lng": 78.0225118
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.1776632,78.0225118",
-      "source": "osm"
-    },
-    {
-      "nom": "Seo ka bazar",
-      "lat": 27.1884291,
-      "lng": 78.0143414,
-      "coordonnees": {
-        "lat": 27.1884291,
-        "lng": 78.0143414
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.1884291,78.0143414",
-      "source": "osm"
-    },
-    {
-      "nom": "Kashmiri bazar",
-      "lat": 27.1878862,
-      "lng": 78.0159899,
-      "coordonnees": {
-        "lat": 27.1878862,
-        "lng": 78.0159899
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.1878862,78.0159899",
-      "source": "osm"
-    },
-    {
-      "nom": "Akhbari Mahal",
-      "lat": 27.1769871,
-      "lng": 78.023238,
-      "coordonnees": {
-        "lat": 27.1769871,
-        "lng": 78.023238
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.1769871,78.023238",
-      "source": "osm"
-    },
-    {
-      "nom": "Jhansi Rani Laxmibhai Statue",
-      "lat": 27.1635521,
-      "lng": 78.0038257,
-      "coordonnees": {
-        "lat": 27.1635521,
-        "lng": 78.0038257
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=27.1635521,78.0038257",
-      "source": "osm"
-    },
-    {
-      "nom": "Diwan-i-Khas",
-      "lat": 27.178897,
-      "lng": 78.0233646,
-      "coordonnees": {
-        "lat": 27.178897,
-        "lng": 78.0233646
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.178897,78.0233646",
-      "source": "osm"
-    },
-    {
-      "nom": "Mal ka bazar",
-      "lat": 27.1883011,
-      "lng": 78.0194323,
-      "coordonnees": {
-        "lat": 27.1883011,
-        "lng": 78.0194323
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.1883011,78.0194323",
-      "source": "osm"
-    },
-    {
-      "nom": "Jhalkaribai Statue",
-      "lat": 27.1753047,
-      "lng": 78.0263372,
-      "coordonnees": {
-        "lat": 27.1753047,
-        "lng": 78.0263372
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=27.1753047,78.0263372",
-      "source": "osm"
-    },
-    {
-      "nom": "Shahjahan Garden",
-      "lat": 27.1745153,
-      "lng": 78.0269785,
-      "coordonnees": {
-        "lat": 27.1745153,
-        "lng": 78.0269785
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=27.1745153,78.0269785",
-      "source": "osm"
-    },
-    {
-      "nom": "Kumar Tobacco Shop",
-      "lat": 27.1593532,
-      "lng": 78.0094182,
-      "coordonnees": {
-        "lat": 27.1593532,
-        "lng": 78.0094182
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.1593532,78.0094182",
-      "source": "osm"
-    },
-    {
-      "nom": "college park",
-      "lat": 27.1937981,
-      "lng": 78.0018054,
-      "coordonnees": {
-        "lat": 27.1937981,
-        "lng": 78.0018054
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=27.1937981,78.0018054",
-      "source": "osm"
-    },
-    {
-      "nom": "Viewpoint of Taj Mahal & Agra Fort",
-      "lat": 27.1842702,
-      "lng": 78.0270801,
-      "coordonnees": {
-        "lat": 27.1842702,
-        "lng": 78.0270801
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.1842702,78.0270801",
-      "source": "osm"
-    },
-    {
-      "nom": "company garden",
-      "lat": 27.1589014,
-      "lng": 78.0152231,
-      "coordonnees": {
-        "lat": 27.1589014,
-        "lng": 78.0152231
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=27.1589014,78.0152231",
-      "source": "osm"
-    },
-    {
-      "nom": "Ratn muni jain inter college",
-      "lat": 27.1889515,
-      "lng": 77.9898933,
-      "coordonnees": {
-        "lat": 27.1889515,
-        "lng": 77.9898933
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=27.1889515,77.9898933",
-      "source": "osm"
-    },
-    {
-      "nom": "Shaheed Smarak",
-      "lat": 27.1983897,
-      "lng": 78.0048416,
-      "coordonnees": {
-        "lat": 27.1983897,
-        "lng": 78.0048416
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=27.1983897,78.0048416",
-      "source": "osm"
-    },
-    {
-      "nom": "Free view point",
-      "lat": 27.1804306,
-      "lng": 78.0323647,
-      "coordonnees": {
-        "lat": 27.1804306,
-        "lng": 78.0323647
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=27.1804306,78.0323647",
-      "source": "osm"
-    },
-    {
-      "nom": "Old abandoned houses with monkeys",
-      "lat": 27.1925386,
-      "lng": 78.0261111,
-      "coordonnees": {
-        "lat": 27.1925386,
-        "lng": 78.0261111
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.1925386,78.0261111",
-      "source": "osm"
-    },
-    {
-      "nom": "tara chand park",
-      "lat": 27.1531295,
-      "lng": 77.9986667,
-      "coordonnees": {
-        "lat": 27.1531295,
-        "lng": 77.9986667
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=27.1531295,77.9986667",
-      "source": "osm"
-    },
-    {
-      "nom": "Street Art Wall",
-      "lat": 27.1606654,
-      "lng": 78.0297018,
-      "coordonnees": {
-        "lat": 27.1606654,
-        "lng": 78.0297018
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.1606654,78.0297018",
-      "source": "osm"
-    },
-    {
-      "nom": "Chauburji",
-      "lat": 27.1901207,
-      "lng": 78.0325617,
-      "coordonnees": {
-        "lat": 27.1901207,
-        "lng": 78.0325617
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=27.1901207,78.0325617",
-      "source": "osm"
-    },
-    {
-      "nom": "alka puri colony park",
-      "lat": 27.1868141,
-      "lng": 77.9812168,
-      "coordonnees": {
-        "lat": 27.1868141,
-        "lng": 77.9812168
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=27.1868141,77.9812168",
-      "source": "osm"
-    },
-    {
-      "nom": "No View of Taj Mahal",
-      "lat": 27.1749727,
-      "lng": 78.0375303,
-      "coordonnees": {
-        "lat": 27.1749727,
-        "lng": 78.0375303
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.1749727,78.0375303",
-      "source": "osm"
-    },
-    {
-      "nom": "Manas Mandir Kalyan Samiti, park",
-      "lat": 27.1815675,
-      "lng": 77.9762593,
-      "coordonnees": {
-        "lat": 27.1815675,
-        "lng": 77.9762593
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=27.1815675,77.9762593",
-      "source": "osm"
-    },
-    {
-      "nom": "View Point Taj Mahal 50 INR",
-      "lat": 27.1785057,
-      "lng": 78.0405625,
-      "coordonnees": {
-        "lat": 27.1785057,
-        "lng": 78.0405625
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.1785057,78.0405625",
-      "source": "osm"
-    },
-    {
-      "nom": "M",
-      "lat": 27.1649306,
-      "lng": 78.0379596,
-      "coordonnees": {
-        "lat": 27.1649306,
-        "lng": 78.0379596
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.1649306,78.0379596",
-      "source": "osm"
-    },
-    {
-      "nom": "ताज महल संग्रहालय",
-      "lat": 27.1731379,
-      "lng": 78.0406323,
-      "coordonnees": {
-        "lat": 27.1731379,
-        "lng": 78.0406323
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=27.1731379,78.0406323",
-      "source": "osm"
-    },
-    {
-      "nom": "Ambedkar Park",
-      "lat": 27.1455498,
-      "lng": 78.0136093,
-      "coordonnees": {
-        "lat": 27.1455498,
-        "lng": 78.0136093
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=27.1455498,78.0136093",
-      "source": "osm"
-    },
-    {
-      "nom": "Sai garden",
-      "lat": 27.2071336,
-      "lng": 77.9982519,
-      "coordonnees": {
-        "lat": 27.2071336,
-        "lng": 77.9982519
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=27.2071336,77.9982519",
-      "source": "osm"
-    },
-    {
-      "nom": "Sawad",
-      "lat": 27.1618601,
-      "lng": 78.0396108,
-      "coordonnees": {
-        "lat": 27.1618601,
-        "lng": 78.0396108
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.1618601,78.0396108",
-      "source": "osm"
-    },
-    {
-      "nom": "Taj Mahal Viewpoint",
-      "lat": 27.1759475,
-      "lng": 78.0437931,
-      "coordonnees": {
-        "lat": 27.1759475,
-        "lng": 78.0437931
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=27.1759475,78.0437931",
-      "source": "osm"
-    },
-    {
-      "nom": "chini roja park",
-      "lat": 27.2004609,
-      "lng": 78.0350163,
-      "coordonnees": {
-        "lat": 27.2004609,
-        "lng": 78.0350163
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=27.2004609,78.0350163",
-      "source": "osm"
-    },
-    {
-      "nom": "Tower with viewpoint on the Taj Mahal",
-      "lat": 27.1770779,
-      "lng": 78.0463186,
-      "coordonnees": {
-        "lat": 27.1770779,
-        "lng": 78.0463186
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=27.1770779,78.0463186",
-      "source": "osm"
-    },
-    {
-      "nom": "Taj Mahal view point within nature walk",
-      "lat": 27.1726409,
-      "lng": 78.047483,
-      "coordonnees": {
-        "lat": 27.1726409,
-        "lng": 78.047483
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=27.1726409,78.047483",
-      "source": "osm"
-    },
-    {
-      "nom": "Taj Nature Walk",
-      "lat": 27.1702958,
-      "lng": 78.0485763,
-      "coordonnees": {
-        "lat": 27.1702958,
-        "lng": 78.0485763
-      },
-      "categorie": "Famille",
-      "mapsUrl": "https://maps.google.com/?q=27.1702958,78.0485763",
-      "source": "osm"
-    },
-    {
-      "nom": "ambedker park",
-      "lat": 27.1814998,
-      "lng": 77.966538,
-      "coordonnees": {
-        "lat": 27.1814998,
-        "lng": 77.966538
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=27.1814998,77.966538",
-      "source": "osm"
-    },
-    {
-      "nom": "swami vivekanand park",
-      "lat": 27.2128203,
-      "lng": 77.9946172,
-      "coordonnees": {
-        "lat": 27.2128203,
-        "lng": 77.9946172
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=27.2128203,77.9946172",
-      "source": "osm"
-    },
-    {
-      "nom": "Shree Ram Chandr Farm House",
-      "lat": 27.1481572,
-      "lng": 78.0372622,
-      "coordonnees": {
-        "lat": 27.1481572,
-        "lng": 78.0372622
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=27.1481572,78.0372622",
-      "source": "osm"
-    },
-    {
-      "nom": "agrasen Seva Sadan",
-      "lat": 27.2147355,
-      "lng": 78.0157593,
-      "coordonnees": {
-        "lat": 27.2147355,
-        "lng": 78.0157593
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=27.2147355,78.0157593",
-      "source": "osm"
-    },
-    {
-      "nom": "janak park",
-      "lat": 27.2130687,
-      "lng": 78.0246402,
-      "coordonnees": {
-        "lat": 27.2130687,
-        "lng": 78.0246402
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=27.2130687,78.0246402",
-      "source": "osm"
-    },
-    {
-      "nom": "j.p. nagar crossing",
-      "lat": 27.2141797,
-      "lng": 77.9884153,
-      "coordonnees": {
-        "lat": 27.2141797,
-        "lng": 77.9884153
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=27.2141797,77.9884153",
-      "source": "osm"
-    },
-    {
-      "nom": "kalindripurm",
-      "lat": 27.2148142,
-      "lng": 77.9873049,
-      "coordonnees": {
-        "lat": 27.2148142,
-        "lng": 77.9873049
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=27.2148142,77.9873049",
-      "source": "osm"
-    },
-    {
-      "nom": "MEHEK COLONY PARK",
-      "lat": 27.2038808,
-      "lng": 77.9702588,
-      "coordonnees": {
-        "lat": 27.2038808,
-        "lng": 77.9702588
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=27.2038808,77.9702588",
-      "source": "osm"
-    },
-    {
-      "nom": "sector 11 fieldS",
-      "lat": 27.2032056,
-      "lng": 77.9696352,
-      "coordonnees": {
-        "lat": 27.2032056,
-        "lng": 77.9696352
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=27.2032056,77.9696352",
-      "source": "osm"
-    },
-    {
-      "nom": "Tomb of Sadiq Khan",
-      "lat": 27.2107306,
-      "lng": 77.9778228,
-      "coordonnees": {
-        "lat": 27.2107306,
-        "lng": 77.9778228
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=27.2107306,77.9778228",
-      "source": "osm"
-    },
-    {
-      "nom": "tagoor nager park",
-      "lat": 27.2199636,
-      "lng": 78.0025949,
-      "coordonnees": {
-        "lat": 27.2199636,
-        "lng": 78.0025949
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=27.2199636,78.0025949",
-      "source": "osm"
-    },
-    {
-      "nom": "shop",
-      "lat": 27.2168274,
-      "lng": 77.9883241,
-      "coordonnees": {
-        "lat": 27.2168274,
-        "lng": 77.9883241
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=27.2168274,77.9883241",
-      "source": "osm"
-    },
-    {
-      "nom": "mittal park",
-      "lat": 27.19036,
-      "lng": 77.9609871,
-      "coordonnees": {
-        "lat": 27.19036,
-        "lng": 77.9609871
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=27.19036,77.9609871",
-      "source": "osm"
-    },
-    {
-      "nom": "suylok colony",
-      "lat": 27.2182299,
-      "lng": 77.9899657,
-      "coordonnees": {
-        "lat": 27.2182299,
-        "lng": 77.9899657
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=27.2182299,77.9899657",
-      "source": "osm"
-    },
-    {
-      "nom": "Hanuman Park",
-      "lat": 27.2052415,
-      "lng": 78.0466812,
-      "coordonnees": {
-        "lat": 27.2052415,
-        "lng": 78.0466812
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=27.2052415,78.0466812",
-      "source": "osm"
-    },
-    {
-      "nom": "Sector-3 park",
-      "lat": 27.1941879,
-      "lng": 77.9619281,
-      "coordonnees": {
-        "lat": 27.1941879,
-        "lng": 77.9619281
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=27.1941879,77.9619281",
-      "source": "osm"
-    },
-    {
-      "nom": "gatte ki factory",
-      "lat": 27.2085922,
-      "lng": 78.0433102,
-      "coordonnees": {
-        "lat": 27.2085922,
-        "lng": 78.0433102
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=27.2085922,78.0433102",
-      "source": "osm"
-    },
-    {
-      "nom": "colony park",
-      "lat": 27.2076522,
-      "lng": 78.0443733,
-      "coordonnees": {
-        "lat": 27.2076522,
-        "lng": 78.0443733
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=27.2076522,78.0443733",
-      "source": "osm"
-    }
-  ],
-  "imageCredit": "Wikimedia Commons",
-  "osmEnriched": true,
-  "osmEnrichedAt": "2026-06-30",
-  "description_en": "Agra, in India, is a halal-friendly destination with a Halal Trust Score of 4.5/5. Muslim travelers will find 17 halal restaurants listed, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
-  "metaDescription_en": "Halal guide to Agra: 17 halal restaurants listed, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.5/5.",
-  "nom_en": "Agra",
-  "boucheries": []
+  {
+   "nom": "The Kesar",
+   "lat": 27.1718195,
+   "lng": 78.0179157,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=27.1718195,78.0179157",
+   "source": "osm"
+  },
+  {
+   "nom": "Pure Veg - good and cheap",
+   "lat": 27.1822432,
+   "lng": 78.018654,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=27.1822432,78.018654",
+   "source": "osm"
+  },
+  {
+   "nom": "Gaylord Hotel",
+   "lat": 27.1591488,
+   "lng": 78.0113968,
+   "type": "North Indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=27.1591488,78.0113968",
+   "source": "osm"
+  },
+  {
+   "nom": "Bikanerwala",
+   "lat": 27.1591273,
+   "lng": 78.0135204,
+   "type": "regional, indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=27.1591273,78.0135204",
+   "source": "osm"
+  },
+  {
+   "nom": "Lakshmi Vilas",
+   "lat": 27.158774,
+   "lng": 78.012715,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=27.158774,78.012715",
+   "source": "osm"
+  },
+  {
+   "nom": "Sardaar Ji Da Dhaba",
+   "lat": 27.159432,
+   "lng": 77.9935278,
+   "type": "indian, chinese",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=27.159432,77.9935278",
+   "source": "osm"
+  },
+  {
+   "nom": "Thali Bhojnalay",
+   "lat": 27.1673658,
+   "lng": 78.0369412,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=27.1673658,78.0369412",
+   "source": "osm"
+  },
+  {
+   "nom": "Pashtun",
+   "lat": 27.1626913,
+   "lng": 78.0358794,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=27.1626913,78.0358794",
+   "source": "osm"
+  },
+  {
+   "nom": "Nawaabs",
+   "lat": 27.161978,
+   "lng": 78.0377869,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=27.161978,78.0377869",
+   "source": "osm"
+  },
+  {
+   "nom": "Joney's place",
+   "lat": 27.1692084,
+   "lng": 78.0418721,
+   "type": "italian, indian, asian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=27.1692084,78.0418721",
+   "source": "osm"
+  },
+  {
+   "nom": "Taj View Rooftop Restaurant",
+   "lat": 27.1686732,
+   "lng": 78.0431941,
+   "type": "international, indian, chinese",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=27.1686732,78.0431941",
+   "source": "osm"
+  },
+  {
+   "nom": "Oshun Global Café",
+   "lat": 27.1698414,
+   "lng": 78.0436827,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=27.1698414,78.0436827",
+   "source": "osm"
+  },
+  {
+   "nom": "vaishnau sweet house",
+   "lat": 27.1418604,
+   "lng": 78.0086308,
+   "type": "indian, samosa, sweets",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=27.1418604,78.0086308",
+   "source": "osm"
+  },
+  {
+   "nom": "Thaaliwala, pure veg Restaurant",
+   "lat": 27.1594022,
+   "lng": 78.0443218,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=27.1594022,78.0443218",
+   "source": "osm"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "Sai president hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1749197,78.0084326",
+   "lat": 27.1749197,
+   "lng": 78.0084326,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1749197,78.0084326",
+   "source": "osm"
+  },
+  {
+   "nom": "splender hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1740869,78.0092453",
+   "lat": 27.1740869,
+   "lng": 78.0092453,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1740869,78.0092453",
+   "source": "osm"
+  },
+  {
+   "nom": "moti palace hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1793172,78.0054876",
+   "lat": 27.1793172,
+   "lng": 78.0054876,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1793172,78.0054876",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel fvimal Dhara",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1795589,78.0058215",
+   "lat": 27.1795589,
+   "lng": 78.0058215,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1795589,78.0058215",
+   "source": "osm"
+  },
+  {
+   "nom": "Taj way hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1798565,78.0045112",
+   "lat": 27.1798565,
+   "lng": 78.0045112,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1798565,78.0045112",
+   "source": "osm"
+  },
+  {
+   "nom": "Pentas hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1721075,78.0090452",
+   "lat": 27.1721075,
+   "lng": 78.0090452,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1721075,78.0090452",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Marc Royal OYO 15493",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1749424,78.0011693",
+   "lat": 27.1749424,
+   "lng": 78.0011693,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1749424,78.0011693",
+   "source": "osm"
+  },
+  {
+   "nom": "Sanjay hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1689863,78.0072884",
+   "lat": 27.1689863,
+   "lng": 78.0072884,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1689863,78.0072884",
+   "source": "osm"
+  },
+  {
+   "nom": "Laurie's Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1681349,78.00856",
+   "lat": 27.1681349,
+   "lng": 78.00856,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1681349,78.00856",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Royale",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.171544,78.0163356",
+   "lat": 27.171544,
+   "lng": 78.0163356,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.171544,78.0163356",
+   "source": "osm"
+  },
+  {
+   "nom": "HOTEL SURYA",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1668235,78.0067997",
+   "lat": 27.1668235,
+   "lng": 78.0067997,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1668235,78.0067997",
+   "source": "osm"
+  },
+  {
+   "nom": "REST HOUSE",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1678826,78.0146375",
+   "lat": 27.1678826,
+   "lng": 78.0146375,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1678826,78.0146375",
+   "source": "osm"
+  },
+  {
+   "nom": "mathur vaishay hostel (boys hostel)",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1812902,77.9972672",
+   "lat": 27.1812902,
+   "lng": 77.9972672,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1812902,77.9972672",
+   "source": "osm"
+  },
+  {
+   "nom": "Akbar Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1711181,78.0184537",
+   "lat": 27.1711181,
+   "lng": 78.0184537,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1711181,78.0184537",
+   "source": "osm"
+  },
+  {
+   "nom": "sapru hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1875736,78.0009025",
+   "lat": 27.1875736,
+   "lng": 78.0009025,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1875736,78.0009025",
+   "source": "osm"
+  },
+  {
+   "nom": "hotel sakura",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1661994,77.9992134",
+   "lat": 27.1661994,
+   "lng": 77.9992134,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1661994,77.9992134",
+   "source": "osm"
+  },
+  {
+   "nom": "lic office;thomson hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1884901,78.0010227",
+   "lat": 27.1884901,
+   "lng": 78.0010227,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1884901,78.0010227",
+   "source": "osm"
+  },
+  {
+   "nom": "King Park Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1943372,78.0106275",
+   "lat": 27.1943372,
+   "lng": 78.0106275,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1943372,78.0106275",
+   "source": "osm"
+  },
+  {
+   "nom": "Marina",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1974545,78.0026026",
+   "lat": 27.1974545,
+   "lng": 78.0026026,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1974545,78.0026026",
+   "source": "osm"
+  },
+  {
+   "nom": "Youth Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1991292,78.0049243",
+   "lat": 27.1991292,
+   "lng": 78.0049243,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1991292,78.0049243",
+   "source": "osm"
+  },
+  {
+   "nom": "Clarks Shiraz",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1584871,78.0248611",
+   "lat": 27.1584871,
+   "lng": 78.0248611,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1584871,78.0248611",
+   "source": "osm"
+  },
+  {
+   "nom": "Ray of Maya",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1661393,78.0364429",
+   "lat": 27.1661393,
+   "lng": 78.0364429,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1661393,78.0364429",
+   "source": "osm"
+  },
+  {
+   "nom": "Amar Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1609539,78.0335616",
+   "lat": 27.1609539,
+   "lng": 78.0335616,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1609539,78.0335616",
+   "source": "osm"
+  },
+  {
+   "nom": "Maya",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.166379,78.0373174",
+   "lat": 27.166379,
+   "lng": 78.0373174,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.166379,78.0373174",
+   "source": "osm"
+  },
+  {
+   "nom": "Daawat",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1665216,78.0375916",
+   "lat": 27.1665216,
+   "lng": 78.0375916,
+   "halalFriendly": false,
+   "bookingUrl": "www.hoteldaawatplaceagra.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Ganga Ratan",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1626216,78.0358315",
+   "lat": 27.1626216,
+   "lng": 78.0358315,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1626216,78.0358315",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Attiti",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.160808,78.0345771",
+   "lat": 27.160808,
+   "lng": 78.0345771,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.160808,78.0345771",
+   "source": "osm"
+  },
+  {
+   "nom": "Amar Palace Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1613146,78.0349937",
+   "lat": 27.1613146,
+   "lng": 78.0349937,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1613146,78.0349937",
+   "source": "osm"
+  },
+  {
+   "nom": "Sleep inn",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1606463,78.0349906",
+   "lat": 27.1606463,
+   "lng": 78.0349906,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1606463,78.0349906",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Mansingh Palace",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1609788,78.0353623",
+   "lat": 27.1609788,
+   "lng": 78.0353623,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1609788,78.0353623",
+   "source": "osm"
+  },
+  {
+   "nom": "Howard Park Plaza",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1628283,78.0368457",
+   "lat": 27.1628283,
+   "lng": 78.0368457,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.parkplaza.com/agrain",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Ashish Palace",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1621798,78.0364533",
+   "lat": 27.1621798,
+   "lng": 78.0364533,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1621798,78.0364533",
+   "source": "osm"
+  },
+  {
+   "nom": "Bansi Homestay",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.160306,78.0352371",
+   "lat": 27.160306,
+   "lng": 78.0352371,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.160306,78.0352371",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel the Oasis",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.161931,78.0366311",
+   "lat": 27.161931,
+   "lng": 78.0366311,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.161931,78.0366311",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Shyam Palace",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.168818,78.0402239",
+   "lat": 27.168818,
+   "lng": 78.0402239,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.168818,78.0402239",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Jyoti Continental",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1584991,78.0344114",
+   "lat": 27.1584991,
+   "lng": 78.0344114,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1584991,78.0344114",
+   "source": "osm"
+  },
+  {
+   "nom": "Jahangir Lodge",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.16732,78.0397505",
+   "lat": 27.16732,
+   "lng": 78.0397505,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.16732,78.0397505",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Dasaprakash",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.158385,78.0344094",
+   "lat": 27.158385,
+   "lng": 78.0344094,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.158385,78.0344094",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Sidhartha",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1694194,78.040645",
+   "lat": 27.1694194,
+   "lng": 78.040645,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.hotelsidharthaagra.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Hôtel Sia Palace",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1695257,78.0409048",
+   "lat": 27.1695257,
+   "lng": 78.0409048,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1695257,78.0409048",
+   "source": "osm"
+  },
+  {
+   "nom": "Lucky Guest House",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1689759,78.0407721",
+   "lat": 27.1689759,
+   "lng": 78.0407721,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1689759,78.0407721",
+   "source": "osm"
+  },
+  {
+   "nom": "BPCL AGRA TRANSIT FLAT",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1576122,78.0343273",
+   "lat": 27.1576122,
+   "lng": 78.0343273,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1576122,78.0343273",
+   "source": "osm"
+  },
+  {
+   "nom": "N.homestay",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1575547,78.0350877",
+   "lat": 27.1575547,
+   "lng": 78.0350877,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1575547,78.0350877",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Seven Hills Tower",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1612015,78.0380478",
+   "lat": 27.1612015,
+   "lng": 78.0380478,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.hotelsevenhillstower.in",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Shahjahan",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.169003,78.0417649",
+   "lat": 27.169003,
+   "lng": 78.0417649,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.169003,78.0417649",
+   "source": "osm"
+  },
+  {
+   "nom": "Taj inn hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1619624,78.0390367",
+   "lat": 27.1619624,
+   "lng": 78.0390367,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1619624,78.0390367",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Kamal",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1691467,78.0424911",
+   "lat": 27.1691467,
+   "lng": 78.0424911,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1691467,78.0424911",
+   "source": "osm"
+  },
+  {
+   "nom": "shanti lodge",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.168997,78.0429333",
+   "lat": 27.168997,
+   "lng": 78.0429333,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.168997,78.0429333",
+   "source": "osm"
+  },
+  {
+   "nom": "Joey’s Hostel Agra",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1691191,78.0432423",
+   "lat": 27.1691191,
+   "lng": 78.0432423,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1691191,78.0432423",
+   "source": "osm"
+  },
+  {
+   "nom": "Sai palace",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1686711,78.0431531",
+   "lat": 27.1686711,
+   "lng": 78.0431531,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1686711,78.0431531",
+   "source": "osm"
+  },
+  {
+   "nom": "Taj City Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1688592,78.0432307",
+   "lat": 27.1688592,
+   "lng": 78.0432307,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1688592,78.0432307",
+   "source": "osm"
+  },
+  {
+   "nom": "Saniya Palace",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1691149,78.0433777",
+   "lat": 27.1691149,
+   "lng": 78.0433777,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1691149,78.0433777",
+   "source": "osm"
+  },
+  {
+   "nom": "The Gateway Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1615917,78.0407622",
+   "lat": 27.1615917,
+   "lng": 78.0407622,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1615917,78.0407622",
+   "source": "osm"
+  },
+  {
+   "nom": "Sheela",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1712717,78.0447017",
+   "lat": 27.1712717,
+   "lng": 78.0447017,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1712717,78.0447017",
+   "source": "osm"
+  },
+  {
+   "nom": "JP hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.2101291,78.0041491",
+   "lat": 27.2101291,
+   "lng": 78.0041491,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.2101291,78.0041491",
+   "source": "osm"
+  },
+  {
+   "nom": "the kamta hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.2103421,78.0072791",
+   "lat": 27.2103421,
+   "lng": 78.0072791,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.2103421,78.0072791",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Taj Kema",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1712851,78.0462163",
+   "lat": 27.1712851,
+   "lng": 78.0462163,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1712851,78.0462163",
+   "source": "osm"
+  },
+  {
+   "nom": "ZIGZAG HOSTEL AGRA",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1524497,78.0360422",
+   "lat": 27.1524497,
+   "lng": 78.0360422,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1524497,78.0360422",
+   "source": "osm"
+  },
+  {
+   "nom": "ITC Mughal",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 5,
+   "mapsUrl": "https://maps.google.com/?q=27.1610537,78.0439887",
+   "lat": 27.1610537,
+   "lng": 78.0439887,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1610537,78.0439887",
+   "source": "osm"
+  },
+  {
+   "nom": "mughal hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1602348,78.0444991",
+   "lat": 27.1602348,
+   "lng": 78.0444991,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1602348,78.0444991",
+   "source": "osm"
+  },
+  {
+   "nom": "The Oberoi Amarvilas",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 5,
+   "mapsUrl": "https://maps.google.com/?q=27.167935,78.0489443",
+   "lat": 27.167935,
+   "lng": 78.0489443,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.167935,78.0489443",
+   "source": "osm"
+  },
+  {
+   "nom": "The Oberoi Amarvilas Agra",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1679979,78.0490141",
+   "lat": 27.1679979,
+   "lng": 78.0490141,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.oberoihotels.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Mission Backpack Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1673257,78.0498279",
+   "lat": 27.1673257,
+   "lng": 78.0498279,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1673257,78.0498279",
+   "source": "osm"
+  },
+  {
+   "nom": "Vijay Vilas Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.2149719,78.0066246",
+   "lat": 27.2149719,
+   "lng": 78.0066246,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.2149719,78.0066246",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Taj Plaza",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1684817,78.0502138",
+   "lat": 27.1684817,
+   "lng": 78.0502138,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.hoteltajplazaagra.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Rashmi Agra hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1683643,78.050536",
+   "lat": 27.1683643,
+   "lng": 78.050536,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1683643,78.050536",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Atulyaa Taj",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1684804,78.0507154",
+   "lat": 27.1684804,
+   "lng": 78.0507154,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1684804,78.0507154",
+   "source": "osm"
+  },
+  {
+   "nom": "Hoel Rashmi",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1681266,78.0506456",
+   "lat": 27.1681266,
+   "lng": 78.0506456,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1681266,78.0506456",
+   "source": "osm"
+  },
+  {
+   "nom": "big brother hostel agra",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1677322,78.0506849",
+   "lat": 27.1677322,
+   "lng": 78.0506849,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1677322,78.0506849",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Taj Resorts",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1683242,78.0510533",
+   "lat": 27.1683242,
+   "lng": 78.0510533,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1683242,78.0510533",
+   "source": "osm"
+  },
+  {
+   "nom": "Hosteller",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1670169,78.0507762",
+   "lat": 27.1670169,
+   "lng": 78.0507762,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.thehosteller.com/hostels/the-hosteller-agra",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel tara Grand",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1682765,78.0511311",
+   "lat": 27.1682765,
+   "lng": 78.0511311,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1682765,78.0511311",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Sheela Inn",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1675087,78.051029",
+   "lat": 27.1675087,
+   "lng": 78.051029,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1675087,78.051029",
+   "source": "osm"
+  },
+  {
+   "nom": "Anant Plaza",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1576047,78.0469384",
+   "lat": 27.1576047,
+   "lng": 78.0469384,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1576047,78.0469384",
+   "source": "osm"
+  },
+  {
+   "nom": "The Coral Tree Boutique Homestay",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1667334,78.0512558",
+   "lat": 27.1667334,
+   "lng": 78.0512558,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.thecoraltreehomestay.com",
+   "source": "osm"
+  },
+  {
+   "nom": "The Coral House Homestay by the Taj",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.166644,78.0512523",
+   "lat": 27.166644,
+   "lng": 78.0512523,
+   "halalFriendly": false,
+   "bookingUrl": "https://coralcourthomestay.com",
+   "source": "osm"
+  },
+  {
+   "nom": "The Coral Court Homestay",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1661969,78.051229",
+   "lat": 27.1661969,
+   "lng": 78.051229,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1661969,78.051229",
+   "source": "osm"
+  },
+  {
+   "nom": "HOTEL AREEBA",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1575121,78.0479832",
+   "lat": 27.1575121,
+   "lng": 78.0479832,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1575121,78.0479832",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Taj Sapphire",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1577181,78.0481516",
+   "lat": 27.1577181,
+   "lng": 78.0481516,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1577181,78.0481516",
+   "source": "osm"
+  },
+  {
+   "nom": "OYO Hotel Rj Palace",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1928871,77.9658132",
+   "lat": 27.1928871,
+   "lng": 77.9658132,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1928871,77.9658132",
+   "source": "osm"
+  },
+  {
+   "nom": "Surasena Regal Vista",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1569097,78.0498483",
+   "lat": 27.1569097,
+   "lng": 78.0498483,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1569097,78.0498483",
+   "source": "osm"
+  },
+  {
+   "nom": "Namastey Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1638528,78.0535333",
+   "lat": 27.1638528,
+   "lng": 78.0535333,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1638528,78.0535333",
+   "source": "osm"
+  },
+  {
+   "nom": "Backpacker Panda Friends",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1634384,78.0534034",
+   "lat": 27.1634384,
+   "lng": 78.0534034,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1634384,78.0534034",
+   "source": "osm"
+  },
+  {
+   "nom": "Om",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1642277,78.0537096",
+   "lat": 27.1642277,
+   "lng": 78.0537096,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.booking.com/Share-0nGpfe",
+   "source": "osm"
+  },
+  {
+   "nom": "Good Vibes Guesthouse",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1638716,78.053596",
+   "lat": 27.1638716,
+   "lng": 78.053596,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1638716,78.053596",
+   "source": "osm"
+  },
+  {
+   "nom": "OM Homestay Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1642426,78.0537652",
+   "lat": 27.1642426,
+   "lng": 78.0537652,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1642426,78.0537652",
+   "source": "osm"
+  },
+  {
+   "nom": "OM Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1641657,78.0537606",
+   "lat": 27.1641657,
+   "lng": 78.0537606,
+   "halalFriendly": false,
+   "bookingUrl": "https://om-hostel-student-dormitory.business.site/",
+   "source": "osm"
+  },
+  {
+   "nom": "Moustache Hostel Correct Location",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.163803,78.0536511",
+   "lat": 27.163803,
+   "lng": 78.0536511,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.163803,78.0536511",
+   "source": "osm"
+  },
+  {
+   "nom": "Treebo White Inn",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1646686,78.054145",
+   "lat": 27.1646686,
+   "lng": 78.054145,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1646686,78.054145",
+   "source": "osm"
+  },
+  {
+   "nom": "Yatri Sadan",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.2192881,78.0125777",
+   "lat": 27.2192881,
+   "lng": 78.0125777,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.2192881,78.0125777",
+   "source": "osm"
+  },
+  {
+   "nom": "Aman Homestay, A Boutique Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1636378,78.053897",
+   "lat": 27.1636378,
+   "lng": 78.053897,
+   "halalFriendly": false,
+   "bookingUrl": "https://amanhomestay.com",
+   "source": "osm"
+  },
+  {
+   "nom": "राइन",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1633872,78.0538102",
+   "lat": 27.1633872,
+   "lng": 78.0538102,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.rhinestay.com",
+   "source": "osm"
+  },
+  {
+   "nom": "G Vibes Guest House",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.163753,78.0539794",
+   "lat": 27.163753,
+   "lng": 78.0539794,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.163753,78.0539794",
+   "source": "osm"
+  },
+  {
+   "nom": "Thomas home Stay",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1601538,78.0525328",
+   "lat": 27.1601538,
+   "lng": 78.0525328,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1601538,78.0525328",
+   "source": "osm"
+  },
+  {
+   "nom": "Spiritual Yoga Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1644959,78.0544288",
+   "lat": 27.1644959,
+   "lng": 78.0544288,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1644959,78.0544288",
+   "source": "osm"
+  },
+  {
+   "nom": "Crystal Sarovar Premiere Agra",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1574931,78.0513315",
+   "lat": 27.1574931,
+   "lng": 78.0513315,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1574931,78.0513315",
+   "source": "osm"
+  },
+  {
+   "nom": "The Taj Vista",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1642562,78.0543686",
+   "lat": 27.1642562,
+   "lng": 78.0543686,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1642562,78.0543686",
+   "source": "osm"
+  },
+  {
+   "nom": "Agra Hotel Marygold",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1619965,78.0535816",
+   "lat": 27.1619965,
+   "lng": 78.0535816,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1619965,78.0535816",
+   "source": "osm"
+  },
+  {
+   "nom": "yoga guest house hostel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1644655,78.0545248",
+   "lat": 27.1644655,
+   "lng": 78.0545248,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1644655,78.0545248",
+   "source": "osm"
+  },
+  {
+   "nom": "The Retreat",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1622346,78.0540179",
+   "lat": 27.1622346,
+   "lng": 78.0540179,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1622346,78.0540179",
+   "source": "osm"
+  },
+  {
+   "nom": "Pyrenees Home Stay",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1599101,78.053023",
+   "lat": 27.1599101,
+   "lng": 78.053023,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1599101,78.053023",
+   "source": "osm"
+  },
+  {
+   "nom": "Zostel Agra",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1643508,78.0558587",
+   "lat": 27.1643508,
+   "lng": 78.0558587,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1643508,78.0558587",
+   "source": "osm"
+  },
+  {
+   "nom": "Radisson Agra",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1585877,78.0540075",
+   "lat": 27.1585877,
+   "lng": 78.0540075,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1585877,78.0540075",
+   "source": "osm"
+  },
+  {
+   "nom": "Taj Hotel & Convention Center",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1628269,78.0563887",
+   "lat": 27.1628269,
+   "lng": 78.0563887,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.tajhotels.com/en-in/hotels/taj-agra",
+   "source": "osm"
+  },
+  {
+   "nom": "Mata Mohini Dharamshala",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.2211461,78.0191878",
+   "lat": 27.2211461,
+   "lng": 78.0191878,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.2211461,78.0191878",
+   "source": "osm"
+  },
+  {
+   "nom": "DoubleTree by Hilton Hotel Agra",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 5,
+   "mapsUrl": "https://maps.google.com/?q=27.1515883,78.0508426",
+   "lat": 27.1515883,
+   "lng": 78.0508426,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.hilton.com/en/hotels/agrdtdi-doubletree-agra/",
+   "source": "osm"
+  },
+  {
+   "nom": "Taj Village",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1675188,78.0583174",
+   "lat": 27.1675188,
+   "lng": 78.0583174,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1675188,78.0583174",
+   "source": "osm"
+  },
+  {
+   "nom": "Shiv Kothi Homestay",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1606032,78.0573211",
+   "lat": 27.1606032,
+   "lng": 78.0573211,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1606032,78.0573211",
+   "source": "osm"
+  },
+  {
+   "nom": "Crystal Inn",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1618732,78.0579291",
+   "lat": 27.1618732,
+   "lng": 78.0579291,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1618732,78.0579291",
+   "source": "osm"
+  },
+  {
+   "nom": "utkash vilas",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1581604,78.0577298",
+   "lat": 27.1581604,
+   "lng": 78.0577298,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1581604,78.0577298",
+   "source": "osm"
+  },
+  {
+   "nom": "Zigzag",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1639332,78.0608891",
+   "lat": 27.1639332,
+   "lng": 78.0608891,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1639332,78.0608891",
+   "source": "osm"
+  },
+  {
+   "nom": "Royale Sarovar Portico",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1581601,78.0593337",
+   "lat": 27.1581601,
+   "lng": 78.0593337,
+   "halalFriendly": false,
+   "bookingUrl": "https://sarovarhotels.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "New Youth Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.2254151,78.015923",
+   "lat": 27.2254151,
+   "lng": 78.015923,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.2254151,78.015923",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Marine House",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1504695,78.0549047",
+   "lat": 27.1504695,
+   "lng": 78.0549047,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1504695,78.0549047",
+   "source": "osm"
+  },
+  {
+   "nom": "Khas mahal homestay",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1464391,78.0525582",
+   "lat": 27.1464391,
+   "lng": 78.0525582,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1464391,78.0525582",
+   "source": "osm"
+  },
+  {
+   "nom": "Courtyard by Marriott Agra",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 5,
+   "mapsUrl": "https://maps.google.com/?q=27.1563143,78.0596665",
+   "lat": 27.1563143,
+   "lng": 78.0596665,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1563143,78.0596665",
+   "source": "osm"
+  },
+  {
+   "nom": "soul'Stay",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1565768,78.0609077",
+   "lat": 27.1565768,
+   "lng": 78.0609077,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1565768,78.0609077",
+   "source": "osm"
+  },
+  {
+   "nom": "rajasthani hotel bhilwara",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1241559,78.0046412",
+   "lat": 27.1241559,
+   "lng": 78.0046412,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.1241559,78.0046412",
+   "source": "osm"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "Purani Masjid",
+   "lat": 27.1762855,
+   "lng": 78.0119662,
+   "coordonnees": {
+    "lat": 27.1762855,
+    "lng": 78.0119662
+   },
+   "mapsUrl": "https://maps.google.com/?q=27.1762855,78.0119662",
+   "source": "osm"
+  },
+  {
+   "nom": "masjid,nagar pracharni",
+   "lat": 27.1856041,
+   "lng": 78.0012973,
+   "coordonnees": {
+    "lat": 27.1856041,
+    "lng": 78.0012973
+   },
+   "mapsUrl": "https://maps.google.com/?q=27.1856041,78.0012973",
+   "source": "osm"
+  },
+  {
+   "nom": "Mosquée",
+   "lat": 27.1678358,
+   "lng": 78.0155645,
+   "coordonnees": {
+    "lat": 27.1678358,
+    "lng": 78.0155645
+   },
+   "mapsUrl": "https://maps.google.com/?q=27.1678358,78.0155645",
+   "source": "osm"
+  },
+  {
+   "nom": "Moti Masjid",
+   "lat": 27.1803423,
+   "lng": 78.0217092,
+   "coordonnees": {
+    "lat": 27.1803423,
+    "lng": 78.0217092
+   },
+   "mapsUrl": "https://maps.google.com/?q=27.1803423,78.0217092",
+   "source": "osm"
+  },
+  {
+   "nom": "Nagina Masjid",
+   "lat": 27.1794172,
+   "lng": 78.0225932,
+   "coordonnees": {
+    "lat": 27.1794172,
+    "lng": 78.0225932
+   },
+   "mapsUrl": "https://maps.google.com/?q=27.1794172,78.0225932",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid",
+   "lat": 27.1780122,
+   "lng": 77.9906219,
+   "coordonnees": {
+    "lat": 27.1780122,
+    "lng": 77.9906219
+   },
+   "mapsUrl": "https://maps.google.com/?q=27.1780122,77.9906219",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Raja Mandi Station",
+   "lat": 27.1938658,
+   "lng": 77.9958609,
+   "coordonnees": {
+    "lat": 27.1938658,
+    "lng": 77.9958609
+   },
+   "mapsUrl": "https://maps.google.com/?q=27.1938658,77.9958609",
+   "source": "osm"
+  },
+  {
+   "nom": "Gumbad Mosque",
+   "lat": 27.1518693,
+   "lng": 77.999879,
+   "coordonnees": {
+    "lat": 27.1518693,
+    "lng": 77.999879
+   },
+   "mapsUrl": "https://maps.google.com/?q=27.1518693,77.999879",
+   "source": "osm"
+  },
+  {
+   "nom": "Ahamad Sa Baba Ki Dargah",
+   "lat": 27.1982374,
+   "lng": 77.9917008,
+   "coordonnees": {
+    "lat": 27.1982374,
+    "lng": 77.9917008
+   },
+   "mapsUrl": "https://maps.google.com/?q=27.1982374,77.9917008",
+   "source": "osm"
+  },
+  {
+   "nom": "mazaar-e-muqaddas shaheed-e-saalis",
+   "lat": 27.2121366,
+   "lng": 78.0050393,
+   "coordonnees": {
+    "lat": 27.2121366,
+    "lng": 78.0050393
+   },
+   "mapsUrl": "https://maps.google.com/?q=27.2121366,78.0050393",
+   "source": "osm"
+  },
+  {
+   "nom": "Hazrat Ahmad Shah Bukhari Rahmatullah Aleh Dargah",
+   "lat": 27.1769071,
+   "lng": 78.0483946,
+   "coordonnees": {
+    "lat": 27.1769071,
+    "lng": 78.0483946
+   },
+   "adresse": "Near Secret Temple Taj View, Agra, Uttar Pradesh",
+   "mapsUrl": "https://maps.google.com/?q=27.1769071,78.0483946",
+   "source": "osm"
+  },
+  {
+   "nom": "Lal Masjid",
+   "lat": 27.2073504,
+   "lng": 78.0305259,
+   "coordonnees": {
+    "lat": 27.2073504,
+    "lng": 78.0305259
+   },
+   "mapsUrl": "https://maps.google.com/?q=27.2073504,78.0305259",
+   "source": "osm"
+  },
+  {
+   "nom": "4 shayad",
+   "lat": 27.2077321,
+   "lng": 78.0437401,
+   "coordonnees": {
+    "lat": 27.2077321,
+    "lng": 78.0437401
+   },
+   "mapsUrl": "https://maps.google.com/?q=27.2077321,78.0437401",
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Saraswati garden",
+   "lat": 27.1849703,
+   "lng": 78.0021817,
+   "coordonnees": {
+    "lat": 27.1849703,
+    "lng": 78.0021817
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=27.1849703,78.0021817",
+   "source": "osm"
+  },
+  {
+   "nom": "Hathi Pol",
+   "lat": 27.1803739,
+   "lng": 78.0186461,
+   "coordonnees": {
+    "lat": 27.1803739,
+    "lng": 78.0186461
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.1803739,78.0186461",
+   "source": "osm"
+  },
+  {
+   "nom": "Rawatpara Spice Market",
+   "lat": 27.1841542,
+   "lng": 78.0169307,
+   "coordonnees": {
+    "lat": 27.1841542,
+    "lng": 78.0169307
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.1841542,78.0169307",
+   "source": "osm"
+  },
+  {
+   "nom": "John Russel Colvin's Grave",
+   "lat": 27.1787377,
+   "lng": 78.0222447,
+   "coordonnees": {
+    "lat": 27.1787377,
+    "lng": 78.0222447
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=27.1787377,78.0222447",
+   "source": "osm"
+  },
+  {
+   "nom": "big ground",
+   "lat": 27.1743433,
+   "lng": 77.9939656,
+   "coordonnees": {
+    "lat": 27.1743433,
+    "lng": 77.9939656
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=27.1743433,77.9939656",
+   "source": "osm"
+  },
+  {
+   "nom": "Hauz-i-Jehangir",
+   "lat": 27.1776632,
+   "lng": 78.0225118,
+   "coordonnees": {
+    "lat": 27.1776632,
+    "lng": 78.0225118
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.1776632,78.0225118",
+   "source": "osm"
+  },
+  {
+   "nom": "Seo ka bazar",
+   "lat": 27.1884291,
+   "lng": 78.0143414,
+   "coordonnees": {
+    "lat": 27.1884291,
+    "lng": 78.0143414
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.1884291,78.0143414",
+   "source": "osm"
+  },
+  {
+   "nom": "Kashmiri bazar",
+   "lat": 27.1878862,
+   "lng": 78.0159899,
+   "coordonnees": {
+    "lat": 27.1878862,
+    "lng": 78.0159899
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.1878862,78.0159899",
+   "source": "osm"
+  },
+  {
+   "nom": "Akhbari Mahal",
+   "lat": 27.1769871,
+   "lng": 78.023238,
+   "coordonnees": {
+    "lat": 27.1769871,
+    "lng": 78.023238
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.1769871,78.023238",
+   "source": "osm"
+  },
+  {
+   "nom": "Jhansi Rani Laxmibhai Statue",
+   "lat": 27.1635521,
+   "lng": 78.0038257,
+   "coordonnees": {
+    "lat": 27.1635521,
+    "lng": 78.0038257
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=27.1635521,78.0038257",
+   "source": "osm"
+  },
+  {
+   "nom": "Diwan-i-Khas",
+   "lat": 27.178897,
+   "lng": 78.0233646,
+   "coordonnees": {
+    "lat": 27.178897,
+    "lng": 78.0233646
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.178897,78.0233646",
+   "source": "osm"
+  },
+  {
+   "nom": "Mal ka bazar",
+   "lat": 27.1883011,
+   "lng": 78.0194323,
+   "coordonnees": {
+    "lat": 27.1883011,
+    "lng": 78.0194323
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.1883011,78.0194323",
+   "source": "osm"
+  },
+  {
+   "nom": "Jhalkaribai Statue",
+   "lat": 27.1753047,
+   "lng": 78.0263372,
+   "coordonnees": {
+    "lat": 27.1753047,
+    "lng": 78.0263372
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=27.1753047,78.0263372",
+   "source": "osm"
+  },
+  {
+   "nom": "Shahjahan Garden",
+   "lat": 27.1745153,
+   "lng": 78.0269785,
+   "coordonnees": {
+    "lat": 27.1745153,
+    "lng": 78.0269785
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=27.1745153,78.0269785",
+   "source": "osm"
+  },
+  {
+   "nom": "Kumar Tobacco Shop",
+   "lat": 27.1593532,
+   "lng": 78.0094182,
+   "coordonnees": {
+    "lat": 27.1593532,
+    "lng": 78.0094182
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.1593532,78.0094182",
+   "source": "osm"
+  },
+  {
+   "nom": "college park",
+   "lat": 27.1937981,
+   "lng": 78.0018054,
+   "coordonnees": {
+    "lat": 27.1937981,
+    "lng": 78.0018054
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=27.1937981,78.0018054",
+   "source": "osm"
+  },
+  {
+   "nom": "Viewpoint of Taj Mahal & Agra Fort",
+   "lat": 27.1842702,
+   "lng": 78.0270801,
+   "coordonnees": {
+    "lat": 27.1842702,
+    "lng": 78.0270801
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.1842702,78.0270801",
+   "source": "osm"
+  },
+  {
+   "nom": "company garden",
+   "lat": 27.1589014,
+   "lng": 78.0152231,
+   "coordonnees": {
+    "lat": 27.1589014,
+    "lng": 78.0152231
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=27.1589014,78.0152231",
+   "source": "osm"
+  },
+  {
+   "nom": "Ratn muni jain inter college",
+   "lat": 27.1889515,
+   "lng": 77.9898933,
+   "coordonnees": {
+    "lat": 27.1889515,
+    "lng": 77.9898933
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=27.1889515,77.9898933",
+   "source": "osm"
+  },
+  {
+   "nom": "Shaheed Smarak",
+   "lat": 27.1983897,
+   "lng": 78.0048416,
+   "coordonnees": {
+    "lat": 27.1983897,
+    "lng": 78.0048416
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=27.1983897,78.0048416",
+   "source": "osm"
+  },
+  {
+   "nom": "Free view point",
+   "lat": 27.1804306,
+   "lng": 78.0323647,
+   "coordonnees": {
+    "lat": 27.1804306,
+    "lng": 78.0323647
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=27.1804306,78.0323647",
+   "source": "osm"
+  },
+  {
+   "nom": "Old abandoned houses with monkeys",
+   "lat": 27.1925386,
+   "lng": 78.0261111,
+   "coordonnees": {
+    "lat": 27.1925386,
+    "lng": 78.0261111
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.1925386,78.0261111",
+   "source": "osm"
+  },
+  {
+   "nom": "tara chand park",
+   "lat": 27.1531295,
+   "lng": 77.9986667,
+   "coordonnees": {
+    "lat": 27.1531295,
+    "lng": 77.9986667
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=27.1531295,77.9986667",
+   "source": "osm"
+  },
+  {
+   "nom": "Street Art Wall",
+   "lat": 27.1606654,
+   "lng": 78.0297018,
+   "coordonnees": {
+    "lat": 27.1606654,
+    "lng": 78.0297018
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.1606654,78.0297018",
+   "source": "osm"
+  },
+  {
+   "nom": "Chauburji",
+   "lat": 27.1901207,
+   "lng": 78.0325617,
+   "coordonnees": {
+    "lat": 27.1901207,
+    "lng": 78.0325617
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=27.1901207,78.0325617",
+   "source": "osm"
+  },
+  {
+   "nom": "alka puri colony park",
+   "lat": 27.1868141,
+   "lng": 77.9812168,
+   "coordonnees": {
+    "lat": 27.1868141,
+    "lng": 77.9812168
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=27.1868141,77.9812168",
+   "source": "osm"
+  },
+  {
+   "nom": "No View of Taj Mahal",
+   "lat": 27.1749727,
+   "lng": 78.0375303,
+   "coordonnees": {
+    "lat": 27.1749727,
+    "lng": 78.0375303
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.1749727,78.0375303",
+   "source": "osm"
+  },
+  {
+   "nom": "Manas Mandir Kalyan Samiti, park",
+   "lat": 27.1815675,
+   "lng": 77.9762593,
+   "coordonnees": {
+    "lat": 27.1815675,
+    "lng": 77.9762593
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=27.1815675,77.9762593",
+   "source": "osm"
+  },
+  {
+   "nom": "View Point Taj Mahal 50 INR",
+   "lat": 27.1785057,
+   "lng": 78.0405625,
+   "coordonnees": {
+    "lat": 27.1785057,
+    "lng": 78.0405625
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.1785057,78.0405625",
+   "source": "osm"
+  },
+  {
+   "nom": "M",
+   "lat": 27.1649306,
+   "lng": 78.0379596,
+   "coordonnees": {
+    "lat": 27.1649306,
+    "lng": 78.0379596
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.1649306,78.0379596",
+   "source": "osm"
+  },
+  {
+   "nom": "ताज महल संग्रहालय",
+   "lat": 27.1731379,
+   "lng": 78.0406323,
+   "coordonnees": {
+    "lat": 27.1731379,
+    "lng": 78.0406323
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=27.1731379,78.0406323",
+   "source": "osm"
+  },
+  {
+   "nom": "Ambedkar Park",
+   "lat": 27.1455498,
+   "lng": 78.0136093,
+   "coordonnees": {
+    "lat": 27.1455498,
+    "lng": 78.0136093
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=27.1455498,78.0136093",
+   "source": "osm"
+  },
+  {
+   "nom": "Sai garden",
+   "lat": 27.2071336,
+   "lng": 77.9982519,
+   "coordonnees": {
+    "lat": 27.2071336,
+    "lng": 77.9982519
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=27.2071336,77.9982519",
+   "source": "osm"
+  },
+  {
+   "nom": "Sawad",
+   "lat": 27.1618601,
+   "lng": 78.0396108,
+   "coordonnees": {
+    "lat": 27.1618601,
+    "lng": 78.0396108
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.1618601,78.0396108",
+   "source": "osm"
+  },
+  {
+   "nom": "Taj Mahal Viewpoint",
+   "lat": 27.1759475,
+   "lng": 78.0437931,
+   "coordonnees": {
+    "lat": 27.1759475,
+    "lng": 78.0437931
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=27.1759475,78.0437931",
+   "source": "osm"
+  },
+  {
+   "nom": "chini roja park",
+   "lat": 27.2004609,
+   "lng": 78.0350163,
+   "coordonnees": {
+    "lat": 27.2004609,
+    "lng": 78.0350163
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=27.2004609,78.0350163",
+   "source": "osm"
+  },
+  {
+   "nom": "Tower with viewpoint on the Taj Mahal",
+   "lat": 27.1770779,
+   "lng": 78.0463186,
+   "coordonnees": {
+    "lat": 27.1770779,
+    "lng": 78.0463186
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=27.1770779,78.0463186",
+   "source": "osm"
+  },
+  {
+   "nom": "Taj Mahal view point within nature walk",
+   "lat": 27.1726409,
+   "lng": 78.047483,
+   "coordonnees": {
+    "lat": 27.1726409,
+    "lng": 78.047483
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=27.1726409,78.047483",
+   "source": "osm"
+  },
+  {
+   "nom": "Taj Nature Walk",
+   "lat": 27.1702958,
+   "lng": 78.0485763,
+   "coordonnees": {
+    "lat": 27.1702958,
+    "lng": 78.0485763
+   },
+   "categorie": "Famille",
+   "mapsUrl": "https://maps.google.com/?q=27.1702958,78.0485763",
+   "source": "osm"
+  },
+  {
+   "nom": "ambedker park",
+   "lat": 27.1814998,
+   "lng": 77.966538,
+   "coordonnees": {
+    "lat": 27.1814998,
+    "lng": 77.966538
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=27.1814998,77.966538",
+   "source": "osm"
+  },
+  {
+   "nom": "swami vivekanand park",
+   "lat": 27.2128203,
+   "lng": 77.9946172,
+   "coordonnees": {
+    "lat": 27.2128203,
+    "lng": 77.9946172
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=27.2128203,77.9946172",
+   "source": "osm"
+  },
+  {
+   "nom": "Shree Ram Chandr Farm House",
+   "lat": 27.1481572,
+   "lng": 78.0372622,
+   "coordonnees": {
+    "lat": 27.1481572,
+    "lng": 78.0372622
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=27.1481572,78.0372622",
+   "source": "osm"
+  },
+  {
+   "nom": "agrasen Seva Sadan",
+   "lat": 27.2147355,
+   "lng": 78.0157593,
+   "coordonnees": {
+    "lat": 27.2147355,
+    "lng": 78.0157593
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=27.2147355,78.0157593",
+   "source": "osm"
+  },
+  {
+   "nom": "janak park",
+   "lat": 27.2130687,
+   "lng": 78.0246402,
+   "coordonnees": {
+    "lat": 27.2130687,
+    "lng": 78.0246402
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=27.2130687,78.0246402",
+   "source": "osm"
+  },
+  {
+   "nom": "j.p. nagar crossing",
+   "lat": 27.2141797,
+   "lng": 77.9884153,
+   "coordonnees": {
+    "lat": 27.2141797,
+    "lng": 77.9884153
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=27.2141797,77.9884153",
+   "source": "osm"
+  },
+  {
+   "nom": "kalindripurm",
+   "lat": 27.2148142,
+   "lng": 77.9873049,
+   "coordonnees": {
+    "lat": 27.2148142,
+    "lng": 77.9873049
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=27.2148142,77.9873049",
+   "source": "osm"
+  },
+  {
+   "nom": "MEHEK COLONY PARK",
+   "lat": 27.2038808,
+   "lng": 77.9702588,
+   "coordonnees": {
+    "lat": 27.2038808,
+    "lng": 77.9702588
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=27.2038808,77.9702588",
+   "source": "osm"
+  },
+  {
+   "nom": "sector 11 fieldS",
+   "lat": 27.2032056,
+   "lng": 77.9696352,
+   "coordonnees": {
+    "lat": 27.2032056,
+    "lng": 77.9696352
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=27.2032056,77.9696352",
+   "source": "osm"
+  },
+  {
+   "nom": "Tomb of Sadiq Khan",
+   "lat": 27.2107306,
+   "lng": 77.9778228,
+   "coordonnees": {
+    "lat": 27.2107306,
+    "lng": 77.9778228
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=27.2107306,77.9778228",
+   "source": "osm"
+  },
+  {
+   "nom": "tagoor nager park",
+   "lat": 27.2199636,
+   "lng": 78.0025949,
+   "coordonnees": {
+    "lat": 27.2199636,
+    "lng": 78.0025949
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=27.2199636,78.0025949",
+   "source": "osm"
+  },
+  {
+   "nom": "shop",
+   "lat": 27.2168274,
+   "lng": 77.9883241,
+   "coordonnees": {
+    "lat": 27.2168274,
+    "lng": 77.9883241
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=27.2168274,77.9883241",
+   "source": "osm"
+  },
+  {
+   "nom": "mittal park",
+   "lat": 27.19036,
+   "lng": 77.9609871,
+   "coordonnees": {
+    "lat": 27.19036,
+    "lng": 77.9609871
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=27.19036,77.9609871",
+   "source": "osm"
+  },
+  {
+   "nom": "suylok colony",
+   "lat": 27.2182299,
+   "lng": 77.9899657,
+   "coordonnees": {
+    "lat": 27.2182299,
+    "lng": 77.9899657
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=27.2182299,77.9899657",
+   "source": "osm"
+  },
+  {
+   "nom": "Hanuman Park",
+   "lat": 27.2052415,
+   "lng": 78.0466812,
+   "coordonnees": {
+    "lat": 27.2052415,
+    "lng": 78.0466812
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=27.2052415,78.0466812",
+   "source": "osm"
+  },
+  {
+   "nom": "Sector-3 park",
+   "lat": 27.1941879,
+   "lng": 77.9619281,
+   "coordonnees": {
+    "lat": 27.1941879,
+    "lng": 77.9619281
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=27.1941879,77.9619281",
+   "source": "osm"
+  },
+  {
+   "nom": "gatte ki factory",
+   "lat": 27.2085922,
+   "lng": 78.0433102,
+   "coordonnees": {
+    "lat": 27.2085922,
+    "lng": 78.0433102
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=27.2085922,78.0433102",
+   "source": "osm"
+  },
+  {
+   "nom": "colony park",
+   "lat": 27.2076522,
+   "lng": 78.0443733,
+   "coordonnees": {
+    "lat": 27.2076522,
+    "lng": 78.0443733
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=27.2076522,78.0443733",
+   "source": "osm"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30",
+ "description_en": "Agra, in India, is a halal-friendly destination with a Halal Trust Score of 4.5/5. Muslim travelers will find 17 halal restaurants listed, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
+ "metaDescription_en": "Halal guide to Agra: 17 halal restaurants listed, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.5/5.",
+ "nom_en": "Agra",
+ "boucheries": [],
+ "dataPurgedAt": "2026-07-15"
 }

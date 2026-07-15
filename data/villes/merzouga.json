@@ -1,1069 +1,1023 @@
 {
-  "slug": "merzouga",
-  "nom": "Merzouga",
-  "pays": "Maroc",
-  "pays_slug": "maroc",
-  "continent": "Afrique",
-  "region": "Sud du Maroc / Sahara",
-  "coordonnees": {
-    "lat": 31.0996,
-    "lng": -4.0124
-  },
-  "codeISO": "MA",
-  "score_halal": 4.7,
-  "halalScore": 9.3,
-  "description": "Aux portes des dunes d'Erg Chebbi (jusqu'à 150m), Merzouga est le départ des bivouacs sahariens, dos de chameau et levers de soleil inoubliables.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Merzouga_desert.jpg/1920px-Merzouga_desert.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Merzouga_desert.jpg/1920px-Merzouga_desert.jpg",
-  "metaDescription": "Aux portes des dunes d'Erg Chebbi (jusqu'à 150m), Merzouga est le départ des bivouacs sahariens, dos de chameau et levers de soleil inoubliables.",
+ "slug": "merzouga",
+ "nom": "Merzouga",
+ "pays": "Maroc",
+ "pays_slug": "maroc",
+ "continent": "Afrique",
+ "region": "Sud du Maroc / Sahara",
+ "coordonnees": {
+  "lat": 31.0996,
+  "lng": -4.0124
+ },
+ "codeISO": "MA",
+ "score_halal": 4.7,
+ "halalScore": 9.3,
+ "description": "Aux portes des dunes d'Erg Chebbi (jusqu'à 150m), Merzouga est le départ des bivouacs sahariens, dos de chameau et levers de soleil inoubliables.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Merzouga_desert.jpg/1920px-Merzouga_desert.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Merzouga_desert.jpg/1920px-Merzouga_desert.jpg",
+ "metaDescription": "Aux portes des dunes d'Erg Chebbi (jusqu'à 150m), Merzouga est le départ des bivouacs sahariens, dos de chameau et levers de soleil inoubliables.",
+ "monnaie": "MAD (Dirham marocain)",
+ "langue": "Arabe, Tamazight, Français",
+ "statistiques": {
+  "restaurants_halal": 4,
+  "mosquees": 0,
+  "hotels": 76
+ },
+ "infoPratique": {
   "monnaie": "MAD (Dirham marocain)",
   "langue": "Arabe, Tamazight, Français",
-  "statistiques": {
-    "restaurants_halal": 3,
-    "mosquees": 1,
-    "hotels": 116
+  "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
+  "meilleureEpoque": "Printemps et automne (climat doux)."
+ },
+ "tags": [
+  "halal",
+  "Maroc"
+ ],
+ "restaurants": [
+  {
+   "nom": "Cafe L'expert",
+   "type": "tea, moroccan, coffee shop",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.0957564,-4.0107662",
+   "lat": 31.0957564,
+   "lng": -4.0107662,
+   "halalConfidence": "likely",
+   "source": "osm"
   },
-  "infoPratique": {
-    "monnaie": "MAD (Dirham marocain)",
-    "langue": "Arabe, Tamazight, Français",
-    "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
-    "meilleureEpoque": "Printemps et automne (climat doux)."
+  {
+   "nom": "Marrakech Chez La Main De Fatima",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.1047906,-4.0196637",
+   "lat": 31.1047906,
+   "lng": -4.0196637,
+   "halalConfidence": "likely",
+   "source": "osm"
   },
-  "tags": [
-    "halal",
-    "Maroc"
-  ],
-  "restaurants": [
-    {
-      "nom": "Cafe L'expert",
-      "type": "tea, moroccan, coffee shop",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.0957564,-4.0107662",
-      "lat": 31.0957564,
-      "lng": -4.0107662,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Marrakech Chez La Main De Fatima",
-      "type": "moroccan",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.1047906,-4.0196637",
-      "lat": 31.1047906,
-      "lng": -4.0196637,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Hassilabied Snack",
-      "type": "moroccan",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.1400706,-4.0248324",
-      "lat": 31.1400706,
-      "lng": -4.0248324,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Cafe snack Hamid",
-      "lat": 31.1420222,
-      "lng": -4.026301,
-      "type": "moroccan",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=31.1420222,-4.026301",
-      "source": "osm"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "Chez Julia",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.0990609,-4.014233",
-      "lat": 31.0990609,
-      "lng": -4.014233,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.0990609,-4.014233",
-      "source": "osm"
-    },
-    {
-      "nom": "Dar Oussidi",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.1008885,-4.0136986",
-      "lat": 31.1008885,
-      "lng": -4.0136986,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.dar-oussidi.com/en/",
-      "source": "osm"
-    },
-    {
-      "nom": "Le Gout du Sahara",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.0970079,-4.0104943",
-      "lat": 31.0970079,
-      "lng": -4.0104943,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.0970079,-4.0104943",
-      "source": "osm"
-    },
-    {
-      "nom": "Chez Youssef",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.1000399,-4.0079333",
-      "lat": 31.1000399,
-      "lng": -4.0079333,
-      "halalFriendly": false,
-      "bookingUrl": "http://www.chezyoussef.com",
-      "source": "osm"
-    },
-    {
-      "nom": "Said appartement",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.1024979,-4.0158231",
-      "lat": 31.1024979,
-      "lng": -4.0158231,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.1024979,-4.0158231",
-      "source": "osm"
-    },
-    {
-      "nom": "Mouhou Apartment",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.0948921,-4.0156496",
-      "lat": 31.0948921,
-      "lng": -4.0156496,
-      "halalFriendly": false,
-      "bookingUrl": "https://mouhou-apartment.business.site/",
-      "source": "osm"
-    },
-    {
-      "nom": "Desert Villa Boutique Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.097011,-4.0066599",
-      "lat": 31.097011,
-      "lng": -4.0066599,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.desertvillamerzouga.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Riad Ali",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.0965185,-4.0054875",
-      "lat": 31.0965185,
-      "lng": -4.0054875,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.0965185,-4.0054875",
-      "source": "osm"
-    },
-    {
-      "nom": "Africa Desert Apartment",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.0968059,-4.0049898",
-      "lat": 31.0968059,
-      "lng": -4.0049898,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.booking.com/hotel/ma/click-desert-apartment.html",
-      "source": "osm"
-    },
-    {
-      "nom": "Planet Sahara",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.0939959,-4.0071288",
-      "lat": 31.0939959,
-      "lng": -4.0071288,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.0939959,-4.0071288",
-      "source": "osm"
-    },
-    {
-      "nom": "Dar Gamra Lodge",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.0936232,-4.0068273",
-      "lat": 31.0936232,
-      "lng": -4.0068273,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.0936232,-4.0068273",
-      "source": "osm"
-    },
-    {
-      "nom": "Ksar bicha قصر بيشا",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.1071049,-4.0102422",
-      "lat": 31.1071049,
-      "lng": -4.0102422,
-      "halalFriendly": false,
-      "bookingUrl": "http://www.ksarbicha.com",
-      "source": "osm"
-    },
-    {
-      "nom": "Hôtel Ksar Bicha فندق قصر بيشة",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.1071741,-4.0100927",
-      "lat": 31.1071741,
-      "lng": -4.0100927,
-      "halalFriendly": false,
-      "bookingUrl": "http://www.ksarbicha.com",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Merzouga رياض مرزوكة",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.1075686,-4.0124291",
-      "lat": 31.1075686,
-      "lng": -4.0124291,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.1075686,-4.0124291",
-      "source": "osm"
-    },
-    {
-      "nom": "Auberge Africa",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.0949275,-4.0046772",
-      "lat": 31.0949275,
-      "lng": -4.0046772,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.auberge-africa.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Dar Mari",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.1080208,-4.0097198",
-      "lat": 31.1080208,
-      "lng": -4.0097198,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.1080208,-4.0097198",
-      "source": "osm"
-    },
-    {
-      "nom": "Dar Shifa Shanti",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.1096207,-4.0150498",
-      "lat": 31.1096207,
-      "lng": -4.0150498,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.1096207,-4.0150498",
-      "source": "osm"
-    },
-    {
-      "nom": "Desert Backpackers Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.1100551,-4.0101488",
-      "lat": 31.1100551,
-      "lng": -4.0101488,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.1100551,-4.0101488",
-      "source": "osm"
-    },
-    {
-      "nom": "Dar Tafouyte",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.1106897,-4.0118665",
-      "lat": 31.1106897,
-      "lng": -4.0118665,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.1106897,-4.0118665",
-      "source": "osm"
-    },
-    {
-      "nom": "Complexe Turistique de Morzouga",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.0894276,-4.0058523",
-      "lat": 31.0894276,
-      "lng": -4.0058523,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.0894276,-4.0058523",
-      "source": "osm"
-    },
-    {
-      "nom": "Auberge Kasbah Merzouga",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.0895333,-4.0049707",
-      "lat": 31.0895333,
-      "lng": -4.0049707,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.0895333,-4.0049707",
-      "source": "osm"
-    },
-    {
-      "nom": "Kasbah Azalay",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.1115486,-4.0058456",
-      "lat": 31.1115486,
-      "lng": -4.0058456,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.kasbahazalay.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Auberge Kasbah des Dunes",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.0854355,-4.0098972",
-      "lat": 31.0854355,
-      "lng": -4.0098972,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.0854355,-4.0098972",
-      "source": "osm"
-    },
-    {
-      "nom": "Kasbah Panorama قصبة بانوراما",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.1144515,-4.0130793",
-      "lat": 31.1144515,
-      "lng": -4.0130793,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.1144515,-4.0130793",
-      "source": "osm"
-    },
-    {
-      "nom": "Panorama",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.1148695,-4.0160042",
-      "lat": 31.1148695,
-      "lng": -4.0160042,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.1148695,-4.0160042",
-      "source": "osm"
-    },
-    {
-      "nom": "Auberge Takojt نزل تاقجت",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.1148712,-4.0074329",
-      "lat": 31.1148712,
-      "lng": -4.0074329,
-      "halalFriendly": false,
-      "bookingUrl": "http://www.takojt.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Maison Chez Nous",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.0836696,-4.0076115",
-      "lat": 31.0836696,
-      "lng": -4.0076115,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.0836696,-4.0076115",
-      "source": "osm"
-    },
-    {
-      "nom": "La Maison Rurale",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.0830811,-4.0078602",
-      "lat": 31.0830811,
-      "lng": -4.0078602,
-      "halalFriendly": false,
-      "bookingUrl": "http://www.lamaisonrurale.com",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Azawad",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.0814746,-4.0100029",
-      "lat": 31.0814746,
-      "lng": -4.0100029,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.0814746,-4.0100029",
-      "source": "osm"
-    },
-    {
-      "nom": "La Tradition",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.0812817,-4.0070822",
-      "lat": 31.0812817,
-      "lng": -4.0070822,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.0812817,-4.0070822",
-      "source": "osm"
-    },
-    {
-      "nom": "Auberge Rose Du Sable",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.080843,-4.0089241",
-      "lat": 31.080843,
-      "lng": -4.0089241,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.080843,-4.0089241",
-      "source": "osm"
-    },
-    {
-      "nom": "Berber Place",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.1215292,-4.0175409",
-      "lat": 31.1215292,
-      "lng": -4.0175409,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.1215292,-4.0175409",
-      "source": "osm"
-    },
-    {
-      "nom": "Soleil bleu",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.1238488,-4.0151136",
-      "lat": 31.1238488,
-      "lng": -4.0151136,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.1238488,-4.0151136",
-      "source": "osm"
-    },
-    {
-      "nom": "Auberge Chez Thiri",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.1242708,-4.0118794",
-      "lat": 31.1242708,
-      "lng": -4.0118794,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.1242708,-4.0118794",
-      "source": "osm"
-    },
-    {
-      "nom": "Palais des Dunes",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.0730941,-4.0135348",
-      "lat": 31.0730941,
-      "lng": -4.0135348,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.palaisdesdunes.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Dar el Janub",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.1264321,-4.0131616",
-      "lat": 31.1264321,
-      "lng": -4.0131616,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.1264321,-4.0131616",
-      "source": "osm"
-    },
-    {
-      "nom": "Kasbah Tombouctou",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.1278382,-4.013815",
-      "lat": 31.1278382,
-      "lng": -4.013815,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.xaluca.com/en/hotel/kasbah-hotel-tombouctou",
-      "source": "osm"
-    },
-    {
-      "nom": "Kasbah Kanz Erremal",
-      "categorie": "Hôtel",
-      "priceRange": "€€€",
-      "score": 3,
-      "mapsUrl": "https://maps.google.com/?q=31.1290267,-4.0143832",
-      "lat": 31.1290267,
-      "lng": -4.0143832,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.1290267,-4.0143832",
-      "source": "osm"
-    },
-    {
-      "nom": "Albergue Amazir",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.1306169,-4.0160664",
-      "lat": 31.1306169,
-      "lng": -4.0160664,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.1306169,-4.0160664",
-      "source": "osm"
-    },
-    {
-      "nom": "Kasbah Mohayut",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.1314941,-4.0165478",
-      "lat": 31.1314941,
-      "lng": -4.0165478,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.1314941,-4.0165478",
-      "source": "osm"
-    },
-    {
-      "nom": "Chez les Habitants",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.067334,-4.0166824",
-      "lat": 31.067334,
-      "lng": -4.0166824,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.067334,-4.0166824",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Kasbah Aiour",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.1322317,-4.0165702",
-      "lat": 31.1322317,
-      "lng": -4.0165702,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.1322317,-4.0165702",
-      "source": "osm"
-    },
-    {
-      "nom": "Ksar Merzouga",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.1328717,-4.0174746",
-      "lat": 31.1328717,
-      "lng": -4.0174746,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.1328717,-4.0174746",
-      "source": "osm"
-    },
-    {
-      "nom": "Haven La Chance Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.1338762,-4.0189645",
-      "lat": 31.1338762,
-      "lng": -4.0189645,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.1338762,-4.0189645",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotels Sahara",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.1359986,-4.0198476",
-      "lat": 31.1359986,
-      "lng": -4.0198476,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.1359986,-4.0198476",
-      "source": "osm"
-    },
-    {
-      "nom": "Les Flammants Roses",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.1368206,-4.0244429",
-      "lat": 31.1368206,
-      "lng": -4.0244429,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.1368206,-4.0244429",
-      "source": "osm"
-    },
-    {
-      "nom": "Desert Camp",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.086689,-3.9698924",
-      "lat": 31.086689,
-      "lng": -3.9698924,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.086689,-3.9698924",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel chez Toupi",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.1383861,-4.0240182",
-      "lat": 31.1383861,
-      "lng": -4.0240182,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.1383861,-4.0240182",
-      "source": "osm"
-    },
-    {
-      "nom": "Wilderness Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.1390238,-4.0244282",
-      "lat": 31.1390238,
-      "lng": -4.0244282,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.1390238,-4.0244282",
-      "source": "osm"
-    },
-    {
-      "nom": "Maison Merzouga Guest House",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.1386682,-4.0259241",
-      "lat": 31.1386682,
-      "lng": -4.0259241,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.1386682,-4.0259241",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad les jardins de Merzouga",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.1395804,-4.022909",
-      "lat": 31.1395804,
-      "lng": -4.022909,
-      "halalFriendly": false,
-      "bookingUrl": "http://lesgardinddemerzouga.com",
-      "source": "osm"
-    },
-    {
-      "nom": "L'homme du desert",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.0585003,-4.0176071",
-      "lat": 31.0585003,
-      "lng": -4.0176071,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.0585003,-4.0176071",
-      "source": "osm"
-    },
-    {
-      "nom": "Merzouga Desert Camp",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.0873139,-3.9661691",
-      "lat": 31.0873139,
-      "lng": -3.9661691,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.0873139,-3.9661691",
-      "source": "osm"
-    },
-    {
-      "nom": "Sahara Desert Luxury Camp",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.0894498,-3.9652269",
-      "lat": 31.0894498,
-      "lng": -3.9652269,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.0894498,-3.9652269",
-      "source": "osm"
-    },
-    {
-      "nom": "Sabaku Tour Camp",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.1399131,-4.0271926",
-      "lat": 31.1399131,
-      "lng": -4.0271926,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.1399131,-4.0271926",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Aicha",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.140794,-4.0252384",
-      "lat": 31.140794,
-      "lng": -4.0252384,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.140794,-4.0252384",
-      "source": "osm"
-    },
-    {
-      "nom": "Sahara Mirage Camp 8",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.0922979,-3.9626194",
-      "lat": 31.0922979,
-      "lng": -3.9626194,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.0922979,-3.9626194",
-      "source": "osm"
-    },
-    {
-      "nom": "Auberge l'Oasis",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.1418578,-4.0244388",
-      "lat": 31.1418578,
-      "lng": -4.0244388,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.aubergeoasismerzouga.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Merzouga Dunes",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.0564659,-4.0193275",
-      "lat": 31.0564659,
-      "lng": -4.0193275,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.riadmerzougadunes.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Auberge La Source",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.1421732,-4.0246783",
-      "lat": 31.1421732,
-      "lng": -4.0246783,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.1421732,-4.0246783",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Tadarte",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.141857,-4.0274893",
-      "lat": 31.141857,
-      "lng": -4.0274893,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.riadtadarte.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Magic Luxury Camp",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.0602135,-3.9850167",
-      "lat": 31.0602135,
-      "lng": -3.9850167,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.0602135,-3.9850167",
-      "source": "osm"
-    },
-    {
-      "nom": "Merzouga Dunes Luxury Camps",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.0581117,-3.9894701",
-      "lat": 31.0581117,
-      "lng": -3.9894701,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.0581117,-3.9894701",
-      "source": "osm"
-    },
-    {
-      "nom": "AMIRA Camp",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.0588803,-3.98717",
-      "lat": 31.0588803,
-      "lng": -3.98717,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.0588803,-3.98717",
-      "source": "osm"
-    },
-    {
-      "nom": "Sanmao Luxury Desert Camp",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.0586405,-3.9876578",
-      "lat": 31.0586405,
-      "lng": -3.9876578,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.0586405,-3.9876578",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Nasser Palace",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.144415,-4.0265883",
-      "lat": 31.144415,
-      "lng": -4.0265883,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.144415,-4.0265883",
-      "source": "osm"
-    },
-    {
-      "nom": "Sahara Starlight Camp",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.0589781,-3.9855057",
-      "lat": 31.0589781,
-      "lng": -3.9855057,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.0589781,-3.9855057",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Dar Poublanc",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.1443265,-4.0291046",
-      "lat": 31.1443265,
-      "lng": -4.0291046,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.1443265,-4.0291046",
-      "source": "osm"
-    },
-    {
-      "nom": "Caravanserai Luxury Desert Camp",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.0598657,-3.9828695",
-      "lat": 31.0598657,
-      "lng": -3.9828695,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.0598657,-3.9828695",
-      "source": "osm"
-    },
-    {
-      "nom": "Ali el Cojo",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.1463199,-4.0281043",
-      "lat": 31.1463199,
-      "lng": -4.0281043,
-      "halalFriendly": false,
-      "bookingUrl": "http://www.alielcojo.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Carvasar",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.1481265,-4.0311389",
-      "lat": 31.1481265,
-      "lng": -4.0311389,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.1481265,-4.0311389",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Madu",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.1478046,-4.0329353",
-      "lat": 31.1478046,
-      "lng": -4.0329353,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.1478046,-4.0329353",
-      "source": "osm"
-    },
-    {
-      "nom": "Kasbah Le Berger",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.0465946,-4.0053203",
-      "lat": 31.0465946,
-      "lng": -4.0053203,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.0465946,-4.0053203",
-      "source": "osm"
-    },
-    {
-      "nom": "Nomad Palace Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.0462887,-3.9965793",
-      "lat": 31.0462887,
-      "lng": -3.9965793,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.hotelnomadpalace.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Khamlia Desert Hotel فندق خملية الصحراء",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.0352607,-4.0070695",
-      "lat": 31.0352607,
-      "lng": -4.0070695,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.0352607,-4.0070695",
-      "source": "osm"
-    },
-    {
-      "nom": "Les Portes Du Desert",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=31.0795355,-4.0102403",
-      "lat": 31.0795355,
-      "lng": -4.0102403,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=31.0795355,-4.0102403",
-      "source": "osm"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Merzouga",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Merzouga",
-      "description": "Mosquée principale de la ville, prière du vendredi.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20Merzouga%20Merzouga%20Maroc"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Dunes de l'Erg Chebbi",
-      "categorie": "Nature",
-      "description": "Mer de sable orange culminant à 150m, lever et coucher de soleil épiques.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Dunes%20de%20l%27Erg%20Chebbi%20Merzouga%20Maroc"
-    },
-    {
-      "id": "a2",
-      "nom": "Bivouac berbère dans le désert",
-      "categorie": "Culture",
-      "description": "Nuit sous tente nomade, musique et ciel étoilé.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Bivouac%20berb%C3%A8re%20dans%20le%20d%C3%A9sert%20Merzouga%20Maroc"
-    },
-    {
-      "id": "a3",
-      "nom": "Balade à dos de dromadaire",
-      "categorie": "Nature",
-      "description": "Caravane au coeur des dunes au coucher du soleil.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Balade%20%C3%A0%20dos%20de%20dromadaire%20Merzouga%20Maroc"
-    },
-    {
-      "id": "a4",
-      "nom": "Lac Dayet Srji (flamants roses)",
-      "categorie": "Nature",
-      "description": "Lac temporaire accueillant des flamants au printemps.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Lac%20Dayet%20Srji%20%28flamants%20roses%29%20Merzouga%20Maroc"
-    },
-    {
-      "nom": "Grand Dune View Point",
-      "lat": 31.0790834,
-      "lng": -3.9913184,
-      "coordonnees": {
-        "lat": 31.0790834,
-        "lng": -3.9913184
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=31.0790834,-3.9913184",
-      "source": "osm"
-    },
-    {
-      "nom": "متحف السيارات العتيقة مرزوكة",
-      "lat": 31.0720154,
-      "lng": -4.0121163,
-      "coordonnees": {
-        "lat": 31.0720154,
-        "lng": -4.0121163
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=31.0720154,-4.0121163",
-      "source": "osm"
-    },
-    {
-      "nom": "Sand Dunes",
-      "lat": 31.066472,
-      "lng": -4.0108585,
-      "coordonnees": {
-        "lat": 31.066472,
-        "lng": -4.0108585
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=31.066472,-4.0108585",
-      "source": "osm"
-    },
-    {
-      "nom": "Erg Chebbi, Grand Dune",
-      "lat": 31.1473386,
-      "lng": -4.0089543,
-      "coordonnees": {
-        "lat": 31.1473386,
-        "lng": -4.0089543
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=31.1473386,-4.0089543",
-      "source": "osm"
-    },
-    {
-      "nom": "Chez Les Artistes",
-      "lat": 31.034002,
-      "lng": -4.0056805,
-      "coordonnees": {
-        "lat": 31.034002,
-        "lng": -4.0056805
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=31.034002,-4.0056805",
-      "source": "osm"
-    },
-    {
-      "nom": "Village Français Abandonné",
-      "lat": 31.0415836,
-      "lng": -3.9501894,
-      "coordonnees": {
-        "lat": 31.0415836,
-        "lng": -3.9501894
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=31.0415836,-3.9501894",
-      "source": "osm"
-    },
-    {
-      "nom": "Ghost Town View Point",
-      "lat": 31.0377752,
-      "lng": -3.9506953,
-      "coordonnees": {
-        "lat": 31.0377752,
-        "lng": -3.9506953
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=31.0377752,-3.9506953",
-      "source": "osm"
-    },
-    {
-      "nom": "Antoine du Saint-Exupéry",
-      "lat": 31.2017083,
-      "lng": -4.0287257,
-      "coordonnees": {
-        "lat": 31.2017083,
-        "lng": -4.0287257
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=31.2017083,-4.0287257",
-      "source": "osm"
-    }
-  ],
-  "imageCredit": "Wikimedia Commons",
-  "osmEnriched": true,
-  "osmEnrichedAt": "2026-06-30",
-  "description_en": "Merzouga, in Morocco, is a halal-friendly destination with a Halal Trust Score of 4.7/5. Muslim travelers will find 4 halal restaurants listed, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
-  "metaDescription_en": "Halal guide to Merzouga: 4 halal restaurants listed, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.7/5.",
-  "nom_en": "Merzouga",
-  "boucheries": []
+  {
+   "nom": "Hassilabied Snack",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.1400706,-4.0248324",
+   "lat": 31.1400706,
+   "lng": -4.0248324,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Cafe snack Hamid",
+   "lat": 31.1420222,
+   "lng": -4.026301,
+   "type": "moroccan",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=31.1420222,-4.026301",
+   "source": "osm"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "Chez Julia",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.0990609,-4.014233",
+   "lat": 31.0990609,
+   "lng": -4.014233,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.0990609,-4.014233",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar Oussidi",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.1008885,-4.0136986",
+   "lat": 31.1008885,
+   "lng": -4.0136986,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.dar-oussidi.com/en/",
+   "source": "osm"
+  },
+  {
+   "nom": "Le Gout du Sahara",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.0970079,-4.0104943",
+   "lat": 31.0970079,
+   "lng": -4.0104943,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.0970079,-4.0104943",
+   "source": "osm"
+  },
+  {
+   "nom": "Chez Youssef",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.1000399,-4.0079333",
+   "lat": 31.1000399,
+   "lng": -4.0079333,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.chezyoussef.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Said appartement",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.1024979,-4.0158231",
+   "lat": 31.1024979,
+   "lng": -4.0158231,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.1024979,-4.0158231",
+   "source": "osm"
+  },
+  {
+   "nom": "Mouhou Apartment",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.0948921,-4.0156496",
+   "lat": 31.0948921,
+   "lng": -4.0156496,
+   "halalFriendly": false,
+   "bookingUrl": "https://mouhou-apartment.business.site/",
+   "source": "osm"
+  },
+  {
+   "nom": "Desert Villa Boutique Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.097011,-4.0066599",
+   "lat": 31.097011,
+   "lng": -4.0066599,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.desertvillamerzouga.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Riad Ali",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.0965185,-4.0054875",
+   "lat": 31.0965185,
+   "lng": -4.0054875,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.0965185,-4.0054875",
+   "source": "osm"
+  },
+  {
+   "nom": "Africa Desert Apartment",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.0968059,-4.0049898",
+   "lat": 31.0968059,
+   "lng": -4.0049898,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.booking.com/hotel/ma/click-desert-apartment.html",
+   "source": "osm"
+  },
+  {
+   "nom": "Planet Sahara",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.0939959,-4.0071288",
+   "lat": 31.0939959,
+   "lng": -4.0071288,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.0939959,-4.0071288",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar Gamra Lodge",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.0936232,-4.0068273",
+   "lat": 31.0936232,
+   "lng": -4.0068273,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.0936232,-4.0068273",
+   "source": "osm"
+  },
+  {
+   "nom": "Ksar bicha قصر بيشا",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.1071049,-4.0102422",
+   "lat": 31.1071049,
+   "lng": -4.0102422,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.ksarbicha.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Hôtel Ksar Bicha فندق قصر بيشة",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.1071741,-4.0100927",
+   "lat": 31.1071741,
+   "lng": -4.0100927,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.ksarbicha.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Merzouga رياض مرزوكة",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.1075686,-4.0124291",
+   "lat": 31.1075686,
+   "lng": -4.0124291,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.1075686,-4.0124291",
+   "source": "osm"
+  },
+  {
+   "nom": "Auberge Africa",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.0949275,-4.0046772",
+   "lat": 31.0949275,
+   "lng": -4.0046772,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.auberge-africa.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Dar Mari",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.1080208,-4.0097198",
+   "lat": 31.1080208,
+   "lng": -4.0097198,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.1080208,-4.0097198",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar Shifa Shanti",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.1096207,-4.0150498",
+   "lat": 31.1096207,
+   "lng": -4.0150498,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.1096207,-4.0150498",
+   "source": "osm"
+  },
+  {
+   "nom": "Desert Backpackers Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.1100551,-4.0101488",
+   "lat": 31.1100551,
+   "lng": -4.0101488,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.1100551,-4.0101488",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar Tafouyte",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.1106897,-4.0118665",
+   "lat": 31.1106897,
+   "lng": -4.0118665,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.1106897,-4.0118665",
+   "source": "osm"
+  },
+  {
+   "nom": "Complexe Turistique de Morzouga",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.0894276,-4.0058523",
+   "lat": 31.0894276,
+   "lng": -4.0058523,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.0894276,-4.0058523",
+   "source": "osm"
+  },
+  {
+   "nom": "Auberge Kasbah Merzouga",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.0895333,-4.0049707",
+   "lat": 31.0895333,
+   "lng": -4.0049707,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.0895333,-4.0049707",
+   "source": "osm"
+  },
+  {
+   "nom": "Kasbah Azalay",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.1115486,-4.0058456",
+   "lat": 31.1115486,
+   "lng": -4.0058456,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.kasbahazalay.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Auberge Kasbah des Dunes",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.0854355,-4.0098972",
+   "lat": 31.0854355,
+   "lng": -4.0098972,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.0854355,-4.0098972",
+   "source": "osm"
+  },
+  {
+   "nom": "Kasbah Panorama قصبة بانوراما",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.1144515,-4.0130793",
+   "lat": 31.1144515,
+   "lng": -4.0130793,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.1144515,-4.0130793",
+   "source": "osm"
+  },
+  {
+   "nom": "Panorama",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.1148695,-4.0160042",
+   "lat": 31.1148695,
+   "lng": -4.0160042,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.1148695,-4.0160042",
+   "source": "osm"
+  },
+  {
+   "nom": "Auberge Takojt نزل تاقجت",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.1148712,-4.0074329",
+   "lat": 31.1148712,
+   "lng": -4.0074329,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.takojt.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Maison Chez Nous",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.0836696,-4.0076115",
+   "lat": 31.0836696,
+   "lng": -4.0076115,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.0836696,-4.0076115",
+   "source": "osm"
+  },
+  {
+   "nom": "La Maison Rurale",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.0830811,-4.0078602",
+   "lat": 31.0830811,
+   "lng": -4.0078602,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.lamaisonrurale.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Azawad",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.0814746,-4.0100029",
+   "lat": 31.0814746,
+   "lng": -4.0100029,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.0814746,-4.0100029",
+   "source": "osm"
+  },
+  {
+   "nom": "La Tradition",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.0812817,-4.0070822",
+   "lat": 31.0812817,
+   "lng": -4.0070822,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.0812817,-4.0070822",
+   "source": "osm"
+  },
+  {
+   "nom": "Auberge Rose Du Sable",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.080843,-4.0089241",
+   "lat": 31.080843,
+   "lng": -4.0089241,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.080843,-4.0089241",
+   "source": "osm"
+  },
+  {
+   "nom": "Berber Place",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.1215292,-4.0175409",
+   "lat": 31.1215292,
+   "lng": -4.0175409,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.1215292,-4.0175409",
+   "source": "osm"
+  },
+  {
+   "nom": "Soleil bleu",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.1238488,-4.0151136",
+   "lat": 31.1238488,
+   "lng": -4.0151136,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.1238488,-4.0151136",
+   "source": "osm"
+  },
+  {
+   "nom": "Auberge Chez Thiri",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.1242708,-4.0118794",
+   "lat": 31.1242708,
+   "lng": -4.0118794,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.1242708,-4.0118794",
+   "source": "osm"
+  },
+  {
+   "nom": "Palais des Dunes",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.0730941,-4.0135348",
+   "lat": 31.0730941,
+   "lng": -4.0135348,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.palaisdesdunes.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar el Janub",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.1264321,-4.0131616",
+   "lat": 31.1264321,
+   "lng": -4.0131616,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.1264321,-4.0131616",
+   "source": "osm"
+  },
+  {
+   "nom": "Kasbah Tombouctou",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.1278382,-4.013815",
+   "lat": 31.1278382,
+   "lng": -4.013815,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.xaluca.com/en/hotel/kasbah-hotel-tombouctou",
+   "source": "osm"
+  },
+  {
+   "nom": "Kasbah Kanz Erremal",
+   "categorie": "Hôtel",
+   "priceRange": "€€€",
+   "score": 3,
+   "mapsUrl": "https://maps.google.com/?q=31.1290267,-4.0143832",
+   "lat": 31.1290267,
+   "lng": -4.0143832,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.1290267,-4.0143832",
+   "source": "osm"
+  },
+  {
+   "nom": "Albergue Amazir",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.1306169,-4.0160664",
+   "lat": 31.1306169,
+   "lng": -4.0160664,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.1306169,-4.0160664",
+   "source": "osm"
+  },
+  {
+   "nom": "Kasbah Mohayut",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.1314941,-4.0165478",
+   "lat": 31.1314941,
+   "lng": -4.0165478,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.1314941,-4.0165478",
+   "source": "osm"
+  },
+  {
+   "nom": "Chez les Habitants",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.067334,-4.0166824",
+   "lat": 31.067334,
+   "lng": -4.0166824,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.067334,-4.0166824",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Kasbah Aiour",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.1322317,-4.0165702",
+   "lat": 31.1322317,
+   "lng": -4.0165702,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.1322317,-4.0165702",
+   "source": "osm"
+  },
+  {
+   "nom": "Ksar Merzouga",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.1328717,-4.0174746",
+   "lat": 31.1328717,
+   "lng": -4.0174746,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.1328717,-4.0174746",
+   "source": "osm"
+  },
+  {
+   "nom": "Haven La Chance Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.1338762,-4.0189645",
+   "lat": 31.1338762,
+   "lng": -4.0189645,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.1338762,-4.0189645",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotels Sahara",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.1359986,-4.0198476",
+   "lat": 31.1359986,
+   "lng": -4.0198476,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.1359986,-4.0198476",
+   "source": "osm"
+  },
+  {
+   "nom": "Les Flammants Roses",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.1368206,-4.0244429",
+   "lat": 31.1368206,
+   "lng": -4.0244429,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.1368206,-4.0244429",
+   "source": "osm"
+  },
+  {
+   "nom": "Desert Camp",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.086689,-3.9698924",
+   "lat": 31.086689,
+   "lng": -3.9698924,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.086689,-3.9698924",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel chez Toupi",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.1383861,-4.0240182",
+   "lat": 31.1383861,
+   "lng": -4.0240182,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.1383861,-4.0240182",
+   "source": "osm"
+  },
+  {
+   "nom": "Wilderness Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.1390238,-4.0244282",
+   "lat": 31.1390238,
+   "lng": -4.0244282,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.1390238,-4.0244282",
+   "source": "osm"
+  },
+  {
+   "nom": "Maison Merzouga Guest House",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.1386682,-4.0259241",
+   "lat": 31.1386682,
+   "lng": -4.0259241,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.1386682,-4.0259241",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad les jardins de Merzouga",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.1395804,-4.022909",
+   "lat": 31.1395804,
+   "lng": -4.022909,
+   "halalFriendly": false,
+   "bookingUrl": "http://lesgardinddemerzouga.com",
+   "source": "osm"
+  },
+  {
+   "nom": "L'homme du desert",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.0585003,-4.0176071",
+   "lat": 31.0585003,
+   "lng": -4.0176071,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.0585003,-4.0176071",
+   "source": "osm"
+  },
+  {
+   "nom": "Merzouga Desert Camp",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.0873139,-3.9661691",
+   "lat": 31.0873139,
+   "lng": -3.9661691,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.0873139,-3.9661691",
+   "source": "osm"
+  },
+  {
+   "nom": "Sahara Desert Luxury Camp",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.0894498,-3.9652269",
+   "lat": 31.0894498,
+   "lng": -3.9652269,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.0894498,-3.9652269",
+   "source": "osm"
+  },
+  {
+   "nom": "Sabaku Tour Camp",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.1399131,-4.0271926",
+   "lat": 31.1399131,
+   "lng": -4.0271926,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.1399131,-4.0271926",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Aicha",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.140794,-4.0252384",
+   "lat": 31.140794,
+   "lng": -4.0252384,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.140794,-4.0252384",
+   "source": "osm"
+  },
+  {
+   "nom": "Sahara Mirage Camp 8",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.0922979,-3.9626194",
+   "lat": 31.0922979,
+   "lng": -3.9626194,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.0922979,-3.9626194",
+   "source": "osm"
+  },
+  {
+   "nom": "Auberge l'Oasis",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.1418578,-4.0244388",
+   "lat": 31.1418578,
+   "lng": -4.0244388,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.aubergeoasismerzouga.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Merzouga Dunes",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.0564659,-4.0193275",
+   "lat": 31.0564659,
+   "lng": -4.0193275,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.riadmerzougadunes.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Auberge La Source",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.1421732,-4.0246783",
+   "lat": 31.1421732,
+   "lng": -4.0246783,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.1421732,-4.0246783",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Tadarte",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.141857,-4.0274893",
+   "lat": 31.141857,
+   "lng": -4.0274893,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.riadtadarte.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Magic Luxury Camp",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.0602135,-3.9850167",
+   "lat": 31.0602135,
+   "lng": -3.9850167,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.0602135,-3.9850167",
+   "source": "osm"
+  },
+  {
+   "nom": "Merzouga Dunes Luxury Camps",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.0581117,-3.9894701",
+   "lat": 31.0581117,
+   "lng": -3.9894701,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.0581117,-3.9894701",
+   "source": "osm"
+  },
+  {
+   "nom": "AMIRA Camp",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.0588803,-3.98717",
+   "lat": 31.0588803,
+   "lng": -3.98717,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.0588803,-3.98717",
+   "source": "osm"
+  },
+  {
+   "nom": "Sanmao Luxury Desert Camp",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.0586405,-3.9876578",
+   "lat": 31.0586405,
+   "lng": -3.9876578,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.0586405,-3.9876578",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Nasser Palace",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.144415,-4.0265883",
+   "lat": 31.144415,
+   "lng": -4.0265883,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.144415,-4.0265883",
+   "source": "osm"
+  },
+  {
+   "nom": "Sahara Starlight Camp",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.0589781,-3.9855057",
+   "lat": 31.0589781,
+   "lng": -3.9855057,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.0589781,-3.9855057",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Dar Poublanc",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.1443265,-4.0291046",
+   "lat": 31.1443265,
+   "lng": -4.0291046,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.1443265,-4.0291046",
+   "source": "osm"
+  },
+  {
+   "nom": "Caravanserai Luxury Desert Camp",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.0598657,-3.9828695",
+   "lat": 31.0598657,
+   "lng": -3.9828695,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.0598657,-3.9828695",
+   "source": "osm"
+  },
+  {
+   "nom": "Ali el Cojo",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.1463199,-4.0281043",
+   "lat": 31.1463199,
+   "lng": -4.0281043,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.alielcojo.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Carvasar",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.1481265,-4.0311389",
+   "lat": 31.1481265,
+   "lng": -4.0311389,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.1481265,-4.0311389",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Madu",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.1478046,-4.0329353",
+   "lat": 31.1478046,
+   "lng": -4.0329353,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.1478046,-4.0329353",
+   "source": "osm"
+  },
+  {
+   "nom": "Kasbah Le Berger",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.0465946,-4.0053203",
+   "lat": 31.0465946,
+   "lng": -4.0053203,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.0465946,-4.0053203",
+   "source": "osm"
+  },
+  {
+   "nom": "Nomad Palace Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.0462887,-3.9965793",
+   "lat": 31.0462887,
+   "lng": -3.9965793,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.hotelnomadpalace.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Khamlia Desert Hotel فندق خملية الصحراء",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.0352607,-4.0070695",
+   "lat": 31.0352607,
+   "lng": -4.0070695,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.0352607,-4.0070695",
+   "source": "osm"
+  },
+  {
+   "nom": "Les Portes Du Desert",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.0795355,-4.0102403",
+   "lat": 31.0795355,
+   "lng": -4.0102403,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=31.0795355,-4.0102403",
+   "source": "osm"
+  }
+ ],
+ "mosqueesPrincipales": [],
+ "activites": [
+  {
+   "nom": "Grand Dune View Point",
+   "lat": 31.0790834,
+   "lng": -3.9913184,
+   "coordonnees": {
+    "lat": 31.0790834,
+    "lng": -3.9913184
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=31.0790834,-3.9913184",
+   "source": "osm"
+  },
+  {
+   "nom": "متحف السيارات العتيقة مرزوكة",
+   "lat": 31.0720154,
+   "lng": -4.0121163,
+   "coordonnees": {
+    "lat": 31.0720154,
+    "lng": -4.0121163
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=31.0720154,-4.0121163",
+   "source": "osm"
+  },
+  {
+   "nom": "Sand Dunes",
+   "lat": 31.066472,
+   "lng": -4.0108585,
+   "coordonnees": {
+    "lat": 31.066472,
+    "lng": -4.0108585
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=31.066472,-4.0108585",
+   "source": "osm"
+  },
+  {
+   "nom": "Erg Chebbi, Grand Dune",
+   "lat": 31.1473386,
+   "lng": -4.0089543,
+   "coordonnees": {
+    "lat": 31.1473386,
+    "lng": -4.0089543
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=31.1473386,-4.0089543",
+   "source": "osm"
+  },
+  {
+   "nom": "Chez Les Artistes",
+   "lat": 31.034002,
+   "lng": -4.0056805,
+   "coordonnees": {
+    "lat": 31.034002,
+    "lng": -4.0056805
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=31.034002,-4.0056805",
+   "source": "osm"
+  },
+  {
+   "nom": "Village Français Abandonné",
+   "lat": 31.0415836,
+   "lng": -3.9501894,
+   "coordonnees": {
+    "lat": 31.0415836,
+    "lng": -3.9501894
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=31.0415836,-3.9501894",
+   "source": "osm"
+  },
+  {
+   "nom": "Ghost Town View Point",
+   "lat": 31.0377752,
+   "lng": -3.9506953,
+   "coordonnees": {
+    "lat": 31.0377752,
+    "lng": -3.9506953
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=31.0377752,-3.9506953",
+   "source": "osm"
+  },
+  {
+   "nom": "Antoine du Saint-Exupéry",
+   "lat": 31.2017083,
+   "lng": -4.0287257,
+   "coordonnees": {
+    "lat": 31.2017083,
+    "lng": -4.0287257
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=31.2017083,-4.0287257",
+   "source": "osm"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30",
+ "description_en": "Merzouga, in Morocco, is a halal-friendly destination with a Halal Trust Score of 4.7/5. Muslim travelers will find 4 halal restaurants listed, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
+ "metaDescription_en": "Halal guide to Merzouga: 4 halal restaurants listed, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.7/5.",
+ "nom_en": "Merzouga",
+ "boucheries": [],
+ "dataPurgedAt": "2026-07-15"
 }

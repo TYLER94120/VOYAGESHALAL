@@ -1,3878 +1,2515 @@
 {
-  "nom": "Bangkok",
-  "pays": "Thaïlande",
-  "slug": "bangkok",
-  "image": "https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=1400&q=85",
-  "image_hero": "https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=1400&q=85",
-  "description": "Bangkok cache une vibrante communauté musulmane autour de Ban Krua et Bangrak. Street food halal, marchés et temples en font une étape exotique et abordable.",
-  "descriptionLongue": "Capitale trépidante de la Thaïlande, Bangkok possède des quartiers musulmans historiques comme Ban Krua, fondé par des Chams. Les restaurants halal signalés y servent currys, roti et khao mok gai (biryani thaï). Entre marchés flottants, temples dorés et centres commerciaux, la ville offre un dépaysement total à petit prix. De nombreuses mosquées jalonnent la métropole.",
-  "halalScore": 7.5,
-  "score_halal": 3.8,
-  "mosquees": 200,
-  "population": "10,7 millions",
+ "nom": "Bangkok",
+ "pays": "Thaïlande",
+ "slug": "bangkok",
+ "image": "https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=1400&q=85",
+ "image_hero": "https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=1400&q=85",
+ "description": "Bangkok cache une vibrante communauté musulmane autour de Ban Krua et Bangrak. Street food halal, marchés et temples en font une étape exotique et abordable.",
+ "descriptionLongue": "Capitale trépidante de la Thaïlande, Bangkok possède des quartiers musulmans historiques comme Ban Krua, fondé par des Chams. Les restaurants halal signalés y servent currys, roti et khao mok gai (biryani thaï). Entre marchés flottants, temples dorés et centres commerciaux, la ville offre un dépaysement total à petit prix. De nombreuses mosquées jalonnent la métropole.",
+ "halalScore": 7.5,
+ "score_halal": 3.8,
+ "mosquees": 200,
+ "population": "10,7 millions",
+ "langue": "Thaï",
+ "monnaie": "Baht thaïlandais (THB)",
+ "fuseau": "UTC+7",
+ "meilleureEpoque": "Novembre à Février",
+ "prixMoyenNuit": "60€",
+ "continent": "Asie",
+ "codeISO": "TH",
+ "pays_slug": "thailande",
+ "region": "Asie du Sud-Est",
+ "meta_title": "Voyage Halal à Bangkok — Guide Complet 2026",
+ "meta_description": "Restaurants halal signalés, mosquées et guide pratique pour Bangkok — Halal Trust Score 7.5/10.",
+ "metaDescription": "Restaurants halal signalés, mosquées et guide pratique pour Bangkok — Halal Trust Score 7.5/10.",
+ "coordonnees": {
+  "lat": 13.7563,
+  "lng": 100.5018
+ },
+ "image_alt": "Vue de Bangkok, Thaïlande",
+ "statistiques": {
+  "mosquees": 6,
+  "restaurants_halal": 62,
+  "habitants_musulmans_pct": 5,
+  "hotels": 115
+ },
+ "infos_pratiques": {
   "langue": "Thaï",
   "monnaie": "Baht thaïlandais (THB)",
-  "fuseau": "UTC+7",
-  "meilleureEpoque": "Novembre à Février",
-  "prixMoyenNuit": "60€",
-  "continent": "Asie",
-  "codeISO": "TH",
-  "pays_slug": "thailande",
-  "region": "Asie du Sud-Est",
-  "meta_title": "Voyage Halal à Bangkok — Guide Complet 2026",
-  "meta_description": "Restaurants halal signalés, mosquées et guide pratique pour Bangkok — Halal Trust Score 7.5/10.",
-  "metaDescription": "Restaurants halal signalés, mosquées et guide pratique pour Bangkok — Halal Trust Score 7.5/10.",
-  "coordonnees": {
-    "lat": 13.7563,
-    "lng": 100.5018
+  "meilleure_periode": "Novembre à Février",
+  "appel_priere": "5 fois par jour",
+  "nourriture_halal": "Largement disponible",
+  "alcool": "Disponible",
+  "securite": "Précautions habituelles"
+ },
+ "infoPratique": {
+  "visa": "Exemption de visa pour les Français (30 jours)",
+  "vaccins": "Aucun obligatoire (vérifier recommandations)",
+  "transport": "BTS Skytrain, MRT, bateaux-bus, tuk-tuk",
+  "priseElectrique": "Type A/B/C — 220V",
+  "decalageHoraire": "+6h par rapport à Paris (hiver)"
+ },
+ "restaurants": [
+  {
+   "nom": "Star",
+   "lat": 13.7599264,
+   "lng": 100.49717,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7599264,100.49717",
+   "source": "osm"
   },
-  "image_alt": "Vue de Bangkok, Thaïlande",
-  "statistiques": {
-    "mosquees": 200,
-    "restaurants_halal": 750,
-    "habitants_musulmans_pct": 5,
-    "hotels": 120
+  {
+   "nom": "Taste of India",
+   "lat": 13.7592878,
+   "lng": 100.4966904,
+   "type": "indian, curry",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7592878,100.4966904",
+   "source": "osm"
   },
-  "infos_pratiques": {
-    "langue": "Thaï",
-    "monnaie": "Baht thaïlandais (THB)",
-    "meilleure_periode": "Novembre à Février",
-    "appel_priere": "5 fois par jour",
-    "nourriture_halal": "Largement disponible",
-    "alcool": "Disponible",
-    "securite": "Précautions habituelles"
+  {
+   "nom": "ข้าวแกงป้าภู",
+   "lat": 13.7622185,
+   "lng": 100.501867,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7622185,100.501867",
+   "source": "osm"
   },
-  "infoPratique": {
-    "visa": "Exemption de visa pour les Français (30 jours)",
-    "vaccins": "Aucun obligatoire (vérifier recommandations)",
-    "transport": "BTS Skytrain, MRT, bateaux-bus, tuk-tuk",
-    "priseElectrique": "Type A/B/C — 220V",
-    "decalageHoraire": "+6h par rapport à Paris (hiver)"
+  {
+   "nom": "Saffron Thai & India restaurant",
+   "lat": 13.7601535,
+   "lng": 100.4962546,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7601535,100.4962546",
+   "source": "osm"
   },
-  "restaurants": [
-    {
-      "nom": "Shoshana Restaurant",
-      "type": "Thaï",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Bangkok",
-      "description": "Israélien-arabe halal, Khao San à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Shoshana+Restaurant+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Israélien-arabe halal",
-      "nombreAvis": 2671,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r1",
-      "lat": 13.7393113,
-      "lng": 100.5166499,
-      "geocoded": true
-    },
-    {
-      "nom": "Gianni Ristorante",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Bangkok",
-      "description": "Italien halal premium à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Gianni+Ristorante+Bangkok",
-      "priceRange": "€€€€",
-      "specialite": "Italien halal premium",
-      "nombreAvis": 937,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r2",
-      "lat": 13.7393113,
-      "lng": 100.5166499,
-      "geocoded": true
-    },
-    {
-      "nom": "Naj",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Bangkok",
-      "description": "Thaï gastronomique halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Naj+Bangkok",
-      "priceRange": "€€€€",
-      "specialite": "Thaï gastronomique halal",
-      "nombreAvis": 821,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r3",
-      "lat": 13.7393113,
-      "lng": 100.5166499,
-      "geocoded": true
-    },
-    {
-      "nom": "Sirocco",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Bangkok",
-      "description": "Rooftop panoramique halal-friendly à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Sirocco+Bangkok",
-      "priceRange": "€€€€",
-      "specialite": "Rooftop panoramique halal-friendly",
-      "nombreAvis": 325,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r4",
-      "lat": 13.7393113,
-      "lng": 100.5166499,
-      "geocoded": true
-    },
-    {
-      "nom": "Chef Man",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Bangkok",
-      "description": "Cantonais halal signalé à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Chef+Man+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Cantonais halal signalé",
-      "nombreAvis": 187,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r5",
-      "lat": 13.7393113,
-      "lng": 100.5166499,
-      "geocoded": true
-    },
-    {
-      "nom": "Ruen Mallika",
-      "type": "Thaï",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Bangkok",
-      "description": "Thaï royal halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Ruen+Mallika+Bangkok",
-      "priceRange": "€",
-      "specialite": "Thaï royal halal",
-      "nombreAvis": 461,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "rapide"
-      ],
-      "id": "r6",
-      "lat": 13.7393113,
-      "lng": 100.5166499,
-      "geocoded": true
-    },
-    {
-      "nom": "D'sens Restaurant",
-      "type": "Cuisine française",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Bangkok",
-      "description": "Français halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=D%27sens+Restaurant+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Français halal",
-      "nombreAvis": 1223,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r7",
-      "lat": 13.7393113,
-      "lng": 100.5166499,
-      "geocoded": true
-    },
-    {
-      "nom": "Le Normandie",
-      "type": "Cuisine française",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Bangkok",
-      "description": "Français ultra-luxe halal, Mandarin à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Le+Normandie+Bangkok",
-      "priceRange": "€€€€",
-      "specialite": "Français ultra-luxe halal",
-      "nombreAvis": 1134,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r8",
-      "lat": 13.7393113,
-      "lng": 100.5166499,
-      "geocoded": true
-    },
-    {
-      "nom": "CRU Champagne Bar Bangkok",
-      "type": "Thaï",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Bangkok",
-      "description": "Sans alcool halal-friendly à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=CRU+Champagne+Bar+Bangkok+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Sans alcool halal-friendly",
-      "nombreAvis": 1638,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r9",
-      "lat": 13.7393113,
-      "lng": 100.5166499,
-      "geocoded": true
-    },
-    {
-      "nom": "Muslim Restaurant Silom",
-      "type": "Thaï",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Bangkok",
-      "description": "Thaï musulman à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Muslim+Restaurant+Silom+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Thaï musulman",
-      "nombreAvis": 1990,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r10",
-      "lat": 13.7393113,
-      "lng": 100.5166499,
-      "geocoded": true
-    },
-    {
-      "nom": "Siam Halal",
-      "type": "Thaï",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Bangkok",
-      "description": "Thaï halal signalé à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Siam+Halal+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Thaï halal signalé",
-      "nombreAvis": 447,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r11",
-      "lat": 13.7393113,
-      "lng": 100.5166499,
-      "geocoded": true
-    },
-    {
-      "nom": "Krua Aroy",
-      "type": "Thaï",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Bangkok",
-      "description": "Thaï populaire halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Krua+Aroy+Bangkok",
-      "priceRange": "€",
-      "specialite": "Thaï populaire halal",
-      "nombreAvis": 1199,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "rapide"
-      ],
-      "id": "r12",
-      "lat": 13.7393113,
-      "lng": 100.5166499,
-      "geocoded": true
-    },
-    {
-      "nom": "Kay Kay's Kitchen",
-      "type": "Thaï",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Bangkok",
-      "description": "Thaï maison halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Kay+Kay%27s+Kitchen+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Thaï maison halal",
-      "nombreAvis": 1218,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r13",
-      "lat": 13.7393113,
-      "lng": 100.5166499,
-      "geocoded": true
-    },
-    {
-      "nom": "Bangkok Muslim Food",
-      "type": "Thaï",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Bangkok",
-      "description": "Communauté à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Bangkok+Muslim+Food+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Communauté",
-      "nombreAvis": 436,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r14",
-      "lat": 13.7393113,
-      "lng": 100.5166499,
-      "geocoded": true
-    },
-    {
-      "nom": "Pak Nam Seafood",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Bangkok",
-      "description": "Fruits de mer halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Pak+Nam+Seafood+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Fruits de mer halal",
-      "nombreAvis": 911,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "vue-mer"
-      ],
-      "id": "r15",
-      "lat": 13.7393113,
-      "lng": 100.5166499,
-      "geocoded": true
-    },
-    {
-      "nom": "Isaan Corner",
-      "type": "Thaï",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Bangkok",
-      "description": "Cuisine nord-est thaï halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Isaan+Corner+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Cuisine nord-est thaï halal",
-      "nombreAvis": 2471,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r16",
-      "lat": 13.7393113,
-      "lng": 100.5166499,
-      "geocoded": true
-    },
-    {
-      "nom": "Pad See Ew Muslim",
-      "type": "Thaï",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Bangkok",
-      "description": "Nouilles halal populaires à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Pad+See+Ew+Muslim+Bangkok",
-      "priceRange": "€",
-      "specialite": "Nouilles halal populaires",
-      "nombreAvis": 123,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "rapide"
-      ],
-      "id": "r17",
-      "lat": 13.7393113,
-      "lng": 100.5166499,
-      "geocoded": true
-    },
-    {
-      "nom": "Green Garden Vegetarian",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Bangkok",
-      "description": "Végétarien halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Green+Garden+Vegetarian+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Végétarien halal",
-      "nombreAvis": 172,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "veggie"
-      ],
-      "id": "r18",
-      "lat": 13.7393113,
-      "lng": 100.5166499,
-      "geocoded": true
-    },
-    {
-      "nom": "Govinda's Bangkok",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Bangkok",
-      "description": "Végétarien halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Govinda%27s+Bangkok+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Végétarien halal",
-      "nombreAvis": 703,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "veggie"
-      ],
-      "id": "r19",
-      "lat": 13.7393113,
-      "lng": 100.5166499,
-      "geocoded": true
-    },
-    {
-      "nom": "Indian Hut Bangkok",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Bangkok",
-      "description": "Indien halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Indian+Hut+Bangkok+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Indien halal",
-      "nombreAvis": 82,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r20",
-      "lat": 13.7393113,
-      "lng": 100.5166499,
-      "geocoded": true
-    },
-    {
-      "nom": "Rang Mahal Bangkok",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Bangkok",
-      "description": "Indien gastronomique à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Rang+Mahal+Bangkok+Bangkok",
-      "priceRange": "€€€€",
-      "specialite": "Indien gastronomique",
-      "nombreAvis": 1075,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r21",
-      "lat": 13.7393113,
-      "lng": 100.5166499,
-      "geocoded": true
-    },
-    {
-      "nom": "Passage To India",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Bangkok",
-      "description": "Indien premium halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Passage+To+India+Bangkok",
-      "priceRange": "€€€€",
-      "specialite": "Indien premium halal",
-      "nombreAvis": 899,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r22",
-      "lat": 13.7393113,
-      "lng": 100.5166499,
-      "geocoded": true
-    },
-    {
-      "nom": "Mughal Room",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Bangkok",
-      "description": "Moghol-indien halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Mughal+Room+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Moghol-indien halal",
-      "nombreAvis": 2205,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r23",
-      "lat": 13.7393113,
-      "lng": 100.5166499,
-      "geocoded": true
-    },
-    {
-      "nom": "Madras New Woodlands",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Bangkok",
-      "description": "Indien végé à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Madras+New+Woodlands+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Indien végé",
-      "nombreAvis": 3012,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r24",
-      "lat": 13.7393113,
-      "lng": 100.5166499,
-      "geocoded": true
-    },
-    {
-      "nom": "Turkish Restaurant Bangkok",
-      "type": "Turc",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Bangkok",
-      "description": "Turc halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Turkish+Restaurant+Bangkok+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Turc halal",
-      "nombreAvis": 336,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r25",
-      "lat": 13.7393113,
-      "lng": 100.5166499,
-      "geocoded": true
-    },
-    {
-      "nom": "Ali Baba Turkish",
-      "type": "Turc",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Bangkok",
-      "description": "Kebab turc à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Ali+Baba+Turkish+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Kebab turc",
-      "nombreAvis": 1067,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r26",
-      "lat": 13.7393113,
-      "lng": 100.5166499,
-      "geocoded": true
-    },
-    {
-      "nom": "Bosphorus Bangkok",
-      "type": "Turc",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Bangkok",
-      "description": "Ottoman à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Bosphorus+Bangkok+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Ottoman",
-      "nombreAvis": 659,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r27",
-      "lat": 13.7393113,
-      "lng": 100.5166499,
-      "geocoded": true
-    },
-    {
-      "nom": "Mosque Area Bang Rak",
-      "type": "Thaï",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Bangkok",
-      "description": "Halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Mosque+Area+Bang+Rak+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Halal",
-      "nombreAvis": 2434,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r28",
-      "lat": 13.7393113,
-      "lng": 100.5166499,
-      "geocoded": true
-    },
-    {
-      "nom": "Haroon Mosque Café",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Bangkok",
-      "description": "Halal mosquée à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Haroon+Mosque+Caf%C3%A9+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Halal mosquée",
-      "nombreAvis": 532,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r29",
-      "lat": 13.7393113,
-      "lng": 100.5166499,
-      "geocoded": true
-    },
-    {
-      "nom": "Ton Son Road Halal",
-      "type": "Thaï",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Bangkok",
-      "description": "Quartier musulman à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Ton+Son+Road+Halal+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Quartier musulman",
-      "nombreAvis": 3574,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r30",
-      "lat": 13.7393113,
-      "lng": 100.5166499,
-      "geocoded": true
-    },
-    {
-      "nom": "Korea House Bangkok",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Bangkok",
-      "description": "Coréen halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Korea+House+Bangkok+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Coréen halal",
-      "nombreAvis": 1383,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r31",
-      "lat": 13.7393113,
-      "lng": 100.5166499,
-      "geocoded": true
-    },
-    {
-      "nom": "Todai Thailand",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Bangkok",
-      "description": "Coréen-japonais halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Todai+Thailand+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Coréen-japonais halal",
-      "nombreAvis": 1796,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r32",
-      "lat": 13.7393113,
-      "lng": 100.5166499,
-      "geocoded": true
-    },
-    {
-      "nom": "Yoshinoya Thailand",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Bangkok",
-      "description": "Japonais halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Yoshinoya+Thailand+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Japonais halal",
-      "nombreAvis": 2107,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r33",
-      "lat": 13.7393113,
-      "lng": 100.5166499,
-      "geocoded": true
-    },
-    {
-      "nom": "MK Restaurant",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Bangkok",
-      "description": "Shabu shabu halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=MK+Restaurant+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Shabu shabu halal",
-      "nombreAvis": 2158,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r34",
-      "lat": 13.7393113,
-      "lng": 100.5166499,
-      "geocoded": true
-    },
-    {
-      "nom": "Coca Restaurant",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Bangkok",
-      "description": "Fondue thaï halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Coca+Restaurant+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Fondue thaï halal",
-      "nombreAvis": 585,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r35",
-      "lat": 13.7393113,
-      "lng": 100.5166499,
-      "geocoded": true
-    },
-    {
-      "nom": "The Pizza Company Thailand",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Bangkok",
-      "description": "Halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=The+Pizza+Company+Thailand+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Halal",
-      "nombreAvis": 749,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r36",
-      "lat": 13.7393113,
-      "lng": 100.5166499,
-      "geocoded": true
-    },
-    {
-      "nom": "KFC Thailand",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Bangkok",
-      "description": "Halal signalé à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=KFC+Thailand+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Halal signalé",
-      "nombreAvis": 2836,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r37",
-      "lat": 13.7393113,
-      "lng": 100.5166499,
-      "geocoded": true
-    },
-    {
-      "nom": "McDonald's Thailand",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Bangkok",
-      "description": "Halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=McDonald%27s+Thailand+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Halal",
-      "nombreAvis": 3109,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r38",
-      "lat": 13.7393113,
-      "lng": 100.5166499,
-      "geocoded": true
-    },
-    {
-      "nom": "Burger King Thailand",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Bangkok",
-      "description": "Halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Burger+King+Thailand+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Halal",
-      "nombreAvis": 962,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r39",
-      "lat": 13.7393113,
-      "lng": 100.5166499,
-      "geocoded": true
-    },
-    {
-      "nom": "Krua Thai Halal",
-      "type": "Thaï",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Bangkok",
-      "description": "Thaï maison à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Krua+Thai+Halal+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Thaï maison",
-      "nombreAvis": 1641,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r40",
-      "lat": 13.7393113,
-      "lng": 100.5166499,
-      "geocoded": true
-    },
-    {
-      "nom": "Star",
-      "lat": 13.7599264,
-      "lng": 100.49717,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7599264,100.49717",
-      "source": "osm"
-    },
-    {
-      "nom": "Taste of India",
-      "lat": 13.7592878,
-      "lng": 100.4966904,
-      "type": "indian, curry",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7592878,100.4966904",
-      "source": "osm"
-    },
-    {
-      "nom": "ข้าวแกงป้าภู",
-      "lat": 13.7622185,
-      "lng": 100.501867,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7622185,100.501867",
-      "source": "osm"
-    },
-    {
-      "nom": "Saffron Thai & India restaurant",
-      "lat": 13.7601535,
-      "lng": 100.4962546,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7601535,100.4962546",
-      "source": "osm"
-    },
-    {
-      "nom": "Herbs & Spices",
-      "lat": 13.7592732,
-      "lng": 100.4951886,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7592732,100.4951886",
-      "source": "osm"
-    },
-    {
-      "nom": "Maharaja Kitchen",
-      "lat": 13.7627875,
-      "lng": 100.498783,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7627875,100.498783",
-      "source": "osm"
-    },
-    {
-      "nom": "Himalayan Coffee",
-      "lat": 13.7635944,
-      "lng": 100.5002214,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7635944,100.5002214",
-      "source": "osm"
-    },
-    {
-      "nom": "Royal Tandoor",
-      "lat": 13.7602979,
-      "lng": 100.493709,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7602979,100.493709",
-      "source": "osm"
-    },
-    {
-      "nom": "Punjab Sweets",
-      "lat": 13.7440442,
-      "lng": 100.5009228,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7440442,100.5009228",
-      "source": "osm"
-    },
-    {
-      "nom": "Mama Restaurant",
-      "lat": 13.7431922,
-      "lng": 100.5018886,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7431922,100.5018886",
-      "source": "osm"
-    },
-    {
-      "nom": "ร้านญาบิร",
-      "lat": 13.751031,
-      "lng": 100.5250683,
-      "type": "Restaurant",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=13.751031,100.5250683",
-      "source": "osm"
-    },
-    {
-      "nom": "Vegan India",
-      "lat": 13.746828,
-      "lng": 100.528544,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.746828,100.528544",
-      "source": "osm"
-    },
-    {
-      "nom": "Roti street stall",
-      "lat": 13.7539331,
-      "lng": 100.5304155,
-      "type": "thai",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=13.7539331,100.5304155",
-      "source": "osm"
-    },
-    {
-      "nom": "ซัลลิม",
-      "lat": 13.7278212,
-      "lng": 100.5154904,
-      "type": "Restaurant",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=13.7278212,100.5154904",
-      "source": "osm"
-    },
-    {
-      "nom": "Saravana Bhavan",
-      "lat": 13.7280837,
-      "lng": 100.517818,
-      "type": "indian, south indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7280837,100.517818",
-      "source": "osm"
-    },
-    {
-      "nom": "กะบับไก่ชีสพ่นไฟรังสิต",
-      "lat": 13.7351428,
-      "lng": 100.5275072,
-      "type": "kebab",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7351428,100.5275072",
-      "source": "osm"
-    },
-    {
-      "nom": "ชิรี กาเนสซ์",
-      "lat": 13.7278998,
-      "lng": 100.5207661,
-      "type": "indian, thai",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7278998,100.5207661",
-      "source": "osm"
-    },
-    {
-      "nom": "TastyFood @ Bangkok",
-      "lat": 13.7538025,
-      "lng": 100.5370364,
-      "type": "indian, thai",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7538025,100.5370364",
-      "source": "osm"
-    },
-    {
-      "nom": "Indian & halal food",
-      "lat": 13.7249139,
-      "lng": 100.5167297,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7249139,100.5167297",
-      "source": "osm"
-    },
-    {
-      "nom": "Guptaji Ki Kitchen",
-      "lat": 13.7539415,
-      "lng": 100.5393892,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7539415,100.5393892",
-      "source": "osm"
-    },
-    {
-      "nom": "หมกแพะพิเศษ",
-      "lat": 13.7223501,
-      "lng": 100.5164766,
-      "type": "Restaurant",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=13.7223501,100.5164766",
-      "source": "osm"
-    },
-    {
-      "nom": "Saman",
-      "lat": 13.7224655,
-      "lng": 100.5182674,
-      "type": "turkish",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7224655,100.5182674",
-      "source": "osm"
-    },
-    {
-      "nom": "Śrī Bhavan",
-      "lat": 13.7541247,
-      "lng": 100.5406148,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7541247,100.5406148",
-      "source": "osm"
-    },
-    {
-      "nom": "Hajiali",
-      "lat": 13.7231113,
-      "lng": 100.5207299,
-      "type": "indian, dessert, falooda",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7231113,100.5207299",
-      "source": "osm"
-    },
-    {
-      "nom": "Homemade Indian Food",
-      "lat": 13.7187194,
-      "lng": 100.5078625,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7187194,100.5078625",
-      "source": "osm"
-    },
-    {
-      "nom": "Sutra - Indian Restaurant",
-      "lat": 13.7274326,
-      "lng": 100.5278457,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7274326,100.5278457",
-      "source": "osm"
-    },
-    {
-      "nom": "Everything Halal Restaurant",
-      "lat": 13.7525575,
-      "lng": 100.5412604,
-      "type": "indian, pakistani, burmese",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=13.7525575,100.5412604",
-      "source": "osm"
-    },
-    {
-      "nom": "Taste of Persia",
-      "lat": 13.7236127,
-      "lng": 100.5232349,
-      "type": "persian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7236127,100.5232349",
-      "source": "osm"
-    },
-    {
-      "nom": "Tamil Nadu - best Indian food in Bangkok",
-      "lat": 13.7242296,
-      "lng": 100.5250698,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7242296,100.5250698",
-      "source": "osm"
-    },
-    {
-      "nom": "Manel Lankan",
-      "lat": 13.7527531,
-      "lng": 100.5421533,
-      "type": "sri lankan, indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7527531,100.5421533",
-      "source": "osm"
-    },
-    {
-      "nom": "the stay cafe",
-      "lat": 13.7592321,
-      "lng": 100.542307,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7592321,100.542307",
-      "source": "osm"
-    },
-    {
-      "nom": "Suananda",
-      "lat": 13.723079,
-      "lng": 100.5239598,
-      "type": "thai, indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.723079,100.5239598",
-      "source": "osm"
-    },
-    {
-      "nom": "Beirut Restaurant",
-      "lat": 13.7283134,
-      "lng": 100.533202,
-      "type": "lebanese",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7283134,100.533202",
-      "source": "osm"
-    },
-    {
-      "nom": "princess terrace",
-      "lat": 13.7153705,
-      "lng": 100.5090884,
-      "type": "thai, indian, japanese",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7153705,100.5090884",
-      "source": "osm"
-    },
-    {
-      "nom": "Indian express",
-      "lat": 13.7526551,
-      "lng": 100.5458569,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7526551,100.5458569",
-      "source": "osm"
-    },
-    {
-      "nom": "Ikfeef Shabu",
-      "lat": 13.8024992,
-      "lng": 100.511898,
-      "type": "Restaurant",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=13.8024992,100.511898",
-      "source": "osm"
-    },
-    {
-      "nom": "Charm Thai Halal Food",
-      "lat": 13.705704,
-      "lng": 100.5034391,
-      "type": "Restaurant",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=13.705704,100.5034391",
-      "source": "osm"
-    },
-    {
-      "nom": "Arabesque",
-      "lat": 13.7458495,
-      "lng": 100.5538279,
-      "type": "arabic, italian, seafood",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7458495,100.5538279",
-      "source": "osm"
-    },
-    {
-      "nom": "Siam India",
-      "lat": 13.7044513,
-      "lng": 100.5031206,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7044513,100.5031206",
-      "source": "osm"
-    },
-    {
-      "nom": "Nine Ball",
-      "lat": 13.7436228,
-      "lng": 100.5538308,
-      "type": "arab",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7436228,100.5538308",
-      "source": "osm"
-    },
-    {
-      "nom": "Bawarchi indian",
-      "lat": 13.7386301,
-      "lng": 100.552993,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7386301,100.552993",
-      "source": "osm"
-    },
-    {
-      "nom": "Al-Khaleej",
-      "lat": 13.7418398,
-      "lng": 100.5542669,
-      "type": "indian, arabic, thai, seafood",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7418398,100.5542669",
-      "source": "osm"
-    },
-    {
-      "nom": "Ibrahim Restaurant",
-      "lat": 13.790501,
-      "lng": 100.5441326,
-      "type": "Restaurant",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=13.790501,100.5441326",
-      "source": "osm"
-    },
-    {
-      "nom": "Balaji Pure",
-      "lat": 13.7456152,
-      "lng": 100.5560658,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7456152,100.5560658",
-      "source": "osm"
-    },
-    {
-      "nom": "Warabimochi Kamakura (One Bangkok)",
-      "lat": 13.7260766,
-      "lng": 100.5476849,
-      "type": "warabimochi, macha, hojicha, coffee, วาราบิโมจิ",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7260766,100.5476849",
-      "source": "osm"
-    },
-    {
-      "nom": "Hummus Head",
-      "lat": 13.7212799,
-      "lng": 100.546029,
-      "type": "lebanese",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7212799,100.546029",
-      "source": "osm"
-    },
-    {
-      "nom": "Blueba บลูบ้า @ตลาดสุวรรณเกลียวทอง เจริญนคร",
-      "lat": 13.6983605,
-      "lng": 100.4868401,
-      "type": "kebab, burger, fast food",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.6983605,100.4868401",
-      "source": "osm"
-    },
-    {
-      "nom": "Falafel Michelin",
-      "lat": 13.735619,
-      "lng": 100.5621067,
-      "type": "arab",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.735619,100.5621067",
-      "source": "osm"
-    },
-    {
-      "nom": "Kebab aur Sharaab",
-      "lat": 13.7374529,
-      "lng": 100.5629514,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7374529,100.5629514",
-      "source": "osm"
-    },
-    {
-      "nom": "The Pavilion",
-      "lat": 13.7349086,
-      "lng": 100.5626186,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7349086,100.5626186",
-      "source": "osm"
-    },
-    {
-      "nom": "Royal Anand",
-      "lat": 13.7312924,
-      "lng": 100.5625978,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7312924,100.5625978",
-      "source": "osm"
-    },
-    {
-      "nom": "Masala Mantra",
-      "lat": 13.7400874,
-      "lng": 100.5663424,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7400874,100.5663424",
-      "source": "osm"
-    },
-    {
-      "nom": "VR1 sukhumvit22 indian",
-      "lat": 13.7322787,
-      "lng": 100.5644107,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7322787,100.5644107",
-      "source": "osm"
-    },
-    {
-      "nom": "Indian Food",
-      "lat": 13.7662233,
-      "lng": 100.5684606,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7662233,100.5684606",
-      "source": "osm"
-    },
-    {
-      "nom": "Saras",
-      "lat": 13.7310108,
-      "lng": 100.5640565,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7310108,100.5640565",
-      "source": "osm"
-    },
-    {
-      "nom": "Gaggan Anand",
-      "lat": 13.7407594,
-      "lng": 100.5675678,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7407594,100.5675678",
-      "source": "osm"
-    },
-    {
-      "nom": "Amritsr Restaurant",
-      "lat": 13.732902,
-      "lng": 100.5650579,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.732902,100.5650579",
-      "source": "osm"
-    },
-    {
-      "nom": "Indique",
-      "lat": 13.7300929,
-      "lng": 100.5650025,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7300929,100.5650025",
-      "source": "osm"
-    },
-    {
-      "nom": "Indus restaurant",
-      "lat": 13.7238541,
-      "lng": 100.5700168,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7238541,100.5700168",
-      "source": "osm"
-    },
-    {
-      "nom": "Masala Art",
-      "lat": 13.7307956,
-      "lng": 100.5815919,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7307956,100.5815919",
-      "source": "osm"
-    },
-    {
-      "nom": "The Kebabry",
-      "lat": 13.7324556,
-      "lng": 100.5826841,
-      "type": "turkish",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7324556,100.5826841",
-      "source": "osm"
-    },
-    {
-      "nom": "Spicy by Nature",
-      "lat": 13.7252331,
-      "lng": 100.584845,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=13.7252331,100.584845",
-      "source": "osm"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "Mandarin Oriental Bangkok",
-      "categorie": "Luxe",
-      "score": 4.5,
-      "adresse": "Riverside",
-      "description": "Palace historique au bord du Chao Phraya",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Mandarin+Oriental+Bangkok+Bangkok",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bangkok&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bangkok",
-      "priceRange": "€€€€",
-      "id": "h1",
-      "nombreAvis": 286,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "lat": 13.7238854,
-      "lng": 100.5141549
-    },
-    {
-      "nom": "Novotel Bangkok Sukhumvit",
-      "categorie": "Standard",
-      "score": 4.5,
-      "adresse": "Sukhumvit",
-      "description": "Hôtel central proche du BTS",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Novotel+Bangkok+Sukhumvit+Bangkok",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bangkok&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bangkok",
-      "priceRange": "€€€",
-      "id": "h2",
-      "nombreAvis": 1574,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "lat": 13.7394044,
-      "lng": 100.5533461
-    },
-    {
-      "nom": "Ibis Bangkok Riverside",
-      "categorie": "Budget",
-      "score": 4.5,
-      "adresse": "Riverside",
-      "description": "Hôtel économique au bord du fleuve",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Ibis+Bangkok+Riverside+Bangkok",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bangkok&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bangkok",
-      "priceRange": "€€",
-      "id": "h3",
-      "nombreAvis": 1454,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "lat": 13.7173806,
-      "lng": 100.5096857
-    },
-    {
-      "nom": "Grand Plaza Bangkok",
-      "categorie": "Luxe",
-      "score": 4.2,
-      "adresse": "Bangkok",
-      "description": "Hôtel 5 étoiles central, cuisine halal et spa.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Bangkok+Bangkok",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bangkok&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bangkok",
-      "priceRange": "€€€€",
-      "id": "h4",
-      "nombreAvis": 754,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "lat": 13.8183224,
-      "lng": 100.559737
-    },
-    {
-      "nom": "บ้านดินสอ",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7560018,100.5018005",
-      "lat": 13.7560018,
-      "lng": 100.5018005,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7560018,100.5018005",
-      "source": "osm"
-    },
-    {
-      "nom": "โรงแรมดินสอมนต์",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7559553,100.5015672",
-      "lat": 13.7559553,
-      "lng": 100.5015672,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.dinsomonbangkok.top/",
-      "source": "osm"
-    },
-    {
-      "nom": "บ้านตึกดิน",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7554115,100.5018144",
-      "lat": 13.7554115,
-      "lng": 100.5018144,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.baantukdinhotel.com",
-      "source": "osm"
-    },
-    {
-      "nom": "Methavalai Residence",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7556012,100.5025056",
-      "lat": 13.7556012,
-      "lng": 100.5025056,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.methavalairesidence.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "บ้านพินท์ โฮเทล",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7553798,100.5013932",
-      "lat": 13.7553798,
-      "lng": 100.5013932,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7553798,100.5013932",
-      "source": "osm"
-    },
-    {
-      "nom": "Baan Noppawong",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7562403,100.5006133",
-      "lat": 13.7562403,
-      "lng": 100.5006133,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7562403,100.5006133",
-      "source": "osm"
-    },
-    {
-      "nom": "Ratchadamnoen Residence",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.757158,100.5027219",
-      "lat": 13.757158,
-      "lng": 100.5027219,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.757158,100.5027219",
-      "source": "osm"
-    },
-    {
-      "nom": "Siamese Views Lodge",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7571217,100.5028917",
-      "lat": 13.7571217,
-      "lng": 100.5028917,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7571217,100.5028917",
-      "source": "osm"
-    },
-    {
-      "nom": "Chest's place",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7558342,100.5004847",
-      "lat": 13.7558342,
-      "lng": 100.5004847,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7558342,100.5004847",
-      "source": "osm"
-    },
-    {
-      "nom": "hôtel 90",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7563687,100.5002463",
-      "lat": 13.7563687,
-      "lng": 100.5002463,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7563687,100.5002463",
-      "source": "osm"
-    },
-    {
-      "nom": "Siam Champs-Élyséesi",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.755575,100.5031833",
-      "lat": 13.755575,
-      "lng": 100.5031833,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.siam-champss.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Pannee Residence @ Dinsor Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.757779,100.5022595",
-      "lat": 13.757779,
-      "lng": 100.5022595,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.757779,100.5022595",
-      "source": "osm"
-    },
-    {
-      "nom": "เดอะพรินติ้ง เฮาส์ พอชเทล",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7548451,100.501216",
-      "lat": 13.7548451,
-      "lng": 100.501216,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.printinghouseposhtelbkk.com",
-      "source": "osm"
-    },
-    {
-      "nom": "Paragon One Residence",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7575215,100.5028628",
-      "lat": 13.7575215,
-      "lng": 100.5028628,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7575215,100.5028628",
-      "source": "osm"
-    },
-    {
-      "nom": "Room Quest Rim Praya",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7558608,100.5002093",
-      "lat": 13.7558608,
-      "lng": 100.5002093,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7558608,100.5002093",
-      "source": "osm"
-    },
-    {
-      "nom": "Lo-HaGuesthouse",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.754938,100.5009024",
-      "lat": 13.754938,
-      "lng": 100.5009024,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.754938,100.5009024",
-      "source": "osm"
-    },
-    {
-      "nom": "บ้านโขน",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7549728,100.5007801",
-      "lat": 13.7549728,
-      "lng": 100.5007801,
-      "halalFriendly": false,
-      "bookingUrl": "https://m.facebook.com/BaankhonBangkok",
-      "source": "osm"
-    },
-    {
-      "nom": "Sourire @ Rattanakosin Island",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7570851,100.5033118",
-      "lat": 13.7570851,
-      "lng": 100.5033118,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7570851,100.5033118",
-      "source": "osm"
-    },
-    {
-      "nom": "Villa Siam & Spa",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7557642,100.5001613",
-      "lat": 13.7557642,
-      "lng": 100.5001613,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7557642,100.5001613",
-      "source": "osm"
-    },
-    {
-      "nom": "Baan kachipan",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7555745,100.5001447",
-      "lat": 13.7555745,
-      "lng": 100.5001447,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7555745,100.5001447",
-      "source": "osm"
-    },
-    {
-      "nom": "Prasuri",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7580301,100.5025882",
-      "lat": 13.7580301,
-      "lng": 100.5025882,
-      "halalFriendly": false,
-      "bookingUrl": "prasuri_gh_bkk@hotmail.com",
-      "source": "osm"
-    },
-    {
-      "nom": "โรงแรมเฮีย",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.755534,100.503599",
-      "lat": 13.755534,
-      "lng": 100.503599,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.herehostel.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Krit Hostel & Coffe Bar",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7543913,100.5025146",
-      "lat": 13.7543913,
-      "lng": 100.5025146,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7543913,100.5025146",
-      "source": "osm"
-    },
-    {
-      "nom": "Oh Compound Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7545721,100.50063",
-      "lat": 13.7545721,
-      "lng": 100.50063,
-      "halalFriendly": false,
-      "bookingUrl": "http://www.ohcompound.com",
-      "source": "osm"
-    },
-    {
-      "nom": "Nat 2",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7577272,100.5001748",
-      "lat": 13.7577272,
-      "lng": 100.5001748,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7577272,100.5001748",
-      "source": "osm"
-    },
-    {
-      "nom": "C.H. 2",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7577519,100.5000585",
-      "lat": 13.7577519,
-      "lng": 100.5000585,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7577519,100.5000585",
-      "source": "osm"
-    },
-    {
-      "nom": "Excel Hotel Bangkok",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7539348,100.5026273",
-      "lat": 13.7539348,
-      "lng": 100.5026273,
-      "halalFriendly": false,
-      "bookingUrl": "https://excel-hotel.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "บ้านแม่แจ่ม",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7581827,100.4997369",
-      "lat": 13.7581827,
-      "lng": 100.4997369,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7581827,100.4997369",
-      "source": "osm"
-    },
-    {
-      "nom": "Green Teak House",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7539614,100.5001684",
-      "lat": 13.7539614,
-      "lng": 100.5001684,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.greenteakhouse.com",
-      "source": "osm"
-    },
-    {
-      "nom": "โรงแรมศิริพงษ์",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7534886,100.5025817",
-      "lat": 13.7534886,
-      "lng": 100.5025817,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7534886,100.5025817",
-      "source": "osm"
-    },
-    {
-      "nom": "โอลด์ แคปืตอล ไบค์ อินน์",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7570126,100.504711",
-      "lat": 13.7570126,
-      "lng": 100.504711,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7570126,100.504711",
-      "source": "osm"
-    },
-    {
-      "nom": "The Hidden Khaosan X3",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7585557,100.4997417",
-      "lat": 13.7585557,
-      "lng": 100.4997417,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7585557,100.4997417",
-      "source": "osm"
-    },
-    {
-      "nom": "Villa phra sumen",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.759038,100.5031726",
-      "lat": 13.759038,
-      "lng": 100.5031726,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.759038,100.5031726",
-      "source": "osm"
-    },
-    {
-      "nom": "โรงแรมไอยาธร",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7567674,100.5049222",
-      "lat": 13.7567674,
-      "lng": 100.5049222,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7567674,100.5049222",
-      "source": "osm"
-    },
-    {
-      "nom": "Nina Guest House",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7586907,100.499716",
-      "lat": 13.7586907,
-      "lng": 100.499716,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7586907,100.499716",
-      "source": "osm"
-    },
-    {
-      "nom": "Azure Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7576929,100.5047125",
-      "lat": 13.7576929,
-      "lng": 100.5047125,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7576929,100.5047125",
-      "source": "osm"
-    },
-    {
-      "nom": "New Central Guest House",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7587062,100.4995992",
-      "lat": 13.7587062,
-      "lng": 100.4995992,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7587062,100.4995992",
-      "source": "osm"
-    },
-    {
-      "nom": "At Home Guest House",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7586273,100.4993749",
-      "lat": 13.7586273,
-      "lng": 100.4993749,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7586273,100.4993749",
-      "source": "osm"
-    },
-    {
-      "nom": "Dio",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7580098,100.4988225",
-      "lat": 13.7580098,
-      "lng": 100.4988225,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7580098,100.4988225",
-      "source": "osm"
-    },
-    {
-      "nom": "Walk Inn",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7587386,100.499391",
-      "lat": 13.7587386,
-      "lng": 100.499391,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7587386,100.499391",
-      "source": "osm"
-    },
-    {
-      "nom": "7 Holder Guest House",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7580659,100.4986842",
-      "lat": 13.7580659,
-      "lng": 100.4986842,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7580659,100.4986842",
-      "source": "osm"
-    },
-    {
-      "nom": "Hanu Hostel Bangkok",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7563244,100.4981679",
-      "lat": 13.7563244,
-      "lng": 100.4981679,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7563244,100.4981679",
-      "source": "osm"
-    },
-    {
-      "nom": "โรงแรมเทพนิมิต",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7532825,100.4997537",
-      "lat": 13.7532825,
-      "lng": 100.4997537,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7532825,100.4997537",
-      "source": "osm"
-    },
-    {
-      "nom": "Honey Place guesthouse",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7592413,100.4996052",
-      "lat": 13.7592413,
-      "lng": 100.4996052,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7592413,100.4996052",
-      "source": "osm"
-    },
-    {
-      "nom": "luck-yimm",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7531493,100.4999007",
-      "lat": 13.7531493,
-      "lng": 100.4999007,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7531493,100.4999007",
-      "source": "osm"
-    },
-    {
-      "nom": "Baan Pun Thong",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.759308,100.4995013",
-      "lat": 13.759308,
-      "lng": 100.4995013,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.759308,100.4995013",
-      "source": "osm"
-    },
-    {
-      "nom": "U & D Guesthouse",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7532018,100.4995515",
-      "lat": 13.7532018,
-      "lng": 100.4995515,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7532018,100.4995515",
-      "source": "osm"
-    },
-    {
-      "nom": "3House",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.758804,100.4988686",
-      "lat": 13.758804,
-      "lng": 100.4988686,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.758804,100.4988686",
-      "source": "osm"
-    },
-    {
-      "nom": "Once Again Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.752815,100.5033751",
-      "lat": 13.752815,
-      "lng": 100.5033751,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.752815,100.5033751",
-      "source": "osm"
-    },
-    {
-      "nom": "Buddy Lodge",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7587413,100.4986355",
-      "lat": 13.7587413,
-      "lng": 100.4986355,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7587413,100.4986355",
-      "source": "osm"
-    },
-    {
-      "nom": "The Family",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7601131,100.5027895",
-      "lat": 13.7601131,
-      "lng": 100.5027895,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.facebook.com/thefamilybkk",
-      "source": "osm"
-    },
-    {
-      "nom": "Mahannop",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.753639,100.4987986",
-      "lat": 13.753639,
-      "lng": 100.4987986,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.753639,100.4987986",
-      "source": "osm"
-    },
-    {
-      "nom": "โรงแรมเดอะมัลเบอรี่",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.75866,100.4984101",
-      "lat": 13.75866,
-      "lng": 100.4984101,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.75866,100.4984101",
-      "source": "osm"
-    },
-    {
-      "nom": "Palace",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7561468,100.4975426",
-      "lat": 13.7561468,
-      "lng": 100.4975426,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7561468,100.4975426",
-      "source": "osm"
-    },
-    {
-      "nom": "Nacorn Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7604332,100.5015881",
-      "lat": 13.7604332,
-      "lng": 100.5015881,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7604332,100.5015881",
-      "source": "osm"
-    },
-    {
-      "nom": "The LOL Elephant Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.760451,100.5016991",
-      "lat": 13.760451,
-      "lng": 100.5016991,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.760451,100.5016991",
-      "source": "osm"
-    },
-    {
-      "nom": "Time Sabai 134 Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7604347,100.5023728",
-      "lat": 13.7604347,
-      "lng": 100.5023728,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7604347,100.5023728",
-      "source": "osm"
-    },
-    {
-      "nom": "Lamphu Tree House",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7604073,100.5025611",
-      "lat": 13.7604073,
-      "lng": 100.5025611,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7604073,100.5025611",
-      "source": "osm"
-    },
-    {
-      "nom": "The Cube Hostel Khaosan",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7604781,100.5015213",
-      "lat": 13.7604781,
-      "lng": 100.5015213,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7604781,100.5015213",
-      "source": "osm"
-    },
-    {
-      "nom": "Khaosan Park Resort",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7582856,100.4979623",
-      "lat": 13.7582856,
-      "lng": 100.4979623,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7582856,100.4979623",
-      "source": "osm"
-    },
-    {
-      "nom": "Khaosan lovers hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7605423,100.5018184",
-      "lat": 13.7605423,
-      "lng": 100.5018184,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7605423,100.5018184",
-      "source": "osm"
-    },
-    {
-      "nom": "ณ ตะนาว 1969",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7533593,100.49865",
-      "lat": 13.7533593,
-      "lng": 100.49865,
-      "halalFriendly": false,
-      "bookingUrl": "https://natanao1969.com",
-      "source": "osm"
-    },
-    {
-      "nom": "Siri Oriental Bangkok Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7545153,100.4977909",
-      "lat": 13.7545153,
-      "lng": 100.4977909,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7545153,100.4977909",
-      "source": "osm"
-    },
-    {
-      "nom": "double b hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7528378,100.4990847",
-      "lat": 13.7528378,
-      "lng": 100.4990847,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7528378,100.4990847",
-      "source": "osm"
-    },
-    {
-      "nom": "Pannee Guesthouse",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.759444,100.4986726",
-      "lat": 13.759444,
-      "lng": 100.4986726,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.759444,100.4986726",
-      "source": "osm"
-    },
-    {
-      "nom": "Sakul House",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7592196,100.4984041",
-      "lat": 13.7592196,
-      "lng": 100.4984041,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7592196,100.4984041",
-      "source": "osm"
-    },
-    {
-      "nom": "Nat",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7586904,100.4979415",
-      "lat": 13.7586904,
-      "lng": 100.4979415,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7586904,100.4979415",
-      "source": "osm"
-    },
-    {
-      "nom": "Marco Polo",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7588975,100.4980615",
-      "lat": 13.7588975,
-      "lng": 100.4980615,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7588975,100.4980615",
-      "source": "osm"
-    },
-    {
-      "nom": "หลบศึกโฮสเทล",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.760756,100.5022145",
-      "lat": 13.760756,
-      "lng": 100.5022145,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.booking.com/hotel/th/lobsuek-hostel.html?lang=xu",
-      "source": "osm"
-    },
-    {
-      "nom": "Chill out",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7596669,100.4986799",
-      "lat": 13.7596669,
-      "lng": 100.4986799,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7596669,100.4986799",
-      "source": "osm"
-    },
-    {
-      "nom": "บ้านนาวา",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7523739,100.4993984",
-      "lat": 13.7523739,
-      "lng": 100.4993984,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7523739,100.4993984",
-      "source": "osm"
-    },
-    {
-      "nom": "Bangkok Canalé Home",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.760879,100.5017653",
-      "lat": 13.760879,
-      "lng": 100.5017653,
-      "halalFriendly": false,
-      "bookingUrl": "https://bangkokcanalehomeatkhaosarn.thailandhotels.site/",
-      "source": "osm"
-    },
-    {
-      "nom": "ละมุนวิวิท",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7531951,100.4983059",
-      "lat": 13.7531951,
-      "lng": 100.4983059,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7531951,100.4983059",
-      "source": "osm"
-    },
-    {
-      "nom": "Four Sons Inn",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7595139,100.498409",
-      "lat": 13.7595139,
-      "lng": 100.498409,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7595139,100.498409",
-      "source": "osm"
-    },
-    {
-      "nom": "Chill out hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7597791,100.4986295",
-      "lat": 13.7597791,
-      "lng": 100.4986295,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7597791,100.4986295",
-      "source": "osm"
-    },
-    {
-      "nom": "โรงแรมสิริมิตร",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7535371,100.4979526",
-      "lat": 13.7535371,
-      "lng": 100.4979526,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7535371,100.4979526",
-      "source": "osm"
-    },
-    {
-      "nom": "เฌอรีย์",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7522279,100.5041829",
-      "lat": 13.7522279,
-      "lng": 100.5041829,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.cheriebangkok.com",
-      "source": "osm"
-    },
-    {
-      "nom": "Niras Bankoc Cultural Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7523565,100.5044639",
-      "lat": 13.7523565,
-      "lng": 100.5044639,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7523565,100.5044639",
-      "source": "osm"
-    },
-    {
-      "nom": "Tim Mansion",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7524548,100.5048001",
-      "lat": 13.7524548,
-      "lng": 100.5048001,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.timmansionbkk.com",
-      "source": "osm"
-    },
-    {
-      "nom": "Baan Nampetch Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7611311,100.5016091",
-      "lat": 13.7611311,
-      "lng": 100.5016091,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7611311,100.5016091",
-      "source": "osm"
-    },
-    {
-      "nom": "Au Bon Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7547434,100.4970553",
-      "lat": 13.7547434,
-      "lng": 100.4970553,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7547434,100.4970553",
-      "source": "osm"
-    },
-    {
-      "nom": "Charoendee Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7589958,100.4976222",
-      "lat": 13.7589958,
-      "lng": 100.4976222,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7589958,100.4976222",
-      "source": "osm"
-    },
-    {
-      "nom": "Khao San Social Capsule",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7601898,100.4986884",
-      "lat": 13.7601898,
-      "lng": 100.4986884,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7601898,100.4986884",
-      "source": "osm"
-    },
-    {
-      "nom": "Rambuttri 154",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7596819,100.498078",
-      "lat": 13.7596819,
-      "lng": 100.498078,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7596819,100.498078",
-      "source": "osm"
-    },
-    {
-      "nom": "Center Point Hotel",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7590547,100.4975596",
-      "lat": 13.7590547,
-      "lng": 100.4975596,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7590547,100.4975596",
-      "source": "osm"
-    },
-    {
-      "nom": "AT-MOSPHERE rooftop cafe",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7601582,100.4985871",
-      "lat": 13.7601582,
-      "lng": 100.4985871,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7601582,100.4985871",
-      "source": "osm"
-    },
-    {
-      "nom": "Orchid",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7595638,100.4979498",
-      "lat": 13.7595638,
-      "lng": 100.4979498,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7595638,100.4979498",
-      "source": "osm"
-    },
-    {
-      "nom": "Sleepy Dealer hostel and bar",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7609812,100.5035404",
-      "lat": 13.7609812,
-      "lng": 100.5035404,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7609812,100.5035404",
-      "source": "osm"
-    },
-    {
-      "nom": "Star Dome Inn",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7593521,100.497627",
-      "lat": 13.7593521,
-      "lng": 100.497627,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7593521,100.497627",
-      "source": "osm"
-    },
-    {
-      "nom": "บ้านบวร",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7607337,100.4992285",
-      "lat": 13.7607337,
-      "lng": 100.4992285,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7607337,100.4992285",
-      "source": "osm"
-    },
-    {
-      "nom": "สุเนต์ตา",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7606464,100.4990644",
-      "lat": 13.7606464,
-      "lng": 100.4990644,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7606464,100.4990644",
-      "source": "osm"
-    },
-    {
-      "nom": "Chern hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7513709,100.5032158",
-      "lat": 13.7513709,
-      "lng": 100.5032158,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7513709,100.5032158",
-      "source": "osm"
-    },
-    {
-      "nom": "SUSU Khaosan Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7605511,100.4988633",
-      "lat": 13.7605511,
-      "lng": 100.4988633,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7605511,100.4988633",
-      "source": "osm"
-    },
-    {
-      "nom": "Bright Minitel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7533509,100.4974736",
-      "lat": 13.7533509,
-      "lng": 100.4974736,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7533509,100.4974736",
-      "source": "osm"
-    },
-    {
-      "nom": "อินทนิล",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7601671,100.4983123",
-      "lat": 13.7601671,
-      "lng": 100.4983123,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7601671,100.4983123",
-      "source": "osm"
-    },
-    {
-      "nom": "The Secret Service",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7602535,100.4984146",
-      "lat": 13.7602535,
-      "lng": 100.4984146,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7602535,100.4984146",
-      "source": "osm"
-    },
-    {
-      "nom": "Bed Station Hostel Khaosan",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7599037,100.4980194",
-      "lat": 13.7599037,
-      "lng": 100.4980194,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7599037,100.4980194",
-      "source": "osm"
-    },
-    {
-      "nom": "Thai Cosy House",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7603092,100.4984381",
-      "lat": 13.7603092,
-      "lng": 100.4984381,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7603092,100.4984381",
-      "source": "osm"
-    },
-    {
-      "nom": "Ruen Mak Guesthouse",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7605866,100.4987798",
-      "lat": 13.7605866,
-      "lng": 100.4987798,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7605866,100.4987798",
-      "source": "osm"
-    },
-    {
-      "nom": "bed box",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.760661,100.498886",
-      "lat": 13.760661,
-      "lng": 100.498886,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.760661,100.498886",
-      "source": "osm"
-    },
-    {
-      "nom": "Mixx hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7595394,100.4976072",
-      "lat": 13.7595394,
-      "lng": 100.4976072,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7595394,100.4976072",
-      "source": "osm"
-    },
-    {
-      "nom": "Sun house x Santo house",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7534594,100.4972602",
-      "lat": 13.7534594,
-      "lng": 100.4972602,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7534594,100.4972602",
-      "source": "osm"
-    },
-    {
-      "nom": "Siri Heritage Bangkok Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7552251,100.4964954",
-      "lat": 13.7552251,
-      "lng": 100.4964954,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7552251,100.4964954",
-      "source": "osm"
-    },
-    {
-      "nom": "Lilit Bang Lumphu Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.761526,100.5011485",
-      "lat": 13.761526,
-      "lng": 100.5011485,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.761526,100.5011485",
-      "source": "osm"
-    },
-    {
-      "nom": "สิริ พอชเทล",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7531133,100.4974749",
-      "lat": 13.7531133,
-      "lng": 100.4974749,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7531133,100.4974749",
-      "source": "osm"
-    },
-    {
-      "nom": "Thai Cozy House",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7603473,100.4983056",
-      "lat": 13.7603473,
-      "lng": 100.4983056,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.thaicozyhousekhaosan.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Sawasdee Bangkok Inn",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7584794,100.4968187",
-      "lat": 13.7584794,
-      "lng": 100.4968187,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7584794,100.4968187",
-      "source": "osm"
-    },
-    {
-      "nom": "Khaosan Palace",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.759272,100.4972678",
-      "lat": 13.759272,
-      "lng": 100.4972678,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.759272,100.4972678",
-      "source": "osm"
-    },
-    {
-      "nom": "The Mixx Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7595781,100.4974899",
-      "lat": 13.7595781,
-      "lng": 100.4974899,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7595781,100.4974899",
-      "source": "osm"
-    },
-    {
-      "nom": "ป้าแพร่ง",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.753103,100.4973837",
-      "lat": 13.753103,
-      "lng": 100.4973837,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.753103,100.4973837",
-      "source": "osm"
-    },
-    {
-      "nom": "Tanee place",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7602891,100.4981091",
-      "lat": 13.7602891,
-      "lng": 100.4981091,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7602891,100.4981091",
-      "source": "osm"
-    },
-    {
-      "nom": "Star Amir",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7612429,100.5039456",
-      "lat": 13.7612429,
-      "lng": 100.5039456,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7612429,100.5039456",
-      "source": "osm"
-    },
-    {
-      "nom": "พระนครพอชเทล",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.753038,100.497302",
-      "lat": 13.753038,
-      "lng": 100.497302,
-      "halalFriendly": false,
-      "bookingUrl": "https://phranakhonposhtel.com",
-      "source": "osm"
-    },
-    {
-      "nom": "Tinidee Trendy",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7599116,100.4975754",
-      "lat": 13.7599116,
-      "lng": 100.4975754,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.tinideekhaosan.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Bed Station Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=13.7604201,100.4980904",
-      "lat": 13.7604201,
-      "lng": 100.4980904,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=13.7604201,100.4980904",
-      "source": "osm"
-    }
-  ],
-  "activites": [
-    {
-      "nom": "Grand Palais & Wat Phra Kaew",
-      "categorie": "Histoire & Culture",
-      "description": "Palais royal et temple du Bouddha d'Émeraude",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Grand+Palais+%26+Wat+Phra+Kaew+Bangkok",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+Palais+%26+Wat+Phra+Kaew+Bangkok",
-      "id": "a1",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Marché de Chatuchak",
-      "categorie": "Shopping & Souks",
-      "description": "L'un des plus grands marchés week-end du monde",
-      "duree": "3h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=March%C3%A9+de+Chatuchak+Bangkok",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=March%C3%A9+de+Chatuchak+Bangkok",
-      "id": "a2",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Mosquée Haroon",
-      "categorie": "Religieux & Spirituel",
-      "description": "Mosquée historique du vieux quartier musulman de Bangrak",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Haroon+Bangkok",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Haroon+Bangkok",
-      "id": "a3",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Quartier Ban Krua",
-      "categorie": "Histoire & Culture",
-      "description": "Plus ancienne communauté musulmane cham de Bangkok",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+Ban+Krua+Bangkok",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+Ban+Krua+Bangkok",
-      "id": "a4",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Wat Arun",
-      "categorie": "Histoire & Culture",
-      "description": "Temple de l'Aube au bord du fleuve",
-      "duree": "1-2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Wat+Arun+Bangkok",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Wat+Arun+Bangkok",
-      "id": "a5",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "lat": 13.7438976,
-      "lng": 100.4885137,
-      "geocoded": true
-    },
-    {
-      "nom": "Marché flottant de Taling Chan",
-      "categorie": "Nature & Aventure",
-      "description": "Marché sur l'eau, street food halal",
-      "duree": "Demi-journée",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=March%C3%A9+flottant+de+Taling+Chan+Bangkok",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=March%C3%A9+flottant+de+Taling+Chan+Bangkok",
-      "id": "a6",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Jim Thompson House",
-      "categorie": "Art & Musées",
-      "description": "Maison-musée de la soie thaïe",
-      "duree": "1-2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Jim+Thompson+House+Bangkok",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Jim+Thompson+House+Bangkok",
-      "id": "a7",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "lat": 13.7492268,
-      "lng": 100.5282811,
-      "geocoded": true
-    },
-    {
-      "nom": "Food tour halal Bangrak",
-      "categorie": "Gastronomie",
-      "description": "Découverte des adresses halal du vieux Bangkok",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+Bangrak+Bangkok",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+Bangrak+Bangkok",
-      "id": "a8",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Vieille ville de Bangkok",
-      "categorie": "Histoire & Culture",
-      "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Bangkok+Bangkok",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Bangkok+Bangkok",
-      "id": "a9",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Grand souk de Bangkok",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Bangkok+Bangkok",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Bangkok+Bangkok",
-      "id": "a10",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Quartier historique de Bangkok",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Bangkok+Bangkok",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Bangkok+Bangkok",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a11"
-    },
-    {
-      "nom": "Grand marché central de Bangkok",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Bangkok+Bangkok",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Bangkok+Bangkok",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a12"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Bangkok",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Bangkok+Bangkok",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Bangkok+Bangkok",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a13"
-    },
-    {
-      "nom": "Musée de la ville de Bangkok",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Bangkok+Bangkok",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Bangkok+Bangkok",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a14"
-    },
-    {
-      "nom": "Food tour halal de Bangkok",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Bangkok+Bangkok",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Bangkok+Bangkok",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a15"
-    },
-    {
-      "nom": "หลักกิโลเมตรที่ 0",
-      "lat": 13.7572573,
-      "lng": 100.5021615,
-      "coordonnees": {
-        "lat": 13.7572573,
-        "lng": 100.5021615
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=13.7572573,100.5021615",
-      "source": "osm"
-    },
-    {
-      "nom": "อนุสรณ์สถาน 14 ตุลา 16",
-      "lat": 13.7568137,
-      "lng": 100.4991195,
-      "coordonnees": {
-        "lat": 13.7568137,
-        "lng": 100.4991195
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=13.7568137,100.4991195",
-      "source": "osm"
-    },
-    {
-      "nom": "พระบรมราชานุสาวรีย์ รัชกาลที่ 3",
-      "lat": 13.7553773,
-      "lng": 100.5049616,
-      "coordonnees": {
-        "lat": 13.7553773,
-        "lng": 100.5049616
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=13.7553773,100.5049616",
-      "source": "osm"
-    },
-    {
-      "nom": "โอมมานีปะมีอง",
-      "lat": 13.7542996,
-      "lng": 100.4990031,
-      "coordonnees": {
-        "lat": 13.7542996,
-        "lng": 100.4990031
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=13.7542996,100.4990031",
-      "source": "osm"
-    },
-    {
-      "nom": "ซุ้มเฉลิมพระเกียรติพระบาทสมเด็จพระวชิรเกล้าเจ้าอยู่หัว",
-      "lat": 13.7574045,
-      "lng": 100.4983625,
-      "coordonnees": {
-        "lat": 13.7574045,
-        "lng": 100.4983625
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=13.7574045,100.4983625",
-      "source": "osm"
-    },
-    {
-      "nom": "Carrefour",
-      "lat": 13.7566058,
-      "lng": 100.5061827,
-      "coordonnees": {
-        "lat": 13.7566058,
-        "lng": 100.5061827
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=13.7566058,100.5061827",
-      "source": "osm"
-    },
-    {
-      "nom": "ผ่านฟ้าลีลาศ",
-      "lat": 13.7555116,
-      "lng": 100.506445,
-      "coordonnees": {
-        "lat": 13.7555116,
-        "lng": 100.506445
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=13.7555116,100.506445",
-      "source": "osm"
-    },
-    {
-      "nom": "จอยแมน แกลลอรี่",
-      "lat": 13.7517945,
-      "lng": 100.5045967,
-      "coordonnees": {
-        "lat": 13.7517945,
-        "lng": 100.5045967
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=13.7517945,100.5045967",
-      "source": "osm"
-    },
-    {
-      "nom": "The Golden Mount",
-      "lat": 13.7535037,
-      "lng": 100.506754,
-      "coordonnees": {
-        "lat": 13.7535037,
-        "lng": 100.506754
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=13.7535037,100.506754",
-      "source": "osm"
-    },
-    {
-      "nom": "Basket shop",
-      "lat": 13.7507571,
-      "lng": 100.5040746,
-      "coordonnees": {
-        "lat": 13.7507571,
-        "lng": 100.5040746
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=13.7507571,100.5040746",
-      "source": "osm"
-    },
-    {
-      "nom": "Eak tattoo",
-      "lat": 13.760277,
-      "lng": 100.4970434,
-      "coordonnees": {
-        "lat": 13.760277,
-        "lng": 100.4970434
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=13.760277,100.4970434",
-      "source": "osm"
-    },
-    {
-      "nom": "ระฆัง สน.ชนะสงคราม",
-      "lat": 13.7597111,
-      "lng": 100.4958064,
-      "coordonnees": {
-        "lat": 13.7597111,
-        "lng": 100.4958064
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=13.7597111,100.4958064",
-      "source": "osm"
-    },
-    {
-      "nom": "พระแม่ธรณีบีบมวยผม",
-      "lat": 13.7565665,
-      "lng": 100.4947914,
-      "coordonnees": {
-        "lat": 13.7565665,
-        "lng": 100.4947914
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=13.7565665,100.4947914",
-      "source": "osm"
-    },
-    {
-      "nom": "อนุเสาวรีย์พระเจ้าบรมวงศ์เธอกรมหลวงราชบุรีดิเรกฤทธิ์",
-      "lat": 13.7555346,
-      "lng": 100.4948164,
-      "coordonnees": {
-        "lat": 13.7555346,
-        "lng": 100.4948164
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=13.7555346,100.4948164",
-      "source": "osm"
-    },
-    {
-      "nom": "Precious Plastic Bangkok",
-      "lat": 13.7573935,
-      "lng": 100.5090495,
-      "coordonnees": {
-        "lat": 13.7573935,
-        "lng": 100.5090495
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=13.7573935,100.5090495",
-      "source": "osm"
-    },
-    {
-      "nom": "พระพุทธนรสีห์ตรีโลกเชฏฐ์",
-      "lat": 13.7605389,
-      "lng": 100.4954523,
-      "coordonnees": {
-        "lat": 13.7605389,
-        "lng": 100.4954523
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=13.7605389,100.4954523",
-      "source": "osm"
-    },
-    {
-      "nom": "ช้าง",
-      "lat": 13.7484422,
-      "lng": 100.5024397,
-      "coordonnees": {
-        "lat": 13.7484422,
-        "lng": 100.5024397
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=13.7484422,100.5024397",
-      "source": "osm"
-    },
-    {
-      "nom": "พระบรมรูปพระบาทสมเด็จพระจุลจอมเกล้าเจ้าอยู่หัว",
-      "lat": 13.7493647,
-      "lng": 100.4975557,
-      "coordonnees": {
-        "lat": 13.7493647,
-        "lng": 100.4975557
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=13.7493647,100.4975557",
-      "source": "osm"
-    },
-    {
-      "nom": "อนุสาวรีย์หมู",
-      "lat": 13.7498661,
-      "lng": 100.49621,
-      "coordonnees": {
-        "lat": 13.7498661,
-        "lng": 100.49621
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=13.7498661,100.49621",
-      "source": "osm"
-    },
-    {
-      "nom": "อนุสาวรีย์ทหารอาสา สงครามโลกครั้งที่ 1",
-      "lat": 13.758211,
-      "lng": 100.4932545,
-      "coordonnees": {
-        "lat": 13.758211,
-        "lng": 100.4932545
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=13.758211,100.4932545",
-      "source": "osm"
-    },
-    {
-      "nom": "พระบรมราชานุสาวรีย์ พระบาทสมเด็จพระจอมเกล้าเจ้าอยู่หัว",
-      "lat": 13.7503374,
-      "lng": 100.4942896,
-      "coordonnees": {
-        "lat": 13.7503374,
-        "lng": 100.4942896
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=13.7503374,100.4942896",
-      "source": "osm"
-    },
-    {
-      "nom": "อัศกรรณมารา",
-      "lat": 13.7517086,
-      "lng": 100.4931332,
-      "coordonnees": {
-        "lat": 13.7517086,
-        "lng": 100.4931332
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=13.7517086,100.4931332",
-      "source": "osm"
-    },
-    {
-      "nom": "พระบวรราชานุสาวรีย์ สมเด็จพระบวรราชเจ้า มหาสุรสิงหนาท",
-      "lat": 13.7552762,
-      "lng": 100.4918387,
-      "coordonnees": {
-        "lat": 13.7552762,
-        "lng": 100.4918387
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=13.7552762,100.4918387",
-      "source": "osm"
-    },
-    {
-      "nom": "หอศิลป์ ณ บ้านเจ้าพระยา",
-      "lat": 13.7633704,
-      "lng": 100.4948587,
-      "coordonnees": {
-        "lat": 13.7633704,
-        "lng": 100.4948587
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=13.7633704,100.4948587",
-      "source": "osm"
-    },
-    {
-      "nom": "อนุสาวรีย์สมเด็จพระนางเจ้าสุนันทากุมารีรัตน์",
-      "lat": 13.7484049,
-      "lng": 100.4953406,
-      "coordonnees": {
-        "lat": 13.7484049,
-        "lng": 100.4953406
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=13.7484049,100.4953406",
-      "source": "osm"
-    },
-    {
-      "nom": "street art",
-      "lat": 13.7657018,
-      "lng": 100.4976573,
-      "coordonnees": {
-        "lat": 13.7657018,
-        "lng": 100.4976573
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=13.7657018,100.4976573",
-      "source": "osm"
-    },
-    {
-      "nom": "Khlong Ong Ang Canal and Walking Street",
-      "lat": 13.7461622,
-      "lng": 100.5037126,
-      "coordonnees": {
-        "lat": 13.7461622,
-        "lng": 100.5037126
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=13.7461622,100.5037126",
-      "source": "osm"
-    },
-    {
-      "nom": "สหัสเดชะ",
-      "lat": 13.7517991,
-      "lng": 100.4921163,
-      "coordonnees": {
-        "lat": 13.7517991,
-        "lng": 100.4921163
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=13.7517991,100.4921163",
-      "source": "osm"
-    },
-    {
-      "nom": "สะพานมัฆวานรังสรรค์",
-      "lat": 13.7636617,
-      "lng": 100.5094075,
-      "coordonnees": {
-        "lat": 13.7636617,
-        "lng": 100.5094075
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=13.7636617,100.5094075",
-      "source": "osm"
-    },
-    {
-      "nom": "มังกรกัณฐ์",
-      "lat": 13.7508931,
-      "lng": 100.4922733,
-      "coordonnees": {
-        "lat": 13.7508931,
-        "lng": 100.4922733
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=13.7508931,100.4922733",
-      "source": "osm"
-    },
-    {
-      "nom": "พระวิหารหลวง หลวงพ่อหิน",
-      "lat": 13.755188,
-      "lng": 100.490777,
-      "coordonnees": {
-        "lat": 13.755188,
-        "lng": 100.490777
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=13.755188,100.490777",
-      "source": "osm"
-    },
-    {
-      "nom": "พระพุทธศรีอริยเมตไตรย",
-      "lat": 13.7672729,
-      "lng": 100.5030209,
-      "coordonnees": {
-        "lat": 13.7672729,
-        "lng": 100.5030209
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=13.7672729,100.5030209",
-      "source": "osm"
-    },
-    {
-      "nom": "หอศิลป์คณะจิตรกรรมประติมากรรมและภาพพิมพ์",
-      "lat": 13.753234,
-      "lng": 100.4908389,
-      "coordonnees": {
-        "lat": 13.753234,
-        "lng": 100.4908389
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=13.753234,100.4908389",
-      "source": "osm"
-    },
-    {
-      "nom": "ประตูวิเสทชัยศรี (ทางเข้าหลัก)",
-      "lat": 13.7522676,
-      "lng": 100.4911727,
-      "coordonnees": {
-        "lat": 13.7522676,
-        "lng": 100.4911727
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=13.7522676,100.4911727",
-      "source": "osm"
-    },
-    {
-      "nom": "Legacy art gallery",
-      "lat": 13.7452169,
-      "lng": 100.5032828,
-      "coordonnees": {
-        "lat": 13.7452169,
-        "lng": 100.5032828
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=13.7452169,100.5032828",
-      "source": "osm"
-    },
-    {
-      "nom": "อนุสาวรีย์ปรีดี พนมยงค์",
-      "lat": 13.7575028,
-      "lng": 100.4896414,
-      "coordonnees": {
-        "lat": 13.7575028,
-        "lng": 100.4896414
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=13.7575028,100.4896414",
-      "source": "osm"
-    },
-    {
-      "nom": "พิพิธภัณฑ์ธนาคารแห่งประเทศไทย",
-      "lat": 13.7679769,
-      "lng": 100.4982932,
-      "coordonnees": {
-        "lat": 13.7679769,
-        "lng": 100.4982932
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=13.7679769,100.4982932",
-      "source": "osm"
-    },
-    {
-      "nom": "็ต้นไม้รูปหัวใจ",
-      "lat": 13.7527033,
-      "lng": 100.4898172,
-      "coordonnees": {
-        "lat": 13.7527033,
-        "lng": 100.4898172
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=13.7527033,100.4898172",
-      "source": "osm"
-    },
-    {
-      "nom": "พิพิธภัณฑ์ธนาคารแห่งประเทศไทย",
-      "lat": 13.7682842,
-      "lng": 100.4995365,
-      "coordonnees": {
-        "lat": 13.7682842,
-        "lng": 100.4995365
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=13.7682842,100.4995365",
-      "source": "osm"
-    },
-    {
-      "nom": "อนุสาวรีย์สมเด็จเจ้าฟ้าจุฑาธุชธราดิลก",
-      "lat": 13.7444249,
-      "lng": 100.4989578,
-      "coordonnees": {
-        "lat": 13.7444249,
-        "lng": 100.4989578
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=13.7444249,100.4989578",
-      "source": "osm"
-    },
-    {
-      "nom": "Marché à la torche",
-      "lat": 13.7468313,
-      "lng": 100.5110795,
-      "coordonnees": {
-        "lat": 13.7468313,
-        "lng": 100.5110795
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=13.7468313,100.5110795",
-      "source": "osm"
-    },
-    {
-      "nom": "ตำหนักพระองค์เจ้าเฉิดโฉม",
-      "lat": 13.7480729,
-      "lng": 100.4909065,
-      "coordonnees": {
-        "lat": 13.7480729,
-        "lng": 100.4909065
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=13.7480729,100.4909065",
-      "source": "osm"
-    },
-    {
-      "nom": "พระบรมราชานุสาวรีย์พระบาทสมเด็จพระเจ้าอยู่หัวอานันทมหิดล",
-      "lat": 13.7683156,
-      "lng": 100.4949808,
-      "coordonnees": {
-        "lat": 13.7683156,
-        "lng": 100.4949808
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=13.7683156,100.4949808",
-      "source": "osm"
-    },
-    {
-      "nom": "พระพุทธไสยาสน์;วัดโพธิ์",
-      "lat": 13.746506,
-      "lng": 100.4916817,
-      "coordonnees": {
-        "lat": 13.746506,
-        "lng": 100.4916817
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=13.746506,100.4916817",
-      "source": "osm"
-    },
-    {
-      "nom": "Jesada Technik",
-      "lat": 13.7642056,
-      "lng": 100.4899152,
-      "coordonnees": {
-        "lat": 13.7642056,
-        "lng": 100.4899152
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=13.7642056,100.4899152",
-      "source": "osm"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "nom": "มัสยิดต้นสน",
-      "lat": 13.7400456,
-      "lng": 100.4886526,
-      "coordonnees": {
-        "lat": 13.7400456,
-        "lng": 100.4886526
-      },
-      "mapsUrl": "https://maps.google.com/?q=13.7400456,100.4886526",
-      "source": "osm"
-    },
-    {
-      "nom": "มัสยิดดารุลฟะละฮ์",
-      "lat": 13.7501142,
-      "lng": 100.5281757,
-      "coordonnees": {
-        "lat": 13.7501142,
-        "lng": 100.5281757
-      },
-      "adresse": "ซอยเพชรบุรี 7",
-      "mapsUrl": "https://maps.google.com/?q=13.7501142,100.5281757",
-      "source": "osm"
-    },
-    {
-      "nom": "มัสยิดนูรุ้ลมู่บีน",
-      "lat": 13.7304087,
-      "lng": 100.4910262,
-      "coordonnees": {
-        "lat": 13.7304087,
-        "lng": 100.4910262
-      },
-      "mapsUrl": "https://maps.google.com/?q=13.7304087,100.4910262",
-      "source": "osm"
-    },
-    {
-      "nom": "มัสยิดดารุ้ลอาบิดีน",
-      "lat": 13.71007,
-      "lng": 100.5117984,
-      "coordonnees": {
-        "lat": 13.71007,
-        "lng": 100.5117984
-      },
-      "mapsUrl": "https://maps.google.com/?q=13.71007,100.5117984",
-      "source": "osm"
-    },
-    {
-      "nom": "มัสยิดนูรู้ลฮิดาย่าติ้ล",
-      "lat": 13.7126923,
-      "lng": 100.573804,
-      "coordonnees": {
-        "lat": 13.7126923,
-        "lng": 100.573804
-      },
-      "mapsUrl": "https://maps.google.com/?q=13.7126923,100.573804",
-      "source": "osm"
-    },
-    {
-      "nom": "mosquée",
-      "lat": 13.7645594,
-      "lng": 100.6465116,
-      "coordonnees": {
-        "lat": 13.7645594,
-        "lng": 100.6465116
-      },
-      "mapsUrl": "https://maps.google.com/?q=13.7645594,100.6465116",
-      "source": "osm"
-    }
-  ],
-  "tags": [
-    "street-food",
-    "exotique",
-    "budget",
-    "temples",
-    "communaute-musulmane",
-    "marches"
-  ],
-  "selectionsPremium": {
-    "mieuxNotes": [
-      "Bangkok Muslim Food",
-      "Korea House Bangkok",
-      "Yoshinoya Thailand",
-      "KFC Thailand",
-      "McDonald's Thailand"
-    ],
-    "meilleurRapportQualitePrix": [
-      "Shoshana Restaurant",
-      "Ruen Mallika",
-      "CRU Champagne Bar Bangkok",
-      "Muslim Restaurant Silom",
-      "Siam Halal"
-    ],
-    "incontournables": [
-      "Ton Son Road Halal",
-      "McDonald's Thailand",
-      "Madras New Woodlands",
-      "KFC Thailand",
-      "Shoshana Restaurant"
-    ],
-    "pepitesCachees": [
-      "Pad See Ew Muslim"
-    ],
-    "idealFamille": [
-      "Shoshana Restaurant",
-      "Gianni Ristorante",
-      "Ruen Mallika",
-      "D'sens Restaurant",
-      "Le Normandie"
-    ],
-    "gastronomique": [
-      "Naj",
-      "Sirocco"
-    ],
-    "ouvertNuit": [
-      "Gianni Ristorante",
-      "Ruen Mallika",
-      "Krua Aroy"
-    ],
-    "vueExceptionnelle": [
-      "Pak Nam Seafood"
-    ]
+  {
+   "nom": "Herbs & Spices",
+   "lat": 13.7592732,
+   "lng": 100.4951886,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7592732,100.4951886",
+   "source": "osm"
   },
-  "description_en": "Bangkok, in Thailand, is a halal-friendly destination with a Halal Trust Score of 3.8/5. Muslim travelers will find 102 halal restaurants listed, 200 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
-  "metaDescription_en": "Halal guide to Bangkok: 102 halal restaurants listed, 200 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 3.8/5.",
-  "nom_en": "Bangkok",
-  "boucheries": [],
-  "infos_pratiques_en": {
-    "langue": "Thai",
-    "monnaie": "Thai baht (THB)",
-    "meilleure_periode": "November to February",
-    "appel_priere": "5 times a day",
-    "nourriture_halal": "Largement disponible",
-    "alcool": "Available"
+  {
+   "nom": "Maharaja Kitchen",
+   "lat": 13.7627875,
+   "lng": 100.498783,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7627875,100.498783",
+   "source": "osm"
   },
-  "sectionMangerHalal": "Deux réflexes à Bangkok : le « Soi Arab » (Sukhumvit Soi 3, quartier Nana) pour les cuisines moyen-orientales et pakistanaises tard le soir, et les ruelles de la mosquée Haroon (Bang Rak) pour la cuisine thaïe-musulmane familiale. Repérez le losange vert du label CICOT jusque dans les 7-Eleven, et goûtez le massaman — plat musulman d'origine.",
-  "sectionMangerHalal_en": "Two reflexes in Bangkok: the “Soi Arab” (Sukhumvit Soi 3, Nana) for Middle-Eastern and Pakistani food late into the night, and the lanes around Haroon Mosque (Bang Rak) for family-run Thai-Muslim cooking. Look for the green CICOT halal diamond even in 7-Elevens, and try massaman — a Muslim-origin dish.",
-  "sectionOuPrier": "Bangkok compte plus de 160 mosquées ; celles de Bang Rak et du quartier Nana sont les plus accessibles aux voyageurs. L'aéroport Suvarnabhumi dispose de salles de prière dans plusieurs zones.",
-  "sectionOuPrier_en": "Bangkok has over 160 mosques; those in Bang Rak and the Nana area are the most traveler-friendly. Suvarnabhumi airport offers prayer rooms in several zones."
+  {
+   "nom": "Himalayan Coffee",
+   "lat": 13.7635944,
+   "lng": 100.5002214,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7635944,100.5002214",
+   "source": "osm"
+  },
+  {
+   "nom": "Royal Tandoor",
+   "lat": 13.7602979,
+   "lng": 100.493709,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7602979,100.493709",
+   "source": "osm"
+  },
+  {
+   "nom": "Punjab Sweets",
+   "lat": 13.7440442,
+   "lng": 100.5009228,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7440442,100.5009228",
+   "source": "osm"
+  },
+  {
+   "nom": "Mama Restaurant",
+   "lat": 13.7431922,
+   "lng": 100.5018886,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7431922,100.5018886",
+   "source": "osm"
+  },
+  {
+   "nom": "ร้านญาบิร",
+   "lat": 13.751031,
+   "lng": 100.5250683,
+   "type": "Restaurant",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=13.751031,100.5250683",
+   "source": "osm"
+  },
+  {
+   "nom": "Vegan India",
+   "lat": 13.746828,
+   "lng": 100.528544,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.746828,100.528544",
+   "source": "osm"
+  },
+  {
+   "nom": "Roti street stall",
+   "lat": 13.7539331,
+   "lng": 100.5304155,
+   "type": "thai",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=13.7539331,100.5304155",
+   "source": "osm"
+  },
+  {
+   "nom": "ซัลลิม",
+   "lat": 13.7278212,
+   "lng": 100.5154904,
+   "type": "Restaurant",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=13.7278212,100.5154904",
+   "source": "osm"
+  },
+  {
+   "nom": "Saravana Bhavan",
+   "lat": 13.7280837,
+   "lng": 100.517818,
+   "type": "indian, south indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7280837,100.517818",
+   "source": "osm"
+  },
+  {
+   "nom": "กะบับไก่ชีสพ่นไฟรังสิต",
+   "lat": 13.7351428,
+   "lng": 100.5275072,
+   "type": "kebab",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7351428,100.5275072",
+   "source": "osm"
+  },
+  {
+   "nom": "ชิรี กาเนสซ์",
+   "lat": 13.7278998,
+   "lng": 100.5207661,
+   "type": "indian, thai",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7278998,100.5207661",
+   "source": "osm"
+  },
+  {
+   "nom": "TastyFood @ Bangkok",
+   "lat": 13.7538025,
+   "lng": 100.5370364,
+   "type": "indian, thai",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7538025,100.5370364",
+   "source": "osm"
+  },
+  {
+   "nom": "Indian & halal food",
+   "lat": 13.7249139,
+   "lng": 100.5167297,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7249139,100.5167297",
+   "source": "osm"
+  },
+  {
+   "nom": "Guptaji Ki Kitchen",
+   "lat": 13.7539415,
+   "lng": 100.5393892,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7539415,100.5393892",
+   "source": "osm"
+  },
+  {
+   "nom": "หมกแพะพิเศษ",
+   "lat": 13.7223501,
+   "lng": 100.5164766,
+   "type": "Restaurant",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=13.7223501,100.5164766",
+   "source": "osm"
+  },
+  {
+   "nom": "Saman",
+   "lat": 13.7224655,
+   "lng": 100.5182674,
+   "type": "turkish",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7224655,100.5182674",
+   "source": "osm"
+  },
+  {
+   "nom": "Śrī Bhavan",
+   "lat": 13.7541247,
+   "lng": 100.5406148,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7541247,100.5406148",
+   "source": "osm"
+  },
+  {
+   "nom": "Hajiali",
+   "lat": 13.7231113,
+   "lng": 100.5207299,
+   "type": "indian, dessert, falooda",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7231113,100.5207299",
+   "source": "osm"
+  },
+  {
+   "nom": "Homemade Indian Food",
+   "lat": 13.7187194,
+   "lng": 100.5078625,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7187194,100.5078625",
+   "source": "osm"
+  },
+  {
+   "nom": "Sutra - Indian Restaurant",
+   "lat": 13.7274326,
+   "lng": 100.5278457,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7274326,100.5278457",
+   "source": "osm"
+  },
+  {
+   "nom": "Everything Halal Restaurant",
+   "lat": 13.7525575,
+   "lng": 100.5412604,
+   "type": "indian, pakistani, burmese",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=13.7525575,100.5412604",
+   "source": "osm"
+  },
+  {
+   "nom": "Taste of Persia",
+   "lat": 13.7236127,
+   "lng": 100.5232349,
+   "type": "persian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7236127,100.5232349",
+   "source": "osm"
+  },
+  {
+   "nom": "Tamil Nadu - best Indian food in Bangkok",
+   "lat": 13.7242296,
+   "lng": 100.5250698,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7242296,100.5250698",
+   "source": "osm"
+  },
+  {
+   "nom": "Manel Lankan",
+   "lat": 13.7527531,
+   "lng": 100.5421533,
+   "type": "sri lankan, indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7527531,100.5421533",
+   "source": "osm"
+  },
+  {
+   "nom": "the stay cafe",
+   "lat": 13.7592321,
+   "lng": 100.542307,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7592321,100.542307",
+   "source": "osm"
+  },
+  {
+   "nom": "Suananda",
+   "lat": 13.723079,
+   "lng": 100.5239598,
+   "type": "thai, indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.723079,100.5239598",
+   "source": "osm"
+  },
+  {
+   "nom": "Beirut Restaurant",
+   "lat": 13.7283134,
+   "lng": 100.533202,
+   "type": "lebanese",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7283134,100.533202",
+   "source": "osm"
+  },
+  {
+   "nom": "princess terrace",
+   "lat": 13.7153705,
+   "lng": 100.5090884,
+   "type": "thai, indian, japanese",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7153705,100.5090884",
+   "source": "osm"
+  },
+  {
+   "nom": "Indian express",
+   "lat": 13.7526551,
+   "lng": 100.5458569,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7526551,100.5458569",
+   "source": "osm"
+  },
+  {
+   "nom": "Ikfeef Shabu",
+   "lat": 13.8024992,
+   "lng": 100.511898,
+   "type": "Restaurant",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=13.8024992,100.511898",
+   "source": "osm"
+  },
+  {
+   "nom": "Charm Thai Halal Food",
+   "lat": 13.705704,
+   "lng": 100.5034391,
+   "type": "Restaurant",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=13.705704,100.5034391",
+   "source": "osm"
+  },
+  {
+   "nom": "Arabesque",
+   "lat": 13.7458495,
+   "lng": 100.5538279,
+   "type": "arabic, italian, seafood",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7458495,100.5538279",
+   "source": "osm"
+  },
+  {
+   "nom": "Siam India",
+   "lat": 13.7044513,
+   "lng": 100.5031206,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7044513,100.5031206",
+   "source": "osm"
+  },
+  {
+   "nom": "Nine Ball",
+   "lat": 13.7436228,
+   "lng": 100.5538308,
+   "type": "arab",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7436228,100.5538308",
+   "source": "osm"
+  },
+  {
+   "nom": "Bawarchi indian",
+   "lat": 13.7386301,
+   "lng": 100.552993,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7386301,100.552993",
+   "source": "osm"
+  },
+  {
+   "nom": "Al-Khaleej",
+   "lat": 13.7418398,
+   "lng": 100.5542669,
+   "type": "indian, arabic, thai, seafood",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7418398,100.5542669",
+   "source": "osm"
+  },
+  {
+   "nom": "Ibrahim Restaurant",
+   "lat": 13.790501,
+   "lng": 100.5441326,
+   "type": "Restaurant",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=13.790501,100.5441326",
+   "source": "osm"
+  },
+  {
+   "nom": "Balaji Pure",
+   "lat": 13.7456152,
+   "lng": 100.5560658,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7456152,100.5560658",
+   "source": "osm"
+  },
+  {
+   "nom": "Warabimochi Kamakura (One Bangkok)",
+   "lat": 13.7260766,
+   "lng": 100.5476849,
+   "type": "warabimochi, macha, hojicha, coffee, วาราบิโมจิ",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7260766,100.5476849",
+   "source": "osm"
+  },
+  {
+   "nom": "Hummus Head",
+   "lat": 13.7212799,
+   "lng": 100.546029,
+   "type": "lebanese",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7212799,100.546029",
+   "source": "osm"
+  },
+  {
+   "nom": "Blueba บลูบ้า @ตลาดสุวรรณเกลียวทอง เจริญนคร",
+   "lat": 13.6983605,
+   "lng": 100.4868401,
+   "type": "kebab, burger, fast food",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.6983605,100.4868401",
+   "source": "osm"
+  },
+  {
+   "nom": "Falafel Michelin",
+   "lat": 13.735619,
+   "lng": 100.5621067,
+   "type": "arab",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.735619,100.5621067",
+   "source": "osm"
+  },
+  {
+   "nom": "Kebab aur Sharaab",
+   "lat": 13.7374529,
+   "lng": 100.5629514,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7374529,100.5629514",
+   "source": "osm"
+  },
+  {
+   "nom": "The Pavilion",
+   "lat": 13.7349086,
+   "lng": 100.5626186,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7349086,100.5626186",
+   "source": "osm"
+  },
+  {
+   "nom": "Royal Anand",
+   "lat": 13.7312924,
+   "lng": 100.5625978,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7312924,100.5625978",
+   "source": "osm"
+  },
+  {
+   "nom": "Masala Mantra",
+   "lat": 13.7400874,
+   "lng": 100.5663424,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7400874,100.5663424",
+   "source": "osm"
+  },
+  {
+   "nom": "VR1 sukhumvit22 indian",
+   "lat": 13.7322787,
+   "lng": 100.5644107,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7322787,100.5644107",
+   "source": "osm"
+  },
+  {
+   "nom": "Indian Food",
+   "lat": 13.7662233,
+   "lng": 100.5684606,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7662233,100.5684606",
+   "source": "osm"
+  },
+  {
+   "nom": "Saras",
+   "lat": 13.7310108,
+   "lng": 100.5640565,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7310108,100.5640565",
+   "source": "osm"
+  },
+  {
+   "nom": "Gaggan Anand",
+   "lat": 13.7407594,
+   "lng": 100.5675678,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7407594,100.5675678",
+   "source": "osm"
+  },
+  {
+   "nom": "Amritsr Restaurant",
+   "lat": 13.732902,
+   "lng": 100.5650579,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.732902,100.5650579",
+   "source": "osm"
+  },
+  {
+   "nom": "Indique",
+   "lat": 13.7300929,
+   "lng": 100.5650025,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7300929,100.5650025",
+   "source": "osm"
+  },
+  {
+   "nom": "Indus restaurant",
+   "lat": 13.7238541,
+   "lng": 100.5700168,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7238541,100.5700168",
+   "source": "osm"
+  },
+  {
+   "nom": "Masala Art",
+   "lat": 13.7307956,
+   "lng": 100.5815919,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7307956,100.5815919",
+   "source": "osm"
+  },
+  {
+   "nom": "The Kebabry",
+   "lat": 13.7324556,
+   "lng": 100.5826841,
+   "type": "turkish",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7324556,100.5826841",
+   "source": "osm"
+  },
+  {
+   "nom": "Spicy by Nature",
+   "lat": 13.7252331,
+   "lng": 100.584845,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=13.7252331,100.584845",
+   "source": "osm"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "บ้านดินสอ",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7560018,100.5018005",
+   "lat": 13.7560018,
+   "lng": 100.5018005,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7560018,100.5018005",
+   "source": "osm"
+  },
+  {
+   "nom": "โรงแรมดินสอมนต์",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7559553,100.5015672",
+   "lat": 13.7559553,
+   "lng": 100.5015672,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.dinsomonbangkok.top/",
+   "source": "osm"
+  },
+  {
+   "nom": "บ้านตึกดิน",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7554115,100.5018144",
+   "lat": 13.7554115,
+   "lng": 100.5018144,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.baantukdinhotel.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Methavalai Residence",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7556012,100.5025056",
+   "lat": 13.7556012,
+   "lng": 100.5025056,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.methavalairesidence.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "บ้านพินท์ โฮเทล",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7553798,100.5013932",
+   "lat": 13.7553798,
+   "lng": 100.5013932,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7553798,100.5013932",
+   "source": "osm"
+  },
+  {
+   "nom": "Baan Noppawong",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7562403,100.5006133",
+   "lat": 13.7562403,
+   "lng": 100.5006133,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7562403,100.5006133",
+   "source": "osm"
+  },
+  {
+   "nom": "Ratchadamnoen Residence",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.757158,100.5027219",
+   "lat": 13.757158,
+   "lng": 100.5027219,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.757158,100.5027219",
+   "source": "osm"
+  },
+  {
+   "nom": "Siamese Views Lodge",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7571217,100.5028917",
+   "lat": 13.7571217,
+   "lng": 100.5028917,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7571217,100.5028917",
+   "source": "osm"
+  },
+  {
+   "nom": "Chest's place",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7558342,100.5004847",
+   "lat": 13.7558342,
+   "lng": 100.5004847,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7558342,100.5004847",
+   "source": "osm"
+  },
+  {
+   "nom": "hôtel 90",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7563687,100.5002463",
+   "lat": 13.7563687,
+   "lng": 100.5002463,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7563687,100.5002463",
+   "source": "osm"
+  },
+  {
+   "nom": "Siam Champs-Élyséesi",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.755575,100.5031833",
+   "lat": 13.755575,
+   "lng": 100.5031833,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.siam-champss.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Pannee Residence @ Dinsor Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.757779,100.5022595",
+   "lat": 13.757779,
+   "lng": 100.5022595,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.757779,100.5022595",
+   "source": "osm"
+  },
+  {
+   "nom": "เดอะพรินติ้ง เฮาส์ พอชเทล",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7548451,100.501216",
+   "lat": 13.7548451,
+   "lng": 100.501216,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.printinghouseposhtelbkk.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Paragon One Residence",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7575215,100.5028628",
+   "lat": 13.7575215,
+   "lng": 100.5028628,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7575215,100.5028628",
+   "source": "osm"
+  },
+  {
+   "nom": "Room Quest Rim Praya",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7558608,100.5002093",
+   "lat": 13.7558608,
+   "lng": 100.5002093,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7558608,100.5002093",
+   "source": "osm"
+  },
+  {
+   "nom": "Lo-HaGuesthouse",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.754938,100.5009024",
+   "lat": 13.754938,
+   "lng": 100.5009024,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.754938,100.5009024",
+   "source": "osm"
+  },
+  {
+   "nom": "บ้านโขน",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7549728,100.5007801",
+   "lat": 13.7549728,
+   "lng": 100.5007801,
+   "halalFriendly": false,
+   "bookingUrl": "https://m.facebook.com/BaankhonBangkok",
+   "source": "osm"
+  },
+  {
+   "nom": "Sourire @ Rattanakosin Island",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7570851,100.5033118",
+   "lat": 13.7570851,
+   "lng": 100.5033118,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7570851,100.5033118",
+   "source": "osm"
+  },
+  {
+   "nom": "Villa Siam & Spa",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7557642,100.5001613",
+   "lat": 13.7557642,
+   "lng": 100.5001613,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7557642,100.5001613",
+   "source": "osm"
+  },
+  {
+   "nom": "Baan kachipan",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7555745,100.5001447",
+   "lat": 13.7555745,
+   "lng": 100.5001447,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7555745,100.5001447",
+   "source": "osm"
+  },
+  {
+   "nom": "Prasuri",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7580301,100.5025882",
+   "lat": 13.7580301,
+   "lng": 100.5025882,
+   "halalFriendly": false,
+   "bookingUrl": "prasuri_gh_bkk@hotmail.com",
+   "source": "osm"
+  },
+  {
+   "nom": "โรงแรมเฮีย",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.755534,100.503599",
+   "lat": 13.755534,
+   "lng": 100.503599,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.herehostel.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Krit Hostel & Coffe Bar",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7543913,100.5025146",
+   "lat": 13.7543913,
+   "lng": 100.5025146,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7543913,100.5025146",
+   "source": "osm"
+  },
+  {
+   "nom": "Oh Compound Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7545721,100.50063",
+   "lat": 13.7545721,
+   "lng": 100.50063,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.ohcompound.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Nat 2",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7577272,100.5001748",
+   "lat": 13.7577272,
+   "lng": 100.5001748,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7577272,100.5001748",
+   "source": "osm"
+  },
+  {
+   "nom": "C.H. 2",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7577519,100.5000585",
+   "lat": 13.7577519,
+   "lng": 100.5000585,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7577519,100.5000585",
+   "source": "osm"
+  },
+  {
+   "nom": "Excel Hotel Bangkok",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7539348,100.5026273",
+   "lat": 13.7539348,
+   "lng": 100.5026273,
+   "halalFriendly": false,
+   "bookingUrl": "https://excel-hotel.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "บ้านแม่แจ่ม",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7581827,100.4997369",
+   "lat": 13.7581827,
+   "lng": 100.4997369,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7581827,100.4997369",
+   "source": "osm"
+  },
+  {
+   "nom": "Green Teak House",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7539614,100.5001684",
+   "lat": 13.7539614,
+   "lng": 100.5001684,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.greenteakhouse.com",
+   "source": "osm"
+  },
+  {
+   "nom": "โรงแรมศิริพงษ์",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7534886,100.5025817",
+   "lat": 13.7534886,
+   "lng": 100.5025817,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7534886,100.5025817",
+   "source": "osm"
+  },
+  {
+   "nom": "โอลด์ แคปืตอล ไบค์ อินน์",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7570126,100.504711",
+   "lat": 13.7570126,
+   "lng": 100.504711,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7570126,100.504711",
+   "source": "osm"
+  },
+  {
+   "nom": "The Hidden Khaosan X3",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7585557,100.4997417",
+   "lat": 13.7585557,
+   "lng": 100.4997417,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7585557,100.4997417",
+   "source": "osm"
+  },
+  {
+   "nom": "Villa phra sumen",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.759038,100.5031726",
+   "lat": 13.759038,
+   "lng": 100.5031726,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.759038,100.5031726",
+   "source": "osm"
+  },
+  {
+   "nom": "โรงแรมไอยาธร",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7567674,100.5049222",
+   "lat": 13.7567674,
+   "lng": 100.5049222,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7567674,100.5049222",
+   "source": "osm"
+  },
+  {
+   "nom": "Nina Guest House",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7586907,100.499716",
+   "lat": 13.7586907,
+   "lng": 100.499716,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7586907,100.499716",
+   "source": "osm"
+  },
+  {
+   "nom": "Azure Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7576929,100.5047125",
+   "lat": 13.7576929,
+   "lng": 100.5047125,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7576929,100.5047125",
+   "source": "osm"
+  },
+  {
+   "nom": "New Central Guest House",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7587062,100.4995992",
+   "lat": 13.7587062,
+   "lng": 100.4995992,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7587062,100.4995992",
+   "source": "osm"
+  },
+  {
+   "nom": "At Home Guest House",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7586273,100.4993749",
+   "lat": 13.7586273,
+   "lng": 100.4993749,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7586273,100.4993749",
+   "source": "osm"
+  },
+  {
+   "nom": "Dio",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7580098,100.4988225",
+   "lat": 13.7580098,
+   "lng": 100.4988225,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7580098,100.4988225",
+   "source": "osm"
+  },
+  {
+   "nom": "Walk Inn",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7587386,100.499391",
+   "lat": 13.7587386,
+   "lng": 100.499391,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7587386,100.499391",
+   "source": "osm"
+  },
+  {
+   "nom": "7 Holder Guest House",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7580659,100.4986842",
+   "lat": 13.7580659,
+   "lng": 100.4986842,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7580659,100.4986842",
+   "source": "osm"
+  },
+  {
+   "nom": "Hanu Hostel Bangkok",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7563244,100.4981679",
+   "lat": 13.7563244,
+   "lng": 100.4981679,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7563244,100.4981679",
+   "source": "osm"
+  },
+  {
+   "nom": "โรงแรมเทพนิมิต",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7532825,100.4997537",
+   "lat": 13.7532825,
+   "lng": 100.4997537,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7532825,100.4997537",
+   "source": "osm"
+  },
+  {
+   "nom": "Honey Place guesthouse",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7592413,100.4996052",
+   "lat": 13.7592413,
+   "lng": 100.4996052,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7592413,100.4996052",
+   "source": "osm"
+  },
+  {
+   "nom": "luck-yimm",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7531493,100.4999007",
+   "lat": 13.7531493,
+   "lng": 100.4999007,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7531493,100.4999007",
+   "source": "osm"
+  },
+  {
+   "nom": "Baan Pun Thong",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.759308,100.4995013",
+   "lat": 13.759308,
+   "lng": 100.4995013,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.759308,100.4995013",
+   "source": "osm"
+  },
+  {
+   "nom": "U & D Guesthouse",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7532018,100.4995515",
+   "lat": 13.7532018,
+   "lng": 100.4995515,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7532018,100.4995515",
+   "source": "osm"
+  },
+  {
+   "nom": "3House",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.758804,100.4988686",
+   "lat": 13.758804,
+   "lng": 100.4988686,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.758804,100.4988686",
+   "source": "osm"
+  },
+  {
+   "nom": "Once Again Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.752815,100.5033751",
+   "lat": 13.752815,
+   "lng": 100.5033751,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.752815,100.5033751",
+   "source": "osm"
+  },
+  {
+   "nom": "Buddy Lodge",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7587413,100.4986355",
+   "lat": 13.7587413,
+   "lng": 100.4986355,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7587413,100.4986355",
+   "source": "osm"
+  },
+  {
+   "nom": "The Family",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7601131,100.5027895",
+   "lat": 13.7601131,
+   "lng": 100.5027895,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.facebook.com/thefamilybkk",
+   "source": "osm"
+  },
+  {
+   "nom": "Mahannop",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.753639,100.4987986",
+   "lat": 13.753639,
+   "lng": 100.4987986,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.753639,100.4987986",
+   "source": "osm"
+  },
+  {
+   "nom": "โรงแรมเดอะมัลเบอรี่",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.75866,100.4984101",
+   "lat": 13.75866,
+   "lng": 100.4984101,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.75866,100.4984101",
+   "source": "osm"
+  },
+  {
+   "nom": "Palace",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7561468,100.4975426",
+   "lat": 13.7561468,
+   "lng": 100.4975426,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7561468,100.4975426",
+   "source": "osm"
+  },
+  {
+   "nom": "Nacorn Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7604332,100.5015881",
+   "lat": 13.7604332,
+   "lng": 100.5015881,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7604332,100.5015881",
+   "source": "osm"
+  },
+  {
+   "nom": "The LOL Elephant Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.760451,100.5016991",
+   "lat": 13.760451,
+   "lng": 100.5016991,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.760451,100.5016991",
+   "source": "osm"
+  },
+  {
+   "nom": "Time Sabai 134 Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7604347,100.5023728",
+   "lat": 13.7604347,
+   "lng": 100.5023728,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7604347,100.5023728",
+   "source": "osm"
+  },
+  {
+   "nom": "Lamphu Tree House",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7604073,100.5025611",
+   "lat": 13.7604073,
+   "lng": 100.5025611,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7604073,100.5025611",
+   "source": "osm"
+  },
+  {
+   "nom": "The Cube Hostel Khaosan",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7604781,100.5015213",
+   "lat": 13.7604781,
+   "lng": 100.5015213,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7604781,100.5015213",
+   "source": "osm"
+  },
+  {
+   "nom": "Khaosan Park Resort",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7582856,100.4979623",
+   "lat": 13.7582856,
+   "lng": 100.4979623,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7582856,100.4979623",
+   "source": "osm"
+  },
+  {
+   "nom": "Khaosan lovers hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7605423,100.5018184",
+   "lat": 13.7605423,
+   "lng": 100.5018184,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7605423,100.5018184",
+   "source": "osm"
+  },
+  {
+   "nom": "ณ ตะนาว 1969",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7533593,100.49865",
+   "lat": 13.7533593,
+   "lng": 100.49865,
+   "halalFriendly": false,
+   "bookingUrl": "https://natanao1969.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Siri Oriental Bangkok Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7545153,100.4977909",
+   "lat": 13.7545153,
+   "lng": 100.4977909,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7545153,100.4977909",
+   "source": "osm"
+  },
+  {
+   "nom": "double b hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7528378,100.4990847",
+   "lat": 13.7528378,
+   "lng": 100.4990847,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7528378,100.4990847",
+   "source": "osm"
+  },
+  {
+   "nom": "Pannee Guesthouse",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.759444,100.4986726",
+   "lat": 13.759444,
+   "lng": 100.4986726,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.759444,100.4986726",
+   "source": "osm"
+  },
+  {
+   "nom": "Sakul House",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7592196,100.4984041",
+   "lat": 13.7592196,
+   "lng": 100.4984041,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7592196,100.4984041",
+   "source": "osm"
+  },
+  {
+   "nom": "Nat",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7586904,100.4979415",
+   "lat": 13.7586904,
+   "lng": 100.4979415,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7586904,100.4979415",
+   "source": "osm"
+  },
+  {
+   "nom": "Marco Polo",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7588975,100.4980615",
+   "lat": 13.7588975,
+   "lng": 100.4980615,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7588975,100.4980615",
+   "source": "osm"
+  },
+  {
+   "nom": "หลบศึกโฮสเทล",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.760756,100.5022145",
+   "lat": 13.760756,
+   "lng": 100.5022145,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.booking.com/hotel/th/lobsuek-hostel.html?lang=xu",
+   "source": "osm"
+  },
+  {
+   "nom": "Chill out",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7596669,100.4986799",
+   "lat": 13.7596669,
+   "lng": 100.4986799,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7596669,100.4986799",
+   "source": "osm"
+  },
+  {
+   "nom": "บ้านนาวา",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7523739,100.4993984",
+   "lat": 13.7523739,
+   "lng": 100.4993984,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7523739,100.4993984",
+   "source": "osm"
+  },
+  {
+   "nom": "Bangkok Canalé Home",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.760879,100.5017653",
+   "lat": 13.760879,
+   "lng": 100.5017653,
+   "halalFriendly": false,
+   "bookingUrl": "https://bangkokcanalehomeatkhaosarn.thailandhotels.site/",
+   "source": "osm"
+  },
+  {
+   "nom": "ละมุนวิวิท",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7531951,100.4983059",
+   "lat": 13.7531951,
+   "lng": 100.4983059,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7531951,100.4983059",
+   "source": "osm"
+  },
+  {
+   "nom": "Four Sons Inn",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7595139,100.498409",
+   "lat": 13.7595139,
+   "lng": 100.498409,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7595139,100.498409",
+   "source": "osm"
+  },
+  {
+   "nom": "Chill out hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7597791,100.4986295",
+   "lat": 13.7597791,
+   "lng": 100.4986295,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7597791,100.4986295",
+   "source": "osm"
+  },
+  {
+   "nom": "โรงแรมสิริมิตร",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7535371,100.4979526",
+   "lat": 13.7535371,
+   "lng": 100.4979526,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7535371,100.4979526",
+   "source": "osm"
+  },
+  {
+   "nom": "เฌอรีย์",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7522279,100.5041829",
+   "lat": 13.7522279,
+   "lng": 100.5041829,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.cheriebangkok.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Niras Bankoc Cultural Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7523565,100.5044639",
+   "lat": 13.7523565,
+   "lng": 100.5044639,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7523565,100.5044639",
+   "source": "osm"
+  },
+  {
+   "nom": "Tim Mansion",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7524548,100.5048001",
+   "lat": 13.7524548,
+   "lng": 100.5048001,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.timmansionbkk.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Baan Nampetch Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7611311,100.5016091",
+   "lat": 13.7611311,
+   "lng": 100.5016091,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7611311,100.5016091",
+   "source": "osm"
+  },
+  {
+   "nom": "Au Bon Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7547434,100.4970553",
+   "lat": 13.7547434,
+   "lng": 100.4970553,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7547434,100.4970553",
+   "source": "osm"
+  },
+  {
+   "nom": "Charoendee Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7589958,100.4976222",
+   "lat": 13.7589958,
+   "lng": 100.4976222,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7589958,100.4976222",
+   "source": "osm"
+  },
+  {
+   "nom": "Khao San Social Capsule",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7601898,100.4986884",
+   "lat": 13.7601898,
+   "lng": 100.4986884,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7601898,100.4986884",
+   "source": "osm"
+  },
+  {
+   "nom": "Rambuttri 154",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7596819,100.498078",
+   "lat": 13.7596819,
+   "lng": 100.498078,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7596819,100.498078",
+   "source": "osm"
+  },
+  {
+   "nom": "Center Point Hotel",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7590547,100.4975596",
+   "lat": 13.7590547,
+   "lng": 100.4975596,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7590547,100.4975596",
+   "source": "osm"
+  },
+  {
+   "nom": "AT-MOSPHERE rooftop cafe",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7601582,100.4985871",
+   "lat": 13.7601582,
+   "lng": 100.4985871,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7601582,100.4985871",
+   "source": "osm"
+  },
+  {
+   "nom": "Orchid",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7595638,100.4979498",
+   "lat": 13.7595638,
+   "lng": 100.4979498,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7595638,100.4979498",
+   "source": "osm"
+  },
+  {
+   "nom": "Sleepy Dealer hostel and bar",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7609812,100.5035404",
+   "lat": 13.7609812,
+   "lng": 100.5035404,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7609812,100.5035404",
+   "source": "osm"
+  },
+  {
+   "nom": "Star Dome Inn",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7593521,100.497627",
+   "lat": 13.7593521,
+   "lng": 100.497627,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7593521,100.497627",
+   "source": "osm"
+  },
+  {
+   "nom": "บ้านบวร",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7607337,100.4992285",
+   "lat": 13.7607337,
+   "lng": 100.4992285,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7607337,100.4992285",
+   "source": "osm"
+  },
+  {
+   "nom": "สุเนต์ตา",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7606464,100.4990644",
+   "lat": 13.7606464,
+   "lng": 100.4990644,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7606464,100.4990644",
+   "source": "osm"
+  },
+  {
+   "nom": "Chern hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7513709,100.5032158",
+   "lat": 13.7513709,
+   "lng": 100.5032158,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7513709,100.5032158",
+   "source": "osm"
+  },
+  {
+   "nom": "SUSU Khaosan Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7605511,100.4988633",
+   "lat": 13.7605511,
+   "lng": 100.4988633,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7605511,100.4988633",
+   "source": "osm"
+  },
+  {
+   "nom": "Bright Minitel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7533509,100.4974736",
+   "lat": 13.7533509,
+   "lng": 100.4974736,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7533509,100.4974736",
+   "source": "osm"
+  },
+  {
+   "nom": "อินทนิล",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7601671,100.4983123",
+   "lat": 13.7601671,
+   "lng": 100.4983123,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7601671,100.4983123",
+   "source": "osm"
+  },
+  {
+   "nom": "The Secret Service",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7602535,100.4984146",
+   "lat": 13.7602535,
+   "lng": 100.4984146,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7602535,100.4984146",
+   "source": "osm"
+  },
+  {
+   "nom": "Bed Station Hostel Khaosan",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7599037,100.4980194",
+   "lat": 13.7599037,
+   "lng": 100.4980194,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7599037,100.4980194",
+   "source": "osm"
+  },
+  {
+   "nom": "Thai Cosy House",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7603092,100.4984381",
+   "lat": 13.7603092,
+   "lng": 100.4984381,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7603092,100.4984381",
+   "source": "osm"
+  },
+  {
+   "nom": "Ruen Mak Guesthouse",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7605866,100.4987798",
+   "lat": 13.7605866,
+   "lng": 100.4987798,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7605866,100.4987798",
+   "source": "osm"
+  },
+  {
+   "nom": "bed box",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.760661,100.498886",
+   "lat": 13.760661,
+   "lng": 100.498886,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.760661,100.498886",
+   "source": "osm"
+  },
+  {
+   "nom": "Mixx hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7595394,100.4976072",
+   "lat": 13.7595394,
+   "lng": 100.4976072,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7595394,100.4976072",
+   "source": "osm"
+  },
+  {
+   "nom": "Sun house x Santo house",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7534594,100.4972602",
+   "lat": 13.7534594,
+   "lng": 100.4972602,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7534594,100.4972602",
+   "source": "osm"
+  },
+  {
+   "nom": "Siri Heritage Bangkok Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7552251,100.4964954",
+   "lat": 13.7552251,
+   "lng": 100.4964954,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7552251,100.4964954",
+   "source": "osm"
+  },
+  {
+   "nom": "Lilit Bang Lumphu Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.761526,100.5011485",
+   "lat": 13.761526,
+   "lng": 100.5011485,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.761526,100.5011485",
+   "source": "osm"
+  },
+  {
+   "nom": "สิริ พอชเทล",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7531133,100.4974749",
+   "lat": 13.7531133,
+   "lng": 100.4974749,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7531133,100.4974749",
+   "source": "osm"
+  },
+  {
+   "nom": "Thai Cozy House",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7603473,100.4983056",
+   "lat": 13.7603473,
+   "lng": 100.4983056,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.thaicozyhousekhaosan.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Sawasdee Bangkok Inn",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7584794,100.4968187",
+   "lat": 13.7584794,
+   "lng": 100.4968187,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7584794,100.4968187",
+   "source": "osm"
+  },
+  {
+   "nom": "Khaosan Palace",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.759272,100.4972678",
+   "lat": 13.759272,
+   "lng": 100.4972678,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.759272,100.4972678",
+   "source": "osm"
+  },
+  {
+   "nom": "The Mixx Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7595781,100.4974899",
+   "lat": 13.7595781,
+   "lng": 100.4974899,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7595781,100.4974899",
+   "source": "osm"
+  },
+  {
+   "nom": "ป้าแพร่ง",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.753103,100.4973837",
+   "lat": 13.753103,
+   "lng": 100.4973837,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.753103,100.4973837",
+   "source": "osm"
+  },
+  {
+   "nom": "Tanee place",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7602891,100.4981091",
+   "lat": 13.7602891,
+   "lng": 100.4981091,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7602891,100.4981091",
+   "source": "osm"
+  },
+  {
+   "nom": "Star Amir",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7612429,100.5039456",
+   "lat": 13.7612429,
+   "lng": 100.5039456,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7612429,100.5039456",
+   "source": "osm"
+  },
+  {
+   "nom": "พระนครพอชเทล",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.753038,100.497302",
+   "lat": 13.753038,
+   "lng": 100.497302,
+   "halalFriendly": false,
+   "bookingUrl": "https://phranakhonposhtel.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Tinidee Trendy",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7599116,100.4975754",
+   "lat": 13.7599116,
+   "lng": 100.4975754,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.tinideekhaosan.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Bed Station Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.7604201,100.4980904",
+   "lat": 13.7604201,
+   "lng": 100.4980904,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=13.7604201,100.4980904",
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "หลักกิโลเมตรที่ 0",
+   "lat": 13.7572573,
+   "lng": 100.5021615,
+   "coordonnees": {
+    "lat": 13.7572573,
+    "lng": 100.5021615
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=13.7572573,100.5021615",
+   "source": "osm"
+  },
+  {
+   "nom": "อนุสรณ์สถาน 14 ตุลา 16",
+   "lat": 13.7568137,
+   "lng": 100.4991195,
+   "coordonnees": {
+    "lat": 13.7568137,
+    "lng": 100.4991195
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=13.7568137,100.4991195",
+   "source": "osm"
+  },
+  {
+   "nom": "พระบรมราชานุสาวรีย์ รัชกาลที่ 3",
+   "lat": 13.7553773,
+   "lng": 100.5049616,
+   "coordonnees": {
+    "lat": 13.7553773,
+    "lng": 100.5049616
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=13.7553773,100.5049616",
+   "source": "osm"
+  },
+  {
+   "nom": "โอมมานีปะมีอง",
+   "lat": 13.7542996,
+   "lng": 100.4990031,
+   "coordonnees": {
+    "lat": 13.7542996,
+    "lng": 100.4990031
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=13.7542996,100.4990031",
+   "source": "osm"
+  },
+  {
+   "nom": "ซุ้มเฉลิมพระเกียรติพระบาทสมเด็จพระวชิรเกล้าเจ้าอยู่หัว",
+   "lat": 13.7574045,
+   "lng": 100.4983625,
+   "coordonnees": {
+    "lat": 13.7574045,
+    "lng": 100.4983625
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=13.7574045,100.4983625",
+   "source": "osm"
+  },
+  {
+   "nom": "Carrefour",
+   "lat": 13.7566058,
+   "lng": 100.5061827,
+   "coordonnees": {
+    "lat": 13.7566058,
+    "lng": 100.5061827
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=13.7566058,100.5061827",
+   "source": "osm"
+  },
+  {
+   "nom": "ผ่านฟ้าลีลาศ",
+   "lat": 13.7555116,
+   "lng": 100.506445,
+   "coordonnees": {
+    "lat": 13.7555116,
+    "lng": 100.506445
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=13.7555116,100.506445",
+   "source": "osm"
+  },
+  {
+   "nom": "จอยแมน แกลลอรี่",
+   "lat": 13.7517945,
+   "lng": 100.5045967,
+   "coordonnees": {
+    "lat": 13.7517945,
+    "lng": 100.5045967
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=13.7517945,100.5045967",
+   "source": "osm"
+  },
+  {
+   "nom": "The Golden Mount",
+   "lat": 13.7535037,
+   "lng": 100.506754,
+   "coordonnees": {
+    "lat": 13.7535037,
+    "lng": 100.506754
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=13.7535037,100.506754",
+   "source": "osm"
+  },
+  {
+   "nom": "Basket shop",
+   "lat": 13.7507571,
+   "lng": 100.5040746,
+   "coordonnees": {
+    "lat": 13.7507571,
+    "lng": 100.5040746
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=13.7507571,100.5040746",
+   "source": "osm"
+  },
+  {
+   "nom": "Eak tattoo",
+   "lat": 13.760277,
+   "lng": 100.4970434,
+   "coordonnees": {
+    "lat": 13.760277,
+    "lng": 100.4970434
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=13.760277,100.4970434",
+   "source": "osm"
+  },
+  {
+   "nom": "ระฆัง สน.ชนะสงคราม",
+   "lat": 13.7597111,
+   "lng": 100.4958064,
+   "coordonnees": {
+    "lat": 13.7597111,
+    "lng": 100.4958064
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=13.7597111,100.4958064",
+   "source": "osm"
+  },
+  {
+   "nom": "พระแม่ธรณีบีบมวยผม",
+   "lat": 13.7565665,
+   "lng": 100.4947914,
+   "coordonnees": {
+    "lat": 13.7565665,
+    "lng": 100.4947914
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=13.7565665,100.4947914",
+   "source": "osm"
+  },
+  {
+   "nom": "อนุเสาวรีย์พระเจ้าบรมวงศ์เธอกรมหลวงราชบุรีดิเรกฤทธิ์",
+   "lat": 13.7555346,
+   "lng": 100.4948164,
+   "coordonnees": {
+    "lat": 13.7555346,
+    "lng": 100.4948164
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=13.7555346,100.4948164",
+   "source": "osm"
+  },
+  {
+   "nom": "Precious Plastic Bangkok",
+   "lat": 13.7573935,
+   "lng": 100.5090495,
+   "coordonnees": {
+    "lat": 13.7573935,
+    "lng": 100.5090495
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=13.7573935,100.5090495",
+   "source": "osm"
+  },
+  {
+   "nom": "พระพุทธนรสีห์ตรีโลกเชฏฐ์",
+   "lat": 13.7605389,
+   "lng": 100.4954523,
+   "coordonnees": {
+    "lat": 13.7605389,
+    "lng": 100.4954523
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=13.7605389,100.4954523",
+   "source": "osm"
+  },
+  {
+   "nom": "ช้าง",
+   "lat": 13.7484422,
+   "lng": 100.5024397,
+   "coordonnees": {
+    "lat": 13.7484422,
+    "lng": 100.5024397
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=13.7484422,100.5024397",
+   "source": "osm"
+  },
+  {
+   "nom": "พระบรมรูปพระบาทสมเด็จพระจุลจอมเกล้าเจ้าอยู่หัว",
+   "lat": 13.7493647,
+   "lng": 100.4975557,
+   "coordonnees": {
+    "lat": 13.7493647,
+    "lng": 100.4975557
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=13.7493647,100.4975557",
+   "source": "osm"
+  },
+  {
+   "nom": "อนุสาวรีย์หมู",
+   "lat": 13.7498661,
+   "lng": 100.49621,
+   "coordonnees": {
+    "lat": 13.7498661,
+    "lng": 100.49621
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=13.7498661,100.49621",
+   "source": "osm"
+  },
+  {
+   "nom": "อนุสาวรีย์ทหารอาสา สงครามโลกครั้งที่ 1",
+   "lat": 13.758211,
+   "lng": 100.4932545,
+   "coordonnees": {
+    "lat": 13.758211,
+    "lng": 100.4932545
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=13.758211,100.4932545",
+   "source": "osm"
+  },
+  {
+   "nom": "พระบรมราชานุสาวรีย์ พระบาทสมเด็จพระจอมเกล้าเจ้าอยู่หัว",
+   "lat": 13.7503374,
+   "lng": 100.4942896,
+   "coordonnees": {
+    "lat": 13.7503374,
+    "lng": 100.4942896
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=13.7503374,100.4942896",
+   "source": "osm"
+  },
+  {
+   "nom": "อัศกรรณมารา",
+   "lat": 13.7517086,
+   "lng": 100.4931332,
+   "coordonnees": {
+    "lat": 13.7517086,
+    "lng": 100.4931332
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=13.7517086,100.4931332",
+   "source": "osm"
+  },
+  {
+   "nom": "พระบวรราชานุสาวรีย์ สมเด็จพระบวรราชเจ้า มหาสุรสิงหนาท",
+   "lat": 13.7552762,
+   "lng": 100.4918387,
+   "coordonnees": {
+    "lat": 13.7552762,
+    "lng": 100.4918387
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=13.7552762,100.4918387",
+   "source": "osm"
+  },
+  {
+   "nom": "หอศิลป์ ณ บ้านเจ้าพระยา",
+   "lat": 13.7633704,
+   "lng": 100.4948587,
+   "coordonnees": {
+    "lat": 13.7633704,
+    "lng": 100.4948587
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=13.7633704,100.4948587",
+   "source": "osm"
+  },
+  {
+   "nom": "อนุสาวรีย์สมเด็จพระนางเจ้าสุนันทากุมารีรัตน์",
+   "lat": 13.7484049,
+   "lng": 100.4953406,
+   "coordonnees": {
+    "lat": 13.7484049,
+    "lng": 100.4953406
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=13.7484049,100.4953406",
+   "source": "osm"
+  },
+  {
+   "nom": "street art",
+   "lat": 13.7657018,
+   "lng": 100.4976573,
+   "coordonnees": {
+    "lat": 13.7657018,
+    "lng": 100.4976573
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=13.7657018,100.4976573",
+   "source": "osm"
+  },
+  {
+   "nom": "Khlong Ong Ang Canal and Walking Street",
+   "lat": 13.7461622,
+   "lng": 100.5037126,
+   "coordonnees": {
+    "lat": 13.7461622,
+    "lng": 100.5037126
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=13.7461622,100.5037126",
+   "source": "osm"
+  },
+  {
+   "nom": "สหัสเดชะ",
+   "lat": 13.7517991,
+   "lng": 100.4921163,
+   "coordonnees": {
+    "lat": 13.7517991,
+    "lng": 100.4921163
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=13.7517991,100.4921163",
+   "source": "osm"
+  },
+  {
+   "nom": "สะพานมัฆวานรังสรรค์",
+   "lat": 13.7636617,
+   "lng": 100.5094075,
+   "coordonnees": {
+    "lat": 13.7636617,
+    "lng": 100.5094075
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=13.7636617,100.5094075",
+   "source": "osm"
+  },
+  {
+   "nom": "มังกรกัณฐ์",
+   "lat": 13.7508931,
+   "lng": 100.4922733,
+   "coordonnees": {
+    "lat": 13.7508931,
+    "lng": 100.4922733
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=13.7508931,100.4922733",
+   "source": "osm"
+  },
+  {
+   "nom": "พระวิหารหลวง หลวงพ่อหิน",
+   "lat": 13.755188,
+   "lng": 100.490777,
+   "coordonnees": {
+    "lat": 13.755188,
+    "lng": 100.490777
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=13.755188,100.490777",
+   "source": "osm"
+  },
+  {
+   "nom": "พระพุทธศรีอริยเมตไตรย",
+   "lat": 13.7672729,
+   "lng": 100.5030209,
+   "coordonnees": {
+    "lat": 13.7672729,
+    "lng": 100.5030209
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=13.7672729,100.5030209",
+   "source": "osm"
+  },
+  {
+   "nom": "หอศิลป์คณะจิตรกรรมประติมากรรมและภาพพิมพ์",
+   "lat": 13.753234,
+   "lng": 100.4908389,
+   "coordonnees": {
+    "lat": 13.753234,
+    "lng": 100.4908389
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=13.753234,100.4908389",
+   "source": "osm"
+  },
+  {
+   "nom": "ประตูวิเสทชัยศรี (ทางเข้าหลัก)",
+   "lat": 13.7522676,
+   "lng": 100.4911727,
+   "coordonnees": {
+    "lat": 13.7522676,
+    "lng": 100.4911727
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=13.7522676,100.4911727",
+   "source": "osm"
+  },
+  {
+   "nom": "Legacy art gallery",
+   "lat": 13.7452169,
+   "lng": 100.5032828,
+   "coordonnees": {
+    "lat": 13.7452169,
+    "lng": 100.5032828
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=13.7452169,100.5032828",
+   "source": "osm"
+  },
+  {
+   "nom": "อนุสาวรีย์ปรีดี พนมยงค์",
+   "lat": 13.7575028,
+   "lng": 100.4896414,
+   "coordonnees": {
+    "lat": 13.7575028,
+    "lng": 100.4896414
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=13.7575028,100.4896414",
+   "source": "osm"
+  },
+  {
+   "nom": "พิพิธภัณฑ์ธนาคารแห่งประเทศไทย",
+   "lat": 13.7679769,
+   "lng": 100.4982932,
+   "coordonnees": {
+    "lat": 13.7679769,
+    "lng": 100.4982932
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=13.7679769,100.4982932",
+   "source": "osm"
+  },
+  {
+   "nom": "็ต้นไม้รูปหัวใจ",
+   "lat": 13.7527033,
+   "lng": 100.4898172,
+   "coordonnees": {
+    "lat": 13.7527033,
+    "lng": 100.4898172
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=13.7527033,100.4898172",
+   "source": "osm"
+  },
+  {
+   "nom": "พิพิธภัณฑ์ธนาคารแห่งประเทศไทย",
+   "lat": 13.7682842,
+   "lng": 100.4995365,
+   "coordonnees": {
+    "lat": 13.7682842,
+    "lng": 100.4995365
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=13.7682842,100.4995365",
+   "source": "osm"
+  },
+  {
+   "nom": "อนุสาวรีย์สมเด็จเจ้าฟ้าจุฑาธุชธราดิลก",
+   "lat": 13.7444249,
+   "lng": 100.4989578,
+   "coordonnees": {
+    "lat": 13.7444249,
+    "lng": 100.4989578
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=13.7444249,100.4989578",
+   "source": "osm"
+  },
+  {
+   "nom": "Marché à la torche",
+   "lat": 13.7468313,
+   "lng": 100.5110795,
+   "coordonnees": {
+    "lat": 13.7468313,
+    "lng": 100.5110795
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=13.7468313,100.5110795",
+   "source": "osm"
+  },
+  {
+   "nom": "ตำหนักพระองค์เจ้าเฉิดโฉม",
+   "lat": 13.7480729,
+   "lng": 100.4909065,
+   "coordonnees": {
+    "lat": 13.7480729,
+    "lng": 100.4909065
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=13.7480729,100.4909065",
+   "source": "osm"
+  },
+  {
+   "nom": "พระบรมราชานุสาวรีย์พระบาทสมเด็จพระเจ้าอยู่หัวอานันทมหิดล",
+   "lat": 13.7683156,
+   "lng": 100.4949808,
+   "coordonnees": {
+    "lat": 13.7683156,
+    "lng": 100.4949808
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=13.7683156,100.4949808",
+   "source": "osm"
+  },
+  {
+   "nom": "พระพุทธไสยาสน์;วัดโพธิ์",
+   "lat": 13.746506,
+   "lng": 100.4916817,
+   "coordonnees": {
+    "lat": 13.746506,
+    "lng": 100.4916817
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=13.746506,100.4916817",
+   "source": "osm"
+  },
+  {
+   "nom": "Jesada Technik",
+   "lat": 13.7642056,
+   "lng": 100.4899152,
+   "coordonnees": {
+    "lat": 13.7642056,
+    "lng": 100.4899152
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=13.7642056,100.4899152",
+   "source": "osm"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "มัสยิดต้นสน",
+   "lat": 13.7400456,
+   "lng": 100.4886526,
+   "coordonnees": {
+    "lat": 13.7400456,
+    "lng": 100.4886526
+   },
+   "mapsUrl": "https://maps.google.com/?q=13.7400456,100.4886526",
+   "source": "osm"
+  },
+  {
+   "nom": "มัสยิดดารุลฟะละฮ์",
+   "lat": 13.7501142,
+   "lng": 100.5281757,
+   "coordonnees": {
+    "lat": 13.7501142,
+    "lng": 100.5281757
+   },
+   "adresse": "ซอยเพชรบุรี 7",
+   "mapsUrl": "https://maps.google.com/?q=13.7501142,100.5281757",
+   "source": "osm"
+  },
+  {
+   "nom": "มัสยิดนูรุ้ลมู่บีน",
+   "lat": 13.7304087,
+   "lng": 100.4910262,
+   "coordonnees": {
+    "lat": 13.7304087,
+    "lng": 100.4910262
+   },
+   "mapsUrl": "https://maps.google.com/?q=13.7304087,100.4910262",
+   "source": "osm"
+  },
+  {
+   "nom": "มัสยิดดารุ้ลอาบิดีน",
+   "lat": 13.71007,
+   "lng": 100.5117984,
+   "coordonnees": {
+    "lat": 13.71007,
+    "lng": 100.5117984
+   },
+   "mapsUrl": "https://maps.google.com/?q=13.71007,100.5117984",
+   "source": "osm"
+  },
+  {
+   "nom": "มัสยิดนูรู้ลฮิดาย่าติ้ล",
+   "lat": 13.7126923,
+   "lng": 100.573804,
+   "coordonnees": {
+    "lat": 13.7126923,
+    "lng": 100.573804
+   },
+   "mapsUrl": "https://maps.google.com/?q=13.7126923,100.573804",
+   "source": "osm"
+  },
+  {
+   "nom": "mosquée",
+   "lat": 13.7645594,
+   "lng": 100.6465116,
+   "coordonnees": {
+    "lat": 13.7645594,
+    "lng": 100.6465116
+   },
+   "mapsUrl": "https://maps.google.com/?q=13.7645594,100.6465116",
+   "source": "osm"
+  }
+ ],
+ "tags": [
+  "street-food",
+  "exotique",
+  "budget",
+  "temples",
+  "communaute-musulmane",
+  "marches"
+ ],
+ "description_en": "Bangkok, in Thailand, is a halal-friendly destination with a Halal Trust Score of 3.8/5. Muslim travelers will find 102 halal restaurants listed, 200 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
+ "metaDescription_en": "Halal guide to Bangkok: 102 halal restaurants listed, 200 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 3.8/5.",
+ "nom_en": "Bangkok",
+ "boucheries": [],
+ "infos_pratiques_en": {
+  "langue": "Thai",
+  "monnaie": "Thai baht (THB)",
+  "meilleure_periode": "November to February",
+  "appel_priere": "5 times a day",
+  "nourriture_halal": "Largement disponible",
+  "alcool": "Available"
+ },
+ "sectionMangerHalal": "Deux réflexes à Bangkok : le « Soi Arab » (Sukhumvit Soi 3, quartier Nana) pour les cuisines moyen-orientales et pakistanaises tard le soir, et les ruelles de la mosquée Haroon (Bang Rak) pour la cuisine thaïe-musulmane familiale. Repérez le losange vert du label CICOT jusque dans les 7-Eleven, et goûtez le massaman — plat musulman d'origine.",
+ "sectionMangerHalal_en": "Two reflexes in Bangkok: the “Soi Arab” (Sukhumvit Soi 3, Nana) for Middle-Eastern and Pakistani food late into the night, and the lanes around Haroon Mosque (Bang Rak) for family-run Thai-Muslim cooking. Look for the green CICOT halal diamond even in 7-Elevens, and try massaman — a Muslim-origin dish.",
+ "sectionOuPrier": "Bangkok compte plus de 160 mosquées ; celles de Bang Rak et du quartier Nana sont les plus accessibles aux voyageurs. L'aéroport Suvarnabhumi dispose de salles de prière dans plusieurs zones.",
+ "sectionOuPrier_en": "Bangkok has over 160 mosques; those in Bang Rak and the Nana area are the most traveler-friendly. Suvarnabhumi airport offers prayer rooms in several zones.",
+ "dataPurgedAt": "2026-07-15"
 }

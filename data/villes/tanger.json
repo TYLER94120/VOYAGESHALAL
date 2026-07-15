@@ -1,3423 +1,2227 @@
 {
-  "slug": "tanger",
-  "nom": "Tanger",
-  "nom_arabe": "طنجة",
-  "pays": "Maroc",
-  "pays_slug": "maroc",
-  "drapeau": "🇲🇦",
-  "region": "Afrique du Nord",
-  "coordonnees": {
-    "lat": 35.7595,
-    "lng": -5.834
+ "slug": "tanger",
+ "nom": "Tanger",
+ "nom_arabe": "طنجة",
+ "pays": "Maroc",
+ "pays_slug": "maroc",
+ "drapeau": "🇲🇦",
+ "region": "Afrique du Nord",
+ "coordonnees": {
+  "lat": 35.7595,
+  "lng": -5.834
+ },
+ "score_halal": 5,
+ "score_securite": 4,
+ "score_famille": 4,
+ "score_budget": 4,
+ "description": {
+  "court": "La perle du détroit entre Europe et Afrique, carrefour de civilisations",
+  "long": "Tanger, ville emblématique du nord du Maroc, occupe une position unique au monde : à seulement 14 km de l'Europe, au carrefour de l'Atlantique et de la Méditerranée. Pays à majorité musulmane, le halal y est la norme. La ville a connu une transformation spectaculaire ces dernières années avec le développement du port Tanger Med et une économie en plein essor. Sa médina millénaire, ses plages et son rôle historique de carrefour culturel en font une destination fascinante."
+ },
+ "statistiques": {
+  "mosquees": 19,
+  "restaurants_halal": 24,
+  "hotels_halal_friendly": 75,
+  "population": "1 million",
+  "hotels": 108
+ },
+ "infos_pratiques": {
+  "langue": "Arabe, Berbère, Français, Espagnol",
+  "monnaie": "Dirham marocain (MAD)",
+  "fuseau_horaire": "GMT+1",
+  "meilleure_periode": "Avril–juin, Septembre–octobre",
+  "visa": "Entrée libre pour ressortissants français, belges, canadiens",
+  "transport": "Taxi, bus, ferries vers Espagne"
+ },
+ "restaurants": [
+  {
+   "nom": "Mr. Tacos",
+   "lat": 35.7731981,
+   "lng": -5.8140384,
+   "type": "moroccan",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=35.7731981,-5.8140384",
+   "source": "osm"
   },
-  "score_halal": 5,
-  "score_securite": 4,
-  "score_famille": 4,
-  "score_budget": 4,
-  "description": {
-    "court": "La perle du détroit entre Europe et Afrique, carrefour de civilisations",
-    "long": "Tanger, ville emblématique du nord du Maroc, occupe une position unique au monde : à seulement 14 km de l'Europe, au carrefour de l'Atlantique et de la Méditerranée. Pays à majorité musulmane, le halal y est la norme. La ville a connu une transformation spectaculaire ces dernières années avec le développement du port Tanger Med et une économie en plein essor. Sa médina millénaire, ses plages et son rôle historique de carrefour culturel en font une destination fascinante."
+  {
+   "nom": "Dar Naji دار ناجي",
+   "lat": 35.7717159,
+   "lng": -5.8054498,
+   "type": "moroccan, local, tea",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=35.7717159,-5.8054498",
+   "source": "osm"
   },
-  "statistiques": {
-    "mosquees": 340,
-    "restaurants_halal": 800,
-    "hotels_halal_friendly": 75,
-    "population": "1 million",
-    "hotels": 115
+  {
+   "nom": "Chicken Mbarek",
+   "lat": 35.7774666,
+   "lng": -5.8097411,
+   "type": "moroccan",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=35.7774666,-5.8097411",
+   "source": "osm"
   },
-  "infos_pratiques": {
-    "langue": "Arabe, Berbère, Français, Espagnol",
-    "monnaie": "Dirham marocain (MAD)",
-    "fuseau_horaire": "GMT+1",
-    "meilleure_periode": "Avril–juin, Septembre–octobre",
-    "visa": "Entrée libre pour ressortissants français, belges, canadiens",
-    "transport": "Taxi, bus, ferries vers Espagne"
+  {
+   "nom": "Sarayah food",
+   "lat": 35.7782187,
+   "lng": -5.8098772,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=35.7782187,-5.8098772",
+   "source": "osm"
   },
-  "restaurants": [
-    {
-      "id": "r1",
-      "nom": "El Morocco Club",
-      "adresse": "Place du Grand Socco, Médina",
-      "cuisine": "Marocaine gastronomique",
-      "specialite": "Tajine royal et pastilla",
-      "certification": "Halal",
-      "prix_moyen": "200–400 MAD",
-      "note": 4.8,
-      "halalScore": {
-        "global": 10,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 576,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "Halal"
-      },
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.8,
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=El+Morocco+Club+Tanger",
-      "nombreAvis": 676,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ]
-    },
-    {
-      "id": "r2",
-      "nom": "Restaurant Saveur de Poisson",
-      "adresse": "2 Escalier Waller, Médina",
-      "cuisine": "Poissons et fruits de mer halal",
-      "specialite": "Mérou grillé sauce chermoula",
-      "certification": "Halal",
-      "prix_moyen": "150–250 MAD",
-      "note": 4.9,
-      "halalScore": {
-        "global": 10,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 588,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "Halal"
-      },
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.9,
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Saveur+de+Poisson+Tanger",
-      "nombreAvis": 2251,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ]
-    },
-    {
-      "id": "r3",
-      "nom": "Dar Nour",
-      "adresse": "20 Rue Gourna, Médina",
-      "cuisine": "Marocaine & fusion",
-      "specialite": "Bastilla au poisson",
-      "certification": "Halal",
-      "prix_moyen": "180–320 MAD",
-      "note": 4.7,
-      "halalScore": {
-        "global": 10,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 564,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "Halal"
-      },
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.7,
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Dar+Nour+Tanger",
-      "nombreAvis": 1344,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ]
-    },
-    {
-      "id": "r4",
-      "nom": "Le Nabab",
-      "adresse": "Place du 9 Avril, Médina",
-      "cuisine": "Marocaine traditionnelle",
-      "specialite": "Couscous aux 7 légumes",
-      "certification": "Halal",
-      "prix_moyen": "100–200 MAD",
-      "note": 4.5,
-      "halalScore": {
-        "global": 10,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 540,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "Halal"
-      },
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.5,
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Le+Nabab+Tanger",
-      "nombreAvis": 2197,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "lat": 35.7846267,
-      "lng": -5.812916,
-      "geocoded": true
-    },
-    {
-      "id": "r5",
-      "nom": "Restaurant Rif",
-      "adresse": "Ave Mohammed VI, Ville Nouvelle",
-      "cuisine": "Marocaine & grill",
-      "specialite": "Brochettes d'agneau et merguez",
-      "certification": "Halal",
-      "prix_moyen": "80–160 MAD",
-      "note": 4.3,
-      "halalScore": {
-        "global": 10,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 516,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "Halal"
-      },
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.3,
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Rif+Tanger",
-      "nombreAvis": 561,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ]
-    },
-    {
-      "id": "r6",
-      "nom": "Salon Bleu",
-      "adresse": "Médina, vue sur détroit",
-      "cuisine": "Marocaine légère",
-      "specialite": "Sandwichs et salades halal",
-      "certification": "Halal",
-      "prix_moyen": "60–120 MAD",
-      "note": 4.4,
-      "halalScore": {
-        "global": 10,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 528,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "Halal"
-      },
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.4,
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Salon+Bleu+Tanger",
-      "nombreAvis": 2304,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ]
-    },
-    {
-      "id": "r7",
-      "nom": "Atlas Asma",
-      "adresse": "Rue de Fès, Tanger",
-      "cuisine": "Marocaine & kebab",
-      "specialite": "Kefta et harira",
-      "certification": "Halal",
-      "prix_moyen": "50–100 MAD",
-      "note": 4.2,
-      "halalScore": {
-        "global": 10,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 504,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "Halal"
-      },
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.2,
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Atlas+Asma+Tanger",
-      "nombreAvis": 1329,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "lat": 35.7723201,
-      "lng": -5.8139136,
-      "geocoded": true
-    },
-    {
-      "id": "r8",
-      "nom": "Restaurant Populaire Saaada",
-      "adresse": "Escalier Siaghine, Médina",
-      "cuisine": "Populaire marocaine",
-      "specialite": "Msemen, beghrir, café",
-      "certification": "Halal",
-      "prix_moyen": "30–70 MAD",
-      "note": 4.5,
-      "halalScore": {
-        "global": 10,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 540,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "Halal"
-      },
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.5,
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Populaire+Saaada+Tanger",
-      "nombreAvis": 888,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ]
-    },
-    {
-      "id": "r9",
-      "nom": "Le Détroit",
-      "adresse": "Front de mer, Tanger",
-      "cuisine": "Méditerranéenne halal",
-      "specialite": "Paella halal aux fruits de mer",
-      "certification": "Halal",
-      "prix_moyen": "120–250 MAD",
-      "note": 4.4,
-      "halalScore": {
-        "global": 10,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 528,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "Halal"
-      },
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Le+D%C3%A9troit+Tanger",
-      "nombreAvis": 79,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ]
-    },
-    {
-      "id": "r10",
-      "nom": "Casa Pepe Halal",
-      "adresse": "Port de Tanger",
-      "cuisine": "Fruits de mer halal",
-      "specialite": "Daurade royale grillée",
-      "certification": "Halal",
-      "prix_moyen": "100–200 MAD",
-      "note": 4.3,
-      "halalScore": {
-        "global": 10,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 516,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "Halal"
-      },
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.3,
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Casa+Pepe+Halal+Tanger",
-      "nombreAvis": 268,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "lat": 35.7895097,
-      "lng": -5.8069982,
-      "geocoded": true
-    },
-    {
-      "id": "r11",
-      "nom": "Snack Medina Fast",
-      "adresse": "Rue Siaghine, Médina",
-      "cuisine": "Street food halal",
-      "specialite": "Brochettes, sandwichs",
-      "certification": "Halal",
-      "prix_moyen": "20–60 MAD",
-      "note": 4.1,
-      "halalScore": {
-        "global": 10,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 492,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "Halal"
-      },
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.1,
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Snack+Medina+Fast+Tanger",
-      "nombreAvis": 227,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "lat": 35.785206,
-      "lng": -5.811794,
-      "geocoded": true
-    },
-    {
-      "id": "r12",
-      "nom": "La Grenouille",
-      "adresse": "Rue Rembrandt, Ville Nouvelle",
-      "cuisine": "Franco-marocaine",
-      "specialite": "Tajine de poulet aux olives",
-      "certification": "Halal",
-      "prix_moyen": "100–200 MAD",
-      "note": 4.3,
-      "halalScore": {
-        "global": 10,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 516,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "Halal"
-      },
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.3,
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=La+Grenouille+Tanger",
-      "nombreAvis": 468,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ]
-    },
-    {
-      "id": "r13",
-      "nom": "Hôtel Continental Restaurant",
-      "adresse": "36 Dar Baroud, Médina",
-      "cuisine": "Internationale halal",
-      "specialite": "Buffet marocain traditionnel",
-      "certification": "Halal",
-      "prix_moyen": "150–280 MAD",
-      "note": 4.6,
-      "halalScore": {
-        "global": 10,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 552,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "Halal"
-      },
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=H%C3%B4tel+Continental+Restaurant+Tanger",
-      "nombreAvis": 2477,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "lat": 35.7875191,
-      "lng": -5.8095229,
-      "geocoded": true
-    },
-    {
-      "id": "r14",
-      "nom": "Pizzeria Napolitaine Halal",
-      "adresse": "Ave des FAR, Tanger",
-      "cuisine": "Italienne halal",
-      "specialite": "Pizza au poulet et légumes",
-      "certification": "Halal signalé",
-      "prix_moyen": "70–130 MAD",
-      "note": 4,
-      "halalScore": {
-        "global": 10,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 480,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "Halal signalé"
-      },
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4,
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Pizzeria+Napolitaine+Halal+Tanger",
-      "nombreAvis": 1496,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ]
-    },
-    {
-      "id": "r15",
-      "nom": "Restaurant Guitta",
-      "adresse": "Rue Ibn Batouta, Ville Nouvelle",
-      "cuisine": "Marocaine & grill",
-      "specialite": "Poisson de l'Atlantique grillé",
-      "certification": "Halal",
-      "prix_moyen": "80–160 MAD",
-      "note": 4.2,
-      "halalScore": {
-        "global": 10,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 504,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "Halal"
-      },
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.2,
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Guitta+Tanger",
-      "nombreAvis": 99,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ]
-    },
-    {
-      "nom": "Dar Zellige",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Tanger",
-      "description": "Adresse marocain appréciée à Tanger, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Dar+Zellige+Tanger",
-      "priceRange": "€€",
-      "specialite": "Tajine d'agneau",
-      "nombreAvis": 1853,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r16",
-      "lat": 35.7696302,
-      "lng": -5.8033522,
-      "geocoded": true
-    },
-    {
-      "nom": "Riad Saveurs",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Tanger",
-      "description": "Adresse traditionnel local appréciée à Tanger, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Riad+Saveurs+Tanger",
-      "priceRange": "€€",
-      "specialite": "Couscous royal",
-      "nombreAvis": 1611,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r17",
-      "lat": 35.7696302,
-      "lng": -5.8033522,
-      "geocoded": true
-    },
-    {
-      "nom": "Chez Lamine",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Tanger",
-      "description": "Adresse grillades & kebab appréciée à Tanger, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Chez+Lamine+Tanger",
-      "priceRange": "€",
-      "specialite": "Brochettes mixtes",
-      "nombreAvis": 922,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r18",
-      "lat": 35.7696302,
-      "lng": -5.8033522,
-      "geocoded": true
-    },
-    {
-      "nom": "Le Foundouk",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Tanger",
-      "description": "Adresse gastronomique appréciée à Tanger, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Le+Foundouk+Tanger",
-      "priceRange": "€€€",
-      "specialite": "Pastilla au pigeon",
-      "nombreAvis": 2577,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r19",
-      "lat": 35.7696302,
-      "lng": -5.8033522,
-      "geocoded": true
-    },
-    {
-      "nom": "Pâtisserie Andalous",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Tanger",
-      "description": "Adresse pâtisserie & café appréciée à Tanger, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=P%C3%A2tisserie+Andalous+Tanger",
-      "priceRange": "€",
-      "specialite": "Cornes de gazelle",
-      "nombreAvis": 1879,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "rapide"
-      ],
-      "id": "r20",
-      "lat": 35.7696302,
-      "lng": -5.8033522,
-      "geocoded": true
-    },
-    {
-      "nom": "Mr. Tacos",
-      "lat": 35.7731981,
-      "lng": -5.8140384,
-      "type": "moroccan",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=35.7731981,-5.8140384",
-      "source": "osm"
-    },
-    {
-      "nom": "Dar Naji دار ناجي",
-      "lat": 35.7717159,
-      "lng": -5.8054498,
-      "type": "moroccan, local, tea",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=35.7717159,-5.8054498",
-      "source": "osm"
-    },
-    {
-      "nom": "Chicken Mbarek",
-      "lat": 35.7774666,
-      "lng": -5.8097411,
-      "type": "moroccan",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=35.7774666,-5.8097411",
-      "source": "osm"
-    },
-    {
-      "nom": "Sarayah food",
-      "lat": 35.7782187,
-      "lng": -5.8098772,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=35.7782187,-5.8098772",
-      "source": "osm"
-    },
-    {
-      "nom": "Restaurant Bachir",
-      "lat": 35.7794197,
-      "lng": -5.810983,
-      "type": "moroccan",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=35.7794197,-5.810983",
-      "source": "osm"
-    },
-    {
-      "nom": "Comedia",
-      "lat": 35.7787802,
-      "lng": -5.8077727,
-      "type": "breakfast, ice cream, crepe, diner, moroccan, coffee shop",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=35.7787802,-5.8077727",
-      "source": "osm"
-    },
-    {
-      "nom": "Number-One",
-      "lat": 35.7796663,
-      "lng": -5.808379,
-      "type": "fish, french, moroccan",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=35.7796663,-5.808379",
-      "source": "osm"
-    },
-    {
-      "nom": "3and Miloud, Bissara",
-      "lat": 35.7836869,
-      "lng": -5.8143446,
-      "type": "moroccan",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=35.7836869,-5.8143446",
-      "source": "osm"
-    },
-    {
-      "nom": "Romeo",
-      "lat": 35.7781914,
-      "lng": -5.8042879,
-      "type": "moroccan",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=35.7781914,-5.8042879",
-      "source": "osm"
-    },
-    {
-      "nom": "Yemma Yenou",
-      "lat": 35.7830942,
-      "lng": -5.8084091,
-      "type": "arab, burger, chicken, coffee shop, fish, fish and chips, grill",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=35.7830942,-5.8084091",
-      "source": "osm"
-    },
-    {
-      "nom": "Abou Tayssir",
-      "lat": 35.7864705,
-      "lng": -5.8134839,
-      "type": "falafel, syrian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=35.7864705,-5.8134839",
-      "source": "osm"
-    },
-    {
-      "nom": "Ahlen",
-      "lat": 35.7853135,
-      "lng": -5.8099199,
-      "type": "moroccan",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=35.7853135,-5.8099199",
-      "source": "osm"
-    },
-    {
-      "nom": "Dada",
-      "lat": 35.7865118,
-      "lng": -5.8107452,
-      "type": "moroccan",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=35.7865118,-5.8107452",
-      "source": "osm"
-    },
-    {
-      "nom": "La Terraza De La Medina",
-      "lat": 35.7878147,
-      "lng": -5.8120069,
-      "type": "international, moroccan",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=35.7878147,-5.8120069",
-      "source": "osm"
-    },
-    {
-      "nom": "La Geletaria",
-      "lat": 35.7773052,
-      "lng": -5.7990635,
-      "type": "burger, sandwich, ice cream, crepe, cake, coffee shop, bagel, pancake, arab, italian pizza, oriental, breakfast, savory pancakes, tea, sausage, friture, deli",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=35.7773052,-5.7990635",
-      "source": "osm"
-    },
-    {
-      "nom": "Kebdani Restaurant",
-      "lat": 35.7864565,
-      "lng": -5.8094805,
-      "type": "arab",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=35.7864565,-5.8094805",
-      "source": "osm"
-    },
-    {
-      "nom": "Nord-Pinus Restaurant",
-      "lat": 35.7889455,
-      "lng": -5.813482,
-      "type": "moroccan, fish, fresh, local",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=35.7889455,-5.813482",
-      "source": "osm"
-    },
-    {
-      "nom": "Maison La Ruche",
-      "lat": 35.7763858,
-      "lng": -5.7961693,
-      "type": "burger, ice cream, crepe, coffee shop, pasta, bagel, pancake, pizza, chicken, italian pizza, fish, hotdog, savory pancakes, sausage, moroccan, friture, deli",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=35.7763858,-5.7961693",
-      "source": "osm"
-    },
-    {
-      "nom": "ANZAR Morocco",
-      "lat": 35.7824241,
-      "lng": -5.7991199,
-      "type": "international, lebanese, regional",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=35.7824241,-5.7991199",
-      "source": "osm"
-    },
-    {
-      "nom": "Puerto Rico Cafe",
-      "lat": 35.774664,
-      "lng": -5.788424,
-      "type": "coffee shop, crepe, moroccan",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=35.774664,-5.788424",
-      "source": "osm"
-    },
-    {
-      "nom": "Café Panorama",
-      "lat": 35.7758148,
-      "lng": -5.7869988,
-      "type": "breakfast, coffee shop, crepe, french, ice cream, pizza, sandwich, moroccan, local",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=35.7758148,-5.7869988",
-      "source": "osm"
-    },
-    {
-      "nom": "Restaurante Mesana Tanger",
-      "lat": 35.7758175,
-      "lng": -5.7856324,
-      "type": "spanish, mediterranean",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=35.7758175,-5.7856324",
-      "source": "osm"
-    },
-    {
-      "nom": "Snack la linea",
-      "lat": 35.7668219,
-      "lng": -5.7648952,
-      "type": "pizza, regional, burger, sandwich",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=35.7668219,-5.7648952",
-      "source": "osm"
-    },
-    {
-      "nom": "RR Ice Cafe",
-      "lat": 35.7883914,
-      "lng": -5.7599003,
-      "type": "breakfast, coffee shop, crepe, french, moroccan, local, sandwich",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=35.7883914,-5.7599003",
-      "source": "osm"
-    }
-  ],
-  "mosquees": [
-    {
-      "id": "m-001",
-      "nom": "Grande Mosquée de Tanger",
-      "adresse": "Médina, Place de la Kasbah",
-      "type": "Grande mosquée",
-      "capacite": 5000,
-      "annee_construction": 1684,
-      "style_architectural": "Mauresque",
-      "note": 4.8
-    },
-    {
-      "id": "m-002",
-      "nom": "Mosquée Sidi Bou Abib",
-      "adresse": "Grand Socco, Tanger",
-      "type": "Mosquée historique",
-      "capacite": 2000,
-      "annee_construction": 1917,
-      "style_architectural": "Mauresque-Art déco",
-      "note": 4.7
-    },
-    {
-      "id": "m-003",
-      "nom": "Mosquée Mohammed V",
-      "adresse": "Ville Nouvelle, Tanger",
-      "type": "Mosquée moderne",
-      "capacite": 3000,
-      "annee_construction": 1976,
-      "style_architectural": "Marocain moderne",
-      "note": 4.5
-    },
-    {
-      "id": "m-004",
-      "nom": "Mosquée de la Kasbah",
-      "adresse": "Place de la Kasbah, Médina",
-      "type": "Historique",
-      "capacite": 1500,
-      "annee_construction": "XVIIe siècle",
-      "style_architectural": "Mauresque",
-      "note": 4.9
-    },
-    {
-      "id": "m-005",
-      "nom": "Mosquée Aïn Khayam",
-      "adresse": "Quartier Malabata",
-      "type": "Mosquée de quartier",
-      "capacite": 800,
-      "annee_construction": 1995,
-      "style_architectural": "Marocain contemporain",
-      "note": 4.3
-    }
-  ],
-  "hotels": [
-    {
-      "id": "h1",
-      "nom": "El Minzah Hotel",
-      "adresse": "85 Rue de la Liberté",
-      "categorie": "Standard",
-      "prix_nuit": "150–350 €",
-      "halal_friendly": true,
-      "sans_alcool": false,
-      "piscine": true,
-      "note": 4.7,
-      "halalScore": {
-        "global": 8,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": false,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 564,
-        "derniereVerification": "2026-05",
-        "badge": "HALAL VÉRIFIÉ",
-        "organisationCertification": "ONSSA Halal"
-      },
-      "score": 4.7,
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "priceRange": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=El+Minzah+Hotel+Tanger",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Tanger&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Tanger",
-      "nombreAvis": 1265,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "lat": 35.7818736,
-      "lng": -5.8124092
-    },
-    {
-      "id": "h2",
-      "nom": "Hôtel Continental",
-      "adresse": "36 Dar Baroud, Médina",
-      "categorie": "Standard",
-      "prix_nuit": "80–180 €",
-      "halal_friendly": true,
-      "sans_alcool": true,
-      "piscine": false,
-      "note": 4.5,
-      "halalScore": {
-        "global": 10,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 540,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "ONSSA Halal"
-      },
-      "score": 4.5,
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "priceRange": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=H%C3%B4tel+Continental+Tanger",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Tanger&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Tanger",
-      "nombreAvis": 1648,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "lat": 35.7875191,
-      "lng": -5.8095229
-    },
-    {
-      "id": "h3",
-      "nom": "Riad Tanja",
-      "adresse": "Médina de Tanger",
-      "categorie": "Riad & Boutique",
-      "prix_nuit": "100–220 €",
-      "halal_friendly": true,
-      "sans_alcool": true,
-      "piscine": false,
-      "note": 4.6,
-      "halalScore": {
-        "global": 10,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 552,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "ONSSA Halal"
-      },
-      "score": 4.6,
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "priceRange": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=Riad+Tanja+Tanger",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Tanger&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Tanger",
-      "nombreAvis": 2234,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "lat": 35.7837408,
-      "lng": -5.8109191
-    },
-    {
-      "id": "h4",
-      "nom": "Movenpick Tanger",
-      "adresse": "Ave Pasteur",
-      "categorie": "Standard",
-      "prix_nuit": "120–280 €",
-      "halal_friendly": true,
-      "sans_alcool": false,
-      "piscine": true,
-      "note": 4.4,
-      "halalScore": {
-        "global": 8,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": false,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 528,
-        "derniereVerification": "2026-05",
-        "badge": "HALAL VÉRIFIÉ",
-        "organisationCertification": "ONSSA Halal"
-      },
-      "score": 4.4,
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "priceRange": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=Movenpick+Tanger+Tanger",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Tanger&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Tanger",
-      "nombreAvis": 1733,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "lat": 35.7844235,
-      "lng": -5.7634487
-    },
-    {
-      "nom": "Ibrahim",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7581192,-5.8387196",
-      "lat": 35.7581192,
-      "lng": -5.8387196,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7581192,-5.8387196",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Ahlen",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7462371,-5.8401322",
-      "lat": 35.7462371,
-      "lng": -5.8401322,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7462371,-5.8401322",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Etoile du Nord",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7727956,-5.8158208",
-      "lat": 35.7727956,
-      "lng": -5.8158208,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7727956,-5.8158208",
-      "source": "osm"
-    },
-    {
-      "nom": "Hôtel Andalucia Golf Tanger",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7779473,-5.8476977",
-      "lat": 35.7779473,
-      "lng": -5.8476977,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7779473,-5.8476977",
-      "source": "osm"
-    },
-    {
-      "nom": "ANAPEC",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7726599,-5.8078148",
-      "lat": 35.7726599,
-      "lng": -5.8078148,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7726599,-5.8078148",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Chellah",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7773339,-5.8109016",
-      "lat": 35.7773339,
-      "lng": -5.8109016,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7773339,-5.8109016",
-      "source": "osm"
-    },
-    {
-      "nom": "Pension Safari",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7803844,-5.8145883",
-      "lat": 35.7803844,
-      "lng": -5.8145883,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7803844,-5.8145883",
-      "source": "osm"
-    },
-    {
-      "nom": "Fairmont Tazi Palace",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.78187,-5.850714",
-      "lat": 35.78187,
-      "lng": -5.850714,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.78187,-5.850714",
-      "source": "osm"
-    },
-    {
-      "nom": "Atlas Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.778715,-5.812096",
-      "lat": 35.778715,
-      "lng": -5.812096,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.778715,-5.812096",
-      "source": "osm"
-    },
-    {
-      "nom": "Appart Hotel Rania",
-      "categorie": "Hôtel",
-      "priceRange": "€€€",
-      "score": 3,
-      "mapsUrl": "https://maps.google.com/?q=35.7764457,-5.8094079",
-      "lat": 35.7764457,
-      "lng": -5.8094079,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.raniaapparthotel.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Fatima",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.78478,-5.824052",
-      "lat": 35.78478,
-      "lng": -5.824052,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.78478,-5.824052",
-      "source": "osm"
-    },
-    {
-      "nom": "Maison fertat",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7848162,-5.8241028",
-      "lat": 35.7848162,
-      "lng": -5.8241028,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7848162,-5.8241028",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Picasso",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7798625,-5.8122908",
-      "lat": 35.7798625,
-      "lng": -5.8122908,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7798625,-5.8122908",
-      "source": "osm"
-    },
-    {
-      "nom": "Pension Hollanda",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7814362,-5.8144808",
-      "lat": 35.7814362,
-      "lng": -5.8144808,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7814362,-5.8144808",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Nezha",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7769502,-5.8083722",
-      "lat": 35.7769502,
-      "lng": -5.8083722,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7769502,-5.8083722",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Astoria",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7799894,-5.81185",
-      "lat": 35.7799894,
-      "lng": -5.81185,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7799894,-5.81185",
-      "source": "osm"
-    },
-    {
-      "nom": "Miramonte swimming pool",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7600779,-5.8003341",
-      "lat": 35.7600779,
-      "lng": -5.8003341,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7600779,-5.8003341",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Al Haceima",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7800429,-5.8113403",
-      "lat": 35.7800429,
-      "lng": -5.8113403,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7800429,-5.8113403",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Atlal",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7799919,-5.811241",
-      "lat": 35.7799919,
-      "lng": -5.811241,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7799919,-5.811241",
-      "source": "osm"
-    },
-    {
-      "nom": "Grand Hôtel Ville de France",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 5,
-      "mapsUrl": "https://maps.google.com/?q=35.7823335,-5.8145336",
-      "lat": 35.7823335,
-      "lng": -5.8145336,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7823335,-5.8145336",
-      "source": "osm"
-    },
-    {
-      "nom": "Fredj Hotel & Spa",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.781941,-5.8138274",
-      "lat": 35.781941,
-      "lng": -5.8138274,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.781941,-5.8138274",
-      "source": "osm"
-    },
-    {
-      "nom": "Pension Gibraltar",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7818351,-5.8126378",
-      "lat": 35.7818351,
-      "lng": -5.8126378,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7818351,-5.8126378",
-      "source": "osm"
-    },
-    {
-      "nom": "Flandria",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7794919,-5.8087019",
-      "lat": 35.7794919,
-      "lng": -5.8087019,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7794919,-5.8087019",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Rembrandt",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7799135,-5.8084522",
-      "lat": 35.7799135,
-      "lng": -5.8084522,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.rembrandthotel.ma/",
-      "source": "osm"
-    },
-    {
-      "nom": "Diafa hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7876892,-5.8248124",
-      "lat": 35.7876892,
-      "lng": -5.8248124,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7876892,-5.8248124",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel El Muniria",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7809109,-5.8082225",
-      "lat": 35.7809109,
-      "lng": -5.8082225,
-      "halalFriendly": false,
-      "bookingUrl": "https://m.facebook.com/pages/category/Beach-Resort/Hotel-El-Muniria-1591866301086271/",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Magellan",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.781027,-5.8076782",
-      "lat": 35.781027,
-      "lng": -5.8076782,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.781027,-5.8076782",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Royal",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7825641,-5.8094375",
-      "lat": 35.7825641,
-      "lng": -5.8094375,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7825641,-5.8094375",
-      "source": "osm"
-    },
-    {
-      "nom": "El Toro Hôtel by Expert Book",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.762731,-5.7964596",
-      "lat": 35.762731,
-      "lng": -5.7964596,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.eltorohotel.ma/",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel L'marsa",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7817169,-5.8076723",
-      "lat": 35.7817169,
-      "lng": -5.8076723,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7817169,-5.8076723",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Marrakech",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7845878,-5.811847",
-      "lat": 35.7845878,
-      "lng": -5.811847,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7845878,-5.811847",
-      "source": "osm"
-    },
-    {
-      "nom": "El Djenina",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7804828,-5.8058373",
-      "lat": 35.7804828,
-      "lng": -5.8058373,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7804828,-5.8058373",
-      "source": "osm"
-    },
-    {
-      "nom": "Marina Bay",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "score": 2,
-      "mapsUrl": "https://maps.google.com/?q=35.7809993,-5.8063425",
-      "lat": 35.7809993,
-      "lng": -5.8063425,
-      "halalFriendly": false,
-      "bookingUrl": "http://www.marco-polo.ma",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Valencia",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7825633,-5.8083233",
-      "lat": 35.7825633,
-      "lng": -5.8083233,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7825633,-5.8083233",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Touahine",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7850605,-5.8120524",
-      "lat": 35.7850605,
-      "lng": -5.8120524,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7850605,-5.8120524",
-      "source": "osm"
-    },
-    {
-      "nom": "TanjaLucia Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7853861,-5.8122175",
-      "lat": 35.7853861,
-      "lng": -5.8122175,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7853861,-5.8122175",
-      "source": "osm"
-    },
-    {
-      "nom": "Baytalice",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7843595,-5.8100625",
-      "lat": 35.7843595,
-      "lng": -5.8100625,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7843595,-5.8100625",
-      "source": "osm"
-    },
-    {
-      "nom": "Lalla Soulja",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7875441,-5.8161141",
-      "lat": 35.7875441,
-      "lng": -5.8161141,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7875441,-5.8161141",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Mokhtar",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7878895,-5.8159074",
-      "lat": 35.7878895,
-      "lng": -5.8159074,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7878895,-5.8159074",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Amr Tanger",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7865987,-5.8127759",
-      "lat": 35.7865987,
-      "lng": -5.8127759,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7865987,-5.8127759",
-      "source": "osm"
-    },
-    {
-      "nom": "Miramar",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7789864,-5.8024767",
-      "lat": 35.7789864,
-      "lng": -5.8024767,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7789864,-5.8024767",
-      "source": "osm"
-    },
-    {
-      "nom": "Dar Nakhla Naciria",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7860216,-5.8115705",
-      "lat": 35.7860216,
-      "lng": -5.8115705,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7860216,-5.8115705",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Mauritania",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7855923,-5.8107584",
-      "lat": 35.7855923,
-      "lng": -5.8107584,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7855923,-5.8107584",
-      "source": "osm"
-    },
-    {
-      "nom": "Dar Medina Tanger",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.786641,-5.812604",
-      "lat": 35.786641,
-      "lng": -5.812604,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.786641,-5.812604",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel fuentes",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7854965,-5.8103791",
-      "lat": 35.7854965,
-      "lng": -5.8103791,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7854965,-5.8103791",
-      "source": "osm"
-    },
-    {
-      "nom": "Tangiers Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7872155,-5.8135537",
-      "lat": 35.7872155,
-      "lng": -5.8135537,
-      "halalFriendly": false,
-      "bookingUrl": "https://tangiershostel.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Star",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7595176,-5.7940826",
-      "lat": 35.7595176,
-      "lng": -5.7940826,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7595176,-5.7940826",
-      "source": "osm"
-    },
-    {
-      "nom": "Soofstay",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.776524,-5.7999",
-      "lat": 35.776524,
-      "lng": -5.7999,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.776524,-5.7999",
-      "source": "osm"
-    },
-    {
-      "nom": "Palais Zahia",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7857188,-5.8102994",
-      "lat": 35.7857188,
-      "lng": -5.8102994,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7857188,-5.8102994",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Mamora Tanger",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7853591,-5.8097062",
-      "lat": 35.7853591,
-      "lng": -5.8097062,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7853591,-5.8097062",
-      "source": "osm"
-    },
-    {
-      "nom": "Maram",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7856777,-5.8102185",
-      "lat": 35.7856777,
-      "lng": -5.8102185,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7856777,-5.8102185",
-      "source": "osm"
-    },
-    {
-      "nom": "Dar Nour",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7878602,-5.8141884",
-      "lat": 35.7878602,
-      "lng": -5.8141884,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.darnour.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Dar Sharif Tanger",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7872341,-5.8128807",
-      "lat": 35.7872341,
-      "lng": -5.8128807,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7872341,-5.8128807",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Sultana",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7864842,-5.8112627",
-      "lat": 35.7864842,
-      "lng": -5.8112627,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.riadsultana.ma/",
-      "source": "osm"
-    },
-    {
-      "nom": "Hôtel Olid",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7853659,-5.8093364",
-      "lat": 35.7853659,
-      "lng": -5.8093364,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7853659,-5.8093364",
-      "source": "osm"
-    },
-    {
-      "nom": "Kasbah Rose",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7880195,-5.8142125",
-      "lat": 35.7880195,
-      "lng": -5.8142125,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7880195,-5.8142125",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Eloumnia Puerto",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7764297,-5.7994639",
-      "lat": 35.7764297,
-      "lng": -5.7994639,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7764297,-5.7994639",
-      "source": "osm"
-    },
-    {
-      "nom": "Kasba Blanca",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7879623,-5.8140388",
-      "lat": 35.7879623,
-      "lng": -5.8140388,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7879623,-5.8140388",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel mauritania center tanger",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7860966,-5.8104283",
-      "lat": 35.7860966,
-      "lng": -5.8104283,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7860966,-5.8104283",
-      "source": "osm"
-    },
-    {
-      "nom": "Dar Tinjaa",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.786893,-5.8117719",
-      "lat": 35.786893,
-      "lng": -5.8117719,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.786893,-5.8117719",
-      "source": "osm"
-    },
-    {
-      "nom": "El Oumnia Puerto Hôtel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.776653,-5.799477",
-      "lat": 35.776653,
-      "lng": -5.799477,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.776653,-5.799477",
-      "source": "osm"
-    },
-    {
-      "nom": "Dar Sekka",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7859938,-5.8100307",
-      "lat": 35.7859938,
-      "lng": -5.8100307,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7859938,-5.8100307",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Sheherazade",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7780015,-5.8005132",
-      "lat": 35.7780015,
-      "lng": -5.8005132,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7780015,-5.8005132",
-      "source": "osm"
-    },
-    {
-      "nom": "Kasba Green",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7880911,-5.8138844",
-      "lat": 35.7880911,
-      "lng": -5.8138844,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7880911,-5.8138844",
-      "source": "osm"
-    },
-    {
-      "nom": "Zoco Riad",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.786763,-5.8110632",
-      "lat": 35.786763,
-      "lng": -5.8110632,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.786763,-5.8110632",
-      "source": "osm"
-    },
-    {
-      "nom": "Barceló Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7776402,-5.8000028",
-      "lat": 35.7776402,
-      "lng": -5.8000028,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7776402,-5.8000028",
-      "source": "osm"
-    },
-    {
-      "nom": "فيلا بيرلا",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7890726,-5.8159011",
-      "lat": 35.7890726,
-      "lng": -5.8159011,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7890726,-5.8159011",
-      "source": "osm"
-    },
-    {
-      "nom": "Nahda",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7855013,-5.8088626",
-      "lat": 35.7855013,
-      "lng": -5.8088626,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7855013,-5.8088626",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Arous Chamel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7870906,-5.811487",
-      "lat": 35.7870906,
-      "lng": -5.811487,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.arouschamel.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "La Di Dar",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7889484,-5.8153815",
-      "lat": 35.7889484,
-      "lng": -5.8153815,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7889484,-5.8153815",
-      "source": "osm"
-    },
-    {
-      "nom": "Airbnb",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.78613,-5.8096591",
-      "lat": 35.78613,
-      "lng": -5.8096591,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.78613,-5.8096591",
-      "source": "osm"
-    },
-    {
-      "nom": "Socco Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7863111,-5.8099448",
-      "lat": 35.7863111,
-      "lng": -5.8099448,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.soccohostel.com",
-      "source": "osm"
-    },
-    {
-      "nom": "Villa Mabrouka",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7892647,-5.8158522",
-      "lat": 35.7892647,
-      "lng": -5.8158522,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7892647,-5.8158522",
-      "source": "osm"
-    },
-    {
-      "nom": "Dar chams Tanja",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7876581,-5.8120308",
-      "lat": 35.7876581,
-      "lng": -5.8120308,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7876581,-5.8120308",
-      "source": "osm"
-    },
-    {
-      "nom": "Tangier Kasbah Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7878594,-5.8123659",
-      "lat": 35.7878594,
-      "lng": -5.8123659,
-      "halalFriendly": false,
-      "bookingUrl": "https://levartmorocco.com/st_hotel/tangier-kasbah-hsotel/",
-      "source": "osm"
-    },
-    {
-      "nom": "Maison Maggie Tangier",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7892326,-5.8153607",
-      "lat": 35.7892326,
-      "lng": -5.8153607,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7892326,-5.8153607",
-      "source": "osm"
-    },
-    {
-      "nom": "Dar Rif Kebdani",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7871368,-5.8105726",
-      "lat": 35.7871368,
-      "lng": -5.8105726,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7871368,-5.8105726",
-      "source": "osm"
-    },
-    {
-      "nom": "La Tangerina",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7890074,-5.8136072",
-      "lat": 35.7890074,
-      "lng": -5.8136072,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.latangerina.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "The Riad Hostel Tangier",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7873539,-5.8102954",
-      "lat": 35.7873539,
-      "lng": -5.8102954,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7873539,-5.8102954",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Nord-Pinus Tanger",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.788976,-5.8134831",
-      "lat": 35.788976,
-      "lng": -5.8134831,
-      "halalFriendly": false,
-      "bookingUrl": "http://nord-pinus-tanger.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Aux 3 Portes",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7894945,-5.8146104",
-      "lat": 35.7894945,
-      "lng": -5.8146104,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7894945,-5.8146104",
-      "source": "osm"
-    },
-    {
-      "nom": "Dar Jameel",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7873544,-5.8101049",
-      "lat": 35.7873544,
-      "lng": -5.8101049,
-      "halalFriendly": false,
-      "bookingUrl": "http://magicmaroc.com",
-      "source": "osm"
-    },
-    {
-      "nom": "Absinthe Guesthouse",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7875844,-5.8103183",
-      "lat": 35.7875844,
-      "lng": -5.8103183,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7875844,-5.8103183",
-      "source": "osm"
-    },
-    {
-      "nom": "Kenzi Solazur Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7764794,-5.7975217",
-      "lat": 35.7764794,
-      "lng": -5.7975217,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7764794,-5.7975217",
-      "source": "osm"
-    },
-    {
-      "nom": "Guest House Laghrib",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7877472,-5.8095753",
-      "lat": 35.7877472,
-      "lng": -5.8095753,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7877472,-5.8095753",
-      "source": "osm"
-    },
-    {
-      "nom": "Banana Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7883334,-5.8099613",
-      "lat": 35.7883334,
-      "lng": -5.8099613,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7883334,-5.8099613",
-      "source": "osm"
-    },
-    {
-      "nom": "Villa Josephine",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7941157,-5.8398178",
-      "lat": 35.7941157,
-      "lng": -5.8398178,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7941157,-5.8398178",
-      "source": "osm"
-    },
-    {
-      "nom": "Dar Gara hostel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.78848,-5.8099227",
-      "lat": 35.78848,
-      "lng": -5.8099227,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.78848,-5.8099227",
-      "source": "osm"
-    },
-    {
-      "nom": "Dar Gara",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7884754,-5.8097706",
-      "lat": 35.7884754,
-      "lng": -5.8097706,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7884754,-5.8097706",
-      "source": "osm"
-    },
-    {
-      "nom": "Moroccan Floors Suites Appart-Hôtel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7734691,-5.7936971",
-      "lat": 35.7734691,
-      "lng": -5.7936971,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7734691,-5.7936971",
-      "source": "osm"
-    },
-    {
-      "nom": "Les belles Residences (E)",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7701808,-5.7910846",
-      "lat": 35.7701808,
-      "lng": -5.7910846,
-      "halalFriendly": false,
-      "bookingUrl": "https://appartanger.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Hilton Garden Inn Tanger City Center",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 4,
-      "mapsUrl": "https://maps.google.com/?q=35.7737468,-5.7870486",
-      "lat": 35.7737468,
-      "lng": -5.7870486,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.hilton.com/en/hotels/tnggigi-hilton-garden-inn-tanger-city-center/",
-      "source": "osm"
-    },
-    {
-      "nom": "Malabata Bay Residences",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7752557,-5.7872681",
-      "lat": 35.7752557,
-      "lng": -5.7872681,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7752557,-5.7872681",
-      "source": "osm"
-    },
-    {
-      "nom": "Hilton Tangier City Center",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 5,
-      "mapsUrl": "https://maps.google.com/?q=35.7729192,-5.7861521",
-      "lat": 35.7729192,
-      "lng": -5.7861521,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.hilton.com/en/hotels/tngcchi-hilton-tangier-city-center/",
-      "source": "osm"
-    },
-    {
-      "nom": "رويال توليب سيتي سنتر",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.772873,-5.783891",
-      "lat": 35.772873,
-      "lng": -5.783891,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.772873,-5.783891",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Ibis Tanger City Center",
-      "categorie": "Hôtel",
-      "priceRange": "€€€",
-      "score": 3,
-      "mapsUrl": "https://maps.google.com/?q=35.7722727,-5.7831965",
-      "lat": 35.7722727,
-      "lng": -5.7831965,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7722727,-5.7831965",
-      "source": "osm"
-    },
-    {
-      "nom": "royal tulip",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7732844,-5.7833862",
-      "lat": 35.7732844,
-      "lng": -5.7833862,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7732844,-5.7833862",
-      "source": "osm"
-    },
-    {
-      "nom": "Ramada Encore Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7738098,-5.7793194",
-      "lat": 35.7738098,
-      "lng": -5.7793194,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7738098,-5.7793194",
-      "source": "osm"
-    },
-    {
-      "nom": "Hôtel César فندق سيزار",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7760678,-5.777888",
-      "lat": 35.7760678,
-      "lng": -5.777888,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7760678,-5.777888",
-      "source": "osm"
-    },
-    {
-      "nom": "Villa Adam",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.774458,-5.7761589",
-      "lat": 35.774458,
-      "lng": -5.7761589,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.774458,-5.7761589",
-      "source": "osm"
-    },
-    {
-      "nom": "Guest House FSTT",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7354581,-5.8934387",
-      "lat": 35.7354581,
-      "lng": -5.8934387,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7354581,-5.8934387",
-      "source": "osm"
-    },
-    {
-      "nom": "Hôtel Tarik",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7830238,-5.7667589",
-      "lat": 35.7830238,
-      "lng": -5.7667589,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.umhtarikhotel.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Mövenpick Hotel & Casino Malabata",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7844235,-5.7634487",
-      "lat": 35.7844235,
-      "lng": -5.7634487,
-      "halalFriendly": false,
-      "bookingUrl": "www.moevenpick-tangier-casino.com",
-      "source": "osm"
-    },
-    {
-      "nom": "فندق غراند موغادور",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.786917,-5.760828",
-      "lat": 35.786917,
-      "lng": -5.760828,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.786917,-5.760828",
-      "source": "osm"
-    },
-    {
-      "nom": "Ibis",
-      "categorie": "Hôtel",
-      "priceRange": "€€€",
-      "score": 3,
-      "mapsUrl": "https://maps.google.com/?q=35.7147352,-5.9043271",
-      "lat": 35.7147352,
-      "lng": -5.9043271,
-      "halalFriendly": false,
-      "bookingUrl": "www.ibishotel.com",
-      "source": "osm"
-    },
-    {
-      "nom": "Ibis Budget",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.714765,-5.9049593",
-      "lat": 35.714765,
-      "lng": -5.9049593,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.714765,-5.9049593",
-      "source": "osm"
-    },
-    {
-      "nom": "فندق فرح طنجة",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7924958,-5.7537902",
-      "lat": 35.7924958,
-      "lng": -5.7537902,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7924958,-5.7537902",
-      "source": "osm"
-    },
-    {
-      "nom": "Tanger Appartement Booking.com (А-16)",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.7666011,-5.9273867",
-      "lat": 35.7666011,
-      "lng": -5.9273867,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.7666011,-5.9273867",
-      "source": "osm"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Kasbah et musée de la Kasbah",
-      "type": "Culture & histoire",
-      "duree": "2h",
-      "prix": "20 MAD",
-      "note": 4.7,
-      "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Kasbah+et+mus%C3%A9e+de+la+Kasbah+Tanger",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Kasbah+et+mus%C3%A9e+de+la+Kasbah+Tanger",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a2",
-      "nom": "Cap Spartel et Grottes d'Hercule",
-      "type": "Nature",
-      "duree": "3h",
-      "prix": "Accès libre",
-      "note": 4.8,
-      "categorie": "Hammam & Bien-être",
-      "mapsUrl": "https://maps.google.com/?q=Cap+Spartel+et+Grottes+d%27Hercule+Tanger",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Cap+Spartel+et+Grottes+d%27Hercule+Tanger",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a3",
-      "nom": "Médina de Tanger",
-      "type": "Exploration urbaine",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "note": 4.6,
-      "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=M%C3%A9dina+de+Tanger+Tanger",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=M%C3%A9dina+de+Tanger+Tanger",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "lat": 35.7778417,
-      "lng": -5.8083562,
-      "geocoded": true
-    },
-    {
-      "id": "a4",
-      "nom": "Musée de la Fondation Lorin",
-      "type": "Art & culture",
-      "duree": "1h",
-      "prix": "Donation suggérée",
-      "note": 4.3,
-      "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+Fondation+Lorin+Tanger",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+Fondation+Lorin+Tanger",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "lat": 35.7844741,
-      "lng": -5.8116995,
-      "geocoded": true
-    },
-    {
-      "id": "a5",
-      "nom": "Plage de Tanger (Corniche)",
-      "type": "Plage",
-      "duree": "Journée",
-      "prix": "Gratuit",
-      "note": 4.2,
-      "categorie": "Nature & Plein air",
-      "mapsUrl": "https://maps.google.com/?q=Plage+de+Tanger+%28Corniche%29+Tanger",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Plage+de+Tanger+%28Corniche%29+Tanger",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a6",
-      "nom": "Détroit de Gibraltar (vue)",
-      "type": "Point de vue",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "note": 4.7,
-      "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=D%C3%A9troit+de+Gibraltar+%28vue%29+Tanger",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=D%C3%A9troit+de+Gibraltar+%28vue%29+Tanger",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a7",
-      "nom": "Grand Socco et Petit Socco",
-      "type": "Shopping & culture",
-      "duree": "1h30",
-      "prix": "Gratuit",
-      "note": 4.5,
-      "categorie": "Shopping & Souks",
-      "mapsUrl": "https://maps.google.com/?q=Grand+Socco+et+Petit+Socco+Tanger",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+Socco+et+Petit+Socco+Tanger",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a8",
-      "nom": "Excursion à Asilah (50 km)",
-      "type": "Excursion",
-      "duree": "Journée",
-      "prix": "30–60 MAD bus",
-      "note": 4.8,
-      "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Excursion+%C3%A0+Asilah+%2850+km%29+Tanger",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Excursion+%C3%A0+Asilah+%2850+km%29+Tanger",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Quartier historique de Tanger",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Tanger+Tanger",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Tanger+Tanger",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a9"
-    },
-    {
-      "nom": "Grand marché central de Tanger",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Tanger+Tanger",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Tanger+Tanger",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a10"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Tanger",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Tanger+Tanger",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Tanger+Tanger",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a11"
-    },
-    {
-      "nom": "Musée de la ville de Tanger",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Tanger+Tanger",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Tanger+Tanger",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a12"
-    },
-    {
-      "nom": "Food tour halal de Tanger",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Tanger+Tanger",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Tanger+Tanger",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a13"
-    },
-    {
-      "nom": "Hammam traditionnel de Tanger",
-      "categorie": "Bien-être & Spa",
-      "description": "Bain de vapeur et gommage selon la tradition orientale.",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Tanger+Tanger",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Tanger+Tanger",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a14"
-    },
-    {
-      "nom": "Mosquée historique de Tanger",
-      "categorie": "Religieux & Spirituel",
-      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Tanger+Tanger",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Tanger+Tanger",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a15"
-    },
-    {
-      "nom": "Parque pueblo antiguo",
-      "lat": 35.765734,
-      "lng": -5.8268894,
-      "coordonnees": {
-        "lat": 35.765734,
-        "lng": -5.8268894
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=35.765734,-5.8268894",
-      "source": "osm"
-    },
-    {
-      "nom": "قنطرة الرباط",
-      "lat": 35.7593032,
-      "lng": -5.8215051,
-      "coordonnees": {
-        "lat": 35.7593032,
-        "lng": -5.8215051
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=35.7593032,-5.8215051",
-      "source": "osm"
-    },
-    {
-      "nom": "Casa Barata Market",
-      "lat": 35.7494163,
-      "lng": -5.8315164,
-      "coordonnees": {
-        "lat": 35.7494163,
-        "lng": -5.8315164
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=35.7494163,-5.8315164",
-      "source": "osm"
-    },
-    {
-      "nom": "Souani السواني",
-      "lat": 35.7700104,
-      "lng": -5.8236111,
-      "coordonnees": {
-        "lat": 35.7700104,
-        "lng": -5.8236111
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=35.7700104,-5.8236111",
-      "source": "osm"
-    },
-    {
-      "nom": "اهلا",
-      "lat": 35.7470522,
-      "lng": -5.84055,
-      "coordonnees": {
-        "lat": 35.7470522,
-        "lng": -5.84055
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=35.7470522,-5.84055",
-      "source": "osm"
-    },
-    {
-      "nom": "Parque 20 de agosto",
-      "lat": 35.770263,
-      "lng": -5.8218066,
-      "coordonnees": {
-        "lat": 35.770263,
-        "lng": -5.8218066
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=35.770263,-5.8218066",
-      "source": "osm"
-    },
-    {
-      "nom": "اشناد",
-      "lat": 35.7401638,
-      "lng": -5.828708,
-      "coordonnees": {
-        "lat": 35.7401638,
-        "lng": -5.828708
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=35.7401638,-5.828708",
-      "source": "osm"
-    },
-    {
-      "nom": "Bir chifae بئر الشفاء",
-      "lat": 35.7438264,
-      "lng": -5.8187101,
-      "coordonnees": {
-        "lat": 35.7438264,
-        "lng": -5.8187101
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=35.7438264,-5.8187101",
-      "source": "osm"
-    },
-    {
-      "nom": "سيدي ادريس",
-      "lat": 35.7381421,
-      "lng": -5.8314545,
-      "coordonnees": {
-        "lat": 35.7381421,
-        "lng": -5.8314545
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=35.7381421,-5.8314545",
-      "source": "osm"
-    },
-    {
-      "nom": "Ain ktiouet عين قطيوط",
-      "lat": 35.7769857,
-      "lng": -5.8180438,
-      "coordonnees": {
-        "lat": 35.7769857,
-        "lng": -5.8180438
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=35.7769857,-5.8180438",
-      "source": "osm"
-    },
-    {
-      "nom": "بني مكادة القديمة",
-      "lat": 35.7445486,
-      "lng": -5.8103189,
-      "coordonnees": {
-        "lat": 35.7445486,
-        "lng": -5.8103189
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=35.7445486,-5.8103189",
-      "source": "osm"
-    },
-    {
-      "nom": "المرس",
-      "lat": 35.7366803,
-      "lng": -5.8223248,
-      "coordonnees": {
-        "lat": 35.7366803,
-        "lng": -5.8223248
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=35.7366803,-5.8223248",
-      "source": "osm"
-    },
-    {
-      "nom": "حومة العودة",
-      "lat": 35.7475728,
-      "lng": -5.8073078,
-      "coordonnees": {
-        "lat": 35.7475728,
-        "lng": -5.8073078
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=35.7475728,-5.8073078",
-      "source": "osm"
-    },
-    {
-      "nom": "Shirez Mall",
-      "lat": 35.7784942,
-      "lng": -5.8134628,
-      "coordonnees": {
-        "lat": 35.7784942,
-        "lng": -5.8134628
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=35.7784942,-5.8134628",
-      "source": "osm"
-    },
-    {
-      "nom": "حومة السعادة",
-      "lat": 35.7481459,
-      "lng": -5.8047919,
-      "coordonnees": {
-        "lat": 35.7481459,
-        "lng": -5.8047919
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=35.7481459,-5.8047919",
-      "source": "osm"
-    },
-    {
-      "nom": "Sala de Exposiciones Instituto Cervantes",
-      "lat": 35.780588,
-      "lng": -5.813555,
-      "coordonnees": {
-        "lat": 35.780588,
-        "lng": -5.813555
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=35.780588,-5.813555",
-      "source": "osm"
-    },
-    {
-      "nom": "Former British Consulate",
-      "lat": 35.7825581,
-      "lng": -5.8154497,
-      "coordonnees": {
-        "lat": 35.7825581,
-        "lng": -5.8154497
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=35.7825581,-5.8154497",
-      "source": "osm"
-    },
-    {
-      "nom": "La Terrasse des Paresseux",
-      "lat": 35.7808623,
-      "lng": -5.8117936,
-      "coordonnees": {
-        "lat": 35.7808623,
-        "lng": -5.8117936
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=35.7808623,-5.8117936",
-      "source": "osm"
-    },
-    {
-      "nom": "Gallérie Delacroix",
-      "lat": 35.7815566,
-      "lng": -5.8126923,
-      "coordonnees": {
-        "lat": 35.7815566,
-        "lng": -5.8126923
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=35.7815566,-5.8126923",
-      "source": "osm"
-    },
-    {
-      "nom": "Centre Culturel Ibn Khaldoune",
-      "lat": 35.7826245,
-      "lng": -5.8126395,
-      "coordonnees": {
-        "lat": 35.7826245,
-        "lng": -5.8126395
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=35.7826245,-5.8126395",
-      "source": "osm"
-    },
-    {
-      "nom": "Mirador",
-      "lat": 35.7873112,
-      "lng": -5.8232617,
-      "coordonnees": {
-        "lat": 35.7873112,
-        "lng": -5.8232617
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=35.7873112,-5.8232617",
-      "source": "osm"
-    },
-    {
-      "nom": "Gran Teatro Cervantes",
-      "lat": 35.7820047,
-      "lng": -5.8107017,
-      "coordonnees": {
-        "lat": 35.7820047,
-        "lng": -5.8107017
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=35.7820047,-5.8107017",
-      "source": "osm"
-    },
-    {
-      "nom": "La Terrasse",
-      "lat": 35.7838524,
-      "lng": -5.8134355,
-      "coordonnees": {
-        "lat": 35.7838524,
-        "lng": -5.8134355
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=35.7838524,-5.8134355",
-      "source": "osm"
-    },
-    {
-      "nom": "حي بوحوت",
-      "lat": 35.737987,
-      "lng": -5.80785,
-      "coordonnees": {
-        "lat": 35.737987,
-        "lng": -5.80785
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=35.737987,-5.80785",
-      "source": "osm"
-    },
-    {
-      "nom": "Bab Al Fahs",
-      "lat": 35.7847477,
-      "lng": -5.8129089,
-      "coordonnees": {
-        "lat": 35.7847477,
-        "lng": -5.8129089
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=35.7847477,-5.8129089",
-      "source": "osm"
-    },
-    {
-      "nom": "Borj des Irlandais",
-      "lat": 35.7835291,
-      "lng": -5.8108239,
-      "coordonnees": {
-        "lat": 35.7835291,
-        "lng": -5.8108239
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=35.7835291,-5.8108239",
-      "source": "osm"
-    },
-    {
-      "nom": "Merchan مرشان",
-      "lat": 35.7888529,
-      "lng": -5.8226702,
-      "coordonnees": {
-        "lat": 35.7888529,
-        "lng": -5.8226702
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=35.7888529,-5.8226702",
-      "source": "osm"
-    },
-    {
-      "nom": "Phoenician gravesite",
-      "lat": 35.7877284,
-      "lng": -5.8188606,
-      "coordonnees": {
-        "lat": 35.7877284,
-        "lng": -5.8188606
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=35.7877284,-5.8188606",
-      "source": "osm"
-    },
-    {
-      "nom": "Bab Rahbat",
-      "lat": 35.7855181,
-      "lng": -5.8124702,
-      "coordonnees": {
-        "lat": 35.7855181,
-        "lng": -5.8124702
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=35.7855181,-5.8124702",
-      "source": "osm"
-    },
-    {
-      "nom": "Plaza Toro بلاصة تورو",
-      "lat": 35.7640821,
-      "lng": -5.7956631,
-      "coordonnees": {
-        "lat": 35.7640821,
-        "lng": -5.7956631
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=35.7640821,-5.7956631",
-      "source": "osm"
-    },
-    {
-      "nom": "Palais Marshan",
-      "lat": 35.7902854,
-      "lng": -5.8254951,
-      "coordonnees": {
-        "lat": 35.7902854,
-        "lng": -5.8254951
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=35.7902854,-5.8254951",
-      "source": "osm"
-    },
-    {
-      "nom": "Musée des artistes voyageurs",
-      "lat": 35.7852836,
-      "lng": -5.8111539,
-      "coordonnees": {
-        "lat": 35.7852836,
-        "lng": -5.8111539
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=35.7852836,-5.8111539",
-      "source": "osm"
-    },
-    {
-      "nom": "Bab Jdida",
-      "lat": 35.7864219,
-      "lng": -5.81313,
-      "coordonnees": {
-        "lat": 35.7864219,
-        "lng": -5.81313
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=35.7864219,-5.81313",
-      "source": "osm"
-    },
-    {
-      "nom": "Tombeau de Ibn Batouta",
-      "lat": 35.7873044,
-      "lng": -5.8137208,
-      "coordonnees": {
-        "lat": 35.7873044,
-        "lng": -5.8137208
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=35.7873044,-5.8137208",
-      "source": "osm"
-    },
-    {
-      "nom": "Park Games",
-      "lat": 35.7919423,
-      "lng": -5.8339378,
-      "coordonnees": {
-        "lat": 35.7919423,
-        "lng": -5.8339378
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=35.7919423,-5.8339378",
-      "source": "osm"
-    },
-    {
-      "nom": "Marshan Art Gallery",
-      "lat": 35.7892924,
-      "lng": -5.8177389,
-      "coordonnees": {
-        "lat": 35.7892924,
-        "lng": -5.8177389
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=35.7892924,-5.8177389",
-      "source": "osm"
-    },
-    {
-      "nom": "Dar al-Mandub",
-      "lat": 35.7913451,
-      "lng": -5.8249149,
-      "coordonnees": {
-        "lat": 35.7913451,
-        "lng": -5.8249149
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=35.7913451,-5.8249149",
-      "source": "osm"
-    },
-    {
-      "nom": "Bab Kasbah",
-      "lat": 35.7885559,
-      "lng": -5.814848,
-      "coordonnees": {
-        "lat": 35.7885559,
-        "lng": -5.814848
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=35.7885559,-5.814848",
-      "source": "osm"
-    },
-    {
-      "nom": "Zahara",
-      "lat": 35.740872,
-      "lng": -5.8003465,
-      "coordonnees": {
-        "lat": 35.740872,
-        "lng": -5.8003465
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=35.740872,-5.8003465",
-      "source": "osm"
-    },
-    {
-      "nom": "Sépulture phénicienne",
-      "lat": 35.790974,
-      "lng": -5.8201253,
-      "coordonnees": {
-        "lat": 35.790974,
-        "lng": -5.8201253
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=35.790974,-5.8201253",
-      "source": "osm"
-    },
-    {
-      "nom": "Bab Marsa",
-      "lat": 35.7860211,
-      "lng": -5.8089216,
-      "coordonnees": {
-        "lat": 35.7860211,
-        "lng": -5.8089216
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=35.7860211,-5.8089216",
-      "source": "osm"
-    },
-    {
-      "nom": "Musée des cultures méditerranéennes",
-      "lat": 35.788326,
-      "lng": -5.8125405,
-      "coordonnees": {
-        "lat": 35.788326,
-        "lng": -5.8125405
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=35.788326,-5.8125405",
-      "source": "osm"
-    },
-    {
-      "nom": "Borj N'am",
-      "lat": 35.7892773,
-      "lng": -5.8142966,
-      "coordonnees": {
-        "lat": 35.7892773,
-        "lng": -5.8142966
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=35.7892773,-5.8142966",
-      "source": "osm"
-    },
-    {
-      "nom": "Cat's House",
-      "lat": 35.7904371,
-      "lng": -5.8167985,
-      "coordonnees": {
-        "lat": 35.7904371,
-        "lng": -5.8167985
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=35.7904371,-5.8167985",
-      "source": "osm"
-    },
-    {
-      "nom": "Château York",
-      "lat": 35.7888407,
-      "lng": -5.8116294,
-      "coordonnees": {
-        "lat": 35.7888407,
-        "lng": -5.8116294
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=35.7888407,-5.8116294",
-      "source": "osm"
-    }
-  ],
-  "codeISO": "MA",
-  "image": "https://images.unsplash.com/photo-1633264542743-c1acdb5eff0e?w=1600&q=80",
-  "continent": "Afrique",
-  "metaDescription": "Restaurants halal signalés, mosquées et guide pratique pour Tanger — Halal Trust Score 5/5.",
-  "image_hero": "https://images.unsplash.com/photo-1633264542743-c1acdb5eff0e?w=1600&q=80",
-  "mosqueesPrincipales": [
-    {
-      "nom": "Masjid Ibn Battuta مسجد ابن بطوطة",
-      "lat": 35.7674864,
-      "lng": -5.8279292,
-      "coordonnees": {
-        "lat": 35.7674864,
-        "lng": -5.8279292
-      },
-      "adresse": "Rue 135",
-      "mapsUrl": "https://maps.google.com/?q=35.7674864,-5.8279292",
-      "source": "osm"
-    },
-    {
-      "nom": "Mosquée Mekki Nassiri",
-      "lat": 35.7674841,
-      "lng": -5.8466911,
-      "coordonnees": {
-        "lat": 35.7674841,
-        "lng": -5.8466911
-      },
-      "mapsUrl": "https://maps.google.com/?q=35.7674841,-5.8466911",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Merja",
-      "lat": 35.7709487,
-      "lng": -5.8219736,
-      "coordonnees": {
-        "lat": 35.7709487,
-        "lng": -5.8219736
-      },
-      "adresse": "Avenue Haroun Errachid",
-      "mapsUrl": "https://maps.google.com/?q=35.7709487,-5.8219736",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد الريان",
-      "lat": 35.765492,
-      "lng": -5.8512822,
-      "coordonnees": {
-        "lat": 35.765492,
-        "lng": -5.8512822
-      },
-      "mapsUrl": "https://maps.google.com/?q=35.765492,-5.8512822",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Fadl llah",
-      "lat": 35.7426708,
-      "lng": -5.8402265,
-      "coordonnees": {
-        "lat": 35.7426708,
-        "lng": -5.8402265
-      },
-      "mapsUrl": "https://maps.google.com/?q=35.7426708,-5.8402265",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Al Nour",
-      "lat": 35.7451089,
-      "lng": -5.8482336,
-      "coordonnees": {
-        "lat": 35.7451089,
-        "lng": -5.8482336
-      },
-      "mapsUrl": "https://maps.google.com/?q=35.7451089,-5.8482336",
-      "source": "osm"
-    },
-    {
-      "nom": "Salle de prière",
-      "lat": 35.7843391,
-      "lng": -5.8247144,
-      "coordonnees": {
-        "lat": 35.7843391,
-        "lng": -5.8247144
-      },
-      "adresse": "Ain Hayani, Tanger",
-      "mapsUrl": "https://maps.google.com/?q=35.7843391,-5.8247144",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid",
-      "lat": 35.7861327,
-      "lng": -5.8117672,
-      "coordonnees": {
-        "lat": 35.7861327,
-        "lng": -5.8117672
-      },
-      "mapsUrl": "https://maps.google.com/?q=35.7861327,-5.8117672",
-      "source": "osm"
-    },
-    {
-      "nom": "Grand Mosquee",
-      "lat": 35.7856242,
-      "lng": -5.8096538,
-      "coordonnees": {
-        "lat": 35.7856242,
-        "lng": -5.8096538
-      },
-      "mapsUrl": "https://maps.google.com/?q=35.7856242,-5.8096538",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Complexe Nour",
-      "lat": 35.73052,
-      "lng": -5.853374,
-      "coordonnees": {
-        "lat": 35.73052,
-        "lng": -5.853374
-      },
-      "mapsUrl": "https://maps.google.com/?q=35.73052,-5.853374",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد أبو عبيدة إبن الجراح",
-      "lat": 35.7571038,
-      "lng": -5.7934673,
-      "coordonnees": {
-        "lat": 35.7571038,
-        "lng": -5.7934673
-      },
-      "adresse": "Rue Achahid Sidi Med Ben L'houcine",
-      "mapsUrl": "https://maps.google.com/?q=35.7571038,-5.7934673",
-      "source": "osm"
-    },
-    {
-      "nom": "Mosquée de la Kasbah",
-      "lat": 35.7881665,
-      "lng": -5.8126345,
-      "coordonnees": {
-        "lat": 35.7881665,
-        "lng": -5.8126345
-      },
-      "adresse": "Tanger",
-      "mapsUrl": "https://maps.google.com/?q=35.7881665,-5.8126345",
-      "source": "osm"
-    },
-    {
-      "nom": "Mosquée Arrifi مسجد الريفي",
-      "lat": 35.7593998,
-      "lng": -5.791047,
-      "coordonnees": {
-        "lat": 35.7593998,
-        "lng": -5.791047
-      },
-      "mapsUrl": "https://maps.google.com/?q=35.7593998,-5.791047",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Malabata Mall",
-      "lat": 35.7727008,
-      "lng": -5.7700141,
-      "coordonnees": {
-        "lat": 35.7727008,
-        "lng": -5.7700141
-      },
-      "adresse": "Tanger",
-      "mapsUrl": "https://maps.google.com/?q=35.7727008,-5.7700141",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد زينب أم المؤمنين",
-      "lat": 35.7758365,
-      "lng": -5.7711158,
-      "coordonnees": {
-        "lat": 35.7758365,
-        "lng": -5.7711158
-      },
-      "mapsUrl": "https://maps.google.com/?q=35.7758365,-5.7711158",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد الكنبورية",
-      "lat": 35.7103195,
-      "lng": -5.8074002,
-      "coordonnees": {
-        "lat": 35.7103195,
-        "lng": -5.8074002
-      },
-      "mapsUrl": "https://maps.google.com/?q=35.7103195,-5.8074002",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Abaqeel",
-      "lat": 35.7798671,
-      "lng": -5.7589002,
-      "coordonnees": {
-        "lat": 35.7798671,
-        "lng": -5.7589002
-      },
-      "mapsUrl": "https://maps.google.com/?q=35.7798671,-5.7589002",
-      "source": "osm"
-    },
-    {
-      "nom": "Prayer area",
-      "lat": 35.7909678,
-      "lng": -5.9232052,
-      "coordonnees": {
-        "lat": 35.7909678,
-        "lng": -5.9232052
-      },
-      "mapsUrl": "https://maps.google.com/?q=35.7909678,-5.9232052",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Alliances Darna",
-      "lat": 35.6832624,
-      "lng": -5.9339697,
-      "coordonnees": {
-        "lat": 35.6832624,
-        "lng": -5.9339697
-      },
-      "mapsUrl": "https://maps.google.com/?q=35.6832624,-5.9339697",
-      "source": "osm"
-    }
-  ],
-  "selectionsPremium": {
-    "mieuxNotes": [
-      "Restaurant Saveur de Poisson",
-      "El Morocco Club",
-      "Dar Zellige",
-      "Dar Zellige Tanger 1",
-      "Dar Nour"
-    ],
-    "meilleurRapportQualitePrix": [
-      "El Morocco Club",
-      "Restaurant Saveur de Poisson",
-      "Dar Nour",
-      "Le Nabab",
-      "Salon Bleu"
-    ],
-    "incontournables": [
-      "Dar Zellige Tanger 1",
-      "Le Foundouk",
-      "Chez Lamine Tanger 3",
-      "Hôtel Continental Restaurant",
-      "Salon Bleu"
-    ],
-    "pepitesCachees": [
-      "Le Détroit"
-    ],
-    "idealFamille": [
-      "Restaurant Saveur de Poisson",
-      "Dar Nour",
-      "Le Nabab",
-      "Restaurant Rif",
-      "Salon Bleu"
-    ],
-    "gastronomique": [
-      "El Morocco Club",
-      "Le Foundouk",
-      "Le Foundouk Tanger 4"
-    ],
-    "ouvertNuit": [
-      "Salon Bleu",
-      "Snack Medina Fast",
-      "Pizzeria Napolitaine Halal"
-    ],
-    "vueExceptionnelle": [
-      "Restaurant Saveur de Poisson",
-      "El Morocco Club",
-      "Dar Zellige"
-    ]
+  {
+   "nom": "Restaurant Bachir",
+   "lat": 35.7794197,
+   "lng": -5.810983,
+   "type": "moroccan",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=35.7794197,-5.810983",
+   "source": "osm"
   },
-  "description_en": "Tanger, in Morocco, is a halal-friendly destination with a Halal Trust Score of 5/5. Muslim travelers will find 44 halal restaurants listed, 340 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind. Best time to visit: April–June, September–October.",
-  "metaDescription_en": "Halal guide to Tanger: 44 halal restaurants listed, 340 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 5/5.",
-  "nom_en": "Tanger",
-  "boucheries": [],
-  "infos_pratiques_en": {
-    "monnaie": "Moroccan dirham (MAD)",
-    "fuseau_horaire": "GMT+1",
-    "meilleure_periode": "April–June, September–October",
-    "transport": "Taxi, bus, ferries vers Espagne"
+  {
+   "nom": "Comedia",
+   "lat": 35.7787802,
+   "lng": -5.8077727,
+   "type": "breakfast, ice cream, crepe, diner, moroccan, coffee shop",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=35.7787802,-5.8077727",
+   "source": "osm"
+  },
+  {
+   "nom": "Number-One",
+   "lat": 35.7796663,
+   "lng": -5.808379,
+   "type": "fish, french, moroccan",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=35.7796663,-5.808379",
+   "source": "osm"
+  },
+  {
+   "nom": "3and Miloud, Bissara",
+   "lat": 35.7836869,
+   "lng": -5.8143446,
+   "type": "moroccan",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=35.7836869,-5.8143446",
+   "source": "osm"
+  },
+  {
+   "nom": "Romeo",
+   "lat": 35.7781914,
+   "lng": -5.8042879,
+   "type": "moroccan",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=35.7781914,-5.8042879",
+   "source": "osm"
+  },
+  {
+   "nom": "Yemma Yenou",
+   "lat": 35.7830942,
+   "lng": -5.8084091,
+   "type": "arab, burger, chicken, coffee shop, fish, fish and chips, grill",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=35.7830942,-5.8084091",
+   "source": "osm"
+  },
+  {
+   "nom": "Abou Tayssir",
+   "lat": 35.7864705,
+   "lng": -5.8134839,
+   "type": "falafel, syrian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=35.7864705,-5.8134839",
+   "source": "osm"
+  },
+  {
+   "nom": "Ahlen",
+   "lat": 35.7853135,
+   "lng": -5.8099199,
+   "type": "moroccan",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=35.7853135,-5.8099199",
+   "source": "osm"
+  },
+  {
+   "nom": "Dada",
+   "lat": 35.7865118,
+   "lng": -5.8107452,
+   "type": "moroccan",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=35.7865118,-5.8107452",
+   "source": "osm"
+  },
+  {
+   "nom": "La Terraza De La Medina",
+   "lat": 35.7878147,
+   "lng": -5.8120069,
+   "type": "international, moroccan",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=35.7878147,-5.8120069",
+   "source": "osm"
+  },
+  {
+   "nom": "La Geletaria",
+   "lat": 35.7773052,
+   "lng": -5.7990635,
+   "type": "burger, sandwich, ice cream, crepe, cake, coffee shop, bagel, pancake, arab, italian pizza, oriental, breakfast, savory pancakes, tea, sausage, friture, deli",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=35.7773052,-5.7990635",
+   "source": "osm"
+  },
+  {
+   "nom": "Kebdani Restaurant",
+   "lat": 35.7864565,
+   "lng": -5.8094805,
+   "type": "arab",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=35.7864565,-5.8094805",
+   "source": "osm"
+  },
+  {
+   "nom": "Nord-Pinus Restaurant",
+   "lat": 35.7889455,
+   "lng": -5.813482,
+   "type": "moroccan, fish, fresh, local",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=35.7889455,-5.813482",
+   "source": "osm"
+  },
+  {
+   "nom": "Maison La Ruche",
+   "lat": 35.7763858,
+   "lng": -5.7961693,
+   "type": "burger, ice cream, crepe, coffee shop, pasta, bagel, pancake, pizza, chicken, italian pizza, fish, hotdog, savory pancakes, sausage, moroccan, friture, deli",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=35.7763858,-5.7961693",
+   "source": "osm"
+  },
+  {
+   "nom": "ANZAR Morocco",
+   "lat": 35.7824241,
+   "lng": -5.7991199,
+   "type": "international, lebanese, regional",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=35.7824241,-5.7991199",
+   "source": "osm"
+  },
+  {
+   "nom": "Puerto Rico Cafe",
+   "lat": 35.774664,
+   "lng": -5.788424,
+   "type": "coffee shop, crepe, moroccan",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=35.774664,-5.788424",
+   "source": "osm"
+  },
+  {
+   "nom": "Café Panorama",
+   "lat": 35.7758148,
+   "lng": -5.7869988,
+   "type": "breakfast, coffee shop, crepe, french, ice cream, pizza, sandwich, moroccan, local",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=35.7758148,-5.7869988",
+   "source": "osm"
+  },
+  {
+   "nom": "Restaurante Mesana Tanger",
+   "lat": 35.7758175,
+   "lng": -5.7856324,
+   "type": "spanish, mediterranean",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=35.7758175,-5.7856324",
+   "source": "osm"
+  },
+  {
+   "nom": "Snack la linea",
+   "lat": 35.7668219,
+   "lng": -5.7648952,
+   "type": "pizza, regional, burger, sandwich",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=35.7668219,-5.7648952",
+   "source": "osm"
+  },
+  {
+   "nom": "RR Ice Cafe",
+   "lat": 35.7883914,
+   "lng": -5.7599003,
+   "type": "breakfast, coffee shop, crepe, french, moroccan, local, sandwich",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=35.7883914,-5.7599003",
+   "source": "osm"
   }
+ ],
+ "mosquees": [],
+ "hotels": [
+  {
+   "nom": "Ibrahim",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7581192,-5.8387196",
+   "lat": 35.7581192,
+   "lng": -5.8387196,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7581192,-5.8387196",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Ahlen",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7462371,-5.8401322",
+   "lat": 35.7462371,
+   "lng": -5.8401322,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7462371,-5.8401322",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Etoile du Nord",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7727956,-5.8158208",
+   "lat": 35.7727956,
+   "lng": -5.8158208,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7727956,-5.8158208",
+   "source": "osm"
+  },
+  {
+   "nom": "Hôtel Andalucia Golf Tanger",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7779473,-5.8476977",
+   "lat": 35.7779473,
+   "lng": -5.8476977,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7779473,-5.8476977",
+   "source": "osm"
+  },
+  {
+   "nom": "ANAPEC",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7726599,-5.8078148",
+   "lat": 35.7726599,
+   "lng": -5.8078148,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7726599,-5.8078148",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Chellah",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7773339,-5.8109016",
+   "lat": 35.7773339,
+   "lng": -5.8109016,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7773339,-5.8109016",
+   "source": "osm"
+  },
+  {
+   "nom": "Pension Safari",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7803844,-5.8145883",
+   "lat": 35.7803844,
+   "lng": -5.8145883,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7803844,-5.8145883",
+   "source": "osm"
+  },
+  {
+   "nom": "Fairmont Tazi Palace",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.78187,-5.850714",
+   "lat": 35.78187,
+   "lng": -5.850714,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.78187,-5.850714",
+   "source": "osm"
+  },
+  {
+   "nom": "Atlas Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.778715,-5.812096",
+   "lat": 35.778715,
+   "lng": -5.812096,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.778715,-5.812096",
+   "source": "osm"
+  },
+  {
+   "nom": "Appart Hotel Rania",
+   "categorie": "Hôtel",
+   "priceRange": "€€€",
+   "score": 3,
+   "mapsUrl": "https://maps.google.com/?q=35.7764457,-5.8094079",
+   "lat": 35.7764457,
+   "lng": -5.8094079,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.raniaapparthotel.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Fatima",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.78478,-5.824052",
+   "lat": 35.78478,
+   "lng": -5.824052,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.78478,-5.824052",
+   "source": "osm"
+  },
+  {
+   "nom": "Maison fertat",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7848162,-5.8241028",
+   "lat": 35.7848162,
+   "lng": -5.8241028,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7848162,-5.8241028",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Picasso",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7798625,-5.8122908",
+   "lat": 35.7798625,
+   "lng": -5.8122908,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7798625,-5.8122908",
+   "source": "osm"
+  },
+  {
+   "nom": "Pension Hollanda",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7814362,-5.8144808",
+   "lat": 35.7814362,
+   "lng": -5.8144808,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7814362,-5.8144808",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Nezha",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7769502,-5.8083722",
+   "lat": 35.7769502,
+   "lng": -5.8083722,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7769502,-5.8083722",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Astoria",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7799894,-5.81185",
+   "lat": 35.7799894,
+   "lng": -5.81185,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7799894,-5.81185",
+   "source": "osm"
+  },
+  {
+   "nom": "Miramonte swimming pool",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7600779,-5.8003341",
+   "lat": 35.7600779,
+   "lng": -5.8003341,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7600779,-5.8003341",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Al Haceima",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7800429,-5.8113403",
+   "lat": 35.7800429,
+   "lng": -5.8113403,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7800429,-5.8113403",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Atlal",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7799919,-5.811241",
+   "lat": 35.7799919,
+   "lng": -5.811241,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7799919,-5.811241",
+   "source": "osm"
+  },
+  {
+   "nom": "Grand Hôtel Ville de France",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 5,
+   "mapsUrl": "https://maps.google.com/?q=35.7823335,-5.8145336",
+   "lat": 35.7823335,
+   "lng": -5.8145336,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7823335,-5.8145336",
+   "source": "osm"
+  },
+  {
+   "nom": "Fredj Hotel & Spa",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.781941,-5.8138274",
+   "lat": 35.781941,
+   "lng": -5.8138274,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.781941,-5.8138274",
+   "source": "osm"
+  },
+  {
+   "nom": "Pension Gibraltar",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7818351,-5.8126378",
+   "lat": 35.7818351,
+   "lng": -5.8126378,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7818351,-5.8126378",
+   "source": "osm"
+  },
+  {
+   "nom": "Flandria",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7794919,-5.8087019",
+   "lat": 35.7794919,
+   "lng": -5.8087019,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7794919,-5.8087019",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Rembrandt",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7799135,-5.8084522",
+   "lat": 35.7799135,
+   "lng": -5.8084522,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.rembrandthotel.ma/",
+   "source": "osm"
+  },
+  {
+   "nom": "Diafa hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7876892,-5.8248124",
+   "lat": 35.7876892,
+   "lng": -5.8248124,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7876892,-5.8248124",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel El Muniria",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7809109,-5.8082225",
+   "lat": 35.7809109,
+   "lng": -5.8082225,
+   "halalFriendly": false,
+   "bookingUrl": "https://m.facebook.com/pages/category/Beach-Resort/Hotel-El-Muniria-1591866301086271/",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Magellan",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.781027,-5.8076782",
+   "lat": 35.781027,
+   "lng": -5.8076782,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.781027,-5.8076782",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Royal",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7825641,-5.8094375",
+   "lat": 35.7825641,
+   "lng": -5.8094375,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7825641,-5.8094375",
+   "source": "osm"
+  },
+  {
+   "nom": "El Toro Hôtel by Expert Book",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.762731,-5.7964596",
+   "lat": 35.762731,
+   "lng": -5.7964596,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.eltorohotel.ma/",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel L'marsa",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7817169,-5.8076723",
+   "lat": 35.7817169,
+   "lng": -5.8076723,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7817169,-5.8076723",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Marrakech",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7845878,-5.811847",
+   "lat": 35.7845878,
+   "lng": -5.811847,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7845878,-5.811847",
+   "source": "osm"
+  },
+  {
+   "nom": "El Djenina",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7804828,-5.8058373",
+   "lat": 35.7804828,
+   "lng": -5.8058373,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7804828,-5.8058373",
+   "source": "osm"
+  },
+  {
+   "nom": "Marina Bay",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "score": 2,
+   "mapsUrl": "https://maps.google.com/?q=35.7809993,-5.8063425",
+   "lat": 35.7809993,
+   "lng": -5.8063425,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.marco-polo.ma",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Valencia",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7825633,-5.8083233",
+   "lat": 35.7825633,
+   "lng": -5.8083233,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7825633,-5.8083233",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Touahine",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7850605,-5.8120524",
+   "lat": 35.7850605,
+   "lng": -5.8120524,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7850605,-5.8120524",
+   "source": "osm"
+  },
+  {
+   "nom": "TanjaLucia Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7853861,-5.8122175",
+   "lat": 35.7853861,
+   "lng": -5.8122175,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7853861,-5.8122175",
+   "source": "osm"
+  },
+  {
+   "nom": "Baytalice",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7843595,-5.8100625",
+   "lat": 35.7843595,
+   "lng": -5.8100625,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7843595,-5.8100625",
+   "source": "osm"
+  },
+  {
+   "nom": "Lalla Soulja",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7875441,-5.8161141",
+   "lat": 35.7875441,
+   "lng": -5.8161141,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7875441,-5.8161141",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Mokhtar",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7878895,-5.8159074",
+   "lat": 35.7878895,
+   "lng": -5.8159074,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7878895,-5.8159074",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Amr Tanger",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7865987,-5.8127759",
+   "lat": 35.7865987,
+   "lng": -5.8127759,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7865987,-5.8127759",
+   "source": "osm"
+  },
+  {
+   "nom": "Miramar",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7789864,-5.8024767",
+   "lat": 35.7789864,
+   "lng": -5.8024767,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7789864,-5.8024767",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar Nakhla Naciria",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7860216,-5.8115705",
+   "lat": 35.7860216,
+   "lng": -5.8115705,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7860216,-5.8115705",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Mauritania",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7855923,-5.8107584",
+   "lat": 35.7855923,
+   "lng": -5.8107584,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7855923,-5.8107584",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar Medina Tanger",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.786641,-5.812604",
+   "lat": 35.786641,
+   "lng": -5.812604,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.786641,-5.812604",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel fuentes",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7854965,-5.8103791",
+   "lat": 35.7854965,
+   "lng": -5.8103791,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7854965,-5.8103791",
+   "source": "osm"
+  },
+  {
+   "nom": "Tangiers Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7872155,-5.8135537",
+   "lat": 35.7872155,
+   "lng": -5.8135537,
+   "halalFriendly": false,
+   "bookingUrl": "https://tangiershostel.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Star",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7595176,-5.7940826",
+   "lat": 35.7595176,
+   "lng": -5.7940826,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7595176,-5.7940826",
+   "source": "osm"
+  },
+  {
+   "nom": "Soofstay",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.776524,-5.7999",
+   "lat": 35.776524,
+   "lng": -5.7999,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.776524,-5.7999",
+   "source": "osm"
+  },
+  {
+   "nom": "Palais Zahia",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7857188,-5.8102994",
+   "lat": 35.7857188,
+   "lng": -5.8102994,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7857188,-5.8102994",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Mamora Tanger",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7853591,-5.8097062",
+   "lat": 35.7853591,
+   "lng": -5.8097062,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7853591,-5.8097062",
+   "source": "osm"
+  },
+  {
+   "nom": "Maram",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7856777,-5.8102185",
+   "lat": 35.7856777,
+   "lng": -5.8102185,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7856777,-5.8102185",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar Nour",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7878602,-5.8141884",
+   "lat": 35.7878602,
+   "lng": -5.8141884,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.darnour.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar Sharif Tanger",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7872341,-5.8128807",
+   "lat": 35.7872341,
+   "lng": -5.8128807,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7872341,-5.8128807",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Sultana",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7864842,-5.8112627",
+   "lat": 35.7864842,
+   "lng": -5.8112627,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.riadsultana.ma/",
+   "source": "osm"
+  },
+  {
+   "nom": "Hôtel Olid",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7853659,-5.8093364",
+   "lat": 35.7853659,
+   "lng": -5.8093364,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7853659,-5.8093364",
+   "source": "osm"
+  },
+  {
+   "nom": "Kasbah Rose",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7880195,-5.8142125",
+   "lat": 35.7880195,
+   "lng": -5.8142125,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7880195,-5.8142125",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Eloumnia Puerto",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7764297,-5.7994639",
+   "lat": 35.7764297,
+   "lng": -5.7994639,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7764297,-5.7994639",
+   "source": "osm"
+  },
+  {
+   "nom": "Kasba Blanca",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7879623,-5.8140388",
+   "lat": 35.7879623,
+   "lng": -5.8140388,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7879623,-5.8140388",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel mauritania center tanger",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7860966,-5.8104283",
+   "lat": 35.7860966,
+   "lng": -5.8104283,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7860966,-5.8104283",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar Tinjaa",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.786893,-5.8117719",
+   "lat": 35.786893,
+   "lng": -5.8117719,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.786893,-5.8117719",
+   "source": "osm"
+  },
+  {
+   "nom": "El Oumnia Puerto Hôtel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.776653,-5.799477",
+   "lat": 35.776653,
+   "lng": -5.799477,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.776653,-5.799477",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar Sekka",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7859938,-5.8100307",
+   "lat": 35.7859938,
+   "lng": -5.8100307,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7859938,-5.8100307",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Sheherazade",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7780015,-5.8005132",
+   "lat": 35.7780015,
+   "lng": -5.8005132,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7780015,-5.8005132",
+   "source": "osm"
+  },
+  {
+   "nom": "Kasba Green",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7880911,-5.8138844",
+   "lat": 35.7880911,
+   "lng": -5.8138844,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7880911,-5.8138844",
+   "source": "osm"
+  },
+  {
+   "nom": "Zoco Riad",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.786763,-5.8110632",
+   "lat": 35.786763,
+   "lng": -5.8110632,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.786763,-5.8110632",
+   "source": "osm"
+  },
+  {
+   "nom": "Barceló Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7776402,-5.8000028",
+   "lat": 35.7776402,
+   "lng": -5.8000028,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7776402,-5.8000028",
+   "source": "osm"
+  },
+  {
+   "nom": "فيلا بيرلا",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7890726,-5.8159011",
+   "lat": 35.7890726,
+   "lng": -5.8159011,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7890726,-5.8159011",
+   "source": "osm"
+  },
+  {
+   "nom": "Nahda",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7855013,-5.8088626",
+   "lat": 35.7855013,
+   "lng": -5.8088626,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7855013,-5.8088626",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Arous Chamel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7870906,-5.811487",
+   "lat": 35.7870906,
+   "lng": -5.811487,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.arouschamel.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "La Di Dar",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7889484,-5.8153815",
+   "lat": 35.7889484,
+   "lng": -5.8153815,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7889484,-5.8153815",
+   "source": "osm"
+  },
+  {
+   "nom": "Airbnb",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.78613,-5.8096591",
+   "lat": 35.78613,
+   "lng": -5.8096591,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.78613,-5.8096591",
+   "source": "osm"
+  },
+  {
+   "nom": "Socco Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7863111,-5.8099448",
+   "lat": 35.7863111,
+   "lng": -5.8099448,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.soccohostel.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Villa Mabrouka",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7892647,-5.8158522",
+   "lat": 35.7892647,
+   "lng": -5.8158522,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7892647,-5.8158522",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar chams Tanja",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7876581,-5.8120308",
+   "lat": 35.7876581,
+   "lng": -5.8120308,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7876581,-5.8120308",
+   "source": "osm"
+  },
+  {
+   "nom": "Tangier Kasbah Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7878594,-5.8123659",
+   "lat": 35.7878594,
+   "lng": -5.8123659,
+   "halalFriendly": false,
+   "bookingUrl": "https://levartmorocco.com/st_hotel/tangier-kasbah-hsotel/",
+   "source": "osm"
+  },
+  {
+   "nom": "Maison Maggie Tangier",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7892326,-5.8153607",
+   "lat": 35.7892326,
+   "lng": -5.8153607,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7892326,-5.8153607",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar Rif Kebdani",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7871368,-5.8105726",
+   "lat": 35.7871368,
+   "lng": -5.8105726,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7871368,-5.8105726",
+   "source": "osm"
+  },
+  {
+   "nom": "La Tangerina",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7890074,-5.8136072",
+   "lat": 35.7890074,
+   "lng": -5.8136072,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.latangerina.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "The Riad Hostel Tangier",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7873539,-5.8102954",
+   "lat": 35.7873539,
+   "lng": -5.8102954,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7873539,-5.8102954",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Nord-Pinus Tanger",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.788976,-5.8134831",
+   "lat": 35.788976,
+   "lng": -5.8134831,
+   "halalFriendly": false,
+   "bookingUrl": "http://nord-pinus-tanger.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Aux 3 Portes",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7894945,-5.8146104",
+   "lat": 35.7894945,
+   "lng": -5.8146104,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7894945,-5.8146104",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar Jameel",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7873544,-5.8101049",
+   "lat": 35.7873544,
+   "lng": -5.8101049,
+   "halalFriendly": false,
+   "bookingUrl": "http://magicmaroc.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Absinthe Guesthouse",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7875844,-5.8103183",
+   "lat": 35.7875844,
+   "lng": -5.8103183,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7875844,-5.8103183",
+   "source": "osm"
+  },
+  {
+   "nom": "Kenzi Solazur Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7764794,-5.7975217",
+   "lat": 35.7764794,
+   "lng": -5.7975217,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7764794,-5.7975217",
+   "source": "osm"
+  },
+  {
+   "nom": "Guest House Laghrib",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7877472,-5.8095753",
+   "lat": 35.7877472,
+   "lng": -5.8095753,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7877472,-5.8095753",
+   "source": "osm"
+  },
+  {
+   "nom": "Banana Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7883334,-5.8099613",
+   "lat": 35.7883334,
+   "lng": -5.8099613,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7883334,-5.8099613",
+   "source": "osm"
+  },
+  {
+   "nom": "Villa Josephine",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7941157,-5.8398178",
+   "lat": 35.7941157,
+   "lng": -5.8398178,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7941157,-5.8398178",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar Gara hostel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.78848,-5.8099227",
+   "lat": 35.78848,
+   "lng": -5.8099227,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.78848,-5.8099227",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar Gara",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7884754,-5.8097706",
+   "lat": 35.7884754,
+   "lng": -5.8097706,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7884754,-5.8097706",
+   "source": "osm"
+  },
+  {
+   "nom": "Moroccan Floors Suites Appart-Hôtel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7734691,-5.7936971",
+   "lat": 35.7734691,
+   "lng": -5.7936971,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7734691,-5.7936971",
+   "source": "osm"
+  },
+  {
+   "nom": "Les belles Residences (E)",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7701808,-5.7910846",
+   "lat": 35.7701808,
+   "lng": -5.7910846,
+   "halalFriendly": false,
+   "bookingUrl": "https://appartanger.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Hilton Garden Inn Tanger City Center",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 4,
+   "mapsUrl": "https://maps.google.com/?q=35.7737468,-5.7870486",
+   "lat": 35.7737468,
+   "lng": -5.7870486,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.hilton.com/en/hotels/tnggigi-hilton-garden-inn-tanger-city-center/",
+   "source": "osm"
+  },
+  {
+   "nom": "Malabata Bay Residences",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7752557,-5.7872681",
+   "lat": 35.7752557,
+   "lng": -5.7872681,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7752557,-5.7872681",
+   "source": "osm"
+  },
+  {
+   "nom": "Hilton Tangier City Center",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 5,
+   "mapsUrl": "https://maps.google.com/?q=35.7729192,-5.7861521",
+   "lat": 35.7729192,
+   "lng": -5.7861521,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.hilton.com/en/hotels/tngcchi-hilton-tangier-city-center/",
+   "source": "osm"
+  },
+  {
+   "nom": "رويال توليب سيتي سنتر",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.772873,-5.783891",
+   "lat": 35.772873,
+   "lng": -5.783891,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.772873,-5.783891",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Ibis Tanger City Center",
+   "categorie": "Hôtel",
+   "priceRange": "€€€",
+   "score": 3,
+   "mapsUrl": "https://maps.google.com/?q=35.7722727,-5.7831965",
+   "lat": 35.7722727,
+   "lng": -5.7831965,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7722727,-5.7831965",
+   "source": "osm"
+  },
+  {
+   "nom": "royal tulip",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7732844,-5.7833862",
+   "lat": 35.7732844,
+   "lng": -5.7833862,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7732844,-5.7833862",
+   "source": "osm"
+  },
+  {
+   "nom": "Ramada Encore Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7738098,-5.7793194",
+   "lat": 35.7738098,
+   "lng": -5.7793194,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7738098,-5.7793194",
+   "source": "osm"
+  },
+  {
+   "nom": "Hôtel César فندق سيزار",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7760678,-5.777888",
+   "lat": 35.7760678,
+   "lng": -5.777888,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7760678,-5.777888",
+   "source": "osm"
+  },
+  {
+   "nom": "Villa Adam",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.774458,-5.7761589",
+   "lat": 35.774458,
+   "lng": -5.7761589,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.774458,-5.7761589",
+   "source": "osm"
+  },
+  {
+   "nom": "Guest House FSTT",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7354581,-5.8934387",
+   "lat": 35.7354581,
+   "lng": -5.8934387,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7354581,-5.8934387",
+   "source": "osm"
+  },
+  {
+   "nom": "Hôtel Tarik",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7830238,-5.7667589",
+   "lat": 35.7830238,
+   "lng": -5.7667589,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.umhtarikhotel.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Mövenpick Hotel & Casino Malabata",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7844235,-5.7634487",
+   "lat": 35.7844235,
+   "lng": -5.7634487,
+   "halalFriendly": false,
+   "bookingUrl": "www.moevenpick-tangier-casino.com",
+   "source": "osm"
+  },
+  {
+   "nom": "فندق غراند موغادور",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.786917,-5.760828",
+   "lat": 35.786917,
+   "lng": -5.760828,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.786917,-5.760828",
+   "source": "osm"
+  },
+  {
+   "nom": "Ibis",
+   "categorie": "Hôtel",
+   "priceRange": "€€€",
+   "score": 3,
+   "mapsUrl": "https://maps.google.com/?q=35.7147352,-5.9043271",
+   "lat": 35.7147352,
+   "lng": -5.9043271,
+   "halalFriendly": false,
+   "bookingUrl": "www.ibishotel.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Ibis Budget",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.714765,-5.9049593",
+   "lat": 35.714765,
+   "lng": -5.9049593,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.714765,-5.9049593",
+   "source": "osm"
+  },
+  {
+   "nom": "فندق فرح طنجة",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7924958,-5.7537902",
+   "lat": 35.7924958,
+   "lng": -5.7537902,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7924958,-5.7537902",
+   "source": "osm"
+  },
+  {
+   "nom": "Tanger Appartement Booking.com (А-16)",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7666011,-5.9273867",
+   "lat": 35.7666011,
+   "lng": -5.9273867,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.7666011,-5.9273867",
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Parque pueblo antiguo",
+   "lat": 35.765734,
+   "lng": -5.8268894,
+   "coordonnees": {
+    "lat": 35.765734,
+    "lng": -5.8268894
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=35.765734,-5.8268894",
+   "source": "osm"
+  },
+  {
+   "nom": "قنطرة الرباط",
+   "lat": 35.7593032,
+   "lng": -5.8215051,
+   "coordonnees": {
+    "lat": 35.7593032,
+    "lng": -5.8215051
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=35.7593032,-5.8215051",
+   "source": "osm"
+  },
+  {
+   "nom": "Casa Barata Market",
+   "lat": 35.7494163,
+   "lng": -5.8315164,
+   "coordonnees": {
+    "lat": 35.7494163,
+    "lng": -5.8315164
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=35.7494163,-5.8315164",
+   "source": "osm"
+  },
+  {
+   "nom": "Souani السواني",
+   "lat": 35.7700104,
+   "lng": -5.8236111,
+   "coordonnees": {
+    "lat": 35.7700104,
+    "lng": -5.8236111
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=35.7700104,-5.8236111",
+   "source": "osm"
+  },
+  {
+   "nom": "اهلا",
+   "lat": 35.7470522,
+   "lng": -5.84055,
+   "coordonnees": {
+    "lat": 35.7470522,
+    "lng": -5.84055
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=35.7470522,-5.84055",
+   "source": "osm"
+  },
+  {
+   "nom": "Parque 20 de agosto",
+   "lat": 35.770263,
+   "lng": -5.8218066,
+   "coordonnees": {
+    "lat": 35.770263,
+    "lng": -5.8218066
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=35.770263,-5.8218066",
+   "source": "osm"
+  },
+  {
+   "nom": "اشناد",
+   "lat": 35.7401638,
+   "lng": -5.828708,
+   "coordonnees": {
+    "lat": 35.7401638,
+    "lng": -5.828708
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=35.7401638,-5.828708",
+   "source": "osm"
+  },
+  {
+   "nom": "Bir chifae بئر الشفاء",
+   "lat": 35.7438264,
+   "lng": -5.8187101,
+   "coordonnees": {
+    "lat": 35.7438264,
+    "lng": -5.8187101
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=35.7438264,-5.8187101",
+   "source": "osm"
+  },
+  {
+   "nom": "سيدي ادريس",
+   "lat": 35.7381421,
+   "lng": -5.8314545,
+   "coordonnees": {
+    "lat": 35.7381421,
+    "lng": -5.8314545
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=35.7381421,-5.8314545",
+   "source": "osm"
+  },
+  {
+   "nom": "Ain ktiouet عين قطيوط",
+   "lat": 35.7769857,
+   "lng": -5.8180438,
+   "coordonnees": {
+    "lat": 35.7769857,
+    "lng": -5.8180438
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=35.7769857,-5.8180438",
+   "source": "osm"
+  },
+  {
+   "nom": "بني مكادة القديمة",
+   "lat": 35.7445486,
+   "lng": -5.8103189,
+   "coordonnees": {
+    "lat": 35.7445486,
+    "lng": -5.8103189
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=35.7445486,-5.8103189",
+   "source": "osm"
+  },
+  {
+   "nom": "المرس",
+   "lat": 35.7366803,
+   "lng": -5.8223248,
+   "coordonnees": {
+    "lat": 35.7366803,
+    "lng": -5.8223248
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=35.7366803,-5.8223248",
+   "source": "osm"
+  },
+  {
+   "nom": "حومة العودة",
+   "lat": 35.7475728,
+   "lng": -5.8073078,
+   "coordonnees": {
+    "lat": 35.7475728,
+    "lng": -5.8073078
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=35.7475728,-5.8073078",
+   "source": "osm"
+  },
+  {
+   "nom": "Shirez Mall",
+   "lat": 35.7784942,
+   "lng": -5.8134628,
+   "coordonnees": {
+    "lat": 35.7784942,
+    "lng": -5.8134628
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=35.7784942,-5.8134628",
+   "source": "osm"
+  },
+  {
+   "nom": "حومة السعادة",
+   "lat": 35.7481459,
+   "lng": -5.8047919,
+   "coordonnees": {
+    "lat": 35.7481459,
+    "lng": -5.8047919
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=35.7481459,-5.8047919",
+   "source": "osm"
+  },
+  {
+   "nom": "Sala de Exposiciones Instituto Cervantes",
+   "lat": 35.780588,
+   "lng": -5.813555,
+   "coordonnees": {
+    "lat": 35.780588,
+    "lng": -5.813555
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=35.780588,-5.813555",
+   "source": "osm"
+  },
+  {
+   "nom": "Former British Consulate",
+   "lat": 35.7825581,
+   "lng": -5.8154497,
+   "coordonnees": {
+    "lat": 35.7825581,
+    "lng": -5.8154497
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=35.7825581,-5.8154497",
+   "source": "osm"
+  },
+  {
+   "nom": "La Terrasse des Paresseux",
+   "lat": 35.7808623,
+   "lng": -5.8117936,
+   "coordonnees": {
+    "lat": 35.7808623,
+    "lng": -5.8117936
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=35.7808623,-5.8117936",
+   "source": "osm"
+  },
+  {
+   "nom": "Gallérie Delacroix",
+   "lat": 35.7815566,
+   "lng": -5.8126923,
+   "coordonnees": {
+    "lat": 35.7815566,
+    "lng": -5.8126923
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=35.7815566,-5.8126923",
+   "source": "osm"
+  },
+  {
+   "nom": "Centre Culturel Ibn Khaldoune",
+   "lat": 35.7826245,
+   "lng": -5.8126395,
+   "coordonnees": {
+    "lat": 35.7826245,
+    "lng": -5.8126395
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=35.7826245,-5.8126395",
+   "source": "osm"
+  },
+  {
+   "nom": "Mirador",
+   "lat": 35.7873112,
+   "lng": -5.8232617,
+   "coordonnees": {
+    "lat": 35.7873112,
+    "lng": -5.8232617
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=35.7873112,-5.8232617",
+   "source": "osm"
+  },
+  {
+   "nom": "Gran Teatro Cervantes",
+   "lat": 35.7820047,
+   "lng": -5.8107017,
+   "coordonnees": {
+    "lat": 35.7820047,
+    "lng": -5.8107017
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=35.7820047,-5.8107017",
+   "source": "osm"
+  },
+  {
+   "nom": "La Terrasse",
+   "lat": 35.7838524,
+   "lng": -5.8134355,
+   "coordonnees": {
+    "lat": 35.7838524,
+    "lng": -5.8134355
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=35.7838524,-5.8134355",
+   "source": "osm"
+  },
+  {
+   "nom": "حي بوحوت",
+   "lat": 35.737987,
+   "lng": -5.80785,
+   "coordonnees": {
+    "lat": 35.737987,
+    "lng": -5.80785
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=35.737987,-5.80785",
+   "source": "osm"
+  },
+  {
+   "nom": "Bab Al Fahs",
+   "lat": 35.7847477,
+   "lng": -5.8129089,
+   "coordonnees": {
+    "lat": 35.7847477,
+    "lng": -5.8129089
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=35.7847477,-5.8129089",
+   "source": "osm"
+  },
+  {
+   "nom": "Borj des Irlandais",
+   "lat": 35.7835291,
+   "lng": -5.8108239,
+   "coordonnees": {
+    "lat": 35.7835291,
+    "lng": -5.8108239
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=35.7835291,-5.8108239",
+   "source": "osm"
+  },
+  {
+   "nom": "Merchan مرشان",
+   "lat": 35.7888529,
+   "lng": -5.8226702,
+   "coordonnees": {
+    "lat": 35.7888529,
+    "lng": -5.8226702
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=35.7888529,-5.8226702",
+   "source": "osm"
+  },
+  {
+   "nom": "Phoenician gravesite",
+   "lat": 35.7877284,
+   "lng": -5.8188606,
+   "coordonnees": {
+    "lat": 35.7877284,
+    "lng": -5.8188606
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=35.7877284,-5.8188606",
+   "source": "osm"
+  },
+  {
+   "nom": "Bab Rahbat",
+   "lat": 35.7855181,
+   "lng": -5.8124702,
+   "coordonnees": {
+    "lat": 35.7855181,
+    "lng": -5.8124702
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=35.7855181,-5.8124702",
+   "source": "osm"
+  },
+  {
+   "nom": "Plaza Toro بلاصة تورو",
+   "lat": 35.7640821,
+   "lng": -5.7956631,
+   "coordonnees": {
+    "lat": 35.7640821,
+    "lng": -5.7956631
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=35.7640821,-5.7956631",
+   "source": "osm"
+  },
+  {
+   "nom": "Palais Marshan",
+   "lat": 35.7902854,
+   "lng": -5.8254951,
+   "coordonnees": {
+    "lat": 35.7902854,
+    "lng": -5.8254951
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=35.7902854,-5.8254951",
+   "source": "osm"
+  },
+  {
+   "nom": "Musée des artistes voyageurs",
+   "lat": 35.7852836,
+   "lng": -5.8111539,
+   "coordonnees": {
+    "lat": 35.7852836,
+    "lng": -5.8111539
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=35.7852836,-5.8111539",
+   "source": "osm"
+  },
+  {
+   "nom": "Bab Jdida",
+   "lat": 35.7864219,
+   "lng": -5.81313,
+   "coordonnees": {
+    "lat": 35.7864219,
+    "lng": -5.81313
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=35.7864219,-5.81313",
+   "source": "osm"
+  },
+  {
+   "nom": "Tombeau de Ibn Batouta",
+   "lat": 35.7873044,
+   "lng": -5.8137208,
+   "coordonnees": {
+    "lat": 35.7873044,
+    "lng": -5.8137208
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=35.7873044,-5.8137208",
+   "source": "osm"
+  },
+  {
+   "nom": "Park Games",
+   "lat": 35.7919423,
+   "lng": -5.8339378,
+   "coordonnees": {
+    "lat": 35.7919423,
+    "lng": -5.8339378
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=35.7919423,-5.8339378",
+   "source": "osm"
+  },
+  {
+   "nom": "Marshan Art Gallery",
+   "lat": 35.7892924,
+   "lng": -5.8177389,
+   "coordonnees": {
+    "lat": 35.7892924,
+    "lng": -5.8177389
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=35.7892924,-5.8177389",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar al-Mandub",
+   "lat": 35.7913451,
+   "lng": -5.8249149,
+   "coordonnees": {
+    "lat": 35.7913451,
+    "lng": -5.8249149
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=35.7913451,-5.8249149",
+   "source": "osm"
+  },
+  {
+   "nom": "Bab Kasbah",
+   "lat": 35.7885559,
+   "lng": -5.814848,
+   "coordonnees": {
+    "lat": 35.7885559,
+    "lng": -5.814848
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=35.7885559,-5.814848",
+   "source": "osm"
+  },
+  {
+   "nom": "Zahara",
+   "lat": 35.740872,
+   "lng": -5.8003465,
+   "coordonnees": {
+    "lat": 35.740872,
+    "lng": -5.8003465
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=35.740872,-5.8003465",
+   "source": "osm"
+  },
+  {
+   "nom": "Sépulture phénicienne",
+   "lat": 35.790974,
+   "lng": -5.8201253,
+   "coordonnees": {
+    "lat": 35.790974,
+    "lng": -5.8201253
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=35.790974,-5.8201253",
+   "source": "osm"
+  },
+  {
+   "nom": "Bab Marsa",
+   "lat": 35.7860211,
+   "lng": -5.8089216,
+   "coordonnees": {
+    "lat": 35.7860211,
+    "lng": -5.8089216
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=35.7860211,-5.8089216",
+   "source": "osm"
+  },
+  {
+   "nom": "Musée des cultures méditerranéennes",
+   "lat": 35.788326,
+   "lng": -5.8125405,
+   "coordonnees": {
+    "lat": 35.788326,
+    "lng": -5.8125405
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=35.788326,-5.8125405",
+   "source": "osm"
+  },
+  {
+   "nom": "Borj N'am",
+   "lat": 35.7892773,
+   "lng": -5.8142966,
+   "coordonnees": {
+    "lat": 35.7892773,
+    "lng": -5.8142966
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=35.7892773,-5.8142966",
+   "source": "osm"
+  },
+  {
+   "nom": "Cat's House",
+   "lat": 35.7904371,
+   "lng": -5.8167985,
+   "coordonnees": {
+    "lat": 35.7904371,
+    "lng": -5.8167985
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=35.7904371,-5.8167985",
+   "source": "osm"
+  },
+  {
+   "nom": "Château York",
+   "lat": 35.7888407,
+   "lng": -5.8116294,
+   "coordonnees": {
+    "lat": 35.7888407,
+    "lng": -5.8116294
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=35.7888407,-5.8116294",
+   "source": "osm"
+  }
+ ],
+ "codeISO": "MA",
+ "image": "https://images.unsplash.com/photo-1633264542743-c1acdb5eff0e?w=1600&q=80",
+ "continent": "Afrique",
+ "metaDescription": "Restaurants halal signalés, mosquées et guide pratique pour Tanger — Halal Trust Score 5/5.",
+ "image_hero": "https://images.unsplash.com/photo-1633264542743-c1acdb5eff0e?w=1600&q=80",
+ "mosqueesPrincipales": [
+  {
+   "nom": "Masjid Ibn Battuta مسجد ابن بطوطة",
+   "lat": 35.7674864,
+   "lng": -5.8279292,
+   "coordonnees": {
+    "lat": 35.7674864,
+    "lng": -5.8279292
+   },
+   "adresse": "Rue 135",
+   "mapsUrl": "https://maps.google.com/?q=35.7674864,-5.8279292",
+   "source": "osm"
+  },
+  {
+   "nom": "Mosquée Mekki Nassiri",
+   "lat": 35.7674841,
+   "lng": -5.8466911,
+   "coordonnees": {
+    "lat": 35.7674841,
+    "lng": -5.8466911
+   },
+   "mapsUrl": "https://maps.google.com/?q=35.7674841,-5.8466911",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Merja",
+   "lat": 35.7709487,
+   "lng": -5.8219736,
+   "coordonnees": {
+    "lat": 35.7709487,
+    "lng": -5.8219736
+   },
+   "adresse": "Avenue Haroun Errachid",
+   "mapsUrl": "https://maps.google.com/?q=35.7709487,-5.8219736",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد الريان",
+   "lat": 35.765492,
+   "lng": -5.8512822,
+   "coordonnees": {
+    "lat": 35.765492,
+    "lng": -5.8512822
+   },
+   "mapsUrl": "https://maps.google.com/?q=35.765492,-5.8512822",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Fadl llah",
+   "lat": 35.7426708,
+   "lng": -5.8402265,
+   "coordonnees": {
+    "lat": 35.7426708,
+    "lng": -5.8402265
+   },
+   "mapsUrl": "https://maps.google.com/?q=35.7426708,-5.8402265",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Al Nour",
+   "lat": 35.7451089,
+   "lng": -5.8482336,
+   "coordonnees": {
+    "lat": 35.7451089,
+    "lng": -5.8482336
+   },
+   "mapsUrl": "https://maps.google.com/?q=35.7451089,-5.8482336",
+   "source": "osm"
+  },
+  {
+   "nom": "Salle de prière",
+   "lat": 35.7843391,
+   "lng": -5.8247144,
+   "coordonnees": {
+    "lat": 35.7843391,
+    "lng": -5.8247144
+   },
+   "adresse": "Ain Hayani, Tanger",
+   "mapsUrl": "https://maps.google.com/?q=35.7843391,-5.8247144",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid",
+   "lat": 35.7861327,
+   "lng": -5.8117672,
+   "coordonnees": {
+    "lat": 35.7861327,
+    "lng": -5.8117672
+   },
+   "mapsUrl": "https://maps.google.com/?q=35.7861327,-5.8117672",
+   "source": "osm"
+  },
+  {
+   "nom": "Grand Mosquee",
+   "lat": 35.7856242,
+   "lng": -5.8096538,
+   "coordonnees": {
+    "lat": 35.7856242,
+    "lng": -5.8096538
+   },
+   "mapsUrl": "https://maps.google.com/?q=35.7856242,-5.8096538",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Complexe Nour",
+   "lat": 35.73052,
+   "lng": -5.853374,
+   "coordonnees": {
+    "lat": 35.73052,
+    "lng": -5.853374
+   },
+   "mapsUrl": "https://maps.google.com/?q=35.73052,-5.853374",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد أبو عبيدة إبن الجراح",
+   "lat": 35.7571038,
+   "lng": -5.7934673,
+   "coordonnees": {
+    "lat": 35.7571038,
+    "lng": -5.7934673
+   },
+   "adresse": "Rue Achahid Sidi Med Ben L'houcine",
+   "mapsUrl": "https://maps.google.com/?q=35.7571038,-5.7934673",
+   "source": "osm"
+  },
+  {
+   "nom": "Mosquée de la Kasbah",
+   "lat": 35.7881665,
+   "lng": -5.8126345,
+   "coordonnees": {
+    "lat": 35.7881665,
+    "lng": -5.8126345
+   },
+   "adresse": "Tanger",
+   "mapsUrl": "https://maps.google.com/?q=35.7881665,-5.8126345",
+   "source": "osm"
+  },
+  {
+   "nom": "Mosquée Arrifi مسجد الريفي",
+   "lat": 35.7593998,
+   "lng": -5.791047,
+   "coordonnees": {
+    "lat": 35.7593998,
+    "lng": -5.791047
+   },
+   "mapsUrl": "https://maps.google.com/?q=35.7593998,-5.791047",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Malabata Mall",
+   "lat": 35.7727008,
+   "lng": -5.7700141,
+   "coordonnees": {
+    "lat": 35.7727008,
+    "lng": -5.7700141
+   },
+   "adresse": "Tanger",
+   "mapsUrl": "https://maps.google.com/?q=35.7727008,-5.7700141",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد زينب أم المؤمنين",
+   "lat": 35.7758365,
+   "lng": -5.7711158,
+   "coordonnees": {
+    "lat": 35.7758365,
+    "lng": -5.7711158
+   },
+   "mapsUrl": "https://maps.google.com/?q=35.7758365,-5.7711158",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد الكنبورية",
+   "lat": 35.7103195,
+   "lng": -5.8074002,
+   "coordonnees": {
+    "lat": 35.7103195,
+    "lng": -5.8074002
+   },
+   "mapsUrl": "https://maps.google.com/?q=35.7103195,-5.8074002",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Abaqeel",
+   "lat": 35.7798671,
+   "lng": -5.7589002,
+   "coordonnees": {
+    "lat": 35.7798671,
+    "lng": -5.7589002
+   },
+   "mapsUrl": "https://maps.google.com/?q=35.7798671,-5.7589002",
+   "source": "osm"
+  },
+  {
+   "nom": "Prayer area",
+   "lat": 35.7909678,
+   "lng": -5.9232052,
+   "coordonnees": {
+    "lat": 35.7909678,
+    "lng": -5.9232052
+   },
+   "mapsUrl": "https://maps.google.com/?q=35.7909678,-5.9232052",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Alliances Darna",
+   "lat": 35.6832624,
+   "lng": -5.9339697,
+   "coordonnees": {
+    "lat": 35.6832624,
+    "lng": -5.9339697
+   },
+   "mapsUrl": "https://maps.google.com/?q=35.6832624,-5.9339697",
+   "source": "osm"
+  }
+ ],
+ "description_en": "Tanger, in Morocco, is a halal-friendly destination with a Halal Trust Score of 5/5. Muslim travelers will find 44 halal restaurants listed, 340 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind. Best time to visit: April–June, September–October.",
+ "metaDescription_en": "Halal guide to Tanger: 44 halal restaurants listed, 340 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 5/5.",
+ "nom_en": "Tanger",
+ "boucheries": [],
+ "infos_pratiques_en": {
+  "monnaie": "Moroccan dirham (MAD)",
+  "fuseau_horaire": "GMT+1",
+  "meilleure_periode": "April–June, September–October",
+  "transport": "Taxi, bus, ferries vers Espagne"
+ },
+ "dataPurgedAt": "2026-07-15"
 }

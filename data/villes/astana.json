@@ -1,2007 +1,1964 @@
 {
-  "slug": "astana",
-  "nom": "Astana",
-  "pays": "Kazakhstan",
-  "pays_slug": "kazakhstan",
-  "continent": "Asie",
-  "region": "Asie centrale",
-  "coordonnees": {
-    "lat": 51.1694,
-    "lng": 71.4491
+ "slug": "astana",
+ "nom": "Astana",
+ "pays": "Kazakhstan",
+ "pays_slug": "kazakhstan",
+ "continent": "Asie",
+ "region": "Asie centrale",
+ "coordonnees": {
+  "lat": 51.1694,
+  "lng": 71.4491
+ },
+ "codeISO": "",
+ "score_halal": 4.4,
+ "halalScore": 8.8,
+ "description": "Capitale futuriste du Kazakhstan, Astana mêle architecture audacieuse et grande mosquée Hazret Sultan, l'une des plus vastes d'Asie centrale.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Astana_020000%2C_Kazakhstan_-_panoramio_%2813%29.jpg/1920px-Astana_020000%2C_Kazakhstan_-_panoramio_%2813%29.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Astana_020000%2C_Kazakhstan_-_panoramio_%2813%29.jpg/1920px-Astana_020000%2C_Kazakhstan_-_panoramio_%2813%29.jpg",
+ "metaDescription": "Capitale futuriste du Kazakhstan, Astana mêle architecture audacieuse et grande mosquée Hazret Sultan, l'une des plus vastes d'Asie centrale.",
+ "statistiques": {
+  "restaurants_halal": 13,
+  "mosquees": 0,
+  "hotels": 111
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "Каганат",
+   "type": "regional",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1729453,71.4258264",
+   "lat": 51.1729453,
+   "lng": 71.4258264,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.4,
-  "halalScore": 8.8,
-  "description": "Capitale futuriste du Kazakhstan, Astana mêle architecture audacieuse et grande mosquée Hazret Sultan, l'une des plus vastes d'Asie centrale.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Astana_020000%2C_Kazakhstan_-_panoramio_%2813%29.jpg/1920px-Astana_020000%2C_Kazakhstan_-_panoramio_%2813%29.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Astana_020000%2C_Kazakhstan_-_panoramio_%2813%29.jpg/1920px-Astana_020000%2C_Kazakhstan_-_panoramio_%2813%29.jpg",
-  "metaDescription": "Capitale futuriste du Kazakhstan, Astana mêle architecture audacieuse et grande mosquée Hazret Sultan, l'une des plus vastes d'Asie centrale.",
-  "statistiques": {
-    "restaurants_halal": 11,
-    "mosquees": 1,
-    "hotels": 120
+  {
+   "nom": "YumTime",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1531618,71.4658356",
+   "lat": 51.1531618,
+   "lng": 71.4658356,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "KAL'BI meat house",
+   "type": "american, pizza, sandwich, steak house, barbecue, european",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1359228,71.4029276",
+   "lat": 51.1359228,
+   "lng": 71.4029276,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [
-    {
-      "nom": "Каганат",
-      "type": "regional",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1729453,71.4258264",
-      "lat": 51.1729453,
-      "lng": 71.4258264,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "YumTime",
-      "type": "chicken",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1531618,71.4658356",
-      "lat": 51.1531618,
-      "lng": 71.4658356,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "KAL'BI meat house",
-      "type": "american, pizza, sandwich, steak house, barbecue, european",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1359228,71.4029276",
-      "lat": 51.1359228,
-      "lng": 71.4029276,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Наш Донер",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1578764,71.4419362",
-      "lat": 51.1578764,
-      "lng": 71.4419362,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "M.Doner",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1634077,71.4307821",
-      "lat": 51.1634077,
-      "lng": 71.4307821,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Et-Et",
-      "type": "italian, turkish, russian, regional",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1668309,71.4081785",
-      "lat": 51.1668309,
-      "lng": 71.4081785,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Жар Донер",
-      "type": "shawarma, fries",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1803654,71.4094581",
-      "lat": 51.1803654,
-      "lng": 71.4094581,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Багратиони",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1411764,71.4093153",
-      "lat": 51.1411764,
-      "lng": 71.4093153,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Divan",
-      "type": "turkish",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1285928,71.4331398",
-      "lat": 51.1285928,
-      "lng": 71.4331398,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Bekbota",
-      "type": "turkish",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1216324,71.4276803",
-      "lat": 51.1216324,
-      "lng": 71.4276803,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Butcher’s street",
-      "type": "burger, diner, breakfast, kebab, coffee shop, sandwich, hot dog",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1035903,71.4290304",
-      "lat": 51.1035903,
-      "lng": 71.4290304,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Атлас",
-      "lat": 51.131615,
-      "lng": 71.4275325,
-      "type": "beef bowl, breakfast, cake, chicken, coffee shop, curry, friture, asian, barbecue, grill, indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=51.131615,71.4275325",
-      "source": "osm"
-    },
-    {
-      "nom": "Фаттуш",
-      "lat": 51.1277607,
-      "lng": 71.4251746,
-      "type": "lebanese",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=51.1277607,71.4251746",
-      "source": "osm"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "Жулдыз",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1715808,71.4525354",
-      "lat": 51.1715808,
-      "lng": 71.4525354,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1715808,71.4525354",
-      "source": "osm"
-    },
-    {
-      "nom": "Сункар",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.172341,71.4511728",
-      "lat": 51.172341,
-      "lng": 71.4511728,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.172341,71.4511728",
-      "source": "osm"
-    },
-    {
-      "nom": "King hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 4,
-      "mapsUrl": "https://maps.google.com/?q=51.1647929,71.4401114",
-      "lat": 51.1647929,
-      "lng": 71.4401114,
-      "halalFriendly": false,
-      "bookingUrl": "https://kinghotelastana.kz/",
-      "source": "osm"
-    },
-    {
-      "nom": "Зейд",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1632479,71.4420407",
-      "lat": 51.1632479,
-      "lng": 71.4420407,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1632479,71.4420407",
-      "source": "osm"
-    },
-    {
-      "nom": "Elite HOSTEL",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1657725,71.4381604",
-      "lat": 51.1657725,
-      "lng": 71.4381604,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1657725,71.4381604",
-      "source": "osm"
-    },
-    {
-      "nom": "Тарлан",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1777254,71.449872",
-      "lat": 51.1777254,
-      "lng": 71.449872,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1777254,71.449872",
-      "source": "osm"
-    },
-    {
-      "nom": "FriendHostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1660092,71.4359579",
-      "lat": 51.1660092,
-      "lng": 71.4359579,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1660092,71.4359579",
-      "source": "osm"
-    },
-    {
-      "nom": "Бу-су",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1609348,71.4550113",
-      "lat": 51.1609348,
-      "lng": 71.4550113,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1609348,71.4550113",
-      "source": "osm"
-    },
-    {
-      "nom": "Жасыбай",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1762425,71.4380975",
-      "lat": 51.1762425,
-      "lng": 71.4380975,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1762425,71.4380975",
-      "source": "osm"
-    },
-    {
-      "nom": "Дейли Рент — Иманбаевой 2",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1601619,71.4373044",
-      "lat": 51.1601619,
-      "lng": 71.4373044,
-      "halalFriendly": false,
-      "bookingUrl": "https://dailyrent.kz",
-      "source": "osm"
-    },
-    {
-      "nom": "Гостиница",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1579109,71.458688",
-      "lat": 51.1579109,
-      "lng": 71.458688,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1579109,71.458688",
-      "source": "osm"
-    },
-    {
-      "nom": "Orion Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1567173,71.4546764",
-      "lat": 51.1567173,
-      "lng": 71.4546764,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1567173,71.4546764",
-      "source": "osm"
-    },
-    {
-      "nom": "Жастар",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1565189,71.4377395",
-      "lat": 51.1565189,
-      "lng": 71.4377395,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1565189,71.4377395",
-      "source": "osm"
-    },
-    {
-      "nom": "Турист",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1690414,71.4255255",
-      "lat": 51.1690414,
-      "lng": 71.4255255,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1690414,71.4255255",
-      "source": "osm"
-    },
-    {
-      "nom": "Хостел ланд",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1541331,71.4489887",
-      "lat": 51.1541331,
-      "lng": 71.4489887,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1541331,71.4489887",
-      "source": "osm"
-    },
-    {
-      "nom": "Достык",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1805524,71.4300407",
-      "lat": 51.1805524,
-      "lng": 71.4300407,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1805524,71.4300407",
-      "source": "osm"
-    },
-    {
-      "nom": "San Marino",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1527721,71.444924",
-      "lat": 51.1527721,
-      "lng": 71.444924,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1527721,71.444924",
-      "source": "osm"
-    },
-    {
-      "nom": "София",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.158798,71.4702702",
-      "lat": 51.158798,
-      "lng": 71.4702702,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.158798,71.4702702",
-      "source": "osm"
-    },
-    {
-      "nom": "Алтын орда",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1620117,71.4242814",
-      "lat": 51.1620117,
-      "lng": 71.4242814,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1620117,71.4242814",
-      "source": "osm"
-    },
-    {
-      "nom": "Жiгер",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1805418,71.4280193",
-      "lat": 51.1805418,
-      "lng": 71.4280193,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1805418,71.4280193",
-      "source": "osm"
-    },
-    {
-      "nom": "Гранд Парк Есиль",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.167193,71.4215344",
-      "lat": 51.167193,
-      "lng": 71.4215344,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.167193,71.4215344",
-      "source": "osm"
-    },
-    {
-      "nom": "Тянь-шань",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1754128,71.4223633",
-      "lat": 51.1754128,
-      "lng": 71.4223633,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1754128,71.4223633",
-      "source": "osm"
-    },
-    {
-      "nom": "Ак сункар",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1679,71.41837",
-      "lat": 51.1679,
-      "lng": 71.41837,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1679,71.41837",
-      "source": "osm"
-    },
-    {
-      "nom": "Manhattan Astana Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.150358,71.4562409",
-      "lat": 51.150358,
-      "lng": 71.4562409,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.150358,71.4562409",
-      "source": "osm"
-    },
-    {
-      "nom": "Travel Inn",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1500885,71.4579535",
-      "lat": 51.1500885,
-      "lng": 71.4579535,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1500885,71.4579535",
-      "source": "osm"
-    },
-    {
-      "nom": "Алтын адам",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1700898,71.4169766",
-      "lat": 51.1700898,
-      "lng": 71.4169766,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1700898,71.4169766",
-      "source": "osm"
-    },
-    {
-      "nom": "Belon Inn",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1731229,71.415891",
-      "lat": 51.1731229,
-      "lng": 71.415891,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1731229,71.415891",
-      "source": "osm"
-    },
-    {
-      "nom": "Престиж",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1609621,71.4176872",
-      "lat": 51.1609621,
-      "lng": 71.4176872,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1609621,71.4176872",
-      "source": "osm"
-    },
-    {
-      "nom": "Акку",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.161989,71.4159769",
-      "lat": 51.161989,
-      "lng": 71.4159769,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.161989,71.4159769",
-      "source": "osm"
-    },
-    {
-      "nom": "The St. Regis Astana",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1528023,71.424973",
-      "lat": 51.1528023,
-      "lng": 71.424973,
-      "halalFriendly": false,
-      "bookingUrl": "http://www.thestregisastana.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Султан Бейбарс",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1568584,71.4789095",
-      "lat": 51.1568584,
-      "lng": 71.4789095,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1568584,71.4789095",
-      "source": "osm"
-    },
-    {
-      "nom": "Topaz",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1726011,71.4133769",
-      "lat": 51.1726011,
-      "lng": 71.4133769,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1726011,71.4133769",
-      "source": "osm"
-    },
-    {
-      "nom": "Absolute",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.180543,71.4164153",
-      "lat": 51.180543,
-      "lng": 71.4164153,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.180543,71.4164153",
-      "source": "osm"
-    },
-    {
-      "nom": "Inju Hills",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1842885,71.4202105",
-      "lat": 51.1842885,
-      "lng": 71.4202105,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1842885,71.4202105",
-      "source": "osm"
-    },
-    {
-      "nom": "Astana plaza",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1712412,71.4117313",
-      "lat": 51.1712412,
-      "lng": 71.4117313,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1712412,71.4117313",
-      "source": "osm"
-    },
-    {
-      "nom": "Ривер сайт",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1491844,71.4291151",
-      "lat": 51.1491844,
-      "lng": 71.4291151,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1491844,71.4291151",
-      "source": "osm"
-    },
-    {
-      "nom": "Жасэмир",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1636112,71.4117457",
-      "lat": 51.1636112,
-      "lng": 71.4117457,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1636112,71.4117457",
-      "source": "osm"
-    },
-    {
-      "nom": "Мbлан",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1449784,71.4508429",
-      "lat": 51.1449784,
-      "lng": 71.4508429,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1449784,71.4508429",
-      "source": "osm"
-    },
-    {
-      "nom": "Astana Park Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1568,71.4150135",
-      "lat": 51.1568,
-      "lng": 71.4150135,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1568,71.4150135",
-      "source": "osm"
-    },
-    {
-      "nom": "Park Inn by Radisson Astana",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1620825,71.4110713",
-      "lat": 51.1620825,
-      "lng": 71.4110713,
-      "halalFriendly": false,
-      "bookingUrl": "parkinn.com/hotel-astana",
-      "source": "osm"
-    },
-    {
-      "nom": "Radisson SAS Astana",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1593172,71.4122691",
-      "lat": 51.1593172,
-      "lng": 71.4122691,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1593172,71.4122691",
-      "source": "osm"
-    },
-    {
-      "nom": "Metro park",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1465789,71.4662286",
-      "lat": 51.1465789,
-      "lng": 71.4662286,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1465789,71.4662286",
-      "source": "osm"
-    },
-    {
-      "nom": "LION",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1824828,71.4145534",
-      "lat": 51.1824828,
-      "lng": 71.4145534,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1824828,71.4145534",
-      "source": "osm"
-    },
-    {
-      "nom": "Феникс",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1463035,71.4668157",
-      "lat": 51.1463035,
-      "lng": 71.4668157,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1463035,71.4668157",
-      "source": "osm"
-    },
-    {
-      "nom": "Скай люкс",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.178171,71.4097327",
-      "lat": 51.178171,
-      "lng": 71.4097327,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.178171,71.4097327",
-      "source": "osm"
-    },
-    {
-      "nom": "Goldman Empire",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1467301,71.4704123",
-      "lat": 51.1467301,
-      "lng": 71.4704123,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1467301,71.4704123",
-      "source": "osm"
-    },
-    {
-      "nom": "Космос",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1884841,71.4195568",
-      "lat": 51.1884841,
-      "lng": 71.4195568,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1884841,71.4195568",
-      "source": "osm"
-    },
-    {
-      "nom": "Дейли Рент — Абая 10",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1646277,71.4070715",
-      "lat": 51.1646277,
-      "lng": 71.4070715,
-      "halalFriendly": false,
-      "bookingUrl": "https://dailyrent.kz",
-      "source": "osm"
-    },
-    {
-      "nom": "Торгай",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1465025,71.4715194",
-      "lat": 51.1465025,
-      "lng": 71.4715194,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1465025,71.4715194",
-      "source": "osm"
-    },
-    {
-      "nom": "Дейли Рент — Абая 10/1",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1653265,71.4066847",
-      "lat": 51.1653265,
-      "lng": 71.4066847,
-      "halalFriendly": false,
-      "bookingUrl": "https://dailyrent.kz",
-      "source": "osm"
-    },
-    {
-      "nom": "Comfort Hotel Astana",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1467025,71.4253531",
-      "lat": 51.1467025,
-      "lng": 71.4253531,
-      "halalFriendly": false,
-      "bookingUrl": "https://comforthotel.kz/en",
-      "source": "osm"
-    },
-    {
-      "nom": "Алас",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1567507,71.4878762",
-      "lat": 51.1567507,
-      "lng": 71.4878762,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1567507,71.4878762",
-      "source": "osm"
-    },
-    {
-      "nom": "The rest",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1687288,71.4049761",
-      "lat": 51.1687288,
-      "lng": 71.4049761,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1687288,71.4049761",
-      "source": "osm"
-    },
-    {
-      "nom": "Rush",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 4,
-      "mapsUrl": "https://maps.google.com/?q=51.1805519,71.4085686",
-      "lat": 51.1805519,
-      "lng": 71.4085686,
-      "halalFriendly": false,
-      "bookingUrl": "https://rush-hotel.kz/",
-      "source": "osm"
-    },
-    {
-      "nom": "Дос",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1887665,71.4171463",
-      "lat": 51.1887665,
-      "lng": 71.4171463,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1887665,71.4171463",
-      "source": "osm"
-    },
-    {
-      "nom": "Akbulak Premium",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1418747,71.4561678",
-      "lat": 51.1418747,
-      "lng": 71.4561678,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1418747,71.4561678",
-      "source": "osm"
-    },
-    {
-      "nom": "Capital",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1472894,71.4763409",
-      "lat": 51.1472894,
-      "lng": 71.4763409,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1472894,71.4763409",
-      "source": "osm"
-    },
-    {
-      "nom": "Ак Булак",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1416331,71.4548528",
-      "lat": 51.1416331,
-      "lng": 71.4548528,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1416331,71.4548528",
-      "source": "osm"
-    },
-    {
-      "nom": "Нурби",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1467792,71.4756713",
-      "lat": 51.1467792,
-      "lng": 71.4756713,
-      "halalFriendly": false,
-      "bookingUrl": "https://nurbi.kz/",
-      "source": "osm"
-    },
-    {
-      "nom": "Катон-Карагай",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1464861,71.4750901",
-      "lat": 51.1464861,
-      "lng": 71.4750901,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1464861,71.4750901",
-      "source": "osm"
-    },
-    {
-      "nom": "Uptown Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1457922,71.4244436",
-      "lat": 51.1457922,
-      "lng": 71.4244436,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1457922,71.4244436",
-      "source": "osm"
-    },
-    {
-      "nom": "Nomad hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1489353,71.4801351",
-      "lat": 51.1489353,
-      "lng": 71.4801351,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1489353,71.4801351",
-      "source": "osm"
-    },
-    {
-      "nom": "Нұрсат",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1837214,71.4084588",
-      "lat": 51.1837214,
-      "lng": 71.4084588,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1837214,71.4084588",
-      "source": "osm"
-    },
-    {
-      "nom": "Интерия",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1537742,71.489875",
-      "lat": 51.1537742,
-      "lng": 71.489875,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1537742,71.489875",
-      "source": "osm"
-    },
-    {
-      "nom": "Astana ONE",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1393445,71.4469939",
-      "lat": 51.1393445,
-      "lng": 71.4469939,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1393445,71.4469939",
-      "source": "osm"
-    },
-    {
-      "nom": "Дейли Рент — Кумисбекова 4",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1650287,71.4012065",
-      "lat": 51.1650287,
-      "lng": 71.4012065,
-      "halalFriendly": false,
-      "bookingUrl": "https://dailyrent.kz",
-      "source": "osm"
-    },
-    {
-      "nom": "Марсель",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1815528,71.404177",
-      "lat": 51.1815528,
-      "lng": 71.404177,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1815528,71.404177",
-      "source": "osm"
-    },
-    {
-      "nom": "Indus",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1899961,71.4123202",
-      "lat": 51.1899961,
-      "lng": 71.4123202,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1899961,71.4123202",
-      "source": "osm"
-    },
-    {
-      "nom": "Азат",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1484539,71.4856823",
-      "lat": 51.1484539,
-      "lng": 71.4856823,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1484539,71.4856823",
-      "source": "osm"
-    },
-    {
-      "nom": "Ерейментау",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1917663,71.4143356",
-      "lat": 51.1917663,
-      "lng": 71.4143356,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1917663,71.4143356",
-      "source": "osm"
-    },
-    {
-      "nom": "NS",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1421932,71.422702",
-      "lat": 51.1421932,
-      "lng": 71.422702,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1421932,71.422702",
-      "source": "osm"
-    },
-    {
-      "nom": "Аланда",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1387811,71.463749",
-      "lat": 51.1387811,
-      "lng": 71.463749,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1387811,71.463749",
-      "source": "osm"
-    },
-    {
-      "nom": "Дейли Рент — Кумисбекова 9А",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1703917,71.3975855",
-      "lat": 51.1703917,
-      "lng": 71.3975855,
-      "halalFriendly": false,
-      "bookingUrl": "https://dailyrent.kz",
-      "source": "osm"
-    },
-    {
-      "nom": "Салтанат",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1908052,71.4092859",
-      "lat": 51.1908052,
-      "lng": 71.4092859,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1908052,71.4092859",
-      "source": "osm"
-    },
-    {
-      "nom": "ATLAS",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1929925,71.4121896",
-      "lat": 51.1929925,
-      "lng": 71.4121896,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1929925,71.4121896",
-      "source": "osm"
-    },
-    {
-      "nom": "Ака",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1891859,71.4068601",
-      "lat": 51.1891859,
-      "lng": 71.4068601,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1891859,71.4068601",
-      "source": "osm"
-    },
-    {
-      "nom": "Hostel Nomad 4x4",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1397622,71.4256836",
-      "lat": 51.1397622,
-      "lng": 71.4256836,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1397622,71.4256836",
-      "source": "osm"
-    },
-    {
-      "nom": "Сая",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1807722,71.3984728",
-      "lat": 51.1807722,
-      "lng": 71.3984728,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1807722,71.3984728",
-      "source": "osm"
-    },
-    {
-      "nom": "Дейли Рент — Абай Жолы 15Б",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1646473,71.395006",
-      "lat": 51.1646473,
-      "lng": 71.395006,
-      "halalFriendly": false,
-      "bookingUrl": "https://dailyrent.kz",
-      "source": "osm"
-    },
-    {
-      "nom": "ibis hotel Astana",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1365473,71.4680865",
-      "lat": 51.1365473,
-      "lng": 71.4680865,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.accorhotels.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Люкс",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.194023,71.4090038",
-      "lat": 51.194023,
-      "lng": 71.4090038,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.194023,71.4090038",
-      "source": "osm"
-    },
-    {
-      "nom": "Рауан Отель",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.19402,71.4078033",
-      "lat": 51.19402,
-      "lng": 71.4078033,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.19402,71.4078033",
-      "source": "osm"
-    },
-    {
-      "nom": "Казжол",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 4,
-      "mapsUrl": "https://maps.google.com/?q=51.1366653,71.4731244",
-      "lat": 51.1366653,
-      "lng": 71.4731244,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.hotelkazzhol.kz/ru/astana",
-      "source": "osm"
-    },
-    {
-      "nom": "Магас",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1891446,71.4009523",
-      "lat": 51.1891446,
-      "lng": 71.4009523,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.instagram.com/magas_hotel/",
-      "source": "osm"
-    },
-    {
-      "nom": "Вокзал для двоих",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1930615,71.4042717",
-      "lat": 51.1930615,
-      "lng": 71.4042717,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1930615,71.4042717",
-      "source": "osm"
-    },
-    {
-      "nom": "Айтолқын",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1515307,71.5004051",
-      "lat": 51.1515307,
-      "lng": 71.5004051,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1515307,71.5004051",
-      "source": "osm"
-    },
-    {
-      "nom": "Bed and Breakfast Good Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1326478,71.4362002",
-      "lat": 51.1326478,
-      "lng": 71.4362002,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1326478,71.4362002",
-      "source": "osm"
-    },
-    {
-      "nom": "Jasmine",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.132823,71.4348387",
-      "lat": 51.132823,
-      "lng": 71.4348387,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.132823,71.4348387",
-      "source": "osm"
-    },
-    {
-      "nom": "Gokai Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1437258,71.4930639",
-      "lat": 51.1437258,
-      "lng": 71.4930639,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1437258,71.4930639",
-      "source": "osm"
-    },
-    {
-      "nom": "Hostel Nochleg",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1325622,71.4364418",
-      "lat": 51.1325622,
-      "lng": 71.4364418,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1325622,71.4364418",
-      "source": "osm"
-    },
-    {
-      "nom": "Jumbaktas",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1367874,71.417437",
-      "lat": 51.1367874,
-      "lng": 71.417437,
-      "halalFriendly": false,
-      "bookingUrl": "https://jumbaktas.kz/",
-      "source": "osm"
-    },
-    {
-      "nom": "MirOtel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1322866,71.4656044",
-      "lat": 51.1322866,
-      "lng": 71.4656044,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1322866,71.4656044",
-      "source": "osm"
-    },
-    {
-      "nom": "Алкуат",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1967426,71.4046097",
-      "lat": 51.1967426,
-      "lng": 71.4046097,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1967426,71.4046097",
-      "source": "osm"
-    },
-    {
-      "nom": "Rixos President Astana",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 5,
-      "mapsUrl": "https://maps.google.com/?q=51.1339404,71.4214227",
-      "lat": 51.1339404,
-      "lng": 71.4214227,
-      "halalFriendly": false,
-      "bookingUrl": "https://presidentastana-ru.rixos.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Традициональ",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1389573,71.4083864",
-      "lat": 51.1389573,
-      "lng": 71.4083864,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1389573,71.4083864",
-      "source": "osm"
-    },
-    {
-      "nom": "Дипломат",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1315318,71.4291733",
-      "lat": 51.1315318,
-      "lng": 71.4291733,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1315318,71.4291733",
-      "source": "osm"
-    },
-    {
-      "nom": "Hilton Garden Inn Astana",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 4,
-      "mapsUrl": "https://maps.google.com/?q=51.135291,71.4141736",
-      "lat": 51.135291,
-      "lng": 71.4141736,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.hilton.com/en/hotels/tseakgi-hilton-garden-inn-astana/",
-      "source": "osm"
-    },
-    {
-      "nom": "Самурык",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1886101,71.3917083",
-      "lat": 51.1886101,
-      "lng": 71.3917083,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1886101,71.3917083",
-      "source": "osm"
-    },
-    {
-      "nom": "Belon lux hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1266503,71.4355956",
-      "lat": 51.1266503,
-      "lng": 71.4355956,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1266503,71.4355956",
-      "source": "osm"
-    },
-    {
-      "nom": "EXPO HOSTEL",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1265392,71.4361766",
-      "lat": 51.1265392,
-      "lng": 71.4361766,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1265392,71.4361766",
-      "source": "osm"
-    },
-    {
-      "nom": "The place Astana Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1285706,71.4225175",
-      "lat": 51.1285706,
-      "lng": 71.4225175,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1285706,71.4225175",
-      "source": "osm"
-    },
-    {
-      "nom": "ЖК Жансая",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1297375,71.4163229",
-      "lat": 51.1297375,
-      "lng": 71.4163229,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1297375,71.4163229",
-      "source": "osm"
-    },
-    {
-      "nom": "Шағын",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.125832,71.4248762",
-      "lat": 51.125832,
-      "lng": 71.4248762,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.125832,71.4248762",
-      "source": "osm"
-    },
-    {
-      "nom": "Ақнұр",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1835597,71.3778778",
-      "lat": 51.1835597,
-      "lng": 71.3778778,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1835597,71.3778778",
-      "source": "osm"
-    },
-    {
-      "nom": "Beijing Palace Soluxe Hotel Astana",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1234323,71.432887",
-      "lat": 51.1234323,
-      "lng": 71.432887,
-      "halalFriendly": false,
-      "bookingUrl": "http://soluxe-astana.kz/",
-      "source": "osm"
-    },
-    {
-      "nom": "Толеп",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1837246,71.3759315",
-      "lat": 51.1837246,
-      "lng": 71.3759315,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1837246,71.3759315",
-      "source": "osm"
-    },
-    {
-      "nom": "Marriott",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1287854,71.4074064",
-      "lat": 51.1287854,
-      "lng": 71.4074064,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.marriott.com/hotels/fact-sheet/travel/tsemc-astana-marriott-hotel/",
-      "source": "osm"
-    },
-    {
-      "nom": "Ботагоз",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1241956,71.4189245",
-      "lat": 51.1241956,
-      "lng": 71.4189245,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1241956,71.4189245",
-      "source": "osm"
-    },
-    {
-      "nom": "Sheraton Astana",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1223411,71.4270026",
-      "lat": 51.1223411,
-      "lng": 71.4270026,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.marriott.com/en-us/hotels/tsesi-sheraton-astana-hotel/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0",
-      "source": "osm"
-    },
-    {
-      "nom": "Асия",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.1478957,71.5201987",
-      "lat": 51.1478957,
-      "lng": 71.5201987,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.1478957,71.5201987",
-      "source": "osm"
-    },
-    {
-      "nom": "Elysian",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=51.119775,71.4400147",
-      "lat": 51.119775,
-      "lng": 71.4400147,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=51.119775,71.4400147",
-      "source": "osm"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Astana",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Astana",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Astana%20Astana"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Mosquée Hazret Sultan",
-      "categorie": "Spirituel",
-      "description": "Grande mosquée blanche de style islamique classique.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Hazret%20Sultan%20Astana",
-      "lat": 51.1254495,
-      "lng": 71.4721422,
-      "geocoded": true
-    },
-    {
-      "id": "a2",
-      "nom": "Tour Baïterek",
-      "categorie": "Loisirs",
-      "description": "Monument-observatoire emblématique de la ville.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Tour%20Ba%C3%AFterek%20Astana"
-    },
-    {
-      "id": "a3",
-      "nom": "Khan Shatyr",
-      "categorie": "Loisirs",
-      "description": "Immense tente-centre de loisirs futuriste.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Khan%20Shatyr%20Astana",
-      "lat": 51.1325048,
-      "lng": 71.4038607,
-      "geocoded": true
-    },
-    {
-      "nom": "Памятник жертвам голодомора",
-      "lat": 51.1686561,
-      "lng": 71.4256941,
-      "coordonnees": {
-        "lat": 51.1686561,
-        "lng": 71.4256941
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=51.1686561,71.4256941",
-      "source": "osm"
-    },
-    {
-      "nom": "Иоанн Павел II",
-      "lat": 51.154109,
-      "lng": 71.4521622,
-      "coordonnees": {
-        "lat": 51.154109,
-        "lng": 71.4521622
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=51.154109,71.4521622",
-      "source": "osm"
-    },
-    {
-      "nom": "С. Сейфуллин",
-      "lat": 51.1715412,
-      "lng": 71.4239674,
-      "coordonnees": {
-        "lat": 51.1715412,
-        "lng": 71.4239674
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=51.1715412,71.4239674",
-      "source": "osm"
-    },
-    {
-      "nom": "А. С. Пушкину",
-      "lat": 51.159591,
-      "lng": 71.4698716,
-      "coordonnees": {
-        "lat": 51.159591,
-        "lng": 71.4698716
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=51.159591,71.4698716",
-      "source": "osm"
-    },
-    {
-      "nom": "ҚР ІІМ Ішкі әскерлерінің 17 жауынгеріне",
-      "lat": 51.153921,
-      "lng": 71.4584124,
-      "coordonnees": {
-        "lat": 51.153921,
-        "lng": 71.4584124
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=51.153921,71.4584124",
-      "source": "osm"
-    },
-    {
-      "nom": "Қызметтік борышын орындау кезінде қаза тапқан ІІМ қызметкерлеріне арналған монумент",
-      "lat": 51.1524523,
-      "lng": 71.450108,
-      "coordonnees": {
-        "lat": 51.1524523,
-        "lng": 71.450108
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=51.1524523,71.450108",
-      "source": "osm"
-    },
-    {
-      "nom": "Н. Ә. Назарбаев",
-      "lat": 51.1562423,
-      "lng": 71.431928,
-      "coordonnees": {
-        "lat": 51.1562423,
-        "lng": 71.431928
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=51.1562423,71.431928",
-      "source": "osm"
-    },
-    {
-      "nom": "Beatles Statue",
-      "lat": 51.1623955,
-      "lng": 71.4237199,
-      "coordonnees": {
-        "lat": 51.1623955,
-        "lng": 71.4237199
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=51.1623955,71.4237199",
-      "source": "osm"
-    },
-    {
-      "nom": "Т34-85",
-      "lat": 51.1554129,
-      "lng": 71.4323473,
-      "coordonnees": {
-        "lat": 51.1554129,
-        "lng": 71.4323473
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=51.1554129,71.4323473",
-      "source": "osm"
-    },
-    {
-      "nom": "Айтеке-би, Казыбек-би и Толе-би",
-      "lat": 51.1695299,
-      "lng": 71.4208049,
-      "coordonnees": {
-        "lat": 51.1695299,
-        "lng": 71.4208049
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=51.1695299,71.4208049",
-      "source": "osm"
-    },
-    {
-      "nom": "Кенесары хан",
-      "lat": 51.1604981,
-      "lng": 71.4240851,
-      "coordonnees": {
-        "lat": 51.1604981,
-        "lng": 71.4240851
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=51.1604981,71.4240851",
-      "source": "osm"
-    },
-    {
-      "nom": "А. Құнанбайұлы",
-      "lat": 51.1679151,
-      "lng": 71.420358,
-      "coordonnees": {
-        "lat": 51.1679151,
-        "lng": 71.420358
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=51.1679151,71.420358",
-      "source": "osm"
-    },
-    {
-      "nom": "Жамбыл",
-      "lat": 51.1513903,
-      "lng": 71.4454592,
-      "coordonnees": {
-        "lat": 51.1513903,
-        "lng": 71.4454592
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=51.1513903,71.4454592",
-      "source": "osm"
-    },
-    {
-      "nom": "Жер-ана (Томирис)",
-      "lat": 51.1533831,
-      "lng": 71.4317199,
-      "coordonnees": {
-        "lat": 51.1533831,
-        "lng": 71.4317199
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=51.1533831,71.4317199",
-      "source": "osm"
-    },
-    {
-      "nom": "Чернобыль апатының құрбандарына",
-      "lat": 51.1564832,
-      "lng": 71.4736068,
-      "coordonnees": {
-        "lat": 51.1564832,
-        "lng": 71.4736068
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=51.1564832,71.4736068",
-      "source": "osm"
-    },
-    {
-      "nom": "Памятник \"Жанибек и Керей хандары\"",
-      "lat": 51.1664322,
-      "lng": 71.4169499,
-      "coordonnees": {
-        "lat": 51.1664322,
-        "lng": 71.4169499
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=51.1664322,71.4169499",
-      "source": "osm"
-    },
-    {
-      "nom": "Юнус Эмре",
-      "lat": 51.1518841,
-      "lng": 71.4303536,
-      "coordonnees": {
-        "lat": 51.1518841,
-        "lng": 71.4303536
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=51.1518841,71.4303536",
-      "source": "osm"
-    },
-    {
-      "nom": "Мұстафа Кемал Ататүрік",
-      "lat": 51.1511586,
-      "lng": 71.4320358,
-      "coordonnees": {
-        "lat": 51.1511586,
-        "lng": 71.4320358
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=51.1511586,71.4320358",
-      "source": "osm"
-    },
-    {
-      "nom": "Ауғанстанда қаза тапқандарға",
-      "lat": 51.1571525,
-      "lng": 71.4772186,
-      "coordonnees": {
-        "lat": 51.1571525,
-        "lng": 71.4772186
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=51.1571525,71.4772186",
-      "source": "osm"
-    },
-    {
-      "nom": "Прокат",
-      "lat": 51.191274,
-      "lng": 71.4466096,
-      "coordonnees": {
-        "lat": 51.191274,
-        "lng": 71.4466096
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=51.191274,71.4466096",
-      "source": "osm"
-    },
-    {
-      "nom": "Студия 1337",
-      "lat": 51.1723394,
-      "lng": 71.4142276,
-      "coordonnees": {
-        "lat": 51.1723394,
-        "lng": 71.4142276
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=51.1723394,71.4142276",
-      "source": "osm"
-    },
-    {
-      "nom": "М. Мәметова",
-      "lat": 51.1747187,
-      "lng": 71.4120391,
-      "coordonnees": {
-        "lat": 51.1747187,
-        "lng": 71.4120391
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=51.1747187,71.4120391",
-      "source": "osm"
-    },
-    {
-      "nom": "Олимпиада сақиналары",
-      "lat": 51.1540747,
-      "lng": 71.4196456,
-      "coordonnees": {
-        "lat": 51.1540747,
-        "lng": 71.4196456
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=51.1540747,71.4196456",
-      "source": "osm"
-    },
-    {
-      "nom": "Мемориал Великой Отечественной войны",
-      "lat": 51.1747138,
-      "lng": 71.4106272,
-      "coordonnees": {
-        "lat": 51.1747138,
-        "lng": 71.4106272
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=51.1747138,71.4106272",
-      "source": "osm"
-    },
-    {
-      "nom": "Памятник Шарлю Де Голлю",
-      "lat": 51.1414649,
-      "lng": 71.4486596,
-      "coordonnees": {
-        "lat": 51.1414649,
-        "lng": 71.4486596
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=51.1414649,71.4486596",
-      "source": "osm"
-    },
-    {
-      "nom": "“History”",
-      "lat": 51.1886583,
-      "lng": 71.4163924,
-      "coordonnees": {
-        "lat": 51.1886583,
-        "lng": 71.4163924
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=51.1886583,71.4163924",
-      "source": "osm"
-    },
-    {
-      "nom": "Әлия Молдағұлова",
-      "lat": 51.1856822,
-      "lng": 71.4091666,
-      "coordonnees": {
-        "lat": 51.1856822,
-        "lng": 71.4091666
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=51.1856822,71.4091666",
-      "source": "osm"
-    },
-    {
-      "nom": "Ailand",
-      "lat": 51.1479426,
-      "lng": 71.4158765,
-      "coordonnees": {
-        "lat": 51.1479426,
-        "lng": 71.4158765
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=51.1479426,71.4158765",
-      "source": "osm"
-    },
-    {
-      "nom": "Бауыржан Момышұлы",
-      "lat": 51.1345953,
-      "lng": 71.4596617,
-      "coordonnees": {
-        "lat": 51.1345953,
-        "lng": 71.4596617
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=51.1345953,71.4596617",
-      "source": "osm"
-    },
-    {
-      "nom": "Иван Васильевич Панфилов",
-      "lat": 51.1447619,
-      "lng": 71.491968,
-      "coordonnees": {
-        "lat": 51.1447619,
-        "lng": 71.491968
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=51.1447619,71.491968",
-      "source": "osm"
-    },
-    {
-      "nom": "Дракон",
-      "lat": 51.1325332,
-      "lng": 71.4510438,
-      "coordonnees": {
-        "lat": 51.1325332,
-        "lng": 71.4510438
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=51.1325332,71.4510438",
-      "source": "osm"
-    },
-    {
-      "nom": "Рақымжан Қошқарбаев",
-      "lat": 51.1298506,
-      "lng": 71.4590741,
-      "coordonnees": {
-        "lat": 51.1298506,
-        "lng": 71.4590741
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=51.1298506,71.4590741",
-      "source": "osm"
-    },
-    {
-      "nom": "Жетігенші",
-      "lat": 51.1346692,
-      "lng": 71.4106104,
-      "coordonnees": {
-        "lat": 51.1346692,
-        "lng": 71.4106104
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=51.1346692,71.4106104",
-      "source": "osm"
-    },
-    {
-      "nom": "Хатико",
-      "lat": 51.1369933,
-      "lng": 71.4027939,
-      "coordonnees": {
-        "lat": 51.1369933,
-        "lng": 71.4027939
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=51.1369933,71.4027939",
-      "source": "osm"
-    },
-    {
-      "nom": "Астана-Экспо КС",
-      "lat": 51.1294931,
-      "lng": 71.4182513,
-      "coordonnees": {
-        "lat": 51.1294931,
-        "lng": 71.4182513
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=51.1294931,71.4182513",
-      "source": "osm"
-    },
-    {
-      "nom": "Zur Sultan",
-      "lat": 51.1318179,
-      "lng": 71.4077184,
-      "coordonnees": {
-        "lat": 51.1318179,
-        "lng": 71.4077184
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=51.1318179,71.4077184",
-      "source": "osm"
-    },
-    {
-      "nom": "Қазақ елі",
-      "lat": 51.1221098,
-      "lng": 71.4698815,
-      "coordonnees": {
-        "lat": 51.1221098,
-        "lng": 71.4698815
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=51.1221098,71.4698815",
-      "source": "osm"
-    },
-    {
-      "nom": "Махтумкули Фраги",
-      "lat": 51.1303587,
-      "lng": 71.4010254,
-      "coordonnees": {
-        "lat": 51.1303587,
-        "lng": 71.4010254
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=51.1303587,71.4010254",
-      "source": "osm"
-    },
-    {
-      "nom": "The Wall of Peace Monument",
-      "lat": 51.1218404,
-      "lng": 71.4717428,
-      "coordonnees": {
-        "lat": 51.1218404,
-        "lng": 71.4717428
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=51.1218404,71.4717428",
-      "source": "osm"
-    },
-    {
-      "nom": "Михай Эминеску",
-      "lat": 51.130232,
-      "lng": 71.3934754,
-      "coordonnees": {
-        "lat": 51.130232,
-        "lng": 71.3934754
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=51.130232,71.3934754",
-      "source": "osm"
-    },
-    {
-      "nom": "Қазақстан Республикасының Ұлттық Мұражайы",
-      "lat": 51.1182297,
-      "lng": 71.4693823,
-      "coordonnees": {
-        "lat": 51.1182297,
-        "lng": 71.4693823
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=51.1182297,71.4693823",
-      "source": "osm"
-    },
-    {
-      "nom": "Асқар Забикулин",
-      "lat": 51.116732,
-      "lng": 71.4057852,
-      "coordonnees": {
-        "lat": 51.116732,
-        "lng": 71.4057852
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=51.116732,71.4057852",
-      "source": "osm"
-    },
-    {
-      "nom": "Қазақ еліне мың алғыс",
-      "lat": 51.1051208,
-      "lng": 71.4242471,
-      "coordonnees": {
-        "lat": 51.1051208,
-        "lng": 71.4242471
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=51.1051208,71.4242471",
-      "source": "osm"
-    },
-    {
-      "nom": "Қазақстан Теміржол тарихы Мұражайы",
-      "lat": 51.1122858,
-      "lng": 71.5316883,
-      "coordonnees": {
-        "lat": 51.1122858,
-        "lng": 71.5316883
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=51.1122858,71.5316883",
-      "source": "osm"
-    },
-    {
-      "nom": "Астана Арена",
-      "lat": 51.1121947,
-      "lng": 71.5330269,
-      "coordonnees": {
-        "lat": 51.1121947,
-        "lng": 71.5330269
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=51.1121947,71.5330269",
-      "source": "osm"
-    },
-    {
-      "nom": "Тәуелсіздіктің 25 жылдығы",
-      "lat": 51.0934522,
-      "lng": 71.4175648,
-      "coordonnees": {
-        "lat": 51.0934522,
-        "lng": 71.4175648
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=51.0934522,71.4175648",
-      "source": "osm"
-    },
-    {
-      "nom": "\"Астана Жұлдызы\" Ескерткіші",
-      "lat": 51.0705424,
-      "lng": 71.395868,
-      "coordonnees": {
-        "lat": 51.0705424,
-        "lng": 71.395868
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=51.0705424,71.395868",
-      "source": "osm"
-    }
-  ],
-  "imageCredit": "Wikimedia Commons",
-  "osmEnriched": true,
-  "osmEnrichedAt": "2026-06-30",
-  "description_en": "Astana, in Kazakhstan, is a halal-friendly destination with a Halal Trust Score of 4.4/5. Muslim travelers will find 13 halal restaurants listed, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
-  "metaDescription_en": "Halal guide to Astana: 13 halal restaurants listed, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.4/5.",
-  "nom_en": "Astana",
-  "boucheries": []
+  {
+   "nom": "Наш Донер",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1578764,71.4419362",
+   "lat": 51.1578764,
+   "lng": 71.4419362,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "M.Doner",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1634077,71.4307821",
+   "lat": 51.1634077,
+   "lng": 71.4307821,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Et-Et",
+   "type": "italian, turkish, russian, regional",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1668309,71.4081785",
+   "lat": 51.1668309,
+   "lng": 71.4081785,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Жар Донер",
+   "type": "shawarma, fries",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1803654,71.4094581",
+   "lat": 51.1803654,
+   "lng": 71.4094581,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Багратиони",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1411764,71.4093153",
+   "lat": 51.1411764,
+   "lng": 71.4093153,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Divan",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1285928,71.4331398",
+   "lat": 51.1285928,
+   "lng": 71.4331398,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Bekbota",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1216324,71.4276803",
+   "lat": 51.1216324,
+   "lng": 71.4276803,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Butcher’s street",
+   "type": "burger, diner, breakfast, kebab, coffee shop, sandwich, hot dog",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1035903,71.4290304",
+   "lat": 51.1035903,
+   "lng": 71.4290304,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Атлас",
+   "lat": 51.131615,
+   "lng": 71.4275325,
+   "type": "beef bowl, breakfast, cake, chicken, coffee shop, curry, friture, asian, barbecue, grill, indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=51.131615,71.4275325",
+   "source": "osm"
+  },
+  {
+   "nom": "Фаттуш",
+   "lat": 51.1277607,
+   "lng": 71.4251746,
+   "type": "lebanese",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=51.1277607,71.4251746",
+   "source": "osm"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "Жулдыз",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1715808,71.4525354",
+   "lat": 51.1715808,
+   "lng": 71.4525354,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1715808,71.4525354",
+   "source": "osm"
+  },
+  {
+   "nom": "Сункар",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.172341,71.4511728",
+   "lat": 51.172341,
+   "lng": 71.4511728,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.172341,71.4511728",
+   "source": "osm"
+  },
+  {
+   "nom": "King hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 4,
+   "mapsUrl": "https://maps.google.com/?q=51.1647929,71.4401114",
+   "lat": 51.1647929,
+   "lng": 71.4401114,
+   "halalFriendly": false,
+   "bookingUrl": "https://kinghotelastana.kz/",
+   "source": "osm"
+  },
+  {
+   "nom": "Зейд",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1632479,71.4420407",
+   "lat": 51.1632479,
+   "lng": 71.4420407,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1632479,71.4420407",
+   "source": "osm"
+  },
+  {
+   "nom": "Elite HOSTEL",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1657725,71.4381604",
+   "lat": 51.1657725,
+   "lng": 71.4381604,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1657725,71.4381604",
+   "source": "osm"
+  },
+  {
+   "nom": "Тарлан",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1777254,71.449872",
+   "lat": 51.1777254,
+   "lng": 71.449872,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1777254,71.449872",
+   "source": "osm"
+  },
+  {
+   "nom": "FriendHostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1660092,71.4359579",
+   "lat": 51.1660092,
+   "lng": 71.4359579,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1660092,71.4359579",
+   "source": "osm"
+  },
+  {
+   "nom": "Бу-су",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1609348,71.4550113",
+   "lat": 51.1609348,
+   "lng": 71.4550113,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1609348,71.4550113",
+   "source": "osm"
+  },
+  {
+   "nom": "Жасыбай",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1762425,71.4380975",
+   "lat": 51.1762425,
+   "lng": 71.4380975,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1762425,71.4380975",
+   "source": "osm"
+  },
+  {
+   "nom": "Дейли Рент — Иманбаевой 2",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1601619,71.4373044",
+   "lat": 51.1601619,
+   "lng": 71.4373044,
+   "halalFriendly": false,
+   "bookingUrl": "https://dailyrent.kz",
+   "source": "osm"
+  },
+  {
+   "nom": "Гостиница",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1579109,71.458688",
+   "lat": 51.1579109,
+   "lng": 71.458688,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1579109,71.458688",
+   "source": "osm"
+  },
+  {
+   "nom": "Orion Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1567173,71.4546764",
+   "lat": 51.1567173,
+   "lng": 71.4546764,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1567173,71.4546764",
+   "source": "osm"
+  },
+  {
+   "nom": "Жастар",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1565189,71.4377395",
+   "lat": 51.1565189,
+   "lng": 71.4377395,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1565189,71.4377395",
+   "source": "osm"
+  },
+  {
+   "nom": "Турист",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1690414,71.4255255",
+   "lat": 51.1690414,
+   "lng": 71.4255255,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1690414,71.4255255",
+   "source": "osm"
+  },
+  {
+   "nom": "Хостел ланд",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1541331,71.4489887",
+   "lat": 51.1541331,
+   "lng": 71.4489887,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1541331,71.4489887",
+   "source": "osm"
+  },
+  {
+   "nom": "Достык",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1805524,71.4300407",
+   "lat": 51.1805524,
+   "lng": 71.4300407,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1805524,71.4300407",
+   "source": "osm"
+  },
+  {
+   "nom": "San Marino",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1527721,71.444924",
+   "lat": 51.1527721,
+   "lng": 71.444924,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1527721,71.444924",
+   "source": "osm"
+  },
+  {
+   "nom": "София",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.158798,71.4702702",
+   "lat": 51.158798,
+   "lng": 71.4702702,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.158798,71.4702702",
+   "source": "osm"
+  },
+  {
+   "nom": "Алтын орда",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1620117,71.4242814",
+   "lat": 51.1620117,
+   "lng": 71.4242814,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1620117,71.4242814",
+   "source": "osm"
+  },
+  {
+   "nom": "Жiгер",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1805418,71.4280193",
+   "lat": 51.1805418,
+   "lng": 71.4280193,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1805418,71.4280193",
+   "source": "osm"
+  },
+  {
+   "nom": "Гранд Парк Есиль",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.167193,71.4215344",
+   "lat": 51.167193,
+   "lng": 71.4215344,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.167193,71.4215344",
+   "source": "osm"
+  },
+  {
+   "nom": "Тянь-шань",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1754128,71.4223633",
+   "lat": 51.1754128,
+   "lng": 71.4223633,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1754128,71.4223633",
+   "source": "osm"
+  },
+  {
+   "nom": "Ак сункар",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1679,71.41837",
+   "lat": 51.1679,
+   "lng": 71.41837,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1679,71.41837",
+   "source": "osm"
+  },
+  {
+   "nom": "Manhattan Astana Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.150358,71.4562409",
+   "lat": 51.150358,
+   "lng": 71.4562409,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.150358,71.4562409",
+   "source": "osm"
+  },
+  {
+   "nom": "Travel Inn",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1500885,71.4579535",
+   "lat": 51.1500885,
+   "lng": 71.4579535,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1500885,71.4579535",
+   "source": "osm"
+  },
+  {
+   "nom": "Алтын адам",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1700898,71.4169766",
+   "lat": 51.1700898,
+   "lng": 71.4169766,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1700898,71.4169766",
+   "source": "osm"
+  },
+  {
+   "nom": "Belon Inn",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1731229,71.415891",
+   "lat": 51.1731229,
+   "lng": 71.415891,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1731229,71.415891",
+   "source": "osm"
+  },
+  {
+   "nom": "Престиж",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1609621,71.4176872",
+   "lat": 51.1609621,
+   "lng": 71.4176872,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1609621,71.4176872",
+   "source": "osm"
+  },
+  {
+   "nom": "Акку",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.161989,71.4159769",
+   "lat": 51.161989,
+   "lng": 71.4159769,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.161989,71.4159769",
+   "source": "osm"
+  },
+  {
+   "nom": "The St. Regis Astana",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1528023,71.424973",
+   "lat": 51.1528023,
+   "lng": 71.424973,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.thestregisastana.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Султан Бейбарс",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1568584,71.4789095",
+   "lat": 51.1568584,
+   "lng": 71.4789095,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1568584,71.4789095",
+   "source": "osm"
+  },
+  {
+   "nom": "Topaz",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1726011,71.4133769",
+   "lat": 51.1726011,
+   "lng": 71.4133769,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1726011,71.4133769",
+   "source": "osm"
+  },
+  {
+   "nom": "Absolute",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.180543,71.4164153",
+   "lat": 51.180543,
+   "lng": 71.4164153,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.180543,71.4164153",
+   "source": "osm"
+  },
+  {
+   "nom": "Inju Hills",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1842885,71.4202105",
+   "lat": 51.1842885,
+   "lng": 71.4202105,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1842885,71.4202105",
+   "source": "osm"
+  },
+  {
+   "nom": "Astana plaza",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1712412,71.4117313",
+   "lat": 51.1712412,
+   "lng": 71.4117313,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1712412,71.4117313",
+   "source": "osm"
+  },
+  {
+   "nom": "Ривер сайт",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1491844,71.4291151",
+   "lat": 51.1491844,
+   "lng": 71.4291151,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1491844,71.4291151",
+   "source": "osm"
+  },
+  {
+   "nom": "Жасэмир",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1636112,71.4117457",
+   "lat": 51.1636112,
+   "lng": 71.4117457,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1636112,71.4117457",
+   "source": "osm"
+  },
+  {
+   "nom": "Мbлан",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1449784,71.4508429",
+   "lat": 51.1449784,
+   "lng": 71.4508429,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1449784,71.4508429",
+   "source": "osm"
+  },
+  {
+   "nom": "Astana Park Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1568,71.4150135",
+   "lat": 51.1568,
+   "lng": 71.4150135,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1568,71.4150135",
+   "source": "osm"
+  },
+  {
+   "nom": "Park Inn by Radisson Astana",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1620825,71.4110713",
+   "lat": 51.1620825,
+   "lng": 71.4110713,
+   "halalFriendly": false,
+   "bookingUrl": "parkinn.com/hotel-astana",
+   "source": "osm"
+  },
+  {
+   "nom": "Radisson SAS Astana",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1593172,71.4122691",
+   "lat": 51.1593172,
+   "lng": 71.4122691,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1593172,71.4122691",
+   "source": "osm"
+  },
+  {
+   "nom": "Metro park",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1465789,71.4662286",
+   "lat": 51.1465789,
+   "lng": 71.4662286,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1465789,71.4662286",
+   "source": "osm"
+  },
+  {
+   "nom": "LION",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1824828,71.4145534",
+   "lat": 51.1824828,
+   "lng": 71.4145534,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1824828,71.4145534",
+   "source": "osm"
+  },
+  {
+   "nom": "Феникс",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1463035,71.4668157",
+   "lat": 51.1463035,
+   "lng": 71.4668157,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1463035,71.4668157",
+   "source": "osm"
+  },
+  {
+   "nom": "Скай люкс",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.178171,71.4097327",
+   "lat": 51.178171,
+   "lng": 71.4097327,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.178171,71.4097327",
+   "source": "osm"
+  },
+  {
+   "nom": "Goldman Empire",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1467301,71.4704123",
+   "lat": 51.1467301,
+   "lng": 71.4704123,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1467301,71.4704123",
+   "source": "osm"
+  },
+  {
+   "nom": "Космос",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1884841,71.4195568",
+   "lat": 51.1884841,
+   "lng": 71.4195568,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1884841,71.4195568",
+   "source": "osm"
+  },
+  {
+   "nom": "Дейли Рент — Абая 10",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1646277,71.4070715",
+   "lat": 51.1646277,
+   "lng": 71.4070715,
+   "halalFriendly": false,
+   "bookingUrl": "https://dailyrent.kz",
+   "source": "osm"
+  },
+  {
+   "nom": "Торгай",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1465025,71.4715194",
+   "lat": 51.1465025,
+   "lng": 71.4715194,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1465025,71.4715194",
+   "source": "osm"
+  },
+  {
+   "nom": "Дейли Рент — Абая 10/1",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1653265,71.4066847",
+   "lat": 51.1653265,
+   "lng": 71.4066847,
+   "halalFriendly": false,
+   "bookingUrl": "https://dailyrent.kz",
+   "source": "osm"
+  },
+  {
+   "nom": "Comfort Hotel Astana",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1467025,71.4253531",
+   "lat": 51.1467025,
+   "lng": 71.4253531,
+   "halalFriendly": false,
+   "bookingUrl": "https://comforthotel.kz/en",
+   "source": "osm"
+  },
+  {
+   "nom": "Алас",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1567507,71.4878762",
+   "lat": 51.1567507,
+   "lng": 71.4878762,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1567507,71.4878762",
+   "source": "osm"
+  },
+  {
+   "nom": "The rest",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1687288,71.4049761",
+   "lat": 51.1687288,
+   "lng": 71.4049761,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1687288,71.4049761",
+   "source": "osm"
+  },
+  {
+   "nom": "Rush",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 4,
+   "mapsUrl": "https://maps.google.com/?q=51.1805519,71.4085686",
+   "lat": 51.1805519,
+   "lng": 71.4085686,
+   "halalFriendly": false,
+   "bookingUrl": "https://rush-hotel.kz/",
+   "source": "osm"
+  },
+  {
+   "nom": "Дос",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1887665,71.4171463",
+   "lat": 51.1887665,
+   "lng": 71.4171463,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1887665,71.4171463",
+   "source": "osm"
+  },
+  {
+   "nom": "Akbulak Premium",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1418747,71.4561678",
+   "lat": 51.1418747,
+   "lng": 71.4561678,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1418747,71.4561678",
+   "source": "osm"
+  },
+  {
+   "nom": "Capital",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1472894,71.4763409",
+   "lat": 51.1472894,
+   "lng": 71.4763409,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1472894,71.4763409",
+   "source": "osm"
+  },
+  {
+   "nom": "Ак Булак",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1416331,71.4548528",
+   "lat": 51.1416331,
+   "lng": 71.4548528,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1416331,71.4548528",
+   "source": "osm"
+  },
+  {
+   "nom": "Нурби",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1467792,71.4756713",
+   "lat": 51.1467792,
+   "lng": 71.4756713,
+   "halalFriendly": false,
+   "bookingUrl": "https://nurbi.kz/",
+   "source": "osm"
+  },
+  {
+   "nom": "Катон-Карагай",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1464861,71.4750901",
+   "lat": 51.1464861,
+   "lng": 71.4750901,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1464861,71.4750901",
+   "source": "osm"
+  },
+  {
+   "nom": "Uptown Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1457922,71.4244436",
+   "lat": 51.1457922,
+   "lng": 71.4244436,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1457922,71.4244436",
+   "source": "osm"
+  },
+  {
+   "nom": "Nomad hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1489353,71.4801351",
+   "lat": 51.1489353,
+   "lng": 71.4801351,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1489353,71.4801351",
+   "source": "osm"
+  },
+  {
+   "nom": "Нұрсат",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1837214,71.4084588",
+   "lat": 51.1837214,
+   "lng": 71.4084588,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1837214,71.4084588",
+   "source": "osm"
+  },
+  {
+   "nom": "Интерия",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1537742,71.489875",
+   "lat": 51.1537742,
+   "lng": 71.489875,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1537742,71.489875",
+   "source": "osm"
+  },
+  {
+   "nom": "Astana ONE",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1393445,71.4469939",
+   "lat": 51.1393445,
+   "lng": 71.4469939,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1393445,71.4469939",
+   "source": "osm"
+  },
+  {
+   "nom": "Дейли Рент — Кумисбекова 4",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1650287,71.4012065",
+   "lat": 51.1650287,
+   "lng": 71.4012065,
+   "halalFriendly": false,
+   "bookingUrl": "https://dailyrent.kz",
+   "source": "osm"
+  },
+  {
+   "nom": "Марсель",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1815528,71.404177",
+   "lat": 51.1815528,
+   "lng": 71.404177,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1815528,71.404177",
+   "source": "osm"
+  },
+  {
+   "nom": "Indus",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1899961,71.4123202",
+   "lat": 51.1899961,
+   "lng": 71.4123202,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1899961,71.4123202",
+   "source": "osm"
+  },
+  {
+   "nom": "Азат",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1484539,71.4856823",
+   "lat": 51.1484539,
+   "lng": 71.4856823,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1484539,71.4856823",
+   "source": "osm"
+  },
+  {
+   "nom": "Ерейментау",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1917663,71.4143356",
+   "lat": 51.1917663,
+   "lng": 71.4143356,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1917663,71.4143356",
+   "source": "osm"
+  },
+  {
+   "nom": "NS",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1421932,71.422702",
+   "lat": 51.1421932,
+   "lng": 71.422702,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1421932,71.422702",
+   "source": "osm"
+  },
+  {
+   "nom": "Аланда",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1387811,71.463749",
+   "lat": 51.1387811,
+   "lng": 71.463749,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1387811,71.463749",
+   "source": "osm"
+  },
+  {
+   "nom": "Дейли Рент — Кумисбекова 9А",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1703917,71.3975855",
+   "lat": 51.1703917,
+   "lng": 71.3975855,
+   "halalFriendly": false,
+   "bookingUrl": "https://dailyrent.kz",
+   "source": "osm"
+  },
+  {
+   "nom": "Салтанат",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1908052,71.4092859",
+   "lat": 51.1908052,
+   "lng": 71.4092859,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1908052,71.4092859",
+   "source": "osm"
+  },
+  {
+   "nom": "ATLAS",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1929925,71.4121896",
+   "lat": 51.1929925,
+   "lng": 71.4121896,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1929925,71.4121896",
+   "source": "osm"
+  },
+  {
+   "nom": "Ака",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1891859,71.4068601",
+   "lat": 51.1891859,
+   "lng": 71.4068601,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1891859,71.4068601",
+   "source": "osm"
+  },
+  {
+   "nom": "Hostel Nomad 4x4",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1397622,71.4256836",
+   "lat": 51.1397622,
+   "lng": 71.4256836,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1397622,71.4256836",
+   "source": "osm"
+  },
+  {
+   "nom": "Сая",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1807722,71.3984728",
+   "lat": 51.1807722,
+   "lng": 71.3984728,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1807722,71.3984728",
+   "source": "osm"
+  },
+  {
+   "nom": "Дейли Рент — Абай Жолы 15Б",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1646473,71.395006",
+   "lat": 51.1646473,
+   "lng": 71.395006,
+   "halalFriendly": false,
+   "bookingUrl": "https://dailyrent.kz",
+   "source": "osm"
+  },
+  {
+   "nom": "ibis hotel Astana",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1365473,71.4680865",
+   "lat": 51.1365473,
+   "lng": 71.4680865,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.accorhotels.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Люкс",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.194023,71.4090038",
+   "lat": 51.194023,
+   "lng": 71.4090038,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.194023,71.4090038",
+   "source": "osm"
+  },
+  {
+   "nom": "Рауан Отель",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.19402,71.4078033",
+   "lat": 51.19402,
+   "lng": 71.4078033,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.19402,71.4078033",
+   "source": "osm"
+  },
+  {
+   "nom": "Казжол",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 4,
+   "mapsUrl": "https://maps.google.com/?q=51.1366653,71.4731244",
+   "lat": 51.1366653,
+   "lng": 71.4731244,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.hotelkazzhol.kz/ru/astana",
+   "source": "osm"
+  },
+  {
+   "nom": "Магас",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1891446,71.4009523",
+   "lat": 51.1891446,
+   "lng": 71.4009523,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.instagram.com/magas_hotel/",
+   "source": "osm"
+  },
+  {
+   "nom": "Вокзал для двоих",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1930615,71.4042717",
+   "lat": 51.1930615,
+   "lng": 71.4042717,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1930615,71.4042717",
+   "source": "osm"
+  },
+  {
+   "nom": "Айтолқын",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1515307,71.5004051",
+   "lat": 51.1515307,
+   "lng": 71.5004051,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1515307,71.5004051",
+   "source": "osm"
+  },
+  {
+   "nom": "Bed and Breakfast Good Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1326478,71.4362002",
+   "lat": 51.1326478,
+   "lng": 71.4362002,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1326478,71.4362002",
+   "source": "osm"
+  },
+  {
+   "nom": "Jasmine",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.132823,71.4348387",
+   "lat": 51.132823,
+   "lng": 71.4348387,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.132823,71.4348387",
+   "source": "osm"
+  },
+  {
+   "nom": "Gokai Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1437258,71.4930639",
+   "lat": 51.1437258,
+   "lng": 71.4930639,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1437258,71.4930639",
+   "source": "osm"
+  },
+  {
+   "nom": "Hostel Nochleg",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1325622,71.4364418",
+   "lat": 51.1325622,
+   "lng": 71.4364418,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1325622,71.4364418",
+   "source": "osm"
+  },
+  {
+   "nom": "Jumbaktas",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1367874,71.417437",
+   "lat": 51.1367874,
+   "lng": 71.417437,
+   "halalFriendly": false,
+   "bookingUrl": "https://jumbaktas.kz/",
+   "source": "osm"
+  },
+  {
+   "nom": "MirOtel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1322866,71.4656044",
+   "lat": 51.1322866,
+   "lng": 71.4656044,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1322866,71.4656044",
+   "source": "osm"
+  },
+  {
+   "nom": "Алкуат",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1967426,71.4046097",
+   "lat": 51.1967426,
+   "lng": 71.4046097,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1967426,71.4046097",
+   "source": "osm"
+  },
+  {
+   "nom": "Rixos President Astana",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 5,
+   "mapsUrl": "https://maps.google.com/?q=51.1339404,71.4214227",
+   "lat": 51.1339404,
+   "lng": 71.4214227,
+   "halalFriendly": false,
+   "bookingUrl": "https://presidentastana-ru.rixos.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Традициональ",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1389573,71.4083864",
+   "lat": 51.1389573,
+   "lng": 71.4083864,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1389573,71.4083864",
+   "source": "osm"
+  },
+  {
+   "nom": "Дипломат",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1315318,71.4291733",
+   "lat": 51.1315318,
+   "lng": 71.4291733,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1315318,71.4291733",
+   "source": "osm"
+  },
+  {
+   "nom": "Hilton Garden Inn Astana",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 4,
+   "mapsUrl": "https://maps.google.com/?q=51.135291,71.4141736",
+   "lat": 51.135291,
+   "lng": 71.4141736,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.hilton.com/en/hotels/tseakgi-hilton-garden-inn-astana/",
+   "source": "osm"
+  },
+  {
+   "nom": "Самурык",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1886101,71.3917083",
+   "lat": 51.1886101,
+   "lng": 71.3917083,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1886101,71.3917083",
+   "source": "osm"
+  },
+  {
+   "nom": "Belon lux hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1266503,71.4355956",
+   "lat": 51.1266503,
+   "lng": 71.4355956,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1266503,71.4355956",
+   "source": "osm"
+  },
+  {
+   "nom": "EXPO HOSTEL",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1265392,71.4361766",
+   "lat": 51.1265392,
+   "lng": 71.4361766,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1265392,71.4361766",
+   "source": "osm"
+  },
+  {
+   "nom": "The place Astana Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1285706,71.4225175",
+   "lat": 51.1285706,
+   "lng": 71.4225175,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1285706,71.4225175",
+   "source": "osm"
+  },
+  {
+   "nom": "ЖК Жансая",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1297375,71.4163229",
+   "lat": 51.1297375,
+   "lng": 71.4163229,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1297375,71.4163229",
+   "source": "osm"
+  },
+  {
+   "nom": "Шағын",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.125832,71.4248762",
+   "lat": 51.125832,
+   "lng": 71.4248762,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.125832,71.4248762",
+   "source": "osm"
+  },
+  {
+   "nom": "Ақнұр",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1835597,71.3778778",
+   "lat": 51.1835597,
+   "lng": 71.3778778,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1835597,71.3778778",
+   "source": "osm"
+  },
+  {
+   "nom": "Beijing Palace Soluxe Hotel Astana",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1234323,71.432887",
+   "lat": 51.1234323,
+   "lng": 71.432887,
+   "halalFriendly": false,
+   "bookingUrl": "http://soluxe-astana.kz/",
+   "source": "osm"
+  },
+  {
+   "nom": "Толеп",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1837246,71.3759315",
+   "lat": 51.1837246,
+   "lng": 71.3759315,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1837246,71.3759315",
+   "source": "osm"
+  },
+  {
+   "nom": "Marriott",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1287854,71.4074064",
+   "lat": 51.1287854,
+   "lng": 71.4074064,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.marriott.com/hotels/fact-sheet/travel/tsemc-astana-marriott-hotel/",
+   "source": "osm"
+  },
+  {
+   "nom": "Ботагоз",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1241956,71.4189245",
+   "lat": 51.1241956,
+   "lng": 71.4189245,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1241956,71.4189245",
+   "source": "osm"
+  },
+  {
+   "nom": "Sheraton Astana",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1223411,71.4270026",
+   "lat": 51.1223411,
+   "lng": 71.4270026,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.marriott.com/en-us/hotels/tsesi-sheraton-astana-hotel/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0",
+   "source": "osm"
+  },
+  {
+   "nom": "Асия",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1478957,71.5201987",
+   "lat": 51.1478957,
+   "lng": 71.5201987,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.1478957,71.5201987",
+   "source": "osm"
+  },
+  {
+   "nom": "Elysian",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.119775,71.4400147",
+   "lat": 51.119775,
+   "lng": 71.4400147,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=51.119775,71.4400147",
+   "source": "osm"
+  }
+ ],
+ "mosqueesPrincipales": [],
+ "activites": [
+  {
+   "nom": "Памятник жертвам голодомора",
+   "lat": 51.1686561,
+   "lng": 71.4256941,
+   "coordonnees": {
+    "lat": 51.1686561,
+    "lng": 71.4256941
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=51.1686561,71.4256941",
+   "source": "osm"
+  },
+  {
+   "nom": "Иоанн Павел II",
+   "lat": 51.154109,
+   "lng": 71.4521622,
+   "coordonnees": {
+    "lat": 51.154109,
+    "lng": 71.4521622
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=51.154109,71.4521622",
+   "source": "osm"
+  },
+  {
+   "nom": "С. Сейфуллин",
+   "lat": 51.1715412,
+   "lng": 71.4239674,
+   "coordonnees": {
+    "lat": 51.1715412,
+    "lng": 71.4239674
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=51.1715412,71.4239674",
+   "source": "osm"
+  },
+  {
+   "nom": "А. С. Пушкину",
+   "lat": 51.159591,
+   "lng": 71.4698716,
+   "coordonnees": {
+    "lat": 51.159591,
+    "lng": 71.4698716
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=51.159591,71.4698716",
+   "source": "osm"
+  },
+  {
+   "nom": "ҚР ІІМ Ішкі әскерлерінің 17 жауынгеріне",
+   "lat": 51.153921,
+   "lng": 71.4584124,
+   "coordonnees": {
+    "lat": 51.153921,
+    "lng": 71.4584124
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=51.153921,71.4584124",
+   "source": "osm"
+  },
+  {
+   "nom": "Қызметтік борышын орындау кезінде қаза тапқан ІІМ қызметкерлеріне арналған монумент",
+   "lat": 51.1524523,
+   "lng": 71.450108,
+   "coordonnees": {
+    "lat": 51.1524523,
+    "lng": 71.450108
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=51.1524523,71.450108",
+   "source": "osm"
+  },
+  {
+   "nom": "Н. Ә. Назарбаев",
+   "lat": 51.1562423,
+   "lng": 71.431928,
+   "coordonnees": {
+    "lat": 51.1562423,
+    "lng": 71.431928
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=51.1562423,71.431928",
+   "source": "osm"
+  },
+  {
+   "nom": "Beatles Statue",
+   "lat": 51.1623955,
+   "lng": 71.4237199,
+   "coordonnees": {
+    "lat": 51.1623955,
+    "lng": 71.4237199
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=51.1623955,71.4237199",
+   "source": "osm"
+  },
+  {
+   "nom": "Т34-85",
+   "lat": 51.1554129,
+   "lng": 71.4323473,
+   "coordonnees": {
+    "lat": 51.1554129,
+    "lng": 71.4323473
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=51.1554129,71.4323473",
+   "source": "osm"
+  },
+  {
+   "nom": "Айтеке-би, Казыбек-би и Толе-би",
+   "lat": 51.1695299,
+   "lng": 71.4208049,
+   "coordonnees": {
+    "lat": 51.1695299,
+    "lng": 71.4208049
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=51.1695299,71.4208049",
+   "source": "osm"
+  },
+  {
+   "nom": "Кенесары хан",
+   "lat": 51.1604981,
+   "lng": 71.4240851,
+   "coordonnees": {
+    "lat": 51.1604981,
+    "lng": 71.4240851
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=51.1604981,71.4240851",
+   "source": "osm"
+  },
+  {
+   "nom": "А. Құнанбайұлы",
+   "lat": 51.1679151,
+   "lng": 71.420358,
+   "coordonnees": {
+    "lat": 51.1679151,
+    "lng": 71.420358
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=51.1679151,71.420358",
+   "source": "osm"
+  },
+  {
+   "nom": "Жамбыл",
+   "lat": 51.1513903,
+   "lng": 71.4454592,
+   "coordonnees": {
+    "lat": 51.1513903,
+    "lng": 71.4454592
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=51.1513903,71.4454592",
+   "source": "osm"
+  },
+  {
+   "nom": "Жер-ана (Томирис)",
+   "lat": 51.1533831,
+   "lng": 71.4317199,
+   "coordonnees": {
+    "lat": 51.1533831,
+    "lng": 71.4317199
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=51.1533831,71.4317199",
+   "source": "osm"
+  },
+  {
+   "nom": "Чернобыль апатының құрбандарына",
+   "lat": 51.1564832,
+   "lng": 71.4736068,
+   "coordonnees": {
+    "lat": 51.1564832,
+    "lng": 71.4736068
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=51.1564832,71.4736068",
+   "source": "osm"
+  },
+  {
+   "nom": "Памятник \"Жанибек и Керей хандары\"",
+   "lat": 51.1664322,
+   "lng": 71.4169499,
+   "coordonnees": {
+    "lat": 51.1664322,
+    "lng": 71.4169499
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=51.1664322,71.4169499",
+   "source": "osm"
+  },
+  {
+   "nom": "Юнус Эмре",
+   "lat": 51.1518841,
+   "lng": 71.4303536,
+   "coordonnees": {
+    "lat": 51.1518841,
+    "lng": 71.4303536
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=51.1518841,71.4303536",
+   "source": "osm"
+  },
+  {
+   "nom": "Мұстафа Кемал Ататүрік",
+   "lat": 51.1511586,
+   "lng": 71.4320358,
+   "coordonnees": {
+    "lat": 51.1511586,
+    "lng": 71.4320358
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=51.1511586,71.4320358",
+   "source": "osm"
+  },
+  {
+   "nom": "Ауғанстанда қаза тапқандарға",
+   "lat": 51.1571525,
+   "lng": 71.4772186,
+   "coordonnees": {
+    "lat": 51.1571525,
+    "lng": 71.4772186
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=51.1571525,71.4772186",
+   "source": "osm"
+  },
+  {
+   "nom": "Прокат",
+   "lat": 51.191274,
+   "lng": 71.4466096,
+   "coordonnees": {
+    "lat": 51.191274,
+    "lng": 71.4466096
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=51.191274,71.4466096",
+   "source": "osm"
+  },
+  {
+   "nom": "Студия 1337",
+   "lat": 51.1723394,
+   "lng": 71.4142276,
+   "coordonnees": {
+    "lat": 51.1723394,
+    "lng": 71.4142276
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=51.1723394,71.4142276",
+   "source": "osm"
+  },
+  {
+   "nom": "М. Мәметова",
+   "lat": 51.1747187,
+   "lng": 71.4120391,
+   "coordonnees": {
+    "lat": 51.1747187,
+    "lng": 71.4120391
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=51.1747187,71.4120391",
+   "source": "osm"
+  },
+  {
+   "nom": "Олимпиада сақиналары",
+   "lat": 51.1540747,
+   "lng": 71.4196456,
+   "coordonnees": {
+    "lat": 51.1540747,
+    "lng": 71.4196456
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=51.1540747,71.4196456",
+   "source": "osm"
+  },
+  {
+   "nom": "Мемориал Великой Отечественной войны",
+   "lat": 51.1747138,
+   "lng": 71.4106272,
+   "coordonnees": {
+    "lat": 51.1747138,
+    "lng": 71.4106272
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=51.1747138,71.4106272",
+   "source": "osm"
+  },
+  {
+   "nom": "Памятник Шарлю Де Голлю",
+   "lat": 51.1414649,
+   "lng": 71.4486596,
+   "coordonnees": {
+    "lat": 51.1414649,
+    "lng": 71.4486596
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=51.1414649,71.4486596",
+   "source": "osm"
+  },
+  {
+   "nom": "“History”",
+   "lat": 51.1886583,
+   "lng": 71.4163924,
+   "coordonnees": {
+    "lat": 51.1886583,
+    "lng": 71.4163924
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=51.1886583,71.4163924",
+   "source": "osm"
+  },
+  {
+   "nom": "Әлия Молдағұлова",
+   "lat": 51.1856822,
+   "lng": 71.4091666,
+   "coordonnees": {
+    "lat": 51.1856822,
+    "lng": 71.4091666
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=51.1856822,71.4091666",
+   "source": "osm"
+  },
+  {
+   "nom": "Ailand",
+   "lat": 51.1479426,
+   "lng": 71.4158765,
+   "coordonnees": {
+    "lat": 51.1479426,
+    "lng": 71.4158765
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=51.1479426,71.4158765",
+   "source": "osm"
+  },
+  {
+   "nom": "Бауыржан Момышұлы",
+   "lat": 51.1345953,
+   "lng": 71.4596617,
+   "coordonnees": {
+    "lat": 51.1345953,
+    "lng": 71.4596617
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=51.1345953,71.4596617",
+   "source": "osm"
+  },
+  {
+   "nom": "Иван Васильевич Панфилов",
+   "lat": 51.1447619,
+   "lng": 71.491968,
+   "coordonnees": {
+    "lat": 51.1447619,
+    "lng": 71.491968
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=51.1447619,71.491968",
+   "source": "osm"
+  },
+  {
+   "nom": "Дракон",
+   "lat": 51.1325332,
+   "lng": 71.4510438,
+   "coordonnees": {
+    "lat": 51.1325332,
+    "lng": 71.4510438
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=51.1325332,71.4510438",
+   "source": "osm"
+  },
+  {
+   "nom": "Рақымжан Қошқарбаев",
+   "lat": 51.1298506,
+   "lng": 71.4590741,
+   "coordonnees": {
+    "lat": 51.1298506,
+    "lng": 71.4590741
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=51.1298506,71.4590741",
+   "source": "osm"
+  },
+  {
+   "nom": "Жетігенші",
+   "lat": 51.1346692,
+   "lng": 71.4106104,
+   "coordonnees": {
+    "lat": 51.1346692,
+    "lng": 71.4106104
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=51.1346692,71.4106104",
+   "source": "osm"
+  },
+  {
+   "nom": "Хатико",
+   "lat": 51.1369933,
+   "lng": 71.4027939,
+   "coordonnees": {
+    "lat": 51.1369933,
+    "lng": 71.4027939
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=51.1369933,71.4027939",
+   "source": "osm"
+  },
+  {
+   "nom": "Астана-Экспо КС",
+   "lat": 51.1294931,
+   "lng": 71.4182513,
+   "coordonnees": {
+    "lat": 51.1294931,
+    "lng": 71.4182513
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=51.1294931,71.4182513",
+   "source": "osm"
+  },
+  {
+   "nom": "Zur Sultan",
+   "lat": 51.1318179,
+   "lng": 71.4077184,
+   "coordonnees": {
+    "lat": 51.1318179,
+    "lng": 71.4077184
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=51.1318179,71.4077184",
+   "source": "osm"
+  },
+  {
+   "nom": "Қазақ елі",
+   "lat": 51.1221098,
+   "lng": 71.4698815,
+   "coordonnees": {
+    "lat": 51.1221098,
+    "lng": 71.4698815
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=51.1221098,71.4698815",
+   "source": "osm"
+  },
+  {
+   "nom": "Махтумкули Фраги",
+   "lat": 51.1303587,
+   "lng": 71.4010254,
+   "coordonnees": {
+    "lat": 51.1303587,
+    "lng": 71.4010254
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=51.1303587,71.4010254",
+   "source": "osm"
+  },
+  {
+   "nom": "The Wall of Peace Monument",
+   "lat": 51.1218404,
+   "lng": 71.4717428,
+   "coordonnees": {
+    "lat": 51.1218404,
+    "lng": 71.4717428
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=51.1218404,71.4717428",
+   "source": "osm"
+  },
+  {
+   "nom": "Михай Эминеску",
+   "lat": 51.130232,
+   "lng": 71.3934754,
+   "coordonnees": {
+    "lat": 51.130232,
+    "lng": 71.3934754
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=51.130232,71.3934754",
+   "source": "osm"
+  },
+  {
+   "nom": "Қазақстан Республикасының Ұлттық Мұражайы",
+   "lat": 51.1182297,
+   "lng": 71.4693823,
+   "coordonnees": {
+    "lat": 51.1182297,
+    "lng": 71.4693823
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=51.1182297,71.4693823",
+   "source": "osm"
+  },
+  {
+   "nom": "Асқар Забикулин",
+   "lat": 51.116732,
+   "lng": 71.4057852,
+   "coordonnees": {
+    "lat": 51.116732,
+    "lng": 71.4057852
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=51.116732,71.4057852",
+   "source": "osm"
+  },
+  {
+   "nom": "Қазақ еліне мың алғыс",
+   "lat": 51.1051208,
+   "lng": 71.4242471,
+   "coordonnees": {
+    "lat": 51.1051208,
+    "lng": 71.4242471
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=51.1051208,71.4242471",
+   "source": "osm"
+  },
+  {
+   "nom": "Қазақстан Теміржол тарихы Мұражайы",
+   "lat": 51.1122858,
+   "lng": 71.5316883,
+   "coordonnees": {
+    "lat": 51.1122858,
+    "lng": 71.5316883
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=51.1122858,71.5316883",
+   "source": "osm"
+  },
+  {
+   "nom": "Астана Арена",
+   "lat": 51.1121947,
+   "lng": 71.5330269,
+   "coordonnees": {
+    "lat": 51.1121947,
+    "lng": 71.5330269
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=51.1121947,71.5330269",
+   "source": "osm"
+  },
+  {
+   "nom": "Тәуелсіздіктің 25 жылдығы",
+   "lat": 51.0934522,
+   "lng": 71.4175648,
+   "coordonnees": {
+    "lat": 51.0934522,
+    "lng": 71.4175648
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=51.0934522,71.4175648",
+   "source": "osm"
+  },
+  {
+   "nom": "\"Астана Жұлдызы\" Ескерткіші",
+   "lat": 51.0705424,
+   "lng": 71.395868,
+   "coordonnees": {
+    "lat": 51.0705424,
+    "lng": 71.395868
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=51.0705424,71.395868",
+   "source": "osm"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30",
+ "description_en": "Astana, in Kazakhstan, is a halal-friendly destination with a Halal Trust Score of 4.4/5. Muslim travelers will find 13 halal restaurants listed, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
+ "metaDescription_en": "Halal guide to Astana: 13 halal restaurants listed, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.4/5.",
+ "nom_en": "Astana",
+ "boucheries": [],
+ "dataPurgedAt": "2026-07-15"
 }

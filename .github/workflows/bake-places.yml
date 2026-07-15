@@ -1,0 +1,28 @@
+name: bake-places
+# BLOC 1 refonte data : restaurants réels via Google Places (Text Search).
+# Requiert le secret GOOGLE_PLACES_API_KEY. Garde-fou budget : MAX_REQUESTS.
+on:
+  workflow_dispatch:
+    inputs:
+      max_requests:
+        description: 'Budget de requêtes Google (900 ≈ 29 $)'
+        default: '900'
+      force:
+        description: 'FORCE=1 pour re-baker même les villes récentes'
+        default: '0'
+permissions:
+  contents: write
+jobs:
+  bake:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: node scripts/bake-places.mjs
+        env:
+          GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
+          MAX_REQUESTS: ${{ github.event.inputs.max_requests }}
+          FORCE: ${{ github.event.inputs.force }}

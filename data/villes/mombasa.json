@@ -1,2089 +1,2060 @@
 {
-  "slug": "mombasa",
-  "nom": "Mombasa",
-  "pays": "Kenya",
-  "pays_slug": "kenya",
-  "continent": "Afrique",
-  "region": "Afrique de l'Est",
-  "coordonnees": {
-    "lat": -4.0435,
-    "lng": 39.6682
+ "slug": "mombasa",
+ "nom": "Mombasa",
+ "pays": "Kenya",
+ "pays_slug": "kenya",
+ "continent": "Afrique",
+ "region": "Afrique de l'Est",
+ "coordonnees": {
+  "lat": -4.0435,
+  "lng": 39.6682
+ },
+ "codeISO": "",
+ "score_halal": 4.4,
+ "halalScore": 8.8,
+ "description": "Cité swahilie de la côte kényane, Mombasa mêle héritage arabo-musulman, vieille ville et plages de l'océan Indien.",
+ "image": "https://images.unsplash.com/photo-1598554361597-0858e58aee6f?w=1600&q=80",
+ "image_hero": "https://images.unsplash.com/photo-1598554361597-0858e58aee6f?w=1600&q=80",
+ "metaDescription": "Cité swahilie de la côte kényane, Mombasa mêle héritage arabo-musulman, vieille ville et plages de l'océan Indien.",
+ "statistiques": {
+  "restaurants_halal": 4,
+  "mosquees": 20,
+  "hotels": 119
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "EatZilla",
+   "type": "grill, chicken, fries",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0140395,39.7241389",
+   "lat": -4.0140395,
+   "lng": 39.7241389,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.4,
-  "halalScore": 8.8,
-  "description": "Cité swahilie de la côte kényane, Mombasa mêle héritage arabo-musulman, vieille ville et plages de l'océan Indien.",
-  "image": "https://images.unsplash.com/photo-1598554361597-0858e58aee6f?w=1600&q=80",
-  "image_hero": "https://images.unsplash.com/photo-1598554361597-0858e58aee6f?w=1600&q=80",
-  "metaDescription": "Cité swahilie de la côte kényane, Mombasa mêle héritage arabo-musulman, vieille ville et plages de l'océan Indien.",
-  "statistiques": {
-    "restaurants_halal": 2,
-    "mosquees": 1,
-    "hotels": 120
+  {
+   "nom": "Island Breeze Restaurant",
+   "type": "Biriani, chips, chicken, Pilau, burger, shawarma, Sambusa, Kababu, Mahamri, Tea, coffee shop, Chapati",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0593955,39.6722709",
+   "lat": -4.0593955,
+   "lng": 39.6722709,
+   "halalConfidence": "likely",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "Singh Restaurant",
+   "lat": -4.0565226,
+   "lng": 39.6674235,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-4.0565226,39.6674235",
+   "source": "osm"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [
-    {
-      "nom": "EatZilla",
-      "type": "grill, chicken, fries",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0140395,39.7241389",
-      "lat": -4.0140395,
-      "lng": 39.7241389,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Island Breeze Restaurant",
-      "type": "Biriani, chips, chicken, Pilau, burger, shawarma, Sambusa, Kababu, Mahamri, Tea, coffee shop, Chapati",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0593955,39.6722709",
-      "lat": -4.0593955,
-      "lng": 39.6722709,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Singh Restaurant",
-      "lat": -4.0565226,
-      "lng": 39.6674235,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-4.0565226,39.6674235",
-      "source": "osm"
-    },
-    {
-      "nom": "New Chetna Restaurant",
-      "lat": -4.059248,
-      "lng": 39.667641,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-4.059248,39.667641",
-      "source": "osm"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "Buxton MADEVU",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0436117,39.6678386",
-      "lat": -4.0436117,
-      "lng": 39.6678386,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0436117,39.6678386",
-      "source": "osm"
-    },
-    {
-      "nom": "Baogan Hotel Ltd",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0425838,39.667726",
-      "lat": -4.0425838,
-      "lng": 39.667726,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0425838,39.667726",
-      "source": "osm"
-    },
-    {
-      "nom": "Bridge Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0427378,39.6674412",
-      "lat": -4.0427378,
-      "lng": 39.6674412,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0427378,39.6674412",
-      "source": "osm"
-    },
-    {
-      "nom": "Cool Breeze",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0435975,39.6692747",
-      "lat": -4.0435975,
-      "lng": 39.6692747,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0435975,39.6692747",
-      "source": "osm"
-    },
-    {
-      "nom": "Darajani Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.042893,39.6671102",
-      "lat": -4.042893,
-      "lng": 39.6671102,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.042893,39.6671102",
-      "source": "osm"
-    },
-    {
-      "nom": "Mombasa Railways garden",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0423241,39.66771",
-      "lat": -4.0423241,
-      "lng": 39.66771,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0423241,39.66771",
-      "source": "osm"
-    },
-    {
-      "nom": "Mas",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0404403,39.6673118",
-      "lat": -4.0404403,
-      "lng": 39.6673118,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0404403,39.6673118",
-      "source": "osm"
-    },
-    {
-      "nom": "Stadium Holiday Inn",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0462556,39.6659887",
-      "lat": -4.0462556,
-      "lng": 39.6659887,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0462556,39.6659887",
-      "source": "osm"
-    },
-    {
-      "nom": "Panaroma Guest house",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0460051,39.6654472",
-      "lat": -4.0460051,
-      "lng": 39.6654472,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0460051,39.6654472",
-      "source": "osm"
-    },
-    {
-      "nom": "White Rhino Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0396671,39.6677053",
-      "lat": -4.0396671,
-      "lng": 39.6677053,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0396671,39.6677053",
-      "source": "osm"
-    },
-    {
-      "nom": "Marathon Lodge",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0457919,39.6648098",
-      "lat": -4.0457919,
-      "lng": 39.6648098,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0457919,39.6648098",
-      "source": "osm"
-    },
-    {
-      "nom": "Panaroma Gardens Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0463072,39.6651866",
-      "lat": -4.0463072,
-      "lng": 39.6651866,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0463072,39.6651866",
-      "source": "osm"
-    },
-    {
-      "nom": "Jambo Paradise Hotel - Mombasa",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0479315,39.6661295",
-      "lat": -4.0479315,
-      "lng": 39.6661295,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0479315,39.6661295",
-      "source": "osm"
-    },
-    {
-      "nom": "TUM Guest House B",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0380095,39.6670414",
-      "lat": -4.0380095,
-      "lng": 39.6670414,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0380095,39.6670414",
-      "source": "osm"
-    },
-    {
-      "nom": "Boston Leisure Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0477883,39.6640675",
-      "lat": -4.0477883,
-      "lng": 39.6640675,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0477883,39.6640675",
-      "source": "osm"
-    },
-    {
-      "nom": "CityBlue Creekside Hotel & Suites",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0428597,39.6753068",
-      "lat": -4.0428597,
-      "lng": 39.6753068,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0428597,39.6753068",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Radiance",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0506504,39.6646594",
-      "lat": -4.0506504,
-      "lng": 39.6646594,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0506504,39.6646594",
-      "source": "osm"
-    },
-    {
-      "nom": "Bibla Fruit Parlour",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0495171,39.6628284",
-      "lat": -4.0495171,
-      "lng": 39.6628284,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0495171,39.6628284",
-      "source": "osm"
-    },
-    {
-      "nom": "Ichaweri Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0517622,39.668248",
-      "lat": -4.0517622,
-      "lng": 39.668248,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0517622,39.668248",
-      "source": "osm"
-    },
-    {
-      "nom": "Gulshan Restaurant",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0522317,39.6659036",
-      "lat": -4.0522317,
-      "lng": 39.6659036,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0522317,39.6659036",
-      "source": "osm"
-    },
-    {
-      "nom": "Swahili Gem Apartments",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0333212,39.6674548",
-      "lat": -4.0333212,
-      "lng": 39.6674548,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0333212,39.6674548",
-      "source": "osm"
-    },
-    {
-      "nom": "T/A Masters Hotel",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0466244,39.6584503",
-      "lat": -4.0466244,
-      "lng": 39.6584503,
-      "halalFriendly": false,
-      "bookingUrl": "http://www.safisafihotels.com",
-      "source": "osm"
-    },
-    {
-      "nom": "SUHUFI PALACE HOTEL",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0524669,39.6735727",
-      "lat": -4.0524669,
-      "lng": 39.6735727,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0524669,39.6735727",
-      "source": "osm"
-    },
-    {
-      "nom": "Wogect Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0391357,39.6583703",
-      "lat": -4.0391357,
-      "lng": 39.6583703,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0391357,39.6583703",
-      "source": "osm"
-    },
-    {
-      "nom": "Hilton Guesthouse",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.054897,39.6679466",
-      "lat": -4.054897,
-      "lng": 39.6679466,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.054897,39.6679466",
-      "source": "osm"
-    },
-    {
-      "nom": "New people hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0546158,39.6727262",
-      "lat": -4.0546158,
-      "lng": 39.6727262,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0546158,39.6727262",
-      "source": "osm"
-    },
-    {
-      "nom": "city center hotel & restaurant",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0557927,39.6728446",
-      "lat": -4.0557927,
-      "lng": 39.6728446,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0557927,39.6728446",
-      "source": "osm"
-    },
-    {
-      "nom": "New Daba City Guest House",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0567224,39.6684922",
-      "lat": -4.0567224,
-      "lng": 39.6684922,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0567224,39.6684922",
-      "source": "osm"
-    },
-    {
-      "nom": "Port Tudor Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0309667,39.6637051",
-      "lat": -4.0309667,
-      "lng": 39.6637051,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0309667,39.6637051",
-      "source": "osm"
-    },
-    {
-      "nom": "check point",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0399145,39.6814348",
-      "lat": -4.0399145,
-      "lng": 39.6814348,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0399145,39.6814348",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Sapphire",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0565377,39.6640459",
-      "lat": -4.0565377,
-      "lng": 39.6640459,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0565377,39.6640459",
-      "source": "osm"
-    },
-    {
-      "nom": "Josleejim Hotel Ltd",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0573073,39.6674963",
-      "lat": -4.0573073,
-      "lng": 39.6674963,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0573073,39.6674963",
-      "source": "osm"
-    },
-    {
-      "nom": "Akshardham Apartments",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0328792,39.6783831",
-      "lat": -4.0328792,
-      "lng": 39.6783831,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0328792,39.6783831",
-      "source": "osm"
-    },
-    {
-      "nom": "White house",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0327938,39.6783387",
-      "lat": -4.0327938,
-      "lng": 39.6783387,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0327938,39.6783387",
-      "source": "osm"
-    },
-    {
-      "nom": "Magwende",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0564724,39.6760559",
-      "lat": -4.0564724,
-      "lng": 39.6760559,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0564724,39.6760559",
-      "source": "osm"
-    },
-    {
-      "nom": "Premium Inn Hotel Mombasa",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0588445,39.6662489",
-      "lat": -4.0588445,
-      "lng": 39.6662489,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.premiuminn.co.ke/",
-      "source": "osm"
-    },
-    {
-      "nom": "Royal Court Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0591721,39.6670028",
-      "lat": -4.0591721,
-      "lng": 39.6670028,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0591721,39.6670028",
-      "source": "osm"
-    },
-    {
-      "nom": "Abson Towers",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0592074,39.6691654",
-      "lat": -4.0592074,
-      "lng": 39.6691654,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0592074,39.6691654",
-      "source": "osm"
-    },
-    {
-      "nom": "Quale Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0593971,39.67094",
-      "lat": -4.0593971,
-      "lng": 39.67094,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0593971,39.67094",
-      "source": "osm"
-    },
-    {
-      "nom": "Everfresh Vegetables;Hotel Dorse",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0601089,39.668609",
-      "lat": -4.0601089,
-      "lng": 39.668609,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0601089,39.668609",
-      "source": "osm"
-    },
-    {
-      "nom": "The Tamarind Mombasa",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0534302,39.6821438",
-      "lat": -4.0534302,
-      "lng": 39.6821438,
-      "halalFriendly": false,
-      "bookingUrl": "https://tamarind.co.ke/tamarind-mombasa/",
-      "source": "osm"
-    },
-    {
-      "nom": "The Tamarind Village",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0536429,39.6819949",
-      "lat": -4.0536429,
-      "lng": 39.6819949,
-      "halalFriendly": false,
-      "bookingUrl": "https://tamarind.co.ke/tamarind-village-serviced-apts/",
-      "source": "osm"
-    },
-    {
-      "nom": "Sahajanand Apartments",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0523968,39.6829163",
-      "lat": -4.0523968,
-      "lng": 39.6829163,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0523968,39.6829163",
-      "source": "osm"
-    },
-    {
-      "nom": "Hermes Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.060535,39.6705336",
-      "lat": -4.060535,
-      "lng": 39.6705336,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.060535,39.6705336",
-      "source": "osm"
-    },
-    {
-      "nom": "Regency Park Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.060695,39.6684786",
-      "lat": -4.060695,
-      "lng": 39.6684786,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.060695,39.6684786",
-      "source": "osm"
-    },
-    {
-      "nom": "Berachah Guest House",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.060381,39.671878",
-      "lat": -4.060381,
-      "lng": 39.671878,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.060381,39.671878",
-      "source": "osm"
-    },
-    {
-      "nom": "Jundan Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0610437,39.6703429",
-      "lat": -4.0610437,
-      "lng": 39.6703429,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0610437,39.6703429",
-      "source": "osm"
-    },
-    {
-      "nom": "Tulia Old Town",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0581679,39.6783441",
-      "lat": -4.0581679,
-      "lng": 39.6783441,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0581679,39.6783441",
-      "source": "osm"
-    },
-    {
-      "nom": "CDH Backpacker's",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0613516,39.6686791",
-      "lat": -4.0613516,
-      "lng": 39.6686791,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0613516,39.6686791",
-      "source": "osm"
-    },
-    {
-      "nom": "Sunview Apartments",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0539819,39.682738",
-      "lat": -4.0539819,
-      "lng": 39.682738,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0539819,39.682738",
-      "source": "osm"
-    },
-    {
-      "nom": "Sheratton Regency Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0618685,39.6676967",
-      "lat": -4.0618685,
-      "lng": 39.6676967,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0618685,39.6676967",
-      "source": "osm"
-    },
-    {
-      "nom": "Mapembeni Global Dishes Cafe",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0617232,39.6658222",
-      "lat": -4.0617232,
-      "lng": 39.6658222,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0617232,39.6658222",
-      "source": "osm"
-    },
-    {
-      "nom": "Recoda Restaurant",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0617499,39.6653039",
-      "lat": -4.0617499,
-      "lng": 39.6653039,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0617499,39.6653039",
-      "source": "osm"
-    },
-    {
-      "nom": "Windsor",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0619589,39.6636598",
-      "lat": -4.0619589,
-      "lng": 39.6636598,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0619589,39.6636598",
-      "source": "osm"
-    },
-    {
-      "nom": "Sentrim Castle Royal Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€€",
-      "score": 3,
-      "mapsUrl": "https://maps.google.com/?q=-4.0625013,39.6700004",
-      "lat": -4.0625013,
-      "lng": 39.6700004,
-      "halalFriendly": false,
-      "bookingUrl": "https://sentrimcastleroyalhotel.com-kenya.com/en/",
-      "source": "osm"
-    },
-    {
-      "nom": "California Dream Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0607179,39.6597994",
-      "lat": -4.0607179,
-      "lng": 39.6597994,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0607179,39.6597994",
-      "source": "osm"
-    },
-    {
-      "nom": "Bandari Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0616037,39.6591359",
-      "lat": -4.0616037,
-      "lng": 39.6591359,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0616037,39.6591359",
-      "source": "osm"
-    },
-    {
-      "nom": "Al-Yusra Palm Tree Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0633486,39.6741247",
-      "lat": -4.0633486,
-      "lng": 39.6741247,
-      "halalFriendly": false,
-      "bookingUrl": "https://palmtreehotel.co.ke/",
-      "source": "osm"
-    },
-    {
-      "nom": "Single Palm Resort",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0522793,39.6870321",
-      "lat": -4.0522793,
-      "lng": 39.6870321,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0522793,39.6870321",
-      "source": "osm"
-    },
-    {
-      "nom": "Manson Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0640522,39.664963",
-      "lat": -4.0640522,
-      "lng": 39.664963,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0640522,39.664963",
-      "source": "osm"
-    },
-    {
-      "nom": "Blue Comforts",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0622541,39.65844",
-      "lat": -4.0622541,
-      "lng": 39.65844,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0622541,39.65844",
-      "source": "osm"
-    },
-    {
-      "nom": "Ganjoni Wananchi Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0625686,39.6587587",
-      "lat": -4.0625686,
-      "lng": 39.6587587,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0625686,39.6587587",
-      "source": "osm"
-    },
-    {
-      "nom": "Rally House",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0648024,39.670401",
-      "lat": -4.0648024,
-      "lng": 39.670401,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0648024,39.670401",
-      "source": "osm"
-    },
-    {
-      "nom": "Three Coins Bar & Resturant",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0636849,39.6607759",
-      "lat": -4.0636849,
-      "lng": 39.6607759,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0636849,39.6607759",
-      "source": "osm"
-    },
-    {
-      "nom": "Biashara Building",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0652046,39.6703815",
-      "lat": -4.0652046,
-      "lng": 39.6703815,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0652046,39.6703815",
-      "source": "osm"
-    },
-    {
-      "nom": "Mina love",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0241444,39.6802356",
-      "lat": -4.0241444,
-      "lng": 39.6802356,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0241444,39.6802356",
-      "source": "osm"
-    },
-    {
-      "nom": "Kivulini Bahari",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0616875,39.6865702",
-      "lat": -4.0616875,
-      "lng": 39.6865702,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0616875,39.6865702",
-      "source": "osm"
-    },
-    {
-      "nom": "Taifa Estates",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0190213,39.6834232",
-      "lat": -4.0190213,
-      "lng": 39.6834232,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0190213,39.6834232",
-      "source": "osm"
-    },
-    {
-      "nom": "Light House Towers",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0725906,39.6747905",
-      "lat": -4.0725906,
-      "lng": 39.6747905,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0725906,39.6747905",
-      "source": "osm"
-    },
-    {
-      "nom": "Sanana Conference Centre and Holiday Resort",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0403279,39.7012734",
-      "lat": -4.0403279,
-      "lng": 39.7012734,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0403279,39.7012734",
-      "source": "osm"
-    },
-    {
-      "nom": "Jupiter Heights",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0473182,39.7018876",
-      "lat": -4.0473182,
-      "lng": 39.7018876,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0473182,39.7018876",
-      "source": "osm"
-    },
-    {
-      "nom": "Akogo House",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.031252,39.7021903",
-      "lat": -4.031252,
-      "lng": 39.7021903,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.031252,39.7021903",
-      "source": "osm"
-    },
-    {
-      "nom": "The Palms",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0539426,39.7039384",
-      "lat": -4.0539426,
-      "lng": 39.7039384,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0539426,39.7039384",
-      "source": "osm"
-    },
-    {
-      "nom": "Shiloh guest house and restaurant",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0273567,39.6340303",
-      "lat": -4.0273567,
-      "lng": 39.6340303,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0273567,39.6340303",
-      "source": "osm"
-    },
-    {
-      "nom": "Nyali International Beach And Spa",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.04964,39.7062225",
-      "lat": -4.04964,
-      "lng": 39.7062225,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.04964,39.7062225",
-      "source": "osm"
-    },
-    {
-      "nom": "Muthu Nyali Beach Hotel and Spa",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0485075,39.7071597",
-      "lat": -4.0485075,
-      "lng": 39.7071597,
-      "halalFriendly": false,
-      "bookingUrl": "http://www.nyali-international.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Makwetu Resorts",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0449927,39.7088672",
-      "lat": -4.0449927,
-      "lng": 39.7088672,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0449927,39.7088672",
-      "source": "osm"
-    },
-    {
-      "nom": "Mombasa Cage Inn Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0282113,39.6279858",
-      "lat": -4.0282113,
-      "lng": 39.6279858,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0282113,39.6279858",
-      "source": "osm"
-    },
-    {
-      "nom": "Nyali Beach Holiday Resorts",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0435538,39.7114981",
-      "lat": -4.0435538,
-      "lng": 39.7114981,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0435538,39.7114981",
-      "source": "osm"
-    },
-    {
-      "nom": "Likoni Happy Gardens",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0869295,39.6724727",
-      "lat": -4.0869295,
-      "lng": 39.6724727,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0869295,39.6724727",
-      "source": "osm"
-    },
-    {
-      "nom": "Leinmach Guest HOuse",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0367701,39.7115617",
-      "lat": -4.0367701,
-      "lng": 39.7115617,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0367701,39.7115617",
-      "source": "osm"
-    },
-    {
-      "nom": "Sunny Side Apartments",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0393542,39.7122355",
-      "lat": -4.0393542,
-      "lng": 39.7122355,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0393542,39.7122355",
-      "source": "osm"
-    },
-    {
-      "nom": "jambo village hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0305829,39.6254639",
-      "lat": -4.0305829,
-      "lng": 39.6254639,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0305829,39.6254639",
-      "source": "osm"
-    },
-    {
-      "nom": "Garden Grove Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0378446,39.7125117",
-      "lat": -4.0378446,
-      "lng": 39.7125117,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0378446,39.7125117",
-      "source": "osm"
-    },
-    {
-      "nom": "Jumeirah Beachfront Apartments",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0401391,39.7133229",
-      "lat": -4.0401391,
-      "lng": 39.7133229,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0401391,39.7133229",
-      "source": "osm"
-    },
-    {
-      "nom": "Sun Africa Hotels",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0386281,39.7149052",
-      "lat": -4.0386281,
-      "lng": 39.7149052,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0386281,39.7149052",
-      "source": "osm"
-    },
-    {
-      "nom": "bareco guest house",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0345924,39.6210329",
-      "lat": -4.0345924,
-      "lng": 39.6210329,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0345924,39.6210329",
-      "source": "osm"
-    },
-    {
-      "nom": "Airport link guest house",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0306144,39.6214029",
-      "lat": -4.0306144,
-      "lng": 39.6214029,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0306144,39.6214029",
-      "source": "osm"
-    },
-    {
-      "nom": "folks inn giest house",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0316805,39.6209225",
-      "lat": -4.0316805,
-      "lng": 39.6209225,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0316805,39.6209225",
-      "source": "osm"
-    },
-    {
-      "nom": "shafee guest house",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0314373,39.620895",
-      "lat": -4.0314373,
-      "lng": 39.620895,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0314373,39.620895",
-      "source": "osm"
-    },
-    {
-      "nom": "Chamiachi Luxury Apartments",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0270048,39.715004",
-      "lat": -4.0270048,
-      "lng": 39.715004,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0270048,39.715004",
-      "source": "osm"
-    },
-    {
-      "nom": "Bahari Beach Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0342224,39.7172609",
-      "lat": -4.0342224,
-      "lng": 39.7172609,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0342224,39.7172609",
-      "source": "osm"
-    },
-    {
-      "nom": "Qwetu Beach Resort",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0932036,39.6746778",
-      "lat": -4.0932036,
-      "lng": 39.6746778,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0932036,39.6746778",
-      "source": "osm"
-    },
-    {
-      "nom": "magongo holiday inn",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0231706,39.6214849",
-      "lat": -4.0231706,
-      "lng": 39.6214849,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0231706,39.6214849",
-      "source": "osm"
-    },
-    {
-      "nom": "Pago",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.031596,39.618639",
-      "lat": -4.031596,
-      "lng": 39.618639,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.031596,39.618639",
-      "source": "osm"
-    },
-    {
-      "nom": "Mombasa beach Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0323611,39.7183578",
-      "lat": -4.0323611,
-      "lng": 39.7183578,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0323611,39.7183578",
-      "source": "osm"
-    },
-    {
-      "nom": "White Castle Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0078782,39.6280154",
-      "lat": -4.0078782,
-      "lng": 39.6280154,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0078782,39.6280154",
-      "source": "osm"
-    },
-    {
-      "nom": "The Reef hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 4,
-      "mapsUrl": "https://maps.google.com/?q=-4.0286323,39.7204302",
-      "lat": -4.0286323,
-      "lng": 39.7204302,
-      "halalFriendly": false,
-      "bookingUrl": "https://reefhotelkenya.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Paradise Apartments",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0266524,39.7203952",
-      "lat": -4.0266524,
-      "lng": 39.7203952,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0266524,39.7203952",
-      "source": "osm"
-    },
-    {
-      "nom": "Green Estates",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-3.9981625,39.6989233",
-      "lat": -3.9981625,
-      "lng": 39.6989233,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-3.9981625,39.6989233",
-      "source": "osm"
-    },
-    {
-      "nom": "Le Grand Victoria Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0068874,39.7092952",
-      "lat": -4.0068874,
-      "lng": 39.7092952,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0068874,39.7092952",
-      "source": "osm"
-    },
-    {
-      "nom": "Bliss Resorts",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0247892,39.7201872",
-      "lat": -4.0247892,
-      "lng": 39.7201872,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0247892,39.7201872",
-      "source": "osm"
-    },
-    {
-      "nom": "Mombasa Backpackers",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0253152,39.720732",
-      "lat": -4.0253152,
-      "lng": 39.720732,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0253152,39.720732",
-      "source": "osm"
-    },
-    {
-      "nom": "Tuliahouse Backpackers",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0236704,39.7208497",
-      "lat": -4.0236704,
-      "lng": 39.7208497,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0236704,39.7208497",
-      "source": "osm"
-    },
-    {
-      "nom": "Comrade Restaurant & Juice Parlour",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0955464,39.6464398",
-      "lat": -4.0955464,
-      "lng": 39.6464398,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0955464,39.6464398",
-      "source": "osm"
-    },
-    {
-      "nom": "Cingaki",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0062709,39.6255503",
-      "lat": -4.0062709,
-      "lng": 39.6255503,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0062709,39.6255503",
-      "source": "osm"
-    },
-    {
-      "nom": "Heidis Beach House",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.1004563,39.6707963",
-      "lat": -4.1004563,
-      "lng": 39.6707963,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.1004563,39.6707963",
-      "source": "osm"
-    },
-    {
-      "nom": "Sunrise Resort Apartments Spa",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0233353,39.7226045",
-      "lat": -4.0233353,
-      "lng": 39.7226045,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0233353,39.7226045",
-      "source": "osm"
-    },
-    {
-      "nom": "PrideInn Express",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0207134,39.7222666",
-      "lat": -4.0207134,
-      "lng": 39.7222666,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0207134,39.7222666",
-      "source": "osm"
-    },
-    {
-      "nom": "Ocean View Nyali",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0241979,39.7242234",
-      "lat": -4.0241979,
-      "lng": 39.7242234,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0241979,39.7242234",
-      "source": "osm"
-    },
-    {
-      "nom": "Consolata Guest House",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.1032473,39.6687876",
-      "lat": -4.1032473,
-      "lng": 39.6687876,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.1032473,39.6687876",
-      "source": "osm"
-    },
-    {
-      "nom": "refineries housing estate",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0190211,39.6134208",
-      "lat": -4.0190211,
-      "lng": 39.6134208,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0190211,39.6134208",
-      "source": "osm"
-    },
-    {
-      "nom": "Mei Place Apartments",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0221213,39.7251022",
-      "lat": -4.0221213,
-      "lng": 39.7251022,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0221213,39.7251022",
-      "source": "osm"
-    },
-    {
-      "nom": "Baobab Resort",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0125969,39.7211064",
-      "lat": -4.0125969,
-      "lng": 39.7211064,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0125969,39.7211064",
-      "source": "osm"
-    },
-    {
-      "nom": "Likoni Super Sports Club & Restaurant",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.1003555,39.6444098",
-      "lat": -4.1003555,
-      "lng": 39.6444098,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.1003555,39.6444098",
-      "source": "osm"
-    },
-    {
-      "nom": "Water club",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0191646,39.7284644",
-      "lat": -4.0191646,
-      "lng": 39.7284644,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0191646,39.7284644",
-      "source": "osm"
-    },
-    {
-      "nom": "Middle East",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.1078734,39.6552926",
-      "lat": -4.1078734,
-      "lng": 39.6552926,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.1078734,39.6552926",
-      "source": "osm"
-    },
-    {
-      "nom": "Ujamaa One Bar & Restaurant",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.1046285,39.6418592",
-      "lat": -4.1046285,
-      "lng": 39.6418592,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.1046285,39.6418592",
-      "source": "osm"
-    },
-    {
-      "nom": "Milele Beach Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-4.0063204,39.7245449",
-      "lat": -4.0063204,
-      "lng": 39.7245449,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-4.0063204,39.7245449",
-      "source": "osm"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "nom": "Masjid Kilifi",
-      "lat": -4.0515176,
-      "lng": 39.6746181,
-      "coordonnees": {
-        "lat": -4.0515176,
-        "lng": 39.6746181
-      },
-      "mapsUrl": "https://maps.google.com/?q=-4.0515176,39.6746181",
-      "source": "osm"
-    },
-    {
-      "nom": "Rahman Mosque",
-      "lat": -4.0447081,
-      "lng": 39.657357,
-      "coordonnees": {
-        "lat": -4.0447081,
-        "lng": 39.657357
-      },
-      "adresse": "Lumumba Road, Mombasa",
-      "mapsUrl": "https://maps.google.com/?q=-4.0447081,39.657357",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Mswalani",
-      "lat": -4.0528476,
-      "lng": 39.674019,
-      "coordonnees": {
-        "lat": -4.0528476,
-        "lng": 39.674019
-      },
-      "mapsUrl": "https://maps.google.com/?q=-4.0528476,39.674019",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Azhar",
-      "lat": -4.0549719,
-      "lng": 39.6642105,
-      "coordonnees": {
-        "lat": -4.0549719,
-        "lng": 39.6642105
-      },
-      "mapsUrl": "https://maps.google.com/?q=-4.0549719,39.6642105",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Nur",
-      "lat": -4.0553064,
-      "lng": 39.6725238,
-      "coordonnees": {
-        "lat": -4.0553064,
-        "lng": 39.6725238
-      },
-      "mapsUrl": "https://maps.google.com/?q=-4.0553064,39.6725238",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Shibu",
-      "lat": -4.0565633,
-      "lng": 39.6694942,
-      "coordonnees": {
-        "lat": -4.0565633,
-        "lng": 39.6694942
-      },
-      "mapsUrl": "https://maps.google.com/?q=-4.0565633,39.6694942",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid TSS",
-      "lat": -4.0603808,
-      "lng": 39.6657846,
-      "coordonnees": {
-        "lat": -4.0603808,
-        "lng": 39.6657846
-      },
-      "mapsUrl": "https://maps.google.com/?q=-4.0603808,39.6657846",
-      "source": "osm"
-    },
-    {
-      "nom": "Mbaruk Mosque",
-      "lat": -4.0626096,
-      "lng": 39.674859,
-      "coordonnees": {
-        "lat": -4.0626096,
-        "lng": 39.674859
-      },
-      "mapsUrl": "https://maps.google.com/?q=-4.0626096,39.674859",
-      "source": "osm"
-    },
-    {
-      "nom": "Fat-hi Mosque",
-      "lat": -4.0532605,
-      "lng": 39.6859924,
-      "coordonnees": {
-        "lat": -4.0532605,
-        "lng": 39.6859924
-      },
-      "mapsUrl": "https://maps.google.com/?q=-4.0532605,39.6859924",
-      "source": "osm"
-    },
-    {
-      "nom": "Umm Kulthum Mosque",
-      "lat": -4.0716539,
-      "lng": 39.6762568,
-      "coordonnees": {
-        "lat": -4.0716539,
-        "lng": 39.6762568
-      },
-      "mapsUrl": "https://maps.google.com/?q=-4.0716539,39.6762568",
-      "source": "osm"
-    },
-    {
-      "nom": "masjid fat'hi chaani",
-      "lat": -4.0316646,
-      "lng": 39.6271932,
-      "coordonnees": {
-        "lat": -4.0316646,
-        "lng": 39.6271932
-      },
-      "mapsUrl": "https://maps.google.com/?q=-4.0316646,39.6271932",
-      "source": "osm"
-    },
-    {
-      "nom": "masjid noor",
-      "lat": -4.0251033,
-      "lng": 39.6245281,
-      "coordonnees": {
-        "lat": -4.0251033,
-        "lng": 39.6245281
-      },
-      "mapsUrl": "https://maps.google.com/?q=-4.0251033,39.6245281",
-      "source": "osm"
-    },
-    {
-      "nom": "masjid saada",
-      "lat": -4.0242199,
-      "lng": 39.6224445,
-      "coordonnees": {
-        "lat": -4.0242199,
-        "lng": 39.6224445
-      },
-      "mapsUrl": "https://maps.google.com/?q=-4.0242199,39.6224445",
-      "source": "osm"
-    },
-    {
-      "nom": "masjid taqwa",
-      "lat": -4.0284025,
-      "lng": 39.6178663,
-      "coordonnees": {
-        "lat": -4.0284025,
-        "lng": 39.6178663
-      },
-      "mapsUrl": "https://maps.google.com/?q=-4.0284025,39.6178663",
-      "source": "osm"
-    },
-    {
-      "nom": "masjid Raudhwa",
-      "lat": -4.0296982,
-      "lng": 39.6164077,
-      "coordonnees": {
-        "lat": -4.0296982,
-        "lng": 39.6164077
-      },
-      "mapsUrl": "https://maps.google.com/?q=-4.0296982,39.6164077",
-      "source": "osm"
-    },
-    {
-      "nom": "masjid lilah bomu",
-      "lat": -4.0257526,
-      "lng": 39.6145447,
-      "coordonnees": {
-        "lat": -4.0257526,
-        "lng": 39.6145447
-      },
-      "mapsUrl": "https://maps.google.com/?q=-4.0257526,39.6145447",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Mubarak",
-      "lat": -4.020437,
-      "lng": 39.6163584,
-      "coordonnees": {
-        "lat": -4.020437,
-        "lng": 39.6163584
-      },
-      "mapsUrl": "https://maps.google.com/?q=-4.020437,39.6163584",
-      "source": "osm"
-    },
-    {
-      "nom": "masjid salmichai",
-      "lat": -4.0294507,
-      "lng": 39.6063832,
-      "coordonnees": {
-        "lat": -4.0294507,
-        "lng": 39.6063832
-      },
-      "mapsUrl": "https://maps.google.com/?q=-4.0294507,39.6063832",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid ummu kulthum bokole",
-      "lat": -4.0178853,
-      "lng": 39.6087296,
-      "coordonnees": {
-        "lat": -4.0178853,
-        "lng": 39.6087296
-      },
-      "mapsUrl": "https://maps.google.com/?q=-4.0178853,39.6087296",
-      "source": "osm"
-    },
-    {
-      "nom": "markaz",
-      "lat": -3.9961726,
-      "lng": 39.6006697,
-      "coordonnees": {
-        "lat": -3.9961726,
-        "lng": 39.6006697
-      },
-      "mapsUrl": "https://maps.google.com/?q=-3.9961726,39.6006697",
-      "source": "osm"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Vieille ville de Mombasa",
-      "categorie": "Culture",
-      "description": "Ruelles swahilies, portes sculptées et mosquées anciennes.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Vieille%20ville%20de%20Mombasa%20Mombasa",
-      "lat": -4.0627762,
-      "lng": 39.6724792,
-      "geocoded": true
-    },
-    {
-      "id": "a2",
-      "nom": "Fort Jesus (UNESCO)",
-      "categorie": "Histoire",
-      "description": "Forteresse portugaise du XVIe siècle.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Fort%20Jesus%20%28UNESCO%29%20Mombasa"
-    },
-    {
-      "id": "a3",
-      "nom": "Plages de Nyali & Diani",
-      "categorie": "Nature",
-      "description": "Sable blanc et lagons de l'océan Indien.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Plages%20de%20Nyali%20%26%20Diani%20Mombasa"
-    },
-    {
-      "nom": "Market",
-      "lat": -4.0436106,
-      "lng": 39.6678752,
-      "coordonnees": {
-        "lat": -4.0436106,
-        "lng": 39.6678752
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-4.0436106,39.6678752",
-      "source": "osm"
-    },
-    {
-      "nom": "Kengeleni Bell",
-      "lat": -4.0393237,
-      "lng": 39.680535,
-      "coordonnees": {
-        "lat": -4.0393237,
-        "lng": 39.680535
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-4.0393237,39.680535",
-      "source": "osm"
-    },
-    {
-      "nom": "Textprint",
-      "lat": -4.0550417,
-      "lng": 39.6616231,
-      "coordonnees": {
-        "lat": -4.0550417,
-        "lng": 39.6616231
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-4.0550417,39.6616231",
-      "source": "osm"
-    },
-    {
-      "nom": "Leven House",
-      "lat": -4.0583657,
-      "lng": 39.6782077,
-      "coordonnees": {
-        "lat": -4.0583657,
-        "lng": 39.6782077
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-4.0583657,39.6782077",
-      "source": "osm"
-    },
-    {
-      "nom": "Mombasa Tusks",
-      "lat": -4.0614435,
-      "lng": 39.666065,
-      "coordonnees": {
-        "lat": -4.0614435,
-        "lng": 39.666065
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-4.0614435,39.666065",
-      "source": "osm"
-    },
-    {
-      "nom": "Rebmann & Krapf monument",
-      "lat": -4.0553637,
-      "lng": 39.6833256,
-      "coordonnees": {
-        "lat": -4.0553637,
-        "lng": 39.6833256
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-4.0553637,39.6833256",
-      "source": "osm"
-    },
-    {
-      "nom": "Africa Hotel",
-      "lat": -4.0606558,
-      "lng": 39.6795729,
-      "coordonnees": {
-        "lat": -4.0606558,
-        "lng": 39.6795729
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-4.0606558,39.6795729",
-      "source": "osm"
-    },
-    {
-      "nom": "Old law court gallery",
-      "lat": -4.0618047,
-      "lng": 39.6789244,
-      "coordonnees": {
-        "lat": -4.0618047,
-        "lng": 39.6789244
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-4.0618047,39.6789244",
-      "source": "osm"
-    },
-    {
-      "nom": "Aussicht auf Fort Jesus",
-      "lat": -4.0614939,
-      "lng": 39.680387,
-      "coordonnees": {
-        "lat": -4.0614939,
-        "lng": 39.680387
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=-4.0614939,39.680387",
-      "source": "osm"
-    },
-    {
-      "nom": "Butterfly House",
-      "lat": -4.0633954,
-      "lng": 39.6792992,
-      "coordonnees": {
-        "lat": -4.0633954,
-        "lng": 39.6792992
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-4.0633954,39.6792992",
-      "source": "osm"
-    },
-    {
-      "nom": "Kisauni Baptist Church.",
-      "lat": -4.0280554,
-      "lng": 39.6851241,
-      "coordonnees": {
-        "lat": -4.0280554,
-        "lng": 39.6851241
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-4.0280554,39.6851241",
-      "source": "osm"
-    },
-    {
-      "nom": "shark zone",
-      "lat": -4.0677935,
-      "lng": 39.6700819,
-      "coordonnees": {
-        "lat": -4.0677935,
-        "lng": 39.6700819
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-4.0677935,39.6700819",
-      "source": "osm"
-    },
-    {
-      "nom": "V.O.K",
-      "lat": -4.0298985,
-      "lng": 39.6924811,
-      "coordonnees": {
-        "lat": -4.0298985,
-        "lng": 39.6924811
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-4.0298985,39.6924811",
-      "source": "osm"
-    },
-    {
-      "nom": "Freewater",
-      "lat": -4.0197637,
-      "lng": 39.682903,
-      "coordonnees": {
-        "lat": -4.0197637,
-        "lng": 39.682903
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-4.0197637,39.682903",
-      "source": "osm"
-    },
-    {
-      "nom": "Frere Town Playing Field",
-      "lat": -4.0250006,
-      "lng": 39.694913,
-      "coordonnees": {
-        "lat": -4.0250006,
-        "lng": 39.694913
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-4.0250006,39.694913",
-      "source": "osm"
-    },
-    {
-      "nom": "Frere Town Primary School.",
-      "lat": -4.0237672,
-      "lng": 39.6955758,
-      "coordonnees": {
-        "lat": -4.0237672,
-        "lng": 39.6955758
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-4.0237672,39.6955758",
-      "source": "osm"
-    },
-    {
-      "nom": "Likoni Ferry",
-      "lat": -4.0782759,
-      "lng": 39.6655116,
-      "coordonnees": {
-        "lat": -4.0782759,
-        "lng": 39.6655116
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-4.0782759,39.6655116",
-      "source": "osm"
-    },
-    {
-      "nom": "Dhehdh",
-      "lat": -4.0395498,
-      "lng": 39.7046952,
-      "coordonnees": {
-        "lat": -4.0395498,
-        "lng": 39.7046952
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-4.0395498,39.7046952",
-      "source": "osm"
-    },
-    {
-      "nom": "Art Project",
-      "lat": -4.0291125,
-      "lng": 39.7047088,
-      "coordonnees": {
-        "lat": -4.0291125,
-        "lng": 39.7047088
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-4.0291125,39.7047088",
-      "source": "osm"
-    },
-    {
-      "nom": "Gate Way - Senti Kumi",
-      "lat": -4.0840723,
-      "lng": 39.673031,
-      "coordonnees": {
-        "lat": -4.0840723,
-        "lng": 39.673031
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=-4.0840723,39.673031",
-      "source": "osm"
-    },
-    {
-      "nom": "Bombolulu Workshops & Cultural Center",
-      "lat": -4.0214363,
-      "lng": 39.7032783,
-      "coordonnees": {
-        "lat": -4.0214363,
-        "lng": 39.7032783
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-4.0214363,39.7032783",
-      "source": "osm"
-    },
-    {
-      "nom": "Akamba handcraft market",
-      "lat": -4.0279271,
-      "lng": 39.6249107,
-      "coordonnees": {
-        "lat": -4.0279271,
-        "lng": 39.6249107
-      },
-      "categorie": "Shopping",
-      "mapsUrl": "https://maps.google.com/?q=-4.0279271,39.6249107",
-      "source": "osm"
-    },
-    {
-      "nom": "Kwa DA SHAMSA LIKONI",
-      "lat": -4.096237,
-      "lng": 39.6646104,
-      "coordonnees": {
-        "lat": -4.096237,
-        "lng": 39.6646104
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=-4.096237,39.6646104",
-      "source": "osm"
-    },
-    {
-      "nom": "Nguuni Nature Sanctuary",
-      "lat": -3.9934071,
-      "lng": 39.6959589,
-      "coordonnees": {
-        "lat": -3.9934071,
-        "lng": 39.6959589
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=-3.9934071,39.6959589",
-      "source": "osm"
-    },
-    {
-      "nom": "Haller Park",
-      "lat": -4.0158805,
-      "lng": 39.7215955,
-      "coordonnees": {
-        "lat": -4.0158805,
-        "lng": 39.7215955
-      },
-      "categorie": "Famille",
-      "mapsUrl": "https://maps.google.com/?q=-4.0158805,39.7215955",
-      "source": "osm"
-    },
-    {
-      "nom": "Unfallort",
-      "lat": -4.041439,
-      "lng": 39.603864,
-      "coordonnees": {
-        "lat": -4.041439,
-        "lng": 39.603864
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-4.041439,39.603864",
-      "source": "osm"
-    },
-    {
-      "nom": "Pungu villa",
-      "lat": -4.1138556,
-      "lng": 39.6613895,
-      "coordonnees": {
-        "lat": -4.1138556,
-        "lng": 39.6613895
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=-4.1138556,39.6613895",
-      "source": "osm"
-    },
-    {
-      "nom": "MoonQue House",
-      "lat": -4.1163354,
-      "lng": 39.661355,
-      "coordonnees": {
-        "lat": -4.1163354,
-        "lng": 39.661355
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=-4.1163354,39.661355",
-      "source": "osm"
-    },
-    {
-      "nom": "Mombasa Marine Park",
-      "lat": -4.0104547,
-      "lng": 39.7374509,
-      "coordonnees": {
-        "lat": -4.0104547,
-        "lng": 39.7374509
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=-4.0104547,39.7374509",
-      "source": "osm"
-    },
-    {
-      "nom": "Go Kart racing mombasa",
-      "lat": -3.9840349,
-      "lng": 39.7391978,
-      "coordonnees": {
-        "lat": -3.9840349,
-        "lng": 39.7391978
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-3.9840349,39.7391978",
-      "source": "osm"
-    },
-    {
-      "nom": "Miritini Botanical Garden",
-      "lat": -4.0106805,
-      "lng": 39.5783002,
-      "coordonnees": {
-        "lat": -4.0106805,
-        "lng": 39.5783002
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=-4.0106805,39.5783002",
-      "source": "osm"
-    },
-    {
-      "nom": "Sacred Mijikenda Kaya Rabai Forests",
-      "lat": -3.9333351,
-      "lng": 39.5962958,
-      "coordonnees": {
-        "lat": -3.9333351,
-        "lng": 39.5962958
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-3.9333351,39.5962958",
-      "source": "osm"
-    },
-    {
-      "nom": "Sacred Kaya Mijikenda Forests - Mudzimuvya",
-      "lat": -3.9393237,
-      "lng": 39.5839787,
-      "coordonnees": {
-        "lat": -3.9393237,
-        "lng": 39.5839787
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-3.9393237,39.5839787",
-      "source": "osm"
-    },
-    {
-      "nom": "Mauani Park",
-      "lat": -3.967501,
-      "lng": 39.5489651,
-      "coordonnees": {
-        "lat": -3.967501,
-        "lng": 39.5489651
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=-3.967501,39.5489651",
-      "source": "osm"
-    },
-    {
-      "nom": "Jumba Ruins",
-      "lat": -3.9441288,
-      "lng": 39.7715277,
-      "coordonnees": {
-        "lat": -3.9441288,
-        "lng": 39.7715277
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-3.9441288,39.7715277",
-      "source": "osm"
-    },
-    {
-      "nom": "Sacred Kaya Mijikenda Forests - Mtswakara",
-      "lat": -4.0073376,
-      "lng": 39.5217904,
-      "coordonnees": {
-        "lat": -4.0073376,
-        "lng": 39.5217904
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-4.0073376,39.5217904",
-      "source": "osm"
-    },
-    {
-      "nom": "Sacred Kaya Mijikenda Forests - Ribe",
-      "lat": -3.8969546,
-      "lng": 39.6327778,
-      "coordonnees": {
-        "lat": -3.8969546,
-        "lng": 39.6327778
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-3.8969546,39.6327778",
-      "source": "osm"
-    }
-  ],
-  "osmEnriched": true,
-  "osmEnrichedAt": "2026-06-30",
-  "description_en": "Mombasa, in Kenya, is a halal-friendly destination with a Halal Trust Score of 4.4/5. Muslim travelers will find 4 halal restaurants listed, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
-  "metaDescription_en": "Halal guide to Mombasa: 4 halal restaurants listed, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.4/5.",
-  "nom_en": "Mombasa",
-  "boucheries": []
+  {
+   "nom": "New Chetna Restaurant",
+   "lat": -4.059248,
+   "lng": 39.667641,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-4.059248,39.667641",
+   "source": "osm"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "Buxton MADEVU",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0436117,39.6678386",
+   "lat": -4.0436117,
+   "lng": 39.6678386,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0436117,39.6678386",
+   "source": "osm"
+  },
+  {
+   "nom": "Baogan Hotel Ltd",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0425838,39.667726",
+   "lat": -4.0425838,
+   "lng": 39.667726,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0425838,39.667726",
+   "source": "osm"
+  },
+  {
+   "nom": "Bridge Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0427378,39.6674412",
+   "lat": -4.0427378,
+   "lng": 39.6674412,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0427378,39.6674412",
+   "source": "osm"
+  },
+  {
+   "nom": "Cool Breeze",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0435975,39.6692747",
+   "lat": -4.0435975,
+   "lng": 39.6692747,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0435975,39.6692747",
+   "source": "osm"
+  },
+  {
+   "nom": "Darajani Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.042893,39.6671102",
+   "lat": -4.042893,
+   "lng": 39.6671102,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.042893,39.6671102",
+   "source": "osm"
+  },
+  {
+   "nom": "Mombasa Railways garden",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0423241,39.66771",
+   "lat": -4.0423241,
+   "lng": 39.66771,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0423241,39.66771",
+   "source": "osm"
+  },
+  {
+   "nom": "Mas",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0404403,39.6673118",
+   "lat": -4.0404403,
+   "lng": 39.6673118,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0404403,39.6673118",
+   "source": "osm"
+  },
+  {
+   "nom": "Stadium Holiday Inn",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0462556,39.6659887",
+   "lat": -4.0462556,
+   "lng": 39.6659887,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0462556,39.6659887",
+   "source": "osm"
+  },
+  {
+   "nom": "Panaroma Guest house",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0460051,39.6654472",
+   "lat": -4.0460051,
+   "lng": 39.6654472,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0460051,39.6654472",
+   "source": "osm"
+  },
+  {
+   "nom": "White Rhino Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0396671,39.6677053",
+   "lat": -4.0396671,
+   "lng": 39.6677053,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0396671,39.6677053",
+   "source": "osm"
+  },
+  {
+   "nom": "Marathon Lodge",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0457919,39.6648098",
+   "lat": -4.0457919,
+   "lng": 39.6648098,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0457919,39.6648098",
+   "source": "osm"
+  },
+  {
+   "nom": "Panaroma Gardens Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0463072,39.6651866",
+   "lat": -4.0463072,
+   "lng": 39.6651866,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0463072,39.6651866",
+   "source": "osm"
+  },
+  {
+   "nom": "Jambo Paradise Hotel - Mombasa",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0479315,39.6661295",
+   "lat": -4.0479315,
+   "lng": 39.6661295,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0479315,39.6661295",
+   "source": "osm"
+  },
+  {
+   "nom": "TUM Guest House B",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0380095,39.6670414",
+   "lat": -4.0380095,
+   "lng": 39.6670414,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0380095,39.6670414",
+   "source": "osm"
+  },
+  {
+   "nom": "Boston Leisure Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0477883,39.6640675",
+   "lat": -4.0477883,
+   "lng": 39.6640675,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0477883,39.6640675",
+   "source": "osm"
+  },
+  {
+   "nom": "CityBlue Creekside Hotel & Suites",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0428597,39.6753068",
+   "lat": -4.0428597,
+   "lng": 39.6753068,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0428597,39.6753068",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Radiance",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0506504,39.6646594",
+   "lat": -4.0506504,
+   "lng": 39.6646594,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0506504,39.6646594",
+   "source": "osm"
+  },
+  {
+   "nom": "Bibla Fruit Parlour",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0495171,39.6628284",
+   "lat": -4.0495171,
+   "lng": 39.6628284,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0495171,39.6628284",
+   "source": "osm"
+  },
+  {
+   "nom": "Ichaweri Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0517622,39.668248",
+   "lat": -4.0517622,
+   "lng": 39.668248,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0517622,39.668248",
+   "source": "osm"
+  },
+  {
+   "nom": "Gulshan Restaurant",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0522317,39.6659036",
+   "lat": -4.0522317,
+   "lng": 39.6659036,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0522317,39.6659036",
+   "source": "osm"
+  },
+  {
+   "nom": "Swahili Gem Apartments",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0333212,39.6674548",
+   "lat": -4.0333212,
+   "lng": 39.6674548,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0333212,39.6674548",
+   "source": "osm"
+  },
+  {
+   "nom": "T/A Masters Hotel",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0466244,39.6584503",
+   "lat": -4.0466244,
+   "lng": 39.6584503,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.safisafihotels.com",
+   "source": "osm"
+  },
+  {
+   "nom": "SUHUFI PALACE HOTEL",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0524669,39.6735727",
+   "lat": -4.0524669,
+   "lng": 39.6735727,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0524669,39.6735727",
+   "source": "osm"
+  },
+  {
+   "nom": "Wogect Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0391357,39.6583703",
+   "lat": -4.0391357,
+   "lng": 39.6583703,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0391357,39.6583703",
+   "source": "osm"
+  },
+  {
+   "nom": "Hilton Guesthouse",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.054897,39.6679466",
+   "lat": -4.054897,
+   "lng": 39.6679466,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.054897,39.6679466",
+   "source": "osm"
+  },
+  {
+   "nom": "New people hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0546158,39.6727262",
+   "lat": -4.0546158,
+   "lng": 39.6727262,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0546158,39.6727262",
+   "source": "osm"
+  },
+  {
+   "nom": "city center hotel & restaurant",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0557927,39.6728446",
+   "lat": -4.0557927,
+   "lng": 39.6728446,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0557927,39.6728446",
+   "source": "osm"
+  },
+  {
+   "nom": "New Daba City Guest House",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0567224,39.6684922",
+   "lat": -4.0567224,
+   "lng": 39.6684922,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0567224,39.6684922",
+   "source": "osm"
+  },
+  {
+   "nom": "Port Tudor Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0309667,39.6637051",
+   "lat": -4.0309667,
+   "lng": 39.6637051,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0309667,39.6637051",
+   "source": "osm"
+  },
+  {
+   "nom": "check point",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0399145,39.6814348",
+   "lat": -4.0399145,
+   "lng": 39.6814348,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0399145,39.6814348",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Sapphire",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0565377,39.6640459",
+   "lat": -4.0565377,
+   "lng": 39.6640459,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0565377,39.6640459",
+   "source": "osm"
+  },
+  {
+   "nom": "Josleejim Hotel Ltd",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0573073,39.6674963",
+   "lat": -4.0573073,
+   "lng": 39.6674963,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0573073,39.6674963",
+   "source": "osm"
+  },
+  {
+   "nom": "Akshardham Apartments",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0328792,39.6783831",
+   "lat": -4.0328792,
+   "lng": 39.6783831,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0328792,39.6783831",
+   "source": "osm"
+  },
+  {
+   "nom": "White house",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0327938,39.6783387",
+   "lat": -4.0327938,
+   "lng": 39.6783387,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0327938,39.6783387",
+   "source": "osm"
+  },
+  {
+   "nom": "Magwende",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0564724,39.6760559",
+   "lat": -4.0564724,
+   "lng": 39.6760559,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0564724,39.6760559",
+   "source": "osm"
+  },
+  {
+   "nom": "Premium Inn Hotel Mombasa",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0588445,39.6662489",
+   "lat": -4.0588445,
+   "lng": 39.6662489,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.premiuminn.co.ke/",
+   "source": "osm"
+  },
+  {
+   "nom": "Royal Court Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0591721,39.6670028",
+   "lat": -4.0591721,
+   "lng": 39.6670028,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0591721,39.6670028",
+   "source": "osm"
+  },
+  {
+   "nom": "Abson Towers",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0592074,39.6691654",
+   "lat": -4.0592074,
+   "lng": 39.6691654,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0592074,39.6691654",
+   "source": "osm"
+  },
+  {
+   "nom": "Quale Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0593971,39.67094",
+   "lat": -4.0593971,
+   "lng": 39.67094,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0593971,39.67094",
+   "source": "osm"
+  },
+  {
+   "nom": "Everfresh Vegetables;Hotel Dorse",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0601089,39.668609",
+   "lat": -4.0601089,
+   "lng": 39.668609,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0601089,39.668609",
+   "source": "osm"
+  },
+  {
+   "nom": "The Tamarind Mombasa",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0534302,39.6821438",
+   "lat": -4.0534302,
+   "lng": 39.6821438,
+   "halalFriendly": false,
+   "bookingUrl": "https://tamarind.co.ke/tamarind-mombasa/",
+   "source": "osm"
+  },
+  {
+   "nom": "The Tamarind Village",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0536429,39.6819949",
+   "lat": -4.0536429,
+   "lng": 39.6819949,
+   "halalFriendly": false,
+   "bookingUrl": "https://tamarind.co.ke/tamarind-village-serviced-apts/",
+   "source": "osm"
+  },
+  {
+   "nom": "Sahajanand Apartments",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0523968,39.6829163",
+   "lat": -4.0523968,
+   "lng": 39.6829163,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0523968,39.6829163",
+   "source": "osm"
+  },
+  {
+   "nom": "Hermes Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.060535,39.6705336",
+   "lat": -4.060535,
+   "lng": 39.6705336,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.060535,39.6705336",
+   "source": "osm"
+  },
+  {
+   "nom": "Regency Park Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.060695,39.6684786",
+   "lat": -4.060695,
+   "lng": 39.6684786,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.060695,39.6684786",
+   "source": "osm"
+  },
+  {
+   "nom": "Berachah Guest House",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.060381,39.671878",
+   "lat": -4.060381,
+   "lng": 39.671878,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.060381,39.671878",
+   "source": "osm"
+  },
+  {
+   "nom": "Jundan Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0610437,39.6703429",
+   "lat": -4.0610437,
+   "lng": 39.6703429,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0610437,39.6703429",
+   "source": "osm"
+  },
+  {
+   "nom": "Tulia Old Town",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0581679,39.6783441",
+   "lat": -4.0581679,
+   "lng": 39.6783441,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0581679,39.6783441",
+   "source": "osm"
+  },
+  {
+   "nom": "CDH Backpacker's",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0613516,39.6686791",
+   "lat": -4.0613516,
+   "lng": 39.6686791,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0613516,39.6686791",
+   "source": "osm"
+  },
+  {
+   "nom": "Sunview Apartments",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0539819,39.682738",
+   "lat": -4.0539819,
+   "lng": 39.682738,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0539819,39.682738",
+   "source": "osm"
+  },
+  {
+   "nom": "Sheratton Regency Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0618685,39.6676967",
+   "lat": -4.0618685,
+   "lng": 39.6676967,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0618685,39.6676967",
+   "source": "osm"
+  },
+  {
+   "nom": "Mapembeni Global Dishes Cafe",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0617232,39.6658222",
+   "lat": -4.0617232,
+   "lng": 39.6658222,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0617232,39.6658222",
+   "source": "osm"
+  },
+  {
+   "nom": "Recoda Restaurant",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0617499,39.6653039",
+   "lat": -4.0617499,
+   "lng": 39.6653039,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0617499,39.6653039",
+   "source": "osm"
+  },
+  {
+   "nom": "Windsor",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0619589,39.6636598",
+   "lat": -4.0619589,
+   "lng": 39.6636598,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0619589,39.6636598",
+   "source": "osm"
+  },
+  {
+   "nom": "Sentrim Castle Royal Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€€",
+   "score": 3,
+   "mapsUrl": "https://maps.google.com/?q=-4.0625013,39.6700004",
+   "lat": -4.0625013,
+   "lng": 39.6700004,
+   "halalFriendly": false,
+   "bookingUrl": "https://sentrimcastleroyalhotel.com-kenya.com/en/",
+   "source": "osm"
+  },
+  {
+   "nom": "California Dream Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0607179,39.6597994",
+   "lat": -4.0607179,
+   "lng": 39.6597994,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0607179,39.6597994",
+   "source": "osm"
+  },
+  {
+   "nom": "Bandari Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0616037,39.6591359",
+   "lat": -4.0616037,
+   "lng": 39.6591359,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0616037,39.6591359",
+   "source": "osm"
+  },
+  {
+   "nom": "Al-Yusra Palm Tree Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0633486,39.6741247",
+   "lat": -4.0633486,
+   "lng": 39.6741247,
+   "halalFriendly": false,
+   "bookingUrl": "https://palmtreehotel.co.ke/",
+   "source": "osm"
+  },
+  {
+   "nom": "Single Palm Resort",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0522793,39.6870321",
+   "lat": -4.0522793,
+   "lng": 39.6870321,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0522793,39.6870321",
+   "source": "osm"
+  },
+  {
+   "nom": "Manson Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0640522,39.664963",
+   "lat": -4.0640522,
+   "lng": 39.664963,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0640522,39.664963",
+   "source": "osm"
+  },
+  {
+   "nom": "Blue Comforts",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0622541,39.65844",
+   "lat": -4.0622541,
+   "lng": 39.65844,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0622541,39.65844",
+   "source": "osm"
+  },
+  {
+   "nom": "Ganjoni Wananchi Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0625686,39.6587587",
+   "lat": -4.0625686,
+   "lng": 39.6587587,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0625686,39.6587587",
+   "source": "osm"
+  },
+  {
+   "nom": "Rally House",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0648024,39.670401",
+   "lat": -4.0648024,
+   "lng": 39.670401,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0648024,39.670401",
+   "source": "osm"
+  },
+  {
+   "nom": "Three Coins Bar & Resturant",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0636849,39.6607759",
+   "lat": -4.0636849,
+   "lng": 39.6607759,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0636849,39.6607759",
+   "source": "osm"
+  },
+  {
+   "nom": "Biashara Building",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0652046,39.6703815",
+   "lat": -4.0652046,
+   "lng": 39.6703815,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0652046,39.6703815",
+   "source": "osm"
+  },
+  {
+   "nom": "Mina love",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0241444,39.6802356",
+   "lat": -4.0241444,
+   "lng": 39.6802356,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0241444,39.6802356",
+   "source": "osm"
+  },
+  {
+   "nom": "Kivulini Bahari",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0616875,39.6865702",
+   "lat": -4.0616875,
+   "lng": 39.6865702,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0616875,39.6865702",
+   "source": "osm"
+  },
+  {
+   "nom": "Taifa Estates",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0190213,39.6834232",
+   "lat": -4.0190213,
+   "lng": 39.6834232,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0190213,39.6834232",
+   "source": "osm"
+  },
+  {
+   "nom": "Light House Towers",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0725906,39.6747905",
+   "lat": -4.0725906,
+   "lng": 39.6747905,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0725906,39.6747905",
+   "source": "osm"
+  },
+  {
+   "nom": "Sanana Conference Centre and Holiday Resort",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0403279,39.7012734",
+   "lat": -4.0403279,
+   "lng": 39.7012734,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0403279,39.7012734",
+   "source": "osm"
+  },
+  {
+   "nom": "Jupiter Heights",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0473182,39.7018876",
+   "lat": -4.0473182,
+   "lng": 39.7018876,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0473182,39.7018876",
+   "source": "osm"
+  },
+  {
+   "nom": "Akogo House",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.031252,39.7021903",
+   "lat": -4.031252,
+   "lng": 39.7021903,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.031252,39.7021903",
+   "source": "osm"
+  },
+  {
+   "nom": "The Palms",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0539426,39.7039384",
+   "lat": -4.0539426,
+   "lng": 39.7039384,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0539426,39.7039384",
+   "source": "osm"
+  },
+  {
+   "nom": "Shiloh guest house and restaurant",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0273567,39.6340303",
+   "lat": -4.0273567,
+   "lng": 39.6340303,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0273567,39.6340303",
+   "source": "osm"
+  },
+  {
+   "nom": "Nyali International Beach And Spa",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.04964,39.7062225",
+   "lat": -4.04964,
+   "lng": 39.7062225,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.04964,39.7062225",
+   "source": "osm"
+  },
+  {
+   "nom": "Muthu Nyali Beach Hotel and Spa",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0485075,39.7071597",
+   "lat": -4.0485075,
+   "lng": 39.7071597,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.nyali-international.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Makwetu Resorts",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0449927,39.7088672",
+   "lat": -4.0449927,
+   "lng": 39.7088672,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0449927,39.7088672",
+   "source": "osm"
+  },
+  {
+   "nom": "Mombasa Cage Inn Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0282113,39.6279858",
+   "lat": -4.0282113,
+   "lng": 39.6279858,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0282113,39.6279858",
+   "source": "osm"
+  },
+  {
+   "nom": "Nyali Beach Holiday Resorts",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0435538,39.7114981",
+   "lat": -4.0435538,
+   "lng": 39.7114981,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0435538,39.7114981",
+   "source": "osm"
+  },
+  {
+   "nom": "Likoni Happy Gardens",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0869295,39.6724727",
+   "lat": -4.0869295,
+   "lng": 39.6724727,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0869295,39.6724727",
+   "source": "osm"
+  },
+  {
+   "nom": "Leinmach Guest HOuse",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0367701,39.7115617",
+   "lat": -4.0367701,
+   "lng": 39.7115617,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0367701,39.7115617",
+   "source": "osm"
+  },
+  {
+   "nom": "Sunny Side Apartments",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0393542,39.7122355",
+   "lat": -4.0393542,
+   "lng": 39.7122355,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0393542,39.7122355",
+   "source": "osm"
+  },
+  {
+   "nom": "jambo village hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0305829,39.6254639",
+   "lat": -4.0305829,
+   "lng": 39.6254639,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0305829,39.6254639",
+   "source": "osm"
+  },
+  {
+   "nom": "Garden Grove Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0378446,39.7125117",
+   "lat": -4.0378446,
+   "lng": 39.7125117,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0378446,39.7125117",
+   "source": "osm"
+  },
+  {
+   "nom": "Jumeirah Beachfront Apartments",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0401391,39.7133229",
+   "lat": -4.0401391,
+   "lng": 39.7133229,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0401391,39.7133229",
+   "source": "osm"
+  },
+  {
+   "nom": "Sun Africa Hotels",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0386281,39.7149052",
+   "lat": -4.0386281,
+   "lng": 39.7149052,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0386281,39.7149052",
+   "source": "osm"
+  },
+  {
+   "nom": "bareco guest house",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0345924,39.6210329",
+   "lat": -4.0345924,
+   "lng": 39.6210329,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0345924,39.6210329",
+   "source": "osm"
+  },
+  {
+   "nom": "Airport link guest house",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0306144,39.6214029",
+   "lat": -4.0306144,
+   "lng": 39.6214029,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0306144,39.6214029",
+   "source": "osm"
+  },
+  {
+   "nom": "folks inn giest house",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0316805,39.6209225",
+   "lat": -4.0316805,
+   "lng": 39.6209225,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0316805,39.6209225",
+   "source": "osm"
+  },
+  {
+   "nom": "shafee guest house",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0314373,39.620895",
+   "lat": -4.0314373,
+   "lng": 39.620895,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0314373,39.620895",
+   "source": "osm"
+  },
+  {
+   "nom": "Chamiachi Luxury Apartments",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0270048,39.715004",
+   "lat": -4.0270048,
+   "lng": 39.715004,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0270048,39.715004",
+   "source": "osm"
+  },
+  {
+   "nom": "Bahari Beach Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0342224,39.7172609",
+   "lat": -4.0342224,
+   "lng": 39.7172609,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0342224,39.7172609",
+   "source": "osm"
+  },
+  {
+   "nom": "Qwetu Beach Resort",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0932036,39.6746778",
+   "lat": -4.0932036,
+   "lng": 39.6746778,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0932036,39.6746778",
+   "source": "osm"
+  },
+  {
+   "nom": "magongo holiday inn",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0231706,39.6214849",
+   "lat": -4.0231706,
+   "lng": 39.6214849,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0231706,39.6214849",
+   "source": "osm"
+  },
+  {
+   "nom": "Pago",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.031596,39.618639",
+   "lat": -4.031596,
+   "lng": 39.618639,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.031596,39.618639",
+   "source": "osm"
+  },
+  {
+   "nom": "Mombasa beach Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0323611,39.7183578",
+   "lat": -4.0323611,
+   "lng": 39.7183578,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0323611,39.7183578",
+   "source": "osm"
+  },
+  {
+   "nom": "White Castle Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0078782,39.6280154",
+   "lat": -4.0078782,
+   "lng": 39.6280154,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0078782,39.6280154",
+   "source": "osm"
+  },
+  {
+   "nom": "The Reef hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 4,
+   "mapsUrl": "https://maps.google.com/?q=-4.0286323,39.7204302",
+   "lat": -4.0286323,
+   "lng": 39.7204302,
+   "halalFriendly": false,
+   "bookingUrl": "https://reefhotelkenya.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Paradise Apartments",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0266524,39.7203952",
+   "lat": -4.0266524,
+   "lng": 39.7203952,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0266524,39.7203952",
+   "source": "osm"
+  },
+  {
+   "nom": "Green Estates",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-3.9981625,39.6989233",
+   "lat": -3.9981625,
+   "lng": 39.6989233,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-3.9981625,39.6989233",
+   "source": "osm"
+  },
+  {
+   "nom": "Le Grand Victoria Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0068874,39.7092952",
+   "lat": -4.0068874,
+   "lng": 39.7092952,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0068874,39.7092952",
+   "source": "osm"
+  },
+  {
+   "nom": "Bliss Resorts",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0247892,39.7201872",
+   "lat": -4.0247892,
+   "lng": 39.7201872,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0247892,39.7201872",
+   "source": "osm"
+  },
+  {
+   "nom": "Mombasa Backpackers",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0253152,39.720732",
+   "lat": -4.0253152,
+   "lng": 39.720732,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0253152,39.720732",
+   "source": "osm"
+  },
+  {
+   "nom": "Tuliahouse Backpackers",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0236704,39.7208497",
+   "lat": -4.0236704,
+   "lng": 39.7208497,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0236704,39.7208497",
+   "source": "osm"
+  },
+  {
+   "nom": "Comrade Restaurant & Juice Parlour",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0955464,39.6464398",
+   "lat": -4.0955464,
+   "lng": 39.6464398,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0955464,39.6464398",
+   "source": "osm"
+  },
+  {
+   "nom": "Cingaki",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0062709,39.6255503",
+   "lat": -4.0062709,
+   "lng": 39.6255503,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0062709,39.6255503",
+   "source": "osm"
+  },
+  {
+   "nom": "Heidis Beach House",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.1004563,39.6707963",
+   "lat": -4.1004563,
+   "lng": 39.6707963,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.1004563,39.6707963",
+   "source": "osm"
+  },
+  {
+   "nom": "Sunrise Resort Apartments Spa",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0233353,39.7226045",
+   "lat": -4.0233353,
+   "lng": 39.7226045,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0233353,39.7226045",
+   "source": "osm"
+  },
+  {
+   "nom": "PrideInn Express",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0207134,39.7222666",
+   "lat": -4.0207134,
+   "lng": 39.7222666,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0207134,39.7222666",
+   "source": "osm"
+  },
+  {
+   "nom": "Ocean View Nyali",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0241979,39.7242234",
+   "lat": -4.0241979,
+   "lng": 39.7242234,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0241979,39.7242234",
+   "source": "osm"
+  },
+  {
+   "nom": "Consolata Guest House",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.1032473,39.6687876",
+   "lat": -4.1032473,
+   "lng": 39.6687876,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.1032473,39.6687876",
+   "source": "osm"
+  },
+  {
+   "nom": "refineries housing estate",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0190211,39.6134208",
+   "lat": -4.0190211,
+   "lng": 39.6134208,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0190211,39.6134208",
+   "source": "osm"
+  },
+  {
+   "nom": "Mei Place Apartments",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0221213,39.7251022",
+   "lat": -4.0221213,
+   "lng": 39.7251022,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0221213,39.7251022",
+   "source": "osm"
+  },
+  {
+   "nom": "Baobab Resort",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0125969,39.7211064",
+   "lat": -4.0125969,
+   "lng": 39.7211064,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0125969,39.7211064",
+   "source": "osm"
+  },
+  {
+   "nom": "Likoni Super Sports Club & Restaurant",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.1003555,39.6444098",
+   "lat": -4.1003555,
+   "lng": 39.6444098,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.1003555,39.6444098",
+   "source": "osm"
+  },
+  {
+   "nom": "Water club",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0191646,39.7284644",
+   "lat": -4.0191646,
+   "lng": 39.7284644,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0191646,39.7284644",
+   "source": "osm"
+  },
+  {
+   "nom": "Middle East",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.1078734,39.6552926",
+   "lat": -4.1078734,
+   "lng": 39.6552926,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.1078734,39.6552926",
+   "source": "osm"
+  },
+  {
+   "nom": "Ujamaa One Bar & Restaurant",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.1046285,39.6418592",
+   "lat": -4.1046285,
+   "lng": 39.6418592,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.1046285,39.6418592",
+   "source": "osm"
+  },
+  {
+   "nom": "Milele Beach Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-4.0063204,39.7245449",
+   "lat": -4.0063204,
+   "lng": 39.7245449,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-4.0063204,39.7245449",
+   "source": "osm"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "Masjid Kilifi",
+   "lat": -4.0515176,
+   "lng": 39.6746181,
+   "coordonnees": {
+    "lat": -4.0515176,
+    "lng": 39.6746181
+   },
+   "mapsUrl": "https://maps.google.com/?q=-4.0515176,39.6746181",
+   "source": "osm"
+  },
+  {
+   "nom": "Rahman Mosque",
+   "lat": -4.0447081,
+   "lng": 39.657357,
+   "coordonnees": {
+    "lat": -4.0447081,
+    "lng": 39.657357
+   },
+   "adresse": "Lumumba Road, Mombasa",
+   "mapsUrl": "https://maps.google.com/?q=-4.0447081,39.657357",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Mswalani",
+   "lat": -4.0528476,
+   "lng": 39.674019,
+   "coordonnees": {
+    "lat": -4.0528476,
+    "lng": 39.674019
+   },
+   "mapsUrl": "https://maps.google.com/?q=-4.0528476,39.674019",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Azhar",
+   "lat": -4.0549719,
+   "lng": 39.6642105,
+   "coordonnees": {
+    "lat": -4.0549719,
+    "lng": 39.6642105
+   },
+   "mapsUrl": "https://maps.google.com/?q=-4.0549719,39.6642105",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Nur",
+   "lat": -4.0553064,
+   "lng": 39.6725238,
+   "coordonnees": {
+    "lat": -4.0553064,
+    "lng": 39.6725238
+   },
+   "mapsUrl": "https://maps.google.com/?q=-4.0553064,39.6725238",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Shibu",
+   "lat": -4.0565633,
+   "lng": 39.6694942,
+   "coordonnees": {
+    "lat": -4.0565633,
+    "lng": 39.6694942
+   },
+   "mapsUrl": "https://maps.google.com/?q=-4.0565633,39.6694942",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid TSS",
+   "lat": -4.0603808,
+   "lng": 39.6657846,
+   "coordonnees": {
+    "lat": -4.0603808,
+    "lng": 39.6657846
+   },
+   "mapsUrl": "https://maps.google.com/?q=-4.0603808,39.6657846",
+   "source": "osm"
+  },
+  {
+   "nom": "Mbaruk Mosque",
+   "lat": -4.0626096,
+   "lng": 39.674859,
+   "coordonnees": {
+    "lat": -4.0626096,
+    "lng": 39.674859
+   },
+   "mapsUrl": "https://maps.google.com/?q=-4.0626096,39.674859",
+   "source": "osm"
+  },
+  {
+   "nom": "Fat-hi Mosque",
+   "lat": -4.0532605,
+   "lng": 39.6859924,
+   "coordonnees": {
+    "lat": -4.0532605,
+    "lng": 39.6859924
+   },
+   "mapsUrl": "https://maps.google.com/?q=-4.0532605,39.6859924",
+   "source": "osm"
+  },
+  {
+   "nom": "Umm Kulthum Mosque",
+   "lat": -4.0716539,
+   "lng": 39.6762568,
+   "coordonnees": {
+    "lat": -4.0716539,
+    "lng": 39.6762568
+   },
+   "mapsUrl": "https://maps.google.com/?q=-4.0716539,39.6762568",
+   "source": "osm"
+  },
+  {
+   "nom": "masjid fat'hi chaani",
+   "lat": -4.0316646,
+   "lng": 39.6271932,
+   "coordonnees": {
+    "lat": -4.0316646,
+    "lng": 39.6271932
+   },
+   "mapsUrl": "https://maps.google.com/?q=-4.0316646,39.6271932",
+   "source": "osm"
+  },
+  {
+   "nom": "masjid noor",
+   "lat": -4.0251033,
+   "lng": 39.6245281,
+   "coordonnees": {
+    "lat": -4.0251033,
+    "lng": 39.6245281
+   },
+   "mapsUrl": "https://maps.google.com/?q=-4.0251033,39.6245281",
+   "source": "osm"
+  },
+  {
+   "nom": "masjid saada",
+   "lat": -4.0242199,
+   "lng": 39.6224445,
+   "coordonnees": {
+    "lat": -4.0242199,
+    "lng": 39.6224445
+   },
+   "mapsUrl": "https://maps.google.com/?q=-4.0242199,39.6224445",
+   "source": "osm"
+  },
+  {
+   "nom": "masjid taqwa",
+   "lat": -4.0284025,
+   "lng": 39.6178663,
+   "coordonnees": {
+    "lat": -4.0284025,
+    "lng": 39.6178663
+   },
+   "mapsUrl": "https://maps.google.com/?q=-4.0284025,39.6178663",
+   "source": "osm"
+  },
+  {
+   "nom": "masjid Raudhwa",
+   "lat": -4.0296982,
+   "lng": 39.6164077,
+   "coordonnees": {
+    "lat": -4.0296982,
+    "lng": 39.6164077
+   },
+   "mapsUrl": "https://maps.google.com/?q=-4.0296982,39.6164077",
+   "source": "osm"
+  },
+  {
+   "nom": "masjid lilah bomu",
+   "lat": -4.0257526,
+   "lng": 39.6145447,
+   "coordonnees": {
+    "lat": -4.0257526,
+    "lng": 39.6145447
+   },
+   "mapsUrl": "https://maps.google.com/?q=-4.0257526,39.6145447",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Mubarak",
+   "lat": -4.020437,
+   "lng": 39.6163584,
+   "coordonnees": {
+    "lat": -4.020437,
+    "lng": 39.6163584
+   },
+   "mapsUrl": "https://maps.google.com/?q=-4.020437,39.6163584",
+   "source": "osm"
+  },
+  {
+   "nom": "masjid salmichai",
+   "lat": -4.0294507,
+   "lng": 39.6063832,
+   "coordonnees": {
+    "lat": -4.0294507,
+    "lng": 39.6063832
+   },
+   "mapsUrl": "https://maps.google.com/?q=-4.0294507,39.6063832",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid ummu kulthum bokole",
+   "lat": -4.0178853,
+   "lng": 39.6087296,
+   "coordonnees": {
+    "lat": -4.0178853,
+    "lng": 39.6087296
+   },
+   "mapsUrl": "https://maps.google.com/?q=-4.0178853,39.6087296",
+   "source": "osm"
+  },
+  {
+   "nom": "markaz",
+   "lat": -3.9961726,
+   "lng": 39.6006697,
+   "coordonnees": {
+    "lat": -3.9961726,
+    "lng": 39.6006697
+   },
+   "mapsUrl": "https://maps.google.com/?q=-3.9961726,39.6006697",
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Market",
+   "lat": -4.0436106,
+   "lng": 39.6678752,
+   "coordonnees": {
+    "lat": -4.0436106,
+    "lng": 39.6678752
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-4.0436106,39.6678752",
+   "source": "osm"
+  },
+  {
+   "nom": "Kengeleni Bell",
+   "lat": -4.0393237,
+   "lng": 39.680535,
+   "coordonnees": {
+    "lat": -4.0393237,
+    "lng": 39.680535
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-4.0393237,39.680535",
+   "source": "osm"
+  },
+  {
+   "nom": "Textprint",
+   "lat": -4.0550417,
+   "lng": 39.6616231,
+   "coordonnees": {
+    "lat": -4.0550417,
+    "lng": 39.6616231
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-4.0550417,39.6616231",
+   "source": "osm"
+  },
+  {
+   "nom": "Leven House",
+   "lat": -4.0583657,
+   "lng": 39.6782077,
+   "coordonnees": {
+    "lat": -4.0583657,
+    "lng": 39.6782077
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-4.0583657,39.6782077",
+   "source": "osm"
+  },
+  {
+   "nom": "Mombasa Tusks",
+   "lat": -4.0614435,
+   "lng": 39.666065,
+   "coordonnees": {
+    "lat": -4.0614435,
+    "lng": 39.666065
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-4.0614435,39.666065",
+   "source": "osm"
+  },
+  {
+   "nom": "Rebmann & Krapf monument",
+   "lat": -4.0553637,
+   "lng": 39.6833256,
+   "coordonnees": {
+    "lat": -4.0553637,
+    "lng": 39.6833256
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-4.0553637,39.6833256",
+   "source": "osm"
+  },
+  {
+   "nom": "Africa Hotel",
+   "lat": -4.0606558,
+   "lng": 39.6795729,
+   "coordonnees": {
+    "lat": -4.0606558,
+    "lng": 39.6795729
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-4.0606558,39.6795729",
+   "source": "osm"
+  },
+  {
+   "nom": "Old law court gallery",
+   "lat": -4.0618047,
+   "lng": 39.6789244,
+   "coordonnees": {
+    "lat": -4.0618047,
+    "lng": 39.6789244
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-4.0618047,39.6789244",
+   "source": "osm"
+  },
+  {
+   "nom": "Aussicht auf Fort Jesus",
+   "lat": -4.0614939,
+   "lng": 39.680387,
+   "coordonnees": {
+    "lat": -4.0614939,
+    "lng": 39.680387
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=-4.0614939,39.680387",
+   "source": "osm"
+  },
+  {
+   "nom": "Butterfly House",
+   "lat": -4.0633954,
+   "lng": 39.6792992,
+   "coordonnees": {
+    "lat": -4.0633954,
+    "lng": 39.6792992
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-4.0633954,39.6792992",
+   "source": "osm"
+  },
+  {
+   "nom": "Kisauni Baptist Church.",
+   "lat": -4.0280554,
+   "lng": 39.6851241,
+   "coordonnees": {
+    "lat": -4.0280554,
+    "lng": 39.6851241
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-4.0280554,39.6851241",
+   "source": "osm"
+  },
+  {
+   "nom": "shark zone",
+   "lat": -4.0677935,
+   "lng": 39.6700819,
+   "coordonnees": {
+    "lat": -4.0677935,
+    "lng": 39.6700819
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-4.0677935,39.6700819",
+   "source": "osm"
+  },
+  {
+   "nom": "V.O.K",
+   "lat": -4.0298985,
+   "lng": 39.6924811,
+   "coordonnees": {
+    "lat": -4.0298985,
+    "lng": 39.6924811
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-4.0298985,39.6924811",
+   "source": "osm"
+  },
+  {
+   "nom": "Freewater",
+   "lat": -4.0197637,
+   "lng": 39.682903,
+   "coordonnees": {
+    "lat": -4.0197637,
+    "lng": 39.682903
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-4.0197637,39.682903",
+   "source": "osm"
+  },
+  {
+   "nom": "Frere Town Playing Field",
+   "lat": -4.0250006,
+   "lng": 39.694913,
+   "coordonnees": {
+    "lat": -4.0250006,
+    "lng": 39.694913
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-4.0250006,39.694913",
+   "source": "osm"
+  },
+  {
+   "nom": "Frere Town Primary School.",
+   "lat": -4.0237672,
+   "lng": 39.6955758,
+   "coordonnees": {
+    "lat": -4.0237672,
+    "lng": 39.6955758
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-4.0237672,39.6955758",
+   "source": "osm"
+  },
+  {
+   "nom": "Likoni Ferry",
+   "lat": -4.0782759,
+   "lng": 39.6655116,
+   "coordonnees": {
+    "lat": -4.0782759,
+    "lng": 39.6655116
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-4.0782759,39.6655116",
+   "source": "osm"
+  },
+  {
+   "nom": "Dhehdh",
+   "lat": -4.0395498,
+   "lng": 39.7046952,
+   "coordonnees": {
+    "lat": -4.0395498,
+    "lng": 39.7046952
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-4.0395498,39.7046952",
+   "source": "osm"
+  },
+  {
+   "nom": "Art Project",
+   "lat": -4.0291125,
+   "lng": 39.7047088,
+   "coordonnees": {
+    "lat": -4.0291125,
+    "lng": 39.7047088
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-4.0291125,39.7047088",
+   "source": "osm"
+  },
+  {
+   "nom": "Gate Way - Senti Kumi",
+   "lat": -4.0840723,
+   "lng": 39.673031,
+   "coordonnees": {
+    "lat": -4.0840723,
+    "lng": 39.673031
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=-4.0840723,39.673031",
+   "source": "osm"
+  },
+  {
+   "nom": "Bombolulu Workshops & Cultural Center",
+   "lat": -4.0214363,
+   "lng": 39.7032783,
+   "coordonnees": {
+    "lat": -4.0214363,
+    "lng": 39.7032783
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-4.0214363,39.7032783",
+   "source": "osm"
+  },
+  {
+   "nom": "Akamba handcraft market",
+   "lat": -4.0279271,
+   "lng": 39.6249107,
+   "coordonnees": {
+    "lat": -4.0279271,
+    "lng": 39.6249107
+   },
+   "categorie": "Shopping",
+   "mapsUrl": "https://maps.google.com/?q=-4.0279271,39.6249107",
+   "source": "osm"
+  },
+  {
+   "nom": "Kwa DA SHAMSA LIKONI",
+   "lat": -4.096237,
+   "lng": 39.6646104,
+   "coordonnees": {
+    "lat": -4.096237,
+    "lng": 39.6646104
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=-4.096237,39.6646104",
+   "source": "osm"
+  },
+  {
+   "nom": "Nguuni Nature Sanctuary",
+   "lat": -3.9934071,
+   "lng": 39.6959589,
+   "coordonnees": {
+    "lat": -3.9934071,
+    "lng": 39.6959589
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=-3.9934071,39.6959589",
+   "source": "osm"
+  },
+  {
+   "nom": "Haller Park",
+   "lat": -4.0158805,
+   "lng": 39.7215955,
+   "coordonnees": {
+    "lat": -4.0158805,
+    "lng": 39.7215955
+   },
+   "categorie": "Famille",
+   "mapsUrl": "https://maps.google.com/?q=-4.0158805,39.7215955",
+   "source": "osm"
+  },
+  {
+   "nom": "Unfallort",
+   "lat": -4.041439,
+   "lng": 39.603864,
+   "coordonnees": {
+    "lat": -4.041439,
+    "lng": 39.603864
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-4.041439,39.603864",
+   "source": "osm"
+  },
+  {
+   "nom": "Pungu villa",
+   "lat": -4.1138556,
+   "lng": 39.6613895,
+   "coordonnees": {
+    "lat": -4.1138556,
+    "lng": 39.6613895
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=-4.1138556,39.6613895",
+   "source": "osm"
+  },
+  {
+   "nom": "MoonQue House",
+   "lat": -4.1163354,
+   "lng": 39.661355,
+   "coordonnees": {
+    "lat": -4.1163354,
+    "lng": 39.661355
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=-4.1163354,39.661355",
+   "source": "osm"
+  },
+  {
+   "nom": "Mombasa Marine Park",
+   "lat": -4.0104547,
+   "lng": 39.7374509,
+   "coordonnees": {
+    "lat": -4.0104547,
+    "lng": 39.7374509
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=-4.0104547,39.7374509",
+   "source": "osm"
+  },
+  {
+   "nom": "Go Kart racing mombasa",
+   "lat": -3.9840349,
+   "lng": 39.7391978,
+   "coordonnees": {
+    "lat": -3.9840349,
+    "lng": 39.7391978
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-3.9840349,39.7391978",
+   "source": "osm"
+  },
+  {
+   "nom": "Miritini Botanical Garden",
+   "lat": -4.0106805,
+   "lng": 39.5783002,
+   "coordonnees": {
+    "lat": -4.0106805,
+    "lng": 39.5783002
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=-4.0106805,39.5783002",
+   "source": "osm"
+  },
+  {
+   "nom": "Sacred Mijikenda Kaya Rabai Forests",
+   "lat": -3.9333351,
+   "lng": 39.5962958,
+   "coordonnees": {
+    "lat": -3.9333351,
+    "lng": 39.5962958
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-3.9333351,39.5962958",
+   "source": "osm"
+  },
+  {
+   "nom": "Sacred Kaya Mijikenda Forests - Mudzimuvya",
+   "lat": -3.9393237,
+   "lng": 39.5839787,
+   "coordonnees": {
+    "lat": -3.9393237,
+    "lng": 39.5839787
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-3.9393237,39.5839787",
+   "source": "osm"
+  },
+  {
+   "nom": "Mauani Park",
+   "lat": -3.967501,
+   "lng": 39.5489651,
+   "coordonnees": {
+    "lat": -3.967501,
+    "lng": 39.5489651
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=-3.967501,39.5489651",
+   "source": "osm"
+  },
+  {
+   "nom": "Jumba Ruins",
+   "lat": -3.9441288,
+   "lng": 39.7715277,
+   "coordonnees": {
+    "lat": -3.9441288,
+    "lng": 39.7715277
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-3.9441288,39.7715277",
+   "source": "osm"
+  },
+  {
+   "nom": "Sacred Kaya Mijikenda Forests - Mtswakara",
+   "lat": -4.0073376,
+   "lng": 39.5217904,
+   "coordonnees": {
+    "lat": -4.0073376,
+    "lng": 39.5217904
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-4.0073376,39.5217904",
+   "source": "osm"
+  },
+  {
+   "nom": "Sacred Kaya Mijikenda Forests - Ribe",
+   "lat": -3.8969546,
+   "lng": 39.6327778,
+   "coordonnees": {
+    "lat": -3.8969546,
+    "lng": 39.6327778
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-3.8969546,39.6327778",
+   "source": "osm"
+  }
+ ],
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30",
+ "description_en": "Mombasa, in Kenya, is a halal-friendly destination with a Halal Trust Score of 4.4/5. Muslim travelers will find 4 halal restaurants listed, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
+ "metaDescription_en": "Halal guide to Mombasa: 4 halal restaurants listed, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.4/5.",
+ "nom_en": "Mombasa",
+ "boucheries": [],
+ "dataPurgedAt": "2026-07-15"
 }

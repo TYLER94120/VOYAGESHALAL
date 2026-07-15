@@ -51,37 +51,35 @@ export function DestinationFaqSchema({ ville, en = false }: { ville: Ville; en?:
 
   // Cap à 20 : aligné sur les restaurants rendus en SSR (pagination) — évite
   // 150 blocs JSON-LD par page (poids inutile, Google n'en exploite que peu).
-  const restaurantSchemas = (ville.restaurants ?? []).slice(0, 20).map((r) => ({
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const restaurantSchemas = (ville.restaurants ?? []).slice(0, 20).map((r: any) => ({
     '@context': 'https://schema.org',
     '@type': 'Restaurant',
     name: r.nom,
-    servesCuisine: r.cuisine,
-    priceRange: r.fourchette_prix ?? r.prix_moyen ?? '€€',
+    servesCuisine: r.cuisine ?? r.type,
+    ...(r.priceRange || r.fourchette_prix || r.prix_moyen ? { priceRange: r.priceRange ?? r.fourchette_prix ?? r.prix_moyen } : {}),
     address: {
       '@type': 'PostalAddress',
-      streetAddress: r.adresse,
+      ...(r.adresse ? { streetAddress: r.adresse } : {}),
       addressLocality: ville.nom,
       addressCountry: country,
     },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: r.note,
-      bestRating: '5',
-      ratingCount: r.halalScore?.avisMusulmans ?? r.avis_count ?? 50,
-    },
+    // Note UNIQUEMENT si elle vient d'une source réelle (Google) avec un vrai
+    // nombre d'avis — jamais de note ni de compteur inventés.
+    ...(r.source === 'google' && typeof r.note === 'number' && typeof r.nombreAvis === 'number'
+      ? { aggregateRating: { '@type': 'AggregateRating', ratingValue: r.note, bestRating: '5', ratingCount: r.nombreAvis } }
+      : {}),
     ...(r.horaires ? { openingHours: r.horaires } : {}),
     additionalProperty: [
       {
         '@type': 'PropertyValue',
-        name: 'Halal Trust Score',
-        value: r.halalScore?.global ?? 0,
+        name: en ? 'Halal status' : 'Statut halal',
+        value: en ? 'Reported halal — verify on site' : 'Halal signalé · à vérifier',
       },
       {
         '@type': 'PropertyValue',
-        name: en ? 'Halal status' : 'Statut halal',
-        value: r.halalScore?.certifie
-          ? (en ? 'Reported halal — verify on site' : 'Halal signalé · à vérifier')
-          : (en ? 'To verify on site' : 'À vérifier sur place'),
+        name: 'Source',
+        value: r.source === 'google' ? 'Google Maps' : 'OpenStreetMap',
       },
     ],
   }))

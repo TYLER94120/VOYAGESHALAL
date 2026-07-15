@@ -1,486 +1,487 @@
 {
-  "slug": "goa",
-  "nom": "Goa",
-  "pays": "Inde",
-  "pays_slug": "inde",
-  "continent": "Asie",
-  "region": "Inde",
-  "coordonnees": {
-    "lat": 15.2993,
-    "lng": 74.124
+ "slug": "goa",
+ "nom": "Goa",
+ "pays": "Inde",
+ "pays_slug": "inde",
+ "continent": "Asie",
+ "region": "Inde",
+ "coordonnees": {
+  "lat": 15.2993,
+  "lng": 74.124
+ },
+ "codeISO": "IN",
+ "score_halal": 3.1,
+ "halalScore": 6.2,
+ "villeNonMusulmane": true,
+ "description": "État balnéaire prisé. Offre halal présente dans les zones touristiques et fruits de mer en abondance.",
+ "metaDescription": "État balnéaire prisé. Offre halal présente dans les zones touristiques et fruits de mer en abondance.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Panaji_City.JPG",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Panaji_City.JPG",
+ "imageCredit": "Wikimedia Commons",
+ "statistiques": {
+  "restaurants_halal": 0,
+  "mosquees": 4,
+  "hotels": 3
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion et transports en commun locaux.",
+  "meilleureEpoque": "Printemps et automne (climat tempéré).",
+  "conseilHalal": "Ville non-musulmane : repérez les restaurants halal signalés et les mosquées via l'application avant votre visite."
+ },
+ "tags": [
+  "halal",
+  "ville non-musulmane",
+  "asie"
+ ],
+ "restaurants": [],
+ "hotels": [
+  {
+   "nom": "Chatrapati Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=15.2575414,74.1084987",
+   "lat": 15.2575414,
+   "lng": 74.1084987,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=15.2575414,74.1084987",
+   "source": "osm"
   },
-  "codeISO": "IN",
-  "score_halal": 3.1,
-  "halalScore": 6.2,
-  "villeNonMusulmane": true,
-  "description": "État balnéaire prisé. Offre halal présente dans les zones touristiques et fruits de mer en abondance.",
-  "metaDescription": "État balnéaire prisé. Offre halal présente dans les zones touristiques et fruits de mer en abondance.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Panaji_City.JPG",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Panaji_City.JPG",
-  "imageCredit": "Wikimedia Commons",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 2,
-    "hotels": 3
+  {
+   "nom": "Dudhsagar Plantation",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=15.32935,74.1606063",
+   "lat": 15.32935,
+   "lng": 74.1606063,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.dudhsagarplantation.com/",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion et transports en commun locaux.",
-    "meilleureEpoque": "Printemps et automne (climat tempéré).",
-    "conseilHalal": "Ville non-musulmane : repérez les restaurants halal signalés et les mosquées via l'application avant votre visite."
+  {
+   "nom": "Casa de Fernandes",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=15.2369756,74.0937133",
+   "lat": 15.2369756,
+   "lng": 74.0937133,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=15.2369756,74.0937133",
+   "source": "osm"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1104566297",
+   "nom": "Sunni Jamiya Masjid",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=15.25668,74.1118817",
+   "lat": 15.25668,
+   "lng": 74.1118817,
+   "source": "osm"
   },
-  "tags": [
-    "halal",
-    "ville non-musulmane",
-    "asie"
-  ],
-  "restaurants": [],
-  "hotels": [
-    {
-      "nom": "Chatrapati Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=15.2575414,74.1084987",
-      "lat": 15.2575414,
-      "lng": 74.1084987,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=15.2575414,74.1084987",
-      "source": "osm"
-    },
-    {
-      "nom": "Dudhsagar Plantation",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=15.32935,74.1606063",
-      "lat": 15.32935,
-      "lng": 74.1606063,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.dudhsagarplantation.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Casa de Fernandes",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=15.2369756,74.0937133",
-      "lat": 15.2369756,
-      "lng": 74.0937133,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=15.2369756,74.0937133",
-      "source": "osm"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1104566297",
-      "nom": "Sunni Jamiya Masjid",
-      "type": "Mosquée",
-      "adresse": "",
-      "description": "Lieu de prière (OpenStreetMap).",
-      "mapsUrl": "https://maps.google.com/?q=15.25668,74.1118817",
-      "lat": 15.25668,
-      "lng": 74.1118817,
-      "source": "osm"
-    },
-    {
-      "id": "m776624878",
-      "nom": "Jama Masjid",
-      "type": "Mosquée",
-      "adresse": "Sanguem",
-      "description": "Lieu de prière (OpenStreetMap).",
-      "mapsUrl": "https://maps.google.com/?q=15.2290096,74.1497881",
-      "lat": 15.2290096,
-      "lng": 74.1497881,
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid-e-Noorani",
-      "lat": 15.4068627,
-      "lng": 74.006815,
-      "coordonnees": {
-        "lat": 15.4068627,
-        "lng": 74.006815
-      },
-      "mapsUrl": "https://maps.google.com/?q=15.4068627,74.006815",
-      "source": "osm"
-    },
-    {
-      "nom": "Madrasa Jama Masjid",
-      "lat": 15.2703504,
-      "lng": 73.9645462,
-      "coordonnees": {
-        "lat": 15.2703504,
-        "lng": 73.9645462
-      },
-      "mapsUrl": "https://maps.google.com/?q=15.2703504,73.9645462",
-      "source": "osm"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a4319289847",
-      "nom": "Kuskem Waterfall",
-      "categorie": "attraction",
-      "description": "",
-      "prix": "",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=15.2992143,74.1240471",
-      "lat": 15.2992143,
-      "lng": 74.1240471,
-      "source": "osm"
-    },
-    {
-      "id": "a7286268495",
-      "nom": "Shivaji",
-      "categorie": "artwork",
-      "description": "",
-      "prix": "",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=15.2578786,74.110541",
-      "lat": 15.2578786,
-      "lng": 74.110541,
-      "source": "osm"
-    },
-    {
-      "id": "a7286268494",
-      "nom": "Dr. B. R. Ambedkar",
-      "categorie": "artwork",
-      "description": "",
-      "prix": "",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=15.2584792,74.1053212",
-      "lat": 15.2584792,
-      "lng": 74.1053212,
-      "source": "osm"
-    },
-    {
-      "id": "a13383525907",
-      "nom": "Headless Nandi",
-      "categorie": "attraction",
-      "description": "",
-      "prix": "",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=15.2581367,74.0549648",
-      "lat": 15.2581367,
-      "lng": 74.0549648,
-      "source": "osm"
-    },
-    {
-      "id": "a1459313559",
-      "nom": "Chandor Excavated Site",
-      "categorie": "archaeological site",
-      "description": "",
-      "prix": "",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=15.2581432,74.0549606",
-      "lat": 15.2581432,
-      "lng": 74.0549606,
-      "source": "osm"
-    },
-    {
-      "nom": "Fernandes Heritage Home",
-      "lat": 15.2556738,
-      "lng": 74.0518532,
-      "coordonnees": {
-        "lat": 15.2556738,
-        "lng": 74.0518532
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=15.2556738,74.0518532",
-      "source": "osm"
-    },
-    {
-      "nom": "Achies Art Gallery",
-      "lat": 15.276333,
-      "lng": 74.03596,
-      "coordonnees": {
-        "lat": 15.276333,
-        "lng": 74.03596
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=15.276333,74.03596",
-      "source": "osm"
-    },
-    {
-      "nom": "Sailabhatt Childrens Park",
-      "lat": 15.25924,
-      "lng": 74.03401,
-      "coordonnees": {
-        "lat": 15.25924,
-        "lng": 74.03401
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=15.25924,74.03401",
-      "source": "osm"
-    },
-    {
-      "nom": "Roadside Cross",
-      "lat": 15.2174472,
-      "lng": 74.0649133,
-      "coordonnees": {
-        "lat": 15.2174472,
-        "lng": 74.0649133
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=15.2174472,74.0649133",
-      "source": "osm"
-    },
-    {
-      "nom": "Mannawaall Waterfall",
-      "lat": 15.3616745,
-      "lng": 74.0429699,
-      "coordonnees": {
-        "lat": 15.3616745,
-        "lng": 74.0429699
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=15.3616745,74.0429699",
-      "source": "osm"
-    },
-    {
-      "nom": "Nagesh Gardens",
-      "lat": 15.242618,
-      "lng": 74.03319,
-      "coordonnees": {
-        "lat": 15.242618,
-        "lng": 74.03319
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=15.242618,74.03319",
-      "source": "osm"
-    },
-    {
-      "nom": "Elephant ride",
-      "lat": 15.3377046,
-      "lng": 74.2454975,
-      "coordonnees": {
-        "lat": 15.3377046,
-        "lng": 74.2454975
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=15.3377046,74.2454975",
-      "source": "osm"
-    },
-    {
-      "nom": "Bhagwan Mahaveer Wildlife sanctuary",
-      "lat": 15.3401129,
-      "lng": 74.2495669,
-      "coordonnees": {
-        "lat": 15.3401129,
-        "lng": 74.2495669
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=15.3401129,74.2495669",
-      "source": "osm"
-    },
-    {
-      "nom": "Ambora Spring",
-      "lat": 15.336471,
-      "lng": 73.9889,
-      "coordonnees": {
-        "lat": 15.336471,
-        "lng": 73.9889
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=15.336471,73.9889",
-      "source": "osm"
-    },
-    {
-      "nom": "Memorial For Goan Victims of 1918 Spanish Flu",
-      "lat": 15.3129806,
-      "lng": 73.9839618,
-      "coordonnees": {
-        "lat": 15.3129806,
-        "lng": 73.9839618
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=15.3129806,73.9839618",
-      "source": "osm"
-    },
-    {
-      "nom": "Big Foot Cross Museum",
-      "lat": 15.339523,
-      "lng": 73.9876,
-      "coordonnees": {
-        "lat": 15.339523,
-        "lng": 73.9876
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=15.339523,73.9876",
-      "source": "osm"
-    },
-    {
-      "nom": "Cross",
-      "lat": 15.1949781,
-      "lng": 74.029927,
-      "coordonnees": {
-        "lat": 15.1949781,
-        "lng": 74.029927
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=15.1949781,74.029927",
-      "source": "osm"
-    },
-    {
-      "nom": "Ancestral Goa",
-      "lat": 15.339748,
-      "lng": 73.98668,
-      "coordonnees": {
-        "lat": 15.339748,
-        "lng": 73.98668
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=15.339748,73.98668",
-      "source": "osm"
-    },
-    {
-      "nom": "Virginkar Park",
-      "lat": 15.27455,
-      "lng": 73.98199,
-      "coordonnees": {
-        "lat": 15.27455,
-        "lng": 73.98199
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=15.27455,73.98199",
-      "source": "osm"
-    },
-    {
-      "nom": "Devil's Canyon",
-      "lat": 15.3393306,
-      "lng": 74.2622613,
-      "coordonnees": {
-        "lat": 15.3393306,
-        "lng": 74.2622613
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=15.3393306,74.2622613",
-      "source": "osm"
-    },
-    {
-      "nom": "Techspots",
-      "lat": 15.2831,
-      "lng": 73.9765,
-      "coordonnees": {
-        "lat": 15.2831,
-        "lng": 73.9765
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=15.2831,73.9765",
-      "source": "osm"
-    },
-    {
-      "nom": "elephant ferm",
-      "lat": 15.4070934,
-      "lng": 74.0234672,
-      "coordonnees": {
-        "lat": 15.4070934,
-        "lng": 74.0234672
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=15.4070934,74.0234672",
-      "source": "osm"
-    },
-    {
-      "nom": "Sahakari Spice Farms",
-      "lat": 15.4081501,
-      "lng": 74.0238233,
-      "coordonnees": {
-        "lat": 15.4081501,
-        "lng": 74.0238233
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=15.4081501,74.0238233",
-      "source": "osm"
-    },
-    {
-      "nom": "Curdi",
-      "lat": 15.1650599,
-      "lng": 74.1867386,
-      "coordonnees": {
-        "lat": 15.1650599,
-        "lng": 74.1867386
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=15.1650599,74.1867386",
-      "source": "osm"
-    },
-    {
-      "nom": "Sonia Shirsat",
-      "lat": 15.391854,
-      "lng": 73.996923,
-      "coordonnees": {
-        "lat": 15.391854,
-        "lng": 73.996923
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=15.391854,73.996923",
-      "source": "osm"
-    },
-    {
-      "nom": "Paradise Farm",
-      "lat": 15.2927611,
-      "lng": 73.9623458,
-      "coordonnees": {
-        "lat": 15.2927611,
-        "lng": 73.9623458
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=15.2927611,73.9623458",
-      "source": "osm"
-    },
-    {
-      "nom": "Monte Hill Viewpoint",
-      "lat": 15.2798058,
-      "lng": 73.9625311,
-      "coordonnees": {
-        "lat": 15.2798058,
-        "lng": 73.9625311
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=15.2798058,73.9625311",
-      "source": "osm"
-    },
-    {
-      "nom": "Sunaparanta",
-      "lat": 15.2773069,
-      "lng": 73.9614274,
-      "coordonnees": {
-        "lat": 15.2773069,
-        "lng": 73.9614274
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=15.2773069,73.9614274",
-      "source": "osm"
-    },
-    {
-      "nom": "Statue of Miguel De Loyola Furtado",
-      "lat": 15.2725001,
-      "lng": 73.9588524,
-      "coordonnees": {
-        "lat": 15.2725001,
-        "lng": 73.9588524
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=15.2725001,73.9588524",
-      "source": "osm"
-    },
-    {
-      "nom": "Mother Mary Statue",
-      "lat": 15.2733372,
-      "lng": 73.9586035,
-      "coordonnees": {
-        "lat": 15.2733372,
-        "lng": 73.9586035
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=15.2733372,73.9586035",
-      "source": "osm"
-    }
-  ],
-  "scoreIndicatif": true,
-  "osmEnriched": true,
-  "osmEnrichedAt": "2026-06-30",
-  "description_en": "Goa may not be a Muslim-majority destination, but it welcomes Muslim travelers with real halal options. You'll find a selection of halal restaurants and 2 mosques nearby, plus real-time prayer times and the Qibla direction — everything to explore Goa, India, with peace of mind.",
-  "metaDescription_en": "Halal guide to Goa: halal restaurants, 2 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 3.1/5.",
-  "nom_en": "Goa"
+  {
+   "id": "m776624878",
+   "nom": "Jama Masjid",
+   "type": "Mosquée",
+   "adresse": "Sanguem",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=15.2290096,74.1497881",
+   "lat": 15.2290096,
+   "lng": 74.1497881,
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid-e-Noorani",
+   "lat": 15.4068627,
+   "lng": 74.006815,
+   "coordonnees": {
+    "lat": 15.4068627,
+    "lng": 74.006815
+   },
+   "mapsUrl": "https://maps.google.com/?q=15.4068627,74.006815",
+   "source": "osm"
+  },
+  {
+   "nom": "Madrasa Jama Masjid",
+   "lat": 15.2703504,
+   "lng": 73.9645462,
+   "coordonnees": {
+    "lat": 15.2703504,
+    "lng": 73.9645462
+   },
+   "mapsUrl": "https://maps.google.com/?q=15.2703504,73.9645462",
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a4319289847",
+   "nom": "Kuskem Waterfall",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=15.2992143,74.1240471",
+   "lat": 15.2992143,
+   "lng": 74.1240471,
+   "source": "osm"
+  },
+  {
+   "id": "a7286268495",
+   "nom": "Shivaji",
+   "categorie": "artwork",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=15.2578786,74.110541",
+   "lat": 15.2578786,
+   "lng": 74.110541,
+   "source": "osm"
+  },
+  {
+   "id": "a7286268494",
+   "nom": "Dr. B. R. Ambedkar",
+   "categorie": "artwork",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=15.2584792,74.1053212",
+   "lat": 15.2584792,
+   "lng": 74.1053212,
+   "source": "osm"
+  },
+  {
+   "id": "a13383525907",
+   "nom": "Headless Nandi",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=15.2581367,74.0549648",
+   "lat": 15.2581367,
+   "lng": 74.0549648,
+   "source": "osm"
+  },
+  {
+   "id": "a1459313559",
+   "nom": "Chandor Excavated Site",
+   "categorie": "archaeological site",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=15.2581432,74.0549606",
+   "lat": 15.2581432,
+   "lng": 74.0549606,
+   "source": "osm"
+  },
+  {
+   "nom": "Fernandes Heritage Home",
+   "lat": 15.2556738,
+   "lng": 74.0518532,
+   "coordonnees": {
+    "lat": 15.2556738,
+    "lng": 74.0518532
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=15.2556738,74.0518532",
+   "source": "osm"
+  },
+  {
+   "nom": "Achies Art Gallery",
+   "lat": 15.276333,
+   "lng": 74.03596,
+   "coordonnees": {
+    "lat": 15.276333,
+    "lng": 74.03596
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=15.276333,74.03596",
+   "source": "osm"
+  },
+  {
+   "nom": "Sailabhatt Childrens Park",
+   "lat": 15.25924,
+   "lng": 74.03401,
+   "coordonnees": {
+    "lat": 15.25924,
+    "lng": 74.03401
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=15.25924,74.03401",
+   "source": "osm"
+  },
+  {
+   "nom": "Roadside Cross",
+   "lat": 15.2174472,
+   "lng": 74.0649133,
+   "coordonnees": {
+    "lat": 15.2174472,
+    "lng": 74.0649133
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=15.2174472,74.0649133",
+   "source": "osm"
+  },
+  {
+   "nom": "Mannawaall Waterfall",
+   "lat": 15.3616745,
+   "lng": 74.0429699,
+   "coordonnees": {
+    "lat": 15.3616745,
+    "lng": 74.0429699
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=15.3616745,74.0429699",
+   "source": "osm"
+  },
+  {
+   "nom": "Nagesh Gardens",
+   "lat": 15.242618,
+   "lng": 74.03319,
+   "coordonnees": {
+    "lat": 15.242618,
+    "lng": 74.03319
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=15.242618,74.03319",
+   "source": "osm"
+  },
+  {
+   "nom": "Elephant ride",
+   "lat": 15.3377046,
+   "lng": 74.2454975,
+   "coordonnees": {
+    "lat": 15.3377046,
+    "lng": 74.2454975
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=15.3377046,74.2454975",
+   "source": "osm"
+  },
+  {
+   "nom": "Bhagwan Mahaveer Wildlife sanctuary",
+   "lat": 15.3401129,
+   "lng": 74.2495669,
+   "coordonnees": {
+    "lat": 15.3401129,
+    "lng": 74.2495669
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=15.3401129,74.2495669",
+   "source": "osm"
+  },
+  {
+   "nom": "Ambora Spring",
+   "lat": 15.336471,
+   "lng": 73.9889,
+   "coordonnees": {
+    "lat": 15.336471,
+    "lng": 73.9889
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=15.336471,73.9889",
+   "source": "osm"
+  },
+  {
+   "nom": "Memorial For Goan Victims of 1918 Spanish Flu",
+   "lat": 15.3129806,
+   "lng": 73.9839618,
+   "coordonnees": {
+    "lat": 15.3129806,
+    "lng": 73.9839618
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=15.3129806,73.9839618",
+   "source": "osm"
+  },
+  {
+   "nom": "Big Foot Cross Museum",
+   "lat": 15.339523,
+   "lng": 73.9876,
+   "coordonnees": {
+    "lat": 15.339523,
+    "lng": 73.9876
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=15.339523,73.9876",
+   "source": "osm"
+  },
+  {
+   "nom": "Cross",
+   "lat": 15.1949781,
+   "lng": 74.029927,
+   "coordonnees": {
+    "lat": 15.1949781,
+    "lng": 74.029927
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=15.1949781,74.029927",
+   "source": "osm"
+  },
+  {
+   "nom": "Ancestral Goa",
+   "lat": 15.339748,
+   "lng": 73.98668,
+   "coordonnees": {
+    "lat": 15.339748,
+    "lng": 73.98668
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=15.339748,73.98668",
+   "source": "osm"
+  },
+  {
+   "nom": "Virginkar Park",
+   "lat": 15.27455,
+   "lng": 73.98199,
+   "coordonnees": {
+    "lat": 15.27455,
+    "lng": 73.98199
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=15.27455,73.98199",
+   "source": "osm"
+  },
+  {
+   "nom": "Devil's Canyon",
+   "lat": 15.3393306,
+   "lng": 74.2622613,
+   "coordonnees": {
+    "lat": 15.3393306,
+    "lng": 74.2622613
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=15.3393306,74.2622613",
+   "source": "osm"
+  },
+  {
+   "nom": "Techspots",
+   "lat": 15.2831,
+   "lng": 73.9765,
+   "coordonnees": {
+    "lat": 15.2831,
+    "lng": 73.9765
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=15.2831,73.9765",
+   "source": "osm"
+  },
+  {
+   "nom": "elephant ferm",
+   "lat": 15.4070934,
+   "lng": 74.0234672,
+   "coordonnees": {
+    "lat": 15.4070934,
+    "lng": 74.0234672
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=15.4070934,74.0234672",
+   "source": "osm"
+  },
+  {
+   "nom": "Sahakari Spice Farms",
+   "lat": 15.4081501,
+   "lng": 74.0238233,
+   "coordonnees": {
+    "lat": 15.4081501,
+    "lng": 74.0238233
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=15.4081501,74.0238233",
+   "source": "osm"
+  },
+  {
+   "nom": "Curdi",
+   "lat": 15.1650599,
+   "lng": 74.1867386,
+   "coordonnees": {
+    "lat": 15.1650599,
+    "lng": 74.1867386
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=15.1650599,74.1867386",
+   "source": "osm"
+  },
+  {
+   "nom": "Sonia Shirsat",
+   "lat": 15.391854,
+   "lng": 73.996923,
+   "coordonnees": {
+    "lat": 15.391854,
+    "lng": 73.996923
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=15.391854,73.996923",
+   "source": "osm"
+  },
+  {
+   "nom": "Paradise Farm",
+   "lat": 15.2927611,
+   "lng": 73.9623458,
+   "coordonnees": {
+    "lat": 15.2927611,
+    "lng": 73.9623458
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=15.2927611,73.9623458",
+   "source": "osm"
+  },
+  {
+   "nom": "Monte Hill Viewpoint",
+   "lat": 15.2798058,
+   "lng": 73.9625311,
+   "coordonnees": {
+    "lat": 15.2798058,
+    "lng": 73.9625311
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=15.2798058,73.9625311",
+   "source": "osm"
+  },
+  {
+   "nom": "Sunaparanta",
+   "lat": 15.2773069,
+   "lng": 73.9614274,
+   "coordonnees": {
+    "lat": 15.2773069,
+    "lng": 73.9614274
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=15.2773069,73.9614274",
+   "source": "osm"
+  },
+  {
+   "nom": "Statue of Miguel De Loyola Furtado",
+   "lat": 15.2725001,
+   "lng": 73.9588524,
+   "coordonnees": {
+    "lat": 15.2725001,
+    "lng": 73.9588524
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=15.2725001,73.9588524",
+   "source": "osm"
+  },
+  {
+   "nom": "Mother Mary Statue",
+   "lat": 15.2733372,
+   "lng": 73.9586035,
+   "coordonnees": {
+    "lat": 15.2733372,
+    "lng": 73.9586035
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=15.2733372,73.9586035",
+   "source": "osm"
+  }
+ ],
+ "scoreIndicatif": true,
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30",
+ "description_en": "Goa may not be a Muslim-majority destination, but it welcomes Muslim travelers with real halal options. You'll find a selection of halal restaurants and 2 mosques nearby, plus real-time prayer times and the Qibla direction — everything to explore Goa, India, with peace of mind.",
+ "metaDescription_en": "Halal guide to Goa: halal restaurants, 2 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 3.1/5.",
+ "nom_en": "Goa",
+ "dataPurgedAt": "2026-07-15"
 }

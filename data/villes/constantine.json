@@ -1,766 +1,727 @@
 {
-  "slug": "constantine",
-  "nom": "Constantine",
-  "pays": "Algérie",
-  "pays_slug": "algerie",
-  "continent": "Afrique",
-  "region": "Afrique du Nord",
-  "coordonnees": {
-    "lat": 36.365,
-    "lng": 6.6147
+ "slug": "constantine",
+ "nom": "Constantine",
+ "pays": "Algérie",
+ "pays_slug": "algerie",
+ "continent": "Afrique",
+ "region": "Afrique du Nord",
+ "coordonnees": {
+  "lat": 36.365,
+  "lng": 6.6147
+ },
+ "codeISO": "",
+ "score_halal": 4.5,
+ "halalScore": 9,
+ "description": "'Ville des ponts suspendus', Constantine est spectaculairement bâtie sur des gorges, avec la majestueuse mosquée Emir Abdelkader.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/6/64/Alg%C3%A9rie_constantine_arche_naturelle.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/6/64/Alg%C3%A9rie_constantine_arche_naturelle.jpg",
+ "metaDescription": "'Ville des ponts suspendus', Constantine est spectaculairement bâtie sur des gorges, avec la majestueuse mosquée Emir Abdelkader.",
+ "statistiques": {
+  "restaurants_halal": 2,
+  "mosquees": 27,
+  "hotels": 18
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "Restaurant Igherssan",
+   "type": "arab, pizza, regional",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.366694,6.6145823",
+   "lat": 36.366694,
+   "lng": 6.6145823,
+   "halalConfidence": "likely",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.5,
-  "halalScore": 9,
-  "description": "'Ville des ponts suspendus', Constantine est spectaculairement bâtie sur des gorges, avec la majestueuse mosquée Emir Abdelkader.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/6/64/Alg%C3%A9rie_constantine_arche_naturelle.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/6/64/Alg%C3%A9rie_constantine_arche_naturelle.jpg",
-  "metaDescription": "'Ville des ponts suspendus', Constantine est spectaculairement bâtie sur des gorges, avec la majestueuse mosquée Emir Abdelkader.",
-  "statistiques": {
-    "restaurants_halal": 2,
-    "mosquees": 1,
-    "hotels": 20
+  {
+   "nom": "Les platanes",
+   "type": "african, ice cream, deli, arab, barbecue, coffee shop",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3517047,6.6125653",
+   "lat": 36.3517047,
+   "lng": 6.6125653,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "Grand Hôtel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3657223,6.6109178",
+   "lat": 36.3657223,
+   "lng": 6.6109178,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.3657223,6.6109178",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "Hôtel El Hawa Talk",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3678932,6.6162416",
+   "lat": 36.3678932,
+   "lng": 6.6162416,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.3678932,6.6162416",
+   "source": "osm"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [
-    {
-      "nom": "Restaurant Igherssan",
-      "type": "arab, pizza, regional",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.366694,6.6145823",
-      "lat": 36.366694,
-      "lng": 6.6145823,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Les platanes",
-      "type": "african, ice cream, deli, arab, barbecue, coffee shop",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.3517047,6.6125653",
-      "lat": 36.3517047,
-      "lng": 6.6125653,
-      "halalConfidence": "likely",
-      "source": "osm"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "Grand Hôtel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.3657223,6.6109178",
-      "lat": 36.3657223,
-      "lng": 6.6109178,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.3657223,6.6109178",
-      "source": "osm"
-    },
-    {
-      "nom": "Hôtel El Hawa Talk",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.3678932,6.6162416",
-      "lat": 36.3678932,
-      "lng": 6.6162416,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.3678932,6.6162416",
-      "source": "osm"
-    },
-    {
-      "nom": "Dortoir 25",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.3677919,6.6125446",
-      "lat": 36.3677919,
-      "lng": 6.6125446,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.booking.com/hotel/dz/dortoir-25-constantine.html",
-      "source": "osm"
-    },
-    {
-      "nom": "بن مهيدي",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.3659837,6.6108027",
-      "lat": 36.3659837,
-      "lng": 6.6108027,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.3659837,6.6108027",
-      "source": "osm"
-    },
-    {
-      "nom": "Hôtel El Maghreb",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.3667056,6.610904",
-      "lat": 36.3667056,
-      "lng": 6.610904,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.3667056,6.610904",
-      "source": "osm"
-    },
-    {
-      "nom": "Grand Hôtel Cirta",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.3631854,6.6092395",
-      "lat": 36.3631854,
-      "lng": 6.6092395,
-      "halalFriendly": false,
-      "bookingUrl": "http://www.hotelcirta.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Hôtel Ibis Constantine",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.3658402,6.608337",
-      "lat": 36.3658402,
-      "lng": 6.608337,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.accorhotels.com/fr/hotel-6491-ibis-constantine/index.shtml",
-      "source": "osm"
-    },
-    {
-      "nom": "Hôtel Novotel Constantine",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.3654023,6.6079179",
-      "lat": 36.3654023,
-      "lng": 6.6079179,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.accorhotels.com/fr/hotel-6492-novotel-constantine/index.shtml",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Des Princes",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.3612707,6.6075071",
-      "lat": 36.3612707,
-      "lng": 6.6075071,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.3612707,6.6075071",
-      "source": "osm"
-    },
-    {
-      "nom": "Hôtel militaire",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.3527944,6.6110986",
-      "lat": 36.3527944,
-      "lng": 6.6110986,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.3527944,6.6110986",
-      "source": "osm"
-    },
-    {
-      "nom": "منزل محمد العيد الاشراف",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.3733707,6.6263687",
-      "lat": 36.3733707,
-      "lng": 6.6263687,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.3733707,6.6263687",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Emir",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.3526752,6.6188674",
-      "lat": 36.3526752,
-      "lng": 6.6188674,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.3526752,6.6188674",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel El Kheir",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.3518965,6.6256427",
-      "lat": 36.3518965,
-      "lng": 6.6256427,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.3518965,6.6256427",
-      "source": "osm"
-    },
-    {
-      "nom": "Hôtel Marriott",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 5,
-      "mapsUrl": "https://maps.google.com/?q=36.3479358,6.6179197",
-      "lat": 36.3479358,
-      "lng": 6.6179197,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.3479358,6.6179197",
-      "source": "osm"
-    },
-    {
-      "nom": "Hôtel El Bey",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.337785,6.6504749",
-      "lat": 36.337785,
-      "lng": 6.6504749,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.337785,6.6504749",
-      "source": "osm"
-    },
-    {
-      "nom": "maison Mer",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.3135696,6.6161887",
-      "lat": 36.3135696,
-      "lng": 6.6161887,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.3135696,6.6161887",
-      "source": "osm"
-    },
-    {
-      "nom": "المعالج",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.3279831,6.6637328",
-      "lat": 36.3279831,
-      "lng": 6.6637328,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.3279831,6.6637328",
-      "source": "osm"
-    },
-    {
-      "nom": "Onm",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.3038064,6.621082",
-      "lat": 36.3038064,
-      "lng": 6.621082,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.3038064,6.621082",
-      "source": "osm"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Constantine",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Constantine",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Constantine%20Constantine"
-    },
-    {
-      "nom": "Mosquée Chentli",
-      "lat": 36.3620013,
-      "lng": 6.6087863,
-      "coordonnees": {
-        "lat": 36.3620013,
-        "lng": 6.6087863
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.3620013,6.6087863",
-      "source": "osm"
-    },
-    {
-      "nom": "Mosquée des Martyrs",
-      "lat": 36.3544797,
-      "lng": 6.6092319,
-      "coordonnees": {
-        "lat": 36.3544797,
-        "lng": 6.6092319
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.3544797,6.6092319",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد حداد",
-      "lat": 36.3532902,
-      "lng": 6.6051164,
-      "coordonnees": {
-        "lat": 36.3532902,
-        "lng": 6.6051164
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.3532902,6.6051164",
-      "source": "osm"
-    },
-    {
-      "nom": "Mosquée Omar Ben Elas",
-      "lat": 36.3625576,
-      "lng": 6.642386,
-      "coordonnees": {
-        "lat": 36.3625576,
-        "lng": 6.642386
-      },
-      "adresse": "Cité El Hayer",
-      "mapsUrl": "https://maps.google.com/?q=36.3625576,6.642386",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد ابو بكر الصديق",
-      "lat": 36.3941516,
-      "lng": 6.6089692,
-      "coordonnees": {
-        "lat": 36.3941516,
-        "lng": 6.6089692
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.3941516,6.6089692",
-      "source": "osm"
-    },
-    {
-      "nom": "Mosquée Lokmane",
-      "lat": 36.3410525,
-      "lng": 6.5929076,
-      "coordonnees": {
-        "lat": 36.3410525,
-        "lng": 6.5929076
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.3410525,6.5929076",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد بلال بن رباح",
-      "lat": 36.3554715,
-      "lng": 6.6532257,
-      "coordonnees": {
-        "lat": 36.3554715,
-        "lng": 6.6532257
-      },
-      "adresse": "قسنطينة",
-      "mapsUrl": "https://maps.google.com/?q=36.3554715,6.6532257",
-      "source": "osm"
-    },
-    {
-      "nom": "mosquee al ghofrane",
-      "lat": 36.3923358,
-      "lng": 6.642037,
-      "coordonnees": {
-        "lat": 36.3923358,
-        "lng": 6.642037
-      },
-      "adresse": "طريق جبل الوحش, constantine",
-      "mapsUrl": "https://maps.google.com/?q=36.3923358,6.642037",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد الحسن ابن علي",
-      "lat": 36.3424797,
-      "lng": 6.6484802,
-      "coordonnees": {
-        "lat": 36.3424797,
-        "lng": 6.6484802
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.3424797,6.6484802",
-      "source": "osm"
-    },
-    {
-      "nom": "El Amir Abd Elkader",
-      "lat": 36.4173338,
-      "lng": 6.597358,
-      "coordonnees": {
-        "lat": 36.4173338,
-        "lng": 6.597358
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.4173338,6.597358",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد الرسالة",
-      "lat": 36.4142504,
-      "lng": 6.5642881,
-      "coordonnees": {
-        "lat": 36.4142504,
-        "lng": 6.5642881
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.4142504,6.5642881",
-      "source": "osm"
-    },
-    {
-      "nom": "Mosquée Cheikh Ahmed Sahnoune",
-      "lat": 36.2985408,
-      "lng": 6.6208632,
-      "coordonnees": {
-        "lat": 36.2985408,
-        "lng": 6.6208632
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.2985408,6.6208632",
-      "source": "osm"
-    },
-    {
-      "nom": "Abou Bakr Essidik",
-      "lat": 36.4588774,
-      "lng": 6.632695,
-      "coordonnees": {
-        "lat": 36.4588774,
-        "lng": 6.632695
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.4588774,6.632695",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد السنة",
-      "lat": 36.2690788,
-      "lng": 6.5762591,
-      "coordonnees": {
-        "lat": 36.2690788,
-        "lng": 6.5762591
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.2690788,6.5762591",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد عمر بن العاص",
-      "lat": 36.2639892,
-      "lng": 6.5732014,
-      "coordonnees": {
-        "lat": 36.2639892,
-        "lng": 6.5732014
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.2639892,6.5732014",
-      "source": "osm"
-    },
-    {
-      "nom": "Mosquée Ahmed Hammani",
-      "lat": 36.2609821,
-      "lng": 6.5789778,
-      "coordonnees": {
-        "lat": 36.2609821,
-        "lng": 6.5789778
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.2609821,6.5789778",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد الريان",
-      "lat": 36.2562906,
-      "lng": 6.5720612,
-      "coordonnees": {
-        "lat": 36.2562906,
-        "lng": 6.5720612
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.2562906,6.5720612",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد الأبرار",
-      "lat": 36.2527126,
-      "lng": 6.588024,
-      "coordonnees": {
-        "lat": 36.2527126,
-        "lng": 6.588024
-      },
-      "adresse": "علي منجلي",
-      "mapsUrl": "https://maps.google.com/?q=36.2527126,6.588024",
-      "source": "osm"
-    },
-    {
-      "nom": "MOSQUEE ABDELLAH BEN OMR",
-      "lat": 36.3776552,
-      "lng": 6.4649847,
-      "coordonnees": {
-        "lat": 36.3776552,
-        "lng": 6.4649847
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.3776552,6.4649847",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد سلمان الفارسي",
-      "lat": 36.2574854,
-      "lng": 6.6918743,
-      "coordonnees": {
-        "lat": 36.2574854,
-        "lng": 6.6918743
-      },
-      "adresse": "El Khroub",
-      "mapsUrl": "https://maps.google.com/?q=36.2574854,6.6918743",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد عبد الحميد ابن باديس",
-      "lat": 36.2710497,
-      "lng": 6.5047485,
-      "coordonnees": {
-        "lat": 36.2710497,
-        "lng": 6.5047485
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.2710497,6.5047485",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد أحمد بسطامي",
-      "lat": 36.2593404,
-      "lng": 6.7088256,
-      "coordonnees": {
-        "lat": 36.2593404,
-        "lng": 6.7088256
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.2593404,6.7088256",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد أبو عبيدة بن الجراح",
-      "lat": 36.2616514,
-      "lng": 6.7156672,
-      "coordonnees": {
-        "lat": 36.2616514,
-        "lng": 6.7156672
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.2616514,6.7156672",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد ثابت بن قيس",
-      "lat": 36.2610545,
-      "lng": 6.7176881,
-      "coordonnees": {
-        "lat": 36.2610545,
-        "lng": 6.7176881
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.2610545,6.7176881",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد أبو الدرداء",
-      "lat": 36.2532587,
-      "lng": 6.7137534,
-      "coordonnees": {
-        "lat": 36.2532587,
-        "lng": 6.7137534
-      },
-      "adresse": "المنى, El Khroub ⵍⴻⵅⵔⵓⴱ الخروب",
-      "mapsUrl": "https://maps.google.com/?q=36.2532587,6.7137534",
-      "source": "osm"
-    },
-    {
-      "nom": "Mosquée El Maghfira",
-      "lat": 36.2596041,
-      "lng": 6.5047702,
-      "coordonnees": {
-        "lat": 36.2596041,
-        "lng": 6.5047702
-      },
-      "adresse": "Aïn Smara",
-      "mapsUrl": "https://maps.google.com/?q=36.2596041,6.5047702",
-      "source": "osm"
-    },
-    {
-      "nom": "Mosquée Abdelhamid Ibn Badis",
-      "lat": 36.505871,
-      "lng": 6.5481704,
-      "coordonnees": {
-        "lat": 36.505871,
-        "lng": 6.5481704
-      },
-      "adresse": "Beni Hamidene",
-      "mapsUrl": "https://maps.google.com/?q=36.505871,6.5481704",
-      "source": "osm"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Mosquée Emir Abdelkader",
-      "categorie": "Spirituel",
-      "description": "L'une des plus grandes mosquées d'Afrique, minarets jumeaux.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Emir%20Abdelkader%20Constantine",
-      "lat": 36.3468414,
-      "lng": 6.6033193,
-      "geocoded": true
-    },
-    {
-      "id": "a2",
-      "nom": "Ponts suspendus & gorges du Rhumel",
-      "categorie": "Nature",
-      "description": "Vertigineux ponts au-dessus du ravin.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Ponts%20suspendus%20%26%20gorges%20du%20Rhumel%20Constantine"
-    },
-    {
-      "id": "a3",
-      "nom": "Vieille ville (Souika)",
-      "categorie": "Culture",
-      "description": "Ruelles historiques et palais Ahmed Bey.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Vieille%20ville%20%28Souika%29%20Constantine"
-    },
-    {
-      "nom": "حديقة سوسة",
-      "lat": 36.369702,
-      "lng": 6.6176198,
-      "coordonnees": {
-        "lat": 36.369702,
-        "lng": 6.6176198
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=36.369702,6.6176198",
-      "source": "osm"
-    },
-    {
-      "nom": "الهرم",
-      "lat": 36.3603678,
-      "lng": 6.6064707,
-      "coordonnees": {
-        "lat": 36.3603678,
-        "lng": 6.6064707
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=36.3603678,6.6064707",
-      "source": "osm"
-    },
-    {
-      "nom": "Monument aux morts",
-      "lat": 36.375222,
-      "lng": 6.6134687,
-      "coordonnees": {
-        "lat": 36.375222,
-        "lng": 6.6134687
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=36.375222,6.6134687",
-      "source": "osm"
-    },
-    {
-      "nom": "aqueduc romain",
-      "lat": 36.3525528,
-      "lng": 6.6213475,
-      "coordonnees": {
-        "lat": 36.3525528,
-        "lng": 6.6213475
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=36.3525528,6.6213475",
-      "source": "osm"
-    },
-    {
-      "nom": "تمثال سيدة السلام",
-      "lat": 36.3804774,
-      "lng": 6.6184901,
-      "coordonnees": {
-        "lat": 36.3804774,
-        "lng": 6.6184901
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=36.3804774,6.6184901",
-      "source": "osm"
-    },
-    {
-      "nom": "G 7",
-      "lat": 36.3225454,
-      "lng": 6.640801,
-      "coordonnees": {
-        "lat": 36.3225454,
-        "lng": 6.640801
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=36.3225454,6.640801",
-      "source": "osm"
-    },
-    {
-      "nom": "Dar",
-      "lat": 36.3136454,
-      "lng": 6.6162393,
-      "coordonnees": {
-        "lat": 36.3136454,
-        "lng": 6.6162393
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=36.3136454,6.6162393",
-      "source": "osm"
-    },
-    {
-      "nom": "solution soudage",
-      "lat": 36.4202184,
-      "lng": 6.6115152,
-      "coordonnees": {
-        "lat": 36.4202184,
-        "lng": 6.6115152
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=36.4202184,6.6115152",
-      "source": "osm"
-    },
-    {
-      "nom": "هشام",
-      "lat": 36.3098928,
-      "lng": 6.6024961,
-      "coordonnees": {
-        "lat": 36.3098928,
-        "lng": 6.6024961
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=36.3098928,6.6024961",
-      "source": "osm"
-    },
-    {
-      "nom": "قاعة المنارة الحفلات",
-      "lat": 36.3054158,
-      "lng": 6.6787334,
-      "coordonnees": {
-        "lat": 36.3054158,
-        "lng": 6.6787334
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=36.3054158,6.6787334",
-      "source": "osm"
-    },
-    {
-      "nom": "Tombeau de Massinissa",
-      "lat": 36.2721943,
-      "lng": 6.725097,
-      "coordonnees": {
-        "lat": 36.2721943,
-        "lng": 6.725097
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=36.2721943,6.725097",
-      "source": "osm"
-    },
-    {
-      "nom": "Atelier Aluminium",
-      "lat": 36.2307861,
-      "lng": 6.5638789,
-      "coordonnees": {
-        "lat": 36.2307861,
-        "lng": 6.5638789
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=36.2307861,6.5638789",
-      "source": "osm"
-    },
-    {
-      "nom": "Ruines Romaines Tiddis",
-      "lat": 36.4623723,
-      "lng": 6.4823717,
-      "coordonnees": {
-        "lat": 36.4623723,
-        "lng": 6.4823717
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=36.4623723,6.4823717",
-      "source": "osm"
-    }
-  ],
-  "imageCredit": "Wikimedia Commons",
-  "osmEnriched": true,
-  "osmEnrichedAt": "2026-06-30",
-  "description_en": "Constantine, in Algeria, is a halal-friendly destination with a Halal Trust Score of 4.5/5. Muslim travelers will find 2 halal restaurants listed, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
-  "metaDescription_en": "Halal guide to Constantine: 2 halal restaurants listed, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.5/5.",
-  "nom_en": "Constantine",
-  "boucheries": []
+  {
+   "nom": "Dortoir 25",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3677919,6.6125446",
+   "lat": 36.3677919,
+   "lng": 6.6125446,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.booking.com/hotel/dz/dortoir-25-constantine.html",
+   "source": "osm"
+  },
+  {
+   "nom": "بن مهيدي",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3659837,6.6108027",
+   "lat": 36.3659837,
+   "lng": 6.6108027,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.3659837,6.6108027",
+   "source": "osm"
+  },
+  {
+   "nom": "Hôtel El Maghreb",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3667056,6.610904",
+   "lat": 36.3667056,
+   "lng": 6.610904,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.3667056,6.610904",
+   "source": "osm"
+  },
+  {
+   "nom": "Grand Hôtel Cirta",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3631854,6.6092395",
+   "lat": 36.3631854,
+   "lng": 6.6092395,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.hotelcirta.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Hôtel Ibis Constantine",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3658402,6.608337",
+   "lat": 36.3658402,
+   "lng": 6.608337,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.accorhotels.com/fr/hotel-6491-ibis-constantine/index.shtml",
+   "source": "osm"
+  },
+  {
+   "nom": "Hôtel Novotel Constantine",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3654023,6.6079179",
+   "lat": 36.3654023,
+   "lng": 6.6079179,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.accorhotels.com/fr/hotel-6492-novotel-constantine/index.shtml",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Des Princes",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3612707,6.6075071",
+   "lat": 36.3612707,
+   "lng": 6.6075071,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.3612707,6.6075071",
+   "source": "osm"
+  },
+  {
+   "nom": "Hôtel militaire",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3527944,6.6110986",
+   "lat": 36.3527944,
+   "lng": 6.6110986,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.3527944,6.6110986",
+   "source": "osm"
+  },
+  {
+   "nom": "منزل محمد العيد الاشراف",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3733707,6.6263687",
+   "lat": 36.3733707,
+   "lng": 6.6263687,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.3733707,6.6263687",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Emir",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3526752,6.6188674",
+   "lat": 36.3526752,
+   "lng": 6.6188674,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.3526752,6.6188674",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel El Kheir",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3518965,6.6256427",
+   "lat": 36.3518965,
+   "lng": 6.6256427,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.3518965,6.6256427",
+   "source": "osm"
+  },
+  {
+   "nom": "Hôtel Marriott",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 5,
+   "mapsUrl": "https://maps.google.com/?q=36.3479358,6.6179197",
+   "lat": 36.3479358,
+   "lng": 6.6179197,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.3479358,6.6179197",
+   "source": "osm"
+  },
+  {
+   "nom": "Hôtel El Bey",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.337785,6.6504749",
+   "lat": 36.337785,
+   "lng": 6.6504749,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.337785,6.6504749",
+   "source": "osm"
+  },
+  {
+   "nom": "maison Mer",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3135696,6.6161887",
+   "lat": 36.3135696,
+   "lng": 6.6161887,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.3135696,6.6161887",
+   "source": "osm"
+  },
+  {
+   "nom": "المعالج",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3279831,6.6637328",
+   "lat": 36.3279831,
+   "lng": 6.6637328,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.3279831,6.6637328",
+   "source": "osm"
+  },
+  {
+   "nom": "Onm",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3038064,6.621082",
+   "lat": 36.3038064,
+   "lng": 6.621082,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.3038064,6.621082",
+   "source": "osm"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "Mosquée Chentli",
+   "lat": 36.3620013,
+   "lng": 6.6087863,
+   "coordonnees": {
+    "lat": 36.3620013,
+    "lng": 6.6087863
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.3620013,6.6087863",
+   "source": "osm"
+  },
+  {
+   "nom": "Mosquée des Martyrs",
+   "lat": 36.3544797,
+   "lng": 6.6092319,
+   "coordonnees": {
+    "lat": 36.3544797,
+    "lng": 6.6092319
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.3544797,6.6092319",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد حداد",
+   "lat": 36.3532902,
+   "lng": 6.6051164,
+   "coordonnees": {
+    "lat": 36.3532902,
+    "lng": 6.6051164
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.3532902,6.6051164",
+   "source": "osm"
+  },
+  {
+   "nom": "Mosquée Omar Ben Elas",
+   "lat": 36.3625576,
+   "lng": 6.642386,
+   "coordonnees": {
+    "lat": 36.3625576,
+    "lng": 6.642386
+   },
+   "adresse": "Cité El Hayer",
+   "mapsUrl": "https://maps.google.com/?q=36.3625576,6.642386",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد ابو بكر الصديق",
+   "lat": 36.3941516,
+   "lng": 6.6089692,
+   "coordonnees": {
+    "lat": 36.3941516,
+    "lng": 6.6089692
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.3941516,6.6089692",
+   "source": "osm"
+  },
+  {
+   "nom": "Mosquée Lokmane",
+   "lat": 36.3410525,
+   "lng": 6.5929076,
+   "coordonnees": {
+    "lat": 36.3410525,
+    "lng": 6.5929076
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.3410525,6.5929076",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد بلال بن رباح",
+   "lat": 36.3554715,
+   "lng": 6.6532257,
+   "coordonnees": {
+    "lat": 36.3554715,
+    "lng": 6.6532257
+   },
+   "adresse": "قسنطينة",
+   "mapsUrl": "https://maps.google.com/?q=36.3554715,6.6532257",
+   "source": "osm"
+  },
+  {
+   "nom": "mosquee al ghofrane",
+   "lat": 36.3923358,
+   "lng": 6.642037,
+   "coordonnees": {
+    "lat": 36.3923358,
+    "lng": 6.642037
+   },
+   "adresse": "طريق جبل الوحش, constantine",
+   "mapsUrl": "https://maps.google.com/?q=36.3923358,6.642037",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد الحسن ابن علي",
+   "lat": 36.3424797,
+   "lng": 6.6484802,
+   "coordonnees": {
+    "lat": 36.3424797,
+    "lng": 6.6484802
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.3424797,6.6484802",
+   "source": "osm"
+  },
+  {
+   "nom": "El Amir Abd Elkader",
+   "lat": 36.4173338,
+   "lng": 6.597358,
+   "coordonnees": {
+    "lat": 36.4173338,
+    "lng": 6.597358
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.4173338,6.597358",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد الرسالة",
+   "lat": 36.4142504,
+   "lng": 6.5642881,
+   "coordonnees": {
+    "lat": 36.4142504,
+    "lng": 6.5642881
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.4142504,6.5642881",
+   "source": "osm"
+  },
+  {
+   "nom": "Mosquée Cheikh Ahmed Sahnoune",
+   "lat": 36.2985408,
+   "lng": 6.6208632,
+   "coordonnees": {
+    "lat": 36.2985408,
+    "lng": 6.6208632
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.2985408,6.6208632",
+   "source": "osm"
+  },
+  {
+   "nom": "Abou Bakr Essidik",
+   "lat": 36.4588774,
+   "lng": 6.632695,
+   "coordonnees": {
+    "lat": 36.4588774,
+    "lng": 6.632695
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.4588774,6.632695",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد السنة",
+   "lat": 36.2690788,
+   "lng": 6.5762591,
+   "coordonnees": {
+    "lat": 36.2690788,
+    "lng": 6.5762591
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.2690788,6.5762591",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد عمر بن العاص",
+   "lat": 36.2639892,
+   "lng": 6.5732014,
+   "coordonnees": {
+    "lat": 36.2639892,
+    "lng": 6.5732014
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.2639892,6.5732014",
+   "source": "osm"
+  },
+  {
+   "nom": "Mosquée Ahmed Hammani",
+   "lat": 36.2609821,
+   "lng": 6.5789778,
+   "coordonnees": {
+    "lat": 36.2609821,
+    "lng": 6.5789778
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.2609821,6.5789778",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد الريان",
+   "lat": 36.2562906,
+   "lng": 6.5720612,
+   "coordonnees": {
+    "lat": 36.2562906,
+    "lng": 6.5720612
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.2562906,6.5720612",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد الأبرار",
+   "lat": 36.2527126,
+   "lng": 6.588024,
+   "coordonnees": {
+    "lat": 36.2527126,
+    "lng": 6.588024
+   },
+   "adresse": "علي منجلي",
+   "mapsUrl": "https://maps.google.com/?q=36.2527126,6.588024",
+   "source": "osm"
+  },
+  {
+   "nom": "MOSQUEE ABDELLAH BEN OMR",
+   "lat": 36.3776552,
+   "lng": 6.4649847,
+   "coordonnees": {
+    "lat": 36.3776552,
+    "lng": 6.4649847
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.3776552,6.4649847",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد سلمان الفارسي",
+   "lat": 36.2574854,
+   "lng": 6.6918743,
+   "coordonnees": {
+    "lat": 36.2574854,
+    "lng": 6.6918743
+   },
+   "adresse": "El Khroub",
+   "mapsUrl": "https://maps.google.com/?q=36.2574854,6.6918743",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد عبد الحميد ابن باديس",
+   "lat": 36.2710497,
+   "lng": 6.5047485,
+   "coordonnees": {
+    "lat": 36.2710497,
+    "lng": 6.5047485
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.2710497,6.5047485",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد أحمد بسطامي",
+   "lat": 36.2593404,
+   "lng": 6.7088256,
+   "coordonnees": {
+    "lat": 36.2593404,
+    "lng": 6.7088256
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.2593404,6.7088256",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد أبو عبيدة بن الجراح",
+   "lat": 36.2616514,
+   "lng": 6.7156672,
+   "coordonnees": {
+    "lat": 36.2616514,
+    "lng": 6.7156672
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.2616514,6.7156672",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد ثابت بن قيس",
+   "lat": 36.2610545,
+   "lng": 6.7176881,
+   "coordonnees": {
+    "lat": 36.2610545,
+    "lng": 6.7176881
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.2610545,6.7176881",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد أبو الدرداء",
+   "lat": 36.2532587,
+   "lng": 6.7137534,
+   "coordonnees": {
+    "lat": 36.2532587,
+    "lng": 6.7137534
+   },
+   "adresse": "المنى, El Khroub ⵍⴻⵅⵔⵓⴱ الخروب",
+   "mapsUrl": "https://maps.google.com/?q=36.2532587,6.7137534",
+   "source": "osm"
+  },
+  {
+   "nom": "Mosquée El Maghfira",
+   "lat": 36.2596041,
+   "lng": 6.5047702,
+   "coordonnees": {
+    "lat": 36.2596041,
+    "lng": 6.5047702
+   },
+   "adresse": "Aïn Smara",
+   "mapsUrl": "https://maps.google.com/?q=36.2596041,6.5047702",
+   "source": "osm"
+  },
+  {
+   "nom": "Mosquée Abdelhamid Ibn Badis",
+   "lat": 36.505871,
+   "lng": 6.5481704,
+   "coordonnees": {
+    "lat": 36.505871,
+    "lng": 6.5481704
+   },
+   "adresse": "Beni Hamidene",
+   "mapsUrl": "https://maps.google.com/?q=36.505871,6.5481704",
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "حديقة سوسة",
+   "lat": 36.369702,
+   "lng": 6.6176198,
+   "coordonnees": {
+    "lat": 36.369702,
+    "lng": 6.6176198
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=36.369702,6.6176198",
+   "source": "osm"
+  },
+  {
+   "nom": "الهرم",
+   "lat": 36.3603678,
+   "lng": 6.6064707,
+   "coordonnees": {
+    "lat": 36.3603678,
+    "lng": 6.6064707
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=36.3603678,6.6064707",
+   "source": "osm"
+  },
+  {
+   "nom": "Monument aux morts",
+   "lat": 36.375222,
+   "lng": 6.6134687,
+   "coordonnees": {
+    "lat": 36.375222,
+    "lng": 6.6134687
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=36.375222,6.6134687",
+   "source": "osm"
+  },
+  {
+   "nom": "aqueduc romain",
+   "lat": 36.3525528,
+   "lng": 6.6213475,
+   "coordonnees": {
+    "lat": 36.3525528,
+    "lng": 6.6213475
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=36.3525528,6.6213475",
+   "source": "osm"
+  },
+  {
+   "nom": "تمثال سيدة السلام",
+   "lat": 36.3804774,
+   "lng": 6.6184901,
+   "coordonnees": {
+    "lat": 36.3804774,
+    "lng": 6.6184901
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=36.3804774,6.6184901",
+   "source": "osm"
+  },
+  {
+   "nom": "G 7",
+   "lat": 36.3225454,
+   "lng": 6.640801,
+   "coordonnees": {
+    "lat": 36.3225454,
+    "lng": 6.640801
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=36.3225454,6.640801",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar",
+   "lat": 36.3136454,
+   "lng": 6.6162393,
+   "coordonnees": {
+    "lat": 36.3136454,
+    "lng": 6.6162393
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=36.3136454,6.6162393",
+   "source": "osm"
+  },
+  {
+   "nom": "solution soudage",
+   "lat": 36.4202184,
+   "lng": 6.6115152,
+   "coordonnees": {
+    "lat": 36.4202184,
+    "lng": 6.6115152
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=36.4202184,6.6115152",
+   "source": "osm"
+  },
+  {
+   "nom": "هشام",
+   "lat": 36.3098928,
+   "lng": 6.6024961,
+   "coordonnees": {
+    "lat": 36.3098928,
+    "lng": 6.6024961
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=36.3098928,6.6024961",
+   "source": "osm"
+  },
+  {
+   "nom": "قاعة المنارة الحفلات",
+   "lat": 36.3054158,
+   "lng": 6.6787334,
+   "coordonnees": {
+    "lat": 36.3054158,
+    "lng": 6.6787334
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=36.3054158,6.6787334",
+   "source": "osm"
+  },
+  {
+   "nom": "Tombeau de Massinissa",
+   "lat": 36.2721943,
+   "lng": 6.725097,
+   "coordonnees": {
+    "lat": 36.2721943,
+    "lng": 6.725097
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=36.2721943,6.725097",
+   "source": "osm"
+  },
+  {
+   "nom": "Atelier Aluminium",
+   "lat": 36.2307861,
+   "lng": 6.5638789,
+   "coordonnees": {
+    "lat": 36.2307861,
+    "lng": 6.5638789
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=36.2307861,6.5638789",
+   "source": "osm"
+  },
+  {
+   "nom": "Ruines Romaines Tiddis",
+   "lat": 36.4623723,
+   "lng": 6.4823717,
+   "coordonnees": {
+    "lat": 36.4623723,
+    "lng": 6.4823717
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=36.4623723,6.4823717",
+   "source": "osm"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30",
+ "description_en": "Constantine, in Algeria, is a halal-friendly destination with a Halal Trust Score of 4.5/5. Muslim travelers will find 2 halal restaurants listed, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
+ "metaDescription_en": "Halal guide to Constantine: 2 halal restaurants listed, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.5/5.",
+ "nom_en": "Constantine",
+ "boucheries": [],
+ "dataPurgedAt": "2026-07-15"
 }

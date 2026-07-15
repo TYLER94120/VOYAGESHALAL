@@ -1,3320 +1,3278 @@
 {
-  "slug": "sydney",
-  "nom": "Sydney",
-  "pays": "Australie",
-  "pays_slug": "australie",
-  "continent": "Océanie",
-  "region": "Australie",
-  "coordonnees": {
-    "lat": -33.8688,
-    "lng": 151.2093
+ "slug": "sydney",
+ "nom": "Sydney",
+ "pays": "Australie",
+ "pays_slug": "australie",
+ "continent": "Océanie",
+ "region": "Australie",
+ "coordonnees": {
+  "lat": -33.8688,
+  "lng": 151.2093
+ },
+ "codeISO": "",
+ "score_halal": 4.3,
+ "halalScore": 8.6,
+ "description": "Plus grande ville d'Australie, Sydney possède une communauté musulmane dynamique (Lakemba, Auburn) et de nombreuses adresses halal.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Sydney_Harbour_Bridge_night.jpg/1920px-Sydney_Harbour_Bridge_night.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Sydney_Harbour_Bridge_night.jpg/1920px-Sydney_Harbour_Bridge_night.jpg",
+ "metaDescription": "Plus grande ville d'Australie, Sydney possède une communauté musulmane dynamique (Lakemba, Auburn) et de nombreuses adresses halal.",
+ "statistiques": {
+  "restaurants_halal": 124,
+  "mosquees": 6,
+  "hotels": 115
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "Made in Italy Sydney CBD",
+   "type": "pizza, italian, pasta",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8663263,151.2053926",
+   "lat": -33.8663263,
+   "lng": 151.2053926,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.3,
-  "halalScore": 8.6,
-  "description": "Plus grande ville d'Australie, Sydney possède une communauté musulmane dynamique (Lakemba, Auburn) et de nombreuses adresses halal.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Sydney_Harbour_Bridge_night.jpg/1920px-Sydney_Harbour_Bridge_night.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Sydney_Harbour_Bridge_night.jpg/1920px-Sydney_Harbour_Bridge_night.jpg",
-  "metaDescription": "Plus grande ville d'Australie, Sydney possède une communauté musulmane dynamique (Lakemba, Auburn) et de nombreuses adresses halal.",
-  "statistiques": {
-    "restaurants_halal": 83,
-    "mosquees": 1,
-    "hotels": 120
+  {
+   "nom": "It's Time for Thai",
+   "type": "thai",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.882012,151.2042771",
+   "lat": -33.882012,
+   "lng": 151.2042771,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "Ogalo",
+   "type": "portuguese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.9090909,151.2236645",
+   "lat": -33.9090909,
+   "lng": 151.2236645,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [
-    {
-      "nom": "Made in Italy Sydney CBD",
-      "type": "pizza, italian, pasta",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8663263,151.2053926",
-      "lat": -33.8663263,
-      "lng": 151.2053926,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "It's Time for Thai",
-      "type": "thai",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.882012,151.2042771",
-      "lat": -33.882012,
-      "lng": 151.2042771,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Ogalo",
-      "type": "portuguese",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.9090909,151.2236645",
-      "lat": -33.9090909,
-      "lng": 151.2236645,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Baba's Kebabs",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.9132001,151.2244777",
-      "lat": -33.9132001,
-      "lng": 151.2244777,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Monkey King Thai",
-      "type": "thai",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.7936044,151.2647854",
-      "lat": -33.7936044,
-      "lng": 151.2647854,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Rockdale Halal Chickens",
-      "type": "chicken",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.9519307,151.1360582",
-      "lat": -33.9519307,
-      "lng": 151.1360582,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Zaffi",
-      "type": "lebanese",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8652601,151.207725",
-      "lat": -33.8652601,
-      "lng": 151.207725,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Sinbad Kebab",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8710739,151.205419",
-      "lat": -33.8710739,
-      "lng": 151.205419,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "کابل;Kabul Social",
-      "type": "afghan",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8649541,151.2064364",
-      "lat": -33.8649541,
-      "lng": 151.2064364,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Feast of Istanbul",
-      "type": "turkish",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8655312,151.2040068",
-      "lat": -33.8655312,
-      "lng": 151.2040068,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Anason",
-      "type": "turkish",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8645975,151.2012827",
-      "lat": -33.8645975,
-      "lng": 151.2012827,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Ataman Kebab and Burgers",
-      "type": "pizza, burger, kebab, hsp",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8763752,151.2066567",
-      "lat": -33.8763752,
-      "lng": 151.2066567,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Foodoomooloo",
-      "type": "turkish",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8693725,151.2200891",
-      "lat": -33.8693725,
-      "lng": 151.2200891,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "One Stop Kebabz",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8780099,151.2059516",
-      "lat": -33.8780099,
-      "lng": 151.2059516,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Spitz Kebab & Grill",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8746857,151.2228036",
-      "lat": -33.8746857,
-      "lng": 151.2228036,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Iconic Kebabs",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8806493,151.2150593",
-      "lat": -33.8806493,
-      "lng": 151.2150593,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Metro Kebabs & Burgers",
-      "type": "kebab, burger",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8743079,151.2231873",
-      "lat": -33.8743079,
-      "lng": 151.2231873,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Kings Kebab",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8747804,151.223168",
-      "lat": -33.8747804,
-      "lng": 151.223168,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Five Star Kebabs",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8814495,151.2050837",
-      "lat": -33.8814495,
-      "lng": 151.2050837,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Five Star Kebab",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8735713,151.2241221",
-      "lat": -33.8735713,
-      "lng": 151.2241221,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Shop 8 Manoushi Espresso",
-      "type": "lebanese",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.882292,151.2064894",
-      "lat": -33.882292,
-      "lng": 151.2064894,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Metro Kebab",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8836422,151.2027153",
-      "lat": -33.8836422,
-      "lng": 151.2027153,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Nour",
-      "type": "arab, lebanese",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8867534,151.2138646",
-      "lat": -33.8867534,
-      "lng": 151.2138646,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Nada's Restaurant",
-      "type": "lebanese",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8898774,151.2080663",
-      "lat": -33.8898774,
-      "lng": 151.2080663,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "The Prophet",
-      "type": "lebanese",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8899459,151.208236",
-      "lat": -33.8899459,
-      "lng": 151.208236,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Spice Hub",
-      "type": "indian, pakistani",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.889964,151.208287",
-      "lat": -33.889964,
-      "lng": 151.208287,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Fatima's",
-      "type": "lebanese",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8901075,151.2087026",
-      "lat": -33.8901075,
-      "lng": 151.2087026,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Emad's",
-      "type": "lebanese",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8901343,151.2087843",
-      "lat": -33.8901343,
-      "lng": 151.2087843,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Erciyes",
-      "type": "turkish",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8917064,151.2129564",
-      "lat": -33.8917064,
-      "lng": 151.2129564,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Wilson's Lebanese Restaurant",
-      "type": "lebanese",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8930113,151.2041192",
-      "lat": -33.8930113,
-      "lng": 151.2041192,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Redfern Kebab",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8925861,151.2015823",
-      "lat": -33.8925861,
-      "lng": 151.2015823,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Oz Turk Jnr",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8910349,151.1960694",
-      "lat": -33.8910349,
-      "lng": 151.1960694,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Al Aseel",
-      "type": "lebanese",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8928701,151.1830374",
-      "lat": -33.8928701,
-      "lng": 151.1830374,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Falafel Zaman",
-      "type": "lebanese",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8311376,151.2239435",
-      "lat": -33.8311376,
-      "lng": 151.2239435,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Kayra",
-      "type": "turkish",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8986712,151.1741472",
-      "lat": -33.8986712,
-      "lng": 151.1741472,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Arabella",
-      "type": "lebanese",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.9022988,151.1789523",
-      "lat": -33.9022988,
-      "lng": 151.1789523,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Turka",
-      "type": "turkish",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8274585,151.2006993",
-      "lat": -33.8274585,
-      "lng": 151.2006993,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Turkuaz Turkish Cuisine",
-      "type": "turkish",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8987217,151.1737141",
-      "lat": -33.8987217,
-      "lng": 151.1737141,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Tajla Bangladeshi Grill",
-      "type": "bangladeshi",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8988395,151.1726683",
-      "lat": -33.8988395,
-      "lng": 151.1726683,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "The Sultan’s Table",
-      "type": "turkish",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8988836,151.1722533",
-      "lat": -33.8988836,
-      "lng": 151.1722533,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Roseberry Kebab House",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.9127981,151.2016074",
-      "lat": -33.9127981,
-      "lng": 151.2016074,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Bon Pollo",
-      "type": "chicken, lebanese",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8237984,151.193609",
-      "lat": -33.8237984,
-      "lng": 151.193609,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Lebanon and Beyond",
-      "type": "lebanese",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.9130687,151.2405234",
-      "lat": -33.9130687,
-      "lng": 151.2405234,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Kadmus Lebanese Cuisine",
-      "type": "lebanese",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8541465,151.1500803",
-      "lat": -33.8541465,
-      "lng": 151.1500803,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Byblos Lebanese Cuisine",
-      "type": "lebanese",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8937424,151.2634674",
-      "lat": -33.8937424,
-      "lng": 151.2634674,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Kebabs, Fish & Chips, Curry",
-      "type": "kebab, fish and chips, curry, burger",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.9130555,151.242283",
-      "lat": -33.9130555,
-      "lng": 151.242283,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Evergreen Spot",
-      "type": "fish and chips, burger, sandwich, kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.9224372,151.2028573",
-      "lat": -33.9224372,
-      "lng": 151.2028573,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "El Jannah (Randwick) chicken shop",
-      "type": "burger, chicken, lebanese",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.9165228,151.2410775",
-      "lat": -33.9165228,
-      "lng": 151.2410775,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Sindbad Cafe",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.9134482,151.1672474",
-      "lat": -33.9134482,
-      "lng": 151.1672474,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Ali Baba",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8903823,151.274505",
-      "lat": -33.8903823,
-      "lng": 151.274505,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Bekya",
-      "type": "egyptian",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.892949,151.142193",
-      "lat": -33.892949,
-      "lng": 151.142193,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Mascot Kebabs",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.9305884,151.1942842",
-      "lat": -33.9305884,
-      "lng": 151.1942842,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Kebab Pizza Pide hiuse",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.9046295,151.1435401",
-      "lat": -33.9046295,
-      "lng": 151.1435401,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Sahara Grill",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.9340436,151.1784294",
-      "lat": -33.9340436,
-      "lng": 151.1784294,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Sim Kebab House",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.89039,151.1280269",
-      "lat": -33.89039,
-      "lng": 151.1280269,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Elissar",
-      "type": "lebanese",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.9395728,151.2289662",
-      "lat": -33.9395728,
-      "lng": 151.2289662,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Metro One",
-      "type": "turkish, pizza, kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8878188,151.1233564",
-      "lat": -33.8878188,
-      "lng": 151.1233564,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Gyros Fix",
-      "type": "kebab, gyros, lebanese",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8690255,151.1190296",
-      "lat": -33.8690255,
-      "lng": 151.1190296,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Wood Fire Pizza & Kebabs",
-      "type": "pizza, kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.7930639,151.1959197",
-      "lat": -33.7930639,
-      "lng": 151.1959197,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Fatoosh Lebanese Restaurant",
-      "type": "lebanese",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.7931055,151.1955066",
-      "lat": -33.7931055,
-      "lng": 151.1955066,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Pasargad Restaurant",
-      "type": "persian",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.7930218,151.1959107",
-      "lat": -33.7930218,
-      "lng": 151.1959107,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Top Kebabs One",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.9307312,151.1531243",
-      "lat": -33.9307312,
-      "lng": 151.1531243,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Charlie's Pizzeria & Bakery",
-      "type": "lebanese",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.910105,151.1217758",
-      "lat": -33.910105,
-      "lng": 151.1217758,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Naji's Charcoal Chicken & Kebabs",
-      "type": "kebab, chicken",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.9367574,151.1465851",
-      "lat": -33.9367574,
-      "lng": 151.1465851,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Croydon park kebab house",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8949609,151.1093228",
-      "lat": -33.8949609,
-      "lng": 151.1093228,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Hakiki",
-      "type": "dessert, turkish",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.877231,151.1032214",
-      "lat": -33.877231,
-      "lng": 151.1032214,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "El Karim",
-      "type": "lebanese",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.7840867,151.1761113",
-      "lat": -33.7840867,
-      "lng": 151.1761113,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Istanville Kebab And Pide Shop",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.9562649,151.2301085",
-      "lat": -33.9562649,
-      "lng": 151.2301085,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Canterbury Kebabs",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.9141832,151.1147396",
-      "lat": -33.9141832,
-      "lng": 151.1147396,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Teta's Authentic Lebanese",
-      "type": "lebanese",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.7783059,151.1952957",
-      "lat": -33.7783059,
-      "lng": 151.1952957,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Megabite Pizza",
-      "type": "pizza, kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.9435452,151.1429849",
-      "lat": -33.9435452,
-      "lng": 151.1429849,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Ser-Bar Kebab",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.7971371,151.2872431",
-      "lat": -33.7971371,
-      "lng": 151.2872431,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Manly Seaside Kebabs",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.7974571,151.2878129",
-      "lat": -33.7974571,
-      "lng": 151.2878129,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Tarboosh Lebanese Kitchen",
-      "type": "lebanese",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.791295,151.2868242",
-      "lat": -33.791295,
-      "lng": 151.2868242,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Galata",
-      "type": "turkish",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.9603738,151.1544995",
-      "lat": -33.9603738,
-      "lng": 151.1544995,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Nikan Restaurant",
-      "type": "persian",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8136396,151.105571",
-      "lat": -33.8136396,
-      "lng": 151.105571,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Shahrood",
-      "type": "persian",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8133264,151.105181",
-      "lat": -33.8133264,
-      "lng": 151.105181,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Ooshie Bakehouse",
-      "type": "pizza, lebanese",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.938255,151.1136589",
-      "lat": -33.938255,
-      "lng": 151.1136589,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "AGA Mediteranian Cuisine",
-      "type": "kebab, pizza, pide",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.7621047,151.2142831",
-      "lat": -33.7621047,
-      "lng": 151.2142831,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Saravanaa Bhavan",
-      "lat": -33.8720589,
-      "lng": 151.2055246,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.8720589,151.2055246",
-      "source": "osm"
-    },
-    {
-      "nom": "Manjit's",
-      "lat": -33.8681491,
-      "lng": 151.2017941,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.8681491,151.2017941",
-      "source": "osm"
-    },
-    {
-      "nom": "The Spice Room",
-      "lat": -33.8616898,
-      "lng": 151.2122934,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.8616898,151.2122934",
-      "source": "osm"
-    },
-    {
-      "nom": "Fusion India",
-      "lat": -33.8750012,
-      "lng": 151.2215031,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.8750012,151.2215031",
-      "source": "osm"
-    },
-    {
-      "nom": "Malabar South Indian Cuisine",
-      "lat": -33.876077,
-      "lng": 151.2220765,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.876077,151.2220765",
-      "source": "osm"
-    },
-    {
-      "nom": "Big Fat Indian",
-      "lat": -33.8767537,
-      "lng": 151.2216342,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.8767537,151.2216342",
-      "source": "osm"
-    },
-    {
-      "nom": "The Spice Lounge",
-      "lat": -33.8704467,
-      "lng": 151.1925436,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.8704467,151.1925436",
-      "source": "osm"
-    },
-    {
-      "nom": "Shuk",
-      "lat": -33.8741423,
-      "lng": 151.2269859,
-      "type": "arab, breakfast, mediterranean",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.8741423,151.2269859",
-      "source": "osm"
-    },
-    {
-      "nom": "Don't Tell Aunty",
-      "lat": -33.8851514,
-      "lng": 151.216083,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.8851514,151.216083",
-      "source": "osm"
-    },
-    {
-      "nom": "The Spice Central",
-      "lat": -33.8847746,
-      "lng": 151.1994569,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.8847746,151.1994569",
-      "source": "osm"
-    },
-    {
-      "nom": "Gopinatha’s",
-      "lat": -33.8847546,
-      "lng": 151.1961968,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.8847546,151.1961968",
-      "source": "osm"
-    },
-    {
-      "nom": "Foreign Return",
-      "lat": -33.8891557,
-      "lng": 151.2131379,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.8891557,151.2131379",
-      "source": "osm"
-    },
-    {
-      "nom": "Masala Theory",
-      "lat": -33.8903157,
-      "lng": 151.2128938,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.8903157,151.2128938",
-      "source": "osm"
-    },
-    {
-      "nom": "Flavour of India",
-      "lat": -33.8780556,
-      "lng": 151.2347384,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.8780556,151.2347384",
-      "source": "osm"
-    },
-    {
-      "nom": "Taj Indian Sweets",
-      "lat": -33.8915854,
-      "lng": 151.2139107,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.8915854,151.2139107",
-      "source": "osm"
-    },
-    {
-      "nom": "Grace of India",
-      "lat": -33.8456208,
-      "lng": 151.2123227,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.8456208,151.2123227",
-      "source": "osm"
-    },
-    {
-      "nom": "Flyover",
-      "lat": -33.8930394,
-      "lng": 151.1999866,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.8930394,151.1999866",
-      "source": "osm"
-    },
-    {
-      "nom": "Shila Kitchen",
-      "lat": -33.8566467,
-      "lng": 151.1795649,
-      "type": "persian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.8566467,151.1795649",
-      "source": "osm"
-    },
-    {
-      "nom": "Kepos Street Kitchen",
-      "lat": -33.896813,
-      "lng": 151.2126801,
-      "type": "mediterranean, lebanese",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.896813,151.2126801",
-      "source": "osm"
-    },
-    {
-      "nom": "Jaggi's",
-      "lat": -33.8411704,
-      "lng": 151.2190347,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.8411704,151.2190347",
-      "source": "osm"
-    },
-    {
-      "nom": "Noodle Bar",
-      "lat": -33.8776175,
-      "lng": 151.2428755,
-      "type": "asian, indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.8776175,151.2428755",
-      "source": "osm"
-    },
-    {
-      "nom": "Firangi",
-      "lat": -33.8387288,
-      "lng": 151.2091114,
-      "type": "indian, fusion",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.8387288,151.2091114",
-      "source": "osm"
-    },
-    {
-      "nom": "Green Mushroom",
-      "lat": -33.892998,
-      "lng": 151.1842418,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.892998,151.1842418",
-      "source": "osm"
-    },
-    {
-      "nom": "Derrel\"s",
-      "lat": -33.8868301,
-      "lng": 151.1771825,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.8868301,151.1771825",
-      "source": "osm"
-    },
-    {
-      "nom": "Delhi O Delhi",
-      "lat": -33.8972415,
-      "lng": 151.1805549,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.8972415,151.1805549",
-      "source": "osm"
-    },
-    {
-      "nom": "Indian Rasoi Zetland",
-      "lat": -33.9069355,
-      "lng": 151.2084733,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.9069355,151.2084733",
-      "source": "osm"
-    },
-    {
-      "nom": "Jewel on the Bay",
-      "lat": -33.8726928,
-      "lng": 151.2594913,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.8726928,151.2594913",
-      "source": "osm"
-    },
-    {
-      "nom": "Tandoori Express",
-      "lat": -33.9051343,
-      "lng": 151.1805454,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.9051343,151.1805454",
-      "source": "osm"
-    },
-    {
-      "nom": "Curry Nest",
-      "lat": -33.8240814,
-      "lng": 151.2007852,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.8240814,151.2007852",
-      "source": "osm"
-    },
-    {
-      "nom": "Don't Tell Uncle",
-      "lat": -33.8219026,
-      "lng": 151.2103124,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.8219026,151.2103124",
-      "source": "osm"
-    },
-    {
-      "nom": "Indian Paradise",
-      "lat": -33.9127984,
-      "lng": 151.2387818,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.9127984,151.2387818",
-      "source": "osm"
-    },
-    {
-      "nom": "3 Steps Cafe",
-      "lat": -33.8937771,
-      "lng": 151.2619655,
-      "type": "burger, chicken, kebab",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.8937771,151.2619655",
-      "source": "osm"
-    },
-    {
-      "nom": "Spice Namaste",
-      "lat": -33.8910423,
-      "lng": 151.2741044,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.8910423,151.2741044",
-      "source": "osm"
-    },
-    {
-      "nom": "Curry Craze",
-      "lat": -33.9246127,
-      "lng": 151.1875744,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.9246127,151.1875744",
-      "source": "osm"
-    },
-    {
-      "nom": "Exotic Indian Curries Haberfield",
-      "lat": -33.8807492,
-      "lng": 151.1384845,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.8807492,151.1384845",
-      "source": "osm"
-    },
-    {
-      "nom": "Curry Lane",
-      "lat": -33.8138037,
-      "lng": 151.1701671,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.8138037,151.1701671",
-      "source": "osm"
-    },
-    {
-      "nom": "Flavour of North India",
-      "lat": -33.9205557,
-      "lng": 151.2556096,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.9205557,151.2556096",
-      "source": "osm"
-    },
-    {
-      "nom": "Masala",
-      "lat": -33.8131241,
-      "lng": 151.1696333,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.8131241,151.1696333",
-      "source": "osm"
-    },
-    {
-      "nom": "Dosa Hub FiveDock",
-      "lat": -33.8687491,
-      "lng": 151.129796,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.8687491,151.129796",
-      "source": "osm"
-    },
-    {
-      "nom": "Da Vatti Ashfield",
-      "lat": -33.8897769,
-      "lng": 151.1256221,
-      "type": "indian, nepalese",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.8897769,151.1256221",
-      "source": "osm"
-    },
-    {
-      "nom": "Kuma Don Yakiniku",
-      "lat": -33.796606,
-      "lng": 151.1841789,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.796606,151.1841789",
-      "source": "osm"
-    },
-    {
-      "nom": "Cedar Dough Pizza Bar",
-      "lat": -33.7936675,
-      "lng": 151.1919415,
-      "type": "lebanese",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.7936675,151.1919415",
-      "source": "osm"
-    },
-    {
-      "nom": "Preet Indian",
-      "lat": -33.7946422,
-      "lng": 151.1862648,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.7946422,151.1862648",
-      "source": "osm"
-    },
-    {
-      "nom": "Ajmer's Indian Restaurant",
-      "lat": -33.7944748,
-      "lng": 151.264526,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.7944748,151.264526",
-      "source": "osm"
-    },
-    {
-      "nom": "Rashmin Indian Nepalese Restaurant",
-      "lat": -33.7850647,
-      "lng": 151.1773984,
-      "type": "indian, nepalese",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-33.7850647,151.1773984",
-      "source": "osm"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "The Sebel Sydney Martin Place",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8685126,151.210951",
-      "lat": -33.8685126,
-      "lng": 151.210951,
-      "halalFriendly": false,
-      "bookingUrl": "https://all.accor.com/hotel/B980/index.en.shtml?goto=fiche_hotel&code_hotel=B980",
-      "source": "osm"
-    },
-    {
-      "nom": "The Fullerton Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.867868,151.2077229",
-      "lat": -33.867868,
-      "lng": 151.2077229,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.fullertonhotels.com/fullerton-hotel-sydney",
-      "source": "osm"
-    },
-    {
-      "nom": "St James Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8711323,151.2096112",
-      "lat": -33.8711323,
-      "lng": 151.2096112,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8711323,151.2096112",
-      "source": "osm"
-    },
-    {
-      "nom": "QT Sydney",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8709373,151.2076595",
-      "lat": -33.8709373,
-      "lng": 151.2076595,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.qtsydney.com.au",
-      "source": "osm"
-    },
-    {
-      "nom": "Swissotel Sydney",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8707364,151.2072969",
-      "lat": -33.8707364,
-      "lng": 151.2072969,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8707364,151.2072969",
-      "source": "osm"
-    },
-    {
-      "nom": "Sheraton on the Park",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8717322,151.2099196",
-      "lat": -33.8717322,
-      "lng": 151.2099196,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8717322,151.2099196",
-      "source": "osm"
-    },
-    {
-      "nom": "Megaboom Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8698792,151.205942",
-      "lat": -33.8698792,
-      "lng": 151.205942,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8698792,151.205942",
-      "source": "osm"
-    },
-    {
-      "nom": "Grace Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8689862,151.2056756",
-      "lat": -33.8689862,
-      "lng": 151.2056756,
-      "halalFriendly": false,
-      "bookingUrl": "https://gracehotel.com.au/",
-      "source": "osm"
-    },
-    {
-      "nom": "Hilton Sydney",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 5,
-      "mapsUrl": "https://maps.google.com/?q=-33.8718174,151.2076057",
-      "lat": -33.8718174,
-      "lng": 151.2076057,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.hilton.com/en/hotels/sydhitw-hilton-sydney/",
-      "source": "osm"
-    },
-    {
-      "nom": "The Tank Stream Sydney",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.865408,151.208539",
-      "lat": -33.865408,
-      "lng": 151.208539,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.865408,151.208539",
-      "source": "osm"
-    },
-    {
-      "nom": "Radisson Plaza Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8653574,151.2090082",
-      "lat": -33.8653574,
-      "lng": 151.2090082,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8653574,151.2090082",
-      "source": "osm"
-    },
-    {
-      "nom": "Sofitel Wentworth Sydney",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8655042,151.2110194",
-      "lat": -33.8655042,
-      "lng": 151.2110194,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8655042,151.2110194",
-      "source": "osm"
-    },
-    {
-      "nom": "SKYE Suites",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 5,
-      "mapsUrl": "https://maps.google.com/?q=-33.8683284,151.2048612",
-      "lat": -33.8683284,
-      "lng": 151.2048612,
-      "halalFriendly": false,
-      "bookingUrl": "https://skyesydney.com.au",
-      "source": "osm"
-    },
-    {
-      "nom": "Adina Grand",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8653336,151.207557",
-      "lat": -33.8653336,
-      "lng": 151.207557,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8653336,151.207557",
-      "source": "osm"
-    },
-    {
-      "nom": "Castlereagh Boutique Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8725877,151.2091176",
-      "lat": -33.8725877,
-      "lng": 151.2091176,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.thecastlereagh.com.au/",
-      "source": "osm"
-    },
-    {
-      "nom": "Yehs Hotel Sydney QVB",
-      "categorie": "Hôtel",
-      "priceRange": "€€€",
-      "score": 3,
-      "mapsUrl": "https://maps.google.com/?q=-33.8724279,151.2063351",
-      "lat": -33.8724279,
-      "lng": 151.2063351,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8724279,151.2063351",
-      "source": "osm"
-    },
-    {
-      "nom": "Park Regis City Centre",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8733569,151.2087238",
-      "lat": -33.8733569,
-      "lng": 151.2087238,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.parkregiscitycentre.com.au/",
-      "source": "osm"
-    },
-    {
-      "nom": "Mantra Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8644033,151.2076711",
-      "lat": -33.8644033,
-      "lng": 151.2076711,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8644033,151.2076711",
-      "source": "osm"
-    },
-    {
-      "nom": "Siesta Sydney",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8670538,151.204091",
-      "lat": -33.8670538,
-      "lng": 151.204091,
-      "halalFriendly": false,
-      "bookingUrl": "https://siestasydney.com.au/",
-      "source": "osm"
-    },
-    {
-      "nom": "Little National Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8656847,151.2050555",
-      "lat": -33.8656847,
-      "lng": 151.2050555,
-      "halalFriendly": false,
-      "bookingUrl": "https://littlenationalhotel.com.au/sydney/",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Coronation",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8733733,151.2076744",
-      "lat": -33.8733733,
-      "lng": 151.2076744,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8733733,151.2076744",
-      "source": "osm"
-    },
-    {
-      "nom": "Mantra on Kent",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8717102,151.2046929",
-      "lat": -33.8717102,
-      "lng": 151.2046929,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.mantraonkent.com.au/",
-      "source": "osm"
-    },
-    {
-      "nom": "Amora Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.864499,151.2063897",
-      "lat": -33.864499,
-      "lng": 151.2063897,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.864499,151.2063897",
-      "source": "osm"
-    },
-    {
-      "nom": "Hyatt Regency Sydney",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8699034,151.203263",
-      "lat": -33.8699034,
-      "lng": 151.203263,
-      "halalFriendly": false,
-      "bookingUrl": "https://sydney.regency.hyatt.com",
-      "source": "osm"
-    },
-    {
-      "nom": "Novotel Sydney City Centre",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8648204,151.2053697",
-      "lat": -33.8648204,
-      "lng": 151.2053697,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8648204,151.2053697",
-      "source": "osm"
-    },
-    {
-      "nom": "West Hotel Sydney, Curio Collection by Hilton",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 4.5,
-      "mapsUrl": "https://maps.google.com/?q=-33.8675536,151.2032107",
-      "lat": -33.8675536,
-      "lng": 151.2032107,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8675536,151.2032107",
-      "source": "osm"
-    },
-    {
-      "nom": "Meriton Suites Pitt Street",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8742248,151.2077232",
-      "lat": -33.8742248,
-      "lng": 151.2077232,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8742248,151.2077232",
-      "source": "osm"
-    },
-    {
-      "nom": "Adina Apartment Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8686369,151.2025267",
-      "lat": -33.8686369,
-      "lng": 151.2025267,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.adinahotels.com/hotel/sydney-darling-harbour/",
-      "source": "osm"
-    },
-    {
-      "nom": "Base Backpackers Sydney",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8731671,151.2050059",
-      "lat": -33.8731671,
-      "lng": 151.2050059,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.stayatbase.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "YEHS Hotel Sydney Harbour Suites",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8726729,151.2042159",
-      "lat": -33.8726729,
-      "lng": 151.2042159,
-      "halalFriendly": false,
-      "bookingUrl": "https://sydneyhotelharboursuites.com.au",
-      "source": "osm"
-    },
-    {
-      "nom": "Ibis King Street Wharf",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8666781,151.2027529",
-      "lat": -33.8666781,
-      "lng": 151.2027529,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.accorhotels.com/gb/hotel-6412-ibis-sydney-king-street-wharf/index.shtml",
-      "source": "osm"
-    },
-    {
-      "nom": "Sydney Harbour Marriott Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8628693,151.2093763",
-      "lat": -33.8628693,
-      "lng": 151.2093763,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.marriott.com/hotels/travel/sydmc-sydney-harbour-marriott-hotel-at-circular-quay/",
-      "source": "osm"
-    },
-    {
-      "nom": "Napoleon on Kent",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8646502,151.2038003",
-      "lat": -33.8646502,
-      "lng": 151.2038003,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8646502,151.2038003",
-      "source": "osm"
-    },
-    {
-      "nom": "InterContinental Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8629399,151.2124103",
-      "lat": -33.8629399,
-      "lng": 151.2124103,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8629399,151.2124103",
-      "source": "osm"
-    },
-    {
-      "nom": "Crowne Plaza Sydney Darling Harbour",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8738342,151.2044664",
-      "lat": -33.8738342,
-      "lng": 151.2044664,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.ihg.com/crowneplaza/hotels/us/en/sydney/sydsh/hoteldetail",
-      "source": "osm"
-    },
-    {
-      "nom": "Belvedere Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8743876,151.2054368",
-      "lat": -33.8743876,
-      "lng": 151.2054368,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8743876,151.2054368",
-      "source": "osm"
-    },
-    {
-      "nom": "Kimpton Margot Sydney",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8751735,151.2077432",
-      "lat": -33.8751735,
-      "lng": 151.2077432,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.ihg.com/kimptonhotels/hotels/us/en/kimpton-hotel-sydney-australia/sydkm/hoteldetail",
-      "source": "osm"
-    },
-    {
-      "nom": "The Pacific House",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8715107,151.2167325",
-      "lat": -33.8715107,
-      "lng": 151.2167325,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.thepacifichouse.com",
-      "source": "osm"
-    },
-    {
-      "nom": "ParkRoyal Darling Harbour Sydney",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8736004,151.2035672",
-      "lat": -33.8736004,
-      "lng": 151.2035672,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.parkroyalhotels.com/en/hotels-resorts/australia/darling-harbour-sydney.html",
-      "source": "osm"
-    },
-    {
-      "nom": "Sydney Backpackers",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8753796,151.2073131",
-      "lat": -33.8753796,
-      "lng": 151.2073131,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8753796,151.2073131",
-      "source": "osm"
-    },
-    {
-      "nom": "Fraser Suites",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8748387,151.2054872",
-      "lat": -33.8748387,
-      "lng": 151.2054872,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8748387,151.2054872",
-      "source": "osm"
-    },
-    {
-      "nom": "Four Seasons Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 5,
-      "mapsUrl": "https://maps.google.com/?q=-33.8616794,151.207658",
-      "lat": -33.8616794,
-      "lng": 151.207658,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.fourseasons.com/sydney/",
-      "source": "osm"
-    },
-    {
-      "nom": "Hyde Park Inn",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8760735,151.2093046",
-      "lat": -33.8760735,
-      "lng": 151.2093046,
-      "halalFriendly": false,
-      "bookingUrl": "https://hydeparkinn.com.au/",
-      "source": "osm"
-    },
-    {
-      "nom": "Regency Hyde Park",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.876223,151.209307",
-      "lat": -33.876223,
-      "lng": 151.209307,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.876223,151.209307",
-      "source": "osm"
-    },
-    {
-      "nom": "W Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8734056,151.2021027",
-      "lat": -33.8734056,
-      "lng": 151.2021027,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.marriott.com/en-us/hotels/sydwh-w-sydney/overview/",
-      "source": "osm"
-    },
-    {
-      "nom": "Vibe Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8752065,151.204176",
-      "lat": -33.8752065,
-      "lng": 151.204176,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8752065,151.204176",
-      "source": "osm"
-    },
-    {
-      "nom": "Shangri-La Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8612947,151.2065754",
-      "lat": -33.8612947,
-      "lng": 151.2065754,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8612947,151.2065754",
-      "source": "osm"
-    },
-    {
-      "nom": "Pullman Sydney Hyde Park",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8761891,151.2124868",
-      "lat": -33.8761891,
-      "lng": 151.2124868,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.pullmansydneyhydepark.com.au/",
-      "source": "osm"
-    },
-    {
-      "nom": "World Square Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8763231,151.2065564",
-      "lat": -33.8763231,
-      "lng": 151.2065564,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8763231,151.2065564",
-      "source": "osm"
-    },
-    {
-      "nom": "East Hyde Park Backpackers",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8731968,151.2172041",
-      "lat": -33.8731968,
-      "lng": 151.2172041,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8731968,151.2172041",
-      "source": "osm"
-    },
-    {
-      "nom": "City resort hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8732168,151.2173192",
-      "lat": -33.8732168,
-      "lng": 151.2173192,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8732168,151.2173192",
-      "source": "osm"
-    },
-    {
-      "nom": "The Sydney Boulvevard Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 4,
-      "mapsUrl": "https://maps.google.com/?q=-33.8740369,151.2166129",
-      "lat": -33.8740369,
-      "lng": 151.2166129,
-      "halalFriendly": false,
-      "bookingUrl": "https://sydneyboulevard.com.au/",
-      "source": "osm"
-    },
-    {
-      "nom": "YEHS Hotel CBD",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8758935,151.2047832",
-      "lat": -33.8758935,
-      "lng": 151.2047832,
-      "halalFriendly": false,
-      "bookingUrl": "https://yehshotel.com.au/sydneycbd/",
-      "source": "osm"
-    },
-    {
-      "nom": "Rydges World Square",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8767065,151.2073638",
-      "lat": -33.8767065,
-      "lng": 151.2073638,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8767065,151.2073638",
-      "source": "osm"
-    },
-    {
-      "nom": "Rydges Darling Square",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8760618,151.2048386",
-      "lat": -33.8760618,
-      "lng": 151.2048386,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8760618,151.2048386",
-      "source": "osm"
-    },
-    {
-      "nom": "Oakes Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8765855,151.2124197",
-      "lat": -33.8765855,
-      "lng": 151.2124197,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.oakshotels.com/en/oaks-hyde-park-plaza",
-      "source": "osm"
-    },
-    {
-      "nom": "Rydges",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8771528,151.2075498",
-      "lat": -33.8771528,
-      "lng": 151.2075498,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8771528,151.2075498",
-      "source": "osm"
-    },
-    {
-      "nom": "Pullman Quay Grand Sydney",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8608518,151.2129269",
-      "lat": -33.8608518,
-      "lng": 151.2129269,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.accorhotels.com/gb/hotel-8779-pullman-quay-grand-sydney-harbour/index.shtml",
-      "source": "osm"
-    },
-    {
-      "nom": "Song Hotel Sydney",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8773313,151.2116286",
-      "lat": -33.8773313,
-      "lng": 151.2116286,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.songhotels.com.au/",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Ibis Sydney World Square",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.877589,151.2077378",
-      "lat": -33.877589,
-      "lng": 151.2077378,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.ibissydneyworldsquare.com.au/",
-      "source": "osm"
-    },
-    {
-      "nom": "Sydney Harbour YHA",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.860079,151.2071014",
-      "lat": -33.860079,
-      "lng": 151.2071014,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.yha.com.au/hostels/nsw/sydney-surrounds/sydney-harbour/",
-      "source": "osm"
-    },
-    {
-      "nom": "Ovolo Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8689519,151.2202911",
-      "lat": -33.8689519,
-      "lng": 151.2202911,
-      "halalFriendly": false,
-      "bookingUrl": "https://ovolohotels.com/ovolo/woolloomooloo/",
-      "source": "osm"
-    },
-    {
-      "nom": "Harbour Rocks Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 5,
-      "mapsUrl": "https://maps.google.com/?q=-33.8596472,151.2081453",
-      "lat": -33.8596472,
-      "lng": 151.2081453,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.harbourrocks.com.au/",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Stellar",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8777654,151.2119392",
-      "lat": -33.8777654,
-      "lng": 151.2119392,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8777654,151.2119392",
-      "source": "osm"
-    },
-    {
-      "nom": "Australian Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8597,151.2070428",
-      "lat": -33.8597,
-      "lng": 151.2070428,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8597,151.2070428",
-      "source": "osm"
-    },
-    {
-      "nom": "Crown Sydney Hotel Resort",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8624169,151.2010549",
-      "lat": -33.8624169,
-      "lng": 151.2010549,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.crownhotels.com.au/sydney/crown-towers",
-      "source": "osm"
-    },
-    {
-      "nom": "Prime Accommodation CBD",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8771136,151.2040154",
-      "lat": -33.8771136,
-      "lng": 151.2040154,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8771136,151.2040154",
-      "source": "osm"
-    },
-    {
-      "nom": "ibis Styles Central Sydney",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8782635,151.2108765",
-      "lat": -33.8782635,
-      "lng": 151.2108765,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8782635,151.2108765",
-      "source": "osm"
-    },
-    {
-      "nom": "Nate's Place Backpackers",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8748046,151.2182737",
-      "lat": -33.8748046,
-      "lng": 151.2182737,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8748046,151.2182737",
-      "source": "osm"
-    },
-    {
-      "nom": "Tequila Sunrise",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.877844,151.2053976",
-      "lat": -33.877844,
-      "lng": 151.2053976,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.877844,151.2053976",
-      "source": "osm"
-    },
-    {
-      "nom": "The Langham Sydney",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8605022,151.2034595",
-      "lat": -33.8605022,
-      "lng": 151.2034595,
-      "halalFriendly": false,
-      "bookingUrl": "http://www.langhamhotels.com/en/the-langham/sydney/",
-      "source": "osm"
-    },
-    {
-      "nom": "Sofitel Sydney Darling Harbour",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8726892,151.1986261",
-      "lat": -33.8726892,
-      "lng": 151.1986261,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.sofitelsydneydarlingharbour.com.au/",
-      "source": "osm"
-    },
-    {
-      "nom": "Ibis Sydney Darling Harbour",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8710866,151.1979692",
-      "lat": -33.8710866,
-      "lng": 151.1979692,
-      "halalFriendly": false,
-      "bookingUrl": "http://www.ibis.com/gb/hotel-1757-ibis-sydney-darling-harbour/index.shtml",
-      "source": "osm"
-    },
-    {
-      "nom": "CB Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.878345,151.2071584",
-      "lat": -33.878345,
-      "lng": 151.2071584,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.878345,151.2071584",
-      "source": "osm"
-    },
-    {
-      "nom": "Aiden by Best Western",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8702838,151.1976086",
-      "lat": -33.8702838,
-      "lng": 151.1976086,
-      "halalFriendly": false,
-      "bookingUrl": "https://aidendarlingharbour.com.au",
-      "source": "osm"
-    },
-    {
-      "nom": "Summer House Backpackers",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8742038,151.2191759",
-      "lat": -33.8742038,
-      "lng": 151.2191759,
-      "halalFriendly": false,
-      "bookingUrl": "http://www.summerhousebackpackers.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Maze Backpackers",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8784755,151.2071585",
-      "lat": -33.8784755,
-      "lng": 151.2071585,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8784755,151.2071585",
-      "source": "osm"
-    },
-    {
-      "nom": "Harry's",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8785321,151.2113105",
-      "lat": -33.8785321,
-      "lng": 151.2113105,
-      "halalFriendly": false,
-      "bookingUrl": "https://hotelharry.com.au/",
-      "source": "osm"
-    },
-    {
-      "nom": "Pensione Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8782228,151.2055004",
-      "lat": -33.8782228,
-      "lng": 151.2055004,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8782228,151.2055004",
-      "source": "osm"
-    },
-    {
-      "nom": "Ace Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8788467,151.2099659",
-      "lat": -33.8788467,
-      "lng": 151.2099659,
-      "halalFriendly": false,
-      "bookingUrl": "https://acehotel.com/sydney/",
-      "source": "osm"
-    },
-    {
-      "nom": "Novotel Sydney on Darling Harbour",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8720358,151.1977762",
-      "lat": -33.8720358,
-      "lng": 151.1977762,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.novoteldarlingharbour.com.au/",
-      "source": "osm"
-    },
-    {
-      "nom": "Holiday Inn Darling Harbour",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.87779,151.2036153",
-      "lat": -33.87779,
-      "lng": 151.2036153,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.hidarlingharbour.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Novotel Rockford Darling Harbour",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8774349,151.2026932",
-      "lat": -33.8774349,
-      "lng": 151.2026932,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8774349,151.2026932",
-      "source": "osm"
-    },
-    {
-      "nom": "Zara Tower",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8790793,151.209594",
-      "lat": -33.8790793,
-      "lng": 151.209594,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8790793,151.209594",
-      "source": "osm"
-    },
-    {
-      "nom": "Nesuto",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8705001,151.2216082",
-      "lat": -33.8705001,
-      "lng": 151.2216082,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.nesuto.com/woolloomooloo",
-      "source": "osm"
-    },
-    {
-      "nom": "Veriu Central",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8792526,151.2094484",
-      "lat": -33.8792526,
-      "lng": 151.2094484,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8792526,151.2094484",
-      "source": "osm"
-    },
-    {
-      "nom": "Sydney Central Inn",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8791325,151.2073435",
-      "lat": -33.8791325,
-      "lng": 151.2073435,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8791325,151.2073435",
-      "source": "osm"
-    },
-    {
-      "nom": "Meriton Serviced Apartments Campell Street",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8790167,151.2057959",
-      "lat": -33.8790167,
-      "lng": 151.2057959,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8790167,151.2057959",
-      "source": "osm"
-    },
-    {
-      "nom": "Oaks buudal",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8794246,151.2083461",
-      "lat": -33.8794246,
-      "lng": 151.2083461,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8794246,151.2083461",
-      "source": "osm"
-    },
-    {
-      "nom": "Holiday Inn Old Sydney",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8581324,151.2087422",
-      "lat": -33.8581324,
-      "lng": 151.2087422,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.ihg.com/holidayinn/hotels/us/en/sydney/sydgs/hoteldetail",
-      "source": "osm"
-    },
-    {
-      "nom": "Mariners Court Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8707232,151.2220552",
-      "lat": -33.8707232,
-      "lng": 151.2220552,
-      "halalFriendly": false,
-      "bookingUrl": "https://marinerscourt.com.au",
-      "source": "osm"
-    },
-    {
-      "nom": "Mantra Sydney Central",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8790255,151.2051592",
-      "lat": -33.8790255,
-      "lng": 151.2051592,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8790255,151.2051592",
-      "source": "osm"
-    },
-    {
-      "nom": "Capitol Square Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.879328,151.2059154",
-      "lat": -33.879328,
-      "lng": 151.2059154,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.879328,151.2059154",
-      "source": "osm"
-    },
-    {
-      "nom": "ibis budget Sydney East",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8751475,151.2200548",
-      "lat": -33.8751475,
-      "lng": 151.2200548,
-      "halalFriendly": false,
-      "bookingUrl": "https://all.accor.com/hotel/5675/index.en.shtml",
-      "source": "osm"
-    },
-    {
-      "nom": "Goldsborough Apartment Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8738322,151.1972728",
-      "lat": -33.8738322,
-      "lng": 151.1972728,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.minorhotels.com/en/oaks/oaks-goldsbrough-apartments",
-      "source": "osm"
-    },
-    {
-      "nom": "The Wool Merchant",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8729966,151.1967551",
-      "lat": -33.8729966,
-      "lng": 151.1967551,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8729966,151.1967551",
-      "source": "osm"
-    },
-    {
-      "nom": "The Sebel Darling Harbour The Pinnacle",
-      "categorie": "Appartement",
-      "priceRange": "€€€",
-      "score": 3,
-      "mapsUrl": "https://maps.google.com/?q=-33.870499,151.1957888",
-      "lat": -33.870499,
-      "lng": 151.1957888,
-      "halalFriendly": false,
-      "bookingUrl": "https://accorvacationclub.com.au/property/the-sebel-darling-harbour-the-pinnacle",
-      "source": "osm"
-    },
-    {
-      "nom": "The Darling",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8693455,151.1955449",
-      "lat": -33.8693455,
-      "lng": 151.1955449,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8693455,151.1955449",
-      "source": "osm"
-    },
-    {
-      "nom": "Big Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8803183,151.2090757",
-      "lat": -33.8803183,
-      "lng": 151.2090757,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8803183,151.2090757",
-      "source": "osm"
-    },
-    {
-      "nom": "Spicers",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8716466,151.223032",
-      "lat": -33.8716466,
-      "lng": 151.223032,
-      "halalFriendly": false,
-      "bookingUrl": "https://spicersretreats.com/retreats/spicers-potts-point/",
-      "source": "osm"
-    },
-    {
-      "nom": "Caption By Hyatt",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8801842,151.205769",
-      "lat": -33.8801842,
-      "lng": 151.205769,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.hyatt.com/caption-by-hyatt/en-US/sydcp-caption-by-hyatt-central-sydney",
-      "source": "osm"
-    },
-    {
-      "nom": "Urban Nomad",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8721688,151.222892",
-      "lat": -33.8721688,
-      "lng": 151.222892,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8721688,151.222892",
-      "source": "osm"
-    },
-    {
-      "nom": "Holiday Inn Potts Point",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8743185,151.221904",
-      "lat": -33.8743185,
-      "lng": 151.221904,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.ihg.com/holidayinn/hotels/us/en/sydney/sydas/hoteldetail",
-      "source": "osm"
-    },
-    {
-      "nom": "Original Backpacker",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8725452,151.2228739",
-      "lat": -33.8725452,
-      "lng": 151.2228739,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8725452,151.2228739",
-      "source": "osm"
-    },
-    {
-      "nom": "Highfield",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8728293,151.2227631",
-      "lat": -33.8728293,
-      "lng": 151.2227631,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.highfieldhotel.com.au/",
-      "source": "osm"
-    },
-    {
-      "nom": "London Plane Backpackers",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8730217,151.2227381",
-      "lat": -33.8730217,
-      "lng": 151.2227381,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.londonplane.com.au/",
-      "source": "osm"
-    },
-    {
-      "nom": "ADGE Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.880269,151.2139552",
-      "lat": -33.880269,
-      "lng": 151.2139552,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.880269,151.2139552",
-      "source": "osm"
-    },
-    {
-      "nom": "Astral Tower",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8679091,151.1947412",
-      "lat": -33.8679091,
-      "lng": 151.1947412,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8679091,151.1947412",
-      "source": "osm"
-    },
-    {
-      "nom": "Harbour View Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8567424,151.207364",
-      "lat": -33.8567424,
-      "lng": 151.207364,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8567424,151.207364",
-      "source": "osm"
-    },
-    {
-      "nom": "Home Backpackers",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8810553,151.2088955",
-      "lat": -33.8810553,
-      "lng": 151.2088955,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8810553,151.2088955",
-      "source": "osm"
-    },
-    {
-      "nom": "Sydney City Hostels",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.880463,151.204631",
-      "lat": -33.880463,
-      "lng": 151.204631,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.880463,151.204631",
-      "source": "osm"
-    },
-    {
-      "nom": "Sydney Potts Point Central Apartment Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8732821,151.2232267",
-      "lat": -33.8732821,
-      "lng": 151.2232267,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.sydneypottspointcentral.com.au/",
-      "source": "osm"
-    },
-    {
-      "nom": "Budget Accomodation",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8807541,151.2046902",
-      "lat": -33.8807541,
-      "lng": 151.2046902,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8807541,151.2046902",
-      "source": "osm"
-    },
-    {
-      "nom": "No.9 Springfield",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8729731,151.2235714",
-      "lat": -33.8729731,
-      "lng": 151.2235714,
-      "halalFriendly": false,
-      "bookingUrl": "https://9springfield.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Kirkton Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-33.8768324,151.2209656",
-      "lat": -33.8768324,
-      "lng": 151.2209656,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-33.8768324,151.2209656",
-      "source": "osm"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Sydney",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Sydney",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Sydney%20Sydney"
-    },
-    {
-      "nom": "Redfern Mosque",
-      "lat": -33.8903628,
-      "lng": 151.2094765,
-      "coordonnees": {
-        "lat": -33.8903628,
-        "lng": 151.2094765
-      },
-      "mapsUrl": "https://maps.google.com/?q=-33.8903628,151.2094765",
-      "source": "osm"
-    },
-    {
-      "nom": "Islamic Society of UNSW",
-      "lat": -33.9163195,
-      "lng": 151.2261814,
-      "coordonnees": {
-        "lat": -33.9163195,
-        "lng": 151.2261814
-      },
-      "adresse": "Anzac Parade",
-      "mapsUrl": "https://maps.google.com/?q=-33.9163195,151.2261814",
-      "source": "osm"
-    },
-    {
-      "nom": "Al Hijrah Mosque",
-      "lat": -33.9254371,
-      "lng": 151.159321,
-      "coordonnees": {
-        "lat": -33.9254371,
-        "lng": 151.159321
-      },
-      "adresse": "Station Street",
-      "mapsUrl": "https://maps.google.com/?q=-33.9254371,151.159321",
-      "source": "osm"
-    },
-    {
-      "nom": "St Thomas War Memorial Church",
-      "lat": -33.942723,
-      "lng": 151.1007629,
-      "coordonnees": {
-        "lat": -33.942723,
-        "lng": 151.1007629
-      },
-      "adresse": "Morgan Street",
-      "mapsUrl": "https://maps.google.com/?q=-33.942723,151.1007629",
-      "source": "osm"
-    },
-    {
-      "nom": "Dee Why Mosque",
-      "lat": -33.7435703,
-      "lng": 151.293536,
-      "coordonnees": {
-        "lat": -33.7435703,
-        "lng": 151.293536
-      },
-      "adresse": "South Creek Road",
-      "mapsUrl": "https://maps.google.com/?q=-33.7435703,151.293536",
-      "source": "osm"
-    },
-    {
-      "nom": "Al Amanah",
-      "lat": -33.9164673,
-      "lng": 151.0282113,
-      "coordonnees": {
-        "lat": -33.9164673,
-        "lng": 151.0282113
-      },
-      "mapsUrl": "https://maps.google.com/?q=-33.9164673,151.0282113",
-      "source": "osm"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Lakemba & Haldon Street",
-      "categorie": "Culture",
-      "description": "Quartier musulman réputé pour sa street food halal.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Lakemba%20%26%20Haldon%20Street%20Sydney",
-      "lat": -33.9197979,
-      "lng": 151.0767187,
-      "geocoded": true
-    },
-    {
-      "id": "a2",
-      "nom": "Gallipoli Mosque (Auburn)",
-      "categorie": "Spirituel",
-      "description": "Grande mosquée de style ottoman.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Gallipoli%20Mosque%20%28Auburn%29%20Sydney",
-      "lat": -33.8522327,
-      "lng": 151.0360261,
-      "geocoded": true
-    },
-    {
-      "id": "a3",
-      "nom": "Opéra & port de Sydney",
-      "categorie": "Culture",
-      "description": "Sites emblématiques au bord de l'eau.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Op%C3%A9ra%20%26%20port%20de%20Sydney%20Sydney"
-    },
-    {
-      "nom": "A Human Scale",
-      "lat": -33.8682713,
-      "lng": 151.2088275,
-      "coordonnees": {
-        "lat": -33.8682713,
-        "lng": 151.2088275
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-33.8682713,151.2088275",
-      "source": "osm"
-    },
-    {
-      "nom": "Continuum",
-      "lat": -33.8679822,
-      "lng": 151.2100378,
-      "coordonnees": {
-        "lat": -33.8679822,
-        "lng": 151.2100378
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-33.8679822,151.2100378",
-      "source": "osm"
-    },
-    {
-      "nom": "The Cenotaph War Memorial",
-      "lat": -33.8674933,
-      "lng": 151.2077773,
-      "coordonnees": {
-        "lat": -33.8674933,
-        "lng": 151.2077773
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-33.8674933,151.2077773",
-      "source": "osm"
-    },
-    {
-      "nom": "Four Continents",
-      "lat": -33.8669977,
-      "lng": 151.2101435,
-      "coordonnees": {
-        "lat": -33.8669977,
-        "lng": 151.2101435
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-33.8669977,151.2101435",
-      "source": "osm"
-    },
-    {
-      "nom": "James Martin",
-      "lat": -33.8678266,
-      "lng": 151.2114169,
-      "coordonnees": {
-        "lat": -33.8678266,
-        "lng": 151.2114169
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-33.8678266,151.2114169",
-      "source": "osm"
-    },
-    {
-      "nom": "Queen Victoria",
-      "lat": -33.8696848,
-      "lng": 151.2117984,
-      "coordonnees": {
-        "lat": -33.8696848,
-        "lng": 151.2117984
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-33.8696848,151.2117984",
-      "source": "osm"
-    },
-    {
-      "nom": "Youngsters",
-      "lat": -33.8676052,
-      "lng": 151.2066329,
-      "coordonnees": {
-        "lat": -33.8676052,
-        "lng": 151.2066329
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-33.8676052,151.2066329",
-      "source": "osm"
-    },
-    {
-      "nom": "Museum of Illusions",
-      "lat": -33.8703881,
-      "lng": 151.2068102,
-      "coordonnees": {
-        "lat": -33.8703881,
-        "lng": 151.2068102
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-33.8703881,151.2068102",
-      "source": "osm"
-    },
-    {
-      "nom": "Il Porcellino",
-      "lat": -33.8678891,
-      "lng": 151.2124419,
-      "coordonnees": {
-        "lat": -33.8678891,
-        "lng": 151.2124419
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-33.8678891,151.2124419",
-      "source": "osm"
-    },
-    {
-      "nom": "Ben Chifley",
-      "lat": -33.8662053,
-      "lng": 151.2110618,
-      "coordonnees": {
-        "lat": -33.8662053,
-        "lng": 151.2110618
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-33.8662053,151.2110618",
-      "source": "osm"
-    },
-    {
-      "nom": "William Bede Dalley P.C.",
-      "lat": -33.8703877,
-      "lng": 151.2123658,
-      "coordonnees": {
-        "lat": -33.8703877,
-        "lng": 151.2123658
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-33.8703877,151.2123658",
-      "source": "osm"
-    },
-    {
-      "nom": "Peace Waratah",
-      "lat": -33.8662822,
-      "lng": 151.2069568,
-      "coordonnees": {
-        "lat": -33.8662822,
-        "lng": 151.2069568
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-33.8662822,151.2069568",
-      "source": "osm"
-    },
-    {
-      "nom": "Corner Pavilions",
-      "lat": -33.8693767,
-      "lng": 151.2133364,
-      "coordonnees": {
-        "lat": -33.8693767,
-        "lng": 151.2133364
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-33.8693767,151.2133364",
-      "source": "osm"
-    },
-    {
-      "nom": "Female School of Industry",
-      "lat": -33.8665233,
-      "lng": 151.2125749,
-      "coordonnees": {
-        "lat": -33.8665233,
-        "lng": 151.2125749
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-33.8665233,151.2125749",
-      "source": "osm"
-    },
-    {
-      "nom": "Song of the Magpie Dawn",
-      "lat": -33.8722015,
-      "lng": 151.2080364,
-      "coordonnees": {
-        "lat": -33.8722015,
-        "lng": 151.2080364
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-33.8722015,151.2080364",
-      "source": "osm"
-    },
-    {
-      "nom": "Queen Victoria Building",
-      "lat": -33.8717101,
-      "lng": 151.2068055,
-      "coordonnees": {
-        "lat": -33.8717101,
-        "lng": 151.2068055
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-33.8717101,151.2068055",
-      "source": "osm"
-    },
-    {
-      "nom": "The Tank Stream",
-      "lat": -33.865196,
-      "lng": 151.2084195,
-      "coordonnees": {
-        "lat": -33.865196,
-        "lng": 151.2084195
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-33.865196,151.2084195",
-      "source": "osm"
-    },
-    {
-      "nom": "Wool Merchants",
-      "lat": -33.8686788,
-      "lng": 151.2047015,
-      "coordonnees": {
-        "lat": -33.8686788,
-        "lng": 151.2047015
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-33.8686788,151.2047015",
-      "source": "osm"
-    },
-    {
-      "nom": "Cathedral Church of Mary Help of Christians",
-      "lat": -33.87077,
-      "lng": 151.2132563,
-      "coordonnees": {
-        "lat": -33.87077,
-        "lng": 151.2132563
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-33.87077,151.2132563",
-      "source": "osm"
-    },
-    {
-      "nom": "The Underneath",
-      "lat": -33.8727212,
-      "lng": 151.2087941,
-      "coordonnees": {
-        "lat": -33.8727212,
-        "lng": 151.2087941
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-33.8727212,151.2087941",
-      "source": "osm"
-    },
-    {
-      "nom": "Day In, Day Out",
-      "lat": -33.8647337,
-      "lng": 151.2108073,
-      "coordonnees": {
-        "lat": -33.8647337,
-        "lng": 151.2108073
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-33.8647337,151.2108073",
-      "source": "osm"
-    },
-    {
-      "nom": "Interloop",
-      "lat": -33.8659223,
-      "lng": 151.2055188,
-      "coordonnees": {
-        "lat": -33.8659223,
-        "lng": 151.2055188
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-33.8659223,151.2055188",
-      "source": "osm"
-    },
-    {
-      "nom": "Touchstone",
-      "lat": -33.8651447,
-      "lng": 151.2120446,
-      "coordonnees": {
-        "lat": -33.8651447,
-        "lng": 151.2120446
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-33.8651447,151.2120446",
-      "source": "osm"
-    },
-    {
-      "nom": "Queen Victoria Building Bicentennial Plaza",
-      "lat": -33.8726111,
-      "lng": 151.2067573,
-      "coordonnees": {
-        "lat": -33.8726111,
-        "lng": 151.2067573
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-33.8726111,151.2067573",
-      "source": "osm"
-    },
-    {
-      "nom": "Opal Museum",
-      "lat": -33.8643176,
-      "lng": 151.2089738,
-      "coordonnees": {
-        "lat": -33.8643176,
-        "lng": 151.2089738
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=-33.8643176,151.2089738",
-      "source": "osm"
-    },
-    {
-      "nom": "To the Horses, WW1, Sinai Desert & Palestine",
-      "lat": -33.8654318,
-      "lng": 151.2129594,
-      "coordonnees": {
-        "lat": -33.8654318,
-        "lng": 151.2129594
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-33.8654318,151.2129594",
-      "source": "osm"
-    },
-    {
-      "nom": "Burns 1759-1796",
-      "lat": -33.8696453,
-      "lng": 151.2148479,
-      "coordonnees": {
-        "lat": -33.8696453,
-        "lng": 151.2148479
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-33.8696453,151.2148479",
-      "source": "osm"
-    },
-    {
-      "nom": "Gaffa",
-      "lat": -33.8723967,
-      "lng": 151.2055579,
-      "coordonnees": {
-        "lat": -33.8723967,
-        "lng": 151.2055579
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=-33.8723967,151.2055579",
-      "source": "osm"
-    },
-    {
-      "nom": "King George VI",
-      "lat": -33.8732302,
-      "lng": 151.2117255,
-      "coordonnees": {
-        "lat": -33.8732302,
-        "lng": 151.2117255
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-33.8732302,151.2117255",
-      "source": "osm"
-    },
-    {
-      "nom": "Sister Lenore Sharry",
-      "lat": -33.8722027,
-      "lng": 151.2137432,
-      "coordonnees": {
-        "lat": -33.8722027,
-        "lng": 151.2137432
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-33.8722027,151.2137432",
-      "source": "osm"
-    },
-    {
-      "nom": "Bird Totem",
-      "lat": -33.8640279,
-      "lng": 151.2071059,
-      "coordonnees": {
-        "lat": -33.8640279,
-        "lng": 151.2071059
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-33.8640279,151.2071059",
-      "source": "osm"
-    },
-    {
-      "nom": "Anchor Sculpture",
-      "lat": -33.8735491,
-      "lng": 151.2065889,
-      "coordonnees": {
-        "lat": -33.8735491,
-        "lng": 151.2065889
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-33.8735491,151.2065889",
-      "source": "osm"
-    },
-    {
-      "nom": "Memorial Garden to Pioneers",
-      "lat": -33.865006,
-      "lng": 151.2138106,
-      "coordonnees": {
-        "lat": -33.865006,
-        "lng": 151.2138106
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-33.865006,151.2138106",
-      "source": "osm"
-    },
-    {
-      "nom": "Thomas Sutcliffe Mort",
-      "lat": -33.8634169,
-      "lng": 151.2097613,
-      "coordonnees": {
-        "lat": -33.8634169,
-        "lng": 151.2097613
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-33.8634169,151.2097613",
-      "source": "osm"
-    },
-    {
-      "nom": "Captain Arthur Phillip R.N.",
-      "lat": -33.863635,
-      "lng": 151.2114618,
-      "coordonnees": {
-        "lat": -33.863635,
-        "lng": 151.2114618
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-33.863635,151.2114618",
-      "source": "osm"
-    },
-    {
-      "nom": "Sylvia Chase Square",
-      "lat": -33.8719109,
-      "lng": 151.2149171,
-      "coordonnees": {
-        "lat": -33.8719109,
-        "lng": 151.2149171
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=-33.8719109,151.2149171",
-      "source": "osm"
-    },
-    {
-      "nom": "National Council of Women NSW",
-      "lat": -33.8679671,
-      "lng": 151.2160224,
-      "coordonnees": {
-        "lat": -33.8679671,
-        "lng": 151.2160224
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-33.8679671,151.2160224",
-      "source": "osm"
-    },
-    {
-      "nom": "Wynyard Walk",
-      "lat": -33.8652637,
-      "lng": 151.2038241,
-      "coordonnees": {
-        "lat": -33.8652637,
-        "lng": 151.2038241
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-33.8652637,151.2038241",
-      "source": "osm"
-    },
-    {
-      "nom": "Captain Cook",
-      "lat": -33.8742025,
-      "lng": 151.2119369,
-      "coordonnees": {
-        "lat": -33.8742025,
-        "lng": 151.2119369
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-33.8742025,151.2119369",
-      "source": "osm"
-    },
-    {
-      "nom": "Sydney is on land of the Gadigal people of the Eora Nation",
-      "lat": -33.8736222,
-      "lng": 151.2132876,
-      "coordonnees": {
-        "lat": -33.8736222,
-        "lng": 151.2132876
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-33.8736222,151.2132876",
-      "source": "osm"
-    },
-    {
-      "nom": "The Calyx",
-      "lat": -33.8657856,
-      "lng": 151.2153457,
-      "coordonnees": {
-        "lat": -33.8657856,
-        "lng": 151.2153457
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-33.8657856,151.2153457",
-      "source": "osm"
-    },
-    {
-      "nom": "Hyde Park Obelisk",
-      "lat": -33.8746704,
-      "lng": 151.2098544,
-      "coordonnees": {
-        "lat": -33.8746704,
-        "lng": 151.2098544
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-33.8746704,151.2098544",
-      "source": "osm"
-    },
-    {
-      "nom": "Underwood Ark",
-      "lat": -33.8629584,
-      "lng": 151.2081714,
-      "coordonnees": {
-        "lat": -33.8629584,
-        "lng": 151.2081714
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-33.8629584,151.2081714",
-      "source": "osm"
-    },
-    {
-      "nom": "Betūŋigo",
-      "lat": -33.8628922,
-      "lng": 151.2106423,
-      "coordonnees": {
-        "lat": -33.8628922,
-        "lng": 151.2106423
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-33.8628922,151.2106423",
-      "source": "osm"
-    },
-    {
-      "nom": "Savoyard Sweep Boy",
-      "lat": -33.8647377,
-      "lng": 151.2147882,
-      "coordonnees": {
-        "lat": -33.8647377,
-        "lng": 151.2147882
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-33.8647377,151.2147882",
-      "source": "osm"
-    },
-    {
-      "nom": "Boston’s Windmill",
-      "lat": -33.8640646,
-      "lng": 151.2141228,
-      "coordonnees": {
-        "lat": -33.8640646,
-        "lng": 151.2141228
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-33.8640646,151.2141228",
-      "source": "osm"
-    },
-    {
-      "nom": "The Offerings of War",
-      "lat": -33.8687598,
-      "lng": 151.2167881,
-      "coordonnees": {
-        "lat": -33.8687598,
-        "lng": 151.2167881
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-33.8687598,151.2167881",
-      "source": "osm"
-    },
-    {
-      "nom": "Earth Mother Play Sculpture",
-      "lat": -33.87287,
-      "lng": 151.2152187,
-      "coordonnees": {
-        "lat": -33.87287,
-        "lng": 151.2152187
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-33.87287,151.2152187",
-      "source": "osm"
-    },
-    {
-      "nom": "Madame Tussauds Sydney",
-      "lat": -33.8697254,
-      "lng": 151.2016549,
-      "coordonnees": {
-        "lat": -33.8697254,
-        "lng": 151.2016549
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=-33.8697254,151.2016549",
-      "source": "osm"
-    },
-    {
-      "nom": "Autumn",
-      "lat": -33.8662282,
-      "lng": 151.2163824,
-      "coordonnees": {
-        "lat": -33.8662282,
-        "lng": 151.2163824
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-33.8662282,151.2163824",
-      "source": "osm"
-    },
-    {
-      "nom": "King Edward VII",
-      "lat": -33.8632374,
-      "lng": 151.2131581,
-      "coordonnees": {
-        "lat": -33.8632374,
-        "lng": 151.2131581
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-33.8632374,151.2131581",
-      "source": "osm"
-    },
-    {
-      "nom": "Mermer Waiskeder: Stories of the Moving Tide",
-      "lat": -33.8652391,
-      "lng": 151.2028316,
-      "coordonnees": {
-        "lat": -33.8652391,
-        "lng": 151.2028316
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-33.8652391,151.2028316",
-      "source": "osm"
-    },
-    {
-      "nom": "Patchwork of Light",
-      "lat": -33.8621363,
-      "lng": 151.2095139,
-      "coordonnees": {
-        "lat": -33.8621363,
-        "lng": 151.2095139
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-33.8621363,151.2095139",
-      "source": "osm"
-    },
-    {
-      "nom": "In Memory of David Greenberg Block AC",
-      "lat": -33.8679289,
-      "lng": 151.2173402,
-      "coordonnees": {
-        "lat": -33.8679289,
-        "lng": 151.2173402
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-33.8679289,151.2173402",
-      "source": "osm"
-    },
-    {
-      "nom": "Celebrating the Centuries",
-      "lat": -33.865005,
-      "lng": 151.2161208,
-      "coordonnees": {
-        "lat": -33.865005,
-        "lng": 151.2161208
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-33.865005,151.2161208",
-      "source": "osm"
-    },
-    {
-      "nom": "Almost Once",
-      "lat": -33.8696909,
-      "lng": 151.2175375,
-      "coordonnees": {
-        "lat": -33.8696909,
-        "lng": 151.2175375
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-33.8696909,151.2175375",
-      "source": "osm"
-    },
-    {
-      "nom": "Customs House",
-      "lat": -33.862012,
-      "lng": 151.2110316,
-      "coordonnees": {
-        "lat": -33.862012,
-        "lng": 151.2110316
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-33.862012,151.2110316",
-      "source": "osm"
-    }
-  ],
-  "imageCredit": "Wikimedia Commons",
-  "osmEnriched": true,
-  "osmEnrichedAt": "2026-06-30",
-  "description_en": "Sydney, in Australia, is a halal-friendly destination with a Halal Trust Score of 4.3/5. Muslim travelers will find 124 halal restaurants listed, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
-  "metaDescription_en": "Halal guide to Sydney: 124 halal restaurants listed, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.3/5.",
-  "nom_en": "Sydney",
-  "boucheries": [
-    {
-      "nom": "Vatan Butcher",
-      "lat": -33.932042,
-      "lng": 151.194296,
-      "type": "Boucherie halal",
-      "mapsUrl": "https://maps.google.com/?q=-33.932042,151.194296",
-      "source": "osm"
-    }
-  ]
+  {
+   "nom": "Baba's Kebabs",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.9132001,151.2244777",
+   "lat": -33.9132001,
+   "lng": 151.2244777,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Monkey King Thai",
+   "type": "thai",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.7936044,151.2647854",
+   "lat": -33.7936044,
+   "lng": 151.2647854,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Rockdale Halal Chickens",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.9519307,151.1360582",
+   "lat": -33.9519307,
+   "lng": 151.1360582,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Zaffi",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8652601,151.207725",
+   "lat": -33.8652601,
+   "lng": 151.207725,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sinbad Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8710739,151.205419",
+   "lat": -33.8710739,
+   "lng": 151.205419,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "کابل;Kabul Social",
+   "type": "afghan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8649541,151.2064364",
+   "lat": -33.8649541,
+   "lng": 151.2064364,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Feast of Istanbul",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8655312,151.2040068",
+   "lat": -33.8655312,
+   "lng": 151.2040068,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Anason",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8645975,151.2012827",
+   "lat": -33.8645975,
+   "lng": 151.2012827,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ataman Kebab and Burgers",
+   "type": "pizza, burger, kebab, hsp",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8763752,151.2066567",
+   "lat": -33.8763752,
+   "lng": 151.2066567,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Foodoomooloo",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8693725,151.2200891",
+   "lat": -33.8693725,
+   "lng": 151.2200891,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "One Stop Kebabz",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8780099,151.2059516",
+   "lat": -33.8780099,
+   "lng": 151.2059516,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Spitz Kebab & Grill",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8746857,151.2228036",
+   "lat": -33.8746857,
+   "lng": 151.2228036,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Iconic Kebabs",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8806493,151.2150593",
+   "lat": -33.8806493,
+   "lng": 151.2150593,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Metro Kebabs & Burgers",
+   "type": "kebab, burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8743079,151.2231873",
+   "lat": -33.8743079,
+   "lng": 151.2231873,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kings Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8747804,151.223168",
+   "lat": -33.8747804,
+   "lng": 151.223168,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Five Star Kebabs",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8814495,151.2050837",
+   "lat": -33.8814495,
+   "lng": 151.2050837,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Five Star Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8735713,151.2241221",
+   "lat": -33.8735713,
+   "lng": 151.2241221,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Shop 8 Manoushi Espresso",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.882292,151.2064894",
+   "lat": -33.882292,
+   "lng": 151.2064894,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Metro Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8836422,151.2027153",
+   "lat": -33.8836422,
+   "lng": 151.2027153,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Nour",
+   "type": "arab, lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8867534,151.2138646",
+   "lat": -33.8867534,
+   "lng": 151.2138646,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Nada's Restaurant",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8898774,151.2080663",
+   "lat": -33.8898774,
+   "lng": 151.2080663,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "The Prophet",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8899459,151.208236",
+   "lat": -33.8899459,
+   "lng": 151.208236,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Spice Hub",
+   "type": "indian, pakistani",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.889964,151.208287",
+   "lat": -33.889964,
+   "lng": 151.208287,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Fatima's",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8901075,151.2087026",
+   "lat": -33.8901075,
+   "lng": 151.2087026,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Emad's",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8901343,151.2087843",
+   "lat": -33.8901343,
+   "lng": 151.2087843,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Erciyes",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8917064,151.2129564",
+   "lat": -33.8917064,
+   "lng": 151.2129564,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Wilson's Lebanese Restaurant",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8930113,151.2041192",
+   "lat": -33.8930113,
+   "lng": 151.2041192,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Redfern Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8925861,151.2015823",
+   "lat": -33.8925861,
+   "lng": 151.2015823,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Oz Turk Jnr",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8910349,151.1960694",
+   "lat": -33.8910349,
+   "lng": 151.1960694,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Aseel",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8928701,151.1830374",
+   "lat": -33.8928701,
+   "lng": 151.1830374,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Falafel Zaman",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8311376,151.2239435",
+   "lat": -33.8311376,
+   "lng": 151.2239435,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kayra",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8986712,151.1741472",
+   "lat": -33.8986712,
+   "lng": 151.1741472,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Arabella",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.9022988,151.1789523",
+   "lat": -33.9022988,
+   "lng": 151.1789523,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Turka",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8274585,151.2006993",
+   "lat": -33.8274585,
+   "lng": 151.2006993,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Turkuaz Turkish Cuisine",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8987217,151.1737141",
+   "lat": -33.8987217,
+   "lng": 151.1737141,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Tajla Bangladeshi Grill",
+   "type": "bangladeshi",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8988395,151.1726683",
+   "lat": -33.8988395,
+   "lng": 151.1726683,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "The Sultan’s Table",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8988836,151.1722533",
+   "lat": -33.8988836,
+   "lng": 151.1722533,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Roseberry Kebab House",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.9127981,151.2016074",
+   "lat": -33.9127981,
+   "lng": 151.2016074,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Bon Pollo",
+   "type": "chicken, lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8237984,151.193609",
+   "lat": -33.8237984,
+   "lng": 151.193609,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Lebanon and Beyond",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.9130687,151.2405234",
+   "lat": -33.9130687,
+   "lng": 151.2405234,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kadmus Lebanese Cuisine",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8541465,151.1500803",
+   "lat": -33.8541465,
+   "lng": 151.1500803,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Byblos Lebanese Cuisine",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8937424,151.2634674",
+   "lat": -33.8937424,
+   "lng": 151.2634674,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kebabs, Fish & Chips, Curry",
+   "type": "kebab, fish and chips, curry, burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.9130555,151.242283",
+   "lat": -33.9130555,
+   "lng": 151.242283,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Evergreen Spot",
+   "type": "fish and chips, burger, sandwich, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.9224372,151.2028573",
+   "lat": -33.9224372,
+   "lng": 151.2028573,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "El Jannah (Randwick) chicken shop",
+   "type": "burger, chicken, lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.9165228,151.2410775",
+   "lat": -33.9165228,
+   "lng": 151.2410775,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sindbad Cafe",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.9134482,151.1672474",
+   "lat": -33.9134482,
+   "lng": 151.1672474,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ali Baba",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8903823,151.274505",
+   "lat": -33.8903823,
+   "lng": 151.274505,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Bekya",
+   "type": "egyptian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.892949,151.142193",
+   "lat": -33.892949,
+   "lng": 151.142193,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Mascot Kebabs",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.9305884,151.1942842",
+   "lat": -33.9305884,
+   "lng": 151.1942842,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kebab Pizza Pide hiuse",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.9046295,151.1435401",
+   "lat": -33.9046295,
+   "lng": 151.1435401,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sahara Grill",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.9340436,151.1784294",
+   "lat": -33.9340436,
+   "lng": 151.1784294,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sim Kebab House",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.89039,151.1280269",
+   "lat": -33.89039,
+   "lng": 151.1280269,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Elissar",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.9395728,151.2289662",
+   "lat": -33.9395728,
+   "lng": 151.2289662,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Metro One",
+   "type": "turkish, pizza, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8878188,151.1233564",
+   "lat": -33.8878188,
+   "lng": 151.1233564,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Gyros Fix",
+   "type": "kebab, gyros, lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8690255,151.1190296",
+   "lat": -33.8690255,
+   "lng": 151.1190296,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Wood Fire Pizza & Kebabs",
+   "type": "pizza, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.7930639,151.1959197",
+   "lat": -33.7930639,
+   "lng": 151.1959197,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Fatoosh Lebanese Restaurant",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.7931055,151.1955066",
+   "lat": -33.7931055,
+   "lng": 151.1955066,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Pasargad Restaurant",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.7930218,151.1959107",
+   "lat": -33.7930218,
+   "lng": 151.1959107,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Top Kebabs One",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.9307312,151.1531243",
+   "lat": -33.9307312,
+   "lng": 151.1531243,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Charlie's Pizzeria & Bakery",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.910105,151.1217758",
+   "lat": -33.910105,
+   "lng": 151.1217758,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Naji's Charcoal Chicken & Kebabs",
+   "type": "kebab, chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.9367574,151.1465851",
+   "lat": -33.9367574,
+   "lng": 151.1465851,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Croydon park kebab house",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8949609,151.1093228",
+   "lat": -33.8949609,
+   "lng": 151.1093228,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Hakiki",
+   "type": "dessert, turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.877231,151.1032214",
+   "lat": -33.877231,
+   "lng": 151.1032214,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "El Karim",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.7840867,151.1761113",
+   "lat": -33.7840867,
+   "lng": 151.1761113,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Istanville Kebab And Pide Shop",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.9562649,151.2301085",
+   "lat": -33.9562649,
+   "lng": 151.2301085,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Canterbury Kebabs",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.9141832,151.1147396",
+   "lat": -33.9141832,
+   "lng": 151.1147396,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Teta's Authentic Lebanese",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.7783059,151.1952957",
+   "lat": -33.7783059,
+   "lng": 151.1952957,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Megabite Pizza",
+   "type": "pizza, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.9435452,151.1429849",
+   "lat": -33.9435452,
+   "lng": 151.1429849,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ser-Bar Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.7971371,151.2872431",
+   "lat": -33.7971371,
+   "lng": 151.2872431,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Manly Seaside Kebabs",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.7974571,151.2878129",
+   "lat": -33.7974571,
+   "lng": 151.2878129,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Tarboosh Lebanese Kitchen",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.791295,151.2868242",
+   "lat": -33.791295,
+   "lng": 151.2868242,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Galata",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.9603738,151.1544995",
+   "lat": -33.9603738,
+   "lng": 151.1544995,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Nikan Restaurant",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8136396,151.105571",
+   "lat": -33.8136396,
+   "lng": 151.105571,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Shahrood",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8133264,151.105181",
+   "lat": -33.8133264,
+   "lng": 151.105181,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ooshie Bakehouse",
+   "type": "pizza, lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.938255,151.1136589",
+   "lat": -33.938255,
+   "lng": 151.1136589,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "AGA Mediteranian Cuisine",
+   "type": "kebab, pizza, pide",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.7621047,151.2142831",
+   "lat": -33.7621047,
+   "lng": 151.2142831,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Saravanaa Bhavan",
+   "lat": -33.8720589,
+   "lng": 151.2055246,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.8720589,151.2055246",
+   "source": "osm"
+  },
+  {
+   "nom": "Manjit's",
+   "lat": -33.8681491,
+   "lng": 151.2017941,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.8681491,151.2017941",
+   "source": "osm"
+  },
+  {
+   "nom": "The Spice Room",
+   "lat": -33.8616898,
+   "lng": 151.2122934,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.8616898,151.2122934",
+   "source": "osm"
+  },
+  {
+   "nom": "Fusion India",
+   "lat": -33.8750012,
+   "lng": 151.2215031,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.8750012,151.2215031",
+   "source": "osm"
+  },
+  {
+   "nom": "Malabar South Indian Cuisine",
+   "lat": -33.876077,
+   "lng": 151.2220765,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.876077,151.2220765",
+   "source": "osm"
+  },
+  {
+   "nom": "Big Fat Indian",
+   "lat": -33.8767537,
+   "lng": 151.2216342,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.8767537,151.2216342",
+   "source": "osm"
+  },
+  {
+   "nom": "The Spice Lounge",
+   "lat": -33.8704467,
+   "lng": 151.1925436,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.8704467,151.1925436",
+   "source": "osm"
+  },
+  {
+   "nom": "Shuk",
+   "lat": -33.8741423,
+   "lng": 151.2269859,
+   "type": "arab, breakfast, mediterranean",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.8741423,151.2269859",
+   "source": "osm"
+  },
+  {
+   "nom": "Don't Tell Aunty",
+   "lat": -33.8851514,
+   "lng": 151.216083,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.8851514,151.216083",
+   "source": "osm"
+  },
+  {
+   "nom": "The Spice Central",
+   "lat": -33.8847746,
+   "lng": 151.1994569,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.8847746,151.1994569",
+   "source": "osm"
+  },
+  {
+   "nom": "Gopinatha’s",
+   "lat": -33.8847546,
+   "lng": 151.1961968,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.8847546,151.1961968",
+   "source": "osm"
+  },
+  {
+   "nom": "Foreign Return",
+   "lat": -33.8891557,
+   "lng": 151.2131379,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.8891557,151.2131379",
+   "source": "osm"
+  },
+  {
+   "nom": "Masala Theory",
+   "lat": -33.8903157,
+   "lng": 151.2128938,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.8903157,151.2128938",
+   "source": "osm"
+  },
+  {
+   "nom": "Flavour of India",
+   "lat": -33.8780556,
+   "lng": 151.2347384,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.8780556,151.2347384",
+   "source": "osm"
+  },
+  {
+   "nom": "Taj Indian Sweets",
+   "lat": -33.8915854,
+   "lng": 151.2139107,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.8915854,151.2139107",
+   "source": "osm"
+  },
+  {
+   "nom": "Grace of India",
+   "lat": -33.8456208,
+   "lng": 151.2123227,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.8456208,151.2123227",
+   "source": "osm"
+  },
+  {
+   "nom": "Flyover",
+   "lat": -33.8930394,
+   "lng": 151.1999866,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.8930394,151.1999866",
+   "source": "osm"
+  },
+  {
+   "nom": "Shila Kitchen",
+   "lat": -33.8566467,
+   "lng": 151.1795649,
+   "type": "persian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.8566467,151.1795649",
+   "source": "osm"
+  },
+  {
+   "nom": "Kepos Street Kitchen",
+   "lat": -33.896813,
+   "lng": 151.2126801,
+   "type": "mediterranean, lebanese",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.896813,151.2126801",
+   "source": "osm"
+  },
+  {
+   "nom": "Jaggi's",
+   "lat": -33.8411704,
+   "lng": 151.2190347,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.8411704,151.2190347",
+   "source": "osm"
+  },
+  {
+   "nom": "Noodle Bar",
+   "lat": -33.8776175,
+   "lng": 151.2428755,
+   "type": "asian, indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.8776175,151.2428755",
+   "source": "osm"
+  },
+  {
+   "nom": "Firangi",
+   "lat": -33.8387288,
+   "lng": 151.2091114,
+   "type": "indian, fusion",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.8387288,151.2091114",
+   "source": "osm"
+  },
+  {
+   "nom": "Green Mushroom",
+   "lat": -33.892998,
+   "lng": 151.1842418,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.892998,151.1842418",
+   "source": "osm"
+  },
+  {
+   "nom": "Derrel\"s",
+   "lat": -33.8868301,
+   "lng": 151.1771825,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.8868301,151.1771825",
+   "source": "osm"
+  },
+  {
+   "nom": "Delhi O Delhi",
+   "lat": -33.8972415,
+   "lng": 151.1805549,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.8972415,151.1805549",
+   "source": "osm"
+  },
+  {
+   "nom": "Indian Rasoi Zetland",
+   "lat": -33.9069355,
+   "lng": 151.2084733,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.9069355,151.2084733",
+   "source": "osm"
+  },
+  {
+   "nom": "Jewel on the Bay",
+   "lat": -33.8726928,
+   "lng": 151.2594913,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.8726928,151.2594913",
+   "source": "osm"
+  },
+  {
+   "nom": "Tandoori Express",
+   "lat": -33.9051343,
+   "lng": 151.1805454,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.9051343,151.1805454",
+   "source": "osm"
+  },
+  {
+   "nom": "Curry Nest",
+   "lat": -33.8240814,
+   "lng": 151.2007852,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.8240814,151.2007852",
+   "source": "osm"
+  },
+  {
+   "nom": "Don't Tell Uncle",
+   "lat": -33.8219026,
+   "lng": 151.2103124,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.8219026,151.2103124",
+   "source": "osm"
+  },
+  {
+   "nom": "Indian Paradise",
+   "lat": -33.9127984,
+   "lng": 151.2387818,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.9127984,151.2387818",
+   "source": "osm"
+  },
+  {
+   "nom": "3 Steps Cafe",
+   "lat": -33.8937771,
+   "lng": 151.2619655,
+   "type": "burger, chicken, kebab",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.8937771,151.2619655",
+   "source": "osm"
+  },
+  {
+   "nom": "Spice Namaste",
+   "lat": -33.8910423,
+   "lng": 151.2741044,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.8910423,151.2741044",
+   "source": "osm"
+  },
+  {
+   "nom": "Curry Craze",
+   "lat": -33.9246127,
+   "lng": 151.1875744,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.9246127,151.1875744",
+   "source": "osm"
+  },
+  {
+   "nom": "Exotic Indian Curries Haberfield",
+   "lat": -33.8807492,
+   "lng": 151.1384845,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.8807492,151.1384845",
+   "source": "osm"
+  },
+  {
+   "nom": "Curry Lane",
+   "lat": -33.8138037,
+   "lng": 151.1701671,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.8138037,151.1701671",
+   "source": "osm"
+  },
+  {
+   "nom": "Flavour of North India",
+   "lat": -33.9205557,
+   "lng": 151.2556096,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.9205557,151.2556096",
+   "source": "osm"
+  },
+  {
+   "nom": "Masala",
+   "lat": -33.8131241,
+   "lng": 151.1696333,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.8131241,151.1696333",
+   "source": "osm"
+  },
+  {
+   "nom": "Dosa Hub FiveDock",
+   "lat": -33.8687491,
+   "lng": 151.129796,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.8687491,151.129796",
+   "source": "osm"
+  },
+  {
+   "nom": "Da Vatti Ashfield",
+   "lat": -33.8897769,
+   "lng": 151.1256221,
+   "type": "indian, nepalese",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.8897769,151.1256221",
+   "source": "osm"
+  },
+  {
+   "nom": "Kuma Don Yakiniku",
+   "lat": -33.796606,
+   "lng": 151.1841789,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.796606,151.1841789",
+   "source": "osm"
+  },
+  {
+   "nom": "Cedar Dough Pizza Bar",
+   "lat": -33.7936675,
+   "lng": 151.1919415,
+   "type": "lebanese",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.7936675,151.1919415",
+   "source": "osm"
+  },
+  {
+   "nom": "Preet Indian",
+   "lat": -33.7946422,
+   "lng": 151.1862648,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.7946422,151.1862648",
+   "source": "osm"
+  },
+  {
+   "nom": "Ajmer's Indian Restaurant",
+   "lat": -33.7944748,
+   "lng": 151.264526,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.7944748,151.264526",
+   "source": "osm"
+  },
+  {
+   "nom": "Rashmin Indian Nepalese Restaurant",
+   "lat": -33.7850647,
+   "lng": 151.1773984,
+   "type": "indian, nepalese",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-33.7850647,151.1773984",
+   "source": "osm"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "The Sebel Sydney Martin Place",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8685126,151.210951",
+   "lat": -33.8685126,
+   "lng": 151.210951,
+   "halalFriendly": false,
+   "bookingUrl": "https://all.accor.com/hotel/B980/index.en.shtml?goto=fiche_hotel&code_hotel=B980",
+   "source": "osm"
+  },
+  {
+   "nom": "The Fullerton Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.867868,151.2077229",
+   "lat": -33.867868,
+   "lng": 151.2077229,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.fullertonhotels.com/fullerton-hotel-sydney",
+   "source": "osm"
+  },
+  {
+   "nom": "St James Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8711323,151.2096112",
+   "lat": -33.8711323,
+   "lng": 151.2096112,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8711323,151.2096112",
+   "source": "osm"
+  },
+  {
+   "nom": "QT Sydney",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8709373,151.2076595",
+   "lat": -33.8709373,
+   "lng": 151.2076595,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.qtsydney.com.au",
+   "source": "osm"
+  },
+  {
+   "nom": "Swissotel Sydney",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8707364,151.2072969",
+   "lat": -33.8707364,
+   "lng": 151.2072969,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8707364,151.2072969",
+   "source": "osm"
+  },
+  {
+   "nom": "Sheraton on the Park",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8717322,151.2099196",
+   "lat": -33.8717322,
+   "lng": 151.2099196,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8717322,151.2099196",
+   "source": "osm"
+  },
+  {
+   "nom": "Megaboom Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8698792,151.205942",
+   "lat": -33.8698792,
+   "lng": 151.205942,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8698792,151.205942",
+   "source": "osm"
+  },
+  {
+   "nom": "Grace Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8689862,151.2056756",
+   "lat": -33.8689862,
+   "lng": 151.2056756,
+   "halalFriendly": false,
+   "bookingUrl": "https://gracehotel.com.au/",
+   "source": "osm"
+  },
+  {
+   "nom": "Hilton Sydney",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 5,
+   "mapsUrl": "https://maps.google.com/?q=-33.8718174,151.2076057",
+   "lat": -33.8718174,
+   "lng": 151.2076057,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.hilton.com/en/hotels/sydhitw-hilton-sydney/",
+   "source": "osm"
+  },
+  {
+   "nom": "The Tank Stream Sydney",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.865408,151.208539",
+   "lat": -33.865408,
+   "lng": 151.208539,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.865408,151.208539",
+   "source": "osm"
+  },
+  {
+   "nom": "Radisson Plaza Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8653574,151.2090082",
+   "lat": -33.8653574,
+   "lng": 151.2090082,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8653574,151.2090082",
+   "source": "osm"
+  },
+  {
+   "nom": "Sofitel Wentworth Sydney",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8655042,151.2110194",
+   "lat": -33.8655042,
+   "lng": 151.2110194,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8655042,151.2110194",
+   "source": "osm"
+  },
+  {
+   "nom": "SKYE Suites",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 5,
+   "mapsUrl": "https://maps.google.com/?q=-33.8683284,151.2048612",
+   "lat": -33.8683284,
+   "lng": 151.2048612,
+   "halalFriendly": false,
+   "bookingUrl": "https://skyesydney.com.au",
+   "source": "osm"
+  },
+  {
+   "nom": "Adina Grand",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8653336,151.207557",
+   "lat": -33.8653336,
+   "lng": 151.207557,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8653336,151.207557",
+   "source": "osm"
+  },
+  {
+   "nom": "Castlereagh Boutique Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8725877,151.2091176",
+   "lat": -33.8725877,
+   "lng": 151.2091176,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.thecastlereagh.com.au/",
+   "source": "osm"
+  },
+  {
+   "nom": "Yehs Hotel Sydney QVB",
+   "categorie": "Hôtel",
+   "priceRange": "€€€",
+   "score": 3,
+   "mapsUrl": "https://maps.google.com/?q=-33.8724279,151.2063351",
+   "lat": -33.8724279,
+   "lng": 151.2063351,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8724279,151.2063351",
+   "source": "osm"
+  },
+  {
+   "nom": "Park Regis City Centre",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8733569,151.2087238",
+   "lat": -33.8733569,
+   "lng": 151.2087238,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.parkregiscitycentre.com.au/",
+   "source": "osm"
+  },
+  {
+   "nom": "Mantra Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8644033,151.2076711",
+   "lat": -33.8644033,
+   "lng": 151.2076711,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8644033,151.2076711",
+   "source": "osm"
+  },
+  {
+   "nom": "Siesta Sydney",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8670538,151.204091",
+   "lat": -33.8670538,
+   "lng": 151.204091,
+   "halalFriendly": false,
+   "bookingUrl": "https://siestasydney.com.au/",
+   "source": "osm"
+  },
+  {
+   "nom": "Little National Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8656847,151.2050555",
+   "lat": -33.8656847,
+   "lng": 151.2050555,
+   "halalFriendly": false,
+   "bookingUrl": "https://littlenationalhotel.com.au/sydney/",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Coronation",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8733733,151.2076744",
+   "lat": -33.8733733,
+   "lng": 151.2076744,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8733733,151.2076744",
+   "source": "osm"
+  },
+  {
+   "nom": "Mantra on Kent",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8717102,151.2046929",
+   "lat": -33.8717102,
+   "lng": 151.2046929,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.mantraonkent.com.au/",
+   "source": "osm"
+  },
+  {
+   "nom": "Amora Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.864499,151.2063897",
+   "lat": -33.864499,
+   "lng": 151.2063897,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.864499,151.2063897",
+   "source": "osm"
+  },
+  {
+   "nom": "Hyatt Regency Sydney",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8699034,151.203263",
+   "lat": -33.8699034,
+   "lng": 151.203263,
+   "halalFriendly": false,
+   "bookingUrl": "https://sydney.regency.hyatt.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Novotel Sydney City Centre",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8648204,151.2053697",
+   "lat": -33.8648204,
+   "lng": 151.2053697,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8648204,151.2053697",
+   "source": "osm"
+  },
+  {
+   "nom": "West Hotel Sydney, Curio Collection by Hilton",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 4.5,
+   "mapsUrl": "https://maps.google.com/?q=-33.8675536,151.2032107",
+   "lat": -33.8675536,
+   "lng": 151.2032107,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8675536,151.2032107",
+   "source": "osm"
+  },
+  {
+   "nom": "Meriton Suites Pitt Street",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8742248,151.2077232",
+   "lat": -33.8742248,
+   "lng": 151.2077232,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8742248,151.2077232",
+   "source": "osm"
+  },
+  {
+   "nom": "Adina Apartment Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8686369,151.2025267",
+   "lat": -33.8686369,
+   "lng": 151.2025267,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.adinahotels.com/hotel/sydney-darling-harbour/",
+   "source": "osm"
+  },
+  {
+   "nom": "Base Backpackers Sydney",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8731671,151.2050059",
+   "lat": -33.8731671,
+   "lng": 151.2050059,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.stayatbase.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "YEHS Hotel Sydney Harbour Suites",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8726729,151.2042159",
+   "lat": -33.8726729,
+   "lng": 151.2042159,
+   "halalFriendly": false,
+   "bookingUrl": "https://sydneyhotelharboursuites.com.au",
+   "source": "osm"
+  },
+  {
+   "nom": "Ibis King Street Wharf",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8666781,151.2027529",
+   "lat": -33.8666781,
+   "lng": 151.2027529,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.accorhotels.com/gb/hotel-6412-ibis-sydney-king-street-wharf/index.shtml",
+   "source": "osm"
+  },
+  {
+   "nom": "Sydney Harbour Marriott Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8628693,151.2093763",
+   "lat": -33.8628693,
+   "lng": 151.2093763,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.marriott.com/hotels/travel/sydmc-sydney-harbour-marriott-hotel-at-circular-quay/",
+   "source": "osm"
+  },
+  {
+   "nom": "Napoleon on Kent",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8646502,151.2038003",
+   "lat": -33.8646502,
+   "lng": 151.2038003,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8646502,151.2038003",
+   "source": "osm"
+  },
+  {
+   "nom": "InterContinental Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8629399,151.2124103",
+   "lat": -33.8629399,
+   "lng": 151.2124103,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8629399,151.2124103",
+   "source": "osm"
+  },
+  {
+   "nom": "Crowne Plaza Sydney Darling Harbour",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8738342,151.2044664",
+   "lat": -33.8738342,
+   "lng": 151.2044664,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.ihg.com/crowneplaza/hotels/us/en/sydney/sydsh/hoteldetail",
+   "source": "osm"
+  },
+  {
+   "nom": "Belvedere Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8743876,151.2054368",
+   "lat": -33.8743876,
+   "lng": 151.2054368,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8743876,151.2054368",
+   "source": "osm"
+  },
+  {
+   "nom": "Kimpton Margot Sydney",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8751735,151.2077432",
+   "lat": -33.8751735,
+   "lng": 151.2077432,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.ihg.com/kimptonhotels/hotels/us/en/kimpton-hotel-sydney-australia/sydkm/hoteldetail",
+   "source": "osm"
+  },
+  {
+   "nom": "The Pacific House",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8715107,151.2167325",
+   "lat": -33.8715107,
+   "lng": 151.2167325,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.thepacifichouse.com",
+   "source": "osm"
+  },
+  {
+   "nom": "ParkRoyal Darling Harbour Sydney",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8736004,151.2035672",
+   "lat": -33.8736004,
+   "lng": 151.2035672,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.parkroyalhotels.com/en/hotels-resorts/australia/darling-harbour-sydney.html",
+   "source": "osm"
+  },
+  {
+   "nom": "Sydney Backpackers",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8753796,151.2073131",
+   "lat": -33.8753796,
+   "lng": 151.2073131,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8753796,151.2073131",
+   "source": "osm"
+  },
+  {
+   "nom": "Fraser Suites",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8748387,151.2054872",
+   "lat": -33.8748387,
+   "lng": 151.2054872,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8748387,151.2054872",
+   "source": "osm"
+  },
+  {
+   "nom": "Four Seasons Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 5,
+   "mapsUrl": "https://maps.google.com/?q=-33.8616794,151.207658",
+   "lat": -33.8616794,
+   "lng": 151.207658,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.fourseasons.com/sydney/",
+   "source": "osm"
+  },
+  {
+   "nom": "Hyde Park Inn",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8760735,151.2093046",
+   "lat": -33.8760735,
+   "lng": 151.2093046,
+   "halalFriendly": false,
+   "bookingUrl": "https://hydeparkinn.com.au/",
+   "source": "osm"
+  },
+  {
+   "nom": "Regency Hyde Park",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.876223,151.209307",
+   "lat": -33.876223,
+   "lng": 151.209307,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.876223,151.209307",
+   "source": "osm"
+  },
+  {
+   "nom": "W Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8734056,151.2021027",
+   "lat": -33.8734056,
+   "lng": 151.2021027,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.marriott.com/en-us/hotels/sydwh-w-sydney/overview/",
+   "source": "osm"
+  },
+  {
+   "nom": "Vibe Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8752065,151.204176",
+   "lat": -33.8752065,
+   "lng": 151.204176,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8752065,151.204176",
+   "source": "osm"
+  },
+  {
+   "nom": "Shangri-La Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8612947,151.2065754",
+   "lat": -33.8612947,
+   "lng": 151.2065754,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8612947,151.2065754",
+   "source": "osm"
+  },
+  {
+   "nom": "Pullman Sydney Hyde Park",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8761891,151.2124868",
+   "lat": -33.8761891,
+   "lng": 151.2124868,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.pullmansydneyhydepark.com.au/",
+   "source": "osm"
+  },
+  {
+   "nom": "World Square Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8763231,151.2065564",
+   "lat": -33.8763231,
+   "lng": 151.2065564,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8763231,151.2065564",
+   "source": "osm"
+  },
+  {
+   "nom": "East Hyde Park Backpackers",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8731968,151.2172041",
+   "lat": -33.8731968,
+   "lng": 151.2172041,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8731968,151.2172041",
+   "source": "osm"
+  },
+  {
+   "nom": "City resort hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8732168,151.2173192",
+   "lat": -33.8732168,
+   "lng": 151.2173192,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8732168,151.2173192",
+   "source": "osm"
+  },
+  {
+   "nom": "The Sydney Boulvevard Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 4,
+   "mapsUrl": "https://maps.google.com/?q=-33.8740369,151.2166129",
+   "lat": -33.8740369,
+   "lng": 151.2166129,
+   "halalFriendly": false,
+   "bookingUrl": "https://sydneyboulevard.com.au/",
+   "source": "osm"
+  },
+  {
+   "nom": "YEHS Hotel CBD",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8758935,151.2047832",
+   "lat": -33.8758935,
+   "lng": 151.2047832,
+   "halalFriendly": false,
+   "bookingUrl": "https://yehshotel.com.au/sydneycbd/",
+   "source": "osm"
+  },
+  {
+   "nom": "Rydges World Square",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8767065,151.2073638",
+   "lat": -33.8767065,
+   "lng": 151.2073638,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8767065,151.2073638",
+   "source": "osm"
+  },
+  {
+   "nom": "Rydges Darling Square",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8760618,151.2048386",
+   "lat": -33.8760618,
+   "lng": 151.2048386,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8760618,151.2048386",
+   "source": "osm"
+  },
+  {
+   "nom": "Oakes Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8765855,151.2124197",
+   "lat": -33.8765855,
+   "lng": 151.2124197,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.oakshotels.com/en/oaks-hyde-park-plaza",
+   "source": "osm"
+  },
+  {
+   "nom": "Rydges",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8771528,151.2075498",
+   "lat": -33.8771528,
+   "lng": 151.2075498,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8771528,151.2075498",
+   "source": "osm"
+  },
+  {
+   "nom": "Pullman Quay Grand Sydney",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8608518,151.2129269",
+   "lat": -33.8608518,
+   "lng": 151.2129269,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.accorhotels.com/gb/hotel-8779-pullman-quay-grand-sydney-harbour/index.shtml",
+   "source": "osm"
+  },
+  {
+   "nom": "Song Hotel Sydney",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8773313,151.2116286",
+   "lat": -33.8773313,
+   "lng": 151.2116286,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.songhotels.com.au/",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Ibis Sydney World Square",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.877589,151.2077378",
+   "lat": -33.877589,
+   "lng": 151.2077378,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.ibissydneyworldsquare.com.au/",
+   "source": "osm"
+  },
+  {
+   "nom": "Sydney Harbour YHA",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.860079,151.2071014",
+   "lat": -33.860079,
+   "lng": 151.2071014,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.yha.com.au/hostels/nsw/sydney-surrounds/sydney-harbour/",
+   "source": "osm"
+  },
+  {
+   "nom": "Ovolo Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8689519,151.2202911",
+   "lat": -33.8689519,
+   "lng": 151.2202911,
+   "halalFriendly": false,
+   "bookingUrl": "https://ovolohotels.com/ovolo/woolloomooloo/",
+   "source": "osm"
+  },
+  {
+   "nom": "Harbour Rocks Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 5,
+   "mapsUrl": "https://maps.google.com/?q=-33.8596472,151.2081453",
+   "lat": -33.8596472,
+   "lng": 151.2081453,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.harbourrocks.com.au/",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Stellar",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8777654,151.2119392",
+   "lat": -33.8777654,
+   "lng": 151.2119392,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8777654,151.2119392",
+   "source": "osm"
+  },
+  {
+   "nom": "Australian Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8597,151.2070428",
+   "lat": -33.8597,
+   "lng": 151.2070428,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8597,151.2070428",
+   "source": "osm"
+  },
+  {
+   "nom": "Crown Sydney Hotel Resort",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8624169,151.2010549",
+   "lat": -33.8624169,
+   "lng": 151.2010549,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.crownhotels.com.au/sydney/crown-towers",
+   "source": "osm"
+  },
+  {
+   "nom": "Prime Accommodation CBD",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8771136,151.2040154",
+   "lat": -33.8771136,
+   "lng": 151.2040154,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8771136,151.2040154",
+   "source": "osm"
+  },
+  {
+   "nom": "ibis Styles Central Sydney",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8782635,151.2108765",
+   "lat": -33.8782635,
+   "lng": 151.2108765,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8782635,151.2108765",
+   "source": "osm"
+  },
+  {
+   "nom": "Nate's Place Backpackers",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8748046,151.2182737",
+   "lat": -33.8748046,
+   "lng": 151.2182737,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8748046,151.2182737",
+   "source": "osm"
+  },
+  {
+   "nom": "Tequila Sunrise",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.877844,151.2053976",
+   "lat": -33.877844,
+   "lng": 151.2053976,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.877844,151.2053976",
+   "source": "osm"
+  },
+  {
+   "nom": "The Langham Sydney",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8605022,151.2034595",
+   "lat": -33.8605022,
+   "lng": 151.2034595,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.langhamhotels.com/en/the-langham/sydney/",
+   "source": "osm"
+  },
+  {
+   "nom": "Sofitel Sydney Darling Harbour",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8726892,151.1986261",
+   "lat": -33.8726892,
+   "lng": 151.1986261,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.sofitelsydneydarlingharbour.com.au/",
+   "source": "osm"
+  },
+  {
+   "nom": "Ibis Sydney Darling Harbour",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8710866,151.1979692",
+   "lat": -33.8710866,
+   "lng": 151.1979692,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.ibis.com/gb/hotel-1757-ibis-sydney-darling-harbour/index.shtml",
+   "source": "osm"
+  },
+  {
+   "nom": "CB Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.878345,151.2071584",
+   "lat": -33.878345,
+   "lng": 151.2071584,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.878345,151.2071584",
+   "source": "osm"
+  },
+  {
+   "nom": "Aiden by Best Western",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8702838,151.1976086",
+   "lat": -33.8702838,
+   "lng": 151.1976086,
+   "halalFriendly": false,
+   "bookingUrl": "https://aidendarlingharbour.com.au",
+   "source": "osm"
+  },
+  {
+   "nom": "Summer House Backpackers",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8742038,151.2191759",
+   "lat": -33.8742038,
+   "lng": 151.2191759,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.summerhousebackpackers.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Maze Backpackers",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8784755,151.2071585",
+   "lat": -33.8784755,
+   "lng": 151.2071585,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8784755,151.2071585",
+   "source": "osm"
+  },
+  {
+   "nom": "Harry's",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8785321,151.2113105",
+   "lat": -33.8785321,
+   "lng": 151.2113105,
+   "halalFriendly": false,
+   "bookingUrl": "https://hotelharry.com.au/",
+   "source": "osm"
+  },
+  {
+   "nom": "Pensione Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8782228,151.2055004",
+   "lat": -33.8782228,
+   "lng": 151.2055004,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8782228,151.2055004",
+   "source": "osm"
+  },
+  {
+   "nom": "Ace Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8788467,151.2099659",
+   "lat": -33.8788467,
+   "lng": 151.2099659,
+   "halalFriendly": false,
+   "bookingUrl": "https://acehotel.com/sydney/",
+   "source": "osm"
+  },
+  {
+   "nom": "Novotel Sydney on Darling Harbour",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8720358,151.1977762",
+   "lat": -33.8720358,
+   "lng": 151.1977762,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.novoteldarlingharbour.com.au/",
+   "source": "osm"
+  },
+  {
+   "nom": "Holiday Inn Darling Harbour",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.87779,151.2036153",
+   "lat": -33.87779,
+   "lng": 151.2036153,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.hidarlingharbour.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Novotel Rockford Darling Harbour",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8774349,151.2026932",
+   "lat": -33.8774349,
+   "lng": 151.2026932,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8774349,151.2026932",
+   "source": "osm"
+  },
+  {
+   "nom": "Zara Tower",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8790793,151.209594",
+   "lat": -33.8790793,
+   "lng": 151.209594,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8790793,151.209594",
+   "source": "osm"
+  },
+  {
+   "nom": "Nesuto",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8705001,151.2216082",
+   "lat": -33.8705001,
+   "lng": 151.2216082,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.nesuto.com/woolloomooloo",
+   "source": "osm"
+  },
+  {
+   "nom": "Veriu Central",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8792526,151.2094484",
+   "lat": -33.8792526,
+   "lng": 151.2094484,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8792526,151.2094484",
+   "source": "osm"
+  },
+  {
+   "nom": "Sydney Central Inn",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8791325,151.2073435",
+   "lat": -33.8791325,
+   "lng": 151.2073435,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8791325,151.2073435",
+   "source": "osm"
+  },
+  {
+   "nom": "Meriton Serviced Apartments Campell Street",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8790167,151.2057959",
+   "lat": -33.8790167,
+   "lng": 151.2057959,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8790167,151.2057959",
+   "source": "osm"
+  },
+  {
+   "nom": "Oaks buudal",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8794246,151.2083461",
+   "lat": -33.8794246,
+   "lng": 151.2083461,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8794246,151.2083461",
+   "source": "osm"
+  },
+  {
+   "nom": "Holiday Inn Old Sydney",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8581324,151.2087422",
+   "lat": -33.8581324,
+   "lng": 151.2087422,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.ihg.com/holidayinn/hotels/us/en/sydney/sydgs/hoteldetail",
+   "source": "osm"
+  },
+  {
+   "nom": "Mariners Court Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8707232,151.2220552",
+   "lat": -33.8707232,
+   "lng": 151.2220552,
+   "halalFriendly": false,
+   "bookingUrl": "https://marinerscourt.com.au",
+   "source": "osm"
+  },
+  {
+   "nom": "Mantra Sydney Central",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8790255,151.2051592",
+   "lat": -33.8790255,
+   "lng": 151.2051592,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8790255,151.2051592",
+   "source": "osm"
+  },
+  {
+   "nom": "Capitol Square Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.879328,151.2059154",
+   "lat": -33.879328,
+   "lng": 151.2059154,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.879328,151.2059154",
+   "source": "osm"
+  },
+  {
+   "nom": "ibis budget Sydney East",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8751475,151.2200548",
+   "lat": -33.8751475,
+   "lng": 151.2200548,
+   "halalFriendly": false,
+   "bookingUrl": "https://all.accor.com/hotel/5675/index.en.shtml",
+   "source": "osm"
+  },
+  {
+   "nom": "Goldsborough Apartment Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8738322,151.1972728",
+   "lat": -33.8738322,
+   "lng": 151.1972728,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.minorhotels.com/en/oaks/oaks-goldsbrough-apartments",
+   "source": "osm"
+  },
+  {
+   "nom": "The Wool Merchant",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8729966,151.1967551",
+   "lat": -33.8729966,
+   "lng": 151.1967551,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8729966,151.1967551",
+   "source": "osm"
+  },
+  {
+   "nom": "The Sebel Darling Harbour The Pinnacle",
+   "categorie": "Appartement",
+   "priceRange": "€€€",
+   "score": 3,
+   "mapsUrl": "https://maps.google.com/?q=-33.870499,151.1957888",
+   "lat": -33.870499,
+   "lng": 151.1957888,
+   "halalFriendly": false,
+   "bookingUrl": "https://accorvacationclub.com.au/property/the-sebel-darling-harbour-the-pinnacle",
+   "source": "osm"
+  },
+  {
+   "nom": "The Darling",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8693455,151.1955449",
+   "lat": -33.8693455,
+   "lng": 151.1955449,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8693455,151.1955449",
+   "source": "osm"
+  },
+  {
+   "nom": "Big Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8803183,151.2090757",
+   "lat": -33.8803183,
+   "lng": 151.2090757,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8803183,151.2090757",
+   "source": "osm"
+  },
+  {
+   "nom": "Spicers",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8716466,151.223032",
+   "lat": -33.8716466,
+   "lng": 151.223032,
+   "halalFriendly": false,
+   "bookingUrl": "https://spicersretreats.com/retreats/spicers-potts-point/",
+   "source": "osm"
+  },
+  {
+   "nom": "Caption By Hyatt",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8801842,151.205769",
+   "lat": -33.8801842,
+   "lng": 151.205769,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.hyatt.com/caption-by-hyatt/en-US/sydcp-caption-by-hyatt-central-sydney",
+   "source": "osm"
+  },
+  {
+   "nom": "Urban Nomad",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8721688,151.222892",
+   "lat": -33.8721688,
+   "lng": 151.222892,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8721688,151.222892",
+   "source": "osm"
+  },
+  {
+   "nom": "Holiday Inn Potts Point",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8743185,151.221904",
+   "lat": -33.8743185,
+   "lng": 151.221904,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.ihg.com/holidayinn/hotels/us/en/sydney/sydas/hoteldetail",
+   "source": "osm"
+  },
+  {
+   "nom": "Original Backpacker",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8725452,151.2228739",
+   "lat": -33.8725452,
+   "lng": 151.2228739,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8725452,151.2228739",
+   "source": "osm"
+  },
+  {
+   "nom": "Highfield",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8728293,151.2227631",
+   "lat": -33.8728293,
+   "lng": 151.2227631,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.highfieldhotel.com.au/",
+   "source": "osm"
+  },
+  {
+   "nom": "London Plane Backpackers",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8730217,151.2227381",
+   "lat": -33.8730217,
+   "lng": 151.2227381,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.londonplane.com.au/",
+   "source": "osm"
+  },
+  {
+   "nom": "ADGE Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.880269,151.2139552",
+   "lat": -33.880269,
+   "lng": 151.2139552,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.880269,151.2139552",
+   "source": "osm"
+  },
+  {
+   "nom": "Astral Tower",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8679091,151.1947412",
+   "lat": -33.8679091,
+   "lng": 151.1947412,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8679091,151.1947412",
+   "source": "osm"
+  },
+  {
+   "nom": "Harbour View Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8567424,151.207364",
+   "lat": -33.8567424,
+   "lng": 151.207364,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8567424,151.207364",
+   "source": "osm"
+  },
+  {
+   "nom": "Home Backpackers",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8810553,151.2088955",
+   "lat": -33.8810553,
+   "lng": 151.2088955,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8810553,151.2088955",
+   "source": "osm"
+  },
+  {
+   "nom": "Sydney City Hostels",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.880463,151.204631",
+   "lat": -33.880463,
+   "lng": 151.204631,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.880463,151.204631",
+   "source": "osm"
+  },
+  {
+   "nom": "Sydney Potts Point Central Apartment Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8732821,151.2232267",
+   "lat": -33.8732821,
+   "lng": 151.2232267,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.sydneypottspointcentral.com.au/",
+   "source": "osm"
+  },
+  {
+   "nom": "Budget Accomodation",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8807541,151.2046902",
+   "lat": -33.8807541,
+   "lng": 151.2046902,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8807541,151.2046902",
+   "source": "osm"
+  },
+  {
+   "nom": "No.9 Springfield",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8729731,151.2235714",
+   "lat": -33.8729731,
+   "lng": 151.2235714,
+   "halalFriendly": false,
+   "bookingUrl": "https://9springfield.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Kirkton Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8768324,151.2209656",
+   "lat": -33.8768324,
+   "lng": 151.2209656,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-33.8768324,151.2209656",
+   "source": "osm"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "Redfern Mosque",
+   "lat": -33.8903628,
+   "lng": 151.2094765,
+   "coordonnees": {
+    "lat": -33.8903628,
+    "lng": 151.2094765
+   },
+   "mapsUrl": "https://maps.google.com/?q=-33.8903628,151.2094765",
+   "source": "osm"
+  },
+  {
+   "nom": "Islamic Society of UNSW",
+   "lat": -33.9163195,
+   "lng": 151.2261814,
+   "coordonnees": {
+    "lat": -33.9163195,
+    "lng": 151.2261814
+   },
+   "adresse": "Anzac Parade",
+   "mapsUrl": "https://maps.google.com/?q=-33.9163195,151.2261814",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Hijrah Mosque",
+   "lat": -33.9254371,
+   "lng": 151.159321,
+   "coordonnees": {
+    "lat": -33.9254371,
+    "lng": 151.159321
+   },
+   "adresse": "Station Street",
+   "mapsUrl": "https://maps.google.com/?q=-33.9254371,151.159321",
+   "source": "osm"
+  },
+  {
+   "nom": "St Thomas War Memorial Church",
+   "lat": -33.942723,
+   "lng": 151.1007629,
+   "coordonnees": {
+    "lat": -33.942723,
+    "lng": 151.1007629
+   },
+   "adresse": "Morgan Street",
+   "mapsUrl": "https://maps.google.com/?q=-33.942723,151.1007629",
+   "source": "osm"
+  },
+  {
+   "nom": "Dee Why Mosque",
+   "lat": -33.7435703,
+   "lng": 151.293536,
+   "coordonnees": {
+    "lat": -33.7435703,
+    "lng": 151.293536
+   },
+   "adresse": "South Creek Road",
+   "mapsUrl": "https://maps.google.com/?q=-33.7435703,151.293536",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Amanah",
+   "lat": -33.9164673,
+   "lng": 151.0282113,
+   "coordonnees": {
+    "lat": -33.9164673,
+    "lng": 151.0282113
+   },
+   "mapsUrl": "https://maps.google.com/?q=-33.9164673,151.0282113",
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "A Human Scale",
+   "lat": -33.8682713,
+   "lng": 151.2088275,
+   "coordonnees": {
+    "lat": -33.8682713,
+    "lng": 151.2088275
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-33.8682713,151.2088275",
+   "source": "osm"
+  },
+  {
+   "nom": "Continuum",
+   "lat": -33.8679822,
+   "lng": 151.2100378,
+   "coordonnees": {
+    "lat": -33.8679822,
+    "lng": 151.2100378
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-33.8679822,151.2100378",
+   "source": "osm"
+  },
+  {
+   "nom": "The Cenotaph War Memorial",
+   "lat": -33.8674933,
+   "lng": 151.2077773,
+   "coordonnees": {
+    "lat": -33.8674933,
+    "lng": 151.2077773
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-33.8674933,151.2077773",
+   "source": "osm"
+  },
+  {
+   "nom": "Four Continents",
+   "lat": -33.8669977,
+   "lng": 151.2101435,
+   "coordonnees": {
+    "lat": -33.8669977,
+    "lng": 151.2101435
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-33.8669977,151.2101435",
+   "source": "osm"
+  },
+  {
+   "nom": "James Martin",
+   "lat": -33.8678266,
+   "lng": 151.2114169,
+   "coordonnees": {
+    "lat": -33.8678266,
+    "lng": 151.2114169
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-33.8678266,151.2114169",
+   "source": "osm"
+  },
+  {
+   "nom": "Queen Victoria",
+   "lat": -33.8696848,
+   "lng": 151.2117984,
+   "coordonnees": {
+    "lat": -33.8696848,
+    "lng": 151.2117984
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-33.8696848,151.2117984",
+   "source": "osm"
+  },
+  {
+   "nom": "Youngsters",
+   "lat": -33.8676052,
+   "lng": 151.2066329,
+   "coordonnees": {
+    "lat": -33.8676052,
+    "lng": 151.2066329
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-33.8676052,151.2066329",
+   "source": "osm"
+  },
+  {
+   "nom": "Museum of Illusions",
+   "lat": -33.8703881,
+   "lng": 151.2068102,
+   "coordonnees": {
+    "lat": -33.8703881,
+    "lng": 151.2068102
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-33.8703881,151.2068102",
+   "source": "osm"
+  },
+  {
+   "nom": "Il Porcellino",
+   "lat": -33.8678891,
+   "lng": 151.2124419,
+   "coordonnees": {
+    "lat": -33.8678891,
+    "lng": 151.2124419
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-33.8678891,151.2124419",
+   "source": "osm"
+  },
+  {
+   "nom": "Ben Chifley",
+   "lat": -33.8662053,
+   "lng": 151.2110618,
+   "coordonnees": {
+    "lat": -33.8662053,
+    "lng": 151.2110618
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-33.8662053,151.2110618",
+   "source": "osm"
+  },
+  {
+   "nom": "William Bede Dalley P.C.",
+   "lat": -33.8703877,
+   "lng": 151.2123658,
+   "coordonnees": {
+    "lat": -33.8703877,
+    "lng": 151.2123658
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-33.8703877,151.2123658",
+   "source": "osm"
+  },
+  {
+   "nom": "Peace Waratah",
+   "lat": -33.8662822,
+   "lng": 151.2069568,
+   "coordonnees": {
+    "lat": -33.8662822,
+    "lng": 151.2069568
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-33.8662822,151.2069568",
+   "source": "osm"
+  },
+  {
+   "nom": "Corner Pavilions",
+   "lat": -33.8693767,
+   "lng": 151.2133364,
+   "coordonnees": {
+    "lat": -33.8693767,
+    "lng": 151.2133364
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-33.8693767,151.2133364",
+   "source": "osm"
+  },
+  {
+   "nom": "Female School of Industry",
+   "lat": -33.8665233,
+   "lng": 151.2125749,
+   "coordonnees": {
+    "lat": -33.8665233,
+    "lng": 151.2125749
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-33.8665233,151.2125749",
+   "source": "osm"
+  },
+  {
+   "nom": "Song of the Magpie Dawn",
+   "lat": -33.8722015,
+   "lng": 151.2080364,
+   "coordonnees": {
+    "lat": -33.8722015,
+    "lng": 151.2080364
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-33.8722015,151.2080364",
+   "source": "osm"
+  },
+  {
+   "nom": "Queen Victoria Building",
+   "lat": -33.8717101,
+   "lng": 151.2068055,
+   "coordonnees": {
+    "lat": -33.8717101,
+    "lng": 151.2068055
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-33.8717101,151.2068055",
+   "source": "osm"
+  },
+  {
+   "nom": "The Tank Stream",
+   "lat": -33.865196,
+   "lng": 151.2084195,
+   "coordonnees": {
+    "lat": -33.865196,
+    "lng": 151.2084195
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-33.865196,151.2084195",
+   "source": "osm"
+  },
+  {
+   "nom": "Wool Merchants",
+   "lat": -33.8686788,
+   "lng": 151.2047015,
+   "coordonnees": {
+    "lat": -33.8686788,
+    "lng": 151.2047015
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-33.8686788,151.2047015",
+   "source": "osm"
+  },
+  {
+   "nom": "Cathedral Church of Mary Help of Christians",
+   "lat": -33.87077,
+   "lng": 151.2132563,
+   "coordonnees": {
+    "lat": -33.87077,
+    "lng": 151.2132563
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-33.87077,151.2132563",
+   "source": "osm"
+  },
+  {
+   "nom": "The Underneath",
+   "lat": -33.8727212,
+   "lng": 151.2087941,
+   "coordonnees": {
+    "lat": -33.8727212,
+    "lng": 151.2087941
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-33.8727212,151.2087941",
+   "source": "osm"
+  },
+  {
+   "nom": "Day In, Day Out",
+   "lat": -33.8647337,
+   "lng": 151.2108073,
+   "coordonnees": {
+    "lat": -33.8647337,
+    "lng": 151.2108073
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-33.8647337,151.2108073",
+   "source": "osm"
+  },
+  {
+   "nom": "Interloop",
+   "lat": -33.8659223,
+   "lng": 151.2055188,
+   "coordonnees": {
+    "lat": -33.8659223,
+    "lng": 151.2055188
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-33.8659223,151.2055188",
+   "source": "osm"
+  },
+  {
+   "nom": "Touchstone",
+   "lat": -33.8651447,
+   "lng": 151.2120446,
+   "coordonnees": {
+    "lat": -33.8651447,
+    "lng": 151.2120446
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-33.8651447,151.2120446",
+   "source": "osm"
+  },
+  {
+   "nom": "Queen Victoria Building Bicentennial Plaza",
+   "lat": -33.8726111,
+   "lng": 151.2067573,
+   "coordonnees": {
+    "lat": -33.8726111,
+    "lng": 151.2067573
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-33.8726111,151.2067573",
+   "source": "osm"
+  },
+  {
+   "nom": "Opal Museum",
+   "lat": -33.8643176,
+   "lng": 151.2089738,
+   "coordonnees": {
+    "lat": -33.8643176,
+    "lng": 151.2089738
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=-33.8643176,151.2089738",
+   "source": "osm"
+  },
+  {
+   "nom": "To the Horses, WW1, Sinai Desert & Palestine",
+   "lat": -33.8654318,
+   "lng": 151.2129594,
+   "coordonnees": {
+    "lat": -33.8654318,
+    "lng": 151.2129594
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-33.8654318,151.2129594",
+   "source": "osm"
+  },
+  {
+   "nom": "Burns 1759-1796",
+   "lat": -33.8696453,
+   "lng": 151.2148479,
+   "coordonnees": {
+    "lat": -33.8696453,
+    "lng": 151.2148479
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-33.8696453,151.2148479",
+   "source": "osm"
+  },
+  {
+   "nom": "Gaffa",
+   "lat": -33.8723967,
+   "lng": 151.2055579,
+   "coordonnees": {
+    "lat": -33.8723967,
+    "lng": 151.2055579
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=-33.8723967,151.2055579",
+   "source": "osm"
+  },
+  {
+   "nom": "King George VI",
+   "lat": -33.8732302,
+   "lng": 151.2117255,
+   "coordonnees": {
+    "lat": -33.8732302,
+    "lng": 151.2117255
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-33.8732302,151.2117255",
+   "source": "osm"
+  },
+  {
+   "nom": "Sister Lenore Sharry",
+   "lat": -33.8722027,
+   "lng": 151.2137432,
+   "coordonnees": {
+    "lat": -33.8722027,
+    "lng": 151.2137432
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-33.8722027,151.2137432",
+   "source": "osm"
+  },
+  {
+   "nom": "Bird Totem",
+   "lat": -33.8640279,
+   "lng": 151.2071059,
+   "coordonnees": {
+    "lat": -33.8640279,
+    "lng": 151.2071059
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-33.8640279,151.2071059",
+   "source": "osm"
+  },
+  {
+   "nom": "Anchor Sculpture",
+   "lat": -33.8735491,
+   "lng": 151.2065889,
+   "coordonnees": {
+    "lat": -33.8735491,
+    "lng": 151.2065889
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-33.8735491,151.2065889",
+   "source": "osm"
+  },
+  {
+   "nom": "Memorial Garden to Pioneers",
+   "lat": -33.865006,
+   "lng": 151.2138106,
+   "coordonnees": {
+    "lat": -33.865006,
+    "lng": 151.2138106
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-33.865006,151.2138106",
+   "source": "osm"
+  },
+  {
+   "nom": "Thomas Sutcliffe Mort",
+   "lat": -33.8634169,
+   "lng": 151.2097613,
+   "coordonnees": {
+    "lat": -33.8634169,
+    "lng": 151.2097613
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-33.8634169,151.2097613",
+   "source": "osm"
+  },
+  {
+   "nom": "Captain Arthur Phillip R.N.",
+   "lat": -33.863635,
+   "lng": 151.2114618,
+   "coordonnees": {
+    "lat": -33.863635,
+    "lng": 151.2114618
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-33.863635,151.2114618",
+   "source": "osm"
+  },
+  {
+   "nom": "Sylvia Chase Square",
+   "lat": -33.8719109,
+   "lng": 151.2149171,
+   "coordonnees": {
+    "lat": -33.8719109,
+    "lng": 151.2149171
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=-33.8719109,151.2149171",
+   "source": "osm"
+  },
+  {
+   "nom": "National Council of Women NSW",
+   "lat": -33.8679671,
+   "lng": 151.2160224,
+   "coordonnees": {
+    "lat": -33.8679671,
+    "lng": 151.2160224
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-33.8679671,151.2160224",
+   "source": "osm"
+  },
+  {
+   "nom": "Wynyard Walk",
+   "lat": -33.8652637,
+   "lng": 151.2038241,
+   "coordonnees": {
+    "lat": -33.8652637,
+    "lng": 151.2038241
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-33.8652637,151.2038241",
+   "source": "osm"
+  },
+  {
+   "nom": "Captain Cook",
+   "lat": -33.8742025,
+   "lng": 151.2119369,
+   "coordonnees": {
+    "lat": -33.8742025,
+    "lng": 151.2119369
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-33.8742025,151.2119369",
+   "source": "osm"
+  },
+  {
+   "nom": "Sydney is on land of the Gadigal people of the Eora Nation",
+   "lat": -33.8736222,
+   "lng": 151.2132876,
+   "coordonnees": {
+    "lat": -33.8736222,
+    "lng": 151.2132876
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-33.8736222,151.2132876",
+   "source": "osm"
+  },
+  {
+   "nom": "The Calyx",
+   "lat": -33.8657856,
+   "lng": 151.2153457,
+   "coordonnees": {
+    "lat": -33.8657856,
+    "lng": 151.2153457
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-33.8657856,151.2153457",
+   "source": "osm"
+  },
+  {
+   "nom": "Hyde Park Obelisk",
+   "lat": -33.8746704,
+   "lng": 151.2098544,
+   "coordonnees": {
+    "lat": -33.8746704,
+    "lng": 151.2098544
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-33.8746704,151.2098544",
+   "source": "osm"
+  },
+  {
+   "nom": "Underwood Ark",
+   "lat": -33.8629584,
+   "lng": 151.2081714,
+   "coordonnees": {
+    "lat": -33.8629584,
+    "lng": 151.2081714
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-33.8629584,151.2081714",
+   "source": "osm"
+  },
+  {
+   "nom": "Betūŋigo",
+   "lat": -33.8628922,
+   "lng": 151.2106423,
+   "coordonnees": {
+    "lat": -33.8628922,
+    "lng": 151.2106423
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-33.8628922,151.2106423",
+   "source": "osm"
+  },
+  {
+   "nom": "Savoyard Sweep Boy",
+   "lat": -33.8647377,
+   "lng": 151.2147882,
+   "coordonnees": {
+    "lat": -33.8647377,
+    "lng": 151.2147882
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-33.8647377,151.2147882",
+   "source": "osm"
+  },
+  {
+   "nom": "Boston’s Windmill",
+   "lat": -33.8640646,
+   "lng": 151.2141228,
+   "coordonnees": {
+    "lat": -33.8640646,
+    "lng": 151.2141228
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-33.8640646,151.2141228",
+   "source": "osm"
+  },
+  {
+   "nom": "The Offerings of War",
+   "lat": -33.8687598,
+   "lng": 151.2167881,
+   "coordonnees": {
+    "lat": -33.8687598,
+    "lng": 151.2167881
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-33.8687598,151.2167881",
+   "source": "osm"
+  },
+  {
+   "nom": "Earth Mother Play Sculpture",
+   "lat": -33.87287,
+   "lng": 151.2152187,
+   "coordonnees": {
+    "lat": -33.87287,
+    "lng": 151.2152187
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-33.87287,151.2152187",
+   "source": "osm"
+  },
+  {
+   "nom": "Madame Tussauds Sydney",
+   "lat": -33.8697254,
+   "lng": 151.2016549,
+   "coordonnees": {
+    "lat": -33.8697254,
+    "lng": 151.2016549
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=-33.8697254,151.2016549",
+   "source": "osm"
+  },
+  {
+   "nom": "Autumn",
+   "lat": -33.8662282,
+   "lng": 151.2163824,
+   "coordonnees": {
+    "lat": -33.8662282,
+    "lng": 151.2163824
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-33.8662282,151.2163824",
+   "source": "osm"
+  },
+  {
+   "nom": "King Edward VII",
+   "lat": -33.8632374,
+   "lng": 151.2131581,
+   "coordonnees": {
+    "lat": -33.8632374,
+    "lng": 151.2131581
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-33.8632374,151.2131581",
+   "source": "osm"
+  },
+  {
+   "nom": "Mermer Waiskeder: Stories of the Moving Tide",
+   "lat": -33.8652391,
+   "lng": 151.2028316,
+   "coordonnees": {
+    "lat": -33.8652391,
+    "lng": 151.2028316
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-33.8652391,151.2028316",
+   "source": "osm"
+  },
+  {
+   "nom": "Patchwork of Light",
+   "lat": -33.8621363,
+   "lng": 151.2095139,
+   "coordonnees": {
+    "lat": -33.8621363,
+    "lng": 151.2095139
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-33.8621363,151.2095139",
+   "source": "osm"
+  },
+  {
+   "nom": "In Memory of David Greenberg Block AC",
+   "lat": -33.8679289,
+   "lng": 151.2173402,
+   "coordonnees": {
+    "lat": -33.8679289,
+    "lng": 151.2173402
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-33.8679289,151.2173402",
+   "source": "osm"
+  },
+  {
+   "nom": "Celebrating the Centuries",
+   "lat": -33.865005,
+   "lng": 151.2161208,
+   "coordonnees": {
+    "lat": -33.865005,
+    "lng": 151.2161208
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-33.865005,151.2161208",
+   "source": "osm"
+  },
+  {
+   "nom": "Almost Once",
+   "lat": -33.8696909,
+   "lng": 151.2175375,
+   "coordonnees": {
+    "lat": -33.8696909,
+    "lng": 151.2175375
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-33.8696909,151.2175375",
+   "source": "osm"
+  },
+  {
+   "nom": "Customs House",
+   "lat": -33.862012,
+   "lng": 151.2110316,
+   "coordonnees": {
+    "lat": -33.862012,
+    "lng": 151.2110316
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-33.862012,151.2110316",
+   "source": "osm"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30",
+ "description_en": "Sydney, in Australia, is a halal-friendly destination with a Halal Trust Score of 4.3/5. Muslim travelers will find 124 halal restaurants listed, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
+ "metaDescription_en": "Halal guide to Sydney: 124 halal restaurants listed, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.3/5.",
+ "nom_en": "Sydney",
+ "boucheries": [
+  {
+   "nom": "Vatan Butcher",
+   "lat": -33.932042,
+   "lng": 151.194296,
+   "type": "Boucherie halal",
+   "mapsUrl": "https://maps.google.com/?q=-33.932042,151.194296",
+   "source": "osm"
+  }
+ ],
+ "dataPurgedAt": "2026-07-15"
 }

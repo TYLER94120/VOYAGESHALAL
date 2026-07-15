@@ -1,545 +1,509 @@
 {
-  "slug": "safi",
-  "nom": "Safi",
-  "pays": "Maroc",
-  "pays_slug": "maroc",
-  "continent": "Afrique",
-  "region": "Intérieur du Maroc",
-  "coordonnees": {
-    "lat": 32.2994,
-    "lng": -9.2372
-  },
-  "codeISO": "MA",
-  "score_halal": 4.5,
-  "halalScore": 8.9,
-  "description": "Capitale de la poterie marocaine et grand port sardinier atlantique. Colline des potiers, four traditionnels et château portugais en bord de mer.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/0/09/Safi_minaret.png",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/0/09/Safi_minaret.png",
-  "metaDescription": "Capitale de la poterie marocaine et grand port sardinier atlantique. Colline des potiers, four traditionnels et château portugais en bord de mer.",
+ "slug": "safi",
+ "nom": "Safi",
+ "pays": "Maroc",
+ "pays_slug": "maroc",
+ "continent": "Afrique",
+ "region": "Intérieur du Maroc",
+ "coordonnees": {
+  "lat": 32.2994,
+  "lng": -9.2372
+ },
+ "codeISO": "MA",
+ "score_halal": 4.5,
+ "halalScore": 8.9,
+ "description": "Capitale de la poterie marocaine et grand port sardinier atlantique. Colline des potiers, four traditionnels et château portugais en bord de mer.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/0/09/Safi_minaret.png",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/0/09/Safi_minaret.png",
+ "metaDescription": "Capitale de la poterie marocaine et grand port sardinier atlantique. Colline des potiers, four traditionnels et château portugais en bord de mer.",
+ "monnaie": "MAD (Dirham marocain)",
+ "langue": "Arabe, Tamazight, Français",
+ "statistiques": {
+  "restaurants_halal": 2,
+  "mosquees": 18,
+  "hotels": 13
+ },
+ "infoPratique": {
   "monnaie": "MAD (Dirham marocain)",
   "langue": "Arabe, Tamazight, Français",
-  "statistiques": {
-    "restaurants_halal": 2,
-    "mosquees": 1,
-    "hotels": 13
+  "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
+  "meilleureEpoque": "Printemps et automne (climat doux)."
+ },
+ "tags": [
+  "halal",
+  "Maroc"
+ ],
+ "restaurants": [
+  {
+   "nom": "wzanifood",
+   "type": "fast food, pizza, burger, tacos",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.3175365,-9.2286801",
+   "lat": 32.3175365,
+   "lng": -9.2286801,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "infoPratique": {
-    "monnaie": "MAD (Dirham marocain)",
-    "langue": "Arabe, Tamazight, Français",
-    "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
-    "meilleureEpoque": "Printemps et automne (climat doux)."
+  {
+   "nom": "Chez Hosni",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.3002498,-9.2391255",
+   "lat": 32.3002498,
+   "lng": -9.2391255,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "Riad Safi",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.2990884,-9.2398307",
+   "lat": 32.2990884,
+   "lng": -9.2398307,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.2990884,-9.2398307",
+   "source": "osm"
   },
-  "tags": [
-    "halal",
-    "Maroc"
-  ],
-  "restaurants": [
-    {
-      "nom": "wzanifood",
-      "type": "fast food, pizza, burger, tacos",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.3175365,-9.2286801",
-      "lat": 32.3175365,
-      "lng": -9.2286801,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Chez Hosni",
-      "type": "moroccan",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.3002498,-9.2391255",
-      "lat": 32.3002498,
-      "lng": -9.2391255,
-      "halalConfidence": "likely",
-      "source": "osm"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "Riad Safi",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.2990884,-9.2398307",
-      "lat": 32.2990884,
-      "lng": -9.2398307,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.2990884,-9.2398307",
-      "source": "osm"
-    },
-    {
-      "nom": "Golden Tulip Farah Safi",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.2955745,-9.2389402",
-      "lat": 32.2955745,
-      "lng": -9.2389402,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.2955745,-9.2389402",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel d'Honneur",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.2985251,-9.2428822",
-      "lat": 32.2985251,
-      "lng": -9.2428822,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.2985251,-9.2428822",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Le Cheval Blanc",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.29822,-9.2429025",
-      "lat": 32.29822,
-      "lng": -9.2429025,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.29822,-9.2429025",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel de Paris",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.2980441,-9.2430835",
-      "lat": 32.2980441,
-      "lng": -9.2430835,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.2980441,-9.2430835",
-      "source": "osm"
-    },
-    {
-      "nom": "فندق الصويرة",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.2981488,-9.2431248",
-      "lat": 32.2981488,
-      "lng": -9.2431248,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.2981488,-9.2431248",
-      "source": "osm"
-    },
-    {
-      "nom": "Hôtel Atlantide",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.2946096,-9.2396795",
-      "lat": 32.2946096,
-      "lng": -9.2396795,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.2946096,-9.2396795",
-      "source": "osm"
-    },
-    {
-      "nom": "Majestic",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.2976709,-9.2431681",
-      "lat": 32.2976709,
-      "lng": -9.2431681,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.2976709,-9.2431681",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Riad Asif",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.2963242,-9.2434586",
-      "lat": 32.2963242,
-      "lng": -9.2434586,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.2963242,-9.2434586",
-      "source": "osm"
-    },
-    {
-      "nom": "assif",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.2940003,-9.2330517",
-      "lat": 32.2940003,
-      "lng": -9.2330517,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.2940003,-9.2330517",
-      "source": "osm"
-    },
-    {
-      "nom": "les mimousas (Safi )",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.2913733,-9.2333227",
-      "lat": 32.2913733,
-      "lng": -9.2333227,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.2913733,-9.2333227",
-      "source": "osm"
-    },
-    {
-      "nom": "abda",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.2866377,-9.230962",
-      "lat": 32.2866377,
-      "lng": -9.230962,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.2866377,-9.230962",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Atlantique",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.3229746,-9.2566523",
-      "lat": 32.3229746,
-      "lng": -9.2566523,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.3229746,-9.2566523",
-      "source": "osm"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Safi",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Safi",
-      "description": "Mosquée principale de la ville, prière du vendredi.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20Safi%20Safi%20Maroc"
-    },
-    {
-      "nom": "la grande mosquée",
-      "lat": 32.2983264,
-      "lng": -9.2416408,
-      "coordonnees": {
-        "lat": 32.2983264,
-        "lng": -9.2416408
-      },
-      "mapsUrl": "https://maps.google.com/?q=32.2983264,-9.2416408",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد درب مولاي الحسن",
-      "lat": 32.306059,
-      "lng": -9.2296429,
-      "coordonnees": {
-        "lat": 32.306059,
-        "lng": -9.2296429
-      },
-      "mapsUrl": "https://maps.google.com/?q=32.306059,-9.2296429",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد الشيخ",
-      "lat": 32.3083442,
-      "lng": -9.2269766,
-      "coordonnees": {
-        "lat": 32.3083442,
-        "lng": -9.2269766
-      },
-      "mapsUrl": "https://maps.google.com/?q=32.3083442,-9.2269766",
-      "source": "osm"
-    },
-    {
-      "nom": "Mosquée Sidi Mohammed Sharif مسجد سيدي محمد الشريف",
-      "lat": 32.3112685,
-      "lng": -9.2295916,
-      "coordonnees": {
-        "lat": 32.3112685,
-        "lng": -9.2295916
-      },
-      "mapsUrl": "https://maps.google.com/?q=32.3112685,-9.2295916",
-      "source": "osm"
-    },
-    {
-      "nom": "mosque al mohsinine",
-      "lat": 32.2892319,
-      "lng": -9.2248361,
-      "coordonnees": {
-        "lat": 32.2892319,
-        "lng": -9.2248361
-      },
-      "mapsUrl": "https://maps.google.com/?q=32.2892319,-9.2248361",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد عزيب الدرعي",
-      "lat": 32.2940204,
-      "lng": -9.2195736,
-      "coordonnees": {
-        "lat": 32.2940204,
-        "lng": -9.2195736
-      },
-      "mapsUrl": "https://maps.google.com/?q=32.2940204,-9.2195736",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد بل الكاهية",
-      "lat": 32.295381,
-      "lng": -9.2186348,
-      "coordonnees": {
-        "lat": 32.295381,
-        "lng": -9.2186348
-      },
-      "mapsUrl": "https://maps.google.com/?q=32.295381,-9.2186348",
-      "source": "osm"
-    },
-    {
-      "nom": "Mosqué",
-      "lat": 32.2835272,
-      "lng": -9.2279635,
-      "coordonnees": {
-        "lat": 32.2835272,
-        "lng": -9.2279635
-      },
-      "mapsUrl": "https://maps.google.com/?q=32.2835272,-9.2279635",
-      "source": "osm"
-    },
-    {
-      "nom": "Mosquée Douar Sfa مسجد دوار الصفا",
-      "lat": 32.2898151,
-      "lng": -9.2190829,
-      "coordonnees": {
-        "lat": 32.2898151,
-        "lng": -9.2190829
-      },
-      "mapsUrl": "https://maps.google.com/?q=32.2898151,-9.2190829",
-      "source": "osm"
-    },
-    {
-      "nom": "mosque a takwa",
-      "lat": 32.3184724,
-      "lng": -9.2400765,
-      "coordonnees": {
-        "lat": 32.3184724,
-        "lng": -9.2400765
-      },
-      "mapsUrl": "https://maps.google.com/?q=32.3184724,-9.2400765",
-      "source": "osm"
-    },
-    {
-      "nom": "Mosquée Chekouri",
-      "lat": 32.281871,
-      "lng": -9.2227009,
-      "coordonnees": {
-        "lat": 32.281871,
-        "lng": -9.2227009
-      },
-      "mapsUrl": "https://maps.google.com/?q=32.281871,-9.2227009",
-      "source": "osm"
-    },
-    {
-      "nom": "Mosquée Lbyar",
-      "lat": 32.270008,
-      "lng": -9.2491344,
-      "coordonnees": {
-        "lat": 32.270008,
-        "lng": -9.2491344
-      },
-      "mapsUrl": "https://maps.google.com/?q=32.270008,-9.2491344",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد أحد",
-      "lat": 32.2658147,
-      "lng": -9.2366856,
-      "coordonnees": {
-        "lat": 32.2658147,
-        "lng": -9.2366856
-      },
-      "mapsUrl": "https://maps.google.com/?q=32.2658147,-9.2366856",
-      "source": "osm"
-    },
-    {
-      "nom": "ouazzani",
-      "lat": 32.2655222,
-      "lng": -9.2446426,
-      "coordonnees": {
-        "lat": 32.2655222,
-        "lng": -9.2446426
-      },
-      "mapsUrl": "https://maps.google.com/?q=32.2655222,-9.2446426",
-      "source": "osm"
-    },
-    {
-      "nom": "aanba",
-      "lat": 32.2631478,
-      "lng": -9.2446146,
-      "coordonnees": {
-        "lat": 32.2631478,
-        "lng": -9.2446146
-      },
-      "mapsUrl": "https://maps.google.com/?q=32.2631478,-9.2446146",
-      "source": "osm"
-    },
-    {
-      "nom": "Sidi abdel jabar",
-      "lat": 32.263264,
-      "lng": -9.2483604,
-      "coordonnees": {
-        "lat": 32.263264,
-        "lng": -9.2483604
-      },
-      "mapsUrl": "https://maps.google.com/?q=32.263264,-9.2483604",
-      "source": "osm"
-    },
-    {
-      "nom": "Mosquée Assalam",
-      "lat": 32.2572116,
-      "lng": -9.2498149,
-      "coordonnees": {
-        "lat": 32.2572116,
-        "lng": -9.2498149
-      },
-      "mapsUrl": "https://maps.google.com/?q=32.2572116,-9.2498149",
-      "source": "osm"
-    },
-    {
-      "nom": "Doukalaa",
-      "lat": 32.25358,
-      "lng": -9.2508965,
-      "coordonnees": {
-        "lat": 32.25358,
-        "lng": -9.2508965
-      },
-      "mapsUrl": "https://maps.google.com/?q=32.25358,-9.2508965",
-      "source": "osm"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Colline des potiers",
-      "categorie": "Artisanat",
-      "description": "Ateliers de céramique de Safi en activité, démonstrations et achats.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Colline%20des%20potiers%20Safi%20Maroc"
-    },
-    {
-      "id": "a2",
-      "nom": "Château de la Mer (Ksar el Bahr)",
-      "categorie": "Histoire",
-      "description": "Forteresse portugaise face à l'Atlantique.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Ch%C3%A2teau%20de%20la%20Mer%20%28Ksar%20el%20Bahr%29%20Safi%20Maroc"
-    },
-    {
-      "id": "a3",
-      "nom": "Médina et souk",
-      "categorie": "Culture",
-      "description": "Souks, remparts et quartier des potiers.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=M%C3%A9dina%20et%20souk%20Safi%20Maroc"
-    },
-    {
-      "nom": "Bab Agrou ( Porte de Agrou) باب آكرو",
-      "lat": 32.2985878,
-      "lng": -9.2381703,
-      "coordonnees": {
-        "lat": 32.2985878,
-        "lng": -9.2381703
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=32.2985878,-9.2381703",
-      "source": "osm"
-    },
-    {
-      "nom": "Bab Shaaba باب الشعبة",
-      "lat": 32.2998243,
-      "lng": -9.2398283,
-      "coordonnees": {
-        "lat": 32.2998243,
-        "lng": -9.2398283
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=32.2998243,-9.2398283",
-      "source": "osm"
-    },
-    {
-      "nom": "باب الجديد",
-      "lat": 32.2976365,
-      "lng": -9.2405489,
-      "coordonnees": {
-        "lat": 32.2976365,
-        "lng": -9.2405489
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=32.2976365,-9.2405489",
-      "source": "osm"
-    },
-    {
-      "nom": "Bab Alkhadid باب الخديد",
-      "lat": 32.2975823,
-      "lng": -9.2418163,
-      "coordonnees": {
-        "lat": 32.2975823,
-        "lng": -9.2418163
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=32.2975823,-9.2418163",
-      "source": "osm"
-    },
-    {
-      "nom": "Souk Medina",
-      "lat": 32.2986454,
-      "lng": -9.2426592,
-      "coordonnees": {
-        "lat": 32.2986454,
-        "lng": -9.2426592
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=32.2986454,-9.2426592",
-      "source": "osm"
-    },
-    {
-      "nom": "Tajine",
-      "lat": 32.2948733,
-      "lng": -9.2339044,
-      "coordonnees": {
-        "lat": 32.2948733,
-        "lng": -9.2339044
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=32.2948733,-9.2339044",
-      "source": "osm"
-    },
-    {
-      "nom": "Ali’s Family",
-      "lat": 32.2688409,
-      "lng": -9.2410503,
-      "coordonnees": {
-        "lat": 32.2688409,
-        "lng": -9.2410503
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=32.2688409,-9.2410503",
-      "source": "osm"
-    },
-    {
-      "nom": "Sunset and ocean viewpoint",
-      "lat": 32.3443004,
-      "lng": -9.2777184,
-      "coordonnees": {
-        "lat": 32.3443004,
-        "lng": -9.2777184
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=32.3443004,-9.2777184",
-      "source": "osm"
-    }
-  ],
-  "imageCredit": "Wikimedia Commons",
-  "osmEnriched": true,
-  "osmEnrichedAt": "2026-06-30",
-  "description_en": "Safi, in Morocco, is a halal-friendly destination with a Halal Trust Score of 4.5/5. Muslim travelers will find 2 halal restaurants listed, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
-  "metaDescription_en": "Halal guide to Safi: 2 halal restaurants listed, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.5/5.",
-  "nom_en": "Safi",
-  "boucheries": []
+  {
+   "nom": "Golden Tulip Farah Safi",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.2955745,-9.2389402",
+   "lat": 32.2955745,
+   "lng": -9.2389402,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.2955745,-9.2389402",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel d'Honneur",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.2985251,-9.2428822",
+   "lat": 32.2985251,
+   "lng": -9.2428822,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.2985251,-9.2428822",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Le Cheval Blanc",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.29822,-9.2429025",
+   "lat": 32.29822,
+   "lng": -9.2429025,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.29822,-9.2429025",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel de Paris",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.2980441,-9.2430835",
+   "lat": 32.2980441,
+   "lng": -9.2430835,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.2980441,-9.2430835",
+   "source": "osm"
+  },
+  {
+   "nom": "فندق الصويرة",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.2981488,-9.2431248",
+   "lat": 32.2981488,
+   "lng": -9.2431248,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.2981488,-9.2431248",
+   "source": "osm"
+  },
+  {
+   "nom": "Hôtel Atlantide",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.2946096,-9.2396795",
+   "lat": 32.2946096,
+   "lng": -9.2396795,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.2946096,-9.2396795",
+   "source": "osm"
+  },
+  {
+   "nom": "Majestic",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.2976709,-9.2431681",
+   "lat": 32.2976709,
+   "lng": -9.2431681,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.2976709,-9.2431681",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Riad Asif",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.2963242,-9.2434586",
+   "lat": 32.2963242,
+   "lng": -9.2434586,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.2963242,-9.2434586",
+   "source": "osm"
+  },
+  {
+   "nom": "assif",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.2940003,-9.2330517",
+   "lat": 32.2940003,
+   "lng": -9.2330517,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.2940003,-9.2330517",
+   "source": "osm"
+  },
+  {
+   "nom": "les mimousas (Safi )",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.2913733,-9.2333227",
+   "lat": 32.2913733,
+   "lng": -9.2333227,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.2913733,-9.2333227",
+   "source": "osm"
+  },
+  {
+   "nom": "abda",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.2866377,-9.230962",
+   "lat": 32.2866377,
+   "lng": -9.230962,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.2866377,-9.230962",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Atlantique",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.3229746,-9.2566523",
+   "lat": 32.3229746,
+   "lng": -9.2566523,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.3229746,-9.2566523",
+   "source": "osm"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "la grande mosquée",
+   "lat": 32.2983264,
+   "lng": -9.2416408,
+   "coordonnees": {
+    "lat": 32.2983264,
+    "lng": -9.2416408
+   },
+   "mapsUrl": "https://maps.google.com/?q=32.2983264,-9.2416408",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد درب مولاي الحسن",
+   "lat": 32.306059,
+   "lng": -9.2296429,
+   "coordonnees": {
+    "lat": 32.306059,
+    "lng": -9.2296429
+   },
+   "mapsUrl": "https://maps.google.com/?q=32.306059,-9.2296429",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد الشيخ",
+   "lat": 32.3083442,
+   "lng": -9.2269766,
+   "coordonnees": {
+    "lat": 32.3083442,
+    "lng": -9.2269766
+   },
+   "mapsUrl": "https://maps.google.com/?q=32.3083442,-9.2269766",
+   "source": "osm"
+  },
+  {
+   "nom": "Mosquée Sidi Mohammed Sharif مسجد سيدي محمد الشريف",
+   "lat": 32.3112685,
+   "lng": -9.2295916,
+   "coordonnees": {
+    "lat": 32.3112685,
+    "lng": -9.2295916
+   },
+   "mapsUrl": "https://maps.google.com/?q=32.3112685,-9.2295916",
+   "source": "osm"
+  },
+  {
+   "nom": "mosque al mohsinine",
+   "lat": 32.2892319,
+   "lng": -9.2248361,
+   "coordonnees": {
+    "lat": 32.2892319,
+    "lng": -9.2248361
+   },
+   "mapsUrl": "https://maps.google.com/?q=32.2892319,-9.2248361",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد عزيب الدرعي",
+   "lat": 32.2940204,
+   "lng": -9.2195736,
+   "coordonnees": {
+    "lat": 32.2940204,
+    "lng": -9.2195736
+   },
+   "mapsUrl": "https://maps.google.com/?q=32.2940204,-9.2195736",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد بل الكاهية",
+   "lat": 32.295381,
+   "lng": -9.2186348,
+   "coordonnees": {
+    "lat": 32.295381,
+    "lng": -9.2186348
+   },
+   "mapsUrl": "https://maps.google.com/?q=32.295381,-9.2186348",
+   "source": "osm"
+  },
+  {
+   "nom": "Mosqué",
+   "lat": 32.2835272,
+   "lng": -9.2279635,
+   "coordonnees": {
+    "lat": 32.2835272,
+    "lng": -9.2279635
+   },
+   "mapsUrl": "https://maps.google.com/?q=32.2835272,-9.2279635",
+   "source": "osm"
+  },
+  {
+   "nom": "Mosquée Douar Sfa مسجد دوار الصفا",
+   "lat": 32.2898151,
+   "lng": -9.2190829,
+   "coordonnees": {
+    "lat": 32.2898151,
+    "lng": -9.2190829
+   },
+   "mapsUrl": "https://maps.google.com/?q=32.2898151,-9.2190829",
+   "source": "osm"
+  },
+  {
+   "nom": "mosque a takwa",
+   "lat": 32.3184724,
+   "lng": -9.2400765,
+   "coordonnees": {
+    "lat": 32.3184724,
+    "lng": -9.2400765
+   },
+   "mapsUrl": "https://maps.google.com/?q=32.3184724,-9.2400765",
+   "source": "osm"
+  },
+  {
+   "nom": "Mosquée Chekouri",
+   "lat": 32.281871,
+   "lng": -9.2227009,
+   "coordonnees": {
+    "lat": 32.281871,
+    "lng": -9.2227009
+   },
+   "mapsUrl": "https://maps.google.com/?q=32.281871,-9.2227009",
+   "source": "osm"
+  },
+  {
+   "nom": "Mosquée Lbyar",
+   "lat": 32.270008,
+   "lng": -9.2491344,
+   "coordonnees": {
+    "lat": 32.270008,
+    "lng": -9.2491344
+   },
+   "mapsUrl": "https://maps.google.com/?q=32.270008,-9.2491344",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد أحد",
+   "lat": 32.2658147,
+   "lng": -9.2366856,
+   "coordonnees": {
+    "lat": 32.2658147,
+    "lng": -9.2366856
+   },
+   "mapsUrl": "https://maps.google.com/?q=32.2658147,-9.2366856",
+   "source": "osm"
+  },
+  {
+   "nom": "ouazzani",
+   "lat": 32.2655222,
+   "lng": -9.2446426,
+   "coordonnees": {
+    "lat": 32.2655222,
+    "lng": -9.2446426
+   },
+   "mapsUrl": "https://maps.google.com/?q=32.2655222,-9.2446426",
+   "source": "osm"
+  },
+  {
+   "nom": "aanba",
+   "lat": 32.2631478,
+   "lng": -9.2446146,
+   "coordonnees": {
+    "lat": 32.2631478,
+    "lng": -9.2446146
+   },
+   "mapsUrl": "https://maps.google.com/?q=32.2631478,-9.2446146",
+   "source": "osm"
+  },
+  {
+   "nom": "Sidi abdel jabar",
+   "lat": 32.263264,
+   "lng": -9.2483604,
+   "coordonnees": {
+    "lat": 32.263264,
+    "lng": -9.2483604
+   },
+   "mapsUrl": "https://maps.google.com/?q=32.263264,-9.2483604",
+   "source": "osm"
+  },
+  {
+   "nom": "Mosquée Assalam",
+   "lat": 32.2572116,
+   "lng": -9.2498149,
+   "coordonnees": {
+    "lat": 32.2572116,
+    "lng": -9.2498149
+   },
+   "mapsUrl": "https://maps.google.com/?q=32.2572116,-9.2498149",
+   "source": "osm"
+  },
+  {
+   "nom": "Doukalaa",
+   "lat": 32.25358,
+   "lng": -9.2508965,
+   "coordonnees": {
+    "lat": 32.25358,
+    "lng": -9.2508965
+   },
+   "mapsUrl": "https://maps.google.com/?q=32.25358,-9.2508965",
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Bab Agrou ( Porte de Agrou) باب آكرو",
+   "lat": 32.2985878,
+   "lng": -9.2381703,
+   "coordonnees": {
+    "lat": 32.2985878,
+    "lng": -9.2381703
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=32.2985878,-9.2381703",
+   "source": "osm"
+  },
+  {
+   "nom": "Bab Shaaba باب الشعبة",
+   "lat": 32.2998243,
+   "lng": -9.2398283,
+   "coordonnees": {
+    "lat": 32.2998243,
+    "lng": -9.2398283
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=32.2998243,-9.2398283",
+   "source": "osm"
+  },
+  {
+   "nom": "باب الجديد",
+   "lat": 32.2976365,
+   "lng": -9.2405489,
+   "coordonnees": {
+    "lat": 32.2976365,
+    "lng": -9.2405489
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=32.2976365,-9.2405489",
+   "source": "osm"
+  },
+  {
+   "nom": "Bab Alkhadid باب الخديد",
+   "lat": 32.2975823,
+   "lng": -9.2418163,
+   "coordonnees": {
+    "lat": 32.2975823,
+    "lng": -9.2418163
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=32.2975823,-9.2418163",
+   "source": "osm"
+  },
+  {
+   "nom": "Souk Medina",
+   "lat": 32.2986454,
+   "lng": -9.2426592,
+   "coordonnees": {
+    "lat": 32.2986454,
+    "lng": -9.2426592
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=32.2986454,-9.2426592",
+   "source": "osm"
+  },
+  {
+   "nom": "Tajine",
+   "lat": 32.2948733,
+   "lng": -9.2339044,
+   "coordonnees": {
+    "lat": 32.2948733,
+    "lng": -9.2339044
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=32.2948733,-9.2339044",
+   "source": "osm"
+  },
+  {
+   "nom": "Ali’s Family",
+   "lat": 32.2688409,
+   "lng": -9.2410503,
+   "coordonnees": {
+    "lat": 32.2688409,
+    "lng": -9.2410503
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=32.2688409,-9.2410503",
+   "source": "osm"
+  },
+  {
+   "nom": "Sunset and ocean viewpoint",
+   "lat": 32.3443004,
+   "lng": -9.2777184,
+   "coordonnees": {
+    "lat": 32.3443004,
+    "lng": -9.2777184
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=32.3443004,-9.2777184",
+   "source": "osm"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30",
+ "description_en": "Safi, in Morocco, is a halal-friendly destination with a Halal Trust Score of 4.5/5. Muslim travelers will find 2 halal restaurants listed, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
+ "metaDescription_en": "Halal guide to Safi: 2 halal restaurants listed, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.5/5.",
+ "nom_en": "Safi",
+ "boucheries": [],
+ "dataPurgedAt": "2026-07-15"
 }

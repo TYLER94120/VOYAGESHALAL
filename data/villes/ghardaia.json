@@ -1,525 +1,526 @@
 {
-  "slug": "ghardaia",
-  "nom": "Ghardaïa",
-  "pays": "Algérie",
-  "pays_slug": "algerie",
-  "continent": "Afrique",
-  "region": "Algérie",
-  "coordonnees": {
-    "lat": 32.491,
-    "lng": 3.6736
+ "slug": "ghardaia",
+ "nom": "Ghardaïa",
+ "pays": "Algérie",
+ "pays_slug": "algerie",
+ "continent": "Afrique",
+ "region": "Algérie",
+ "coordonnees": {
+  "lat": 32.491,
+  "lng": 3.6736
+ },
+ "codeISO": "DZ",
+ "score_halal": 4.2,
+ "halalScore": 8.4,
+ "description": "Ghardaïa, Algérie. Forte présence musulmane : nombreuses adresses halal et mosquées.",
+ "metaDescription": "Ghardaïa, Algérie. Forte présence musulmane : nombreuses adresses halal et mosquées.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Algerie_Ghardaia_04.jpg/1920px-Algerie_Ghardaia_04.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Algerie_Ghardaia_04.jpg/1920px-Algerie_Ghardaia_04.jpg",
+ "imageCredit": "Wikimedia Commons",
+ "scoreIndicatif": true,
+ "statistiques": {
+  "restaurants_halal": 1,
+  "mosquees": 14,
+  "hotels": 14
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion et transports locaux.",
+  "meilleureEpoque": "Selon la saison.",
+  "conseilHalal": "Repérez restaurants halal et mosquées via l'application."
+ },
+ "tags": [
+  "halal",
+  "afrique"
+ ],
+ "restaurants": [
+  {
+   "nom": "Djurdjura",
+   "lat": 32.4863682,
+   "lng": 3.6975093,
+   "type": "arab",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=32.4863682,3.6975093",
+   "source": "osm"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "فندق بلعجال",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.4864498,3.6756291",
+   "lat": 32.4864498,
+   "lng": 3.6756291,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.4864498,3.6756291",
+   "source": "osm"
   },
-  "codeISO": "DZ",
-  "score_halal": 4.2,
-  "halalScore": 8.4,
-  "description": "Ghardaïa, Algérie. Forte présence musulmane : nombreuses adresses halal et mosquées.",
-  "metaDescription": "Ghardaïa, Algérie. Forte présence musulmane : nombreuses adresses halal et mosquées.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Algerie_Ghardaia_04.jpg/1920px-Algerie_Ghardaia_04.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Algerie_Ghardaia_04.jpg/1920px-Algerie_Ghardaia_04.jpg",
-  "imageCredit": "Wikimedia Commons",
-  "scoreIndicatif": true,
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 0,
-    "hotels": 14
+  {
+   "nom": "نزل الفاتحي",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.4864769,3.6772956",
+   "lat": 32.4864769,
+   "lng": 3.6772956,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.4864769,3.6772956",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion et transports locaux.",
-    "meilleureEpoque": "Selon la saison.",
-    "conseilHalal": "Repérez restaurants halal et mosquées via l'application."
+  {
+   "nom": "فندق مزاب",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.4842096,3.6761501",
+   "lat": 32.4842096,
+   "lng": 3.6761501,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.4842096,3.6761501",
+   "source": "osm"
   },
-  "tags": [
-    "halal",
-    "afrique"
-  ],
-  "restaurants": [
-    {
-      "nom": "Djurdjura",
-      "lat": 32.4863682,
-      "lng": 3.6975093,
-      "type": "arab",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=32.4863682,3.6975093",
-      "source": "osm"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "فندق بلعجال",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.4864498,3.6756291",
-      "lat": 32.4864498,
-      "lng": 3.6756291,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.4864498,3.6756291",
-      "source": "osm"
-    },
-    {
-      "nom": "نزل الفاتحي",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.4864769,3.6772956",
-      "lat": 32.4864769,
-      "lng": 3.6772956,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.4864769,3.6772956",
-      "source": "osm"
-    },
-    {
-      "nom": "فندق مزاب",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.4842096,3.6761501",
-      "lat": 32.4842096,
-      "lng": 3.6761501,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.4842096,3.6761501",
-      "source": "osm"
-    },
-    {
-      "nom": "Hôtel El Djanoub",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.4948783,3.6812446",
-      "lat": 32.4948783,
-      "lng": 3.6812446,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.4948783,3.6812446",
-      "source": "osm"
-    },
-    {
-      "nom": "Dortoir Mirana Mayotte",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.4867089,3.6811628",
-      "lat": 32.4867089,
-      "lng": 3.6811628,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.4867089,3.6811628",
-      "source": "osm"
-    },
-    {
-      "nom": "فندق إيزوران",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.4837886,3.6794315",
-      "lat": 32.4837886,
-      "lng": 3.6794315,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.4837886,3.6794315",
-      "source": "osm"
-    },
-    {
-      "nom": "الواحات",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.4933457,3.6858847",
-      "lat": 32.4933457,
-      "lng": 3.6858847,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.4933457,3.6858847",
-      "source": "osm"
-    },
-    {
-      "nom": "فندق النخيل",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.4893573,3.6581254",
-      "lat": 32.4893573,
-      "lng": 3.6581254,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.4893573,3.6581254",
-      "source": "osm"
-    },
-    {
-      "nom": "Hôtel Le Belvédère",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.4939103,3.6905627",
-      "lat": 32.4939103,
-      "lng": 3.6905627,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.4939103,3.6905627",
-      "source": "osm"
-    },
-    {
-      "nom": "نزل الطاسيلي",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.4782536,3.6842467",
-      "lat": 32.4782536,
-      "lng": 3.6842467,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.4782536,3.6842467",
-      "source": "osm"
-    },
-    {
-      "nom": "Akham",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.4652888,3.6699601",
-      "lat": 32.4652888,
-      "lng": 3.6699601,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.4652888,3.6699601",
-      "source": "osm"
-    },
-    {
-      "nom": "Résidence des Deux Tours",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.4597903,3.6863166",
-      "lat": 32.4597903,
-      "lng": 3.6863166,
-      "halalFriendly": false,
-      "bookingUrl": "http://www.deuxtoursbayard.com",
-      "source": "osm"
-    },
-    {
-      "nom": "ليكول سماوي",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.4710625,3.7193792",
-      "lat": 32.4710625,
-      "lng": 3.7193792,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.4710625,3.7193792",
-      "source": "osm"
-    },
-    {
-      "nom": "Aghlen Paradise",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.4310881,3.6138374",
-      "lat": 32.4310881,
-      "lng": 3.6138374,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.4310881,3.6138374",
-      "source": "osm"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "nom": "مسجد بابا سعد",
-      "lat": 32.4927539,
-      "lng": 3.6678971,
-      "coordonnees": {
-        "lat": 32.4927539,
-        "lng": 3.6678971
-      },
-      "mapsUrl": "https://maps.google.com/?q=32.4927539,3.6678971",
-      "source": "osm"
-    },
-    {
-      "nom": "Mosquée Ali Ben Abi Taleb",
-      "lat": 32.4895945,
-      "lng": 3.6821282,
-      "coordonnees": {
-        "lat": 32.4895945,
-        "lng": 3.6821282
-      },
-      "adresse": "حي الحاج مسعود, Ghardaïa",
-      "mapsUrl": "https://maps.google.com/?q=32.4895945,3.6821282",
-      "source": "osm"
-    },
-    {
-      "nom": "Mosquée Abdullah Ibn Abbas",
-      "lat": 32.4922574,
-      "lng": 3.683593,
-      "coordonnees": {
-        "lat": 32.4922574,
-        "lng": 3.683593
-      },
-      "mapsUrl": "https://maps.google.com/?q=32.4922574,3.683593",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Baba Saad",
-      "lat": 32.4936779,
-      "lng": 3.6625888,
-      "coordonnees": {
-        "lat": 32.4936779,
-        "lng": 3.6625888
-      },
-      "mapsUrl": "https://maps.google.com/?q=32.4936779,3.6625888",
-      "source": "osm"
-    },
-    {
-      "nom": "Vieille mosquée de Melika",
-      "lat": 32.4831392,
-      "lng": 3.6866705,
-      "coordonnees": {
-        "lat": 32.4831392,
-        "lng": 3.6866705
-      },
-      "adresse": "Ghardaïa",
-      "mapsUrl": "https://maps.google.com/?q=32.4831392,3.6866705",
-      "source": "osm"
-    },
-    {
-      "nom": "Mosquée Badr",
-      "lat": 32.4768684,
-      "lng": 3.6899006,
-      "coordonnees": {
-        "lat": 32.4768684,
-        "lng": 3.6899006
-      },
-      "mapsUrl": "https://maps.google.com/?q=32.4768684,3.6899006",
-      "source": "osm"
-    },
-    {
-      "nom": "noor",
-      "lat": 32.4963878,
-      "lng": 3.6493163,
-      "coordonnees": {
-        "lat": 32.4963878,
-        "lng": 3.6493163
-      },
-      "mapsUrl": "https://maps.google.com/?q=32.4963878,3.6493163",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Benghanem",
-      "lat": 32.493589,
-      "lng": 3.6482419,
-      "coordonnees": {
-        "lat": 32.493589,
-        "lng": 3.6482419
-      },
-      "mapsUrl": "https://maps.google.com/?q=32.493589,3.6482419",
-      "source": "osm"
-    },
-    {
-      "nom": "Mosquée Kerkoura",
-      "lat": 32.4970445,
-      "lng": 3.6461169,
-      "coordonnees": {
-        "lat": 32.4970445,
-        "lng": 3.6461169
-      },
-      "mapsUrl": "https://maps.google.com/?q=32.4970445,3.6461169",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Al Ghofrane",
-      "lat": 32.4963086,
-      "lng": 3.642947,
-      "coordonnees": {
-        "lat": 32.4963086,
-        "lng": 3.642947
-      },
-      "mapsUrl": "https://maps.google.com/?q=32.4963086,3.642947",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد العتيق بونورة",
-      "lat": 32.4823142,
-      "lng": 3.7035125,
-      "coordonnees": {
-        "lat": 32.4823142,
-        "lng": 3.7035125
-      },
-      "adresse": "Bounoura",
-      "mapsUrl": "https://maps.google.com/?q=32.4823142,3.7035125",
-      "source": "osm"
-    },
-    {
-      "nom": "Mosquée Abu Abdullah",
-      "lat": 32.4773311,
-      "lng": 3.7458515,
-      "coordonnees": {
-        "lat": 32.4773311,
-        "lng": 3.7458515
-      },
-      "mapsUrl": "https://maps.google.com/?q=32.4773311,3.7458515",
-      "source": "osm"
-    },
-    {
-      "nom": "Mosquée Abou Bakr Assidiq",
-      "lat": 32.4763635,
-      "lng": 3.7472207,
-      "coordonnees": {
-        "lat": 32.4763635,
-        "lng": 3.7472207
-      },
-      "adresse": "El Atteuf",
-      "mapsUrl": "https://maps.google.com/?q=32.4763635,3.7472207",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد أبو مسور",
-      "lat": 32.4449681,
-      "lng": 3.7481516,
-      "coordonnees": {
-        "lat": 32.4449681,
-        "lng": 3.7481516
-      },
-      "mapsUrl": "https://maps.google.com/?q=32.4449681,3.7481516",
-      "source": "osm"
-    }
-  ],
-  "activites": [
-    {
-      "nom": "باب السلام وعيسى",
-      "lat": 32.4903373,
-      "lng": 3.6756266,
-      "coordonnees": {
-        "lat": 32.4903373,
-        "lng": 3.6756266
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=32.4903373,3.6756266",
-      "source": "osm"
-    },
-    {
-      "nom": "باب جديد",
-      "lat": 32.4892302,
-      "lng": 3.6702142,
-      "coordonnees": {
-        "lat": 32.4892302,
-        "lng": 3.6702142
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=32.4892302,3.6702142",
-      "source": "osm"
-    },
-    {
-      "nom": "مخبر الأعمال البيطونية",
-      "lat": 32.5061325,
-      "lng": 3.6773468,
-      "coordonnees": {
-        "lat": 32.5061325,
-        "lng": 3.6773468
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=32.5061325,3.6773468",
-      "source": "osm"
-    },
-    {
-      "nom": "الرمز التاريخ لبني مزاب",
-      "lat": 32.4810927,
-      "lng": 3.7000199,
-      "coordonnees": {
-        "lat": 32.4810927,
-        "lng": 3.7000199
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=32.4810927,3.7000199",
-      "source": "osm"
-    },
-    {
-      "nom": "برج عمي زكري",
-      "lat": 32.470525,
-      "lng": 3.7303957,
-      "coordonnees": {
-        "lat": 32.470525,
-        "lng": 3.7303957
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=32.470525,3.7303957",
-      "source": "osm"
-    },
-    {
-      "nom": "Arche de Noe",
-      "lat": 32.4771649,
-      "lng": 3.7355653,
-      "coordonnees": {
-        "lat": 32.4771649,
-        "lng": 3.7355653
-      },
-      "categorie": "Famille",
-      "mapsUrl": "https://maps.google.com/?q=32.4771649,3.7355653",
-      "source": "osm"
-    },
-    {
-      "nom": "باب لالة وسارة",
-      "lat": 32.4755654,
-      "lng": 3.7437835,
-      "coordonnees": {
-        "lat": 32.4755654,
-        "lng": 3.7437835
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=32.4755654,3.7437835",
-      "source": "osm"
-    },
-    {
-      "nom": "باب العسة",
-      "lat": 32.4742161,
-      "lng": 3.7437671,
-      "coordonnees": {
-        "lat": 32.4742161,
-        "lng": 3.7437671
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=32.4742161,3.7437671",
-      "source": "osm"
-    },
-    {
-      "nom": "Mausolée Sidi Brahim",
-      "lat": 32.4736489,
-      "lng": 3.7448504,
-      "coordonnees": {
-        "lat": 32.4736489,
-        "lng": 3.7448504
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=32.4736489,3.7448504",
-      "source": "osm"
-    },
-    {
-      "nom": "باب الخراجة",
-      "lat": 32.476409,
-      "lng": 3.745846,
-      "coordonnees": {
-        "lat": 32.476409,
-        "lng": 3.745846
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=32.476409,3.745846",
-      "source": "osm"
-    },
-    {
-      "nom": "السوق الداخلي",
-      "lat": 32.4753893,
-      "lng": 3.7464724,
-      "coordonnees": {
-        "lat": 32.4753893,
-        "lng": 3.7464724
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=32.4753893,3.7464724",
-      "source": "osm"
-    },
-    {
-      "nom": "باب بن صالح",
-      "lat": 32.4738084,
-      "lng": 3.7477645,
-      "coordonnees": {
-        "lat": 32.4738084,
-        "lng": 3.7477645
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=32.4738084,3.7477645",
-      "source": "osm"
-    },
-    {
-      "nom": "Central a béton COSIDER",
-      "lat": 32.3871589,
-      "lng": 3.7608825,
-      "coordonnees": {
-        "lat": 32.3871589,
-        "lng": 3.7608825
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=32.3871589,3.7608825",
-      "source": "osm"
-    }
-  ],
-  "donneesAVenir": true,
-  "description_en": "Ghardaïa, in Algeria, is a halal-friendly destination with a Halal Trust Score of 4.2/5. Muslim travelers will find a selection of halal restaurants, several mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
-  "metaDescription_en": "Halal guide to Ghardaïa: halal restaurants, prayer times and tips for Muslim travelers. Halal Trust Score 4.2/5.",
-  "nom_en": "Ghardaïa",
-  "boucheries": []
+  {
+   "nom": "Hôtel El Djanoub",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.4948783,3.6812446",
+   "lat": 32.4948783,
+   "lng": 3.6812446,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.4948783,3.6812446",
+   "source": "osm"
+  },
+  {
+   "nom": "Dortoir Mirana Mayotte",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.4867089,3.6811628",
+   "lat": 32.4867089,
+   "lng": 3.6811628,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.4867089,3.6811628",
+   "source": "osm"
+  },
+  {
+   "nom": "فندق إيزوران",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.4837886,3.6794315",
+   "lat": 32.4837886,
+   "lng": 3.6794315,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.4837886,3.6794315",
+   "source": "osm"
+  },
+  {
+   "nom": "الواحات",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.4933457,3.6858847",
+   "lat": 32.4933457,
+   "lng": 3.6858847,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.4933457,3.6858847",
+   "source": "osm"
+  },
+  {
+   "nom": "فندق النخيل",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.4893573,3.6581254",
+   "lat": 32.4893573,
+   "lng": 3.6581254,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.4893573,3.6581254",
+   "source": "osm"
+  },
+  {
+   "nom": "Hôtel Le Belvédère",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.4939103,3.6905627",
+   "lat": 32.4939103,
+   "lng": 3.6905627,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.4939103,3.6905627",
+   "source": "osm"
+  },
+  {
+   "nom": "نزل الطاسيلي",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.4782536,3.6842467",
+   "lat": 32.4782536,
+   "lng": 3.6842467,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.4782536,3.6842467",
+   "source": "osm"
+  },
+  {
+   "nom": "Akham",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.4652888,3.6699601",
+   "lat": 32.4652888,
+   "lng": 3.6699601,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.4652888,3.6699601",
+   "source": "osm"
+  },
+  {
+   "nom": "Résidence des Deux Tours",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.4597903,3.6863166",
+   "lat": 32.4597903,
+   "lng": 3.6863166,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.deuxtoursbayard.com",
+   "source": "osm"
+  },
+  {
+   "nom": "ليكول سماوي",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.4710625,3.7193792",
+   "lat": 32.4710625,
+   "lng": 3.7193792,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.4710625,3.7193792",
+   "source": "osm"
+  },
+  {
+   "nom": "Aghlen Paradise",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.4310881,3.6138374",
+   "lat": 32.4310881,
+   "lng": 3.6138374,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.4310881,3.6138374",
+   "source": "osm"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "مسجد بابا سعد",
+   "lat": 32.4927539,
+   "lng": 3.6678971,
+   "coordonnees": {
+    "lat": 32.4927539,
+    "lng": 3.6678971
+   },
+   "mapsUrl": "https://maps.google.com/?q=32.4927539,3.6678971",
+   "source": "osm"
+  },
+  {
+   "nom": "Mosquée Ali Ben Abi Taleb",
+   "lat": 32.4895945,
+   "lng": 3.6821282,
+   "coordonnees": {
+    "lat": 32.4895945,
+    "lng": 3.6821282
+   },
+   "adresse": "حي الحاج مسعود, Ghardaïa",
+   "mapsUrl": "https://maps.google.com/?q=32.4895945,3.6821282",
+   "source": "osm"
+  },
+  {
+   "nom": "Mosquée Abdullah Ibn Abbas",
+   "lat": 32.4922574,
+   "lng": 3.683593,
+   "coordonnees": {
+    "lat": 32.4922574,
+    "lng": 3.683593
+   },
+   "mapsUrl": "https://maps.google.com/?q=32.4922574,3.683593",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Baba Saad",
+   "lat": 32.4936779,
+   "lng": 3.6625888,
+   "coordonnees": {
+    "lat": 32.4936779,
+    "lng": 3.6625888
+   },
+   "mapsUrl": "https://maps.google.com/?q=32.4936779,3.6625888",
+   "source": "osm"
+  },
+  {
+   "nom": "Vieille mosquée de Melika",
+   "lat": 32.4831392,
+   "lng": 3.6866705,
+   "coordonnees": {
+    "lat": 32.4831392,
+    "lng": 3.6866705
+   },
+   "adresse": "Ghardaïa",
+   "mapsUrl": "https://maps.google.com/?q=32.4831392,3.6866705",
+   "source": "osm"
+  },
+  {
+   "nom": "Mosquée Badr",
+   "lat": 32.4768684,
+   "lng": 3.6899006,
+   "coordonnees": {
+    "lat": 32.4768684,
+    "lng": 3.6899006
+   },
+   "mapsUrl": "https://maps.google.com/?q=32.4768684,3.6899006",
+   "source": "osm"
+  },
+  {
+   "nom": "noor",
+   "lat": 32.4963878,
+   "lng": 3.6493163,
+   "coordonnees": {
+    "lat": 32.4963878,
+    "lng": 3.6493163
+   },
+   "mapsUrl": "https://maps.google.com/?q=32.4963878,3.6493163",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Benghanem",
+   "lat": 32.493589,
+   "lng": 3.6482419,
+   "coordonnees": {
+    "lat": 32.493589,
+    "lng": 3.6482419
+   },
+   "mapsUrl": "https://maps.google.com/?q=32.493589,3.6482419",
+   "source": "osm"
+  },
+  {
+   "nom": "Mosquée Kerkoura",
+   "lat": 32.4970445,
+   "lng": 3.6461169,
+   "coordonnees": {
+    "lat": 32.4970445,
+    "lng": 3.6461169
+   },
+   "mapsUrl": "https://maps.google.com/?q=32.4970445,3.6461169",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Al Ghofrane",
+   "lat": 32.4963086,
+   "lng": 3.642947,
+   "coordonnees": {
+    "lat": 32.4963086,
+    "lng": 3.642947
+   },
+   "mapsUrl": "https://maps.google.com/?q=32.4963086,3.642947",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد العتيق بونورة",
+   "lat": 32.4823142,
+   "lng": 3.7035125,
+   "coordonnees": {
+    "lat": 32.4823142,
+    "lng": 3.7035125
+   },
+   "adresse": "Bounoura",
+   "mapsUrl": "https://maps.google.com/?q=32.4823142,3.7035125",
+   "source": "osm"
+  },
+  {
+   "nom": "Mosquée Abu Abdullah",
+   "lat": 32.4773311,
+   "lng": 3.7458515,
+   "coordonnees": {
+    "lat": 32.4773311,
+    "lng": 3.7458515
+   },
+   "mapsUrl": "https://maps.google.com/?q=32.4773311,3.7458515",
+   "source": "osm"
+  },
+  {
+   "nom": "Mosquée Abou Bakr Assidiq",
+   "lat": 32.4763635,
+   "lng": 3.7472207,
+   "coordonnees": {
+    "lat": 32.4763635,
+    "lng": 3.7472207
+   },
+   "adresse": "El Atteuf",
+   "mapsUrl": "https://maps.google.com/?q=32.4763635,3.7472207",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد أبو مسور",
+   "lat": 32.4449681,
+   "lng": 3.7481516,
+   "coordonnees": {
+    "lat": 32.4449681,
+    "lng": 3.7481516
+   },
+   "mapsUrl": "https://maps.google.com/?q=32.4449681,3.7481516",
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "باب السلام وعيسى",
+   "lat": 32.4903373,
+   "lng": 3.6756266,
+   "coordonnees": {
+    "lat": 32.4903373,
+    "lng": 3.6756266
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=32.4903373,3.6756266",
+   "source": "osm"
+  },
+  {
+   "nom": "باب جديد",
+   "lat": 32.4892302,
+   "lng": 3.6702142,
+   "coordonnees": {
+    "lat": 32.4892302,
+    "lng": 3.6702142
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=32.4892302,3.6702142",
+   "source": "osm"
+  },
+  {
+   "nom": "مخبر الأعمال البيطونية",
+   "lat": 32.5061325,
+   "lng": 3.6773468,
+   "coordonnees": {
+    "lat": 32.5061325,
+    "lng": 3.6773468
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=32.5061325,3.6773468",
+   "source": "osm"
+  },
+  {
+   "nom": "الرمز التاريخ لبني مزاب",
+   "lat": 32.4810927,
+   "lng": 3.7000199,
+   "coordonnees": {
+    "lat": 32.4810927,
+    "lng": 3.7000199
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=32.4810927,3.7000199",
+   "source": "osm"
+  },
+  {
+   "nom": "برج عمي زكري",
+   "lat": 32.470525,
+   "lng": 3.7303957,
+   "coordonnees": {
+    "lat": 32.470525,
+    "lng": 3.7303957
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=32.470525,3.7303957",
+   "source": "osm"
+  },
+  {
+   "nom": "Arche de Noe",
+   "lat": 32.4771649,
+   "lng": 3.7355653,
+   "coordonnees": {
+    "lat": 32.4771649,
+    "lng": 3.7355653
+   },
+   "categorie": "Famille",
+   "mapsUrl": "https://maps.google.com/?q=32.4771649,3.7355653",
+   "source": "osm"
+  },
+  {
+   "nom": "باب لالة وسارة",
+   "lat": 32.4755654,
+   "lng": 3.7437835,
+   "coordonnees": {
+    "lat": 32.4755654,
+    "lng": 3.7437835
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=32.4755654,3.7437835",
+   "source": "osm"
+  },
+  {
+   "nom": "باب العسة",
+   "lat": 32.4742161,
+   "lng": 3.7437671,
+   "coordonnees": {
+    "lat": 32.4742161,
+    "lng": 3.7437671
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=32.4742161,3.7437671",
+   "source": "osm"
+  },
+  {
+   "nom": "Mausolée Sidi Brahim",
+   "lat": 32.4736489,
+   "lng": 3.7448504,
+   "coordonnees": {
+    "lat": 32.4736489,
+    "lng": 3.7448504
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=32.4736489,3.7448504",
+   "source": "osm"
+  },
+  {
+   "nom": "باب الخراجة",
+   "lat": 32.476409,
+   "lng": 3.745846,
+   "coordonnees": {
+    "lat": 32.476409,
+    "lng": 3.745846
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=32.476409,3.745846",
+   "source": "osm"
+  },
+  {
+   "nom": "السوق الداخلي",
+   "lat": 32.4753893,
+   "lng": 3.7464724,
+   "coordonnees": {
+    "lat": 32.4753893,
+    "lng": 3.7464724
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=32.4753893,3.7464724",
+   "source": "osm"
+  },
+  {
+   "nom": "باب بن صالح",
+   "lat": 32.4738084,
+   "lng": 3.7477645,
+   "coordonnees": {
+    "lat": 32.4738084,
+    "lng": 3.7477645
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=32.4738084,3.7477645",
+   "source": "osm"
+  },
+  {
+   "nom": "Central a béton COSIDER",
+   "lat": 32.3871589,
+   "lng": 3.7608825,
+   "coordonnees": {
+    "lat": 32.3871589,
+    "lng": 3.7608825
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=32.3871589,3.7608825",
+   "source": "osm"
+  }
+ ],
+ "donneesAVenir": true,
+ "description_en": "Ghardaïa, in Algeria, is a halal-friendly destination with a Halal Trust Score of 4.2/5. Muslim travelers will find a selection of halal restaurants, several mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
+ "metaDescription_en": "Halal guide to Ghardaïa: halal restaurants, prayer times and tips for Muslim travelers. Halal Trust Score 4.2/5.",
+ "nom_en": "Ghardaïa",
+ "boucheries": [],
+ "dataPurgedAt": "2026-07-15"
 }

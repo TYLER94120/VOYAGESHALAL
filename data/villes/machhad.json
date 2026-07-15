@@ -1,2884 +1,2848 @@
 {
-  "slug": "machhad",
-  "nom": "Machhad",
-  "pays": "Iran",
-  "pays_slug": "iran",
-  "continent": "Asie",
-  "region": "Iran",
-  "coordonnees": {
-    "lat": 36.2605,
-    "lng": 59.6168
+ "slug": "machhad",
+ "nom": "Machhad",
+ "pays": "Iran",
+ "pays_slug": "iran",
+ "continent": "Asie",
+ "region": "Iran",
+ "coordonnees": {
+  "lat": 36.2605,
+  "lng": 59.6168
+ },
+ "codeISO": "",
+ "score_halal": 4.7,
+ "halalScore": 9.4,
+ "description": "Ville sainte d'Iran, Machhad accueille des millions de pèlerins au sanctuaire de l'Imam Reza, l'un des plus vastes complexes religieux du monde.",
+ "image": "https://images.unsplash.com/photo-1759930018775-bf3c3fe9bdc6?w=1600&q=80",
+ "image_hero": "https://images.unsplash.com/photo-1759930018775-bf3c3fe9bdc6?w=1600&q=80",
+ "metaDescription": "Ville sainte d'Iran, Machhad accueille des millions de pèlerins au sanctuaire de l'Imam Reza, l'un des plus vastes complexes religieux du monde.",
+ "statistiques": {
+  "restaurants_halal": 36,
+  "mosquees": 39,
+  "hotels": 120
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "رستوران معین درباری",
+   "type": "kebab, chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2871135,59.5980574",
+   "lat": 36.2871135,
+   "lng": 59.5980574,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.7,
-  "halalScore": 9.4,
-  "description": "Ville sainte d'Iran, Machhad accueille des millions de pèlerins au sanctuaire de l'Imam Reza, l'un des plus vastes complexes religieux du monde.",
-  "image": "https://images.unsplash.com/photo-1759930018775-bf3c3fe9bdc6?w=1600&q=80",
-  "image_hero": "https://images.unsplash.com/photo-1759930018775-bf3c3fe9bdc6?w=1600&q=80",
-  "metaDescription": "Ville sainte d'Iran, Machhad accueille des millions de pèlerins au sanctuaire de l'Imam Reza, l'un des plus vastes complexes religieux du monde.",
-  "statistiques": {
-    "restaurants_halal": 36,
-    "mosquees": 1,
-    "hotels": 120
+  {
+   "nom": "ساندویچ بار فاخته",
+   "type": "sandwich, ساندویچ سرد",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3033511,59.5711228",
+   "lat": 36.3033511,
+   "lng": 59.5711228,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "رستوران پسران کریم (فرهاد)",
+   "type": "kebab, meat",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3120588,59.5599301",
+   "lat": 36.3120588,
+   "lng": 59.5599301,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [
-    {
-      "nom": "رستوران معین درباری",
-      "type": "kebab, chicken",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2871135,59.5980574",
-      "lat": 36.2871135,
-      "lng": 59.5980574,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "ساندویچ بار فاخته",
-      "type": "sandwich, ساندویچ سرد",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.3033511,59.5711228",
-      "lat": 36.3033511,
-      "lng": 59.5711228,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "رستوران پسران کریم (فرهاد)",
-      "type": "kebab, meat",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.3120588,59.5599301",
-      "lat": 36.3120588,
-      "lng": 59.5599301,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "پسران کریم",
-      "type": "persian, arab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.339882,59.5869186",
-      "lat": 36.339882,
-      "lng": 59.5869186,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "سالن غذاخوری پردیس",
-      "type": "Restaurant halal",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.3086425,59.5178355",
-      "lat": 36.3086425,
-      "lng": 59.5178355,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "فست فود قطره طلا",
-      "type": "pizza, sandwich, pasta, noodle, salad, hot dog, burger, chicken",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.3190244,59.5246931",
-      "lat": 36.3190244,
-      "lng": 59.5246931,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Arbab Kabab",
-      "type": "kebab, persian food, kabab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.3334985,59.5369451",
-      "lat": 36.3334985,
-      "lng": 59.5369451,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "کافه کباب ماهور",
-      "type": "kebab, chicken, rice, asian, iranian",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.3354217,59.5374803",
-      "lat": 36.3354217,
-      "lng": 59.5374803,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "بمب کره کباب دیاکو",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.3255953,59.5172681",
-      "lat": 36.3255953,
-      "lng": 59.5172681,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "تیستی پلاس",
-      "type": "pizza, sandwich, burger, hot dog, fries",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.3046445,59.4990878",
-      "lat": 36.3046445,
-      "lng": 59.4990878,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "کترینگ به پخت",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2775149,59.6221875",
-      "lat": 36.2775149,
-      "lng": 59.6221875,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "کباب طیب",
-      "type": "persian",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2764697,59.6309941",
-      "lat": 36.2764697,
-      "lng": 59.6309941,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "طباخی حقیقت",
-      "type": "persian",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2682329,59.5875628",
-      "lat": 36.2682329,
-      "lng": 59.5875628,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "چلوکباب هاتف",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2209466,59.616975",
-      "lat": 36.2209466,
-      "lng": 59.616975,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "رستوران درویش",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2893143,59.580234",
-      "lat": 36.2893143,
-      "lng": 59.580234,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "کباب حلیم شله رضوان",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.3029137,59.6196503",
-      "lat": 36.3029137,
-      "lng": 59.6196503,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "کباب سرا",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.309988,59.6136486",
-      "lat": 36.309988,
-      "lng": 59.6136486,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "رستوران البیک",
-      "type": "arabic",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2923524,59.5669491",
-      "lat": 36.2923524,
-      "lng": 59.5669491,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "کباب شهرما",
-      "type": "persian",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.3020291,59.5764315",
-      "lat": 36.3020291,
-      "lng": 59.5764315,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "نان داغ کباب داغ امید رضاشهر",
-      "type": "persian",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2847432,59.5500401",
-      "lat": 36.2847432,
-      "lng": 59.5500401,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "رستوران لذیذ (الماس)",
-      "type": "pizza, burger, italian, kebab, chicken, asian, international, steak house, coffee shop, fish and chips, seafood",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.3052094,59.5677116",
-      "lat": 36.3052094,
-      "lng": 59.5677116,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "کباب وحلیم تک بهارستان",
-      "type": "kebab, حلیم",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.3128253,59.5627045",
-      "lat": 36.3128253,
-      "lng": 59.5627045,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "معین درباری",
-      "type": "kebab, chicken, asian, seafood",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.297534,59.543371",
-      "lat": 36.297534,
-      "lng": 59.543371,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "کبابی",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.3406662,59.6284054",
-      "lat": 36.3406662,
-      "lng": 59.6284054,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "رویال طلایی",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.3154075,59.5419062",
-      "lat": 36.3154075,
-      "lng": 59.5419062,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Terrasse Restaurant",
-      "type": "persian",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.3213965,59.5330039",
-      "lat": 36.3213965,
-      "lng": 59.5330039,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "ضیافت نور",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.3340947,59.55051",
-      "lat": 36.3340947,
-      "lng": 59.55051,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "صبحانه",
-      "type": "pizza, persian, breakfast",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.3242815,59.5339335",
-      "lat": 36.3242815,
-      "lng": 59.5339335,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "قصر هدیش",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.3387592,59.5527408",
-      "lat": 36.3387592,
-      "lng": 59.5527408,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "رستوران لیالی لبنان",
-      "type": "arab, pizza, fast food",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.3208885,59.5240206",
-      "lat": 36.3208885,
-      "lng": 59.5240206,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "لیالی لبنان",
-      "type": "arab, pizza",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.3208941,59.5240087",
-      "lat": 36.3208941,
-      "lng": 59.5240087,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "جیگر کبابیستا",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.3284573,59.5287326",
-      "lat": 36.3284573,
-      "lng": 59.5287326,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "رستوران و کترینگ ریخته گرزاده",
-      "type": "persian",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.3220718,59.5200119",
-      "lat": 36.3220718,
-      "lng": 59.5200119,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "استانبول",
-      "type": "turkish",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.3151351,59.5097878",
-      "lat": 36.3151351,
-      "lng": 59.5097878,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "کوهسر",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.3007874,59.496437",
-      "lat": 36.3007874,
-      "lng": 59.496437,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "راستگو",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.3245908,59.5121148",
-      "lat": 36.3245908,
-      "lng": 59.5121148,
-      "halalConfidence": "likely",
-      "source": "osm"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "سراى امدادگران (زائر سراى) هلال احمر",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2655982,59.6119214",
-      "lat": 36.2655982,
-      "lng": 59.6119214,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2655982,59.6119214",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل نیک داد",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2719055,59.61658",
-      "lat": 36.2719055,
-      "lng": 59.61658,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2719055,59.61658",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل همراز",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2724396,59.6166202",
-      "lat": 36.2724396,
-      "lng": 59.6166202,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2724396,59.6166202",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل آپارتمان معین",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2682789,59.6288474",
-      "lat": 36.2682789,
-      "lng": 59.6288474,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2682789,59.6288474",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل آپارتمان قصر خورشید",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2726765,59.6219916",
-      "lat": 36.2726765,
-      "lng": 59.6219916,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2726765,59.6219916",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل اسپینو",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2733457,59.6150351",
-      "lat": 36.2733457,
-      "lng": 59.6150351,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2733457,59.6150351",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل سیمرغ",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2733845,59.6186648",
-      "lat": 36.2733845,
-      "lng": 59.6186648,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2733845,59.6186648",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل تیانا",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2734386,59.6145442",
-      "lat": 36.2734386,
-      "lng": 59.6145442,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2734386,59.6145442",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل آفریقا",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2735489,59.614343",
-      "lat": 36.2735489,
-      "lng": 59.614343,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2735489,59.614343",
-      "source": "osm"
-    },
-    {
-      "nom": "ستاد اسکان فرهنگیان",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2601896,59.5996198",
-      "lat": 36.2601896,
-      "lng": 59.5996198,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2601896,59.5996198",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل سی نور",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 5,
-      "mapsUrl": "https://maps.google.com/?q=36.274575,59.6155593",
-      "lat": 36.274575,
-      "lng": 59.6155593,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.274575,59.6155593",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل نما٨",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2743213,59.6116828",
-      "lat": 36.2743213,
-      "lng": 59.6116828,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2743213,59.6116828",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل حدیث",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2691796,59.6022542",
-      "lat": 36.2691796,
-      "lng": 59.6022542,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2691796,59.6022542",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل آپارتمان آرکس",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.275104,59.6138546",
-      "lat": 36.275104,
-      "lng": 59.6138546,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.275104,59.6138546",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل یلدا",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2748118,59.611913",
-      "lat": 36.2748118,
-      "lng": 59.611913,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2748118,59.611913",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل شاکر",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2715292,59.604435",
-      "lat": 36.2715292,
-      "lng": 59.604435,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2715292,59.604435",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل سفیران",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.275646,59.616906",
-      "lat": 36.275646,
-      "lng": 59.616906,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.275646,59.616906",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل آپارتمان میزبان",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2703937,59.6023689",
-      "lat": 36.2703937,
-      "lng": 59.6023689,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2703937,59.6023689",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل حسینی",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2756335,59.6136779",
-      "lat": 36.2756335,
-      "lng": 59.6136779,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2756335,59.6136779",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل هرمس",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2752486,59.6115294",
-      "lat": 36.2752486,
-      "lng": 59.6115294,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2752486,59.6115294",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل آپارتمان نظام مهندسی یزد",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2706374,59.6023043",
-      "lat": 36.2706374,
-      "lng": 59.6023043,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2706374,59.6023043",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل آپارتمان دانشگاه علوم پزشکی تبریز",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2753549,59.6114006",
-      "lat": 36.2753549,
-      "lng": 59.6114006,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2753549,59.6114006",
-      "source": "osm"
-    },
-    {
-      "nom": "سوئیت آپارتمان ذرات",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2689935,59.6005767",
-      "lat": 36.2689935,
-      "lng": 59.6005767,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2689935,59.6005767",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل میعاد",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2740351,59.6069093",
-      "lat": 36.2740351,
-      "lng": 59.6069093,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2740351,59.6069093",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل آپارتمان نگار",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2691746,59.6003499",
-      "lat": 36.2691746,
-      "lng": 59.6003499,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2691746,59.6003499",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل آپارتمان آجیلیان",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2754567,59.610197",
-      "lat": 36.2754567,
-      "lng": 59.610197,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2754567,59.610197",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل اریکا",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2738971,59.627451",
-      "lat": 36.2738971,
-      "lng": 59.627451,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2738971,59.627451",
-      "source": "osm"
-    },
-    {
-      "nom": "پویان",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2669216,59.5986281",
-      "lat": 36.2669216,
-      "lng": 59.5986281,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2669216,59.5986281",
-      "source": "osm"
-    },
-    {
-      "nom": "أمينيان",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2756974,59.6104451",
-      "lat": 36.2756974,
-      "lng": 59.6104451,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2756974,59.6104451",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل مشهد",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2713659,59.6021086",
-      "lat": 36.2713659,
-      "lng": 59.6021086,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2713659,59.6021086",
-      "source": "osm"
-    },
-    {
-      "nom": "سی نور",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2761118,59.6118199",
-      "lat": 36.2761118,
-      "lng": 59.6118199,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2761118,59.6118199",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل ارسان",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2760875,59.6116152",
-      "lat": 36.2760875,
-      "lng": 59.6116152,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2760875,59.6116152",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل آتوسا",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2764453,59.6136144",
-      "lat": 36.2764453,
-      "lng": 59.6136144,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2764453,59.6136144",
-      "source": "osm"
-    },
-    {
-      "nom": "سوئیت آپارتمان هشت بهشت",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2750799,59.6081793",
-      "lat": 36.2750799,
-      "lng": 59.6081793,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2750799,59.6081793",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل بین‌المللی گلدن پالاس",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 5,
-      "mapsUrl": "https://maps.google.com/?q=36.2720775,59.6027912",
-      "lat": 36.2720775,
-      "lng": 59.6027912,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.ghasrtalaee.com",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل صدف",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2763901,59.612294",
-      "lat": 36.2763901,
-      "lng": 59.612294,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2763901,59.612294",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل آریو",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2739684,59.6054046",
-      "lat": 36.2739684,
-      "lng": 59.6054046,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2739684,59.6054046",
-      "source": "osm"
-    },
-    {
-      "nom": "واحد اقامة",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2760137,59.6099669",
-      "lat": 36.2760137,
-      "lng": 59.6099669,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2760137,59.6099669",
-      "source": "osm"
-    },
-    {
-      "nom": "زائرسرای بسیج شرکت ملی صنایع پتروشیمی",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2741265,59.6052817",
-      "lat": 36.2741265,
-      "lng": 59.6052817,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2741265,59.6052817",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل آپارتمان قصر گل",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2726364,59.6028042",
-      "lat": 36.2726364,
-      "lng": 59.6028042,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2726364,59.6028042",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل آپارتمان بیت الزهرا(س)",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2757117,59.6084892",
-      "lat": 36.2757117,
-      "lng": 59.6084892,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2757117,59.6084892",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل گل گندم شباهنگ",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2640274,59.5965724",
-      "lat": 36.2640274,
-      "lng": 59.5965724,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2640274,59.5965724",
-      "source": "osm"
-    },
-    {
-      "nom": "فالح",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2709861,59.6006913",
-      "lat": 36.2709861,
-      "lng": 59.6006913,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2709861,59.6006913",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل پارمیدا",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2749891,59.6063608",
-      "lat": 36.2749891,
-      "lng": 59.6063608,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2749891,59.6063608",
-      "source": "osm"
-    },
-    {
-      "nom": "فندق حلما",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.274551,59.6054481",
-      "lat": 36.274551,
-      "lng": 59.6054481,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.274551,59.6054481",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل حلما",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2745234,59.6053854",
-      "lat": 36.2745234,
-      "lng": 59.6053854,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.helmahotel.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل رضوان",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2756202,59.6073962",
-      "lat": 36.2756202,
-      "lng": 59.6073962,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2756202,59.6073962",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل ارمغان ۱",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2764508,59.6095848",
-      "lat": 36.2764508,
-      "lng": 59.6095848,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2764508,59.6095848",
-      "source": "osm"
-    },
-    {
-      "nom": "Nasim",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2729739,59.6024957",
-      "lat": 36.2729739,
-      "lng": 59.6024957,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2729739,59.6024957",
-      "source": "osm"
-    },
-    {
-      "nom": "شقة سويت مال احمد",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2768601,59.6109357",
-      "lat": 36.2768601,
-      "lng": 59.6109357,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2768601,59.6109357",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل قصر سفید",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2755324,59.6068674",
-      "lat": 36.2755324,
-      "lng": 59.6068674,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2755324,59.6068674",
-      "source": "osm"
-    },
-    {
-      "nom": "فندق سويت",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2770079,59.6114998",
-      "lat": 36.2770079,
-      "lng": 59.6114998,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2770079,59.6114998",
-      "source": "osm"
-    },
-    {
-      "nom": "زایرسرای شهدای شرکت پالایش نفت اصفهان",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2707909,59.59993",
-      "lat": 36.2707909,
-      "lng": 59.59993,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2707909,59.59993",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل قصر سفید",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2763081,59.608764",
-      "lat": 36.2763081,
-      "lng": 59.608764,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2763081,59.608764",
-      "source": "osm"
-    },
-    {
-      "nom": "زائرسرای فرهنگیان استان تهران",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2702296,59.5993501",
-      "lat": 36.2702296,
-      "lng": 59.5993501,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2702296,59.5993501",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل میامی",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2715076,59.6004814",
-      "lat": 36.2715076,
-      "lng": 59.6004814,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2715076,59.6004814",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل دیانا",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2765697,59.6092495",
-      "lat": 36.2765697,
-      "lng": 59.6092495,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2765697,59.6092495",
-      "source": "osm"
-    },
-    {
-      "nom": "زائرسرای کارکنان شهرداری شاهرود",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2703315,59.5992978",
-      "lat": 36.2703315,
-      "lng": 59.5992978,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2703315,59.5992978",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل آپارتمان کاسپین",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2693813,59.5985173",
-      "lat": 36.2693813,
-      "lng": 59.5985173,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2693813,59.5985173",
-      "source": "osm"
-    },
-    {
-      "nom": "سكن جديد",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2632156,59.5957083",
-      "lat": 36.2632156,
-      "lng": 59.5957083,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2632156,59.5957083",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل مجلل درویش",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2753314,59.605765",
-      "lat": 36.2753314,
-      "lng": 59.605765,
-      "halalFriendly": false,
-      "bookingUrl": "https://darvishihotel.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل ذاکر",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2762908,59.6077126",
-      "lat": 36.2762908,
-      "lng": 59.6077126,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2762908,59.6077126",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل رودبار",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2775774,59.6120806",
-      "lat": 36.2775774,
-      "lng": 59.6120806,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2775774,59.6120806",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل آپارتمان صدر",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.277735,59.620663",
-      "lat": 36.277735,
-      "lng": 59.620663,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.277735,59.620663",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل آپارتمان حامی",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2734278,59.6018118",
-      "lat": 36.2734278,
-      "lng": 59.6018118,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2734278,59.6018118",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل تبرک",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2779558,59.6129054",
-      "lat": 36.2779558,
-      "lng": 59.6129054,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2779558,59.6129054",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل آپارتمان دینا",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.273945,59.6023404",
-      "lat": 36.273945,
-      "lng": 59.6023404,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.instagram.com/arash_._jami?igsh=bjF0OTRqc3k4ajEy",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل پرستاره",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2765459,59.6072487",
-      "lat": 36.2765459,
-      "lng": 59.6072487,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2765459,59.6072487",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل پانیذ",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2753091,59.6043652",
-      "lat": 36.2753091,
-      "lng": 59.6043652,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2753091,59.6043652",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل ایوان ۱",
-      "categorie": "Hôtel",
-      "priceRange": "€€€",
-      "score": 3,
-      "mapsUrl": "https://maps.google.com/?q=36.2765569,59.6070099",
-      "lat": 36.2765569,
-      "lng": 59.6070099,
-      "halalFriendly": false,
-      "bookingUrl": "https://eyvantrip.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "الماس ۲",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 5,
-      "mapsUrl": "https://maps.google.com/?q=36.2764457,59.6062307",
-      "lat": 36.2764457,
-      "lng": 59.6062307,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2764457,59.6062307",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل ملیسا",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2760227,59.6052128",
-      "lat": 36.2760227,
-      "lng": 59.6052128,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2760227,59.6052128",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل عرشیا",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.278198,59.6119036",
-      "lat": 36.278198,
-      "lng": 59.6119036,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.278198,59.6119036",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل آپارتمان یادگار",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2615539,59.59433",
-      "lat": 36.2615539,
-      "lng": 59.59433,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2615539,59.59433",
-      "source": "osm"
-    },
-    {
-      "nom": "کارن",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "score": 2,
-      "mapsUrl": "https://maps.google.com/?q=36.2785368,59.6129391",
-      "lat": 36.2785368,
-      "lng": 59.6129391,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2785368,59.6129391",
-      "source": "osm"
-    },
-    {
-      "nom": "شقتي",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2784929,59.6124852",
-      "lat": 36.2784929,
-      "lng": 59.6124852,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2784929,59.6124852",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل مینو",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2769676,59.6067792",
-      "lat": 36.2769676,
-      "lng": 59.6067792,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2769676,59.6067792",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل ساوین",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2780655,59.6101608",
-      "lat": 36.2780655,
-      "lng": 59.6101608,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2780655,59.6101608",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل قاضی",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2787558,59.614225",
-      "lat": 36.2787558,
-      "lng": 59.614225,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2787558,59.614225",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل های نگارستان",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2748443,59.602464",
-      "lat": 36.2748443,
-      "lng": 59.602464,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2748443,59.602464",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل گلایول",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2786001,59.6117359",
-      "lat": 36.2786001,
-      "lng": 59.6117359,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2786001,59.6117359",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل آدینا",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2772705,59.6068392",
-      "lat": 36.2772705,
-      "lng": 59.6068392,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2772705,59.6068392",
-      "source": "osm"
-    },
-    {
-      "nom": "نورى زاده",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2788884,59.6131235",
-      "lat": 36.2788884,
-      "lng": 59.6131235,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2788884,59.6131235",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل مرمر",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2788061,59.6123404",
-      "lat": 36.2788061,
-      "lng": 59.6123404,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2788061,59.6123404",
-      "source": "osm"
-    },
-    {
-      "nom": "مرکز آموزشی رفاهی فرهنگیان مشهد",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2774603,59.6070487",
-      "lat": 36.2774603,
-      "lng": 59.6070487,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2774603,59.6070487",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل قصر",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2777584,59.6076747",
-      "lat": 36.2777584,
-      "lng": 59.6076747,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2777584,59.6076747",
-      "source": "osm"
-    },
-    {
-      "nom": "رنگین کمان",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2789434,59.6124526",
-      "lat": 36.2789434,
-      "lng": 59.6124526,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2789434,59.6124526",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل سی و سه پل",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2790715,59.6132561",
-      "lat": 36.2790715,
-      "lng": 59.6132561,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2790715,59.6132561",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2781783,59.6088264",
-      "lat": 36.2781783,
-      "lng": 59.6088264,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2781783,59.6088264",
-      "source": "osm"
-    },
-    {
-      "nom": "قمر بنی هاشم",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2789449,59.6121671",
-      "lat": 36.2789449,
-      "lng": 59.6121671,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2789449,59.6121671",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل ادمان",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2771752,59.6059504",
-      "lat": 36.2771752,
-      "lng": 59.6059504,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2771752,59.6059504",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل برين",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2787226,59.6107207",
-      "lat": 36.2787226,
-      "lng": 59.6107207,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2787226,59.6107207",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل رفاه پردیس",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2792218,59.6135223",
-      "lat": 36.2792218,
-      "lng": 59.6135223,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2792218,59.6135223",
-      "source": "osm"
-    },
-    {
-      "nom": "نقش جهان",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2789813,59.6114734",
-      "lat": 36.2789813,
-      "lng": 59.6114734,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2789813,59.6114734",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل ارمغان ۲",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2790845,59.6120202",
-      "lat": 36.2790845,
-      "lng": 59.6120202,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2790845,59.6120202",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2784078,59.60896",
-      "lat": 36.2784078,
-      "lng": 59.60896,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2784078,59.60896",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل آپارتمان مشکات",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2786274,59.6097599",
-      "lat": 36.2786274,
-      "lng": 59.6097599,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2786274,59.6097599",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل یاران",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2795218,59.6146499",
-      "lat": 36.2795218,
-      "lng": 59.6146499,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2795218,59.6146499",
-      "source": "osm"
-    },
-    {
-      "nom": "الڤند",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.274968,59.6012626",
-      "lat": 36.274968,
-      "lng": 59.6012626,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.274968,59.6012626",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل حیدری",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.279092,59.6103237",
-      "lat": 36.279092,
-      "lng": 59.6103237,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.279092,59.6103237",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل رواق",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2788987,59.6094516",
-      "lat": 36.2788987,
-      "lng": 59.6094516,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2788987,59.6094516",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل خاور",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2784181,59.6078034",
-      "lat": 36.2784181,
-      "lng": 59.6078034,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2784181,59.6078034",
-      "source": "osm"
-    },
-    {
-      "nom": "علاء هتل",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2787371,59.6087555",
-      "lat": 36.2787371,
-      "lng": 59.6087555,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2787371,59.6087555",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل دیبا",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.279361,59.6112996",
-      "lat": 36.279361,
-      "lng": 59.6112996,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.279361,59.6112996",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل المپیا",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2794542,59.6117118",
-      "lat": 36.2794542,
-      "lng": 59.6117118,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2794542,59.6117118",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل قصر آیدین",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2775675,59.6053704",
-      "lat": 36.2775675,
-      "lng": 59.6053704,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2775675,59.6053704",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل ایوان",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2791039,59.6099751",
-      "lat": 36.2791039,
-      "lng": 59.6099751,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2791039,59.6099751",
-      "source": "osm"
-    },
-    {
-      "nom": "مجتمع فرهنگی دانشگاه علوم پزشکی بقیه الله اعظم",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2723737,59.5977258",
-      "lat": 36.2723737,
-      "lng": 59.5977258,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2723737,59.5977258",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل سعید",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2797049,59.613097",
-      "lat": 36.2797049,
-      "lng": 59.613097,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2797049,59.613097",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل فرحان",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2798064,59.6139097",
-      "lat": 36.2798064,
-      "lng": 59.6139097,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2798064,59.6139097",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل اپارتمان جمالی",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2795431,59.6118606",
-      "lat": 36.2795431,
-      "lng": 59.6118606,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2795431,59.6118606",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل صدرا",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2789829,59.6092442",
-      "lat": 36.2789829,
-      "lng": 59.6092442,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2789829,59.6092442",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل مرآت",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2773017,59.6045919",
-      "lat": 36.2773017,
-      "lng": 59.6045919,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2773017,59.6045919",
-      "source": "osm"
-    },
-    {
-      "nom": "ثامن الحجج",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2791346,59.6096742",
-      "lat": 36.2791346,
-      "lng": 59.6096742,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2791346,59.6096742",
-      "source": "osm"
-    },
-    {
-      "nom": "ثامن الحجج",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2791461,59.6096606",
-      "lat": 36.2791461,
-      "lng": 59.6096606,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2791461,59.6096606",
-      "source": "osm"
-    },
-    {
-      "nom": "هتل سبحان",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2777377,59.6053802",
-      "lat": 36.2777377,
-      "lng": 59.6053802,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2777377,59.6053802",
-      "source": "osm"
-    },
-    {
-      "nom": "فندق طاووس",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.277436,59.6046522",
-      "lat": 36.277436,
-      "lng": 59.6046522,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.277436,59.6046522",
-      "source": "osm"
-    },
-    {
-      "nom": "هتیل سعید",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2798258,59.6128",
-      "lat": 36.2798258,
-      "lng": 59.6128,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2798258,59.6128",
-      "source": "osm"
-    },
-    {
-      "nom": "هنل رسالت",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2797572,59.6122414",
-      "lat": 36.2797572,
-      "lng": 59.6122414,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2797572,59.6122414",
-      "source": "osm"
-    },
-    {
-      "nom": "هزارویک",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=36.2799452,59.6132833",
-      "lat": 36.2799452,
-      "lng": 59.6132833,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=36.2799452,59.6132833",
-      "source": "osm"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Machhad",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Machhad",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Machhad%20Machhad"
-    },
-    {
-      "nom": "هییت جاننثاران حسینی روستای نرم",
-      "lat": 36.2730168,
-      "lng": 59.6224801,
-      "coordonnees": {
-        "lat": 36.2730168,
-        "lng": 59.6224801
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.2730168,59.6224801",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد الرسول",
-      "lat": 36.2619705,
-      "lng": 59.599961,
-      "coordonnees": {
-        "lat": 36.2619705,
-        "lng": 59.599961
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.2619705,59.599961",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد و حوزه علمیه حضرت سید الشهدا (علیه السلام)",
-      "lat": 36.2674257,
-      "lng": 59.6021941,
-      "coordonnees": {
-        "lat": 36.2674257,
-        "lng": 59.6021941
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.2674257,59.6021941",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد الحمید",
-      "lat": 36.275503,
-      "lng": 59.6159919,
-      "coordonnees": {
-        "lat": 36.275503,
-        "lng": 59.6159919
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.275503,59.6159919",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد موسی ابن الجعفر",
-      "lat": 36.2660351,
-      "lng": 59.5978887,
-      "coordonnees": {
-        "lat": 36.2660351,
-        "lng": 59.5978887
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.2660351,59.5978887",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد امام حسین",
-      "lat": 36.2746793,
-      "lng": 59.6267454,
-      "coordonnees": {
-        "lat": 36.2746793,
-        "lng": 59.6267454
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.2746793,59.6267454",
-      "source": "osm"
-    },
-    {
-      "nom": "حسينيه آيت الله طبسي حائري",
-      "lat": 36.2761045,
-      "lng": 59.607821,
-      "coordonnees": {
-        "lat": 36.2761045,
-        "lng": 59.607821
-      },
-      "adresse": "امام رضا ۱۸, mashhad",
-      "mapsUrl": "https://maps.google.com/?q=36.2761045,59.607821",
-      "source": "osm"
-    },
-    {
-      "nom": "مجتمع فرهنگی مذهبی جامعة الحسین",
-      "lat": 36.2716113,
-      "lng": 59.6333268,
-      "coordonnees": {
-        "lat": 36.2716113,
-        "lng": 59.6333268
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.2716113,59.6333268",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد صنعتگران",
-      "lat": 36.2740387,
-      "lng": 59.6026379,
-      "coordonnees": {
-        "lat": 36.2740387,
-        "lng": 59.6026379
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.2740387,59.6026379",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد شجره",
-      "lat": 36.2773568,
-      "lng": 59.6235539,
-      "coordonnees": {
-        "lat": 36.2773568,
-        "lng": 59.6235539
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.2773568,59.6235539",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد چهارده معصوم",
-      "lat": 36.269854,
-      "lng": 59.5980882,
-      "coordonnees": {
-        "lat": 36.269854,
-        "lng": 59.5980882
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.269854,59.5980882",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجدالزهرا",
-      "lat": 36.2452189,
-      "lng": 59.6049758,
-      "coordonnees": {
-        "lat": 36.2452189,
-        "lng": 59.6049758
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.2452189,59.6049758",
-      "source": "osm"
-    },
-    {
-      "nom": "حسینیه سربیشه ای ها",
-      "lat": 36.2774062,
-      "lng": 59.6077193,
-      "coordonnees": {
-        "lat": 36.2774062,
-        "lng": 59.6077193
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.2774062,59.6077193",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد جواد الائمه",
-      "lat": 36.2627722,
-      "lng": 59.5936928,
-      "coordonnees": {
-        "lat": 36.2627722,
-        "lng": 59.5936928
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.2627722,59.5936928",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد چهارده معصوم (س)",
-      "lat": 36.2743499,
-      "lng": 59.5995645,
-      "coordonnees": {
-        "lat": 36.2743499,
-        "lng": 59.5995645
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.2743499,59.5995645",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد ولیعصر",
-      "lat": 36.2636316,
-      "lng": 59.5910466,
-      "coordonnees": {
-        "lat": 36.2636316,
-        "lng": 59.5910466
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.2636316,59.5910466",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد بقیه الله",
-      "lat": 36.2717717,
-      "lng": 59.6394474,
-      "coordonnees": {
-        "lat": 36.2717717,
-        "lng": 59.6394474
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.2717717,59.6394474",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد جواد ائمه",
-      "lat": 36.2586938,
-      "lng": 59.6434718,
-      "coordonnees": {
-        "lat": 36.2586938,
-        "lng": 59.6434718
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.2586938,59.6434718",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد شایسته",
-      "lat": 36.2810583,
-      "lng": 59.6253514,
-      "coordonnees": {
-        "lat": 36.2810583,
-        "lng": 59.6253514
-      },
-      "adresse": "خیابان سرخس, مشهد",
-      "mapsUrl": "https://maps.google.com/?q=36.2810583,59.6253514",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد جفایی",
-      "lat": 36.2817094,
-      "lng": 59.6099774,
-      "coordonnees": {
-        "lat": 36.2817094,
-        "lng": 59.6099774
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.2817094,59.6099774",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد عباسی",
-      "lat": 36.2764746,
-      "lng": 59.5977804,
-      "coordonnees": {
-        "lat": 36.2764746,
-        "lng": 59.5977804
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.2764746,59.5977804",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد ابا عبدالله",
-      "lat": 36.2725153,
-      "lng": 59.5927371,
-      "coordonnees": {
-        "lat": 36.2725153,
-        "lng": 59.5927371
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.2725153,59.5927371",
-      "source": "osm"
-    },
-    {
-      "nom": "حسینیه و زائر سرای سیدالشهدا",
-      "lat": 36.2825267,
-      "lng": 59.6078199,
-      "coordonnees": {
-        "lat": 36.2825267,
-        "lng": 59.6078199
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.2825267,59.6078199",
-      "source": "osm"
-    },
-    {
-      "nom": "حسینیه نقویه",
-      "lat": 36.2807498,
-      "lng": 59.6316608,
-      "coordonnees": {
-        "lat": 36.2807498,
-        "lng": 59.6316608
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.2807498,59.6316608",
-      "source": "osm"
-    },
-    {
-      "nom": "حسینیه و مجتمع فرهنگی مذهبی حضرت زینب (س)",
-      "lat": 36.2802661,
-      "lng": 59.6007095,
-      "coordonnees": {
-        "lat": 36.2802661,
-        "lng": 59.6007095
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.2802661,59.6007095",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد سجادیه",
-      "lat": 36.2817793,
-      "lng": 59.630043,
-      "coordonnees": {
-        "lat": 36.2817793,
-        "lng": 59.630043
-      },
-      "adresse": "گلریز۲",
-      "mapsUrl": "https://maps.google.com/?q=36.2817793,59.630043",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد حضرت ابوالفضل",
-      "lat": 36.2710776,
-      "lng": 59.5898954,
-      "coordonnees": {
-        "lat": 36.2710776,
-        "lng": 59.5898954
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.2710776,59.5898954",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد و حسینیه سیستانی‌ها",
-      "lat": 36.2652845,
-      "lng": 59.587058,
-      "coordonnees": {
-        "lat": 36.2652845,
-        "lng": 59.587058
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.2652845,59.587058",
-      "source": "osm"
-    },
-    {
-      "nom": "حسینیه",
-      "lat": 36.2847541,
-      "lng": 59.6206891,
-      "coordonnees": {
-        "lat": 36.2847541,
-        "lng": 59.6206891
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.2847541,59.6206891",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد قبله",
-      "lat": 36.285794,
-      "lng": 59.619366,
-      "coordonnees": {
-        "lat": 36.285794,
-        "lng": 59.619366
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.285794,59.619366",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد فاطمیه",
-      "lat": 36.2700852,
-      "lng": 59.5874745,
-      "coordonnees": {
-        "lat": 36.2700852,
-        "lng": 59.5874745
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.2700852,59.5874745",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد امام جعفر صادق (ع)",
-      "lat": 36.2814117,
-      "lng": 59.6350414,
-      "coordonnees": {
-        "lat": 36.2814117,
-        "lng": 59.6350414
-      },
-      "adresse": "چمن ۷۶",
-      "mapsUrl": "https://maps.google.com/?q=36.2814117,59.6350414",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد حاج فیض الله",
-      "lat": 36.2820414,
-      "lng": 59.5990693,
-      "coordonnees": {
-        "lat": 36.2820414,
-        "lng": 59.5990693
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.2820414,59.5990693",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد الرسول",
-      "lat": 36.2648886,
-      "lng": 59.584824,
-      "coordonnees": {
-        "lat": 36.2648886,
-        "lng": 59.584824
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.2648886,59.584824",
-      "source": "osm"
-    },
-    {
-      "nom": "حسینیه شهید محمد حسین دلدار",
-      "lat": 36.2760848,
-      "lng": 59.5902848,
-      "coordonnees": {
-        "lat": 36.2760848,
-        "lng": 59.5902848
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.2760848,59.5902848",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد و حسینیه جواهری",
-      "lat": 36.2813239,
-      "lng": 59.5963206,
-      "coordonnees": {
-        "lat": 36.2813239,
-        "lng": 59.5963206
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.2813239,59.5963206",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد المهدی",
-      "lat": 36.2673418,
-      "lng": 59.5848957,
-      "coordonnees": {
-        "lat": 36.2673418,
-        "lng": 59.5848957
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.2673418,59.5848957",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد گوهرشاد",
-      "lat": 36.2874143,
-      "lng": 59.6145559,
-      "coordonnees": {
-        "lat": 36.2874143,
-        "lng": 59.6145559
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.2874143,59.6145559",
-      "source": "osm"
-    },
-    {
-      "nom": "حسینیه انصارالحسین",
-      "lat": 36.2837428,
-      "lng": 59.5971321,
-      "coordonnees": {
-        "lat": 36.2837428,
-        "lng": 59.5971321
-      },
-      "mapsUrl": "https://maps.google.com/?q=36.2837428,59.5971321",
-      "source": "osm"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Sanctuaire de l'Imam Reza",
-      "categorie": "Spirituel",
-      "description": "Immense complexe sacré aux dômes et minarets dorés.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Sanctuaire%20de%20l%27Imam%20Reza%20Machhad"
-    },
-    {
-      "id": "a2",
-      "nom": "Grand bazar Reza",
-      "categorie": "Shopping",
-      "description": "Safran, tapis et souvenirs religieux.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Grand%20bazar%20Reza%20Machhad"
-    },
-    {
-      "id": "a3",
-      "nom": "Mausolée de Ferdowsi (Tous)",
-      "categorie": "Culture",
-      "description": "Tombeau du grand poète à proximité.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Mausol%C3%A9e%20de%20Ferdowsi%20%28Tous%29%20Machhad"
-    },
-    {
-      "nom": "پارک ژوراسیک مشهد",
-      "lat": 36.253263,
-      "lng": 59.608233,
-      "coordonnees": {
-        "lat": 36.253263,
-        "lng": 59.608233
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=36.253263,59.608233",
-      "source": "osm"
-    },
-    {
-      "nom": "مولات",
-      "lat": 36.2742959,
-      "lng": 59.6178864,
-      "coordonnees": {
-        "lat": 36.2742959,
-        "lng": 59.6178864
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=36.2742959,59.6178864",
-      "source": "osm"
-    },
-    {
-      "nom": "حي العرب في مشهد وسوق وباجه عراقيه",
-      "lat": 36.2627523,
-      "lng": 59.6337278,
-      "coordonnees": {
-        "lat": 36.2627523,
-        "lng": 59.6337278
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=36.2627523,59.6337278",
-      "source": "osm"
-    },
-    {
-      "nom": "فلافل شهرک عربها",
-      "lat": 36.2616045,
-      "lng": 59.6344964,
-      "coordonnees": {
-        "lat": 36.2616045,
-        "lng": 59.6344964
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=36.2616045,59.6344964",
-      "source": "osm"
-    },
-    {
-      "nom": "مخبز",
-      "lat": 36.2748741,
-      "lng": 59.6122607,
-      "coordonnees": {
-        "lat": 36.2748741,
-        "lng": 59.6122607
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=36.2748741,59.6122607",
-      "source": "osm"
-    },
-    {
-      "nom": "عمارت باغ خونی",
-      "lat": 36.2739358,
-      "lng": 59.6088548,
-      "coordonnees": {
-        "lat": 36.2739358,
-        "lng": 59.6088548
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=36.2739358,59.6088548",
-      "source": "osm"
-    },
-    {
-      "nom": "مستشفى ال محمد",
-      "lat": 36.2756241,
-      "lng": 59.6148338,
-      "coordonnees": {
-        "lat": 36.2756241,
-        "lng": 59.6148338
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=36.2756241,59.6148338",
-      "source": "osm"
-    },
-    {
-      "nom": "فندق سيلين",
-      "lat": 36.2697352,
-      "lng": 59.598956,
-      "coordonnees": {
-        "lat": 36.2697352,
-        "lng": 59.598956
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=36.2697352,59.598956",
-      "source": "osm"
-    },
-    {
-      "nom": "نماد پایگاه چهارم نیرو هوایی",
-      "lat": 36.2582864,
-      "lng": 59.6383561,
-      "coordonnees": {
-        "lat": 36.2582864,
-        "lng": 59.6383561
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=36.2582864,59.6383561",
-      "source": "osm"
-    },
-    {
-      "nom": "شقتي",
-      "lat": 36.2784929,
-      "lng": 59.6124852,
-      "coordonnees": {
-        "lat": 36.2784929,
-        "lng": 59.6124852
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=36.2784929,59.6124852",
-      "source": "osm"
-    },
-    {
-      "nom": "امام رضا ۱۹",
-      "lat": 36.2770288,
-      "lng": 59.6060291,
-      "coordonnees": {
-        "lat": 36.2770288,
-        "lng": 59.6060291
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=36.2770288,59.6060291",
-      "source": "osm"
-    },
-    {
-      "nom": "گالری ثارالله ۱۲۸",
-      "lat": 36.2799102,
-      "lng": 59.6154418,
-      "coordonnees": {
-        "lat": 36.2799102,
-        "lng": 59.6154418
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=36.2799102,59.6154418",
-      "source": "osm"
-    },
-    {
-      "nom": "شركة ايران سل",
-      "lat": 36.2783593,
-      "lng": 59.6072277,
-      "coordonnees": {
-        "lat": 36.2783593,
-        "lng": 59.6072277
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=36.2783593,59.6072277",
-      "source": "osm"
-    },
-    {
-      "nom": "شهر بازیها",
-      "lat": 36.2592719,
-      "lng": 59.5919389,
-      "coordonnees": {
-        "lat": 36.2592719,
-        "lng": 59.5919389
-      },
-      "categorie": "Famille",
-      "mapsUrl": "https://maps.google.com/?q=36.2592719,59.5919389",
-      "source": "osm"
-    },
-    {
-      "nom": "كراج مدينة مشهد",
-      "lat": 36.2622743,
-      "lng": 59.5916001,
-      "coordonnees": {
-        "lat": 36.2622743,
-        "lng": 59.5916001
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=36.2622743,59.5916001",
-      "source": "osm"
-    },
-    {
-      "nom": "Hayedr location mhd",
-      "lat": 36.2825981,
-      "lng": 59.611645,
-      "coordonnees": {
-        "lat": 36.2825981,
-        "lng": 59.611645
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=36.2825981,59.611645",
-      "source": "osm"
-    },
-    {
-      "nom": "مول ارمان",
-      "lat": 36.2825441,
-      "lng": 59.6230961,
-      "coordonnees": {
-        "lat": 36.2825441,
-        "lng": 59.6230961
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=36.2825441,59.6230961",
-      "source": "osm"
-    },
-    {
-      "nom": "عباس الرصافي",
-      "lat": 36.2839674,
-      "lng": 59.6129024,
-      "coordonnees": {
-        "lat": 36.2839674,
-        "lng": 59.6129024
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=36.2839674,59.6129024",
-      "source": "osm"
-    },
-    {
-      "nom": "شهربازی پارک وحدت",
-      "lat": 36.2830719,
-      "lng": 59.6272974,
-      "coordonnees": {
-        "lat": 36.2830719,
-        "lng": 59.6272974
-      },
-      "categorie": "Famille",
-      "mapsUrl": "https://maps.google.com/?q=36.2830719,59.6272974",
-      "source": "osm"
-    },
-    {
-      "nom": "میدان عدل خمینی",
-      "lat": 36.2749355,
-      "lng": 59.5920104,
-      "coordonnees": {
-        "lat": 36.2749355,
-        "lng": 59.5920104
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=36.2749355,59.5920104",
-      "source": "osm"
-    },
-    {
-      "nom": "حدیقت وحدت",
-      "lat": 36.2840715,
-      "lng": 59.6292736,
-      "coordonnees": {
-        "lat": 36.2840715,
-        "lng": 59.6292736
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=36.2840715,59.6292736",
-      "source": "osm"
-    },
-    {
-      "nom": "ملتقى",
-      "lat": 36.2861219,
-      "lng": 59.6189457,
-      "coordonnees": {
-        "lat": 36.2861219,
-        "lng": 59.6189457
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=36.2861219,59.6189457",
-      "source": "osm"
-    },
-    {
-      "nom": "فندقنا",
-      "lat": 36.2834818,
-      "lng": 59.6021077,
-      "coordonnees": {
-        "lat": 36.2834818,
-        "lng": 59.6021077
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=36.2834818,59.6021077",
-      "source": "osm"
-    },
-    {
-      "nom": "اسواق الرضا",
-      "lat": 36.2864236,
-      "lng": 59.6103201,
-      "coordonnees": {
-        "lat": 36.2864236,
-        "lng": 59.6103201
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=36.2864236,59.6103201",
-      "source": "osm"
-    },
-    {
-      "nom": "مزار شهید سید ابراهیم رئیسی",
-      "lat": 36.2878251,
-      "lng": 59.6157076,
-      "coordonnees": {
-        "lat": 36.2878251,
-        "lng": 59.6157076
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=36.2878251,59.6157076",
-      "source": "osm"
-    },
-    {
-      "nom": "فرهنگسرای میردشتی",
-      "lat": 36.2828866,
-      "lng": 59.5966706,
-      "coordonnees": {
-        "lat": 36.2828866,
-        "lng": 59.5966706
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=36.2828866,59.5966706",
-      "source": "osm"
-    },
-    {
-      "nom": "حسینه کرمانی ها",
-      "lat": 36.288254,
-      "lng": 59.6227454,
-      "coordonnees": {
-        "lat": 36.288254,
-        "lng": 59.6227454
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=36.288254,59.6227454",
-      "source": "osm"
-    },
-    {
-      "nom": "احسان عطور",
-      "lat": 36.2927526,
-      "lng": 59.6102422,
-      "coordonnees": {
-        "lat": 36.2927526,
-        "lng": 59.6102422
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=36.2927526,59.6102422",
-      "source": "osm"
-    },
-    {
-      "nom": "پارک بانوان گلایل",
-      "lat": 36.2274762,
-      "lng": 59.6208662,
-      "coordonnees": {
-        "lat": 36.2274762,
-        "lng": 59.6208662
-      },
-      "categorie": "Famille",
-      "mapsUrl": "https://maps.google.com/?q=36.2274762,59.6208662",
-      "source": "osm"
-    },
-    {
-      "nom": "کوهشار پارک",
-      "lat": 36.2565809,
-      "lng": 59.5754564,
-      "coordonnees": {
-        "lat": 36.2565809,
-        "lng": 59.5754564
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=36.2565809,59.5754564",
-      "source": "osm"
-    },
-    {
-      "nom": "مطعم تكه وكباب",
-      "lat": 36.2944467,
-      "lng": 59.6095017,
-      "coordonnees": {
-        "lat": 36.2944467,
-        "lng": 59.6095017
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=36.2944467,59.6095017",
-      "source": "osm"
-    },
-    {
-      "nom": "فندق حيدر العبودي",
-      "lat": 36.2958264,
-      "lng": 59.6084656,
-      "coordonnees": {
-        "lat": 36.2958264,
-        "lng": 59.6084656
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=36.2958264,59.6084656",
-      "source": "osm"
-    },
-    {
-      "nom": "مطعم رضائي شارع طبرسي كاشاني",
-      "lat": 36.2976516,
-      "lng": 59.6213336,
-      "coordonnees": {
-        "lat": 36.2976516,
-        "lng": 59.6213336
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=36.2976516,59.6213336",
-      "source": "osm"
-    },
-    {
-      "nom": "فندق عسکری",
-      "lat": 36.298558,
-      "lng": 59.6127273,
-      "coordonnees": {
-        "lat": 36.298558,
-        "lng": 59.6127273
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=36.298558,59.6127273",
-      "source": "osm"
-    },
-    {
-      "nom": "گالری قاب و معرق بختیاری",
-      "lat": 36.2901914,
-      "lng": 59.5845165,
-      "coordonnees": {
-        "lat": 36.2901914,
-        "lng": 59.5845165
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=36.2901914,59.5845165",
-      "source": "osm"
-    },
-    {
-      "nom": "دکتر محمد علی زرین قلم",
-      "lat": 36.2927083,
-      "lng": 59.5802168,
-      "coordonnees": {
-        "lat": 36.2927083,
-        "lng": 59.5802168
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=36.2927083,59.5802168",
-      "source": "osm"
-    },
-    {
-      "nom": "نماد میدان راه آهن",
-      "lat": 36.3039446,
-      "lng": 59.6229754,
-      "coordonnees": {
-        "lat": 36.3039446,
-        "lng": 59.6229754
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=36.3039446,59.6229754",
-      "source": "osm"
-    },
-    {
-      "nom": "کاوش پی",
-      "lat": 36.2932497,
-      "lng": 59.5766999,
-      "coordonnees": {
-        "lat": 36.2932497,
-        "lng": 59.5766999
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=36.2932497,59.5766999",
-      "source": "osm"
-    },
-    {
-      "nom": "خواشيك",
-      "lat": 36.3068137,
-      "lng": 59.5954613,
-      "coordonnees": {
-        "lat": 36.3068137,
-        "lng": 59.5954613
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=36.3068137,59.5954613",
-      "source": "osm"
-    },
-    {
-      "nom": "دریاچه تفریحی کوهسنگی",
-      "lat": 36.2754033,
-      "lng": 59.5578807,
-      "coordonnees": {
-        "lat": 36.2754033,
-        "lng": 59.5578807
-      },
-      "categorie": "Famille",
-      "mapsUrl": "https://maps.google.com/?q=36.2754033,59.5578807",
-      "source": "osm"
-    },
-    {
-      "nom": "مزار شهدای گمنام",
-      "lat": 36.2798647,
-      "lng": 59.5593813,
-      "coordonnees": {
-        "lat": 36.2798647,
-        "lng": 59.5593813
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=36.2798647,59.5593813",
-      "source": "osm"
-    },
-    {
-      "nom": "شلالات کوسنجی",
-      "lat": 36.2824047,
-      "lng": 59.5602996,
-      "coordonnees": {
-        "lat": 36.2824047,
-        "lng": 59.5602996
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=36.2824047,59.5602996",
-      "source": "osm"
-    },
-    {
-      "nom": "Vila Reza",
-      "lat": 36.2931522,
-      "lng": 59.5682454,
-      "coordonnees": {
-        "lat": 36.2931522,
-        "lng": 59.5682454
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=36.2931522,59.5682454",
-      "source": "osm"
-    },
-    {
-      "nom": "عبادی ۶۲",
-      "lat": 36.3148844,
-      "lng": 59.6160402,
-      "coordonnees": {
-        "lat": 36.3148844,
-        "lng": 59.6160402
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=36.3148844,59.6160402",
-      "source": "osm"
-    },
-    {
-      "nom": "هنرکده رویال",
-      "lat": 36.3035868,
-      "lng": 59.5731875,
-      "coordonnees": {
-        "lat": 36.3035868,
-        "lng": 59.5731875
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=36.3035868,59.5731875",
-      "source": "osm"
-    },
-    {
-      "nom": "ovooo",
-      "lat": 36.3100934,
-      "lng": 59.5777886,
-      "coordonnees": {
-        "lat": 36.3100934,
-        "lng": 59.5777886
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=36.3100934,59.5777886",
-      "source": "osm"
-    },
-    {
-      "nom": "تعمیر ظروف تفلون و سرامیک",
-      "lat": 36.3114404,
-      "lng": 59.5651086,
-      "coordonnees": {
-        "lat": 36.3114404,
-        "lng": 59.5651086
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=36.3114404,59.5651086",
-      "source": "osm"
-    },
-    {
-      "nom": "ایوان طرق",
-      "lat": 36.2017662,
-      "lng": 59.6537058,
-      "coordonnees": {
-        "lat": 36.2017662,
-        "lng": 59.6537058
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=36.2017662,59.6537058",
-      "source": "osm"
-    },
-    {
-      "nom": "اجرای ماندگار",
-      "lat": 36.3233314,
-      "lng": 59.590798,
-      "coordonnees": {
-        "lat": 36.3233314,
-        "lng": 59.590798
-      },
-      "categorie": "Famille",
-      "mapsUrl": "https://maps.google.com/?q=36.3233314,59.590798",
-      "source": "osm"
-    },
-    {
-      "nom": "بوستان اقاقیا",
-      "lat": 36.2049002,
-      "lng": 59.6654192,
-      "coordonnees": {
-        "lat": 36.2049002,
-        "lng": 59.6654192
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=36.2049002,59.6654192",
-      "source": "osm"
-    },
-    {
-      "nom": "مركز نوين ايران",
-      "lat": 36.3162993,
-      "lng": 59.5660893,
-      "coordonnees": {
-        "lat": 36.3162993,
-        "lng": 59.5660893
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=36.3162993,59.5660893",
-      "source": "osm"
-    },
-    {
-      "nom": "حديقة الملك آباد",
-      "lat": 36.3027576,
-      "lng": 59.5482516,
-      "coordonnees": {
-        "lat": 36.3027576,
-        "lng": 59.5482516
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=36.3027576,59.5482516",
-      "source": "osm"
-    },
-    {
-      "nom": "مجسمه فردوسی",
-      "lat": 36.3236347,
-      "lng": 59.5779161,
-      "coordonnees": {
-        "lat": 36.3236347,
-        "lng": 59.5779161
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=36.3236347,59.5779161",
-      "source": "osm"
-    },
-    {
-      "nom": "موزه کاخ ملک آباد",
-      "lat": 36.3009678,
-      "lng": 59.5433194,
-      "coordonnees": {
-        "lat": 36.3009678,
-        "lng": 59.5433194
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=36.3009678,59.5433194",
-      "source": "osm"
-    },
-    {
-      "nom": "گالری دژاوو",
-      "lat": 36.3163769,
-      "lng": 59.5529057,
-      "coordonnees": {
-        "lat": 36.3163769,
-        "lng": 59.5529057
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=36.3163769,59.5529057",
-      "source": "osm"
-    },
-    {
-      "nom": "مجسمه جانباز",
-      "lat": 36.3244951,
-      "lng": 59.5634789,
-      "coordonnees": {
-        "lat": 36.3244951,
-        "lng": 59.5634789
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=36.3244951,59.5634789",
-      "source": "osm"
-    },
-    {
-      "nom": "موزه علوم و تاریخ طبیعی خراسان",
-      "lat": 36.302995,
-      "lng": 59.5358389,
-      "coordonnees": {
-        "lat": 36.302995,
-        "lng": 59.5358389
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=36.302995,59.5358389",
-      "source": "osm"
-    }
-  ],
-  "osmEnriched": true,
-  "osmEnrichedAt": "2026-06-30",
-  "description_en": "Machhad, in Iran, is a halal-friendly destination with a Halal Trust Score of 4.7/5. Muslim travelers will find 36 halal restaurants listed, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
-  "metaDescription_en": "Halal guide to Machhad: 36 halal restaurants listed, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.7/5.",
-  "nom_en": "Machhad",
-  "boucheries": []
+  {
+   "nom": "پسران کریم",
+   "type": "persian, arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.339882,59.5869186",
+   "lat": 36.339882,
+   "lng": 59.5869186,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "سالن غذاخوری پردیس",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3086425,59.5178355",
+   "lat": 36.3086425,
+   "lng": 59.5178355,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "فست فود قطره طلا",
+   "type": "pizza, sandwich, pasta, noodle, salad, hot dog, burger, chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3190244,59.5246931",
+   "lat": 36.3190244,
+   "lng": 59.5246931,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Arbab Kabab",
+   "type": "kebab, persian food, kabab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3334985,59.5369451",
+   "lat": 36.3334985,
+   "lng": 59.5369451,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "کافه کباب ماهور",
+   "type": "kebab, chicken, rice, asian, iranian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3354217,59.5374803",
+   "lat": 36.3354217,
+   "lng": 59.5374803,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "بمب کره کباب دیاکو",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3255953,59.5172681",
+   "lat": 36.3255953,
+   "lng": 59.5172681,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "تیستی پلاس",
+   "type": "pizza, sandwich, burger, hot dog, fries",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3046445,59.4990878",
+   "lat": 36.3046445,
+   "lng": 59.4990878,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "کترینگ به پخت",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2775149,59.6221875",
+   "lat": 36.2775149,
+   "lng": 59.6221875,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "کباب طیب",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2764697,59.6309941",
+   "lat": 36.2764697,
+   "lng": 59.6309941,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "طباخی حقیقت",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2682329,59.5875628",
+   "lat": 36.2682329,
+   "lng": 59.5875628,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "چلوکباب هاتف",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2209466,59.616975",
+   "lat": 36.2209466,
+   "lng": 59.616975,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "رستوران درویش",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2893143,59.580234",
+   "lat": 36.2893143,
+   "lng": 59.580234,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "کباب حلیم شله رضوان",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3029137,59.6196503",
+   "lat": 36.3029137,
+   "lng": 59.6196503,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "کباب سرا",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.309988,59.6136486",
+   "lat": 36.309988,
+   "lng": 59.6136486,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "رستوران البیک",
+   "type": "arabic",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2923524,59.5669491",
+   "lat": 36.2923524,
+   "lng": 59.5669491,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "کباب شهرما",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3020291,59.5764315",
+   "lat": 36.3020291,
+   "lng": 59.5764315,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "نان داغ کباب داغ امید رضاشهر",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2847432,59.5500401",
+   "lat": 36.2847432,
+   "lng": 59.5500401,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "رستوران لذیذ (الماس)",
+   "type": "pizza, burger, italian, kebab, chicken, asian, international, steak house, coffee shop, fish and chips, seafood",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3052094,59.5677116",
+   "lat": 36.3052094,
+   "lng": 59.5677116,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "کباب وحلیم تک بهارستان",
+   "type": "kebab, حلیم",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3128253,59.5627045",
+   "lat": 36.3128253,
+   "lng": 59.5627045,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "معین درباری",
+   "type": "kebab, chicken, asian, seafood",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.297534,59.543371",
+   "lat": 36.297534,
+   "lng": 59.543371,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "کبابی",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3406662,59.6284054",
+   "lat": 36.3406662,
+   "lng": 59.6284054,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "رویال طلایی",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3154075,59.5419062",
+   "lat": 36.3154075,
+   "lng": 59.5419062,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Terrasse Restaurant",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3213965,59.5330039",
+   "lat": 36.3213965,
+   "lng": 59.5330039,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "ضیافت نور",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3340947,59.55051",
+   "lat": 36.3340947,
+   "lng": 59.55051,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "صبحانه",
+   "type": "pizza, persian, breakfast",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3242815,59.5339335",
+   "lat": 36.3242815,
+   "lng": 59.5339335,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "قصر هدیش",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3387592,59.5527408",
+   "lat": 36.3387592,
+   "lng": 59.5527408,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "رستوران لیالی لبنان",
+   "type": "arab, pizza, fast food",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3208885,59.5240206",
+   "lat": 36.3208885,
+   "lng": 59.5240206,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "لیالی لبنان",
+   "type": "arab, pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3208941,59.5240087",
+   "lat": 36.3208941,
+   "lng": 59.5240087,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "جیگر کبابیستا",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3284573,59.5287326",
+   "lat": 36.3284573,
+   "lng": 59.5287326,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "رستوران و کترینگ ریخته گرزاده",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3220718,59.5200119",
+   "lat": 36.3220718,
+   "lng": 59.5200119,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "استانبول",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3151351,59.5097878",
+   "lat": 36.3151351,
+   "lng": 59.5097878,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "کوهسر",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3007874,59.496437",
+   "lat": 36.3007874,
+   "lng": 59.496437,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "راستگو",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3245908,59.5121148",
+   "lat": 36.3245908,
+   "lng": 59.5121148,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "سراى امدادگران (زائر سراى) هلال احمر",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2655982,59.6119214",
+   "lat": 36.2655982,
+   "lng": 59.6119214,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2655982,59.6119214",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل نیک داد",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2719055,59.61658",
+   "lat": 36.2719055,
+   "lng": 59.61658,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2719055,59.61658",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل همراز",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2724396,59.6166202",
+   "lat": 36.2724396,
+   "lng": 59.6166202,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2724396,59.6166202",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل آپارتمان معین",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2682789,59.6288474",
+   "lat": 36.2682789,
+   "lng": 59.6288474,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2682789,59.6288474",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل آپارتمان قصر خورشید",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2726765,59.6219916",
+   "lat": 36.2726765,
+   "lng": 59.6219916,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2726765,59.6219916",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل اسپینو",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2733457,59.6150351",
+   "lat": 36.2733457,
+   "lng": 59.6150351,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2733457,59.6150351",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل سیمرغ",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2733845,59.6186648",
+   "lat": 36.2733845,
+   "lng": 59.6186648,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2733845,59.6186648",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل تیانا",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2734386,59.6145442",
+   "lat": 36.2734386,
+   "lng": 59.6145442,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2734386,59.6145442",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل آفریقا",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2735489,59.614343",
+   "lat": 36.2735489,
+   "lng": 59.614343,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2735489,59.614343",
+   "source": "osm"
+  },
+  {
+   "nom": "ستاد اسکان فرهنگیان",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2601896,59.5996198",
+   "lat": 36.2601896,
+   "lng": 59.5996198,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2601896,59.5996198",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل سی نور",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 5,
+   "mapsUrl": "https://maps.google.com/?q=36.274575,59.6155593",
+   "lat": 36.274575,
+   "lng": 59.6155593,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.274575,59.6155593",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل نما٨",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2743213,59.6116828",
+   "lat": 36.2743213,
+   "lng": 59.6116828,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2743213,59.6116828",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل حدیث",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2691796,59.6022542",
+   "lat": 36.2691796,
+   "lng": 59.6022542,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2691796,59.6022542",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل آپارتمان آرکس",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.275104,59.6138546",
+   "lat": 36.275104,
+   "lng": 59.6138546,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.275104,59.6138546",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل یلدا",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2748118,59.611913",
+   "lat": 36.2748118,
+   "lng": 59.611913,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2748118,59.611913",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل شاکر",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2715292,59.604435",
+   "lat": 36.2715292,
+   "lng": 59.604435,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2715292,59.604435",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل سفیران",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.275646,59.616906",
+   "lat": 36.275646,
+   "lng": 59.616906,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.275646,59.616906",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل آپارتمان میزبان",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2703937,59.6023689",
+   "lat": 36.2703937,
+   "lng": 59.6023689,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2703937,59.6023689",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل حسینی",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2756335,59.6136779",
+   "lat": 36.2756335,
+   "lng": 59.6136779,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2756335,59.6136779",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل هرمس",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2752486,59.6115294",
+   "lat": 36.2752486,
+   "lng": 59.6115294,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2752486,59.6115294",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل آپارتمان نظام مهندسی یزد",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2706374,59.6023043",
+   "lat": 36.2706374,
+   "lng": 59.6023043,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2706374,59.6023043",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل آپارتمان دانشگاه علوم پزشکی تبریز",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2753549,59.6114006",
+   "lat": 36.2753549,
+   "lng": 59.6114006,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2753549,59.6114006",
+   "source": "osm"
+  },
+  {
+   "nom": "سوئیت آپارتمان ذرات",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2689935,59.6005767",
+   "lat": 36.2689935,
+   "lng": 59.6005767,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2689935,59.6005767",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل میعاد",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2740351,59.6069093",
+   "lat": 36.2740351,
+   "lng": 59.6069093,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2740351,59.6069093",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل آپارتمان نگار",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2691746,59.6003499",
+   "lat": 36.2691746,
+   "lng": 59.6003499,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2691746,59.6003499",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل آپارتمان آجیلیان",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2754567,59.610197",
+   "lat": 36.2754567,
+   "lng": 59.610197,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2754567,59.610197",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل اریکا",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2738971,59.627451",
+   "lat": 36.2738971,
+   "lng": 59.627451,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2738971,59.627451",
+   "source": "osm"
+  },
+  {
+   "nom": "پویان",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2669216,59.5986281",
+   "lat": 36.2669216,
+   "lng": 59.5986281,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2669216,59.5986281",
+   "source": "osm"
+  },
+  {
+   "nom": "أمينيان",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2756974,59.6104451",
+   "lat": 36.2756974,
+   "lng": 59.6104451,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2756974,59.6104451",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل مشهد",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2713659,59.6021086",
+   "lat": 36.2713659,
+   "lng": 59.6021086,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2713659,59.6021086",
+   "source": "osm"
+  },
+  {
+   "nom": "سی نور",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2761118,59.6118199",
+   "lat": 36.2761118,
+   "lng": 59.6118199,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2761118,59.6118199",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل ارسان",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2760875,59.6116152",
+   "lat": 36.2760875,
+   "lng": 59.6116152,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2760875,59.6116152",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل آتوسا",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2764453,59.6136144",
+   "lat": 36.2764453,
+   "lng": 59.6136144,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2764453,59.6136144",
+   "source": "osm"
+  },
+  {
+   "nom": "سوئیت آپارتمان هشت بهشت",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2750799,59.6081793",
+   "lat": 36.2750799,
+   "lng": 59.6081793,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2750799,59.6081793",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل بین‌المللی گلدن پالاس",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 5,
+   "mapsUrl": "https://maps.google.com/?q=36.2720775,59.6027912",
+   "lat": 36.2720775,
+   "lng": 59.6027912,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.ghasrtalaee.com",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل صدف",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2763901,59.612294",
+   "lat": 36.2763901,
+   "lng": 59.612294,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2763901,59.612294",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل آریو",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2739684,59.6054046",
+   "lat": 36.2739684,
+   "lng": 59.6054046,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2739684,59.6054046",
+   "source": "osm"
+  },
+  {
+   "nom": "واحد اقامة",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2760137,59.6099669",
+   "lat": 36.2760137,
+   "lng": 59.6099669,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2760137,59.6099669",
+   "source": "osm"
+  },
+  {
+   "nom": "زائرسرای بسیج شرکت ملی صنایع پتروشیمی",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2741265,59.6052817",
+   "lat": 36.2741265,
+   "lng": 59.6052817,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2741265,59.6052817",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل آپارتمان قصر گل",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2726364,59.6028042",
+   "lat": 36.2726364,
+   "lng": 59.6028042,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2726364,59.6028042",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل آپارتمان بیت الزهرا(س)",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2757117,59.6084892",
+   "lat": 36.2757117,
+   "lng": 59.6084892,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2757117,59.6084892",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل گل گندم شباهنگ",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2640274,59.5965724",
+   "lat": 36.2640274,
+   "lng": 59.5965724,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2640274,59.5965724",
+   "source": "osm"
+  },
+  {
+   "nom": "فالح",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2709861,59.6006913",
+   "lat": 36.2709861,
+   "lng": 59.6006913,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2709861,59.6006913",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل پارمیدا",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2749891,59.6063608",
+   "lat": 36.2749891,
+   "lng": 59.6063608,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2749891,59.6063608",
+   "source": "osm"
+  },
+  {
+   "nom": "فندق حلما",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.274551,59.6054481",
+   "lat": 36.274551,
+   "lng": 59.6054481,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.274551,59.6054481",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل حلما",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2745234,59.6053854",
+   "lat": 36.2745234,
+   "lng": 59.6053854,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.helmahotel.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل رضوان",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2756202,59.6073962",
+   "lat": 36.2756202,
+   "lng": 59.6073962,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2756202,59.6073962",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل ارمغان ۱",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2764508,59.6095848",
+   "lat": 36.2764508,
+   "lng": 59.6095848,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2764508,59.6095848",
+   "source": "osm"
+  },
+  {
+   "nom": "Nasim",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2729739,59.6024957",
+   "lat": 36.2729739,
+   "lng": 59.6024957,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2729739,59.6024957",
+   "source": "osm"
+  },
+  {
+   "nom": "شقة سويت مال احمد",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2768601,59.6109357",
+   "lat": 36.2768601,
+   "lng": 59.6109357,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2768601,59.6109357",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل قصر سفید",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2755324,59.6068674",
+   "lat": 36.2755324,
+   "lng": 59.6068674,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2755324,59.6068674",
+   "source": "osm"
+  },
+  {
+   "nom": "فندق سويت",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2770079,59.6114998",
+   "lat": 36.2770079,
+   "lng": 59.6114998,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2770079,59.6114998",
+   "source": "osm"
+  },
+  {
+   "nom": "زایرسرای شهدای شرکت پالایش نفت اصفهان",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2707909,59.59993",
+   "lat": 36.2707909,
+   "lng": 59.59993,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2707909,59.59993",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل قصر سفید",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2763081,59.608764",
+   "lat": 36.2763081,
+   "lng": 59.608764,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2763081,59.608764",
+   "source": "osm"
+  },
+  {
+   "nom": "زائرسرای فرهنگیان استان تهران",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2702296,59.5993501",
+   "lat": 36.2702296,
+   "lng": 59.5993501,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2702296,59.5993501",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل میامی",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2715076,59.6004814",
+   "lat": 36.2715076,
+   "lng": 59.6004814,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2715076,59.6004814",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل دیانا",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2765697,59.6092495",
+   "lat": 36.2765697,
+   "lng": 59.6092495,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2765697,59.6092495",
+   "source": "osm"
+  },
+  {
+   "nom": "زائرسرای کارکنان شهرداری شاهرود",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2703315,59.5992978",
+   "lat": 36.2703315,
+   "lng": 59.5992978,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2703315,59.5992978",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل آپارتمان کاسپین",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2693813,59.5985173",
+   "lat": 36.2693813,
+   "lng": 59.5985173,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2693813,59.5985173",
+   "source": "osm"
+  },
+  {
+   "nom": "سكن جديد",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2632156,59.5957083",
+   "lat": 36.2632156,
+   "lng": 59.5957083,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2632156,59.5957083",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل مجلل درویش",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2753314,59.605765",
+   "lat": 36.2753314,
+   "lng": 59.605765,
+   "halalFriendly": false,
+   "bookingUrl": "https://darvishihotel.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل ذاکر",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2762908,59.6077126",
+   "lat": 36.2762908,
+   "lng": 59.6077126,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2762908,59.6077126",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل رودبار",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2775774,59.6120806",
+   "lat": 36.2775774,
+   "lng": 59.6120806,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2775774,59.6120806",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل آپارتمان صدر",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.277735,59.620663",
+   "lat": 36.277735,
+   "lng": 59.620663,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.277735,59.620663",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل آپارتمان حامی",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2734278,59.6018118",
+   "lat": 36.2734278,
+   "lng": 59.6018118,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2734278,59.6018118",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل تبرک",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2779558,59.6129054",
+   "lat": 36.2779558,
+   "lng": 59.6129054,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2779558,59.6129054",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل آپارتمان دینا",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.273945,59.6023404",
+   "lat": 36.273945,
+   "lng": 59.6023404,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.instagram.com/arash_._jami?igsh=bjF0OTRqc3k4ajEy",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل پرستاره",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2765459,59.6072487",
+   "lat": 36.2765459,
+   "lng": 59.6072487,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2765459,59.6072487",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل پانیذ",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2753091,59.6043652",
+   "lat": 36.2753091,
+   "lng": 59.6043652,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2753091,59.6043652",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل ایوان ۱",
+   "categorie": "Hôtel",
+   "priceRange": "€€€",
+   "score": 3,
+   "mapsUrl": "https://maps.google.com/?q=36.2765569,59.6070099",
+   "lat": 36.2765569,
+   "lng": 59.6070099,
+   "halalFriendly": false,
+   "bookingUrl": "https://eyvantrip.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "الماس ۲",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 5,
+   "mapsUrl": "https://maps.google.com/?q=36.2764457,59.6062307",
+   "lat": 36.2764457,
+   "lng": 59.6062307,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2764457,59.6062307",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل ملیسا",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2760227,59.6052128",
+   "lat": 36.2760227,
+   "lng": 59.6052128,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2760227,59.6052128",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل عرشیا",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.278198,59.6119036",
+   "lat": 36.278198,
+   "lng": 59.6119036,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.278198,59.6119036",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل آپارتمان یادگار",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2615539,59.59433",
+   "lat": 36.2615539,
+   "lng": 59.59433,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2615539,59.59433",
+   "source": "osm"
+  },
+  {
+   "nom": "کارن",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "score": 2,
+   "mapsUrl": "https://maps.google.com/?q=36.2785368,59.6129391",
+   "lat": 36.2785368,
+   "lng": 59.6129391,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2785368,59.6129391",
+   "source": "osm"
+  },
+  {
+   "nom": "شقتي",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2784929,59.6124852",
+   "lat": 36.2784929,
+   "lng": 59.6124852,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2784929,59.6124852",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل مینو",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2769676,59.6067792",
+   "lat": 36.2769676,
+   "lng": 59.6067792,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2769676,59.6067792",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل ساوین",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2780655,59.6101608",
+   "lat": 36.2780655,
+   "lng": 59.6101608,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2780655,59.6101608",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل قاضی",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2787558,59.614225",
+   "lat": 36.2787558,
+   "lng": 59.614225,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2787558,59.614225",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل های نگارستان",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2748443,59.602464",
+   "lat": 36.2748443,
+   "lng": 59.602464,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2748443,59.602464",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل گلایول",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2786001,59.6117359",
+   "lat": 36.2786001,
+   "lng": 59.6117359,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2786001,59.6117359",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل آدینا",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2772705,59.6068392",
+   "lat": 36.2772705,
+   "lng": 59.6068392,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2772705,59.6068392",
+   "source": "osm"
+  },
+  {
+   "nom": "نورى زاده",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2788884,59.6131235",
+   "lat": 36.2788884,
+   "lng": 59.6131235,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2788884,59.6131235",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل مرمر",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2788061,59.6123404",
+   "lat": 36.2788061,
+   "lng": 59.6123404,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2788061,59.6123404",
+   "source": "osm"
+  },
+  {
+   "nom": "مرکز آموزشی رفاهی فرهنگیان مشهد",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2774603,59.6070487",
+   "lat": 36.2774603,
+   "lng": 59.6070487,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2774603,59.6070487",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل قصر",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2777584,59.6076747",
+   "lat": 36.2777584,
+   "lng": 59.6076747,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2777584,59.6076747",
+   "source": "osm"
+  },
+  {
+   "nom": "رنگین کمان",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2789434,59.6124526",
+   "lat": 36.2789434,
+   "lng": 59.6124526,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2789434,59.6124526",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل سی و سه پل",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2790715,59.6132561",
+   "lat": 36.2790715,
+   "lng": 59.6132561,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2790715,59.6132561",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2781783,59.6088264",
+   "lat": 36.2781783,
+   "lng": 59.6088264,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2781783,59.6088264",
+   "source": "osm"
+  },
+  {
+   "nom": "قمر بنی هاشم",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2789449,59.6121671",
+   "lat": 36.2789449,
+   "lng": 59.6121671,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2789449,59.6121671",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل ادمان",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2771752,59.6059504",
+   "lat": 36.2771752,
+   "lng": 59.6059504,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2771752,59.6059504",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل برين",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2787226,59.6107207",
+   "lat": 36.2787226,
+   "lng": 59.6107207,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2787226,59.6107207",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل رفاه پردیس",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2792218,59.6135223",
+   "lat": 36.2792218,
+   "lng": 59.6135223,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2792218,59.6135223",
+   "source": "osm"
+  },
+  {
+   "nom": "نقش جهان",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2789813,59.6114734",
+   "lat": 36.2789813,
+   "lng": 59.6114734,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2789813,59.6114734",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل ارمغان ۲",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2790845,59.6120202",
+   "lat": 36.2790845,
+   "lng": 59.6120202,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2790845,59.6120202",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2784078,59.60896",
+   "lat": 36.2784078,
+   "lng": 59.60896,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2784078,59.60896",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل آپارتمان مشکات",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2786274,59.6097599",
+   "lat": 36.2786274,
+   "lng": 59.6097599,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2786274,59.6097599",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل یاران",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2795218,59.6146499",
+   "lat": 36.2795218,
+   "lng": 59.6146499,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2795218,59.6146499",
+   "source": "osm"
+  },
+  {
+   "nom": "الڤند",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.274968,59.6012626",
+   "lat": 36.274968,
+   "lng": 59.6012626,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.274968,59.6012626",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل حیدری",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.279092,59.6103237",
+   "lat": 36.279092,
+   "lng": 59.6103237,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.279092,59.6103237",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل رواق",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2788987,59.6094516",
+   "lat": 36.2788987,
+   "lng": 59.6094516,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2788987,59.6094516",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل خاور",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2784181,59.6078034",
+   "lat": 36.2784181,
+   "lng": 59.6078034,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2784181,59.6078034",
+   "source": "osm"
+  },
+  {
+   "nom": "علاء هتل",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2787371,59.6087555",
+   "lat": 36.2787371,
+   "lng": 59.6087555,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2787371,59.6087555",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل دیبا",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.279361,59.6112996",
+   "lat": 36.279361,
+   "lng": 59.6112996,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.279361,59.6112996",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل المپیا",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2794542,59.6117118",
+   "lat": 36.2794542,
+   "lng": 59.6117118,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2794542,59.6117118",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل قصر آیدین",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2775675,59.6053704",
+   "lat": 36.2775675,
+   "lng": 59.6053704,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2775675,59.6053704",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل ایوان",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2791039,59.6099751",
+   "lat": 36.2791039,
+   "lng": 59.6099751,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2791039,59.6099751",
+   "source": "osm"
+  },
+  {
+   "nom": "مجتمع فرهنگی دانشگاه علوم پزشکی بقیه الله اعظم",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2723737,59.5977258",
+   "lat": 36.2723737,
+   "lng": 59.5977258,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2723737,59.5977258",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل سعید",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2797049,59.613097",
+   "lat": 36.2797049,
+   "lng": 59.613097,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2797049,59.613097",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل فرحان",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2798064,59.6139097",
+   "lat": 36.2798064,
+   "lng": 59.6139097,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2798064,59.6139097",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل اپارتمان جمالی",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2795431,59.6118606",
+   "lat": 36.2795431,
+   "lng": 59.6118606,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2795431,59.6118606",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل صدرا",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2789829,59.6092442",
+   "lat": 36.2789829,
+   "lng": 59.6092442,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2789829,59.6092442",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل مرآت",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2773017,59.6045919",
+   "lat": 36.2773017,
+   "lng": 59.6045919,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2773017,59.6045919",
+   "source": "osm"
+  },
+  {
+   "nom": "ثامن الحجج",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2791346,59.6096742",
+   "lat": 36.2791346,
+   "lng": 59.6096742,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2791346,59.6096742",
+   "source": "osm"
+  },
+  {
+   "nom": "ثامن الحجج",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2791461,59.6096606",
+   "lat": 36.2791461,
+   "lng": 59.6096606,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2791461,59.6096606",
+   "source": "osm"
+  },
+  {
+   "nom": "هتل سبحان",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2777377,59.6053802",
+   "lat": 36.2777377,
+   "lng": 59.6053802,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2777377,59.6053802",
+   "source": "osm"
+  },
+  {
+   "nom": "فندق طاووس",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.277436,59.6046522",
+   "lat": 36.277436,
+   "lng": 59.6046522,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.277436,59.6046522",
+   "source": "osm"
+  },
+  {
+   "nom": "هتیل سعید",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2798258,59.6128",
+   "lat": 36.2798258,
+   "lng": 59.6128,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2798258,59.6128",
+   "source": "osm"
+  },
+  {
+   "nom": "هنل رسالت",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2797572,59.6122414",
+   "lat": 36.2797572,
+   "lng": 59.6122414,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2797572,59.6122414",
+   "source": "osm"
+  },
+  {
+   "nom": "هزارویک",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2799452,59.6132833",
+   "lat": 36.2799452,
+   "lng": 59.6132833,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=36.2799452,59.6132833",
+   "source": "osm"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "هییت جاننثاران حسینی روستای نرم",
+   "lat": 36.2730168,
+   "lng": 59.6224801,
+   "coordonnees": {
+    "lat": 36.2730168,
+    "lng": 59.6224801
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.2730168,59.6224801",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد الرسول",
+   "lat": 36.2619705,
+   "lng": 59.599961,
+   "coordonnees": {
+    "lat": 36.2619705,
+    "lng": 59.599961
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.2619705,59.599961",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد و حوزه علمیه حضرت سید الشهدا (علیه السلام)",
+   "lat": 36.2674257,
+   "lng": 59.6021941,
+   "coordonnees": {
+    "lat": 36.2674257,
+    "lng": 59.6021941
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.2674257,59.6021941",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد الحمید",
+   "lat": 36.275503,
+   "lng": 59.6159919,
+   "coordonnees": {
+    "lat": 36.275503,
+    "lng": 59.6159919
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.275503,59.6159919",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد موسی ابن الجعفر",
+   "lat": 36.2660351,
+   "lng": 59.5978887,
+   "coordonnees": {
+    "lat": 36.2660351,
+    "lng": 59.5978887
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.2660351,59.5978887",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد امام حسین",
+   "lat": 36.2746793,
+   "lng": 59.6267454,
+   "coordonnees": {
+    "lat": 36.2746793,
+    "lng": 59.6267454
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.2746793,59.6267454",
+   "source": "osm"
+  },
+  {
+   "nom": "حسينيه آيت الله طبسي حائري",
+   "lat": 36.2761045,
+   "lng": 59.607821,
+   "coordonnees": {
+    "lat": 36.2761045,
+    "lng": 59.607821
+   },
+   "adresse": "امام رضا ۱۸, mashhad",
+   "mapsUrl": "https://maps.google.com/?q=36.2761045,59.607821",
+   "source": "osm"
+  },
+  {
+   "nom": "مجتمع فرهنگی مذهبی جامعة الحسین",
+   "lat": 36.2716113,
+   "lng": 59.6333268,
+   "coordonnees": {
+    "lat": 36.2716113,
+    "lng": 59.6333268
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.2716113,59.6333268",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد صنعتگران",
+   "lat": 36.2740387,
+   "lng": 59.6026379,
+   "coordonnees": {
+    "lat": 36.2740387,
+    "lng": 59.6026379
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.2740387,59.6026379",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد شجره",
+   "lat": 36.2773568,
+   "lng": 59.6235539,
+   "coordonnees": {
+    "lat": 36.2773568,
+    "lng": 59.6235539
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.2773568,59.6235539",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد چهارده معصوم",
+   "lat": 36.269854,
+   "lng": 59.5980882,
+   "coordonnees": {
+    "lat": 36.269854,
+    "lng": 59.5980882
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.269854,59.5980882",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجدالزهرا",
+   "lat": 36.2452189,
+   "lng": 59.6049758,
+   "coordonnees": {
+    "lat": 36.2452189,
+    "lng": 59.6049758
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.2452189,59.6049758",
+   "source": "osm"
+  },
+  {
+   "nom": "حسینیه سربیشه ای ها",
+   "lat": 36.2774062,
+   "lng": 59.6077193,
+   "coordonnees": {
+    "lat": 36.2774062,
+    "lng": 59.6077193
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.2774062,59.6077193",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد جواد الائمه",
+   "lat": 36.2627722,
+   "lng": 59.5936928,
+   "coordonnees": {
+    "lat": 36.2627722,
+    "lng": 59.5936928
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.2627722,59.5936928",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد چهارده معصوم (س)",
+   "lat": 36.2743499,
+   "lng": 59.5995645,
+   "coordonnees": {
+    "lat": 36.2743499,
+    "lng": 59.5995645
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.2743499,59.5995645",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد ولیعصر",
+   "lat": 36.2636316,
+   "lng": 59.5910466,
+   "coordonnees": {
+    "lat": 36.2636316,
+    "lng": 59.5910466
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.2636316,59.5910466",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد بقیه الله",
+   "lat": 36.2717717,
+   "lng": 59.6394474,
+   "coordonnees": {
+    "lat": 36.2717717,
+    "lng": 59.6394474
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.2717717,59.6394474",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد جواد ائمه",
+   "lat": 36.2586938,
+   "lng": 59.6434718,
+   "coordonnees": {
+    "lat": 36.2586938,
+    "lng": 59.6434718
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.2586938,59.6434718",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد شایسته",
+   "lat": 36.2810583,
+   "lng": 59.6253514,
+   "coordonnees": {
+    "lat": 36.2810583,
+    "lng": 59.6253514
+   },
+   "adresse": "خیابان سرخس, مشهد",
+   "mapsUrl": "https://maps.google.com/?q=36.2810583,59.6253514",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد جفایی",
+   "lat": 36.2817094,
+   "lng": 59.6099774,
+   "coordonnees": {
+    "lat": 36.2817094,
+    "lng": 59.6099774
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.2817094,59.6099774",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد عباسی",
+   "lat": 36.2764746,
+   "lng": 59.5977804,
+   "coordonnees": {
+    "lat": 36.2764746,
+    "lng": 59.5977804
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.2764746,59.5977804",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد ابا عبدالله",
+   "lat": 36.2725153,
+   "lng": 59.5927371,
+   "coordonnees": {
+    "lat": 36.2725153,
+    "lng": 59.5927371
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.2725153,59.5927371",
+   "source": "osm"
+  },
+  {
+   "nom": "حسینیه و زائر سرای سیدالشهدا",
+   "lat": 36.2825267,
+   "lng": 59.6078199,
+   "coordonnees": {
+    "lat": 36.2825267,
+    "lng": 59.6078199
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.2825267,59.6078199",
+   "source": "osm"
+  },
+  {
+   "nom": "حسینیه نقویه",
+   "lat": 36.2807498,
+   "lng": 59.6316608,
+   "coordonnees": {
+    "lat": 36.2807498,
+    "lng": 59.6316608
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.2807498,59.6316608",
+   "source": "osm"
+  },
+  {
+   "nom": "حسینیه و مجتمع فرهنگی مذهبی حضرت زینب (س)",
+   "lat": 36.2802661,
+   "lng": 59.6007095,
+   "coordonnees": {
+    "lat": 36.2802661,
+    "lng": 59.6007095
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.2802661,59.6007095",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد سجادیه",
+   "lat": 36.2817793,
+   "lng": 59.630043,
+   "coordonnees": {
+    "lat": 36.2817793,
+    "lng": 59.630043
+   },
+   "adresse": "گلریز۲",
+   "mapsUrl": "https://maps.google.com/?q=36.2817793,59.630043",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد حضرت ابوالفضل",
+   "lat": 36.2710776,
+   "lng": 59.5898954,
+   "coordonnees": {
+    "lat": 36.2710776,
+    "lng": 59.5898954
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.2710776,59.5898954",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد و حسینیه سیستانی‌ها",
+   "lat": 36.2652845,
+   "lng": 59.587058,
+   "coordonnees": {
+    "lat": 36.2652845,
+    "lng": 59.587058
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.2652845,59.587058",
+   "source": "osm"
+  },
+  {
+   "nom": "حسینیه",
+   "lat": 36.2847541,
+   "lng": 59.6206891,
+   "coordonnees": {
+    "lat": 36.2847541,
+    "lng": 59.6206891
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.2847541,59.6206891",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد قبله",
+   "lat": 36.285794,
+   "lng": 59.619366,
+   "coordonnees": {
+    "lat": 36.285794,
+    "lng": 59.619366
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.285794,59.619366",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد فاطمیه",
+   "lat": 36.2700852,
+   "lng": 59.5874745,
+   "coordonnees": {
+    "lat": 36.2700852,
+    "lng": 59.5874745
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.2700852,59.5874745",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد امام جعفر صادق (ع)",
+   "lat": 36.2814117,
+   "lng": 59.6350414,
+   "coordonnees": {
+    "lat": 36.2814117,
+    "lng": 59.6350414
+   },
+   "adresse": "چمن ۷۶",
+   "mapsUrl": "https://maps.google.com/?q=36.2814117,59.6350414",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد حاج فیض الله",
+   "lat": 36.2820414,
+   "lng": 59.5990693,
+   "coordonnees": {
+    "lat": 36.2820414,
+    "lng": 59.5990693
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.2820414,59.5990693",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد الرسول",
+   "lat": 36.2648886,
+   "lng": 59.584824,
+   "coordonnees": {
+    "lat": 36.2648886,
+    "lng": 59.584824
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.2648886,59.584824",
+   "source": "osm"
+  },
+  {
+   "nom": "حسینیه شهید محمد حسین دلدار",
+   "lat": 36.2760848,
+   "lng": 59.5902848,
+   "coordonnees": {
+    "lat": 36.2760848,
+    "lng": 59.5902848
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.2760848,59.5902848",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد و حسینیه جواهری",
+   "lat": 36.2813239,
+   "lng": 59.5963206,
+   "coordonnees": {
+    "lat": 36.2813239,
+    "lng": 59.5963206
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.2813239,59.5963206",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد المهدی",
+   "lat": 36.2673418,
+   "lng": 59.5848957,
+   "coordonnees": {
+    "lat": 36.2673418,
+    "lng": 59.5848957
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.2673418,59.5848957",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد گوهرشاد",
+   "lat": 36.2874143,
+   "lng": 59.6145559,
+   "coordonnees": {
+    "lat": 36.2874143,
+    "lng": 59.6145559
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.2874143,59.6145559",
+   "source": "osm"
+  },
+  {
+   "nom": "حسینیه انصارالحسین",
+   "lat": 36.2837428,
+   "lng": 59.5971321,
+   "coordonnees": {
+    "lat": 36.2837428,
+    "lng": 59.5971321
+   },
+   "mapsUrl": "https://maps.google.com/?q=36.2837428,59.5971321",
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "پارک ژوراسیک مشهد",
+   "lat": 36.253263,
+   "lng": 59.608233,
+   "coordonnees": {
+    "lat": 36.253263,
+    "lng": 59.608233
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=36.253263,59.608233",
+   "source": "osm"
+  },
+  {
+   "nom": "مولات",
+   "lat": 36.2742959,
+   "lng": 59.6178864,
+   "coordonnees": {
+    "lat": 36.2742959,
+    "lng": 59.6178864
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=36.2742959,59.6178864",
+   "source": "osm"
+  },
+  {
+   "nom": "حي العرب في مشهد وسوق وباجه عراقيه",
+   "lat": 36.2627523,
+   "lng": 59.6337278,
+   "coordonnees": {
+    "lat": 36.2627523,
+    "lng": 59.6337278
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=36.2627523,59.6337278",
+   "source": "osm"
+  },
+  {
+   "nom": "فلافل شهرک عربها",
+   "lat": 36.2616045,
+   "lng": 59.6344964,
+   "coordonnees": {
+    "lat": 36.2616045,
+    "lng": 59.6344964
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=36.2616045,59.6344964",
+   "source": "osm"
+  },
+  {
+   "nom": "مخبز",
+   "lat": 36.2748741,
+   "lng": 59.6122607,
+   "coordonnees": {
+    "lat": 36.2748741,
+    "lng": 59.6122607
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=36.2748741,59.6122607",
+   "source": "osm"
+  },
+  {
+   "nom": "عمارت باغ خونی",
+   "lat": 36.2739358,
+   "lng": 59.6088548,
+   "coordonnees": {
+    "lat": 36.2739358,
+    "lng": 59.6088548
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=36.2739358,59.6088548",
+   "source": "osm"
+  },
+  {
+   "nom": "مستشفى ال محمد",
+   "lat": 36.2756241,
+   "lng": 59.6148338,
+   "coordonnees": {
+    "lat": 36.2756241,
+    "lng": 59.6148338
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=36.2756241,59.6148338",
+   "source": "osm"
+  },
+  {
+   "nom": "فندق سيلين",
+   "lat": 36.2697352,
+   "lng": 59.598956,
+   "coordonnees": {
+    "lat": 36.2697352,
+    "lng": 59.598956
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=36.2697352,59.598956",
+   "source": "osm"
+  },
+  {
+   "nom": "نماد پایگاه چهارم نیرو هوایی",
+   "lat": 36.2582864,
+   "lng": 59.6383561,
+   "coordonnees": {
+    "lat": 36.2582864,
+    "lng": 59.6383561
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=36.2582864,59.6383561",
+   "source": "osm"
+  },
+  {
+   "nom": "شقتي",
+   "lat": 36.2784929,
+   "lng": 59.6124852,
+   "coordonnees": {
+    "lat": 36.2784929,
+    "lng": 59.6124852
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=36.2784929,59.6124852",
+   "source": "osm"
+  },
+  {
+   "nom": "امام رضا ۱۹",
+   "lat": 36.2770288,
+   "lng": 59.6060291,
+   "coordonnees": {
+    "lat": 36.2770288,
+    "lng": 59.6060291
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=36.2770288,59.6060291",
+   "source": "osm"
+  },
+  {
+   "nom": "گالری ثارالله ۱۲۸",
+   "lat": 36.2799102,
+   "lng": 59.6154418,
+   "coordonnees": {
+    "lat": 36.2799102,
+    "lng": 59.6154418
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=36.2799102,59.6154418",
+   "source": "osm"
+  },
+  {
+   "nom": "شركة ايران سل",
+   "lat": 36.2783593,
+   "lng": 59.6072277,
+   "coordonnees": {
+    "lat": 36.2783593,
+    "lng": 59.6072277
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=36.2783593,59.6072277",
+   "source": "osm"
+  },
+  {
+   "nom": "شهر بازیها",
+   "lat": 36.2592719,
+   "lng": 59.5919389,
+   "coordonnees": {
+    "lat": 36.2592719,
+    "lng": 59.5919389
+   },
+   "categorie": "Famille",
+   "mapsUrl": "https://maps.google.com/?q=36.2592719,59.5919389",
+   "source": "osm"
+  },
+  {
+   "nom": "كراج مدينة مشهد",
+   "lat": 36.2622743,
+   "lng": 59.5916001,
+   "coordonnees": {
+    "lat": 36.2622743,
+    "lng": 59.5916001
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=36.2622743,59.5916001",
+   "source": "osm"
+  },
+  {
+   "nom": "Hayedr location mhd",
+   "lat": 36.2825981,
+   "lng": 59.611645,
+   "coordonnees": {
+    "lat": 36.2825981,
+    "lng": 59.611645
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=36.2825981,59.611645",
+   "source": "osm"
+  },
+  {
+   "nom": "مول ارمان",
+   "lat": 36.2825441,
+   "lng": 59.6230961,
+   "coordonnees": {
+    "lat": 36.2825441,
+    "lng": 59.6230961
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=36.2825441,59.6230961",
+   "source": "osm"
+  },
+  {
+   "nom": "عباس الرصافي",
+   "lat": 36.2839674,
+   "lng": 59.6129024,
+   "coordonnees": {
+    "lat": 36.2839674,
+    "lng": 59.6129024
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=36.2839674,59.6129024",
+   "source": "osm"
+  },
+  {
+   "nom": "شهربازی پارک وحدت",
+   "lat": 36.2830719,
+   "lng": 59.6272974,
+   "coordonnees": {
+    "lat": 36.2830719,
+    "lng": 59.6272974
+   },
+   "categorie": "Famille",
+   "mapsUrl": "https://maps.google.com/?q=36.2830719,59.6272974",
+   "source": "osm"
+  },
+  {
+   "nom": "میدان عدل خمینی",
+   "lat": 36.2749355,
+   "lng": 59.5920104,
+   "coordonnees": {
+    "lat": 36.2749355,
+    "lng": 59.5920104
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=36.2749355,59.5920104",
+   "source": "osm"
+  },
+  {
+   "nom": "حدیقت وحدت",
+   "lat": 36.2840715,
+   "lng": 59.6292736,
+   "coordonnees": {
+    "lat": 36.2840715,
+    "lng": 59.6292736
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=36.2840715,59.6292736",
+   "source": "osm"
+  },
+  {
+   "nom": "ملتقى",
+   "lat": 36.2861219,
+   "lng": 59.6189457,
+   "coordonnees": {
+    "lat": 36.2861219,
+    "lng": 59.6189457
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=36.2861219,59.6189457",
+   "source": "osm"
+  },
+  {
+   "nom": "فندقنا",
+   "lat": 36.2834818,
+   "lng": 59.6021077,
+   "coordonnees": {
+    "lat": 36.2834818,
+    "lng": 59.6021077
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=36.2834818,59.6021077",
+   "source": "osm"
+  },
+  {
+   "nom": "اسواق الرضا",
+   "lat": 36.2864236,
+   "lng": 59.6103201,
+   "coordonnees": {
+    "lat": 36.2864236,
+    "lng": 59.6103201
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=36.2864236,59.6103201",
+   "source": "osm"
+  },
+  {
+   "nom": "مزار شهید سید ابراهیم رئیسی",
+   "lat": 36.2878251,
+   "lng": 59.6157076,
+   "coordonnees": {
+    "lat": 36.2878251,
+    "lng": 59.6157076
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=36.2878251,59.6157076",
+   "source": "osm"
+  },
+  {
+   "nom": "فرهنگسرای میردشتی",
+   "lat": 36.2828866,
+   "lng": 59.5966706,
+   "coordonnees": {
+    "lat": 36.2828866,
+    "lng": 59.5966706
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=36.2828866,59.5966706",
+   "source": "osm"
+  },
+  {
+   "nom": "حسینه کرمانی ها",
+   "lat": 36.288254,
+   "lng": 59.6227454,
+   "coordonnees": {
+    "lat": 36.288254,
+    "lng": 59.6227454
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=36.288254,59.6227454",
+   "source": "osm"
+  },
+  {
+   "nom": "احسان عطور",
+   "lat": 36.2927526,
+   "lng": 59.6102422,
+   "coordonnees": {
+    "lat": 36.2927526,
+    "lng": 59.6102422
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=36.2927526,59.6102422",
+   "source": "osm"
+  },
+  {
+   "nom": "پارک بانوان گلایل",
+   "lat": 36.2274762,
+   "lng": 59.6208662,
+   "coordonnees": {
+    "lat": 36.2274762,
+    "lng": 59.6208662
+   },
+   "categorie": "Famille",
+   "mapsUrl": "https://maps.google.com/?q=36.2274762,59.6208662",
+   "source": "osm"
+  },
+  {
+   "nom": "کوهشار پارک",
+   "lat": 36.2565809,
+   "lng": 59.5754564,
+   "coordonnees": {
+    "lat": 36.2565809,
+    "lng": 59.5754564
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=36.2565809,59.5754564",
+   "source": "osm"
+  },
+  {
+   "nom": "مطعم تكه وكباب",
+   "lat": 36.2944467,
+   "lng": 59.6095017,
+   "coordonnees": {
+    "lat": 36.2944467,
+    "lng": 59.6095017
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=36.2944467,59.6095017",
+   "source": "osm"
+  },
+  {
+   "nom": "فندق حيدر العبودي",
+   "lat": 36.2958264,
+   "lng": 59.6084656,
+   "coordonnees": {
+    "lat": 36.2958264,
+    "lng": 59.6084656
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=36.2958264,59.6084656",
+   "source": "osm"
+  },
+  {
+   "nom": "مطعم رضائي شارع طبرسي كاشاني",
+   "lat": 36.2976516,
+   "lng": 59.6213336,
+   "coordonnees": {
+    "lat": 36.2976516,
+    "lng": 59.6213336
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=36.2976516,59.6213336",
+   "source": "osm"
+  },
+  {
+   "nom": "فندق عسکری",
+   "lat": 36.298558,
+   "lng": 59.6127273,
+   "coordonnees": {
+    "lat": 36.298558,
+    "lng": 59.6127273
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=36.298558,59.6127273",
+   "source": "osm"
+  },
+  {
+   "nom": "گالری قاب و معرق بختیاری",
+   "lat": 36.2901914,
+   "lng": 59.5845165,
+   "coordonnees": {
+    "lat": 36.2901914,
+    "lng": 59.5845165
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=36.2901914,59.5845165",
+   "source": "osm"
+  },
+  {
+   "nom": "دکتر محمد علی زرین قلم",
+   "lat": 36.2927083,
+   "lng": 59.5802168,
+   "coordonnees": {
+    "lat": 36.2927083,
+    "lng": 59.5802168
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=36.2927083,59.5802168",
+   "source": "osm"
+  },
+  {
+   "nom": "نماد میدان راه آهن",
+   "lat": 36.3039446,
+   "lng": 59.6229754,
+   "coordonnees": {
+    "lat": 36.3039446,
+    "lng": 59.6229754
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=36.3039446,59.6229754",
+   "source": "osm"
+  },
+  {
+   "nom": "کاوش پی",
+   "lat": 36.2932497,
+   "lng": 59.5766999,
+   "coordonnees": {
+    "lat": 36.2932497,
+    "lng": 59.5766999
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=36.2932497,59.5766999",
+   "source": "osm"
+  },
+  {
+   "nom": "خواشيك",
+   "lat": 36.3068137,
+   "lng": 59.5954613,
+   "coordonnees": {
+    "lat": 36.3068137,
+    "lng": 59.5954613
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=36.3068137,59.5954613",
+   "source": "osm"
+  },
+  {
+   "nom": "دریاچه تفریحی کوهسنگی",
+   "lat": 36.2754033,
+   "lng": 59.5578807,
+   "coordonnees": {
+    "lat": 36.2754033,
+    "lng": 59.5578807
+   },
+   "categorie": "Famille",
+   "mapsUrl": "https://maps.google.com/?q=36.2754033,59.5578807",
+   "source": "osm"
+  },
+  {
+   "nom": "مزار شهدای گمنام",
+   "lat": 36.2798647,
+   "lng": 59.5593813,
+   "coordonnees": {
+    "lat": 36.2798647,
+    "lng": 59.5593813
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=36.2798647,59.5593813",
+   "source": "osm"
+  },
+  {
+   "nom": "شلالات کوسنجی",
+   "lat": 36.2824047,
+   "lng": 59.5602996,
+   "coordonnees": {
+    "lat": 36.2824047,
+    "lng": 59.5602996
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=36.2824047,59.5602996",
+   "source": "osm"
+  },
+  {
+   "nom": "Vila Reza",
+   "lat": 36.2931522,
+   "lng": 59.5682454,
+   "coordonnees": {
+    "lat": 36.2931522,
+    "lng": 59.5682454
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=36.2931522,59.5682454",
+   "source": "osm"
+  },
+  {
+   "nom": "عبادی ۶۲",
+   "lat": 36.3148844,
+   "lng": 59.6160402,
+   "coordonnees": {
+    "lat": 36.3148844,
+    "lng": 59.6160402
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=36.3148844,59.6160402",
+   "source": "osm"
+  },
+  {
+   "nom": "هنرکده رویال",
+   "lat": 36.3035868,
+   "lng": 59.5731875,
+   "coordonnees": {
+    "lat": 36.3035868,
+    "lng": 59.5731875
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=36.3035868,59.5731875",
+   "source": "osm"
+  },
+  {
+   "nom": "ovooo",
+   "lat": 36.3100934,
+   "lng": 59.5777886,
+   "coordonnees": {
+    "lat": 36.3100934,
+    "lng": 59.5777886
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=36.3100934,59.5777886",
+   "source": "osm"
+  },
+  {
+   "nom": "تعمیر ظروف تفلون و سرامیک",
+   "lat": 36.3114404,
+   "lng": 59.5651086,
+   "coordonnees": {
+    "lat": 36.3114404,
+    "lng": 59.5651086
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=36.3114404,59.5651086",
+   "source": "osm"
+  },
+  {
+   "nom": "ایوان طرق",
+   "lat": 36.2017662,
+   "lng": 59.6537058,
+   "coordonnees": {
+    "lat": 36.2017662,
+    "lng": 59.6537058
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=36.2017662,59.6537058",
+   "source": "osm"
+  },
+  {
+   "nom": "اجرای ماندگار",
+   "lat": 36.3233314,
+   "lng": 59.590798,
+   "coordonnees": {
+    "lat": 36.3233314,
+    "lng": 59.590798
+   },
+   "categorie": "Famille",
+   "mapsUrl": "https://maps.google.com/?q=36.3233314,59.590798",
+   "source": "osm"
+  },
+  {
+   "nom": "بوستان اقاقیا",
+   "lat": 36.2049002,
+   "lng": 59.6654192,
+   "coordonnees": {
+    "lat": 36.2049002,
+    "lng": 59.6654192
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=36.2049002,59.6654192",
+   "source": "osm"
+  },
+  {
+   "nom": "مركز نوين ايران",
+   "lat": 36.3162993,
+   "lng": 59.5660893,
+   "coordonnees": {
+    "lat": 36.3162993,
+    "lng": 59.5660893
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=36.3162993,59.5660893",
+   "source": "osm"
+  },
+  {
+   "nom": "حديقة الملك آباد",
+   "lat": 36.3027576,
+   "lng": 59.5482516,
+   "coordonnees": {
+    "lat": 36.3027576,
+    "lng": 59.5482516
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=36.3027576,59.5482516",
+   "source": "osm"
+  },
+  {
+   "nom": "مجسمه فردوسی",
+   "lat": 36.3236347,
+   "lng": 59.5779161,
+   "coordonnees": {
+    "lat": 36.3236347,
+    "lng": 59.5779161
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=36.3236347,59.5779161",
+   "source": "osm"
+  },
+  {
+   "nom": "موزه کاخ ملک آباد",
+   "lat": 36.3009678,
+   "lng": 59.5433194,
+   "coordonnees": {
+    "lat": 36.3009678,
+    "lng": 59.5433194
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=36.3009678,59.5433194",
+   "source": "osm"
+  },
+  {
+   "nom": "گالری دژاوو",
+   "lat": 36.3163769,
+   "lng": 59.5529057,
+   "coordonnees": {
+    "lat": 36.3163769,
+    "lng": 59.5529057
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=36.3163769,59.5529057",
+   "source": "osm"
+  },
+  {
+   "nom": "مجسمه جانباز",
+   "lat": 36.3244951,
+   "lng": 59.5634789,
+   "coordonnees": {
+    "lat": 36.3244951,
+    "lng": 59.5634789
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=36.3244951,59.5634789",
+   "source": "osm"
+  },
+  {
+   "nom": "موزه علوم و تاریخ طبیعی خراسان",
+   "lat": 36.302995,
+   "lng": 59.5358389,
+   "coordonnees": {
+    "lat": 36.302995,
+    "lng": 59.5358389
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=36.302995,59.5358389",
+   "source": "osm"
+  }
+ ],
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30",
+ "description_en": "Machhad, in Iran, is a halal-friendly destination with a Halal Trust Score of 4.7/5. Muslim travelers will find 36 halal restaurants listed, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
+ "metaDescription_en": "Halal guide to Machhad: 36 halal restaurants listed, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.7/5.",
+ "nom_en": "Machhad",
+ "boucheries": [],
+ "dataPurgedAt": "2026-07-15"
 }

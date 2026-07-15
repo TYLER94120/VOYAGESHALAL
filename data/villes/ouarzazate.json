@@ -1,993 +1,942 @@
 {
-  "slug": "ouarzazate",
-  "nom": "Ouarzazate",
-  "pays": "Maroc",
-  "pays_slug": "maroc",
-  "continent": "Afrique",
-  "region": "Sud du Maroc",
-  "coordonnees": {
-    "lat": 30.9335,
-    "lng": -6.937
-  },
-  "codeISO": "MA",
-  "score_halal": 4.5,
-  "halalScore": 9.1,
-  "description": "'Porte du désert' et 'Hollywood d'Afrique', célèbre pour ses studios de cinéma et la kasbah d'Aït Benhaddou classée UNESCO.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Ouarzazate_%28avril_2005%29_%281%29.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Ouarzazate_%28avril_2005%29_%281%29.jpg",
-  "metaDescription": "'Porte du désert' et 'Hollywood d'Afrique', célèbre pour ses studios de cinéma et la kasbah d'Aït Benhaddou classée UNESCO.",
+ "slug": "ouarzazate",
+ "nom": "Ouarzazate",
+ "pays": "Maroc",
+ "pays_slug": "maroc",
+ "continent": "Afrique",
+ "region": "Sud du Maroc",
+ "coordonnees": {
+  "lat": 30.9335,
+  "lng": -6.937
+ },
+ "codeISO": "MA",
+ "score_halal": 4.5,
+ "halalScore": 9.1,
+ "description": "'Porte du désert' et 'Hollywood d'Afrique', célèbre pour ses studios de cinéma et la kasbah d'Aït Benhaddou classée UNESCO.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Ouarzazate_%28avril_2005%29_%281%29.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Ouarzazate_%28avril_2005%29_%281%29.jpg",
+ "metaDescription": "'Porte du désert' et 'Hollywood d'Afrique', célèbre pour ses studios de cinéma et la kasbah d'Aït Benhaddou classée UNESCO.",
+ "monnaie": "MAD (Dirham marocain)",
+ "langue": "Arabe, Tamazight, Français",
+ "statistiques": {
+  "restaurants_halal": 7,
+  "mosquees": 2,
+  "hotels": 58
+ },
+ "infoPratique": {
   "monnaie": "MAD (Dirham marocain)",
   "langue": "Arabe, Tamazight, Français",
-  "statistiques": {
-    "restaurants_halal": 7,
-    "mosquees": 1,
-    "hotels": 60
+  "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
+  "meilleureEpoque": "Printemps et automne (climat doux)."
+ },
+ "tags": [
+  "halal",
+  "Maroc"
+ ],
+ "restaurants": [
+  {
+   "nom": "Special Grillades El Bahja",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.922655,-6.9273264",
+   "lat": 30.922655,
+   "lng": -6.9273264,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "infoPratique": {
-    "monnaie": "MAD (Dirham marocain)",
-    "langue": "Arabe, Tamazight, Français",
-    "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
-    "meilleureEpoque": "Printemps et automne (climat doux)."
+  {
+   "nom": "Snack Resto Elbahja",
+   "type": "moroccan, local",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9242531,-6.9248932",
+   "lat": 30.9242531,
+   "lng": -6.9248932,
+   "halalConfidence": "likely",
+   "source": "osm"
   },
-  "tags": [
-    "halal",
-    "Maroc"
-  ],
-  "restaurants": [
-    {
-      "nom": "Special Grillades El Bahja",
-      "type": "moroccan",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.922655,-6.9273264",
-      "lat": 30.922655,
-      "lng": -6.9273264,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Snack Resto Elbahja",
-      "type": "moroccan, local",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9242531,-6.9248932",
-      "lat": 30.9242531,
-      "lng": -6.9248932,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "La Gironde",
-      "type": "arab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9213545,-6.9195626",
-      "lat": 30.9213545,
-      "lng": -6.9195626,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Snack Souss",
-      "type": "sandwich, moroccan",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9213596,-6.9150544",
-      "lat": 30.9213596,
-      "lng": -6.9150544,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Oscar Fast Food",
-      "type": "pizza, moroccan, local",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9202604,-6.9155221",
-      "lat": 30.9202604,
-      "lng": -6.9155221,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Afoulki افولكي",
-      "type": "arab, moroccan, coffee shop, french",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9271947,-6.9033941",
-      "lat": 30.9271947,
-      "lng": -6.9033941,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "La Kasbah",
-      "type": "moroccan, regional",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9208891,-6.8998854",
-      "lat": 30.9208891,
-      "lng": -6.8998854,
-      "halalConfidence": "likely",
-      "source": "osm"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "Hotel Iazal",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9274075,-6.9275619",
-      "lat": 30.9274075,
-      "lng": -6.9275619,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.9274075,-6.9275619",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Dar Rita",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 4,
-      "mapsUrl": "https://maps.google.com/?q=30.9227392,-6.9318377",
-      "lat": 30.9227392,
-      "lng": -6.9318377,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.darrita.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Marmar",
-      "categorie": "Hôtel",
-      "priceRange": "€€€",
-      "score": 3,
-      "mapsUrl": "https://maps.google.com/?q=30.9282914,-6.9243176",
-      "lat": 30.9282914,
-      "lng": -6.9243176,
-      "halalFriendly": false,
-      "bookingUrl": "hotel-marmar.com",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Maghni",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9236299,-6.9288072",
-      "lat": 30.9236299,
-      "lng": -6.9288072,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.9236299,-6.9288072",
-      "source": "osm"
-    },
-    {
-      "nom": "La Gazelle",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9238136,-6.9263671",
-      "lat": 30.9238136,
-      "lng": -6.9263671,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.9238136,-6.9263671",
-      "source": "osm"
-    },
-    {
-      "nom": "Azoul",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9216659,-6.9234749",
-      "lat": 30.9216659,
-      "lng": -6.9234749,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.9216659,-6.9234749",
-      "source": "osm"
-    },
-    {
-      "nom": "Dar Bergui",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9273481,-6.9181374",
-      "lat": 30.9273481,
-      "lng": -6.9181374,
-      "halalFriendly": false,
-      "bookingUrl": "http://www.darbergui.com",
-      "source": "osm"
-    },
-    {
-      "nom": "Perle du Sud",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9204932,-6.9200326",
-      "lat": 30.9204932,
-      "lng": -6.9200326,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.9204932,-6.9200326",
-      "source": "osm"
-    },
-    {
-      "nom": "Atlas",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9209579,-6.9160196",
-      "lat": 30.9209579,
-      "lng": -6.9160196,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.9209579,-6.9160196",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Royal",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9205559,-6.915109",
-      "lat": 30.9205559,
-      "lng": -6.915109,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.9205559,-6.915109",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Essalam",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9202357,-6.9150156",
-      "lat": 30.9202357,
-      "lng": -6.9150156,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.9202357,-6.9150156",
-      "source": "osm"
-    },
-    {
-      "nom": "Bab Sahara",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "score": 2,
-      "mapsUrl": "https://maps.google.com/?q=30.9217475,-6.9133658",
-      "lat": 30.9217475,
-      "lng": -6.9133658,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.9217475,-6.9133658",
-      "source": "osm"
-    },
-    {
-      "nom": "La Palmeraie",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9248628,-6.9095707",
-      "lat": 30.9248628,
-      "lng": -6.9095707,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.9248628,-6.9095707",
-      "source": "osm"
-    },
-    {
-      "nom": "La voyagers",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9205048,-6.9118462",
-      "lat": 30.9205048,
-      "lng": -6.9118462,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.9205048,-6.9118462",
-      "source": "osm"
-    },
-    {
-      "nom": "Club Hanane",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9251613,-6.9089329",
-      "lat": 30.9251613,
-      "lng": -6.9089329,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.9251613,-6.9089329",
-      "source": "osm"
-    },
-    {
-      "nom": "Berbere Palace",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9237315,-6.9092867",
-      "lat": 30.9237315,
-      "lng": -6.9092867,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.9237315,-6.9092867",
-      "source": "osm"
-    },
-    {
-      "nom": "Amanar Ouarzazate Boutique Hotel & Spa",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9245907,-6.9079377",
-      "lat": 30.9245907,
-      "lng": -6.9079377,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.9245907,-6.9079377",
-      "source": "osm"
-    },
-    {
-      "nom": "Oscar Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9412053,-6.9673902",
-      "lat": 30.9412053,
-      "lng": -6.9673902,
-      "halalFriendly": false,
-      "bookingUrl": "https://oscarhotelbyatlasstudios.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Kenzi Azghor",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9205523,-6.9078602",
-      "lat": 30.9205523,
-      "lng": -6.9078602,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.9205523,-6.9078602",
-      "source": "osm"
-    },
-    {
-      "nom": "Hostel Assafar",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.927313,-6.9043066",
-      "lat": 30.927313,
-      "lng": -6.9043066,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.927313,-6.9043066",
-      "source": "osm"
-    },
-    {
-      "nom": "Hôtel Amsterdam",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9273251,-6.9038858",
-      "lat": 30.9273251,
-      "lng": -6.9038858,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.9273251,-6.9038858",
-      "source": "osm"
-    },
-    {
-      "nom": "New Belere Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9205091,-6.906089",
-      "lat": 30.9205091,
-      "lng": -6.906089,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.9205091,-6.906089",
-      "source": "osm"
-    },
-    {
-      "nom": "Baali",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9285381,-6.901913",
-      "lat": 30.9285381,
-      "lng": -6.901913,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.9285381,-6.901913",
-      "source": "osm"
-    },
-    {
-      "nom": "Karam Palace",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9199967,-6.9048339",
-      "lat": 30.9199967,
-      "lng": -6.9048339,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.9199967,-6.9048339",
-      "source": "osm"
-    },
-    {
-      "nom": "Ibis",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9200699,-6.9034015",
-      "lat": 30.9200699,
-      "lng": -6.9034015,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.9200699,-6.9034015",
-      "source": "osm"
-    },
-    {
-      "nom": "Mercure",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9194455,-6.9024277",
-      "lat": 30.9194455,
-      "lng": -6.9024277,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.9194455,-6.9024277",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Ouarzazate",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9294113,-6.8986862",
-      "lat": 30.9294113,
-      "lng": -6.8986862,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.9294113,-6.8986862",
-      "source": "osm"
-    },
-    {
-      "nom": "Auberge De la Jeunesse",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.90256,-6.9231192",
-      "lat": 30.90256,
-      "lng": -6.9231192,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.90256,-6.9231192",
-      "source": "osm"
-    },
-    {
-      "nom": "Cinema Eden",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9049718,-6.9163341",
-      "lat": 30.9049718,
-      "lng": -6.9163341,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.cinema-riad-ouarzazate.booked.net/",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Rayyan l'Escale",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9186073,-6.9018965",
-      "lat": 30.9186073,
-      "lng": -6.9018965,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.9186073,-6.9018965",
-      "source": "osm"
-    },
-    {
-      "nom": "Le petit riad",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9304311,-6.8973297",
-      "lat": 30.9304311,
-      "lng": -6.8973297,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.9304311,-6.8973297",
-      "source": "osm"
-    },
-    {
-      "nom": "Atbir House",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9288644,-6.897381",
-      "lat": 30.9288644,
-      "lng": -6.897381,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.9288644,-6.897381",
-      "source": "osm"
-    },
-    {
-      "nom": "Rose Noir",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9201652,-6.8992034",
-      "lat": 30.9201652,
-      "lng": -6.8992034,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.9201652,-6.8992034",
-      "source": "osm"
-    },
-    {
-      "nom": "Fint",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9212176,-6.8985128",
-      "lat": 30.9212176,
-      "lng": -6.8985128,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.9212176,-6.8985128",
-      "source": "osm"
-    },
-    {
-      "nom": "Aigle Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9229109,-6.8973257",
-      "lat": 30.9229109,
-      "lng": -6.8973257,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.9229109,-6.8973257",
-      "source": "osm"
-    },
-    {
-      "nom": "Dar Kamar",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9192734,-6.8988869",
-      "lat": 30.9192734,
-      "lng": -6.8988869,
-      "halalFriendly": false,
-      "bookingUrl": "http://www.darkamar.com",
-      "source": "osm"
-    },
-    {
-      "nom": "Hôtel Les Jardins de Ouarzazate",
-      "categorie": "Hôtel",
-      "priceRange": "€€€",
-      "score": 3,
-      "mapsUrl": "https://maps.google.com/?q=30.9042362,-6.9110736",
-      "lat": 30.9042362,
-      "lng": -6.9110736,
-      "halalFriendly": false,
-      "bookingUrl": "http://hotel-les-jardins-de-ouarzazate.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Nadia",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9028304,-6.9115724",
-      "lat": 30.9028304,
-      "lng": -6.9115724,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.9028304,-6.9115724",
-      "source": "osm"
-    },
-    {
-      "nom": "La Vallee",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9029908,-6.9111552",
-      "lat": 30.9029908,
-      "lng": -6.9111552,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.9029908,-6.9111552",
-      "source": "osm"
-    },
-    {
-      "nom": "Chez Ghalil",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9033372,-6.9096818",
-      "lat": 30.9033372,
-      "lng": -6.9096818,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.9033372,-6.9096818",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Zaghro",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9003809,-6.9115559",
-      "lat": 30.9003809,
-      "lng": -6.9115559,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.hotel-zaghro.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Afgo residence",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9006584,-6.9108826",
-      "lat": 30.9006584,
-      "lng": -6.9108826,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.9006584,-6.9108826",
-      "source": "osm"
-    },
-    {
-      "nom": "Complexe Al Baraka",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9397981,-6.9839642",
-      "lat": 30.9397981,
-      "lng": -6.9839642,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.9397981,-6.9839642",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Ksar Aylan",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9005135,-6.9076574",
-      "lat": 30.9005135,
-      "lng": -6.9076574,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.9005135,-6.9076574",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Chay",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9305709,-6.985945",
-      "lat": 30.9305709,
-      "lng": -6.985945,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.9305709,-6.985945",
-      "source": "osm"
-    },
-    {
-      "nom": "Dar Al Aafia",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.8948751,-6.9145071",
-      "lat": 30.8948751,
-      "lng": -6.9145071,
-      "halalFriendly": false,
-      "bookingUrl": "http://www.daralaafia-ouarzazate.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "La Palmeraie – Ecolodge Ouarzazate",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.903947,-6.8982427",
-      "lat": 30.903947,
-      "lng": -6.8982427,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.903947,-6.8982427",
-      "source": "osm"
-    },
-    {
-      "nom": "Oz Palace",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9036232,-6.8971351",
-      "lat": 30.9036232,
-      "lng": -6.8971351,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.9036232,-6.8971351",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Ouarzazate Le Zat",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.924687,-6.8847553",
-      "lat": 30.924687,
-      "lng": -6.8847553,
-      "halalFriendly": false,
-      "bookingUrl": "https://hotel-ouarzazate-zat.com",
-      "source": "osm"
-    },
-    {
-      "nom": "Dar Chamaa",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9037259,-6.8958116",
-      "lat": 30.9037259,
-      "lng": -6.8958116,
-      "halalFriendly": false,
-      "bookingUrl": "http://www.darchamaa.com/en/en_inicio.html",
-      "source": "osm"
-    },
-    {
-      "nom": "Git d'etape nomade",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9021207,-6.8960831",
-      "lat": 30.9021207,
-      "lng": -6.8960831,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.9021207,-6.8960831",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Bouchedor رياض بوشدور",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.8967586,-6.8947259",
-      "lat": 30.8967586,
-      "lng": -6.8947259,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.riadbouchedor.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Restaurant Ksar Ben Youssef",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.8933396,-6.8986264",
-      "lat": 30.8933396,
-      "lng": -6.8986264,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.8933396,-6.8986264",
-      "source": "osm"
-    },
-    {
-      "nom": "Kasbah Zitoune",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9213647,-6.9990206",
-      "lat": 30.9213647,
-      "lng": -6.9990206,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.9213647,-6.9990206",
-      "source": "osm"
-    },
-    {
-      "nom": "Dar Bladi",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.905429,-6.8802079",
-      "lat": 30.905429,
-      "lng": -6.8802079,
-      "halalFriendly": false,
-      "bookingUrl": "https://darbladi-ouarzazate.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Dar Daif",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.905816,-6.8798006",
-      "lat": 30.905816,
-      "lng": -6.8798006,
-      "halalFriendly": false,
-      "bookingUrl": "https://dardaif.ma/",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Hanan",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9042642,-6.8701252",
-      "lat": 30.9042642,
-      "lng": -6.8701252,
-      "halalFriendly": false,
-      "bookingUrl": "https://riadhanan.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Ecolodge l'ile de Ouarzazate",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.9061766,-6.8575649",
-      "lat": 30.9061766,
-      "lng": -6.8575649,
-      "halalFriendly": false,
-      "bookingUrl": "https://ecolodgelile.com/",
-      "source": "osm"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Ouarzazate",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Ouarzazate",
-      "description": "Mosquée principale de la ville, prière du vendredi.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20Ouarzazate%20Ouarzazate%20Maroc"
-    },
-    {
-      "nom": "Mosquée Al Massira",
-      "lat": 30.9337007,
-      "lng": -6.9220608,
-      "coordonnees": {
-        "lat": 30.9337007,
-        "lng": -6.9220608
-      },
-      "mapsUrl": "https://maps.google.com/?q=30.9337007,-6.9220608",
-      "source": "osm"
-    },
-    {
-      "nom": "Mosquée Ait kdif",
-      "lat": 30.9252498,
-      "lng": -6.8790442,
-      "coordonnees": {
-        "lat": 30.9252498,
-        "lng": -6.8790442
-      },
-      "mapsUrl": "https://maps.google.com/?q=30.9252498,-6.8790442",
-      "source": "osm"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Kasbah d'Aït Benhaddou (UNESCO)",
-      "categorie": "Histoire",
-      "description": "Ksar de terre crue emblématique, décor de nombreux films.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Kasbah%20d%27A%C3%AFt%20Benhaddou%20%28UNESCO%29%20Ouarzazate%20Maroc"
-    },
-    {
-      "id": "a2",
-      "nom": "Studios Atlas",
-      "categorie": "Loisirs",
-      "description": "Plus grands studios de cinéma du monde par la superficie.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Studios%20Atlas%20Ouarzazate%20Maroc",
-      "lat": 30.9417822,
-      "lng": -6.9669135,
-      "geocoded": true
-    },
-    {
-      "id": "a3",
-      "nom": "Kasbah de Taourirt",
-      "categorie": "Histoire",
-      "description": "Ancienne demeure du Glaoui aux décors raffinés.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Kasbah%20de%20Taourirt%20Ouarzazate%20Maroc",
-      "lat": 31.0999935,
-      "lng": -6.5577641,
-      "geocoded": true
-    },
-    {
-      "id": "a4",
-      "nom": "Vallée du Drâa",
-      "categorie": "Nature",
-      "description": "Route des palmeraies vers le désert.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Vall%C3%A9e%20du%20Dr%C3%A2a%20Ouarzazate%20Maroc"
-    },
-    {
-      "nom": "Le Musée Régional de la Résistance et de l'Armée de Liberation",
-      "lat": 30.929908,
-      "lng": -6.9201601,
-      "coordonnees": {
-        "lat": 30.929908,
-        "lng": -6.9201601
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=30.929908,-6.9201601",
-      "source": "osm"
-    },
-    {
-      "nom": "View point of Ouarzazate",
-      "lat": 30.9193347,
-      "lng": -6.9165893,
-      "coordonnees": {
-        "lat": 30.9193347,
-        "lng": -6.9165893
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=30.9193347,-6.9165893",
-      "source": "osm"
-    },
-    {
-      "nom": "Trésor Merzouga",
-      "lat": 30.9216593,
-      "lng": -6.914016,
-      "coordonnees": {
-        "lat": 30.9216593,
-        "lng": -6.914016
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=30.9216593,-6.914016",
-      "source": "osm"
-    },
-    {
-      "nom": "View point",
-      "lat": 30.9183509,
-      "lng": -6.9161579,
-      "coordonnees": {
-        "lat": 30.9183509,
-        "lng": -6.9161579
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=30.9183509,-6.9161579",
-      "source": "osm"
-    },
-    {
-      "nom": "Ship",
-      "lat": 30.9423463,
-      "lng": -6.9652125,
-      "coordonnees": {
-        "lat": 30.9423463,
-        "lng": -6.9652125
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=30.9423463,-6.9652125",
-      "source": "osm"
-    },
-    {
-      "nom": "Lions",
-      "lat": 30.9425188,
-      "lng": -6.9675495,
-      "coordonnees": {
-        "lat": 30.9425188,
-        "lng": -6.9675495
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=30.9425188,-6.9675495",
-      "source": "osm"
-    },
-    {
-      "nom": "Filmset",
-      "lat": 30.9515952,
-      "lng": -6.9690635,
-      "coordonnees": {
-        "lat": 30.9515952,
-        "lng": -6.9690635
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=30.9515952,-6.9690635",
-      "source": "osm"
-    },
-    {
-      "nom": "Taourirt Kasbah",
-      "lat": 30.9201242,
-      "lng": -6.8994339,
-      "coordonnees": {
-        "lat": 30.9201242,
-        "lng": -6.8994339
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=30.9201242,-6.8994339",
-      "source": "osm"
-    },
-    {
-      "nom": "The old Synagogue",
-      "lat": 30.9194524,
-      "lng": -6.8979563,
-      "coordonnees": {
-        "lat": 30.9194524,
-        "lng": -6.8979563
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=30.9194524,-6.8979563",
-      "source": "osm"
-    },
-    {
-      "nom": "واحة فينت",
-      "lat": 30.9194914,
-      "lng": -6.8887444,
-      "coordonnees": {
-        "lat": 30.9194914,
-        "lng": -6.8887444
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=30.9194914,-6.8887444",
-      "source": "osm"
-    },
-    {
-      "nom": "واحة فينت",
-      "lat": 30.9188687,
-      "lng": -6.8875842,
-      "coordonnees": {
-        "lat": 30.9188687,
-        "lng": -6.8875842
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=30.9188687,-6.8875842",
-      "source": "osm"
-    },
-    {
-      "nom": "Kasbah de Tifoultoute",
-      "lat": 30.9265954,
-      "lng": -6.9904213,
-      "coordonnees": {
-        "lat": 30.9265954,
-        "lng": -6.9904213
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=30.9265954,-6.9904213",
-      "source": "osm"
-    },
-    {
-      "nom": "View on solar station",
-      "lat": 31.0589066,
-      "lng": -6.8559613,
-      "coordonnees": {
-        "lat": 31.0589066,
-        "lng": -6.8559613
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=31.0589066,-6.8559613",
-      "source": "osm"
-    }
-  ],
-  "imageCredit": "Wikimedia Commons",
-  "osmEnriched": true,
-  "osmEnrichedAt": "2026-06-30",
-  "description_en": "Ouarzazate, in Morocco, is a halal-friendly destination with a Halal Trust Score of 4.5/5. Muslim travelers will find 7 halal restaurants listed, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
-  "metaDescription_en": "Halal guide to Ouarzazate: 7 halal restaurants listed, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.5/5.",
-  "nom_en": "Ouarzazate",
-  "boucheries": []
+  {
+   "nom": "La Gironde",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9213545,-6.9195626",
+   "lat": 30.9213545,
+   "lng": -6.9195626,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Snack Souss",
+   "type": "sandwich, moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9213596,-6.9150544",
+   "lat": 30.9213596,
+   "lng": -6.9150544,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Oscar Fast Food",
+   "type": "pizza, moroccan, local",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9202604,-6.9155221",
+   "lat": 30.9202604,
+   "lng": -6.9155221,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Afoulki افولكي",
+   "type": "arab, moroccan, coffee shop, french",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9271947,-6.9033941",
+   "lat": 30.9271947,
+   "lng": -6.9033941,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "La Kasbah",
+   "type": "moroccan, regional",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9208891,-6.8998854",
+   "lat": 30.9208891,
+   "lng": -6.8998854,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "Hotel Iazal",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9274075,-6.9275619",
+   "lat": 30.9274075,
+   "lng": -6.9275619,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.9274075,-6.9275619",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Dar Rita",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 4,
+   "mapsUrl": "https://maps.google.com/?q=30.9227392,-6.9318377",
+   "lat": 30.9227392,
+   "lng": -6.9318377,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.darrita.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Marmar",
+   "categorie": "Hôtel",
+   "priceRange": "€€€",
+   "score": 3,
+   "mapsUrl": "https://maps.google.com/?q=30.9282914,-6.9243176",
+   "lat": 30.9282914,
+   "lng": -6.9243176,
+   "halalFriendly": false,
+   "bookingUrl": "hotel-marmar.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Maghni",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9236299,-6.9288072",
+   "lat": 30.9236299,
+   "lng": -6.9288072,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.9236299,-6.9288072",
+   "source": "osm"
+  },
+  {
+   "nom": "La Gazelle",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9238136,-6.9263671",
+   "lat": 30.9238136,
+   "lng": -6.9263671,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.9238136,-6.9263671",
+   "source": "osm"
+  },
+  {
+   "nom": "Azoul",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9216659,-6.9234749",
+   "lat": 30.9216659,
+   "lng": -6.9234749,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.9216659,-6.9234749",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar Bergui",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9273481,-6.9181374",
+   "lat": 30.9273481,
+   "lng": -6.9181374,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.darbergui.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Perle du Sud",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9204932,-6.9200326",
+   "lat": 30.9204932,
+   "lng": -6.9200326,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.9204932,-6.9200326",
+   "source": "osm"
+  },
+  {
+   "nom": "Atlas",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9209579,-6.9160196",
+   "lat": 30.9209579,
+   "lng": -6.9160196,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.9209579,-6.9160196",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Royal",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9205559,-6.915109",
+   "lat": 30.9205559,
+   "lng": -6.915109,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.9205559,-6.915109",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Essalam",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9202357,-6.9150156",
+   "lat": 30.9202357,
+   "lng": -6.9150156,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.9202357,-6.9150156",
+   "source": "osm"
+  },
+  {
+   "nom": "Bab Sahara",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "score": 2,
+   "mapsUrl": "https://maps.google.com/?q=30.9217475,-6.9133658",
+   "lat": 30.9217475,
+   "lng": -6.9133658,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.9217475,-6.9133658",
+   "source": "osm"
+  },
+  {
+   "nom": "La Palmeraie",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9248628,-6.9095707",
+   "lat": 30.9248628,
+   "lng": -6.9095707,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.9248628,-6.9095707",
+   "source": "osm"
+  },
+  {
+   "nom": "La voyagers",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9205048,-6.9118462",
+   "lat": 30.9205048,
+   "lng": -6.9118462,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.9205048,-6.9118462",
+   "source": "osm"
+  },
+  {
+   "nom": "Club Hanane",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9251613,-6.9089329",
+   "lat": 30.9251613,
+   "lng": -6.9089329,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.9251613,-6.9089329",
+   "source": "osm"
+  },
+  {
+   "nom": "Berbere Palace",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9237315,-6.9092867",
+   "lat": 30.9237315,
+   "lng": -6.9092867,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.9237315,-6.9092867",
+   "source": "osm"
+  },
+  {
+   "nom": "Amanar Ouarzazate Boutique Hotel & Spa",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9245907,-6.9079377",
+   "lat": 30.9245907,
+   "lng": -6.9079377,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.9245907,-6.9079377",
+   "source": "osm"
+  },
+  {
+   "nom": "Oscar Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9412053,-6.9673902",
+   "lat": 30.9412053,
+   "lng": -6.9673902,
+   "halalFriendly": false,
+   "bookingUrl": "https://oscarhotelbyatlasstudios.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Kenzi Azghor",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9205523,-6.9078602",
+   "lat": 30.9205523,
+   "lng": -6.9078602,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.9205523,-6.9078602",
+   "source": "osm"
+  },
+  {
+   "nom": "Hostel Assafar",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.927313,-6.9043066",
+   "lat": 30.927313,
+   "lng": -6.9043066,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.927313,-6.9043066",
+   "source": "osm"
+  },
+  {
+   "nom": "Hôtel Amsterdam",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9273251,-6.9038858",
+   "lat": 30.9273251,
+   "lng": -6.9038858,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.9273251,-6.9038858",
+   "source": "osm"
+  },
+  {
+   "nom": "New Belere Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9205091,-6.906089",
+   "lat": 30.9205091,
+   "lng": -6.906089,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.9205091,-6.906089",
+   "source": "osm"
+  },
+  {
+   "nom": "Baali",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9285381,-6.901913",
+   "lat": 30.9285381,
+   "lng": -6.901913,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.9285381,-6.901913",
+   "source": "osm"
+  },
+  {
+   "nom": "Karam Palace",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9199967,-6.9048339",
+   "lat": 30.9199967,
+   "lng": -6.9048339,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.9199967,-6.9048339",
+   "source": "osm"
+  },
+  {
+   "nom": "Ibis",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9200699,-6.9034015",
+   "lat": 30.9200699,
+   "lng": -6.9034015,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.9200699,-6.9034015",
+   "source": "osm"
+  },
+  {
+   "nom": "Mercure",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9194455,-6.9024277",
+   "lat": 30.9194455,
+   "lng": -6.9024277,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.9194455,-6.9024277",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Ouarzazate",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9294113,-6.8986862",
+   "lat": 30.9294113,
+   "lng": -6.8986862,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.9294113,-6.8986862",
+   "source": "osm"
+  },
+  {
+   "nom": "Auberge De la Jeunesse",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.90256,-6.9231192",
+   "lat": 30.90256,
+   "lng": -6.9231192,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.90256,-6.9231192",
+   "source": "osm"
+  },
+  {
+   "nom": "Cinema Eden",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9049718,-6.9163341",
+   "lat": 30.9049718,
+   "lng": -6.9163341,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.cinema-riad-ouarzazate.booked.net/",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Rayyan l'Escale",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9186073,-6.9018965",
+   "lat": 30.9186073,
+   "lng": -6.9018965,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.9186073,-6.9018965",
+   "source": "osm"
+  },
+  {
+   "nom": "Le petit riad",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9304311,-6.8973297",
+   "lat": 30.9304311,
+   "lng": -6.8973297,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.9304311,-6.8973297",
+   "source": "osm"
+  },
+  {
+   "nom": "Atbir House",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9288644,-6.897381",
+   "lat": 30.9288644,
+   "lng": -6.897381,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.9288644,-6.897381",
+   "source": "osm"
+  },
+  {
+   "nom": "Rose Noir",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9201652,-6.8992034",
+   "lat": 30.9201652,
+   "lng": -6.8992034,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.9201652,-6.8992034",
+   "source": "osm"
+  },
+  {
+   "nom": "Fint",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9212176,-6.8985128",
+   "lat": 30.9212176,
+   "lng": -6.8985128,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.9212176,-6.8985128",
+   "source": "osm"
+  },
+  {
+   "nom": "Aigle Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9229109,-6.8973257",
+   "lat": 30.9229109,
+   "lng": -6.8973257,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.9229109,-6.8973257",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar Kamar",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9192734,-6.8988869",
+   "lat": 30.9192734,
+   "lng": -6.8988869,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.darkamar.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Hôtel Les Jardins de Ouarzazate",
+   "categorie": "Hôtel",
+   "priceRange": "€€€",
+   "score": 3,
+   "mapsUrl": "https://maps.google.com/?q=30.9042362,-6.9110736",
+   "lat": 30.9042362,
+   "lng": -6.9110736,
+   "halalFriendly": false,
+   "bookingUrl": "http://hotel-les-jardins-de-ouarzazate.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Nadia",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9028304,-6.9115724",
+   "lat": 30.9028304,
+   "lng": -6.9115724,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.9028304,-6.9115724",
+   "source": "osm"
+  },
+  {
+   "nom": "La Vallee",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9029908,-6.9111552",
+   "lat": 30.9029908,
+   "lng": -6.9111552,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.9029908,-6.9111552",
+   "source": "osm"
+  },
+  {
+   "nom": "Chez Ghalil",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9033372,-6.9096818",
+   "lat": 30.9033372,
+   "lng": -6.9096818,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.9033372,-6.9096818",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Zaghro",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9003809,-6.9115559",
+   "lat": 30.9003809,
+   "lng": -6.9115559,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.hotel-zaghro.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Afgo residence",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9006584,-6.9108826",
+   "lat": 30.9006584,
+   "lng": -6.9108826,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.9006584,-6.9108826",
+   "source": "osm"
+  },
+  {
+   "nom": "Complexe Al Baraka",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9397981,-6.9839642",
+   "lat": 30.9397981,
+   "lng": -6.9839642,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.9397981,-6.9839642",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Ksar Aylan",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9005135,-6.9076574",
+   "lat": 30.9005135,
+   "lng": -6.9076574,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.9005135,-6.9076574",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Chay",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9305709,-6.985945",
+   "lat": 30.9305709,
+   "lng": -6.985945,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.9305709,-6.985945",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar Al Aafia",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.8948751,-6.9145071",
+   "lat": 30.8948751,
+   "lng": -6.9145071,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.daralaafia-ouarzazate.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "La Palmeraie – Ecolodge Ouarzazate",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.903947,-6.8982427",
+   "lat": 30.903947,
+   "lng": -6.8982427,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.903947,-6.8982427",
+   "source": "osm"
+  },
+  {
+   "nom": "Oz Palace",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9036232,-6.8971351",
+   "lat": 30.9036232,
+   "lng": -6.8971351,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.9036232,-6.8971351",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Ouarzazate Le Zat",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.924687,-6.8847553",
+   "lat": 30.924687,
+   "lng": -6.8847553,
+   "halalFriendly": false,
+   "bookingUrl": "https://hotel-ouarzazate-zat.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar Chamaa",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9037259,-6.8958116",
+   "lat": 30.9037259,
+   "lng": -6.8958116,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.darchamaa.com/en/en_inicio.html",
+   "source": "osm"
+  },
+  {
+   "nom": "Git d'etape nomade",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9021207,-6.8960831",
+   "lat": 30.9021207,
+   "lng": -6.8960831,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.9021207,-6.8960831",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Bouchedor رياض بوشدور",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.8967586,-6.8947259",
+   "lat": 30.8967586,
+   "lng": -6.8947259,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.riadbouchedor.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Restaurant Ksar Ben Youssef",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.8933396,-6.8986264",
+   "lat": 30.8933396,
+   "lng": -6.8986264,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.8933396,-6.8986264",
+   "source": "osm"
+  },
+  {
+   "nom": "Kasbah Zitoune",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9213647,-6.9990206",
+   "lat": 30.9213647,
+   "lng": -6.9990206,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.9213647,-6.9990206",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar Bladi",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.905429,-6.8802079",
+   "lat": 30.905429,
+   "lng": -6.8802079,
+   "halalFriendly": false,
+   "bookingUrl": "https://darbladi-ouarzazate.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar Daif",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.905816,-6.8798006",
+   "lat": 30.905816,
+   "lng": -6.8798006,
+   "halalFriendly": false,
+   "bookingUrl": "https://dardaif.ma/",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Hanan",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9042642,-6.8701252",
+   "lat": 30.9042642,
+   "lng": -6.8701252,
+   "halalFriendly": false,
+   "bookingUrl": "https://riadhanan.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Ecolodge l'ile de Ouarzazate",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9061766,-6.8575649",
+   "lat": 30.9061766,
+   "lng": -6.8575649,
+   "halalFriendly": false,
+   "bookingUrl": "https://ecolodgelile.com/",
+   "source": "osm"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "Mosquée Al Massira",
+   "lat": 30.9337007,
+   "lng": -6.9220608,
+   "coordonnees": {
+    "lat": 30.9337007,
+    "lng": -6.9220608
+   },
+   "mapsUrl": "https://maps.google.com/?q=30.9337007,-6.9220608",
+   "source": "osm"
+  },
+  {
+   "nom": "Mosquée Ait kdif",
+   "lat": 30.9252498,
+   "lng": -6.8790442,
+   "coordonnees": {
+    "lat": 30.9252498,
+    "lng": -6.8790442
+   },
+   "mapsUrl": "https://maps.google.com/?q=30.9252498,-6.8790442",
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Le Musée Régional de la Résistance et de l'Armée de Liberation",
+   "lat": 30.929908,
+   "lng": -6.9201601,
+   "coordonnees": {
+    "lat": 30.929908,
+    "lng": -6.9201601
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=30.929908,-6.9201601",
+   "source": "osm"
+  },
+  {
+   "nom": "View point of Ouarzazate",
+   "lat": 30.9193347,
+   "lng": -6.9165893,
+   "coordonnees": {
+    "lat": 30.9193347,
+    "lng": -6.9165893
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=30.9193347,-6.9165893",
+   "source": "osm"
+  },
+  {
+   "nom": "Trésor Merzouga",
+   "lat": 30.9216593,
+   "lng": -6.914016,
+   "coordonnees": {
+    "lat": 30.9216593,
+    "lng": -6.914016
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=30.9216593,-6.914016",
+   "source": "osm"
+  },
+  {
+   "nom": "View point",
+   "lat": 30.9183509,
+   "lng": -6.9161579,
+   "coordonnees": {
+    "lat": 30.9183509,
+    "lng": -6.9161579
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=30.9183509,-6.9161579",
+   "source": "osm"
+  },
+  {
+   "nom": "Ship",
+   "lat": 30.9423463,
+   "lng": -6.9652125,
+   "coordonnees": {
+    "lat": 30.9423463,
+    "lng": -6.9652125
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=30.9423463,-6.9652125",
+   "source": "osm"
+  },
+  {
+   "nom": "Lions",
+   "lat": 30.9425188,
+   "lng": -6.9675495,
+   "coordonnees": {
+    "lat": 30.9425188,
+    "lng": -6.9675495
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=30.9425188,-6.9675495",
+   "source": "osm"
+  },
+  {
+   "nom": "Filmset",
+   "lat": 30.9515952,
+   "lng": -6.9690635,
+   "coordonnees": {
+    "lat": 30.9515952,
+    "lng": -6.9690635
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=30.9515952,-6.9690635",
+   "source": "osm"
+  },
+  {
+   "nom": "Taourirt Kasbah",
+   "lat": 30.9201242,
+   "lng": -6.8994339,
+   "coordonnees": {
+    "lat": 30.9201242,
+    "lng": -6.8994339
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=30.9201242,-6.8994339",
+   "source": "osm"
+  },
+  {
+   "nom": "The old Synagogue",
+   "lat": 30.9194524,
+   "lng": -6.8979563,
+   "coordonnees": {
+    "lat": 30.9194524,
+    "lng": -6.8979563
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=30.9194524,-6.8979563",
+   "source": "osm"
+  },
+  {
+   "nom": "واحة فينت",
+   "lat": 30.9194914,
+   "lng": -6.8887444,
+   "coordonnees": {
+    "lat": 30.9194914,
+    "lng": -6.8887444
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=30.9194914,-6.8887444",
+   "source": "osm"
+  },
+  {
+   "nom": "واحة فينت",
+   "lat": 30.9188687,
+   "lng": -6.8875842,
+   "coordonnees": {
+    "lat": 30.9188687,
+    "lng": -6.8875842
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=30.9188687,-6.8875842",
+   "source": "osm"
+  },
+  {
+   "nom": "Kasbah de Tifoultoute",
+   "lat": 30.9265954,
+   "lng": -6.9904213,
+   "coordonnees": {
+    "lat": 30.9265954,
+    "lng": -6.9904213
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=30.9265954,-6.9904213",
+   "source": "osm"
+  },
+  {
+   "nom": "View on solar station",
+   "lat": 31.0589066,
+   "lng": -6.8559613,
+   "coordonnees": {
+    "lat": 31.0589066,
+    "lng": -6.8559613
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=31.0589066,-6.8559613",
+   "source": "osm"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30",
+ "description_en": "Ouarzazate, in Morocco, is a halal-friendly destination with a Halal Trust Score of 4.5/5. Muslim travelers will find 7 halal restaurants listed, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
+ "metaDescription_en": "Halal guide to Ouarzazate: 7 halal restaurants listed, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.5/5.",
+ "nom_en": "Ouarzazate",
+ "boucheries": [],
+ "dataPurgedAt": "2026-07-15"
 }

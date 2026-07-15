@@ -1,0 +1,15 @@
+name: bake-mosquees-full
+# BLOC 2 refonte data : toutes les mosquées réelles (OSM) pour chaque ville.
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  bake:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: node scripts/bake-mosquees-full.mjs

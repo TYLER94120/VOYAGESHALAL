@@ -1,1310 +1,1271 @@
 {
-  "slug": "multan",
-  "nom": "Multan",
-  "pays": "Pakistan",
-  "pays_slug": "pakistan",
-  "continent": "Asie",
-  "region": "Pakistan",
-  "coordonnees": {
-    "lat": 30.1575,
-    "lng": 71.5249
+ "slug": "multan",
+ "nom": "Multan",
+ "pays": "Pakistan",
+ "pays_slug": "pakistan",
+ "continent": "Asie",
+ "region": "Pakistan",
+ "coordonnees": {
+  "lat": 30.1575,
+  "lng": 71.5249
+ },
+ "codeISO": "",
+ "score_halal": 4.5,
+ "halalScore": 9.1,
+ "description": "'Cité des saints', Multan est célèbre pour ses sanctuaires soufis aux dômes bleus et son riche patrimoine spirituel.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Clock_Tower_-_Ghanta_Ghar%2C_Multan_-_Multan_Pakistan.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Clock_Tower_-_Ghanta_Ghar%2C_Multan_-_Multan_Pakistan.jpg",
+ "metaDescription": "'Cité des saints', Multan est célèbre pour ses sanctuaires soufis aux dômes bleus et son riche patrimoine spirituel.",
+ "statistiques": {
+  "restaurants_halal": 6,
+  "mosquees": 39,
+  "hotels": 21
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "Zaytoon Garden Resturant Multan",
+   "type": "pakistani, chinese, kebab, asian, ice cream, seafood, regional",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.101682,71.4940934",
+   "lat": 30.101682,
+   "lng": 71.4940934,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.5,
-  "halalScore": 9.1,
-  "description": "'Cité des saints', Multan est célèbre pour ses sanctuaires soufis aux dômes bleus et son riche patrimoine spirituel.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Clock_Tower_-_Ghanta_Ghar%2C_Multan_-_Multan_Pakistan.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Clock_Tower_-_Ghanta_Ghar%2C_Multan_-_Multan_Pakistan.jpg",
-  "metaDescription": "'Cité des saints', Multan est célèbre pour ses sanctuaires soufis aux dômes bleus et son riche patrimoine spirituel.",
-  "statistiques": {
-    "restaurants_halal": 6,
-    "mosquees": 1,
-    "hotels": 23
+  {
+   "nom": "Chaaye Khana",
+   "type": "pizza, kebab, asian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.2158455,71.4703428",
+   "lat": 30.2158455,
+   "lng": 71.4703428,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "Chinese Fusion",
+   "type": "chinese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.2184,71.4705382",
+   "lat": 30.2184,
+   "lng": 71.4705382,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [
-    {
-      "nom": "Zaytoon Garden Resturant Multan",
-      "type": "pakistani, chinese, kebab, asian, ice cream, seafood, regional",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.101682,71.4940934",
-      "lat": 30.101682,
-      "lng": 71.4940934,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Chaaye Khana",
-      "type": "pizza, kebab, asian",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.2158455,71.4703428",
-      "lat": 30.2158455,
-      "lng": 71.4703428,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Chinese Fusion",
-      "type": "chinese",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.2184,71.4705382",
-      "lat": 30.2184,
-      "lng": 71.4705382,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Fast & Furious by FFC",
-      "type": "pizza, burger, sandwich, pasta",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.2360567,71.5109735",
-      "lat": 30.2360567,
-      "lng": 71.5109735,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Midtown Diners",
-      "type": "american, coffee shop, pizza, italian, steak house, burger, sandwich, chicken",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.2234949,71.4735097",
-      "lat": 30.2234949,
-      "lng": 71.4735097,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "X Fries",
-      "type": "fries, sandwich, shawarma, drinks",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.1862659,71.4400282",
-      "lat": 30.1862659,
-      "lng": 71.4400282,
-      "halalConfidence": "likely",
-      "source": "osm"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "Multan Rest House",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.1617593,71.4718694",
-      "lat": 30.1617593,
-      "lng": 71.4718694,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.1617593,71.4718694",
-      "source": "osm"
-    },
-    {
-      "nom": "SNGPL Guest House",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.2026132,71.5374072",
-      "lat": 30.2026132,
-      "lng": 71.5374072,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.2026132,71.5374072",
-      "source": "osm"
-    },
-    {
-      "nom": "Al-Noor Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.2104187,71.5098479",
-      "lat": 30.2104187,
-      "lng": 71.5098479,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.2104187,71.5098479",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel LA Flora Multan",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.2108379,71.4827046",
-      "lat": 30.2108379,
-      "lng": 71.4827046,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.2108379,71.4827046",
-      "source": "osm"
-    },
-    {
-      "nom": "NFC IET Girls Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.222156,71.5391953",
-      "lat": 30.222156,
-      "lng": 71.5391953,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.222156,71.5391953",
-      "source": "osm"
-    },
-    {
-      "nom": "NFC IET Boys Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.2243062,71.5390795",
-      "lat": 30.2243062,
-      "lng": 71.5390795,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.2243062,71.5390795",
-      "source": "osm"
-    },
-    {
-      "nom": "Executive Lodges",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.216308,71.483531",
-      "lat": 30.216308,
-      "lng": 71.483531,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.216308,71.483531",
-      "source": "osm"
-    },
-    {
-      "nom": "Ramada Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.193799,71.453211",
-      "lat": 30.193799,
-      "lng": 71.453211,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.193799,71.453211",
-      "source": "osm"
-    },
-    {
-      "nom": "Doctors Hostel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.193219,71.450636",
-      "lat": 30.193219,
-      "lng": 71.450636,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.193219,71.450636",
-      "source": "osm"
-    },
-    {
-      "nom": "Shezan Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.204313,71.458941",
-      "lat": 30.204313,
-      "lng": 71.458941,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.204313,71.458941",
-      "source": "osm"
-    },
-    {
-      "nom": "Mid City Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.186181,71.445572",
-      "lat": 30.186181,
-      "lng": 71.445572,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.186181,71.445572",
-      "source": "osm"
-    },
-    {
-      "nom": "Alberoni Hostel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.223131,71.482909",
-      "lat": 30.223131,
-      "lng": 71.482909,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.223131,71.482909",
-      "source": "osm"
-    },
-    {
-      "nom": "Hostels Govt. College Bosan Road",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.219998,71.476665",
-      "lat": 30.219998,
-      "lng": 71.476665,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.219998,71.476665",
-      "source": "osm"
-    },
-    {
-      "nom": "Mehran Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.1852525,71.4439938",
-      "lat": 30.1852525,
-      "lng": 71.4439938,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.1852525,71.4439938",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Silver Sand",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.182512,71.442332",
-      "lat": 30.182512,
-      "lng": 71.442332,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.182512,71.442332",
-      "source": "osm"
-    },
-    {
-      "nom": "سندباد",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.2011339,71.4526988",
-      "lat": 30.2011339,
-      "lng": 71.4526988,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.2011339,71.4526988",
-      "source": "osm"
-    },
-    {
-      "nom": "Ehsan Khan",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.173548,71.4379703",
-      "lat": 30.173548,
-      "lng": 71.4379703,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.173548,71.4379703",
-      "source": "osm"
-    },
-    {
-      "nom": "Aziz Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.1831071,71.4407968",
-      "lat": 30.1831071,
-      "lng": 71.4407968,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.1831071,71.4407968",
-      "source": "osm"
-    },
-    {
-      "nom": "Farid Hall",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.223217,71.477416",
-      "lat": 30.223217,
-      "lng": 71.477416,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.223217,71.477416",
-      "source": "osm"
-    },
-    {
-      "nom": "Executive Guest House",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.197403,71.444457",
-      "lat": 30.197403,
-      "lng": 71.444457,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.197403,71.444457",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Emrald",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.194485,71.441882",
-      "lat": 30.194485,
-      "lng": 71.441882,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.194485,71.441882",
-      "source": "osm"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Multan",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Multan",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Multan%20Multan"
-    },
-    {
-      "nom": "Jamia Masjid Jannat ul Firdos",
-      "lat": 30.164461,
-      "lng": 71.4848981,
-      "coordonnees": {
-        "lat": 30.164461,
-        "lng": 71.4848981
-      },
-      "adresse": "Multan",
-      "mapsUrl": "https://maps.google.com/?q=30.164461,71.4848981",
-      "source": "osm"
-    },
-    {
-      "nom": "Imambargah Mumtazabad",
-      "lat": 30.174165,
-      "lng": 71.488059,
-      "coordonnees": {
-        "lat": 30.174165,
-        "lng": 71.488059
-      },
-      "adresse": "ملتان",
-      "mapsUrl": "https://maps.google.com/?q=30.174165,71.488059",
-      "source": "osm"
-    },
-    {
-      "nom": "Noor Mosque",
-      "lat": 30.17395,
-      "lng": 71.485934,
-      "coordonnees": {
-        "lat": 30.17395,
-        "lng": 71.485934
-      },
-      "adresse": "ملتان",
-      "mapsUrl": "https://maps.google.com/?q=30.17395,71.485934",
-      "source": "osm"
-    },
-    {
-      "nom": "Alkhair Mosque",
-      "lat": 30.176032,
-      "lng": 71.486814,
-      "coordonnees": {
-        "lat": 30.176032,
-        "lng": 71.486814
-      },
-      "adresse": "ملتان",
-      "mapsUrl": "https://maps.google.com/?q=30.176032,71.486814",
-      "source": "osm"
-    },
-    {
-      "nom": "Jamia Masjid Al-Hafiz Al-Sheikh Muhammad Ameen Bin Abdurehman",
-      "lat": 30.195222,
-      "lng": 71.5143691,
-      "coordonnees": {
-        "lat": 30.195222,
-        "lng": 71.5143691
-      },
-      "adresse": "408 A shah rukn alam coloney, ملتان",
-      "mapsUrl": "https://maps.google.com/?q=30.195222,71.5143691",
-      "source": "osm"
-    },
-    {
-      "nom": "Ghosia Mosque",
-      "lat": 30.1987237,
-      "lng": 71.518406,
-      "coordonnees": {
-        "lat": 30.1987237,
-        "lng": 71.518406
-      },
-      "adresse": "ملتان",
-      "mapsUrl": "https://maps.google.com/?q=30.1987237,71.518406",
-      "source": "osm"
-    },
-    {
-      "nom": "Janazgah",
-      "lat": 30.1888435,
-      "lng": 71.4910294,
-      "coordonnees": {
-        "lat": 30.1888435,
-        "lng": 71.4910294
-      },
-      "mapsUrl": "https://maps.google.com/?q=30.1888435,71.4910294",
-      "source": "osm"
-    },
-    {
-      "nom": "Abu Bakr",
-      "lat": 30.1910251,
-      "lng": 71.4919277,
-      "coordonnees": {
-        "lat": 30.1910251,
-        "lng": 71.4919277
-      },
-      "mapsUrl": "https://maps.google.com/?q=30.1910251,71.4919277",
-      "source": "osm"
-    },
-    {
-      "nom": "Khair-ul-Madaris",
-      "lat": 30.1883455,
-      "lng": 71.4851295,
-      "coordonnees": {
-        "lat": 30.1883455,
-        "lng": 71.4851295
-      },
-      "mapsUrl": "https://maps.google.com/?q=30.1883455,71.4851295",
-      "source": "osm"
-    },
-    {
-      "nom": "Mosque Baqar Abad",
-      "lat": 30.203948,
-      "lng": 71.519945,
-      "coordonnees": {
-        "lat": 30.203948,
-        "lng": 71.519945
-      },
-      "adresse": "ملتان",
-      "mapsUrl": "https://maps.google.com/?q=30.203948,71.519945",
-      "source": "osm"
-    },
-    {
-      "nom": "Shrine of Pir Roshan Shah",
-      "lat": 30.1924536,
-      "lng": 71.4861787,
-      "coordonnees": {
-        "lat": 30.1924536,
-        "lng": 71.4861787
-      },
-      "mapsUrl": "https://maps.google.com/?q=30.1924536,71.4861787",
-      "source": "osm"
-    },
-    {
-      "nom": "Khizra",
-      "lat": 30.2067882,
-      "lng": 71.5161654,
-      "coordonnees": {
-        "lat": 30.2067882,
-        "lng": 71.5161654
-      },
-      "mapsUrl": "https://maps.google.com/?q=30.2067882,71.5161654",
-      "source": "osm"
-    },
-    {
-      "nom": "Shah Khuram",
-      "lat": 30.184572,
-      "lng": 71.476192,
-      "coordonnees": {
-        "lat": 30.184572,
-        "lng": 71.476192
-      },
-      "adresse": "ملتان",
-      "mapsUrl": "https://maps.google.com/?q=30.184572,71.476192",
-      "source": "osm"
-    },
-    {
-      "nom": "Ahle",
-      "lat": 30.1884789,
-      "lng": 71.4788096,
-      "coordonnees": {
-        "lat": 30.1884789,
-        "lng": 71.4788096
-      },
-      "mapsUrl": "https://maps.google.com/?q=30.1884789,71.4788096",
-      "source": "osm"
-    },
-    {
-      "nom": "Shrine of Qazi Mithu Sahib",
-      "lat": 30.1941568,
-      "lng": 71.4838663,
-      "coordonnees": {
-        "lat": 30.1941568,
-        "lng": 71.4838663
-      },
-      "mapsUrl": "https://maps.google.com/?q=30.1941568,71.4838663",
-      "source": "osm"
-    },
-    {
-      "nom": "Al-Khalil",
-      "lat": 30.1968069,
-      "lng": 71.4846336,
-      "coordonnees": {
-        "lat": 30.1968069,
-        "lng": 71.4846336
-      },
-      "mapsUrl": "https://maps.google.com/?q=30.1968069,71.4846336",
-      "source": "osm"
-    },
-    {
-      "nom": "Sirajuddin",
-      "lat": 30.1936371,
-      "lng": 71.4801556,
-      "coordonnees": {
-        "lat": 30.1936371,
-        "lng": 71.4801556
-      },
-      "mapsUrl": "https://maps.google.com/?q=30.1936371,71.4801556",
-      "source": "osm"
-    },
-    {
-      "nom": "Neem Wali",
-      "lat": 30.1881896,
-      "lng": 71.4733463,
-      "coordonnees": {
-        "lat": 30.1881896,
-        "lng": 71.4733463
-      },
-      "mapsUrl": "https://maps.google.com/?q=30.1881896,71.4733463",
-      "source": "osm"
-    },
-    {
-      "nom": "Madina",
-      "lat": 30.1919212,
-      "lng": 71.4760543,
-      "coordonnees": {
-        "lat": 30.1919212,
-        "lng": 71.4760543
-      },
-      "mapsUrl": "https://maps.google.com/?q=30.1919212,71.4760543",
-      "source": "osm"
-    },
-    {
-      "nom": "Hussain Bux Chishti",
-      "lat": 30.1937141,
-      "lng": 71.4766426,
-      "coordonnees": {
-        "lat": 30.1937141,
-        "lng": 71.4766426
-      },
-      "mapsUrl": "https://maps.google.com/?q=30.1937141,71.4766426",
-      "source": "osm"
-    },
-    {
-      "nom": "Qadimi Markazi Imam Bargah",
-      "lat": 30.1963709,
-      "lng": 71.4793962,
-      "coordonnees": {
-        "lat": 30.1963709,
-        "lng": 71.4793962
-      },
-      "mapsUrl": "https://maps.google.com/?q=30.1963709,71.4793962",
-      "source": "osm"
-    },
-    {
-      "nom": "Murad-e- Rasool",
-      "lat": 30.1801231,
-      "lng": 71.4662123,
-      "coordonnees": {
-        "lat": 30.1801231,
-        "lng": 71.4662123
-      },
-      "mapsUrl": "https://maps.google.com/?q=30.1801231,71.4662123",
-      "source": "osm"
-    },
-    {
-      "nom": "Poongran",
-      "lat": 30.1891898,
-      "lng": 71.4719701,
-      "coordonnees": {
-        "lat": 30.1891898,
-        "lng": 71.4719701
-      },
-      "mapsUrl": "https://maps.google.com/?q=30.1891898,71.4719701",
-      "source": "osm"
-    },
-    {
-      "nom": "Shrine mosque",
-      "lat": 30.2010413,
-      "lng": 71.4838015,
-      "coordonnees": {
-        "lat": 30.2010413,
-        "lng": 71.4838015
-      },
-      "mapsUrl": "https://maps.google.com/?q=30.2010413,71.4838015",
-      "source": "osm"
-    },
-    {
-      "nom": "Hanfia",
-      "lat": 30.1919246,
-      "lng": 71.4734791,
-      "coordonnees": {
-        "lat": 30.1919246,
-        "lng": 71.4734791
-      },
-      "mapsUrl": "https://maps.google.com/?q=30.1919246,71.4734791",
-      "source": "osm"
-    },
-    {
-      "nom": "Janaza Gah Mosque",
-      "lat": 30.184164,
-      "lng": 71.467502,
-      "coordonnees": {
-        "lat": 30.184164,
-        "lng": 71.467502
-      },
-      "adresse": "ملتان",
-      "mapsUrl": "https://maps.google.com/?q=30.184164,71.467502",
-      "source": "osm"
-    },
-    {
-      "nom": "Shrine of Meeran Shah",
-      "lat": 30.1960869,
-      "lng": 71.4772958,
-      "coordonnees": {
-        "lat": 30.1960869,
-        "lng": 71.4772958
-      },
-      "mapsUrl": "https://maps.google.com/?q=30.1960869,71.4772958",
-      "source": "osm"
-    },
-    {
-      "nom": "Abu Bakkar Mosque",
-      "lat": 30.184722,
-      "lng": 71.466665,
-      "coordonnees": {
-        "lat": 30.184722,
-        "lng": 71.466665
-      },
-      "adresse": "ملتان",
-      "mapsUrl": "https://maps.google.com/?q=30.184722,71.466665",
-      "source": "osm"
-    },
-    {
-      "nom": "Wali Muhammad",
-      "lat": 30.1919311,
-      "lng": 71.4719169,
-      "coordonnees": {
-        "lat": 30.1919311,
-        "lng": 71.4719169
-      },
-      "mapsUrl": "https://maps.google.com/?q=30.1919311,71.4719169",
-      "source": "osm"
-    },
-    {
-      "nom": "Inayat Wilayat",
-      "lat": 30.1899655,
-      "lng": 71.4699963,
-      "coordonnees": {
-        "lat": 30.1899655,
-        "lng": 71.4699963
-      },
-      "mapsUrl": "https://maps.google.com/?q=30.1899655,71.4699963",
-      "source": "osm"
-    },
-    {
-      "nom": "Sirajha",
-      "lat": 30.1951742,
-      "lng": 71.4745832,
-      "coordonnees": {
-        "lat": 30.1951742,
-        "lng": 71.4745832
-      },
-      "mapsUrl": "https://maps.google.com/?q=30.1951742,71.4745832",
-      "source": "osm"
-    },
-    {
-      "nom": "Qila Kuhna",
-      "lat": 30.1987812,
-      "lng": 71.4773117,
-      "coordonnees": {
-        "lat": 30.1987812,
-        "lng": 71.4773117
-      },
-      "mapsUrl": "https://maps.google.com/?q=30.1987812,71.4773117",
-      "source": "osm"
-    },
-    {
-      "nom": "Jamia Masjid Rehmat E Habibullah",
-      "lat": 30.158489,
-      "lng": 71.4572109,
-      "coordonnees": {
-        "lat": 30.158489,
-        "lng": 71.4572109
-      },
-      "mapsUrl": "https://maps.google.com/?q=30.158489,71.4572109",
-      "source": "osm"
-    },
-    {
-      "nom": "Jamia Masjid Anwar e Madina",
-      "lat": 30.1704189,
-      "lng": 71.4585586,
-      "coordonnees": {
-        "lat": 30.1704189,
-        "lng": 71.4585586
-      },
-      "adresse": "Jammu wala Road",
-      "mapsUrl": "https://maps.google.com/?q=30.1704189,71.4585586",
-      "source": "osm"
-    },
-    {
-      "nom": "Jamia Mosque Bagh Bagi",
-      "lat": 30.185258,
-      "lng": 71.464562,
-      "coordonnees": {
-        "lat": 30.185258,
-        "lng": 71.464562
-      },
-      "adresse": "ملتان",
-      "mapsUrl": "https://maps.google.com/?q=30.185258,71.464562",
-      "source": "osm"
-    },
-    {
-      "nom": "پی ایف ایل مسجد",
-      "lat": 30.2151139,
-      "lng": 71.5421911,
-      "coordonnees": {
-        "lat": 30.2151139,
-        "lng": 71.5421911
-      },
-      "mapsUrl": "https://maps.google.com/?q=30.2151139,71.5421911",
-      "source": "osm"
-    },
-    {
-      "nom": "Reza-e-Mustafa",
-      "lat": 30.1907464,
-      "lng": 71.4660692,
-      "coordonnees": {
-        "lat": 30.1907464,
-        "lng": 71.4660692
-      },
-      "mapsUrl": "https://maps.google.com/?q=30.1907464,71.4660692",
-      "source": "osm"
-    },
-    {
-      "nom": "Qamarul Masajid",
-      "lat": 30.1921724,
-      "lng": 71.4667905,
-      "coordonnees": {
-        "lat": 30.1921724,
-        "lng": 71.4667905
-      },
-      "mapsUrl": "https://maps.google.com/?q=30.1921724,71.4667905",
-      "source": "osm"
-    },
-    {
-      "nom": "Dawat-ul-Haq",
-      "lat": 30.2045923,
-      "lng": 71.4795818,
-      "coordonnees": {
-        "lat": 30.2045923,
-        "lng": 71.4795818
-      },
-      "mapsUrl": "https://maps.google.com/?q=30.2045923,71.4795818",
-      "source": "osm"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Sanctuaire de Shah Rukn-e-Alam",
-      "categorie": "Spirituel",
-      "description": "Mausolée soufi monumental aux faïences bleues.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Sanctuaire%20de%20Shah%20Rukn-e-Alam%20Multan"
-    },
-    {
-      "id": "a2",
-      "nom": "Sanctuaire de Bahauddin Zakariya",
-      "categorie": "Spirituel",
-      "description": "Tombeau d'un grand saint soufi.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Sanctuaire%20de%20Bahauddin%20Zakariya%20Multan"
-    },
-    {
-      "id": "a3",
-      "nom": "Fort de Multan",
-      "categorie": "Histoire",
-      "description": "Anciennes fortifications surplombant la ville.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Fort%20de%20Multan%20Multan",
-      "lat": 30.183177,
-      "lng": 71.405897,
-      "geocoded": true
-    },
-    {
-      "nom": "Neelam Arslan ( Grave )",
-      "lat": 30.1862211,
-      "lng": 71.5116608,
-      "coordonnees": {
-        "lat": 30.1862211,
-        "lng": 71.5116608
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=30.1862211,71.5116608",
-      "source": "osm"
-    },
-    {
-      "nom": "Hamza Chowk- Multan",
-      "lat": 30.1866713,
-      "lng": 71.5108276,
-      "coordonnees": {
-        "lat": 30.1866713,
-        "lng": 71.5108276
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=30.1866713,71.5108276",
-      "source": "osm"
-    },
-    {
-      "nom": "British Cotton Ginning Mills",
-      "lat": 30.173929,
-      "lng": 71.49235,
-      "coordonnees": {
-        "lat": 30.173929,
-        "lng": 71.49235
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=30.173929,71.49235",
-      "source": "osm"
-    },
-    {
-      "nom": "Punjab national Silk Mill",
-      "lat": 30.175838,
-      "lng": 71.492071,
-      "coordonnees": {
-        "lat": 30.175838,
-        "lng": 71.492071
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=30.175838,71.492071",
-      "source": "osm"
-    },
-    {
-      "nom": "W Block Park",
-      "lat": 30.198777,
-      "lng": 71.52194,
-      "coordonnees": {
-        "lat": 30.198777,
-        "lng": 71.52194
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=30.198777,71.52194",
-      "source": "osm"
-    },
-    {
-      "nom": "Bloody Bastion",
-      "lat": 30.1873869,
-      "lng": 71.4752306,
-      "coordonnees": {
-        "lat": 30.1873869,
-        "lng": 71.4752306
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=30.1873869,71.4752306",
-      "source": "osm"
-    },
-    {
-      "nom": "Delhi Gate Bazar",
-      "lat": 30.1923469,
-      "lng": 71.4787107,
-      "coordonnees": {
-        "lat": 30.1923469,
-        "lng": 71.4787107
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=30.1923469,71.4787107",
-      "source": "osm"
-    },
-    {
-      "nom": "Pak Gate",
-      "lat": 30.1883808,
-      "lng": 71.4727346,
-      "coordonnees": {
-        "lat": 30.1883808,
-        "lng": 71.4727346
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=30.1883808,71.4727346",
-      "source": "osm"
-    },
-    {
-      "nom": "Dubai Marriage Lawn",
-      "lat": 30.1587653,
-      "lng": 71.4605135,
-      "coordonnees": {
-        "lat": 30.1587653,
-        "lng": 71.4605135
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=30.1587653,71.4605135",
-      "source": "osm"
-    },
-    {
-      "nom": "Chowk Shahidi Lal",
-      "lat": 30.183606,
-      "lng": 71.467781,
-      "coordonnees": {
-        "lat": 30.183606,
-        "lng": 71.467781
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=30.183606,71.467781",
-      "source": "osm"
-    },
-    {
-      "nom": "Musafir Khana",
-      "lat": 30.1901913,
-      "lng": 71.4722347,
-      "coordonnees": {
-        "lat": 30.1901913,
-        "lng": 71.4722347
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=30.1901913,71.4722347",
-      "source": "osm"
-    },
-    {
-      "nom": "Daulat Gate",
-      "lat": 30.197768,
-      "lng": 71.478553,
-      "coordonnees": {
-        "lat": 30.197768,
-        "lng": 71.478553
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=30.197768,71.478553",
-      "source": "osm"
-    },
-    {
-      "nom": "Haram Gate",
-      "lat": 30.1901206,
-      "lng": 71.4694358,
-      "coordonnees": {
-        "lat": 30.1901206,
-        "lng": 71.4694358
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=30.1901206,71.4694358",
-      "source": "osm"
-    },
-    {
-      "nom": "پرھلاد پوری مندر",
-      "lat": 30.2003146,
-      "lng": 71.4768349,
-      "coordonnees": {
-        "lat": 30.2003146,
-        "lng": 71.4768349
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=30.2003146,71.4768349",
-      "source": "osm"
-    },
-    {
-      "nom": "Shamsabad Park",
-      "lat": 30.207317,
-      "lng": 71.483359,
-      "coordonnees": {
-        "lat": 30.207317,
-        "lng": 71.483359
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=30.207317,71.483359",
-      "source": "osm"
-    },
-    {
-      "nom": "Shams Park",
-      "lat": 30.2053,
-      "lng": 71.480033,
-      "coordonnees": {
-        "lat": 30.2053,
-        "lng": 71.480033
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=30.2053,71.480033",
-      "source": "osm"
-    },
-    {
-      "nom": "قاسم دروازہ",
-      "lat": 30.1987148,
-      "lng": 71.4707027,
-      "coordonnees": {
-        "lat": 30.1987148,
-        "lng": 71.4707027
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=30.1987148,71.4707027",
-      "source": "osm"
-    },
-    {
-      "nom": "Bohar Gate",
-      "lat": 30.1936717,
-      "lng": 71.465252,
-      "coordonnees": {
-        "lat": 30.1936717,
-        "lng": 71.465252
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=30.1936717,71.465252",
-      "source": "osm"
-    },
-    {
-      "nom": "Lohari Gate",
-      "lat": 30.1979131,
-      "lng": 71.4685381,
-      "coordonnees": {
-        "lat": 30.1979131,
-        "lng": 71.4685381
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=30.1979131,71.4685381",
-      "source": "osm"
-    },
-    {
-      "nom": "Ghanta Ghar (Clock Tower)",
-      "lat": 30.1987676,
-      "lng": 71.467866,
-      "coordonnees": {
-        "lat": 30.1987676,
-        "lng": 71.467866
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=30.1987676,71.467866",
-      "source": "osm"
-    },
-    {
-      "nom": "Chungi No 22",
-      "lat": 30.177727,
-      "lng": 71.452246,
-      "coordonnees": {
-        "lat": 30.177727,
-        "lng": 71.452246
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=30.177727,71.452246",
-      "source": "osm"
-    },
-    {
-      "nom": "Zaib-un-Nisa Park",
-      "lat": 30.1862591,
-      "lng": 71.4547637,
-      "coordonnees": {
-        "lat": 30.1862591,
-        "lng": 71.4547637
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=30.1862591,71.4547637",
-      "source": "osm"
-    },
-    {
-      "nom": "Babar chowk, Multan",
-      "lat": 30.1998275,
-      "lng": 71.4620453,
-      "coordonnees": {
-        "lat": 30.1998275,
-        "lng": 71.4620453
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=30.1998275,71.4620453",
-      "source": "osm"
-    },
-    {
-      "nom": "chah sham lot wala old shujabad road multan",
-      "lat": 30.1599488,
-      "lng": 71.4449794,
-      "coordonnees": {
-        "lat": 30.1599488,
-        "lng": 71.4449794
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=30.1599488,71.4449794",
-      "source": "osm"
-    },
-    {
-      "nom": "Islahi Park",
-      "lat": 30.206115,
-      "lng": 71.466107,
-      "coordonnees": {
-        "lat": 30.206115,
-        "lng": 71.466107
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=30.206115,71.466107",
-      "source": "osm"
-    },
-    {
-      "nom": "Dera Iqbal",
-      "lat": 30.1853648,
-      "lng": 71.4480935,
-      "coordonnees": {
-        "lat": 30.1853648,
-        "lng": 71.4480935
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=30.1853648,71.4480935",
-      "source": "osm"
-    },
-    {
-      "nom": "Joyland Water Park",
-      "lat": 30.230899,
-      "lng": 71.531274,
-      "coordonnees": {
-        "lat": 30.230899,
-        "lng": 71.531274
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=30.230899,71.531274",
-      "source": "osm"
-    },
-    {
-      "nom": "Multan Office HW",
-      "lat": 30.1900232,
-      "lng": 71.4480435,
-      "coordonnees": {
-        "lat": 30.1900232,
-        "lng": 71.4480435
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=30.1900232,71.4480435",
-      "source": "osm"
-    },
-    {
-      "nom": "Aziz Hotel Chowk",
-      "lat": 30.183327,
-      "lng": 71.441109,
-      "coordonnees": {
-        "lat": 30.183327,
-        "lng": 71.441109
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=30.183327,71.441109",
-      "source": "osm"
-    },
-    {
-      "nom": "Zia Park",
-      "lat": 30.210857,
-      "lng": 71.457353,
-      "coordonnees": {
-        "lat": 30.210857,
-        "lng": 71.457353
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=30.210857,71.457353",
-      "source": "osm"
-    },
-    {
-      "nom": "Fatima Jennah Ladies Park",
-      "lat": 30.226114,
-      "lng": 71.4732835,
-      "coordonnees": {
-        "lat": 30.226114,
-        "lng": 71.4732835
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=30.226114,71.4732835",
-      "source": "osm"
-    },
-    {
-      "nom": "Chase up",
-      "lat": 30.2292802,
-      "lng": 71.4790613,
-      "coordonnees": {
-        "lat": 30.2292802,
-        "lng": 71.4790613
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=30.2292802,71.4790613",
-      "source": "osm"
-    },
-    {
-      "nom": "Chughtai Villa",
-      "lat": 30.2352806,
-      "lng": 71.4939673,
-      "coordonnees": {
-        "lat": 30.2352806,
-        "lng": 71.4939673
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=30.2352806,71.4939673",
-      "source": "osm"
-    },
-    {
-      "nom": "Kids Mini Park",
-      "lat": 30.180993,
-      "lng": 71.4335426,
-      "coordonnees": {
-        "lat": 30.180993,
-        "lng": 71.4335426
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=30.180993,71.4335426",
-      "source": "osm"
-    },
-    {
-      "nom": "Sevenup Factoryy",
-      "lat": 30.207746,
-      "lng": 71.4448,
-      "coordonnees": {
-        "lat": 30.207746,
-        "lng": 71.4448
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=30.207746,71.4448",
-      "source": "osm"
-    },
-    {
-      "nom": "Cicuit House",
-      "lat": 30.2078166,
-      "lng": 71.4411806,
-      "coordonnees": {
-        "lat": 30.2078166,
-        "lng": 71.4411806
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=30.2078166,71.4411806",
-      "source": "osm"
-    },
-    {
-      "nom": "Noor Villas",
-      "lat": 30.2396419,
-      "lng": 71.5734015,
-      "coordonnees": {
-        "lat": 30.2396419,
-        "lng": 71.5734015
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=30.2396419,71.5734015",
-      "source": "osm"
-    },
-    {
-      "nom": "Jheel",
-      "lat": 30.1788037,
-      "lng": 71.4167247,
-      "coordonnees": {
-        "lat": 30.1788037,
-        "lng": 71.4167247
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=30.1788037,71.4167247",
-      "source": "osm"
-    },
-    {
-      "nom": "Chaman Zar-E-Askari",
-      "lat": 30.178649,
-      "lng": 71.413493,
-      "coordonnees": {
-        "lat": 30.178649,
-        "lng": 71.413493
-      },
-      "categorie": "Famille",
-      "mapsUrl": "https://maps.google.com/?q=30.178649,71.413493",
-      "source": "osm"
-    },
-    {
-      "nom": "Chowk Naag Shah",
-      "lat": 30.1102113,
-      "lng": 71.4206918,
-      "coordonnees": {
-        "lat": 30.1102113,
-        "lng": 71.4206918
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=30.1102113,71.4206918",
-      "source": "osm"
-    },
-    {
-      "nom": "Ali park",
-      "lat": 30.1948276,
-      "lng": 71.3940626,
-      "coordonnees": {
-        "lat": 30.1948276,
-        "lng": 71.3940626
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=30.1948276,71.3940626",
-      "source": "osm"
-    }
-  ],
-  "imageCredit": "Wikimedia Commons",
-  "osmEnriched": true,
-  "osmEnrichedAt": "2026-06-30",
-  "description_en": "Multan, in Pakistan, is a halal-friendly destination with a Halal Trust Score of 4.5/5. Muslim travelers will find 6 halal restaurants listed, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
-  "metaDescription_en": "Halal guide to Multan: 6 halal restaurants listed, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.5/5.",
-  "nom_en": "Multan",
-  "boucheries": []
+  {
+   "nom": "Fast & Furious by FFC",
+   "type": "pizza, burger, sandwich, pasta",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.2360567,71.5109735",
+   "lat": 30.2360567,
+   "lng": 71.5109735,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Midtown Diners",
+   "type": "american, coffee shop, pizza, italian, steak house, burger, sandwich, chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.2234949,71.4735097",
+   "lat": 30.2234949,
+   "lng": 71.4735097,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "X Fries",
+   "type": "fries, sandwich, shawarma, drinks",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.1862659,71.4400282",
+   "lat": 30.1862659,
+   "lng": 71.4400282,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "Multan Rest House",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.1617593,71.4718694",
+   "lat": 30.1617593,
+   "lng": 71.4718694,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.1617593,71.4718694",
+   "source": "osm"
+  },
+  {
+   "nom": "SNGPL Guest House",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.2026132,71.5374072",
+   "lat": 30.2026132,
+   "lng": 71.5374072,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.2026132,71.5374072",
+   "source": "osm"
+  },
+  {
+   "nom": "Al-Noor Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.2104187,71.5098479",
+   "lat": 30.2104187,
+   "lng": 71.5098479,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.2104187,71.5098479",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel LA Flora Multan",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.2108379,71.4827046",
+   "lat": 30.2108379,
+   "lng": 71.4827046,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.2108379,71.4827046",
+   "source": "osm"
+  },
+  {
+   "nom": "NFC IET Girls Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.222156,71.5391953",
+   "lat": 30.222156,
+   "lng": 71.5391953,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.222156,71.5391953",
+   "source": "osm"
+  },
+  {
+   "nom": "NFC IET Boys Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.2243062,71.5390795",
+   "lat": 30.2243062,
+   "lng": 71.5390795,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.2243062,71.5390795",
+   "source": "osm"
+  },
+  {
+   "nom": "Executive Lodges",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.216308,71.483531",
+   "lat": 30.216308,
+   "lng": 71.483531,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.216308,71.483531",
+   "source": "osm"
+  },
+  {
+   "nom": "Ramada Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.193799,71.453211",
+   "lat": 30.193799,
+   "lng": 71.453211,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.193799,71.453211",
+   "source": "osm"
+  },
+  {
+   "nom": "Doctors Hostel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.193219,71.450636",
+   "lat": 30.193219,
+   "lng": 71.450636,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.193219,71.450636",
+   "source": "osm"
+  },
+  {
+   "nom": "Shezan Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.204313,71.458941",
+   "lat": 30.204313,
+   "lng": 71.458941,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.204313,71.458941",
+   "source": "osm"
+  },
+  {
+   "nom": "Mid City Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.186181,71.445572",
+   "lat": 30.186181,
+   "lng": 71.445572,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.186181,71.445572",
+   "source": "osm"
+  },
+  {
+   "nom": "Alberoni Hostel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.223131,71.482909",
+   "lat": 30.223131,
+   "lng": 71.482909,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.223131,71.482909",
+   "source": "osm"
+  },
+  {
+   "nom": "Hostels Govt. College Bosan Road",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.219998,71.476665",
+   "lat": 30.219998,
+   "lng": 71.476665,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.219998,71.476665",
+   "source": "osm"
+  },
+  {
+   "nom": "Mehran Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.1852525,71.4439938",
+   "lat": 30.1852525,
+   "lng": 71.4439938,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.1852525,71.4439938",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Silver Sand",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.182512,71.442332",
+   "lat": 30.182512,
+   "lng": 71.442332,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.182512,71.442332",
+   "source": "osm"
+  },
+  {
+   "nom": "سندباد",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.2011339,71.4526988",
+   "lat": 30.2011339,
+   "lng": 71.4526988,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.2011339,71.4526988",
+   "source": "osm"
+  },
+  {
+   "nom": "Ehsan Khan",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.173548,71.4379703",
+   "lat": 30.173548,
+   "lng": 71.4379703,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.173548,71.4379703",
+   "source": "osm"
+  },
+  {
+   "nom": "Aziz Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.1831071,71.4407968",
+   "lat": 30.1831071,
+   "lng": 71.4407968,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.1831071,71.4407968",
+   "source": "osm"
+  },
+  {
+   "nom": "Farid Hall",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.223217,71.477416",
+   "lat": 30.223217,
+   "lng": 71.477416,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.223217,71.477416",
+   "source": "osm"
+  },
+  {
+   "nom": "Executive Guest House",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.197403,71.444457",
+   "lat": 30.197403,
+   "lng": 71.444457,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.197403,71.444457",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Emrald",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.194485,71.441882",
+   "lat": 30.194485,
+   "lng": 71.441882,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.194485,71.441882",
+   "source": "osm"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "Jamia Masjid Jannat ul Firdos",
+   "lat": 30.164461,
+   "lng": 71.4848981,
+   "coordonnees": {
+    "lat": 30.164461,
+    "lng": 71.4848981
+   },
+   "adresse": "Multan",
+   "mapsUrl": "https://maps.google.com/?q=30.164461,71.4848981",
+   "source": "osm"
+  },
+  {
+   "nom": "Imambargah Mumtazabad",
+   "lat": 30.174165,
+   "lng": 71.488059,
+   "coordonnees": {
+    "lat": 30.174165,
+    "lng": 71.488059
+   },
+   "adresse": "ملتان",
+   "mapsUrl": "https://maps.google.com/?q=30.174165,71.488059",
+   "source": "osm"
+  },
+  {
+   "nom": "Noor Mosque",
+   "lat": 30.17395,
+   "lng": 71.485934,
+   "coordonnees": {
+    "lat": 30.17395,
+    "lng": 71.485934
+   },
+   "adresse": "ملتان",
+   "mapsUrl": "https://maps.google.com/?q=30.17395,71.485934",
+   "source": "osm"
+  },
+  {
+   "nom": "Alkhair Mosque",
+   "lat": 30.176032,
+   "lng": 71.486814,
+   "coordonnees": {
+    "lat": 30.176032,
+    "lng": 71.486814
+   },
+   "adresse": "ملتان",
+   "mapsUrl": "https://maps.google.com/?q=30.176032,71.486814",
+   "source": "osm"
+  },
+  {
+   "nom": "Jamia Masjid Al-Hafiz Al-Sheikh Muhammad Ameen Bin Abdurehman",
+   "lat": 30.195222,
+   "lng": 71.5143691,
+   "coordonnees": {
+    "lat": 30.195222,
+    "lng": 71.5143691
+   },
+   "adresse": "408 A shah rukn alam coloney, ملتان",
+   "mapsUrl": "https://maps.google.com/?q=30.195222,71.5143691",
+   "source": "osm"
+  },
+  {
+   "nom": "Ghosia Mosque",
+   "lat": 30.1987237,
+   "lng": 71.518406,
+   "coordonnees": {
+    "lat": 30.1987237,
+    "lng": 71.518406
+   },
+   "adresse": "ملتان",
+   "mapsUrl": "https://maps.google.com/?q=30.1987237,71.518406",
+   "source": "osm"
+  },
+  {
+   "nom": "Janazgah",
+   "lat": 30.1888435,
+   "lng": 71.4910294,
+   "coordonnees": {
+    "lat": 30.1888435,
+    "lng": 71.4910294
+   },
+   "mapsUrl": "https://maps.google.com/?q=30.1888435,71.4910294",
+   "source": "osm"
+  },
+  {
+   "nom": "Abu Bakr",
+   "lat": 30.1910251,
+   "lng": 71.4919277,
+   "coordonnees": {
+    "lat": 30.1910251,
+    "lng": 71.4919277
+   },
+   "mapsUrl": "https://maps.google.com/?q=30.1910251,71.4919277",
+   "source": "osm"
+  },
+  {
+   "nom": "Khair-ul-Madaris",
+   "lat": 30.1883455,
+   "lng": 71.4851295,
+   "coordonnees": {
+    "lat": 30.1883455,
+    "lng": 71.4851295
+   },
+   "mapsUrl": "https://maps.google.com/?q=30.1883455,71.4851295",
+   "source": "osm"
+  },
+  {
+   "nom": "Mosque Baqar Abad",
+   "lat": 30.203948,
+   "lng": 71.519945,
+   "coordonnees": {
+    "lat": 30.203948,
+    "lng": 71.519945
+   },
+   "adresse": "ملتان",
+   "mapsUrl": "https://maps.google.com/?q=30.203948,71.519945",
+   "source": "osm"
+  },
+  {
+   "nom": "Shrine of Pir Roshan Shah",
+   "lat": 30.1924536,
+   "lng": 71.4861787,
+   "coordonnees": {
+    "lat": 30.1924536,
+    "lng": 71.4861787
+   },
+   "mapsUrl": "https://maps.google.com/?q=30.1924536,71.4861787",
+   "source": "osm"
+  },
+  {
+   "nom": "Khizra",
+   "lat": 30.2067882,
+   "lng": 71.5161654,
+   "coordonnees": {
+    "lat": 30.2067882,
+    "lng": 71.5161654
+   },
+   "mapsUrl": "https://maps.google.com/?q=30.2067882,71.5161654",
+   "source": "osm"
+  },
+  {
+   "nom": "Shah Khuram",
+   "lat": 30.184572,
+   "lng": 71.476192,
+   "coordonnees": {
+    "lat": 30.184572,
+    "lng": 71.476192
+   },
+   "adresse": "ملتان",
+   "mapsUrl": "https://maps.google.com/?q=30.184572,71.476192",
+   "source": "osm"
+  },
+  {
+   "nom": "Ahle",
+   "lat": 30.1884789,
+   "lng": 71.4788096,
+   "coordonnees": {
+    "lat": 30.1884789,
+    "lng": 71.4788096
+   },
+   "mapsUrl": "https://maps.google.com/?q=30.1884789,71.4788096",
+   "source": "osm"
+  },
+  {
+   "nom": "Shrine of Qazi Mithu Sahib",
+   "lat": 30.1941568,
+   "lng": 71.4838663,
+   "coordonnees": {
+    "lat": 30.1941568,
+    "lng": 71.4838663
+   },
+   "mapsUrl": "https://maps.google.com/?q=30.1941568,71.4838663",
+   "source": "osm"
+  },
+  {
+   "nom": "Al-Khalil",
+   "lat": 30.1968069,
+   "lng": 71.4846336,
+   "coordonnees": {
+    "lat": 30.1968069,
+    "lng": 71.4846336
+   },
+   "mapsUrl": "https://maps.google.com/?q=30.1968069,71.4846336",
+   "source": "osm"
+  },
+  {
+   "nom": "Sirajuddin",
+   "lat": 30.1936371,
+   "lng": 71.4801556,
+   "coordonnees": {
+    "lat": 30.1936371,
+    "lng": 71.4801556
+   },
+   "mapsUrl": "https://maps.google.com/?q=30.1936371,71.4801556",
+   "source": "osm"
+  },
+  {
+   "nom": "Neem Wali",
+   "lat": 30.1881896,
+   "lng": 71.4733463,
+   "coordonnees": {
+    "lat": 30.1881896,
+    "lng": 71.4733463
+   },
+   "mapsUrl": "https://maps.google.com/?q=30.1881896,71.4733463",
+   "source": "osm"
+  },
+  {
+   "nom": "Madina",
+   "lat": 30.1919212,
+   "lng": 71.4760543,
+   "coordonnees": {
+    "lat": 30.1919212,
+    "lng": 71.4760543
+   },
+   "mapsUrl": "https://maps.google.com/?q=30.1919212,71.4760543",
+   "source": "osm"
+  },
+  {
+   "nom": "Hussain Bux Chishti",
+   "lat": 30.1937141,
+   "lng": 71.4766426,
+   "coordonnees": {
+    "lat": 30.1937141,
+    "lng": 71.4766426
+   },
+   "mapsUrl": "https://maps.google.com/?q=30.1937141,71.4766426",
+   "source": "osm"
+  },
+  {
+   "nom": "Qadimi Markazi Imam Bargah",
+   "lat": 30.1963709,
+   "lng": 71.4793962,
+   "coordonnees": {
+    "lat": 30.1963709,
+    "lng": 71.4793962
+   },
+   "mapsUrl": "https://maps.google.com/?q=30.1963709,71.4793962",
+   "source": "osm"
+  },
+  {
+   "nom": "Murad-e- Rasool",
+   "lat": 30.1801231,
+   "lng": 71.4662123,
+   "coordonnees": {
+    "lat": 30.1801231,
+    "lng": 71.4662123
+   },
+   "mapsUrl": "https://maps.google.com/?q=30.1801231,71.4662123",
+   "source": "osm"
+  },
+  {
+   "nom": "Poongran",
+   "lat": 30.1891898,
+   "lng": 71.4719701,
+   "coordonnees": {
+    "lat": 30.1891898,
+    "lng": 71.4719701
+   },
+   "mapsUrl": "https://maps.google.com/?q=30.1891898,71.4719701",
+   "source": "osm"
+  },
+  {
+   "nom": "Shrine mosque",
+   "lat": 30.2010413,
+   "lng": 71.4838015,
+   "coordonnees": {
+    "lat": 30.2010413,
+    "lng": 71.4838015
+   },
+   "mapsUrl": "https://maps.google.com/?q=30.2010413,71.4838015",
+   "source": "osm"
+  },
+  {
+   "nom": "Hanfia",
+   "lat": 30.1919246,
+   "lng": 71.4734791,
+   "coordonnees": {
+    "lat": 30.1919246,
+    "lng": 71.4734791
+   },
+   "mapsUrl": "https://maps.google.com/?q=30.1919246,71.4734791",
+   "source": "osm"
+  },
+  {
+   "nom": "Janaza Gah Mosque",
+   "lat": 30.184164,
+   "lng": 71.467502,
+   "coordonnees": {
+    "lat": 30.184164,
+    "lng": 71.467502
+   },
+   "adresse": "ملتان",
+   "mapsUrl": "https://maps.google.com/?q=30.184164,71.467502",
+   "source": "osm"
+  },
+  {
+   "nom": "Shrine of Meeran Shah",
+   "lat": 30.1960869,
+   "lng": 71.4772958,
+   "coordonnees": {
+    "lat": 30.1960869,
+    "lng": 71.4772958
+   },
+   "mapsUrl": "https://maps.google.com/?q=30.1960869,71.4772958",
+   "source": "osm"
+  },
+  {
+   "nom": "Abu Bakkar Mosque",
+   "lat": 30.184722,
+   "lng": 71.466665,
+   "coordonnees": {
+    "lat": 30.184722,
+    "lng": 71.466665
+   },
+   "adresse": "ملتان",
+   "mapsUrl": "https://maps.google.com/?q=30.184722,71.466665",
+   "source": "osm"
+  },
+  {
+   "nom": "Wali Muhammad",
+   "lat": 30.1919311,
+   "lng": 71.4719169,
+   "coordonnees": {
+    "lat": 30.1919311,
+    "lng": 71.4719169
+   },
+   "mapsUrl": "https://maps.google.com/?q=30.1919311,71.4719169",
+   "source": "osm"
+  },
+  {
+   "nom": "Inayat Wilayat",
+   "lat": 30.1899655,
+   "lng": 71.4699963,
+   "coordonnees": {
+    "lat": 30.1899655,
+    "lng": 71.4699963
+   },
+   "mapsUrl": "https://maps.google.com/?q=30.1899655,71.4699963",
+   "source": "osm"
+  },
+  {
+   "nom": "Sirajha",
+   "lat": 30.1951742,
+   "lng": 71.4745832,
+   "coordonnees": {
+    "lat": 30.1951742,
+    "lng": 71.4745832
+   },
+   "mapsUrl": "https://maps.google.com/?q=30.1951742,71.4745832",
+   "source": "osm"
+  },
+  {
+   "nom": "Qila Kuhna",
+   "lat": 30.1987812,
+   "lng": 71.4773117,
+   "coordonnees": {
+    "lat": 30.1987812,
+    "lng": 71.4773117
+   },
+   "mapsUrl": "https://maps.google.com/?q=30.1987812,71.4773117",
+   "source": "osm"
+  },
+  {
+   "nom": "Jamia Masjid Rehmat E Habibullah",
+   "lat": 30.158489,
+   "lng": 71.4572109,
+   "coordonnees": {
+    "lat": 30.158489,
+    "lng": 71.4572109
+   },
+   "mapsUrl": "https://maps.google.com/?q=30.158489,71.4572109",
+   "source": "osm"
+  },
+  {
+   "nom": "Jamia Masjid Anwar e Madina",
+   "lat": 30.1704189,
+   "lng": 71.4585586,
+   "coordonnees": {
+    "lat": 30.1704189,
+    "lng": 71.4585586
+   },
+   "adresse": "Jammu wala Road",
+   "mapsUrl": "https://maps.google.com/?q=30.1704189,71.4585586",
+   "source": "osm"
+  },
+  {
+   "nom": "Jamia Mosque Bagh Bagi",
+   "lat": 30.185258,
+   "lng": 71.464562,
+   "coordonnees": {
+    "lat": 30.185258,
+    "lng": 71.464562
+   },
+   "adresse": "ملتان",
+   "mapsUrl": "https://maps.google.com/?q=30.185258,71.464562",
+   "source": "osm"
+  },
+  {
+   "nom": "پی ایف ایل مسجد",
+   "lat": 30.2151139,
+   "lng": 71.5421911,
+   "coordonnees": {
+    "lat": 30.2151139,
+    "lng": 71.5421911
+   },
+   "mapsUrl": "https://maps.google.com/?q=30.2151139,71.5421911",
+   "source": "osm"
+  },
+  {
+   "nom": "Reza-e-Mustafa",
+   "lat": 30.1907464,
+   "lng": 71.4660692,
+   "coordonnees": {
+    "lat": 30.1907464,
+    "lng": 71.4660692
+   },
+   "mapsUrl": "https://maps.google.com/?q=30.1907464,71.4660692",
+   "source": "osm"
+  },
+  {
+   "nom": "Qamarul Masajid",
+   "lat": 30.1921724,
+   "lng": 71.4667905,
+   "coordonnees": {
+    "lat": 30.1921724,
+    "lng": 71.4667905
+   },
+   "mapsUrl": "https://maps.google.com/?q=30.1921724,71.4667905",
+   "source": "osm"
+  },
+  {
+   "nom": "Dawat-ul-Haq",
+   "lat": 30.2045923,
+   "lng": 71.4795818,
+   "coordonnees": {
+    "lat": 30.2045923,
+    "lng": 71.4795818
+   },
+   "mapsUrl": "https://maps.google.com/?q=30.2045923,71.4795818",
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Neelam Arslan ( Grave )",
+   "lat": 30.1862211,
+   "lng": 71.5116608,
+   "coordonnees": {
+    "lat": 30.1862211,
+    "lng": 71.5116608
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=30.1862211,71.5116608",
+   "source": "osm"
+  },
+  {
+   "nom": "Hamza Chowk- Multan",
+   "lat": 30.1866713,
+   "lng": 71.5108276,
+   "coordonnees": {
+    "lat": 30.1866713,
+    "lng": 71.5108276
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=30.1866713,71.5108276",
+   "source": "osm"
+  },
+  {
+   "nom": "British Cotton Ginning Mills",
+   "lat": 30.173929,
+   "lng": 71.49235,
+   "coordonnees": {
+    "lat": 30.173929,
+    "lng": 71.49235
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=30.173929,71.49235",
+   "source": "osm"
+  },
+  {
+   "nom": "Punjab national Silk Mill",
+   "lat": 30.175838,
+   "lng": 71.492071,
+   "coordonnees": {
+    "lat": 30.175838,
+    "lng": 71.492071
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=30.175838,71.492071",
+   "source": "osm"
+  },
+  {
+   "nom": "W Block Park",
+   "lat": 30.198777,
+   "lng": 71.52194,
+   "coordonnees": {
+    "lat": 30.198777,
+    "lng": 71.52194
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=30.198777,71.52194",
+   "source": "osm"
+  },
+  {
+   "nom": "Bloody Bastion",
+   "lat": 30.1873869,
+   "lng": 71.4752306,
+   "coordonnees": {
+    "lat": 30.1873869,
+    "lng": 71.4752306
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=30.1873869,71.4752306",
+   "source": "osm"
+  },
+  {
+   "nom": "Delhi Gate Bazar",
+   "lat": 30.1923469,
+   "lng": 71.4787107,
+   "coordonnees": {
+    "lat": 30.1923469,
+    "lng": 71.4787107
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=30.1923469,71.4787107",
+   "source": "osm"
+  },
+  {
+   "nom": "Pak Gate",
+   "lat": 30.1883808,
+   "lng": 71.4727346,
+   "coordonnees": {
+    "lat": 30.1883808,
+    "lng": 71.4727346
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=30.1883808,71.4727346",
+   "source": "osm"
+  },
+  {
+   "nom": "Dubai Marriage Lawn",
+   "lat": 30.1587653,
+   "lng": 71.4605135,
+   "coordonnees": {
+    "lat": 30.1587653,
+    "lng": 71.4605135
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=30.1587653,71.4605135",
+   "source": "osm"
+  },
+  {
+   "nom": "Chowk Shahidi Lal",
+   "lat": 30.183606,
+   "lng": 71.467781,
+   "coordonnees": {
+    "lat": 30.183606,
+    "lng": 71.467781
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=30.183606,71.467781",
+   "source": "osm"
+  },
+  {
+   "nom": "Musafir Khana",
+   "lat": 30.1901913,
+   "lng": 71.4722347,
+   "coordonnees": {
+    "lat": 30.1901913,
+    "lng": 71.4722347
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=30.1901913,71.4722347",
+   "source": "osm"
+  },
+  {
+   "nom": "Daulat Gate",
+   "lat": 30.197768,
+   "lng": 71.478553,
+   "coordonnees": {
+    "lat": 30.197768,
+    "lng": 71.478553
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=30.197768,71.478553",
+   "source": "osm"
+  },
+  {
+   "nom": "Haram Gate",
+   "lat": 30.1901206,
+   "lng": 71.4694358,
+   "coordonnees": {
+    "lat": 30.1901206,
+    "lng": 71.4694358
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=30.1901206,71.4694358",
+   "source": "osm"
+  },
+  {
+   "nom": "پرھلاد پوری مندر",
+   "lat": 30.2003146,
+   "lng": 71.4768349,
+   "coordonnees": {
+    "lat": 30.2003146,
+    "lng": 71.4768349
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=30.2003146,71.4768349",
+   "source": "osm"
+  },
+  {
+   "nom": "Shamsabad Park",
+   "lat": 30.207317,
+   "lng": 71.483359,
+   "coordonnees": {
+    "lat": 30.207317,
+    "lng": 71.483359
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=30.207317,71.483359",
+   "source": "osm"
+  },
+  {
+   "nom": "Shams Park",
+   "lat": 30.2053,
+   "lng": 71.480033,
+   "coordonnees": {
+    "lat": 30.2053,
+    "lng": 71.480033
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=30.2053,71.480033",
+   "source": "osm"
+  },
+  {
+   "nom": "قاسم دروازہ",
+   "lat": 30.1987148,
+   "lng": 71.4707027,
+   "coordonnees": {
+    "lat": 30.1987148,
+    "lng": 71.4707027
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=30.1987148,71.4707027",
+   "source": "osm"
+  },
+  {
+   "nom": "Bohar Gate",
+   "lat": 30.1936717,
+   "lng": 71.465252,
+   "coordonnees": {
+    "lat": 30.1936717,
+    "lng": 71.465252
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=30.1936717,71.465252",
+   "source": "osm"
+  },
+  {
+   "nom": "Lohari Gate",
+   "lat": 30.1979131,
+   "lng": 71.4685381,
+   "coordonnees": {
+    "lat": 30.1979131,
+    "lng": 71.4685381
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=30.1979131,71.4685381",
+   "source": "osm"
+  },
+  {
+   "nom": "Ghanta Ghar (Clock Tower)",
+   "lat": 30.1987676,
+   "lng": 71.467866,
+   "coordonnees": {
+    "lat": 30.1987676,
+    "lng": 71.467866
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=30.1987676,71.467866",
+   "source": "osm"
+  },
+  {
+   "nom": "Chungi No 22",
+   "lat": 30.177727,
+   "lng": 71.452246,
+   "coordonnees": {
+    "lat": 30.177727,
+    "lng": 71.452246
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=30.177727,71.452246",
+   "source": "osm"
+  },
+  {
+   "nom": "Zaib-un-Nisa Park",
+   "lat": 30.1862591,
+   "lng": 71.4547637,
+   "coordonnees": {
+    "lat": 30.1862591,
+    "lng": 71.4547637
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=30.1862591,71.4547637",
+   "source": "osm"
+  },
+  {
+   "nom": "Babar chowk, Multan",
+   "lat": 30.1998275,
+   "lng": 71.4620453,
+   "coordonnees": {
+    "lat": 30.1998275,
+    "lng": 71.4620453
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=30.1998275,71.4620453",
+   "source": "osm"
+  },
+  {
+   "nom": "chah sham lot wala old shujabad road multan",
+   "lat": 30.1599488,
+   "lng": 71.4449794,
+   "coordonnees": {
+    "lat": 30.1599488,
+    "lng": 71.4449794
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=30.1599488,71.4449794",
+   "source": "osm"
+  },
+  {
+   "nom": "Islahi Park",
+   "lat": 30.206115,
+   "lng": 71.466107,
+   "coordonnees": {
+    "lat": 30.206115,
+    "lng": 71.466107
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=30.206115,71.466107",
+   "source": "osm"
+  },
+  {
+   "nom": "Dera Iqbal",
+   "lat": 30.1853648,
+   "lng": 71.4480935,
+   "coordonnees": {
+    "lat": 30.1853648,
+    "lng": 71.4480935
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=30.1853648,71.4480935",
+   "source": "osm"
+  },
+  {
+   "nom": "Joyland Water Park",
+   "lat": 30.230899,
+   "lng": 71.531274,
+   "coordonnees": {
+    "lat": 30.230899,
+    "lng": 71.531274
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=30.230899,71.531274",
+   "source": "osm"
+  },
+  {
+   "nom": "Multan Office HW",
+   "lat": 30.1900232,
+   "lng": 71.4480435,
+   "coordonnees": {
+    "lat": 30.1900232,
+    "lng": 71.4480435
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=30.1900232,71.4480435",
+   "source": "osm"
+  },
+  {
+   "nom": "Aziz Hotel Chowk",
+   "lat": 30.183327,
+   "lng": 71.441109,
+   "coordonnees": {
+    "lat": 30.183327,
+    "lng": 71.441109
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=30.183327,71.441109",
+   "source": "osm"
+  },
+  {
+   "nom": "Zia Park",
+   "lat": 30.210857,
+   "lng": 71.457353,
+   "coordonnees": {
+    "lat": 30.210857,
+    "lng": 71.457353
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=30.210857,71.457353",
+   "source": "osm"
+  },
+  {
+   "nom": "Fatima Jennah Ladies Park",
+   "lat": 30.226114,
+   "lng": 71.4732835,
+   "coordonnees": {
+    "lat": 30.226114,
+    "lng": 71.4732835
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=30.226114,71.4732835",
+   "source": "osm"
+  },
+  {
+   "nom": "Chase up",
+   "lat": 30.2292802,
+   "lng": 71.4790613,
+   "coordonnees": {
+    "lat": 30.2292802,
+    "lng": 71.4790613
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=30.2292802,71.4790613",
+   "source": "osm"
+  },
+  {
+   "nom": "Chughtai Villa",
+   "lat": 30.2352806,
+   "lng": 71.4939673,
+   "coordonnees": {
+    "lat": 30.2352806,
+    "lng": 71.4939673
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=30.2352806,71.4939673",
+   "source": "osm"
+  },
+  {
+   "nom": "Kids Mini Park",
+   "lat": 30.180993,
+   "lng": 71.4335426,
+   "coordonnees": {
+    "lat": 30.180993,
+    "lng": 71.4335426
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=30.180993,71.4335426",
+   "source": "osm"
+  },
+  {
+   "nom": "Sevenup Factoryy",
+   "lat": 30.207746,
+   "lng": 71.4448,
+   "coordonnees": {
+    "lat": 30.207746,
+    "lng": 71.4448
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=30.207746,71.4448",
+   "source": "osm"
+  },
+  {
+   "nom": "Cicuit House",
+   "lat": 30.2078166,
+   "lng": 71.4411806,
+   "coordonnees": {
+    "lat": 30.2078166,
+    "lng": 71.4411806
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=30.2078166,71.4411806",
+   "source": "osm"
+  },
+  {
+   "nom": "Noor Villas",
+   "lat": 30.2396419,
+   "lng": 71.5734015,
+   "coordonnees": {
+    "lat": 30.2396419,
+    "lng": 71.5734015
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=30.2396419,71.5734015",
+   "source": "osm"
+  },
+  {
+   "nom": "Jheel",
+   "lat": 30.1788037,
+   "lng": 71.4167247,
+   "coordonnees": {
+    "lat": 30.1788037,
+    "lng": 71.4167247
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=30.1788037,71.4167247",
+   "source": "osm"
+  },
+  {
+   "nom": "Chaman Zar-E-Askari",
+   "lat": 30.178649,
+   "lng": 71.413493,
+   "coordonnees": {
+    "lat": 30.178649,
+    "lng": 71.413493
+   },
+   "categorie": "Famille",
+   "mapsUrl": "https://maps.google.com/?q=30.178649,71.413493",
+   "source": "osm"
+  },
+  {
+   "nom": "Chowk Naag Shah",
+   "lat": 30.1102113,
+   "lng": 71.4206918,
+   "coordonnees": {
+    "lat": 30.1102113,
+    "lng": 71.4206918
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=30.1102113,71.4206918",
+   "source": "osm"
+  },
+  {
+   "nom": "Ali park",
+   "lat": 30.1948276,
+   "lng": 71.3940626,
+   "coordonnees": {
+    "lat": 30.1948276,
+    "lng": 71.3940626
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=30.1948276,71.3940626",
+   "source": "osm"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30",
+ "description_en": "Multan, in Pakistan, is a halal-friendly destination with a Halal Trust Score of 4.5/5. Muslim travelers will find 6 halal restaurants listed, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
+ "metaDescription_en": "Halal guide to Multan: 6 halal restaurants listed, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.5/5.",
+ "nom_en": "Multan",
+ "boucheries": [],
+ "dataPurgedAt": "2026-07-15"
 }

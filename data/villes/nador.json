@@ -1,730 +1,691 @@
 {
-  "slug": "nador",
-  "nom": "Nador",
-  "pays": "Maroc",
-  "pays_slug": "maroc",
-  "continent": "Afrique",
-  "region": "Nord du Maroc",
-  "coordonnees": {
-    "lat": 35.1681,
-    "lng": -2.9335
-  },
-  "codeISO": "MA",
-  "score_halal": 4.5,
-  "halalScore": 9,
-  "description": "Grand port de l'Oriental sur la lagune de Marchica, Nador est une ville dynamique proche de l'enclave de Melilla. Fruits de mer frais et culture rifaine.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Nador_seafront.JPG/1920px-Nador_seafront.JPG",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Nador_seafront.JPG/1920px-Nador_seafront.JPG",
-  "metaDescription": "Grand port de l'Oriental sur la lagune de Marchica, Nador est une ville dynamique proche de l'enclave de Melilla. Fruits de mer frais et culture rifaine.",
+ "slug": "nador",
+ "nom": "Nador",
+ "pays": "Maroc",
+ "pays_slug": "maroc",
+ "continent": "Afrique",
+ "region": "Nord du Maroc",
+ "coordonnees": {
+  "lat": 35.1681,
+  "lng": -2.9335
+ },
+ "codeISO": "MA",
+ "score_halal": 4.5,
+ "halalScore": 9,
+ "description": "Grand port de l'Oriental sur la lagune de Marchica, Nador est une ville dynamique proche de l'enclave de Melilla. Fruits de mer frais et culture rifaine.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Nador_seafront.JPG/1920px-Nador_seafront.JPG",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Nador_seafront.JPG/1920px-Nador_seafront.JPG",
+ "metaDescription": "Grand port de l'Oriental sur la lagune de Marchica, Nador est une ville dynamique proche de l'enclave de Melilla. Fruits de mer frais et culture rifaine.",
+ "monnaie": "MAD (Dirham marocain)",
+ "langue": "Arabe, Tamazight, Français",
+ "statistiques": {
+  "restaurants_halal": 2,
+  "mosquees": 1,
+  "hotels": 18
+ },
+ "infoPratique": {
   "monnaie": "MAD (Dirham marocain)",
   "langue": "Arabe, Tamazight, Français",
-  "statistiques": {
-    "restaurants_halal": 2,
-    "mosquees": 1,
-    "hotels": 18
+  "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
+  "meilleureEpoque": "Printemps et automne (climat doux)."
+ },
+ "tags": [
+  "halal",
+  "Maroc"
+ ],
+ "restaurants": [
+  {
+   "nom": "Marbella",
+   "type": "fish, kebab, pizza, sandwich",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.1713933,-2.928498",
+   "lat": 35.1713933,
+   "lng": -2.928498,
+   "halalConfidence": "likely",
+   "source": "osm"
   },
-  "infoPratique": {
-    "monnaie": "MAD (Dirham marocain)",
-    "langue": "Arabe, Tamazight, Français",
-    "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
-    "meilleureEpoque": "Printemps et automne (climat doux)."
+  {
+   "nom": "Las Belgas",
+   "type": "burger, ice cream, moroccan, pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.1789717,-2.9220735",
+   "lat": 35.1789717,
+   "lng": -2.9220735,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "Hotel Lixus",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.1722222,-2.9273564",
+   "lat": 35.1722222,
+   "lng": -2.9273564,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.1722222,-2.9273564",
+   "source": "osm"
   },
-  "tags": [
-    "halal",
-    "Maroc"
-  ],
-  "restaurants": [
-    {
-      "nom": "Marbella",
-      "type": "fish, kebab, pizza, sandwich",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.1713933,-2.928498",
-      "lat": 35.1713933,
-      "lng": -2.928498,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Las Belgas",
-      "type": "burger, ice cream, moroccan, pizza",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.1789717,-2.9220735",
-      "lat": 35.1789717,
-      "lng": -2.9220735,
-      "halalConfidence": "likely",
-      "source": "osm"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "Hotel Lixus",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.1722222,-2.9273564",
-      "lat": 35.1722222,
-      "lng": -2.9273564,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.1722222,-2.9273564",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel La Giralda",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.1723142,-2.9271739",
-      "lat": 35.1723142,
-      "lng": -2.9271739,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.1723142,-2.9271739",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Babel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.1689558,-2.9246914",
-      "lat": 35.1689558,
-      "lng": -2.9246914,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.1689558,-2.9246914",
-      "source": "osm"
-    },
-    {
-      "nom": "Al Manzah",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.1765803,-2.9280754",
-      "lat": 35.1765803,
-      "lng": -2.9280754,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.1765803,-2.9280754",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Annakhil",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.1779981,-2.9307595",
-      "lat": 35.1779981,
-      "lng": -2.9307595,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.1779981,-2.9307595",
-      "source": "osm"
-    },
-    {
-      "nom": "Al Hilal الهلال",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.1735738,-2.9215789",
-      "lat": 35.1735738,
-      "lng": -2.9215789,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.1735738,-2.9215789",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Nador فندق الناظور",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.1740761,-2.9214681",
-      "lat": 35.1740761,
-      "lng": -2.9214681,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.1740761,-2.9214681",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Al Khattabi فندق الخطابي",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.1741386,-2.9212711",
-      "lat": 35.1741386,
-      "lng": -2.9212711,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.1741386,-2.9212711",
-      "source": "osm"
-    },
-    {
-      "nom": "Al Andalus",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.1787503,-2.9265074",
-      "lat": 35.1787503,
-      "lng": -2.9265074,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.1787503,-2.9265074",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Alhabib فندق الحبيب",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.1739696,-2.9205141",
-      "lat": 35.1739696,
-      "lng": -2.9205141,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.1739696,-2.9205141",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Ryad",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.1795913,-2.9271709",
-      "lat": 35.1795913,
-      "lng": -2.9271709,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.1795913,-2.9271709",
-      "source": "osm"
-    },
-    {
-      "nom": "Corniche Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.174646,-2.919868",
-      "lat": 35.174646,
-      "lng": -2.919868,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.174646,-2.919868",
-      "source": "osm"
-    },
-    {
-      "nom": "Mercure RIF Nador Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.1784125,-2.9219223",
-      "lat": 35.1784125,
-      "lng": -2.9219223,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.1784125,-2.9219223",
-      "source": "osm"
-    },
-    {
-      "nom": "فندق المغرب الكبير",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.180169,-2.9245099",
-      "lat": 35.180169,
-      "lng": -2.9245099,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.180169,-2.9245099",
-      "source": "osm"
-    },
-    {
-      "nom": "Mediterannee",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.1790458,-2.922049",
-      "lat": 35.1790458,
-      "lng": -2.922049,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.1790458,-2.922049",
-      "source": "osm"
-    },
-    {
-      "nom": "Hôtel Molen Nador",
-      "categorie": "Hôtel",
-      "priceRange": "€€€",
-      "score": 3,
-      "mapsUrl": "https://maps.google.com/?q=35.1527438,-2.9256192",
-      "lat": 35.1527438,
-      "lng": -2.9256192,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.1527438,-2.9256192",
-      "source": "osm"
-    },
-    {
-      "nom": "فندق المطار",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.1514112,-2.9209205",
-      "lat": 35.1514112,
-      "lng": -2.9209205,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.1514112,-2.9209205",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Marchica Lagoon Resort, Nador Morocco",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=35.2070058,-2.9125472",
-      "lat": 35.2070058,
-      "lng": -2.9125472,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=35.2070058,-2.9125472",
-      "source": "osm"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Nador",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Nador",
-      "description": "Mosquée principale de la ville, prière du vendredi.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20Nador%20Nador%20Maroc"
-    },
-    {
-      "nom": "Mezquita del Buen Acuerdo",
-      "lat": 35.2888258,
-      "lng": -2.9441887,
-      "coordonnees": {
-        "lat": 35.2888258,
-        "lng": -2.9441887
-      },
-      "adresse": "Querol, Melilla",
-      "mapsUrl": "https://maps.google.com/?q=35.2888258,-2.9441887",
-      "source": "osm"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Lagune de Marchica",
-      "categorie": "Nature",
-      "description": "Vaste lagune protégée, oiseaux migrateurs, promenade et sports nautiques.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Lagune%20de%20Marchica%20Nador%20Maroc"
-    },
-    {
-      "id": "a2",
-      "nom": "Marchica Parc",
-      "categorie": "Loisirs",
-      "description": "Aménagements de loisirs et corniche au bord de la lagune.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Marchica%20Parc%20Nador%20Maroc"
-    },
-    {
-      "id": "a3",
-      "nom": "Corniche de Nador",
-      "categorie": "Loisirs",
-      "description": "Promenade animée le soir face à l'eau.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Corniche%20de%20Nador%20Nador%20Maroc",
-      "lat": 35.174646,
-      "lng": -2.919868,
-      "geocoded": true
-    },
-    {
-      "nom": "Mar Chica bay خليج مارتشيكا",
-      "lat": 35.1761828,
-      "lng": -2.9184393,
-      "coordonnees": {
-        "lat": 35.1761828,
-        "lng": -2.9184393
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=35.1761828,-2.9184393",
-      "source": "osm"
-    },
-    {
-      "nom": "أحب الناظور",
-      "lat": 35.1820872,
-      "lng": -2.9230718,
-      "coordonnees": {
-        "lat": 35.1820872,
-        "lng": -2.9230718
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=35.1820872,-2.9230718",
-      "source": "osm"
-    },
-    {
-      "nom": "mosquée",
-      "lat": 35.1407241,
-      "lng": -2.9270582,
-      "coordonnees": {
-        "lat": 35.1407241,
-        "lng": -2.9270582
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=35.1407241,-2.9270582",
-      "source": "osm"
-    },
-    {
-      "nom": "Panorama Gourgou",
-      "lat": 35.2058645,
-      "lng": -2.9983047,
-      "coordonnees": {
-        "lat": 35.2058645,
-        "lng": -2.9983047
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=35.2058645,-2.9983047",
-      "source": "osm"
-    },
-    {
-      "nom": "خليج الصدف",
-      "lat": 35.1959212,
-      "lng": -2.8510973,
-      "coordonnees": {
-        "lat": 35.1959212,
-        "lng": -2.8510973
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=35.1959212,-2.8510973",
-      "source": "osm"
-    },
-    {
-      "nom": "جنة الڤالهالا",
-      "lat": 35.2301764,
-      "lng": -2.990451,
-      "coordonnees": {
-        "lat": 35.2301764,
-        "lng": -2.990451
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=35.2301764,-2.990451",
-      "source": "osm"
-    },
-    {
-      "nom": "بحيرة إيكسان",
-      "lat": 35.1153663,
-      "lng": -3.0111287,
-      "coordonnees": {
-        "lat": 35.1153663,
-        "lng": -3.0111287
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=35.1153663,-3.0111287",
-      "source": "osm"
-    },
-    {
-      "nom": "منجم حديد مهجور",
-      "lat": 35.1252735,
-      "lng": -3.0233153,
-      "coordonnees": {
-        "lat": 35.1252735,
-        "lng": -3.0233153
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=35.1252735,-3.0233153",
-      "source": "osm"
-    },
-    {
-      "nom": "Cañón",
-      "lat": 35.2781549,
-      "lng": -2.9252451,
-      "coordonnees": {
-        "lat": 35.2781549,
-        "lng": -2.9252451
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=35.2781549,-2.9252451",
-      "source": "osm"
-    },
-    {
-      "nom": "Monumento Encuentros",
-      "lat": 35.2887237,
-      "lng": -2.9372176,
-      "coordonnees": {
-        "lat": 35.2887237,
-        "lng": -2.9372176
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=35.2887237,-2.9372176",
-      "source": "osm"
-    },
-    {
-      "nom": "Dios Crono",
-      "lat": 35.2904873,
-      "lng": -2.9451886,
-      "coordonnees": {
-        "lat": 35.2904873,
-        "lng": -2.9451886
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=35.2904873,-2.9451886",
-      "source": "osm"
-    },
-    {
-      "nom": "Duquesa de la Victoria",
-      "lat": 35.2907688,
-      "lng": -2.9426357,
-      "coordonnees": {
-        "lat": 35.2907688,
-        "lng": -2.9426357
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=35.2907688,-2.9426357",
-      "source": "osm"
-    },
-    {
-      "nom": "Lope de Vega",
-      "lat": 35.2912937,
-      "lng": -2.9415519,
-      "coordonnees": {
-        "lat": 35.2912937,
-        "lng": -2.9415519
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=35.2912937,-2.9415519",
-      "source": "osm"
-    },
-    {
-      "nom": "Rotonda Cuatro Caminos",
-      "lat": 35.2914942,
-      "lng": -2.9446504,
-      "coordonnees": {
-        "lat": 35.2914942,
-        "lng": -2.9446504
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=35.2914942,-2.9446504",
-      "source": "osm"
-    },
-    {
-      "nom": "Legionario Francisco Jesús Aguilar Fernández",
-      "lat": 35.2920243,
-      "lng": -2.9392928,
-      "coordonnees": {
-        "lat": 35.2920243,
-        "lng": -2.9392928
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=35.2920243,-2.9392928",
-      "source": "osm"
-    },
-    {
-      "nom": "A los Héroes y Mártires de las Campañas",
-      "lat": 35.2921774,
-      "lng": -2.9379247,
-      "coordonnees": {
-        "lat": 35.2921774,
-        "lng": -2.9379247
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=35.2921774,-2.9379247",
-      "source": "osm"
-    },
-    {
-      "nom": "Memorial a los Héroes de España",
-      "lat": 35.2929299,
-      "lng": -2.9393967,
-      "coordonnees": {
-        "lat": 35.2929299,
-        "lng": -2.9393967
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=35.2929299,-2.9393967",
-      "source": "osm"
-    },
-    {
-      "nom": "Héroes de Taxdirt",
-      "lat": 35.292757,
-      "lng": -2.9435221,
-      "coordonnees": {
-        "lat": 35.292757,
-        "lng": -2.9435221
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=35.292757,-2.9435221",
-      "source": "osm"
-    },
-    {
-      "nom": "Museo de la Asociación de Estudios Melillenses",
-      "lat": 35.2932481,
-      "lng": -2.9336413,
-      "coordonnees": {
-        "lat": 35.2932481,
-        "lng": -2.9336413
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=35.2932481,-2.9336413",
-      "source": "osm"
-    },
-    {
-      "nom": "Triángulo de Oro",
-      "lat": 35.2933301,
-      "lng": -2.9415987,
-      "coordonnees": {
-        "lat": 35.2933301,
-        "lng": -2.9415987
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=35.2933301,-2.9415987",
-      "source": "osm"
-    },
-    {
-      "nom": "San Juan Bautista de la Salle",
-      "lat": 35.2934199,
-      "lng": -2.9446747,
-      "coordonnees": {
-        "lat": 35.2934199,
-        "lng": -2.9446747
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=35.2934199,-2.9446747",
-      "source": "osm"
-    },
-    {
-      "nom": "Museo Ibáñez de Melilla",
-      "lat": 35.2937778,
-      "lng": -2.9344139,
-      "coordonnees": {
-        "lat": 35.2937778,
-        "lng": -2.9344139
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=35.2937778,-2.9344139",
-      "source": "osm"
-    },
-    {
-      "nom": "Hélice de avión T.12",
-      "lat": 35.2939563,
-      "lng": -2.9385096,
-      "coordonnees": {
-        "lat": 35.2939563,
-        "lng": -2.9385096
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=35.2939563,-2.9385096",
-      "source": "osm"
-    },
-    {
-      "nom": "Miguel de Cervantes",
-      "lat": 35.2940115,
-      "lng": -2.9405493,
-      "coordonnees": {
-        "lat": 35.2940115,
-        "lng": -2.9405493
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=35.2940115,-2.9405493",
-      "source": "osm"
-    },
-    {
-      "nom": "Faro de Melilla",
-      "lat": 35.2943028,
-      "lng": -2.9322957,
-      "coordonnees": {
-        "lat": 35.2943028,
-        "lng": -2.9322957
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=35.2943028,-2.9322957",
-      "source": "osm"
-    },
-    {
-      "nom": "Museo de Arte Sacro",
-      "lat": 35.2943633,
-      "lng": -2.9335329,
-      "coordonnees": {
-        "lat": 35.2943633,
-        "lng": -2.9335329
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=35.2943633,-2.9335329",
-      "source": "osm"
-    },
-    {
-      "nom": "Sala de Exposiciones \"Valerio Manchón\"",
-      "lat": 35.2943528,
-      "lng": -2.9427523,
-      "coordonnees": {
-        "lat": 35.2943528,
-        "lng": -2.9427523
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=35.2943528,-2.9427523",
-      "source": "osm"
-    },
-    {
-      "nom": "Fuerte de San Carlos",
-      "lat": 35.2948264,
-      "lng": -2.9377458,
-      "coordonnees": {
-        "lat": 35.2948264,
-        "lng": -2.9377458
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=35.2948264,-2.9377458",
-      "source": "osm"
-    },
-    {
-      "nom": "Museo Militar de Melilla",
-      "lat": 35.2951688,
-      "lng": -2.933952,
-      "coordonnees": {
-        "lat": 35.2951688,
-        "lng": -2.933952
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=35.2951688,-2.933952",
-      "source": "osm"
-    },
-    {
-      "nom": "Fuerte de Santiago",
-      "lat": 35.2951994,
-      "lng": -2.9356582,
-      "coordonnees": {
-        "lat": 35.2951994,
-        "lng": -2.9356582
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=35.2951994,-2.9356582",
-      "source": "osm"
-    },
-    {
-      "nom": "Virgen de la Soledad",
-      "lat": 35.2955678,
-      "lng": -2.9418334,
-      "coordonnees": {
-        "lat": 35.2955678,
-        "lng": -2.9418334
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=35.2955678,-2.9418334",
-      "source": "osm"
-    },
-    {
-      "nom": "Yacimiento arqueológico",
-      "lat": 35.2971899,
-      "lng": -2.9373696,
-      "coordonnees": {
-        "lat": 35.2971899,
-        "lng": -2.9373696
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=35.2971899,-2.9373696",
-      "source": "osm"
-    },
-    {
-      "nom": "Fuerte de María Cristina",
-      "lat": 35.299245,
-      "lng": -2.9447117,
-      "coordonnees": {
-        "lat": 35.299245,
-        "lng": -2.9447117
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=35.299245,-2.9447117",
-      "source": "osm"
-    },
-    {
-      "nom": "Toro de Osborne",
-      "lat": 35.3034816,
-      "lng": -2.9491007,
-      "coordonnees": {
-        "lat": 35.3034816,
-        "lng": -2.9491007
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=35.3034816,-2.9491007",
-      "source": "osm"
-    }
-  ],
-  "imageCredit": "Wikimedia Commons",
-  "osmEnriched": true,
-  "osmEnrichedAt": "2026-06-30",
-  "description_en": "Nador, in Morocco, is a halal-friendly destination with a Halal Trust Score of 4.5/5. Muslim travelers will find 2 halal restaurants listed, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
-  "metaDescription_en": "Halal guide to Nador: 2 halal restaurants listed, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.5/5.",
-  "nom_en": "Nador",
-  "boucheries": []
+  {
+   "nom": "Hotel La Giralda",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.1723142,-2.9271739",
+   "lat": 35.1723142,
+   "lng": -2.9271739,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.1723142,-2.9271739",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Babel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.1689558,-2.9246914",
+   "lat": 35.1689558,
+   "lng": -2.9246914,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.1689558,-2.9246914",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Manzah",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.1765803,-2.9280754",
+   "lat": 35.1765803,
+   "lng": -2.9280754,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.1765803,-2.9280754",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Annakhil",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.1779981,-2.9307595",
+   "lat": 35.1779981,
+   "lng": -2.9307595,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.1779981,-2.9307595",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Hilal الهلال",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.1735738,-2.9215789",
+   "lat": 35.1735738,
+   "lng": -2.9215789,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.1735738,-2.9215789",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Nador فندق الناظور",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.1740761,-2.9214681",
+   "lat": 35.1740761,
+   "lng": -2.9214681,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.1740761,-2.9214681",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Al Khattabi فندق الخطابي",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.1741386,-2.9212711",
+   "lat": 35.1741386,
+   "lng": -2.9212711,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.1741386,-2.9212711",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Andalus",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.1787503,-2.9265074",
+   "lat": 35.1787503,
+   "lng": -2.9265074,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.1787503,-2.9265074",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Alhabib فندق الحبيب",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.1739696,-2.9205141",
+   "lat": 35.1739696,
+   "lng": -2.9205141,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.1739696,-2.9205141",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Ryad",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.1795913,-2.9271709",
+   "lat": 35.1795913,
+   "lng": -2.9271709,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.1795913,-2.9271709",
+   "source": "osm"
+  },
+  {
+   "nom": "Corniche Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.174646,-2.919868",
+   "lat": 35.174646,
+   "lng": -2.919868,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.174646,-2.919868",
+   "source": "osm"
+  },
+  {
+   "nom": "Mercure RIF Nador Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.1784125,-2.9219223",
+   "lat": 35.1784125,
+   "lng": -2.9219223,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.1784125,-2.9219223",
+   "source": "osm"
+  },
+  {
+   "nom": "فندق المغرب الكبير",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.180169,-2.9245099",
+   "lat": 35.180169,
+   "lng": -2.9245099,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.180169,-2.9245099",
+   "source": "osm"
+  },
+  {
+   "nom": "Mediterannee",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.1790458,-2.922049",
+   "lat": 35.1790458,
+   "lng": -2.922049,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.1790458,-2.922049",
+   "source": "osm"
+  },
+  {
+   "nom": "Hôtel Molen Nador",
+   "categorie": "Hôtel",
+   "priceRange": "€€€",
+   "score": 3,
+   "mapsUrl": "https://maps.google.com/?q=35.1527438,-2.9256192",
+   "lat": 35.1527438,
+   "lng": -2.9256192,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.1527438,-2.9256192",
+   "source": "osm"
+  },
+  {
+   "nom": "فندق المطار",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.1514112,-2.9209205",
+   "lat": 35.1514112,
+   "lng": -2.9209205,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.1514112,-2.9209205",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Marchica Lagoon Resort, Nador Morocco",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.2070058,-2.9125472",
+   "lat": 35.2070058,
+   "lng": -2.9125472,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.2070058,-2.9125472",
+   "source": "osm"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "Mezquita del Buen Acuerdo",
+   "lat": 35.2888258,
+   "lng": -2.9441887,
+   "coordonnees": {
+    "lat": 35.2888258,
+    "lng": -2.9441887
+   },
+   "adresse": "Querol, Melilla",
+   "mapsUrl": "https://maps.google.com/?q=35.2888258,-2.9441887",
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Mar Chica bay خليج مارتشيكا",
+   "lat": 35.1761828,
+   "lng": -2.9184393,
+   "coordonnees": {
+    "lat": 35.1761828,
+    "lng": -2.9184393
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=35.1761828,-2.9184393",
+   "source": "osm"
+  },
+  {
+   "nom": "أحب الناظور",
+   "lat": 35.1820872,
+   "lng": -2.9230718,
+   "coordonnees": {
+    "lat": 35.1820872,
+    "lng": -2.9230718
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=35.1820872,-2.9230718",
+   "source": "osm"
+  },
+  {
+   "nom": "mosquée",
+   "lat": 35.1407241,
+   "lng": -2.9270582,
+   "coordonnees": {
+    "lat": 35.1407241,
+    "lng": -2.9270582
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=35.1407241,-2.9270582",
+   "source": "osm"
+  },
+  {
+   "nom": "Panorama Gourgou",
+   "lat": 35.2058645,
+   "lng": -2.9983047,
+   "coordonnees": {
+    "lat": 35.2058645,
+    "lng": -2.9983047
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=35.2058645,-2.9983047",
+   "source": "osm"
+  },
+  {
+   "nom": "خليج الصدف",
+   "lat": 35.1959212,
+   "lng": -2.8510973,
+   "coordonnees": {
+    "lat": 35.1959212,
+    "lng": -2.8510973
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=35.1959212,-2.8510973",
+   "source": "osm"
+  },
+  {
+   "nom": "جنة الڤالهالا",
+   "lat": 35.2301764,
+   "lng": -2.990451,
+   "coordonnees": {
+    "lat": 35.2301764,
+    "lng": -2.990451
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=35.2301764,-2.990451",
+   "source": "osm"
+  },
+  {
+   "nom": "بحيرة إيكسان",
+   "lat": 35.1153663,
+   "lng": -3.0111287,
+   "coordonnees": {
+    "lat": 35.1153663,
+    "lng": -3.0111287
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=35.1153663,-3.0111287",
+   "source": "osm"
+  },
+  {
+   "nom": "منجم حديد مهجور",
+   "lat": 35.1252735,
+   "lng": -3.0233153,
+   "coordonnees": {
+    "lat": 35.1252735,
+    "lng": -3.0233153
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=35.1252735,-3.0233153",
+   "source": "osm"
+  },
+  {
+   "nom": "Cañón",
+   "lat": 35.2781549,
+   "lng": -2.9252451,
+   "coordonnees": {
+    "lat": 35.2781549,
+    "lng": -2.9252451
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=35.2781549,-2.9252451",
+   "source": "osm"
+  },
+  {
+   "nom": "Monumento Encuentros",
+   "lat": 35.2887237,
+   "lng": -2.9372176,
+   "coordonnees": {
+    "lat": 35.2887237,
+    "lng": -2.9372176
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=35.2887237,-2.9372176",
+   "source": "osm"
+  },
+  {
+   "nom": "Dios Crono",
+   "lat": 35.2904873,
+   "lng": -2.9451886,
+   "coordonnees": {
+    "lat": 35.2904873,
+    "lng": -2.9451886
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=35.2904873,-2.9451886",
+   "source": "osm"
+  },
+  {
+   "nom": "Duquesa de la Victoria",
+   "lat": 35.2907688,
+   "lng": -2.9426357,
+   "coordonnees": {
+    "lat": 35.2907688,
+    "lng": -2.9426357
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=35.2907688,-2.9426357",
+   "source": "osm"
+  },
+  {
+   "nom": "Lope de Vega",
+   "lat": 35.2912937,
+   "lng": -2.9415519,
+   "coordonnees": {
+    "lat": 35.2912937,
+    "lng": -2.9415519
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=35.2912937,-2.9415519",
+   "source": "osm"
+  },
+  {
+   "nom": "Rotonda Cuatro Caminos",
+   "lat": 35.2914942,
+   "lng": -2.9446504,
+   "coordonnees": {
+    "lat": 35.2914942,
+    "lng": -2.9446504
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=35.2914942,-2.9446504",
+   "source": "osm"
+  },
+  {
+   "nom": "Legionario Francisco Jesús Aguilar Fernández",
+   "lat": 35.2920243,
+   "lng": -2.9392928,
+   "coordonnees": {
+    "lat": 35.2920243,
+    "lng": -2.9392928
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=35.2920243,-2.9392928",
+   "source": "osm"
+  },
+  {
+   "nom": "A los Héroes y Mártires de las Campañas",
+   "lat": 35.2921774,
+   "lng": -2.9379247,
+   "coordonnees": {
+    "lat": 35.2921774,
+    "lng": -2.9379247
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=35.2921774,-2.9379247",
+   "source": "osm"
+  },
+  {
+   "nom": "Memorial a los Héroes de España",
+   "lat": 35.2929299,
+   "lng": -2.9393967,
+   "coordonnees": {
+    "lat": 35.2929299,
+    "lng": -2.9393967
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=35.2929299,-2.9393967",
+   "source": "osm"
+  },
+  {
+   "nom": "Héroes de Taxdirt",
+   "lat": 35.292757,
+   "lng": -2.9435221,
+   "coordonnees": {
+    "lat": 35.292757,
+    "lng": -2.9435221
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=35.292757,-2.9435221",
+   "source": "osm"
+  },
+  {
+   "nom": "Museo de la Asociación de Estudios Melillenses",
+   "lat": 35.2932481,
+   "lng": -2.9336413,
+   "coordonnees": {
+    "lat": 35.2932481,
+    "lng": -2.9336413
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=35.2932481,-2.9336413",
+   "source": "osm"
+  },
+  {
+   "nom": "Triángulo de Oro",
+   "lat": 35.2933301,
+   "lng": -2.9415987,
+   "coordonnees": {
+    "lat": 35.2933301,
+    "lng": -2.9415987
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=35.2933301,-2.9415987",
+   "source": "osm"
+  },
+  {
+   "nom": "San Juan Bautista de la Salle",
+   "lat": 35.2934199,
+   "lng": -2.9446747,
+   "coordonnees": {
+    "lat": 35.2934199,
+    "lng": -2.9446747
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=35.2934199,-2.9446747",
+   "source": "osm"
+  },
+  {
+   "nom": "Museo Ibáñez de Melilla",
+   "lat": 35.2937778,
+   "lng": -2.9344139,
+   "coordonnees": {
+    "lat": 35.2937778,
+    "lng": -2.9344139
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=35.2937778,-2.9344139",
+   "source": "osm"
+  },
+  {
+   "nom": "Hélice de avión T.12",
+   "lat": 35.2939563,
+   "lng": -2.9385096,
+   "coordonnees": {
+    "lat": 35.2939563,
+    "lng": -2.9385096
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=35.2939563,-2.9385096",
+   "source": "osm"
+  },
+  {
+   "nom": "Miguel de Cervantes",
+   "lat": 35.2940115,
+   "lng": -2.9405493,
+   "coordonnees": {
+    "lat": 35.2940115,
+    "lng": -2.9405493
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=35.2940115,-2.9405493",
+   "source": "osm"
+  },
+  {
+   "nom": "Faro de Melilla",
+   "lat": 35.2943028,
+   "lng": -2.9322957,
+   "coordonnees": {
+    "lat": 35.2943028,
+    "lng": -2.9322957
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=35.2943028,-2.9322957",
+   "source": "osm"
+  },
+  {
+   "nom": "Museo de Arte Sacro",
+   "lat": 35.2943633,
+   "lng": -2.9335329,
+   "coordonnees": {
+    "lat": 35.2943633,
+    "lng": -2.9335329
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=35.2943633,-2.9335329",
+   "source": "osm"
+  },
+  {
+   "nom": "Sala de Exposiciones \"Valerio Manchón\"",
+   "lat": 35.2943528,
+   "lng": -2.9427523,
+   "coordonnees": {
+    "lat": 35.2943528,
+    "lng": -2.9427523
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=35.2943528,-2.9427523",
+   "source": "osm"
+  },
+  {
+   "nom": "Fuerte de San Carlos",
+   "lat": 35.2948264,
+   "lng": -2.9377458,
+   "coordonnees": {
+    "lat": 35.2948264,
+    "lng": -2.9377458
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=35.2948264,-2.9377458",
+   "source": "osm"
+  },
+  {
+   "nom": "Museo Militar de Melilla",
+   "lat": 35.2951688,
+   "lng": -2.933952,
+   "coordonnees": {
+    "lat": 35.2951688,
+    "lng": -2.933952
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=35.2951688,-2.933952",
+   "source": "osm"
+  },
+  {
+   "nom": "Fuerte de Santiago",
+   "lat": 35.2951994,
+   "lng": -2.9356582,
+   "coordonnees": {
+    "lat": 35.2951994,
+    "lng": -2.9356582
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=35.2951994,-2.9356582",
+   "source": "osm"
+  },
+  {
+   "nom": "Virgen de la Soledad",
+   "lat": 35.2955678,
+   "lng": -2.9418334,
+   "coordonnees": {
+    "lat": 35.2955678,
+    "lng": -2.9418334
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=35.2955678,-2.9418334",
+   "source": "osm"
+  },
+  {
+   "nom": "Yacimiento arqueológico",
+   "lat": 35.2971899,
+   "lng": -2.9373696,
+   "coordonnees": {
+    "lat": 35.2971899,
+    "lng": -2.9373696
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=35.2971899,-2.9373696",
+   "source": "osm"
+  },
+  {
+   "nom": "Fuerte de María Cristina",
+   "lat": 35.299245,
+   "lng": -2.9447117,
+   "coordonnees": {
+    "lat": 35.299245,
+    "lng": -2.9447117
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=35.299245,-2.9447117",
+   "source": "osm"
+  },
+  {
+   "nom": "Toro de Osborne",
+   "lat": 35.3034816,
+   "lng": -2.9491007,
+   "coordonnees": {
+    "lat": 35.3034816,
+    "lng": -2.9491007
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=35.3034816,-2.9491007",
+   "source": "osm"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30",
+ "description_en": "Nador, in Morocco, is a halal-friendly destination with a Halal Trust Score of 4.5/5. Muslim travelers will find 2 halal restaurants listed, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
+ "metaDescription_en": "Halal guide to Nador: 2 halal restaurants listed, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.5/5.",
+ "nom_en": "Nador",
+ "boucheries": [],
+ "dataPurgedAt": "2026-07-15"
 }

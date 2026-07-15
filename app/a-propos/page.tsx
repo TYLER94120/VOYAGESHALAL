@@ -90,8 +90,8 @@ export default async function AProposPage() {
         <h2 id="donnees">{en ? 'How we build our data' : 'Comment nous construisons nos données'}</h2>
         <p>
           {en
-            ? "We combine editorial research on flagship destinations with live, open data (OpenStreetMap / Overpass) for restaurants, mosques, butchers and hotels. Duplicate and auto-generated entries are removed, and coordinates are verified so the map around you is real — we do not fabricate restaurant names or locations."
-            : "Nous combinons une recherche éditoriale sur les destinations phares avec des données ouvertes en temps réel (OpenStreetMap / Overpass) pour les restaurants, mosquées, boucheries et hôtels. Les doublons et entrées auto-générées sont supprimés, et les coordonnées vérifiées pour que la carte autour de vous soit réelle — nous n'inventons jamais de noms ni d'emplacements de restaurants."}
+            ? "Every place we list comes from a verifiable source — Google Maps (real names, real ratings, real review counts) or OpenStreetMap (community-mapped mosques, restaurants, butchers, hotels). Each listing displays its source. If a place is in neither source, it simply does not appear on the site: we never create a venue, a rating or a dish. Cities without enough real data are shown as « guide under construction » rather than padded with fake listings."
+            : "Chaque lieu affiché provient d'une source vérifiable — Google Maps (noms réels, notes réelles, nombres d'avis réels) ou OpenStreetMap (mosquées, restaurants, boucheries et hôtels cartographiés par la communauté). Chaque adresse affiche sa source. Un lieu qui n'est dans aucune de ces sources n'apparaît tout simplement pas sur le site : nous ne créons jamais un établissement, une note ou un plat. Les villes sans assez de données réelles sont présentées en « guide en construction » plutôt que remplies de fausses adresses."}
         </p>
 
         <h2>{en ? 'Contact' : 'Contact'}</h2>

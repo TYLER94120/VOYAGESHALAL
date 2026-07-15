@@ -29,7 +29,9 @@ const TABS = [
 // (description rédigée non-OSM). Sinon → longue traîne honnête, jamais inventée.
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function isCurated(r: any): boolean {
-  return Boolean(r?.description && String(r.description).length >= 25 && r?.source !== 'osm')
+  // Curé = source RÉELLE avec note réelle : Google (note + nb d'avis).
+  // Les entrées « éditoriales » sans source ont été purgées (zéro invention).
+  return r?.source === 'google' && typeof r?.note === 'number' && (r?.nombreAvis ?? 0) >= 20
 }
 
 const CATEGORY_EMOJI: Record<string, string> = {
@@ -76,6 +78,10 @@ export default function VilleDesktop({ ville }: { ville: any }) {
   }
 
   const image = ville.image || ville.image_hero
+  // Bannière « majorité musulmane » UNIQUEMENT si le pays est positivement
+  // à majorité musulmane (liste blanche) — dans le doute : bannière neutre.
+  const PAYS_MAJORITE_MUSULMANE = new Set(['Maroc', 'Algérie', 'Tunisie', 'Libye', 'Égypte', 'Mauritanie', 'Sénégal', 'Mali', 'Niger', 'Soudan', 'Somalie', 'Djibouti', 'Comores', 'Gambie', 'Guinée', 'Turquie', 'Arabie Saoudite', 'Émirats Arabes Unis', 'Émirats', 'Qatar', 'Koweït', 'Bahreïn', 'Oman', 'Yémen', 'Jordanie', 'Irak', 'Iran', 'Syrie', 'Liban', 'Palestine', 'Pakistan', 'Afghanistan', 'Bangladesh', 'Indonésie', 'Malaisie', 'Brunei', 'Maldives', 'Ouzbékistan', 'Turkménistan', 'Tadjikistan', 'Kirghizistan', 'Kazakhstan', 'Azerbaïdjan', 'Albanie', 'Kosovo', 'Bosnie-Herzégovine', 'Tchad', 'Burkina Faso', 'Sierra Leone', 'Nigeria'])
+  const villeNonMusulmane = !PAYS_MAJORITE_MUSULMANE.has(String(ville.pays ?? ''))
   const halalScore = ville.halalScore ?? (ville.score_halal ? Math.round(ville.score_halal * 2 * 10) / 10 : null)
   const restaurants = ville.restaurants ?? []
   const mosquees = ville.mosqueesPrincipales ?? []
@@ -101,6 +107,9 @@ export default function VilleDesktop({ ville }: { ville: any }) {
   }
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const srcTag = (item: any): string => {
+    if (item?.source === 'google') {
+      return en ? 'Google Maps · real rating' : 'Google Maps · note réelle'
+    }
     if (item?.source === 'osm') {
       const dt = fmtDate(ville.osmEnrichedAt)
       return en ? `OpenStreetMap${dt ? ` · updated ${dt}` : ''}` : `OpenStreetMap${dt ? ` · mis à jour ${dt}` : ''}`
@@ -121,15 +130,9 @@ export default function VilleDesktop({ ville }: { ville: any }) {
   // ── Curation « Netflix » : profondeur réelle uniquement, zéro invention ──
   const normName = (s: string) => String(s).normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase().trim()
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const curatedRestos = restaurants.filter(isCurated).sort((a: any, b: any) => Number(b.score ?? 0) - Number(a.score ?? 0))
-  // Coups de cœur = incontournables des sélections premium (si présents) puis meilleurs curés
-  const premiumNames = new Set(((ville.selectionsPremium?.incontournables ?? []) as string[]).map(normName))
-  const coupsDeCoeur = [
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    ...curatedRestos.filter((r: any) => premiumNames.has(normName(r.nom))),
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    ...curatedRestos.filter((r: any) => !premiumNames.has(normName(r.nom))),
-  ].slice(0, 10)
+  const curatedRestos = restaurants.filter(isCurated).sort((a: any, b: any) => (Number(b.note ?? 0) - Number(a.note ?? 0)) || (Number(b.nombreAvis ?? 0) - Number(a.nombreAvis ?? 0)))
+  // Coups de cœur = les lieux réels LES MIEUX NOTÉS (transparent : notes Google)
+  const coupsDeCoeur = curatedRestos.slice(0, 10)
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const actsRiches = activites.filter((a: any) => a.description && String(a.description).length >= 25)
   // Hôtel signature : mieux noté AVEC attributs halal réels (rien d'inventé)
@@ -144,7 +147,9 @@ export default function VilleDesktop({ ville }: { ville: any }) {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   // Mosquée iconique : la liste CURÉE (ville.mosquees, avec description) prime
   // sur les entrées OSM (mosqueesPrincipales)
-  const mosqueeIconique = (ville.mosquees ?? []).find(isCurated) ?? (ville.mosquees ?? [])[0] ?? mosquees[0]
+  // NB : dans certaines fiches, `mosquees` est un NOMBRE (statistique) → garde Array
+  const mosqueesCurees = Array.isArray(ville.mosquees) ? ville.mosquees : []
+  const mosqueeIconique = mosqueesCurees.find(isCurated) ?? mosqueesCurees[0] ?? mosquees[0]
   const incontournables: { kind: 'resto' | 'mosquee' | 'activite' | 'hotel'; item: any }[] = [
     ...coupsDeCoeur.slice(0, 2).map((r: unknown) => ({ kind: 'resto' as const, item: r })),
     ...(mosqueeIconique ? [{ kind: 'mosquee' as const, item: mosqueeIconique }] : []),
@@ -329,11 +334,34 @@ export default function VilleDesktop({ ville }: { ville: any }) {
       <div ref={contentRef} style={{ maxWidth: WRAP, margin: '0 auto', padding: '28px 24px 80px', scrollMarginTop: '12px' }}>
         {displayTab === 'restaurants' && (
           <>
+            {/* BLOC 3 — statut halal HONNÊTE selon le contexte de la ville */}
+            <div style={{ background: villeNonMusulmane ? 'rgba(201,168,76,0.12)' : 'rgba(27,67,50,0.07)', border: '1px solid rgba(27,67,50,0.15)', borderRadius: 14, padding: '12px 16px', marginBottom: 18, fontSize: 13.5, color: 'var(--foret)', lineHeight: 1.6 }}>
+              {villeNonMusulmane
+                ? (en
+                  ? '🔎 Places below are reported halal by their sources (Google / OpenStreetMap) — always verify on site. We never certify.'
+                  : '🔎 Les adresses ci-dessous sont signalées halal par leurs sources (Google / OpenStreetMap) — vérifiez toujours sur place. Nous ne certifions rien.')
+                : (en
+                  ? `🕌 ${ville.nom} is a Muslim-majority city — dining is overwhelmingly halal by default. We never certify individual places.`
+                  : `🕌 ${ville.nom} est une ville à majorité musulmane — la restauration y est très majoritairement halal par défaut. Nous ne certifions aucun lieu individuellement.`)}
+            </div>
+            {/* BLOC 6 — honnêteté d'échelle : pas de data réelle → on le DIT */}
+            {restaurants.length === 0 && (
+              <div style={{ ...card, textAlign: 'center', padding: '36px 22px', marginBottom: 18 }}>
+                <div style={{ fontSize: 32, marginBottom: 10 }}>🚧</div>
+                <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, color: 'var(--nuit)', fontSize: 18, margin: '0 0 6px' }}>{en ? 'Restaurant guide under construction' : 'Guide restaurants en construction'}</p>
+                <p style={{ color: 'var(--texte-2)', fontSize: 14, lineHeight: 1.65, margin: '0 0 14px' }}>
+                  {en
+                    ? 'We only list verifiable places (Google / OpenStreetMap). We don\u2019t have enough real data for this city yet \u2014 rather than showing made-up listings, we show none.'
+                    : 'Nous n\u2019affichons que des lieux vérifiables (Google / OpenStreetMap). Nous n\u2019avons pas encore assez de données réelles ici — plutôt que d\u2019afficher de fausses adresses, nous n\u2019en affichons aucune.'}
+                </p>
+                <a href="/autour-de-moi" style={{ display: 'inline-block', padding: '10px 20px', background: 'var(--foret)', color: '#fff', borderRadius: 12, fontWeight: 700, fontSize: 13.5, textDecoration: 'none' }}>📍 {en ? 'Search live around me' : 'Chercher en direct autour de moi'}</a>
+              </div>
+            )}
             {/* 🍽️ Coups de cœur (profondeur réelle) puis toutes les adresses */}
             {ccDisplay.length >= 3 && (
               <div style={{ marginBottom: 26 }}>
                 <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: '24px', fontWeight: 900, color: 'var(--nuit)', margin: '0 0 12px' }}>
-                  🍽️ {en ? 'Where to eat — our picks' : 'Où manger — coups de cœur'}
+                  🍽️ {en ? 'Where to eat — top-rated on Google' : 'Où manger — les mieux notés sur Google'}
                 </h2>
                 <div style={{ display: 'flex', gap: 12, overflowX: 'auto', paddingBottom: 8, scrollSnapType: 'x mandatory', WebkitOverflowScrolling: 'touch' }}>
                   {ccDisplay.map((r: any, i: number) => {

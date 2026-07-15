@@ -1,3177 +1,2686 @@
 {
-  "nom": "Yogyakarta",
-  "pays": "Indonésie",
-  "slug": "yogyakarta",
-  "image": "https://images.unsplash.com/photo-1708481686679-1bfebe1afefc?w=1400&q=85",
-  "image_hero": "https://images.unsplash.com/photo-1708481686679-1bfebe1afefc?w=1400&q=85",
-  "description": "Yogyakarta, cœur culturel de Java, abrite Borobudur et Prambanan. Sultanat vivant, batik et cuisine gudeg dans une ville musulmane chaleureuse.",
-  "descriptionLongue": "Yogyakarta est l'âme culturelle de l'Indonésie : siège d'un sultanat toujours vivant, elle veille sur les temples de Borobudur, le plus grand monument bouddhiste du monde, et Prambanan. Ses ateliers de batik, ses spectacles de wayang et sa cuisine gudeg en font une étape inoubliable. Ville étudiante et musulmane, à l'hospitalité javanaise légendaire.",
-  "halalScore": 8.7,
-  "score_halal": 4.3,
-  "mosquees": 3000,
-  "population": "4,3 millions",
+ "nom": "Yogyakarta",
+ "pays": "Indonésie",
+ "slug": "yogyakarta",
+ "image": "https://images.unsplash.com/photo-1708481686679-1bfebe1afefc?w=1400&q=85",
+ "image_hero": "https://images.unsplash.com/photo-1708481686679-1bfebe1afefc?w=1400&q=85",
+ "description": "Yogyakarta, cœur culturel de Java, abrite Borobudur et Prambanan. Sultanat vivant, batik et cuisine gudeg dans une ville musulmane chaleureuse.",
+ "descriptionLongue": "Yogyakarta est l'âme culturelle de l'Indonésie : siège d'un sultanat toujours vivant, elle veille sur les temples de Borobudur, le plus grand monument bouddhiste du monde, et Prambanan. Ses ateliers de batik, ses spectacles de wayang et sa cuisine gudeg en font une étape inoubliable. Ville étudiante et musulmane, à l'hospitalité javanaise légendaire.",
+ "halalScore": 8.7,
+ "score_halal": 4.3,
+ "mosquees": 3000,
+ "population": "4,3 millions",
+ "langue": "Indonésien, Javanais",
+ "monnaie": "Roupie (IDR)",
+ "fuseau": "UTC+7",
+ "meilleureEpoque": "Mai à Septembre",
+ "prixMoyenNuit": "45€",
+ "continent": "Asie",
+ "codeISO": "ID",
+ "pays_slug": "indonesie",
+ "region": "Asie du Sud-Est",
+ "meta_title": "Voyage Halal à Yogyakarta — Guide Complet 2026",
+ "meta_description": "Restaurants halal signalés, mosquées et guide pratique pour Yogyakarta — Halal Trust Score 8.7/10.",
+ "metaDescription": "Restaurants halal signalés, mosquées et guide pratique pour Yogyakarta — Halal Trust Score 8.7/10.",
+ "coordonnees": {
+  "lat": -7.7956,
+  "lng": 110.3695
+ },
+ "image_alt": "Vue de Yogyakarta, Indonésie",
+ "statistiques": {
+  "mosquees": 50,
+  "restaurants_halal": 25,
+  "habitants_musulmans_pct": 92,
+  "hotels": 116
+ },
+ "infos_pratiques": {
   "langue": "Indonésien, Javanais",
   "monnaie": "Roupie (IDR)",
-  "fuseau": "UTC+7",
-  "meilleureEpoque": "Mai à Septembre",
-  "prixMoyenNuit": "45€",
-  "continent": "Asie",
-  "codeISO": "ID",
-  "pays_slug": "indonesie",
-  "region": "Asie du Sud-Est",
-  "meta_title": "Voyage Halal à Yogyakarta — Guide Complet 2026",
-  "meta_description": "Restaurants halal signalés, mosquées et guide pratique pour Yogyakarta — Halal Trust Score 8.7/10.",
-  "metaDescription": "Restaurants halal signalés, mosquées et guide pratique pour Yogyakarta — Halal Trust Score 8.7/10.",
-  "coordonnees": {
-    "lat": -7.7956,
-    "lng": 110.3695
+  "meilleure_periode": "Mai à Septembre",
+  "appel_priere": "5 fois par jour",
+  "nourriture_halal": "Largement disponible",
+  "alcool": "Réglementé",
+  "securite": "Précautions habituelles"
+ },
+ "infoPratique": {
+  "visa": "Visa à l'arrivée ou exemption selon durée",
+  "vaccins": "Aucun obligatoire",
+  "transport": "Becak, Grab, train, scooter",
+  "priseElectrique": "Type C/F — 230V",
+  "decalageHoraire": "+6h par rapport à Paris (hiver)"
+ },
+ "restaurants": [
+  {
+   "nom": "KFC",
+   "lat": -7.7929917,
+   "lng": 110.3660224,
+   "type": "chicken",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=-7.7929917,110.3660224",
+   "source": "osm"
   },
-  "image_alt": "Vue de Yogyakarta, Indonésie",
-  "statistiques": {
-    "mosquees": 3000,
-    "restaurants_halal": 750,
-    "habitants_musulmans_pct": 92,
-    "hotels": 120
+  {
+   "nom": "tengkleng bhendjoyo kraton",
+   "lat": -7.8027932,
+   "lng": 110.3656104,
+   "type": "indonesian",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=-7.8027932,110.3656104",
+   "source": "osm"
   },
-  "infos_pratiques": {
-    "langue": "Indonésien, Javanais",
-    "monnaie": "Roupie (IDR)",
-    "meilleure_periode": "Mai à Septembre",
-    "appel_priere": "5 fois par jour",
-    "nourriture_halal": "Largement disponible",
-    "alcool": "Réglementé",
-    "securite": "Précautions habituelles"
+  {
+   "nom": "FAVOR Patisserie Pizzeria & Eatery",
+   "lat": -7.7783039,
+   "lng": 110.3734969,
+   "type": "pizza, bakery, indonesian, asian",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=-7.7783039,110.3734969",
+   "source": "osm"
   },
-  "infoPratique": {
-    "visa": "Visa à l'arrivée ou exemption selon durée",
-    "vaccins": "Aucun obligatoire",
-    "transport": "Becak, Grab, train, scooter",
-    "priseElectrique": "Type C/F — 230V",
-    "decalageHoraire": "+6h par rapport à Paris (hiver)"
+  {
+   "nom": "Taj",
+   "lat": -7.7832199,
+   "lng": 110.3848854,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-7.7832199,110.3848854",
+   "source": "osm"
   },
-  "restaurants": [
-    {
-      "nom": "Gudeg Yu Djum",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Wijilan",
-      "description": "Gudeg, plat emblématique de Yogya, depuis 1950",
-      "mapsUrl": "https://maps.google.com/?q=Gudeg+Yu+Djum+Yogyakarta",
-      "priceRange": "€",
-      "specialite": "Gudeg",
-      "id": "r1",
-      "lat": -7.8047021,
-      "lng": 110.366657,
-      "geocoded": true
-    },
-    {
-      "nom": "Sate Klathak Pak Pong",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Bantul",
-      "description": "Brochettes d'agneau grillées sur rayons de vélo",
-      "mapsUrl": "https://maps.google.com/?q=Sate+Klathak+Pak+Pong+Yogyakarta",
-      "priceRange": "€",
-      "specialite": "Sate klathak",
-      "id": "r2",
-      "lat": -7.8982543,
-      "lng": 110.3855534,
-      "geocoded": true
-    },
-    {
-      "nom": "Bale Raos",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Keraton",
-      "description": "Cuisine du palais du sultan",
-      "mapsUrl": "https://maps.google.com/?q=Bale+Raos+Yogyakarta",
-      "priceRange": "€€",
-      "specialite": "Cuisine royale",
-      "id": "r3",
-      "lat": -7.8075974,
-      "lng": 110.3638696,
-      "geocoded": true
-    },
-    {
-      "nom": "Mangut Lele Mbah Marto",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Bantul",
-      "description": "Poisson-chat fumé traditionnel javanais",
-      "mapsUrl": "https://maps.google.com/?q=Mangut+Lele+Mbah+Marto+Yogyakarta",
-      "priceRange": "€",
-      "specialite": "Mangut lele",
-      "id": "r4",
-      "lat": -7.8982543,
-      "lng": 110.3855534,
-      "geocoded": true
-    },
-    {
-      "nom": "Raminten",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Kotabaru",
-      "description": "Restaurant javanais à l'ambiance unique",
-      "mapsUrl": "https://maps.google.com/?q=Raminten+Yogyakarta",
-      "priceRange": "€",
-      "specialite": "Nasi kucing",
-      "id": "r5",
-      "lat": -7.7858862,
-      "lng": 110.3742313,
-      "geocoded": true
-    },
-    {
-      "nom": "Al Madina Yogyakarta",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Yogyakarta",
-      "description": "Adresse halal appréciée des habitants de Yogyakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Al+Madina+Yogyakarta+Yogyakarta",
-      "priceRange": "€€",
-      "specialite": "Plat du jour maison",
-      "id": "r6",
-      "lat": -7.801349,
-      "lng": 110.3647351,
-      "geocoded": true
-    },
-    {
-      "nom": "Shawarma House Yogyakarta",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Yogyakarta",
-      "description": "Adresse halal appréciée des habitants de Yogyakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Shawarma+House+Yogyakarta+Yogyakarta",
-      "priceRange": "€",
-      "specialite": "Shawarma poulet",
-      "id": "r7",
-      "lat": -7.801349,
-      "lng": 110.3647351,
-      "geocoded": true
-    },
-    {
-      "nom": "Beit Beirut Yogyakarta",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Yogyakarta",
-      "description": "Adresse halal appréciée des habitants de Yogyakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Yogyakarta+Yogyakarta",
-      "priceRange": "€€",
-      "specialite": "Mezze libanais",
-      "id": "r8",
-      "lat": -7.801349,
-      "lng": 110.3647351,
-      "geocoded": true
-    },
-    {
-      "nom": "Spice Route Yogyakarta",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Yogyakarta",
-      "description": "Adresse halal appréciée des habitants de Yogyakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Spice+Route+Yogyakarta+Yogyakarta",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "id": "r9",
-      "lat": -7.801349,
-      "lng": 110.3647351,
-      "geocoded": true
-    },
-    {
-      "nom": "Saffron Garden Yogyakarta",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.6000000000000005,
-      "adresse": "Yogyakarta",
-      "description": "Adresse halal appréciée des habitants de Yogyakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Saffron+Garden+Yogyakarta+Yogyakarta",
-      "priceRange": "€€€",
-      "specialite": "Menu dégustation halal",
-      "id": "r10",
-      "lat": -7.801349,
-      "lng": 110.3647351,
-      "geocoded": true
-    },
-    {
-      "nom": "Green Bowl Yogyakarta",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Yogyakarta",
-      "description": "Adresse halal appréciée des habitants de Yogyakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Green+Bowl+Yogyakarta+Yogyakarta",
-      "priceRange": "€",
-      "specialite": "Bowl méditerranéen",
-      "id": "r11",
-      "lat": -7.801349,
-      "lng": 110.3647351,
-      "geocoded": true
-    },
-    {
-      "nom": "Sultan Café Yogyakarta",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Yogyakarta",
-      "description": "Adresse halal appréciée des habitants de Yogyakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Sultan+Caf%C3%A9+Yogyakarta+Yogyakarta",
-      "priceRange": "€",
-      "specialite": "Café arabe et baklava",
-      "id": "r12",
-      "lat": -7.801349,
-      "lng": 110.3647351,
-      "geocoded": true
-    },
-    {
-      "nom": "Ocean Pearl Yogyakarta",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Yogyakarta",
-      "description": "Adresse halal appréciée des habitants de Yogyakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Ocean+Pearl+Yogyakarta+Yogyakarta",
-      "priceRange": "€€€",
-      "specialite": "Poisson grillé du jour",
-      "id": "r13",
-      "lat": -7.801349,
-      "lng": 110.3647351,
-      "geocoded": true
-    },
-    {
-      "nom": "Bella Halal Yogyakarta",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Yogyakarta",
-      "description": "Adresse halal appréciée des habitants de Yogyakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Bella+Halal+Yogyakarta+Yogyakarta",
-      "priceRange": "€€",
-      "specialite": "Pizza halal au four à bois",
-      "id": "r14",
-      "lat": -7.801349,
-      "lng": 110.3647351,
-      "geocoded": true
-    },
-    {
-      "nom": "Tokyo Halal Yogyakarta",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.6000000000000005,
-      "adresse": "Yogyakarta",
-      "description": "Adresse halal appréciée des habitants de Yogyakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Tokyo+Halal+Yogyakarta+Yogyakarta",
-      "priceRange": "€€€",
-      "specialite": "Sushis halal signalés",
-      "id": "r15",
-      "lat": -7.801349,
-      "lng": 110.3647351,
-      "geocoded": true
-    },
-    {
-      "nom": "KFC",
-      "lat": -7.7929917,
-      "lng": 110.3660224,
-      "type": "chicken",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=-7.7929917,110.3660224",
-      "source": "osm"
-    },
-    {
-      "nom": "tengkleng bhendjoyo kraton",
-      "lat": -7.8027932,
-      "lng": 110.3656104,
-      "type": "indonesian",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=-7.8027932,110.3656104",
-      "source": "osm"
-    },
-    {
-      "nom": "FAVOR Patisserie Pizzeria & Eatery",
-      "lat": -7.7783039,
-      "lng": 110.3734969,
-      "type": "pizza, bakery, indonesian, asian",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=-7.7783039,110.3734969",
-      "source": "osm"
-    },
-    {
-      "nom": "Taj",
-      "lat": -7.7832199,
-      "lng": 110.3848854,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-7.7832199,110.3848854",
-      "source": "osm"
-    },
-    {
-      "nom": "Burjo Borneo",
-      "lat": -7.7788569,
-      "lng": 110.3801862,
-      "type": "indonesian",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=-7.7788569,110.3801862",
-      "source": "osm"
-    },
-    {
-      "nom": "Golden Clopatra",
-      "lat": -7.8212043,
-      "lng": 110.3638596,
-      "type": "egyptian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-7.8212043,110.3638596",
-      "source": "osm"
-    },
-    {
-      "nom": "Kedai Bin Saif",
-      "lat": -7.8250613,
-      "lng": 110.3767831,
-      "type": "arab",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-7.8250613,110.3767831",
-      "source": "osm"
-    },
-    {
-      "nom": "Ikan Asap Pakbe",
-      "lat": -7.7617057,
-      "lng": 110.3703423,
-      "type": "regional, indonesian",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=-7.7617057,110.3703423",
-      "source": "osm"
-    },
-    {
-      "nom": "Nasi Kuning Kanda",
-      "lat": -7.8294869,
-      "lng": 110.3801922,
-      "type": "arab",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-7.8294869,110.3801922",
-      "source": "osm"
-    },
-    {
-      "nom": "Waroeng Steak & Shake",
-      "lat": -7.8283086,
-      "lng": 110.3542059,
-      "type": "steak house, fine dining, grill",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=-7.8283086,110.3542059",
-      "source": "osm"
-    },
-    {
-      "nom": "Soto Sapi Pak Ngadiran",
-      "lat": -7.7632427,
-      "lng": 110.3868662,
-      "type": "indonesian",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=-7.7632427,110.3868662",
-      "source": "osm"
-    },
-    {
-      "nom": "Jatinangor House",
-      "lat": -7.7574333,
-      "lng": 110.377358,
-      "type": "chicken",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=-7.7574333,110.377358",
-      "source": "osm"
-    },
-    {
-      "nom": "Nasi Goreng Athaya",
-      "lat": -7.8114727,
-      "lng": 110.3280642,
-      "type": "asian",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=-7.8114727,110.3280642",
-      "source": "osm"
-    },
-    {
-      "nom": "Mak Semarangan Express",
-      "lat": -7.7719965,
-      "lng": 110.409514,
-      "type": "indonesian",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=-7.7719965,110.409514",
-      "source": "osm"
-    },
-    {
-      "nom": "Mie Ayam Palembang Afui",
-      "lat": -7.7813679,
-      "lng": 110.4161415,
-      "type": "noodle",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=-7.7813679,110.4161415",
-      "source": "osm"
-    },
-    {
-      "nom": "PREKSU UMY",
-      "lat": -7.8148015,
-      "lng": 110.3233927,
-      "type": "chicken",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=-7.8148015,110.3233927",
-      "source": "osm"
-    },
-    {
-      "nom": "Angkringan Reeneo",
-      "lat": -7.8466066,
-      "lng": 110.3561643,
-      "type": "regional",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=-7.8466066,110.3561643",
-      "source": "osm"
-    },
-    {
-      "nom": "Ganesh ek sanskriti",
-      "lat": -7.7794951,
-      "lng": 110.4286171,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=-7.7794951,110.4286171",
-      "source": "osm"
-    },
-    {
-      "nom": "Ubi Madu Cilembu Berbakar Kang Mas - Stad. Maguwoharjo",
-      "lat": -7.7523023,
-      "lng": 110.419729,
-      "type": "indonesian",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=-7.7523023,110.419729",
-      "source": "osm"
-    },
-    {
-      "nom": "Swasana by Temata Yogyakarta",
-      "lat": -7.7259288,
-      "lng": 110.4002623,
-      "type": "Restaurant",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=-7.7259288,110.4002623",
-      "source": "osm"
-    },
-    {
-      "nom": "Lotus Mio Bangunjiwo",
-      "lat": -7.8431978,
-      "lng": 110.3050464,
-      "type": "indonesian, Italian, pizza, ice cream",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=-7.8431978,110.3050464",
-      "source": "osm"
-    },
-    {
-      "nom": "Seblak Endul",
-      "lat": -7.873704,
-      "lng": 110.3450062,
-      "type": "indonesian",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=-7.873704,110.3450062",
-      "source": "osm"
-    },
-    {
-      "nom": "Warmindo Sekawan",
-      "lat": -7.7746542,
-      "lng": 110.4546654,
-      "type": "indonesian",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=-7.7746542,110.4546654",
-      "source": "osm"
-    },
-    {
-      "nom": "Bakmi Kampoeng Jawa Tajem",
-      "lat": -7.7368024,
-      "lng": 110.4342148,
-      "type": "javanese",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=-7.7368024,110.4342148",
-      "source": "osm"
-    },
-    {
-      "nom": "Pecel Gendar",
-      "lat": -7.7747659,
-      "lng": 110.4557445,
-      "type": "indonesian",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=-7.7747659,110.4557445",
-      "source": "osm"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "Phoenix Hotel Yogyakarta",
-      "categorie": "Standard",
-      "score": 4.5,
-      "adresse": "Centre-ville",
-      "description": "Hôtel colonial historique central",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Phoenix+Hotel+Yogyakarta+Yogyakarta",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Yogyakarta&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=yogyakarta",
-      "priceRange": "€€€",
-      "id": "h1",
-      "lat": -7.7824447,
-      "lng": 110.3686106
-    },
-    {
-      "nom": "Tentrem Yogyakarta",
-      "categorie": "Luxe",
-      "score": 4.5,
-      "adresse": "Jalan Magelang",
-      "description": "Hôtel cinq étoiles javanais raffiné",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Tentrem+Yogyakarta+Yogyakarta",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Yogyakarta&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=yogyakarta",
-      "priceRange": "€€€€",
-      "id": "h2",
-      "lat": -7.7532791,
-      "lng": 110.428684
-    },
-    {
-      "nom": "Nueve Malioboro Hotel Yogyakarta",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7959471,110.3688927",
-      "lat": -7.7959471,
-      "lng": 110.3688927,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7959471,110.3688927",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Melia Purosani",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 5,
-      "mapsUrl": "https://maps.google.com/?q=-7.7969057,110.3689789",
-      "lat": -7.7969057,
-      "lng": 110.3689789,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7969057,110.3689789",
-      "source": "osm"
-    },
-    {
-      "nom": "Tegal Panggung Guest House",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7943698,110.3707419",
-      "lat": -7.7943698,
-      "lng": 110.3707419,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7943698,110.3707419",
-      "source": "osm"
-    },
-    {
-      "nom": "Front One Cabin Malioboro Jogja",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7970396,110.3705144",
-      "lat": -7.7970396,
-      "lng": 110.3705144,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7970396,110.3705144",
-      "source": "osm"
-    },
-    {
-      "nom": "Meliá Purosani",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7972909,110.3687242",
-      "lat": -7.7972909,
-      "lng": 110.3687242,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.melia.com/en/hotels/indonesia/java/melia-purosani/",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Suryapuri",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7964469,110.36783",
-      "lat": -7.7964469,
-      "lng": 110.36783,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7964469,110.36783",
-      "source": "osm"
-    },
-    {
-      "nom": "Kalingga Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7968841,110.3710205",
-      "lat": -7.7968841,
-      "lng": 110.3710205,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7968841,110.3710205",
-      "source": "osm"
-    },
-    {
-      "nom": "Akur Optic & Hotel Yogyakarta",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7942315,110.3678934",
-      "lat": -7.7942315,
-      "lng": 110.3678934,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7942315,110.3678934",
-      "source": "osm"
-    },
-    {
-      "nom": "Puspo Nugroho Hotel Yogyakarta",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7942479,110.367658",
-      "lat": -7.7942479,
-      "lng": 110.367658,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7942479,110.367658",
-      "source": "osm"
-    },
-    {
-      "nom": "Gaotama Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7937987,110.36758",
-      "lat": -7.7937987,
-      "lng": 110.36758,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7937987,110.36758",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Gaotama",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7938706,110.3674656",
-      "lat": -7.7938706,
-      "lng": 110.3674656,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7938706,110.3674656",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Malioboro Garden",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7941668,110.3668402",
-      "lat": -7.7941668,
-      "lng": 110.3668402,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7941668,110.3668402",
-      "source": "osm"
-    },
-    {
-      "nom": "SekawanStay Guest House Malioboro",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7925789,110.3707164",
-      "lat": -7.7925789,
-      "lng": 110.3707164,
-      "halalFriendly": false,
-      "bookingUrl": "instagram.com/sekawanstay",
-      "source": "osm"
-    },
-    {
-      "nom": "Jambuluwuk Malioboro Boutique Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7975906,110.3722141",
-      "lat": -7.7975906,
-      "lng": 110.3722141,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7975906,110.3722141",
-      "source": "osm"
-    },
-    {
-      "nom": "Penak Malioboro",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7923645,110.3680524",
-      "lat": -7.7923645,
-      "lng": 110.3680524,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7923645,110.3680524",
-      "source": "osm"
-    },
-    {
-      "nom": "Novotel Suites Yogyakarta Malioboro",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7930319,110.3667759",
-      "lat": -7.7930319,
-      "lng": 110.3667759,
-      "halalFriendly": false,
-      "bookingUrl": "https://all.accor.com/a088",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Vala",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7970311,110.3729761",
-      "lat": -7.7970311,
-      "lng": 110.3729761,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7970311,110.3729761",
-      "source": "osm"
-    },
-    {
-      "nom": "Mutiara I",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7944795,110.3658609",
-      "lat": -7.7944795,
-      "lng": 110.3658609,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7944795,110.3658609",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Malyabhara",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7930284,110.3664811",
-      "lat": -7.7930284,
-      "lng": 110.3664811,
-      "halalFriendly": false,
-      "bookingUrl": "https://malyabharahotel.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Putra Sabar",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7993747,110.3707847",
-      "lat": -7.7993747,
-      "lng": 110.3707847,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7993747,110.3707847",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Pules Yogyakarta",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7919016,110.3678039",
-      "lat": -7.7919016,
-      "lng": 110.3678039,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7919016,110.3678039",
-      "source": "osm"
-    },
-    {
-      "nom": "Bobobox",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7949947,110.3654432",
-      "lat": -7.7949947,
-      "lng": 110.3654432,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7949947,110.3654432",
-      "source": "osm"
-    },
-    {
-      "nom": "Danurejan Guesthouse",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7940487,110.3732944",
-      "lat": -7.7940487,
-      "lng": 110.3732944,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7940487,110.3732944",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Suryaputri Tegal Panggung",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7922094,110.3719428",
-      "lat": -7.7922094,
-      "lng": 110.3719428,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7922094,110.3719428",
-      "source": "osm"
-    },
-    {
-      "nom": "RedDoorz Plus near Lempuyangan Station 3",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7921597,110.3719753",
-      "lat": -7.7921597,
-      "lng": 110.3719753,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7921597,110.3719753",
-      "source": "osm"
-    },
-    {
-      "nom": "The Packer Lodge",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7939545,110.3650732",
-      "lat": -7.7939545,
-      "lng": 110.3650732,
-      "halalFriendly": false,
-      "bookingUrl": "http://yogya.thepackerlodge.com",
-      "source": "osm"
-    },
-    {
-      "nom": "Trans Yogya",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7937659,110.3739488",
-      "lat": -7.7937659,
-      "lng": 110.3739488,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7937659,110.3739488",
-      "source": "osm"
-    },
-    {
-      "nom": "Amaris Hotel Malioboro",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7960693,110.3647015",
-      "lat": -7.7960693,
-      "lng": 110.3647015,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7960693,110.3647015",
-      "source": "osm"
-    },
-    {
-      "nom": "Laura's Backpacker 523 nr 1 & Reception",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7909614,110.3710315",
-      "lat": -7.7909614,
-      "lng": 110.3710315,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7909614,110.3710315",
-      "source": "osm"
-    },
-    {
-      "nom": "Homestay Mawar Putih Sosromenduran",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7947528,110.3645997",
-      "lat": -7.7947528,
-      "lng": 110.3645997,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7947528,110.3645997",
-      "source": "osm"
-    },
-    {
-      "nom": "Laura's backpacker 523, nr 2",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.790796,110.3707421",
-      "lat": -7.790796,
-      "lng": 110.3707421,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.790796,110.3707421",
-      "source": "osm"
-    },
-    {
-      "nom": "Metro LMalioboro Living",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7935432,110.374086",
-      "lat": -7.7935432,
-      "lng": 110.374086,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7935432,110.374086",
-      "source": "osm"
-    },
-    {
-      "nom": "Whiz",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7937377,110.3648091",
-      "lat": -7.7937377,
-      "lng": 110.3648091,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7937377,110.3648091",
-      "source": "osm"
-    },
-    {
-      "nom": "1O1 STYLE Yogyakarta Malioboro",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 4,
-      "mapsUrl": "https://maps.google.com/?q=-7.7988901,110.3733759",
-      "lat": -7.7988901,
-      "lng": 110.3733759,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.1o1stylehotels.com/yogyakartamalioboro",
-      "source": "osm"
-    },
-    {
-      "nom": "Homey Home",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7904011,110.3698668",
-      "lat": -7.7904011,
-      "lng": 110.3698668,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7904011,110.3698668",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Amarta Yogyakarta",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7936939,110.3645606",
-      "lat": -7.7936939,
-      "lng": 110.3645606,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7936939,110.3645606",
-      "source": "osm"
-    },
-    {
-      "nom": "Zest Hotel Yogyakarta",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7991929,110.3733744",
-      "lat": -7.7991929,
-      "lng": 110.3733744,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7991929,110.3733744",
-      "source": "osm"
-    },
-    {
-      "nom": "Pyrenees Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7918985,110.3655964",
-      "lat": -7.7918985,
-      "lng": 110.3655964,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7918985,110.3655964",
-      "source": "osm"
-    },
-    {
-      "nom": "Omah Qu",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7971781,110.3747853",
-      "lat": -7.7971781,
-      "lng": 110.3747853,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7971781,110.3747853",
-      "source": "osm"
-    },
-    {
-      "nom": "Grand Inna Malioboro",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 4,
-      "mapsUrl": "https://maps.google.com/?q=-7.7907566,110.3668579",
-      "lat": -7.7907566,
-      "lng": 110.3668579,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.innagaruda.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "New Hotel Lilik Yogyakarta",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.793638,110.3642934",
-      "lat": -7.793638,
-      "lng": 110.3642934,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.793638,110.3642934",
-      "source": "osm"
-    },
-    {
-      "nom": "Sky Hotel Hayam Wuruk",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7918351,110.3735983",
-      "lat": -7.7918351,
-      "lng": 110.3735983,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7918351,110.3735983",
-      "source": "osm"
-    },
-    {
-      "nom": "Indonesia Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7918047,110.3653013",
-      "lat": -7.7918047,
-      "lng": 110.3653013,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7918047,110.3653013",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Limaran",
-      "categorie": "Hôtel",
-      "priceRange": "€€€",
-      "score": 3,
-      "mapsUrl": "https://maps.google.com/?q=-7.8012493,110.3690953",
-      "lat": -7.8012493,
-      "lng": 110.3690953,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.8012493,110.3690953",
-      "source": "osm"
-    },
-    {
-      "nom": "Peti Mas Hotel Yogyakarta",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7939885,110.3639281",
-      "lat": -7.7939885,
-      "lng": 110.3639281,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7939885,110.3639281",
-      "source": "osm"
-    },
-    {
-      "nom": "Summer Season Boutique Hotel Yogyakarta",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.79152,110.3653407",
-      "lat": -7.79152,
-      "lng": 110.3653407,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.79152,110.3653407",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Rajadani Yogyakarta",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.8009895,110.3716736",
-      "lat": -7.8009895,
-      "lng": 110.3716736,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.8009895,110.3716736",
-      "source": "osm"
-    },
-    {
-      "nom": "Kartika Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7916467,110.3651881",
-      "lat": -7.7916467,
-      "lng": 110.3651881,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7916467,110.3651881",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Batik Yogyakarta",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7923634,110.3645203",
-      "lat": -7.7923634,
-      "lng": 110.3645203,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7923634,110.3645203",
-      "source": "osm"
-    },
-    {
-      "nom": "Summer Quest Hotel Yogyakarta",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7921347,110.364639",
-      "lat": -7.7921347,
-      "lng": 110.364639,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7921347,110.364639",
-      "source": "osm"
-    },
-    {
-      "nom": "Merbubu",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7914478,110.3650914",
-      "lat": -7.7914478,
-      "lng": 110.3650914,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7914478,110.3650914",
-      "source": "osm"
-    },
-    {
-      "nom": "Taman Yuwono Heritage Malioboro Guest House Jogja",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7923949,110.3641331",
-      "lat": -7.7923949,
-      "lng": 110.3641331,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7923949,110.3641331",
-      "source": "osm"
-    },
-    {
-      "nom": "The Capsule",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7914592,110.364819",
-      "lat": -7.7914592,
-      "lng": 110.364819,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7914592,110.364819",
-      "source": "osm"
-    },
-    {
-      "nom": "D'Senopati Malioboro Grand Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.8018955,110.3700315",
-      "lat": -7.8018955,
-      "lng": 110.3700315,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.8018955,110.3700315",
-      "source": "osm"
-    },
-    {
-      "nom": "Rama",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.791555,110.3645992",
-      "lat": -7.791555,
-      "lng": 110.3645992,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.791555,110.3645992",
-      "source": "osm"
-    },
-    {
-      "nom": "105 Homestay",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7909083,110.3652133",
-      "lat": -7.7909083,
-      "lng": 110.3652133,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7909083,110.3652133",
-      "source": "osm"
-    },
-    {
-      "nom": "Dewi Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7915886,110.3643358",
-      "lat": -7.7915886,
-      "lng": 110.3643358,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7915886,110.3643358",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Puntodewo Yogyakarta",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7935616,110.3632404",
-      "lat": -7.7935616,
-      "lng": 110.3632404,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7935616,110.3632404",
-      "source": "osm"
-    },
-    {
-      "nom": "Yogyakarta BnB",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7966198,110.362985",
-      "lat": -7.7966198,
-      "lng": 110.362985,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.instagram.com/yogyakartabnb",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Trim",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7901871,110.3656573",
-      "lat": -7.7901871,
-      "lng": 110.3656573,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7901871,110.3656573",
-      "source": "osm"
-    },
-    {
-      "nom": "KHAS Malioboro Hotel Yogyakarta",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7982602,110.3633045",
-      "lat": -7.7982602,
-      "lng": 110.3633045,
-      "halalFriendly": false,
-      "bookingUrl": "https://khashotels.com/hotels/Khas-Malioboro",
-      "source": "osm"
-    },
-    {
-      "nom": "Aura Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7915514,110.3641233",
-      "lat": -7.7915514,
-      "lng": 110.3641233,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7915514,110.3641233",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Sekar Ayu",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7889685,110.3709409",
-      "lat": -7.7889685,
-      "lng": 110.3709409,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7889685,110.3709409",
-      "source": "osm"
-    },
-    {
-      "nom": "Whiz Prime",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7901401,110.3652519",
-      "lat": -7.7901401,
-      "lng": 110.3652519,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7901401,110.3652519",
-      "source": "osm"
-    },
-    {
-      "nom": "Patra Malioboro",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7917023,110.3637417",
-      "lat": -7.7917023,
-      "lng": 110.3637417,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7917023,110.3637417",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Dafam Fortuna Malioboro Yogyakarta",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7934678,110.3628573",
-      "lat": -7.7934678,
-      "lng": 110.3628573,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7934678,110.3628573",
-      "source": "osm"
-    },
-    {
-      "nom": "Kristina",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7938157,110.3626817",
-      "lat": -7.7938157,
-      "lng": 110.3626817,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7938157,110.3626817",
-      "source": "osm"
-    },
-    {
-      "nom": "Mulia Kencana",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7900026,110.3651716",
-      "lat": -7.7900026,
-      "lng": 110.3651716,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7900026,110.3651716",
-      "source": "osm"
-    },
-    {
-      "nom": "Puri Pangeran Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.8006644,110.3744796",
-      "lat": -7.8006644,
-      "lng": 110.3744796,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.8006644,110.3744796",
-      "source": "osm"
-    },
-    {
-      "nom": "Losmen Rizki",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7911654,110.3639277",
-      "lat": -7.7911654,
-      "lng": 110.3639277,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7911654,110.3639277",
-      "source": "osm"
-    },
-    {
-      "nom": "Losmen Red Palm",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7909201,110.3640396",
-      "lat": -7.7909201,
-      "lng": 110.3640396,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7909201,110.3640396",
-      "source": "osm"
-    },
-    {
-      "nom": "Anda Losmen",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7907431,110.3641136",
-      "lat": -7.7907431,
-      "lng": 110.3641136,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7907431,110.3641136",
-      "source": "osm"
-    },
-    {
-      "nom": "1001Malam",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.790704,110.3641061",
-      "lat": -7.790704,
-      "lng": 110.3641061,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.790704,110.3641061",
-      "source": "osm"
-    },
-    {
-      "nom": "Lotus Losmen",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7911289,110.3637267",
-      "lat": -7.7911289,
-      "lng": 110.3637267,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7911289,110.3637267",
-      "source": "osm"
-    },
-    {
-      "nom": "Penginapan Kunthi",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7937405,110.3623713",
-      "lat": -7.7937405,
-      "lng": 110.3623713,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7937405,110.3623713",
-      "source": "osm"
-    },
-    {
-      "nom": "Neo",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7901002,110.3646434",
-      "lat": -7.7901002,
-      "lng": 110.3646434,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7901002,110.3646434",
-      "source": "osm"
-    },
-    {
-      "nom": "Selarus Inn",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7916981,110.3632016",
-      "lat": -7.7916981,
-      "lng": 110.3632016,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7916981,110.3632016",
-      "source": "osm"
-    },
-    {
-      "nom": "Losmen Utar",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7910251,110.3636114",
-      "lat": -7.7910251,
-      "lng": 110.3636114,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7910251,110.3636114",
-      "source": "osm"
-    },
-    {
-      "nom": "Betty losmen",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7909254,110.3636914",
-      "lat": -7.7909254,
-      "lng": 110.3636914,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7909254,110.3636914",
-      "source": "osm"
-    },
-    {
-      "nom": "Malioboro Suites",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7901957,110.3643738",
-      "lat": -7.7901957,
-      "lng": 110.3643738,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7901957,110.3643738",
-      "source": "osm"
-    },
-    {
-      "nom": "Royal Malioboro",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.790026,110.3644978",
-      "lat": -7.790026,
-      "lng": 110.3644978,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.790026,110.3644978",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Family",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7917408,110.3630278",
-      "lat": -7.7917408,
-      "lng": 110.3630278,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7917408,110.3630278",
-      "source": "osm"
-    },
-    {
-      "nom": "Selaras Inn Hotel Yogyakarta",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7916775,110.3630563",
-      "lat": -7.7916775,
-      "lng": 110.3630563,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7916775,110.3630563",
-      "source": "osm"
-    },
-    {
-      "nom": "Andrea hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.790417,110.364036",
-      "lat": -7.790417,
-      "lng": 110.364036,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.790417,110.364036",
-      "source": "osm"
-    },
-    {
-      "nom": "Khresna Guesthouse Yogyakarta",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7900106,110.3641715",
-      "lat": -7.7900106,
-      "lng": 110.3641715,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7900106,110.3641715",
-      "source": "osm"
-    },
-    {
-      "nom": "Wisma Ratih",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7886629,110.3660913",
-      "lat": -7.7886629,
-      "lng": 110.3660913,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7886629,110.3660913",
-      "source": "osm"
-    },
-    {
-      "nom": "Oryza Hotel Yogyakarta",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7917536,110.3627136",
-      "lat": -7.7917536,
-      "lng": 110.3627136,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7917536,110.3627136",
-      "source": "osm"
-    },
-    {
-      "nom": "Grand Puri Saron Hotel Malioboro",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7914002,110.362894",
-      "lat": -7.7914002,
-      "lng": 110.362894,
-      "halalFriendly": false,
-      "bookingUrl": "www.grandpurisaronyogya.com",
-      "source": "osm"
-    },
-    {
-      "nom": "Asia Afrika",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7900951,110.3638906",
-      "lat": -7.7900951,
-      "lng": 110.3638906,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7900951,110.3638906",
-      "source": "osm"
-    },
-    {
-      "nom": "Maranatha Grand Hotel Yogyakarta",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7934426,110.3618619",
-      "lat": -7.7934426,
-      "lng": 110.3618619,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7934426,110.3618619",
-      "source": "osm"
-    },
-    {
-      "nom": "Bladok Losmen & Restaurant",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7914057,110.3627707",
-      "lat": -7.7914057,
-      "lng": 110.3627707,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7914057,110.3627707",
-      "source": "osm"
-    },
-    {
-      "nom": "Unisi",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7901426,110.3636882",
-      "lat": -7.7901426,
-      "lng": 110.3636882,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7901426,110.3636882",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Bhinneka Yogyakarta",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7883185,110.3661191",
-      "lat": -7.7883185,
-      "lng": 110.3661191,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7883185,110.3661191",
-      "source": "osm"
-    },
-    {
-      "nom": "Karunia",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.791396,110.3625591",
-      "lat": -7.791396,
-      "lng": 110.3625591,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.791396,110.3625591",
-      "source": "osm"
-    },
-    {
-      "nom": "Ibis Styles",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7938427,110.3615091",
-      "lat": -7.7938427,
-      "lng": 110.3615091,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7938427,110.3615091",
-      "source": "osm"
-    },
-    {
-      "nom": "Cordela Hotel Kartika Dewi Yogyakarta",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7983425,110.3617756",
-      "lat": -7.7983425,
-      "lng": 110.3617756,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7983425,110.3617756",
-      "source": "osm"
-    },
-    {
-      "nom": "Abadi Hotel Malioboro",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7903054,110.3632335",
-      "lat": -7.7903054,
-      "lng": 110.3632335,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7903054,110.3632335",
-      "source": "osm"
-    },
-    {
-      "nom": "Ndalem Kotabaru",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.788263,110.3731828",
-      "lat": -7.788263,
-      "lng": 110.3731828,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.788263,110.3731828",
-      "source": "osm"
-    },
-    {
-      "nom": "Mitra Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€",
-      "score": 1,
-      "mapsUrl": "https://maps.google.com/?q=-7.801518,110.3637574",
-      "lat": -7.801518,
-      "lng": 110.3637574,
-      "halalFriendly": false,
-      "bookingUrl": "http://mitrahotelyogya.blogspot.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "The Cabin",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7932823,110.361529",
-      "lat": -7.7932823,
-      "lng": 110.361529,
-      "halalFriendly": false,
-      "bookingUrl": "http://thecabinhoteljogja.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Grage",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7912931,110.3623137",
-      "lat": -7.7912931,
-      "lng": 110.3623137,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7912931,110.3623137",
-      "source": "osm"
-    },
-    {
-      "nom": "Omah Watu Homestay",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7914677,110.3621837",
-      "lat": -7.7914677,
-      "lng": 110.3621837,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7914677,110.3621837",
-      "source": "osm"
-    },
-    {
-      "nom": "Grand Zuri Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7876363,110.3669214",
-      "lat": -7.7876363,
-      "lng": 110.3669214,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7876363,110.3669214",
-      "source": "osm"
-    },
-    {
-      "nom": "Cashlez Homestay",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7938555,110.3777841",
-      "lat": -7.7938555,
-      "lng": 110.3777841,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7938555,110.3777841",
-      "source": "osm"
-    },
-    {
-      "nom": "The Cabin Hotel Sutomo",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7969982,110.3778556",
-      "lat": -7.7969982,
-      "lng": 110.3778556,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7969982,110.3778556",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Graha Kinasih",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7872569,110.3706366",
-      "lat": -7.7872569,
-      "lng": 110.3706366,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7872569,110.3706366",
-      "source": "osm"
-    },
-    {
-      "nom": "Nusantara",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7900908,110.3629421",
-      "lat": -7.7900908,
-      "lng": 110.3629421,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7900908,110.3629421",
-      "source": "osm"
-    },
-    {
-      "nom": "Wakeup Homestay",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7914243,110.3619327",
-      "lat": -7.7914243,
-      "lng": 110.3619327,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7914243,110.3619327",
-      "source": "osm"
-    },
-    {
-      "nom": "Mataram",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7901868,110.3627603",
-      "lat": -7.7901868,
-      "lng": 110.3627603,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7901868,110.3627603",
-      "source": "osm"
-    },
-    {
-      "nom": "Jasmine Heritage Homestay",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.8041651,110.3706682",
-      "lat": -7.8041651,
-      "lng": 110.3706682,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.8041651,110.3706682",
-      "source": "osm"
-    },
-    {
-      "nom": "Pop Hotel Malioboro",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7906829,110.3621681",
-      "lat": -7.7906829,
-      "lng": 110.3621681,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7906829,110.3621681",
-      "source": "osm"
-    },
-    {
-      "nom": "Berlian",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7900422,110.3626117",
-      "lat": -7.7900422,
-      "lng": 110.3626117,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7900422,110.3626117",
-      "source": "osm"
-    },
-    {
-      "nom": "Arrayan",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.8002857,110.3619105",
-      "lat": -7.8002857,
-      "lng": 110.3619105,
-      "halalFriendly": false,
-      "bookingUrl": "https://ibe.channex.io/arrayanhotelmalioboro",
-      "source": "osm"
-    },
-    {
-      "nom": "Prima In Hotel Malioboro Yogyakarta",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7911621,110.3617311",
-      "lat": -7.7911621,
-      "lng": 110.3617311,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7911621,110.3617311",
-      "source": "osm"
-    },
-    {
-      "nom": "The Cabin Hotel Bhayangkara",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.8004658,110.3619238",
-      "lat": -7.8004658,
-      "lng": 110.3619238,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.8004658,110.3619238",
-      "source": "osm"
-    },
-    {
-      "nom": "Arte Hotel Yogyakarta",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-7.7900307,110.3622581",
-      "lat": -7.7900307,
-      "lng": 110.3622581,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-7.7900307,110.3622581",
-      "source": "osm"
-    }
-  ],
-  "activites": [
-    {
-      "nom": "Temple de Borobudur",
-      "categorie": "Histoire & Culture",
-      "description": "Plus grand temple bouddhiste du monde, lever de soleil",
-      "duree": "Demi-journée",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Temple+de+Borobudur+Yogyakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Temple+de+Borobudur+Yogyakarta",
-      "id": "a1"
-    },
-    {
-      "nom": "Temple de Prambanan",
-      "categorie": "Histoire & Culture",
-      "description": "Ensemble de temples hindous classés UNESCO",
-      "duree": "Demi-journée",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Temple+de+Prambanan+Yogyakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Temple+de+Prambanan+Yogyakarta",
-      "id": "a2",
-      "lat": -7.7520157,
-      "lng": 110.4914556,
-      "geocoded": true
-    },
-    {
-      "nom": "Palais du Sultan (Kraton)",
-      "categorie": "Histoire & Culture",
-      "description": "Résidence du sultanat, culture javanaise vivante",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Palais+du+Sultan+%28Kraton%29+Yogyakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Palais+du+Sultan+%28Kraton%29+Yogyakarta",
-      "id": "a3"
-    },
-    {
-      "nom": "Grande Mosquée Kauman",
-      "categorie": "Religieux & Spirituel",
-      "description": "Mosquée royale du sultanat, architecture javanaise",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+Kauman+Yogyakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grande+Mosqu%C3%A9e+Kauman+Yogyakarta",
-      "id": "a4"
-    },
-    {
-      "nom": "Malioboro Street",
-      "categorie": "Shopping & Souks",
-      "description": "Rue commerçante et artisanat batik",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Malioboro+Street+Yogyakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Malioboro+Street+Yogyakarta",
-      "id": "a5"
-    },
-    {
-      "nom": "Taman Sari (château d'eau)",
-      "categorie": "Histoire & Culture",
-      "description": "Anciens bains royaux du sultan",
-      "duree": "1-2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Taman+Sari+%28ch%C3%A2teau+d%27eau%29+Yogyakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Taman+Sari+%28ch%C3%A2teau+d%27eau%29+Yogyakarta",
-      "id": "a6"
-    },
-    {
-      "nom": "Atelier de batik",
-      "categorie": "Art & Musées",
-      "description": "Initiation à l'art du batik javanais",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Atelier+de+batik+Yogyakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+de+batik+Yogyakarta",
-      "id": "a7"
-    },
-    {
-      "nom": "Volcan Merapi (jeep tour)",
-      "categorie": "Nature & Aventure",
-      "description": "Excursion au pied du volcan actif",
-      "duree": "Demi-journée",
-      "prix": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=Volcan+Merapi+%28jeep+tour%29+Yogyakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Volcan+Merapi+%28jeep+tour%29+Yogyakarta",
-      "id": "a8"
-    },
-    {
-      "nom": "Vieille ville de Yogyakarta",
-      "categorie": "Histoire & Culture",
-      "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Yogyakarta+Yogyakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Yogyakarta+Yogyakarta",
-      "id": "a9"
-    },
-    {
-      "nom": "Grand souk de Yogyakarta",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Yogyakarta+Yogyakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Yogyakarta+Yogyakarta",
-      "id": "a10"
-    },
-    {
-      "nom": "Quartier historique de Yogyakarta",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Yogyakarta+Yogyakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Yogyakarta+Yogyakarta",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a11"
-    },
-    {
-      "nom": "Grand marché central de Yogyakarta",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Yogyakarta+Yogyakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Yogyakarta+Yogyakarta",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a12"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Yogyakarta",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Yogyakarta+Yogyakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Yogyakarta+Yogyakarta",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a13"
-    },
-    {
-      "nom": "Musée de la ville de Yogyakarta",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Yogyakarta+Yogyakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Yogyakarta+Yogyakarta",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a14"
-    },
-    {
-      "nom": "Food tour halal de Yogyakarta",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Yogyakarta+Yogyakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Yogyakarta+Yogyakarta",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a15"
-    },
-    {
-      "nom": "Freedom Batik Art Exposition",
-      "lat": -7.7942302,
-      "lng": 110.365011,
-      "coordonnees": {
-        "lat": -7.7942302,
-        "lng": 110.365011
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=-7.7942302,110.365011",
-      "source": "osm"
-    },
-    {
-      "nom": "Monumen Adipura",
-      "lat": -7.7904143,
-      "lng": 110.3684772,
-      "coordonnees": {
-        "lat": -7.7904143,
-        "lng": 110.3684772
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-7.7904143,110.3684772",
-      "source": "osm"
-    },
-    {
-      "nom": "Katrol Taman Pintar",
-      "lat": -7.8009251,
-      "lng": 110.3676488,
-      "coordonnees": {
-        "lat": -7.8009251,
-        "lng": 110.3676488
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-7.8009251,110.3676488",
-      "source": "osm"
-    },
-    {
-      "nom": "Monumen Stasiun Yogyakarta",
-      "lat": -7.7892837,
-      "lng": 110.3660322,
-      "coordonnees": {
-        "lat": -7.7892837,
-        "lng": 110.3660322
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-7.7892837,110.3660322",
-      "source": "osm"
-    },
-    {
-      "nom": "Tugu Nol Yogyakarta",
-      "lat": -7.8012476,
-      "lng": 110.3649326,
-      "coordonnees": {
-        "lat": -7.8012476,
-        "lng": 110.3649326
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-7.8012476,110.3649326",
-      "source": "osm"
-    },
-    {
-      "nom": "Sanapati Monument",
-      "lat": -7.788184,
-      "lng": 110.3715672,
-      "coordonnees": {
-        "lat": -7.788184,
-        "lng": 110.3715672
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-7.788184,110.3715672",
-      "source": "osm"
-    },
-    {
-      "nom": "Batik Museum",
-      "lat": -7.795401,
-      "lng": 110.3773503,
-      "coordonnees": {
-        "lat": -7.795401,
-        "lng": 110.3773503
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=-7.795401,110.3773503",
-      "source": "osm"
-    },
-    {
-      "nom": "Pelataran Arca",
-      "lat": -7.8009605,
-      "lng": 110.3635119,
-      "coordonnees": {
-        "lat": -7.8009605,
-        "lng": 110.3635119
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-7.8009605,110.3635119",
-      "source": "osm"
-    },
-    {
-      "nom": "Purnomo Batik art group (likely scam)",
-      "lat": -7.7946327,
-      "lng": 110.3609039,
-      "coordonnees": {
-        "lat": -7.7946327,
-        "lng": 110.3609039
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=-7.7946327,110.3609039",
-      "source": "osm"
-    },
-    {
-      "nom": "Ruang Terbuka Hijau",
-      "lat": -7.7992504,
-      "lng": 110.3786323,
-      "coordonnees": {
-        "lat": -7.7992504,
-        "lng": 110.3786323
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=-7.7992504,110.3786323",
-      "source": "osm"
-    },
-    {
-      "nom": "Monument Serbuan Kotabaru",
-      "lat": -7.7876188,
-      "lng": 110.3762419,
-      "coordonnees": {
-        "lat": -7.7876188,
-        "lng": 110.3762419
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-7.7876188,110.3762419",
-      "source": "osm"
-    },
-    {
-      "nom": "Percabangan nonaktif jalur kereta Yogyakarta-Secang",
-      "lat": -7.7888128,
-      "lng": 110.3607078,
-      "coordonnees": {
-        "lat": -7.7888128,
-        "lng": 110.3607078
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-7.7888128,110.3607078",
-      "source": "osm"
-    },
-    {
-      "nom": "Tugu Pal Putih Yogyakarta",
-      "lat": -7.7829099,
-      "lng": 110.3670713,
-      "coordonnees": {
-        "lat": -7.7829099,
-        "lng": 110.3670713
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-7.7829099,110.3670713",
-      "source": "osm"
-    },
-    {
-      "nom": "Museum Dewantara Kirti Griya",
-      "lat": -7.8054562,
-      "lng": 110.3784127,
-      "coordonnees": {
-        "lat": -7.8054562,
-        "lng": 110.3784127
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=-7.8054562,110.3784127",
-      "source": "osm"
-    },
-    {
-      "nom": "Walk Path",
-      "lat": -7.7951105,
-      "lng": 110.3561224,
-      "coordonnees": {
-        "lat": -7.7951105,
-        "lng": 110.3561224
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-7.7951105,110.3561224",
-      "source": "osm"
-    },
-    {
-      "nom": "Patung Polisi",
-      "lat": -7.7828897,
-      "lng": 110.3748741,
-      "coordonnees": {
-        "lat": -7.7828897,
-        "lng": 110.3748741
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-7.7828897,110.3748741",
-      "source": "osm"
-    },
-    {
-      "nom": "Museum Sidik Martowidjojo",
-      "lat": -7.8084912,
-      "lng": 110.3629211,
-      "coordonnees": {
-        "lat": -7.8084912,
-        "lng": 110.3629211
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=-7.8084912,110.3629211",
-      "source": "osm"
-    },
-    {
-      "nom": "Kusumanegara Cemetery",
-      "lat": -7.8023299,
-      "lng": 110.3828135,
-      "coordonnees": {
-        "lat": -7.8023299,
-        "lng": 110.3828135
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-7.8023299,110.3828135",
-      "source": "osm"
-    },
-    {
-      "nom": "Puppet workshop",
-      "lat": -7.808758,
-      "lng": 110.3621185,
-      "coordonnees": {
-        "lat": -7.808758,
-        "lng": 110.3621185
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-7.808758,110.3621185",
-      "source": "osm"
-    },
-    {
-      "nom": "Pulo Kenanga (highest building in Tamansari, ruins)",
-      "lat": -7.8079032,
-      "lng": 110.3605495,
-      "coordonnees": {
-        "lat": -7.8079032,
-        "lng": 110.3605495
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=-7.8079032,110.3605495",
-      "source": "osm"
-    },
-    {
-      "nom": "Museum RS Mata Dr Yap Prawirohusodo",
-      "lat": -7.7806873,
-      "lng": 110.3749667,
-      "coordonnees": {
-        "lat": -7.7806873,
-        "lng": 110.3749667
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=-7.7806873,110.3749667",
-      "source": "osm"
-    },
-    {
-      "nom": "Museum Ki Amri Yahya",
-      "lat": -7.7992032,
-      "lng": 110.3538235,
-      "coordonnees": {
-        "lat": -7.7992032,
-        "lng": 110.3538235
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=-7.7992032,110.3538235",
-      "source": "osm"
-    },
-    {
-      "nom": "Taman Kadipaten",
-      "lat": -7.8050847,
-      "lng": 110.3565327,
-      "coordonnees": {
-        "lat": -7.8050847,
-        "lng": 110.3565327
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=-7.8050847,110.3565327",
-      "source": "osm"
-    },
-    {
-      "nom": "Kalpiko Batik course",
-      "lat": -7.8080269,
-      "lng": 110.359279,
-      "coordonnees": {
-        "lat": -7.8080269,
-        "lng": 110.359279
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-7.8080269,110.359279",
-      "source": "osm"
-    },
-    {
-      "nom": "Jogja National Museum",
-      "lat": -7.8000614,
-      "lng": 110.3532393,
-      "coordonnees": {
-        "lat": -7.8000614,
-        "lng": 110.3532393
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=-7.8000614,110.3532393",
-      "source": "osm"
-    },
-    {
-      "nom": "Gapura Langenastran Lor Alun Alun Kidul Yogyakarta",
-      "lat": -7.8115257,
-      "lng": 110.3639968,
-      "coordonnees": {
-        "lat": -7.8115257,
-        "lng": 110.3639968
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-7.8115257,110.3639968",
-      "source": "osm"
-    },
-    {
-      "nom": "Taman Sari Water Castle",
-      "lat": -7.8100524,
-      "lng": 110.3592071,
-      "coordonnees": {
-        "lat": -7.8100524,
-        "lng": 110.3592071
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=-7.8100524,110.3592071",
-      "source": "osm"
-    },
-    {
-      "nom": "Pengrajin Wayang",
-      "lat": -7.8121824,
-      "lng": 110.3621062,
-      "coordonnees": {
-        "lat": -7.8121824,
-        "lng": 110.3621062
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-7.8121824,110.3621062",
-      "source": "osm"
-    },
-    {
-      "nom": "Museum Pangeran Diponegoro",
-      "lat": -7.7872136,
-      "lng": 110.351519,
-      "coordonnees": {
-        "lat": -7.7872136,
-        "lng": 110.351519
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=-7.7872136,110.351519",
-      "source": "osm"
-    },
-    {
-      "nom": "Ruang MES 56",
-      "lat": -7.8117665,
-      "lng": 110.3577233,
-      "coordonnees": {
-        "lat": -7.8117665,
-        "lng": 110.3577233
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=-7.8117665,110.3577233",
-      "source": "osm"
-    },
-    {
-      "nom": "Lapangan Segoro Amarto",
-      "lat": -7.7800874,
-      "lng": 110.3563324,
-      "coordonnees": {
-        "lat": -7.7800874,
-        "lng": 110.3563324
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=-7.7800874,110.3563324",
-      "source": "osm"
-    },
-    {
-      "nom": "Museum Kapal",
-      "lat": -7.8012112,
-      "lng": 110.3496168,
-      "coordonnees": {
-        "lat": -7.8012112,
-        "lng": 110.3496168
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=-7.8012112,110.3496168",
-      "source": "osm"
-    },
-    {
-      "nom": "Bundaran UGM",
-      "lat": -7.776005,
-      "lng": 110.376065,
-      "coordonnees": {
-        "lat": -7.776005,
-        "lng": 110.376065
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-7.776005,110.376065",
-      "source": "osm"
-    },
-    {
-      "nom": "Museum Perjuangan Yogyakarta",
-      "lat": -7.8164513,
-      "lng": 110.3718671,
-      "coordonnees": {
-        "lat": -7.8164513,
-        "lng": 110.3718671
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=-7.8164513,110.3718671",
-      "source": "osm"
-    },
-    {
-      "nom": "Tenda Biru Art House",
-      "lat": -7.8171239,
-      "lng": 110.363579,
-      "coordonnees": {
-        "lat": -7.8171239,
-        "lng": 110.363579
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=-7.8171239,110.363579",
-      "source": "osm"
-    },
-    {
-      "nom": "street art",
-      "lat": -7.8183736,
-      "lng": 110.3655415,
-      "coordonnees": {
-        "lat": -7.8183736,
-        "lng": 110.3655415
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-7.8183736,110.3655415",
-      "source": "osm"
-    },
-    {
-      "nom": "Cemeti - Institute for Art and Society",
-      "lat": -7.8176545,
-      "lng": 110.3623894,
-      "coordonnees": {
-        "lat": -7.8176545,
-        "lng": 110.3623894
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=-7.8176545,110.3623894",
-      "source": "osm"
-    },
-    {
-      "nom": "Museum UGM",
-      "lat": -7.7738342,
-      "lng": 110.3779852,
-      "coordonnees": {
-        "lat": -7.7738342,
-        "lng": 110.3779852
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=-7.7738342,110.3779852",
-      "source": "osm"
-    },
-    {
-      "nom": "Tirtodipuran Link Building B",
-      "lat": -7.8188868,
-      "lng": 110.3647112,
-      "coordonnees": {
-        "lat": -7.8188868,
-        "lng": 110.3647112
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=-7.8188868,110.3647112",
-      "source": "osm"
-    },
-    {
-      "nom": "Langgeng Art Foundation",
-      "lat": -7.8179393,
-      "lng": 110.3595464,
-      "coordonnees": {
-        "lat": -7.8179393,
-        "lng": 110.3595464
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=-7.8179393,110.3595464",
-      "source": "osm"
-    },
-    {
-      "nom": "Batas Kota Yogyakarta",
-      "lat": -7.7831166,
-      "lng": 110.3912186,
-      "coordonnees": {
-        "lat": -7.7831166,
-        "lng": 110.3912186
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-7.7831166,110.3912186",
-      "source": "osm"
-    },
-    {
-      "nom": "Mandala Majapahit UGM",
-      "lat": -7.7723253,
-      "lng": 110.3790753,
-      "coordonnees": {
-        "lat": -7.7723253,
-        "lng": 110.3790753
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=-7.7723253,110.3790753",
-      "source": "osm"
-    },
-    {
-      "nom": "Krack!",
-      "lat": -7.8199003,
-      "lng": 110.3614894,
-      "coordonnees": {
-        "lat": -7.8199003,
-        "lng": 110.3614894
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-7.8199003,110.3614894",
-      "source": "osm"
-    },
-    {
-      "nom": "Bio-Paleoanthropology Museum",
-      "lat": -7.7704411,
-      "lng": 110.3753765,
-      "coordonnees": {
-        "lat": -7.7704411,
-        "lng": 110.3753765
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=-7.7704411,110.3753765",
-      "source": "osm"
-    },
-    {
-      "nom": "Patung Kembara UNY",
-      "lat": -7.7768932,
-      "lng": 110.3876086,
-      "coordonnees": {
-        "lat": -7.7768932,
-        "lng": 110.3876086
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-7.7768932,110.3876086",
-      "source": "osm"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "nom": "Masjid Sholihin",
-      "lat": -7.7940693,
-      "lng": 110.3660394,
-      "coordonnees": {
-        "lat": -7.7940693,
-        "lng": 110.3660394
-      },
-      "mapsUrl": "https://maps.google.com/?q=-7.7940693,110.3660394",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Assalam",
-      "lat": -7.7997786,
-      "lng": 110.3733273,
-      "coordonnees": {
-        "lat": -7.7997786,
-        "lng": 110.3733273
-      },
-      "mapsUrl": "https://maps.google.com/?q=-7.7997786,110.3733273",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Faridan M Noto",
-      "lat": -7.8009796,
-      "lng": 110.3719728,
-      "coordonnees": {
-        "lat": -7.8009796,
-        "lng": 110.3719728
-      },
-      "mapsUrl": "https://maps.google.com/?q=-7.8009796,110.3719728",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid KH. Ahmad Dahlan",
-      "lat": -7.8018182,
-      "lng": 110.3735297,
-      "coordonnees": {
-        "lat": -7.8018182,
-        "lng": 110.3735297
-      },
-      "mapsUrl": "https://maps.google.com/?q=-7.8018182,110.3735297",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid At-Tauhid Bintaran",
-      "lat": -7.802593,
-      "lng": 110.3725944,
-      "coordonnees": {
-        "lat": -7.802593,
-        "lng": 110.3725944
-      },
-      "mapsUrl": "https://maps.google.com/?q=-7.802593,110.3725944",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Danoedjo As-Sudairi",
-      "lat": -7.7940102,
-      "lng": 110.3611832,
-      "coordonnees": {
-        "lat": -7.7940102,
-        "lng": 110.3611832
-      },
-      "mapsUrl": "https://maps.google.com/?q=-7.7940102,110.3611832",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Margoyoso",
-      "lat": -7.8023901,
-      "lng": 110.3764132,
-      "coordonnees": {
-        "lat": -7.8023901,
-        "lng": 110.3764132
-      },
-      "mapsUrl": "https://maps.google.com/?q=-7.8023901,110.3764132",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Al Maa'uun",
-      "lat": -7.7950253,
-      "lng": 110.3593797,
-      "coordonnees": {
-        "lat": -7.7950253,
-        "lng": 110.3593797
-      },
-      "adresse": "Sutodirjan, Yogyakarta",
-      "mapsUrl": "https://maps.google.com/?q=-7.7950253,110.3593797",
-      "source": "osm"
-    },
-    {
-      "nom": "SD Muhammadiyah Suranatan",
-      "lat": -7.8021638,
-      "lng": 110.3600529,
-      "coordonnees": {
-        "lat": -7.8021638,
-        "lng": 110.3600529
-      },
-      "adresse": "Jalan Taqwa, Yogyakarta",
-      "mapsUrl": "https://maps.google.com/?q=-7.8021638,110.3600529",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Taqwa",
-      "lat": -7.8026633,
-      "lng": 110.3594441,
-      "coordonnees": {
-        "lat": -7.8026633,
-        "lng": 110.3594441
-      },
-      "adresse": "Jalan Taqwa, Yogyakarta",
-      "mapsUrl": "https://maps.google.com/?q=-7.8026633,110.3594441",
-      "source": "osm"
-    },
-    {
-      "nom": "masjid baitul hikmah",
-      "lat": -7.78335,
-      "lng": 110.3701463,
-      "coordonnees": {
-        "lat": -7.78335,
-        "lng": 110.3701463
-      },
-      "mapsUrl": "https://maps.google.com/?q=-7.78335,110.3701463",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Al Amiin",
-      "lat": -7.7953202,
-      "lng": 110.3563757,
-      "coordonnees": {
-        "lat": -7.7953202,
-        "lng": 110.3563757
-      },
-      "adresse": "Notoyudan, Yogyakarta",
-      "mapsUrl": "https://maps.google.com/?q=-7.7953202,110.3563757",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Ar-Rohmah",
-      "lat": -7.7999304,
-      "lng": 110.3565483,
-      "coordonnees": {
-        "lat": -7.7999304,
-        "lng": 110.3565483
-      },
-      "mapsUrl": "https://maps.google.com/?q=-7.7999304,110.3565483",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Piri",
-      "lat": -7.7939236,
-      "lng": 110.3831448,
-      "coordonnees": {
-        "lat": -7.7939236,
-        "lng": 110.3831448
-      },
-      "mapsUrl": "https://maps.google.com/?q=-7.7939236,110.3831448",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Baitul Hikmah Gondolayu Lor",
-      "lat": -7.7814527,
-      "lng": 110.3703481,
-      "coordonnees": {
-        "lat": -7.7814527,
-        "lng": 110.3703481
-      },
-      "mapsUrl": "https://maps.google.com/?q=-7.7814527,110.3703481",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Baitul Qahhar",
-      "lat": -7.7819588,
-      "lng": 110.374815,
-      "coordonnees": {
-        "lat": -7.7819588,
-        "lng": 110.374815
-      },
-      "mapsUrl": "https://maps.google.com/?q=-7.7819588,110.374815",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid al hijrah",
-      "lat": -7.7859591,
-      "lng": 110.357419,
-      "coordonnees": {
-        "lat": -7.7859591,
-        "lng": 110.357419
-      },
-      "mapsUrl": "https://maps.google.com/?q=-7.7859591,110.357419",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Al Hikmah STPP Yogyakarta",
-      "lat": -7.8038188,
-      "lng": 110.3826843,
-      "coordonnees": {
-        "lat": -7.8038188,
-        "lng": 110.3826843
-      },
-      "adresse": "Jalan Kusumanegara, Yogyakarta",
-      "mapsUrl": "https://maps.google.com/?q=-7.8038188,110.3826843",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Kadipaten",
-      "lat": -7.8072222,
-      "lng": 110.3576627,
-      "coordonnees": {
-        "lat": -7.8072222,
-        "lng": 110.3576627
-      },
-      "mapsUrl": "https://maps.google.com/?q=-7.8072222,110.3576627",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Nurul Iman",
-      "lat": -7.7762227,
-      "lng": 110.3689698,
-      "coordonnees": {
-        "lat": -7.7762227,
-        "lng": 110.3689698
-      },
-      "mapsUrl": "https://maps.google.com/?q=-7.7762227,110.3689698",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Timuran",
-      "lat": -7.8156664,
-      "lng": 110.3702631,
-      "coordonnees": {
-        "lat": -7.8156664,
-        "lng": 110.3702631
-      },
-      "mapsUrl": "https://maps.google.com/?q=-7.8156664,110.3702631",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Ngadinegaran",
-      "lat": -7.8156095,
-      "lng": 110.3628064,
-      "coordonnees": {
-        "lat": -7.8156095,
-        "lng": 110.3628064
-      },
-      "mapsUrl": "https://maps.google.com/?q=-7.8156095,110.3628064",
-      "source": "osm"
-    },
-    {
-      "nom": "Al Munawwarah",
-      "lat": -7.7769104,
-      "lng": 110.3586087,
-      "coordonnees": {
-        "lat": -7.7769104,
-        "lng": 110.3586087
-      },
-      "adresse": "Jalan Kricak Kidul, Kota Yogyakarta",
-      "mapsUrl": "https://maps.google.com/?q=-7.7769104,110.3586087",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Al Ihsan",
-      "lat": -7.8098635,
-      "lng": 110.3525212,
-      "coordonnees": {
-        "lat": -7.8098635,
-        "lng": 110.3525212
-      },
-      "mapsUrl": "https://maps.google.com/?q=-7.8098635,110.3525212",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Tamtama",
-      "lat": -7.8186873,
-      "lng": 110.3705881,
-      "coordonnees": {
-        "lat": -7.8186873,
-        "lng": 110.3705881
-      },
-      "mapsUrl": "https://maps.google.com/?q=-7.8186873,110.3705881",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Komaruddin",
-      "lat": -7.8177616,
-      "lng": 110.3601978,
-      "coordonnees": {
-        "lat": -7.8177616,
-        "lng": 110.3601978
-      },
-      "mapsUrl": "https://maps.google.com/?q=-7.8177616,110.3601978",
-      "source": "osm"
-    },
-    {
-      "nom": "Musholla",
-      "lat": -7.7750487,
-      "lng": 110.3821908,
-      "coordonnees": {
-        "lat": -7.7750487,
-        "lng": 110.3821908
-      },
-      "mapsUrl": "https://maps.google.com/?q=-7.7750487,110.3821908",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Al Hidayah",
-      "lat": -7.7753382,
-      "lng": 110.3555908,
-      "coordonnees": {
-        "lat": -7.7753382,
-        "lng": 110.3555908
-      },
-      "mapsUrl": "https://maps.google.com/?q=-7.7753382,110.3555908",
-      "source": "osm"
-    },
-    {
-      "nom": "Mushola Al Adab FIB",
-      "lat": -7.7720726,
-      "lng": 110.3794074,
-      "coordonnees": {
-        "lat": -7.7720726,
-        "lng": 110.3794074
-      },
-      "mapsUrl": "https://maps.google.com/?q=-7.7720726,110.3794074",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Babul Jannah",
-      "lat": -7.8180572,
-      "lng": 110.3567272,
-      "coordonnees": {
-        "lat": -7.8180572,
-        "lng": 110.3567272
-      },
-      "mapsUrl": "https://maps.google.com/?q=-7.8180572,110.3567272",
-      "source": "osm"
-    },
-    {
-      "nom": "Mushola Psikologi",
-      "lat": -7.7716744,
-      "lng": 110.3798218,
-      "coordonnees": {
-        "lat": -7.7716744,
-        "lng": 110.3798218
-      },
-      "mapsUrl": "https://maps.google.com/?q=-7.7716744,110.3798218",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Baitul A'la LDII",
-      "lat": -7.8155196,
-      "lng": 110.3518785,
-      "coordonnees": {
-        "lat": -7.8155196,
-        "lng": 110.3518785
-      },
-      "adresse": "Jalan Semar Gumuk Indah",
-      "mapsUrl": "https://maps.google.com/?q=-7.8155196,110.3518785",
-      "source": "osm"
-    },
-    {
-      "nom": "Mushola Filsafat",
-      "lat": -7.7709774,
-      "lng": 110.3799338,
-      "coordonnees": {
-        "lat": -7.7709774,
-        "lng": 110.3799338
-      },
-      "mapsUrl": "https://maps.google.com/?q=-7.7709774,110.3799338",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid An-Nurrahman Gumuk Indah",
-      "lat": -7.8158353,
-      "lng": 110.3518386,
-      "coordonnees": {
-        "lat": -7.8158353,
-        "lng": 110.3518386
-      },
-      "mapsUrl": "https://maps.google.com/?q=-7.8158353,110.3518386",
-      "source": "osm"
-    },
-    {
-      "nom": "Mushola FEB UGM",
-      "lat": -7.7702835,
-      "lng": 110.3788878,
-      "coordonnees": {
-        "lat": -7.7702835,
-        "lng": 110.3788878
-      },
-      "mapsUrl": "https://maps.google.com/?q=-7.7702835,110.3788878",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Al Akdhor",
-      "lat": -7.821925,
-      "lng": 110.3755889,
-      "coordonnees": {
-        "lat": -7.821925,
-        "lng": 110.3755889
-      },
-      "mapsUrl": "https://maps.google.com/?q=-7.821925,110.3755889",
-      "source": "osm"
-    },
-    {
-      "nom": "Laboratorium Agama Masjid UIN Sunan Kalijaga",
-      "lat": -7.7847029,
-      "lng": 110.3944564,
-      "coordonnees": {
-        "lat": -7.7847029,
-        "lng": 110.3944564
-      },
-      "mapsUrl": "https://maps.google.com/?q=-7.7847029,110.3944564",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Al Falaah Blunyah Gede",
-      "lat": -7.768555,
-      "lng": 110.3683479,
-      "coordonnees": {
-        "lat": -7.768555,
-        "lng": 110.3683479
-      },
-      "adresse": "JL. AM Sangaji, Sleman",
-      "mapsUrl": "https://maps.google.com/?q=-7.768555,110.3683479",
-      "source": "osm"
-    },
-    {
-      "nom": "Mushola GSP",
-      "lat": -7.769874,
-      "lng": 110.3781297,
-      "coordonnees": {
-        "lat": -7.769874,
-        "lng": 110.3781297
-      },
-      "mapsUrl": "https://maps.google.com/?q=-7.769874,110.3781297",
-      "source": "osm"
-    },
-    {
-      "nom": "Mushola Al Rolam",
-      "lat": -7.7749526,
-      "lng": 110.38761,
-      "coordonnees": {
-        "lat": -7.7749526,
-        "lng": 110.38761
-      },
-      "mapsUrl": "https://maps.google.com/?q=-7.7749526,110.38761",
-      "source": "osm"
-    },
-    {
-      "nom": "Mushola",
-      "lat": -7.7734672,
-      "lng": 110.3857478,
-      "coordonnees": {
-        "lat": -7.7734672,
-        "lng": 110.3857478
-      },
-      "mapsUrl": "https://maps.google.com/?q=-7.7734672,110.3857478",
-      "source": "osm"
-    },
-    {
-      "nom": "The Mushola",
-      "lat": -7.8175035,
-      "lng": 110.3528631,
-      "coordonnees": {
-        "lat": -7.8175035,
-        "lng": 110.3528631
-      },
-      "mapsUrl": "https://maps.google.com/?q=-7.8175035,110.3528631",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Al Asel",
-      "lat": -7.7885143,
-      "lng": 110.3416133,
-      "coordonnees": {
-        "lat": -7.7885143,
-        "lng": 110.3416133
-      },
-      "mapsUrl": "https://maps.google.com/?q=-7.7885143,110.3416133",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Al Jami",
-      "lat": -7.8116243,
-      "lng": 110.3935784,
-      "coordonnees": {
-        "lat": -7.8116243,
-        "lng": 110.3935784
-      },
-      "mapsUrl": "https://maps.google.com/?q=-7.8116243,110.3935784",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Pathok Negara",
-      "lat": -7.798628,
-      "lng": 110.3991561,
-      "coordonnees": {
-        "lat": -7.798628,
-        "lng": 110.3991561
-      },
-      "mapsUrl": "https://maps.google.com/?q=-7.798628,110.3991561",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Al-Hidayah",
-      "lat": -7.7813801,
-      "lng": 110.396239,
-      "coordonnees": {
-        "lat": -7.7813801,
-        "lng": 110.396239
-      },
-      "adresse": "Jalan Ori I, Yogyakarta",
-      "mapsUrl": "https://maps.google.com/?q=-7.7813801,110.396239",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Pangeran Diponegoro",
-      "lat": -7.7772707,
-      "lng": 110.3453076,
-      "coordonnees": {
-        "lat": -7.7772707,
-        "lng": 110.3453076
-      },
-      "mapsUrl": "https://maps.google.com/?q=-7.7772707,110.3453076",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Al Ikhsan (Masjid Kehutanan UGM)",
-      "lat": -7.76714,
-      "lng": 110.380591,
-      "coordonnees": {
-        "lat": -7.76714,
-        "lng": 110.380591
-      },
-      "adresse": "Jalan Agro, Sleman",
-      "mapsUrl": "https://maps.google.com/?q=-7.76714,110.380591",
-      "source": "osm"
-    },
-    {
-      "nom": "kos",
-      "lat": -7.7659814,
-      "lng": 110.3613022,
-      "coordonnees": {
-        "lat": -7.7659814,
-        "lng": 110.3613022
-      },
-      "mapsUrl": "https://maps.google.com/?q=-7.7659814,110.3613022",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Nural Huda",
-      "lat": -7.8077488,
-      "lng": 110.3404108,
-      "coordonnees": {
-        "lat": -7.8077488,
-        "lng": 110.3404108
-      },
-      "mapsUrl": "https://maps.google.com/?q=-7.8077488,110.3404108",
-      "source": "osm"
-    }
-  ],
-  "tags": [
-    "culture",
-    "borobudur",
-    "unesco",
-    "batik",
-    "javanais",
-    "spirituel"
-  ],
-  "selectionsPremium": {
-    "mieuxNotes": [
-      "Warung Selera",
-      "Ramly Burger",
-      "Restoran Nusantara",
-      "Warung Selera Yogyakarta 10",
-      "Saffron Garden Yogyakarta"
-    ],
-    "meilleurRapportQualitePrix": [
-      "Gudeg Yu Djum",
-      "Sate Klathak Pak Pong",
-      "Bale Raos",
-      "Mangut Lele Mbah Marto",
-      "Raminten"
-    ],
-    "incontournables": [
-      "Warung Selera Yogyakarta 10",
-      "Warung Selera",
-      "Spice Darbar",
-      "Ramly Burger",
-      "Seri Gastronomi"
-    ],
-    "pepitesCachees": [
-      "Gudeg Yu Djum",
-      "Sate Klathak Pak Pong",
-      "Bale Raos"
-    ],
-    "idealFamille": [
-      "Warung Selera",
-      "Restoran Nusantara",
-      "Spice Darbar",
-      "Bahari Seafood",
-      "Teh Tarik Café"
-    ],
-    "gastronomique": [
-      "Saffron Garden Yogyakarta",
-      "Seri Gastronomi"
-    ],
-    "ouvertNuit": [
-      "Warung Selera",
-      "Teh Tarik Café",
-      "Green Leaf"
-    ],
-    "vueExceptionnelle": [
-      "Bahari Seafood"
-    ]
+  {
+   "nom": "Burjo Borneo",
+   "lat": -7.7788569,
+   "lng": 110.3801862,
+   "type": "indonesian",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=-7.7788569,110.3801862",
+   "source": "osm"
   },
-  "description_en": "Yogyakarta, in Indonesia, is a halal-friendly destination with a Halal Trust Score of 4.3/5. Muslim travelers will find 40 halal restaurants listed, 3,000 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
-  "metaDescription_en": "Halal guide to Yogyakarta: 40 halal restaurants listed, 3,000 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.3/5.",
-  "nom_en": "Yogyakarta",
-  "boucheries": [],
-  "infos_pratiques_en": {
-    "langue": "Indonesian, Javanais",
-    "monnaie": "Rupee (IDR)",
-    "meilleure_periode": "May to September",
-    "appel_priere": "5 times a day",
-    "nourriture_halal": "Largement disponible"
+  {
+   "nom": "Golden Clopatra",
+   "lat": -7.8212043,
+   "lng": 110.3638596,
+   "type": "egyptian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-7.8212043,110.3638596",
+   "source": "osm"
+  },
+  {
+   "nom": "Kedai Bin Saif",
+   "lat": -7.8250613,
+   "lng": 110.3767831,
+   "type": "arab",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-7.8250613,110.3767831",
+   "source": "osm"
+  },
+  {
+   "nom": "Ikan Asap Pakbe",
+   "lat": -7.7617057,
+   "lng": 110.3703423,
+   "type": "regional, indonesian",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=-7.7617057,110.3703423",
+   "source": "osm"
+  },
+  {
+   "nom": "Nasi Kuning Kanda",
+   "lat": -7.8294869,
+   "lng": 110.3801922,
+   "type": "arab",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-7.8294869,110.3801922",
+   "source": "osm"
+  },
+  {
+   "nom": "Waroeng Steak & Shake",
+   "lat": -7.8283086,
+   "lng": 110.3542059,
+   "type": "steak house, fine dining, grill",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=-7.8283086,110.3542059",
+   "source": "osm"
+  },
+  {
+   "nom": "Soto Sapi Pak Ngadiran",
+   "lat": -7.7632427,
+   "lng": 110.3868662,
+   "type": "indonesian",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=-7.7632427,110.3868662",
+   "source": "osm"
+  },
+  {
+   "nom": "Jatinangor House",
+   "lat": -7.7574333,
+   "lng": 110.377358,
+   "type": "chicken",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=-7.7574333,110.377358",
+   "source": "osm"
+  },
+  {
+   "nom": "Nasi Goreng Athaya",
+   "lat": -7.8114727,
+   "lng": 110.3280642,
+   "type": "asian",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=-7.8114727,110.3280642",
+   "source": "osm"
+  },
+  {
+   "nom": "Mak Semarangan Express",
+   "lat": -7.7719965,
+   "lng": 110.409514,
+   "type": "indonesian",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=-7.7719965,110.409514",
+   "source": "osm"
+  },
+  {
+   "nom": "Mie Ayam Palembang Afui",
+   "lat": -7.7813679,
+   "lng": 110.4161415,
+   "type": "noodle",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=-7.7813679,110.4161415",
+   "source": "osm"
+  },
+  {
+   "nom": "PREKSU UMY",
+   "lat": -7.8148015,
+   "lng": 110.3233927,
+   "type": "chicken",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=-7.8148015,110.3233927",
+   "source": "osm"
+  },
+  {
+   "nom": "Angkringan Reeneo",
+   "lat": -7.8466066,
+   "lng": 110.3561643,
+   "type": "regional",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=-7.8466066,110.3561643",
+   "source": "osm"
+  },
+  {
+   "nom": "Ganesh ek sanskriti",
+   "lat": -7.7794951,
+   "lng": 110.4286171,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=-7.7794951,110.4286171",
+   "source": "osm"
+  },
+  {
+   "nom": "Ubi Madu Cilembu Berbakar Kang Mas - Stad. Maguwoharjo",
+   "lat": -7.7523023,
+   "lng": 110.419729,
+   "type": "indonesian",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=-7.7523023,110.419729",
+   "source": "osm"
+  },
+  {
+   "nom": "Swasana by Temata Yogyakarta",
+   "lat": -7.7259288,
+   "lng": 110.4002623,
+   "type": "Restaurant",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=-7.7259288,110.4002623",
+   "source": "osm"
+  },
+  {
+   "nom": "Lotus Mio Bangunjiwo",
+   "lat": -7.8431978,
+   "lng": 110.3050464,
+   "type": "indonesian, Italian, pizza, ice cream",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=-7.8431978,110.3050464",
+   "source": "osm"
+  },
+  {
+   "nom": "Seblak Endul",
+   "lat": -7.873704,
+   "lng": 110.3450062,
+   "type": "indonesian",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=-7.873704,110.3450062",
+   "source": "osm"
+  },
+  {
+   "nom": "Warmindo Sekawan",
+   "lat": -7.7746542,
+   "lng": 110.4546654,
+   "type": "indonesian",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=-7.7746542,110.4546654",
+   "source": "osm"
+  },
+  {
+   "nom": "Bakmi Kampoeng Jawa Tajem",
+   "lat": -7.7368024,
+   "lng": 110.4342148,
+   "type": "javanese",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=-7.7368024,110.4342148",
+   "source": "osm"
+  },
+  {
+   "nom": "Pecel Gendar",
+   "lat": -7.7747659,
+   "lng": 110.4557445,
+   "type": "indonesian",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=-7.7747659,110.4557445",
+   "source": "osm"
   }
+ ],
+ "hotels": [
+  {
+   "nom": "Nueve Malioboro Hotel Yogyakarta",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7959471,110.3688927",
+   "lat": -7.7959471,
+   "lng": 110.3688927,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7959471,110.3688927",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Melia Purosani",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 5,
+   "mapsUrl": "https://maps.google.com/?q=-7.7969057,110.3689789",
+   "lat": -7.7969057,
+   "lng": 110.3689789,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7969057,110.3689789",
+   "source": "osm"
+  },
+  {
+   "nom": "Tegal Panggung Guest House",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7943698,110.3707419",
+   "lat": -7.7943698,
+   "lng": 110.3707419,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7943698,110.3707419",
+   "source": "osm"
+  },
+  {
+   "nom": "Front One Cabin Malioboro Jogja",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7970396,110.3705144",
+   "lat": -7.7970396,
+   "lng": 110.3705144,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7970396,110.3705144",
+   "source": "osm"
+  },
+  {
+   "nom": "Meliá Purosani",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7972909,110.3687242",
+   "lat": -7.7972909,
+   "lng": 110.3687242,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.melia.com/en/hotels/indonesia/java/melia-purosani/",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Suryapuri",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7964469,110.36783",
+   "lat": -7.7964469,
+   "lng": 110.36783,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7964469,110.36783",
+   "source": "osm"
+  },
+  {
+   "nom": "Kalingga Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7968841,110.3710205",
+   "lat": -7.7968841,
+   "lng": 110.3710205,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7968841,110.3710205",
+   "source": "osm"
+  },
+  {
+   "nom": "Akur Optic & Hotel Yogyakarta",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7942315,110.3678934",
+   "lat": -7.7942315,
+   "lng": 110.3678934,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7942315,110.3678934",
+   "source": "osm"
+  },
+  {
+   "nom": "Puspo Nugroho Hotel Yogyakarta",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7942479,110.367658",
+   "lat": -7.7942479,
+   "lng": 110.367658,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7942479,110.367658",
+   "source": "osm"
+  },
+  {
+   "nom": "Gaotama Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7937987,110.36758",
+   "lat": -7.7937987,
+   "lng": 110.36758,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7937987,110.36758",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Gaotama",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7938706,110.3674656",
+   "lat": -7.7938706,
+   "lng": 110.3674656,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7938706,110.3674656",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Malioboro Garden",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7941668,110.3668402",
+   "lat": -7.7941668,
+   "lng": 110.3668402,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7941668,110.3668402",
+   "source": "osm"
+  },
+  {
+   "nom": "SekawanStay Guest House Malioboro",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7925789,110.3707164",
+   "lat": -7.7925789,
+   "lng": 110.3707164,
+   "halalFriendly": false,
+   "bookingUrl": "instagram.com/sekawanstay",
+   "source": "osm"
+  },
+  {
+   "nom": "Jambuluwuk Malioboro Boutique Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7975906,110.3722141",
+   "lat": -7.7975906,
+   "lng": 110.3722141,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7975906,110.3722141",
+   "source": "osm"
+  },
+  {
+   "nom": "Penak Malioboro",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7923645,110.3680524",
+   "lat": -7.7923645,
+   "lng": 110.3680524,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7923645,110.3680524",
+   "source": "osm"
+  },
+  {
+   "nom": "Novotel Suites Yogyakarta Malioboro",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7930319,110.3667759",
+   "lat": -7.7930319,
+   "lng": 110.3667759,
+   "halalFriendly": false,
+   "bookingUrl": "https://all.accor.com/a088",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Vala",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7970311,110.3729761",
+   "lat": -7.7970311,
+   "lng": 110.3729761,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7970311,110.3729761",
+   "source": "osm"
+  },
+  {
+   "nom": "Mutiara I",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7944795,110.3658609",
+   "lat": -7.7944795,
+   "lng": 110.3658609,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7944795,110.3658609",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Malyabhara",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7930284,110.3664811",
+   "lat": -7.7930284,
+   "lng": 110.3664811,
+   "halalFriendly": false,
+   "bookingUrl": "https://malyabharahotel.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Putra Sabar",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7993747,110.3707847",
+   "lat": -7.7993747,
+   "lng": 110.3707847,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7993747,110.3707847",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Pules Yogyakarta",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7919016,110.3678039",
+   "lat": -7.7919016,
+   "lng": 110.3678039,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7919016,110.3678039",
+   "source": "osm"
+  },
+  {
+   "nom": "Bobobox",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7949947,110.3654432",
+   "lat": -7.7949947,
+   "lng": 110.3654432,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7949947,110.3654432",
+   "source": "osm"
+  },
+  {
+   "nom": "Danurejan Guesthouse",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7940487,110.3732944",
+   "lat": -7.7940487,
+   "lng": 110.3732944,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7940487,110.3732944",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Suryaputri Tegal Panggung",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7922094,110.3719428",
+   "lat": -7.7922094,
+   "lng": 110.3719428,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7922094,110.3719428",
+   "source": "osm"
+  },
+  {
+   "nom": "RedDoorz Plus near Lempuyangan Station 3",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7921597,110.3719753",
+   "lat": -7.7921597,
+   "lng": 110.3719753,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7921597,110.3719753",
+   "source": "osm"
+  },
+  {
+   "nom": "The Packer Lodge",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7939545,110.3650732",
+   "lat": -7.7939545,
+   "lng": 110.3650732,
+   "halalFriendly": false,
+   "bookingUrl": "http://yogya.thepackerlodge.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Trans Yogya",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7937659,110.3739488",
+   "lat": -7.7937659,
+   "lng": 110.3739488,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7937659,110.3739488",
+   "source": "osm"
+  },
+  {
+   "nom": "Amaris Hotel Malioboro",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7960693,110.3647015",
+   "lat": -7.7960693,
+   "lng": 110.3647015,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7960693,110.3647015",
+   "source": "osm"
+  },
+  {
+   "nom": "Laura's Backpacker 523 nr 1 & Reception",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7909614,110.3710315",
+   "lat": -7.7909614,
+   "lng": 110.3710315,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7909614,110.3710315",
+   "source": "osm"
+  },
+  {
+   "nom": "Homestay Mawar Putih Sosromenduran",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7947528,110.3645997",
+   "lat": -7.7947528,
+   "lng": 110.3645997,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7947528,110.3645997",
+   "source": "osm"
+  },
+  {
+   "nom": "Laura's backpacker 523, nr 2",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.790796,110.3707421",
+   "lat": -7.790796,
+   "lng": 110.3707421,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.790796,110.3707421",
+   "source": "osm"
+  },
+  {
+   "nom": "Metro LMalioboro Living",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7935432,110.374086",
+   "lat": -7.7935432,
+   "lng": 110.374086,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7935432,110.374086",
+   "source": "osm"
+  },
+  {
+   "nom": "Whiz",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7937377,110.3648091",
+   "lat": -7.7937377,
+   "lng": 110.3648091,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7937377,110.3648091",
+   "source": "osm"
+  },
+  {
+   "nom": "1O1 STYLE Yogyakarta Malioboro",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 4,
+   "mapsUrl": "https://maps.google.com/?q=-7.7988901,110.3733759",
+   "lat": -7.7988901,
+   "lng": 110.3733759,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.1o1stylehotels.com/yogyakartamalioboro",
+   "source": "osm"
+  },
+  {
+   "nom": "Homey Home",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7904011,110.3698668",
+   "lat": -7.7904011,
+   "lng": 110.3698668,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7904011,110.3698668",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Amarta Yogyakarta",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7936939,110.3645606",
+   "lat": -7.7936939,
+   "lng": 110.3645606,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7936939,110.3645606",
+   "source": "osm"
+  },
+  {
+   "nom": "Zest Hotel Yogyakarta",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7991929,110.3733744",
+   "lat": -7.7991929,
+   "lng": 110.3733744,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7991929,110.3733744",
+   "source": "osm"
+  },
+  {
+   "nom": "Pyrenees Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7918985,110.3655964",
+   "lat": -7.7918985,
+   "lng": 110.3655964,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7918985,110.3655964",
+   "source": "osm"
+  },
+  {
+   "nom": "Omah Qu",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7971781,110.3747853",
+   "lat": -7.7971781,
+   "lng": 110.3747853,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7971781,110.3747853",
+   "source": "osm"
+  },
+  {
+   "nom": "Grand Inna Malioboro",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 4,
+   "mapsUrl": "https://maps.google.com/?q=-7.7907566,110.3668579",
+   "lat": -7.7907566,
+   "lng": 110.3668579,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.innagaruda.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "New Hotel Lilik Yogyakarta",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.793638,110.3642934",
+   "lat": -7.793638,
+   "lng": 110.3642934,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.793638,110.3642934",
+   "source": "osm"
+  },
+  {
+   "nom": "Sky Hotel Hayam Wuruk",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7918351,110.3735983",
+   "lat": -7.7918351,
+   "lng": 110.3735983,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7918351,110.3735983",
+   "source": "osm"
+  },
+  {
+   "nom": "Indonesia Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7918047,110.3653013",
+   "lat": -7.7918047,
+   "lng": 110.3653013,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7918047,110.3653013",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Limaran",
+   "categorie": "Hôtel",
+   "priceRange": "€€€",
+   "score": 3,
+   "mapsUrl": "https://maps.google.com/?q=-7.8012493,110.3690953",
+   "lat": -7.8012493,
+   "lng": 110.3690953,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.8012493,110.3690953",
+   "source": "osm"
+  },
+  {
+   "nom": "Peti Mas Hotel Yogyakarta",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7939885,110.3639281",
+   "lat": -7.7939885,
+   "lng": 110.3639281,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7939885,110.3639281",
+   "source": "osm"
+  },
+  {
+   "nom": "Summer Season Boutique Hotel Yogyakarta",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.79152,110.3653407",
+   "lat": -7.79152,
+   "lng": 110.3653407,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.79152,110.3653407",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Rajadani Yogyakarta",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.8009895,110.3716736",
+   "lat": -7.8009895,
+   "lng": 110.3716736,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.8009895,110.3716736",
+   "source": "osm"
+  },
+  {
+   "nom": "Kartika Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7916467,110.3651881",
+   "lat": -7.7916467,
+   "lng": 110.3651881,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7916467,110.3651881",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Batik Yogyakarta",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7923634,110.3645203",
+   "lat": -7.7923634,
+   "lng": 110.3645203,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7923634,110.3645203",
+   "source": "osm"
+  },
+  {
+   "nom": "Summer Quest Hotel Yogyakarta",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7921347,110.364639",
+   "lat": -7.7921347,
+   "lng": 110.364639,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7921347,110.364639",
+   "source": "osm"
+  },
+  {
+   "nom": "Merbubu",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7914478,110.3650914",
+   "lat": -7.7914478,
+   "lng": 110.3650914,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7914478,110.3650914",
+   "source": "osm"
+  },
+  {
+   "nom": "Taman Yuwono Heritage Malioboro Guest House Jogja",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7923949,110.3641331",
+   "lat": -7.7923949,
+   "lng": 110.3641331,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7923949,110.3641331",
+   "source": "osm"
+  },
+  {
+   "nom": "The Capsule",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7914592,110.364819",
+   "lat": -7.7914592,
+   "lng": 110.364819,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7914592,110.364819",
+   "source": "osm"
+  },
+  {
+   "nom": "D'Senopati Malioboro Grand Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.8018955,110.3700315",
+   "lat": -7.8018955,
+   "lng": 110.3700315,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.8018955,110.3700315",
+   "source": "osm"
+  },
+  {
+   "nom": "Rama",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.791555,110.3645992",
+   "lat": -7.791555,
+   "lng": 110.3645992,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.791555,110.3645992",
+   "source": "osm"
+  },
+  {
+   "nom": "105 Homestay",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7909083,110.3652133",
+   "lat": -7.7909083,
+   "lng": 110.3652133,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7909083,110.3652133",
+   "source": "osm"
+  },
+  {
+   "nom": "Dewi Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7915886,110.3643358",
+   "lat": -7.7915886,
+   "lng": 110.3643358,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7915886,110.3643358",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Puntodewo Yogyakarta",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7935616,110.3632404",
+   "lat": -7.7935616,
+   "lng": 110.3632404,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7935616,110.3632404",
+   "source": "osm"
+  },
+  {
+   "nom": "Yogyakarta BnB",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7966198,110.362985",
+   "lat": -7.7966198,
+   "lng": 110.362985,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.instagram.com/yogyakartabnb",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Trim",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7901871,110.3656573",
+   "lat": -7.7901871,
+   "lng": 110.3656573,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7901871,110.3656573",
+   "source": "osm"
+  },
+  {
+   "nom": "KHAS Malioboro Hotel Yogyakarta",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7982602,110.3633045",
+   "lat": -7.7982602,
+   "lng": 110.3633045,
+   "halalFriendly": false,
+   "bookingUrl": "https://khashotels.com/hotels/Khas-Malioboro",
+   "source": "osm"
+  },
+  {
+   "nom": "Aura Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7915514,110.3641233",
+   "lat": -7.7915514,
+   "lng": 110.3641233,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7915514,110.3641233",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Sekar Ayu",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7889685,110.3709409",
+   "lat": -7.7889685,
+   "lng": 110.3709409,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7889685,110.3709409",
+   "source": "osm"
+  },
+  {
+   "nom": "Whiz Prime",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7901401,110.3652519",
+   "lat": -7.7901401,
+   "lng": 110.3652519,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7901401,110.3652519",
+   "source": "osm"
+  },
+  {
+   "nom": "Patra Malioboro",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7917023,110.3637417",
+   "lat": -7.7917023,
+   "lng": 110.3637417,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7917023,110.3637417",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Dafam Fortuna Malioboro Yogyakarta",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7934678,110.3628573",
+   "lat": -7.7934678,
+   "lng": 110.3628573,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7934678,110.3628573",
+   "source": "osm"
+  },
+  {
+   "nom": "Kristina",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7938157,110.3626817",
+   "lat": -7.7938157,
+   "lng": 110.3626817,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7938157,110.3626817",
+   "source": "osm"
+  },
+  {
+   "nom": "Mulia Kencana",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7900026,110.3651716",
+   "lat": -7.7900026,
+   "lng": 110.3651716,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7900026,110.3651716",
+   "source": "osm"
+  },
+  {
+   "nom": "Puri Pangeran Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.8006644,110.3744796",
+   "lat": -7.8006644,
+   "lng": 110.3744796,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.8006644,110.3744796",
+   "source": "osm"
+  },
+  {
+   "nom": "Losmen Rizki",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7911654,110.3639277",
+   "lat": -7.7911654,
+   "lng": 110.3639277,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7911654,110.3639277",
+   "source": "osm"
+  },
+  {
+   "nom": "Losmen Red Palm",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7909201,110.3640396",
+   "lat": -7.7909201,
+   "lng": 110.3640396,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7909201,110.3640396",
+   "source": "osm"
+  },
+  {
+   "nom": "Anda Losmen",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7907431,110.3641136",
+   "lat": -7.7907431,
+   "lng": 110.3641136,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7907431,110.3641136",
+   "source": "osm"
+  },
+  {
+   "nom": "1001Malam",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.790704,110.3641061",
+   "lat": -7.790704,
+   "lng": 110.3641061,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.790704,110.3641061",
+   "source": "osm"
+  },
+  {
+   "nom": "Lotus Losmen",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7911289,110.3637267",
+   "lat": -7.7911289,
+   "lng": 110.3637267,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7911289,110.3637267",
+   "source": "osm"
+  },
+  {
+   "nom": "Penginapan Kunthi",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7937405,110.3623713",
+   "lat": -7.7937405,
+   "lng": 110.3623713,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7937405,110.3623713",
+   "source": "osm"
+  },
+  {
+   "nom": "Neo",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7901002,110.3646434",
+   "lat": -7.7901002,
+   "lng": 110.3646434,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7901002,110.3646434",
+   "source": "osm"
+  },
+  {
+   "nom": "Selarus Inn",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7916981,110.3632016",
+   "lat": -7.7916981,
+   "lng": 110.3632016,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7916981,110.3632016",
+   "source": "osm"
+  },
+  {
+   "nom": "Losmen Utar",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7910251,110.3636114",
+   "lat": -7.7910251,
+   "lng": 110.3636114,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7910251,110.3636114",
+   "source": "osm"
+  },
+  {
+   "nom": "Betty losmen",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7909254,110.3636914",
+   "lat": -7.7909254,
+   "lng": 110.3636914,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7909254,110.3636914",
+   "source": "osm"
+  },
+  {
+   "nom": "Malioboro Suites",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7901957,110.3643738",
+   "lat": -7.7901957,
+   "lng": 110.3643738,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7901957,110.3643738",
+   "source": "osm"
+  },
+  {
+   "nom": "Royal Malioboro",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.790026,110.3644978",
+   "lat": -7.790026,
+   "lng": 110.3644978,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.790026,110.3644978",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Family",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7917408,110.3630278",
+   "lat": -7.7917408,
+   "lng": 110.3630278,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7917408,110.3630278",
+   "source": "osm"
+  },
+  {
+   "nom": "Selaras Inn Hotel Yogyakarta",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7916775,110.3630563",
+   "lat": -7.7916775,
+   "lng": 110.3630563,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7916775,110.3630563",
+   "source": "osm"
+  },
+  {
+   "nom": "Andrea hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.790417,110.364036",
+   "lat": -7.790417,
+   "lng": 110.364036,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.790417,110.364036",
+   "source": "osm"
+  },
+  {
+   "nom": "Khresna Guesthouse Yogyakarta",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7900106,110.3641715",
+   "lat": -7.7900106,
+   "lng": 110.3641715,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7900106,110.3641715",
+   "source": "osm"
+  },
+  {
+   "nom": "Wisma Ratih",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7886629,110.3660913",
+   "lat": -7.7886629,
+   "lng": 110.3660913,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7886629,110.3660913",
+   "source": "osm"
+  },
+  {
+   "nom": "Oryza Hotel Yogyakarta",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7917536,110.3627136",
+   "lat": -7.7917536,
+   "lng": 110.3627136,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7917536,110.3627136",
+   "source": "osm"
+  },
+  {
+   "nom": "Grand Puri Saron Hotel Malioboro",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7914002,110.362894",
+   "lat": -7.7914002,
+   "lng": 110.362894,
+   "halalFriendly": false,
+   "bookingUrl": "www.grandpurisaronyogya.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Asia Afrika",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7900951,110.3638906",
+   "lat": -7.7900951,
+   "lng": 110.3638906,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7900951,110.3638906",
+   "source": "osm"
+  },
+  {
+   "nom": "Maranatha Grand Hotel Yogyakarta",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7934426,110.3618619",
+   "lat": -7.7934426,
+   "lng": 110.3618619,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7934426,110.3618619",
+   "source": "osm"
+  },
+  {
+   "nom": "Bladok Losmen & Restaurant",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7914057,110.3627707",
+   "lat": -7.7914057,
+   "lng": 110.3627707,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7914057,110.3627707",
+   "source": "osm"
+  },
+  {
+   "nom": "Unisi",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7901426,110.3636882",
+   "lat": -7.7901426,
+   "lng": 110.3636882,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7901426,110.3636882",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Bhinneka Yogyakarta",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7883185,110.3661191",
+   "lat": -7.7883185,
+   "lng": 110.3661191,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7883185,110.3661191",
+   "source": "osm"
+  },
+  {
+   "nom": "Karunia",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.791396,110.3625591",
+   "lat": -7.791396,
+   "lng": 110.3625591,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.791396,110.3625591",
+   "source": "osm"
+  },
+  {
+   "nom": "Ibis Styles",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7938427,110.3615091",
+   "lat": -7.7938427,
+   "lng": 110.3615091,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7938427,110.3615091",
+   "source": "osm"
+  },
+  {
+   "nom": "Cordela Hotel Kartika Dewi Yogyakarta",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7983425,110.3617756",
+   "lat": -7.7983425,
+   "lng": 110.3617756,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7983425,110.3617756",
+   "source": "osm"
+  },
+  {
+   "nom": "Abadi Hotel Malioboro",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7903054,110.3632335",
+   "lat": -7.7903054,
+   "lng": 110.3632335,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7903054,110.3632335",
+   "source": "osm"
+  },
+  {
+   "nom": "Ndalem Kotabaru",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.788263,110.3731828",
+   "lat": -7.788263,
+   "lng": 110.3731828,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.788263,110.3731828",
+   "source": "osm"
+  },
+  {
+   "nom": "Mitra Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€",
+   "score": 1,
+   "mapsUrl": "https://maps.google.com/?q=-7.801518,110.3637574",
+   "lat": -7.801518,
+   "lng": 110.3637574,
+   "halalFriendly": false,
+   "bookingUrl": "http://mitrahotelyogya.blogspot.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "The Cabin",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7932823,110.361529",
+   "lat": -7.7932823,
+   "lng": 110.361529,
+   "halalFriendly": false,
+   "bookingUrl": "http://thecabinhoteljogja.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Grage",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7912931,110.3623137",
+   "lat": -7.7912931,
+   "lng": 110.3623137,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7912931,110.3623137",
+   "source": "osm"
+  },
+  {
+   "nom": "Omah Watu Homestay",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7914677,110.3621837",
+   "lat": -7.7914677,
+   "lng": 110.3621837,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7914677,110.3621837",
+   "source": "osm"
+  },
+  {
+   "nom": "Grand Zuri Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7876363,110.3669214",
+   "lat": -7.7876363,
+   "lng": 110.3669214,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7876363,110.3669214",
+   "source": "osm"
+  },
+  {
+   "nom": "Cashlez Homestay",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7938555,110.3777841",
+   "lat": -7.7938555,
+   "lng": 110.3777841,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7938555,110.3777841",
+   "source": "osm"
+  },
+  {
+   "nom": "The Cabin Hotel Sutomo",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7969982,110.3778556",
+   "lat": -7.7969982,
+   "lng": 110.3778556,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7969982,110.3778556",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Graha Kinasih",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7872569,110.3706366",
+   "lat": -7.7872569,
+   "lng": 110.3706366,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7872569,110.3706366",
+   "source": "osm"
+  },
+  {
+   "nom": "Nusantara",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7900908,110.3629421",
+   "lat": -7.7900908,
+   "lng": 110.3629421,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7900908,110.3629421",
+   "source": "osm"
+  },
+  {
+   "nom": "Wakeup Homestay",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7914243,110.3619327",
+   "lat": -7.7914243,
+   "lng": 110.3619327,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7914243,110.3619327",
+   "source": "osm"
+  },
+  {
+   "nom": "Mataram",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7901868,110.3627603",
+   "lat": -7.7901868,
+   "lng": 110.3627603,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7901868,110.3627603",
+   "source": "osm"
+  },
+  {
+   "nom": "Jasmine Heritage Homestay",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.8041651,110.3706682",
+   "lat": -7.8041651,
+   "lng": 110.3706682,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.8041651,110.3706682",
+   "source": "osm"
+  },
+  {
+   "nom": "Pop Hotel Malioboro",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7906829,110.3621681",
+   "lat": -7.7906829,
+   "lng": 110.3621681,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7906829,110.3621681",
+   "source": "osm"
+  },
+  {
+   "nom": "Berlian",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7900422,110.3626117",
+   "lat": -7.7900422,
+   "lng": 110.3626117,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7900422,110.3626117",
+   "source": "osm"
+  },
+  {
+   "nom": "Arrayan",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.8002857,110.3619105",
+   "lat": -7.8002857,
+   "lng": 110.3619105,
+   "halalFriendly": false,
+   "bookingUrl": "https://ibe.channex.io/arrayanhotelmalioboro",
+   "source": "osm"
+  },
+  {
+   "nom": "Prima In Hotel Malioboro Yogyakarta",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7911621,110.3617311",
+   "lat": -7.7911621,
+   "lng": 110.3617311,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7911621,110.3617311",
+   "source": "osm"
+  },
+  {
+   "nom": "The Cabin Hotel Bhayangkara",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.8004658,110.3619238",
+   "lat": -7.8004658,
+   "lng": 110.3619238,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.8004658,110.3619238",
+   "source": "osm"
+  },
+  {
+   "nom": "Arte Hotel Yogyakarta",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.7900307,110.3622581",
+   "lat": -7.7900307,
+   "lng": 110.3622581,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-7.7900307,110.3622581",
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Freedom Batik Art Exposition",
+   "lat": -7.7942302,
+   "lng": 110.365011,
+   "coordonnees": {
+    "lat": -7.7942302,
+    "lng": 110.365011
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=-7.7942302,110.365011",
+   "source": "osm"
+  },
+  {
+   "nom": "Monumen Adipura",
+   "lat": -7.7904143,
+   "lng": 110.3684772,
+   "coordonnees": {
+    "lat": -7.7904143,
+    "lng": 110.3684772
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-7.7904143,110.3684772",
+   "source": "osm"
+  },
+  {
+   "nom": "Katrol Taman Pintar",
+   "lat": -7.8009251,
+   "lng": 110.3676488,
+   "coordonnees": {
+    "lat": -7.8009251,
+    "lng": 110.3676488
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-7.8009251,110.3676488",
+   "source": "osm"
+  },
+  {
+   "nom": "Monumen Stasiun Yogyakarta",
+   "lat": -7.7892837,
+   "lng": 110.3660322,
+   "coordonnees": {
+    "lat": -7.7892837,
+    "lng": 110.3660322
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-7.7892837,110.3660322",
+   "source": "osm"
+  },
+  {
+   "nom": "Tugu Nol Yogyakarta",
+   "lat": -7.8012476,
+   "lng": 110.3649326,
+   "coordonnees": {
+    "lat": -7.8012476,
+    "lng": 110.3649326
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-7.8012476,110.3649326",
+   "source": "osm"
+  },
+  {
+   "nom": "Sanapati Monument",
+   "lat": -7.788184,
+   "lng": 110.3715672,
+   "coordonnees": {
+    "lat": -7.788184,
+    "lng": 110.3715672
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-7.788184,110.3715672",
+   "source": "osm"
+  },
+  {
+   "nom": "Batik Museum",
+   "lat": -7.795401,
+   "lng": 110.3773503,
+   "coordonnees": {
+    "lat": -7.795401,
+    "lng": 110.3773503
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=-7.795401,110.3773503",
+   "source": "osm"
+  },
+  {
+   "nom": "Pelataran Arca",
+   "lat": -7.8009605,
+   "lng": 110.3635119,
+   "coordonnees": {
+    "lat": -7.8009605,
+    "lng": 110.3635119
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-7.8009605,110.3635119",
+   "source": "osm"
+  },
+  {
+   "nom": "Purnomo Batik art group (likely scam)",
+   "lat": -7.7946327,
+   "lng": 110.3609039,
+   "coordonnees": {
+    "lat": -7.7946327,
+    "lng": 110.3609039
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=-7.7946327,110.3609039",
+   "source": "osm"
+  },
+  {
+   "nom": "Ruang Terbuka Hijau",
+   "lat": -7.7992504,
+   "lng": 110.3786323,
+   "coordonnees": {
+    "lat": -7.7992504,
+    "lng": 110.3786323
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=-7.7992504,110.3786323",
+   "source": "osm"
+  },
+  {
+   "nom": "Monument Serbuan Kotabaru",
+   "lat": -7.7876188,
+   "lng": 110.3762419,
+   "coordonnees": {
+    "lat": -7.7876188,
+    "lng": 110.3762419
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-7.7876188,110.3762419",
+   "source": "osm"
+  },
+  {
+   "nom": "Percabangan nonaktif jalur kereta Yogyakarta-Secang",
+   "lat": -7.7888128,
+   "lng": 110.3607078,
+   "coordonnees": {
+    "lat": -7.7888128,
+    "lng": 110.3607078
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-7.7888128,110.3607078",
+   "source": "osm"
+  },
+  {
+   "nom": "Tugu Pal Putih Yogyakarta",
+   "lat": -7.7829099,
+   "lng": 110.3670713,
+   "coordonnees": {
+    "lat": -7.7829099,
+    "lng": 110.3670713
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-7.7829099,110.3670713",
+   "source": "osm"
+  },
+  {
+   "nom": "Museum Dewantara Kirti Griya",
+   "lat": -7.8054562,
+   "lng": 110.3784127,
+   "coordonnees": {
+    "lat": -7.8054562,
+    "lng": 110.3784127
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=-7.8054562,110.3784127",
+   "source": "osm"
+  },
+  {
+   "nom": "Walk Path",
+   "lat": -7.7951105,
+   "lng": 110.3561224,
+   "coordonnees": {
+    "lat": -7.7951105,
+    "lng": 110.3561224
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-7.7951105,110.3561224",
+   "source": "osm"
+  },
+  {
+   "nom": "Patung Polisi",
+   "lat": -7.7828897,
+   "lng": 110.3748741,
+   "coordonnees": {
+    "lat": -7.7828897,
+    "lng": 110.3748741
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-7.7828897,110.3748741",
+   "source": "osm"
+  },
+  {
+   "nom": "Museum Sidik Martowidjojo",
+   "lat": -7.8084912,
+   "lng": 110.3629211,
+   "coordonnees": {
+    "lat": -7.8084912,
+    "lng": 110.3629211
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=-7.8084912,110.3629211",
+   "source": "osm"
+  },
+  {
+   "nom": "Kusumanegara Cemetery",
+   "lat": -7.8023299,
+   "lng": 110.3828135,
+   "coordonnees": {
+    "lat": -7.8023299,
+    "lng": 110.3828135
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-7.8023299,110.3828135",
+   "source": "osm"
+  },
+  {
+   "nom": "Puppet workshop",
+   "lat": -7.808758,
+   "lng": 110.3621185,
+   "coordonnees": {
+    "lat": -7.808758,
+    "lng": 110.3621185
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-7.808758,110.3621185",
+   "source": "osm"
+  },
+  {
+   "nom": "Pulo Kenanga (highest building in Tamansari, ruins)",
+   "lat": -7.8079032,
+   "lng": 110.3605495,
+   "coordonnees": {
+    "lat": -7.8079032,
+    "lng": 110.3605495
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=-7.8079032,110.3605495",
+   "source": "osm"
+  },
+  {
+   "nom": "Museum RS Mata Dr Yap Prawirohusodo",
+   "lat": -7.7806873,
+   "lng": 110.3749667,
+   "coordonnees": {
+    "lat": -7.7806873,
+    "lng": 110.3749667
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=-7.7806873,110.3749667",
+   "source": "osm"
+  },
+  {
+   "nom": "Museum Ki Amri Yahya",
+   "lat": -7.7992032,
+   "lng": 110.3538235,
+   "coordonnees": {
+    "lat": -7.7992032,
+    "lng": 110.3538235
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=-7.7992032,110.3538235",
+   "source": "osm"
+  },
+  {
+   "nom": "Taman Kadipaten",
+   "lat": -7.8050847,
+   "lng": 110.3565327,
+   "coordonnees": {
+    "lat": -7.8050847,
+    "lng": 110.3565327
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=-7.8050847,110.3565327",
+   "source": "osm"
+  },
+  {
+   "nom": "Kalpiko Batik course",
+   "lat": -7.8080269,
+   "lng": 110.359279,
+   "coordonnees": {
+    "lat": -7.8080269,
+    "lng": 110.359279
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-7.8080269,110.359279",
+   "source": "osm"
+  },
+  {
+   "nom": "Jogja National Museum",
+   "lat": -7.8000614,
+   "lng": 110.3532393,
+   "coordonnees": {
+    "lat": -7.8000614,
+    "lng": 110.3532393
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=-7.8000614,110.3532393",
+   "source": "osm"
+  },
+  {
+   "nom": "Gapura Langenastran Lor Alun Alun Kidul Yogyakarta",
+   "lat": -7.8115257,
+   "lng": 110.3639968,
+   "coordonnees": {
+    "lat": -7.8115257,
+    "lng": 110.3639968
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-7.8115257,110.3639968",
+   "source": "osm"
+  },
+  {
+   "nom": "Taman Sari Water Castle",
+   "lat": -7.8100524,
+   "lng": 110.3592071,
+   "coordonnees": {
+    "lat": -7.8100524,
+    "lng": 110.3592071
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=-7.8100524,110.3592071",
+   "source": "osm"
+  },
+  {
+   "nom": "Pengrajin Wayang",
+   "lat": -7.8121824,
+   "lng": 110.3621062,
+   "coordonnees": {
+    "lat": -7.8121824,
+    "lng": 110.3621062
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-7.8121824,110.3621062",
+   "source": "osm"
+  },
+  {
+   "nom": "Museum Pangeran Diponegoro",
+   "lat": -7.7872136,
+   "lng": 110.351519,
+   "coordonnees": {
+    "lat": -7.7872136,
+    "lng": 110.351519
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=-7.7872136,110.351519",
+   "source": "osm"
+  },
+  {
+   "nom": "Ruang MES 56",
+   "lat": -7.8117665,
+   "lng": 110.3577233,
+   "coordonnees": {
+    "lat": -7.8117665,
+    "lng": 110.3577233
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=-7.8117665,110.3577233",
+   "source": "osm"
+  },
+  {
+   "nom": "Lapangan Segoro Amarto",
+   "lat": -7.7800874,
+   "lng": 110.3563324,
+   "coordonnees": {
+    "lat": -7.7800874,
+    "lng": 110.3563324
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=-7.7800874,110.3563324",
+   "source": "osm"
+  },
+  {
+   "nom": "Museum Kapal",
+   "lat": -7.8012112,
+   "lng": 110.3496168,
+   "coordonnees": {
+    "lat": -7.8012112,
+    "lng": 110.3496168
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=-7.8012112,110.3496168",
+   "source": "osm"
+  },
+  {
+   "nom": "Bundaran UGM",
+   "lat": -7.776005,
+   "lng": 110.376065,
+   "coordonnees": {
+    "lat": -7.776005,
+    "lng": 110.376065
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-7.776005,110.376065",
+   "source": "osm"
+  },
+  {
+   "nom": "Museum Perjuangan Yogyakarta",
+   "lat": -7.8164513,
+   "lng": 110.3718671,
+   "coordonnees": {
+    "lat": -7.8164513,
+    "lng": 110.3718671
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=-7.8164513,110.3718671",
+   "source": "osm"
+  },
+  {
+   "nom": "Tenda Biru Art House",
+   "lat": -7.8171239,
+   "lng": 110.363579,
+   "coordonnees": {
+    "lat": -7.8171239,
+    "lng": 110.363579
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=-7.8171239,110.363579",
+   "source": "osm"
+  },
+  {
+   "nom": "street art",
+   "lat": -7.8183736,
+   "lng": 110.3655415,
+   "coordonnees": {
+    "lat": -7.8183736,
+    "lng": 110.3655415
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-7.8183736,110.3655415",
+   "source": "osm"
+  },
+  {
+   "nom": "Cemeti - Institute for Art and Society",
+   "lat": -7.8176545,
+   "lng": 110.3623894,
+   "coordonnees": {
+    "lat": -7.8176545,
+    "lng": 110.3623894
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=-7.8176545,110.3623894",
+   "source": "osm"
+  },
+  {
+   "nom": "Museum UGM",
+   "lat": -7.7738342,
+   "lng": 110.3779852,
+   "coordonnees": {
+    "lat": -7.7738342,
+    "lng": 110.3779852
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=-7.7738342,110.3779852",
+   "source": "osm"
+  },
+  {
+   "nom": "Tirtodipuran Link Building B",
+   "lat": -7.8188868,
+   "lng": 110.3647112,
+   "coordonnees": {
+    "lat": -7.8188868,
+    "lng": 110.3647112
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=-7.8188868,110.3647112",
+   "source": "osm"
+  },
+  {
+   "nom": "Langgeng Art Foundation",
+   "lat": -7.8179393,
+   "lng": 110.3595464,
+   "coordonnees": {
+    "lat": -7.8179393,
+    "lng": 110.3595464
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=-7.8179393,110.3595464",
+   "source": "osm"
+  },
+  {
+   "nom": "Batas Kota Yogyakarta",
+   "lat": -7.7831166,
+   "lng": 110.3912186,
+   "coordonnees": {
+    "lat": -7.7831166,
+    "lng": 110.3912186
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-7.7831166,110.3912186",
+   "source": "osm"
+  },
+  {
+   "nom": "Mandala Majapahit UGM",
+   "lat": -7.7723253,
+   "lng": 110.3790753,
+   "coordonnees": {
+    "lat": -7.7723253,
+    "lng": 110.3790753
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=-7.7723253,110.3790753",
+   "source": "osm"
+  },
+  {
+   "nom": "Krack!",
+   "lat": -7.8199003,
+   "lng": 110.3614894,
+   "coordonnees": {
+    "lat": -7.8199003,
+    "lng": 110.3614894
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-7.8199003,110.3614894",
+   "source": "osm"
+  },
+  {
+   "nom": "Bio-Paleoanthropology Museum",
+   "lat": -7.7704411,
+   "lng": 110.3753765,
+   "coordonnees": {
+    "lat": -7.7704411,
+    "lng": 110.3753765
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=-7.7704411,110.3753765",
+   "source": "osm"
+  },
+  {
+   "nom": "Patung Kembara UNY",
+   "lat": -7.7768932,
+   "lng": 110.3876086,
+   "coordonnees": {
+    "lat": -7.7768932,
+    "lng": 110.3876086
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-7.7768932,110.3876086",
+   "source": "osm"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "Masjid Sholihin",
+   "lat": -7.7940693,
+   "lng": 110.3660394,
+   "coordonnees": {
+    "lat": -7.7940693,
+    "lng": 110.3660394
+   },
+   "mapsUrl": "https://maps.google.com/?q=-7.7940693,110.3660394",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Assalam",
+   "lat": -7.7997786,
+   "lng": 110.3733273,
+   "coordonnees": {
+    "lat": -7.7997786,
+    "lng": 110.3733273
+   },
+   "mapsUrl": "https://maps.google.com/?q=-7.7997786,110.3733273",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Faridan M Noto",
+   "lat": -7.8009796,
+   "lng": 110.3719728,
+   "coordonnees": {
+    "lat": -7.8009796,
+    "lng": 110.3719728
+   },
+   "mapsUrl": "https://maps.google.com/?q=-7.8009796,110.3719728",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid KH. Ahmad Dahlan",
+   "lat": -7.8018182,
+   "lng": 110.3735297,
+   "coordonnees": {
+    "lat": -7.8018182,
+    "lng": 110.3735297
+   },
+   "mapsUrl": "https://maps.google.com/?q=-7.8018182,110.3735297",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid At-Tauhid Bintaran",
+   "lat": -7.802593,
+   "lng": 110.3725944,
+   "coordonnees": {
+    "lat": -7.802593,
+    "lng": 110.3725944
+   },
+   "mapsUrl": "https://maps.google.com/?q=-7.802593,110.3725944",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Danoedjo As-Sudairi",
+   "lat": -7.7940102,
+   "lng": 110.3611832,
+   "coordonnees": {
+    "lat": -7.7940102,
+    "lng": 110.3611832
+   },
+   "mapsUrl": "https://maps.google.com/?q=-7.7940102,110.3611832",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Margoyoso",
+   "lat": -7.8023901,
+   "lng": 110.3764132,
+   "coordonnees": {
+    "lat": -7.8023901,
+    "lng": 110.3764132
+   },
+   "mapsUrl": "https://maps.google.com/?q=-7.8023901,110.3764132",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Al Maa'uun",
+   "lat": -7.7950253,
+   "lng": 110.3593797,
+   "coordonnees": {
+    "lat": -7.7950253,
+    "lng": 110.3593797
+   },
+   "adresse": "Sutodirjan, Yogyakarta",
+   "mapsUrl": "https://maps.google.com/?q=-7.7950253,110.3593797",
+   "source": "osm"
+  },
+  {
+   "nom": "SD Muhammadiyah Suranatan",
+   "lat": -7.8021638,
+   "lng": 110.3600529,
+   "coordonnees": {
+    "lat": -7.8021638,
+    "lng": 110.3600529
+   },
+   "adresse": "Jalan Taqwa, Yogyakarta",
+   "mapsUrl": "https://maps.google.com/?q=-7.8021638,110.3600529",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Taqwa",
+   "lat": -7.8026633,
+   "lng": 110.3594441,
+   "coordonnees": {
+    "lat": -7.8026633,
+    "lng": 110.3594441
+   },
+   "adresse": "Jalan Taqwa, Yogyakarta",
+   "mapsUrl": "https://maps.google.com/?q=-7.8026633,110.3594441",
+   "source": "osm"
+  },
+  {
+   "nom": "masjid baitul hikmah",
+   "lat": -7.78335,
+   "lng": 110.3701463,
+   "coordonnees": {
+    "lat": -7.78335,
+    "lng": 110.3701463
+   },
+   "mapsUrl": "https://maps.google.com/?q=-7.78335,110.3701463",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Al Amiin",
+   "lat": -7.7953202,
+   "lng": 110.3563757,
+   "coordonnees": {
+    "lat": -7.7953202,
+    "lng": 110.3563757
+   },
+   "adresse": "Notoyudan, Yogyakarta",
+   "mapsUrl": "https://maps.google.com/?q=-7.7953202,110.3563757",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Ar-Rohmah",
+   "lat": -7.7999304,
+   "lng": 110.3565483,
+   "coordonnees": {
+    "lat": -7.7999304,
+    "lng": 110.3565483
+   },
+   "mapsUrl": "https://maps.google.com/?q=-7.7999304,110.3565483",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Piri",
+   "lat": -7.7939236,
+   "lng": 110.3831448,
+   "coordonnees": {
+    "lat": -7.7939236,
+    "lng": 110.3831448
+   },
+   "mapsUrl": "https://maps.google.com/?q=-7.7939236,110.3831448",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Baitul Hikmah Gondolayu Lor",
+   "lat": -7.7814527,
+   "lng": 110.3703481,
+   "coordonnees": {
+    "lat": -7.7814527,
+    "lng": 110.3703481
+   },
+   "mapsUrl": "https://maps.google.com/?q=-7.7814527,110.3703481",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Baitul Qahhar",
+   "lat": -7.7819588,
+   "lng": 110.374815,
+   "coordonnees": {
+    "lat": -7.7819588,
+    "lng": 110.374815
+   },
+   "mapsUrl": "https://maps.google.com/?q=-7.7819588,110.374815",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid al hijrah",
+   "lat": -7.7859591,
+   "lng": 110.357419,
+   "coordonnees": {
+    "lat": -7.7859591,
+    "lng": 110.357419
+   },
+   "mapsUrl": "https://maps.google.com/?q=-7.7859591,110.357419",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Al Hikmah STPP Yogyakarta",
+   "lat": -7.8038188,
+   "lng": 110.3826843,
+   "coordonnees": {
+    "lat": -7.8038188,
+    "lng": 110.3826843
+   },
+   "adresse": "Jalan Kusumanegara, Yogyakarta",
+   "mapsUrl": "https://maps.google.com/?q=-7.8038188,110.3826843",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Kadipaten",
+   "lat": -7.8072222,
+   "lng": 110.3576627,
+   "coordonnees": {
+    "lat": -7.8072222,
+    "lng": 110.3576627
+   },
+   "mapsUrl": "https://maps.google.com/?q=-7.8072222,110.3576627",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Nurul Iman",
+   "lat": -7.7762227,
+   "lng": 110.3689698,
+   "coordonnees": {
+    "lat": -7.7762227,
+    "lng": 110.3689698
+   },
+   "mapsUrl": "https://maps.google.com/?q=-7.7762227,110.3689698",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Timuran",
+   "lat": -7.8156664,
+   "lng": 110.3702631,
+   "coordonnees": {
+    "lat": -7.8156664,
+    "lng": 110.3702631
+   },
+   "mapsUrl": "https://maps.google.com/?q=-7.8156664,110.3702631",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Ngadinegaran",
+   "lat": -7.8156095,
+   "lng": 110.3628064,
+   "coordonnees": {
+    "lat": -7.8156095,
+    "lng": 110.3628064
+   },
+   "mapsUrl": "https://maps.google.com/?q=-7.8156095,110.3628064",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Munawwarah",
+   "lat": -7.7769104,
+   "lng": 110.3586087,
+   "coordonnees": {
+    "lat": -7.7769104,
+    "lng": 110.3586087
+   },
+   "adresse": "Jalan Kricak Kidul, Kota Yogyakarta",
+   "mapsUrl": "https://maps.google.com/?q=-7.7769104,110.3586087",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Al Ihsan",
+   "lat": -7.8098635,
+   "lng": 110.3525212,
+   "coordonnees": {
+    "lat": -7.8098635,
+    "lng": 110.3525212
+   },
+   "mapsUrl": "https://maps.google.com/?q=-7.8098635,110.3525212",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Tamtama",
+   "lat": -7.8186873,
+   "lng": 110.3705881,
+   "coordonnees": {
+    "lat": -7.8186873,
+    "lng": 110.3705881
+   },
+   "mapsUrl": "https://maps.google.com/?q=-7.8186873,110.3705881",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Komaruddin",
+   "lat": -7.8177616,
+   "lng": 110.3601978,
+   "coordonnees": {
+    "lat": -7.8177616,
+    "lng": 110.3601978
+   },
+   "mapsUrl": "https://maps.google.com/?q=-7.8177616,110.3601978",
+   "source": "osm"
+  },
+  {
+   "nom": "Musholla",
+   "lat": -7.7750487,
+   "lng": 110.3821908,
+   "coordonnees": {
+    "lat": -7.7750487,
+    "lng": 110.3821908
+   },
+   "mapsUrl": "https://maps.google.com/?q=-7.7750487,110.3821908",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Al Hidayah",
+   "lat": -7.7753382,
+   "lng": 110.3555908,
+   "coordonnees": {
+    "lat": -7.7753382,
+    "lng": 110.3555908
+   },
+   "mapsUrl": "https://maps.google.com/?q=-7.7753382,110.3555908",
+   "source": "osm"
+  },
+  {
+   "nom": "Mushola Al Adab FIB",
+   "lat": -7.7720726,
+   "lng": 110.3794074,
+   "coordonnees": {
+    "lat": -7.7720726,
+    "lng": 110.3794074
+   },
+   "mapsUrl": "https://maps.google.com/?q=-7.7720726,110.3794074",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Babul Jannah",
+   "lat": -7.8180572,
+   "lng": 110.3567272,
+   "coordonnees": {
+    "lat": -7.8180572,
+    "lng": 110.3567272
+   },
+   "mapsUrl": "https://maps.google.com/?q=-7.8180572,110.3567272",
+   "source": "osm"
+  },
+  {
+   "nom": "Mushola Psikologi",
+   "lat": -7.7716744,
+   "lng": 110.3798218,
+   "coordonnees": {
+    "lat": -7.7716744,
+    "lng": 110.3798218
+   },
+   "mapsUrl": "https://maps.google.com/?q=-7.7716744,110.3798218",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Baitul A'la LDII",
+   "lat": -7.8155196,
+   "lng": 110.3518785,
+   "coordonnees": {
+    "lat": -7.8155196,
+    "lng": 110.3518785
+   },
+   "adresse": "Jalan Semar Gumuk Indah",
+   "mapsUrl": "https://maps.google.com/?q=-7.8155196,110.3518785",
+   "source": "osm"
+  },
+  {
+   "nom": "Mushola Filsafat",
+   "lat": -7.7709774,
+   "lng": 110.3799338,
+   "coordonnees": {
+    "lat": -7.7709774,
+    "lng": 110.3799338
+   },
+   "mapsUrl": "https://maps.google.com/?q=-7.7709774,110.3799338",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid An-Nurrahman Gumuk Indah",
+   "lat": -7.8158353,
+   "lng": 110.3518386,
+   "coordonnees": {
+    "lat": -7.8158353,
+    "lng": 110.3518386
+   },
+   "mapsUrl": "https://maps.google.com/?q=-7.8158353,110.3518386",
+   "source": "osm"
+  },
+  {
+   "nom": "Mushola FEB UGM",
+   "lat": -7.7702835,
+   "lng": 110.3788878,
+   "coordonnees": {
+    "lat": -7.7702835,
+    "lng": 110.3788878
+   },
+   "mapsUrl": "https://maps.google.com/?q=-7.7702835,110.3788878",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Al Akdhor",
+   "lat": -7.821925,
+   "lng": 110.3755889,
+   "coordonnees": {
+    "lat": -7.821925,
+    "lng": 110.3755889
+   },
+   "mapsUrl": "https://maps.google.com/?q=-7.821925,110.3755889",
+   "source": "osm"
+  },
+  {
+   "nom": "Laboratorium Agama Masjid UIN Sunan Kalijaga",
+   "lat": -7.7847029,
+   "lng": 110.3944564,
+   "coordonnees": {
+    "lat": -7.7847029,
+    "lng": 110.3944564
+   },
+   "mapsUrl": "https://maps.google.com/?q=-7.7847029,110.3944564",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Al Falaah Blunyah Gede",
+   "lat": -7.768555,
+   "lng": 110.3683479,
+   "coordonnees": {
+    "lat": -7.768555,
+    "lng": 110.3683479
+   },
+   "adresse": "JL. AM Sangaji, Sleman",
+   "mapsUrl": "https://maps.google.com/?q=-7.768555,110.3683479",
+   "source": "osm"
+  },
+  {
+   "nom": "Mushola GSP",
+   "lat": -7.769874,
+   "lng": 110.3781297,
+   "coordonnees": {
+    "lat": -7.769874,
+    "lng": 110.3781297
+   },
+   "mapsUrl": "https://maps.google.com/?q=-7.769874,110.3781297",
+   "source": "osm"
+  },
+  {
+   "nom": "Mushola Al Rolam",
+   "lat": -7.7749526,
+   "lng": 110.38761,
+   "coordonnees": {
+    "lat": -7.7749526,
+    "lng": 110.38761
+   },
+   "mapsUrl": "https://maps.google.com/?q=-7.7749526,110.38761",
+   "source": "osm"
+  },
+  {
+   "nom": "Mushola",
+   "lat": -7.7734672,
+   "lng": 110.3857478,
+   "coordonnees": {
+    "lat": -7.7734672,
+    "lng": 110.3857478
+   },
+   "mapsUrl": "https://maps.google.com/?q=-7.7734672,110.3857478",
+   "source": "osm"
+  },
+  {
+   "nom": "The Mushola",
+   "lat": -7.8175035,
+   "lng": 110.3528631,
+   "coordonnees": {
+    "lat": -7.8175035,
+    "lng": 110.3528631
+   },
+   "mapsUrl": "https://maps.google.com/?q=-7.8175035,110.3528631",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Al Asel",
+   "lat": -7.7885143,
+   "lng": 110.3416133,
+   "coordonnees": {
+    "lat": -7.7885143,
+    "lng": 110.3416133
+   },
+   "mapsUrl": "https://maps.google.com/?q=-7.7885143,110.3416133",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Al Jami",
+   "lat": -7.8116243,
+   "lng": 110.3935784,
+   "coordonnees": {
+    "lat": -7.8116243,
+    "lng": 110.3935784
+   },
+   "mapsUrl": "https://maps.google.com/?q=-7.8116243,110.3935784",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Pathok Negara",
+   "lat": -7.798628,
+   "lng": 110.3991561,
+   "coordonnees": {
+    "lat": -7.798628,
+    "lng": 110.3991561
+   },
+   "mapsUrl": "https://maps.google.com/?q=-7.798628,110.3991561",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Al-Hidayah",
+   "lat": -7.7813801,
+   "lng": 110.396239,
+   "coordonnees": {
+    "lat": -7.7813801,
+    "lng": 110.396239
+   },
+   "adresse": "Jalan Ori I, Yogyakarta",
+   "mapsUrl": "https://maps.google.com/?q=-7.7813801,110.396239",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Pangeran Diponegoro",
+   "lat": -7.7772707,
+   "lng": 110.3453076,
+   "coordonnees": {
+    "lat": -7.7772707,
+    "lng": 110.3453076
+   },
+   "mapsUrl": "https://maps.google.com/?q=-7.7772707,110.3453076",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Al Ikhsan (Masjid Kehutanan UGM)",
+   "lat": -7.76714,
+   "lng": 110.380591,
+   "coordonnees": {
+    "lat": -7.76714,
+    "lng": 110.380591
+   },
+   "adresse": "Jalan Agro, Sleman",
+   "mapsUrl": "https://maps.google.com/?q=-7.76714,110.380591",
+   "source": "osm"
+  },
+  {
+   "nom": "kos",
+   "lat": -7.7659814,
+   "lng": 110.3613022,
+   "coordonnees": {
+    "lat": -7.7659814,
+    "lng": 110.3613022
+   },
+   "mapsUrl": "https://maps.google.com/?q=-7.7659814,110.3613022",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Nural Huda",
+   "lat": -7.8077488,
+   "lng": 110.3404108,
+   "coordonnees": {
+    "lat": -7.8077488,
+    "lng": 110.3404108
+   },
+   "mapsUrl": "https://maps.google.com/?q=-7.8077488,110.3404108",
+   "source": "osm"
+  }
+ ],
+ "tags": [
+  "culture",
+  "borobudur",
+  "unesco",
+  "batik",
+  "javanais",
+  "spirituel"
+ ],
+ "description_en": "Yogyakarta, in Indonesia, is a halal-friendly destination with a Halal Trust Score of 4.3/5. Muslim travelers will find 40 halal restaurants listed, 3,000 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
+ "metaDescription_en": "Halal guide to Yogyakarta: 40 halal restaurants listed, 3,000 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.3/5.",
+ "nom_en": "Yogyakarta",
+ "boucheries": [],
+ "infos_pratiques_en": {
+  "langue": "Indonesian, Javanais",
+  "monnaie": "Rupee (IDR)",
+  "meilleure_periode": "May to September",
+  "appel_priere": "5 times a day",
+  "nourriture_halal": "Largement disponible"
+ },
+ "dataPurgedAt": "2026-07-15"
 }

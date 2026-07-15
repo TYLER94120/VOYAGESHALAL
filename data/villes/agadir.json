@@ -1,2891 +1,1565 @@
 {
-  "slug": "agadir",
-  "nom": "Agadir",
-  "nom_arabe": "أكادير",
-  "pays": "Maroc",
-  "pays_slug": "maroc",
-  "drapeau": "🇲🇦",
-  "region": "Afrique du Nord",
-  "coordonnees": {
-    "lat": 30.4278,
-    "lng": -9.5981
+ "slug": "agadir",
+ "nom": "Agadir",
+ "nom_arabe": "أكادير",
+ "pays": "Maroc",
+ "pays_slug": "maroc",
+ "drapeau": "🇲🇦",
+ "region": "Afrique du Nord",
+ "coordonnees": {
+  "lat": 30.4278,
+  "lng": -9.5981
+ },
+ "score_halal": 4.1,
+ "score_securite": 5,
+ "score_famille": 5,
+ "score_budget": 4,
+ "description": {
+  "court": "La capitale balnéaire du Maroc, 300 jours de soleil par an",
+  "long": "Agadir est la station balnéaire la plus fréquentée du Maroc, réputée pour ses 300 jours de soleil annuels et ses 10 km de plage dorée. Reconstruite après le séisme de 1960, la ville moderne offre d'excellentes infrastructures touristiques. Pays à majorité musulmane, le halal est la norme. Idéale pour les familles, Agadir combine détente balnéaire, excursions dans la vallée du Souss et découverte de la culture amazigh (berbère)."
+ },
+ "statistiques": {
+  "mosquees": 1,
+  "restaurants_halal": 9,
+  "hotels_halal_friendly": 120,
+  "population": "700 000",
+  "hotels": 105
+ },
+ "infos_pratiques": {
+  "langue": "Arabe, Berbère (Tachelhit), Français",
+  "monnaie": "Dirham marocain (MAD)",
+  "fuseau_horaire": "GMT+1",
+  "meilleure_periode": "Toute l'année (meilleur : mars–mai, octobre–novembre)",
+  "visa": "Entrée libre pour ressortissants français, belges, canadiens",
+  "transport": "Taxi, bus, location de voiture recommandée"
+ },
+ "restaurants": [
+  {
+   "nom": "Etoile d'Agadir",
+   "lat": 30.424403,
+   "lng": -9.5932811,
+   "type": "international, moroccan",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=30.424403,-9.5932811",
+   "source": "osm"
   },
-  "score_halal": 4.1,
-  "score_securite": 5,
-  "score_famille": 5,
-  "score_budget": 4,
-  "description": {
-    "court": "La capitale balnéaire du Maroc, 300 jours de soleil par an",
-    "long": "Agadir est la station balnéaire la plus fréquentée du Maroc, réputée pour ses 300 jours de soleil annuels et ses 10 km de plage dorée. Reconstruite après le séisme de 1960, la ville moderne offre d'excellentes infrastructures touristiques. Pays à majorité musulmane, le halal est la norme. Idéale pour les familles, Agadir combine détente balnéaire, excursions dans la vallée du Souss et découverte de la culture amazigh (berbère)."
+  {
+   "nom": "Daffi Agadir",
+   "lat": 30.4226849,
+   "lng": -9.6019594,
+   "type": "moroccan",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=30.4226849,-9.6019594",
+   "source": "osm"
   },
-  "statistiques": {
-    "mosquees": 180,
-    "restaurants_halal": 800,
-    "hotels_halal_friendly": 120,
-    "population": "700 000",
-    "hotels": 108
+  {
+   "nom": "TACOS DE LYON",
+   "lat": 30.4181241,
+   "lng": -9.5954298,
+   "type": "mexican, turkish",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=30.4181241,-9.5954298",
+   "source": "osm"
   },
-  "infos_pratiques": {
-    "langue": "Arabe, Berbère (Tachelhit), Français",
-    "monnaie": "Dirham marocain (MAD)",
-    "fuseau_horaire": "GMT+1",
-    "meilleure_periode": "Toute l'année (meilleur : mars–mai, octobre–novembre)",
-    "visa": "Entrée libre pour ressortissants français, belges, canadiens",
-    "transport": "Taxi, bus, location de voiture recommandée"
+  {
+   "nom": "Restaurant/Bar LOCOLOCO",
+   "lat": 30.4183273,
+   "lng": -9.6038006,
+   "type": "pizza, burger, chicken, international, grill, wine, steak, cocktails, birthday, afterwork, regional, african, moroccan",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=30.4183273,-9.6038006",
+   "source": "osm"
   },
-  "restaurants": [
-    {
-      "nom": "La Scala Agadir",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.9,
-      "adresse": "Agadir",
-      "description": "Gastronomique vue port à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=La+Scala+Agadir+Agadir",
-      "priceRange": "€€€€",
-      "specialite": "Gastronomique vue port",
-      "nombreAvis": 1910,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r1",
-      "lat": 30.4205162,
-      "lng": -9.5838532,
-      "geocoded": true
-    },
-    {
-      "nom": "Le Jardin d'Agadir",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Agadir",
-      "description": "Franco-marocain halal à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Le+Jardin+d%27Agadir+Agadir",
-      "priceRange": "€€",
-      "specialite": "Franco-marocain halal",
-      "nombreAvis": 2161,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r2",
-      "lat": 30.4205162,
-      "lng": -9.5838532,
-      "geocoded": true
-    },
-    {
-      "nom": "Restaurant Jour et Nuit",
-      "type": "Cuisine française",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Agadir",
-      "description": "Brasserie 24h à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Jour+et+Nuit+Agadir",
-      "priceRange": "€€",
-      "specialite": "Brasserie 24h",
-      "nombreAvis": 67,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r3",
-      "lat": 30.4205162,
-      "lng": -9.5838532,
-      "geocoded": true
-    },
-    {
-      "nom": "Little Switzerland Agadir",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Agadir",
-      "description": "Fondues suisses halal à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Little+Switzerland+Agadir+Agadir",
-      "priceRange": "€€",
-      "specialite": "Fondues suisses halal",
-      "nombreAvis": 526,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r4",
-      "lat": 30.4205162,
-      "lng": -9.5838532,
-      "geocoded": true
-    },
-    {
-      "nom": "Mezzo di Pasta",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Agadir",
-      "description": "Italien halal à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Mezzo+di+Pasta+Agadir",
-      "priceRange": "€€",
-      "specialite": "Italien halal",
-      "nombreAvis": 2388,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r5",
-      "lat": 30.4205162,
-      "lng": -9.5838532,
-      "geocoded": true
-    },
-    {
-      "nom": "La Table d'Hôte",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Agadir",
-      "description": "Gourmet halal à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=La+Table+d%27H%C3%B4te+Agadir",
-      "priceRange": "€€",
-      "specialite": "Gourmet halal",
-      "nombreAvis": 1077,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r6",
-      "lat": 30.4205162,
-      "lng": -9.5838532,
-      "geocoded": true
-    },
-    {
-      "nom": "Pure Passion",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Agadir",
-      "description": "Brunch moderne halal à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Pure+Passion+Agadir",
-      "priceRange": "€€",
-      "specialite": "Brunch moderne halal",
-      "nombreAvis": 1565,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "veggie"
-      ],
-      "id": "r7",
-      "lat": 30.4205162,
-      "lng": -9.5838532,
-      "geocoded": true
-    },
-    {
-      "nom": "Tikka Café Agadir",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Agadir",
-      "description": "Indien halal à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Tikka+Caf%C3%A9+Agadir+Agadir",
-      "priceRange": "€€",
-      "specialite": "Indien halal",
-      "nombreAvis": 2150,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r8",
-      "lat": 30.4205162,
-      "lng": -9.5838532,
-      "geocoded": true
-    },
-    {
-      "nom": "Sushishop Agadir",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Agadir",
-      "description": "Japonais halal à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Sushishop+Agadir+Agadir",
-      "priceRange": "€€",
-      "specialite": "Japonais halal",
-      "nombreAvis": 362,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r9",
-      "lat": 30.4205162,
-      "lng": -9.5838532,
-      "geocoded": true
-    },
-    {
-      "nom": "Chinatown Agadir",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Agadir",
-      "description": "Chinois halal à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Chinatown+Agadir+Agadir",
-      "priceRange": "€€",
-      "specialite": "Chinois halal",
-      "nombreAvis": 1446,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r10",
-      "lat": 30.4205162,
-      "lng": -9.5838532,
-      "geocoded": true
-    },
-    {
-      "nom": "Restaurant Marina",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Agadir",
-      "description": "Port de plaisance à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Marina+Agadir",
-      "priceRange": "€€",
-      "specialite": "Port de plaisance",
-      "nombreAvis": 1135,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r11",
-      "lat": 30.4205162,
-      "lng": -9.5838532,
-      "geocoded": true
-    },
-    {
-      "nom": "Ao Nhà",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Agadir",
-      "description": "Vietnamien halal à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Ao+Nh%C3%A0+Agadir",
-      "priceRange": "€€",
-      "specialite": "Vietnamien halal",
-      "nombreAvis": 1460,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r12",
-      "lat": 30.4205162,
-      "lng": -9.5838532,
-      "geocoded": true
-    },
-    {
-      "nom": "Agadir Halal BBQ",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Agadir",
-      "description": "Barbecue à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Agadir+Halal+BBQ+Agadir",
-      "priceRange": "€€",
-      "specialite": "Barbecue",
-      "nombreAvis": 2382,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r13",
-      "lat": 30.4205162,
-      "lng": -9.5838532,
-      "geocoded": true
-    },
-    {
-      "nom": "Fish & Chips Agadir",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Agadir",
-      "description": "Poissons atlantique à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Fish+%26+Chips+Agadir+Agadir",
-      "priceRange": "€€",
-      "specialite": "Poissons atlantique",
-      "nombreAvis": 583,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "vue-mer"
-      ],
-      "id": "r14",
-      "lat": 30.4205162,
-      "lng": -9.5838532,
-      "geocoded": true
-    },
-    {
-      "nom": "Port Halal Seafood",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Agadir",
-      "description": "Port de pêche à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Port+Halal+Seafood+Agadir",
-      "priceRange": "€€",
-      "specialite": "Port de pêche",
-      "nombreAvis": 523,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "vue-mer"
-      ],
-      "id": "r15",
-      "lat": 30.4205162,
-      "lng": -9.5838532,
-      "geocoded": true
-    },
-    {
-      "nom": "Boulangerie Pâtisserie Abdi",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Agadir",
-      "description": "Tradition à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Boulangerie+P%C3%A2tisserie+Abdi+Agadir",
-      "priceRange": "€€",
-      "specialite": "Tradition",
-      "nombreAvis": 334,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r16",
-      "lat": 30.4205162,
-      "lng": -9.5838532,
-      "geocoded": true
-    },
-    {
-      "nom": "Café Tafarnout",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Agadir",
-      "description": "Berbère à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Tafarnout+Agadir",
-      "priceRange": "€€",
-      "specialite": "Berbère",
-      "nombreAvis": 1146,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r17",
-      "lat": 30.4205162,
-      "lng": -9.5838532,
-      "geocoded": true
-    },
-    {
-      "nom": "Chez Mama",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Agadir",
-      "description": "Marocain populaire à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Chez+Mama+Agadir",
-      "priceRange": "€",
-      "specialite": "Marocain populaire",
-      "nombreAvis": 510,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r18",
-      "lat": 30.4205162,
-      "lng": -9.5838532,
-      "geocoded": true
-    },
-    {
-      "nom": "Bleu de Fez",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Agadir",
-      "description": "Marocain Agadir à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Bleu+de+Fez+Agadir",
-      "priceRange": "€€",
-      "specialite": "Marocain agadir",
-      "nombreAvis": 1067,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r19",
-      "lat": 30.4205162,
-      "lng": -9.5838532,
-      "geocoded": true
-    },
-    {
-      "nom": "Le Mirador",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Agadir",
-      "description": "Vue panoramique à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Le+Mirador+Agadir",
-      "priceRange": "€€",
-      "specialite": "Vue panoramique",
-      "nombreAvis": 595,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r20",
-      "lat": 30.4205162,
-      "lng": -9.5838532,
-      "geocoded": true
-    },
-    {
-      "nom": "La Villa Blanche",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Agadir",
-      "description": "Blanc et élégant à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=La+Villa+Blanche+Agadir",
-      "priceRange": "€€€€",
-      "specialite": "Blanc et élégant",
-      "nombreAvis": 1604,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r21",
-      "lat": 30.4205162,
-      "lng": -9.5838532,
-      "geocoded": true
-    },
-    {
-      "nom": "Restaurant Atlas",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Agadir",
-      "description": "Marocain standard à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Atlas+Agadir",
-      "priceRange": "€",
-      "specialite": "Marocain standard",
-      "nombreAvis": 2537,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r22",
-      "lat": 30.4205162,
-      "lng": -9.5838532,
-      "geocoded": true
-    },
-    {
-      "nom": "La Palmeraie Agadir",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Agadir",
-      "description": "Jardin luxuriant à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=La+Palmeraie+Agadir+Agadir",
-      "priceRange": "€€",
-      "specialite": "Jardin luxuriant",
-      "nombreAvis": 1117,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r23",
-      "lat": 30.4205162,
-      "lng": -9.5838532,
-      "geocoded": true
-    },
-    {
-      "nom": "Club Med Agadir Restaurant",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Agadir",
-      "description": "Resort halal à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Club+Med+Agadir+Restaurant+Agadir",
-      "priceRange": "€€",
-      "specialite": "Resort halal",
-      "nombreAvis": 2188,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r24",
-      "lat": 30.4205162,
-      "lng": -9.5838532,
-      "geocoded": true
-    },
-    {
-      "nom": "Riu Tikida Beach Restaurant",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Agadir",
-      "description": "Resort à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Riu+Tikida+Beach+Restaurant+Agadir",
-      "priceRange": "€€",
-      "specialite": "Resort",
-      "nombreAvis": 1153,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r25",
-      "lat": 30.4205162,
-      "lng": -9.5838532,
-      "geocoded": true
-    },
-    {
-      "nom": "Sofitel Agadir Royal Bay Restaurant",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Agadir",
-      "description": "Gastronomique à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Sofitel+Agadir+Royal+Bay+Restaurant+Agadir",
-      "priceRange": "€€€€",
-      "specialite": "Gastronomique",
-      "nombreAvis": 488,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r26",
-      "lat": 30.4205162,
-      "lng": -9.5838532,
-      "geocoded": true
-    },
-    {
-      "nom": "Iberostar Agadir Restaurant",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Agadir",
-      "description": "Resort à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Iberostar+Agadir+Restaurant+Agadir",
-      "priceRange": "€€",
-      "specialite": "Resort",
-      "nombreAvis": 394,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r27",
-      "lat": 30.4205162,
-      "lng": -9.5838532,
-      "geocoded": true
-    },
-    {
-      "nom": "Sol Beach House Agadir",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Agadir",
-      "description": "Resort à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Sol+Beach+House+Agadir+Agadir",
-      "priceRange": "€€",
-      "specialite": "Resort",
-      "nombreAvis": 399,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r28",
-      "lat": 30.4205162,
-      "lng": -9.5838532,
-      "geocoded": true
-    },
-    {
-      "nom": "Kenzi Europa Hotel Restaurant",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Agadir",
-      "description": "Hôtel à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Kenzi+Europa+Hotel+Restaurant+Agadir",
-      "priceRange": "€€",
-      "specialite": "Hôtel",
-      "nombreAvis": 872,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r29",
-      "lat": 30.4205162,
-      "lng": -9.5838532,
-      "geocoded": true
-    },
-    {
-      "nom": "Anezi Tower Hotel Restaurant",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Agadir",
-      "description": "Hôtel à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Anezi+Tower+Hotel+Restaurant+Agadir",
-      "priceRange": "€€",
-      "specialite": "Hôtel",
-      "nombreAvis": 924,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r30",
-      "lat": 30.4205162,
-      "lng": -9.5838532,
-      "geocoded": true
-    },
-    {
-      "nom": "Pizza Roma Agadir",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Agadir",
-      "description": "Pizza halal à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Pizza+Roma+Agadir+Agadir",
-      "priceRange": "€€",
-      "specialite": "Pizza halal",
-      "nombreAvis": 2200,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r31",
-      "lat": 30.4205162,
-      "lng": -9.5838532,
-      "geocoded": true
-    },
-    {
-      "nom": "Burger King Agadir",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Agadir",
-      "description": "Halal Maroc à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Burger+King+Agadir+Agadir",
-      "priceRange": "€€",
-      "specialite": "Halal maroc",
-      "nombreAvis": 1422,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r32",
-      "lat": 30.4205162,
-      "lng": -9.5838532,
-      "geocoded": true
-    },
-    {
-      "nom": "McDonald's Agadir",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Agadir",
-      "description": "Halal Maroc à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=McDonald%27s+Agadir+Agadir",
-      "priceRange": "€€",
-      "specialite": "Halal maroc",
-      "nombreAvis": 1515,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r33",
-      "lat": 30.4205162,
-      "lng": -9.5838532,
-      "geocoded": true
-    },
-    {
-      "nom": "KFC Agadir",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Agadir",
-      "description": "Halal Maroc à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=KFC+Agadir+Agadir",
-      "priceRange": "€€",
-      "specialite": "Halal maroc",
-      "nombreAvis": 1227,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r34",
-      "lat": 30.4205162,
-      "lng": -9.5838532,
-      "geocoded": true
-    },
-    {
-      "nom": "Snack Amlou",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Agadir",
-      "description": "Amlou et msemen, bio à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Snack+Amlou+Agadir",
-      "priceRange": "€",
-      "specialite": "Amlou et msemen",
-      "nombreAvis": 824,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r35",
-      "lat": 30.4205162,
-      "lng": -9.5838532,
-      "geocoded": true
-    },
-    {
-      "nom": "Etoile d'Agadir",
-      "lat": 30.424403,
-      "lng": -9.5932811,
-      "type": "international, moroccan",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=30.424403,-9.5932811",
-      "source": "osm"
-    },
-    {
-      "nom": "Daffi Agadir",
-      "lat": 30.4226849,
-      "lng": -9.6019594,
-      "type": "moroccan",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=30.4226849,-9.6019594",
-      "source": "osm"
-    },
-    {
-      "nom": "TACOS DE LYON",
-      "lat": 30.4181241,
-      "lng": -9.5954298,
-      "type": "mexican, turkish",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=30.4181241,-9.5954298",
-      "source": "osm"
-    },
-    {
-      "nom": "Restaurant/Bar LOCOLOCO",
-      "lat": 30.4183273,
-      "lng": -9.6038006,
-      "type": "pizza, burger, chicken, international, grill, wine, steak, cocktails, birthday, afterwork, regional, african, moroccan",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=30.4183273,-9.6038006",
-      "source": "osm"
-    },
-    {
-      "nom": "Jour & Nuit Restaurant",
-      "lat": 30.4209946,
-      "lng": -9.6087279,
-      "type": "burger, grill, local, moroccan, pizza",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=30.4209946,-9.6087279",
-      "source": "osm"
-    },
-    {
-      "nom": "Bab Agadir",
-      "lat": 30.4159937,
-      "lng": -9.5965997,
-      "type": "moroccan",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=30.4159937,-9.5965997",
-      "source": "osm"
-    },
-    {
-      "nom": "Café Aslal مقهى أسلال",
-      "lat": 30.4090353,
-      "lng": -9.5673744,
-      "type": "coffee shop, arab, breakfast, tea",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=30.4090353,-9.5673744",
-      "source": "osm"
-    },
-    {
-      "nom": "مطعم الرباطي",
-      "lat": 30.4026674,
-      "lng": -9.5502484,
-      "type": "moroccan",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=30.4026674,-9.5502484",
-      "source": "osm"
-    },
-    {
-      "nom": "Sodivias",
-      "lat": 30.3982853,
-      "lng": -9.5253241,
-      "type": "moroccan",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=30.3982853,-9.5253241",
-      "source": "osm"
-    }
-  ],
-  "mosquees": [
-    {
-      "id": "m-001",
-      "nom": "Grande Mosquée d'Agadir",
-      "adresse": "Quartier central Agadir",
-      "type": "Grande mosquée",
-      "capacite": 8000,
-      "annee_construction": 1985,
-      "style_architectural": "Marocain moderne",
-      "note": 4.7
-    },
-    {
-      "id": "m-002",
-      "nom": "Mosquée Salam",
-      "adresse": "Secteur touristique",
-      "type": "Mosquée de quartier",
-      "capacite": 2000,
-      "annee_construction": 1990,
-      "style_architectural": "Marocain",
-      "note": 4.4
-    },
-    {
-      "id": "m-003",
-      "nom": "Mosquée Al Fath",
-      "adresse": "Talborjt, Agadir",
-      "type": "Mosquée historique",
-      "capacite": 3000,
-      "annee_construction": 1975,
-      "style_architectural": "Mauresque",
-      "note": 4.5
-    },
-    {
-      "id": "m-004",
-      "nom": "Mosquée Hay Dakhla",
-      "adresse": "Quartier Hay Dakhla",
-      "type": "Mosquée de quartier",
-      "capacite": 1500,
-      "annee_construction": 2000,
-      "style_architectural": "Contemporain",
-      "note": 4.3
-    },
-    {
-      "id": "m-005",
-      "nom": "Mosquée Mohammed VI (Inezgane)",
-      "adresse": "Inezgane",
-      "type": "Grande mosquée",
-      "capacite": 5000,
-      "annee_construction": 2005,
-      "style_architectural": "Royal marocain",
-      "note": 4.8
-    }
-  ],
-  "hotels": [
-    {
-      "id": "h1",
-      "nom": "Sofitel Agadir Royal Bay",
-      "adresse": "Baie d'Agadir",
-      "categorie": "Standard",
-      "prix_nuit": "180–400 €",
-      "halal_friendly": true,
-      "sans_alcool": false,
-      "piscine": true,
-      "note": 4.8,
-      "halalScore": {
-        "global": 8,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": false,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 576,
-        "derniereVerification": "2026-05",
-        "badge": "HALAL VÉRIFIÉ",
-        "organisationCertification": "ONSSA Halal"
-      },
-      "score": 4.8,
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "priceRange": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=Sofitel+Agadir+Royal+Bay+Agadir",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Agadir&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Agadir",
-      "nombreAvis": 1877,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "lat": 30.3932497,
-      "lng": -9.5970754
-    },
-    {
-      "nom": "Hotel Aferni",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4245429,-9.601552",
-      "lat": 30.4245429,
-      "lng": -9.601552,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4245429,-9.601552",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Tamri",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4234456,-9.595754",
-      "lat": 30.4234456,
-      "lng": -9.595754,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4234456,-9.595754",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Excelsior",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4253141,-9.5930872",
-      "lat": 30.4253141,
-      "lng": -9.5930872,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4253141,-9.5930872",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Ait Laayoune",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4251476,-9.5928217",
-      "lat": 30.4251476,
-      "lng": -9.5928217,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4251476,-9.5928217",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Sindibad",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "score": 2,
-      "mapsUrl": "https://maps.google.com/?q=30.4246962,-9.5929787",
-      "lat": 30.4246962,
-      "lng": -9.5929787,
-      "halalFriendly": false,
-      "bookingUrl": "http://hotel-Sindibad.hotels-Agadir.com",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Massa",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.424663,-9.5927274",
-      "lat": 30.424663,
-      "lng": -9.5927274,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.424663,-9.5927274",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Diaf",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4233112,-9.5940788",
-      "lat": 30.4233112,
-      "lng": -9.5940788,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4233112,-9.5940788",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Canaria",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4244269,-9.5924558",
-      "lat": 30.4244269,
-      "lng": -9.5924558,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4244269,-9.5924558",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel el Bahia",
-      "categorie": "Hôtel",
-      "priceRange": "€€€",
-      "score": 3,
-      "mapsUrl": "https://maps.google.com/?q=30.4236651,-9.5931401",
-      "lat": 30.4236651,
-      "lng": -9.5931401,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4236651,-9.5931401",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Itrane",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4220464,-9.5958884",
-      "lat": 30.4220464,
-      "lng": -9.5958884,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4220464,-9.5958884",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Petite Suede",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4231807,-9.6036677",
-      "lat": 30.4231807,
-      "lng": -9.6036677,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4231807,-9.6036677",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Tiznine",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4216329,-9.5950584",
-      "lat": 30.4216329,
-      "lng": -9.5950584,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4216329,-9.5950584",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Atlas",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4214681,-9.5951843",
-      "lat": 30.4214681,
-      "lng": -9.5951843,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4214681,-9.5951843",
-      "source": "osm"
-    },
-    {
-      "nom": "APPART HÔTEL AZOUR",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4245391,-9.5903939",
-      "lat": 30.4245391,
-      "lng": -9.5903939,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4245391,-9.5903939",
-      "source": "osm"
-    },
-    {
-      "nom": "Kamal city center",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4196126,-9.5987772",
-      "lat": 30.4196126,
-      "lng": -9.5987772,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4196126,-9.5987772",
-      "source": "osm"
-    },
-    {
-      "nom": "Suite Hotel Tilila",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.422126,-9.605306",
-      "lat": 30.422126,
-      "lng": -9.605306,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.422126,-9.605306",
-      "source": "osm"
-    },
-    {
-      "nom": "Atlantic",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4193518,-9.5976166",
-      "lat": 30.4193518,
-      "lng": -9.5976166,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.atlantichotelagadir.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Tildi Hotel & Spa",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4233971,-9.6065322",
-      "lat": 30.4233971,
-      "lng": -9.6065322,
-      "halalFriendly": false,
-      "bookingUrl": "https://hoteltildi.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Assaka",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4191566,-9.5982837",
-      "lat": 30.4191566,
-      "lng": -9.5982837,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4191566,-9.5982837",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Résidence Louban",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4192253,-9.5995962",
-      "lat": 30.4192253,
-      "lng": -9.5995962,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4192253,-9.5995962",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Marhaba",
-      "categorie": "Hôtel",
-      "priceRange": "€€€",
-      "score": 3,
-      "mapsUrl": "https://maps.google.com/?q=30.4222393,-9.6059843",
-      "lat": 30.4222393,
-      "lng": -9.6059843,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4222393,-9.6059843",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel les palmiers",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.419012,-9.5998109",
-      "lat": 30.419012,
-      "lng": -9.5998109,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.419012,-9.5998109",
-      "source": "osm"
-    },
-    {
-      "nom": "Agadirinou House",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4222655,-9.5899952",
-      "lat": 30.4222655,
-      "lng": -9.5899952,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4222655,-9.5899952",
-      "source": "osm"
-    },
-    {
-      "nom": "Résidence sacha",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4188102,-9.5988834",
-      "lat": 30.4188102,
-      "lng": -9.5988834,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4188102,-9.5988834",
-      "source": "osm"
-    },
-    {
-      "nom": "Oasis",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4228614,-9.6069114",
-      "lat": 30.4228614,
-      "lng": -9.6069114,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4228614,-9.6069114",
-      "source": "osm"
-    },
-    {
-      "nom": "Residence Yasmina",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.418691,-9.5982691",
-      "lat": 30.418691,
-      "lng": -9.5982691,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.418691,-9.5982691",
-      "source": "osm"
-    },
-    {
-      "nom": "Résidence Tislit",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4187061,-9.6000867",
-      "lat": 30.4187061,
-      "lng": -9.6000867,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4187061,-9.6000867",
-      "source": "osm"
-    },
-    {
-      "nom": "Beach Albatros",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4195366,-9.6036817",
-      "lat": 30.4195366,
-      "lng": -9.6036817,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4195366,-9.6036817",
-      "source": "osm"
-    },
-    {
-      "nom": "Odyssee",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4188019,-9.6021098",
-      "lat": 30.4188019,
-      "lng": -9.6021098,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4188019,-9.6021098",
-      "source": "osm"
-    },
-    {
-      "nom": "Appart Hotel Fleurie",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4183115,-9.5945311",
-      "lat": 30.4183115,
-      "lng": -9.5945311,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4183115,-9.5945311",
-      "source": "osm"
-    },
-    {
-      "nom": "Residence Isni",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4182796,-9.5941731",
-      "lat": 30.4182796,
-      "lng": -9.5941731,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4182796,-9.5941731",
-      "source": "osm"
-    },
-    {
-      "nom": "New Farah Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4179965,-9.5948106",
-      "lat": 30.4179965,
-      "lng": -9.5948106,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4179965,-9.5948106",
-      "source": "osm"
-    },
-    {
-      "nom": "Studiotel Afoud",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4176833,-9.5959958",
-      "lat": 30.4176833,
-      "lng": -9.5959958,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4176833,-9.5959958",
-      "source": "osm"
-    },
-    {
-      "nom": "Anezi Tower",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4169263,-9.6001617",
-      "lat": 30.4169263,
-      "lng": -9.6001617,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4169263,-9.6001617",
-      "source": "osm"
-    },
-    {
-      "nom": "Al Moggar",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4224423,-9.6093658",
-      "lat": 30.4224423,
-      "lng": -9.6093658,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4224423,-9.6093658",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Anezi",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4167451,-9.6011863",
-      "lat": 30.4167451,
-      "lng": -9.6011863,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4167451,-9.6011863",
-      "source": "osm"
-    },
-    {
-      "nom": "Kenzi Europa",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4171556,-9.6028382",
-      "lat": 30.4171556,
-      "lng": -9.6028382,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4171556,-9.6028382",
-      "source": "osm"
-    },
-    {
-      "nom": "Chez Christian Et Rachida",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4333687,-9.5855772",
-      "lat": 30.4333687,
-      "lng": -9.5855772,
-      "halalFriendly": false,
-      "bookingUrl": "https://abnb.me/QHoNdycfevb",
-      "source": "osm"
-    },
-    {
-      "nom": "Royal Decameron Tafoukt Beach Resort",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 4,
-      "mapsUrl": "https://maps.google.com/?q=30.4166309,-9.6042715",
-      "lat": 30.4166309,
-      "lng": -9.6042715,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4166309,-9.6042715",
-      "source": "osm"
-    },
-    {
-      "nom": "Stay Here Ocean View",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4249319,-9.6125299",
-      "lat": 30.4249319,
-      "lng": -9.6125299,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4249319,-9.6125299",
-      "source": "osm"
-    },
-    {
-      "nom": "Boutique Hotel Tagadirt",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4150193,-9.6009618",
-      "lat": 30.4150193,
-      "lng": -9.6009618,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4150193,-9.6009618",
-      "source": "osm"
-    },
-    {
-      "nom": "The View Agadir",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 5,
-      "mapsUrl": "https://maps.google.com/?q=30.415524,-9.6035291",
-      "lat": 30.415524,
-      "lng": -9.6035291,
-      "halalFriendly": false,
-      "bookingUrl": "https://theviewhotels.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Les Chtis d'Agadir",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4171173,-9.588974",
-      "lat": 30.4171173,
-      "lng": -9.588974,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.riadleschtisdagadir.com",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Transatlantique",
-      "categorie": "Hôtel",
-      "priceRange": "€€€",
-      "score": 3,
-      "mapsUrl": "https://maps.google.com/?q=30.4144713,-9.5990065",
-      "lat": 30.4144713,
-      "lng": -9.5990065,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4144713,-9.5990065",
-      "source": "osm"
-    },
-    {
-      "nom": "Appart-Hôtel Igoudar",
-      "categorie": "Appartement",
-      "priceRange": "€€€",
-      "score": 3,
-      "mapsUrl": "https://maps.google.com/?q=30.4140734,-9.5997226",
-      "lat": 30.4140734,
-      "lng": -9.5997226,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4140734,-9.5997226",
-      "source": "osm"
-    },
-    {
-      "nom": "Hôtel Argana",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4134319,-9.5982131",
-      "lat": 30.4134319,
-      "lng": -9.5982131,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4134319,-9.5982131",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Mabrouk",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4129843,-9.5987884",
-      "lat": 30.4129843,
-      "lng": -9.5987884,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4129843,-9.5987884",
-      "source": "osm"
-    },
-    {
-      "nom": "Club Med Agadir",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4133,-9.6027198",
-      "lat": 30.4133,
-      "lng": -9.6027198,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4133,-9.6027198",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Adrar Sahara Agadir",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4125552,-9.5975228",
-      "lat": 30.4125552,
-      "lng": -9.5975228,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4125552,-9.5975228",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Royal",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4119857,-9.5969341",
-      "lat": 30.4119857,
-      "lng": -9.5969341,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4119857,-9.5969341",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Coralia Club Agadir La Kasbah",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4116233,-9.5981061",
-      "lat": 30.4116233,
-      "lng": -9.5981061,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4116233,-9.5981061",
-      "source": "osm"
-    },
-    {
-      "nom": "Sahara Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 4,
-      "mapsUrl": "https://maps.google.com/?q=30.4116816,-9.5962331",
-      "lat": 30.4116816,
-      "lng": -9.5962331,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4116816,-9.5962331",
-      "source": "osm"
-    },
-    {
-      "nom": "Location Appartement Marina Agadir",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4241152,-9.6171704",
-      "lat": 30.4241152,
-      "lng": -9.6171704,
-      "halalFriendly": false,
-      "bookingUrl": "https://story.snapchat.com/u/marinamrynkdy20?share_id=MjYwREQ2&locale=en_FR",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Solman",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4117063,-9.5915616",
-      "lat": 30.4117063,
-      "lng": -9.5915616,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4117063,-9.5915616",
-      "source": "osm"
-    },
-    {
-      "nom": "إقامة مارينا أكادير",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4235303,-9.6175775",
-      "lat": 30.4235303,
-      "lng": -9.6175775,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4235303,-9.6175775",
-      "source": "osm"
-    },
-    {
-      "nom": "Caribbean Village Agador",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4101527,-9.5976292",
-      "lat": 30.4101527,
-      "lng": -9.5976292,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4101527,-9.5976292",
-      "source": "osm"
-    },
-    {
-      "nom": "Marina Agadir Morocco",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4240076,-9.618312",
-      "lat": 30.4240076,
-      "lng": -9.618312,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4240076,-9.618312",
-      "source": "osm"
-    },
-    {
-      "nom": "Amanar Marina By Vacaloc",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4239733,-9.618311",
-      "lat": 30.4239733,
-      "lng": -9.618311,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4239733,-9.618311",
-      "source": "osm"
-    },
-    {
-      "nom": "Residence Rihab",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4098177,-9.6013925",
-      "lat": 30.4098177,
-      "lng": -9.6013925,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4098177,-9.6013925",
-      "source": "osm"
-    },
-    {
-      "nom": "Atlas Marina Beach",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4223857,-9.6187986",
-      "lat": 30.4223857,
-      "lng": -9.6187986,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4223857,-9.6187986",
-      "source": "osm"
-    },
-    {
-      "nom": "Blue Sea Le Tivoli",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4081166,-9.5963041",
-      "lat": 30.4081166,
-      "lng": -9.5963041,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4081166,-9.5963041",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Riu Palace Tikida Agadir",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 5,
-      "mapsUrl": "https://maps.google.com/?q=30.4079552,-9.6003929",
-      "lat": 30.4079552,
-      "lng": -9.6003929,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.riu.com/en/hotel/morocco/agadir/hotel-riu-palace-tikida-agadir",
-      "source": "osm"
-    },
-    {
-      "nom": "El Pueblo Tamlelt",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4077973,-9.5982125",
-      "lat": 30.4077973,
-      "lng": -9.5982125,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4077973,-9.5982125",
-      "source": "osm"
-    },
-    {
-      "nom": "Senator Agadir Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4103149,-9.5829455",
-      "lat": 30.4103149,
-      "lng": -9.5829455,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4103149,-9.5829455",
-      "source": "osm"
-    },
-    {
-      "nom": "Marmara Les Jardins",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4059388,-9.5974836",
-      "lat": 30.4059388,
-      "lng": -9.5974836,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4059388,-9.5974836",
-      "source": "osm"
-    },
-    {
-      "nom": "Les Dunes d'Or",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4052157,-9.5999171",
-      "lat": 30.4052157,
-      "lng": -9.5999171,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4052157,-9.5999171",
-      "source": "osm"
-    },
-    {
-      "nom": "Atlantic Palace Casino & Resort",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 5,
-      "mapsUrl": "https://maps.google.com/?q=30.4050064,-9.5958211",
-      "lat": 30.4050064,
-      "lng": -9.5958211,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4050064,-9.5958211",
-      "source": "osm"
-    },
-    {
-      "nom": "Labranda Amadil Beach",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 4,
-      "mapsUrl": "https://maps.google.com/?q=30.4033609,-9.6001834",
-      "lat": 30.4033609,
-      "lng": -9.6001834,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.labranda.com/en/hotel/labranda-amadil-beach.html",
-      "source": "osm"
-    },
-    {
-      "nom": "Boutique Khalij",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4032579,-9.5976236",
-      "lat": 30.4032579,
-      "lng": -9.5976236,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4032579,-9.5976236",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Riu Tikida Beach",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 4,
-      "mapsUrl": "https://maps.google.com/?q=30.4024942,-9.5994291",
-      "lat": 30.4024942,
-      "lng": -9.5994291,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.riu.com/en/hotel/morocco/agadir/hotel-riu-tikida-beach/",
-      "source": "osm"
-    },
-    {
-      "nom": "ALHAMRA",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4133035,-9.5723173",
-      "lat": 30.4133035,
-      "lng": -9.5723173,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4133035,-9.5723173",
-      "source": "osm"
-    },
-    {
-      "nom": "Atlantic Palm Beach",
-      "categorie": "Hôtel",
-      "priceRange": "€€€",
-      "score": 3,
-      "mapsUrl": "https://maps.google.com/?q=30.4016343,-9.5912588",
-      "lat": 30.4016343,
-      "lng": -9.5912588,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4016343,-9.5912588",
-      "source": "osm"
-    },
-    {
-      "nom": "Golden Beach Apart",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4006017,-9.5971014",
-      "lat": 30.4006017,
-      "lng": -9.5971014,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4006017,-9.5971014",
-      "source": "osm"
-    },
-    {
-      "nom": "Appart Hôtel Founty Beach",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4017241,-9.5889383",
-      "lat": 30.4017241,
-      "lng": -9.5889383,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4017241,-9.5889383",
-      "source": "osm"
-    },
-    {
-      "nom": "Centre de vacance BP.CHAABI مركز الاصطياف للبنك الشعبي",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4002101,-9.5954413",
-      "lat": 30.4002101,
-      "lng": -9.5954413,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4002101,-9.5954413",
-      "source": "osm"
-    },
-    {
-      "nom": "Résidence Intouriste",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4004164,-9.5913206",
-      "lat": 30.4004164,
-      "lng": -9.5913206,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4004164,-9.5913206",
-      "source": "osm"
-    },
-    {
-      "nom": "Rofaida Appart'Hôtel",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4002384,-9.5903907",
-      "lat": 30.4002384,
-      "lng": -9.5903907,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4002384,-9.5903907",
-      "source": "osm"
-    },
-    {
-      "nom": "Zephyr Agadir",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4006044,-9.5877769",
-      "lat": 30.4006044,
-      "lng": -9.5877769,
-      "halalFriendly": false,
-      "bookingUrl": "https://zephyrhotels.ma/zephyragadir",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Riu Tikida Dunas",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 4,
-      "mapsUrl": "https://maps.google.com/?q=30.3989533,-9.5986285",
-      "lat": 30.3989533,
-      "lng": -9.5986285,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.riu.com/en/hotel/morocco/agadir/hotel-riu-tikida-dunas",
-      "source": "osm"
-    },
-    {
-      "nom": "Omega Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.398843,-9.5917451",
-      "lat": 30.398843,
-      "lng": -9.5917451,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.398843,-9.5917451",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Residence RIHAB",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.3983065,-9.5943353",
-      "lat": 30.3983065,
-      "lng": -9.5943353,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.3983065,-9.5943353",
-      "source": "osm"
-    },
-    {
-      "nom": "Aga 1102",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4333889,-9.5633889",
-      "lat": 30.4333889,
-      "lng": -9.5633889,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4333889,-9.5633889",
-      "source": "osm"
-    },
-    {
-      "nom": "Borjs Hotel Suites & SPA",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.3972799,-9.5943254",
-      "lat": 30.3972799,
-      "lng": -9.5943254,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.3972799,-9.5943254",
-      "source": "osm"
-    },
-    {
-      "nom": "Iberostar Waves Founty Beach",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 4,
-      "mapsUrl": "https://maps.google.com/?q=30.3967259,-9.5972277",
-      "lat": 30.3967259,
-      "lng": -9.5972277,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.iberostar.com/en/hotels/agadir/iberostar-founty-beach/",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Timoulay",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.3967183,-9.5939441",
-      "lat": 30.3967183,
-      "lng": -9.5939441,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.3967183,-9.5939441",
-      "source": "osm"
-    },
-    {
-      "nom": "Bo Hotel & Spa",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.3960472,-9.5938251",
-      "lat": 30.3960472,
-      "lng": -9.5938251,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.3960472,-9.5938251",
-      "source": "osm"
-    },
-    {
-      "nom": "Sweethome",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4379762,-9.5623591",
-      "lat": 30.4379762,
-      "lng": -9.5623591,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4379762,-9.5623591",
-      "source": "osm"
-    },
-    {
-      "nom": "Hôtel Palais des Roses",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 4,
-      "mapsUrl": "https://maps.google.com/?q=30.3949504,-9.5966503",
-      "lat": 30.3949504,
-      "lng": -9.5966503,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.3949504,-9.5966503",
-      "source": "osm"
-    },
-    {
-      "nom": "Rida CS",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4197276,-9.5597107",
-      "lat": 30.4197276,
-      "lng": -9.5597107,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4197276,-9.5597107",
-      "source": "osm"
-    },
-    {
-      "nom": "Sofitel Agadir Thalassa Sea & Spa",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.3916119,-9.5981923",
-      "lat": 30.3916119,
-      "lng": -9.5981923,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.3916119,-9.5981923",
-      "source": "osm"
-    },
-    {
-      "nom": "Amane founty",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.3995118,-9.5706752",
-      "lat": 30.3995118,
-      "lng": -9.5706752,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.3995118,-9.5706752",
-      "source": "osm"
-    },
-    {
-      "nom": "La Villa Blanche",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.3899131,-9.5941366",
-      "lat": 30.3899131,
-      "lng": -9.5941366,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.3899131,-9.5941366",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Tilado",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4092152,-9.5582144",
-      "lat": 30.4092152,
-      "lng": -9.5582144,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4092152,-9.5582144",
-      "source": "osm"
-    },
-    {
-      "nom": "Robinson Club",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.387761,-9.5938494",
-      "lat": 30.387761,
-      "lng": -9.5938494,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.387761,-9.5938494",
-      "source": "osm"
-    },
-    {
-      "nom": "La Porte Des Etoiles",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4098401,-9.5521292",
-      "lat": 30.4098401,
-      "lng": -9.5521292,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4098401,-9.5521292",
-      "source": "osm"
-    },
-    {
-      "nom": "Aga 1083",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.3951111,-9.5608611",
-      "lat": 30.3951111,
-      "lng": -9.5608611,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.3951111,-9.5608611",
-      "source": "osm"
-    },
-    {
-      "nom": "Dar Agadir",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.40069,-9.5524067",
-      "lat": 30.40069,
-      "lng": -9.5524067,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.40069,-9.5524067",
-      "source": "osm"
-    },
-    {
-      "nom": "Résidence Étudiante La Teranga",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.402697,-9.549956",
-      "lat": 30.402697,
-      "lng": -9.549956,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.402697,-9.549956",
-      "source": "osm"
-    },
-    {
-      "nom": "siham",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.3891965,-9.5596712",
-      "lat": 30.3891965,
-      "lng": -9.5596712,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.3891965,-9.5596712",
-      "source": "osm"
-    },
-    {
-      "nom": "Maison Marocaine",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.3802751,-9.5666057",
-      "lat": 30.3802751,
-      "lng": -9.5666057,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.3802751,-9.5666057",
-      "source": "osm"
-    },
-    {
-      "nom": "Jacaranda",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.3795,-9.5665661",
-      "lat": 30.3795,
-      "lng": -9.5665661,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.3795,-9.5665661",
-      "source": "osm"
-    },
-    {
-      "nom": "Tamount Surf Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.4474586,-9.6586992",
-      "lat": 30.4474586,
-      "lng": -9.6586992,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.4474586,-9.6586992",
-      "source": "osm"
-    },
-    {
-      "nom": "Aga 1090 az",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.392842,-9.542842",
-      "lat": 30.392842,
-      "lng": -9.542842,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.392842,-9.542842",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel La Pergola",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.3722814,-9.5517679",
-      "lat": 30.3722814,
-      "lng": -9.5517679,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.3722814,-9.5517679",
-      "source": "osm"
-    },
-    {
-      "nom": "Tikida Golf Palace",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=30.3584144,-9.5614847",
-      "lat": 30.3584144,
-      "lng": -9.5614847,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=30.3584144,-9.5614847",
-      "source": "osm"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Plage d'Agadir (10 km de sable)",
-      "type": "Plage",
-      "duree": "Journée",
-      "prix": "Gratuit",
-      "note": 4.8,
-      "categorie": "Nature & Plein air",
-      "mapsUrl": "https://maps.google.com/?q=Plage+d%27Agadir+%2810+km+de+sable%29+Agadir",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Plage+d%27Agadir+%2810+km+de+sable%29+Agadir",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a2",
-      "nom": "Kasbah d'Agadir Oufella",
-      "type": "Histoire & vue panoramique",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "note": 4.7,
-      "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Kasbah+d%27Agadir+Oufella+Agadir",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Kasbah+d%27Agadir+Oufella+Agadir",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a3",
-      "nom": "Souk El Had (grand marché)",
-      "type": "Shopping & culture",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "note": 4.6,
-      "categorie": "Shopping & Souks",
-      "mapsUrl": "https://maps.google.com/?q=Souk+El+Had+%28grand+march%C3%A9%29+Agadir",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Souk+El+Had+%28grand+march%C3%A9%29+Agadir",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a4",
-      "nom": "Vallée du Paradis (excursion)",
-      "type": "Nature & randonnée",
-      "duree": "Journée",
-      "prix": "200–400 MAD par personne",
-      "note": 4.8,
-      "categorie": "Nature & Plein air",
-      "mapsUrl": "https://maps.google.com/?q=Vall%C3%A9e+du+Paradis+%28excursion%29+Agadir",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vall%C3%A9e+du+Paradis+%28excursion%29+Agadir",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a5",
-      "nom": "Taroudant (ville ancienne, 90 km)",
-      "type": "Excursion culturelle",
-      "duree": "Journée",
-      "prix": "Transport variable",
-      "note": 4.7,
-      "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Taroudant+%28ville+ancienne%2C+90+km%29+Agadir",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Taroudant+%28ville+ancienne%2C+90+km%29+Agadir",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a6",
-      "nom": "Crocoparc (parc de crocodiles)",
-      "type": "Nature & famille",
-      "duree": "2h",
-      "prix": "80 MAD adulte",
-      "note": 4.3,
-      "categorie": "Nature & Plein air",
-      "mapsUrl": "https://maps.google.com/?q=Crocoparc+%28parc+de+crocodiles%29+Agadir",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Crocoparc+%28parc+de+crocodiles%29+Agadir",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a7",
-      "nom": "Randonée dans l'Anti-Atlas",
-      "type": "Randonnée",
-      "duree": "Journée à 3 jours",
-      "prix": "Variable",
-      "note": 4.7,
-      "categorie": "Nature & Plein air",
-      "mapsUrl": "https://maps.google.com/?q=Randon%C3%A9e+dans+l%27Anti-Atlas+Agadir",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Randon%C3%A9e+dans+l%27Anti-Atlas+Agadir",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a8",
-      "nom": "Surf et sports nautiques",
-      "type": "Sport",
-      "duree": "2h",
-      "prix": "150–300 MAD cours",
-      "note": 4.5,
-      "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Surf+et+sports+nautiques+Agadir",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Surf+et+sports+nautiques+Agadir",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Quartier historique de Agadir",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Agadir+Agadir",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Agadir+Agadir",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a9"
-    },
-    {
-      "nom": "Grand marché central de Agadir",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Agadir+Agadir",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Agadir+Agadir",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a10"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Agadir",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Agadir+Agadir",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Agadir+Agadir",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a11"
-    },
-    {
-      "nom": "Musée de la ville de Agadir",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Agadir+Agadir",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Agadir+Agadir",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a12"
-    },
-    {
-      "nom": "Food tour halal de Agadir",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Agadir+Agadir",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Agadir+Agadir",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a13"
-    },
-    {
-      "nom": "Hammam traditionnel de Agadir",
-      "categorie": "Bien-être & Spa",
-      "description": "Bain de vapeur et gommage selon la tradition orientale.",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Agadir+Agadir",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Agadir+Agadir",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a14"
-    },
-    {
-      "nom": "Mosquée historique de Agadir",
-      "categorie": "Religieux & Spirituel",
-      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Agadir+Agadir",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Agadir+Agadir",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a15"
-    },
-    {
-      "nom": "Parc et jardins de Agadir",
-      "categorie": "Nature & Aventure",
-      "description": "Espace vert paisible idéal pour les familles.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Agadir+Agadir",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Agadir+Agadir",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a16"
-    },
-    {
-      "nom": "Centre commercial halal-friendly de Agadir",
-      "categorie": "Shopping & Souks",
-      "description": "Grand mall avec salle de prière et food court halal.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Agadir+Agadir",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Agadir+Agadir",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a17"
-    },
-    {
-      "nom": "Atelier d'artisanat local de Agadir",
-      "categorie": "Art & Musées",
-      "description": "Découverte des savoir-faire traditionnels de la région.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Agadir+Agadir",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Agadir+Agadir",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a18"
-    },
-    {
-      "nom": "Quartier historique de Agadir 10",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Agadir+10+Agadir",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Agadir+10+Agadir",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a19"
-    },
-    {
-      "nom": "Grand marché central de Agadir 11",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Agadir+11+Agadir",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Agadir+11+Agadir",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a20"
-    },
-    {
-      "nom": "Bianca Beach",
-      "lat": 30.4209263,
-      "lng": -9.6169652,
-      "coordonnees": {
-        "lat": 30.4209263,
-        "lng": -9.6169652
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=30.4209263,-9.6169652",
-      "source": "osm"
-    },
-    {
-      "nom": "Souk El Had",
-      "lat": 30.4125105,
-      "lng": -9.5797504,
-      "coordonnees": {
-        "lat": 30.4125105,
-        "lng": -9.5797504
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=30.4125105,-9.5797504",
-      "source": "osm"
-    },
-    {
-      "nom": "Kasbah Agadir Oufellah",
-      "lat": 30.42974,
-      "lng": -9.6247621,
-      "coordonnees": {
-        "lat": 30.42974,
-        "lng": -9.6247621
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=30.42974,-9.6247621",
-      "source": "osm"
-    },
-    {
-      "nom": "lieu plongeur",
-      "lat": 30.4176269,
-      "lng": -9.6413516,
-      "coordonnees": {
-        "lat": 30.4176269,
-        "lng": -9.6413516
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=30.4176269,-9.6413516",
-      "source": "osm"
-    },
-    {
-      "nom": "Night market",
-      "lat": 30.4064173,
-      "lng": -9.551043,
-      "coordonnees": {
-        "lat": 30.4064173,
-        "lng": -9.551043
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=30.4064173,-9.551043",
-      "source": "osm"
-    },
-    {
-      "nom": "Kasbat souss",
-      "lat": 30.3846123,
-      "lng": -9.5726284,
-      "coordonnees": {
-        "lat": 30.3846123,
-        "lng": -9.5726284
-      },
-      "categorie": "Shopping",
-      "mapsUrl": "https://maps.google.com/?q=30.3846123,-9.5726284",
-      "source": "osm"
-    },
-    {
-      "nom": "Musée de Géologie",
-      "lat": 30.4443476,
-      "lng": -9.6551752,
-      "coordonnees": {
-        "lat": 30.4443476,
-        "lng": -9.6551752
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=30.4443476,-9.6551752",
-      "source": "osm"
-    },
-    {
-      "nom": "La Médina d'Agadir",
-      "lat": 30.3784915,
-      "lng": -9.572454,
-      "coordonnees": {
-        "lat": 30.3784915,
-        "lng": -9.572454
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=30.3784915,-9.572454",
-      "source": "osm"
-    },
-    {
-      "nom": "Geopark",
-      "lat": 30.4458535,
-      "lng": -9.6607119,
-      "coordonnees": {
-        "lat": 30.4458535,
-        "lng": -9.6607119
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=30.4458535,-9.6607119",
-      "source": "osm"
-    },
-    {
-      "nom": "terrain abdelaziz refkki",
-      "lat": 30.4573233,
-      "lng": -9.6628052,
-      "coordonnees": {
-        "lat": 30.4573233,
-        "lng": -9.6628052
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=30.4573233,-9.6628052",
-      "source": "osm"
-    },
-    {
-      "nom": "le pati",
-      "lat": 30.5012717,
-      "lng": -9.581553,
-      "coordonnees": {
-        "lat": 30.5012717,
-        "lng": -9.581553
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=30.5012717,-9.581553",
-      "source": "osm"
-    },
-    {
-      "nom": "تزرزيت و الرباب",
-      "lat": 30.3714333,
-      "lng": -9.5319586,
-      "coordonnees": {
-        "lat": 30.3714333,
-        "lng": -9.5319586
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=30.3714333,-9.5319586",
-      "source": "osm"
-    },
-    {
-      "nom": "Jardin Botanique",
-      "lat": 30.5081471,
-      "lng": -9.5919861,
-      "coordonnees": {
-        "lat": 30.5081471,
-        "lng": -9.5919861
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=30.5081471,-9.5919861",
-      "source": "osm"
-    },
-    {
-      "nom": "Surfspot Km11 Km12",
-      "lat": 30.495287,
-      "lng": -9.6765935,
-      "coordonnees": {
-        "lat": 30.495287,
-        "lng": -9.6765935
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=30.495287,-9.6765935",
-      "source": "osm"
-    },
-    {
-      "nom": "Banana point",
-      "lat": 30.5022102,
-      "lng": -9.6834593,
-      "coordonnees": {
-        "lat": 30.5022102,
-        "lng": -9.6834593
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=30.5022102,-9.6834593",
-      "source": "osm"
-    },
-    {
-      "nom": "Devils Rock",
-      "lat": 30.5068242,
-      "lng": -9.6882845,
-      "coordonnees": {
-        "lat": 30.5068242,
-        "lng": -9.6882845
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=30.5068242,-9.6882845",
-      "source": "osm"
-    },
-    {
-      "nom": "Tamraght Beach",
-      "lat": 30.512174,
-      "lng": -9.6875989,
-      "coordonnees": {
-        "lat": 30.512174,
-        "lng": -9.6875989
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=30.512174,-9.6875989",
-      "source": "osm"
-    },
-    {
-      "nom": "Panorama Beach Surf",
-      "lat": 30.542904,
-      "lng": -9.7074524,
-      "coordonnees": {
-        "lat": 30.542904,
-        "lng": -9.7074524
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=30.542904,-9.7074524",
-      "source": "osm"
-    },
-    {
-      "nom": "Taghazout Skatepark",
-      "lat": 30.5481643,
-      "lng": -9.7131242,
-      "coordonnees": {
-        "lat": 30.5481643,
-        "lng": -9.7131242
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=30.5481643,-9.7131242",
-      "source": "osm"
-    },
-    {
-      "nom": "Anchor Point",
-      "lat": 30.5452832,
-      "lng": -9.7267868,
-      "coordonnees": {
-        "lat": 30.5452832,
-        "lng": -9.7267868
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=30.5452832,-9.7267868",
-      "source": "osm"
-    }
-  ],
-  "codeISO": "MA",
-  "image": "https://images.unsplash.com/photo-1710092538995-4af0c11a3f3c?w=1600&q=80",
-  "continent": "Afrique",
-  "metaDescription": "Restaurants halal signalés, mosquées et guide pratique pour Agadir — Halal Trust Score 5/5.",
-  "image_hero": "https://images.unsplash.com/photo-1710092538995-4af0c11a3f3c?w=1600&q=80",
-  "mosqueesPrincipales": [
-    {
-      "nom": "Mosquée de Walhori مسجد والحوري",
-      "lat": 30.3737347,
-      "lng": -9.5344593,
-      "coordonnees": {
-        "lat": 30.3737347,
-        "lng": -9.5344593
-      },
-      "mapsUrl": "https://maps.google.com/?q=30.3737347,-9.5344593",
-      "source": "osm"
-    }
-  ],
-  "selectionsPremium": {
-    "mieuxNotes": [
-      "La Scala Agadir",
-      "Sofitel Agadir Royal Bay Restaurant",
-      "Ao Nhà",
-      "Little Switzerland Agadir",
-      "Chinatown Agadir"
-    ],
-    "meilleurRapportQualitePrix": [
-      "Le Jardin d'Agadir",
-      "Little Switzerland Agadir",
-      "Mezzo di Pasta",
-      "Tikka Café Agadir",
-      "Chinatown Agadir"
-    ],
-    "incontournables": [
-      "Restaurant Atlas",
-      "Mezzo di Pasta",
-      "Agadir Halal BBQ",
-      "Pizza Roma Agadir",
-      "Club Med Agadir Restaurant"
-    ],
-    "pepitesCachees": [
-      "Iberostar Agadir Restaurant"
-    ],
-    "idealFamille": [
-      "Le Jardin d'Agadir",
-      "Restaurant Jour et Nuit",
-      "Little Switzerland Agadir",
-      "Mezzo di Pasta",
-      "La Table d'Hôte"
-    ],
-    "gastronomique": [
-      "La Scala Agadir",
-      "La Villa Blanche",
-      "Sofitel Agadir Royal Bay Restaurant"
-    ],
-    "ouvertNuit": [
-      "Little Switzerland Agadir",
-      "Mezzo di Pasta",
-      "Agadir Halal BBQ"
-    ],
-    "vueExceptionnelle": [
-      "Fish & Chips Agadir",
-      "Port Halal Seafood"
-    ]
+  {
+   "nom": "Jour & Nuit Restaurant",
+   "lat": 30.4209946,
+   "lng": -9.6087279,
+   "type": "burger, grill, local, moroccan, pizza",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=30.4209946,-9.6087279",
+   "source": "osm"
   },
-  "halalScore": 8.2,
-  "description_en": "Agadir, in Morocco, is a halal-friendly destination with a Halal Trust Score of 4.1/5. Muslim travelers will find 44 halal restaurants listed, 180 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind. Best time to visit: year-round.",
-  "metaDescription_en": "Halal guide to Agadir: 44 halal restaurants listed, 180 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.1/5.",
-  "nom_en": "Agadir",
-  "boucheries": [],
-  "infos_pratiques_en": {
-    "monnaie": "Moroccan dirham (MAD)",
-    "fuseau_horaire": "GMT+1",
-    "meilleure_periode": "Year-round (meilleur : March–May, October–November)",
-    "transport": "Taxi, bus, location de voiture recommended"
+  {
+   "nom": "Bab Agadir",
+   "lat": 30.4159937,
+   "lng": -9.5965997,
+   "type": "moroccan",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=30.4159937,-9.5965997",
+   "source": "osm"
+  },
+  {
+   "nom": "Café Aslal مقهى أسلال",
+   "lat": 30.4090353,
+   "lng": -9.5673744,
+   "type": "coffee shop, arab, breakfast, tea",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=30.4090353,-9.5673744",
+   "source": "osm"
+  },
+  {
+   "nom": "مطعم الرباطي",
+   "lat": 30.4026674,
+   "lng": -9.5502484,
+   "type": "moroccan",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=30.4026674,-9.5502484",
+   "source": "osm"
+  },
+  {
+   "nom": "Sodivias",
+   "lat": 30.3982853,
+   "lng": -9.5253241,
+   "type": "moroccan",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=30.3982853,-9.5253241",
+   "source": "osm"
   }
+ ],
+ "mosquees": [],
+ "hotels": [
+  {
+   "nom": "Hotel Aferni",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4245429,-9.601552",
+   "lat": 30.4245429,
+   "lng": -9.601552,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4245429,-9.601552",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Tamri",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4234456,-9.595754",
+   "lat": 30.4234456,
+   "lng": -9.595754,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4234456,-9.595754",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Excelsior",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4253141,-9.5930872",
+   "lat": 30.4253141,
+   "lng": -9.5930872,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4253141,-9.5930872",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Ait Laayoune",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4251476,-9.5928217",
+   "lat": 30.4251476,
+   "lng": -9.5928217,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4251476,-9.5928217",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Sindibad",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "score": 2,
+   "mapsUrl": "https://maps.google.com/?q=30.4246962,-9.5929787",
+   "lat": 30.4246962,
+   "lng": -9.5929787,
+   "halalFriendly": false,
+   "bookingUrl": "http://hotel-Sindibad.hotels-Agadir.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Massa",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.424663,-9.5927274",
+   "lat": 30.424663,
+   "lng": -9.5927274,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.424663,-9.5927274",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Diaf",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4233112,-9.5940788",
+   "lat": 30.4233112,
+   "lng": -9.5940788,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4233112,-9.5940788",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Canaria",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4244269,-9.5924558",
+   "lat": 30.4244269,
+   "lng": -9.5924558,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4244269,-9.5924558",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel el Bahia",
+   "categorie": "Hôtel",
+   "priceRange": "€€€",
+   "score": 3,
+   "mapsUrl": "https://maps.google.com/?q=30.4236651,-9.5931401",
+   "lat": 30.4236651,
+   "lng": -9.5931401,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4236651,-9.5931401",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Itrane",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4220464,-9.5958884",
+   "lat": 30.4220464,
+   "lng": -9.5958884,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4220464,-9.5958884",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Petite Suede",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4231807,-9.6036677",
+   "lat": 30.4231807,
+   "lng": -9.6036677,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4231807,-9.6036677",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Tiznine",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4216329,-9.5950584",
+   "lat": 30.4216329,
+   "lng": -9.5950584,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4216329,-9.5950584",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Atlas",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4214681,-9.5951843",
+   "lat": 30.4214681,
+   "lng": -9.5951843,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4214681,-9.5951843",
+   "source": "osm"
+  },
+  {
+   "nom": "APPART HÔTEL AZOUR",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4245391,-9.5903939",
+   "lat": 30.4245391,
+   "lng": -9.5903939,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4245391,-9.5903939",
+   "source": "osm"
+  },
+  {
+   "nom": "Kamal city center",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4196126,-9.5987772",
+   "lat": 30.4196126,
+   "lng": -9.5987772,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4196126,-9.5987772",
+   "source": "osm"
+  },
+  {
+   "nom": "Suite Hotel Tilila",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.422126,-9.605306",
+   "lat": 30.422126,
+   "lng": -9.605306,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.422126,-9.605306",
+   "source": "osm"
+  },
+  {
+   "nom": "Atlantic",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4193518,-9.5976166",
+   "lat": 30.4193518,
+   "lng": -9.5976166,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.atlantichotelagadir.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Tildi Hotel & Spa",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4233971,-9.6065322",
+   "lat": 30.4233971,
+   "lng": -9.6065322,
+   "halalFriendly": false,
+   "bookingUrl": "https://hoteltildi.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Assaka",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4191566,-9.5982837",
+   "lat": 30.4191566,
+   "lng": -9.5982837,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4191566,-9.5982837",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Résidence Louban",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4192253,-9.5995962",
+   "lat": 30.4192253,
+   "lng": -9.5995962,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4192253,-9.5995962",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Marhaba",
+   "categorie": "Hôtel",
+   "priceRange": "€€€",
+   "score": 3,
+   "mapsUrl": "https://maps.google.com/?q=30.4222393,-9.6059843",
+   "lat": 30.4222393,
+   "lng": -9.6059843,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4222393,-9.6059843",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel les palmiers",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.419012,-9.5998109",
+   "lat": 30.419012,
+   "lng": -9.5998109,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.419012,-9.5998109",
+   "source": "osm"
+  },
+  {
+   "nom": "Agadirinou House",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4222655,-9.5899952",
+   "lat": 30.4222655,
+   "lng": -9.5899952,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4222655,-9.5899952",
+   "source": "osm"
+  },
+  {
+   "nom": "Résidence sacha",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4188102,-9.5988834",
+   "lat": 30.4188102,
+   "lng": -9.5988834,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4188102,-9.5988834",
+   "source": "osm"
+  },
+  {
+   "nom": "Oasis",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4228614,-9.6069114",
+   "lat": 30.4228614,
+   "lng": -9.6069114,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4228614,-9.6069114",
+   "source": "osm"
+  },
+  {
+   "nom": "Residence Yasmina",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.418691,-9.5982691",
+   "lat": 30.418691,
+   "lng": -9.5982691,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.418691,-9.5982691",
+   "source": "osm"
+  },
+  {
+   "nom": "Résidence Tislit",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4187061,-9.6000867",
+   "lat": 30.4187061,
+   "lng": -9.6000867,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4187061,-9.6000867",
+   "source": "osm"
+  },
+  {
+   "nom": "Beach Albatros",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4195366,-9.6036817",
+   "lat": 30.4195366,
+   "lng": -9.6036817,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4195366,-9.6036817",
+   "source": "osm"
+  },
+  {
+   "nom": "Odyssee",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4188019,-9.6021098",
+   "lat": 30.4188019,
+   "lng": -9.6021098,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4188019,-9.6021098",
+   "source": "osm"
+  },
+  {
+   "nom": "Appart Hotel Fleurie",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4183115,-9.5945311",
+   "lat": 30.4183115,
+   "lng": -9.5945311,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4183115,-9.5945311",
+   "source": "osm"
+  },
+  {
+   "nom": "Residence Isni",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4182796,-9.5941731",
+   "lat": 30.4182796,
+   "lng": -9.5941731,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4182796,-9.5941731",
+   "source": "osm"
+  },
+  {
+   "nom": "New Farah Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4179965,-9.5948106",
+   "lat": 30.4179965,
+   "lng": -9.5948106,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4179965,-9.5948106",
+   "source": "osm"
+  },
+  {
+   "nom": "Studiotel Afoud",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4176833,-9.5959958",
+   "lat": 30.4176833,
+   "lng": -9.5959958,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4176833,-9.5959958",
+   "source": "osm"
+  },
+  {
+   "nom": "Anezi Tower",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4169263,-9.6001617",
+   "lat": 30.4169263,
+   "lng": -9.6001617,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4169263,-9.6001617",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Moggar",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4224423,-9.6093658",
+   "lat": 30.4224423,
+   "lng": -9.6093658,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4224423,-9.6093658",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Anezi",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4167451,-9.6011863",
+   "lat": 30.4167451,
+   "lng": -9.6011863,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4167451,-9.6011863",
+   "source": "osm"
+  },
+  {
+   "nom": "Kenzi Europa",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4171556,-9.6028382",
+   "lat": 30.4171556,
+   "lng": -9.6028382,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4171556,-9.6028382",
+   "source": "osm"
+  },
+  {
+   "nom": "Chez Christian Et Rachida",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4333687,-9.5855772",
+   "lat": 30.4333687,
+   "lng": -9.5855772,
+   "halalFriendly": false,
+   "bookingUrl": "https://abnb.me/QHoNdycfevb",
+   "source": "osm"
+  },
+  {
+   "nom": "Royal Decameron Tafoukt Beach Resort",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 4,
+   "mapsUrl": "https://maps.google.com/?q=30.4166309,-9.6042715",
+   "lat": 30.4166309,
+   "lng": -9.6042715,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4166309,-9.6042715",
+   "source": "osm"
+  },
+  {
+   "nom": "Stay Here Ocean View",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4249319,-9.6125299",
+   "lat": 30.4249319,
+   "lng": -9.6125299,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4249319,-9.6125299",
+   "source": "osm"
+  },
+  {
+   "nom": "Boutique Hotel Tagadirt",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4150193,-9.6009618",
+   "lat": 30.4150193,
+   "lng": -9.6009618,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4150193,-9.6009618",
+   "source": "osm"
+  },
+  {
+   "nom": "The View Agadir",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 5,
+   "mapsUrl": "https://maps.google.com/?q=30.415524,-9.6035291",
+   "lat": 30.415524,
+   "lng": -9.6035291,
+   "halalFriendly": false,
+   "bookingUrl": "https://theviewhotels.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Les Chtis d'Agadir",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4171173,-9.588974",
+   "lat": 30.4171173,
+   "lng": -9.588974,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.riadleschtisdagadir.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Transatlantique",
+   "categorie": "Hôtel",
+   "priceRange": "€€€",
+   "score": 3,
+   "mapsUrl": "https://maps.google.com/?q=30.4144713,-9.5990065",
+   "lat": 30.4144713,
+   "lng": -9.5990065,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4144713,-9.5990065",
+   "source": "osm"
+  },
+  {
+   "nom": "Appart-Hôtel Igoudar",
+   "categorie": "Appartement",
+   "priceRange": "€€€",
+   "score": 3,
+   "mapsUrl": "https://maps.google.com/?q=30.4140734,-9.5997226",
+   "lat": 30.4140734,
+   "lng": -9.5997226,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4140734,-9.5997226",
+   "source": "osm"
+  },
+  {
+   "nom": "Hôtel Argana",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4134319,-9.5982131",
+   "lat": 30.4134319,
+   "lng": -9.5982131,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4134319,-9.5982131",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Mabrouk",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4129843,-9.5987884",
+   "lat": 30.4129843,
+   "lng": -9.5987884,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4129843,-9.5987884",
+   "source": "osm"
+  },
+  {
+   "nom": "Club Med Agadir",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4133,-9.6027198",
+   "lat": 30.4133,
+   "lng": -9.6027198,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4133,-9.6027198",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Adrar Sahara Agadir",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4125552,-9.5975228",
+   "lat": 30.4125552,
+   "lng": -9.5975228,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4125552,-9.5975228",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Royal",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4119857,-9.5969341",
+   "lat": 30.4119857,
+   "lng": -9.5969341,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4119857,-9.5969341",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Coralia Club Agadir La Kasbah",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4116233,-9.5981061",
+   "lat": 30.4116233,
+   "lng": -9.5981061,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4116233,-9.5981061",
+   "source": "osm"
+  },
+  {
+   "nom": "Sahara Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 4,
+   "mapsUrl": "https://maps.google.com/?q=30.4116816,-9.5962331",
+   "lat": 30.4116816,
+   "lng": -9.5962331,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4116816,-9.5962331",
+   "source": "osm"
+  },
+  {
+   "nom": "Location Appartement Marina Agadir",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4241152,-9.6171704",
+   "lat": 30.4241152,
+   "lng": -9.6171704,
+   "halalFriendly": false,
+   "bookingUrl": "https://story.snapchat.com/u/marinamrynkdy20?share_id=MjYwREQ2&locale=en_FR",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Solman",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4117063,-9.5915616",
+   "lat": 30.4117063,
+   "lng": -9.5915616,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4117063,-9.5915616",
+   "source": "osm"
+  },
+  {
+   "nom": "إقامة مارينا أكادير",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4235303,-9.6175775",
+   "lat": 30.4235303,
+   "lng": -9.6175775,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4235303,-9.6175775",
+   "source": "osm"
+  },
+  {
+   "nom": "Caribbean Village Agador",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4101527,-9.5976292",
+   "lat": 30.4101527,
+   "lng": -9.5976292,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4101527,-9.5976292",
+   "source": "osm"
+  },
+  {
+   "nom": "Marina Agadir Morocco",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4240076,-9.618312",
+   "lat": 30.4240076,
+   "lng": -9.618312,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4240076,-9.618312",
+   "source": "osm"
+  },
+  {
+   "nom": "Amanar Marina By Vacaloc",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4239733,-9.618311",
+   "lat": 30.4239733,
+   "lng": -9.618311,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4239733,-9.618311",
+   "source": "osm"
+  },
+  {
+   "nom": "Residence Rihab",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4098177,-9.6013925",
+   "lat": 30.4098177,
+   "lng": -9.6013925,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4098177,-9.6013925",
+   "source": "osm"
+  },
+  {
+   "nom": "Atlas Marina Beach",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4223857,-9.6187986",
+   "lat": 30.4223857,
+   "lng": -9.6187986,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4223857,-9.6187986",
+   "source": "osm"
+  },
+  {
+   "nom": "Blue Sea Le Tivoli",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4081166,-9.5963041",
+   "lat": 30.4081166,
+   "lng": -9.5963041,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4081166,-9.5963041",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Riu Palace Tikida Agadir",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 5,
+   "mapsUrl": "https://maps.google.com/?q=30.4079552,-9.6003929",
+   "lat": 30.4079552,
+   "lng": -9.6003929,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.riu.com/en/hotel/morocco/agadir/hotel-riu-palace-tikida-agadir",
+   "source": "osm"
+  },
+  {
+   "nom": "El Pueblo Tamlelt",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4077973,-9.5982125",
+   "lat": 30.4077973,
+   "lng": -9.5982125,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4077973,-9.5982125",
+   "source": "osm"
+  },
+  {
+   "nom": "Senator Agadir Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4103149,-9.5829455",
+   "lat": 30.4103149,
+   "lng": -9.5829455,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4103149,-9.5829455",
+   "source": "osm"
+  },
+  {
+   "nom": "Marmara Les Jardins",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4059388,-9.5974836",
+   "lat": 30.4059388,
+   "lng": -9.5974836,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4059388,-9.5974836",
+   "source": "osm"
+  },
+  {
+   "nom": "Les Dunes d'Or",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4052157,-9.5999171",
+   "lat": 30.4052157,
+   "lng": -9.5999171,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4052157,-9.5999171",
+   "source": "osm"
+  },
+  {
+   "nom": "Atlantic Palace Casino & Resort",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 5,
+   "mapsUrl": "https://maps.google.com/?q=30.4050064,-9.5958211",
+   "lat": 30.4050064,
+   "lng": -9.5958211,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4050064,-9.5958211",
+   "source": "osm"
+  },
+  {
+   "nom": "Labranda Amadil Beach",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 4,
+   "mapsUrl": "https://maps.google.com/?q=30.4033609,-9.6001834",
+   "lat": 30.4033609,
+   "lng": -9.6001834,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.labranda.com/en/hotel/labranda-amadil-beach.html",
+   "source": "osm"
+  },
+  {
+   "nom": "Boutique Khalij",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4032579,-9.5976236",
+   "lat": 30.4032579,
+   "lng": -9.5976236,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4032579,-9.5976236",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Riu Tikida Beach",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 4,
+   "mapsUrl": "https://maps.google.com/?q=30.4024942,-9.5994291",
+   "lat": 30.4024942,
+   "lng": -9.5994291,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.riu.com/en/hotel/morocco/agadir/hotel-riu-tikida-beach/",
+   "source": "osm"
+  },
+  {
+   "nom": "ALHAMRA",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4133035,-9.5723173",
+   "lat": 30.4133035,
+   "lng": -9.5723173,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4133035,-9.5723173",
+   "source": "osm"
+  },
+  {
+   "nom": "Atlantic Palm Beach",
+   "categorie": "Hôtel",
+   "priceRange": "€€€",
+   "score": 3,
+   "mapsUrl": "https://maps.google.com/?q=30.4016343,-9.5912588",
+   "lat": 30.4016343,
+   "lng": -9.5912588,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4016343,-9.5912588",
+   "source": "osm"
+  },
+  {
+   "nom": "Golden Beach Apart",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4006017,-9.5971014",
+   "lat": 30.4006017,
+   "lng": -9.5971014,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4006017,-9.5971014",
+   "source": "osm"
+  },
+  {
+   "nom": "Appart Hôtel Founty Beach",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4017241,-9.5889383",
+   "lat": 30.4017241,
+   "lng": -9.5889383,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4017241,-9.5889383",
+   "source": "osm"
+  },
+  {
+   "nom": "Centre de vacance BP.CHAABI مركز الاصطياف للبنك الشعبي",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4002101,-9.5954413",
+   "lat": 30.4002101,
+   "lng": -9.5954413,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4002101,-9.5954413",
+   "source": "osm"
+  },
+  {
+   "nom": "Résidence Intouriste",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4004164,-9.5913206",
+   "lat": 30.4004164,
+   "lng": -9.5913206,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4004164,-9.5913206",
+   "source": "osm"
+  },
+  {
+   "nom": "Rofaida Appart'Hôtel",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4002384,-9.5903907",
+   "lat": 30.4002384,
+   "lng": -9.5903907,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4002384,-9.5903907",
+   "source": "osm"
+  },
+  {
+   "nom": "Zephyr Agadir",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4006044,-9.5877769",
+   "lat": 30.4006044,
+   "lng": -9.5877769,
+   "halalFriendly": false,
+   "bookingUrl": "https://zephyrhotels.ma/zephyragadir",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Riu Tikida Dunas",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 4,
+   "mapsUrl": "https://maps.google.com/?q=30.3989533,-9.5986285",
+   "lat": 30.3989533,
+   "lng": -9.5986285,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.riu.com/en/hotel/morocco/agadir/hotel-riu-tikida-dunas",
+   "source": "osm"
+  },
+  {
+   "nom": "Omega Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.398843,-9.5917451",
+   "lat": 30.398843,
+   "lng": -9.5917451,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.398843,-9.5917451",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Residence RIHAB",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.3983065,-9.5943353",
+   "lat": 30.3983065,
+   "lng": -9.5943353,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.3983065,-9.5943353",
+   "source": "osm"
+  },
+  {
+   "nom": "Aga 1102",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4333889,-9.5633889",
+   "lat": 30.4333889,
+   "lng": -9.5633889,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4333889,-9.5633889",
+   "source": "osm"
+  },
+  {
+   "nom": "Borjs Hotel Suites & SPA",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.3972799,-9.5943254",
+   "lat": 30.3972799,
+   "lng": -9.5943254,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.3972799,-9.5943254",
+   "source": "osm"
+  },
+  {
+   "nom": "Iberostar Waves Founty Beach",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 4,
+   "mapsUrl": "https://maps.google.com/?q=30.3967259,-9.5972277",
+   "lat": 30.3967259,
+   "lng": -9.5972277,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.iberostar.com/en/hotels/agadir/iberostar-founty-beach/",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Timoulay",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.3967183,-9.5939441",
+   "lat": 30.3967183,
+   "lng": -9.5939441,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.3967183,-9.5939441",
+   "source": "osm"
+  },
+  {
+   "nom": "Bo Hotel & Spa",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.3960472,-9.5938251",
+   "lat": 30.3960472,
+   "lng": -9.5938251,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.3960472,-9.5938251",
+   "source": "osm"
+  },
+  {
+   "nom": "Sweethome",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4379762,-9.5623591",
+   "lat": 30.4379762,
+   "lng": -9.5623591,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4379762,-9.5623591",
+   "source": "osm"
+  },
+  {
+   "nom": "Hôtel Palais des Roses",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 4,
+   "mapsUrl": "https://maps.google.com/?q=30.3949504,-9.5966503",
+   "lat": 30.3949504,
+   "lng": -9.5966503,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.3949504,-9.5966503",
+   "source": "osm"
+  },
+  {
+   "nom": "Rida CS",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4197276,-9.5597107",
+   "lat": 30.4197276,
+   "lng": -9.5597107,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4197276,-9.5597107",
+   "source": "osm"
+  },
+  {
+   "nom": "Sofitel Agadir Thalassa Sea & Spa",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.3916119,-9.5981923",
+   "lat": 30.3916119,
+   "lng": -9.5981923,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.3916119,-9.5981923",
+   "source": "osm"
+  },
+  {
+   "nom": "Amane founty",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.3995118,-9.5706752",
+   "lat": 30.3995118,
+   "lng": -9.5706752,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.3995118,-9.5706752",
+   "source": "osm"
+  },
+  {
+   "nom": "La Villa Blanche",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.3899131,-9.5941366",
+   "lat": 30.3899131,
+   "lng": -9.5941366,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.3899131,-9.5941366",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Tilado",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4092152,-9.5582144",
+   "lat": 30.4092152,
+   "lng": -9.5582144,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4092152,-9.5582144",
+   "source": "osm"
+  },
+  {
+   "nom": "Robinson Club",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.387761,-9.5938494",
+   "lat": 30.387761,
+   "lng": -9.5938494,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.387761,-9.5938494",
+   "source": "osm"
+  },
+  {
+   "nom": "La Porte Des Etoiles",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4098401,-9.5521292",
+   "lat": 30.4098401,
+   "lng": -9.5521292,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4098401,-9.5521292",
+   "source": "osm"
+  },
+  {
+   "nom": "Aga 1083",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.3951111,-9.5608611",
+   "lat": 30.3951111,
+   "lng": -9.5608611,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.3951111,-9.5608611",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar Agadir",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.40069,-9.5524067",
+   "lat": 30.40069,
+   "lng": -9.5524067,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.40069,-9.5524067",
+   "source": "osm"
+  },
+  {
+   "nom": "Résidence Étudiante La Teranga",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.402697,-9.549956",
+   "lat": 30.402697,
+   "lng": -9.549956,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.402697,-9.549956",
+   "source": "osm"
+  },
+  {
+   "nom": "siham",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.3891965,-9.5596712",
+   "lat": 30.3891965,
+   "lng": -9.5596712,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.3891965,-9.5596712",
+   "source": "osm"
+  },
+  {
+   "nom": "Maison Marocaine",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.3802751,-9.5666057",
+   "lat": 30.3802751,
+   "lng": -9.5666057,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.3802751,-9.5666057",
+   "source": "osm"
+  },
+  {
+   "nom": "Jacaranda",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.3795,-9.5665661",
+   "lat": 30.3795,
+   "lng": -9.5665661,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.3795,-9.5665661",
+   "source": "osm"
+  },
+  {
+   "nom": "Tamount Surf Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4474586,-9.6586992",
+   "lat": 30.4474586,
+   "lng": -9.6586992,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.4474586,-9.6586992",
+   "source": "osm"
+  },
+  {
+   "nom": "Aga 1090 az",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.392842,-9.542842",
+   "lat": 30.392842,
+   "lng": -9.542842,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.392842,-9.542842",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel La Pergola",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.3722814,-9.5517679",
+   "lat": 30.3722814,
+   "lng": -9.5517679,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.3722814,-9.5517679",
+   "source": "osm"
+  },
+  {
+   "nom": "Tikida Golf Palace",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.3584144,-9.5614847",
+   "lat": 30.3584144,
+   "lng": -9.5614847,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.3584144,-9.5614847",
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Bianca Beach",
+   "lat": 30.4209263,
+   "lng": -9.6169652,
+   "coordonnees": {
+    "lat": 30.4209263,
+    "lng": -9.6169652
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=30.4209263,-9.6169652",
+   "source": "osm"
+  },
+  {
+   "nom": "Souk El Had",
+   "lat": 30.4125105,
+   "lng": -9.5797504,
+   "coordonnees": {
+    "lat": 30.4125105,
+    "lng": -9.5797504
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=30.4125105,-9.5797504",
+   "source": "osm"
+  },
+  {
+   "nom": "Kasbah Agadir Oufellah",
+   "lat": 30.42974,
+   "lng": -9.6247621,
+   "coordonnees": {
+    "lat": 30.42974,
+    "lng": -9.6247621
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=30.42974,-9.6247621",
+   "source": "osm"
+  },
+  {
+   "nom": "lieu plongeur",
+   "lat": 30.4176269,
+   "lng": -9.6413516,
+   "coordonnees": {
+    "lat": 30.4176269,
+    "lng": -9.6413516
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=30.4176269,-9.6413516",
+   "source": "osm"
+  },
+  {
+   "nom": "Night market",
+   "lat": 30.4064173,
+   "lng": -9.551043,
+   "coordonnees": {
+    "lat": 30.4064173,
+    "lng": -9.551043
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=30.4064173,-9.551043",
+   "source": "osm"
+  },
+  {
+   "nom": "Kasbat souss",
+   "lat": 30.3846123,
+   "lng": -9.5726284,
+   "coordonnees": {
+    "lat": 30.3846123,
+    "lng": -9.5726284
+   },
+   "categorie": "Shopping",
+   "mapsUrl": "https://maps.google.com/?q=30.3846123,-9.5726284",
+   "source": "osm"
+  },
+  {
+   "nom": "Musée de Géologie",
+   "lat": 30.4443476,
+   "lng": -9.6551752,
+   "coordonnees": {
+    "lat": 30.4443476,
+    "lng": -9.6551752
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=30.4443476,-9.6551752",
+   "source": "osm"
+  },
+  {
+   "nom": "La Médina d'Agadir",
+   "lat": 30.3784915,
+   "lng": -9.572454,
+   "coordonnees": {
+    "lat": 30.3784915,
+    "lng": -9.572454
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=30.3784915,-9.572454",
+   "source": "osm"
+  },
+  {
+   "nom": "Geopark",
+   "lat": 30.4458535,
+   "lng": -9.6607119,
+   "coordonnees": {
+    "lat": 30.4458535,
+    "lng": -9.6607119
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=30.4458535,-9.6607119",
+   "source": "osm"
+  },
+  {
+   "nom": "terrain abdelaziz refkki",
+   "lat": 30.4573233,
+   "lng": -9.6628052,
+   "coordonnees": {
+    "lat": 30.4573233,
+    "lng": -9.6628052
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=30.4573233,-9.6628052",
+   "source": "osm"
+  },
+  {
+   "nom": "le pati",
+   "lat": 30.5012717,
+   "lng": -9.581553,
+   "coordonnees": {
+    "lat": 30.5012717,
+    "lng": -9.581553
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=30.5012717,-9.581553",
+   "source": "osm"
+  },
+  {
+   "nom": "تزرزيت و الرباب",
+   "lat": 30.3714333,
+   "lng": -9.5319586,
+   "coordonnees": {
+    "lat": 30.3714333,
+    "lng": -9.5319586
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=30.3714333,-9.5319586",
+   "source": "osm"
+  },
+  {
+   "nom": "Jardin Botanique",
+   "lat": 30.5081471,
+   "lng": -9.5919861,
+   "coordonnees": {
+    "lat": 30.5081471,
+    "lng": -9.5919861
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=30.5081471,-9.5919861",
+   "source": "osm"
+  },
+  {
+   "nom": "Surfspot Km11 Km12",
+   "lat": 30.495287,
+   "lng": -9.6765935,
+   "coordonnees": {
+    "lat": 30.495287,
+    "lng": -9.6765935
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=30.495287,-9.6765935",
+   "source": "osm"
+  },
+  {
+   "nom": "Banana point",
+   "lat": 30.5022102,
+   "lng": -9.6834593,
+   "coordonnees": {
+    "lat": 30.5022102,
+    "lng": -9.6834593
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=30.5022102,-9.6834593",
+   "source": "osm"
+  },
+  {
+   "nom": "Devils Rock",
+   "lat": 30.5068242,
+   "lng": -9.6882845,
+   "coordonnees": {
+    "lat": 30.5068242,
+    "lng": -9.6882845
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=30.5068242,-9.6882845",
+   "source": "osm"
+  },
+  {
+   "nom": "Tamraght Beach",
+   "lat": 30.512174,
+   "lng": -9.6875989,
+   "coordonnees": {
+    "lat": 30.512174,
+    "lng": -9.6875989
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=30.512174,-9.6875989",
+   "source": "osm"
+  },
+  {
+   "nom": "Panorama Beach Surf",
+   "lat": 30.542904,
+   "lng": -9.7074524,
+   "coordonnees": {
+    "lat": 30.542904,
+    "lng": -9.7074524
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=30.542904,-9.7074524",
+   "source": "osm"
+  },
+  {
+   "nom": "Taghazout Skatepark",
+   "lat": 30.5481643,
+   "lng": -9.7131242,
+   "coordonnees": {
+    "lat": 30.5481643,
+    "lng": -9.7131242
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=30.5481643,-9.7131242",
+   "source": "osm"
+  },
+  {
+   "nom": "Anchor Point",
+   "lat": 30.5452832,
+   "lng": -9.7267868,
+   "coordonnees": {
+    "lat": 30.5452832,
+    "lng": -9.7267868
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=30.5452832,-9.7267868",
+   "source": "osm"
+  }
+ ],
+ "codeISO": "MA",
+ "image": "https://images.unsplash.com/photo-1710092538995-4af0c11a3f3c?w=1600&q=80",
+ "continent": "Afrique",
+ "metaDescription": "Restaurants halal signalés, mosquées et guide pratique pour Agadir — Halal Trust Score 5/5.",
+ "image_hero": "https://images.unsplash.com/photo-1710092538995-4af0c11a3f3c?w=1600&q=80",
+ "mosqueesPrincipales": [
+  {
+   "nom": "Mosquée de Walhori مسجد والحوري",
+   "lat": 30.3737347,
+   "lng": -9.5344593,
+   "coordonnees": {
+    "lat": 30.3737347,
+    "lng": -9.5344593
+   },
+   "mapsUrl": "https://maps.google.com/?q=30.3737347,-9.5344593",
+   "source": "osm"
+  }
+ ],
+ "halalScore": 8.2,
+ "description_en": "Agadir, in Morocco, is a halal-friendly destination with a Halal Trust Score of 4.1/5. Muslim travelers will find 44 halal restaurants listed, 180 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind. Best time to visit: year-round.",
+ "metaDescription_en": "Halal guide to Agadir: 44 halal restaurants listed, 180 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.1/5.",
+ "nom_en": "Agadir",
+ "boucheries": [],
+ "infos_pratiques_en": {
+  "monnaie": "Moroccan dirham (MAD)",
+  "fuseau_horaire": "GMT+1",
+  "meilleure_periode": "Year-round (meilleur : March–May, October–November)",
+  "transport": "Taxi, bus, location de voiture recommended"
+ },
+ "dataPurgedAt": "2026-07-15"
 }

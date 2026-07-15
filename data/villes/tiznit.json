@@ -1,384 +1,345 @@
 {
-  "slug": "tiznit",
-  "nom": "Tiznit",
-  "pays": "Maroc",
-  "pays_slug": "maroc",
-  "continent": "Afrique",
-  "region": "Sud du Maroc",
-  "coordonnees": {
-    "lat": 29.6974,
-    "lng": -9.7316
-  },
-  "codeISO": "MA",
-  "score_halal": 4.5,
-  "halalScore": 9.1,
-  "description": "Capitale de la bijouterie d'argent berbère, ceinte de remparts de pisé roses. Proche des plages sauvages d'Aglou et de l'Anti-Atlas.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Tafraoute-Tiznit_col_du_Kerdous_113_1354.JPG/1920px-Tafraoute-Tiznit_col_du_Kerdous_113_1354.JPG",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Tafraoute-Tiznit_col_du_Kerdous_113_1354.JPG/1920px-Tafraoute-Tiznit_col_du_Kerdous_113_1354.JPG",
-  "metaDescription": "Capitale de la bijouterie d'argent berbère, ceinte de remparts de pisé roses. Proche des plages sauvages d'Aglou et de l'Anti-Atlas.",
+ "slug": "tiznit",
+ "nom": "Tiznit",
+ "pays": "Maroc",
+ "pays_slug": "maroc",
+ "continent": "Afrique",
+ "region": "Sud du Maroc",
+ "coordonnees": {
+  "lat": 29.6974,
+  "lng": -9.7316
+ },
+ "codeISO": "MA",
+ "score_halal": 4.5,
+ "halalScore": 9.1,
+ "description": "Capitale de la bijouterie d'argent berbère, ceinte de remparts de pisé roses. Proche des plages sauvages d'Aglou et de l'Anti-Atlas.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Tafraoute-Tiznit_col_du_Kerdous_113_1354.JPG/1920px-Tafraoute-Tiznit_col_du_Kerdous_113_1354.JPG",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Tafraoute-Tiznit_col_du_Kerdous_113_1354.JPG/1920px-Tafraoute-Tiznit_col_du_Kerdous_113_1354.JPG",
+ "metaDescription": "Capitale de la bijouterie d'argent berbère, ceinte de remparts de pisé roses. Proche des plages sauvages d'Aglou et de l'Anti-Atlas.",
+ "monnaie": "MAD (Dirham marocain)",
+ "langue": "Arabe, Tamazight, Français",
+ "statistiques": {
+  "restaurants_halal": 1,
+  "mosquees": 2,
+  "hotels": 15
+ },
+ "infoPratique": {
   "monnaie": "MAD (Dirham marocain)",
   "langue": "Arabe, Tamazight, Français",
-  "statistiques": {
-    "restaurants_halal": 1,
-    "mosquees": 1,
-    "hotels": 16
+  "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
+  "meilleureEpoque": "Printemps et automne (climat doux)."
+ },
+ "tags": [
+  "halal",
+  "Maroc"
+ ],
+ "restaurants": [
+  {
+   "nom": "Le Lieu",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.6970123,-9.7310595",
+   "lat": 29.6970123,
+   "lng": -9.7310595,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "Hotel des Touristes",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.6980037,-9.7315724",
+   "lat": 29.6980037,
+   "lng": -9.7315724,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=29.6980037,-9.7315724",
+   "source": "osm"
   },
-  "infoPratique": {
-    "monnaie": "MAD (Dirham marocain)",
-    "langue": "Arabe, Tamazight, Français",
-    "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
-    "meilleureEpoque": "Printemps et automne (climat doux)."
+  {
+   "nom": "Le Lieu",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.6984934,-9.731326",
+   "lat": 29.6984934,
+   "lng": -9.731326,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=29.6984934,-9.731326",
+   "source": "osm"
   },
-  "tags": [
-    "halal",
-    "Maroc"
-  ],
-  "restaurants": [
-    {
-      "nom": "Le Lieu",
-      "type": "moroccan",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=29.6970123,-9.7310595",
-      "lat": 29.6970123,
-      "lng": -9.7310595,
-      "halalConfidence": "likely",
-      "source": "osm"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "Hotel des Touristes",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=29.6980037,-9.7315724",
-      "lat": 29.6980037,
-      "lng": -9.7315724,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=29.6980037,-9.7315724",
-      "source": "osm"
-    },
-    {
-      "nom": "Le Lieu",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=29.6984934,-9.731326",
-      "lat": 29.6984934,
-      "lng": -9.731326,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=29.6984934,-9.731326",
-      "source": "osm"
-    },
-    {
-      "nom": "Hôtel Bellevue",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=29.6975288,-9.7302572",
-      "lat": 29.6975288,
-      "lng": -9.7302572,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=29.6975288,-9.7302572",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Tigmi Kenza",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=29.6976066,-9.7299918",
-      "lat": 29.6976066,
-      "lng": -9.7299918,
-      "halalFriendly": false,
-      "bookingUrl": "http://www.tigmikenza.com",
-      "source": "osm"
-    },
-    {
-      "nom": "فندق صديق",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=29.6936251,-9.7321948",
-      "lat": 29.6936251,
-      "lng": -9.7321948,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=29.6936251,-9.7321948",
-      "source": "osm"
-    },
-    {
-      "nom": "Al Houria",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=29.6936269,-9.7294372",
-      "lat": 29.6936269,
-      "lng": -9.7294372,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=29.6936269,-9.7294372",
-      "source": "osm"
-    },
-    {
-      "nom": "Maison du Soleil",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=29.7026722,-9.7312511",
-      "lat": 29.7026722,
-      "lng": -9.7312511,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=29.7026722,-9.7312511",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel La Fontaine",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=29.6949238,-9.7246968",
-      "lat": 29.6949238,
-      "lng": -9.7246968,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=29.6949238,-9.7246968",
-      "source": "osm"
-    },
-    {
-      "nom": "Idou",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=29.6927484,-9.7258942",
-      "lat": 29.6927484,
-      "lng": -9.7258942,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=29.6927484,-9.7258942",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Paris",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=29.6920249,-9.7256372",
-      "lat": 29.6920249,
-      "lng": -9.7256372,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=29.6920249,-9.7256372",
-      "source": "osm"
-    },
-    {
-      "nom": "Paris",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=29.6919929,-9.7256203",
-      "lat": 29.6919929,
-      "lng": -9.7256203,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=29.6919929,-9.7256203",
-      "source": "osm"
-    },
-    {
-      "nom": "Chems",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=29.692811,-9.7243561",
-      "lat": 29.692811,
-      "lng": -9.7243561,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=29.692811,-9.7243561",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Samy B",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=29.6938704,-9.7235463",
-      "lat": 29.6938704,
-      "lng": -9.7235463,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=29.6938704,-9.7235463",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Janoub",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=29.6989019,-9.7226192",
-      "lat": 29.6989019,
-      "lng": -9.7226192,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=29.6989019,-9.7226192",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Mauritania",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=29.6915477,-9.724439",
-      "lat": 29.6915477,
-      "lng": -9.724439,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=29.6915477,-9.724439",
-      "source": "osm"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Tiznit",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Tiznit",
-      "description": "Mosquée principale de la ville, prière du vendredi.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20Tiznit%20Tiznit%20Maroc"
-    },
-    {
-      "nom": "Mosquee",
-      "lat": 29.6971418,
-      "lng": -9.7321265,
-      "coordonnees": {
-        "lat": 29.6971418,
-        "lng": -9.7321265
-      },
-      "mapsUrl": "https://maps.google.com/?q=29.6971418,-9.7321265",
-      "source": "osm"
-    },
-    {
-      "nom": "Mosquee Idzekri",
-      "lat": 29.6983986,
-      "lng": -9.7292574,
-      "coordonnees": {
-        "lat": 29.6983986,
-        "lng": -9.7292574
-      },
-      "mapsUrl": "https://maps.google.com/?q=29.6983986,-9.7292574",
-      "source": "osm"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Souk des bijoutiers",
-      "categorie": "Shopping",
-      "description": "Le plus grand marché d'argent berbère du Maroc (vendredi).",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Souk%20des%20bijoutiers%20Tiznit%20Maroc"
-    },
-    {
-      "id": "a2",
-      "nom": "Remparts de pisé",
-      "categorie": "Histoire",
-      "description": "6 km de murailles de terre rose encerclant la médina.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Remparts%20de%20pis%C3%A9%20Tiznit%20Maroc"
-    },
-    {
-      "id": "a3",
-      "nom": "Plage d'Aglou",
-      "categorie": "Nature",
-      "description": "Plage atlantique sauvage et grottes de pêcheurs.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Plage%20d%27Aglou%20Tiznit%20Maroc",
-      "lat": 29.8061221,
-      "lng": -9.8329115,
-      "geocoded": true
-    },
-    {
-      "nom": "Place du Mechouar",
-      "lat": 29.6969967,
-      "lng": -9.7313168,
-      "coordonnees": {
-        "lat": 29.6969967,
-        "lng": -9.7313168
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=29.6969967,-9.7313168",
-      "source": "osm"
-    },
-    {
-      "nom": "Qasba",
-      "lat": 29.7000082,
-      "lng": -9.726628,
-      "coordonnees": {
-        "lat": 29.7000082,
-        "lng": -9.726628
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=29.7000082,-9.726628",
-      "source": "osm"
-    },
-    {
-      "nom": "bab targwa",
-      "lat": 29.7039512,
-      "lng": -9.7253307,
-      "coordonnees": {
-        "lat": 29.7039512,
-        "lng": -9.7253307
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=29.7039512,-9.7253307",
-      "source": "osm"
-    },
-    {
-      "nom": "post / K // p .u",
-      "lat": 29.6940808,
-      "lng": -9.7509356,
-      "coordonnees": {
-        "lat": 29.6940808,
-        "lng": -9.7509356
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=29.6940808,-9.7509356",
-      "source": "osm"
-    },
-    {
-      "nom": "posst//K: p . u",
-      "lat": 29.6792074,
-      "lng": -9.7546934,
-      "coordonnees": {
-        "lat": 29.6792074,
-        "lng": -9.7546934
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=29.6792074,-9.7546934",
-      "source": "osm"
-    },
-    {
-      "nom": "Location Ido mallah",
-      "lat": 29.7665262,
-      "lng": -9.8057341,
-      "coordonnees": {
-        "lat": 29.7665262,
-        "lng": -9.8057341
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=29.7665262,-9.8057341",
-      "source": "osm"
-    },
-    {
-      "nom": "الحديقة المائية أغلو",
-      "lat": 29.8041251,
-      "lng": -9.8268131,
-      "coordonnees": {
-        "lat": 29.8041251,
-        "lng": -9.8268131
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=29.8041251,-9.8268131",
-      "source": "osm"
-    },
-    {
-      "nom": "Bourmel",
-      "lat": 29.8381233,
-      "lng": -9.8058204,
-      "coordonnees": {
-        "lat": 29.8381233,
-        "lng": -9.8058204
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=29.8381233,-9.8058204",
-      "source": "osm"
-    }
-  ],
-  "imageCredit": "Wikimedia Commons",
-  "osmEnriched": true,
-  "osmEnrichedAt": "2026-06-30",
-  "description_en": "Tiznit, in Morocco, is a halal-friendly destination with a Halal Trust Score of 4.5/5. Muslim travelers will find 1 halal restaurants listed, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
-  "metaDescription_en": "Halal guide to Tiznit: 1 halal restaurants listed, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.5/5.",
-  "nom_en": "Tiznit",
-  "boucheries": []
+  {
+   "nom": "Hôtel Bellevue",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.6975288,-9.7302572",
+   "lat": 29.6975288,
+   "lng": -9.7302572,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=29.6975288,-9.7302572",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Tigmi Kenza",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.6976066,-9.7299918",
+   "lat": 29.6976066,
+   "lng": -9.7299918,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.tigmikenza.com",
+   "source": "osm"
+  },
+  {
+   "nom": "فندق صديق",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.6936251,-9.7321948",
+   "lat": 29.6936251,
+   "lng": -9.7321948,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=29.6936251,-9.7321948",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Houria",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.6936269,-9.7294372",
+   "lat": 29.6936269,
+   "lng": -9.7294372,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=29.6936269,-9.7294372",
+   "source": "osm"
+  },
+  {
+   "nom": "Maison du Soleil",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.7026722,-9.7312511",
+   "lat": 29.7026722,
+   "lng": -9.7312511,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=29.7026722,-9.7312511",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel La Fontaine",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.6949238,-9.7246968",
+   "lat": 29.6949238,
+   "lng": -9.7246968,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=29.6949238,-9.7246968",
+   "source": "osm"
+  },
+  {
+   "nom": "Idou",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.6927484,-9.7258942",
+   "lat": 29.6927484,
+   "lng": -9.7258942,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=29.6927484,-9.7258942",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Paris",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.6920249,-9.7256372",
+   "lat": 29.6920249,
+   "lng": -9.7256372,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=29.6920249,-9.7256372",
+   "source": "osm"
+  },
+  {
+   "nom": "Paris",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.6919929,-9.7256203",
+   "lat": 29.6919929,
+   "lng": -9.7256203,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=29.6919929,-9.7256203",
+   "source": "osm"
+  },
+  {
+   "nom": "Chems",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.692811,-9.7243561",
+   "lat": 29.692811,
+   "lng": -9.7243561,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=29.692811,-9.7243561",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Samy B",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.6938704,-9.7235463",
+   "lat": 29.6938704,
+   "lng": -9.7235463,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=29.6938704,-9.7235463",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Janoub",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.6989019,-9.7226192",
+   "lat": 29.6989019,
+   "lng": -9.7226192,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=29.6989019,-9.7226192",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Mauritania",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.6915477,-9.724439",
+   "lat": 29.6915477,
+   "lng": -9.724439,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=29.6915477,-9.724439",
+   "source": "osm"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "Mosquee",
+   "lat": 29.6971418,
+   "lng": -9.7321265,
+   "coordonnees": {
+    "lat": 29.6971418,
+    "lng": -9.7321265
+   },
+   "mapsUrl": "https://maps.google.com/?q=29.6971418,-9.7321265",
+   "source": "osm"
+  },
+  {
+   "nom": "Mosquee Idzekri",
+   "lat": 29.6983986,
+   "lng": -9.7292574,
+   "coordonnees": {
+    "lat": 29.6983986,
+    "lng": -9.7292574
+   },
+   "mapsUrl": "https://maps.google.com/?q=29.6983986,-9.7292574",
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Place du Mechouar",
+   "lat": 29.6969967,
+   "lng": -9.7313168,
+   "coordonnees": {
+    "lat": 29.6969967,
+    "lng": -9.7313168
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=29.6969967,-9.7313168",
+   "source": "osm"
+  },
+  {
+   "nom": "Qasba",
+   "lat": 29.7000082,
+   "lng": -9.726628,
+   "coordonnees": {
+    "lat": 29.7000082,
+    "lng": -9.726628
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=29.7000082,-9.726628",
+   "source": "osm"
+  },
+  {
+   "nom": "bab targwa",
+   "lat": 29.7039512,
+   "lng": -9.7253307,
+   "coordonnees": {
+    "lat": 29.7039512,
+    "lng": -9.7253307
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=29.7039512,-9.7253307",
+   "source": "osm"
+  },
+  {
+   "nom": "post / K // p .u",
+   "lat": 29.6940808,
+   "lng": -9.7509356,
+   "coordonnees": {
+    "lat": 29.6940808,
+    "lng": -9.7509356
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=29.6940808,-9.7509356",
+   "source": "osm"
+  },
+  {
+   "nom": "posst//K: p . u",
+   "lat": 29.6792074,
+   "lng": -9.7546934,
+   "coordonnees": {
+    "lat": 29.6792074,
+    "lng": -9.7546934
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=29.6792074,-9.7546934",
+   "source": "osm"
+  },
+  {
+   "nom": "Location Ido mallah",
+   "lat": 29.7665262,
+   "lng": -9.8057341,
+   "coordonnees": {
+    "lat": 29.7665262,
+    "lng": -9.8057341
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=29.7665262,-9.8057341",
+   "source": "osm"
+  },
+  {
+   "nom": "الحديقة المائية أغلو",
+   "lat": 29.8041251,
+   "lng": -9.8268131,
+   "coordonnees": {
+    "lat": 29.8041251,
+    "lng": -9.8268131
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=29.8041251,-9.8268131",
+   "source": "osm"
+  },
+  {
+   "nom": "Bourmel",
+   "lat": 29.8381233,
+   "lng": -9.8058204,
+   "coordonnees": {
+    "lat": 29.8381233,
+    "lng": -9.8058204
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=29.8381233,-9.8058204",
+   "source": "osm"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30",
+ "description_en": "Tiznit, in Morocco, is a halal-friendly destination with a Halal Trust Score of 4.5/5. Muslim travelers will find 1 halal restaurants listed, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
+ "metaDescription_en": "Halal guide to Tiznit: 1 halal restaurants listed, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.5/5.",
+ "nom_en": "Tiznit",
+ "boucheries": [],
+ "dataPurgedAt": "2026-07-15"
 }

@@ -1,204 +1,161 @@
 {
-  "slug": "taza",
-  "nom": "Taza",
-  "pays": "Maroc",
-  "pays_slug": "maroc",
-  "continent": "Afrique",
-  "region": "Intérieur du Maroc",
-  "coordonnees": {
-    "lat": 34.21,
-    "lng": -4.01
-  },
-  "codeISO": "MA",
-  "score_halal": 4.5,
-  "halalScore": 9,
-  "description": "Ville historique nichée entre le Rif et le Moyen Atlas, gardienne du 'couloir de Taza'. À proximité, le spectaculaire gouffre du Friouato.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Taza_mosque_entrance.jpg/1920px-Taza_mosque_entrance.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Taza_mosque_entrance.jpg/1920px-Taza_mosque_entrance.jpg",
-  "metaDescription": "Ville historique nichée entre le Rif et le Moyen Atlas, gardienne du 'couloir de Taza'. À proximité, le spectaculaire gouffre du Friouato.",
+ "slug": "taza",
+ "nom": "Taza",
+ "pays": "Maroc",
+ "pays_slug": "maroc",
+ "continent": "Afrique",
+ "region": "Intérieur du Maroc",
+ "coordonnees": {
+  "lat": 34.21,
+  "lng": -4.01
+ },
+ "codeISO": "MA",
+ "score_halal": 4.5,
+ "halalScore": 9,
+ "description": "Ville historique nichée entre le Rif et le Moyen Atlas, gardienne du 'couloir de Taza'. À proximité, le spectaculaire gouffre du Friouato.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Taza_mosque_entrance.jpg/1920px-Taza_mosque_entrance.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Taza_mosque_entrance.jpg/1920px-Taza_mosque_entrance.jpg",
+ "metaDescription": "Ville historique nichée entre le Rif et le Moyen Atlas, gardienne du 'couloir de Taza'. À proximité, le spectaculaire gouffre du Friouato.",
+ "monnaie": "MAD (Dirham marocain)",
+ "langue": "Arabe, Tamazight, Français",
+ "statistiques": {
+  "restaurants_halal": 0,
+  "mosquees": 0,
+  "hotels": 8
+ },
+ "infoPratique": {
   "monnaie": "MAD (Dirham marocain)",
   "langue": "Arabe, Tamazight, Français",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 8
+  "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
+  "meilleureEpoque": "Printemps et automne (climat doux)."
+ },
+ "tags": [
+  "halal",
+  "Maroc"
+ ],
+ "restaurants": [],
+ "hotels": [
+  {
+   "nom": "friouato",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.2099754,-4.0058283",
+   "lat": 34.2099754,
+   "lng": -4.0058283,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.2099754,-4.0058283",
+   "source": "osm"
   },
-  "infoPratique": {
-    "monnaie": "MAD (Dirham marocain)",
-    "langue": "Arabe, Tamazight, Français",
-    "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
-    "meilleureEpoque": "Printemps et automne (climat doux)."
+  {
+   "nom": "فندة البريد",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.2216704,-4.0077155",
+   "lat": 34.2216704,
+   "lng": -4.0077155,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.2216704,-4.0077155",
+   "source": "osm"
   },
-  "tags": [
-    "halal",
-    "Maroc"
-  ],
-  "restaurants": [],
-  "hotels": [
-    {
-      "nom": "friouato",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.2099754,-4.0058283",
-      "lat": 34.2099754,
-      "lng": -4.0058283,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.2099754,-4.0058283",
-      "source": "osm"
-    },
-    {
-      "nom": "فندة البريد",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.2216704,-4.0077155",
-      "lat": 34.2216704,
-      "lng": -4.0077155,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.2216704,-4.0077155",
-      "source": "osm"
-    },
-    {
-      "nom": "Grand Hôtel Du Dauphiné",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.2221154,-4.0094951",
-      "lat": 34.2221154,
-      "lng": -4.0094951,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.2221154,-4.0094951",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Guillaume Tell",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.222525,-4.0086682",
-      "lat": 34.222525,
-      "lng": -4.0086682,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.222525,-4.0086682",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Boujida",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.2249676,-4.0086281",
-      "lat": 34.2249676,
-      "lng": -4.0086281,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.2249676,-4.0086281",
-      "source": "osm"
-    },
-    {
-      "nom": "La Tour Eiffel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.2325683,-4.0181463",
-      "lat": 34.2325683,
-      "lng": -4.0181463,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.2325683,-4.0181463",
-      "source": "osm"
-    },
-    {
-      "nom": "المنزل",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.2326328,-4.0370968",
-      "lat": 34.2326328,
-      "lng": -4.0370968,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.2326328,-4.0370968",
-      "source": "osm"
-    },
-    {
-      "nom": "Oriental Palace by Agora Complex",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.2674458,-3.9560054",
-      "lat": 34.2674458,
-      "lng": -3.9560054,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.2674458,-3.9560054",
-      "source": "osm"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Taza",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Taza",
-      "description": "Mosquée principale de la ville, prière du vendredi.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20Taza%20Taza%20Maroc"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Gouffre du Friouato",
-      "categorie": "Nature",
-      "description": "L'un des plus grands gouffres d'Afrique du Nord, descente impressionnante.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Gouffre%20du%20Friouato%20Taza%20Maroc",
-      "lat": 34.1046489,
-      "lng": -4.0724784,
-      "geocoded": true
-    },
-    {
-      "id": "a2",
-      "nom": "Médina de Taza",
-      "categorie": "Culture",
-      "description": "Médina fortifiée, grande mosquée almohade, remparts.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=M%C3%A9dina%20de%20Taza%20Taza%20Maroc"
-    },
-    {
-      "id": "a3",
-      "nom": "Parc national de Tazekka",
-      "categorie": "Nature",
-      "description": "Cèdres, cascades et grottes du Moyen Atlas.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Parc%20national%20de%20Tazekka%20Taza%20Maroc",
-      "lat": 34.021458,
-      "lng": -4.2283202,
-      "geocoded": true
-    },
-    {
-      "nom": "Espace Educatif Culturel Et Museal De La Resistance Et De L'Armée De Liberation De Taza",
-      "lat": 34.2086789,
-      "lng": -4.0165426,
-      "coordonnees": {
-        "lat": 34.2086789,
-        "lng": -4.0165426
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=34.2086789,-4.0165426",
-      "source": "osm"
-    },
-    {
-      "nom": "Place de l'Indépendance ساحة الاستقلال",
-      "lat": 34.2222395,
-      "lng": -4.0089691,
-      "coordonnees": {
-        "lat": 34.2222395,
-        "lng": -4.0089691
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=34.2222395,-4.0089691",
-      "source": "osm"
-    }
-  ],
-  "imageCredit": "Wikimedia Commons",
-  "osmEnriched": true,
-  "osmEnrichedAt": "2026-06-30",
-  "description_en": "Taza, in Morocco, is a halal-friendly destination with a Halal Trust Score of 4.5/5. Muslim travelers will find a selection of halal restaurants, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
-  "metaDescription_en": "Halal guide to Taza: halal restaurants, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.5/5.",
-  "nom_en": "Taza"
+  {
+   "nom": "Grand Hôtel Du Dauphiné",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.2221154,-4.0094951",
+   "lat": 34.2221154,
+   "lng": -4.0094951,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.2221154,-4.0094951",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Guillaume Tell",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.222525,-4.0086682",
+   "lat": 34.222525,
+   "lng": -4.0086682,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.222525,-4.0086682",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Boujida",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.2249676,-4.0086281",
+   "lat": 34.2249676,
+   "lng": -4.0086281,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.2249676,-4.0086281",
+   "source": "osm"
+  },
+  {
+   "nom": "La Tour Eiffel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.2325683,-4.0181463",
+   "lat": 34.2325683,
+   "lng": -4.0181463,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.2325683,-4.0181463",
+   "source": "osm"
+  },
+  {
+   "nom": "المنزل",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.2326328,-4.0370968",
+   "lat": 34.2326328,
+   "lng": -4.0370968,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.2326328,-4.0370968",
+   "source": "osm"
+  },
+  {
+   "nom": "Oriental Palace by Agora Complex",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.2674458,-3.9560054",
+   "lat": 34.2674458,
+   "lng": -3.9560054,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.2674458,-3.9560054",
+   "source": "osm"
+  }
+ ],
+ "mosqueesPrincipales": [],
+ "activites": [
+  {
+   "nom": "Espace Educatif Culturel Et Museal De La Resistance Et De L'Armée De Liberation De Taza",
+   "lat": 34.2086789,
+   "lng": -4.0165426,
+   "coordonnees": {
+    "lat": 34.2086789,
+    "lng": -4.0165426
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=34.2086789,-4.0165426",
+   "source": "osm"
+  },
+  {
+   "nom": "Place de l'Indépendance ساحة الاستقلال",
+   "lat": 34.2222395,
+   "lng": -4.0089691,
+   "coordonnees": {
+    "lat": 34.2222395,
+    "lng": -4.0089691
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=34.2222395,-4.0089691",
+   "source": "osm"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30",
+ "description_en": "Taza, in Morocco, is a halal-friendly destination with a Halal Trust Score of 4.5/5. Muslim travelers will find a selection of halal restaurants, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
+ "metaDescription_en": "Halal guide to Taza: halal restaurants, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.5/5.",
+ "nom_en": "Taza",
+ "dataPurgedAt": "2026-07-15"
 }

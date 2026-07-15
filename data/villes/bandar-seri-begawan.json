@@ -1,1572 +1,1533 @@
 {
-  "slug": "bandar-seri-begawan",
-  "nom": "Bandar Seri Begawan",
-  "pays": "Brunei",
-  "pays_slug": "brunei",
-  "continent": "Asie",
-  "region": "Asie du Sud-Est",
-  "coordonnees": {
-    "lat": 4.9031,
-    "lng": 114.9398
+ "slug": "bandar-seri-begawan",
+ "nom": "Bandar Seri Begawan",
+ "pays": "Brunei",
+ "pays_slug": "brunei",
+ "continent": "Asie",
+ "region": "Asie du Sud-Est",
+ "coordonnees": {
+  "lat": 4.9031,
+  "lng": 114.9398
+ },
+ "codeISO": "",
+ "score_halal": 4.7,
+ "halalScore": 9.4,
+ "description": "Capitale du sultanat de Brunei, riche et paisible, célèbre pour ses mosquées dorées et le village lacustre de Kampong Ayer.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Sultan_Omar_Ali_Saifuddin_Mosque_02.jpg/1920px-Sultan_Omar_Ali_Saifuddin_Mosque_02.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Sultan_Omar_Ali_Saifuddin_Mosque_02.jpg/1920px-Sultan_Omar_Ali_Saifuddin_Mosque_02.jpg",
+ "metaDescription": "Capitale du sultanat de Brunei, riche et paisible, célèbre pour ses mosquées dorées et le village lacustre de Kampong Ayer.",
+ "statistiques": {
+  "restaurants_halal": 59,
+  "mosquees": 5,
+  "hotels": 44
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "Burger King",
+   "type": "burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9084624,114.9425764",
+   "lat": 4.9084624,
+   "lng": 114.9425764,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.7,
-  "halalScore": 9.4,
-  "description": "Capitale du sultanat de Brunei, riche et paisible, célèbre pour ses mosquées dorées et le village lacustre de Kampong Ayer.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Sultan_Omar_Ali_Saifuddin_Mosque_02.jpg/1920px-Sultan_Omar_Ali_Saifuddin_Mosque_02.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Sultan_Omar_Ali_Saifuddin_Mosque_02.jpg/1920px-Sultan_Omar_Ali_Saifuddin_Mosque_02.jpg",
-  "metaDescription": "Capitale du sultanat de Brunei, riche et paisible, célèbre pour ses mosquées dorées et le village lacustre de Kampong Ayer.",
-  "statistiques": {
-    "restaurants_halal": 47,
-    "mosquees": 1,
-    "hotels": 48
+  {
+   "nom": "Lan Zhou La Mian",
+   "type": "chinese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9017863,114.9290485",
+   "lat": 4.9017863,
+   "lng": 114.9290485,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "Richfe",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.901704,114.9289334",
+   "lat": 4.901704,
+   "lng": 114.9289334,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [
-    {
-      "nom": "Burger King",
-      "type": "burger",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9084624,114.9425764",
-      "lat": 4.9084624,
-      "lng": 114.9425764,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Lan Zhou La Mian",
-      "type": "chinese",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9017863,114.9290485",
-      "lat": 4.9017863,
-      "lng": 114.9290485,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Richfe",
-      "type": "Restaurant halal",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.901704,114.9289334",
-      "lat": 4.901704,
-      "lng": 114.9289334,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Ice Bar Shabu Shabu",
-      "type": "seafood",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9020503,114.9287278",
-      "lat": 4.9020503,
-      "lng": 114.9287278,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Nadi Utama",
-      "type": "Restaurant halal",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.8919701,114.9374617",
-      "lat": 4.8919701,
-      "lng": 114.9374617,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Aomori Ramen",
-      "type": "japanese",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.902482,114.927955",
-      "lat": 4.902482,
-      "lng": 114.927955,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Express",
-      "type": "Restaurant halal",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9001074,114.9267113",
-      "lat": 4.9001074,
-      "lng": 114.9267113,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Haider Sdn Bhd",
-      "type": "Restaurant halal",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.8881634,114.9427529",
-      "lat": 4.8881634,
-      "lng": 114.9427529,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Oldtime Kopitiam",
-      "type": "asian, regional",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.909513,114.9257298",
-      "lat": 4.909513,
-      "lng": 114.9257298,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Bali Pit-Stop",
-      "type": "indonesian",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9017996,114.9204195",
-      "lat": 4.9017996,
-      "lng": 114.9204195,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Subbs Kitchen",
-      "type": "sandwich",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.8963906,114.9197911",
-      "lat": 4.8963906,
-      "lng": 114.9197911,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Abydo's Food Messenger",
-      "type": "Restaurant halal",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9108306,114.9176696",
-      "lat": 4.9108306,
-      "lng": 114.9176696,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Baan Thai",
-      "type": "thai",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9056666,114.9160477",
-      "lat": 4.9056666,
-      "lng": 114.9160477,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "SugarBun",
-      "type": "Restaurant halal",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9081139,114.9157857",
-      "lat": 4.9081139,
-      "lng": 114.9157857,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Xinyuen Foodstall",
-      "type": "Restaurant halal",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9087426,114.913676",
-      "lat": 4.9087426,
-      "lng": 114.913676,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Saiba Jaya",
-      "type": "Restaurant halal",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9165082,114.9135321",
-      "lat": 4.9165082,
-      "lng": 114.9135321,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Vanda Chinese Restaurant",
-      "type": "chinese",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9327552,114.9448202",
-      "lat": 4.9327552,
-      "lng": 114.9448202,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Kitaro",
-      "type": "japanese, sushi",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9173594,114.9111443",
-      "lat": 4.9173594,
-      "lng": 114.9111443,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Infinitea x I Say Yatta!",
-      "type": "japanese",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9441911,114.9458742",
-      "lat": 4.9441911,
-      "lng": 114.9458742,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Phở Hòa",
-      "type": "noodle, vietnamese",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9442131,114.9481206",
-      "lat": 4.9442131,
-      "lng": 114.9481206,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Pelita Surya Sdn Bhd",
-      "type": "Restaurant halal",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.878516,114.8937019",
-      "lat": 4.878516,
-      "lng": 114.8937019,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Impian Rasa",
-      "type": "Restaurant halal",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.8805055,114.8899455",
-      "lat": 4.8805055,
-      "lng": 114.8899455,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Thai Kitchen",
-      "type": "thai",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.8586549,114.8942532",
-      "lat": 4.8586549,
-      "lng": 114.8942532,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Jollibee",
-      "type": "Restaurant halal",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9658305,114.9517084",
-      "lat": 4.9658305,
-      "lng": 114.9517084,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "T16 Kitchen Rimba - Roti John Lampuh",
-      "type": "Roti John",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9666384,114.9014459",
-      "lat": 4.9666384,
-      "lng": 114.9014459,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "T16 Kitchen Roti John Lampuh",
-      "type": "Roti John",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9666392,114.9014422",
-      "lat": 4.9666392,
-      "lng": 114.9014422,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Warung Atuk",
-      "type": "Nasi Katok",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9672653,114.9002675",
-      "lat": 4.9672653,
-      "lng": 114.9002675,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Street3stall.Bn",
-      "type": "Nasi Katok, healthy cuisine, keto diet, protein",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9693562,114.8987679",
-      "lat": 4.9693562,
-      "lng": 114.8987679,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Subbstation",
-      "type": "sandwich, diet sanwich",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9744534,114.898556",
-      "lat": 4.9744534,
-      "lng": 114.898556,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Sambal Q",
-      "type": "malaysian, bruneian, indonesian",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.8596605,114.8642305",
-      "lat": 4.8596605,
-      "lng": 114.8642305,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Sabka Restaurant",
-      "type": "Restaurant halal",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.8421736,114.872208",
-      "lat": 4.8421736,
-      "lng": 114.872208,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Ayamku",
-      "type": "chicken",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.8924483,114.8473674",
-      "lat": 4.8924483,
-      "lng": 114.8473674,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Raziqin",
-      "type": "Restaurant halal",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.887486,114.8399446",
-      "lat": 4.887486,
-      "lng": 114.8399446,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Li Gong",
-      "type": "chinese",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9660685,114.8546103",
-      "lat": 4.9660685,
-      "lng": 114.8546103,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Serikandi Xpress",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9015837,114.9348101",
-      "lat": 4.9015837,
-      "lng": 114.9348101,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Saung Kebab",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9009173,114.9294156",
-      "lat": 4.9009173,
-      "lng": 114.9294156,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Sugar & Spice",
-      "type": "arab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.90282,114.9285543",
-      "lat": 4.90282,
-      "lng": 114.9285543,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Kofta Diva",
-      "type": "arab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9182579,114.9242697",
-      "lat": 4.9182579,
-      "lng": 114.9242697,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Seri Damai",
-      "type": "pakistani",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9433928,114.9460271",
-      "lat": 4.9433928,
-      "lng": 114.9460271,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Casbah",
-      "type": "fish, kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9606041,114.9443362",
-      "lat": 4.9606041,
-      "lng": 114.9443362,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Uum Umiyati",
-      "type": "burger, kebab, kueh malaya, roti john",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9664931,114.9466661",
-      "lat": 4.9664931,
-      "lng": 114.9466661,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Nadj",
-      "type": "arab, indian, malay",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.8544408,114.8908941",
-      "lat": 4.8544408,
-      "lng": 114.8908941,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Amsarra Foodstall",
-      "type": "gyros, lebanese, mediterranean",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9710204,114.9776429",
-      "lat": 4.9710204,
-      "lng": 114.9776429,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Santi Nur",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.8872186,114.8395167",
-      "lat": 4.8872186,
-      "lng": 114.8395167,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "ABC eats",
-      "lat": 4.9020948,
-      "lng": 114.938987,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=4.9020948,114.938987",
-      "source": "osm"
-    },
-    {
-      "nom": "Bollywood",
-      "lat": 4.9002134,
-      "lng": 114.9290244,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=4.9002134,114.9290244",
-      "source": "osm"
-    },
-    {
-      "nom": "Le' Taj",
-      "lat": 4.9019699,
-      "lng": 114.9272221,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=4.9019699,114.9272221",
-      "source": "osm"
-    },
-    {
-      "nom": "Haveli",
-      "lat": 4.907025,
-      "lng": 114.9244703,
-      "type": "filipino, indian, malay",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=4.907025,114.9244703",
-      "source": "osm"
-    },
-    {
-      "nom": "Rajah's",
-      "lat": 4.887423,
-      "lng": 114.9311313,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=4.887423,114.9311313",
-      "source": "osm"
-    },
-    {
-      "nom": "Seri Maharaja",
-      "lat": 4.8870177,
-      "lng": 114.9317625,
-      "type": "asian, indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=4.8870177,114.9317625",
-      "source": "osm"
-    },
-    {
-      "nom": "Tandoor.com",
-      "lat": 4.9016893,
-      "lng": 114.9178237,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=4.9016893,114.9178237",
-      "source": "osm"
-    },
-    {
-      "nom": "DM Waazif",
-      "lat": 4.9081453,
-      "lng": 114.9165144,
-      "type": "indian, malay",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=4.9081453,114.9165144",
-      "source": "osm"
-    },
-    {
-      "nom": "Kacchi",
-      "lat": 4.9166773,
-      "lng": 114.9149631,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=4.9166773,114.9149631",
-      "source": "osm"
-    },
-    {
-      "nom": "Bombay Palace",
-      "lat": 4.9175492,
-      "lng": 114.9129352,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=4.9175492,114.9129352",
-      "source": "osm"
-    },
-    {
-      "nom": "Sameer",
-      "lat": 4.9435484,
-      "lng": 114.9442904,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=4.9435484,114.9442904",
-      "source": "osm"
-    },
-    {
-      "nom": "Blue Restaurant & Grill",
-      "lat": 4.8862553,
-      "lng": 114.8976548,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=4.8862553,114.8976548",
-      "source": "osm"
-    },
-    {
-      "nom": "Indian Delights",
-      "lat": 4.9381478,
-      "lng": 114.9700798,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=4.9381478,114.9700798",
-      "source": "osm"
-    },
-    {
-      "nom": "Maha Osai",
-      "lat": 4.9541835,
-      "lng": 114.9438626,
-      "type": "indian, indonesian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=4.9541835,114.9438626",
-      "source": "osm"
-    },
-    {
-      "nom": "Sameer Sdn Bhd",
-      "lat": 4.9483197,
-      "lng": 114.9642192,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=4.9483197,114.9642192",
-      "source": "osm"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "CoLiving Hostel Kiulap",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.903205,114.9398355",
-      "lat": 4.903205,
-      "lng": 114.9398355,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=4.903205,114.9398355",
-      "source": "osm"
-    },
-    {
-      "nom": "Terrace",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.8954733,114.9415107",
-      "lat": 4.8954733,
-      "lng": 114.9415107,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=4.8954733,114.9415107",
-      "source": "osm"
-    },
-    {
-      "nom": "Radisson Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.8946328,114.9425955",
-      "lat": 4.8946328,
-      "lng": 114.9425955,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=4.8946328,114.9425955",
-      "source": "osm"
-    },
-    {
-      "nom": "Higher Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.8988645,114.9300016",
-      "lat": 4.8988645,
-      "lng": 114.9300016,
-      "halalFriendly": false,
-      "bookingUrl": "http://higherhotelbrunei.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Al-Afiah Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9006606,114.9289408",
-      "lat": 4.9006606,
-      "lng": 114.9289408,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=4.9006606,114.9289408",
-      "source": "osm"
-    },
-    {
-      "nom": "AE Backpacker Hostel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.8992149,114.9292315",
-      "lat": 4.8992149,
-      "lng": 114.9292315,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=4.8992149,114.9292315",
-      "source": "osm"
-    },
-    {
-      "nom": "The Capital Residence Suites",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.8926649,114.9443912",
-      "lat": 4.8926649,
-      "lng": 114.9443912,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.capitalresidencebn.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Pusat Belia Youth Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.8921609,114.9441455",
-      "lat": 4.8921609,
-      "lng": 114.9441455,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=4.8921609,114.9441455",
-      "source": "osm"
-    },
-    {
-      "nom": "118 Residence",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.8984975,114.9285937",
-      "lat": 4.8984975,
-      "lng": 114.9285937,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.118residencesuites.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Plaza Kiulap",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9025663,114.9268955",
-      "lat": 4.9025663,
-      "lng": 114.9268955,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=4.9025663,114.9268955",
-      "source": "osm"
-    },
-    {
-      "nom": "Jubilee Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.8914783,114.9458783",
-      "lat": 4.8914783,
-      "lng": 114.9458783,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=4.8914783,114.9458783",
-      "source": "osm"
-    },
-    {
-      "nom": "K.H. Soon Services And Resthouse",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.8890492,114.9437378",
-      "lat": 4.8890492,
-      "lng": 114.9437378,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=4.8890492,114.9437378",
-      "source": "osm"
-    },
-    {
-      "nom": "Co.Living Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.888712,114.9430049",
-      "lat": 4.888712,
-      "lng": 114.9430049,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=4.888712,114.9430049",
-      "source": "osm"
-    },
-    {
-      "nom": "Co. Living Hostel Bandar",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.8886249,114.9430096",
-      "lat": 4.8886249,
-      "lng": 114.9430096,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=4.8886249,114.9430096",
-      "source": "osm"
-    },
-    {
-      "nom": "The Brunei Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.8888807,114.9440143",
-      "lat": 4.8888807,
-      "lng": 114.9440143,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=4.8888807,114.9440143",
-      "source": "osm"
-    },
-    {
-      "nom": "Hornbill Garden Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9035624,114.9245976",
-      "lat": 4.9035624,
-      "lng": 114.9245976,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=4.9035624,114.9245976",
-      "source": "osm"
-    },
-    {
-      "nom": "Britannia House",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.8880929,114.944209",
-      "lat": 4.8880929,
-      "lng": 114.944209,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=4.8880929,114.944209",
-      "source": "osm"
-    },
-    {
-      "nom": "Qing Yun Resthouse Sdn Bhd",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.887299,114.9435145",
-      "lat": 4.887299,
-      "lng": 114.9435145,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=4.887299,114.9435145",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Badi'ah",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.8889483,114.9315791",
-      "lat": 4.8889483,
-      "lng": 114.9315791,
-      "halalFriendly": false,
-      "bookingUrl": "http://badiahhotel.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "J Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9015303,114.9228367",
-      "lat": 4.9015303,
-      "lng": 114.9228367,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=4.9015303,114.9228367",
-      "source": "osm"
-    },
-    {
-      "nom": "LeGallery Suites Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.886754,114.9316275",
-      "lat": 4.886754,
-      "lng": 114.9316275,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=4.886754,114.9316275",
-      "source": "osm"
-    },
-    {
-      "nom": "Abdul Razak Hotel Apartments",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.8855446,114.9315985",
-      "lat": 4.8855446,
-      "lng": 114.9315985,
-      "halalFriendly": false,
-      "bookingUrl": "http://abdulrazakhotelapts.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Rizqun International Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9053931,114.9175715",
-      "lat": 4.9053931,
-      "lng": 114.9175715,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=4.9053931,114.9175715",
-      "source": "osm"
-    },
-    {
-      "nom": "Qing Yun Rest House Sdn Bhd",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9061367,114.9176464",
-      "lat": 4.9061367,
-      "lng": 114.9176464,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=4.9061367,114.9176464",
-      "source": "osm"
-    },
-    {
-      "nom": "EZ Lodgings",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9077019,114.9177753",
-      "lat": 4.9077019,
-      "lng": 114.9177753,
-      "halalFriendly": false,
-      "bookingUrl": "https://m.facebook.com/EZ-Lodgings-1742028372780426/",
-      "source": "osm"
-    },
-    {
-      "nom": "City One Lodge",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9107126,114.9184486",
-      "lat": 4.9107126,
-      "lng": 114.9184486,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=4.9107126,114.9184486",
-      "source": "osm"
-    },
-    {
-      "nom": "Miniinn Guesthouse",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9079187,114.9166479",
-      "lat": 4.9079187,
-      "lng": 114.9166479,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=4.9079187,114.9166479",
-      "source": "osm"
-    },
-    {
-      "nom": "Easybox Homestay",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.908523,114.9162853",
-      "lat": 4.908523,
-      "lng": 114.9162853,
-      "halalFriendly": false,
-      "bookingUrl": "http://easyboxhomestay.weebly.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "The Centrepoint Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.907437,114.9156984",
-      "lat": 4.907437,
-      "lng": 114.9156984,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=4.907437,114.9156984",
-      "source": "osm"
-    },
-    {
-      "nom": "Centerpoint Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9075818,114.9154358",
-      "lat": 4.9075818,
-      "lng": 114.9154358,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=4.9075818,114.9154358",
-      "source": "osm"
-    },
-    {
-      "nom": "Venice Lodge",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.895272,114.9154101",
-      "lat": 4.895272,
-      "lng": 114.9154101,
-      "halalFriendly": false,
-      "bookingUrl": "http://venicelodgebrunei.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Qing Yun",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9087283,114.9136978",
-      "lat": 4.9087283,
-      "lng": 114.9136978,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=4.9087283,114.9136978",
-      "source": "osm"
-    },
-    {
-      "nom": "Brunei Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9299989,114.9499969",
-      "lat": 4.9299989,
-      "lng": 114.9499969,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=4.9299989,114.9499969",
-      "source": "osm"
-    },
-    {
-      "nom": "Grand City Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9173377,114.9137291",
-      "lat": 4.9173377,
-      "lng": 114.9137291,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=4.9173377,114.9137291",
-      "source": "osm"
-    },
-    {
-      "nom": "Mulia Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9327351,114.9450084",
-      "lat": 4.9327351,
-      "lng": 114.9450084,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=4.9327351,114.9450084",
-      "source": "osm"
-    },
-    {
-      "nom": "Apek Utama Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.875091,114.955239",
-      "lat": 4.875091,
-      "lng": 114.955239,
-      "halalFriendly": false,
-      "bookingUrl": "http://apekutamahotel.com",
-      "source": "osm"
-    },
-    {
-      "nom": "Dandelion Villa",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.8884004,114.9084683",
-      "lat": 4.8884004,
-      "lng": 114.9084683,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=4.8884004,114.9084683",
-      "source": "osm"
-    },
-    {
-      "nom": "Times Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.939476,114.9400406",
-      "lat": 4.939476,
-      "lng": 114.9400406,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=4.939476,114.9400406",
-      "source": "osm"
-    },
-    {
-      "nom": "Traders Inn",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9000557,114.9023339",
-      "lat": 4.9000557,
-      "lng": 114.9023339,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=4.9000557,114.9023339",
-      "source": "osm"
-    },
-    {
-      "nom": "Aman Hills Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9473975,114.9676502",
-      "lat": 4.9473975,
-      "lng": 114.9676502,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=4.9473975,114.9676502",
-      "source": "osm"
-    },
-    {
-      "nom": "Telanai 16 Lodge",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.8795392,114.8917515",
-      "lat": 4.8795392,
-      "lng": 114.8917515,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=4.8795392,114.8917515",
-      "source": "osm"
-    },
-    {
-      "nom": "Coconut Bay Lodge",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.8807133,114.8898865",
-      "lat": 4.8807133,
-      "lng": 114.8898865,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=4.8807133,114.8898865",
-      "source": "osm"
-    },
-    {
-      "nom": "Mangrove Paradise Resort",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.9108279,115.0061349",
-      "lat": 4.9108279,
-      "lng": 115.0061349,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.facebook.com/mangroveparadise/",
-      "source": "osm"
-    },
-    {
-      "nom": "JJ Homestay",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=4.8378519,114.9167964",
-      "lat": 4.8378519,
-      "lng": 114.9167964,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=4.8378519,114.9167964",
-      "source": "osm"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Bandar Seri Begawan",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Bandar Seri Begawan",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Bandar%20Seri%20Begawan%20Bandar%20Seri%20Begawan"
-    },
-    {
-      "nom": "Surau",
-      "lat": 4.9021436,
-      "lng": 114.9288368,
-      "coordonnees": {
-        "lat": 4.9021436,
-        "lng": 114.9288368
-      },
-      "mapsUrl": "https://maps.google.com/?q=4.9021436,114.9288368",
-      "source": "osm"
-    },
-    {
-      "nom": "Surau Darul Hidayah Kampung Patiambun",
-      "lat": 4.7914761,
-      "lng": 115.00175,
-      "coordonnees": {
-        "lat": 4.7914761,
-        "lng": 115.00175
-      },
-      "mapsUrl": "https://maps.google.com/?q=4.7914761,115.00175",
-      "source": "osm"
-    },
-    {
-      "nom": "Surau Syurfatul Jannah",
-      "lat": 4.7816256,
-      "lng": 114.9979072,
-      "coordonnees": {
-        "lat": 4.7816256,
-        "lng": 114.9979072
-      },
-      "mapsUrl": "https://maps.google.com/?q=4.7816256,114.9979072",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Baru Limbang",
-      "lat": 4.7703948,
-      "lng": 115.011001,
-      "coordonnees": {
-        "lat": 4.7703948,
-        "lng": 115.011001
-      },
-      "mapsUrl": "https://maps.google.com/?q=4.7703948,115.011001",
-      "source": "osm"
-    },
-    {
-      "nom": "Kampong Pengkalan Batu Mosque",
-      "lat": 4.7990476,
-      "lng": 114.8278202,
-      "coordonnees": {
-        "lat": 4.7990476,
-        "lng": 114.8278202
-      },
-      "mapsUrl": "https://maps.google.com/?q=4.7990476,114.8278202",
-      "source": "osm"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Mosquée Omar Ali Saifuddien",
-      "categorie": "Spirituel",
-      "description": "Mosquée emblématique au dôme d'or, sur un lagon.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Omar%20Ali%20Saifuddien%20Bandar%20Seri%20Begawan"
-    },
-    {
-      "id": "a2",
-      "nom": "Mosquée Jame'Asr Hassanil Bolkiah",
-      "categorie": "Spirituel",
-      "description": "Plus grande mosquée du pays, 29 coupoles dorées.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Jame%27Asr%20Hassanil%20Bolkiah%20Bandar%20Seri%20Begawan"
-    },
-    {
-      "id": "a3",
-      "nom": "Kampong Ayer",
-      "categorie": "Culture",
-      "description": "Plus grand village sur pilotis du monde.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Kampong%20Ayer%20Bandar%20Seri%20Begawan",
-      "lat": 4.8818594,
-      "lng": 114.9438983,
-      "geocoded": true
-    },
-    {
-      "nom": "Town Viewpoint",
-      "lat": 4.8963567,
-      "lng": 114.9449414,
-      "coordonnees": {
-        "lat": 4.8963567,
-        "lng": 114.9449414
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=4.8963567,114.9449414",
-      "source": "osm"
-    },
-    {
-      "nom": "Footbridge Across Canal",
-      "lat": 4.9051191,
-      "lng": 114.9279373,
-      "coordonnees": {
-        "lat": 4.9051191,
-        "lng": 114.9279373
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=4.9051191,114.9279373",
-      "source": "osm"
-    },
-    {
-      "nom": "Brunei Clock Tower",
-      "lat": 4.8903343,
-      "lng": 114.9424571,
-      "coordonnees": {
-        "lat": 4.8903343,
-        "lng": 114.9424571
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=4.8903343,114.9424571",
-      "source": "osm"
-    },
-    {
-      "nom": "Viewpoint",
-      "lat": 4.9045958,
-      "lng": 114.955722,
-      "coordonnees": {
-        "lat": 4.9045958,
-        "lng": 114.955722
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=4.9045958,114.955722",
-      "source": "osm"
-    },
-    {
-      "nom": "Galeri Seni",
-      "lat": 4.8868655,
-      "lng": 114.9429737,
-      "coordonnees": {
-        "lat": 4.8868655,
-        "lng": 114.9429737
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=4.8868655,114.9429737",
-      "source": "osm"
-    },
-    {
-      "nom": "Glass-enclosed Viewing Tower",
-      "lat": 4.88426,
-      "lng": 114.9443257,
-      "coordonnees": {
-        "lat": 4.88426,
-        "lng": 114.9443257
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=4.88426,114.9443257",
-      "source": "osm"
-    },
-    {
-      "nom": "Balai khazanah",
-      "lat": 4.8837293,
-      "lng": 114.9198582,
-      "coordonnees": {
-        "lat": 4.8837293,
-        "lng": 114.9198582
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=4.8837293,114.9198582",
-      "source": "osm"
-    },
-    {
-      "nom": "Bumbungan Dua Belas",
-      "lat": 4.8774517,
-      "lng": 114.9516371,
-      "coordonnees": {
-        "lat": 4.8774517,
-        "lng": 114.9516371
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=4.8774517,114.9516371",
-      "source": "osm"
-    },
-    {
-      "nom": "Sultan's Palace",
-      "lat": 4.8750023,
-      "lng": 114.9322901,
-      "coordonnees": {
-        "lat": 4.8750023,
-        "lng": 114.9322901
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=4.8750023,114.9322901",
-      "source": "osm"
-    },
-    {
-      "nom": "Kota Batu Archaeological Park",
-      "lat": 4.8821488,
-      "lng": 114.9645839,
-      "coordonnees": {
-        "lat": 4.8821488,
-        "lng": 114.9645839
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=4.8821488,114.9645839",
-      "source": "osm"
-    },
-    {
-      "nom": "The entrance to Bukit Sipatir",
-      "lat": 4.8993549,
-      "lng": 114.9743775,
-      "coordonnees": {
-        "lat": 4.8993549,
-        "lng": 114.9743775
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=4.8993549,114.9743775",
-      "source": "osm"
-    },
-    {
-      "nom": "Muzium Teknologi Melayu",
-      "lat": 4.8832503,
-      "lng": 114.9698005,
-      "coordonnees": {
-        "lat": 4.8832503,
-        "lng": 114.9698005
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=4.8832503,114.9698005",
-      "source": "osm"
-    },
-    {
-      "nom": "Buah Tampoi Belimbing",
-      "lat": 4.919876,
-      "lng": 114.9903144,
-      "coordonnees": {
-        "lat": 4.919876,
-        "lng": 114.9903144
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=4.919876,114.9903144",
-      "source": "osm"
-    },
-    {
-      "nom": "Titian Akar Waterfall",
-      "lat": 4.9055207,
-      "lng": 114.868556,
-      "coordonnees": {
-        "lat": 4.9055207,
-        "lng": 114.868556
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=4.9055207,114.868556",
-      "source": "osm"
-    },
-    {
-      "nom": "Buang Tengkurok Waterfall",
-      "lat": 4.9068722,
-      "lng": 114.8675229,
-      "coordonnees": {
-        "lat": 4.9068722,
-        "lng": 114.8675229
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=4.9068722,114.8675229",
-      "source": "osm"
-    },
-    {
-      "nom": "Proboscis Monkey Sighting",
-      "lat": 4.8480085,
-      "lng": 114.8902708,
-      "coordonnees": {
-        "lat": 4.8480085,
-        "lng": 114.8902708
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=4.8480085,114.8902708",
-      "source": "osm"
-    },
-    {
-      "nom": "Bedasur Waterfall",
-      "lat": 4.908129,
-      "lng": 114.8654673,
-      "coordonnees": {
-        "lat": 4.908129,
-        "lng": 114.8654673
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=4.908129,114.8654673",
-      "source": "osm"
-    },
-    {
-      "nom": "Selangan Kaca Waterfall",
-      "lat": 4.9025014,
-      "lng": 114.8637333,
-      "coordonnees": {
-        "lat": 4.9025014,
-        "lng": 114.8637333
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=4.9025014,114.8637333",
-      "source": "osm"
-    },
-    {
-      "nom": "\"X\" Waterfall",
-      "lat": 4.904108,
-      "lng": 114.8636682,
-      "coordonnees": {
-        "lat": 4.904108,
-        "lng": 114.8636682
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=4.904108,114.8636682",
-      "source": "osm"
-    },
-    {
-      "nom": "Bebuhun Waterfall",
-      "lat": 4.9008429,
-      "lng": 114.8636617,
-      "coordonnees": {
-        "lat": 4.9008429,
-        "lng": 114.8636617
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=4.9008429,114.8636617",
-      "source": "osm"
-    },
-    {
-      "nom": "Suak Kapau Waterfall",
-      "lat": 4.9104149,
-      "lng": 114.8637414,
-      "coordonnees": {
-        "lat": 4.9104149,
-        "lng": 114.8637414
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=4.9104149,114.8637414",
-      "source": "osm"
-    },
-    {
-      "nom": "Lion Statue",
-      "lat": 4.9379873,
-      "lng": 114.8358983,
-      "coordonnees": {
-        "lat": 4.9379873,
-        "lng": 114.8358983
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=4.9379873,114.8358983",
-      "source": "osm"
-    },
-    {
-      "nom": "Horse Statue",
-      "lat": 4.9375783,
-      "lng": 114.8351693,
-      "coordonnees": {
-        "lat": 4.9375783,
-        "lng": 114.8351693
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=4.9375783,114.8351693",
-      "source": "osm"
-    },
-    {
-      "nom": "Crystal Diamond",
-      "lat": 4.9365631,
-      "lng": 114.8347284,
-      "coordonnees": {
-        "lat": 4.9365631,
-        "lng": 114.8347284
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=4.9365631,114.8347284",
-      "source": "osm"
-    },
-    {
-      "nom": "Dinosaur Statue",
-      "lat": 4.9407449,
-      "lng": 114.8359717,
-      "coordonnees": {
-        "lat": 4.9407449,
-        "lng": 114.8359717
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=4.9407449,114.8359717",
-      "source": "osm"
-    },
-    {
-      "nom": "Jerudong Park Bus Stop",
-      "lat": 4.9353978,
-      "lng": 114.8338059,
-      "coordonnees": {
-        "lat": 4.9353978,
-        "lng": 114.8338059
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=4.9353978,114.8338059",
-      "source": "osm"
-    },
-    {
-      "nom": "Jeti Santaba Kampung Patiambun",
-      "lat": 4.7923161,
-      "lng": 115.0040429,
-      "coordonnees": {
-        "lat": 4.7923161,
-        "lng": 115.0040429
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=4.7923161,115.0040429",
-      "source": "osm"
-    },
-    {
-      "nom": "Salar Industrial Park",
-      "lat": 4.9993777,
-      "lng": 115.028934,
-      "coordonnees": {
-        "lat": 4.9993777,
-        "lng": 115.028934
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=4.9993777,115.028934",
-      "source": "osm"
-    },
-    {
-      "nom": "Agri Park Katimahar",
-      "lat": 4.8683162,
-      "lng": 114.8118959,
-      "coordonnees": {
-        "lat": 4.8683162,
-        "lng": 114.8118959
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=4.8683162,114.8118959",
-      "source": "osm"
-    },
-    {
-      "nom": "Lugu Lake Brunei",
-      "lat": 4.8901357,
-      "lng": 114.8039458,
-      "coordonnees": {
-        "lat": 4.8901357,
-        "lng": 114.8039458
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=4.8901357,114.8039458",
-      "source": "osm"
-    },
-    {
-      "nom": "Viewing Tower",
-      "lat": 4.7569693,
-      "lng": 115.0063328,
-      "coordonnees": {
-        "lat": 4.7569693,
-        "lng": 115.0063328
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=4.7569693,115.0063328",
-      "source": "osm"
-    }
-  ],
-  "imageCredit": "Wikimedia Commons",
-  "osmEnriched": true,
-  "osmEnrichedAt": "2026-06-30",
-  "description_en": "Bandar Seri Begawan, in Brunei, is a halal-friendly destination with a Halal Trust Score of 4.7/5. Muslim travelers will find 59 halal restaurants listed, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
-  "metaDescription_en": "Halal guide to Bandar Seri Begawan: 59 halal restaurants listed, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.7/5.",
-  "nom_en": "Bandar Seri Begawan",
-  "boucheries": []
+  {
+   "nom": "Ice Bar Shabu Shabu",
+   "type": "seafood",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9020503,114.9287278",
+   "lat": 4.9020503,
+   "lng": 114.9287278,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Nadi Utama",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.8919701,114.9374617",
+   "lat": 4.8919701,
+   "lng": 114.9374617,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Aomori Ramen",
+   "type": "japanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.902482,114.927955",
+   "lat": 4.902482,
+   "lng": 114.927955,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Express",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9001074,114.9267113",
+   "lat": 4.9001074,
+   "lng": 114.9267113,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Haider Sdn Bhd",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.8881634,114.9427529",
+   "lat": 4.8881634,
+   "lng": 114.9427529,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Oldtime Kopitiam",
+   "type": "asian, regional",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.909513,114.9257298",
+   "lat": 4.909513,
+   "lng": 114.9257298,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Bali Pit-Stop",
+   "type": "indonesian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9017996,114.9204195",
+   "lat": 4.9017996,
+   "lng": 114.9204195,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Subbs Kitchen",
+   "type": "sandwich",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.8963906,114.9197911",
+   "lat": 4.8963906,
+   "lng": 114.9197911,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Abydo's Food Messenger",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9108306,114.9176696",
+   "lat": 4.9108306,
+   "lng": 114.9176696,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Baan Thai",
+   "type": "thai",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9056666,114.9160477",
+   "lat": 4.9056666,
+   "lng": 114.9160477,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "SugarBun",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9081139,114.9157857",
+   "lat": 4.9081139,
+   "lng": 114.9157857,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Xinyuen Foodstall",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9087426,114.913676",
+   "lat": 4.9087426,
+   "lng": 114.913676,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Saiba Jaya",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9165082,114.9135321",
+   "lat": 4.9165082,
+   "lng": 114.9135321,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Vanda Chinese Restaurant",
+   "type": "chinese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9327552,114.9448202",
+   "lat": 4.9327552,
+   "lng": 114.9448202,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Kitaro",
+   "type": "japanese, sushi",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9173594,114.9111443",
+   "lat": 4.9173594,
+   "lng": 114.9111443,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Infinitea x I Say Yatta!",
+   "type": "japanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9441911,114.9458742",
+   "lat": 4.9441911,
+   "lng": 114.9458742,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Phở Hòa",
+   "type": "noodle, vietnamese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9442131,114.9481206",
+   "lat": 4.9442131,
+   "lng": 114.9481206,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Pelita Surya Sdn Bhd",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.878516,114.8937019",
+   "lat": 4.878516,
+   "lng": 114.8937019,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Impian Rasa",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.8805055,114.8899455",
+   "lat": 4.8805055,
+   "lng": 114.8899455,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Thai Kitchen",
+   "type": "thai",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.8586549,114.8942532",
+   "lat": 4.8586549,
+   "lng": 114.8942532,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Jollibee",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9658305,114.9517084",
+   "lat": 4.9658305,
+   "lng": 114.9517084,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "T16 Kitchen Rimba - Roti John Lampuh",
+   "type": "Roti John",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9666384,114.9014459",
+   "lat": 4.9666384,
+   "lng": 114.9014459,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "T16 Kitchen Roti John Lampuh",
+   "type": "Roti John",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9666392,114.9014422",
+   "lat": 4.9666392,
+   "lng": 114.9014422,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Warung Atuk",
+   "type": "Nasi Katok",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9672653,114.9002675",
+   "lat": 4.9672653,
+   "lng": 114.9002675,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Street3stall.Bn",
+   "type": "Nasi Katok, healthy cuisine, keto diet, protein",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9693562,114.8987679",
+   "lat": 4.9693562,
+   "lng": 114.8987679,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Subbstation",
+   "type": "sandwich, diet sanwich",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9744534,114.898556",
+   "lat": 4.9744534,
+   "lng": 114.898556,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Sambal Q",
+   "type": "malaysian, bruneian, indonesian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.8596605,114.8642305",
+   "lat": 4.8596605,
+   "lng": 114.8642305,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Sabka Restaurant",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.8421736,114.872208",
+   "lat": 4.8421736,
+   "lng": 114.872208,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Ayamku",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.8924483,114.8473674",
+   "lat": 4.8924483,
+   "lng": 114.8473674,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Raziqin",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.887486,114.8399446",
+   "lat": 4.887486,
+   "lng": 114.8399446,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Li Gong",
+   "type": "chinese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9660685,114.8546103",
+   "lat": 4.9660685,
+   "lng": 114.8546103,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Serikandi Xpress",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9015837,114.9348101",
+   "lat": 4.9015837,
+   "lng": 114.9348101,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Saung Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9009173,114.9294156",
+   "lat": 4.9009173,
+   "lng": 114.9294156,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sugar & Spice",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.90282,114.9285543",
+   "lat": 4.90282,
+   "lng": 114.9285543,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kofta Diva",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9182579,114.9242697",
+   "lat": 4.9182579,
+   "lng": 114.9242697,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Seri Damai",
+   "type": "pakistani",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9433928,114.9460271",
+   "lat": 4.9433928,
+   "lng": 114.9460271,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Casbah",
+   "type": "fish, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9606041,114.9443362",
+   "lat": 4.9606041,
+   "lng": 114.9443362,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Uum Umiyati",
+   "type": "burger, kebab, kueh malaya, roti john",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9664931,114.9466661",
+   "lat": 4.9664931,
+   "lng": 114.9466661,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Nadj",
+   "type": "arab, indian, malay",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.8544408,114.8908941",
+   "lat": 4.8544408,
+   "lng": 114.8908941,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Amsarra Foodstall",
+   "type": "gyros, lebanese, mediterranean",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9710204,114.9776429",
+   "lat": 4.9710204,
+   "lng": 114.9776429,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Santi Nur",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.8872186,114.8395167",
+   "lat": 4.8872186,
+   "lng": 114.8395167,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "ABC eats",
+   "lat": 4.9020948,
+   "lng": 114.938987,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=4.9020948,114.938987",
+   "source": "osm"
+  },
+  {
+   "nom": "Bollywood",
+   "lat": 4.9002134,
+   "lng": 114.9290244,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=4.9002134,114.9290244",
+   "source": "osm"
+  },
+  {
+   "nom": "Le' Taj",
+   "lat": 4.9019699,
+   "lng": 114.9272221,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=4.9019699,114.9272221",
+   "source": "osm"
+  },
+  {
+   "nom": "Haveli",
+   "lat": 4.907025,
+   "lng": 114.9244703,
+   "type": "filipino, indian, malay",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=4.907025,114.9244703",
+   "source": "osm"
+  },
+  {
+   "nom": "Rajah's",
+   "lat": 4.887423,
+   "lng": 114.9311313,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=4.887423,114.9311313",
+   "source": "osm"
+  },
+  {
+   "nom": "Seri Maharaja",
+   "lat": 4.8870177,
+   "lng": 114.9317625,
+   "type": "asian, indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=4.8870177,114.9317625",
+   "source": "osm"
+  },
+  {
+   "nom": "Tandoor.com",
+   "lat": 4.9016893,
+   "lng": 114.9178237,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=4.9016893,114.9178237",
+   "source": "osm"
+  },
+  {
+   "nom": "DM Waazif",
+   "lat": 4.9081453,
+   "lng": 114.9165144,
+   "type": "indian, malay",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=4.9081453,114.9165144",
+   "source": "osm"
+  },
+  {
+   "nom": "Kacchi",
+   "lat": 4.9166773,
+   "lng": 114.9149631,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=4.9166773,114.9149631",
+   "source": "osm"
+  },
+  {
+   "nom": "Bombay Palace",
+   "lat": 4.9175492,
+   "lng": 114.9129352,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=4.9175492,114.9129352",
+   "source": "osm"
+  },
+  {
+   "nom": "Sameer",
+   "lat": 4.9435484,
+   "lng": 114.9442904,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=4.9435484,114.9442904",
+   "source": "osm"
+  },
+  {
+   "nom": "Blue Restaurant & Grill",
+   "lat": 4.8862553,
+   "lng": 114.8976548,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=4.8862553,114.8976548",
+   "source": "osm"
+  },
+  {
+   "nom": "Indian Delights",
+   "lat": 4.9381478,
+   "lng": 114.9700798,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=4.9381478,114.9700798",
+   "source": "osm"
+  },
+  {
+   "nom": "Maha Osai",
+   "lat": 4.9541835,
+   "lng": 114.9438626,
+   "type": "indian, indonesian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=4.9541835,114.9438626",
+   "source": "osm"
+  },
+  {
+   "nom": "Sameer Sdn Bhd",
+   "lat": 4.9483197,
+   "lng": 114.9642192,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=4.9483197,114.9642192",
+   "source": "osm"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "CoLiving Hostel Kiulap",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.903205,114.9398355",
+   "lat": 4.903205,
+   "lng": 114.9398355,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=4.903205,114.9398355",
+   "source": "osm"
+  },
+  {
+   "nom": "Terrace",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.8954733,114.9415107",
+   "lat": 4.8954733,
+   "lng": 114.9415107,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=4.8954733,114.9415107",
+   "source": "osm"
+  },
+  {
+   "nom": "Radisson Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.8946328,114.9425955",
+   "lat": 4.8946328,
+   "lng": 114.9425955,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=4.8946328,114.9425955",
+   "source": "osm"
+  },
+  {
+   "nom": "Higher Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.8988645,114.9300016",
+   "lat": 4.8988645,
+   "lng": 114.9300016,
+   "halalFriendly": false,
+   "bookingUrl": "http://higherhotelbrunei.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Al-Afiah Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9006606,114.9289408",
+   "lat": 4.9006606,
+   "lng": 114.9289408,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=4.9006606,114.9289408",
+   "source": "osm"
+  },
+  {
+   "nom": "AE Backpacker Hostel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.8992149,114.9292315",
+   "lat": 4.8992149,
+   "lng": 114.9292315,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=4.8992149,114.9292315",
+   "source": "osm"
+  },
+  {
+   "nom": "The Capital Residence Suites",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.8926649,114.9443912",
+   "lat": 4.8926649,
+   "lng": 114.9443912,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.capitalresidencebn.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Pusat Belia Youth Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.8921609,114.9441455",
+   "lat": 4.8921609,
+   "lng": 114.9441455,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=4.8921609,114.9441455",
+   "source": "osm"
+  },
+  {
+   "nom": "118 Residence",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.8984975,114.9285937",
+   "lat": 4.8984975,
+   "lng": 114.9285937,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.118residencesuites.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Plaza Kiulap",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9025663,114.9268955",
+   "lat": 4.9025663,
+   "lng": 114.9268955,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=4.9025663,114.9268955",
+   "source": "osm"
+  },
+  {
+   "nom": "Jubilee Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.8914783,114.9458783",
+   "lat": 4.8914783,
+   "lng": 114.9458783,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=4.8914783,114.9458783",
+   "source": "osm"
+  },
+  {
+   "nom": "K.H. Soon Services And Resthouse",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.8890492,114.9437378",
+   "lat": 4.8890492,
+   "lng": 114.9437378,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=4.8890492,114.9437378",
+   "source": "osm"
+  },
+  {
+   "nom": "Co.Living Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.888712,114.9430049",
+   "lat": 4.888712,
+   "lng": 114.9430049,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=4.888712,114.9430049",
+   "source": "osm"
+  },
+  {
+   "nom": "Co. Living Hostel Bandar",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.8886249,114.9430096",
+   "lat": 4.8886249,
+   "lng": 114.9430096,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=4.8886249,114.9430096",
+   "source": "osm"
+  },
+  {
+   "nom": "The Brunei Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.8888807,114.9440143",
+   "lat": 4.8888807,
+   "lng": 114.9440143,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=4.8888807,114.9440143",
+   "source": "osm"
+  },
+  {
+   "nom": "Hornbill Garden Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9035624,114.9245976",
+   "lat": 4.9035624,
+   "lng": 114.9245976,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=4.9035624,114.9245976",
+   "source": "osm"
+  },
+  {
+   "nom": "Britannia House",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.8880929,114.944209",
+   "lat": 4.8880929,
+   "lng": 114.944209,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=4.8880929,114.944209",
+   "source": "osm"
+  },
+  {
+   "nom": "Qing Yun Resthouse Sdn Bhd",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.887299,114.9435145",
+   "lat": 4.887299,
+   "lng": 114.9435145,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=4.887299,114.9435145",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Badi'ah",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.8889483,114.9315791",
+   "lat": 4.8889483,
+   "lng": 114.9315791,
+   "halalFriendly": false,
+   "bookingUrl": "http://badiahhotel.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "J Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9015303,114.9228367",
+   "lat": 4.9015303,
+   "lng": 114.9228367,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=4.9015303,114.9228367",
+   "source": "osm"
+  },
+  {
+   "nom": "LeGallery Suites Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.886754,114.9316275",
+   "lat": 4.886754,
+   "lng": 114.9316275,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=4.886754,114.9316275",
+   "source": "osm"
+  },
+  {
+   "nom": "Abdul Razak Hotel Apartments",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.8855446,114.9315985",
+   "lat": 4.8855446,
+   "lng": 114.9315985,
+   "halalFriendly": false,
+   "bookingUrl": "http://abdulrazakhotelapts.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Rizqun International Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9053931,114.9175715",
+   "lat": 4.9053931,
+   "lng": 114.9175715,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=4.9053931,114.9175715",
+   "source": "osm"
+  },
+  {
+   "nom": "Qing Yun Rest House Sdn Bhd",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9061367,114.9176464",
+   "lat": 4.9061367,
+   "lng": 114.9176464,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=4.9061367,114.9176464",
+   "source": "osm"
+  },
+  {
+   "nom": "EZ Lodgings",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9077019,114.9177753",
+   "lat": 4.9077019,
+   "lng": 114.9177753,
+   "halalFriendly": false,
+   "bookingUrl": "https://m.facebook.com/EZ-Lodgings-1742028372780426/",
+   "source": "osm"
+  },
+  {
+   "nom": "City One Lodge",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9107126,114.9184486",
+   "lat": 4.9107126,
+   "lng": 114.9184486,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=4.9107126,114.9184486",
+   "source": "osm"
+  },
+  {
+   "nom": "Miniinn Guesthouse",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9079187,114.9166479",
+   "lat": 4.9079187,
+   "lng": 114.9166479,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=4.9079187,114.9166479",
+   "source": "osm"
+  },
+  {
+   "nom": "Easybox Homestay",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.908523,114.9162853",
+   "lat": 4.908523,
+   "lng": 114.9162853,
+   "halalFriendly": false,
+   "bookingUrl": "http://easyboxhomestay.weebly.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "The Centrepoint Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.907437,114.9156984",
+   "lat": 4.907437,
+   "lng": 114.9156984,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=4.907437,114.9156984",
+   "source": "osm"
+  },
+  {
+   "nom": "Centerpoint Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9075818,114.9154358",
+   "lat": 4.9075818,
+   "lng": 114.9154358,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=4.9075818,114.9154358",
+   "source": "osm"
+  },
+  {
+   "nom": "Venice Lodge",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.895272,114.9154101",
+   "lat": 4.895272,
+   "lng": 114.9154101,
+   "halalFriendly": false,
+   "bookingUrl": "http://venicelodgebrunei.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Qing Yun",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9087283,114.9136978",
+   "lat": 4.9087283,
+   "lng": 114.9136978,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=4.9087283,114.9136978",
+   "source": "osm"
+  },
+  {
+   "nom": "Brunei Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9299989,114.9499969",
+   "lat": 4.9299989,
+   "lng": 114.9499969,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=4.9299989,114.9499969",
+   "source": "osm"
+  },
+  {
+   "nom": "Grand City Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9173377,114.9137291",
+   "lat": 4.9173377,
+   "lng": 114.9137291,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=4.9173377,114.9137291",
+   "source": "osm"
+  },
+  {
+   "nom": "Mulia Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9327351,114.9450084",
+   "lat": 4.9327351,
+   "lng": 114.9450084,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=4.9327351,114.9450084",
+   "source": "osm"
+  },
+  {
+   "nom": "Apek Utama Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.875091,114.955239",
+   "lat": 4.875091,
+   "lng": 114.955239,
+   "halalFriendly": false,
+   "bookingUrl": "http://apekutamahotel.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Dandelion Villa",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.8884004,114.9084683",
+   "lat": 4.8884004,
+   "lng": 114.9084683,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=4.8884004,114.9084683",
+   "source": "osm"
+  },
+  {
+   "nom": "Times Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.939476,114.9400406",
+   "lat": 4.939476,
+   "lng": 114.9400406,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=4.939476,114.9400406",
+   "source": "osm"
+  },
+  {
+   "nom": "Traders Inn",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9000557,114.9023339",
+   "lat": 4.9000557,
+   "lng": 114.9023339,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=4.9000557,114.9023339",
+   "source": "osm"
+  },
+  {
+   "nom": "Aman Hills Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9473975,114.9676502",
+   "lat": 4.9473975,
+   "lng": 114.9676502,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=4.9473975,114.9676502",
+   "source": "osm"
+  },
+  {
+   "nom": "Telanai 16 Lodge",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.8795392,114.8917515",
+   "lat": 4.8795392,
+   "lng": 114.8917515,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=4.8795392,114.8917515",
+   "source": "osm"
+  },
+  {
+   "nom": "Coconut Bay Lodge",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.8807133,114.8898865",
+   "lat": 4.8807133,
+   "lng": 114.8898865,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=4.8807133,114.8898865",
+   "source": "osm"
+  },
+  {
+   "nom": "Mangrove Paradise Resort",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9108279,115.0061349",
+   "lat": 4.9108279,
+   "lng": 115.0061349,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.facebook.com/mangroveparadise/",
+   "source": "osm"
+  },
+  {
+   "nom": "JJ Homestay",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.8378519,114.9167964",
+   "lat": 4.8378519,
+   "lng": 114.9167964,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=4.8378519,114.9167964",
+   "source": "osm"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "Surau",
+   "lat": 4.9021436,
+   "lng": 114.9288368,
+   "coordonnees": {
+    "lat": 4.9021436,
+    "lng": 114.9288368
+   },
+   "mapsUrl": "https://maps.google.com/?q=4.9021436,114.9288368",
+   "source": "osm"
+  },
+  {
+   "nom": "Surau Darul Hidayah Kampung Patiambun",
+   "lat": 4.7914761,
+   "lng": 115.00175,
+   "coordonnees": {
+    "lat": 4.7914761,
+    "lng": 115.00175
+   },
+   "mapsUrl": "https://maps.google.com/?q=4.7914761,115.00175",
+   "source": "osm"
+  },
+  {
+   "nom": "Surau Syurfatul Jannah",
+   "lat": 4.7816256,
+   "lng": 114.9979072,
+   "coordonnees": {
+    "lat": 4.7816256,
+    "lng": 114.9979072
+   },
+   "mapsUrl": "https://maps.google.com/?q=4.7816256,114.9979072",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Baru Limbang",
+   "lat": 4.7703948,
+   "lng": 115.011001,
+   "coordonnees": {
+    "lat": 4.7703948,
+    "lng": 115.011001
+   },
+   "mapsUrl": "https://maps.google.com/?q=4.7703948,115.011001",
+   "source": "osm"
+  },
+  {
+   "nom": "Kampong Pengkalan Batu Mosque",
+   "lat": 4.7990476,
+   "lng": 114.8278202,
+   "coordonnees": {
+    "lat": 4.7990476,
+    "lng": 114.8278202
+   },
+   "mapsUrl": "https://maps.google.com/?q=4.7990476,114.8278202",
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Town Viewpoint",
+   "lat": 4.8963567,
+   "lng": 114.9449414,
+   "coordonnees": {
+    "lat": 4.8963567,
+    "lng": 114.9449414
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=4.8963567,114.9449414",
+   "source": "osm"
+  },
+  {
+   "nom": "Footbridge Across Canal",
+   "lat": 4.9051191,
+   "lng": 114.9279373,
+   "coordonnees": {
+    "lat": 4.9051191,
+    "lng": 114.9279373
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=4.9051191,114.9279373",
+   "source": "osm"
+  },
+  {
+   "nom": "Brunei Clock Tower",
+   "lat": 4.8903343,
+   "lng": 114.9424571,
+   "coordonnees": {
+    "lat": 4.8903343,
+    "lng": 114.9424571
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=4.8903343,114.9424571",
+   "source": "osm"
+  },
+  {
+   "nom": "Viewpoint",
+   "lat": 4.9045958,
+   "lng": 114.955722,
+   "coordonnees": {
+    "lat": 4.9045958,
+    "lng": 114.955722
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=4.9045958,114.955722",
+   "source": "osm"
+  },
+  {
+   "nom": "Galeri Seni",
+   "lat": 4.8868655,
+   "lng": 114.9429737,
+   "coordonnees": {
+    "lat": 4.8868655,
+    "lng": 114.9429737
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=4.8868655,114.9429737",
+   "source": "osm"
+  },
+  {
+   "nom": "Glass-enclosed Viewing Tower",
+   "lat": 4.88426,
+   "lng": 114.9443257,
+   "coordonnees": {
+    "lat": 4.88426,
+    "lng": 114.9443257
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=4.88426,114.9443257",
+   "source": "osm"
+  },
+  {
+   "nom": "Balai khazanah",
+   "lat": 4.8837293,
+   "lng": 114.9198582,
+   "coordonnees": {
+    "lat": 4.8837293,
+    "lng": 114.9198582
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=4.8837293,114.9198582",
+   "source": "osm"
+  },
+  {
+   "nom": "Bumbungan Dua Belas",
+   "lat": 4.8774517,
+   "lng": 114.9516371,
+   "coordonnees": {
+    "lat": 4.8774517,
+    "lng": 114.9516371
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=4.8774517,114.9516371",
+   "source": "osm"
+  },
+  {
+   "nom": "Sultan's Palace",
+   "lat": 4.8750023,
+   "lng": 114.9322901,
+   "coordonnees": {
+    "lat": 4.8750023,
+    "lng": 114.9322901
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=4.8750023,114.9322901",
+   "source": "osm"
+  },
+  {
+   "nom": "Kota Batu Archaeological Park",
+   "lat": 4.8821488,
+   "lng": 114.9645839,
+   "coordonnees": {
+    "lat": 4.8821488,
+    "lng": 114.9645839
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=4.8821488,114.9645839",
+   "source": "osm"
+  },
+  {
+   "nom": "The entrance to Bukit Sipatir",
+   "lat": 4.8993549,
+   "lng": 114.9743775,
+   "coordonnees": {
+    "lat": 4.8993549,
+    "lng": 114.9743775
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=4.8993549,114.9743775",
+   "source": "osm"
+  },
+  {
+   "nom": "Muzium Teknologi Melayu",
+   "lat": 4.8832503,
+   "lng": 114.9698005,
+   "coordonnees": {
+    "lat": 4.8832503,
+    "lng": 114.9698005
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=4.8832503,114.9698005",
+   "source": "osm"
+  },
+  {
+   "nom": "Buah Tampoi Belimbing",
+   "lat": 4.919876,
+   "lng": 114.9903144,
+   "coordonnees": {
+    "lat": 4.919876,
+    "lng": 114.9903144
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=4.919876,114.9903144",
+   "source": "osm"
+  },
+  {
+   "nom": "Titian Akar Waterfall",
+   "lat": 4.9055207,
+   "lng": 114.868556,
+   "coordonnees": {
+    "lat": 4.9055207,
+    "lng": 114.868556
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=4.9055207,114.868556",
+   "source": "osm"
+  },
+  {
+   "nom": "Buang Tengkurok Waterfall",
+   "lat": 4.9068722,
+   "lng": 114.8675229,
+   "coordonnees": {
+    "lat": 4.9068722,
+    "lng": 114.8675229
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=4.9068722,114.8675229",
+   "source": "osm"
+  },
+  {
+   "nom": "Proboscis Monkey Sighting",
+   "lat": 4.8480085,
+   "lng": 114.8902708,
+   "coordonnees": {
+    "lat": 4.8480085,
+    "lng": 114.8902708
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=4.8480085,114.8902708",
+   "source": "osm"
+  },
+  {
+   "nom": "Bedasur Waterfall",
+   "lat": 4.908129,
+   "lng": 114.8654673,
+   "coordonnees": {
+    "lat": 4.908129,
+    "lng": 114.8654673
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=4.908129,114.8654673",
+   "source": "osm"
+  },
+  {
+   "nom": "Selangan Kaca Waterfall",
+   "lat": 4.9025014,
+   "lng": 114.8637333,
+   "coordonnees": {
+    "lat": 4.9025014,
+    "lng": 114.8637333
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=4.9025014,114.8637333",
+   "source": "osm"
+  },
+  {
+   "nom": "\"X\" Waterfall",
+   "lat": 4.904108,
+   "lng": 114.8636682,
+   "coordonnees": {
+    "lat": 4.904108,
+    "lng": 114.8636682
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=4.904108,114.8636682",
+   "source": "osm"
+  },
+  {
+   "nom": "Bebuhun Waterfall",
+   "lat": 4.9008429,
+   "lng": 114.8636617,
+   "coordonnees": {
+    "lat": 4.9008429,
+    "lng": 114.8636617
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=4.9008429,114.8636617",
+   "source": "osm"
+  },
+  {
+   "nom": "Suak Kapau Waterfall",
+   "lat": 4.9104149,
+   "lng": 114.8637414,
+   "coordonnees": {
+    "lat": 4.9104149,
+    "lng": 114.8637414
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=4.9104149,114.8637414",
+   "source": "osm"
+  },
+  {
+   "nom": "Lion Statue",
+   "lat": 4.9379873,
+   "lng": 114.8358983,
+   "coordonnees": {
+    "lat": 4.9379873,
+    "lng": 114.8358983
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=4.9379873,114.8358983",
+   "source": "osm"
+  },
+  {
+   "nom": "Horse Statue",
+   "lat": 4.9375783,
+   "lng": 114.8351693,
+   "coordonnees": {
+    "lat": 4.9375783,
+    "lng": 114.8351693
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=4.9375783,114.8351693",
+   "source": "osm"
+  },
+  {
+   "nom": "Crystal Diamond",
+   "lat": 4.9365631,
+   "lng": 114.8347284,
+   "coordonnees": {
+    "lat": 4.9365631,
+    "lng": 114.8347284
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=4.9365631,114.8347284",
+   "source": "osm"
+  },
+  {
+   "nom": "Dinosaur Statue",
+   "lat": 4.9407449,
+   "lng": 114.8359717,
+   "coordonnees": {
+    "lat": 4.9407449,
+    "lng": 114.8359717
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=4.9407449,114.8359717",
+   "source": "osm"
+  },
+  {
+   "nom": "Jerudong Park Bus Stop",
+   "lat": 4.9353978,
+   "lng": 114.8338059,
+   "coordonnees": {
+    "lat": 4.9353978,
+    "lng": 114.8338059
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=4.9353978,114.8338059",
+   "source": "osm"
+  },
+  {
+   "nom": "Jeti Santaba Kampung Patiambun",
+   "lat": 4.7923161,
+   "lng": 115.0040429,
+   "coordonnees": {
+    "lat": 4.7923161,
+    "lng": 115.0040429
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=4.7923161,115.0040429",
+   "source": "osm"
+  },
+  {
+   "nom": "Salar Industrial Park",
+   "lat": 4.9993777,
+   "lng": 115.028934,
+   "coordonnees": {
+    "lat": 4.9993777,
+    "lng": 115.028934
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=4.9993777,115.028934",
+   "source": "osm"
+  },
+  {
+   "nom": "Agri Park Katimahar",
+   "lat": 4.8683162,
+   "lng": 114.8118959,
+   "coordonnees": {
+    "lat": 4.8683162,
+    "lng": 114.8118959
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=4.8683162,114.8118959",
+   "source": "osm"
+  },
+  {
+   "nom": "Lugu Lake Brunei",
+   "lat": 4.8901357,
+   "lng": 114.8039458,
+   "coordonnees": {
+    "lat": 4.8901357,
+    "lng": 114.8039458
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=4.8901357,114.8039458",
+   "source": "osm"
+  },
+  {
+   "nom": "Viewing Tower",
+   "lat": 4.7569693,
+   "lng": 115.0063328,
+   "coordonnees": {
+    "lat": 4.7569693,
+    "lng": 115.0063328
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=4.7569693,115.0063328",
+   "source": "osm"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30",
+ "description_en": "Bandar Seri Begawan, in Brunei, is a halal-friendly destination with a Halal Trust Score of 4.7/5. Muslim travelers will find 59 halal restaurants listed, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
+ "metaDescription_en": "Halal guide to Bandar Seri Begawan: 59 halal restaurants listed, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.7/5.",
+ "nom_en": "Bandar Seri Begawan",
+ "boucheries": [],
+ "dataPurgedAt": "2026-07-15"
 }

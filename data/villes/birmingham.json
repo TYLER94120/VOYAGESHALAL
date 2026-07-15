@@ -1,3512 +1,3470 @@
 {
-  "slug": "birmingham",
-  "nom": "Birmingham",
-  "pays": "Royaume-Uni",
-  "pays_slug": "royaume-uni",
-  "continent": "Europe",
-  "region": "Royaume-Uni",
-  "coordonnees": {
-    "lat": 52.4862,
-    "lng": -1.8904
+ "slug": "birmingham",
+ "nom": "Birmingham",
+ "pays": "Royaume-Uni",
+ "pays_slug": "royaume-uni",
+ "continent": "Europe",
+ "region": "Royaume-Uni",
+ "coordonnees": {
+  "lat": 52.4862,
+  "lng": -1.8904
+ },
+ "codeISO": "",
+ "score_halal": 4.5,
+ "halalScore": 8.9,
+ "description": "Deuxième ville du Royaume-Uni avec l'une des plus grandes communautés musulmanes d'Europe, Birmingham abrite la grande mosquée centrale et le Balti Triangle.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Birmingham-Skyline-from-Edgbaston-crop.jpg/1920px-Birmingham-Skyline-from-Edgbaston-crop.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Birmingham-Skyline-from-Edgbaston-crop.jpg/1920px-Birmingham-Skyline-from-Edgbaston-crop.jpg",
+ "metaDescription": "Deuxième ville du Royaume-Uni avec l'une des plus grandes communautés musulmanes d'Europe, Birmingham abrite la grande mosquée centrale et le Balti Triangle.",
+ "statistiques": {
+  "restaurants_halal": 142,
+  "mosquees": 17,
+  "hotels": 108
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "Dixy Chicken",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4840605,-1.8929378",
+   "lat": 52.4840605,
+   "lng": -1.8929378,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.5,
-  "halalScore": 8.9,
-  "description": "Deuxième ville du Royaume-Uni avec l'une des plus grandes communautés musulmanes d'Europe, Birmingham abrite la grande mosquée centrale et le Balti Triangle.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Birmingham-Skyline-from-Edgbaston-crop.jpg/1920px-Birmingham-Skyline-from-Edgbaston-crop.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Birmingham-Skyline-from-Edgbaston-crop.jpg/1920px-Birmingham-Skyline-from-Edgbaston-crop.jpg",
-  "metaDescription": "Deuxième ville du Royaume-Uni avec l'une des plus grandes communautés musulmanes d'Europe, Birmingham abrite la grande mosquée centrale et le Balti Triangle.",
-  "statistiques": {
-    "restaurants_halal": 94,
-    "mosquees": 1,
-    "hotels": 120
+  {
+   "nom": "Al Arabi Grill House Express",
+   "type": "shawarma",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4803154,-1.8948245",
+   "lat": 52.4803154,
+   "lng": -1.8948245,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "Popeyes",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4794717,-1.9012991",
+   "lat": 52.4794717,
+   "lng": -1.9012991,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [
-    {
-      "nom": "Dixy Chicken",
-      "type": "chicken",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4840605,-1.8929378",
-      "lat": 52.4840605,
-      "lng": -1.8929378,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Al Arabi Grill House Express",
-      "type": "shawarma",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4803154,-1.8948245",
-      "lat": 52.4803154,
-      "lng": -1.8948245,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Popeyes",
-      "type": "chicken",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4794717,-1.9012991",
-      "lat": 52.4794717,
-      "lng": -1.9012991,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Thai Express",
-      "type": "thai",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4773704,-1.8978873",
-      "lat": 52.4773704,
-      "lng": -1.8978873,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Taste of Pakistan",
-      "type": "pakistani",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4593447,-1.8764886",
-      "lat": 52.4593447,
-      "lng": -1.8764886,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Haute Dolci",
-      "type": "dessert",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.5048634,-1.8548963",
-      "lat": 52.5048634,
-      "lng": -1.8548963,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Subway",
-      "type": "sandwich",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4720855,-1.9319095",
-      "lat": 52.4720855,
-      "lng": -1.9319095,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Colbeh Persian Kitchen",
-      "type": "persian",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4721426,-1.9327443",
-      "lat": 52.4721426,
-      "lng": -1.9327443,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Roti Mahl",
-      "type": "Restaurant halal",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4527395,-1.8786099",
-      "lat": 52.4527395,
-      "lng": -1.8786099,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Lal Qela",
-      "type": "indian",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4882646,-1.8313425",
-      "lat": 52.4882646,
-      "lng": -1.8313425,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Boo.",
-      "type": "burger, american",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4467108,-1.888382",
-      "lat": 52.4467108,
-      "lng": -1.888382,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Aphamia",
-      "type": "middle eastern, falafel, shawarma",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.5218882,-1.8431736",
-      "lat": 52.5218882,
-      "lng": -1.8431736,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Chicking Selly Oak",
-      "type": "chicken, wings, burger",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4454496,-1.9334942",
-      "lat": 52.4454496,
-      "lng": -1.9334942,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Hagley Kebab House",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4725672,-1.967812",
-      "lat": 52.4725672,
-      "lng": -1.967812,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Karachi Kebab And Pizza",
-      "type": "kebab, pizza",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4767577,-1.9696337",
-      "lat": 52.4767577,
-      "lng": -1.9696337,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Burger & Sauce",
-      "type": "burger",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4744272,-1.9693651",
-      "lat": 52.4744272,
-      "lng": -1.9693651,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Taste of Chennai",
-      "type": "indian, south indian",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4384204,-1.9400682",
-      "lat": 52.4384204,
-      "lng": -1.9400682,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "New Oceana Fish Bar",
-      "type": "fish and chips",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.5024191,-2.0029931",
-      "lat": 52.5024191,
-      "lng": -2.0029931,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Spice of Asia",
-      "type": "indian",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.5574996,-1.8922719",
-      "lat": 52.5574996,
-      "lng": -1.8922719,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "M.A.K. Halal",
-      "type": "burger",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.5192304,-1.9945264",
-      "lat": 52.5192304,
-      "lng": -1.9945264,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Jerk & Grill / Cookielicious",
-      "type": "burger, chicken, steak house, dessert",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.5191999,-1.9955258",
-      "lat": 52.5191999,
-      "lng": -1.9955258,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Chicking Westbromwich",
-      "type": "wings, burger",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.5164049,-1.9978215",
-      "lat": 52.5164049,
-      "lng": -1.9978215,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Oldbury Social Club Bar & Grill",
-      "type": "nepalese, indian",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.5027343,-2.0098069",
-      "lat": 52.5027343,
-      "lng": -2.0098069,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "TeamSport Bar & Kitchen",
-      "type": "Restaurant halal",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4989354,-2.014709",
-      "lat": 52.4989354,
-      "lng": -2.014709,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Tikka Nation - Birmingham",
-      "type": "indian",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.5588687,-1.8268211",
-      "lat": 52.5588687,
-      "lng": -1.8268211,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Benny's Chicken",
-      "type": "chicken",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4760178,-2.0382922",
-      "lat": 52.4760178,
-      "lng": -2.0382922,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Chicking Wednesbury",
-      "type": "chicken, wings, burger",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.5526902,-2.0214607",
-      "lat": 52.5526902,
-      "lng": -2.0214607,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "KFC",
-      "type": "chicken",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.565096,-2.0046166",
-      "lat": 52.565096,
-      "lng": -2.0046166,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "German Doner Kebab",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4795072,-1.9015493",
-      "lat": 52.4795072,
-      "lng": -1.9015493,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Khan Palace",
-      "type": "pakistani",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4766166,-1.8923519",
-      "lat": 52.4766166,
-      "lng": -1.8923519,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Suhail Pizza and Kebabs",
-      "type": "pizza, kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.503449,-1.8995076",
-      "lat": 52.503449,
-      "lng": -1.8995076,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Mindi House",
-      "type": "arab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4714653,-1.8625688",
-      "lat": 52.4714653,
-      "lng": -1.8625688,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Filfila Restaurant & Pastry",
-      "type": "moroccan",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4632468,-1.8766342",
-      "lat": 52.4632468,
-      "lng": -1.8766342,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Old Damascus",
-      "type": "mediterranean, arab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4679514,-1.854205",
-      "lat": 52.4679514,
-      "lng": -1.854205,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Big John's",
-      "type": "pizza, kebab, chicken, burger, wraps, panini, fish and chips, ice cream, american",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.472078,-1.931711",
-      "lat": 52.472078,
-      "lng": -1.931711,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Soofi Persian Restaurant",
-      "type": "persian",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4721011,-1.9320258",
-      "lat": 52.4721011,
-      "lng": -1.9320258,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Sheesh Turkish Meze & Grill",
-      "type": "turkish",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4721305,-1.9325767",
-      "lat": 52.4721305,
-      "lng": -1.9325767,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Alaturka",
-      "type": "turkish",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4538092,-1.8776884",
-      "lat": 52.4538092,
-      "lng": -1.8776884,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Antep",
-      "type": "turkish",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4532917,-1.8778111",
-      "lat": 52.4532917,
-      "lng": -1.8778111,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Erbil Shawarma and Kebab House",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.503979,-1.9390887",
-      "lat": 52.503979,
-      "lng": -1.9390887,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Daanyaal Kebab House",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4929955,-1.8320386",
-      "lat": 52.4929955,
-      "lng": -1.8320386,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Kurdistan Restaurant",
-      "type": "arab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.5056262,-1.9405415",
-      "lat": 52.5056262,
-      "lng": -1.9405415,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Keyaans Grill House",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4867684,-1.9550679",
-      "lat": 52.4867684,
-      "lng": -1.9550679,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Erdington Curry n Kebab",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.5095558,-1.8373664",
-      "lat": 52.5095558,
-      "lng": -1.8373664,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Farahzad Resturant (L1)",
-      "type": "persian, mediterranean",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.486606,-1.9584601",
-      "lat": 52.486606,
-      "lng": -1.9584601,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Istanbul Shawrma",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4866228,-1.9587128",
-      "lat": 52.4866228,
-      "lng": -1.9587128,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Bearwood Grill House",
-      "type": "turkish, persian",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4775834,-1.9699105",
-      "lat": 52.4775834,
-      "lng": -1.9699105,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Neelams Kebab House",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4728105,-1.9682759",
-      "lat": 52.4728105,
-      "lng": -1.9682759,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Sheratton",
-      "type": "bangladeshi",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4448272,-1.9345274",
-      "lat": 52.4448272,
-      "lng": -1.9345274,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Rouhi Restaurant",
-      "type": "mediterranean, persian",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4772462,-1.9709112",
-      "lat": 52.4772462,
-      "lng": -1.9709112,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Lebanese Feast",
-      "type": "lebanese",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4361456,-1.8927905",
-      "lat": 52.4361456,
-      "lng": -1.8927905,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Vegan Munch",
-      "type": "shawarma",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4440086,-1.9354632",
-      "lat": 52.4440086,
-      "lng": -1.9354632,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Falafel Munch",
-      "type": "lebanese, falafel, salad",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4439741,-1.9355057",
-      "lat": 52.4439741,
-      "lng": -1.9355057,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Mount Nemrut Turkish Restaurant",
-      "type": "turkish",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4772712,-1.9721685",
-      "lat": 52.4772712,
-      "lng": -1.9721685,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Classic",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.5367181,-1.8741583",
-      "lat": 52.5367181,
-      "lng": -1.8741583,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Marmaris Original Turkish Charcoal Grill",
-      "type": "mediterranean, turkish",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.432031,-1.892819",
-      "lat": 52.432031,
-      "lng": -1.892819,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Spice Aroma",
-      "type": "bangladeshi",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4371044,-1.9293147",
-      "lat": 52.4371044,
-      "lng": -1.9293147,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Arabella Lebanese Restaurant",
-      "type": "lebanese",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4462754,-1.8248423",
-      "lat": 52.4462754,
-      "lng": -1.8248423,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Marsala Merchant",
-      "type": "indian, bangladeshi",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4322466,-1.9194791",
-      "lat": 52.4322466,
-      "lng": -1.9194791,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Karahi King Village",
-      "type": "pakistani",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4456915,-1.8184899",
-      "lat": 52.4456915,
-      "lng": -1.8184899,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Fast 1 Pizza & Grill",
-      "type": "pizza, chicken, turkish",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.5021338,-1.9904967",
-      "lat": 52.5021338,
-      "lng": -1.9904967,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Magnificos",
-      "type": "pizza, burger, kebab, fish and chips",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4285098,-1.956461",
-      "lat": 52.4285098,
-      "lng": -1.956461,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "SpitFryer",
-      "type": "chicken, kebab, pizza",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.5088146,-1.7777924",
-      "lat": 52.5088146,
-      "lng": -1.7777924,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Causeway German Doner",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4879725,-2.0102401",
-      "lat": 52.4879725,
-      "lng": -2.0102401,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Aakash Balti",
-      "type": "bangladeshi",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.5236965,-2.0022976",
-      "lat": 52.5236965,
-      "lng": -2.0022976,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Sutton's Fish Bar",
-      "type": "fish and chips, pie, kebab, chicken",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.5413609,-1.7998785",
-      "lat": 52.5413609,
-      "lng": -1.7998785,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "UK Shawarma",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.5241661,-2.0033872",
-      "lat": 52.5241661,
-      "lng": -2.0033872,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Cetin Turkish Kebab House",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4769461,-2.0367707",
-      "lat": 52.4769461,
-      "lng": -2.0367707,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Ginger Blue",
-      "type": "bangladeshi",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.3965139,-1.8121179",
-      "lat": 52.3965139,
-      "lng": -1.8121179,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Sandhu's",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.5514695,-2.0186053",
-      "lat": 52.5514695,
-      "lng": -2.0186053,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Crispy Pizza & Kebab",
-      "type": "pizza, kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.5518088,-2.0189454",
-      "lat": 52.5518088,
-      "lng": -2.0189454,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Turkish Shawarma",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.5766642,-1.9828824",
-      "lat": 52.5766642,
-      "lng": -1.9828824,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Sunny's Fish Bar",
-      "type": "kebab, fish and chips",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.5784811,-1.9816868",
-      "lat": 52.5784811,
-      "lng": -1.9816868,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Asha's",
-      "lat": 52.4812506,
-      "lng": -1.9019578,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4812506,-1.9019578",
-      "source": "osm"
-    },
-    {
-      "nom": "Wrapchic",
-      "lat": 52.4773864,
-      "lng": -1.8961363,
-      "type": "indian, burrito",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4773864,-1.8961363",
-      "source": "osm"
-    },
-    {
-      "nom": "Dishoom",
-      "lat": 52.4802644,
-      "lng": -1.9047962,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4802644,-1.9047962",
-      "source": "osm"
-    },
-    {
-      "nom": "James Dahl Indian",
-      "lat": 52.4745036,
-      "lng": -1.8963608,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4745036,-1.8963608",
-      "source": "osm"
-    },
-    {
-      "nom": "Kaffee Couture",
-      "lat": 52.4881915,
-      "lng": -1.9107415,
-      "type": "local, indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4881915,-1.9107415",
-      "source": "osm"
-    },
-    {
-      "nom": "Dilse",
-      "lat": 52.4762662,
-      "lng": -1.9042428,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4762662,-1.9042428",
-      "source": "osm"
-    },
-    {
-      "nom": "Indico",
-      "lat": 52.4758676,
-      "lng": -1.905638,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4758676,-1.905638",
-      "source": "osm"
-    },
-    {
-      "nom": "Pushkar",
-      "lat": 52.4768521,
-      "lng": -1.911821,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4768521,-1.911821",
-      "source": "osm"
-    },
-    {
-      "nom": "Viceroy",
-      "lat": 52.4867924,
-      "lng": -1.9171551,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4867924,-1.9171551",
-      "source": "osm"
-    },
-    {
-      "nom": "MyLahore",
-      "lat": 52.4711106,
-      "lng": -1.8792716,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4711106,-1.8792716",
-      "source": "osm"
-    },
-    {
-      "nom": "Bhaizans grill",
-      "lat": 52.5022902,
-      "lng": -1.9020338,
-      "type": "asian, indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.5022902,-1.9020338",
-      "source": "osm"
-    },
-    {
-      "nom": "Shere Khan",
-      "lat": 52.5053075,
-      "lng": -1.856224,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.5053075,-1.856224",
-      "source": "osm"
-    },
-    {
-      "nom": "Saba",
-      "lat": 52.4551944,
-      "lng": -1.8867337,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4551944,-1.8867337",
-      "source": "osm"
-    },
-    {
-      "nom": "Diwan",
-      "lat": 52.4536341,
-      "lng": -1.8873048,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4536341,-1.8873048",
-      "source": "osm"
-    },
-    {
-      "nom": "Adil's",
-      "lat": 52.4544006,
-      "lng": -1.873389,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4544006,-1.873389",
-      "source": "osm"
-    },
-    {
-      "nom": "Zindiya",
-      "lat": 52.4482965,
-      "lng": -1.8865646,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4482965,-1.8865646",
-      "source": "osm"
-    },
-    {
-      "nom": "Royal Watan",
-      "lat": 52.4472441,
-      "lng": -1.9134596,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4472441,-1.9134596",
-      "source": "osm"
-    },
-    {
-      "nom": "Sukh Curry House",
-      "lat": 52.4867998,
-      "lng": -1.961412,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4867998,-1.961412",
-      "source": "osm"
-    },
-    {
-      "nom": "Bharawan Da Dhaba",
-      "lat": 52.4918101,
-      "lng": -1.9679624,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4918101,-1.9679624",
-      "source": "osm"
-    },
-    {
-      "nom": "Kashmir Cottage",
-      "lat": 52.4795567,
-      "lng": -1.9698549,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4795567,-1.9698549",
-      "source": "osm"
-    },
-    {
-      "nom": "Red Chilli",
-      "lat": 52.5363116,
-      "lng": -1.8892004,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.5363116,-1.8892004",
-      "source": "osm"
-    },
-    {
-      "nom": "Kings",
-      "lat": 52.4344083,
-      "lng": -1.8936628,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4344083,-1.8936628",
-      "source": "osm"
-    },
-    {
-      "nom": "Alishaan",
-      "lat": 52.5377785,
-      "lng": -1.8798299,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.5377785,-1.8798299",
-      "source": "osm"
-    },
-    {
-      "nom": "The Fat Swan",
-      "lat": 52.4670929,
-      "lng": -1.8104374,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4670929,-1.8104374",
-      "source": "osm"
-    },
-    {
-      "nom": "Zaalsha Indian Restaurant",
-      "lat": 52.4774084,
-      "lng": -1.975693,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4774084,-1.975693",
-      "source": "osm"
-    },
-    {
-      "nom": "Deli Dinning",
-      "lat": 52.5387412,
-      "lng": -1.8813311,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.5387412,-1.8813311",
-      "source": "osm"
-    },
-    {
-      "nom": "Balti Raj",
-      "lat": 52.4619863,
-      "lng": -1.8111194,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4619863,-1.8111194",
-      "source": "osm"
-    },
-    {
-      "nom": "Balti 2000",
-      "lat": 52.4494138,
-      "lng": -1.9563749,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4494138,-1.9563749",
-      "source": "osm"
-    },
-    {
-      "nom": "Curry Express",
-      "lat": 52.4399329,
-      "lng": -1.9390125,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4399329,-1.9390125",
-      "source": "osm"
-    },
-    {
-      "nom": "Massalawala",
-      "lat": 52.5419919,
-      "lng": -1.8858592,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.5419919,-1.8858592",
-      "source": "osm"
-    },
-    {
-      "nom": "Abdul's Cafe and Diner",
-      "lat": 52.436392,
-      "lng": -1.8470225,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.436392,-1.8470225",
-      "source": "osm"
-    },
-    {
-      "nom": "Seven Spices",
-      "lat": 52.5432723,
-      "lng": -1.8789133,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.5432723,-1.8789133",
-      "source": "osm"
-    },
-    {
-      "nom": "Balti Bazaar",
-      "lat": 52.4305666,
-      "lng": -1.9208433,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4305666,-1.9208433",
-      "source": "osm"
-    },
-    {
-      "nom": "Deens",
-      "lat": 52.4288878,
-      "lng": -1.8697198,
-      "type": "fish and chips, indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4288878,-1.8697198",
-      "source": "osm"
-    },
-    {
-      "nom": "Sizzler Balti",
-      "lat": 52.5440825,
-      "lng": -1.8638808,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.5440825,-1.8638808",
-      "source": "osm"
-    },
-    {
-      "nom": "Bilash",
-      "lat": 52.5462637,
-      "lng": -1.8855204,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.5462637,-1.8855204",
-      "source": "osm"
-    },
-    {
-      "nom": "Anjuna Lounge",
-      "lat": 52.4288189,
-      "lng": -1.922754,
-      "type": "coffee, indian, cake, tea",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4288189,-1.922754",
-      "source": "osm"
-    },
-    {
-      "nom": "Noor Johan",
-      "lat": 52.4304223,
-      "lng": -1.8442038,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4304223,-1.8442038",
-      "source": "osm"
-    },
-    {
-      "nom": "Chilli Massala",
-      "lat": 52.4874859,
-      "lng": -1.9931185,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4874859,-1.9931185",
-      "source": "osm"
-    },
-    {
-      "nom": "Akash Tandoori",
-      "lat": 52.4267325,
-      "lng": -1.9223532,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4267325,-1.9223532",
-      "source": "osm"
-    },
-    {
-      "nom": "Shapla Rani",
-      "lat": 52.465486,
-      "lng": -1.9881166,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.465486,-1.9881166",
-      "source": "osm"
-    },
-    {
-      "nom": "Dilkhush",
-      "lat": 52.4258614,
-      "lng": -1.9218396,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4258614,-1.9218396",
-      "source": "osm"
-    },
-    {
-      "nom": "Simla Spice",
-      "lat": 52.5461614,
-      "lng": -1.9298024,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.5461614,-1.9298024",
-      "source": "osm"
-    },
-    {
-      "nom": "Balti Bites",
-      "lat": 52.4239116,
-      "lng": -1.9217731,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4239116,-1.9217731",
-      "source": "osm"
-    },
-    {
-      "nom": "The Curry Pot",
-      "lat": 52.5489423,
-      "lng": -1.8603291,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.5489423,-1.8603291",
-      "source": "osm"
-    },
-    {
-      "nom": "Desi Flame",
-      "lat": 52.4821957,
-      "lng": -1.7801385,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4821957,-1.7801385",
-      "source": "osm"
-    },
-    {
-      "nom": "Balti Spice",
-      "lat": 52.5526321,
-      "lng": -1.9077644,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.5526321,-1.9077644",
-      "source": "osm"
-    },
-    {
-      "nom": "Moonlight Curry House",
-      "lat": 52.4950274,
-      "lng": -2.0000469,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4950274,-2.0000469",
-      "source": "osm"
-    },
-    {
-      "nom": "Chillies",
-      "lat": 52.4190693,
-      "lng": -1.8994221,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4190693,-1.8994221",
-      "source": "osm"
-    },
-    {
-      "nom": "Moonlight Balti",
-      "lat": 52.5539635,
-      "lng": -1.883631,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.5539635,-1.883631",
-      "source": "osm"
-    },
-    {
-      "nom": "Balti Castle",
-      "lat": 52.438128,
-      "lng": -1.9705401,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.438128,-1.9705401",
-      "source": "osm"
-    },
-    {
-      "nom": "Clay Oven Balti",
-      "lat": 52.4297329,
-      "lng": -1.8257099,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4297329,-1.8257099",
-      "source": "osm"
-    },
-    {
-      "nom": "Rajnagar",
-      "lat": 52.4487207,
-      "lng": -1.7942785,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4487207,-1.7942785",
-      "source": "osm"
-    },
-    {
-      "nom": "Dilkush",
-      "lat": 52.5557598,
-      "lng": -1.8995078,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.5557598,-1.8995078",
-      "source": "osm"
-    },
-    {
-      "nom": "Karma Lounge",
-      "lat": 52.549624,
-      "lng": -1.8417411,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.549624,-1.8417411",
-      "source": "osm"
-    },
-    {
-      "nom": "Vila Spice",
-      "lat": 52.5574148,
-      "lng": -1.9114008,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.5574148,-1.9114008",
-      "source": "osm"
-    },
-    {
-      "nom": "Kismet",
-      "lat": 52.5019259,
-      "lng": -1.7729821,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.5019259,-1.7729821",
-      "source": "osm"
-    },
-    {
-      "nom": "balti2000.co.uk",
-      "lat": 52.4150097,
-      "lng": -1.8562776,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4150097,-1.8562776",
-      "source": "osm"
-    },
-    {
-      "nom": "Tariq Balti House",
-      "lat": 52.4119899,
-      "lng": -1.8669887,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4119899,-1.8669887",
-      "source": "osm"
-    },
-    {
-      "nom": "Shahjalal",
-      "lat": 52.4610715,
-      "lng": -2.0106939,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4610715,-2.0106939",
-      "source": "osm"
-    },
-    {
-      "nom": "Rajmah Indian",
-      "lat": 52.4802087,
-      "lng": -1.7603106,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4802087,-1.7603106",
-      "source": "osm"
-    },
-    {
-      "nom": "Agrabad",
-      "lat": 52.4461467,
-      "lng": -1.7772154,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4461467,-1.7772154",
-      "source": "osm"
-    },
-    {
-      "nom": "Shabar",
-      "lat": 52.4521393,
-      "lng": -1.7705023,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4521393,-1.7705023",
-      "source": "osm"
-    },
-    {
-      "nom": "Oasis Tandoori Restaurant",
-      "lat": 52.4145626,
-      "lng": -1.8288322,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4145626,-1.8288322",
-      "source": "osm"
-    },
-    {
-      "nom": "Dilshad International",
-      "lat": 52.4621848,
-      "lng": -2.0263323,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4621848,-2.0263323",
-      "source": "osm"
-    },
-    {
-      "nom": "Divine",
-      "lat": 52.4045953,
-      "lng": -1.8432905,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4045953,-1.8432905",
-      "source": "osm"
-    },
-    {
-      "nom": "Curry Box",
-      "lat": 52.4335686,
-      "lng": -2.0058626,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4335686,-2.0058626",
-      "source": "osm"
-    },
-    {
-      "nom": "Balti Towers",
-      "lat": 52.4700513,
-      "lng": -2.0326319,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4700513,-2.0326319",
-      "source": "osm"
-    },
-    {
-      "nom": "Darjeeling",
-      "lat": 52.4070115,
-      "lng": -1.8245789,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=52.4070115,-1.8245789",
-      "source": "osm"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "Aston Business School Conference Centre and Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4862175,-1.8887063",
-      "lat": 52.4862175,
-      "lng": -1.8887063,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.conferenceaston.co.uk/",
-      "source": "osm"
-    },
-    {
-      "nom": "Aloft",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.485851,-1.8852174",
-      "lat": 52.485851,
-      "lng": -1.8852174,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.485851,-1.8852174",
-      "source": "osm"
-    },
-    {
-      "nom": "iQ Studios 51",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4892804,-1.8918441",
-      "lat": 52.4892804,
-      "lng": -1.8918441,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4892804,-1.8918441",
-      "source": "osm"
-    },
-    {
-      "nom": "Aparthotel Birmingham",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4852608,-1.8973889",
-      "lat": 52.4852608,
-      "lng": -1.8973889,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4852608,-1.8973889",
-      "source": "osm"
-    },
-    {
-      "nom": "Holiday Inn Express",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4848692,-1.8983872",
-      "lat": 52.4848692,
-      "lng": -1.8983872,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.ihg.com/holidayinnexpress/hotels/gb/en/birmingham/bhxsh/hoteldetail",
-      "source": "osm"
-    },
-    {
-      "nom": "Clayton Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4810039,-1.890485",
-      "lat": 52.4810039,
-      "lng": -1.890485,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4810039,-1.890485",
-      "source": "osm"
-    },
-    {
-      "nom": "Premier Inn",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4913063,-1.8860537",
-      "lat": 52.4913063,
-      "lng": -1.8860537,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.premierinn.com/gb/en/hotels/england/west-midlands/birmingham/birmingham-city-aston.html",
-      "source": "osm"
-    },
-    {
-      "nom": "Campanile",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4919181,-1.8863006",
-      "lat": 52.4919181,
-      "lng": -1.8863006,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4919181,-1.8863006",
-      "source": "osm"
-    },
-    {
-      "nom": "Staybridge Suites",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4805562,-1.8959886",
-      "lat": 52.4805562,
-      "lng": -1.8959886,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4805562,-1.8959886",
-      "source": "osm"
-    },
-    {
-      "nom": "Travelodge Birmingham Central Moor Street",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4798862,-1.8937131",
-      "lat": 52.4798862,
-      "lng": -1.8937131,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.travelodge.co.uk/hotels/531/Birmingham-Central-Moor-Street-hotel",
-      "source": "osm"
-    },
-    {
-      "nom": "YMCA",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4879465,-1.9009409",
-      "lat": 52.4879465,
-      "lng": -1.9009409,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4879465,-1.9009409",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel du Vin",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4823293,-1.8999686",
-      "lat": 52.4823293,
-      "lng": -1.8999686,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4823293,-1.8999686",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel du Vin and Bistro",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4823002,-1.9001594",
-      "lat": 52.4823002,
-      "lng": -1.9001594,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4823002,-1.9001594",
-      "source": "osm"
-    },
-    {
-      "nom": "Grand Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4818267,-1.8996268",
-      "lat": 52.4818267,
-      "lng": -1.8996268,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4818267,-1.8996268",
-      "source": "osm"
-    },
-    {
-      "nom": "Britannia Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4791508,-1.8970691",
-      "lat": 52.4791508,
-      "lng": -1.8970691,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4791508,-1.8970691",
-      "source": "osm"
-    },
-    {
-      "nom": "Ladbrooke Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4780057,-1.887685",
-      "lat": 52.4780057,
-      "lng": -1.887685,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4780057,-1.887685",
-      "source": "osm"
-    },
-    {
-      "nom": "Selina",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4863478,-1.9044477",
-      "lat": 52.4863478,
-      "lng": -1.9044477,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4863478,-1.9044477",
-      "source": "osm"
-    },
-    {
-      "nom": "The Briar Rose",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4799272,-1.9000413",
-      "lat": 52.4799272,
-      "lng": -1.9000413,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.jdwetherspoon.com/hotels/england/west-midlands/the-briar-rose",
-      "source": "osm"
-    },
-    {
-      "nom": "Hampton by Hilton Birmingham Jewellery Quarter",
-      "categorie": "Hôtel",
-      "priceRange": "€€€",
-      "score": 3,
-      "mapsUrl": "https://maps.google.com/?q=52.4875246,-1.9048961",
-      "lat": 52.4875246,
-      "lng": -1.9048961,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.hilton.com/en/hotels/bhxbnhx-hampton-birmingham-jewellery-quarter/",
-      "source": "osm"
-    },
-    {
-      "nom": "Saint Paul's House",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4858229,-1.905094",
-      "lat": 52.4858229,
-      "lng": -1.905094,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4858229,-1.905094",
-      "source": "osm"
-    },
-    {
-      "nom": "Aparthotels Adagio",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4764666,-1.8909751",
-      "lat": 52.4764666,
-      "lng": -1.8909751,
-      "halalFriendly": false,
-      "bookingUrl": "https://all.accor.com/hotel/8117/index.en.shtml",
-      "source": "osm"
-    },
-    {
-      "nom": "Birmingham Central Backpackers",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4763162,-1.8858034",
-      "lat": 52.4763162,
-      "lng": -1.8858034,
-      "halalFriendly": false,
-      "bookingUrl": "https://birminghambackpapckers.com",
-      "source": "osm"
-    },
-    {
-      "nom": "Travelodge Birmingham Central",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4834868,-1.9068289",
-      "lat": 52.4834868,
-      "lng": -1.9068289,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.travelodge.co.uk/hotels/379/Birmingham-Central-Newhall-Street-hotel",
-      "source": "osm"
-    },
-    {
-      "nom": "The Jewellery Suites",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4859152,-1.9074578",
-      "lat": 52.4859152,
-      "lng": -1.9074578,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4859152,-1.9074578",
-      "source": "osm"
-    },
-    {
-      "nom": "Comfort Inn",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4767305,-1.8981523",
-      "lat": 52.4767305,
-      "lng": -1.8981523,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4767305,-1.8981523",
-      "source": "osm"
-    },
-    {
-      "nom": "Staycity Aparthotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4832507,-1.9071603",
-      "lat": 52.4832507,
-      "lng": -1.9071603,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4832507,-1.9071603",
-      "source": "osm"
-    },
-    {
-      "nom": "Ibis Styles",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.481967,-1.9064695",
-      "lat": 52.481967,
-      "lng": -1.9064695,
-      "halalFriendly": false,
-      "bookingUrl": "https://all.accor.com/hotel/9130/index.en.shtml",
-      "source": "osm"
-    },
-    {
-      "nom": "Four Points Flex by Sheraton",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4861089,-1.907951",
-      "lat": 52.4861089,
-      "lng": -1.907951,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4861089,-1.907951",
-      "source": "osm"
-    },
-    {
-      "nom": "Travelodge",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4751016,-1.8944202",
-      "lat": 52.4751016,
-      "lng": -1.8944202,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4751016,-1.8944202",
-      "source": "osm"
-    },
-    {
-      "nom": "Easyhotel Birmingham",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.476808,-1.901621",
-      "lat": 52.476808,
-      "lng": -1.901621,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.easyhotel.com/hotels/united-kingdom/birmingham/birmingham-city-centre",
-      "source": "osm"
-    },
-    {
-      "nom": "Ibis",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.475007,-1.89645",
-      "lat": 52.475007,
-      "lng": -1.89645,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.475007,-1.89645",
-      "source": "osm"
-    },
-    {
-      "nom": "Holiday Inn",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4756645,-1.8992949",
-      "lat": 52.4756645,
-      "lng": -1.8992949,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4756645,-1.8992949",
-      "source": "osm"
-    },
-    {
-      "nom": "Staycity",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4743591,-1.8959292",
-      "lat": 52.4743591,
-      "lng": -1.8959292,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4743591,-1.8959292",
-      "source": "osm"
-    },
-    {
-      "nom": "Radisson Blu hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4753843,-1.9001721",
-      "lat": 52.4753843,
-      "lng": -1.9001721,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4753843,-1.9001721",
-      "source": "osm"
-    },
-    {
-      "nom": "Malmaison",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4768489,-1.9036938",
-      "lat": 52.4768489,
-      "lng": -1.9036938,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.malmaison.com/locations/birmingham/",
-      "source": "osm"
-    },
-    {
-      "nom": "Crowne Plaza Birmingham City Centre",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4778179,-1.9062931",
-      "lat": 52.4778179,
-      "lng": -1.9062931,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.ihg.com/crowneplaza/hotels/gb/en/birmingham/bhxct/hoteldetail",
-      "source": "osm"
-    },
-    {
-      "nom": "Frederick Street Townhouse",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.486024,-1.9117665",
-      "lat": 52.486024,
-      "lng": -1.9117665,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.486024,-1.9117665",
-      "source": "osm"
-    },
-    {
-      "nom": "Stay Birmingham Apartments",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4737102,-1.8969298",
-      "lat": 52.4737102,
-      "lng": -1.8969298,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4737102,-1.8969298",
-      "source": "osm"
-    },
-    {
-      "nom": "Prime Lodge",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4924677,-1.8713387",
-      "lat": 52.4924677,
-      "lng": -1.8713387,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4924677,-1.8713387",
-      "source": "osm"
-    },
-    {
-      "nom": "Holiday Inn Express Birmingham - City Centre",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4773963,-1.9066235",
-      "lat": 52.4773963,
-      "lng": -1.9066235,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.ihg.com/holidayinnexpress/hotels/gb/en/birmingham/bhxcc/hoteldetail",
-      "source": "osm"
-    },
-    {
-      "nom": "The Spires",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4755124,-1.9043734",
-      "lat": 52.4755124,
-      "lng": -1.9043734,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4755124,-1.9043734",
-      "source": "osm"
-    },
-    {
-      "nom": "Interstate Europe",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4755035,-1.9044067",
-      "lat": 52.4755035,
-      "lng": -1.9044067,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4755035,-1.9044067",
-      "source": "osm"
-    },
-    {
-      "nom": "Nitenite Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.476652,-1.9068539",
-      "lat": 52.476652,
-      "lng": -1.9068539,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.476652,-1.9068539",
-      "source": "osm"
-    },
-    {
-      "nom": "Hyatt Regency Birmingham",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 4,
-      "mapsUrl": "https://maps.google.com/?q=52.4780349,-1.9092583",
-      "lat": 52.4780349,
-      "lng": -1.9092583,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4780349,-1.9092583",
-      "source": "osm"
-    },
-    {
-      "nom": "AC Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4754189,-1.9060022",
-      "lat": 52.4754189,
-      "lng": -1.9060022,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4754189,-1.9060022",
-      "source": "osm"
-    },
-    {
-      "nom": "B&B Hotel Birmingham Centre",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4737631,-1.9023911",
-      "lat": 52.4737631,
-      "lng": -1.9023911,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.hotel-bb.com/en/hotel/birmingham-centre",
-      "source": "osm"
-    },
-    {
-      "nom": "Premier Inn Birmingham City Centre",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4765315,-1.9082372",
-      "lat": 52.4765315,
-      "lng": -1.9082372,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.premierinn.com/gb/en/hotels/england/west-midlands/birmingham/birmingham-city-centre-bridge-street.html",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Indigo",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4750754,-1.9067533",
-      "lat": 52.4750754,
-      "lng": -1.9067533,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4750754,-1.9067533",
-      "source": "osm"
-    },
-    {
-      "nom": "The Wellington",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4719631,-1.8992709",
-      "lat": 52.4719631,
-      "lng": -1.8992709,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4719631,-1.8992709",
-      "source": "osm"
-    },
-    {
-      "nom": "Ibis (Reception and Bar)",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4727807,-1.9022718",
-      "lat": 52.4727807,
-      "lng": -1.9022718,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4727807,-1.9022718",
-      "source": "osm"
-    },
-    {
-      "nom": "Ibis (Rooms)",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4727147,-1.9026332",
-      "lat": 52.4727147,
-      "lng": -1.9026332,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4727147,-1.9026332",
-      "source": "osm"
-    },
-    {
-      "nom": "City Nites",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4807931,-1.9143757",
-      "lat": 52.4807931,
-      "lng": -1.9143757,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4807931,-1.9143757",
-      "source": "osm"
-    },
-    {
-      "nom": "The Fountain Inn",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4710661,-1.8981108",
-      "lat": 52.4710661,
-      "lng": -1.8981108,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4710661,-1.8981108",
-      "source": "osm"
-    },
-    {
-      "nom": "Leonardo Royal Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4766805,-1.9112947",
-      "lat": 52.4766805,
-      "lng": -1.9112947,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.leonardohotels.co.uk/",
-      "source": "osm"
-    },
-    {
-      "nom": "The Paragon Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4704946,-1.8846587",
-      "lat": 52.4704946,
-      "lng": -1.8846587,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4704946,-1.8846587",
-      "source": "osm"
-    },
-    {
-      "nom": "Ibis Budget",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4713149,-1.9005222",
-      "lat": 52.4713149,
-      "lng": -1.9005222,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4713149,-1.9005222",
-      "source": "osm"
-    },
-    {
-      "nom": "St Anne's Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4703782,-1.8839859",
-      "lat": 52.4703782,
-      "lng": -1.8839859,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4703782,-1.8839859",
-      "source": "osm"
-    },
-    {
-      "nom": "The Moseley Arms",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4708335,-1.8813306",
-      "lat": 52.4708335,
-      "lng": -1.8813306,
-      "halalFriendly": false,
-      "bookingUrl": "http://themoseleyarms.co.uk/",
-      "source": "osm"
-    },
-    {
-      "nom": "SACO Birmingham Serviced Apartments",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4767117,-1.9135138",
-      "lat": 52.4767117,
-      "lng": -1.9135138,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4767117,-1.9135138",
-      "source": "osm"
-    },
-    {
-      "nom": "Novotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4763886,-1.9137115",
-      "lat": 52.4763886,
-      "lng": -1.9137115,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4763886,-1.9137115",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Ibis Birmingham Bordesley",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4723862,-1.8730437",
-      "lat": 52.4723862,
-      "lng": -1.8730437,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4723862,-1.8730437",
-      "source": "osm"
-    },
-    {
-      "nom": "Hilton Garden Inn Birmingham Brindleyplace",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 4,
-      "mapsUrl": "https://maps.google.com/?q=52.4769709,-1.9148913",
-      "lat": 52.4769709,
-      "lng": -1.9148913,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.hilton.com/en/hotels/bhxbpgi-hilton-garden-inn-birmingham-brindleyplace/",
-      "source": "osm"
-    },
-    {
-      "nom": "Hampton by Hilton Birmingham Broad Street",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4750417,-1.913823",
-      "lat": 52.4750417,
-      "lng": -1.913823,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.hilton.com/en/hotels/bhxbshx-hampton-birmingham-broad-street/",
-      "source": "osm"
-    },
-    {
-      "nom": "Surya & Iulia",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4677577,-1.9050569",
-      "lat": 52.4677577,
-      "lng": -1.9050569,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4677577,-1.9050569",
-      "source": "osm"
-    },
-    {
-      "nom": "Shler and Hawbash Birmingham UK",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4896618,-1.9237629",
-      "lat": 52.4896618,
-      "lng": -1.9237629,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4896618,-1.9237629",
-      "source": "osm"
-    },
-    {
-      "nom": "Park Regis",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4729117,-1.9169846",
-      "lat": 52.4729117,
-      "lng": -1.9169846,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4729117,-1.9169846",
-      "source": "osm"
-    },
-    {
-      "nom": "Delta Hotels by Marriott Birmingham",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.472059,-1.919756",
-      "lat": 52.472059,
-      "lng": -1.919756,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.472059,-1.919756",
-      "source": "osm"
-    },
-    {
-      "nom": "Heartland Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4775956,-1.850703",
-      "lat": 52.4775956,
-      "lng": -1.850703,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4775956,-1.850703",
-      "source": "osm"
-    },
-    {
-      "nom": "Holiday Inn Express Star City",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.5022281,-1.8565642",
-      "lat": 52.5022281,
-      "lng": -1.8565642,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.5022281,-1.8565642",
-      "source": "osm"
-    },
-    {
-      "nom": "Highfield Town House",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4690228,-1.922693",
-      "lat": 52.4690228,
-      "lng": -1.922693,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4690228,-1.922693",
-      "source": "osm"
-    },
-    {
-      "nom": "The Plough And Harrow",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.472238,-1.9275043",
-      "lat": 52.472238,
-      "lng": -1.9275043,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.472238,-1.9275043",
-      "source": "osm"
-    },
-    {
-      "nom": "Plough and Harrow Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4725533,-1.9278683",
-      "lat": 52.4725533,
-      "lng": -1.9278683,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4725533,-1.9278683",
-      "source": "osm"
-    },
-    {
-      "nom": "Baloci",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4687859,-1.9234706",
-      "lat": 52.4687859,
-      "lng": -1.9234706,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4687859,-1.9234706",
-      "source": "osm"
-    },
-    {
-      "nom": "Henlon House",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.5089495,-1.9135228",
-      "lat": 52.5089495,
-      "lng": -1.9135228,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.5089495,-1.9135228",
-      "source": "osm"
-    },
-    {
-      "nom": "The Birmingham",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4632051,-1.8601673",
-      "lat": 52.4632051,
-      "lng": -1.8601673,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4632051,-1.8601673",
-      "source": "osm"
-    },
-    {
-      "nom": "Lakeside Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.458123,-1.9089024",
-      "lat": 52.458123,
-      "lng": -1.9089024,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.458123,-1.9089024",
-      "source": "osm"
-    },
-    {
-      "nom": "Birmingham Strathallan",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4722996,-1.9379673",
-      "lat": 52.4722996,
-      "lng": -1.9379673,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4722996,-1.9379673",
-      "source": "osm"
-    },
-    {
-      "nom": "The Garden House",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4716964,-1.9374884",
-      "lat": 52.4716964,
-      "lng": -1.9374884,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4716964,-1.9374884",
-      "source": "osm"
-    },
-    {
-      "nom": "Quality Hotel Cobden Suite",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4716871,-1.9385073",
-      "lat": 52.4716871,
-      "lng": -1.9385073,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4716871,-1.9385073",
-      "source": "osm"
-    },
-    {
-      "nom": "Cobden Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4714391,-1.9388602",
-      "lat": 52.4714391,
-      "lng": -1.9388602,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4714391,-1.9388602",
-      "source": "osm"
-    },
-    {
-      "nom": "Apollo Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4719977,-1.9420681",
-      "lat": 52.4719977,
-      "lng": -1.9420681,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4719977,-1.9420681",
-      "source": "osm"
-    },
-    {
-      "nom": "Chestnut Lodge",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.5134714,-1.9261056",
-      "lat": 52.5134714,
-      "lng": -1.9261056,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.5134714,-1.9261056",
-      "source": "osm"
-    },
-    {
-      "nom": "Alexandra Residential Club",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4708025,-1.9422829",
-      "lat": 52.4708025,
-      "lng": -1.9422829,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4708025,-1.9422829",
-      "source": "osm"
-    },
-    {
-      "nom": "Ackers Residential Centre",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4601189,-1.8504104",
-      "lat": 52.4601189,
-      "lng": -1.8504104,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4601189,-1.8504104",
-      "source": "osm"
-    },
-    {
-      "nom": "Charm Collection Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4720949,-1.9444145",
-      "lat": 52.4720949,
-      "lng": -1.9444145,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4720949,-1.9444145",
-      "source": "osm"
-    },
-    {
-      "nom": "Edgbaston Palace Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4712748,-1.9442434",
-      "lat": 52.4712748,
-      "lng": -1.9442434,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4712748,-1.9442434",
-      "source": "osm"
-    },
-    {
-      "nom": "Norfolk Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4720215,-1.94501",
-      "lat": 52.4720215,
-      "lng": -1.94501,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4720215,-1.94501",
-      "source": "osm"
-    },
-    {
-      "nom": "Park Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.5225925,-1.8974372",
-      "lat": 52.5225925,
-      "lng": -1.8974372,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.5225925,-1.8974372",
-      "source": "osm"
-    },
-    {
-      "nom": "Rugby House B&B",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.5164325,-1.8557578",
-      "lat": 52.5164325,
-      "lng": -1.8557578,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.5164325,-1.8557578",
-      "source": "osm"
-    },
-    {
-      "nom": "The Eaton Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4720456,-1.9467448",
-      "lat": 52.4720456,
-      "lng": -1.9467448,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4720456,-1.9467448",
-      "source": "osm"
-    },
-    {
-      "nom": "Lucas House",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4549101,-1.9254577",
-      "lat": 52.4549101,
-      "lng": -1.9254577,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4549101,-1.9254577",
-      "source": "osm"
-    },
-    {
-      "nom": "The Farcroft",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.509721,-1.9409601",
-      "lat": 52.509721,
-      "lng": -1.9409601,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.509721,-1.9409601",
-      "source": "osm"
-    },
-    {
-      "nom": "Astoria Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4726565,-1.9501145",
-      "lat": 52.4726565,
-      "lng": -1.9501145,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4726565,-1.9501145",
-      "source": "osm"
-    },
-    {
-      "nom": "Rossmore Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.5161606,-1.8498554",
-      "lat": 52.5161606,
-      "lng": -1.8498554,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.5161606,-1.8498554",
-      "source": "osm"
-    },
-    {
-      "nom": "Sheldon Houe",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.5180108,-1.9269939",
-      "lat": 52.5180108,
-      "lng": -1.9269939,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.5180108,-1.9269939",
-      "source": "osm"
-    },
-    {
-      "nom": "Edgbaston Park Hotel and Conference Centre",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4540391,-1.9278004",
-      "lat": 52.4540391,
-      "lng": -1.9278004,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.edgbastonparkhotel.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Fountain Court Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4731459,-1.9540057",
-      "lat": 52.4731459,
-      "lng": -1.9540057,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4731459,-1.9540057",
-      "source": "osm"
-    },
-    {
-      "nom": "Prince Hotel",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4734995,-1.9543996",
-      "lat": 52.4734995,
-      "lng": -1.9543996,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4734995,-1.9543996",
-      "source": "osm"
-    },
-    {
-      "nom": "President House Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4442091,-1.8817204",
-      "lat": 52.4442091,
-      "lng": -1.8817204,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4442091,-1.8817204",
-      "source": "osm"
-    },
-    {
-      "nom": "Woodlands Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4735565,-1.9577131",
-      "lat": 52.4735565,
-      "lng": -1.9577131,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4735565,-1.9577131",
-      "source": "osm"
-    },
-    {
-      "nom": "Fairlawns Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4730279,-1.9579123",
-      "lat": 52.4730279,
-      "lng": -1.9579123,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4730279,-1.9579123",
-      "source": "osm"
-    },
-    {
-      "nom": "Dormy Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4730074,-1.9586232",
-      "lat": 52.4730074,
-      "lng": -1.9586232,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4730074,-1.9586232",
-      "source": "osm"
-    },
-    {
-      "nom": "Rollason Wood Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.5179037,-1.8398425",
-      "lat": 52.5179037,
-      "lng": -1.8398425,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.5179037,-1.8398425",
-      "source": "osm"
-    },
-    {
-      "nom": "Jubilee House",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4734829,-1.9601526",
-      "lat": 52.4734829,
-      "lng": -1.9601526,
-      "halalFriendly": false,
-      "bookingUrl": "http://newrootsltd.co.uk/",
-      "source": "osm"
-    },
-    {
-      "nom": "Hagley Lodge",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4735055,-1.9617634",
-      "lat": 52.4735055,
-      "lng": -1.9617634,
-      "halalFriendly": false,
-      "bookingUrl": "https://springhousing.org.uk",
-      "source": "osm"
-    },
-    {
-      "nom": "Hagley Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€€",
-      "score": 3,
-      "mapsUrl": "https://maps.google.com/?q=52.4735592,-1.9622467",
-      "lat": 52.4735592,
-      "lng": -1.9622467,
-      "halalFriendly": false,
-      "bookingUrl": "https://hagley.hotels-birmingham.net/en/",
-      "source": "osm"
-    },
-    {
-      "nom": "The Belmont Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€€",
-      "score": 3,
-      "mapsUrl": "https://maps.google.com/?q=52.4735634,-1.9627372",
-      "lat": 52.4735634,
-      "lng": -1.9627372,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.thebelmont-hotel.co.uk/",
-      "source": "osm"
-    },
-    {
-      "nom": "Bournbrook House",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=52.4463948,-1.9302614",
-      "lat": 52.4463948,
-      "lng": -1.9302614,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=52.4463948,-1.9302614",
-      "source": "osm"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Birmingham",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Birmingham",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Birmingham%20Birmingham"
-    },
-    {
-      "nom": "Shah Jalal Mosque",
-      "lat": 52.4899538,
-      "lng": -1.8556099,
-      "coordonnees": {
-        "lat": 52.4899538,
-        "lng": -1.8556099
-      },
-      "adresse": "Ralph Road",
-      "mapsUrl": "https://maps.google.com/?q=52.4899538,-1.8556099",
-      "source": "osm"
-    },
-    {
-      "nom": "Maktaba Tul Madina Dawat-E-Islami",
-      "lat": 52.47892,
-      "lng": -1.8563214,
-      "coordonnees": {
-        "lat": 52.47892,
-        "lng": -1.8563214
-      },
-      "mapsUrl": "https://maps.google.com/?q=52.47892,-1.8563214",
-      "source": "osm"
-    },
-    {
-      "nom": "Spiritual Centre Maddrassa Naqshbandiyya Nawabiyya Aslamiyya Birmingham",
-      "lat": 52.4767037,
-      "lng": -1.8572922,
-      "coordonnees": {
-        "lat": 52.4767037,
-        "lng": -1.8572922
-      },
-      "mapsUrl": "https://maps.google.com/?q=52.4767037,-1.8572922",
-      "source": "osm"
-    },
-    {
-      "nom": "Madrassa-tul-Madina Aston",
-      "lat": 52.5090738,
-      "lng": -1.890951,
-      "coordonnees": {
-        "lat": 52.5090738,
-        "lng": -1.890951
-      },
-      "adresse": "Witton Road, Birmingham",
-      "mapsUrl": "https://maps.google.com/?q=52.5090738,-1.890951",
-      "source": "osm"
-    },
-    {
-      "nom": "Jami Madina Ashiful Loom Masjid",
-      "lat": 52.4883971,
-      "lng": -1.8493971,
-      "coordonnees": {
-        "lat": 52.4883971,
-        "lng": -1.8493971
-      },
-      "mapsUrl": "https://maps.google.com/?q=52.4883971,-1.8493971",
-      "source": "osm"
-    },
-    {
-      "nom": "Salafi Masjid",
-      "lat": 52.4703405,
-      "lng": -1.8583834,
-      "coordonnees": {
-        "lat": 52.4703405,
-        "lng": -1.8583834
-      },
-      "adresse": "Wright Street, Birmingham",
-      "mapsUrl": "https://maps.google.com/?q=52.4703405,-1.8583834",
-      "source": "osm"
-    },
-    {
-      "nom": "Madrassa At Tawhad",
-      "lat": 52.470936,
-      "lng": -1.8456441,
-      "coordonnees": {
-        "lat": 52.470936,
-        "lng": -1.8456441
-      },
-      "mapsUrl": "https://maps.google.com/?q=52.470936,-1.8456441",
-      "source": "osm"
-    },
-    {
-      "nom": "Jamiat-ul-Muslimin",
-      "lat": 52.464953,
-      "lng": -1.8507167,
-      "coordonnees": {
-        "lat": 52.464953,
-        "lng": -1.8507167
-      },
-      "adresse": "Tennyson Road, Birmingham",
-      "mapsUrl": "https://maps.google.com/?q=52.464953,-1.8507167",
-      "source": "osm"
-    },
-    {
-      "nom": "Fountain of Knowledge Islamic Centre",
-      "lat": 52.4526751,
-      "lng": -1.8781306,
-      "coordonnees": {
-        "lat": 52.4526751,
-        "lng": -1.8781306
-      },
-      "adresse": "Ladypool Road, Birmingham",
-      "mapsUrl": "https://maps.google.com/?q=52.4526751,-1.8781306",
-      "source": "osm"
-    },
-    {
-      "nom": "Faizan -e-Mustafa Educational Centre",
-      "lat": 52.4562063,
-      "lng": -1.8581574,
-      "coordonnees": {
-        "lat": 52.4562063,
-        "lng": -1.8581574
-      },
-      "mapsUrl": "https://maps.google.com/?q=52.4562063,-1.8581574",
-      "source": "osm"
-    },
-    {
-      "nom": "Ghausia Mosque Trust",
-      "lat": 52.5162826,
-      "lng": -1.8562277,
-      "coordonnees": {
-        "lat": 52.5162826,
-        "lng": -1.8562277
-      },
-      "mapsUrl": "https://maps.google.com/?q=52.5162826,-1.8562277",
-      "source": "osm"
-    },
-    {
-      "nom": "Sultan Bahu Centre",
-      "lat": 52.4920688,
-      "lng": -1.8227045,
-      "coordonnees": {
-        "lat": 52.4920688,
-        "lng": -1.8227045
-      },
-      "mapsUrl": "https://maps.google.com/?q=52.4920688,-1.8227045",
-      "source": "osm"
-    },
-    {
-      "nom": "Faizan e Medina",
-      "lat": 52.478057,
-      "lng": -1.8141822,
-      "coordonnees": {
-        "lat": 52.478057,
-        "lng": -1.8141822
-      },
-      "adresse": "Richmond Road, Birmingham",
-      "mapsUrl": "https://maps.google.com/?q=52.478057,-1.8141822",
-      "source": "osm"
-    },
-    {
-      "nom": "Stechford Mosque",
-      "lat": 52.480128,
-      "lng": -1.8128745,
-      "coordonnees": {
-        "lat": 52.480128,
-        "lng": -1.8128745
-      },
-      "mapsUrl": "https://maps.google.com/?q=52.480128,-1.8128745",
-      "source": "osm"
-    },
-    {
-      "nom": "Manarat Foundation",
-      "lat": 52.4539633,
-      "lng": -1.7922472,
-      "coordonnees": {
-        "lat": 52.4539633,
-        "lng": -1.7922472
-      },
-      "adresse": "New Coventry Road, Birmingham",
-      "mapsUrl": "https://maps.google.com/?q=52.4539633,-1.7922472",
-      "source": "osm"
-    },
-    {
-      "nom": "SIEA Highlands Mosque",
-      "lat": 52.3990327,
-      "lng": -1.8064214,
-      "coordonnees": {
-        "lat": 52.3990327,
-        "lng": -1.8064214
-      },
-      "adresse": "Cranmore Avenue, Solihull",
-      "mapsUrl": "https://maps.google.com/?q=52.3990327,-1.8064214",
-      "source": "osm"
-    },
-    {
-      "nom": "Central Mosque",
-      "lat": 52.5832348,
-      "lng": -1.9704539,
-      "coordonnees": {
-        "lat": 52.5832348,
-        "lng": -1.9704539
-      },
-      "mapsUrl": "https://maps.google.com/?q=52.5832348,-1.9704539",
-      "source": "osm"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Birmingham Central Mosque",
-      "categorie": "Spirituel",
-      "description": "Grande mosquée historique de la ville.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Birmingham%20Central%20Mosque%20Birmingham",
-      "lat": 52.4646458,
-      "lng": -1.8905789,
-      "geocoded": true
-    },
-    {
-      "id": "a2",
-      "nom": "Balti Triangle",
-      "categorie": "Culture",
-      "description": "Quartier réputé pour sa cuisine halal balti.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Balti%20Triangle%20Birmingham",
-      "lat": 52.4575883,
-      "lng": -1.876639,
-      "geocoded": true
-    },
-    {
-      "id": "a3",
-      "nom": "Bullring & marchés",
-      "categorie": "Shopping",
-      "description": "Grand centre commercial et marché historique.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Bullring%20%26%20march%C3%A9s%20Birmingham"
-    },
-    {
-      "nom": "Blue Plaque: Municipal Technical School",
-      "lat": 52.4866082,
-      "lng": -1.8900998,
-      "coordonnees": {
-        "lat": 52.4866082,
-        "lng": -1.8900998
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=52.4866082,-1.8900998",
-      "source": "osm"
-    },
-    {
-      "nom": "Inside 'Tempus Fugit'",
-      "lat": 52.4858774,
-      "lng": -1.8887932,
-      "coordonnees": {
-        "lat": 52.4858774,
-        "lng": -1.8887932
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=52.4858774,-1.8887932",
-      "source": "osm"
-    },
-    {
-      "nom": "Tipping Triangles",
-      "lat": 52.4870044,
-      "lng": -1.8884036,
-      "coordonnees": {
-        "lat": 52.4870044,
-        "lng": -1.8884036
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=52.4870044,-1.8884036",
-      "source": "osm"
-    },
-    {
-      "nom": "One Aston",
-      "lat": 52.4849508,
-      "lng": -1.8884755,
-      "coordonnees": {
-        "lat": 52.4849508,
-        "lng": -1.8884755
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=52.4849508,-1.8884755",
-      "source": "osm"
-    },
-    {
-      "nom": "Hebe",
-      "lat": 52.4844573,
-      "lng": -1.8921845,
-      "coordonnees": {
-        "lat": 52.4844573,
-        "lng": -1.8921845
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=52.4844573,-1.8921845",
-      "source": "osm"
-    },
-    {
-      "nom": "Drinking Fountain",
-      "lat": 52.4879648,
-      "lng": -1.8885121,
-      "coordonnees": {
-        "lat": 52.4879648,
-        "lng": -1.8885121
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=52.4879648,-1.8885121",
-      "source": "osm"
-    },
-    {
-      "nom": "Florence Nightin' Owl",
-      "lat": 52.4845116,
-      "lng": -1.8935913,
-      "coordonnees": {
-        "lat": 52.4845116,
-        "lng": -1.8935913
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=52.4845116,-1.8935913",
-      "source": "osm"
-    },
-    {
-      "nom": "Granite Boulder",
-      "lat": 52.4835632,
-      "lng": -1.8900046,
-      "coordonnees": {
-        "lat": 52.4835632,
-        "lng": -1.8900046
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=52.4835632,-1.8900046",
-      "source": "osm"
-    },
-    {
-      "nom": "Allegories of Methodist Teaching",
-      "lat": 52.4836543,
-      "lng": -1.8928492,
-      "coordonnees": {
-        "lat": 52.4836543,
-        "lng": -1.8928492
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=52.4836543,-1.8928492",
-      "source": "osm"
-    },
-    {
-      "nom": "Blue Plaque The Bull: History",
-      "lat": 52.4865301,
-      "lng": -1.8952871,
-      "coordonnees": {
-        "lat": 52.4865301,
-        "lng": -1.8952871
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=52.4865301,-1.8952871",
-      "source": "osm"
-    },
-    {
-      "nom": "Wattilisk",
-      "lat": 52.4827808,
-      "lng": -1.8927983,
-      "coordonnees": {
-        "lat": 52.4827808,
-        "lng": -1.8927983
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=52.4827808,-1.8927983",
-      "source": "osm"
-    },
-    {
-      "nom": "Inns of Court Shields",
-      "lat": 52.4837226,
-      "lng": -1.895057,
-      "coordonnees": {
-        "lat": 52.4837226,
-        "lng": -1.895057
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=52.4837226,-1.895057",
-      "source": "osm"
-    },
-    {
-      "nom": "First Health Food Store in the UK",
-      "lat": 52.4826475,
-      "lng": -1.8941272,
-      "coordonnees": {
-        "lat": 52.4826475,
-        "lng": -1.8941272
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=52.4826475,-1.8941272",
-      "source": "osm"
-    },
-    {
-      "nom": "John Feeney 1839-1905",
-      "lat": 52.4842826,
-      "lng": -1.8968322,
-      "coordonnees": {
-        "lat": 52.4842826,
-        "lng": -1.8968322
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=52.4842826,-1.8968322",
-      "source": "osm"
-    },
-    {
-      "nom": "Wesleyan Fountain",
-      "lat": 52.483084,
-      "lng": -1.8965878,
-      "coordonnees": {
-        "lat": 52.483084,
-        "lng": -1.8965878
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=52.483084,-1.8965878",
-      "source": "osm"
-    },
-    {
-      "nom": "White Curl",
-      "lat": 52.4905712,
-      "lng": -1.8859096,
-      "coordonnees": {
-        "lat": 52.4905712,
-        "lng": -1.8859096
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=52.4905712,-1.8859096",
-      "source": "osm"
-    },
-    {
-      "nom": "Moby Dick's",
-      "lat": 52.4835404,
-      "lng": -1.8830267,
-      "coordonnees": {
-        "lat": 52.4835404,
-        "lng": -1.8830267
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=52.4835404,-1.8830267",
-      "source": "osm"
-    },
-    {
-      "nom": "Snow Hill Mural",
-      "lat": 52.4830453,
-      "lng": -1.8980052,
-      "coordonnees": {
-        "lat": 52.4830453,
-        "lng": -1.8980052
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=52.4830453,-1.8980052",
-      "source": "osm"
-    },
-    {
-      "nom": "General Hospital",
-      "lat": 52.4874762,
-      "lng": -1.8998131,
-      "coordonnees": {
-        "lat": 52.4874762,
-        "lng": -1.8998131
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=52.4874762,-1.8998131",
-      "source": "osm"
-    },
-    {
-      "nom": "Allegories of Science and Art",
-      "lat": 52.4815071,
-      "lng": -1.8967514,
-      "coordonnees": {
-        "lat": 52.4815071,
-        "lng": -1.8967514
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=52.4815071,-1.8967514",
-      "source": "osm"
-    },
-    {
-      "nom": "Taylors and Lloyds commemorative plaque",
-      "lat": 52.4805085,
-      "lng": -1.8939892,
-      "coordonnees": {
-        "lat": 52.4805085,
-        "lng": -1.8939892
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=52.4805085,-1.8939892",
-      "source": "osm"
-    },
-    {
-      "nom": "The Commuter",
-      "lat": 52.4835699,
-      "lng": -1.8995035,
-      "coordonnees": {
-        "lat": 52.4835699,
-        "lng": -1.8995035
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=52.4835699,-1.8995035",
-      "source": "osm"
-    },
-    {
-      "nom": "Last Public Hanging in Birmingham",
-      "lat": 52.4845273,
-      "lng": -1.900257,
-      "coordonnees": {
-        "lat": 52.4845273,
-        "lng": -1.900257
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=52.4845273,-1.900257",
-      "source": "osm"
-    },
-    {
-      "nom": "Blue Plaque: Wesleyan Assurance Society",
-      "lat": 52.4808469,
-      "lng": -1.8957336,
-      "coordonnees": {
-        "lat": 52.4808469,
-        "lng": -1.8957336
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=52.4808469,-1.8957336",
-      "source": "osm"
-    },
-    {
-      "nom": "Joseph Priestley",
-      "lat": 52.4799595,
-      "lng": -1.8925893,
-      "coordonnees": {
-        "lat": 52.4799595,
-        "lng": -1.8925893
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=52.4799595,-1.8925893",
-      "source": "osm"
-    },
-    {
-      "nom": "Boulton & Watt Blowing Engine 1817",
-      "lat": 52.4924876,
-      "lng": -1.8881907,
-      "coordonnees": {
-        "lat": 52.4924876,
-        "lng": -1.8881907
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=52.4924876,-1.8881907",
-      "source": "osm"
-    },
-    {
-      "nom": "Gun Barrell Proof House",
-      "lat": 52.4804695,
-      "lng": -1.8849635,
-      "coordonnees": {
-        "lat": 52.4804695,
-        "lng": -1.8849635
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=52.4804695,-1.8849635",
-      "source": "osm"
-    },
-    {
-      "nom": "Fluted Column",
-      "lat": 52.4809956,
-      "lng": -1.897881,
-      "coordonnees": {
-        "lat": 52.4809956,
-        "lng": -1.897881
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=52.4809956,-1.897881",
-      "source": "osm"
-    },
-    {
-      "nom": "Madonna and Child",
-      "lat": 52.4791358,
-      "lng": -1.8902635,
-      "coordonnees": {
-        "lat": 52.4791358,
-        "lng": -1.8902635
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=52.4791358,-1.8902635",
-      "source": "osm"
-    },
-    {
-      "nom": "Heads, Beasts and Figures",
-      "lat": 52.479927,
-      "lng": -1.8963511,
-      "coordonnees": {
-        "lat": 52.479927,
-        "lng": -1.8963511
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=52.479927,-1.8963511",
-      "source": "osm"
-    },
-    {
-      "nom": "Umbra",
-      "lat": 52.4826171,
-      "lng": -1.900832,
-      "coordonnees": {
-        "lat": 52.4826171,
-        "lng": -1.900832
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=52.4826171,-1.900832",
-      "source": "osm"
-    },
-    {
-      "nom": "Bishop Gore Statue",
-      "lat": 52.4811366,
-      "lng": -1.8994207,
-      "coordonnees": {
-        "lat": 52.4811366,
-        "lng": -1.8994207
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=52.4811366,-1.8994207",
-      "source": "osm"
-    },
-    {
-      "nom": "GWR War Memorial",
-      "lat": 52.478823,
-      "lng": -1.8925811,
-      "coordonnees": {
-        "lat": 52.478823,
-        "lng": -1.8925811
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=52.478823,-1.8925811",
-      "source": "osm"
-    },
-    {
-      "nom": "Green Heart",
-      "lat": 52.4783014,
-      "lng": -1.8896981,
-      "coordonnees": {
-        "lat": 52.4783014,
-        "lng": -1.8896981
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=52.4783014,-1.8896981",
-      "source": "osm"
-    },
-    {
-      "nom": "Sir Walter Scott Bust",
-      "lat": 52.4796991,
-      "lng": -1.8980687,
-      "coordonnees": {
-        "lat": 52.4796991,
-        "lng": -1.8980687
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=52.4796991,-1.8980687",
-      "source": "osm"
-    },
-    {
-      "nom": "Frederick Rowland Emett",
-      "lat": 52.4840755,
-      "lng": -1.9033103,
-      "coordonnees": {
-        "lat": 52.4840755,
-        "lng": -1.9033103
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=52.4840755,-1.9033103",
-      "source": "osm"
-    },
-    {
-      "nom": "Blue Plaque: Birmingham Guild of Handicraft Arthur Stansfield Dixon",
-      "lat": 52.482766,
-      "lng": -1.9026229,
-      "coordonnees": {
-        "lat": 52.482766,
-        "lng": -1.9026229
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=52.482766,-1.9026229",
-      "source": "osm"
-    },
-    {
-      "nom": "William Hutton - first historian of Birmingham",
-      "lat": 52.4784542,
-      "lng": -1.8948751,
-      "coordonnees": {
-        "lat": 52.4784542,
-        "lng": -1.8948751
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=52.4784542,-1.8948751",
-      "source": "osm"
-    },
-    {
-      "nom": "Wisdom, Fortitude, Charity and Faith",
-      "lat": 52.4803498,
-      "lng": -1.9000345,
-      "coordonnees": {
-        "lat": 52.4803498,
-        "lng": -1.9000345
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=52.4803498,-1.9000345",
-      "source": "osm"
-    },
-    {
-      "nom": "Site of the Gild Hall of the Holy Cross, 1392, from 1552 to 1936 King Edward VI. School",
-      "lat": 52.4788365,
-      "lng": -1.897228,
-      "coordonnees": {
-        "lat": 52.4788365,
-        "lng": -1.897228
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=52.4788365,-1.897228",
-      "source": "osm"
-    },
-    {
-      "nom": "Equinox",
-      "lat": 52.4807826,
-      "lng": -1.9013961,
-      "coordonnees": {
-        "lat": 52.4807826,
-        "lng": -1.9013961
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=52.4807826,-1.9013961",
-      "source": "osm"
-    },
-    {
-      "nom": "Luminaire",
-      "lat": 52.4793475,
-      "lng": -1.8993741,
-      "coordonnees": {
-        "lat": 52.4793475,
-        "lng": -1.8993741
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=52.4793475,-1.8993741",
-      "source": "osm"
-    },
-    {
-      "nom": "86-1798",
-      "lat": 52.4855309,
-      "lng": -1.9048807,
-      "coordonnees": {
-        "lat": 52.4855309,
-        "lng": -1.9048807
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=52.4855309,-1.9048807",
-      "source": "osm"
-    },
-    {
-      "nom": "John Freeth, poet",
-      "lat": 52.4776008,
-      "lng": -1.8939359,
-      "coordonnees": {
-        "lat": 52.4776008,
-        "lng": -1.8939359
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=52.4776008,-1.8939359",
-      "source": "osm"
-    },
-    {
-      "nom": "Caryatids",
-      "lat": 52.4786285,
-      "lng": -1.8987471,
-      "coordonnees": {
-        "lat": 52.4786285,
-        "lng": -1.8987471
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=52.4786285,-1.8987471",
-      "source": "osm"
-    },
-    {
-      "nom": "Jewellery Quarter Gateway: ‘Made in’ Geology",
-      "lat": 52.4829582,
-      "lng": -1.9048308,
-      "coordonnees": {
-        "lat": 52.4829582,
-        "lng": -1.9048308
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=52.4829582,-1.9048308",
-      "source": "osm"
-    },
-    {
-      "nom": "Rose Window",
-      "lat": 52.4809641,
-      "lng": -1.9032144,
-      "coordonnees": {
-        "lat": 52.4809641,
-        "lng": -1.9032144
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=52.4809641,-1.9032144",
-      "source": "osm"
-    },
-    {
-      "nom": "The Guardian",
-      "lat": 52.4797484,
-      "lng": -1.9019923,
-      "coordonnees": {
-        "lat": 52.4797484,
-        "lng": -1.9019923
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=52.4797484,-1.9019923",
-      "source": "osm"
-    },
-    {
-      "nom": "Glass Artwork Entrance Feature",
-      "lat": 52.4772828,
-      "lng": -1.8962299,
-      "coordonnees": {
-        "lat": 52.4772828,
-        "lng": -1.8962299
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=52.4772828,-1.8962299",
-      "source": "osm"
-    },
-    {
-      "nom": "Timbre",
-      "lat": 52.4767938,
-      "lng": -1.8937822,
-      "coordonnees": {
-        "lat": 52.4767938,
-        "lng": -1.8937822
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=52.4767938,-1.8937822",
-      "source": "osm"
-    },
-    {
-      "nom": "John Lewis Ground Breaking June 2012",
-      "lat": 52.4777362,
-      "lng": -1.8984602,
-      "coordonnees": {
-        "lat": 52.4777362,
-        "lng": -1.8984602
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=52.4777362,-1.8984602",
-      "source": "osm"
-    },
-    {
-      "nom": "Findings Trail 🅦 FILM PROJECTOR",
-      "lat": 52.483466,
-      "lng": -1.9059797,
-      "coordonnees": {
-        "lat": 52.483466,
-        "lng": -1.9059797
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=52.483466,-1.9059797",
-      "source": "osm"
-    },
-    {
-      "nom": "Thomas Rickman's Tomb",
-      "lat": 52.4909309,
-      "lng": -1.9046958,
-      "coordonnees": {
-        "lat": 52.4909309,
-        "lng": -1.9046958
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=52.4909309,-1.9046958",
-      "source": "osm"
-    },
-    {
-      "nom": "Aesculapius",
-      "lat": 52.4815685,
-      "lng": -1.9049661,
-      "coordonnees": {
-        "lat": 52.4815685,
-        "lng": -1.9049661
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=52.4815685,-1.9049661",
-      "source": "osm"
-    },
-    {
-      "nom": "Allegory of Fame Rewarding the Arts",
-      "lat": 52.4801359,
-      "lng": -1.9037448,
-      "coordonnees": {
-        "lat": 52.4801359,
-        "lng": -1.9037448
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=52.4801359,-1.9037448",
-      "source": "osm"
-    },
-    {
-      "nom": "China Expression",
-      "lat": 52.4870405,
-      "lng": -1.9071201,
-      "coordonnees": {
-        "lat": 52.4870405,
-        "lng": -1.9071201
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=52.4870405,-1.9071201",
-      "source": "osm"
-    },
-    {
-      "nom": "Artisan Alchemy Gallery",
-      "lat": 52.4858052,
-      "lng": -1.9071792,
-      "coordonnees": {
-        "lat": 52.4858052,
-        "lng": -1.9071792
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=52.4858052,-1.9071792",
-      "source": "osm"
-    }
-  ],
-  "imageCredit": "Wikimedia Commons",
-  "osmEnriched": true,
-  "osmEnrichedAt": "2026-06-30",
-  "description_en": "Birmingham, in the United Kingdom, is a halal-friendly destination with a Halal Trust Score of 4.5/5. Muslim travelers will find 142 halal restaurants listed, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
-  "metaDescription_en": "Halal guide to Birmingham: 142 halal restaurants listed, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.5/5.",
-  "nom_en": "Birmingham",
-  "boucheries": []
+  {
+   "nom": "Thai Express",
+   "type": "thai",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4773704,-1.8978873",
+   "lat": 52.4773704,
+   "lng": -1.8978873,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Taste of Pakistan",
+   "type": "pakistani",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4593447,-1.8764886",
+   "lat": 52.4593447,
+   "lng": -1.8764886,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Haute Dolci",
+   "type": "dessert",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.5048634,-1.8548963",
+   "lat": 52.5048634,
+   "lng": -1.8548963,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Subway",
+   "type": "sandwich",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4720855,-1.9319095",
+   "lat": 52.4720855,
+   "lng": -1.9319095,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Colbeh Persian Kitchen",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4721426,-1.9327443",
+   "lat": 52.4721426,
+   "lng": -1.9327443,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Roti Mahl",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4527395,-1.8786099",
+   "lat": 52.4527395,
+   "lng": -1.8786099,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Lal Qela",
+   "type": "indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4882646,-1.8313425",
+   "lat": 52.4882646,
+   "lng": -1.8313425,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Boo.",
+   "type": "burger, american",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4467108,-1.888382",
+   "lat": 52.4467108,
+   "lng": -1.888382,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Aphamia",
+   "type": "middle eastern, falafel, shawarma",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.5218882,-1.8431736",
+   "lat": 52.5218882,
+   "lng": -1.8431736,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Chicking Selly Oak",
+   "type": "chicken, wings, burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4454496,-1.9334942",
+   "lat": 52.4454496,
+   "lng": -1.9334942,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Hagley Kebab House",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4725672,-1.967812",
+   "lat": 52.4725672,
+   "lng": -1.967812,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Karachi Kebab And Pizza",
+   "type": "kebab, pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4767577,-1.9696337",
+   "lat": 52.4767577,
+   "lng": -1.9696337,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Burger & Sauce",
+   "type": "burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4744272,-1.9693651",
+   "lat": 52.4744272,
+   "lng": -1.9693651,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Taste of Chennai",
+   "type": "indian, south indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4384204,-1.9400682",
+   "lat": 52.4384204,
+   "lng": -1.9400682,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "New Oceana Fish Bar",
+   "type": "fish and chips",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.5024191,-2.0029931",
+   "lat": 52.5024191,
+   "lng": -2.0029931,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Spice of Asia",
+   "type": "indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.5574996,-1.8922719",
+   "lat": 52.5574996,
+   "lng": -1.8922719,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "M.A.K. Halal",
+   "type": "burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.5192304,-1.9945264",
+   "lat": 52.5192304,
+   "lng": -1.9945264,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Jerk & Grill / Cookielicious",
+   "type": "burger, chicken, steak house, dessert",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.5191999,-1.9955258",
+   "lat": 52.5191999,
+   "lng": -1.9955258,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Chicking Westbromwich",
+   "type": "wings, burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.5164049,-1.9978215",
+   "lat": 52.5164049,
+   "lng": -1.9978215,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Oldbury Social Club Bar & Grill",
+   "type": "nepalese, indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.5027343,-2.0098069",
+   "lat": 52.5027343,
+   "lng": -2.0098069,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "TeamSport Bar & Kitchen",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4989354,-2.014709",
+   "lat": 52.4989354,
+   "lng": -2.014709,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Tikka Nation - Birmingham",
+   "type": "indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.5588687,-1.8268211",
+   "lat": 52.5588687,
+   "lng": -1.8268211,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Benny's Chicken",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4760178,-2.0382922",
+   "lat": 52.4760178,
+   "lng": -2.0382922,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Chicking Wednesbury",
+   "type": "chicken, wings, burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.5526902,-2.0214607",
+   "lat": 52.5526902,
+   "lng": -2.0214607,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "KFC",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.565096,-2.0046166",
+   "lat": 52.565096,
+   "lng": -2.0046166,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "German Doner Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4795072,-1.9015493",
+   "lat": 52.4795072,
+   "lng": -1.9015493,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Khan Palace",
+   "type": "pakistani",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4766166,-1.8923519",
+   "lat": 52.4766166,
+   "lng": -1.8923519,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Suhail Pizza and Kebabs",
+   "type": "pizza, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.503449,-1.8995076",
+   "lat": 52.503449,
+   "lng": -1.8995076,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Mindi House",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4714653,-1.8625688",
+   "lat": 52.4714653,
+   "lng": -1.8625688,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Filfila Restaurant & Pastry",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4632468,-1.8766342",
+   "lat": 52.4632468,
+   "lng": -1.8766342,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Old Damascus",
+   "type": "mediterranean, arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4679514,-1.854205",
+   "lat": 52.4679514,
+   "lng": -1.854205,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Big John's",
+   "type": "pizza, kebab, chicken, burger, wraps, panini, fish and chips, ice cream, american",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.472078,-1.931711",
+   "lat": 52.472078,
+   "lng": -1.931711,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Soofi Persian Restaurant",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4721011,-1.9320258",
+   "lat": 52.4721011,
+   "lng": -1.9320258,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sheesh Turkish Meze & Grill",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4721305,-1.9325767",
+   "lat": 52.4721305,
+   "lng": -1.9325767,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Alaturka",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4538092,-1.8776884",
+   "lat": 52.4538092,
+   "lng": -1.8776884,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Antep",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4532917,-1.8778111",
+   "lat": 52.4532917,
+   "lng": -1.8778111,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Erbil Shawarma and Kebab House",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.503979,-1.9390887",
+   "lat": 52.503979,
+   "lng": -1.9390887,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Daanyaal Kebab House",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4929955,-1.8320386",
+   "lat": 52.4929955,
+   "lng": -1.8320386,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kurdistan Restaurant",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.5056262,-1.9405415",
+   "lat": 52.5056262,
+   "lng": -1.9405415,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Keyaans Grill House",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4867684,-1.9550679",
+   "lat": 52.4867684,
+   "lng": -1.9550679,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Erdington Curry n Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.5095558,-1.8373664",
+   "lat": 52.5095558,
+   "lng": -1.8373664,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Farahzad Resturant (L1)",
+   "type": "persian, mediterranean",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.486606,-1.9584601",
+   "lat": 52.486606,
+   "lng": -1.9584601,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Istanbul Shawrma",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4866228,-1.9587128",
+   "lat": 52.4866228,
+   "lng": -1.9587128,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Bearwood Grill House",
+   "type": "turkish, persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4775834,-1.9699105",
+   "lat": 52.4775834,
+   "lng": -1.9699105,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Neelams Kebab House",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4728105,-1.9682759",
+   "lat": 52.4728105,
+   "lng": -1.9682759,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sheratton",
+   "type": "bangladeshi",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4448272,-1.9345274",
+   "lat": 52.4448272,
+   "lng": -1.9345274,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Rouhi Restaurant",
+   "type": "mediterranean, persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4772462,-1.9709112",
+   "lat": 52.4772462,
+   "lng": -1.9709112,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Lebanese Feast",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4361456,-1.8927905",
+   "lat": 52.4361456,
+   "lng": -1.8927905,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Vegan Munch",
+   "type": "shawarma",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4440086,-1.9354632",
+   "lat": 52.4440086,
+   "lng": -1.9354632,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Falafel Munch",
+   "type": "lebanese, falafel, salad",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4439741,-1.9355057",
+   "lat": 52.4439741,
+   "lng": -1.9355057,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Mount Nemrut Turkish Restaurant",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4772712,-1.9721685",
+   "lat": 52.4772712,
+   "lng": -1.9721685,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Classic",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.5367181,-1.8741583",
+   "lat": 52.5367181,
+   "lng": -1.8741583,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Marmaris Original Turkish Charcoal Grill",
+   "type": "mediterranean, turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.432031,-1.892819",
+   "lat": 52.432031,
+   "lng": -1.892819,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Spice Aroma",
+   "type": "bangladeshi",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4371044,-1.9293147",
+   "lat": 52.4371044,
+   "lng": -1.9293147,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Arabella Lebanese Restaurant",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4462754,-1.8248423",
+   "lat": 52.4462754,
+   "lng": -1.8248423,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Marsala Merchant",
+   "type": "indian, bangladeshi",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4322466,-1.9194791",
+   "lat": 52.4322466,
+   "lng": -1.9194791,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Karahi King Village",
+   "type": "pakistani",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4456915,-1.8184899",
+   "lat": 52.4456915,
+   "lng": -1.8184899,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Fast 1 Pizza & Grill",
+   "type": "pizza, chicken, turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.5021338,-1.9904967",
+   "lat": 52.5021338,
+   "lng": -1.9904967,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Magnificos",
+   "type": "pizza, burger, kebab, fish and chips",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4285098,-1.956461",
+   "lat": 52.4285098,
+   "lng": -1.956461,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "SpitFryer",
+   "type": "chicken, kebab, pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.5088146,-1.7777924",
+   "lat": 52.5088146,
+   "lng": -1.7777924,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Causeway German Doner",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4879725,-2.0102401",
+   "lat": 52.4879725,
+   "lng": -2.0102401,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Aakash Balti",
+   "type": "bangladeshi",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.5236965,-2.0022976",
+   "lat": 52.5236965,
+   "lng": -2.0022976,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sutton's Fish Bar",
+   "type": "fish and chips, pie, kebab, chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.5413609,-1.7998785",
+   "lat": 52.5413609,
+   "lng": -1.7998785,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "UK Shawarma",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.5241661,-2.0033872",
+   "lat": 52.5241661,
+   "lng": -2.0033872,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Cetin Turkish Kebab House",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4769461,-2.0367707",
+   "lat": 52.4769461,
+   "lng": -2.0367707,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ginger Blue",
+   "type": "bangladeshi",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.3965139,-1.8121179",
+   "lat": 52.3965139,
+   "lng": -1.8121179,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sandhu's",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.5514695,-2.0186053",
+   "lat": 52.5514695,
+   "lng": -2.0186053,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Crispy Pizza & Kebab",
+   "type": "pizza, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.5518088,-2.0189454",
+   "lat": 52.5518088,
+   "lng": -2.0189454,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Turkish Shawarma",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.5766642,-1.9828824",
+   "lat": 52.5766642,
+   "lng": -1.9828824,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sunny's Fish Bar",
+   "type": "kebab, fish and chips",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.5784811,-1.9816868",
+   "lat": 52.5784811,
+   "lng": -1.9816868,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Asha's",
+   "lat": 52.4812506,
+   "lng": -1.9019578,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4812506,-1.9019578",
+   "source": "osm"
+  },
+  {
+   "nom": "Wrapchic",
+   "lat": 52.4773864,
+   "lng": -1.8961363,
+   "type": "indian, burrito",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4773864,-1.8961363",
+   "source": "osm"
+  },
+  {
+   "nom": "Dishoom",
+   "lat": 52.4802644,
+   "lng": -1.9047962,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4802644,-1.9047962",
+   "source": "osm"
+  },
+  {
+   "nom": "James Dahl Indian",
+   "lat": 52.4745036,
+   "lng": -1.8963608,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4745036,-1.8963608",
+   "source": "osm"
+  },
+  {
+   "nom": "Kaffee Couture",
+   "lat": 52.4881915,
+   "lng": -1.9107415,
+   "type": "local, indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4881915,-1.9107415",
+   "source": "osm"
+  },
+  {
+   "nom": "Dilse",
+   "lat": 52.4762662,
+   "lng": -1.9042428,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4762662,-1.9042428",
+   "source": "osm"
+  },
+  {
+   "nom": "Indico",
+   "lat": 52.4758676,
+   "lng": -1.905638,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4758676,-1.905638",
+   "source": "osm"
+  },
+  {
+   "nom": "Pushkar",
+   "lat": 52.4768521,
+   "lng": -1.911821,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4768521,-1.911821",
+   "source": "osm"
+  },
+  {
+   "nom": "Viceroy",
+   "lat": 52.4867924,
+   "lng": -1.9171551,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4867924,-1.9171551",
+   "source": "osm"
+  },
+  {
+   "nom": "MyLahore",
+   "lat": 52.4711106,
+   "lng": -1.8792716,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4711106,-1.8792716",
+   "source": "osm"
+  },
+  {
+   "nom": "Bhaizans grill",
+   "lat": 52.5022902,
+   "lng": -1.9020338,
+   "type": "asian, indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.5022902,-1.9020338",
+   "source": "osm"
+  },
+  {
+   "nom": "Shere Khan",
+   "lat": 52.5053075,
+   "lng": -1.856224,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.5053075,-1.856224",
+   "source": "osm"
+  },
+  {
+   "nom": "Saba",
+   "lat": 52.4551944,
+   "lng": -1.8867337,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4551944,-1.8867337",
+   "source": "osm"
+  },
+  {
+   "nom": "Diwan",
+   "lat": 52.4536341,
+   "lng": -1.8873048,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4536341,-1.8873048",
+   "source": "osm"
+  },
+  {
+   "nom": "Adil's",
+   "lat": 52.4544006,
+   "lng": -1.873389,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4544006,-1.873389",
+   "source": "osm"
+  },
+  {
+   "nom": "Zindiya",
+   "lat": 52.4482965,
+   "lng": -1.8865646,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4482965,-1.8865646",
+   "source": "osm"
+  },
+  {
+   "nom": "Royal Watan",
+   "lat": 52.4472441,
+   "lng": -1.9134596,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4472441,-1.9134596",
+   "source": "osm"
+  },
+  {
+   "nom": "Sukh Curry House",
+   "lat": 52.4867998,
+   "lng": -1.961412,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4867998,-1.961412",
+   "source": "osm"
+  },
+  {
+   "nom": "Bharawan Da Dhaba",
+   "lat": 52.4918101,
+   "lng": -1.9679624,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4918101,-1.9679624",
+   "source": "osm"
+  },
+  {
+   "nom": "Kashmir Cottage",
+   "lat": 52.4795567,
+   "lng": -1.9698549,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4795567,-1.9698549",
+   "source": "osm"
+  },
+  {
+   "nom": "Red Chilli",
+   "lat": 52.5363116,
+   "lng": -1.8892004,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.5363116,-1.8892004",
+   "source": "osm"
+  },
+  {
+   "nom": "Kings",
+   "lat": 52.4344083,
+   "lng": -1.8936628,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4344083,-1.8936628",
+   "source": "osm"
+  },
+  {
+   "nom": "Alishaan",
+   "lat": 52.5377785,
+   "lng": -1.8798299,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.5377785,-1.8798299",
+   "source": "osm"
+  },
+  {
+   "nom": "The Fat Swan",
+   "lat": 52.4670929,
+   "lng": -1.8104374,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4670929,-1.8104374",
+   "source": "osm"
+  },
+  {
+   "nom": "Zaalsha Indian Restaurant",
+   "lat": 52.4774084,
+   "lng": -1.975693,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4774084,-1.975693",
+   "source": "osm"
+  },
+  {
+   "nom": "Deli Dinning",
+   "lat": 52.5387412,
+   "lng": -1.8813311,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.5387412,-1.8813311",
+   "source": "osm"
+  },
+  {
+   "nom": "Balti Raj",
+   "lat": 52.4619863,
+   "lng": -1.8111194,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4619863,-1.8111194",
+   "source": "osm"
+  },
+  {
+   "nom": "Balti 2000",
+   "lat": 52.4494138,
+   "lng": -1.9563749,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4494138,-1.9563749",
+   "source": "osm"
+  },
+  {
+   "nom": "Curry Express",
+   "lat": 52.4399329,
+   "lng": -1.9390125,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4399329,-1.9390125",
+   "source": "osm"
+  },
+  {
+   "nom": "Massalawala",
+   "lat": 52.5419919,
+   "lng": -1.8858592,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.5419919,-1.8858592",
+   "source": "osm"
+  },
+  {
+   "nom": "Abdul's Cafe and Diner",
+   "lat": 52.436392,
+   "lng": -1.8470225,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.436392,-1.8470225",
+   "source": "osm"
+  },
+  {
+   "nom": "Seven Spices",
+   "lat": 52.5432723,
+   "lng": -1.8789133,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.5432723,-1.8789133",
+   "source": "osm"
+  },
+  {
+   "nom": "Balti Bazaar",
+   "lat": 52.4305666,
+   "lng": -1.9208433,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4305666,-1.9208433",
+   "source": "osm"
+  },
+  {
+   "nom": "Deens",
+   "lat": 52.4288878,
+   "lng": -1.8697198,
+   "type": "fish and chips, indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4288878,-1.8697198",
+   "source": "osm"
+  },
+  {
+   "nom": "Sizzler Balti",
+   "lat": 52.5440825,
+   "lng": -1.8638808,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.5440825,-1.8638808",
+   "source": "osm"
+  },
+  {
+   "nom": "Bilash",
+   "lat": 52.5462637,
+   "lng": -1.8855204,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.5462637,-1.8855204",
+   "source": "osm"
+  },
+  {
+   "nom": "Anjuna Lounge",
+   "lat": 52.4288189,
+   "lng": -1.922754,
+   "type": "coffee, indian, cake, tea",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4288189,-1.922754",
+   "source": "osm"
+  },
+  {
+   "nom": "Noor Johan",
+   "lat": 52.4304223,
+   "lng": -1.8442038,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4304223,-1.8442038",
+   "source": "osm"
+  },
+  {
+   "nom": "Chilli Massala",
+   "lat": 52.4874859,
+   "lng": -1.9931185,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4874859,-1.9931185",
+   "source": "osm"
+  },
+  {
+   "nom": "Akash Tandoori",
+   "lat": 52.4267325,
+   "lng": -1.9223532,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4267325,-1.9223532",
+   "source": "osm"
+  },
+  {
+   "nom": "Shapla Rani",
+   "lat": 52.465486,
+   "lng": -1.9881166,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.465486,-1.9881166",
+   "source": "osm"
+  },
+  {
+   "nom": "Dilkhush",
+   "lat": 52.4258614,
+   "lng": -1.9218396,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4258614,-1.9218396",
+   "source": "osm"
+  },
+  {
+   "nom": "Simla Spice",
+   "lat": 52.5461614,
+   "lng": -1.9298024,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.5461614,-1.9298024",
+   "source": "osm"
+  },
+  {
+   "nom": "Balti Bites",
+   "lat": 52.4239116,
+   "lng": -1.9217731,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4239116,-1.9217731",
+   "source": "osm"
+  },
+  {
+   "nom": "The Curry Pot",
+   "lat": 52.5489423,
+   "lng": -1.8603291,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.5489423,-1.8603291",
+   "source": "osm"
+  },
+  {
+   "nom": "Desi Flame",
+   "lat": 52.4821957,
+   "lng": -1.7801385,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4821957,-1.7801385",
+   "source": "osm"
+  },
+  {
+   "nom": "Balti Spice",
+   "lat": 52.5526321,
+   "lng": -1.9077644,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.5526321,-1.9077644",
+   "source": "osm"
+  },
+  {
+   "nom": "Moonlight Curry House",
+   "lat": 52.4950274,
+   "lng": -2.0000469,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4950274,-2.0000469",
+   "source": "osm"
+  },
+  {
+   "nom": "Chillies",
+   "lat": 52.4190693,
+   "lng": -1.8994221,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4190693,-1.8994221",
+   "source": "osm"
+  },
+  {
+   "nom": "Moonlight Balti",
+   "lat": 52.5539635,
+   "lng": -1.883631,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.5539635,-1.883631",
+   "source": "osm"
+  },
+  {
+   "nom": "Balti Castle",
+   "lat": 52.438128,
+   "lng": -1.9705401,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.438128,-1.9705401",
+   "source": "osm"
+  },
+  {
+   "nom": "Clay Oven Balti",
+   "lat": 52.4297329,
+   "lng": -1.8257099,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4297329,-1.8257099",
+   "source": "osm"
+  },
+  {
+   "nom": "Rajnagar",
+   "lat": 52.4487207,
+   "lng": -1.7942785,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4487207,-1.7942785",
+   "source": "osm"
+  },
+  {
+   "nom": "Dilkush",
+   "lat": 52.5557598,
+   "lng": -1.8995078,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.5557598,-1.8995078",
+   "source": "osm"
+  },
+  {
+   "nom": "Karma Lounge",
+   "lat": 52.549624,
+   "lng": -1.8417411,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.549624,-1.8417411",
+   "source": "osm"
+  },
+  {
+   "nom": "Vila Spice",
+   "lat": 52.5574148,
+   "lng": -1.9114008,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.5574148,-1.9114008",
+   "source": "osm"
+  },
+  {
+   "nom": "Kismet",
+   "lat": 52.5019259,
+   "lng": -1.7729821,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.5019259,-1.7729821",
+   "source": "osm"
+  },
+  {
+   "nom": "balti2000.co.uk",
+   "lat": 52.4150097,
+   "lng": -1.8562776,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4150097,-1.8562776",
+   "source": "osm"
+  },
+  {
+   "nom": "Tariq Balti House",
+   "lat": 52.4119899,
+   "lng": -1.8669887,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4119899,-1.8669887",
+   "source": "osm"
+  },
+  {
+   "nom": "Shahjalal",
+   "lat": 52.4610715,
+   "lng": -2.0106939,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4610715,-2.0106939",
+   "source": "osm"
+  },
+  {
+   "nom": "Rajmah Indian",
+   "lat": 52.4802087,
+   "lng": -1.7603106,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4802087,-1.7603106",
+   "source": "osm"
+  },
+  {
+   "nom": "Agrabad",
+   "lat": 52.4461467,
+   "lng": -1.7772154,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4461467,-1.7772154",
+   "source": "osm"
+  },
+  {
+   "nom": "Shabar",
+   "lat": 52.4521393,
+   "lng": -1.7705023,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4521393,-1.7705023",
+   "source": "osm"
+  },
+  {
+   "nom": "Oasis Tandoori Restaurant",
+   "lat": 52.4145626,
+   "lng": -1.8288322,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4145626,-1.8288322",
+   "source": "osm"
+  },
+  {
+   "nom": "Dilshad International",
+   "lat": 52.4621848,
+   "lng": -2.0263323,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4621848,-2.0263323",
+   "source": "osm"
+  },
+  {
+   "nom": "Divine",
+   "lat": 52.4045953,
+   "lng": -1.8432905,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4045953,-1.8432905",
+   "source": "osm"
+  },
+  {
+   "nom": "Curry Box",
+   "lat": 52.4335686,
+   "lng": -2.0058626,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4335686,-2.0058626",
+   "source": "osm"
+  },
+  {
+   "nom": "Balti Towers",
+   "lat": 52.4700513,
+   "lng": -2.0326319,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4700513,-2.0326319",
+   "source": "osm"
+  },
+  {
+   "nom": "Darjeeling",
+   "lat": 52.4070115,
+   "lng": -1.8245789,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=52.4070115,-1.8245789",
+   "source": "osm"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "Aston Business School Conference Centre and Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4862175,-1.8887063",
+   "lat": 52.4862175,
+   "lng": -1.8887063,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.conferenceaston.co.uk/",
+   "source": "osm"
+  },
+  {
+   "nom": "Aloft",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.485851,-1.8852174",
+   "lat": 52.485851,
+   "lng": -1.8852174,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.485851,-1.8852174",
+   "source": "osm"
+  },
+  {
+   "nom": "iQ Studios 51",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4892804,-1.8918441",
+   "lat": 52.4892804,
+   "lng": -1.8918441,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4892804,-1.8918441",
+   "source": "osm"
+  },
+  {
+   "nom": "Aparthotel Birmingham",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4852608,-1.8973889",
+   "lat": 52.4852608,
+   "lng": -1.8973889,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4852608,-1.8973889",
+   "source": "osm"
+  },
+  {
+   "nom": "Holiday Inn Express",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4848692,-1.8983872",
+   "lat": 52.4848692,
+   "lng": -1.8983872,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.ihg.com/holidayinnexpress/hotels/gb/en/birmingham/bhxsh/hoteldetail",
+   "source": "osm"
+  },
+  {
+   "nom": "Clayton Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4810039,-1.890485",
+   "lat": 52.4810039,
+   "lng": -1.890485,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4810039,-1.890485",
+   "source": "osm"
+  },
+  {
+   "nom": "Premier Inn",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4913063,-1.8860537",
+   "lat": 52.4913063,
+   "lng": -1.8860537,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.premierinn.com/gb/en/hotels/england/west-midlands/birmingham/birmingham-city-aston.html",
+   "source": "osm"
+  },
+  {
+   "nom": "Campanile",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4919181,-1.8863006",
+   "lat": 52.4919181,
+   "lng": -1.8863006,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4919181,-1.8863006",
+   "source": "osm"
+  },
+  {
+   "nom": "Staybridge Suites",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4805562,-1.8959886",
+   "lat": 52.4805562,
+   "lng": -1.8959886,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4805562,-1.8959886",
+   "source": "osm"
+  },
+  {
+   "nom": "Travelodge Birmingham Central Moor Street",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4798862,-1.8937131",
+   "lat": 52.4798862,
+   "lng": -1.8937131,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.travelodge.co.uk/hotels/531/Birmingham-Central-Moor-Street-hotel",
+   "source": "osm"
+  },
+  {
+   "nom": "YMCA",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4879465,-1.9009409",
+   "lat": 52.4879465,
+   "lng": -1.9009409,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4879465,-1.9009409",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel du Vin",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4823293,-1.8999686",
+   "lat": 52.4823293,
+   "lng": -1.8999686,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4823293,-1.8999686",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel du Vin and Bistro",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4823002,-1.9001594",
+   "lat": 52.4823002,
+   "lng": -1.9001594,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4823002,-1.9001594",
+   "source": "osm"
+  },
+  {
+   "nom": "Grand Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4818267,-1.8996268",
+   "lat": 52.4818267,
+   "lng": -1.8996268,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4818267,-1.8996268",
+   "source": "osm"
+  },
+  {
+   "nom": "Britannia Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4791508,-1.8970691",
+   "lat": 52.4791508,
+   "lng": -1.8970691,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4791508,-1.8970691",
+   "source": "osm"
+  },
+  {
+   "nom": "Ladbrooke Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4780057,-1.887685",
+   "lat": 52.4780057,
+   "lng": -1.887685,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4780057,-1.887685",
+   "source": "osm"
+  },
+  {
+   "nom": "Selina",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4863478,-1.9044477",
+   "lat": 52.4863478,
+   "lng": -1.9044477,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4863478,-1.9044477",
+   "source": "osm"
+  },
+  {
+   "nom": "The Briar Rose",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4799272,-1.9000413",
+   "lat": 52.4799272,
+   "lng": -1.9000413,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.jdwetherspoon.com/hotels/england/west-midlands/the-briar-rose",
+   "source": "osm"
+  },
+  {
+   "nom": "Hampton by Hilton Birmingham Jewellery Quarter",
+   "categorie": "Hôtel",
+   "priceRange": "€€€",
+   "score": 3,
+   "mapsUrl": "https://maps.google.com/?q=52.4875246,-1.9048961",
+   "lat": 52.4875246,
+   "lng": -1.9048961,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.hilton.com/en/hotels/bhxbnhx-hampton-birmingham-jewellery-quarter/",
+   "source": "osm"
+  },
+  {
+   "nom": "Saint Paul's House",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4858229,-1.905094",
+   "lat": 52.4858229,
+   "lng": -1.905094,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4858229,-1.905094",
+   "source": "osm"
+  },
+  {
+   "nom": "Aparthotels Adagio",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4764666,-1.8909751",
+   "lat": 52.4764666,
+   "lng": -1.8909751,
+   "halalFriendly": false,
+   "bookingUrl": "https://all.accor.com/hotel/8117/index.en.shtml",
+   "source": "osm"
+  },
+  {
+   "nom": "Birmingham Central Backpackers",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4763162,-1.8858034",
+   "lat": 52.4763162,
+   "lng": -1.8858034,
+   "halalFriendly": false,
+   "bookingUrl": "https://birminghambackpapckers.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Travelodge Birmingham Central",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4834868,-1.9068289",
+   "lat": 52.4834868,
+   "lng": -1.9068289,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.travelodge.co.uk/hotels/379/Birmingham-Central-Newhall-Street-hotel",
+   "source": "osm"
+  },
+  {
+   "nom": "The Jewellery Suites",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4859152,-1.9074578",
+   "lat": 52.4859152,
+   "lng": -1.9074578,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4859152,-1.9074578",
+   "source": "osm"
+  },
+  {
+   "nom": "Comfort Inn",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4767305,-1.8981523",
+   "lat": 52.4767305,
+   "lng": -1.8981523,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4767305,-1.8981523",
+   "source": "osm"
+  },
+  {
+   "nom": "Staycity Aparthotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4832507,-1.9071603",
+   "lat": 52.4832507,
+   "lng": -1.9071603,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4832507,-1.9071603",
+   "source": "osm"
+  },
+  {
+   "nom": "Ibis Styles",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.481967,-1.9064695",
+   "lat": 52.481967,
+   "lng": -1.9064695,
+   "halalFriendly": false,
+   "bookingUrl": "https://all.accor.com/hotel/9130/index.en.shtml",
+   "source": "osm"
+  },
+  {
+   "nom": "Four Points Flex by Sheraton",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4861089,-1.907951",
+   "lat": 52.4861089,
+   "lng": -1.907951,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4861089,-1.907951",
+   "source": "osm"
+  },
+  {
+   "nom": "Travelodge",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4751016,-1.8944202",
+   "lat": 52.4751016,
+   "lng": -1.8944202,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4751016,-1.8944202",
+   "source": "osm"
+  },
+  {
+   "nom": "Easyhotel Birmingham",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.476808,-1.901621",
+   "lat": 52.476808,
+   "lng": -1.901621,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.easyhotel.com/hotels/united-kingdom/birmingham/birmingham-city-centre",
+   "source": "osm"
+  },
+  {
+   "nom": "Ibis",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.475007,-1.89645",
+   "lat": 52.475007,
+   "lng": -1.89645,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.475007,-1.89645",
+   "source": "osm"
+  },
+  {
+   "nom": "Holiday Inn",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4756645,-1.8992949",
+   "lat": 52.4756645,
+   "lng": -1.8992949,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4756645,-1.8992949",
+   "source": "osm"
+  },
+  {
+   "nom": "Staycity",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4743591,-1.8959292",
+   "lat": 52.4743591,
+   "lng": -1.8959292,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4743591,-1.8959292",
+   "source": "osm"
+  },
+  {
+   "nom": "Radisson Blu hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4753843,-1.9001721",
+   "lat": 52.4753843,
+   "lng": -1.9001721,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4753843,-1.9001721",
+   "source": "osm"
+  },
+  {
+   "nom": "Malmaison",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4768489,-1.9036938",
+   "lat": 52.4768489,
+   "lng": -1.9036938,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.malmaison.com/locations/birmingham/",
+   "source": "osm"
+  },
+  {
+   "nom": "Crowne Plaza Birmingham City Centre",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4778179,-1.9062931",
+   "lat": 52.4778179,
+   "lng": -1.9062931,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.ihg.com/crowneplaza/hotels/gb/en/birmingham/bhxct/hoteldetail",
+   "source": "osm"
+  },
+  {
+   "nom": "Frederick Street Townhouse",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.486024,-1.9117665",
+   "lat": 52.486024,
+   "lng": -1.9117665,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.486024,-1.9117665",
+   "source": "osm"
+  },
+  {
+   "nom": "Stay Birmingham Apartments",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4737102,-1.8969298",
+   "lat": 52.4737102,
+   "lng": -1.8969298,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4737102,-1.8969298",
+   "source": "osm"
+  },
+  {
+   "nom": "Prime Lodge",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4924677,-1.8713387",
+   "lat": 52.4924677,
+   "lng": -1.8713387,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4924677,-1.8713387",
+   "source": "osm"
+  },
+  {
+   "nom": "Holiday Inn Express Birmingham - City Centre",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4773963,-1.9066235",
+   "lat": 52.4773963,
+   "lng": -1.9066235,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.ihg.com/holidayinnexpress/hotels/gb/en/birmingham/bhxcc/hoteldetail",
+   "source": "osm"
+  },
+  {
+   "nom": "The Spires",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4755124,-1.9043734",
+   "lat": 52.4755124,
+   "lng": -1.9043734,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4755124,-1.9043734",
+   "source": "osm"
+  },
+  {
+   "nom": "Interstate Europe",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4755035,-1.9044067",
+   "lat": 52.4755035,
+   "lng": -1.9044067,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4755035,-1.9044067",
+   "source": "osm"
+  },
+  {
+   "nom": "Nitenite Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.476652,-1.9068539",
+   "lat": 52.476652,
+   "lng": -1.9068539,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.476652,-1.9068539",
+   "source": "osm"
+  },
+  {
+   "nom": "Hyatt Regency Birmingham",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 4,
+   "mapsUrl": "https://maps.google.com/?q=52.4780349,-1.9092583",
+   "lat": 52.4780349,
+   "lng": -1.9092583,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4780349,-1.9092583",
+   "source": "osm"
+  },
+  {
+   "nom": "AC Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4754189,-1.9060022",
+   "lat": 52.4754189,
+   "lng": -1.9060022,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4754189,-1.9060022",
+   "source": "osm"
+  },
+  {
+   "nom": "B&B Hotel Birmingham Centre",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4737631,-1.9023911",
+   "lat": 52.4737631,
+   "lng": -1.9023911,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.hotel-bb.com/en/hotel/birmingham-centre",
+   "source": "osm"
+  },
+  {
+   "nom": "Premier Inn Birmingham City Centre",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4765315,-1.9082372",
+   "lat": 52.4765315,
+   "lng": -1.9082372,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.premierinn.com/gb/en/hotels/england/west-midlands/birmingham/birmingham-city-centre-bridge-street.html",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Indigo",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4750754,-1.9067533",
+   "lat": 52.4750754,
+   "lng": -1.9067533,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4750754,-1.9067533",
+   "source": "osm"
+  },
+  {
+   "nom": "The Wellington",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4719631,-1.8992709",
+   "lat": 52.4719631,
+   "lng": -1.8992709,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4719631,-1.8992709",
+   "source": "osm"
+  },
+  {
+   "nom": "Ibis (Reception and Bar)",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4727807,-1.9022718",
+   "lat": 52.4727807,
+   "lng": -1.9022718,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4727807,-1.9022718",
+   "source": "osm"
+  },
+  {
+   "nom": "Ibis (Rooms)",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4727147,-1.9026332",
+   "lat": 52.4727147,
+   "lng": -1.9026332,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4727147,-1.9026332",
+   "source": "osm"
+  },
+  {
+   "nom": "City Nites",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4807931,-1.9143757",
+   "lat": 52.4807931,
+   "lng": -1.9143757,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4807931,-1.9143757",
+   "source": "osm"
+  },
+  {
+   "nom": "The Fountain Inn",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4710661,-1.8981108",
+   "lat": 52.4710661,
+   "lng": -1.8981108,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4710661,-1.8981108",
+   "source": "osm"
+  },
+  {
+   "nom": "Leonardo Royal Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4766805,-1.9112947",
+   "lat": 52.4766805,
+   "lng": -1.9112947,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.leonardohotels.co.uk/",
+   "source": "osm"
+  },
+  {
+   "nom": "The Paragon Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4704946,-1.8846587",
+   "lat": 52.4704946,
+   "lng": -1.8846587,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4704946,-1.8846587",
+   "source": "osm"
+  },
+  {
+   "nom": "Ibis Budget",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4713149,-1.9005222",
+   "lat": 52.4713149,
+   "lng": -1.9005222,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4713149,-1.9005222",
+   "source": "osm"
+  },
+  {
+   "nom": "St Anne's Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4703782,-1.8839859",
+   "lat": 52.4703782,
+   "lng": -1.8839859,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4703782,-1.8839859",
+   "source": "osm"
+  },
+  {
+   "nom": "The Moseley Arms",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4708335,-1.8813306",
+   "lat": 52.4708335,
+   "lng": -1.8813306,
+   "halalFriendly": false,
+   "bookingUrl": "http://themoseleyarms.co.uk/",
+   "source": "osm"
+  },
+  {
+   "nom": "SACO Birmingham Serviced Apartments",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4767117,-1.9135138",
+   "lat": 52.4767117,
+   "lng": -1.9135138,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4767117,-1.9135138",
+   "source": "osm"
+  },
+  {
+   "nom": "Novotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4763886,-1.9137115",
+   "lat": 52.4763886,
+   "lng": -1.9137115,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4763886,-1.9137115",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Ibis Birmingham Bordesley",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4723862,-1.8730437",
+   "lat": 52.4723862,
+   "lng": -1.8730437,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4723862,-1.8730437",
+   "source": "osm"
+  },
+  {
+   "nom": "Hilton Garden Inn Birmingham Brindleyplace",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 4,
+   "mapsUrl": "https://maps.google.com/?q=52.4769709,-1.9148913",
+   "lat": 52.4769709,
+   "lng": -1.9148913,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.hilton.com/en/hotels/bhxbpgi-hilton-garden-inn-birmingham-brindleyplace/",
+   "source": "osm"
+  },
+  {
+   "nom": "Hampton by Hilton Birmingham Broad Street",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4750417,-1.913823",
+   "lat": 52.4750417,
+   "lng": -1.913823,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.hilton.com/en/hotels/bhxbshx-hampton-birmingham-broad-street/",
+   "source": "osm"
+  },
+  {
+   "nom": "Surya & Iulia",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4677577,-1.9050569",
+   "lat": 52.4677577,
+   "lng": -1.9050569,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4677577,-1.9050569",
+   "source": "osm"
+  },
+  {
+   "nom": "Shler and Hawbash Birmingham UK",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4896618,-1.9237629",
+   "lat": 52.4896618,
+   "lng": -1.9237629,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4896618,-1.9237629",
+   "source": "osm"
+  },
+  {
+   "nom": "Park Regis",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4729117,-1.9169846",
+   "lat": 52.4729117,
+   "lng": -1.9169846,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4729117,-1.9169846",
+   "source": "osm"
+  },
+  {
+   "nom": "Delta Hotels by Marriott Birmingham",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.472059,-1.919756",
+   "lat": 52.472059,
+   "lng": -1.919756,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.472059,-1.919756",
+   "source": "osm"
+  },
+  {
+   "nom": "Heartland Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4775956,-1.850703",
+   "lat": 52.4775956,
+   "lng": -1.850703,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4775956,-1.850703",
+   "source": "osm"
+  },
+  {
+   "nom": "Holiday Inn Express Star City",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.5022281,-1.8565642",
+   "lat": 52.5022281,
+   "lng": -1.8565642,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.5022281,-1.8565642",
+   "source": "osm"
+  },
+  {
+   "nom": "Highfield Town House",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4690228,-1.922693",
+   "lat": 52.4690228,
+   "lng": -1.922693,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4690228,-1.922693",
+   "source": "osm"
+  },
+  {
+   "nom": "The Plough And Harrow",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.472238,-1.9275043",
+   "lat": 52.472238,
+   "lng": -1.9275043,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.472238,-1.9275043",
+   "source": "osm"
+  },
+  {
+   "nom": "Plough and Harrow Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4725533,-1.9278683",
+   "lat": 52.4725533,
+   "lng": -1.9278683,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4725533,-1.9278683",
+   "source": "osm"
+  },
+  {
+   "nom": "Baloci",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4687859,-1.9234706",
+   "lat": 52.4687859,
+   "lng": -1.9234706,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4687859,-1.9234706",
+   "source": "osm"
+  },
+  {
+   "nom": "Henlon House",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.5089495,-1.9135228",
+   "lat": 52.5089495,
+   "lng": -1.9135228,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.5089495,-1.9135228",
+   "source": "osm"
+  },
+  {
+   "nom": "The Birmingham",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4632051,-1.8601673",
+   "lat": 52.4632051,
+   "lng": -1.8601673,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4632051,-1.8601673",
+   "source": "osm"
+  },
+  {
+   "nom": "Lakeside Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.458123,-1.9089024",
+   "lat": 52.458123,
+   "lng": -1.9089024,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.458123,-1.9089024",
+   "source": "osm"
+  },
+  {
+   "nom": "Birmingham Strathallan",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4722996,-1.9379673",
+   "lat": 52.4722996,
+   "lng": -1.9379673,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4722996,-1.9379673",
+   "source": "osm"
+  },
+  {
+   "nom": "The Garden House",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4716964,-1.9374884",
+   "lat": 52.4716964,
+   "lng": -1.9374884,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4716964,-1.9374884",
+   "source": "osm"
+  },
+  {
+   "nom": "Quality Hotel Cobden Suite",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4716871,-1.9385073",
+   "lat": 52.4716871,
+   "lng": -1.9385073,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4716871,-1.9385073",
+   "source": "osm"
+  },
+  {
+   "nom": "Cobden Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4714391,-1.9388602",
+   "lat": 52.4714391,
+   "lng": -1.9388602,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4714391,-1.9388602",
+   "source": "osm"
+  },
+  {
+   "nom": "Apollo Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4719977,-1.9420681",
+   "lat": 52.4719977,
+   "lng": -1.9420681,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4719977,-1.9420681",
+   "source": "osm"
+  },
+  {
+   "nom": "Chestnut Lodge",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.5134714,-1.9261056",
+   "lat": 52.5134714,
+   "lng": -1.9261056,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.5134714,-1.9261056",
+   "source": "osm"
+  },
+  {
+   "nom": "Alexandra Residential Club",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4708025,-1.9422829",
+   "lat": 52.4708025,
+   "lng": -1.9422829,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4708025,-1.9422829",
+   "source": "osm"
+  },
+  {
+   "nom": "Ackers Residential Centre",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4601189,-1.8504104",
+   "lat": 52.4601189,
+   "lng": -1.8504104,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4601189,-1.8504104",
+   "source": "osm"
+  },
+  {
+   "nom": "Charm Collection Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4720949,-1.9444145",
+   "lat": 52.4720949,
+   "lng": -1.9444145,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4720949,-1.9444145",
+   "source": "osm"
+  },
+  {
+   "nom": "Edgbaston Palace Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4712748,-1.9442434",
+   "lat": 52.4712748,
+   "lng": -1.9442434,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4712748,-1.9442434",
+   "source": "osm"
+  },
+  {
+   "nom": "Norfolk Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4720215,-1.94501",
+   "lat": 52.4720215,
+   "lng": -1.94501,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4720215,-1.94501",
+   "source": "osm"
+  },
+  {
+   "nom": "Park Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.5225925,-1.8974372",
+   "lat": 52.5225925,
+   "lng": -1.8974372,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.5225925,-1.8974372",
+   "source": "osm"
+  },
+  {
+   "nom": "Rugby House B&B",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.5164325,-1.8557578",
+   "lat": 52.5164325,
+   "lng": -1.8557578,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.5164325,-1.8557578",
+   "source": "osm"
+  },
+  {
+   "nom": "The Eaton Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4720456,-1.9467448",
+   "lat": 52.4720456,
+   "lng": -1.9467448,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4720456,-1.9467448",
+   "source": "osm"
+  },
+  {
+   "nom": "Lucas House",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4549101,-1.9254577",
+   "lat": 52.4549101,
+   "lng": -1.9254577,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4549101,-1.9254577",
+   "source": "osm"
+  },
+  {
+   "nom": "The Farcroft",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.509721,-1.9409601",
+   "lat": 52.509721,
+   "lng": -1.9409601,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.509721,-1.9409601",
+   "source": "osm"
+  },
+  {
+   "nom": "Astoria Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4726565,-1.9501145",
+   "lat": 52.4726565,
+   "lng": -1.9501145,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4726565,-1.9501145",
+   "source": "osm"
+  },
+  {
+   "nom": "Rossmore Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.5161606,-1.8498554",
+   "lat": 52.5161606,
+   "lng": -1.8498554,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.5161606,-1.8498554",
+   "source": "osm"
+  },
+  {
+   "nom": "Sheldon Houe",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.5180108,-1.9269939",
+   "lat": 52.5180108,
+   "lng": -1.9269939,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.5180108,-1.9269939",
+   "source": "osm"
+  },
+  {
+   "nom": "Edgbaston Park Hotel and Conference Centre",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4540391,-1.9278004",
+   "lat": 52.4540391,
+   "lng": -1.9278004,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.edgbastonparkhotel.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Fountain Court Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4731459,-1.9540057",
+   "lat": 52.4731459,
+   "lng": -1.9540057,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4731459,-1.9540057",
+   "source": "osm"
+  },
+  {
+   "nom": "Prince Hotel",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4734995,-1.9543996",
+   "lat": 52.4734995,
+   "lng": -1.9543996,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4734995,-1.9543996",
+   "source": "osm"
+  },
+  {
+   "nom": "President House Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4442091,-1.8817204",
+   "lat": 52.4442091,
+   "lng": -1.8817204,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4442091,-1.8817204",
+   "source": "osm"
+  },
+  {
+   "nom": "Woodlands Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4735565,-1.9577131",
+   "lat": 52.4735565,
+   "lng": -1.9577131,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4735565,-1.9577131",
+   "source": "osm"
+  },
+  {
+   "nom": "Fairlawns Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4730279,-1.9579123",
+   "lat": 52.4730279,
+   "lng": -1.9579123,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4730279,-1.9579123",
+   "source": "osm"
+  },
+  {
+   "nom": "Dormy Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4730074,-1.9586232",
+   "lat": 52.4730074,
+   "lng": -1.9586232,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4730074,-1.9586232",
+   "source": "osm"
+  },
+  {
+   "nom": "Rollason Wood Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.5179037,-1.8398425",
+   "lat": 52.5179037,
+   "lng": -1.8398425,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.5179037,-1.8398425",
+   "source": "osm"
+  },
+  {
+   "nom": "Jubilee House",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4734829,-1.9601526",
+   "lat": 52.4734829,
+   "lng": -1.9601526,
+   "halalFriendly": false,
+   "bookingUrl": "http://newrootsltd.co.uk/",
+   "source": "osm"
+  },
+  {
+   "nom": "Hagley Lodge",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4735055,-1.9617634",
+   "lat": 52.4735055,
+   "lng": -1.9617634,
+   "halalFriendly": false,
+   "bookingUrl": "https://springhousing.org.uk",
+   "source": "osm"
+  },
+  {
+   "nom": "Hagley Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€€",
+   "score": 3,
+   "mapsUrl": "https://maps.google.com/?q=52.4735592,-1.9622467",
+   "lat": 52.4735592,
+   "lng": -1.9622467,
+   "halalFriendly": false,
+   "bookingUrl": "https://hagley.hotels-birmingham.net/en/",
+   "source": "osm"
+  },
+  {
+   "nom": "The Belmont Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€€",
+   "score": 3,
+   "mapsUrl": "https://maps.google.com/?q=52.4735634,-1.9627372",
+   "lat": 52.4735634,
+   "lng": -1.9627372,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.thebelmont-hotel.co.uk/",
+   "source": "osm"
+  },
+  {
+   "nom": "Bournbrook House",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4463948,-1.9302614",
+   "lat": 52.4463948,
+   "lng": -1.9302614,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=52.4463948,-1.9302614",
+   "source": "osm"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "Shah Jalal Mosque",
+   "lat": 52.4899538,
+   "lng": -1.8556099,
+   "coordonnees": {
+    "lat": 52.4899538,
+    "lng": -1.8556099
+   },
+   "adresse": "Ralph Road",
+   "mapsUrl": "https://maps.google.com/?q=52.4899538,-1.8556099",
+   "source": "osm"
+  },
+  {
+   "nom": "Maktaba Tul Madina Dawat-E-Islami",
+   "lat": 52.47892,
+   "lng": -1.8563214,
+   "coordonnees": {
+    "lat": 52.47892,
+    "lng": -1.8563214
+   },
+   "mapsUrl": "https://maps.google.com/?q=52.47892,-1.8563214",
+   "source": "osm"
+  },
+  {
+   "nom": "Spiritual Centre Maddrassa Naqshbandiyya Nawabiyya Aslamiyya Birmingham",
+   "lat": 52.4767037,
+   "lng": -1.8572922,
+   "coordonnees": {
+    "lat": 52.4767037,
+    "lng": -1.8572922
+   },
+   "mapsUrl": "https://maps.google.com/?q=52.4767037,-1.8572922",
+   "source": "osm"
+  },
+  {
+   "nom": "Madrassa-tul-Madina Aston",
+   "lat": 52.5090738,
+   "lng": -1.890951,
+   "coordonnees": {
+    "lat": 52.5090738,
+    "lng": -1.890951
+   },
+   "adresse": "Witton Road, Birmingham",
+   "mapsUrl": "https://maps.google.com/?q=52.5090738,-1.890951",
+   "source": "osm"
+  },
+  {
+   "nom": "Jami Madina Ashiful Loom Masjid",
+   "lat": 52.4883971,
+   "lng": -1.8493971,
+   "coordonnees": {
+    "lat": 52.4883971,
+    "lng": -1.8493971
+   },
+   "mapsUrl": "https://maps.google.com/?q=52.4883971,-1.8493971",
+   "source": "osm"
+  },
+  {
+   "nom": "Salafi Masjid",
+   "lat": 52.4703405,
+   "lng": -1.8583834,
+   "coordonnees": {
+    "lat": 52.4703405,
+    "lng": -1.8583834
+   },
+   "adresse": "Wright Street, Birmingham",
+   "mapsUrl": "https://maps.google.com/?q=52.4703405,-1.8583834",
+   "source": "osm"
+  },
+  {
+   "nom": "Madrassa At Tawhad",
+   "lat": 52.470936,
+   "lng": -1.8456441,
+   "coordonnees": {
+    "lat": 52.470936,
+    "lng": -1.8456441
+   },
+   "mapsUrl": "https://maps.google.com/?q=52.470936,-1.8456441",
+   "source": "osm"
+  },
+  {
+   "nom": "Jamiat-ul-Muslimin",
+   "lat": 52.464953,
+   "lng": -1.8507167,
+   "coordonnees": {
+    "lat": 52.464953,
+    "lng": -1.8507167
+   },
+   "adresse": "Tennyson Road, Birmingham",
+   "mapsUrl": "https://maps.google.com/?q=52.464953,-1.8507167",
+   "source": "osm"
+  },
+  {
+   "nom": "Fountain of Knowledge Islamic Centre",
+   "lat": 52.4526751,
+   "lng": -1.8781306,
+   "coordonnees": {
+    "lat": 52.4526751,
+    "lng": -1.8781306
+   },
+   "adresse": "Ladypool Road, Birmingham",
+   "mapsUrl": "https://maps.google.com/?q=52.4526751,-1.8781306",
+   "source": "osm"
+  },
+  {
+   "nom": "Faizan -e-Mustafa Educational Centre",
+   "lat": 52.4562063,
+   "lng": -1.8581574,
+   "coordonnees": {
+    "lat": 52.4562063,
+    "lng": -1.8581574
+   },
+   "mapsUrl": "https://maps.google.com/?q=52.4562063,-1.8581574",
+   "source": "osm"
+  },
+  {
+   "nom": "Ghausia Mosque Trust",
+   "lat": 52.5162826,
+   "lng": -1.8562277,
+   "coordonnees": {
+    "lat": 52.5162826,
+    "lng": -1.8562277
+   },
+   "mapsUrl": "https://maps.google.com/?q=52.5162826,-1.8562277",
+   "source": "osm"
+  },
+  {
+   "nom": "Sultan Bahu Centre",
+   "lat": 52.4920688,
+   "lng": -1.8227045,
+   "coordonnees": {
+    "lat": 52.4920688,
+    "lng": -1.8227045
+   },
+   "mapsUrl": "https://maps.google.com/?q=52.4920688,-1.8227045",
+   "source": "osm"
+  },
+  {
+   "nom": "Faizan e Medina",
+   "lat": 52.478057,
+   "lng": -1.8141822,
+   "coordonnees": {
+    "lat": 52.478057,
+    "lng": -1.8141822
+   },
+   "adresse": "Richmond Road, Birmingham",
+   "mapsUrl": "https://maps.google.com/?q=52.478057,-1.8141822",
+   "source": "osm"
+  },
+  {
+   "nom": "Stechford Mosque",
+   "lat": 52.480128,
+   "lng": -1.8128745,
+   "coordonnees": {
+    "lat": 52.480128,
+    "lng": -1.8128745
+   },
+   "mapsUrl": "https://maps.google.com/?q=52.480128,-1.8128745",
+   "source": "osm"
+  },
+  {
+   "nom": "Manarat Foundation",
+   "lat": 52.4539633,
+   "lng": -1.7922472,
+   "coordonnees": {
+    "lat": 52.4539633,
+    "lng": -1.7922472
+   },
+   "adresse": "New Coventry Road, Birmingham",
+   "mapsUrl": "https://maps.google.com/?q=52.4539633,-1.7922472",
+   "source": "osm"
+  },
+  {
+   "nom": "SIEA Highlands Mosque",
+   "lat": 52.3990327,
+   "lng": -1.8064214,
+   "coordonnees": {
+    "lat": 52.3990327,
+    "lng": -1.8064214
+   },
+   "adresse": "Cranmore Avenue, Solihull",
+   "mapsUrl": "https://maps.google.com/?q=52.3990327,-1.8064214",
+   "source": "osm"
+  },
+  {
+   "nom": "Central Mosque",
+   "lat": 52.5832348,
+   "lng": -1.9704539,
+   "coordonnees": {
+    "lat": 52.5832348,
+    "lng": -1.9704539
+   },
+   "mapsUrl": "https://maps.google.com/?q=52.5832348,-1.9704539",
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Blue Plaque: Municipal Technical School",
+   "lat": 52.4866082,
+   "lng": -1.8900998,
+   "coordonnees": {
+    "lat": 52.4866082,
+    "lng": -1.8900998
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=52.4866082,-1.8900998",
+   "source": "osm"
+  },
+  {
+   "nom": "Inside 'Tempus Fugit'",
+   "lat": 52.4858774,
+   "lng": -1.8887932,
+   "coordonnees": {
+    "lat": 52.4858774,
+    "lng": -1.8887932
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=52.4858774,-1.8887932",
+   "source": "osm"
+  },
+  {
+   "nom": "Tipping Triangles",
+   "lat": 52.4870044,
+   "lng": -1.8884036,
+   "coordonnees": {
+    "lat": 52.4870044,
+    "lng": -1.8884036
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=52.4870044,-1.8884036",
+   "source": "osm"
+  },
+  {
+   "nom": "One Aston",
+   "lat": 52.4849508,
+   "lng": -1.8884755,
+   "coordonnees": {
+    "lat": 52.4849508,
+    "lng": -1.8884755
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=52.4849508,-1.8884755",
+   "source": "osm"
+  },
+  {
+   "nom": "Hebe",
+   "lat": 52.4844573,
+   "lng": -1.8921845,
+   "coordonnees": {
+    "lat": 52.4844573,
+    "lng": -1.8921845
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=52.4844573,-1.8921845",
+   "source": "osm"
+  },
+  {
+   "nom": "Drinking Fountain",
+   "lat": 52.4879648,
+   "lng": -1.8885121,
+   "coordonnees": {
+    "lat": 52.4879648,
+    "lng": -1.8885121
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=52.4879648,-1.8885121",
+   "source": "osm"
+  },
+  {
+   "nom": "Florence Nightin' Owl",
+   "lat": 52.4845116,
+   "lng": -1.8935913,
+   "coordonnees": {
+    "lat": 52.4845116,
+    "lng": -1.8935913
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=52.4845116,-1.8935913",
+   "source": "osm"
+  },
+  {
+   "nom": "Granite Boulder",
+   "lat": 52.4835632,
+   "lng": -1.8900046,
+   "coordonnees": {
+    "lat": 52.4835632,
+    "lng": -1.8900046
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=52.4835632,-1.8900046",
+   "source": "osm"
+  },
+  {
+   "nom": "Allegories of Methodist Teaching",
+   "lat": 52.4836543,
+   "lng": -1.8928492,
+   "coordonnees": {
+    "lat": 52.4836543,
+    "lng": -1.8928492
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=52.4836543,-1.8928492",
+   "source": "osm"
+  },
+  {
+   "nom": "Blue Plaque The Bull: History",
+   "lat": 52.4865301,
+   "lng": -1.8952871,
+   "coordonnees": {
+    "lat": 52.4865301,
+    "lng": -1.8952871
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=52.4865301,-1.8952871",
+   "source": "osm"
+  },
+  {
+   "nom": "Wattilisk",
+   "lat": 52.4827808,
+   "lng": -1.8927983,
+   "coordonnees": {
+    "lat": 52.4827808,
+    "lng": -1.8927983
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=52.4827808,-1.8927983",
+   "source": "osm"
+  },
+  {
+   "nom": "Inns of Court Shields",
+   "lat": 52.4837226,
+   "lng": -1.895057,
+   "coordonnees": {
+    "lat": 52.4837226,
+    "lng": -1.895057
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=52.4837226,-1.895057",
+   "source": "osm"
+  },
+  {
+   "nom": "First Health Food Store in the UK",
+   "lat": 52.4826475,
+   "lng": -1.8941272,
+   "coordonnees": {
+    "lat": 52.4826475,
+    "lng": -1.8941272
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=52.4826475,-1.8941272",
+   "source": "osm"
+  },
+  {
+   "nom": "John Feeney 1839-1905",
+   "lat": 52.4842826,
+   "lng": -1.8968322,
+   "coordonnees": {
+    "lat": 52.4842826,
+    "lng": -1.8968322
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=52.4842826,-1.8968322",
+   "source": "osm"
+  },
+  {
+   "nom": "Wesleyan Fountain",
+   "lat": 52.483084,
+   "lng": -1.8965878,
+   "coordonnees": {
+    "lat": 52.483084,
+    "lng": -1.8965878
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=52.483084,-1.8965878",
+   "source": "osm"
+  },
+  {
+   "nom": "White Curl",
+   "lat": 52.4905712,
+   "lng": -1.8859096,
+   "coordonnees": {
+    "lat": 52.4905712,
+    "lng": -1.8859096
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=52.4905712,-1.8859096",
+   "source": "osm"
+  },
+  {
+   "nom": "Moby Dick's",
+   "lat": 52.4835404,
+   "lng": -1.8830267,
+   "coordonnees": {
+    "lat": 52.4835404,
+    "lng": -1.8830267
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=52.4835404,-1.8830267",
+   "source": "osm"
+  },
+  {
+   "nom": "Snow Hill Mural",
+   "lat": 52.4830453,
+   "lng": -1.8980052,
+   "coordonnees": {
+    "lat": 52.4830453,
+    "lng": -1.8980052
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=52.4830453,-1.8980052",
+   "source": "osm"
+  },
+  {
+   "nom": "General Hospital",
+   "lat": 52.4874762,
+   "lng": -1.8998131,
+   "coordonnees": {
+    "lat": 52.4874762,
+    "lng": -1.8998131
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=52.4874762,-1.8998131",
+   "source": "osm"
+  },
+  {
+   "nom": "Allegories of Science and Art",
+   "lat": 52.4815071,
+   "lng": -1.8967514,
+   "coordonnees": {
+    "lat": 52.4815071,
+    "lng": -1.8967514
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=52.4815071,-1.8967514",
+   "source": "osm"
+  },
+  {
+   "nom": "Taylors and Lloyds commemorative plaque",
+   "lat": 52.4805085,
+   "lng": -1.8939892,
+   "coordonnees": {
+    "lat": 52.4805085,
+    "lng": -1.8939892
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=52.4805085,-1.8939892",
+   "source": "osm"
+  },
+  {
+   "nom": "The Commuter",
+   "lat": 52.4835699,
+   "lng": -1.8995035,
+   "coordonnees": {
+    "lat": 52.4835699,
+    "lng": -1.8995035
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=52.4835699,-1.8995035",
+   "source": "osm"
+  },
+  {
+   "nom": "Last Public Hanging in Birmingham",
+   "lat": 52.4845273,
+   "lng": -1.900257,
+   "coordonnees": {
+    "lat": 52.4845273,
+    "lng": -1.900257
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=52.4845273,-1.900257",
+   "source": "osm"
+  },
+  {
+   "nom": "Blue Plaque: Wesleyan Assurance Society",
+   "lat": 52.4808469,
+   "lng": -1.8957336,
+   "coordonnees": {
+    "lat": 52.4808469,
+    "lng": -1.8957336
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=52.4808469,-1.8957336",
+   "source": "osm"
+  },
+  {
+   "nom": "Joseph Priestley",
+   "lat": 52.4799595,
+   "lng": -1.8925893,
+   "coordonnees": {
+    "lat": 52.4799595,
+    "lng": -1.8925893
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=52.4799595,-1.8925893",
+   "source": "osm"
+  },
+  {
+   "nom": "Boulton & Watt Blowing Engine 1817",
+   "lat": 52.4924876,
+   "lng": -1.8881907,
+   "coordonnees": {
+    "lat": 52.4924876,
+    "lng": -1.8881907
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=52.4924876,-1.8881907",
+   "source": "osm"
+  },
+  {
+   "nom": "Gun Barrell Proof House",
+   "lat": 52.4804695,
+   "lng": -1.8849635,
+   "coordonnees": {
+    "lat": 52.4804695,
+    "lng": -1.8849635
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=52.4804695,-1.8849635",
+   "source": "osm"
+  },
+  {
+   "nom": "Fluted Column",
+   "lat": 52.4809956,
+   "lng": -1.897881,
+   "coordonnees": {
+    "lat": 52.4809956,
+    "lng": -1.897881
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=52.4809956,-1.897881",
+   "source": "osm"
+  },
+  {
+   "nom": "Madonna and Child",
+   "lat": 52.4791358,
+   "lng": -1.8902635,
+   "coordonnees": {
+    "lat": 52.4791358,
+    "lng": -1.8902635
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=52.4791358,-1.8902635",
+   "source": "osm"
+  },
+  {
+   "nom": "Heads, Beasts and Figures",
+   "lat": 52.479927,
+   "lng": -1.8963511,
+   "coordonnees": {
+    "lat": 52.479927,
+    "lng": -1.8963511
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=52.479927,-1.8963511",
+   "source": "osm"
+  },
+  {
+   "nom": "Umbra",
+   "lat": 52.4826171,
+   "lng": -1.900832,
+   "coordonnees": {
+    "lat": 52.4826171,
+    "lng": -1.900832
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=52.4826171,-1.900832",
+   "source": "osm"
+  },
+  {
+   "nom": "Bishop Gore Statue",
+   "lat": 52.4811366,
+   "lng": -1.8994207,
+   "coordonnees": {
+    "lat": 52.4811366,
+    "lng": -1.8994207
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=52.4811366,-1.8994207",
+   "source": "osm"
+  },
+  {
+   "nom": "GWR War Memorial",
+   "lat": 52.478823,
+   "lng": -1.8925811,
+   "coordonnees": {
+    "lat": 52.478823,
+    "lng": -1.8925811
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=52.478823,-1.8925811",
+   "source": "osm"
+  },
+  {
+   "nom": "Green Heart",
+   "lat": 52.4783014,
+   "lng": -1.8896981,
+   "coordonnees": {
+    "lat": 52.4783014,
+    "lng": -1.8896981
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=52.4783014,-1.8896981",
+   "source": "osm"
+  },
+  {
+   "nom": "Sir Walter Scott Bust",
+   "lat": 52.4796991,
+   "lng": -1.8980687,
+   "coordonnees": {
+    "lat": 52.4796991,
+    "lng": -1.8980687
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=52.4796991,-1.8980687",
+   "source": "osm"
+  },
+  {
+   "nom": "Frederick Rowland Emett",
+   "lat": 52.4840755,
+   "lng": -1.9033103,
+   "coordonnees": {
+    "lat": 52.4840755,
+    "lng": -1.9033103
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=52.4840755,-1.9033103",
+   "source": "osm"
+  },
+  {
+   "nom": "Blue Plaque: Birmingham Guild of Handicraft Arthur Stansfield Dixon",
+   "lat": 52.482766,
+   "lng": -1.9026229,
+   "coordonnees": {
+    "lat": 52.482766,
+    "lng": -1.9026229
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=52.482766,-1.9026229",
+   "source": "osm"
+  },
+  {
+   "nom": "William Hutton - first historian of Birmingham",
+   "lat": 52.4784542,
+   "lng": -1.8948751,
+   "coordonnees": {
+    "lat": 52.4784542,
+    "lng": -1.8948751
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=52.4784542,-1.8948751",
+   "source": "osm"
+  },
+  {
+   "nom": "Wisdom, Fortitude, Charity and Faith",
+   "lat": 52.4803498,
+   "lng": -1.9000345,
+   "coordonnees": {
+    "lat": 52.4803498,
+    "lng": -1.9000345
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=52.4803498,-1.9000345",
+   "source": "osm"
+  },
+  {
+   "nom": "Site of the Gild Hall of the Holy Cross, 1392, from 1552 to 1936 King Edward VI. School",
+   "lat": 52.4788365,
+   "lng": -1.897228,
+   "coordonnees": {
+    "lat": 52.4788365,
+    "lng": -1.897228
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=52.4788365,-1.897228",
+   "source": "osm"
+  },
+  {
+   "nom": "Equinox",
+   "lat": 52.4807826,
+   "lng": -1.9013961,
+   "coordonnees": {
+    "lat": 52.4807826,
+    "lng": -1.9013961
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=52.4807826,-1.9013961",
+   "source": "osm"
+  },
+  {
+   "nom": "Luminaire",
+   "lat": 52.4793475,
+   "lng": -1.8993741,
+   "coordonnees": {
+    "lat": 52.4793475,
+    "lng": -1.8993741
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=52.4793475,-1.8993741",
+   "source": "osm"
+  },
+  {
+   "nom": "86-1798",
+   "lat": 52.4855309,
+   "lng": -1.9048807,
+   "coordonnees": {
+    "lat": 52.4855309,
+    "lng": -1.9048807
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=52.4855309,-1.9048807",
+   "source": "osm"
+  },
+  {
+   "nom": "John Freeth, poet",
+   "lat": 52.4776008,
+   "lng": -1.8939359,
+   "coordonnees": {
+    "lat": 52.4776008,
+    "lng": -1.8939359
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=52.4776008,-1.8939359",
+   "source": "osm"
+  },
+  {
+   "nom": "Caryatids",
+   "lat": 52.4786285,
+   "lng": -1.8987471,
+   "coordonnees": {
+    "lat": 52.4786285,
+    "lng": -1.8987471
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=52.4786285,-1.8987471",
+   "source": "osm"
+  },
+  {
+   "nom": "Jewellery Quarter Gateway: ‘Made in’ Geology",
+   "lat": 52.4829582,
+   "lng": -1.9048308,
+   "coordonnees": {
+    "lat": 52.4829582,
+    "lng": -1.9048308
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=52.4829582,-1.9048308",
+   "source": "osm"
+  },
+  {
+   "nom": "Rose Window",
+   "lat": 52.4809641,
+   "lng": -1.9032144,
+   "coordonnees": {
+    "lat": 52.4809641,
+    "lng": -1.9032144
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=52.4809641,-1.9032144",
+   "source": "osm"
+  },
+  {
+   "nom": "The Guardian",
+   "lat": 52.4797484,
+   "lng": -1.9019923,
+   "coordonnees": {
+    "lat": 52.4797484,
+    "lng": -1.9019923
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=52.4797484,-1.9019923",
+   "source": "osm"
+  },
+  {
+   "nom": "Glass Artwork Entrance Feature",
+   "lat": 52.4772828,
+   "lng": -1.8962299,
+   "coordonnees": {
+    "lat": 52.4772828,
+    "lng": -1.8962299
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=52.4772828,-1.8962299",
+   "source": "osm"
+  },
+  {
+   "nom": "Timbre",
+   "lat": 52.4767938,
+   "lng": -1.8937822,
+   "coordonnees": {
+    "lat": 52.4767938,
+    "lng": -1.8937822
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=52.4767938,-1.8937822",
+   "source": "osm"
+  },
+  {
+   "nom": "John Lewis Ground Breaking June 2012",
+   "lat": 52.4777362,
+   "lng": -1.8984602,
+   "coordonnees": {
+    "lat": 52.4777362,
+    "lng": -1.8984602
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=52.4777362,-1.8984602",
+   "source": "osm"
+  },
+  {
+   "nom": "Findings Trail 🅦 FILM PROJECTOR",
+   "lat": 52.483466,
+   "lng": -1.9059797,
+   "coordonnees": {
+    "lat": 52.483466,
+    "lng": -1.9059797
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=52.483466,-1.9059797",
+   "source": "osm"
+  },
+  {
+   "nom": "Thomas Rickman's Tomb",
+   "lat": 52.4909309,
+   "lng": -1.9046958,
+   "coordonnees": {
+    "lat": 52.4909309,
+    "lng": -1.9046958
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=52.4909309,-1.9046958",
+   "source": "osm"
+  },
+  {
+   "nom": "Aesculapius",
+   "lat": 52.4815685,
+   "lng": -1.9049661,
+   "coordonnees": {
+    "lat": 52.4815685,
+    "lng": -1.9049661
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=52.4815685,-1.9049661",
+   "source": "osm"
+  },
+  {
+   "nom": "Allegory of Fame Rewarding the Arts",
+   "lat": 52.4801359,
+   "lng": -1.9037448,
+   "coordonnees": {
+    "lat": 52.4801359,
+    "lng": -1.9037448
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=52.4801359,-1.9037448",
+   "source": "osm"
+  },
+  {
+   "nom": "China Expression",
+   "lat": 52.4870405,
+   "lng": -1.9071201,
+   "coordonnees": {
+    "lat": 52.4870405,
+    "lng": -1.9071201
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=52.4870405,-1.9071201",
+   "source": "osm"
+  },
+  {
+   "nom": "Artisan Alchemy Gallery",
+   "lat": 52.4858052,
+   "lng": -1.9071792,
+   "coordonnees": {
+    "lat": 52.4858052,
+    "lng": -1.9071792
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=52.4858052,-1.9071792",
+   "source": "osm"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30",
+ "description_en": "Birmingham, in the United Kingdom, is a halal-friendly destination with a Halal Trust Score of 4.5/5. Muslim travelers will find 142 halal restaurants listed, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
+ "metaDescription_en": "Halal guide to Birmingham: 142 halal restaurants listed, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.5/5.",
+ "nom_en": "Birmingham",
+ "boucheries": [],
+ "dataPurgedAt": "2026-07-15"
 }

@@ -1,2829 +1,709 @@
 {
-  "slug": "bali",
-  "nom": "Bali",
-  "nom_arabe": "بالي",
-  "pays": "Indonésie",
-  "pays_slug": "indonesie",
-  "drapeau": "🇮🇩",
-  "region": "Asie du Sud-Est",
-  "coordonnees": {
-    "lat": -8.3405,
-    "lng": 115.092
+ "slug": "bali",
+ "nom": "Bali",
+ "nom_arabe": "بالي",
+ "pays": "Indonésie",
+ "pays_slug": "indonesie",
+ "drapeau": "🇮🇩",
+ "region": "Asie du Sud-Est",
+ "coordonnees": {
+  "lat": -8.3405,
+  "lng": 115.092
+ },
+ "score_halal": 3.5,
+ "score_securite": 4,
+ "score_famille": 4,
+ "score_budget": 4,
+ "description": {
+  "court": "L'île des dieux — destination paradisiaque avec une offre halal croissante",
+  "long": "Bali est l'une des destinations les plus emblématiques du monde. Bien que majoritairement hindoue (contrairement au reste de l'Indonésie), l'île accueille des millions de touristes musulmans et le label halal MUI y est présent dans de nombreux restaurants. Les zones de Kuta, Seminyak et Ubud proposent une offre halal solide. Les musulmans peuvent y voyager confortablement en sélectionnant les restaurants signalés halal et les hébergements appropriés. La beauté naturelle de Bali — rizières, temples, plages — en fait une destination exceptionnelle."
+ },
+ "statistiques": {
+  "mosquees": 0,
+  "restaurants_halal": 0,
+  "hotels_halal_friendly": 180,
+  "population": "4,5 millions",
+  "hotels": 26
+ },
+ "infos_pratiques": {
+  "langue": "Balinais, Bahasa Indonesia, Anglais très répandu",
+  "monnaie": "Roupie indonésienne (IDR) — 1 € ≈ 17 000 IDR",
+  "fuseau_horaire": "WITA (GMT+8)",
+  "meilleure_periode": "Avril–octobre (saison sèche)",
+  "visa": "Visa on Arrival 35 USD, 30 jours",
+  "transport": "Scooter, taxi (Gojek/Grab), voiture + chauffeur recommandée"
+ },
+ "restaurants": [],
+ "mosquees": [],
+ "hotels": [
+  {
+   "nom": "Sangiri Glamping Resort",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-8.3587825,115.1156076",
+   "lat": -8.3587825,
+   "lng": 115.1156076,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-8.3587825,115.1156076",
+   "source": "osm"
   },
-  "score_halal": 3.5,
-  "score_securite": 4,
-  "score_famille": 4,
-  "score_budget": 4,
-  "description": {
-    "court": "L'île des dieux — destination paradisiaque avec une offre halal croissante",
-    "long": "Bali est l'une des destinations les plus emblématiques du monde. Bien que majoritairement hindoue (contrairement au reste de l'Indonésie), l'île accueille des millions de touristes musulmans et le label halal MUI y est présent dans de nombreux restaurants. Les zones de Kuta, Seminyak et Ubud proposent une offre halal solide. Les musulmans peuvent y voyager confortablement en sélectionnant les restaurants signalés halal et les hébergements appropriés. La beauté naturelle de Bali — rizières, temples, plages — en fait une destination exceptionnelle."
+  {
+   "nom": "Dasa Vaya Resort",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-8.3633991,115.1217915",
+   "lat": -8.3633991,
+   "lng": 115.1217915,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-8.3633991,115.1217915",
+   "source": "osm"
   },
-  "statistiques": {
-    "mosquees": 450,
-    "restaurants_halal": 1200,
-    "hotels_halal_friendly": 180,
-    "population": "4,5 millions",
-    "hotels": 42
+  {
+   "nom": "Prana Dewi",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-8.3886255,115.109244",
+   "lat": -8.3886255,
+   "lng": 115.109244,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.balipranaresort.com/",
+   "source": "osm"
   },
-  "infos_pratiques": {
-    "langue": "Balinais, Bahasa Indonesia, Anglais très répandu",
-    "monnaie": "Roupie indonésienne (IDR) — 1 € ≈ 17 000 IDR",
-    "fuseau_horaire": "WITA (GMT+8)",
-    "meilleure_periode": "Avril–octobre (saison sèche)",
-    "visa": "Visa on Arrival 35 USD, 30 jours",
-    "transport": "Scooter, taxi (Gojek/Grab), voiture + chauffeur recommandée"
+  {
+   "nom": "Carik Tangis",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-8.3889432,115.1094667",
+   "lat": -8.3889432,
+   "lng": 115.1094667,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-8.3889432,115.1094667",
+   "source": "osm"
   },
-  "restaurants": [
-    {
-      "nom": "Warung Muslim Bali",
-      "type": "Indonésien",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Bali",
-      "description": "Malais-indonésien halal signalé à Bali.",
-      "mapsUrl": "https://maps.google.com/?q=Warung+Muslim+Bali+Bali",
-      "priceRange": "€",
-      "specialite": "Malais-indonésien halal signalé",
-      "nombreAvis": 781,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "rapide"
-      ],
-      "id": "r1",
-      "lat": -8.4557209,
-      "lng": 115.2704299,
-      "geocoded": true
-    },
-    {
-      "nom": "Locavore",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Bali",
-      "description": "Gastronomique balinais, options halal à Bali.",
-      "mapsUrl": "https://maps.google.com/?q=Locavore+Bali",
-      "priceRange": "€€€€",
-      "specialite": "Gastronomique balinais",
-      "nombreAvis": 397,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r2",
-      "lat": -8.4557209,
-      "lng": 115.2704299,
-      "geocoded": true
-    },
-    {
-      "nom": "Sardine Restaurant Bali",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Bali",
-      "description": "Rizières, gastronomique à Bali.",
-      "mapsUrl": "https://maps.google.com/?q=Sardine+Restaurant+Bali+Bali",
-      "priceRange": "€€€€",
-      "specialite": "Rizières",
-      "nombreAvis": 581,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r3",
-      "lat": -8.4557209,
-      "lng": 115.2704299,
-      "geocoded": true
-    },
-    {
-      "nom": "Sate Plecing Bali",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Bali",
-      "description": "Satay balinais halal à Bali.",
-      "mapsUrl": "https://maps.google.com/?q=Sate+Plecing+Bali+Bali",
-      "priceRange": "€€",
-      "specialite": "Satay balinais halal",
-      "nombreAvis": 2068,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r4",
-      "lat": -8.4557209,
-      "lng": 115.2704299,
-      "geocoded": true
-    },
-    {
-      "nom": "Bebek Bengil",
-      "type": "Indonésien",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Bali",
-      "description": "Canard croustillant des rizières halal-friendly à Bali.",
-      "mapsUrl": "https://maps.google.com/?q=Bebek+Bengil+Bali",
-      "priceRange": "€€",
-      "specialite": "Canard croustillant des rizières halal-friendly",
-      "nombreAvis": 1694,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r5",
-      "lat": -8.4557209,
-      "lng": 115.2704299,
-      "geocoded": true
-    },
-    {
-      "nom": "Mozaic Restaurant",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Bali",
-      "description": "Gastronomique, options halal à Bali.",
-      "mapsUrl": "https://maps.google.com/?q=Mozaic+Restaurant+Bali",
-      "priceRange": "€€€€",
-      "specialite": "Gastronomique",
-      "nombreAvis": 600,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r6",
-      "lat": -8.4557209,
-      "lng": 115.2704299,
-      "geocoded": true
-    },
-    {
-      "nom": "Ku De Ta",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Bali",
-      "description": "Gastronomique plage Seminyak à Bali.",
-      "mapsUrl": "https://maps.google.com/?q=Ku+De+Ta+Bali",
-      "priceRange": "€€€€",
-      "specialite": "Gastronomique plage seminyak",
-      "nombreAvis": 1537,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r7",
-      "lat": -8.4557209,
-      "lng": 115.2704299,
-      "geocoded": true
-    },
-    {
-      "nom": "Mejekawi",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Bali",
-      "description": "Rooftop Ku De Ta à Bali.",
-      "mapsUrl": "https://maps.google.com/?q=Mejekawi+Bali",
-      "priceRange": "€€€€",
-      "specialite": "Rooftop ku de ta",
-      "nombreAvis": 2314,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r8",
-      "lat": -8.4557209,
-      "lng": 115.2704299,
-      "geocoded": true
-    },
-    {
-      "nom": "Merah Putih Bali",
-      "type": "Indonésien",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Bali",
-      "description": "Indonésien moderne à Bali.",
-      "mapsUrl": "https://maps.google.com/?q=Merah+Putih+Bali+Bali",
-      "priceRange": "€€",
-      "specialite": "Indonésien moderne",
-      "nombreAvis": 1558,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r9",
-      "lat": -8.4557209,
-      "lng": 115.2704299,
-      "geocoded": true
-    },
-    {
-      "nom": "Kafe Batan Waru",
-      "type": "Indonésien",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Bali",
-      "description": "Indonésien halal-friendly à Bali.",
-      "mapsUrl": "https://maps.google.com/?q=Kafe+Batan+Waru+Bali",
-      "priceRange": "€€",
-      "specialite": "Indonésien halal-friendly",
-      "nombreAvis": 3214,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r10",
-      "lat": -8.4557209,
-      "lng": 115.2704299,
-      "geocoded": true
-    },
-    {
-      "nom": "Nusantara Restaurant",
-      "type": "Indonésien",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Bali",
-      "description": "Archipel halal à Bali.",
-      "mapsUrl": "https://maps.google.com/?q=Nusantara+Restaurant+Bali",
-      "priceRange": "€€",
-      "specialite": "Archipel halal",
-      "nombreAvis": 495,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r11",
-      "lat": -8.4557209,
-      "lng": 115.2704299,
-      "geocoded": true
-    },
-    {
-      "nom": "Padang Merdeka",
-      "type": "Indonésien",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Bali",
-      "description": "Padang halal Bali à Bali.",
-      "mapsUrl": "https://maps.google.com/?q=Padang+Merdeka+Bali",
-      "priceRange": "€€",
-      "specialite": "Padang halal bali",
-      "nombreAvis": 2269,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r12",
-      "lat": -8.4557209,
-      "lng": 115.2704299,
-      "geocoded": true
-    },
-    {
-      "nom": "Sari Organik Bali",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Bali",
-      "description": "Bio dans les rizières à Bali.",
-      "mapsUrl": "https://maps.google.com/?q=Sari+Organik+Bali+Bali",
-      "priceRange": "€€",
-      "specialite": "Bio dans les rizières",
-      "nombreAvis": 3487,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "veggie"
-      ],
-      "id": "r13",
-      "lat": -8.4557209,
-      "lng": 115.2704299,
-      "geocoded": true
-    },
-    {
-      "nom": "Warung Sulawesi",
-      "type": "Indonésien",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Bali",
-      "description": "Sulawesi halal signalé à Bali.",
-      "mapsUrl": "https://maps.google.com/?q=Warung+Sulawesi+Bali",
-      "priceRange": "€",
-      "specialite": "Sulawesi halal signalé",
-      "nombreAvis": 1519,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "rapide"
-      ],
-      "id": "r14",
-      "lat": -8.4557209,
-      "lng": 115.2704299,
-      "geocoded": true
-    },
-    {
-      "nom": "Rumah Makan Minang",
-      "type": "Indonésien",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Bali",
-      "description": "Padang, halal à Bali.",
-      "mapsUrl": "https://maps.google.com/?q=Rumah+Makan+Minang+Bali",
-      "priceRange": "€€",
-      "specialite": "Padang",
-      "nombreAvis": 2795,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r15",
-      "lat": -8.4557209,
-      "lng": 115.2704299,
-      "geocoded": true
-    },
-    {
-      "nom": "Bubur Ayam Bali",
-      "type": "Indonésien",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Bali",
-      "description": "Bouillie de poulet halal à Bali.",
-      "mapsUrl": "https://maps.google.com/?q=Bubur+Ayam+Bali+Bali",
-      "priceRange": "€€",
-      "specialite": "Bouillie de poulet halal",
-      "nombreAvis": 1561,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r16",
-      "lat": -8.4557209,
-      "lng": 115.2704299,
-      "geocoded": true
-    },
-    {
-      "nom": "Soto Bali Pak Dobiel",
-      "type": "Indonésien",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Bali",
-      "description": "Soupe bali halal-friendly à Bali.",
-      "mapsUrl": "https://maps.google.com/?q=Soto+Bali+Pak+Dobiel+Bali",
-      "priceRange": "€€",
-      "specialite": "Soupe bali halal-friendly",
-      "nombreAvis": 1582,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r17",
-      "lat": -8.4557209,
-      "lng": 115.2704299,
-      "geocoded": true
-    },
-    {
-      "nom": "Warung Ijo",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Bali",
-      "description": "Riz et poisson halal à Bali.",
-      "mapsUrl": "https://maps.google.com/?q=Warung+Ijo+Bali",
-      "priceRange": "€",
-      "specialite": "Riz et poisson halal",
-      "nombreAvis": 519,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "rapide",
-        "vue-mer"
-      ],
-      "id": "r18",
-      "lat": -8.4557209,
-      "lng": 115.2704299,
-      "geocoded": true
-    },
-    {
-      "nom": "Bakso Bali",
-      "type": "Indonésien",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Bali",
-      "description": "Boulettes halal à Bali.",
-      "mapsUrl": "https://maps.google.com/?q=Bakso+Bali+Bali",
-      "priceRange": "€€",
-      "specialite": "Boulettes halal",
-      "nombreAvis": 418,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r19",
-      "lat": -8.4557209,
-      "lng": 115.2704299,
-      "geocoded": true
-    },
-    {
-      "nom": "Warung Muslim Jimbaran",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Bali",
-      "description": "Poissons grillés halal à Bali.",
-      "mapsUrl": "https://maps.google.com/?q=Warung+Muslim+Jimbaran+Bali",
-      "priceRange": "€",
-      "specialite": "Poissons grillés halal",
-      "nombreAvis": 983,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "rapide",
-        "vue-mer"
-      ],
-      "id": "r20",
-      "lat": -8.4557209,
-      "lng": 115.2704299,
-      "geocoded": true
-    },
-    {
-      "nom": "Rumah Makan Pondok Sari",
-      "type": "Indonésien",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Bali",
-      "description": "Padang à Bali.",
-      "mapsUrl": "https://maps.google.com/?q=Rumah+Makan+Pondok+Sari+Bali",
-      "priceRange": "€€",
-      "specialite": "Padang",
-      "nombreAvis": 2196,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r21",
-      "lat": -8.4557209,
-      "lng": 115.2704299,
-      "geocoded": true
-    },
-    {
-      "nom": "Ayam Taliwang Bali",
-      "type": "Indonésien",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Bali",
-      "description": "Poulet épicé style Lombok à Bali.",
-      "mapsUrl": "https://maps.google.com/?q=Ayam+Taliwang+Bali+Bali",
-      "priceRange": "€€",
-      "specialite": "Poulet épicé style lombok",
-      "nombreAvis": 1216,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r22",
-      "lat": -8.4557209,
-      "lng": 115.2704299,
-      "geocoded": true
-    },
-    {
-      "nom": "Warung Semesta Ubud",
-      "type": "Indonésien",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Bali",
-      "description": "Organique halal à Bali.",
-      "mapsUrl": "https://maps.google.com/?q=Warung+Semesta+Ubud+Bali",
-      "priceRange": "€",
-      "specialite": "Organique halal",
-      "nombreAvis": 3185,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "rapide"
-      ],
-      "id": "r23",
-      "lat": -8.4557209,
-      "lng": 115.2704299,
-      "geocoded": true
-    },
-    {
-      "nom": "Clear Café Bali",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Bali",
-      "description": "Healthy halal à Bali.",
-      "mapsUrl": "https://maps.google.com/?q=Clear+Caf%C3%A9+Bali+Bali",
-      "priceRange": "€€",
-      "specialite": "Healthy halal",
-      "nombreAvis": 2329,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r24",
-      "lat": -8.4557209,
-      "lng": 115.2704299,
-      "geocoded": true
-    },
-    {
-      "nom": "Alchemy Bali",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Bali",
-      "description": "Raw food halal à Bali.",
-      "mapsUrl": "https://maps.google.com/?q=Alchemy+Bali+Bali",
-      "priceRange": "€€",
-      "specialite": "Raw food halal",
-      "nombreAvis": 114,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "veggie"
-      ],
-      "id": "r25",
-      "lat": -8.4557209,
-      "lng": 115.2704299,
-      "geocoded": true
-    },
-    {
-      "nom": "Down to Earth Cafe",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Bali",
-      "description": "Végétarien halal à Bali.",
-      "mapsUrl": "https://maps.google.com/?q=Down+to+Earth+Cafe+Bali",
-      "priceRange": "€€",
-      "specialite": "Végétarien halal",
-      "nombreAvis": 810,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r26",
-      "lat": -8.4557209,
-      "lng": 115.2704299,
-      "geocoded": true
-    },
-    {
-      "nom": "Kana Café",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Bali",
-      "description": "Brunch halal à Bali.",
-      "mapsUrl": "https://maps.google.com/?q=Kana+Caf%C3%A9+Bali",
-      "priceRange": "€€",
-      "specialite": "Brunch halal",
-      "nombreAvis": 805,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r27",
-      "lat": -8.4557209,
-      "lng": 115.2704299,
-      "geocoded": true
-    },
-    {
-      "nom": "Seminyak Kitchen",
-      "type": "Indonésien",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Bali",
-      "description": "International halal à Bali.",
-      "mapsUrl": "https://maps.google.com/?q=Seminyak+Kitchen+Bali",
-      "priceRange": "€€",
-      "specialite": "International halal",
-      "nombreAvis": 2530,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r28",
-      "lat": -8.4557209,
-      "lng": 115.2704299,
-      "geocoded": true
-    },
-    {
-      "nom": "KFC Bali",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Bali",
-      "description": "Halal Indonesia à Bali.",
-      "mapsUrl": "https://maps.google.com/?q=KFC+Bali+Bali",
-      "priceRange": "€€",
-      "specialite": "Halal indonesia",
-      "nombreAvis": 607,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r29",
-      "lat": -8.4557209,
-      "lng": 115.2704299,
-      "geocoded": true
-    },
-    {
-      "nom": "McDonald's Bali",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Bali",
-      "description": "Halal à Bali.",
-      "mapsUrl": "https://maps.google.com/?q=McDonald%27s+Bali+Bali",
-      "priceRange": "€€",
-      "specialite": "Halal",
-      "nombreAvis": 455,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r30",
-      "lat": -8.4557209,
-      "lng": 115.2704299,
-      "geocoded": true
-    },
-    {
-      "nom": "Pizza Hut Bali",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Bali",
-      "description": "Halal à Bali.",
-      "mapsUrl": "https://maps.google.com/?q=Pizza+Hut+Bali+Bali",
-      "priceRange": "€€",
-      "specialite": "Halal",
-      "nombreAvis": 973,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r31",
-      "lat": -8.4557209,
-      "lng": 115.2704299,
-      "geocoded": true
-    },
-    {
-      "nom": "Domino's Pizza Bali",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Bali",
-      "description": "Halal à Bali.",
-      "mapsUrl": "https://maps.google.com/?q=Domino%27s+Pizza+Bali+Bali",
-      "priceRange": "€€",
-      "specialite": "Halal",
-      "nombreAvis": 1003,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r32",
-      "lat": -8.4557209,
-      "lng": 115.2704299,
-      "geocoded": true
-    },
-    {
-      "nom": "Pappa Jack Bali",
-      "type": "Indonésien",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Bali",
-      "description": "Américain halal à Bali.",
-      "mapsUrl": "https://maps.google.com/?q=Pappa+Jack+Bali+Bali",
-      "priceRange": "€€",
-      "specialite": "Américain halal",
-      "nombreAvis": 600,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r33",
-      "lat": -8.4557209,
-      "lng": 115.2704299,
-      "geocoded": true
-    },
-    {
-      "nom": "Warung Nusantara Ubud",
-      "type": "Indonésien",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Bali",
-      "description": "Local halal Ubud à Bali.",
-      "mapsUrl": "https://maps.google.com/?q=Warung+Nusantara+Ubud+Bali",
-      "priceRange": "€",
-      "specialite": "Local halal ubud",
-      "nombreAvis": 2375,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "rapide"
-      ],
-      "id": "r34",
-      "lat": -8.4557209,
-      "lng": 115.2704299,
-      "geocoded": true
-    },
-    {
-      "nom": "Cuca Restaurant",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Bali",
-      "description": "Fusion végé halal à Bali.",
-      "mapsUrl": "https://maps.google.com/?q=Cuca+Restaurant+Bali",
-      "priceRange": "€€",
-      "specialite": "Fusion végé halal",
-      "nombreAvis": 1054,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "veggie"
-      ],
-      "id": "r35",
-      "lat": -8.4557209,
-      "lng": 115.2704299,
-      "geocoded": true
-    },
-    {
-      "nom": "Chez Gado Gado",
-      "type": "Indonésien",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Bali",
-      "description": "Indonésien halal à Bali.",
-      "mapsUrl": "https://maps.google.com/?q=Chez+Gado+Gado+Bali",
-      "priceRange": "€€",
-      "specialite": "Indonésien halal",
-      "nombreAvis": 2000,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r36",
-      "lat": -8.4557209,
-      "lng": 115.2704299,
-      "geocoded": true
-    },
-    {
-      "nom": "Bambu Restaurant Bali",
-      "type": "Indonésien",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Bali",
-      "description": "Authentique, bambou à Bali.",
-      "mapsUrl": "https://maps.google.com/?q=Bambu+Restaurant+Bali+Bali",
-      "priceRange": "€€",
-      "specialite": "Authentique",
-      "nombreAvis": 416,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r37",
-      "lat": -8.4557209,
-      "lng": 115.2704299,
-      "geocoded": true
-    },
-    {
-      "nom": "Sushi Kyoto Bali",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Bali",
-      "description": "Japonais halal signalé à Bali.",
-      "mapsUrl": "https://maps.google.com/?q=Sushi+Kyoto+Bali+Bali",
-      "priceRange": "€€",
-      "specialite": "Japonais halal signalé",
-      "nombreAvis": 1399,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r38",
-      "lat": -8.4557209,
-      "lng": 115.2704299,
-      "geocoded": true
-    }
-  ],
-  "mosquees": [
-    {
-      "id": "m-001",
-      "nom": "Masjid Agung Bali (Denpasar)",
-      "adresse": "Jl. Masjid Agung, Denpasar",
-      "type": "Grande mosquée provinciale",
-      "capacite": 15000,
-      "annee_construction": 1977,
-      "style_architectural": "Islamique avec éléments balinais",
-      "note": 4.8
-    },
-    {
-      "id": "m-002",
-      "nom": "Masjid Mujahidin (Kuta)",
-      "adresse": "Jl. Patimura, Kuta",
-      "type": "Mosquée touristique centrale",
-      "capacite": 3000,
-      "annee_construction": 1985,
-      "style_architectural": "Islamique classique",
-      "note": 4.6
-    },
-    {
-      "id": "m-003",
-      "nom": "Masjid An-Nur (Seminyak)",
-      "adresse": "Seminyak, Bali",
-      "type": "Mosquée de quartier",
-      "capacite": 1500,
-      "annee_construction": 1995,
-      "style_architectural": "Contemporain",
-      "note": 4.5
-    },
-    {
-      "id": "m-004",
-      "nom": "Masjid Al-Ikhlas (Ubud)",
-      "adresse": "Jl. Raya Ubud",
-      "type": "Mosquée pour touristes musulmans",
-      "capacite": 800,
-      "annee_construction": 2000,
-      "style_architectural": "Simple, moderne",
-      "note": 4.4
-    },
-    {
-      "id": "m-005",
-      "nom": "Masjid Baitul Makmur (Nusa Dua)",
-      "adresse": "Nusa Dua Resort Area",
-      "type": "Mosquée de resort",
-      "capacite": 2000,
-      "annee_construction": 1992,
-      "style_architectural": "Islamique-balinais",
-      "note": 4.7
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "The Apurva Kempinski Bali",
-      "categorie": "Luxe",
-      "score": 4.8,
-      "adresse": "Bali",
-      "description": "Ultra-luxe à Bali.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=The+Apurva+Kempinski+Bali+Bali",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bali&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bali",
-      "priceRange": "€€€€",
-      "nombreAvis": 1103,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h1",
-      "lat": -8.8290765,
-      "lng": 115.2164665
-    },
-    {
-      "nom": "Amandari Ubud",
-      "categorie": "Luxe",
-      "score": 4.5,
-      "adresse": "Bali",
-      "description": "Ultra-luxe à Bali.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Amandari+Ubud+Bali",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bali&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bali",
-      "priceRange": "€€€€",
-      "nombreAvis": 2075,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h3",
-      "lat": -8.4886802,
-      "lng": 115.2447463
-    },
-    {
-      "nom": "COMO Uma Ubud",
-      "categorie": "Luxe",
-      "score": 4.5,
-      "adresse": "Bali",
-      "description": "Luxe à Bali.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=COMO+Uma+Ubud+Bali",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bali&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bali",
-      "priceRange": "€€€€",
-      "nombreAvis": 2314,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h4",
-      "lat": -8.4920407,
-      "lng": 115.2534315
-    },
-    {
-      "nom": "Alila Villas Uluwatu",
-      "categorie": "Resort & Spa",
-      "score": 4.5,
-      "adresse": "Bali",
-      "description": "Luxe à Bali.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Alila+Villas+Uluwatu+Bali",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bali&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bali",
-      "priceRange": "€€€€",
-      "nombreAvis": 984,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "piscine-non-mixte",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "spa-femmes",
-        "wifi"
-      ],
-      "id": "h5",
-      "lat": -8.8441965,
-      "lng": 115.135889
-    },
-    {
-      "nom": "W Bali Seminyak",
-      "categorie": "Luxe",
-      "score": 4.7,
-      "adresse": "Bali",
-      "description": "Luxe à Bali.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=W+Bali+Seminyak+Bali",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bali&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bali",
-      "priceRange": "€€€€",
-      "nombreAvis": 1590,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h6",
-      "lat": -8.6771681,
-      "lng": 115.1497352
-    },
-    {
-      "nom": "Padma Resort Bali Legian",
-      "categorie": "Resort & Spa",
-      "score": 4.8,
-      "adresse": "Bali",
-      "description": "Luxe halal-friendly à Bali.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Padma+Resort+Bali+Legian+Bali",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bali&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bali",
-      "priceRange": "€€€€",
-      "nombreAvis": 2307,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "piscine-non-mixte",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "spa-femmes",
-        "wifi"
-      ],
-      "id": "h7",
-      "lat": -8.7049441,
-      "lng": 115.1664924
-    },
-    {
-      "nom": "Potato Head Suites Bali",
-      "categorie": "Riad & Boutique",
-      "score": 4.7,
-      "adresse": "Bali",
-      "description": "Boutique à Bali.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Potato+Head+Suites+Bali+Bali",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bali&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bali",
-      "priceRange": "€€€",
-      "nombreAvis": 2486,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h8",
-      "lat": -8.6790888,
-      "lng": 115.1507996
-    },
-    {
-      "nom": "Ibis Styles Bali Legian",
-      "categorie": "Budget",
-      "score": 4.5,
-      "adresse": "Bali",
-      "description": "Budget à Bali.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Ibis+Styles+Bali+Legian+Bali",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bali&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bali",
-      "priceRange": "€€",
-      "nombreAvis": 1080,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h9",
-      "lat": -8.7036216,
-      "lng": 115.1686139
-    },
-    {
-      "nom": "Kuta Central Park Hotel",
-      "categorie": "Budget",
-      "score": 4.6,
-      "adresse": "Bali",
-      "description": "Budget à Bali.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Kuta+Central+Park+Hotel+Bali",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bali&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bali",
-      "priceRange": "€€",
-      "nombreAvis": 2107,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h10",
-      "lat": -8.7106661,
-      "lng": 115.1793746
-    },
-    {
-      "nom": "Grand Plaza Bali",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Bali",
-      "description": "Hébergement halal-friendly à Bali.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Bali+Bali",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bali&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bali",
-      "priceRange": "€€€€",
-      "nombreAvis": 2183,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h11",
-      "lat": -8.7339387,
-      "lng": 115.1673843
-    },
-    {
-      "nom": "Budget Inn Bali",
-      "categorie": "Budget",
-      "score": 4.2,
-      "adresse": "Bali",
-      "description": "Hébergement halal-friendly à Bali.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Budget+Inn+Bali+Bali",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bali&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bali",
-      "priceRange": "€€",
-      "nombreAvis": 2373,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h14",
-      "lat": -8.7166232,
-      "lng": 115.1733282
-    },
-    {
-      "nom": "Sangiri Glamping Resort",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-8.3587825,115.1156076",
-      "lat": -8.3587825,
-      "lng": 115.1156076,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-8.3587825,115.1156076",
-      "source": "osm"
-    },
-    {
-      "nom": "Dasa Vaya Resort",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-8.3633991,115.1217915",
-      "lat": -8.3633991,
-      "lng": 115.1217915,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-8.3633991,115.1217915",
-      "source": "osm"
-    },
-    {
-      "nom": "Prana Dewi",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-8.3886255,115.109244",
-      "lat": -8.3886255,
-      "lng": 115.109244,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.balipranaresort.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Carik Tangis",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-8.3889432,115.1094667",
-      "lat": -8.3889432,
-      "lng": 115.1094667,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-8.3889432,115.1094667",
-      "source": "osm"
-    },
-    {
-      "nom": "Kubu D'ume homestay",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-8.3870684,115.1148566",
-      "lat": -8.3870684,
-      "lng": 115.1148566,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-8.3870684,115.1148566",
-      "source": "osm"
-    },
-    {
-      "nom": "loka cita eco lodge",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-8.3943159,115.1052646",
-      "lat": -8.3943159,
-      "lng": 115.1052646,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-8.3943159,115.1052646",
-      "source": "osm"
-    },
-    {
-      "nom": "Munduk Heaven Luxury Villas",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-8.2859874,115.0813671",
-      "lat": -8.2859874,
-      "lng": 115.0813671,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-8.2859874,115.0813671",
-      "source": "osm"
-    },
-    {
-      "nom": "Mengesta",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-8.385055,115.1256083",
-      "lat": -8.385055,
-      "lng": 115.1256083,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-8.385055,115.1256083",
-      "source": "osm"
-    },
-    {
-      "nom": "Tepi Sawah Lodge & Retreat",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-8.3957382,115.1039854",
-      "lat": -8.3957382,
-      "lng": 115.1039854,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-8.3957382,115.1039854",
-      "source": "osm"
-    },
-    {
-      "nom": "D'Ume Bendoel",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-8.3926134,115.1163965",
-      "lat": -8.3926134,
-      "lng": 115.1163965,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-8.3926134,115.1163965",
-      "source": "osm"
-    },
-    {
-      "nom": "Kubu D'ume",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-8.3922858,115.1223539",
-      "lat": -8.3922858,
-      "lng": 115.1223539,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-8.3922858,115.1223539",
-      "source": "osm"
-    },
-    {
-      "nom": "Mountain hill house",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-8.399479,115.076552",
-      "lat": -8.399479,
-      "lng": 115.076552,
-      "halalFriendly": false,
-      "bookingUrl": "http://www.mountainhillhouse.com",
-      "source": "osm"
-    },
-    {
-      "nom": "Sanda Boutique Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€€",
-      "score": 3,
-      "mapsUrl": "https://maps.google.com/?q=-8.3615092,115.0300551",
-      "lat": -8.3615092,
-      "lng": 115.0300551,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-8.3615092,115.0300551",
-      "source": "osm"
-    },
-    {
-      "nom": "Munduk Menir Villas",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-8.2734491,115.0826186",
-      "lat": -8.2734491,
-      "lng": 115.0826186,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-8.2734491,115.0826186",
-      "source": "osm"
-    },
-    {
-      "nom": "Terrasse du Lac Tamblingan",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-8.2679776,115.0877092",
-      "lat": -8.2679776,
-      "lng": 115.0877092,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.booking.com/Share-YXTyNB",
-      "source": "osm"
-    },
-    {
-      "nom": "Gangga",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-8.2755496,115.0585009",
-      "lat": -8.2755496,
-      "lng": 115.0585009,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-8.2755496,115.0585009",
-      "source": "osm"
-    },
-    {
-      "nom": "Gangga Homestay",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-8.2755252,115.0585057",
-      "lat": -8.2755252,
-      "lng": 115.0585057,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-8.2755252,115.0585057",
-      "source": "osm"
-    },
-    {
-      "nom": "Kebun Kita Bali",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-8.3539007,115.0162434",
-      "lat": -8.3539007,
-      "lng": 115.0162434,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-8.3539007,115.0162434",
-      "source": "osm"
-    },
-    {
-      "nom": "Atas awan - above the clouds",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-8.339327,115.1694731",
-      "lat": -8.339327,
-      "lng": 115.1694731,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-8.339327,115.1694731",
-      "source": "osm"
-    },
-    {
-      "nom": "Bali Bening",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-8.266519,115.0631347",
-      "lat": -8.266519,
-      "lng": 115.0631347,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.villabalibening.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Made darma",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-8.2685785,115.057585",
-      "lat": -8.2685785,
-      "lng": 115.057585,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-8.2685785,115.057585",
-      "source": "osm"
-    },
-    {
-      "nom": "Bintang Munduk",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-8.2648325,115.0658124",
-      "lat": -8.2648325,
-      "lng": 115.0658124,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.booking.com/hotel/id/bintang-munduk.pl.html",
-      "source": "osm"
-    },
-    {
-      "nom": "Villa 2 bintang",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-8.2646572,115.0659838",
-      "lat": -8.2646572,
-      "lng": 115.0659838,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-8.2646572,115.0659838",
-      "source": "osm"
-    },
-    {
-      "nom": "Kanaya Homestay",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-8.2671003,115.0587154",
-      "lat": -8.2671003,
-      "lng": 115.0587154,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-8.2671003,115.0587154",
-      "source": "osm"
-    },
-    {
-      "nom": "Munduk Farmhouse",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-8.2604494,115.0829506",
-      "lat": -8.2604494,
-      "lng": 115.0829506,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-8.2604494,115.0829506",
-      "source": "osm"
-    },
-    {
-      "nom": "Edy Homestay",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=-8.267389,115.0572312",
-      "lat": -8.267389,
-      "lng": 115.0572312,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=-8.267389,115.0572312",
-      "source": "osm"
-    },
-    {
-      "nom": "Four Seasons Resort Bali at Sayan",
-      "categorie": "Luxe",
-      "score": 4.7,
-      "adresse": "Bali",
-      "description": "Ultra-luxe à Bali.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Four+Seasons+Resort+Bali+at+Sayan+Bali",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bali&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bali",
-      "priceRange": "€€€€",
-      "nombreAvis": 730,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h2"
-    },
-    {
-      "nom": "City Comfort Bali",
-      "categorie": "Standard",
-      "score": 4.4,
-      "adresse": "Bali",
-      "description": "Hébergement halal-friendly à Bali.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Bali+Bali",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bali&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bali",
-      "priceRange": "€€€",
-      "nombreAvis": 1355,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h12"
-    },
-    {
-      "nom": "Boutique Dar Bali",
-      "categorie": "Riad & Boutique",
-      "score": 4.3,
-      "adresse": "Bali",
-      "description": "Hébergement halal-friendly à Bali.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Bali+Bali",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bali&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bali",
-      "priceRange": "€€€",
-      "nombreAvis": 786,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h13"
-    },
-    {
-      "nom": "Seaside Resort Bali",
-      "categorie": "Resort & Spa",
-      "score": 4.5,
-      "adresse": "Bali",
-      "description": "Hébergement halal-friendly à Bali.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Seaside+Resort+Bali+Bali",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bali&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bali",
-      "priceRange": "€€€€",
-      "nombreAvis": 2368,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "piscine-non-mixte",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "spa-femmes",
-        "wifi"
-      ],
-      "id": "h15"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Rizières de Tegallalang (Ubud)",
-      "type": "Nature",
-      "duree": "2h",
-      "prix": "Donation 15 000 IDR",
-      "note": 4.8,
-      "categorie": "Nature & Plein air",
-      "mapsUrl": "https://maps.google.com/?q=Rizi%C3%A8res+de+Tegallalang+%28Ubud%29+Bali",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Rizi%C3%A8res+de+Tegallalang+%28Ubud%29+Bali",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a2",
-      "nom": "Temple Tanah Lot (coucher de soleil)",
-      "type": "Culture (temple hindou)",
-      "duree": "2h",
-      "prix": "60 000 IDR",
-      "note": 4.7,
-      "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Temple+Tanah+Lot+%28coucher+de+soleil%29+Bali",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Temple+Tanah+Lot+%28coucher+de+soleil%29+Bali",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a3",
-      "nom": "Volcane Mont Batur (trek lever de soleil)",
-      "type": "Randonnée",
-      "duree": "6h (départ 2h du matin)",
-      "prix": "350 000–500 000 IDR avec guide",
-      "note": 4.9,
-      "categorie": "Nature & Plein air",
-      "mapsUrl": "https://maps.google.com/?q=Volcane+Mont+Batur+%28trek+lever+de+soleil%29+Bali",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Volcane+Mont+Batur+%28trek+lever+de+soleil%29+Bali",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a4",
-      "nom": "Plage de Seminyak & Kuta",
-      "type": "Plage",
-      "duree": "Journée",
-      "prix": "Gratuit",
-      "note": 4.5,
-      "categorie": "Nature & Plein air",
-      "mapsUrl": "https://maps.google.com/?q=Plage+de+Seminyak+%26+Kuta+Bali",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Plage+de+Seminyak+%26+Kuta+Bali",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a5",
-      "nom": "Snorkeling à Nusa Penida",
-      "type": "Sports nautiques",
-      "duree": "Journée",
-      "prix": "500 000–800 000 IDR",
-      "note": 4.9,
-      "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Snorkeling+%C3%A0+Nusa+Penida+Bali",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Snorkeling+%C3%A0+Nusa+Penida+Bali",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "lat": -8.6775762,
-      "lng": 115.5219655,
-      "geocoded": true
-    },
-    {
-      "id": "a6",
-      "nom": "Ubud Market & Monkey Forest",
-      "type": "Culture & nature",
-      "duree": "3h",
-      "prix": "80 000 IDR Monkey Forest",
-      "note": 4.6,
-      "categorie": "Nature & Plein air",
-      "mapsUrl": "https://maps.google.com/?q=Ubud+Market+%26+Monkey+Forest+Bali",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Ubud+Market+%26+Monkey+Forest+Bali",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a7",
-      "nom": "Spa et massage balinais halal",
-      "type": "Bien-être",
-      "duree": "1–2h",
-      "prix": "150 000–400 000 IDR",
-      "note": 4.8,
-      "categorie": "Hammam & Bien-être",
-      "mapsUrl": "https://maps.google.com/?q=Spa+et+massage+balinais+halal+Bali",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Spa+et+massage+balinais+halal+Bali",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a8",
-      "nom": "Cours de cuisine balinaise halal",
-      "type": "Gastronomie",
-      "duree": "4h",
-      "prix": "300 000–500 000 IDR",
-      "note": 4.8,
-      "categorie": "Gastronomie",
-      "mapsUrl": "https://maps.google.com/?q=Cours+de+cuisine+balinaise+halal+Bali",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Cours+de+cuisine+balinaise+halal+Bali",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Quartier historique de Bali",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Bali+Bali",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Bali+Bali",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a9"
-    },
-    {
-      "nom": "Grand marché central de Bali",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Bali+Bali",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Bali+Bali",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a10"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Bali",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Bali+Bali",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Bali+Bali",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a11"
-    },
-    {
-      "nom": "Musée de la ville de Bali",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Bali+Bali",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Bali+Bali",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a12"
-    },
-    {
-      "nom": "Food tour halal de Bali",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Bali+Bali",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Bali+Bali",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a13"
-    },
-    {
-      "nom": "Hammam traditionnel de Bali",
-      "categorie": "Bien-être & Spa",
-      "description": "Bain de vapeur et gommage selon la tradition orientale.",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Bali+Bali",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Bali+Bali",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a14"
-    },
-    {
-      "nom": "Mosquée historique de Bali",
-      "categorie": "Religieux & Spirituel",
-      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Bali+Bali",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Bali+Bali",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a15"
-    },
-    {
-      "nom": "Parc et jardins de Bali",
-      "categorie": "Nature & Aventure",
-      "description": "Espace vert paisible idéal pour les familles.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Bali+Bali",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Bali+Bali",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a16"
-    },
-    {
-      "nom": "Centre commercial halal-friendly de Bali",
-      "categorie": "Shopping & Souks",
-      "description": "Grand mall avec salle de prière et food court halal.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Bali+Bali",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Bali+Bali",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a17"
-    },
-    {
-      "nom": "Atelier d'artisanat local de Bali",
-      "categorie": "Art & Musées",
-      "description": "Découverte des savoir-faire traditionnels de la région.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Bali+Bali",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Bali+Bali",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a18"
-    },
-    {
-      "nom": "Quartier historique de Bali 10",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Bali+10+Bali",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Bali+10+Bali",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a19"
-    },
-    {
-      "nom": "Grand marché central de Bali 11",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Bali+11+Bali",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Bali+11+Bali",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a20"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Bali 12",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Bali+12+Bali",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Bali+12+Bali",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a21"
-    },
-    {
-      "nom": "Musée de la ville de Bali 13",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Bali+13+Bali",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Bali+13+Bali",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a22"
-    },
-    {
-      "nom": "Food tour halal de Bali 14",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Bali+14+Bali",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Bali+14+Bali",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a23"
-    },
-    {
-      "nom": "Hammam traditionnel de Bali 15",
-      "categorie": "Bien-être & Spa",
-      "description": "Bain de vapeur et gommage selon la tradition orientale.",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Bali+15+Bali",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Bali+15+Bali",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a24"
-    },
-    {
-      "nom": "Mosquée historique de Bali 16",
-      "categorie": "Religieux & Spirituel",
-      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Bali+16+Bali",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Bali+16+Bali",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a25"
-    },
-    {
-      "nom": "Parc et jardins de Bali 17",
-      "categorie": "Nature & Aventure",
-      "description": "Espace vert paisible idéal pour les familles.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Bali+17+Bali",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Bali+17+Bali",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a26"
-    },
-    {
-      "nom": "Centre commercial halal-friendly de Bali 18",
-      "categorie": "Shopping & Souks",
-      "description": "Grand mall avec salle de prière et food court halal.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Bali+18+Bali",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Bali+18+Bali",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a27"
-    },
-    {
-      "nom": "Atelier d'artisanat local de Bali 19",
-      "categorie": "Art & Musées",
-      "description": "Découverte des savoir-faire traditionnels de la région.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Bali+19+Bali",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Bali+19+Bali",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a28"
-    },
-    {
-      "nom": "Quartier historique de Bali 20",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Bali+20+Bali",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Bali+20+Bali",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a29"
-    },
-    {
-      "nom": "Grand marché central de Bali 21",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Bali+21+Bali",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Bali+21+Bali",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a30"
-    },
-    {
-      "nom": "Shrine",
-      "lat": -8.3288076,
-      "lng": 115.0713432,
-      "coordonnees": {
-        "lat": -8.3288076,
-        "lng": 115.0713432
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-8.3288076,115.0713432",
-      "source": "osm"
-    },
-    {
-      "nom": "Shiva temple",
-      "lat": -8.3281131,
-      "lng": 115.0653981,
-      "coordonnees": {
-        "lat": -8.3281131,
-        "lng": 115.0653981
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-8.3281131,115.0653981",
-      "source": "osm"
-    },
-    {
-      "nom": "Pura Luhur Batukaru",
-      "lat": -8.3726461,
-      "lng": 115.1027505,
-      "coordonnees": {
-        "lat": -8.3726461,
-        "lng": 115.1027505
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-8.3726461,115.1027505",
-      "source": "osm"
-    },
-    {
-      "nom": "Air Panas Angseri",
-      "lat": -8.3555514,
-      "lng": 115.156705,
-      "coordonnees": {
-        "lat": -8.3555514,
-        "lng": 115.156705
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-8.3555514,115.156705",
-      "source": "osm"
-    },
-    {
-      "nom": "Banyan tree",
-      "lat": -8.2808517,
-      "lng": 115.0554567,
-      "coordonnees": {
-        "lat": -8.2808517,
-        "lng": 115.0554567
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-8.2808517,115.0554567",
-      "source": "osm"
-    },
-    {
-      "nom": "Entrance of the recreation park",
-      "lat": -8.2685467,
-      "lng": 115.0902633,
-      "coordonnees": {
-        "lat": -8.2685467,
-        "lng": 115.0902633
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-8.2685467,115.0902633",
-      "source": "osm"
-    },
-    {
-      "nom": "Rizières Dayang, terrasses",
-      "lat": -8.2725286,
-      "lng": 115.0613632,
-      "coordonnees": {
-        "lat": -8.2725286,
-        "lng": 115.0613632
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-8.2725286,115.0613632",
-      "source": "osm"
-    },
-    {
-      "nom": "Munduk Escape",
-      "lat": -8.2664617,
-      "lng": 115.0815743,
-      "coordonnees": {
-        "lat": -8.2664617,
-        "lng": 115.0815743
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-8.2664617,115.0815743",
-      "source": "osm"
-    },
-    {
-      "nom": "tamblingan lake",
-      "lat": -8.2640757,
-      "lng": 115.0910031,
-      "coordonnees": {
-        "lat": -8.2640757,
-        "lng": 115.0910031
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=-8.2640757,115.0910031",
-      "source": "osm"
-    },
-    {
-      "nom": "Rice terrace",
-      "lat": -8.2793409,
-      "lng": 115.0382718,
-      "coordonnees": {
-        "lat": -8.2793409,
-        "lng": 115.0382718
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=-8.2793409,115.0382718",
-      "source": "osm"
-    },
-    {
-      "nom": "The View Restoran",
-      "lat": -8.2597471,
-      "lng": 115.0803617,
-      "coordonnees": {
-        "lat": -8.2597471,
-        "lng": 115.0803617
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=-8.2597471,115.0803617",
-      "source": "osm"
-    },
-    {
-      "nom": "Gunung Tapak",
-      "lat": -8.2705078,
-      "lng": 115.1385786,
-      "coordonnees": {
-        "lat": -8.2705078,
-        "lng": 115.1385786
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=-8.2705078,115.1385786",
-      "source": "osm"
-    },
-    {
-      "nom": "Far View To Waterfall",
-      "lat": -8.2610504,
-      "lng": 115.0604616,
-      "coordonnees": {
-        "lat": -8.2610504,
-        "lng": 115.0604616
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=-8.2610504,115.0604616",
-      "source": "osm"
-    },
-    {
-      "nom": "Patung Sang Rama & Dewi Sita",
-      "lat": -8.2807889,
-      "lng": 115.1559623,
-      "coordonnees": {
-        "lat": -8.2807889,
-        "lng": 115.1559623
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-8.2807889,115.1559623",
-      "source": "osm"
-    },
-    {
-      "nom": "Patung Kumbakarna Laga",
-      "lat": -8.2788714,
-      "lng": 115.154081,
-      "coordonnees": {
-        "lat": -8.2788714,
-        "lng": 115.154081
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-8.2788714,115.154081",
-      "source": "osm"
-    },
-    {
-      "nom": "Patung Jatayu & Rahwana",
-      "lat": -8.279395,
-      "lng": 115.1550209,
-      "coordonnees": {
-        "lat": -8.279395,
-        "lng": 115.1550209
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-8.279395,115.1550209",
-      "source": "osm"
-    },
-    {
-      "nom": "Waterfall",
-      "lat": -8.2540398,
-      "lng": 115.0790996,
-      "coordonnees": {
-        "lat": -8.2540398,
-        "lng": 115.0790996
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=-8.2540398,115.0790996",
-      "source": "osm"
-    },
-    {
-      "nom": "Taman Mawar",
-      "lat": -8.2782001,
-      "lng": 115.1550444,
-      "coordonnees": {
-        "lat": -8.2782001,
-        "lng": 115.1550444
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=-8.2782001,115.1550444",
-      "source": "osm"
-    },
-    {
-      "nom": "Carnivorous plants",
-      "lat": -8.2792844,
-      "lng": 115.1567577,
-      "coordonnees": {
-        "lat": -8.2792844,
-        "lng": 115.1567577
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=-8.2792844,115.1567577",
-      "source": "osm"
-    },
-    {
-      "nom": "Dinosaur shadehouse",
-      "lat": -8.2758747,
-      "lng": 115.1537382,
-      "coordonnees": {
-        "lat": -8.2758747,
-        "lng": 115.1537382
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-8.2758747,115.1537382",
-      "source": "osm"
-    },
-    {
-      "nom": "Памятник кукурузе",
-      "lat": -8.2836913,
-      "lng": 115.1618063,
-      "coordonnees": {
-        "lat": -8.2836913,
-        "lng": 115.1618063
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=-8.2836913,115.1618063",
-      "source": "osm"
-    },
-    {
-      "nom": "Taman Bambu",
-      "lat": -8.2761233,
-      "lng": 115.1566597,
-      "coordonnees": {
-        "lat": -8.2761233,
-        "lng": 115.1566597
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=-8.2761233,115.1566597",
-      "source": "osm"
-    },
-    {
-      "nom": "Pemandangan Danau",
-      "lat": -8.2715355,
-      "lng": 115.156337,
-      "coordonnees": {
-        "lat": -8.2715355,
-        "lng": 115.156337
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=-8.2715355,115.156337",
-      "source": "osm"
-    },
-    {
-      "nom": "Twin Lakes Viewpoint",
-      "lat": -8.2466659,
-      "lng": 115.1000751,
-      "coordonnees": {
-        "lat": -8.2466659,
-        "lng": 115.1000751
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=-8.2466659,115.1000751",
-      "source": "osm"
-    },
-    {
-      "nom": "Twin Lake",
-      "lat": -8.2461063,
-      "lng": 115.1007843,
-      "coordonnees": {
-        "lat": -8.2461063,
-        "lng": 115.1007843
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=-8.2461063,115.1007843",
-      "source": "osm"
-    },
-    {
-      "nom": "ᬘᬦ᭄ᬤᬶᬩᬾᬦ᭄ᬢᬃᬧᬸᬭᬉᬮᬸᬦ᭄ᬤᬦᬸᬩᭂᬭᬢᬦ᭄᭟ Gapura Candi Bentar Pura Ulun Danu Beratan",
-      "lat": -8.2756846,
-      "lng": 115.1659731,
-      "coordonnees": {
-        "lat": -8.2756846,
-        "lng": 115.1659731
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=-8.2756846,115.1659731",
-      "source": "osm"
-    },
-    {
-      "nom": "Pinge Village",
-      "lat": -8.3856914,
-      "lng": 115.1801504,
-      "coordonnees": {
-        "lat": -8.3856914,
-        "lng": 115.1801504
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-8.3856914,115.1801504",
-      "source": "osm"
-    },
-    {
-      "nom": "Free entrance to temple",
-      "lat": -8.2735608,
-      "lng": 115.166408,
-      "coordonnees": {
-        "lat": -8.2735608,
-        "lng": 115.166408
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-8.2735608,115.166408",
-      "source": "osm"
-    },
-    {
-      "nom": "Lookout to Denpasar",
-      "lat": -8.4376461,
-      "lng": 115.0698727,
-      "coordonnees": {
-        "lat": -8.4376461,
-        "lng": 115.0698727
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=-8.4376461,115.0698727",
-      "source": "osm"
-    },
-    {
-      "nom": "Fishfarm",
-      "lat": -8.245651,
-      "lng": 115.1256647,
-      "coordonnees": {
-        "lat": -8.245651,
-        "lng": 115.1256647
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=-8.245651,115.1256647",
-      "source": "osm"
-    }
-  ],
-  "codeISO": "ID",
-  "image": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1600&q=80",
-  "continent": "Asie",
-  "metaDescription": "Restaurants halal signalés, mosquées et guide pratique pour Bali — Halal Trust Score 4/5.",
-  "image_hero": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1600&q=80",
-  "mosqueesPrincipales": [
-    {
-      "nom": "Mosquée centrale de Bali",
-      "description": "Mosquée fréquentée de Bali, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Bali",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Bali+Bali",
-      "capacite": 1865,
-      "anneeConstruction": 1885,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": -8.3405,
-        "lng": 115.092
-      }
-    },
-    {
-      "nom": "Grande Mosquée de Bali",
-      "description": "Mosquée fréquentée de Bali, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Bali",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Bali+Bali",
-      "capacite": 2079,
-      "anneeConstruction": 1959,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": -8.3405,
-        "lng": 115.092
-      }
-    },
-    {
-      "nom": "Mosquée Al-Noor de Bali",
-      "description": "Mosquée fréquentée de Bali, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Bali",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Bali+Bali",
-      "capacite": 1901,
-      "anneeConstruction": 1921,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": -8.3405,
-        "lng": 115.092
-      }
-    },
-    {
-      "nom": "Mosquée Al-Salam de Bali",
-      "description": "Mosquée fréquentée de Bali, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Bali",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Bali+Bali",
-      "capacite": 2903,
-      "anneeConstruction": 1883,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": -8.3405,
-        "lng": 115.092
-      }
-    },
-    {
-      "nom": "Mosquée Al-Rahma de Bali",
-      "description": "Mosquée fréquentée de Bali, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Bali",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Bali+Bali",
-      "capacite": 3169,
-      "anneeConstruction": 1989,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": -8.3405,
-        "lng": 115.092
-      }
-    },
-    {
-      "nom": "Mosquée Al-Fath de Bali",
-      "description": "Mosquée fréquentée de Bali, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Bali",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Fath+de+Bali+Bali",
-      "capacite": 4306,
-      "anneeConstruction": 1986,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": -8.3405,
-        "lng": 115.092
-      }
-    },
-    {
-      "nom": "Mosquée Al-Iman de Bali",
-      "description": "Mosquée fréquentée de Bali, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Bali",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Iman+de+Bali+Bali",
-      "capacite": 1279,
-      "anneeConstruction": 2019,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": -8.3405,
-        "lng": 115.092
-      }
-    },
-    {
-      "nom": "Mosquée historique de Bali",
-      "description": "Mosquée fréquentée de Bali, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Bali",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Bali+Bali",
-      "capacite": 4634,
-      "anneeConstruction": 1994,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": -8.3405,
-        "lng": 115.092
-      }
-    },
-    {
-      "nom": "Mosquée du vendredi de Bali",
-      "description": "Mosquée fréquentée de Bali, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Bali",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+du+vendredi+de+Bali+Bali",
-      "capacite": 5380,
-      "anneeConstruction": 1960,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": -8.3405,
-        "lng": 115.092
-      }
-    },
-    {
-      "nom": "Mosquée Al-Hidaya de Bali",
-      "description": "Mosquée fréquentée de Bali, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Bali",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Hidaya+de+Bali+Bali",
-      "capacite": 1854,
-      "anneeConstruction": 1954,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": -8.3405,
-        "lng": 115.092
-      }
-    }
-  ],
-  "selectionsPremium": {
-    "mieuxNotes": [
-      "Mozaic Restaurant",
-      "Kafe Batan Waru",
-      "Sari Organik Bali",
-      "Rumah Makan Minang",
-      "Soto Bali Pak Dobiel"
-    ],
-    "meilleurRapportQualitePrix": [
-      "Sate Plecing Bali",
-      "Bebek Bengil",
-      "Kafe Batan Waru",
-      "Padang Merdeka",
-      "Sari Organik Bali"
-    ],
-    "incontournables": [
-      "Sari Organik Bali",
-      "Ramly Burger",
-      "Kafe Batan Waru",
-      "Warung Semesta Ubud",
-      "Rumah Makan Minang"
-    ],
-    "pepitesCachees": [
-      "Alchemy Bali",
-      "Restoran Nusantara",
-      "Rakuzen Halal"
-    ],
-    "idealFamille": [
-      "Warung Muslim Bali",
-      "Sate Plecing Bali",
-      "Bebek Bengil",
-      "Merah Putih Bali",
-      "Kafe Batan Waru"
-    ],
-    "gastronomique": [
-      "Locavore",
-      "Sardine Restaurant Bali",
-      "Mozaic Restaurant",
-      "Ku De Ta",
-      "Mejekawi"
-    ],
-    "ouvertNuit": [
-      "Warung Muslim Bali",
-      "Sate Plecing Bali",
-      "Warung Sulawesi"
-    ],
-    "vueExceptionnelle": [
-      "Warung Ijo",
-      "Warung Muslim Jimbaran",
-      "Bahari Seafood"
-    ]
+  {
+   "nom": "Kubu D'ume homestay",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-8.3870684,115.1148566",
+   "lat": -8.3870684,
+   "lng": 115.1148566,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-8.3870684,115.1148566",
+   "source": "osm"
   },
-  "halalScore": 7,
-  "description_en": "Bali, in Indonesia, is a halal-friendly destination with a Halal Trust Score of 3.5/5. Muslim travelers will find 38 halal restaurants listed, 450 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind. Best time to visit: April–October.",
-  "metaDescription_en": "Halal guide to Bali: 38 halal restaurants listed, 450 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 3.5/5.",
-  "nom_en": "Bali",
-  "infos_pratiques_en": {
-    "fuseau_horaire": "WITA (GMT+8)",
-    "visa": "Visa on Arrival 35 USD, 30 jours",
-    "transport": "Scooter, taxi (Gojek/Grab), voiture + chauffeur recommended"
+  {
+   "nom": "loka cita eco lodge",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-8.3943159,115.1052646",
+   "lat": -8.3943159,
+   "lng": 115.1052646,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-8.3943159,115.1052646",
+   "source": "osm"
   },
-  "sectionMangerHalal": "À Bali, le filet de sécurité s'appelle rumah makan Padang : ces cantines de Sumatra tenues par des musulmans, halal par nature, existent dans toute l'île. Denpasar et Kuta concentrent les restaurants halal ; ailleurs, vérifiez le label MUI et méfiez-vous du babi guling (cochon de lait) et de l'arak en cuisine.",
-  "sectionMangerHalal_en": "In Bali, your safety net is the rumah makan Padang: Sumatran canteens run by Muslims, halal by nature, found across the island. Denpasar and Kuta concentrate halal restaurants; elsewhere, check the MUI label and beware of babi guling (suckling pig) and arak used in cooking.",
-  "sectionOuPrier": "Des mosquées à Denpasar, Kuta et près des ports ; beaucoup d'hôtels tenus par des musulmans indiquent la Qibla en chambre. L'aéroport Ngurah Rai dispose d'une salle de prière.",
-  "sectionOuPrier_en": "Mosques in Denpasar, Kuta and near the harbors; many Muslim-run hotels mark the Qibla in the room. Ngurah Rai airport has a prayer room."
+  {
+   "nom": "Munduk Heaven Luxury Villas",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-8.2859874,115.0813671",
+   "lat": -8.2859874,
+   "lng": 115.0813671,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-8.2859874,115.0813671",
+   "source": "osm"
+  },
+  {
+   "nom": "Mengesta",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-8.385055,115.1256083",
+   "lat": -8.385055,
+   "lng": 115.1256083,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-8.385055,115.1256083",
+   "source": "osm"
+  },
+  {
+   "nom": "Tepi Sawah Lodge & Retreat",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-8.3957382,115.1039854",
+   "lat": -8.3957382,
+   "lng": 115.1039854,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-8.3957382,115.1039854",
+   "source": "osm"
+  },
+  {
+   "nom": "D'Ume Bendoel",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-8.3926134,115.1163965",
+   "lat": -8.3926134,
+   "lng": 115.1163965,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-8.3926134,115.1163965",
+   "source": "osm"
+  },
+  {
+   "nom": "Kubu D'ume",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-8.3922858,115.1223539",
+   "lat": -8.3922858,
+   "lng": 115.1223539,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-8.3922858,115.1223539",
+   "source": "osm"
+  },
+  {
+   "nom": "Mountain hill house",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-8.399479,115.076552",
+   "lat": -8.399479,
+   "lng": 115.076552,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.mountainhillhouse.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Sanda Boutique Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€€",
+   "score": 3,
+   "mapsUrl": "https://maps.google.com/?q=-8.3615092,115.0300551",
+   "lat": -8.3615092,
+   "lng": 115.0300551,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-8.3615092,115.0300551",
+   "source": "osm"
+  },
+  {
+   "nom": "Munduk Menir Villas",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-8.2734491,115.0826186",
+   "lat": -8.2734491,
+   "lng": 115.0826186,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-8.2734491,115.0826186",
+   "source": "osm"
+  },
+  {
+   "nom": "Terrasse du Lac Tamblingan",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-8.2679776,115.0877092",
+   "lat": -8.2679776,
+   "lng": 115.0877092,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.booking.com/Share-YXTyNB",
+   "source": "osm"
+  },
+  {
+   "nom": "Gangga",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-8.2755496,115.0585009",
+   "lat": -8.2755496,
+   "lng": 115.0585009,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-8.2755496,115.0585009",
+   "source": "osm"
+  },
+  {
+   "nom": "Gangga Homestay",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-8.2755252,115.0585057",
+   "lat": -8.2755252,
+   "lng": 115.0585057,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-8.2755252,115.0585057",
+   "source": "osm"
+  },
+  {
+   "nom": "Kebun Kita Bali",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-8.3539007,115.0162434",
+   "lat": -8.3539007,
+   "lng": 115.0162434,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-8.3539007,115.0162434",
+   "source": "osm"
+  },
+  {
+   "nom": "Atas awan - above the clouds",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-8.339327,115.1694731",
+   "lat": -8.339327,
+   "lng": 115.1694731,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-8.339327,115.1694731",
+   "source": "osm"
+  },
+  {
+   "nom": "Bali Bening",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-8.266519,115.0631347",
+   "lat": -8.266519,
+   "lng": 115.0631347,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.villabalibening.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Made darma",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-8.2685785,115.057585",
+   "lat": -8.2685785,
+   "lng": 115.057585,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-8.2685785,115.057585",
+   "source": "osm"
+  },
+  {
+   "nom": "Bintang Munduk",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-8.2648325,115.0658124",
+   "lat": -8.2648325,
+   "lng": 115.0658124,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.booking.com/hotel/id/bintang-munduk.pl.html",
+   "source": "osm"
+  },
+  {
+   "nom": "Villa 2 bintang",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-8.2646572,115.0659838",
+   "lat": -8.2646572,
+   "lng": 115.0659838,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-8.2646572,115.0659838",
+   "source": "osm"
+  },
+  {
+   "nom": "Kanaya Homestay",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-8.2671003,115.0587154",
+   "lat": -8.2671003,
+   "lng": 115.0587154,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-8.2671003,115.0587154",
+   "source": "osm"
+  },
+  {
+   "nom": "Munduk Farmhouse",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-8.2604494,115.0829506",
+   "lat": -8.2604494,
+   "lng": 115.0829506,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-8.2604494,115.0829506",
+   "source": "osm"
+  },
+  {
+   "nom": "Edy Homestay",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-8.267389,115.0572312",
+   "lat": -8.267389,
+   "lng": 115.0572312,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=-8.267389,115.0572312",
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Shrine",
+   "lat": -8.3288076,
+   "lng": 115.0713432,
+   "coordonnees": {
+    "lat": -8.3288076,
+    "lng": 115.0713432
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-8.3288076,115.0713432",
+   "source": "osm"
+  },
+  {
+   "nom": "Shiva temple",
+   "lat": -8.3281131,
+   "lng": 115.0653981,
+   "coordonnees": {
+    "lat": -8.3281131,
+    "lng": 115.0653981
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-8.3281131,115.0653981",
+   "source": "osm"
+  },
+  {
+   "nom": "Pura Luhur Batukaru",
+   "lat": -8.3726461,
+   "lng": 115.1027505,
+   "coordonnees": {
+    "lat": -8.3726461,
+    "lng": 115.1027505
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-8.3726461,115.1027505",
+   "source": "osm"
+  },
+  {
+   "nom": "Air Panas Angseri",
+   "lat": -8.3555514,
+   "lng": 115.156705,
+   "coordonnees": {
+    "lat": -8.3555514,
+    "lng": 115.156705
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-8.3555514,115.156705",
+   "source": "osm"
+  },
+  {
+   "nom": "Banyan tree",
+   "lat": -8.2808517,
+   "lng": 115.0554567,
+   "coordonnees": {
+    "lat": -8.2808517,
+    "lng": 115.0554567
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-8.2808517,115.0554567",
+   "source": "osm"
+  },
+  {
+   "nom": "Entrance of the recreation park",
+   "lat": -8.2685467,
+   "lng": 115.0902633,
+   "coordonnees": {
+    "lat": -8.2685467,
+    "lng": 115.0902633
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-8.2685467,115.0902633",
+   "source": "osm"
+  },
+  {
+   "nom": "Rizières Dayang, terrasses",
+   "lat": -8.2725286,
+   "lng": 115.0613632,
+   "coordonnees": {
+    "lat": -8.2725286,
+    "lng": 115.0613632
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-8.2725286,115.0613632",
+   "source": "osm"
+  },
+  {
+   "nom": "Munduk Escape",
+   "lat": -8.2664617,
+   "lng": 115.0815743,
+   "coordonnees": {
+    "lat": -8.2664617,
+    "lng": 115.0815743
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-8.2664617,115.0815743",
+   "source": "osm"
+  },
+  {
+   "nom": "tamblingan lake",
+   "lat": -8.2640757,
+   "lng": 115.0910031,
+   "coordonnees": {
+    "lat": -8.2640757,
+    "lng": 115.0910031
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=-8.2640757,115.0910031",
+   "source": "osm"
+  },
+  {
+   "nom": "Rice terrace",
+   "lat": -8.2793409,
+   "lng": 115.0382718,
+   "coordonnees": {
+    "lat": -8.2793409,
+    "lng": 115.0382718
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=-8.2793409,115.0382718",
+   "source": "osm"
+  },
+  {
+   "nom": "The View Restoran",
+   "lat": -8.2597471,
+   "lng": 115.0803617,
+   "coordonnees": {
+    "lat": -8.2597471,
+    "lng": 115.0803617
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=-8.2597471,115.0803617",
+   "source": "osm"
+  },
+  {
+   "nom": "Gunung Tapak",
+   "lat": -8.2705078,
+   "lng": 115.1385786,
+   "coordonnees": {
+    "lat": -8.2705078,
+    "lng": 115.1385786
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=-8.2705078,115.1385786",
+   "source": "osm"
+  },
+  {
+   "nom": "Far View To Waterfall",
+   "lat": -8.2610504,
+   "lng": 115.0604616,
+   "coordonnees": {
+    "lat": -8.2610504,
+    "lng": 115.0604616
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=-8.2610504,115.0604616",
+   "source": "osm"
+  },
+  {
+   "nom": "Patung Sang Rama & Dewi Sita",
+   "lat": -8.2807889,
+   "lng": 115.1559623,
+   "coordonnees": {
+    "lat": -8.2807889,
+    "lng": 115.1559623
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-8.2807889,115.1559623",
+   "source": "osm"
+  },
+  {
+   "nom": "Patung Kumbakarna Laga",
+   "lat": -8.2788714,
+   "lng": 115.154081,
+   "coordonnees": {
+    "lat": -8.2788714,
+    "lng": 115.154081
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-8.2788714,115.154081",
+   "source": "osm"
+  },
+  {
+   "nom": "Patung Jatayu & Rahwana",
+   "lat": -8.279395,
+   "lng": 115.1550209,
+   "coordonnees": {
+    "lat": -8.279395,
+    "lng": 115.1550209
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-8.279395,115.1550209",
+   "source": "osm"
+  },
+  {
+   "nom": "Waterfall",
+   "lat": -8.2540398,
+   "lng": 115.0790996,
+   "coordonnees": {
+    "lat": -8.2540398,
+    "lng": 115.0790996
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=-8.2540398,115.0790996",
+   "source": "osm"
+  },
+  {
+   "nom": "Taman Mawar",
+   "lat": -8.2782001,
+   "lng": 115.1550444,
+   "coordonnees": {
+    "lat": -8.2782001,
+    "lng": 115.1550444
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=-8.2782001,115.1550444",
+   "source": "osm"
+  },
+  {
+   "nom": "Carnivorous plants",
+   "lat": -8.2792844,
+   "lng": 115.1567577,
+   "coordonnees": {
+    "lat": -8.2792844,
+    "lng": 115.1567577
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=-8.2792844,115.1567577",
+   "source": "osm"
+  },
+  {
+   "nom": "Dinosaur shadehouse",
+   "lat": -8.2758747,
+   "lng": 115.1537382,
+   "coordonnees": {
+    "lat": -8.2758747,
+    "lng": 115.1537382
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-8.2758747,115.1537382",
+   "source": "osm"
+  },
+  {
+   "nom": "Памятник кукурузе",
+   "lat": -8.2836913,
+   "lng": 115.1618063,
+   "coordonnees": {
+    "lat": -8.2836913,
+    "lng": 115.1618063
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=-8.2836913,115.1618063",
+   "source": "osm"
+  },
+  {
+   "nom": "Taman Bambu",
+   "lat": -8.2761233,
+   "lng": 115.1566597,
+   "coordonnees": {
+    "lat": -8.2761233,
+    "lng": 115.1566597
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=-8.2761233,115.1566597",
+   "source": "osm"
+  },
+  {
+   "nom": "Pemandangan Danau",
+   "lat": -8.2715355,
+   "lng": 115.156337,
+   "coordonnees": {
+    "lat": -8.2715355,
+    "lng": 115.156337
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=-8.2715355,115.156337",
+   "source": "osm"
+  },
+  {
+   "nom": "Twin Lakes Viewpoint",
+   "lat": -8.2466659,
+   "lng": 115.1000751,
+   "coordonnees": {
+    "lat": -8.2466659,
+    "lng": 115.1000751
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=-8.2466659,115.1000751",
+   "source": "osm"
+  },
+  {
+   "nom": "Twin Lake",
+   "lat": -8.2461063,
+   "lng": 115.1007843,
+   "coordonnees": {
+    "lat": -8.2461063,
+    "lng": 115.1007843
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=-8.2461063,115.1007843",
+   "source": "osm"
+  },
+  {
+   "nom": "ᬘᬦ᭄ᬤᬶᬩᬾᬦ᭄ᬢᬃᬧᬸᬭᬉᬮᬸᬦ᭄ᬤᬦᬸᬩᭂᬭᬢᬦ᭄᭟ Gapura Candi Bentar Pura Ulun Danu Beratan",
+   "lat": -8.2756846,
+   "lng": 115.1659731,
+   "coordonnees": {
+    "lat": -8.2756846,
+    "lng": 115.1659731
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=-8.2756846,115.1659731",
+   "source": "osm"
+  },
+  {
+   "nom": "Pinge Village",
+   "lat": -8.3856914,
+   "lng": 115.1801504,
+   "coordonnees": {
+    "lat": -8.3856914,
+    "lng": 115.1801504
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-8.3856914,115.1801504",
+   "source": "osm"
+  },
+  {
+   "nom": "Free entrance to temple",
+   "lat": -8.2735608,
+   "lng": 115.166408,
+   "coordonnees": {
+    "lat": -8.2735608,
+    "lng": 115.166408
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-8.2735608,115.166408",
+   "source": "osm"
+  },
+  {
+   "nom": "Lookout to Denpasar",
+   "lat": -8.4376461,
+   "lng": 115.0698727,
+   "coordonnees": {
+    "lat": -8.4376461,
+    "lng": 115.0698727
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=-8.4376461,115.0698727",
+   "source": "osm"
+  },
+  {
+   "nom": "Fishfarm",
+   "lat": -8.245651,
+   "lng": 115.1256647,
+   "coordonnees": {
+    "lat": -8.245651,
+    "lng": 115.1256647
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=-8.245651,115.1256647",
+   "source": "osm"
+  }
+ ],
+ "codeISO": "ID",
+ "image": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1600&q=80",
+ "continent": "Asie",
+ "metaDescription": "Restaurants halal signalés, mosquées et guide pratique pour Bali — Halal Trust Score 4/5.",
+ "image_hero": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1600&q=80",
+ "mosqueesPrincipales": [],
+ "halalScore": 7,
+ "description_en": "Bali, in Indonesia, is a halal-friendly destination with a Halal Trust Score of 3.5/5. Muslim travelers will find 38 halal restaurants listed, 450 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind. Best time to visit: April–October.",
+ "metaDescription_en": "Halal guide to Bali: 38 halal restaurants listed, 450 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 3.5/5.",
+ "nom_en": "Bali",
+ "infos_pratiques_en": {
+  "fuseau_horaire": "WITA (GMT+8)",
+  "visa": "Visa on Arrival 35 USD, 30 jours",
+  "transport": "Scooter, taxi (Gojek/Grab), voiture + chauffeur recommended"
+ },
+ "sectionMangerHalal": "À Bali, le filet de sécurité s'appelle rumah makan Padang : ces cantines de Sumatra tenues par des musulmans, halal par nature, existent dans toute l'île. Denpasar et Kuta concentrent les restaurants halal ; ailleurs, vérifiez le label MUI et méfiez-vous du babi guling (cochon de lait) et de l'arak en cuisine.",
+ "sectionMangerHalal_en": "In Bali, your safety net is the rumah makan Padang: Sumatran canteens run by Muslims, halal by nature, found across the island. Denpasar and Kuta concentrate halal restaurants; elsewhere, check the MUI label and beware of babi guling (suckling pig) and arak used in cooking.",
+ "sectionOuPrier": "Des mosquées à Denpasar, Kuta et près des ports ; beaucoup d'hôtels tenus par des musulmans indiquent la Qibla en chambre. L'aéroport Ngurah Rai dispose d'une salle de prière.",
+ "sectionOuPrier_en": "Mosques in Denpasar, Kuta and near the harbors; many Muslim-run hotels mark the Qibla in the room. Ngurah Rai airport has a prayer room.",
+ "dataPurgedAt": "2026-07-15"
 }

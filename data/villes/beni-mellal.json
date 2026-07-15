@@ -1,452 +1,410 @@
 {
-  "slug": "beni-mellal",
-  "nom": "Béni Mellal",
-  "pays": "Maroc",
-  "pays_slug": "maroc",
-  "continent": "Afrique",
-  "region": "Intérieur du Maroc",
-  "coordonnees": {
-    "lat": 32.3373,
-    "lng": -6.3498
-  },
-  "codeISO": "MA",
-  "score_halal": 4.5,
-  "halalScore": 9,
-  "description": "Au pied du Moyen Atlas et des célèbres cascades d'Ouzoud, Béni Mellal est entourée d'oliveraies et proche du grand lac Bin El Ouidane.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Hartoka.jpg/1920px-Hartoka.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Hartoka.jpg/1920px-Hartoka.jpg",
-  "metaDescription": "Au pied du Moyen Atlas et des célèbres cascades d'Ouzoud, Béni Mellal est entourée d'oliveraies et proche du grand lac Bin El Ouidane.",
+ "slug": "beni-mellal",
+ "nom": "Béni Mellal",
+ "pays": "Maroc",
+ "pays_slug": "maroc",
+ "continent": "Afrique",
+ "region": "Intérieur du Maroc",
+ "coordonnees": {
+  "lat": 32.3373,
+  "lng": -6.3498
+ },
+ "codeISO": "MA",
+ "score_halal": 4.5,
+ "halalScore": 9,
+ "description": "Au pied du Moyen Atlas et des célèbres cascades d'Ouzoud, Béni Mellal est entourée d'oliveraies et proche du grand lac Bin El Ouidane.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Hartoka.jpg/1920px-Hartoka.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Hartoka.jpg/1920px-Hartoka.jpg",
+ "metaDescription": "Au pied du Moyen Atlas et des célèbres cascades d'Ouzoud, Béni Mellal est entourée d'oliveraies et proche du grand lac Bin El Ouidane.",
+ "monnaie": "MAD (Dirham marocain)",
+ "langue": "Arabe, Tamazight, Français",
+ "statistiques": {
+  "restaurants_halal": 0,
+  "mosquees": 9,
+  "hotels": 22
+ },
+ "infoPratique": {
   "monnaie": "MAD (Dirham marocain)",
   "langue": "Arabe, Tamazight, Français",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 22
+  "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
+  "meilleureEpoque": "Printemps et automne (climat doux)."
+ },
+ "tags": [
+  "halal",
+  "Maroc"
+ ],
+ "restaurants": [],
+ "hotels": [
+  {
+   "nom": "Tasmmet",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.3358368,-6.352411",
+   "lat": 32.3358368,
+   "lng": -6.352411,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.3358368,-6.352411",
+   "source": "osm"
   },
-  "infoPratique": {
-    "monnaie": "MAD (Dirham marocain)",
-    "langue": "Arabe, Tamazight, Français",
-    "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
-    "meilleureEpoque": "Printemps et automne (climat doux)."
+  {
+   "nom": "Ftah",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.3342459,-6.3536524",
+   "lat": 32.3342459,
+   "lng": -6.3536524,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.3342459,-6.3536524",
+   "source": "osm"
   },
-  "tags": [
-    "halal",
-    "Maroc"
-  ],
-  "restaurants": [],
-  "hotels": [
-    {
-      "nom": "Tasmmet",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.3358368,-6.352411",
-      "lat": 32.3358368,
-      "lng": -6.352411,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.3358368,-6.352411",
-      "source": "osm"
-    },
-    {
-      "nom": "Ftah",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.3342459,-6.3536524",
-      "lat": 32.3342459,
-      "lng": -6.3536524,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.3342459,-6.3536524",
-      "source": "osm"
-    },
-    {
-      "nom": "Alecanti",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "score": 2,
-      "mapsUrl": "https://maps.google.com/?q=32.3398761,-6.3566778",
-      "lat": 32.3398761,
-      "lng": -6.3566778,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.alecanti.com",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Gharnata",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.3343178,-6.3584595",
-      "lat": 32.3343178,
-      "lng": -6.3584595,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.3343178,-6.3584595",
-      "source": "osm"
-    },
-    {
-      "nom": "hôtel Charaf",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.3441442,-6.3576643",
-      "lat": 32.3441442,
-      "lng": -6.3576643,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.3441442,-6.3576643",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Béni - Mellal Atlass",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.3338491,-6.3636162",
-      "lat": 32.3338491,
-      "lng": -6.3636162,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.3338491,-6.3636162",
-      "source": "osm"
-    },
-    {
-      "nom": "hôtel Hannioui",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.3442195,-6.3616944",
-      "lat": 32.3442195,
-      "lng": -6.3616944,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.3442195,-6.3616944",
-      "source": "osm"
-    },
-    {
-      "nom": "notre maison",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.3401302,-6.3660531",
-      "lat": 32.3401302,
-      "lng": -6.3660531,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.3401302,-6.3660531",
-      "source": "osm"
-    },
-    {
-      "nom": "Les Belles Terrasses",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.3252289,-6.3592182",
-      "lat": 32.3252289,
-      "lng": -6.3592182,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.3252289,-6.3592182",
-      "source": "osm"
-    },
-    {
-      "nom": "نبيل بني ملال",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.3520397,-6.3431918",
-      "lat": 32.3520397,
-      "lng": -6.3431918,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.3520397,-6.3431918",
-      "source": "osm"
-    },
-    {
-      "nom": "Club Kahrama Béni Mellal",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.3229605,-6.3420007",
-      "lat": 32.3229605,
-      "lng": -6.3420007,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.3229605,-6.3420007",
-      "source": "osm"
-    },
-    {
-      "nom": "Hôtel Hadaik Ain Asserdoune",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.3408874,-6.370018",
-      "lat": 32.3408874,
-      "lng": -6.370018,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.3408874,-6.370018",
-      "source": "osm"
-    },
-    {
-      "nom": "hotel Imane Al khalil",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.3377576,-6.3732681",
-      "lat": 32.3377576,
-      "lng": -6.3732681,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.3377576,-6.3732681",
-      "source": "osm"
-    },
-    {
-      "nom": "Iman Alkhalil",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.3375903,-6.3734364",
-      "lat": 32.3375903,
-      "lng": -6.3734364,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.3375903,-6.3734364",
-      "source": "osm"
-    },
-    {
-      "nom": "hôtel Beni Day",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.3373919,-6.3735399",
-      "lat": 32.3373919,
-      "lng": -6.3735399,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.3373919,-6.3735399",
-      "source": "osm"
-    },
-    {
-      "nom": "hôtel al bassatine",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.3365972,-6.3738331",
-      "lat": 32.3365972,
-      "lng": -6.3738331,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.3365972,-6.3738331",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel VelSatis",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.3283984,-6.3725975",
-      "lat": 32.3283984,
-      "lng": -6.3725975,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.3283984,-6.3725975",
-      "source": "osm"
-    },
-    {
-      "nom": "hôtel La Luna",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.3248012,-6.3784819",
-      "lat": 32.3248012,
-      "lng": -6.3784819,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.3248012,-6.3784819",
-      "source": "osm"
-    },
-    {
-      "nom": "La Luna",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.3248781,-6.3785964",
-      "lat": 32.3248781,
-      "lng": -6.3785964,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.3248781,-6.3785964",
-      "source": "osm"
-    },
-    {
-      "nom": "Ouzoud",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.3220267,-6.3801172",
-      "lat": 32.3220267,
-      "lng": -6.3801172,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.3220267,-6.3801172",
-      "source": "osm"
-    },
-    {
-      "nom": "hôtel Beni mellal Ouzoud",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.3222856,-6.3803921",
-      "lat": 32.3222856,
-      "lng": -6.3803921,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.3222856,-6.3803921",
-      "source": "osm"
-    },
-    {
-      "nom": "بني ملال",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=32.2955493,-6.4262354",
-      "lat": 32.2955493,
-      "lng": -6.4262354,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=32.2955493,-6.4262354",
-      "source": "osm"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Béni Mellal",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Béni Mellal",
-      "description": "Mosquée principale de la ville, prière du vendredi.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20B%C3%A9ni%20Mellal%20B%C3%A9ni%20Mellal%20Maroc"
-    },
-    {
-      "nom": "Mosquée Arrahmane",
-      "lat": 32.3320349,
-      "lng": -6.3553139,
-      "coordonnees": {
-        "lat": 32.3320349,
-        "lng": -6.3553139
-      },
-      "adresse": "Avenue Tamagnounte, béni mellal",
-      "mapsUrl": "https://maps.google.com/?q=32.3320349,-6.3553139",
-      "source": "osm"
-    },
-    {
-      "nom": "Mosquée Errahman مسجد الرحمن",
-      "lat": 32.3327732,
-      "lng": -6.3576045,
-      "coordonnees": {
-        "lat": 32.3327732,
-        "lng": -6.3576045
-      },
-      "mapsUrl": "https://maps.google.com/?q=32.3327732,-6.3576045",
-      "source": "osm"
-    },
-    {
-      "nom": "AREDOUAN",
-      "lat": 32.3346379,
-      "lng": -6.3622071,
-      "coordonnees": {
-        "lat": 32.3346379,
-        "lng": -6.3622071
-      },
-      "adresse": "Chawki 1, Béni Mellal",
-      "mapsUrl": "https://maps.google.com/?q=32.3346379,-6.3622071",
-      "source": "osm"
-    },
-    {
-      "nom": "Mosquée Al adarissa",
-      "lat": 32.3347701,
-      "lng": -6.3660111,
-      "coordonnees": {
-        "lat": 32.3347701,
-        "lng": -6.3660111
-      },
-      "adresse": "Quartier al adarissa, Béni Mellal",
-      "mapsUrl": "https://maps.google.com/?q=32.3347701,-6.3660111",
-      "source": "osm"
-    },
-    {
-      "nom": "Mosqué qobaa",
-      "lat": 32.3360648,
-      "lng": -6.3662715,
-      "coordonnees": {
-        "lat": 32.3360648,
-        "lng": -6.3662715
-      },
-      "adresse": "sakakim ouled hamdane",
-      "mapsUrl": "https://maps.google.com/?q=32.3360648,-6.3662715",
-      "source": "osm"
-    },
-    {
-      "nom": "Mosquée Assafae مسجد الصفا",
-      "lat": 32.3434938,
-      "lng": -6.3662952,
-      "coordonnees": {
-        "lat": 32.3434938,
-        "lng": -6.3662952
-      },
-      "mapsUrl": "https://maps.google.com/?q=32.3434938,-6.3662952",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid march 2",
-      "lat": 32.3536412,
-      "lng": -6.3642569,
-      "coordonnees": {
-        "lat": 32.3536412,
-        "lng": -6.3642569
-      },
-      "adresse": "Beni Mellal ⴰⵢⵜ ⵎⵍⵍⴰⵍ بني ملال",
-      "mapsUrl": "https://maps.google.com/?q=32.3536412,-6.3642569",
-      "source": "osm"
-    },
-    {
-      "nom": "Masdjid Imam Malik مسجد الإمام مالك",
-      "lat": 32.3556663,
-      "lng": -6.3604087,
-      "coordonnees": {
-        "lat": 32.3556663,
-        "lng": -6.3604087
-      },
-      "adresse": "بني ملال",
-      "mapsUrl": "https://maps.google.com/?q=32.3556663,-6.3604087",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد محمد السادس",
-      "lat": 32.3189778,
-      "lng": -6.381849,
-      "coordonnees": {
-        "lat": 32.3189778,
-        "lng": -6.381849
-      },
-      "mapsUrl": "https://maps.google.com/?q=32.3189778,-6.381849",
-      "source": "osm"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Cascades d'Ouzoud",
-      "categorie": "Nature",
-      "description": "Chutes d'eau de 110m parmi les plus belles d'Afrique du Nord.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Cascades%20d%27Ouzoud%20B%C3%A9ni%20Mellal%20Maroc",
-      "lat": 32.0153547,
-      "lng": -6.7192297,
-      "geocoded": true
-    },
-    {
-      "id": "a2",
-      "nom": "Lac Bin El Ouidane",
-      "categorie": "Nature",
-      "description": "Grand lac de barrage turquoise, activités nautiques.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Lac%20Bin%20El%20Ouidane%20B%C3%A9ni%20Mellal%20Maroc",
-      "lat": 32.1007011,
-      "lng": -6.46719,
-      "geocoded": true
-    },
-    {
-      "id": "a3",
-      "nom": "Source Ain Asserdoun",
-      "categorie": "Nature",
-      "description": "Source aménagée en jardins au pied du kasbah de Ras El Aïn.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Source%20Ain%20Asserdoun%20B%C3%A9ni%20Mellal%20Maroc"
-    },
-    {
-      "nom": "Tizi Ghnim",
-      "lat": 32.1959365,
-      "lng": -6.3955269,
-      "coordonnees": {
-        "lat": 32.1959365,
-        "lng": -6.3955269
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=32.1959365,-6.3955269",
-      "source": "osm"
-    }
-  ],
-  "imageCredit": "Wikimedia Commons",
-  "osmEnriched": true,
-  "osmEnrichedAt": "2026-06-30",
-  "description_en": "Béni Mellal, in Morocco, is a halal-friendly destination with a Halal Trust Score of 4.5/5. Muslim travelers will find a selection of halal restaurants, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
-  "metaDescription_en": "Halal guide to Béni Mellal: halal restaurants, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.5/5.",
-  "nom_en": "Béni Mellal"
+  {
+   "nom": "Alecanti",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "score": 2,
+   "mapsUrl": "https://maps.google.com/?q=32.3398761,-6.3566778",
+   "lat": 32.3398761,
+   "lng": -6.3566778,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.alecanti.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Gharnata",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.3343178,-6.3584595",
+   "lat": 32.3343178,
+   "lng": -6.3584595,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.3343178,-6.3584595",
+   "source": "osm"
+  },
+  {
+   "nom": "hôtel Charaf",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.3441442,-6.3576643",
+   "lat": 32.3441442,
+   "lng": -6.3576643,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.3441442,-6.3576643",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Béni - Mellal Atlass",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.3338491,-6.3636162",
+   "lat": 32.3338491,
+   "lng": -6.3636162,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.3338491,-6.3636162",
+   "source": "osm"
+  },
+  {
+   "nom": "hôtel Hannioui",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.3442195,-6.3616944",
+   "lat": 32.3442195,
+   "lng": -6.3616944,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.3442195,-6.3616944",
+   "source": "osm"
+  },
+  {
+   "nom": "notre maison",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.3401302,-6.3660531",
+   "lat": 32.3401302,
+   "lng": -6.3660531,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.3401302,-6.3660531",
+   "source": "osm"
+  },
+  {
+   "nom": "Les Belles Terrasses",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.3252289,-6.3592182",
+   "lat": 32.3252289,
+   "lng": -6.3592182,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.3252289,-6.3592182",
+   "source": "osm"
+  },
+  {
+   "nom": "نبيل بني ملال",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.3520397,-6.3431918",
+   "lat": 32.3520397,
+   "lng": -6.3431918,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.3520397,-6.3431918",
+   "source": "osm"
+  },
+  {
+   "nom": "Club Kahrama Béni Mellal",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.3229605,-6.3420007",
+   "lat": 32.3229605,
+   "lng": -6.3420007,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.3229605,-6.3420007",
+   "source": "osm"
+  },
+  {
+   "nom": "Hôtel Hadaik Ain Asserdoune",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.3408874,-6.370018",
+   "lat": 32.3408874,
+   "lng": -6.370018,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.3408874,-6.370018",
+   "source": "osm"
+  },
+  {
+   "nom": "hotel Imane Al khalil",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.3377576,-6.3732681",
+   "lat": 32.3377576,
+   "lng": -6.3732681,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.3377576,-6.3732681",
+   "source": "osm"
+  },
+  {
+   "nom": "Iman Alkhalil",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.3375903,-6.3734364",
+   "lat": 32.3375903,
+   "lng": -6.3734364,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.3375903,-6.3734364",
+   "source": "osm"
+  },
+  {
+   "nom": "hôtel Beni Day",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.3373919,-6.3735399",
+   "lat": 32.3373919,
+   "lng": -6.3735399,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.3373919,-6.3735399",
+   "source": "osm"
+  },
+  {
+   "nom": "hôtel al bassatine",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.3365972,-6.3738331",
+   "lat": 32.3365972,
+   "lng": -6.3738331,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.3365972,-6.3738331",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel VelSatis",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.3283984,-6.3725975",
+   "lat": 32.3283984,
+   "lng": -6.3725975,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.3283984,-6.3725975",
+   "source": "osm"
+  },
+  {
+   "nom": "hôtel La Luna",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.3248012,-6.3784819",
+   "lat": 32.3248012,
+   "lng": -6.3784819,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.3248012,-6.3784819",
+   "source": "osm"
+  },
+  {
+   "nom": "La Luna",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.3248781,-6.3785964",
+   "lat": 32.3248781,
+   "lng": -6.3785964,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.3248781,-6.3785964",
+   "source": "osm"
+  },
+  {
+   "nom": "Ouzoud",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.3220267,-6.3801172",
+   "lat": 32.3220267,
+   "lng": -6.3801172,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.3220267,-6.3801172",
+   "source": "osm"
+  },
+  {
+   "nom": "hôtel Beni mellal Ouzoud",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.3222856,-6.3803921",
+   "lat": 32.3222856,
+   "lng": -6.3803921,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.3222856,-6.3803921",
+   "source": "osm"
+  },
+  {
+   "nom": "بني ملال",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.2955493,-6.4262354",
+   "lat": 32.2955493,
+   "lng": -6.4262354,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=32.2955493,-6.4262354",
+   "source": "osm"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "Mosquée Arrahmane",
+   "lat": 32.3320349,
+   "lng": -6.3553139,
+   "coordonnees": {
+    "lat": 32.3320349,
+    "lng": -6.3553139
+   },
+   "adresse": "Avenue Tamagnounte, béni mellal",
+   "mapsUrl": "https://maps.google.com/?q=32.3320349,-6.3553139",
+   "source": "osm"
+  },
+  {
+   "nom": "Mosquée Errahman مسجد الرحمن",
+   "lat": 32.3327732,
+   "lng": -6.3576045,
+   "coordonnees": {
+    "lat": 32.3327732,
+    "lng": -6.3576045
+   },
+   "mapsUrl": "https://maps.google.com/?q=32.3327732,-6.3576045",
+   "source": "osm"
+  },
+  {
+   "nom": "AREDOUAN",
+   "lat": 32.3346379,
+   "lng": -6.3622071,
+   "coordonnees": {
+    "lat": 32.3346379,
+    "lng": -6.3622071
+   },
+   "adresse": "Chawki 1, Béni Mellal",
+   "mapsUrl": "https://maps.google.com/?q=32.3346379,-6.3622071",
+   "source": "osm"
+  },
+  {
+   "nom": "Mosquée Al adarissa",
+   "lat": 32.3347701,
+   "lng": -6.3660111,
+   "coordonnees": {
+    "lat": 32.3347701,
+    "lng": -6.3660111
+   },
+   "adresse": "Quartier al adarissa, Béni Mellal",
+   "mapsUrl": "https://maps.google.com/?q=32.3347701,-6.3660111",
+   "source": "osm"
+  },
+  {
+   "nom": "Mosqué qobaa",
+   "lat": 32.3360648,
+   "lng": -6.3662715,
+   "coordonnees": {
+    "lat": 32.3360648,
+    "lng": -6.3662715
+   },
+   "adresse": "sakakim ouled hamdane",
+   "mapsUrl": "https://maps.google.com/?q=32.3360648,-6.3662715",
+   "source": "osm"
+  },
+  {
+   "nom": "Mosquée Assafae مسجد الصفا",
+   "lat": 32.3434938,
+   "lng": -6.3662952,
+   "coordonnees": {
+    "lat": 32.3434938,
+    "lng": -6.3662952
+   },
+   "mapsUrl": "https://maps.google.com/?q=32.3434938,-6.3662952",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid march 2",
+   "lat": 32.3536412,
+   "lng": -6.3642569,
+   "coordonnees": {
+    "lat": 32.3536412,
+    "lng": -6.3642569
+   },
+   "adresse": "Beni Mellal ⴰⵢⵜ ⵎⵍⵍⴰⵍ بني ملال",
+   "mapsUrl": "https://maps.google.com/?q=32.3536412,-6.3642569",
+   "source": "osm"
+  },
+  {
+   "nom": "Masdjid Imam Malik مسجد الإمام مالك",
+   "lat": 32.3556663,
+   "lng": -6.3604087,
+   "coordonnees": {
+    "lat": 32.3556663,
+    "lng": -6.3604087
+   },
+   "adresse": "بني ملال",
+   "mapsUrl": "https://maps.google.com/?q=32.3556663,-6.3604087",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد محمد السادس",
+   "lat": 32.3189778,
+   "lng": -6.381849,
+   "coordonnees": {
+    "lat": 32.3189778,
+    "lng": -6.381849
+   },
+   "mapsUrl": "https://maps.google.com/?q=32.3189778,-6.381849",
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Tizi Ghnim",
+   "lat": 32.1959365,
+   "lng": -6.3955269,
+   "coordonnees": {
+    "lat": 32.1959365,
+    "lng": -6.3955269
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=32.1959365,-6.3955269",
+   "source": "osm"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30",
+ "description_en": "Béni Mellal, in Morocco, is a halal-friendly destination with a Halal Trust Score of 4.5/5. Muslim travelers will find a selection of halal restaurants, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
+ "metaDescription_en": "Halal guide to Béni Mellal: halal restaurants, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.5/5.",
+ "nom_en": "Béni Mellal",
+ "dataPurgedAt": "2026-07-15"
 }

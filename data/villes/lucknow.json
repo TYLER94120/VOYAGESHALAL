@@ -1,1884 +1,1842 @@
 {
-  "slug": "lucknow",
-  "nom": "Lucknow",
-  "pays": "Inde",
-  "pays_slug": "inde",
-  "continent": "Asie",
-  "region": "Inde",
-  "coordonnees": {
-    "lat": 26.8467,
-    "lng": 80.9462
+ "slug": "lucknow",
+ "nom": "Lucknow",
+ "pays": "Inde",
+ "pays_slug": "inde",
+ "continent": "Asie",
+ "region": "Inde",
+ "coordonnees": {
+  "lat": 26.8467,
+  "lng": 80.9462
+ },
+ "codeISO": "",
+ "score_halal": 4.5,
+ "halalScore": 9,
+ "description": "Capitale de la culture nawabi, Lucknow est réputée pour son raffinement, ses monuments moghols-awadhi et sa cuisine halal légendaire (kebabs, biryani).",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/6/67/Lucknowuniversity.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/6/67/Lucknowuniversity.jpg",
+ "metaDescription": "Capitale de la culture nawabi, Lucknow est réputée pour son raffinement, ses monuments moghols-awadhi et sa cuisine halal légendaire (kebabs, biryani).",
+ "statistiques": {
+  "restaurants_halal": 13,
+  "mosquees": 11,
+  "hotels": 83
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "Sahu Kathi Chicken Egg Roll Wala",
+   "type": "indian, chicken, roll",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8847293,80.9956034",
+   "lat": 26.8847293,
+   "lng": 80.9956034,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.5,
-  "halalScore": 9,
-  "description": "Capitale de la culture nawabi, Lucknow est réputée pour son raffinement, ses monuments moghols-awadhi et sa cuisine halal légendaire (kebabs, biryani).",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/6/67/Lucknowuniversity.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/6/67/Lucknowuniversity.jpg",
-  "metaDescription": "Capitale de la culture nawabi, Lucknow est réputée pour son raffinement, ses monuments moghols-awadhi et sa cuisine halal légendaire (kebabs, biryani).",
-  "statistiques": {
-    "restaurants_halal": 4,
-    "mosquees": 1,
-    "hotels": 83
+  {
+   "nom": "Bhaijaan's Cafeteria",
+   "type": "coffee shop, tea, snack",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8753486,80.8545231",
+   "lat": 26.8753486,
+   "lng": 80.8545231,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "Mulla Ji Non-Veg Corner",
+   "type": "kebab, paratha, biryani, chicken, mutton, indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.7739449,80.8785549",
+   "lat": 26.7739449,
+   "lng": 80.8785549,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [
-    {
-      "nom": "Sahu Kathi Chicken Egg Roll Wala",
-      "type": "indian, chicken, roll",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8847293,80.9956034",
-      "lat": 26.8847293,
-      "lng": 80.9956034,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Bhaijaan's Cafeteria",
-      "type": "coffee shop, tea, snack",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8753486,80.8545231",
-      "lat": 26.8753486,
-      "lng": 80.8545231,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Mulla Ji Non-Veg Corner",
-      "type": "kebab, paratha, biryani, chicken, mutton, indian",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.7739449,80.8785549",
-      "lat": 26.7739449,
-      "lng": 80.8785549,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "Gareeb Nawaz hotel",
-      "type": "kebab",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8854688,81.0058951",
-      "lat": 26.8854688,
-      "lng": 81.0058951,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "The Coconut Chutney",
-      "lat": 26.8747602,
-      "lng": 80.9588458,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=26.8747602,80.9588458",
-      "source": "osm"
-    },
-    {
-      "nom": "Curry Leaf",
-      "lat": 26.8740021,
-      "lng": 80.9775652,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=26.8740021,80.9775652",
-      "source": "osm"
-    },
-    {
-      "nom": "Aadab e Dastarkhwan",
-      "lat": 26.8724179,
-      "lng": 80.9807104,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=26.8724179,80.9807104",
-      "source": "osm"
-    },
-    {
-      "nom": "Baati Chokha",
-      "lat": 26.8590086,
-      "lng": 80.9945377,
-      "type": "indian, bihari",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=26.8590086,80.9945377",
-      "source": "osm"
-    },
-    {
-      "nom": "Tamil Nadi Dosa",
-      "lat": 26.8579982,
-      "lng": 80.9968007,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=26.8579982,80.9968007",
-      "source": "osm"
-    },
-    {
-      "nom": "Agni",
-      "lat": 26.8640885,
-      "lng": 81.0156619,
-      "type": "barbecue, indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=26.8640885,81.0156619",
-      "source": "osm"
-    },
-    {
-      "nom": "Shree Rajbhog",
-      "lat": 26.8732111,
-      "lng": 81.0151799,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=26.8732111,81.0151799",
-      "source": "osm"
-    },
-    {
-      "nom": "SHRI GANPATI SWEETS RESTAURANT BANQUET",
-      "lat": 26.7681353,
-      "lng": 80.9460584,
-      "type": "chinese, indian, noodle, sandwich",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=26.7681353,80.9460584",
-      "source": "osm"
-    },
-    {
-      "nom": "Udipi Restaurant",
-      "lat": 26.77587,
-      "lng": 80.9922545,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=26.77587,80.9922545",
-      "source": "osm"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "Ram Krishna Guest House",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8450829,80.9482153",
-      "lat": 26.8450829,
-      "lng": 80.9482153,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8450829,80.9482153",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Premier",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8461219,80.9403018",
-      "lat": 26.8461219,
-      "lng": 80.9403018,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8461219,80.9403018",
-      "source": "osm"
-    },
-    {
-      "nom": "Elora",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.848384,80.9403139",
-      "lat": 26.848384,
-      "lng": 80.9403139,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.848384,80.9403139",
-      "source": "osm"
-    },
-    {
-      "nom": "Sarang Manor Apartment",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.852592,80.9453174",
-      "lat": 26.852592,
-      "lng": 80.9453174,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.852592,80.9453174",
-      "source": "osm"
-    },
-    {
-      "nom": "Carlton",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8559683,80.9468813",
-      "lat": 26.8559683,
-      "lng": 80.9468813,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8559683,80.9468813",
-      "source": "osm"
-    },
-    {
-      "nom": "The Grand Radiant",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8420248,80.9368118",
-      "lat": 26.8420248,
-      "lng": 80.9368118,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.thegrandradiant.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Radisson",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8456527,80.9353104",
-      "lat": 26.8456527,
-      "lng": 80.9353104,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8456527,80.9353104",
-      "source": "osm"
-    },
-    {
-      "nom": "Gemini Continental",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.852589,80.936321",
-      "lat": 26.852589,
-      "lng": 80.936321,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.852589,80.936321",
-      "source": "osm"
-    },
-    {
-      "nom": "Saraka",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8342112,80.9480796",
-      "lat": 26.8342112,
-      "lng": 80.9480796,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8342112,80.9480796",
-      "source": "osm"
-    },
-    {
-      "nom": "Clarks Avadh",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8563567,80.9356865",
-      "lat": 26.8563567,
-      "lng": 80.9356865,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8563567,80.9356865",
-      "source": "osm"
-    },
-    {
-      "nom": "Lucknow Homestay",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8319807,80.9500145",
-      "lat": 26.8319807,
-      "lng": 80.9500145,
-      "halalFriendly": false,
-      "bookingUrl": "https://lucknowhomestay.wordpress.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Backpackers Den",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.831867,80.9497343",
-      "lat": 26.831867,
-      "lng": 80.9497343,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.831867,80.9497343",
-      "source": "osm"
-    },
-    {
-      "nom": "Dolphin Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8516148,80.9287974",
-      "lat": 26.8516148,
-      "lng": 80.9287974,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8516148,80.9287974",
-      "source": "osm"
-    },
-    {
-      "nom": "Madhur Milan Guest House",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8471144,80.9272964",
-      "lat": 26.8471144,
-      "lng": 80.9272964,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8471144,80.9272964",
-      "source": "osm"
-    },
-    {
-      "nom": "Central Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8490973,80.9249952",
-      "lat": 26.8490973,
-      "lng": 80.9249952,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8490973,80.9249952",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Simla Palace",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8400862,80.9255793",
-      "lat": 26.8400862,
-      "lng": 80.9255793,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8400862,80.9255793",
-      "source": "osm"
-    },
-    {
-      "nom": "Golden Sky",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8334596,80.9299811",
-      "lat": 26.8334596,
-      "lng": 80.9299811,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8334596,80.9299811",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Saket Regency",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8399455,80.925464",
-      "lat": 26.8399455,
-      "lng": 80.925464,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8399455,80.925464",
-      "source": "osm"
-    },
-    {
-      "nom": "Viraj Heights",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8392949,80.9247753",
-      "lat": 26.8392949,
-      "lng": 80.9247753,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8392949,80.9247753",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Di Di International",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8380733,80.9242704",
-      "lat": 26.8380733,
-      "lng": 80.9242704,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8380733,80.9242704",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Nexus correction location",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8375615,80.9224218",
-      "lat": 26.8375615,
-      "lng": 80.9224218,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8375615,80.9224218",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel ANR",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8371877,80.9214561",
-      "lat": 26.8371877,
-      "lng": 80.9214561,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8371877,80.9214561",
-      "source": "osm"
-    },
-    {
-      "nom": "kanha inn",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8423254,80.9193821",
-      "lat": 26.8423254,
-      "lng": 80.9193821,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8423254,80.9193821",
-      "source": "osm"
-    },
-    {
-      "nom": "Renaissance Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8525168,80.9731692",
-      "lat": 26.8525168,
-      "lng": 80.9731692,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8525168,80.9731692",
-      "source": "osm"
-    },
-    {
-      "nom": "Best Western",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.857139,80.9729424",
-      "lat": 26.857139,
-      "lng": 80.9729424,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.857139,80.9729424",
-      "source": "osm"
-    },
-    {
-      "nom": "Moon Star",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8345519,80.9201968",
-      "lat": 26.8345519,
-      "lng": 80.9201968,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8345519,80.9201968",
-      "source": "osm"
-    },
-    {
-      "nom": "Taj Residency",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.851312,80.9753465",
-      "lat": 26.851312,
-      "lng": 80.9753465,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.851312,80.9753465",
-      "source": "osm"
-    },
-    {
-      "nom": "Kanaihyalal Dharmik Guesthouse",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8716167,80.9294146",
-      "lat": 26.8716167,
-      "lng": 80.9294146,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8716167,80.9294146",
-      "source": "osm"
-    },
-    {
-      "nom": "Royal Boys Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8751582,80.9577468",
-      "lat": 26.8751582,
-      "lng": 80.9577468,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8751582,80.9577468",
-      "source": "osm"
-    },
-    {
-      "nom": "The Regnant",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8766124,80.9374338",
-      "lat": 26.8766124,
-      "lng": 80.9374338,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8766124,80.9374338",
-      "source": "osm"
-    },
-    {
-      "nom": "Nehru Enclave",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8599766,80.9793608",
-      "lat": 26.8599766,
-      "lng": 80.9793608,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8599766,80.9793608",
-      "source": "osm"
-    },
-    {
-      "nom": "POSHTEL - Your AnyDay Hostel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8508278,80.9824052",
-      "lat": 26.8508278,
-      "lng": 80.9824052,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.booking.com/hotel/in/poshtel.fr.html",
-      "source": "osm"
-    },
-    {
-      "nom": "Power Grid Corporation Guest House",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8521721,80.9822424",
-      "lat": 26.8521721,
-      "lng": 80.9822424,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8521721,80.9822424",
-      "source": "osm"
-    },
-    {
-      "nom": "UP Police Computer Trainees Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8607089,80.9801443",
-      "lat": 26.8607089,
-      "lng": 80.9801443,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8607089,80.9801443",
-      "source": "osm"
-    },
-    {
-      "nom": "A 545 Indira Nagar, Lucknow",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8724137,80.9736887",
-      "lat": 26.8724137,
-      "lng": 80.9736887,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8724137,80.9736887",
-      "source": "osm"
-    },
-    {
-      "nom": "Vindhyavasini Guest House",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.879675,80.9664484",
-      "lat": 26.879675,
-      "lng": 80.9664484,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.879675,80.9664484",
-      "source": "osm"
-    },
-    {
-      "nom": "Shiva Guest House",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8601977,80.9866812",
-      "lat": 26.8601977,
-      "lng": 80.9866812,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8601977,80.9866812",
-      "source": "osm"
-    },
-    {
-      "nom": "Shubhkamna Grand",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "score": 2,
-      "mapsUrl": "https://maps.google.com/?q=26.8740021,80.9776093",
-      "lat": 26.8740021,
-      "lng": 80.9776093,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8740021,80.9776093",
-      "source": "osm"
-    },
-    {
-      "nom": "Dayal Paradise",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.842692,80.9909895",
-      "lat": 26.842692,
-      "lng": 80.9909895,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.dayalparadise.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Paras Inn",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8827441,80.9672253",
-      "lat": 26.8827441,
-      "lng": 80.9672253,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8827441,80.9672253",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Bandhan",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8725626,80.981356",
-      "lat": 26.8725626,
-      "lng": 80.981356,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8725626,80.981356",
-      "source": "osm"
-    },
-    {
-      "nom": "H.A.L. Guest House",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8695217,80.9863789",
-      "lat": 26.8695217,
-      "lng": 80.9863789,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8695217,80.9863789",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Metro",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.818672,80.907891",
-      "lat": 26.818672,
-      "lng": 80.907891,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.818672,80.907891",
-      "source": "osm"
-    },
-    {
-      "nom": "Neelgiri Girls Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8947509,80.9439784",
-      "lat": 26.8947509,
-      "lng": 80.9439784,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8947509,80.9439784",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Savvy Grand",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.865763,80.9965736",
-      "lat": 26.865763,
-      "lng": 80.9965736,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.865763,80.9965736",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Jayanti Oasis Inn",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8859619,80.9818038",
-      "lat": 26.8859619,
-      "lng": 80.9818038,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8859619,80.9818038",
-      "source": "osm"
-    },
-    {
-      "nom": "OYO Townhouse",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8858093,80.9835184",
-      "lat": 26.8858093,
-      "lng": 80.9835184,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8858093,80.9835184",
-      "source": "osm"
-    },
-    {
-      "nom": "Arora Guest House",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8102761,80.9053208",
-      "lat": 26.8102761,
-      "lng": 80.9053208,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8102761,80.9053208",
-      "source": "osm"
-    },
-    {
-      "nom": "Central Government Touring Officers Guest House",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8985913,80.9400752",
-      "lat": 26.8985913,
-      "lng": 80.9400752,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8985913,80.9400752",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Vijay Paradise",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8983183,80.9669433",
-      "lat": 26.8983183,
-      "lng": 80.9669433,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8983183,80.9669433",
-      "source": "osm"
-    },
-    {
-      "nom": "Sapna Clarks Inn",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8998525,80.9651039",
-      "lat": 26.8998525,
-      "lng": 80.9651039,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8998525,80.9651039",
-      "source": "osm"
-    },
-    {
-      "nom": "OYO Flagship Polytechnic Chauraha",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.874206,81.0015339",
-      "lat": 26.874206,
-      "lng": 81.0015339,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.874206,81.0015339",
-      "source": "osm"
-    },
-    {
-      "nom": "Omaxe Mini Hazratganj",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8113971,80.9963649",
-      "lat": 26.8113971,
-      "lng": 80.9963649,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8113971,80.9963649",
-      "source": "osm"
-    },
-    {
-      "nom": "Purvanchal Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8733715,81.0028984",
-      "lat": 26.8733715,
-      "lng": 81.0028984,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8733715,81.0028984",
-      "source": "osm"
-    },
-    {
-      "nom": "Omaxe Hazratganj",
-      "categorie": "Hôtel",
-      "priceRange": "€€€",
-      "score": 3,
-      "mapsUrl": "https://maps.google.com/?q=26.8117228,80.9975892",
-      "lat": 26.8117228,
-      "lng": 80.9975892,
-      "halalFriendly": false,
-      "bookingUrl": "https://celestialmanor.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Hilton Garden Inn Lucknow",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 4,
-      "mapsUrl": "https://maps.google.com/?q=26.8641762,81.0080473",
-      "lat": 26.8641762,
-      "lng": 81.0080473,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.hilton.com/en/hotels/lkogigi-hilton-garden-inn-lucknow/",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Grand Inn",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8830019,80.9976119",
-      "lat": 26.8830019,
-      "lng": 80.9976119,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8830019,80.9976119",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Ratan International",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.9038917,80.9623578",
-      "lat": 26.9038917,
-      "lng": 80.9623578,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.9038917,80.9623578",
-      "source": "osm"
-    },
-    {
-      "nom": "Park Inn by Radisson",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.9048451,80.9604338",
-      "lat": 26.9048451,
-      "lng": 80.9604338,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.9048451,80.9604338",
-      "source": "osm"
-    },
-    {
-      "nom": "Saryu Apartments",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8345104,81.0139237",
-      "lat": 26.8345104,
-      "lng": 81.0139237,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8345104,81.0139237",
-      "source": "osm"
-    },
-    {
-      "nom": "OYO",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.890392,80.9962613",
-      "lat": 26.890392,
-      "lng": 80.9962613,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.890392,80.9962613",
-      "source": "osm"
-    },
-    {
-      "nom": "Guru Kripa Krishna Home",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8634329,81.0151921",
-      "lat": 26.8634329,
-      "lng": 81.0151921,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8634329,81.0151921",
-      "source": "osm"
-    },
-    {
-      "nom": "Hastag Traveler's",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.7982415,80.8988214",
-      "lat": 26.7982415,
-      "lng": 80.8988214,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.7982415,80.8988214",
-      "source": "osm"
-    },
-    {
-      "nom": "BBD Viraj Tower",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8712445,81.013224",
-      "lat": 26.8712445,
-      "lng": 81.013224,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8712445,81.013224",
-      "source": "osm"
-    },
-    {
-      "nom": "Utopian Luxe",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8703683,81.0147426",
-      "lat": 26.8703683,
-      "lng": 81.0147426,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8703683,81.0147426",
-      "source": "osm"
-    },
-    {
-      "nom": "Amaraa Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8200591,81.0135676",
-      "lat": 26.8200591,
-      "lng": 81.0135676,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8200591,81.0135676",
-      "source": "osm"
-    },
-    {
-      "nom": "Ranjan Heritage",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8714587,81.0150684",
-      "lat": 26.8714587,
-      "lng": 81.0150684,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8714587,81.0150684",
-      "source": "osm"
-    },
-    {
-      "nom": "Best Non-Veg shop",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8854482,81.006499",
-      "lat": 26.8854482,
-      "lng": 81.006499,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8854482,81.006499",
-      "source": "osm"
-    },
-    {
-      "nom": "Dehati Rasoi",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8719018,81.0151652",
-      "lat": 26.8719018,
-      "lng": 81.0151652,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8719018,81.0151652",
-      "source": "osm"
-    },
-    {
-      "nom": "Piccadily",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.7983659,80.8949212",
-      "lat": 26.7983659,
-      "lng": 80.8949212,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.7983659,80.8949212",
-      "source": "osm"
-    },
-    {
-      "nom": "pinnacle",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.7878444,80.9092367",
-      "lat": 26.7878444,
-      "lng": 80.9092367,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.7878444,80.9092367",
-      "source": "osm"
-    },
-    {
-      "nom": "Pahalwan Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8401984,80.870695",
-      "lat": 26.8401984,
-      "lng": 80.870695,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8401984,80.870695",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Meghalaya",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8071834,81.0102906",
-      "lat": 26.8071834,
-      "lng": 81.0102906,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8071834,81.0102906",
-      "source": "osm"
-    },
-    {
-      "nom": "FabHotel Gayatri Palace",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8726733,81.0200206",
-      "lat": 26.8726733,
-      "lng": 81.0200206,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8726733,81.0200206",
-      "source": "osm"
-    },
-    {
-      "nom": "hELLO",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8718493,81.0218271",
-      "lat": 26.8718493,
-      "lng": 81.0218271,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8718493,81.0218271",
-      "source": "osm"
-    },
-    {
-      "nom": "Guest House 1",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8689479,81.0229991",
-      "lat": 26.8689479,
-      "lng": 81.0229991,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8689479,81.0229991",
-      "source": "osm"
-    },
-    {
-      "nom": "Prithvi Resort",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8001548,81.0083743",
-      "lat": 26.8001548,
-      "lng": 81.0083743,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8001548,81.0083743",
-      "source": "osm"
-    },
-    {
-      "nom": "Guest House Number 2",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8688023,81.0236298",
-      "lat": 26.8688023,
-      "lng": 81.0236298,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8688023,81.0236298",
-      "source": "osm"
-    },
-    {
-      "nom": "Guest House 2",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8686833,81.0241717",
-      "lat": 26.8686833,
-      "lng": 81.0241717,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8686833,81.0241717",
-      "source": "osm"
-    },
-    {
-      "nom": "Guest House 4",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8685952,81.024713",
-      "lat": 26.8685952,
-      "lng": 81.024713,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8685952,81.024713",
-      "source": "osm"
-    },
-    {
-      "nom": "Memorable Homestay",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.8887031,81.0150148",
-      "lat": 26.8887031,
-      "lng": 81.0150148,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.8887031,81.0150148",
-      "source": "osm"
-    },
-    {
-      "nom": "Spring Grand",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.7996747,81.016077",
-      "lat": 26.7996747,
-      "lng": 81.016077,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.7996747,81.016077",
-      "source": "osm"
-    },
-    {
-      "nom": "Damson Plum",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=26.7794717,80.9929917",
-      "lat": 26.7794717,
-      "lng": 80.9929917,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=26.7794717,80.9929917",
-      "source": "osm"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Lucknow",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Lucknow",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Lucknow%20Lucknow"
-    },
-    {
-      "nom": "Jama Masjid",
-      "lat": 26.8475121,
-      "lng": 80.9398241,
-      "coordonnees": {
-        "lat": 26.8475121,
-        "lng": 80.9398241
-      },
-      "mapsUrl": "https://maps.google.com/?q=26.8475121,80.9398241",
-      "source": "osm"
-    },
-    {
-      "nom": "Haidery Masjid",
-      "lat": 26.8627139,
-      "lng": 80.9512933,
-      "coordonnees": {
-        "lat": 26.8627139,
-        "lng": 80.9512933
-      },
-      "mapsUrl": "https://maps.google.com/?q=26.8627139,80.9512933",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid",
-      "lat": 26.8500268,
-      "lng": 80.925133,
-      "coordonnees": {
-        "lat": 26.8500268,
-        "lng": 80.925133
-      },
-      "mapsUrl": "https://maps.google.com/?q=26.8500268,80.925133",
-      "source": "osm"
-    },
-    {
-      "nom": "Tilewali Masjid",
-      "lat": 26.8716288,
-      "lng": 80.9144263,
-      "coordonnees": {
-        "lat": 26.8716288,
-        "lng": 80.9144263
-      },
-      "mapsUrl": "https://maps.google.com/?q=26.8716288,80.9144263",
-      "source": "osm"
-    },
-    {
-      "nom": "Jama Masjid Anjuman",
-      "lat": 26.8823074,
-      "lng": 80.9763359,
-      "coordonnees": {
-        "lat": 26.8823074,
-        "lng": 80.9763359
-      },
-      "mapsUrl": "https://maps.google.com/?q=26.8823074,80.9763359",
-      "source": "osm"
-    },
-    {
-      "nom": "Karbala Diyanat Ud Daula",
-      "lat": 26.8551371,
-      "lng": 80.8935479,
-      "coordonnees": {
-        "lat": 26.8551371,
-        "lng": 80.8935479
-      },
-      "mapsUrl": "https://maps.google.com/?q=26.8551371,80.8935479",
-      "source": "osm"
-    },
-    {
-      "nom": "Munshi Pulia Jama Masjid",
-      "lat": 26.885367,
-      "lng": 80.9974169,
-      "coordonnees": {
-        "lat": 26.885367,
-        "lng": 80.9974169
-      },
-      "mapsUrl": "https://maps.google.com/?q=26.885367,80.9974169",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid insaf nagar",
-      "lat": 26.8849186,
-      "lng": 81.0050655,
-      "coordonnees": {
-        "lat": 26.8849186,
-        "lng": 81.0050655
-      },
-      "mapsUrl": "https://maps.google.com/?q=26.8849186,81.0050655",
-      "source": "osm"
-    },
-    {
-      "nom": "Eid Gah, RajajiPuram",
-      "lat": 26.8438653,
-      "lng": 80.873103,
-      "coordonnees": {
-        "lat": 26.8438653,
-        "lng": 80.873103
-      },
-      "mapsUrl": "https://maps.google.com/?q=26.8438653,80.873103",
-      "source": "osm"
-    },
-    {
-      "nom": "Jama Masjid Gandhinagar",
-      "lat": 26.7791185,
-      "lng": 80.9444383,
-      "coordonnees": {
-        "lat": 26.7791185,
-        "lng": 80.9444383
-      },
-      "adresse": "Telibagh, Lucknow",
-      "mapsUrl": "https://maps.google.com/?q=26.7791185,80.9444383",
-      "source": "osm"
-    },
-    {
-      "nom": "Rehmani Masjid",
-      "lat": 26.8016269,
-      "lng": 81.0053841,
-      "coordonnees": {
-        "lat": 26.8016269,
-        "lng": 81.0053841
-      },
-      "mapsUrl": "https://maps.google.com/?q=26.8016269,81.0053841",
-      "source": "osm"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Bara Imambara",
-      "categorie": "Histoire",
-      "description": "Complexe monumental au célèbre labyrinthe Bhul Bhulaiya.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Bara%20Imambara%20Lucknow",
-      "lat": 26.8696584,
-      "lng": 80.9135101,
-      "geocoded": true
-    },
-    {
-      "id": "a2",
-      "nom": "Rumi Darwaza",
-      "categorie": "Histoire",
-      "description": "Porte monumentale emblématique de la ville.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Rumi%20Darwaza%20Lucknow",
-      "lat": 26.8712234,
-      "lng": 80.9122124,
-      "geocoded": true
-    },
-    {
-      "id": "a3",
-      "nom": "Mosquée Asfi",
-      "categorie": "Spirituel",
-      "description": "Grande mosquée du complexe Imambara.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Asfi%20Lucknow"
-    },
-    {
-      "nom": "Mahatama Gandhi Statue",
-      "lat": 26.8458715,
-      "lng": 80.9458775,
-      "coordonnees": {
-        "lat": 26.8458715,
-        "lng": 80.9458775
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=26.8458715,80.9458775",
-      "source": "osm"
-    },
-    {
-      "nom": "Habbibullah Estate",
-      "lat": 26.8511421,
-      "lng": 80.9418772,
-      "coordonnees": {
-        "lat": 26.8511421,
-        "lng": 80.9418772
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=26.8511421,80.9418772",
-      "source": "osm"
-    },
-    {
-      "nom": "National Post graduate college ground",
-      "lat": 26.8571258,
-      "lng": 80.9420724,
-      "coordonnees": {
-        "lat": 26.8571258,
-        "lng": 80.9420724
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=26.8571258,80.9420724",
-      "source": "osm"
-    },
-    {
-      "nom": "Virangana uda devi pasi park",
-      "lat": 26.8529376,
-      "lng": 80.9325704,
-      "coordonnees": {
-        "lat": 26.8529376,
-        "lng": 80.9325704
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=26.8529376,80.9325704",
-      "source": "osm"
-    },
-    {
-      "nom": "Begum Hazrat Mahal Park",
-      "lat": 26.8557493,
-      "lng": 80.9343728,
-      "coordonnees": {
-        "lat": 26.8557493,
-        "lng": 80.9343728
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=26.8557493,80.9343728",
-      "source": "osm"
-    },
-    {
-      "nom": "Butler Palace",
-      "lat": 26.8538641,
-      "lng": 80.9596484,
-      "coordonnees": {
-        "lat": 26.8538641,
-        "lng": 80.9596484
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=26.8538641,80.9596484",
-      "source": "osm"
-    },
-    {
-      "nom": "Major General Calude Martin",
-      "lat": 26.8400996,
-      "lng": 80.9617969,
-      "coordonnees": {
-        "lat": 26.8400996,
-        "lng": 80.9617969
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=26.8400996,80.9617969",
-      "source": "osm"
-    },
-    {
-      "nom": "Martin Summer Palace",
-      "lat": 26.8369037,
-      "lng": 80.9613603,
-      "coordonnees": {
-        "lat": 26.8369037,
-        "lng": 80.9613603
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=26.8369037,80.9613603",
-      "source": "osm"
-    },
-    {
-      "nom": "Chhatar Manzil",
-      "lat": 26.8586921,
-      "lng": 80.9323942,
-      "coordonnees": {
-        "lat": 26.8586921,
-        "lng": 80.9323942
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=26.8586921,80.9323942",
-      "source": "osm"
-    },
-    {
-      "nom": "Shivaji's statue",
-      "lat": 26.8625741,
-      "lng": 80.9375063,
-      "coordonnees": {
-        "lat": 26.8625741,
-        "lng": 80.9375063
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=26.8625741,80.9375063",
-      "source": "osm"
-    },
-    {
-      "nom": "Ambedkar Memorial",
-      "lat": 26.8465709,
-      "lng": 80.9671999,
-      "coordonnees": {
-        "lat": 26.8465709,
-        "lng": 80.9671999
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=26.8465709,80.9671999",
-      "source": "osm"
-    },
-    {
-      "nom": "Atkin's Post",
-      "lat": 26.8607412,
-      "lng": 80.9271123,
-      "coordonnees": {
-        "lat": 26.8607412,
-        "lng": 80.9271123
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=26.8607412,80.9271123",
-      "source": "osm"
-    },
-    {
-      "nom": "रेजीडेंसी",
-      "lat": 26.860904,
-      "lng": 80.9258774,
-      "coordonnees": {
-        "lat": 26.860904,
-        "lng": 80.9258774
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=26.860904,80.9258774",
-      "source": "osm"
-    },
-    {
-      "nom": "Shaheed Smarak",
-      "lat": 26.863365,
-      "lng": 80.928347,
-      "coordonnees": {
-        "lat": 26.863365,
-        "lng": 80.928347
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=26.863365,80.928347",
-      "source": "osm"
-    },
-    {
-      "nom": "Doctor Bhim Rao Ambedkar",
-      "lat": 26.832528,
-      "lng": 80.9241633,
-      "coordonnees": {
-        "lat": 26.832528,
-        "lng": 80.9241633
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=26.832528,80.9241633",
-      "source": "osm"
-    },
-    {
-      "nom": "Ambedkar Statue",
-      "lat": 26.8487105,
-      "lng": 80.9744607,
-      "coordonnees": {
-        "lat": 26.8487105,
-        "lng": 80.9744607
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=26.8487105,80.9744607",
-      "source": "osm"
-    },
-    {
-      "nom": "Chandrashekhar Aazaad",
-      "lat": 26.8742996,
-      "lng": 80.9583067,
-      "coordonnees": {
-        "lat": 26.8742996,
-        "lng": 80.9583067
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=26.8742996,80.9583067",
-      "source": "osm"
-    },
-    {
-      "nom": "Akbari Gate",
-      "lat": 26.8621638,
-      "lng": 80.9072922,
-      "coordonnees": {
-        "lat": 26.8621638,
-        "lng": 80.9072922
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=26.8621638,80.9072922",
-      "source": "osm"
-    },
-    {
-      "nom": "Lda market",
-      "lat": 26.8908469,
-      "lng": 80.953229,
-      "coordonnees": {
-        "lat": 26.8908469,
-        "lng": 80.953229
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=26.8908469,80.953229",
-      "source": "osm"
-    },
-    {
-      "nom": "Satkhanda",
-      "lat": 26.8744892,
-      "lng": 80.9060646,
-      "coordonnees": {
-        "lat": 26.8744892,
-        "lng": 80.9060646
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=26.8744892,80.9060646",
-      "source": "osm"
-    },
-    {
-      "nom": "Buniyad Bagh",
-      "lat": 26.8569452,
-      "lng": 80.8945183,
-      "coordonnees": {
-        "lat": 26.8569452,
-        "lng": 80.8945183
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=26.8569452,80.8945183",
-      "source": "osm"
-    },
-    {
-      "nom": "Aliganj Park, Near Kendranchal",
-      "lat": 26.8972902,
-      "lng": 80.9420967,
-      "coordonnees": {
-        "lat": 26.8972902,
-        "lng": 80.9420967
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=26.8972902,80.9420967",
-      "source": "osm"
-    },
-    {
-      "nom": "Kendranchal Colony Park",
-      "lat": 26.8989729,
-      "lng": 80.9407744,
-      "coordonnees": {
-        "lat": 26.8989729,
-        "lng": 80.9407744
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=26.8989729,80.9407744",
-      "source": "osm"
-    },
-    {
-      "nom": "CSIR park",
-      "lat": 26.8991571,
-      "lng": 80.9434779,
-      "coordonnees": {
-        "lat": 26.8991571,
-        "lng": 80.9434779
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=26.8991571,80.9434779",
-      "source": "osm"
-    },
-    {
-      "nom": "Aliganj Common Park",
-      "lat": 26.903256,
-      "lng": 80.9435175,
-      "coordonnees": {
-        "lat": 26.903256,
-        "lng": 80.9435175
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=26.903256,80.9435175",
-      "source": "osm"
-    },
-    {
-      "nom": "Shivji Statue",
-      "lat": 26.816771,
-      "lng": 80.8903252,
-      "coordonnees": {
-        "lat": 26.816771,
-        "lng": 80.8903252
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=26.816771,80.8903252",
-      "source": "osm"
-    },
-    {
-      "nom": "Anand Park",
-      "lat": 26.854554,
-      "lng": 81.012462,
-      "coordonnees": {
-        "lat": 26.854554,
-        "lng": 81.012462
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=26.854554,81.012462",
-      "source": "osm"
-    },
-    {
-      "nom": "Geeta park sector",
-      "lat": 26.8842617,
-      "lng": 80.9990473,
-      "coordonnees": {
-        "lat": 26.8842617,
-        "lng": 80.9990473
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=26.8842617,80.9990473",
-      "source": "osm"
-    },
-    {
-      "nom": "park",
-      "lat": 26.8845036,
-      "lng": 81.0024422,
-      "coordonnees": {
-        "lat": 26.8845036,
-        "lng": 81.0024422
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=26.8845036,81.0024422",
-      "source": "osm"
-    },
-    {
-      "nom": "Moments marriage lawn",
-      "lat": 26.8851573,
-      "lng": 81.004354,
-      "coordonnees": {
-        "lat": 26.8851573,
-        "lng": 81.004354
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=26.8851573,81.004354",
-      "source": "osm"
-    },
-    {
-      "nom": "qwerrt",
-      "lat": 26.8677222,
-      "lng": 81.0180444,
-      "coordonnees": {
-        "lat": 26.8677222,
-        "lng": 81.0180444
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=26.8677222,81.0180444",
-      "source": "osm"
-    },
-    {
-      "nom": "Sai Sadan 142A Kaushalpuri Colony",
-      "lat": 26.8429071,
-      "lng": 81.0221519,
-      "coordonnees": {
-        "lat": 26.8429071,
-        "lng": 81.0221519
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=26.8429071,81.0221519",
-      "source": "osm"
-    },
-    {
-      "nom": "zhar",
-      "lat": 26.858999,
-      "lng": 81.0211491,
-      "coordonnees": {
-        "lat": 26.858999,
-        "lng": 81.0211491
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=26.858999,81.0211491",
-      "source": "osm"
-    },
-    {
-      "nom": "Vijyanta Park",
-      "lat": 26.8657517,
-      "lng": 81.0194193,
-      "coordonnees": {
-        "lat": 26.8657517,
-        "lng": 81.0194193
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=26.8657517,81.0194193",
-      "source": "osm"
-    },
-    {
-      "nom": "Park4",
-      "lat": 26.8607845,
-      "lng": 81.0208903,
-      "coordonnees": {
-        "lat": 26.8607845,
-        "lng": 81.0208903
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=26.8607845,81.0208903",
-      "source": "osm"
-    },
-    {
-      "nom": "Park 1233",
-      "lat": 26.8617658,
-      "lng": 81.0211378,
-      "coordonnees": {
-        "lat": 26.8617658,
-        "lng": 81.0211378
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=26.8617658,81.0211378",
-      "source": "osm"
-    },
-    {
-      "nom": "Park 3",
-      "lat": 26.8606455,
-      "lng": 81.0220681,
-      "coordonnees": {
-        "lat": 26.8606455,
-        "lng": 81.0220681
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=26.8606455,81.0220681",
-      "source": "osm"
-    },
-    {
-      "nom": "Exhibition Ground",
-      "lat": 26.8051688,
-      "lng": 81.0086457,
-      "coordonnees": {
-        "lat": 26.8051688,
-        "lng": 81.0086457
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=26.8051688,81.0086457",
-      "source": "osm"
-    },
-    {
-      "nom": "Vijyanta Park 2",
-      "lat": 26.8649995,
-      "lng": 81.0221597,
-      "coordonnees": {
-        "lat": 26.8649995,
-        "lng": 81.0221597
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=26.8649995,81.0221597",
-      "source": "osm"
-    },
-    {
-      "nom": "Bhojpuri Park",
-      "lat": 26.8726578,
-      "lng": 81.0193279,
-      "coordonnees": {
-        "lat": 26.8726578,
-        "lng": 81.0193279
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=26.8726578,81.0193279",
-      "source": "osm"
-    },
-    {
-      "nom": "Park Opposite",
-      "lat": 26.8631762,
-      "lng": 81.0229617,
-      "coordonnees": {
-        "lat": 26.8631762,
-        "lng": 81.0229617
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=26.8631762,81.0229617",
-      "source": "osm"
-    },
-    {
-      "nom": "VC Lawn",
-      "lat": 26.784019,
-      "lng": 80.9071112,
-      "coordonnees": {
-        "lat": 26.784019,
-        "lng": 80.9071112
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=26.784019,80.9071112",
-      "source": "osm"
-    },
-    {
-      "nom": "Golf city park",
-      "lat": 26.7883637,
-      "lng": 80.995525,
-      "coordonnees": {
-        "lat": 26.7883637,
-        "lng": 80.995525
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=26.7883637,80.995525",
-      "source": "osm"
-    },
-    {
-      "nom": "Khoda Park",
-      "lat": 26.870401,
-      "lng": 81.0237511,
-      "coordonnees": {
-        "lat": 26.870401,
-        "lng": 81.0237511
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=26.870401,81.0237511",
-      "source": "osm"
-    },
-    {
-      "nom": "Local Park",
-      "lat": 26.8693779,
-      "lng": 81.0245611,
-      "coordonnees": {
-        "lat": 26.8693779,
-        "lng": 81.0245611
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=26.8693779,81.0245611",
-      "source": "osm"
-    },
-    {
-      "nom": "Nandan park",
-      "lat": 26.8714822,
-      "lng": 81.0245906,
-      "coordonnees": {
-        "lat": 26.8714822,
-        "lng": 81.0245906
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=26.8714822,81.0245906",
-      "source": "osm"
-    },
-    {
-      "nom": "Kukrail Crocodile Park",
-      "lat": 26.9105552,
-      "lng": 80.9885657,
-      "coordonnees": {
-        "lat": 26.9105552,
-        "lng": 80.9885657
-      },
-      "categorie": "Famille",
-      "mapsUrl": "https://maps.google.com/?q=26.9105552,80.9885657",
-      "source": "osm"
-    },
-    {
-      "nom": "Gautam Buddha Park",
-      "lat": 26.7695172,
-      "lng": 80.954976,
-      "coordonnees": {
-        "lat": 26.7695172,
-        "lng": 80.954976
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=26.7695172,80.954976",
-      "source": "osm"
-    },
-    {
-      "nom": "Park no 4 cricket ground",
-      "lat": 26.9298914,
-      "lng": 80.9423458,
-      "coordonnees": {
-        "lat": 26.9298914,
-        "lng": 80.9423458
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=26.9298914,80.9423458",
-      "source": "osm"
-    },
-    {
-      "nom": "Home",
-      "lat": 26.7565833,
-      "lng": 80.9414067,
-      "coordonnees": {
-        "lat": 26.7565833,
-        "lng": 80.9414067
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=26.7565833,80.9414067",
-      "source": "osm"
-    },
-    {
-      "nom": "Grand Staircase",
-      "lat": 26.8515277,
-      "lng": 81.0501982,
-      "coordonnees": {
-        "lat": 26.8515277,
-        "lng": 81.0501982
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=26.8515277,81.0501982",
-      "source": "osm"
-    },
-    {
-      "nom": "Kids Park",
-      "lat": 26.9389261,
-      "lng": 80.9634249,
-      "coordonnees": {
-        "lat": 26.9389261,
-        "lng": 80.9634249
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=26.9389261,80.9634249",
-      "source": "osm"
-    },
-    {
-      "nom": "dasdsad",
-      "lat": 26.8873283,
-      "lng": 81.069116,
-      "coordonnees": {
-        "lat": 26.8873283,
-        "lng": 81.069116
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=26.8873283,81.069116",
-      "source": "osm"
-    }
-  ],
-  "imageCredit": "Wikimedia Commons",
-  "osmEnriched": true,
-  "osmEnrichedAt": "2026-06-30",
-  "description_en": "Lucknow, in India, is a halal-friendly destination with a Halal Trust Score of 4.5/5. Muslim travelers will find 13 halal restaurants listed, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
-  "metaDescription_en": "Halal guide to Lucknow: 13 halal restaurants listed, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.5/5.",
-  "nom_en": "Lucknow",
-  "boucheries": []
+  {
+   "nom": "Gareeb Nawaz hotel",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8854688,81.0058951",
+   "lat": 26.8854688,
+   "lng": 81.0058951,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "The Coconut Chutney",
+   "lat": 26.8747602,
+   "lng": 80.9588458,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=26.8747602,80.9588458",
+   "source": "osm"
+  },
+  {
+   "nom": "Curry Leaf",
+   "lat": 26.8740021,
+   "lng": 80.9775652,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=26.8740021,80.9775652",
+   "source": "osm"
+  },
+  {
+   "nom": "Aadab e Dastarkhwan",
+   "lat": 26.8724179,
+   "lng": 80.9807104,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=26.8724179,80.9807104",
+   "source": "osm"
+  },
+  {
+   "nom": "Baati Chokha",
+   "lat": 26.8590086,
+   "lng": 80.9945377,
+   "type": "indian, bihari",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=26.8590086,80.9945377",
+   "source": "osm"
+  },
+  {
+   "nom": "Tamil Nadi Dosa",
+   "lat": 26.8579982,
+   "lng": 80.9968007,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=26.8579982,80.9968007",
+   "source": "osm"
+  },
+  {
+   "nom": "Agni",
+   "lat": 26.8640885,
+   "lng": 81.0156619,
+   "type": "barbecue, indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=26.8640885,81.0156619",
+   "source": "osm"
+  },
+  {
+   "nom": "Shree Rajbhog",
+   "lat": 26.8732111,
+   "lng": 81.0151799,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=26.8732111,81.0151799",
+   "source": "osm"
+  },
+  {
+   "nom": "SHRI GANPATI SWEETS RESTAURANT BANQUET",
+   "lat": 26.7681353,
+   "lng": 80.9460584,
+   "type": "chinese, indian, noodle, sandwich",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=26.7681353,80.9460584",
+   "source": "osm"
+  },
+  {
+   "nom": "Udipi Restaurant",
+   "lat": 26.77587,
+   "lng": 80.9922545,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=26.77587,80.9922545",
+   "source": "osm"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "Ram Krishna Guest House",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8450829,80.9482153",
+   "lat": 26.8450829,
+   "lng": 80.9482153,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8450829,80.9482153",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Premier",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8461219,80.9403018",
+   "lat": 26.8461219,
+   "lng": 80.9403018,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8461219,80.9403018",
+   "source": "osm"
+  },
+  {
+   "nom": "Elora",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.848384,80.9403139",
+   "lat": 26.848384,
+   "lng": 80.9403139,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.848384,80.9403139",
+   "source": "osm"
+  },
+  {
+   "nom": "Sarang Manor Apartment",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.852592,80.9453174",
+   "lat": 26.852592,
+   "lng": 80.9453174,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.852592,80.9453174",
+   "source": "osm"
+  },
+  {
+   "nom": "Carlton",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8559683,80.9468813",
+   "lat": 26.8559683,
+   "lng": 80.9468813,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8559683,80.9468813",
+   "source": "osm"
+  },
+  {
+   "nom": "The Grand Radiant",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8420248,80.9368118",
+   "lat": 26.8420248,
+   "lng": 80.9368118,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.thegrandradiant.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Radisson",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8456527,80.9353104",
+   "lat": 26.8456527,
+   "lng": 80.9353104,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8456527,80.9353104",
+   "source": "osm"
+  },
+  {
+   "nom": "Gemini Continental",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.852589,80.936321",
+   "lat": 26.852589,
+   "lng": 80.936321,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.852589,80.936321",
+   "source": "osm"
+  },
+  {
+   "nom": "Saraka",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8342112,80.9480796",
+   "lat": 26.8342112,
+   "lng": 80.9480796,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8342112,80.9480796",
+   "source": "osm"
+  },
+  {
+   "nom": "Clarks Avadh",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8563567,80.9356865",
+   "lat": 26.8563567,
+   "lng": 80.9356865,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8563567,80.9356865",
+   "source": "osm"
+  },
+  {
+   "nom": "Lucknow Homestay",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8319807,80.9500145",
+   "lat": 26.8319807,
+   "lng": 80.9500145,
+   "halalFriendly": false,
+   "bookingUrl": "https://lucknowhomestay.wordpress.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Backpackers Den",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.831867,80.9497343",
+   "lat": 26.831867,
+   "lng": 80.9497343,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.831867,80.9497343",
+   "source": "osm"
+  },
+  {
+   "nom": "Dolphin Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8516148,80.9287974",
+   "lat": 26.8516148,
+   "lng": 80.9287974,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8516148,80.9287974",
+   "source": "osm"
+  },
+  {
+   "nom": "Madhur Milan Guest House",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8471144,80.9272964",
+   "lat": 26.8471144,
+   "lng": 80.9272964,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8471144,80.9272964",
+   "source": "osm"
+  },
+  {
+   "nom": "Central Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8490973,80.9249952",
+   "lat": 26.8490973,
+   "lng": 80.9249952,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8490973,80.9249952",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Simla Palace",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8400862,80.9255793",
+   "lat": 26.8400862,
+   "lng": 80.9255793,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8400862,80.9255793",
+   "source": "osm"
+  },
+  {
+   "nom": "Golden Sky",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8334596,80.9299811",
+   "lat": 26.8334596,
+   "lng": 80.9299811,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8334596,80.9299811",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Saket Regency",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8399455,80.925464",
+   "lat": 26.8399455,
+   "lng": 80.925464,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8399455,80.925464",
+   "source": "osm"
+  },
+  {
+   "nom": "Viraj Heights",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8392949,80.9247753",
+   "lat": 26.8392949,
+   "lng": 80.9247753,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8392949,80.9247753",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Di Di International",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8380733,80.9242704",
+   "lat": 26.8380733,
+   "lng": 80.9242704,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8380733,80.9242704",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Nexus correction location",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8375615,80.9224218",
+   "lat": 26.8375615,
+   "lng": 80.9224218,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8375615,80.9224218",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel ANR",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8371877,80.9214561",
+   "lat": 26.8371877,
+   "lng": 80.9214561,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8371877,80.9214561",
+   "source": "osm"
+  },
+  {
+   "nom": "kanha inn",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8423254,80.9193821",
+   "lat": 26.8423254,
+   "lng": 80.9193821,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8423254,80.9193821",
+   "source": "osm"
+  },
+  {
+   "nom": "Renaissance Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8525168,80.9731692",
+   "lat": 26.8525168,
+   "lng": 80.9731692,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8525168,80.9731692",
+   "source": "osm"
+  },
+  {
+   "nom": "Best Western",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.857139,80.9729424",
+   "lat": 26.857139,
+   "lng": 80.9729424,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.857139,80.9729424",
+   "source": "osm"
+  },
+  {
+   "nom": "Moon Star",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8345519,80.9201968",
+   "lat": 26.8345519,
+   "lng": 80.9201968,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8345519,80.9201968",
+   "source": "osm"
+  },
+  {
+   "nom": "Taj Residency",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.851312,80.9753465",
+   "lat": 26.851312,
+   "lng": 80.9753465,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.851312,80.9753465",
+   "source": "osm"
+  },
+  {
+   "nom": "Kanaihyalal Dharmik Guesthouse",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8716167,80.9294146",
+   "lat": 26.8716167,
+   "lng": 80.9294146,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8716167,80.9294146",
+   "source": "osm"
+  },
+  {
+   "nom": "Royal Boys Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8751582,80.9577468",
+   "lat": 26.8751582,
+   "lng": 80.9577468,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8751582,80.9577468",
+   "source": "osm"
+  },
+  {
+   "nom": "The Regnant",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8766124,80.9374338",
+   "lat": 26.8766124,
+   "lng": 80.9374338,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8766124,80.9374338",
+   "source": "osm"
+  },
+  {
+   "nom": "Nehru Enclave",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8599766,80.9793608",
+   "lat": 26.8599766,
+   "lng": 80.9793608,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8599766,80.9793608",
+   "source": "osm"
+  },
+  {
+   "nom": "POSHTEL - Your AnyDay Hostel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8508278,80.9824052",
+   "lat": 26.8508278,
+   "lng": 80.9824052,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.booking.com/hotel/in/poshtel.fr.html",
+   "source": "osm"
+  },
+  {
+   "nom": "Power Grid Corporation Guest House",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8521721,80.9822424",
+   "lat": 26.8521721,
+   "lng": 80.9822424,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8521721,80.9822424",
+   "source": "osm"
+  },
+  {
+   "nom": "UP Police Computer Trainees Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8607089,80.9801443",
+   "lat": 26.8607089,
+   "lng": 80.9801443,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8607089,80.9801443",
+   "source": "osm"
+  },
+  {
+   "nom": "A 545 Indira Nagar, Lucknow",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8724137,80.9736887",
+   "lat": 26.8724137,
+   "lng": 80.9736887,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8724137,80.9736887",
+   "source": "osm"
+  },
+  {
+   "nom": "Vindhyavasini Guest House",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.879675,80.9664484",
+   "lat": 26.879675,
+   "lng": 80.9664484,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.879675,80.9664484",
+   "source": "osm"
+  },
+  {
+   "nom": "Shiva Guest House",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8601977,80.9866812",
+   "lat": 26.8601977,
+   "lng": 80.9866812,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8601977,80.9866812",
+   "source": "osm"
+  },
+  {
+   "nom": "Shubhkamna Grand",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "score": 2,
+   "mapsUrl": "https://maps.google.com/?q=26.8740021,80.9776093",
+   "lat": 26.8740021,
+   "lng": 80.9776093,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8740021,80.9776093",
+   "source": "osm"
+  },
+  {
+   "nom": "Dayal Paradise",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.842692,80.9909895",
+   "lat": 26.842692,
+   "lng": 80.9909895,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.dayalparadise.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Paras Inn",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8827441,80.9672253",
+   "lat": 26.8827441,
+   "lng": 80.9672253,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8827441,80.9672253",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Bandhan",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8725626,80.981356",
+   "lat": 26.8725626,
+   "lng": 80.981356,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8725626,80.981356",
+   "source": "osm"
+  },
+  {
+   "nom": "H.A.L. Guest House",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8695217,80.9863789",
+   "lat": 26.8695217,
+   "lng": 80.9863789,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8695217,80.9863789",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Metro",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.818672,80.907891",
+   "lat": 26.818672,
+   "lng": 80.907891,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.818672,80.907891",
+   "source": "osm"
+  },
+  {
+   "nom": "Neelgiri Girls Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8947509,80.9439784",
+   "lat": 26.8947509,
+   "lng": 80.9439784,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8947509,80.9439784",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Savvy Grand",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.865763,80.9965736",
+   "lat": 26.865763,
+   "lng": 80.9965736,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.865763,80.9965736",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Jayanti Oasis Inn",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8859619,80.9818038",
+   "lat": 26.8859619,
+   "lng": 80.9818038,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8859619,80.9818038",
+   "source": "osm"
+  },
+  {
+   "nom": "OYO Townhouse",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8858093,80.9835184",
+   "lat": 26.8858093,
+   "lng": 80.9835184,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8858093,80.9835184",
+   "source": "osm"
+  },
+  {
+   "nom": "Arora Guest House",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8102761,80.9053208",
+   "lat": 26.8102761,
+   "lng": 80.9053208,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8102761,80.9053208",
+   "source": "osm"
+  },
+  {
+   "nom": "Central Government Touring Officers Guest House",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8985913,80.9400752",
+   "lat": 26.8985913,
+   "lng": 80.9400752,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8985913,80.9400752",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Vijay Paradise",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8983183,80.9669433",
+   "lat": 26.8983183,
+   "lng": 80.9669433,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8983183,80.9669433",
+   "source": "osm"
+  },
+  {
+   "nom": "Sapna Clarks Inn",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8998525,80.9651039",
+   "lat": 26.8998525,
+   "lng": 80.9651039,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8998525,80.9651039",
+   "source": "osm"
+  },
+  {
+   "nom": "OYO Flagship Polytechnic Chauraha",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.874206,81.0015339",
+   "lat": 26.874206,
+   "lng": 81.0015339,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.874206,81.0015339",
+   "source": "osm"
+  },
+  {
+   "nom": "Omaxe Mini Hazratganj",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8113971,80.9963649",
+   "lat": 26.8113971,
+   "lng": 80.9963649,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8113971,80.9963649",
+   "source": "osm"
+  },
+  {
+   "nom": "Purvanchal Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8733715,81.0028984",
+   "lat": 26.8733715,
+   "lng": 81.0028984,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8733715,81.0028984",
+   "source": "osm"
+  },
+  {
+   "nom": "Omaxe Hazratganj",
+   "categorie": "Hôtel",
+   "priceRange": "€€€",
+   "score": 3,
+   "mapsUrl": "https://maps.google.com/?q=26.8117228,80.9975892",
+   "lat": 26.8117228,
+   "lng": 80.9975892,
+   "halalFriendly": false,
+   "bookingUrl": "https://celestialmanor.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Hilton Garden Inn Lucknow",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 4,
+   "mapsUrl": "https://maps.google.com/?q=26.8641762,81.0080473",
+   "lat": 26.8641762,
+   "lng": 81.0080473,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.hilton.com/en/hotels/lkogigi-hilton-garden-inn-lucknow/",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Grand Inn",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8830019,80.9976119",
+   "lat": 26.8830019,
+   "lng": 80.9976119,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8830019,80.9976119",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Ratan International",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.9038917,80.9623578",
+   "lat": 26.9038917,
+   "lng": 80.9623578,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.9038917,80.9623578",
+   "source": "osm"
+  },
+  {
+   "nom": "Park Inn by Radisson",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.9048451,80.9604338",
+   "lat": 26.9048451,
+   "lng": 80.9604338,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.9048451,80.9604338",
+   "source": "osm"
+  },
+  {
+   "nom": "Saryu Apartments",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8345104,81.0139237",
+   "lat": 26.8345104,
+   "lng": 81.0139237,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8345104,81.0139237",
+   "source": "osm"
+  },
+  {
+   "nom": "OYO",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.890392,80.9962613",
+   "lat": 26.890392,
+   "lng": 80.9962613,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.890392,80.9962613",
+   "source": "osm"
+  },
+  {
+   "nom": "Guru Kripa Krishna Home",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8634329,81.0151921",
+   "lat": 26.8634329,
+   "lng": 81.0151921,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8634329,81.0151921",
+   "source": "osm"
+  },
+  {
+   "nom": "Hastag Traveler's",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.7982415,80.8988214",
+   "lat": 26.7982415,
+   "lng": 80.8988214,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.7982415,80.8988214",
+   "source": "osm"
+  },
+  {
+   "nom": "BBD Viraj Tower",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8712445,81.013224",
+   "lat": 26.8712445,
+   "lng": 81.013224,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8712445,81.013224",
+   "source": "osm"
+  },
+  {
+   "nom": "Utopian Luxe",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8703683,81.0147426",
+   "lat": 26.8703683,
+   "lng": 81.0147426,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8703683,81.0147426",
+   "source": "osm"
+  },
+  {
+   "nom": "Amaraa Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8200591,81.0135676",
+   "lat": 26.8200591,
+   "lng": 81.0135676,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8200591,81.0135676",
+   "source": "osm"
+  },
+  {
+   "nom": "Ranjan Heritage",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8714587,81.0150684",
+   "lat": 26.8714587,
+   "lng": 81.0150684,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8714587,81.0150684",
+   "source": "osm"
+  },
+  {
+   "nom": "Best Non-Veg shop",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8854482,81.006499",
+   "lat": 26.8854482,
+   "lng": 81.006499,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8854482,81.006499",
+   "source": "osm"
+  },
+  {
+   "nom": "Dehati Rasoi",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8719018,81.0151652",
+   "lat": 26.8719018,
+   "lng": 81.0151652,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8719018,81.0151652",
+   "source": "osm"
+  },
+  {
+   "nom": "Piccadily",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.7983659,80.8949212",
+   "lat": 26.7983659,
+   "lng": 80.8949212,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.7983659,80.8949212",
+   "source": "osm"
+  },
+  {
+   "nom": "pinnacle",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.7878444,80.9092367",
+   "lat": 26.7878444,
+   "lng": 80.9092367,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.7878444,80.9092367",
+   "source": "osm"
+  },
+  {
+   "nom": "Pahalwan Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8401984,80.870695",
+   "lat": 26.8401984,
+   "lng": 80.870695,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8401984,80.870695",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Meghalaya",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8071834,81.0102906",
+   "lat": 26.8071834,
+   "lng": 81.0102906,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8071834,81.0102906",
+   "source": "osm"
+  },
+  {
+   "nom": "FabHotel Gayatri Palace",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8726733,81.0200206",
+   "lat": 26.8726733,
+   "lng": 81.0200206,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8726733,81.0200206",
+   "source": "osm"
+  },
+  {
+   "nom": "hELLO",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8718493,81.0218271",
+   "lat": 26.8718493,
+   "lng": 81.0218271,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8718493,81.0218271",
+   "source": "osm"
+  },
+  {
+   "nom": "Guest House 1",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8689479,81.0229991",
+   "lat": 26.8689479,
+   "lng": 81.0229991,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8689479,81.0229991",
+   "source": "osm"
+  },
+  {
+   "nom": "Prithvi Resort",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8001548,81.0083743",
+   "lat": 26.8001548,
+   "lng": 81.0083743,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8001548,81.0083743",
+   "source": "osm"
+  },
+  {
+   "nom": "Guest House Number 2",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8688023,81.0236298",
+   "lat": 26.8688023,
+   "lng": 81.0236298,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8688023,81.0236298",
+   "source": "osm"
+  },
+  {
+   "nom": "Guest House 2",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8686833,81.0241717",
+   "lat": 26.8686833,
+   "lng": 81.0241717,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8686833,81.0241717",
+   "source": "osm"
+  },
+  {
+   "nom": "Guest House 4",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8685952,81.024713",
+   "lat": 26.8685952,
+   "lng": 81.024713,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8685952,81.024713",
+   "source": "osm"
+  },
+  {
+   "nom": "Memorable Homestay",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8887031,81.0150148",
+   "lat": 26.8887031,
+   "lng": 81.0150148,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.8887031,81.0150148",
+   "source": "osm"
+  },
+  {
+   "nom": "Spring Grand",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.7996747,81.016077",
+   "lat": 26.7996747,
+   "lng": 81.016077,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.7996747,81.016077",
+   "source": "osm"
+  },
+  {
+   "nom": "Damson Plum",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.7794717,80.9929917",
+   "lat": 26.7794717,
+   "lng": 80.9929917,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=26.7794717,80.9929917",
+   "source": "osm"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "Jama Masjid",
+   "lat": 26.8475121,
+   "lng": 80.9398241,
+   "coordonnees": {
+    "lat": 26.8475121,
+    "lng": 80.9398241
+   },
+   "mapsUrl": "https://maps.google.com/?q=26.8475121,80.9398241",
+   "source": "osm"
+  },
+  {
+   "nom": "Haidery Masjid",
+   "lat": 26.8627139,
+   "lng": 80.9512933,
+   "coordonnees": {
+    "lat": 26.8627139,
+    "lng": 80.9512933
+   },
+   "mapsUrl": "https://maps.google.com/?q=26.8627139,80.9512933",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid",
+   "lat": 26.8500268,
+   "lng": 80.925133,
+   "coordonnees": {
+    "lat": 26.8500268,
+    "lng": 80.925133
+   },
+   "mapsUrl": "https://maps.google.com/?q=26.8500268,80.925133",
+   "source": "osm"
+  },
+  {
+   "nom": "Tilewali Masjid",
+   "lat": 26.8716288,
+   "lng": 80.9144263,
+   "coordonnees": {
+    "lat": 26.8716288,
+    "lng": 80.9144263
+   },
+   "mapsUrl": "https://maps.google.com/?q=26.8716288,80.9144263",
+   "source": "osm"
+  },
+  {
+   "nom": "Jama Masjid Anjuman",
+   "lat": 26.8823074,
+   "lng": 80.9763359,
+   "coordonnees": {
+    "lat": 26.8823074,
+    "lng": 80.9763359
+   },
+   "mapsUrl": "https://maps.google.com/?q=26.8823074,80.9763359",
+   "source": "osm"
+  },
+  {
+   "nom": "Karbala Diyanat Ud Daula",
+   "lat": 26.8551371,
+   "lng": 80.8935479,
+   "coordonnees": {
+    "lat": 26.8551371,
+    "lng": 80.8935479
+   },
+   "mapsUrl": "https://maps.google.com/?q=26.8551371,80.8935479",
+   "source": "osm"
+  },
+  {
+   "nom": "Munshi Pulia Jama Masjid",
+   "lat": 26.885367,
+   "lng": 80.9974169,
+   "coordonnees": {
+    "lat": 26.885367,
+    "lng": 80.9974169
+   },
+   "mapsUrl": "https://maps.google.com/?q=26.885367,80.9974169",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid insaf nagar",
+   "lat": 26.8849186,
+   "lng": 81.0050655,
+   "coordonnees": {
+    "lat": 26.8849186,
+    "lng": 81.0050655
+   },
+   "mapsUrl": "https://maps.google.com/?q=26.8849186,81.0050655",
+   "source": "osm"
+  },
+  {
+   "nom": "Eid Gah, RajajiPuram",
+   "lat": 26.8438653,
+   "lng": 80.873103,
+   "coordonnees": {
+    "lat": 26.8438653,
+    "lng": 80.873103
+   },
+   "mapsUrl": "https://maps.google.com/?q=26.8438653,80.873103",
+   "source": "osm"
+  },
+  {
+   "nom": "Jama Masjid Gandhinagar",
+   "lat": 26.7791185,
+   "lng": 80.9444383,
+   "coordonnees": {
+    "lat": 26.7791185,
+    "lng": 80.9444383
+   },
+   "adresse": "Telibagh, Lucknow",
+   "mapsUrl": "https://maps.google.com/?q=26.7791185,80.9444383",
+   "source": "osm"
+  },
+  {
+   "nom": "Rehmani Masjid",
+   "lat": 26.8016269,
+   "lng": 81.0053841,
+   "coordonnees": {
+    "lat": 26.8016269,
+    "lng": 81.0053841
+   },
+   "mapsUrl": "https://maps.google.com/?q=26.8016269,81.0053841",
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Mahatama Gandhi Statue",
+   "lat": 26.8458715,
+   "lng": 80.9458775,
+   "coordonnees": {
+    "lat": 26.8458715,
+    "lng": 80.9458775
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=26.8458715,80.9458775",
+   "source": "osm"
+  },
+  {
+   "nom": "Habbibullah Estate",
+   "lat": 26.8511421,
+   "lng": 80.9418772,
+   "coordonnees": {
+    "lat": 26.8511421,
+    "lng": 80.9418772
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=26.8511421,80.9418772",
+   "source": "osm"
+  },
+  {
+   "nom": "National Post graduate college ground",
+   "lat": 26.8571258,
+   "lng": 80.9420724,
+   "coordonnees": {
+    "lat": 26.8571258,
+    "lng": 80.9420724
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=26.8571258,80.9420724",
+   "source": "osm"
+  },
+  {
+   "nom": "Virangana uda devi pasi park",
+   "lat": 26.8529376,
+   "lng": 80.9325704,
+   "coordonnees": {
+    "lat": 26.8529376,
+    "lng": 80.9325704
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=26.8529376,80.9325704",
+   "source": "osm"
+  },
+  {
+   "nom": "Begum Hazrat Mahal Park",
+   "lat": 26.8557493,
+   "lng": 80.9343728,
+   "coordonnees": {
+    "lat": 26.8557493,
+    "lng": 80.9343728
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=26.8557493,80.9343728",
+   "source": "osm"
+  },
+  {
+   "nom": "Butler Palace",
+   "lat": 26.8538641,
+   "lng": 80.9596484,
+   "coordonnees": {
+    "lat": 26.8538641,
+    "lng": 80.9596484
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=26.8538641,80.9596484",
+   "source": "osm"
+  },
+  {
+   "nom": "Major General Calude Martin",
+   "lat": 26.8400996,
+   "lng": 80.9617969,
+   "coordonnees": {
+    "lat": 26.8400996,
+    "lng": 80.9617969
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=26.8400996,80.9617969",
+   "source": "osm"
+  },
+  {
+   "nom": "Martin Summer Palace",
+   "lat": 26.8369037,
+   "lng": 80.9613603,
+   "coordonnees": {
+    "lat": 26.8369037,
+    "lng": 80.9613603
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=26.8369037,80.9613603",
+   "source": "osm"
+  },
+  {
+   "nom": "Chhatar Manzil",
+   "lat": 26.8586921,
+   "lng": 80.9323942,
+   "coordonnees": {
+    "lat": 26.8586921,
+    "lng": 80.9323942
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=26.8586921,80.9323942",
+   "source": "osm"
+  },
+  {
+   "nom": "Shivaji's statue",
+   "lat": 26.8625741,
+   "lng": 80.9375063,
+   "coordonnees": {
+    "lat": 26.8625741,
+    "lng": 80.9375063
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=26.8625741,80.9375063",
+   "source": "osm"
+  },
+  {
+   "nom": "Ambedkar Memorial",
+   "lat": 26.8465709,
+   "lng": 80.9671999,
+   "coordonnees": {
+    "lat": 26.8465709,
+    "lng": 80.9671999
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=26.8465709,80.9671999",
+   "source": "osm"
+  },
+  {
+   "nom": "Atkin's Post",
+   "lat": 26.8607412,
+   "lng": 80.9271123,
+   "coordonnees": {
+    "lat": 26.8607412,
+    "lng": 80.9271123
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=26.8607412,80.9271123",
+   "source": "osm"
+  },
+  {
+   "nom": "रेजीडेंसी",
+   "lat": 26.860904,
+   "lng": 80.9258774,
+   "coordonnees": {
+    "lat": 26.860904,
+    "lng": 80.9258774
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=26.860904,80.9258774",
+   "source": "osm"
+  },
+  {
+   "nom": "Shaheed Smarak",
+   "lat": 26.863365,
+   "lng": 80.928347,
+   "coordonnees": {
+    "lat": 26.863365,
+    "lng": 80.928347
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=26.863365,80.928347",
+   "source": "osm"
+  },
+  {
+   "nom": "Doctor Bhim Rao Ambedkar",
+   "lat": 26.832528,
+   "lng": 80.9241633,
+   "coordonnees": {
+    "lat": 26.832528,
+    "lng": 80.9241633
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=26.832528,80.9241633",
+   "source": "osm"
+  },
+  {
+   "nom": "Ambedkar Statue",
+   "lat": 26.8487105,
+   "lng": 80.9744607,
+   "coordonnees": {
+    "lat": 26.8487105,
+    "lng": 80.9744607
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=26.8487105,80.9744607",
+   "source": "osm"
+  },
+  {
+   "nom": "Chandrashekhar Aazaad",
+   "lat": 26.8742996,
+   "lng": 80.9583067,
+   "coordonnees": {
+    "lat": 26.8742996,
+    "lng": 80.9583067
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=26.8742996,80.9583067",
+   "source": "osm"
+  },
+  {
+   "nom": "Akbari Gate",
+   "lat": 26.8621638,
+   "lng": 80.9072922,
+   "coordonnees": {
+    "lat": 26.8621638,
+    "lng": 80.9072922
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=26.8621638,80.9072922",
+   "source": "osm"
+  },
+  {
+   "nom": "Lda market",
+   "lat": 26.8908469,
+   "lng": 80.953229,
+   "coordonnees": {
+    "lat": 26.8908469,
+    "lng": 80.953229
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=26.8908469,80.953229",
+   "source": "osm"
+  },
+  {
+   "nom": "Satkhanda",
+   "lat": 26.8744892,
+   "lng": 80.9060646,
+   "coordonnees": {
+    "lat": 26.8744892,
+    "lng": 80.9060646
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=26.8744892,80.9060646",
+   "source": "osm"
+  },
+  {
+   "nom": "Buniyad Bagh",
+   "lat": 26.8569452,
+   "lng": 80.8945183,
+   "coordonnees": {
+    "lat": 26.8569452,
+    "lng": 80.8945183
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=26.8569452,80.8945183",
+   "source": "osm"
+  },
+  {
+   "nom": "Aliganj Park, Near Kendranchal",
+   "lat": 26.8972902,
+   "lng": 80.9420967,
+   "coordonnees": {
+    "lat": 26.8972902,
+    "lng": 80.9420967
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=26.8972902,80.9420967",
+   "source": "osm"
+  },
+  {
+   "nom": "Kendranchal Colony Park",
+   "lat": 26.8989729,
+   "lng": 80.9407744,
+   "coordonnees": {
+    "lat": 26.8989729,
+    "lng": 80.9407744
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=26.8989729,80.9407744",
+   "source": "osm"
+  },
+  {
+   "nom": "CSIR park",
+   "lat": 26.8991571,
+   "lng": 80.9434779,
+   "coordonnees": {
+    "lat": 26.8991571,
+    "lng": 80.9434779
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=26.8991571,80.9434779",
+   "source": "osm"
+  },
+  {
+   "nom": "Aliganj Common Park",
+   "lat": 26.903256,
+   "lng": 80.9435175,
+   "coordonnees": {
+    "lat": 26.903256,
+    "lng": 80.9435175
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=26.903256,80.9435175",
+   "source": "osm"
+  },
+  {
+   "nom": "Shivji Statue",
+   "lat": 26.816771,
+   "lng": 80.8903252,
+   "coordonnees": {
+    "lat": 26.816771,
+    "lng": 80.8903252
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=26.816771,80.8903252",
+   "source": "osm"
+  },
+  {
+   "nom": "Anand Park",
+   "lat": 26.854554,
+   "lng": 81.012462,
+   "coordonnees": {
+    "lat": 26.854554,
+    "lng": 81.012462
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=26.854554,81.012462",
+   "source": "osm"
+  },
+  {
+   "nom": "Geeta park sector",
+   "lat": 26.8842617,
+   "lng": 80.9990473,
+   "coordonnees": {
+    "lat": 26.8842617,
+    "lng": 80.9990473
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=26.8842617,80.9990473",
+   "source": "osm"
+  },
+  {
+   "nom": "park",
+   "lat": 26.8845036,
+   "lng": 81.0024422,
+   "coordonnees": {
+    "lat": 26.8845036,
+    "lng": 81.0024422
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=26.8845036,81.0024422",
+   "source": "osm"
+  },
+  {
+   "nom": "Moments marriage lawn",
+   "lat": 26.8851573,
+   "lng": 81.004354,
+   "coordonnees": {
+    "lat": 26.8851573,
+    "lng": 81.004354
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=26.8851573,81.004354",
+   "source": "osm"
+  },
+  {
+   "nom": "qwerrt",
+   "lat": 26.8677222,
+   "lng": 81.0180444,
+   "coordonnees": {
+    "lat": 26.8677222,
+    "lng": 81.0180444
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=26.8677222,81.0180444",
+   "source": "osm"
+  },
+  {
+   "nom": "Sai Sadan 142A Kaushalpuri Colony",
+   "lat": 26.8429071,
+   "lng": 81.0221519,
+   "coordonnees": {
+    "lat": 26.8429071,
+    "lng": 81.0221519
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=26.8429071,81.0221519",
+   "source": "osm"
+  },
+  {
+   "nom": "zhar",
+   "lat": 26.858999,
+   "lng": 81.0211491,
+   "coordonnees": {
+    "lat": 26.858999,
+    "lng": 81.0211491
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=26.858999,81.0211491",
+   "source": "osm"
+  },
+  {
+   "nom": "Vijyanta Park",
+   "lat": 26.8657517,
+   "lng": 81.0194193,
+   "coordonnees": {
+    "lat": 26.8657517,
+    "lng": 81.0194193
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=26.8657517,81.0194193",
+   "source": "osm"
+  },
+  {
+   "nom": "Park4",
+   "lat": 26.8607845,
+   "lng": 81.0208903,
+   "coordonnees": {
+    "lat": 26.8607845,
+    "lng": 81.0208903
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=26.8607845,81.0208903",
+   "source": "osm"
+  },
+  {
+   "nom": "Park 1233",
+   "lat": 26.8617658,
+   "lng": 81.0211378,
+   "coordonnees": {
+    "lat": 26.8617658,
+    "lng": 81.0211378
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=26.8617658,81.0211378",
+   "source": "osm"
+  },
+  {
+   "nom": "Park 3",
+   "lat": 26.8606455,
+   "lng": 81.0220681,
+   "coordonnees": {
+    "lat": 26.8606455,
+    "lng": 81.0220681
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=26.8606455,81.0220681",
+   "source": "osm"
+  },
+  {
+   "nom": "Exhibition Ground",
+   "lat": 26.8051688,
+   "lng": 81.0086457,
+   "coordonnees": {
+    "lat": 26.8051688,
+    "lng": 81.0086457
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=26.8051688,81.0086457",
+   "source": "osm"
+  },
+  {
+   "nom": "Vijyanta Park 2",
+   "lat": 26.8649995,
+   "lng": 81.0221597,
+   "coordonnees": {
+    "lat": 26.8649995,
+    "lng": 81.0221597
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=26.8649995,81.0221597",
+   "source": "osm"
+  },
+  {
+   "nom": "Bhojpuri Park",
+   "lat": 26.8726578,
+   "lng": 81.0193279,
+   "coordonnees": {
+    "lat": 26.8726578,
+    "lng": 81.0193279
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=26.8726578,81.0193279",
+   "source": "osm"
+  },
+  {
+   "nom": "Park Opposite",
+   "lat": 26.8631762,
+   "lng": 81.0229617,
+   "coordonnees": {
+    "lat": 26.8631762,
+    "lng": 81.0229617
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=26.8631762,81.0229617",
+   "source": "osm"
+  },
+  {
+   "nom": "VC Lawn",
+   "lat": 26.784019,
+   "lng": 80.9071112,
+   "coordonnees": {
+    "lat": 26.784019,
+    "lng": 80.9071112
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=26.784019,80.9071112",
+   "source": "osm"
+  },
+  {
+   "nom": "Golf city park",
+   "lat": 26.7883637,
+   "lng": 80.995525,
+   "coordonnees": {
+    "lat": 26.7883637,
+    "lng": 80.995525
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=26.7883637,80.995525",
+   "source": "osm"
+  },
+  {
+   "nom": "Khoda Park",
+   "lat": 26.870401,
+   "lng": 81.0237511,
+   "coordonnees": {
+    "lat": 26.870401,
+    "lng": 81.0237511
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=26.870401,81.0237511",
+   "source": "osm"
+  },
+  {
+   "nom": "Local Park",
+   "lat": 26.8693779,
+   "lng": 81.0245611,
+   "coordonnees": {
+    "lat": 26.8693779,
+    "lng": 81.0245611
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=26.8693779,81.0245611",
+   "source": "osm"
+  },
+  {
+   "nom": "Nandan park",
+   "lat": 26.8714822,
+   "lng": 81.0245906,
+   "coordonnees": {
+    "lat": 26.8714822,
+    "lng": 81.0245906
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=26.8714822,81.0245906",
+   "source": "osm"
+  },
+  {
+   "nom": "Kukrail Crocodile Park",
+   "lat": 26.9105552,
+   "lng": 80.9885657,
+   "coordonnees": {
+    "lat": 26.9105552,
+    "lng": 80.9885657
+   },
+   "categorie": "Famille",
+   "mapsUrl": "https://maps.google.com/?q=26.9105552,80.9885657",
+   "source": "osm"
+  },
+  {
+   "nom": "Gautam Buddha Park",
+   "lat": 26.7695172,
+   "lng": 80.954976,
+   "coordonnees": {
+    "lat": 26.7695172,
+    "lng": 80.954976
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=26.7695172,80.954976",
+   "source": "osm"
+  },
+  {
+   "nom": "Park no 4 cricket ground",
+   "lat": 26.9298914,
+   "lng": 80.9423458,
+   "coordonnees": {
+    "lat": 26.9298914,
+    "lng": 80.9423458
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=26.9298914,80.9423458",
+   "source": "osm"
+  },
+  {
+   "nom": "Home",
+   "lat": 26.7565833,
+   "lng": 80.9414067,
+   "coordonnees": {
+    "lat": 26.7565833,
+    "lng": 80.9414067
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=26.7565833,80.9414067",
+   "source": "osm"
+  },
+  {
+   "nom": "Grand Staircase",
+   "lat": 26.8515277,
+   "lng": 81.0501982,
+   "coordonnees": {
+    "lat": 26.8515277,
+    "lng": 81.0501982
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=26.8515277,81.0501982",
+   "source": "osm"
+  },
+  {
+   "nom": "Kids Park",
+   "lat": 26.9389261,
+   "lng": 80.9634249,
+   "coordonnees": {
+    "lat": 26.9389261,
+    "lng": 80.9634249
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=26.9389261,80.9634249",
+   "source": "osm"
+  },
+  {
+   "nom": "dasdsad",
+   "lat": 26.8873283,
+   "lng": 81.069116,
+   "coordonnees": {
+    "lat": 26.8873283,
+    "lng": 81.069116
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=26.8873283,81.069116",
+   "source": "osm"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30",
+ "description_en": "Lucknow, in India, is a halal-friendly destination with a Halal Trust Score of 4.5/5. Muslim travelers will find 13 halal restaurants listed, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
+ "metaDescription_en": "Halal guide to Lucknow: 13 halal restaurants listed, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.5/5.",
+ "nom_en": "Lucknow",
+ "boucheries": [],
+ "dataPurgedAt": "2026-07-15"
 }

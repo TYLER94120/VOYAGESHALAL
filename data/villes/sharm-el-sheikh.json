@@ -1,1855 +1,1819 @@
 {
-  "slug": "sharm-el-sheikh",
-  "nom": "Charm el-Cheikh",
-  "pays": "Égypte",
-  "pays_slug": "egypte",
-  "continent": "Afrique",
-  "region": "Mer Rouge",
-  "coordonnees": {
-    "lat": 27.9158,
-    "lng": 34.33
+ "slug": "sharm-el-sheikh",
+ "nom": "Charm el-Cheikh",
+ "pays": "Égypte",
+ "pays_slug": "egypte",
+ "continent": "Afrique",
+ "region": "Mer Rouge",
+ "coordonnees": {
+  "lat": 27.9158,
+  "lng": 34.33
+ },
+ "codeISO": "",
+ "score_halal": 4.4,
+ "halalScore": 8.8,
+ "description": "Station balnéaire de la mer Rouge, Charm el-Cheikh offre récifs coralliens, plages et la mosquée Al Sahaba aux dômes orientaux.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Naama_Bay_R01.jpg/1920px-Naama_Bay_R01.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Naama_Bay_R01.jpg/1920px-Naama_Bay_R01.jpg",
+ "metaDescription": "Station balnéaire de la mer Rouge, Charm el-Cheikh offre récifs coralliens, plages et la mosquée Al Sahaba aux dômes orientaux.",
+ "statistiques": {
+  "restaurants_halal": 5,
+  "mosquees": 2,
+  "hotels": 115
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "El MASRIEN",
+   "type": "arab, italian, tea",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8658892,34.2937701",
+   "lat": 27.8658892,
+   "lng": 34.2937701,
+   "halalConfidence": "likely",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.4,
-  "halalScore": 8.8,
-  "description": "Station balnéaire de la mer Rouge, Charm el-Cheikh offre récifs coralliens, plages et la mosquée Al Sahaba aux dômes orientaux.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Naama_Bay_R01.jpg/1920px-Naama_Bay_R01.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Naama_Bay_R01.jpg/1920px-Naama_Bay_R01.jpg",
-  "metaDescription": "Station balnéaire de la mer Rouge, Charm el-Cheikh offre récifs coralliens, plages et la mosquée Al Sahaba aux dômes orientaux.",
-  "statistiques": {
-    "restaurants_halal": 2,
-    "mosquees": 1,
-    "hotels": 120
+  {
+   "nom": "Main Restaurant",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8631794,34.2968333",
+   "lat": 27.8631794,
+   "lng": 34.2968333,
+   "halalConfidence": "likely",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "Al Hariri Syrian Food",
+   "lat": 27.8631167,
+   "lng": 34.3121675,
+   "type": "arab",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=27.8631167,34.3121675",
+   "source": "osm"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [
-    {
-      "nom": "El MASRIEN",
-      "type": "arab, italian, tea",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8658892,34.2937701",
-      "lat": 27.8658892,
-      "lng": 34.2937701,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Main Restaurant",
-      "type": "turkish",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8631794,34.2968333",
-      "lat": 27.8631794,
-      "lng": 34.2968333,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Al Hariri Syrian Food",
-      "lat": 27.8631167,
-      "lng": 34.3121675,
-      "type": "arab",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=27.8631167,34.3121675",
-      "source": "osm"
-    },
-    {
-      "nom": "Shark’s bay",
-      "lat": 27.9521467,
-      "lng": 34.3852421,
-      "type": "arab, chicken, burger, grill, kebab, international, pasta, mediterranean",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=27.9521467,34.3852421",
-      "source": "osm"
-    },
-    {
-      "nom": "Mandarin",
-      "lat": 27.9621396,
-      "lng": 34.3932561,
-      "type": "chinese, indian, local, thai",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=27.9621396,34.3932561",
-      "source": "osm"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "Novotel Palm",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9171032,34.3302678",
-      "lat": 27.9171032,
-      "lng": 34.3302678,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9171032,34.3302678",
-      "source": "osm"
-    },
-    {
-      "nom": "Tropicana Rosetta",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9161245,34.3283183",
-      "lat": 27.9161245,
-      "lng": 34.3283183,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9161245,34.3283183",
-      "source": "osm"
-    },
-    {
-      "nom": "Sinai Sunset",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9170269,34.3283974",
-      "lat": 27.9170269,
-      "lng": 34.3283974,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9170269,34.3283974",
-      "source": "osm"
-    },
-    {
-      "nom": "منتجع ماريوت شرم الشيخ",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9162639,34.3324096",
-      "lat": 27.9162639,
-      "lng": 34.3324096,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9162639,34.3324096",
-      "source": "osm"
-    },
-    {
-      "nom": "Marriott Mountain",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.918706,34.3315215",
-      "lat": 27.918706,
-      "lng": 34.3315215,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.918706,34.3315215",
-      "source": "osm"
-    },
-    {
-      "nom": "Tropicana Rosetta & Jasmine Club 4*",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9174324,34.3268396",
-      "lat": 27.9174324,
-      "lng": 34.3268396,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9174324,34.3268396",
-      "source": "osm"
-    },
-    {
-      "nom": "Sharm Dreams Vacation Club",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.917752,34.3252539",
-      "lat": 27.917752,
-      "lng": 34.3252539,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.917752,34.3252539",
-      "source": "osm"
-    },
-    {
-      "nom": "Ghazala Beach",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9126722,34.3258697",
-      "lat": 27.9126722,
-      "lng": 34.3258697,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9126722,34.3258697",
-      "source": "osm"
-    },
-    {
-      "nom": "Oriental Rivoli",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9185487,34.3348793",
-      "lat": 27.9185487,
-      "lng": 34.3348793,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9185487,34.3348793",
-      "source": "osm"
-    },
-    {
-      "nom": "Noria Resort",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9149909,34.3236181",
-      "lat": 27.9149909,
-      "lng": 34.3236181,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9149909,34.3236181",
-      "source": "osm"
-    },
-    {
-      "nom": "Jolie Ville Resort & Casino",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9118632,34.3249838",
-      "lat": 27.9118632,
-      "lng": 34.3249838,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9118632,34.3249838",
-      "source": "osm"
-    },
-    {
-      "nom": "Fantasia",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9162325,34.3371621",
-      "lat": 27.9162325,
-      "lng": 34.3371621,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9162325,34.3371621",
-      "source": "osm"
-    },
-    {
-      "nom": "Ghazala Gardens",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9143569,34.3227885",
-      "lat": 27.9143569,
-      "lng": 34.3227885,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9143569,34.3227885",
-      "source": "osm"
-    },
-    {
-      "nom": "Kanabesh",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9100493,34.3262103",
-      "lat": 27.9100493,
-      "lng": 34.3262103,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9100493,34.3262103",
-      "source": "osm"
-    },
-    {
-      "nom": "Kahramana",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9113147,34.3243253",
-      "lat": 27.9113147,
-      "lng": 34.3243253,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9113147,34.3243253",
-      "source": "osm"
-    },
-    {
-      "nom": "Sanafir",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9101791,34.3249554",
-      "lat": 27.9101791,
-      "lng": 34.3249554,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9101791,34.3249554",
-      "source": "osm"
-    },
-    {
-      "nom": "قرية نعمه باي فيو",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9228558,34.3283816",
-      "lat": 27.9228558,
-      "lng": 34.3283816,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9228558,34.3283816",
-      "source": "osm"
-    },
-    {
-      "nom": "Maritim Jolie Ville Resort",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9115355,34.3232218",
-      "lat": 27.9115355,
-      "lng": 34.3232218,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9115355,34.3232218",
-      "source": "osm"
-    },
-    {
-      "nom": "Dessole Cataract Sharm Resort",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9103218,34.3240107",
-      "lat": 27.9103218,
-      "lng": 34.3240107,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9103218,34.3240107",
-      "source": "osm"
-    },
-    {
-      "nom": "Camel Dive Club & Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9094975,34.3248118",
-      "lat": 27.9094975,
-      "lng": 34.3248118,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.cameldive.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Desole Cataract Resort Laya Lina",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.908948,34.3257942",
-      "lat": 27.908948,
-      "lng": 34.3257942,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.908948,34.3257942",
-      "source": "osm"
-    },
-    {
-      "nom": "New Tiran",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9085212,34.3255638",
-      "lat": 27.9085212,
-      "lng": 34.3255638,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9085212,34.3255638",
-      "source": "osm"
-    },
-    {
-      "nom": "Naama Heights",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9209981,34.3225877",
-      "lat": 27.9209981,
-      "lng": 34.3225877,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9209981,34.3225877",
-      "source": "osm"
-    },
-    {
-      "nom": "Iberotel Lido Sharm",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.90723,34.3285789",
-      "lat": 27.90723,
-      "lng": 34.3285789,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.90723,34.3285789",
-      "source": "osm"
-    },
-    {
-      "nom": "Naama Inn",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9093532,34.3230752",
-      "lat": 27.9093532,
-      "lng": 34.3230752,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9093532,34.3230752",
-      "source": "osm"
-    },
-    {
-      "nom": "Helnan Marina Sharm",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9071978,34.3266697",
-      "lat": 27.9071978,
-      "lng": 34.3266697,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9071978,34.3266697",
-      "source": "osm"
-    },
-    {
-      "nom": "Sonesta Club",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9216015,34.3379673",
-      "lat": 27.9216015,
-      "lng": 34.3379673,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9216015,34.3379673",
-      "source": "osm"
-    },
-    {
-      "nom": "Sunshine Resort",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9129101,34.3198224",
-      "lat": 27.9129101,
-      "lng": 34.3198224,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9129101,34.3198224",
-      "source": "osm"
-    },
-    {
-      "nom": "Naama Blue Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€€",
-      "score": 3,
-      "mapsUrl": "https://maps.google.com/?q=27.9100395,34.3209116",
-      "lat": 27.9100395,
-      "lng": 34.3209116,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.naamabluehotel.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Eden Rock",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9059349,34.3266236",
-      "lat": 27.9059349,
-      "lng": 34.3266236,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9059349,34.3266236",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Royal Plaza",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9111647,34.3195076",
-      "lat": 27.9111647,
-      "lng": 34.3195076,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9111647,34.3195076",
-      "source": "osm"
-    },
-    {
-      "nom": "Stella din Mare",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9049479,34.3299906",
-      "lat": 27.9049479,
-      "lng": 34.3299906,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9049479,34.3299906",
-      "source": "osm"
-    },
-    {
-      "nom": "Royal Oasis Naama Bay Resort",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9075829,34.3219325",
-      "lat": 27.9075829,
-      "lng": 34.3219325,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9075829,34.3219325",
-      "source": "osm"
-    },
-    {
-      "nom": "Sun Shine",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9131376,34.3176682",
-      "lat": 27.9131376,
-      "lng": 34.3176682,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9131376,34.3176682",
-      "source": "osm"
-    },
-    {
-      "nom": "Sharm Cliff Resort",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9069441,34.3208472",
-      "lat": 27.9069441,
-      "lng": 34.3208472,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9069441,34.3208472",
-      "source": "osm"
-    },
-    {
-      "nom": "Fun & Sun Naama Waves",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9050098,34.3226204",
-      "lat": 27.9050098,
-      "lng": 34.3226204,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9050098,34.3226204",
-      "source": "osm"
-    },
-    {
-      "nom": "Tropicana Garden",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9243155,34.3409258",
-      "lat": 27.9243155,
-      "lng": 34.3409258,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9243155,34.3409258",
-      "source": "osm"
-    },
-    {
-      "nom": "Naama Waves",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.904688,34.3225147",
-      "lat": 27.904688,
-      "lng": 34.3225147,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.904688,34.3225147",
-      "source": "osm"
-    },
-    {
-      "nom": "Sharm Holiday",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9086165,34.3168984",
-      "lat": 27.9086165,
-      "lng": 34.3168984,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9086165,34.3168984",
-      "source": "osm"
-    },
-    {
-      "nom": "فندق حياة ريجنسي",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 5,
-      "mapsUrl": "https://maps.google.com/?q=27.9168351,34.3489577",
-      "lat": 27.9168351,
-      "lng": 34.3489577,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.parkregency.net/",
-      "source": "osm"
-    },
-    {
-      "nom": "Intercontinental",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9180584,34.3542802",
-      "lat": 27.9180584,
-      "lng": 34.3542802,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9180584,34.3542802",
-      "source": "osm"
-    },
-    {
-      "nom": "Continental Plaza Beach (ex. Inter Plaza Beach)",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9200439,34.3561093",
-      "lat": 27.9200439,
-      "lng": 34.3561093,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9200439,34.3561093",
-      "source": "osm"
-    },
-    {
-      "nom": "Reef Oasis Beach Resort",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9184998,34.3613922",
-      "lat": 27.9184998,
-      "lng": 34.3613922,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9184998,34.3613922",
-      "source": "osm"
-    },
-    {
-      "nom": "South Sinai Governorate",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8955101,34.3039262",
-      "lat": 27.8955101,
-      "lng": 34.3039262,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8955101,34.3039262",
-      "source": "osm"
-    },
-    {
-      "nom": "Domina coral bay harem 5",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9249106,34.3639737",
-      "lat": 27.9249106,
-      "lng": 34.3639737,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9249106,34.3639737",
-      "source": "osm"
-    },
-    {
-      "nom": "Domina coral bay Harem resort 5*",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9249295,34.364045",
-      "lat": 27.9249295,
-      "lng": 34.364045,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9249295,34.364045",
-      "source": "osm"
-    },
-    {
-      "nom": "Sheraton",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9217863,34.3669308",
-      "lat": 27.9217863,
-      "lng": 34.3669308,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9217863,34.3669308",
-      "source": "osm"
-    },
-    {
-      "nom": "Domina coral bay aquamarine",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9295573,34.3646208",
-      "lat": 27.9295573,
-      "lng": 34.3646208,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9295573,34.3646208",
-      "source": "osm"
-    },
-    {
-      "nom": "جراند سيرين",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9297839,34.3664465",
-      "lat": 27.9297839,
-      "lng": 34.3664465,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9297839,34.3664465",
-      "source": "osm"
-    },
-    {
-      "nom": "منتجع دلتا شرم",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8847239,34.3055918",
-      "lat": 27.8847239,
-      "lng": 34.3055918,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8847239,34.3055918",
-      "source": "osm"
-    },
-    {
-      "nom": "Jolie Ville Royal Peninsula",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9407863,34.3622156",
-      "lat": 27.9407863,
-      "lng": 34.3622156,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9407863,34.3622156",
-      "source": "osm"
-    },
-    {
-      "nom": "Dreams Vacation",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8786257,34.3182092",
-      "lat": 27.8786257,
-      "lng": 34.3182092,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8786257,34.3182092",
-      "source": "osm"
-    },
-    {
-      "nom": "Sinai Old Spices",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9118363,34.2842311",
-      "lat": 27.9118363,
-      "lng": 34.2842311,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.sinaioldspices.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Dreams Beach",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8749015,34.319256",
-      "lat": 27.8749015,
-      "lng": 34.319256,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8749015,34.319256",
-      "source": "osm"
-    },
-    {
-      "nom": "The Grand Hotel Sharm",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.871913,34.3184544",
-      "lat": 27.871913,
-      "lng": 34.3184544,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.871913,34.3184544",
-      "source": "osm"
-    },
-    {
-      "nom": "St George",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8756223,34.3059893",
-      "lat": 27.8756223,
-      "lng": 34.3059893,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8756223,34.3059893",
-      "source": "osm"
-    },
-    {
-      "nom": "Cleopatra",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8711147,34.3158008",
-      "lat": 27.8711147,
-      "lng": 34.3158008,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8711147,34.3158008",
-      "source": "osm"
-    },
-    {
-      "nom": "Falcon INN VIVA",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8711189,34.3141506",
-      "lat": 27.8711189,
-      "lng": 34.3141506,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8711189,34.3141506",
-      "source": "osm"
-    },
-    {
-      "nom": "Otium Hotel Aloha Resort",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8696555,34.3207382",
-      "lat": 27.8696555,
-      "lng": 34.3207382,
-      "halalFriendly": false,
-      "bookingUrl": "www.otiumhotels.com",
-      "source": "osm"
-    },
-    {
-      "nom": "SharmInn Amarein",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8740462,34.3056007",
-      "lat": 27.8740462,
-      "lng": 34.3056007,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8740462,34.3056007",
-      "source": "osm"
-    },
-    {
-      "nom": "Verginia Sharm",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8712563,34.3116646",
-      "lat": 27.8712563,
-      "lng": 34.3116646,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8712563,34.3116646",
-      "source": "osm"
-    },
-    {
-      "nom": "Sol Y Mar Sharming Inn",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8694615,34.3174065",
-      "lat": 27.8694615,
-      "lng": 34.3174065,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8694615,34.3174065",
-      "source": "osm"
-    },
-    {
-      "nom": "Desert View",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8698287,34.3146376",
-      "lat": 27.8698287,
-      "lng": 34.3146376,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8698287,34.3146376",
-      "source": "osm"
-    },
-    {
-      "nom": "Amphoras Beach Resort",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8684806,34.3213324",
-      "lat": 27.8684806,
-      "lng": 34.3213324,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8684806,34.3213324",
-      "source": "osm"
-    },
-    {
-      "nom": "Otium Hotel Amphoras Resort",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8684411,34.3196094",
-      "lat": 27.8684411,
-      "lng": 34.3196094,
-      "halalFriendly": false,
-      "bookingUrl": "www.otiumhotels.com",
-      "source": "osm"
-    },
-    {
-      "nom": "Falcon Hills",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.869656,34.3136044",
-      "lat": 27.869656,
-      "lng": 34.3136044,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.869656,34.3136044",
-      "source": "osm"
-    },
-    {
-      "nom": "Resta Sharm Resort",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8698583,34.3126003",
-      "lat": 27.8698583,
-      "lng": 34.3126003,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8698583,34.3126003",
-      "source": "osm"
-    },
-    {
-      "nom": "Luna",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8725566,34.3050847",
-      "lat": 27.8725566,
-      "lng": 34.3050847,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8725566,34.3050847",
-      "source": "osm"
-    },
-    {
-      "nom": "Amphoras Beach",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8678626,34.3206991",
-      "lat": 27.8678626,
-      "lng": 34.3206991,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8678626,34.3206991",
-      "source": "osm"
-    },
-    {
-      "nom": "كونتري كلوب",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.86972,34.3116146",
-      "lat": 27.86972,
-      "lng": 34.3116146,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.86972,34.3116146",
-      "source": "osm"
-    },
-    {
-      "nom": "Amphoras Aqua",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8679105,34.3166181",
-      "lat": 27.8679105,
-      "lng": 34.3166181,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8679105,34.3166181",
-      "source": "osm"
-    },
-    {
-      "nom": "Amar Sina",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8697763,34.3095795",
-      "lat": 27.8697763,
-      "lng": 34.3095795,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8697763,34.3095795",
-      "source": "osm"
-    },
-    {
-      "nom": "Ocean Club Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8716019,34.3048081",
-      "lat": 27.8716019,
-      "lng": 34.3048081,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8716019,34.3048081",
-      "source": "osm"
-    },
-    {
-      "nom": "Creative Mexicana",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8697963,34.308055",
-      "lat": 27.8697963,
-      "lng": 34.308055,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8697963,34.308055",
-      "source": "osm"
-    },
-    {
-      "nom": "Rock Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8711444,34.3046548",
-      "lat": 27.8711444,
-      "lng": 34.3046548,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8711444,34.3046548",
-      "source": "osm"
-    },
-    {
-      "nom": "فندق صن رايز",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8700219,34.3065178",
-      "lat": 27.8700219,
-      "lng": 34.3065178,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8700219,34.3065178",
-      "source": "osm"
-    },
-    {
-      "nom": "ريتز كارلتون",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.866289,34.3201887",
-      "lat": 27.866289,
-      "lng": 34.3201887,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.866289,34.3201887",
-      "source": "osm"
-    },
-    {
-      "nom": "Монте Карло",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8659749,34.3200977",
-      "lat": 27.8659749,
-      "lng": 34.3200977,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8659749,34.3200977",
-      "source": "osm"
-    },
-    {
-      "nom": "Tropicana Tivoli",
-      "categorie": "Hôtel",
-      "priceRange": "€€€",
-      "score": 3,
-      "mapsUrl": "https://maps.google.com/?q=27.8701917,34.3043854",
-      "lat": 27.8701917,
-      "lng": 34.3043854,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8701917,34.3043854",
-      "source": "osm"
-    },
-    {
-      "nom": "Sun rise resorts diamond",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8648576,34.3192706",
-      "lat": 27.8648576,
-      "lng": 34.3192706,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8648576,34.3192706",
-      "source": "osm"
-    },
-    {
-      "nom": "Sun Rise Resort Diamond",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8648417,34.3192711",
-      "lat": 27.8648417,
-      "lng": 34.3192711,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8648417,34.3192711",
-      "source": "osm"
-    },
-    {
-      "nom": "Al Divan Resort",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9574163,34.3652962",
-      "lat": 27.9574163,
-      "lng": 34.3652962,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9574163,34.3652962",
-      "source": "osm"
-    },
-    {
-      "nom": "Logaina Sharm Resort",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.956868,34.3664738",
-      "lat": 27.956868,
-      "lng": 34.3664738,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.956868,34.3664738",
-      "source": "osm"
-    },
-    {
-      "nom": "ريتز كارلتون",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8644031,34.3189982",
-      "lat": 27.8644031,
-      "lng": 34.3189982,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8644031,34.3189982",
-      "source": "osm"
-    },
-    {
-      "nom": "Sunset",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8687935,34.3039443",
-      "lat": 27.8687935,
-      "lng": 34.3039443,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8687935,34.3039443",
-      "source": "osm"
-    },
-    {
-      "nom": "Sunrise Diamond Beach Resort",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8638597,34.3187651",
-      "lat": 27.8638597,
-      "lng": 34.3187651,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8638597,34.3187651",
-      "source": "osm"
-    },
-    {
-      "nom": "La Perla",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8651254,34.3120786",
-      "lat": 27.8651254,
-      "lng": 34.3120786,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8651254,34.3120786",
-      "source": "osm"
-    },
-    {
-      "nom": "Coral Beach Tiran",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9408388,34.3832723",
-      "lat": 27.9408388,
-      "lng": 34.3832723,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9408388,34.3832723",
-      "source": "osm"
-    },
-    {
-      "nom": "Domina Gardenia Plaza",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9572485,34.3685422",
-      "lat": 27.9572485,
-      "lng": 34.3685422,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9572485,34.3685422",
-      "source": "osm"
-    },
-    {
-      "nom": "Palermo",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.867165,34.3036148",
-      "lat": 27.867165,
-      "lng": 34.3036148,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.867165,34.3036148",
-      "source": "osm"
-    },
-    {
-      "nom": "Sabena Marmara",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8642317,34.3121047",
-      "lat": 27.8642317,
-      "lng": 34.3121047,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8642317,34.3121047",
-      "source": "osm"
-    },
-    {
-      "nom": "Dive Inn Resort",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8645506,34.3107694",
-      "lat": 27.8645506,
-      "lng": 34.3107694,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8645506,34.3107694",
-      "source": "osm"
-    },
-    {
-      "nom": "Dave in resorts",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8642262,34.311138",
-      "lat": 27.8642262,
-      "lng": 34.311138,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8642262,34.311138",
-      "source": "osm"
-    },
-    {
-      "nom": "Coral Hills Resort",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8645692,34.3093856",
-      "lat": 27.8645692,
-      "lng": 34.3093856,
-      "halalFriendly": false,
-      "bookingUrl": "http://coralhillsresorts.com/ssh/hotel/index.html#tabview-1",
-      "source": "osm"
-    },
-    {
-      "nom": "Sharm Reef",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8630025,34.3145622",
-      "lat": 27.8630025,
-      "lng": 34.3145622,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8630025,34.3145622",
-      "source": "osm"
-    },
-    {
-      "nom": "Creative Badawia Sharm Resort",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8645924,34.3083367",
-      "lat": 27.8645924,
-      "lng": 34.3083367,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8645924,34.3083367",
-      "source": "osm"
-    },
-    {
-      "nom": "Xperience Sea Breeze Resort",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 4,
-      "mapsUrl": "https://maps.google.com/?q=27.9456278,34.3821201",
-      "lat": 27.9456278,
-      "lng": 34.3821201,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9456278,34.3821201",
-      "source": "osm"
-    },
-    {
-      "nom": "كلوب أمريغو",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8646242,34.3046664",
-      "lat": 27.8646242,
-      "lng": 34.3046664,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8646242,34.3046664",
-      "source": "osm"
-    },
-    {
-      "nom": "Iberotel Il Mercato",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8634434,34.3074182",
-      "lat": 27.8634434,
-      "lng": 34.3074182,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8634434,34.3074182",
-      "source": "osm"
-    },
-    {
-      "nom": "Uni Sharm",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8619195,34.3121311",
-      "lat": 27.8619195,
-      "lng": 34.3121311,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8619195,34.3121311",
-      "source": "osm"
-    },
-    {
-      "nom": "Creative Grand Sharm Resort",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8613001,34.3145164",
-      "lat": 27.8613001,
-      "lng": 34.3145164,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8613001,34.3145164",
-      "source": "osm"
-    },
-    {
-      "nom": "Aida Sharm",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8650127,34.3024279",
-      "lat": 27.8650127,
-      "lng": 34.3024279,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8650127,34.3024279",
-      "source": "osm"
-    },
-    {
-      "nom": "Veraclub Queen Sharm",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8597023,34.3145017",
-      "lat": 27.8597023,
-      "lng": 34.3145017,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8597023,34.3145017",
-      "source": "osm"
-    },
-    {
-      "nom": "Arabesque Sharm Resort & Spa",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8624265,34.3045439",
-      "lat": 27.8624265,
-      "lng": 34.3045439,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.booking.com/hotel/eg/arabesque-sharm-resort-amp-spa.html?lang=xu",
-      "source": "osm"
-    },
-    {
-      "nom": "Egyptian Youth Hostels Association",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8629213,34.3032004",
-      "lat": 27.8629213,
-      "lng": 34.3032004,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8629213,34.3032004",
-      "source": "osm"
-    },
-    {
-      "nom": "Royal Paradise Resort",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8577872,34.3142685",
-      "lat": 27.8577872,
-      "lng": 34.3142685,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8577872,34.3142685",
-      "source": "osm"
-    },
-    {
-      "nom": "Seti Sharm",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8634282,34.2968121",
-      "lat": 27.8634282,
-      "lng": 34.2968121,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8634282,34.2968121",
-      "source": "osm"
-    },
-    {
-      "nom": "Iberotel Palace",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.863544,34.2936835",
-      "lat": 27.863544,
-      "lng": 34.2936835,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.863544,34.2936835",
-      "source": "osm"
-    },
-    {
-      "nom": "Safir Sharm Waterfalls Resort",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 5,
-      "mapsUrl": "https://maps.google.com/?q=27.8558643,34.3152898",
-      "lat": 27.8558643,
-      "lng": 34.3152898,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.sharmwaterfallsresort.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Aqua Blu Resort",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 4,
-      "mapsUrl": "https://maps.google.com/?q=27.8572744,34.3042061",
-      "lat": 27.8572744,
-      "lng": 34.3042061,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8572744,34.3042061",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.8550967,34.3075014",
-      "lat": 27.8550967,
-      "lng": 34.3075014,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.8550967,34.3075014",
-      "source": "osm"
-    },
-    {
-      "nom": "Turquoise",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.86226,34.2887806",
-      "lat": 27.86226,
-      "lng": 34.2887806,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.86226,34.2887806",
-      "source": "osm"
-    },
-    {
-      "nom": "Logaina",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.859843,34.280798",
-      "lat": 27.859843,
-      "lng": 34.280798,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.859843,34.280798",
-      "source": "osm"
-    },
-    {
-      "nom": "Sierra",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9640031,34.3920281",
-      "lat": 27.9640031,
-      "lng": 34.3920281,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9640031,34.3920281",
-      "source": "osm"
-    },
-    {
-      "nom": "Royal Savoy",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=27.9619929,34.3965694",
-      "lat": 27.9619929,
-      "lng": 34.3965694,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=27.9619929,34.3965694",
-      "source": "osm"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Charm el-Cheikh",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Charm el-Cheikh",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Charm%20el-Cheikh%20Charm%20el-Cheikh"
-    },
-    {
-      "nom": "Sahaba Mosque",
-      "lat": 27.8665133,
-      "lng": 34.2952416,
-      "coordonnees": {
-        "lat": 27.8665133,
-        "lng": 34.2952416
-      },
-      "mapsUrl": "https://maps.google.com/?q=27.8665133,34.2952416",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد الرحمن",
-      "lat": 27.8518915,
-      "lng": 34.3050074,
-      "coordonnees": {
-        "lat": 27.8518915,
-        "lng": 34.3050074
-      },
-      "mapsUrl": "https://maps.google.com/?q=27.8518915,34.3050074",
-      "source": "osm"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Mosquée Al Sahaba",
-      "categorie": "Spirituel",
-      "description": "Mosquée moderne d'architecture fatimide-ottomane.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Al%20Sahaba%20Charm%20el-Cheikh"
-    },
-    {
-      "id": "a2",
-      "nom": "Récifs de Ras Mohammed",
-      "categorie": "Nature",
-      "description": "Parc marin réputé pour la plongée et le snorkeling.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=R%C3%A9cifs%20de%20Ras%20Mohammed%20Charm%20el-Cheikh"
-    },
-    {
-      "id": "a3",
-      "nom": "Baie de Naama",
-      "categorie": "Loisirs",
-      "description": "Promenade animée en bord de mer.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Baie%20de%20Naama%20Charm%20el-Cheikh"
-    },
-    {
-      "nom": "Sharm",
-      "lat": 27.908208,
-      "lng": 34.3244795,
-      "coordonnees": {
-        "lat": 27.908208,
-        "lng": 34.3244795
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.908208,34.3244795",
-      "source": "osm"
-    },
-    {
-      "nom": "Sinai Grand Casino",
-      "lat": 27.918536,
-      "lng": 34.3403121,
-      "coordonnees": {
-        "lat": 27.918536,
-        "lng": 34.3403121
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.918536,34.3403121",
-      "source": "osm"
-    },
-    {
-      "nom": "King Tut Museum",
-      "lat": 27.9074779,
-      "lng": 34.3188138,
-      "coordonnees": {
-        "lat": 27.9074779,
-        "lng": 34.3188138
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=27.9074779,34.3188138",
-      "source": "osm"
-    },
-    {
-      "nom": "Near Garden",
-      "lat": 27.9081038,
-      "lng": 34.3467116,
-      "coordonnees": {
-        "lat": 27.9081038,
-        "lng": 34.3467116
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.9081038,34.3467116",
-      "source": "osm"
-    },
-    {
-      "nom": "Hollywood park sharm",
-      "lat": 27.9281335,
-      "lng": 34.3455117,
-      "coordonnees": {
-        "lat": 27.9281335,
-        "lng": 34.3455117
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.9281335,34.3455117",
-      "source": "osm"
-    },
-    {
-      "nom": "Middle Garden",
-      "lat": 27.9129604,
-      "lng": 34.3511212,
-      "coordonnees": {
-        "lat": 27.9129604,
-        "lng": 34.3511212
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.9129604,34.3511212",
-      "source": "osm"
-    },
-    {
-      "nom": "Compass",
-      "lat": 27.9025639,
-      "lng": 34.3127282,
-      "coordonnees": {
-        "lat": 27.9025639,
-        "lng": 34.3127282
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.9025639,34.3127282",
-      "source": "osm"
-    },
-    {
-      "nom": "Far Garden",
-      "lat": 27.9150053,
-      "lng": 34.3588754,
-      "coordonnees": {
-        "lat": 27.9150053,
-        "lng": 34.3588754
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.9150053,34.3588754",
-      "source": "osm"
-    },
-    {
-      "nom": "Sodfa",
-      "lat": 27.8877937,
-      "lng": 34.3293251,
-      "coordonnees": {
-        "lat": 27.8877937,
-        "lng": 34.3293251
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.8877937,34.3293251",
-      "source": "osm"
-    },
-    {
-      "nom": "Faraana atv safari",
-      "lat": 27.9442758,
-      "lng": 34.313349,
-      "coordonnees": {
-        "lat": 27.9442758,
-        "lng": 34.313349
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.9442758,34.313349",
-      "source": "osm"
-    },
-    {
-      "nom": "سفاري شرم الشيخ",
-      "lat": 27.942264,
-      "lng": 34.3086591,
-      "coordonnees": {
-        "lat": 27.942264,
-        "lng": 34.3086591
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.942264,34.3086591",
-      "source": "osm"
-    },
-    {
-      "nom": "Tower",
-      "lat": 27.8822916,
-      "lng": 34.3262218,
-      "coordonnees": {
-        "lat": 27.8822916,
-        "lng": 34.3262218
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.8822916,34.3262218",
-      "source": "osm"
-    },
-    {
-      "nom": "Pinky Wall",
-      "lat": 27.8795604,
-      "lng": 34.3220161,
-      "coordonnees": {
-        "lat": 27.8795604,
-        "lng": 34.3220161
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.8795604,34.3220161",
-      "source": "osm"
-    },
-    {
-      "nom": "Amphoras",
-      "lat": 27.8692787,
-      "lng": 34.3252798,
-      "coordonnees": {
-        "lat": 27.8692787,
-        "lng": 34.3252798
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.8692787,34.3252798",
-      "source": "osm"
-    },
-    {
-      "nom": "Turtle Bay",
-      "lat": 27.8644615,
-      "lng": 34.3229602,
-      "coordonnees": {
-        "lat": 27.8644615,
-        "lng": 34.3229602
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.8644615,34.3229602",
-      "source": "osm"
-    },
-    {
-      "nom": "Mohamed Ali Pacha",
-      "lat": 27.8662583,
-      "lng": 34.296414,
-      "coordonnees": {
-        "lat": 27.8662583,
-        "lng": 34.296414
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=27.8662583,34.296414",
-      "source": "osm"
-    },
-    {
-      "nom": "Dolphins",
-      "lat": 27.8607955,
-      "lng": 34.3028897,
-      "coordonnees": {
-        "lat": 27.8607955,
-        "lng": 34.3028897
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.8607955,34.3028897",
-      "source": "osm"
-    },
-    {
-      "nom": "أفيرة",
-      "lat": 27.8654526,
-      "lng": 34.2905028,
-      "coordonnees": {
-        "lat": 27.8654526,
-        "lng": 34.2905028
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=27.8654526,34.2905028",
-      "source": "osm"
-    },
-    {
-      "nom": "Amirati Beach",
-      "lat": 27.8618271,
-      "lng": 34.2895379,
-      "coordonnees": {
-        "lat": 27.8618271,
-        "lng": 34.2895379
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.8618271,34.2895379",
-      "source": "osm"
-    },
-    {
-      "nom": "el Fanara Beach",
-      "lat": 27.8482533,
-      "lng": 34.3141824,
-      "coordonnees": {
-        "lat": 27.8482533,
-        "lng": 34.3141824
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.8482533,34.3141824",
-      "source": "osm"
-    },
-    {
-      "nom": "Ras Umm Sid",
-      "lat": 27.847261,
-      "lng": 34.31648,
-      "coordonnees": {
-        "lat": 27.847261,
-        "lng": 34.31648
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.847261,34.31648",
-      "source": "osm"
-    },
-    {
-      "nom": "Ras Um Sid",
-      "lat": 27.8482308,
-      "lng": 34.310403,
-      "coordonnees": {
-        "lat": 27.8482308,
-        "lng": 34.310403
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=27.8482308,34.310403",
-      "source": "osm"
-    },
-    {
-      "nom": "Ras Katy",
-      "lat": 27.8466578,
-      "lng": 34.3024876,
-      "coordonnees": {
-        "lat": 27.8466578,
-        "lng": 34.3024876
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.8466578,34.3024876",
-      "source": "osm"
-    },
-    {
-      "nom": "Soho Square",
-      "lat": 27.9627279,
-      "lng": 34.393915,
-      "coordonnees": {
-        "lat": 27.9627279,
-        "lng": 34.393915
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.9627279,34.393915",
-      "source": "osm"
-    },
-    {
-      "nom": "танк",
-      "lat": 27.8507304,
-      "lng": 34.2898294,
-      "coordonnees": {
-        "lat": 27.8507304,
-        "lng": 34.2898294
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.8507304,34.2898294",
-      "source": "osm"
-    },
-    {
-      "nom": "Ras Bob Dive",
-      "lat": 27.9628525,
-      "lng": 34.4114689,
-      "coordonnees": {
-        "lat": 27.9628525,
-        "lng": 34.4114689
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.9628525,34.4114689",
-      "source": "osm"
-    },
-    {
-      "nom": "Marsa Kharita",
-      "lat": 27.8246951,
-      "lng": 34.2667686,
-      "coordonnees": {
-        "lat": 27.8246951,
-        "lng": 34.2667686
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.8246951,34.2667686",
-      "source": "osm"
-    },
-    {
-      "nom": "Gordon reef",
-      "lat": 27.9848747,
-      "lng": 34.4535967,
-      "coordonnees": {
-        "lat": 27.9848747,
-        "lng": 34.4535967
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.9848747,34.4535967",
-      "source": "osm"
-    },
-    {
-      "nom": "I Love Rixos Radamis",
-      "lat": 28.0044981,
-      "lng": 34.4365829,
-      "coordonnees": {
-        "lat": 28.0044981,
-        "lng": 34.4365829
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=28.0044981,34.4365829",
-      "source": "osm"
-    },
-    {
-      "nom": "Louilla",
-      "lat": 27.9895604,
-      "lng": 34.4535007,
-      "coordonnees": {
-        "lat": 27.9895604,
-        "lng": 34.4535007
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=27.9895604,34.4535007",
-      "source": "osm"
-    },
-    {
-      "nom": "Gordon Reef Dive",
-      "lat": 27.9855413,
-      "lng": 34.457278,
-      "coordonnees": {
-        "lat": 27.9855413,
-        "lng": 34.457278
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.9855413,34.457278",
-      "source": "osm"
-    },
-    {
-      "nom": "Thomas reef",
-      "lat": 27.9921659,
-      "lng": 34.4614807,
-      "coordonnees": {
-        "lat": 27.9921659,
-        "lng": 34.4614807
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.9921659,34.4614807",
-      "source": "osm"
-    },
-    {
-      "nom": "Ras Ghozlani",
-      "lat": 27.7894435,
-      "lng": 34.2619429,
-      "coordonnees": {
-        "lat": 27.7894435,
-        "lng": 34.2619429
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=27.7894435,34.2619429",
-      "source": "osm"
-    },
-    {
-      "nom": "Egypt landmarks",
-      "lat": 28.0256355,
-      "lng": 34.4373358,
-      "coordonnees": {
-        "lat": 28.0256355,
-        "lng": 34.4373358
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=28.0256355,34.4373358",
-      "source": "osm"
-    },
-    {
-      "nom": "Jackson Reef dive",
-      "lat": 28.0043335,
-      "lng": 34.4721127,
-      "coordonnees": {
-        "lat": 28.0043335,
-        "lng": 34.4721127
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=28.0043335,34.4721127",
-      "source": "osm"
-    },
-    {
-      "nom": "Jackson reef",
-      "lat": 28.0059666,
-      "lng": 34.472557,
-      "coordonnees": {
-        "lat": 28.0059666,
-        "lng": 34.472557
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=28.0059666,34.472557",
-      "source": "osm"
-    }
-  ],
-  "imageCredit": "Wikimedia Commons",
-  "osmEnriched": true,
-  "osmEnrichedAt": "2026-06-30",
-  "description_en": "Charm el-Cheikh, in Egypt, is a halal-friendly destination with a Halal Trust Score of 4.4/5. Muslim travelers will find 5 halal restaurants listed, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
-  "metaDescription_en": "Halal guide to Charm el-Cheikh: 5 halal restaurants listed, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.4/5.",
-  "nom_en": "Charm el-Cheikh",
-  "boucheries": []
+  {
+   "nom": "Shark’s bay",
+   "lat": 27.9521467,
+   "lng": 34.3852421,
+   "type": "arab, chicken, burger, grill, kebab, international, pasta, mediterranean",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=27.9521467,34.3852421",
+   "source": "osm"
+  },
+  {
+   "nom": "Mandarin",
+   "lat": 27.9621396,
+   "lng": 34.3932561,
+   "type": "chinese, indian, local, thai",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=27.9621396,34.3932561",
+   "source": "osm"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "Novotel Palm",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9171032,34.3302678",
+   "lat": 27.9171032,
+   "lng": 34.3302678,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9171032,34.3302678",
+   "source": "osm"
+  },
+  {
+   "nom": "Tropicana Rosetta",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9161245,34.3283183",
+   "lat": 27.9161245,
+   "lng": 34.3283183,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9161245,34.3283183",
+   "source": "osm"
+  },
+  {
+   "nom": "Sinai Sunset",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9170269,34.3283974",
+   "lat": 27.9170269,
+   "lng": 34.3283974,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9170269,34.3283974",
+   "source": "osm"
+  },
+  {
+   "nom": "منتجع ماريوت شرم الشيخ",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9162639,34.3324096",
+   "lat": 27.9162639,
+   "lng": 34.3324096,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9162639,34.3324096",
+   "source": "osm"
+  },
+  {
+   "nom": "Marriott Mountain",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.918706,34.3315215",
+   "lat": 27.918706,
+   "lng": 34.3315215,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.918706,34.3315215",
+   "source": "osm"
+  },
+  {
+   "nom": "Tropicana Rosetta & Jasmine Club 4*",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9174324,34.3268396",
+   "lat": 27.9174324,
+   "lng": 34.3268396,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9174324,34.3268396",
+   "source": "osm"
+  },
+  {
+   "nom": "Sharm Dreams Vacation Club",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.917752,34.3252539",
+   "lat": 27.917752,
+   "lng": 34.3252539,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.917752,34.3252539",
+   "source": "osm"
+  },
+  {
+   "nom": "Ghazala Beach",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9126722,34.3258697",
+   "lat": 27.9126722,
+   "lng": 34.3258697,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9126722,34.3258697",
+   "source": "osm"
+  },
+  {
+   "nom": "Oriental Rivoli",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9185487,34.3348793",
+   "lat": 27.9185487,
+   "lng": 34.3348793,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9185487,34.3348793",
+   "source": "osm"
+  },
+  {
+   "nom": "Noria Resort",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9149909,34.3236181",
+   "lat": 27.9149909,
+   "lng": 34.3236181,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9149909,34.3236181",
+   "source": "osm"
+  },
+  {
+   "nom": "Jolie Ville Resort & Casino",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9118632,34.3249838",
+   "lat": 27.9118632,
+   "lng": 34.3249838,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9118632,34.3249838",
+   "source": "osm"
+  },
+  {
+   "nom": "Fantasia",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9162325,34.3371621",
+   "lat": 27.9162325,
+   "lng": 34.3371621,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9162325,34.3371621",
+   "source": "osm"
+  },
+  {
+   "nom": "Ghazala Gardens",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9143569,34.3227885",
+   "lat": 27.9143569,
+   "lng": 34.3227885,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9143569,34.3227885",
+   "source": "osm"
+  },
+  {
+   "nom": "Kanabesh",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9100493,34.3262103",
+   "lat": 27.9100493,
+   "lng": 34.3262103,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9100493,34.3262103",
+   "source": "osm"
+  },
+  {
+   "nom": "Kahramana",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9113147,34.3243253",
+   "lat": 27.9113147,
+   "lng": 34.3243253,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9113147,34.3243253",
+   "source": "osm"
+  },
+  {
+   "nom": "Sanafir",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9101791,34.3249554",
+   "lat": 27.9101791,
+   "lng": 34.3249554,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9101791,34.3249554",
+   "source": "osm"
+  },
+  {
+   "nom": "قرية نعمه باي فيو",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9228558,34.3283816",
+   "lat": 27.9228558,
+   "lng": 34.3283816,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9228558,34.3283816",
+   "source": "osm"
+  },
+  {
+   "nom": "Maritim Jolie Ville Resort",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9115355,34.3232218",
+   "lat": 27.9115355,
+   "lng": 34.3232218,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9115355,34.3232218",
+   "source": "osm"
+  },
+  {
+   "nom": "Dessole Cataract Sharm Resort",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9103218,34.3240107",
+   "lat": 27.9103218,
+   "lng": 34.3240107,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9103218,34.3240107",
+   "source": "osm"
+  },
+  {
+   "nom": "Camel Dive Club & Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9094975,34.3248118",
+   "lat": 27.9094975,
+   "lng": 34.3248118,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.cameldive.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Desole Cataract Resort Laya Lina",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.908948,34.3257942",
+   "lat": 27.908948,
+   "lng": 34.3257942,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.908948,34.3257942",
+   "source": "osm"
+  },
+  {
+   "nom": "New Tiran",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9085212,34.3255638",
+   "lat": 27.9085212,
+   "lng": 34.3255638,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9085212,34.3255638",
+   "source": "osm"
+  },
+  {
+   "nom": "Naama Heights",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9209981,34.3225877",
+   "lat": 27.9209981,
+   "lng": 34.3225877,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9209981,34.3225877",
+   "source": "osm"
+  },
+  {
+   "nom": "Iberotel Lido Sharm",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.90723,34.3285789",
+   "lat": 27.90723,
+   "lng": 34.3285789,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.90723,34.3285789",
+   "source": "osm"
+  },
+  {
+   "nom": "Naama Inn",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9093532,34.3230752",
+   "lat": 27.9093532,
+   "lng": 34.3230752,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9093532,34.3230752",
+   "source": "osm"
+  },
+  {
+   "nom": "Helnan Marina Sharm",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9071978,34.3266697",
+   "lat": 27.9071978,
+   "lng": 34.3266697,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9071978,34.3266697",
+   "source": "osm"
+  },
+  {
+   "nom": "Sonesta Club",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9216015,34.3379673",
+   "lat": 27.9216015,
+   "lng": 34.3379673,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9216015,34.3379673",
+   "source": "osm"
+  },
+  {
+   "nom": "Sunshine Resort",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9129101,34.3198224",
+   "lat": 27.9129101,
+   "lng": 34.3198224,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9129101,34.3198224",
+   "source": "osm"
+  },
+  {
+   "nom": "Naama Blue Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€€",
+   "score": 3,
+   "mapsUrl": "https://maps.google.com/?q=27.9100395,34.3209116",
+   "lat": 27.9100395,
+   "lng": 34.3209116,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.naamabluehotel.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Eden Rock",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9059349,34.3266236",
+   "lat": 27.9059349,
+   "lng": 34.3266236,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9059349,34.3266236",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Royal Plaza",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9111647,34.3195076",
+   "lat": 27.9111647,
+   "lng": 34.3195076,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9111647,34.3195076",
+   "source": "osm"
+  },
+  {
+   "nom": "Stella din Mare",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9049479,34.3299906",
+   "lat": 27.9049479,
+   "lng": 34.3299906,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9049479,34.3299906",
+   "source": "osm"
+  },
+  {
+   "nom": "Royal Oasis Naama Bay Resort",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9075829,34.3219325",
+   "lat": 27.9075829,
+   "lng": 34.3219325,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9075829,34.3219325",
+   "source": "osm"
+  },
+  {
+   "nom": "Sun Shine",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9131376,34.3176682",
+   "lat": 27.9131376,
+   "lng": 34.3176682,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9131376,34.3176682",
+   "source": "osm"
+  },
+  {
+   "nom": "Sharm Cliff Resort",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9069441,34.3208472",
+   "lat": 27.9069441,
+   "lng": 34.3208472,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9069441,34.3208472",
+   "source": "osm"
+  },
+  {
+   "nom": "Fun & Sun Naama Waves",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9050098,34.3226204",
+   "lat": 27.9050098,
+   "lng": 34.3226204,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9050098,34.3226204",
+   "source": "osm"
+  },
+  {
+   "nom": "Tropicana Garden",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9243155,34.3409258",
+   "lat": 27.9243155,
+   "lng": 34.3409258,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9243155,34.3409258",
+   "source": "osm"
+  },
+  {
+   "nom": "Naama Waves",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.904688,34.3225147",
+   "lat": 27.904688,
+   "lng": 34.3225147,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.904688,34.3225147",
+   "source": "osm"
+  },
+  {
+   "nom": "Sharm Holiday",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9086165,34.3168984",
+   "lat": 27.9086165,
+   "lng": 34.3168984,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9086165,34.3168984",
+   "source": "osm"
+  },
+  {
+   "nom": "فندق حياة ريجنسي",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 5,
+   "mapsUrl": "https://maps.google.com/?q=27.9168351,34.3489577",
+   "lat": 27.9168351,
+   "lng": 34.3489577,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.parkregency.net/",
+   "source": "osm"
+  },
+  {
+   "nom": "Intercontinental",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9180584,34.3542802",
+   "lat": 27.9180584,
+   "lng": 34.3542802,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9180584,34.3542802",
+   "source": "osm"
+  },
+  {
+   "nom": "Continental Plaza Beach (ex. Inter Plaza Beach)",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9200439,34.3561093",
+   "lat": 27.9200439,
+   "lng": 34.3561093,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9200439,34.3561093",
+   "source": "osm"
+  },
+  {
+   "nom": "Reef Oasis Beach Resort",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9184998,34.3613922",
+   "lat": 27.9184998,
+   "lng": 34.3613922,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9184998,34.3613922",
+   "source": "osm"
+  },
+  {
+   "nom": "South Sinai Governorate",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8955101,34.3039262",
+   "lat": 27.8955101,
+   "lng": 34.3039262,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8955101,34.3039262",
+   "source": "osm"
+  },
+  {
+   "nom": "Domina coral bay harem 5",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9249106,34.3639737",
+   "lat": 27.9249106,
+   "lng": 34.3639737,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9249106,34.3639737",
+   "source": "osm"
+  },
+  {
+   "nom": "Domina coral bay Harem resort 5*",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9249295,34.364045",
+   "lat": 27.9249295,
+   "lng": 34.364045,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9249295,34.364045",
+   "source": "osm"
+  },
+  {
+   "nom": "Sheraton",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9217863,34.3669308",
+   "lat": 27.9217863,
+   "lng": 34.3669308,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9217863,34.3669308",
+   "source": "osm"
+  },
+  {
+   "nom": "Domina coral bay aquamarine",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9295573,34.3646208",
+   "lat": 27.9295573,
+   "lng": 34.3646208,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9295573,34.3646208",
+   "source": "osm"
+  },
+  {
+   "nom": "جراند سيرين",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9297839,34.3664465",
+   "lat": 27.9297839,
+   "lng": 34.3664465,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9297839,34.3664465",
+   "source": "osm"
+  },
+  {
+   "nom": "منتجع دلتا شرم",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8847239,34.3055918",
+   "lat": 27.8847239,
+   "lng": 34.3055918,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8847239,34.3055918",
+   "source": "osm"
+  },
+  {
+   "nom": "Jolie Ville Royal Peninsula",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9407863,34.3622156",
+   "lat": 27.9407863,
+   "lng": 34.3622156,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9407863,34.3622156",
+   "source": "osm"
+  },
+  {
+   "nom": "Dreams Vacation",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8786257,34.3182092",
+   "lat": 27.8786257,
+   "lng": 34.3182092,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8786257,34.3182092",
+   "source": "osm"
+  },
+  {
+   "nom": "Sinai Old Spices",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9118363,34.2842311",
+   "lat": 27.9118363,
+   "lng": 34.2842311,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.sinaioldspices.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Dreams Beach",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8749015,34.319256",
+   "lat": 27.8749015,
+   "lng": 34.319256,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8749015,34.319256",
+   "source": "osm"
+  },
+  {
+   "nom": "The Grand Hotel Sharm",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.871913,34.3184544",
+   "lat": 27.871913,
+   "lng": 34.3184544,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.871913,34.3184544",
+   "source": "osm"
+  },
+  {
+   "nom": "St George",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8756223,34.3059893",
+   "lat": 27.8756223,
+   "lng": 34.3059893,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8756223,34.3059893",
+   "source": "osm"
+  },
+  {
+   "nom": "Cleopatra",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8711147,34.3158008",
+   "lat": 27.8711147,
+   "lng": 34.3158008,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8711147,34.3158008",
+   "source": "osm"
+  },
+  {
+   "nom": "Falcon INN VIVA",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8711189,34.3141506",
+   "lat": 27.8711189,
+   "lng": 34.3141506,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8711189,34.3141506",
+   "source": "osm"
+  },
+  {
+   "nom": "Otium Hotel Aloha Resort",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8696555,34.3207382",
+   "lat": 27.8696555,
+   "lng": 34.3207382,
+   "halalFriendly": false,
+   "bookingUrl": "www.otiumhotels.com",
+   "source": "osm"
+  },
+  {
+   "nom": "SharmInn Amarein",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8740462,34.3056007",
+   "lat": 27.8740462,
+   "lng": 34.3056007,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8740462,34.3056007",
+   "source": "osm"
+  },
+  {
+   "nom": "Verginia Sharm",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8712563,34.3116646",
+   "lat": 27.8712563,
+   "lng": 34.3116646,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8712563,34.3116646",
+   "source": "osm"
+  },
+  {
+   "nom": "Sol Y Mar Sharming Inn",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8694615,34.3174065",
+   "lat": 27.8694615,
+   "lng": 34.3174065,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8694615,34.3174065",
+   "source": "osm"
+  },
+  {
+   "nom": "Desert View",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8698287,34.3146376",
+   "lat": 27.8698287,
+   "lng": 34.3146376,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8698287,34.3146376",
+   "source": "osm"
+  },
+  {
+   "nom": "Amphoras Beach Resort",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8684806,34.3213324",
+   "lat": 27.8684806,
+   "lng": 34.3213324,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8684806,34.3213324",
+   "source": "osm"
+  },
+  {
+   "nom": "Otium Hotel Amphoras Resort",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8684411,34.3196094",
+   "lat": 27.8684411,
+   "lng": 34.3196094,
+   "halalFriendly": false,
+   "bookingUrl": "www.otiumhotels.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Falcon Hills",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.869656,34.3136044",
+   "lat": 27.869656,
+   "lng": 34.3136044,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.869656,34.3136044",
+   "source": "osm"
+  },
+  {
+   "nom": "Resta Sharm Resort",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8698583,34.3126003",
+   "lat": 27.8698583,
+   "lng": 34.3126003,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8698583,34.3126003",
+   "source": "osm"
+  },
+  {
+   "nom": "Luna",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8725566,34.3050847",
+   "lat": 27.8725566,
+   "lng": 34.3050847,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8725566,34.3050847",
+   "source": "osm"
+  },
+  {
+   "nom": "Amphoras Beach",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8678626,34.3206991",
+   "lat": 27.8678626,
+   "lng": 34.3206991,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8678626,34.3206991",
+   "source": "osm"
+  },
+  {
+   "nom": "كونتري كلوب",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.86972,34.3116146",
+   "lat": 27.86972,
+   "lng": 34.3116146,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.86972,34.3116146",
+   "source": "osm"
+  },
+  {
+   "nom": "Amphoras Aqua",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8679105,34.3166181",
+   "lat": 27.8679105,
+   "lng": 34.3166181,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8679105,34.3166181",
+   "source": "osm"
+  },
+  {
+   "nom": "Amar Sina",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8697763,34.3095795",
+   "lat": 27.8697763,
+   "lng": 34.3095795,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8697763,34.3095795",
+   "source": "osm"
+  },
+  {
+   "nom": "Ocean Club Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8716019,34.3048081",
+   "lat": 27.8716019,
+   "lng": 34.3048081,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8716019,34.3048081",
+   "source": "osm"
+  },
+  {
+   "nom": "Creative Mexicana",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8697963,34.308055",
+   "lat": 27.8697963,
+   "lng": 34.308055,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8697963,34.308055",
+   "source": "osm"
+  },
+  {
+   "nom": "Rock Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8711444,34.3046548",
+   "lat": 27.8711444,
+   "lng": 34.3046548,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8711444,34.3046548",
+   "source": "osm"
+  },
+  {
+   "nom": "فندق صن رايز",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8700219,34.3065178",
+   "lat": 27.8700219,
+   "lng": 34.3065178,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8700219,34.3065178",
+   "source": "osm"
+  },
+  {
+   "nom": "ريتز كارلتون",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.866289,34.3201887",
+   "lat": 27.866289,
+   "lng": 34.3201887,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.866289,34.3201887",
+   "source": "osm"
+  },
+  {
+   "nom": "Монте Карло",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8659749,34.3200977",
+   "lat": 27.8659749,
+   "lng": 34.3200977,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8659749,34.3200977",
+   "source": "osm"
+  },
+  {
+   "nom": "Tropicana Tivoli",
+   "categorie": "Hôtel",
+   "priceRange": "€€€",
+   "score": 3,
+   "mapsUrl": "https://maps.google.com/?q=27.8701917,34.3043854",
+   "lat": 27.8701917,
+   "lng": 34.3043854,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8701917,34.3043854",
+   "source": "osm"
+  },
+  {
+   "nom": "Sun rise resorts diamond",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8648576,34.3192706",
+   "lat": 27.8648576,
+   "lng": 34.3192706,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8648576,34.3192706",
+   "source": "osm"
+  },
+  {
+   "nom": "Sun Rise Resort Diamond",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8648417,34.3192711",
+   "lat": 27.8648417,
+   "lng": 34.3192711,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8648417,34.3192711",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Divan Resort",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9574163,34.3652962",
+   "lat": 27.9574163,
+   "lng": 34.3652962,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9574163,34.3652962",
+   "source": "osm"
+  },
+  {
+   "nom": "Logaina Sharm Resort",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.956868,34.3664738",
+   "lat": 27.956868,
+   "lng": 34.3664738,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.956868,34.3664738",
+   "source": "osm"
+  },
+  {
+   "nom": "ريتز كارلتون",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8644031,34.3189982",
+   "lat": 27.8644031,
+   "lng": 34.3189982,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8644031,34.3189982",
+   "source": "osm"
+  },
+  {
+   "nom": "Sunset",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8687935,34.3039443",
+   "lat": 27.8687935,
+   "lng": 34.3039443,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8687935,34.3039443",
+   "source": "osm"
+  },
+  {
+   "nom": "Sunrise Diamond Beach Resort",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8638597,34.3187651",
+   "lat": 27.8638597,
+   "lng": 34.3187651,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8638597,34.3187651",
+   "source": "osm"
+  },
+  {
+   "nom": "La Perla",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8651254,34.3120786",
+   "lat": 27.8651254,
+   "lng": 34.3120786,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8651254,34.3120786",
+   "source": "osm"
+  },
+  {
+   "nom": "Coral Beach Tiran",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9408388,34.3832723",
+   "lat": 27.9408388,
+   "lng": 34.3832723,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9408388,34.3832723",
+   "source": "osm"
+  },
+  {
+   "nom": "Domina Gardenia Plaza",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9572485,34.3685422",
+   "lat": 27.9572485,
+   "lng": 34.3685422,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9572485,34.3685422",
+   "source": "osm"
+  },
+  {
+   "nom": "Palermo",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.867165,34.3036148",
+   "lat": 27.867165,
+   "lng": 34.3036148,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.867165,34.3036148",
+   "source": "osm"
+  },
+  {
+   "nom": "Sabena Marmara",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8642317,34.3121047",
+   "lat": 27.8642317,
+   "lng": 34.3121047,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8642317,34.3121047",
+   "source": "osm"
+  },
+  {
+   "nom": "Dive Inn Resort",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8645506,34.3107694",
+   "lat": 27.8645506,
+   "lng": 34.3107694,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8645506,34.3107694",
+   "source": "osm"
+  },
+  {
+   "nom": "Dave in resorts",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8642262,34.311138",
+   "lat": 27.8642262,
+   "lng": 34.311138,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8642262,34.311138",
+   "source": "osm"
+  },
+  {
+   "nom": "Coral Hills Resort",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8645692,34.3093856",
+   "lat": 27.8645692,
+   "lng": 34.3093856,
+   "halalFriendly": false,
+   "bookingUrl": "http://coralhillsresorts.com/ssh/hotel/index.html#tabview-1",
+   "source": "osm"
+  },
+  {
+   "nom": "Sharm Reef",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8630025,34.3145622",
+   "lat": 27.8630025,
+   "lng": 34.3145622,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8630025,34.3145622",
+   "source": "osm"
+  },
+  {
+   "nom": "Creative Badawia Sharm Resort",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8645924,34.3083367",
+   "lat": 27.8645924,
+   "lng": 34.3083367,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8645924,34.3083367",
+   "source": "osm"
+  },
+  {
+   "nom": "Xperience Sea Breeze Resort",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 4,
+   "mapsUrl": "https://maps.google.com/?q=27.9456278,34.3821201",
+   "lat": 27.9456278,
+   "lng": 34.3821201,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9456278,34.3821201",
+   "source": "osm"
+  },
+  {
+   "nom": "كلوب أمريغو",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8646242,34.3046664",
+   "lat": 27.8646242,
+   "lng": 34.3046664,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8646242,34.3046664",
+   "source": "osm"
+  },
+  {
+   "nom": "Iberotel Il Mercato",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8634434,34.3074182",
+   "lat": 27.8634434,
+   "lng": 34.3074182,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8634434,34.3074182",
+   "source": "osm"
+  },
+  {
+   "nom": "Uni Sharm",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8619195,34.3121311",
+   "lat": 27.8619195,
+   "lng": 34.3121311,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8619195,34.3121311",
+   "source": "osm"
+  },
+  {
+   "nom": "Creative Grand Sharm Resort",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8613001,34.3145164",
+   "lat": 27.8613001,
+   "lng": 34.3145164,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8613001,34.3145164",
+   "source": "osm"
+  },
+  {
+   "nom": "Aida Sharm",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8650127,34.3024279",
+   "lat": 27.8650127,
+   "lng": 34.3024279,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8650127,34.3024279",
+   "source": "osm"
+  },
+  {
+   "nom": "Veraclub Queen Sharm",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8597023,34.3145017",
+   "lat": 27.8597023,
+   "lng": 34.3145017,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8597023,34.3145017",
+   "source": "osm"
+  },
+  {
+   "nom": "Arabesque Sharm Resort & Spa",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8624265,34.3045439",
+   "lat": 27.8624265,
+   "lng": 34.3045439,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.booking.com/hotel/eg/arabesque-sharm-resort-amp-spa.html?lang=xu",
+   "source": "osm"
+  },
+  {
+   "nom": "Egyptian Youth Hostels Association",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8629213,34.3032004",
+   "lat": 27.8629213,
+   "lng": 34.3032004,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8629213,34.3032004",
+   "source": "osm"
+  },
+  {
+   "nom": "Royal Paradise Resort",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8577872,34.3142685",
+   "lat": 27.8577872,
+   "lng": 34.3142685,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8577872,34.3142685",
+   "source": "osm"
+  },
+  {
+   "nom": "Seti Sharm",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8634282,34.2968121",
+   "lat": 27.8634282,
+   "lng": 34.2968121,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8634282,34.2968121",
+   "source": "osm"
+  },
+  {
+   "nom": "Iberotel Palace",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.863544,34.2936835",
+   "lat": 27.863544,
+   "lng": 34.2936835,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.863544,34.2936835",
+   "source": "osm"
+  },
+  {
+   "nom": "Safir Sharm Waterfalls Resort",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 5,
+   "mapsUrl": "https://maps.google.com/?q=27.8558643,34.3152898",
+   "lat": 27.8558643,
+   "lng": 34.3152898,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.sharmwaterfallsresort.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Aqua Blu Resort",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 4,
+   "mapsUrl": "https://maps.google.com/?q=27.8572744,34.3042061",
+   "lat": 27.8572744,
+   "lng": 34.3042061,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8572744,34.3042061",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8550967,34.3075014",
+   "lat": 27.8550967,
+   "lng": 34.3075014,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.8550967,34.3075014",
+   "source": "osm"
+  },
+  {
+   "nom": "Turquoise",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.86226,34.2887806",
+   "lat": 27.86226,
+   "lng": 34.2887806,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.86226,34.2887806",
+   "source": "osm"
+  },
+  {
+   "nom": "Logaina",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.859843,34.280798",
+   "lat": 27.859843,
+   "lng": 34.280798,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.859843,34.280798",
+   "source": "osm"
+  },
+  {
+   "nom": "Sierra",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9640031,34.3920281",
+   "lat": 27.9640031,
+   "lng": 34.3920281,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9640031,34.3920281",
+   "source": "osm"
+  },
+  {
+   "nom": "Royal Savoy",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.9619929,34.3965694",
+   "lat": 27.9619929,
+   "lng": 34.3965694,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=27.9619929,34.3965694",
+   "source": "osm"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "Sahaba Mosque",
+   "lat": 27.8665133,
+   "lng": 34.2952416,
+   "coordonnees": {
+    "lat": 27.8665133,
+    "lng": 34.2952416
+   },
+   "mapsUrl": "https://maps.google.com/?q=27.8665133,34.2952416",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد الرحمن",
+   "lat": 27.8518915,
+   "lng": 34.3050074,
+   "coordonnees": {
+    "lat": 27.8518915,
+    "lng": 34.3050074
+   },
+   "mapsUrl": "https://maps.google.com/?q=27.8518915,34.3050074",
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Sharm",
+   "lat": 27.908208,
+   "lng": 34.3244795,
+   "coordonnees": {
+    "lat": 27.908208,
+    "lng": 34.3244795
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.908208,34.3244795",
+   "source": "osm"
+  },
+  {
+   "nom": "Sinai Grand Casino",
+   "lat": 27.918536,
+   "lng": 34.3403121,
+   "coordonnees": {
+    "lat": 27.918536,
+    "lng": 34.3403121
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.918536,34.3403121",
+   "source": "osm"
+  },
+  {
+   "nom": "King Tut Museum",
+   "lat": 27.9074779,
+   "lng": 34.3188138,
+   "coordonnees": {
+    "lat": 27.9074779,
+    "lng": 34.3188138
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=27.9074779,34.3188138",
+   "source": "osm"
+  },
+  {
+   "nom": "Near Garden",
+   "lat": 27.9081038,
+   "lng": 34.3467116,
+   "coordonnees": {
+    "lat": 27.9081038,
+    "lng": 34.3467116
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.9081038,34.3467116",
+   "source": "osm"
+  },
+  {
+   "nom": "Hollywood park sharm",
+   "lat": 27.9281335,
+   "lng": 34.3455117,
+   "coordonnees": {
+    "lat": 27.9281335,
+    "lng": 34.3455117
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.9281335,34.3455117",
+   "source": "osm"
+  },
+  {
+   "nom": "Middle Garden",
+   "lat": 27.9129604,
+   "lng": 34.3511212,
+   "coordonnees": {
+    "lat": 27.9129604,
+    "lng": 34.3511212
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.9129604,34.3511212",
+   "source": "osm"
+  },
+  {
+   "nom": "Compass",
+   "lat": 27.9025639,
+   "lng": 34.3127282,
+   "coordonnees": {
+    "lat": 27.9025639,
+    "lng": 34.3127282
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.9025639,34.3127282",
+   "source": "osm"
+  },
+  {
+   "nom": "Far Garden",
+   "lat": 27.9150053,
+   "lng": 34.3588754,
+   "coordonnees": {
+    "lat": 27.9150053,
+    "lng": 34.3588754
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.9150053,34.3588754",
+   "source": "osm"
+  },
+  {
+   "nom": "Sodfa",
+   "lat": 27.8877937,
+   "lng": 34.3293251,
+   "coordonnees": {
+    "lat": 27.8877937,
+    "lng": 34.3293251
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.8877937,34.3293251",
+   "source": "osm"
+  },
+  {
+   "nom": "Faraana atv safari",
+   "lat": 27.9442758,
+   "lng": 34.313349,
+   "coordonnees": {
+    "lat": 27.9442758,
+    "lng": 34.313349
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.9442758,34.313349",
+   "source": "osm"
+  },
+  {
+   "nom": "سفاري شرم الشيخ",
+   "lat": 27.942264,
+   "lng": 34.3086591,
+   "coordonnees": {
+    "lat": 27.942264,
+    "lng": 34.3086591
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.942264,34.3086591",
+   "source": "osm"
+  },
+  {
+   "nom": "Tower",
+   "lat": 27.8822916,
+   "lng": 34.3262218,
+   "coordonnees": {
+    "lat": 27.8822916,
+    "lng": 34.3262218
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.8822916,34.3262218",
+   "source": "osm"
+  },
+  {
+   "nom": "Pinky Wall",
+   "lat": 27.8795604,
+   "lng": 34.3220161,
+   "coordonnees": {
+    "lat": 27.8795604,
+    "lng": 34.3220161
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.8795604,34.3220161",
+   "source": "osm"
+  },
+  {
+   "nom": "Amphoras",
+   "lat": 27.8692787,
+   "lng": 34.3252798,
+   "coordonnees": {
+    "lat": 27.8692787,
+    "lng": 34.3252798
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.8692787,34.3252798",
+   "source": "osm"
+  },
+  {
+   "nom": "Turtle Bay",
+   "lat": 27.8644615,
+   "lng": 34.3229602,
+   "coordonnees": {
+    "lat": 27.8644615,
+    "lng": 34.3229602
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.8644615,34.3229602",
+   "source": "osm"
+  },
+  {
+   "nom": "Mohamed Ali Pacha",
+   "lat": 27.8662583,
+   "lng": 34.296414,
+   "coordonnees": {
+    "lat": 27.8662583,
+    "lng": 34.296414
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=27.8662583,34.296414",
+   "source": "osm"
+  },
+  {
+   "nom": "Dolphins",
+   "lat": 27.8607955,
+   "lng": 34.3028897,
+   "coordonnees": {
+    "lat": 27.8607955,
+    "lng": 34.3028897
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.8607955,34.3028897",
+   "source": "osm"
+  },
+  {
+   "nom": "أفيرة",
+   "lat": 27.8654526,
+   "lng": 34.2905028,
+   "coordonnees": {
+    "lat": 27.8654526,
+    "lng": 34.2905028
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=27.8654526,34.2905028",
+   "source": "osm"
+  },
+  {
+   "nom": "Amirati Beach",
+   "lat": 27.8618271,
+   "lng": 34.2895379,
+   "coordonnees": {
+    "lat": 27.8618271,
+    "lng": 34.2895379
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.8618271,34.2895379",
+   "source": "osm"
+  },
+  {
+   "nom": "el Fanara Beach",
+   "lat": 27.8482533,
+   "lng": 34.3141824,
+   "coordonnees": {
+    "lat": 27.8482533,
+    "lng": 34.3141824
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.8482533,34.3141824",
+   "source": "osm"
+  },
+  {
+   "nom": "Ras Umm Sid",
+   "lat": 27.847261,
+   "lng": 34.31648,
+   "coordonnees": {
+    "lat": 27.847261,
+    "lng": 34.31648
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.847261,34.31648",
+   "source": "osm"
+  },
+  {
+   "nom": "Ras Um Sid",
+   "lat": 27.8482308,
+   "lng": 34.310403,
+   "coordonnees": {
+    "lat": 27.8482308,
+    "lng": 34.310403
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=27.8482308,34.310403",
+   "source": "osm"
+  },
+  {
+   "nom": "Ras Katy",
+   "lat": 27.8466578,
+   "lng": 34.3024876,
+   "coordonnees": {
+    "lat": 27.8466578,
+    "lng": 34.3024876
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.8466578,34.3024876",
+   "source": "osm"
+  },
+  {
+   "nom": "Soho Square",
+   "lat": 27.9627279,
+   "lng": 34.393915,
+   "coordonnees": {
+    "lat": 27.9627279,
+    "lng": 34.393915
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.9627279,34.393915",
+   "source": "osm"
+  },
+  {
+   "nom": "танк",
+   "lat": 27.8507304,
+   "lng": 34.2898294,
+   "coordonnees": {
+    "lat": 27.8507304,
+    "lng": 34.2898294
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.8507304,34.2898294",
+   "source": "osm"
+  },
+  {
+   "nom": "Ras Bob Dive",
+   "lat": 27.9628525,
+   "lng": 34.4114689,
+   "coordonnees": {
+    "lat": 27.9628525,
+    "lng": 34.4114689
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.9628525,34.4114689",
+   "source": "osm"
+  },
+  {
+   "nom": "Marsa Kharita",
+   "lat": 27.8246951,
+   "lng": 34.2667686,
+   "coordonnees": {
+    "lat": 27.8246951,
+    "lng": 34.2667686
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.8246951,34.2667686",
+   "source": "osm"
+  },
+  {
+   "nom": "Gordon reef",
+   "lat": 27.9848747,
+   "lng": 34.4535967,
+   "coordonnees": {
+    "lat": 27.9848747,
+    "lng": 34.4535967
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.9848747,34.4535967",
+   "source": "osm"
+  },
+  {
+   "nom": "I Love Rixos Radamis",
+   "lat": 28.0044981,
+   "lng": 34.4365829,
+   "coordonnees": {
+    "lat": 28.0044981,
+    "lng": 34.4365829
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=28.0044981,34.4365829",
+   "source": "osm"
+  },
+  {
+   "nom": "Louilla",
+   "lat": 27.9895604,
+   "lng": 34.4535007,
+   "coordonnees": {
+    "lat": 27.9895604,
+    "lng": 34.4535007
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=27.9895604,34.4535007",
+   "source": "osm"
+  },
+  {
+   "nom": "Gordon Reef Dive",
+   "lat": 27.9855413,
+   "lng": 34.457278,
+   "coordonnees": {
+    "lat": 27.9855413,
+    "lng": 34.457278
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.9855413,34.457278",
+   "source": "osm"
+  },
+  {
+   "nom": "Thomas reef",
+   "lat": 27.9921659,
+   "lng": 34.4614807,
+   "coordonnees": {
+    "lat": 27.9921659,
+    "lng": 34.4614807
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.9921659,34.4614807",
+   "source": "osm"
+  },
+  {
+   "nom": "Ras Ghozlani",
+   "lat": 27.7894435,
+   "lng": 34.2619429,
+   "coordonnees": {
+    "lat": 27.7894435,
+    "lng": 34.2619429
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=27.7894435,34.2619429",
+   "source": "osm"
+  },
+  {
+   "nom": "Egypt landmarks",
+   "lat": 28.0256355,
+   "lng": 34.4373358,
+   "coordonnees": {
+    "lat": 28.0256355,
+    "lng": 34.4373358
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=28.0256355,34.4373358",
+   "source": "osm"
+  },
+  {
+   "nom": "Jackson Reef dive",
+   "lat": 28.0043335,
+   "lng": 34.4721127,
+   "coordonnees": {
+    "lat": 28.0043335,
+    "lng": 34.4721127
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=28.0043335,34.4721127",
+   "source": "osm"
+  },
+  {
+   "nom": "Jackson reef",
+   "lat": 28.0059666,
+   "lng": 34.472557,
+   "coordonnees": {
+    "lat": 28.0059666,
+    "lng": 34.472557
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=28.0059666,34.472557",
+   "source": "osm"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30",
+ "description_en": "Charm el-Cheikh, in Egypt, is a halal-friendly destination with a Halal Trust Score of 4.4/5. Muslim travelers will find 5 halal restaurants listed, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
+ "metaDescription_en": "Halal guide to Charm el-Cheikh: 5 halal restaurants listed, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.4/5.",
+ "nom_en": "Charm el-Cheikh",
+ "boucheries": [],
+ "dataPurgedAt": "2026-07-15"
 }

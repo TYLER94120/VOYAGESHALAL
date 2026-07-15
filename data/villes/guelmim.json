@@ -1,202 +1,163 @@
 {
-  "slug": "guelmim",
-  "nom": "Guelmim",
-  "pays": "Maroc",
-  "pays_slug": "maroc",
-  "continent": "Afrique",
-  "region": "Sud du Maroc / Sahara",
-  "coordonnees": {
-    "lat": 28.987,
-    "lng": -10.0574
-  },
-  "codeISO": "MA",
-  "score_halal": 4.6,
-  "halalScore": 9.2,
-  "description": "'Porte du Sahara', ancienne cité caravanière réputée pour son moussem des chameaux et ses oasis. Carrefour entre l'Anti-Atlas et le désert.",
-  "image": "https://images.unsplash.com/photo-1675782357250-8329a7677819?w=1600&q=80",
-  "image_hero": "https://images.unsplash.com/photo-1675782357250-8329a7677819?w=1600&q=80",
-  "metaDescription": "'Porte du Sahara', ancienne cité caravanière réputée pour son moussem des chameaux et ses oasis. Carrefour entre l'Anti-Atlas et le désert.",
+ "slug": "guelmim",
+ "nom": "Guelmim",
+ "pays": "Maroc",
+ "pays_slug": "maroc",
+ "continent": "Afrique",
+ "region": "Sud du Maroc / Sahara",
+ "coordonnees": {
+  "lat": 28.987,
+  "lng": -10.0574
+ },
+ "codeISO": "MA",
+ "score_halal": 4.6,
+ "halalScore": 9.2,
+ "description": "'Porte du Sahara', ancienne cité caravanière réputée pour son moussem des chameaux et ses oasis. Carrefour entre l'Anti-Atlas et le désert.",
+ "image": "https://images.unsplash.com/photo-1675782357250-8329a7677819?w=1600&q=80",
+ "image_hero": "https://images.unsplash.com/photo-1675782357250-8329a7677819?w=1600&q=80",
+ "metaDescription": "'Porte du Sahara', ancienne cité caravanière réputée pour son moussem des chameaux et ses oasis. Carrefour entre l'Anti-Atlas et le désert.",
+ "monnaie": "MAD (Dirham marocain)",
+ "langue": "Arabe, Tamazight, Français",
+ "statistiques": {
+  "restaurants_halal": 0,
+  "mosquees": 3,
+  "hotels": 3
+ },
+ "infoPratique": {
   "monnaie": "MAD (Dirham marocain)",
   "langue": "Arabe, Tamazight, Français",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 3
+  "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
+  "meilleureEpoque": "Printemps et automne (climat doux)."
+ },
+ "tags": [
+  "halal",
+  "Maroc"
+ ],
+ "restaurants": [],
+ "hotels": [
+  {
+   "nom": "فندق الملتقى",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=28.9873499,-10.0574477",
+   "lat": 28.9873499,
+   "lng": -10.0574477,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=28.9873499,-10.0574477",
+   "source": "osm"
   },
-  "infoPratique": {
-    "monnaie": "MAD (Dirham marocain)",
-    "langue": "Arabe, Tamazight, Français",
-    "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
-    "meilleureEpoque": "Printemps et automne (climat doux)."
+  {
+   "nom": "Hotel Qoods",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=28.9891358,-10.0561276",
+   "lat": 28.9891358,
+   "lng": -10.0561276,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=28.9891358,-10.0561276",
+   "source": "osm"
   },
-  "tags": [
-    "halal",
-    "Maroc"
-  ],
-  "restaurants": [],
-  "hotels": [
-    {
-      "nom": "فندق الملتقى",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=28.9873499,-10.0574477",
-      "lat": 28.9873499,
-      "lng": -10.0574477,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=28.9873499,-10.0574477",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Qoods",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=28.9891358,-10.0561276",
-      "lat": 28.9891358,
-      "lng": -10.0561276,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=28.9891358,-10.0561276",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Club",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=29.0025396,-10.1446241",
-      "lat": 29.0025396,
-      "lng": -10.1446241,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=29.0025396,-10.1446241",
-      "source": "osm"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Guelmim",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Guelmim",
-      "description": "Mosquée principale de la ville, prière du vendredi.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20Guelmim%20Guelmim%20Maroc"
-    },
-    {
-      "nom": "مسجد الاعظم",
-      "lat": 28.99126,
-      "lng": -10.055588,
-      "coordonnees": {
-        "lat": 28.99126,
-        "lng": -10.055588
-      },
-      "mapsUrl": "https://maps.google.com/?q=28.99126,-10.055588",
-      "source": "osm"
-    },
-    {
-      "nom": "Mosk",
-      "lat": 28.944526,
-      "lng": -9.9631425,
-      "coordonnees": {
-        "lat": 28.944526,
-        "lng": -9.9631425
-      },
-      "mapsUrl": "https://maps.google.com/?q=28.944526,-9.9631425",
-      "source": "osm"
-    },
-    {
-      "nom": "Muslim",
-      "lat": 28.9455302,
-      "lng": -9.9548881,
-      "coordonnees": {
-        "lat": 28.9455302,
-        "lng": -9.9548881
-      },
-      "mapsUrl": "https://maps.google.com/?q=28.9455302,-9.9548881",
-      "source": "osm"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Moussem des chameaux",
-      "categorie": "Événement",
-      "description": "Grand rassemblement caravanier annuel, dromadaires et culture saharienne.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Moussem%20des%20chameaux%20Guelmim%20Maroc"
-    },
-    {
-      "id": "a2",
-      "nom": "Oasis et dunes d'Abaynou",
-      "categorie": "Nature",
-      "description": "Oasis et sources thermales près de la ville.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Oasis%20et%20dunes%20d%27Abaynou%20Guelmim%20Maroc"
-    },
-    {
-      "id": "a3",
-      "nom": "Souk hebdomadaire",
-      "categorie": "Shopping",
-      "description": "Marché aux bestiaux et artisanat saharien.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Souk%20hebdomadaire%20Guelmim%20Maroc",
-      "lat": 29.1740455,
-      "lng": -9.7146307,
-      "geocoded": true
-    },
-    {
-      "nom": "Market Dromedare",
-      "lat": 28.9819809,
-      "lng": -10.0744324,
-      "coordonnees": {
-        "lat": 28.9819809,
-        "lng": -10.0744324
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=28.9819809,-10.0744324",
-      "source": "osm"
-    },
-    {
-      "nom": "Porte de Guelmim",
-      "lat": 29.0163418,
-      "lng": -10.0337088,
-      "coordonnees": {
-        "lat": 29.0163418,
-        "lng": -10.0337088
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=29.0163418,-10.0337088",
-      "source": "osm"
-    },
-    {
-      "nom": "Musee mémoire des nomades",
-      "lat": 28.9464836,
-      "lng": -9.9642217,
-      "coordonnees": {
-        "lat": 28.9464836,
-        "lng": -9.9642217
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=28.9464836,-9.9642217",
-      "source": "osm"
-    },
-    {
-      "nom": "Jardin Botanique Alex et Alessandro",
-      "lat": 28.9447627,
-      "lng": -9.9622131,
-      "coordonnees": {
-        "lat": 28.9447627,
-        "lng": -9.9622131
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=28.9447627,-9.9622131",
-      "source": "osm"
-    }
-  ],
-  "osmEnriched": true,
-  "osmEnrichedAt": "2026-06-30",
-  "description_en": "Guelmim, in Morocco, is a halal-friendly destination with a Halal Trust Score of 4.6/5. Muslim travelers will find a selection of halal restaurants, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
-  "metaDescription_en": "Halal guide to Guelmim: halal restaurants, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.6/5.",
-  "nom_en": "Guelmim"
+  {
+   "nom": "Hotel Club",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.0025396,-10.1446241",
+   "lat": 29.0025396,
+   "lng": -10.1446241,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=29.0025396,-10.1446241",
+   "source": "osm"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "مسجد الاعظم",
+   "lat": 28.99126,
+   "lng": -10.055588,
+   "coordonnees": {
+    "lat": 28.99126,
+    "lng": -10.055588
+   },
+   "mapsUrl": "https://maps.google.com/?q=28.99126,-10.055588",
+   "source": "osm"
+  },
+  {
+   "nom": "Mosk",
+   "lat": 28.944526,
+   "lng": -9.9631425,
+   "coordonnees": {
+    "lat": 28.944526,
+    "lng": -9.9631425
+   },
+   "mapsUrl": "https://maps.google.com/?q=28.944526,-9.9631425",
+   "source": "osm"
+  },
+  {
+   "nom": "Muslim",
+   "lat": 28.9455302,
+   "lng": -9.9548881,
+   "coordonnees": {
+    "lat": 28.9455302,
+    "lng": -9.9548881
+   },
+   "mapsUrl": "https://maps.google.com/?q=28.9455302,-9.9548881",
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Market Dromedare",
+   "lat": 28.9819809,
+   "lng": -10.0744324,
+   "coordonnees": {
+    "lat": 28.9819809,
+    "lng": -10.0744324
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=28.9819809,-10.0744324",
+   "source": "osm"
+  },
+  {
+   "nom": "Porte de Guelmim",
+   "lat": 29.0163418,
+   "lng": -10.0337088,
+   "coordonnees": {
+    "lat": 29.0163418,
+    "lng": -10.0337088
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=29.0163418,-10.0337088",
+   "source": "osm"
+  },
+  {
+   "nom": "Musee mémoire des nomades",
+   "lat": 28.9464836,
+   "lng": -9.9642217,
+   "coordonnees": {
+    "lat": 28.9464836,
+    "lng": -9.9642217
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=28.9464836,-9.9642217",
+   "source": "osm"
+  },
+  {
+   "nom": "Jardin Botanique Alex et Alessandro",
+   "lat": 28.9447627,
+   "lng": -9.9622131,
+   "coordonnees": {
+    "lat": 28.9447627,
+    "lng": -9.9622131
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=28.9447627,-9.9622131",
+   "source": "osm"
+  }
+ ],
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30",
+ "description_en": "Guelmim, in Morocco, is a halal-friendly destination with a Halal Trust Score of 4.6/5. Muslim travelers will find a selection of halal restaurants, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
+ "metaDescription_en": "Halal guide to Guelmim: halal restaurants, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.6/5.",
+ "nom_en": "Guelmim",
+ "dataPurgedAt": "2026-07-15"
 }
