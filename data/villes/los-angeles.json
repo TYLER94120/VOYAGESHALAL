@@ -28,7 +28,7 @@
  },
  "image_alt": "Vue de Los Angeles, États-Unis",
  "statistiques": {
-  "mosquees": 6,
+  "mosquees": 13,
   "restaurants_halal": 26,
   "habitants_musulmans_pct": 6,
   "hotels": 100
@@ -1996,6 +1996,75 @@
    "adresse": "Yale Street",
    "mapsUrl": "https://maps.google.com/?q=34.062601,-118.240768",
    "source": "osm"
+  },
+  {
+   "id": "osm-412475901",
+   "nom": "Masjid Omar ibn Al-Khattab",
+   "type": "mosquee",
+   "lat": 34.0185669,
+   "lng": -118.2924402,
+   "mapsUrl": "https://maps.google.com/?q=34.0185669,-118.2924402",
+   "source": "osm"
+  },
+  {
+   "id": "osm-420968977",
+   "nom": "Masjid Al-Falah",
+   "type": "mosquee",
+   "adresse": "South Serrano Avenue",
+   "lat": 34.068638,
+   "lng": -118.3069725,
+   "mapsUrl": "https://maps.google.com/?q=34.068638,-118.3069725",
+   "source": "osm"
+  },
+  {
+   "id": "osm-449978240",
+   "nom": "Islamic Society of Downey",
+   "type": "mosquee",
+   "adresse": "Old River School Road, Downey",
+   "lat": 33.9490006,
+   "lng": -118.1470618,
+   "mapsUrl": "https://maps.google.com/?q=33.9490006,-118.1470618",
+   "source": "osm"
+  },
+  {
+   "id": "osm-450374899",
+   "nom": "Bab-Ul-Ilm Islamic Center",
+   "type": "mosquee",
+   "adresse": "Heliotrope Circle, Maywood",
+   "lat": 33.9852914,
+   "lng": -118.1794611,
+   "mapsUrl": "https://maps.google.com/?q=33.9852914,-118.1794611",
+   "source": "osm"
+  },
+  {
+   "id": "osm-471887812",
+   "nom": "Islamic Center of Glendale",
+   "type": "mosquee",
+   "adresse": "South Adams Street, Glendale",
+   "lat": 34.1387408,
+   "lng": -118.2414103,
+   "mapsUrl": "https://maps.google.com/?q=34.1387408,-118.2414103",
+   "source": "osm"
+  },
+  {
+   "id": "osm-1188708554",
+   "nom": "Bell Islamic Center",
+   "type": "mosquee",
+   "adresse": "Gage Avenue, Bell",
+   "lat": 33.9759458,
+   "lng": -118.1712145,
+   "mapsUrl": "https://maps.google.com/?q=33.9759458,-118.1712145",
+   "source": "osm"
+  },
+  {
+   "id": "osm-6336076",
+   "nom": "Islamic Center of Southern California",
+   "type": "mosquee",
+   "adresse": "South Vermont Avenue, Los Angeles",
+   "lat": 34.0664084,
+   "lng": -118.291235,
+   "mapsUrl": "https://maps.google.com/?q=34.0664084,-118.291235",
+   "source": "osm"
   }
  ],
  "tags": [
@@ -2018,5 +2087,6 @@
   "nourriture_halal": "Largement disponible",
   "alcool": "Available"
  },
- "dataPurgedAt": "2026-07-15"
+ "dataPurgedAt": "2026-07-15",
+ "osmEnrichedAt": "2026-07-15"
 }
