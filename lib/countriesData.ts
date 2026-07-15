@@ -700,7 +700,7 @@ export const countries: Country[] = [
     tags: ['Aventure', 'Culture', 'Technologie', 'Gastronomie', 'Nature', 'Unique'],
   },
   {
-    slug: 'thaïlande',
+    slug: 'thailande',
     name: 'Thaïlande',
     continent: 'Asie du Sud-Est',
     coverImage: 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=1400&q=85',

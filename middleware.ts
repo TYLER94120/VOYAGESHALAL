@@ -22,6 +22,13 @@ export function middleware(req: NextRequest) {
     return res
   }
 
+  // Ancien slug pays accentué (« thaïlande ») → 301 vers le slug ASCII
+  if (decodeURIComponent(pathname) === '/destinations/pays/thaïlande') {
+    const url = req.nextUrl.clone()
+    url.pathname = '/destinations/pays/thailande'
+    return decorate(NextResponse.redirect(url, 301))
+  }
+
   if (isEN) {
     // 1) Ancienne URL FR sur le domaine EN → 301 vers le slug EN (SEO propre)
     if (FR_TO_EN_SLUG[pathname]) {
