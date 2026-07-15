@@ -28,7 +28,7 @@
  },
  "image_alt": "Vue de Osaka, Japon",
  "statistiques": {
-  "mosquees": 1,
+  "mosquees": 2,
   "restaurants_halal": 125,
   "habitants_musulmans_pct": 2,
   "hotels": 116
@@ -3011,6 +3011,15 @@
    },
    "mapsUrl": "https://maps.google.com/?q=34.7249254,135.5100472",
    "source": "osm"
+  },
+  {
+   "id": "osm-266505005",
+   "nom": "大阪マスジド Osaka Masjid",
+   "type": "mosquee",
+   "lat": 34.7083195,
+   "lng": 135.444961,
+   "mapsUrl": "https://maps.google.com/?q=34.7083195,135.444961",
+   "source": "osm"
   }
  ],
  "tags": [
@@ -3033,5 +3042,6 @@
   "nourriture_halal": "Largement disponible",
   "alcool": "Available"
  },
- "dataPurgedAt": "2026-07-15"
+ "dataPurgedAt": "2026-07-15",
+ "osmEnrichedAt": "2026-07-15"
 }
