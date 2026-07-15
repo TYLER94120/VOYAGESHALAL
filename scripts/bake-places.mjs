@@ -38,6 +38,7 @@ async function textSearch(query, pagetoken) {
     const res = await fetch(url)
     const j = await res.json()
     if (j.status === 'OVER_QUERY_LIMIT') { console.error('QUOTA Google atteint — arrêt propre.'); return 'STOP' }
+    if (j.status === 'REQUEST_DENIED') { console.error('REQUEST_DENIED — clé sans accès Places API (activer Places API + facturation). Arrêt immédiat, aucune ville marquée.'); console.error('  détail:', j.error_message || ''); return 'STOP' }
     if (j.status !== 'OK' && j.status !== 'ZERO_RESULTS') { console.log('  status', j.status); return null }
     return j
   } catch { return null }
@@ -84,6 +85,7 @@ async function main() {
     const results = []
     let page = await textSearch(`halal restaurant in ${v.nom}, ${v.pays || ''}`)
     if (page === 'STOP') break
+    const apiOk = page && (page.status === 'OK' || page.status === 'ZERO_RESULTS')
     if (page?.results) results.push(...page.results)
     if (page?.next_page_token) {
       await sleep(2200) // le token Google met ~2 s à s'activer
@@ -118,6 +120,7 @@ async function main() {
       v.statistiques = { ...(v.statistiques || {}), restaurants_halal: v.restaurants.length }
       added += incoming.length
     }
+    if (!apiOk && !incoming.length) { console.log(`… ${v.nom}: pas de réponse API valide — ville NON marquée`); continue }
     v.googleBakedAt = new Date().toISOString().slice(0, 10)
     writeFileSync(fp, JSON.stringify(v, null, 1), 'utf-8')
     console.log(`✓ ${v.nom}: ${incoming.length} lieux Google (req ${requests}/${MAX_REQUESTS})`)
