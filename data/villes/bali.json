@@ -19,7 +19,7 @@
   "long": "Bali est l'une des destinations les plus emblématiques du monde. Bien que majoritairement hindoue (contrairement au reste de l'Indonésie), l'île accueille des millions de touristes musulmans et le label halal MUI y est présent dans de nombreux restaurants. Les zones de Kuta, Seminyak et Ubud proposent une offre halal solide. Les musulmans peuvent y voyager confortablement en sélectionnant les restaurants signalés halal et les hébergements appropriés. La beauté naturelle de Bali — rizières, temples, plages — en fait une destination exceptionnelle."
  },
  "statistiques": {
-  "mosquees": 0,
+  "mosquees": 1,
   "restaurants_halal": 0,
   "hotels_halal_friendly": 180,
   "population": "4,5 millions",
@@ -691,7 +691,17 @@
  "continent": "Asie",
  "metaDescription": "Restaurants halal signalés, mosquées et guide pratique pour Bali — Halal Trust Score 4/5.",
  "image_hero": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1600&q=80",
- "mosqueesPrincipales": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "osm-460356986",
+   "nom": "Masjid Al-Hidayah",
+   "type": "mosquee",
+   "lat": -8.277673,
+   "lng": 115.1649211,
+   "mapsUrl": "https://maps.google.com/?q=-8.277673,115.1649211",
+   "source": "osm"
+  }
+ ],
  "halalScore": 7,
  "description_en": "Bali, in Indonesia, is a halal-friendly destination with a Halal Trust Score of 3.5/5. Muslim travelers will find 38 halal restaurants listed, 450 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind. Best time to visit: April–October.",
  "metaDescription_en": "Halal guide to Bali: 38 halal restaurants listed, 450 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 3.5/5.",
@@ -705,5 +715,6 @@
  "sectionMangerHalal_en": "In Bali, your safety net is the rumah makan Padang: Sumatran canteens run by Muslims, halal by nature, found across the island. Denpasar and Kuta concentrate halal restaurants; elsewhere, check the MUI label and beware of babi guling (suckling pig) and arak used in cooking.",
  "sectionOuPrier": "Des mosquées à Denpasar, Kuta et près des ports ; beaucoup d'hôtels tenus par des musulmans indiquent la Qibla en chambre. L'aéroport Ngurah Rai dispose d'une salle de prière.",
  "sectionOuPrier_en": "Mosques in Denpasar, Kuta and near the harbors; many Muslim-run hotels mark the Qibla in the room. Ngurah Rai airport has a prayer room.",
- "dataPurgedAt": "2026-07-15"
+ "dataPurgedAt": "2026-07-15",
+ "osmEnrichedAt": "2026-07-15"
 }
