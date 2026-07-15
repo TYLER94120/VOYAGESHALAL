@@ -28,7 +28,7 @@
  },
  "image_alt": "Vue de Tokyo, Japon",
  "statistiques": {
-  "mosquees": 8,
+  "mosquees": 12,
   "restaurants_halal": 135,
   "habitants_musulmans_pct": 2,
   "hotels": 117
@@ -3008,6 +3008,45 @@
    },
    "mapsUrl": "https://maps.google.com/?q=35.6148488,139.4694683",
    "source": "osm"
+  },
+  {
+   "id": "osm-123206111",
+   "nom": "Kamata Mosque",
+   "type": "mosquee",
+   "adresse": "Ota, Kamata",
+   "lat": 35.5644279,
+   "lng": 139.7171248,
+   "mapsUrl": "https://maps.google.com/?q=35.5644279,139.7171248",
+   "source": "osm"
+  },
+  {
+   "id": "osm-155508308",
+   "nom": "東京ジャーミー",
+   "type": "mosquee",
+   "lat": 35.6681678,
+   "lng": 139.6765499,
+   "mapsUrl": "https://maps.google.com/?q=35.6681678,139.6765499",
+   "source": "osm"
+  },
+  {
+   "id": "osm-183177137",
+   "nom": "マスジド大塚 Masjid Otsuka",
+   "type": "mosquee",
+   "adresse": "豊島区",
+   "lat": 35.7290227,
+   "lng": 139.7282381,
+   "mapsUrl": "https://maps.google.com/?q=35.7290227,139.7282381",
+   "source": "osm"
+  },
+  {
+   "id": "osm-230308615",
+   "nom": "ダールルアルカム・マスジド",
+   "type": "mosquee",
+   "adresse": "台東区",
+   "lat": 35.7217705,
+   "lng": 139.8014668,
+   "mapsUrl": "https://maps.google.com/?q=35.7217705,139.8014668",
+   "source": "osm"
   }
  ],
  "tags": [
@@ -3034,5 +3073,6 @@
  "sectionMangerHalal_en": "In Tokyo, halal food clusters around Tokyo Camii mosque (Yoyogi-Uehara), Asakusa and Shinjuku: halal ramen, halal wagyu and Turkish or Indonesian kitchens flagged by local bodies. Watch out for mirin and sake hidden in sauces; in konbini stores, salmon onigiri and plain salads are safe fallbacks.",
  "sectionOuPrier": "Tokyo Camii, la grande mosquée ottomane de Shibuya, accueille les cinq prières et oriente volontiers les visiteurs. Les aéroports de Narita et Haneda disposent de prayer rooms, et plusieurs grands magasins en ajoutent chaque année.",
  "sectionOuPrier_en": "Tokyo Camii, the grand Ottoman-style mosque in Shibuya, hosts the five daily prayers and gladly helps visitors. Narita and Haneda airports have prayer rooms, and more department stores add them every year.",
- "dataPurgedAt": "2026-07-15"
+ "dataPurgedAt": "2026-07-15",
+ "osmEnrichedAt": "2026-07-15"
 }
