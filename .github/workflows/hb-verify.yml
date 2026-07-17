@@ -14,41 +14,70 @@ jobs:
         run: |
           mkdir -p hb-audit
           python3 - << 'PY'
-          import urllib.request, re, json
-          # Candidats : resorts halal notoires (à CONFIRMER par la fiche réelle)
+          import urllib.request, re, json, gzip, io
+          UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
+          def get(u, timeout=30):
+              req = urllib.request.Request(u, headers=UA)
+              data = urllib.request.urlopen(req, timeout=timeout).read()
+              if u.endswith('.gz'):
+                  data = gzip.decompress(data)
+              return data.decode('utf-8', 'ignore')
+          # 1) Découverte des sitemaps réels
+          hotel_urls = []
+          try:
+              robots = get('https://en.halalbooking.com/robots.txt')
+              maps = re.findall(r'Sitemap:\s*(\S+)', robots)
+              print('sitemaps robots:', maps)
+              queue = list(maps) or ['https://en.halalbooking.com/sitemap.xml']
+              seen = set()
+              while queue and len(hotel_urls) < 20000:
+                  sm = queue.pop(0)
+                  if sm in seen: continue
+                  seen.add(sm)
+                  try: xml = get(sm)
+                  except Exception as e: print('sitemap KO', sm, e); continue
+                  locs = re.findall(r'<loc>([^<]+)</loc>', xml)
+                  for l in locs:
+                      if re.search(r'sitemap[^<]*\.xml', l) and l not in seen and len(seen) < 30:
+                          queue.append(l)
+                      elif '/hotel' in l or '/en/' in l:
+                          hotel_urls.append(l)
+              print('urls hôtels découvertes:', len(hotel_urls))
+          except Exception as e:
+              print('robots KO:', e)
+          def norm(s): return re.sub(r'[^a-z0-9]+', '', s.lower())
           CANDIDATES = [
-            ("antalya", "Adin Beach Hotel", "https://en.halalbooking.com/en/hotels/adin-beach-hotel"),
-            ("antalya", "Adenya Hotel & Resort", "https://en.halalbooking.com/en/hotels/adenya-hotel-resort"),
-            ("antalya", "Wome Deluxe Hotel", "https://en.halalbooking.com/en/hotels/wome-deluxe-hotel"),
-            ("antalya", "Bera Alanya Hotel", "https://en.halalbooking.com/en/hotels/bera-alanya-hotel"),
-            ("antalya", "Selge Beach Resort", "https://en.halalbooking.com/en/hotels/selge-beach-resort-spa"),
-            ("antalya", "Sah Inn Paradise", "https://en.halalbooking.com/en/hotels/sah-inn-paradise-hotel"),
-            ("bodrum", "Rizom Beach Hotel", "https://en.halalbooking.com/en/hotels/rizom-beach-hotel"),
-            ("marmaris", "Angel's Marmaris", "https://en.halalbooking.com/en/hotels/angels-marmaris-hotel"),
+            ("antalya", "Adin Beach Hotel", "adinbeach"),
+            ("antalya", "Adenya Hotel", "adenya"),
+            ("antalya", "Wome Deluxe", "womedeluxe"),
+            ("antalya", "Bera Alanya", "beraalanya"),
+            ("antalya", "Selge Beach", "selgebeach"),
+            ("antalya", "Sah Inn Paradise", "sahinn"),
+            ("marmaris", "Angel's Marmaris", "angelsmarmaris"),
+            ("bodrum", "Rizom Beach", "rizom"),
           ]
+          MARKERS = re.compile(r"ladies[- ]only|women[- ]only|female[- ]only|ladies beach|ladies pool|privacy for ladies", re.I)
           out = []
-          MARKERS = re.compile(r"ladies[- ]only|women[- ]only|female[- ]only|ladies beach|ladies pool", re.I)
-          for slug, nom, url in CANDIDATES:
-              rec = {"villeSlug": slug, "nom": nom, "url": url, "fetched": False, "evidence": []}
-              for u in (url, url.replace("/en/hotels/", "/hotels/")):
+          for slug, nom, key in CANDIDATES:
+              rec = {"villeSlug": slug, "nom": nom, "fetched": False, "evidence": []}
+              matches = [u for u in hotel_urls if key in norm(u)]
+              rec["matchedUrls"] = matches[:3]
+              for u in matches[:2]:
                   try:
-                      req = urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0"})
-                      html = urllib.request.urlopen(req, timeout=30).read().decode("utf-8", "ignore")
-                      rec["fetched"] = True
-                      rec["finalUrl"] = u
+                      html = get(u)
+                      rec["fetched"] = True; rec["url"] = u
                       hits = set()
                       for m in MARKERS.finditer(html):
-                          s = max(0, m.start() - 60); e = min(len(html), m.end() + 60)
-                          frag = re.sub(r"<[^>]+>", " ", html[s:e])
-                          frag = re.sub(r"\s+", " ", frag).strip()
-                          hits.add(frag[:140])
+                          a = max(0, m.start()-70); b = min(len(html), m.end()+70)
+                          frag = re.sub(r'<[^>]+>', ' ', html[a:b]); frag = re.sub(r'\s+', ' ', frag).strip()
+                          hits.add(frag[:150])
                       rec["evidence"] = sorted(hits)[:8]
-                      break
-                  except Exception as ex:
-                      rec.setdefault("errors", []).append(f"{u}: {ex}")
+                      if rec["evidence"]: break
+                  except Exception as e:
+                      rec.setdefault("errors", []).append(f"{u}: {e}")
               out.append(rec)
-              print(nom, "fetched=", rec["fetched"], "evidence=", len(rec["evidence"]))
-          json.dump(out, open("hb-audit/evidence.json", "w"), ensure_ascii=False, indent=1)
+              print(nom, '| urls:', len(matches), '| fetched:', rec['fetched'], '| preuves:', len(rec['evidence']))
+          json.dump(out, open('hb-audit/evidence.json', 'w'), ensure_ascii=False, indent=1)
           PY
       - name: Commit evidence
         run: |
