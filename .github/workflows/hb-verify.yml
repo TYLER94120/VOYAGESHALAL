@@ -1,0 +1,60 @@
+name: hb-verify
+# Vérification RÉELLE des resorts HalalBooking : télécharge les fiches
+# candidates et extrait les mentions « ladies only / women only pool/beach »
+# comme PREUVE avant tout import. Résultats committés sur la branche hb-audit.
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch candidate pages and extract evidence
+        run: |
+          mkdir -p hb-audit
+          python3 - << 'PY'
+          import urllib.request, re, json
+          # Candidats : resorts halal notoires (à CONFIRMER par la fiche réelle)
+          CANDIDATES = [
+            ("antalya", "Adin Beach Hotel", "https://en.halalbooking.com/en/hotels/adin-beach-hotel"),
+            ("antalya", "Adenya Hotel & Resort", "https://en.halalbooking.com/en/hotels/adenya-hotel-resort"),
+            ("antalya", "Wome Deluxe Hotel", "https://en.halalbooking.com/en/hotels/wome-deluxe-hotel"),
+            ("antalya", "Bera Alanya Hotel", "https://en.halalbooking.com/en/hotels/bera-alanya-hotel"),
+            ("antalya", "Selge Beach Resort", "https://en.halalbooking.com/en/hotels/selge-beach-resort-spa"),
+            ("antalya", "Sah Inn Paradise", "https://en.halalbooking.com/en/hotels/sah-inn-paradise-hotel"),
+            ("bodrum", "Rizom Beach Hotel", "https://en.halalbooking.com/en/hotels/rizom-beach-hotel"),
+            ("marmaris", "Angel's Marmaris", "https://en.halalbooking.com/en/hotels/angels-marmaris-hotel"),
+          ]
+          out = []
+          MARKERS = re.compile(r"ladies[- ]only|women[- ]only|female[- ]only|ladies beach|ladies pool", re.I)
+          for slug, nom, url in CANDIDATES:
+              rec = {"villeSlug": slug, "nom": nom, "url": url, "fetched": False, "evidence": []}
+              for u in (url, url.replace("/en/hotels/", "/hotels/")):
+                  try:
+                      req = urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0"})
+                      html = urllib.request.urlopen(req, timeout=30).read().decode("utf-8", "ignore")
+                      rec["fetched"] = True
+                      rec["finalUrl"] = u
+                      hits = set()
+                      for m in MARKERS.finditer(html):
+                          s = max(0, m.start() - 60); e = min(len(html), m.end() + 60)
+                          frag = re.sub(r"<[^>]+>", " ", html[s:e])
+                          frag = re.sub(r"\s+", " ", frag).strip()
+                          hits.add(frag[:140])
+                      rec["evidence"] = sorted(hits)[:8]
+                      break
+                  except Exception as ex:
+                      rec.setdefault("errors", []).append(f"{u}: {ex}")
+              out.append(rec)
+              print(nom, "fetched=", rec["fetched"], "evidence=", len(rec["evidence"]))
+          json.dump(out, open("hb-audit/evidence.json", "w"), ensure_ascii=False, indent=1)
+          PY
+      - name: Commit evidence
+        run: |
+          git config user.name "hb-verify"
+          git config user.email "noreply@github.com"
+          git checkout -B hb-audit
+          git add -f hb-audit
+          git commit -m "Preuves HalalBooking (extraits ladies-only) pour import vérifié"
+          git push -f origin hb-audit
