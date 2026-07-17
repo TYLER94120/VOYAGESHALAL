@@ -73,6 +73,8 @@ function getAllVilles(): VilleCard[] {
           halalScore: v.halalScore ?? (v.score_halal ? Math.round(v.score_halal * 2 * 10) / 10 : null),
           codeISO: v.codeISO ?? '',
           lat: v.coordonnees?.lat ?? null,
+          piscinePrivee: Array.isArray(v.hotels) && v.hotels.some((h: any) =>
+            (h?.piscineNonMixte === true || h?.plagePrivee === true) && h?.sourceEquipements === 'halalbooking'),
           lng: v.coordonnees?.lng ?? null,
           villeNonMusulmane: v.villeNonMusulmane === true
             || (Array.isArray(v.tags) && v.tags.some((t: string) => String(t).toLowerCase() === 'ville non-musulmane')),

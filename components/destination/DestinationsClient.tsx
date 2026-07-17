@@ -32,6 +32,7 @@ export interface VilleCard {
   villeNonMusulmane?: boolean
   lat?: number | null
   lng?: number | null
+  piscinePrivee?: boolean
 }
 
 interface Props { villes: VilleCard[]; continents?: string[] }
@@ -204,6 +205,10 @@ export default function DestinationsClient({ villes }: Props) {
     const saison = take(bySlugs(SAISON_SLUGS[saisonActuelle().key] ?? []), 12)
     const presFrance = take(byScore.filter((v) => PRES_FRANCE_PAYS.has(v.pays)), 12)
     const solo = take(bySlugs(SOLO_SLUGS), 12)
+    // Piscine/plage privée : UNIQUEMENT les villes avec resorts vérifiés
+    // HalalBooking (0 aujourd'hui → étagère masquée tant que la vraie data
+    // n'est pas importée — jamais de resort inventé)
+    const piscine = take(byScore.filter((v) => v.piscinePrivee === true), 12, 3)
     const spirit = take([
       ...SPIRIT_SLUGS.map((s) => bySlug.get(s)).filter(Boolean) as VilleCard[],
       ...byScore.filter((v) => hasTag(v, ['spirituel', 'pelerinage', 'sacre', 'sacré'])),
@@ -214,7 +219,7 @@ export default function DestinationsClient({ villes }: Props) {
     const europe = take(byScore.filter((v) => regionOf(v) === 'Europe'), 12)
     const asie = take(byScore.filter((v) => regionOf(v) === 'Asie' && (v.scoreHalal ?? 0) >= 4), 12)
     const ramadanShelf = ramadan ? take(byScore.filter((v) => !v.villeNonMusulmane), 12, 3) : []
-    return { iconic, near, spirit, famille, budget: budget_, mer, europe, asie, ramadanShelf, loin, histoire, pepites, lune, saison, presFrance, solo }
+    return { iconic, near, spirit, famille, budget: budget_, mer, europe, asie, ramadanShelf, loin, histoire, pepites, lune, saison, presFrance, solo, piscine }
   }, [villes, bySlug, byScore, pos, ramadan])
 
   // ---- Filtres / grille ----
@@ -399,6 +404,7 @@ export default function DestinationsClient({ villes }: Props) {
             <Shelf id="loin" title={en ? '🌍 Halal even far from home' : '🌍 Halal même loin de chez nous'} villes={shelves.loin} en={en} onSeeAll={() => goToGrid()} />
             <Shelf id="histoire" title={en ? '🕌 In the footsteps of our history' : '🕌 Sur les traces de notre histoire'} villes={shelves.histoire} en={en} onSeeAll={() => goToGrid(() => setTypeVoyage('culture'))} />
             <Shelf id="pepites" title={en ? '💎 Hidden gems nobody knows' : '💎 Pépites que personne ne connaît'} villes={shelves.pepites} en={en} onSeeAll={() => goToGrid()} />
+            <Shelf id="piscine" title={en ? '🏖️ Stays with private pool/beach (halal)' : '🏖️ Séjours avec plage/piscine privée (halal)'} villes={shelves.piscine} en={en} onSeeAll={() => goToGrid()} />
             <Shelf id="lune" title={en ? '💑 For an unforgettable honeymoon' : '💑 Pour une lune de miel inoubliable'} villes={shelves.lune} en={en} onSeeAll={() => goToGrid(() => setTypeVoyage('detente'))} />
             <Shelf id="saison" title={en ? `☀️ Where to go ${saisonActuelle().en}` : `☀️ Où partir ${saisonActuelle().fr}`} villes={shelves.saison} en={en} onSeeAll={() => goToGrid()} />
             <Shelf id="presfrance" title={en ? '✈️ Short flights from Western Europe' : '✈️ À moins de 4h de la France'} villes={shelves.presFrance} en={en} onSeeAll={() => goToGrid()} />

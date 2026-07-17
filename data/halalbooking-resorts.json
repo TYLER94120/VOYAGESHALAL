@@ -1,0 +1,14 @@
+{
+ "_doc": "Resorts avec piscine/plage privée NON-MIXTE vérifiés sur HalalBooking. SOURCE RÉELLE UNIQUEMENT : chaque entrée doit correspondre à une fiche halalbooking.com consultée (mettre l'URL). Jamais d'entrée déduite ou supposée. Import : node scripts/import-halalbooking.mjs",
+ "_schema": {
+  "villeSlug": "slug de la ville (data/villes)",
+  "nom": "nom exact du resort tel qu'affiché sur HalalBooking",
+  "url": "URL de la fiche halalbooking.com (preuve)",
+  "piscineNonMixte": "true si piscine femmes/privée indiquée sur la fiche",
+  "plagePrivee": "true si plage privée/femmes indiquée sur la fiche",
+  "lat": "optionnel",
+  "lng": "optionnel",
+  "note": "optionnel (note HalalBooking)"
+ },
+ "resorts": []
+}

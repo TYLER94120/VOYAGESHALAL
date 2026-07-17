@@ -16,6 +16,8 @@ export interface HotelLike {
   sansAlcool?: boolean; sans_alcool?: boolean; noAlcohol?: boolean
   petitDejeunerHalal?: boolean; halalBreakfast?: boolean
   piscineNonMixte?: boolean; womenOnlyPool?: boolean
+  plagePrivee?: boolean
+  sourceEquipements?: string // 'halalbooking' = attributs femmes vérifiés
   qibla?: boolean; qiblaIndicateur?: boolean
   halalFriendly?: boolean; halal_certifie?: boolean
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -88,7 +90,10 @@ export const EQUIP = {
   salleDePriere: (h: HotelLike) => !!(h.salleDePriere ?? h.prayerRoom),
   sansAlcool: (h: HotelLike) => !!(h.sansAlcool ?? h.sans_alcool ?? h.noAlcohol),
   petitDejeunerHalal: (h: HotelLike) => !!(h.petitDejeunerHalal ?? h.halalBreakfast),
-  piscineNonMixte: (h: HotelLike) => !!(h.piscineNonMixte ?? h.womenOnlyPool),
+  // Piscine/plage privée NON-MIXTE : uniquement si VÉRIFIÉ par une source
+  // réelle (HalalBooking) — jamais déduit, jamais inventé.
+  piscineNonMixte: (h: HotelLike) => !!(h.piscineNonMixte ?? h.womenOnlyPool) && h.sourceEquipements === 'halalbooking',
+  plagePrivee: (h: HotelLike) => !!h.plagePrivee && h.sourceEquipements === 'halalbooking',
   qibla: (h: HotelLike) => !!(h.qibla ?? h.qiblaIndicateur),
 } as const
 

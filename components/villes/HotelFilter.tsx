@@ -14,7 +14,8 @@ const equipList = [
   { id: 'salleDePriere', fr: 'Salle de prière', en: 'Prayer room' },
   { id: 'sansAlcool', fr: 'Sans alcool', en: 'Alcohol-free' },
   { id: 'petitDejeunerHalal', fr: 'Petit-déj halal', en: 'Halal breakfast' },
-  { id: 'piscineNonMixte', fr: 'Piscine non-mixte', en: 'Women-only pool' },
+  { id: 'piscineNonMixte', fr: '🏊 Piscine privée (femmes)', en: '🏊 Private pool (women)' },
+  { id: 'plagePrivee', fr: '🏖️ Plage privée (femmes)', en: '🏖️ Private beach (women)' },
   { id: 'qibla', fr: 'Qibla en chambre', en: 'In-room Qibla' },
 ] as const
 
@@ -157,7 +158,7 @@ export default function HotelFilter({ hotels, mosques, restos, center, en: enPro
                 )}
                 {e.restosNear > 0 && <span style={{ background: 'rgba(201,168,76,0.18)', color: '#8A6D1E', fontSize: 11, fontWeight: 700, borderRadius: 20, padding: '3px 9px' }}>🍽 {e.restosNear} {t('restos halal < 1 km', 'halal restos < 1 km')}</span>}
                 {equipList.filter((eq) => (EQUIP as any)[eq.id](h)).slice(0, 3).map((eq) => (
-                  <span key={eq.id} style={{ background: 'rgba(27,67,50,0.07)', color: 'var(--foret)', fontSize: 11, fontWeight: 700, borderRadius: 20, padding: '3px 9px' }}>✓ {en ? eq.en : eq.fr}</span>
+                  <span key={eq.id} style={{ background: 'rgba(27,67,50,0.07)', color: 'var(--foret)', fontSize: 11, fontWeight: 700, borderRadius: 20, padding: '3px 9px' }}>✓ {en ? eq.en : eq.fr}{(eq.id === 'piscineNonMixte' || eq.id === 'plagePrivee') ? ' · HalalBooking' : ''}</span>
                 ))}
               </div>
               <div style={{ display: 'flex', gap: 8 }}>
