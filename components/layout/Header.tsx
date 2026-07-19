@@ -43,6 +43,9 @@ export default function Header({ brandEN = false }: { brandEN?: boolean }) {
           <Link href="/blog" className="nav-link">
             {t('nav.blog')}
           </Link>
+          <Link href="/communaute" className="nav-link">
+            🤝 {isEN ? 'Community' : 'Communauté'}
+          </Link>
           {/* Groupe Outils : dropdown CSS pur (hover/focus-within) — zéro JS, zéro CLS */}
           <div className="nav-tools">
             <button className="nav-link nav-link-highlight nav-tools-btn" aria-haspopup="true">
@@ -105,6 +108,9 @@ export default function Header({ brandEN = false }: { brandEN?: boolean }) {
           </Link>
           <Link href="/guides" onClick={() => setMenuOpen(false)}>
             📗 Guides
+          </Link>
+          <Link href="/communaute" onClick={() => setMenuOpen(false)}>
+            🤝 {isEN ? 'Community' : 'Communauté'}
           </Link>
           <Link href={localizedHref('/horaires-priere', isEN)} onClick={() => setMenuOpen(false)}>
             🕐 {isEN ? 'Prayer times' : 'Horaires de prière'}

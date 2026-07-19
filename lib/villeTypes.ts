@@ -114,6 +114,11 @@ export interface PrayerSpot {
   status: 'published' | 'hidden'
   confirmations: number   // compteur « X voyageurs confirment » (0 par défaut)
   createdAt: string
+  // ── Communauté (Phase 2) ──
+  categorie?: 'coin_priere' | 'resto' | 'boucherie' | 'pepite' | 'autre'
+  auteurId?: string
+  auteurPseudo?: string   // « Ajouté par [pseudo] » (VoyagesHalal pour le seed admin)
+  vues?: number           // impact réel : nb de consultations de la page du spot
 }
 
 export interface VilleRoadTrip {

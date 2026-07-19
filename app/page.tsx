@@ -8,6 +8,7 @@ import EmailCapture from '@/components/ui/EmailCapture'
 import { buildWebSiteSchema, buildOrganizationSchema } from '@/lib/seo'
 import { guides } from '@/lib/data'
 import HomeHeroActions from '@/components/home/HomeHeroActions'
+import NearbySpotsHome from '@/components/community/NearbySpotsHome'
 import FollowInstall from '@/components/capture/FollowInstall'
 import { JeVoyageMaintenant } from '@/components/JeVoyageMaintenant'
 import { HomeScoreRanking } from '@/components/HomeScoreRanking'
@@ -315,6 +316,9 @@ export default async function HomePage() {
       </section>
 
       {/* Email capture — lead magnet */}
+      {/* 🤝 Spots partagés près de toi (communauté, masqué si vide) */}
+      <NearbySpotsHome />
+
       <EmailCapture
         title={t.emailTitle}
         subtitle={t.emailSub}
