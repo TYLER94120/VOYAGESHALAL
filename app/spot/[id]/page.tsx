@@ -6,6 +6,7 @@ import { getRedis } from '@/lib/pushStore'
 import { getSpotById, addImpact, CATEGORIES } from '@/lib/community'
 import { LIEU_LABELS } from '@/lib/prayerSpots'
 import ConfirmBar from '@/components/community/ConfirmBar'
+import ItineraireButton from '@/components/community/ItineraireButton'
 import JsonLd from '@/components/seo/JsonLd'
 
 // Page publique d'un spot communautaire (BLOC 6 — indexable, SEO
@@ -45,10 +46,13 @@ export default async function SpotPage({ params }: Props) {
   const r = getRedis()
   if (r) {
     try {
-      await r.incr(`vh:spot:${spot.id}:vues`)
+      const n = await r.incr(`vh:spot:${spot.id}:vues`)
+      spot.vues = Number(n) // miroir → visible sur toutes les cartes
+      await r.set(`vh:spot:${spot.id}`, spot)
       if (spot.auteurId) await addImpact(spot.auteurId, 1)
     } catch { /* best-effort */ }
   }
+  const aides = Math.max(0, (spot.vues ?? 0) - 1) + (spot.itineraires ?? 0)
 
   const cat = CATEGORIES.find((c) => c.id === spot.categorie) ?? CATEGORIES[0]
   const lieu = LIEU_LABELS[spot.typeLieu]
@@ -107,12 +111,22 @@ export default async function SpotPage({ params }: Props) {
           </p>
         )}
 
+        {/* 💫 Usage réel du spot — motivation : ce spot SERT */}
+        {aides > 0 && (
+          <div style={{ display: 'flex', gap: 10, margin: '0 0 4px', flexWrap: 'wrap' }}>
+            <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: 'rgba(201,168,76,0.15)', color: '#8A6D1E', borderRadius: 999, padding: '8px 14px', fontWeight: 800, fontSize: 13.5 }}>
+              💫 {en ? `This spot already helped ${aides} traveler${aides > 1 ? 's' : ''}` : `Ce spot a déjà aidé ${aides} voyageur${aides > 1 ? 's' : ''}`}
+            </span>
+            {(spot.itineraires ?? 0) > 0 && (
+              <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: 'rgba(27,67,50,0.08)', color: '#1b4332', borderRadius: 999, padding: '8px 14px', fontWeight: 700, fontSize: 13.5 }}>
+                🧭 {spot.itineraires} {en ? 'went there' : `y ${(spot.itineraires ?? 0) > 1 ? 'sont allés' : 'est allé'}`}
+              </span>
+            )}
+          </div>
+        )}
         <ConfirmBar spotId={spot.id} confirmations={spot.confirmations ?? 0} />
 
-        <a href={`https://www.google.com/maps/dir/?api=1&destination=${spot.lat},${spot.lng}`} target="_blank" rel="noopener noreferrer"
-          style={{ display: 'block', textAlign: 'center', minHeight: 56, lineHeight: '56px', borderRadius: 18, background: '#fff', border: '1.5px solid rgba(27,67,50,0.3)', color: '#1b4332', fontWeight: 800, fontSize: 15, textDecoration: 'none', marginBottom: 18 }}>
-          🗺 {en ? 'Google Maps directions' : 'Itinéraire Google Maps'}
-        </a>
+        <ItineraireButton spotId={spot.id} lat={spot.lat} lng={spot.lng} en={en} />
 
         <p style={{ fontSize: 12.5, color: '#9ca3af', lineHeight: 1.6 }}>
           {en

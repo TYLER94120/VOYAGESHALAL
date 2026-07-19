@@ -119,6 +119,7 @@ export interface PrayerSpot {
   auteurId?: string
   auteurPseudo?: string   // « Ajouté par [pseudo] » (VoyagesHalal pour le seed admin)
   vues?: number           // impact réel : nb de consultations de la page du spot
+  itineraires?: number    // nb de clics « Itinéraire » (usage le plus fort)
 }
 
 export interface VilleRoadTrip {

@@ -116,7 +116,7 @@ export default async function ProfilPage({ params }: Props) {
                   <span style={{ fontSize: 20 }}>{catInfo(s.categorie).icon}</span>
                   <span style={{ flex: 1, minWidth: 0 }}>
                     <span style={{ display: 'block', fontWeight: 700, color: '#0b1a0f', fontSize: 15, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{s.nom}</span>
-                    <span style={{ fontSize: 13, color: '#6b7280' }}>{s.villeNom} · 👥 {s.confirmations}</span>
+                    <span style={{ fontSize: 13, color: '#6b7280' }}>{s.villeNom} · 👥 {s.confirmations}{((s.vues ?? 0) + (s.itineraires ?? 0)) > 0 ? ` · 💫 ${(s.vues ?? 0) + (s.itineraires ?? 0)}` : ''}</span>
                   </span>
                   <span style={{ color: '#1b4332', fontWeight: 700 }}>→</span>
                 </Link>

@@ -17,7 +17,7 @@ function ago(date: string, en: boolean): string {
   return en ? `${Math.floor(s / 86400)} d ago` : `il y a ${Math.floor(s / 86400)} j`
 }
 
-interface NearSpot { id: string; nom: string; sub?: string; distanceKm?: number; villeSlug: string; slug: string; categorie?: string }
+interface NearSpot { id: string; nom: string; sub?: string; distanceKm?: number; villeSlug: string; slug: string; categorie?: string; vues?: number; itineraires?: number }
 
 export default function HubClient() {
   const { lang } = useLanguage()
@@ -76,7 +76,7 @@ export default function HubClient() {
                 <span style={{ fontSize: 24 }}>{catInfo(s.categorie ?? 'coin_priere').icon}</span>
                 <span style={{ flex: 1, minWidth: 0 }}>
                   <span style={{ display: 'block', fontWeight: 700, color: '#0b1a0f', fontSize: 15, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{s.nom}</span>
-                  <span style={{ fontSize: 13, color: '#6b7280' }}>{s.distanceKm != null ? `${s.distanceKm} km` : s.sub}</span>
+                  <span style={{ fontSize: 13, color: '#6b7280' }}>{s.distanceKm != null ? `${s.distanceKm} km` : s.sub}{((s.vues ?? 0) + (s.itineraires ?? 0)) > 1 ? ` · 💫 ${(s.vues ?? 0) + (s.itineraires ?? 0)} aidés` : ''}</span>
                 </span>
                 <span style={{ color: '#1b4332', fontWeight: 700 }}>→</span>
               </Link>
