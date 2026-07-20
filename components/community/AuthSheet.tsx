@@ -30,6 +30,8 @@ export default function AuthSheet({
   const [code, setCode] = useState('')
   const [pseudo, setPseudo] = useState('')
   const [busy, setBusy] = useState(false)
+  // L'email est CACHÉ par défaut — Google est LA voie. Un petit lien le révèle.
+  const [showEmail, setShowEmail] = useState(!GOOGLE_CLIENT_ID)
   const [err, setErr] = useState('')
   const googleBtn = useRef<HTMLDivElement>(null)
 
@@ -75,7 +77,7 @@ export default function AuthSheet({
         </p>
         <p style={{ fontSize: 14, color: '#4b5563', margin: '0 0 16px' }}>
           {step === 'email'
-            ? (en ? 'One tap with Google — or an email code. No password, ever.' : 'Un tap avec Google — ou un code par email. Jamais de mot de passe.')
+            ? (en ? 'One tap. No password, no form.' : 'Un seul tap. Pas de mot de passe, pas de formulaire.')
             : (en ? `Code sent to ${email}` : `Code envoyé à ${email}`)}
         </p>
 
@@ -101,15 +103,23 @@ export default function AuthSheet({
                 {en ? 'Continue with Google' : 'Continuer avec Google'}
               </button>
             )}
-            <div style={{ display: 'flex', alignItems: 'center', gap: 10, margin: '0 0 14px' }}>
-              <span style={{ flex: 1, height: 1, background: 'rgba(27,67,50,0.15)' }} />
-              <span style={{ fontSize: 13, color: '#9ca3af' }}>{en ? 'or get a code by email' : 'ou reçois un code par email'}</span>
-              <span style={{ flex: 1, height: 1, background: 'rgba(27,67,50,0.15)' }} />
-            </div>
+            {!showEmail && (
+              <button type="button" onClick={() => setShowEmail(true)}
+                style={{ background: 'none', border: 'none', color: '#6b7280', fontSize: 13.5, cursor: 'pointer', minHeight: 44, width: '100%', textAlign: 'center', textDecoration: 'underline' }}>
+                {en ? 'No Google account? Get a code by email' : 'Pas de compte Google ? Reçois un code par email'}
+              </button>
+            )}
+            {showEmail && (
+              <div style={{ display: 'flex', alignItems: 'center', gap: 10, margin: '0 0 14px' }}>
+                <span style={{ flex: 1, height: 1, background: 'rgba(27,67,50,0.15)' }} />
+                <span style={{ fontSize: 13, color: '#9ca3af' }}>{en ? 'or get a code by email' : 'ou reçois un code par email'}</span>
+                <span style={{ flex: 1, height: 1, background: 'rgba(27,67,50,0.15)' }} />
+              </div>
+            )}
           </>
         )}
 
-        {step === 'email' ? (
+        {step === 'email' ? (showEmail && (
           <form onSubmit={async (e) => {
             e.preventDefault(); setBusy(true); setErr('')
             try { await sendCode(email); setStep('code') } catch (ex) { setErr(String((ex as Error).message)) } finally { setBusy(false) }
@@ -117,7 +127,7 @@ export default function AuthSheet({
             <input type="email" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder={en ? 'your@email.com' : 'ton@email.com'} style={input} />
             <button type="submit" disabled={busy} style={btn}>{busy ? '…' : (en ? 'Get my code' : 'Recevoir mon code')}</button>
           </form>
-        ) : (
+        )) : (
           <form onSubmit={async (e) => {
             e.preventDefault(); setBusy(true); setErr('')
             try { await verify(email, code, pseudo); onDone() } catch (ex) { setErr(String((ex as Error).message)) } finally { setBusy(false) }
