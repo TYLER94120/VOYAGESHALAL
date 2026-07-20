@@ -14,7 +14,8 @@ export interface GuideJour {
   maps: string       // requête Google Maps du lieu-phare du jour
   etapes: GuideEtape[] // 3 max, 4-6 mots
 }
-export interface CityGuide { hook: string; hookEn: string; chips: GuideChip[]; jours: GuideJour[] }
+export interface GuideConseil { icon: string; titre: string; titreEn: string; fr: string; en: string }
+export interface CityGuide { hook: string; hookEn: string; chips: GuideChip[]; jours: GuideJour[]; conseils?: GuideConseil[] }
 
 const IMG = guideImages as Record<string, { url: string; credit?: string }>
 export function guidePhoto(key: string): { url: string; credit?: string } | null {
@@ -30,6 +31,14 @@ export const CITY_GUIDES: Record<string, CityGuide> = {
       { icon: '🏨', fr: 'Loger à Sultanahmet', en: 'Stay in Sultanahmet' },
       { icon: '🌅', fr: 'Sites dès l\'ouverture', en: 'Sites at opening' },
       { icon: '⛴', fr: 'Soirées sur le Bosphore', en: 'Evenings on the Bosphorus' },
+    ],
+    conseils: [
+      { icon: "🏨", titre: "Où loger", titreEn: "Where to stay", fr: "Sultanahmet pour tout faire à pied, Eminönü/Sirkeci pour le Bazar et les ferries.", en: "Sultanahmet to walk everywhere, Eminönü/Sirkeci for the Bazaar and ferries." },
+      { icon: "💶", titre: "Budget", titreEn: "Budget", fr: "Ville abordable pour l'Europe : comptez 40-80 €/jour hors hôtel, repas complets dès 5-10 €.", en: "Affordable for Europe: plan 40–80 €/day excl. hotel; full meals from 5–10 €." },
+      { icon: "🚋", titre: "Se déplacer", titreEn: "Getting around", fr: "Istanbulkart (carte rechargeable) pour tram, métro et ferries — le tram T1 dessert les grands sites.", en: "Get an Istanbulkart for tram, metro and ferries — the T1 tram covers the main sites." },
+      { icon: "🧕", titre: "Tenue", titreEn: "Dress code", fr: "Tenue libre en ville ; épaules et jambes couvertes pour les mosquées (foulard prêté à l'entrée).", en: "Dress freely in town; cover shoulders and legs in mosques (headscarves lent at the door)." },
+      { icon: "👩", titre: "Femme seule", titreEn: "Solo women", fr: "Destination très fréquentée par les voyageuses musulmanes ; évitez les ruelles désertes tard le soir, comme partout.", en: "Very popular with Muslim women travelers; avoid deserted lanes late at night, as anywhere." },
+      { icon: "🌡", titre: "Quand venir", titreEn: "When to come", fr: "Avril-juin et septembre-octobre : doux et moins de foule. L'été est chaud et bondé.", en: "April–June and September–October: mild and less crowded. Summer is hot and packed." },
     ],
     jours: [
       {
@@ -67,6 +76,14 @@ export const CITY_GUIDES: Record<string, CityGuide> = {
       { icon: '🤝', fr: 'Négocier souriant', en: 'Bargain with a smile' },
       { icon: '🌅', fr: 'Visites le matin', en: 'Sightsee mornings' },
     ],
+    conseils: [
+      { icon: "🏨", titre: "Où loger", titreEn: "Where to stay", fr: "Riad dans la médina pour l'immersion (arrivée à pied), Guéliz/Hivernage pour le calme et les taxis.", en: "A medina riad for immersion (arrival on foot), Guéliz/Hivernage for calm and taxis." },
+      { icon: "💶", titre: "Budget", titreEn: "Budget", fr: "Très doux : repas copieux 3-8 €, riads corrects dès 30-50 €/nuit.", en: "Very gentle: hearty meals 3–8 €, decent riads from 30–50 €/night." },
+      { icon: "🚕", titre: "Se déplacer", titreEn: "Getting around", fr: "Petits taxis au compteur (exigez-le) ou course négociée AVANT de monter ; la médina se fait à pied.", en: "Petit taxis with the meter (insist) or a price agreed BEFORE boarding; the medina is walked." },
+      { icon: "🤝", titre: "Souks", titreEn: "Souks", fr: "La négociation fait partie du jeu : souriez, divisez le premier prix par deux ou trois, sans jamais vous fâcher.", en: "Bargaining is part of the game: smile, halve or third the first price, never get angry." },
+      { icon: "👩", titre: "Femme seule", titreEn: "Solo women", fr: "Faisable et fréquent ; les sollicitations sont verbales surtout autour de Jemaa el-Fna — un « la choukran » ferme suffit.", en: "Doable and common; hassle is verbal, mostly around Jemaa el-Fna — a firm « la shukran » does it." },
+      { icon: "🌡", titre: "Quand venir", titreEn: "When to come", fr: "Mars-mai et octobre-novembre. L'été dépasse 40 °C : visites tôt le matin uniquement.", en: "March–May and October–November. Summer tops 40 °C: sightsee early morning only." },
+    ],
     jours: [
       {
         titre: 'Jour 1 · Médina', titreEn: 'Day 1 · Medina', photoKey: 'marrakech-j1', maps: 'Koutoubia Mosque Marrakech',
@@ -102,6 +119,14 @@ export const CITY_GUIDES: Record<string, CityGuide> = {
       { icon: '🚇', fr: 'Métro + VTC', en: 'Metro + ride-hailing' },
       { icon: '🌡', fr: 'Venir nov.–mars', en: 'Come Nov–Mar' },
     ],
+    conseils: [
+      { icon: "🏨", titre: "Où loger", titreEn: "Where to stay", fr: "Downtown/Business Bay pour Burj Khalifa à pied, Deira/Bur Dubai pour les budgets plus doux et le vieux Dubaï.", en: "Downtown/Business Bay to walk to Burj Khalifa, Deira/Bur Dubai for gentler budgets and old Dubai." },
+      { icon: "💶", titre: "Budget", titreEn: "Budget", fr: "Ville chère : 100-200 €/jour se dépensent vite. Les cafétérias de quartier (Deira, Karama) nourrissent bien pour 5-10 €.", en: "Expensive city: 100–200 €/day goes fast. Neighborhood cafeterias (Deira, Karama) feed you well for 5–10 €." },
+      { icon: "🚇", titre: "Se déplacer", titreEn: "Getting around", fr: "Métro propre et ponctuel sur l'axe principal (carte Nol) ; VTC/taxis partout ailleurs — les distances sont énormes.", en: "Clean, punctual metro on the main axis (Nol card); ride-hailing everywhere else — distances are huge." },
+      { icon: "🧕", titre: "Tenue", titreEn: "Dress code", fr: "Décontractée mais épaules/genoux couverts dans les malls et lieux publics ; maillot uniquement plage et piscine.", en: "Casual but shoulders/knees covered in malls and public places; swimwear only at beach and pool." },
+      { icon: "👩", titre: "Femme seule", titreEn: "Solo women", fr: "L'une des villes les plus sûres au monde, métro avec voitures réservées femmes et enfants.", en: "One of the world's safest cities; the metro has women-and-children cars." },
+      { icon: "🌡", titre: "Quand venir", titreEn: "When to come", fr: "Novembre à mars. De juin à septembre, 45 °C : tout se vit en intérieur climatisé.", en: "November to March. June to September hits 45 °C: life moves indoors." },
+    ],
     jours: [
       {
         titre: 'Jour 1 · Downtown', titreEn: 'Day 1 · Downtown', photoKey: 'dubai-j1', maps: 'Burj Khalifa',
@@ -135,6 +160,14 @@ export const CITY_GUIDES: Record<string, CityGuide> = {
       { icon: '🏨', fr: 'Loger à KLCC', en: 'Stay near KLCC' },
       { icon: '🕌', fr: 'Prière dans chaque mall', en: 'Prayer rooms in malls' },
       { icon: '🌧', fr: 'Pauses clim l\'après-midi', en: 'AC breaks afternoons' },
+    ],
+    conseils: [
+      { icon: "🏨", titre: "Où loger", titreEn: "Where to stay", fr: "KLCC pour les tours et le parc, Bukit Bintang pour manger et sortir — les deux sont reliés par une passerelle climatisée.", en: "KLCC for the towers and park, Bukit Bintang for food — linked by an air-conditioned walkway." },
+      { icon: "💶", titre: "Budget", titreEn: "Budget", fr: "Excellent rapport qualité-prix : street-food 2-4 €, très bons hôtels dès 40-70 €.", en: "Excellent value: street-food 2–4 €, very good hotels from 40–70 €." },
+      { icon: "🚝", titre: "Se déplacer", titreEn: "Getting around", fr: "LRT/MRT + Grab (VTC local, très bon marché) ; évitez les taxis sans compteur.", en: "LRT/MRT + Grab (local ride-hailing, very cheap); avoid meterless taxis." },
+      { icon: "✅", titre: "Halal", titreEn: "Halal", fr: "Cherchez le logo JAKIM officiel — l'immense majorité des enseignes l'affiche, y compris les chaînes.", en: "Look for the official JAKIM logo — the vast majority of places display it, chains included." },
+      { icon: "👩", titre: "Femme seule", titreEn: "Solo women", fr: "Très sûre ; wagons femmes sur certaines lignes aux heures de pointe.", en: "Very safe; women-only cars on some lines at rush hour." },
+      { icon: "🌧", titre: "Météo", titreEn: "Weather", fr: "Chaud et humide toute l'année avec averses quotidiennes brèves — parapluie toujours dans le sac.", en: "Hot and humid year-round with brief daily downpours — keep an umbrella in the bag." },
     ],
     jours: [
       {
@@ -170,6 +203,14 @@ export const CITY_GUIDES: Record<string, CityGuide> = {
       { icon: '🚕', fr: 'VTC recommandés', en: 'Use ride-hailing' },
       { icon: '🐫', fr: 'Pyramides à l\'aube', en: 'Pyramids at dawn' },
     ],
+    conseils: [
+      { icon: "🏨", titre: "Où loger", titreEn: "Where to stay", fr: "Zamalek (île calme et verte) ou Downtown pour être central ; Guizeh seulement pour les pyramides à l'aube.", en: "Zamalek (calm, leafy island) or Downtown to be central; Giza only for dawn pyramids." },
+      { icon: "💶", titre: "Budget", titreEn: "Budget", fr: "Très abordable : repas locaux 1-4 €, taxis/VTC quelques euros la course.", en: "Very affordable: local meals 1–4 €, taxi/ride-hailing rides a few euros." },
+      { icon: "🚕", titre: "Se déplacer", titreEn: "Getting around", fr: "VTC (Uber/Careem) pour éviter toute négociation ; le métro est efficace avec voitures réservées femmes.", en: "Ride-hailing (Uber/Careem) to skip all haggling; the metro works well and has women-only cars." },
+      { icon: "🤝", titre: "Pourboires", titreEn: "Tipping", fr: "Le bakchich est culturel : gardez de la petite monnaie pour gardiens, guides et services rendus.", en: "Baksheesh is cultural: keep small change for keepers, guides and small services." },
+      { icon: "👩", titre: "Femme seule", titreEn: "Solo women", fr: "Préférez les VTC le soir et une tenue couvrante ; le harcèlement verbal existe, restez dans les zones animées.", en: "Prefer ride-hailing at night and covering clothing; verbal harassment exists, stay in busy areas." },
+      { icon: "🌡", titre: "Quand venir", titreEn: "When to come", fr: "Octobre à avril. L'été est écrasant sur les sites découverts.", en: "October to April. Summer is crushing on open-air sites." },
+    ],
     jours: [
       {
         titre: 'Jour 1 · Guizeh', titreEn: 'Day 1 · Giza', photoKey: 'le-caire-j1', maps: 'Pyramids of Giza',
@@ -203,6 +244,13 @@ export const CITY_GUIDES: Record<string, CityGuide> = {
       { icon: '🏨', fr: 'Loger au centre', en: 'Stay central' },
       { icon: '🚄', fr: 'Trains vers tout le Maroc', en: 'Trains to all Morocco' },
     ],
+    conseils: [
+      { icon: "🏨", titre: "Où loger", titreEn: "Where to stay", fr: "Centre-ville (Gauthier/Racine) pour tout faire facilement, corniche d'Aïn Diab pour l'océan.", en: "Downtown (Gauthier/Racine) for convenience, the Aïn Diab corniche for the ocean." },
+      { icon: "💶", titre: "Budget", titreEn: "Budget", fr: "Repas 3-8 €, hôtels corrects dès 40 € ; la visite guidée de Hassan II se réserve sur place.", en: "Meals 3–8 €, decent hotels from 40 €; the Hassan II guided tour is booked on site." },
+      { icon: "🚄", titre: "Se déplacer", titreEn: "Getting around", fr: "Petits taxis rouges au compteur en ville ; trains fréquents et fiables vers Rabat, Fès et Marrakech depuis Casa-Voyageurs.", en: "Red petit taxis on the meter in town; frequent, reliable trains to Rabat, Fez and Marrakech from Casa-Voyageurs." },
+      { icon: "👩", titre: "Femme seule", titreEn: "Solo women", fr: "Grande ville d'affaires plutôt tranquille ; les précautions urbaines habituelles suffisent.", en: "A business city, rather calm; usual urban precautions are enough." },
+      { icon: "🌡", titre: "Quand venir", titreEn: "When to come", fr: "Climat océanique doux toute l'année — avril-juin et septembre-octobre sont parfaits.", en: "Mild oceanic climate all year — April–June and September–October are perfect." },
+    ],
     jours: [
       {
         titre: 'Jour 1 · Hassan II', titreEn: 'Day 1 · Hassan II', photoKey: 'casablanca-j1', maps: 'Hassan II Mosque',
@@ -229,6 +277,14 @@ export const CITY_GUIDES: Record<string, CityGuide> = {
       { icon: '🏨', fr: 'Loger près du métro', en: 'Stay near the Tube' },
       { icon: '🕌', fr: 'Grandes mosquées', en: 'Major mosques' },
       { icon: '💷', fr: 'Réserver tôt', en: 'Book early' },
+    ],
+    conseils: [
+      { icon: "🏨", titre: "Où loger", titreEn: "Where to stay", fr: "Près d'une station de métro zone 1-2 ; Paddington/Edgware Road combine centralité et restos halal en bas de l'hôtel.", en: "Near a Zone 1–2 Tube stop; Paddington/Edgware Road pairs centrality with halal food downstairs." },
+      { icon: "💷", titre: "Budget", titreEn: "Budget", fr: "Ville chère : 120-200 €/jour vite atteints. Les musées majeurs sont gratuits, ça compense.", en: "Expensive: 120–200 €/day adds up fast. Major museums are free, which helps." },
+      { icon: "🚇", titre: "Se déplacer", titreEn: "Getting around", fr: "Payez le métro et le bus directement en carte bancaire sans contact — plafond journalier automatique.", en: "Pay Tube and bus by contactless bank card — the daily cap applies automatically." },
+      { icon: "🍽", titre: "Halal", titreEn: "Halal", fr: "L'affichage halal est la norme dans des quartiers entiers (Whitechapel, Edgware Road) — vérifiez l'enseigne, pas le quartier.", en: "Halal signage is the norm in whole districts (Whitechapel, Edgware Road) — check the shop, not the area." },
+      { icon: "👩", titre: "Femme seule", titreEn: "Solo women", fr: "Très habituée aux voyageuses ; transports sûrs, restez attentive à vos affaires dans les zones touristiques.", en: "Very used to women travelers; transit is safe, watch your belongings in tourist areas." },
+      { icon: "🌦", titre: "Météo", titreEn: "Weather", fr: "Changeante toute l'année : superposez les couches et gardez un imperméable léger.", en: "Changeable year-round: layer up and keep a light raincoat." },
     ],
     jours: [
       {
@@ -265,6 +321,13 @@ export const CITY_GUIDES: Record<string, CityGuide> = {
       { icon: '🏨', fr: 'Kaleiçi ou Lara', en: 'Kaleiçi or Lara' },
       { icon: '☀️', fr: 'Plage juin–sept.', en: 'Beach Jun–Sep' },
     ],
+    conseils: [
+      { icon: "🏨", titre: "Où loger", titreEn: "Where to stay", fr: "Kaleiçi pour le charme ottoman, Lara pour les grands resorts — dont ceux à piscine et plage femmes (onglet Hôtels).", en: "Kaleiçi for Ottoman charm, Lara for big resorts — including ladies-pool/beach ones (Hotels tab)." },
+      { icon: "💶", titre: "Budget", titreEn: "Budget", fr: "Repas 4-10 €, resorts tout-compris très compétitifs hors juillet-août.", en: "Meals 4–10 €; all-inclusive resorts very competitive outside July–August." },
+      { icon: "🚌", titre: "Se déplacer", titreEn: "Getting around", fr: "Tram et bus AntalyaKart en ville ; navettes/transferts d'hôtel pour Lara et Belek.", en: "AntalyaKart tram and buses in town; hotel shuttles for Lara and Belek." },
+      { icon: "👩", titre: "Femme seule", titreEn: "Solo women", fr: "Station balnéaire familiale et tranquille, très habituée aux voyageuses musulmanes.", en: "A family seaside city, calm and very used to Muslim women travelers." },
+      { icon: "🌡", titre: "Quand venir", titreEn: "When to come", fr: "Mai-juin et septembre : mer chaude sans la fournaise de juillet-août.", en: "May–June and September: warm sea without the July–August furnace." },
+    ],
     jours: [
       {
         titre: 'Jour 1 · Kaleiçi', titreEn: 'Day 1 · Kaleiçi', photoKey: 'antalya-j1', maps: 'Kaleici Antalya',
@@ -297,6 +360,14 @@ export const CITY_GUIDES: Record<string, CityGuide> = {
       { icon: '🏨', fr: 'Loger central (1er-11e)', en: 'Stay central (1st–11th)' },
       { icon: '🎟', fr: 'Billets en ligne', en: 'Book tickets online' },
       { icon: '🚇', fr: 'Tout en métro', en: 'Everything by metro' },
+    ],
+    conseils: [
+      { icon: "🏨", titre: "Où loger", titreEn: "Where to stay", fr: "Central (1er-11e) pour limiter le métro ; le 11e met Belleville et la Bastille à pied.", en: "Stay central (1st–11th) to limit metro time; the 11th puts Belleville and Bastille on foot." },
+      { icon: "💶", titre: "Budget", titreEn: "Budget", fr: "Comptez 100-180 €/jour. Les restos halal des quartiers (11e, Belleville, Barbès) cassent les prix du centre.", en: "Plan 100–180 €/day. Halal spots in the 11th, Belleville and Barbès undercut center prices." },
+      { icon: "🚇", titre: "Se déplacer", titreEn: "Getting around", fr: "Passe Navigo Easy ou billets t+ ; tout se fait en métro, évitez la voiture.", en: "Navigo Easy pass or t+ tickets; everything works by metro, skip the car." },
+      { icon: "🎟", titre: "Réservations", titreEn: "Bookings", fr: "Tour Eiffel, Louvre et Orsay : créneaux en ligne obligatoires en saison, sinon des heures de file.", en: "Eiffel Tower, Louvre, Orsay: online time slots are a must in season, or hours of queueing." },
+      { icon: "👩", titre: "Femme seule", titreEn: "Solo women", fr: "Transports sûrs aux heures actives ; attention pickpockets dans le métro et sous la Tour Eiffel.", en: "Transit is safe at busy hours; mind pickpockets in the metro and under the Eiffel Tower." },
+      { icon: "🌦", titre: "Quand venir", titreEn: "When to come", fr: "Mai-juin et septembre : lumière superbe, terrasses agréables, moins de foule qu'en été.", en: "May–June and September: superb light, pleasant terraces, fewer crowds than summer." },
     ],
     jours: [
       {

@@ -17,6 +17,7 @@ import PlacePhoto from '@/components/ui/PlacePhoto'
 import { favId } from '@/lib/favorites'
 import { getCityGuide } from '@/lib/cityGuides'
 import GuideCarousel from '@/components/villes/GuideCarousel'
+import CitySpots from '@/components/villes/CitySpots'
 
 // Sections guidées (refonte « Netflix » des fiches) — libellés orientés usage
 const TABS = [
@@ -56,8 +57,7 @@ const CATEGORY_GRADIENT: Record<string, [string, string]> = {
 const DEFAULT_GRADIENT: [string, string] = ['#0b1a0f', '#2d6a4f']
 
 export default function VilleDesktop({ ville }: { ville: any }) {
-  const [activeTab, setActiveTab] = useState<string | null>(null) // null = aucun onglet allumé au départ
-  const displayTab = activeTab ?? 'restaurants' // contenu affiché par défaut (sans orange)
+  const [activeTab, setActiveTab] = useState<string | null>(null) // onglet surligné (ancres)
   const [activeFilter, setActiveFilter] = useState('Tous')
   // Poids DOM / Core Web Vitals : on rend 20 restaurants (indexés en SSR),
   // le reste s'affiche au clic « Voir plus » — même contenu, page 6× plus légère.
@@ -67,6 +67,8 @@ export default function VilleDesktop({ ville }: { ville: any }) {
   // Refonte « guide » : la longue liste OSM est REPLIÉE par défaut — le guide
   // répond d'abord, la liste complète reste là pour ceux qui fouillent.
   const [showAllRestos, setShowAllRestos] = useState(false)
+  // Liste complète des mosquées, dépliable dans le bloc « Où prier »
+  const [showAllMosquees, setShowAllMosquees] = useState(false)
   // Vue détail des lieux CURÉS (profondeur réelle) — null = fermée
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [detail, setDetail] = useState<{ kind: 'resto' | 'mosquee' | 'activite' | 'hotel'; item: any } | null>(null)
@@ -75,11 +77,11 @@ export default function VilleDesktop({ ville }: { ville: any }) {
   const { lang } = useLanguage()
   const en = lang === 'en'
 
-  // Clic sur un onglet → affiche le contenu de la fiche (mosquées incluses : on a les
-  // vraies données OSM bakées, plus besoin de la géoloc qui pouvait échouer).
+  // La fiche est un GUIDE en un seul flux : les onglets sont des ancres qui
+  // font défiler vers la section correspondante.
   const goToTab = (id: string) => {
     setActiveTab(id)
-    setTimeout(() => contentRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 60)
+    setTimeout(() => document.getElementById(`sec-${id}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 60)
   }
 
   const image = ville.image || ville.image_hero
@@ -186,6 +188,12 @@ export default function VilleDesktop({ ville }: { ville: any }) {
 
   const card: React.CSSProperties = { background: '#fff', borderRadius: '20px', padding: '22px', border: '1px solid rgba(11,26,15,0.06)', boxShadow: '0 8px 28px rgba(11,26,15,0.06)', transition: 'transform .2s, box-shadow .2s' }
   const WRAP = 900
+  const guideVille = getCityGuide(ville.slug)
+  const sectionTitle: React.CSSProperties = { fontFamily: "'Playfair Display', serif", fontSize: 24, fontWeight: 900, color: 'var(--nuit)', margin: '0 0 14px' }
+  // 🏊 Espaces femmes & famille — UNIQUEMENT depuis des équipements vérifiés
+  // (HalalBooking) : piscine non mixte / plage privée femmes. Zéro invention.
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const espacesFemmes = hotels.filter((h: any) => h?.sourceEquipements === 'halalbooking' && (h.piscineNonMixte === true || h.plagePrivee === true))
 
   return (
     <main style={{ background: 'var(--creme)', minHeight: '100vh', overflowX: 'hidden' }}>
@@ -245,7 +253,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
       {/* 🧭 GUIDE VISUEL — 1 phrase forte + chips (pas de pavé), puis carrousel
           photo « L'essentiel en 3 jours » (vraies photos de monuments). */}
       {(() => {
-        const guide = getCityGuide(ville.slug)
+        const guide = guideVille
         if (!guide) return null
         const chip = { display: 'inline-flex', alignItems: 'center', gap: 7, background: '#fff', border: '1px solid rgba(27,67,50,0.15)', borderRadius: 999, padding: '9px 15px', fontSize: 14, fontWeight: 700, color: 'var(--foret)' } as const
         return (
@@ -271,7 +279,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
       {/* 🕌 OÙ PRIER — mis en avant (différenciateur n°1) : mosquées principales
           réelles (OSM) + accès direct « la plus proche » */}
       {mosquees.length > 0 && (
-        <section style={{ maxWidth: WRAP, margin: '0 auto', padding: '26px 24px 0' }}>
+        <section id="sec-mosquees" style={{ maxWidth: WRAP, margin: '0 auto', padding: '26px 24px 0', scrollMarginTop: 12 }}>
           <div style={{ background: 'var(--nuit)', borderRadius: 20, padding: '20px 20px 18px', color: '#fdfaf3' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: 8, marginBottom: 12 }}>
               <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: 22, fontWeight: 900, color: '#fff', margin: 0 }}>
@@ -291,13 +299,74 @@ export default function VilleDesktop({ ville }: { ville: any }) {
               ))}
             </div>
             {mosquees.length > 3 && (
-              <button onClick={() => goToTab('mosquees')} style={{ marginTop: 12, background: 'none', border: '1.5px solid rgba(201,168,76,0.5)', color: 'var(--or)', borderRadius: 999, padding: '9px 18px', fontWeight: 700, fontSize: 13.5, cursor: 'pointer' }}>
-                {en ? `See all ${mosquees.length} mosques →` : `Voir les ${mosquees.length} mosquées →`}
+              <button onClick={() => setShowAllMosquees(!showAllMosquees)} style={{ marginTop: 12, background: 'none', border: '1.5px solid rgba(201,168,76,0.5)', color: 'var(--or)', borderRadius: 999, padding: '9px 18px', fontWeight: 700, fontSize: 13.5, cursor: 'pointer', minHeight: 44 }}>
+                {showAllMosquees
+                  ? (en ? 'Close the list ↑' : 'Replier la liste ↑')
+                  : (en ? `See all ${mosquees.length} mosques →` : `Voir les ${mosquees.length} mosquées →`)}
               </button>
             )}
+            {showAllMosquees && (
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(230px, 1fr))', gap: 8, marginTop: 12 }}>
+                {mosquees.slice(3).map((m: any, i: number) => (
+                  <a key={i} href={m.mapsUrl} target="_blank" rel="noopener noreferrer"
+                    style={{ background: 'rgba(255,255,255,0.05)', borderRadius: 10, padding: '9px 12px', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 8, minHeight: 44 }}>
+                    <span style={{ color: '#fdfaf3', fontSize: 13.5, fontWeight: 600, flex: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>🕌 {m.nom}</span>
+                    <span style={{ color: 'var(--or)', fontSize: 12 }}>🗺</span>
+                  </a>
+                ))}
+              </div>
+            )}
+            <p style={{ fontSize: 11, color: 'rgba(253,250,243,0.45)', margin: '10px 0 0' }}>ℹ️ OpenStreetMap</p>
           </div>
         </section>
       )}
+
+      {/* 🏊 ESPACES FEMMES & FAMILLE — le différenciateur. Données vérifiées
+          HalalBooking uniquement ; sinon invitation communauté (jamais de faux). */}
+      <section id="sec-femmes" style={{ maxWidth: WRAP, margin: '0 auto', padding: '26px 24px 0', scrollMarginTop: 12 }}>
+        <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: 24, fontWeight: 900, color: 'var(--nuit)', margin: '0 0 6px' }}>
+          🏊 {en ? 'Women & family spaces' : 'Espaces femmes & famille'}
+        </h2>
+        <p style={{ fontSize: 14, color: 'var(--texte-2)', margin: '0 0 14px', lineHeight: 1.6 }}>
+          {en ? 'Ladies-only pools, private beaches and women-friendly wellness — verified sources only.' : 'Piscines non mixtes, plages privées et bien-être adapté — sources vérifiées uniquement.'}
+        </p>
+        {espacesFemmes.length > 0 ? (
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 12 }}>
+            {espacesFemmes.map((h: any, i: number) => (
+              <div key={i} style={{ background: '#fff', border: '1px solid rgba(27,67,50,0.1)', borderRadius: 18, padding: '16px 18px', boxShadow: '0 6px 20px rgba(11,26,15,0.06)' }}>
+                <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 800, fontSize: 17, color: 'var(--nuit)', margin: '0 0 6px' }}>{h.nom}</p>
+                <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 10 }}>
+                  {h.piscineNonMixte === true && <span style={{ background: 'rgba(27,67,50,0.08)', color: 'var(--foret)', fontSize: 12, fontWeight: 700, borderRadius: 20, padding: '4px 11px' }}>🏊 {en ? 'Ladies-only pool' : 'Piscine femmes'}</span>}
+                  {h.plagePrivee === true && <span style={{ background: 'rgba(27,67,50,0.08)', color: 'var(--foret)', fontSize: 12, fontWeight: 700, borderRadius: 20, padding: '4px 11px' }}>🏖 {en ? "Private ladies' beach" : 'Plage privée femmes'}</span>}
+                  {(h.sansAlcool === true || h.sans_alcool === true) && <span style={{ background: 'rgba(27,67,50,0.08)', color: 'var(--foret)', fontSize: 12, fontWeight: 700, borderRadius: 20, padding: '4px 11px' }}>🚫 {en ? 'alcohol-free' : 'sans alcool'}</span>}
+                </div>
+                {(h.note ?? h.score) != null && <p style={{ fontSize: 13, color: '#B8860B', fontWeight: 700, margin: '0 0 10px' }}>★ {h.note ?? h.score}</p>}
+                {(h.halalBookingUrl || h.bookingUrl) && (
+                  <a href={h.halalBookingUrl || h.bookingUrl} target="_blank" rel="sponsored noopener noreferrer"
+                    style={{ display: 'block', padding: '11px 0', background: 'var(--foret)', color: '#fff', borderRadius: 12, textAlign: 'center', fontSize: 13.5, fontWeight: 700, textDecoration: 'none' }}>
+                    🏨 {en ? 'See on HalalBooking' : 'Voir sur HalalBooking'}
+                  </a>
+                )}
+                <p style={{ fontSize: 11, color: 'var(--texte-2)', margin: '8px 0 0', opacity: 0.7 }}>ℹ️ {en ? 'Amenities verified via HalalBooking' : 'Équipements vérifiés via HalalBooking'}</p>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div style={{ background: '#fff', border: '1px dashed rgba(27,67,50,0.3)', borderRadius: 18, padding: '22px 20px', textAlign: 'center' }}>
+            <p style={{ fontSize: 15, color: 'var(--texte)', fontWeight: 600, margin: '0 0 4px' }}>
+              {en ? 'Selection in progress for ' : 'Sélection en cours pour '}{ville.nom}.
+            </p>
+            <p style={{ fontSize: 13.5, color: 'var(--texte-2)', margin: '0 0 14px', lineHeight: 1.6 }}>
+              {en
+                ? 'We only list verified women-only or private spaces — never guessed ones.'
+                : 'Nous ne listons que des espaces femmes ou privatifs vérifiés — jamais supposés.'}
+            </p>
+            <a href={`/communaute/ajouter?ville=${ville.slug ?? ''}`} style={{ display: 'inline-block', padding: '12px 22px', borderRadius: 999, background: 'var(--or)', color: '#0b1a0f', fontWeight: 800, fontSize: 14, textDecoration: 'none' }}>
+              🤲 {en ? 'Know a women/private space here? Share it' : 'Tu connais un espace femmes/privé ici ? Partage-le'}
+            </a>
+          </div>
+        )}
+      </section>
 
       {/* 🔥 Les incontournables — top mixte CURÉ (profondeur réelle), scroll horizontal */}
       {incontournables.length >= 3 && (
@@ -393,10 +462,12 @@ export default function VilleDesktop({ ville }: { ville: any }) {
         </div>
       )}
 
-      {/* PARTIE BAS (claire) — contenu de l'onglet sélectionné */}
+      {/* PARTIE BAS (claire) — GUIDE en un seul flux : manger, dormir, faire,
+          conseils, communauté. Les onglets du haut sont des ancres. */}
       <div ref={contentRef} style={{ maxWidth: WRAP, margin: '0 auto', padding: '28px 24px 80px', scrollMarginTop: '12px' }}>
-        {displayTab === 'restaurants' && (
+        <section id="sec-restaurants" style={{ scrollMarginTop: 12 }}>
           <>
+            <h2 style={sectionTitle}>🍽 {en ? `Eating halal in ${ville.nom}` : `Manger halal à ${ville.nom}`}</h2>
             {/* BLOC 3 — statut halal HONNÊTE selon le contexte de la ville */}
             <div style={{ background: villeNonMusulmane ? 'rgba(201,168,76,0.12)' : 'rgba(27,67,50,0.07)', border: '1px solid rgba(27,67,50,0.15)', borderRadius: 14, padding: '12px 16px', marginBottom: 18, fontSize: 13.5, color: 'var(--foret)', lineHeight: 1.6 }}>
               {villeNonMusulmane
@@ -406,21 +477,6 @@ export default function VilleDesktop({ ville }: { ville: any }) {
                 : (en
                   ? `🕌 ${ville.nom} is a Muslim-majority city — dining is overwhelmingly halal by default. We never certify individual places.`
                   : `🕌 ${ville.nom} est une ville à majorité musulmane — la restauration y est très majoritairement halal par défaut. Nous ne certifions aucun lieu individuellement.`)}
-            </div>
-            {/* 🤝 Communauté AVANT les listes : les spots partagés ont plus de
-                valeur qu'un annuaire */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: 12, background: 'var(--nuit)', borderRadius: 16, padding: '14px 16px', marginBottom: 18, flexWrap: 'wrap' }}>
-              <p style={{ flex: 1, minWidth: 180, color: '#fdfaf3', fontSize: 14.5, fontWeight: 700, margin: 0, lineHeight: 1.45 }}>
-                🤝 {en ? `Know a halal spot in ${ville.nom}?` : `Tu connais un spot halal à ${ville.nom} ?`}
-              </p>
-              <span style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
-                <a href={`/communaute/ajouter?ville=${ville.slug ?? ''}`} style={{ padding: '10px 16px', borderRadius: 999, background: 'var(--or)', color: '#0b1a0f', fontWeight: 800, fontSize: 13.5, textDecoration: 'none' }}>
-                  ➕ {en ? 'Share it' : 'Partage-le'}
-                </a>
-                <a href={`/priere/${ville.slug ?? ''}`} style={{ padding: '10px 16px', borderRadius: 999, border: '1.5px solid rgba(201,168,76,0.5)', color: '#fdfaf3', fontWeight: 700, fontSize: 13.5, textDecoration: 'none' }}>
-                  🧭 {en ? 'Shared spots →' : 'Spots partagés →'}
-                </a>
-              </span>
             </div>
             {/* BLOC 6 — honnêteté d'échelle : pas de data réelle → on le DIT */}
             {restaurants.length === 0 && (
@@ -551,14 +607,14 @@ export default function VilleDesktop({ ville }: { ville: any }) {
               )
             )}
           </>
-        )}
+        </section>
 
-        {displayTab === 'hotels' && (
+        <section id="sec-hotels" style={{ scrollMarginTop: 12, marginTop: 40 }}>
+          <h2 style={sectionTitle}>🏨 {en ? `Where to stay in ${ville.nom}` : `Où dormir à ${ville.nom}`}</h2>
           <div style={{ marginBottom: 20 }}>
             <HotelCTA cityName={ville.nom} variant="banner" />
           </div>
-        )}
-        {displayTab === 'hotels' && (hotels.length === 0 ? (
+          {hotels.length === 0 ? (
           <div style={{ ...card, textAlign: 'center', padding: '40px 22px' }}>
             <div style={{ fontSize: 34, marginBottom: 10 }}>🏨</div>
             <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, color: 'var(--nuit)', fontSize: 18, margin: '0 0 6px' }}>{en ? 'Hotels coming soon' : 'Hôtels en cours d’ajout'}</p>
@@ -566,38 +622,17 @@ export default function VilleDesktop({ ville }: { ville: any }) {
           </div>
         ) : (
           <HotelFilter hotels={hotels} mosques={mosquesLL} restos={restosLL} center={centerLL} en={en} />
-        ))}
+        )}
+        </section>
 
-        {displayTab === 'mosquees' && mosquees.length === 0 && hasCoords && (
-          <LiveSpots kind="mosquees" lat={coords.lat} lng={coords.lng} ville={ville.nom} />
+        {mosquees.length === 0 && hasCoords && (
+          <section id="sec-mosquees-live" style={{ marginTop: 40 }}>
+            <LiveSpots kind="mosquees" lat={coords.lat} lng={coords.lng} ville={ville.nom} />
+          </section>
         )}
-        {displayTab === 'mosquees' && mosquees.length > 0 && (
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: 8 }}>
-              <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: '24px', fontWeight: 900, color: 'var(--nuit)', margin: 0 }}>🕌 {en ? <>Where to pray in {ville.nom}</> : <>Où prier à {ville.nom}</>}</h2>
-              <span style={{ display: 'flex', gap: 14, flexWrap: 'wrap' }}>
-                <a href={`/priere/${ville.slug ?? ''}`} style={{ fontSize: '13px', fontWeight: 700, color: '#6b21a8', textDecoration: 'none' }}>🧭 {en ? 'Prayer spots →' : 'Coins prière →'}</a>
-                <a href="/mosquee-proche" style={{ fontSize: '13px', fontWeight: 700, color: 'var(--foret)', textDecoration: 'none' }}>📍 {en ? 'Around me (GPS) →' : 'Autour de moi (GPS) →'}</a>
-              </span>
-            </div>
-            {mosquees.map((m: any, i: number) => (
-              <div key={i} style={card}>
-                <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 8 }}>
-                  <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: '19px', color: 'var(--nuit)', marginBottom: '6px' }}>🕌 {m.nom}</p>
-                  <FavButton size={16} fav={{ id: favId('mosquee', ville.slug ?? ville.nom, m.nom), kind: 'mosquee', nom: m.nom, villeNom: ville.nom, href: `/destinations/${ville.slug ?? ''}` }} />
-                </div>
-                <p style={{ fontSize: '13.5px', color: 'var(--texte-2)', lineHeight: 1.6, marginBottom: '10px' }}>{m.description}</p>
-                <a href={m.mapsUrl} target="_blank" rel="noopener noreferrer" onClick={() => toast('Ouverture dans Google Maps…', 'success')} style={{ display: 'inline-block', padding: '9px 16px', background: 'var(--halal-bg)', color: 'var(--halal-tx)', borderRadius: '11px', fontSize: '12.5px', fontWeight: 700, textDecoration: 'none' }}>🗺 {en ? 'View on map →' : 'Voir sur la carte →'}</a>
-                <SourceLine item={m} />
-              </div>
-            ))}
-          </div>
-        )}
-
-        {displayTab === 'activites' && activites.length === 0 && hasCoords && (
-          <LiveSpots kind="activites" lat={coords.lat} lng={coords.lng} ville={ville.nom} />
-        )}
-        {displayTab === 'activites' && activites.length > 0 && (
+        {activites.length > 0 && (
+        <section id="sec-activites" style={{ scrollMarginTop: 12, marginTop: 40 }}>
+          <h2 style={sectionTitle}>🎯 {en ? `Things to do in ${ville.nom}` : `Que faire à ${ville.nom}`}</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '16px' }}>
             {activites.map((a: any, i: number) => (
               <div key={i} style={card}>
@@ -612,9 +647,24 @@ export default function VilleDesktop({ ville }: { ville: any }) {
               </div>
             ))}
           </div>
+        </section>
         )}
 
-        {displayTab === 'pratique' && (
+        {/* 💡 CONSEILS PRATIQUES — texte concret RÉDIGÉ (jamais un lieu inventé) */}
+        {(guideVille?.conseils?.length || pratiqueItems.length > 0) && (
+        <section id="sec-pratique" style={{ scrollMarginTop: 12, marginTop: 40 }}>
+          <h2 style={sectionTitle}>💡 {en ? 'Practical tips' : 'Conseils pratiques'}</h2>
+          {guideVille?.conseils && (
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(270px, 1fr))', gap: 12, marginBottom: pratiqueItems.length ? 18 : 0 }}>
+              {guideVille.conseils.map((c, i) => (
+                <div key={i} style={{ background: '#fff', border: '1px solid rgba(27,67,50,0.1)', borderRadius: 16, padding: '15px 17px' }}>
+                  <p style={{ fontWeight: 800, fontSize: 14.5, color: 'var(--foret)', margin: '0 0 6px' }}>{c.icon} {en ? c.titreEn : c.titre}</p>
+                  <p style={{ fontSize: 14, color: 'var(--texte)', lineHeight: 1.6, margin: 0 }}>{en ? c.en : c.fr}</p>
+                </div>
+              ))}
+            </div>
+          )}
+          {pratiqueItems.length > 0 && (
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '16px' }}>
             {pratiqueItems.map((item, i) => (
               <div key={i} style={{ ...card, display: 'flex', gap: '14px', alignItems: 'center' }}>
@@ -624,7 +674,21 @@ export default function VilleDesktop({ ville }: { ville: any }) {
               </div>
             ))}
           </div>
+          )}
+        </section>
         )}
+
+        {/* 🤝 CE QUE LA COMMUNAUTÉ PARTAGE ICI — spots réels, sinon invitation */}
+        <section id="sec-communaute" style={{ scrollMarginTop: 12, marginTop: 40 }}>
+          <h2 style={sectionTitle}>🤝 {en ? `What the community shares in ${ville.nom}` : `Ce que la communauté partage à ${ville.nom}`}</h2>
+          {hasCoords
+            ? <CitySpots lat={coords.lat} lng={coords.lng} villeNom={ville.nom} slug={ville.slug ?? ''} en={en} />
+            : (
+              <a href={`/communaute/ajouter?ville=${ville.slug ?? ''}`} style={{ display: 'inline-block', padding: '12px 22px', borderRadius: 999, background: 'var(--or)', color: '#0b1a0f', fontWeight: 800, fontSize: 14, textDecoration: 'none' }}>
+                🤲 {en ? 'Share a spot here' : 'Partager un spot ici'}
+              </a>
+            )}
+        </section>
       </div>
     </main>
   )
