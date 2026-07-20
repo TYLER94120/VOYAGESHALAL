@@ -84,25 +84,33 @@ jobs:
           import random
           random.seed(42)
           pool = [u for u in hotel_urls if '/hotel' in u]
-          sample = pool[:0] + random.sample(pool, min(150, len(pool)))
+          sample = random.sample(pool, min(220, len(pool)))
+          NEG = re.compile(r'No pool, spa or beach for ladies', re.I)
           disc = []
           for u in sample:
               try:
                   html = get(u)
               except Exception:
                   continue
+              # retirer footer + blocs de suggestion (présents sur TOUTES les pages)
+              body = re.sub(r'<footer[\s\S]*?</footer>', ' ', html)
+              body = re.sub(r'<[^>]*(?:footer-nav|search-ideas)[^>]*>[\s\S]{0,4000}?</(?:div|section|ul)>', ' ', body)
+              if NEG.search(body):
+                  continue  # l'hôtel dit explicitement NE PAS avoir d'espace femmes
               hits = set()
-              for m in MARKERS.finditer(html):
-                  a = max(0, m.start()-70); b = min(len(html), m.end()+70)
-                  frag = re.sub(r'<[^>]+>', ' ', html[a:b]); frag = re.sub(r'\s+', ' ', frag).strip()
-                  hits.add(frag[:150])
+              for m in MARKERS.finditer(body):
+                  a = max(0, m.start()-90); b = min(len(body), m.end()+90)
+                  frag = re.sub(r'<[^>]+>', ' ', body[a:b]); frag = re.sub(r'\s+', ' ', frag).strip()
+                  if 'footer' in frag.lower() or 'hotels with' in frag.lower():
+                      continue
+                  hits.add(frag[:160])
               if not hits:
                   continue
               t = re.search(r'<title>([^<]+)</title>', html)
               disc.append({"url": u, "title": (t.group(1).strip() if t else ''), "evidence": sorted(hits)[:6]})
               print('DISC', u)
           json.dump(disc, open('hb-audit/discovery.json', 'w'), ensure_ascii=False, indent=1)
-          print('découvertes avec preuves:', len(disc))
+          print('découvertes avec preuves positives:', len(disc))
           PY
       - name: Commit evidence
         run: |
