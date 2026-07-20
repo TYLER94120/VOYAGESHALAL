@@ -53,11 +53,16 @@ for (const { key, q } of KEYS) {
   map[key] = { query: q, candidates: cands }
   for (let i = 0; i < cands.length; i++) {
     const dest = `guide-images/thumbs/${key}-${i}.jpg`
-    try {
-      const resp = await fetch(cands[i].thumb, { headers: { 'User-Agent': UA } })
-      if (resp.ok) writeFileSync(dest, Buffer.from(await resp.arrayBuffer()))
-      else console.error('THUMB FAIL', key, i, resp.status)
-    } catch (e) { console.error('THUMB FAIL', key, i, e.message) }
+    // Commons limite le débit (429) : on espace les requêtes et on retente
+    for (let attempt = 0; attempt < 4; attempt++) {
+      try {
+        await new Promise((res) => setTimeout(res, attempt === 0 ? 600 : 2500))
+        const resp = await fetch(cands[i].thumb, { headers: { 'User-Agent': UA } })
+        if (resp.ok) { writeFileSync(dest, Buffer.from(await resp.arrayBuffer())); break }
+        if (resp.status !== 429) { console.error('THUMB FAIL', key, i, resp.status); break }
+        if (attempt === 3) console.error('THUMB FAIL', key, i, 429)
+      } catch (e) { console.error('THUMB FAIL', key, i, e.message); break }
+    }
   }
   console.log(key, cands.length, 'candidates')
 }
