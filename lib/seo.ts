@@ -24,7 +24,7 @@ export function buildMetadata({
 }): Metadata {
   const url = canonical || `${SITE_URL}${path}`
   // Image OG par défaut : une vraie image (le fichier local n'existe pas) → aperçus de partage corrects
-  const ogImage = image || 'https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1200&h=630&fit=crop&q=80'
+  const ogImage = image || 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&h=630&fit=crop&q=80'
 
   return {
     // Titre « nu » : le template du layout ajoute « | VoyagesHalal.fr » (évite la répétition)
@@ -143,7 +143,7 @@ export function buildOrganizationSchema(opts: SchemaOpts = {}) {
     url,
     description: opts.en ? EN_DESCRIPTION : DEFAULT_DESCRIPTION,
     logo: `${url}/icon-512`,
-    image: 'https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1200&h=630&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&h=630&fit=crop&q=80',
     areaServed: 'Worldwide',
     // Domaine jumeau (FR↔EN) + réseaux sociaux officiels dès qu'ils existent.
     sameAs: [twin, ...SOCIAL_LINKS],
