@@ -79,10 +79,28 @@ export default function AuthSheet({
             : (en ? `Code sent to ${email}` : `Code envoyé à ${email}`)}
         </p>
 
-        {/* Méthode principale : Google (1 tap) */}
-        {step === 'email' && GOOGLE_CLIENT_ID && googleLogin && (
+        {/* Méthode PRINCIPALE : Google (1 tap) — toujours visible en haut.
+            Si la config n'est pas encore posée (NEXT_PUBLIC_GOOGLE_CLIENT_ID),
+            le bouton l'explique au tap au lieu de disparaître. */}
+        {step === 'email' && (
           <>
-            <div ref={googleBtn} style={{ display: 'flex', justifyContent: 'center', minHeight: 44, marginBottom: 14 }} />
+            {GOOGLE_CLIENT_ID && googleLogin ? (
+              <div style={{ position: 'relative', marginBottom: 14 }}>
+                {/* Bouton visuel maison (gros, principal) + bouton Google officiel superposé
+                    en transparence : le clic va à Google, l'apparence est à nous */}
+                <div aria-hidden style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10, minHeight: 56, borderRadius: 18, background: '#fff', border: '2px solid rgba(27,67,50,0.25)', fontWeight: 800, fontSize: 16, color: '#1f2937' }}>
+                  <svg width="20" height="20" viewBox="0 0 48 48" aria-hidden><path fill="#FFC107" d="M43.6 20.1H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.9 1.2 8 3l5.7-5.7C34.3 6.1 29.4 4 24 4 13 4 4 13 4 24s9 20 20 20 20-9 20-20c0-1.3-.1-2.6-.4-3.9z"/><path fill="#FF3D00" d="m6.3 14.7 6.6 4.8C14.6 15.1 18.9 12 24 12c3.1 0 5.9 1.2 8 3l5.7-5.7C34.3 6.1 29.4 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.6 39.6 16.3 44 24 44z"/><path fill="#1976D2" d="M43.6 20.1H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C41 35.4 44 30.2 44 24c0-1.3-.1-2.6-.4-3.9z"/></svg>
+                  {en ? 'Continue with Google' : 'Continuer avec Google'}
+                </div>
+                <div ref={googleBtn} style={{ position: 'absolute', inset: 0, opacity: 0.011, overflow: 'hidden', display: 'flex', justifyContent: 'center' }} />
+              </div>
+            ) : (
+              <button type="button" onClick={() => setErr(en ? 'Google sign-in is being activated — use the email code below for now.' : 'La connexion Google est en cours d\'activation — utilise le code email juste en dessous en attendant.')}
+                style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10, minHeight: 56, borderRadius: 18, background: '#fff', border: '2px solid rgba(27,67,50,0.25)', fontWeight: 800, fontSize: 16, color: '#1f2937', cursor: 'pointer', marginBottom: 14 }}>
+                <svg width="20" height="20" viewBox="0 0 48 48" aria-hidden><path fill="#FFC107" d="M43.6 20.1H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.9 1.2 8 3l5.7-5.7C34.3 6.1 29.4 4 24 4 13 4 4 13 4 24s9 20 20 20 20-9 20-20c0-1.3-.1-2.6-.4-3.9z"/><path fill="#FF3D00" d="m6.3 14.7 6.6 4.8C14.6 15.1 18.9 12 24 12c3.1 0 5.9 1.2 8 3l5.7-5.7C34.3 6.1 29.4 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.6 39.6 16.3 44 24 44z"/><path fill="#1976D2" d="M43.6 20.1H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C41 35.4 44 30.2 44 24c0-1.3-.1-2.6-.4-3.9z"/></svg>
+                {en ? 'Continue with Google' : 'Continuer avec Google'}
+              </button>
+            )}
             <div style={{ display: 'flex', alignItems: 'center', gap: 10, margin: '0 0 14px' }}>
               <span style={{ flex: 1, height: 1, background: 'rgba(27,67,50,0.15)' }} />
               <span style={{ fontSize: 13, color: '#9ca3af' }}>{en ? 'or get a code by email' : 'ou reçois un code par email'}</span>
