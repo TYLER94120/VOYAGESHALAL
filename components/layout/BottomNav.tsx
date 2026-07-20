@@ -23,6 +23,7 @@ export default function BottomNav() {
   const restosHref = city ? `/destinations/${city.slug}` : '/destinations'
 
   const tools = [
+    { href: '/communaute/ajouter', icon: '➕', label: en ? 'Add a spot' : 'Ajouter un spot' },
     { href: localizedHref('/mosquee-proche', en), icon: '🕌', label: t('nav.mosque') },
     { href: '/qibla', icon: '🧭', label: t('nav.qibla') },
     { href: localizedHref('/planificateur', en), icon: '🗺️', label: en ? 'Trip planner' : 'Planificateur' },

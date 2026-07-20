@@ -75,6 +75,7 @@ export function ambassadeurBadge(villeNom: string) {
 export const CATEGORIES = [
   { id: 'coin_priere', fr: 'Coin prière', en: 'Prayer spot', icon: '🕌' },
   { id: 'resto', fr: 'Resto halal', en: 'Halal resto', icon: '🍽️' },
+  { id: 'espace_femmes', fr: 'Espace femmes', en: 'Women space', icon: '🏊' },
   { id: 'boucherie', fr: 'Boucherie', en: 'Butcher', icon: '🥩' },
   { id: 'pepite', fr: 'Pépite', en: 'Hidden gem', icon: '💎' },
   { id: 'autre', fr: 'Autre', en: 'Other', icon: '📍' },
