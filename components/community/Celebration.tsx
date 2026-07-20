@@ -8,13 +8,15 @@ import { BADGES } from '@/lib/community'
 const COLORS = ['#C9A84C', '#1B4332', '#2d6a4f', '#e9dcbe', '#0B1A0F']
 
 export default function Celebration({
-  points, badges, impact, spotUrl, onClose, en = false,
+  points, badges, impact, spotUrl, onClose, claimCta, en = false,
 }: {
   points: number
   badges: string[]
   impact: number
   spotUrl: string
   onClose: () => void
+  /* Publication sans compte : bouton « garde tes points » (optionnel) */
+  claimCta?: React.ReactNode
   en?: boolean
 }) {
   const [confetti] = useState(() => Array.from({ length: 60 }, (_, i) => ({
@@ -46,10 +48,13 @@ export default function Celebration({
             ? 'Your spot is live — it will help dozens of travelers find their way. A sadaqa that keeps giving, in shā’ Allāh. 🌱'
             : 'Ton spot est en ligne — il va aider des dizaines de voyageurs. Une sadaqa jâriya qui continue, in shā’ Allāh. 🌱'}
         </p>
+        {points > 0 && (
         <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'rgba(201,168,76,0.18)', borderRadius: 999, padding: '10px 18px', marginBottom: 14 }}>
           <span style={{ fontSize: 20 }}>✨</span>
           <span style={{ fontWeight: 800, color: '#8A6D1E', fontSize: 16 }}>+{points} points</span>
         </div>
+        )}
+        {claimCta}
         {impact > 0 && (
           <p style={{ fontSize: 14, color: '#4b5563', margin: '0 0 12px' }}>
             {en ? `So far, ${impact} Muslims found their way thanks to you.` : `Déjà ${impact} musulmans aidés grâce à toi.`}

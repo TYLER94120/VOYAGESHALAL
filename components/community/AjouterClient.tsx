@@ -44,7 +44,7 @@ export default function AjouterClient() {
   const [busy, setBusy] = useState(false)
   const [err, setErr] = useState('')
   const [authOpen, setAuthOpen] = useState(false)
-  const [done, setDone] = useState<{ points: number; badges: string[]; impact: number; url: string } | null>(null)
+  const [done, setDone] = useState<{ points: number; badges: string[]; impact: number; url: string; anon?: boolean; spotId?: string; claimKey?: string } | null>(null)
 
   // Étape 2 : GPS précis automatique + lieux nommés à proximité (OpenStreetMap,
   // vrais noms — on TAPE, on n'écrit pas)
@@ -86,7 +86,7 @@ export default function AjouterClient() {
   const publier = async (nomFinal?: string) => {
     const leNom = (nomFinal ?? (lieu?.manuel ? nom : lieu?.nom) ?? '').trim()
     if (!lieu || leNom.length < 3) return
-    if (!me) { setAuthOpen(true); return }
+    // ZÉRO FRICTION : pas de compte requis — publication anonyme directe
     setBusy(true); setErr('')
     try {
       const r = await authFetch('/api/community/spots', {
@@ -95,7 +95,7 @@ export default function AjouterClient() {
       })
       const j = await r.json()
       if (!r.ok) throw new Error(j.error || 'Erreur')
-      setDone({ points: j.pointsGagnes, badges: j.nouveauxBadges ?? [], impact: j.impact ?? 0, url: j.url })
+      setDone({ points: j.pointsGagnes, badges: j.nouveauxBadges ?? [], impact: j.impact ?? 0, url: j.url, anon: j.anon === true, spotId: j.spot?.id, claimKey: j.claimKey })
       await refresh()
     } catch (ex) {
       const msg = String((ex as Error).message)
@@ -209,7 +209,7 @@ export default function AjouterClient() {
 
           <button onClick={() => void publier()} disabled={busy || (lieu.manuel && nom.trim().length < 3)}
             style={{ ...big, opacity: lieu.manuel && nom.trim().length < 3 ? 0.5 : 1 }}>
-            {busy ? '…' : (loaded && !me ? (en ? '🚀 Publish (sign in with Google)' : '🚀 Publier (connexion Google)') : (en ? '🚀 Publish' : '🚀 Publier'))}
+            {busy ? '…' : (en ? '🚀 Publish' : '🚀 Publier')}
           </button>
 
           {/* Optionnel, jamais requis */}
@@ -231,8 +231,26 @@ export default function AjouterClient() {
         </div>
       )}
 
-      <AuthSheet open={authOpen} onClose={() => setAuthOpen(false)} onDone={() => { setAuthOpen(false); void publier() }} sendCode={sendCode} verify={verify} googleLogin={googleLogin} en={en} />
-      {done && <Celebration points={done.points} badges={done.badges} impact={done.impact} spotUrl={done.url} onClose={reset} en={en} />}
+      <AuthSheet open={authOpen} onClose={() => setAuthOpen(false)}
+        onDone={async () => {
+          setAuthOpen(false)
+          // spot déjà publié anonymement → on le rattache au compte
+          if (done?.anon && done.spotId && done.claimKey) {
+            try {
+              const r = await authFetch('/api/community/claim', { method: 'POST', body: JSON.stringify({ spotId: done.spotId, key: done.claimKey }) })
+              const j = await r.json()
+              if (r.ok) setDone({ ...done, anon: false, points: j.pointsGagnes ?? 10, badges: j.nouveauxBadges ?? [] })
+            } catch { /* le spot reste publié quoi qu'il arrive */ }
+          }
+        }}
+        sendCode={sendCode} verify={verify} googleLogin={googleLogin} en={en} />
+      {done && <Celebration points={done.points} badges={done.badges} impact={done.impact} spotUrl={done.url} onClose={reset} en={en}
+        claimCta={done.anon && loaded && !me ? (
+          <button onClick={() => setAuthOpen(true)}
+            style={{ display: 'block', width: '100%', minHeight: 54, borderRadius: 16, border: 'none', background: 'var(--or, #C9A84C)', color: '#0b1a0f', fontWeight: 900, fontSize: 15, cursor: 'pointer', marginBottom: 12 }}>
+            ✨ {en ? 'Keep your +10 points — Continue with Google' : 'Garde tes +10 points — Continuer avec Google'}
+          </button>
+        ) : undefined} />}
     </div>
   )
 }

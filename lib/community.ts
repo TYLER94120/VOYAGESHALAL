@@ -242,6 +242,48 @@ export async function reportSpot(spotId: string, userId: string): Promise<{ ok: 
 }
 
 // ── Création d'un spot communautaire (BLOC 2) ──
+// ── Publication SANS COMPTE (zéro friction, façon Waze) ──
+// Le spot part tout de suite, signé « Un voyageur ». Une claimKey (48 h)
+// permet de le rattacher à un compte APRÈS coup pour récupérer les points.
+export async function createAnonSpot(
+  input: { categorie: string; nom: string; lat: number; lng: number; note?: string; villeSlug?: string; villeNom?: string },
+): Promise<{ spot: PrayerSpot; claimKey: string } | null> {
+  const spot = await saveSpotRaw({
+    nom: input.nom.slice(0, 80),
+    typeLieu: 'autre' as PrayerSpot['typeLieu'],
+    villeSlug: input.villeSlug ?? '', villeNom: input.villeNom ?? '',
+    lat: input.lat, lng: input.lng,
+    description: input.note?.slice(0, 200),
+    source: 'community',
+  } as Parameters<typeof saveSpotRaw>[0])
+  if (!spot) return null
+  const r = getRedis()!
+  spot.categorie = (input.categorie as PrayerSpot['categorie']) ?? 'autre'
+  await r.set(`vh:spot:${spot.id}`, spot)
+  const claimKey = `${Date.now().toString(36)}${Math.random().toString(36).slice(2, 12)}`
+  await r.set(`vh:spot:${spot.id}:claim`, claimKey, { ex: 60 * 60 * 48 })
+  await pushFeed({ type: 'spot', pseudo: 'Un voyageur', spotId: spot.id, spotNom: spot.nom, spotSlug: spot.slug, villeSlug: spot.villeSlug, villeNom: spot.villeNom, categorie: spot.categorie ?? 'autre', date: new Date().toISOString() })
+  return { spot, claimKey }
+}
+
+// Rattacher un spot anonyme à un compte (récupère les +10 pts et l'impact déjà accumulé)
+export async function claimSpot(user: CommunityUser, spotId: string, key: string): Promise<{ pointsGagnes: number; nouveauxBadges: string[] } | null> {
+  const r = getRedis(); if (!r) return null
+  const expected = (await r.get(`vh:spot:${spotId}:claim`)) as string | null
+  if (!expected || String(expected) !== key) return null
+  const spot = await getSpotById(spotId)
+  if (!spot || spot.auteurId) return null
+  spot.auteurId = user.id
+  spot.auteurPseudo = user.pseudo
+  await r.set(`vh:spot:${spot.id}`, spot)
+  await r.del(`vh:spot:${spotId}:claim`)
+  user.nbSpots += 1
+  await addPoints(user, POINTS.spot, spot.villeSlug)
+  const nouveauxBadges = await checkBadges(user, spot)
+  if ((spot.vues ?? 0) > 0) await addImpact(user.id, spot.vues ?? 0)
+  return { pointsGagnes: POINTS.spot, nouveauxBadges }
+}
+
 export async function createCommunitySpot(
   user: CommunityUser,
   input: { categorie: string; nom: string; lat: number; lng: number; note?: string; photo?: string; villeSlug?: string; villeNom?: string; typeLieu?: string },

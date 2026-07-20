@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { getUserByToken, tokenFromRequest, createCommunitySpot, rateLimit, impactOf, niveauOf, CATEGORIES } from '@/lib/community'
+import { getUserByToken, tokenFromRequest, createCommunitySpot, createAnonSpot, rateLimit, impactOf, niveauOf, CATEGORIES } from '@/lib/community'
 import cityCoords from '@/lib/cityCoords.json'
 
 // BLOC 2 — ajout d'un spot par la communauté (auth requise, < 30 s, anti-spam)
@@ -15,9 +15,15 @@ function nearestCity(lat: number, lng: number): CityRef {
 }
 
 export async function POST(request: NextRequest) {
+  // ZÉRO FRICTION : le compte est OPTIONNEL. Sans compte → publication
+  // anonyme (« Un voyageur »), 3 spots/jour par IP, rattachable ensuite.
   const user = await getUserByToken(tokenFromRequest(request))
-  if (!user) return NextResponse.json({ error: 'Connexion requise' }, { status: 401 })
-  if (!(await rateLimit(`spot:${user.id}`, 5, 3600))) return NextResponse.json({ error: 'Doucement 😊 — 5 spots max par heure' }, { status: 429 })
+  if (user) {
+    if (!(await rateLimit(`spot:${user.id}`, 5, 3600))) return NextResponse.json({ error: 'Doucement 😊 — 5 spots max par heure' }, { status: 429 })
+  } else {
+    const ip = request.headers.get('x-forwarded-for')?.split(',')[0]?.trim() || 'anon'
+    if (!(await rateLimit(`anonspot:${ip}`, 3, 86400))) return NextResponse.json({ error: 'Limite atteinte — connecte-toi pour continuer à partager' }, { status: 429 })
+  }
   let body: Record<string, unknown>
   try { body = await request.json() } catch { return NextResponse.json({ error: 'JSON invalide' }, { status: 400 }) }
   const nom = String(body.nom ?? '').trim()
@@ -26,6 +32,19 @@ export async function POST(request: NextRequest) {
   if (!nom || nom.length < 3 || Number.isNaN(lat) || Number.isNaN(lng)) return NextResponse.json({ error: 'Nom et position requis' }, { status: 400 })
   if (!CATEGORIES.some((c) => c.id === categorie)) return NextResponse.json({ error: 'Catégorie inconnue' }, { status: 400 })
   const city = nearestCity(lat, lng)
+  if (!user) {
+    const anon = await createAnonSpot({
+      categorie, nom, lat, lng,
+      note: body.note ? String(body.note) : undefined,
+      villeSlug: city.slug, villeNom: city.nom,
+    })
+    if (!anon) return NextResponse.json({ error: 'Base indisponible' }, { status: 500 })
+    return NextResponse.json({
+      ok: true, anon: true, spot: anon.spot, claimKey: anon.claimKey,
+      pointsGagnes: 0, nouveauxBadges: [], impact: 0,
+      url: `/spot/${anon.spot.id}`,
+    })
+  }
   const res = await createCommunitySpot(user, {
     categorie, nom, lat, lng,
     note: body.note ? String(body.note) : undefined,
