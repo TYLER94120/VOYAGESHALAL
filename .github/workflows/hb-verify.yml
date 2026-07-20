@@ -110,6 +110,41 @@ jobs:
               t = re.search(r'<title>([^<]+)</title>', html)
               disc.append({"url": u, "title": (t.group(1).strip() if t else ''), "evidence": sorted(feats)[:8]})
               print('DISC', u, '|', len(feats))
+          # 3) LISTES OFFICIELLES HalalBooking : pages-filtres « women-only
+          # beach & pool » et « ladies-only pool » — la revendication vient de
+          # HalalBooking lui-même (URL de preuve), on extrait nom + ville + lien.
+          FILTER_PAGES = [
+            ('women-only-beach-pool', 'https://halalbooking.com/en/women-only-beach-pool/fl/136'),
+            ('ladies-only-pool', 'https://halalbooking.com/en/hotels-with-ladies-only-pool/fl/95'),
+          ]
+          wo = []
+          for tag, fp in FILTER_PAGES:
+              for page in range(1, 6):
+                  u = fp if page == 1 else f'{fp}?page={page}'
+                  try:
+                      html = get(u)
+                  except Exception as e:
+                      print('filtre KO', u, e); break
+                  cards = re.findall(r'href="(/en/[a-z0-9-]*hotel[a-z0-9-]*/p/\d+)"[^>]*>', html)
+                  titles = re.findall(r'"name"\s*:\s*"([^"]{3,80})"[^}]{0,200}?"(?:address|location)"\s*:\s*"([^"]{3,90})"', html)
+                  found = 0
+                  for m in re.finditer(r'<a[^>]+href="(/en/[^"]+/p/\d+)"[^>]*>([^<]{3,80})</a>', html):
+                      wo.append({'tag': tag, 'page': page, 'url': 'https://halalbooking.com' + m.group(1), 'nom': re.sub(r'\s+', ' ', m.group(2)).strip()})
+                      found += 1
+                  for nm, loc in titles:
+                      wo.append({'tag': tag, 'page': page, 'nom': nm, 'lieu': loc})
+                      found += 1
+                  print(tag, 'page', page, '→', found, 'entrées,', len(cards), 'liens bruts')
+                  if found == 0 and page > 1:
+                      break
+          # dédoublonner par nom
+          seen = set(); ded = []
+          for x in wo:
+              k = x['nom'].lower()
+              if k in seen: continue
+              seen.add(k); ded.append(x)
+          json.dump(ded, open('hb-audit/womenonly.json', 'w'), ensure_ascii=False, indent=1)
+          print('hôtels women-only listés par HalalBooking:', len(ded))
           json.dump(disc, open('hb-audit/discovery.json', 'w'), ensure_ascii=False, indent=1)
           print('découvertes avec preuves positives:', len(disc))
           PY
