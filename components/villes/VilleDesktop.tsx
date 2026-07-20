@@ -15,11 +15,12 @@ import { coordsOf, type LatLng } from '@/lib/hotelFilter'
 import FavButton from '@/components/ui/FavButton'
 import PlacePhoto from '@/components/ui/PlacePhoto'
 import { favId } from '@/lib/favorites'
+import { getCityGuide } from '@/lib/cityGuides'
 
 // Sections guidées (refonte « Netflix » des fiches) — libellés orientés usage
 const TABS = [
-  { id: 'restaurants', icon: '🍽', label: 'Où manger', labelEn: 'Where to eat' },
   { id: 'mosquees', icon: '🕌', label: 'Où prier', labelEn: 'Where to pray' },
+  { id: 'restaurants', icon: '🍽', label: 'Où manger', labelEn: 'Where to eat' },
   { id: 'hotels', icon: '🏨', label: 'Où dormir', labelEn: 'Where to stay' },
   { id: 'activites', icon: '🎯', label: 'Que faire', labelEn: 'What to do' },
   { id: 'pratique', icon: '💡', label: 'Bon à savoir', labelEn: 'Good to know' },
@@ -62,6 +63,9 @@ export default function VilleDesktop({ ville }: { ville: any }) {
   const [visibleRestos, setVisibleRestos] = useState(20)
   // Correctif UX : filtre « signalé halal uniquement » (masque les « à vérifier »)
   const [halalOnly, setHalalOnly] = useState(false)
+  // Refonte « guide » : la longue liste OSM est REPLIÉE par défaut — le guide
+  // répond d'abord, la liste complète reste là pour ceux qui fouillent.
+  const [showAllRestos, setShowAllRestos] = useState(false)
   // Vue détail des lieux CURÉS (profondeur réelle) — null = fermée
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [detail, setDetail] = useState<{ kind: 'resto' | 'mosquee' | 'activite' | 'hotel'; item: any } | null>(null)
@@ -236,6 +240,70 @@ export default function VilleDesktop({ ville }: { ville: any }) {
         </div>
       </div>
 
+      {/* 🧭 GUIDE ÉDITORIAL — « [Ville] pour un voyageur musulman » : un avis
+          concret + un mini-parcours 2-3 jours (répond à « qu'est-ce que je
+          fais ici ? » avant toute liste). Rédigé main, grandes villes only. */}
+      {(() => {
+        const guide = getCityGuide(ville.slug)
+        if (!guide) return null
+        return (
+          <section style={{ maxWidth: WRAP, margin: '0 auto', padding: '26px 24px 0' }}>
+            <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: 24, fontWeight: 900, color: 'var(--nuit)', margin: '0 0 10px' }}>
+              🧭 {en ? `${ville.nom} for a Muslim traveler` : `${ville.nom} pour un voyageur musulman`}
+            </h2>
+            <p style={{ fontSize: 15.5, color: 'var(--texte)', lineHeight: 1.75, background: '#fff', border: '1px solid rgba(27,67,50,0.1)', borderLeft: '4px solid var(--or)', borderRadius: 16, padding: '16px 18px', margin: '0 0 16px' }}>
+              {en ? guide.avisEn : guide.avis}
+            </p>
+            <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: 19, fontWeight: 800, color: 'var(--nuit)', margin: '0 0 10px' }}>
+              📅 {en ? `The essentials in ${guide.jours.length} days` : `L'essentiel en ${guide.jours.length} jours`}
+            </h3>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 12 }}>
+              {guide.jours.map((j, i) => (
+                <div key={i} style={{ background: '#fff', border: '1px solid rgba(27,67,50,0.1)', borderRadius: 16, padding: '15px 16px', boxShadow: '0 6px 20px rgba(11,26,15,0.05)' }}>
+                  <p style={{ fontWeight: 800, fontSize: 14.5, color: 'var(--foret)', margin: '0 0 9px' }}>{en ? j.titreEn : j.titre}</p>
+                  {j.etapes.map((e, k) => (
+                    <p key={k} style={{ fontSize: 13.5, color: 'var(--texte)', lineHeight: 1.55, margin: '0 0 7px', display: 'flex', gap: 8 }}>
+                      <span>{e.icon}</span><span>{en ? e.en : e.fr}</span>
+                    </p>
+                  ))}
+                </div>
+              ))}
+            </div>
+          </section>
+        )
+      })()}
+
+      {/* 🕌 OÙ PRIER — mis en avant (différenciateur n°1) : mosquées principales
+          réelles (OSM) + accès direct « la plus proche » */}
+      {mosquees.length > 0 && (
+        <section style={{ maxWidth: WRAP, margin: '0 auto', padding: '26px 24px 0' }}>
+          <div style={{ background: 'var(--nuit)', borderRadius: 20, padding: '20px 20px 18px', color: '#fdfaf3' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: 8, marginBottom: 12 }}>
+              <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: 22, fontWeight: 900, color: '#fff', margin: 0 }}>
+                🕌 {en ? `Where to pray in ${ville.nom}` : `Où prier à ${ville.nom}`}
+              </h2>
+              <a href="/mosquee-proche" style={{ fontSize: 13.5, fontWeight: 800, color: 'var(--or)', textDecoration: 'none' }}>
+                📍 {en ? 'Nearest to me (GPS) →' : 'La plus proche de moi (GPS) →'}
+              </a>
+            </div>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 10 }}>
+              {mosquees.slice(0, 3).map((m: any, i: number) => (
+                <a key={i} href={m.mapsUrl} target="_blank" rel="noopener noreferrer"
+                  style={{ background: 'rgba(255,255,255,0.07)', border: '1px solid rgba(201,168,76,0.3)', borderRadius: 14, padding: '12px 14px', textDecoration: 'none', display: 'block' }}>
+                  <p style={{ fontWeight: 700, fontSize: 14.5, color: '#fdfaf3', margin: '0 0 3px', lineHeight: 1.3 }}>🕌 {m.nom}</p>
+                  <p style={{ fontSize: 12, color: 'rgba(253,250,243,0.6)', margin: 0 }}>🗺 {en ? 'Open in Maps' : 'Ouvrir dans Maps'} · {m.source === 'osm' ? 'OpenStreetMap' : ''}</p>
+                </a>
+              ))}
+            </div>
+            {mosquees.length > 3 && (
+              <button onClick={() => goToTab('mosquees')} style={{ marginTop: 12, background: 'none', border: '1.5px solid rgba(201,168,76,0.5)', color: 'var(--or)', borderRadius: 999, padding: '9px 18px', fontWeight: 700, fontSize: 13.5, cursor: 'pointer' }}>
+                {en ? `See all ${mosquees.length} mosques →` : `Voir les ${mosquees.length} mosquées →`}
+              </button>
+            )}
+          </div>
+        </section>
+      )}
+
       {/* 🔥 Les incontournables — top mixte CURÉ (profondeur réelle), scroll horizontal */}
       {incontournables.length >= 3 && (
         <section style={{ maxWidth: WRAP, margin: '0 auto', padding: '26px 24px 0' }}>
@@ -384,7 +452,20 @@ export default function VilleDesktop({ ville }: { ville: any }) {
                 </div>
               </div>
             )}
-            {restaurants.length > 0 && (
+            {/* Liste complète OSM REPLIÉE par défaut — le guide et les coups de
+                cœur répondent d'abord ; la liste reste là pour ceux qui fouillent */}
+            {restaurants.length > 0 && !showAllRestos && (
+              <div style={{ textAlign: 'center', margin: '4px 0 10px' }}>
+                <button onClick={() => setShowAllRestos(true)}
+                  style={{ padding: '14px 26px', borderRadius: 30, border: '1.5px solid var(--foret)', background: '#fff', color: 'var(--foret)', fontSize: 15, fontWeight: 800, cursor: 'pointer', minHeight: 52 }}>
+                  📂 {en ? `See all listings (${restaurants.length})` : `Voir toutes les adresses (${restaurants.length})`}
+                </button>
+                <p style={{ fontSize: 12.5, color: 'var(--texte-2)', margin: '8px 0 0' }}>
+                  {en ? 'Full OpenStreetMap directory — reported halal, to verify on site.' : 'Répertoire complet OpenStreetMap — signalé halal, à vérifier sur place.'}
+                </p>
+              </div>
+            )}
+            {restaurants.length > 0 && showAllRestos && (
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '16px' }}>
               <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: '22px', fontWeight: 900, color: 'var(--nuit)' }}>
                 {ccDisplay.length >= 3
@@ -395,7 +476,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
             </div>
             )}
             {/* filtres catégories en pills */}
-            {restaurants.length > 0 && (
+            {restaurants.length > 0 && showAllRestos && (
             <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginBottom: '22px' }}>
               {categories.map((cat) => {
                 const active = activeFilter === cat
@@ -412,6 +493,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
               </button>
             </div>
             )}
+            {showAllRestos && (
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px' }}>
               {restosAffiches.map((r: any, i: number) => {
                 const cat = cuisineCategory(r.type)
@@ -475,7 +557,8 @@ export default function VilleDesktop({ ville }: { ville: any }) {
                 )
               })}
             </div>
-            {restosFiltres.length > visibleRestos && (
+            )}
+            {showAllRestos && restosFiltres.length > visibleRestos && (
               <div style={{ textAlign: 'center', marginTop: 18 }}>
                 <button onClick={() => setVisibleRestos((v) => v + 40)} style={{ padding: '13px 28px', borderRadius: 30, border: '1.5px solid var(--foret)', background: '#fff', color: 'var(--foret)', fontSize: 14, fontWeight: 700, cursor: 'pointer' }}>
                   {en ? `Show more (${restosFiltres.length - visibleRestos} more)` : `Voir plus (${restosFiltres.length - visibleRestos} autres)`}
