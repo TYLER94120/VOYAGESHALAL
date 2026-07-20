@@ -33,5 +33,14 @@ export function computePrayerTimes(
   return { Fajr: pt.fajr, Dhuhr: pt.dhuhr, Asr: pt.asr, Maghrib: pt.maghrib, Isha: pt.isha }
 }
 
+// Variante avec le lever du soleil (fin de la fenêtre du Fajr) — Radar Prière
+export function computePrayerTimesFull(
+  lat: number, lng: number, method: number, school: number, date = new Date()
+): Record<PrayerKey, Date> & { Sunrise: Date } {
+  const coords = new adhan.Coordinates(lat, lng)
+  const pt = new adhan.PrayerTimes(coords, date, paramsFor(method, school))
+  return { Fajr: pt.fajr, Dhuhr: pt.dhuhr, Asr: pt.asr, Maghrib: pt.maghrib, Isha: pt.isha, Sunrise: pt.sunrise }
+}
+
 export { PRAYER_KEYS }
 export type { PrayerKey }

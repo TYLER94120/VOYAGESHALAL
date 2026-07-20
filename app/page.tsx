@@ -9,6 +9,7 @@ import { buildWebSiteSchema, buildOrganizationSchema } from '@/lib/seo'
 import { guides } from '@/lib/data'
 import HomeHeroActions from '@/components/home/HomeHeroActions'
 import NearbySpotsHome from '@/components/community/NearbySpotsHome'
+import RadarPriere from '@/components/home/RadarPriere'
 import FollowInstall from '@/components/capture/FollowInstall'
 import { JeVoyageMaintenant } from '@/components/JeVoyageMaintenant'
 import { HomeScoreRanking } from '@/components/HomeScoreRanking'
@@ -164,6 +165,9 @@ export default async function HomePage() {
           </Link>
         </div>
       </section>
+
+      {/* 🧭 Radar Prière — « ai-je le temps d'arriver avant la fin du créneau ? » */}
+      <RadarPriere />
 
       {/* Accès rapide */}
       <section className="px-4 pt-10">

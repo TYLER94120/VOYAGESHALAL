@@ -122,8 +122,14 @@ export default async function DestinationPage({ params }: Props) {
         <CitySync city={{ slug: city, nom: ville.nom, pays: ville.pays, lat: coords.lat, lng: coords.lng }} />
       )}
 
-      {/* Design unifié responsive (mobile + desktop : 1 colonne épurée) */}
-      <VilleDesktop ville={ville} />
+      {/* Design unifié responsive (mobile + desktop : 1 colonne épurée).
+          Perf mobile : seuls 24 restos sont sérialisés — la liste complète se
+          charge à la demande via /api/villes/[slug]/restos. */}
+      <VilleDesktop ville={{
+        ...ville,
+        restaurants: (ville.restaurants ?? []).slice(0, 24),
+        restaurantsTotal: ville.restaurants?.length ?? 0,
+      }} />
 
       {/* CTA affilié hôtels (revenu n°1) — visible sur toute la page ville */}
       <section style={{ background: 'var(--creme)', padding: '8px 18px 24px' }}>

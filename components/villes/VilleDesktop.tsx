@@ -90,7 +90,9 @@ export default function VilleDesktop({ ville }: { ville: any }) {
   const PAYS_MAJORITE_MUSULMANE = new Set(['Maroc', 'Algérie', 'Tunisie', 'Libye', 'Égypte', 'Mauritanie', 'Sénégal', 'Mali', 'Niger', 'Soudan', 'Somalie', 'Djibouti', 'Comores', 'Gambie', 'Guinée', 'Turquie', 'Arabie Saoudite', 'Émirats Arabes Unis', 'Émirats', 'Qatar', 'Koweït', 'Bahreïn', 'Oman', 'Yémen', 'Jordanie', 'Irak', 'Iran', 'Syrie', 'Liban', 'Palestine', 'Pakistan', 'Afghanistan', 'Bangladesh', 'Indonésie', 'Malaisie', 'Brunei', 'Maldives', 'Ouzbékistan', 'Turkménistan', 'Tadjikistan', 'Kirghizistan', 'Kazakhstan', 'Azerbaïdjan', 'Albanie', 'Kosovo', 'Bosnie-Herzégovine', 'Tchad', 'Burkina Faso', 'Sierra Leone', 'Nigeria'])
   const villeNonMusulmane = !PAYS_MAJORITE_MUSULMANE.has(String(ville.pays ?? ''))
   const halalScore = ville.halalScore ?? (ville.score_halal ? Math.round(ville.score_halal * 2 * 10) / 10 : null)
-  const restaurants = ville.restaurants ?? []
+  const [restosFull, setRestosFull] = useState<any[] | null>(null)
+  const restaurants = restosFull ?? ville.restaurants ?? []
+  const restaurantsTotal = ville.restaurantsTotal ?? restaurants.length
   const mosquees = ville.mosqueesPrincipales ?? []
   const hotels = ville.hotels ?? []
   const activites = ville.activites ?? []
@@ -173,7 +175,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const restosFiltres = halalOnly ? restosParCat.filter((r: any) => r.halalConfidence !== 'likely') : restosParCat
   const restosAffiches = restosFiltres.slice(0, visibleRestos)
-  const tabCounts: Record<string, number> = { restaurants: restaurants.length, mosquees: mosquees.length, hotels: hotels.length, activites: activites.length, pratique: 0 }
+  const tabCounts: Record<string, number> = { restaurants: restaurantsTotal, mosquees: mosquees.length, hotels: hotels.length, activites: activites.length, pratique: 0 }
 
   const pratiqueItems = [
     { icon: '✈️', label: 'Visa', value: ip.visa },
@@ -262,7 +264,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
           const facts = [
             halalScore != null ? { icon: '✦', txt: `${halalScore} HalalScore` } : null,
             mosquees.length > 0 ? { icon: '🕌', txt: en ? `${mosquees.length} mosques` : `${mosquees.length} mosquées` } : null,
-            restaurants.length > 0 ? { icon: '🍽', txt: en ? `${restaurants.length} reported halal` : `${restaurants.length} adresses signalées` } : null,
+            restaurantsTotal > 0 ? { icon: '🍽', txt: en ? `${restaurantsTotal} reported halal` : `${restaurantsTotal} adresses signalées` } : null,
             periode ? { icon: '🌤', txt: periode } : null,
             !villeNonMusulmane ? { icon: '🕌', txt: en ? 'Muslim-majority country' : 'Pays à majorité musulmane' } : null,
           ].filter(Boolean) as { icon: string; txt: string }[]
@@ -532,9 +534,15 @@ export default function VilleDesktop({ ville }: { ville: any }) {
                 cœur répondent d'abord ; la liste reste là pour ceux qui fouillent */}
             {restaurants.length > 0 && !showAllRestos && (
               <div style={{ textAlign: 'center', margin: '4px 0 10px' }}>
-                <button onClick={() => setShowAllRestos(true)}
+                <button onClick={() => {
+                  setShowAllRestos(true)
+                  if (!restosFull && restaurantsTotal > (ville.restaurants?.length ?? 0)) {
+                    fetch(`/api/villes/${ville.slug}/restos`).then((r) => r.json())
+                      .then((j) => { if (Array.isArray(j.restaurants)) setRestosFull(j.restaurants) }).catch(() => {})
+                  }
+                }}
                   style={{ padding: '14px 26px', borderRadius: 30, border: '1.5px solid var(--foret)', background: '#fff', color: 'var(--foret)', fontSize: 15, fontWeight: 800, cursor: 'pointer', minHeight: 52 }}>
-                  📂 {en ? `See all listings (${restaurants.length})` : `Voir toutes les adresses (${restaurants.length})`}
+                  📂 {en ? `See all listings (${restaurantsTotal})` : `Voir toutes les adresses (${restaurantsTotal})`}
                 </button>
                 <p style={{ fontSize: 12.5, color: 'var(--texte-2)', margin: '8px 0 0' }}>
                   {en ? 'Full OpenStreetMap directory — reported halal, to verify on site.' : 'Répertoire complet OpenStreetMap — signalé halal, à vérifier sur place.'}
