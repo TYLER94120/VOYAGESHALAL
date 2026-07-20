@@ -16,6 +16,7 @@ import FavButton from '@/components/ui/FavButton'
 import PlacePhoto from '@/components/ui/PlacePhoto'
 import { favId } from '@/lib/favorites'
 import { getCityGuide } from '@/lib/cityGuides'
+import GuideCarousel from '@/components/villes/GuideCarousel'
 
 // Sections guidées (refonte « Netflix » des fiches) — libellés orientés usage
 const TABS = [
@@ -240,35 +241,28 @@ export default function VilleDesktop({ ville }: { ville: any }) {
         </div>
       </div>
 
-      {/* 🧭 GUIDE ÉDITORIAL — « [Ville] pour un voyageur musulman » : un avis
-          concret + un mini-parcours 2-3 jours (répond à « qu'est-ce que je
-          fais ici ? » avant toute liste). Rédigé main, grandes villes only. */}
+      {/* 🧭 GUIDE VISUEL — 1 phrase forte + chips (pas de pavé), puis carrousel
+          photo « L'essentiel en 3 jours » (vraies photos de monuments). */}
       {(() => {
         const guide = getCityGuide(ville.slug)
         if (!guide) return null
+        const chip = { display: 'inline-flex', alignItems: 'center', gap: 7, background: '#fff', border: '1px solid rgba(27,67,50,0.15)', borderRadius: 999, padding: '9px 15px', fontSize: 14, fontWeight: 700, color: 'var(--foret)' } as const
         return (
-          <section style={{ maxWidth: WRAP, margin: '0 auto', padding: '26px 24px 0' }}>
-            <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: 24, fontWeight: 900, color: 'var(--nuit)', margin: '0 0 10px' }}>
-              🧭 {en ? `${ville.nom} for a Muslim traveler` : `${ville.nom} pour un voyageur musulman`}
+          <section style={{ maxWidth: WRAP, margin: '0 auto', padding: '24px 24px 0' }}>
+            <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: 'clamp(21px, 5.6vw, 26px)', fontWeight: 900, color: 'var(--nuit)', margin: '0 0 14px', lineHeight: 1.25 }}>
+              {en ? guide.hookEn : guide.hook}
             </h2>
-            <p style={{ fontSize: 15.5, color: 'var(--texte)', lineHeight: 1.75, background: '#fff', border: '1px solid rgba(27,67,50,0.1)', borderLeft: '4px solid var(--or)', borderRadius: 16, padding: '16px 18px', margin: '0 0 16px' }}>
-              {en ? guide.avisEn : guide.avis}
-            </p>
-            <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: 19, fontWeight: 800, color: 'var(--nuit)', margin: '0 0 10px' }}>
-              📅 {en ? `The essentials in ${guide.jours.length} days` : `L'essentiel en ${guide.jours.length} jours`}
-            </h3>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 12 }}>
-              {guide.jours.map((j, i) => (
-                <div key={i} style={{ background: '#fff', border: '1px solid rgba(27,67,50,0.1)', borderRadius: 16, padding: '15px 16px', boxShadow: '0 6px 20px rgba(11,26,15,0.05)' }}>
-                  <p style={{ fontWeight: 800, fontSize: 14.5, color: 'var(--foret)', margin: '0 0 9px' }}>{en ? j.titreEn : j.titre}</p>
-                  {j.etapes.map((e, k) => (
-                    <p key={k} style={{ fontSize: 13.5, color: 'var(--texte)', lineHeight: 1.55, margin: '0 0 7px', display: 'flex', gap: 8 }}>
-                      <span>{e.icon}</span><span>{en ? e.en : e.fr}</span>
-                    </p>
-                  ))}
-                </div>
+            {/* Chips : chaque info = 2-3 mots, jamais une phrase */}
+            <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 24 }}>
+              {halalScore != null && <span style={{ ...chip, background: 'rgba(201,168,76,0.14)', border: '1px solid rgba(201,168,76,0.5)', color: '#8A6D1E' }}>✦ {halalScore} HalalScore</span>}
+              {guide.chips.map((c, i) => (
+                <span key={i} style={chip}>{c.icon} {en ? c.en : c.fr}</span>
               ))}
             </div>
+            <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: 20, fontWeight: 900, color: 'var(--nuit)', margin: '0 0 12px' }}>
+              📅 {en ? `The essentials in ${guide.jours.length} days` : `L'essentiel en ${guide.jours.length} jours`}
+            </h3>
+            <GuideCarousel guide={guide} villeNom={ville.nom} en={en} />
           </section>
         )
       })()}

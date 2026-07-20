@@ -3,7 +3,6 @@
 // vignettes et écrit un mapping des URLs — la sélection finale est HUMAINE
 // (revue des planches-contact : cadrage, netteté, conformité identité).
 import { writeFileSync, mkdirSync } from 'node:fs'
-import { execSync } from 'node:child_process'
 
 const KEYS = [
   { key: 'istanbul-j1', q: 'Blue Mosque Istanbul exterior' },
@@ -54,7 +53,11 @@ for (const { key, q } of KEYS) {
   map[key] = { query: q, candidates: cands }
   for (let i = 0; i < cands.length; i++) {
     const dest = `guide-images/thumbs/${key}-${i}.jpg`
-    try { execSync(`curl -sL -A "${UA}" -o ${dest} "${cands[i].thumb}"`) } catch { /* skip */ }
+    try {
+      const resp = await fetch(cands[i].thumb, { headers: { 'User-Agent': UA } })
+      if (resp.ok) writeFileSync(dest, Buffer.from(await resp.arrayBuffer()))
+      else console.error('THUMB FAIL', key, i, resp.status)
+    } catch (e) { console.error('THUMB FAIL', key, i, e.message) }
   }
   console.log(key, cands.length, 'candidates')
 }
