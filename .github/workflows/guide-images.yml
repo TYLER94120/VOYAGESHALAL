@@ -1,0 +1,35 @@
+name: guide-images
+# Candidates Wikimedia Commons pour les photos des parcours 3 jours :
+# planches-contact numérotées committées sur la branche guide-images pour
+# revue humaine (cadrage + conformité identité). Manuel uniquement.
+
+on: workflow_dispatch
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch candidates + build contact sheets
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq imagemagick
+          node scripts/fetch-guide-images.mjs
+          cd guide-images/thumbs
+          for f in *.jpg; do
+            n="${f%.jpg}"
+            convert "$f" -resize 300x200^ -gravity center -extent 300x200 -gravity South -background white -splice 0x24 -pointsize 15 -annotate +0+3 "$n" "../lbl-$f" || true
+          done
+          cd ..
+          montage lbl-*.jpg -tile 4x -geometry +4+4 -background white sheet.jpg
+      - name: Commit to guide-images branch
+        run: |
+          git config user.name "guide-images-bot"
+          git config user.email "actions@github.com"
+          git checkout --orphan guide-images
+          git rm -rf --cached . >/dev/null 2>&1 || true
+          git add -f guide-images/map.json guide-images/sheet.jpg
+          git commit -m "Candidates Wikimedia pour les parcours 3 jours"
+          git push -f origin guide-images
