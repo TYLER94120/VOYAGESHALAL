@@ -44,6 +44,7 @@ export async function POST(request: NextRequest) {
       console.error('[OTP] Brevo a refusé l\'envoi', resp.status, (await resp.text()).slice(0, 300))
       return NextResponse.json({ error: 'L\'email n\'a pas pu être envoyé — réessayez ou utilisez « Continuer avec Google »' }, { status: 502 })
     }
+    console.log('[OTP] envoyé à', email, (await resp.text()).slice(0, 120))
   } catch (e) {
     console.error('[OTP] Brevo injoignable', e)
     return NextResponse.json({ error: 'L\'email n\'a pas pu être envoyé — réessayez ou utilisez « Continuer avec Google »' }, { status: 502 })

@@ -85,7 +85,7 @@ export default function AuthSheet({
             <div ref={googleBtn} style={{ display: 'flex', justifyContent: 'center', minHeight: 44, marginBottom: 14 }} />
             <div style={{ display: 'flex', alignItems: 'center', gap: 10, margin: '0 0 14px' }}>
               <span style={{ flex: 1, height: 1, background: 'rgba(27,67,50,0.15)' }} />
-              <span style={{ fontSize: 13, color: '#9ca3af' }}>{en ? 'or by email' : 'ou par email'}</span>
+              <span style={{ fontSize: 13, color: '#9ca3af' }}>{en ? 'or get a code by email' : 'ou reçois un code par email'}</span>
               <span style={{ flex: 1, height: 1, background: 'rgba(27,67,50,0.15)' }} />
             </div>
           </>

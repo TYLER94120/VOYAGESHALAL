@@ -18,6 +18,8 @@ jobs:
         run: |
           echo "── Accueil ──"
           curl -s -o /dev/null -w 'https://www.voyageshalal.fr/ → %{http_code}\n' https://www.voyageshalal.fr/
+          echo "── /api/admin/email-diag (état Brevo : compte, expéditeurs, envoi test) ──"
+          curl -s -w '\nstatus %{http_code}\n' https://www.voyageshalal.fr/api/admin/email-diag
           echo "── /api/auth/google (sans jeton → doit répondre 400/503, pas 404) ──"
           curl -s -w '\nstatus %{http_code}\n' -X POST https://www.voyageshalal.fr/api/auth/google -H 'Content-Type: application/json' -d '{}'
           if [ -n "${{ inputs.email }}" ]; then
