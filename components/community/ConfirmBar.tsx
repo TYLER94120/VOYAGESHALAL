@@ -8,7 +8,7 @@ import { useLanguage } from '@/components/i18n/LanguageProvider'
 export default function ConfirmBar({ spotId, confirmations }: { spotId: string; confirmations: number }) {
   const { lang } = useLanguage()
   const en = lang === 'en'
-  const { me, sendCode, verify } = useCommunity()
+  const { me, sendCode, verify, googleLogin } = useCommunity()
   const [n, setN] = useState(confirmations)
   const [msg, setMsg] = useState('')
   const [authOpen, setAuthOpen] = useState(false)
@@ -50,7 +50,7 @@ export default function ConfirmBar({ spotId, confirmations }: { spotId: string; 
       {msg && <p style={{ fontSize: 14, color: '#1b4332', marginTop: 10, fontWeight: 600 }}>{msg}</p>}
       <AuthSheet open={authOpen} onClose={() => setAuthOpen(false)}
         onDone={() => { setAuthOpen(false); if (pending) void doAction(pending) }}
-        sendCode={sendCode} verify={verify} en={en} />
+        sendCode={sendCode} verify={verify} googleLogin={googleLogin} en={en} />
     </div>
   )
 }

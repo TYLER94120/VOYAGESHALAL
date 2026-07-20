@@ -48,7 +48,15 @@ export function useCommunity() {
     await refresh()
     return j.user
   }
+  const googleLogin = async (credential: string) => {
+    const r = await fetch('/api/auth/google', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ credential }) })
+    const j = await r.json()
+    if (!r.ok) throw new Error(j.error || 'Connexion Google impossible')
+    try { localStorage.setItem(TOKEN_KEY, j.token) } catch { /* privé */ }
+    await refresh()
+    return j.user
+  }
   const logout = () => { try { localStorage.removeItem(TOKEN_KEY) } catch { /* noop */ } setMe(null) }
 
-  return { me, loaded, refresh, sendCode, verify, logout }
+  return { me, loaded, refresh, sendCode, verify, googleLogin, logout }
 }

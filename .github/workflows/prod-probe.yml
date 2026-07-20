@@ -1,0 +1,26 @@
+name: prod-probe
+# Sonde de prod : vérifie qu'un endpoint répond (ex. /api/auth/otp après la
+# refonte du login). Manuel uniquement.
+
+on:
+  workflow_dispatch:
+    inputs:
+      email:
+        description: 'Email de test pour /api/auth/otp (laisser vide pour ne pas tester l’envoi)'
+        required: false
+        default: ''
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Probe production
+        run: |
+          echo "── Accueil ──"
+          curl -s -o /dev/null -w 'https://www.voyageshalal.fr/ → %{http_code}\n' https://www.voyageshalal.fr/
+          echo "── /api/auth/google (sans jeton → doit répondre 400/503, pas 404) ──"
+          curl -s -w '\nstatus %{http_code}\n' -X POST https://www.voyageshalal.fr/api/auth/google -H 'Content-Type: application/json' -d '{}'
+          if [ -n "${{ inputs.email }}" ]; then
+            echo "── /api/auth/otp (envoi réel d'un code à ${{ inputs.email }}) ──"
+            curl -s -w '\nstatus %{http_code}\n' -X POST https://www.voyageshalal.fr/api/auth/otp -H 'Content-Type: application/json' -d '{"email":"${{ inputs.email }}"}'
+          fi

@@ -15,7 +15,7 @@ import { useLanguage } from '@/components/i18n/LanguageProvider'
 export default function AjouterClient() {
   const { lang } = useLanguage()
   const en = lang === 'en'
-  const { me, loaded, sendCode, verify, refresh } = useCommunity()
+  const { me, loaded, sendCode, verify, googleLogin, refresh } = useCommunity()
   const { pos, refineGps, geoLoading } = useInstantPosition(en)
   const [step, setStep] = useState(1)
   const [categorie, setCategorie] = useState('')
@@ -163,7 +163,7 @@ export default function AjouterClient() {
         </div>
       )}
 
-      <AuthSheet open={authOpen} onClose={() => setAuthOpen(false)} onDone={() => { setAuthOpen(false); void publier() }} sendCode={sendCode} verify={verify} en={en} />
+      <AuthSheet open={authOpen} onClose={() => setAuthOpen(false)} onDone={() => { setAuthOpen(false); void publier() }} sendCode={sendCode} verify={verify} googleLogin={googleLogin} en={en} />
       {done && <Celebration points={done.points} badges={done.badges} impact={done.impact} spotUrl={done.url} onClose={reset} en={en} />}
     </div>
   )

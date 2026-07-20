@@ -79,11 +79,12 @@ export default async function HomePage() {
   // Toutes les chaînes de l'accueil, bilingues selon le domaine (P0-1)
   const t = {
     heroEyebrow: isEN ? 'Travel with faith' : 'Voyagez avec foi',
-    heroTitlePre: isEN ? 'Islam guides your ' : "L'Islam guide votre ",
-    heroTitleGold: isEN ? 'journey' : 'voyage',
+    heroTitlePre: isEN ? 'Where to eat halal, where to pray — ' : 'Où manger halal, où prier — ',
+    heroTitleGold: isEN ? 'anywhere.' : 'partout.',
     heroSub: isEN
-      ? `Halal restaurants, mosques and prayer times in ${totalVilles}+ destinations — in one tap.`
-      : `Restaurants halal, mosquées et horaires de prière dans ${totalVilles}+ destinations — en un clic.`,
+      ? 'Prayer spots, halal restaurants and hidden gems — shared and verified by Muslim travelers, everywhere in the world.'
+      : 'Coins prière, restos halal et pépites — partagés et vérifiés par des voyageurs musulmans, partout dans le monde.',
+    heroCommunity: isEN ? '🤝 Join the community' : '🤝 Rejoins la communauté',
     qaDestinations: isEN ? 'Destinations' : 'Destinations',
     qaPrayer: isEN ? 'Prayer' : 'Horaires',
     qaBlog: 'Blog',
@@ -123,8 +124,8 @@ export default async function HomePage() {
       >
         {/* Image d'architecture islamique (sans personne) + voile sombre */}
         <Image
-          src="https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1920&q=80"
-          alt={isEN ? "Green dome of the Prophet's Mosque in Medina" : 'Dôme vert de la Mosquée du Prophète à Médine'}
+          src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1920&q=80"
+          alt={isEN ? 'Blue Mosque of Istanbul at sunset' : 'Mosquée Bleue d\'Istanbul au coucher du soleil'}
           fill
           priority
           sizes="100vw"
@@ -138,7 +139,7 @@ export default async function HomePage() {
             {t.heroEyebrow}
           </p>
           <h1
-            className="text-5xl sm:text-6xl lg:text-7xl text-white leading-[1.04] mb-7"
+            className="text-4xl sm:text-5xl lg:text-6xl text-white leading-[1.08] mb-7"
             style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 900 }}
           >
             {t.heroTitlePre}<span className="gold-em">{t.heroTitleGold}</span>
@@ -148,6 +149,19 @@ export default async function HomePage() {
           </p>
 
           <HomeHeroActions />
+
+          {/* Accès communauté dès le hero */}
+          <Link
+            href="/communaute"
+            style={{
+              display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 8,
+              minHeight: 56, padding: '0 26px', marginTop: 18, borderRadius: 999,
+              border: '1.5px solid rgba(201,168,76,0.6)', background: 'rgba(201,168,76,0.12)',
+              color: 'var(--creme)', fontWeight: 800, fontSize: 16, textDecoration: 'none',
+            }}
+          >
+            {t.heroCommunity}
+          </Link>
         </div>
       </section>
 
