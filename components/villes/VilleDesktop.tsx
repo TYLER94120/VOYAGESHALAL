@@ -263,7 +263,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
             <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: 20, fontWeight: 900, color: 'var(--nuit)', margin: '0 0 12px' }}>
               📅 {en ? `The essentials in ${guide.jours.length} days` : `L'essentiel en ${guide.jours.length} jours`}
             </h3>
-            <GuideCarousel guide={guide} villeNom={ville.nom} en={en} />
+            <GuideCarousel guide={guide} villeNom={ville.nom} heroImage={image} en={en} />
           </section>
         )
       })()}
