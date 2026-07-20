@@ -22,6 +22,18 @@ export function middleware(req: NextRequest) {
     return res
   }
 
+  // Anciens guides « où prier » remplacés par les nouveaux articles → 301
+  const OLD_PRIERE: Record<string, string> = {
+    '/guides/ou-prier-aeroport-guide': '/blog/ou-prier-aeroports',
+    '/blog/ou-prier-aeroport-guide': '/blog/ou-prier-aeroports',
+    '/guides/ou-prier-disneyland-paris': '/blog/ou-prier-disneyland-paris',
+  }
+  if (OLD_PRIERE[pathname]) {
+    const url = req.nextUrl.clone()
+    url.pathname = OLD_PRIERE[pathname]
+    return decorate(NextResponse.redirect(url, 301))
+  }
+
   // Ancien slug pays accentué (« thaïlande ») → 301 vers le slug ASCII
   if (decodeURIComponent(pathname) === '/destinations/pays/thaïlande') {
     const url = req.nextUrl.clone()

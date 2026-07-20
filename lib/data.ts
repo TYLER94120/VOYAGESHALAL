@@ -1234,47 +1234,7 @@ const guidesFr: Guide[] = [
 
 <p>Préparez votre séjour avec le <a href="/destinations/marrakech">guide halal de Marrakech</a>.</p>`,
   },
-  {
-    slug: 'ou-prier-aeroport-guide',
-    title: 'Où prier à l\'aéroport ? Salles de prière de Roissy CDG, Orly et des grands aéroports',
-    description: 'Salles de prière à Roissy CDG, Orly, Lyon, Marseille, Istanbul, Dubaï… : où prier à l\'aéroport, terminal par terminal, et comment faire quand il n\'y a pas de salle dédiée.',
-    coverImage: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&q=80',
-    category: 'Pratique',
-    readTime: '6 min',
-    publishedAt: '2026-03-20',
-    tags: ['Aéroport', 'Prière', 'CDG', 'Orly', 'Pratique'],
-    content: `<p>Prier à l\'aéroport est souvent plus simple qu\'on ne le croit : la plupart des grands hubs disposent de <strong>salles de prière ou espaces multiconfessionnels</strong>. Voici où les trouver — et quoi faire quand il n\'y en a pas.</p>
-<h2>Roissy Charles-de-Gaulle (CDG)</h2>
-<p>CDG dispose d\'espaces de prière et de lieux de culte dans plusieurs terminaux (notamment T1, T2E et T2F), généralement signalés « Espace prière / Lieu de culte » et accessibles côté embarquement. Des aumôneries musulmanes y assurent des permanences. Demandez au comptoir d\'information du terminal : le personnel vous orientera vers l\'espace le plus proche de votre porte.</p>
-<h2>Orly, Lyon, Marseille, Nice</h2>
-<p>Orly propose des espaces multiconfessionnels (zone publique et zone d\'embarquement). Lyon-Saint-Exupéry, Marseille-Provence et Nice disposent également de salles de recueillement. Le réflexe universel : chercher le pictogramme « lieu de culte » sur les plans du terminal ou demander à l\'accueil.</p>
-<h2>Les champions du monde : Istanbul, Dubaï, Doha</h2>
-<p>Dans les hubs des pays musulmans, des <strong>mescid</strong> (salles de prière) sont présents à chaque zone, hommes et femmes séparés, avec espaces d\'ablutions. À <a href="/destinations/istanbul">Istanbul</a>, <a href="/destinations/dubai">Dubaï</a> ou <a href="/destinations/doha">Doha</a>, vous n\'aurez jamais à chercher plus de deux minutes.</p>
-<h2>Pas de salle de prière ? Voici comment faire</h2>
-<p>Un coin calme près d\'une porte d\'embarquement peu fréquentée fait parfaitement l\'affaire : tapis de voyage, direction trouvée avec notre <a href="/qibla">boussole Qibla</a>, et horaires vérifiés sur <a href="/horaires-priere">nos horaires de prière</a>. En voyage, vous pouvez aussi regrouper Dhuhr-Asr et Maghrib-Isha (jam\' des voyageurs).</p>
-<h2>Partagez vos coins prière</h2>
-<p>Vous avez repéré une salle de prière dans un aéroport ? Elle aidera des milliers de voyageurs : consultez nos <a href="/autour-de-moi">spots partagés</a> sur la carte.</p>
-<h2>Gares : plus simple qu'on ne le croit</h2>
-<p>Les grandes gares européennes offrent rarement une salle de prière dédiée, mais toujours des solutions : à <strong>Paris Gare de Lyon ou Gare du Nord</strong>, les salons d'attente calmes et les mezzanines peu fréquentées font l'affaire pour une prière discrète ; la gare de <strong>Zurich</strong> dispose d'un espace de recueillement (« Raum der Stille »), comme plusieurs grandes gares allemandes (« Andachtsraum » — présence à vérifier gare par gare sur le plan affiché). En Turquie et dans le Golfe, les gares routières et ferroviaires ont presque toujours leur mescid signalé.</p>
-<h2>Centres commerciaux : le réflexe des pays musulmans… et des autres</h2>
-<p>Au Maroc, en Turquie, en Malaisie ou aux Émirats, <strong>chaque centre commercial a sa salle de prière</strong> (souvent au niveau parking ou à côté des sanitaires — demandez « musalla »). En Europe, c'est plus rare mais ça existe : le <strong>Westfield Stratford à Londres</strong> dispose d'une multi-faith room, et plusieurs centres britanniques suivent. En France, repli pragmatique : la prière regroupée avant/après la sortie shopping, ou un coin calme du parking.</p>
-<h2>Les 3 astuces qui changent tout</h2>
-<p>1) <strong>Repérez AVANT de partir</strong> : plan du terminal en ligne (cherchez « prayer room », « multi-faith », « lieu de culte »), et nos <a href="/destinations">fiches villes</a> pour les mosquées proches de votre point de chute. 2) <strong>Regroupez</strong> Dhuhr-Asr et Maghrib-Isha (jam' du voyageur) : deux créneaux à trouver au lieu de quatre. 3) <strong>Kit permanent</strong> dans le bagage cabine : tapis de poche, chaussettes propres, petite bouteille pour les ablutions.</p>
-<h2>Étiquette : ablutions et discrétion</h2>
-<p>Dans les sanitaires publics, faites les ablutions au lavabo avec discrétion (une bouteille remplie évite d'éclabousser) ; si l'eau est difficile d'accès, le <strong>tayammum</strong> (ablution sèche) est prévu pour ces situations. Pour la prière elle-même : un angle calme, face à la <a href="/qibla">Qibla</a>, sans bloquer le passage — deux minutes, personne n'y prête attention. Dans les espaces multiconfessionnels partagés, laissez le lieu propre et cédez la place aux heures d'affluence.</p>
-<h2>Check-list express avant chaque trajet</h2>
-<p>La veille : capture d'écran du plan du terminal avec la salle de prière entourée ; horaires de prière du lieu d'arrivée notés (ils diffèrent de chez vous) ; tapis de poche dans le bagage cabine, pas en soute. Le jour J : ablutions à la maison ou à l'hôtel avant de partir — elles tiennent des heures ; à l'escale, prière dès l'arrivée en zone de transit plutôt qu'à l'embarquement, quand tout le monde se lève. Et si l'horaire tombe pile pendant le contrôle sécurité : le regroupement (jam') existe précisément pour cela — aucune prière ne se joue à dix minutes près pour le voyageur.</p>
-<h2>Transit dans le Golfe ou à Istanbul : profitez-en</h2>
-<p>Une escale de 3 h à Istanbul, Doha ou Dubaï se transforme en pause spirituelle confortable : mescids spacieux avec ablutions séparées hommes/femmes à chaque zone, nourriture halal par défaut dans tout le terminal. Beaucoup de voyageurs choisissent volontairement ces hubs pour cette raison — à budget égal, l'escale « musulmane » change le confort du voyage. Comparez les itinéraires dans notre guide <a href="/guides/voyage-halal-petit-budget">petit budget</a>.</p>`,
-    faq: [
-      { q: "Peut-on prier dans un aéroport ?", a: "Oui. La plupart des grands aéroports disposent d'une salle de prière ou d'un espace multiconfessionnel (CDG, Orly, Heathrow, Istanbul, Dubaï…). À défaut, un coin calme près d'une porte d'embarquement convient parfaitement : la prière ne nécessite qu'un espace propre et la direction de la Qibla." },
-      { q: "Comment trouver la salle de prière d'un aéroport ?", a: "Consultez le plan du terminal en ligne avant le départ (mots-clés : prayer room, multi-faith room, lieu de culte), ou demandez au comptoir d'information. Le personnel connaît toujours l'emplacement." },
-      { q: "Que faire s'il n'y a pas d'eau pour les ablutions ?", a: "Utilisez le lavabo des sanitaires avec discrétion, ou une bouteille d'eau remplie à l'avance. En cas d'impossibilité réelle, le tayammum (ablution sèche sur une surface naturelle propre) est la solution prévue par la jurisprudence pour le voyageur." },
-      { q: "Peut-on regrouper les prières en voyage ?", a: "Oui, c'est une facilité établie : le voyageur peut regrouper Dhuhr avec Asr et Maghrib avec Isha (jam'), et raccourcir les prières de 4 unités à 2 (qasr). Utiliser ces facilités relève de la Sunna du voyageur." },
-      { q: "Y a-t-il des salles de prière dans les centres commerciaux en France ?", a: "C'est rare en France, contrairement au Maroc, à la Turquie ou à Londres (Westfield Stratford). Le réflexe pratique : regrouper les prières autour de la sortie, ou repérer la mosquée la plus proche avec notre outil dédié." }
-    ],
-  },
-  {
+    {
     slug: 'priere-avion-train-guide',
     title: 'Prière en avion et en train : comment faire, concrètement',
     description: 'Peut-on prier dans l\'avion ou le train ? Oui — assis, par gestes, en regroupant les prières. Le guide pratique du voyageur musulman, avec les règles de la prière du voyageur.',
@@ -1350,28 +1310,7 @@ const guidesFr: Guide[] = [
       { q: "Les konbini ont-ils des options halal ?", a: "Pas de label halal, mais des options sans viande sûres : onigiri au saumon ou à la prune, edamame, salades simples, fruits. Pratique pour dépanner entre deux vraies adresses halal." }
     ],
   },
-  {
-    slug: 'ou-prier-disneyland-paris',
-    title: 'Où prier à Disneyland Paris ? Le guide pratique des familles musulmanes',
-    description: 'Coin prière à Disneyland Paris : les solutions concrètes dans les parcs et les hôtels, manger halal sur place et à côté, et nos astuces de familles musulmanes.',
-    coverImage: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&q=80',
-    category: 'Pratique',
-    readTime: '5 min',
-    publishedAt: '2026-04-01',
-    tags: ['Disneyland Paris', 'Prière', 'Famille', 'Pratique'],
-    content: `<p>Journée magique aux parcs, mais une question revient chez toutes les familles musulmanes : <strong>où prier à Disneyland Paris ?</strong> Voici les solutions concrètes.</p>
-<h2>Dans les parcs : les solutions qui marchent</h2>
-<p>Disneyland Paris n\'a pas de salle de prière dédiée dans les parcs. Les familles utilisent : les <strong>espaces bébés (Baby Care Center)</strong> sur demande courtoise en heures creuses, les zones calmes et ombragées (jardins près du château, allées latérales de Discoveryland), ou un retour éclair à l\'hôtel si vous logez sur place. Tapis de poche + <a href="/qibla">boussole Qibla</a> : deux minutes suffisent.</p>
-<h2>Le bon réflexe : regrouper les prières</h2>
-<p>En déplacement, regroupez Dhuhr-Asr puis Maghrib-Isha (jam\' du voyageur) : deux pauses au lieu de quatre, aux heures où les files sont les plus longues — vos enfants ne perdront même pas une attraction. Horaires précis sur <a href="/horaires-priere">nos horaires de prière</a>.</p>
-<h2>À l\'hôtel</h2>
-<p>Dans les hôtels Disney et partenaires, priez tranquillement dans votre chambre. À la réception, demander « a quiet room for prayer » fonctionne souvent pour les prières du soir si votre chambre n\'est pas prête.</p>
-<h2>Manger halal à Disneyland Paris</h2>
-<p>Options simples dans les parcs : plats végétariens et poisson (vérifiez les cartes). Le Village (Disney Village) et Val d\'Europe à côté offrent plusieurs restaurants halal — et Paris n\'est qu\'à 35 minutes de RER : voir la fiche <a href="/destinations/paris">Paris</a>.</p>
-<h2>Vous avez trouvé un bon coin prière ?</h2>
-<p>Partagez-le : nos <a href="/autour-de-moi">spots partagés</a> aident les familles qui viendront après vous. 🤲</p>`,
-  },
-  {
+    {
     slug: 'voyage-halal-petit-budget',
     title: 'Voyage halal pas cher : les destinations et astuces petit budget (étudiants inclus)',
     description: 'Voyager halal avec un petit budget : les destinations les moins chères (Turquie, Maroc, Balkans, Malaisie), astuces transport/hébergement et budgets réels par jour.',
