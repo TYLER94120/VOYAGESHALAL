@@ -5,6 +5,7 @@ import { buildMetadata } from '@/lib/seo'
 import IslamicPattern from '@/components/ui/IslamicPattern'
 import BlogClient, { type BlogCard } from '@/components/blog/BlogClient'
 import { getDomainSEO } from '@/lib/domain'
+import { updatedAtOf } from '@/lib/freshness'
 
 export async function generateMetadata(): Promise<Metadata> {
   const { isEN } = await getDomainSEO()
@@ -24,7 +25,9 @@ export default async function BlogPage() {
   // On n'affiche que les articles rédigés dans la langue du domaine.
   // Les guides existants sont en français → masqués sur le domaine EN.
   const domainPosts = blogPosts.filter((p) => (p.lang ?? 'fr') === (isEN ? 'en' : 'fr'))
-  const domainGuides = isEN ? [] : guides
+  // Chaque domaine ne voit QUE ses guides : catégories FR sur le site FR,
+  // EN sur gohalaltravel — aucun mélange de langues.
+  const domainGuides = guides.filter((g) => (g.lang ?? 'fr') === (isEN ? 'en' : 'fr'))
   const articles: BlogCard[] = [
     ...domainGuides.map((g) => ({
       slug: g.slug,
@@ -34,6 +37,7 @@ export default async function BlogPage() {
       category: g.category,
       readTime: g.readTime,
       publishedAt: g.publishedAt,
+      updatedAt: updatedAtOf(g),
       coverImage: g.coverImage,
     })),
     ...domainPosts.map((p) => ({
@@ -44,9 +48,11 @@ export default async function BlogPage() {
       category: p.category,
       readTime: p.readTime,
       publishedAt: p.publishedAt,
+      updatedAt: updatedAtOf(p),
       coverImage: p.coverImage,
     })),
-  ].sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
+    // Tri par « récemment mis à jour » — le blog ne paraît jamais périmé
+  ].sort((a, b) => new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime())
 
   return (
     <main style={{ backgroundColor: '#fdfaf3' }} className="min-h-screen">

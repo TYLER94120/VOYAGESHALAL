@@ -12,6 +12,7 @@ export interface BlogCard {
   category: string
   readTime: string
   publishedAt: string
+  updatedAt?: string
   coverImage?: string
 }
 
@@ -77,11 +78,13 @@ export default function BlogClient({ articles }: Props) {
               </div>
             </div>
             <div className="flex flex-col flex-1 p-5">
-              <div className="flex items-center gap-2 text-xs text-gray-400 mb-2">
+              <div className="flex items-center gap-2 text-xs text-gray-400 mb-2 flex-wrap">
                 <span>⏱ {item.readTime}</span>
                 <span>·</span>
-                <span>
-                  {new Date(item.publishedAt).toLocaleDateString('fr-FR', { month: 'long', year: 'numeric' })}
+                {/* Fraîcheur : « Mis à jour » visible sur chaque carte */}
+                <span className="font-semibold" style={{ color: '#1a6b3c' }}>
+                  ✓ {en ? 'Updated' : 'Mis à jour'}{' '}
+                  {new Date(item.updatedAt ?? item.publishedAt).toLocaleDateString(en ? 'en-US' : 'fr-FR', { month: 'long', year: 'numeric' })}
                 </span>
               </div>
               <h2

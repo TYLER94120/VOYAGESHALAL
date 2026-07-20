@@ -7,6 +7,8 @@ import JsonLd from '@/components/seo/JsonLd'
 import EmailCapture from '@/components/ui/EmailCapture'
 import { ShareButtons } from '@/components/ShareButtons'
 import { getDomainSEO, FR_URL, EN_URL } from '@/lib/domain'
+import { updatedAtOf, fmtMonthYear, cityOfArticle } from '@/lib/freshness'
+import CommunityCTA from '@/components/blog/CommunityCTA'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -95,7 +97,11 @@ export default async function BlogPostPage({ params }: Props) {
               <span className="text-gray-400 text-xs">⏱ {post.readTime} {L.read}</span>
               <span className="text-gray-300 text-xs">·</span>
               <span className="text-gray-400 text-xs">
-                {new Date(post.publishedAt).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })}
+                {isEN ? 'Published' : 'Publié'} {fmtMonthYear(post.publishedAt, isEN)}
+              </span>
+              <span className="text-gray-300 text-xs">·</span>
+              <span className="text-xs font-semibold" style={{ color: '#1a6b3c' }}>
+                ✓ {isEN ? 'Updated' : 'Mis à jour'} {fmtMonthYear(updatedAtOf(post), isEN)}
               </span>
             </div>
             <h1
@@ -157,6 +163,8 @@ export default async function BlogPostPage({ params }: Props) {
               ))}
             </div>
           </div>
+          {/* Le blog nourrit la communauté — CTA sur CHAQUE article */}
+          <CommunityCTA en={isEN} city={cityOfArticle(post)} />
         </div>
 
         {/* Email capture */}

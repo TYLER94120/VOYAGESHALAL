@@ -7,6 +7,8 @@ import { buildMetadata, buildArticleSchema, buildBreadcrumbSchema, buildFAQSchem
 import JsonLd from '@/components/seo/JsonLd'
 import AppCTA from '@/components/ui/AppCTA'
 import EmailCapture from '@/components/ui/EmailCapture'
+import { updatedAtOf, fmtMonthYear, cityOfArticle } from '@/lib/freshness'
+import CommunityCTA from '@/components/blog/CommunityCTA'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -72,9 +74,10 @@ export default async function GuidePage({ params }: Props) {
             </span>
             <span className="text-gray-400 text-sm">⏱ {guide.readTime}</span>
             <span className="text-gray-400 text-sm">
-              {new Date(guide.publishedAt).toLocaleDateString('fr-FR', {
-                year: 'numeric', month: 'long', day: 'numeric',
-              })}
+              {isEN ? 'Published' : 'Publié'} {fmtMonthYear(guide.publishedAt, isEN)}
+            </span>
+            <span className="text-sm font-semibold" style={{ color: '#1a6b3c' }}>
+              ✓ {isEN ? 'Updated' : 'Mis à jour'} {fmtMonthYear(updatedAtOf(guide), isEN)}
             </span>
           </div>
           <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight mb-4">
@@ -136,6 +139,9 @@ export default async function GuidePage({ params }: Props) {
             </section>
           )
         })()}
+
+        {/* Le blog nourrit la communauté — CTA sur CHAQUE guide */}
+        <CommunityCTA en={isEN} city={cityOfArticle(guide)} />
 
         <div className="mt-12">
           <EmailCapture compact source="guide" />
