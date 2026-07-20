@@ -97,18 +97,19 @@ jobs:
               body = re.sub(r'<[^>]*(?:footer-nav|search-ideas)[^>]*>[\s\S]{0,4000}?</(?:div|section|ul)>', ' ', body)
               if NEG.search(body):
                   continue  # l'hôtel dit explicitement NE PAS avoir d'espace femmes
-              hits = set()
-              for m in MARKERS.finditer(body):
-                  a = max(0, m.start()-90); b = min(len(body), m.end()+90)
-                  frag = re.sub(r'<[^>]+>', ' ', body[a:b]); frag = re.sub(r'\s+', ' ', frag).strip()
-                  if 'footer' in frag.lower() or 'hotels with' in frag.lower():
-                      continue
-                  hits.add(frag[:160])
-              if not hits:
+              # SIGNAL FIABLE : les codes d'équipement dans l'état sérialisé de la
+              # page (« pool-ladies-only », « Beach • ladies-only »…) — le glossaire
+              # générique (« Only female guests… ») est ignoré.
+              feats = set()
+              for m in re.finditer(r'(?:Pool|Beach|Spa|Wellness[ &]*Spa)[^"\]]{0,60}ladies-only[^"\]]{0,40}', body, re.I):
+                  feats.add(re.sub(r'\s+', ' ', m.group(0)).strip()[:120])
+              for m in re.finditer(r'"(?:pool|beach|spa|wellness)-ladies[a-z-]*"', body, re.I):
+                  feats.add(m.group(0).strip('"'))
+              if not feats:
                   continue
               t = re.search(r'<title>([^<]+)</title>', html)
-              disc.append({"url": u, "title": (t.group(1).strip() if t else ''), "evidence": sorted(hits)[:6]})
-              print('DISC', u)
+              disc.append({"url": u, "title": (t.group(1).strip() if t else ''), "evidence": sorted(feats)[:8]})
+              print('DISC', u, '|', len(feats))
           json.dump(disc, open('hb-audit/discovery.json', 'w'), ensure_ascii=False, indent=1)
           print('découvertes avec preuves positives:', len(disc))
           PY
