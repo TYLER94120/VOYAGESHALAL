@@ -21,7 +21,12 @@ jobs:
           echo "── couvertures blog ──"
           for k in aeroports cdg orly marseille disneyland; do
             curl -s -o /dev/null -w "blog-$k.jpg → %{http_code}\n" "https://www.voyageshalal.fr/guides/blog-$k.jpg"
+            curl -s -o /dev/null -w "  optimiseur → %{http_code}\n" "https://www.voyageshalal.fr/_next/image?url=%2Fguides%2Fblog-$k.jpg&w=1200&q=75"
           done
+          echo "── la page /blog référence-t-elle les couvertures ? ──"
+          curl -s https://www.voyageshalal.fr/blog | grep -o 'guides%2Fblog-[a-z]*\.jpg\|/guides/blog-[a-z]*\.jpg' | sort | uniq -c
+          echo "── srcs d'images réellement présents sur les 5 cartes ──"
+          curl -s https://www.voyageshalal.fr/blog | grep -o '<img[^>]*ou-prier[^>]*>' | head -3
           echo "── /api/admin/email-diag (état Brevo : compte, expéditeurs, envoi test) ──"
           curl -s -w '\nstatus %{http_code}\n' https://www.voyageshalal.fr/api/admin/email-diag
           echo "── /api/auth/google (sans jeton → doit répondre 400/503, pas 404) ──"
