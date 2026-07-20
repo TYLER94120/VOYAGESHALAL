@@ -18,6 +18,10 @@ jobs:
         run: |
           echo "── Accueil ──"
           curl -s -o /dev/null -w 'https://www.voyageshalal.fr/ → %{http_code}\n' https://www.voyageshalal.fr/
+          echo "── couvertures blog ──"
+          for k in aeroports cdg orly marseille disneyland; do
+            curl -s -o /dev/null -w "blog-$k.jpg → %{http_code}\n" "https://www.voyageshalal.fr/guides/blog-$k.jpg"
+          done
           echo "── /api/admin/email-diag (état Brevo : compte, expéditeurs, envoi test) ──"
           curl -s -w '\nstatus %{http_code}\n' https://www.voyageshalal.fr/api/admin/email-diag
           echo "── /api/auth/google (sans jeton → doit répondre 400/503, pas 404) ──"
