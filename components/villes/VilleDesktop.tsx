@@ -254,7 +254,29 @@ export default function VilleDesktop({ ville }: { ville: any }) {
           photo « L'essentiel en 3 jours » (vraies photos de monuments). */}
       {(() => {
         const guide = guideVille
-        if (!guide) return null
+        // Villes sans guide rédigé : « En bref » COURT, uniquement des faits
+        // réels (compteurs OSM, score, période) — zéro remplissage inventé.
+        if (!guide) {
+          const chip = { display: 'inline-flex', alignItems: 'center', gap: 7, background: '#fff', border: '1px solid rgba(27,67,50,0.15)', borderRadius: 999, padding: '9px 15px', fontSize: 14, fontWeight: 700, color: 'var(--foret)' } as const
+          const periode = ville.meilleureEpoque || legacyIp.meilleure_periode
+          const facts = [
+            halalScore != null ? { icon: '✦', txt: `${halalScore} HalalScore` } : null,
+            mosquees.length > 0 ? { icon: '🕌', txt: en ? `${mosquees.length} mosques` : `${mosquees.length} mosquées` } : null,
+            restaurants.length > 0 ? { icon: '🍽', txt: en ? `${restaurants.length} reported halal` : `${restaurants.length} adresses signalées` } : null,
+            periode ? { icon: '🌤', txt: periode } : null,
+            !villeNonMusulmane ? { icon: '🕌', txt: en ? 'Muslim-majority country' : 'Pays à majorité musulmane' } : null,
+          ].filter(Boolean) as { icon: string; txt: string }[]
+          if (facts.length < 2) return null
+          return (
+            <section style={{ maxWidth: WRAP, margin: '0 auto', padding: '24px 24px 0' }}>
+              <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+                {facts.map((f, i) => (
+                  <span key={i} style={i === 0 && halalScore != null ? { ...chip, background: 'rgba(201,168,76,0.14)', border: '1px solid rgba(201,168,76,0.5)', color: '#8A6D1E' } : chip}>{f.icon} {f.txt}</span>
+                ))}
+              </div>
+            </section>
+          )
+        }
         const chip = { display: 'inline-flex', alignItems: 'center', gap: 7, background: '#fff', border: '1px solid rgba(27,67,50,0.15)', borderRadius: 999, padding: '9px 15px', fontSize: 14, fontWeight: 700, color: 'var(--foret)' } as const
         return (
           <section style={{ maxWidth: WRAP, margin: '0 auto', padding: '24px 24px 0' }}>
@@ -323,6 +345,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
 
       {/* 🏊 ESPACES FEMMES & FAMILLE — le différenciateur. Données vérifiées
           HalalBooking uniquement ; sinon invitation communauté (jamais de faux). */}
+      {espacesFemmes.length > 0 && (
       <section id="sec-femmes" style={{ maxWidth: WRAP, margin: '0 auto', padding: '26px 24px 0', scrollMarginTop: 12 }}>
         <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: 24, fontWeight: 900, color: 'var(--nuit)', margin: '0 0 6px' }}>
           🏊 {en ? 'Women & family spaces' : 'Espaces femmes & famille'}
@@ -351,22 +374,9 @@ export default function VilleDesktop({ ville }: { ville: any }) {
               </div>
             ))}
           </div>
-        ) : (
-          <div style={{ background: '#fff', border: '1px dashed rgba(27,67,50,0.3)', borderRadius: 18, padding: '22px 20px', textAlign: 'center' }}>
-            <p style={{ fontSize: 15, color: 'var(--texte)', fontWeight: 600, margin: '0 0 4px' }}>
-              {en ? 'Selection in progress for ' : 'Sélection en cours pour '}{ville.nom}.
-            </p>
-            <p style={{ fontSize: 13.5, color: 'var(--texte-2)', margin: '0 0 14px', lineHeight: 1.6 }}>
-              {en
-                ? 'We only list verified women-only or private spaces — never guessed ones.'
-                : 'Nous ne listons que des espaces femmes ou privatifs vérifiés — jamais supposés.'}
-            </p>
-            <a href={`/communaute/ajouter?ville=${ville.slug ?? ''}`} style={{ display: 'inline-block', padding: '12px 22px', borderRadius: 999, background: 'var(--or)', color: '#0b1a0f', fontWeight: 800, fontSize: 14, textDecoration: 'none' }}>
-              🤲 {en ? 'Know a women/private space here? Share it' : 'Tu connais un espace femmes/privé ici ? Partage-le'}
-            </a>
-          </div>
-        )}
+        ) : null}
       </section>
+      )}
 
       {/* 🔥 Les incontournables — top mixte CURÉ (profondeur réelle), scroll horizontal */}
       {incontournables.length >= 3 && (
