@@ -1508,6 +1508,123 @@ export const guides: Guide[] = [...guidesFr, ...guidesEn]
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "ou-prier-aeroports",
+    title: "Où prier dans un aéroport : le guide complet (2026)",
+    description: "Prendre l'avion ne devrait jamais t'obliger à sauter une prière. La plupart des grands aéroports disposent d'une salle de prière ou d'un espace de recueillement — encore faut-il savoir où le trouver.",
+    coverImage: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1200&q=80",
+    category: 'Pratique',
+    readTime: "6 min",
+    publishedAt: '2026-07-20',
+    tags: ["Aéroports", "Prière", "Voyage"],
+    content: `<p>Prendre l'avion ne devrait jamais t'obliger à sauter une prière. La plupart des grands aéroports disposent aujourd'hui d'une salle de prière ou d'un espace de recueillement multiconfessionnel — encore faut-il savoir où le trouver. Ce guide explique comment prier sereinement en aéroport, et renvoie vers nos fiches détaillées aéroport par aéroport.</p>
+<h2>L'essentiel en 30 secondes</h2>
+<p>La plupart des aéroports proposent une des trois options : un espace multiconfessionnel (souvent avec un coin musulman et un espace d'ablutions), une salle de prière musulmane dédiée, ou — quand rien n'est prévu — un coin calme où prier discrètement. Réflexe simple : repérer le pictogramme « lieu de culte / prière » sur les plans, ou demander à un agent « où est l'espace de recueillement ? ».</p>
+<h2>Avant / après les contrôles de sécurité</h2>
+<p>Certains espaces sont côté ville (avant les contrôles), d'autres en zone d'embarquement (après). Si ton vol est dans l'heure, privilégie un espace après la sécurité, dans ta zone de départ. Nos fiches précisent à chaque fois de quel côté se trouve chaque salle.</p>
+<h2>Les ablutions : la vraie difficulté</h2>
+<p>Trouver de l'eau est souvent plus dur que trouver un tapis. Trois solutions : les espaces récents intègrent un coin ablutions ; sinon les toilettes font l'affaire avec discrétion ; enfin garder un petit nécessaire sur soi simplifie tout. Le tayammoum (ablution sèche) reste une option reconnue en cas d'impossibilité réelle.</p>
+<h2>Prier à l'heure quand on voyage</h2>
+<p>Le voyageur (musâfir) peut raccourcir les prières de 4 à 2 rakats, et regrouper dhuhr avec asr, maghrib avec isha. Pense à vérifier la qibla (<a href="/qibla">notre outil qibla</a> t'aide) ; beaucoup d'espaces l'indiquent déjà.</p>
+<h2>Nos guides par aéroport</h2>
+<ul>
+<li><a href="/blog/ou-prier-aeroport-cdg">Où prier à l'aéroport de Paris-CDG</a></li>
+<li><a href="/blog/ou-prier-aeroport-orly">Où prier à l'aéroport de Paris-Orly</a></li>
+<li><a href="/blog/ou-prier-aeroport-marseille">Où prier à l'aéroport de Marseille-Provence</a></li>
+<li><a href="/blog/ou-prier-disneyland-paris">Où prier à Disneyland Paris</a></li>
+</ul>
+<p>(D'autres arrivent : Lyon, Nice, Toulouse, Genève, Bruxelles…)</p>
+<h2>Aide la communauté</h2><p>Tu as trouvé un coin prière dans un aéroport, une gare, un centre commercial ? Partage-le : chaque spot aide des dizaines de frères et sœurs à prier en voyage — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
+  },
+  {
+    slug: "ou-prier-aeroport-cdg",
+    title: "Où prier à l'aéroport de Paris-Charles de Gaulle (CDG) — guide 2026",
+    description: "Tu transites par Roissy ? Paris-CDG dispose de plusieurs espaces de prière entre les terminaux 1, 2E et 2F, avec un coin musulman et des ablutions. Voici où les trouver.",
+    coverImage: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1200&q=80",
+    category: 'Pratique',
+    readTime: "4 min",
+    publishedAt: '2026-07-20',
+    tags: ["CDG", "Paris", "Aéroports", "Prière"],
+    content: `<p>Tu transites par Roissy et tu cherches où prier à l'aéroport CDG ? Paris-Charles de Gaulle dispose de plusieurs espaces de prière, répartis entre les terminaux 1, 2E et 2F, avec un coin musulman et des ablutions. Voici où les trouver.</p>
+<h2>L'essentiel en 30 secondes</h2>
+<p>CDG compte trois zones de recueillement : un espace multiconfessionnel moderne au Terminal 1, plus des espaces aux Terminaux 2E et 2F. Chacun regroupe un espace musulman, une chapelle et une synagogue. Accès gratuit.</p>
+<h2>Terminal 1 — le nouvel espace de prière</h2>
+<p>Inauguré en 2023, le plus récent. Niveau 2, en zone d'embarquement internationale (après les contrôles), près du McDonald's et du Paul. Il réunit un espace mosquée, une synagogue et une chapelle. Atout : un espace pour les ablutions et des toilettes à proximité.</p>
+<h2>Terminal 2E — en zone de transit</h2>
+<p>Un espace de prière est accessible en zone de transit, généralement côté porte L, niveau 2. Pratique pour les long-courriers de ce terminal.</p>
+<h2>Terminal 2F — au niveau des arrivées</h2>
+<p>Un espace de recueillement au niveau des arrivées. Utile pour prier avant de récupérer tes bagages.</p>
+<h2>Conseils pratiques</h2>
+<p>Vérifie de quel côté de la sécurité tu es. Si tu es serré, un coin calme près de ta porte suffit (prière du voyageur raccourcie et regroupée). Garde un nécessaire d'ablutions ; utilise <a href="/qibla">notre outil qibla</a>. Voir aussi <a href="/blog/ou-prier-aeroports">notre guide complet des aéroports</a>.</p>
+<h2>Questions fréquentes</h2>
+<p><strong>Y a-t-il une salle de prière musulmane à CDG ?</strong> Oui, plusieurs espaces (Terminaux 1, 2E, 2F).<br/><strong>Peut-on faire les ablutions ?</strong> Oui, coin ablutions au Terminal 1 ; sinon les toilettes.<br/><strong>L'accès est-il gratuit ?</strong> Oui.</p>
+<h2>Aide la communauté</h2><p>Tu as trouvé un coin prière ou noté un changement à Roissy ? Partage-le : chaque spot aide des dizaines de frères et sœurs à prier en voyage — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
+  },
+  {
+    slug: "ou-prier-aeroport-orly",
+    title: "Où prier à l'aéroport de Paris-Orly — guide 2026",
+    description: "Orly dispose de salles de prière et d'espaces de recueillement, dont une salle de prière musulmane avec espaces séparés hommes / femmes. Voici où les trouver.",
+    coverImage: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1200&q=80",
+    category: 'Pratique',
+    readTime: "4 min",
+    publishedAt: '2026-07-20',
+    tags: ["Orly", "Paris", "Aéroports", "Prière"],
+    content: `<p>Tu voyages depuis Orly ? L'aéroport dispose de salles de prière et d'espaces de recueillement, dont une salle de prière musulmane avec espaces séparés hommes / femmes. Voici où les trouver.</p>
+<h2>L'essentiel en 30 secondes</h2>
+<p>À Orly, tu peux prier dans une chapelle, une synagogue ou une salle de prière musulmane, réparties sur Orly 1, 2 et 4. Un espace multiconfessionnel est généralement ouvert de 7h00 à 22h00.</p>
+<h2>La salle de prière musulmane (Orly 4 / ex-Orly Sud)</h2>
+<p>La référence : niveau -1 du terminal Sud (Orly 4). Elle accueille une cinquantaine de personnes, séparée en deux (hommes / femmes).</p>
+<h2>La chapelle (Orly 4)</h2>
+<p>Au second niveau du hall d'Orly 4 (ex-Orly Sud), parmi les lieux de culte historiques de l'aéroport.</p>
+<h2>Orly 1 et 2</h2>
+<p>Des espaces de recueillement existent aussi côté Orly 1 et 2. Suis la signalétique « lieu de culte » ou demande à un agent.</p>
+<h2>Conseils pratiques</h2>
+<p>Vérifie l'horaire (fermeture vers 22h) : pour un vol de nuit, prie avant. Repère si l'espace est avant ou après les contrôles. En urgence, un coin calme suffit (prière raccourcie et regroupée). Utilise <a href="/qibla">notre outil qibla</a>. Voir aussi <a href="/blog/ou-prier-aeroports">notre guide complet des aéroports</a>.</p>
+<h2>Questions fréquentes</h2>
+<p><strong>Salle de prière musulmane à Orly ?</strong> Oui, niveau -1 du terminal Sud (Orly 4).<br/><strong>Horaires ?</strong> Espace multiconfessionnel généralement 7h-22h.<br/><strong>Gratuit ?</strong> Oui.</p>
+<h2>Aide la communauté</h2><p>Tu as trouvé un coin prière avec les travaux d'Orly, un bon coin prière ? Partage-le : chaque spot aide des dizaines de frères et sœurs à prier en voyage — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
+  },
+  {
+    slug: "ou-prier-aeroport-marseille",
+    title: "Où prier à l'aéroport de Marseille-Provence — guide 2026",
+    description: "Soyons honnêtes : à ce jour, l'aéroport de Marseille-Provence (Marignane) ne dispose pas d'un espace de prière dédié. Voici comment prier quand même sur place.",
+    coverImage: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1200&q=80",
+    category: 'Pratique',
+    readTime: "3 min",
+    publishedAt: '2026-07-20',
+    tags: ["Marseille", "Aéroports", "Prière"],
+    content: `<p>Tu pars de Marseille et tu cherches une salle de prière à l'aéroport Marseille-Provence ? Soyons honnêtes : à ce jour, l'aéroport de Marseille-Provence (Marignane) ne dispose pas d'un espace de prière dédié, contrairement à Paris-CDG, Orly, Lyon ou Nice. Voici comment prier quand même sur place.</p>
+<h2>L'essentiel en 30 secondes</h2>
+<p>Pas de salle officielle à Marseille-Provence pour l'instant. Solution : prier discrètement dans un coin calme, en profitant des facilités du voyageur (prière raccourcie et regroupée).</p>
+<h2>Nos conseils pour prier à Marseille-Provence</h2>
+<p>Repère un coin tranquille (bout de jetée, baie vitrée peu fréquentée), pose une veste ou un tapis, oriente-toi vers la qibla (<a href="/qibla">notre outil qibla</a>). Anticipe les ablutions aux toilettes ; garde un petit nécessaire ; le tayammoum reste une option en cas d'impossibilité. Utilise les facilités du voyageur (raccourcir/regrouper). Si tu as le temps, plusieurs mosquées existent autour de Marignane : prier avant de partir ou après l'atterrissage est parfois plus serein.</p>
+<h2>Questions fréquentes</h2>
+<p><strong>Y a-t-il une salle de prière à l'aéroport de Marseille ?</strong> À ce jour, non.<br/><strong>Comment prier alors ?</strong> Dans un coin calme, avec la prière du voyageur et les ablutions aux toilettes.<br/><strong>Ça peut changer ?</strong> Oui — signale-nous toute ouverture.</p>
+<p>Voir aussi <a href="/blog/ou-prier-aeroports">notre guide complet des aéroports</a>.</p>
+<h2>Aide la communauté</h2>
+<p>C'est quand il n'y a pas de salle officielle que ton aide compte le plus. Tu connais un coin discret, une salle qui aurait ouvert, une mosquée proche ? Partage-le — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
+  },
+  {
+    slug: "ou-prier-disneyland-paris",
+    title: "Où prier à Disneyland Paris — guide 2026",
+    description: "Le parc met à disposition un espace calme et discret, accessible sur simple demande au City Hall. Voici comment y accéder, étape par étape.",
+    coverImage: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1200&q=80",
+    category: 'Pratique',
+    readTime: "3 min",
+    publishedAt: '2026-07-20',
+    tags: ["Disneyland", "Paris", "Famille", "Prière"],
+    content: `<p>Tu passes une journée à Disneyland Paris et tu te demandes où prier ? Le parc met à disposition un espace calme et discret, accessible sur simple demande. Voici comment y accéder.</p>
+<h2>L'essentiel en 30 secondes</h2>
+<p>Une salle discrète et calme est mise à disposition au City Hall, à l'entrée du parc Disneyland. Il suffit de s'adresser à un Cast Member pour y accéder.</p>
+<h2>Comment y accéder, étape par étape</h2>
+<p>Le City Hall se situe directement sur ta gauche après les portes d'entrée du parc Disneyland (Main Street). Entre, va au bureau d'accueil, et demande un endroit approprié pour prier. Le personnel te guidera. Gratuit, et l'accueil est habitué à ce type de demande.</p>
+<h2>Conseils pratiques</h2>
+<p>Anticipe selon les heures de prière (<a href="/horaires-priere">notre outil horaires</a> t'aide), surtout dhuhr et asr. Pense aux ablutions aux toilettes. Utilise les facilités du voyageur (raccourcir/regrouper). Selon l'affluence, le personnel peut orienter vers un autre endroit calme. Voir aussi <a href="/blog/ou-prier-aeroports">notre guide des aéroports</a>.</p>
+<h2>Questions fréquentes</h2>
+<p><strong>Salle de prière à Disneyland Paris ?</strong> Un espace calme via le City Hall, sur demande à un Cast Member.<br/><strong>Gratuit ?</strong> Oui.<br/><strong>Et aux Walt Disney Studios ?</strong> Adresse-toi au Studio Services.</p>
+<h2>Aide la communauté</h2>
+<p>Tu as prié à Disneyland récemment, on t'a indiqué un endroit précis ? Partage-le — tu aideras des dizaines de familles, une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
+  },
+  {
     slug: 'meilleurs-hotels-halal-istanbul',
     title: 'Les 10 meilleurs hôtels halal-friendly à Istanbul en 2026',
     description:

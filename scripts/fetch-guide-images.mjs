@@ -54,6 +54,12 @@ const KEYS = [
   { key: 'new-york-j1', q: 'Times Square New York' },
   { key: 'new-york-j2', q: 'Statue of Liberty' },
   { key: 'new-york-j3', q: 'Brooklyn Bridge DUMBO' },
+  // Couvertures blog « où prier » (revue humaine comme le reste)
+  { key: 'blog-aeroports', q: 'airport terminal departures hall' },
+  { key: 'blog-cdg', q: 'Charles de Gaulle Airport Terminal 1' },
+  { key: 'blog-orly', q: 'Paris Orly Airport terminal' },
+  { key: 'blog-marseille', q: 'Marseille Provence Airport' },
+  { key: 'blog-disneyland', q: 'Disneyland Paris Sleeping Beauty Castle' },
 ]
 
 const UA = 'VoyagesHalal-guide-images/1.0 (contact@voyageshalal.fr)'
