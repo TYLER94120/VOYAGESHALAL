@@ -163,7 +163,8 @@ export default function VilleDesktop({ ville }: { ville: any }) {
   ]
   const incoRestoNames = new Set(coupsDeCoeur.slice(0, 2).map((r: any) => normName(r.nom)))
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const ccDisplay = coupsDeCoeur.filter((r: any) => !incoRestoNames.has(normName(r.nom))).slice(0, 10)
+  // 3-4 coups de cœur MAX par défaut — le reste vit dans la liste compacte repliée
+  const ccDisplay = coupsDeCoeur.filter((r: any) => !incoRestoNames.has(normName(r.nom))).slice(0, 4)
 
   const restosParCat = activeFilter === 'Tous' ? restaurants : restaurants.filter((r: any) => cuisineCategory(r.type) === activeFilter)
   // « Signalé halal » = pas marqué « à vérifier » (halalConfidence 'likely')
@@ -406,6 +407,21 @@ export default function VilleDesktop({ ville }: { ville: any }) {
                   ? `🕌 ${ville.nom} is a Muslim-majority city — dining is overwhelmingly halal by default. We never certify individual places.`
                   : `🕌 ${ville.nom} est une ville à majorité musulmane — la restauration y est très majoritairement halal par défaut. Nous ne certifions aucun lieu individuellement.`)}
             </div>
+            {/* 🤝 Communauté AVANT les listes : les spots partagés ont plus de
+                valeur qu'un annuaire */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: 12, background: 'var(--nuit)', borderRadius: 16, padding: '14px 16px', marginBottom: 18, flexWrap: 'wrap' }}>
+              <p style={{ flex: 1, minWidth: 180, color: '#fdfaf3', fontSize: 14.5, fontWeight: 700, margin: 0, lineHeight: 1.45 }}>
+                🤝 {en ? `Know a halal spot in ${ville.nom}?` : `Tu connais un spot halal à ${ville.nom} ?`}
+              </p>
+              <span style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+                <a href={`/communaute/ajouter?ville=${ville.slug ?? ''}`} style={{ padding: '10px 16px', borderRadius: 999, background: 'var(--or)', color: '#0b1a0f', fontWeight: 800, fontSize: 13.5, textDecoration: 'none' }}>
+                  ➕ {en ? 'Share it' : 'Partage-le'}
+                </a>
+                <a href={`/priere/${ville.slug ?? ''}`} style={{ padding: '10px 16px', borderRadius: 999, border: '1.5px solid rgba(201,168,76,0.5)', color: '#fdfaf3', fontWeight: 700, fontSize: 13.5, textDecoration: 'none' }}>
+                  🧭 {en ? 'Shared spots →' : 'Spots partagés →'}
+                </a>
+              </span>
+            </div>
             {/* BLOC 6 — honnêteté d'échelle : pas de data réelle → on le DIT */}
             {restaurants.length === 0 && (
               <div style={{ ...card, textAlign: 'center', padding: '36px 22px', marginBottom: 18 }}>
@@ -432,7 +448,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
                     return (
                       <button key={i} onClick={() => setDetail({ kind: 'resto', item: r })}
                         style={{ width: 240, minWidth: 240, scrollSnapAlign: 'start', textAlign: 'left', background: '#fff', border: '1px solid rgba(27,67,50,0.1)', borderRadius: 18, overflow: 'hidden', cursor: 'pointer', padding: 0, boxShadow: '0 6px 20px rgba(11,26,15,0.06)' }}>
-                        <PlacePhoto query={`${r.nom} ${ville.nom}`} height={96} gradient={[g1, g2]} emoji={CATEGORY_EMOJI[ccat] ?? '🍽'} emojiSize={30} />
+                        <PlacePhoto query={`${r.nom} ${ville.nom}`} height={96} gradient={[g1, g2]} emoji={CATEGORY_EMOJI[ccat] ?? '🍽'} emojiSize={30} hideIfMissing />
                         <div style={{ padding: '10px 13px 12px' }}>
                           <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 15.5, color: 'var(--texte)', margin: 0, lineHeight: 1.15 }}>{r.nom}</p>
                           <p style={{ fontSize: 11.5, color: 'var(--texte-2)', margin: '3px 0 0', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{r.description || r.specialite}</p>
@@ -487,66 +503,30 @@ export default function VilleDesktop({ ville }: { ville: any }) {
               </button>
             </div>
             )}
+            {/* LISTE COMPACTE — lignes denses scannables, zéro faux visuel :
+                nom + type, puce source discrète, une action Maps à droite */}
             {showAllRestos && (
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px' }}>
+            <div style={{ background: '#fff', borderRadius: 16, border: '1px solid rgba(27,67,50,0.1)', overflow: 'hidden' }}>
               {restosAffiches.map((r: any, i: number) => {
                 const cat = cuisineCategory(r.type)
-                const [g1, g2] = CATEGORY_GRADIENT[cat] ?? DEFAULT_GRADIENT
-                const photo = r.photo || r.photoUrl || r.image || null
                 return (
-                  <div key={i} className="card-halal" style={{ ...card, padding: 0, overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
-                    {/* Visuel : photo du resto si dispo, sinon bandeau dégradé par cuisine */}
-                    <div style={{ position: 'relative', height: 96, background: photo ? undefined : `linear-gradient(120deg, ${g1} 0%, ${g2} 130%)`, display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
-                      {photo ? (
-                        // eslint-disable-next-line @next/next/no-img-element
-                        <img src={photo} alt={r.nom} loading="lazy" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
-                      ) : (
-                        <>
-                          <IslamicPattern opacity={0.1} />
-                          <span style={{ position: 'relative', zIndex: 1, fontSize: 40, filter: 'drop-shadow(0 3px 6px rgba(0,0,0,0.35))' }}>{CATEGORY_EMOJI[cat] ?? '🍽'}</span>
-                        </>
-                      )}
-                      <span style={{ position: 'absolute', top: 8, right: 8, background: 'rgba(255,255,255,0.9)', borderRadius: 20, lineHeight: 0 }}>
-                        <FavButton size={14} fav={{ id: favId('resto', ville.slug ?? ville.nom, r.nom), kind: 'resto', nom: r.nom, villeNom: ville.nom, href: `/destinations/${ville.slug ?? ''}` }} />
-                      </span>
-                    </div>
-
-                    <div style={{ padding: '14px 16px 16px', display: 'flex', flexDirection: 'column', flex: 1 }}>
-                      {/* Nom + cuisine */}
-                      <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: '19px', color: 'var(--texte)', lineHeight: 1.15, margin: 0 }}>{r.nom}</p>
-                      <p style={{ fontSize: '12.5px', color: 'var(--texte-2)', margin: '2px 0 10px' }}>{enLabel(cat, en)}</p>
-
-                      {/* Une seule ligne : halal + note + prix */}
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '9px', marginBottom: '8px', flexWrap: 'wrap' }}>
+                  <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '11px 14px', minHeight: 64, borderTop: i > 0 ? '1px solid rgba(27,67,50,0.07)' : 'none' }}>
+                    <div style={{ flex: 1, minWidth: 0 }}>
+                      <p style={{ fontWeight: 700, fontSize: 15, color: 'var(--texte)', margin: 0, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                        {r.nom} <span style={{ fontWeight: 400, color: 'var(--texte-2)', fontSize: 13 }}>· {enLabel(cat, en)}</span>
+                      </p>
+                      <p style={{ fontSize: 12, color: '#9ca3af', margin: '3px 0 0' }}>
                         {r.halalConfidence === 'likely'
-                          ? <span style={{ background: 'rgba(201,168,76,0.18)', color: '#8A6D1E', fontSize: '11px', fontWeight: 700, borderRadius: '20px', padding: '3px 10px' }}>≈ {en ? 'Halal common · verify' : 'Halal courant · à vérifier'}</span>
-                          : <span style={{ background: 'var(--halal-bg)', color: 'var(--halal-tx)', fontSize: '11px', fontWeight: 700, borderRadius: '20px', padding: '3px 10px' }}>✓ Halal</span>}
-                        {(r.score ?? r.note) != null && <span style={{ fontSize: '13px', color: '#B8860B', fontWeight: 700 }}>★ {r.score ?? r.note}</span>}
-                        {(r.priceRange ?? r.fourchette_prix) && <span style={{ fontSize: '12px', color: 'var(--texte-2)' }}>{r.priceRange ?? r.fourchette_prix}</span>}
-                      </div>
-
-                      {/* Tags discrets : vraie spécialité + attributs réels */}
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '12px', flexWrap: 'wrap', minHeight: 20 }}>
-                        {r.specialite && <span style={{ fontSize: '11.5px', color: 'var(--texte-2)' }}>⭐ {r.specialite}</span>}
-                        {(() => {
-                          const tags = (Array.isArray(r.tags) ? r.tags : []).join(' ').toLowerCase()
-                          const pill = { background: 'rgba(27,67,50,0.07)', color: 'var(--foret)', fontSize: '10.5px', fontWeight: 700, borderRadius: '20px', padding: '2px 8px' } as const
-                          return (
-                            <>
-                              {(tags.includes('famille') || tags.includes('familles')) && <span style={pill}>👨‍👩‍👧 {en ? 'family' : 'familles'}</span>}
-                              {(tags.includes('sans alcool') || r.sansAlcool === true || r.sans_alcool === true) && <span style={pill}>🚫 {en ? 'alcohol-free' : 'sans alcool'}</span>}
-                              {(tags.includes('salle de prière') || tags.includes('salle de priere')) && <span style={pill}>🕌 {en ? 'prayer room' : 'salle de prière'}</span>}
-                            </>
-                          )
-                        })()}
-                      </div>
-
-                      {/* UNE action principale */}
-                      <a href={r.mapsUrl} target="_blank" rel="noopener noreferrer" onClick={() => toast('Ouverture dans Google Maps…', 'success')} style={{ marginTop: 'auto', display: 'block', padding: '11px 0', background: 'var(--halal-bg)', color: 'var(--halal-tx)', borderRadius: '12px', textAlign: 'center', fontSize: '13px', fontWeight: 700, textDecoration: 'none' }}>
-                        🗺 {en ? 'Maps / Directions' : 'Maps / Itinéraire'}
-                      </a>
-                      <SourceLine item={r} />
+                          ? (en ? '≈ verify on site' : '≈ à vérifier')
+                          : (en ? '✓ reported halal' : '✓ signalé halal')}
+                        {' · '}{r.source === 'google' ? 'Google' : 'OSM'}
+                        {(r.score ?? r.note) != null ? ` · ★ ${r.score ?? r.note}` : ''}
+                      </p>
                     </div>
+                    <a href={r.mapsUrl} target="_blank" rel="noopener noreferrer" onClick={() => toast('Ouverture dans Google Maps…', 'success')}
+                      style={{ flexShrink: 0, padding: '9px 14px', background: 'var(--halal-bg)', color: 'var(--halal-tx)', borderRadius: 10, fontSize: 12.5, fontWeight: 700, textDecoration: 'none', whiteSpace: 'nowrap' }}>
+                      🗺 {en ? 'Maps' : 'Maps'}
+                    </a>
                   </div>
                 )
               })}

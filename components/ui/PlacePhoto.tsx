@@ -18,6 +18,7 @@ export default function PlacePhoto({
   emoji,
   emojiSize = 34,
   radius = 0,
+  hideIfMissing = false,
 }: {
   query: string
   height: number
@@ -25,6 +26,8 @@ export default function PlacePhoto({
   emoji: string
   emojiSize?: number
   radius?: number
+  /* true = AUCUN bloc image tant qu'aucune vraie photo (pas de faux visuel) */
+  hideIfMissing?: boolean
 }) {
   const [photo, setPhoto] = useState<{ url: string | null; attribution?: string } | null>(memo.get(query) ?? null)
 
@@ -37,6 +40,8 @@ export default function PlacePhoto({
       .catch(() => { memo.set(query, { url: null }); if (!cancelled) setPhoto({ url: null }) })
     return () => { cancelled = true }
   }, [query])
+
+  if (hideIfMissing && !photo?.url) return null
 
   return (
     <div style={{ position: 'relative', height, borderRadius: radius, overflow: 'hidden', background: `linear-gradient(120deg, ${gradient[0]} 0%, ${gradient[1]} 130%)`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
