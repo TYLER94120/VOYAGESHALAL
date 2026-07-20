@@ -78,6 +78,31 @@ jobs:
               out.append(rec)
               print(nom, '| urls:', len(matches), '| fetched:', rec['fetched'], '| preuves:', len(rec['evidence']))
           json.dump(out, open('hb-audit/evidence.json', 'w'), ensure_ascii=False, indent=1)
+          # 2) DÉCOUVERTE : scan d'un échantillon de fiches du sitemap pour
+          # trouver des resorts « ladies-only » inconnus (preuves extraites,
+          # tri humain ensuite). Ville devinée depuis le titre/fil d'Ariane.
+          import random
+          random.seed(42)
+          pool = [u for u in hotel_urls if '/hotel' in u]
+          sample = pool[:0] + random.sample(pool, min(150, len(pool)))
+          disc = []
+          for u in sample:
+              try:
+                  html = get(u)
+              except Exception:
+                  continue
+              hits = set()
+              for m in MARKERS.finditer(html):
+                  a = max(0, m.start()-70); b = min(len(html), m.end()+70)
+                  frag = re.sub(r'<[^>]+>', ' ', html[a:b]); frag = re.sub(r'\s+', ' ', frag).strip()
+                  hits.add(frag[:150])
+              if not hits:
+                  continue
+              t = re.search(r'<title>([^<]+)</title>', html)
+              disc.append({"url": u, "title": (t.group(1).strip() if t else ''), "evidence": sorted(hits)[:6]})
+              print('DISC', u)
+          json.dump(disc, open('hb-audit/discovery.json', 'w'), ensure_ascii=False, indent=1)
+          print('découvertes avec preuves:', len(disc))
           PY
       - name: Commit evidence
         run: |
