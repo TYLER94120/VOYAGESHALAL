@@ -32,6 +32,7 @@ export default function RadarPriere() {
   const { pos } = useInstantPosition(en)
   const [now, setNow] = useState(() => Date.now())
   const [lieu, setLieu] = useState<Lieu | null | undefined>(undefined) // undefined = chargement
+  const [resto, setResto] = useState<Lieu | null | undefined>(undefined) // resto signalé halal le plus proche
 
   const [fastTick, setFastTick] = useState(false)
   useEffect(() => {
@@ -54,10 +55,14 @@ export default function RadarPriere() {
         { key: 'Isha', start: today.Isha, end: tomorrow.Fajr },
       ]
       const cur = seq.find((s) => now >= s.start.getTime() && now < s.end.getTime())
-      const next = seq.find((s) => now < s.start.getTime()) ?? { key: 'Fajr', start: tomorrow.Fajr, end: tomorrow.Sunrise }
+      const fallback = { key: 'Fajr', start: tomorrow.Fajr, end: tomorrow.Sunrise }
+      const nextIdx = seq.findIndex((s) => now < s.start.getTime())
+      const next = nextIdx >= 0 ? seq[nextIdx] : fallback
       if (cur) return { ...cur, mode: 'current' as const, next }
-      if (next) return { ...next, mode: 'upcoming' as const, next }
-      return null
+      // Hors fenêtre (ex. entre minuit et Fajr) : la carte « suivant » montre
+      // la prière d'APRÈS, jamais la même que la carte principale
+      const after = nextIdx >= 0 ? (seq[nextIdx + 1] ?? fallback) : { key: 'Dhuhr', start: tomorrow.Dhuhr, end: tomorrow.Asr }
+      return { ...next, mode: 'upcoming' as const, next: after }
     } catch { return null }
   }, [pos, now])
 
@@ -91,6 +96,33 @@ export default function RadarPriere() {
         }
       }).catch(() => {})
     Promise.allSettled([p1, p2]).then(done)
+    // Resto signalé halal le plus proche (OSM diet:halal + spots communauté) —
+    // vocabulaire honnête : « signalé halal · à vérifier », jamais « certifié »
+    const rc: Lieu[] = []
+    const qr = `[out:json][timeout:12];(node["amenity"~"restaurant|fast_food"]["diet:halal"~"yes|only"](around:3000,${pos.lat},${pos.lng});way["amenity"~"restaurant|fast_food"]["diet:halal"~"yes|only"](around:3000,${pos.lat},${pos.lng}););out center 25;`
+    const r1 = fetch('https://overpass-api.de/api/interpreter', { method: 'POST', body: `data=${encodeURIComponent(qr)}` })
+      .then((r) => r.json())
+      .then((d) => {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        for (const el of (d.elements as any[]) ?? []) {
+          const la = el.lat ?? el.center?.lat, lo = el.lon ?? el.center?.lon
+          if (la && lo && el.tags?.name) rc.push({ nom: el.tags.name, lat: la, lng: lo, source: 'osm', distM: hav(pos.lat, pos.lng, la, lo) })
+        }
+      }).catch(() => {})
+    const r2 = fetch(`/api/spots?lat=${pos.lat}&lng=${pos.lng}&radius=3`)
+      .then((r) => r.json())
+      .then((j) => {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        for (const s of (j.spots as any[]) ?? []) {
+          if (s.categorie !== 'resto') continue
+          if (s.lat && s.lng) rc.push({ nom: s.nom, lat: s.lat, lng: s.lng, source: 'communaute', distM: hav(pos.lat, pos.lng, s.lat, s.lng), spotId: s.id })
+        }
+      }).catch(() => {})
+    Promise.allSettled([r1, r2]).then(() => {
+      if (cancelled) return
+      rc.sort((a, b) => a.distM - b.distM)
+      setResto(rc[0] ?? null)
+    })
     return () => { cancelled = true }
   }, [pos])
 
@@ -190,6 +222,18 @@ export default function RadarPriere() {
                 </Link>
               )}
             </span>
+          </div>
+        )}
+        {/* Ligne 3 : où manger halal maintenant (signalé, jamais « certifié ») */}
+        {resto && (
+          <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginTop: 10, paddingTop: 10, borderTop: '1px solid rgba(255,255,255,0.08)', flexWrap: 'wrap' }}>
+            <p style={{ flex: 1, minWidth: 180, color: '#fdfaf3', fontSize: 14.5, margin: 0, lineHeight: 1.5 }}>
+              🍽 <strong>{resto.nom}</strong>
+              <span style={{ color: 'rgba(253,250,243,0.6)' }}> · {Math.max(1, Math.round(resto.distM / 80))} {en ? 'min walk' : 'min à pied'} · {resto.source === 'communaute' ? (en ? 'community · to confirm' : 'communauté · à confirmer') : (en ? 'reported halal · to verify' : 'signalé halal · à vérifier')}</span>
+            </p>
+            <a href={`https://www.google.com/maps/dir/?api=1&destination=${resto.lat},${resto.lng}&travelmode=walking`} target="_blank" rel="noopener noreferrer" style={{ padding: '10px 16px', borderRadius: 999, border: '1.5px solid rgba(201,168,76,0.5)', color: '#fdfaf3', fontWeight: 700, fontSize: 13.5, textDecoration: 'none' }}>
+              🚶 {en ? 'Directions' : 'Itinéraire'}
+            </a>
           </div>
         )}
         {lieu === null && (

@@ -10,7 +10,6 @@ import { guides } from '@/lib/data'
 import HomeHeroActions from '@/components/home/HomeHeroActions'
 import NearbySpotsHome from '@/components/community/NearbySpotsHome'
 import RadarPriere from '@/components/home/RadarPriere'
-import VilleCircles from '@/components/home/VilleCircles'
 import FollowInstall from '@/components/capture/FollowInstall'
 import { JeVoyageMaintenant } from '@/components/JeVoyageMaintenant'
 import { HomeScoreRanking } from '@/components/HomeScoreRanking'
@@ -166,9 +165,6 @@ export default async function HomePage() {
           </Link>
         </div>
       </section>
-
-      {/* Cercles-villes : accès 1 tap aux guides (vraies photos) */}
-      <VilleCircles />
 
       {/* 🧭 Radar Prière — « ai-je le temps d'arriver avant la fin du créneau ? » */}
       <RadarPriere />
