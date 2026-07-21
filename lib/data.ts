@@ -1447,6 +1447,162 @@ export const guides: Guide[] = [...guidesFr, ...guidesEn]
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "ou-prier-aeroport-lyon",
+    title: "Où prier à l'aéroport de Lyon-Saint-Exupéry — guide 2026",
+    description: "Lyon-Saint-Exupéry dispose d'un centre spirituel multiconfessionnel avec une salle de prière musulmane. Voici où le trouver.",
+    coverImage: "/guides/blog-aeroports.jpg",
+    category: 'Pratique',
+    readTime: "3 min",
+    publishedAt: '2026-07-20',
+    tags: ["Lyon", "Aéroports", "Prière"],
+    content: `<p>Tu voyages depuis Lyon et tu cherches une salle de prière à l'aéroport Saint-Exupéry ? Lyon-Saint-Exupéry dispose d'un centre spirituel multiconfessionnel avec une salle de prière musulmane. Voici où le trouver.</p>
+<h2>L'essentiel en 30 secondes</h2><p>L'aéroport de Lyon met à disposition un espace de prière ouvert à tous, qui regroupe des salles pour les catholiques, protestants, musulmans et juifs. Les horaires sont affichés à l'entrée de chaque salle, et un point d'information peut te renseigner.</p>
+<h2>Où se trouve la salle de prière</h2><p>Le centre spirituel se situe entre le Terminal 1 et le Terminal 2, à proximité de l'hôtel Moxy. Espaces distincts par culte, dont un espace musulman. Suis la signalétique « centre spirituel / lieu de culte » ou demande à un agent.</p>
+<h2>Conseils pratiques</h2><p>Prévois quelques minutes de marche selon ton terminal. Vérifie les horaires affichés. Anticipe les ablutions (toilettes, petit nécessaire). En cas de temps serré, prière du voyageur raccourcie et regroupée. Utilise <a href="/qibla">notre outil qibla</a>.</p>
+<h2>Questions fréquentes</h2><p><strong>Salle musulmane à Lyon-Saint-Exupéry ?</strong> Oui, dans le centre spirituel entre les terminaux 1 et 2.<br/><strong>Ouvert à tous ?</strong> Oui, gratuitement.<br/><strong>Horaires ?</strong> Affichés à l'entrée de chaque salle ; point d'information disponible.</p>
+<p>Voir aussi <a href="/blog/ou-prier-aeroports">notre guide complet des aéroports</a>.</p><h2>Aide la communauté</h2><p>Un changement d'emplacement, un horaire, un repère ? Partage-le — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
+  },
+  {
+    slug: "ou-prier-aeroport-nice",
+    title: "Où prier à l'aéroport de Nice-Côte d'Azur — guide 2026",
+    description: "Nice-Côte d'Azur propose depuis plus de 20 ans un espace de prière multiconfessionnel, avec une salle réservée aux musulmans. Voici où le trouver.",
+    coverImage: "/guides/blog-aeroports.jpg",
+    category: 'Pratique',
+    readTime: "3 min",
+    publishedAt: '2026-07-20',
+    tags: ["Nice", "Aéroports", "Prière"],
+    content: `<p>Tu pars de Nice ? Nice-Côte d'Azur propose depuis plus de 20 ans un espace de prière multiconfessionnel, avec une salle réservée aux musulmans. Voici où le trouver.</p>
+<h2>L'essentiel en 30 secondes</h2><p>Au Terminal 2 : une chapelle pour les chrétiens, une salle pour les fidèles juifs et une salle pour les musulmans, autour d'un hall d'accueil commun. Des aumôniers bénévoles y assurent une présence.</p>
+<h2>Où se trouve la salle de prière</h2><p>L'espace est au Terminal 2 : trois salles distinctes plus une zone d'accueil, dans un endroit calme. Repère la signalétique « espace de prière / lieu de culte » ou demande à un agent.</p>
+<h2>Conseils pratiques</h2><p>Depuis le Terminal 1, vérifie le trajet vers le Terminal 2. Anticipe les ablutions. Pour un vol serré, prière du voyageur raccourcie et regroupée. Utilise <a href="/qibla">notre outil qibla</a>.</p>
+<h2>Questions fréquentes</h2><p><strong>Salle musulmane à Nice ?</strong> Oui, au Terminal 2.<br/><strong>Depuis quand ?</strong> Plus de 20 ans.<br/><strong>Gratuit ?</strong> Oui.</p>
+<p>Voir aussi <a href="/blog/ou-prier-aeroports">notre guide complet des aéroports</a>.</p><h2>Aide la communauté</h2><p>Un horaire, un changement à Nice ? Partage-le — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
+  },
+  {
+    slug: "ou-prier-aeroport-toulouse",
+    title: "Où prier à l'aéroport de Toulouse-Blagnac — guide 2026",
+    description: "L'aéroport de Toulouse dispose d'un centre spirituel / espace de recueillement ouvert à tous, au 3ᵉ étage du Hall C. Voici où le trouver et comment y prier.",
+    coverImage: "/guides/blog-aeroports.jpg",
+    category: 'Pratique',
+    readTime: "3 min",
+    publishedAt: '2026-07-20',
+    tags: ["Toulouse", "Aéroports", "Prière"],
+    content: `<p>Tu voyages depuis Toulouse ? L'aéroport dispose d'un centre spirituel / espace de recueillement ouvert à tous. Voici où le trouver et comment y prier.</p>
+<h2>L'essentiel en 30 secondes</h2><p>Un espace de recueillement et de prière est au 3ᵉ étage du Hall C. Lieu de silence ouvert à tous, pour prier au calme avant l'embarquement.</p>
+<h2>Où se trouve l'espace de prière</h2><p>Rends-toi au Hall C et prends l'ascenseur jusqu'au 3ᵉ étage. Espace géré par le comité interconfessionnel, ouvert à toutes confessions. Comme c'est un espace partagé, oriente-toi vers la qibla (<a href="/qibla">notre outil qibla</a>) et prie au calme.</p>
+<h2>Conseils pratiques</h2><p>Repère le Hall C, 3ᵉ étage à l'avance. Anticipe les ablutions aux toilettes. Prière du voyageur raccourcie et regroupée possible.</p>
+<h2>Questions fréquentes</h2><p><strong>Espace de prière à Toulouse ?</strong> Oui, centre spirituel au 3ᵉ étage du Hall C.<br/><strong>Salle musulmane dédiée ?</strong> C'est un espace interconfessionnel ouvert à tous ; signale-nous une salle distincte si tu en vois une.<br/><strong>Gratuit ?</strong> Oui.</p>
+<p>Voir aussi <a href="/blog/ou-prier-aeroports">notre guide complet des aéroports</a>.</p><h2>Aide la communauté</h2><p>Un repère précis, un coin qui marche bien, une évolution ? Partage-le — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
+  },
+  {
+    slug: "ou-prier-aeroport-geneve",
+    title: "Où prier à l'aéroport de Genève — guide 2026",
+    description: "Genève-Cointrin dispose d'un espace de recueillement multiconfessionnel après les contrôles de sécurité, avec tapis de prière et Coran. Voici où le trouver.",
+    coverImage: "/guides/blog-aeroports.jpg",
+    category: 'Pratique',
+    readTime: "3 min",
+    publishedAt: '2026-07-20',
+    tags: ["Genève", "Aéroports", "Prière"],
+    content: `<p>Tu transites par Genève-Cointrin ? L'aéroport dispose d'un espace de recueillement multiconfessionnel après les contrôles de sécurité. Voici où le trouver.</p>
+<h2>L'essentiel en 30 secondes</h2><p>Genève Aéroport propose un espace de recueillement / méditation ouvert à toutes les religions, en zone de transit (après la sécurité). On y trouve des tapis de prière et un Coran.</p>
+<h2>Où se trouve l'espace de prière</h2><p>En zone de transit, sur la mezzanine, à proximité des salons des compagnies, en direction de l'espace enfants / nurserie. Suis le symbole « espace de recueillement » après la sécurité, puis monte à la mezzanine. Petite salle, calme et lumineuse.</p>
+<h2>Bon à savoir</h2><p>Espace après les contrôles → carte d'embarquement nécessaire. La salle est petite : prie à un moment moins chargé si possible.</p>
+<h2>Conseils pratiques</h2><p>Anticipe les ablutions. Prière du voyageur raccourcie et regroupée. Utilise <a href="/qibla">notre outil qibla</a> même si des tapis sont sur place.</p>
+<h2>Questions fréquentes</h2><p><strong>Salle de prière à Genève ?</strong> Oui, espace de recueillement multiconfessionnel en zone de transit.<br/><strong>Des tapis ?</strong> Oui, tapis et Coran disponibles.<br/><strong>Un billet ?</strong> Oui, carte d'embarquement nécessaire.</p>
+<p>Voir aussi <a href="/blog/ou-prier-aeroports">notre guide complet des aéroports</a>.</p><h2>Aide la communauté</h2><p>Espace déplacé, nouveau repère à Cointrin ? Partage-le — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
+  },
+  {
+    slug: "ou-prier-aeroport-bruxelles",
+    title: "Où prier à l'aéroport de Bruxelles — guide 2026",
+    description: "Bruxelles-Zaventem dispose de plusieurs salles de prière, dont une salle musulmane dédiée, ouvertes 24h/24 après la sécurité. Voici où les trouver.",
+    coverImage: "/guides/blog-aeroports.jpg",
+    category: 'Pratique',
+    readTime: "3 min",
+    publishedAt: '2026-07-20',
+    tags: ["Bruxelles", "Aéroports", "Prière"],
+    content: `<p>Tu voyages via Bruxelles-Zaventem ? L'aéroport dispose de plusieurs salles de prière, dont une salle musulmane dédiée, ouvertes 24h/24. Voici où les trouver.</p>
+<h2>L'essentiel en 30 secondes</h2><p>Les salles sont après les contrôles de sécurité, dans les zones des portes A et B. Une salle dédiée aux musulmans, plus des espaces pour les cultes juif, catholique, orthodoxe et protestant. Ouvertes 24h/24, accès avec carte d'embarquement.</p>
+<h2>Où se trouvent les salles de prière</h2><p>Au Terminal B : au-dessus des boutiques, au fond du hall. Au Terminal A : en haut des escaliers, près du Crystal Media Shop, face à la porte A42, au niveau des salons. Suis la signalétique « prayer rooms / salles de prière ».</p>
+<h2>Bon à savoir</h2><p>Salles après les contrôles → carte d'embarquement nécessaire. Ouvertes 24h/24 (précieux pour les vols de nuit). Contact dédié : prayerrooms@brusselsairport.be.</p>
+<h2>Conseils pratiques</h2><p>Repère si tu pars des portes A ou B. Anticipe les ablutions. Prière du voyageur raccourcie et regroupée. Utilise <a href="/qibla">notre outil qibla</a>.</p>
+<h2>Questions fréquentes</h2><p><strong>Salle musulmane à Bruxelles ?</strong> Oui, dans les zones des portes A et B, après la sécurité.<br/><strong>Horaires ?</strong> 24h/24.<br/><strong>Un billet ?</strong> Oui, carte d'embarquement.</p>
+<p>Voir aussi <a href="/blog/ou-prier-aeroports">notre guide complet des aéroports</a>.</p><h2>Aide la communauté</h2><p>Un emplacement modifié, un nouveau repère à Zaventem ? Partage-le — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
+  },
+  {
+    slug: "prier-en-avion",
+    title: "Comment prier en avion : le guide pratique du voyageur musulman (2026)",
+    description: "Ton vol tombe sur l'heure de la prière ? Prier au sol si possible, sinon assis à ta place avec les facilités du voyageur. Voici comment faire, sereinement et discrètement.",
+    coverImage: "/guides/blog-aeroports.jpg",
+    category: 'Pratique',
+    readTime: "5 min",
+    publishedAt: '2026-07-20',
+    tags: ["Avion", "Prière", "Voyage"],
+    content: `<p>Ton vol tombe sur l'heure de la prière et tu ne sais pas comment prier en avion ? Voici comment faire, sereinement et discrètement.</p>
+<h2>L'essentiel en 30 secondes</h2><p>Si tu peux prier au sol avant/après le vol dans le temps imparti, c'est le mieux. Sinon, prie à ta place, assis, en inclinant la tête pour le roukou' et la sujoud. En voyageur, tu peux raccourcir et regrouper tes prières.</p>
+<h2>1. La meilleure option : prier au sol</h2><p>Prie à l'aéroport avant le décollage, ou à l'arrivée avant la fin du temps de la prière. <a href="/blog/ou-prier-aeroports">Nos guides « où prier à l'aéroport »</a> indiquent les salles. Regroupe dhuhr/asr, maghrib/isha pour un long vol.</p>
+<h2>2. Faire les ablutions</h2><p>Fais tes ablutions à l'aéroport avant d'embarquer. À bord, les toilettes permettent le minimum. En cas d'impossibilité réelle, le tayammoum (ablution sèche) est une option reconnue.</p>
+<h2>3. Prier assis à sa place</h2><p>Prie assis, orienté vers la qibla au début si possible (<a href="/qibla">notre outil qibla</a> / aide de l'équipage), puis poursuis même si l'avion change de cap. Mouvements par légères inclinaisons de la tête (un peu pour le roukou', plus pour la sujoud).</p>
+<h2>4. Debout, si l'espace le permet</h2><p>Sur certains vols, un espace peut permettre de prier debout si l'équipage l'autorise et hors turbulences/ceinture obligatoire. Reste discret ; la sécurité du vol prime.</p>
+<h2>Les facilités du voyageur</h2><p>Raccourcir les prières de 4 à 2 rakats (dhuhr, asr, isha) et regrouper dhuhr/asr, maghrib/isha règle la plupart des situations.</p>
+<h2>Questions fréquentes</h2><p><strong>Prier assis en avion ?</strong> Oui, en cas de nécessité.<br/><strong>Trouver la qibla ?</strong> Oriente-toi au mieux au départ ; la prière reste valable si le cap change.<br/><strong>Pas d'eau ?</strong> Le tayammoum est permis en cas de nécessité.</p>
+<h2>Aide la communauté</h2><p>Une astuce, un endroit où prier avant un vol ? Partage-le — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
+  },
+  {
+    slug: "prier-en-train",
+    title: "Comment prier dans le train : guide pratique (2026)",
+    description: "Un long trajet en TGV et l'heure de la prière qui approche ? Prie à ta place assis, ou debout dans un espace calme — avec les facilités du voyageur. Voici comment faire.",
+    coverImage: "/guides/blog-aeroports.jpg",
+    category: 'Pratique',
+    readTime: "4 min",
+    publishedAt: '2026-07-20',
+    tags: ["Train", "Prière", "Voyage"],
+    content: `<p>Un long trajet en TGV et l'heure de la prière qui approche ? Voici comment prier dans le train simplement.</p>
+<h2>L'essentiel en 30 secondes</h2><p>Prie à ta place, assis, avec inclinaisons de la tête si tu ne peux pas te lever — ou, si tu trouves un espace calme, debout discrètement. En voyageur, tu peux raccourcir et regrouper tes prières.</p>
+<h2>1. Anticipe avant de monter</h2><p>Prie en gare avant le départ (certaines grandes gares ont des espaces calmes) ou à l'arrivée dans le temps imparti. Regroupe dhuhr/asr ou maghrib/isha pour un long trajet.</p>
+<h2>2. Prier assis à ta place</h2><p>Prie assis, orienté au mieux vers la qibla (<a href="/qibla">notre outil qibla</a>), mouvements par légères inclinaisons de la tête.</p>
+<h2>3. Prier debout dans un espace calme</h2><p>Si le train est peu rempli ou dans un espace entre les voitures, prie debout discrètement, en veillant à ta sécurité. Pose une veste ou un petit tapis.</p>
+<h2>4. Les ablutions</h2><p>Fais tes ablutions avant de monter si possible. Sinon les toilettes ; en cas d'impossibilité, le tayammoum.</p>
+<h2>Questions fréquentes</h2><p><strong>Prier assis dans le train ?</strong> Oui, en cas de nécessité.<br/><strong>S'orienter ?</strong> Au mieux ; la prière reste valable en déplacement.<br/><strong>Regrouper ?</strong> Oui, dhuhr/asr et maghrib/isha.</p>
+<p>Voir aussi <a href="/blog/prier-en-avion">comment prier en avion</a> et <a href="/blog/ou-prier-aire-autoroute">sur une aire d'autoroute</a>.</p>
+<h2>Aide la communauté</h2><p>Un espace calme en gare, un coin pour prier avant un train ? Partage-le — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
+  },
+  {
+    slug: "ou-prier-aire-autoroute",
+    title: "Où prier sur une aire d'autoroute : guide du road trip halal (2026)",
+    description: "Rares sont les aires équipées d'une salle de prière : coin calme, voiture, ablutions aux toilettes et facilités du voyageur — voici comment prier en route.",
+    coverImage: "/guides/blog-aeroports.jpg",
+    category: 'Pratique',
+    readTime: "4 min",
+    publishedAt: '2026-07-20',
+    tags: ["Road trip", "Prière", "Voyage"],
+    content: `<p>En plein road trip, où prier sur une aire d'autoroute ? Rares sont les aires équipées, mais prier en route est faisable avec un peu d'organisation.</p>
+<h2>L'essentiel en 30 secondes</h2><p>La plupart des aires n'ont pas de salle : prie dans un coin calme (zone d'herbe, ou dans ta voiture), après ablutions aux toilettes. En voyageur, raccourcis et regroupe tes prières.</p>
+<h2>1. Regroupe tes prières pour la route</h2><p>Regroupe dhuhr/asr et maghrib/isha, raccourcis de 4 à 2 rakats. Un seul arrêt suffit souvent pour deux prières.</p>
+<h2>2. Trouve ton coin sur l'aire</h2><p>Vise une zone d'herbe à l'écart des flux. Pose un tapis, oriente-toi vers la qibla (<a href="/qibla">notre outil qibla</a>). Sinon, prier dans la voiture, assis, reste valable.</p>
+<h2>3. Les ablutions</h2><p>Les toilettes de l'aire permettent les ablutions. Garde un petit nécessaire dans la voiture. En cas d'impossibilité, le tayammoum.</p>
+<h2>4. Prépare ton trajet</h2><p>Repère les grandes aires et cale tes pauses prière avec essence/repas. Certaines grandes aires proposent un espace calme, mais ne compte pas dessus par défaut.</p>
+<h2>Questions fréquentes</h2><p><strong>Salles de prière sur les aires ?</strong> Rare en France ; prévois un coin calme ou ta voiture.<br/><strong>Prier dans la voiture ?</strong> Oui, en cas de nécessité.<br/><strong>Limiter les arrêts ?</strong> En regroupant dhuhr/asr et maghrib/isha.</p>
+<h2>Aide la communauté</h2><p>Tu connais une aire avec un bon coin prière (France, Espagne, Maroc…) ? Partage-le — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
+  },
+  {
+    slug: "ou-prier-centre-commercial",
+    title: "Où prier dans un centre commercial : guide pratique (2026)",
+    description: "Certains grands centres ont une salle de prière souvent méconnue : demande à l'accueil. Sinon, un coin calme après ablutions. Voici comment prier discrètement.",
+    coverImage: "/guides/blog-aeroports.jpg",
+    category: 'Pratique',
+    readTime: "4 min",
+    publishedAt: '2026-07-20',
+    tags: ["Centre commercial", "Prière", "Pratique"],
+    content: `<p>Une journée shopping et l'heure de la prière qui approche ? Voici où prier dans un centre commercial discrètement.</p>
+<h2>L'essentiel en 30 secondes</h2><p>Certains grands centres ont une salle de prière (souvent méconnue) : demande à l'accueil ou à la sécurité. Sinon, prie dans un coin calme (parking couvert, palier peu fréquenté), après ablutions aux toilettes.</p>
+<h2>1. Demande à l'accueil — le bon réflexe</h2><p>De plus en plus de grands centres aménagent une salle de prière ou un espace multiconfessionnel sans le signaler. Demande au comptoir d'accueil ou à un agent de sécurité.</p>
+<h2>2. Repère un coin calme</h2><p>Cherche un palier peu fréquenté, un coin près des toilettes/ascenseurs, ou le parking couvert. Pose une veste ou un petit tapis, oriente-toi vers la qibla (<a href="/qibla">notre outil qibla</a>).</p>
+<h2>3. Les ablutions</h2><p>Les toilettes permettent les ablutions avec discrétion. Un petit nécessaire dans le sac aide.</p>
+<h2>4. Gagne du temps avec les facilités</h2><p>En déplacement, raccourcis et regroupe. Sinon, prie dès l'entrée du temps de prière pour éviter de courir.</p>
+<h2>Questions fréquentes</h2><p><strong>Salle de prière en centre commercial ?</strong> Certains oui, souvent sans l'afficher : demande à l'accueil.<br/><strong>S'il n'y en a pas ?</strong> Un coin calme (palier, parking couvert) après ablutions.<br/><strong>Cabine d'essayage ?</strong> En dépannage éventuellement, un coin calme et propre est préférable.</p>
+<h2>Aide la communauté</h2><p>Tu connais un centre commercial avec salle de prière (ou un bon coin discret) ? Introuvable sur Maps, Partage-le — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
+  },
+  {
     slug: "ou-prier-aeroports",
     title: "Où prier dans un aéroport : le guide complet (2026)",
     description: "Prendre l'avion ne devrait jamais t'obliger à sauter une prière. La plupart des grands aéroports disposent d'une salle de prière ou d'un espace de recueillement — encore faut-il savoir où le trouver.",
@@ -1469,9 +1625,14 @@ export const blogPosts: BlogPost[] = [
 <li><a href="/blog/ou-prier-aeroport-cdg">Où prier à l'aéroport de Paris-CDG</a></li>
 <li><a href="/blog/ou-prier-aeroport-orly">Où prier à l'aéroport de Paris-Orly</a></li>
 <li><a href="/blog/ou-prier-aeroport-marseille">Où prier à l'aéroport de Marseille-Provence</a></li>
+<li><a href="/blog/ou-prier-aeroport-lyon">Où prier à l'aéroport de Lyon-Saint-Exupéry</a></li>
+<li><a href="/blog/ou-prier-aeroport-nice">Où prier à l'aéroport de Nice-Côte d'Azur</a></li>
+<li><a href="/blog/ou-prier-aeroport-toulouse">Où prier à l'aéroport de Toulouse-Blagnac</a></li>
+<li><a href="/blog/ou-prier-aeroport-geneve">Où prier à l'aéroport de Genève</a></li>
+<li><a href="/blog/ou-prier-aeroport-bruxelles">Où prier à l'aéroport de Bruxelles</a></li>
 <li><a href="/blog/ou-prier-disneyland-paris">Où prier à Disneyland Paris</a></li>
 </ul>
-<p>(D'autres arrivent : Lyon, Nice, Toulouse, Genève, Bruxelles…)</p>
+<p>En transit ou en route : <a href="/blog/prier-en-avion">prier en avion</a>, <a href="/blog/prier-en-train">dans le train</a>, <a href="/blog/ou-prier-aire-autoroute">sur une aire d'autoroute</a> et <a href="/blog/ou-prier-centre-commercial">dans un centre commercial</a>.</p>
 <h2>Aide la communauté</h2><p>Tu as trouvé un coin prière dans un aéroport, une gare, un centre commercial ? Partage-le : chaque spot aide des dizaines de frères et sœurs à prier en voyage — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
   },
   {

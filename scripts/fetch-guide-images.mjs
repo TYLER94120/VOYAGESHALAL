@@ -60,6 +60,15 @@ const KEYS = [
   { key: 'blog-orly', q: 'Paris Orly Airport terminal' },
   { key: 'blog-marseille', q: 'Marseille Provence Airport' },
   { key: 'blog-disneyland', q: 'Disneyland Paris Sleeping Beauty Castle' },
+  { key: 'blog-lyon', q: 'Lyon Saint-Exupery Airport' },
+  { key: 'blog-nice', q: 'Nice Cote dAzur Airport' },
+  { key: 'blog-toulouse', q: 'Toulouse Blagnac Airport' },
+  { key: 'blog-geneve', q: 'Geneva Airport terminal' },
+  { key: 'blog-bruxelles', q: 'Brussels Airport Zaventem' },
+  { key: 'blog-avion', q: 'aircraft wing view from window sky' },
+  { key: 'blog-train', q: 'TGV train France' },
+  { key: 'blog-autoroute', q: 'motorway rest area France aire' },
+  { key: 'blog-centrecommercial', q: 'shopping mall interior atrium' },
 ]
 
 const UA = 'VoyagesHalal-guide-images/1.0 (contact@voyageshalal.fr)'
