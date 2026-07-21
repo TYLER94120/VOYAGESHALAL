@@ -69,16 +69,23 @@ export function useInstantPosition(en = false) {
     if (!initial) { initial = DEFAULT_POS; s = 'default' }
     setPos(initial, s)
 
-    // 4) Géoloc IP en arrière-plan — n'écrase que le défaut
-    if (s === 'default') {
+    // 4) Géoloc IP en arrière-plan — écrase le défaut, ET une position
+    // mémorisée devenue périmée (> 100 km = l'utilisateur a voyagé :
+    // il atterrit à Berkane, sa dernière position était Paris → on bascule)
+    {
+      const base = initial
       fetch('/api/geoip')
         .then((r) => r.json())
         .then((j) => {
-          if (j?.ok && typeof j.lat === 'number') {
+          if (!(j?.ok && typeof j.lat === 'number')) return
+          const p = Math.PI / 180
+          const a = Math.sin(((j.lat - base.lat) * p) / 2) ** 2 + Math.cos(base.lat * p) * Math.cos(j.lat * p) * Math.sin(((j.lng - base.lng) * p) / 2) ** 2
+          const distKm = 6371 * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a))
+          if (s === 'default' || distKm > 100) {
             setPos({ lat: j.lat, lng: j.lng, label: j.city || (en ? 'Around you' : 'Autour de vous') }, 'ip')
           }
         })
-        .catch(() => { /* on garde le défaut */ })
+        .catch(() => { /* on garde la position courante */ })
     }
 
     // 5) GPS silencieux si (et seulement si) la permission est déjà accordée

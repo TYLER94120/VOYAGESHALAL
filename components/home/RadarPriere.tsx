@@ -161,6 +161,15 @@ export default function RadarPriere() {
   return (
     <section style={{ background: 'var(--nuit)', padding: '18px 16px' }}>
       <div style={{ maxWidth: 640, margin: '0 auto', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(201,168,76,0.3)', borderRadius: 20, padding: '16px 18px' }}>
+        {/* Ville utilisée pour le calcul — visible et corrigeable en un tap */}
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 8 }}>
+          <p style={{ fontSize: 11.5, fontWeight: 800, letterSpacing: 1, textTransform: 'uppercase', color: 'rgba(253,250,243,0.45)', margin: 0 }}>
+            {en ? 'Prayer times' : 'Horaires de prière'}
+          </p>
+          <Link href="/horaires-priere" style={{ fontSize: 12.5, fontWeight: 700, color: 'var(--or)', textDecoration: 'none' }}>
+            📍 {pos.label} ▾
+          </Link>
+        </div>
         {/* Double carte « Maintenant / Suivant » (pattern Muslim Pro) */}
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginBottom: 10 }}>
           <div style={{ background: 'rgba(255,255,255,0.06)', borderRadius: 14, padding: '11px 14px' }}>
