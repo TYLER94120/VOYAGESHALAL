@@ -33,10 +33,11 @@ export default function RadarPriere() {
   const [now, setNow] = useState(() => Date.now())
   const [lieu, setLieu] = useState<Lieu | null | undefined>(undefined) // undefined = chargement
 
+  const [fastTick, setFastTick] = useState(false)
   useEffect(() => {
-    const id = setInterval(() => setNow(Date.now()), 30_000)
+    const id = setInterval(() => setNow(Date.now()), fastTick ? 1000 : 30_000)
     return () => clearInterval(id)
-  }, [])
+  }, [fastTick])
 
   // Fenêtre de prière courante : début = heure de la prière, fin = prière
   // suivante (Fajr → lever du soleil ; Isha → Fajr du lendemain)
@@ -53,9 +54,9 @@ export default function RadarPriere() {
         { key: 'Isha', start: today.Isha, end: tomorrow.Fajr },
       ]
       const cur = seq.find((s) => now >= s.start.getTime() && now < s.end.getTime())
-      if (cur) return { ...cur, mode: 'current' as const }
-      const next = seq.find((s) => now < s.start.getTime())
-      if (next) return { ...next, mode: 'upcoming' as const }
+      const next = seq.find((s) => now < s.start.getTime()) ?? { key: 'Fajr', start: tomorrow.Fajr, end: tomorrow.Sunrise }
+      if (cur) return { ...cur, mode: 'current' as const, next }
+      if (next) return { ...next, mode: 'upcoming' as const, next }
       return null
     } catch { return null }
   }, [pos, now])
@@ -93,10 +94,21 @@ export default function RadarPriere() {
     return () => { cancelled = true }
   }, [pos])
 
+  // compte à rebours à la seconde quand une échéance est < 5 min
+  const nearestSec = fenetre ? Math.min(
+    Math.max(0, Math.round(((fenetre.mode === 'current' ? fenetre.end.getTime() : fenetre.start.getTime()) - now) / 1000)),
+    Math.max(0, Math.round((fenetre.next.start.getTime() - now) / 1000)),
+  ) : 9999
+  useEffect(() => { setFastTick(nearestSec < 300) }, [nearestSec < 300])
+
   if (!pos || !fenetre) return null
 
   const nomPriere = FR_NAMES[fenetre.key] ?? fenetre.key
-  const minLeft = Math.max(0, Math.round(((fenetre.mode === 'current' ? fenetre.end.getTime() : fenetre.start.getTime()) - now) / 60000))
+  const boundary = fenetre.mode === 'current' ? fenetre.end.getTime() : fenetre.start.getTime()
+  const secLeft = Math.max(0, Math.round((boundary - now) / 1000))
+  const minLeft = Math.max(0, Math.round(secLeft / 60))
+  const nextStart = fenetre.next.start
+  const nextSec = Math.max(0, Math.round((nextStart.getTime() - now) / 1000))
   const walkMin = lieu ? Math.max(1, Math.round(lieu.distM / 80)) : null // ~4,8 km/h
   // Statut UNIQUEMENT pendant une fenêtre en cours, avec un lieu connu
   const statut = fenetre.mode === 'current' && walkMin != null
@@ -109,25 +121,48 @@ export default function RadarPriere() {
   const C = { vert: '#3BD17A', orange: '#F2A93B', rouge: '#E5484D' } as const
   const barColor = statut ? C[statut] : 'var(--or)'
   const mapsHref = lieu ? `https://www.google.com/maps/dir/?api=1&destination=${lieu.lat},${lieu.lng}&travelmode=walking` : null
+  const fmtClock = (d: Date) => d.toLocaleTimeString(en ? 'en-GB' : 'fr-FR', { hour: '2-digit', minute: '2-digit' })
+  const fmtCompte = (sec: number) => sec < 300
+    ? `${Math.floor(sec / 60)}m ${String(sec % 60).padStart(2, '0')}s`
+    : fmtMin(Math.round(sec / 60), en)
 
   return (
     <section style={{ background: 'var(--nuit)', padding: '18px 16px' }}>
       <div style={{ maxWidth: 640, margin: '0 auto', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(201,168,76,0.3)', borderRadius: 20, padding: '16px 18px' }}>
-        {/* Ligne 1 : la prière + le temps */}
-        <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 10, flexWrap: 'wrap' }}>
-          <p style={{ fontFamily: "'Playfair Display', serif", color: '#fdfaf3', fontSize: 18, fontWeight: 800, margin: 0 }}>
-            🧭 {fenetre.mode === 'current'
-              ? (en ? <>{nomPriere} ends in <span style={{ color: barColor }}>{fmtMin(minLeft, en)}</span></> : <>{nomPriere} se termine dans <span style={{ color: barColor }}>{fmtMin(minLeft, en)}</span></>)
-              : (en ? <>{nomPriere} in <span style={{ color: 'var(--or)' }}>{fmtMin(minLeft, en)}</span></> : <>{nomPriere} dans <span style={{ color: 'var(--or)' }}>{fmtMin(minLeft, en)}</span></>)}
-          </p>
-          {statut && (
-            <span style={{ fontSize: 13.5, fontWeight: 800, color: barColor }}>
-              {statut === 'vert' ? (en ? '🟢 You have time' : '🟢 Tu as le temps')
-                : statut === 'orange' ? (en ? '🟠 Leave now' : '🟠 Pars maintenant')
-                : (en ? '🔴 Pray where you can' : '🔴 Prie où tu peux')}
-            </span>
-          )}
+        {/* Double carte « Maintenant / Suivant » (pattern Muslim Pro) */}
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginBottom: 10 }}>
+          <div style={{ background: 'rgba(255,255,255,0.06)', borderRadius: 14, padding: '11px 14px' }}>
+            <p style={{ fontSize: 11.5, fontWeight: 800, letterSpacing: 1, textTransform: 'uppercase', color: statut ? barColor : 'var(--or)', margin: '0 0 2px' }}>
+              {fenetre.mode === 'current' ? (en ? '● Now' : '● Maintenant') : (en ? 'Upcoming' : 'À venir')} · {nomPriere}
+            </p>
+            <p style={{ fontFamily: "'Playfair Display', serif", color: '#fdfaf3', fontSize: 26, fontWeight: 900, margin: 0, lineHeight: 1.1 }}>
+              {fmtClock(fenetre.start)}
+            </p>
+            <p style={{ fontSize: 12, color: 'rgba(253,250,243,0.6)', margin: '2px 0 0' }}>
+              {fenetre.mode === 'current'
+                ? (en ? `ends in ${fmtCompte(secLeft)}` : `se termine dans ${fmtCompte(secLeft)}`)
+                : (en ? `in ${fmtCompte(secLeft)}` : `dans ${fmtCompte(secLeft)}`)}
+            </p>
+          </div>
+          <div style={{ background: 'rgba(255,255,255,0.06)', borderRadius: 14, padding: '11px 14px' }}>
+            <p style={{ fontSize: 11.5, fontWeight: 800, letterSpacing: 1, textTransform: 'uppercase', color: 'rgba(253,250,243,0.55)', margin: '0 0 2px' }}>
+              {en ? 'Next' : 'Suivant'} · {FR_NAMES[fenetre.next.key] ?? fenetre.next.key}
+            </p>
+            <p style={{ fontFamily: "'Playfair Display', serif", color: '#fdfaf3', fontSize: 26, fontWeight: 900, margin: 0, lineHeight: 1.1 }}>
+              {fmtClock(nextStart)}
+            </p>
+            <p style={{ fontSize: 12, color: 'var(--or)', fontWeight: 700, margin: '2px 0 0' }}>
+              {en ? `in ${fmtCompte(nextSec)}` : `dans ${fmtCompte(nextSec)}`}
+            </p>
+          </div>
         </div>
+        {statut && (
+          <p style={{ fontSize: 13.5, fontWeight: 800, color: barColor, margin: '0 0 8px' }}>
+            {statut === 'vert' ? (en ? '🟢 You have time to reach the mosque' : '🟢 Tu as le temps d\'arriver à la mosquée')
+              : statut === 'orange' ? (en ? '🟠 Leave now' : '🟠 Pars maintenant')
+              : (en ? '🔴 Pray where you can' : '🔴 Prie où tu peux')}
+          </p>
+        )}
         {/* Barre de temps qui se vide */}
         {pct != null && (
           <div style={{ height: 6, borderRadius: 99, background: 'rgba(255,255,255,0.12)', margin: '10px 0 12px', overflow: 'hidden' }} aria-hidden>
