@@ -122,7 +122,7 @@ export default async function HomePage() {
       {/* Hero plein écran minimaliste */}
       <section
         className="relative overflow-hidden flex items-center justify-center text-center px-6"
-        style={{ padding: '40px 24px 30px', backgroundColor: '#0b1a0f' }}
+        style={{ padding: '24px 24px 18px', backgroundColor: '#0b1a0f' }}
       >
         {/* Image d'architecture islamique (sans personne) + voile sombre */}
         <Image
@@ -137,16 +137,16 @@ export default async function HomePage() {
         <IslamicPattern opacity={0.06} />
 
         <div className="relative z-10 max-w-3xl mx-auto w-full">
-          <p style={{ color: '#c9a84c' }} className="text-xs sm:text-sm font-semibold uppercase tracking-[0.35em] mb-4">
+          <p style={{ color: '#c9a84c' }} className="text-xs font-semibold uppercase tracking-[0.35em] mb-2">
             {t.heroEyebrow}
           </p>
           <h1
-            className="text-3xl sm:text-4xl lg:text-5xl text-white leading-[1.08] mb-4"
+            className="text-2xl sm:text-3xl lg:text-4xl text-white leading-[1.08] mb-2"
             style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 900 }}
           >
             {t.heroTitlePre}<span className="gold-em">{t.heroTitleGold}</span>
           </h1>
-          <p className="text-white/70 text-base sm:text-lg leading-relaxed mb-6 max-w-xl mx-auto">
+          <p className="text-white/70 text-sm sm:text-base leading-relaxed mb-4 max-w-xl mx-auto">
             {t.heroSub}
           </p>
 
@@ -157,7 +157,7 @@ export default async function HomePage() {
             href="/communaute"
             style={{
               display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 8,
-              minHeight: 50, padding: '0 24px', marginTop: 14, borderRadius: 999,
+              minHeight: 44, padding: '0 20px', marginTop: 10, borderRadius: 999,
               border: '1.5px solid rgba(201,168,76,0.6)', background: 'rgba(201,168,76,0.12)',
               color: 'var(--creme)', fontWeight: 800, fontSize: 16, textDecoration: 'none',
             }}

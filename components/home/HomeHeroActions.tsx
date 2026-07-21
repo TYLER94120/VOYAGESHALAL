@@ -40,7 +40,7 @@ export default function HomeHeroActions() {
           onClick={handleLocate}
           disabled={loading}
           style={{
-            height: 84, borderRadius: 16, border: 'none',
+            height: 72, borderRadius: 16, border: 'none',
             cursor: loading ? 'not-allowed' : 'pointer', opacity: loading ? 0.75 : 1,
             background: 'var(--or)', color: 'var(--nuit)', fontSize: 16, fontWeight: 800,
             display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 6,
@@ -63,7 +63,7 @@ export default function HomeHeroActions() {
         <button
           onClick={planTrip}
           style={{
-            height: 84, borderRadius: 16, border: '2px solid rgba(201,168,76,0.55)',
+            height: 72, borderRadius: 16, border: '2px solid rgba(201,168,76,0.55)',
             cursor: 'pointer', background: 'rgba(255,255,255,0.06)', color: 'var(--creme)',
             fontSize: 16, fontWeight: 800, backdropFilter: 'blur(8px)',
             display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 6,
