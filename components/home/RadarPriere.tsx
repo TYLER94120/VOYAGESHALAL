@@ -22,14 +22,14 @@ function hav(lat1: number, lng1: number, lat2: number, lng2: number): number {
   return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a))
 }
 const fmtMin = (m: number, en: boolean) => {
-  if (m >= 120) return en ? `${Math.floor(m / 60)} h ${m % 60 ? `${m % 60} min` : ''}`.trim() : `${Math.floor(m / 60)} h ${m % 60 ? `${String(m % 60).padStart(2, '0')}` : ''}`.trim()
+  if (m >= 60) return en ? `${Math.floor(m / 60)} h ${m % 60 ? `${m % 60} min` : ''}`.trim() : `${Math.floor(m / 60)} h ${m % 60 ? `${String(m % 60).padStart(2, '0')}` : ''}`.trim()
   return `${m} min`
 }
 
 export default function RadarPriere() {
   const { lang } = useLanguage()
   const en = lang === 'en'
-  const { pos } = useInstantPosition(en)
+  const { pos, source, geoLoading, refineGps } = useInstantPosition(en)
   const [now, setNow] = useState(() => Date.now())
   const [lieu, setLieu] = useState<Lieu | null | undefined>(undefined) // undefined = chargement
   const [resto, setResto] = useState<Lieu | null | undefined>(undefined) // resto signalé halal le plus proche
@@ -161,15 +161,16 @@ export default function RadarPriere() {
   return (
     <section style={{ background: 'var(--nuit)', padding: '18px 16px' }}>
       <div style={{ maxWidth: 640, margin: '0 auto', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(201,168,76,0.3)', borderRadius: 20, padding: '16px 18px' }}>
-        {/* Ville utilisée pour le calcul — visible et corrigeable en un tap */}
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 8 }}>
-          <p style={{ fontSize: 11.5, fontWeight: 800, letterSpacing: 1, textTransform: 'uppercase', color: 'rgba(253,250,243,0.45)', margin: 0 }}>
-            {en ? 'Prayer times' : 'Horaires de prière'}
-          </p>
-          <Link href="/horaires-priere" style={{ fontSize: 12.5, fontWeight: 700, color: 'var(--or)', textDecoration: 'none' }}>
-            📍 {pos.label} ▾
-          </Link>
-        </div>
+        {/* Ville du calcul : un tap = GPS exact (le roaming fausse la géoloc IP).
+            Tant que la position n'est pas GPS, on invite clairement à ajuster. */}
+        <button
+          onClick={() => { refineGps().then((ok) => { if (!ok) window.location.href = '/horaires-priere' }) }}
+          style={{ display: 'flex', alignItems: 'center', gap: 6, margin: '0 0 8px auto', padding: '5px 12px', borderRadius: 999, border: '1px solid rgba(201,168,76,0.4)', background: 'transparent', color: 'var(--or)', fontSize: 12.5, fontWeight: 700, cursor: 'pointer' }}
+        >
+          {geoLoading ? (en ? '📡 Locating…' : '📡 Localisation…')
+            : source === 'gps' ? `📍 ${pos.label}`
+            : `📍 ${pos.label} · ${en ? 'not you? Tap' : 'pas toi ? Appuie'}`}
+        </button>
         {/* Double carte « Maintenant / Suivant » (pattern Muslim Pro) */}
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginBottom: 10 }}>
           <div style={{ background: 'rgba(255,255,255,0.06)', borderRadius: 14, padding: '11px 14px' }}>
