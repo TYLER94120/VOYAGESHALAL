@@ -40,11 +40,11 @@ export default function HomeHeroActions() {
           onClick={handleLocate}
           disabled={loading}
           style={{
-            height: 72, borderRadius: 16, border: 'none',
+            minHeight: 72, padding: '8px 8px', borderRadius: 16, border: 'none',
             cursor: loading ? 'not-allowed' : 'pointer', opacity: loading ? 0.75 : 1,
             background: 'var(--or)', color: 'var(--nuit)', fontSize: 16, fontWeight: 800,
             display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 6,
-            boxShadow: '0 10px 30px rgba(201,168,76,0.3)', padding: '0 8px', textAlign: 'center', lineHeight: 1.2,
+            boxShadow: '0 10px 30px rgba(201,168,76,0.3)', textAlign: 'center', lineHeight: 1.2,
           }}
         >
           {loading ? (
@@ -54,25 +54,26 @@ export default function HomeHeroActions() {
             </>
           ) : (
             <>
-              <span style={{ fontSize: 26 }}>📍</span>
-              {en ? 'Locate me' : 'Localise-moi'}
-              <span style={{ fontSize: 11, fontWeight: 600, opacity: 0.8 }}>{en ? 'On the spot' : 'Sur place'}</span>
+              {/* Hauteurs fixes : les emojis n'ont pas la même hauteur selon l'OS */}
+              <span style={{ fontSize: 22, height: 26, lineHeight: '26px', display: 'block' }}>📍</span>
+              <span style={{ lineHeight: '20px', display: 'block' }}>{en ? 'Locate me' : 'Localise-moi'}</span>
+              <span style={{ fontSize: 11, fontWeight: 600, opacity: 0.8, lineHeight: '14px', display: 'block' }}>{en ? 'On the spot' : 'Sur place'}</span>
             </>
           )}
         </button>
         <button
           onClick={planTrip}
           style={{
-            height: 72, borderRadius: 16, border: '2px solid rgba(201,168,76,0.55)',
+            minHeight: 72, padding: '8px 8px', borderRadius: 16, border: '2px solid rgba(201,168,76,0.55)',
             cursor: 'pointer', background: 'rgba(255,255,255,0.06)', color: 'var(--creme)',
             fontSize: 16, fontWeight: 800, backdropFilter: 'blur(8px)',
             display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 6,
-            padding: '0 8px', textAlign: 'center', lineHeight: 1.2,
+            textAlign: 'center', lineHeight: 1.2,
           }}
         >
-          <span style={{ fontSize: 26 }}>🧭</span>
-          {en ? 'Plan your trip' : 'Organise ton voyage'}
-          <span style={{ fontSize: 11, fontWeight: 600, opacity: 0.75 }}>{en ? 'Destinations & guides' : 'Destinations & guides'}</span>
+          <span style={{ fontSize: 22, height: 26, lineHeight: '26px', display: 'block' }}>🧭</span>
+          <span style={{ lineHeight: '20px', display: 'block' }}>{en ? 'Plan your trip' : 'Organise ton voyage'}</span>
+          <span style={{ fontSize: 11, fontWeight: 600, opacity: 0.75, lineHeight: '14px', display: 'block' }}>{en ? 'Destinations & guides' : 'Destinations & guides'}</span>
         </button>
       </div>
 
