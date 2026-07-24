@@ -1,554 +1,554 @@
 {
- "slug": "ifrane",
- "nom": "Ifrane",
- "pays": "Maroc",
- "pays_slug": "maroc",
- "continent": "Afrique",
- "region": "Centre du Maroc",
- "coordonnees": {
-  "lat": 33.5228,
-  "lng": -5.1106
- },
- "codeISO": "MA",
- "score_halal": 4.6,
- "halalScore": 9.2,
- "description": "Station de montagne du Moyen Atlas surnommée 'la petite Suisse marocaine'. Air pur, lacs, cèdres et ski en hiver. Université Al Akhawayn.",
- "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Ifrane_lion.jpg/1920px-Ifrane_lion.jpg",
- "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Ifrane_lion.jpg/1920px-Ifrane_lion.jpg",
- "metaDescription": "Station de montagne du Moyen Atlas surnommée 'la petite Suisse marocaine'. Air pur, lacs, cèdres et ski en hiver. Université Al Akhawayn.",
- "monnaie": "MAD (Dirham marocain)",
- "langue": "Arabe, Tamazight, Français",
- "statistiques": {
-  "restaurants_halal": 1,
-  "mosquees": 26,
-  "hotels": 10
- },
- "infoPratique": {
+  "slug": "ifrane",
+  "nom": "Ifrane",
+  "pays": "Maroc",
+  "pays_slug": "maroc",
+  "continent": "Afrique",
+  "region": "Centre du Maroc",
+  "coordonnees": {
+    "lat": 33.5228,
+    "lng": -5.1106
+  },
+  "codeISO": "MA",
+  "score_halal": 4.25,
+  "halalScore": 8.5,
+  "description": "Station de montagne du Moyen Atlas surnommée 'la petite Suisse marocaine'. Air pur, lacs, cèdres et ski en hiver. Université Al Akhawayn.",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Ifrane_lion.jpg/1920px-Ifrane_lion.jpg",
+  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Ifrane_lion.jpg/1920px-Ifrane_lion.jpg",
+  "metaDescription": "Station de montagne du Moyen Atlas surnommée 'la petite Suisse marocaine'. Air pur, lacs, cèdres et ski en hiver. Université Al Akhawayn.",
   "monnaie": "MAD (Dirham marocain)",
   "langue": "Arabe, Tamazight, Français",
-  "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
-  "meilleureEpoque": "Printemps et automne (climat doux)."
- },
- "tags": [
-  "halal",
-  "Maroc"
- ],
- "restaurants": [
-  {
-   "nom": "Platene",
-   "type": "moroccan",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=33.5258853,-5.1161498",
-   "lat": 33.5258853,
-   "lng": -5.1161498,
-   "halalConfidence": "likely",
-   "source": "osm"
-  }
- ],
- "hotels": [
-  {
-   "nom": "Grand Hotel",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=33.5278961,-5.1087156",
-   "lat": 33.5278961,
-   "lng": -5.1087156,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=33.5278961,-5.1087156",
-   "source": "osm"
+  "statistiques": {
+    "restaurants_halal": 1,
+    "mosquees": 26,
+    "hotels": 10
   },
-  {
-   "nom": "Chamonix ⵛⴰⵎⵓⵏⵉ شاموني",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=33.5285296,-5.1067029",
-   "lat": 33.5285296,
-   "lng": -5.1067029,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=33.5285296,-5.1067029",
-   "source": "osm"
+  "infoPratique": {
+    "monnaie": "MAD (Dirham marocain)",
+    "langue": "Arabe, Tamazight, Français",
+    "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
+    "meilleureEpoque": "Printemps et automne (climat doux)."
   },
-  {
-   "nom": "Le Chamonix",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=33.528516,-5.1065314",
-   "lat": 33.528516,
-   "lng": -5.1065314,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=33.528516,-5.1065314",
-   "source": "osm"
-  },
-  {
-   "nom": "L’Empreinte d’Ifrane",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=33.5293628,-5.1075532",
-   "lat": 33.5293628,
-   "lng": -5.1075532,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=33.5293628,-5.1075532",
-   "source": "osm"
-  },
-  {
-   "nom": "Hotel Michliffen",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=33.534537,-5.107741",
-   "lat": 33.534537,
-   "lng": -5.107741,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=33.534537,-5.107741",
-   "source": "osm"
-  },
-  {
-   "nom": "Farah Inn ifrane فرح ان افران",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=33.5183819,-5.1330747",
-   "lat": 33.5183819,
-   "lng": -5.1330747,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=33.5183819,-5.1330747",
-   "source": "osm"
-  },
-  {
-   "nom": "Arz Village Appart Hotel",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=33.517476,-5.134125",
-   "lat": 33.517476,
-   "lng": -5.134125,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=33.517476,-5.134125",
-   "source": "osm"
-  },
-  {
-   "nom": "Lemsieh Appartements Meublés",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=33.543594,-5.118199",
-   "lat": 33.543594,
-   "lng": -5.118199,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=33.543594,-5.118199",
-   "source": "osm"
-  },
-  {
-   "nom": "فندق فرح ان",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=33.517835,-5.135989",
-   "lat": 33.517835,
-   "lng": -5.135989,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=33.517835,-5.135989",
-   "source": "osm"
-  },
-  {
-   "nom": "Atlas house",
-   "categorie": "Maison d'hôtes",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=33.5058283,-5.1679775",
-   "lat": 33.5058283,
-   "lng": -5.1679775,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=33.5058283,-5.1679775",
-   "source": "osm"
-  }
- ],
- "mosqueesPrincipales": [
-  {
-   "nom": "مسجد آيت الطالب سعيد",
-   "lat": 33.4536353,
-   "lng": -5.1678223,
-   "coordonnees": {
-    "lat": 33.4536353,
-    "lng": -5.1678223
-   },
-   "mapsUrl": "https://maps.google.com/?q=33.4536353,-5.1678223",
-   "source": "osm"
-  },
-  {
-   "nom": "salle de prière",
-   "lat": 33.4331858,
-   "lng": -5.2045291,
-   "coordonnees": {
-    "lat": 33.4331858,
-    "lng": -5.2045291
-   },
-   "mapsUrl": "https://maps.google.com/?q=33.4331858,-5.2045291",
-   "source": "osm"
-  },
-  {
-   "id": "osm-96444912",
-   "nom": "Grande Mosquée Ennour المسجد الكبير النور",
-   "type": "mosquee",
-   "lat": 33.4364792,
-   "lng": -5.2218225,
-   "mapsUrl": "https://maps.google.com/?q=33.4364792,-5.2218225",
-   "source": "osm"
-  },
-  {
-   "id": "osm-157598917",
-   "nom": "Masjid Al Akhawayn",
-   "type": "mosquee",
-   "lat": 33.5394451,
-   "lng": -5.1068795,
-   "mapsUrl": "https://maps.google.com/?q=33.5394451,-5.1068795",
-   "source": "osm"
-  },
-  {
-   "id": "osm-363940892",
-   "nom": "Masjid Niger",
-   "type": "mosquee",
-   "lat": 33.5238062,
-   "lng": -5.1161252,
-   "mapsUrl": "https://maps.google.com/?q=33.5238062,-5.1161252",
-   "source": "osm"
-  },
-  {
-   "id": "osm-475879321",
-   "nom": "Masjid Assabab",
-   "type": "mosquee",
-   "lat": 33.4332983,
-   "lng": -5.2179472,
-   "mapsUrl": "https://maps.google.com/?q=33.4332983,-5.2179472",
-   "source": "osm"
-  },
-  {
-   "id": "osm-475879960",
-   "nom": "Masjid Si Mohamed",
-   "type": "mosquee",
-   "lat": 33.4339253,
-   "lng": -5.2224191,
-   "mapsUrl": "https://maps.google.com/?q=33.4339253,-5.2224191",
-   "source": "osm"
-  },
-  {
-   "id": "osm-475880058",
-   "nom": "Masjid Moulay al-Hassan",
-   "type": "mosquee",
-   "lat": 33.4353376,
-   "lng": -5.2216083,
-   "mapsUrl": "https://maps.google.com/?q=33.4353376,-5.2216083",
-   "source": "osm"
-  },
-  {
-   "id": "osm-475880250",
-   "nom": "Masjid Assaâda مسجد السعادة",
-   "type": "mosquee",
-   "lat": 33.4378327,
-   "lng": -5.2274793,
-   "mapsUrl": "https://maps.google.com/?q=33.4378327,-5.2274793",
-   "source": "osm"
-  },
-  {
-   "id": "osm-475882159",
-   "nom": "Masjid Ahadaf مسجد أحداف",
-   "type": "mosquee",
-   "lat": 33.4416253,
-   "lng": -5.225425,
-   "mapsUrl": "https://maps.google.com/?q=33.4416253,-5.225425",
-   "source": "osm"
-  },
-  {
-   "id": "osm-475882250",
-   "nom": "Masjid Jadid",
-   "type": "mosquee",
-   "lat": 33.443635,
-   "lng": -5.2247829,
-   "mapsUrl": "https://maps.google.com/?q=33.443635,-5.2247829",
-   "source": "osm"
-  },
-  {
-   "id": "osm-475882460",
-   "nom": "Masjid Al Ikhlass مسجد الاخلاص",
-   "type": "mosquee",
-   "lat": 33.4469968,
-   "lng": -5.2262924,
-   "mapsUrl": "https://maps.google.com/?q=33.4469968,-5.2262924",
-   "source": "osm"
-  },
-  {
-   "id": "osm-475882683",
-   "nom": "Masjid al-Falah مسجد الفلاح",
-   "type": "mosquee",
-   "lat": 33.4517363,
-   "lng": -5.2296591,
-   "mapsUrl": "https://maps.google.com/?q=33.4517363,-5.2296591",
-   "source": "osm"
-  },
-  {
-   "id": "osm-475882823",
-   "nom": "Masjid Arraha",
-   "type": "mosquee",
-   "lat": 33.4460755,
-   "lng": -5.2182194,
-   "mapsUrl": "https://maps.google.com/?q=33.4460755,-5.2182194",
-   "source": "osm"
-  },
-  {
-   "id": "osm-475883525",
-   "nom": "Masjid al-Ihsan مسجد الإحسان",
-   "type": "mosquee",
-   "lat": 33.4422272,
-   "lng": -5.2305754,
-   "mapsUrl": "https://maps.google.com/?q=33.4422272,-5.2305754",
-   "source": "osm"
-  },
-  {
-   "id": "osm-475885204",
-   "nom": "Mosquée Tarik",
-   "type": "mosquee",
-   "lat": 33.451238,
-   "lng": -5.2330002,
-   "mapsUrl": "https://maps.google.com/?q=33.451238,-5.2330002",
-   "source": "osm"
-  },
-  {
-   "id": "osm-482573087",
-   "nom": "Masjid Mohammed VI مسجد محمد السادس",
-   "type": "mosquee",
-   "lat": 33.5210563,
-   "lng": -5.122187,
-   "mapsUrl": "https://maps.google.com/?q=33.5210563,-5.122187",
-   "source": "osm"
-  },
-  {
-   "id": "osm-482891772",
-   "nom": "Masjid Quartier Atlas",
-   "type": "mosquee",
-   "lat": 33.536348,
-   "lng": -5.1187491,
-   "mapsUrl": "https://maps.google.com/?q=33.536348,-5.1187491",
-   "source": "osm"
-  },
-  {
-   "id": "osm-1271413344",
-   "nom": "Masjid",
-   "type": "mosquee",
-   "lat": 33.445598,
-   "lng": -5.2235805,
-   "mapsUrl": "https://maps.google.com/?q=33.445598,-5.2235805",
-   "source": "osm"
-  },
-  {
-   "id": "osm-1271414445",
-   "nom": "مسجد عمر بن الخطاب",
-   "type": "mosquee",
-   "lat": 33.4524885,
-   "lng": -5.2221957,
-   "mapsUrl": "https://maps.google.com/?q=33.4524885,-5.2221957",
-   "source": "osm"
-  },
-  {
-   "id": "osm-1271416663",
-   "nom": "مسجد الأزهر",
-   "type": "mosquee",
-   "lat": 33.434655,
-   "lng": -5.2318362,
-   "mapsUrl": "https://maps.google.com/?q=33.434655,-5.2318362",
-   "source": "osm"
-  },
-  {
-   "id": "osm-1271416666",
-   "nom": "مسجد الصالحين",
-   "type": "mosquee",
-   "lat": 33.4306312,
-   "lng": -5.2252136,
-   "mapsUrl": "https://maps.google.com/?q=33.4306312,-5.2252136",
-   "source": "osm"
-  },
-  {
-   "id": "osm-1271417778",
-   "nom": "Masjid Khadija",
-   "type": "mosquee",
-   "lat": 33.4429902,
-   "lng": -5.1950176,
-   "mapsUrl": "https://maps.google.com/?q=33.4429902,-5.1950176",
-   "source": "osm"
-  },
-  {
-   "id": "osm-1271419453",
-   "nom": "Masjid Abou Bakr Seddik",
-   "type": "mosquee",
-   "lat": 33.5401314,
-   "lng": -5.1185659,
-   "mapsUrl": "https://maps.google.com/?q=33.5401314,-5.1185659",
-   "source": "osm"
-  },
-  {
-   "id": "osm-1300619618",
-   "nom": "مسجد السنة",
-   "type": "mosquee",
-   "lat": 33.4497227,
-   "lng": -5.2229051,
-   "mapsUrl": "https://maps.google.com/?q=33.4497227,-5.2229051",
-   "source": "osm"
-  },
-  {
-   "id": "osm-1300635631",
-   "nom": "Mosquée Adam",
-   "type": "mosquee",
-   "lat": 33.447326,
-   "lng": -5.2321934,
-   "mapsUrl": "https://maps.google.com/?q=33.447326,-5.2321934",
-   "source": "osm"
-  }
- ],
- "activites": [
-  {
-   "nom": "Parque de jeux enfants",
-   "lat": 33.5253152,
-   "lng": -5.1142573,
-   "coordonnees": {
-    "lat": 33.5253152,
-    "lng": -5.1142573
-   },
-   "categorie": "Famille",
-   "mapsUrl": "https://maps.google.com/?q=33.5253152,-5.1142573",
-   "source": "osm"
-  },
-  {
-   "nom": "Statue de Lion تمثال الأسد",
-   "lat": 33.5284243,
-   "lng": -5.1058876,
-   "coordonnees": {
-    "lat": 33.5284243,
-    "lng": -5.1058876
-   },
-   "categorie": "Histoire",
-   "mapsUrl": "https://maps.google.com/?q=33.5284243,-5.1058876",
-   "source": "osm"
-  },
-  {
-   "nom": "Monkeys",
-   "lat": 33.4944875,
-   "lng": -5.1235743,
-   "coordonnees": {
-    "lat": 33.4944875,
-    "lng": -5.1235743
-   },
-   "categorie": "À voir",
-   "mapsUrl": "https://maps.google.com/?q=33.4944875,-5.1235743",
-   "source": "osm"
-  },
-  {
-   "nom": "Wild Monkeys",
-   "lat": 33.4793507,
-   "lng": -5.1354266,
-   "coordonnees": {
-    "lat": 33.4793507,
-    "lng": -5.1354266
-   },
-   "categorie": "Famille",
-   "mapsUrl": "https://maps.google.com/?q=33.4793507,-5.1354266",
-   "source": "osm"
-  },
-  {
-   "nom": "Park Ras Elma",
-   "lat": 33.476901,
-   "lng": -5.1365704,
-   "coordonnees": {
-    "lat": 33.476901,
-    "lng": -5.1365704
-   },
-   "categorie": "Nature",
-   "mapsUrl": "https://maps.google.com/?q=33.476901,-5.1365704",
-   "source": "osm"
-  },
-  {
-   "nom": "Ifrane forêt",
-   "lat": 33.4786663,
-   "lng": -5.1555706,
-   "coordonnees": {
-    "lat": 33.4786663,
-    "lng": -5.1555706
-   },
-   "categorie": "Panorama",
-   "mapsUrl": "https://maps.google.com/?q=33.4786663,-5.1555706",
-   "source": "osm"
-  },
-  {
-   "nom": "Station de Pisciculture Ras El Ma",
-   "lat": 33.464258,
-   "lng": -5.1485279,
-   "coordonnees": {
-    "lat": 33.464258,
-    "lng": -5.1485279
-   },
-   "categorie": "À voir",
-   "mapsUrl": "https://maps.google.com/?q=33.464258,-5.1485279",
-   "source": "osm"
-  },
-  {
-   "nom": "Sidi Rashid Park (Ras Al Ma'a)",
-   "lat": 33.4584175,
-   "lng": -5.1485311,
-   "coordonnees": {
-    "lat": 33.4584175,
-    "lng": -5.1485311
-   },
-   "categorie": "Nature",
-   "mapsUrl": "https://maps.google.com/?q=33.4584175,-5.1485311",
-   "source": "osm"
-  },
-  {
-   "nom": "Cèdre de Gouraud",
-   "lat": 33.4263682,
-   "lng": -5.1553786,
-   "coordonnees": {
-    "lat": 33.4263682,
-    "lng": -5.1553786
-   },
-   "categorie": "À voir",
-   "mapsUrl": "https://maps.google.com/?q=33.4263682,-5.1553786",
-   "source": "osm"
-  },
-  {
-   "nom": "Monkey forest",
-   "lat": 33.4196737,
-   "lng": -5.075919,
-   "coordonnees": {
-    "lat": 33.4196737,
-    "lng": -5.075919
-   },
-   "categorie": "À voir",
-   "mapsUrl": "https://maps.google.com/?q=33.4196737,-5.075919",
-   "source": "osm"
-  },
-  {
-   "nom": "Musée Régional Berbère",
-   "lat": 33.4347639,
-   "lng": -5.2228815,
-   "coordonnees": {
-    "lat": 33.4347639,
-    "lng": -5.2228815
-   },
-   "categorie": "Culture",
-   "mapsUrl": "https://maps.google.com/?q=33.4347639,-5.2228815",
-   "source": "osm"
-  },
-  {
-   "nom": "ضايةعوا",
-   "lat": 33.6523238,
-   "lng": -5.0295765,
-   "coordonnees": {
-    "lat": 33.6523238,
-    "lng": -5.0295765
-   },
-   "categorie": "À voir",
-   "mapsUrl": "https://maps.google.com/?q=33.6523238,-5.0295765",
-   "source": "osm"
-  }
- ],
- "imageCredit": "Wikimedia Commons",
- "osmEnriched": true,
- "osmEnrichedAt": "2026-07-15",
- "description_en": "Ifrane, in Morocco, is a halal-friendly destination with a Halal Trust Score of 4.6/5. Muslim travelers will find 1 halal restaurants listed, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
- "metaDescription_en": "Halal guide to Ifrane: 1 halal restaurants listed, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.6/5.",
- "nom_en": "Ifrane",
- "boucheries": [],
- "dataPurgedAt": "2026-07-15"
+  "tags": [
+    "halal",
+    "Maroc"
+  ],
+  "restaurants": [
+    {
+      "nom": "Platene",
+      "type": "moroccan",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=33.5258853,-5.1161498",
+      "lat": 33.5258853,
+      "lng": -5.1161498,
+      "halalConfidence": "likely",
+      "source": "osm"
+    }
+  ],
+  "hotels": [
+    {
+      "nom": "Grand Hotel",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=33.5278961,-5.1087156",
+      "lat": 33.5278961,
+      "lng": -5.1087156,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=33.5278961,-5.1087156",
+      "source": "osm"
+    },
+    {
+      "nom": "Chamonix ⵛⴰⵎⵓⵏⵉ شاموني",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=33.5285296,-5.1067029",
+      "lat": 33.5285296,
+      "lng": -5.1067029,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=33.5285296,-5.1067029",
+      "source": "osm"
+    },
+    {
+      "nom": "Le Chamonix",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=33.528516,-5.1065314",
+      "lat": 33.528516,
+      "lng": -5.1065314,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=33.528516,-5.1065314",
+      "source": "osm"
+    },
+    {
+      "nom": "L’Empreinte d’Ifrane",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=33.5293628,-5.1075532",
+      "lat": 33.5293628,
+      "lng": -5.1075532,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=33.5293628,-5.1075532",
+      "source": "osm"
+    },
+    {
+      "nom": "Hotel Michliffen",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=33.534537,-5.107741",
+      "lat": 33.534537,
+      "lng": -5.107741,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=33.534537,-5.107741",
+      "source": "osm"
+    },
+    {
+      "nom": "Farah Inn ifrane فرح ان افران",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=33.5183819,-5.1330747",
+      "lat": 33.5183819,
+      "lng": -5.1330747,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=33.5183819,-5.1330747",
+      "source": "osm"
+    },
+    {
+      "nom": "Arz Village Appart Hotel",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=33.517476,-5.134125",
+      "lat": 33.517476,
+      "lng": -5.134125,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=33.517476,-5.134125",
+      "source": "osm"
+    },
+    {
+      "nom": "Lemsieh Appartements Meublés",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=33.543594,-5.118199",
+      "lat": 33.543594,
+      "lng": -5.118199,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=33.543594,-5.118199",
+      "source": "osm"
+    },
+    {
+      "nom": "فندق فرح ان",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=33.517835,-5.135989",
+      "lat": 33.517835,
+      "lng": -5.135989,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=33.517835,-5.135989",
+      "source": "osm"
+    },
+    {
+      "nom": "Atlas house",
+      "categorie": "Maison d'hôtes",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=33.5058283,-5.1679775",
+      "lat": 33.5058283,
+      "lng": -5.1679775,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=33.5058283,-5.1679775",
+      "source": "osm"
+    }
+  ],
+  "mosqueesPrincipales": [
+    {
+      "nom": "مسجد آيت الطالب سعيد",
+      "lat": 33.4536353,
+      "lng": -5.1678223,
+      "coordonnees": {
+        "lat": 33.4536353,
+        "lng": -5.1678223
+      },
+      "mapsUrl": "https://maps.google.com/?q=33.4536353,-5.1678223",
+      "source": "osm"
+    },
+    {
+      "nom": "salle de prière",
+      "lat": 33.4331858,
+      "lng": -5.2045291,
+      "coordonnees": {
+        "lat": 33.4331858,
+        "lng": -5.2045291
+      },
+      "mapsUrl": "https://maps.google.com/?q=33.4331858,-5.2045291",
+      "source": "osm"
+    },
+    {
+      "id": "osm-96444912",
+      "nom": "Grande Mosquée Ennour المسجد الكبير النور",
+      "type": "mosquee",
+      "lat": 33.4364792,
+      "lng": -5.2218225,
+      "mapsUrl": "https://maps.google.com/?q=33.4364792,-5.2218225",
+      "source": "osm"
+    },
+    {
+      "id": "osm-157598917",
+      "nom": "Masjid Al Akhawayn",
+      "type": "mosquee",
+      "lat": 33.5394451,
+      "lng": -5.1068795,
+      "mapsUrl": "https://maps.google.com/?q=33.5394451,-5.1068795",
+      "source": "osm"
+    },
+    {
+      "id": "osm-363940892",
+      "nom": "Masjid Niger",
+      "type": "mosquee",
+      "lat": 33.5238062,
+      "lng": -5.1161252,
+      "mapsUrl": "https://maps.google.com/?q=33.5238062,-5.1161252",
+      "source": "osm"
+    },
+    {
+      "id": "osm-475879321",
+      "nom": "Masjid Assabab",
+      "type": "mosquee",
+      "lat": 33.4332983,
+      "lng": -5.2179472,
+      "mapsUrl": "https://maps.google.com/?q=33.4332983,-5.2179472",
+      "source": "osm"
+    },
+    {
+      "id": "osm-475879960",
+      "nom": "Masjid Si Mohamed",
+      "type": "mosquee",
+      "lat": 33.4339253,
+      "lng": -5.2224191,
+      "mapsUrl": "https://maps.google.com/?q=33.4339253,-5.2224191",
+      "source": "osm"
+    },
+    {
+      "id": "osm-475880058",
+      "nom": "Masjid Moulay al-Hassan",
+      "type": "mosquee",
+      "lat": 33.4353376,
+      "lng": -5.2216083,
+      "mapsUrl": "https://maps.google.com/?q=33.4353376,-5.2216083",
+      "source": "osm"
+    },
+    {
+      "id": "osm-475880250",
+      "nom": "Masjid Assaâda مسجد السعادة",
+      "type": "mosquee",
+      "lat": 33.4378327,
+      "lng": -5.2274793,
+      "mapsUrl": "https://maps.google.com/?q=33.4378327,-5.2274793",
+      "source": "osm"
+    },
+    {
+      "id": "osm-475882159",
+      "nom": "Masjid Ahadaf مسجد أحداف",
+      "type": "mosquee",
+      "lat": 33.4416253,
+      "lng": -5.225425,
+      "mapsUrl": "https://maps.google.com/?q=33.4416253,-5.225425",
+      "source": "osm"
+    },
+    {
+      "id": "osm-475882250",
+      "nom": "Masjid Jadid",
+      "type": "mosquee",
+      "lat": 33.443635,
+      "lng": -5.2247829,
+      "mapsUrl": "https://maps.google.com/?q=33.443635,-5.2247829",
+      "source": "osm"
+    },
+    {
+      "id": "osm-475882460",
+      "nom": "Masjid Al Ikhlass مسجد الاخلاص",
+      "type": "mosquee",
+      "lat": 33.4469968,
+      "lng": -5.2262924,
+      "mapsUrl": "https://maps.google.com/?q=33.4469968,-5.2262924",
+      "source": "osm"
+    },
+    {
+      "id": "osm-475882683",
+      "nom": "Masjid al-Falah مسجد الفلاح",
+      "type": "mosquee",
+      "lat": 33.4517363,
+      "lng": -5.2296591,
+      "mapsUrl": "https://maps.google.com/?q=33.4517363,-5.2296591",
+      "source": "osm"
+    },
+    {
+      "id": "osm-475882823",
+      "nom": "Masjid Arraha",
+      "type": "mosquee",
+      "lat": 33.4460755,
+      "lng": -5.2182194,
+      "mapsUrl": "https://maps.google.com/?q=33.4460755,-5.2182194",
+      "source": "osm"
+    },
+    {
+      "id": "osm-475883525",
+      "nom": "Masjid al-Ihsan مسجد الإحسان",
+      "type": "mosquee",
+      "lat": 33.4422272,
+      "lng": -5.2305754,
+      "mapsUrl": "https://maps.google.com/?q=33.4422272,-5.2305754",
+      "source": "osm"
+    },
+    {
+      "id": "osm-475885204",
+      "nom": "Mosquée Tarik",
+      "type": "mosquee",
+      "lat": 33.451238,
+      "lng": -5.2330002,
+      "mapsUrl": "https://maps.google.com/?q=33.451238,-5.2330002",
+      "source": "osm"
+    },
+    {
+      "id": "osm-482573087",
+      "nom": "Masjid Mohammed VI مسجد محمد السادس",
+      "type": "mosquee",
+      "lat": 33.5210563,
+      "lng": -5.122187,
+      "mapsUrl": "https://maps.google.com/?q=33.5210563,-5.122187",
+      "source": "osm"
+    },
+    {
+      "id": "osm-482891772",
+      "nom": "Masjid Quartier Atlas",
+      "type": "mosquee",
+      "lat": 33.536348,
+      "lng": -5.1187491,
+      "mapsUrl": "https://maps.google.com/?q=33.536348,-5.1187491",
+      "source": "osm"
+    },
+    {
+      "id": "osm-1271413344",
+      "nom": "Masjid",
+      "type": "mosquee",
+      "lat": 33.445598,
+      "lng": -5.2235805,
+      "mapsUrl": "https://maps.google.com/?q=33.445598,-5.2235805",
+      "source": "osm"
+    },
+    {
+      "id": "osm-1271414445",
+      "nom": "مسجد عمر بن الخطاب",
+      "type": "mosquee",
+      "lat": 33.4524885,
+      "lng": -5.2221957,
+      "mapsUrl": "https://maps.google.com/?q=33.4524885,-5.2221957",
+      "source": "osm"
+    },
+    {
+      "id": "osm-1271416663",
+      "nom": "مسجد الأزهر",
+      "type": "mosquee",
+      "lat": 33.434655,
+      "lng": -5.2318362,
+      "mapsUrl": "https://maps.google.com/?q=33.434655,-5.2318362",
+      "source": "osm"
+    },
+    {
+      "id": "osm-1271416666",
+      "nom": "مسجد الصالحين",
+      "type": "mosquee",
+      "lat": 33.4306312,
+      "lng": -5.2252136,
+      "mapsUrl": "https://maps.google.com/?q=33.4306312,-5.2252136",
+      "source": "osm"
+    },
+    {
+      "id": "osm-1271417778",
+      "nom": "Masjid Khadija",
+      "type": "mosquee",
+      "lat": 33.4429902,
+      "lng": -5.1950176,
+      "mapsUrl": "https://maps.google.com/?q=33.4429902,-5.1950176",
+      "source": "osm"
+    },
+    {
+      "id": "osm-1271419453",
+      "nom": "Masjid Abou Bakr Seddik",
+      "type": "mosquee",
+      "lat": 33.5401314,
+      "lng": -5.1185659,
+      "mapsUrl": "https://maps.google.com/?q=33.5401314,-5.1185659",
+      "source": "osm"
+    },
+    {
+      "id": "osm-1300619618",
+      "nom": "مسجد السنة",
+      "type": "mosquee",
+      "lat": 33.4497227,
+      "lng": -5.2229051,
+      "mapsUrl": "https://maps.google.com/?q=33.4497227,-5.2229051",
+      "source": "osm"
+    },
+    {
+      "id": "osm-1300635631",
+      "nom": "Mosquée Adam",
+      "type": "mosquee",
+      "lat": 33.447326,
+      "lng": -5.2321934,
+      "mapsUrl": "https://maps.google.com/?q=33.447326,-5.2321934",
+      "source": "osm"
+    }
+  ],
+  "activites": [
+    {
+      "nom": "Parque de jeux enfants",
+      "lat": 33.5253152,
+      "lng": -5.1142573,
+      "coordonnees": {
+        "lat": 33.5253152,
+        "lng": -5.1142573
+      },
+      "categorie": "Famille",
+      "mapsUrl": "https://maps.google.com/?q=33.5253152,-5.1142573",
+      "source": "osm"
+    },
+    {
+      "nom": "Statue de Lion تمثال الأسد",
+      "lat": 33.5284243,
+      "lng": -5.1058876,
+      "coordonnees": {
+        "lat": 33.5284243,
+        "lng": -5.1058876
+      },
+      "categorie": "Histoire",
+      "mapsUrl": "https://maps.google.com/?q=33.5284243,-5.1058876",
+      "source": "osm"
+    },
+    {
+      "nom": "Monkeys",
+      "lat": 33.4944875,
+      "lng": -5.1235743,
+      "coordonnees": {
+        "lat": 33.4944875,
+        "lng": -5.1235743
+      },
+      "categorie": "À voir",
+      "mapsUrl": "https://maps.google.com/?q=33.4944875,-5.1235743",
+      "source": "osm"
+    },
+    {
+      "nom": "Wild Monkeys",
+      "lat": 33.4793507,
+      "lng": -5.1354266,
+      "coordonnees": {
+        "lat": 33.4793507,
+        "lng": -5.1354266
+      },
+      "categorie": "Famille",
+      "mapsUrl": "https://maps.google.com/?q=33.4793507,-5.1354266",
+      "source": "osm"
+    },
+    {
+      "nom": "Park Ras Elma",
+      "lat": 33.476901,
+      "lng": -5.1365704,
+      "coordonnees": {
+        "lat": 33.476901,
+        "lng": -5.1365704
+      },
+      "categorie": "Nature",
+      "mapsUrl": "https://maps.google.com/?q=33.476901,-5.1365704",
+      "source": "osm"
+    },
+    {
+      "nom": "Ifrane forêt",
+      "lat": 33.4786663,
+      "lng": -5.1555706,
+      "coordonnees": {
+        "lat": 33.4786663,
+        "lng": -5.1555706
+      },
+      "categorie": "Panorama",
+      "mapsUrl": "https://maps.google.com/?q=33.4786663,-5.1555706",
+      "source": "osm"
+    },
+    {
+      "nom": "Station de Pisciculture Ras El Ma",
+      "lat": 33.464258,
+      "lng": -5.1485279,
+      "coordonnees": {
+        "lat": 33.464258,
+        "lng": -5.1485279
+      },
+      "categorie": "À voir",
+      "mapsUrl": "https://maps.google.com/?q=33.464258,-5.1485279",
+      "source": "osm"
+    },
+    {
+      "nom": "Sidi Rashid Park (Ras Al Ma'a)",
+      "lat": 33.4584175,
+      "lng": -5.1485311,
+      "coordonnees": {
+        "lat": 33.4584175,
+        "lng": -5.1485311
+      },
+      "categorie": "Nature",
+      "mapsUrl": "https://maps.google.com/?q=33.4584175,-5.1485311",
+      "source": "osm"
+    },
+    {
+      "nom": "Cèdre de Gouraud",
+      "lat": 33.4263682,
+      "lng": -5.1553786,
+      "coordonnees": {
+        "lat": 33.4263682,
+        "lng": -5.1553786
+      },
+      "categorie": "À voir",
+      "mapsUrl": "https://maps.google.com/?q=33.4263682,-5.1553786",
+      "source": "osm"
+    },
+    {
+      "nom": "Monkey forest",
+      "lat": 33.4196737,
+      "lng": -5.075919,
+      "coordonnees": {
+        "lat": 33.4196737,
+        "lng": -5.075919
+      },
+      "categorie": "À voir",
+      "mapsUrl": "https://maps.google.com/?q=33.4196737,-5.075919",
+      "source": "osm"
+    },
+    {
+      "nom": "Musée Régional Berbère",
+      "lat": 33.4347639,
+      "lng": -5.2228815,
+      "coordonnees": {
+        "lat": 33.4347639,
+        "lng": -5.2228815
+      },
+      "categorie": "Culture",
+      "mapsUrl": "https://maps.google.com/?q=33.4347639,-5.2228815",
+      "source": "osm"
+    },
+    {
+      "nom": "ضايةعوا",
+      "lat": 33.6523238,
+      "lng": -5.0295765,
+      "coordonnees": {
+        "lat": 33.6523238,
+        "lng": -5.0295765
+      },
+      "categorie": "À voir",
+      "mapsUrl": "https://maps.google.com/?q=33.6523238,-5.0295765",
+      "source": "osm"
+    }
+  ],
+  "imageCredit": "Wikimedia Commons",
+  "osmEnriched": true,
+  "osmEnrichedAt": "2026-07-15",
+  "description_en": "Ifrane, in Morocco, is a halal-friendly destination with a Halal Trust Score of 4.6/5. Muslim travelers will find 1 halal restaurants listed, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
+  "metaDescription_en": "Halal guide to Ifrane: 1 halal restaurants listed, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.6/5.",
+  "nom_en": "Ifrane",
+  "boucheries": [],
+  "dataPurgedAt": "2026-07-15"
 }

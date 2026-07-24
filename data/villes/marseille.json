@@ -1,2858 +1,2858 @@
 {
- "slug": "marseille",
- "nom": "Marseille",
- "pays": "France",
- "pays_slug": "france",
- "drapeau": "🇫🇷",
- "region": "Europe",
- "coordonnees": {
-  "lat": 43.2965,
-  "lng": 5.3698
- },
- "score_halal": 3.9,
- "score_securite": 3,
- "score_famille": 4,
- "score_budget": 4,
- "description": "Marseille est la ville française avec la plus forte proportion de musulmans, estimée à environ 30% de la population. Porte de l'Orient, la cité phocéenne offre une scène halal exceptionnelle : quartier de Noailles, cuisine maghrébine, turque, sénégalaise et libanaise. Une ville authentique, populaire et profondément méditerranéenne.",
- "image_hero": "https://images.unsplash.com/photo-1689864480104-35fbbd99c81c?w=1600&q=80",
- "image_alt": "Vue panoramique du Vieux-Port de Marseille avec Notre-Dame de la Garde en arrière-plan",
- "meta_title": "Marseille Halal — Restaurants, Mosquées & Guide Complet 2026",
- "meta_description": "Guide complet Marseille halal 2026 : meilleurs restaurants halal, mosquées, quartiers musulmans. La ville française la plus halal-friendly.",
- "statistiques": {
-  "mosquees": 20,
-  "restaurants_halal": 90,
-  "hotels_halal": 12,
-  "habitants_musulmans_pct": 30,
-  "hotels": 113
- },
- "infos_pratiques": {
-  "langue": "Français",
-  "monnaie": "Euro (EUR)",
-  "taux_change_eur": "Monnaie locale",
-  "visa": "Pas de visa (UE/Schengen)",
-  "meilleure_periode": "Mai–Juin, Septembre–Octobre",
-  "appel_priere": "Applications (Muslim Pro, Athan) — pas d'appel public en France",
-  "nourriture_halal": "Très abondante dans les quartiers de Noailles, Belsunce, 3e et 13e arrondissements — variable en dehors de ces zones",
-  "alcool": "Omniprésent en dehors des restaurants halal signalés",
-  "tenue": "Liberté de tenue — le voile est autorisé dans les espaces publics",
-  "securite": "Certains quartiers (nord de Marseille) demandent vigilance — les zones touristiques sont sûres",
-  "transports": "Métro (2 lignes), tram, bus RTM. Navette ferry pour les îles du Frioul."
- },
- "meteo_par_mois": [
-  {
-   "mois": "Janvier",
-   "temp_max": 12,
-   "temp_min": 5,
-   "pluie_jours": 8,
-   "ensoleillement_h": 5,
-   "conseil": "Mistral fréquent, mais doux pour la saison"
-  },
-  {
-   "mois": "Février",
-   "temp_max": 13,
-   "temp_min": 5,
-   "pluie_jours": 7,
-   "ensoleillement_h": 6,
-   "conseil": "Idéal pour visiter les musées sans foule"
-  },
-  {
-   "mois": "Mars",
-   "temp_max": 16,
-   "temp_min": 8,
-   "pluie_jours": 7,
-   "ensoleillement_h": 7,
-   "conseil": "La nature reverdit, les Calanques sont belles"
-  },
-  {
-   "mois": "Avril",
-   "temp_max": 18,
-   "temp_min": 10,
-   "pluie_jours": 9,
-   "ensoleillement_h": 8,
-   "conseil": "Bonne période, les terrasses s'ouvrent"
-  },
-  {
-   "mois": "Mai",
-   "temp_max": 22,
-   "temp_min": 13,
-   "pluie_jours": 7,
-   "ensoleillement_h": 9,
-   "conseil": "Idéal pour les Calanques avant l'affluence"
-  },
-  {
-   "mois": "Juin",
-   "temp_max": 27,
-   "temp_min": 18,
-   "pluie_jours": 4,
-   "ensoleillement_h": 11,
-   "conseil": "Début d'été, plages accessibles"
-  },
-  {
-   "mois": "Juillet",
-   "temp_max": 30,
-   "temp_min": 21,
-   "pluie_jours": 2,
-   "ensoleillement_h": 12,
-   "conseil": "Haute saison, Calanques fermées l'après-midi (risque feu)"
-  },
-  {
-   "mois": "Août",
-   "temp_max": 30,
-   "temp_min": 21,
-   "pluie_jours": 3,
-   "ensoleillement_h": 11,
-   "conseil": "Très touristique, chaleur forte — profiter le matin"
-  },
-  {
-   "mois": "Septembre",
-   "temp_max": 26,
-   "temp_min": 18,
-   "pluie_jours": 5,
-   "ensoleillement_h": 9,
-   "conseil": "Meilleur mois : mer chaude, moins de monde"
-  },
-  {
-   "mois": "Octobre",
-   "temp_max": 21,
-   "temp_min": 14,
-   "pluie_jours": 8,
-   "ensoleillement_h": 7,
-   "conseil": "Agréable, parfait pour randonnées Calanques"
-  },
-  {
-   "mois": "Novembre",
-   "temp_max": 16,
-   "temp_min": 9,
-   "pluie_jours": 9,
-   "ensoleillement_h": 5,
-   "conseil": "Mistral revient, bonnes affaires hôtelières"
-  },
-  {
-   "mois": "Décembre",
-   "temp_max": 12,
-   "temp_min": 6,
-   "pluie_jours": 8,
-   "ensoleillement_h": 4,
-   "conseil": "Fêtes de fin d'année, ambiance unique au Vieux-Port"
-  }
- ],
- "restaurants": [
-  {
-   "nom": "Le Par Azar",
-   "lat": 43.2975988,
-   "lng": 5.3709341,
-   "type": "french, lebanese",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2975988,5.3709341",
-   "source": "osm"
-  },
-  {
-   "nom": "Yasmine",
-   "lat": 43.2961286,
-   "lng": 5.3679445,
-   "type": "lebanese",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2961286,5.3679445",
-   "source": "osm"
-  },
-  {
-   "nom": "Kebab Berliner",
-   "lat": 43.2968547,
-   "lng": 5.3721317,
-   "type": "kebab",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2968547,5.3721317",
-   "source": "osm"
-  },
-  {
-   "nom": "Welcome to Istanbul",
-   "lat": 43.297894,
-   "lng": 5.373026,
-   "type": "kebab",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.297894,5.373026",
-   "source": "osm"
-  },
-  {
-   "nom": "La Kahena",
-   "lat": 43.2964752,
-   "lng": 5.3741968,
-   "type": "couscous",
-   "halalConfidence": "high",
-   "mapsUrl": "https://maps.google.com/?q=43.2964752,5.3741968",
-   "source": "osm"
-  },
-  {
-   "nom": "Cedar",
-   "lat": 43.2978064,
-   "lng": 5.3655684,
-   "type": "lebanese",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2978064,5.3655684",
-   "source": "osm"
-  },
-  {
-   "nom": "Berliner - Marseille",
-   "lat": 43.293749,
-   "lng": 5.373217,
-   "type": "kebab",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.293749,5.373217",
-   "source": "osm"
-  },
-  {
-   "nom": "Elyssa",
-   "lat": 43.2927339,
-   "lng": 5.3689063,
-   "type": "tunisian",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2927339,5.3689063",
-   "source": "osm"
-  },
-  {
-   "nom": "Chez Tamar",
-   "lat": 43.2995376,
-   "lng": 5.3664648,
-   "type": "lebanese, oriental",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2995376,5.3664648",
-   "source": "osm"
-  },
-  {
-   "nom": "Le Sri Ganesh",
-   "lat": 43.2926692,
-   "lng": 5.3721084,
-   "type": "indian",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2926692,5.3721084",
-   "source": "osm"
-  },
-  {
-   "nom": "Ashoka",
-   "lat": 43.2930627,
-   "lng": 5.3737508,
-   "type": "indian",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2930627,5.3737508",
-   "source": "osm"
-  },
-  {
-   "nom": "Brasserie l'Opera",
-   "lat": 43.2936802,
-   "lng": 5.3753644,
-   "type": "syrian",
-   "halalConfidence": "high",
-   "mapsUrl": "https://maps.google.com/?q=43.2936802,5.3753644",
-   "source": "osm"
-  },
-  {
-   "nom": "L'heure de Marseille",
-   "lat": 43.2953086,
-   "lng": 5.3765541,
-   "type": "indian, pakistani",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2953086,5.3765541",
-   "source": "osm"
-  },
-  {
-   "nom": "Mont Liban",
-   "lat": 43.2918804,
-   "lng": 5.3728546,
-   "type": "lebanese",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2918804,5.3728546",
-   "source": "osm"
-  },
-  {
-   "nom": "Chicken Street",
-   "lat": 43.2988058,
-   "lng": 5.3760957,
-   "type": "chicken",
-   "halalConfidence": "certified",
-   "mapsUrl": "https://maps.google.com/?q=43.2988058,5.3760957",
-   "source": "osm"
-  },
-  {
-   "nom": "Les Violettes",
-   "lat": 43.2927999,
-   "lng": 5.3750764,
-   "type": "kebab, pizza, sandwich",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2927999,5.3750764",
-   "source": "osm"
-  },
-  {
-   "nom": "Ankara Grill",
-   "lat": 43.2982294,
-   "lng": 5.377092,
-   "type": "kebab, turkish",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2982294,5.377092",
-   "source": "osm"
-  },
-  {
-   "nom": "le libanais contemporain",
-   "lat": 43.291732,
-   "lng": 5.3741314,
-   "type": "lebanese",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.291732,5.3741314",
-   "source": "osm"
-  },
-  {
-   "nom": "Le Bodrum",
-   "lat": 43.2955575,
-   "lng": 5.3777166,
-   "type": "kebab",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2955575,5.3777166",
-   "source": "osm"
-  },
-  {
-   "nom": "La Goulette",
-   "lat": 43.2907132,
-   "lng": 5.3670917,
-   "type": "tunisian",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2907132,5.3670917",
-   "source": "osm"
-  },
-  {
-   "nom": "Cirta",
-   "lat": 43.3007585,
-   "lng": 5.3759126,
-   "type": "arab, grill",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.3007585,5.3759126",
-   "source": "osm"
-  },
-  {
-   "nom": "Sur le pouce",
-   "lat": 43.3029058,
-   "lng": 5.3694142,
-   "type": "moroccan",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.3029058,5.3694142",
-   "source": "osm"
-  },
-  {
-   "nom": "Chez Yassine",
-   "lat": 43.2956591,
-   "lng": 5.3788513,
-   "type": "arab",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2956591,5.3788513",
-   "source": "osm"
-  },
-  {
-   "nom": "Le Soleil",
-   "lat": 43.3008039,
-   "lng": 5.3770009,
-   "type": "arab, grill",
-   "halalConfidence": "high",
-   "mapsUrl": "https://maps.google.com/?q=43.3008039,5.3770009",
-   "source": "osm"
-  },
-  {
-   "nom": "Chez Soi",
-   "lat": 43.2967419,
-   "lng": 5.3802868,
-   "type": "arab, african, grill, mediterranean, tea",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2967419,5.3802868",
-   "source": "osm"
-  },
-  {
-   "nom": "Saray grill",
-   "lat": 43.2996626,
-   "lng": 5.3806054,
-   "type": "kebab, steak house, turkish",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2996626,5.3806054",
-   "source": "osm"
-  },
-  {
-   "nom": "Le Mirage",
-   "lat": 43.295647,
-   "lng": 5.3817833,
-   "type": "kebab, sandwich",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.295647,5.3817833",
-   "source": "osm"
-  },
-  {
-   "nom": "Izmir",
-   "lat": 43.3012338,
-   "lng": 5.3804188,
-   "type": "kebab, turkish",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.3012338,5.3804188",
-   "source": "osm"
-  },
-  {
-   "nom": "Frisch Cag Kebap",
-   "lat": 43.2952609,
-   "lng": 5.3829258,
-   "type": "kebab",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2952609,5.3829258",
-   "source": "osm"
-  },
-  {
-   "nom": "Mido",
-   "lat": 43.2938566,
-   "lng": 5.3829713,
-   "type": "kebab, egyptian",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2938566,5.3829713",
-   "source": "osm"
-  },
-  {
-   "nom": "Makhlouf",
-   "lat": 43.2889317,
-   "lng": 5.378773,
-   "type": "lebanese",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2889317,5.378773",
-   "source": "osm"
-  },
-  {
-   "nom": "Papyrus",
-   "lat": 43.290808,
-   "lng": 5.3813024,
-   "type": "kebab, mediterranean, pizza",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.290808,5.3813024",
-   "source": "osm"
-  },
-  {
-   "nom": "Yam by Nour",
-   "lat": 43.2930282,
-   "lng": 5.3832153,
-   "type": "arab, mediterranean, oriental, sandwich",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2930282,5.3832153",
-   "source": "osm"
-  },
-  {
-   "nom": "Marokko Street",
-   "lat": 43.2900994,
-   "lng": 5.3820847,
-   "type": "moroccan",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2900994,5.3820847",
-   "source": "osm"
-  },
-  {
-   "nom": "Dwish Burger",
-   "lat": 43.2945514,
-   "lng": 5.3847643,
-   "type": "kebab, burger, tacos",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2945514,5.3847643",
-   "source": "osm"
-  },
-  {
-   "nom": "Le Baobab",
-   "lat": 43.2997968,
-   "lng": 5.3843248,
-   "type": "senegalese",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2997968,5.3843248",
-   "source": "osm"
-  },
-  {
-   "nom": "Wadina",
-   "lat": 43.2862957,
-   "lng": 5.377544,
-   "type": "lebanese",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2862957,5.377544",
-   "source": "osm"
-  },
-  {
-   "nom": "Rajasthan",
-   "lat": 43.2915325,
-   "lng": 5.3846136,
-   "type": "indian",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2915325,5.3846136",
-   "source": "osm"
-  },
-  {
-   "nom": "Durum",
-   "lat": 43.2933241,
-   "lng": 5.3857174,
-   "type": "lebanese",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2933241,5.3857174",
-   "source": "osm"
-  },
-  {
-   "nom": "Le sampiero",
-   "lat": 43.3085836,
-   "lng": 5.3707391,
-   "type": "arab",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.3085836,5.3707391",
-   "source": "osm"
-  },
-  {
-   "nom": "Le Tarpin Bon",
-   "lat": 43.2888297,
-   "lng": 5.3827482,
-   "type": "kebab",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2888297,5.3827482",
-   "source": "osm"
-  },
-  {
-   "nom": "DK'S Food",
-   "lat": 43.3064282,
-   "lng": 5.3802163,
-   "type": "kebab",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.3064282,5.3802163",
-   "source": "osm"
-  },
-  {
-   "nom": "L’européen",
-   "lat": 43.308995,
-   "lng": 5.3716686,
-   "type": "pizza, kebab, french tacos",
-   "halalConfidence": "high",
-   "mapsUrl": "https://maps.google.com/?q=43.308995,5.3716686",
-   "source": "osm"
-  },
-  {
-   "nom": "Le Paki",
-   "lat": 43.294321,
-   "lng": 5.3869752,
-   "type": "pakistani, street food, traditional",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.294321,5.3869752",
-   "source": "osm"
-  },
-  {
-   "nom": "Modo PIZZA",
-   "lat": 43.308567,
-   "lng": 5.3773335,
-   "type": "pizza",
-   "halalConfidence": "high",
-   "mapsUrl": "https://maps.google.com/?q=43.308567,5.3773335",
-   "source": "osm"
-  },
-  {
-   "nom": "Ashourya",
-   "lat": 43.3015554,
-   "lng": 5.387485,
-   "type": "lebanese",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.3015554,5.387485",
-   "source": "osm"
-  },
-  {
-   "nom": "Grillade - Salon de thé 7/7",
-   "lat": 43.2864284,
-   "lng": 5.3850484,
-   "type": "kebab",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2864284,5.3850484",
-   "source": "osm"
-  },
-  {
-   "nom": "Le 100",
-   "lat": 43.2829884,
-   "lng": 5.3787237,
-   "type": "french, moroccan",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2829884,5.3787237",
-   "source": "osm"
-  },
-  {
-   "nom": "Timgad",
-   "lat": 43.309755,
-   "lng": 5.3794264,
-   "type": "kebab",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.309755,5.3794264",
-   "source": "osm"
-  },
-  {
-   "nom": "Rafraf",
-   "lat": 43.3116869,
-   "lng": 5.3726505,
-   "type": "arab, kebab",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.3116869,5.3726505",
-   "source": "osm"
-  },
-  {
-   "nom": "Zaaki",
-   "lat": 43.2954606,
-   "lng": 5.3923674,
-   "type": "syrian,  palestinian",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2954606,5.3923674",
-   "source": "osm"
-  },
-  {
-   "nom": "La Fontaine",
-   "lat": 43.2848987,
-   "lng": 5.3858482,
-   "type": "Restaurant",
-   "halalConfidence": "high",
-   "mapsUrl": "https://maps.google.com/?q=43.2848987,5.3858482",
-   "source": "osm"
-  },
-  {
-   "nom": "Namaste",
-   "lat": 43.2836196,
-   "lng": 5.3854639,
-   "type": "indian",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2836196,5.3854639",
-   "source": "osm"
-  },
-  {
-   "nom": "L'Étoile de Beyrouth",
-   "lat": 43.2850901,
-   "lng": 5.3897776,
-   "type": "lebanese",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2850901,5.3897776",
-   "source": "osm"
-  },
-  {
-   "nom": "Inci Restaurant",
-   "lat": 43.3029599,
-   "lng": 5.396331,
-   "type": "kebab, sandwich, steak house, turkish",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.3029599,5.396331",
-   "source": "osm"
-  },
-  {
-   "nom": "Rendez-Vous",
-   "lat": 43.3010155,
-   "lng": 5.3974194,
-   "type": "lebanese, greek, armenian",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.3010155,5.3974194",
-   "source": "osm"
-  },
-  {
-   "nom": "Factory Food",
-   "lat": 43.301164,
-   "lng": 5.3986136,
-   "type": "Restaurant",
-   "halalConfidence": "high",
-   "mapsUrl": "https://maps.google.com/?q=43.301164,5.3986136",
-   "source": "osm"
-  },
-  {
-   "nom": "L'escale Marocaine",
-   "lat": 43.314767,
-   "lng": 5.386025,
-   "type": "moroccan",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.314767,5.386025",
-   "source": "osm"
-  },
-  {
-   "nom": "Master K",
-   "lat": 43.2939678,
-   "lng": 5.4005916,
-   "type": "kebab",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2939678,5.4005916",
-   "source": "osm"
-  },
-  {
-   "nom": "oh!bowls",
-   "lat": 43.2784077,
-   "lng": 5.3893065,
-   "type": "indonesian",
-   "halalConfidence": "high",
-   "mapsUrl": "https://maps.google.com/?q=43.2784077,5.3893065",
-   "source": "osm"
-  },
-  {
-   "nom": "Mimas",
-   "lat": 43.3068911,
-   "lng": 5.3999265,
-   "type": "arab, kebab",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.3068911,5.3999265",
-   "source": "osm"
-  },
-  {
-   "nom": "Ritheje",
-   "lat": 43.3033468,
-   "lng": 5.4035,
-   "type": "kebab",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.3033468,5.4035",
-   "source": "osm"
-  },
-  {
-   "nom": "LIbanexpress",
-   "lat": 43.3075158,
-   "lng": 5.4030215,
-   "type": "lebanese",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.3075158,5.4030215",
-   "source": "osm"
-  },
-  {
-   "nom": "L'antidote",
-   "lat": 43.3105016,
-   "lng": 5.402151,
-   "type": "kebab, oriental",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.3105016,5.402151",
-   "source": "osm"
-  },
-  {
-   "nom": "Les délices du Prado",
-   "lat": 43.2734326,
-   "lng": 5.3912124,
-   "type": "moroccan, french",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2734326,5.3912124",
-   "source": "osm"
-  },
-  {
-   "nom": "Tat Kebab Salonu",
-   "lat": 43.3246113,
-   "lng": 5.3673108,
-   "type": "kebab",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.3246113,5.3673108",
-   "source": "osm"
-  },
-  {
-   "nom": "Les Amis",
-   "lat": 43.3230674,
-   "lng": 5.382704,
-   "type": "turkish, kurdish",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.3230674,5.382704",
-   "source": "osm"
-  },
-  {
-   "nom": "La Rôtisserie des Saveurs",
-   "lat": 43.3271275,
-   "lng": 5.3640577,
-   "type": "couscous, middle eastern",
-   "halalConfidence": "high",
-   "mapsUrl": "https://maps.google.com/?q=43.3271275,5.3640577",
-   "source": "osm"
-  },
-  {
-   "nom": "Baladi",
-   "lat": 43.2646799,
-   "lng": 5.3739063,
-   "type": "lebanese",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2646799,5.3739063",
-   "source": "osm"
-  },
-  {
-   "nom": "Bombay Grill",
-   "lat": 43.2635462,
-   "lng": 5.3741196,
-   "type": "indian",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2635462,5.3741196",
-   "source": "osm"
-  },
-  {
-   "nom": "King",
-   "lat": 43.3297299,
-   "lng": 5.3655269,
-   "type": "sandwich, pizza, arab",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.3297299,5.3655269",
-   "source": "osm"
-  },
-  {
-   "nom": "Le Tarpin Bon - Saint Barnabé",
-   "lat": 43.3045166,
-   "lng": 5.4152949,
-   "type": "kebab",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.3045166,5.4152949",
-   "source": "osm"
-  },
-  {
-   "nom": "La Broche",
-   "lat": 43.2696136,
-   "lng": 5.4032357,
-   "type": "kebab",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2696136,5.4032357",
-   "source": "osm"
-  },
-  {
-   "nom": "Les Plaisirs de Carthage",
-   "lat": 43.2694596,
-   "lng": 5.4086125,
-   "type": "tunisian",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2694596,5.4086125",
-   "source": "osm"
-  },
-  {
-   "nom": "BBC Barbecue",
-   "lat": 43.2797626,
-   "lng": 5.4185126,
-   "type": "kebab",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2797626,5.4185126",
-   "source": "osm"
-  },
-  {
-   "nom": "Club Chiken",
-   "lat": 43.3224395,
-   "lng": 5.4128387,
-   "type": "burger, kebab, tacos",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.3224395,5.4128387",
-   "source": "osm"
-  },
-  {
-   "nom": "Le 223",
-   "lat": 43.3369131,
-   "lng": 5.3551638,
-   "type": "sandwich, burger",
-   "halalConfidence": "certified",
-   "mapsUrl": "https://maps.google.com/?q=43.3369131,5.3551638",
-   "source": "osm"
-  },
-  {
-   "nom": "Bharati",
-   "lat": 43.2543048,
-   "lng": 5.3753775,
-   "type": "indian, pakistani",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2543048,5.3753775",
-   "source": "osm"
-  },
-  {
-   "nom": "Les Trésors du Liban",
-   "lat": 43.2620951,
-   "lng": 5.4040099,
-   "type": "lebanese",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2620951,5.4040099",
-   "source": "osm"
-  },
-  {
-   "nom": "Le Delice",
-   "lat": 43.282372,
-   "lng": 5.430084,
-   "type": "kebab",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.282372,5.430084",
-   "source": "osm"
-  },
-  {
-   "nom": "Bosphore",
-   "lat": 43.2490912,
-   "lng": 5.3895127,
-   "type": "turkish",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2490912,5.3895127",
-   "source": "osm"
-  },
-  {
-   "nom": "Chez Alex",
-   "lat": 43.2569961,
-   "lng": 5.4111041,
-   "type": "burger, french tacos, kebab, sandwich",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.2569961,5.4111041",
-   "source": "osm"
-  },
-  {
-   "nom": "Grill Kebab",
-   "lat": 43.3274666,
-   "lng": 5.4239314,
-   "type": "kebab",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.3274666,5.4239314",
-   "source": "osm"
-  },
-  {
-   "nom": "Les délices de Rania",
-   "lat": 43.3353672,
-   "lng": 5.4202637,
-   "type": "lebanese",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.3353672,5.4202637",
-   "source": "osm"
-  },
-  {
-   "nom": "Chiken Food",
-   "lat": 43.3565768,
-   "lng": 5.3572588,
-   "type": "indian",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.3565768,5.3572588",
-   "source": "osm"
-  },
-  {
-   "nom": "Snack Kebab",
-   "lat": 43.3593742,
-   "lng": 5.3326007,
-   "type": "kebab",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.3593742,5.3326007",
-   "source": "osm"
-  },
-  {
-   "nom": "Les Mezzés",
-   "lat": 43.3517345,
-   "lng": 5.4387394,
-   "type": "lebanese",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.3517345,5.4387394",
-   "source": "osm"
-  },
-  {
-   "nom": "Restaurant Le Palmier",
-   "lat": 43.3607695,
-   "lng": 5.3144333,
-   "type": "moroccan",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.3607695,5.3144333",
-   "source": "osm"
-  },
-  {
-   "nom": "Le Palais du Maharajah",
-   "lat": 43.3041891,
-   "lng": 5.4744994,
-   "type": "indian",
-   "halalConfidence": "likely",
-   "mapsUrl": "https://maps.google.com/?q=43.3041891,5.4744994",
-   "source": "osm"
-  },
-  {
-   "nom": "Mezzo Di Pasta Marseille La Valentine",
-   "lat": 43.2940521,
-   "lng": 5.4780127,
-   "type": "Restaurant",
-   "halalConfidence": "high",
-   "mapsUrl": "https://maps.google.com/?q=43.2940521,5.4780127",
-   "source": "osm"
-  }
- ],
- "mosquees": [],
- "hotels": [
-  {
-   "nom": "Hôtel Belle-Vue",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2964908,5.3719774",
-   "lat": 43.2964908,
-   "lng": 5.3719774,
-   "halalFriendly": false,
-   "bookingUrl": "https://www.hotelbellevuemarseille.com/",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Hermès",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2965924,5.3719855",
-   "lat": 43.2965924,
-   "lng": 5.3719855,
-   "halalFriendly": false,
-   "bookingUrl": "https://www.hotelmarseille.com/en/",
-   "source": "osm"
-  },
-  {
-   "nom": "Hotel Bellevue Marseille",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2964951,5.3720778",
-   "lat": 43.2964951,
-   "lng": 5.3720778,
-   "halalFriendly": false,
-   "bookingUrl": "https://hotelbellevuemarseille.com/",
-   "source": "osm"
-  },
-  {
-   "nom": "InterContinental",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2985615,5.3699167",
-   "lat": 43.2985615,
-   "lng": 5.3699167,
-   "halalFriendly": false,
-   "bookingUrl": "https://marseille.intercontinental.com/",
-   "source": "osm"
-  },
-  {
-   "nom": "La Residence du Vieux Port",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2965597,5.3727464",
-   "lat": 43.2965597,
-   "lng": 5.3727464,
-   "halalFriendly": false,
-   "bookingUrl": "https://www.hotel-residence-marseille.com/",
-   "source": "osm"
-  },
-  {
-   "nom": "ResidHotel - Vieux port",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2968664,5.3728142",
-   "lat": 43.2968664,
-   "lng": 5.3728142,
-   "halalFriendly": false,
-   "bookingUrl": "https://www.residhotel.com/residence/marseille-vieux-port/",
-   "source": "osm"
-  },
-  {
-   "nom": "Maison boa",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2994896,5.3688214",
-   "lat": 43.2994896,
-   "lng": 5.3688214,
-   "halalFriendly": false,
-   "bookingUrl": "https://maison-boa.worhot.com/",
-   "source": "osm"
-  },
-  {
-   "nom": "Le Panisse",
-   "categorie": "Maison d'hôtes",
-   "priceRange": "€€€",
-   "score": 3,
-   "mapsUrl": "https://maps.google.com/?q=43.2996469,5.3676284",
-   "lat": 43.2996469,
-   "lng": 5.3676284,
-   "halalFriendly": false,
-   "bookingUrl": "http://www.sunflats.com",
-   "source": "osm"
-  },
-  {
-   "nom": "Pernod Ricard Club",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2956363,5.3746499",
-   "lat": 43.2956363,
-   "lng": 5.3746499,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.2956363,5.3746499",
-   "source": "osm"
-  },
-  {
-   "nom": "New Hôtel Le Quai Vieux-Port",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2960728,5.3748366",
-   "lat": 43.2960728,
-   "lng": 5.3748366,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.2960728,5.3748366",
-   "source": "osm"
-  },
-  {
-   "nom": "Escale Oceania",
-   "categorie": "Hôtel",
-   "priceRange": "€€€",
-   "score": 3,
-   "mapsUrl": "https://maps.google.com/?q=43.295639,5.3748188",
-   "lat": 43.295639,
-   "lng": 5.3748188,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.295639,5.3748188",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Beauvau",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2950067,5.3748603",
-   "lat": 43.2950067,
-   "lng": 5.3748603,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.2950067,5.3748603",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Carré Vieux-Port",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.294923,5.375049",
-   "lat": 43.294923,
-   "lng": 5.375049,
-   "halalFriendly": false,
-   "bookingUrl": "https://www.hotel-carre-vieux-port.com",
-   "source": "osm"
-  },
-  {
-   "nom": "Life hôtel VP",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.294409,5.374869",
-   "lat": 43.294409,
-   "lng": 5.374869,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.294409,5.374869",
-   "source": "osm"
-  },
-  {
-   "nom": "Maisons du Monde hôtel",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2940799,5.3746395",
-   "lat": 43.2940799,
-   "lng": 5.3746395,
-   "halalFriendly": false,
-   "bookingUrl": "https://marseille.maisonsdumondehotel.com",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Europe",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.294573,5.375202",
-   "lat": 43.294573,
-   "lng": 5.375202,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.294573,5.375202",
-   "source": "osm"
-  },
-  {
-   "nom": "Mercure Centre Vieux Port",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2986125,5.3751931",
-   "lat": 43.2986125,
-   "lng": 5.3751931,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.2986125,5.3751931",
-   "source": "osm"
-  },
-  {
-   "nom": "The People Hostel",
-   "categorie": "Auberge",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.3011063,5.3710972",
-   "lat": 43.3011063,
-   "lng": 5.3710972,
-   "halalFriendly": false,
-   "bookingUrl": "https://www.thepeoplehostel.com",
-   "source": "osm"
-  },
-  {
-   "nom": "Ibis Budget",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2925289,5.3734984",
-   "lat": 43.2925289,
-   "lng": 5.3734984,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.2925289,5.3734984",
-   "source": "osm"
-  },
-  {
-   "nom": "Mr Chou Marseille Opéra",
-   "categorie": "Maison d'hôtes",
-   "priceRange": "€€€",
-   "score": 3,
-   "mapsUrl": "https://maps.google.com/?q=43.2937147,5.3753485",
-   "lat": 43.2937147,
-   "lng": 5.3753485,
-   "halalFriendly": false,
-   "bookingUrl": "http://www.sunflats.com",
-   "source": "osm"
-  },
-  {
-   "nom": "Etap Hotel",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2922209,5.3736588",
-   "lat": 43.2922209,
-   "lng": 5.3736588,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.2922209,5.3736588",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Ligo by Happyculture",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.3015653,5.3708897",
-   "lat": 43.3015653,
-   "lng": 5.3708897,
-   "halalFriendly": false,
-   "bookingUrl": "https://www.hotel-ligo.com",
-   "source": "osm"
-  },
-  {
-   "nom": "Staycity Aparthotels Marseille",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.3005013,5.3747782",
-   "lat": 43.3005013,
-   "lng": 5.3747782,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.3005013,5.3747782",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Sainte-Marie",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2986812,5.3768271",
-   "lat": 43.2986812,
-   "lng": 5.3768271,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.2986812,5.3768271",
-   "source": "osm"
-  },
-  {
-   "nom": "Hello Marseilles",
-   "categorie": "Auberge",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2921491,5.3749207",
-   "lat": 43.2921491,
-   "lng": 5.3749207,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.2921491,5.3749207",
-   "source": "osm"
-  },
-  {
-   "nom": "Hotel Marsiho by HappyCulture",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2973492,5.3775919",
-   "lat": 43.2973492,
-   "lng": 5.3775919,
-   "halalFriendly": false,
-   "bookingUrl": "https://www.hotel-marsiho.com/",
-   "source": "osm"
-  },
-  {
-   "nom": "NH Collection Marseille",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.3024523,5.368841",
-   "lat": 43.3024523,
-   "lng": 5.368841,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.3024523,5.368841",
-   "source": "osm"
-  },
-  {
-   "nom": "Maisons du Monde suites",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2932562,5.3771072",
-   "lat": 43.2932562,
-   "lng": 5.3771072,
-   "halalFriendly": false,
-   "bookingUrl": "https://marseille.maisonsdumondehotel.com",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Saint-Louis",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2959868,5.3786967",
-   "lat": 43.2959868,
-   "lng": 5.3786967,
-   "halalFriendly": false,
-   "bookingUrl": "http://maison-saintlouis.com/",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel du Mucem by Esteem",
-   "categorie": "Hôtel",
-   "priceRange": "€€€",
-   "score": 3,
-   "mapsUrl": "https://maps.google.com/?q=43.3024809,5.3657786",
-   "lat": 43.3024809,
-   "lng": 5.3657786,
-   "halalFriendly": false,
-   "bookingUrl": "https://www.hotel-mucem.com/",
-   "source": "osm"
-  },
-  {
-   "nom": "Residhome",
-   "categorie": "Appartement",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.3026199,5.3655801",
-   "lat": 43.3026199,
-   "lng": 5.3655801,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.3026199,5.3655801",
-   "source": "osm"
-  },
-  {
-   "nom": "Hotel Gallieni",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.3016086,5.3760707",
-   "lat": 43.3016086,
-   "lng": 5.3760707,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.3016086,5.3760707",
-   "source": "osm"
-  },
-  {
-   "nom": "Mercure",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2967118,5.3792652",
-   "lat": 43.2967118,
-   "lng": 5.3792652,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.2967118,5.3792652",
-   "source": "osm"
-  },
-  {
-   "nom": "Hotel Terminus",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.3030742,5.3660429",
-   "lat": 43.3030742,
-   "lng": 5.3660429,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.3030742,5.3660429",
-   "source": "osm"
-  },
-  {
-   "nom": "Montgrand",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2913316,5.3766135",
-   "lat": 43.2913316,
-   "lng": 5.3766135,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.2913316,5.3766135",
-   "source": "osm"
-  },
-  {
-   "nom": "Montgrand Réception",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2911101,5.3763809",
-   "lat": 43.2911101,
-   "lng": 5.3763809,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.2911101,5.3763809",
-   "source": "osm"
-  },
-  {
-   "nom": "Zenitude Hôtel-Résidences Marseille Saint-Charles",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.3019386,5.3764947",
-   "lat": 43.3019386,
-   "lng": 5.3764947,
-   "halalFriendly": false,
-   "bookingUrl": "https://www.zenitude-hotel-residences.com/residences/marseille-saint-charles/",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel La Joliette by Esteem",
-   "categorie": "Hôtel",
-   "priceRange": "€€€€",
-   "score": 4,
-   "mapsUrl": "https://maps.google.com/?q=43.3036884,5.3665071",
-   "lat": 43.3036884,
-   "lng": 5.3665071,
-   "halalFriendly": false,
-   "bookingUrl": "https://www.hotel-joliette.com",
-   "source": "osm"
-  },
-  {
-   "nom": "Sofitel Vieux Port",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2926593,5.3606074",
-   "lat": 43.2926593,
-   "lng": 5.3606074,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.2926593,5.3606074",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Panoramique",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2992636,5.3798294",
-   "lat": 43.2992636,
-   "lng": 5.3798294,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.2992636,5.3798294",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Moderne",
-   "categorie": "Auberge",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.294599,5.3802919",
-   "lat": 43.294599,
-   "lng": 5.3802919,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.294599,5.3802919",
-   "source": "osm"
-  },
-  {
-   "nom": "Novotel",
-   "categorie": "Hôtel",
-   "priceRange": "€€€€",
-   "score": 4,
-   "mapsUrl": "https://maps.google.com/?q=43.2928441,5.3601504",
-   "lat": 43.2928441,
-   "lng": 5.3601504,
-   "halalFriendly": false,
-   "bookingUrl": "https://all.accor.com/hotel/0911/index.fr.shtml",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Duc",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2985522,5.3807319",
-   "lat": 43.2985522,
-   "lng": 5.3807319,
-   "halalFriendly": false,
-   "bookingUrl": "http://www.duchotel.sitew.fr/",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Victory",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2986713,5.3807394",
-   "lat": 43.2986713,
-   "lng": 5.3807394,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.2986713,5.3807394",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Européen",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2987849,5.3807161",
-   "lat": 43.2987849,
-   "lng": 5.3807161,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.2987849,5.3807161",
-   "source": "osm"
-  },
-  {
-   "nom": "New Hotel Marseille",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2918903,5.360065",
-   "lat": 43.2918903,
-   "lng": 5.360065,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.2918903,5.360065",
-   "source": "osm"
-  },
-  {
-   "nom": "Massilia",
-   "categorie": "Hôtel",
-   "priceRange": "€€€",
-   "score": 3,
-   "mapsUrl": "https://maps.google.com/?q=43.3006848,5.3801197",
-   "lat": 43.3006848,
-   "lng": 5.3801197,
-   "halalFriendly": false,
-   "bookingUrl": "https://www.massilia-hotel.fr/",
-   "source": "osm"
-  },
-  {
-   "nom": "Toyoko Inn",
-   "categorie": "Hôtel",
-   "priceRange": "€€€",
-   "score": 3,
-   "mapsUrl": "https://maps.google.com/?q=43.304471,5.3742985",
-   "lat": 43.304471,
-   "lng": 5.3742985,
-   "halalFriendly": false,
-   "bookingUrl": "https://france.toyoko-inn.com/",
-   "source": "osm"
-  },
-  {
-   "nom": "B&b Hôtel",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.3050143,5.3679433",
-   "lat": 43.3050143,
-   "lng": 5.3679433,
-   "halalFriendly": false,
-   "bookingUrl": "https://www.hotel-bb.com/fr/hotels/marseille-centre-la-joliette.htm",
-   "source": "osm"
-  },
-  {
-   "nom": "New Hotel Select",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2988642,5.3812103",
-   "lat": 43.2988642,
-   "lng": 5.3812103,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.2988642,5.3812103",
-   "source": "osm"
-  },
-  {
-   "nom": "Casa Ortega",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.3017257,5.3793604",
-   "lat": 43.3017257,
-   "lng": 5.3793604,
-   "halalFriendly": false,
-   "bookingUrl": "casa-ortega.fr",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Le Panoramique",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.3012237,5.3798961",
-   "lat": 43.3012237,
-   "lng": 5.3798961,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.3012237,5.3798961",
-   "source": "osm"
-  },
-  {
-   "nom": "Urban Loft Marseille",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.3016288,5.3795195",
-   "lat": 43.3016288,
-   "lng": 5.3795195,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.3016288,5.3795195",
-   "source": "osm"
-  },
-  {
-   "nom": "Alex Hôtel",
-   "categorie": "Hôtel",
-   "priceRange": "€€€",
-   "score": 3,
-   "mapsUrl": "https://maps.google.com/?q=43.3015627,5.3796123",
-   "lat": 43.3015627,
-   "lng": 5.3796123,
-   "halalFriendly": false,
-   "bookingUrl": "https://www.alex-hotel.fr/",
-   "source": "osm"
-  },
-  {
-   "nom": "Hotel Anora",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.3012372,5.379999",
-   "lat": 43.3012372,
-   "lng": 5.379999,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.3012372,5.379999",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Garibaldi",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2969697,5.3819252",
-   "lat": 43.2969697,
-   "lng": 5.3819252,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.2969697,5.3819252",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Terminus Saint-Charles",
-   "categorie": "Hôtel",
-   "priceRange": "€€€",
-   "score": 3,
-   "mapsUrl": "https://maps.google.com/?q=43.3012773,5.3801979",
-   "lat": 43.3012773,
-   "lng": 5.3801979,
-   "halalFriendly": false,
-   "bookingUrl": "https://www.hotelterminusmarseille.fr/",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel de France",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.3021954,5.3794548",
-   "lat": 43.3021954,
-   "lng": 5.3794548,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.3021954,5.3794548",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel des Platanes",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2969932,5.3823483",
-   "lat": 43.2969932,
-   "lng": 5.3823483,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.2969932,5.3823483",
-   "source": "osm"
-  },
-  {
-   "nom": "Holiday Inn Express Marseille Saint-Charles",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.3026454,5.3791103",
-   "lat": 43.3026454,
-   "lng": 5.3791103,
-   "halalFriendly": false,
-   "bookingUrl": "https://all.accor.com/hotel/C461/index.fr.shtml",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Ariana",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2972091,5.3823324",
-   "lat": 43.2972091,
-   "lng": 5.3823324,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.2972091,5.3823324",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel de l'Ariana",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2972394,5.3823372",
-   "lat": 43.2972394,
-   "lng": 5.3823372,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.2972394,5.3823372",
-   "source": "osm"
-  },
-  {
-   "nom": "Meininger Hotel",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.3056563,5.3710775",
-   "lat": 43.3056563,
-   "lng": 5.3710775,
-   "halalFriendly": false,
-   "bookingUrl": "https://meininger-hotels.com",
-   "source": "osm"
-  },
-  {
-   "nom": "Ibis Styles",
-   "categorie": "Hôtel",
-   "priceRange": "€€€",
-   "score": 3,
-   "mapsUrl": "https://maps.google.com/?q=43.3011242,5.3808095",
-   "lat": 43.3011242,
-   "lng": 5.3808095,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.3011242,5.3808095",
-   "source": "osm"
-  },
-  {
-   "nom": "Le Printemps",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.3030424,5.3788547",
-   "lat": 43.3030424,
-   "lng": 5.3788547,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.3030424,5.3788547",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Windsor",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.3013134,5.3807919",
-   "lat": 43.3013134,
-   "lng": 5.3807919,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.3013134,5.3807919",
-   "source": "osm"
-  },
-  {
-   "nom": "Pension Edelweiss",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.3000345,5.3817244",
-   "lat": 43.3000345,
-   "lng": 5.3817244,
-   "halalFriendly": false,
-   "bookingUrl": "https://pension-edelweiss.fr/",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Sylvabelle",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2888835,5.377581",
-   "lat": 43.2888835,
-   "lng": 5.377581,
-   "halalFriendly": false,
-   "bookingUrl": "http://www.hotel-sylvabelle-marseille.com",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel de Toulon",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2972564,5.383054",
-   "lat": 43.2972564,
-   "lng": 5.383054,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.2972564,5.383054",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Lutetia",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "score": 2,
-   "mapsUrl": "https://maps.google.com/?q=43.2988254,5.382838",
-   "lat": 43.2988254,
-   "lng": 5.382838,
-   "halalFriendly": false,
-   "bookingUrl": "http://www.lutetia-marseille.com/",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Baron Amédée Armand",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2916297,5.3817782",
-   "lat": 43.2916297,
-   "lng": 5.3817782,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.2916297,5.3817782",
-   "source": "osm"
-  },
-  {
-   "nom": "Le Ryad",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2976223,5.3834362",
-   "lat": 43.2976223,
-   "lng": 5.3834362,
-   "halalFriendly": false,
-   "bookingUrl": "https://www.leryad.fr/",
-   "source": "osm"
-  },
-  {
-   "nom": "Ibis",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2916887,5.3820584",
-   "lat": 43.2916887,
-   "lng": 5.3820584,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.2916887,5.3820584",
-   "source": "osm"
-  },
-  {
-   "nom": "Grand Hotel De La Prefecture",
-   "categorie": "Hôtel",
-   "priceRange": "€",
-   "score": 1,
-   "mapsUrl": "https://maps.google.com/?q=43.291321,5.381776",
-   "lat": 43.291321,
-   "lng": 5.381776,
-   "halalFriendly": false,
-   "bookingUrl": "https://www.hoteldelaprefecture.fr/",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Paradis",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2887686,5.3788422",
-   "lat": 43.2887686,
-   "lng": 5.3788422,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.2887686,5.3788422",
-   "source": "osm"
-  },
-  {
-   "nom": "Hotel Beausoleil",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.299249,5.3834367",
-   "lat": 43.299249,
-   "lng": 5.3834367,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.299249,5.3834367",
-   "source": "osm"
-  },
-  {
-   "nom": "Odalys Canebiere",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2980028,5.3838029",
-   "lat": 43.2980028,
-   "lng": 5.3838029,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.2980028,5.3838029",
-   "source": "osm"
-  },
-  {
-   "nom": "Music Hotel",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.290921,5.3817436",
-   "lat": 43.290921,
-   "lng": 5.3817436,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.290921,5.3817436",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel d'Anjou",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2967119,5.3840431",
-   "lat": 43.2967119,
-   "lng": 5.3840431,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.2967119,5.3840431",
-   "source": "osm"
-  },
-  {
-   "nom": "Gambetta Hôtel",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2992123,5.3837591",
-   "lat": 43.2992123,
-   "lng": 5.3837591,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.2992123,5.3837591",
-   "source": "osm"
-  },
-  {
-   "nom": "Hotel Gambetta",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2992433,5.3837822",
-   "lat": 43.2992433,
-   "lng": 5.3837822,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.2992433,5.3837822",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Massilia",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.291305,5.382631",
-   "lat": 43.291305,
-   "lng": 5.382631,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.291305,5.382631",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel du Pharo",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2884023,5.3593207",
-   "lat": 43.2884023,
-   "lng": 5.3593207,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.2884023,5.3593207",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Trianon",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.3005137,5.3841095",
-   "lat": 43.3005137,
-   "lng": 5.3841095,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.3005137,5.3841095",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Ibis Marseille Centre Gare Saint-Charles",
-   "categorie": "Hôtel",
-   "priceRange": "€€€",
-   "score": 3,
-   "mapsUrl": "https://maps.google.com/?q=43.30272,5.3825357",
-   "lat": 43.30272,
-   "lng": 5.3825357,
-   "halalFriendly": false,
-   "bookingUrl": "https://all.accor.com/hotel/1390/index.fr.shtml",
-   "source": "osm"
-  },
-  {
-   "nom": "Café Hôtel Edmond",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2881731,5.3804391",
-   "lat": 43.2881731,
-   "lng": 5.3804391,
-   "halalFriendly": false,
-   "bookingUrl": "https://www.hoteledmondrostand.com/",
-   "source": "osm"
-  },
-  {
-   "nom": "Chinese home",
-   "categorie": "Auberge",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2977388,5.3854268",
-   "lat": 43.2977388,
-   "lng": 5.3854268,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.2977388,5.3854268",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Ibis Marseille Euroméditerranée",
-   "categorie": "Hôtel",
-   "priceRange": "€€€",
-   "score": 3,
-   "mapsUrl": "https://maps.google.com/?q=43.3079702,5.3676485",
-   "lat": 43.3079702,
-   "lng": 5.3676485,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.3079702,5.3676485",
-   "source": "osm"
-  },
-  {
-   "nom": "hôtel Ozea",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2986017,5.3858977",
-   "lat": 43.2986017,
-   "lng": 5.3858977,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.2986017,5.3858977",
-   "source": "osm"
-  },
-  {
-   "nom": "Résidence Orfea Marseille",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.3026456,5.3838517",
-   "lat": 43.3026456,
-   "lng": 5.3838517,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.3026456,5.3838517",
-   "source": "osm"
-  },
-  {
-   "nom": "Adagio Access Saint-Charles",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.304614,5.3819205",
-   "lat": 43.304614,
-   "lng": 5.3819205,
-   "halalFriendly": false,
-   "bookingUrl": "https://www.adagio-city.com/",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel du Coq",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.3008568,5.3856754",
-   "lat": 43.3008568,
-   "lng": 5.3856754,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.3008568,5.3856754",
-   "source": "osm"
-  },
-  {
-   "nom": "Les Bords de Mer",
-   "categorie": "Hôtel",
-   "priceRange": "€€€€",
-   "score": 4,
-   "mapsUrl": "https://maps.google.com/?q=43.2896499,5.3550511",
-   "lat": 43.2896499,
-   "lng": 5.3550511,
-   "halalFriendly": false,
-   "bookingUrl": "https://www.hotel-marseille-richelieu.com/",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Azur",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2988798,5.3870888",
-   "lat": 43.2988798,
-   "lng": 5.3870888,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.2988798,5.3870888",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Golden Tulip",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.3098382,5.3673046",
-   "lat": 43.3098382,
-   "lng": 5.3673046,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.3098382,5.3673046",
-   "source": "osm"
-  },
-  {
-   "nom": "easyHotel Marseille Euromed",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.3101525,5.3704209",
-   "lat": 43.3101525,
-   "lng": 5.3704209,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.3101525,5.3704209",
-   "source": "osm"
-  },
-  {
-   "nom": "Nady",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2869033,5.3854114",
-   "lat": 43.2869033,
-   "lng": 5.3854114,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.2869033,5.3854114",
-   "source": "osm"
-  },
-  {
-   "nom": "Mama Shelter",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2904403,5.3888628",
-   "lat": 43.2904403,
-   "lng": 5.3888628,
-   "halalFriendly": false,
-   "bookingUrl": "https://www.mamashelter.com/en/marseille/",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Peron",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "score": 2,
-   "mapsUrl": "https://maps.google.com/?q=43.2877411,5.3524422",
-   "lat": 43.2877411,
-   "lng": 5.3524422,
-   "halalFriendly": false,
-   "bookingUrl": "http://www.hotelperon.com/",
-   "source": "osm"
-  },
-  {
-   "nom": "Marseille Euromed",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.314766,5.3696055",
-   "lat": 43.314766,
-   "lng": 5.3696055,
-   "halalFriendly": false,
-   "bookingUrl": "https://www.appartcity.com/fr/destinations/provence-alpes-cote-d-azur/marseille/marseille-euromed.html",
-   "source": "osm"
-  },
-  {
-   "nom": "Rocky pop",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2828743,5.3872954",
-   "lat": 43.2828743,
-   "lng": 5.3872954,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.2828743,5.3872954",
-   "source": "osm"
-  },
-  {
-   "nom": "Le Céleste",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.3092757,5.3892763",
-   "lat": 43.3092757,
-   "lng": 5.3892763,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.3092757,5.3892763",
-   "source": "osm"
-  },
-  {
-   "nom": "Apparthôtel Montempô",
-   "categorie": "Auberge",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.3161753,5.372954",
-   "lat": 43.3161753,
-   "lng": 5.372954,
-   "halalFriendly": false,
-   "bookingUrl": "https://www.montempo.fr/fr/nosapparthotels/marseille-centre-euromed",
-   "source": "osm"
-  },
-  {
-   "nom": "Maison Dormoy",
-   "categorie": "Appartement",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.3005803,5.3966667",
-   "lat": 43.3005803,
-   "lng": 5.3966667,
-   "halalFriendly": false,
-   "bookingUrl": "https://www.maisondormoy.com/fr",
-   "source": "osm"
-  },
-  {
-   "nom": "Le Rhul",
-   "categorie": "Hôtel",
-   "priceRange": "€€€",
-   "score": 3,
-   "mapsUrl": "https://maps.google.com/?q=43.2801682,5.3537431",
-   "lat": 43.2801682,
-   "lng": 5.3537431,
-   "halalFriendly": false,
-   "bookingUrl": "http://www.lerhul.fr",
-   "source": "osm"
-  },
-  {
-   "nom": "Resid'hotel",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2810856,5.3880734",
-   "lat": 43.2810856,
-   "lng": 5.3880734,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.2810856,5.3880734",
-   "source": "osm"
-  },
-  {
-   "nom": "Le Petit Nice Passedat",
-   "categorie": "Hôtel",
-   "priceRange": "€€€€",
-   "score": 5,
-   "mapsUrl": "https://maps.google.com/?q=43.2802191,5.3520689",
-   "lat": 43.2802191,
-   "lng": 5.3520689,
-   "halalFriendly": false,
-   "bookingUrl": "http://www.passedat.fr/?anchor=!home#!home",
-   "source": "osm"
-  },
-  {
-   "nom": "Le Petit Nice Passedat - Relais & Châteaux",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2802136,5.3520616",
-   "lat": 43.2802136,
-   "lng": 5.3520616,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.2802136,5.3520616",
-   "source": "osm"
-  },
-  {
-   "nom": "Le Petit Nice Passedat - La Marina",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2802921,5.3516252",
-   "lat": 43.2802921,
-   "lng": 5.3516252,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.2802921,5.3516252",
-   "source": "osm"
-  },
-  {
-   "nom": "Résidence Carpe Diem",
-   "categorie": "Appartement",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.3098736,5.3927772",
-   "lat": 43.3098736,
-   "lng": 5.3927772,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.3098736,5.3927772",
-   "source": "osm"
-  },
-  {
-   "nom": "B&B HOTEL Marseille Prado Parc des Expositions",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.279421,5.3891528",
-   "lat": 43.279421,
-   "lng": 5.3891528,
-   "halalFriendly": false,
-   "bookingUrl": "https://www.hotel-bb.com/fr/hotel/marseille-prado-parc-des-expositions",
-   "source": "osm"
-  },
-  {
-   "nom": "Appart'City",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2799988,5.3906227",
-   "lat": 43.2799988,
-   "lng": 5.3906227,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=43.2799988,5.3906227",
-   "source": "osm"
-  },
-  {
-   "nom": "Aparthotel Adagio Access Marseille Prado Périer",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=43.2786071,5.3886546",
-   "lat": 43.2786071,
-   "lng": 5.3886546,
-   "halalFriendly": false,
-   "bookingUrl": "https://www.adagio-city.com/de/hotel-8402-aparthotel-adagio-access-marseille-prado-perier/index.shtml",
-   "source": "osm"
-  }
- ],
- "activites": [],
- "road_trips": [
-  {
-   "id": "rt1",
-   "titre": "Marseille → Aix-en-Provence — Escapade Art & Gastronomie",
-   "duree": "1 jour",
-   "distance_km": 35,
-   "etapes": [
-    "Marseille",
-    "Aix-en-Provence"
-   ],
-   "description": "À seulement 30 minutes de Marseille, Aix-en-Provence est la ville de Paul Cézanne et de la calissons. Vieille ville élégante, fontaines thermales, cours Mirabeau et magnifiques marchés. Quelques restaurants halal dans le centre d'Aix.",
-   "conseils_halal": "L'offre halal à Aix est limitée mais existe dans le quartier Méjanes. Prévoir son repas depuis Marseille ou vérifier les adresses en avance. Marché provençal le mardi, jeudi et samedi.",
-   "budget_estime": "30–80€/personne",
-   "tags": [
-    "culture",
-    "art",
-    "provence",
-    "voiture ou bus"
-   ]
-  },
-  {
-   "id": "rt2",
-   "titre": "Marseille → Cassis → La Ciotat — Côte d'Azur à portée",
-   "duree": "1 jour",
-   "distance_km": 50,
-   "etapes": [
-    "Marseille",
-    "Cassis",
-    "La Ciotat"
-   ],
-   "description": "La plus belle route côtière de la région. Cassis, petit port authentique aux falaises de calcaire blanc, puis La Ciotat, berceau du cinéma (les frères Lumière y ont tourné leur premier film). Baignades en calanque et ambiance Côte d'Azur.",
-   "conseils_halal": "Options halal très limitées à Cassis — prévoir pique-nique depuis Marseille. La Ciotat a quelques options. Idéal pour une journée nature.",
-   "budget_estime": "20–50€/personne",
-   "tags": [
-    "nature",
-    "calanques",
-    "cinéma",
-    "mer",
-    "pique-nique"
-   ]
-  },
-  {
-   "id": "rt3",
-   "titre": "Marseille → Avignon → Pont du Gard — Patrimoine UNESCO",
-   "duree": "2 jours",
-   "distance_km": 150,
-   "etapes": [
-    "Marseille",
-    "Aix-en-Provence",
-    "Salon-de-Provence",
-    "Avignon",
-    "Pont du Gard"
-   ],
-   "description": "Deux jours de patrimoine UNESCO exceptionnel : Avignon (Palais des Papes, pont d'Avignon classé UNESCO), Pont du Gard (aqueduc romain du Ier siècle), les Alpilles et Les Baux-de-Provence. La Provence dans toute sa splendeur.",
-   "conseils_halal": "Avignon a une communauté musulmane notable — plusieurs restaurants halal disponibles dans le centre. Prévoir ses repas pour le Pont du Gard. Budget hôtel à Avignon.",
-   "budget_estime": "150–300€/personne",
-   "tags": [
-    "UNESCO",
-    "histoire",
-    "antiquité",
-    "Avignon",
-    "Pont du Gard"
-   ]
-  }
- ],
- "voyages_par_type": {
-  "en_couple": {
-   "intro": "Marseille en couple offre une atmosphère authentique et romantique : coucher de soleil sur le Vieux-Port, dîner gastronomique halal dans le Panier, promenade nocturne sur la Corniche. Une ville qui se révèle aux amoureux qui prennent le temps de la découvrir.",
-   "top_experiences": [
+  "slug": "marseille",
+  "nom": "Marseille",
+  "pays": "France",
+  "pays_slug": "france",
+  "drapeau": "🇫🇷",
+  "region": "Europe",
+  "coordonnees": {
+    "lat": 43.2965,
+    "lng": 5.3698
+  },
+  "score_halal": 3.7,
+  "score_securite": 3,
+  "score_famille": 4,
+  "score_budget": 4,
+  "description": "Marseille est la ville française avec la plus forte proportion de musulmans, estimée à environ 30% de la population. Porte de l'Orient, la cité phocéenne offre une scène halal exceptionnelle : quartier de Noailles, cuisine maghrébine, turque, sénégalaise et libanaise. Une ville authentique, populaire et profondément méditerranéenne.",
+  "image_hero": "https://images.unsplash.com/photo-1689864480104-35fbbd99c81c?w=1600&q=80",
+  "image_alt": "Vue panoramique du Vieux-Port de Marseille avec Notre-Dame de la Garde en arrière-plan",
+  "meta_title": "Marseille Halal — Restaurants, Mosquées & Guide Complet 2026",
+  "meta_description": "Guide complet Marseille halal 2026 : meilleurs restaurants halal, mosquées, quartiers musulmans. La ville française la plus halal-friendly.",
+  "statistiques": {
+    "mosquees": 20,
+    "restaurants_halal": 90,
+    "hotels_halal": 12,
+    "habitants_musulmans_pct": 30,
+    "hotels": 113
+  },
+  "infos_pratiques": {
+    "langue": "Français",
+    "monnaie": "Euro (EUR)",
+    "taux_change_eur": "Monnaie locale",
+    "visa": "Pas de visa (UE/Schengen)",
+    "meilleure_periode": "Mai–Juin, Septembre–Octobre",
+    "appel_priere": "Applications (Muslim Pro, Athan) — pas d'appel public en France",
+    "nourriture_halal": "Très abondante dans les quartiers de Noailles, Belsunce, 3e et 13e arrondissements — variable en dehors de ces zones",
+    "alcool": "Omniprésent en dehors des restaurants halal signalés",
+    "tenue": "Liberté de tenue — le voile est autorisé dans les espaces publics",
+    "securite": "Certains quartiers (nord de Marseille) demandent vigilance — les zones touristiques sont sûres",
+    "transports": "Métro (2 lignes), tram, bus RTM. Navette ferry pour les îles du Frioul."
+  },
+  "meteo_par_mois": [
     {
-     "titre": "Coucher de soleil depuis Notre-Dame de la Garde",
-     "details": "Vue panoramique à 360° sur Marseille et la Méditerranée au coucher du soleil — moment magique et totalement gratuit",
-     "prix": "Gratuit"
+      "mois": "Janvier",
+      "temp_max": 12,
+      "temp_min": 5,
+      "pluie_jours": 8,
+      "ensoleillement_h": 5,
+      "conseil": "Mistral fréquent, mais doux pour la saison"
     },
     {
-     "titre": "Dîner gastronomique halal dans le Panier",
-     "details": "Réserver à La Casbah du Panier pour un dîner en terrasse dans une ruelle du plus vieux quartier de Marseille",
-     "prix": "30–40€/pers"
+      "mois": "Février",
+      "temp_max": 13,
+      "temp_min": 5,
+      "pluie_jours": 7,
+      "ensoleillement_h": 6,
+      "conseil": "Idéal pour visiter les musées sans foule"
     },
     {
-     "titre": "Excursion en bateau au Château d'If",
-     "details": "Navette maritime pour le château d'If puis baignade dans une crique du Frioul. Journée maritime mémorable.",
-     "prix": "20–30€/pers"
+      "mois": "Mars",
+      "temp_max": 16,
+      "temp_min": 8,
+      "pluie_jours": 7,
+      "ensoleillement_h": 7,
+      "conseil": "La nature reverdit, les Calanques sont belles"
+    },
+    {
+      "mois": "Avril",
+      "temp_max": 18,
+      "temp_min": 10,
+      "pluie_jours": 9,
+      "ensoleillement_h": 8,
+      "conseil": "Bonne période, les terrasses s'ouvrent"
+    },
+    {
+      "mois": "Mai",
+      "temp_max": 22,
+      "temp_min": 13,
+      "pluie_jours": 7,
+      "ensoleillement_h": 9,
+      "conseil": "Idéal pour les Calanques avant l'affluence"
+    },
+    {
+      "mois": "Juin",
+      "temp_max": 27,
+      "temp_min": 18,
+      "pluie_jours": 4,
+      "ensoleillement_h": 11,
+      "conseil": "Début d'été, plages accessibles"
+    },
+    {
+      "mois": "Juillet",
+      "temp_max": 30,
+      "temp_min": 21,
+      "pluie_jours": 2,
+      "ensoleillement_h": 12,
+      "conseil": "Haute saison, Calanques fermées l'après-midi (risque feu)"
+    },
+    {
+      "mois": "Août",
+      "temp_max": 30,
+      "temp_min": 21,
+      "pluie_jours": 3,
+      "ensoleillement_h": 11,
+      "conseil": "Très touristique, chaleur forte — profiter le matin"
+    },
+    {
+      "mois": "Septembre",
+      "temp_max": 26,
+      "temp_min": 18,
+      "pluie_jours": 5,
+      "ensoleillement_h": 9,
+      "conseil": "Meilleur mois : mer chaude, moins de monde"
+    },
+    {
+      "mois": "Octobre",
+      "temp_max": 21,
+      "temp_min": 14,
+      "pluie_jours": 8,
+      "ensoleillement_h": 7,
+      "conseil": "Agréable, parfait pour randonnées Calanques"
+    },
+    {
+      "mois": "Novembre",
+      "temp_max": 16,
+      "temp_min": 9,
+      "pluie_jours": 9,
+      "ensoleillement_h": 5,
+      "conseil": "Mistral revient, bonnes affaires hôtelières"
+    },
+    {
+      "mois": "Décembre",
+      "temp_max": 12,
+      "temp_min": 6,
+      "pluie_jours": 8,
+      "ensoleillement_h": 4,
+      "conseil": "Fêtes de fin d'année, ambiance unique au Vieux-Port"
     }
-   ],
-   "hotels_recommandes": [
-    "InterContinental Marseille — Hôtel-Dieu",
-    "Sofitel Marseille Vieux-Port"
-   ],
-   "conseils": "Éviter juillet-août (surchargé). Septembre est idéal : mer chaude, moins de touristes, lumière méditerranéenne magnifique."
-  },
-  "en_famille": {
-   "intro": "Marseille est excellente en famille pour les voyageurs musulmans : large offre halal, plages gratuites, Calanques accessibles aux enfants, MuCEM avec ateliers famille, et une ambiance méditerranéenne chaleureuse. Budget très raisonnable comparé à Paris.",
-   "top_experiences": [
+  ],
+  "restaurants": [
     {
-     "titre": "Journée aux Calanques (en bateau)",
-     "details": "Croisière commentée au pied des Calanques, baignade dans une crique turquoise — inoubliable pour les enfants",
-     "prix": "30–50€/adulte, 15–20€/enfant"
+      "nom": "Le Par Azar",
+      "lat": 43.2975988,
+      "lng": 5.3709341,
+      "type": "french, lebanese",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2975988,5.3709341",
+      "source": "osm"
     },
     {
-     "titre": "Marché de Noailles + déjeuner halal",
-     "details": "Visite du marché oriental de Noailles (dattes, épices, baklava) puis déjeuner dans un restaurant halal du quartier",
-     "prix": "15–20€/pers"
+      "nom": "Yasmine",
+      "lat": 43.2961286,
+      "lng": 5.3679445,
+      "type": "lebanese",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2961286,5.3679445",
+      "source": "osm"
     },
     {
-     "titre": "Plages du Prado",
-     "details": "Grandes plages aménagées avec jeux pour enfants, maîtres-nageurs, buvettes. Journée complète de baignade à prix zéro",
-     "prix": "Gratuit"
+      "nom": "Kebab Berliner",
+      "lat": 43.2968547,
+      "lng": 5.3721317,
+      "type": "kebab",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2968547,5.3721317",
+      "source": "osm"
+    },
+    {
+      "nom": "Welcome to Istanbul",
+      "lat": 43.297894,
+      "lng": 5.373026,
+      "type": "kebab",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.297894,5.373026",
+      "source": "osm"
+    },
+    {
+      "nom": "La Kahena",
+      "lat": 43.2964752,
+      "lng": 5.3741968,
+      "type": "couscous",
+      "halalConfidence": "high",
+      "mapsUrl": "https://maps.google.com/?q=43.2964752,5.3741968",
+      "source": "osm"
+    },
+    {
+      "nom": "Cedar",
+      "lat": 43.2978064,
+      "lng": 5.3655684,
+      "type": "lebanese",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2978064,5.3655684",
+      "source": "osm"
+    },
+    {
+      "nom": "Berliner - Marseille",
+      "lat": 43.293749,
+      "lng": 5.373217,
+      "type": "kebab",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.293749,5.373217",
+      "source": "osm"
+    },
+    {
+      "nom": "Elyssa",
+      "lat": 43.2927339,
+      "lng": 5.3689063,
+      "type": "tunisian",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2927339,5.3689063",
+      "source": "osm"
+    },
+    {
+      "nom": "Chez Tamar",
+      "lat": 43.2995376,
+      "lng": 5.3664648,
+      "type": "lebanese, oriental",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2995376,5.3664648",
+      "source": "osm"
+    },
+    {
+      "nom": "Le Sri Ganesh",
+      "lat": 43.2926692,
+      "lng": 5.3721084,
+      "type": "indian",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2926692,5.3721084",
+      "source": "osm"
+    },
+    {
+      "nom": "Ashoka",
+      "lat": 43.2930627,
+      "lng": 5.3737508,
+      "type": "indian",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2930627,5.3737508",
+      "source": "osm"
+    },
+    {
+      "nom": "Brasserie l'Opera",
+      "lat": 43.2936802,
+      "lng": 5.3753644,
+      "type": "syrian",
+      "halalConfidence": "high",
+      "mapsUrl": "https://maps.google.com/?q=43.2936802,5.3753644",
+      "source": "osm"
+    },
+    {
+      "nom": "L'heure de Marseille",
+      "lat": 43.2953086,
+      "lng": 5.3765541,
+      "type": "indian, pakistani",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2953086,5.3765541",
+      "source": "osm"
+    },
+    {
+      "nom": "Mont Liban",
+      "lat": 43.2918804,
+      "lng": 5.3728546,
+      "type": "lebanese",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2918804,5.3728546",
+      "source": "osm"
+    },
+    {
+      "nom": "Chicken Street",
+      "lat": 43.2988058,
+      "lng": 5.3760957,
+      "type": "chicken",
+      "halalConfidence": "certified",
+      "mapsUrl": "https://maps.google.com/?q=43.2988058,5.3760957",
+      "source": "osm"
+    },
+    {
+      "nom": "Les Violettes",
+      "lat": 43.2927999,
+      "lng": 5.3750764,
+      "type": "kebab, pizza, sandwich",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2927999,5.3750764",
+      "source": "osm"
+    },
+    {
+      "nom": "Ankara Grill",
+      "lat": 43.2982294,
+      "lng": 5.377092,
+      "type": "kebab, turkish",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2982294,5.377092",
+      "source": "osm"
+    },
+    {
+      "nom": "le libanais contemporain",
+      "lat": 43.291732,
+      "lng": 5.3741314,
+      "type": "lebanese",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.291732,5.3741314",
+      "source": "osm"
+    },
+    {
+      "nom": "Le Bodrum",
+      "lat": 43.2955575,
+      "lng": 5.3777166,
+      "type": "kebab",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2955575,5.3777166",
+      "source": "osm"
+    },
+    {
+      "nom": "La Goulette",
+      "lat": 43.2907132,
+      "lng": 5.3670917,
+      "type": "tunisian",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2907132,5.3670917",
+      "source": "osm"
+    },
+    {
+      "nom": "Cirta",
+      "lat": 43.3007585,
+      "lng": 5.3759126,
+      "type": "arab, grill",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.3007585,5.3759126",
+      "source": "osm"
+    },
+    {
+      "nom": "Sur le pouce",
+      "lat": 43.3029058,
+      "lng": 5.3694142,
+      "type": "moroccan",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.3029058,5.3694142",
+      "source": "osm"
+    },
+    {
+      "nom": "Chez Yassine",
+      "lat": 43.2956591,
+      "lng": 5.3788513,
+      "type": "arab",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2956591,5.3788513",
+      "source": "osm"
+    },
+    {
+      "nom": "Le Soleil",
+      "lat": 43.3008039,
+      "lng": 5.3770009,
+      "type": "arab, grill",
+      "halalConfidence": "high",
+      "mapsUrl": "https://maps.google.com/?q=43.3008039,5.3770009",
+      "source": "osm"
+    },
+    {
+      "nom": "Chez Soi",
+      "lat": 43.2967419,
+      "lng": 5.3802868,
+      "type": "arab, african, grill, mediterranean, tea",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2967419,5.3802868",
+      "source": "osm"
+    },
+    {
+      "nom": "Saray grill",
+      "lat": 43.2996626,
+      "lng": 5.3806054,
+      "type": "kebab, steak house, turkish",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2996626,5.3806054",
+      "source": "osm"
+    },
+    {
+      "nom": "Le Mirage",
+      "lat": 43.295647,
+      "lng": 5.3817833,
+      "type": "kebab, sandwich",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.295647,5.3817833",
+      "source": "osm"
+    },
+    {
+      "nom": "Izmir",
+      "lat": 43.3012338,
+      "lng": 5.3804188,
+      "type": "kebab, turkish",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.3012338,5.3804188",
+      "source": "osm"
+    },
+    {
+      "nom": "Frisch Cag Kebap",
+      "lat": 43.2952609,
+      "lng": 5.3829258,
+      "type": "kebab",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2952609,5.3829258",
+      "source": "osm"
+    },
+    {
+      "nom": "Mido",
+      "lat": 43.2938566,
+      "lng": 5.3829713,
+      "type": "kebab, egyptian",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2938566,5.3829713",
+      "source": "osm"
+    },
+    {
+      "nom": "Makhlouf",
+      "lat": 43.2889317,
+      "lng": 5.378773,
+      "type": "lebanese",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2889317,5.378773",
+      "source": "osm"
+    },
+    {
+      "nom": "Papyrus",
+      "lat": 43.290808,
+      "lng": 5.3813024,
+      "type": "kebab, mediterranean, pizza",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.290808,5.3813024",
+      "source": "osm"
+    },
+    {
+      "nom": "Yam by Nour",
+      "lat": 43.2930282,
+      "lng": 5.3832153,
+      "type": "arab, mediterranean, oriental, sandwich",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2930282,5.3832153",
+      "source": "osm"
+    },
+    {
+      "nom": "Marokko Street",
+      "lat": 43.2900994,
+      "lng": 5.3820847,
+      "type": "moroccan",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2900994,5.3820847",
+      "source": "osm"
+    },
+    {
+      "nom": "Dwish Burger",
+      "lat": 43.2945514,
+      "lng": 5.3847643,
+      "type": "kebab, burger, tacos",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2945514,5.3847643",
+      "source": "osm"
+    },
+    {
+      "nom": "Le Baobab",
+      "lat": 43.2997968,
+      "lng": 5.3843248,
+      "type": "senegalese",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2997968,5.3843248",
+      "source": "osm"
+    },
+    {
+      "nom": "Wadina",
+      "lat": 43.2862957,
+      "lng": 5.377544,
+      "type": "lebanese",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2862957,5.377544",
+      "source": "osm"
+    },
+    {
+      "nom": "Rajasthan",
+      "lat": 43.2915325,
+      "lng": 5.3846136,
+      "type": "indian",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2915325,5.3846136",
+      "source": "osm"
+    },
+    {
+      "nom": "Durum",
+      "lat": 43.2933241,
+      "lng": 5.3857174,
+      "type": "lebanese",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2933241,5.3857174",
+      "source": "osm"
+    },
+    {
+      "nom": "Le sampiero",
+      "lat": 43.3085836,
+      "lng": 5.3707391,
+      "type": "arab",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.3085836,5.3707391",
+      "source": "osm"
+    },
+    {
+      "nom": "Le Tarpin Bon",
+      "lat": 43.2888297,
+      "lng": 5.3827482,
+      "type": "kebab",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2888297,5.3827482",
+      "source": "osm"
+    },
+    {
+      "nom": "DK'S Food",
+      "lat": 43.3064282,
+      "lng": 5.3802163,
+      "type": "kebab",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.3064282,5.3802163",
+      "source": "osm"
+    },
+    {
+      "nom": "L’européen",
+      "lat": 43.308995,
+      "lng": 5.3716686,
+      "type": "pizza, kebab, french tacos",
+      "halalConfidence": "high",
+      "mapsUrl": "https://maps.google.com/?q=43.308995,5.3716686",
+      "source": "osm"
+    },
+    {
+      "nom": "Le Paki",
+      "lat": 43.294321,
+      "lng": 5.3869752,
+      "type": "pakistani, street food, traditional",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.294321,5.3869752",
+      "source": "osm"
+    },
+    {
+      "nom": "Modo PIZZA",
+      "lat": 43.308567,
+      "lng": 5.3773335,
+      "type": "pizza",
+      "halalConfidence": "high",
+      "mapsUrl": "https://maps.google.com/?q=43.308567,5.3773335",
+      "source": "osm"
+    },
+    {
+      "nom": "Ashourya",
+      "lat": 43.3015554,
+      "lng": 5.387485,
+      "type": "lebanese",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.3015554,5.387485",
+      "source": "osm"
+    },
+    {
+      "nom": "Grillade - Salon de thé 7/7",
+      "lat": 43.2864284,
+      "lng": 5.3850484,
+      "type": "kebab",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2864284,5.3850484",
+      "source": "osm"
+    },
+    {
+      "nom": "Le 100",
+      "lat": 43.2829884,
+      "lng": 5.3787237,
+      "type": "french, moroccan",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2829884,5.3787237",
+      "source": "osm"
+    },
+    {
+      "nom": "Timgad",
+      "lat": 43.309755,
+      "lng": 5.3794264,
+      "type": "kebab",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.309755,5.3794264",
+      "source": "osm"
+    },
+    {
+      "nom": "Rafraf",
+      "lat": 43.3116869,
+      "lng": 5.3726505,
+      "type": "arab, kebab",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.3116869,5.3726505",
+      "source": "osm"
+    },
+    {
+      "nom": "Zaaki",
+      "lat": 43.2954606,
+      "lng": 5.3923674,
+      "type": "syrian,  palestinian",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2954606,5.3923674",
+      "source": "osm"
+    },
+    {
+      "nom": "La Fontaine",
+      "lat": 43.2848987,
+      "lng": 5.3858482,
+      "type": "Restaurant",
+      "halalConfidence": "high",
+      "mapsUrl": "https://maps.google.com/?q=43.2848987,5.3858482",
+      "source": "osm"
+    },
+    {
+      "nom": "Namaste",
+      "lat": 43.2836196,
+      "lng": 5.3854639,
+      "type": "indian",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2836196,5.3854639",
+      "source": "osm"
+    },
+    {
+      "nom": "L'Étoile de Beyrouth",
+      "lat": 43.2850901,
+      "lng": 5.3897776,
+      "type": "lebanese",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2850901,5.3897776",
+      "source": "osm"
+    },
+    {
+      "nom": "Inci Restaurant",
+      "lat": 43.3029599,
+      "lng": 5.396331,
+      "type": "kebab, sandwich, steak house, turkish",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.3029599,5.396331",
+      "source": "osm"
+    },
+    {
+      "nom": "Rendez-Vous",
+      "lat": 43.3010155,
+      "lng": 5.3974194,
+      "type": "lebanese, greek, armenian",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.3010155,5.3974194",
+      "source": "osm"
+    },
+    {
+      "nom": "Factory Food",
+      "lat": 43.301164,
+      "lng": 5.3986136,
+      "type": "Restaurant",
+      "halalConfidence": "high",
+      "mapsUrl": "https://maps.google.com/?q=43.301164,5.3986136",
+      "source": "osm"
+    },
+    {
+      "nom": "L'escale Marocaine",
+      "lat": 43.314767,
+      "lng": 5.386025,
+      "type": "moroccan",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.314767,5.386025",
+      "source": "osm"
+    },
+    {
+      "nom": "Master K",
+      "lat": 43.2939678,
+      "lng": 5.4005916,
+      "type": "kebab",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2939678,5.4005916",
+      "source": "osm"
+    },
+    {
+      "nom": "oh!bowls",
+      "lat": 43.2784077,
+      "lng": 5.3893065,
+      "type": "indonesian",
+      "halalConfidence": "high",
+      "mapsUrl": "https://maps.google.com/?q=43.2784077,5.3893065",
+      "source": "osm"
+    },
+    {
+      "nom": "Mimas",
+      "lat": 43.3068911,
+      "lng": 5.3999265,
+      "type": "arab, kebab",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.3068911,5.3999265",
+      "source": "osm"
+    },
+    {
+      "nom": "Ritheje",
+      "lat": 43.3033468,
+      "lng": 5.4035,
+      "type": "kebab",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.3033468,5.4035",
+      "source": "osm"
+    },
+    {
+      "nom": "LIbanexpress",
+      "lat": 43.3075158,
+      "lng": 5.4030215,
+      "type": "lebanese",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.3075158,5.4030215",
+      "source": "osm"
+    },
+    {
+      "nom": "L'antidote",
+      "lat": 43.3105016,
+      "lng": 5.402151,
+      "type": "kebab, oriental",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.3105016,5.402151",
+      "source": "osm"
+    },
+    {
+      "nom": "Les délices du Prado",
+      "lat": 43.2734326,
+      "lng": 5.3912124,
+      "type": "moroccan, french",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2734326,5.3912124",
+      "source": "osm"
+    },
+    {
+      "nom": "Tat Kebab Salonu",
+      "lat": 43.3246113,
+      "lng": 5.3673108,
+      "type": "kebab",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.3246113,5.3673108",
+      "source": "osm"
+    },
+    {
+      "nom": "Les Amis",
+      "lat": 43.3230674,
+      "lng": 5.382704,
+      "type": "turkish, kurdish",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.3230674,5.382704",
+      "source": "osm"
+    },
+    {
+      "nom": "La Rôtisserie des Saveurs",
+      "lat": 43.3271275,
+      "lng": 5.3640577,
+      "type": "couscous, middle eastern",
+      "halalConfidence": "high",
+      "mapsUrl": "https://maps.google.com/?q=43.3271275,5.3640577",
+      "source": "osm"
+    },
+    {
+      "nom": "Baladi",
+      "lat": 43.2646799,
+      "lng": 5.3739063,
+      "type": "lebanese",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2646799,5.3739063",
+      "source": "osm"
+    },
+    {
+      "nom": "Bombay Grill",
+      "lat": 43.2635462,
+      "lng": 5.3741196,
+      "type": "indian",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2635462,5.3741196",
+      "source": "osm"
+    },
+    {
+      "nom": "King",
+      "lat": 43.3297299,
+      "lng": 5.3655269,
+      "type": "sandwich, pizza, arab",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.3297299,5.3655269",
+      "source": "osm"
+    },
+    {
+      "nom": "Le Tarpin Bon - Saint Barnabé",
+      "lat": 43.3045166,
+      "lng": 5.4152949,
+      "type": "kebab",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.3045166,5.4152949",
+      "source": "osm"
+    },
+    {
+      "nom": "La Broche",
+      "lat": 43.2696136,
+      "lng": 5.4032357,
+      "type": "kebab",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2696136,5.4032357",
+      "source": "osm"
+    },
+    {
+      "nom": "Les Plaisirs de Carthage",
+      "lat": 43.2694596,
+      "lng": 5.4086125,
+      "type": "tunisian",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2694596,5.4086125",
+      "source": "osm"
+    },
+    {
+      "nom": "BBC Barbecue",
+      "lat": 43.2797626,
+      "lng": 5.4185126,
+      "type": "kebab",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2797626,5.4185126",
+      "source": "osm"
+    },
+    {
+      "nom": "Club Chiken",
+      "lat": 43.3224395,
+      "lng": 5.4128387,
+      "type": "burger, kebab, tacos",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.3224395,5.4128387",
+      "source": "osm"
+    },
+    {
+      "nom": "Le 223",
+      "lat": 43.3369131,
+      "lng": 5.3551638,
+      "type": "sandwich, burger",
+      "halalConfidence": "certified",
+      "mapsUrl": "https://maps.google.com/?q=43.3369131,5.3551638",
+      "source": "osm"
+    },
+    {
+      "nom": "Bharati",
+      "lat": 43.2543048,
+      "lng": 5.3753775,
+      "type": "indian, pakistani",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2543048,5.3753775",
+      "source": "osm"
+    },
+    {
+      "nom": "Les Trésors du Liban",
+      "lat": 43.2620951,
+      "lng": 5.4040099,
+      "type": "lebanese",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2620951,5.4040099",
+      "source": "osm"
+    },
+    {
+      "nom": "Le Delice",
+      "lat": 43.282372,
+      "lng": 5.430084,
+      "type": "kebab",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.282372,5.430084",
+      "source": "osm"
+    },
+    {
+      "nom": "Bosphore",
+      "lat": 43.2490912,
+      "lng": 5.3895127,
+      "type": "turkish",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2490912,5.3895127",
+      "source": "osm"
+    },
+    {
+      "nom": "Chez Alex",
+      "lat": 43.2569961,
+      "lng": 5.4111041,
+      "type": "burger, french tacos, kebab, sandwich",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.2569961,5.4111041",
+      "source": "osm"
+    },
+    {
+      "nom": "Grill Kebab",
+      "lat": 43.3274666,
+      "lng": 5.4239314,
+      "type": "kebab",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.3274666,5.4239314",
+      "source": "osm"
+    },
+    {
+      "nom": "Les délices de Rania",
+      "lat": 43.3353672,
+      "lng": 5.4202637,
+      "type": "lebanese",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.3353672,5.4202637",
+      "source": "osm"
+    },
+    {
+      "nom": "Chiken Food",
+      "lat": 43.3565768,
+      "lng": 5.3572588,
+      "type": "indian",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.3565768,5.3572588",
+      "source": "osm"
+    },
+    {
+      "nom": "Snack Kebab",
+      "lat": 43.3593742,
+      "lng": 5.3326007,
+      "type": "kebab",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.3593742,5.3326007",
+      "source": "osm"
+    },
+    {
+      "nom": "Les Mezzés",
+      "lat": 43.3517345,
+      "lng": 5.4387394,
+      "type": "lebanese",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.3517345,5.4387394",
+      "source": "osm"
+    },
+    {
+      "nom": "Restaurant Le Palmier",
+      "lat": 43.3607695,
+      "lng": 5.3144333,
+      "type": "moroccan",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.3607695,5.3144333",
+      "source": "osm"
+    },
+    {
+      "nom": "Le Palais du Maharajah",
+      "lat": 43.3041891,
+      "lng": 5.4744994,
+      "type": "indian",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=43.3041891,5.4744994",
+      "source": "osm"
+    },
+    {
+      "nom": "Mezzo Di Pasta Marseille La Valentine",
+      "lat": 43.2940521,
+      "lng": 5.4780127,
+      "type": "Restaurant",
+      "halalConfidence": "high",
+      "mapsUrl": "https://maps.google.com/?q=43.2940521,5.4780127",
+      "source": "osm"
     }
-   ],
-   "hotels_recommandes": [
-    "Appart'City Marseille Prado Velodrome",
-    "Hôtel Villa Massalia"
-   ],
-   "conseils": "L'Appart'City permet de préparer ses repas halal maison — idéal pour maîtriser son budget. Acheter les produits halal au marché de Noailles."
-  },
-  "entre_amis": {
-   "intro": "Marseille entre amis, c'est l'aventure garantie : tournoi de pétanque au Vieux-Port, randonnée en calanque, soirée street food à Noailles, match de l'OM au Vélodrome. Une ville vivante et authentique.",
-   "top_experiences": [
+  ],
+  "mosquees": [],
+  "hotels": [
     {
-     "titre": "Randonnée Calanque de Sugiton",
-     "details": "3–4h de marche depuis Luminy jusqu'à la calanque de Sugiton — effort récompensé par un paysage époustouflant et une baignade méritée",
-     "prix": "Gratuit"
+      "nom": "Hôtel Belle-Vue",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2964908,5.3719774",
+      "lat": 43.2964908,
+      "lng": 5.3719774,
+      "halalFriendly": false,
+      "bookingUrl": "https://www.hotelbellevuemarseille.com/",
+      "source": "osm"
     },
     {
-     "titre": "Match de l'OM au Vélodrome",
-     "details": "Vivre un match dans le mythique Stade Orange Vélodrome avec 65 000 supporters — expérience unique de l'ambiance marseillaise",
-     "prix": "20–60€"
+      "nom": "Hôtel Hermès",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2965924,5.3719855",
+      "lat": 43.2965924,
+      "lng": 5.3719855,
+      "halalFriendly": false,
+      "bookingUrl": "https://www.hotelmarseille.com/en/",
+      "source": "osm"
     },
     {
-     "titre": "Soirée street food à Noailles",
-     "details": "Tournée des stands de street food halal du quartier de Noailles : shawarma, falafel, merguez, baklava. Le tout pour moins de 15€/pers.",
-     "prix": "10–15€/pers"
+      "nom": "Hotel Bellevue Marseille",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2964951,5.3720778",
+      "lat": 43.2964951,
+      "lng": 5.3720778,
+      "halalFriendly": false,
+      "bookingUrl": "https://hotelbellevuemarseille.com/",
+      "source": "osm"
+    },
+    {
+      "nom": "InterContinental",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2985615,5.3699167",
+      "lat": 43.2985615,
+      "lng": 5.3699167,
+      "halalFriendly": false,
+      "bookingUrl": "https://marseille.intercontinental.com/",
+      "source": "osm"
+    },
+    {
+      "nom": "La Residence du Vieux Port",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2965597,5.3727464",
+      "lat": 43.2965597,
+      "lng": 5.3727464,
+      "halalFriendly": false,
+      "bookingUrl": "https://www.hotel-residence-marseille.com/",
+      "source": "osm"
+    },
+    {
+      "nom": "ResidHotel - Vieux port",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2968664,5.3728142",
+      "lat": 43.2968664,
+      "lng": 5.3728142,
+      "halalFriendly": false,
+      "bookingUrl": "https://www.residhotel.com/residence/marseille-vieux-port/",
+      "source": "osm"
+    },
+    {
+      "nom": "Maison boa",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2994896,5.3688214",
+      "lat": 43.2994896,
+      "lng": 5.3688214,
+      "halalFriendly": false,
+      "bookingUrl": "https://maison-boa.worhot.com/",
+      "source": "osm"
+    },
+    {
+      "nom": "Le Panisse",
+      "categorie": "Maison d'hôtes",
+      "priceRange": "€€€",
+      "score": 3,
+      "mapsUrl": "https://maps.google.com/?q=43.2996469,5.3676284",
+      "lat": 43.2996469,
+      "lng": 5.3676284,
+      "halalFriendly": false,
+      "bookingUrl": "http://www.sunflats.com",
+      "source": "osm"
+    },
+    {
+      "nom": "Pernod Ricard Club",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2956363,5.3746499",
+      "lat": 43.2956363,
+      "lng": 5.3746499,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.2956363,5.3746499",
+      "source": "osm"
+    },
+    {
+      "nom": "New Hôtel Le Quai Vieux-Port",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2960728,5.3748366",
+      "lat": 43.2960728,
+      "lng": 5.3748366,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.2960728,5.3748366",
+      "source": "osm"
+    },
+    {
+      "nom": "Escale Oceania",
+      "categorie": "Hôtel",
+      "priceRange": "€€€",
+      "score": 3,
+      "mapsUrl": "https://maps.google.com/?q=43.295639,5.3748188",
+      "lat": 43.295639,
+      "lng": 5.3748188,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.295639,5.3748188",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Beauvau",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2950067,5.3748603",
+      "lat": 43.2950067,
+      "lng": 5.3748603,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.2950067,5.3748603",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Carré Vieux-Port",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.294923,5.375049",
+      "lat": 43.294923,
+      "lng": 5.375049,
+      "halalFriendly": false,
+      "bookingUrl": "https://www.hotel-carre-vieux-port.com",
+      "source": "osm"
+    },
+    {
+      "nom": "Life hôtel VP",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.294409,5.374869",
+      "lat": 43.294409,
+      "lng": 5.374869,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.294409,5.374869",
+      "source": "osm"
+    },
+    {
+      "nom": "Maisons du Monde hôtel",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2940799,5.3746395",
+      "lat": 43.2940799,
+      "lng": 5.3746395,
+      "halalFriendly": false,
+      "bookingUrl": "https://marseille.maisonsdumondehotel.com",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Europe",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.294573,5.375202",
+      "lat": 43.294573,
+      "lng": 5.375202,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.294573,5.375202",
+      "source": "osm"
+    },
+    {
+      "nom": "Mercure Centre Vieux Port",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2986125,5.3751931",
+      "lat": 43.2986125,
+      "lng": 5.3751931,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.2986125,5.3751931",
+      "source": "osm"
+    },
+    {
+      "nom": "The People Hostel",
+      "categorie": "Auberge",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.3011063,5.3710972",
+      "lat": 43.3011063,
+      "lng": 5.3710972,
+      "halalFriendly": false,
+      "bookingUrl": "https://www.thepeoplehostel.com",
+      "source": "osm"
+    },
+    {
+      "nom": "Ibis Budget",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2925289,5.3734984",
+      "lat": 43.2925289,
+      "lng": 5.3734984,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.2925289,5.3734984",
+      "source": "osm"
+    },
+    {
+      "nom": "Mr Chou Marseille Opéra",
+      "categorie": "Maison d'hôtes",
+      "priceRange": "€€€",
+      "score": 3,
+      "mapsUrl": "https://maps.google.com/?q=43.2937147,5.3753485",
+      "lat": 43.2937147,
+      "lng": 5.3753485,
+      "halalFriendly": false,
+      "bookingUrl": "http://www.sunflats.com",
+      "source": "osm"
+    },
+    {
+      "nom": "Etap Hotel",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2922209,5.3736588",
+      "lat": 43.2922209,
+      "lng": 5.3736588,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.2922209,5.3736588",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Ligo by Happyculture",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.3015653,5.3708897",
+      "lat": 43.3015653,
+      "lng": 5.3708897,
+      "halalFriendly": false,
+      "bookingUrl": "https://www.hotel-ligo.com",
+      "source": "osm"
+    },
+    {
+      "nom": "Staycity Aparthotels Marseille",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.3005013,5.3747782",
+      "lat": 43.3005013,
+      "lng": 5.3747782,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.3005013,5.3747782",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Sainte-Marie",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2986812,5.3768271",
+      "lat": 43.2986812,
+      "lng": 5.3768271,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.2986812,5.3768271",
+      "source": "osm"
+    },
+    {
+      "nom": "Hello Marseilles",
+      "categorie": "Auberge",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2921491,5.3749207",
+      "lat": 43.2921491,
+      "lng": 5.3749207,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.2921491,5.3749207",
+      "source": "osm"
+    },
+    {
+      "nom": "Hotel Marsiho by HappyCulture",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2973492,5.3775919",
+      "lat": 43.2973492,
+      "lng": 5.3775919,
+      "halalFriendly": false,
+      "bookingUrl": "https://www.hotel-marsiho.com/",
+      "source": "osm"
+    },
+    {
+      "nom": "NH Collection Marseille",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.3024523,5.368841",
+      "lat": 43.3024523,
+      "lng": 5.368841,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.3024523,5.368841",
+      "source": "osm"
+    },
+    {
+      "nom": "Maisons du Monde suites",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2932562,5.3771072",
+      "lat": 43.2932562,
+      "lng": 5.3771072,
+      "halalFriendly": false,
+      "bookingUrl": "https://marseille.maisonsdumondehotel.com",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Saint-Louis",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2959868,5.3786967",
+      "lat": 43.2959868,
+      "lng": 5.3786967,
+      "halalFriendly": false,
+      "bookingUrl": "http://maison-saintlouis.com/",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel du Mucem by Esteem",
+      "categorie": "Hôtel",
+      "priceRange": "€€€",
+      "score": 3,
+      "mapsUrl": "https://maps.google.com/?q=43.3024809,5.3657786",
+      "lat": 43.3024809,
+      "lng": 5.3657786,
+      "halalFriendly": false,
+      "bookingUrl": "https://www.hotel-mucem.com/",
+      "source": "osm"
+    },
+    {
+      "nom": "Residhome",
+      "categorie": "Appartement",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.3026199,5.3655801",
+      "lat": 43.3026199,
+      "lng": 5.3655801,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.3026199,5.3655801",
+      "source": "osm"
+    },
+    {
+      "nom": "Hotel Gallieni",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.3016086,5.3760707",
+      "lat": 43.3016086,
+      "lng": 5.3760707,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.3016086,5.3760707",
+      "source": "osm"
+    },
+    {
+      "nom": "Mercure",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2967118,5.3792652",
+      "lat": 43.2967118,
+      "lng": 5.3792652,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.2967118,5.3792652",
+      "source": "osm"
+    },
+    {
+      "nom": "Hotel Terminus",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.3030742,5.3660429",
+      "lat": 43.3030742,
+      "lng": 5.3660429,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.3030742,5.3660429",
+      "source": "osm"
+    },
+    {
+      "nom": "Montgrand",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2913316,5.3766135",
+      "lat": 43.2913316,
+      "lng": 5.3766135,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.2913316,5.3766135",
+      "source": "osm"
+    },
+    {
+      "nom": "Montgrand Réception",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2911101,5.3763809",
+      "lat": 43.2911101,
+      "lng": 5.3763809,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.2911101,5.3763809",
+      "source": "osm"
+    },
+    {
+      "nom": "Zenitude Hôtel-Résidences Marseille Saint-Charles",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.3019386,5.3764947",
+      "lat": 43.3019386,
+      "lng": 5.3764947,
+      "halalFriendly": false,
+      "bookingUrl": "https://www.zenitude-hotel-residences.com/residences/marseille-saint-charles/",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel La Joliette by Esteem",
+      "categorie": "Hôtel",
+      "priceRange": "€€€€",
+      "score": 4,
+      "mapsUrl": "https://maps.google.com/?q=43.3036884,5.3665071",
+      "lat": 43.3036884,
+      "lng": 5.3665071,
+      "halalFriendly": false,
+      "bookingUrl": "https://www.hotel-joliette.com",
+      "source": "osm"
+    },
+    {
+      "nom": "Sofitel Vieux Port",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2926593,5.3606074",
+      "lat": 43.2926593,
+      "lng": 5.3606074,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.2926593,5.3606074",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Panoramique",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2992636,5.3798294",
+      "lat": 43.2992636,
+      "lng": 5.3798294,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.2992636,5.3798294",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Moderne",
+      "categorie": "Auberge",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.294599,5.3802919",
+      "lat": 43.294599,
+      "lng": 5.3802919,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.294599,5.3802919",
+      "source": "osm"
+    },
+    {
+      "nom": "Novotel",
+      "categorie": "Hôtel",
+      "priceRange": "€€€€",
+      "score": 4,
+      "mapsUrl": "https://maps.google.com/?q=43.2928441,5.3601504",
+      "lat": 43.2928441,
+      "lng": 5.3601504,
+      "halalFriendly": false,
+      "bookingUrl": "https://all.accor.com/hotel/0911/index.fr.shtml",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Duc",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2985522,5.3807319",
+      "lat": 43.2985522,
+      "lng": 5.3807319,
+      "halalFriendly": false,
+      "bookingUrl": "http://www.duchotel.sitew.fr/",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Victory",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2986713,5.3807394",
+      "lat": 43.2986713,
+      "lng": 5.3807394,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.2986713,5.3807394",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Européen",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2987849,5.3807161",
+      "lat": 43.2987849,
+      "lng": 5.3807161,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.2987849,5.3807161",
+      "source": "osm"
+    },
+    {
+      "nom": "New Hotel Marseille",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2918903,5.360065",
+      "lat": 43.2918903,
+      "lng": 5.360065,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.2918903,5.360065",
+      "source": "osm"
+    },
+    {
+      "nom": "Massilia",
+      "categorie": "Hôtel",
+      "priceRange": "€€€",
+      "score": 3,
+      "mapsUrl": "https://maps.google.com/?q=43.3006848,5.3801197",
+      "lat": 43.3006848,
+      "lng": 5.3801197,
+      "halalFriendly": false,
+      "bookingUrl": "https://www.massilia-hotel.fr/",
+      "source": "osm"
+    },
+    {
+      "nom": "Toyoko Inn",
+      "categorie": "Hôtel",
+      "priceRange": "€€€",
+      "score": 3,
+      "mapsUrl": "https://maps.google.com/?q=43.304471,5.3742985",
+      "lat": 43.304471,
+      "lng": 5.3742985,
+      "halalFriendly": false,
+      "bookingUrl": "https://france.toyoko-inn.com/",
+      "source": "osm"
+    },
+    {
+      "nom": "B&b Hôtel",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.3050143,5.3679433",
+      "lat": 43.3050143,
+      "lng": 5.3679433,
+      "halalFriendly": false,
+      "bookingUrl": "https://www.hotel-bb.com/fr/hotels/marseille-centre-la-joliette.htm",
+      "source": "osm"
+    },
+    {
+      "nom": "New Hotel Select",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2988642,5.3812103",
+      "lat": 43.2988642,
+      "lng": 5.3812103,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.2988642,5.3812103",
+      "source": "osm"
+    },
+    {
+      "nom": "Casa Ortega",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.3017257,5.3793604",
+      "lat": 43.3017257,
+      "lng": 5.3793604,
+      "halalFriendly": false,
+      "bookingUrl": "casa-ortega.fr",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Le Panoramique",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.3012237,5.3798961",
+      "lat": 43.3012237,
+      "lng": 5.3798961,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.3012237,5.3798961",
+      "source": "osm"
+    },
+    {
+      "nom": "Urban Loft Marseille",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.3016288,5.3795195",
+      "lat": 43.3016288,
+      "lng": 5.3795195,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.3016288,5.3795195",
+      "source": "osm"
+    },
+    {
+      "nom": "Alex Hôtel",
+      "categorie": "Hôtel",
+      "priceRange": "€€€",
+      "score": 3,
+      "mapsUrl": "https://maps.google.com/?q=43.3015627,5.3796123",
+      "lat": 43.3015627,
+      "lng": 5.3796123,
+      "halalFriendly": false,
+      "bookingUrl": "https://www.alex-hotel.fr/",
+      "source": "osm"
+    },
+    {
+      "nom": "Hotel Anora",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.3012372,5.379999",
+      "lat": 43.3012372,
+      "lng": 5.379999,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.3012372,5.379999",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Garibaldi",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2969697,5.3819252",
+      "lat": 43.2969697,
+      "lng": 5.3819252,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.2969697,5.3819252",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Terminus Saint-Charles",
+      "categorie": "Hôtel",
+      "priceRange": "€€€",
+      "score": 3,
+      "mapsUrl": "https://maps.google.com/?q=43.3012773,5.3801979",
+      "lat": 43.3012773,
+      "lng": 5.3801979,
+      "halalFriendly": false,
+      "bookingUrl": "https://www.hotelterminusmarseille.fr/",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel de France",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.3021954,5.3794548",
+      "lat": 43.3021954,
+      "lng": 5.3794548,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.3021954,5.3794548",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel des Platanes",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2969932,5.3823483",
+      "lat": 43.2969932,
+      "lng": 5.3823483,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.2969932,5.3823483",
+      "source": "osm"
+    },
+    {
+      "nom": "Holiday Inn Express Marseille Saint-Charles",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.3026454,5.3791103",
+      "lat": 43.3026454,
+      "lng": 5.3791103,
+      "halalFriendly": false,
+      "bookingUrl": "https://all.accor.com/hotel/C461/index.fr.shtml",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Ariana",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2972091,5.3823324",
+      "lat": 43.2972091,
+      "lng": 5.3823324,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.2972091,5.3823324",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel de l'Ariana",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2972394,5.3823372",
+      "lat": 43.2972394,
+      "lng": 5.3823372,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.2972394,5.3823372",
+      "source": "osm"
+    },
+    {
+      "nom": "Meininger Hotel",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.3056563,5.3710775",
+      "lat": 43.3056563,
+      "lng": 5.3710775,
+      "halalFriendly": false,
+      "bookingUrl": "https://meininger-hotels.com",
+      "source": "osm"
+    },
+    {
+      "nom": "Ibis Styles",
+      "categorie": "Hôtel",
+      "priceRange": "€€€",
+      "score": 3,
+      "mapsUrl": "https://maps.google.com/?q=43.3011242,5.3808095",
+      "lat": 43.3011242,
+      "lng": 5.3808095,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.3011242,5.3808095",
+      "source": "osm"
+    },
+    {
+      "nom": "Le Printemps",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.3030424,5.3788547",
+      "lat": 43.3030424,
+      "lng": 5.3788547,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.3030424,5.3788547",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Windsor",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.3013134,5.3807919",
+      "lat": 43.3013134,
+      "lng": 5.3807919,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.3013134,5.3807919",
+      "source": "osm"
+    },
+    {
+      "nom": "Pension Edelweiss",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.3000345,5.3817244",
+      "lat": 43.3000345,
+      "lng": 5.3817244,
+      "halalFriendly": false,
+      "bookingUrl": "https://pension-edelweiss.fr/",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Sylvabelle",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2888835,5.377581",
+      "lat": 43.2888835,
+      "lng": 5.377581,
+      "halalFriendly": false,
+      "bookingUrl": "http://www.hotel-sylvabelle-marseille.com",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel de Toulon",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2972564,5.383054",
+      "lat": 43.2972564,
+      "lng": 5.383054,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.2972564,5.383054",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Lutetia",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "score": 2,
+      "mapsUrl": "https://maps.google.com/?q=43.2988254,5.382838",
+      "lat": 43.2988254,
+      "lng": 5.382838,
+      "halalFriendly": false,
+      "bookingUrl": "http://www.lutetia-marseille.com/",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Baron Amédée Armand",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2916297,5.3817782",
+      "lat": 43.2916297,
+      "lng": 5.3817782,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.2916297,5.3817782",
+      "source": "osm"
+    },
+    {
+      "nom": "Le Ryad",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2976223,5.3834362",
+      "lat": 43.2976223,
+      "lng": 5.3834362,
+      "halalFriendly": false,
+      "bookingUrl": "https://www.leryad.fr/",
+      "source": "osm"
+    },
+    {
+      "nom": "Ibis",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2916887,5.3820584",
+      "lat": 43.2916887,
+      "lng": 5.3820584,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.2916887,5.3820584",
+      "source": "osm"
+    },
+    {
+      "nom": "Grand Hotel De La Prefecture",
+      "categorie": "Hôtel",
+      "priceRange": "€",
+      "score": 1,
+      "mapsUrl": "https://maps.google.com/?q=43.291321,5.381776",
+      "lat": 43.291321,
+      "lng": 5.381776,
+      "halalFriendly": false,
+      "bookingUrl": "https://www.hoteldelaprefecture.fr/",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Paradis",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2887686,5.3788422",
+      "lat": 43.2887686,
+      "lng": 5.3788422,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.2887686,5.3788422",
+      "source": "osm"
+    },
+    {
+      "nom": "Hotel Beausoleil",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.299249,5.3834367",
+      "lat": 43.299249,
+      "lng": 5.3834367,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.299249,5.3834367",
+      "source": "osm"
+    },
+    {
+      "nom": "Odalys Canebiere",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2980028,5.3838029",
+      "lat": 43.2980028,
+      "lng": 5.3838029,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.2980028,5.3838029",
+      "source": "osm"
+    },
+    {
+      "nom": "Music Hotel",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.290921,5.3817436",
+      "lat": 43.290921,
+      "lng": 5.3817436,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.290921,5.3817436",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel d'Anjou",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2967119,5.3840431",
+      "lat": 43.2967119,
+      "lng": 5.3840431,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.2967119,5.3840431",
+      "source": "osm"
+    },
+    {
+      "nom": "Gambetta Hôtel",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2992123,5.3837591",
+      "lat": 43.2992123,
+      "lng": 5.3837591,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.2992123,5.3837591",
+      "source": "osm"
+    },
+    {
+      "nom": "Hotel Gambetta",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2992433,5.3837822",
+      "lat": 43.2992433,
+      "lng": 5.3837822,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.2992433,5.3837822",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Massilia",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.291305,5.382631",
+      "lat": 43.291305,
+      "lng": 5.382631,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.291305,5.382631",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel du Pharo",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2884023,5.3593207",
+      "lat": 43.2884023,
+      "lng": 5.3593207,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.2884023,5.3593207",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Trianon",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.3005137,5.3841095",
+      "lat": 43.3005137,
+      "lng": 5.3841095,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.3005137,5.3841095",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Ibis Marseille Centre Gare Saint-Charles",
+      "categorie": "Hôtel",
+      "priceRange": "€€€",
+      "score": 3,
+      "mapsUrl": "https://maps.google.com/?q=43.30272,5.3825357",
+      "lat": 43.30272,
+      "lng": 5.3825357,
+      "halalFriendly": false,
+      "bookingUrl": "https://all.accor.com/hotel/1390/index.fr.shtml",
+      "source": "osm"
+    },
+    {
+      "nom": "Café Hôtel Edmond",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2881731,5.3804391",
+      "lat": 43.2881731,
+      "lng": 5.3804391,
+      "halalFriendly": false,
+      "bookingUrl": "https://www.hoteledmondrostand.com/",
+      "source": "osm"
+    },
+    {
+      "nom": "Chinese home",
+      "categorie": "Auberge",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2977388,5.3854268",
+      "lat": 43.2977388,
+      "lng": 5.3854268,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.2977388,5.3854268",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Ibis Marseille Euroméditerranée",
+      "categorie": "Hôtel",
+      "priceRange": "€€€",
+      "score": 3,
+      "mapsUrl": "https://maps.google.com/?q=43.3079702,5.3676485",
+      "lat": 43.3079702,
+      "lng": 5.3676485,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.3079702,5.3676485",
+      "source": "osm"
+    },
+    {
+      "nom": "hôtel Ozea",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2986017,5.3858977",
+      "lat": 43.2986017,
+      "lng": 5.3858977,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.2986017,5.3858977",
+      "source": "osm"
+    },
+    {
+      "nom": "Résidence Orfea Marseille",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.3026456,5.3838517",
+      "lat": 43.3026456,
+      "lng": 5.3838517,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.3026456,5.3838517",
+      "source": "osm"
+    },
+    {
+      "nom": "Adagio Access Saint-Charles",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.304614,5.3819205",
+      "lat": 43.304614,
+      "lng": 5.3819205,
+      "halalFriendly": false,
+      "bookingUrl": "https://www.adagio-city.com/",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel du Coq",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.3008568,5.3856754",
+      "lat": 43.3008568,
+      "lng": 5.3856754,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.3008568,5.3856754",
+      "source": "osm"
+    },
+    {
+      "nom": "Les Bords de Mer",
+      "categorie": "Hôtel",
+      "priceRange": "€€€€",
+      "score": 4,
+      "mapsUrl": "https://maps.google.com/?q=43.2896499,5.3550511",
+      "lat": 43.2896499,
+      "lng": 5.3550511,
+      "halalFriendly": false,
+      "bookingUrl": "https://www.hotel-marseille-richelieu.com/",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Azur",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2988798,5.3870888",
+      "lat": 43.2988798,
+      "lng": 5.3870888,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.2988798,5.3870888",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Golden Tulip",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.3098382,5.3673046",
+      "lat": 43.3098382,
+      "lng": 5.3673046,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.3098382,5.3673046",
+      "source": "osm"
+    },
+    {
+      "nom": "easyHotel Marseille Euromed",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.3101525,5.3704209",
+      "lat": 43.3101525,
+      "lng": 5.3704209,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.3101525,5.3704209",
+      "source": "osm"
+    },
+    {
+      "nom": "Nady",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2869033,5.3854114",
+      "lat": 43.2869033,
+      "lng": 5.3854114,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.2869033,5.3854114",
+      "source": "osm"
+    },
+    {
+      "nom": "Mama Shelter",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2904403,5.3888628",
+      "lat": 43.2904403,
+      "lng": 5.3888628,
+      "halalFriendly": false,
+      "bookingUrl": "https://www.mamashelter.com/en/marseille/",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Peron",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "score": 2,
+      "mapsUrl": "https://maps.google.com/?q=43.2877411,5.3524422",
+      "lat": 43.2877411,
+      "lng": 5.3524422,
+      "halalFriendly": false,
+      "bookingUrl": "http://www.hotelperon.com/",
+      "source": "osm"
+    },
+    {
+      "nom": "Marseille Euromed",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.314766,5.3696055",
+      "lat": 43.314766,
+      "lng": 5.3696055,
+      "halalFriendly": false,
+      "bookingUrl": "https://www.appartcity.com/fr/destinations/provence-alpes-cote-d-azur/marseille/marseille-euromed.html",
+      "source": "osm"
+    },
+    {
+      "nom": "Rocky pop",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2828743,5.3872954",
+      "lat": 43.2828743,
+      "lng": 5.3872954,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.2828743,5.3872954",
+      "source": "osm"
+    },
+    {
+      "nom": "Le Céleste",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.3092757,5.3892763",
+      "lat": 43.3092757,
+      "lng": 5.3892763,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.3092757,5.3892763",
+      "source": "osm"
+    },
+    {
+      "nom": "Apparthôtel Montempô",
+      "categorie": "Auberge",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.3161753,5.372954",
+      "lat": 43.3161753,
+      "lng": 5.372954,
+      "halalFriendly": false,
+      "bookingUrl": "https://www.montempo.fr/fr/nosapparthotels/marseille-centre-euromed",
+      "source": "osm"
+    },
+    {
+      "nom": "Maison Dormoy",
+      "categorie": "Appartement",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.3005803,5.3966667",
+      "lat": 43.3005803,
+      "lng": 5.3966667,
+      "halalFriendly": false,
+      "bookingUrl": "https://www.maisondormoy.com/fr",
+      "source": "osm"
+    },
+    {
+      "nom": "Le Rhul",
+      "categorie": "Hôtel",
+      "priceRange": "€€€",
+      "score": 3,
+      "mapsUrl": "https://maps.google.com/?q=43.2801682,5.3537431",
+      "lat": 43.2801682,
+      "lng": 5.3537431,
+      "halalFriendly": false,
+      "bookingUrl": "http://www.lerhul.fr",
+      "source": "osm"
+    },
+    {
+      "nom": "Resid'hotel",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2810856,5.3880734",
+      "lat": 43.2810856,
+      "lng": 5.3880734,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.2810856,5.3880734",
+      "source": "osm"
+    },
+    {
+      "nom": "Le Petit Nice Passedat",
+      "categorie": "Hôtel",
+      "priceRange": "€€€€",
+      "score": 5,
+      "mapsUrl": "https://maps.google.com/?q=43.2802191,5.3520689",
+      "lat": 43.2802191,
+      "lng": 5.3520689,
+      "halalFriendly": false,
+      "bookingUrl": "http://www.passedat.fr/?anchor=!home#!home",
+      "source": "osm"
+    },
+    {
+      "nom": "Le Petit Nice Passedat - Relais & Châteaux",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2802136,5.3520616",
+      "lat": 43.2802136,
+      "lng": 5.3520616,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.2802136,5.3520616",
+      "source": "osm"
+    },
+    {
+      "nom": "Le Petit Nice Passedat - La Marina",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2802921,5.3516252",
+      "lat": 43.2802921,
+      "lng": 5.3516252,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.2802921,5.3516252",
+      "source": "osm"
+    },
+    {
+      "nom": "Résidence Carpe Diem",
+      "categorie": "Appartement",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.3098736,5.3927772",
+      "lat": 43.3098736,
+      "lng": 5.3927772,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.3098736,5.3927772",
+      "source": "osm"
+    },
+    {
+      "nom": "B&B HOTEL Marseille Prado Parc des Expositions",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.279421,5.3891528",
+      "lat": 43.279421,
+      "lng": 5.3891528,
+      "halalFriendly": false,
+      "bookingUrl": "https://www.hotel-bb.com/fr/hotel/marseille-prado-parc-des-expositions",
+      "source": "osm"
+    },
+    {
+      "nom": "Appart'City",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2799988,5.3906227",
+      "lat": 43.2799988,
+      "lng": 5.3906227,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=43.2799988,5.3906227",
+      "source": "osm"
+    },
+    {
+      "nom": "Aparthotel Adagio Access Marseille Prado Périer",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=43.2786071,5.3886546",
+      "lat": 43.2786071,
+      "lng": 5.3886546,
+      "halalFriendly": false,
+      "bookingUrl": "https://www.adagio-city.com/de/hotel-8402-aparthotel-adagio-access-marseille-prado-perier/index.shtml",
+      "source": "osm"
     }
-   ],
-   "hotels_recommandes": [
-    "Hôtel Noailles",
-    "ibis Marseille Centre Belsunce"
-   ],
-   "conseils": "Louer une voiture pour un jour pour accéder aux calanques les plus reculées. Application Happy Cow pour trouver des options végé/halal à proximité."
-  },
-  "voyage_solo": {
-   "intro": "Marseille en solo est une ville d'aventure et de rencontres. Les Marseillais sont naturellement accueillants. Les transports en commun (métro, tram) permettent d'explorer facilement. Très sûr dans les zones touristiques.",
-   "top_experiences": [
+  ],
+  "activites": [],
+  "road_trips": [
     {
-     "titre": "Randonnée solo en calanque",
-     "details": "Les sentiers des Calanques sont bien balisés et sécurisés. La calanque de Morgiou est accessible aux randonneurs solo depuis Marseille",
-     "prix": "Gratuit"
+      "id": "rt1",
+      "titre": "Marseille → Aix-en-Provence — Escapade Art & Gastronomie",
+      "duree": "1 jour",
+      "distance_km": 35,
+      "etapes": [
+        "Marseille",
+        "Aix-en-Provence"
+      ],
+      "description": "À seulement 30 minutes de Marseille, Aix-en-Provence est la ville de Paul Cézanne et de la calissons. Vieille ville élégante, fontaines thermales, cours Mirabeau et magnifiques marchés. Quelques restaurants halal dans le centre d'Aix.",
+      "conseils_halal": "L'offre halal à Aix est limitée mais existe dans le quartier Méjanes. Prévoir son repas depuis Marseille ou vérifier les adresses en avance. Marché provençal le mardi, jeudi et samedi.",
+      "budget_estime": "30–80€/personne",
+      "tags": [
+        "culture",
+        "art",
+        "provence",
+        "voiture ou bus"
+      ]
     },
     {
-     "titre": "Prière du vendredi à la Grande Mosquée",
-     "details": "Rejoindre la communauté marseillaise pour la prière du vendredi — moment de fraternité unique",
-     "prix": "Gratuit"
+      "id": "rt2",
+      "titre": "Marseille → Cassis → La Ciotat — Côte d'Azur à portée",
+      "duree": "1 jour",
+      "distance_km": 50,
+      "etapes": [
+        "Marseille",
+        "Cassis",
+        "La Ciotat"
+      ],
+      "description": "La plus belle route côtière de la région. Cassis, petit port authentique aux falaises de calcaire blanc, puis La Ciotat, berceau du cinéma (les frères Lumière y ont tourné leur premier film). Baignades en calanque et ambiance Côte d'Azur.",
+      "conseils_halal": "Options halal très limitées à Cassis — prévoir pique-nique depuis Marseille. La Ciotat a quelques options. Idéal pour une journée nature.",
+      "budget_estime": "20–50€/personne",
+      "tags": [
+        "nature",
+        "calanques",
+        "cinéma",
+        "mer",
+        "pique-nique"
+      ]
     },
     {
-     "titre": "Visite solo du MuCEM",
-     "details": "Explorer à son rythme les collections du MuCEM sur les civilisations méditerranéennes — prévoir 3h minimum",
-     "prix": "11€"
+      "id": "rt3",
+      "titre": "Marseille → Avignon → Pont du Gard — Patrimoine UNESCO",
+      "duree": "2 jours",
+      "distance_km": 150,
+      "etapes": [
+        "Marseille",
+        "Aix-en-Provence",
+        "Salon-de-Provence",
+        "Avignon",
+        "Pont du Gard"
+      ],
+      "description": "Deux jours de patrimoine UNESCO exceptionnel : Avignon (Palais des Papes, pont d'Avignon classé UNESCO), Pont du Gard (aqueduc romain du Ier siècle), les Alpilles et Les Baux-de-Provence. La Provence dans toute sa splendeur.",
+      "conseils_halal": "Avignon a une communauté musulmane notable — plusieurs restaurants halal disponibles dans le centre. Prévoir ses repas pour le Pont du Gard. Budget hôtel à Avignon.",
+      "budget_estime": "150–300€/personne",
+      "tags": [
+        "UNESCO",
+        "histoire",
+        "antiquité",
+        "Avignon",
+        "Pont du Gard"
+      ]
     }
-   ],
-   "hotels_recommandes": [
-    "ibis Marseille Centre Belsunce",
-    "Hôtel Noailles"
-   ],
-   "conseils": "Application CityMapper pour les transports. Éviter les quartiers nord isolés la nuit. Le pass journée RTM (2,80€) couvre métro, tram et bus."
-  },
-  "voyage_spirituel": {
-   "intro": "Marseille porte la plus grande communauté musulmane de France proportionnellement. La ville est un carrefour de l'islam méditerranéen : présence algérienne, marocaine, tunisienne, turque, sénégalaise. Un lieu de foi vivante et plurielle.",
-   "top_experiences": [
-    {
-     "titre": "Prière à la Grande Mosquée de Marseille",
-     "details": "Rejoindre les milliers de fidèles à la plus grande mosquée de France lors de la prière du vendredi ou au moment du Ramadan",
-     "prix": "Gratuit"
+  ],
+  "voyages_par_type": {
+    "en_couple": {
+      "intro": "Marseille en couple offre une atmosphère authentique et romantique : coucher de soleil sur le Vieux-Port, dîner gastronomique halal dans le Panier, promenade nocturne sur la Corniche. Une ville qui se révèle aux amoureux qui prennent le temps de la découvrir.",
+      "top_experiences": [
+        {
+          "titre": "Coucher de soleil depuis Notre-Dame de la Garde",
+          "details": "Vue panoramique à 360° sur Marseille et la Méditerranée au coucher du soleil — moment magique et totalement gratuit",
+          "prix": "Gratuit"
+        },
+        {
+          "titre": "Dîner gastronomique halal dans le Panier",
+          "details": "Réserver à La Casbah du Panier pour un dîner en terrasse dans une ruelle du plus vieux quartier de Marseille",
+          "prix": "30–40€/pers"
+        },
+        {
+          "titre": "Excursion en bateau au Château d'If",
+          "details": "Navette maritime pour le château d'If puis baignade dans une crique du Frioul. Journée maritime mémorable.",
+          "prix": "20–30€/pers"
+        }
+      ],
+      "hotels_recommandes": [
+        "InterContinental Marseille — Hôtel-Dieu",
+        "Sofitel Marseille Vieux-Port"
+      ],
+      "conseils": "Éviter juillet-août (surchargé). Septembre est idéal : mer chaude, moins de touristes, lumière méditerranéenne magnifique."
     },
-    {
-     "titre": "Ramadan à Marseille",
-     "details": "Le Ramadan à Marseille est une expérience extraordinaire : iftars collectifs, marchés nocturnes de Noailles, animation dans tout le quartier Belsunce jusqu'à l'aube",
-     "prix": "Gratuit (coût vie locale)"
+    "en_famille": {
+      "intro": "Marseille est excellente en famille pour les voyageurs musulmans : large offre halal, plages gratuites, Calanques accessibles aux enfants, MuCEM avec ateliers famille, et une ambiance méditerranéenne chaleureuse. Budget très raisonnable comparé à Paris.",
+      "top_experiences": [
+        {
+          "titre": "Journée aux Calanques (en bateau)",
+          "details": "Croisière commentée au pied des Calanques, baignade dans une crique turquoise — inoubliable pour les enfants",
+          "prix": "30–50€/adulte, 15–20€/enfant"
+        },
+        {
+          "titre": "Marché de Noailles + déjeuner halal",
+          "details": "Visite du marché oriental de Noailles (dattes, épices, baklava) puis déjeuner dans un restaurant halal du quartier",
+          "prix": "15–20€/pers"
+        },
+        {
+          "titre": "Plages du Prado",
+          "details": "Grandes plages aménagées avec jeux pour enfants, maîtres-nageurs, buvettes. Journée complète de baignade à prix zéro",
+          "prix": "Gratuit"
+        }
+      ],
+      "hotels_recommandes": [
+        "Appart'City Marseille Prado Velodrome",
+        "Hôtel Villa Massalia"
+      ],
+      "conseils": "L'Appart'City permet de préparer ses repas halal maison — idéal pour maîtriser son budget. Acheter les produits halal au marché de Noailles."
     },
-    {
-     "titre": "Quartier Belsunce — Librairies islamiques",
-     "details": "Explorer les librairies islamiques, épiceries orientales et les lieux de savoir islamique du quartier Belsunce — un patrimoine culturel unique",
-     "prix": "Gratuit"
+    "entre_amis": {
+      "intro": "Marseille entre amis, c'est l'aventure garantie : tournoi de pétanque au Vieux-Port, randonnée en calanque, soirée street food à Noailles, match de l'OM au Vélodrome. Une ville vivante et authentique.",
+      "top_experiences": [
+        {
+          "titre": "Randonnée Calanque de Sugiton",
+          "details": "3–4h de marche depuis Luminy jusqu'à la calanque de Sugiton — effort récompensé par un paysage époustouflant et une baignade méritée",
+          "prix": "Gratuit"
+        },
+        {
+          "titre": "Match de l'OM au Vélodrome",
+          "details": "Vivre un match dans le mythique Stade Orange Vélodrome avec 65 000 supporters — expérience unique de l'ambiance marseillaise",
+          "prix": "20–60€"
+        },
+        {
+          "titre": "Soirée street food à Noailles",
+          "details": "Tournée des stands de street food halal du quartier de Noailles : shawarma, falafel, merguez, baklava. Le tout pour moins de 15€/pers.",
+          "prix": "10–15€/pers"
+        }
+      ],
+      "hotels_recommandes": [
+        "Hôtel Noailles",
+        "ibis Marseille Centre Belsunce"
+      ],
+      "conseils": "Louer une voiture pour un jour pour accéder aux calanques les plus reculées. Application Happy Cow pour trouver des options végé/halal à proximité."
+    },
+    "voyage_solo": {
+      "intro": "Marseille en solo est une ville d'aventure et de rencontres. Les Marseillais sont naturellement accueillants. Les transports en commun (métro, tram) permettent d'explorer facilement. Très sûr dans les zones touristiques.",
+      "top_experiences": [
+        {
+          "titre": "Randonnée solo en calanque",
+          "details": "Les sentiers des Calanques sont bien balisés et sécurisés. La calanque de Morgiou est accessible aux randonneurs solo depuis Marseille",
+          "prix": "Gratuit"
+        },
+        {
+          "titre": "Prière du vendredi à la Grande Mosquée",
+          "details": "Rejoindre la communauté marseillaise pour la prière du vendredi — moment de fraternité unique",
+          "prix": "Gratuit"
+        },
+        {
+          "titre": "Visite solo du MuCEM",
+          "details": "Explorer à son rythme les collections du MuCEM sur les civilisations méditerranéennes — prévoir 3h minimum",
+          "prix": "11€"
+        }
+      ],
+      "hotels_recommandes": [
+        "ibis Marseille Centre Belsunce",
+        "Hôtel Noailles"
+      ],
+      "conseils": "Application CityMapper pour les transports. Éviter les quartiers nord isolés la nuit. Le pass journée RTM (2,80€) couvre métro, tram et bus."
+    },
+    "voyage_spirituel": {
+      "intro": "Marseille porte la plus grande communauté musulmane de France proportionnellement. La ville est un carrefour de l'islam méditerranéen : présence algérienne, marocaine, tunisienne, turque, sénégalaise. Un lieu de foi vivante et plurielle.",
+      "top_experiences": [
+        {
+          "titre": "Prière à la Grande Mosquée de Marseille",
+          "details": "Rejoindre les milliers de fidèles à la plus grande mosquée de France lors de la prière du vendredi ou au moment du Ramadan",
+          "prix": "Gratuit"
+        },
+        {
+          "titre": "Ramadan à Marseille",
+          "details": "Le Ramadan à Marseille est une expérience extraordinaire : iftars collectifs, marchés nocturnes de Noailles, animation dans tout le quartier Belsunce jusqu'à l'aube",
+          "prix": "Gratuit (coût vie locale)"
+        },
+        {
+          "titre": "Quartier Belsunce — Librairies islamiques",
+          "details": "Explorer les librairies islamiques, épiceries orientales et les lieux de savoir islamique du quartier Belsunce — un patrimoine culturel unique",
+          "prix": "Gratuit"
+        }
+      ],
+      "hotels_recommandes": [
+        "ibis Marseille Centre Belsunce",
+        "Hôtel Noailles"
+      ],
+      "conseils": "Le Ramadan à Marseille est probablement l'une des plus belles expériences islamiques en France — l'ambiance dépasse Paris par son authenticité et sa chaleur communautaire."
     }
-   ],
-   "hotels_recommandes": [
-    "ibis Marseille Centre Belsunce",
-    "Hôtel Noailles"
-   ],
-   "conseils": "Le Ramadan à Marseille est probablement l'une des plus belles expériences islamiques en France — l'ambiance dépasse Paris par son authenticité et sa chaleur communautaire."
-  }
- },
- "boucheries": [
-  {
-   "nom": "Miss Viande",
-   "lat": 43.2959791,
-   "lng": 5.3794484,
-   "type": "Boucherie halal",
-   "mapsUrl": "https://maps.google.com/?q=43.2959791,5.3794484",
-   "source": "osm"
   },
-  {
-   "nom": "Viandes Center",
-   "lat": 43.2935891,
-   "lng": 5.3857011,
-   "type": "Boucherie halal",
-   "mapsUrl": "https://maps.google.com/?q=43.2935891,5.3857011",
-   "source": "osm"
+  "boucheries": [
+    {
+      "nom": "Miss Viande",
+      "lat": 43.2959791,
+      "lng": 5.3794484,
+      "type": "Boucherie halal",
+      "mapsUrl": "https://maps.google.com/?q=43.2959791,5.3794484",
+      "source": "osm"
+    },
+    {
+      "nom": "Viandes Center",
+      "lat": 43.2935891,
+      "lng": 5.3857011,
+      "type": "Boucherie halal",
+      "mapsUrl": "https://maps.google.com/?q=43.2935891,5.3857011",
+      "source": "osm"
+    },
+    {
+      "nom": "Boucherie Viandes & Compagnie",
+      "lat": 43.3054899,
+      "lng": 5.384242,
+      "type": "Boucherie halal",
+      "mapsUrl": "https://maps.google.com/?q=43.3054899,5.384242",
+      "source": "osm"
+    },
+    {
+      "nom": "Boucherie du Centre",
+      "lat": 43.3082215,
+      "lng": 5.3810779,
+      "type": "Boucherie halal",
+      "mapsUrl": "https://maps.google.com/?q=43.3082215,5.3810779",
+      "source": "osm"
+    },
+    {
+      "nom": "Boucherie / Charcuterie Les Chartreux",
+      "lat": 43.3062767,
+      "lng": 5.3997184,
+      "type": "Boucherie halal",
+      "mapsUrl": "https://maps.google.com/?q=43.3062767,5.3997184",
+      "source": "osm"
+    },
+    {
+      "nom": "Univers Hallal",
+      "lat": 43.3030965,
+      "lng": 5.4028054,
+      "type": "Boucherie halal",
+      "mapsUrl": "https://maps.google.com/?q=43.3030965,5.4028054",
+      "source": "osm"
+    },
+    {
+      "nom": "Le Comptoir Marseillais des Viandes",
+      "lat": 43.2817489,
+      "lng": 5.4046309,
+      "type": "Boucherie halal",
+      "mapsUrl": "https://maps.google.com/?q=43.2817489,5.4046309",
+      "source": "osm"
+    },
+    {
+      "nom": "Boucherie Sainte Marthe",
+      "lat": 43.3284321,
+      "lng": 5.3875095,
+      "type": "Boucherie halal",
+      "mapsUrl": "https://maps.google.com/?q=43.3284321,5.3875095",
+      "source": "osm"
+    },
+    {
+      "nom": "Poulets Fermiers De Provence",
+      "lat": 43.3338805,
+      "lng": 5.3922507,
+      "type": "Boucherie halal",
+      "mapsUrl": "https://maps.google.com/?q=43.3338805,5.3922507",
+      "source": "osm"
+    },
+    {
+      "nom": "Boucherie des Oliviers",
+      "lat": 43.3281619,
+      "lng": 5.4055507,
+      "type": "Boucherie halal",
+      "mapsUrl": "https://maps.google.com/?q=43.3281619,5.4055507",
+      "source": "osm"
+    },
+    {
+      "nom": "Boucher King Halal du Merlan",
+      "lat": 43.3309565,
+      "lng": 5.4046612,
+      "type": "Boucherie halal",
+      "mapsUrl": "https://maps.google.com/?q=43.3309565,5.4046612",
+      "source": "osm"
+    },
+    {
+      "nom": "France Food Saint Louis",
+      "lat": 43.3421006,
+      "lng": 5.3596135,
+      "type": "Boucherie halal",
+      "mapsUrl": "https://maps.google.com/?q=43.3421006,5.3596135",
+      "source": "osm"
+    },
+    {
+      "nom": "Big Hallal",
+      "lat": 43.3255421,
+      "lng": 5.4243312,
+      "type": "Boucherie halal",
+      "mapsUrl": "https://maps.google.com/?q=43.3255421,5.4243312",
+      "source": "osm"
+    },
+    {
+      "nom": "La Rose des viandes",
+      "lat": 43.3284969,
+      "lng": 5.4257143,
+      "type": "Boucherie halal",
+      "mapsUrl": "https://maps.google.com/?q=43.3284969,5.4257143",
+      "source": "osm"
+    },
+    {
+      "nom": "Boucherie Azzoug",
+      "lat": 43.34819,
+      "lng": 5.3591122,
+      "type": "Boucherie halal",
+      "mapsUrl": "https://maps.google.com/?q=43.34819,5.3591122",
+      "source": "osm"
+    },
+    {
+      "nom": "Boucherie Du Centre Hallal Charcute",
+      "lat": 43.3717736,
+      "lng": 5.3561745,
+      "type": "Boucherie halal",
+      "mapsUrl": "https://maps.google.com/?q=43.3717736,5.3561745",
+      "source": "osm"
+    },
+    {
+      "nom": "Vitamines",
+      "lat": 43.3804749,
+      "lng": 5.357634,
+      "type": "Boucherie halal",
+      "mapsUrl": "https://maps.google.com/?q=43.3804749,5.357634",
+      "source": "osm"
+    }
+  ],
+  "boulangeries_halal": [
+    {
+      "id": "bl1",
+      "nom": "Boulangerie des Halles de Noailles",
+      "adresse": "25 Rue Longue des Capucins, 13001 Marseille",
+      "quartier": "Noailles (1er)",
+      "specialites": [
+        "Pain khobz",
+        "Msemen",
+        "Chebakia"
+      ],
+      "horaires": "6h–20h",
+      "adresse_a_verifier": true
+    },
+    {
+      "id": "bl2",
+      "nom": "Boulangerie Orientale Al-Baraka",
+      "adresse": "31 Cours Belsunce, 13001 Marseille",
+      "quartier": "Belsunce (1er)",
+      "specialites": [
+        "Cornes de gazelle",
+        "Baklava",
+        "Sablés aux amandes"
+      ],
+      "horaires": "7h–22h",
+      "adresse_a_verifier": true
+    },
+    {
+      "id": "bl3",
+      "nom": "La Pâtisserie Kabyle",
+      "adresse": "9 Rue Bernard du Bois, 13001 Marseille",
+      "quartier": "Centre (1er)",
+      "specialites": [
+        "Makroud",
+        "Tamina",
+        "Zlabia"
+      ],
+      "horaires": "8h–21h (fermé lundi)",
+      "adresse_a_verifier": true
+    },
+    {
+      "id": "bl4",
+      "nom": "Boulangerie Halal Belle de Mai",
+      "adresse": "55 Rue Clovis Hugues, 13003 Marseille",
+      "quartier": "Belle de Mai (3e)",
+      "specialites": [
+        "Pain maison",
+        "Brioche halal",
+        "Pain au lait"
+      ],
+      "horaires": "6h30–19h30 (fermé dimanche)",
+      "adresse_a_verifier": true
+    },
+    {
+      "id": "bl5",
+      "nom": "Pâtisserie Turque Bogazici",
+      "adresse": "67 Boulevard National, 13001 Marseille",
+      "quartier": "Centre (1er)",
+      "specialites": [
+        "Baklava pistache",
+        "Simit",
+        "Revani (gâteau semoule)"
+      ],
+      "horaires": "8h–22h tous les jours",
+      "adresse_a_verifier": true
+    }
+  ],
+  "articles_lies": [
+    "marseille-guide-halal",
+    "france-ville-halal",
+    "calanques-guide-famille"
+  ],
+  "villes_proches": [
+    "nice",
+    "lyon",
+    "toulouse",
+    "paris"
+  ],
+  "codeISO": "FR",
+  "image": "https://images.unsplash.com/photo-1689864480104-35fbbd99c81c?w=1600&q=80",
+  "continent": "Europe",
+  "metaDescription": "Restaurants halal signalés, mosquées et guide pratique pour Marseille — Halal Trust Score 4/5.",
+  "mosqueesPrincipales": [
+    {
+      "nom": "Mosquée des Grands Carmes",
+      "lat": 43.3002099,
+      "lng": 5.3724333,
+      "coordonnees": {
+        "lat": 43.3002099,
+        "lng": 5.3724333
+      },
+      "adresse": "Place des Grands Carmes, Marseille",
+      "mapsUrl": "https://maps.google.com/?q=43.3002099,5.3724333",
+      "source": "osm"
+    },
+    {
+      "nom": "Mosquée AT-Taqwa",
+      "lat": 43.3027227,
+      "lng": 5.373925,
+      "coordonnees": {
+        "lat": 43.3027227,
+        "lng": 5.373925
+      },
+      "mapsUrl": "https://maps.google.com/?q=43.3027227,5.373925",
+      "source": "osm"
+    },
+    {
+      "nom": "Mosqué El Imane",
+      "lat": 43.3107738,
+      "lng": 5.3774557,
+      "coordonnees": {
+        "lat": 43.3107738,
+        "lng": 5.3774557
+      },
+      "adresse": "Marseille",
+      "mapsUrl": "https://maps.google.com/?q=43.3107738,5.3774557",
+      "source": "osm"
+    },
+    {
+      "nom": "La Grande Mosquée de la Sounna",
+      "lat": 43.3136062,
+      "lng": 5.3742821,
+      "coordonnees": {
+        "lat": 43.3136062,
+        "lng": 5.3742821
+      },
+      "mapsUrl": "https://maps.google.com/?q=43.3136062,5.3742821",
+      "source": "osm"
+    },
+    {
+      "nom": "Mosquée (Association Culturelle Musulmane)",
+      "lat": 43.317945,
+      "lng": 5.3750824,
+      "coordonnees": {
+        "lat": 43.317945,
+        "lng": 5.3750824
+      },
+      "mapsUrl": "https://maps.google.com/?q=43.317945,5.3750824",
+      "source": "osm"
+    },
+    {
+      "nom": "Mosquee Islâh",
+      "lat": 43.3261689,
+      "lng": 5.3621167,
+      "coordonnees": {
+        "lat": 43.3261689,
+        "lng": 5.3621167
+      },
+      "mapsUrl": "https://maps.google.com/?q=43.3261689,5.3621167",
+      "source": "osm"
+    },
+    {
+      "nom": "Mosquée de Font Vert",
+      "lat": 43.3279469,
+      "lng": 5.3916841,
+      "coordonnees": {
+        "lat": 43.3279469,
+        "lng": 5.3916841
+      },
+      "mapsUrl": "https://maps.google.com/?q=43.3279469,5.3916841",
+      "source": "osm"
+    },
+    {
+      "nom": "Mosquée MARIAM",
+      "lat": 43.3352474,
+      "lng": 5.3605864,
+      "coordonnees": {
+        "lat": 43.3352474,
+        "lng": 5.3605864
+      },
+      "mapsUrl": "https://maps.google.com/?q=43.3352474,5.3605864",
+      "source": "osm"
+    },
+    {
+      "nom": "Mosquée Essalam",
+      "lat": 43.3340071,
+      "lng": 5.4007489,
+      "coordonnees": {
+        "lat": 43.3340071,
+        "lng": 5.4007489
+      },
+      "mapsUrl": "https://maps.google.com/?q=43.3340071,5.4007489",
+      "source": "osm"
+    },
+    {
+      "nom": "Mosquée du 13",
+      "lat": 43.3304982,
+      "lng": 5.4113306,
+      "coordonnees": {
+        "lat": 43.3304982,
+        "lng": 5.4113306
+      },
+      "mapsUrl": "https://maps.google.com/?q=43.3304982,5.4113306",
+      "source": "osm"
+    },
+    {
+      "nom": "Mosquée Bilal Ben Rabah",
+      "lat": 43.3557227,
+      "lng": 5.3604079,
+      "coordonnees": {
+        "lat": 43.3557227,
+        "lng": 5.3604079
+      },
+      "mapsUrl": "https://maps.google.com/?q=43.3557227,5.3604079",
+      "source": "osm"
+    },
+    {
+      "nom": "mosquée du bosquet",
+      "lat": 43.2842766,
+      "lng": 5.4571822,
+      "coordonnees": {
+        "lat": 43.2842766,
+        "lng": 5.4571822
+      },
+      "mapsUrl": "https://maps.google.com/?q=43.2842766,5.4571822",
+      "source": "osm"
+    },
+    {
+      "nom": "Mosquée / Salle de Prière la Savine",
+      "lat": 43.3679204,
+      "lng": 5.3709385,
+      "coordonnees": {
+        "lat": 43.3679204,
+        "lng": 5.3709385
+      },
+      "mapsUrl": "https://maps.google.com/?q=43.3679204,5.3709385",
+      "source": "osm"
+    },
+    {
+      "nom": "Mosquée de l'Estaque",
+      "lat": 43.3619134,
+      "lng": 5.3172635,
+      "coordonnees": {
+        "lat": 43.3619134,
+        "lng": 5.3172635
+      },
+      "mapsUrl": "https://maps.google.com/?q=43.3619134,5.3172635",
+      "source": "osm"
+    },
+    {
+      "nom": "Mosquée de la Solidarité",
+      "lat": 43.3851737,
+      "lng": 5.3696607,
+      "coordonnees": {
+        "lat": 43.3851737,
+        "lng": 5.3696607
+      },
+      "mapsUrl": "https://maps.google.com/?q=43.3851737,5.3696607",
+      "source": "osm"
+    },
+    {
+      "id": "osm-67708159",
+      "nom": "Mosquée Tahara",
+      "type": "mosquee",
+      "lat": 43.2952027,
+      "lng": 5.3803694,
+      "mapsUrl": "https://maps.google.com/?q=43.2952027,5.3803694",
+      "source": "osm"
+    },
+    {
+      "id": "osm-67716436",
+      "nom": "Mosquée Khalid Ibn Al Walid",
+      "type": "mosquee",
+      "lat": 43.3048393,
+      "lng": 5.3718654,
+      "mapsUrl": "https://maps.google.com/?q=43.3048393,5.3718654",
+      "source": "osm"
+    },
+    {
+      "id": "osm-154577898",
+      "nom": "Mosquée En-Nasr",
+      "type": "mosquee",
+      "lat": 43.276709,
+      "lng": 5.4082085,
+      "mapsUrl": "https://maps.google.com/?q=43.276709,5.4082085",
+      "source": "osm"
+    },
+    {
+      "id": "osm-454624147",
+      "nom": "Al Fourqane la cayolle",
+      "type": "mosquee",
+      "lat": 43.2279651,
+      "lng": 5.4036239,
+      "mapsUrl": "https://maps.google.com/?q=43.2279651,5.4036239",
+      "source": "osm"
+    },
+    {
+      "id": "osm-684983843",
+      "nom": "Mosquée des Cèdres",
+      "type": "mosquee",
+      "adresse": "Rue de Marathon",
+      "lat": 43.3256774,
+      "lng": 5.4116985,
+      "mapsUrl": "https://maps.google.com/?q=43.3256774,5.4116985",
+      "source": "osm"
+    }
+  ],
+  "halalScore": 7.4,
+  "description_en": "Marseille, in France, is a halal-friendly destination with a Halal Trust Score of 3.9/5. Muslim travelers will find 130 halal restaurants listed, 45 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind. Best time to visit: May–June, September–October.",
+  "metaDescription_en": "Halal guide to Marseille: 130 halal restaurants listed, 45 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 3.9/5.",
+  "nom_en": "Marseille",
+  "infos_pratiques_en": {
+    "langue": "French",
+    "monnaie": "Euro (EUR)",
+    "taux_change_eur": "Monnaie locale",
+    "visa": "Pas de visa (UE/Schengen)",
+    "meilleure_periode": "May–June, September–October",
+    "appel_priere": "Applications (Muslim Pro, Athan) — pas d'appel public en France"
   },
-  {
-   "nom": "Boucherie Viandes & Compagnie",
-   "lat": 43.3054899,
-   "lng": 5.384242,
-   "type": "Boucherie halal",
-   "mapsUrl": "https://maps.google.com/?q=43.3054899,5.384242",
-   "source": "osm"
-  },
-  {
-   "nom": "Boucherie du Centre",
-   "lat": 43.3082215,
-   "lng": 5.3810779,
-   "type": "Boucherie halal",
-   "mapsUrl": "https://maps.google.com/?q=43.3082215,5.3810779",
-   "source": "osm"
-  },
-  {
-   "nom": "Boucherie / Charcuterie Les Chartreux",
-   "lat": 43.3062767,
-   "lng": 5.3997184,
-   "type": "Boucherie halal",
-   "mapsUrl": "https://maps.google.com/?q=43.3062767,5.3997184",
-   "source": "osm"
-  },
-  {
-   "nom": "Univers Hallal",
-   "lat": 43.3030965,
-   "lng": 5.4028054,
-   "type": "Boucherie halal",
-   "mapsUrl": "https://maps.google.com/?q=43.3030965,5.4028054",
-   "source": "osm"
-  },
-  {
-   "nom": "Le Comptoir Marseillais des Viandes",
-   "lat": 43.2817489,
-   "lng": 5.4046309,
-   "type": "Boucherie halal",
-   "mapsUrl": "https://maps.google.com/?q=43.2817489,5.4046309",
-   "source": "osm"
-  },
-  {
-   "nom": "Boucherie Sainte Marthe",
-   "lat": 43.3284321,
-   "lng": 5.3875095,
-   "type": "Boucherie halal",
-   "mapsUrl": "https://maps.google.com/?q=43.3284321,5.3875095",
-   "source": "osm"
-  },
-  {
-   "nom": "Poulets Fermiers De Provence",
-   "lat": 43.3338805,
-   "lng": 5.3922507,
-   "type": "Boucherie halal",
-   "mapsUrl": "https://maps.google.com/?q=43.3338805,5.3922507",
-   "source": "osm"
-  },
-  {
-   "nom": "Boucherie des Oliviers",
-   "lat": 43.3281619,
-   "lng": 5.4055507,
-   "type": "Boucherie halal",
-   "mapsUrl": "https://maps.google.com/?q=43.3281619,5.4055507",
-   "source": "osm"
-  },
-  {
-   "nom": "Boucher King Halal du Merlan",
-   "lat": 43.3309565,
-   "lng": 5.4046612,
-   "type": "Boucherie halal",
-   "mapsUrl": "https://maps.google.com/?q=43.3309565,5.4046612",
-   "source": "osm"
-  },
-  {
-   "nom": "France Food Saint Louis",
-   "lat": 43.3421006,
-   "lng": 5.3596135,
-   "type": "Boucherie halal",
-   "mapsUrl": "https://maps.google.com/?q=43.3421006,5.3596135",
-   "source": "osm"
-  },
-  {
-   "nom": "Big Hallal",
-   "lat": 43.3255421,
-   "lng": 5.4243312,
-   "type": "Boucherie halal",
-   "mapsUrl": "https://maps.google.com/?q=43.3255421,5.4243312",
-   "source": "osm"
-  },
-  {
-   "nom": "La Rose des viandes",
-   "lat": 43.3284969,
-   "lng": 5.4257143,
-   "type": "Boucherie halal",
-   "mapsUrl": "https://maps.google.com/?q=43.3284969,5.4257143",
-   "source": "osm"
-  },
-  {
-   "nom": "Boucherie Azzoug",
-   "lat": 43.34819,
-   "lng": 5.3591122,
-   "type": "Boucherie halal",
-   "mapsUrl": "https://maps.google.com/?q=43.34819,5.3591122",
-   "source": "osm"
-  },
-  {
-   "nom": "Boucherie Du Centre Hallal Charcute",
-   "lat": 43.3717736,
-   "lng": 5.3561745,
-   "type": "Boucherie halal",
-   "mapsUrl": "https://maps.google.com/?q=43.3717736,5.3561745",
-   "source": "osm"
-  },
-  {
-   "nom": "Vitamines",
-   "lat": 43.3804749,
-   "lng": 5.357634,
-   "type": "Boucherie halal",
-   "mapsUrl": "https://maps.google.com/?q=43.3804749,5.357634",
-   "source": "osm"
-  }
- ],
- "boulangeries_halal": [
-  {
-   "id": "bl1",
-   "nom": "Boulangerie des Halles de Noailles",
-   "adresse": "25 Rue Longue des Capucins, 13001 Marseille",
-   "quartier": "Noailles (1er)",
-   "specialites": [
-    "Pain khobz",
-    "Msemen",
-    "Chebakia"
-   ],
-   "horaires": "6h–20h",
-   "adresse_a_verifier": true
-  },
-  {
-   "id": "bl2",
-   "nom": "Boulangerie Orientale Al-Baraka",
-   "adresse": "31 Cours Belsunce, 13001 Marseille",
-   "quartier": "Belsunce (1er)",
-   "specialites": [
-    "Cornes de gazelle",
-    "Baklava",
-    "Sablés aux amandes"
-   ],
-   "horaires": "7h–22h",
-   "adresse_a_verifier": true
-  },
-  {
-   "id": "bl3",
-   "nom": "La Pâtisserie Kabyle",
-   "adresse": "9 Rue Bernard du Bois, 13001 Marseille",
-   "quartier": "Centre (1er)",
-   "specialites": [
-    "Makroud",
-    "Tamina",
-    "Zlabia"
-   ],
-   "horaires": "8h–21h (fermé lundi)",
-   "adresse_a_verifier": true
-  },
-  {
-   "id": "bl4",
-   "nom": "Boulangerie Halal Belle de Mai",
-   "adresse": "55 Rue Clovis Hugues, 13003 Marseille",
-   "quartier": "Belle de Mai (3e)",
-   "specialites": [
-    "Pain maison",
-    "Brioche halal",
-    "Pain au lait"
-   ],
-   "horaires": "6h30–19h30 (fermé dimanche)",
-   "adresse_a_verifier": true
-  },
-  {
-   "id": "bl5",
-   "nom": "Pâtisserie Turque Bogazici",
-   "adresse": "67 Boulevard National, 13001 Marseille",
-   "quartier": "Centre (1er)",
-   "specialites": [
-    "Baklava pistache",
-    "Simit",
-    "Revani (gâteau semoule)"
-   ],
-   "horaires": "8h–22h tous les jours",
-   "adresse_a_verifier": true
-  }
- ],
- "articles_lies": [
-  "marseille-guide-halal",
-  "france-ville-halal",
-  "calanques-guide-famille"
- ],
- "villes_proches": [
-  "nice",
-  "lyon",
-  "toulouse",
-  "paris"
- ],
- "codeISO": "FR",
- "image": "https://images.unsplash.com/photo-1689864480104-35fbbd99c81c?w=1600&q=80",
- "continent": "Europe",
- "metaDescription": "Restaurants halal signalés, mosquées et guide pratique pour Marseille — Halal Trust Score 4/5.",
- "mosqueesPrincipales": [
-  {
-   "nom": "Mosquée des Grands Carmes",
-   "lat": 43.3002099,
-   "lng": 5.3724333,
-   "coordonnees": {
-    "lat": 43.3002099,
-    "lng": 5.3724333
-   },
-   "adresse": "Place des Grands Carmes, Marseille",
-   "mapsUrl": "https://maps.google.com/?q=43.3002099,5.3724333",
-   "source": "osm"
-  },
-  {
-   "nom": "Mosquée AT-Taqwa",
-   "lat": 43.3027227,
-   "lng": 5.373925,
-   "coordonnees": {
-    "lat": 43.3027227,
-    "lng": 5.373925
-   },
-   "mapsUrl": "https://maps.google.com/?q=43.3027227,5.373925",
-   "source": "osm"
-  },
-  {
-   "nom": "Mosqué El Imane",
-   "lat": 43.3107738,
-   "lng": 5.3774557,
-   "coordonnees": {
-    "lat": 43.3107738,
-    "lng": 5.3774557
-   },
-   "adresse": "Marseille",
-   "mapsUrl": "https://maps.google.com/?q=43.3107738,5.3774557",
-   "source": "osm"
-  },
-  {
-   "nom": "La Grande Mosquée de la Sounna",
-   "lat": 43.3136062,
-   "lng": 5.3742821,
-   "coordonnees": {
-    "lat": 43.3136062,
-    "lng": 5.3742821
-   },
-   "mapsUrl": "https://maps.google.com/?q=43.3136062,5.3742821",
-   "source": "osm"
-  },
-  {
-   "nom": "Mosquée (Association Culturelle Musulmane)",
-   "lat": 43.317945,
-   "lng": 5.3750824,
-   "coordonnees": {
-    "lat": 43.317945,
-    "lng": 5.3750824
-   },
-   "mapsUrl": "https://maps.google.com/?q=43.317945,5.3750824",
-   "source": "osm"
-  },
-  {
-   "nom": "Mosquee Islâh",
-   "lat": 43.3261689,
-   "lng": 5.3621167,
-   "coordonnees": {
-    "lat": 43.3261689,
-    "lng": 5.3621167
-   },
-   "mapsUrl": "https://maps.google.com/?q=43.3261689,5.3621167",
-   "source": "osm"
-  },
-  {
-   "nom": "Mosquée de Font Vert",
-   "lat": 43.3279469,
-   "lng": 5.3916841,
-   "coordonnees": {
-    "lat": 43.3279469,
-    "lng": 5.3916841
-   },
-   "mapsUrl": "https://maps.google.com/?q=43.3279469,5.3916841",
-   "source": "osm"
-  },
-  {
-   "nom": "Mosquée MARIAM",
-   "lat": 43.3352474,
-   "lng": 5.3605864,
-   "coordonnees": {
-    "lat": 43.3352474,
-    "lng": 5.3605864
-   },
-   "mapsUrl": "https://maps.google.com/?q=43.3352474,5.3605864",
-   "source": "osm"
-  },
-  {
-   "nom": "Mosquée Essalam",
-   "lat": 43.3340071,
-   "lng": 5.4007489,
-   "coordonnees": {
-    "lat": 43.3340071,
-    "lng": 5.4007489
-   },
-   "mapsUrl": "https://maps.google.com/?q=43.3340071,5.4007489",
-   "source": "osm"
-  },
-  {
-   "nom": "Mosquée du 13",
-   "lat": 43.3304982,
-   "lng": 5.4113306,
-   "coordonnees": {
-    "lat": 43.3304982,
-    "lng": 5.4113306
-   },
-   "mapsUrl": "https://maps.google.com/?q=43.3304982,5.4113306",
-   "source": "osm"
-  },
-  {
-   "nom": "Mosquée Bilal Ben Rabah",
-   "lat": 43.3557227,
-   "lng": 5.3604079,
-   "coordonnees": {
-    "lat": 43.3557227,
-    "lng": 5.3604079
-   },
-   "mapsUrl": "https://maps.google.com/?q=43.3557227,5.3604079",
-   "source": "osm"
-  },
-  {
-   "nom": "mosquée du bosquet",
-   "lat": 43.2842766,
-   "lng": 5.4571822,
-   "coordonnees": {
-    "lat": 43.2842766,
-    "lng": 5.4571822
-   },
-   "mapsUrl": "https://maps.google.com/?q=43.2842766,5.4571822",
-   "source": "osm"
-  },
-  {
-   "nom": "Mosquée / Salle de Prière la Savine",
-   "lat": 43.3679204,
-   "lng": 5.3709385,
-   "coordonnees": {
-    "lat": 43.3679204,
-    "lng": 5.3709385
-   },
-   "mapsUrl": "https://maps.google.com/?q=43.3679204,5.3709385",
-   "source": "osm"
-  },
-  {
-   "nom": "Mosquée de l'Estaque",
-   "lat": 43.3619134,
-   "lng": 5.3172635,
-   "coordonnees": {
-    "lat": 43.3619134,
-    "lng": 5.3172635
-   },
-   "mapsUrl": "https://maps.google.com/?q=43.3619134,5.3172635",
-   "source": "osm"
-  },
-  {
-   "nom": "Mosquée de la Solidarité",
-   "lat": 43.3851737,
-   "lng": 5.3696607,
-   "coordonnees": {
-    "lat": 43.3851737,
-    "lng": 5.3696607
-   },
-   "mapsUrl": "https://maps.google.com/?q=43.3851737,5.3696607",
-   "source": "osm"
-  },
-  {
-   "id": "osm-67708159",
-   "nom": "Mosquée Tahara",
-   "type": "mosquee",
-   "lat": 43.2952027,
-   "lng": 5.3803694,
-   "mapsUrl": "https://maps.google.com/?q=43.2952027,5.3803694",
-   "source": "osm"
-  },
-  {
-   "id": "osm-67716436",
-   "nom": "Mosquée Khalid Ibn Al Walid",
-   "type": "mosquee",
-   "lat": 43.3048393,
-   "lng": 5.3718654,
-   "mapsUrl": "https://maps.google.com/?q=43.3048393,5.3718654",
-   "source": "osm"
-  },
-  {
-   "id": "osm-154577898",
-   "nom": "Mosquée En-Nasr",
-   "type": "mosquee",
-   "lat": 43.276709,
-   "lng": 5.4082085,
-   "mapsUrl": "https://maps.google.com/?q=43.276709,5.4082085",
-   "source": "osm"
-  },
-  {
-   "id": "osm-454624147",
-   "nom": "Al Fourqane la cayolle",
-   "type": "mosquee",
-   "lat": 43.2279651,
-   "lng": 5.4036239,
-   "mapsUrl": "https://maps.google.com/?q=43.2279651,5.4036239",
-   "source": "osm"
-  },
-  {
-   "id": "osm-684983843",
-   "nom": "Mosquée des Cèdres",
-   "type": "mosquee",
-   "adresse": "Rue de Marathon",
-   "lat": 43.3256774,
-   "lng": 5.4116985,
-   "mapsUrl": "https://maps.google.com/?q=43.3256774,5.4116985",
-   "source": "osm"
-  }
- ],
- "halalScore": 7.8,
- "description_en": "Marseille, in France, is a halal-friendly destination with a Halal Trust Score of 3.9/5. Muslim travelers will find 130 halal restaurants listed, 45 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind. Best time to visit: May–June, September–October.",
- "metaDescription_en": "Halal guide to Marseille: 130 halal restaurants listed, 45 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 3.9/5.",
- "nom_en": "Marseille",
- "infos_pratiques_en": {
-  "langue": "French",
-  "monnaie": "Euro (EUR)",
-  "taux_change_eur": "Monnaie locale",
-  "visa": "Pas de visa (UE/Schengen)",
-  "meilleure_periode": "May–June, September–October",
-  "appel_priere": "Applications (Muslim Pro, Athan) — pas d'appel public en France"
- },
- "dataPurgedAt": "2026-07-15",
- "osmEnrichedAt": "2026-07-15"
+  "dataPurgedAt": "2026-07-15",
+  "osmEnrichedAt": "2026-07-15"
 }

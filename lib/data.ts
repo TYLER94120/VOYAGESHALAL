@@ -9,7 +9,7 @@ export const destinations: Destination[] = [
     description:
       "Istanbul est l'une des destinations halal les plus accessibles et les plus envoûtantes au monde. Ancienne capitale de l'Empire ottoman, la ville abrite plus de 3 000 mosquées, des quartiers historiques classés au patrimoine mondial de l'UNESCO et une gastronomie 100 % halal d'une richesse incomparable. Ici, l'appel à la prière (ezan) rythme naturellement les journées, les restaurants ne servent pas d'alcool dans les quartiers traditionnels, et chaque ruelle de la médina raconte des siècles d'histoire islamique. Istanbul est à la fois un voyage culturel, spirituel et gastronomique — un incontournable pour tout voyageur musulman.",
     coverImage: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&q=80',
-    halalScore: 5,
+    halalScore: 4.8,
     mosqueeCount: 3113,
     restaurantHalalCount: 15000,
     population: '15 millions',
@@ -86,7 +86,7 @@ export const destinations: Destination[] = [
     description:
       "Marrakech est une destination halal naturelle par excellence. Dans ce pays à majorité musulmane, le halal n'est pas un filtre de recherche mais la norme absolue : chaque restaurant, chaque hôtel, chaque marché respecte les préceptes islamiques sans que vous ayez à le vérifier. La médina de Marrakech, classée au patrimoine mondial de l'UNESCO, vous plonge dans un labyrinthe de ruelles ocres où mosquées millénaires, souks d'artisans et riads somptueux se succèdent. Une destination idéale pour les familles, les couples et les voyageurs en quête d'authenticité islamique et de richesse culturelle.",
     coverImage: 'https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1200&q=80',
-    halalScore: 5,
+    halalScore: 4.6,
     mosqueeCount: 500,
     restaurantHalalCount: 3000,
     population: '1 million',
@@ -159,7 +159,7 @@ export const destinations: Destination[] = [
     description:
       "Dubaï est la destination halal la plus sophistiquée de la planète. Dans cet État islamique, le halal est obligatoire pour tous les établissements de restauration (contrôle étatique) — une garantie unique qui permet de manger en toute confiance dans n'importe quel restaurant. La ville combine des gratte-ciels futuristes, des plages de sable blanc, le shopping de luxe et des musées de classe mondiale dans un cadre entièrement conforme aux valeurs islamiques. La Mosquée Jumeirah, ouverte aux non-musulmans, est l'une des plus belles de la région. Pour les familles aisées et les couples cherchant l'excellence, Dubaï est une évidence.",
     coverImage: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&q=80',
-    halalScore: 5,
+    halalScore: 4.65,
     mosqueeCount: 800,
     restaurantHalalCount: 12000,
     population: '3.5 millions',
@@ -285,7 +285,7 @@ export const destinations: Destination[] = [
     description:
       "Kuala Lumpur est la capitale mondiale du tourisme halal. La Malaisie est régulièrement classée première destination halal mondiale par le Global Muslim Travel Index — et KL en est le cœur battant. Le label d'État JAKIM (le plus rigoureux du monde) encadre chaque restaurant labellisé, qui respecte scrupuleusement les préceptes islamiques. Ajoutez à cela une gastronomie exceptionnelle (fusion malaise-chinoise-indienne), les tours Petronas iconiques, une nature luxuriante et des prix très accessibles — KL s'impose comme une destination halal de référence en Asie.",
     coverImage: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=1200&q=80',
-    halalScore: 5,
+    halalScore: 4.7,
     mosqueeCount: 500,
     restaurantHalalCount: 20000,
     population: '1.8 million (Grand KL : 8 millions)',
@@ -351,7 +351,7 @@ export const destinations: Destination[] = [
     description:
       "Bali surprend agréablement les voyageurs musulmans. Cette île principalement hindoue d'Indonésie — le plus grand pays musulman du monde — dispose d'une infrastructure halal solide, notamment dans les zones touristiques de Seminyak, Kuta et Ubud. Les restaurants halal signalés sont nombreux (kebab, nasi goreng halal, poulpe grillé halal) et facilement identifiables. L'île offre en plus des paysages d'une beauté incomparable : rizières en terrasse, temples sur l'océan, volcans et plages paradisiaques. Bali est la preuve qu'une destination non-musulmane peut être parfaitement accessible.",
     coverImage: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1200&q=80',
-    halalScore: 3,
+    halalScore: 3.4,
     mosqueeCount: 200,
     restaurantHalalCount: 500,
     population: '4.4 millions',
