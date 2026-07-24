@@ -121,7 +121,10 @@ export default async function HomePage() {
       {/* Hero plein écran minimaliste */}
       <section
         className="relative overflow-hidden flex items-center justify-center text-center px-6"
-        style={{ padding: '24px 24px 18px', backgroundColor: '#0b1a0f' }}
+        // 100dvh (et non 100vh) : les barres du navigateur mobile ne coupent rien ;
+        // on soustrait bandeau + header (~100px) pour que le widget prière suivant
+        // commence proprement sous la ligne de flottaison, jamais coupé à moitié.
+        style={{ minHeight: 'calc(100dvh - 100px)', padding: '24px 24px 18px', backgroundColor: '#0b1a0f' }}
       >
         {/* Image d'architecture islamique (sans personne) + voile sombre */}
         <Image
@@ -151,15 +154,10 @@ export default async function HomePage() {
 
           <HomeHeroActions />
 
-          {/* Accès communauté dès le hero */}
+          {/* Communauté : simple lien discret (le bouton faisait doublon avec le menu) */}
           <Link
             href="/communaute"
-            style={{
-              display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 8,
-              minHeight: 44, padding: '0 20px', marginTop: 10, borderRadius: 999,
-              border: '1.5px solid rgba(201,168,76,0.6)', background: 'rgba(201,168,76,0.12)',
-              color: 'var(--creme)', fontWeight: 800, fontSize: 16, textDecoration: 'none',
-            }}
+            style={{ display: 'inline-block', marginTop: 14, color: 'rgba(253,250,243,0.75)', fontWeight: 700, fontSize: 14, textDecoration: 'underline', textUnderlineOffset: 3 }}
           >
             {t.heroCommunity}
           </Link>

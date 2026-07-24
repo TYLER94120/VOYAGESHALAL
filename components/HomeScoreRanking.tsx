@@ -6,10 +6,13 @@ import path from 'path'
 // TOUJOURS de la source unique de vérité : le champ `score_halal` (échelle 0-5) du
 // JSON de la ville, affiché en /10 (×2). Aucune valeur codée en dur → plus aucune
 // contradiction entre l'accueil, /destinations et la page de la ville.
+// Les DEUX villes saintes ouvrent le classement à 10.0 — aucune autre ville ne
+// les égale (tri stable : à score égal, l'ordre ci-dessous est conservé).
 const CURATED = [
+  { slug: 'la-mecque', nom: 'La Mecque', nomEn: 'Mecca', emoji: '🕋', badge: 'VILLE SAINTE', badgeEn: 'HOLY CITY' },
   { slug: 'medine', nom: 'Médine', nomEn: 'Medina', emoji: '🕌', badge: 'VILLE SAINTE', badgeEn: 'HOLY CITY' },
-  { slug: 'kuala-lumpur', nom: 'Kuala Lumpur', emoji: '🇲🇾', badge: 'MEILLEURE MONDIALE', badgeEn: 'WORLD #1' },
   { slug: 'istanbul', nom: 'Istanbul', emoji: '🕌', badge: 'EXCELLENCE', badgeEn: 'EXCELLENCE' },
+  { slug: 'kuala-lumpur', nom: 'Kuala Lumpur', emoji: '🇲🇾', badge: 'TOP ASIE', badgeEn: 'TOP ASIA' },
   { slug: 'dubai', nom: 'Dubaï', nomEn: 'Dubai', emoji: '🇦🇪', badge: 'TOP LUXE', badgeEn: 'TOP LUXURY' },
   { slug: 'marrakech', nom: 'Marrakech', nomEn: 'Marrakesh', emoji: '🇲🇦', badge: 'COUP DE CŒUR', badgeEn: 'FAVORITE' },
   { slug: 'doha', nom: 'Doha', emoji: '🇶🇦', badge: 'MODERNE', badgeEn: 'MODERN' },
