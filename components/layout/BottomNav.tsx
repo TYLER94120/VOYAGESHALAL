@@ -29,8 +29,10 @@ export default function BottomNav() {
     { href: localizedHref('/planificateur', en), icon: '🗺️', label: en ? 'Trip planner' : 'Planificateur' },
     { href: '/quiz', icon: '🎯', label: en ? 'Destination quiz' : 'Quiz destination' },
     { href: '/autour-de-moi', icon: '📍', label: en ? 'Around me' : 'Autour de moi' },
-    { href: localizedHref('/carnet', en), icon: '❤️', label: en ? 'My notebook' : 'Mon carnet' },
+    { href: '/audio', icon: '🎧', label: en ? 'Audio · Spiritual' : 'Audio · Spirituel' },
     { href: localizedHref('/omra', en), icon: '🕋', label: en ? 'Umrah & Hajj' : 'Omra & Hajj' },
+    // Favoris déplacés en fin de menu secondaire (remplacés par Audio)
+    { href: localizedHref('/carnet', en), icon: '❤️', label: en ? 'My notebook' : 'Mon carnet' },
   ]
   const toolsActive = tools.some((tl) => isActive(tl.href.split('?')[0]))
 
