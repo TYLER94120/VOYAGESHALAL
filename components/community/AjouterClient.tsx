@@ -41,12 +41,15 @@ export default function AjouterClient() {
   const [nearby, setNearby] = useState<Nearby[] | null>(null)
   const [nom, setNom] = useState('')
   const [note, setNote] = useState('')
-  const [showNote, setShowNote] = useState(false)
   const [busy, setBusy] = useState(false)
   const [err, setErr] = useState('')
   const [authOpen, setAuthOpen] = useState(false)
   const [mediaOpen, setMediaOpen] = useState(false)
   const [mediaDone, setMediaDone] = useState(false)
+  // Média choisi AVANT publication (visible directement à l'étape 3, optionnel)
+  const [pendingPhoto, setPendingPhoto] = useState<string | null>(null)
+  const [pendingVideo, setPendingVideo] = useState<{ payload: string; videoTexte?: string; videoDebut?: number; videoFin?: number } | null>(null)
+  const [reelOpen, setReelOpen] = useState(false)
   const [done, setDone] = useState<{ points: number; badges: string[]; impact: number; url: string; anon?: boolean; spotId?: string; claimKey?: string } | null>(null)
 
   // Étape 2 : GPS précis automatique + lieux nommés à proximité (OpenStreetMap,
@@ -98,6 +101,14 @@ export default function AjouterClient() {
       })
       const j = await r.json()
       if (!r.ok) throw new Error(j.error || 'Erreur')
+      // Média choisi avant publication → rattaché au spot tout de suite
+      if (j.spot?.id && (pendingPhoto || pendingVideo)) {
+        const body: Record<string, unknown> = { spotId: j.spot.id }
+        if (pendingPhoto) body.photo = pendingPhoto
+        if (pendingVideo) { body.video = pendingVideo.payload; body.videoTexte = pendingVideo.videoTexte; body.videoDebut = pendingVideo.videoDebut; body.videoFin = pendingVideo.videoFin }
+        fetch('/api/community/enrich', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) }).catch(() => {})
+        setMediaDone(true)
+      }
       setDone({ points: j.pointsGagnes, badges: j.nouveauxBadges ?? [], impact: j.impact ?? 0, url: j.url, anon: j.anon === true, spotId: j.spot?.id, claimKey: j.claimKey })
       await refresh()
     } catch (ex) {
@@ -107,7 +118,7 @@ export default function AjouterClient() {
     } finally { setBusy(false) }
   }
 
-  const reset = () => { setDone(null); setStep(1); setCategorie(''); setLieu(null); setNearby(null); setNom(''); setNote(''); setShowNote(false) }
+  const reset = () => { setDone(null); setStep(1); setCategorie(''); setLieu(null); setNearby(null); setNom(''); setNote(''); setPendingPhoto(null); setPendingVideo(null); setMediaDone(false) }
   const big = { width: '100%', minHeight: 56, borderRadius: 18, border: 'none', background: 'var(--foret)', color: '#fff', fontWeight: 800, fontSize: 16, cursor: 'pointer' } as const
   const typeInfo = TYPES.find((t) => t.id === categorie)
 
@@ -210,27 +221,82 @@ export default function AjouterClient() {
               style={{ width: '100%', padding: 15, borderRadius: 14, border: '1.5px solid rgba(27,67,50,0.25)', fontSize: 16, marginBottom: 12, background: '#fff' }} />
           )}
 
+          {/* OPTIONNEL et VISIBLE directement : photo, reel, un mot — jamais requis */}
+          <p style={{ fontSize: 13, fontWeight: 800, color: '#6b7280', letterSpacing: 1, textTransform: 'uppercase', margin: '2px 0 8px' }}>
+            {en ? 'Optional — make it shine ✨' : 'Optionnel — fais-le briller ✨'}
+          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginBottom: 10 }}>
+            {pendingPhoto ? (
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8, minHeight: 56, borderRadius: 14, border: '1.5px solid rgba(27,67,50,0.3)', background: '#fff', padding: '0 10px' }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={pendingPhoto} alt="" style={{ width: 40, height: 40, objectFit: 'cover', borderRadius: 8 }} />
+                <span style={{ flex: 1, fontWeight: 700, fontSize: 13, color: '#1b4332' }}>{en ? 'Photo ✓' : 'Photo ✓'}</span>
+                <button onClick={() => setPendingPhoto(null)} aria-label="Retirer" style={{ background: 'none', border: 'none', fontSize: 16, cursor: 'pointer', color: '#9ca3af' }}>✕</button>
+              </div>
+            ) : (
+              <label style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6, minHeight: 56, borderRadius: 14, border: '1.5px solid rgba(27,67,50,0.25)', background: '#fff', color: '#1b4332', fontWeight: 800, fontSize: 14.5, cursor: 'pointer' }}>
+                📷 {en ? 'Photo' : 'Photo'}
+                <input type="file" accept="image/*" style={{ display: 'none' }}
+                  onChange={async (e) => {
+                    const f = e.target.files?.[0]
+                    if (!f) return
+                    try {
+                      const img = await createImageBitmap(f)
+                      const scale = Math.min(1, 1280 / Math.max(img.width, img.height))
+                      const cv = document.createElement('canvas')
+                      cv.width = Math.round(img.width * scale); cv.height = Math.round(img.height * scale)
+                      cv.getContext('2d')!.drawImage(img, 0, 0, cv.width, cv.height)
+                      let url = ''
+                      for (const q of [0.8, 0.65, 0.5, 0.35]) { url = cv.toDataURL('image/jpeg', q); if (url.length < 340_000) break }
+                      setPendingPhoto(url)
+                    } catch { /* photo illisible */ }
+                  }} />
+              </label>
+            )}
+            {pendingVideo ? (
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8, minHeight: 56, borderRadius: 14, border: '1.5px solid rgba(27,67,50,0.3)', background: '#fff', padding: '0 12px' }}>
+                <span style={{ flex: 1, fontWeight: 700, fontSize: 13, color: '#1b4332' }}>🎥 {en ? 'Reel ready ✓' : 'Reel prêt ✓'}</span>
+                <button onClick={() => setPendingVideo(null)} aria-label="Retirer" style={{ background: 'none', border: 'none', fontSize: 16, cursor: 'pointer', color: '#9ca3af' }}>✕</button>
+              </div>
+            ) : (
+              <button onClick={() => setReelOpen(true)} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6, minHeight: 56, borderRadius: 14, border: '1.5px solid rgba(27,67,50,0.25)', background: '#fff', color: '#1b4332', fontWeight: 800, fontSize: 14.5, cursor: 'pointer' }}>
+                🎥 {en ? 'Film a reel' : 'Filmer un reel'}
+              </button>
+            )}
+          </div>
+          <textarea value={note} onChange={(e) => setNote(e.target.value)} maxLength={200} rows={2}
+            placeholder={en ? '✏️ A word for the next traveler… (e.g. "2nd floor, clean mat")' : '✏️ Un mot pour le prochain… (ex. « 2e étage, tapis propre »)'}
+            style={{ width: '100%', padding: 14, borderRadius: 14, border: '1.5px solid rgba(27,67,50,0.25)', fontSize: 15.5, margin: '0 0 12px', background: '#fff', resize: 'none' }} />
+
           <button onClick={() => void publier()} disabled={busy || (lieu.manuel && nom.trim().length < 3)}
             style={{ ...big, opacity: lieu.manuel && nom.trim().length < 3 ? 0.5 : 1 }}>
             {busy ? '…' : (en ? '🚀 Publish' : '🚀 Publier')}
           </button>
-
-          {/* Optionnel, jamais requis */}
-          {!showNote ? (
-            <button onClick={() => setShowNote(true)} style={{ background: 'none', border: 'none', color: '#1b4332', fontWeight: 700, fontSize: 14, cursor: 'pointer', minHeight: 44, marginTop: 6 }}>
-              ✏️ {en ? 'add a word (optional)' : 'ajouter un mot (optionnel)'}
-            </button>
-          ) : (
-            <textarea value={note} onChange={(e) => setNote(e.target.value)} maxLength={200} rows={2} autoFocus
-              placeholder={en ? 'e.g. "2nd floor, clean mat"' : 'ex. « 2e étage, tapis propre »'}
-              style={{ width: '100%', padding: 14, borderRadius: 14, border: '1.5px solid rgba(27,67,50,0.25)', fontSize: 16, margin: '10px 0 0', background: '#fff', resize: 'none' }} />
-          )}
 
           {err && <p style={{ color: '#b91c1c', fontSize: 14, marginTop: 10 }}>{err}</p>}
           <p style={{ fontSize: 12.5, color: '#9ca3af', marginTop: 10, textAlign: 'center' }}>
             {en ? 'Appears as “community · to confirm” — we never certify.' : 'Apparaîtra « communauté · à confirmer » — nous ne certifions jamais.'}
           </p>
           <button onClick={() => setStep(2)} style={{ background: 'none', border: 'none', color: '#6b7280', fontSize: 14, cursor: 'pointer', minHeight: 44 }}>← {en ? 'Back' : 'Retour'}</button>
+        </div>
+      )}
+
+      {/* Overlay « Filmer un reel » AVANT publication (optionnel) */}
+      {reelOpen && (
+        <div style={{ position: 'fixed', inset: 0, zIndex: 210, background: 'rgba(11,26,15,0.96)', overflowY: 'auto', padding: '30px 18px 60px' }}>
+          <div style={{ maxWidth: 480, margin: '0 auto' }}>
+            <p style={{ color: '#fdfaf3', fontWeight: 900, fontSize: 19, margin: '0 0 14px', textAlign: 'center' }}>
+              {en ? 'Film your spot 🎥' : 'Filme ton spot 🎥'}
+            </p>
+            <MediaCapture
+              onSkip={() => setReelOpen(false)}
+              onDone={(m) => {
+                if (m.kind === 'photo') setPendingPhoto(m.payload)
+                else setPendingVideo({ payload: m.payload, videoTexte: m.videoTexte, videoDebut: m.videoDebut, videoFin: m.videoFin })
+                setReelOpen(false)
+              }}
+            />
+          </div>
         </div>
       )}
 
@@ -277,7 +343,7 @@ export default function AjouterClient() {
         </div>
       )}
       {done && <Celebration points={done.points} badges={done.badges} impact={done.impact} spotUrl={done.url} onClose={reset} en={en}
-        mediaCta={done.spotId ? (
+        mediaCta={done.spotId && !mediaDone ? (
           <button onClick={() => setMediaOpen(true)}
             style={{ display: 'block', width: '100%', minHeight: 54, borderRadius: 16, border: '2px solid rgba(27,67,50,0.35)', background: '#fff', color: '#1b4332', fontWeight: 900, fontSize: 15, cursor: 'pointer', marginBottom: 12 }}>
             🎥 {en ? 'Add a photo / reel (15 s)' : 'Ajoute une photo / un reel (15 s)'}
