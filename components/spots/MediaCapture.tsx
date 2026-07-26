@@ -111,18 +111,30 @@ export default function MediaCapture({ onDone, onSkip, skipLabel }: { onDone: (m
     }
   }
 
-  // ── Publier le média ──
+  // ── Publier le média — upload DIRECT navigateur → Vercel Blob (client
+  // upload signé par /api/media/upload) : pas de limite serverless 4,5 Mo ──
   const envoyer = async () => {
     if (!videoBlob) return
     setMode('envoi')
-    const r = await fetch('/api/media/upload', { method: 'POST', headers: { 'Content-Type': videoBlob.type || 'video/webm' }, body: videoBlob }).catch(() => null)
-    if (r?.ok) {
-      const j = await r.json()
-      onDone({ kind: 'video', payload: j.url, videoTexte: texte.trim() || undefined, videoDebut: debut > 0.2 ? debut : undefined, videoFin: fin > 0 && fin < duree - 0.2 ? fin : undefined })
+    try {
+      const { upload } = await import('@vercel/blob/client')
+      const type = videoBlob.type || 'video/webm'
+      const ext = type.includes('webm') ? 'webm' : type.includes('quicktime') ? 'mov' : 'mp4'
+      const blob = await upload(`spots/reel-${Date.now().toString(36)}.${ext}`, videoBlob, {
+        access: 'public',
+        handleUploadUrl: '/api/media/upload',
+        contentType: type,
+      })
+      onDone({ kind: 'video', payload: blob.url, videoTexte: texte.trim() || undefined, videoDebut: debut > 0.2 ? debut : undefined, videoFin: fin > 0 && fin < duree - 0.2 ? fin : undefined })
       return
+    } catch (ex) {
+      const msg = String((ex as Error).message ?? '')
+      if (msg.includes('MEDIA_OFF') || msg.includes('503')) {
+        setErr(en ? 'Video hosting not enabled yet — a photo works right away!' : 'Hébergement vidéo pas encore activé — une photo marche tout de suite !')
+      } else {
+        setErr(en ? 'Upload failed — try again or add a photo.' : 'Envoi échoué — réessaie ou ajoute une photo.')
+      }
     }
-    if (r?.status === 503) setErr(en ? 'Video hosting not enabled yet (Vercel Blob) — a photo works right away!' : 'Hébergement vidéo pas encore activé (Vercel Blob) — une photo marche tout de suite !')
-    else setErr(en ? 'Upload failed — try again or add a photo.' : 'Envoi échoué — réessaie ou ajoute une photo.')
     setMode('edite')
   }
 
