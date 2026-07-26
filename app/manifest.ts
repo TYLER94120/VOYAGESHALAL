@@ -20,5 +20,12 @@ export default function manifest(): MetadataRoute.Manifest {
       { src: '/icon-512', sizes: '512x512', type: 'image/png', purpose: 'any' },
       { src: '/icon-512', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
     ],
+    // Raccourcis natifs (appui long sur l'icône) — le cœur Spots en 1 tap
+    shortcuts: [
+      { name: 'Ajouter un spot', short_name: 'Ajouter', url: '/communaute/ajouter', icons: [{ src: '/icon-192', sizes: '192x192' }] },
+      { name: 'Découvrir les spots', short_name: 'Spots', url: '/spots', icons: [{ src: '/icon-192', sizes: '192x192' }] },
+      { name: 'Mes spots', short_name: 'Mes spots', url: '/carnet', icons: [{ src: '/icon-192', sizes: '192x192' }] },
+      { name: 'Horaires de prière', short_name: 'Prière', url: '/horaires-priere', icons: [{ src: '/icon-192', sizes: '192x192' }] },
+    ],
   }
 }

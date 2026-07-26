@@ -5,9 +5,12 @@ import { useEffect } from 'react'
 export default function RegisterSW() {
   useEffect(() => {
     if (typeof window === 'undefined' || !('serviceWorker' in navigator)) return
-    const onLoad = () => navigator.serviceWorker.register('/sw.js').catch(() => {})
-    window.addEventListener('load', onLoad)
-    return () => window.removeEventListener('load', onLoad)
+    const register = () => navigator.serviceWorker.register('/sw.js').catch(() => {})
+    // Si la page est DÉJÀ chargée quand React s'hydrate, « load » ne viendra
+    // jamais → enregistrer tout de suite dans ce cas.
+    if (document.readyState === 'complete') { register(); return }
+    window.addEventListener('load', register)
+    return () => window.removeEventListener('load', register)
   }, [])
   return null
 }
