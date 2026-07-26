@@ -27,7 +27,7 @@ export async function POST(req: Request) {
       request: req,
       onBeforeGenerateToken: async () => ({
         allowedContentTypes: ['video/webm', 'video/mp4', 'video/quicktime', 'image/jpeg', 'image/png', 'image/webp'],
-        maximumSizeInBytes: 48 * 1024 * 1024, // ~30 s de vidéo mobile, marge incluse
+        maximumSizeInBytes: 64 * 1024 * 1024, // ~60 s de vidéo mobile compressée
         addRandomSuffix: true,
       }),
       onUploadCompleted: async () => { /* le client rattache l'URL via /api/community/enrich */ },

@@ -10,7 +10,7 @@ import { useLanguage } from '@/components/i18n/LanguageProvider'
 // stockés en métadonnées (le lecteur du feed les applique).
 // Pas de musique copyrightée — bibliothèque libre : plus tard, jamais TikTok.
 
-const MAX_SEC = 30
+const MAX_SEC = 60
 
 export interface CapturedMedia {
   kind: 'photo' | 'video'
@@ -70,7 +70,7 @@ export default function MediaCapture({ onDone, onSkip, skipLabel }: { onDone: (m
       return
     }
     if (file.type.startsWith('video/')) {
-      if (file.size > 32 * 1024 * 1024) { setErr(en ? 'Video too large (30 s max)' : 'Vidéo trop lourde (30 s max)'); return }
+      if (file.size > 64 * 1024 * 1024) { setErr(en ? 'Video too large (60 s / 64 MB max)' : 'Vidéo trop lourde (60 s / 64 Mo max)'); return }
       setVideoBlob(file)
       setVideoUrl(URL.createObjectURL(file))
       setMode('edite')

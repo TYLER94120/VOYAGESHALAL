@@ -88,8 +88,26 @@ export async function GET(request: NextRequest) {
   } else {
     spots = spots.sort((a, b) => (b.createdAt ?? '').localeCompare(a.createdAt ?? ''))
   }
+  // Photo d'ambiance de la VILLE (libre de droits, fiche ville) pour les spots
+  // sans média utilisateur — affichée avec le label « photo d'illustration ».
+  const out = spots.slice(0, limit)
+  const { readFileSync } = await import('fs')
+  const path = await import('path')
+  const villeImg = new Map<string, string | null>()
+  for (const s of out) {
+    if (s.photos?.length || s.photo || s.video) continue
+    if (!villeImg.has(s.villeSlug)) {
+      try {
+        const v = JSON.parse(readFileSync(path.join(process.cwd(), 'data', 'villes', `${s.villeSlug}.json`), 'utf8'))
+        villeImg.set(s.villeSlug, v.image_hero || v.image || null)
+      } catch { villeImg.set(s.villeSlug, null) }
+    }
+    const img = villeImg.get(s.villeSlug)
+    if (img) (s as PrayerSpotOut).villeImage = img
+  }
   return NextResponse.json(
-    { spots: spots.slice(0, limit) },
+    { spots: out },
     { headers: { 'Cache-Control': 's-maxage=60, stale-while-revalidate=300' } },
   )
 }
+type PrayerSpotOut = Awaited<ReturnType<typeof import('@/lib/prayerSpots').listAllSpots>>[number] & { villeImage?: string }

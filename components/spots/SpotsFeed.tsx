@@ -11,7 +11,7 @@ import type { PrayerSpot } from '@/lib/villeTypes'
 // quand il y en a, carte élégante sinon. AUCUN spot inventé : tout vient des
 // utilisateurs. Filtres : proximité / type / ville.
 
-type Spot = PrayerSpot & { distKm?: number }
+type Spot = PrayerSpot & { distKm?: number; villeImage?: string }
 
 const CAT_STYLE: Record<string, { bg: string }> = {
   coin_priere: { bg: 'linear-gradient(135deg, #1B4332, #0B1A0F)' },
@@ -76,6 +76,7 @@ export default function SpotsFeed() {
   const [enriching, setEnriching] = useState<string | null>(null)
   const [astuce, setAstuce] = useState('')
   const [mediaFor, setMediaFor] = useState<string | null>(null)
+  const [imgErr, setImgErr] = useState<Record<string, boolean>>({}) // image KO → fond typé
 
   // Défaut = « Près de moi » si la permission géoloc est DÉJÀ accordée
   // (jamais de prompt surprise) — sinon « Tous les spots ».
@@ -203,7 +204,11 @@ export default function SpotsFeed() {
           const c = catOf(s.categorie)
           const conf = s.confirmations ?? 0
           const trusted = conf >= SEUIL_CONFIANCE
-          const img = s.photos?.[0] ?? s.photo
+          // Ordre : média utilisateur → photo d'AMBIANCE de la ville (signalée
+          // « photo d'illustration » — jamais fait passer pour le vrai lieu)
+          const userImg = s.photos?.[0] ?? s.photo
+          const img = imgErr[s.id] ? undefined : (userImg ?? s.villeImage)
+          const isIllustration = !userImg && !!img
           return (
             <article key={s.id} style={{ borderRadius: 20, overflow: 'hidden', border: `1px solid ${trusted ? 'rgba(201,168,76,0.55)' : 'rgba(255,255,255,0.1)'}`, background: 'rgba(255,255,255,0.04)' }}>
               {/* MÉDIA plein cadre façon reels : vidéo autoplay muette > photo >
@@ -213,8 +218,15 @@ export default function SpotsFeed() {
               ) : (
                 <Link href={`/spot/${s.id}`} style={{ display: 'block', textDecoration: 'none', position: 'relative' }}>
                   {img ? (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img src={img} alt="" loading="lazy" style={{ width: '100%', height: 320, objectFit: 'cover', display: 'block' }} onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }} />
+                    <>
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src={img} alt="" loading="lazy" style={{ width: '100%', height: 320, objectFit: 'cover', display: 'block' }} onError={() => setImgErr((m) => ({ ...m, [s.id]: true }))} />
+                      {isIllustration && (
+                        <span style={{ position: 'absolute', top: 10, left: 12, background: 'rgba(0,0,0,0.55)', color: 'rgba(255,255,255,0.85)', borderRadius: 999, padding: '4px 10px', fontSize: 11.5, fontWeight: 600 }}>
+                          {en ? 'illustration photo' : 'photo d\'illustration'} · {s.villeNom}
+                        </span>
+                      )}
+                    </>
                   ) : (
                     // label remonté + zone basse réservée au titre : plus de collision
                     <div style={{ height: 190, paddingBottom: 62, background: CAT_STYLE[s.categorie ?? 'autre']?.bg ?? CAT_STYLE.autre.bg, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 6 }}>

@@ -260,7 +260,7 @@ export default function AjouterClient() {
               </div>
             ) : (
               <button onClick={() => setReelOpen(true)} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6, minHeight: 56, borderRadius: 14, border: '1.5px solid rgba(27,67,50,0.25)', background: '#fff', color: '#1b4332', fontWeight: 800, fontSize: 14.5, cursor: 'pointer' }}>
-                🎥 {en ? 'Film a reel' : 'Filmer un reel'}
+                🎥 {en ? 'Reel — film or import' : 'Reel — filmer ou importer'}
               </button>
             )}
           </div>
