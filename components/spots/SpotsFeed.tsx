@@ -21,7 +21,12 @@ const CAT_STYLE: Record<string, { bg: string }> = {
   pepite: { bg: 'linear-gradient(135deg, #C9A84C, #7a6320)' },
   autre: { bg: 'linear-gradient(135deg, #333, #111)' },
 }
-const catOf = (id?: string) => CATEGORIES.find((c) => c.id === (id ?? 'coin_priere')) ?? CATEGORIES[5]
+// Icônes du feed : jamais un pin isolé (📍 « Autre » → ⭐)
+const FEED_ICON: Record<string, string> = { autre: '⭐' }
+const catOf = (id?: string) => {
+  const c = CATEGORIES.find((x) => x.id === (id ?? 'coin_priere')) ?? CATEGORIES[5]
+  return { ...c, icon: FEED_ICON[c.id] ?? c.icon }
+}
 
 // Vidéo façon reels : autoplay muet quand visible, son au tap, trim léger via
 // métadonnées (videoDebut/videoFin), légende à l'écran.
@@ -211,7 +216,8 @@ export default function SpotsFeed() {
                     // eslint-disable-next-line @next/next/no-img-element
                     <img src={img} alt="" loading="lazy" style={{ width: '100%', height: 320, objectFit: 'cover', display: 'block' }} onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }} />
                   ) : (
-                    <div style={{ height: 170, background: CAT_STYLE[s.categorie ?? 'autre']?.bg ?? CAT_STYLE.autre.bg, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 6 }}>
+                    {/* label remonté + zone basse réservée au titre : plus de collision */}
+                    <div style={{ height: 190, paddingBottom: 62, background: CAT_STYLE[s.categorie ?? 'autre']?.bg ?? CAT_STYLE.autre.bg, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 6 }}>
                       <span style={{ fontSize: 52, filter: 'drop-shadow(0 4px 12px rgba(0,0,0,0.4))' }}>{c.icon}</span>
                       <span style={{ color: 'rgba(255,255,255,0.85)', fontWeight: 800, fontSize: 13, letterSpacing: 2, textTransform: 'uppercase' }}>{en ? c.en : c.fr}</span>
                     </div>
