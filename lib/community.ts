@@ -241,6 +241,61 @@ export async function reportSpot(spotId: string, userId: string): Promise<{ ok: 
   return { ok: true }
 }
 
+// ── Enrichissement COLLECTIF d'un spot (virage « Spots ») ──
+// L'auteur pose le minimum ; n'importe qui ajoute photo (URL), vidéo (lien),
+// astuce, infos halal structurées, tags. Un spot grandit à plusieurs.
+const INFOS_VALIDES = new Set([
+  // resto
+  'halal_signale', 'sans_alcool', 'coin_priere_sur_place', 'menu_enfant',
+  // hôtel
+  'piscine_femmes', 'plage_privee', 'qibla_en_chambre',
+  // coin prière
+  'ablutions_dispo', 'hommes_femmes_separes', 'tapis_propres',
+])
+export async function enrichSpot(
+  spotId: string,
+  pseudo: string,
+  add: { photo?: string; video?: string; astuce?: string; infos?: Record<string, boolean>; tags?: string[] },
+): Promise<PrayerSpot | null> {
+  const r = getRedis(); if (!r) return null
+  const spot = await getSpotById(spotId)
+  if (!spot || spot.status !== 'published') return null
+  const httpUrl = (u?: string) => (u && /^https?:\/\/\S{6,500}$/.test(u) ? u : null)
+  const photo = httpUrl(add.photo)
+  if (photo && !(spot.photos ?? []).includes(photo)) spot.photos = [...(spot.photos ?? []), photo].slice(0, 12)
+  const video = httpUrl(add.video)
+  if (video && !spot.video) spot.video = video
+  const astuce = (add.astuce ?? '').trim().slice(0, 280)
+  if (astuce) spot.astuces = [...(spot.astuces ?? []), { pseudo, texte: astuce, date: new Date().toISOString() }].slice(-20)
+  if (add.infos) {
+    spot.infos = spot.infos ?? {}
+    for (const [k, v] of Object.entries(add.infos)) if (INFOS_VALIDES.has(k) && typeof v === 'boolean') spot.infos[k] = v
+  }
+  if (Array.isArray(add.tags)) {
+    const clean = add.tags.map((t) => String(t).trim().toLowerCase().slice(0, 20)).filter(Boolean)
+    spot.tags = [...new Set([...(spot.tags ?? []), ...clean])].slice(0, 8)
+  }
+  await r.set(`vh:spot:${spotId}`, spot)
+  return spot
+}
+
+// Réaction légère « 🤲 utile / merci » — un tap, dédupliqué par visiteur (IP)
+export async function reactUtile(spotId: string, visitorKey: string): Promise<{ ok: boolean; utiles?: number; deja?: boolean }> {
+  const r = getRedis(); if (!r) return { ok: false }
+  const spot = await getSpotById(spotId)
+  if (!spot) return { ok: false }
+  const added = await r.sadd(`vh:spot:${spotId}:utiles`, visitorKey)
+  if (!added) return { ok: true, deja: true, utiles: spot.utiles ?? 0 }
+  spot.utiles = (spot.utiles ?? 0) + 1
+  await r.set(`vh:spot:${spotId}`, spot)
+  // l'auteur voit son impact grandir (sadaqa jâriya)
+  if (spot.auteurId) await addImpact(spot.auteurId, 1)
+  return { ok: true, utiles: spot.utiles }
+}
+
+// Seuil du badge « Confiance communauté » (modèle Waze)
+export const SEUIL_CONFIANCE = 5
+
 // ── Création d'un spot communautaire (BLOC 2) ──
 // ── Publication SANS COMPTE (zéro friction, façon Waze) ──
 // Le spot part tout de suite, signé « Un voyageur ». Une claimKey (48 h)

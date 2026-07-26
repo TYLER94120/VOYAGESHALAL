@@ -7,8 +7,8 @@ import JsonLd from '@/components/seo/JsonLd'
 import EmailCapture from '@/components/ui/EmailCapture'
 import { buildWebSiteSchema, buildOrganizationSchema } from '@/lib/seo'
 import { guides } from '@/lib/data'
-import HomeHeroActions from '@/components/home/HomeHeroActions'
 import NearbySpotsHome from '@/components/community/NearbySpotsHome'
+import RecentSpotsHome from '@/components/spots/RecentSpotsHome'
 import RadarPriere from '@/components/home/RadarPriere'
 import FollowInstall from '@/components/capture/FollowInstall'
 import { JeVoyageMaintenant } from '@/components/JeVoyageMaintenant'
@@ -80,11 +80,15 @@ export default async function HomePage() {
   // Toutes les chaînes de l'accueil, bilingues selon le domaine (P0-1)
   const t = {
     heroEyebrow: isEN ? 'Travel with faith' : 'Voyagez avec foi',
-    heroTitlePre: isEN ? 'Where to eat halal, where to pray — ' : 'Où manger halal, où prier — ',
-    heroTitleGold: isEN ? 'anywhere.' : 'partout.',
+    heroTitlePre: isEN ? 'Discover and share the ' : 'Découvre et partage les ',
+    heroTitleGold: isEN ? 'halal gems' : 'pépites halal',
+    heroTitlePost: isEN ? ' of Muslim travelers.' : ' des voyageurs.',
     heroSub: isEN
-      ? 'Prayer spots, halal restaurants and hidden gems — shared and verified by Muslim travelers, everywhere in the world.'
-      : 'Coins prière, restos halal et pépites — partagés et vérifiés par des voyageurs musulmans, partout dans le monde.',
+      ? 'Prayer corners, halal restos, women-friendly places — real spots, lived and confirmed by Muslims. Something no map and no AI can copy.'
+      : 'Coins prière, restos halal, espaces femmes — de vrais spots, vécus et confirmés par des musulmans. Ce qu\'aucune carte et aucune IA ne peut copier.',
+    heroAdd: isEN ? '➕ Add a spot' : '➕ Ajouter un spot',
+    heroDiscover: isEN ? '💎 Discover spots' : '💎 Découvrir les spots',
+    heroMine: isEN ? '❤️ My spots' : '❤️ Mes spots',
     heroCommunity: isEN ? '🤝 Join the community' : '🤝 Rejoins la communauté',
     qaDestinations: isEN ? 'Destinations' : 'Destinations',
     qaPrayer: isEN ? 'Prayer' : 'Horaires',
@@ -146,26 +150,35 @@ export default async function HomePage() {
             className="text-2xl sm:text-3xl lg:text-4xl text-white leading-[1.08] mb-2"
             style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 900 }}
           >
-            {t.heroTitlePre}<span className="gold-em">{t.heroTitleGold}</span>
+            {t.heroTitlePre}<span className="gold-em">{t.heroTitleGold}</span>{t.heroTitlePost}
           </h1>
           <p className="text-white/70 text-sm sm:text-base leading-relaxed mb-4 max-w-xl mx-auto">
             {t.heroSub}
           </p>
 
-          <HomeHeroActions />
-
-          {/* Communauté : simple lien discret (le bouton faisait doublon avec le menu) */}
-          <Link
-            href="/communaute"
-            style={{ display: 'inline-block', marginTop: 14, color: 'rgba(253,250,243,0.75)', fontWeight: 700, fontSize: 14, textDecoration: 'underline', textUnderlineOffset: 3 }}
-          >
-            {t.heroCommunity}
-          </Link>
+          {/* 3 actions du virage Spots : ajouter / découvrir / mes spots */}
+          <div style={{ maxWidth: 540, margin: '0 auto', width: '100%' }}>
+            <Link href="/communaute/ajouter" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, minHeight: 58, borderRadius: 16, background: 'var(--or)', color: 'var(--nuit)', fontWeight: 800, fontSize: 17, textDecoration: 'none', boxShadow: '0 10px 30px rgba(201,168,76,0.3)' }}>
+              {t.heroAdd}
+            </Link>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginTop: 10 }}>
+              <Link href="/spots" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: 52, borderRadius: 14, border: '2px solid rgba(201,168,76,0.55)', background: 'rgba(255,255,255,0.06)', color: 'var(--creme)', fontWeight: 800, fontSize: 14.5, textDecoration: 'none' }}>
+                {t.heroDiscover}
+              </Link>
+              <Link href="/carnet" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: 52, borderRadius: 14, border: '2px solid rgba(201,168,76,0.55)', background: 'rgba(255,255,255,0.06)', color: 'var(--creme)', fontWeight: 800, fontSize: 14.5, textDecoration: 'none' }}>
+                {t.heroMine}
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* 🧭 Radar Prière — « ai-je le temps d'arriver avant la fin du créneau ? » */}
       <RadarPriere />
+
+      {/* 💎 Le cœur : derniers spots partagés + spots près de toi */}
+      <RecentSpotsHome />
+      <NearbySpotsHome />
 
       {/* Accès rapide */}
       <section className="px-4 pt-10">
@@ -331,10 +344,7 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* Email capture — lead magnet */}
-      {/* 🤝 Spots partagés près de toi (communauté, masqué si vide) */}
-      <NearbySpotsHome />
-
+      {/* Email capture — lead magnet (« près de toi » est remonté sous le Radar) */}
       <EmailCapture
         title={t.emailTitle}
         subtitle={t.emailSub}

@@ -120,6 +120,13 @@ export interface PrayerSpot {
   auteurPseudo?: string   // « Ajouté par [pseudo] » (VoyagesHalal pour le seed admin)
   vues?: number           // impact réel : nb de consultations de la page du spot
   itineraires?: number    // nb de clics « Itinéraire » (usage le plus fort)
+  // ── Spot enrichissable à plusieurs (virage « Spots ») — TOUT optionnel ──
+  photos?: string[]       // URLs de photos ajoutées par la communauté
+  video?: string          // URL d'une vidéo courte verticale (lien)
+  astuces?: { pseudo: string; texte: string; date: string }[] // mots/astuces des passants
+  infos?: Record<string, boolean> // infos halal structurées selon le type (sans_alcool, ablutions…)
+  tags?: string[]         // famille, budget, calme…
+  utiles?: number         // réactions légères « 🤲 utile / merci »
 }
 
 export interface VilleRoadTrip {

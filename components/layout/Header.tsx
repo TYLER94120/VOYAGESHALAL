@@ -34,8 +34,10 @@ export default function Header({ brandEN = false }: { brandEN?: boolean }) {
           <Link href="/" className="nav-link">
             {t('nav.home')}
           </Link>
-          <Link href="/destinations" className="nav-link">
-            {t('nav.destinations')}
+          {/* Virage Spots : le feed en 2e position ; Destinations démoté dans
+              « Explorer » (pages villes conservées et indexées — SEO intact) */}
+          <Link href="/spots" className="nav-link">
+            💎 Spots
           </Link>
           <Link href="/guides" className="nav-link">
             {isEN ? 'Guides' : 'Guides'}
@@ -43,16 +45,15 @@ export default function Header({ brandEN = false }: { brandEN?: boolean }) {
           <Link href="/blog" className="nav-link">
             {t('nav.blog')}
           </Link>
-          <Link href="/communaute" className="nav-link">
-            🤝 {isEN ? 'Community' : 'Communauté'}
-          </Link>
           {/* Groupe Outils : dropdown CSS pur (hover/focus-within) — zéro JS, zéro CLS */}
           <div className="nav-tools">
             <button className="nav-link nav-link-highlight nav-tools-btn" aria-haspopup="true">
               🧰 {isEN ? 'Tools' : 'Outils'} ▾
             </button>
             <div className="nav-tools-menu" role="menu">
-              <Link href={localizedHref('/planificateur', isEN)} className="nav-tools-item">🗺️ {isEN ? 'Trip planner' : 'Planificateur'}</Link>
+              <Link href="/destinations" className="nav-tools-item">🗺️ {t('nav.destinations')}</Link>
+              <Link href="/communaute" className="nav-tools-item">🤝 {isEN ? 'Community · profiles' : 'Communauté · profils'}</Link>
+              <Link href={localizedHref('/planificateur', isEN)} className="nav-tools-item">🧳 {isEN ? 'Trip planner' : 'Planificateur'}</Link>
               <Link href="/quiz" className="nav-tools-item">🎯 {isEN ? 'Destination quiz' : 'Quiz destination'}</Link>
               <Link href={localizedHref('/horaires-priere', isEN)} className="nav-tools-item">🕐 {t('nav.prayer')}</Link>
               <Link href="/qibla" className="nav-tools-item">🧭 {t('nav.qibla')}</Link>
@@ -60,7 +61,7 @@ export default function Header({ brandEN = false }: { brandEN?: boolean }) {
               <Link href="/autour-de-moi" className="nav-tools-item">📍 {isEN ? 'Around me' : 'Autour de moi'}</Link>
               <Link href="/audio" className="nav-tools-item">🎧 {isEN ? 'Audio · Spiritual' : 'Audio · Spirituel'}</Link>
               {/* Favoris conservés, déplacés en fin de menu (remplacés par Audio) */}
-              <Link href={localizedHref('/carnet', isEN)} className="nav-tools-item">❤️ {isEN ? 'My notebook' : 'Mon carnet'}</Link>
+              <Link href={localizedHref('/carnet', isEN)} className="nav-tools-item">❤️ {isEN ? 'My spots' : 'Mes spots'}</Link>
             </div>
           </div>
         </nav>
@@ -105,14 +106,18 @@ export default function Header({ brandEN = false }: { brandEN?: boolean }) {
           <Link href="/" onClick={() => setMenuOpen(false)}>
             🏠 {isEN ? 'Home' : 'Accueil'}
           </Link>
-          <Link href="/destinations" onClick={() => setMenuOpen(false)}>
-            🗺️ Destinations
+          {/* Virage Spots : le cœur d'abord */}
+          <Link href="/spots" onClick={() => setMenuOpen(false)}>
+            💎 Spots
+          </Link>
+          <Link href="/communaute/ajouter" onClick={() => setMenuOpen(false)}>
+            ➕ {isEN ? 'Add a spot' : 'Ajouter un spot'}
           </Link>
           <Link href="/guides" onClick={() => setMenuOpen(false)}>
             📗 Guides
           </Link>
-          <Link href="/communaute" onClick={() => setMenuOpen(false)}>
-            🤝 {isEN ? 'Community' : 'Communauté'}
+          <Link href="/destinations" onClick={() => setMenuOpen(false)}>
+            🗺️ Destinations
           </Link>
           <Link href={localizedHref('/horaires-priere', isEN)} onClick={() => setMenuOpen(false)}>
             🕐 {isEN ? 'Prayer times' : 'Horaires de prière'}

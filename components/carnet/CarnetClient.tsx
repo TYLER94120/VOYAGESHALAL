@@ -89,6 +89,24 @@ export default function CarnetClient() {
       </form>
       {syncMsg && <p className="text-sm mb-6 -mt-4" style={{ color: syncMsg.startsWith('✓') ? '#1a6b3c' : '#dc2626' }}>{syncMsg}</p>}
 
+      {/* Export : tes spots restent à toi en toute circonstance (JSON) */}
+      {favs !== null && favs.length > 0 && (
+        <button
+          onClick={() => {
+            const blob = new Blob([JSON.stringify(favs, null, 2)], { type: 'application/json' })
+            const a = document.createElement('a')
+            a.href = URL.createObjectURL(blob)
+            a.download = 'mes-spots-voyageshalal.json'
+            a.click()
+            URL.revokeObjectURL(a.href)
+          }}
+          className="text-sm font-bold px-5 py-2.5 rounded-full mb-6 border"
+          style={{ color: GREEN, borderColor: GREEN }}
+        >
+          ⬇️ {en ? 'Export my spots (JSON)' : 'Exporter mes spots (JSON)'}
+        </button>
+      )}
+
       {favs !== null && favs.length === 0 && (
         <div className="text-center py-12">
           <p className="text-4xl mb-3" aria-hidden>🤍</p>

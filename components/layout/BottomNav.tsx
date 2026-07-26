@@ -23,7 +23,7 @@ export default function BottomNav() {
   const restosHref = city ? `/destinations/${city.slug}` : '/destinations'
 
   const tools = [
-    { href: '/communaute/ajouter', icon: '➕', label: en ? 'Add a spot' : 'Ajouter un spot' },
+    { href: restosHref, icon: city ? '📍' : '🗺️', label: city ? city.nom : (en ? 'Destinations' : 'Destinations') },
     { href: localizedHref('/mosquee-proche', en), icon: '🕌', label: t('nav.mosque') },
     { href: '/qibla', icon: '🧭', label: t('nav.qibla') },
     { href: localizedHref('/planificateur', en), icon: '🗺️', label: en ? 'Trip planner' : 'Planificateur' },
@@ -32,7 +32,7 @@ export default function BottomNav() {
     { href: '/audio', icon: '🎧', label: en ? 'Audio · Spiritual' : 'Audio · Spirituel' },
     { href: localizedHref('/omra', en), icon: '🕋', label: en ? 'Umrah & Hajj' : 'Omra & Hajj' },
     // Favoris déplacés en fin de menu secondaire (remplacés par Audio)
-    { href: localizedHref('/carnet', en), icon: '❤️', label: en ? 'My notebook' : 'Mon carnet' },
+    { href: localizedHref('/carnet', en), icon: '❤️', label: en ? 'My spots' : 'Mes spots' },
   ]
   const toolsActive = tools.some((tl) => isActive(tl.href.split('?')[0]))
 
@@ -61,17 +61,19 @@ export default function BottomNav() {
           <span className="bottom-nav-icon">🏠</span>
           <span className="bottom-nav-label">{t('bottom.home')}</span>
         </Link>
-        <Link href={restosHref} className={`bottom-nav-item ${isActive('/destinations') ? 'active' : ''}`}>
-          <span className="bottom-nav-icon">{city ? '📍' : '🏙️'}</span>
-          <span className="bottom-nav-label" style={{ maxWidth: 64, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{city ? city.nom : (en ? 'City' : 'Ville')}</span>
+        {/* Virage Spots : le feed devient l'onglet central ; « Ville » passe
+            dans le panneau Outils (les pages destinations restent en ligne) */}
+        <Link href="/spots" className={`bottom-nav-item ${isActive('/spots') || isActive('/communaute') || isActive('/spot') ? 'active' : ''}`}>
+          <span className="bottom-nav-icon">💎</span>
+          <span className="bottom-nav-label">Spots</span>
+        </Link>
+        <Link href="/communaute/ajouter" className={`bottom-nav-item ${isActive('/communaute/ajouter') ? 'active' : ''}`}>
+          <span className="bottom-nav-icon">➕</span>
+          <span className="bottom-nav-label">{en ? 'Add' : 'Ajouter'}</span>
         </Link>
         <Link href={localizedHref('/horaires-priere', en)} className={`bottom-nav-item ${isActive('/horaires-priere') ? 'active' : ''}`}>
           <span className="bottom-nav-icon">🕐</span>
           <span className="bottom-nav-label">{t('bottom.prayer')}</span>
-        </Link>
-        <Link href="/communaute" className={`bottom-nav-item ${isActive('/communaute') || isActive('/spot') ? 'active' : ''}`}>
-          <span className="bottom-nav-icon">🤝</span>
-          <span className="bottom-nav-label">{en ? 'Community' : 'Communauté'}</span>
         </Link>
         <button type="button" onClick={() => setToolsOpen(!toolsOpen)} className={`bottom-nav-item ${toolsOpen || toolsActive ? 'active' : ''}`} style={{ background: 'none', border: 'none', cursor: 'pointer', font: 'inherit' }}>
           <span className="bottom-nav-icon">🧰</span>

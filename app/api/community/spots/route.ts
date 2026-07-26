@@ -60,3 +60,36 @@ export async function POST(request: NextRequest) {
     url: `/spot/${res.spot.id}`,
   })
 }
+
+// GET — fil des spots pour le feed « Découvrir les spots ».
+// Tri : plus récents d'abord ; filtres optionnels catégorie / ville / rayon.
+export async function GET(request: NextRequest) {
+  const { listAllSpots } = await import('@/lib/prayerSpots')
+  const sp = request.nextUrl.searchParams
+  const categorie = sp.get('categorie')
+  const ville = sp.get('ville')
+  const lat = parseFloat(sp.get('lat') ?? '')
+  const lng = parseFloat(sp.get('lng') ?? '')
+  const radius = parseFloat(sp.get('radius') ?? '50')
+  const limit = Math.min(60, parseInt(sp.get('limit') ?? '30', 10) || 30)
+  let spots = (await listAllSpots()).filter((s) => s.status === 'published')
+  if (categorie) spots = spots.filter((s) => (s.categorie ?? 'coin_priere') === categorie)
+  if (ville) spots = spots.filter((s) => s.villeSlug === ville)
+  if (Number.isFinite(lat) && Number.isFinite(lng)) {
+    const p = Math.PI / 180
+    const dist = (s: { lat: number; lng: number }) => {
+      const a = Math.sin(((s.lat - lat) * p) / 2) ** 2 + Math.cos(lat * p) * Math.cos(s.lat * p) * Math.sin(((s.lng - lng) * p) / 2) ** 2
+      return 6371 * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a))
+    }
+    spots = spots
+      .map((s) => ({ ...s, distKm: Math.round(dist(s) * 10) / 10 }))
+      .filter((s) => (s as { distKm: number }).distKm <= radius)
+      .sort((a, b) => (a as { distKm: number }).distKm - (b as { distKm: number }).distKm)
+  } else {
+    spots = spots.sort((a, b) => (b.createdAt ?? '').localeCompare(a.createdAt ?? ''))
+  }
+  return NextResponse.json(
+    { spots: spots.slice(0, limit) },
+    { headers: { 'Cache-Control': 's-maxage=60, stale-while-revalidate=300' } },
+  )
+}
