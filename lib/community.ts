@@ -255,7 +255,7 @@ const INFOS_VALIDES = new Set([
 export async function enrichSpot(
   spotId: string,
   pseudo: string,
-  add: { photo?: string; video?: string; astuce?: string; infos?: Record<string, boolean>; tags?: string[] },
+  add: { photo?: string; video?: string; videoTexte?: string; videoDebut?: number; videoFin?: number; astuce?: string; infos?: Record<string, boolean>; tags?: string[] },
 ): Promise<PrayerSpot | null> {
   const r = getRedis(); if (!r) return null
   const spot = await getSpotById(spotId)
@@ -263,8 +263,18 @@ export async function enrichSpot(
   const httpUrl = (u?: string) => (u && /^https?:\/\/\S{6,500}$/.test(u) ? u : null)
   const photo = httpUrl(add.photo)
   if (photo && !(spot.photos ?? []).includes(photo)) spot.photos = [...(spot.photos ?? []), photo].slice(0, 12)
+  // photo/vidéo : URL http(s) OU data-URL compressée côté client (photos)
+  const dataUrl = (u?: string) => (u && /^data:(image|video)\/[a-z0-9.+-]+;base64,/.test(u) && u.length < 400_000 ? u : null)
+  const photoData = dataUrl(add.photo)
+  if (photoData && !(spot.photos ?? []).includes(photoData)) spot.photos = [...(spot.photos ?? []), photoData].slice(0, 12)
   const video = httpUrl(add.video)
-  if (video && !spot.video) spot.video = video
+  if (video && !spot.video) {
+    spot.video = video
+    const texte = (add.videoTexte ?? '').trim().slice(0, 80)
+    if (texte) spot.videoTexte = texte
+    if (typeof add.videoDebut === 'number' && add.videoDebut >= 0) spot.videoDebut = Math.round(add.videoDebut * 10) / 10
+    if (typeof add.videoFin === 'number' && add.videoFin > (add.videoDebut ?? 0)) spot.videoFin = Math.round(add.videoFin * 10) / 10
+  }
   const astuce = (add.astuce ?? '').trim().slice(0, 280)
   if (astuce) spot.astuces = [...(spot.astuces ?? []), { pseudo, texte: astuce, date: new Date().toISOString() }].slice(-20)
   if (add.infos) {

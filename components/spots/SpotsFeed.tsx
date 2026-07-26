@@ -1,8 +1,9 @@
 'use client'
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import Link from 'next/link'
 import { useLanguage } from '@/components/i18n/LanguageProvider'
 import { CATEGORIES, SEUIL_CONFIANCE } from '@/lib/community'
+import MediaCapture from '@/components/spots/MediaCapture'
 import type { PrayerSpot } from '@/lib/villeTypes'
 
 // 🧿 FEED « Découvrir les spots » — la page VEDETTE du virage Spots.
@@ -22,6 +23,41 @@ const CAT_STYLE: Record<string, { bg: string }> = {
 }
 const catOf = (id?: string) => CATEGORIES.find((c) => c.id === (id ?? 'coin_priere')) ?? CATEGORIES[5]
 
+// Vidéo façon reels : autoplay muet quand visible, son au tap, trim léger via
+// métadonnées (videoDebut/videoFin), légende à l'écran.
+function ReelVideo({ src, texte, debut, fin }: { src: string; texte?: string; debut?: number; fin?: number }) {
+  const ref = useRef<HTMLVideoElement | null>(null)
+  const [muted, setMuted] = useState(true)
+  useEffect(() => {
+    const v = ref.current
+    if (!v) return
+    const io = new IntersectionObserver(([e]) => {
+      if (e.isIntersecting) v.play().catch(() => {})
+      else v.pause()
+    }, { threshold: 0.5 })
+    io.observe(v)
+    const onTime = () => {
+      if (debut != null && v.currentTime < debut - 0.3) v.currentTime = debut
+      if (fin != null && v.currentTime > fin) v.currentTime = debut ?? 0
+    }
+    v.addEventListener('timeupdate', onTime)
+    if (debut != null) v.currentTime = debut
+    return () => { io.disconnect(); v.removeEventListener('timeupdate', onTime) }
+  }, [debut, fin])
+  return (
+    <div style={{ position: 'relative' }} onClick={() => { setMuted((m) => !m); ref.current && (ref.current.muted = !muted) }}>
+      <video ref={ref} src={src} muted={muted} loop playsInline preload="metadata"
+        style={{ width: '100%', height: 420, objectFit: 'cover', display: 'block', background: '#000', cursor: 'pointer' }} />
+      <span style={{ position: 'absolute', top: 10, right: 12, background: 'rgba(0,0,0,0.55)', color: '#fff', borderRadius: 999, padding: '5px 10px', fontSize: 13 }}>
+        {muted ? '🔇' : '🔊'}
+      </span>
+      {texte && (
+        <p style={{ position: 'absolute', bottom: 16, left: 14, right: 14, margin: 0, color: '#fff', fontWeight: 800, fontSize: 18, textShadow: '0 2px 10px rgba(0,0,0,0.85)', textAlign: 'center', pointerEvents: 'none' }}>{texte}</p>
+      )}
+    </div>
+  )
+}
+
 export default function SpotsFeed() {
   const { lang } = useLanguage()
   const en = lang === 'en'
@@ -34,7 +70,22 @@ export default function SpotsFeed() {
   const [confirmed, setConfirmed] = useState<Record<string, boolean>>({})
   const [enriching, setEnriching] = useState<string | null>(null)
   const [astuce, setAstuce] = useState('')
-  const [photoUrl, setPhotoUrl] = useState('')
+  const [mediaFor, setMediaFor] = useState<string | null>(null)
+
+  // Défaut = « Près de moi » si la permission géoloc est DÉJÀ accordée
+  // (jamais de prompt surprise) — sinon « Tous les spots ».
+  useEffect(() => {
+    try {
+      navigator.permissions?.query({ name: 'geolocation' as PermissionName }).then((st) => {
+        if (st.state === 'granted') {
+          navigator.geolocation.getCurrentPosition(
+            (p) => { setPos({ lat: p.coords.latitude, lng: p.coords.longitude }); setNear(true) },
+            () => {}, { timeout: 6000 },
+          )
+        }
+      }).catch(() => {})
+    } catch { /* Safari sans permissions API */ }
+  }, [])
 
   useEffect(() => {
     const q = new URLSearchParams()
@@ -83,11 +134,10 @@ export default function SpotsFeed() {
     } catch { /* réseau */ } finally { setBusy(null) }
   }
 
-  const envoyerEnrich = async (s: Spot) => {
-    const body: Record<string, string> = { spotId: s.id }
+  const envoyerEnrich = async (s: Spot, extra?: Record<string, unknown>) => {
+    const body: Record<string, unknown> = { spotId: s.id, ...extra }
     if (astuce.trim()) body.astuce = astuce.trim()
-    if (photoUrl.trim()) body.photo = photoUrl.trim()
-    if (!body.astuce && !body.photo) { setEnriching(null); return }
+    if (!body.astuce && !body.photo && !body.video) { setEnriching(null); return }
     const token = localStorage.getItem('vh_token')
     const r = await fetch('/api/community/enrich', {
       method: 'POST',
@@ -98,7 +148,7 @@ export default function SpotsFeed() {
       const j = await r.json()
       setSpots((cur) => cur?.map((x) => (x.id === s.id ? { ...x, ...j.spot } : x)) ?? cur)
     }
-    setAstuce(''); setPhotoUrl(''); setEnriching(null)
+    setAstuce(''); setMediaFor(null); setEnriching(null)
   }
 
   const chips = useMemo(() => [
@@ -108,6 +158,13 @@ export default function SpotsFeed() {
 
   return (
     <div style={{ maxWidth: 560, margin: '0 auto', padding: '0 14px 40px' }}>
+      {/* Phrase d'accueil + ce qu'on regarde (jamais de doute sur « c'est où ? ») */}
+      <p style={{ color: 'rgba(253,250,243,0.7)', fontSize: 14, margin: '0 2px 8px', lineHeight: 1.5 }}>
+        {en ? 'Scroll the gems near you, or share yours in 15 sec.' : 'Scrolle les pépites près de toi, ou partage la tienne en 15 sec.'}
+      </p>
+      <p style={{ color: 'var(--or)', fontSize: 13, fontWeight: 800, letterSpacing: 1.5, textTransform: 'uppercase', margin: '0 2px 8px' }}>
+        {near ? (en ? '📍 Spots near you' : '📍 Spots près de toi') : (en ? '🌍 All spots' : '🌍 Tous les spots')}
+      </p>
       {/* Filtres : proximité + type */}
       <div style={{ display: 'flex', gap: 8, overflowX: 'auto', padding: '4px 2px 12px', scrollbarWidth: 'none' }}>
         <button onClick={askNear} style={{ flexShrink: 0, minHeight: 40, padding: '0 14px', borderRadius: 999, border: `1.5px solid ${near ? 'var(--or)' : 'rgba(201,168,76,0.35)'}`, background: near ? 'var(--or)' : 'transparent', color: near ? '#0b1a0f' : 'var(--creme)', fontWeight: 800, fontSize: 13.5, cursor: 'pointer' }}>
@@ -144,27 +201,39 @@ export default function SpotsFeed() {
           const img = s.photos?.[0] ?? s.photo
           return (
             <article key={s.id} style={{ borderRadius: 20, overflow: 'hidden', border: `1px solid ${trusted ? 'rgba(201,168,76,0.55)' : 'rgba(255,255,255,0.1)'}`, background: 'rgba(255,255,255,0.04)' }}>
-              {/* Visuel : vraie photo si la communauté en a mis une, sinon carte catégorie */}
-              <Link href={`/spot/${s.id}`} style={{ display: 'block', textDecoration: 'none' }}>
-                {img ? (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img src={img} alt="" loading="lazy" style={{ width: '100%', height: 230, objectFit: 'cover', display: 'block' }} onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }} />
-                ) : (
-                  <div style={{ height: 130, background: CAT_STYLE[s.categorie ?? 'autre']?.bg ?? CAT_STYLE.autre.bg, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 46 }}>{c.icon}</div>
-                )}
-              </Link>
-              <div style={{ padding: '12px 14px 14px' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
-                  <Link href={`/spot/${s.id}`} style={{ color: '#fdfaf3', fontWeight: 800, fontSize: 16.5, textDecoration: 'none', flex: 1, minWidth: 140 }}>{s.nom}</Link>
-                  {trusted && (
-                    <span title={en ? 'Community trust' : 'Confiance communauté'} style={{ background: 'rgba(201,168,76,0.18)', border: '1px solid rgba(201,168,76,0.6)', color: 'var(--or)', borderRadius: 999, padding: '3px 10px', fontSize: 12, fontWeight: 800 }}>
-                      🛡️ {en ? 'Trusted' : 'Confiance'}
-                    </span>
+              {/* MÉDIA plein cadre façon reels : vidéo autoplay muette > photo >
+                  fond dégradé typé (jamais un pin isolé qui fait cassé) */}
+              {s.video ? (
+                <ReelVideo src={s.video} texte={s.videoTexte} debut={s.videoDebut} fin={s.videoFin} />
+              ) : (
+                <Link href={`/spot/${s.id}`} style={{ display: 'block', textDecoration: 'none', position: 'relative' }}>
+                  {img ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img src={img} alt="" loading="lazy" style={{ width: '100%', height: 320, objectFit: 'cover', display: 'block' }} onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }} />
+                  ) : (
+                    <div style={{ height: 170, background: CAT_STYLE[s.categorie ?? 'autre']?.bg ?? CAT_STYLE.autre.bg, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 6 }}>
+                      <span style={{ fontSize: 52, filter: 'drop-shadow(0 4px 12px rgba(0,0,0,0.4))' }}>{c.icon}</span>
+                      <span style={{ color: 'rgba(255,255,255,0.85)', fontWeight: 800, fontSize: 13, letterSpacing: 2, textTransform: 'uppercase' }}>{en ? c.en : c.fr}</span>
+                    </div>
                   )}
-                </div>
-                <p style={{ margin: '3px 0 0', color: 'rgba(253,250,243,0.6)', fontSize: 13 }}>
-                  {c.icon} {en ? c.en : c.fr} · {s.villeNom}{s.distKm != null ? ` · ${s.distKm} km` : ''} · {en ? 'by' : 'par'} {s.auteurPseudo ?? (en ? 'A traveler' : 'Un voyageur')}
-                </p>
+                  {/* Texte PAR-DESSUS le média (voile dégradé lisible) */}
+                  <div style={{ position: 'absolute', left: 0, right: 0, bottom: 0, padding: '26px 14px 10px', background: 'linear-gradient(180deg, transparent, rgba(0,0,0,0.72))' }}>
+                    <p style={{ margin: 0, color: '#fff', fontWeight: 900, fontSize: 18, textShadow: '0 1px 6px rgba(0,0,0,0.5)' }}>
+                      {s.nom} {trusted && '🛡️'}
+                    </p>
+                    <p style={{ margin: '2px 0 0', color: 'rgba(255,255,255,0.85)', fontSize: 13 }}>
+                      {c.icon} {en ? c.en : c.fr} · {s.villeNom}{s.distKm != null ? ` · ${s.distKm} km` : ''} · {en ? 'by' : 'par'} {s.auteurPseudo ?? (en ? 'A traveler' : 'Un voyageur')}
+                    </p>
+                  </div>
+                </Link>
+              )}
+              <div style={{ padding: '12px 14px 14px' }}>
+                {s.video && (
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+                    <Link href={`/spot/${s.id}`} style={{ color: '#fdfaf3', fontWeight: 800, fontSize: 16.5, textDecoration: 'none', flex: 1, minWidth: 140 }}>{s.nom}</Link>
+                    {trusted && <span style={{ background: 'rgba(201,168,76,0.18)', border: '1px solid rgba(201,168,76,0.6)', color: 'var(--or)', borderRadius: 999, padding: '3px 10px', fontSize: 12, fontWeight: 800 }}>🛡️ {en ? 'Trusted' : 'Confiance'}</span>}
+                  </div>
+                )}
                 {conf > 0 && (
                   <p style={{ margin: '6px 0 0', color: '#3BD17A', fontSize: 13.5, fontWeight: 700 }}>
                     ✅ {en ? `Confirmed by ${conf} Muslim${conf > 1 ? 's' : ''}` : `Confirmé par ${conf} musulman${conf > 1 ? 's' : ''}`}
@@ -190,14 +259,32 @@ export default function SpotsFeed() {
                     🚶 {en ? 'Go' : 'Itinéraire'}
                   </a>
                 </div>
-                {/* Enrichissement collectif : astuce + photo (URL) — tout optionnel */}
+                {/* Enrichissement collectif : astuce + photo/reel — tout optionnel */}
                 {enriching === s.id && (
                   <div style={{ marginTop: 10, display: 'grid', gap: 8 }}>
-                    <input value={astuce} onChange={(e) => setAstuce(e.target.value)} maxLength={280} placeholder={en ? 'A tip for the next traveler… (optional)' : 'Une astuce pour le prochain… (optionnel)'} style={{ minHeight: 46, padding: '0 14px', borderRadius: 12, border: '1px solid rgba(201,168,76,0.35)', background: 'rgba(255,255,255,0.06)', color: '#fdfaf3', fontSize: 14.5 }} />
-                    <input value={photoUrl} onChange={(e) => setPhotoUrl(e.target.value)} placeholder={en ? 'Photo link (https://…, optional)' : 'Lien photo (https://…, optionnel)'} style={{ minHeight: 46, padding: '0 14px', borderRadius: 12, border: '1px solid rgba(201,168,76,0.35)', background: 'rgba(255,255,255,0.06)', color: '#fdfaf3', fontSize: 14.5 }} />
-                    <button onClick={() => envoyerEnrich(s)} style={{ minHeight: 46, borderRadius: 12, border: 'none', background: 'var(--or)', color: '#0b1a0f', fontWeight: 800, fontSize: 14.5, cursor: 'pointer' }}>
-                      {en ? 'Add to this spot' : 'Ajouter à ce spot'}
-                    </button>
+                    {mediaFor === s.id ? (
+                      <MediaCapture
+                        onSkip={() => setMediaFor(null)}
+                        onDone={(m) => {
+                          const extra = m.kind === 'photo'
+                            ? { photo: m.payload }
+                            : { video: m.payload, videoTexte: m.videoTexte, videoDebut: m.videoDebut, videoFin: m.videoFin }
+                          envoyerEnrich(s, extra)
+                        }}
+                      />
+                    ) : (
+                      <>
+                        <input value={astuce} onChange={(e) => setAstuce(e.target.value)} maxLength={280} placeholder={en ? 'A tip for the next traveler… (optional)' : 'Une astuce pour le prochain… (optionnel)'} style={{ minHeight: 46, padding: '0 14px', borderRadius: 12, border: '1px solid rgba(201,168,76,0.35)', background: 'rgba(255,255,255,0.06)', color: '#fdfaf3', fontSize: 14.5 }} />
+                        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 }}>
+                          <button onClick={() => setMediaFor(s.id)} style={{ minHeight: 46, borderRadius: 12, border: '1.5px solid rgba(201,168,76,0.45)', background: 'transparent', color: 'var(--creme)', fontWeight: 800, fontSize: 14, cursor: 'pointer' }}>
+                            📷🎥 {en ? 'Photo / reel' : 'Photo / reel'}
+                          </button>
+                          <button onClick={() => envoyerEnrich(s)} style={{ minHeight: 46, borderRadius: 12, border: 'none', background: 'var(--or)', color: '#0b1a0f', fontWeight: 800, fontSize: 14, cursor: 'pointer' }}>
+                            {en ? 'Add' : 'Ajouter'}
+                          </button>
+                        </div>
+                      </>
+                    )}
                   </div>
                 )}
               </div>

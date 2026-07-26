@@ -122,7 +122,10 @@ export interface PrayerSpot {
   itineraires?: number    // nb de clics « Itinéraire » (usage le plus fort)
   // ── Spot enrichissable à plusieurs (virage « Spots ») — TOUT optionnel ──
   photos?: string[]       // URLs de photos ajoutées par la communauté
-  video?: string          // URL d'une vidéo courte verticale (lien)
+  video?: string          // URL d'une vidéo courte verticale (lien ou upload)
+  videoTexte?: string     // légende affichée à l'écran (pas de réencodage)
+  videoDebut?: number     // trim léger : début de lecture (secondes)
+  videoFin?: number       // trim léger : fin de lecture (secondes)
   astuces?: { pseudo: string; texte: string; date: string }[] // mots/astuces des passants
   infos?: Record<string, boolean> // infos halal structurées selon le type (sans_alcool, ablutions…)
   tags?: string[]         // famille, budget, calme…

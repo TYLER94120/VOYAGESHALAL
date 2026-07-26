@@ -4,6 +4,7 @@ import { useCommunity, authFetch } from '@/lib/useCommunity'
 import { useInstantPosition } from '@/lib/useInstantPosition'
 import AuthSheet from '@/components/community/AuthSheet'
 import Celebration from '@/components/community/Celebration'
+import MediaCapture from '@/components/spots/MediaCapture'
 import { useLanguage } from '@/components/i18n/LanguageProvider'
 
 // Ajouter un spot façon WAZE : 3 taps, 15 secondes.
@@ -44,6 +45,8 @@ export default function AjouterClient() {
   const [busy, setBusy] = useState(false)
   const [err, setErr] = useState('')
   const [authOpen, setAuthOpen] = useState(false)
+  const [mediaOpen, setMediaOpen] = useState(false)
+  const [mediaDone, setMediaDone] = useState(false)
   const [done, setDone] = useState<{ points: number; badges: string[]; impact: number; url: string; anon?: boolean; spotId?: string; claimKey?: string } | null>(null)
 
   // Étape 2 : GPS précis automatique + lieux nommés à proximité (OpenStreetMap,
@@ -244,7 +247,42 @@ export default function AjouterClient() {
           }
         }}
         sendCode={sendCode} verify={verify} googleLogin={googleLogin} en={en} />
+      {/* Média optionnel APRÈS publication — jamais bloquant (reel/photo) */}
+      {done && mediaOpen && (
+        <div style={{ position: 'fixed', inset: 0, zIndex: 210, background: 'rgba(11,26,15,0.96)', overflowY: 'auto', padding: '30px 18px 60px' }}>
+          <div style={{ maxWidth: 480, margin: '0 auto' }}>
+            <p style={{ color: '#fdfaf3', fontWeight: 900, fontSize: 19, margin: '0 0 14px', textAlign: 'center' }}>
+              {mediaDone ? (en ? '✓ Added to your spot!' : '✓ Ajouté à ton spot !') : (en ? 'Show your spot 🎥' : 'Fais voir ton spot 🎥')}
+            </p>
+            {mediaDone ? (
+              <button onClick={() => setMediaOpen(false)} style={{ display: 'block', width: '100%', minHeight: 54, borderRadius: 16, border: 'none', background: 'var(--or)', color: '#0b1a0f', fontWeight: 900, fontSize: 15, cursor: 'pointer' }}>
+                {en ? 'Done' : 'Terminé'}
+              </button>
+            ) : (
+              <MediaCapture
+                skipLabel={en ? 'Skip — my spot is already live' : 'Passer — mon spot est déjà publié'}
+                onSkip={() => setMediaOpen(false)}
+                onDone={async (m) => {
+                  try {
+                    const body: Record<string, unknown> = { spotId: done.spotId }
+                    if (m.kind === 'photo') body.photo = m.payload
+                    else { body.video = m.payload; body.videoTexte = m.videoTexte; body.videoDebut = m.videoDebut; body.videoFin = m.videoFin }
+                    await fetch('/api/community/enrich', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) })
+                    setMediaDone(true)
+                  } catch { setMediaOpen(false) }
+                }}
+              />
+            )}
+          </div>
+        </div>
+      )}
       {done && <Celebration points={done.points} badges={done.badges} impact={done.impact} spotUrl={done.url} onClose={reset} en={en}
+        mediaCta={done.spotId ? (
+          <button onClick={() => setMediaOpen(true)}
+            style={{ display: 'block', width: '100%', minHeight: 54, borderRadius: 16, border: '2px solid rgba(27,67,50,0.35)', background: '#fff', color: '#1b4332', fontWeight: 900, fontSize: 15, cursor: 'pointer', marginBottom: 12 }}>
+            🎥 {en ? 'Add a photo / reel (15 s)' : 'Ajoute une photo / un reel (15 s)'}
+          </button>
+        ) : undefined}
         claimCta={done.anon && loaded && !me ? (
           <button onClick={() => setAuthOpen(true)}
             style={{ display: 'block', width: '100%', minHeight: 54, borderRadius: 16, border: 'none', background: 'var(--or, #C9A84C)', color: '#0b1a0f', fontWeight: 900, fontSize: 15, cursor: 'pointer', marginBottom: 12 }}>

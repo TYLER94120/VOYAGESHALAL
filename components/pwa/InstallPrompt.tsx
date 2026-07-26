@@ -16,9 +16,10 @@ export default function InstallPrompt() {
   const [show, setShow] = useState(false)
   const [iosHint, setIosHint] = useState(false)
   const pathname = usePathname()
-  // Jamais sur la page des horaires : le bandeau ne doit pas masquer les
-  // horaires ni les boutons (fix UX prière).
+  // Jamais sur les horaires (masquerait les heures) ni sur le feed Spots
+  // (le bandeau chevauchait les cartes — il reste dispo partout ailleurs).
   const suppressed = pathname?.startsWith('/horaires-priere') || pathname?.startsWith('/prayer-times')
+    || pathname === '/spots' || pathname?.startsWith('/spot/')
 
   useEffect(() => {
     if (typeof window === 'undefined') return

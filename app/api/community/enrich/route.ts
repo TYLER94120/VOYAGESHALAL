@@ -14,7 +14,8 @@ export async function POST(req: Request) {
     if (!spotId) return NextResponse.json({ error: 'spotId requis' }, { status: 400 })
     const user = await getUserByToken(tokenFromRequest(req))
     const spot = await enrichSpot(spotId, user?.pseudo ?? 'Un voyageur', {
-      photo: body.photo, video: body.video, astuce: body.astuce, infos: body.infos, tags: body.tags,
+      photo: body.photo, video: body.video, videoTexte: body.videoTexte, videoDebut: body.videoDebut, videoFin: body.videoFin,
+      astuce: body.astuce, infos: body.infos, tags: body.tags,
     })
     if (!spot) return NextResponse.json({ error: 'Spot introuvable' }, { status: 404 })
     return NextResponse.json({ ok: true, spot })

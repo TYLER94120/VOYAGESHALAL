@@ -8,7 +8,7 @@ import { BADGES } from '@/lib/community'
 const COLORS = ['#C9A84C', '#1B4332', '#2d6a4f', '#e9dcbe', '#0B1A0F']
 
 export default function Celebration({
-  points, badges, impact, spotUrl, onClose, claimCta, en = false,
+  points, badges, impact, spotUrl, onClose, claimCta, mediaCta, en = false,
 }: {
   points: number
   badges: string[]
@@ -17,6 +17,8 @@ export default function Celebration({
   onClose: () => void
   /* Publication sans compte : bouton « garde tes points » (optionnel) */
   claimCta?: React.ReactNode
+  /* Média optionnel après publication : « ajoute une photo / un reel » */
+  mediaCta?: React.ReactNode
   en?: boolean
 }) {
   const [confetti] = useState(() => Array.from({ length: 60 }, (_, i) => ({
@@ -54,6 +56,7 @@ export default function Celebration({
           <span style={{ fontWeight: 800, color: '#8A6D1E', fontSize: 16 }}>+{points} points</span>
         </div>
         )}
+        {mediaCta}
         {claimCta}
         {impact > 0 && (
           <p style={{ fontSize: 14, color: '#4b5563', margin: '0 0 12px' }}>
