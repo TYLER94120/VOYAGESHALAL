@@ -1,0 +1,29 @@
+name: hb-affiliate-check
+# Repère la page officielle du programme d'affiliation HalalBooking
+# (lecture publique de leur site — préparation de l'inscription). Manuel.
+
+on: workflow_dispatch
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Find affiliate program pages
+        run: |
+          UA="Mozilla/5.0 (compatible; VoyagesHalal-partner-check)"
+          for u in \
+            "https://www.halalbooking.com/en/affiliates" \
+            "https://www.halalbooking.com/affiliates" \
+            "https://www.halalbooking.com/en/partners" \
+            "https://www.halalbooking.com/en/affiliate-program" \
+            "https://affiliates.halalbooking.com" ; do
+            code=$(curl -s -o /tmp/p.html -w "%{http_code}" -L -A "$UA" "$u")
+            title=$(grep -o '<title>[^<]*' /tmp/p.html | head -1 | sed 's/<title>//')
+            echo "$code · $u · ${title:-—}"
+          done
+          echo "── Liens 'affiliate/partner' trouvés sur la home ──"
+          curl -s -L -A "$UA" "https://www.halalbooking.com/en" -o /tmp/home.html
+          grep -oiE 'href="[^"]*(affiliat|partner)[^"]*"' /tmp/home.html | sort -u | head -10
+          echo "── Idem sur le footer FR ──"
+          curl -s -L -A "$UA" "https://www.halalbooking.com/fr" -o /tmp/fr.html
+          grep -oiE 'href="[^"]*(affili|partenair|partner)[^"]*"' /tmp/fr.html | sort -u | head -10
