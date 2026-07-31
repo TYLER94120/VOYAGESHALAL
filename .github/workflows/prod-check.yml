@@ -42,6 +42,12 @@ jobs:
           curl -s "$FR/manifest.webmanifest" | grep -o '"short_name":"[^"]*"' | head -6
           echo "── Upload média (503 attendu tant que Blob non activé) ──"
           curl -s -o /dev/null -w "/api/media/upload → %{http_code}\n" -X POST "$FR/api/media/upload" -H 'Content-Type: application/json' -d '{}'
+          echo "── Nouveautés : guide vivant + fiche spot enrichie ──"
+          curl -s -o /dev/null -w "/guide-vivant/marrakech → %{http_code}\n" "$FR/guide-vivant/marrakech"
+          curl -s "$FR/guide-vivant/marrakech" | grep -o "Guide halal de Marrakech\|Où prier\|Où manger halal\|Les pépites" | sort | uniq -c
+          SID=$(curl -s "$FR/api/community/spots?limit=1" | python3 -c "import json,sys;print(json.load(sys.stdin)['spots'][0]['id'])")
+          echo "fiche spot $SID :"
+          curl -s "$FR/spot/$SID" | grep -o "Laisser un salam\|Partager ce spot\|Guide vivant halal" | sort | uniq -c
           echo "── SEO : une fiche ville respire toujours ──"
           curl -s -o /dev/null -w "/destinations/istanbul → %{http_code}\n" "$FR/destinations/istanbul"
           curl -s "$FR/destinations/istanbul" | grep -o "9.6/10" | head -1
