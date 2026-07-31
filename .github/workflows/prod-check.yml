@@ -1,0 +1,47 @@
+name: prod-check
+# Inspection de la PROD après le virage Spots : statuts + marqueurs clés
+# des pages cœur, FR et EN. Manuel uniquement.
+
+on: workflow_dispatch
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Inspect production
+        run: |
+          FR=https://www.voyageshalal.fr
+          EN=https://www.gohalaltravel.com
+          echo "── Statuts des pages cœur ──"
+          for p in / /spots /communaute/ajouter /carnet /audio /destinations /blog /horaires-priere; do
+            curl -s -o /dev/null -w "FR $p → %{http_code}\n" "$FR$p"
+          done
+          for p in / /spots; do
+            curl -s -o /dev/null -w "EN $p → %{http_code}\n" "$EN$p"
+          done
+          echo "── Marqueurs du virage Spots (accueil FR) ──"
+          H=$(curl -s "$FR/")
+          for m in "pépites halal" "Ajouter un spot" "Découvrir les spots" "Mes spots" "💎 Spots"; do
+            echo "$H" | grep -q "$m" && echo "OK  · $m" || echo "KO  · $m"
+          done
+          echo "── Feed /spots FR ──"
+          S=$(curl -s "$FR/spots")
+          for m in "Découvre les pépites" "jamais rien d'inventé"; do
+            echo "$S" | grep -q "$m" && echo "OK  · $m" || echo "KO  · $m"
+          done
+          echo "── EN /spots ──"
+          SE=$(curl -s "$EN/spots")
+          for m in "Discover the gems" "nothing invented"; do
+            echo "$SE" | grep -q "$m" && echo "OK  · $m" || echo "KO  · $m"
+          done
+          echo "── API feed ──"
+          curl -s -o /dev/null -w "/api/community/spots → %{http_code}\n" "$FR/api/community/spots?limit=3"
+          curl -s "$FR/api/community/spots?limit=3" | head -c 220; echo
+          echo "── Service worker v3 + manifest ──"
+          curl -s "$FR/sw.js" | grep -o "vh-v[0-9]*" | head -1
+          curl -s "$FR/manifest.webmanifest" | grep -o '"short_name":"[^"]*"' | head -6
+          echo "── Upload média (503 attendu tant que Blob non activé) ──"
+          curl -s -o /dev/null -w "/api/media/upload → %{http_code}\n" -X POST "$FR/api/media/upload" -H 'Content-Type: application/json' -d '{}'
+          echo "── SEO : une fiche ville respire toujours ──"
+          curl -s -o /dev/null -w "/destinations/istanbul → %{http_code}\n" "$FR/destinations/istanbul"
+          curl -s "$FR/destinations/istanbul" | grep -o "9.6/10" | head -1
