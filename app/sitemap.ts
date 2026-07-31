@@ -111,7 +111,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: `${SITE_URL}/spot/${s.id}`,
       lastModified: new Date(s.createdAt), changeFrequency: 'weekly' as const, priority: 0.5,
     }))
-    spotPages = [...indexPages, ...detailPages, ...genericPages]
+    // Guides vivants : indexés dès qu'une ville a 3 spots publiés
+    const parVille = new Map<string, number>()
+    for (const s of spots) if (s.status === 'published') parVille.set(s.villeSlug, (parVille.get(s.villeSlug) ?? 0) + 1)
+    const guideVivantPages = [...parVille.entries()].filter(([, n]) => n >= 3).map(([v]) => ({
+      url: `${SITE_URL}/guide-vivant/${v}`, lastModified: now, changeFrequency: 'daily' as const, priority: 0.7,
+    }))
+    spotPages = [...indexPages, ...detailPages, ...genericPages, ...guideVivantPages]
   } catch { /* Redis indisponible → pas de pages spots dans le sitemap */ }
 
   return [...staticPages, ...villePages, ...paysPages, ...hotelPages, ...guidePages, ...blogPages, ...spotPages]

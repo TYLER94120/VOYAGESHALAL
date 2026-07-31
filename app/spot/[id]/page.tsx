@@ -5,6 +5,8 @@ import { getDomainSEO } from '@/lib/domain'
 import { getRedis } from '@/lib/pushStore'
 import { getSpotById, addImpact, CATEGORIES, INFOS_LABELS, SEUIL_CONFIANCE } from '@/lib/community'
 import ShareSpot from '@/components/community/ShareSpot'
+import SalamBar from '@/components/community/SalamBar'
+import { getSalams } from '@/lib/community'
 import { LIEU_LABELS } from '@/lib/prayerSpots'
 import ConfirmBar from '@/components/community/ConfirmBar'
 import ItineraireButton from '@/components/community/ItineraireButton'
@@ -192,6 +194,8 @@ export default async function SpotPage({ params }: Props) {
           </div>
         )}
         <ConfirmBar spotId={spot.id} confirmations={spot.confirmations ?? 0} />
+        {/* 👋 Salam de passage — on ne voyage jamais seul */}
+        <SalamBar spotId={spot.id} initial={await getSalams(spot.id)} en={en} />
 
         <ItineraireButton spotId={spot.id} lat={spot.lat} lng={spot.lng} en={en} />
         {/* Partage 1 tap — le bouche-à-oreille WhatsApp est notre moteur */}
@@ -203,9 +207,12 @@ export default async function SpotPage({ params }: Props) {
             : 'Information partagée par la communauté — nous ne certifions jamais le statut religieux ou halal d\'un lieu ; vérifiez toujours sur place.'}
         </p>
 
-        <div style={{ marginTop: 18, textAlign: 'center' }}>
+        <div style={{ marginTop: 18, textAlign: 'center', display: 'grid', gap: 10 }}>
           <Link href="/communaute/ajouter" style={{ display: 'inline-block', padding: '14px 24px', borderRadius: 999, background: 'var(--or)', color: '#0b1a0f', fontWeight: 900, fontSize: 15, textDecoration: 'none' }}>
             ➕ {en ? 'I also know a spot' : 'Moi aussi je connais un spot'}
+          </Link>
+          <Link href={`/guide-vivant/${spot.villeSlug}`} style={{ color: '#1b4332', fontWeight: 800, fontSize: 14.5, textDecoration: 'none' }}>
+            📖 {en ? `Living halal guide to ${spot.villeNom} →` : `Guide vivant halal de ${spot.villeNom} →`}
           </Link>
         </div>
       </div>

@@ -306,6 +306,28 @@ export async function reactUtile(spotId: string, visitorKey: string): Promise<{ 
 // Seuil du badge « Confiance communauté » (modèle Waze)
 export const SEUIL_CONFIANCE = 5
 
+// ── Salam de passage 👋 — « tu ne voyages pas seul » ──
+// Pas de texte libre (zéro modération) : juste un signe chaleureux, signé du
+// pseudo si connecté, « Un voyageur » sinon. Dédupliqué par visiteur.
+export interface Salam { pseudo: string; date: string }
+export async function leaveSalam(spotId: string, pseudo: string, visitorKey: string): Promise<{ ok: boolean; deja?: boolean; salams?: Salam[] }> {
+  const r = getRedis(); if (!r) return { ok: false }
+  if (!/^[a-z0-9_-]+$/i.test(spotId)) return { ok: false }
+  const spot = await getSpotById(spotId)
+  if (!spot) return { ok: false }
+  const added = await r.sadd(`vh:spot:${spotId}:salamers`, visitorKey)
+  if (!added) return { ok: true, deja: true, salams: await getSalams(spotId) }
+  await r.lpush(`vh:spot:${spotId}:salams`, JSON.stringify({ pseudo, date: new Date().toISOString() }))
+  await r.ltrim(`vh:spot:${spotId}:salams`, 0, 29)
+  if (spot.auteurId) await addImpact(spot.auteurId, 1) // un salam = de la chaleur pour l'auteur
+  return { ok: true, salams: await getSalams(spotId) }
+}
+export async function getSalams(spotId: string): Promise<Salam[]> {
+  const r = getRedis(); if (!r) return []
+  const raw = (await r.lrange(`vh:spot:${spotId}:salams`, 0, 29)) as unknown[]
+  return raw.map((x) => { try { return typeof x === 'string' ? JSON.parse(x) : (x as Salam) } catch { return null } }).filter((x): x is Salam => !!x?.pseudo)
+}
+
 // Libellés des infos halal structurées (affichage fiche spot + feed)
 export const INFOS_LABELS: Record<string, { fr: string; en: string; icon: string }> = {
   halal_signale: { fr: 'Signalé halal', en: 'Reported halal', icon: '🍽' },
