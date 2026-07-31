@@ -8,22 +8,20 @@ const HALALBOOKING_AID = process.env.NEXT_PUBLIC_HALALBOOKING_AID || ''
 const BOOKING_AID = process.env.NEXT_PUBLIC_BOOKING_AID || ''
 const GYG_PARTNER = process.env.NEXT_PUBLIC_GETYOURGUIDE_PARTNER || ''
 
-/** URL de réservation d'hôtel halal pour une ville (HalalBooking prioritaire, sinon Booking.com). */
-export function hotelBookingUrl(cityName: string): { url: string; provider: 'halalbooking' | 'booking' } {
+/** URL de réservation d'hôtel halal pour une ville — HALALBOOKING UNIQUEMENT.
+ * Décision produit : Booking & co ne sont pas orientés halal (pas de filtres
+ * piscine femmes / sans alcool, pas de prix membres) → on ne les propose plus.
+ * Le lien marche avec ou sans AID (sans = pas de commission, jamais cassé). */
+export function hotelBookingUrl(cityName: string): { url: string; provider: 'halalbooking' } {
   const q = encodeURIComponent(cityName)
-  if (HALALBOOKING_AID) {
-    return {
-      url: `https://www.halalbooking.com/search?query=${q}&aid=${encodeURIComponent(HALALBOOKING_AID)}`,
-      provider: 'halalbooking',
-    }
-  }
-  // Repli Booking.com (avec aid si dispo) — couverture mondiale
-  const aid = BOOKING_AID ? `&aid=${encodeURIComponent(BOOKING_AID)}` : ''
+  const aid = HALALBOOKING_AID ? `&aid=${encodeURIComponent(HALALBOOKING_AID)}` : ''
   return {
-    url: `https://www.booking.com/searchresults.html?ss=${q}${aid}`,
-    provider: 'booking',
+    url: `https://www.halalbooking.com/search?query=${q}${aid}`,
+    provider: 'halalbooking',
   }
 }
+// (BOOKING_AID conservé uniquement pour compat — plus utilisé pour les hôtels)
+void BOOKING_AID
 
 /** URL d'activités/excursions (GetYourGuide) pour une ville. */
 export function activitiesUrl(cityName: string): string {
