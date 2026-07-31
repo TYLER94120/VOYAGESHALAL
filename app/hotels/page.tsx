@@ -4,6 +4,7 @@ import { readFileSync, readdirSync } from 'fs'
 import path from 'path'
 import { getDomainSEO, FR_URL, EN_URL } from '@/lib/domain'
 import PepiteFinder from '@/components/hotels/PepiteFinder'
+import ReleveForm from '@/components/hotels/ReleveForm'
 import { hotelBookingUrl } from '@/lib/affiliate'
 
 // 🏨 Hub Hôtels — 100 % HALALBOOKING (décision produit : Booking & co ne sont
@@ -109,6 +110,7 @@ export default async function HotelsPage() {
                 </div>
               ))}
             </div>
+            <ReleveForm />
           </section>
         )}
 
