@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useLanguage } from '@/components/i18n/LanguageProvider'
 import { CATEGORIES, SEUIL_CONFIANCE } from '@/lib/community'
 import MediaCapture from '@/components/spots/MediaCapture'
+import ShareSpot from '@/components/community/ShareSpot'
 import type { PrayerSpot } from '@/lib/villeTypes'
 
 // 🧿 FEED « Découvrir les spots » — la page VEDETTE du virage Spots.
@@ -63,10 +64,10 @@ function ReelVideo({ src, texte, debut, fin }: { src: string; texte?: string; de
   )
 }
 
-export default function SpotsFeed() {
+export default function SpotsFeed({ initialSpots }: { initialSpots?: Spot[] }) {
   const { lang } = useLanguage()
   const en = lang === 'en'
-  const [spots, setSpots] = useState<Spot[] | null>(null)
+  const [spots, setSpots] = useState<Spot[] | null>(initialSpots?.length ? initialSpots : null)
   const [cat, setCat] = useState<string | null>(null)
   const [near, setNear] = useState(false)
   const [pos, setPos] = useState<{ lat: number; lng: number } | null>(null)
@@ -93,7 +94,10 @@ export default function SpotsFeed() {
     } catch { /* Safari sans permissions API */ }
   }, [])
 
+  const [didInit, setDidInit] = useState(false)
   useEffect(() => {
+    // Premier rendu : la liste vient déjà du serveur (SEO) — pas de re-fetch
+    if (!didInit) { setDidInit(true); if (initialSpots?.length && !cat && !near) return }
     const q = new URLSearchParams()
     if (cat) q.set('categorie', cat)
     if (near && pos) { q.set('lat', String(pos.lat)); q.set('lng', String(pos.lng)); q.set('radius', '80') }
@@ -273,6 +277,7 @@ export default function SpotsFeed() {
                   <button onClick={() => setEnriching(enriching === s.id ? null : s.id)} style={{ minHeight: 42, padding: '0 14px', borderRadius: 999, border: '1.5px solid rgba(201,168,76,0.4)', background: 'transparent', color: 'var(--creme)', fontWeight: 700, fontSize: 13.5, cursor: 'pointer' }}>
                     ➕ {en ? 'Enrich' : 'Enrichir'}
                   </button>
+                  <ShareSpot compact nom={s.nom} ville={s.villeNom} url={`${typeof window !== 'undefined' ? window.location.origin : ''}/spot/${s.id}`} en={en} />
                   <a href={`https://www.google.com/maps/dir/?api=1&destination=${s.lat},${s.lng}`} target="_blank" rel="noopener noreferrer" style={{ minHeight: 42, padding: '0 14px', borderRadius: 999, background: 'var(--or)', color: '#0b1a0f', fontWeight: 800, fontSize: 13.5, textDecoration: 'none', display: 'inline-flex', alignItems: 'center' }}>
                     🚶 {en ? 'Go' : 'Itinéraire'}
                   </a>

@@ -20,14 +20,26 @@ export interface CapturedMedia {
   videoFin?: number
 }
 
-// Compresse une photo en data-URL JPEG (~≤250 Ko) — zéro dépendance serveur
-async function compressPhoto(file: File): Promise<string> {
+// Compresse une photo puis l'héberge sur Vercel Blob si activé (URL légère,
+// pas de base64 dans Redis) — repli data-URL sinon : marche dans tous les cas,
+// et bascule automatiquement sur Blob dès que le store est créé.
+export async function compressPhoto(file: File): Promise<string> {
   const img = await createImageBitmap(file)
   const scale = Math.min(1, 1280 / Math.max(img.width, img.height))
   const canvas = document.createElement('canvas')
   canvas.width = Math.round(img.width * scale)
   canvas.height = Math.round(img.height * scale)
   canvas.getContext('2d')!.drawImage(img, 0, 0, canvas.width, canvas.height)
+  try {
+    const blob: Blob | null = await new Promise((res) => canvas.toBlob(res, 'image/jpeg', 0.8))
+    if (blob) {
+      const { upload } = await import('@vercel/blob/client')
+      const up = await upload(`spots/photo-${Date.now().toString(36)}.jpg`, blob, {
+        access: 'public', handleUploadUrl: '/api/media/upload', contentType: 'image/jpeg',
+      })
+      return up.url
+    }
+  } catch { /* Blob pas activé → repli base64 compressé */ }
   for (const q of [0.8, 0.65, 0.5, 0.35]) {
     const url = canvas.toDataURL('image/jpeg', q)
     if (url.length < 340_000) return url

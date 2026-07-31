@@ -4,7 +4,7 @@ import { useCommunity, authFetch } from '@/lib/useCommunity'
 import { useInstantPosition } from '@/lib/useInstantPosition'
 import AuthSheet from '@/components/community/AuthSheet'
 import Celebration from '@/components/community/Celebration'
-import MediaCapture from '@/components/spots/MediaCapture'
+import MediaCapture, { compressPhoto } from '@/components/spots/MediaCapture'
 import { useLanguage } from '@/components/i18n/LanguageProvider'
 
 // Ajouter un spot façon WAZE : 3 taps, 15 secondes.
@@ -240,16 +240,7 @@ export default function AjouterClient() {
                   onChange={async (e) => {
                     const f = e.target.files?.[0]
                     if (!f) return
-                    try {
-                      const img = await createImageBitmap(f)
-                      const scale = Math.min(1, 1280 / Math.max(img.width, img.height))
-                      const cv = document.createElement('canvas')
-                      cv.width = Math.round(img.width * scale); cv.height = Math.round(img.height * scale)
-                      cv.getContext('2d')!.drawImage(img, 0, 0, cv.width, cv.height)
-                      let url = ''
-                      for (const q of [0.8, 0.65, 0.5, 0.35]) { url = cv.toDataURL('image/jpeg', q); if (url.length < 340_000) break }
-                      setPendingPhoto(url)
-                    } catch { /* photo illisible */ }
+                    try { setPendingPhoto(await compressPhoto(f)) } catch { /* photo illisible */ }
                   }} />
               </label>
             )}

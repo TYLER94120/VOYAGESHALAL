@@ -306,6 +306,20 @@ export async function reactUtile(spotId: string, visitorKey: string): Promise<{ 
 // Seuil du badge « Confiance communauté » (modèle Waze)
 export const SEUIL_CONFIANCE = 5
 
+// Libellés des infos halal structurées (affichage fiche spot + feed)
+export const INFOS_LABELS: Record<string, { fr: string; en: string; icon: string }> = {
+  halal_signale: { fr: 'Signalé halal', en: 'Reported halal', icon: '🍽' },
+  sans_alcool: { fr: 'Sans alcool', en: 'No alcohol', icon: '🚫' },
+  coin_priere_sur_place: { fr: 'Coin prière sur place', en: 'Prayer corner on site', icon: '🕌' },
+  menu_enfant: { fr: 'Menu enfant', en: 'Kids menu', icon: '👶' },
+  piscine_femmes: { fr: 'Piscine femmes', en: 'Women-only pool', icon: '🏊' },
+  plage_privee: { fr: 'Plage privée', en: 'Private beach', icon: '🏖️' },
+  qibla_en_chambre: { fr: 'Qibla en chambre', en: 'Qibla in room', icon: '🧭' },
+  ablutions_dispo: { fr: 'Ablutions disponibles', en: 'Wudu available', icon: '💧' },
+  hommes_femmes_separes: { fr: 'Hommes/femmes séparés', en: 'Separate men/women', icon: '🚻' },
+  tapis_propres: { fr: 'Tapis propres', en: 'Clean mats', icon: '🧎' },
+}
+
 // ── Création d'un spot communautaire (BLOC 2) ──
 // ── Publication SANS COMPTE (zéro friction, façon Waze) ──
 // Le spot part tout de suite, signé « Un voyageur ». Une claimKey (48 h)

@@ -34,9 +34,9 @@ jobs:
           for m in "Discover the gems" "nothing invented"; do
             echo "$SE" | grep -q "$m" && echo "OK  · $m" || echo "KO  · $m"
           done
-          echo "── API feed ──"
-          curl -s -o /dev/null -w "/api/community/spots → %{http_code}\n" "$FR/api/community/spots?limit=3"
-          curl -s "$FR/api/community/spots?limit=3" | head -c 220; echo
+          echo "── API feed : les spots réels en prod ──"
+          curl -s -o /dev/null -w "/api/community/spots → %{http_code}\n" "$FR/api/community/spots?limit=20"
+          curl -s "$FR/api/community/spots?limit=20" | python3 -c "import json,sys;d=json.load(sys.stdin);print(len(d['spots']),'spots');[print(' ·',s['nom'],'—',s['villeNom'],'—',s.get('categorie','?'),'— photos:',len(s.get('photos') or []),'— conf:',s.get('confirmations',0)) for s in d['spots']]"
           echo "── Service worker v3 + manifest ──"
           curl -s "$FR/sw.js" | grep -o "vh-v[0-9]*" | head -1
           curl -s "$FR/manifest.webmanifest" | grep -o '"short_name":"[^"]*"' | head -6

@@ -3,7 +3,8 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { getDomainSEO } from '@/lib/domain'
 import { getRedis } from '@/lib/pushStore'
-import { getSpotById, addImpact, CATEGORIES } from '@/lib/community'
+import { getSpotById, addImpact, CATEGORIES, INFOS_LABELS, SEUIL_CONFIANCE } from '@/lib/community'
+import ShareSpot from '@/components/community/ShareSpot'
 import { LIEU_LABELS } from '@/lib/prayerSpots'
 import ConfirmBar from '@/components/community/ConfirmBar'
 import ItineraireButton from '@/components/community/ItineraireButton'
@@ -32,6 +33,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? `${cat.en} shared by a Muslim traveler in ${spot.villeNom}. Location, tips and community confirmations — to verify on site.`
       : `${cat.fr} partagé par un voyageur musulman à ${spot.villeNom}. Emplacement, conseils et confirmations de la communauté — à vérifier sur place.`),
     alternates: { canonical: `${siteUrl}/spot/${spot.id}` },
+    // Aperçu riche au partage (WhatsApp…) : photo utilisateur http sinon rien
+    openGraph: {
+      title,
+      description: spot.description?.slice(0, 150) || undefined,
+      url: `${siteUrl}/spot/${spot.id}`,
+      images: (spot.photos ?? []).find((p) => p.startsWith('http')) ? [{ url: (spot.photos ?? []).find((p) => p.startsWith('http'))! }] : undefined,
+    },
   }
 }
 
@@ -100,15 +108,74 @@ export default async function SpotPage({ params }: Props) {
             : 'VoyagesHalal'}
         </p>
 
-        {spot.photo && (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img src={spot.photo} alt={spot.nom} loading="lazy" style={{ width: '100%', borderRadius: 18, marginBottom: 14, maxHeight: 280, objectFit: 'cover' }} />
+        {/* Reel de la communauté (légende à l'écran, lecture native) */}
+        {spot.video && (
+          <div style={{ position: 'relative', borderRadius: 18, overflow: 'hidden', marginBottom: 14, background: '#000' }}>
+            <video src={spot.video} controls playsInline preload="metadata" style={{ width: '100%', maxHeight: 420, display: 'block' }} />
+            {spot.videoTexte && (
+              <p style={{ position: 'absolute', bottom: 52, left: 12, right: 12, margin: 0, color: '#fff', fontWeight: 800, fontSize: 17, textShadow: '0 2px 8px rgba(0,0,0,0.8)', textAlign: 'center', pointerEvents: 'none' }}>{spot.videoTexte}</p>
+            )}
+          </div>
+        )}
+        {/* Galerie photos de la communauté */}
+        {(() => {
+          const gallery = [...(spot.photos ?? []), ...(spot.photo ? [spot.photo] : [])].filter((p, i, a) => a.indexOf(p) === i)
+          if (gallery.length === 0) return null
+          return (
+            <div style={{ marginBottom: 14 }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={gallery[0]} alt={spot.nom} loading="lazy" style={{ width: '100%', borderRadius: 18, maxHeight: 300, objectFit: 'cover' }} />
+              {gallery.length > 1 && (
+                <div style={{ display: 'flex', gap: 8, marginTop: 8, overflowX: 'auto' }}>
+                  {gallery.slice(1, 8).map((p, i) => (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img key={i} src={p} alt="" loading="lazy" style={{ width: 92, height: 92, borderRadius: 12, objectFit: 'cover', flexShrink: 0 }} />
+                  ))}
+                </div>
+              )}
+            </div>
+          )
+        })()}
+
+        {/* Infos halal structurées, signalées par la communauté */}
+        {spot.infos && Object.entries(spot.infos).some(([, v]) => v) && (
+          <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', margin: '0 0 12px' }}>
+            {Object.entries(spot.infos).filter(([, v]) => v).map(([k]) => INFOS_LABELS[k] && (
+              <span key={k} style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: '#fff', border: '1px solid rgba(27,67,50,0.18)', color: '#1b4332', borderRadius: 999, padding: '7px 12px', fontWeight: 700, fontSize: 13 }}>
+                {INFOS_LABELS[k].icon} {en ? INFOS_LABELS[k].en : INFOS_LABELS[k].fr}
+              </span>
+            ))}
+            <span style={{ alignSelf: 'center', color: '#9ca3af', fontSize: 12 }}>{en ? 'reported by the community · to verify' : 'signalé par la communauté · à vérifier'}</span>
+          </div>
         )}
 
         {spot.description && (
           <p style={{ fontSize: 16, color: '#374151', lineHeight: 1.7, background: '#fff', borderRadius: 16, padding: 16, border: '1px solid rgba(27,67,50,0.1)', margin: '0 0 6px' }}>
             💬 {spot.description}
           </p>
+        )}
+
+        {/* Astuces des voyageurs (enrichissement collectif) */}
+        {spot.astuces && spot.astuces.length > 0 && (
+          <div style={{ margin: '8px 0 6px' }}>
+            <p style={{ fontSize: 13, fontWeight: 800, color: '#6b7280', letterSpacing: 1, textTransform: 'uppercase', margin: '0 0 8px' }}>
+              💡 {en ? 'Traveler tips' : 'Astuces des voyageurs'}
+            </p>
+            <div style={{ display: 'grid', gap: 8 }}>
+              {spot.astuces.slice(-5).reverse().map((a, i) => (
+                <p key={i} style={{ margin: 0, background: '#fff', border: '1px solid rgba(27,67,50,0.1)', borderRadius: 14, padding: '12px 14px', fontSize: 14.5, color: '#374151', lineHeight: 1.6 }}>
+                  « {a.texte} » <span style={{ color: '#9ca3af', fontSize: 13 }}>— {a.pseudo}</span>
+                </p>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Badge confiance (≥ 5 confirmations) */}
+        {(spot.confirmations ?? 0) >= SEUIL_CONFIANCE && (
+          <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: 'rgba(201,168,76,0.15)', border: '1px solid rgba(201,168,76,0.5)', color: '#8A6D1E', borderRadius: 999, padding: '8px 14px', fontWeight: 800, fontSize: 13.5, margin: '4px 0' }}>
+            🛡️ {en ? 'Community trust' : 'Confiance communauté'}
+          </span>
         )}
 
         {/* 💫 Usage réel du spot — motivation : ce spot SERT */}
@@ -127,6 +194,8 @@ export default async function SpotPage({ params }: Props) {
         <ConfirmBar spotId={spot.id} confirmations={spot.confirmations ?? 0} />
 
         <ItineraireButton spotId={spot.id} lat={spot.lat} lng={spot.lng} en={en} />
+        {/* Partage 1 tap — le bouche-à-oreille WhatsApp est notre moteur */}
+        <ShareSpot nom={spot.nom} ville={spot.villeNom} url={`${siteUrl}/spot/${spot.id}`} en={en} />
 
         <p style={{ fontSize: 12.5, color: '#9ca3af', lineHeight: 1.6 }}>
           {en
