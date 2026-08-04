@@ -47,8 +47,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!ville) return { title: isEN ? 'Halal hotels' : 'Hôtels halal' }
   const n = (ville.hotels?.length ?? 0)
   const title = isEN
-    ? `Halal Hotels in ${ville.nom} 2026 — Alcohol-free, near mosques | ${brand}`
-    : `Hôtels halal à ${ville.nom} 2026 — sans alcool, proches mosquées | ${brand}`
+    ? `Muslim-friendly & Halal Hotels in ${ville.nom} 2026 — Alcohol-free, near mosques | ${brand}`
+    : `Hôtel musulman à ${ville.nom} — hôtels halal 2026 (sans alcool, proches mosquées) | ${brand}`
   const description = isEN
     ? `${n}+ halal-friendly hotels in ${ville.nom}: alcohol-free options, near mosques, family-friendly. Compare and book for your Muslim trip.`
     : `${n}+ hôtels halal-friendly à ${ville.nom} : options sans alcool, proches des mosquées, adaptés aux familles. Comparez et réservez pour votre voyage musulman.`

@@ -1705,8 +1705,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "ou-prier-disneyland-paris",
-    title: "Où prier à Disneyland Paris — guide 2026",
-    description: "Le parc met à disposition un espace calme et discret, accessible sur simple demande au City Hall. Voici comment y accéder, étape par étape.",
+    title: "Salle de prière à Disneyland Paris : où prier ? — guide 2026",
+    description: "Oui, il existe une salle de prière à Disneyland Paris : un espace calme et discret, accessible sur simple demande au City Hall. Voici comment y accéder, étape par étape.",
     coverImage: "/guides/blog-disneyland.jpg",
     category: 'Pratique',
     readTime: "3 min",
