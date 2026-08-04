@@ -14,10 +14,17 @@ const SUGGESTIONS = [
   '✈️ Halal meal on a plane?',
 ]
 
+interface Suggestion {
+  slug: string
+  question: string
+  verdict: string
+}
+
 export default function AskHalalGPT() {
   const [messages, setMessages] = useState<Message[]>([])
   const [input, setInput] = useState('')
   const [loading, setLoading] = useState(false)
+  const [suggestions, setSuggestions] = useState<Suggestion[]>([])
   const endRef = useRef<HTMLDivElement>(null)
 
   const hasConversation = messages.length > 0
@@ -28,6 +35,32 @@ export default function AskHalalGPT() {
     }
   }, [messages, loading, hasConversation])
 
+  // Instant answers while typing — zero AI calls.
+  useEffect(() => {
+    if (hasConversation) return
+    const q = input.trim()
+    if (q.length < 2) {
+      setSuggestions([])
+      return
+    }
+    const controller = new AbortController()
+    const timer = setTimeout(async () => {
+      try {
+        const res = await fetch(`/api/halalgpt-suggest?q=${encodeURIComponent(q)}`, {
+          signal: controller.signal,
+        })
+        const data = (await res.json()) as { suggestions?: Suggestion[] }
+        setSuggestions(data.suggestions ?? [])
+      } catch {
+        /* superseded keystroke — stay silent */
+      }
+    }, 150)
+    return () => {
+      controller.abort()
+      clearTimeout(timer)
+    }
+  }, [input, hasConversation])
+
   const send = async (rawText: string) => {
     const text = rawText.replace(/^[^\p{L}\p{N}]+\s*/u, '').trim() || rawText.trim()
     if (!text || loading) return
@@ -35,6 +68,7 @@ export default function AskHalalGPT() {
     const next: Message[] = [...messages, { role: 'user', content: text }]
     setMessages(next)
     setInput('')
+    setSuggestions([])
     setLoading(true)
 
     try {
@@ -96,21 +130,40 @@ export default function AskHalalGPT() {
         style={{ borderColor: 'rgba(201,168,76,0.35)', backgroundColor: 'rgba(27,67,50,0.35)' }}
       >
         {composer}
-        <div className="flex flex-wrap gap-2.5 px-4 pb-4">
-          {SUGGESTIONS.map((s) => (
-            <button
-              key={s}
-              type="button"
-              onClick={() => send(s)}
-              className="min-h-[56px] px-4 py-3 rounded-full border text-base font-semibold text-white transition-colors"
-              style={{ backgroundColor: '#1b4332', borderColor: '#c9a84c' }}
-              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#c9a84c')}
-              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#1b4332')}
-            >
-              {s}
-            </button>
-          ))}
-        </div>
+        {suggestions.length > 0 ? (
+          <div className="flex flex-col gap-2 px-4 pb-4" role="listbox" aria-label="Instant answers">
+            {suggestions.map((s) => (
+              <button
+                key={s.slug}
+                type="button"
+                onClick={() => send(s.question)}
+                className="flex flex-col items-start gap-0.5 min-h-[56px] px-4 py-3 rounded-xl border text-left transition-colors hover:border-[#c9a84c]"
+                style={{ backgroundColor: '#0b1a0f', borderColor: 'rgba(201,168,76,0.35)' }}
+              >
+                <span className="text-[13px] font-bold" style={{ color: '#c9a84c' }}>
+                  {s.verdict}
+                </span>
+                <span className="text-base font-semibold text-white">{s.question}</span>
+              </button>
+            ))}
+          </div>
+        ) : (
+          <div className="flex flex-wrap gap-2.5 px-4 pb-4">
+            {SUGGESTIONS.map((s) => (
+              <button
+                key={s}
+                type="button"
+                onClick={() => send(s)}
+                className="min-h-[56px] px-4 py-3 rounded-full border text-base font-semibold text-white transition-colors"
+                style={{ backgroundColor: '#1b4332', borderColor: '#c9a84c' }}
+                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#c9a84c')}
+                onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#1b4332')}
+              >
+                {s}
+              </button>
+            ))}
+          </div>
+        )}
       </div>
     )
   }
