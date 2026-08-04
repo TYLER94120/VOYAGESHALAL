@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next'
 import { guides, blogPosts } from '@/lib/data'
 import { getDomainSEO, FR_URL, EN_URL } from '@/lib/domain'
+import { HALAL_QA_EN } from '@/lib/halalgpt-en'
 import { localizedHref } from '@/lib/slugs'
 import cityCoords from '@/lib/cityCoords.json'
 import { countries } from '@/lib/countriesData'
@@ -120,5 +121,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     spotPages = [...indexPages, ...detailPages, ...genericPages, ...guideVivantPages]
   } catch { /* Redis indisponible → pas de pages spots dans le sitemap */ }
 
-  return [...staticPages, ...villePages, ...paysPages, ...hotelPages, ...guidePages, ...blogPages, ...spotPages]
+  // Ask HalalGPT + questions halal (domaine EN uniquement — le public FR a halalgpt.fr)
+  const halalgptPages: MetadataRoute.Sitemap = isEN
+    ? [
+        { url: `${SITE_URL}/halalgpt`, lastModified: now, changeFrequency: 'weekly', priority: 0.9 },
+        { url: `${SITE_URL}/halal-questions`, lastModified: now, changeFrequency: 'weekly', priority: 0.8 },
+        ...HALAL_QA_EN.map((q) => ({
+          url: `${SITE_URL}/halal-questions/${q.slug}`,
+          lastModified: now,
+          changeFrequency: 'weekly' as const,
+          priority: 0.7,
+        })),
+      ]
+    : []
+
+  return [...staticPages, ...villePages, ...paysPages, ...hotelPages, ...guidePages, ...blogPages, ...spotPages, ...halalgptPages]
 }
