@@ -7,9 +7,6 @@ interface Message {
   content: string
 }
 
-const WELCOME =
-  "Salam! 🌙 I'm HalalGPT. Ask me anything halal: food additives, products, restaurants, travel, Ramadan…"
-
 const SUGGESTIONS = [
   '🔍 Is E120 halal?',
   '🍬 Are Haribo halal?',
@@ -18,14 +15,18 @@ const SUGGESTIONS = [
 ]
 
 export default function AskHalalGPT() {
-  const [messages, setMessages] = useState<Message[]>([{ role: 'assistant', content: WELCOME }])
+  const [messages, setMessages] = useState<Message[]>([])
   const [input, setInput] = useState('')
   const [loading, setLoading] = useState(false)
   const endRef = useRef<HTMLDivElement>(null)
 
+  const hasConversation = messages.length > 0
+
   useEffect(() => {
-    endRef.current?.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
-  }, [messages, loading])
+    if (hasConversation) {
+      endRef.current?.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
+    }
+  }, [messages, loading, hasConversation])
 
   const send = async (rawText: string) => {
     const text = rawText.replace(/^[^\p{L}\p{N}]+\s*/u, '').trim() || rawText.trim()
@@ -57,18 +58,75 @@ export default function AskHalalGPT() {
     }
   }
 
-  const showSuggestions = messages.length <= 1 && !loading
+  const composer = (
+    <form
+      className={`flex gap-2.5 items-end p-4 ${hasConversation ? 'border-t' : ''}`}
+      style={hasConversation ? { borderColor: 'rgba(201,168,76,0.35)' } : undefined}
+      onSubmit={(e) => {
+        e.preventDefault()
+        send(input)
+      }}
+    >
+      <input
+        className="flex-1 min-h-[56px] rounded-xl border px-4 text-base text-white outline-none focus:ring-2"
+        style={{ backgroundColor: '#0b1a0f', borderColor: 'rgba(201,168,76,0.35)' }}
+        value={input}
+        onChange={(e) => setInput(e.target.value)}
+        placeholder="Ask your halal question…"
+        aria-label="Your question"
+        autoFocus={!hasConversation}
+      />
+      <button
+        type="submit"
+        disabled={!input.trim() || loading}
+        aria-label="Send"
+        className="w-14 h-14 rounded-full text-xl flex items-center justify-center disabled:opacity-40"
+        style={{ backgroundColor: '#c9a84c', color: '#0b1a0f' }}
+      >
+        ➤
+      </button>
+    </form>
+  )
 
+  // Landing mode: the input is the first visible element — zero friction.
+  if (!hasConversation) {
+    return (
+      <div
+        className="rounded-2xl border overflow-hidden"
+        style={{ borderColor: 'rgba(201,168,76,0.35)', backgroundColor: 'rgba(27,67,50,0.35)' }}
+      >
+        {composer}
+        <div className="flex flex-wrap gap-2.5 px-4 pb-4">
+          {SUGGESTIONS.map((s) => (
+            <button
+              key={s}
+              type="button"
+              onClick={() => send(s)}
+              className="min-h-[56px] px-4 py-3 rounded-full border text-base font-semibold text-white transition-colors"
+              style={{ backgroundColor: '#1b4332', borderColor: '#c9a84c' }}
+              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#c9a84c')}
+              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#1b4332')}
+            >
+              {s}
+            </button>
+          ))}
+        </div>
+      </div>
+    )
+  }
+
+  // Conversation mode
   return (
-    <div className="rounded-2xl border overflow-hidden" style={{ borderColor: 'rgba(201,168,76,0.35)', backgroundColor: 'rgba(27,67,50,0.35)' }}>
+    <div
+      className="rounded-2xl border overflow-hidden"
+      style={{ borderColor: 'rgba(201,168,76,0.35)', backgroundColor: 'rgba(27,67,50,0.35)' }}
+    >
       <div className="p-5 flex flex-col gap-3 min-h-[220px] max-h-[440px] overflow-y-auto">
         {messages.map((m, i) => (
           <div
             key={i}
             className={`max-w-[85%] rounded-2xl px-4 py-3 text-base whitespace-pre-wrap break-words ${
-              m.role === 'user'
-                ? 'self-end rounded-br-md font-semibold'
-                : 'self-start rounded-bl-md text-white'
+              m.role === 'user' ? 'self-end rounded-br-md font-semibold' : 'self-start rounded-bl-md text-white'
             }`}
             style={
               m.role === 'user'
@@ -96,51 +154,7 @@ export default function AskHalalGPT() {
         )}
         <div ref={endRef} />
       </div>
-
-      {showSuggestions && (
-        <div className="flex flex-wrap gap-2.5 px-5 pb-4">
-          {SUGGESTIONS.map((s) => (
-            <button
-              key={s}
-              type="button"
-              onClick={() => send(s)}
-              className="min-h-[56px] px-4 py-3 rounded-full border text-base font-semibold text-white transition-colors hover:text-[#0b1a0f]"
-              style={{ backgroundColor: '#1b4332', borderColor: '#c9a84c' }}
-              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#c9a84c')}
-              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#1b4332')}
-            >
-              {s}
-            </button>
-          ))}
-        </div>
-      )}
-
-      <form
-        className="flex gap-2.5 items-end p-4 border-t"
-        style={{ borderColor: 'rgba(201,168,76,0.35)' }}
-        onSubmit={(e) => {
-          e.preventDefault()
-          send(input)
-        }}
-      >
-        <input
-          className="flex-1 min-h-[56px] rounded-xl border px-4 text-base text-white outline-none focus:ring-2"
-          style={{ backgroundColor: '#0b1a0f', borderColor: 'rgba(201,168,76,0.35)' }}
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          placeholder="Ask your halal question…"
-          aria-label="Your question"
-        />
-        <button
-          type="submit"
-          disabled={!input.trim() || loading}
-          aria-label="Send"
-          className="w-14 h-14 rounded-full text-xl flex items-center justify-center disabled:opacity-40"
-          style={{ backgroundColor: '#c9a84c', color: '#0b1a0f' }}
-        >
-          ➤
-        </button>
-      </form>
+      {composer}
     </div>
   )
 }

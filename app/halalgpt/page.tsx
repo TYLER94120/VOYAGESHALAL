@@ -34,12 +34,11 @@ export default async function AskHalalGPTPage() {
   return (
     <main className="min-h-screen" style={{ backgroundColor: '#0b1a0f' }}>
       <div className="max-w-3xl mx-auto px-4 pb-20">
-        <section className="text-center pt-12 pb-6">
-          <h1 className="font-serif text-4xl sm:text-5xl font-black text-white leading-tight">
-            A halal <span style={{ color: '#c9a84c' }}>question</span>?<br />
-            A clear answer, instantly.
+        <section className="text-center pt-5 pb-4">
+          <h1 className="font-serif text-2xl sm:text-4xl font-black text-white leading-tight">
+            A halal <span style={{ color: '#c9a84c' }}>question</span>? A clear answer, instantly.
           </h1>
-          <p className="mt-4 text-lg text-white/70">
+          <p className="mt-2 text-base text-white/70">
             Additives, products, restaurants, travel, Ramadan — HalalGPT answers in seconds.
           </p>
         </section>
