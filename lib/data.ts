@@ -1447,6 +1447,41 @@ export const guides: Guide[] = [...guidesFr, ...guidesEn]
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "week-end-musulman",
+    title: "Week-end musulman : 10 destinations halal depuis la France (2026)",
+    tags: ['week-end', 'destinations', 'halal', 'france'],
+    description: "Envie d'un week-end musulman sans casse-tête ? 10 destinations à 1-4 h de vol de la France où manger halal et prier facilement — avec nos guides ville pour chacune.",
+    coverImage: "/guides/marrakech-j1.jpg",
+    category: 'Destinations',
+    readTime: "6 min",
+    publishedAt: '2026-07-20',
+    content: `
+<p>Deux ou trois jours devant toi, l'envie de souffler, et une seule exigence : pouvoir <strong>manger halal et prier sans organisation militaire</strong>. Voici 10 destinations testées et documentées dans nos guides, classées par simplicité — toutes à moins de 4 h de vol de la France.</p>
+
+<h2>Le trio zéro effort (pays musulmans, 3 h de vol environ)</h2>
+<p><strong>1. <a href="/destinations/marrakech">Marrakech</a></strong> — le week-end musulman par excellence : tout est halal par défaut, la médina se visite à pied, et l'appel à la prière rythme la journée. Vols directs depuis la plupart des villes françaises. Voir aussi notre <a href="/guide-vivant/marrakech">guide vivant écrit par la communauté</a>.</p>
+<p><strong>2. <a href="/destinations/fes">Fès</a></strong> — plus spirituelle, moins touristique : la médina millénaire, la mosquée al-Qarawiyyin, les tanneries. Idéal pour un week-end qui ressource.</p>
+<p><strong>3. <a href="/destinations/istanbul">Istanbul</a></strong> — deux continents en un week-end : Sultanahmet, la Süleymaniye, le Bosphore. Gastronomie 100 % halal à chaque coin de rue. Environ 3 h 30 de vol.</p>
+
+<h2>Les alternatives qui surprennent</h2>
+<p><strong>4. <a href="/destinations/tanger">Tanger</a></strong> — la porte de l'Afrique à moins de 3 h : médina en bord de mer, cap Spartel, thé à la menthe face au détroit.</p>
+<p><strong>5. <a href="/destinations/tunis">Tunis</a></strong> — Sidi Bou Saïd, la médina classée UNESCO, Carthage — et des prix doux. Environ 2 h 30 de vol.</p>
+<p><strong>6. <a href="/destinations/sarajevo">Sarajevo</a></strong> — l'Europe musulmane : mosquées ottomanes, bosanska kafa, montagnes autour. Un des secrets les mieux gardés du continent (vols selon la saison, souvent avec escale).</p>
+<p><strong>7. <a href="/destinations/casablanca">Casablanca</a></strong> — la mosquée Hassan II au bord de l'océan vaut le voyage à elle seule ; combine avec la corniche d'Aïn Diab.</p>
+<p><strong>8. <a href="/destinations/agadir">Agadir</a></strong> — pour un week-end plage en famille : certains hôtels y proposent des espaces femmes vérifiés — voir notre page <a href="/hotels">hôtels halal</a>.</p>
+
+<h2>Sans prendre l'avion long</h2>
+<p><strong>9. <a href="/destinations/londres">Londres</a></strong> — 2 h 15 d'Eurostar : une offre halal parmi les plus riches d'Europe (Whitechapel, Edgware Road), la East London Mosque, zéro contrainte de vol.</p>
+<p><strong>10. <a href="/destinations/bruxelles">Bruxelles</a></strong> — 1 h 25 de train : gaufres, Grand-Place et une vraie densité de restos halal. Le week-end musulman le plus simple de la liste. Et si tu passes par l'aéroport : <a href="/blog/ou-prier-aeroport-bruxelles">où prier à Bruxelles-Zaventem</a>.</p>
+
+<h2>Les 3 réflexes avant de partir</h2>
+<p>1) Vérifie les horaires de prière de ta destination avec notre outil <a href="/horaires-priere">horaires de prière</a>. 2) Repère un <a href="/spots">spot confirmé par la communauté</a> près de ton hôtel. 3) En déplacement, tu peux <a href="/blog/prier-en-avion">raccourcir et regrouper tes prières</a> — les facilités du voyageur existent pour ça.</p>
+
+<h2>Aide le prochain voyageur</h2>
+<p>Tu pars ce week-end ? Si tu découvres un coin prière, un resto halal ou une pépite, <a href="/communaute/ajouter">partage-la en 15 secondes</a> — une sadaqa jâriya qui servira à tous ceux qui partiront après toi.</p>
+`,
+  },
+  {
     slug: "ou-prier-aeroport-lyon",
     title: "Où prier à l'aéroport de Lyon-Saint-Exupéry — guide 2026",
     description: "Lyon-Saint-Exupéry dispose d'un centre spirituel multiconfessionnel avec une salle de prière musulmane. Voici où le trouver.",
