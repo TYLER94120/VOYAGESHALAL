@@ -1447,6 +1447,142 @@ export const guides: Guide[] = [...guidesFr, ...guidesEn]
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "where-to-pray-disneyland-paris",
+    title: "Prayer room at Disneyland Paris: where to pray? (2026 guide)",
+    description: "Yes, you can pray at Disneyland Paris: a quiet, discreet space is available on request at City Hall. Here is how to access it, step by step.",
+    coverImage: "/guides/blog-disneyland.jpg",
+    category: 'Practical',
+    readTime: "3 min",
+    publishedAt: '2026-08-01',
+    lang: 'en',
+    tags: ['prayer', 'disneyland', 'paris', 'muslim travel'],
+    content: `
+<p>Spending a day at Disneyland Paris and wondering where to pray? The park provides a quiet, discreet space, available on simple request. Here is how to access it.</p>
+<h2>The essentials in 30 seconds</h2>
+<p>A discreet, quiet room is made available at City Hall, at the entrance of Disneyland Park. Simply ask a Cast Member to access it.</p>
+<h2>How to access it, step by step</h2>
+<p>City Hall is directly on your left after the entrance gates of Disneyland Park (Main Street). Walk in, go to the welcome desk, and ask for an appropriate place to pray. The staff will guide you. It is free, and the team is used to this request.</p>
+<h2>Practical tips</h2>
+<p>Plan around prayer times (<a href="/prayer-times">our prayer times tool</a> helps), especially dhuhr and asr. Do your wudu in the restrooms beforehand. Use the traveler's facilities (shortening and combining prayers). Depending on crowds, staff may direct you to another quiet spot. See also <a href="/blog/where-to-pray-paris-airports">our Paris airports guide</a>.</p>
+<h2>Frequently asked questions</h2>
+<p><strong>Is there a prayer room at Disneyland Paris?</strong> A quiet space via City Hall, on request to a Cast Member.<br/><strong>Is it free?</strong> Yes.<br/><strong>What about Walt Disney Studios?</strong> Ask at Studio Services.</p>
+<h2>Help the community</h2>
+<p>Prayed at Disneyland recently, or were shown a specific spot? Share it — you will help dozens of families, an ongoing sadaqa. <a href="/communaute">→ Join the community</a></p>
+`,
+  },
+  {
+    slug: "where-to-pray-paris-airports",
+    title: "Where to pray at Paris airports (CDG & Orly) — 2026 guide",
+    description: "Flying should never force you to miss a prayer. Most major airports have a prayer room or multi-faith space — here is how to find them, plus our airport-by-airport guides.",
+    coverImage: "/guides/blog-aeroports.jpg",
+    category: 'Practical',
+    readTime: "5 min",
+    publishedAt: '2026-08-01',
+    lang: 'en',
+    tags: ['prayer', 'airport', 'paris', 'muslim travel'],
+    content: `
+<p>Flying should never force you to skip a prayer. Most major airports now have a prayer room or a multi-faith quiet space — you just need to know where to find it. This guide explains how to pray peacefully at the airport, with links to our detailed airport-by-airport pages.</p>
+<h2>The essentials in 30 seconds</h2>
+<p>Most airports offer one of three options: a multi-faith space (often with a Muslim corner and wudu facilities), a dedicated Muslim prayer room, or — when nothing is provided — a quiet corner where you can pray discreetly. Simple reflex: look for the "place of worship / prayer" pictogram on terminal maps, or ask any staff member for the "multi-faith room".</p>
+<h2>Before or after security</h2>
+<p>Some spaces are landside (before security), others airside (after). If your flight is within the hour, choose a space after security, in your departure zone. Our airport pages always tell you which side each room is on.</p>
+<h2>Wudu: the real challenge</h2>
+<p>Finding water is often harder than finding a mat. Three solutions: recent spaces include a wudu corner; otherwise restrooms work with discretion; and carrying a small wudu kit makes everything easier. Tayammum (dry ablution) remains a recognised option when water is genuinely unavailable.</p>
+<h2>Praying on time while traveling</h2>
+<p>The traveler (musafir) may shorten 4-rakat prayers to 2, and combine dhuhr with asr, maghrib with isha. Check the qibla (<a href="/qibla">our qibla tool</a> helps); many spaces already indicate it.</p>
+<h2>Our airport guides</h2>
+<p><a href="/blog/where-to-pray-cdg-airport">Where to pray at Paris-Charles de Gaulle (CDG)</a> · <a href="/blog/where-to-pray-orly-airport">Where to pray at Paris-Orly</a> · In transit: <a href="/blog/praying-on-a-plane">how to pray on a plane</a>.</p>
+<h2>Help the community</h2>
+<p>Found a prayer room that moved, a good quiet corner, an update? Share it — every spot helps dozens of brothers and sisters pray while traveling, an ongoing sadaqa. <a href="/communaute">→ Join the community</a></p>
+`,
+  },
+  {
+    slug: "where-to-pray-cdg-airport",
+    title: "Where to pray at Paris-Charles de Gaulle (CDG) — 2026 guide",
+    description: "Transiting through Roissy? Paris-CDG has several prayer spaces across Terminals 1, 2E and 2F, with a Muslim area and wudu facilities. Here is where to find them.",
+    coverImage: "/guides/blog-cdg.jpg",
+    category: 'Practical',
+    readTime: "4 min",
+    publishedAt: '2026-08-01',
+    lang: 'en',
+    tags: ['prayer', 'airport', 'cdg', 'paris'],
+    content: `
+<p>Transiting through Roissy and looking for where to pray at CDG airport? Paris-Charles de Gaulle has several prayer spaces spread across Terminals 1, 2E and 2F, with a Muslim area and wudu facilities. Here is where to find them.</p>
+<h2>The essentials in 30 seconds</h2>
+<p>CDG has three multi-faith zones: a modern space in Terminal 1, plus spaces in Terminals 2E and 2F. Each includes a Muslim area, a chapel and a synagogue. Access is free.</p>
+<h2>Terminal 1 — the newest prayer space</h2>
+<p>Opened in 2023, the most recent one. Level 2, in the international departure zone (after security), near McDonald's and Paul. It brings together a mosque space, a synagogue and a chapel. Big plus: a wudu area with restrooms nearby.</p>
+<h2>Terminal 2E — in the transit zone</h2>
+<p>A prayer space is accessible in the transit zone, generally on the L-gates side, level 2. Convenient for long-haul flights from this terminal.</p>
+<h2>Terminal 2F — at arrivals level</h2>
+<p>A quiet room at arrivals level. Useful for praying before collecting your bags.</p>
+<h2>Practical tips</h2>
+<p>Check which side of security you are on. If you are short on time, a quiet corner near your gate is enough (traveler's prayer, shortened and combined). Keep a small wudu kit; use <a href="/qibla">our qibla tool</a>. See also <a href="/blog/where-to-pray-paris-airports">our complete airports guide</a>.</p>
+<h2>Frequently asked questions</h2>
+<p><strong>Is there a Muslim prayer room at CDG?</strong> Yes, several spaces (Terminals 1, 2E, 2F).<br/><strong>Can you do wudu?</strong> Yes, wudu corner in Terminal 1; otherwise the restrooms.<br/><strong>Is access free?</strong> Yes.</p>
+<h2>Help the community</h2>
+<p>Noticed a change at CDG, a precise landmark? Share it — an ongoing sadaqa. <a href="/communaute">→ Join the community</a></p>
+`,
+  },
+  {
+    slug: "where-to-pray-orly-airport",
+    title: "Where to pray at Paris-Orly airport — 2026 guide",
+    description: "Flying from Orly? The airport has prayer rooms and quiet spaces, including a Muslim prayer room with separate areas for men and women. Here is where to find them.",
+    coverImage: "/guides/blog-orly.jpg",
+    category: 'Practical',
+    readTime: "4 min",
+    publishedAt: '2026-08-01',
+    lang: 'en',
+    tags: ['prayer', 'airport', 'orly', 'paris'],
+    content: `
+<p>Flying from Orly? The airport has prayer rooms and multi-faith spaces, including a Muslim prayer room with separate men's and women's areas. Here is where to find them.</p>
+<h2>The essentials in 30 seconds</h2>
+<p>At Orly you can pray in a chapel, a synagogue or a Muslim prayer room, spread across Orly 1, 2 and 4. A multi-faith space is generally open from 7:00 to 22:00.</p>
+<h2>The Muslim prayer room (Orly 4 / former Orly Sud)</h2>
+<p>The main one: level -1 of the South terminal (Orly 4). It holds around fifty people, split into two areas (men / women).</p>
+<h2>The chapel (Orly 4)</h2>
+<p>On the second level of the Orly 4 hall (former Orly Sud), among the airport's historic places of worship.</p>
+<h2>Orly 1 and 2</h2>
+<p>Quiet spaces also exist on the Orly 1 and 2 side. Follow the "place of worship" signs or ask a staff member.</p>
+<h2>Practical tips</h2>
+<p>Check the opening hours (closes around 22:00): for a night flight, pray beforehand. Note whether the space is before or after security. In a rush, a quiet corner is enough (shortened and combined traveler's prayer). Use <a href="/qibla">our qibla tool</a>. See also <a href="/blog/where-to-pray-paris-airports">our complete airports guide</a>.</p>
+<h2>Frequently asked questions</h2>
+<p><strong>Is there a Muslim prayer room at Orly?</strong> Yes, level -1 of the South terminal (Orly 4).<br/><strong>Opening hours?</strong> Multi-faith space generally 7:00-22:00.<br/><strong>Free?</strong> Yes.</p>
+<h2>Help the community</h2>
+<p>Found a good prayer corner with the Orly works? Share it — every spot helps dozens of brothers and sisters pray while traveling, an ongoing sadaqa. <a href="/communaute">→ Join the community</a></p>
+`,
+  },
+  {
+    slug: "praying-on-a-plane",
+    title: "How to pray on a plane: the Muslim traveler's practical guide (2026)",
+    description: "Your flight overlaps with prayer time and you are not sure how to pray on a plane? Here is how to do it, calmly and discreetly.",
+    coverImage: "/guides/blog-avion.jpg",
+    category: 'Practical',
+    readTime: "5 min",
+    publishedAt: '2026-08-01',
+    lang: 'en',
+    tags: ['prayer', 'plane', 'muslim travel'],
+    content: `
+<p>Your flight falls over prayer time and you are not sure how to pray on a plane? Here is how to do it, calmly and discreetly.</p>
+<h2>The essentials in 30 seconds</h2>
+<p>If you can pray on the ground before or after the flight within the prayer's time window, that is best. Otherwise, pray in your seat, sitting, bowing your head slightly for ruku and a little more for sujud. As a traveler, you may shorten and combine your prayers.</p>
+<h2>1. The best option: pray on the ground</h2>
+<p>Pray at the airport before takeoff, or on arrival before the prayer time ends. Our "where to pray at the airport" guides show you the rooms. Combine dhuhr/asr or maghrib/isha for a long flight.</p>
+<h2>2. Doing wudu</h2>
+<p>Do your wudu at the airport before boarding. On board, the lavatory allows the minimum. If genuinely impossible, tayammum (dry ablution) is a recognised option.</p>
+<h2>3. Praying seated at your place</h2>
+<p>Pray sitting, facing the qibla at the start if possible (our <a href="/qibla">qibla tool</a> or the crew can help), then continue even if the plane changes course. Movements are slight head bows (a little for ruku, more for sujud).</p>
+<h2>4. Standing, if space allows</h2>
+<p>On some flights, a free area may allow praying standing if the crew permits and outside turbulence / seatbelt times. Stay discreet; flight safety comes first.</p>
+<h2>The traveler's facilities</h2>
+<p>Shortening 4-rakat prayers to 2 (dhuhr, asr, isha) and combining dhuhr/asr, maghrib/isha solves most situations.</p>
+<h2>Frequently asked questions</h2>
+<p><strong>Can I pray sitting on a plane?</strong> Yes, when necessary.<br/><strong>How do I find the qibla?</strong> Face it as best you can at the start; the prayer remains valid if the course changes.<br/><strong>No water?</strong> Tayammum is permitted when necessary.</p>
+<h2>Help the community</h2>
+<p>A tip, a good place to pray before a flight? Share it — an ongoing sadaqa. <a href="/communaute">→ Join the community</a></p>
+`,
+  },
+  {
     slug: "ou-prier-parc-asterix",
     title: "Salle de prière au Parc Astérix : où prier ? — guide 2026",
     tags: ["Parc Astérix", "Famille", "Prière", "Pratique"],

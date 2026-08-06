@@ -56,6 +56,11 @@ export const GUIDES_FR_TO_EN: Record<string, string> = {
 // Valeurs = chemin COMPLET de destination (permet blog → guide quand le vrai
 // jumeau EN est un guide). Jumelages par SUJET réel.
 export const BLOG_FR_TO_EN: Record<string, string> = {
+  'ou-prier-disneyland-paris': '/blog/where-to-pray-disneyland-paris',
+  'ou-prier-aeroports': '/blog/where-to-pray-paris-airports',
+  'ou-prier-aeroport-cdg': '/blog/where-to-pray-cdg-airport',
+  'ou-prier-aeroport-orly': '/blog/where-to-pray-orly-airport',
+  'prier-en-avion': '/blog/praying-on-a-plane',
   'voyage-halal-maroc-2026-guide-complet': '/blog/halal-travel-morocco-2026-complete-guide',
   'top-10-destinations-halal-2026': '/blog/top-10-halal-destinations-2026',
   'horaires-priere-voyage-guide-musulman': '/blog/prayer-times-while-traveling-muslim-guide',
