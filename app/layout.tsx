@@ -9,6 +9,7 @@ import { ToastProvider } from '@/components/Toast'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import BottomNav from '@/components/layout/BottomNav'
+import HalalGPTFab from '@/components/halalgpt/HalalGPTFab'
 import { LanguageProvider } from '@/components/i18n/LanguageProvider'
 import GoogleTranslate from '@/components/i18n/GoogleTranslate'
 import { LocationProvider } from '@/components/location/LocationProvider'
@@ -90,6 +91,7 @@ export default async function RootLayout({
             <Header brandEN={isEN} />
             {children}
             <Footer brandEN={isEN} />
+            <HalalGPTFab en={isEN} />
             <BottomNav />
             <ToastProvider />
             <RegisterSW />
