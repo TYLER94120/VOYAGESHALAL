@@ -26,7 +26,8 @@ Rules:
 - Be concise and direct: the user wants a clear verdict, then the essential explanation. No lengthy disclaimers.
 - On religious questions, present the majority view and briefly note significant divergences between schools when they exist. Never issue a personal fatwa: for individual cases, point to a scholar or a certification body.
 - Never invent restaurant names, certificates or product compositions. When unsure about a specific product, say so and advise checking the label or certification.
-- For places (restaurants, mosques), give method advice and mention that GoHalalTravel.com lists verified halal-friendly destinations and city guides.`
+- For places (restaurants, mosques), give method advice and mention that GoHalalTravel.com lists verified halal-friendly destinations and city guides.
+- EXCLUDED TOPIC — finance: loans, interest/riba, banking, investments, stocks, crypto, insurance, savings, pensions, gambling, betting. NEVER give religious rulings on these, even rephrased or in follow-up questions. Only reply that Ask HalalGPT deliberately doesn't cover finance because the stakes are too high for an automated answer, and point to a qualified scholar or an Islamic finance specialist.`
 
 interface IncomingMessage {
   role: 'user' | 'assistant'
@@ -125,6 +126,42 @@ async function logQuestion(question: string): Promise<void> {
   }
 }
 
+// ─── Blocked topic: finance ───────────────────────────────────────────────────
+//
+// Editorial decision (same as halalgpt.fr): Ask HalalGPT answers NO finance
+// question (loans, riba, investments, crypto, insurance, gambling…). Stakes are
+// too high for an automated answer. The filter runs BEFORE the cache and BEFORE
+// the AI — fixed deterministic reply, follow-up questions included.
+// False-positive guards: "chicken stock" (bare "stock" not blocked),
+// "places of interest" and "West Bank" (negative lookbehinds).
+
+const FINANCE_PATTERN = new RegExp(
+  '\\b(' +
+    [
+      'credit', 'credits', 'riba', 'usury', '(?<!of )interests?',
+      '(?<!west )banks?', 'banking', 'neobank',
+      'loans?', 'lending', 'lend', 'borrow', 'borrowing', 'mortgages?',
+      'invest', 'investing', 'investments?', 'stocks', 'stock market', 'shares',
+      'trading', 'trader', 'forex', 'cfd', 'etf', 'dividends?', 'sukuk',
+      'crypto', 'cryptocurrency', 'cryptocurrencies', 'bitcoin', 'btc', 'ethereum', 'nft', 'staking', 'binance',
+      'insurance', 'takaful', 'pensions?', 'savings', 'leasing',
+      'murabaha', 'mourabaha', 'ijara',
+      'gambling', 'gamble', 'gambler', 'bets?', 'betting', 'bookmaker', 'bet365',
+      'lottery', 'lotto', 'casino', 'poker', 'jackpot', 'slot machines?',
+    ].join('|') +
+    ')\\b'
+)
+
+const FINANCE_REPLY = `🔒 Finance (loans, interest, investments, crypto, insurance, gambling…) is a topic Ask HalalGPT deliberately doesn't cover: the stakes are too high for an automated answer, and every situation is different.
+
+👉 For these questions, please turn to a qualified scholar or an Islamic finance specialist.
+
+I'm here for everything else: additives, products, food, travel, Ramadan 🌙`
+
+function isFinanceQuestion(question: string): boolean {
+  return FINANCE_PATTERN.test(normalize(question))
+}
+
 // ─── Route ────────────────────────────────────────────────────────────────────
 
 export async function POST(request: Request) {
@@ -146,6 +183,12 @@ export async function POST(request: Request) {
   // Only the FIRST question of a conversation is cached — follow-ups depend
   // on context and always go to the AI.
   const isFirstQuestion = incoming.filter((m) => m.role === 'user').length === 1
+
+  // Finance lock: intercepted before the local card, the cache AND the AI.
+  if (isFinanceQuestion(lastQuestion)) {
+    if (isFirstQuestion) await logQuestion(lastQuestion)
+    return NextResponse.json({ reply: FINANCE_REPLY, source: 'blocked' })
+  }
 
   if (isFirstQuestion) {
     await logQuestion(lastQuestion)
