@@ -1447,6 +1447,40 @@ export const guides: Guide[] = [...guidesFr, ...guidesEn]
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "voyage-halal-france",
+    title: "Voyage halal en France : le guide 2026 des vacances halal-friendly",
+    tags: ['france', 'tourisme halal', 'vacances', 'week-end', 'halal'],
+    description: "Tourisme halal en France : où partir, où manger halal, où prier — villes faciles, côte, montagne, gîtes et idées de vacances halal sans prise de tête.",
+    coverImage: "/guides/blog-nice.jpg",
+    category: 'Destinations',
+    readTime: "7 min",
+    publishedAt: '2026-08-06',
+    content: `<p>Pas besoin de prendre l'avion pour des vacances sereines : la France est l'une des destinations halal les plus sous-cotées d'Europe. Des milliers de restaurants halal, des mosquées dans chaque grande ville, et des paysages pour tous les goûts. Voici comment organiser un <strong>voyage halal en France</strong> qui coche toutes les cases — manger, prier, souffler.</p>
+
+<h2>Pourquoi la France est une excellente destination halal</h2>
+<p>On rêve d'Istanbul ou de Dubaï (et on a <a href="/blog/week-end-musulman">nos 10 destinations préférées à moins de 4 h de vol</a>), mais on oublie l'essentiel : la France abrite l'une des plus grandes communautés musulmanes d'Europe. Concrètement, ça veut dire des boucheries et restaurants halal dans toutes les grandes villes, des mosquées accessibles, et zéro stress de langue, de change ou de visa. Pour des vacances en famille, un <strong>week-end halal</strong> improvisé ou un budget serré, c'est imbattable.</p>
+
+<h2>Les villes où tout est facile</h2>
+<p><strong>Paris</strong> — des centaines d'adresses halal du grec au gastronomique, la Grande Mosquée et son hammam, et pour les familles : Disneyland, où <a href="/blog/ou-prier-disneyland-paris">une salle de prière est accessible sur simple demande</a>.</p>
+<p><strong>Marseille</strong> — probablement la ville de France où manger halal est le plus simple : Noailles, le Vieux-Port, les calanques en bateau le matin et poisson grillé le soir.</p>
+<p><strong>Lyon, Lille, Strasbourg, Toulouse, Nice</strong> — chacune a ses quartiers halal bien fournis et ses spécialités : bouchons revisités, spécialités turques d'Alsace, socca niçoise (végétarienne par nature !). Retrouvez les repères quartier par quartier dans <a href="/destinations">nos guides villes</a>.</p>
+
+<h2>La côte, la montagne, la campagne</h2>
+<p><strong>Côte d'Azur</strong> — Nice et ses plages avec une vraie offre halal côté gare et centre. <strong>Normandie et Bretagne</strong> — falaises, marées et crêperies (galette complète sans lardons + poisson : combo halal-friendly), en prévoyant ses adresses viande à l'avance. <strong>Alpes et Pyrénées</strong> — la randonnée est l'activité halal par excellence : gourde, pique-nique du marché, et des panoramas qui valent tous les resorts.</p>
+
+<h2>Le secret des vacances halal réussies en France : le gîte</h2>
+<p>Hors des grandes villes, l'offre de restaurants halal se raréfie. La parade des familles qui voyagent halal depuis des années : <strong>louer un gîte ou un appartement avec cuisine</strong>. Vous faites le plein dans une boucherie halal en ville (ou au marché pour poisson et légumes), et vous cuisinez tranquille. Zéro stress, budget divisé, et les enfants mangent ce qu'ils aiment. Pour les hôtels, les bons réflexes : petit-déjeuner avec options sans porc, mini-bar vidable sur demande, et proximité d'une mosquée — <a href="/mosquee-proche">notre outil mosquée la plus proche</a> fait le tri.</p>
+
+<h2>Prier partout en France</h2>
+<p>Entre les mosquées des villes, <a href="/blog/ou-prier-aeroports">les salles de prière des aéroports</a> et les solutions discrètes en déplacement, on prie sereinement partout — le tapis de poche dans le sac reste le meilleur ami du voyageur. Pensez aux <a href="/horaires-priere">horaires de prière de votre ville de vacances</a> (ils changent vite en été !) et aux facilités du voyageur pour regrouper.</p>
+
+<h2>Questions fréquentes</h2>
+<p><strong>Peut-on passer des vacances 100 % halal en France ?</strong> Oui, facilement dans les grandes villes ; à la campagne, le gîte avec cuisine est la solution reine.<br/><strong>Quelle est la meilleure région ?</strong> Pour la facilité : Île-de-France et la région marseillaise. Pour le dépaysement : la montagne l'été.<br/><strong>Et pour une question halal précise en voyage ?</strong> Posez-la à <a href="https://halalgpt.fr">HalalGPT</a>, notre IA répond en quelques secondes.</p>
+
+<h2>Aide la communauté</h2>
+<p>Tu as un bon plan vacances halal en France — un gîte en or, un resto de bord de mer, un camping tranquille ? Partage-le, des centaines de familles en profiteront. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
+  },
+  {
     slug: "week-end-musulman",
     title: "Week-end musulman : 10 destinations halal depuis la France (2026)",
     tags: ['week-end', 'destinations', 'halal', 'france'],
