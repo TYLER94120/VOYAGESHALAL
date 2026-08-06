@@ -4,6 +4,7 @@ import 'leaflet/dist/leaflet.css'
 import type { Map as LeafletMap, Marker } from 'leaflet'
 import { getPosition, describeGeoError, type GeoError, type GeoErrorCode } from '@/lib/geo'
 import { useInstantPosition } from '@/lib/useInstantPosition'
+import { computePrayerTimesFull } from '@/lib/prayerCalc'
 
 
 type Cat = 'mosquees' | 'restaurants' | 'hotels' | 'boucheries' | 'activites' | 'spots'
@@ -12,6 +13,8 @@ interface Spot {
   halal?: 'only' | 'yes' | 'likely'
   // Attributs pour les filtres (issus des données réelles quand disponibles)
   price?: string; sansAlcool?: boolean; sallePriere?: boolean; famille?: boolean
+  // Idée 3 : les spots partagés par la communauté passent DEVANT l'annuaire
+  community?: boolean; conf?: number
 }
 
 // Filtres d'attributs (P4) — appliqués sur la liste courante, pastilles honnêtes
@@ -47,7 +50,9 @@ function mergeSpots(base: Spot[], extra: Spot[]): Spot[] {
     const dup = out.some((b) => b.name.toLowerCase() === e.name.toLowerCase() || haversine(b.lat, b.lng, e.lat, e.lng) < 80)
     if (!dup) out.push(e)
   }
-  return out.sort((a, b) => a.dist - b.dist).slice(0, 40)
+  return out
+    .sort((a, b) => (a.community ? 0 : 1) - (b.community ? 0 : 1) || (b.conf ?? 0) - (a.conf ?? 0) || a.dist - b.dist)
+    .slice(0, 40)
 }
 
 // Valeurs alignées sur l'application native (Claude-app)
@@ -74,13 +79,23 @@ function haversine(a: number, b: number, c: number, d: number) {
 const fmt = (m: number) => (m < 1000 ? `${Math.round(m)} m` : `${(m / 1000).toFixed(1)} km`)
 
 
+// Marqueurs (idées 1+3) : top 5 = gros et NUMÉROTÉS ; communauté = OR 💎 ;
+// au-delà du top 5 (« Voir plus ») = petits points discrets.
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-function pinIcon(L: any, color: string, icon: string, selected: boolean) {
-  const size = selected ? 34 : 28
-  const border = selected ? SELECTED_GOLD : '#fff'
-  const bw = selected ? 3 : 2
+function pinIcon(L: any, color: string, icon: string, selected: boolean, rank?: number, community?: boolean) {
+  const bg = community ? SELECTED_GOLD : color
+  const fg = community ? '#0B1A0F' : '#fff'
+  if (rank == null) {
+    // hors top 5 : point discret
+    return L.divIcon({
+      html: `<div style="width:16px;height:16px;background:${bg};opacity:.75;border:2px solid #fff;border-radius:50%;box-shadow:0 1px 4px rgba(0,0,0,.3)"></div>`,
+      className: '', iconAnchor: [8, 8],
+    })
+  }
+  const size = selected ? 40 : 34
+  const border = selected ? '#0B1A0F' : '#fff'
   return L.divIcon({
-    html: `<div style="width:${size}px;height:${size}px;background:${color};border:${bw}px solid ${border};border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,.3);display:flex;align-items:center;justify-content:center;transform:scale(${selected ? 1.25 : 1})"><span style="font-size:${selected ? 15 : 13}px">${icon}</span></div>`,
+    html: `<div style="width:${size}px;height:${size}px;background:${bg};border:3px solid ${border};border-radius:50%;box-shadow:0 3px 10px rgba(0,0,0,.35);display:flex;align-items:center;justify-content:center;transform:scale(${selected ? 1.15 : 1})"><span style="font-size:${selected ? 16 : 14}px;font-weight:900;color:${fg};font-family:system-ui">${community ? '💎' : rank}</span></div>`,
     className: '', iconAnchor: [size / 2, size / 2],
   })
 }
@@ -95,6 +110,10 @@ export default function AutourDeMoiPage() {
   const [loading, setLoading] = useState(true)
   const [geoErr, setGeoErr] = useState<GeoError | null>(null)
   const [selected, setSelected] = useState<number | string | null>(null)
+  const [showAll, setShowAll] = useState(false) // idée 1 : top 5 d'abord
+  const [moreOpen, setMoreOpen] = useState(false)
+  const showAllRef = useRef(false)
+  const userChose = useRef(false) // idée 2 : le choix manuel prime sur le mode auto
   const [filters, setFilters] = useState<Filters>(NO_FILTERS)
   const filtersRef = useRef<Filters>(NO_FILTERS)
   const allRef = useRef<Spot[]>([]) // liste non filtrée de la catégorie courante
@@ -102,12 +121,34 @@ export default function AutourDeMoiPage() {
   const [searching, setSearching] = useState(false)
   const mapRef = useRef<LeafletMap | null>(null)
   const mapEl = useRef<HTMLDivElement>(null)
-  const markersRef = useRef<{ id: number | string; marker: Marker }[]>([])
+  const markersRef = useRef<{ id: number | string; marker: Marker; rank?: number; community?: boolean }[]>([])
   const meMarkerRef = useRef<Marker | null>(null)
   // Points pré-chargés (nos 354 villes) par catégorie — affichés instantanément
   const preRef = useRef<Partial<Record<Cat, Spot[]>>>({})
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const LRef = useRef<any>(null)
+
+  // Idée 2 — « mode Maintenant » : la page s'ouvre déjà sur la bonne réponse.
+  // Prière < 45 min → Prier ; 12-14 h / 19-22 h → Manger ; sinon Pépites.
+  // Le premier tap de l'utilisateur reprend toujours la main (userChose).
+  useEffect(() => {
+    if (userChose.current) return
+    const h = new Date().getHours()
+    if ((h >= 12 && h < 14) || (h >= 19 && h < 22)) setCat('restaurants')
+    else if (h >= 22 || h < 6) setCat('spots')
+    // sinon on garde Prier (défaut)
+  }, [])
+  useEffect(() => {
+    if (userChose.current || !instantPos) return
+    try {
+      const t = computePrayerTimesFull(instantPos.lat, instantPos.lng, 3, 0, new Date())
+      const now = Date.now()
+      const soon = [t.Fajr, t.Dhuhr, t.Asr, t.Maghrib, t.Isha]
+        .some((d) => d.getTime() - now > 0 && d.getTime() - now < 45 * 60 * 1000)
+      if (soon) setCat('mosquees')
+    } catch { /* calcul indisponible → mode horaire */ }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [instantPos])
 
   // La position instantanée alimente la carte dès qu'elle est résolue (0 ms
   // dans la plupart des cas) et s'affine toute seule (IP puis GPS si permis).
@@ -145,7 +186,7 @@ export default function AutourDeMoiPage() {
   const paint = useCallback((selId: number | string | null) => {
     const L = LRef.current; if (!L) return
     const conf = CATS.find((x) => x.id === cat)!
-    markersRef.current.forEach(({ id, marker }) => marker.setIcon(pinIcon(L, conf.color, conf.icon, id === selId)))
+    markersRef.current.forEach(({ id, marker, rank, community }) => marker.setIcon(pinIcon(L, conf.color, conf.icon, id === selId, rank, community)))
   }, [cat])
 
   const select = useCallback((s: Spot, scroll = false) => {
@@ -154,17 +195,19 @@ export default function AutourDeMoiPage() {
     if (scroll) window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [paint])
 
-  // Dessine la liste de points sur la carte (remplace les marqueurs existants)
+  // Dessine la liste (idée 1 : top 5 numéroté ; le reste en petits points si « Voir plus »)
   const paintList = useCallback((list: Spot[], c: Cat) => {
-    setSpots(list)
+    const visible = showAllRef.current ? list : list.slice(0, 5)
+    setSpots(visible)
     const L = LRef.current
     if (!L || !mapRef.current) return
     const conf = CATS.find((x) => x.id === c)!
     markersRef.current.forEach(({ marker }) => marker.remove()); markersRef.current = []
-    list.forEach((s) => {
-      const mk = L.marker([s.lat, s.lng], { icon: pinIcon(L, conf.color, conf.icon, false) }).addTo(mapRef.current)
+    visible.forEach((s, i) => {
+      const rank = i < 5 ? i + 1 : undefined
+      const mk = L.marker([s.lat, s.lng], { icon: pinIcon(L, conf.color, conf.icon, false, rank, s.community), zIndexOffset: rank ? 500 - i : 0 }).addTo(mapRef.current)
       mk.on('click', () => select(s))
-      markersRef.current.push({ id: s.id, marker: mk })
+      markersRef.current.push({ id: s.id, marker: mk, rank, community: s.community })
     })
   }, [select])
 
@@ -185,6 +228,7 @@ export default function AutourDeMoiPage() {
 
   const search = useCallback(async (lat: number, lng: number, c: Cat) => {
     setSelected(null)
+    showAllRef.current = false; setShowAll(false)
     // 1) Affichage INSTANTANÉ depuis nos données pré-chargées (/api/nearby, < 1 s)
     // Spots partagés : couche DISTINCTE, source = /api/spots (seed admin, Redis).
     // Séparée visuellement des données vérifiées ; pas de fusion OSM.
@@ -197,7 +241,8 @@ export default function AutourDeMoiPage() {
           // eslint-disable-next-line @typescript-eslint/no-explicit-any
           sp = ((j.spots || []) as any[]).map((o) => ({
             id: `sp-${o.id}`, lat: o.lat, lng: o.lng, name: o.nom,
-            sub: o.adresse || 'Coin prière partagé', dist: (o.distanceKm ?? 0) * 1000,
+            sub: o.adresse || 'partagé par la communauté', dist: (o.distanceKm ?? 0) * 1000,
+            community: true, conf: o.confirmations ?? 0,
           }))
         }
       } catch { /* pas de spots → liste vide */ }
@@ -212,6 +257,25 @@ export default function AutourDeMoiPage() {
     }
     const pre = preRef.current[c] || []
     if (pre.length) { render(pre, c); setLoading(false) } else { setLoading(true) }
+    // Idée 3 : les spots COMMUNAUTAIRES de la catégorie passent devant l'annuaire
+    let commu: Spot[] = []
+    if (c === 'mosquees' || c === 'restaurants') {
+      try {
+        const res = await fetch(`/api/spots?lat=${lat}&lng=${lng}&radius=${ME_RADIUS_M / 1000}`)
+        if (res.ok) {
+          const j = await res.json()
+          const want = c === 'mosquees' ? ['coin_priere'] : ['resto', 'boucherie']
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          commu = ((j.spots || []) as any[])
+            .filter((o) => want.includes(o.categorie ?? 'coin_priere'))
+            .map((o) => ({
+              id: `sp-${o.id}`, lat: o.lat, lng: o.lng, name: o.nom,
+              sub: 'partagé par la communauté', dist: (o.distanceKm ?? 0) * 1000,
+              community: true, conf: o.confirmations ?? 0,
+            }))
+        }
+      } catch { /* pas de spots → annuaire seul */ }
+    }
     // 2) Complément LIVE OpenStreetMap via NOTRE proxy serveur (fiable, sans CORS)
     let live: Spot[] = []
     if (OSM_TYPES.has(c)) {
@@ -220,7 +284,7 @@ export default function AutourDeMoiPage() {
         if (res.ok) { const j = await res.json(); live = (j.items || []) as Spot[] }
       } catch { /* proxy indisponible → on garde les pré-chargés */ }
     }
-    let merged = mergeSpots(pre, live)
+    let merged = mergeSpots([...commu, ...pre], live)
     // Peu de résultats (petites villes : OSM peu cartographié) → on élargit
     // automatiquement à 20 km pour montrer ce qui existe autour (distance affichée).
     if (merged.length < 5) {
@@ -379,17 +443,39 @@ export default function AutourDeMoiPage() {
         )}
       </div>
 
-      {/* Bascule des 4 catégories (comme l'accueil de l'app) */}
-      <div style={{ display: 'flex', gap: 8, padding: '14px 14px 4px', overflowX: 'auto' }}>
-        {CATS.map((x) => {
+      {/* Idée 1 : UNE question — « Tu cherches quoi, là ? » 3 grandes tuiles + Plus… */}
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr auto', gap: 8, padding: '14px 14px 4px' }}>
+        {([
+          { id: 'mosquees' as Cat, icon: '🕌', label: 'Prier' },
+          { id: 'restaurants' as Cat, icon: '🍽', label: 'Manger' },
+          { id: 'spots' as Cat, icon: '💎', label: 'Pépites' },
+        ]).map((x) => {
           const on = x.id === cat
           return (
-            <button key={x.id} onClick={() => setCat(x.id)} style={{ flexShrink: 0, display: 'flex', alignItems: 'center', gap: 6, padding: '9px 16px', borderRadius: 30, border: `1.5px solid ${on ? x.color : 'rgba(27,67,50,0.2)'}`, background: on ? x.color : '#fff', color: on ? '#fff' : 'var(--foret)', fontWeight: 700, fontSize: 14, cursor: 'pointer', whiteSpace: 'nowrap' }}>
-              <span>{x.icon}</span>{x.label}
+            <button key={x.id} onClick={() => { userChose.current = true; setMoreOpen(false); setCat(x.id) }}
+              style={{ minHeight: 58, borderRadius: 16, border: `2px solid ${on ? 'var(--or)' : 'rgba(27,67,50,0.18)'}`, background: on ? 'var(--foret)' : '#fff', color: on ? '#fff' : 'var(--foret)', fontWeight: 800, fontSize: 15, cursor: 'pointer', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 2 }}>
+              <span style={{ fontSize: 20 }}>{x.icon}</span>{x.label}
             </button>
           )
         })}
+        <button onClick={() => setMoreOpen((v) => !v)} aria-expanded={moreOpen}
+          style={{ minHeight: 58, padding: '0 14px', borderRadius: 16, border: `2px solid ${moreOpen || ['hotels', 'activites', 'boucheries'].includes(cat) ? 'var(--or)' : 'rgba(27,67,50,0.18)'}`, background: '#fff', color: 'var(--foret)', fontWeight: 800, fontSize: 14, cursor: 'pointer' }}>
+          ⋯
+        </button>
       </div>
+      {moreOpen && (
+        <div style={{ display: 'flex', gap: 8, padding: '6px 14px 0', overflowX: 'auto' }}>
+          {CATS.filter((x) => ['hotels', 'activites', 'boucheries'].includes(x.id)).map((x) => {
+            const on = x.id === cat
+            return (
+              <button key={x.id} onClick={() => { userChose.current = true; setCat(x.id) }}
+                style={{ flexShrink: 0, display: 'flex', alignItems: 'center', gap: 6, padding: '9px 16px', borderRadius: 30, border: `1.5px solid ${on ? x.color : 'rgba(27,67,50,0.2)'}`, background: on ? x.color : '#fff', color: on ? '#fff' : 'var(--foret)', fontWeight: 700, fontSize: 14, cursor: 'pointer', whiteSpace: 'nowrap' }}>
+                <span>{x.icon}</span>{x.label}
+              </button>
+            )
+          })}
+        </div>
+      )}
 
       {/* Filtres d'attributs contextuels (P4) — n'apparaissent que si la
           catégorie porte ces données. « Signalé halal », jamais « certifié ». */}
@@ -443,6 +529,12 @@ export default function AutourDeMoiPage() {
             <a href={`https://www.google.com/maps/dir/?api=1&destination=${s.lat},${s.lng}`} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} style={{ flexShrink: 0, background: 'var(--foret)', color: '#fff', fontWeight: 700, fontSize: 13, borderRadius: 10, padding: '9px 12px', textDecoration: 'none' }} aria-label={`Itinéraire Google Maps vers ${s.name}`}>🧭 Itinéraire</a>
           </div>
         ))}
+        {!showAll && !loading && allRef.current.length > 5 && (
+          <button onClick={() => { showAllRef.current = true; setShowAll(true); paintList(applyFilters(allRef.current, filtersRef.current), cat) }}
+            style={{ gridColumn: '1/-1', minHeight: 50, borderRadius: 14, border: '1.5px dashed rgba(27,67,50,0.35)', background: '#fff', color: 'var(--foret)', fontWeight: 800, fontSize: 14.5, cursor: 'pointer' }}>
+            Voir plus ({allRef.current.length - 5} autres)
+          </button>
+        )}
         {!loading && !geoErr && spots.length === 0 && (
           <p style={{ gridColumn: '1/-1', textAlign: 'center', color: 'var(--texte-2)', padding: 20 }}>
             {allRef.current.length > 0
