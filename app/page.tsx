@@ -10,10 +10,9 @@ import { guides } from '@/lib/data'
 import NearbySpotsHome from '@/components/community/NearbySpotsHome'
 import RecentSpotsHome from '@/components/spots/RecentSpotsHome'
 import RadarPriere from '@/components/home/RadarPriere'
-import FollowInstall from '@/components/capture/FollowInstall'
-import { JeVoyageMaintenant } from '@/components/JeVoyageMaintenant'
 import { HomeScoreRanking } from '@/components/HomeScoreRanking'
 import IslamicPattern from '@/components/ui/IslamicPattern'
+import SearchBarHome from '@/components/search/SearchBarHome'
 import { getDomainSEO, FR_URL, EN_URL } from '@/lib/domain'
 
 // Métadonnées par domaine : anglais sur gohalaltravel.com, français sur voyageshalal.fr
@@ -169,6 +168,10 @@ export default async function HomePage() {
                 {t.heroMine}
               </Link>
             </div>
+            {/* Recherche ville — le réflexe n°1, toujours sous la main */}
+            <div style={{ background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(201,168,76,0.35)', borderRadius: 16, padding: 4, marginTop: 10 }}>
+              <SearchBarHome />
+            </div>
           </div>
         </div>
       </section>
@@ -180,132 +183,19 @@ export default async function HomePage() {
       <RecentSpotsHome />
       <NearbySpotsHome />
 
-      {/* Accès rapide */}
-      <section className="px-4 pt-10">
-        <div className="quick-access">
-          <Link href="/destinations" className="qa-btn">
-            <span>🗺️</span>
-            <span>{t.qaDestinations}</span>
-          </Link>
-          <Link href="/horaires-priere" className="qa-btn qa-btn-green">
-            <span>🕐</span>
-            <span>{t.qaPrayer}</span>
-          </Link>
-          <Link href="/qibla" className="qa-btn qa-btn-green">
-            <span>🧭</span>
-            <span>Qibla</span>
-          </Link>
-          <Link href="/blog" className="qa-btn">
-            <span>📖</span>
-            <span>{t.qaBlog}</span>
-          </Link>
-        </div>
-      </section>
 
-      {/* Destinations populaires */}
-      <section style={{ backgroundColor: '#f5f0e8' }} className="py-20 px-4">
-        <div className="max-w-5xl mx-auto">
-          <div className="flex items-end justify-between mb-10">
-            <div>
-              <p style={{ color: '#c9a84c' }} className="text-xs font-semibold uppercase tracking-[0.2em] mb-2">{t.explore}</p>
-              <h2 className="text-3xl font-bold" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', color: '#1b4332' }}>
-                {t.popularTitle}
-              </h2>
-            </div>
-            <Link href="/destinations" className="text-sm font-medium hover:underline" style={{ color: '#1b4332' }}>
-              {t.seeAll}
-            </Link>
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-            {DESTINATIONS.map((d) => (
-              <Link
-                key={d.slug}
-                href={`/destinations/${d.slug}`}
-                className="group block relative overflow-hidden"
-                style={{ borderRadius: '9999px 9999px 1.5rem 1.5rem' }}
-              >
-                <div className="relative aspect-[3/4]">
-                  <Image
-                    src={d.image}
-                    alt={isEN ? (d.cityEn ?? d.city) : d.city}
-                    fill
-            sizes="100vw"
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent" />
-                  <div className="absolute top-4 left-1/2 -translate-x-1/2">
-                    <span style={{ backgroundColor: 'rgba(201,168,112,0.9)', color: '#1b4332' }} className="text-[10px] font-bold px-3 py-1 rounded-full whitespace-nowrap tracking-widest">
-                      {isEN ? d.badgeEn : d.badge}
-                    </span>
-                  </div>
-                  <div className="absolute bottom-0 left-0 right-0 p-4 text-center">
-                    <div className="text-white font-bold text-base">{isEN ? (d.cityEn ?? d.city) : d.city}</div>
-                    <div className="text-white/60 text-xs mt-0.5">{isEN ? (d.countryEn ?? d.country) : d.country}</div>
-                    <div style={{ color: '#c9a84c' }} className="text-xs mt-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                      {t.fullGuide}
-                    </div>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Halal Trust Score™ ranking */}
       <HomeScoreRanking en={isEN} />
 
-      {/* Je voyage maintenant — widget prière temps réel */}
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-3xl mx-auto">
-          <JeVoyageMaintenant />
-        </div>
-      </section>
-
-      {/* Voyager Halal, simplifié */}
-      <section className="py-20 px-4 bg-white">
-        <div className="max-w-5xl mx-auto text-center mb-14">
-          <p style={{ color: '#c9a84c' }} className="text-xs font-semibold uppercase tracking-[0.2em] mb-3">{t.promise}</p>
-          <h2 className="text-3xl font-bold" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', color: '#1b4332' }}>
-            {t.promiseTitle}
-          </h2>
-        </div>
-        <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-10">
-          {FEATURES.map((f) => (
-            <div key={f.title} className="text-center">
-              <div className="text-4xl mb-4">{f.icon}</div>
-              <div className="font-bold mb-2 text-lg" style={{ color: '#1b4332' }}>{isEN ? f.titleEn : f.title}</div>
-              <div className="text-sm text-gray-500 leading-relaxed">{isEN ? f.descEn : f.desc}</div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* App CTA */}
-      <section className="islamic-hero py-20 px-4">
-        <div className="max-w-4xl mx-auto flex flex-col lg:flex-row items-center gap-12">
-          <div className="flex-1">
-            <p style={{ color: '#c9a84c' }} className="text-xs font-semibold uppercase tracking-[0.2em] mb-4">{t.appEyebrow}</p>
-            <h2 className="text-3xl font-bold text-white mb-5" style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}>
-              {t.appTitle}
-            </h2>
-            <p className="text-white/50 text-sm leading-relaxed mb-8 max-w-md">
-              {t.appSub}
-            </p>
-            <Link
-              href="/application"
-              style={{ backgroundColor: '#c9a84c', color: '#1b4332' }}
-              className="inline-block font-bold text-sm px-8 py-3 rounded-full hover:opacity-90 transition-opacity"
-            >
-              {t.learnMore}
-            </Link>
-          </div>
-          <div style={{ backgroundColor: '#2d5a3d' }} className="w-48 h-80 rounded-3xl flex items-center justify-center text-6xl shrink-0">
-            📱
-          </div>
-        </div>
-        <div className="max-w-4xl mx-auto mt-12 px-4">
-          <FollowInstall source="home" />
+      {/* Installer l'app — une ligne, pas un écran (le site EST l'app) */}
+      <section style={{ background: 'var(--nuit)' }} className="py-10 px-4">
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="text-white font-bold text-lg mb-1">✦ {isEN ? 'Add VoyagesHalal to your home screen' : 'Ajoute VoyagesHalal à ton écran d\'accueil'}</p>
+          <p className="text-white/60 text-sm mb-5">{isEN ? 'Full screen, offline, prayer notifications — like an app, no store needed.' : 'Plein écran, hors-ligne, notifications de prière — comme une app, sans store.'}</p>
+          <Link href="/application" style={{ display: 'inline-flex', alignItems: 'center', minHeight: 50, padding: '0 24px', borderRadius: 999, background: 'var(--or)', color: '#0b1a0f', fontWeight: 800, fontSize: 15, textDecoration: 'none' }}>
+            {isEN ? 'How to install (30 sec) →' : 'Comment l\'installer (30 sec) →'}
+          </Link>
         </div>
       </section>
 
