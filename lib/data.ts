@@ -1447,6 +1447,134 @@ export const guides: Guide[] = [...guidesFr, ...guidesEn]
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "where-to-pray-lyon-airport",
+    title: "Where to pray at Lyon-Saint-Exupery airport — 2026 guide",
+    description: "Flying via Lyon? Saint-Exupery airport has a multi-faith spiritual centre with a Muslim prayer room. Here is where to find it.",
+    coverImage: "/guides/blog-lyon.jpg",
+    category: 'Practical',
+    readTime: "3 min",
+    publishedAt: '2026-08-01',
+    lang: 'en',
+    tags: ['prayer', 'airport', 'lyon'],
+    content: `
+<p>Traveling through Lyon and looking for a prayer room at Saint-Exupery airport? Lyon-Saint-Exupery has a multi-faith spiritual centre with a Muslim prayer room. Here is where to find it.</p>
+<h2>The essentials in 30 seconds</h2>
+<p>Lyon airport provides a prayer space open to all, grouping rooms for Catholics, Protestants, Muslims and Jews. Opening hours are posted at the entrance of each room, and any information desk can point you there.</p>
+<h2>Where the prayer room is</h2>
+<p>The spiritual centre sits between Terminal 1 and Terminal 2, near the Moxy hotel. Separate spaces per faith, including a Muslim one. Follow the "spiritual centre / place of worship" signs or ask a staff member.</p>
+<h2>Practical tips</h2>
+<p>Allow a few minutes' walk depending on your terminal. Check the posted opening hours. Plan your wudu (restrooms, small kit). Short on time? The traveler's prayer, shortened and combined, solves it. Use <a href="/qibla">our qibla tool</a>.</p>
+<h2>Frequently asked questions</h2>
+<p><strong>Is there a Muslim room at Lyon-Saint-Exupery?</strong> Yes, in the spiritual centre between Terminals 1 and 2.<br/><strong>Open to everyone?</strong> Yes, free of charge.<br/><strong>Opening hours?</strong> Posted at each room's entrance; information desks can help.</p>
+<h2>Help the community</h2>
+<p>A location change, an opening time, a landmark? Share it — an ongoing sadaqa. <a href="/communaute">→ Join the community</a></p>
+`,
+  },
+  {
+    slug: "where-to-pray-nice-airport",
+    title: "Where to pray at Nice-Cote d'Azur airport — 2026 guide",
+    description: "Flying from Nice? Nice-Cote d'Azur has offered a multi-faith prayer space for over 20 years, with a room reserved for Muslims. Here is where to find it.",
+    coverImage: "/guides/blog-nice.jpg",
+    category: 'Practical',
+    readTime: "3 min",
+    publishedAt: '2026-08-01',
+    lang: 'en',
+    tags: ['prayer', 'airport', 'nice'],
+    content: `
+<p>Flying from Nice? Nice-Cote d'Azur airport has offered a multi-faith prayer space for more than 20 years, with a room reserved for Muslims. Here is where to find it.</p>
+<h2>The essentials in 30 seconds</h2>
+<p>In Terminal 2: a chapel for Christians, a room for Jewish worshippers and a room for Muslims, around a shared welcome hall. Volunteer chaplains are regularly present.</p>
+<h2>Where the prayer room is</h2>
+<p>The space is in Terminal 2: three separate rooms plus a welcome area, in a quiet spot. Look for the "prayer space / place of worship" signs or ask a staff member.</p>
+<h2>Practical tips</h2>
+<p>Coming from Terminal 1, check the route to Terminal 2. Plan your wudu beforehand. For a tight flight, the shortened and combined traveler's prayer works. Use <a href="/qibla">our qibla tool</a>.</p>
+<h2>Frequently asked questions</h2>
+<p><strong>Is there a Muslim room in Nice?</strong> Yes, in Terminal 2.<br/><strong>Since when?</strong> More than 20 years.<br/><strong>Free?</strong> Yes.</p>
+<h2>Help the community</h2>
+<p>An update at Nice airport? Share it — an ongoing sadaqa. <a href="/communaute">→ Join the community</a></p>
+`,
+  },
+  {
+    slug: "where-to-pray-geneva-airport",
+    title: "Where to pray at Geneva airport — 2026 guide",
+    description: "Transiting through Geneva-Cointrin? The airport has a multi-faith quiet room after security, with prayer mats and a Quran. Here is where to find it.",
+    coverImage: "/guides/blog-geneve.jpg",
+    category: 'Practical',
+    readTime: "3 min",
+    publishedAt: '2026-08-01',
+    lang: 'en',
+    tags: ['prayer', 'airport', 'geneva'],
+    content: `
+<p>Transiting through Geneva-Cointrin? The airport has a multi-faith quiet room located after security. Here is where to find it.</p>
+<h2>The essentials in 30 seconds</h2>
+<p>Geneva Airport offers a meditation / quiet room open to all religions, in the transit zone (after security). You will find prayer mats and a Quran there.</p>
+<h2>Where the prayer space is</h2>
+<p>In the transit zone, on the mezzanine, near the airline lounges, towards the kids' area / nursery. Follow the "quiet room" symbol after security, then go up to the mezzanine. A small, calm and bright room.</p>
+<h2>Good to know</h2>
+<p>The space is after security, so you need a boarding pass. The room is small: pray at a quieter time if you can.</p>
+<h2>Practical tips</h2>
+<p>Plan your wudu. Traveler's prayer, shortened and combined. Use <a href="/qibla">our qibla tool</a> even though mats are provided.</p>
+<h2>Frequently asked questions</h2>
+<p><strong>Is there a prayer room in Geneva?</strong> Yes, a multi-faith quiet room in the transit zone.<br/><strong>Mats?</strong> Yes, mats and a Quran available.<br/><strong>Do I need a ticket?</strong> Yes, a boarding pass is required.</p>
+<h2>Help the community</h2>
+<p>Space moved, a new landmark at Cointrin? Share it — an ongoing sadaqa. <a href="/communaute">→ Join the community</a></p>
+`,
+  },
+  {
+    slug: "where-to-pray-brussels-airport",
+    title: "Where to pray at Brussels airport — 2026 guide",
+    description: "Traveling via Brussels-Zaventem? The airport has several prayer rooms, including a dedicated Muslim room, open 24/7. Here is where to find them.",
+    coverImage: "/guides/blog-bruxelles.jpg",
+    category: 'Practical',
+    readTime: "4 min",
+    publishedAt: '2026-08-01',
+    lang: 'en',
+    tags: ['prayer', 'airport', 'brussels'],
+    content: `
+<p>Traveling via Brussels-Zaventem? The airport has several prayer rooms, including a dedicated Muslim room, open 24/7. Here is where to find them.</p>
+<h2>The essentials in 30 seconds</h2>
+<p>The rooms are after security, in the A and B gate areas. A dedicated Muslim room, plus spaces for Jewish, Catholic, Orthodox and Protestant worship. Open 24/7, access with a boarding pass.</p>
+<h2>Where the prayer rooms are</h2>
+<p>Terminal B: above the shops, at the far end of the hall. Terminal A: at the top of the stairs, near the Crystal Media Shop, opposite gate A42, at lounge level. Follow the "prayer rooms" signs.</p>
+<h2>Good to know</h2>
+<p>Rooms are after security, so a boarding pass is required. Open 24/7 — precious for night flights. Dedicated contact: prayerrooms@brusselsairport.be.</p>
+<h2>Practical tips</h2>
+<p>Check whether you fly from the A or B gates. Plan your wudu. Traveler's prayer, shortened and combined. Use <a href="/qibla">our qibla tool</a>.</p>
+<h2>Frequently asked questions</h2>
+<p><strong>Is there a Muslim room in Brussels?</strong> Yes, in the A and B gate areas, after security.<br/><strong>Opening hours?</strong> 24/7.<br/><strong>Do I need a ticket?</strong> Yes, a boarding pass.</p>
+<h2>Help the community</h2>
+<p>A changed location, a new landmark at Zaventem? Share it — an ongoing sadaqa. <a href="/communaute">→ Join the community</a></p>
+`,
+  },
+  {
+    slug: "praying-on-a-train",
+    title: "How to pray on a train: practical guide (2026)",
+    description: "A long train ride with prayer time approaching? Here is how to pray on the train, simply.",
+    coverImage: "/guides/blog-train.jpg",
+    category: 'Practical',
+    readTime: "4 min",
+    publishedAt: '2026-08-01',
+    lang: 'en',
+    tags: ['prayer', 'train', 'muslim travel'],
+    content: `
+<p>A long train journey and prayer time approaching? Here is how to pray on the train, simply.</p>
+<h2>The essentials in 30 seconds</h2>
+<p>Pray at your seat, sitting, with slight head bows if you cannot stand — or, if you find a quiet spot, standing discreetly. As a traveler, you may shorten and combine your prayers.</p>
+<h2>1. Plan before boarding</h2>
+<p>Pray at the station before departure (some large stations have quiet areas) or on arrival within the prayer's window. Combine dhuhr/asr or maghrib/isha for a long trip.</p>
+<h2>2. Praying seated at your place</h2>
+<p>Pray sitting, facing the qibla as best you can (<a href="/qibla">our qibla tool</a>), with slight head bows for the movements.</p>
+<h2>3. Praying standing in a quiet spot</h2>
+<p>If the train is not crowded, or in the space between carriages, pray standing discreetly, keeping your safety in mind. Lay down a jacket or a small mat.</p>
+<h2>4. Wudu</h2>
+<p>Do your wudu before boarding if possible. Otherwise the on-board restrooms; if genuinely impossible, tayammum.</p>
+<h2>Frequently asked questions</h2>
+<p><strong>Can I pray sitting on the train?</strong> Yes, when necessary.<br/><strong>Facing the qibla?</strong> As best you can; the prayer remains valid while traveling.<br/><strong>Combining prayers?</strong> Yes, dhuhr/asr and maghrib/isha.</p>
+<h2>Help the community</h2>
+<p>A quiet corner in a station, a good place to pray before a train? Share it — an ongoing sadaqa. <a href="/communaute">→ Join the community</a></p>
+`,
+  },
+  {
     slug: "where-to-pray-disneyland-paris",
     title: "Prayer room at Disneyland Paris: where to pray? (2026 guide)",
     description: "Yes, you can pray at Disneyland Paris: a quiet, discreet space is available on request at City Hall. Here is how to access it, step by step.",
@@ -1491,7 +1619,8 @@ export const blogPosts: BlogPost[] = [
 <h2>Praying on time while traveling</h2>
 <p>The traveler (musafir) may shorten 4-rakat prayers to 2, and combine dhuhr with asr, maghrib with isha. Check the qibla (<a href="/qibla">our qibla tool</a> helps); many spaces already indicate it.</p>
 <h2>Our airport guides</h2>
-<p><a href="/blog/where-to-pray-cdg-airport">Where to pray at Paris-Charles de Gaulle (CDG)</a> · <a href="/blog/where-to-pray-orly-airport">Where to pray at Paris-Orly</a> · In transit: <a href="/blog/praying-on-a-plane">how to pray on a plane</a>.</p>
+<p><a href="/blog/where-to-pray-cdg-airport">Paris-Charles de Gaulle (CDG)</a> · <a href="/blog/where-to-pray-orly-airport">Paris-Orly</a> · <a href="/blog/where-to-pray-lyon-airport">Lyon-Saint-Exupery</a> · <a href="/blog/where-to-pray-nice-airport">Nice-Cote d'Azur</a> · <a href="/blog/where-to-pray-geneva-airport">Geneva</a> · <a href="/blog/where-to-pray-brussels-airport">Brussels-Zaventem</a></p>
+<p>In transit: <a href="/blog/praying-on-a-plane">how to pray on a plane</a> and <a href="/blog/praying-on-a-train">on a train</a>.</p>
 <h2>Help the community</h2>
 <p>Found a prayer room that moved, a good quiet corner, an update? Share it — every spot helps dozens of brothers and sisters pray while traveling, an ongoing sadaqa. <a href="/communaute">→ Join the community</a></p>
 `,

@@ -57,6 +57,11 @@ export const GUIDES_FR_TO_EN: Record<string, string> = {
 // jumeau EN est un guide). Jumelages par SUJET réel.
 export const BLOG_FR_TO_EN: Record<string, string> = {
   'ou-prier-disneyland-paris': '/blog/where-to-pray-disneyland-paris',
+  'ou-prier-aeroport-lyon': '/blog/where-to-pray-lyon-airport',
+  'ou-prier-aeroport-nice': '/blog/where-to-pray-nice-airport',
+  'ou-prier-aeroport-geneve': '/blog/where-to-pray-geneva-airport',
+  'ou-prier-aeroport-bruxelles': '/blog/where-to-pray-brussels-airport',
+  'prier-en-train': '/blog/praying-on-a-train',
   'ou-prier-aeroports': '/blog/where-to-pray-paris-airports',
   'ou-prier-aeroport-cdg': '/blog/where-to-pray-cdg-airport',
   'ou-prier-aeroport-orly': '/blog/where-to-pray-orly-airport',
