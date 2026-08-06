@@ -1447,6 +1447,94 @@ export const guides: Guide[] = [...guidesFr, ...guidesEn]
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "ou-prier-parc-asterix",
+    title: "Salle de prière au Parc Astérix : où prier ? — guide 2026",
+    tags: ["Parc Astérix", "Famille", "Prière", "Pratique"],
+    description: "Pas de salle de prière officielle au Parc Astérix — mais des solutions simples existent. Voici comment font les familles musulmanes, étape par étape.",
+    coverImage: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&q=80",
+    category: 'Pratique',
+    readTime: "3 min",
+    publishedAt: '2026-08-06',
+    content: `<p>Journée au Parc Astérix et l'heure de la prière approche ? Voici la situation réelle et les solutions qui marchent.</p>
+<h2>L'essentiel en 30 secondes</h2><p>À notre connaissance, le Parc Astérix ne dispose pas de salle de prière officielle. Les solutions : demander un espace calme aux services visiteurs, utiliser un coin tranquille du parc (zones pique-nique, pelouses en retrait), ou la voiture au parking. Les facilités du voyageur (regrouper les prières) simplifient tout.</p>
+<h2>1. Demande aux services visiteurs</h2><p>Comme à <a href="/blog/ou-prier-disneyland-paris">Disneyland (où ça fonctionne très bien)</a>, le bon réflexe est de demander poliment à l'accueil ou à un membre du personnel un endroit calme et discret. Le personnel des parcs est habitué aux demandes particulières.</p>
+<h2>2. Repère un coin calme</h2><p>Les zones de pique-nique et les allées en retrait des grandes attractions sont vos alliées, surtout en début d'après-midi quand tout le monde est dans les files. Petit tapis de poche, orientation avec <a href="/qibla">notre outil qibla</a>, et c'est réglé.</p>
+<h2>3. La voiture au parking</h2><p>Si tu es venu en voiture, elle reste une option en arrivant ou en repartant. Pour une sortie temporaire en cours de journée, vérifie les conditions de ré-entrée à l'accueil avant de sortir.</p>
+<h2>4. Utilise les facilités du voyageur</h2><p>Si tu viens de loin, le regroupement (dhuhr+asr) réduit la journée à une seule pause prière — consulte <a href="/horaires-priere">les horaires du jour</a> pour bien la placer.</p>
+<h2>Questions fréquentes</h2><p><strong>Salle de prière officielle au Parc Astérix ?</strong> Pas à notre connaissance — demande un espace calme au personnel.<br/><strong>Les ablutions ?</strong> Aux toilettes du parc, un petit nécessaire dans le sac aide.<br/><strong>Le plus simple ?</strong> Regrouper les prières et viser un créneau calme.</p>
+<h2>Aide la communauté</h2><p>On t'a indiqué un endroit précis au Parc Astérix, ou tu as un bon spot testé ? Partage-le — une sadaqa jâriya pour toutes les familles. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
+  },
+  {
+    slug: "ou-prier-puy-du-fou",
+    title: "Salle de prière au Puy du Fou : où prier ? — guide 2026",
+    tags: ["Puy du Fou", "Famille", "Prière", "Pratique"],
+    description: "Pas de salle de prière officielle au Puy du Fou — voici les solutions concrètes des visiteurs musulmans pour prier sereinement entre deux spectacles.",
+    coverImage: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200&q=80",
+    category: 'Pratique',
+    readTime: "3 min",
+    publishedAt: '2026-08-06',
+    content: `<p>Le Puy du Fou se visite au rythme des spectacles — et caser ses prières demande un peu d'organisation. Voici comment faire simplement.</p>
+<h2>L'essentiel en 30 secondes</h2><p>Pas de salle de prière officielle à notre connaissance. Mais le parc est vaste et boisé : les coins calmes ne manquent pas entre les villages d'époque. Ajoute les facilités du voyageur et une bonne lecture du programme des spectacles, et tout tient.</p>
+<h2>1. Planifie autour des spectacles</h2><p>Le piège du Puy du Fou, c'est l'enchaînement des horaires de spectacles. Dès l'arrivée, compare le programme du jour avec <a href="/horaires-priere">les horaires de prière</a> et repère ton créneau — souvent en début d'après-midi ou entre deux grands shows.</p>
+<h2>2. Trouve ton coin tranquille</h2><p>Entre les bourgs reconstitués, les sous-bois et les allées secondaires, les espaces calmes sont nombreux. Un tapis de poche, <a href="/qibla">l'outil qibla</a>, et une orientation discrète : personne n'y prête attention.</p>
+<h2>3. Demande au personnel</h2><p>À l'accueil ou auprès d'un membre du personnel, demande un endroit calme — la démarche est simple et bien accueillie dans la plupart des grands parcs. Si tu loges dans un hôtel du parc, ta chambre règle la question du soir et du matin.</p>
+<h2>4. Regroupe si besoin</h2><p>En déplacement, le regroupement dhuhr+asr et maghrib+isha est une facilité précieuse — surtout avec la Cinéscénie qui finit tard.</p>
+<h2>Questions fréquentes</h2><p><strong>Salle officielle ?</strong> Pas à notre connaissance — coins calmes et personnel bienveillant font l'affaire.<br/><strong>Ablutions ?</strong> Aux sanitaires du parc.<br/><strong>Avec la Cinéscénie le soir ?</strong> Prie maghrib avant le spectacle ou regroupe avec isha.</p>
+<h2>Aide la communauté</h2><p>Tu as un bon spot au Puy du Fou ou une info du personnel ? Partage — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
+  },
+  {
+    slug: "ou-prier-futuroscope",
+    title: "Salle de prière au Futuroscope : où prier ? — guide 2026",
+    tags: ["Futuroscope", "Famille", "Prière", "Pratique"],
+    description: "Pas de salle de prière officielle au Futuroscope — voici les solutions simples pour prier pendant votre journée au parc, étape par étape.",
+    coverImage: "https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=1200&q=80",
+    category: 'Pratique',
+    readTime: "3 min",
+    publishedAt: '2026-08-06',
+    content: `<p>Journée au Futuroscope en famille ? Voici comment gérer les prières sans stress dans le parc poitevin.</p>
+<h2>L'essentiel en 30 secondes</h2><p>Pas de salle de prière officielle à notre connaissance. Les solutions : les espaces verts et coins calmes du parc, une demande à l'accueil, ou la voiture — le parking est juste à côté de l'entrée, un vrai plus ici. Les hôtels du parc, à quelques minutes à pied, simplifient tout pour ceux qui dorment sur place.</p>
+<h2>1. L'atout du Futuroscope : le parking tout proche</h2><p>Contrairement à d'autres parcs, la voiture est à quelques minutes de l'entrée. En milieu de journée, un aller-retour discret au parking est la solution la plus simple — vérifie juste les conditions de ré-entrée à l'accueil.</p>
+<h2>2. Coins calmes dans le parc</h2><p>Les pelouses et zones en retrait des pavillons offrent des espaces tranquilles, surtout pendant les grandes séances. Tapis de poche + <a href="/qibla">outil qibla</a> = affaire réglée.</p>
+<h2>3. Demande à l'accueil</h2><p>Le personnel peut t'indiquer un espace calme — la demande est courante et bien reçue. Si tu loges dans un des hôtels attenants, ta chambre couvre fajr et les prières du soir.</p>
+<h2>4. Pense au regroupement</h2><p>Avec <a href="/horaires-priere">les horaires du jour</a>, place une pause unique dhuhr+asr — et profite du spectacle nocturne l'esprit tranquille en regroupant maghrib+isha.</p>
+<h2>Questions fréquentes</h2><p><strong>Salle officielle ?</strong> Pas à notre connaissance.<br/><strong>Meilleure option ?</strong> La voiture (parking proche) ou un coin calme.<br/><strong>Ablutions ?</strong> Sanitaires du parc, nécessaire de poche recommandé.</p>
+<h2>Aide la communauté</h2><p>Un spot testé au Futuroscope, une info fraîche ? Partage-la — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
+  },
+  {
+    slug: "ou-prier-gares-paris",
+    title: "Où prier dans les gares parisiennes (Gare du Nord, Lyon, Montparnasse…) — 2026",
+    tags: ["Gare", "Paris", "Train", "Prière", "Pratique"],
+    description: "Pas de salle de prière dans les gares françaises — mais des solutions à moins de 15 minutes existent presque toujours. Le guide gare par gare.",
+    coverImage: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&q=80",
+    category: 'Pratique',
+    readTime: "4 min",
+    publishedAt: '2026-08-06',
+    content: `<p>Correspondance à Paris, train dans deux heures, et l'heure de la prière qui tourne ? Voici la réalité des gares parisiennes et les solutions qui marchent.</p>
+<h2>L'essentiel en 30 secondes</h2><p>Contrairement aux <a href="/blog/ou-prier-aeroports">aéroports</a>, les gares françaises n'ont pas de salles de prière. MAIS : Paris étant Paris, une mosquée ou salle de prière de quartier se trouve presque toujours à 10-15 minutes à pied d'une grande gare. Le réflexe : <a href="/mosquee-proche">notre outil mosquée la plus proche</a> dès l'arrivée sur le quai.</p>
+<h2>1. Le réflexe n°1 : la mosquée de quartier</h2><p>Chaque grande gare parisienne (Nord, Est, Lyon, Montparnasse, Saint-Lazare, Austerlitz) est entourée de quartiers vivants où les salles de prière existent — souvent discrètes, rarement sur les cartes touristiques. <a href="/mosquee-proche">L'outil</a> géolocalise la plus proche en deux secondes ; avec 45 minutes devant toi, c'est jouable.</p>
+<h2>2. Dans la gare : les coins possibles</h2><p>Extrémités de quais peu fréquentées, niveaux inférieurs calmes, recoins près des consignes… En dernier recours, un coin propre et discret fait l'affaire — tapis de poche et <a href="/qibla">outil qibla</a>. Évite les zones de flux et reste attentif à tes affaires.</p>
+<h2>3. Le timing malin</h2><p>Arrivé en avance ? Prie AVANT d'entrer en mode « embarquement ». Correspondance serrée ? Les facilités du voyageur existent pour ça : raccourcir, regrouper (dhuhr+asr / maghrib+isha), et prier sereinement à destination. <a href="/blog/prier-en-train">Prier dans le train</a> est aussi une option couverte dans notre guide dédié.</p>
+<h2>Questions fréquentes</h2><p><strong>Salle de prière à Gare du Nord / Gare de Lyon ?</strong> Non, aucune gare française n'en a — mais le quartier, oui : utilise l'outil.<br/><strong>Ablutions ?</strong> Toilettes de la gare (souvent payantes, monnaie utile).<br/><strong>Train imminent ?</strong> Regroupe, ou prie à bord — c'est prévu par la religion pour le voyageur.</p>
+<h2>Aide la communauté</h2><p>Tu connais LA salle de prière discrète près d'une gare parisienne ? C'est l'info la plus précieuse de ce guide — partage-la, une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
+  },
+  {
+    slug: "ou-prier-stade-de-france",
+    title: "Où prier au Stade de France (match, concert) ? — guide 2026",
+    tags: ["Stade de France", "Match", "Concert", "Prière", "Pratique"],
+    description: "Match ou concert au Stade de France et une prière à caser ? Pas de salle permanente, mais un plan simple en 3 temps — avant, pendant, après.",
+    coverImage: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&q=80",
+    category: 'Pratique',
+    readTime: "3 min",
+    publishedAt: '2026-08-06',
+    content: `<p>Billet pour le Stade de France, portes qui ouvrent à 19h, maghreb à 21h30 en plein show ? Voici le plan qui évite le casse-tête.</p>
+<h2>L'essentiel en 30 secondes</h2><p>Pas de salle de prière permanente au Stade de France (des espaces éphémères ont pu exister lors de certains événements — ne compte pas dessus). La stratégie gagnante tient en un mot : ANTICIPER. Prier avant d'entrer, regrouper les prières, et connaître le coin Saint-Denis.</p>
+<h2>1. Avant d'entrer : le meilleur moment</h2><p>Les files d'attente et contrôles engloutissent une heure facile. Prie AVANT de rejoindre la file : le parvis et les abords offrent des recoins calmes, et Saint-Denis — quartier de la basilique et du marché — compte plusieurs salles de prière accessibles : <a href="/mosquee-proche">l'outil mosquée la plus proche</a> te guide depuis le RER.</p>
+<h2>2. Le regroupement, ton meilleur allié</h2><p>Événement le soir = maghrib+isha regroupées, soit avant l'entrée, soit au retour. Consulte <a href="/horaires-priere">les horaires du jour</a> et cale ton plan : c'est exactement le type de situation pour lequel cette facilité existe.</p>
+<h2>3. Sur place, si nécessaire</h2><p>Dans l'enceinte, les coursives hautes et les abords des buvettes en dehors des pics offrent des recoins possibles — discrétion, tapis de poche et <a href="/qibla">outil qibla</a>. À la mi-temps, c'est la cohue : préfère le début de seconde période.</p>
+<h2>Questions fréquentes</h2><p><strong>Salle de prière au Stade de France ?</strong> Pas de salle permanente.<br/><strong>Le plus simple ?</strong> Prier avant d'entrer (ou regrouper après).<br/><strong>Ablutions ?</strong> Sanitaires du stade ou avant de venir — nécessaire de poche conseillé.</p>
+<h2>Aide la communauté</h2><p>Tu as prié au Stade de France ou tu connais les bons coins de Saint-Denis ? Partage — une sadaqa jâriya pour tous les supporters. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
+  },
+  {
     slug: "voyage-halal-france",
     title: "Voyage halal en France : le guide 2026 des vacances halal-friendly",
     tags: ['france', 'tourisme halal', 'vacances', 'week-end', 'halal'],
@@ -1700,6 +1788,11 @@ export const blogPosts: BlogPost[] = [
 <li><a href="/blog/ou-prier-aeroport-geneve">Où prier à l'aéroport de Genève</a></li>
 <li><a href="/blog/ou-prier-aeroport-bruxelles">Où prier à l'aéroport de Bruxelles</a></li>
 <li><a href="/blog/ou-prier-disneyland-paris">Où prier à Disneyland Paris</a></li>
+<li><a href="/blog/ou-prier-parc-asterix">Où prier au Parc Astérix</a></li>
+<li><a href="/blog/ou-prier-puy-du-fou">Où prier au Puy du Fou</a></li>
+<li><a href="/blog/ou-prier-futuroscope">Où prier au Futuroscope</a></li>
+<li><a href="/blog/ou-prier-gares-paris">Où prier dans les gares parisiennes</a></li>
+<li><a href="/blog/ou-prier-stade-de-france">Où prier au Stade de France</a></li>
 </ul>
 <p>En transit ou en route : <a href="/blog/prier-en-avion">prier en avion</a>, <a href="/blog/prier-en-train">dans le train</a>, <a href="/blog/ou-prier-aire-autoroute">sur une aire d'autoroute</a> et <a href="/blog/ou-prier-centre-commercial">dans un centre commercial</a>.</p>
 <h2>Aide la communauté</h2><p>Tu as trouvé un coin prière dans un aéroport, une gare, un centre commercial ? Partage-le : chaque spot aide des dizaines de frères et sœurs à prier en voyage — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
