@@ -306,6 +306,43 @@ export async function reactUtile(spotId: string, visitorKey: string): Promise<{ 
 // Seuil du badge « Confiance communauté » (modèle Waze)
 export const SEUIL_CONFIANCE = 5
 
+// ── « L'addition, s'il te plaît » 💶 — prix par personne réellement payés ──
+// Donnée que ni Google ni une IA ne possède : votée en 1 tap par les passants,
+// dédupliquée par visiteur, affichée en fourchette MÉDIANE (« ~5-10 €/pers »).
+export const PRIX_BUCKETS = [
+  { id: 'b1', fr: '<5 €', en: '<€5' },
+  { id: 'b2', fr: '5-10 €', en: '€5-10' },
+  { id: 'b3', fr: '10-20 €', en: '€10-20' },
+  { id: 'b4', fr: '>20 €', en: '>€20' },
+] as const
+export function prixResume(votes?: Record<string, number>, en = false): { label: string; n: number } | null {
+  if (!votes) return null
+  const order = ['b1', 'b2', 'b3', 'b4']
+  const n = order.reduce((s, k) => s + (votes[k] ?? 0), 0)
+  if (n === 0) return null
+  let cum = 0
+  for (const k of order) {
+    cum += votes[k] ?? 0
+    if (cum >= (n + 1) / 2) {
+      const b = PRIX_BUCKETS.find((x) => x.id === k)!
+      return { label: en ? b.en : b.fr, n }
+    }
+  }
+  return null
+}
+export async function votePrix(spotId: string, bucket: string, visitorKey: string): Promise<{ ok: boolean; deja?: boolean; prixVotes?: Record<string, number> }> {
+  const r = getRedis(); if (!r) return { ok: false }
+  if (!PRIX_BUCKETS.some((b) => b.id === bucket)) return { ok: false }
+  const spot = await getSpotById(spotId)
+  if (!spot) return { ok: false }
+  const added = await r.sadd(`vh:spot:${spotId}:prixvoters`, visitorKey)
+  if (!added) return { ok: true, deja: true, prixVotes: spot.prixVotes }
+  spot.prixVotes = { ...(spot.prixVotes ?? {}), [bucket]: ((spot.prixVotes ?? {})[bucket] ?? 0) + 1 }
+  await r.set(`vh:spot:${spotId}`, spot)
+  if (spot.auteurId) await addImpact(spot.auteurId, 1)
+  return { ok: true, prixVotes: spot.prixVotes }
+}
+
 // ── Salam de passage 👋 — « tu ne voyages pas seul » ──
 // Pas de texte libre (zéro modération) : juste un signe chaleureux, signé du
 // pseudo si connecté, « Un voyageur » sinon. Dédupliqué par visiteur.

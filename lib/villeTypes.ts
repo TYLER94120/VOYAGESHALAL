@@ -130,6 +130,9 @@ export interface PrayerSpot {
   infos?: Record<string, boolean> // infos halal structurées selon le type (sans_alcool, ablutions…)
   tags?: string[]         // famille, budget, calme…
   utiles?: number         // réactions légères « 🤲 utile / merci »
+  // « L'addition, s'il te plaît » : prix par personne RÉELLEMENT payés,
+  // votés en 1 tap par les passants (b1 <5 € · b2 5-10 € · b3 10-20 € · b4 >20 €)
+  prixVotes?: Record<string, number>
 }
 
 export interface VilleRoadTrip {

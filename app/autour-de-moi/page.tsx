@@ -5,6 +5,7 @@ import type { Map as LeafletMap, Marker } from 'leaflet'
 import { getPosition, describeGeoError, type GeoError, type GeoErrorCode } from '@/lib/geo'
 import { useInstantPosition } from '@/lib/useInstantPosition'
 import { computePrayerTimesFull } from '@/lib/prayerCalc'
+import { prixResume } from '@/lib/community'
 
 
 type Cat = 'mosquees' | 'restaurants' | 'hotels' | 'boucheries' | 'activites' | 'spots'
@@ -268,11 +269,15 @@ export default function AutourDeMoiPage() {
           // eslint-disable-next-line @typescript-eslint/no-explicit-any
           commu = ((j.spots || []) as any[])
             .filter((o) => want.includes(o.categorie ?? 'coin_priere'))
-            .map((o) => ({
-              id: `sp-${o.id}`, lat: o.lat, lng: o.lng, name: o.nom,
-              sub: 'partagé par la communauté', dist: (o.distanceKm ?? 0) * 1000,
-              community: true, conf: o.confirmations ?? 0,
-            }))
+            .map((o) => {
+              const px = prixResume(o.prixVotes)
+              return {
+                id: `sp-${o.id}`, lat: o.lat, lng: o.lng, name: o.nom,
+                sub: px ? `communauté · 💶 ~${px.label}/pers` : 'partagé par la communauté',
+                dist: (o.distanceKm ?? 0) * 1000,
+                community: true, conf: o.confirmations ?? 0,
+              }
+            })
         }
       } catch { /* pas de spots → annuaire seul */ }
     }

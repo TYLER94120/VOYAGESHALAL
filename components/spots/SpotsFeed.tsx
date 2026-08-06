@@ -2,7 +2,8 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import Link from 'next/link'
 import { useLanguage } from '@/components/i18n/LanguageProvider'
-import { CATEGORIES, SEUIL_CONFIANCE } from '@/lib/community'
+import { CATEGORIES, SEUIL_CONFIANCE, prixResume } from '@/lib/community'
+import PrixSpot from '@/components/community/PrixSpot'
 import MediaCapture from '@/components/spots/MediaCapture'
 import ShareSpot from '@/components/community/ShareSpot'
 import type { PrayerSpot } from '@/lib/villeTypes'
@@ -256,6 +257,11 @@ export default function SpotsFeed({ initialSpots }: { initialSpots?: Spot[] }) {
                     {trusted && <span style={{ background: 'rgba(201,168,76,0.18)', border: '1px solid rgba(201,168,76,0.6)', color: 'var(--or)', borderRadius: 999, padding: '3px 10px', fontSize: 12, fontWeight: 800 }}>🛡️ {en ? 'Trusted' : 'Confiance'}</span>}
                   </div>
                 )}
+                {(s.categorie === 'resto' || s.categorie === 'boucherie') && prixResume(s.prixVotes) && (
+                  <p style={{ margin: '6px 0 0', color: 'var(--or)', fontSize: 13.5, fontWeight: 800 }}>
+                    💶 ~{prixResume(s.prixVotes, en)!.label}/pers · {prixResume(s.prixVotes, en)!.n} {en ? 'travelers' : 'voyageurs'}
+                  </p>
+                )}
                 {conf > 0 && (
                   <p style={{ margin: '6px 0 0', color: '#3BD17A', fontSize: 13.5, fontWeight: 700 }}>
                     ✅ {en ? `Confirmed by ${conf} Muslim${conf > 1 ? 's' : ''}` : `Confirmé par ${conf} musulman${conf > 1 ? 's' : ''}`}
@@ -282,6 +288,10 @@ export default function SpotsFeed({ initialSpots }: { initialSpots?: Spot[] }) {
                     🚶 {en ? 'Go' : 'Itinéraire'}
                   </a>
                 </div>
+                {/* 💶 Après « J'y suis allé » sur un resto : le prix payé, 1 tap */}
+                {confirmed[s.id] && (s.categorie === 'resto' || s.categorie === 'boucherie') && (
+                  <PrixSpot spotId={s.id} votes={s.prixVotes} en={en} dark />
+                )}
                 {/* Enrichissement collectif : astuce + photo/reel — tout optionnel */}
                 {enriching === s.id && (
                   <div style={{ marginTop: 10, display: 'grid', gap: 8 }}>

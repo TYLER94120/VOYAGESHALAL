@@ -6,6 +6,7 @@ import { getRedis } from '@/lib/pushStore'
 import { getSpotById, addImpact, CATEGORIES, INFOS_LABELS, SEUIL_CONFIANCE } from '@/lib/community'
 import ShareSpot from '@/components/community/ShareSpot'
 import SalamBar from '@/components/community/SalamBar'
+import PrixSpot from '@/components/community/PrixSpot'
 import { getSalams } from '@/lib/community'
 import { LIEU_LABELS } from '@/lib/prayerSpots'
 import ConfirmBar from '@/components/community/ConfirmBar'
@@ -194,6 +195,12 @@ export default async function SpotPage({ params }: Props) {
           </div>
         )}
         <ConfirmBar spotId={spot.id} confirmations={spot.confirmations ?? 0} />
+        {/* 💶 L'addition, s'il te plaît — restos & boucheries uniquement */}
+        {(spot.categorie === 'resto' || spot.categorie === 'boucherie') && (
+          <div style={{ background: '#fff', border: '1px solid rgba(27,67,50,0.12)', borderRadius: 16, padding: '12px 16px', margin: '10px 0 0' }}>
+            <PrixSpot spotId={spot.id} votes={spot.prixVotes} en={en} />
+          </div>
+        )}
         {/* 👋 Salam de passage — on ne voyage jamais seul */}
         <SalamBar spotId={spot.id} initial={await getSalams(spot.id)} en={en} />
 
