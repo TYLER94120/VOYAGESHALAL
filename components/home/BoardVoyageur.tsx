@@ -219,7 +219,8 @@ export default function BoardVoyageur() {
         {/* ── Tuiles composables : la taille suit le moment (focus) ── */}
         {(() => {
           const priereWide = (
-            <div style={{ ...T.tile, background: 'linear-gradient(150deg, rgba(27,67,50,0.85), rgba(255,255,255,0.04))', borderColor: 'rgba(201,168,76,0.35)' }}>
+            <div role="link" tabIndex={0} onClick={() => { window.location.href = '/horaires-priere' }} onKeyDown={(e) => { if (e.key === 'Enter') window.location.href = '/horaires-priere' }}
+              style={{ ...T.tile, background: 'linear-gradient(150deg, rgba(27,67,50,0.85), rgba(255,255,255,0.04))', borderColor: 'rgba(201,168,76,0.35)', cursor: 'pointer' }}>
               <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 10 }}>
                 <p style={{ ...T.lab, color: accent }}>
                   🕌 {fenetre.mode === 'current' ? (en ? 'Now' : 'Maintenant') : (en ? 'Next prayer' : 'Prochaine prière')} · {fenetre.key}
@@ -245,7 +246,7 @@ export default function BoardVoyageur() {
                     {mosquee.source === 'communaute' ? '🤝' : '🕌'} <strong><bdi>{mosquee.nom}</bdi></strong>
                     <span style={{ color: 'rgba(253,250,243,0.6)' }}> · {walkMin} {en ? 'min walk' : 'min à pied'}</span>
                   </p>
-                  <a href={itin(mosquee.lat, mosquee.lng)} target="_blank" rel="noopener noreferrer"
+                  <a href={itin(mosquee.lat, mosquee.lng)} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}
                     style={{ minHeight: 44, display: 'inline-flex', alignItems: 'center', padding: '0 16px', borderRadius: 999, background: 'var(--or)', color: '#0b1a0f', fontWeight: 800, fontSize: 13.5, textDecoration: 'none' }}>
                     🚶 {en ? 'Directions' : 'Itinéraire'}
                   </a>
@@ -254,7 +255,7 @@ export default function BoardVoyageur() {
               {mosquee === null && (
                 <p style={{ ...T.meta, marginTop: 8 }}>
                   {en ? 'No known prayer place within 5 km — ' : 'Aucun lieu de prière connu à moins de 5 km — '}
-                  <Link href="/qibla" style={{ color: 'var(--or)', fontWeight: 800 }}>🧭 Qibla</Link>
+                  <Link href="/qibla" onClick={(e) => e.stopPropagation()} style={{ color: 'var(--or)', fontWeight: 800 }}>🧭 Qibla</Link>
                 </p>
               )}
             </div>
@@ -272,7 +273,8 @@ export default function BoardVoyageur() {
             </Link>
           )
           const mangerWide = bestResto && (
-            <div style={{ ...T.tile, background: 'linear-gradient(150deg, rgba(27,67,50,0.85), rgba(255,255,255,0.04))', borderColor: 'rgba(201,168,76,0.35)' }}>
+            <div role="link" tabIndex={0} onClick={() => window.open(itin(bestResto.lat, bestResto.lng), '_blank', 'noopener')} onKeyDown={(e) => { if (e.key === 'Enter') window.open(itin(bestResto.lat, bestResto.lng), '_blank', 'noopener') }}
+              style={{ ...T.tile, background: 'linear-gradient(150deg, rgba(27,67,50,0.85), rgba(255,255,255,0.04))', borderColor: 'rgba(201,168,76,0.35)', cursor: 'pointer' }}>
               <p style={T.lab}>🍽 {en ? 'Time to eat — nearest halal' : 'C\'est l\'heure de manger — le plus proche'}</p>
               <p style={{ fontFamily: "'Playfair Display', Georgia, serif", color: '#fdfaf3', fontSize: 24, fontWeight: 900, margin: '4px 0 0', lineHeight: 1.15 }}>
                 <bdi>{bestResto.nom}</bdi>
@@ -281,7 +283,7 @@ export default function BoardVoyageur() {
                 <p style={{ flex: 1, minWidth: 160, ...T.meta, fontSize: 13 }}>
                   {walk(bestResto.distM)} {en ? 'min walk' : 'min à pied'} · {bestResto.source === 'communaute' ? (en ? 'community · to confirm' : 'communauté · à confirmer') : (en ? 'reported halal · verify' : 'signalé halal · à vérifier')}
                 </p>
-                <a href={itin(bestResto.lat, bestResto.lng)} target="_blank" rel="noopener noreferrer"
+                <a href={itin(bestResto.lat, bestResto.lng)} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}
                   style={{ minHeight: 44, display: 'inline-flex', alignItems: 'center', padding: '0 16px', borderRadius: 999, background: 'var(--or)', color: '#0b1a0f', fontWeight: 800, fontSize: 13.5, textDecoration: 'none' }}>
                   🚶 {en ? 'Directions' : 'Itinéraire'}
                 </a>
@@ -289,13 +291,15 @@ export default function BoardVoyageur() {
             </div>
           )
           const mangerSmall = (
-            <div style={{ ...T.tile, flex: 1 }}>
+            <div role={bestResto ? 'link' : undefined} tabIndex={bestResto ? 0 : undefined}
+              onClick={bestResto ? () => window.open(itin(bestResto.lat, bestResto.lng), '_blank', 'noopener') : undefined}
+              style={{ ...T.tile, flex: 1, cursor: bestResto ? 'pointer' : 'default' }}>
               <p style={T.lab}>🍽 {en ? 'Eat halal' : 'Manger halal'}</p>
               {resto === undefined && !bestResto ? <p style={{ ...T.meta, marginTop: 4 }}>…</p>
                 : !bestResto ? <p style={{ ...T.meta, marginTop: 4 }}>{en ? 'None reported nearby' : 'Aucun signalé à proximité'}</p>
                 : (
                   <>
-                    <a href={itin(bestResto.lat, bestResto.lng)} target="_blank" rel="noopener noreferrer" style={{ color: '#fdfaf3', fontWeight: 800, fontSize: 13.5, textDecoration: 'none', display: 'block', margin: '3px 0 1px', lineHeight: 1.3 }}>
+                    <a href={itin(bestResto.lat, bestResto.lng)} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} style={{ color: '#fdfaf3', fontWeight: 800, fontSize: 13.5, textDecoration: 'none', display: 'block', margin: '3px 0 1px', lineHeight: 1.3 }}>
                       <bdi>{bestResto.nom}</bdi> →
                     </a>
                     <p style={T.meta}>
@@ -405,18 +409,18 @@ export default function BoardVoyageur() {
               <p style={{ ...T.meta, color: 'var(--or)', fontWeight: 700 }}>{en ? 'Compass →' : 'Boussole →'}</p>
             </span>
           </Link>
-          <div style={{ ...T.tile, display: 'flex', alignItems: 'center', gap: 12 }}>
+          <Link href="/horaires-priere" style={{ ...T.tile, display: 'flex', alignItems: 'center', gap: 12, textDecoration: 'none' }}>
             <span style={{ fontSize: 24 }} aria-hidden>🌙</span>
             <span>
               <p style={T.lab}>{en ? 'Hijri date' : 'Date hégirienne'}</p>
               <p style={{ color: '#fdfaf3', fontWeight: 800, fontSize: 14, margin: '2px 0 0', lineHeight: 1.3 }}>{hijri ?? '—'}</p>
             </span>
-          </div>
+          </Link>
         </div>
 
         {/* ── Bande : les 5 prieres du jour, la prochaine en or ── */}
         {journee && (
-          <div style={{ ...T.tile, marginTop: 10, display: 'flex', justifyContent: 'space-between', gap: 6, padding: '11px 12px' }}>
+          <Link href="/horaires-priere" style={{ ...T.tile, marginTop: 10, display: 'flex', justifyContent: 'space-between', gap: 6, padding: '11px 12px', textDecoration: 'none' }}>
             {journee.map(({ k, d }) => {
               const active = fenetre.key === k
               return (
@@ -426,7 +430,7 @@ export default function BoardVoyageur() {
                 </div>
               )
             })}
-          </div>
+          </Link>
         )}
       </div>
     </section>
