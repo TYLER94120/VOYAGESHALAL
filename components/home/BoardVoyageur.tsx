@@ -134,6 +134,33 @@ export default function BoardVoyageur() {
 
   if (!pos || !fenetre) return null
 
+  // ── Cadrans locaux supplementaires (zero reseau, zero invention) ──
+  // Qibla : cap vers la Kaaba depuis la position
+  const qibla = (() => {
+    const p = Math.PI / 180, kLat = 21.4225 * p, kLng = 39.8262 * p
+    const la = pos.lat * p, lo = pos.lng * p
+    const y = Math.sin(kLng - lo)
+    const x = Math.cos(la) * Math.tan(kLat) - Math.sin(la) * Math.cos(kLng - lo)
+    const deg = Math.round(((Math.atan2(y, x) / p) + 360) % 360)
+    const dirs = en
+      ? ['N', 'NNE', 'NE', 'ENE', 'E', 'ESE', 'SE', 'SSE', 'S', 'SSW', 'SW', 'WSW', 'W', 'WNW', 'NW', 'NNW']
+      : ['N', 'NNE', 'NE', 'ENE', 'E', 'ESE', 'SE', 'SSE', 'S', 'SSO', 'SO', 'OSO', 'O', 'ONO', 'NO', 'NNO']
+    return { deg, dir: dirs[Math.round(deg / 22.5) % 16] }
+  })()
+  // Date hegirienne du jour (calendrier islamique du telephone)
+  const hijri = (() => {
+    try {
+      return new Intl.DateTimeFormat(en ? 'en-u-ca-islamic-umalqura' : 'fr-u-ca-islamic-umalqura', { day: 'numeric', month: 'long', year: 'numeric' }).format(new Date(now))
+    } catch { return null }
+  })()
+  // Les 5 prieres du jour (meme calcul local que la tuile maitre)
+  const journee = (() => {
+    try {
+      const t = computePrayerTimesFull(pos.lat, pos.lng, 3, 0, new Date(now))
+      return (['Fajr', 'Dhuhr', 'Asr', 'Maghrib', 'Isha'] as const).map((k) => ({ k, d: t[k] }))
+    } catch { return null }
+  })()
+
   const boundary = fenetre.mode === 'current' ? fenetre.end.getTime() : fenetre.start.getTime()
   const minLeft = Math.max(0, Math.round((boundary - now) / 60000))
   const walkMin = mosquee ? walk(mosquee.distM) : null
@@ -286,6 +313,40 @@ export default function BoardVoyageur() {
             <Link href="/spots" style={{ flex: 'none', width: 92, height: 128, borderRadius: 14, border: '1.5px dashed rgba(201,168,76,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--or)', fontWeight: 800, fontSize: 12.5, textDecoration: 'none', textAlign: 'center' }}>
               {en ? 'All spots →' : 'Tous les spots →'}
             </Link>
+          </div>
+        )}
+
+        {/* ── Rangee : Qibla + date hegirienne (calcul local) ── */}
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginTop: 10 }}>
+          <Link href="/qibla" style={{ ...T.tile, textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 12 }}>
+            <span style={{ fontSize: 26, transform: `rotate(${qibla.deg}deg)`, display: 'inline-block', lineHeight: 1 }} aria-hidden>🧭</span>
+            <span>
+              <p style={T.lab}>{en ? 'Qibla' : 'Qibla'}</p>
+              <p style={{ color: '#fdfaf3', fontWeight: 800, fontSize: 15, margin: '2px 0 0' }}>{qibla.deg}° · {qibla.dir}</p>
+              <p style={{ ...T.meta, color: 'var(--or)', fontWeight: 700 }}>{en ? 'Compass →' : 'Boussole →'}</p>
+            </span>
+          </Link>
+          <div style={{ ...T.tile, display: 'flex', alignItems: 'center', gap: 12 }}>
+            <span style={{ fontSize: 24 }} aria-hidden>🌙</span>
+            <span>
+              <p style={T.lab}>{en ? 'Hijri date' : 'Date hégirienne'}</p>
+              <p style={{ color: '#fdfaf3', fontWeight: 800, fontSize: 14, margin: '2px 0 0', lineHeight: 1.3 }}>{hijri ?? '—'}</p>
+            </span>
+          </div>
+        </div>
+
+        {/* ── Bande : les 5 prieres du jour, la prochaine en or ── */}
+        {journee && (
+          <div style={{ ...T.tile, marginTop: 10, display: 'flex', justifyContent: 'space-between', gap: 6, padding: '11px 12px' }}>
+            {journee.map(({ k, d }) => {
+              const active = fenetre.key === k
+              return (
+                <div key={k} style={{ textAlign: 'center', flex: 1, borderRadius: 10, padding: '5px 2px', background: active ? 'rgba(201,168,76,0.16)' : 'transparent' }}>
+                  <p style={{ fontSize: 10, fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', color: active ? 'var(--or)' : 'rgba(253,250,243,0.55)', margin: 0 }}>{k}</p>
+                  <p style={{ color: active ? '#fdfaf3' : 'rgba(253,250,243,0.75)', fontWeight: active ? 800 : 600, fontSize: 12.5, margin: '2px 0 0', fontVariantNumeric: 'tabular-nums' }}>{fmtClock(d)}</p>
+                </div>
+              )
+            })}
           </div>
         )}
       </div>
