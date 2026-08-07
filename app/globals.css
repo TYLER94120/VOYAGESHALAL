@@ -513,17 +513,25 @@ body { top: 0 !important; }
   }
 }
 
+/* Dock flottant (étape 2 du board) : pilule détachée du bord, fond nuit,
+   liseré or — la nav fait partie du design au lieu de le couper. */
 .bottom-nav {
   display: none;
   position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: white;
-  border-top: 1px solid #e5e7eb;
-  box-shadow: 0 -4px 20px rgba(0,0,0,0.08);
+  bottom: calc(10px + env(safe-area-inset-bottom));
+  left: 12px;
+  right: 12px;
+  max-width: 560px;
+  margin: 0 auto;
+  background: rgba(11, 26, 15, 0.94);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(201, 168, 76, 0.35);
+  border-radius: 999px;
+  box-shadow: 0 10px 34px rgba(0, 0, 0, 0.45);
   z-index: 100;
-  padding: 8px 0 env(safe-area-inset-bottom);
+  padding: 8px 6px;
+  align-items: flex-end;
 }
 .bottom-nav-item {
   display: flex;
@@ -531,17 +539,30 @@ body { top: 0 !important; }
   align-items: center;
   gap: 3px;
   text-decoration: none;
-  color: #9ca3af;
+  color: rgba(253, 250, 243, 0.55);
   flex: 1;
   padding: 4px 0;
   transition: color 0.15s;
 }
-.bottom-nav-item.active { color: #1b4332; }
-.bottom-nav-icon { font-size: 22px; }
-.bottom-nav-label { font-size: 10px; font-weight: 600; }
+.bottom-nav-item.active { color: var(--or); }
+.bottom-nav-icon { font-size: 22px; line-height: 1; }
+.bottom-nav-label { font-size: 10px; font-weight: 700; }
+/* ➕ Ajouter : pastille OR surélevée au centre — l'action la plus précieuse
+   du site (nourrir les spots) devient physiquement le bouton le plus visible */
+.bottom-nav-plus { color: rgba(253, 250, 243, 0.75); }
+.bottom-nav-plus .bottom-nav-icon {
+  display: flex; align-items: center; justify-content: center;
+  width: 54px; height: 54px; margin-top: -30px;
+  border-radius: 50%;
+  background: var(--or);
+  color: #0b1a0f;
+  font-size: 26px; font-weight: 800;
+  box-shadow: 0 8px 22px rgba(201, 168, 76, 0.45), 0 0 0 4px rgba(11, 26, 15, 0.94);
+}
+.bottom-nav-plus.active { color: var(--or); }
 @media (max-width: 1023px) {
   .bottom-nav { display: flex; }
-  body { padding-bottom: 70px; }
+  body { padding-bottom: 96px; }
   /* Rendu 100% "app" sous 1024px : header & footer desktop masqués
      (navigation assurée par la bottom-nav + les heros de chaque écran).
      ≥1024px : layout web complet (header/footer visibles, bottom-nav masquée). */
