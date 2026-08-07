@@ -1,0 +1,23 @@
+name: photo-migrate
+# Declenche la migration des photos historiques (data-URL -> Vercel Blob)
+# puis re-pese la page /spots pour verifier le gain. Manuel uniquement.
+
+on: workflow_dispatch
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run migration and re-weigh /spots
+        run: |
+          FR=https://www.voyageshalal.fr
+          echo "── Migration ──"
+          curl -s -w "\nHTTP %{http_code}\n" -X POST "$FR/api/admin/migrate-photos" | head -c 2000
+          echo ""
+          echo "── Poids /spots apres ──"
+          for i in 1 2 3; do
+            curl -s -o /dev/null -w "ttfb %{time_starttransfer}s | total %{time_total}s | %{size_download} octets\n" \
+              -H 'User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X)' "$FR/spots"
+          done
+          echo "── Poids de l'API feed apres ──"
+          curl -s -o /dev/null -w "/api/community/spots : %{size_download} octets\n" "$FR/api/community/spots?limit=20"
