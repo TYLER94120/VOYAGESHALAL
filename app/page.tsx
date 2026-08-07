@@ -9,7 +9,7 @@ import { buildWebSiteSchema, buildOrganizationSchema } from '@/lib/seo'
 import { guides } from '@/lib/data'
 import NearbySpotsHome from '@/components/community/NearbySpotsHome'
 import RecentSpotsHome from '@/components/spots/RecentSpotsHome'
-import RadarPriere from '@/components/home/RadarPriere'
+import BoardVoyageur from '@/components/home/BoardVoyageur'
 import { HomeScoreRanking } from '@/components/HomeScoreRanking'
 import IslamicPattern from '@/components/ui/IslamicPattern'
 import SearchBarHome from '@/components/search/SearchBarHome'
@@ -121,6 +121,10 @@ export default async function HomePage() {
     <JsonLd data={orgSchema} />
     {/* Design unifié : même accueil sur mobile et desktop */}
     <main style={{ backgroundColor: '#fdfaf3' }}>
+      {/* 🎛️ Board voyageur (bento) : rendu client au-dessus du hero quand la
+          position est connue — absorbe le Radar Prière. Le HTML serveur
+          en dessous ne change pas : SEO intact. */}
+      <BoardVoyageur />
       {/* Hero plein écran minimaliste */}
       <section
         className="relative overflow-hidden flex items-center justify-center text-center px-6"
@@ -176,10 +180,8 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* 🧭 Radar Prière — « ai-je le temps d'arriver avant la fin du créneau ? » */}
-      <RadarPriere />
-
-      {/* 💎 Le cœur : derniers spots partagés + spots près de toi */}
+      {/* 💎 Le cœur : derniers spots partagés + spots près de toi
+          (le Radar Prière vit désormais dans le Board voyageur ci-dessus) */}
       <RecentSpotsHome />
       <NearbySpotsHome />
 
