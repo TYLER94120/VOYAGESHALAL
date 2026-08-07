@@ -44,7 +44,7 @@ export default function PrayerCountdownBar() {
 
   let inner: React.ReactNode
   if (!city) {
-    inner = <Link href="/horaires-priere" className="prayer-bar-main">🕌 <span style={{ opacity: 0.85 }}>{en ? 'Choose your city for prayer times' : 'Choisissez votre ville pour les horaires'}</span></Link>
+    inner = <Link href="/horaires-priere" className="prayer-bar-main"><span style={{ opacity: 0.85 }}>🕌 {en ? 'Choose your city for prayer times' : 'Choisissez votre ville pour les horaires'}</span></Link>
   } else if (!timings) {
     inner = <span className="prayer-bar-main">🕌 <span style={{ opacity: 0.7 }}>{en ? 'Loading prayer times…' : 'Chargement des horaires…'}</span></span>
   } else {
