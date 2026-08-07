@@ -123,7 +123,13 @@ export default function BoardVoyageur() {
     const pepite = [...avecMedia].sort((a, b) =>
       ((b.confirmations ?? 0) * 3 + (b.utiles ?? 0)) - ((a.confirmations ?? 0) * 3 + (a.utiles ?? 0)))[0]
       ?? avecMedia[0] ?? null
-    return { autour, reels: avecMedia.slice(0, 10), pepite, proches: autour.filter((s) => s.distM < 3000) }
+    // Bande de reels sans la pepite (deja en grande tuile) ; compteur : les
+    // spots vraiment proches (<3 km), sinon ceux de la zone (honnete : on
+    // change le libelle, pas le chiffre)
+    const reels = avecMedia.filter((s) => s.id !== pepite?.id).slice(0, 10)
+    const proches = autour.filter((s) => s.distM < 3000)
+    const restoCom = autour.find((s) => s.categorie === 'resto' && s.distM < 5000) ?? null
+    return { autour, reels, pepite, proches, restoCom }
   }, [pos, spots])
 
   if (!pos || !fenetre) return null
@@ -189,7 +195,7 @@ export default function BoardVoyageur() {
           {mosquee && (
             <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginTop: 10, flexWrap: 'wrap' }}>
               <p style={{ flex: 1, minWidth: 170, color: '#fdfaf3', fontSize: 14, margin: 0, lineHeight: 1.45 }}>
-                {mosquee.source === 'communaute' ? '🤝' : '🕌'} <strong>{mosquee.nom}</strong>
+                {mosquee.source === 'communaute' ? '🤝' : '🕌'} <strong><bdi>{mosquee.nom}</bdi></strong>
                 <span style={{ color: 'rgba(253,250,243,0.6)' }}> · {walkMin} {en ? 'min walk' : 'min à pied'}</span>
               </p>
               <a href={itin(mosquee.lat, mosquee.lng)} target="_blank" rel="noopener noreferrer"
@@ -226,24 +232,40 @@ export default function BoardVoyageur() {
           <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
             <div style={{ ...T.tile, flex: 1 }}>
               <p style={T.lab}>🍽 {en ? 'Eat halal' : 'Manger halal'}</p>
-              {resto === undefined && <p style={{ ...T.meta, marginTop: 4 }}>…</p>}
-              {resto && (
-                <>
-                  <a href={itin(resto.lat, resto.lng)} target="_blank" rel="noopener noreferrer" style={{ color: '#fdfaf3', fontWeight: 800, fontSize: 13.5, textDecoration: 'none', display: 'block', margin: '3px 0 1px', lineHeight: 1.3 }}>
-                    {resto.nom} →
-                  </a>
-                  <p style={T.meta}>
-                    {walk(resto.distM)} {en ? 'min walk' : 'min à pied'} · {resto.source === 'communaute' ? (en ? 'community' : 'communauté') : (en ? 'reported halal · verify' : 'signalé halal · à vérifier')}
-                  </p>
-                </>
-              )}
-              {resto === null && <p style={{ ...T.meta, marginTop: 4 }}>{en ? 'None reported within 3 km' : 'Aucun signalé à moins de 3 km'}</p>}
+              {(() => {
+                // OSM/spots dans 3 km, sinon resto communautaire jusqu'a 5 km
+                const rc = pres?.restoCom
+                const best = resto ?? (rc && rc.lat && rc.lng ? { nom: rc.nom, lat: rc.lat, lng: rc.lng, source: 'communaute' as const, distM: (rc as { distM: number }).distM } : null)
+                if (resto === undefined && !best) return <p style={{ ...T.meta, marginTop: 4 }}>…</p>
+                if (!best) return <p style={{ ...T.meta, marginTop: 4 }}>{en ? 'None reported nearby' : 'Aucun signalé à proximité'}</p>
+                return (
+                  <>
+                    <a href={itin(best.lat, best.lng)} target="_blank" rel="noopener noreferrer" style={{ color: '#fdfaf3', fontWeight: 800, fontSize: 13.5, textDecoration: 'none', display: 'block', margin: '3px 0 1px', lineHeight: 1.3 }}>
+                      <bdi>{best.nom}</bdi> →
+                    </a>
+                    <p style={T.meta}>
+                      {walk(best.distM)} {en ? 'min walk' : 'min à pied'} · {best.source === 'communaute' ? (en ? 'community · to confirm' : 'communauté · à confirmer') : (en ? 'reported halal · verify' : 'signalé halal · à vérifier')}
+                    </p>
+                  </>
+                )
+              })()}
             </div>
             <Link href="/autour-de-moi" style={{ ...T.tile, flex: 1, textDecoration: 'none', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-              <p style={{ margin: 0 }}>
-                <span style={{ fontFamily: "'Playfair Display', Georgia, serif", color: 'var(--or)', fontSize: 26, fontWeight: 700 }}>{pres ? pres.proches.length : '…'}</span>
-                <span style={{ ...T.meta, marginLeft: 6 }}>{en ? 'spots around you' : 'spots autour de toi'}</span>
-              </p>
+              {(() => {
+                // Compteur honnete : les spots < 3 km si possible, sinon ceux de
+                // la zone (30 km) avec le nom de la ville — jamais un « 0 » sec
+                const n = pres ? (pres.proches.length || pres.autour.length) : null
+                const villeNom = pres?.autour[0]?.villeNom
+                const labZone = pres && !pres.proches.length && villeNom
+                return (
+                  <p style={{ margin: 0 }}>
+                    <span style={{ fontFamily: "'Playfair Display', Georgia, serif", color: 'var(--or)', fontSize: 26, fontWeight: 700 }}>{n ?? '…'}</span>
+                    <span style={{ ...T.meta, marginLeft: 6 }}>
+                      {labZone ? (en ? `spots in ${villeNom}` : `spots à ${villeNom}`) : (en ? 'spots around you' : 'spots autour de toi')}
+                    </span>
+                  </p>
+                )
+              })()}
               <p style={{ ...T.meta, color: 'var(--or)', fontWeight: 700 }}>{en ? 'Open the map →' : 'Ouvrir la carte →'}</p>
             </Link>
           </div>
