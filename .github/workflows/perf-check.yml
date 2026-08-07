@@ -1,0 +1,31 @@
+name: perf-check
+# Chrono de la PROD : decompose le temps de reponse (DNS, TLS, attente
+# serveur = TTFB, telechargement) des pages cles, 3 mesures chacune, pour
+# localiser la page blanche au demarrage. Manuel uniquement.
+
+on: workflow_dispatch
+
+jobs:
+  perf:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Time production pages
+        run: |
+          FR=https://www.voyageshalal.fr
+          EN=https://www.gohalaltravel.com
+          W='dns %{time_namelookup}s | tls %{time_appconnect}s | ttfb %{time_starttransfer}s | total %{time_total}s | %{size_download} octets\n'
+          for url in "$FR/" "$FR/spots" "$FR/communaute/ajouter" "$FR/horaires-priere" "$EN/"; do
+            echo "── $url ──"
+            for i in 1 2 3; do
+              curl -s -o /dev/null -w "$W" -H 'User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X)' "$url"
+            done
+          done
+          echo "── Poids des assets critiques (page /) ──"
+          curl -s "$FR/" | grep -o '/_next/static/[^"]*\.js' | sort -u | head -20 > /tmp/js.txt
+          total=0
+          while read -r p; do
+            s=$(curl -s -o /dev/null -w '%{size_download}' "$FR$p")
+            total=$((total+s))
+            echo "$s octets  $p"
+          done < /tmp/js.txt
+          echo "TOTAL JS: $total octets"
