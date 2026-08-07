@@ -291,9 +291,10 @@ export default function BoardVoyageur() {
             </div>
           )
           const mangerSmall = (
-            <div role={bestResto ? 'link' : undefined} tabIndex={bestResto ? 0 : undefined}
-              onClick={bestResto ? () => window.open(itin(bestResto.lat, bestResto.lng), '_blank', 'noopener') : undefined}
-              style={{ ...T.tile, flex: 1, cursor: bestResto ? 'pointer' : 'default' }}>
+            <div role="link" tabIndex={0}
+              onClick={() => { if (bestResto) window.open(itin(bestResto.lat, bestResto.lng), '_blank', 'noopener'); else window.location.href = '/autour-de-moi' }}
+              onKeyDown={(e) => { if (e.key !== 'Enter') return; if (bestResto) window.open(itin(bestResto.lat, bestResto.lng), '_blank', 'noopener'); else window.location.href = '/autour-de-moi' }}
+              style={{ ...T.tile, flex: 1, cursor: 'pointer' }}>
               <p style={T.lab}>🍽 {en ? 'Eat halal' : 'Manger halal'}</p>
               {resto === undefined && !bestResto ? <p style={{ ...T.meta, marginTop: 4 }}>…</p>
                 : !bestResto ? <p style={{ ...T.meta, marginTop: 4 }}>{en ? 'None reported nearby' : 'Aucun signalé à proximité'}</p>
