@@ -1,0 +1,25 @@
+name: blob-diag
+# Diagnostic Vercel Blob : simule la demande de jeton d'upload que fait le
+# navigateur (protocole @vercel/blob/client) et affiche la reponse brute du
+# serveur, pour lire la cause exacte d'un echec d'envoi. Manuel uniquement.
+
+on: workflow_dispatch
+
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Simulate client token request
+        run: |
+          FR=https://www.voyageshalal.fr
+          echo "── 1. Demande de jeton client (photo jpg) ──"
+          curl -s -w "\nHTTP %{http_code}\n" -X POST "$FR/api/media/upload" \
+            -H 'Content-Type: application/json' \
+            -d '{"type":"blob.generate-client-token","payload":{"pathname":"spots/diag-test.jpg","callbackUrl":"https://www.voyageshalal.fr/api/media/upload","clientPayload":null,"multipart":false}}'
+          echo "── 2. Meme demande (video webm) ──"
+          curl -s -w "\nHTTP %{http_code}\n" -X POST "$FR/api/media/upload" \
+            -H 'Content-Type: application/json' \
+            -d '{"type":"blob.generate-client-token","payload":{"pathname":"spots/diag-test.webm","callbackUrl":"https://www.voyageshalal.fr/api/media/upload","clientPayload":null,"multipart":false}}'
+          echo "── 3. Corps vide (controle : doit dire type manquant, pas MEDIA_OFF) ──"
+          curl -s -w "\nHTTP %{http_code}\n" -X POST "$FR/api/media/upload" \
+            -H 'Content-Type: application/json' -d '{}'
