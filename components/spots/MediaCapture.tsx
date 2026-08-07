@@ -130,7 +130,9 @@ export default function MediaCapture({ onDone, onSkip, skipLabel }: { onDone: (m
     setMode('envoi')
     try {
       const { upload } = await import('@vercel/blob/client')
-      const type = videoBlob.type || 'video/webm'
+      // MediaRecorder étiquette « video/webm;codecs=vp9,opus » — le serveur
+      // valide sur le type nu, sans le suffixe codecs
+      const type = (videoBlob.type || 'video/webm').split(';')[0].trim() || 'video/webm'
       const ext = type.includes('webm') ? 'webm' : type.includes('quicktime') ? 'mov' : 'mp4'
       const blob = await upload(`spots/reel-${Date.now().toString(36)}.${ext}`, videoBlob, {
         access: 'public',
