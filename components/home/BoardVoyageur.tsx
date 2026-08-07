@@ -174,6 +174,24 @@ export default function BoardVoyageur() {
   const pepite = pres?.pepite ?? null
   const pepiteImg = pepite?.photos?.[0]?.startsWith('http') ? pepite.photos[0] : pepite?.villeImage
 
+  // Meilleur resto : OSM/spots < 3 km, sinon resto communautaire < 5 km
+  const rc = pres?.restoCom
+  const bestResto = resto ?? (rc && rc.lat && rc.lng
+    ? { nom: rc.nom, lat: rc.lat, lng: rc.lng, source: 'communaute' as const, distM: (rc as unknown as { distM: number }).distM }
+    : null)
+
+  // ── Etape 3 : le board vit avec l'heure — la bonne tuile grossit au bon
+  // moment. La priere garde toujours la priorite quand elle approche. ──
+  const heure = new Date(now).getHours()
+  const prayerUrgent = minLeft <= 45 || (statut != null && statut !== 'vert')
+  const repas = (heure >= 11 && heure < 14) || (heure >= 19 && heure < 22)
+  const soiree = heure >= 21 || heure < 5
+  const focus: 'priere' | 'manger' | 'soiree' =
+    prayerUrgent ? 'priere'
+    : repas && bestResto ? 'manger'
+    : soiree && pepite ? 'soiree'
+    : 'priere'
+
   const T = {
     lab: { fontSize: 10.5, fontWeight: 800 as const, letterSpacing: '0.12em', textTransform: 'uppercase' as const, color: 'var(--or)', margin: 0 },
     tile: { background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(253,250,243,0.1)', borderRadius: 18, padding: '13px 14px' },
@@ -198,89 +216,113 @@ export default function BoardVoyageur() {
           </Link>
         </div>
 
-        {/* ── Tuile large : la priere (le cadran maitre) ── */}
-        <div style={{ ...T.tile, background: 'linear-gradient(150deg, rgba(27,67,50,0.85), rgba(255,255,255,0.04))', borderColor: 'rgba(201,168,76,0.35)' }}>
-          <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 10 }}>
-            <p style={{ ...T.lab, color: accent }}>
-              🕌 {fenetre.mode === 'current' ? (en ? 'Now' : 'Maintenant') : (en ? 'Next prayer' : 'Prochaine prière')} · {fenetre.key}
-            </p>
-            <p style={{ ...T.meta, fontWeight: 700 }}>{fmtClock(fenetre.start)}</p>
-          </div>
-          <p style={{ fontFamily: "'Playfair Display', Georgia, serif", color: '#fdfaf3', fontSize: 30, fontWeight: 900, margin: '2px 0 0', lineHeight: 1.05 }}>
-            {fenetre.mode === 'current'
-              ? (en ? `ends in ${fmtMin(minLeft)}` : `se termine dans ${fmtMin(minLeft)}`)
-              : (en ? `in ${fmtMin(minLeft)}` : `dans ${fmtMin(minLeft)}`)}
-          </p>
-          {statut && (
-            <p style={{ fontSize: 13, fontWeight: 800, color: accent, margin: '4px 0 0' }}>
-              {statut === 'vert' ? (en ? '🟢 You have time to reach the mosque' : '🟢 Tu as le temps d\'arriver à la mosquée')
-                : statut === 'orange' ? (en ? '🟠 Leave now' : '🟠 Pars maintenant')
-                : (en ? '🔴 Pray where you can' : '🔴 Prie où tu peux')}
-            </p>
-          )}
-          {mosquee === undefined && <p style={{ ...T.meta, marginTop: 8 }}>{en ? 'Finding the nearest prayer place…' : 'Recherche du lieu de prière le plus proche…'}</p>}
-          {mosquee && (
-            <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginTop: 10, flexWrap: 'wrap' }}>
-              <p style={{ flex: 1, minWidth: 170, color: '#fdfaf3', fontSize: 14, margin: 0, lineHeight: 1.45 }}>
-                {mosquee.source === 'communaute' ? '🤝' : '🕌'} <strong><bdi>{mosquee.nom}</bdi></strong>
-                <span style={{ color: 'rgba(253,250,243,0.6)' }}> · {walkMin} {en ? 'min walk' : 'min à pied'}</span>
+        {/* ── Tuiles composables : la taille suit le moment (focus) ── */}
+        {(() => {
+          const priereWide = (
+            <div style={{ ...T.tile, background: 'linear-gradient(150deg, rgba(27,67,50,0.85), rgba(255,255,255,0.04))', borderColor: 'rgba(201,168,76,0.35)' }}>
+              <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 10 }}>
+                <p style={{ ...T.lab, color: accent }}>
+                  🕌 {fenetre.mode === 'current' ? (en ? 'Now' : 'Maintenant') : (en ? 'Next prayer' : 'Prochaine prière')} · {fenetre.key}
+                </p>
+                <p style={{ ...T.meta, fontWeight: 700 }}>{fmtClock(fenetre.start)}</p>
+              </div>
+              <p style={{ fontFamily: "'Playfair Display', Georgia, serif", color: '#fdfaf3', fontSize: 30, fontWeight: 900, margin: '2px 0 0', lineHeight: 1.05 }}>
+                {fenetre.mode === 'current'
+                  ? (en ? `ends in ${fmtMin(minLeft)}` : `se termine dans ${fmtMin(minLeft)}`)
+                  : (en ? `in ${fmtMin(minLeft)}` : `dans ${fmtMin(minLeft)}`)}
               </p>
-              <a href={itin(mosquee.lat, mosquee.lng)} target="_blank" rel="noopener noreferrer"
-                style={{ minHeight: 44, display: 'inline-flex', alignItems: 'center', padding: '0 16px', borderRadius: 999, background: 'var(--or)', color: '#0b1a0f', fontWeight: 800, fontSize: 13.5, textDecoration: 'none' }}>
-                🚶 {en ? 'Directions' : 'Itinéraire'}
-              </a>
+              {statut && (
+                <p style={{ fontSize: 13, fontWeight: 800, color: accent, margin: '4px 0 0' }}>
+                  {statut === 'vert' ? (en ? '🟢 You have time to reach the mosque' : '🟢 Tu as le temps d\'arriver à la mosquée')
+                    : statut === 'orange' ? (en ? '🟠 Leave now' : '🟠 Pars maintenant')
+                    : (en ? '🔴 Pray where you can' : '🔴 Prie où tu peux')}
+                </p>
+              )}
+              {mosquee === undefined && <p style={{ ...T.meta, marginTop: 8 }}>{en ? 'Finding the nearest prayer place…' : 'Recherche du lieu de prière le plus proche…'}</p>}
+              {mosquee && (
+                <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginTop: 10, flexWrap: 'wrap' }}>
+                  <p style={{ flex: 1, minWidth: 170, color: '#fdfaf3', fontSize: 14, margin: 0, lineHeight: 1.45 }}>
+                    {mosquee.source === 'communaute' ? '🤝' : '🕌'} <strong><bdi>{mosquee.nom}</bdi></strong>
+                    <span style={{ color: 'rgba(253,250,243,0.6)' }}> · {walkMin} {en ? 'min walk' : 'min à pied'}</span>
+                  </p>
+                  <a href={itin(mosquee.lat, mosquee.lng)} target="_blank" rel="noopener noreferrer"
+                    style={{ minHeight: 44, display: 'inline-flex', alignItems: 'center', padding: '0 16px', borderRadius: 999, background: 'var(--or)', color: '#0b1a0f', fontWeight: 800, fontSize: 13.5, textDecoration: 'none' }}>
+                    🚶 {en ? 'Directions' : 'Itinéraire'}
+                  </a>
+                </div>
+              )}
+              {mosquee === null && (
+                <p style={{ ...T.meta, marginTop: 8 }}>
+                  {en ? 'No known prayer place within 5 km — ' : 'Aucun lieu de prière connu à moins de 5 km — '}
+                  <Link href="/qibla" style={{ color: 'var(--or)', fontWeight: 800 }}>🧭 Qibla</Link>
+                </p>
+              )}
             </div>
-          )}
-          {mosquee === null && (
-            <p style={{ ...T.meta, marginTop: 8 }}>
-              {en ? 'No known prayer place within 5 km — ' : 'Aucun lieu de prière connu à moins de 5 km — '}
-              <Link href="/qibla" style={{ color: 'var(--or)', fontWeight: 800 }}>🧭 Qibla</Link>
-            </p>
-          )}
-        </div>
-
-        {/* ── Rangee : pepite (media) + colonne manger / spots autour ── */}
-        <div style={{ display: 'grid', gridTemplateColumns: '1.15fr 1fr', gap: 10, marginTop: 10 }}>
-          {pepite ? (
-            <Link href={`/spot/${pepite.id}`} style={{ ...T.tile, padding: 0, overflow: 'hidden', position: 'relative', minHeight: 172, display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', textDecoration: 'none', backgroundImage: pepiteImg ? `linear-gradient(180deg, rgba(11,26,15,0.05) 30%, rgba(11,26,15,0.9)), url(${pepiteImg})` : 'linear-gradient(160deg, #1d4a35, #0e2013)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+          )
+          // Bandeau priere compact : tout tient sur une ligne quand la priere
+          // n'est pas le moment dominant
+          const priereSlim = (
+            <Link href="/horaires-priere" style={{ ...T.tile, marginTop: 10, display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none', padding: '11px 14px' }}>
+              <span style={{ fontSize: 18 }} aria-hidden>🕌</span>
+              <p style={{ flex: 1, color: '#fdfaf3', fontWeight: 700, fontSize: 13.5, margin: 0, lineHeight: 1.35 }}>
+                {fenetre.key} {fenetre.mode === 'current' ? (en ? 'ends in' : 'se termine dans') : (en ? 'in' : 'dans')} <strong style={{ color: 'var(--or)' }}>{fmtMin(minLeft)}</strong>
+                {mosquee ? <span style={{ color: 'rgba(253,250,243,0.6)' }}> · <bdi>{mosquee.nom}</bdi> ({walkMin} min)</span> : null}
+              </p>
+              <span style={{ color: 'var(--or)', fontWeight: 800, fontSize: 13 }}>→</span>
+            </Link>
+          )
+          const mangerWide = bestResto && (
+            <div style={{ ...T.tile, background: 'linear-gradient(150deg, rgba(27,67,50,0.85), rgba(255,255,255,0.04))', borderColor: 'rgba(201,168,76,0.35)' }}>
+              <p style={T.lab}>🍽 {en ? 'Time to eat — nearest halal' : 'C\'est l\'heure de manger — le plus proche'}</p>
+              <p style={{ fontFamily: "'Playfair Display', Georgia, serif", color: '#fdfaf3', fontSize: 24, fontWeight: 900, margin: '4px 0 0', lineHeight: 1.15 }}>
+                <bdi>{bestResto.nom}</bdi>
+              </p>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginTop: 8, flexWrap: 'wrap' }}>
+                <p style={{ flex: 1, minWidth: 160, ...T.meta, fontSize: 13 }}>
+                  {walk(bestResto.distM)} {en ? 'min walk' : 'min à pied'} · {bestResto.source === 'communaute' ? (en ? 'community · to confirm' : 'communauté · à confirmer') : (en ? 'reported halal · verify' : 'signalé halal · à vérifier')}
+                </p>
+                <a href={itin(bestResto.lat, bestResto.lng)} target="_blank" rel="noopener noreferrer"
+                  style={{ minHeight: 44, display: 'inline-flex', alignItems: 'center', padding: '0 16px', borderRadius: 999, background: 'var(--or)', color: '#0b1a0f', fontWeight: 800, fontSize: 13.5, textDecoration: 'none' }}>
+                  🚶 {en ? 'Directions' : 'Itinéraire'}
+                </a>
+              </div>
+            </div>
+          )
+          const mangerSmall = (
+            <div style={{ ...T.tile, flex: 1 }}>
+              <p style={T.lab}>🍽 {en ? 'Eat halal' : 'Manger halal'}</p>
+              {resto === undefined && !bestResto ? <p style={{ ...T.meta, marginTop: 4 }}>…</p>
+                : !bestResto ? <p style={{ ...T.meta, marginTop: 4 }}>{en ? 'None reported nearby' : 'Aucun signalé à proximité'}</p>
+                : (
+                  <>
+                    <a href={itin(bestResto.lat, bestResto.lng)} target="_blank" rel="noopener noreferrer" style={{ color: '#fdfaf3', fontWeight: 800, fontSize: 13.5, textDecoration: 'none', display: 'block', margin: '3px 0 1px', lineHeight: 1.3 }}>
+                      <bdi>{bestResto.nom}</bdi> →
+                    </a>
+                    <p style={T.meta}>
+                      {walk(bestResto.distM)} {en ? 'min walk' : 'min à pied'} · {bestResto.source === 'communaute' ? (en ? 'community · to confirm' : 'communauté · à confirmer') : (en ? 'reported halal · verify' : 'signalé halal · à vérifier')}
+                    </p>
+                  </>
+                )}
+            </div>
+          )
+          const pepiteTile = (minH: number, wide = false) => pepite ? (
+            <Link href={`/spot/${pepite.id}`} style={{ ...T.tile, padding: 0, overflow: 'hidden', position: 'relative', minHeight: minH, display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', textDecoration: 'none', backgroundImage: pepiteImg ? `linear-gradient(180deg, rgba(11,26,15,0.05) 30%, rgba(11,26,15,0.9)), url(${pepiteImg})` : 'linear-gradient(160deg, #1d4a35, #0e2013)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
               <div style={{ padding: '10px 12px' }}>
-                <p style={T.lab}>💎 {en ? 'The gem' : 'La pépite'}{pepite.video ? ' · 🎬' : ''}</p>
-                <p style={{ color: '#fdfaf3', fontWeight: 800, fontSize: 14.5, margin: '2px 0 0', lineHeight: 1.25 }}>{pepite.nom}</p>
+                <p style={T.lab}>💎 {wide ? (en ? 'Tonight\'s gem' : 'La pépite du soir') : (en ? 'The gem' : 'La pépite')}{pepite.video ? ' · 🎬' : ''}</p>
+                <p style={{ color: '#fdfaf3', fontWeight: 800, fontSize: wide ? 17 : 14.5, margin: '2px 0 0', lineHeight: 1.25 }}>{pepite.nom}</p>
                 <p style={T.meta}>{pepite.villeNom}{(pepite.confirmations ?? 0) > 0 ? ` · ${en ? 'confirmed by' : 'confirmé par'} ${pepite.confirmations}` : ''}</p>
               </div>
             </Link>
           ) : (
-            <Link href="/communaute/ajouter" style={{ ...T.tile, minHeight: 172, display: 'flex', flexDirection: 'column', justifyContent: 'center', textAlign: 'center', textDecoration: 'none' }}>
+            <Link href="/communaute/ajouter" style={{ ...T.tile, minHeight: minH, display: 'flex', flexDirection: 'column', justifyContent: 'center', textAlign: 'center', textDecoration: 'none' }}>
               <p style={{ fontSize: 26, margin: 0 }}>💎</p>
               <p style={{ color: '#fdfaf3', fontWeight: 800, fontSize: 13.5, margin: '6px 0 2px' }}>{en ? 'No gem near you yet' : 'Pas encore de pépite près de toi'}</p>
               <p style={T.meta}>{en ? 'Be the first to share one 🤲' : 'Sois le premier à en partager une 🤲'}</p>
             </Link>
-          )}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-            <div style={{ ...T.tile, flex: 1 }}>
-              <p style={T.lab}>🍽 {en ? 'Eat halal' : 'Manger halal'}</p>
-              {(() => {
-                // OSM/spots dans 3 km, sinon resto communautaire jusqu'a 5 km
-                const rc = pres?.restoCom
-                const best = resto ?? (rc && rc.lat && rc.lng ? { nom: rc.nom, lat: rc.lat, lng: rc.lng, source: 'communaute' as const, distM: (rc as { distM: number }).distM } : null)
-                if (resto === undefined && !best) return <p style={{ ...T.meta, marginTop: 4 }}>…</p>
-                if (!best) return <p style={{ ...T.meta, marginTop: 4 }}>{en ? 'None reported nearby' : 'Aucun signalé à proximité'}</p>
-                return (
-                  <>
-                    <a href={itin(best.lat, best.lng)} target="_blank" rel="noopener noreferrer" style={{ color: '#fdfaf3', fontWeight: 800, fontSize: 13.5, textDecoration: 'none', display: 'block', margin: '3px 0 1px', lineHeight: 1.3 }}>
-                      <bdi>{best.nom}</bdi> →
-                    </a>
-                    <p style={T.meta}>
-                      {walk(best.distM)} {en ? 'min walk' : 'min à pied'} · {best.source === 'communaute' ? (en ? 'community · to confirm' : 'communauté · à confirmer') : (en ? 'reported halal · verify' : 'signalé halal · à vérifier')}
-                    </p>
-                  </>
-                )
-              })()}
-            </div>
+          )
+          const spotsTile = (
             <Link href="/autour-de-moi" style={{ ...T.tile, flex: 1, textDecoration: 'none', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
               {(() => {
-                // Compteur honnete : les spots < 3 km si possible, sinon ceux de
-                // la zone (30 km) avec le nom de la ville — jamais un « 0 » sec
                 const n = pres ? (pres.proches.length || pres.autour.length) : null
                 const villeNom = pres?.autour[0]?.villeNom
                 const labZone = pres && !pres.proches.length && villeNom
@@ -295,8 +337,45 @@ export default function BoardVoyageur() {
               })()}
               <p style={{ ...T.meta, color: 'var(--or)', fontWeight: 700 }}>{en ? 'Open the map →' : 'Ouvrir la carte →'}</p>
             </Link>
-          </div>
-        </div>
+          )
+
+          if (focus === 'manger' && mangerWide) {
+            return (
+              <>
+                {mangerWide}
+                {priereSlim}
+                <div style={{ display: 'grid', gridTemplateColumns: '1.15fr 1fr', gap: 10, marginTop: 10 }}>
+                  {pepiteTile(150)}
+                  {spotsTile}
+                </div>
+              </>
+            )
+          }
+          if (focus === 'soiree') {
+            return (
+              <>
+                {pepiteTile(200, true)}
+                {priereSlim}
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginTop: 10 }}>
+                  {mangerSmall}
+                  {spotsTile}
+                </div>
+              </>
+            )
+          }
+          return (
+            <>
+              {priereWide}
+              <div style={{ display: 'grid', gridTemplateColumns: '1.15fr 1fr', gap: 10, marginTop: 10 }}>
+                {pepiteTile(172)}
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+                  {mangerSmall}
+                  {spotsTile}
+                </div>
+              </div>
+            </>
+          )
+        })()}
 
         {/* ── Bande de reels de la ville ── */}
         {pres && pres.reels.length > 0 && (
