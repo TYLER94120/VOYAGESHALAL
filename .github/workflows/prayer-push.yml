@@ -1,0 +1,42 @@
+name: prayer-push
+# Declencheur des notifications de priere.
+#
+# Le code d'envoi existait (/api/push/run) mais RIEN ne l'appelait : aucune
+# notification ne partait. Vercel Hobby ne permet qu'un cron quotidien, ce
+# qui est inutilisable pour des horaires a la minute. On declenche donc
+# depuis GitHub Actions toutes les 5 minutes.
+#
+# Precision honnete : GitHub decale souvent les crons de quelques minutes.
+# La notification arrive donc a l'heure de la priere + 0 a 10 min. Une
+# alerte a la seconde pres exige une application native (voir docs).
+# L'envoi est dedoublonne par jour et par priere cote serveur : meme
+# declenche plusieurs fois, personne ne recoit deux fois la meme alerte.
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+jobs:
+  push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger prayer notifications
+        env:
+          KEY: ${{ secrets.PUSH_CRON_SECRET }}
+        run: |
+          if [ -z "$KEY" ]; then
+            echo "PUSH_CRON_SECRET absent des secrets GitHub — rien envoye."
+            echo "A faire une fois : ajouter le meme secret dans Vercel (PUSH_CRON_SECRET) et ici."
+            exit 0
+          fi
+          code=$(curl -s -o /tmp/out.json -w '%{http_code}' \
+            "https://www.voyageshalal.fr/api/push/run?key=$KEY")
+          echo "HTTP $code"
+          head -c 400 /tmp/out.json; echo
+          case "$code" in
+            200) exit 0 ;;
+            401) echo "Cle refusee : le secret GitHub et celui de Vercel different."; exit 1 ;;
+            503) echo "Notifications non configurees cote Vercel (VAPID ou Redis manquant)."; exit 1 ;;
+            *)   echo "Reponse inattendue."; exit 1 ;;
+          esac

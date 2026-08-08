@@ -6,7 +6,11 @@ import { PRAYER_LABELS } from '@/lib/adhan'
 
 export const runtime = 'nodejs'
 
-const WINDOW_MS = 90_000 // une prière est « due » si elle tombe dans les 90 s écoulées
+// Fenêtre d'envoi : une prière est « due » si son heure est tombée dans
+// les N dernières minutes. Élargie à 10 min car le déclencheur (GitHub
+// Actions, toutes les 5 min) est souvent retardé de quelques minutes.
+// Aucun risque de doublon : markSent verrouille par jour et par prière.
+const WINDOW_MS = 10 * 60_000
 
 function authorized(req: Request): boolean {
   const auth = req.headers.get('authorization')
