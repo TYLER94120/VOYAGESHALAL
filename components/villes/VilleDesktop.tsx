@@ -19,6 +19,7 @@ import { getCityGuide } from '@/lib/cityGuides'
 import GuideCarousel from '@/components/villes/GuideCarousel'
 import CitySpots from '@/components/villes/CitySpots'
 import StickySections from '@/components/villes/StickySections'
+import { HalalScoreBadge } from '@/components/HalalScoreBadge'
 
 // Sections guidées (refonte « Netflix » des fiches) — libellés orientés usage
 const TABS = [
@@ -58,6 +59,12 @@ const CATEGORY_GRADIENT: Record<string, [string, string]> = {
 const DEFAULT_GRADIENT: [string, string] = ['#0b1a0f', '#2d6a4f']
 
 export default function VilleDesktop({ ville }: { ville: any }) {
+  // Contexte ville passé aux outils : ils s'ouvrent SUR cette ville au lieu
+  // de redemander la géolocalisation (on la connaît déjà).
+  const co = ville.coordonnees ?? {}
+  const ctxVille = co.lat != null && co.lng != null
+    ? `?lat=${co.lat}&lng=${co.lng}&lieu=${encodeURIComponent(ville.nom)}${ville.pays ? `&pays=${encodeURIComponent(ville.pays)}` : ''}`
+    : ''
   const [activeTab, setActiveTab] = useState<string | null>(null) // onglet surligné (ancres)
   const [activeFilter, setActiveFilter] = useState('Tous')
   // Poids DOM / Core Web Vitals : on rend 20 restaurants (indexés en SSR),
@@ -217,10 +224,21 @@ export default function VilleDesktop({ ville }: { ville: any }) {
               <FavButton size={22} fav={{ id: favId('ville', ville.slug ?? ville.nom), kind: 'ville', nom: ville.nom, href: `/destinations/${ville.slug ?? ''}` }} />
             </span>
           </h1>
+          {/* Le score est CLIQUABLE : il montre les chiffres d'où il sort.
+              Un 9.3/10 sans explication, personne n'y croit. */}
           {halalScore != null && (
-            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '7px', marginTop: '14px', padding: '7px 16px', borderRadius: '30px', background: 'rgba(201,168,76,0.18)', border: '1px solid rgba(201,168,76,0.5)', color: 'var(--or-clair)', fontSize: '13px', fontWeight: 700 }}>
-              <span style={{ width: 7, height: 7, borderRadius: '50%', background: '#3BD17A' }} /> ✦ {halalScore}/10 · Halal Score
-            </span>
+            <div style={{ display: 'flex', justifyContent: 'center', marginTop: 14 }}>
+              <HalalScoreBadge
+                score={halalScore}
+                ville={ville.nom}
+                stats={{
+                  mosquees: ville.statistiques?.mosquees ?? mosquees.length,
+                  restaurants: restaurantsTotal,
+                  hotels: hotels.length,
+                  pctMusulmans: ville.statistiques?.habitants_musulmans_pct,
+                }}
+              />
+            </div>
           )}
         </div>
       </section>
@@ -249,13 +267,29 @@ export default function VilleDesktop({ ville }: { ville: any }) {
               une barre compacte prend le relais (fiche = 46 écrans) */}
           <StickySections ancre="ville-onglets" en={en} />
 
-          {/* Guide PDF gratuit (aimant à emails, doré) + Vols */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px', marginTop: '10px' }}>
+          {/* Guide PDF gratuit (aimant à emails). Le bouton « Vols » qui
+              était à côté a été retiré : lien non affilié, il faisait juste
+              sortir le visiteur du site sans rien rapporter. */}
+          <div style={{ display: 'grid', gap: '12px', marginTop: '10px' }}>
             <EbookButton ville={ville} />
-            <a href={en ? `https://www.skyscanner.net/flights-to/${ville.slug ?? ville.nom}` : `https://www.skyscanner.fr/vols-vers/${ville.slug ?? ville.nom}`} target="_blank" rel="noopener noreferrer" className="ville-action">
-              <span className="ico">✈️</span>{en ? <>Flights to {ville.nom}</> : <>Vols vers {ville.nom}</>}
-            </a>
           </div>
+
+          {/* Outils de prière ouverts DIRECTEMENT sur la ville (coordonnées
+              passées en paramètre) — plus de « autorisez la géolocalisation »
+              alors qu'on sait déjà de quelle ville on parle. */}
+          {ctxVille && (
+            <div style={{ display: 'flex', gap: 10, marginTop: 10, flexWrap: 'wrap', justifyContent: 'center' }}>
+              {[
+                { href: `/horaires-priere${ctxVille}`, ico: '🕐', txt: en ? `Prayer times in ${ville.nom}` : `Horaires de prière à ${ville.nom}` },
+                { href: `/qibla${ctxVille}`, ico: '🧭', txt: en ? `Qibla from ${ville.nom}` : `Qibla depuis ${ville.nom}` },
+              ].map((t) => (
+                <a key={t.href} href={t.href}
+                  style={{ display: 'inline-flex', alignItems: 'center', gap: 8, minHeight: 44, padding: '0 16px', borderRadius: 999, background: 'rgba(255,255,255,0.07)', border: '1px solid rgba(201,168,76,0.35)', color: 'var(--or-clair)', fontSize: 13.5, fontWeight: 700, textDecoration: 'none' }}>
+                  <span>{t.ico}</span>{t.txt}
+                </a>
+              ))}
+            </div>
+          )}
         </div>
       </div>
 
@@ -316,8 +350,8 @@ export default function VilleDesktop({ ville }: { ville: any }) {
               <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: 22, fontWeight: 900, color: '#fff', margin: 0 }}>
                 🕌 {en ? `Where to pray in ${ville.nom}` : `Où prier à ${ville.nom}`}
               </h2>
-              <a href="/mosquee-proche" style={{ display: 'inline-flex', alignItems: 'center', minHeight: 44, fontSize: 14, fontWeight: 800, color: 'var(--or)', textDecoration: 'none' }}>
-                📍 {en ? 'Nearest to me (GPS) →' : 'La plus proche de moi (GPS) →'}
+              <a href={`/mosquee-proche${ctxVille}`} style={{ display: 'inline-flex', alignItems: 'center', minHeight: 44, fontSize: 14, fontWeight: 800, color: 'var(--or)', textDecoration: 'none' }}>
+                📍 {en ? `All mosques in ${ville.nom} →` : `Toutes les mosquées de ${ville.nom} →`}
               </a>
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 10 }}>
