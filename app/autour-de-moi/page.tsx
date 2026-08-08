@@ -422,9 +422,9 @@ export default function AutourDeMoiPage() {
               onChange={(e) => setQ(e.target.value)}
               placeholder="Chercher une ville (Berkane, Istanbul…)"
               aria-label="Chercher une ville sur la carte"
-              style={{ flex: 1, border: 'none', outline: 'none', fontSize: 15, padding: '10px 12px', borderRadius: 12, color: 'var(--nuit)', background: 'transparent' }}
+              style={{ flex: 1, minHeight: 48, border: 'none', outline: 'none', fontSize: 15, padding: '0 12px', borderRadius: 12, color: 'var(--nuit)', background: 'transparent' }}
             />
-            <button type="submit" disabled={searching} style={{ border: 'none', background: 'var(--foret)', color: '#fff', fontWeight: 700, fontSize: 14, borderRadius: 12, padding: '0 16px', cursor: searching ? 'wait' : 'pointer' }}>
+            <button type="submit" disabled={searching} style={{ border: 'none', minHeight: 48, background: 'var(--foret)', color: '#fff', fontWeight: 700, fontSize: 14, borderRadius: 12, padding: '0 16px', cursor: searching ? 'wait' : 'pointer' }}>
               {searching ? '…' : '🔍'}
             </button>
           </form>
@@ -432,7 +432,7 @@ export default function AutourDeMoiPage() {
             <span style={{ pointerEvents: 'auto', background: 'var(--foret)', color: '#fff', fontWeight: 700, fontSize: 13.5, borderRadius: 30, padding: '8px 14px', boxShadow: '0 4px 14px rgba(0,0,0,.18)' }}>
               {loading ? 'Recherche…' : `${spots.length} ${conf.label} à proximité`}
             </span>
-            <button onClick={searchHere} style={{ pointerEvents: 'auto', background: '#fff', color: 'var(--nuit)', fontWeight: 700, fontSize: 13.5, border: 'none', borderRadius: 30, padding: '8px 14px', cursor: 'pointer', boxShadow: '0 4px 14px rgba(0,0,0,.18)' }}>
+            <button onClick={searchHere} style={{ pointerEvents: 'auto', minHeight: 44, background: '#fff', color: 'var(--nuit)', fontWeight: 700, fontSize: 13.5, border: 'none', borderRadius: 30, padding: '0 16px', cursor: 'pointer', boxShadow: '0 4px 14px rgba(0,0,0,.18)' }}>
               🔄 Rechercher dans cette zone
             </button>
           </div>
@@ -536,7 +536,7 @@ export default function AutourDeMoiPage() {
                 </p>
               )}
             </div>
-            <a href={`https://www.google.com/maps/dir/?api=1&destination=${s.lat},${s.lng}`} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} style={{ flexShrink: 0, background: 'var(--foret)', color: '#fff', fontWeight: 700, fontSize: 13, borderRadius: 10, padding: '9px 12px', textDecoration: 'none' }} aria-label={`Itinéraire Google Maps vers ${s.name}`}>🧭 Itinéraire</a>
+            <a href={`https://www.google.com/maps/dir/?api=1&destination=${s.lat},${s.lng}`} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} style={{ flexShrink: 0, minHeight: 44, display: 'inline-flex', alignItems: 'center', background: 'var(--foret)', color: '#fff', fontWeight: 700, fontSize: 13, borderRadius: 10, padding: '0 14px', textDecoration: 'none' }} aria-label={`Itinéraire Google Maps vers ${s.name}`}>🧭 Itinéraire</a>
           </div>
         ))}
         {!showAll && !loading && allRef.current.length > 5 && (

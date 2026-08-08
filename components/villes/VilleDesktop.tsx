@@ -314,7 +314,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
               <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: 22, fontWeight: 900, color: '#fff', margin: 0 }}>
                 🕌 {en ? `Where to pray in ${ville.nom}` : `Où prier à ${ville.nom}`}
               </h2>
-              <a href="/mosquee-proche" style={{ fontSize: 13.5, fontWeight: 800, color: 'var(--or)', textDecoration: 'none' }}>
+              <a href="/mosquee-proche" style={{ display: 'inline-flex', alignItems: 'center', minHeight: 44, fontSize: 14, fontWeight: 800, color: 'var(--or)', textDecoration: 'none' }}>
                 📍 {en ? 'Nearest to me (GPS) →' : 'La plus proche de moi (GPS) →'}
               </a>
             </div>
@@ -603,7 +603,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
                       </p>
                     </div>
                     <a href={r.mapsUrl} target="_blank" rel="noopener noreferrer" onClick={() => toast('Ouverture dans Google Maps…', 'success')}
-                      style={{ flexShrink: 0, padding: '9px 14px', background: 'var(--halal-bg)', color: 'var(--halal-tx)', borderRadius: 10, fontSize: 12.5, fontWeight: 700, textDecoration: 'none', whiteSpace: 'nowrap' }}>
+                      style={{ flexShrink: 0, minHeight: 44, display: 'inline-flex', alignItems: 'center', padding: '0 14px', background: 'var(--halal-bg)', color: 'var(--halal-tx)', borderRadius: 10, fontSize: 12.5, fontWeight: 700, textDecoration: 'none', whiteSpace: 'nowrap' }}>
                       🗺 {en ? 'Maps' : 'Maps'}
                     </a>
                   </div>

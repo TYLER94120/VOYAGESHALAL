@@ -516,6 +516,16 @@ body { top: 0 !important; }
   }
 }
 
+/* Zoom des cartes Leaflet : les boutons natifs font 30 px, sous notre
+   minimum tactile. On les porte a 44 px sans toucher a la bibliotheque. */
+.leaflet-touch .leaflet-bar a,
+.leaflet-bar a {
+  width: 44px !important;
+  height: 44px !important;
+  line-height: 44px !important;
+  font-size: 20px !important;
+}
+
 /* Ancres des fiches ville : la section visee doit atterrir SOUS le bandeau
    de priere et sous la barre de sections, sinon son titre reste cache. */
 @media (max-width: 1023px) {

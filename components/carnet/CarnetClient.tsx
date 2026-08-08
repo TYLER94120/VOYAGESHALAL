@@ -83,7 +83,7 @@ export default function CarnetClient() {
           placeholder={en ? 'your@email.com — sync across devices' : 'votre@email.com — synchroniser mes appareils'}
           className="flex-1 px-3 py-2.5 border border-gray-200 rounded-xl text-sm"
         />
-        <button type="submit" disabled={syncing} className="text-white text-sm font-bold px-5 py-2.5 rounded-full disabled:opacity-50" style={{ backgroundColor: GREEN }}>
+        <button type="submit" disabled={syncing} className="text-white text-sm font-bold px-5 rounded-full disabled:opacity-50 inline-flex items-center justify-center min-h-[48px]" style={{ backgroundColor: GREEN }}>
           {syncing ? '…' : (en ? 'Sync my notebook' : 'Synchroniser mon carnet')}
         </button>
       </form>
@@ -116,7 +116,7 @@ export default function CarnetClient() {
               ? 'Tap the ❤️ on any city, restaurant or prayer spot to save it here.'
               : 'Touchez le ❤️ sur une ville, un restaurant ou un coin prière pour le retrouver ici.'}
           </p>
-          <Link href="/destinations" className="text-white text-sm font-bold px-6 py-3 rounded-full" style={{ backgroundColor: GREEN }}>
+          <Link href="/destinations" className="text-white text-sm font-bold px-6 rounded-full inline-flex items-center justify-center min-h-[48px]" style={{ backgroundColor: GREEN }}>
             {en ? 'Explore destinations' : 'Explorer les destinations'}
           </Link>
         </div>

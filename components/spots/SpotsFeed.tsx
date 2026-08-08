@@ -178,11 +178,11 @@ export default function SpotsFeed({ initialSpots }: { initialSpots?: Spot[] }) {
       </p>
       {/* Filtres : proximité + type */}
       <div style={{ display: 'flex', gap: 8, overflowX: 'auto', padding: '4px 2px 12px', scrollbarWidth: 'none' }}>
-        <button onClick={askNear} style={{ flexShrink: 0, minHeight: 40, padding: '0 14px', borderRadius: 999, border: `1.5px solid ${near ? 'var(--or)' : 'rgba(201,168,76,0.35)'}`, background: near ? 'var(--or)' : 'transparent', color: near ? '#0b1a0f' : 'var(--creme)', fontWeight: 800, fontSize: 13.5, cursor: 'pointer' }}>
+        <button onClick={askNear} style={{ flexShrink: 0, minHeight: 46, padding: '0 15px', borderRadius: 999, border: `1.5px solid ${near ? 'var(--or)' : 'rgba(201,168,76,0.35)'}`, background: near ? 'var(--or)' : 'transparent', color: near ? '#0b1a0f' : 'var(--creme)', fontWeight: 800, fontSize: 13.5, cursor: 'pointer' }}>
           📍 {en ? 'Near me' : 'Près de moi'}
         </button>
         {chips.map((c) => (
-          <button key={c.id ?? 'all'} onClick={() => setCat(c.id)} style={{ flexShrink: 0, minHeight: 40, padding: '0 14px', borderRadius: 999, border: `1.5px solid ${cat === c.id ? 'var(--or)' : 'rgba(201,168,76,0.35)'}`, background: cat === c.id ? 'var(--or)' : 'transparent', color: cat === c.id ? '#0b1a0f' : 'var(--creme)', fontWeight: 700, fontSize: 13.5, cursor: 'pointer' }}>
+          <button key={c.id ?? 'all'} onClick={() => setCat(c.id)} style={{ flexShrink: 0, minHeight: 46, padding: '0 15px', borderRadius: 999, border: `1.5px solid ${cat === c.id ? 'var(--or)' : 'rgba(201,168,76,0.35)'}`, background: cat === c.id ? 'var(--or)' : 'transparent', color: cat === c.id ? '#0b1a0f' : 'var(--creme)', fontWeight: 700, fontSize: 13.5, cursor: 'pointer' }}>
             {c.icon} {c.label}
           </button>
         ))}
