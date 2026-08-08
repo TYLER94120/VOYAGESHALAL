@@ -244,8 +244,9 @@
         </svg>
         <h2>Lecon terminee</h2>
         <p id="finTexte">Tu connais maintenant les sept versets d'Al-Fatiha, chacun avec sa reference.</p>
-        <a class="btn" href="chemin.html">Voir mon chemin</a>
-        <a class="btn fantome" href="index.html">Retour a l'accueil</a>
+        <p id="finSuite" class="suite"></p>
+        <a class="btn" href="index.html">Continuer</a>
+        <a class="btn fantome" href="chemin.html">Voir mon chemin</a>
       </section>
 
     </div>
@@ -275,73 +276,6 @@
 </div>
 
 <script src="app.js"></script>
-<script>
-(function () {
-  'use strict';
-
-  var ID = 'al-fatiha';
-  var zone = document.getElementById('etapes');
-  var etapes = zone.querySelectorAll('.etape');
-  var TOTAL = etapes.length;          // 10, dont la derniere est l'ecran de fin
-  var CONTENU = TOTAL - 1;            // 9 cartes de contenu -> 9 segments
-  var courante = 1;
-  var enregistree = false;
-
-  // Progression amelioree : sans JS, toutes les etapes restent lisibles a la suite.
-  zone.classList.add('pilote');
-  document.getElementById('basLecon').hidden = false;
-
-  var points = document.getElementById('points');
-  var html = '';
-  for (var i = 0; i < CONTENU; i++) { html += '<span class="pt"></span>'; }
-  points.innerHTML = html;
-  var segments = points.querySelectorAll('.pt');
-
-  var bouton = document.getElementById('btnSuivant');
-
-  function afficher() {
-    for (var i = 0; i < etapes.length; i++) {
-      var n = Number(etapes[i].getAttribute('data-etape'));
-      etapes[i].classList.toggle('actif', n === courante);
-    }
-    for (var j = 0; j < segments.length; j++) {
-      segments[j].classList.toggle('faite', j < Math.min(courante, CONTENU));
-    }
-
-    if (courante === TOTAL) {
-      document.getElementById('basLecon').hidden = true;
-    } else {
-      bouton.textContent = (courante === CONTENU) ? 'Terminer' : 'Suivant';
-    }
-
-    // On remonte en haut de la carte, sinon on reste au milieu du texte precedent.
-    if (courante > 1) {
-      var haut = zone.getBoundingClientRect().top + window.pageYOffset - 70;
-      window.scrollTo(0, Math.max(0, haut));
-    }
-  }
-
-  function terminer() {
-    if (enregistree) { return; }
-    enregistree = true;
-    var r = IPP.terminer(ID);
-    var serie = IPP.serie();
-    var total = IPP.acquis();
-    var phrase = 'Tu connais maintenant ' + total + ' enseignements, chacun avec sa source. ';
-    phrase += 'Cette lecon reviendra dans ' + r.pas + ' jours.';
-    if (serie > 1) { phrase += ' ' + serie + ' jours d\'affilee.'; }
-    document.getElementById('finTexte').textContent = phrase;
-  }
-
-  bouton.addEventListener('click', function () {
-    if (courante >= TOTAL) { return; }
-    courante++;
-    if (courante === TOTAL) { terminer(); }
-    afficher();
-  });
-
-  afficher();
-}());
-</script>
+<script>ippDemarrerLecon('al-fatiha');</script>
 </body>
 </html>

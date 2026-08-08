@@ -151,7 +151,7 @@
     document.getElementById('carteMeta').innerHTML =
       '<span>' + l.minutes + ' min</span><span class="puce"></span>'
       + '<span>' + l.cartes + ' cartes</span><span class="puce"></span>'
-      + '<span>Le sens des sourates</span>';
+      + '<span>' + ippEchappe(IPP.nomParcours(l.parcours)) + '</span>';
     if (choix.mode === 'revision') {
       document.getElementById('cartePitch').textContent =
         'Tu l\'as deja vue. On la repasse vite pour qu\'elle tienne dans la duree.';

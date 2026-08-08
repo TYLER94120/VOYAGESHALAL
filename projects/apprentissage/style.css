@@ -376,6 +376,8 @@ a.pc:hover, button.pc:hover { border-color: var(--trait-fort); }
 .fin { align-items: center; text-align: center; gap: 18px; padding: 20px 0; }
 .fin h2 { font-size: 32px; }
 .fin p { color: var(--texte-2); max-width: 32ch; }
+.fin p.suite { color: var(--or-clair); font-weight: 600; }
+.fin p.suite:empty { display: none; }
 
 .bas-lecon { padding: 24px 0 8px; position: sticky; bottom: 0; background: linear-gradient(transparent, var(--nuit) 30%); }
 

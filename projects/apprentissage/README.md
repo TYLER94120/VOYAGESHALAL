@@ -24,10 +24,15 @@ Version de travail, hebergee provisoirement dans le repo VOYAGESHALAL sur la bra
 | Fichier | Role |
 | --- | --- |
 | `index.html` | Ecran d'accueil — « Aujourd'hui » : la lecon du jour, les revisions, les parcours |
-| `lecon-al-fatiha.html` | La premiere lecon complete : sourate Al-Fatiha verset par verset |
+| `lecon-al-fatiha.html` | Lecon 1 : sourate Al-Fatiha verset par verset (7 versets) |
+| `lecon-invocations-matin.html` | Lecon 2 : trois invocations pour commencer la journee |
 | `chemin.html` | La progression : compteur, calendrier des jours, parcours, revisions a venir |
 | `style.css` | Toute la mise en forme (charte de la famille) |
-| `app.js` | Progression, serie de jours, calcul des revisions |
+| `app.js` | Catalogue, progression, serie de jours, revisions, et le lecteur de lecon commun |
+
+Deux lecons publiees : il y a donc de quoi revenir le lendemain, ce qui est
+tout l'objet du site. Le lecteur de lecon (`ippDemarrerLecon`) est ecrit une
+seule fois dans `app.js` et partage par toutes les lecons.
 
 ## Technique
 
@@ -71,6 +76,10 @@ Enseigner la religion engage lourdement. Sur ce site :
 - quand les ecoles divergent, on presente les avis **sans trancher** et on renvoie
   vers un savant (voir le verset 4 et le verset 7 de la lecon Al-Fatiha) ;
 - **au moindre doute sur une source, on ne publie pas** ;
+- **numeros de hadith** : on ne donne un numero que si l'on en est certain.
+  Sinon on cite le recueil et le rapporteur, ce qui suffit a retrouver le hadith.
+  La lecon 2 applique cette regle et l'explique au lecteur ;
+- la lecon 2 ne cite que **al-Boukhari et Mouslim**, volontairement ;
 - les traductions sont annoncees comme des traductions **du sens** ;
 - **aucun contenu de finance islamique**, sur aucune page.
 
@@ -86,12 +95,16 @@ Boutons d'au moins 56px de haut. Mobile d'abord, teste a 375px.
 
 Testees au navigateur (Chromium, 375x780) :
 
-- aucun debordement horizontal sur les trois pages ;
-- la lecon se parcourt de bout en bout (10 cartes), la progression est enregistree ;
+- aucun debordement horizontal sur les quatre pages ;
+- les deux lecons se parcourent de bout en bout, la progression est enregistree ;
+- le lendemain, l'accueil propose bien la lecon suivante, puis annonce honnetement
+  « Tu es a jour » quand il n'y a plus rien ;
 - la revision est bien programmee a J+2, puis J+7, J+21, J+60 ;
 - le calendrier place correctement le premier jour du mois sur le bon jour de semaine ;
-- sans JavaScript : les 10 cartes et les 8 blocs de source restent lisibles ;
-- etats vides honnetes (rien a revoir, aucun jour rempli, parcours « Bientot »).
+- sans JavaScript : les 18 cartes des deux lecons et leurs 12 blocs de source
+  restent lisibles d'un seul tenant (c'est ce que Google indexe) ;
+- etats vides honnetes (rien a revoir, aucun jour rempli, parcours « Bientot ») ;
+- aucune erreur JavaScript.
 
 ## Liens croises de la famille
 

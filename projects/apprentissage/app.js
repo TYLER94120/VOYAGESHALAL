@@ -32,8 +32,25 @@
       cartes: 10,
       acquis: 7,
       publiee: true
+    },
+    {
+      id: 'invocations-matin',
+      titre: 'Trois invocations pour commencer ta journee',
+      url: 'lecon-invocations-matin.html',
+      parcours: 'invocations',
+      minutes: 5,
+      cartes: 8,
+      acquis: 3,
+      publiee: true
     }
   ];
+
+  function nomParcours(idParcours) {
+    for (var i = 0; i < PARCOURS.length; i++) {
+      if (PARCOURS[i].id === idParcours) { return PARCOURS[i].nom; }
+    }
+    return '';
+  }
 
   /* ---------- dates ------------------------------------------------------ */
 
@@ -187,6 +204,7 @@
   global.IPP = {
     PARCOURS: PARCOURS,
     CATALOGUE: CATALOGUE,
+    nomParcours: nomParcours,
     aujourdhui: aujourdhui,
     dateLongue: dateLongue,
     depuisCle: depuisCle,
@@ -218,4 +236,95 @@ function ippEtoile(taille, couleur) {
 
 function ippEchappe(s) {
   return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+
+/* =========================================================
+   Lecteur de lecon, commun a toutes les lecons.
+
+   La page contient toutes ses cartes en clair dans le HTML :
+   sans JavaScript, la lecon se lit d'un seul tenant (c'est ce
+   que Google indexe). Avec JavaScript, on la pilote carte par
+   carte. La derniere carte est l'ecran de fin.
+   ========================================================= */
+
+function ippDemarrerLecon(id) {
+  'use strict';
+
+  var zone = document.getElementById('etapes');
+  if (!zone) { return; }
+
+  var etapes = zone.querySelectorAll('.etape');
+  var TOTAL = etapes.length;
+  var CONTENU = TOTAL - 1;
+  var courante = 1;
+  var enregistree = false;
+
+  zone.classList.add('pilote');
+
+  var bas = document.getElementById('basLecon');
+  var bouton = document.getElementById('btnSuivant');
+  bas.hidden = false;
+
+  var points = document.getElementById('points');
+  var html = '';
+  for (var i = 0; i < CONTENU; i++) { html += '<span class="pt"></span>'; }
+  points.innerHTML = html;
+  var segments = points.querySelectorAll('.pt');
+
+  function afficher() {
+    for (var a = 0; a < etapes.length; a++) {
+      etapes[a].classList.toggle('actif',
+        Number(etapes[a].getAttribute('data-etape')) === courante);
+    }
+    for (var b = 0; b < segments.length; b++) {
+      segments[b].classList.toggle('faite', b < Math.min(courante, CONTENU));
+    }
+
+    if (courante === TOTAL) {
+      bas.hidden = true;
+    } else {
+      bouton.textContent = (courante === CONTENU) ? 'Terminer' : 'Suivant';
+    }
+
+    // Sans cela on resterait au milieu du texte precedent.
+    if (courante > 1) {
+      var haut = zone.getBoundingClientRect().top + window.pageYOffset - 70;
+      window.scrollTo(0, Math.max(0, haut));
+    }
+  }
+
+  function cloturer() {
+    if (enregistree) { return; }
+    enregistree = true;
+
+    var r = IPP.terminer(id);
+    var serie = IPP.serie();
+    var total = IPP.acquis();
+    var reste = IPP.publiees().filter(function (l) { return !IPP.estFaite(l.id); }).length;
+
+    var phrase = 'Tu connais maintenant ' + total + ' enseignements, chacun avec sa source. ';
+    phrase += 'Cette lecon reviendra dans ' + r.pas + (r.pas > 1 ? ' jours.' : ' jour.');
+    if (serie > 1) { phrase += ' ' + serie + ' jours d\'affilee.'; }
+
+    var cible = document.getElementById('finTexte');
+    if (cible) { cible.textContent = phrase; }
+
+    var suite = document.getElementById('finSuite');
+    if (suite) {
+      suite.textContent = reste
+        ? (reste === 1 ? 'Une autre lecon t\'attend deja.'
+                       : reste + ' autres lecons t\'attendent deja.')
+        : 'C\'est la derniere lecon disponible. La prochaine arrive bientot.';
+    }
+  }
+
+  bouton.addEventListener('click', function () {
+    if (courante >= TOTAL) { return; }
+    courante++;
+    if (courante === TOTAL) { cloturer(); }
+    afficher();
+  });
+
+  afficher();
 }
