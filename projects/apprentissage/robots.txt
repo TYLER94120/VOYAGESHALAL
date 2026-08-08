@@ -7,6 +7,7 @@ Allow: /
 # seule page. Laisse indexe, il ferait du contenu duplique et abimerait le
 # referencement des vraies pages. Il sert uniquement a faire relire le site.
 Disallow: /apercu.html
+Disallow: /apercu-hors-ligne.html
 
 # Remarque : chemin.html n'est PAS bloque ici, volontairement. Il porte une
 # balise noindex dans son en-tete, et un robot doit pouvoir la lire pour en

@@ -140,6 +140,30 @@ def main() -> int:
     cible = RACINE / "apercu.html"
     cible.write_text(sortie, encoding="utf-8")
     print(f"apercu.html ecrit : {len(sortie)} caracteres, {len(VUES)} vues")
+
+    # Deuxieme sortie : un fichier vraiment autonome, avec son en-tete HTML
+    # complet. On l'ouvre depuis un telephone sans aucune connexion, ce qui
+    # evite les pages "Page not found" quand on n'est pas identifie sur la
+    # plateforme. Il charge en plus les vraies polices quand il y a du reseau.
+    entete = (
+        '<!doctype html>\n<html lang="fr">\n<head>\n'
+        '<meta charset="utf-8">\n'
+        '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
+        '<meta name="robots" content="noindex,nofollow">\n'
+        '<meta name="theme-color" content="#0b1a0f">\n'
+        '<title>Islam pas a pas — version a ouvrir directement</title>\n'
+        '<link rel="preconnect" href="https://fonts.googleapis.com">\n'
+        '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
+        '<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700'
+        '&family=DM+Sans:wght@400;500;600;700&family=Scheherazade+New:wght@400;700'
+        '&display=swap" rel="stylesheet">\n'
+        '<style>*,*::before,*::after{box-sizing:border-box}html,body{margin:0}'
+        'img,svg{display:block}button{font:inherit}</style>\n'
+        '</head>\n<body>\n'
+    )
+    autonome = entete + sortie + "\n</body>\n</html>\n"
+    (RACINE / "apercu-hors-ligne.html").write_text(autonome, encoding="utf-8")
+    print(f"apercu-hors-ligne.html ecrit : {len(autonome)} caracteres")
     return 0
 
 
