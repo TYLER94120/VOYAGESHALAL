@@ -365,16 +365,20 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
             <div className="board-hero" role="link" tabIndex={0} onClick={() => window.open(itin(bestResto.lat, bestResto.lng), '_blank', 'noopener')} onKeyDown={(e) => { if (e.key === 'Enter') window.open(itin(bestResto.lat, bestResto.lng), '_blank', 'noopener') }}
               style={{ ...T.tile, background: 'linear-gradient(150deg, rgba(27,67,50,0.85), rgba(255,255,255,0.04))', borderColor: 'rgba(201,168,76,0.35)', cursor: 'pointer' }}>
               <p style={T.lab}>{envieActive
-                ? `${envieActive.emoji} ${en ? `Nearest halal ${envieActive.en.toLowerCase()}` : `Le ${envieActive.fr.toLowerCase()} le plus proche`}`
+                ? `${envieActive.emoji} ${bestResto?.force === 1
+                    ? (en ? `Maybe ${envieActive.en.toLowerCase()} — nearest` : `Peut-être du ${envieActive.fr.toLowerCase()} — le plus proche`)
+                    : (en ? `Nearest halal ${envieActive.en.toLowerCase()}` : `Le ${envieActive.fr.toLowerCase()} le plus proche`)}`
                 : `🍽 ${en ? 'Time to eat — nearest halal' : 'C\'est l\'heure de manger — le plus proche'}`}</p>
               <p style={{ fontFamily: "'Playfair Display', Georgia, serif", color: '#fdfaf3', fontSize: 24, fontWeight: 900, margin: '4px 0 0', lineHeight: 1.15 }}>
                 <bdi>{bestResto.nom}</bdi>
               </p>
               <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginTop: 8, flexWrap: 'wrap' }}>
                 <p style={{ flex: 1, minWidth: 160, ...T.meta, fontSize: 13 }}>
-                  {walk(bestResto.distM)} {en ? 'min walk' : 'min à pied'}
+                  {bestResto.distM > 2000
+                    ? `${(bestResto.distM / 1000).toFixed(1)} km${en ? ' away' : ''}`
+                    : `${walk(bestResto.distM)} ${en ? 'min walk' : 'min à pied'}`}
                   {bestResto.cuisine ? <> · <span style={{ color: 'rgba(253,250,243,0.75)' }}>{bestResto.cuisine}</span></> : null}
-                  {bestResto.force === 1 ? <> · <span style={{ color: 'var(--or)' }}>{en ? 'secondary tag' : 'mention secondaire'}</span></> : null}
+                  {bestResto.force === 1 ? <> · <span style={{ color: 'var(--or)' }}>{en ? 'not certain for this dish' : 'pas sûr pour ce plat'}</span></> : null}
                   {' · '}
                   {(() => {
                     if (bestResto.source === 'communaute') return en ? 'shared by a traveler · to confirm' : 'partagé par un voyageur · à confirmer'
@@ -392,7 +396,7 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
                   sa photo enrichit NOTRE site pour le suivant. */}
               <div style={{ display: 'flex', gap: 8, marginTop: 8, flexWrap: 'wrap' }}>
                 <a
-                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${bestResto.nom} ${bestResto.lat},${bestResto.lng}`)}`}
+                  href={`https://www.google.com/maps/search/${encodeURIComponent(bestResto.nom)}/@${bestResto.lat},${bestResto.lng},18z`}
                   target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}
                   style={{ minHeight: 44, display: 'inline-flex', alignItems: 'center', padding: '0 12px', borderRadius: 999, border: '1px solid rgba(253,250,243,0.25)', color: 'var(--creme)', fontWeight: 700, fontSize: 12.5, textDecoration: 'none' }}
                 >
