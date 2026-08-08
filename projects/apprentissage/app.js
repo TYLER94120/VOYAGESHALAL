@@ -94,8 +94,8 @@
       titre: 'Sourate Al-Fatiha, verset par verset',
       url: 'lecon-al-fatiha.html',
       parcours: 'sourates',
-      minutes: 6,
-      cartes: 11,
+      minutes: 8,
+      cartes: 14,
       acquis: 7,
       publiee: true,
       resume: 'Tu la recites dans chaque priere. Aujourd\'hui, tu vas comprendre '
@@ -154,8 +154,8 @@
       titre: 'Les 25 prophetes nommes dans le Coran',
       url: 'lecon-prophetes-coran.html',
       parcours: 'prophetes',
-      minutes: 6,
-      cartes: 9,
+      minutes: 8,
+      cartes: 12,
       acquis: 25,
       publiee: true,
       resume: 'Dix-sept d\'entre eux sont cites d\'affilee dans un seul passage. '
@@ -956,6 +956,100 @@ function ippRendreOffre(racine) {
 
 
 /* =========================================================
+   Le test de fin de lecon
+
+   Pourquoi : lire onze cartes en appuyant sur "Suivant" ne demande aucun
+   effort, donc ne laisse aucune trace. Trois questions a la fin obligent a
+   se souvenir, et c'est le rappel actif qui fait tenir.
+
+   Regle de ton : jamais punitif. Une mauvaise reponse montre la bonne et
+   explique. Pas de vies perdues, pas de score qui humilie.
+   ========================================================= */
+
+function ippPreparerQuiz(etape, bouton, score) {
+  'use strict';
+  if (etape.__quizPret) { return; }
+  etape.__quizPret = true;
+
+  var choix = etape.querySelector('.q-choix');
+  var retour = etape.querySelector('[data-r-retour]');
+  if (!choix) { return; }
+
+  // On melange les reponses : sinon la bonne finit toujours a la meme place et
+  // on apprend la position au lieu du contenu.
+  var opts = [].slice.call(etape.querySelectorAll('.q-opt'));
+  for (var i = opts.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var tmp = opts[i]; opts[i] = opts[j]; opts[j] = tmp;
+  }
+  for (var k = 0; k < opts.length; k++) { choix.appendChild(opts[k]); }
+
+  choix.addEventListener('click', function (e) {
+    var b = e.target.closest ? e.target.closest('.q-opt') : null;
+    if (!b || etape.__repondu) { return; }
+    etape.__repondu = true;
+
+    var juste = b.hasAttribute('data-bonne');
+    b.classList.add(juste ? 'juste' : 'faux');
+    if (!juste) {
+      var bonne = etape.querySelector('.q-opt[data-bonne]');
+      if (bonne) { bonne.classList.add('juste'); }
+    }
+    for (var m = 0; m < opts.length; m++) { opts[m].disabled = true; }
+
+    if (retour) {
+      retour.hidden = false;
+      retour.className = 'q-retour ' + (juste ? 'ok' : 'non');
+      var explique = etape.getAttribute('data-explique') || '';
+      retour.textContent = (juste ? 'Oui. ' : 'Pas tout a fait — la bonne reponse est en dore. ') + explique;
+    }
+
+    score.total++;
+    if (juste) { score.justes++; }
+    bouton.disabled = false;
+  });
+}
+
+
+/* =========================================================
+   Le son : branche automatiquement s'il existe
+
+   Aucun fichier audio n'est livre avec le site. La regle de l'empire est
+   qu'aucune recitation ne soit publiee sans licence ecrite : une chaine qui
+   se declare "sans copyright" n'a aucun droit de liberer la recitation d'un
+   autre. Le jour ou Mohamed depose un fichier legitime dans audio/, le
+   bouton apparait tout seul. Tant qu'il n'y en a pas, rien ne s'affiche et
+   rien ne ment.
+   ========================================================= */
+
+function ippBrancherAudio(racine) {
+  'use strict';
+  var r = racine || document;
+  var blocs = r.querySelectorAll('[data-audio]');
+  if (!blocs.length || !window.fetch) { return; }
+
+  for (var i = 0; i < blocs.length; i++) {
+    (function (bloc) {
+      var src = 'audio/' + bloc.getAttribute('data-audio') + '.mp3';
+      fetch(src, { method: 'HEAD' }).then(function (rep) {
+        if (!rep.ok) { return; }          // pas de fichier : on n'affiche rien
+        var son = new Audio(src);
+        var bouton = document.createElement('button');
+        bouton.type = 'button';
+        bouton.className = 'ecouter';
+        bouton.innerHTML = '<span aria-hidden="true">&#9654;</span> Ecouter';
+        bouton.addEventListener('click', function () {
+          son.currentTime = 0;
+          son.play();
+        });
+        bloc.appendChild(bouton);
+      }).catch(function () { /* hors ligne ou refuse : on n'affiche rien */ });
+    }(blocs[i]));
+  }
+}
+
+
+/* =========================================================
    Vue 3 : le lecteur de lecon, commun a toutes les lecons
 
    La page contient toutes ses cartes en clair dans le HTML : sans
@@ -975,8 +1069,10 @@ function ippDemarrerLecon(id, racine) {
   var CONTENU = TOTAL - 1;
   var courante = 1;
   var enregistree = false;
+  var score = { justes: 0, total: 0 };
 
   zone.classList.add('pilote');
+  ippBrancherAudio(zone);
 
   var bas = q('bas');
   var bouton = q('suivant');
@@ -1000,6 +1096,16 @@ function ippDemarrerLecon(id, racine) {
       bas.hidden = true;
     } else {
       bouton.textContent = (courante === CONTENU) ? 'Terminer' : 'Suivant';
+
+      // Sur une carte de test, on ne peut pas passer sans repondre : c'est
+      // justement l'effort qui fait retenir.
+      var ici = zone.querySelector('.etape.actif');
+      if (ici && ici.hasAttribute('data-quiz')) {
+        bouton.disabled = !ici.__repondu;
+        ippPreparerQuiz(ici, bouton, score);
+      } else {
+        bouton.disabled = false;
+      }
     }
 
     // Sans cela on resterait au milieu du texte de la carte precedente.
@@ -1018,8 +1124,13 @@ function ippDemarrerLecon(id, racine) {
     var total = IPP.acquis();
     var reste = IPP.publiees().filter(function (l) { return !IPP.estFaite(l.id); }).length;
 
-    var phrase = 'Tu as maintenant appris ' + total + ' choses sur ce site. '
-               + 'Cette lecon reviendra dans ' + r.pas + (r.pas > 1 ? ' jours.' : ' jour.');
+    var phrase = '';
+    if (score.total) {
+      phrase += score.justes + ' sur ' + score.total
+              + (score.justes === score.total ? ' — sans faute. ' : '. ');
+    }
+    phrase += 'Tu as maintenant appris ' + total + ' choses sur ce site. '
+            + 'Cette lecon reviendra dans ' + r.pas + (r.pas > 1 ? ' jours.' : ' jour.');
     if (serie > 1) { phrase += ' ' + serie + ' jours d\'affilee.'; }
 
     var cible = q('fin-texte');

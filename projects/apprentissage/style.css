@@ -872,3 +872,72 @@ a.pc:hover, button.pc:hover { border-color: var(--trait-fort); }
   .noms-liste.large { grid-template-columns: 1fr 1fr; }
   .np-ar { font-size: 27px; }
 }
+
+/* ---------- le test de fin de lecon ---------- */
+
+.q-choix { display: flex; flex-direction: column; gap: 10px; }
+
+.q-opt {
+  appearance: none;
+  cursor: pointer;
+  min-height: 64px;
+  padding: 17px 19px;
+  text-align: left;
+  background: var(--surface-1);
+  border: 1px solid var(--trait);
+  border-radius: var(--r-petit);
+  color: var(--creme);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.35;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+.q-opt:hover:not(:disabled) { border-color: var(--trait-fort); background: var(--surface-2); }
+.q-opt:disabled { cursor: default; }
+
+/* La bonne reponse s'allume en or ; la mauvaise est marquee sans agressivite,
+   d'un simple trait, jamais en rouge vif : on corrige, on ne punit pas. */
+.q-opt.juste {
+  border-color: var(--or);
+  background: rgba(201, 168, 76, 0.15);
+  color: var(--creme);
+  font-weight: 600;
+}
+.q-opt.faux {
+  border-color: rgba(253, 250, 243, 0.28);
+  opacity: 0.72;
+  text-decoration: line-through;
+  text-decoration-color: rgba(253, 250, 243, 0.45);
+}
+
+.q-retour {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.55;
+  border-left: 2px solid var(--trait-fort);
+  padding-left: 14px;
+}
+.q-retour.ok { color: var(--or-clair); }
+.q-retour.non { color: var(--texte-2); }
+
+/* ---------- bouton d'ecoute (apparait seulement si un fichier existe) ---------- */
+
+.ecouter {
+  appearance: none;
+  cursor: pointer;
+  align-self: flex-start;
+  margin-top: 10px;
+  min-height: 56px;
+  padding: 14px 20px;
+  background: transparent;
+  border: 1px solid var(--trait-fort);
+  border-radius: 999px;
+  color: var(--or);
+  font-family: var(--sans);
+  font-size: 16px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+}
+.ecouter:hover { background: rgba(201, 168, 76, 0.12); }

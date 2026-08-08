@@ -241,6 +241,42 @@ ton du message**. La plage « avant de dormir » passe minuit (21h -> 2h) et
 
 Le rendez-vous est rappele sur « Mon chemin », avec un bouton pour le changer.
 
+## Le test de fin de lecon
+
+Mohamed voulait le site « plus addictif ». Le vrai probleme n'etait pas la
+recompense, c'etait la **passivite** : lire onze cartes en appuyant sur
+« Suivant » ne demande aucun effort, donc ne laisse aucune trace.
+
+Chaque lecon peut donc finir par des cartes `data-quiz`. Le lecteur commun les
+detecte, **bloque le bouton « Suivant » tant qu'on n'a pas repondu**, melange
+les reponses a chaque affichage (sinon on apprend la position, pas le contenu),
+et affiche le score en fin de lecon.
+
+**Regle de ton, a ne pas casser** : jamais punitif. Pas de vies perdues, pas de
+score qui humilie. Une mauvaise reponse allume la bonne en dore et explique
+pourquoi, via l'attribut `data-explique` de la carte.
+
+Deja en place sur Al-Fatiha et sur les prophetes. Ajouter un test a une lecon
+= ajouter des `<section class="etape carte-quiz" data-quiz>` avant la carte
+« ce que tu retiens », puis renumeroter les `data-etape`.
+
+## Le son
+
+**Aucun fichier audio n'est livre**, et c'est volontaire : la regle de l'empire
+est qu'aucune recitation ne soit publiee sans licence ecrite. Une chaine qui se
+declare « sans copyright » n'a aucun droit de liberer la recitation d'un autre.
+
+**Mais le mecanisme est pret.** Chaque verset d'Al-Fatiha porte un attribut
+`data-audio`. Au chargement, `ippBrancherAudio()` verifie si le fichier existe
+dans `audio/`. S'il existe, un bouton « Ecouter » apparait tout seul ; sinon
+rien ne s'affiche. Il n'y a plus qu'un fichier a deposer.
+
+Format attendu : `audio/al-fatiha-1.mp3` a `audio/al-fatiha-7.mp3`.
+
+Et une reserve qui reste : une **voix de synthese** qui recite le Coran n'est
+pas une question de droits mais une question religieuse. Elle n'est pas tranchee
+ici.
+
 ## Technique
 
 HTML + CSS + JavaScript purs. **Aucun build, aucune dependance, aucun serveur.**

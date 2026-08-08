@@ -5,6 +5,54 @@ Les entrees les plus recentes sont en haut.
 
 ---
 
+## 2026-08-08 (soir) — BLOQUE — Le son : il me faut une licence, pas un fichier
+
+Mohamed insiste, et il a raison sur le fond : **on ne peut pas apprendre a
+reciter sans entendre reciter.** C'est le manque le plus important du site.
+
+J'ai cherche. Ce que je trouve ne vaut rien : des chaines qui se declarent
+« sans copyright », des compilations sur des plateformes de musique, des
+reponses de forum. **Aucune de ces sources n'a le droit de liberer la
+recitation d'un recitateur.** Se fier a un tiers qui se declare libre de droits
+est exactement le piege. Et je ne peux pas verifier une licence depuis ma
+session : la plupart des hebergeurs sont bloques par le proxy.
+
+**Ce que j'ai fait en attendant, et c'est pret :** le mecanisme est construit et
+teste. Chaque verset d'Al-Fatiha porte un `data-audio`. Au chargement, le site
+verifie si `audio/al-fatiha-1.mp3` existe. S'il existe, un bouton
+« Ecouter » apparait tout seul. S'il n'existe pas, **rien ne s'affiche et rien
+ne ment**. Il n'y a donc plus qu'un fichier a deposer, zero code a ecrire.
+
+**Ce que je te demande :**
+
+1. Connais-tu une source de recitation avec une **licence ecrite verifiable** —
+   pas un « sans copyright » declare par un reuploadeur ? Si oui, l'adresse
+   exacte de la page qui porte la licence.
+2. Sinon, je propose a Mohamed la solution la plus propre : **qu'il enregistre
+   lui-meme**, ou un recitateur qu'il connait, ou son imam. Sept versets, deux
+   minutes de telephone, et la licence lui appartient. Vois-tu un probleme a
+   cela que je n'aurais pas vu ?
+3. Rappel de ma reserve : **Piper ne resout pas ce probleme.** Une voix de
+   synthese qui recite le Coran n'est pas une question de droits, c'est une
+   question religieuse, et je ne la tranche pas.
+
+Format attendu : un fichier mp3 par verset, nomme `al-fatiha-1.mp3` a
+`al-fatiha-7.mp3`, a deposer dans `projects/apprentissage/audio/`.
+
+### INFO — le test de fin de lecon
+
+Mohamed voulait que le site soit « plus addictif ». Le vrai probleme n'etait pas
+la recompense mais la passivite : onze cartes lues en appuyant sur « Suivant »
+ne demandent aucun effort. J'ai ajoute **trois questions a la fin**, avec le
+bouton bloque tant qu'on n'a pas repondu, les reponses melangees a chaque fois,
+et un retour immediat qui explique.
+
+Regle de ton appliquee : **jamais punitif.** Pas de vies perdues, pas de score
+qui humilie. Une mauvaise reponse montre la bonne en dore et explique pourquoi.
+Le resultat s'affiche en fin de lecon (« 3 sur 3 — sans faute »).
+
+---
+
 ## 2026-08-08 — QUESTION — Trois points, dont un vrai blocage editorial
 
 Protocole de la boite aux lettres bien recu, merci pour le diagnostic : je

@@ -882,6 +882,75 @@ a.pc:hover, button.pc:hover { border-color: var(--trait-fort); }
   .np-ar { font-size: 27px; }
 }
 
+/* ---------- le test de fin de lecon ---------- */
+
+.q-choix { display: flex; flex-direction: column; gap: 10px; }
+
+.q-opt {
+  appearance: none;
+  cursor: pointer;
+  min-height: 64px;
+  padding: 17px 19px;
+  text-align: left;
+  background: var(--surface-1);
+  border: 1px solid var(--trait);
+  border-radius: var(--r-petit);
+  color: var(--creme);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.35;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+.q-opt:hover:not(:disabled) { border-color: var(--trait-fort); background: var(--surface-2); }
+.q-opt:disabled { cursor: default; }
+
+/* La bonne reponse s'allume en or ; la mauvaise est marquee sans agressivite,
+   d'un simple trait, jamais en rouge vif : on corrige, on ne punit pas. */
+.q-opt.juste {
+  border-color: var(--or);
+  background: rgba(201, 168, 76, 0.15);
+  color: var(--creme);
+  font-weight: 600;
+}
+.q-opt.faux {
+  border-color: rgba(253, 250, 243, 0.28);
+  opacity: 0.72;
+  text-decoration: line-through;
+  text-decoration-color: rgba(253, 250, 243, 0.45);
+}
+
+.q-retour {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.55;
+  border-left: 2px solid var(--trait-fort);
+  padding-left: 14px;
+}
+.q-retour.ok { color: var(--or-clair); }
+.q-retour.non { color: var(--texte-2); }
+
+/* ---------- bouton d'ecoute (apparait seulement si un fichier existe) ---------- */
+
+.ecouter {
+  appearance: none;
+  cursor: pointer;
+  align-self: flex-start;
+  margin-top: 10px;
+  min-height: 56px;
+  padding: 14px 20px;
+  background: transparent;
+  border: 1px solid var(--trait-fort);
+  border-radius: 999px;
+  color: var(--or);
+  font-family: var(--sans);
+  font-size: 16px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+}
+.ecouter:hover { background: rgba(201, 168, 76, 0.12); }
+
 </style>
 
 <div id="vue"></div>
@@ -1332,8 +1401,48 @@ a.pc:hover, button.pc:hover { border-color: var(--trait-fort); }
         </p>
       </section>
 
+
+      <!-- test : question 1 -->
+      <section class="etape carte-quiz" data-etape="10" data-quiz
+               data-explique="C'est la seule demande de toute la sourate, au verset 6.">
+        <span class="eyebrow">Question 1 sur 3</span>
+        <h2>Que demande-t-on dans Al-Fatiha&nbsp;?</h2>
+        <div class="q-choix">
+        <button class="q-opt" type="button" data-bonne>D'etre guide sur le droit chemin</button>
+        <button class="q-opt" type="button">La sante et l'argent</button>
+        <button class="q-opt" type="button">La victoire sur les ennemis</button>
+        </div>
+        <p class="q-retour" data-r-retour hidden></p>
+      </section>
+
+      <!-- test : question 2 -->
+      <section class="etape carte-quiz" data-etape="11" data-quiz
+               data-explique="Sept, et tu les recites dans chaque unite de priere.">
+        <span class="eyebrow">Question 2 sur 3</span>
+        <h2>Combien Al-Fatiha compte-t-elle de versets&nbsp;?</h2>
+        <div class="q-choix">
+        <button class="q-opt" type="button" data-bonne>Sept</button>
+        <button class="q-opt" type="button">Cinq</button>
+        <button class="q-opt" type="button">Dix</button>
+        </div>
+        <p class="q-retour" data-r-retour hidden></p>
+      </section>
+
+      <!-- test : question 3 -->
+      <section class="etape carte-quiz" data-etape="12" data-quiz
+               data-explique="En arabe, l'ordre des mots porte le sens.">
+        <span class="eyebrow">Question 3 sur 3</span>
+        <h2>Au verset 5, pourquoi &laquo;&nbsp;Toi&nbsp;&raquo; est-il place avant le verbe&nbsp;?</h2>
+        <div class="q-choix">
+        <button class="q-opt" type="button" data-bonne>Parce que cet ordre veut dire : Toi, et personne d'autre</button>
+        <button class="q-opt" type="button">Parce que l'arabe place toujours ce mot en premier</button>
+        <button class="q-opt" type="button">Parce que c'est plus court a reciter</button>
+        </div>
+        <p class="q-retour" data-r-retour hidden></p>
+      </section>
+
       <!-- 10 : ce que tu retiens -->
-      <section class="etape" data-etape="10">
+      <section class="etape" data-etape="13">
         <div class="retenir">
           <span class="eyebrow">Ce que tu retiens</span>
           <p class="q">Al-Fatiha, c'est<br>une demande de guidance,<br>encadree par la louange.</p>
@@ -1346,7 +1455,7 @@ a.pc:hover, button.pc:hover { border-color: var(--trait-fort); }
       </section>
 
       <!-- 10 : fin -->
-      <section class="etape fin" data-etape="11">
+      <section class="etape fin" data-etape="14">
         <svg width="46" height="46" viewBox="0 0 24 24" fill="#c9a84c" aria-hidden="true">
           <path d="M12 2 L22 12 L12 22 L2 12 Z M5 5 H19 V19 H5 Z"/>
         </svg>
@@ -2590,8 +2699,48 @@ a.pc:hover, button.pc:hover { border-color: var(--trait-fort); }
         </p>
       </section>
 
+
+      <!-- test : question 1 -->
+      <section class="etape carte-quiz" data-etape="8" data-quiz
+               data-explique="C'est le passage le plus dense du Coran sur les prophetes.">
+        <span class="eyebrow">Question 1 sur 3</span>
+        <h2>Quel passage nomme dix-sept prophetes d'affilee&nbsp;?</h2>
+        <div class="q-choix">
+        <button class="q-opt" type="button" data-bonne>Sourate Al-An'am, versets 84 a 86</button>
+        <button class="q-opt" type="button">Sourate Al-Fatiha, versets 1 a 7</button>
+        <button class="q-opt" type="button">Sourate Al-Baqara, verset 255</button>
+        </div>
+        <p class="q-retour" data-r-retour hidden></p>
+      </section>
+
+      <!-- test : question 2 -->
+      <section class="etape carte-quiz" data-etape="9" data-quiz
+               data-explique="Le Coran indique que des messagers ont ete envoyes a chaque communaute, sans tous les nommer.">
+        <span class="eyebrow">Question 2 sur 3</span>
+        <h2>&laquo;&nbsp;Vingt-cinq prophetes&nbsp;&raquo; veut dire&nbsp;:</h2>
+        <div class="q-choix">
+        <button class="q-opt" type="button" data-bonne>Vingt-cinq sont nommes dans le Coran</button>
+        <button class="q-opt" type="button">Il n'y a eu que vingt-cinq prophetes en tout</button>
+        <button class="q-opt" type="button">Vingt-cinq ont recu un livre</button>
+        </div>
+        <p class="q-retour" data-r-retour hidden></p>
+      </section>
+
+      <!-- test : question 3 -->
+      <section class="etape carte-quiz" data-etape="10" data-quiz
+               data-explique="Sourate Al-Ahzab, verset 40.">
+        <span class="eyebrow">Question 3 sur 3</span>
+        <h2>Que veut dire &laquo;&nbsp;le sceau des prophetes&nbsp;&raquo;&nbsp;?</h2>
+        <div class="q-choix">
+        <button class="q-opt" type="button" data-bonne>Celui qui ferme : aucun prophete ne vient apres lui</button>
+        <button class="q-opt" type="button">Celui qui a ecrit le Coran de sa main</button>
+        <button class="q-opt" type="button">Celui qui recitait le plus longtemps</button>
+        </div>
+        <p class="q-retour" data-r-retour hidden></p>
+      </section>
+
       <!-- 8 : ce que tu retiens -->
-      <section class="etape" data-etape="8">
+      <section class="etape" data-etape="11">
         <div class="retenir">
           <span class="eyebrow">Ce que tu retiens</span>
           <p class="q">Trois versets<br>en nomment dix-sept.<br>Al-An'am, 84 a 86.</p>
@@ -2604,7 +2753,7 @@ a.pc:hover, button.pc:hover { border-color: var(--trait-fort); }
       </section>
 
       <!-- 9 : fin -->
-      <section class="etape fin" data-etape="9">
+      <section class="etape fin" data-etape="12">
         <svg width="46" height="46" viewBox="0 0 24 24" fill="#c9a84c" aria-hidden="true">
           <path d="M12 2 L22 12 L12 22 L2 12 Z M5 5 H19 V19 H5 Z"/>
         </svg>
@@ -3772,8 +3921,8 @@ a.pc:hover, button.pc:hover { border-color: var(--trait-fort); }
       titre: 'Sourate Al-Fatiha, verset par verset',
       url: 'lecon-al-fatiha.html',
       parcours: 'sourates',
-      minutes: 6,
-      cartes: 11,
+      minutes: 8,
+      cartes: 14,
       acquis: 7,
       publiee: true,
       resume: 'Tu la recites dans chaque priere. Aujourd\'hui, tu vas comprendre '
@@ -3832,8 +3981,8 @@ a.pc:hover, button.pc:hover { border-color: var(--trait-fort); }
       titre: 'Les 25 prophetes nommes dans le Coran',
       url: 'lecon-prophetes-coran.html',
       parcours: 'prophetes',
-      minutes: 6,
-      cartes: 9,
+      minutes: 8,
+      cartes: 12,
       acquis: 25,
       publiee: true,
       resume: 'Dix-sept d\'entre eux sont cites d\'affilee dans un seul passage. '
@@ -4634,6 +4783,100 @@ function ippRendreOffre(racine) {
 
 
 /* =========================================================
+   Le test de fin de lecon
+
+   Pourquoi : lire onze cartes en appuyant sur "Suivant" ne demande aucun
+   effort, donc ne laisse aucune trace. Trois questions a la fin obligent a
+   se souvenir, et c'est le rappel actif qui fait tenir.
+
+   Regle de ton : jamais punitif. Une mauvaise reponse montre la bonne et
+   explique. Pas de vies perdues, pas de score qui humilie.
+   ========================================================= */
+
+function ippPreparerQuiz(etape, bouton, score) {
+  'use strict';
+  if (etape.__quizPret) { return; }
+  etape.__quizPret = true;
+
+  var choix = etape.querySelector('.q-choix');
+  var retour = etape.querySelector('[data-r-retour]');
+  if (!choix) { return; }
+
+  // On melange les reponses : sinon la bonne finit toujours a la meme place et
+  // on apprend la position au lieu du contenu.
+  var opts = [].slice.call(etape.querySelectorAll('.q-opt'));
+  for (var i = opts.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var tmp = opts[i]; opts[i] = opts[j]; opts[j] = tmp;
+  }
+  for (var k = 0; k < opts.length; k++) { choix.appendChild(opts[k]); }
+
+  choix.addEventListener('click', function (e) {
+    var b = e.target.closest ? e.target.closest('.q-opt') : null;
+    if (!b || etape.__repondu) { return; }
+    etape.__repondu = true;
+
+    var juste = b.hasAttribute('data-bonne');
+    b.classList.add(juste ? 'juste' : 'faux');
+    if (!juste) {
+      var bonne = etape.querySelector('.q-opt[data-bonne]');
+      if (bonne) { bonne.classList.add('juste'); }
+    }
+    for (var m = 0; m < opts.length; m++) { opts[m].disabled = true; }
+
+    if (retour) {
+      retour.hidden = false;
+      retour.className = 'q-retour ' + (juste ? 'ok' : 'non');
+      var explique = etape.getAttribute('data-explique') || '';
+      retour.textContent = (juste ? 'Oui. ' : 'Pas tout a fait — la bonne reponse est en dore. ') + explique;
+    }
+
+    score.total++;
+    if (juste) { score.justes++; }
+    bouton.disabled = false;
+  });
+}
+
+
+/* =========================================================
+   Le son : branche automatiquement s'il existe
+
+   Aucun fichier audio n'est livre avec le site. La regle de l'empire est
+   qu'aucune recitation ne soit publiee sans licence ecrite : une chaine qui
+   se declare "sans copyright" n'a aucun droit de liberer la recitation d'un
+   autre. Le jour ou Mohamed depose un fichier legitime dans audio/, le
+   bouton apparait tout seul. Tant qu'il n'y en a pas, rien ne s'affiche et
+   rien ne ment.
+   ========================================================= */
+
+function ippBrancherAudio(racine) {
+  'use strict';
+  var r = racine || document;
+  var blocs = r.querySelectorAll('[data-audio]');
+  if (!blocs.length || !window.fetch) { return; }
+
+  for (var i = 0; i < blocs.length; i++) {
+    (function (bloc) {
+      var src = 'audio/' + bloc.getAttribute('data-audio') + '.mp3';
+      fetch(src, { method: 'HEAD' }).then(function (rep) {
+        if (!rep.ok) { return; }          // pas de fichier : on n'affiche rien
+        var son = new Audio(src);
+        var bouton = document.createElement('button');
+        bouton.type = 'button';
+        bouton.className = 'ecouter';
+        bouton.innerHTML = '<span aria-hidden="true">&#9654;</span> Ecouter';
+        bouton.addEventListener('click', function () {
+          son.currentTime = 0;
+          son.play();
+        });
+        bloc.appendChild(bouton);
+      }).catch(function () { /* hors ligne ou refuse : on n'affiche rien */ });
+    }(blocs[i]));
+  }
+}
+
+
+/* =========================================================
    Vue 3 : le lecteur de lecon, commun a toutes les lecons
 
    La page contient toutes ses cartes en clair dans le HTML : sans
@@ -4653,8 +4896,10 @@ function ippDemarrerLecon(id, racine) {
   var CONTENU = TOTAL - 1;
   var courante = 1;
   var enregistree = false;
+  var score = { justes: 0, total: 0 };
 
   zone.classList.add('pilote');
+  ippBrancherAudio(zone);
 
   var bas = q('bas');
   var bouton = q('suivant');
@@ -4678,6 +4923,16 @@ function ippDemarrerLecon(id, racine) {
       bas.hidden = true;
     } else {
       bouton.textContent = (courante === CONTENU) ? 'Terminer' : 'Suivant';
+
+      // Sur une carte de test, on ne peut pas passer sans repondre : c'est
+      // justement l'effort qui fait retenir.
+      var ici = zone.querySelector('.etape.actif');
+      if (ici && ici.hasAttribute('data-quiz')) {
+        bouton.disabled = !ici.__repondu;
+        ippPreparerQuiz(ici, bouton, score);
+      } else {
+        bouton.disabled = false;
+      }
     }
 
     // Sans cela on resterait au milieu du texte de la carte precedente.
@@ -4696,8 +4951,13 @@ function ippDemarrerLecon(id, racine) {
     var total = IPP.acquis();
     var reste = IPP.publiees().filter(function (l) { return !IPP.estFaite(l.id); }).length;
 
-    var phrase = 'Tu as maintenant appris ' + total + ' choses sur ce site. '
-               + 'Cette lecon reviendra dans ' + r.pas + (r.pas > 1 ? ' jours.' : ' jour.');
+    var phrase = '';
+    if (score.total) {
+      phrase += score.justes + ' sur ' + score.total
+              + (score.justes === score.total ? ' — sans faute. ' : '. ');
+    }
+    phrase += 'Tu as maintenant appris ' + total + ' choses sur ce site. '
+            + 'Cette lecon reviendra dans ' + r.pas + (r.pas > 1 ? ' jours.' : ' jour.');
     if (serie > 1) { phrase += ' ' + serie + ' jours d\'affilee.'; }
 
     var cible = q('fin-texte');
