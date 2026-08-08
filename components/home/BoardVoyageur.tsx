@@ -668,24 +668,6 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
             </div>
           )}
 
-        {/* ── Bande de reels de la ville ── */}
-        {pres && pres.reels.length > 0 && (
-          <div className="board-reels" style={{ display: 'flex', gap: 8, marginTop: 10, overflowX: 'auto', paddingBottom: 4, WebkitOverflowScrolling: 'touch' }}>
-            {pres.reels.map((s) => {
-              const img = s.photos?.[0]?.startsWith('http') ? s.photos[0] : s.villeImage
-              return (
-                <Link key={s.id} href={`/spot/${s.id}`} style={{ flex: 'none', width: 92, height: 128, borderRadius: 14, overflow: 'hidden', position: 'relative', textDecoration: 'none', border: '1px solid rgba(201,168,76,0.25)', backgroundImage: img ? `linear-gradient(180deg, rgba(11,26,15,0) 40%, rgba(11,26,15,0.9)), url(${img})` : 'linear-gradient(180deg, #1d4a35, #0e2013)', backgroundSize: 'cover', backgroundPosition: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>
-                  {s.video && <span style={{ position: 'absolute', top: 6, left: 6, fontSize: 13 }}>🎬</span>}
-                  <span style={{ padding: '5px 7px', color: '#fdfaf3', fontSize: 10.5, fontWeight: 700, lineHeight: 1.25 }}>{s.nom.slice(0, 34)}</span>
-                </Link>
-              )
-            })}
-            <Link href="/spots" style={{ flex: 'none', width: 92, height: 128, borderRadius: 14, border: '1.5px dashed rgba(201,168,76,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--or)', fontWeight: 800, fontSize: 12.5, textDecoration: 'none', textAlign: 'center' }}>
-              {en ? 'All spots →' : 'Tous les spots →'}
-            </Link>
-          </div>
-        )}
-
         {/* ── Une seule ligne discrete : Qibla + date hegirienne ──
             Fusionnees pour alleger le board (7 instruments -> 6). Deux
             zones de frappe distinctes, chacune >= 44 px. */}
