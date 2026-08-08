@@ -951,12 +951,15 @@ a.pc:hover, button.pc:hover { border-color: var(--trait-fort); }
 }
 .ecouter:hover { background: rgba(201, 168, 76, 0.12); }
 
+.vue-doc { display: block; border-top: 1px solid rgba(201,168,76,0.16); }
+.pilote-vues .vue-doc { display: none; border-top: 0; }
+.pilote-vues .vue-doc.actif { display: block; }
 </style>
 
 <div id="vue"></div>
-<p class="note-pied" style="max-width:680px;margin:0 auto;padding:0 20px 34px;text-align:center">Apercu du site en un seul fichier. Deux differences avec la version en ligne&nbsp;: la police des titres (Playfair Display) ne se charge pas ici, et les pages sont assemblees ensemble au lieu d'etre des adresses separees. Tout le reste est le vrai site.</p>
+<p class="note-pied" style="max-width:680px;margin:0 auto;padding:0 20px 34px;text-align:center">Apercu du site en un seul fichier. Les pages sont assemblees ensemble au lieu d'etre des adresses separees&nbsp;; tout le reste est le vrai site. Si ton lecteur n'execute pas les scripts, les pages s'affichent simplement les unes apres les autres&nbsp;: tu vois tout, mais les boutons ne repondent pas.</p>
 
-<template data-vue="accueil">
+<section class="vue-doc" data-vue="accueil">
 <div class="page">
 
   <header class="barre">
@@ -1043,8 +1046,8 @@ a.pc:hover, button.pc:hover { border-color: var(--trait-fort); }
       <span class="eyebrow" data-r="carte-eyebrow">Ta lecon du jour</span>
       <h2 data-r="carte-titre">Sourate Al-Fatiha, verset par verset</h2>
       <div class="meta" data-r="carte-meta">
-        <span>5 min</span><span class="puce"></span>
-        <span>10 cartes</span><span class="puce"></span>
+        <span>8 min</span><span class="puce"></span>
+        <span>14 cartes</span><span class="puce"></span>
         <span>Le sens des sourates</span>
       </div>
       <p class="clair" data-r="carte-pitch">
@@ -1102,9 +1105,9 @@ a.pc:hover, button.pc:hover { border-color: var(--trait-fort); }
   </footer>
 
 </div>
-</template>
+</section>
 
-<template data-vue="al-fatiha">
+<section class="vue-doc" data-vue="al-fatiha">
 <div class="page">
 
   <header class="lecon-haut">
@@ -1491,9 +1494,9 @@ a.pc:hover, button.pc:hover { border-color: var(--trait-fort); }
   </footer>
 
 </div>
-</template>
+</section>
 
-<template data-vue="invocations-matin">
+<section class="vue-doc" data-vue="invocations-matin">
 <div class="page">
 
   <header class="lecon-haut">
@@ -1685,9 +1688,9 @@ a.pc:hover, button.pc:hover { border-color: var(--trait-fort); }
   </footer>
 
 </div>
-</template>
+</section>
 
-<template data-vue="six-piliers-foi">
+<section class="vue-doc" data-vue="six-piliers-foi">
 <div class="page">
 
   <header class="lecon-haut">
@@ -1911,9 +1914,9 @@ a.pc:hover, button.pc:hover { border-color: var(--trait-fort); }
   </footer>
 
 </div>
-</template>
+</section>
 
-<template data-vue="priere-gestes">
+<section class="vue-doc" data-vue="priere-gestes">
 <div class="page">
 
   <header class="lecon-haut">
@@ -2222,9 +2225,9 @@ a.pc:hover, button.pc:hover { border-color: var(--trait-fort); }
   </footer>
 
 </div>
-</template>
+</section>
 
-<template data-vue="alphabet-arabe">
+<section class="vue-doc" data-vue="alphabet-arabe">
 <div class="page">
 
   <header class="lecon-haut">
@@ -2530,9 +2533,9 @@ a.pc:hover, button.pc:hover { border-color: var(--trait-fort); }
   </footer>
 
 </div>
-</template>
+</section>
 
-<template data-vue="prophetes-coran">
+<section class="vue-doc" data-vue="prophetes-coran">
 <div class="page">
 
   <header class="lecon-haut">
@@ -2789,9 +2792,9 @@ a.pc:hover, button.pc:hover { border-color: var(--trait-fort); }
   </footer>
 
 </div>
-</template>
+</section>
 
-<template data-vue="programme">
+<section class="vue-doc" data-vue="programme">
 <div class="page">
 
   <header class="barre">
@@ -2992,9 +2995,9 @@ a.pc:hover, button.pc:hover { border-color: var(--trait-fort); }
   </footer>
 
 </div>
-</template>
+</section>
 
-<template data-vue="sourates">
+<section class="vue-doc" data-vue="sourates">
 <div class="page">
 
   <header class="barre">
@@ -3744,9 +3747,9 @@ a.pc:hover, button.pc:hover { border-color: var(--trait-fort); }
 </div>
 </body>
 </html>
-</template>
+</section>
 
-<template data-vue="chemin">
+<section class="vue-doc" data-vue="chemin">
 <div class="page">
 
   <header class="barre">
@@ -3820,7 +3823,7 @@ a.pc:hover, button.pc:hover { border-color: var(--trait-fort); }
   </footer>
 
 </div>
-</template>
+</section>
 
 <script>
 /* =========================================================
@@ -4856,6 +4859,9 @@ function ippBrancherAudio(racine) {
   for (var i = 0; i < blocs.length; i++) {
     (function (bloc) {
       var src = 'audio/' + bloc.getAttribute('data-audio') + '.mp3';
+      // Sur un fichier ouvert en local, fetch peut lever tout de suite selon
+      // le navigateur : le try protege le reste de la lecon.
+      try {
       fetch(src, { method: 'HEAD' }).then(function (rep) {
         if (!rep.ok) { return; }          // pas de fichier : on n'affiche rien
         var son = new Audio(src);
@@ -4869,6 +4875,7 @@ function ippBrancherAudio(racine) {
         });
         bloc.appendChild(bouton);
       }).catch(function () { /* hors ligne ou refuse : on n'affiche rien */ });
+      } catch (e) { /* acces refuse : pas de bouton, et la lecon continue */ }
     }(blocs[i]));
   }
 }
@@ -5169,22 +5176,34 @@ function ippDemarrerDiagnostic(racine, quandFini) {
       "sourates.html": "sourates"
   };
 
-  var hote = document.getElementById('vue');
+  var vues = {};
+  var sections = document.querySelectorAll('.vue-doc');
+  if (!sections.length) { return; }
+
+  // Instantane pris avant toute modification : c'est lui qui sert de gabarit.
+  for (var i = 0; i < sections.length; i++) {
+    vues[sections[i].getAttribute('data-vue')] = sections[i].innerHTML;
+  }
+
+  // A partir d'ici seulement, on masque tout sauf la vue courante. Sans
+  // JavaScript, cette classe n'est jamais posee et tout reste visible.
+  document.body.className += ' pilote-vues';
 
   function aller(vue) {
-    var gabarit = document.querySelector('template[data-vue="' + vue + '"]');
-    if (!gabarit) { return; }
+    var el = document.querySelector('.vue-doc[data-vue="' + vue + '"]');
+    if (!el) { return; }
 
-    // On repart du gabarit d'origine a chaque fois : etat propre, et aucun
-    // ecouteur de clic qui s'empilerait a la reouverture d'une lecon.
-    hote.innerHTML = '';
-    hote.appendChild(gabarit.content.cloneNode(true));
+    el.innerHTML = vues[vue];
+    for (var j = 0; j < sections.length; j++) {
+      if (sections[j] === el) { sections[j].className = 'vue-doc actif'; }
+      else { sections[j].className = 'vue-doc'; }
+    }
 
-    if (vue === 'accueil')       { ippRendreAccueil(hote); }
-    else if (vue === 'programme'){ ippRendreOffre(hote); }
-    else if (vue === 'sourates') { /* page de repere, rien a piloter */ }
-    else if (vue === 'chemin')  { ippRendreChemin(hote); }
-    else                        { ippDemarrerLecon(vue, hote); }
+    if (vue === 'accueil')        { ippRendreAccueil(el); }
+    else if (vue === 'programme') { ippRendreOffre(el); }
+    else if (vue === 'sourates')  { /* page de repere, rien a piloter */ }
+    else if (vue === 'chemin')    { ippRendreChemin(el); }
+    else                          { ippDemarrerLecon(vue, el); }
 
     window.scrollTo(0, 0);
   }

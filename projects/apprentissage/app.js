@@ -1031,6 +1031,9 @@ function ippBrancherAudio(racine) {
   for (var i = 0; i < blocs.length; i++) {
     (function (bloc) {
       var src = 'audio/' + bloc.getAttribute('data-audio') + '.mp3';
+      // Sur un fichier ouvert en local, fetch peut lever tout de suite selon
+      // le navigateur : le try protege le reste de la lecon.
+      try {
       fetch(src, { method: 'HEAD' }).then(function (rep) {
         if (!rep.ok) { return; }          // pas de fichier : on n'affiche rien
         var son = new Audio(src);
@@ -1044,6 +1047,7 @@ function ippBrancherAudio(racine) {
         });
         bloc.appendChild(bouton);
       }).catch(function () { /* hors ligne ou refuse : on n'affiche rien */ });
+      } catch (e) { /* acces refuse : pas de bouton, et la lecon continue */ }
     }(blocs[i]));
   }
 }

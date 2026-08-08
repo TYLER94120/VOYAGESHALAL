@@ -53,7 +53,8 @@ def main() -> int:
     gabarits = []
     for fichier, vue in VUES:
         corps = corps_de_page(RACINE / fichier)
-        gabarits.append(f'<template data-vue="{vue}">\n{corps}\n</template>')
+        gabarits.append(
+            f'<section class="vue-doc" data-vue="{vue}">\n{corps}\n</section>')
 
     # Correspondance lien -> vue, pour intercepter la navigation.
     liens = {"index.html": "accueil", "chemin.html": "chemin"}
@@ -66,22 +67,34 @@ def main() -> int:
       %s
   };
 
-  var hote = document.getElementById('vue');
+  var vues = {};
+  var sections = document.querySelectorAll('.vue-doc');
+  if (!sections.length) { return; }
+
+  // Instantane pris avant toute modification : c'est lui qui sert de gabarit.
+  for (var i = 0; i < sections.length; i++) {
+    vues[sections[i].getAttribute('data-vue')] = sections[i].innerHTML;
+  }
+
+  // A partir d'ici seulement, on masque tout sauf la vue courante. Sans
+  // JavaScript, cette classe n'est jamais posee et tout reste visible.
+  document.body.className += ' pilote-vues';
 
   function aller(vue) {
-    var gabarit = document.querySelector('template[data-vue="' + vue + '"]');
-    if (!gabarit) { return; }
+    var el = document.querySelector('.vue-doc[data-vue="' + vue + '"]');
+    if (!el) { return; }
 
-    // On repart du gabarit d'origine a chaque fois : etat propre, et aucun
-    // ecouteur de clic qui s'empilerait a la reouverture d'une lecon.
-    hote.innerHTML = '';
-    hote.appendChild(gabarit.content.cloneNode(true));
+    el.innerHTML = vues[vue];
+    for (var j = 0; j < sections.length; j++) {
+      if (sections[j] === el) { sections[j].className = 'vue-doc actif'; }
+      else { sections[j].className = 'vue-doc'; }
+    }
 
-    if (vue === 'accueil')       { ippRendreAccueil(hote); }
-    else if (vue === 'programme'){ ippRendreOffre(hote); }
-    else if (vue === 'sourates') { /* page de repere, rien a piloter */ }
-    else if (vue === 'chemin')  { ippRendreChemin(hote); }
-    else                        { ippDemarrerLecon(vue, hote); }
+    if (vue === 'accueil')        { ippRendreAccueil(el); }
+    else if (vue === 'programme') { ippRendreOffre(el); }
+    else if (vue === 'sourates')  { /* page de repere, rien a piloter */ }
+    else if (vue === 'chemin')    { ippRendreChemin(el); }
+    else                          { ippDemarrerLecon(vue, el); }
 
     window.scrollTo(0, 0);
   }
@@ -98,10 +111,10 @@ def main() -> int:
 
     note = (
         '<p class="note-pied" style="max-width:680px;margin:0 auto;padding:0 20px 34px;'
-        'text-align:center">Apercu du site en un seul fichier. Deux differences avec la '
-        'version en ligne&nbsp;: la police des titres (Playfair Display) ne se charge pas '
-        'ici, et les pages sont assemblees ensemble au lieu d\'etre des adresses separees. '
-        'Tout le reste est le vrai site.</p>'
+        'text-align:center">Apercu du site en un seul fichier. Les pages sont assemblees '
+        'ensemble au lieu d\'etre des adresses separees&nbsp;; tout le reste est le vrai '
+        'site. Si ton lecteur n\'execute pas les scripts, les pages s\'affichent simplement '
+        'les unes apres les autres&nbsp;: tu vois tout, mais les boutons ne repondent pas.</p>'
     )
 
     sortie = "\n".join([
@@ -118,6 +131,11 @@ def main() -> int:
         "",
         "<style>",
         style,
+        # Sans JavaScript, .pilote-vues n'existe pas et toutes les vues restent
+        # visibles : le fichier se lit comme un document.
+        ".vue-doc { display: block; border-top: 1px solid rgba(201,168,76,0.16); }",
+        ".pilote-vues .vue-doc { display: none; border-top: 0; }",
+        ".pilote-vues .vue-doc.actif { display: block; }",
         "</style>",
         "",
         '<div id="vue"></div>',
