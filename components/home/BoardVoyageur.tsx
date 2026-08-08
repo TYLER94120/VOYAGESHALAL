@@ -14,7 +14,7 @@ import { useLanguage } from '@/components/i18n/LanguageProvider'
 // sections serveur) ne change pas — SEO intact. Sans position : rien (repli =
 // accueil classique).
 
-interface Lieu { nom: string; lat: number; lng: number; source: 'osm' | 'communaute'; distM: number; spotId?: string }
+interface Lieu { nom: string; lat: number; lng: number; source: 'osm' | 'communaute' | 'annuaire'; distM: number; spotId?: string }
 interface FeedSpot {
   id: string; nom: string; villeNom: string; villeSlug: string; categorie?: string
   lat?: number; lng?: number; photos?: string[]; video?: string; villeImage?: string
@@ -49,6 +49,9 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
   // Guide de la ville OU L'ON EST (compteurs reels), pour proposer mieux
   // qu'une vedette generique quand il n'y a pas encore de pepite autour.
   const [villeGuide, setVilleGuide] = useState<BoardVedette | null>(null)
+  // Ville la plus proche selon l'annuaire : fiable meme quand le GPS ne
+  // donne pas de nom (« Ma position ») ou quand le libelle est inconnu.
+  const [villeProche, setVilleProche] = useState<string | null>(null)
 
   useEffect(() => {
     const id = setInterval(() => setNow(Date.now()), 30_000)
@@ -109,17 +112,45 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
           else if (s.categorie === 'resto') rc.push(lieu)
         }
       }).catch(() => {})
-    Promise.allSettled([p1, p2]).then(() => {
+    // 3e source : NOTRE annuaire (lieux deja documentes dans les fiches
+    // villes). Il rend la tuile « ou prier » fiable meme si Overpass est
+    // lent ou indisponible. Etiquete « referencé · à vérifier » : ce sont
+    // des donnees OpenStreetMap, pas des temoignages ni des verifications.
+    const p3 = fetch(`/api/annuaire?lat=${pos.lat}&lng=${pos.lng}&rayon=8&limit=40`)
+      .then((r) => r.json())
+      .then((j) => {
+        if (j.ville?.slug) setVilleProche(j.ville.slug as string)
+        for (const l of (j.lieux as { nom: string; lat: number; lng: number; type: string }[]) ?? []) {
+          const lieu: Lieu = { nom: l.nom, lat: l.lat, lng: l.lng, source: 'annuaire', distM: hav(pos.lat, pos.lng, l.lat, l.lng) }
+          if (l.type === 'priere') mc.push(lieu)
+          else if (l.type === 'resto') rc.push(lieu)
+        }
+      }).catch(() => {})
+
+    Promise.allSettled([p1, p2, p3]).then(() => {
       if (cancelled) return
-      mc.sort((a, b) => a.distM - b.distM); rc.sort((a, b) => a.distM - b.distM)
-      setOsmOk(osmDone)
+      const dedupe = (arr: Lieu[]) => {
+        const vus = new Set<string>()
+        return arr.filter((l) => {
+          const k = `${l.nom.toLowerCase()}|${l.lat.toFixed(3)}|${l.lng.toFixed(3)}`
+          if (vus.has(k)) return false
+          vus.add(k); return true
+        })
+      }
+      // La tuile annonce « X min a pied » : c'est donc la DISTANCE qui
+      // classe. A distance egale, un spot vecu par un voyageur passe devant.
+      const rang = (l: Lieu) => (l.source === 'communaute' ? 0 : 1)
+      const parDistance = (a: Lieu, b: Lieu) => a.distM - b.distM || rang(a) - rang(b)
+      mc.splice(0, mc.length, ...dedupe(mc).sort(parDistance))
+      rc.splice(0, rc.length, ...dedupe(rc).sort(parDistance))
+      setOsmOk(osmDone || mc.length > 0 || rc.length > 0)
       setMosquee(mc[0] ?? null); setResto(rc[0] ?? null)
     })
     return () => { cancelled = true }
   }, [pos])
 
   useEffect(() => {
-    const slug = pos ? slugifyVille(pos.label) : ''
+    const slug = villeProche || (pos ? slugifyVille(pos.label) : '')
     if (!slug || slug.length < 3) { setVilleGuide(null); return }
     let off = false
     fetch(`/api/ville-counts?slug=${encodeURIComponent(slug)}${en ? '&en=1' : ''}`)
@@ -127,7 +158,7 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
       .then((j) => { if (!off) setVilleGuide(j.ville ?? null) })
       .catch(() => {})
     return () => { off = true }
-  }, [pos?.label, en]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [pos?.label, villeProche, en]) // eslint-disable-line react-hooks/exhaustive-deps
 
   // ── Spots communautaires (pepite + bande de reels + compteur) ──
   useEffect(() => {
@@ -270,8 +301,11 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
               {mosquee && (
                 <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginTop: 10, flexWrap: 'wrap' }}>
                   <p style={{ flex: 1, minWidth: 170, color: '#fdfaf3', fontSize: 14, margin: 0, lineHeight: 1.45 }}>
-                    {mosquee.source === 'communaute' ? '🤝' : '🕌'} <strong><bdi>{mosquee.nom}</bdi></strong>
-                    <span style={{ color: 'rgba(253,250,243,0.6)' }}> · {walkMin} {en ? 'min walk' : 'min à pied'}</span>
+                    {mosquee.source === 'communaute' ? '🤝' : mosquee.source === 'annuaire' ? '📒' : '🕌'} <strong><bdi>{mosquee.nom}</bdi></strong>
+                    <span style={{ color: 'rgba(253,250,243,0.6)' }}> · {walkMin} {en ? 'min walk' : 'min à pied'} · {
+                      mosquee.source === 'communaute' ? (en ? 'shared by a traveler' : 'partagé par un voyageur')
+                        : (en ? 'listed · to verify' : 'référencé · à vérifier')
+                    }</span>
                   </p>
                   <a href={itin(mosquee.lat, mosquee.lng)} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}
                     style={{ minHeight: 44, display: 'inline-flex', alignItems: 'center', padding: '0 16px', borderRadius: 999, background: 'var(--or)', color: '#0b1a0f', fontWeight: 800, fontSize: 13.5, textDecoration: 'none' }}>
@@ -310,7 +344,7 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
               </p>
               <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginTop: 8, flexWrap: 'wrap' }}>
                 <p style={{ flex: 1, minWidth: 160, ...T.meta, fontSize: 13 }}>
-                  {walk(bestResto.distM)} {en ? 'min walk' : 'min à pied'} · {bestResto.source === 'communaute' ? (en ? 'community · to confirm' : 'communauté · à confirmer') : (en ? 'reported halal · verify' : 'signalé halal · à vérifier')}
+                  {walk(bestResto.distM)} {en ? 'min walk' : 'min à pied'} · {bestResto.source === 'communaute' ? (en ? 'shared by a traveler · to confirm' : 'partagé par un voyageur · à confirmer') : (en ? 'listed halal · to verify' : 'signalé halal · à vérifier')}
                 </p>
                 <a href={itin(bestResto.lat, bestResto.lng)} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}
                   style={{ minHeight: 44, display: 'inline-flex', alignItems: 'center', padding: '0 16px', borderRadius: 999, background: 'var(--or)', color: '#0b1a0f', fontWeight: 800, fontSize: 13.5, textDecoration: 'none' }}>
