@@ -256,9 +256,20 @@ et affiche le score en fin de lecon.
 score qui humilie. Une mauvaise reponse allume la bonne en dore et explique
 pourquoi, via l'attribut `data-explique` de la carte.
 
-Deja en place sur Al-Fatiha et sur les prophetes. Ajouter un test a une lecon
-= ajouter des `<section class="etape carte-quiz" data-quiz>` avant la carte
-« ce que tu retiens », puis renumeroter les `data-etape`.
+**Les questions sont entrelacees, pas groupees a la fin.** C'etait mon erreur
+au premier essai : trois questions en fin de lecon demandaient neuf appuis sur
+« Suivant » pour etre atteintes. Mohamed a ouvert le site et n'a vu aucune
+difference — il avait raison, de la ou il etait il n'y en avait aucune.
+
+Chaque question est donc placee **juste apres le contenu qu'elle verifie**. Sur
+Al-Fatiha, la premiere arrive apres **trois** appuis. La lecon devient un
+aller-retour au lieu d'un diaporama, et cela se sent tout de suite.
+
+Regle a retenir en ajoutant une lecon : **une question dans les trois premieres
+cartes.** Un mecanisme qu'on ne rencontre qu'a la fin n'existe pas.
+
+Deja en place sur Al-Fatiha (questions en positions 4, 9, 11) et sur les
+prophetes (5, 8, 10).
 
 ## Le son
 
