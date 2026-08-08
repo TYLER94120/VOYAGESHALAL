@@ -327,6 +327,33 @@ nombre de versets.
 Si un hebergeur demandait l'arret, tout se retire en une ligne : les quatre
 sources sont dans `SOURCES`, en haut d'`audio-coran.js`.
 
+### La serie, son filet, et l'anneau du jour
+
+**Rien de tout cela n'est stocke.** La serie, le stock de jours de grace et le
+record sont **recalcules** a chaque affichage depuis la liste des jours
+(`serieDetaillee()`). Un compteur ecrit quelque part finit toujours par mentir ;
+une valeur recalculee ne peut pas deriver. Meme chose pour l'objectif du jour,
+deduit de `faitLe` et `tours` (`objectifDuJour()`).
+
+**Le jour de grace.** Une serie nue est un piege : le premier jour manque et
+tout s'effondre (« j'ai perdu mes quarante jours, j'arrete »). On en gagne donc
+un tous les **cinq** jours de serie, **deux en stock au maximum**, consomme
+automatiquement quand un jour manque, et **annonce seulement apres avoir
+servi** — ce n'est pas une monnaie a surveiller, c'est un filet qu'on decouvre.
+
+**L'anneau du jour.** Objectif minuscule et toujours atteignable : **une lecon
+OU trois revisions**. Il est visible en haut de l'accueil **avant** d'avoir
+commence, parce que c'est son incompletude qui donne envie de le fermer. A zero,
+l'arc n'est pas dessine du tout : un trait arrondi de longueur nulle laisse un
+point dore qui ressemble a une salissure.
+
+**Le ton, non negociable.** Ce compteur ne juge personne. Une serie cassee
+repart a 1 **sans un mot de reproche** — un test verifie qu'aucun mot comme
+« perdu », « casse », « rate » ou « echec » n'apparait dans cet etat. Et jamais
+de pression religieuse : on ne melange pas un mecanisme de produit avec la
+crainte d'Allah. Ce serait malhonnete, et ce serait la meilleure facon de faire
+fuir quelqu'un.
+
 ### Les six sons d'interface
 
 `sons.js` + `sons/` : six timbres de cloche synthetises, aucune licence en jeu.
@@ -507,6 +534,19 @@ fichiers servis en HTTP :
 - les pages restent a **35 ms de DOM et utilisables en moins de 80 ms** : le
   sondage des sources ne bloque rien. (Dans l'atelier, une page semble mettre
   12 s : c'est le CDN de polices coupe par le proxy, pas le site.)
+
+**La serie, la grace et l'anneau**
+
+- 20 controles de logique pure sur `serieDetaillee()` et `objectifDuJour()`,
+  hors navigateur : gain d'une grace a 5 jours, plafond a 2, un trou d'un jour
+  couvert, un trou de trois jours qui casse, le trou situe entre la derniere
+  visite et aujourd'hui, et **le record qui survit a la cassure** ;
+- 7 etats affiches verifies au navigateur : premier jour, objectif atteint,
+  objectif au tiers (une revision sur trois), 6 jours d'affilee, record
+  superieur a la serie en cours, serie sauvee par la grace, serie cassee ;
+- dans l'etat « serie cassee », **aucun mot de reproche** n'est present ;
+- l'anneau reste a un seul bouton et une seule carte a l'accueil dans les sept
+  etats, sans debordement.
 
 **Defaut connu, pas encore corrige** : quatre lecons sur six ne contiennent
 **aucune question** (`priere-gestes`, `six-piliers-foi`, `invocations-matin`,

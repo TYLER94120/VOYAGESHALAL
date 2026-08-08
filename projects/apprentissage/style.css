@@ -147,15 +147,46 @@ button { font: inherit; }
 }
 .salut h1 { font-size: 32px; }
 
-.serie {
-  display: flex; align-items: center; gap: 13px;
-  padding: 15px 17px;
-  background: linear-gradient(100deg, rgba(201,168,76,0.14), rgba(201,168,76,0.03));
-  border: 1px solid var(--trait-fort);
+/* L'anneau du jour et la serie : une seule ligne, en haut de l'accueil. */
+.jour-etat {
+  display: flex; align-items: center; gap: 14px;
+  padding: 13px 16px;
+  background: linear-gradient(100deg, rgba(201,168,76,0.11), rgba(201,168,76,0.02));
+  border: 1px solid var(--trait);
   border-radius: var(--r-petit);
+  transition: border-color 0.3s ease, background 0.3s ease;
 }
-.serie .n { font-family: var(--serif); font-size: 30px; color: var(--or); line-height: 1; }
-.serie .txt { font-size: 15px; color: var(--or-clair); line-height: 1.35; }
+/* Ferme : la bordure se reveille. Discretement — c'est une satisfaction, pas
+   une decoration. */
+.jour-etat.ferme {
+  border-color: var(--trait-fort);
+  background: linear-gradient(100deg, rgba(201,168,76,0.17), rgba(201,168,76,0.04));
+}
+.jour-etat .anneau { flex: 0 0 auto; width: 64px; height: 64px; }
+.jour-etat .anneau svg { display: block; }
+.jour-etat .anneau circle { transition: stroke-dasharray 0.7s cubic-bezier(0.22, 1, 0.36, 1); }
+.jour-mots { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.objectif-txt {
+  margin: 0; font-size: 15px; line-height: 1.35;
+  color: var(--or-clair); font-weight: 600;
+}
+.jour-etat.ferme .objectif-txt { color: var(--or); }
+.serie-txt {
+  margin: 0; font-size: 14px; line-height: 1.35;
+  color: var(--texte-3);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Le mot sur la grace : il apparait apres coup, jamais comme un avertissement. */
+.grace-mot {
+  margin: 0;
+  padding: 12px 15px;
+  border-left: 2px solid var(--or);
+  background: rgba(201,168,76,0.06);
+  border-radius: 0 var(--r-petit) var(--r-petit) 0;
+  color: var(--or-clair);
+  font-size: 14px; line-height: 1.55;
+}
 
 .carte-jour {
   position: relative;

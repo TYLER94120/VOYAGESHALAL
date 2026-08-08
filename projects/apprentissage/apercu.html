@@ -156,15 +156,46 @@ button { font: inherit; }
 }
 .salut h1 { font-size: 32px; }
 
-.serie {
-  display: flex; align-items: center; gap: 13px;
-  padding: 15px 17px;
-  background: linear-gradient(100deg, rgba(201,168,76,0.14), rgba(201,168,76,0.03));
-  border: 1px solid var(--trait-fort);
+/* L'anneau du jour et la serie : une seule ligne, en haut de l'accueil. */
+.jour-etat {
+  display: flex; align-items: center; gap: 14px;
+  padding: 13px 16px;
+  background: linear-gradient(100deg, rgba(201,168,76,0.11), rgba(201,168,76,0.02));
+  border: 1px solid var(--trait);
   border-radius: var(--r-petit);
+  transition: border-color 0.3s ease, background 0.3s ease;
 }
-.serie .n { font-family: var(--serif); font-size: 30px; color: var(--or); line-height: 1; }
-.serie .txt { font-size: 15px; color: var(--or-clair); line-height: 1.35; }
+/* Ferme : la bordure se reveille. Discretement — c'est une satisfaction, pas
+   une decoration. */
+.jour-etat.ferme {
+  border-color: var(--trait-fort);
+  background: linear-gradient(100deg, rgba(201,168,76,0.17), rgba(201,168,76,0.04));
+}
+.jour-etat .anneau { flex: 0 0 auto; width: 64px; height: 64px; }
+.jour-etat .anneau svg { display: block; }
+.jour-etat .anneau circle { transition: stroke-dasharray 0.7s cubic-bezier(0.22, 1, 0.36, 1); }
+.jour-mots { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.objectif-txt {
+  margin: 0; font-size: 15px; line-height: 1.35;
+  color: var(--or-clair); font-weight: 600;
+}
+.jour-etat.ferme .objectif-txt { color: var(--or); }
+.serie-txt {
+  margin: 0; font-size: 14px; line-height: 1.35;
+  color: var(--texte-3);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Le mot sur la grace : il apparait apres coup, jamais comme un avertissement. */
+.grace-mot {
+  margin: 0;
+  padding: 12px 15px;
+  border-left: 2px solid var(--or);
+  background: rgba(201,168,76,0.06);
+  border-radius: 0 var(--r-petit) var(--r-petit) 0;
+  color: var(--or-clair);
+  font-size: 14px; line-height: 1.55;
+}
 
 .carte-jour {
   position: relative;
@@ -1051,10 +1082,20 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
       <p class="rdv" data-r="rdv" hidden></p>
     </div>
 
-    <div class="serie" data-r="serie" hidden>
-      <span class="n" data-r="serie-n">0</span>
-      <span class="txt" data-r="serie-txt"></span>
+    <!-- L'anneau du jour et la serie, sur une seule ligne. L'anneau est
+         visible AVANT d'avoir commence : c'est son incompletude qui donne
+         envie de le fermer. -->
+    <div class="jour-etat" data-r="jour-etat" hidden>
+      <div class="anneau" data-r="anneau"></div>
+      <div class="jour-mots">
+        <p class="objectif-txt" data-r="objectif-txt"></p>
+        <p class="serie-txt" data-r="serie-txt"></p>
+      </div>
     </div>
+
+    <!-- La grace, annoncee apres coup et jamais avant : ce n'est pas une
+         monnaie a surveiller, c'est un filet qu'on decouvre. -->
+    <p class="grace-mot" data-r="grace-mot" hidden></p>
 
     <!-- La lecon du jour. Le contenu statique sert de repli si JS est absent. -->
     <section class="carte-jour" data-r="carte">
@@ -3782,6 +3823,8 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
       <span class="leg" data-r="compteur-txt">enseignement appris.</span>
     </div>
 
+    <p class="note-pied" data-r="record"></p>
+
     <section class="bloc">
       <h2 class="titre-bloc" data-r="titre-mois">Ce mois-ci</h2>
       <div class="mois-cadre">
@@ -4540,23 +4583,111 @@ if (typeof module !== 'undefined' && module.exports) { module.exports = ippCoran
 
   function jours() { return charger().jours.slice().sort(); }
 
-  function serie() {
-    var faits = {};
-    var liste = charger().jours;
-    for (var i = 0; i < liste.length; i++) { faits[liste[i]] = true; }
+  /* ---------- la serie, et son filet ---------------------------------------
+     Une serie nue est un piege : le premier jour manque et tout s'effondre
+     (« j'ai perdu mes quarante jours, j'arrete »). D'ou le JOUR DE GRACE : on
+     en gagne un tous les cinq jours de serie, deux en stock au maximum, et il
+     se consomme tout seul quand un jour manque.
 
-    var curseur = aujourdhui();
-    // La serie tient encore si l'on a travaille hier mais pas encore aujourd'hui.
-    if (!faits[curseur]) {
-      curseur = plusDeJours(curseur, -1);
-      if (!faits[curseur]) { return 0; }
+     Rien de tout cela n'est stocke : la serie, le stock de grace et le record
+     sont RECALCULES a chaque fois depuis la liste des jours. Un compteur
+     ecrit quelque part finit toujours par mentir ; une valeur recalculee ne
+     peut pas deriver.
+
+     Regle de ton, non negociable : ce compteur ne juge personne. Une serie
+     cassee repart a 1 sans un mot de reproche, et jamais de pression
+     religieuse — on ne melange pas un mecanisme de produit avec la crainte
+     d'Allah.
+     ---------------------------------------------------------------------- */
+
+  var GRACE_TOUS_LES = 5;
+  var GRACE_MAX = 2;
+
+  function ecartJours(a, b) {
+    return Math.round((depuisCle(b) - depuisCle(a)) / 86400000);
+  }
+
+  function serieDetaillee() {
+    var liste = jours();
+    if (!liste.length) {
+      return { serie: 0, record: 0, grace: 0, sauvee: false, jamais: true };
     }
-    var n = 0;
-    while (faits[curseur]) {
-      n++;
-      curseur = plusDeJours(curseur, -1);
+
+    var serie = 0;
+    var grace = 0;
+    var record = 0;
+    var sauvee = false;      // la serie en cours a-t-elle ete sauvee par une grace ?
+
+    function compter() {
+      serie++;
+      if (serie % GRACE_TOUS_LES === 0) { grace = Math.min(GRACE_MAX, grace + 1); }
+      if (serie > record) { record = serie; }
     }
-    return n;
+
+    compter();               // le premier jour de l'historique
+    for (var i = 1; i < liste.length; i++) {
+      var manques = ecartJours(liste[i - 1], liste[i]) - 1;
+      if (manques === 0) {
+        compter();
+      } else if (manques <= grace) {
+        grace -= manques;    // le filet a joue
+        sauvee = true;
+        compter();
+      } else {
+        serie = 0;           // la chaine casse : on repart, sans commentaire
+        grace = 0;
+        sauvee = false;
+        compter();
+      }
+    }
+
+    // De la derniere visite a aujourd'hui. Aujourd'hui ne compte pas comme
+    // manque : la journee n'est pas finie.
+    var restant = ecartJours(liste[liste.length - 1], aujourdhui()) - 1;
+    if (restant > 0) {
+      if (restant <= grace) {
+        grace -= restant;
+        sauvee = true;
+      } else {
+        serie = 0;
+        grace = 0;
+        sauvee = false;
+      }
+    }
+
+    return { serie: serie, record: record, grace: grace, sauvee: sauvee, jamais: false };
+  }
+
+  function serie() { return serieDetaillee().serie; }
+
+  /* ---------- l'objectif du jour -------------------------------------------
+     Minuscule et toujours atteignable : une lecon OU trois revisions. Un
+     objectif qu'on peut rater les jours de fatigue est un objectif qui fait
+     fermer le site — justement les jours ou la serie a besoin de nous.
+     ---------------------------------------------------------------------- */
+
+  var OBJ_REVISIONS = 3;
+
+  function objectifDuJour() {
+    var d = charger();
+    var jour = aujourdhui();
+    var neuves = 0;
+    var revisions = 0;
+
+    for (var id in d.lecons) {
+      if (!Object.prototype.hasOwnProperty.call(d.lecons, id)) { continue; }
+      var f = d.lecons[id];
+      if (!f || f.faitLe !== jour) { continue; }
+      if ((f.tours || 1) > 1) { revisions++; } else { neuves++; }
+    }
+
+    var part = Math.max(neuves, revisions / OBJ_REVISIONS);
+    return {
+      neuves: neuves,
+      revisions: revisions,
+      atteint: part >= 1,
+      part: Math.min(1, part)
+    };
   }
 
   function aRevoir() {
@@ -4649,6 +4780,8 @@ if (typeof module !== 'undefined' && module.exports) { module.exports = ippCoran
     terminer: terminer,
     jours: jours,
     serie: serie,
+    serieDetaillee: serieDetaillee,
+    objectifDuJour: objectifDuJour,
     aRevoir: aRevoir,
     acquis: acquis,
     publiees: publiees,
@@ -4726,23 +4859,8 @@ function ippRendreAccueil(racine) {
   q('date').textContent = IPP.dateLongue(maintenant);
   q('salut').textContent = (heure < 5) ? 'Bonne nuit' : (heure < 18 ? 'Bonjour' : 'Bonsoir');
 
-  // --- serie de jours ---
-  var n = IPP.serie();
-  var bloc = q('serie');
-  var jeton = q('jeton');
-  if (n > 0) {
-    bloc.hidden = false;
-    q('serie-n').textContent = String(n);
-    q('serie-txt').innerHTML = (n === 1)
-      ? 'premier jour.<br>Reviens demain, c\'est la que tout se joue.'
-      : 'jours d\'affilee.<br>Ne casse pas la chaine.';
-    jeton.hidden = false;
-    jeton.innerHTML = ippEtoile(14, '#c9a84c') + '<span>' + n + '</span>';
-    jeton.setAttribute('title', n + (n === 1 ? ' jour' : ' jours') + ' d\'affilee');
-  } else {
-    bloc.hidden = true;
-    jeton.hidden = true;
-  }
+  // --- l'anneau du jour et la serie ---
+  ippRendreJourEtat(q);
 
   // --- le rendez-vous du jour ---
   // Jamais culpabilisant : un moment manque n'est pas un echec, la journee
@@ -4841,6 +4959,111 @@ function ippRendreAccueil(racine) {
 
 
 /* =========================================================
+   L'anneau du jour, la serie et son record
+
+   Trois informations sur une seule ligne, en haut de l'accueil : ou j'en suis
+   aujourd'hui, depuis combien de jours je viens, et mon record. L'anneau est
+   visible avant d'avoir commence — c'est ce qui donne envie de le fermer.
+
+   Ton : jamais un reproche, jamais une pression religieuse. Une serie cassee
+   repart a 1 et on n'en parle pas.
+   ========================================================= */
+
+function ippAnneau(part, ferme) {
+  'use strict';
+  // Un cercle de perimetre connu : on decouvre le trait a la proportion voulue.
+  var RAYON = 26;
+  var TOUR = 2 * Math.PI * RAYON;
+  var fait = Math.max(0, Math.min(1, part)) * TOUR;
+
+  // A zero, on ne dessine pas l'arc du tout : un bout de trait arrondi de
+  // longueur nulle laisse quand meme un point dore, et ce point ressemble a
+  // une salissure plutot qu'a un debut.
+  var arc = (fait > 0.5)
+    ? '<circle cx="32" cy="32" r="' + RAYON + '" fill="none" stroke="#c9a84c" '
+      + 'stroke-width="5" stroke-linecap="round" '
+      + 'stroke-dasharray="' + fait.toFixed(1) + ' ' + TOUR.toFixed(1) + '" '
+      + 'transform="rotate(-90 32 32)"/>'
+    : '';
+
+  return '<svg viewBox="0 0 64 64" width="64" height="64" aria-hidden="true">'
+       + '<circle cx="32" cy="32" r="' + RAYON + '" fill="none" '
+       + 'stroke="rgba(253,250,243,0.10)" stroke-width="5"/>'
+       + arc
+       + '<path d="M32 20 L44 32 L32 44 L20 32 Z M25 25 H39 V39 H25 Z" '
+       + 'fill="' + (ferme ? '#c9a84c' : 'rgba(253,250,243,0.16)') + '" '
+       + 'transform="scale(0.62) translate(19.6 19.6)"/>'
+       + '</svg>';
+}
+
+function ippRendreJourEtat(q) {
+  'use strict';
+  var bloc = q('jour-etat');
+  if (!bloc) { return; }
+
+  var s = IPP.serieDetaillee();
+  var o = IPP.objectifDuJour();
+
+  bloc.hidden = false;
+  bloc.classList.toggle('ferme', o.atteint);
+
+  var anneau = q('anneau');
+  if (anneau) { anneau.innerHTML = ippAnneau(o.part, o.atteint); }
+
+  // L'objectif : ce qu'il reste a faire, dit en une ligne et sans reproche.
+  var txt = q('objectif-txt');
+  if (txt) {
+    if (o.atteint) {
+      txt.textContent = 'Objectif du jour atteint.';
+    } else if (o.revisions > 0) {
+      var reste = 3 - o.revisions;
+      txt.textContent = 'Objectif du jour : une lecon, ou '
+                      + (reste === 1 ? 'une revision de plus' : reste + ' revisions de plus') + '.';
+    } else {
+      txt.textContent = 'Objectif du jour : une lecon. Cinq minutes suffisent.';
+    }
+  }
+
+  // La serie. A 0, on n'ecrit pas "0" : on invite, on ne constate pas un vide.
+  var st = q('serie-txt');
+  if (st) {
+    if (s.serie === 0) {
+      st.textContent = 'Ta serie commence aujourd\'hui.';
+    } else {
+      var mot = s.serie === 1 ? '1 jour' : s.serie + ' jours d\'affilee';
+      // Le record ne s'affiche que s'il apprend quelque chose : l'egaler ou le
+      // depasser, c'est deja l'information portee par la serie elle-meme.
+      st.textContent = (s.record > s.serie)
+        ? mot + ' — ton record est de ' + s.record + '.'
+        : mot + (s.serie >= 2 ? ' — c\'est ton record.' : '.');
+    }
+  }
+
+  var jeton = q('jeton');
+  if (jeton) {
+    if (s.serie > 0) {
+      jeton.hidden = false;
+      jeton.innerHTML = ippEtoile(14, '#c9a84c') + '<span>' + s.serie + '</span>';
+      jeton.setAttribute('title', s.serie + (s.serie === 1 ? ' jour' : ' jours') + ' d\'affilee');
+    } else {
+      jeton.hidden = true;
+    }
+  }
+
+  // La grace : annoncee seulement apres avoir servi.
+  var g = q('grace-mot');
+  if (g) {
+    if (s.sauvee && s.serie > 0) {
+      g.textContent = 'Ton jour de grace a sauve ta serie. Il en faut cinq jours pour en regagner un.';
+      g.hidden = false;
+    } else {
+      g.hidden = true;
+    }
+  }
+}
+
+
+/* =========================================================
    Vue 2 : le chemin
    ========================================================= */
 
@@ -4856,6 +5079,25 @@ function ippRendreChemin(racine) {
     ? 'Rien encore.<br>Ta premiere lecon t\'attend.'
     : (n === 1 ? 'chose apprise.<br>Continue demain.'
                : 'choses apprises,<br>lecon apres lecon.');
+
+  // --- la serie, son record, et le filet ---
+  var rec = q('record');
+  if (rec) {
+    var s = IPP.serieDetaillee();
+    if (s.jamais) {
+      rec.textContent = 'Ta serie commencera a ta premiere lecon.';
+    } else {
+      var bouts = [];
+      bouts.push(s.serie === 0 ? 'Serie interrompue — elle repartira a 1 des ta prochaine lecon'
+                               : 'Serie en cours : ' + s.serie + (s.serie === 1 ? ' jour' : ' jours'));
+      bouts.push('record : ' + s.record + (s.record === 1 ? ' jour' : ' jours'));
+      if (s.grace > 0) {
+        bouts.push(s.grace === 1 ? '1 jour de grace en reserve'
+                                 : s.grace + ' jours de grace en reserve');
+      }
+      rec.textContent = bouts.join(' &middot; ').replace(/&middot;/g, '·') + '.';
+    }
+  }
 
   // --- calendrier du mois en cours ---
   var maintenant = new Date();
@@ -5293,13 +5535,19 @@ function ippDemarrerLecon(id, racine) {
   // Vrai si la lecon qui vient de se terminer est la premiere du jour : c'est
   // le seul cas ou la serie augmente, donc le seul ou son son se justifie.
   var serieMonte = false;
+  // Vrai si l'anneau du jour vient de se fermer. On ne le sonne QUE si la serie
+  // n'a pas monte en meme temps : trois sons a la suite n'en font plus qu'un, et
+  // c'est celui de la serie qui doit rester le plus fort.
+  var objectifFerme = false;
 
   function cloturer() {
     if (enregistree) { return; }
     enregistree = true;
 
     serieMonte = !IPP.faitAujourdhui();
+    var avant = IPP.objectifDuJour().atteint;
     var r = IPP.terminer(id);
+    objectifFerme = !avant && IPP.objectifDuJour().atteint;
     var serie = IPP.serie();
     var total = IPP.acquis();
     var reste = IPP.publiees().filter(function (l) { return !IPP.estFaite(l.id); }).length;
@@ -5336,9 +5584,13 @@ function ippDemarrerLecon(id, racine) {
     if (courante === TOTAL) {
       cloturer();
       sonner('fin');
-      // La serie arrive apres, pas en meme temps : deux sons ensemble n'en
-      // font qu'un, et c'est celui de la serie qu'on doit vouloir reentendre.
-      if (serieMonte) { setTimeout(function () { sonner('serie'); }, 900); }
+      // Puis un seul des deux, jamais les deux : la serie si elle a monte,
+      // sinon l'anneau s'il vient de se fermer (le chemin des trois revisions).
+      if (serieMonte) {
+        setTimeout(function () { sonner('serie'); }, 900);
+      } else if (objectifFerme) {
+        setTimeout(function () { sonner('objectif'); }, 900);
+      }
     } else {
       sonner('tap');
     }

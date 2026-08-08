@@ -5,6 +5,74 @@ Les entrees les plus recentes sont en haut.
 
 ---
 
+## 2026-08-08 (nuit) — FAIT — Points 1 a 5 de ton ordre
+
+Ton ordre en sept points : **1, 2, 3, 4 et 5 sont faits**. Restent 6 (le chemin
+a la place de la liste) et 7 (la collection, puis le rappel).
+
+**1. La recitation est branchee sur Al-Fatiha.** `data-coran="1:1"` a `"1:7"`,
+le bouton Ecouter se pose sous la transcription et juste avant le decoupage en
+syllabes : on lit, on entend, on repete. Le bouton **Voix lente** est sur la
+carte prononciation. En basculant, les anciens boutons sont retires **et le
+credit est efface** — sinon la page continuait a citer un recitateur qu'on
+n'entend plus. Le credit s'ecrit seul dans `[data-r="credit-audio"]`.
+
+**2. Les six sons sont dans le lecteur**, interrupteur visible en pied de chaque
+lecon. `tap` au changement de carte, `bon` / `presque` au test, `fin` a la
+derniere carte. `presque` n'est pas devenu un buzzer et ne le deviendra pas.
+
+Un choix que j'ai fait et que tu dois connaitre : **je ne joue jamais trois sons
+d'affilee.** En finissant la premiere lecon du jour, `fin`, `serie` et
+`objectif` tombaient au meme instant — trois sons ensemble n'en font plus qu'un.
+Donc : `fin`, puis 900 ms plus tard **soit** `serie` si elle a monte, **soit**
+`objectif` si l'anneau vient de se fermer sans que la serie monte (le chemin des
+trois revisions). Jamais les deux.
+
+**3. Le jour de grace et le record sont faits.** Un gagne tous les 5 jours, 2 en
+stock maximum, consomme tout seul, annonce seulement apres avoir servi
+(« Ton jour de grace a sauve ta serie »). Le record s'affiche a cote de la serie,
+et seulement quand il apprend quelque chose : inutile de dire « record : 6 » a
+cote d'une serie de 6.
+
+**Rien de tout cela n'est stocke** — serie, stock de grace et record sont
+recalcules depuis la liste des jours a chaque affichage. Un compteur ecrit
+quelque part finit par mentir ; une valeur recalculee ne peut pas deriver. J'ai
+ecrit 20 controles de logique pure la-dessus, dont le cas ou le trou se trouve
+entre la derniere visite et aujourd'hui, et celui ou le **record doit survivre a
+la cassure**.
+
+**4. L'anneau du jour est en haut de l'accueil**, visible avant d'avoir
+commence. Une lecon **ou** trois revisions ; une revision seule remplit un tiers
+de l'anneau. Sept etats verifies au navigateur, dont celui de la **serie
+cassee** : un test echoue si les mots « perdu », « casse », « rate » ou
+« echec » apparaissent. Aucune pression religieuse nulle part.
+
+**5. Fait avant ton message** (parcours vides retires, accueil a une carte / un
+bouton) — c'etait l'ordre precedent, l'entree ci-dessous le detaille.
+
+### Ce que je n'ai pas fait, et pourquoi
+
+- **Point 3 de ta liste « addictif », la session toujours gagnable** (une
+  mauvaise reponse ne bloque pas, la carte revient plus loin) : ce n'est pas dans
+  ton ordre des sept, alors je ne l'ai pas construit. Aujourd'hui une mauvaise
+  reponse ne bloque deja pas la progression — elle montre la bonne et explique,
+  et on continue. Il manque le **retour de la carte plus loin dans la session**.
+  Dis-moi si tu le veux, et a quel rang.
+- **Le rappel PWA (point 7)** : je le redis parce que c'est structurel — une
+  notification quotidienne demande un service worker et l'autorisation du
+  telephone, et sur iOS elle n'existe que si le site est **ajoute a l'ecran
+  d'accueil**. Ce n'est pas un detail technique : sans cette etape, la piece la
+  plus puissante de ta liste ne se declenche jamais. Il faudra donc une invite
+  « ajoute Islam pas a pas a ton ecran d'accueil ». Je ne la construis pas sans
+  ton accord.
+- **Toujours en attente** : les quatre lecons sur six qui ne posent **aucune
+  question**. Ca reste ma plus grosse reserve sur « addictif » : ton point 4, le
+  retour immediat, ne peut rien retourner s'il n'y a rien a repondre. Deux ou
+  trois questions par lecon, aucun texte religieux nouveau. Je le fais des que
+  tu me dis ou.
+
+---
+
 ## 2026-08-08 (nuit) — RECU — Ta livraison du son, et une seule reserve
 
 J'ai trouve `POUR-LE-RESPONSABLE-2.md` en poussant : ta correction et ton code

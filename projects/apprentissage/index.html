@@ -105,10 +105,20 @@
       <p class="rdv" data-r="rdv" hidden></p>
     </div>
 
-    <div class="serie" data-r="serie" hidden>
-      <span class="n" data-r="serie-n">0</span>
-      <span class="txt" data-r="serie-txt"></span>
+    <!-- L'anneau du jour et la serie, sur une seule ligne. L'anneau est
+         visible AVANT d'avoir commence : c'est son incompletude qui donne
+         envie de le fermer. -->
+    <div class="jour-etat" data-r="jour-etat" hidden>
+      <div class="anneau" data-r="anneau"></div>
+      <div class="jour-mots">
+        <p class="objectif-txt" data-r="objectif-txt"></p>
+        <p class="serie-txt" data-r="serie-txt"></p>
+      </div>
     </div>
+
+    <!-- La grace, annoncee apres coup et jamais avant : ce n'est pas une
+         monnaie a surveiller, c'est un filet qu'on decouvre. -->
+    <p class="grace-mot" data-r="grace-mot" hidden></p>
 
     <!-- La lecon du jour. Le contenu statique sert de repli si JS est absent. -->
     <section class="carte-jour" data-r="carte">
