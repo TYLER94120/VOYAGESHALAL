@@ -106,7 +106,7 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
         for (const el of (d.elements as any[]) ?? []) {
           const la = el.lat ?? el.center?.lat, lo = el.lon ?? el.center?.lon
           if (!la || !lo || !el.tags?.name) continue
-          const lieu: Lieu = { nom: el.tags.name, lat: la, lng: lo, source: 'osm', distM: hav(pos.lat, pos.lng, la, lo) }
+          const lieu: Lieu = { nom: el.tags.name, lat: la, lng: lo, source: 'osm', distM: hav(pos.lat, pos.lng, la, lo), cuisine: el.tags.cuisine ?? undefined, halal: el.tags['diet:halal'] ?? undefined }
           if (el.tags.amenity === 'place_of_worship') mc.push(lieu)
           // Un « Restaurant & Lounge » a chicha reste un lieu ou l'on
           // n'envoie personne, meme si sa cuisine est halal
@@ -133,8 +133,10 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
       .then((r) => r.json())
       .then((j) => {
         if (j.ville?.slug) setVilleProche(j.ville.slug as string)
-        for (const l of (j.lieux as { nom: string; lat: number; lng: number; type: string }[]) ?? []) {
-          const lieu: Lieu = { nom: l.nom, lat: l.lat, lng: l.lng, source: 'annuaire', distM: hav(pos.lat, pos.lng, l.lat, l.lng) }
+        for (const l of (j.lieux as { nom: string; lat: number; lng: number; type: string; cuisine?: string; halal?: string }[]) ?? []) {
+          // on garde cuisine et niveau halal : sans eux, la tuile n'affiche
+          // qu'un nom (« Orangeraie »), qui ne dit rien au voyageur
+          const lieu: Lieu = { nom: l.nom, lat: l.lat, lng: l.lng, source: 'annuaire', distM: hav(pos.lat, pos.lng, l.lat, l.lng), cuisine: l.cuisine, halal: l.halal }
           if (l.type === 'priere') mc.push(lieu)
           else if (l.type === 'resto') rc.push(lieu)
         }
@@ -516,7 +518,12 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
               onClick={() => { if (bestResto) window.open(itin(bestResto.lat, bestResto.lng), '_blank', 'noopener'); else window.location.href = '/autour-de-moi' }}
               onKeyDown={(e) => { if (e.key !== 'Enter') return; if (bestResto) window.open(itin(bestResto.lat, bestResto.lng), '_blank', 'noopener'); else window.location.href = '/autour-de-moi' }}
               style={{ ...T.tile, flex: 1, cursor: 'pointer' }}>
-              <p style={T.lab}>{envieActive ? `${envieActive.emoji} ${envieActive[en ? 'en' : 'fr']}` : `🍽 ${en ? 'Eat halal' : 'Manger halal'}`}</p>
+              {/* Le libelle dit POURQUOI ce lieu est la : sans envie exprimee,
+                  c'est simplement le plus proche. Un nom seul (« Orangeraie »)
+                  ne veut rien dire — on montre la cuisine et la distance. */}
+              <p style={T.lab}>{envieActive
+                ? `${envieActive.emoji} ${envieActive[en ? 'en' : 'fr']}`
+                : `🍽 ${en ? 'Eat — the closest' : 'Manger — le plus proche'}`}</p>
               {(envie ? restoEnvie === undefined : resto === undefined && !bestResto) ? <p style={{ ...T.meta, marginTop: 4 }}>…</p>
                 : !bestResto ? <p style={{ ...T.meta, marginTop: 4 }}>{
                     envieActive ? (en ? `No halal ${envieActive.en.toLowerCase()} listed within 12 km` : `Aucun ${envieActive.fr.toLowerCase()} signalé halal à moins de 12 km`)
@@ -525,16 +532,28 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
                   }</p>
                 : (
                   <>
-                    <a href={itin(bestResto.lat, bestResto.lng)} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} style={{ color: '#fdfaf3', fontWeight: 800, fontSize: 13.5, textDecoration: 'none', display: 'block', margin: '3px 0 1px', lineHeight: 1.3 }}>
+                    <a href={itin(bestResto.lat, bestResto.lng)} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} style={{ color: '#fdfaf3', fontWeight: 800, fontSize: 14, textDecoration: 'none', display: 'block', margin: '3px 0 2px', lineHeight: 1.3 }}>
                       <bdi>{bestResto.nom}</bdi> →
                     </a>
+                    {bestResto.cuisine && (
+                      <p style={{ ...T.meta, color: 'rgba(253,250,243,0.8)', fontWeight: 600 }}>{bestResto.cuisine}</p>
+                    )}
                     <p style={T.meta}>
-                      {walk(bestResto.distM)} {en ? 'min walk' : 'min à pied'} · {bestResto.source === 'communaute' ? (en ? 'community · to confirm' : 'communauté · à confirmer') : (en ? 'reported halal · verify' : 'signalé halal · à vérifier')}
+                      {bestResto.distM > 2000
+                        ? `${(bestResto.distM / 1000).toFixed(1)} km`
+                        : `${walk(bestResto.distM)} ${en ? 'min walk' : 'min à pied'}`}
+                      {' · '}
+                      {(() => {
+                        if (bestResto.source === 'communaute') return en ? 'shared by a traveler' : 'partagé par un voyageur'
+                        const n = niveauHalal(bestResto.halal, en)
+                        return n ? n.texte : (en ? 'listed halal · to verify' : 'signalé halal · à vérifier')
+                      })()}
                     </p>
                   </>
                 )}
             </div>
           )
+
           // UN SEUL widget pour les spots : le compte, un apercu legende,
           // une porte. Avant, trois zones differentes parlaient de spots
           // (grande photo, compteur, bande de vignettes) sans qu'on comprenne
