@@ -837,3 +837,38 @@ a.pc:hover, button.pc:hover { border-color: var(--trait-fort); }
   .s-tr { grid-column: 3; }
   .s-lien { grid-column: 4; grid-row: auto; }
 }
+
+/* ---------- listes de noms (prophetes) ---------- */
+
+.noms-liste {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+/* Avec une reference sous chaque nom, deux colonnes serrent trop a 375px. */
+.noms-liste.large { grid-template-columns: 1fr; }
+
+.nom-p {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  background: var(--surface-1);
+  border: 1px solid var(--trait);
+  border-radius: 11px;
+  padding: 11px 13px;
+}
+.np-ar {
+  font-family: var(--arabe);
+  font-size: 24px;
+  line-height: 1.3;
+  color: var(--creme);
+  direction: rtl;
+}
+.np-fr { font-size: 15px; font-weight: 600; color: var(--or); line-height: 1.25; }
+.np-ref { font-size: 13px; color: var(--texte-3); line-height: 1.35; }
+
+@media (min-width: 620px) {
+  .noms-liste { grid-template-columns: repeat(3, 1fr); }
+  .noms-liste.large { grid-template-columns: 1fr 1fr; }
+  .np-ar { font-size: 27px; }
+}

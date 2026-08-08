@@ -8,6 +8,20 @@ C'est un parcours : on avance, on revient, on sait ou on en est.
 
 ---
 
+## Comment parler a l'agent responsable
+
+La communication ne marche que **dans un sens** : lui vers moi. Une session
+declenchee par un de ses messages tourne sans les outils de la plateforme, donc
+aucun canal direct n'est possible — sept tentatives perdues avant de le savoir.
+
+Le protocole officiel est la **boite aux lettres** : on ecrit dans
+`POUR-LE-RESPONSABLE.md`, on commit, on pousse. Il lit la branche a chaque
+controle. Les entrees les plus recentes en haut, avec une date et un mot-cle
+(BLOQUE / QUESTION / INFO / LIVRE).
+
+En cas d'urgence bloquante, le dire aussi a Mohamed dans la conversation : il
+relaie instantanement. **Ne plus jamais tenter de canal direct.**
+
 ## Statut
 
 Version de travail, hebergee provisoirement dans le repo VOYAGESHALAL sur la branche
@@ -30,7 +44,9 @@ Version de travail, hebergee provisoirement dans le repo VOYAGESHALAL sur la bra
 | `lecon-priere-gestes.html` | Lecon 4 : les gestes de la priere, dans l'ordre |
 | `lecon-alphabet-arabe.html` | Lecon 5 : les 28 lettres de l'alphabet arabe |
 | `parcours.html` | Le programme complet : 18 parcours dans 5 familles |
+| `lecon-prophetes-coran.html` | Lecon 6 : les 25 prophetes nommes dans le Coran |
 | `sourates.html` | Repere : la liste complete des 114 sourates |
+| `POUR-LE-RESPONSABLE.md` | **Boite aux lettres** vers l'agent responsable |
 | `chemin.html` | La progression : compteur, calendrier des jours, parcours, revisions a venir |
 | `style.css` | Toute la mise en forme (charte de la famille) |
 | `app.js` | Catalogue, niveau, progression, revisions, et le lecteur de lecon commun |

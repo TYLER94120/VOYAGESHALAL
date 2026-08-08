@@ -148,6 +148,18 @@
       publiee: true,
       resume: 'Bonne nouvelle : ce ne sont pas 28 dessins a retenir, mais 18. '
             + 'Ce sont les points qui font le reste.'
+    },
+    {
+      id: 'prophetes-coran',
+      titre: 'Les 25 prophetes nommes dans le Coran',
+      url: 'lecon-prophetes-coran.html',
+      parcours: 'prophetes',
+      minutes: 6,
+      cartes: 9,
+      acquis: 25,
+      publiee: true,
+      resume: 'Dix-sept d\'entre eux sont cites d\'affilee dans un seul passage. '
+            + 'Tu les apprends par paquets, pas un par un.'
     }
   ];
 

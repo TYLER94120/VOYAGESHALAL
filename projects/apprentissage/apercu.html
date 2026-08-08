@@ -847,6 +847,41 @@ a.pc:hover, button.pc:hover { border-color: var(--trait-fort); }
   .s-lien { grid-column: 4; grid-row: auto; }
 }
 
+/* ---------- listes de noms (prophetes) ---------- */
+
+.noms-liste {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+/* Avec une reference sous chaque nom, deux colonnes serrent trop a 375px. */
+.noms-liste.large { grid-template-columns: 1fr; }
+
+.nom-p {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  background: var(--surface-1);
+  border: 1px solid var(--trait);
+  border-radius: 11px;
+  padding: 11px 13px;
+}
+.np-ar {
+  font-family: var(--arabe);
+  font-size: 24px;
+  line-height: 1.3;
+  color: var(--creme);
+  direction: rtl;
+}
+.np-fr { font-size: 15px; font-weight: 600; color: var(--or); line-height: 1.25; }
+.np-ref { font-size: 13px; color: var(--texte-3); line-height: 1.35; }
+
+@media (min-width: 620px) {
+  .noms-liste { grid-template-columns: repeat(3, 1fr); }
+  .noms-liste.large { grid-template-columns: 1fr 1fr; }
+  .np-ar { font-size: 27px; }
+}
+
 </style>
 
 <div id="vue"></div>
@@ -2389,6 +2424,226 @@ a.pc:hover, button.pc:hover { border-color: var(--trait-fort); }
 </div>
 </template>
 
+<template data-vue="prophetes-coran">
+<div class="page">
+
+  <header class="lecon-haut">
+    <a class="quitter" href="index.html" aria-label="Quitter la lecon">&times;</a>
+    <div class="points" data-r="points" aria-hidden="true"></div>
+  </header>
+
+  <main id="principal">
+
+    <div class="etapes" data-r="etapes">
+
+      <!-- 1 : de quoi il s'agit -->
+      <section class="etape" data-etape="1">
+        <span class="eyebrow">La lecon du jour</span>
+        <h2 style="font-size:29px">Les 25 prophetes nommes dans le Coran</h2>
+        <p class="clair">
+          Croire en Ses messagers est l'un des six piliers de la foi. Mais
+          lesquels&nbsp;? Le Coran en <strong>nomme vingt-cinq</strong>.
+        </p>
+        <p class="clair">
+          Et il y a une facilite&nbsp;: <strong>dix-sept d'entre eux sont cites
+          d'affilee</strong>, dans un seul passage. Tu vas les apprendre par
+          paquets, pas un par un.
+        </p>
+        <p class="clair">
+          Tu ne connais pas encore les six piliers&nbsp;?
+          <a href="lecon-six-piliers-foi.html">Ils ont leur propre lecon.</a>
+        </p>
+      </section>
+
+      <!-- 2 : le passage -->
+      <section class="etape" data-etape="2">
+        <span class="eyebrow">Le passage qui en nomme dix-sept</span>
+        <div>
+          <p class="ar" lang="ar" dir="rtl">وَوَهَبْنَا لَهُ إِسْحَاقَ وَيَعْقُوبَ ۚ كُلًّا هَدَيْنَا ۚ وَنُوحًا هَدَيْنَا مِن قَبْلُ ۖ وَمِن ذُرِّيَّتِهِ دَاوُودَ وَسُلَيْمَانَ وَأَيُّوبَ وَيُوسُفَ وَمُوسَى وَهَارُونَ</p>
+        </div>
+        <div>
+          <span class="etiquette">Traduction du sens</span>
+          <p class="sens">
+            &laquo;&nbsp;Et Nous lui avons donne Ishaq et Yaqoub — chacun d'eux
+            Nous l'avons guide. Et Nouh, Nous l'avions guide auparavant, et
+            parmi sa descendance&nbsp;: Dawoud, Soulayman, Ayyoub, Yousouf,
+            Moussa et Haroun.&nbsp;&raquo;
+          </p>
+        </div>
+        <div class="source">
+          <span class="lab">Source</span>
+          <span class="val">Coran, sourate Al-An'am (6), verset 84.</span>
+        </div>
+        <p class="clair">
+          Le &laquo;&nbsp;lui&nbsp;&raquo; du debut, c'est <strong>Ibrahim</strong>&nbsp;:
+          le verset precedent parle de lui.
+        </p>
+      </section>
+
+      <!-- 3 : la suite du passage -->
+      <section class="etape" data-etape="3">
+        <span class="eyebrow">Et le passage continue</span>
+        <div>
+          <p class="ar" lang="ar" dir="rtl">وَزَكَرِيَّا وَيَحْيَى وَعِيسَى وَإِلْيَاسَ</p>
+          <p class="phon">Wa Zakariyya wa Yahya wa 'Issa wa Ilyas</p>
+        </div>
+        <div class="source">
+          <span class="lab">Source</span>
+          <span class="val">Coran, sourate Al-An'am (6), verset 85.</span>
+        </div>
+        <div>
+          <p class="ar" lang="ar" dir="rtl">وَإِسْمَاعِيلَ وَالْيَسَعَ وَيُونُسَ وَلُوطًا</p>
+          <p class="phon">Wa Isma'il wa l-Yasa' wa Younous wa Loutan</p>
+        </div>
+        <div class="source">
+          <span class="lab">Source</span>
+          <span class="val">Coran, sourate Al-An'am (6), verset 86.</span>
+        </div>
+        <p class="clair">
+          Trois versets, dix-sept noms. C'est le passage le plus dense du Coran
+          sur les prophetes.
+        </p>
+      </section>
+
+      <!-- 4 : les dix-sept, en clair -->
+      <section class="etape" data-etape="4">
+        <span class="eyebrow">Les dix-sept du passage</span>
+        <h2>Nommes dans Al-An'am, 84 a 86</h2>
+        <div class="noms-liste">
+          <div class="nom-p"><span class="np-ar" lang="ar" dir="rtl">إِسْحَاق</span><span class="np-fr">Ishaq</span></div>
+          <div class="nom-p"><span class="np-ar" lang="ar" dir="rtl">يَعْقُوب</span><span class="np-fr">Yaqoub</span></div>
+          <div class="nom-p"><span class="np-ar" lang="ar" dir="rtl">نُوح</span><span class="np-fr">Nouh</span></div>
+          <div class="nom-p"><span class="np-ar" lang="ar" dir="rtl">دَاوُود</span><span class="np-fr">Dawoud</span></div>
+          <div class="nom-p"><span class="np-ar" lang="ar" dir="rtl">سُلَيْمَان</span><span class="np-fr">Soulayman</span></div>
+          <div class="nom-p"><span class="np-ar" lang="ar" dir="rtl">أَيُّوب</span><span class="np-fr">Ayyoub</span></div>
+          <div class="nom-p"><span class="np-ar" lang="ar" dir="rtl">يُوسُف</span><span class="np-fr">Yousouf</span></div>
+          <div class="nom-p"><span class="np-ar" lang="ar" dir="rtl">مُوسَى</span><span class="np-fr">Moussa</span></div>
+          <div class="nom-p"><span class="np-ar" lang="ar" dir="rtl">هَارُون</span><span class="np-fr">Haroun</span></div>
+          <div class="nom-p"><span class="np-ar" lang="ar" dir="rtl">زَكَرِيَّا</span><span class="np-fr">Zakariyya</span></div>
+          <div class="nom-p"><span class="np-ar" lang="ar" dir="rtl">يَحْيَى</span><span class="np-fr">Yahya</span></div>
+          <div class="nom-p"><span class="np-ar" lang="ar" dir="rtl">عِيسَى</span><span class="np-fr">'Issa</span></div>
+          <div class="nom-p"><span class="np-ar" lang="ar" dir="rtl">إِلْيَاس</span><span class="np-fr">Ilyas</span></div>
+          <div class="nom-p"><span class="np-ar" lang="ar" dir="rtl">إِسْمَاعِيل</span><span class="np-fr">Isma'il</span></div>
+          <div class="nom-p"><span class="np-ar" lang="ar" dir="rtl">الْيَسَع</span><span class="np-fr">Al-Yasa'</span></div>
+          <div class="nom-p"><span class="np-ar" lang="ar" dir="rtl">يُونُس</span><span class="np-fr">Younous</span></div>
+          <div class="nom-p"><span class="np-ar" lang="ar" dir="rtl">لُوط</span><span class="np-fr">Lout</span></div>
+        </div>
+      </section>
+
+      <!-- 5 : les huit autres -->
+      <section class="etape" data-etape="5">
+        <span class="eyebrow">Les huit autres</span>
+        <h2>Chacun avec son verset</h2>
+        <p class="clair">
+          Les huit qui completent les vingt-cinq sont nommes ailleurs. Voici
+          pour chacun une reference ou son nom apparait&nbsp;:
+        </p>
+        <div class="noms-liste large">
+          <div class="nom-p"><span class="np-ar" lang="ar" dir="rtl">آدَم</span><span class="np-fr">Adam</span><span class="np-ref">Sourate 3, verset 33</span></div>
+          <div class="nom-p"><span class="np-ar" lang="ar" dir="rtl">إِدْرِيس</span><span class="np-fr">Idris</span><span class="np-ref">Sourate 21, verset 85</span></div>
+          <div class="nom-p"><span class="np-ar" lang="ar" dir="rtl">إِبْرَاهِيم</span><span class="np-fr">Ibrahim</span><span class="np-ref">La sourate 14 porte son nom</span></div>
+          <div class="nom-p"><span class="np-ar" lang="ar" dir="rtl">هُود</span><span class="np-fr">Houd</span><span class="np-ref">Sourate 11, verset 50</span></div>
+          <div class="nom-p"><span class="np-ar" lang="ar" dir="rtl">صَالِح</span><span class="np-fr">Salih</span><span class="np-ref">Sourate 7, verset 73</span></div>
+          <div class="nom-p"><span class="np-ar" lang="ar" dir="rtl">شُعَيْب</span><span class="np-fr">Chou'ayb</span><span class="np-ref">Sourate 7, verset 85</span></div>
+          <div class="nom-p"><span class="np-ar" lang="ar" dir="rtl">ذُو الْكِفْل</span><span class="np-fr">Dhoul-Kifl</span><span class="np-ref">Sourate 21, verset 85</span></div>
+          <div class="nom-p"><span class="np-ar" lang="ar" dir="rtl">مُحَمَّد</span><span class="np-fr">Mouhammad</span><span class="np-ref">Sourate 33, verset 40</span></div>
+        </div>
+      </section>
+
+      <!-- 6 : le dernier -->
+      <section class="etape" data-etape="6">
+        <span class="eyebrow">Le dernier</span>
+        <h2>Le sceau des prophetes</h2>
+        <div>
+          <p class="ar" lang="ar" dir="rtl">وَلَٰكِن رَّسُولَ اللَّهِ وَخَاتَمَ النَّبِيِّينَ</p>
+          <p class="phon">Wa lakin rassoula Llahi wa khatama n-nabiyyin</p>
+        </div>
+        <div>
+          <span class="etiquette">Traduction du sens</span>
+          <p class="sens">&laquo;&nbsp;Mais le Messager d'Allah et le sceau des prophetes.&nbsp;&raquo;</p>
+        </div>
+        <div class="source">
+          <span class="lab">Source</span>
+          <span class="val">Coran, sourate Al-Ahzab (33), verset 40.</span>
+        </div>
+        <p class="clair">
+          &laquo;&nbsp;Sceau&nbsp;&raquo;&nbsp;: celui qui ferme. Aucun prophete
+          ne vient apres lui.
+        </p>
+      </section>
+
+      <!-- 7 : ce que le Coran ne dit pas -->
+      <section class="etape" data-etape="7">
+        <span class="eyebrow">A savoir</span>
+        <h2>Vingt-cinq nommes, mais pas vingt-cinq en tout</h2>
+        <p class="clair">
+          Attention a ne pas confondre&nbsp;: <strong>vingt-cinq sont
+          <em>nommes</em></strong> dans le Coran. Cela ne veut pas dire qu'il n'y
+          a eu que vingt-cinq prophetes. Le Coran indique que des messagers ont
+          ete envoyes a chaque communaute, sans tous les nommer.
+        </p>
+        <p class="prudence">
+          Sur leur nombre total, et sur la difference entre &laquo;&nbsp;prophete&nbsp;&raquo;
+          et &laquo;&nbsp;messager&nbsp;&raquo;, les savants ont ecrit et ne
+          disent pas tous la meme chose. Ce site s'arrete a ce que le Coran
+          nomme, et n'avance aucun chiffre total.
+        </p>
+      </section>
+
+      <!-- 8 : ce que tu retiens -->
+      <section class="etape" data-etape="8">
+        <div class="retenir">
+          <span class="eyebrow">Ce que tu retiens</span>
+          <p class="q">Trois versets<br>en nomment dix-sept.<br>Al-An'am, 84 a 86.</p>
+          <p class="r">Cette carte te reviendra dans deux jours.</p>
+        </div>
+        <p class="clair">
+          Si tu ne retiens qu'une chose aujourd'hui, retiens ce passage&nbsp;:
+          il te donne les deux tiers de la liste d'un coup.
+        </p>
+      </section>
+
+      <!-- 9 : fin -->
+      <section class="etape fin" data-etape="9">
+        <svg width="46" height="46" viewBox="0 0 24 24" fill="#c9a84c" aria-hidden="true">
+          <path d="M12 2 L22 12 L12 22 L2 12 Z M5 5 H19 V19 H5 Z"/>
+        </svg>
+        <h2>Lecon terminee</h2>
+        <p data-r="fin-texte">Tu connais maintenant les 25 prophetes nommes dans le Coran.</p>
+        <p data-r="fin-suite" class="suite"></p>
+        <div class="moment-zone" data-r="moment-choix" hidden></div>
+        <a class="btn" href="index.html">Continuer</a>
+        <a class="btn fantome" href="parcours.html">Voir tout le programme</a>
+      </section>
+
+    </div>
+
+    <div class="bas-lecon" data-r="bas" hidden>
+      <button class="btn" data-r="suivant" type="button">Suivant</button>
+    </div>
+
+  </main>
+
+  <footer class="pied">
+    <p class="note-pied">
+      Les transcriptions des noms en lettres francaises varient d'un ouvrage a
+      l'autre&nbsp;: il n'y a pas une seule bonne facon d'ecrire un nom arabe en
+      alphabet latin. Les traductions sont des traductions du <em>sens</em>.
+      Une question personnelle&nbsp;? <a href="https://halalgpt.fr">Pose-la sur halalgpt.fr</a>,
+      et pour un cas qui t'engage, demande a un savant.
+    </p>
+    <span class="t">Les autres sites de la famille</span>
+    <nav class="freres" aria-label="Sites partenaires">
+      <a href="https://halalgpt.fr"><span class="d">halalgpt.fr</span><span class="q">L'IA musulmane, pour poser une question</span></a>
+      <a href="https://halalcheck.fr"><span class="d">halalcheck.fr</span><span class="q">Scanner un produit en magasin</span></a>
+      <a href="https://voyageshalal.fr"><span class="d">voyageshalal.fr</span><span class="q">Voyager halal, et les horaires de priere</span></a>
+      <a href="https://gohalaltravel.com"><span class="d">gohalaltravel.com</span><span class="q">Halal travel guide (EN)</span></a>
+    </nav>
+  </footer>
+
+</div>
+</template>
+
 <template data-vue="programme">
 <div class="page">
 
@@ -3571,6 +3826,18 @@ a.pc:hover, button.pc:hover { border-color: var(--trait-fort); }
       publiee: true,
       resume: 'Bonne nouvelle : ce ne sont pas 28 dessins a retenir, mais 18. '
             + 'Ce sont les points qui font le reste.'
+    },
+    {
+      id: 'prophetes-coran',
+      titre: 'Les 25 prophetes nommes dans le Coran',
+      url: 'lecon-prophetes-coran.html',
+      parcours: 'prophetes',
+      minutes: 6,
+      cartes: 9,
+      acquis: 25,
+      publiee: true,
+      resume: 'Dix-sept d\'entre eux sont cites d\'affilee dans un seul passage. '
+            + 'Tu les apprends par paquets, pas un par un.'
     }
   ];
 
@@ -4639,6 +4906,7 @@ function ippDemarrerDiagnostic(racine, quandFini) {
       "lecon-six-piliers-foi.html": "six-piliers-foi",
       "lecon-priere-gestes.html": "priere-gestes",
       "lecon-alphabet-arabe.html": "alphabet-arabe",
+      "lecon-prophetes-coran.html": "prophetes-coran",
       "parcours.html": "programme",
       "sourates.html": "sourates"
   };
