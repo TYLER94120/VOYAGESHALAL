@@ -31,7 +31,9 @@
       minutes: 5,
       cartes: 10,
       acquis: 7,
-      publiee: true
+      publiee: true,
+      resume: 'Tu la recites dans chaque priere. Aujourd\'hui, tu vas comprendre '
+            + 'chacun de ses sept versets.'
     },
     {
       id: 'invocations-matin',
@@ -41,7 +43,9 @@
       minutes: 5,
       cartes: 8,
       acquis: 3,
-      publiee: true
+      publiee: true,
+      resume: 'Trois phrases courtes, toutes rapportees par al-Boukhari et Mouslim. '
+            + 'Apprends-en une seule si tu veux : c\'est deja beaucoup.'
     }
   ];
 
@@ -104,6 +108,52 @@
     try {
       global.localStorage.setItem(CLE, JSON.stringify(d));
     } catch (e) { /* on n'empeche jamais la lecture d'une lecon */ }
+  }
+
+  /* ---------- niveau de depart --------------------------------------------
+     Trois questions, une seule fois, sans compte et sans inscription.
+     But : ne pas faire apprendre a quelqu'un ce qu'il sait deja.
+     Aucune reponse n'est "mauvaise" : ces valeurs servent a choisir par ou
+     commencer et sur quel ton accueillir, jamais a noter la personne.
+     ---------------------------------------------------------------------- */
+
+  var CLE_NIVEAU = 'ipp.niveau.v1';
+
+  function niveau() {
+    try {
+      var brut = global.localStorage.getItem(CLE_NIVEAU);
+      if (!brut) { return null; }
+      var d = JSON.parse(brut);
+      return (d && typeof d === 'object' && d.priere) ? d : null;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function enregistrerNiveau(reponses) {
+    var d = {
+      priere:  reponses.priere  || 'inconnu',   // non | parfois | oui
+      fatiha:  reponses.fatiha  || 'inconnu',   // non | incertain | oui
+      memoire: reponses.memoire || 'inconnu',   // aucune | quelques | beaucoup
+      faitLe:  aujourdhui()
+    };
+    try { global.localStorage.setItem(CLE_NIVEAU, JSON.stringify(d)); } catch (e) { /* sans memoire, on continue */ }
+    return d;
+  }
+
+  function oublierNiveau() {
+    try { global.localStorage.removeItem(CLE_NIVEAU); } catch (e) { /* rien a faire */ }
+  }
+
+  // Sert uniquement au ton de l'accueil et a l'ordre des lecons.
+  function profil() {
+    var n = niveau();
+    if (!n) { return 'inconnu'; }
+    // Questions passees : on ne suppose rien et on garde un ton neutre.
+    if (n.priere === 'inconnu' && n.fatiha === 'inconnu') { return 'inconnu'; }
+    if (n.fatiha === 'oui' && n.memoire === 'beaucoup') { return 'avance'; }
+    if (n.fatiha === 'oui' || n.priere === 'oui' || n.memoire === 'quelques') { return 'intermediaire'; }
+    return 'debutant';
   }
 
   /* ---------- progression ------------------------------------------------ */
@@ -175,9 +225,25 @@
     return CATALOGUE.filter(function (l) { return l.publiee; });
   }
 
+  // Ordre des lecons, adapte au niveau declare.
+  // Concretement : celui qui connait deja Al-Fatiha par coeur ne la recoit pas
+  // en premiere lecon. C'est tout l'interet des trois questions d'accueil.
+  function ordreLecons() {
+    var libres = publiees().slice();
+    var n = niveau();
+    if (!n) { return libres; }
+
+    var recule = {};
+    if (n.fatiha === 'oui') { recule['al-fatiha'] = true; }
+
+    return libres.sort(function (a, b) {
+      return (recule[a.id] ? 1 : 0) - (recule[b.id] ? 1 : 0);
+    });
+  }
+
   // La lecon proposee aujourd'hui : la premiere non faite, sinon la premiere a revoir.
   function leconDuJour() {
-    var libres = publiees();
+    var libres = ordreLecons();
     for (var i = 0; i < libres.length; i++) {
       if (!estFaite(libres[i].id)) { return { lecon: libres[i], mode: 'neuve' }; }
     }
@@ -218,14 +284,19 @@
     aRevoir: aRevoir,
     acquis: acquis,
     publiees: publiees,
+    ordreLecons: ordreLecons,
     leconDuJour: leconDuJour,
-    parcoursAvecEtat: parcoursAvecEtat
+    parcoursAvecEtat: parcoursAvecEtat,
+    niveau: niveau,
+    enregistrerNiveau: enregistrerNiveau,
+    oublierNiveau: oublierNiveau,
+    profil: profil
   };
 }(window));
 
 
 /* =========================================================
-   Petites aides d'affichage partagees
+   Aides d'affichage partagees
    ========================================================= */
 
 function ippEtoile(taille, couleur) {
@@ -238,20 +309,300 @@ function ippEchappe(s) {
   return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
 
+// Les elements sont vises par [data-r="..."] et non par id : la meme vue peut
+// ainsi exister plusieurs fois dans un document (utile pour l'apercu d'un seul
+// fichier) sans collision d'identifiants.
+function ippViseur(racine) {
+  var r = racine || document;
+  return function (nom) { return r.querySelector('[data-r="' + nom + '"]'); };
+}
+
+var IPP_MOIS = ['Janvier', 'Fevrier', 'Mars', 'Avril', 'Mai', 'Juin',
+                'Juillet', 'Aout', 'Septembre', 'Octobre', 'Novembre', 'Decembre'];
+
 
 /* =========================================================
-   Lecteur de lecon, commun a toutes les lecons.
-
-   La page contient toutes ses cartes en clair dans le HTML :
-   sans JavaScript, la lecon se lit d'un seul tenant (c'est ce
-   que Google indexe). Avec JavaScript, on la pilote carte par
-   carte. La derniere carte est l'ecran de fin.
+   Vue 1 : l'accueil, "Aujourd'hui"
    ========================================================= */
 
-function ippDemarrerLecon(id) {
+function ippRendreAccueil(racine) {
   'use strict';
+  var q = ippViseur(racine);
+  if (!q('carte')) { return; }
 
-  var zone = document.getElementById('etapes');
+  // Premiere visite : les trois questions passent avant tout le reste, pour
+  // demarrer au bon endroit. Le corps de l'accueil reste dans le HTML (donc
+  // lisible par Google et sans JavaScript), on le masque seulement le temps
+  // des questions.
+  var corps = q('accueil-corps');
+  if (!IPP.niveau() && q('diag')) {
+    if (corps) { corps.hidden = true; }
+    ippDemarrerDiagnostic(racine, function () {
+      if (corps) { corps.hidden = false; }
+      ippRendreAccueil(racine);
+    });
+    return;
+  }
+  if (corps) { corps.hidden = false; }
+  if (q('diag')) { q('diag').hidden = true; }
+
+  // --- date et salutation ---
+  var maintenant = new Date();
+  var heure = maintenant.getHours();
+  q('date').textContent = IPP.dateLongue(maintenant);
+  q('salut').textContent = (heure < 5) ? 'Bonne nuit' : (heure < 18 ? 'Bonjour' : 'Bonsoir');
+
+  // --- serie de jours ---
+  var n = IPP.serie();
+  var bloc = q('serie');
+  var jeton = q('jeton');
+  if (n > 0) {
+    bloc.hidden = false;
+    q('serie-n').textContent = String(n);
+    q('serie-txt').innerHTML = (n === 1)
+      ? 'premier jour.<br>Reviens demain, c\'est la que tout se joue.'
+      : 'jours d\'affilee.<br>Ne casse pas la chaine.';
+    jeton.hidden = false;
+    jeton.innerHTML = ippEtoile(14, '#c9a84c') + '<span>' + n + '</span>';
+    jeton.setAttribute('title', n + (n === 1 ? ' jour' : ' jours') + ' d\'affilee');
+  } else {
+    bloc.hidden = true;
+    jeton.hidden = true;
+  }
+
+  // --- la lecon du jour ---
+  var choix = IPP.leconDuJour();
+  var carte = q('carte');
+
+  if (!choix) {
+    // Tout est fait et rien n'est a revoir : on le dit franchement.
+    carte.innerHTML =
+      '<span class="eyebrow">C\'est fait pour aujourd\'hui</span>'
+      + '<h2>Tu es a jour</h2>'
+      + '<p class="clair">Toutes les lecons disponibles sont terminees, et aucune revision '
+      + 'n\'est prevue aujourd\'hui. Reviens demain : la prochaine lecon arrive bientot.</p>'
+      + '<a class="btn fantome" href="chemin.html">Voir mon chemin</a>';
+  } else {
+    var l = choix.lecon;
+    var revision = (choix.mode === 'revision');
+    q('carte-eyebrow').textContent = revision ? 'Ta revision du jour' : 'Ta lecon du jour';
+    q('carte-titre').textContent = l.titre;
+    q('carte-meta').innerHTML =
+      '<span>' + l.minutes + ' min</span><span class="puce"></span>'
+      + '<span>' + l.cartes + ' cartes</span><span class="puce"></span>'
+      + '<span>' + ippEchappe(IPP.nomParcours(l.parcours)) + '</span>';
+    // Toujours reecrit : sinon le resume de la premiere lecon resterait affiche
+    // sous le titre d'une autre lecon.
+    q('carte-pitch').textContent = revision
+      ? 'Tu l\'as deja vue. On la repasse vite pour qu\'elle tienne dans la duree.'
+      : (l.resume || '');
+    var b = q('carte-btn');
+    b.setAttribute('href', l.url);
+    b.textContent = revision ? 'Revoir →' : 'Commencer →';
+  }
+
+  // --- rendre visible le fait que l'accueil suit le niveau declare ---
+  var note = q('niveau-note');
+  if (note) {
+    var p = IPP.profil();
+    if (p === 'avance') {
+      note.textContent = 'D\'apres tes reponses, Al-Fatiha passe apres : tu la connais deja par coeur.';
+      note.hidden = false;
+    } else if (p === 'debutant' || p === 'intermediaire') {
+      note.textContent = 'Choisie d\'apres tes trois reponses du depart.';
+      note.hidden = false;
+    } else {
+      note.hidden = true;
+    }
+  }
+
+  // --- revisions dues aujourd'hui ---
+  var dues = IPP.aRevoir();
+  if (dues.length) {
+    var html = '';
+    for (var i = 0; i < dues.length; i++) {
+      var f = IPP.fiche(dues[i].id);
+      html += '<a class="ligne" href="' + dues[i].url + '">'
+            + ippEtoile(17, '#c9a84c')
+            + '<span><span class="t">' + ippEchappe(dues[i].titre) + '</span>'
+            + '<span class="s">Vue le ' + IPP.dateLongue(IPP.depuisCle(f.faitLe)) + '</span></span>'
+            + '<span class="fl" aria-hidden="true">&rsaquo;</span></a>';
+    }
+    q('revisions').innerHTML = html;
+  }
+
+  // --- parcours ---
+  q('parcours').innerHTML = ippListeParcours('chemin.html');
+}
+
+
+/* =========================================================
+   Vue 2 : le chemin
+   ========================================================= */
+
+function ippRendreChemin(racine) {
+  'use strict';
+  var q = ippViseur(racine);
+  if (!q('mois')) { return; }
+
+  // --- compteur ---
+  var n = IPP.acquis();
+  q('compteur-n').textContent = String(n);
+  q('compteur-txt').innerHTML = (n === 0)
+    ? 'Rien encore.<br>Ta premiere lecon t\'attend.'
+    : (n === 1 ? 'enseignement appris.<br>Avec sa source verifiee.'
+               : 'enseignements appris.<br>Chacun avec sa source verifiee.');
+
+  // --- calendrier du mois en cours ---
+  var maintenant = new Date();
+  var annee = maintenant.getFullYear();
+  var mois = maintenant.getMonth();
+  q('titre-mois').textContent = IPP_MOIS[mois] + ' ' + annee;
+
+  var faits = {};
+  var liste = IPP.jours();
+  for (var i = 0; i < liste.length; i++) { faits[liste[i]] = true; }
+
+  // getDay() : 0 = dimanche. Les semaines commencent le lundi.
+  var decalage = (new Date(annee, mois, 1).getDay() + 6) % 7;
+  var nbJours = new Date(annee, mois + 1, 0).getDate();
+  var ceJour = maintenant.getDate();
+
+  var html = '';
+  for (var v = 0; v < decalage; v++) {
+    html += '<div class="jour vide-case" aria-hidden="true"></div>';
+  }
+  for (var d = 1; d <= nbJours; d++) {
+    var fait = !!faits[IPP.enCle(new Date(annee, mois, d))];
+    var couleur = fait ? '#c9a84c' : 'rgba(253,250,243,0.10)';
+    var titre = d + ' ' + IPP_MOIS[mois].toLowerCase() + (fait ? ' : lecon faite' : '');
+    var contour = (d === ceJour && !fait)
+      ? ' stroke="rgba(201,168,76,0.55)" stroke-width="1.5"' : '';
+    html += '<div class="jour" title="' + titre + '">'
+          + '<svg width="100%" height="100%" viewBox="0 0 24 24" role="img" aria-label="' + titre + '">'
+          + '<path d="M12 2 L22 12 L12 22 L2 12 Z M5 5 H19 V19 H5 Z" fill="' + couleur + '"' + contour + '/>'
+          + '</svg></div>';
+  }
+  q('mois').innerHTML = html;
+
+  if (!liste.length) {
+    q('legende-mois').textContent =
+      'Aucun jour rempli pour l\'instant. Chaque etoile doree sera un jour ou tu es venu apprendre.';
+  }
+
+  // --- rappel du point de depart, et possibilite de le refaire ---
+  ippRendrePointDepart(q);
+
+  // --- parcours (sans lien : on est deja sur la page) ---
+  q('parcours').innerHTML = ippListeParcours(null);
+
+  // --- revisions a venir ---
+  var prevues = [];
+  var pubs = IPP.publiees();
+  for (var k = 0; k < pubs.length; k++) {
+    var f = IPP.fiche(pubs[k].id);
+    if (f && f.revoirLe) { prevues.push({ lecon: pubs[k], quand: f.revoirLe }); }
+  }
+  prevues.sort(function (a, b) { return a.quand < b.quand ? -1 : 1; });
+
+  if (!prevues.length) {
+    q('revisions').innerHTML = '<p class="vide">Aucune revision programmee. Elles apparaissent '
+                             + 'automatiquement des que tu termines une lecon.</p>';
+  } else {
+    var jour = IPP.aujourdhui();
+    var h = '';
+    for (var m = 0; m < prevues.length; m++) {
+      var due = prevues[m].quand <= jour;
+      h += '<a class="ligne" href="' + prevues[m].lecon.url + '">'
+         + ippEtoile(17, due ? '#c9a84c' : '#6c8271')
+         + '<span><span class="t">' + ippEchappe(prevues[m].lecon.titre) + '</span>'
+         + '<span class="s">' + (due ? 'A revoir aujourd\'hui'
+             : 'Le ' + IPP.dateLongue(IPP.depuisCle(prevues[m].quand))) + '</span></span>'
+         + '<span class="fl" aria-hidden="true">&rsaquo;</span></a>';
+    }
+    q('revisions').innerHTML = h;
+  }
+}
+
+// Rappel de ce que la personne a declare au depart, et moyen de le corriger.
+// On affiche ses reponses telles quelles, sans note ni jugement.
+function ippRendrePointDepart(q) {
+  var zone = q('niveau-bloc');
+  if (!zone) { return; }
+
+  var MOTS = {
+    priere:  { non: 'Pas encore', parfois: 'Pas les cinq', oui: 'Les cinq' },
+    fatiha:  { non: 'Pas encore', incertain: 'Sans etre sur', oui: 'Par coeur' },
+    memoire: { aucune: 'Aucune', quelques: 'Quelques courtes', beaucoup: 'Plus de dix' }
+  };
+  function mot(champ, valeur) { return MOTS[champ][valeur] || 'Non precise'; }
+
+  var n = IPP.niveau();
+
+  // Le lien pointe vers l'accueil : on efface le niveau, et les trois
+  // questions reapparaissent d'elles-memes a l'arrivee.
+  var lien = '<a class="btn fantome" href="index.html" data-r="niveau-refaire">'
+           + (n ? 'Mon niveau a change' : 'Repondre aux 3 questions') + '</a>';
+
+  if (!n) {
+    zone.innerHTML = '<div class="niveau-carte">'
+      + '<p class="note-pied">Tu n\'as pas encore repondu aux trois questions d\'accueil. '
+      + 'Elles servent seulement a ne pas te faire apprendre ce que tu sais deja.</p>'
+      + lien + '</div>';
+  } else {
+    zone.innerHTML = '<div class="niveau-carte"><dl>'
+      + '<div class="ligne-n"><dt>La priere</dt><dd>' + mot('priere', n.priere) + '</dd></div>'
+      + '<div class="ligne-n"><dt>Al-Fatiha</dt><dd>' + mot('fatiha', n.fatiha) + '</dd></div>'
+      + '<div class="ligne-n"><dt>Sourates par coeur</dt><dd>' + mot('memoire', n.memoire) + '</dd></div>'
+      + '</dl>' + lien + '</div>';
+  }
+
+  var refaire = q('niveau-refaire');
+  if (refaire) {
+    // On n'empeche pas la navigation : on efface juste avant qu'elle ait lieu.
+    refaire.addEventListener('click', function () { IPP.oublierNiveau(); });
+  }
+}
+
+// Liste des parcours. Les parcours sans lecon publiee sont annonces "Bientot"
+// plutot que d'afficher un faux compteur.
+function ippListeParcours(lien) {
+  var etats = IPP.parcoursAvecEtat();
+  var out = '';
+  for (var j = 0; j < etats.length; j++) {
+    var p = etats[j];
+    if (p.pret) {
+      var pct = p.total ? Math.round((p.faites / p.total) * 100) : 0;
+      var ouvre = lien ? '<a class="pc" href="' + lien + '">' : '<div class="pc">';
+      var ferme = lien ? '</a>' : '</div>';
+      out += ouvre
+           + '<span class="haut"><span class="nom">' + ippEchappe(p.nom) + '</span>'
+           + '<span class="cpt">' + p.faites + ' / ' + p.total + '</span></span>'
+           + '<span class="barre-p"><span style="width:' + pct + '%"></span></span>'
+           + ferme;
+    } else {
+      out += '<div class="ligne inerte">' + ippEtoile(17)
+           + '<span><span class="t">' + ippEchappe(p.nom) + '</span>'
+           + '<span class="s">Bientot</span></span></div>';
+    }
+  }
+  return out;
+}
+
+
+/* =========================================================
+   Vue 3 : le lecteur de lecon, commun a toutes les lecons
+
+   La page contient toutes ses cartes en clair dans le HTML : sans
+   JavaScript, la lecon se lit d'un seul tenant, et c'est ce que Google
+   indexe. Avec JavaScript, on la pilote carte par carte. La derniere
+   carte est l'ecran de fin.
+   ========================================================= */
+
+function ippDemarrerLecon(id, racine) {
+  'use strict';
+  var q = ippViseur(racine);
+  var zone = q('etapes');
   if (!zone) { return; }
 
   var etapes = zone.querySelectorAll('.etape');
@@ -262,17 +613,16 @@ function ippDemarrerLecon(id) {
 
   zone.classList.add('pilote');
 
-  var bas = document.getElementById('basLecon');
-  var bouton = document.getElementById('btnSuivant');
+  var bas = q('bas');
+  var bouton = q('suivant');
   bas.hidden = false;
 
-  var points = document.getElementById('points');
   var html = '';
   for (var i = 0; i < CONTENU; i++) { html += '<span class="pt"></span>'; }
-  points.innerHTML = html;
-  var segments = points.querySelectorAll('.pt');
+  q('points').innerHTML = html;
+  var segments = q('points').querySelectorAll('.pt');
 
-  function afficher() {
+  function afficher(defiler) {
     for (var a = 0; a < etapes.length; a++) {
       etapes[a].classList.toggle('actif',
         Number(etapes[a].getAttribute('data-etape')) === courante);
@@ -287,8 +637,8 @@ function ippDemarrerLecon(id) {
       bouton.textContent = (courante === CONTENU) ? 'Terminer' : 'Suivant';
     }
 
-    // Sans cela on resterait au milieu du texte precedent.
-    if (courante > 1) {
+    // Sans cela on resterait au milieu du texte de la carte precedente.
+    if (defiler) {
       var haut = zone.getBoundingClientRect().top + window.pageYOffset - 70;
       window.scrollTo(0, Math.max(0, haut));
     }
@@ -303,14 +653,14 @@ function ippDemarrerLecon(id) {
     var total = IPP.acquis();
     var reste = IPP.publiees().filter(function (l) { return !IPP.estFaite(l.id); }).length;
 
-    var phrase = 'Tu connais maintenant ' + total + ' enseignements, chacun avec sa source. ';
-    phrase += 'Cette lecon reviendra dans ' + r.pas + (r.pas > 1 ? ' jours.' : ' jour.');
+    var phrase = 'Tu connais maintenant ' + total + ' enseignements, chacun avec sa source. '
+               + 'Cette lecon reviendra dans ' + r.pas + (r.pas > 1 ? ' jours.' : ' jour.');
     if (serie > 1) { phrase += ' ' + serie + ' jours d\'affilee.'; }
 
-    var cible = document.getElementById('finTexte');
+    var cible = q('fin-texte');
     if (cible) { cible.textContent = phrase; }
 
-    var suite = document.getElementById('finSuite');
+    var suite = q('fin-suite');
     if (suite) {
       suite.textContent = reste
         ? (reste === 1 ? 'Une autre lecon t\'attend deja.'
@@ -323,7 +673,113 @@ function ippDemarrerLecon(id) {
     if (courante >= TOTAL) { return; }
     courante++;
     if (courante === TOTAL) { cloturer(); }
+    afficher(true);
+  });
+
+  afficher(false);
+}
+
+
+/* =========================================================
+   Vue 0 : les trois questions d'accueil
+
+   Objectif : ne pas faire apprendre a quelqu'un ce qu'il sait deja.
+   Trois questions, quinze secondes, aucun compte, et la possibilite de
+   passer a tout moment.
+
+   Regle de ton, non negociable : aucune reponse n'est mauvaise. Celui qui
+   repond "non" partout doit se sentir accueilli. C'est peut-etre un converti
+   d'hier, et c'est exactement pour lui que ce site existe.
+   ========================================================= */
+
+var IPP_BILANS = {
+  debutant: {
+    titre: 'On commence par le debut.',
+    message: 'C\'est exactement pour cela que ce site existe. Cinq minutes par jour, '
+           + 'et chaque mot avec sa source. Rien a rattraper, rien a prouver.'
+  },
+  intermediaire: {
+    titre: 'Tu as deja des bases.',
+    message: 'On ne va pas te refaire ce que tu sais. On va surtout rendre plus clair '
+           + 'ce que tu recites deja.'
+  },
+  avance: {
+    titre: 'Tu es en avance sur le site.',
+    message: 'Autant te le dire franchement : il n\'y a que deux lecons ici aujourd\'hui, '
+           + 'et tu connais deja une bonne partie de la premiere. On commence donc par '
+           + 'les invocations, et j\'ecris la suite.'
+  },
+  inconnu: {
+    titre: 'Comme tu veux.',
+    message: 'Tu pourras repondre a ces questions plus tard depuis "Mon chemin". '
+           + 'En attendant, on commence par le commencement.'
+  }
+};
+
+function ippDemarrerDiagnostic(racine, quandFini) {
+  'use strict';
+  var q = ippViseur(racine);
+  var zone = q('diag');
+  if (!zone) { return; }
+
+  var questions = zone.querySelectorAll('.q-etape');
+  var TOTAL = questions.length;
+  var courante = 1;
+  var reponses = {};
+
+  zone.hidden = false;
+
+  // Points de progression
+  var html = '';
+  for (var i = 0; i < TOTAL; i++) { html += '<span class="pt"></span>'; }
+  q('diag-points').innerHTML = html;
+  var segments = q('diag-points').querySelectorAll('.pt');
+
+  function afficher() {
+    for (var a = 0; a < questions.length; a++) {
+      questions[a].classList.toggle('actif',
+        Number(questions[a].getAttribute('data-q')) === courante);
+    }
+    for (var b = 0; b < segments.length; b++) {
+      segments[b].classList.toggle('faite', b < courante);
+    }
+  }
+
+  function conclure(passe) {
+    var enregistre = IPP.enregistrerNiveau(passe ? {} : reponses);
+    var bilan = IPP_BILANS[IPP.profil()] || IPP_BILANS.inconnu;
+
+    q('diag-questions').hidden = true;
+    q('diag-passer').hidden = true;
+    q('diag-points').innerHTML = '';
+    q('diag-titre').textContent = bilan.titre;
+    q('diag-message').textContent = bilan.message;
+
+    var suite = IPP.leconDuJour();
+    var bouton = q('diag-go');
+    bouton.textContent = suite ? 'Commencer : ' + suite.lecon.titre : 'Voir mon chemin';
+
+    q('diag-fin').hidden = false;
+    return enregistre;
+  }
+
+  // Un clic sur une reponse enregistre et passe a la suite.
+  zone.addEventListener('click', function (e) {
+    var opt = e.target.closest ? e.target.closest('.opt') : null;
+    if (!opt || !zone.contains(opt)) { return; }
+    var etape = opt.closest('.q-etape');
+    reponses[etape.getAttribute('data-cle')] = opt.getAttribute('data-val');
+
+    if (courante >= TOTAL) { conclure(false); return; }
+    courante++;
     afficher();
+  });
+
+  q('diag-passer').addEventListener('click', function () { conclure(true); });
+
+  q('diag-go').addEventListener('click', function () {
+    zone.hidden = true;
+    if (typeof quandFini === 'function') { quandFini(); }
   });
 
   afficher();

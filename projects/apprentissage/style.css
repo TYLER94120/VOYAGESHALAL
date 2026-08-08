@@ -452,3 +452,101 @@ a.pc:hover, button.pc:hover { border-color: var(--trait-fort); }
     transition-duration: 0.001ms !important;
   }
 }
+
+/* ---------- les trois questions d'accueil ---------- */
+
+.accueil-corps { display: flex; flex-direction: column; gap: 32px; }
+
+.diag {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding: 6px 0 0;
+}
+
+.diag-haut { display: flex; flex-direction: column; gap: 12px; }
+.diag-haut .points { max-width: 130px; }
+
+.diag-intro {
+  color: var(--texte-2);
+  font-size: 16px;
+  line-height: 1.55;
+  margin: 0;
+  max-width: 40ch;
+}
+
+/* Une question a la fois. */
+.q-etape { display: none; flex-direction: column; gap: 20px; }
+.q-etape.actif { display: flex; animation: monte 0.4s cubic-bezier(0.22, 1, 0.36, 1); }
+.q-etape h2 { font-size: 29px; }
+
+.choix { display: flex; flex-direction: column; gap: 10px; }
+
+/* Aucune reponse n'est "la bonne" : les trois options ont exactement le meme
+   poids visuel, pour que personne ne se sente juge en cliquant. */
+.opt {
+  appearance: none;
+  cursor: pointer;
+  min-height: 64px;
+  padding: 18px 20px;
+  text-align: left;
+  background: var(--surface-1);
+  border: 1px solid var(--trait);
+  border-radius: var(--r-petit);
+  color: var(--creme);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.35;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+.opt:hover { border-color: var(--trait-fort); background: var(--surface-2); }
+.opt:active { transform: scale(0.99); }
+
+.q-fin {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: flex-start;
+  animation: monte 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.q-fin h2 { font-size: 30px; }
+.q-fin .clair { max-width: 44ch; }
+.q-fin .btn { text-align: center; }
+
+.lien-discret {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  align-self: flex-start;
+  min-height: 56px;
+  padding: 0;
+  color: var(--texte-3);
+  font-family: var(--sans);
+  font-size: 15px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.lien-discret:hover { color: var(--texte-2); }
+
+.note-niveau {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--texte-2);
+}
+
+/* Rappel du point de depart, sur la page "Mon chemin". */
+.niveau-carte {
+  background: var(--surface-1);
+  border: 1px solid var(--trait);
+  border-radius: var(--r-petit);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.niveau-carte dl { margin: 0; display: flex; flex-direction: column; gap: 9px; }
+.niveau-carte .ligne-n { display: flex; gap: 12px; align-items: baseline; font-size: 16px; }
+.niveau-carte dt { color: var(--texte-3); }
+.niveau-carte dd { margin: 0; margin-left: auto; text-align: right; color: var(--creme); }

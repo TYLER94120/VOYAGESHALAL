@@ -23,16 +23,46 @@ Version de travail, hebergee provisoirement dans le repo VOYAGESHALAL sur la bra
 
 | Fichier | Role |
 | --- | --- |
-| `index.html` | Ecran d'accueil — « Aujourd'hui » : la lecon du jour, les revisions, les parcours |
+| `index.html` | Ecran d'accueil — les trois questions a la 1re visite, puis « Aujourd'hui » |
 | `lecon-al-fatiha.html` | Lecon 1 : sourate Al-Fatiha verset par verset (7 versets) |
 | `lecon-invocations-matin.html` | Lecon 2 : trois invocations pour commencer la journee |
 | `chemin.html` | La progression : compteur, calendrier des jours, parcours, revisions a venir |
 | `style.css` | Toute la mise en forme (charte de la famille) |
-| `app.js` | Catalogue, progression, serie de jours, revisions, et le lecteur de lecon commun |
+| `app.js` | Catalogue, niveau, progression, revisions, et le lecteur de lecon commun |
+| `outils/faire-apercu.py` | Genere `apercu.html`, un apercu en un seul fichier (pour relecture) |
+| `apercu.html` | **Fichier genere.** Ne pas modifier a la main, relancer le script |
 
 Deux lecons publiees : il y a donc de quoi revenir le lendemain, ce qui est
 tout l'objet du site. Le lecteur de lecon (`ippDemarrerLecon`) est ecrit une
 seule fois dans `app.js` et partage par toutes les lecons.
+
+## Les trois questions d'accueil
+
+A la premiere visite, l'accueil pose trois questions — la priere, Al-Fatiha,
+les sourates memorisees — puis demarre au bon endroit. Quinze secondes,
+aucun compte, et on peut passer a tout moment. Le resultat est garde sous la
+cle `ipp.niveau.v1`.
+
+Le principe : **ne pas faire apprendre a quelqu'un ce qu'il sait deja.** Un
+converti d'hier et quelqu'un qui prie depuis vingt ans n'ont pas besoin de la
+meme premiere lecon.
+
+Ce n'est pas decoratif, cela change vraiment ce qui est propose :
+`ordreLecons()` recule Al-Fatiha pour qui la connait deja par coeur, et
+l'accueil dit pourquoi (« Al-Fatiha passe apres : tu la connais deja »).
+
+Trois regles de ton, a ne pas casser en ajoutant des questions :
+
+- **aucune reponse n'est mauvaise.** Les trois options ont le meme poids
+  visuel, il n'y a ni score, ni barre de niveau, ni felicitations ;
+- **celui qui repond « non » partout est accueilli, pas juge** — c'est
+  peut-etre un converti d'hier, et c'est exactement pour lui que le site
+  existe ;
+- **on reste honnete avec celui qui est en avance.** Plutot que de lui servir
+  une lecon qu'il connait, on lui dit qu'il n'y a que deux lecons aujourd'hui.
+
+Le point de depart est rappele sur « Mon chemin », avec un lien pour le
+refaire quand le niveau change.
 
 ## Technique
 
@@ -96,6 +126,12 @@ Boutons d'au moins 56px de haut. Mobile d'abord, teste a 375px.
 Testees au navigateur (Chromium, 375x780) :
 
 - aucun debordement horizontal sur les quatre pages ;
+- les trois questions d'accueil : elles s'imposent a la 1re visite, ne
+  reviennent plus ensuite, se passent d'un clic, et le profil « avance »
+  recoit bien une autre lecon en premier ;
+- les options de reponse mesurent 64px de haut (charte : 56 minimum) ;
+- l'apercu en un seul fichier se comporte comme le site (navigation, lecons,
+  progression, diagnostic) ;
 - les deux lecons se parcourent de bout en bout, la progression est enregistree ;
 - le lendemain, l'accueil propose bien la lecon suivante, puis annonce honnetement
   « Tu es a jour » quand il n'y a plus rien ;

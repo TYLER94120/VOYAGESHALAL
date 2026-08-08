@@ -1,0 +1,2066 @@
+<!-- FICHIER GENERE - NE PAS MODIFIER A LA MAIN.
+     Produit par outils/faire-apercu.py a partir de index.html, chemin.html,
+     des lecons, de style.css et de app.js. Pour le mettre a jour :
+         python3 outils/faire-apercu.py
+     Le site lui-meme n'a pas besoin de ce fichier. -->
+<title>Islam pas a pas — apercu du site</title>
+
+<style>
+/* =========================================================
+   Islam pas a pas - feuille de style unique
+   Charte famille : nuit #0b1a0f / foret #1b4332 / or #c9a84c / creme #fdfaf3
+   Mobile d'abord (base = 375px), puis elargissement.
+   ========================================================= */
+
+:root {
+  /* Palette officielle de l'empire */
+  --nuit:      #0b1a0f;
+  --foret:     #1b4332;
+  --or:        #c9a84c;
+  --or-clair:  #e8d5a3;
+  --creme:     #fdfaf3;
+
+  /* Neutres derives, teintes vert (jamais un gris pur) */
+  --surface-1: #102a19;
+  --surface-2: #16351f;
+  --texte-2:   #93a894;
+  --texte-3:   #6c8271;
+  --trait:     rgba(201, 168, 76, 0.16);
+  --trait-fort:rgba(201, 168, 76, 0.34);
+
+  --serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --sans:  'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --arabe: 'Scheherazade New', 'Geeza Pro', 'Traditional Arabic', serif;
+
+  --r:      18px;
+  --r-petit:13px;
+  --large:  680px;
+
+  /* Motif geometrique de la famille */
+  --motif: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%23c9a84c' stroke-width='1.2'%3E%3Cpath d='M40 0l40 40-40 40L0 40z'/%3E%3Cpath d='M40 16l24 24-24 24-24-24z'/%3E%3Ccircle cx='40' cy='40' r='9'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+/* Nos classes posent display:flex ; sans ceci, l'attribut hidden ne cacherait rien. */
+[hidden] { display: none !important; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--nuit);
+  color: var(--creme);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: var(--serif);
+  font-weight: 600;
+  line-height: 1.22;
+  margin: 0;
+  text-wrap: balance;
+}
+
+p { margin: 0; }
+
+a { color: var(--or); }
+
+img, svg { display: block; }
+
+button { font: inherit; }
+
+:focus-visible { outline: 2px solid var(--or-clair); outline-offset: 3px; border-radius: 4px; }
+
+.saut-contenu {
+  position: absolute; left: -9999px;
+  background: var(--or); color: #16240f;
+  padding: 14px 18px; border-radius: 0 0 12px 0; font-weight: 700; z-index: 50;
+}
+.saut-contenu:focus { left: 0; top: 0; }
+
+/* ---------- structure ---------- */
+
+.page {
+  max-width: var(--large);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contenu {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 26px 0 40px;
+}
+
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--or);
+  font-weight: 700;
+}
+
+.titre-bloc {
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--texte-3);
+  font-weight: 700;
+}
+
+.bloc { display: flex; flex-direction: column; gap: 13px; }
+
+/* ---------- barre du haut ---------- */
+
+.barre {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--trait);
+}
+
+.marque {
+  display: flex; align-items: center; gap: 9px;
+  text-decoration: none; color: var(--creme);
+  font-family: var(--serif); font-size: 19px; font-weight: 600;
+  line-height: 1;
+}
+.marque .etoile { color: var(--or); flex: 0 0 auto; }
+
+.barre .droite { margin-left: auto; display: flex; align-items: center; gap: 8px; }
+
+.jeton {
+  display: inline-flex; align-items: center; gap: 7px;
+  background: rgba(201, 168, 76, 0.13);
+  border: 1px solid var(--trait-fort);
+  color: var(--or-clair);
+  border-radius: 999px;
+  padding: 8px 13px;
+  font-size: 14px; font-weight: 600;
+  white-space: nowrap;
+}
+
+/* ---------- accueil ---------- */
+
+.salut { display: flex; flex-direction: column; gap: 6px; }
+.salut .date {
+  font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--texte-3); font-weight: 700;
+}
+.salut h1 { font-size: 32px; }
+
+.serie {
+  display: flex; align-items: center; gap: 13px;
+  padding: 15px 17px;
+  background: linear-gradient(100deg, rgba(201,168,76,0.14), rgba(201,168,76,0.03));
+  border: 1px solid var(--trait-fort);
+  border-radius: var(--r-petit);
+}
+.serie .n { font-family: var(--serif); font-size: 30px; color: var(--or); line-height: 1; }
+.serie .txt { font-size: 15px; color: var(--or-clair); line-height: 1.35; }
+
+.carte-jour {
+  position: relative;
+  overflow: hidden;
+  background: var(--surface-2);
+  border: 1px solid var(--trait-fort);
+  border-radius: var(--r);
+  padding: 24px 20px 20px;
+  display: flex; flex-direction: column; gap: 16px;
+}
+.carte-jour::after {
+  content: "";
+  position: absolute; inset: 0;
+  background: var(--motif); background-size: 88px 88px;
+  opacity: 0.05; pointer-events: none;
+}
+.carte-jour > * { position: relative; z-index: 1; }
+.carte-jour h2 { font-size: 27px; }
+
+.meta {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 8px;
+  font-size: 14px; color: var(--texte-2);
+}
+.meta > span { white-space: nowrap; }
+.puce { width: 3px; height: 3px; border-radius: 50%; background: var(--texte-3); flex: 0 0 auto; }
+
+/* ---------- boutons (>= 56px, charte) ---------- */
+
+.btn {
+  appearance: none; border: 0; cursor: pointer;
+  min-height: 60px;
+  padding: 16px 22px;
+  border-radius: 14px;
+  background: var(--or);
+  color: #16240f;
+  font-family: var(--sans);
+  font-size: 17px; font-weight: 700;
+  display: flex; align-items: center; justify-content: center; gap: 9px;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  transition: background 0.2s ease, transform 0.16s ease;
+}
+.btn:hover { background: var(--or-clair); }
+.btn:active { transform: scale(0.985); }
+
+.btn.fantome {
+  background: transparent; color: var(--or);
+  border: 1px solid var(--trait-fort);
+}
+.btn.fantome:hover { background: rgba(201, 168, 76, 0.1); }
+
+.btn[disabled] { opacity: 0.45; cursor: not-allowed; }
+.btn[disabled]:hover { background: var(--or); }
+
+/* ---------- listes de cartes ---------- */
+
+.liste { display: flex; flex-direction: column; gap: 10px; }
+
+.ligne {
+  display: flex; align-items: center; gap: 13px;
+  background: var(--surface-1);
+  border: 1px solid var(--trait);
+  border-radius: var(--r-petit);
+  padding: 15px 16px;
+  min-height: 58px;
+  width: 100%;
+  text-align: left;
+  text-decoration: none;
+  color: var(--creme);
+  font-family: var(--sans);
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+.ligne:hover { border-color: var(--trait-fort); }
+.ligne .etoile { flex: 0 0 auto; color: var(--or); }
+.ligne .t { font-size: 16px; line-height: 1.35; display: block; }
+.ligne .s { font-size: 14px; color: var(--texte-3); display: block; }
+.ligne .fl { margin-left: auto; color: var(--or); font-size: 20px; flex: 0 0 auto; }
+
+.ligne.inerte { cursor: default; opacity: 0.62; }
+.ligne.inerte:hover { border-color: var(--trait); }
+.ligne.inerte .etoile { color: var(--texte-3); }
+
+.vide {
+  background: var(--surface-1);
+  border: 1px dashed var(--trait-fort);
+  border-radius: var(--r-petit);
+  padding: 18px 16px;
+  color: var(--texte-2);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* ---------- parcours ---------- */
+
+.parcours { display: flex; flex-direction: column; gap: 10px; }
+
+.pc {
+  background: var(--surface-1);
+  border: 1px solid var(--trait);
+  border-radius: var(--r-petit);
+  padding: 16px;
+  display: flex; flex-direction: column; gap: 11px;
+  width: 100%; text-align: left;
+  color: var(--creme); font-family: var(--sans);
+  text-decoration: none;
+  min-height: 56px;
+  transition: border-color 0.2s ease;
+}
+a.pc:hover, button.pc:hover { border-color: var(--trait-fort); }
+.pc .haut { display: flex; align-items: baseline; gap: 10px; }
+.pc .nom { font-size: 17px; font-weight: 600; line-height: 1.3; }
+.pc .cpt {
+  margin-left: auto; font-size: 14px; color: var(--texte-3);
+  font-variant-numeric: tabular-nums; white-space: nowrap;
+}
+.barre-p { height: 5px; border-radius: 3px; background: rgba(253, 250, 243, 0.09); overflow: hidden; }
+.barre-p span { display: block; height: 100%; border-radius: 3px; background: var(--or); }
+
+/* ---------- lecon ---------- */
+
+.lecon-haut {
+  position: sticky; top: 0; z-index: 5;
+  display: flex; align-items: center; gap: 12px;
+  padding: 10px 0;
+  background: rgba(11, 26, 15, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--trait);
+}
+.quitter {
+  appearance: none; background: transparent; border: 0; cursor: pointer;
+  color: var(--texte-3); font-size: 26px; line-height: 1;
+  width: 56px; height: 56px; margin-left: -16px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  text-decoration: none;
+  flex: 0 0 auto;
+}
+.quitter:hover { color: var(--creme); }
+.points { display: flex; gap: 6px; flex: 1; }
+.pt { height: 4px; flex: 1; border-radius: 2px; background: rgba(253, 250, 243, 0.13); transition: background 0.35s ease; }
+.pt.faite { background: var(--or); }
+
+.etapes { display: flex; flex-direction: column; gap: 24px; padding: 22px 0 0; }
+
+/* Sans JS : toutes les etapes s'affichent a la suite (contenu lisible et indexable).
+   Avec JS : la classe .pilote est posee et une seule etape est visible a la fois. */
+.pilote .etape { display: none; }
+.pilote .etape.actif { display: flex; }
+.etape { display: flex; flex-direction: column; gap: 20px; }
+.pilote .etape.actif { animation: monte 0.42s cubic-bezier(0.22, 1, 0.36, 1); }
+
+@keyframes monte {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: none; }
+}
+
+.ar {
+  font-family: var(--arabe);
+  font-size: 34px;
+  line-height: 2;
+  text-align: right;
+  direction: rtl;
+  color: var(--creme);
+  margin: 0;
+}
+
+.phon { font-size: 15px; color: var(--texte-3); font-style: italic; line-height: 1.5; margin: 6px 0 0; }
+
+.etiquette {
+  font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--texte-3); font-weight: 700;
+  display: block; margin-bottom: 8px;
+}
+
+.sens {
+  font-family: var(--serif);
+  font-size: 23px; line-height: 1.45;
+  color: var(--or-clair);
+  margin: 0;
+}
+
+.clair { font-size: 18px; line-height: 1.65; color: var(--creme); margin: 0; }
+
+.source {
+  background: var(--surface-1);
+  border-left: 2px solid var(--or);
+  border-radius: 0 var(--r-petit) var(--r-petit) 0;
+  padding: 14px 16px;
+}
+.source .lab {
+  font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase;
+  color: var(--or); font-weight: 700; display: block; margin-bottom: 4px;
+}
+.source .val { font-size: 15px; color: var(--creme); line-height: 1.5; display: block; }
+
+.prudence {
+  font-size: 14px; line-height: 1.55; color: var(--texte-2);
+  background: rgba(27, 67, 50, 0.4);
+  border: 1px solid var(--trait);
+  border-radius: var(--r-petit);
+  padding: 13px 15px;
+  margin: 0;
+}
+
+.retenir {
+  background: linear-gradient(155deg, rgba(201, 168, 76, 0.15), rgba(201, 168, 76, 0.03));
+  border: 1px solid var(--trait-fort);
+  border-radius: var(--r);
+  padding: 26px 20px;
+  display: flex; flex-direction: column; align-items: center; gap: 12px;
+  text-align: center;
+}
+.retenir .q { font-family: var(--serif); font-size: 24px; line-height: 1.35; margin: 0; }
+.retenir .r { font-size: 15px; color: var(--or-clair); margin: 0; }
+
+.fin { align-items: center; text-align: center; gap: 18px; padding: 20px 0; }
+.fin h2 { font-size: 32px; }
+.fin p { color: var(--texte-2); max-width: 32ch; }
+.fin p.suite { color: var(--or-clair); font-weight: 600; }
+.fin p.suite:empty { display: none; }
+
+.bas-lecon { padding: 24px 0 8px; position: sticky; bottom: 0; background: linear-gradient(transparent, var(--nuit) 30%); }
+
+/* ---------- chemin ---------- */
+
+.compteur { display: flex; flex-direction: column; gap: 6px; }
+.compteur .gros { font-family: var(--serif); font-size: 56px; line-height: 1; color: var(--or); }
+.compteur .leg { font-size: 16px; color: var(--texte-2); line-height: 1.45; }
+
+.mois-cadre {
+  background: var(--surface-1);
+  border: 1px solid var(--trait);
+  border-radius: var(--r);
+  padding: 16px 14px;
+}
+.jours-sem {
+  display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px;
+  margin-bottom: 10px;
+}
+.jours-sem span {
+  text-align: center; font-size: 11px; font-weight: 700;
+  letter-spacing: 0.06em; color: var(--texte-3); text-transform: uppercase;
+}
+.mois { display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; }
+.jour { display: flex; align-items: center; justify-content: center; aspect-ratio: 1; }
+.jour.vide-case { visibility: hidden; }
+
+/* ---------- pied de page ---------- */
+
+.pied {
+  border-top: 1px solid var(--trait);
+  margin-top: 8px;
+  padding: 30px 0 40px;
+  display: flex; flex-direction: column; gap: 22px;
+}
+.pied .t {
+  font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--texte-3); font-weight: 700;
+}
+.freres { display: grid; grid-template-columns: 1fr; gap: 10px; }
+.freres a {
+  display: flex; flex-direction: column; justify-content: center; gap: 3px;
+  min-height: 56px; padding: 14px 16px;
+  background: var(--surface-1);
+  border: 1px solid var(--trait);
+  border-radius: var(--r-petit);
+  text-decoration: none;
+  transition: border-color 0.2s ease;
+}
+.freres a:hover { border-color: var(--trait-fort); }
+.freres .d { color: var(--or); font-size: 16px; font-weight: 600; }
+.freres .q { color: var(--texte-3); font-size: 14px; }
+
+.note-pied { color: var(--texte-3); font-size: 14px; line-height: 1.6; margin: 0; }
+.note-pied a { color: var(--texte-2); }
+
+/* ---------- ecrans plus larges ---------- */
+
+@media (min-width: 620px) {
+  .salut h1 { font-size: 38px; }
+  .carte-jour { padding: 30px 26px 24px; }
+  .carte-jour h2 { font-size: 32px; }
+  .freres { grid-template-columns: 1fr 1fr; }
+  .btn { width: auto; align-self: flex-start; min-width: 260px; }
+  .ar { font-size: 38px; }
+  .compteur .gros { font-size: 64px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* ---------- les trois questions d'accueil ---------- */
+
+.accueil-corps { display: flex; flex-direction: column; gap: 32px; }
+
+.diag {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding: 6px 0 0;
+}
+
+.diag-haut { display: flex; flex-direction: column; gap: 12px; }
+.diag-haut .points { max-width: 130px; }
+
+.diag-intro {
+  color: var(--texte-2);
+  font-size: 16px;
+  line-height: 1.55;
+  margin: 0;
+  max-width: 40ch;
+}
+
+/* Une question a la fois. */
+.q-etape { display: none; flex-direction: column; gap: 20px; }
+.q-etape.actif { display: flex; animation: monte 0.4s cubic-bezier(0.22, 1, 0.36, 1); }
+.q-etape h2 { font-size: 29px; }
+
+.choix { display: flex; flex-direction: column; gap: 10px; }
+
+/* Aucune reponse n'est "la bonne" : les trois options ont exactement le meme
+   poids visuel, pour que personne ne se sente juge en cliquant. */
+.opt {
+  appearance: none;
+  cursor: pointer;
+  min-height: 64px;
+  padding: 18px 20px;
+  text-align: left;
+  background: var(--surface-1);
+  border: 1px solid var(--trait);
+  border-radius: var(--r-petit);
+  color: var(--creme);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.35;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+.opt:hover { border-color: var(--trait-fort); background: var(--surface-2); }
+.opt:active { transform: scale(0.99); }
+
+.q-fin {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: flex-start;
+  animation: monte 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.q-fin h2 { font-size: 30px; }
+.q-fin .clair { max-width: 44ch; }
+.q-fin .btn { text-align: center; }
+
+.lien-discret {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  align-self: flex-start;
+  min-height: 56px;
+  padding: 0;
+  color: var(--texte-3);
+  font-family: var(--sans);
+  font-size: 15px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.lien-discret:hover { color: var(--texte-2); }
+
+.note-niveau {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--texte-2);
+}
+
+/* Rappel du point de depart, sur la page "Mon chemin". */
+.niveau-carte {
+  background: var(--surface-1);
+  border: 1px solid var(--trait);
+  border-radius: var(--r-petit);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.niveau-carte dl { margin: 0; display: flex; flex-direction: column; gap: 9px; }
+.niveau-carte .ligne-n { display: flex; gap: 12px; align-items: baseline; font-size: 16px; }
+.niveau-carte dt { color: var(--texte-3); }
+.niveau-carte dd { margin: 0; margin-left: auto; text-align: right; color: var(--creme); }
+
+</style>
+
+<div id="vue"></div>
+<p class="note-pied" style="max-width:680px;margin:0 auto;padding:0 20px 34px;text-align:center">Apercu du site en un seul fichier. Deux differences avec la version en ligne&nbsp;: la police des titres (Playfair Display) ne se charge pas ici, et les pages sont assemblees ensemble au lieu d'etre des adresses separees. Tout le reste est le vrai site.</p>
+
+<template data-vue="accueil">
+<div class="page">
+
+  <header class="barre">
+    <a class="marque" href="index.html">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="etoile" aria-hidden="true">
+        <path d="M12 2 L22 12 L12 22 L2 12 Z M5 5 H19 V19 H5 Z"/>
+      </svg>
+      Islam pas a pas
+    </a>
+    <div class="droite">
+      <span class="jeton" data-r="jeton" hidden></span>
+    </div>
+  </header>
+
+  <main class="contenu" id="principal">
+
+    <!-- Les trois questions d'accueil. Masquees par defaut : elles n'apparaissent
+         qu'a la premiere visite, posees par app.js. Ainsi le vrai contenu de
+         l'accueil reste dans la page, lisible par Google et sans JavaScript. -->
+    <section class="diag" data-r="diag" hidden aria-label="Trois questions pour commencer">
+      <div class="diag-haut">
+        <span class="eyebrow">Bienvenue</span>
+        <div class="points" data-r="diag-points" aria-hidden="true"></div>
+      </div>
+
+      <p class="diag-intro">
+        Trois questions, quinze secondes. Pas de compte, pas d'inscription.
+        C'est seulement pour ne pas te faire apprendre ce que tu sais deja.
+      </p>
+
+      <div data-r="diag-questions">
+        <div class="q-etape" data-q="1" data-cle="priere">
+          <h2>Ou en es-tu avec la priere&nbsp;?</h2>
+          <div class="choix">
+            <button class="opt" type="button" data-val="non">Je ne prie pas encore</button>
+            <button class="opt" type="button" data-val="parfois">Je prie, mais pas les cinq</button>
+            <button class="opt" type="button" data-val="oui">Je prie les cinq</button>
+          </div>
+        </div>
+
+        <div class="q-etape" data-q="2" data-cle="fatiha">
+          <h2>Al-Fatiha, tu la connais par coeur&nbsp;?</h2>
+          <div class="choix">
+            <button class="opt" type="button" data-val="non">Pas encore</button>
+            <button class="opt" type="button" data-val="incertain">Je la recite sans etre sur</button>
+            <button class="opt" type="button" data-val="oui">Oui, par coeur</button>
+          </div>
+        </div>
+
+        <div class="q-etape" data-q="3" data-cle="memoire">
+          <h2>Combien de sourates connais-tu par coeur&nbsp;?</h2>
+          <div class="choix">
+            <button class="opt" type="button" data-val="aucune">Aucune pour l'instant</button>
+            <button class="opt" type="button" data-val="quelques">Quelques courtes</button>
+            <button class="opt" type="button" data-val="beaucoup">Plus de dix</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="q-fin" data-r="diag-fin" hidden>
+        <h2 data-r="diag-titre"></h2>
+        <p class="clair" data-r="diag-message"></p>
+        <button class="btn" type="button" data-r="diag-go">Commencer</button>
+      </div>
+
+      <button class="lien-discret" type="button" data-r="diag-passer">Passer, je verrai plus tard</button>
+    </section>
+
+    <div class="accueil-corps" data-r="accueil-corps">
+
+    <div class="salut">
+      <span class="date" data-r="date">Aujourd'hui</span>
+      <h1 data-r="salut">Bienvenue</h1>
+    </div>
+
+    <div class="serie" data-r="serie" hidden>
+      <span class="n" data-r="serie-n">0</span>
+      <span class="txt" data-r="serie-txt"></span>
+    </div>
+
+    <!-- La lecon du jour. Le contenu statique sert de repli si JS est absent. -->
+    <section class="carte-jour" data-r="carte">
+      <span class="eyebrow" data-r="carte-eyebrow">Ta lecon du jour</span>
+      <h2 data-r="carte-titre">Sourate Al-Fatiha, verset par verset</h2>
+      <div class="meta" data-r="carte-meta">
+        <span>5 min</span><span class="puce"></span>
+        <span>10 cartes</span><span class="puce"></span>
+        <span>Le sens des sourates</span>
+      </div>
+      <p class="clair" data-r="carte-pitch">
+        Tu la recites dans chaque priere. Aujourd'hui, tu vas comprendre chacun de ses sept versets.
+      </p>
+      <p class="note-niveau" data-r="niveau-note" hidden></p>
+      <a class="btn" data-r="carte-btn" href="lecon-al-fatiha.html">Commencer &rarr;</a>
+    </section>
+
+    <section class="bloc">
+      <h2 class="titre-bloc">A revoir aujourd'hui</h2>
+      <div class="liste" data-r="revisions">
+        <p class="vide">Rien a revoir pour l'instant. Termine ta premiere lecon : elle reviendra ici dans deux jours, puis de plus en plus espacee.</p>
+      </div>
+    </section>
+
+    <section class="bloc">
+      <h2 class="titre-bloc">Tes parcours</h2>
+      <div class="parcours" data-r="parcours"></div>
+      <p class="note-pied">
+        Un seul parcours est ouvert pour le moment. J'ajoute les suivants lecon par lecon,
+        jamais en masse : chaque texte est verifie avant d'etre publie.
+      </p>
+    </section>
+
+    <section class="bloc">
+      <h2 class="titre-bloc">La regle de ce site</h2>
+      <p class="clair">
+        Chaque verset est cite avec sa sourate et son numero. Chaque hadith avec son recueil,
+        son numero et son rapporteur. Aucun avis personnel : quand les savants divergent,
+        on presente les avis sans trancher, et on renvoie vers un savant.
+      </p>
+      <p class="prudence">
+        Les traductions sont des traductions du <em>sens</em>. Le Coran, c'est l'arabe.
+      </p>
+    </section>
+
+    </div><!-- /accueil-corps -->
+
+  </main>
+
+  <footer class="pied">
+    <span class="t">Les autres sites de la famille</span>
+    <nav class="freres" aria-label="Sites partenaires">
+      <a href="https://halalgpt.fr"><span class="d">halalgpt.fr</span><span class="q">L'IA musulmane, pour poser une question</span></a>
+      <a href="https://halalcheck.fr"><span class="d">halalcheck.fr</span><span class="q">Scanner un produit en magasin</span></a>
+      <a href="https://voyageshalal.fr"><span class="d">voyageshalal.fr</span><span class="q">Voyager halal</span></a>
+      <a href="https://gohalaltravel.com"><span class="d">gohalaltravel.com</span><span class="q">Halal travel guide (EN)</span></a>
+    </nav>
+    <p class="note-pied">
+      Ta progression reste sur ton telephone. Aucun compte, aucun envoi.
+      Une erreur dans une source&nbsp;? Signale-la, elle sera corrigee.
+    </p>
+  </footer>
+
+</div>
+</template>
+
+<template data-vue="al-fatiha">
+<div class="page">
+
+  <header class="lecon-haut">
+    <a class="quitter" href="index.html" aria-label="Quitter la lecon">&times;</a>
+    <div class="points" data-r="points" aria-hidden="true"></div>
+  </header>
+
+  <main id="principal">
+
+    <h1 class="visuellement-cache" hidden>Sourate Al-Fatiha, verset par verset</h1>
+
+    <div class="etapes" data-r="etapes">
+
+      <!-- 1 : pourquoi cette sourate -->
+      <section class="etape" data-etape="1">
+        <span class="eyebrow">La lecon du jour</span>
+        <h2 style="font-size:29px">Sourate Al-Fatiha, verset par verset</h2>
+        <p class="clair">
+          C'est la sourate que tu repetes le plus souvent de ta vie : dans chaque unite
+          de chaque priere. Sept versets. Aujourd'hui, tu vas comprendre ce que tu dis.
+        </p>
+        <div>
+          <p class="ar" lang="ar" dir="rtl">لَا صَلَاةَ لِمَنْ لَمْ يَقْرَأْ بِفَاتِحَةِ الْكِتَابِ</p>
+          <p class="phon">La salata li-man lam yaqra' bi-fatihati l-kitab</p>
+        </div>
+        <div>
+          <span class="etiquette">Traduction du sens</span>
+          <p class="sens">&laquo;&nbsp;Pas de priere pour celui qui ne recite pas l'ouverture du Livre.&nbsp;&raquo;</p>
+        </div>
+        <div class="source">
+          <span class="lab">Source</span>
+          <span class="val">Rapporte par al-Boukhari (n&deg;756) et Mouslim (n&deg;394), d'apres Oubada ibn as-Samit.</span>
+        </div>
+      </section>
+
+      <!-- 2 : verset 1 -->
+      <section class="etape" data-etape="2">
+        <span class="eyebrow">Verset 1 sur 7</span>
+        <div>
+          <p class="ar" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+          <p class="phon">Bismi-llahi r-rahmani r-rahim</p>
+        </div>
+        <div>
+          <span class="etiquette">Traduction du sens</span>
+          <p class="sens">&laquo;&nbsp;Au nom d'Allah, le Tout Misericordieux, le Tres Misericordieux.&nbsp;&raquo;</p>
+        </div>
+        <div class="source">
+          <span class="lab">Source</span>
+          <span class="val">Coran, sourate Al-Fatiha (1), verset 1.</span>
+        </div>
+        <div>
+          <span class="etiquette">En clair</span>
+          <p class="clair">
+            On commence par Son nom. Deux mots differents pour parler de Sa misericorde,
+            l'un derriere l'autre : avant toute chose, c'est cela qui est mis en avant.
+          </p>
+        </div>
+      </section>
+
+      <!-- 3 : verset 2 -->
+      <section class="etape" data-etape="3">
+        <span class="eyebrow">Verset 2 sur 7</span>
+        <div>
+          <p class="ar" lang="ar" dir="rtl">الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ</p>
+          <p class="phon">Al-hamdu li-llahi rabbi l-'alamin</p>
+        </div>
+        <div>
+          <span class="etiquette">Traduction du sens</span>
+          <p class="sens">&laquo;&nbsp;Louange a Allah, Seigneur de l'univers.&nbsp;&raquo;</p>
+        </div>
+        <div class="source">
+          <span class="lab">Source</span>
+          <span class="val">Coran, sourate Al-Fatiha (1), verset 2.</span>
+        </div>
+        <div>
+          <span class="etiquette">En clair</span>
+          <p class="clair">
+            La louange vient avant la demande. Et &laquo;&nbsp;Seigneur de l'univers&nbsp;&raquo; :
+            de tout ce qui existe, pas seulement des hommes.
+          </p>
+        </div>
+      </section>
+
+      <!-- 4 : verset 3 -->
+      <section class="etape" data-etape="4">
+        <span class="eyebrow">Verset 3 sur 7</span>
+        <div>
+          <p class="ar" lang="ar" dir="rtl">الرَّحْمَٰنِ الرَّحِيمِ</p>
+          <p class="phon">Ar-rahmani r-rahim</p>
+        </div>
+        <div>
+          <span class="etiquette">Traduction du sens</span>
+          <p class="sens">&laquo;&nbsp;Le Tout Misericordieux, le Tres Misericordieux.&nbsp;&raquo;</p>
+        </div>
+        <div class="source">
+          <span class="lab">Source</span>
+          <span class="val">Coran, sourate Al-Fatiha (1), verset 3.</span>
+        </div>
+        <div>
+          <span class="etiquette">En clair</span>
+          <p class="clair">
+            Sa misericorde est redite une deuxieme fois, juste apres la louange
+            et juste avant le Jour du jugement.
+          </p>
+        </div>
+      </section>
+
+      <!-- 5 : verset 4 -->
+      <section class="etape" data-etape="5">
+        <span class="eyebrow">Verset 4 sur 7</span>
+        <div>
+          <p class="ar" lang="ar" dir="rtl">مَالِكِ يَوْمِ الدِّينِ</p>
+          <p class="phon">Maliki yawmi d-din</p>
+        </div>
+        <div>
+          <span class="etiquette">Traduction du sens</span>
+          <p class="sens">&laquo;&nbsp;Maitre du Jour de la retribution.&nbsp;&raquo;</p>
+        </div>
+        <div class="source">
+          <span class="lab">Source</span>
+          <span class="val">Coran, sourate Al-Fatiha (1), verset 4.</span>
+        </div>
+        <p class="prudence">
+          Deux lectures authentiques existent pour ce verset&nbsp;:
+          <em lang="ar" dir="rtl">مَالِكِ</em> (le Maitre, le Possesseur) et
+          <em lang="ar" dir="rtl">مَلِكِ</em> (le Roi). Ce site suit la lecture de Hafs
+          d'apres 'Asim, la plus repandue. Les deux sont valides.
+        </p>
+      </section>
+
+      <!-- 6 : verset 5 -->
+      <section class="etape" data-etape="6">
+        <span class="eyebrow">Verset 5 sur 7 &middot; le coeur de la sourate</span>
+        <div>
+          <p class="ar" lang="ar" dir="rtl">إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ</p>
+          <p class="phon">Iyyaka na'budu wa iyyaka nasta'in</p>
+        </div>
+        <div>
+          <span class="etiquette">Traduction du sens</span>
+          <p class="sens">&laquo;&nbsp;C'est Toi [Seul] que nous adorons, et c'est Toi [Seul] dont nous implorons secours.&nbsp;&raquo;</p>
+        </div>
+        <div class="source">
+          <span class="lab">Source</span>
+          <span class="val">Coran, sourate Al-Fatiha (1), verset 5.</span>
+        </div>
+        <div>
+          <span class="etiquette">En clair</span>
+          <p class="clair">
+            En arabe, &laquo;&nbsp;Toi&nbsp;&raquo; est place avant le verbe. Cet ordre des mots
+            porte le sens : Toi, et personne d'autre. Et le verset dit &laquo;&nbsp;nous&nbsp;&raquo;,
+            pas &laquo;&nbsp;je&nbsp;&raquo;.
+          </p>
+        </div>
+      </section>
+
+      <!-- 7 : verset 6 -->
+      <section class="etape" data-etape="7">
+        <span class="eyebrow">Verset 6 sur 7</span>
+        <div>
+          <p class="ar" lang="ar" dir="rtl">اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ</p>
+          <p class="phon">Ihdina s-sirata l-mustaqim</p>
+        </div>
+        <div>
+          <span class="etiquette">Traduction du sens</span>
+          <p class="sens">&laquo;&nbsp;Guide-nous dans le droit chemin.&nbsp;&raquo;</p>
+        </div>
+        <div class="source">
+          <span class="lab">Source</span>
+          <span class="val">Coran, sourate Al-Fatiha (1), verset 6.</span>
+        </div>
+        <div>
+          <span class="etiquette">En clair</span>
+          <p class="clair">
+            C'est la seule demande de toute la sourate. Pas la sante, pas l'argent :
+            etre guide. Et on la redemande a chaque priere, meme quand on est deja croyant.
+          </p>
+        </div>
+      </section>
+
+      <!-- 8 : verset 7 -->
+      <section class="etape" data-etape="8">
+        <span class="eyebrow">Verset 7 sur 7</span>
+        <div>
+          <p class="ar" lang="ar" dir="rtl">صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ</p>
+          <p class="phon">Sirata lladhina an'amta 'alayhim ghayri l-maghdubi 'alayhim wa la d-dallin</p>
+        </div>
+        <div>
+          <span class="etiquette">Traduction du sens</span>
+          <p class="sens">&laquo;&nbsp;Le chemin de ceux que Tu as combles de faveurs, non pas de ceux qui ont encouru Ta colere, ni des egares.&nbsp;&raquo;</p>
+        </div>
+        <div class="source">
+          <span class="lab">Source</span>
+          <span class="val">Coran, sourate Al-Fatiha (1), verset 7.</span>
+        </div>
+        <div>
+          <span class="etiquette">En clair</span>
+          <p class="clair">
+            Le verset distingue trois chemins : celui de ceux qui ont ete combles,
+            et deux que l'on demande d'eviter.
+          </p>
+        </div>
+        <p class="prudence">
+          Sur l'identite precise des deux groupes cites a la fin, les commentateurs ont
+          beaucoup ecrit. Ce site ne tranche pas et ne resume pas ce debat en une ligne.
+          Pour aller plus loin, demande a un savant.
+        </p>
+      </section>
+
+      <!-- 9 : ce que tu retiens -->
+      <section class="etape" data-etape="9">
+        <div class="retenir">
+          <span class="eyebrow">Ce que tu retiens</span>
+          <p class="q">Al-Fatiha, c'est<br>une demande de guidance,<br>encadree par la louange.</p>
+          <p class="r">Cette carte te reviendra dans deux jours.</p>
+        </div>
+        <p class="clair">
+          Demain, quand tu diras <em lang="ar" dir="rtl">اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ</em>,
+          tu sauras que tu es en train de demander la seule chose que la sourate demande.
+        </p>
+      </section>
+
+      <!-- 10 : fin -->
+      <section class="etape fin" data-etape="10">
+        <svg width="46" height="46" viewBox="0 0 24 24" fill="#c9a84c" aria-hidden="true">
+          <path d="M12 2 L22 12 L12 22 L2 12 Z M5 5 H19 V19 H5 Z"/>
+        </svg>
+        <h2>Lecon terminee</h2>
+        <p data-r="fin-texte">Tu connais maintenant les sept versets d'Al-Fatiha, chacun avec sa reference.</p>
+        <p data-r="fin-suite" class="suite"></p>
+        <a class="btn" href="index.html">Continuer</a>
+        <a class="btn fantome" href="chemin.html">Voir mon chemin</a>
+      </section>
+
+    </div>
+
+    <div class="bas-lecon" data-r="bas" hidden>
+      <button class="btn" data-r="suivant" type="button">Suivant</button>
+    </div>
+
+  </main>
+
+  <footer class="pied">
+    <p class="note-pied">
+      Texte coranique selon la lecture de Hafs d'apres 'Asim. Les traductions sont des
+      traductions du <em>sens</em> : le Coran, c'est l'arabe.
+      Une question personnelle&nbsp;? <a href="https://halalgpt.fr">Pose-la sur halalgpt.fr</a>,
+      et pour un cas qui t'engage, demande a un savant.
+    </p>
+    <span class="t">Les autres sites de la famille</span>
+    <nav class="freres" aria-label="Sites partenaires">
+      <a href="https://halalgpt.fr"><span class="d">halalgpt.fr</span><span class="q">L'IA musulmane, pour poser une question</span></a>
+      <a href="https://halalcheck.fr"><span class="d">halalcheck.fr</span><span class="q">Scanner un produit en magasin</span></a>
+      <a href="https://voyageshalal.fr"><span class="d">voyageshalal.fr</span><span class="q">Voyager halal</span></a>
+      <a href="https://gohalaltravel.com"><span class="d">gohalaltravel.com</span><span class="q">Halal travel guide (EN)</span></a>
+    </nav>
+  </footer>
+
+</div>
+</template>
+
+<template data-vue="invocations-matin">
+<div class="page">
+
+  <header class="lecon-haut">
+    <a class="quitter" href="index.html" aria-label="Quitter la lecon">&times;</a>
+    <div class="points" data-r="points" aria-hidden="true"></div>
+  </header>
+
+  <main id="principal">
+
+    <div class="etapes" data-r="etapes">
+
+      <!-- 1 : pourquoi -->
+      <section class="etape" data-etape="1">
+        <span class="eyebrow">La lecon du jour</span>
+        <h2 style="font-size:29px">Trois invocations pour commencer ta journee</h2>
+        <p class="clair">
+          Trois phrases courtes, toutes rapportees par al-Boukhari et Mouslim.
+          Apprends-en une seule aujourd'hui si tu veux : c'est deja beaucoup.
+        </p>
+        <div>
+          <p class="ar" lang="ar" dir="rtl">يَا أَيُّهَا الَّذِينَ آمَنُوا اذْكُرُوا اللَّهَ ذِكْرًا كَثِيرًا وَسَبِّحُوهُ بُكْرَةً وَأَصِيلًا</p>
+          <p class="phon">Ya ayyuha lladhina amanu dhkuru Llaha dhikran kathira, wa sabbihuhu bukratan wa asila</p>
+        </div>
+        <div>
+          <span class="etiquette">Traduction du sens</span>
+          <p class="sens">&laquo;&nbsp;O vous qui avez cru&nbsp;! Evoquez Allah d'une evocation abondante, et glorifiez-Le a la pointe et au declin du jour.&nbsp;&raquo;</p>
+        </div>
+        <div class="source">
+          <span class="lab">Source</span>
+          <span class="val">Coran, sourate Al-Ahzab (33), versets 41 et 42.</span>
+        </div>
+      </section>
+
+      <!-- 2 : sayyid al-istighfar, le texte -->
+      <section class="etape" data-etape="2">
+        <span class="eyebrow">Invocation 1 sur 3 &middot; la demande de pardon</span>
+        <p class="clair">
+          Le Prophete l'a appelee <em>sayyid al-istighfar</em> : la meilleure facon de demander pardon.
+          Elle est longue, prends ton temps.
+        </p>
+        <div>
+          <p class="ar" lang="ar" dir="rtl">اللَّهُمَّ أَنْتَ رَبِّي لَا إِلَٰهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَىٰ عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ بِذَنْبِي فَاغْفِرْ لِي فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ</p>
+          <p class="phon">
+            Allahumma anta rabbi, la ilaha illa anta, khalaqtani wa ana 'abduk,
+            wa ana 'ala 'ahdika wa wa'dika ma stata't, a'udhu bika min sharri ma sana't,
+            abu'u laka bi-ni'matika 'alayya, wa abu'u bi-dhanbi fa-ghfir li,
+            fa-innahu la yaghfiru dh-dhunuba illa ant.
+          </p>
+        </div>
+      </section>
+
+      <!-- 3 : sayyid al-istighfar, le sens et la source -->
+      <section class="etape" data-etape="3">
+        <span class="eyebrow">Invocation 1 sur 3 &middot; le sens</span>
+        <div>
+          <span class="etiquette">Traduction du sens</span>
+          <p class="sens">
+            &laquo;&nbsp;O Allah, Tu es mon Seigneur, il n'y a de divinite que Toi.
+            Tu m'as cree et je suis Ton serviteur. Je reste fidele a Ton engagement
+            et a Ta promesse autant que je le peux. Je cherche refuge aupres de Toi
+            contre le mal que j'ai commis. Je reconnais devant Toi Ton bienfait sur moi,
+            et je reconnais mon peche. Pardonne-moi, car nul ne pardonne les peches
+            a part Toi.&nbsp;&raquo;
+          </p>
+        </div>
+        <div class="source">
+          <span class="lab">Source</span>
+          <span class="val">Rapporte par al-Boukhari (n&deg;6306), d'apres Chaddad ibn Aws.</span>
+        </div>
+        <div>
+          <span class="etiquette">En clair</span>
+          <p class="clair">
+            Elle reconnait deux choses en meme temps : le bienfait recu, et la faute commise.
+            C'est ce double aveu qui la rend differente d'un simple &laquo;&nbsp;pardonne-moi&nbsp;&raquo;.
+          </p>
+        </div>
+      </section>
+
+      <!-- 4 : subhana Llahi wa bihamdih -->
+      <section class="etape" data-etape="4">
+        <span class="eyebrow">Invocation 2 sur 3 &middot; la plus courte</span>
+        <div>
+          <p class="ar" lang="ar" dir="rtl">سُبْحَانَ اللَّهِ وَبِحَمْدِهِ</p>
+          <p class="phon">Soubhana Llahi wa bihamdih</p>
+        </div>
+        <div>
+          <span class="etiquette">Traduction du sens</span>
+          <p class="sens">&laquo;&nbsp;Gloire et purete a Allah, et a Lui la louange.&nbsp;&raquo;</p>
+        </div>
+        <div>
+          <span class="etiquette">Ce que dit le hadith</span>
+          <p class="clair">
+            Celui qui la dit cent fois dans la journee, ses fautes sont effacees,
+            seraient-elles aussi nombreuses que l'ecume de la mer.
+          </p>
+        </div>
+        <div class="source">
+          <span class="lab">Source</span>
+          <span class="val">Rapporte par al-Boukhari et Mouslim, d'apres Abou Hourayra.</span>
+        </div>
+      </section>
+
+      <!-- 5 : la ilaha illa Llah wahdahu -->
+      <section class="etape" data-etape="5">
+        <span class="eyebrow">Invocation 3 sur 3</span>
+        <div>
+          <p class="ar" lang="ar" dir="rtl">لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ</p>
+          <p class="phon">La ilaha illa Llahu wahdahu la sharika lah, lahu l-moulkou wa lahu l-hamd, wa houwa 'ala koulli chay'in qadir</p>
+        </div>
+        <div>
+          <span class="etiquette">Traduction du sens</span>
+          <p class="sens">&laquo;&nbsp;Il n'y a de divinite qu'Allah, Seul, sans associe. A Lui la royaute, a Lui la louange, et Il est capable de toute chose.&nbsp;&raquo;</p>
+        </div>
+        <div class="source">
+          <span class="lab">Source</span>
+          <span class="val">Rapporte par al-Boukhari et Mouslim, d'apres Abou Hourayra.</span>
+        </div>
+      </section>
+
+      <!-- 6 : quand les dire -->
+      <section class="etape" data-etape="6">
+        <span class="eyebrow">Quand les dire</span>
+        <p class="clair">
+          Les deux dernieres sont donnees dans les hadiths pour <strong>la journee</strong>,
+          cent fois. Beaucoup de gens les placent le matin, pour ne pas les oublier.
+          La premiere, elle, est rapportee pour le matin et pour le soir.
+        </p>
+        <p class="prudence">
+          Sur l'heure exacte du matin, les avis different : beaucoup les disent entre
+          la priere du fajr et le lever du soleil, d'autres plus tard. Ce site ne tranche pas.
+          Pour ta situation, demande a un savant.
+        </p>
+      </section>
+
+      <!-- 7 : ce que tu retiens -->
+      <section class="etape" data-etape="7">
+        <div class="retenir">
+          <span class="eyebrow">Ce que tu retiens</span>
+          <p class="q">Une seule suffit<br>pour commencer.</p>
+          <p class="r">Cette carte te reviendra dans deux jours.</p>
+        </div>
+        <p class="clair">
+          Si tu ne dois en garder qu'une aujourd'hui, garde la plus courte&nbsp;:
+          <em lang="ar" dir="rtl">سُبْحَانَ اللَّهِ وَبِحَمْدِهِ</em>. Trois mots, et tu peux
+          la dire en marchant.
+        </p>
+      </section>
+
+      <!-- 8 : fin -->
+      <section class="etape fin" data-etape="8">
+        <svg width="46" height="46" viewBox="0 0 24 24" fill="#c9a84c" aria-hidden="true">
+          <path d="M12 2 L22 12 L12 22 L2 12 Z M5 5 H19 V19 H5 Z"/>
+        </svg>
+        <h2>Lecon terminee</h2>
+        <p data-r="fin-texte">Tu connais maintenant trois invocations, chacune avec sa source.</p>
+        <p data-r="fin-suite" class="suite"></p>
+        <a class="btn" href="index.html">Continuer</a>
+        <a class="btn fantome" href="chemin.html">Voir mon chemin</a>
+      </section>
+
+    </div>
+
+    <div class="bas-lecon" data-r="bas" hidden>
+      <button class="btn" data-r="suivant" type="button">Suivant</button>
+    </div>
+
+  </main>
+
+  <footer class="pied">
+    <p class="note-pied">
+      <strong>Sur les numeros de hadith&nbsp;:</strong> quand je ne suis pas certain du numero
+      d'une edition, je donne le recueil et le rapporteur, sans chiffre. Cela suffit pour
+      retrouver le hadith, et c'est preferable a un numero approximatif.
+      Une erreur reperee&nbsp;? Signale-la, elle sera corrigee.
+    </p>
+    <p class="note-pied">
+      Les traductions sont des traductions du <em>sens</em>.
+      Une question personnelle&nbsp;? <a href="https://halalgpt.fr">Pose-la sur halalgpt.fr</a>,
+      et pour un cas qui t'engage, demande a un savant.
+    </p>
+    <span class="t">Les autres sites de la famille</span>
+    <nav class="freres" aria-label="Sites partenaires">
+      <a href="https://halalgpt.fr"><span class="d">halalgpt.fr</span><span class="q">L'IA musulmane, pour poser une question</span></a>
+      <a href="https://halalcheck.fr"><span class="d">halalcheck.fr</span><span class="q">Scanner un produit en magasin</span></a>
+      <a href="https://voyageshalal.fr"><span class="d">voyageshalal.fr</span><span class="q">Voyager halal</span></a>
+      <a href="https://gohalaltravel.com"><span class="d">gohalaltravel.com</span><span class="q">Halal travel guide (EN)</span></a>
+    </nav>
+  </footer>
+
+</div>
+</template>
+
+<template data-vue="chemin">
+<div class="page">
+
+  <header class="barre">
+    <a class="marque" href="index.html">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="etoile" aria-hidden="true">
+        <path d="M12 2 L22 12 L12 22 L2 12 Z M5 5 H19 V19 H5 Z"/>
+      </svg>
+      Islam pas a pas
+    </a>
+    <div class="droite">
+      <a class="jeton" href="index.html">Aujourd'hui</a>
+    </div>
+  </header>
+
+  <main class="contenu" id="principal">
+
+    <div class="salut">
+      <span class="date">Mon chemin</span>
+      <h1>Ce que tu as appris</h1>
+    </div>
+
+    <div class="compteur">
+      <span class="gros" data-r="compteur-n">0</span>
+      <span class="leg" data-r="compteur-txt">enseignement appris.</span>
+    </div>
+
+    <section class="bloc">
+      <h2 class="titre-bloc" data-r="titre-mois">Ce mois-ci</h2>
+      <div class="mois-cadre">
+        <div class="jours-sem" aria-hidden="true">
+          <span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span><span>D</span>
+        </div>
+        <div class="mois" data-r="mois"></div>
+      </div>
+      <p class="note-pied" data-r="legende-mois">Chaque etoile doree est un jour ou tu es venu apprendre.</p>
+    </section>
+
+    <section class="bloc">
+      <h2 class="titre-bloc">Ton point de depart</h2>
+      <div data-r="niveau-bloc"></div>
+    </section>
+
+    <section class="bloc">
+      <h2 class="titre-bloc">Tes parcours</h2>
+      <div class="parcours" data-r="parcours"></div>
+    </section>
+
+    <section class="bloc">
+      <h2 class="titre-bloc">Prochaines revisions</h2>
+      <div class="liste" data-r="revisions"></div>
+    </section>
+
+    <a class="btn fantome" href="index.html">Retour a aujourd'hui</a>
+
+  </main>
+
+  <footer class="pied">
+    <span class="t">Les autres sites de la famille</span>
+    <nav class="freres" aria-label="Sites partenaires">
+      <a href="https://halalgpt.fr"><span class="d">halalgpt.fr</span><span class="q">L'IA musulmane, pour poser une question</span></a>
+      <a href="https://halalcheck.fr"><span class="d">halalcheck.fr</span><span class="q">Scanner un produit en magasin</span></a>
+      <a href="https://voyageshalal.fr"><span class="d">voyageshalal.fr</span><span class="q">Voyager halal</span></a>
+      <a href="https://gohalaltravel.com"><span class="d">gohalaltravel.com</span><span class="q">Halal travel guide (EN)</span></a>
+    </nav>
+    <p class="note-pied">Ta progression reste sur ton telephone. Aucun compte, aucun envoi.</p>
+  </footer>
+
+</div>
+</template>
+
+<script>
+/* =========================================================
+   Islam pas a pas - logique commune
+   Aucune dependance, aucun build. La progression reste sur
+   l'appareil de l'utilisateur (localStorage), rien n'est envoye.
+   ========================================================= */
+
+(function (global) {
+  'use strict';
+
+  var CLE = 'ipp.progression.v1';
+
+  /* ---------- catalogue ---------------------------------------------------
+     publiee:false = la lecon n'existe pas encore. On l'affiche honnetement
+     comme "bientot" plutot que de faire croire a du contenu.
+     ---------------------------------------------------------------------- */
+
+  var PARCOURS = [
+    { id: 'sourates',    nom: 'Le sens des sourates' },
+    { id: 'priere',      nom: 'La priere pas a pas' },
+    { id: 'foi',         nom: 'Les bases de la foi' },
+    { id: 'invocations', nom: 'Les invocations du jour' },
+    { id: 'memoriser',   nom: 'Memoriser le Coran' }
+  ];
+
+  var CATALOGUE = [
+    {
+      id: 'al-fatiha',
+      titre: 'Sourate Al-Fatiha, verset par verset',
+      url: 'lecon-al-fatiha.html',
+      parcours: 'sourates',
+      minutes: 5,
+      cartes: 10,
+      acquis: 7,
+      publiee: true,
+      resume: 'Tu la recites dans chaque priere. Aujourd\'hui, tu vas comprendre '
+            + 'chacun de ses sept versets.'
+    },
+    {
+      id: 'invocations-matin',
+      titre: 'Trois invocations pour commencer ta journee',
+      url: 'lecon-invocations-matin.html',
+      parcours: 'invocations',
+      minutes: 5,
+      cartes: 8,
+      acquis: 3,
+      publiee: true,
+      resume: 'Trois phrases courtes, toutes rapportees par al-Boukhari et Mouslim. '
+            + 'Apprends-en une seule si tu veux : c\'est deja beaucoup.'
+    }
+  ];
+
+  function nomParcours(idParcours) {
+    for (var i = 0; i < PARCOURS.length; i++) {
+      if (PARCOURS[i].id === idParcours) { return PARCOURS[i].nom; }
+    }
+    return '';
+  }
+
+  /* ---------- dates ------------------------------------------------------ */
+
+  function pad(n) { return (n < 10 ? '0' : '') + n; }
+
+  function enCle(d) {
+    return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate());
+  }
+
+  function aujourdhui() { return enCle(new Date()); }
+
+  function depuisCle(s) {
+    var p = s.split('-');
+    return new Date(Number(p[0]), Number(p[1]) - 1, Number(p[2]));
+  }
+
+  function plusDeJours(s, n) {
+    var d = depuisCle(s);
+    d.setDate(d.getDate() + n);
+    return enCle(d);
+  }
+
+  var JOURS_FR = ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'];
+  var MOIS_FR = ['janvier', 'fevrier', 'mars', 'avril', 'mai', 'juin',
+                 'juillet', 'aout', 'septembre', 'octobre', 'novembre', 'decembre'];
+
+  function dateLongue(d) {
+    return JOURS_FR[d.getDay()] + ' ' + d.getDate() + ' ' + MOIS_FR[d.getMonth()];
+  }
+
+  /* ---------- stockage --------------------------------------------------- */
+
+  function vide() { return { v: 1, lecons: {}, jours: [] }; }
+
+  function charger() {
+    try {
+      var brut = global.localStorage.getItem(CLE);
+      if (!brut) { return vide(); }
+      var d = JSON.parse(brut);
+      if (!d || typeof d !== 'object') { return vide(); }
+      if (!d.lecons || typeof d.lecons !== 'object') { d.lecons = {}; }
+      if (Object.prototype.toString.call(d.jours) !== '[object Array]') { d.jours = []; }
+      return d;
+    } catch (e) {
+      // Navigation privee ou stockage refuse : on continue sans memoire.
+      return vide();
+    }
+  }
+
+  function sauver(d) {
+    try {
+      global.localStorage.setItem(CLE, JSON.stringify(d));
+    } catch (e) { /* on n'empeche jamais la lecture d'une lecon */ }
+  }
+
+  /* ---------- niveau de depart --------------------------------------------
+     Trois questions, une seule fois, sans compte et sans inscription.
+     But : ne pas faire apprendre a quelqu'un ce qu'il sait deja.
+     Aucune reponse n'est "mauvaise" : ces valeurs servent a choisir par ou
+     commencer et sur quel ton accueillir, jamais a noter la personne.
+     ---------------------------------------------------------------------- */
+
+  var CLE_NIVEAU = 'ipp.niveau.v1';
+
+  function niveau() {
+    try {
+      var brut = global.localStorage.getItem(CLE_NIVEAU);
+      if (!brut) { return null; }
+      var d = JSON.parse(brut);
+      return (d && typeof d === 'object' && d.priere) ? d : null;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function enregistrerNiveau(reponses) {
+    var d = {
+      priere:  reponses.priere  || 'inconnu',   // non | parfois | oui
+      fatiha:  reponses.fatiha  || 'inconnu',   // non | incertain | oui
+      memoire: reponses.memoire || 'inconnu',   // aucune | quelques | beaucoup
+      faitLe:  aujourdhui()
+    };
+    try { global.localStorage.setItem(CLE_NIVEAU, JSON.stringify(d)); } catch (e) { /* sans memoire, on continue */ }
+    return d;
+  }
+
+  function oublierNiveau() {
+    try { global.localStorage.removeItem(CLE_NIVEAU); } catch (e) { /* rien a faire */ }
+  }
+
+  // Sert uniquement au ton de l'accueil et a l'ordre des lecons.
+  function profil() {
+    var n = niveau();
+    if (!n) { return 'inconnu'; }
+    // Questions passees : on ne suppose rien et on garde un ton neutre.
+    if (n.priere === 'inconnu' && n.fatiha === 'inconnu') { return 'inconnu'; }
+    if (n.fatiha === 'oui' && n.memoire === 'beaucoup') { return 'avance'; }
+    if (n.fatiha === 'oui' || n.priere === 'oui' || n.memoire === 'quelques') { return 'intermediaire'; }
+    return 'debutant';
+  }
+
+  /* ---------- progression ------------------------------------------------ */
+
+  // Espacement des revisions, en jours, tour apres tour.
+  var ESPACEMENT = [2, 7, 21, 60];
+
+  function fiche(id) { return charger().lecons[id] || null; }
+
+  function estFaite(id) { return !!fiche(id); }
+
+  function terminer(id) {
+    var d = charger();
+    var jour = aujourdhui();
+    var f = d.lecons[id] || { tours: 0 };
+    f.tours = (f.tours || 0) + 1;
+    f.faitLe = jour;
+    var pas = ESPACEMENT[Math.min(f.tours - 1, ESPACEMENT.length - 1)];
+    f.revoirLe = plusDeJours(jour, pas);
+    d.lecons[id] = f;
+    if (d.jours.indexOf(jour) === -1) { d.jours.push(jour); }
+    sauver(d);
+    return { pas: pas };
+  }
+
+  function jours() { return charger().jours.slice().sort(); }
+
+  function serie() {
+    var faits = {};
+    var liste = charger().jours;
+    for (var i = 0; i < liste.length; i++) { faits[liste[i]] = true; }
+
+    var curseur = aujourdhui();
+    // La serie tient encore si l'on a travaille hier mais pas encore aujourd'hui.
+    if (!faits[curseur]) {
+      curseur = plusDeJours(curseur, -1);
+      if (!faits[curseur]) { return 0; }
+    }
+    var n = 0;
+    while (faits[curseur]) {
+      n++;
+      curseur = plusDeJours(curseur, -1);
+    }
+    return n;
+  }
+
+  function aRevoir() {
+    var d = charger();
+    var jour = aujourdhui();
+    var sortie = [];
+    for (var i = 0; i < CATALOGUE.length; i++) {
+      var l = CATALOGUE[i];
+      var f = d.lecons[l.id];
+      if (f && f.revoirLe && f.revoirLe <= jour) { sortie.push(l); }
+    }
+    return sortie;
+  }
+
+  function acquis() {
+    var d = charger();
+    var n = 0;
+    for (var i = 0; i < CATALOGUE.length; i++) {
+      if (d.lecons[CATALOGUE[i].id]) { n += CATALOGUE[i].acquis; }
+    }
+    return n;
+  }
+
+  function publiees() {
+    return CATALOGUE.filter(function (l) { return l.publiee; });
+  }
+
+  // Ordre des lecons, adapte au niveau declare.
+  // Concretement : celui qui connait deja Al-Fatiha par coeur ne la recoit pas
+  // en premiere lecon. C'est tout l'interet des trois questions d'accueil.
+  function ordreLecons() {
+    var libres = publiees().slice();
+    var n = niveau();
+    if (!n) { return libres; }
+
+    var recule = {};
+    if (n.fatiha === 'oui') { recule['al-fatiha'] = true; }
+
+    return libres.sort(function (a, b) {
+      return (recule[a.id] ? 1 : 0) - (recule[b.id] ? 1 : 0);
+    });
+  }
+
+  // La lecon proposee aujourd'hui : la premiere non faite, sinon la premiere a revoir.
+  function leconDuJour() {
+    var libres = ordreLecons();
+    for (var i = 0; i < libres.length; i++) {
+      if (!estFaite(libres[i].id)) { return { lecon: libres[i], mode: 'neuve' }; }
+    }
+    var r = aRevoir();
+    if (r.length) { return { lecon: r[0], mode: 'revision' }; }
+    return null;
+  }
+
+  function parcoursAvecEtat() {
+    var d = charger();
+    return PARCOURS.map(function (p) {
+      var dedans = CATALOGUE.filter(function (l) { return l.parcours === p.id && l.publiee; });
+      var faites = dedans.filter(function (l) { return !!d.lecons[l.id]; });
+      return {
+        id: p.id,
+        nom: p.nom,
+        total: dedans.length,
+        faites: faites.length,
+        pret: dedans.length > 0
+      };
+    });
+  }
+
+  global.IPP = {
+    PARCOURS: PARCOURS,
+    CATALOGUE: CATALOGUE,
+    nomParcours: nomParcours,
+    aujourdhui: aujourdhui,
+    dateLongue: dateLongue,
+    depuisCle: depuisCle,
+    plusDeJours: plusDeJours,
+    enCle: enCle,
+    fiche: fiche,
+    estFaite: estFaite,
+    terminer: terminer,
+    jours: jours,
+    serie: serie,
+    aRevoir: aRevoir,
+    acquis: acquis,
+    publiees: publiees,
+    ordreLecons: ordreLecons,
+    leconDuJour: leconDuJour,
+    parcoursAvecEtat: parcoursAvecEtat,
+    niveau: niveau,
+    enregistrerNiveau: enregistrerNiveau,
+    oublierNiveau: oublierNiveau,
+    profil: profil
+  };
+}(window));
+
+
+/* =========================================================
+   Aides d'affichage partagees
+   ========================================================= */
+
+function ippEtoile(taille, couleur) {
+  return '<svg class="etoile" width="' + taille + '" height="' + taille + '" viewBox="0 0 24 24" '
+       + 'fill="' + (couleur || 'currentColor') + '" aria-hidden="true">'
+       + '<path d="M12 2 L22 12 L12 22 L2 12 Z M5 5 H19 V19 H5 Z"/></svg>';
+}
+
+function ippEchappe(s) {
+  return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+// Les elements sont vises par [data-r="..."] et non par id : la meme vue peut
+// ainsi exister plusieurs fois dans un document (utile pour l'apercu d'un seul
+// fichier) sans collision d'identifiants.
+function ippViseur(racine) {
+  var r = racine || document;
+  return function (nom) { return r.querySelector('[data-r="' + nom + '"]'); };
+}
+
+var IPP_MOIS = ['Janvier', 'Fevrier', 'Mars', 'Avril', 'Mai', 'Juin',
+                'Juillet', 'Aout', 'Septembre', 'Octobre', 'Novembre', 'Decembre'];
+
+
+/* =========================================================
+   Vue 1 : l'accueil, "Aujourd'hui"
+   ========================================================= */
+
+function ippRendreAccueil(racine) {
+  'use strict';
+  var q = ippViseur(racine);
+  if (!q('carte')) { return; }
+
+  // Premiere visite : les trois questions passent avant tout le reste, pour
+  // demarrer au bon endroit. Le corps de l'accueil reste dans le HTML (donc
+  // lisible par Google et sans JavaScript), on le masque seulement le temps
+  // des questions.
+  var corps = q('accueil-corps');
+  if (!IPP.niveau() && q('diag')) {
+    if (corps) { corps.hidden = true; }
+    ippDemarrerDiagnostic(racine, function () {
+      if (corps) { corps.hidden = false; }
+      ippRendreAccueil(racine);
+    });
+    return;
+  }
+  if (corps) { corps.hidden = false; }
+  if (q('diag')) { q('diag').hidden = true; }
+
+  // --- date et salutation ---
+  var maintenant = new Date();
+  var heure = maintenant.getHours();
+  q('date').textContent = IPP.dateLongue(maintenant);
+  q('salut').textContent = (heure < 5) ? 'Bonne nuit' : (heure < 18 ? 'Bonjour' : 'Bonsoir');
+
+  // --- serie de jours ---
+  var n = IPP.serie();
+  var bloc = q('serie');
+  var jeton = q('jeton');
+  if (n > 0) {
+    bloc.hidden = false;
+    q('serie-n').textContent = String(n);
+    q('serie-txt').innerHTML = (n === 1)
+      ? 'premier jour.<br>Reviens demain, c\'est la que tout se joue.'
+      : 'jours d\'affilee.<br>Ne casse pas la chaine.';
+    jeton.hidden = false;
+    jeton.innerHTML = ippEtoile(14, '#c9a84c') + '<span>' + n + '</span>';
+    jeton.setAttribute('title', n + (n === 1 ? ' jour' : ' jours') + ' d\'affilee');
+  } else {
+    bloc.hidden = true;
+    jeton.hidden = true;
+  }
+
+  // --- la lecon du jour ---
+  var choix = IPP.leconDuJour();
+  var carte = q('carte');
+
+  if (!choix) {
+    // Tout est fait et rien n'est a revoir : on le dit franchement.
+    carte.innerHTML =
+      '<span class="eyebrow">C\'est fait pour aujourd\'hui</span>'
+      + '<h2>Tu es a jour</h2>'
+      + '<p class="clair">Toutes les lecons disponibles sont terminees, et aucune revision '
+      + 'n\'est prevue aujourd\'hui. Reviens demain : la prochaine lecon arrive bientot.</p>'
+      + '<a class="btn fantome" href="chemin.html">Voir mon chemin</a>';
+  } else {
+    var l = choix.lecon;
+    var revision = (choix.mode === 'revision');
+    q('carte-eyebrow').textContent = revision ? 'Ta revision du jour' : 'Ta lecon du jour';
+    q('carte-titre').textContent = l.titre;
+    q('carte-meta').innerHTML =
+      '<span>' + l.minutes + ' min</span><span class="puce"></span>'
+      + '<span>' + l.cartes + ' cartes</span><span class="puce"></span>'
+      + '<span>' + ippEchappe(IPP.nomParcours(l.parcours)) + '</span>';
+    // Toujours reecrit : sinon le resume de la premiere lecon resterait affiche
+    // sous le titre d'une autre lecon.
+    q('carte-pitch').textContent = revision
+      ? 'Tu l\'as deja vue. On la repasse vite pour qu\'elle tienne dans la duree.'
+      : (l.resume || '');
+    var b = q('carte-btn');
+    b.setAttribute('href', l.url);
+    b.textContent = revision ? 'Revoir →' : 'Commencer →';
+  }
+
+  // --- rendre visible le fait que l'accueil suit le niveau declare ---
+  var note = q('niveau-note');
+  if (note) {
+    var p = IPP.profil();
+    if (p === 'avance') {
+      note.textContent = 'D\'apres tes reponses, Al-Fatiha passe apres : tu la connais deja par coeur.';
+      note.hidden = false;
+    } else if (p === 'debutant' || p === 'intermediaire') {
+      note.textContent = 'Choisie d\'apres tes trois reponses du depart.';
+      note.hidden = false;
+    } else {
+      note.hidden = true;
+    }
+  }
+
+  // --- revisions dues aujourd'hui ---
+  var dues = IPP.aRevoir();
+  if (dues.length) {
+    var html = '';
+    for (var i = 0; i < dues.length; i++) {
+      var f = IPP.fiche(dues[i].id);
+      html += '<a class="ligne" href="' + dues[i].url + '">'
+            + ippEtoile(17, '#c9a84c')
+            + '<span><span class="t">' + ippEchappe(dues[i].titre) + '</span>'
+            + '<span class="s">Vue le ' + IPP.dateLongue(IPP.depuisCle(f.faitLe)) + '</span></span>'
+            + '<span class="fl" aria-hidden="true">&rsaquo;</span></a>';
+    }
+    q('revisions').innerHTML = html;
+  }
+
+  // --- parcours ---
+  q('parcours').innerHTML = ippListeParcours('chemin.html');
+}
+
+
+/* =========================================================
+   Vue 2 : le chemin
+   ========================================================= */
+
+function ippRendreChemin(racine) {
+  'use strict';
+  var q = ippViseur(racine);
+  if (!q('mois')) { return; }
+
+  // --- compteur ---
+  var n = IPP.acquis();
+  q('compteur-n').textContent = String(n);
+  q('compteur-txt').innerHTML = (n === 0)
+    ? 'Rien encore.<br>Ta premiere lecon t\'attend.'
+    : (n === 1 ? 'enseignement appris.<br>Avec sa source verifiee.'
+               : 'enseignements appris.<br>Chacun avec sa source verifiee.');
+
+  // --- calendrier du mois en cours ---
+  var maintenant = new Date();
+  var annee = maintenant.getFullYear();
+  var mois = maintenant.getMonth();
+  q('titre-mois').textContent = IPP_MOIS[mois] + ' ' + annee;
+
+  var faits = {};
+  var liste = IPP.jours();
+  for (var i = 0; i < liste.length; i++) { faits[liste[i]] = true; }
+
+  // getDay() : 0 = dimanche. Les semaines commencent le lundi.
+  var decalage = (new Date(annee, mois, 1).getDay() + 6) % 7;
+  var nbJours = new Date(annee, mois + 1, 0).getDate();
+  var ceJour = maintenant.getDate();
+
+  var html = '';
+  for (var v = 0; v < decalage; v++) {
+    html += '<div class="jour vide-case" aria-hidden="true"></div>';
+  }
+  for (var d = 1; d <= nbJours; d++) {
+    var fait = !!faits[IPP.enCle(new Date(annee, mois, d))];
+    var couleur = fait ? '#c9a84c' : 'rgba(253,250,243,0.10)';
+    var titre = d + ' ' + IPP_MOIS[mois].toLowerCase() + (fait ? ' : lecon faite' : '');
+    var contour = (d === ceJour && !fait)
+      ? ' stroke="rgba(201,168,76,0.55)" stroke-width="1.5"' : '';
+    html += '<div class="jour" title="' + titre + '">'
+          + '<svg width="100%" height="100%" viewBox="0 0 24 24" role="img" aria-label="' + titre + '">'
+          + '<path d="M12 2 L22 12 L12 22 L2 12 Z M5 5 H19 V19 H5 Z" fill="' + couleur + '"' + contour + '/>'
+          + '</svg></div>';
+  }
+  q('mois').innerHTML = html;
+
+  if (!liste.length) {
+    q('legende-mois').textContent =
+      'Aucun jour rempli pour l\'instant. Chaque etoile doree sera un jour ou tu es venu apprendre.';
+  }
+
+  // --- rappel du point de depart, et possibilite de le refaire ---
+  ippRendrePointDepart(q);
+
+  // --- parcours (sans lien : on est deja sur la page) ---
+  q('parcours').innerHTML = ippListeParcours(null);
+
+  // --- revisions a venir ---
+  var prevues = [];
+  var pubs = IPP.publiees();
+  for (var k = 0; k < pubs.length; k++) {
+    var f = IPP.fiche(pubs[k].id);
+    if (f && f.revoirLe) { prevues.push({ lecon: pubs[k], quand: f.revoirLe }); }
+  }
+  prevues.sort(function (a, b) { return a.quand < b.quand ? -1 : 1; });
+
+  if (!prevues.length) {
+    q('revisions').innerHTML = '<p class="vide">Aucune revision programmee. Elles apparaissent '
+                             + 'automatiquement des que tu termines une lecon.</p>';
+  } else {
+    var jour = IPP.aujourdhui();
+    var h = '';
+    for (var m = 0; m < prevues.length; m++) {
+      var due = prevues[m].quand <= jour;
+      h += '<a class="ligne" href="' + prevues[m].lecon.url + '">'
+         + ippEtoile(17, due ? '#c9a84c' : '#6c8271')
+         + '<span><span class="t">' + ippEchappe(prevues[m].lecon.titre) + '</span>'
+         + '<span class="s">' + (due ? 'A revoir aujourd\'hui'
+             : 'Le ' + IPP.dateLongue(IPP.depuisCle(prevues[m].quand))) + '</span></span>'
+         + '<span class="fl" aria-hidden="true">&rsaquo;</span></a>';
+    }
+    q('revisions').innerHTML = h;
+  }
+}
+
+// Rappel de ce que la personne a declare au depart, et moyen de le corriger.
+// On affiche ses reponses telles quelles, sans note ni jugement.
+function ippRendrePointDepart(q) {
+  var zone = q('niveau-bloc');
+  if (!zone) { return; }
+
+  var MOTS = {
+    priere:  { non: 'Pas encore', parfois: 'Pas les cinq', oui: 'Les cinq' },
+    fatiha:  { non: 'Pas encore', incertain: 'Sans etre sur', oui: 'Par coeur' },
+    memoire: { aucune: 'Aucune', quelques: 'Quelques courtes', beaucoup: 'Plus de dix' }
+  };
+  function mot(champ, valeur) { return MOTS[champ][valeur] || 'Non precise'; }
+
+  var n = IPP.niveau();
+
+  // Le lien pointe vers l'accueil : on efface le niveau, et les trois
+  // questions reapparaissent d'elles-memes a l'arrivee.
+  var lien = '<a class="btn fantome" href="index.html" data-r="niveau-refaire">'
+           + (n ? 'Mon niveau a change' : 'Repondre aux 3 questions') + '</a>';
+
+  if (!n) {
+    zone.innerHTML = '<div class="niveau-carte">'
+      + '<p class="note-pied">Tu n\'as pas encore repondu aux trois questions d\'accueil. '
+      + 'Elles servent seulement a ne pas te faire apprendre ce que tu sais deja.</p>'
+      + lien + '</div>';
+  } else {
+    zone.innerHTML = '<div class="niveau-carte"><dl>'
+      + '<div class="ligne-n"><dt>La priere</dt><dd>' + mot('priere', n.priere) + '</dd></div>'
+      + '<div class="ligne-n"><dt>Al-Fatiha</dt><dd>' + mot('fatiha', n.fatiha) + '</dd></div>'
+      + '<div class="ligne-n"><dt>Sourates par coeur</dt><dd>' + mot('memoire', n.memoire) + '</dd></div>'
+      + '</dl>' + lien + '</div>';
+  }
+
+  var refaire = q('niveau-refaire');
+  if (refaire) {
+    // On n'empeche pas la navigation : on efface juste avant qu'elle ait lieu.
+    refaire.addEventListener('click', function () { IPP.oublierNiveau(); });
+  }
+}
+
+// Liste des parcours. Les parcours sans lecon publiee sont annonces "Bientot"
+// plutot que d'afficher un faux compteur.
+function ippListeParcours(lien) {
+  var etats = IPP.parcoursAvecEtat();
+  var out = '';
+  for (var j = 0; j < etats.length; j++) {
+    var p = etats[j];
+    if (p.pret) {
+      var pct = p.total ? Math.round((p.faites / p.total) * 100) : 0;
+      var ouvre = lien ? '<a class="pc" href="' + lien + '">' : '<div class="pc">';
+      var ferme = lien ? '</a>' : '</div>';
+      out += ouvre
+           + '<span class="haut"><span class="nom">' + ippEchappe(p.nom) + '</span>'
+           + '<span class="cpt">' + p.faites + ' / ' + p.total + '</span></span>'
+           + '<span class="barre-p"><span style="width:' + pct + '%"></span></span>'
+           + ferme;
+    } else {
+      out += '<div class="ligne inerte">' + ippEtoile(17)
+           + '<span><span class="t">' + ippEchappe(p.nom) + '</span>'
+           + '<span class="s">Bientot</span></span></div>';
+    }
+  }
+  return out;
+}
+
+
+/* =========================================================
+   Vue 3 : le lecteur de lecon, commun a toutes les lecons
+
+   La page contient toutes ses cartes en clair dans le HTML : sans
+   JavaScript, la lecon se lit d'un seul tenant, et c'est ce que Google
+   indexe. Avec JavaScript, on la pilote carte par carte. La derniere
+   carte est l'ecran de fin.
+   ========================================================= */
+
+function ippDemarrerLecon(id, racine) {
+  'use strict';
+  var q = ippViseur(racine);
+  var zone = q('etapes');
+  if (!zone) { return; }
+
+  var etapes = zone.querySelectorAll('.etape');
+  var TOTAL = etapes.length;
+  var CONTENU = TOTAL - 1;
+  var courante = 1;
+  var enregistree = false;
+
+  zone.classList.add('pilote');
+
+  var bas = q('bas');
+  var bouton = q('suivant');
+  bas.hidden = false;
+
+  var html = '';
+  for (var i = 0; i < CONTENU; i++) { html += '<span class="pt"></span>'; }
+  q('points').innerHTML = html;
+  var segments = q('points').querySelectorAll('.pt');
+
+  function afficher(defiler) {
+    for (var a = 0; a < etapes.length; a++) {
+      etapes[a].classList.toggle('actif',
+        Number(etapes[a].getAttribute('data-etape')) === courante);
+    }
+    for (var b = 0; b < segments.length; b++) {
+      segments[b].classList.toggle('faite', b < Math.min(courante, CONTENU));
+    }
+
+    if (courante === TOTAL) {
+      bas.hidden = true;
+    } else {
+      bouton.textContent = (courante === CONTENU) ? 'Terminer' : 'Suivant';
+    }
+
+    // Sans cela on resterait au milieu du texte de la carte precedente.
+    if (defiler) {
+      var haut = zone.getBoundingClientRect().top + window.pageYOffset - 70;
+      window.scrollTo(0, Math.max(0, haut));
+    }
+  }
+
+  function cloturer() {
+    if (enregistree) { return; }
+    enregistree = true;
+
+    var r = IPP.terminer(id);
+    var serie = IPP.serie();
+    var total = IPP.acquis();
+    var reste = IPP.publiees().filter(function (l) { return !IPP.estFaite(l.id); }).length;
+
+    var phrase = 'Tu connais maintenant ' + total + ' enseignements, chacun avec sa source. '
+               + 'Cette lecon reviendra dans ' + r.pas + (r.pas > 1 ? ' jours.' : ' jour.');
+    if (serie > 1) { phrase += ' ' + serie + ' jours d\'affilee.'; }
+
+    var cible = q('fin-texte');
+    if (cible) { cible.textContent = phrase; }
+
+    var suite = q('fin-suite');
+    if (suite) {
+      suite.textContent = reste
+        ? (reste === 1 ? 'Une autre lecon t\'attend deja.'
+                       : reste + ' autres lecons t\'attendent deja.')
+        : 'C\'est la derniere lecon disponible. La prochaine arrive bientot.';
+    }
+  }
+
+  bouton.addEventListener('click', function () {
+    if (courante >= TOTAL) { return; }
+    courante++;
+    if (courante === TOTAL) { cloturer(); }
+    afficher(true);
+  });
+
+  afficher(false);
+}
+
+
+/* =========================================================
+   Vue 0 : les trois questions d'accueil
+
+   Objectif : ne pas faire apprendre a quelqu'un ce qu'il sait deja.
+   Trois questions, quinze secondes, aucun compte, et la possibilite de
+   passer a tout moment.
+
+   Regle de ton, non negociable : aucune reponse n'est mauvaise. Celui qui
+   repond "non" partout doit se sentir accueilli. C'est peut-etre un converti
+   d'hier, et c'est exactement pour lui que ce site existe.
+   ========================================================= */
+
+var IPP_BILANS = {
+  debutant: {
+    titre: 'On commence par le debut.',
+    message: 'C\'est exactement pour cela que ce site existe. Cinq minutes par jour, '
+           + 'et chaque mot avec sa source. Rien a rattraper, rien a prouver.'
+  },
+  intermediaire: {
+    titre: 'Tu as deja des bases.',
+    message: 'On ne va pas te refaire ce que tu sais. On va surtout rendre plus clair '
+           + 'ce que tu recites deja.'
+  },
+  avance: {
+    titre: 'Tu es en avance sur le site.',
+    message: 'Autant te le dire franchement : il n\'y a que deux lecons ici aujourd\'hui, '
+           + 'et tu connais deja une bonne partie de la premiere. On commence donc par '
+           + 'les invocations, et j\'ecris la suite.'
+  },
+  inconnu: {
+    titre: 'Comme tu veux.',
+    message: 'Tu pourras repondre a ces questions plus tard depuis "Mon chemin". '
+           + 'En attendant, on commence par le commencement.'
+  }
+};
+
+function ippDemarrerDiagnostic(racine, quandFini) {
+  'use strict';
+  var q = ippViseur(racine);
+  var zone = q('diag');
+  if (!zone) { return; }
+
+  var questions = zone.querySelectorAll('.q-etape');
+  var TOTAL = questions.length;
+  var courante = 1;
+  var reponses = {};
+
+  zone.hidden = false;
+
+  // Points de progression
+  var html = '';
+  for (var i = 0; i < TOTAL; i++) { html += '<span class="pt"></span>'; }
+  q('diag-points').innerHTML = html;
+  var segments = q('diag-points').querySelectorAll('.pt');
+
+  function afficher() {
+    for (var a = 0; a < questions.length; a++) {
+      questions[a].classList.toggle('actif',
+        Number(questions[a].getAttribute('data-q')) === courante);
+    }
+    for (var b = 0; b < segments.length; b++) {
+      segments[b].classList.toggle('faite', b < courante);
+    }
+  }
+
+  function conclure(passe) {
+    var enregistre = IPP.enregistrerNiveau(passe ? {} : reponses);
+    var bilan = IPP_BILANS[IPP.profil()] || IPP_BILANS.inconnu;
+
+    q('diag-questions').hidden = true;
+    q('diag-passer').hidden = true;
+    q('diag-points').innerHTML = '';
+    q('diag-titre').textContent = bilan.titre;
+    q('diag-message').textContent = bilan.message;
+
+    var suite = IPP.leconDuJour();
+    var bouton = q('diag-go');
+    bouton.textContent = suite ? 'Commencer : ' + suite.lecon.titre : 'Voir mon chemin';
+
+    q('diag-fin').hidden = false;
+    return enregistre;
+  }
+
+  // Un clic sur une reponse enregistre et passe a la suite.
+  zone.addEventListener('click', function (e) {
+    var opt = e.target.closest ? e.target.closest('.opt') : null;
+    if (!opt || !zone.contains(opt)) { return; }
+    var etape = opt.closest('.q-etape');
+    reponses[etape.getAttribute('data-cle')] = opt.getAttribute('data-val');
+
+    if (courante >= TOTAL) { conclure(false); return; }
+    courante++;
+    afficher();
+  });
+
+  q('diag-passer').addEventListener('click', function () { conclure(true); });
+
+  q('diag-go').addEventListener('click', function () {
+    zone.hidden = true;
+    if (typeof quandFini === 'function') { quandFini(); }
+  });
+
+  afficher();
+}
+
+</script>
+<script>
+(function () {
+  'use strict';
+
+  var CIBLES = {
+      "index.html": "accueil",
+      "chemin.html": "chemin",
+      "lecon-al-fatiha.html": "al-fatiha",
+      "lecon-invocations-matin.html": "invocations-matin"
+  };
+
+  var hote = document.getElementById('vue');
+
+  function aller(vue) {
+    var gabarit = document.querySelector('template[data-vue="' + vue + '"]');
+    if (!gabarit) { return; }
+
+    // On repart du gabarit d'origine a chaque fois : etat propre, et aucun
+    // ecouteur de clic qui s'empilerait a la reouverture d'une lecon.
+    hote.innerHTML = '';
+    hote.appendChild(gabarit.content.cloneNode(true));
+
+    if (vue === 'accueil')      { ippRendreAccueil(hote); }
+    else if (vue === 'chemin')  { ippRendreChemin(hote); }
+    else                        { ippDemarrerLecon(vue, hote); }
+
+    window.scrollTo(0, 0);
+  }
+
+  document.addEventListener('click', function (e) {
+    var lien = e.target.closest ? e.target.closest('a[href]') : null;
+    if (!lien) { return; }
+    var vue = CIBLES[lien.getAttribute('href')];
+    if (vue) { e.preventDefault(); aller(vue); }
+  });
+
+  aller('accueil');
+
+}());
+</script>

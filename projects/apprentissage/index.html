@@ -26,47 +26,102 @@
       Islam pas a pas
     </a>
     <div class="droite">
-      <span class="jeton" id="jetonSerie" hidden></span>
+      <span class="jeton" data-r="jeton" hidden></span>
     </div>
   </header>
 
   <main class="contenu" id="principal">
 
+    <!-- Les trois questions d'accueil. Masquees par defaut : elles n'apparaissent
+         qu'a la premiere visite, posees par app.js. Ainsi le vrai contenu de
+         l'accueil reste dans la page, lisible par Google et sans JavaScript. -->
+    <section class="diag" data-r="diag" hidden aria-label="Trois questions pour commencer">
+      <div class="diag-haut">
+        <span class="eyebrow">Bienvenue</span>
+        <div class="points" data-r="diag-points" aria-hidden="true"></div>
+      </div>
+
+      <p class="diag-intro">
+        Trois questions, quinze secondes. Pas de compte, pas d'inscription.
+        C'est seulement pour ne pas te faire apprendre ce que tu sais deja.
+      </p>
+
+      <div data-r="diag-questions">
+        <div class="q-etape" data-q="1" data-cle="priere">
+          <h2>Ou en es-tu avec la priere&nbsp;?</h2>
+          <div class="choix">
+            <button class="opt" type="button" data-val="non">Je ne prie pas encore</button>
+            <button class="opt" type="button" data-val="parfois">Je prie, mais pas les cinq</button>
+            <button class="opt" type="button" data-val="oui">Je prie les cinq</button>
+          </div>
+        </div>
+
+        <div class="q-etape" data-q="2" data-cle="fatiha">
+          <h2>Al-Fatiha, tu la connais par coeur&nbsp;?</h2>
+          <div class="choix">
+            <button class="opt" type="button" data-val="non">Pas encore</button>
+            <button class="opt" type="button" data-val="incertain">Je la recite sans etre sur</button>
+            <button class="opt" type="button" data-val="oui">Oui, par coeur</button>
+          </div>
+        </div>
+
+        <div class="q-etape" data-q="3" data-cle="memoire">
+          <h2>Combien de sourates connais-tu par coeur&nbsp;?</h2>
+          <div class="choix">
+            <button class="opt" type="button" data-val="aucune">Aucune pour l'instant</button>
+            <button class="opt" type="button" data-val="quelques">Quelques courtes</button>
+            <button class="opt" type="button" data-val="beaucoup">Plus de dix</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="q-fin" data-r="diag-fin" hidden>
+        <h2 data-r="diag-titre"></h2>
+        <p class="clair" data-r="diag-message"></p>
+        <button class="btn" type="button" data-r="diag-go">Commencer</button>
+      </div>
+
+      <button class="lien-discret" type="button" data-r="diag-passer">Passer, je verrai plus tard</button>
+    </section>
+
+    <div class="accueil-corps" data-r="accueil-corps">
+
     <div class="salut">
-      <span class="date" id="dateDuJour">Aujourd'hui</span>
-      <h1 id="salutation">Bienvenue</h1>
+      <span class="date" data-r="date">Aujourd'hui</span>
+      <h1 data-r="salut">Bienvenue</h1>
     </div>
 
-    <div class="serie" id="blocSerie" hidden>
-      <span class="n" id="serieN">0</span>
-      <span class="txt" id="serieTxt"></span>
+    <div class="serie" data-r="serie" hidden>
+      <span class="n" data-r="serie-n">0</span>
+      <span class="txt" data-r="serie-txt"></span>
     </div>
 
     <!-- La lecon du jour. Le contenu statique sert de repli si JS est absent. -->
-    <section class="carte-jour" id="carteJour">
-      <span class="eyebrow" id="carteEyebrow">Ta lecon du jour</span>
-      <h2 id="carteTitre">Sourate Al-Fatiha, verset par verset</h2>
-      <div class="meta" id="carteMeta">
+    <section class="carte-jour" data-r="carte">
+      <span class="eyebrow" data-r="carte-eyebrow">Ta lecon du jour</span>
+      <h2 data-r="carte-titre">Sourate Al-Fatiha, verset par verset</h2>
+      <div class="meta" data-r="carte-meta">
         <span>5 min</span><span class="puce"></span>
         <span>10 cartes</span><span class="puce"></span>
         <span>Le sens des sourates</span>
       </div>
-      <p class="clair" id="cartePitch">
+      <p class="clair" data-r="carte-pitch">
         Tu la recites dans chaque priere. Aujourd'hui, tu vas comprendre chacun de ses sept versets.
       </p>
-      <a class="btn" id="carteBtn" href="lecon-al-fatiha.html">Commencer &rarr;</a>
+      <p class="note-niveau" data-r="niveau-note" hidden></p>
+      <a class="btn" data-r="carte-btn" href="lecon-al-fatiha.html">Commencer &rarr;</a>
     </section>
 
     <section class="bloc">
       <h2 class="titre-bloc">A revoir aujourd'hui</h2>
-      <div class="liste" id="listeRevisions">
+      <div class="liste" data-r="revisions">
         <p class="vide">Rien a revoir pour l'instant. Termine ta premiere lecon : elle reviendra ici dans deux jours, puis de plus en plus espacee.</p>
       </div>
     </section>
 
     <section class="bloc">
       <h2 class="titre-bloc">Tes parcours</h2>
-      <div class="parcours" id="listeParcours"></div>
+      <div class="parcours" data-r="parcours"></div>
       <p class="note-pied">
         Un seul parcours est ouvert pour le moment. J'ajoute les suivants lecon par lecon,
         jamais en masse : chaque texte est verifie avant d'etre publie.
@@ -84,6 +139,8 @@
         Les traductions sont des traductions du <em>sens</em>. Le Coran, c'est l'arabe.
       </p>
     </section>
+
+    </div><!-- /accueil-corps -->
 
   </main>
 
@@ -104,101 +161,6 @@
 </div>
 
 <script src="app.js"></script>
-<script>
-(function () {
-  'use strict';
-
-  // --- date et salutation ---
-  var maintenant = new Date();
-  var heure = maintenant.getHours();
-  var bonjour = (heure < 5) ? 'Bonne nuit' : (heure < 18 ? 'Bonjour' : 'Bonsoir');
-  document.getElementById('dateDuJour').textContent = IPP.dateLongue(maintenant);
-  document.getElementById('salutation').textContent = bonjour;
-
-  // --- serie de jours ---
-  var n = IPP.serie();
-  if (n > 0) {
-    var bloc = document.getElementById('blocSerie');
-    bloc.hidden = false;
-    document.getElementById('serieN').textContent = String(n);
-    document.getElementById('serieTxt').innerHTML = (n === 1)
-      ? 'premier jour.<br>Reviens demain, c\'est la que tout se joue.'
-      : 'jours d\'affilee.<br>Ne casse pas la chaine.';
-
-    var jeton = document.getElementById('jetonSerie');
-    jeton.hidden = false;
-    jeton.innerHTML = ippEtoile(14, '#c9a84c') + '<span>' + n + '</span>';
-    jeton.setAttribute('title', n + (n === 1 ? ' jour' : ' jours') + ' d\'affilee');
-  }
-
-  // --- la lecon du jour ---
-  var choix = IPP.leconDuJour();
-  var carte = document.getElementById('carteJour');
-
-  if (!choix) {
-    // Tout est fait et rien n'est a revoir : on le dit franchement.
-    carte.innerHTML =
-      '<span class="eyebrow">C\'est fait pour aujourd\'hui</span>'
-      + '<h2>Tu es a jour</h2>'
-      + '<p class="clair">Toutes les lecons disponibles sont terminees, et aucune revision '
-      + 'n\'est prevue aujourd\'hui. Reviens demain : la prochaine lecon arrive bientot.</p>'
-      + '<a class="btn fantome" href="chemin.html">Voir mon chemin</a>';
-  } else {
-    var l = choix.lecon;
-    document.getElementById('carteEyebrow').textContent =
-      (choix.mode === 'revision') ? 'Ta revision du jour' : 'Ta lecon du jour';
-    document.getElementById('carteTitre').textContent = l.titre;
-    document.getElementById('carteMeta').innerHTML =
-      '<span>' + l.minutes + ' min</span><span class="puce"></span>'
-      + '<span>' + l.cartes + ' cartes</span><span class="puce"></span>'
-      + '<span>' + ippEchappe(IPP.nomParcours(l.parcours)) + '</span>';
-    if (choix.mode === 'revision') {
-      document.getElementById('cartePitch').textContent =
-        'Tu l\'as deja vue. On la repasse vite pour qu\'elle tienne dans la duree.';
-    }
-    var b = document.getElementById('carteBtn');
-    b.setAttribute('href', l.url);
-    b.textContent = (choix.mode === 'revision') ? 'Revoir →' : 'Commencer →';
-  }
-
-  // --- revisions du jour ---
-  var revisions = IPP.aRevoir();
-  var zone = document.getElementById('listeRevisions');
-  if (revisions.length) {
-    var html = '';
-    for (var i = 0; i < revisions.length; i++) {
-      var r = revisions[i];
-      var f = IPP.fiche(r.id);
-      html += '<a class="ligne" href="' + r.url + '">'
-            + ippEtoile(17, '#c9a84c')
-            + '<span><span class="t">' + ippEchappe(r.titre) + '</span>'
-            + '<span class="s">Vue le ' + IPP.dateLongue(IPP.depuisCle(f.faitLe)) + '</span></span>'
-            + '<span class="fl" aria-hidden="true">&rsaquo;</span></a>';
-    }
-    zone.innerHTML = html;
-  }
-
-  // --- parcours ---
-  var pz = document.getElementById('listeParcours');
-  var etats = IPP.parcoursAvecEtat();
-  var out = '';
-  for (var j = 0; j < etats.length; j++) {
-    var p = etats[j];
-    if (p.pret) {
-      var pct = p.total ? Math.round((p.faites / p.total) * 100) : 0;
-      out += '<a class="pc" href="chemin.html">'
-           + '<span class="haut"><span class="nom">' + ippEchappe(p.nom) + '</span>'
-           + '<span class="cpt">' + p.faites + ' / ' + p.total + '</span></span>'
-           + '<span class="barre-p"><span style="width:' + pct + '%"></span></span></a>';
-    } else {
-      out += '<div class="ligne inerte">'
-           + ippEtoile(17)
-           + '<span><span class="t">' + ippEchappe(p.nom) + '</span>'
-           + '<span class="s">Bientot</span></span></div>';
-    }
-  }
-  pz.innerHTML = out;
-}());
-</script>
+<script>ippRendreAccueil();</script>
 </body>
 </html>

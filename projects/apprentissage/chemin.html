@@ -38,29 +38,34 @@
     </div>
 
     <div class="compteur">
-      <span class="gros" id="compteurN">0</span>
-      <span class="leg" id="compteurTxt">enseignement appris.</span>
+      <span class="gros" data-r="compteur-n">0</span>
+      <span class="leg" data-r="compteur-txt">enseignement appris.</span>
     </div>
 
     <section class="bloc">
-      <h2 class="titre-bloc" id="titreMois">Ce mois-ci</h2>
+      <h2 class="titre-bloc" data-r="titre-mois">Ce mois-ci</h2>
       <div class="mois-cadre">
         <div class="jours-sem" aria-hidden="true">
           <span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span><span>D</span>
         </div>
-        <div class="mois" id="mois"></div>
+        <div class="mois" data-r="mois"></div>
       </div>
-      <p class="note-pied" id="legendeMois">Chaque etoile doree est un jour ou tu es venu apprendre.</p>
+      <p class="note-pied" data-r="legende-mois">Chaque etoile doree est un jour ou tu es venu apprendre.</p>
+    </section>
+
+    <section class="bloc">
+      <h2 class="titre-bloc">Ton point de depart</h2>
+      <div data-r="niveau-bloc"></div>
     </section>
 
     <section class="bloc">
       <h2 class="titre-bloc">Tes parcours</h2>
-      <div class="parcours" id="listeParcours"></div>
+      <div class="parcours" data-r="parcours"></div>
     </section>
 
     <section class="bloc">
       <h2 class="titre-bloc">Prochaines revisions</h2>
-      <div class="liste" id="listeRevisions"></div>
+      <div class="liste" data-r="revisions"></div>
     </section>
 
     <a class="btn fantome" href="index.html">Retour a aujourd'hui</a>
@@ -81,111 +86,6 @@
 </div>
 
 <script src="app.js"></script>
-<script>
-(function () {
-  'use strict';
-
-  var MOIS_FR = ['Janvier', 'Fevrier', 'Mars', 'Avril', 'Mai', 'Juin',
-                 'Juillet', 'Aout', 'Septembre', 'Octobre', 'Novembre', 'Decembre'];
-
-  // --- compteur ---
-  var n = IPP.acquis();
-  document.getElementById('compteurN').textContent = String(n);
-  document.getElementById('compteurTxt').innerHTML = (n === 0)
-    ? 'Rien encore.<br>Ta premiere lecon t\'attend.'
-    : (n === 1 ? 'enseignement appris.<br>Avec sa source verifiee.'
-               : 'enseignements appris.<br>Chacun avec sa source verifiee.');
-
-  // --- calendrier du mois en cours ---
-  var maintenant = new Date();
-  var annee = maintenant.getFullYear();
-  var mois = maintenant.getMonth();
-  document.getElementById('titreMois').textContent = MOIS_FR[mois] + ' ' + annee;
-
-  var faits = {};
-  var liste = IPP.jours();
-  for (var i = 0; i < liste.length; i++) { faits[liste[i]] = true; }
-
-  var premier = new Date(annee, mois, 1);
-  // getDay() : 0 = dimanche. On veut des semaines qui commencent le lundi.
-  var decalage = (premier.getDay() + 6) % 7;
-  var nbJours = new Date(annee, mois + 1, 0).getDate();
-  var ceJour = maintenant.getDate();
-
-  var html = '';
-  for (var v = 0; v < decalage; v++) {
-    html += '<div class="jour vide-case" aria-hidden="true"></div>';
-  }
-  for (var d = 1; d <= nbJours; d++) {
-    var cle = IPP.enCle(new Date(annee, mois, d));
-    var fait = !!faits[cle];
-    var couleur = fait ? '#c9a84c' : 'rgba(253,250,243,0.10)';
-    var titre = d + ' ' + MOIS_FR[mois].toLowerCase() + (fait ? ' : lecon faite' : '');
-    var contour = (d === ceJour && !fait)
-      ? ' stroke="rgba(201,168,76,0.55)" stroke-width="1.5"' : '';
-    html += '<div class="jour" title="' + titre + '">'
-          + '<svg width="100%" height="100%" viewBox="0 0 24 24" role="img" aria-label="' + titre + '">'
-          + '<path d="M12 2 L22 12 L12 22 L2 12 Z M5 5 H19 V19 H5 Z" fill="' + couleur + '"' + contour + '/>'
-          + '</svg></div>';
-  }
-  document.getElementById('mois').innerHTML = html;
-
-  if (!liste.length) {
-    document.getElementById('legendeMois').textContent =
-      'Aucun jour rempli pour l\'instant. Chaque etoile doree sera un jour ou tu es venu apprendre.';
-  }
-
-  // --- parcours ---
-  var pz = document.getElementById('listeParcours');
-  var etats = IPP.parcoursAvecEtat();
-  var out = '';
-  for (var j = 0; j < etats.length; j++) {
-    var p = etats[j];
-    if (p.pret) {
-      var pct = p.total ? Math.round((p.faites / p.total) * 100) : 0;
-      out += '<div class="pc">'
-           + '<span class="haut"><span class="nom">' + ippEchappe(p.nom) + '</span>'
-           + '<span class="cpt">' + p.faites + ' / ' + p.total + '</span></span>'
-           + '<span class="barre-p"><span style="width:' + pct + '%"></span></span></div>';
-    } else {
-      out += '<div class="ligne inerte">'
-           + ippEtoile(17)
-           + '<span><span class="t">' + ippEchappe(p.nom) + '</span>'
-           + '<span class="s">Bientot</span></span></div>';
-    }
-  }
-  pz.innerHTML = out;
-
-  // --- revisions a venir ---
-  var rz = document.getElementById('listeRevisions');
-  var prevues = [];
-  var pubs = IPP.publiees();
-  for (var k = 0; k < pubs.length; k++) {
-    var f = IPP.fiche(pubs[k].id);
-    if (f && f.revoirLe) { prevues.push({ lecon: pubs[k], quand: f.revoirLe }); }
-  }
-  prevues.sort(function (a, b) { return a.quand < b.quand ? -1 : 1; });
-
-  if (!prevues.length) {
-    rz.innerHTML = '<p class="vide">Aucune revision programmee. Elles apparaissent '
-                 + 'automatiquement des que tu termines une lecon.</p>';
-  } else {
-    var jour = IPP.aujourdhui();
-    var h = '';
-    for (var m = 0; m < prevues.length; m++) {
-      var pr = prevues[m];
-      var due = pr.quand <= jour;
-      var quand = due ? 'A revoir aujourd\'hui'
-                      : 'Le ' + IPP.dateLongue(IPP.depuisCle(pr.quand));
-      h += '<a class="ligne" href="' + pr.lecon.url + '">'
-         + ippEtoile(17, due ? '#c9a84c' : '#6c8271')
-         + '<span><span class="t">' + ippEchappe(pr.lecon.titre) + '</span>'
-         + '<span class="s">' + quand + '</span></span>'
-         + '<span class="fl" aria-hidden="true">&rsaquo;</span></a>';
-    }
-    rz.innerHTML = h;
-  }
-}());
-</script>
+<script>ippRendreChemin();</script>
 </body>
 </html>

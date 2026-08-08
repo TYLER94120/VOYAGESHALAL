@@ -20,14 +20,14 @@
 
   <header class="lecon-haut">
     <a class="quitter" href="index.html" aria-label="Quitter la lecon">&times;</a>
-    <div class="points" id="points" aria-hidden="true"></div>
+    <div class="points" data-r="points" aria-hidden="true"></div>
   </header>
 
   <main id="principal">
 
     <h1 class="visuellement-cache" hidden>Sourate Al-Fatiha, verset par verset</h1>
 
-    <div class="etapes" id="etapes">
+    <div class="etapes" data-r="etapes">
 
       <!-- 1 : pourquoi cette sourate -->
       <section class="etape" data-etape="1">
@@ -243,16 +243,16 @@
           <path d="M12 2 L22 12 L12 22 L2 12 Z M5 5 H19 V19 H5 Z"/>
         </svg>
         <h2>Lecon terminee</h2>
-        <p id="finTexte">Tu connais maintenant les sept versets d'Al-Fatiha, chacun avec sa reference.</p>
-        <p id="finSuite" class="suite"></p>
+        <p data-r="fin-texte">Tu connais maintenant les sept versets d'Al-Fatiha, chacun avec sa reference.</p>
+        <p data-r="fin-suite" class="suite"></p>
         <a class="btn" href="index.html">Continuer</a>
         <a class="btn fantome" href="chemin.html">Voir mon chemin</a>
       </section>
 
     </div>
 
-    <div class="bas-lecon" id="basLecon" hidden>
-      <button class="btn" id="btnSuivant" type="button">Suivant</button>
+    <div class="bas-lecon" data-r="bas" hidden>
+      <button class="btn" data-r="suivant" type="button">Suivant</button>
     </div>
 
   </main>
