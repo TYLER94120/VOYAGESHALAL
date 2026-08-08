@@ -1,5 +1,6 @@
 import fs from 'fs'
 import path from 'path'
+import { correspondEnvie } from '@/lib/envies'
 
 // 📒 ANNUAIRE — les lieux DEJA documentes dans nos 354 fiches villes
 // (mosquees et restaurants), exposes autour d'une position.
@@ -15,6 +16,8 @@ export interface AnnuaireLieu {
   lat: number
   lng: number
   type: 'priere' | 'resto'
+  /** type de cuisine brut (OSM) : sert au filtre « j'ai envie de… » */
+  cuisine?: string
   villeSlug: string
   villeNom: string
   source: 'annuaire'
@@ -62,10 +65,10 @@ function lieuxDeVille(slug: string, nom: string): AnnuaireLieu[] {
     const push = (arr: unknown, type: 'priere' | 'resto') => {
       if (!Array.isArray(arr)) return
       for (const raw of arr) {
-        const l = raw as { nom?: string; lat?: number; lng?: number; coordonnees?: { lat?: number; lng?: number } }
+        const l = raw as { nom?: string; lat?: number; lng?: number; type?: string; coordonnees?: { lat?: number; lng?: number } }
         const lat = Number(l.lat ?? l.coordonnees?.lat), lng = Number(l.lng ?? l.coordonnees?.lng)
         if (!l.nom || !Number.isFinite(lat) || !Number.isFinite(lng)) continue
-        out.push({ nom: String(l.nom), lat, lng, type, villeSlug: slug, villeNom: v.nom ?? nom, source: 'annuaire', distKm: 0 })
+        out.push({ nom: String(l.nom), lat, lng, type, cuisine: type === 'resto' ? (l.type ?? undefined) : undefined, villeSlug: slug, villeNom: v.nom ?? nom, source: 'annuaire', distKm: 0 })
       }
     }
     push(v.mosqueesPrincipales ?? v.mosquees, 'priere')
@@ -80,7 +83,7 @@ function lieuxDeVille(slug: string, nom: string): AnnuaireLieu[] {
 export function annuaireAutour(
   lat: number,
   lng: number,
-  opts: { rayonKm?: number; type?: 'priere' | 'resto'; limit?: number } = {},
+  opts: { rayonKm?: number; type?: 'priere' | 'resto'; limit?: number; envie?: string } = {},
 ): { lieux: AnnuaireLieu[]; ville: { slug: string; nom: string; distKm: number } | null } {
   const rayon = opts.rayonKm ?? 25
   const limit = opts.limit ?? 40
@@ -94,6 +97,9 @@ export function annuaireAutour(
   for (const v of villes) {
     for (const l of lieuxDeVille(v.slug, v.nom)) {
       if (opts.type && l.type !== opts.type) continue
+      // « j'ai envie de… » : filtre sur le type de cuisine, jamais sur le
+      // statut halal (qui reste « signalé · à vérifier » dans tous les cas)
+      if (opts.envie && !(l.type === 'resto' && correspondEnvie(l.cuisine, opts.envie))) continue
       const d = distKm(lat, lng, l.lat, l.lng)
       if (d <= rayon) lieux.push({ ...l, distKm: Math.round(d * 10) / 10 })
     }

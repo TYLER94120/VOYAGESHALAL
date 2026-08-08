@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useInstantPosition } from '@/lib/useInstantPosition'
 import { computePrayerTimesFull } from '@/lib/prayerCalc'
 import { useLanguage } from '@/components/i18n/LanguageProvider'
+import { ENVIES, envieById } from '@/lib/envies'
 
 // 🎛️ BOARD VOYAGEUR (bento) — l'accueil devient un tableau de bord contextuel :
 // des REPONSES deja calculees, jamais des menus. Il absorbe le Radar Priere
@@ -52,6 +53,10 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
   // Ville la plus proche selon l'annuaire : fiable meme quand le GPS ne
   // donne pas de nom (« Ma position ») ou quand le libelle est inconnu.
   const [villeProche, setVilleProche] = useState<string | null>(null)
+  // 🍔 « J'ai envie de… » : l'envie du moment et le lieu correspondant le
+  // plus proche (undefined = pas encore cherche, null = rien trouve).
+  const [envie, setEnvie] = useState<string | null>(null)
+  const [restoEnvie, setRestoEnvie] = useState<Lieu | null | undefined>(undefined)
 
   useEffect(() => {
     const id = setInterval(() => setNow(Date.now()), 30_000)
@@ -160,6 +165,21 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
     return () => { off = true }
   }, [pos?.label, villeProche, en]) // eslint-disable-line react-hooks/exhaustive-deps
 
+  useEffect(() => {
+    if (!pos || !envie) { setRestoEnvie(undefined); return }
+    let off = false
+    setRestoEnvie(undefined)
+    fetch(`/api/annuaire?lat=${pos.lat}&lng=${pos.lng}&rayon=12&type=resto&envie=${envie}&limit=1`)
+      .then((r) => r.json())
+      .then((j) => {
+        if (off) return
+        const l = (j.lieux as { nom: string; lat: number; lng: number }[] | undefined)?.[0]
+        setRestoEnvie(l ? { nom: l.nom, lat: l.lat, lng: l.lng, source: 'annuaire', distM: hav(pos.lat, pos.lng, l.lat, l.lng) } : null)
+      })
+      .catch(() => { if (!off) setRestoEnvie(null) })
+    return () => { off = true }
+  }, [pos, envie])
+
   // ── Spots communautaires (pepite + bande de reels + compteur) ──
   useEffect(() => {
     fetch('/api/community/spots?limit=30')
@@ -234,9 +254,12 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
 
   // Meilleur resto : OSM/spots < 3 km, sinon resto communautaire < 5 km
   const rc = pres?.restoCom
-  const bestResto = resto ?? (rc && rc.lat && rc.lng
+  const restoProche = resto ?? (rc && rc.lat && rc.lng
     ? { nom: rc.nom, lat: rc.lat, lng: rc.lng, source: 'communaute' as const, distM: (rc as unknown as { distM: number }).distM }
     : null)
+  // Une envie choisie prime sur « le plus proche »
+  const envieActive = envieById(envie)
+  const bestResto = envie ? (restoEnvie ?? null) : restoProche
 
   // ── Etape 3 : le board vit avec l'heure — la bonne tuile grossit au bon
   // moment. La priere garde toujours la priorite quand elle approche. ──
@@ -246,7 +269,9 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
   const soiree = heure >= 21 || heure < 5
   const focus: 'priere' | 'manger' | 'soiree' =
     prayerUrgent ? 'priere'
-    : repas && bestResto ? 'manger'
+    // Une envie exprimee est un signal fort : la tuile manger passe devant
+    // (sauf priere imminente, qui garde toujours la priorite).
+    : (envie || repas) && bestResto ? 'manger'
     : soiree && pepite ? 'soiree'
     : 'priere'
 
@@ -338,7 +363,9 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
           const mangerWide = bestResto && (
             <div className="board-hero" role="link" tabIndex={0} onClick={() => window.open(itin(bestResto.lat, bestResto.lng), '_blank', 'noopener')} onKeyDown={(e) => { if (e.key === 'Enter') window.open(itin(bestResto.lat, bestResto.lng), '_blank', 'noopener') }}
               style={{ ...T.tile, background: 'linear-gradient(150deg, rgba(27,67,50,0.85), rgba(255,255,255,0.04))', borderColor: 'rgba(201,168,76,0.35)', cursor: 'pointer' }}>
-              <p style={T.lab}>🍽 {en ? 'Time to eat — nearest halal' : 'C\'est l\'heure de manger — le plus proche'}</p>
+              <p style={T.lab}>{envieActive
+                ? `${envieActive.emoji} ${en ? `Nearest halal ${envieActive.en.toLowerCase()}` : `Le ${envieActive.fr.toLowerCase()} le plus proche`}`
+                : `🍽 ${en ? 'Time to eat — nearest halal' : 'C\'est l\'heure de manger — le plus proche'}`}</p>
               <p style={{ fontFamily: "'Playfair Display', Georgia, serif", color: '#fdfaf3', fontSize: 24, fontWeight: 900, margin: '4px 0 0', lineHeight: 1.15 }}>
                 <bdi>{bestResto.nom}</bdi>
               </p>
@@ -358,9 +385,13 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
               onClick={() => { if (bestResto) window.open(itin(bestResto.lat, bestResto.lng), '_blank', 'noopener'); else window.location.href = '/autour-de-moi' }}
               onKeyDown={(e) => { if (e.key !== 'Enter') return; if (bestResto) window.open(itin(bestResto.lat, bestResto.lng), '_blank', 'noopener'); else window.location.href = '/autour-de-moi' }}
               style={{ ...T.tile, flex: 1, cursor: 'pointer' }}>
-              <p style={T.lab}>🍽 {en ? 'Eat halal' : 'Manger halal'}</p>
-              {resto === undefined && !bestResto ? <p style={{ ...T.meta, marginTop: 4 }}>…</p>
-                : !bestResto ? <p style={{ ...T.meta, marginTop: 4 }}>{osmOk ? (en ? 'None reported nearby' : 'Aucun signalé à proximité') : (en ? 'Search unavailable (no connection)' : 'Recherche indisponible (pas de connexion)')}</p>
+              <p style={T.lab}>{envieActive ? `${envieActive.emoji} ${envieActive[en ? 'en' : 'fr']}` : `🍽 ${en ? 'Eat halal' : 'Manger halal'}`}</p>
+              {(envie ? restoEnvie === undefined : resto === undefined && !bestResto) ? <p style={{ ...T.meta, marginTop: 4 }}>…</p>
+                : !bestResto ? <p style={{ ...T.meta, marginTop: 4 }}>{
+                    envieActive ? (en ? `No halal ${envieActive.en.toLowerCase()} listed within 12 km` : `Aucun ${envieActive.fr.toLowerCase()} signalé halal à moins de 12 km`)
+                      : osmOk ? (en ? 'None reported nearby' : 'Aucun signalé à proximité')
+                      : (en ? 'Search unavailable (no connection)' : 'Recherche indisponible (pas de connexion)')
+                  }</p>
                 : (
                   <>
                     <a href={itin(bestResto.lat, bestResto.lng)} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} style={{ color: '#fdfaf3', fontWeight: 800, fontSize: 13.5, textDecoration: 'none', display: 'block', margin: '3px 0 1px', lineHeight: 1.3 }}>
@@ -466,6 +497,45 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
             </>
           )
         })()}
+
+
+        {/* 🍔 « J'ai envie de… » — l'envie du moment, pas seulement le plus
+            proche. Filtre le TYPE de cuisine ; le statut halal ne change pas
+            (« signalé halal · à vérifier » dans tous les cas). */}
+        <div style={{ marginTop: 10 }}>
+          <div style={{ display: 'flex', gap: 7, overflowX: 'auto', paddingBottom: 4, WebkitOverflowScrolling: 'touch' }}>
+            <span style={{ flex: 'none', alignSelf: 'center', ...T.lab, paddingRight: 2 }}>
+              {en ? 'I feel like' : 'J\'ai envie de'}
+            </span>
+            {envie && (
+              <button
+                onClick={() => setEnvie(null)}
+                style={{ flex: 'none', minHeight: 44, padding: '0 14px', borderRadius: 999, border: '1px solid rgba(253,250,243,0.25)', background: 'transparent', color: 'rgba(253,250,243,0.75)', fontWeight: 700, fontSize: 13, cursor: 'pointer' }}
+              >
+                ✕ {en ? 'Any' : 'Tout'}
+              </button>
+            )}
+            {ENVIES.map((e) => {
+              const on = envie === e.id
+              return (
+                <button
+                  key={e.id}
+                  onClick={() => setEnvie(on ? null : e.id)}
+                  aria-pressed={on}
+                  style={{
+                    flex: 'none', minHeight: 44, padding: '0 14px', borderRadius: 999, cursor: 'pointer',
+                    border: on ? '1.5px solid var(--or)' : '1px solid rgba(253,250,243,0.18)',
+                    background: on ? 'rgba(201,168,76,0.18)' : 'rgba(255,255,255,0.05)',
+                    color: on ? 'var(--or)' : 'var(--creme)',
+                    fontWeight: on ? 800 : 700, fontSize: 13.5, whiteSpace: 'nowrap',
+                  }}
+                >
+                  {e.emoji} {e[en ? 'en' : 'fr']}
+                </button>
+              )
+            })}
+          </div>
+        </div>
 
         {/* ── Bande de reels de la ville ── */}
         {pres && pres.reels.length > 0 && (

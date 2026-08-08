@@ -18,9 +18,11 @@ export async function GET(req: NextRequest) {
   const type = sp.get('type')
   const rayonKm = Math.min(60, Math.max(1, parseFloat(sp.get('rayon') ?? '25') || 25))
   const limit = Math.min(60, Math.max(1, parseInt(sp.get('limit') ?? '40', 10) || 40))
+  const envie = sp.get('envie') ?? undefined
   const { lieux, ville } = annuaireAutour(lat, lng, {
     rayonKm,
     limit,
+    envie: envie && /^[a-z]{3,12}$/.test(envie) ? envie : undefined,
     type: type === 'priere' || type === 'resto' ? type : undefined,
   })
   return NextResponse.json(
