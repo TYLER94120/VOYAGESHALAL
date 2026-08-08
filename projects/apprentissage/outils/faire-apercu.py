@@ -39,16 +39,29 @@ VUES = [
 def corps_de_page(chemin: pathlib.Path) -> str:
     """Recupere le bloc <div class="page">...</div> d'une page."""
     texte = chemin.read_text(encoding="utf-8")
-    avant_script = texte.split('<script src="app.js">')[0]
-    debut = avant_script.find('<div class="page">')
+    # Les lecons chargent sons.js et audio-coran.js avant app.js : on coupe au
+    # premier des trois, sinon les balises <script> finiraient dans le corps.
+    for balise in ('<script src="sons.js">', '<script src="audio-coran.js">',
+                   '<script src="app.js">'):
+        if balise in texte:
+            texte = texte.split(balise)[0]
+            break
+    debut = texte.find('<div class="page">')
     if debut == -1:
         raise SystemExit(f'{chemin.name} : bloc <div class="page"> introuvable')
-    return avant_script[debut:].strip()
+    return texte[debut:].strip()
 
 
 def main() -> int:
     style = (RACINE / "style.css").read_text(encoding="utf-8")
-    logique = (RACINE / "app.js").read_text(encoding="utf-8")
+    # sons.js et audio-coran.js d'abord : app.js les utilise s'ils sont la.
+    # Attention : dans l'apercu, sons.js cherche sons/*.mp3 a cote du fichier.
+    # Ouvert seul, sans le dossier, l'apercu reste donc muet — le site, non.
+    logique = "\n".join([
+        (RACINE / "sons.js").read_text(encoding="utf-8"),
+        (RACINE / "audio-coran.js").read_text(encoding="utf-8"),
+        (RACINE / "app.js").read_text(encoding="utf-8"),
+    ])
 
     gabarits = []
     for fichier, vue in VUES:

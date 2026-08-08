@@ -114,18 +114,23 @@
 
         <p class="prudence">
           Ces reperes aident a demarrer, mais <strong>aucun texte ne remplace
-          l'oreille</strong>. Pour entendre la recitation, ouvre ton application
-          de Coran habituelle et suis les syllabes ci-dessous en meme temps.
-          Puis fais-toi corriger par quelqu'un qui recite bien&nbsp;: c'est comme
-          cela que la prononciation s'apprend, et c'est important quand il
-          s'agit du Coran.
+          l'oreille</strong>. Sur chaque verset, un bouton
+          <strong>Ecouter</strong> apparait quand la recitation est joignable&nbsp;:
+          ecoute, puis repete a voix haute en suivant les syllabes. Et fais-toi
+          corriger par quelqu'un qui recite bien&nbsp;: c'est comme cela que la
+          prononciation s'apprend, et c'est important quand il s'agit du Coran.
         </p>
+
+        <!-- La voix lente : celle des ecoles coraniques. C'est avec elle qu'on
+             apprend, pas avec une recitation rapide. -->
+        <button class="btn fantome" type="button" data-r="voix-lente">Voix lente</button>
+        <p class="note-pied" data-r="voix-note"></p>
       </section>
 
       <!-- 3 : verset 1 -->
       <section class="etape" data-etape="3">
         <span class="eyebrow">Verset 1 sur 7</span>
-        <div>
+        <div data-coran="1:1">
           <p class="ar" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
           <p class="phon">Bismi-llahi r-rahmani r-rahim</p>
         </div>
@@ -166,7 +171,7 @@
       <!-- 4 : verset 2 -->
       <section class="etape" data-etape="5">
         <span class="eyebrow">Verset 2 sur 7</span>
-        <div>
+        <div data-coran="1:2">
           <p class="ar" lang="ar" dir="rtl">الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ</p>
           <p class="phon">Al-hamdu li-llahi rabbi l-'alamin</p>
         </div>
@@ -194,7 +199,7 @@
       <!-- 5 : verset 3 -->
       <section class="etape" data-etape="6">
         <span class="eyebrow">Verset 3 sur 7</span>
-        <div>
+        <div data-coran="1:3">
           <p class="ar" lang="ar" dir="rtl">الرَّحْمَٰنِ الرَّحِيمِ</p>
           <p class="phon">Ar-rahmani r-rahim</p>
         </div>
@@ -222,7 +227,7 @@
       <!-- 6 : verset 4 -->
       <section class="etape" data-etape="7">
         <span class="eyebrow">Verset 4 sur 7</span>
-        <div>
+        <div data-coran="1:4">
           <p class="ar" lang="ar" dir="rtl">مَالِكِ يَوْمِ الدِّينِ</p>
           <p class="phon">Maliki yawmi d-din</p>
         </div>
@@ -249,7 +254,7 @@
       <!-- 7 : verset 5 -->
       <section class="etape" data-etape="8">
         <span class="eyebrow">Verset 5 sur 7 &middot; le coeur de la sourate</span>
-        <div>
+        <div data-coran="1:5">
           <p class="ar" lang="ar" dir="rtl">إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ</p>
           <p class="phon">Iyyaka na'budu wa iyyaka nasta'in</p>
         </div>
@@ -291,7 +296,7 @@
       <!-- 8 : verset 6 -->
       <section class="etape" data-etape="10">
         <span class="eyebrow">Verset 6 sur 7</span>
-        <div>
+        <div data-coran="1:6">
           <p class="ar" lang="ar" dir="rtl">اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ</p>
           <p class="phon">Ihdina s-sirata l-mustaqim</p>
         </div>
@@ -332,7 +337,7 @@
       <!-- 9 : verset 7 -->
       <section class="etape" data-etape="12">
         <span class="eyebrow">Verset 7 sur 7</span>
-        <div>
+        <div data-coran="1:7">
           <p class="ar" lang="ar" dir="rtl">صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ</p>
           <p class="phon">Sirata lladhina an'amta 'alayhim ghayri l-maghdubi 'alayhim wa la d-dallin</p>
         </div>
@@ -403,6 +408,12 @@
       Une question personnelle&nbsp;? <a href="https://halalgpt.fr">Pose-la sur halalgpt.fr</a>,
       et pour un cas qui t'engage, demande a un savant.
     </p>
+    <!-- Le credit du recitateur et de la source s'ecrit ici tout seul, quand une
+         source repond. C'est la contrepartie d'un fichier qu'on n'heberge pas. -->
+    <p class="note-pied" data-r="credit-audio"></p>
+    <div class="reglages">
+      <button class="lien-discret" type="button" data-r="son-bascule"></button>
+    </div>
     <span class="t">Les autres sites de la famille</span>
     <nav class="freres" aria-label="Sites partenaires">
       <a href="https://halalgpt.fr"><span class="d">halalgpt.fr</span><span class="q">L'IA musulmane, pour poser une question</span></a>
@@ -414,6 +425,8 @@
 
 </div>
 
+<script src="sons.js"></script>
+<script src="audio-coran.js"></script>
 <script src="app.js"></script>
 <script>ippDemarrerLecon('al-fatiha');</script>
 </body>

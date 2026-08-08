@@ -50,6 +50,9 @@ Version de travail, hebergee provisoirement dans le repo VOYAGESHALAL sur la bra
 | `chemin.html` | La progression : compteur, calendrier des jours, les lecons, revisions a venir |
 | `style.css` | Toute la mise en forme (charte de la famille) |
 | `app.js` | Catalogue, niveau, progression, revisions, et le lecteur de lecon commun |
+| `audio-coran.js` | La recitation : chaine de secours sur quatre sources, aucun fichier heberge |
+| `sons.js` + `sons/` | Six sons d'interface synthetises, avec leur interrupteur |
+| `NOTES-lecons-a-venir.md` | Fichier de travail : les themes retires, en attente de leur lecon |
 | `robots.txt` | Ce que les robots peuvent lire, et l'adresse du sitemap |
 | `sitemap.xml` | Les pages de contenu, pour Google |
 | `partage.png` | L'image qui s'affiche quand on partage un lien (1200x630) |
@@ -287,24 +290,56 @@ prophetes (5, 8, 10).
 est qu'aucune recitation ne soit publiee sans licence ecrite. Une chaine qui se
 declare « sans copyright » n'a aucun droit de liberer la recitation d'un autre.
 
-**Ce que le site dit au lecteur, en attendant** — dans la lecon sur Al-Fatiha,
-a l'endroit ou l'on parle de prononciation : « pour entendre la recitation,
-ouvre ton application de Coran habituelle et suis les syllabes en meme temps ».
-C'est honnete, c'est utile tout de suite, et ca ne promet rien.
+**Correction importante, et il faut la retenir.** On a longtemps cru la
+recitation impossible parce que `cdn.islamic.network`, `everyayah.com` et
+`quran.com` repondent **403** depuis l'atelier des agents. C'etait la mauvaise
+conclusion : **le site ne telecharge rien.** C'est le navigateur du visiteur qui
+va chercher le fichier, et lui n'a pas ce filtre. Ne jamais rededuire d'un 403
+dans l'atelier qu'une chose est impossible dans le produit.
 
-**Le mecanisme reste pret** dans `app.js` : `ippBrancherAudio()` cherche un
-attribut `data-audio` sur un bloc, verifie par une requete HEAD si
-`audio/<valeur>.mp3` existe, et n'ajoute le bouton « Ecouter » que si le fichier
-repond. Aujourd'hui **aucune lecon ne porte cet attribut** — il n'y a pas de
-fichier a jouer, donc rien a brancher. Le jour ou un fichier licencie arrive, il
-suffit de poser `data-audio` sur les blocs concernes.
+`audio-coran.js` fait le travail. Dans une lecon, il suffit d'ecrire :
 
-Et une reserve qui reste : une **voix de synthese** qui recite le Coran n'est
-pas une question de droits mais une question religieuse. Elle n'est pas tranchee
-ici, et ce n'est pas a moi de la trancher.
+```html
+<span data-coran="1:1">…</span>       un verset
+<span data-coran="1:1-7">…</span>     une suite de versets
+```
 
-**Le sujet est clos et hors du chemin critique.** Ne pas repartir en chasse de
-fichiers audio.
+Le bouton « Ecouter » se pose seul. Ce qui est garanti :
+
+- **aucun fichier n'est heberge ici.** On pointe vers la source ;
+- **le recitateur et la source sont nommes** sur la page, dans
+  `[data-r="credit-audio"]` — c'est la contrepartie ;
+- **si aucune source ne repond, aucun bouton n'apparait.** Verifie par test :
+  les quatre sources coupees, la lecon se termine normalement, aucun credit ne
+  s'affiche, aucune erreur ;
+- **jamais de voix de synthese sur le Coran.** De vrais recitateurs, ou rien.
+  Cette regle ne se discute pas ;
+- le bouton **Voix lente** (`ippCoran.basculerLenteur()`) passe a Al-Husary
+  Mujawwad, la voix articulee des ecoles coraniques : c'est avec elle qu'on
+  apprend. Il est sur la carte prononciation d'Al-Fatiha.
+
+La table des versets d'`audio-coran.js` a ete verifiee : 114 sourates, **6236
+versets**, conversion en rang global exacte aux deux bouts. C'est le decompte de
+**Hafs d'apres 'Asim** — la lecture du site. Ce n'est pas pour autant le seul
+decompte existant, et c'est pourquoi `sourates.html` n'affiche toujours aucun
+nombre de versets.
+
+Si un hebergeur demandait l'arret, tout se retire en une ligne : les quatre
+sources sont dans `SOURCES`, en haut d'`audio-coran.js`.
+
+### Les six sons d'interface
+
+`sons.js` + `sons/` : six timbres de cloche synthetises, aucune licence en jeu.
+`bon`, `presque`, `tap`, `serie`, `fin`, `objectif`.
+
+La regle qui compte : **`presque` ne punit jamais.** Pas de buzzer, pas de
+dissonance — un ton grave et chaud. Le son de l'erreur decide si la personne
+recommence ou ferme l'onglet, et quelqu'un qui apprend sa religion ne doit pas
+se sentir juge par une interface.
+
+L'interrupteur est **visible en pied de lecon**, pas cache dans un menu
+(`[data-r="son-bascule"]`). Le son est actif par defaut et le choix est garde.
+`objectif` n'est pas encore utilise : il attend l'anneau du jour.
 
 ## Technique
 
@@ -457,6 +492,21 @@ fichiers servis en HTTP :
   site), les elements pilotes restent masques, les 7 cartes de la page des
   lecons sont dans le HTML, et `chemin.html` garde son `noindex,follow` ;
 - aucune erreur JavaScript.
+
+**La recitation et les sons**
+
+- les quatre sources coupees : **aucun bouton, aucun credit, aucune erreur**, et
+  la lecon se termine normalement. C'est le cas qui compte le plus ;
+- une source qui repond : **sept boutons Ecouter** (un par verset), le
+  recitateur et la source nommes en clair, « les fichiers ne sont pas heberges
+  par ce site », bouton de 56px, bascule Ecouter / Arreter ;
+- la **voix lente** change de recitateur et **reecrit le credit** (Al-Husary) —
+  sinon la page citerait quelqu'un qu'on n'entend plus ;
+- l'**interrupteur du son** est visible en pied de lecon, actif par defaut, et
+  apres coupure **plus aucun son n'est joue** ;
+- les pages restent a **35 ms de DOM et utilisables en moins de 80 ms** : le
+  sondage des sources ne bloque rien. (Dans l'atelier, une page semble mettre
+  12 s : c'est le CDN de polices coupe par le proxy, pas le site.)
 
 **Defaut connu, pas encore corrige** : quatre lecons sur six ne contiennent
 **aucune question** (`priere-gestes`, `six-piliers-foi`, `invocations-matin`,

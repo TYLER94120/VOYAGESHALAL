@@ -850,10 +850,11 @@ function ippRendreOffre(racine) {
    explique. Pas de vies perdues, pas de score qui humilie.
    ========================================================= */
 
-function ippPreparerQuiz(etape, bouton, score) {
+function ippPreparerQuiz(etape, bouton, score, sonner) {
   'use strict';
   if (etape.__quizPret) { return; }
   etape.__quizPret = true;
+  if (!sonner) { sonner = function () {}; }
 
   var choix = etape.querySelector('.q-choix');
   var retour = etape.querySelector('[data-r-retour]');
@@ -874,6 +875,9 @@ function ippPreparerQuiz(etape, bouton, score) {
     etape.__repondu = true;
 
     var juste = b.hasAttribute('data-bonne');
+    // "presque" et non un buzzer : le son de l'erreur decide si la personne
+    // recommence ou ferme l'onglet.
+    sonner(juste ? 'bon' : 'presque');
     b.classList.add(juste ? 'juste' : 'faux');
     if (!juste) {
       var bonne = etape.querySelector('.q-opt[data-bonne]');
@@ -938,6 +942,54 @@ function ippBrancherAudio(racine) {
 
 
 /* =========================================================
+   La voix lente : celle des ecoles coraniques
+
+   Husary Mujawwad articule lentement. C'est la voix avec laquelle on apprend
+   a reciter ; une recitation rapide est belle mais on ne peut pas la suivre.
+   Le choix est garde d'une visite a l'autre par audio-coran.js.
+   ========================================================= */
+
+function ippBrancherVoixLente(q) {
+  'use strict';
+  var b = q('voix-lente');
+  if (!b) { return; }
+
+  // Sans audio-coran.js, le bouton ne promet rien : il disparait.
+  if (typeof ippCoran === 'undefined') { b.hidden = true; return; }
+
+  var note = q('voix-note');
+
+  function peindre() {
+    var lent = ippCoran.veutLent();
+    b.textContent = lent ? 'Voix normale' : 'Voix lente';
+    b.setAttribute('aria-pressed', lent ? 'true' : 'false');
+    if (note) {
+      note.textContent = lent
+        ? 'Voix lente : Al-Husary, la recitation articulee des ecoles coraniques.'
+        : 'Pour apprendre a reciter, la voix lente est plus facile a suivre.';
+    }
+  }
+
+  b.addEventListener('click', function () {
+    ippCoran.basculerLenteur();
+    // Les boutons deja poses pointent vers l'ancienne voix : on les retire pour
+    // que brancher() les repose avec la nouvelle source.
+    var vieux = document.querySelectorAll('[data-coran] .ecouter');
+    for (var i = 0; i < vieux.length; i++) { vieux[i].parentNode.removeChild(vieux[i]); }
+    // Le credit nomme l'ancien recitateur : on l'efface, sinon brancher() le
+    // laisse tel quel et la page cite quelqu'un qu'on n'entend plus.
+    var credit = q('credit-audio') || document.querySelector('[data-r="credit-audio"]');
+    if (credit) { credit.textContent = ''; }
+    ippCoran.arreter();
+    ippCoran.brancher(document);
+    peindre();
+  });
+
+  peindre();
+}
+
+
+/* =========================================================
    Vue 3 : le lecteur de lecon, commun a toutes les lecons
 
    La page contient toutes ses cartes en clair dans le HTML : sans
@@ -961,6 +1013,15 @@ function ippDemarrerLecon(id, racine) {
 
   zone.classList.add('pilote');
   ippBrancherAudio(zone);
+
+  // La recitation et les sons d'interface sont dans des fichiers separes : une
+  // page qui ne les charge pas doit continuer a fonctionner exactement pareil.
+  if (typeof ippCoran !== 'undefined') { ippCoran.brancher(zone); }
+  if (typeof ippSons !== 'undefined') { ippSons.brancherInterrupteur(racine); }
+  function sonner(nom) {
+    if (typeof ippSons !== 'undefined') { ippSons.jouer(nom); }
+  }
+  ippBrancherVoixLente(q);
 
   var bas = q('bas');
   var bouton = q('suivant');
@@ -990,7 +1051,7 @@ function ippDemarrerLecon(id, racine) {
       var ici = zone.querySelector('.etape.actif');
       if (ici && ici.hasAttribute('data-quiz')) {
         bouton.disabled = !ici.__repondu;
-        ippPreparerQuiz(ici, bouton, score);
+        ippPreparerQuiz(ici, bouton, score, sonner);
       } else {
         bouton.disabled = false;
       }
@@ -1003,10 +1064,15 @@ function ippDemarrerLecon(id, racine) {
     }
   }
 
+  // Vrai si la lecon qui vient de se terminer est la premiere du jour : c'est
+  // le seul cas ou la serie augmente, donc le seul ou son son se justifie.
+  var serieMonte = false;
+
   function cloturer() {
     if (enregistree) { return; }
     enregistree = true;
 
+    serieMonte = !IPP.faitAujourdhui();
     var r = IPP.terminer(id);
     var serie = IPP.serie();
     var total = IPP.acquis();
@@ -1039,7 +1105,17 @@ function ippDemarrerLecon(id, racine) {
   bouton.addEventListener('click', function () {
     if (courante >= TOTAL) { return; }
     courante++;
-    if (courante === TOTAL) { cloturer(); }
+    // "tap" s'entend quatorze fois par lecon : il doit rester presque
+    // invisible, et "fin" seul doit se remarquer.
+    if (courante === TOTAL) {
+      cloturer();
+      sonner('fin');
+      // La serie arrive apres, pas en meme temps : deux sons ensemble n'en
+      // font qu'un, et c'est celui de la serie qu'on doit vouloir reentendre.
+      if (serieMonte) { setTimeout(function () { sonner('serie'); }, 900); }
+    } else {
+      sonner('tap');
+    }
     afficher(true);
   });
 

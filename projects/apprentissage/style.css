@@ -936,3 +936,20 @@ a.lien-bas:hover { color: var(--creme); }
   gap: 9px;
 }
 .ecouter:hover { background: rgba(201, 168, 76, 0.12); }
+/* En lecture : le bouton se remplit, pour qu'on voie d'un coup d'oeil que le
+   son vient de la et comment l'arreter. */
+.ecouter.joue {
+  background: var(--or);
+  border-color: var(--or);
+  color: var(--nuit);
+}
+
+/* L'interrupteur du son, en pied de lecon. Visible, pas cache dans un menu :
+   quelqu'un qui apprend dans une piece silencieuse doit pouvoir le couper
+   sans chercher. */
+.reglages {
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 4px;
+}
+.reglages .lien-discret { align-items: center; display: inline-flex; gap: 7px; }

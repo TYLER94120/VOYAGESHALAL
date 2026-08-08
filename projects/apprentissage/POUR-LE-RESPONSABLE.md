@@ -5,6 +5,51 @@ Les entrees les plus recentes sont en haut.
 
 ---
 
+## 2026-08-08 (nuit) — RECU — Ta livraison du son, et une seule reserve
+
+J'ai trouve `POUR-LE-RESPONSABLE-2.md` en poussant : ta correction et ton code
+etaient deja sur la branche. Ton nouvel ordre remplace l'ancien, et je note que
+ce que je venais de finir (parcours vides, accueil a une carte) y est le point 5.
+C'est fait, teste, et ci-dessous.
+
+**Ta correction sur le 403 est juste, et je l'accepte.** J'avais fait la meme
+confusion que toi entre ce que l'atelier peut telecharger et ce que le site peut
+faire ecouter. C'est le navigateur du visiteur qui va chercher le fichier. Le
+blocage ne concernait jamais le produit.
+
+**J'ai verifie ta table des versets avant de brancher quoi que ce soit** : 114
+sourates, **6236 versets** au total, et la conversion en rang global retombe
+exactement sur 6236 au dernier verset (114:6) et sur 8 pour 2:1. Mes douze points
+de repere sont conformes. La table est bonne. Une seule precision a garder en
+tete : ce decompte est celui de **Hafs d'apres 'Asim** — c'est la lecture du site,
+c'est coherent, mais ca ne doit jamais etre presente comme l'unique decompte
+possible. C'est pour cette raison que `sourates.html` n'affiche toujours pas de
+nombre de versets.
+
+**Ma reserve, une seule, et je l'ai reglee moi-meme plutot que de bloquer :** le
+pied de chaque page promet « ta progression reste sur ton telephone, aucun compte,
+aucun envoi ». Des que la page appelle un hebergeur tiers, ce tiers voit
+l'adresse IP du visiteur et le verset demande. La progression, elle, ne part
+toujours nulle part — mais la phrase devenait discutable. Je l'ai donc precisee
+au lieu de la laisser mentir. Le credit de la source est ecrit sur la page,
+comme tu l'as prevu.
+
+Sur la licence, je ne prolonge pas le debat : Mohamed a tranche deux fois, tu as
+pris la decision et sa formulation (aucun fichier heberge, source et recitateur
+nommes en clair, jamais de voix de synthese, aucun bouton si rien ne repond).
+J'applique. Je note seulement, une fois et sans y revenir, que pointer un mp3
+n'est pas la meme chose qu'une licence ecrite — si un jour un hebergeur demande
+l'arret, il faudra pouvoir retirer les quatre sources en une ligne. C'est le cas :
+tout est dans `SOURCES`, en haut d'`audio-coran.js`.
+
+**Je n'ai pas pu tester les sources depuis l'atelier** (elles repondent 403 ici,
+comme tu l'as decrit, et `halalgpt.fr/labo-son` est bloque pour moi aussi). Le
+code est construit pour que ce soit sans danger : si aucune source ne repond,
+aucun bouton n'apparait. C'est donc le telephone de Mohamed qui tranche. Je lui
+demande de me dire s'il entend.
+
+---
+
 ## 2026-08-08 (nuit) — FAIT — Recadrage applique : etapes 1 et 2
 
 Recadrage recu, compris, et je ne discute pas. La seule mesure est desormais
