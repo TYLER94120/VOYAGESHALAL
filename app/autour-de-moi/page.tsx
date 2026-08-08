@@ -497,7 +497,7 @@ export default function AutourDeMoiPage() {
             return (
               <button key={k} onClick={() => setFilter({ [k]: !on } as Partial<Filters>)}
                 aria-pressed={on}
-                style={{ flexShrink: 0, padding: '6px 12px', borderRadius: 30, border: `1.5px solid ${on ? 'var(--foret)' : 'rgba(27,67,50,0.2)'}`, background: on ? 'var(--foret)' : '#fff', color: on ? '#fff' : 'var(--texte-2)', fontWeight: 700, fontSize: 12.5, cursor: 'pointer', whiteSpace: 'nowrap' }}>
+                style={{ flexShrink: 0, minHeight: 44, display: 'inline-flex', alignItems: 'center', padding: '0 14px', borderRadius: 30, border: `1.5px solid ${on ? 'var(--foret)' : 'rgba(27,67,50,0.2)'}`, background: on ? 'var(--foret)' : '#fff', color: on ? '#fff' : 'var(--texte-2)', fontWeight: 700, fontSize: 12.5, cursor: 'pointer', whiteSpace: 'nowrap' }}>
                 {FILTER_LABEL[k]}
               </button>
             )
@@ -507,7 +507,7 @@ export default function AutourDeMoiPage() {
             return (
               <button key={p} onClick={() => setFilter({ price: on ? '' : p })}
                 aria-pressed={on}
-                style={{ flexShrink: 0, padding: '6px 12px', borderRadius: 30, border: `1.5px solid ${on ? 'var(--foret)' : 'rgba(27,67,50,0.2)'}`, background: on ? 'var(--foret)' : '#fff', color: on ? '#fff' : 'var(--texte-2)', fontWeight: 700, fontSize: 12.5, cursor: 'pointer' }}>
+                style={{ flexShrink: 0, minHeight: 44, display: 'inline-flex', alignItems: 'center', padding: '0 14px', borderRadius: 30, border: `1.5px solid ${on ? 'var(--foret)' : 'rgba(27,67,50,0.2)'}`, background: on ? 'var(--foret)' : '#fff', color: on ? '#fff' : 'var(--texte-2)', fontWeight: 700, fontSize: 12.5, cursor: 'pointer' }}>
                 {p}
               </button>
             )

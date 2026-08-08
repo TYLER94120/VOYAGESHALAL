@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { guides } from '@/lib/data'
-import GuideCard from '@/components/ui/GuideCard'
+import GuidesGrid from '@/components/guides/GuidesGrid'
 import { buildMetadata } from '@/lib/seo'
 import { getDomainSEO } from '@/lib/domain'
 
@@ -30,11 +30,7 @@ export default async function GuidesPage() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {guides.filter((g) => (g.lang ?? 'fr') === (en ? 'en' : 'fr')).map((guide) => (
-          <GuideCard key={guide.slug} guide={guide} />
-        ))}
-      </div>
+      <GuidesGrid guides={guides.filter((g) => (g.lang ?? 'fr') === (en ? 'en' : 'fr'))} en={en} />
     </div>
   )
 }

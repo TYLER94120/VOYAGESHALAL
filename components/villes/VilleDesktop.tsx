@@ -375,7 +375,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
                 {(h.note ?? h.score) != null && <p style={{ fontSize: 13, color: '#B8860B', fontWeight: 700, margin: '0 0 10px' }}>★ {h.note ?? h.score}</p>}
                 {(h.halalBookingUrl || h.bookingUrl) && (
                   <a href={h.halalBookingUrl || h.bookingUrl} target="_blank" rel="sponsored noopener noreferrer"
-                    style={{ display: 'block', padding: '11px 0', background: 'var(--foret)', color: '#fff', borderRadius: 12, textAlign: 'center', fontSize: 13.5, fontWeight: 700, textDecoration: 'none' }}>
+                    style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: 48, background: 'var(--foret)', color: '#fff', borderRadius: 12, fontSize: 13.5, fontWeight: 700, textDecoration: 'none' }}>
                     🏨 {en ? 'See on HalalBooking' : 'Voir sur HalalBooking'}
                   </a>
                 )}

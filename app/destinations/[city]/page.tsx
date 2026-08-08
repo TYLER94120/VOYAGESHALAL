@@ -186,13 +186,13 @@ export default async function DestinationPage({ params }: Props) {
             <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: '20px', fontWeight: 700, color: 'var(--nuit)', margin: 0 }}>
               {isEN ? 'More halal destinations' : 'Autres destinations halal'}
             </h2>
-            <a href="/destinations?all=1" style={{ fontSize: '14px', fontWeight: 700, color: 'var(--foret)', textDecoration: 'none' }}>
+            <a href="/destinations?all=1" style={{ display: 'inline-flex', alignItems: 'center', minHeight: 44, fontSize: '14px', fontWeight: 700, color: 'var(--foret)', textDecoration: 'none' }}>
               {isEN ? 'See all destinations →' : 'Voir toutes les destinations →'}
             </a>
           </div>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '9px' }}>
             {related.map((c) => (
-              <a key={c.slug} href={`/destinations/${c.slug}`} style={{ padding: '8px 15px', background: '#fff', border: '1px solid rgba(27,67,50,0.2)', borderRadius: '30px', fontSize: '14px', fontWeight: 600, color: 'var(--foret)', textDecoration: 'none' }}>
+              <a key={c.slug} href={`/destinations/${c.slug}`} style={{ display: 'inline-flex', alignItems: 'center', minHeight: 44, padding: '0 16px', background: '#fff', border: '1px solid rgba(27,67,50,0.2)', borderRadius: '30px', fontSize: '14px', fontWeight: 600, color: 'var(--foret)', textDecoration: 'none' }}>
                 {cityEn(c.nom, isEN)} Halal
               </a>
             ))}

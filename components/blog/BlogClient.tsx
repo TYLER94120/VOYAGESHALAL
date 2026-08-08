@@ -43,8 +43,10 @@ export default function BlogClient({ articles }: Props) {
   const catLabel = (c: string) => (c === ALL ? (en ? 'All' : 'Tous') : c)
 
   const filtered = filtre === ALL ? articles : articles.filter((a) => a.category === filtre)
-  const affiches = filtered.slice(0, visibles)
-  const reste = filtered.length - affiches.length
+  // SEO : on ne COUPE pas la liste (ce serait autant de liens internes en
+  // moins dans le HTML). On rend tout et on masque le surplus en CSS — la
+  // page raccourcit pour l'humain, le maillage reste entier pour Google.
+  const reste = Math.max(0, filtered.length - visibles)
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-8 py-12">
@@ -63,11 +65,12 @@ export default function BlogClient({ articles }: Props) {
 
       {/* Grille de cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {affiches.map((item) => (
+        {filtered.map((item, i) => (
           <Link
             key={item.href}
             href={item.href}
             className="group flex flex-col bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg hover:border-[#c9a84c]/40 transition-all"
+            style={i < visibles ? undefined : { display: 'none' }}
           >
             <div className="relative aspect-[16/10] overflow-hidden">
               <Image
