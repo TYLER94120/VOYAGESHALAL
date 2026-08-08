@@ -110,11 +110,9 @@ def main() -> int:
 """ % table
 
     note = (
-        '<p class="note-pied" style="max-width:680px;margin:0 auto;padding:0 20px 34px;'
-        'text-align:center">Apercu du site en un seul fichier. Les pages sont assemblees '
-        'ensemble au lieu d\'etre des adresses separees&nbsp;; tout le reste est le vrai '
-        'site. Si ton lecteur n\'execute pas les scripts, les pages s\'affichent simplement '
-        'les unes apres les autres&nbsp;: tu vois tout, mais les boutons ne repondent pas.</p>'
+        '<p class="note-apercu">Fichier d\'apercu&nbsp;: tout le site en une seule page. '
+        'Si les boutons ne repondent pas, c\'est que ton lecteur n\'execute pas les '
+        'scripts&nbsp;— le contenu reste entier, il se lit simplement a la suite.</p>'
     )
 
     sortie = "\n".join([
@@ -136,12 +134,17 @@ def main() -> int:
         ".vue-doc { display: block; border-top: 1px solid rgba(201,168,76,0.16); }",
         ".pilote-vues .vue-doc { display: none; border-top: 0; }",
         ".pilote-vues .vue-doc.actif { display: block; }",
+        # Le texte ne doit jamais finir sous la barre d'accueil de l'iPhone :
+        # de loin, cela ressemble a un mot barre.
+        "body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }",
+        ".note-apercu { max-width: 680px; margin: 0 auto; padding: 22px 20px 0;"
+        " border-top: 1px solid rgba(201,168,76,0.16); color: #6c8271;"
+        " font-size: 13px; line-height: 1.6; text-align: center; }",
         "</style>",
         "",
-        '<div id="vue"></div>',
-        note,
-        "",
         "\n\n".join(gabarits),
+        "",
+        note,
         "",
         "<script>",
         logique,
