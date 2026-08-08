@@ -429,6 +429,24 @@ Deux details qui comptent&nbsp;:
 - les deux boutons **s'excluent** : lancer l'un arrete l'autre, un second appui
   arrete tout, et `arreter()` annule aussi le silence en attente.
 
+### L'etagere — et le mot qu'on n'ecrit pas
+
+Sur « Mon chemin », ce qui s'accumule est nomme par ce que c'est&nbsp;: « 7 versets
+d'Al-Fatiha », « 28 lettres de l'alphabet », « 25 prophetes du Coran », et
+« 12 versets repetes a voix haute ». Seules les lecons **terminees** y figurent :
+une etagere se remplit, elle ne s'affiche pas pleine d'avance.
+
+**On n'ecrit JAMAIS « par coeur ».** Le site ne verifie a aucun moment qu'une
+sourate est memorisee — il montre, explique et fait repeter. Afficher « 3 sourates
+par coeur » serait un compliment invente, et sur un site dont tout l'argument est
+de ne rien affirmer qu'il ne puisse sourcer, ce serait le premier mensonge. Le
+jour ou l'on voudra un vrai « par coeur », il faudra d'abord un test de
+restitution.
+
+Les libelles vivent dans `CATALOGUE` (`unite` / `unites`), au singulier et au
+pluriel : ajouter une lecon sans ses deux libelles la laisse hors de l'etagere,
+silencieusement mais sans mentir.
+
 ### Le diagnostic du son : « ?son=diag »
 
 Ajouter `?son=diag` a l'adresse d'une lecon affiche, sous le credit, **ce que
@@ -676,6 +694,16 @@ dans Safari)
 **Le voile de la barre du bas** : le fond devient opaque des 16px, ce qui laisse
 une bande pleine de 30px avant le bouton — exactement la hauteur d'une ligne, donc
 plus aucune ligne coupee en deux.
+
+**L'etagere et le compteur de repetitions**
+
+- etagere masquee tant qu'aucune lecon n'est terminee ; deux lecons faites → deux
+  rangees ; six lecons → six rangees plus la voix ;
+- singulier et pluriel corrects (« 1 verset repete », « 12 versets repetes ») ;
+- **aucun libelle ne contient « par coeur »** — c'est verifie par test ;
+- la boucle compte trois repetitions par seance (et non deux : le silence suit
+  desormais chaque ecoute, y compris la derniere), et le compteur cumule d'une
+  seance a l'autre (3, puis 6).
 
 **Defaut connu, pas encore corrige** : quatre lecons sur six ne contiennent
 **aucune question** (`priere-gestes`, `six-piliers-foi`, `invocations-matin`,

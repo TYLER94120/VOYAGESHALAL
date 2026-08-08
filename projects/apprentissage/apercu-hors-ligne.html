@@ -1175,6 +1175,43 @@ a.lien-bas:hover { color: var(--creme); }
 .diag-note { margin: 11px 0 0; font-size: 13px; line-height: 1.5; color: var(--texte-3); }
 .diag-note code { font-size: 12px; color: var(--or-clair); }
 
+/* ---------- l'etagere ----------
+   Ce qui s'accumule, nomme par ce que c'est : « 7 versets d'Al-Fatiha »,
+   « 28 lettres de l'alphabet ». La memorisation est une collection par nature.
+   On n'y ecrit JAMAIS « par coeur » : le site ne verifie pas la memorisation,
+   et un compliment invente serait le premier mensonge du site. */
+.etagere {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: var(--trait);
+  border: 1px solid var(--trait);
+  border-radius: var(--r-petit);
+  overflow: hidden;
+}
+.rangee {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 13px 16px;
+  background: var(--surface-1);
+}
+.rangee .rn {
+  font-family: var(--serif);
+  font-size: 26px;
+  line-height: 1;
+  color: var(--or);
+  font-variant-numeric: tabular-nums;
+  min-width: 44px;
+  text-align: right;
+  flex: 0 0 auto;
+}
+.rangee .rl { font-size: 17px; line-height: 1.35; color: var(--creme); }
+/* La voix : le seul chiffre qui compte un effort de la bouche, pas une page
+   tournee. On le distingue sans le survendre. */
+.rangee.voix { background: rgba(201, 168, 76, 0.07); }
+.rangee.voix .rl { color: var(--or-clair); }
+
 .vue-doc { display: block; border-top: 1px solid rgba(201,168,76,0.16); }
 .pilote-vues .vue-doc { display: none; border-top: 0; }
 .pilote-vues .vue-doc.actif { display: block; }
@@ -4009,6 +4046,9 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
 
     <p class="note-pied" data-r="record"></p>
 
+    <!-- L'etagere : ce qui s'accumule, nomme par ce que c'est. -->
+    <div class="etagere" data-r="etagere" hidden></div>
+
     <section class="bloc">
       <h2 class="titre-bloc" data-r="titre-mois">Ce mois-ci</h2>
       <div class="mois-cadre">
@@ -4454,9 +4494,17 @@ var ippCoran = (function () {
         // Repeter demande un peu plus de temps que d'ecouter : on n'est pas
         // encore a l'aise avec les mots. Un silence trop court fait abandonner.
         var silence = Math.min(12000, ecoule * 1.15);
-        if (tour >= tours) { if (surPhase) { surPhase('fini', tour); } return; }
+
+        // Un silence apres CHAQUE ecoute, y compris la derniere. Sans cela le
+        // dernier tour se terminait sur l'ecoute, et la personne n'avait pas
+        // repete autant de fois qu'elle avait entendu : trois ecoutes, deux
+        // repetitions. Maintenant c'est trois et trois.
         if (surPhase) { surPhase('silence', tour); }
-        minuterie = setTimeout(function () { minuterie = null; cycle(); }, silence);
+        minuterie = setTimeout(function () {
+          minuterie = null;
+          if (surPhase) { surPhase('repete', tour); }   // une repetition de plus
+          cycle();
+        }, silence);
       });
     }
 
@@ -4530,7 +4578,9 @@ var ippCoran = (function () {
 
           var LIRE = '<span aria-hidden="true">&#9654;</span> Ecouter';
           var STOP = '<span aria-hidden="true">&#9632;</span> Arreter';
-          var BOUCLE = '<span aria-hidden="true">&#8635;</span> Repeter';
+          // « Repeter avec moi » et non « Repeter » : le bouton doit dire ce
+          // qu'on attend de la personne, pas ce que fait la machine.
+          var BOUCLE = '<span aria-hidden="true">&#8635;</span> Repeter avec moi';
 
           function repos() {
             ecoute.innerHTML = LIRE;
@@ -4567,12 +4617,20 @@ var ippCoran = (function () {
             phrase.hidden = false;
             jouerBoucle(source, ref, 3, function (phase, tour) {
               if (phase === 'fini') { repos(); return; }
+              // Une repetition de plus au compteur : c'est le seul chiffre du
+              // site qui compte un effort de la voix, pas une page tournee.
+              if (phase === 'repete') {
+                if (typeof IPP !== 'undefined' && IPP.compterRepetition) {
+                  IPP.compterRepetition();
+                }
+                return;
+              }
               if (phase === 'ecoute') {
                 phrase.className = 'a-toi ecoute';
                 phrase.textContent = 'Ecoute bien (' + tour + ' sur 3)';
               } else {
                 phrase.className = 'a-toi parle';
-                phrase.textContent = 'A toi — repete a voix haute';
+                phrase.textContent = 'A toi — repete a voix haute (' + tour + ' sur 3)';
               }
             });
           });
@@ -4672,6 +4730,8 @@ if (typeof module !== 'undefined' && module.exports) { module.exports = ippCoran
       minutes: 8,
       cartes: 14,
       acquis: 7,
+      unite: 'verset d\'Al-Fatiha',
+      unites: 'versets d\'Al-Fatiha',
       publiee: true,
       resume: 'Tu la recites dans chaque priere. Aujourd\'hui, tu vas comprendre '
             + 'chacun de ses sept versets.'
@@ -4684,6 +4744,8 @@ if (typeof module !== 'undefined' && module.exports) { module.exports = ippCoran
       minutes: 5,
       cartes: 8,
       acquis: 3,
+      unite: 'invocation du matin',
+      unites: 'invocations du matin',
       publiee: true,
       resume: 'Trois phrases courtes, toutes rapportees par al-Boukhari et Mouslim. '
             + 'Apprends-en une seule si tu veux : c\'est deja beaucoup.'
@@ -4696,6 +4758,8 @@ if (typeof module !== 'undefined' && module.exports) { module.exports = ippCoran
       minutes: 5,
       cartes: 11,
       acquis: 6,
+      unite: 'pilier de la foi',
+      unites: 'piliers de la foi',
       publiee: true,
       resume: 'Un ange vient interroger le Prophete sur la foi. La reponse tient '
             + 'en une phrase, et elle contient six choses.'
@@ -4708,6 +4772,8 @@ if (typeof module !== 'undefined' && module.exports) { module.exports = ippCoran
       minutes: 6,
       cartes: 12,
       acquis: 7,
+      unite: 'geste de la priere',
+      unites: 'gestes de la priere',
       publiee: true,
       resume: 'Sept gestes, dans l\'ordre, tires d\'un seul hadith. Et les points '
             + 'ou les ecoles ne disent pas la meme chose.'
@@ -4720,6 +4786,8 @@ if (typeof module !== 'undefined' && module.exports) { module.exports = ippCoran
       minutes: 7,
       cartes: 12,
       acquis: 28,
+      unite: 'lettre de l\'alphabet',
+      unites: 'lettres de l\'alphabet',
       publiee: true,
       resume: 'Bonne nouvelle : ce ne sont pas 28 dessins a retenir, mais 18. '
             + 'Ce sont les points qui font le reste.'
@@ -4732,6 +4800,8 @@ if (typeof module !== 'undefined' && module.exports) { module.exports = ippCoran
       minutes: 8,
       cartes: 12,
       acquis: 25,
+      unite: 'prophete du Coran',
+      unites: 'prophetes du Coran',
       publiee: true,
       resume: 'Dix-sept d\'entre eux sont cites d\'affilee dans un seul passage. '
             + 'Tu les apprends par paquets, pas un par un.'
@@ -5018,6 +5088,53 @@ if (typeof module !== 'undefined' && module.exports) { module.exports = ippCoran
      fermer le site — justement les jours ou la serie a besoin de nous.
      ---------------------------------------------------------------------- */
 
+  /* ---------- l'etagere ----------------------------------------------------
+     La memorisation est une collection par nature, et c'est un avantage que ce
+     site a et que les autres n'ont pas : « 7 versets d'Al-Fatiha, 28 lettres,
+     25 prophetes » se regarde comme une etagere qui se remplit.
+
+     UNE REGLE D'HONNETETE QUI NE SE DISCUTE PAS : on n'ecrit JAMAIS « par
+     coeur ». Le site ne verifie a aucun moment qu'une sourate est memorisee ; il
+     montre, explique et fait repeter. Annoncer « 3 sourates par coeur » serait
+     un compliment invente, et le premier mensonge d'un site dont tout l'interet
+     est de ne pas mentir. On dit donc ce qui est vrai : ce qui a ete appris.
+
+     Ne comptent que les lecons TERMINEES : une etagere se remplit, elle ne
+     s'affiche pas pleine d'avance.
+     ---------------------------------------------------------------------- */
+
+  var CLE_REPET = 'ipp.repetitions.v1';
+
+  function repetitions() {
+    try {
+      var n = parseInt(global.localStorage.getItem(CLE_REPET), 10);
+      return isNaN(n) || n < 0 ? 0 : n;
+    } catch (e) {
+      return 0;
+    }
+  }
+
+  function compterRepetition() {
+    var n = repetitions() + 1;
+    try { global.localStorage.setItem(CLE_REPET, String(n)); } catch (e) { /* sans memoire, on continue */ }
+    return n;
+  }
+
+  function collection() {
+    var d = charger();
+    var rangees = [];
+    for (var i = 0; i < CATALOGUE.length; i++) {
+      var l = CATALOGUE[i];
+      if (!l.publiee || !d.lecons[l.id] || !l.unite) { continue; }
+      rangees.push({
+        id: l.id,
+        n: l.acquis,
+        libelle: l.acquis === 1 ? l.unite : l.unites
+      });
+    }
+    return rangees;
+  }
+
   var OBJ_REVISIONS = 3;
 
   function objectifDuJour() {
@@ -5134,6 +5251,9 @@ if (typeof module !== 'undefined' && module.exports) { module.exports = ippCoran
     serie: serie,
     serieDetaillee: serieDetaillee,
     objectifDuJour: objectifDuJour,
+    collection: collection,
+    repetitions: repetitions,
+    compterRepetition: compterRepetition,
     aRevoir: aRevoir,
     acquis: acquis,
     publiees: publiees,
@@ -5431,6 +5551,29 @@ function ippRendreChemin(racine) {
     ? 'Rien encore.<br>Ta premiere lecon t\'attend.'
     : (n === 1 ? 'chose apprise.<br>Continue demain.'
                : 'choses apprises,<br>lecon apres lecon.');
+
+  // --- l'etagere : ce qu'on a accumule, nomme par ce que c'est ---
+  var etag = q('etagere');
+  if (etag) {
+    var rangees = IPP.collection();
+    var rep = IPP.repetitions();
+    if (!rangees.length && !rep) {
+      etag.hidden = true;
+    } else {
+      var h = '';
+      for (var e = 0; e < rangees.length; e++) {
+        h += '<div class="rangee"><span class="rn">' + rangees[e].n + '</span>'
+           + '<span class="rl">' + ippEchappe(rangees[e].libelle) + '</span></div>';
+      }
+      if (rep > 0) {
+        h += '<div class="rangee voix"><span class="rn">' + rep + '</span>'
+           + '<span class="rl">' + (rep === 1 ? 'verset repete a voix haute'
+                                              : 'versets repetes a voix haute') + '</span></div>';
+      }
+      etag.innerHTML = h;
+      etag.hidden = false;
+    }
+  }
 
   // --- la serie, son record, et le filet ---
   var rec = q('record');

@@ -272,9 +272,17 @@ var ippCoran = (function () {
         // Repeter demande un peu plus de temps que d'ecouter : on n'est pas
         // encore a l'aise avec les mots. Un silence trop court fait abandonner.
         var silence = Math.min(12000, ecoule * 1.15);
-        if (tour >= tours) { if (surPhase) { surPhase('fini', tour); } return; }
+
+        // Un silence apres CHAQUE ecoute, y compris la derniere. Sans cela le
+        // dernier tour se terminait sur l'ecoute, et la personne n'avait pas
+        // repete autant de fois qu'elle avait entendu : trois ecoutes, deux
+        // repetitions. Maintenant c'est trois et trois.
         if (surPhase) { surPhase('silence', tour); }
-        minuterie = setTimeout(function () { minuterie = null; cycle(); }, silence);
+        minuterie = setTimeout(function () {
+          minuterie = null;
+          if (surPhase) { surPhase('repete', tour); }   // une repetition de plus
+          cycle();
+        }, silence);
       });
     }
 
@@ -348,7 +356,9 @@ var ippCoran = (function () {
 
           var LIRE = '<span aria-hidden="true">&#9654;</span> Ecouter';
           var STOP = '<span aria-hidden="true">&#9632;</span> Arreter';
-          var BOUCLE = '<span aria-hidden="true">&#8635;</span> Repeter';
+          // « Repeter avec moi » et non « Repeter » : le bouton doit dire ce
+          // qu'on attend de la personne, pas ce que fait la machine.
+          var BOUCLE = '<span aria-hidden="true">&#8635;</span> Repeter avec moi';
 
           function repos() {
             ecoute.innerHTML = LIRE;
@@ -385,12 +395,20 @@ var ippCoran = (function () {
             phrase.hidden = false;
             jouerBoucle(source, ref, 3, function (phase, tour) {
               if (phase === 'fini') { repos(); return; }
+              // Une repetition de plus au compteur : c'est le seul chiffre du
+              // site qui compte un effort de la voix, pas une page tournee.
+              if (phase === 'repete') {
+                if (typeof IPP !== 'undefined' && IPP.compterRepetition) {
+                  IPP.compterRepetition();
+                }
+                return;
+              }
               if (phase === 'ecoute') {
                 phrase.className = 'a-toi ecoute';
                 phrase.textContent = 'Ecoute bien (' + tour + ' sur 3)';
               } else {
                 phrase.className = 'a-toi parle';
-                phrase.textContent = 'A toi — repete a voix haute';
+                phrase.textContent = 'A toi — repete a voix haute (' + tour + ' sur 3)';
               }
             });
           });

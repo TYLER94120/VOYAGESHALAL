@@ -51,6 +51,8 @@
       minutes: 8,
       cartes: 14,
       acquis: 7,
+      unite: 'verset d\'Al-Fatiha',
+      unites: 'versets d\'Al-Fatiha',
       publiee: true,
       resume: 'Tu la recites dans chaque priere. Aujourd\'hui, tu vas comprendre '
             + 'chacun de ses sept versets.'
@@ -63,6 +65,8 @@
       minutes: 5,
       cartes: 8,
       acquis: 3,
+      unite: 'invocation du matin',
+      unites: 'invocations du matin',
       publiee: true,
       resume: 'Trois phrases courtes, toutes rapportees par al-Boukhari et Mouslim. '
             + 'Apprends-en une seule si tu veux : c\'est deja beaucoup.'
@@ -75,6 +79,8 @@
       minutes: 5,
       cartes: 11,
       acquis: 6,
+      unite: 'pilier de la foi',
+      unites: 'piliers de la foi',
       publiee: true,
       resume: 'Un ange vient interroger le Prophete sur la foi. La reponse tient '
             + 'en une phrase, et elle contient six choses.'
@@ -87,6 +93,8 @@
       minutes: 6,
       cartes: 12,
       acquis: 7,
+      unite: 'geste de la priere',
+      unites: 'gestes de la priere',
       publiee: true,
       resume: 'Sept gestes, dans l\'ordre, tires d\'un seul hadith. Et les points '
             + 'ou les ecoles ne disent pas la meme chose.'
@@ -99,6 +107,8 @@
       minutes: 7,
       cartes: 12,
       acquis: 28,
+      unite: 'lettre de l\'alphabet',
+      unites: 'lettres de l\'alphabet',
       publiee: true,
       resume: 'Bonne nouvelle : ce ne sont pas 28 dessins a retenir, mais 18. '
             + 'Ce sont les points qui font le reste.'
@@ -111,6 +121,8 @@
       minutes: 8,
       cartes: 12,
       acquis: 25,
+      unite: 'prophete du Coran',
+      unites: 'prophetes du Coran',
       publiee: true,
       resume: 'Dix-sept d\'entre eux sont cites d\'affilee dans un seul passage. '
             + 'Tu les apprends par paquets, pas un par un.'
@@ -397,6 +409,53 @@
      fermer le site — justement les jours ou la serie a besoin de nous.
      ---------------------------------------------------------------------- */
 
+  /* ---------- l'etagere ----------------------------------------------------
+     La memorisation est une collection par nature, et c'est un avantage que ce
+     site a et que les autres n'ont pas : « 7 versets d'Al-Fatiha, 28 lettres,
+     25 prophetes » se regarde comme une etagere qui se remplit.
+
+     UNE REGLE D'HONNETETE QUI NE SE DISCUTE PAS : on n'ecrit JAMAIS « par
+     coeur ». Le site ne verifie a aucun moment qu'une sourate est memorisee ; il
+     montre, explique et fait repeter. Annoncer « 3 sourates par coeur » serait
+     un compliment invente, et le premier mensonge d'un site dont tout l'interet
+     est de ne pas mentir. On dit donc ce qui est vrai : ce qui a ete appris.
+
+     Ne comptent que les lecons TERMINEES : une etagere se remplit, elle ne
+     s'affiche pas pleine d'avance.
+     ---------------------------------------------------------------------- */
+
+  var CLE_REPET = 'ipp.repetitions.v1';
+
+  function repetitions() {
+    try {
+      var n = parseInt(global.localStorage.getItem(CLE_REPET), 10);
+      return isNaN(n) || n < 0 ? 0 : n;
+    } catch (e) {
+      return 0;
+    }
+  }
+
+  function compterRepetition() {
+    var n = repetitions() + 1;
+    try { global.localStorage.setItem(CLE_REPET, String(n)); } catch (e) { /* sans memoire, on continue */ }
+    return n;
+  }
+
+  function collection() {
+    var d = charger();
+    var rangees = [];
+    for (var i = 0; i < CATALOGUE.length; i++) {
+      var l = CATALOGUE[i];
+      if (!l.publiee || !d.lecons[l.id] || !l.unite) { continue; }
+      rangees.push({
+        id: l.id,
+        n: l.acquis,
+        libelle: l.acquis === 1 ? l.unite : l.unites
+      });
+    }
+    return rangees;
+  }
+
   var OBJ_REVISIONS = 3;
 
   function objectifDuJour() {
@@ -513,6 +572,9 @@
     serie: serie,
     serieDetaillee: serieDetaillee,
     objectifDuJour: objectifDuJour,
+    collection: collection,
+    repetitions: repetitions,
+    compterRepetition: compterRepetition,
     aRevoir: aRevoir,
     acquis: acquis,
     publiees: publiees,
@@ -810,6 +872,29 @@ function ippRendreChemin(racine) {
     ? 'Rien encore.<br>Ta premiere lecon t\'attend.'
     : (n === 1 ? 'chose apprise.<br>Continue demain.'
                : 'choses apprises,<br>lecon apres lecon.');
+
+  // --- l'etagere : ce qu'on a accumule, nomme par ce que c'est ---
+  var etag = q('etagere');
+  if (etag) {
+    var rangees = IPP.collection();
+    var rep = IPP.repetitions();
+    if (!rangees.length && !rep) {
+      etag.hidden = true;
+    } else {
+      var h = '';
+      for (var e = 0; e < rangees.length; e++) {
+        h += '<div class="rangee"><span class="rn">' + rangees[e].n + '</span>'
+           + '<span class="rl">' + ippEchappe(rangees[e].libelle) + '</span></div>';
+      }
+      if (rep > 0) {
+        h += '<div class="rangee voix"><span class="rn">' + rep + '</span>'
+           + '<span class="rl">' + (rep === 1 ? 'verset repete a voix haute'
+                                              : 'versets repetes a voix haute') + '</span></div>';
+      }
+      etag.innerHTML = h;
+      etag.hidden = false;
+    }
+  }
 
   // --- la serie, son record, et le filet ---
   var rec = q('record');

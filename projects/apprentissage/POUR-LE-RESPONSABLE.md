@@ -5,6 +5,94 @@ Les entrees les plus recentes sont en haut.
 
 ---
 
+## 2026-08-10 — FAIT (1 et 2) — et le rappel se heurte a une regle du site
+
+### Ta tache 1 etait deja livree — voici ce qui manquait vraiment
+
+La boucle ecouter / silence / reecouter est en ligne depuis le commit `ba71ee6`,
+avec le silence mesure sur la lecture reelle. Tu citais trois manques : deux
+etaient reels, je les ai faits.
+
+- **« Repeter avec moi »** au lieu de « Repeter ». Tu as raison : le bouton doit
+  dire ce qu'on attend de la personne, pas ce que fait la machine.
+- **Un compteur de repetitions**, et il m'a fait trouver un defaut. La boucle
+  s'arretait sur une ECOUTE : trois ecoutes, deux repetitions seulement. Le
+  silence vient maintenant apres chaque ecoute, y compris la derniere — trois et
+  trois. Le compteur cumule d'une seance a l'autre (verifie : 3, puis 6).
+- **Boucler un seul verset** : c'etait deja le cas, chaque verset a ses deux
+  boutons.
+
+### Ta tache 2 est faite — avec un mot que je n'ecrirai pas
+
+L'etagere est sur « Mon chemin » et ne montre que les lecons terminees :
+
+    7 versets d'Al-Fatiha · 3 invocations du matin · 6 piliers de la foi
+    7 gestes de la priere · 28 lettres de l'alphabet · 25 prophetes du Coran
+    12 versets repetes a voix haute
+
+**Je n'ecris pas « par coeur », et je te demande de me suivre la-dessus.** Ton
+exemple disait « 3 sourates par coeur ». Le site ne verifie a aucun moment qu'une
+sourate est memorisee : il montre, explique, et fait repeter. Afficher « par
+coeur » serait un compliment invente — et sur un site dont tout l'argument est de
+ne rien affirmer qu'il ne puisse sourcer, ce serait le premier mensonge, sur le
+Coran en plus. L'etagere dit donc ce qui est vrai.
+
+Si tu veux un jour un vrai « par coeur », il faut un test de restitution (cacher
+le verset, le faire retrouver). Ca se construit, mais ca se construit d'abord.
+
+### Ta tache 3 se heurte a une regle fondatrice — arbitre-la
+
+« Une notification calee sur une heure de priere » suppose de **connaitre** cette
+heure. Or ce site a une regle ecrite depuis le debut, et elle est bonne :
+
+> **Ce site ne calcule PAS les horaires de priere.** Ils dependent du lieu et de
+> la date, et les inventer serait une faute. Pour les horaires reels, on renvoie
+> vers voyageshalal.fr.
+
+Trois issues, et je ne choisis pas seul :
+
+1. **La personne donne son heure** (« mon Fajr est vers 6h15 »). Aucun calcul,
+   aucune localisation, la regle tient. Moins precis, et il faudra le remettre a
+   jour au fil des saisons. **C'est ce que je recommande.**
+2. **On appelle le service d'horaires de voyageshalal.fr.** Precis, mais il faut
+   la localisation, et le site cesse d'etre autonome. A toi de dire si
+   l'ecosysteme accepte cette dependance.
+3. **On calcule nous-memes.** Non. Ce serait revenir sur la regle, sur le sujet
+   ou elle protege le plus.
+
+**Deux obstacles techniques a connaitre avant de promettre quoi que ce soit a
+Mohamed** : il faut un service worker, et sur iPhone une notification web
+n'existe **que** si le site a ete **ajoute a l'ecran d'accueil**. Sans ce geste,
+la piece la plus puissante de ta liste ne se declenche jamais. Il faudra donc une
+invite discrete, et je ne la construis pas sans ton accord — l'accueil est a une
+carte et un bouton, je ne vais pas le casser pour une banniere.
+
+### Et ce que je n'ai toujours pas pu faire
+
+**Ton « AVANT TOUT » est impossible depuis l'atelier.** Troisieme verification ce
+soir : `halalgpt.fr:443` et `cdn.islamic.network:443` sont refuses par la
+politique reseau, le proxy repond 403 au CONNECT et le journalise. Je ne peux ni
+ouvrir ton apercu en ligne, ni entendre un recitateur. Je ne te dirai pas que
+j'ai verifie.
+
+Ce que j'ai teste a la place, avec un recitateur simule et un son de duree connue :
+l'enchainement, le credit, la bascule Husary, la boucle, le compteur. Ce qui reste
+invisible d'ici : **quelle source repond reellement, et en combien de temps.**
+C'est exactement ce que `?son=diag` affichera sur le telephone de Mohamed. Une
+capture d'ecran suffit, et je l'attends toujours.
+
+**Cinquieme demande** : les quatre lecons sans aucune question. Donne-moi un rang.
+
+### Le francais
+
+Rapports, commits, documentation : tout en francais, c'est fait. Le **titre de la
+session** et la **ligne d'etat** de l'application ne sont pas a ma portee — les
+outils de la plateforme repondent « requires approval » depuis une session
+declenchee par un de tes messages. Je viens de reverifier. Il faut que ce soit
+fait de ton cote ou du sien.
+
+---
+
 ## 2026-08-09 — INFO — Mohamed arrete les apercus et passe a l'hebergement
 
 Sa decision, mot pour mot : « Je vais attendre de rajouter le site sur GitHub et
