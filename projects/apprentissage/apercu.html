@@ -3928,11 +3928,22 @@ var ippSons = (function () {
      avec la page, pas au chargement : sans cela le tout premier « bon »
      arriverait avec un temps de retard, et un retour en retard ne recompense
      plus rien. */
+  /* Ou trouver les fichiers. Par defaut le dossier sons/ a cote des pages.
+     Une page peut fournir sa propre fonction : c'est ce qui permet a l'apercu
+     en un seul fichier d'embarquer les sons au lieu de pointer un dossier
+     qu'il n'a pas. */
+  function adresse(nom) {
+    if (typeof window !== 'undefined' && typeof window.IPP_SONS_URL === 'function') {
+      return window.IPP_SONS_URL(nom);
+    }
+    return 'sons/' + nom + '.mp3';
+  }
+
   function preparer() {
     if (prets) { return; }
     prets = true;
     for (var i = 0; i < NOMS.length; i++) {
-      var a = new Audio('sons/' + NOMS[i] + '.mp3');
+      var a = new Audio(adresse(NOMS[i]));
       a.preload = 'auto';
       a.volume = 0.55;
       cache[NOMS[i]] = a;
