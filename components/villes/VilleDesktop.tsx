@@ -70,6 +70,8 @@ export default function VilleDesktop({ ville }: { ville: any }) {
   const [showAllRestos, setShowAllRestos] = useState(false)
   // Liste complète des mosquées, dépliable dans le bloc « Où prier »
   const [showAllMosquees, setShowAllMosquees] = useState(false)
+  // Activites : 30 cartes d'un coup = 7,5 ecrans. Meme regle que le board.
+  const [visibleActivites, setVisibleActivites] = useState(6)
   // Vue détail des lieux CURÉS (profondeur réelle) — null = fermée
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [detail, setDetail] = useState<{ kind: 'resto' | 'mosquee' | 'activite' | 'hotel'; item: any } | null>(null)
@@ -657,7 +659,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
         <section id="sec-activites" style={{ scrollMarginTop: 118, marginTop: 40 }}>
           <h2 style={sectionTitle}>🎯 {en ? `Things to do in ${ville.nom}` : `Que faire à ${ville.nom}`}</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '16px' }}>
-            {activites.map((a: any, i: number) => (
+            {activites.slice(0, visibleActivites).map((a: any, i: number) => (
               <div key={i} style={card}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
                   <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: '18px', color: 'var(--texte)', flex: 1 }}>{a.nom}</p>
@@ -670,6 +672,18 @@ export default function VilleDesktop({ ville }: { ville: any }) {
               </div>
             ))}
           </div>
+          {activites.length > visibleActivites && (
+            <div style={{ textAlign: 'center', marginTop: 20 }}>
+              <button
+                onClick={() => setVisibleActivites((v) => v + 6)}
+                style={{ minHeight: 56, padding: '0 26px', borderRadius: 16, cursor: 'pointer', border: '2px solid rgba(27,67,50,0.25)', background: '#fff', color: 'var(--foret)', fontWeight: 800, fontSize: 15.5 }}
+              >
+                {en
+                  ? `Show ${Math.min(activites.length - visibleActivites, 6)} more (${activites.length - visibleActivites} left)`
+                  : `Voir ${Math.min(activites.length - visibleActivites, 6)} activités de plus (${activites.length - visibleActivites} restantes)`}
+              </button>
+            </div>
+          )}
         </section>
         )}
 

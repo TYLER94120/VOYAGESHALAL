@@ -38,6 +38,10 @@ export default function HotelFilter({ hotels, mosques, restos, center, en: enPro
   const [budget, setBudget] = useState<string | null>(null)
   const [locNearMosque, setLocNearMosque] = useState(false)
   const [locRestos, setLocRestos] = useState(false)
+  // La liste complete faisait 31 ecrans a elle seule (111 hotels d'un coup).
+  // Regle du board : on repond d'abord, la suite vient a la demande.
+  const PAR_LOT = 6
+  const [visibles, setVisibles] = useState(PAR_LOT)
 
   const enriched: Enriched[] = useMemo(() => hotels.map((h) => {
     const c = coordsOf(h)
@@ -81,10 +85,11 @@ export default function HotelFilter({ hotels, mosques, restos, center, en: enPro
     { id: 'cher', fr: '💶 Moins cher', en: '💶 Cheapest' },
   ]
   const activeCount = types.size + equip.size + (budget ? 1 : 0) + (locNearMosque ? 1 : 0) + (locRestos ? 1 : 0)
+  const resetLot = () => setVisibles(PAR_LOT)
   const toggle = (set: Set<string>, setter: (s: Set<string>) => void, id: string) => {
-    const n = new Set(set); n.has(id) ? n.delete(id) : n.add(id); setter(n)
+    const n = new Set(set); n.has(id) ? n.delete(id) : n.add(id); setter(n); resetLot()
   }
-  const chip = (on: boolean): React.CSSProperties => ({ padding: '8px 14px', borderRadius: 30, border: `1.5px solid ${on ? 'var(--foret)' : 'rgba(27,67,50,0.25)'}`, background: on ? 'var(--foret)' : '#fff', color: on ? '#fff' : 'var(--foret)', fontWeight: 700, fontSize: 13, cursor: 'pointer' })
+  const chip = (on: boolean): React.CSSProperties => ({ minHeight: 46, padding: '0 16px', borderRadius: 30, display: 'inline-flex', alignItems: 'center', border: `1.5px solid ${on ? 'var(--foret)' : 'rgba(27,67,50,0.25)'}`, background: on ? 'var(--foret)' : '#fff', color: on ? '#fff' : 'var(--foret)', fontWeight: 700, fontSize: 13, cursor: 'pointer' })
   const t = (fr: string, en2: string) => (en ? en2 : fr)
 
   return (
@@ -140,7 +145,7 @@ export default function HotelFilter({ hotels, mosques, restos, center, en: enPro
 
       {/* Liste des hôtels filtrés/triés */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 20 }}>
-        {filtered.map((e, i) => {
+        {filtered.slice(0, visibles).map((e, i) => {
           const h = e.h
           return (
             <div key={i} style={{ background: '#fff', border: '1px solid rgba(27,67,50,0.1)', borderRadius: 18, padding: 18 }}>
@@ -170,6 +175,18 @@ export default function HotelFilter({ hotels, mosques, restos, center, en: enPro
           )
         })}
       </div>
+      {/* Le reste a la demande — le compte exact est annonce */}
+      {filtered.length > visibles && (
+        <div style={{ textAlign: 'center', marginTop: 22 }}>
+          <button
+            onClick={() => setVisibles((v) => v + PAR_LOT)}
+            style={{ minHeight: 56, padding: '0 26px', borderRadius: 16, cursor: 'pointer', border: '2px solid rgba(27,67,50,0.25)', background: '#fff', color: 'var(--foret)', fontWeight: 800, fontSize: 15.5 }}
+          >
+            {t(`Voir ${Math.min(filtered.length - visibles, PAR_LOT)} hôtels de plus (${filtered.length - visibles} restants)`,
+               `Show ${Math.min(filtered.length - visibles, PAR_LOT)} more hotels (${filtered.length - visibles} left)`)}
+          </button>
+        </div>
+      )}
       {filtered.length === 0 && (
         <p style={{ textAlign: 'center', color: 'var(--texte-2)', padding: 24 }}>{t('Aucun hôtel ne correspond à ces filtres.', 'No hotel matches these filters.')}</p>
       )}
