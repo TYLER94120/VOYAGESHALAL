@@ -686,22 +686,21 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
           </div>
         )}
 
-        {/* ── Rangee : Qibla + date hegirienne (calcul local) ── */}
-        <div className="board-smalls" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginTop: 10 }}>
-          <Link href="/qibla" style={{ ...T.tile, textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 12 }}>
-            <span style={{ fontSize: 26, transform: `rotate(${qibla.deg}deg)`, display: 'inline-block', lineHeight: 1 }} aria-hidden>🧭</span>
-            <span>
-              <p style={T.lab}>{en ? 'Qibla' : 'Qibla'}</p>
-              <p style={{ color: '#fdfaf3', fontWeight: 800, fontSize: 15, margin: '2px 0 0' }}>{qibla.deg}° · {qibla.dir}</p>
-              <p style={{ ...T.meta, color: 'var(--or)', fontWeight: 700 }}>{en ? 'Compass →' : 'Boussole →'}</p>
+        {/* ── Une seule ligne discrete : Qibla + date hegirienne ──
+            Fusionnees pour alleger le board (7 instruments -> 6). Deux
+            zones de frappe distinctes, chacune >= 44 px. */}
+        <div className="board-smalls" style={{ ...T.tile, marginTop: 10, display: 'flex', alignItems: 'center', gap: 10, padding: '6px 10px' }}>
+          <Link href="/qibla" style={{ flex: 1, minHeight: 44, display: 'flex', alignItems: 'center', gap: 8, textDecoration: 'none' }}>
+            <span style={{ fontSize: 19, transform: `rotate(${qibla.deg}deg)`, display: 'inline-block', lineHeight: 1 }} aria-hidden>🧭</span>
+            <span style={{ color: '#fdfaf3', fontWeight: 800, fontSize: 14 }}>
+              {qibla.deg}° · {qibla.dir}
+              <span style={{ ...T.meta, fontWeight: 600, marginLeft: 6 }}>{en ? 'Qibla' : 'Qibla'}</span>
             </span>
           </Link>
-          <Link href="/horaires-priere" style={{ ...T.tile, display: 'flex', alignItems: 'center', gap: 12, textDecoration: 'none' }}>
-            <span style={{ fontSize: 24 }} aria-hidden>🌙</span>
-            <span>
-              <p style={T.lab}>{en ? 'Hijri date' : 'Date hégirienne'}</p>
-              <p style={{ color: '#fdfaf3', fontWeight: 800, fontSize: 14, margin: '2px 0 0', lineHeight: 1.3 }}>{hijri ?? '—'}</p>
-            </span>
+          <span aria-hidden style={{ width: 1, alignSelf: 'stretch', background: 'rgba(253,250,243,0.14)' }} />
+          <Link href="/horaires-priere" style={{ flex: 1, minHeight: 44, display: 'flex', alignItems: 'center', gap: 8, textDecoration: 'none', justifyContent: 'flex-end' }}>
+            <span style={{ fontSize: 17 }} aria-hidden>🌙</span>
+            <span style={{ color: 'rgba(253,250,243,0.85)', fontWeight: 700, fontSize: 13, textAlign: 'right', lineHeight: 1.25 }}>{hijri ?? '—'}</span>
           </Link>
         </div>
 
