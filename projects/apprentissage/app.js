@@ -14,12 +14,78 @@
      comme "bientot" plutot que de faire croire a du contenu.
      ---------------------------------------------------------------------- */
 
+  /* ---------- la carte complete des themes --------------------------------
+     Le site annonce tout ce qu'il couvrira, et se remplit lecon par lecon.
+
+     Pourquoi publier la carte entiere alors que la plupart des parcours sont
+     encore vides : parce que la seule autre facon d'avoir "une grosse offre"
+     tout de suite serait de fabriquer des dizaines de pages faibles. Google
+     sanctionne cela, et surtout un contenu religieux non verifie engage la
+     responsabilite de Mohamed. Une carte annoncee est honnete ; une page vide
+     par theme ne l'est pas. Il n'y a donc qu'UNE page pour toute la carte.
+
+     Chaque parcours dit ce qu'il enseignera : c'est une information reelle,
+     pas un texte de remplissage.
+
+     Absent volontairement : la zakat et tout ce qui touche a l'argent.
+     Decision de Mohamed, sa responsabilite est en jeu. Ne pas l'ajouter sans
+     son accord explicite.
+     ---------------------------------------------------------------------- */
+
+  var FAMILLES = [
+    { id: 'croire', nom: 'La foi',          quoi: 'Ce qu\'on croit, et pourquoi.' },
+    { id: 'prier',  nom: 'La priere',       quoi: 'Le premier geste du quotidien.' },
+    { id: 'coran',  nom: 'Le Coran',        quoi: 'Le comprendre, puis le retenir.' },
+    { id: 'arabe',  nom: 'La langue arabe', quoi: 'Pour lire sans intermediaire.' },
+    { id: 'vivre',  nom: 'Le quotidien',    quoi: 'Ce qui se vit chaque jour.' }
+  ];
+
   var PARCOURS = [
-    { id: 'sourates',    nom: 'Le sens des sourates' },
-    { id: 'priere',      nom: 'La priere pas a pas' },
-    { id: 'foi',         nom: 'Les bases de la foi' },
-    { id: 'invocations', nom: 'Les invocations du jour' },
-    { id: 'memoriser',   nom: 'Memoriser le Coran' }
+    // --- La foi ---
+    { id: 'foi', famille: 'croire', nom: 'Les bases de la foi',
+      quoi: 'Les six piliers de la foi, un par un, avec leur source.' },
+    { id: 'noms-allah', famille: 'croire', nom: 'Les noms d\'Allah',
+      quoi: 'Ce que chaque nom veut dire, et le verset ou il apparait.' },
+    { id: 'prophetes', famille: 'croire', nom: 'Les prophetes',
+      quoi: 'Ceux que le Coran nomme, et ce qu\'il raconte d\'eux.' },
+    { id: 'sira', famille: 'croire', nom: 'La vie du Prophete',
+      quoi: 'Sa vie dans l\'ordre, en s\'appuyant sur les recits etablis.' },
+    { id: 'au-dela', famille: 'croire', nom: 'L\'au-dela',
+      quoi: 'Ce que les textes disent du Jour dernier, sans rien y ajouter.' },
+
+    // --- La priere ---
+    { id: 'priere', famille: 'prier', nom: 'La priere pas a pas',
+      quoi: 'Les gestes et les paroles, unite par unite.' },
+    { id: 'purification', famille: 'prier', nom: 'La purification',
+      quoi: 'Les ablutions geste par geste, et ce qui les annule.' },
+    { id: 'priere-quand', famille: 'prier', nom: 'Les moments et les conditions',
+      quoi: 'Les cinq prieres, leurs moments, et ce qui rend la priere valable.' },
+
+    // --- Le Coran ---
+    { id: 'sourates', famille: 'coran', nom: 'Le sens des sourates',
+      quoi: 'Verset par verset, en commencant par les plus recitees.' },
+    { id: 'memoriser', famille: 'coran', nom: 'Memoriser le Coran',
+      quoi: 'Une methode par petits morceaux, avec des revisions espacees.' },
+    { id: 'lire-coran', famille: 'coran', nom: 'Lire l\'arabe du Coran',
+      quoi: 'Dechiffrer lettres et voyelles pour lire par soi-meme.' },
+
+    // --- La langue arabe ---
+    { id: 'alphabet', famille: 'arabe', nom: 'L\'alphabet arabe',
+      quoi: 'Les 28 lettres, leur son et leurs formes selon la place.' },
+    { id: 'mots-coran', famille: 'arabe', nom: 'Les mots qui reviennent le plus',
+      quoi: 'Comprendre une grande part du Coran avec peu de mots.' },
+
+    // --- Le quotidien ---
+    { id: 'invocations', famille: 'vivre', nom: 'Les invocations du jour',
+      quoi: 'Au reveil, en mangeant, en sortant, avant de dormir.' },
+    { id: 'comportement', famille: 'vivre', nom: 'Le comportement',
+      quoi: 'La parole, la colere, les parents, les voisins.' },
+    { id: 'jeune', famille: 'vivre', nom: 'Le jeune et le Ramadan',
+      quoi: 'Ce que le jeune demande, et ce qui le rompt.' },
+    { id: 'pelerinage', famille: 'vivre', nom: 'Le pelerinage',
+      quoi: 'Les etapes du Hajj et de la Omra, dans l\'ordre.' },
+    { id: 'annee', famille: 'vivre', nom: 'Les moments de l\'annee',
+      quoi: 'Le vendredi, Ramadan, les dix jours, Achoura.' }
   ];
 
   var CATALOGUE = [
@@ -359,6 +425,9 @@
       return {
         id: p.id,
         nom: p.nom,
+        quoi: p.quoi,
+        famille: p.famille,
+        lecons: dedans,
         total: dedans.length,
         faites: faites.length,
         pret: dedans.length > 0
@@ -366,7 +435,36 @@
     });
   }
 
+  // Les parcours ranges par famille, ceux qui sont ouverts en premier dans
+  // chaque famille. Sert a la page "Tous les parcours".
+  function offreParFamille() {
+    var etats = parcoursAvecEtat();
+    return FAMILLES.map(function (f) {
+      var dedans = etats.filter(function (p) { return p.famille === f.id; });
+      dedans.sort(function (a, b) { return (b.pret ? 1 : 0) - (a.pret ? 1 : 0); });
+      return {
+        id: f.id,
+        nom: f.nom,
+        quoi: f.quoi,
+        parcours: dedans,
+        ouverts: dedans.filter(function (p) { return p.pret; }).length
+      };
+    });
+  }
+
+  // Le compte honnete de ce qui existe, pour ne jamais gonfler l'offre.
+  function chiffresOffre() {
+    var etats = parcoursAvecEtat();
+    return {
+      lecons: publiees().length,
+      parcours: etats.length,
+      parcoursOuverts: etats.filter(function (p) { return p.pret; }).length,
+      familles: FAMILLES.length
+    };
+  }
+
   global.IPP = {
+    FAMILLES: FAMILLES,
     PARCOURS: PARCOURS,
     CATALOGUE: CATALOGUE,
     nomParcours: nomParcours,
@@ -386,6 +484,8 @@
     ordreLecons: ordreLecons,
     leconDuJour: leconDuJour,
     parcoursAvecEtat: parcoursAvecEtat,
+    offreParFamille: offreParFamille,
+    chiffresOffre: chiffresOffre,
     niveau: niveau,
     enregistrerNiveau: enregistrerNiveau,
     oublierNiveau: oublierNiveau,
@@ -738,24 +838,94 @@ function ippRendrePointDepart(q) {
 function ippListeParcours(lien) {
   var etats = IPP.parcoursAvecEtat();
   var out = '';
+  var ouverts = 0;
+
   for (var j = 0; j < etats.length; j++) {
     var p = etats[j];
-    if (p.pret) {
-      var pct = p.total ? Math.round((p.faites / p.total) * 100) : 0;
-      var ouvre = lien ? '<a class="pc" href="' + lien + '">' : '<div class="pc">';
-      var ferme = lien ? '</a>' : '</div>';
-      out += ouvre
-           + '<span class="haut"><span class="nom">' + ippEchappe(p.nom) + '</span>'
-           + '<span class="cpt">' + p.faites + ' / ' + p.total + '</span></span>'
-           + '<span class="barre-p"><span style="width:' + pct + '%"></span></span>'
-           + ferme;
-    } else {
-      out += '<div class="ligne inerte">' + ippEtoile(17)
-           + '<span><span class="t">' + ippEchappe(p.nom) + '</span>'
-           + '<span class="s">Bientot</span></span></div>';
+    if (!p.pret) { continue; }   // les parcours a venir sont sur parcours.html
+    ouverts++;
+    var pct = p.total ? Math.round((p.faites / p.total) * 100) : 0;
+    var ouvre = lien ? '<a class="pc" href="' + lien + '">' : '<div class="pc">';
+    var ferme = lien ? '</a>' : '</div>';
+    out += ouvre
+         + '<span class="haut"><span class="nom">' + ippEchappe(p.nom) + '</span>'
+         + '<span class="cpt">' + p.faites + ' / ' + p.total + '</span></span>'
+         + '<span class="barre-p"><span style="width:' + pct + '%"></span></span>'
+         + ferme;
+  }
+
+  // Renvoi vers la carte complete, avec le compte reel.
+  var c = IPP.chiffresOffre();
+  out += '<a class="ligne" href="parcours.html">' + ippEtoile(17, '#c9a84c')
+       + '<span><span class="t">Voir les ' + c.parcours + ' parcours du programme</span>'
+       + '<span class="s">' + ouverts + ' ouverts, les autres en preparation</span></span>'
+       + '<span class="fl" aria-hidden="true">&rsaquo;</span></a>';
+  return out;
+}
+
+
+/* =========================================================
+   Vue : "Tous les parcours"
+
+   La carte des themes est ecrite en dur dans parcours.html (donc lisible par
+   Google et sans JavaScript). Cette fonction ne fait que l'enrichir : elle
+   marque ce qui est ouvert et ajoute les liens vers les lecons existantes.
+   ========================================================= */
+
+function ippRendreOffre(racine) {
+  'use strict';
+  var r = racine || document;
+  var q = ippViseur(racine);
+
+  // --- le compte, dit sans le gonfler ---
+  var c = IPP.chiffresOffre();
+  var zone = q('compte');
+  if (zone) {
+    zone.innerHTML =
+        '<div class="chiffres">'
+      + '<div class="ch"><span class="n">' + c.lecons + '</span>'
+      + '<span class="l">' + (c.lecons === 1 ? 'lecon prete' : 'lecons pretes') + '</span></div>'
+      + '<div class="ch"><span class="n">' + c.parcoursOuverts + ' / ' + c.parcours + '</span>'
+      + '<span class="l">parcours ouverts</span></div>'
+      + '<div class="ch"><span class="n">' + c.familles + '</span>'
+      + '<span class="l">familles de themes</span></div>'
+      + '</div>';
+  }
+
+  // --- l'etat de chaque parcours ---
+  var etats = {};
+  var liste = IPP.parcoursAvecEtat();
+  for (var i = 0; i < liste.length; i++) { etats[liste[i].id] = liste[i]; }
+
+  var cartes = r.querySelectorAll('[data-parcours]');
+  for (var j = 0; j < cartes.length; j++) {
+    var el = cartes[j];
+    var p = etats[el.getAttribute('data-parcours')];
+    if (!p) { continue; }
+
+    var etiq = el.querySelector('[data-r-etat]');
+    var liens = el.querySelector('[data-r-liens]');
+    if (!p.pret) { continue; }   // "En preparation" est deja dans le HTML
+
+    el.classList.add('ouvert');
+    if (etiq) {
+      etiq.textContent = (p.total === 1) ? '1 lecon' : p.total + ' lecons';
+      etiq.classList.add('ok');
+    }
+    if (liens) {
+      var h = '';
+      for (var k = 0; k < p.lecons.length; k++) {
+        var l = p.lecons[k];
+        var faite = IPP.estFaite(l.id);
+        h += '<a class="ligne" href="' + l.url + '">'
+           + ippEtoile(15, faite ? '#c9a84c' : '#6c8271')
+           + '<span><span class="t">' + ippEchappe(l.titre) + '</span>'
+           + '<span class="s">' + (faite ? 'Deja faite' : l.minutes + ' min') + '</span></span>'
+           + '<span class="fl" aria-hidden="true">&rsaquo;</span></a>';
+      }
+      liens.innerHTML = h;
     }
   }
-  return out;
 }
 
 

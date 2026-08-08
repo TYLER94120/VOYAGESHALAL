@@ -28,6 +28,7 @@ Version de travail, hebergee provisoirement dans le repo VOYAGESHALAL sur la bra
 | `lecon-invocations-matin.html` | Lecon 2 : trois invocations pour commencer la journee |
 | `lecon-six-piliers-foi.html` | Lecon 3 : les six piliers de la foi (hadith de Jibril) |
 | `lecon-priere-gestes.html` | Lecon 4 : les gestes de la priere, dans l'ordre |
+| `parcours.html` | Le programme complet : 18 parcours dans 5 familles |
 | `chemin.html` | La progression : compteur, calendrier des jours, parcours, revisions a venir |
 | `style.css` | Toute la mise en forme (charte de la famille) |
 | `app.js` | Catalogue, niveau, progression, revisions, et le lecteur de lecon commun |
@@ -38,7 +39,46 @@ Version de travail, hebergee provisoirement dans le repo VOYAGESHALAL sur la bra
 | `apercu.html` | **Fichier genere.** Ne pas modifier a la main, relancer le script |
 
 Quatre lecons publiees, dans quatre parcours differents : il y a de quoi
-revenir plusieurs jours de suite, ce qui est tout l'objet du site. Le lecteur de lecon (`ippDemarrerLecon`) est ecrit une
+revenir plusieurs jours de suite, ce qui est tout l'objet du site.
+
+## La carte des themes, et pourquoi elle est publiee en entier
+
+Mohamed veut que le site couvre **tous les themes de l'islam**. La carte
+complete est donc publiee des maintenant : **18 parcours dans 5 familles**
+(la foi, la priere, le Coran, la langue arabe, le quotidien), sur
+`parcours.html`.
+
+Quatre parcours sont ouverts, quatorze annonces. C'est un choix, et voici le
+raisonnement, parce qu'il faudra le retenir :
+
+- **La seule autre facon d'avoir une grosse offre tout de suite serait de
+  fabriquer des dizaines de pages faibles.** Google sanctionne cela, et
+  surtout un contenu religieux non verifie engage la responsabilite de
+  Mohamed. Le volume se paierait deux fois.
+- **Une carte annoncee est honnete. Une page vide par theme ne l'est pas.**
+  Il n'y a donc qu'**une seule page** pour toute la carte, jamais 18 pages
+  creuses : ce serait exactement le schema que Google appelle des pages
+  satellites.
+- **Chaque parcours dit ce qu'il enseignera.** C'est une information reelle,
+  verifiable, pas du texte de remplissage. Un lecteur sait ou il met les
+  pieds ; c'est la difference entre une promesse et une facade.
+- Et la page l'explique elle-meme au lecteur, en clair.
+
+L'accueil, lui, ne liste **que les parcours ouverts** plus un lien vers la
+carte : dix-huit lignes « en preparation » sur l'ecran du matin seraient
+decourageantes.
+
+### Absent volontairement
+
+**La zakat et tout ce qui touche a l'argent.** Decision de Mohamed, sa
+responsabilite est en jeu. Ne pas l'ajouter a `PARCOURS` sans son accord
+explicite, meme si un theme semble le reclamer.
+
+### Si la carte change
+
+`PARCOURS` (dans `app.js`) et `parcours.html` doivent rester synchronises.
+Un test le verifie automatiquement et signale tout parcours present d'un cote
+et pas de l'autre. Le lecteur de lecon (`ippDemarrerLecon`) est ecrit une
 seule fois dans `app.js` et partage par toutes les lecons.
 
 ## Les trois questions d'accueil

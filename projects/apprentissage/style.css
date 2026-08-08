@@ -639,3 +639,78 @@ a.pc:hover, button.pc:hover { border-color: var(--trait-fort); }
 .rdv-choix h3 { font-size: 24px; }
 .rdv-choix .clair { font-size: 17px; }
 .rdv-choix .prudence { margin: 0; }
+
+/* ---------- la page "Tous les parcours" ---------- */
+
+.compte-offre { display: flex; flex-direction: column; }
+
+.chiffres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.ch {
+  flex: 1 1 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  background: var(--surface-1);
+  border: 1px solid var(--trait);
+  border-radius: var(--r-petit);
+  padding: 15px 14px;
+}
+.ch .n {
+  font-family: var(--serif);
+  font-size: 27px;
+  line-height: 1;
+  color: var(--or);
+  font-variant-numeric: tabular-nums;
+}
+.ch .l { font-size: 13px; line-height: 1.35; color: var(--texte-3); }
+
+.famille {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-top: 8px;
+  border-top: 1px solid var(--trait);
+}
+.famille > h2 { font-size: 27px; }
+.famille-quoi { color: var(--texte-3); font-size: 15px; margin: -8px 0 0; }
+
+/* Un parcours du programme. Ouvert = borde d'or ; en preparation = sobre,
+   mais toujours lisible : ce n'est pas une case grisee, c'est une promesse. */
+.pcarte {
+  background: var(--surface-1);
+  border: 1px solid var(--trait);
+  border-radius: var(--r-petit);
+  padding: 17px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.pcarte.ouvert { border-color: var(--trait-fort); background: var(--surface-2); }
+.pcarte h3 { font-size: 20px; }
+.pquoi { font-size: 16px; line-height: 1.5; color: var(--texte-2); margin: 0; }
+
+.etiq-p {
+  align-self: flex-start;
+  font-size: 11px;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: rgba(253, 250, 243, 0.07);
+  color: var(--texte-3);
+}
+.etiq-p.ok { background: rgba(201, 168, 76, 0.17); color: var(--or); }
+
+.pliens { display: flex; flex-direction: column; gap: 8px; }
+.pliens:empty { display: none; }
+.pliens .ligne { background: var(--nuit); }
+
+@media (min-width: 620px) {
+  .famille > h2 { font-size: 31px; }
+  .ch .n { font-size: 31px; }
+}

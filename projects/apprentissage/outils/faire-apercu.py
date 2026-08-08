@@ -28,6 +28,7 @@ VUES = [
     ("lecon-invocations-matin.html", "invocations-matin"),
     ("lecon-six-piliers-foi.html", "six-piliers-foi"),
     ("lecon-priere-gestes.html", "priere-gestes"),
+    ("parcours.html", "programme"),
     ("chemin.html", "chemin"),
 ]
 
@@ -73,7 +74,8 @@ def main() -> int:
     hote.innerHTML = '';
     hote.appendChild(gabarit.content.cloneNode(true));
 
-    if (vue === 'accueil')      { ippRendreAccueil(hote); }
+    if (vue === 'accueil')       { ippRendreAccueil(hote); }
+    else if (vue === 'programme'){ ippRendreOffre(hote); }
     else if (vue === 'chemin')  { ippRendreChemin(hote); }
     else                        { ippDemarrerLecon(vue, hote); }
 
