@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server'
 import { readFileSync } from 'fs'
 import path from 'path'
 import cityCoords from '@/lib/cityCoords.json'
+import { conforme } from '@/lib/conformite'
 
 // API « Autour de moi » : renvoie INSTANTANÉMENT nos points pré-chargés
 // (mosquées, restaurants halal, hôtels) proches d'une position, à partir de la
@@ -78,7 +79,7 @@ export async function GET(req: Request) {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     mosquees: near(data.mosqueesPrincipales as any[], (o, dist) => ({ id: `m-${o.nom}`, lat: o.lat, lng: o.lng, name: o.nom, sub: o.adresse || 'Lieu de prière', dist })),
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    restaurants: near(data.restaurants as any[], (o, dist) => ({ id: `r-${o.nom}`, lat: o.lat, lng: o.lng, name: o.nom, sub: o.type || 'Restaurant', dist, halal: o.halalConfidence === 'certified' || o.halalConfidence === 'high' ? 'yes' : 'likely' })),
+    restaurants: near((data.restaurants as any[]).filter((o) => conforme(o?.nom, o?.type, o?.halalConfidence)), (o, dist) => ({ id: `r-${o.nom}`, lat: o.lat, lng: o.lng, name: o.nom, sub: o.type || 'Restaurant', dist, halal: o.halalConfidence === 'certified' || o.halalConfidence === 'high' ? 'yes' : 'likely' })),
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     hotels: near(data.hotels as any[], (o, dist) => ({ id: `h-${o.nom}`, lat: o.lat, lng: o.lng, name: o.nom, sub: o.categorie || 'Hôtel', dist })),
     boucheries: [] as unknown[],

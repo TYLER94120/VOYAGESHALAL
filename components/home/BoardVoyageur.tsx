@@ -5,6 +5,7 @@ import { useInstantPosition } from '@/lib/useInstantPosition'
 import { computePrayerTimesFull } from '@/lib/prayerCalc'
 import { useLanguage } from '@/components/i18n/LanguageProvider'
 import { ENVIES, envieById, niveauHalal } from '@/lib/envies'
+import { conforme } from '@/lib/conformite'
 
 // 🎛️ BOARD VOYAGEUR (bento) — l'accueil devient un tableau de bord contextuel :
 // des REPONSES deja calculees, jamais des menus. Il absorbe le Radar Priere
@@ -107,7 +108,9 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
           if (!la || !lo || !el.tags?.name) continue
           const lieu: Lieu = { nom: el.tags.name, lat: la, lng: lo, source: 'osm', distM: hav(pos.lat, pos.lng, la, lo) }
           if (el.tags.amenity === 'place_of_worship') mc.push(lieu)
-          else rc.push(lieu)
+          // Un « Restaurant & Lounge » a chicha reste un lieu ou l'on
+          // n'envoie personne, meme si sa cuisine est halal
+          else if (conforme(el.tags.name, el.tags.cuisine, el.tags['diet:halal'])) rc.push(lieu)
         }
         osmDone = true
       }).catch(() => {})

@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { readFileSync } from 'fs'
 import path from 'path'
+import { conforme } from '@/lib/conformite'
 
 // Liste complète des restaurants d'une ville, chargée À LA DEMANDE quand
 // l'utilisateur ouvre « Voir toutes les adresses » — la page ville n'en
@@ -14,7 +15,11 @@ export async function GET(_req: NextRequest, ctx: { params: Promise<{ slug: stri
     const raw = readFileSync(path.join(process.cwd(), 'data', 'villes', `${slug}.json`), 'utf-8')
     const v = JSON.parse(raw)
     return NextResponse.json(
-      { restaurants: Array.isArray(v.restaurants) ? v.restaurants : [] },
+      {
+        restaurants: (Array.isArray(v.restaurants) ? v.restaurants : []).filter(
+          (r: { nom?: string; type?: string; halalConfidence?: string }) => conforme(r.nom, r.type, r.halalConfidence),
+        ),
+      },
       { headers: { 'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=86400' } },
     )
   } catch {

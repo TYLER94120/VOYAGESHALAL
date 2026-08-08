@@ -1,6 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import { forceEnvie } from '@/lib/envies'
+import { conforme } from '@/lib/conformite'
 
 // 📒 ANNUAIRE — les lieux DEJA documentes dans nos 354 fiches villes
 // (mosquees et restaurants), exposes autour d'une position.
@@ -74,6 +75,9 @@ function lieuxDeVille(slug: string, nom: string): AnnuaireLieu[] {
         const l = raw as { nom?: string; lat?: number; lng?: number; type?: string; halalConfidence?: string; mapsUrl?: string; coordonnees?: { lat?: number; lng?: number } }
         const lat = Number(l.lat ?? l.coordonnees?.lat), lng = Number(l.lng ?? l.coordonnees?.lng)
         if (!l.nom || !Number.isFinite(lat) || !Number.isFinite(lng)) continue
+        // Bars, lounges a chicha, boites : ecartes de l'annuaire (le LIEU
+        // compte autant que la nourriture — voir lib/conformite.ts)
+        if (type === 'resto' && !conforme(l.nom, l.type, l.halalConfidence)) continue
         out.push({
           nom: String(l.nom), lat, lng, type,
           cuisine: type === 'resto' ? (l.type ?? undefined) : undefined,

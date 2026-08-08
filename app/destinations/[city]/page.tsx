@@ -14,6 +14,7 @@ import { relatedForCity, countrySlugForName } from '@/lib/relatedContent'
 import { cityEn, countryEn } from '@/lib/poiI18n'
 import cityCoords from '@/lib/cityCoords.json'
 import { getDomainSEO, FR_URL, EN_URL } from '@/lib/domain'
+import { conforme } from '@/lib/conformite'
 
 export const dynamicParams = false
 
@@ -114,6 +115,12 @@ export default async function DestinationPage({ params }: Props) {
   const others = all.filter((c) => c.slug !== city && c.pays !== ville.pays)
   const related = [...sameCountry, ...others].slice(0, 12)
   const coords = all.find((c) => c.slug === city)
+  // Restaurants proposes au public : bars, lounges a chicha et boites de
+  // nuit sont ecartes (lib/conformite.ts). Le lieu compte autant que la
+  // nourriture pour un voyageur musulman en famille.
+  const restaurantsConformes = (ville.restaurants ?? []).filter(
+    (r: { nom?: string; type?: string; halalConfidence?: string }) => conforme(r.nom, r.type, r.halalConfidence),
+  )
 
   return (
     <>
@@ -127,8 +134,10 @@ export default async function DestinationPage({ params }: Props) {
           charge à la demande via /api/villes/[slug]/restos. */}
       <VilleDesktop ville={{
         ...ville,
-        restaurants: (ville.restaurants ?? []).slice(0, 24),
-        restaurantsTotal: ville.restaurants?.length ?? 0,
+        // Bars, lounges à chicha et boîtes de nuit sont écartés : le lieu
+        // compte autant que la nourriture (lib/conformite.ts)
+        restaurants: restaurantsConformes.slice(0, 24),
+        restaurantsTotal: restaurantsConformes.length,
       }} />
 
       {/* CTA affilié hôtels (revenu n°1) — visible sur toute la page ville */}
