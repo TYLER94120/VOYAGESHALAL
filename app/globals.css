@@ -513,6 +513,28 @@ body { top: 0 !important; }
   }
 }
 
+/* ===== Board voyageur : colonne sur mobile, bento large sur écran PC =====
+   Sur mobile le board reste une pile lisible ; au-delà de 1024px il devient
+   une vraie grille : plus de bande vide sur les côtés, tout tient en un écran. */
+.board-wrap { max-width: 640px; }
+@media (min-width: 1024px) {
+  .board-wrap {
+    max-width: 1080px;
+    display: grid;
+    grid-template-columns: 1.45fr 1fr;
+    gap: 12px;
+    align-items: start;
+  }
+  /* les marges verticales mobiles sont remplacées par le gap de la grille */
+  .board-wrap > * { margin-top: 0 !important; }
+  .board-topbar { grid-column: 1 / -1; margin-bottom: 0 !important; }
+  .board-hero, .board-slim { grid-column: 1; align-self: stretch; }
+  .board-duo { grid-column: 2; align-content: start; }
+  .board-reels { grid-column: 1 / -1; }
+  .board-smalls { grid-column: 1; }
+  .board-strip { grid-column: 2; align-items: center; }
+}
+
 /* Dock flottant (étape 2 du board) : pilule détachée du bord, fond nuit,
    liseré or — la nav fait partie du design au lieu de le couper. */
 .bottom-nav {

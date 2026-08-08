@@ -1,7 +1,7 @@
 // Bouton flottant « Une question halal ? » — le pont vers HalalGPT.
 // FR (voyageshalal.fr) → halalgpt.fr ; EN (gohalaltravel.com) → /halalgpt.
-// Positionné nettement au-dessus de la BottomNav mobile (~53px + safe-area,
-// marge visible incluse), sous ses
+// Positionné au-dessus du dock flottant ET de sa pastille ➕ surélevée
+// (le ➕ culmine à ~95px du bas : 108px laisse une marge visible), sous ses
 // panneaux (zIndex 98-99) pour ne jamais les recouvrir.
 export default function HalalGPTFab({ en = false }: { en?: boolean }) {
   const href = en ? '/halalgpt' : 'https://halalgpt.fr'
@@ -9,7 +9,7 @@ export default function HalalGPTFab({ en = false }: { en?: boolean }) {
   return (
     <a
       href={href}
-      className="fixed right-4 md:right-6 bottom-[calc(88px+env(safe-area-inset-bottom,0px))] md:bottom-6 flex items-center gap-2 min-h-[52px] px-5 rounded-full font-bold text-[15px] transition-transform hover:scale-105"
+      className="fixed right-4 md:right-6 bottom-[calc(108px+env(safe-area-inset-bottom,0px))] md:bottom-6 flex items-center gap-2 min-h-[52px] px-5 rounded-full font-bold text-[15px] transition-transform hover:scale-105"
       style={{
         zIndex: 90,
         backgroundColor: '#c9a84c',

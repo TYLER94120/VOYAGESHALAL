@@ -219,7 +219,7 @@ export function AdhanProvider({ children }: { children: React.ReactNode }) {
     <AdhanContext.Provider value={{ enabled, muezzin, soundMode, chime, volume, perPrayer, nextInfo, setEnabled, setMuezzin, setSoundMode, setChime, setVolume, togglePrayer, test }}>
       {children}
       {playing && (
-        <div style={{ position: 'fixed', left: 12, right: 12, bottom: 'calc(env(safe-area-inset-bottom, 0px) + 88px)', zIndex: 400, background: 'var(--nuit)', border: '1px solid rgba(201,168,76,0.5)', borderRadius: 16, padding: '14px 16px', boxShadow: '0 12px 40px rgba(0,0,0,0.45)', display: 'flex', alignItems: 'center', gap: 12, maxWidth: 520, margin: '0 auto' }}>
+        <div style={{ position: 'fixed', left: 12, right: 12, bottom: 'calc(env(safe-area-inset-bottom, 0px) + 170px)', zIndex: 400, background: 'var(--nuit)', border: '1px solid rgba(201,168,76,0.5)', borderRadius: 16, padding: '14px 16px', boxShadow: '0 12px 40px rgba(0,0,0,0.45)', display: 'flex', alignItems: 'center', gap: 12, maxWidth: 520, margin: '0 auto' }}>
           <div style={{ fontSize: 28 }}>🕌</div>
           <div style={{ flex: 1, minWidth: 0 }}>
             <p style={{ color: 'var(--or)', fontWeight: 800, margin: 0, fontSize: 15 }}>{soundMode === 'discreet' ? 'Rappel' : 'Adhan'} — {PRAYER_LABELS[playing]}</p>

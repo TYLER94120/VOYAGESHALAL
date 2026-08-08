@@ -16,9 +16,10 @@ export default function InstallPrompt() {
   const [show, setShow] = useState(false)
   const [iosHint, setIosHint] = useState(false)
   const pathname = usePathname()
-  // Jamais sur les horaires (masquerait les heures) ni sur le feed Spots
-  // (le bandeau chevauchait les cartes — il reste dispo partout ailleurs).
-  const suppressed = pathname?.startsWith('/horaires-priere') || pathname?.startsWith('/prayer-times')
+  // Jamais sur les horaires (masquerait les heures), ni sur le feed Spots
+  // (chevauchait les cartes), ni sur l'accueil : le board y affiche les
+  // horaires et la page a déjà sa propre section « Installer l'app ».
+  const suppressed = pathname === '/' || pathname?.startsWith('/horaires-priere') || pathname?.startsWith('/prayer-times')
     || pathname === '/spots' || pathname?.startsWith('/spot/')
 
   useEffect(() => {
@@ -61,7 +62,7 @@ export default function InstallPrompt() {
 
   return (
     <div style={{
-      position: 'fixed', left: 12, right: 12, bottom: 'calc(env(safe-area-inset-bottom, 0px) + 88px)',
+      position: 'fixed', left: 12, right: 12, bottom: 'calc(env(safe-area-inset-bottom, 0px) + 170px)',
       zIndex: 300, background: '#0b1a0f', border: '1px solid rgba(201,168,76,0.4)',
       borderRadius: 16, padding: '14px 16px', boxShadow: '0 12px 40px rgba(0,0,0,0.4)',
       display: 'flex', alignItems: 'center', gap: 12, maxWidth: 520, margin: '0 auto',

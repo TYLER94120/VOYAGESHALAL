@@ -38,6 +38,9 @@ export default function BoardVoyageur() {
   const [mosquee, setMosquee] = useState<Lieu | null | undefined>(undefined)
   const [resto, setResto] = useState<Lieu | null | undefined>(undefined)
   const [spots, setSpots] = useState<FeedSpot[] | null>(null)
+  // La recherche OSM a-t-elle abouti ? Sans elle on ne peut PAS affirmer
+  // « aucun lieu connu » — on dit qu'on n'a pas pu chercher (honnetete).
+  const [osmOk, setOsmOk] = useState(true)
 
   useEffect(() => {
     const id = setInterval(() => setNow(Date.now()), 30_000)
@@ -71,6 +74,7 @@ export default function BoardVoyageur() {
   useEffect(() => {
     if (!pos) return
     let cancelled = false
+    let osmDone = false
     const mc: Lieu[] = [], rc: Lieu[] = []
     const q = `[out:json][timeout:12];(node["amenity"="place_of_worship"]["religion"="muslim"](around:5000,${pos.lat},${pos.lng});way["amenity"="place_of_worship"]["religion"="muslim"](around:5000,${pos.lat},${pos.lng});node["amenity"~"restaurant|fast_food"]["diet:halal"~"yes|only"](around:3000,${pos.lat},${pos.lng});way["amenity"~"restaurant|fast_food"]["diet:halal"~"yes|only"](around:3000,${pos.lat},${pos.lng}););out center 40;`
     const p1 = fetch('https://overpass-api.de/api/interpreter', { method: 'POST', body: `data=${encodeURIComponent(q)}` })
@@ -84,6 +88,7 @@ export default function BoardVoyageur() {
           if (el.tags.amenity === 'place_of_worship') mc.push(lieu)
           else rc.push(lieu)
         }
+        osmDone = true
       }).catch(() => {})
     const p2 = fetch(`/api/spots?lat=${pos.lat}&lng=${pos.lng}&radius=5`)
       .then((r) => r.json())
@@ -99,6 +104,7 @@ export default function BoardVoyageur() {
     Promise.allSettled([p1, p2]).then(() => {
       if (cancelled) return
       mc.sort((a, b) => a.distM - b.distM); rc.sort((a, b) => a.distM - b.distM)
+      setOsmOk(osmDone)
       setMosquee(mc[0] ?? null); setResto(rc[0] ?? null)
     })
     return () => { cancelled = true }
@@ -200,9 +206,9 @@ export default function BoardVoyageur() {
 
   return (
     <section style={{ background: 'var(--nuit)', padding: '14px 14px 6px' }} aria-label={en ? 'Your travel board' : 'Ton tableau de bord voyage'}>
-      <div style={{ maxWidth: 640, margin: '0 auto' }}>
+      <div className="board-wrap" style={{ margin: '0 auto' }}>
         {/* Barre ville : 1 tap = GPS exact (le roaming fausse la geoloc IP) */}
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 10 }}>
+        <div className="board-topbar" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 10 }}>
           <button
             onClick={() => { refineGps().then((ok) => { if (!ok) window.location.href = '/horaires-priere' }) }}
             style={{ display: 'flex', alignItems: 'center', gap: 6, minHeight: 40, padding: '4px 12px', borderRadius: 999, border: '1px solid rgba(201,168,76,0.4)', background: 'transparent', color: 'var(--creme)', fontSize: 14.5, fontWeight: 800, cursor: 'pointer' }}
@@ -219,7 +225,7 @@ export default function BoardVoyageur() {
         {/* ── Tuiles composables : la taille suit le moment (focus) ── */}
         {(() => {
           const priereWide = (
-            <div role="link" tabIndex={0} onClick={() => { window.location.href = '/horaires-priere' }} onKeyDown={(e) => { if (e.key === 'Enter') window.location.href = '/horaires-priere' }}
+            <div className="board-hero" role="link" tabIndex={0} onClick={() => { window.location.href = '/horaires-priere' }} onKeyDown={(e) => { if (e.key === 'Enter') window.location.href = '/horaires-priere' }}
               style={{ ...T.tile, background: 'linear-gradient(150deg, rgba(27,67,50,0.85), rgba(255,255,255,0.04))', borderColor: 'rgba(201,168,76,0.35)', cursor: 'pointer' }}>
               <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 10 }}>
                 <p style={{ ...T.lab, color: accent }}>
@@ -254,7 +260,9 @@ export default function BoardVoyageur() {
               )}
               {mosquee === null && (
                 <p style={{ ...T.meta, marginTop: 8 }}>
-                  {en ? 'No known prayer place within 5 km — ' : 'Aucun lieu de prière connu à moins de 5 km — '}
+                  {osmOk
+                    ? (en ? 'No known prayer place within 5 km — ' : 'Aucun lieu de prière connu à moins de 5 km — ')
+                    : (en ? 'Could not search nearby places (no connection) — ' : 'Recherche des lieux impossible (pas de connexion) — ')}
                   <Link href="/qibla" onClick={(e) => e.stopPropagation()} style={{ color: 'var(--or)', fontWeight: 800 }}>🧭 Qibla</Link>
                 </p>
               )}
@@ -263,7 +271,7 @@ export default function BoardVoyageur() {
           // Bandeau priere compact : tout tient sur une ligne quand la priere
           // n'est pas le moment dominant
           const priereSlim = (
-            <Link href="/horaires-priere" style={{ ...T.tile, marginTop: 10, display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none', padding: '11px 14px' }}>
+            <Link className="board-slim" href="/horaires-priere" style={{ ...T.tile, marginTop: 10, display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none', padding: '11px 14px' }}>
               <span style={{ fontSize: 18 }} aria-hidden>🕌</span>
               <p style={{ flex: 1, color: '#fdfaf3', fontWeight: 700, fontSize: 13.5, margin: 0, lineHeight: 1.35 }}>
                 {fenetre.key} {fenetre.mode === 'current' ? (en ? 'ends in' : 'se termine dans') : (en ? 'in' : 'dans')} <strong style={{ color: 'var(--or)' }}>{fmtMin(minLeft)}</strong>
@@ -273,7 +281,7 @@ export default function BoardVoyageur() {
             </Link>
           )
           const mangerWide = bestResto && (
-            <div role="link" tabIndex={0} onClick={() => window.open(itin(bestResto.lat, bestResto.lng), '_blank', 'noopener')} onKeyDown={(e) => { if (e.key === 'Enter') window.open(itin(bestResto.lat, bestResto.lng), '_blank', 'noopener') }}
+            <div className="board-hero" role="link" tabIndex={0} onClick={() => window.open(itin(bestResto.lat, bestResto.lng), '_blank', 'noopener')} onKeyDown={(e) => { if (e.key === 'Enter') window.open(itin(bestResto.lat, bestResto.lng), '_blank', 'noopener') }}
               style={{ ...T.tile, background: 'linear-gradient(150deg, rgba(27,67,50,0.85), rgba(255,255,255,0.04))', borderColor: 'rgba(201,168,76,0.35)', cursor: 'pointer' }}>
               <p style={T.lab}>🍽 {en ? 'Time to eat — nearest halal' : 'C\'est l\'heure de manger — le plus proche'}</p>
               <p style={{ fontFamily: "'Playfair Display', Georgia, serif", color: '#fdfaf3', fontSize: 24, fontWeight: 900, margin: '4px 0 0', lineHeight: 1.15 }}>
@@ -297,7 +305,7 @@ export default function BoardVoyageur() {
               style={{ ...T.tile, flex: 1, cursor: 'pointer' }}>
               <p style={T.lab}>🍽 {en ? 'Eat halal' : 'Manger halal'}</p>
               {resto === undefined && !bestResto ? <p style={{ ...T.meta, marginTop: 4 }}>…</p>
-                : !bestResto ? <p style={{ ...T.meta, marginTop: 4 }}>{en ? 'None reported nearby' : 'Aucun signalé à proximité'}</p>
+                : !bestResto ? <p style={{ ...T.meta, marginTop: 4 }}>{osmOk ? (en ? 'None reported nearby' : 'Aucun signalé à proximité') : (en ? 'Search unavailable (no connection)' : 'Recherche indisponible (pas de connexion)')}</p>
                 : (
                   <>
                     <a href={itin(bestResto.lat, bestResto.lng)} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} style={{ color: '#fdfaf3', fontWeight: 800, fontSize: 13.5, textDecoration: 'none', display: 'block', margin: '3px 0 1px', lineHeight: 1.3 }}>
@@ -349,7 +357,7 @@ export default function BoardVoyageur() {
               <>
                 {mangerWide}
                 {priereSlim}
-                <div style={{ display: 'grid', gridTemplateColumns: '1.15fr 1fr', gap: 10, marginTop: 10 }}>
+                <div className="board-duo" style={{ display: 'grid', gridTemplateColumns: '1.15fr 1fr', gap: 10, marginTop: 10 }}>
                   {pepiteTile(150)}
                   {spotsTile}
                 </div>
@@ -361,7 +369,7 @@ export default function BoardVoyageur() {
               <>
                 {pepiteTile(200, true)}
                 {priereSlim}
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginTop: 10 }}>
+                <div className="board-duo" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginTop: 10 }}>
                   {mangerSmall}
                   {spotsTile}
                 </div>
@@ -371,7 +379,7 @@ export default function BoardVoyageur() {
           return (
             <>
               {priereWide}
-              <div style={{ display: 'grid', gridTemplateColumns: '1.15fr 1fr', gap: 10, marginTop: 10 }}>
+              <div className="board-duo" style={{ display: 'grid', gridTemplateColumns: '1.15fr 1fr', gap: 10, marginTop: 10 }}>
                 {pepiteTile(172)}
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
                   {mangerSmall}
@@ -384,7 +392,7 @@ export default function BoardVoyageur() {
 
         {/* ── Bande de reels de la ville ── */}
         {pres && pres.reels.length > 0 && (
-          <div style={{ display: 'flex', gap: 8, marginTop: 10, overflowX: 'auto', paddingBottom: 4, WebkitOverflowScrolling: 'touch' }}>
+          <div className="board-reels" style={{ display: 'flex', gap: 8, marginTop: 10, overflowX: 'auto', paddingBottom: 4, WebkitOverflowScrolling: 'touch' }}>
             {pres.reels.map((s) => {
               const img = s.photos?.[0]?.startsWith('http') ? s.photos[0] : s.villeImage
               return (
@@ -401,7 +409,7 @@ export default function BoardVoyageur() {
         )}
 
         {/* ── Rangee : Qibla + date hegirienne (calcul local) ── */}
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginTop: 10 }}>
+        <div className="board-smalls" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginTop: 10 }}>
           <Link href="/qibla" style={{ ...T.tile, textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 12 }}>
             <span style={{ fontSize: 26, transform: `rotate(${qibla.deg}deg)`, display: 'inline-block', lineHeight: 1 }} aria-hidden>🧭</span>
             <span>
@@ -421,7 +429,7 @@ export default function BoardVoyageur() {
 
         {/* ── Bande : les 5 prieres du jour, la prochaine en or ── */}
         {journee && (
-          <Link href="/horaires-priere" style={{ ...T.tile, marginTop: 10, display: 'flex', justifyContent: 'space-between', gap: 6, padding: '11px 12px', textDecoration: 'none' }}>
+          <Link className="board-strip" href="/horaires-priere" style={{ ...T.tile, marginTop: 10, display: 'flex', justifyContent: 'space-between', gap: 6, padding: '11px 12px', textDecoration: 'none' }}>
             {journee.map(({ k, d }) => {
               const active = fenetre.key === k
               return (
