@@ -27,6 +27,7 @@ Version de travail, hebergee provisoirement dans le repo VOYAGESHALAL sur la bra
 | `lecon-al-fatiha.html` | Lecon 1 : Al-Fatiha verset par verset, avec la prononciation |
 | `lecon-invocations-matin.html` | Lecon 2 : trois invocations pour commencer la journee |
 | `lecon-six-piliers-foi.html` | Lecon 3 : les six piliers de la foi (hadith de Jibril) |
+| `lecon-priere-gestes.html` | Lecon 4 : les gestes de la priere, dans l'ordre |
 | `chemin.html` | La progression : compteur, calendrier des jours, parcours, revisions a venir |
 | `style.css` | Toute la mise en forme (charte de la famille) |
 | `app.js` | Catalogue, niveau, progression, revisions, et le lecteur de lecon commun |
@@ -36,8 +37,8 @@ Version de travail, hebergee provisoirement dans le repo VOYAGESHALAL sur la bra
 | `outils/faire-apercu.py` | Genere `apercu.html`, un apercu en un seul fichier (pour relecture) |
 | `apercu.html` | **Fichier genere.** Ne pas modifier a la main, relancer le script |
 
-Trois lecons publiees : il y a donc de quoi revenir plusieurs jours de suite,
-ce qui est tout l'objet du site. Le lecteur de lecon (`ippDemarrerLecon`) est ecrit une
+Quatre lecons publiees, dans quatre parcours differents : il y a de quoi
+revenir plusieurs jours de suite, ce qui est tout l'objet du site. Le lecteur de lecon (`ippDemarrerLecon`) est ecrit une
 seule fois dans `app.js` et partage par toutes les lecons.
 
 ## Les trois questions d'accueil
@@ -56,9 +57,12 @@ Ce n'est pas decoratif, cela change vraiment la premiere lecon servie.
 
 | Reponses | Premiere lecon |
 | --- | --- |
-| Ne prie pas encore | Les six piliers de la foi — commencer par une sourate serait commencer par le milieu |
+| Ne prie pas encore | Les six piliers de la foi, puis les gestes de la priere — commencer par une sourate serait commencer par le milieu |
 | Prie, ne sait pas Al-Fatiha | Al-Fatiha, verset par verset |
 | Connait Al-Fatiha par coeur | Les invocations ; Al-Fatiha passe en dernier, et l'accueil dit pourquoi |
+
+Les priorites sont des poids dans `ordreLecons()` (negatif = servie plus tot).
+Ajouter une regle, c'est ajouter une ligne.
 
 Trois regles de ton, a ne pas casser en ajoutant des questions :
 
@@ -178,6 +182,7 @@ Ce que Google doit voir, et ce qu'il ne doit pas voir :
 | `lecon-al-fatiha.html` | indexee | page de contenu |
 | `lecon-invocations-matin.html` | indexee | page de contenu |
 | `lecon-six-piliers-foi.html` | indexee | page de contenu |
+| `lecon-priere-gestes.html` | indexee | page de contenu |
 | `chemin.html` | **noindex, follow** | ecran personnel, vide pour un visiteur |
 | `apercu.html` | **noindex** + bloque dans robots.txt | recopie tout le site : contenu duplique |
 
@@ -192,6 +197,24 @@ l'en retirer. On bloque l'indexation, pas la lecture.
 
 Chaque page de contenu porte aussi ses balises de partage (Open Graph), avec
 `partage.png` en visuel.
+
+## Le cas de la priere
+
+C'est le sujet le plus delicat du site, parce que c'est celui ou les ecoles
+divergent le plus. La lecon 4 le traite ainsi :
+
+- **on enseigne l'ordre des gestes**, qui fait l'unanimite, tire d'un seul
+  hadith (celui de l'homme qui priait mal, al-Boukhari et Mouslim) ;
+- **on liste les points de divergence** sur une carte a part : position des
+  mains, lever les mains a chaque takbir, basmala a voix haute ou basse, facon
+  de s'asseoir. Sans dire qui a raison ;
+- **on ecrit que ce site ne peut pas apprendre a prier**. Le hadith dit
+  « comme vous m'avez **vu** prier » : la priere s'apprend en regardant
+  quelqu'un. C'est dit sur la premiere carte et repete en pied de page.
+
+Le hadith dit aussi « recite ce que tu peux du Coran » quand un autre dit
+« pas de priere sans la Fatiha ». La lecon **ne resume pas** le travail des
+savants sur ce point : elle signale que les deux se rejoignent et renvoie.
 
 ## Regle editoriale — la plus importante
 

@@ -58,6 +58,18 @@
       publiee: true,
       resume: 'Un ange vient interroger le Prophete sur la foi. La reponse tient '
             + 'en une phrase, et elle contient six choses.'
+    },
+    {
+      id: 'priere-gestes',
+      titre: 'Les gestes de la priere, dans l\'ordre',
+      url: 'lecon-priere-gestes.html',
+      parcours: 'priere',
+      minutes: 6,
+      cartes: 12,
+      acquis: 7,
+      publiee: true,
+      resume: 'Sept gestes, dans l\'ordre, tires d\'un seul hadith. Et les points '
+            + 'ou les ecoles ne disent pas la meme chose.'
     }
   ];
 
@@ -310,18 +322,22 @@
     var n = niveau();
     if (!n) { return libres; }
 
-    var avance = {};
-    var recule = {};
+    // Un poids par lecon : negatif = servie plus tot, positif = plus tard.
+    var poids = {};
 
-    // Qui ne prie pas encore commence par les bases de la foi : lui servir une
-    // sourate d'abord, c'est commencer par le milieu.
-    if (n.priere === 'non') { avance['six-piliers-foi'] = true; }
+    // Qui ne prie pas encore : les bases de la foi, puis les gestes de la
+    // priere. Lui servir une sourate d'abord, c'est commencer par le milieu.
+    if (n.priere === 'non') {
+      poids['six-piliers-foi'] = -2;
+      poids['priere-gestes'] = -1;
+    }
 
     // Qui connait deja Al-Fatiha par coeur ne la recoit pas en premiere lecon.
-    if (n.fatiha === 'oui') { recule['al-fatiha'] = true; }
+    if (n.fatiha === 'oui') { poids['al-fatiha'] = 2; }
 
-    function rang(l) { return (avance[l.id] ? -1 : 0) + (recule[l.id] ? 1 : 0); }
-    return libres.sort(function (a, b) { return rang(a) - rang(b); });
+    return libres.sort(function (a, b) {
+      return (poids[a.id] || 0) - (poids[b.id] || 0);
+    });
   }
 
   // La lecon proposee aujourd'hui : la premiere non faite, sinon la premiere a revoir.

@@ -1571,6 +1571,317 @@ a.pc:hover, button.pc:hover { border-color: var(--trait-fort); }
 </div>
 </template>
 
+<template data-vue="priere-gestes">
+<div class="page">
+
+  <header class="lecon-haut">
+    <a class="quitter" href="index.html" aria-label="Quitter la lecon">&times;</a>
+    <div class="points" data-r="points" aria-hidden="true"></div>
+  </header>
+
+  <main id="principal">
+
+    <div class="etapes" data-r="etapes">
+
+      <!-- 1 : ce que ce site peut et ne peut pas faire -->
+      <section class="etape" data-etape="1">
+        <span class="eyebrow">La lecon du jour</span>
+        <h2 style="font-size:29px">Les gestes de la priere, dans l'ordre</h2>
+        <div>
+          <p class="ar" lang="ar" dir="rtl">صَلُّوا كَمَا رَأَيْتُمُونِي أُصَلِّي</p>
+          <p class="phon">Sallou kama ra'aytoumouni ousalli</p>
+        </div>
+        <div>
+          <span class="etiquette">Traduction du sens</span>
+          <p class="sens">&laquo;&nbsp;Priez comme vous m'avez <em>vu</em> prier.&nbsp;&raquo;</p>
+        </div>
+        <div class="source">
+          <span class="lab">Source</span>
+          <span class="val">Rapporte par al-Boukhari, d'apres Malik ibn al-Houwayrith.</span>
+        </div>
+        <p class="prudence">
+          Lis bien le mot <strong>vu</strong>. La priere s'apprend en regardant
+          quelqu'un prier. <strong>Ce site ne peut pas te l'apprendre seul</strong>,
+          et il ne pretendra pas le contraire. Ce qu'il peut faire, c'est te donner
+          l'ordre des gestes pour que tu sais quoi regarder, et les mots exacts
+          des hadiths. Le reste se passe a la mosquee.
+        </p>
+      </section>
+
+      <!-- 2 : le hadith qui donne tout l'ordre -->
+      <section class="etape" data-etape="2">
+        <span class="eyebrow">Un homme priait mal</span>
+        <p class="clair">
+          Un homme est entre a la mosquee et a prie. Le Prophete lui a dit de
+          refaire sa priere, trois fois de suite. L'homme a fini par demander
+          qu'on lui enseigne. Voici la reponse&nbsp;: elle contient tout l'ordre.
+        </p>
+        <div>
+          <p class="ar" lang="ar" dir="rtl">إِذَا قُمْتَ إِلَى الصَّلَاةِ فَكَبِّرْ، ثُمَّ اقْرَأْ بِمَا تَيَسَّرَ مَعَكَ مِنَ الْقُرْآنِ، ثُمَّ ارْكَعْ حَتَّى تَطْمَئِنَّ رَاكِعًا، ثُمَّ ارْفَعْ حَتَّى تَعْتَدِلَ قَائِمًا، ثُمَّ اسْجُدْ حَتَّى تَطْمَئِنَّ سَاجِدًا، ثُمَّ ارْفَعْ حَتَّى تَطْمَئِنَّ جَالِسًا، ثُمَّ اسْجُدْ حَتَّى تَطْمَئِنَّ سَاجِدًا</p>
+        </div>
+        <div class="source">
+          <span class="lab">Source</span>
+          <span class="val">Rapporte par al-Boukhari et Mouslim, d'apres Abou Hourayra.</span>
+        </div>
+      </section>
+
+      <!-- 3 : la traduction -->
+      <section class="etape" data-etape="3">
+        <span class="eyebrow">La meme chose en francais</span>
+        <div>
+          <span class="etiquette">Traduction du sens</span>
+          <p class="sens">
+            &laquo;&nbsp;Quand tu te leves pour la priere, dis le takbir. Puis recite
+            ce que tu peux du Coran. Puis incline-toi jusqu'a etre stable dans
+            l'inclinaison. Puis redresse-toi jusqu'a etre droit debout. Puis
+            prosterne-toi jusqu'a etre stable dans la prosternation. Puis releve-toi
+            jusqu'a etre stable assis. Puis prosterne-toi jusqu'a etre stable dans
+            la prosternation.&nbsp;&raquo;
+          </p>
+        </div>
+        <div>
+          <span class="etiquette">Ce qui revient sept fois</span>
+          <p class="clair">
+            &laquo;&nbsp;Jusqu'a etre stable&nbsp;&raquo;. C'est le mot le plus
+            repete du hadith, et c'est ce qu'on oublie le plus&nbsp;: chaque
+            position doit s'arreter, pas s'enchainer.
+          </p>
+        </div>
+      </section>
+
+      <!-- 4 : debout -->
+      <section class="etape" data-etape="4">
+        <span class="eyebrow">Geste 1 &middot; debout</span>
+        <h2>Le takbir</h2>
+        <p class="clair">
+          Debout, tourne vers la Qibla. On dit&nbsp;:
+        </p>
+        <div>
+          <p class="ar" lang="ar" dir="rtl">اللَّهُ أَكْبَرُ</p>
+          <p class="phon">Allahou akbar</p>
+        </div>
+        <div>
+          <span class="etiquette">Traduction du sens</span>
+          <p class="sens">&laquo;&nbsp;Allah est plus grand.&nbsp;&raquo;</p>
+        </div>
+        <p class="clair">
+          A partir de ce mot, tu es en priere. On ne parle plus, on ne regarde
+          plus ailleurs.
+        </p>
+        <div class="source">
+          <span class="lab">Source</span>
+          <span class="val">Premiere etape du hadith d'Abou Hourayra ci-dessus (al-Boukhari et Mouslim).</span>
+        </div>
+      </section>
+
+      <!-- 5 : la recitation -->
+      <section class="etape" data-etape="5">
+        <span class="eyebrow">Geste 2 &middot; toujours debout</span>
+        <h2>La recitation</h2>
+        <p class="clair">
+          Le hadith dit &laquo;&nbsp;ce que tu peux du Coran&nbsp;&raquo;. Un autre
+          hadith dit qu'il n'y a pas de priere sans la Fatiha. Les savants ont
+          explique comment les deux se rejoignent&nbsp;: ce site ne resume pas
+          ce travail en une ligne.
+        </p>
+        <p class="clair">
+          Dans la pratique, la Fatiha est recitee dans chaque unite de priere.
+          Sur le detail — en particulier derriere l'imam — les ecoles ont des
+          avis differents.
+        </p>
+        <div class="source">
+          <span class="lab">Source</span>
+          <span class="val">&laquo;&nbsp;Pas de priere pour celui qui ne recite pas l'ouverture du Livre&nbsp;&raquo; — al-Boukhari (n&deg;756) et Mouslim (n&deg;394), d'apres Oubada ibn as-Samit.</span>
+        </div>
+        <p class="clair">
+          Tu ne connais pas encore la Fatiha&nbsp;?
+          <a href="lecon-al-fatiha.html">Elle a sa propre lecon ici</a>, verset par
+          verset et syllabe par syllabe.
+        </p>
+      </section>
+
+      <!-- 6 : l'inclinaison -->
+      <section class="etape" data-etape="6">
+        <span class="eyebrow">Geste 3</span>
+        <h2>L'inclinaison</h2>
+        <p class="clair">
+          Le dos se plie, les mains vont aux genoux. On s'arrete&nbsp;: le hadith
+          dit &laquo;&nbsp;jusqu'a etre stable&nbsp;&raquo;. On y dit&nbsp;:
+        </p>
+        <div>
+          <p class="ar" lang="ar" dir="rtl">سُبْحَانَ رَبِّيَ الْعَظِيمِ</p>
+          <p class="phon">Soubhana rabbiya l-'azim</p>
+        </div>
+        <div>
+          <span class="etiquette">Traduction du sens</span>
+          <p class="sens">&laquo;&nbsp;Gloire a mon Seigneur le Tres Grand.&nbsp;&raquo;</p>
+        </div>
+        <div class="source">
+          <span class="lab">Source</span>
+          <span class="val">Rapporte par Mouslim, d'apres Houdhayfa ibn al-Yaman.</span>
+        </div>
+      </section>
+
+      <!-- 7 : se redresser -->
+      <section class="etape" data-etape="7">
+        <span class="eyebrow">Geste 4</span>
+        <h2>Se redresser</h2>
+        <p class="clair">
+          On se remet droit, completement, avant de descendre. En se relevant&nbsp;:
+        </p>
+        <div>
+          <p class="ar" lang="ar" dir="rtl">سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ</p>
+          <p class="phon">Sami'a Llahou li-man hamidah</p>
+        </div>
+        <div>
+          <span class="etiquette">Traduction du sens</span>
+          <p class="sens">&laquo;&nbsp;Allah entend celui qui Le loue.&nbsp;&raquo;</p>
+        </div>
+        <p class="clair">Puis, une fois debout&nbsp;:</p>
+        <div>
+          <p class="ar" lang="ar" dir="rtl">رَبَّنَا وَلَكَ الْحَمْدُ</p>
+          <p class="phon">Rabbana wa laka l-hamd</p>
+        </div>
+        <div>
+          <span class="etiquette">Traduction du sens</span>
+          <p class="sens">&laquo;&nbsp;Notre Seigneur, a Toi la louange.&nbsp;&raquo;</p>
+        </div>
+        <div class="source">
+          <span class="lab">Source</span>
+          <span class="val">Rapporte par al-Boukhari et Mouslim, d'apres Abou Hourayra.</span>
+        </div>
+      </section>
+
+      <!-- 8 : la prosternation -->
+      <section class="etape" data-etape="8">
+        <span class="eyebrow">Geste 5</span>
+        <h2>La prosternation</h2>
+        <p class="clair">
+          Le front touche le sol. C'est la position la plus basse de la priere,
+          et la plus importante. On y dit&nbsp;:
+        </p>
+        <div>
+          <p class="ar" lang="ar" dir="rtl">سُبْحَانَ رَبِّيَ الْأَعْلَى</p>
+          <p class="phon">Soubhana rabbiya l-a'la</p>
+        </div>
+        <div>
+          <span class="etiquette">Traduction du sens</span>
+          <p class="sens">&laquo;&nbsp;Gloire a mon Seigneur le Tres Haut.&nbsp;&raquo;</p>
+        </div>
+        <div class="source">
+          <span class="lab">Source</span>
+          <span class="val">Rapporte par Mouslim, d'apres Houdhayfa ibn al-Yaman.</span>
+        </div>
+      </section>
+
+      <!-- 9 : s'asseoir puis se prosterner de nouveau -->
+      <section class="etape" data-etape="9">
+        <span class="eyebrow">Gestes 6 et 7</span>
+        <h2>S'asseoir, puis se prosterner encore</h2>
+        <p class="clair">
+          On se releve et on s'assoit, en s'arretant vraiment. Puis on se
+          prosterne une deuxieme fois, de la meme facon.
+        </p>
+        <p class="clair">
+          Et c'est fini&nbsp;: ces sept gestes forment <strong>une unite</strong>
+          de priere. Le hadith conclut&nbsp;:
+          &laquo;&nbsp;Fais ainsi dans toute ta priere.&nbsp;&raquo;
+        </p>
+        <div class="source">
+          <span class="lab">Source</span>
+          <span class="val">Fin du hadith d'Abou Hourayra (al-Boukhari et Mouslim).</span>
+        </div>
+      </section>
+
+      <!-- 10 : ce qui change selon les ecoles -->
+      <section class="etape" data-etape="10">
+        <span class="eyebrow">A savoir</span>
+        <h2>Ce qui change selon les ecoles</h2>
+        <p class="clair">
+          L'ordre que tu viens d'apprendre est le meme partout. Mais sur
+          plusieurs details, les ecoles ne disent pas la meme chose&nbsp;:
+        </p>
+        <div class="liste">
+          <div class="ligne inerte">
+            <svg class="etoile" width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2 L22 12 L12 22 L2 12 Z M5 5 H19 V19 H5 Z"/></svg>
+            <span><span class="t">Ou placer les mains quand on est debout</span></span>
+          </div>
+          <div class="ligne inerte">
+            <svg class="etoile" width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2 L22 12 L12 22 L2 12 Z M5 5 H19 V19 H5 Z"/></svg>
+            <span><span class="t">Lever les mains a chaque takbir, ou seulement au premier</span></span>
+          </div>
+          <div class="ligne inerte">
+            <svg class="etoile" width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2 L22 12 L12 22 L2 12 Z M5 5 H19 V19 H5 Z"/></svg>
+            <span><span class="t">Dire la basmala a voix haute ou a voix basse</span></span>
+          </div>
+          <div class="ligne inerte">
+            <svg class="etoile" width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2 L22 12 L12 22 L2 12 Z M5 5 H19 V19 H5 Z"/></svg>
+            <span><span class="t">La facon exacte de s'asseoir</span></span>
+          </div>
+        </div>
+        <p class="prudence">
+          Ces differences viennent de hadiths differents, tous etudies par les
+          savants&nbsp;: <strong>aucune ecole n'invente</strong>. Ce site ne
+          tranche pas et ne te dira pas qui a raison. Suis ce qu'on t'enseigne
+          la ou tu pries, et pour un point precis&nbsp;:
+          <strong>demande a un savant</strong>.
+        </p>
+      </section>
+
+      <!-- 11 : ce que tu retiens -->
+      <section class="etape" data-etape="11">
+        <div class="retenir">
+          <span class="eyebrow">Ce que tu retiens</span>
+          <p class="q">Takbir &middot; reciter<br>s'incliner &middot; se redresser<br>se prosterner &middot; s'asseoir<br>se prosterner</p>
+          <p class="r">Sept gestes, une unite. Cette carte te reviendra dans deux jours.</p>
+        </div>
+        <p class="clair">
+          Et entre chaque geste, la seule consigne que le hadith repete sept
+          fois&nbsp;: <strong>s'arreter</strong>.
+        </p>
+      </section>
+
+      <!-- 12 : fin -->
+      <section class="etape fin" data-etape="12">
+        <svg width="46" height="46" viewBox="0 0 24 24" fill="#c9a84c" aria-hidden="true">
+          <path d="M12 2 L22 12 L12 22 L2 12 Z M5 5 H19 V19 H5 Z"/>
+        </svg>
+        <h2>Lecon terminee</h2>
+        <p data-r="fin-texte">Tu connais maintenant l'ordre des sept gestes, avec leurs sources.</p>
+        <p data-r="fin-suite" class="suite"></p>
+        <div class="moment-zone" data-r="moment-choix" hidden></div>
+        <a class="btn" href="index.html">Continuer</a>
+        <a class="btn fantome" href="chemin.html">Voir mon chemin</a>
+      </section>
+
+    </div>
+
+    <div class="bas-lecon" data-r="bas" hidden>
+      <button class="btn" data-r="suivant" type="button">Suivant</button>
+    </div>
+
+  </main>
+
+  <footer class="pied">
+    <p class="note-pied">
+      <strong>Cette lecon ne remplace pas quelqu'un qui te montre.</strong>
+      Le hadith dit &laquo;&nbsp;comme vous m'avez <em>vu</em> prier&nbsp;&raquo;&nbsp;:
+      fais-toi corriger sur place. Les traductions sont des traductions du <em>sens</em>.
+      Une question personnelle&nbsp;? <a href="https://halalgpt.fr">Pose-la sur halalgpt.fr</a>,
+      et pour un cas qui t'engage, demande a un savant.
+    </p>
+    <span class="t">Les autres sites de la famille</span>
+    <nav class="freres" aria-label="Sites partenaires">
+      <a href="https://halalgpt.fr"><span class="d">halalgpt.fr</span><span class="q">L'IA musulmane, pour poser une question</span></a>
+      <a href="https://halalcheck.fr"><span class="d">halalcheck.fr</span><span class="q">Scanner un produit en magasin</span></a>
+      <a href="https://voyageshalal.fr"><span class="d">voyageshalal.fr</span><span class="q">Voyager halal, et les horaires de priere</span></a>
+      <a href="https://gohalaltravel.com"><span class="d">gohalaltravel.com</span><span class="q">Halal travel guide (EN)</span></a>
+    </nav>
+  </footer>
+
+</div>
+</template>
+
 <template data-vue="chemin">
 <div class="page">
 
@@ -1708,6 +2019,18 @@ a.pc:hover, button.pc:hover { border-color: var(--trait-fort); }
       publiee: true,
       resume: 'Un ange vient interroger le Prophete sur la foi. La reponse tient '
             + 'en une phrase, et elle contient six choses.'
+    },
+    {
+      id: 'priere-gestes',
+      titre: 'Les gestes de la priere, dans l\'ordre',
+      url: 'lecon-priere-gestes.html',
+      parcours: 'priere',
+      minutes: 6,
+      cartes: 12,
+      acquis: 7,
+      publiee: true,
+      resume: 'Sept gestes, dans l\'ordre, tires d\'un seul hadith. Et les points '
+            + 'ou les ecoles ne disent pas la meme chose.'
     }
   ];
 
@@ -1960,18 +2283,22 @@ a.pc:hover, button.pc:hover { border-color: var(--trait-fort); }
     var n = niveau();
     if (!n) { return libres; }
 
-    var avance = {};
-    var recule = {};
+    // Un poids par lecon : negatif = servie plus tot, positif = plus tard.
+    var poids = {};
 
-    // Qui ne prie pas encore commence par les bases de la foi : lui servir une
-    // sourate d'abord, c'est commencer par le milieu.
-    if (n.priere === 'non') { avance['six-piliers-foi'] = true; }
+    // Qui ne prie pas encore : les bases de la foi, puis les gestes de la
+    // priere. Lui servir une sourate d'abord, c'est commencer par le milieu.
+    if (n.priere === 'non') {
+      poids['six-piliers-foi'] = -2;
+      poids['priere-gestes'] = -1;
+    }
 
     // Qui connait deja Al-Fatiha par coeur ne la recoit pas en premiere lecon.
-    if (n.fatiha === 'oui') { recule['al-fatiha'] = true; }
+    if (n.fatiha === 'oui') { poids['al-fatiha'] = 2; }
 
-    function rang(l) { return (avance[l.id] ? -1 : 0) + (recule[l.id] ? 1 : 0); }
-    return libres.sort(function (a, b) { return rang(a) - rang(b); });
+    return libres.sort(function (a, b) {
+      return (poids[a.id] || 0) - (poids[b.id] || 0);
+    });
   }
 
   // La lecon proposee aujourd'hui : la premiere non faite, sinon la premiere a revoir.
@@ -2663,7 +2990,8 @@ function ippDemarrerDiagnostic(racine, quandFini) {
       "chemin.html": "chemin",
       "lecon-al-fatiha.html": "al-fatiha",
       "lecon-invocations-matin.html": "invocations-matin",
-      "lecon-six-piliers-foi.html": "six-piliers-foi"
+      "lecon-six-piliers-foi.html": "six-piliers-foi",
+      "lecon-priere-gestes.html": "priere-gestes"
   };
 
   var hote = document.getElementById('vue');

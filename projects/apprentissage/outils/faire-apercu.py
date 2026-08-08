@@ -27,6 +27,7 @@ VUES = [
     ("lecon-al-fatiha.html", "al-fatiha"),
     ("lecon-invocations-matin.html", "invocations-matin"),
     ("lecon-six-piliers-foi.html", "six-piliers-foi"),
+    ("lecon-priere-gestes.html", "priere-gestes"),
     ("chemin.html", "chemin"),
 ]
 
