@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { useInstantPosition } from '@/lib/useInstantPosition'
 import { computePrayerTimesFull } from '@/lib/prayerCalc'
 import { useLanguage } from '@/components/i18n/LanguageProvider'
-import { ENVIES, envieById } from '@/lib/envies'
+import { ENVIES, envieById, niveauHalal } from '@/lib/envies'
 
 // 🎛️ BOARD VOYAGEUR (bento) — l'accueil devient un tableau de bord contextuel :
 // des REPONSES deja calculees, jamais des menus. Il absorbe le Radar Priere
@@ -15,7 +15,7 @@ import { ENVIES, envieById } from '@/lib/envies'
 // sections serveur) ne change pas — SEO intact. Sans position : rien (repli =
 // accueil classique).
 
-interface Lieu { nom: string; lat: number; lng: number; source: 'osm' | 'communaute' | 'annuaire'; distM: number; spotId?: string; cuisine?: string; force?: number }
+interface Lieu { nom: string; lat: number; lng: number; source: 'osm' | 'communaute' | 'annuaire'; distM: number; spotId?: string; cuisine?: string; force?: number; halal?: string; mapsUrl?: string }
 interface FeedSpot {
   id: string; nom: string; villeNom: string; villeSlug: string; categorie?: string
   lat?: number; lng?: number; photos?: string[]; video?: string; villeImage?: string
@@ -173,8 +173,8 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
       .then((r) => r.json())
       .then((j) => {
         if (off) return
-        const l = (j.lieux as { nom: string; lat: number; lng: number; cuisine?: string; force?: number }[] | undefined)?.[0]
-        setRestoEnvie(l ? { nom: l.nom, lat: l.lat, lng: l.lng, source: 'annuaire', distM: hav(pos.lat, pos.lng, l.lat, l.lng), cuisine: l.cuisine, force: l.force } : null)
+        const l = (j.lieux as { nom: string; lat: number; lng: number; cuisine?: string; force?: number; halal?: string; mapsUrl?: string }[] | undefined)?.[0]
+        setRestoEnvie(l ? { nom: l.nom, lat: l.lat, lng: l.lng, source: 'annuaire', distM: hav(pos.lat, pos.lng, l.lat, l.lng), cuisine: l.cuisine, force: l.force, halal: l.halal, mapsUrl: l.mapsUrl } : null)
       })
       .catch(() => { if (!off) setRestoEnvie(null) })
     return () => { off = true }
@@ -375,12 +375,35 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
                   {walk(bestResto.distM)} {en ? 'min walk' : 'min à pied'}
                   {bestResto.cuisine ? <> · <span style={{ color: 'rgba(253,250,243,0.75)' }}>{bestResto.cuisine}</span></> : null}
                   {bestResto.force === 1 ? <> · <span style={{ color: 'var(--or)' }}>{en ? 'secondary tag' : 'mention secondaire'}</span></> : null}
-                  {' · '}{bestResto.source === 'communaute' ? (en ? 'shared by a traveler · to confirm' : 'partagé par un voyageur · à confirmer') : (en ? 'listed halal · to verify' : 'signalé halal · à vérifier')}
+                  {' · '}
+                  {(() => {
+                    if (bestResto.source === 'communaute') return en ? 'shared by a traveler · to confirm' : 'partagé par un voyageur · à confirmer'
+                    const n = niveauHalal(bestResto.halal, en)
+                    return n ? <span style={{ color: n.fort ? 'var(--or)' : undefined }}>{n.texte}</span> : (en ? 'listed halal · to verify' : 'signalé halal · à vérifier')
+                  })()}
                 </p>
                 <a href={itin(bestResto.lat, bestResto.lng)} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}
                   style={{ minHeight: 44, display: 'inline-flex', alignItems: 'center', padding: '0 16px', borderRadius: 999, background: 'var(--or)', color: '#0b1a0f', fontWeight: 800, fontSize: 13.5, textDecoration: 'none' }}>
                   🚶 {en ? 'Directions' : 'Itinéraire'}
                 </a>
+              </div>
+              {/* Photos et notes : on n'en invente aucune. Celles qui existent
+                  vraiment sont chez Google — un tap. Et si le voyageur y est,
+                  sa photo enrichit NOTRE site pour le suivant. */}
+              <div style={{ display: 'flex', gap: 8, marginTop: 8, flexWrap: 'wrap' }}>
+                <a
+                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${bestResto.nom} ${bestResto.lat},${bestResto.lng}`)}`}
+                  target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}
+                  style={{ minHeight: 44, display: 'inline-flex', alignItems: 'center', padding: '0 12px', borderRadius: 999, border: '1px solid rgba(253,250,243,0.25)', color: 'var(--creme)', fontWeight: 700, fontSize: 12.5, textDecoration: 'none' }}
+                >
+                  ⭐ {en ? 'Photos & reviews' : 'Photos & avis'}
+                </a>
+                <Link
+                  href="/communaute/ajouter" onClick={(e) => e.stopPropagation()}
+                  style={{ minHeight: 44, display: 'inline-flex', alignItems: 'center', padding: '0 12px', borderRadius: 999, border: '1px solid rgba(253,250,243,0.25)', color: 'var(--creme)', fontWeight: 700, fontSize: 12.5, textDecoration: 'none' }}
+                >
+                  📷 {en ? 'You are there? Add a photo' : 'Tu y es ? Ajoute ta photo'}
+                </Link>
               </div>
             </div>
           )

@@ -20,6 +20,10 @@ export interface AnnuaireLieu {
   cuisine?: string
   /** force de la correspondance a l'envie demandee (2 fort, 1 faible) */
   force?: number
+  /** niveau de signalement halal OSM : only | yes | high | certified | likely */
+  halal?: string
+  /** lien Google Maps de la fiche (photos et avis REELS, chez Google) */
+  mapsUrl?: string
   villeSlug: string
   villeNom: string
   source: 'annuaire'
@@ -67,10 +71,16 @@ function lieuxDeVille(slug: string, nom: string): AnnuaireLieu[] {
     const push = (arr: unknown, type: 'priere' | 'resto') => {
       if (!Array.isArray(arr)) return
       for (const raw of arr) {
-        const l = raw as { nom?: string; lat?: number; lng?: number; type?: string; coordonnees?: { lat?: number; lng?: number } }
+        const l = raw as { nom?: string; lat?: number; lng?: number; type?: string; halalConfidence?: string; mapsUrl?: string; coordonnees?: { lat?: number; lng?: number } }
         const lat = Number(l.lat ?? l.coordonnees?.lat), lng = Number(l.lng ?? l.coordonnees?.lng)
         if (!l.nom || !Number.isFinite(lat) || !Number.isFinite(lng)) continue
-        out.push({ nom: String(l.nom), lat, lng, type, cuisine: type === 'resto' ? (l.type ?? undefined) : undefined, villeSlug: slug, villeNom: v.nom ?? nom, source: 'annuaire', distKm: 0 })
+        out.push({
+          nom: String(l.nom), lat, lng, type,
+          cuisine: type === 'resto' ? (l.type ?? undefined) : undefined,
+          halal: l.halalConfidence ?? undefined,
+          mapsUrl: l.mapsUrl ?? undefined,
+          villeSlug: slug, villeNom: v.nom ?? nom, source: 'annuaire', distKm: 0,
+        })
       }
     }
     push(v.mosqueesPrincipales ?? v.mosquees, 'priere')

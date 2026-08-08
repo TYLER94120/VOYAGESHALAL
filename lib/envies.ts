@@ -66,3 +66,22 @@ export function correspondEnvie(type: string | undefined, envieId: string): bool
 export function envieById(id: string | null | undefined): Envie | null {
   return ENVIES.find((e) => e.id === id) ?? null
 }
+
+// ── Niveau de signalement halal (tag OSM `diet:halal`) ────────────────
+// HONNETETE : OSM emploie le mot « certified », mais nous n'avons verifie
+// AUCUNE certification. On ne reprend donc jamais ce mot : on decrit ce
+// que dit la source, et on invite toujours a verifier sur place.
+export function niveauHalal(v: string | undefined, en = false): { texte: string; fort: boolean } | null {
+  switch (v) {
+    case 'only':
+      return { texte: en ? 'all halal here · reported' : 'tout est halal ici · signalé', fort: true }
+    case 'yes':
+    case 'high':
+    case 'certified':
+      return { texte: en ? 'reported halal · to verify' : 'signalé halal · à vérifier', fort: true }
+    case 'likely':
+      return { texte: en ? 'likely halal · to verify' : 'halal probable · à vérifier', fort: false }
+    default:
+      return null
+  }
+}
