@@ -535,58 +535,41 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
                 )}
             </div>
           )
-          const pepiteTile = (minH: number, wide = false) => pepite ? (
-            <Link href={`/spot/${pepite.id}`} style={{ ...T.tile, padding: 0, overflow: 'hidden', position: 'relative', minHeight: minH, display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', textDecoration: 'none', backgroundImage: pepiteImg ? `linear-gradient(180deg, rgba(11,26,15,0.05) 30%, rgba(11,26,15,0.9)), url(${pepiteImg})` : 'linear-gradient(160deg, #1d4a35, #0e2013)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-              <div style={{ padding: '10px 12px' }}>
-                <p style={T.lab}>💎 {wide ? (en ? 'Tonight\'s gem' : 'La pépite du soir') : (en ? 'The gem' : 'La pépite')}{pepite.video ? ' · 🎬' : ''}</p>
-                <p style={{ color: '#fdfaf3', fontWeight: 800, fontSize: wide ? 17 : 14.5, margin: '2px 0 0', lineHeight: 1.25 }}>{pepite.nom}</p>
-                <p style={T.meta}>{pepite.villeNom}{(pepite.confirmations ?? 0) > 0 ? ` · ${en ? 'confirmed by' : 'confirmé par'} ${pepite.confirmations}` : ''}</p>
+          // UN SEUL widget pour les spots : le compte, un apercu legende,
+          // une porte. Avant, trois zones differentes parlaient de spots
+          // (grande photo, compteur, bande de vignettes) sans qu'on comprenne
+          // ce qu'on regardait.
+          const apercus = (pres?.pepite ? [pres.pepite, ...(pres?.reels ?? [])] : (pres?.reels ?? [])).slice(0, 3)
+          const nSpots = pres ? (pres.proches.length || pres.autour.length || pres.total) : null
+          const villeNom = pres?.autour[0]?.villeNom
+          const spotsWidget = (
+            <Link href={pres && !pres.proches.length && !pres.autour.length ? '/spots' : '/autour-de-moi'}
+              style={{ ...T.tile, textDecoration: 'none', display: 'flex', flexDirection: 'column', gap: 8 }}>
+              <div style={{ display: 'flex', alignItems: 'baseline', gap: 7 }}>
+                <span style={{ fontFamily: "'Playfair Display', Georgia, serif", color: 'var(--or)', fontSize: 26, fontWeight: 700, lineHeight: 1 }}>{nSpots ?? '…'}</span>
+                <span style={{ ...T.meta, fontSize: 13 }}>
+                  💎 {villeNom ? (en ? `spots in ${villeNom}` : `spots à ${villeNom}`) : (en ? 'spots shared by travelers' : 'spots partagés par des voyageurs')}
+                </span>
               </div>
-            </Link>
-          ) : (
-            // Etat vide = porte, jamais cul-de-sac : on propose un guide deja
-            // rempli (chiffres reels) plutot que de demander de contribuer.
-            vedette ? (
-              <Link href={`/destinations/${vedette.slug}`} style={{ ...T.tile, padding: 0, overflow: 'hidden', minHeight: minH, display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', textDecoration: 'none', backgroundImage: vedette.image ? `linear-gradient(180deg, rgba(11,26,15,0.1) 25%, rgba(11,26,15,0.92)), url(${vedette.image})` : 'linear-gradient(160deg, #1d4a35, #0e2013)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-                <div style={{ padding: '10px 12px' }}>
-                  <p style={T.lab}>📖 {villeGuide && vedette.slug === villeGuide.slug ? (en ? 'Your city guide' : 'Le guide de ta ville') : (en ? 'Ready-made guide' : 'Guide déjà prêt')}</p>
-                  <p style={{ color: '#fdfaf3', fontWeight: 800, fontSize: 15, margin: '2px 0 0', lineHeight: 1.25 }}>{vedette.nom} <span style={{ color: 'var(--or)' }}>✦ {vedette.score}</span></p>
-                  <p style={T.meta}>
-                    {vedette.restaurants > 0 && `${vedette.restaurants} ${en ? 'halal restos' : 'restos halal'}`}
-                    {vedette.restaurants > 0 && vedette.mosquees > 0 && ' · '}
-                    {vedette.mosquees > 0 && `${vedette.mosquees} ${en ? 'mosques' : 'mosquées'}`}
-                  </p>
+              {apercus.length > 0 && (
+                <div style={{ display: 'flex', gap: 6 }}>
+                  {apercus.map((sp) => {
+                    const img = sp.photos?.[0]?.startsWith('http') ? sp.photos[0] : sp.villeImage
+                    return (
+                      <span key={sp.id} style={{
+                        flex: 1, height: 62, borderRadius: 10, overflow: 'hidden', position: 'relative',
+                        backgroundImage: img ? `linear-gradient(180deg, rgba(11,26,15,0) 35%, rgba(11,26,15,0.92)), url(${img})` : 'linear-gradient(180deg, #1d4a35, #0e2013)',
+                        backgroundSize: 'cover', backgroundPosition: 'center', display: 'flex', alignItems: 'flex-end',
+                      }}>
+                        {sp.video && <span style={{ position: 'absolute', top: 3, left: 4, fontSize: 10 }}>🎬</span>}
+                        <span style={{ padding: '2px 4px', color: '#fdfaf3', fontSize: 8.5, fontWeight: 700, lineHeight: 1.2 }}>{sp.nom.slice(0, 22)}</span>
+                      </span>
+                    )
+                  })}
                 </div>
-              </Link>
-            ) : (
-            <Link href="/destinations" style={{ ...T.tile, minHeight: minH, display: 'flex', flexDirection: 'column', justifyContent: 'center', textAlign: 'center', textDecoration: 'none' }}>
-              <p style={{ fontSize: 26, margin: 0 }}>📖</p>
-              <p style={{ color: '#fdfaf3', fontWeight: 800, fontSize: 13.5, margin: '6px 0 2px' }}>{en ? 'Browse the guides' : 'Parcourir les guides'}</p>
-              <p style={T.meta}>{en ? 'Mosques, halal restos, city by city' : 'Mosquées, restos halal, ville par ville'}</p>
-            </Link>
-            )
-          )
-          const spotsTile = (
-            <Link href={pres && !pres.proches.length && !pres.autour.length ? '/spots' : '/autour-de-moi'} style={{ ...T.tile, flex: 1, textDecoration: 'none', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-              {(() => {
-                const proches = pres?.proches.length ?? 0
-                const zone = pres?.autour.length ?? 0
-                const total = pres?.total ?? 0
-                const n = pres ? (proches || zone || total) : null
-                const villeNom = pres?.autour[0]?.villeNom
-                const lab = !pres ? (en ? 'spots around you' : 'spots autour de toi')
-                  : proches ? (en ? 'spots around you' : 'spots autour de toi')
-                  : zone && villeNom ? (en ? `spots in ${villeNom}` : `spots à ${villeNom}`)
-                  : (en ? 'spots shared by travelers' : 'spots partagés par des voyageurs')
-                return (
-                  <p style={{ margin: 0 }}>
-                    <span style={{ fontFamily: "'Playfair Display', Georgia, serif", color: 'var(--or)', fontSize: 26, fontWeight: 700 }}>{n ?? '…'}</span>
-                    <span style={{ ...T.meta, marginLeft: 6 }}>{lab}</span>
-                  </p>
-                )
-              })()}
+              )}
               <p style={{ ...T.meta, color: 'var(--or)', fontWeight: 700 }}>
-                {pres && !pres.proches.length && !pres.autour.length ? (en ? 'See the feed →' : 'Voir le fil →') : (en ? 'Open the map →' : 'Ouvrir la carte →')}
+                {en ? 'Places lived by Muslim travelers → ' : 'Des lieux vécus par des voyageurs musulmans → '}
               </p>
             </Link>
           )
@@ -596,9 +579,8 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
               <>
                 {mangerWide || mangerVide}
                 {priereSlim}
-                <div className="board-duo" style={{ display: 'grid', gridTemplateColumns: '1.15fr 1fr', gap: 10, marginTop: 10 }}>
-                  {pepiteTile(150)}
-                  {spotsTile}
+                <div className="board-duo" style={{ display: 'grid', gridTemplateColumns: '1fr', gap: 10, marginTop: 10 }}>
+                  {spotsWidget}
                 </div>
               </>
             )
@@ -606,11 +588,10 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
           if (focus === 'soiree') {
             return (
               <>
-                {pepiteTile(200, true)}
                 {priereSlim}
                 <div className="board-duo" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginTop: 10 }}>
                   {mangerSmall}
-                  {spotsTile}
+                  {spotsWidget}
                 </div>
               </>
             )
@@ -618,12 +599,9 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
           return (
             <>
               {priereWide}
-              <div className="board-duo" style={{ display: 'grid', gridTemplateColumns: '1.15fr 1fr', gap: 10, marginTop: 10 }}>
-                {pepiteTile(172)}
-                <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-                  {mangerSmall}
-                  {spotsTile}
-                </div>
+              <div className="board-duo" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginTop: 10 }}>
+                {mangerSmall}
+                {spotsWidget}
               </div>
             </>
           )
@@ -727,20 +705,23 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
           </Link>
         </div>
 
-        {/* ── Bande : les 5 prieres du jour, la prochaine en or ── */}
+        {/* ── Les 5 prieres du jour — lisibles d'un coup d'oeil ──
+            Remonte a la place de l'ancienne bande de vignettes : c'est
+            l'information qu'on ouvre le site pour consulter. */}
         {journee && (
-          <Link className="board-strip" href="/horaires-priere" style={{ ...T.tile, marginTop: 10, display: 'flex', justifyContent: 'space-between', gap: 6, padding: '11px 12px', textDecoration: 'none' }}>
+          <Link href="/horaires-priere" className="board-strip" style={{ ...T.tile, marginTop: 10, display: 'flex', justifyContent: 'space-between', gap: 4, padding: '13px 10px', textDecoration: 'none' }}>
             {journee.map(({ k, d }) => {
               const active = fenetre.key === k
               return (
-                <div key={k} style={{ textAlign: 'center', flex: 1, borderRadius: 10, padding: '5px 2px', background: active ? 'rgba(201,168,76,0.16)' : 'transparent' }}>
-                  <p style={{ fontSize: 10, fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', color: active ? 'var(--or)' : 'rgba(253,250,243,0.55)', margin: 0 }}>{k}</p>
-                  <p style={{ color: active ? '#fdfaf3' : 'rgba(253,250,243,0.75)', fontWeight: active ? 800 : 600, fontSize: 12.5, margin: '2px 0 0', fontVariantNumeric: 'tabular-nums' }}>{fmtClock(d)}</p>
+                <div key={k} style={{ textAlign: 'center', flex: 1, borderRadius: 12, padding: '7px 2px', background: active ? 'rgba(201,168,76,0.18)' : 'transparent', border: active ? '1px solid rgba(201,168,76,0.45)' : '1px solid transparent' }}>
+                  <p style={{ fontSize: 11.5, fontWeight: 800, letterSpacing: '0.04em', textTransform: 'uppercase', color: active ? 'var(--or)' : 'rgba(253,250,243,0.6)', margin: 0 }}>{k}</p>
+                  <p style={{ fontFamily: "'Playfair Display', Georgia, serif", color: active ? '#fdfaf3' : 'rgba(253,250,243,0.9)', fontWeight: active ? 900 : 700, fontSize: 17, margin: '3px 0 0', fontVariantNumeric: 'tabular-nums', lineHeight: 1.1 }}>{fmtClock(d)}</p>
                 </div>
               )
             })}
           </Link>
         )}
+
       </div>
     </section>
   )
