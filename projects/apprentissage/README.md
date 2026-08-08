@@ -146,6 +146,26 @@ Prochaines pages de repere possibles, meme logique : les prophetes nommes dans
 le Coran, les mots arabes les plus frequents, les formes des lettres selon leur
 place dans le mot.
 
+### La majorite ne lit pas l'arabe — la regle de taille
+
+Remarque de Mohamed, et elle touchait un vrai defaut de conception. Sur une carte
+de verset, la hierarchie etait&nbsp;: arabe 34px, traduction 23px, syllabes 19px…
+et **la prononciation en lettres latines a 15px, gris pale, en italique**. Le plus
+petit texte de la carte etait donc **la seule ligne utilisable par quelqu'un qui
+ne lit pas l'arabe**. C'est l'inverse de ce qu'il faut.
+
+Meme inversion ailleurs&nbsp;: le nom transcrit d'une sourate etait plus petit que
+son numero, et le nom francais d'un prophete etait a 15px sous un nom arabe a 26px.
+
+**Regle desormais&nbsp;: aucun texte que l'on doit lire ou prononcer ne descend
+sous 16px, et la transcription latine n'est jamais traitee comme une note.**
+Corriges&nbsp;: `.phon` (15 → **21px**, sans italique, en couleur lisible),
+`.s-tr` (15 → 17px), `.np-fr` (15 → 17px), `.lson` (15 → 17px),
+`.retenir .r` (15 → 17px), `.source .val` (15 → 16px).
+
+L'arabe reste le plus grand — c'est le Coran, et la charte le veut. Mais il n'est
+plus le seul lisible.
+
 ### Une formulation a ne pas reintroduire
 
 La fin de lecon disait « N enseignements, chacun avec sa source ». C'est devenu
@@ -642,6 +662,20 @@ fichiers servis en HTTP :
 - le diagnostic : absent sans le parametre, present avec, il nomme l'hebergeur
   et donne un temps, note l'echec d'un hebergeur puis la reussite du suivant, et
   s'affiche meme quand rien ne repond.
+
+**La lisibilite en lettres latines** (mesuree a 414x690, l'ecran de Mohamed
+dans Safari)
+
+- verset : arabe 34px, **prononciation 21px non italique**, traduction 23px,
+  syllabes 19px, source 16px ;
+- les 114 sourates : nom transcrit 17px, desormais au moins aussi grand que le
+  numero ;
+- alphabet : son de la lettre 17px ; prophetes : nom francais 17px ;
+- aucun debordement sur les quatre pages.
+
+**Le voile de la barre du bas** : le fond devient opaque des 16px, ce qui laisse
+une bande pleine de 30px avant le bouton — exactement la hauteur d'une ligne, donc
+plus aucune ligne coupee en deux.
 
 **Defaut connu, pas encore corrige** : quatre lecons sur six ne contiennent
 **aucune question** (`priere-gestes`, `six-piliers-foi`, `invocations-matin`,
