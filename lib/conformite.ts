@@ -24,6 +24,8 @@ const MOTS_EXCLUS = [
   'whisky', 'whiskey', 'rhum', 'rum', 'vodka', 'mojito', 'cocktail', 'cocktails',
   'alcool', 'alcohol', 'spirits', 'taverne', 'tavern', 'speakeasy',
   'brewpub', 'winery', 'cave a vin', 'aperitif', 'happy hour',
+  // porc : jamais, quelle que soit l'etiquette halal
+  'pork', 'porc', 'bacon', 'ham', 'jamon', 'charcuterie', 'schweine',
   // chicha / narguile
   'shisha', 'chicha', 'hookah', 'narguile', 'narghile', 'sheesha',
   // nuit / jeux
@@ -43,6 +45,21 @@ const BAR_ALIMENTAIRE = [
   'snack', 'salad', 'salade', 'juice', 'jus', 'couscous', 'coffee', 'cafe',
   'tea', 'the', 'milk', 'sandwich', 'kebab', 'sushi', 'noodle', 'pizza',
   'burger', 'grill', 'lait', 'smoothie', 'crepe',
+]
+
+// Cuisines ou le porc et l'alcool sont la NORME du repertoire culinaire.
+// Pour celles-la, un halal « probable » (simple supposition d'OSM) ne
+// suffit pas : on exige une mention halal affirmee. Mesure prise apres
+// verification des donnees — 496 des 1 003 restaurants asiatiques de
+// l'annuaire ne portent qu'une supposition, souvent dans des pays ou le
+// porc est partout (Allemagne, Hongrie, Japon, Pologne).
+// Les cuisines de pays majoritairement musulmans (indienne, pakistanaise,
+// bangladaise, malaisienne, indonesienne, ouighoure) ne sont PAS ici :
+// elles gardent la regle normale.
+const CUISINES_SENSIBLES = [
+  'chinese', 'japanese', 'thai', 'korean', 'vietnamese', 'sushi', 'ramen',
+  'izakaya', 'dim sum', 'yakitori', 'teppanyaki', 'cantonese', 'sichuan',
+  'pho', 'taiwanese', 'filipino', 'german', 'spanish', 'portuguese',
 ]
 
 const sansAccent = (s: string) =>
@@ -79,6 +96,14 @@ export function estConforme(nom?: string, cuisine?: string, halal?: string): Ver
   if (!halalAffirme) {
     for (const m of MOTS_DOUTE) {
       if (contientMot(blob, m)) return { ok: false, motif: m }
+    }
+    // Cuisine sensible + halal seulement « probable » = on s'abstient.
+    // Mieux vaut ne rien proposer que d'envoyer quelqu'un manger du porc.
+    // On ne regarde que la cuisine PRINCIPALE (1er tag) : un grill arabe
+    // qui fait aussi du chinois reste un grill arabe.
+    const principal = sansAccent(cuisine ?? '').split(/[,;/]+/)[0]?.trim() ?? ''
+    for (const m of CUISINES_SENSIBLES) {
+      if (principal && contientMot(principal, m)) return { ok: false, motif: `${m} (halal non affirmé)` }
     }
   }
   return { ok: true }
