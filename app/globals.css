@@ -313,7 +313,10 @@
 .ville-grid { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
 .ville-btn {
   background: white; border: 1px solid #e5e7eb; color: #374151;
-  padding: 9px 16px; border-radius: 999px; font-size: 14px; font-weight: 600; cursor: pointer;
+  /* cible tactile confortable : 48 px de haut (charte : jamais sous 44) */
+  min-height: 48px; padding: 0 18px; border-radius: 999px;
+  font-size: 14.5px; font-weight: 600; cursor: pointer;
+  display: inline-flex; align-items: center;
   transition: all 0.2s;
 }
 .ville-btn:hover { border-color: #1b4332; color: #1b4332; }

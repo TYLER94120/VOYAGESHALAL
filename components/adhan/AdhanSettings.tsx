@@ -49,7 +49,7 @@ export default function AdhanSettings() {
           <p style={{ color: 'var(--texte-2)', fontSize: 12.5, margin: '3px 0 0' }}>{en ? 'Plays at prayer time while the app is open.' : 'Sonne à l\u2019heure de la prière quand l\u2019app est ouverte.'}</p>
         </div>
         {/* Interrupteur */}
-        <button onClick={() => setEnabled(!enabled)} aria-label="Activer l'adhan" style={{ flexShrink: 0, width: 52, height: 30, borderRadius: 20, border: 'none', cursor: 'pointer', background: enabled ? 'var(--foret)' : 'rgba(11,26,15,0.18)', position: 'relative', transition: 'background .2s' }}>
+        <button onClick={() => setEnabled(!enabled)} aria-label="Activer l'adhan" style={{ flexShrink: 0, width: 62, height: 36, borderRadius: 20, border: 'none', cursor: 'pointer', background: enabled ? 'var(--foret)' : 'rgba(11,26,15,0.18)', position: 'relative', transition: 'background .2s' }}>
           <span style={{ position: 'absolute', top: 3, left: enabled ? 25 : 3, width: 24, height: 24, borderRadius: '50%', background: '#fff', transition: 'left .2s', boxShadow: '0 1px 4px rgba(0,0,0,0.3)' }} />
         </button>
       </div>
@@ -81,14 +81,14 @@ export default function AdhanSettings() {
           {soundMode === 'adhan' ? (
             <label style={{ display: 'flex', flexDirection: 'column', gap: 5, fontSize: 12, fontWeight: 700, color: 'var(--foret)' }}>
               {en ? 'Muezzin' : 'Muezzin'}
-              <select value={muezzin} onChange={(e) => setMuezzin(e.target.value)} style={{ padding: '10px 12px', borderRadius: 10, border: '1.5px solid rgba(27,67,50,0.25)', background: '#fff', fontSize: 13, color: 'var(--texte)' }}>
+              <select value={muezzin} onChange={(e) => setMuezzin(e.target.value)} style={{ minHeight: 48, padding: '0 12px', borderRadius: 10, border: '1.5px solid rgba(27,67,50,0.25)', background: '#fff', fontSize: 14.5, color: 'var(--texte)' }}>
                 {MUEZZINS.map((m) => <option key={m.id} value={m.id}>{m.name}</option>)}
               </select>
             </label>
           ) : (
             <label style={{ display: 'flex', flexDirection: 'column', gap: 5, fontSize: 12, fontWeight: 700, color: 'var(--foret)' }}>
               {en ? 'Discreet chime' : 'Sonnerie discrète'}
-              <select value={chime} onChange={(e) => setChime(e.target.value)} style={{ padding: '10px 12px', borderRadius: 10, border: '1.5px solid rgba(27,67,50,0.25)', background: '#fff', fontSize: 13, color: 'var(--texte)' }}>
+              <select value={chime} onChange={(e) => setChime(e.target.value)} style={{ minHeight: 48, padding: '0 12px', borderRadius: 10, border: '1.5px solid rgba(27,67,50,0.25)', background: '#fff', fontSize: 14.5, color: 'var(--texte)' }}>
                 {CHIMES.map((c) => <option key={c.id} value={c.id}>{c.name}</option>)}
               </select>
             </label>
@@ -101,7 +101,7 @@ export default function AdhanSettings() {
               {PRAYER_KEYS.map((k) => {
                 const on = perPrayer[k]
                 return (
-                  <button key={k} onClick={() => togglePrayer(k)} style={{ padding: '8px 14px', borderRadius: 20, border: `1.5px solid ${on ? 'var(--foret)' : 'rgba(27,67,50,0.25)'}`, background: on ? 'var(--foret)' : '#fff', color: on ? '#fff' : 'var(--foret)', fontSize: 13, fontWeight: 700, cursor: 'pointer' }}>
+                  <button key={k} onClick={() => togglePrayer(k)} style={{ minHeight: 48, padding: '0 16px', borderRadius: 20, border: `1.5px solid ${on ? 'var(--foret)' : 'rgba(27,67,50,0.25)'}`, background: on ? 'var(--foret)' : '#fff', color: on ? '#fff' : 'var(--foret)', fontSize: 13, fontWeight: 700, cursor: 'pointer' }}>
                     {PRAYER_LABELS[k]}
                   </button>
                 )

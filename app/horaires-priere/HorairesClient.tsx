@@ -147,7 +147,7 @@ export default function HorairesClient() {
     }
   }
 
-  const selectStyle = { width: '100%', padding: '10px 12px', borderRadius: 10, border: '1.5px solid rgba(27,67,50,0.25)', background: '#fff', fontSize: 13, color: 'var(--texte)', textAlign: 'center' as const, textAlignLast: 'center' as const }
+  const selectStyle = { width: '100%', minHeight: 48, padding: '0 12px', borderRadius: 10, border: '1.5px solid rgba(27,67,50,0.25)', background: '#fff', fontSize: 14.5, color: 'var(--texte)', textAlign: 'center' as const, textAlignLast: 'center' as const }
 
   return (
     <div className="max-w-3xl mx-auto">
