@@ -41,6 +41,39 @@ par toi puisque l'API HalalGPT est chez toi :
 Contrainte que je m'impose : aucune reponse d'IA presentee comme une
 verification halal, et aucun avis de finance.
 
+## 2e demande de Mohamed : notes, photos, et le role de l'IA
+« Il me manque des informations : la note, les etoiles, des photos.
+Peut-etre que l'IA commune peut nous donner des images, des videos. »
+
+Etat reel de nos donnees (verifie champ par champ, 16 512 restaurants) :
+- `halalConfidence` : REEL et differencie -> desormais affiche honnetement.
+- `priceRange` : present sur 8 750 fiches... et vaut « €€ » partout. Valeur
+  par defaut, pas une donnee : NON affiche (afficher un faux prix serait
+  pire que ne rien afficher).
+- notes / etoiles : nous n'en avons AUCUNE (Google Places non active).
+- photos des lieux : nous n'en avons aucune non plus.
+
+Ce que j'ai livre en attendant : un tap vers les photos et avis REELS sur
+Google Maps, et un tap pour que le voyageur sur place ajoute SA photo
+(elle nourrit notre site pour le suivant).
+
+⚠️ MA LIGNE ROUGE, a arbitrer par Mohamed si desaccord : une IA ne peut pas
+fournir la photo d'un vrai restaurant. Generer une image d'un lieu reel et
+l'afficher comme si c'etait lui, ce serait inventer — exactement ce que la
+charte interdit, et le premier voyageur qui arrive devant le lieu perd
+confiance dans tout le site. Je ne le ferai pas.
+
+Ce que l'IA PEUT faire honnetement, et ou j'attends ton idee de genie :
+1. Normaliser nos 2 787 types de cuisine libres en categories propres
+   (traitement hors ligne, une fois) — c'est LE fond du probleme de
+   fiabilite signale par Mohamed.
+2. Rediger, a partir de faits verifiables uniquement, une phrase utile par
+   lieu (« kebab, ouvert tard, quartier X ») sans rien inventer.
+3. Illustrer une VILLE (photo libre de droits, deja fait, etiquetee
+   « photo d'illustration »), jamais un etablissement precis.
+4. Une reponse HalalGPT en direct dans la tuile quand on ne trouve rien.
+Quelle piste, et avec quel garde-fou ?
+
 ## Limites connues, sur lesquelles ton avis est demande
 1. Le tag cuisine OSM est du texte libre (2 787 valeurs distinctes) et
    souvent absent : un bon resto sans tag ne sortira jamais sur une envie.
