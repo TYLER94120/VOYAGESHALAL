@@ -9,6 +9,7 @@ import { ShareButtons } from '@/components/ShareButtons'
 import { getDomainSEO, FR_URL, EN_URL } from '@/lib/domain'
 import { updatedAtOf, fmtMonthYear, cityOfArticle } from '@/lib/freshness'
 import CommunityCTA from '@/components/blog/CommunityCTA'
+import GarderSpot from '@/components/blog/GarderSpot'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -119,6 +120,10 @@ export default async function BlogPostPage({ params }: Props) {
             style={{ '--tw-prose-headings': '#1a3a2a', '--tw-prose-links': '#c9a870' } as React.CSSProperties}
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
+
+          {/* ⭐ Garder l'adresse — placé juste après le contenu, avant le
+              partage : c'est le geste qui transforme une lecture en carnet. */}
+          <GarderSpot slug={post.slug} titre={post.title} en={isEN} />
 
           <ShareButtons
             titre={post.title}

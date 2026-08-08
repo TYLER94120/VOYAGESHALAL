@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { track } from '@vercel/analytics'
 import { useLanguage } from '@/components/i18n/LanguageProvider'
-import { getFavs, mergeFavs, toggleFav, FAVS_EVENT, type Fav, type FavKind } from '@/lib/favorites'
+import { getFavs, mergeFavs, toggleFav, FAVS_EVENT, getDeparts, setDepart, joursAvant, type Fav, type FavKind } from '@/lib/favorites'
 
 const GREEN = '#1a3a2a'
 
@@ -16,19 +16,21 @@ const KIND_LABEL: Record<FavKind, { fr: string; en: string; icon: string }> = {
   hotel: { fr: 'Hôtels', en: 'Hotels', icon: '🏨' },
   activite: { fr: 'Activités', en: 'Activities', icon: '🎯' },
 }
-const KIND_ORDER: FavKind[] = ['ville', 'resto', 'mosquee', 'spot', 'hotel', 'activite']
+// Clé du groupe « sans ville » (caractère invisible → jamais confondu avec un nom)
+const AILLEURS = '\u200b'
 
 export default function CarnetClient() {
   const { lang } = useLanguage()
   const en = lang === 'en'
   const [favs, setFavs] = useState<Fav[] | null>(null) // null = pas encore hydraté
+  const [departs, setDeparts] = useState<Record<string, string>>({})
   const [email, setEmail] = useState('')
   const [syncMsg, setSyncMsg] = useState('')
   const [syncing, setSyncing] = useState(false)
 
   useEffect(() => {
-    setFavs(getFavs())
-    const sync = () => setFavs(getFavs())
+    setFavs(getFavs()); setDeparts(getDeparts())
+    const sync = () => { setFavs(getFavs()); setDeparts(getDeparts()) }
     window.addEventListener(FAVS_EVENT, sync)
     // Email mémorisé → re-sync silencieuse au chargement
     const saved = localStorage.getItem('vh_carnet_email')
@@ -70,9 +72,26 @@ export default function CarnetClient() {
     } finally { setSyncing(false) }
   }
 
-  const grouped = KIND_ORDER
-    .map((k) => ({ kind: k, items: (favs ?? []).filter((f) => f.kind === k) }))
-    .filter((g) => g.items.length > 0)
+  // 🧳 LE CARNET SE RANGE PAR VILLE, PAS PAR TYPE.
+  // « Ton Marrakech : 6 adresses » veut dire quelque chose ; « Restaurants
+  // (6) » réparti sur quatre pays ne veut rien dire. Sur place, on ouvre sa
+  // ville — et tout tient dans localStorage, donc ça marche sans réseau.
+  const parVille = new Map<string, Fav[]>()
+  for (const f of favs ?? []) {
+    const cle = f.kind === 'ville' ? f.nom : (f.villeNom || AILLEURS)
+    if (!parVille.has(cle)) parVille.set(cle, [])
+    parVille.get(cle)!.push(f)
+  }
+  const villes = [...parVille.entries()]
+    .map(([ville, items]) => ({ ville, items, depart: departs[ville] }))
+    .sort((a, b) => {
+      const ja = joursAvant(a.depart), jb = joursAvant(b.depart)
+      // Un départ prévu passe devant, le plus proche en premier
+      if (ja !== null && jb !== null) return ja - jb
+      if (ja !== null) return -1
+      if (jb !== null) return 1
+      return b.items.length - a.items.length
+    })
 
   return (
     <div className="max-w-2xl mx-auto px-4 pb-16">
@@ -122,28 +141,65 @@ export default function CarnetClient() {
         </div>
       )}
 
-      {grouped.map((g) => (
-        <section key={g.kind} className="mb-8">
-          <h2 className="font-bold text-lg mb-3" style={{ color: GREEN }}>
-            {KIND_LABEL[g.kind].icon} {en ? KIND_LABEL[g.kind].en : KIND_LABEL[g.kind].fr} ({g.items.length})
-          </h2>
-          <ul className="space-y-2">
-            {g.items.map((f) => (
-              <li key={f.id} className="flex items-center gap-2 bg-white rounded-2xl border border-gray-100 px-4 py-3">
-                <Link href={f.href} className="flex-1 min-w-0">
-                  <span className="block font-semibold text-sm truncate" style={{ color: GREEN }}>{f.nom}</span>
-                  {f.villeNom && <span className="block text-xs text-gray-400">{f.villeNom}</span>}
-                </Link>
-                <button
-                  onClick={() => { toggleFav(f); setFavs(getFavs()) }}
-                  aria-label={en ? 'Remove from notebook' : 'Retirer du carnet'}
-                  className="text-gray-300 hover:text-red-400 text-sm px-2"
-                >✕</button>
-              </li>
-            ))}
-          </ul>
-        </section>
-      ))}
+      {villes.map((v) => {
+        const jours = joursAvant(v.depart)
+        const nom = v.ville === AILLEURS ? (en ? 'Other saved places' : 'Autres adresses gardées') : v.ville
+        return (
+          <section key={v.ville} className="mb-8">
+            <h2 className="font-bold text-lg mb-2" style={{ color: GREEN }}>
+              {v.ville === AILLEURS ? '📌' : '📍'} {en ? `Your ${nom}` : `Ton ${nom}`}
+              <span className="font-normal text-sm text-gray-500">
+                {' '}· {v.items.length} {en ? (v.items.length > 1 ? 'places' : 'place') : (v.items.length > 1 ? 'adresses' : 'adresse')}
+              </span>
+            </h2>
+
+            {/* ⏳ Compte à rebours — uniquement si un départ est indiqué.
+                Un compteur est un compteur : aucun jugement, aucune pression. */}
+            {v.ville !== AILLEURS && (
+              <div className="bg-white rounded-2xl border border-gray-100 px-4 py-3 mb-3 flex items-center gap-3 flex-wrap">
+                {jours !== null && jours >= 0 ? (
+                  <span className="font-bold text-sm" style={{ color: '#8A6D1E' }}>
+                    ⏳ {jours === 0
+                      ? (en ? 'You leave today' : 'Tu pars aujourd\u2019hui')
+                      : (en ? `Your trip in ${jours} day${jours > 1 ? 's' : ''}` : `Ton voyage dans ${jours} jour${jours > 1 ? 's' : ''}`)}
+                  </span>
+                ) : (
+                  <span className="text-sm text-gray-500">🗓 {en ? 'Departure date?' : 'Date de départ ?'}</span>
+                )}
+                <input
+                  type="date"
+                  value={v.depart ?? ''}
+                  onChange={(e) => setDepart(v.ville, e.target.value || null)}
+                  className="text-sm border border-gray-200 rounded-xl px-3 min-h-[44px]"
+                  aria-label={en ? `Departure date for ${nom}` : `Date de départ pour ${nom}`}
+                />
+                {v.depart && (
+                  <button onClick={() => setDepart(v.ville, null)} className="text-xs text-gray-400 underline min-h-[44px] px-2">
+                    {en ? 'Clear' : 'Effacer'}
+                  </button>
+                )}
+              </div>
+            )}
+
+            <ul className="space-y-2">
+              {v.items.map((f) => (
+                <li key={f.id} className="flex items-center gap-2 bg-white rounded-2xl border border-gray-100 px-4 py-3">
+                  <span className="text-lg" aria-hidden>{KIND_LABEL[f.kind].icon}</span>
+                  <Link href={f.href} className="flex-1 min-w-0">
+                    <span className="block font-semibold text-sm truncate" style={{ color: GREEN }}>{f.nom}</span>
+                    <span className="block text-xs text-gray-400">{en ? KIND_LABEL[f.kind].en : KIND_LABEL[f.kind].fr}</span>
+                  </Link>
+                  <button
+                    onClick={() => { toggleFav(f); setFavs(getFavs()) }}
+                    aria-label={en ? 'Remove from notebook' : 'Retirer du carnet'}
+                    className="text-gray-300 hover:text-red-400 text-sm px-2 min-h-[44px]"
+                  >✕</button>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )
+      })}
     </div>
   )
 }

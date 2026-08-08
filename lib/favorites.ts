@@ -47,6 +47,36 @@ export function favId(kind: FavKind, ...parts: (string | undefined)[]): string {
   return [kind, ...parts.filter(Boolean).map((p) => norm(String(p)))].join(':')
 }
 
+// ── Dates de départ par ville (compte à rebours du carnet) ───────────
+// C'est le SEUL endroit où une progression a du sens sur un guide de
+// voyage : quand un départ est réellement prévu. Aucune série, aucun
+// compteur quotidien — l'usage d'un guide est épisodique par nature.
+
+const DEPART_KEY = 'vh_departs'
+
+export function getDeparts(): Record<string, string> {
+  if (typeof window === 'undefined') return {}
+  try { return JSON.parse(localStorage.getItem(DEPART_KEY) || '{}') } catch { return {} }
+}
+
+export function setDepart(ville: string, dateISO: string | null) {
+  const d = getDeparts()
+  if (dateISO) d[ville] = dateISO
+  else delete d[ville]
+  try { localStorage.setItem(DEPART_KEY, JSON.stringify(d)) } catch { /* noop */ }
+  window.dispatchEvent(new Event(FAVS_EVENT))
+}
+
+/** Nombre de jours avant le départ (négatif = déjà passé), null si non défini. */
+export function joursAvant(dateISO?: string): number | null {
+  if (!dateISO) return null
+  const j = new Date(dateISO + 'T00:00:00')
+  if (isNaN(j.getTime())) return null
+  const aujourdhui = new Date()
+  aujourdhui.setHours(0, 0, 0, 0)
+  return Math.round((j.getTime() - aujourdhui.getTime()) / 86400000)
+}
+
 /** Fusionne des favoris distants (sync email) avec les locaux. */
 export function mergeFavs(remote: Fav[]): Fav[] {
   const local = getFavs()

@@ -111,7 +111,11 @@ export interface PrayerSpot {
   photo?: string          // URL optionnelle (pas d'upload en v1)
   note?: number           // 0–5, optionnel
   source: 'curated' | 'community'
-  status: 'published' | 'hidden'
+  // 'pending' = contribution en attente de vérification. RÈGLE INTOUCHABLE :
+  // un coin prière proposé par un visiteur ne s'affiche JAMAIS de lui-même.
+  // On ne relâche pas la règle « ne jamais inventer une salle de prière »
+  // sous prétexte que l'information vient de la communauté.
+  status: 'published' | 'hidden' | 'pending'
   confirmations: number   // compteur « X voyageurs confirment » (0 par défaut)
   createdAt: string
   // ── Communauté (Phase 2) ──
