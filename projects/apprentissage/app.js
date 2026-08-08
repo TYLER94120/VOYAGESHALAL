@@ -9,83 +9,37 @@
 
   var CLE = 'ipp.progression.v1';
 
-  /* ---------- catalogue ---------------------------------------------------
-     publiee:false = la lecon n'existe pas encore. On l'affiche honnetement
-     comme "bientot" plutot que de faire croire a du contenu.
-     ---------------------------------------------------------------------- */
+  /* ---------- les themes ---------------------------------------------------
+     REGLE : on n'affiche que ce qui existe.
 
-  /* ---------- la carte complete des themes --------------------------------
-     Le site annonce tout ce qu'il couvrira, et se remplit lecon par lecon.
+     Ce tableau ne contient que les themes qui ont deja au moins une lecon
+     ecrite et verifiee. Il sert d'etiquette a la lecon ("Le sens des
+     sourates" sous le titre), pas de vitrine.
 
-     Pourquoi publier la carte entiere alors que la plupart des parcours sont
-     encore vides : parce que la seule autre facon d'avoir "une grosse offre"
-     tout de suite serait de fabriquer des dizaines de pages faibles. Google
-     sanctionne cela, et surtout un contenu religieux non verifie engage la
-     responsabilite de Mohamed. Une carte annoncee est honnete ; une page vide
-     par theme ne l'est pas. Il n'y a donc qu'UNE page pour toute la carte.
-
-     Chaque parcours dit ce qu'il enseignera : c'est une information reelle,
-     pas un texte de remplissage.
+     Le site a longtemps annonce dix-huit themes dont douze etaient vides.
+     C'etait une promesse a credit. Les douze themes retires attendent dans
+     NOTES-lecons-a-venir.md : ils reviennent ici le jour ou leur premiere
+     lecon est ecrite, pas avant. Une case en moins ne coute rien ; une case
+     vide coute la confiance.
 
      Absent volontairement : la zakat et tout ce qui touche a l'argent.
      Decision de Mohamed, sa responsabilite est en jeu. Ne pas l'ajouter sans
      son accord explicite.
      ---------------------------------------------------------------------- */
 
-  var FAMILLES = [
-    { id: 'croire', nom: 'La foi',          quoi: 'Ce qu\'on croit, et pourquoi.' },
-    { id: 'prier',  nom: 'La priere',       quoi: 'Le premier geste du quotidien.' },
-    { id: 'coran',  nom: 'Le Coran',        quoi: 'Le comprendre, puis le retenir.' },
-    { id: 'arabe',  nom: 'La langue arabe', quoi: 'Pour lire sans intermediaire.' },
-    { id: 'vivre',  nom: 'Le quotidien',    quoi: 'Ce qui se vit chaque jour.' }
-  ];
-
   var PARCOURS = [
-    // --- La foi ---
-    { id: 'foi', famille: 'croire', nom: 'Les bases de la foi',
+    { id: 'foi', nom: 'Les bases de la foi',
       quoi: 'Les six piliers de la foi, un par un, avec leur source.' },
-    { id: 'noms-allah', famille: 'croire', nom: 'Les noms d\'Allah',
-      quoi: 'Ce que chaque nom veut dire, et le verset ou il apparait.' },
-    { id: 'prophetes', famille: 'croire', nom: 'Les prophetes',
+    { id: 'prophetes', nom: 'Les prophetes',
       quoi: 'Ceux que le Coran nomme, et ce qu\'il raconte d\'eux.' },
-    { id: 'sira', famille: 'croire', nom: 'La vie du Prophete',
-      quoi: 'Sa vie dans l\'ordre, en s\'appuyant sur les recits etablis.' },
-    { id: 'au-dela', famille: 'croire', nom: 'L\'au-dela',
-      quoi: 'Ce que les textes disent du Jour dernier, sans rien y ajouter.' },
-
-    // --- La priere ---
-    { id: 'priere', famille: 'prier', nom: 'La priere pas a pas',
+    { id: 'priere', nom: 'La priere pas a pas',
       quoi: 'Les gestes et les paroles, unite par unite.' },
-    { id: 'purification', famille: 'prier', nom: 'La purification',
-      quoi: 'Les ablutions geste par geste, et ce qui les annule.' },
-    { id: 'priere-quand', famille: 'prier', nom: 'Les moments et les conditions',
-      quoi: 'Les cinq prieres, leurs moments, et ce qui rend la priere valable.' },
-
-    // --- Le Coran ---
-    { id: 'sourates', famille: 'coran', nom: 'Le sens des sourates',
+    { id: 'sourates', nom: 'Le sens des sourates',
       quoi: 'Verset par verset, en commencant par les plus recitees.' },
-    { id: 'memoriser', famille: 'coran', nom: 'Memoriser le Coran',
-      quoi: 'Une methode par petits morceaux, avec des revisions espacees.' },
-    { id: 'lire-coran', famille: 'coran', nom: 'Lire l\'arabe du Coran',
-      quoi: 'Dechiffrer lettres et voyelles pour lire par soi-meme.' },
-
-    // --- La langue arabe ---
-    { id: 'alphabet', famille: 'arabe', nom: 'L\'alphabet arabe',
+    { id: 'alphabet', nom: 'L\'alphabet arabe',
       quoi: 'Les 28 lettres, leur son et leurs formes selon la place.' },
-    { id: 'mots-coran', famille: 'arabe', nom: 'Les mots qui reviennent le plus',
-      quoi: 'Comprendre une grande part du Coran avec peu de mots.' },
-
-    // --- Le quotidien ---
-    { id: 'invocations', famille: 'vivre', nom: 'Les invocations du jour',
-      quoi: 'Au reveil, en mangeant, en sortant, avant de dormir.' },
-    { id: 'comportement', famille: 'vivre', nom: 'Le comportement',
-      quoi: 'La parole, la colere, les parents, les voisins.' },
-    { id: 'jeune', famille: 'vivre', nom: 'Le jeune et le Ramadan',
-      quoi: 'Ce que le jeune demande, et ce qui le rompt.' },
-    { id: 'pelerinage', famille: 'vivre', nom: 'Le pelerinage',
-      quoi: 'Les etapes du Hajj et de la Omra, dans l\'ordre.' },
-    { id: 'annee', famille: 'vivre', nom: 'Les moments de l\'annee',
-      quoi: 'Le vendredi, Ramadan, les dix jours, Achoura.' }
+    { id: 'invocations', nom: 'Les invocations du jour',
+      quoi: 'Au reveil, en mangeant, en sortant, avant de dormir.' }
   ];
 
   var CATALOGUE = [
@@ -441,54 +395,21 @@
     return null;
   }
 
-  function parcoursAvecEtat() {
-    var d = charger();
-    return PARCOURS.map(function (p) {
-      var dedans = CATALOGUE.filter(function (l) { return l.parcours === p.id && l.publiee; });
-      var faites = dedans.filter(function (l) { return !!d.lecons[l.id]; });
-      return {
-        id: p.id,
-        nom: p.nom,
-        quoi: p.quoi,
-        famille: p.famille,
-        lecons: dedans,
-        total: dedans.length,
-        faites: faites.length,
-        pret: dedans.length > 0
-      };
-    });
-  }
-
-  // Les parcours ranges par famille, ceux qui sont ouverts en premier dans
-  // chaque famille. Sert a la page "Tous les parcours".
-  function offreParFamille() {
-    var etats = parcoursAvecEtat();
-    return FAMILLES.map(function (f) {
-      var dedans = etats.filter(function (p) { return p.famille === f.id; });
-      dedans.sort(function (a, b) { return (b.pret ? 1 : 0) - (a.pret ? 1 : 0); });
-      return {
-        id: f.id,
-        nom: f.nom,
-        quoi: f.quoi,
-        parcours: dedans,
-        ouverts: dedans.filter(function (p) { return p.pret; }).length
-      };
-    });
-  }
-
-  // Le compte honnete de ce qui existe, pour ne jamais gonfler l'offre.
+  // Le compte honnete de ce qui existe. Calcule depuis le catalogue, jamais
+  // ecrit a la main : un chiffre ecrit a la main devient faux a la lecon
+  // suivante, et c'est deja arrive deux fois sur ce site.
   function chiffresOffre() {
-    var etats = parcoursAvecEtat();
-    return {
-      lecons: publiees().length,
-      parcours: etats.length,
-      parcoursOuverts: etats.filter(function (p) { return p.pret; }).length,
-      familles: FAMILLES.length
-    };
+    var pubs = publiees();
+    var minutes = 0;
+    var choses = 0;
+    for (var i = 0; i < pubs.length; i++) {
+      minutes += pubs[i].minutes;
+      choses += pubs[i].acquis;
+    }
+    return { lecons: pubs.length, minutes: minutes, acquis: choses };
   }
 
   global.IPP = {
-    FAMILLES: FAMILLES,
     PARCOURS: PARCOURS,
     CATALOGUE: CATALOGUE,
     nomParcours: nomParcours,
@@ -507,8 +428,6 @@
     publiees: publiees,
     ordreLecons: ordreLecons,
     leconDuJour: leconDuJour,
-    parcoursAvecEtat: parcoursAvecEtat,
-    offreParFamille: offreParFamille,
     chiffresOffre: chiffresOffre,
     niveau: niveau,
     enregistrerNiveau: enregistrerNiveau,
@@ -659,37 +578,39 @@ function ippRendreAccueil(racine) {
   }
 
   // --- rendre visible le fait que l'accueil suit le niveau declare ---
+  // Une seule note, et seulement quand elle apprend quelque chose. Dire
+  // "choisie d'apres tes reponses" a un debutant n'apporte rien : c'est du
+  // texte de plus autour du seul bouton qui compte.
   var note = q('niveau-note');
   if (note) {
-    var p = IPP.profil();
-    if (p === 'avance') {
+    if (IPP.profil() === 'avance') {
       note.textContent = 'D\'apres tes reponses, Al-Fatiha passe apres : tu la connais deja par coeur.';
-      note.hidden = false;
-    } else if (p === 'debutant' || p === 'intermediaire') {
-      note.textContent = 'Choisie d\'apres tes trois reponses du depart.';
       note.hidden = false;
     } else {
       note.hidden = true;
     }
   }
 
-  // --- revisions dues aujourd'hui ---
-  var dues = IPP.aRevoir();
-  if (dues.length) {
-    var html = '';
+  // --- une revision due : une ligne, pas un bloc ---
+  // L'accueil ne propose qu'un seul geste. Mais si une lecon deja vue revient
+  // aujourd'hui et qu'une lecon neuve passe devant, on ne l'efface pas pour
+  // autant : elle tient sur une ligne, sous le bouton.
+  var rappel = q('rappel');
+  if (rappel) {
+    var dues = IPP.aRevoir();
+    var autre = null;
     for (var i = 0; i < dues.length; i++) {
-      var f = IPP.fiche(dues[i].id);
-      html += '<a class="ligne" href="' + dues[i].url + '">'
-            + ippEtoile(17, '#c9a84c')
-            + '<span><span class="t">' + ippEchappe(dues[i].titre) + '</span>'
-            + '<span class="s">Vue le ' + IPP.dateLongue(IPP.depuisCle(f.faitLe)) + '</span></span>'
-            + '<span class="fl" aria-hidden="true">&rsaquo;</span></a>';
+      if (!choix || dues[i].id !== choix.lecon.id) { autre = dues[i]; break; }
     }
-    q('revisions').innerHTML = html;
+    if (autre) {
+      rappel.innerHTML = ippEchappe(autre.titre) + ' revient aujourd\'hui&nbsp;: '
+                       + '<a href="' + autre.url + '">la revoir en '
+                       + autre.minutes + ' min</a>';
+      rappel.hidden = false;
+    } else {
+      rappel.hidden = true;
+    }
   }
-
-  // --- parcours ---
-  q('parcours').innerHTML = ippListeParcours('chemin.html');
 }
 
 
@@ -753,8 +674,8 @@ function ippRendreChemin(racine) {
   // --- rappel du point de depart, et possibilite de le refaire ---
   ippRendrePointDepart(q);
 
-  // --- parcours (sans lien : on est deja sur la page) ---
-  q('parcours').innerHTML = ippListeParcours(null);
+  // --- toutes les lecons qui existent, et leur etat ---
+  q('lecons').innerHTML = ippListeLecons();
 
   // --- revisions a venir ---
   var prevues = [];
@@ -857,43 +778,31 @@ function ippRendrePointDepart(q) {
   }
 }
 
-// Liste des parcours. Les parcours sans lecon publiee sont annonces "Bientot"
-// plutot que d'afficher un faux compteur.
-function ippListeParcours(lien) {
-  var etats = IPP.parcoursAvecEtat();
+// Toutes les lecons qui existent, avec leur etat. Sert a "Mon chemin".
+// Il n'y a rien d'autre a lister : ce que cette fonction renvoie est
+// exactement ce que le site sait enseigner aujourd'hui.
+function ippListeLecons() {
+  var pubs = IPP.publiees();
   var out = '';
-  var ouverts = 0;
-
-  for (var j = 0; j < etats.length; j++) {
-    var p = etats[j];
-    if (!p.pret) { continue; }   // les parcours a venir sont sur parcours.html
-    ouverts++;
-    var pct = p.total ? Math.round((p.faites / p.total) * 100) : 0;
-    var ouvre = lien ? '<a class="pc" href="' + lien + '">' : '<div class="pc">';
-    var ferme = lien ? '</a>' : '</div>';
-    out += ouvre
-         + '<span class="haut"><span class="nom">' + ippEchappe(p.nom) + '</span>'
-         + '<span class="cpt">' + p.faites + ' / ' + p.total + '</span></span>'
-         + '<span class="barre-p"><span style="width:' + pct + '%"></span></span>'
-         + ferme;
+  for (var i = 0; i < pubs.length; i++) {
+    var l = pubs[i];
+    var faite = IPP.estFaite(l.id);
+    out += '<a class="ligne" href="' + l.url + '">'
+         + ippEtoile(17, faite ? '#c9a84c' : '#6c8271')
+         + '<span><span class="t">' + ippEchappe(l.titre) + '</span>'
+         + '<span class="s">' + (faite ? 'Deja faite' : l.minutes + ' min') + '</span></span>'
+         + '<span class="fl" aria-hidden="true">&rsaquo;</span></a>';
   }
-
-  // Renvoi vers la carte complete, avec le compte reel.
-  var c = IPP.chiffresOffre();
-  out += '<a class="ligne" href="parcours.html">' + ippEtoile(17, '#c9a84c')
-       + '<span><span class="t">Voir les ' + c.parcours + ' parcours du programme</span>'
-       + '<span class="s">' + ouverts + ' ouverts, les autres en preparation</span></span>'
-       + '<span class="fl" aria-hidden="true">&rsaquo;</span></a>';
   return out;
 }
 
 
 /* =========================================================
-   Vue : "Tous les parcours"
+   Vue : "Toutes les lecons"
 
-   La carte des themes est ecrite en dur dans parcours.html (donc lisible par
+   Les six lecons sont ecrites en dur dans parcours.html (donc lisibles par
    Google et sans JavaScript). Cette fonction ne fait que l'enrichir : elle
-   marque ce qui est ouvert et ajoute les liens vers les lecons existantes.
+   compte, et elle marque ce qui est deja fait.
    ========================================================= */
 
 function ippRendreOffre(racine) {
@@ -901,7 +810,7 @@ function ippRendreOffre(racine) {
   var r = racine || document;
   var q = ippViseur(racine);
 
-  // --- le compte, dit sans le gonfler ---
+  // --- le compte, calcule depuis le catalogue ---
   var c = IPP.chiffresOffre();
   var zone = q('compte');
   if (zone) {
@@ -909,48 +818,23 @@ function ippRendreOffre(racine) {
         '<div class="chiffres">'
       + '<div class="ch"><span class="n">' + c.lecons + '</span>'
       + '<span class="l">' + (c.lecons === 1 ? 'lecon prete' : 'lecons pretes') + '</span></div>'
-      // On n'annonce pas "4 / 18" : la fraction fait paraitre le site inachevé
-      // alors que l'honnetete se joue ligne par ligne, sur chaque parcours.
-      + '<div class="ch"><span class="n">' + c.parcours + '</span>'
-      + '<span class="l">parcours au programme</span></div>'
-      + '<div class="ch"><span class="n">' + c.familles + '</span>'
-      + '<span class="l">familles de themes</span></div>'
+      + '<div class="ch"><span class="n">' + c.minutes + '</span>'
+      + '<span class="l">minutes en tout</span></div>'
+      + '<div class="ch"><span class="n">' + c.acquis + '</span>'
+      + '<span class="l">choses a apprendre</span></div>'
       + '</div>';
   }
 
-  // --- l'etat de chaque parcours ---
-  var etats = {};
-  var liste = IPP.parcoursAvecEtat();
-  for (var i = 0; i < liste.length; i++) { etats[liste[i].id] = liste[i]; }
-
-  var cartes = r.querySelectorAll('[data-parcours]');
+  // --- marquer les lecons deja faites ---
+  // Sans JavaScript, l'etiquette montre la duree : c'est deja une information
+  // juste. Avec, elle devient "Deja faite" pour ce qui est derriere soi.
+  var cartes = r.querySelectorAll('[data-lecon]');
   for (var j = 0; j < cartes.length; j++) {
     var el = cartes[j];
-    var p = etats[el.getAttribute('data-parcours')];
-    if (!p) { continue; }
-
+    if (!IPP.estFaite(el.getAttribute('data-lecon'))) { continue; }
+    el.className += ' faite';
     var etiq = el.querySelector('[data-r-etat]');
-    var liens = el.querySelector('[data-r-liens]');
-    if (!p.pret) { continue; }   // "En preparation" est deja dans le HTML
-
-    el.classList.add('ouvert');
-    if (etiq) {
-      etiq.textContent = (p.total === 1) ? '1 lecon' : p.total + ' lecons';
-      etiq.classList.add('ok');
-    }
-    if (liens) {
-      var h = '';
-      for (var k = 0; k < p.lecons.length; k++) {
-        var l = p.lecons[k];
-        var faite = IPP.estFaite(l.id);
-        h += '<a class="ligne" href="' + l.url + '">'
-           + ippEtoile(15, faite ? '#c9a84c' : '#6c8271')
-           + '<span><span class="t">' + ippEchappe(l.titre) + '</span>'
-           + '<span class="s">' + (faite ? 'Deja faite' : l.minutes + ' min') + '</span></span>'
-           + '<span class="fl" aria-hidden="true">&rsaquo;</span></a>';
-      }
-      liens.innerHTML = h;
-    }
+    if (etiq) { etiq.textContent = 'Deja faite'; }
   }
 }
 

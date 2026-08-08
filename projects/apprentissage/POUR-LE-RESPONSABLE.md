@@ -5,6 +5,83 @@ Les entrees les plus recentes sont en haut.
 
 ---
 
+## 2026-08-08 (nuit) — FAIT — Recadrage applique : etapes 1 et 2
+
+Recadrage recu, compris, et je ne discute pas. La seule mesure est desormais
+« Mohamed ouvre le site sept jours d'affilee ». J'ai fait les deux choses du
+jour, dans l'ordre demande, et **rien d'autre**.
+
+**1. Les parcours vides sont retires.** `parcours.html` ne montre plus que les
+six lecons reelles, une carte chacune, plus la page de repere des 114 sourates.
+Zero « En preparation » — verifie par test, avec et sans JavaScript. Les douze
+themes retires sont dans `NOTES-lecons-a-venir.md` avec une note de preparation
+chacun ; un theme ne revient dans le code que le jour ou sa lecon est ecrite.
+La phrase « De nouvelles lecons chaque semaine » remplace les douze promesses.
+J'ai aussi supprime la notion de « famille » du code : cinq titres pour six
+lecons, c'etait du rangement pour du rangement.
+
+**2. L'accueil ne montre plus qu'une chose.** Une carte, un bouton. Les blocs
+« A revoir aujourd'hui », « Tes parcours » et « La regle de ce site » sont
+partis. Restent, sous le bouton et volontairement discrets : un lien
+« Mon chemin », et la regle du site en petit (elle porte la promesse
+editoriale et le texte de l'accueil pour Google — si tu la veux dehors aussi,
+dis-le et je l'enleve). Un commentaire est ecrit en tete du fichier pour
+interdire d'y rajouter un bloc.
+
+**Une decision que j'ai prise seul, dis-moi si elle te va.** En retirant le bloc
+des revisions, une revision due un jour ou une lecon neuve existe encore
+devenait invisible — la repetition espacee cassait sur les six premiers jours.
+Je ne l'ai pas remise en bloc : elle tient sur **une ligne** sous le bouton
+(« Al-Fatiha revient aujourd'hui : la revoir en 8 min »). Ca reste une carte, un
+bouton.
+
+**Audio** : je n'en parle plus a Mohamed. J'ai mis la ligne honnete dans la
+lecon d'Al-Fatiha, a l'endroit de la prononciation : « pour entendre la
+recitation, ouvre ton application de Coran habituelle et suis les syllabes en
+meme temps ». Le mecanisme `data-audio` reste dans `app.js`, inutilise. Sujet
+clos.
+
+**Etapes 3 et 4 (la serie, la reprise instantanee) : demain**, dans cet ordre.
+La serie existe deja et s'affiche des le premier jour ; je la rendrai visible
+avant tout le reste et je verifierai qu'une chaine cassee reparte a 1 sans un
+mot de reproche.
+
+### DEFAUT REEL que j'ai trouve en testant, et que je n'ai PAS corrige
+
+Ce n'est pas dans le perimetre du jour, donc je ne l'ai pas touche — mais il
+touche directement ta mesure, alors je te le signale precisement.
+
+**Quatre lecons sur six ne contiennent aucune question.** Seules `al-fatiha`
+(premiere question apres 3 tapes) et `prophetes-coran` (apres 4) en ont.
+`six-piliers-foi`, `priere-gestes`, `invocations-matin` et `alphabet-arabe` se
+parcourent en appuyant sur « Suivant » de bout en bout, sans jamais rien
+demander. Or c'est exactement la passivite que le test de fin devait corriger,
+et la regle que j'avais ecrite est « une question dans les trois premieres
+cartes ».
+
+Pire pour la mesure : `six-piliers-foi` est la **premiere** lecon servie a
+quelqu'un qui declare ne pas encore prier. La toute premiere seance du site est
+donc de la lecture pure.
+
+Le correctif est petit et sans risque editorial : deux ou trois questions
+inserees dans des lecons existantes, en reprenant le mecanisme deja teste
+(bouton bloque, options melangees, retour qui explique). **Aucun texte religieux
+nouveau, aucune source nouvelle.** Dis-moi ou tu le mets : avant l'etape 3, ou
+apres l'etape 4 ?
+
+### Idees notees, pas construites (comme demande)
+
+- grouper les lecons par famille de themes — a ressortir quand il y aura assez
+  de lecons pour que grouper aide a lire ;
+- les onze autres themes de `NOTES-lecons-a-venir.md`, dans l'ordre que j'y ai
+  note (« lire l'arabe du Coran » me semble le prochain : il prolonge la lecon
+  sur l'alphabet et ne demande aucun avis) ;
+- un rappel a l'heure du rendez-vous. C'est **la** fonction qui ferait revenir
+  sept jours d'affilee, et elle est impossible sans notification, donc sans
+  application ou sans compte. Je ne la construis pas, je te la signale.
+
+---
+
 ## 2026-08-08 (soir) — BLOQUE — Le son : il me faut une licence, pas un fichier
 
 Mohamed insiste, et il a raison sur le fond : **on ne peut pas apprendre a
@@ -18,10 +95,14 @@ est exactement le piege. Et je ne peux pas verifier une licence depuis ma
 session : la plupart des hebergeurs sont bloques par le proxy.
 
 **Ce que j'ai fait en attendant, et c'est pret :** le mecanisme est construit et
-teste. Chaque verset d'Al-Fatiha porte un `data-audio`. Au chargement, le site
-verifie si `audio/al-fatiha-1.mp3` existe. S'il existe, un bouton
-« Ecouter » apparait tout seul. S'il n'existe pas, **rien ne s'affiche et rien
-ne ment**. Il n'y a donc plus qu'un fichier a deposer, zero code a ecrire.
+teste. Au chargement, le site verifie si le fichier existe. S'il existe, un
+bouton « Ecouter » apparait tout seul. S'il n'existe pas, **rien ne s'affiche et
+rien ne ment**. Il n'y a donc plus qu'un fichier a deposer, zero code a ecrire.
+
+> *Correction du 08/08 au soir* : j'ecrivais ici que chaque verset d'Al-Fatiha
+> portait deja un attribut `data-audio`. C'etait faux — aucune lecon ne le porte.
+> La fonction existe et fonctionne, mais il faut poser l'attribut le jour ou un
+> fichier arrive. Sujet clos par ailleurs, voir l'entree du haut.
 
 **Ce que je te demande :**
 

@@ -43,11 +43,11 @@ Version de travail, hebergee provisoirement dans le repo VOYAGESHALAL sur la bra
 | `lecon-six-piliers-foi.html` | Lecon 3 : les six piliers de la foi (hadith de Jibril) |
 | `lecon-priere-gestes.html` | Lecon 4 : les gestes de la priere, dans l'ordre |
 | `lecon-alphabet-arabe.html` | Lecon 5 : les 28 lettres de l'alphabet arabe |
-| `parcours.html` | Le programme complet : 18 parcours dans 5 familles |
+| `parcours.html` | Les lecons pretes, une carte par lecon (rien d'annonce) |
 | `lecon-prophetes-coran.html` | Lecon 6 : les 25 prophetes nommes dans le Coran |
 | `sourates.html` | Repere : la liste complete des 114 sourates |
 | `POUR-LE-RESPONSABLE.md` | **Boite aux lettres** vers l'agent responsable |
-| `chemin.html` | La progression : compteur, calendrier des jours, parcours, revisions a venir |
+| `chemin.html` | La progression : compteur, calendrier des jours, les lecons, revisions a venir |
 | `style.css` | Toute la mise en forme (charte de la famille) |
 | `app.js` | Catalogue, niveau, progression, revisions, et le lecteur de lecon commun |
 | `robots.txt` | Ce que les robots peuvent lire, et l'adresse du sitemap |
@@ -56,41 +56,52 @@ Version de travail, hebergee provisoirement dans le repo VOYAGESHALAL sur la bra
 | `outils/faire-apercu.py` | Genere `apercu.html`, un apercu en un seul fichier (pour relecture) |
 | `apercu.html` | **Fichier genere.** Ne pas modifier a la main, relancer le script |
 
-Quatre lecons publiees, dans quatre parcours differents : il y a de quoi
-revenir plusieurs jours de suite, ce qui est tout l'objet du site.
+Six lecons publiees : il y a de quoi revenir plusieurs jours de suite, ce qui
+est tout l'objet du site.
 
-## La carte des themes, et pourquoi elle est publiee en entier
+## La regle : on n'affiche que ce qui existe
 
-Mohamed veut que le site couvre **tous les themes de l'islam**. La carte
-complete est donc publiee des maintenant : **18 parcours dans 5 familles**
-(la foi, la priere, le Coran, la langue arabe, le quotidien), sur
-`parcours.html`.
+`parcours.html` ne montre que des lecons **ecrites, relues et sourcees**. Une
+carte par lecon, un lien qui ouvre vraiment quelque chose. Aucune case
+« en preparation ».
 
-Quatre parcours sont ouverts, quatorze annonces. C'est un choix, et voici le
-raisonnement, parce qu'il faudra le retenir :
+### Ce qu'il y avait avant, et pourquoi ca a change
 
-- **La seule autre facon d'avoir une grosse offre tout de suite serait de
-  fabriquer des dizaines de pages faibles.** Google sanctionne cela, et
-  surtout un contenu religieux non verifie engage la responsabilite de
-  Mohamed. Le volume se paierait deux fois.
-- **Une carte annoncee est honnete. Une page vide par theme ne l'est pas.**
-  Il n'y a donc qu'**une seule page** pour toute la carte, jamais 18 pages
-  creuses : ce serait exactement le schema que Google appelle des pages
-  satellites.
-- **Chaque parcours dit ce qu'il enseignera.** C'est une information reelle,
-  verifiable, pas du texte de remplissage. Un lecteur sait ou il met les
-  pieds ; c'est la difference entre une promesse et une facade.
-- Et la page l'explique elle-meme au lecteur, en clair.
+Le site a d'abord publie la carte complete : **18 parcours dans 5 familles**,
+dont douze vides marques « En preparation ». Le raisonnement d'alors n'etait
+pas absurde — annoncer valait mieux que fabriquer des dizaines de pages
+faibles — mais il ratait le point&nbsp;: celui qui ouvre la page compte dix-huit
+et en trouve six. C'est une promesse a credit, et elle se paie a la premiere
+visite.
 
-L'accueil, lui, ne liste **que les parcours ouverts** plus un lien vers la
-carte : dix-huit lignes « en preparation » sur l'ecran du matin seraient
-decourageantes.
+**Mieux vaut un site qui tient six promesses qu'un site qui en affiche
+dix-huit et n'en tient que six.** Une case en moins ne coute rien ; une case
+vide coute la confiance.
+
+En pratique&nbsp;:
+
+- `PARCOURS` (dans `app.js`) ne contient plus que les themes **qui ont au moins
+  une lecon**. Il sert d'etiquette sous le titre d'une lecon, pas de vitrine.
+- Les douze themes retires attendent dans `NOTES-lecons-a-venir.md`, avec pour
+  chacun une note de preparation. Un theme y revient dans `PARCOURS` le jour ou
+  sa premiere lecon est ecrite, **pas avant**.
+- La seule promesse d'avenir affichee est une phrase&nbsp;: « De nouvelles lecons
+  chaque semaine. » Ca suffit, et c'est tenable.
+- Les chiffres de la page (lecons, minutes, choses a apprendre) sont
+  **calcules depuis le catalogue**, jamais ecrits a la main. Deux faux chiffres
+  se sont deja glisses dans ce site en les ecrivant a la main.
+
+La notion de « famille » (la foi, la priere, le Coran, la langue arabe, le
+quotidien) a disparu du code&nbsp;: cinq titres de famille pour six lecons, c'etait
+du rangement pour du rangement. Elle reviendra quand il y aura assez de lecons
+pour que grouper aide a lire.
 
 ### Absent volontairement
 
 **La zakat et tout ce qui touche a l'argent.** Decision de Mohamed, sa
 responsabilite est en jeu. Ne pas l'ajouter a `PARCOURS` sans son accord
-explicite, meme si un theme semble le reclamer.
+explicite, meme si un theme semble le reclamer, et ne pas le mettre non plus
+dans la file de `NOTES-lecons-a-venir.md` en attendant.
 
 ### Deux vitesses assumees
 
@@ -99,19 +110,19 @@ possible :
 
 - **le contenu juridique** (le jeune, le pelerinage, la purification, le
   comportement) demande une verification lente. Une regle fausse engage
-  Mohamed. Ces parcours ouvriront lentement ;
+  Mohamed. Ces lecons ouvriront lentement ;
 - **le contenu factuel et linguistique** (l'alphabet, les prophetes nommes
   dans le Coran, l'index des sourates, les mots frequents) ne comporte pas ce
-  risque&nbsp;: ce sont des faits verifiables, pas des avis. Ces parcours
+  risque&nbsp;: ce sont des faits verifiables, pas des avis. Ces lecons
   peuvent ouvrir vite.
 
-C'est par la qu'on rend le site complet sans rien sacrifier. La lecon sur
-l'alphabet en est le premier exemple&nbsp;: 28 lettres, aucun avis religieux,
-et elle a rempli la famille « langue arabe » qui etait vide.
+C'est par la qu'on etoffe le site sans rien sacrifier. La lecon sur l'alphabet
+en est le premier exemple&nbsp;: 28 lettres, aucun avis religieux, rien a
+trancher.
 
-**L'objectif de lancement n'est pas 18 parcours sur 18.** C'est
-**aucune famille vide** : un visiteur qui ouvre le programme doit trouver du
-contenu reel dans chacune des cinq familles. C'est atteint depuis la lecon 5.
+**Le rythme est desormais fixe : une nouvelle lecon tous les deux jours, jamais
+plus.** L'objectif n'est pas un nombre de lecons, c'est que Mohamed ouvre le
+site sept jours d'affilee.
 
 ### Les pages de repere
 
@@ -142,10 +153,9 @@ que tout le contenu ne peut pas tenir.
 
 ### Si la carte change
 
-`PARCOURS` (dans `app.js`) et `parcours.html` doivent rester synchronises.
-Un test le verifie automatiquement et signale tout parcours present d'un cote
-et pas de l'autre. Le lecteur de lecon (`ippDemarrerLecon`) est ecrit une
-seule fois dans `app.js` et partage par toutes les lecons.
+`PARCOURS` et `CATALOGUE` (dans `app.js`) et les cartes de `parcours.html`
+doivent rester d'accord. La marche a suivre est listee plus bas, dans
+« Ajouter une lecon ».
 
 ## Les trois questions d'accueil
 
@@ -277,16 +287,24 @@ prophetes (5, 8, 10).
 est qu'aucune recitation ne soit publiee sans licence ecrite. Une chaine qui se
 declare « sans copyright » n'a aucun droit de liberer la recitation d'un autre.
 
-**Mais le mecanisme est pret.** Chaque verset d'Al-Fatiha porte un attribut
-`data-audio`. Au chargement, `ippBrancherAudio()` verifie si le fichier existe
-dans `audio/`. S'il existe, un bouton « Ecouter » apparait tout seul ; sinon
-rien ne s'affiche. Il n'y a plus qu'un fichier a deposer.
+**Ce que le site dit au lecteur, en attendant** — dans la lecon sur Al-Fatiha,
+a l'endroit ou l'on parle de prononciation : « pour entendre la recitation,
+ouvre ton application de Coran habituelle et suis les syllabes en meme temps ».
+C'est honnete, c'est utile tout de suite, et ca ne promet rien.
 
-Format attendu : `audio/al-fatiha-1.mp3` a `audio/al-fatiha-7.mp3`.
+**Le mecanisme reste pret** dans `app.js` : `ippBrancherAudio()` cherche un
+attribut `data-audio` sur un bloc, verifie par une requete HEAD si
+`audio/<valeur>.mp3` existe, et n'ajoute le bouton « Ecouter » que si le fichier
+repond. Aujourd'hui **aucune lecon ne porte cet attribut** — il n'y a pas de
+fichier a jouer, donc rien a brancher. Le jour ou un fichier licencie arrive, il
+suffit de poser `data-audio` sur les blocs concernes.
 
 Et une reserve qui reste : une **voix de synthese** qui recite le Coran n'est
 pas une question de droits mais une question religieuse. Elle n'est pas tranchee
-ici.
+ici, et ce n'est pas a moi de la trancher.
+
+**Le sujet est clos et hors du chemin critique.** Ne pas repartir en chasse de
+fichiers audio.
 
 ## Technique
 
@@ -311,14 +329,23 @@ elle se transforme en parcours carte par carte.
 
 ### Ajouter une lecon
 
-1. Creer `lecon-<identifiant>.html` en copiant la structure de `lecon-al-fatiha.html`
-   (chaque `<section class="etape" data-etape="N">` est une carte).
-2. Ajouter l'entree correspondante dans `CATALOGUE`, dans `app.js` :
-   `acquis` = nombre d'enseignements que la lecon apporte au compteur ;
-   `publiee: false` tant que le texte n'est pas verifie.
+Cinq endroits, dans cet ordre :
 
-Les parcours sans lecon publiee s'affichent honnetement comme « Bientot ».
-On n'affiche jamais un contenu qui n'existe pas.
+1. Creer `lecon-<identifiant>.html` en copiant la structure de `lecon-al-fatiha.html`
+   (chaque `<section class="etape" data-etape="N">` est une carte, la derniere
+   porte la classe `fin`). **Une question dans les trois premieres cartes** :
+   c'est la que se joue la difference entre apprendre et lire.
+2. Ajouter l'entree dans `CATALOGUE` (`app.js`) : `acquis` = nombre de choses
+   que la lecon apporte au compteur ; `publiee: false` tant que le texte n'est
+   pas verifie. Si son theme n'est pas encore dans `PARCOURS`, l'y ajouter et le
+   retirer de `NOTES-lecons-a-venir.md`.
+3. Ajouter sa carte dans `parcours.html` (duree, resume, lien).
+4. Ajouter son URL dans `sitemap.xml`.
+5. Ajouter sa vue dans la liste `VUES` de `outils/faire-apercu.py`, puis
+   relancer le script.
+
+**On n'affiche jamais un contenu qui n'existe pas.** Ni carte vide, ni theme
+« en preparation », ni compteur ecrit a la main.
 
 ## Referencement
 
@@ -332,12 +359,12 @@ Ce que Google doit voir, et ce qu'il ne doit pas voir :
 | Page | Etat | Pourquoi |
 | --- | --- | --- |
 | `index.html` | indexee, canonical `/` | l'accueil |
-| `lecon-al-fatiha.html` | indexee | page de contenu |
-| `lecon-invocations-matin.html` | indexee | page de contenu |
-| `lecon-six-piliers-foi.html` | indexee | page de contenu |
-| `lecon-priere-gestes.html` | indexee | page de contenu |
+| les six `lecon-*.html` | indexees | pages de contenu |
+| `parcours.html` | indexee | la liste des lecons pretes |
+| `sourates.html` | indexee | page de repere, tres recherchee |
 | `chemin.html` | **noindex, follow** | ecran personnel, vide pour un visiteur |
 | `apercu.html` | **noindex** + bloque dans robots.txt | recopie tout le site : contenu duplique |
+| `apercu-hors-ligne.html` | **noindex** + bloque dans robots.txt | meme raison |
 
 Le cas `apercu.html` etait un vrai piege : ce fichier genere contient
 l'integralite des lecons. Indexe, il aurait fait concurrence aux vraies pages
@@ -396,24 +423,47 @@ Boutons d'au moins 56px de haut. Mobile d'abord, teste a 375px.
 
 ## Verifications faites
 
-Testees au navigateur (Chromium, 375x780) :
+Testees au navigateur (Chromium pilote par Playwright, 375x780), sur les vrais
+fichiers servis en HTTP :
 
-- aucun debordement horizontal sur les quatre pages ;
-- les trois questions d'accueil : elles s'imposent a la 1re visite, ne
-  reviennent plus ensuite, se passent d'un clic, et le profil « avance »
-  recoit bien une autre lecon en premier ;
-- les options de reponse mesurent 64px de haut (charte : 56 minimum) ;
-- l'apercu en un seul fichier se comporte comme le site (navigation, lecons,
-  progression, diagnostic) ;
-- les deux lecons se parcourent de bout en bout, la progression est enregistree ;
-- le lendemain, l'accueil propose bien la lecon suivante, puis annonce honnetement
-  « Tu es a jour » quand il n'y a plus rien ;
-- la revision est bien programmee a J+2, puis J+7, J+21, J+60 ;
-- le calendrier place correctement le premier jour du mois sur le bon jour de semaine ;
-- sans JavaScript : les 18 cartes des deux lecons et leurs 12 blocs de source
-  restent lisibles d'un seul tenant (c'est ce que Google indexe) ;
-- etats vides honnetes (rien a revoir, aucun jour rempli, parcours « Bientot ») ;
+**L'accueil, apres la simplification**
+
+- **un seul bouton et une seule carte** dans le corps de l'accueil ;
+- plus aucune trace des blocs retires (« A revoir aujourd'hui », « Tes
+  parcours », « La regle de ce site » en titre) ;
+- le bouton mesure 60px de haut (charte : 56 minimum) ;
+- toujours un seul bouton le lendemain, quand la carte propose la lecon
+  suivante.
+
+**La page des lecons, apres le retrait des parcours vides**
+
+- **zero occurrence de « En preparation »**, avec et sans JavaScript ;
+- 7 cartes (6 lecons + la page de repere), 7 liens, et les 7 repondent en
+  HTTP 200 ;
+- les chiffres affiches sont calcules : 6 lecons, 39 minutes, 76 choses a
+  apprendre.
+
+**Le reste**
+
+- les trois questions d'accueil s'imposent a la 1re visite, masquent le corps
+  de la page pendant ce temps, et ne reviennent plus ensuite ;
+- les **six** lecons se parcourent de bout en bout jusqu'a l'ecran de fin ;
+- la serie apparait a 1 apres la premiere lecon ; la lecon faite est marquee
+  « Deja faite » sur la page des lecons et sur « Mon chemin » ;
+- la ou il y a une question, le bouton Suivant reste bloque tant qu'on n'a pas
+  repondu ;
+- **aucun debordement horizontal a 375px** sur les 9 pages ;
+- sans JavaScript : l'accueil reste lisible (titre, resume, bouton, regle du
+  site), les elements pilotes restent masques, les 7 cartes de la page des
+  lecons sont dans le HTML, et `chemin.html` garde son `noindex,follow` ;
 - aucune erreur JavaScript.
+
+**Defaut connu, pas encore corrige** : quatre lecons sur six ne contiennent
+**aucune question** (`priere-gestes`, `six-piliers-foi`, `invocations-matin`,
+`alphabet-arabe`). Seules `al-fatiha` (question apres 3 tapes) et
+`prophetes-coran` (apres 4) en ont. C'est note dans
+`POUR-LE-RESPONSABLE.md`&nbsp;: la regle « une question dans les trois premieres
+cartes » n'est donc pas tenue partout.
 
 ## Liens croises de la famille
 
