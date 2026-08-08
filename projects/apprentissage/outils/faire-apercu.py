@@ -26,6 +26,7 @@ VUES = [
     ("index.html", "accueil"),
     ("lecon-al-fatiha.html", "al-fatiha"),
     ("lecon-invocations-matin.html", "invocations-matin"),
+    ("lecon-six-piliers-foi.html", "six-piliers-foi"),
     ("chemin.html", "chemin"),
 ]
 

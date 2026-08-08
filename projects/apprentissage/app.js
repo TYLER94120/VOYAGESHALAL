@@ -46,6 +46,18 @@
       publiee: true,
       resume: 'Trois phrases courtes, toutes rapportees par al-Boukhari et Mouslim. '
             + 'Apprends-en une seule si tu veux : c\'est deja beaucoup.'
+    },
+    {
+      id: 'six-piliers-foi',
+      titre: 'Les six piliers de la foi',
+      url: 'lecon-six-piliers-foi.html',
+      parcours: 'foi',
+      minutes: 5,
+      cartes: 11,
+      acquis: 6,
+      publiee: true,
+      resume: 'Un ange vient interroger le Prophete sur la foi. La reponse tient '
+            + 'en une phrase, et elle contient six choses.'
     }
   ];
 
@@ -298,12 +310,18 @@
     var n = niveau();
     if (!n) { return libres; }
 
+    var avance = {};
     var recule = {};
+
+    // Qui ne prie pas encore commence par les bases de la foi : lui servir une
+    // sourate d'abord, c'est commencer par le milieu.
+    if (n.priere === 'non') { avance['six-piliers-foi'] = true; }
+
+    // Qui connait deja Al-Fatiha par coeur ne la recoit pas en premiere lecon.
     if (n.fatiha === 'oui') { recule['al-fatiha'] = true; }
 
-    return libres.sort(function (a, b) {
-      return (recule[a.id] ? 1 : 0) - (recule[b.id] ? 1 : 0);
-    });
+    function rang(l) { return (avance[l.id] ? -1 : 0) + (recule[l.id] ? 1 : 0); }
+    return libres.sort(function (a, b) { return rang(a) - rang(b); });
   }
 
   // La lecon proposee aujourd'hui : la premiere non faite, sinon la premiere a revoir.

@@ -26,6 +26,7 @@ Version de travail, hebergee provisoirement dans le repo VOYAGESHALAL sur la bra
 | `index.html` | Ecran d'accueil — les trois questions a la 1re visite, puis « Aujourd'hui » |
 | `lecon-al-fatiha.html` | Lecon 1 : Al-Fatiha verset par verset, avec la prononciation |
 | `lecon-invocations-matin.html` | Lecon 2 : trois invocations pour commencer la journee |
+| `lecon-six-piliers-foi.html` | Lecon 3 : les six piliers de la foi (hadith de Jibril) |
 | `chemin.html` | La progression : compteur, calendrier des jours, parcours, revisions a venir |
 | `style.css` | Toute la mise en forme (charte de la famille) |
 | `app.js` | Catalogue, niveau, progression, revisions, et le lecteur de lecon commun |
@@ -35,8 +36,8 @@ Version de travail, hebergee provisoirement dans le repo VOYAGESHALAL sur la bra
 | `outils/faire-apercu.py` | Genere `apercu.html`, un apercu en un seul fichier (pour relecture) |
 | `apercu.html` | **Fichier genere.** Ne pas modifier a la main, relancer le script |
 
-Deux lecons publiees : il y a donc de quoi revenir le lendemain, ce qui est
-tout l'objet du site. Le lecteur de lecon (`ippDemarrerLecon`) est ecrit une
+Trois lecons publiees : il y a donc de quoi revenir plusieurs jours de suite,
+ce qui est tout l'objet du site. Le lecteur de lecon (`ippDemarrerLecon`) est ecrit une
 seule fois dans `app.js` et partage par toutes les lecons.
 
 ## Les trois questions d'accueil
@@ -50,9 +51,14 @@ Le principe : **ne pas faire apprendre a quelqu'un ce qu'il sait deja.** Un
 converti d'hier et quelqu'un qui prie depuis vingt ans n'ont pas besoin de la
 meme premiere lecon.
 
-Ce n'est pas decoratif, cela change vraiment ce qui est propose :
-`ordreLecons()` recule Al-Fatiha pour qui la connait deja par coeur, et
-l'accueil dit pourquoi (« Al-Fatiha passe apres : tu la connais deja »).
+Ce n'est pas decoratif, cela change vraiment la premiere lecon servie.
+`ordreLecons()` applique deux regles, verifiees par test :
+
+| Reponses | Premiere lecon |
+| --- | --- |
+| Ne prie pas encore | Les six piliers de la foi — commencer par une sourate serait commencer par le milieu |
+| Prie, ne sait pas Al-Fatiha | Al-Fatiha, verset par verset |
+| Connait Al-Fatiha par coeur | Les invocations ; Al-Fatiha passe en dernier, et l'accueil dit pourquoi |
 
 Trois regles de ton, a ne pas casser en ajoutant des questions :
 
