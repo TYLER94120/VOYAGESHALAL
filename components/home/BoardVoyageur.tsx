@@ -15,7 +15,7 @@ import { ENVIES, envieById, niveauHalal } from '@/lib/envies'
 // sections serveur) ne change pas — SEO intact. Sans position : rien (repli =
 // accueil classique).
 
-interface Lieu { nom: string; lat: number; lng: number; source: 'osm' | 'communaute' | 'annuaire'; distM: number; spotId?: string; cuisine?: string; force?: number; halal?: string; mapsUrl?: string }
+interface Lieu { nom: string; lat: number; lng: number; source: 'osm' | 'communaute' | 'annuaire'; distM: number; spotId?: string; cuisine?: string; force?: number; halal?: string; mapsUrl?: string; avis?: number; id?: string }
 interface FeedSpot {
   id: string; nom: string; villeNom: string; villeSlug: string; categorie?: string
   lat?: number; lng?: number; photos?: string[]; video?: string; villeImage?: string
@@ -32,6 +32,7 @@ const walk = (distM: number) => Math.max(1, Math.round(distM / 80)) // ~4,8 km/h
 const slugifyVille = (s: string) =>
   s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
     .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '')
+const lieuId = (lat: number, lng: number) => `a_${lat.toFixed(5)}_${lng.toFixed(5)}`
 const itin = (lat: number, lng: number) => `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}&travelmode=walking`
 
 export interface BoardVedette { slug: string; nom: string; score: number; restaurants: number; mosquees: number; image: string | null }
@@ -57,6 +58,10 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
   // plus proche (undefined = pas encore cherche, null = rien trouve).
   const [envie, setEnvie] = useState<string | null>(null)
   const [restoEnvie, setRestoEnvie] = useState<Lieu | null | undefined>(undefined)
+  // Deux facons de choisir, demandees par les voyageurs : le plus PROCHE
+  // (« je ne veux pas me prendre la tete ») ou le MEILLEUR compromis.
+  const [mode, setMode] = useState<'proche' | 'meilleur'>('proche')
+  const [avisEnvoye, setAvisEnvoye] = useState(false)
 
   useEffect(() => {
     const id = setInterval(() => setNow(Date.now()), 30_000)
@@ -168,17 +173,41 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
   useEffect(() => {
     if (!pos || !envie) { setRestoEnvie(undefined); return }
     let off = false
-    setRestoEnvie(undefined)
-    fetch(`/api/annuaire?lat=${pos.lat}&lng=${pos.lng}&rayon=12&type=resto&envie=${envie}&limit=1`)
+    setRestoEnvie(undefined); setAvisEnvoye(false)
+    type Cand = { nom: string; lat: number; lng: number; cuisine?: string; force?: number; halal?: string }
+    fetch(`/api/annuaire?lat=${pos.lat}&lng=${pos.lng}&rayon=12&type=resto&envie=${envie}&limit=12`)
       .then((r) => r.json())
-      .then((j) => {
+      .then(async (j) => {
         if (off) return
-        const l = (j.lieux as { nom: string; lat: number; lng: number; cuisine?: string; force?: number; halal?: string; mapsUrl?: string }[] | undefined)?.[0]
-        setRestoEnvie(l ? { nom: l.nom, lat: l.lat, lng: l.lng, source: 'annuaire', distM: hav(pos.lat, pos.lng, l.lat, l.lng), cuisine: l.cuisine, force: l.force, halal: l.halal, mapsUrl: l.mapsUrl } : null)
+        const cands = ((j.lieux as Cand[] | undefined) ?? []).map((l) => ({
+          ...l, distM: hav(pos.lat, pos.lng, l.lat, l.lng), id: lieuId(l.lat, l.lng),
+        }))
+        if (!cands.length) { setRestoEnvie(null); return }
+        // Avis communautaires (les notres — aucune note inventee)
+        let avis: Record<string, number> = {}
+        if (mode === 'meilleur') {
+          try {
+            const a = await fetch(`/api/avis?ids=${cands.slice(0, 12).map((c) => c.id).join(',')}`).then((r) => r.json())
+            avis = (a.avis as Record<string, number>) ?? {}
+          } catch { /* pas d'avis : on retombe sur les criteres objectifs */ }
+        }
+        const halalPoids = (h?: string) => (h === 'only' ? 2 : h === 'yes' || h === 'high' || h === 'certified' ? 1 : 0)
+        const choisi = mode === 'proche'
+          ? [...cands].sort((a, b) => a.distM - b.distM)[0]
+          : [...cands].sort((a, b) => {
+              const sa = (avis[a.id] ?? 0) * 6 + (a.force === 2 ? 3 : 0) + halalPoids(a.halal) - a.distM / 1500
+              const sb = (avis[b.id] ?? 0) * 6 + (b.force === 2 ? 3 : 0) + halalPoids(b.halal) - b.distM / 1500
+              return sb - sa
+            })[0]
+        setRestoEnvie({
+          nom: choisi.nom, lat: choisi.lat, lng: choisi.lng, source: 'annuaire',
+          distM: choisi.distM, cuisine: choisi.cuisine, force: choisi.force, halal: choisi.halal,
+          avis: avis[choisi.id] ?? 0, id: choisi.id,
+        })
       })
       .catch(() => { if (!off) setRestoEnvie(null) })
     return () => { off = true }
-  }, [pos, envie])
+  }, [pos, envie, mode])
 
   // ── Spots communautaires (pepite + bande de reels + compteur) ──
   useEffect(() => {
@@ -365,9 +394,11 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
             <div className="board-hero" role="link" tabIndex={0} onClick={() => window.open(itin(bestResto.lat, bestResto.lng), '_blank', 'noopener')} onKeyDown={(e) => { if (e.key === 'Enter') window.open(itin(bestResto.lat, bestResto.lng), '_blank', 'noopener') }}
               style={{ ...T.tile, background: 'linear-gradient(150deg, rgba(27,67,50,0.85), rgba(255,255,255,0.04))', borderColor: 'rgba(201,168,76,0.35)', cursor: 'pointer' }}>
               <p style={T.lab}>{envieActive
-                ? `${envieActive.emoji} ${bestResto?.force === 1
-                    ? (en ? `Maybe ${envieActive.en.toLowerCase()} — nearest` : `Peut-être du ${envieActive.fr.toLowerCase()} — le plus proche`)
-                    : (en ? `Nearest halal ${envieActive.en.toLowerCase()}` : `Le ${envieActive.fr.toLowerCase()} le plus proche`)}`
+                ? [
+                    `${envieActive.emoji} ${envieActive[en ? 'en' : 'fr']}`,
+                    bestResto?.force === 1 ? (en ? 'maybe' : 'peut-être') : null,
+                    mode === 'meilleur' ? (en ? 'best pick' : 'meilleur choix') : (en ? 'closest' : 'le plus proche'),
+                  ].filter(Boolean).join(' · ')
                 : `🍽 ${en ? 'Time to eat — nearest halal' : 'C\'est l\'heure de manger — le plus proche'}`}</p>
               <p style={{ fontFamily: "'Playfair Display', Georgia, serif", color: '#fdfaf3', fontSize: 24, fontWeight: 900, margin: '4px 0 0', lineHeight: 1.15 }}>
                 <bdi>{bestResto.nom}</bdi>
@@ -408,7 +439,33 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
                 >
                   📷 {en ? 'You are there? Add a photo' : 'Tu y es ? Ajoute ta photo'}
                 </Link>
+                {bestResto.id && (
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation()
+                      if (avisEnvoye) return
+                      setAvisEnvoye(true)
+                      setRestoEnvie((r) => (r ? { ...r, avis: (r.avis ?? 0) + 1 } : r))
+                      fetch('/api/avis', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ id: bestResto.id, nom: bestResto.nom }) }).catch(() => {})
+                    }}
+                    style={{ minHeight: 44, padding: '0 12px', borderRadius: 999, border: '1px solid rgba(253,250,243,0.25)', background: avisEnvoye ? 'rgba(201,168,76,0.18)' : 'transparent', color: avisEnvoye ? 'var(--or)' : 'var(--creme)', fontWeight: 700, fontSize: 12.5, cursor: avisEnvoye ? 'default' : 'pointer' }}
+                  >
+                    👍 {avisEnvoye ? (en ? 'Thanks!' : 'Merci !') : (en ? 'I liked it' : 'J\'ai aimé')}
+                    {(bestResto.avis ?? 0) > 0 ? ` · ${bestResto.avis}` : ''}
+                  </button>
+                )}
               </div>
+              {/* Pourquoi ce lieu : on montre nos criteres, on ne cache rien.
+                  Nous n'avons pas les notes Google — on le dit. */}
+              {envieActive && (
+                <p style={{ ...T.meta, fontSize: 11.5, marginTop: 7, lineHeight: 1.45 }}>
+                  {mode === 'meilleur'
+                    ? (en
+                      ? `Best pick = travelers' likes${(bestResto.avis ?? 0) > 0 ? ` (${bestResto.avis})` : ' (none yet here)'}, sure match, reported halal, then distance. Google ratings are not available to us yet.`
+                      : `Meilleur choix = avis des voyageurs${(bestResto.avis ?? 0) > 0 ? ` (${bestResto.avis})` : ' (aucun ici pour l\'instant)'}, correspondance sûre, halal signalé, puis distance. Les notes Google ne nous sont pas encore accessibles.`)
+                    : (en ? 'Closest first — nothing else considered.' : 'Le plus proche d\'abord — rien d\'autre n\'entre en compte.')}
+                </p>
+              )}
             </div>
           )
           // Envie exprimee mais aucun resultat : on l'assume et on ouvre des
@@ -594,6 +651,28 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
             })}
           </div>
         </div>
+
+
+          {envie && (
+            <div style={{ display: 'flex', gap: 7, marginTop: 8, alignItems: 'center', flexWrap: 'wrap' }}>
+              {([['proche', '📍', en ? 'Closest' : 'Le plus proche'], ['meilleur', '⭐', en ? 'Best pick' : 'Le meilleur choix']] as const).map(([m, ic, lab]) => {
+                const on = mode === m
+                return (
+                  <button
+                    key={m} onClick={() => setMode(m)} aria-pressed={on}
+                    style={{
+                      minHeight: 44, padding: '0 14px', borderRadius: 999, cursor: 'pointer',
+                      border: on ? '1.5px solid var(--or)' : '1px solid rgba(253,250,243,0.18)',
+                      background: on ? 'rgba(201,168,76,0.18)' : 'rgba(255,255,255,0.05)',
+                      color: on ? 'var(--or)' : 'var(--creme)', fontWeight: on ? 800 : 700, fontSize: 13,
+                    }}
+                  >
+                    {ic} {lab}
+                  </button>
+                )
+              })}
+            </div>
+          )}
 
         {/* ── Bande de reels de la ville ── */}
         {pres && pres.reels.length > 0 && (
