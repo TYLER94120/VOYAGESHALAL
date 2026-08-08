@@ -86,6 +86,40 @@ Deux regles ici :
 
 Al-Fatiha passe donc de 10 a 11 cartes, et de 5 a 6 minutes annoncees.
 
+## Le rendez-vous quotidien
+
+Une lecon « quand j'aurai le temps » est une lecon jamais faite. A la fin de
+sa premiere lecon — le bon moment, juste apres l'effort — on demande un repere
+dans la journee : apres le Fajr, dans la matinee, apres le Dhuhr, apres le
+Maghreb, ou avant de dormir. Garde sous la cle `ipp.moment.v1`.
+
+L'accueil parle alors en fonction :
+
+| Situation | Message |
+| --- | --- |
+| Deja venu aujourd'hui | « Tu es venu aujourd'hui. Prochain rendez-vous : demain apres le Fajr. » |
+| C'est le moment | « **C'est ton moment.** » (le seul cas ou l'on hausse le ton) |
+| Avant le moment | « Ton rendez-vous : apres le Fajr. » |
+| Moment passe | « Le moment est passe, mais la journee n'est pas finie. » |
+
+Le dernier cas est le plus important : **un moment manque n'est jamais
+presente comme un echec.** Meme regle de ton que les trois questions.
+
+### Ce site ne calcule PAS les horaires de priere
+
+C'est ecrit noir sur blanc a l'utilisateur, et c'est volontaire. Les horaires
+dependent du lieu et de la date : les inventer serait une faute. L'utilisateur
+choisit **un repere**, rien de plus. Aucune heure de priere n'est jamais
+affichee, et l'on renvoie vers
+[voyageshalal.fr/horaires-priere](https://voyageshalal.fr/horaires-priere)
+pour les horaires reels.
+
+Les plages d'heures dans `MOMENTS` (`de` / `a`) ne servent **qu'a choisir le
+ton du message**. La plage « avant de dormir » passe minuit (21h -> 2h) et
+`positionMoment()` gere ce cas.
+
+Le rendez-vous est rappele sur « Mon chemin », avec un bouton pour le changer.
+
 ## Technique
 
 HTML + CSS + JavaScript purs. **Aucun build, aucune dependance, aucun serveur.**

@@ -156,6 +156,71 @@
     return 'debutant';
   }
 
+  /* ---------- le rendez-vous quotidien ------------------------------------
+     Une lecon "quand tu veux" est une lecon jamais faite. On demande donc un
+     repere dans la journee, et l'accueil parle en fonction.
+
+     ATTENTION, point d'honnetete : ce site ne calcule PAS les horaires de
+     priere. Ils dependent du lieu et de la date, et les inventer serait une
+     faute. L'utilisateur choisit un repere ("apres le Fajr"), et les plages
+     d'heures ci-dessous ne servent qu'a adapter le ton du message. Aucune
+     heure de priere n'est jamais affichee. Pour les horaires reels, on
+     renvoie vers voyageshalal.fr/horaires-priere.
+     ---------------------------------------------------------------------- */
+
+  var CLE_MOMENT = 'ipp.moment.v1';
+
+  var MOMENTS = [
+    { id: 'fajr',    nom: 'Apres la priere du Fajr', dit: 'apres le Fajr',    de: 4,  a: 9 },
+    { id: 'matin',   nom: 'Dans la matinee',         dit: 'dans la matinee',  de: 8,  a: 12 },
+    { id: 'dhuhr',   nom: 'Apres le Dhuhr',          dit: 'apres le Dhuhr',   de: 12, a: 16 },
+    { id: 'maghreb', nom: 'Apres le Maghreb',        dit: 'apres le Maghreb', de: 18, a: 22 },
+    { id: 'nuit',    nom: 'Avant de dormir',         dit: 'avant de dormir',  de: 21, a: 2 }
+  ];
+
+  function momentParId(id) {
+    for (var i = 0; i < MOMENTS.length; i++) {
+      if (MOMENTS[i].id === id) { return MOMENTS[i]; }
+    }
+    return null;
+  }
+
+  function moment() {
+    try {
+      var brut = global.localStorage.getItem(CLE_MOMENT);
+      if (!brut) { return null; }
+      var d = JSON.parse(brut);
+      return (d && d.id) ? momentParId(d.id) : null;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function enregistrerMoment(id) {
+    try {
+      global.localStorage.setItem(CLE_MOMENT, JSON.stringify({ id: id, faitLe: aujourdhui() }));
+    } catch (e) { /* sans memoire, on continue */ }
+    return momentParId(id);
+  }
+
+  function oublierMoment() {
+    try { global.localStorage.removeItem(CLE_MOMENT); } catch (e) { /* rien a faire */ }
+  }
+
+  // 'dedans' | 'avant' | 'apres' — sert uniquement au ton du message.
+  function positionMoment(heure) {
+    var m = moment();
+    if (!m) { return null; }
+    if (typeof heure !== 'number') { heure = new Date().getHours(); }
+
+    var dedans = (m.de <= m.a)
+      ? (heure >= m.de && heure < m.a)
+      : (heure >= m.de || heure < m.a);   // plage qui passe minuit
+
+    if (dedans) { return 'dedans'; }
+    return (heure < m.de) ? 'avant' : 'apres';
+  }
+
   /* ---------- progression ------------------------------------------------ */
 
   // Espacement des revisions, en jours, tour apres tour.
@@ -290,7 +355,13 @@
     niveau: niveau,
     enregistrerNiveau: enregistrerNiveau,
     oublierNiveau: oublierNiveau,
-    profil: profil
+    profil: profil,
+    MOMENTS: MOMENTS,
+    moment: moment,
+    enregistrerMoment: enregistrerMoment,
+    oublierMoment: oublierMoment,
+    positionMoment: positionMoment,
+    faitAujourdhui: function () { return charger().jours.indexOf(aujourdhui()) !== -1; }
   };
 }(window));
 
@@ -368,6 +439,34 @@ function ippRendreAccueil(racine) {
   } else {
     bloc.hidden = true;
     jeton.hidden = true;
+  }
+
+  // --- le rendez-vous du jour ---
+  // Jamais culpabilisant : un moment manque n'est pas un echec, la journee
+  // n'est pas finie.
+  var rdv = q('rdv');
+  if (rdv) {
+    var m = IPP.moment();
+    if (!m) {
+      rdv.hidden = true;
+    } else {
+      rdv.hidden = false;
+      rdv.classList.remove('cest-maintenant');
+      if (IPP.faitAujourdhui()) {
+        rdv.textContent = 'Tu es venu aujourd\'hui. Prochain rendez-vous : demain '
+                        + m.dit + '.';
+      } else {
+        var ou = IPP.positionMoment();
+        if (ou === 'dedans') {
+          rdv.textContent = 'C\'est ton moment.';
+          rdv.classList.add('cest-maintenant');
+        } else if (ou === 'avant') {
+          rdv.textContent = 'Ton rendez-vous : ' + m.dit + '.';
+        } else {
+          rdv.textContent = 'Le moment est passe, mais la journee n\'est pas finie.';
+        }
+      }
+    }
   }
 
   // --- la lecon du jour ---
@@ -490,6 +589,9 @@ function ippRendreChemin(racine) {
       'Aucun jour rempli pour l\'instant. Chaque etoile doree sera un jour ou tu es venu apprendre.';
   }
 
+  // --- le rendez-vous quotidien ---
+  ippRendreMoment(q);
+
   // --- rappel du point de depart, et possibilite de le refaire ---
   ippRendrePointDepart(q);
 
@@ -522,6 +624,39 @@ function ippRendreChemin(racine) {
     }
     q('revisions').innerHTML = h;
   }
+}
+
+// Le rendez-vous quotidien, sur "Mon chemin" : on l'affiche et on peut le changer.
+function ippRendreMoment(q) {
+  var zone = q('moment-bloc');
+  if (!zone) { return; }
+
+  function proposer() {
+    zone.innerHTML = '<div class="moment-zone" data-r="moment-choix"></div>';
+    ippProposerMoment(ippViseur(zone), function () { montrer(); });
+  }
+
+  function montrer() {
+    var m = IPP.moment();
+    if (!m) { proposer(); return; }
+    zone.innerHTML =
+        '<div class="niveau-carte">'
+      + '<p class="rdv cest-maintenant">' + ippEchappe(m.nom) + '</p>'
+      + '<p class="note-pied">Le site ne calcule pas les horaires de priere. '
+      + 'Pour ceux de ta ville&nbsp;: '
+      + '<a href="https://voyageshalal.fr/horaires-priere">voyageshalal.fr</a>.</p>'
+      + '<button class="btn fantome" type="button" data-r="moment-changer">Changer de moment</button>'
+      + '</div>';
+    var b = zone.querySelector('[data-r="moment-changer"]');
+    if (b) {
+      b.addEventListener('click', function () {
+        IPP.oublierMoment();
+        proposer();
+      });
+    }
+  }
+
+  montrer();
 }
 
 // Rappel de ce que la personne a declare au depart, et moyen de le corriger.
@@ -660,6 +795,9 @@ function ippDemarrerLecon(id, racine) {
     var cible = q('fin-texte');
     if (cible) { cible.textContent = phrase; }
 
+    // C'est ici qu'on demande le rendez-vous quotidien : juste apres l'effort.
+    ippProposerMoment(q);
+
     var suite = q('fin-suite');
     if (suite) {
       suite.textContent = reste
@@ -677,6 +815,65 @@ function ippDemarrerLecon(id, racine) {
   });
 
   afficher(false);
+}
+
+
+/* =========================================================
+   Le rendez-vous : propose a la fin d'une lecon
+
+   C'est le bon moment pour le demander : la personne vient de finir, elle
+   sent l'interet, c'est la qu'une intention se prend. On ne le demande donc
+   pas a l'inscription (il n'y en a pas) ni dans les trois questions
+   d'accueil, qui restent a trois.
+   ========================================================= */
+
+function ippProposerMoment(q, quandChoisi) {
+  'use strict';
+  var zone = q('moment-choix');
+  if (!zone) { return; }
+
+  var m = IPP.moment();
+
+  if (m) {
+    // Deja choisi : on rappelle simplement le rendez-vous.
+    zone.innerHTML = '<p class="rdv cest-maintenant" style="text-align:center">'
+                   + 'On se retrouve ' + ippEchappe(m.dit) + '.</p>';
+    zone.hidden = false;
+    return;
+  }
+
+  var options = '';
+  for (var i = 0; i < IPP.MOMENTS.length; i++) {
+    options += '<button class="opt" type="button" data-m="' + IPP.MOMENTS[i].id + '">'
+             + ippEchappe(IPP.MOMENTS[i].nom) + '</button>';
+  }
+
+  zone.innerHTML =
+      '<div class="rdv-choix">'
+    + '<span class="eyebrow">Pour revenir demain</span>'
+    + '<h3>A quel moment veux-tu apprendre ?</h3>'
+    + '<p class="clair">Une lecon &laquo;&nbsp;quand j\'aurai le temps&nbsp;&raquo; est une '
+    + 'lecon jamais faite. Choisis un repere dans ta journee.</p>'
+    + '<div class="choix">' + options + '</div>'
+    + '<button class="lien-discret" type="button" data-m="">Pas d\'heure fixe</button>'
+    + '<p class="prudence">Ce site <strong>ne calcule pas</strong> les horaires de priere&nbsp;: '
+    + 'tu choisis seulement un repere dans ta journee, et rien d\'autre n\'est affiche. '
+    + 'Pour les horaires exacts de ta ville, va sur '
+    + '<a href="https://voyageshalal.fr/horaires-priere">voyageshalal.fr</a>.</p>'
+    + '</div>';
+  zone.hidden = false;
+
+  zone.addEventListener('click', function (e) {
+    var b = e.target.closest ? e.target.closest('[data-m]') : null;
+    if (!b || !zone.contains(b)) { return; }
+    var id = b.getAttribute('data-m');
+    var choisi = id ? IPP.enregistrerMoment(id) : null;
+    zone.innerHTML = '<p class="rdv cest-maintenant" style="text-align:center">'
+      + (choisi ? 'On se retrouve ' + ippEchappe(choisi.dit) + '.'
+                : 'Comme tu veux. Reviens quand tu peux.')
+      + '</p>';
+    if (typeof quandChoisi === 'function') { quandChoisi(choisi); }
+  });
 }
 
 

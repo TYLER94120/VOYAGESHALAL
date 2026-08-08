@@ -609,3 +609,33 @@ a.pc:hover, button.pc:hover { border-color: var(--trait-fort); }
 @media (min-width: 620px) {
   .syl > span { font-size: 21px; }
 }
+
+/* ---------- le rendez-vous quotidien ---------- */
+
+.rdv {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.45;
+  color: var(--texte-2);
+}
+/* Le seul cas ou l'on hausse le ton : c'est maintenant. */
+.rdv.cest-maintenant {
+  color: var(--or);
+  font-weight: 600;
+}
+
+.moment-zone { display: flex; flex-direction: column; }
+
+.rdv-choix {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: left;
+  background: var(--surface-1);
+  border: 1px solid var(--trait);
+  border-radius: var(--r);
+  padding: 22px 18px;
+}
+.rdv-choix h3 { font-size: 24px; }
+.rdv-choix .clair { font-size: 17px; }
+.rdv-choix .prudence { margin: 0; }
