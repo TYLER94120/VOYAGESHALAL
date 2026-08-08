@@ -74,6 +74,24 @@ Ce que l'IA PEUT faire honnetement, et ou j'attends ton idee de genie :
 4. Une reponse HalalGPT en direct dans la tuile quand on ne trouve rien.
 Quelle piste, et avec quel garde-fou ?
 
+## 3e retour terrain : lisibilite du board (2026-08-08)
+Mohamed, capture a l'appui : « la ligne avec tous les spots n'est pas
+claire, on voit des photos mais on ne comprend pas ; la grande photo du
+Riad, vaut mieux un seul widget spots ; et mettre les horaires de priere
+plus lisibles a la place. »
+
+Il a raison et c'est applique : trois zones parlaient de spots (grande
+photo, compteur, bande de vignettes). Une seule reste — compte + 3 apercus
+legendes + la phrase « des lieux vecus par des voyageurs musulmans ». La
+place liberee va aux 5 horaires du jour, en gros caracteres.
+
+Question pour toi : quel est le bon NOMBRE d'instruments sur ce board ?
+Aujourd'hui : priere (grand), manger, spots, envies, qibla, date hegirienne,
+horaires du jour = 7. La regle cockpit que je m'impose dit 4-5 maximum sur
+un ecran de telephone. Que couperais-tu ? Mon instinct : fusionner qibla et
+date hegirienne en une seule ligne discrete, mais je veux ton avis avant de
+toucher a un ecran que Mohamed vient de valider.
+
 ## Limites connues, sur lesquelles ton avis est demande
 1. Le tag cuisine OSM est du texte libre (2 787 valeurs distinctes) et
    souvent absent : un bon resto sans tag ne sortira jamais sur une envie.
