@@ -145,7 +145,7 @@ function Shelf({ id, title, villes, en, onSeeAll }: { id: string; title: string;
     <section id={`shelf-${id}`} style={{ marginBottom: 34 }}>
       <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 10, marginBottom: 12 }}>
         <h2 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', fontSize: 21, fontWeight: 800, color: '#0b1a0f', margin: 0 }}>{title}</h2>
-        <button onClick={onSeeAll} style={{ background: 'none', border: 'none', color: 'var(--foret)', fontWeight: 700, fontSize: 13.5, cursor: 'pointer', whiteSpace: 'nowrap' }}>
+        <button onClick={onSeeAll} style={{ minHeight: 44, display: 'inline-flex', alignItems: 'center', padding: '0 8px', background: 'none', border: 'none', color: 'var(--foret)', fontWeight: 700, fontSize: 14, cursor: 'pointer', whiteSpace: 'nowrap' }}>
           {en ? 'See all →' : 'Voir tout →'}
         </button>
       </div>
@@ -272,7 +272,7 @@ export default function DestinationsClient({ villes }: Props) {
     { icon: '🏖️', fr: 'Bord de mer', en: 'Seaside', go: () => goToGrid(() => setTypeVoyage('detente')) },
   ]
 
-  const selectStyle: React.CSSProperties = { padding: '8px 10px', borderRadius: 10, border: '1.5px solid rgba(27,67,50,0.25)', background: '#fff', color: 'var(--foret)', fontSize: 13, fontWeight: 600, cursor: 'pointer', maxWidth: 160 }
+  const selectStyle: React.CSSProperties = { minHeight: 46, padding: '0 10px', borderRadius: 10, border: '1.5px solid rgba(27,67,50,0.25)', background: '#fff', color: 'var(--foret)', fontSize: 14, fontWeight: 600, cursor: 'pointer', maxWidth: 170 }
 
   const filterControls = (
     <>
@@ -333,7 +333,7 @@ export default function DestinationsClient({ villes }: Props) {
           <div style={{ display: 'flex', gap: 8, justifyContent: 'center', flexWrap: 'wrap', marginTop: 14 }}>
             {CHIPS.map((c) => (
               <button key={c.fr} onClick={c.go}
-                style={{ padding: '8px 14px', borderRadius: 30, border: '1px solid rgba(201,168,76,0.45)', background: 'rgba(201,168,76,0.12)', color: '#e9dcbe', fontSize: 13, fontWeight: 700, cursor: 'pointer', whiteSpace: 'nowrap' }}>
+                style={{ minHeight: 46, display: 'inline-flex', alignItems: 'center', padding: '0 16px', borderRadius: 30, border: '1px solid rgba(201,168,76,0.45)', background: 'rgba(201,168,76,0.12)', color: '#e9dcbe', fontSize: 13.5, fontWeight: 700, cursor: 'pointer', whiteSpace: 'nowrap' }}>
                 {c.icon} {en ? c.en : c.fr}
               </button>
             ))}
@@ -347,7 +347,7 @@ export default function DestinationsClient({ villes }: Props) {
           {/* Desktop : selects inline · Mobile : bouton panneau */}
           <div className="hidden sm:flex" style={{ gap: 8, flexWrap: 'wrap', alignItems: 'center' }}>{filterControls}</div>
           <button className="sm:hidden" onClick={() => setSheetOpen(true)}
-            style={{ padding: '9px 16px', borderRadius: 30, border: '1.5px solid rgba(27,67,50,0.3)', background: anyFilter ? 'var(--foret)' : '#fff', color: anyFilter ? '#fff' : 'var(--foret)', fontWeight: 700, fontSize: 13.5, cursor: 'pointer' }}>
+            style={{ minHeight: 46, padding: '0 18px', borderRadius: 30, border: '1.5px solid rgba(27,67,50,0.3)', background: anyFilter ? 'var(--foret)' : '#fff', color: anyFilter ? '#fff' : 'var(--foret)', fontWeight: 700, fontSize: 13.5, cursor: 'pointer' }}>
             ⚙️ {en ? 'Filters' : 'Filtres'}{anyFilter ? ' ·' : ''}
           </button>
           {anyFilter && (

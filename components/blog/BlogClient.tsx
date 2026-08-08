@@ -36,9 +36,15 @@ export default function BlogClient({ articles }: Props) {
   const ALL = 'Tous'
   const categories = [ALL, ...Array.from(new Set(articles.map((a) => a.category)))]
   const [filtre, setFiltre] = useState(ALL)
+  // La liste complete faisait 34 ecrans de haut sur un telephone : personne
+  // ne descend jusqu'en bas. On sert 12 articles, puis a la demande.
+  const PAR_PAGE = 12
+  const [visibles, setVisibles] = useState(PAR_PAGE)
   const catLabel = (c: string) => (c === ALL ? (en ? 'All' : 'Tous') : c)
 
   const filtered = filtre === ALL ? articles : articles.filter((a) => a.category === filtre)
+  const affiches = filtered.slice(0, visibles)
+  const reste = filtered.length - affiches.length
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-8 py-12">
@@ -48,7 +54,7 @@ export default function BlogClient({ articles }: Props) {
           <button
             key={catLabel(c)}
             className={`filtre-btn pill-filter ${filtre === c ? 'active' : ''}`}
-            onClick={() => setFiltre(c)}
+            onClick={() => { setFiltre(c); setVisibles(PAR_PAGE) }}
           >
             {catLabel(c)}
           </button>
@@ -57,7 +63,7 @@ export default function BlogClient({ articles }: Props) {
 
       {/* Grille de cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {filtered.map((item) => (
+        {affiches.map((item) => (
           <Link
             key={item.href}
             href={item.href}
@@ -101,6 +107,22 @@ export default function BlogClient({ articles }: Props) {
           </Link>
         ))}
       </div>
+
+      {/* Charger la suite — le compte restant est annonce, jamais un « ... » */}
+      {reste > 0 && (
+        <div style={{ textAlign: 'center', marginTop: 28 }}>
+          <button
+            onClick={() => setVisibles((v) => v + PAR_PAGE)}
+            style={{
+              minHeight: 56, padding: '0 26px', borderRadius: 16, cursor: 'pointer',
+              border: '2px solid rgba(27,67,50,0.25)', background: '#fff',
+              color: 'var(--foret)', fontWeight: 800, fontSize: 15.5,
+            }}
+          >
+            {en ? `Show ${Math.min(reste, PAR_PAGE)} more (${reste} left)` : `Voir ${Math.min(reste, PAR_PAGE)} articles de plus (${reste} restants)`}
+          </button>
+        </div>
+      )}
     </div>
   )
 }

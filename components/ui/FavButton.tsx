@@ -27,7 +27,9 @@ export default function FavButton({ fav, size = 20 }: { fav: Omit<Fav, 'addedAt'
       aria-pressed={active}
       title={active ? 'Dans mon carnet' : 'Ajouter à mon carnet'}
       style={{
-        width: size + 14, height: size + 14, fontSize: size, lineHeight: 1,
+        // Zone de frappe confortable (charte : >= 44 px) sans grossir l'icone
+        width: Math.max(44, size + 14), height: Math.max(44, size + 14),
+        fontSize: size, lineHeight: 1,
         background: 'transparent', border: 'none', cursor: 'pointer', padding: 0,
         display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
         filter: active ? 'none' : 'grayscale(1) opacity(0.45)',
