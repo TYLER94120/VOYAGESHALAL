@@ -14,6 +14,7 @@ import { HomeScoreRanking } from '@/components/HomeScoreRanking'
 import IslamicPattern from '@/components/ui/IslamicPattern'
 import SearchBarHome from '@/components/search/SearchBarHome'
 import { getDomainSEO, FR_URL, EN_URL } from '@/lib/domain'
+import { getVillesCounts } from '@/lib/villeStats'
 
 // Métadonnées par domaine : anglais sur gohalaltravel.com, français sur voyageshalal.fr
 export async function generateMetadata(): Promise<Metadata> {
@@ -75,16 +76,20 @@ export default async function HomePage() {
   const orgSchema = buildOrganizationSchema({ en: isEN, siteUrl, name: isEN ? brand : undefined })
   const featuredGuides = guides.slice(0, 3)
   const { totalVilles } = getVillesStats()
+  // Guides vedettes : chiffres RÉELS lus dans les fiches villes, pour que le
+  // premier écran donne (la richesse du site) avant de demander (contribuer).
+  const vedettes = getVillesCounts(['istanbul', 'dubai', 'marrakech', 'kuala-lumpur', 'medine', 'le-caire'], isEN)
 
   // Toutes les chaînes de l'accueil, bilingues selon le domaine (P0-1)
   const t = {
-    heroEyebrow: isEN ? 'Travel with faith' : 'Voyagez avec foi',
-    heroTitlePre: isEN ? 'Discover and share the ' : 'Découvre et partage les ',
-    heroTitleGold: isEN ? 'halal gems' : 'pépites halal',
-    heroTitlePost: isEN ? ' of Muslim travelers.' : ' des voyageurs.',
+    // Le premier écran promet ce qu'il DONNE (trouver), pas ce qu'il demande
+    heroEyebrow: isEN ? `Travel with faith · ${totalVilles} destinations` : `Voyagez avec foi · ${totalVilles} destinations`,
+    heroTitlePre: isEN ? 'Where to pray, where to ' : 'Où prier, où ',
+    heroTitleGold: isEN ? 'eat halal' : 'manger halal',
+    heroTitlePost: isEN ? ' — anywhere you travel.' : ' — partout où tu voyages.',
     heroSub: isEN
-      ? 'Prayer corners, halal restos, women-friendly places — real spots, lived and confirmed by Muslims. Something no map and no AI can copy.'
-      : 'Coins prière, restos halal, espaces femmes — de vrais spots, vécus et confirmés par des musulmans. Ce qu\'aucune carte et aucune IA ne peut copier.',
+      ? 'Mosques, halal restaurants and practical guides, ready for every destination — plus real spots lived and confirmed by Muslim travelers.'
+      : 'Mosquées, restaurants halal et guides pratiques, déjà prêts pour chaque destination — plus de vrais spots vécus et confirmés par des voyageurs musulmans.',
     heroAdd: isEN ? '➕ Add a spot' : '➕ Ajouter un spot',
     heroDiscover: isEN ? '💎 Discover spots' : '💎 Découvrir les spots',
     heroMine: isEN ? '❤️ My spots' : '❤️ Mes spots',
@@ -124,7 +129,7 @@ export default async function HomePage() {
       {/* 🎛️ Board voyageur (bento) : rendu client au-dessus du hero quand la
           position est connue — absorbe le Radar Prière. Le HTML serveur
           en dessous ne change pas : SEO intact. */}
-      <BoardVoyageur />
+      <BoardVoyageur vedettes={vedettes.map((v) => ({ slug: v.slug, nom: v.nom, score: v.score, restaurants: v.restaurants, mosquees: v.mosquees, image: v.image }))} />
       {/* Hero plein écran minimaliste */}
       <section
         className="relative overflow-hidden flex items-center justify-center text-center px-6"
@@ -159,22 +164,61 @@ export default async function HomePage() {
             {t.heroSub}
           </p>
 
-          {/* 3 actions du virage Spots : ajouter / découvrir / mes spots */}
-          <div style={{ maxWidth: 540, margin: '0 auto', width: '100%' }}>
-            <Link href="/communaute/ajouter" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, minHeight: 58, borderRadius: 16, background: 'var(--or)', color: 'var(--nuit)', fontWeight: 800, fontSize: 17, textDecoration: 'none', boxShadow: '0 10px 30px rgba(201,168,76,0.3)' }}>
-              {t.heroAdd}
-            </Link>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginTop: 10 }}>
-              <Link href="/spots" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: 52, borderRadius: 14, border: '2px solid rgba(201,168,76,0.55)', background: 'rgba(255,255,255,0.06)', color: 'var(--creme)', fontWeight: 800, fontSize: 14.5, textDecoration: 'none' }}>
-                {t.heroDiscover}
-              </Link>
-              <Link href="/carnet" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: 52, borderRadius: 14, border: '2px solid rgba(201,168,76,0.55)', background: 'rgba(255,255,255,0.06)', color: 'var(--creme)', fontWeight: 800, fontSize: 14.5, textDecoration: 'none' }}>
-                {t.heroMine}
+          {/* DONNER AVANT DE DEMANDER : la recherche puis les guides déjà
+              remplis (chiffres réels lus dans les fiches villes). Contribuer
+              vient après avoir reçu — « Ajouter » passe en second rang. */}
+          <div style={{ maxWidth: 560, margin: '0 auto', width: '100%' }}>
+            <div style={{ background: 'rgba(255,255,255,0.1)', border: '1.5px solid rgba(201,168,76,0.45)', borderRadius: 16, padding: 4 }}>
+              <SearchBarHome />
+            </div>
+
+            {/* Guides prêts à l'emploi — la richesse du site, visible tout de suite */}
+            <div style={{ display: 'flex', gap: 10, overflowX: 'auto', padding: '12px 2px 4px', scrollSnapType: 'x mandatory' }}>
+              {vedettes.map((v) => (
+                <Link
+                  key={v.slug}
+                  href={`/destinations/${v.slug}`}
+                  style={{
+                    flex: 'none', width: 168, minHeight: 116, scrollSnapAlign: 'start',
+                    borderRadius: 16, overflow: 'hidden', textDecoration: 'none',
+                    border: '1px solid rgba(201,168,76,0.35)',
+                    display: 'flex', flexDirection: 'column', justifyContent: 'flex-end',
+                    backgroundImage: v.image
+                      ? `linear-gradient(180deg, rgba(11,26,15,0.15) 20%, rgba(11,26,15,0.92)), url(${v.image})`
+                      : 'linear-gradient(160deg, #1d4a35, #0e2013)',
+                    backgroundSize: 'cover', backgroundPosition: 'center',
+                    textAlign: 'left',
+                  }}
+                >
+                  <span style={{ padding: '8px 10px 9px' }}>
+                    <span style={{ display: 'flex', alignItems: 'baseline', gap: 6 }}>
+                      <span style={{ color: '#fdfaf3', fontWeight: 800, fontSize: 15 }}>{v.nom}</span>
+                      <span style={{ color: '#c9a84c', fontWeight: 800, fontSize: 13 }}>✦ {v.score}</span>
+                    </span>
+                    <span style={{ display: 'block', color: 'rgba(253,250,243,0.72)', fontSize: 11.5, lineHeight: 1.35, marginTop: 2 }}>
+                      {v.restaurants > 0 && `${v.restaurants} ${isEN ? 'halal restos' : 'restos halal'}`}
+                      {v.restaurants > 0 && v.mosquees > 0 && ' · '}
+                      {v.mosquees > 0 && `${v.mosquees} ${isEN ? 'mosques' : 'mosquées'}`}
+                    </span>
+                  </span>
+                </Link>
+              ))}
+              <Link
+                href="/destinations"
+                style={{ flex: 'none', width: 132, minHeight: 116, borderRadius: 16, border: '1.5px dashed rgba(201,168,76,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', color: 'var(--or)', fontWeight: 800, fontSize: 13, textDecoration: 'none', padding: '0 10px' }}
+              >
+                {isEN ? `All ${totalVilles} destinations →` : `Les ${totalVilles} destinations →`}
               </Link>
             </div>
-            {/* Recherche ville — le réflexe n°1, toujours sous la main */}
-            <div style={{ background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(201,168,76,0.35)', borderRadius: 16, padding: 4, marginTop: 10 }}>
-              <SearchBarHome />
+
+            {/* Second rang : explorer les spots, puis contribuer */}
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginTop: 6 }}>
+              <Link href="/spots" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: 56, borderRadius: 14, border: '2px solid rgba(201,168,76,0.55)', background: 'rgba(255,255,255,0.06)', color: 'var(--creme)', fontWeight: 800, fontSize: 14.5, textDecoration: 'none' }}>
+                {t.heroDiscover}
+              </Link>
+              <Link href="/communaute/ajouter" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: 56, borderRadius: 14, border: '2px solid rgba(201,168,76,0.55)', background: 'rgba(255,255,255,0.06)', color: 'var(--creme)', fontWeight: 800, fontSize: 14.5, textDecoration: 'none' }}>
+                {t.heroAdd}
+              </Link>
             </div>
           </div>
         </div>

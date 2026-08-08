@@ -4,6 +4,7 @@ import { useState, useEffect, useRef, useCallback } from 'react'
 import { useRouter } from 'next/navigation'
 import indexVilles from '@/data/index-villes.json'
 import { useLocation } from '@/components/location/LocationProvider'
+import { useLanguage } from '@/components/i18n/LanguageProvider'
 
 interface VilleIndex {
   slug: string
@@ -38,6 +39,8 @@ const GOLD = '#c9a870'
 export default function SearchBarHome() {
   const router = useRouter()
   const { setCityBySlug } = useLocation()
+  const { lang } = useLanguage()
+  const en = lang === 'en'
   const [query, setQuery] = useState('')
   const [results, setResults] = useState<VilleIndex[]>([])
   const [open, setOpen] = useState(false)
@@ -109,7 +112,7 @@ export default function SearchBarHome() {
             onChange={(e) => setQuery(e.target.value)}
             onKeyDown={handleKeyDown}
             onFocus={() => { if (query.trim()) setOpen(true) }}
-            placeholder="Istanbul, Marrakech, Dubaï..."
+            placeholder={en ? 'Istanbul, Marrakesh, Dubai...' : 'Istanbul, Marrakech, Dubaï...'}
             autoComplete="off"
             className="w-full pl-11 pr-4 py-4 bg-white border border-gray-200 rounded-l-2xl text-gray-900 text-base focus:outline-none focus:ring-2 focus:border-transparent"
             style={{ '--tw-ring-color': GREEN } as React.CSSProperties}
@@ -123,7 +126,7 @@ export default function SearchBarHome() {
           style={{ backgroundColor: GREEN }}
           className="text-white px-7 py-4 rounded-r-2xl font-semibold text-base hover:opacity-90 transition-opacity whitespace-nowrap"
         >
-          Rechercher
+          {en ? 'Search' : 'Rechercher'}
         </button>
       </div>
 
@@ -131,7 +134,7 @@ export default function SearchBarHome() {
         <div className="absolute top-full left-0 right-0 mt-2 bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden z-50">
           {results.length === 0 ? (
             <div className="px-5 py-4 text-sm text-gray-500">
-              Aucun résultat pour &ldquo;{query}&rdquo;
+              {en ? 'No result for' : 'Aucun résultat pour'} &ldquo;{query}&rdquo;
             </div>
           ) : (
             <ul>
@@ -164,7 +167,7 @@ export default function SearchBarHome() {
                   className="w-full px-5 py-2.5 text-left text-xs text-gray-400 hover:bg-gray-50 transition-colors"
                   onClick={() => { router.push(`/search?q=${encodeURIComponent(query.trim())}`); setOpen(false) }}
                 >
-                  Voir tous les résultats →
+                  {en ? 'See all results →' : 'Voir tous les résultats →'}
                 </button>
               </li>
             </ul>

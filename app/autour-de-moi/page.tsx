@@ -407,6 +407,11 @@ export default function AutourDeMoiPage() {
 
   return (
     <main style={{ background: 'var(--creme)', minHeight: '100vh' }}>
+      {/* Titre de page : la carte occupe l'écran, mais la page doit annoncer
+          ce qu'elle est (accessibilité lecteurs d'écran + SEO). */}
+      <h1 style={{ position: 'absolute', width: 1, height: 1, padding: 0, margin: -1, overflow: 'hidden', clip: 'rect(0 0 0 0)', whiteSpace: 'nowrap', border: 0 }}>
+        Mosquées, restaurants halal et spots autour de moi
+      </h1>
       <div style={{ position: 'relative' }}>
         <div ref={mapEl} style={{ height: '62vh', minHeight: 380, width: '100%', background: '#dfe6e2', zIndex: 1 }} />
 

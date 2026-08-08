@@ -28,9 +28,14 @@ function hav(lat1: number, lng1: number, lat2: number, lng2: number): number {
 }
 const fmtMin = (m: number) => (m >= 60 ? `${Math.floor(m / 60)} h ${m % 60 ? String(m % 60).padStart(2, '0') : ''}`.trim() : `${m} min`)
 const walk = (distM: number) => Math.max(1, Math.round(distM / 80)) // ~4,8 km/h
+const slugifyVille = (s: string) =>
+  s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '')
 const itin = (lat: number, lng: number) => `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}&travelmode=walking`
 
-export default function BoardVoyageur() {
+export interface BoardVedette { slug: string; nom: string; score: number; restaurants: number; mosquees: number; image: string | null }
+
+export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedette[] }) {
   const { lang } = useLanguage()
   const en = lang === 'en'
   const { pos, source, geoLoading, refineGps } = useInstantPosition(en)
@@ -41,6 +46,9 @@ export default function BoardVoyageur() {
   // La recherche OSM a-t-elle abouti ? Sans elle on ne peut PAS affirmer
   // « aucun lieu connu » — on dit qu'on n'a pas pu chercher (honnetete).
   const [osmOk, setOsmOk] = useState(true)
+  // Guide de la ville OU L'ON EST (compteurs reels), pour proposer mieux
+  // qu'une vedette generique quand il n'y a pas encore de pepite autour.
+  const [villeGuide, setVilleGuide] = useState<BoardVedette | null>(null)
 
   useEffect(() => {
     const id = setInterval(() => setNow(Date.now()), 30_000)
@@ -110,6 +118,17 @@ export default function BoardVoyageur() {
     return () => { cancelled = true }
   }, [pos])
 
+  useEffect(() => {
+    const slug = pos ? slugifyVille(pos.label) : ''
+    if (!slug || slug.length < 3) { setVilleGuide(null); return }
+    let off = false
+    fetch(`/api/ville-counts?slug=${encodeURIComponent(slug)}${en ? '&en=1' : ''}`)
+      .then((r) => r.json())
+      .then((j) => { if (!off) setVilleGuide(j.ville ?? null) })
+      .catch(() => {})
+    return () => { off = true }
+  }, [pos?.label, en]) // eslint-disable-line react-hooks/exhaustive-deps
+
   // ── Spots communautaires (pepite + bande de reels + compteur) ──
   useEffect(() => {
     fetch('/api/community/spots?limit=30')
@@ -135,7 +154,7 @@ export default function BoardVoyageur() {
     const reels = avecMedia.filter((s) => s.id !== pepite?.id).slice(0, 10)
     const proches = autour.filter((s) => s.distM < 3000)
     const restoCom = autour.find((s) => s.categorie === 'resto' && s.distM < 5000) ?? null
-    return { autour, reels, pepite, proches, restoCom }
+    return { autour, reels, pepite, proches, restoCom, total: spots.length }
   }, [pos, spots])
 
   if (!pos || !fenetre) return null
@@ -178,6 +197,8 @@ export default function BoardVoyageur() {
   const fmtClock = (d: Date) => d.toLocaleTimeString(en ? 'en-GB' : 'fr-FR', { hour: '2-digit', minute: '2-digit' })
 
   const pepite = pres?.pepite ?? null
+  // Guide vedette propose quand il n'y a pas encore de pepite autour
+  const vedette = villeGuide ?? vedettes.find((v) => v.slug !== pres?.autour[0]?.villeSlug) ?? vedettes[0] ?? null
   const pepiteImg = pepite?.photos?.[0]?.startsWith('http') ? pepite.photos[0] : pepite?.villeImage
 
   // Meilleur resto : OSM/spots < 3 km, sinon resto communautaire < 5 km
@@ -211,13 +232,13 @@ export default function BoardVoyageur() {
         <div className="board-topbar" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 10 }}>
           <button
             onClick={() => { refineGps().then((ok) => { if (!ok) window.location.href = '/horaires-priere' }) }}
-            style={{ display: 'flex', alignItems: 'center', gap: 6, minHeight: 40, padding: '4px 12px', borderRadius: 999, border: '1px solid rgba(201,168,76,0.4)', background: 'transparent', color: 'var(--creme)', fontSize: 14.5, fontWeight: 800, cursor: 'pointer' }}
+            style={{ display: 'flex', alignItems: 'center', gap: 6, minHeight: 48, padding: '4px 14px', borderRadius: 999, border: '1px solid rgba(201,168,76,0.4)', background: 'transparent', color: 'var(--creme)', fontSize: 14.5, fontWeight: 800, cursor: 'pointer' }}
           >
             {geoLoading ? (en ? '📡 Locating…' : '📡 Localisation…')
               : source === 'gps' ? `📍 ${pos.label}`
               : `📍 ${pos.label} · ${en ? 'not you? Tap' : 'pas toi ? Appuie'}`}
           </button>
-          <Link href="/spots" style={{ color: 'var(--or)', fontSize: 13, fontWeight: 800, textDecoration: 'none', minHeight: 40, display: 'flex', alignItems: 'center' }}>
+          <Link href="/spots" style={{ color: 'var(--or)', fontSize: 13.5, fontWeight: 800, textDecoration: 'none', minHeight: 48, padding: '0 8px', display: 'flex', alignItems: 'center' }}>
             {en ? 'See all →' : 'Tout voir →'}
           </Link>
         </div>
@@ -263,7 +284,7 @@ export default function BoardVoyageur() {
                   {osmOk
                     ? (en ? 'No known prayer place within 5 km — ' : 'Aucun lieu de prière connu à moins de 5 km — ')
                     : (en ? 'Could not search nearby places (no connection) — ' : 'Recherche des lieux impossible (pas de connexion) — ')}
-                  <Link href="/qibla" onClick={(e) => e.stopPropagation()} style={{ color: 'var(--or)', fontWeight: 800 }}>🧭 Qibla</Link>
+                  <Link href="/qibla" onClick={(e) => e.stopPropagation()} style={{ color: 'var(--or)', fontWeight: 800, display: 'inline-flex', alignItems: 'center', minHeight: 44, padding: '0 10px', borderRadius: 999, border: '1px solid rgba(201,168,76,0.4)' }}>🧭 Qibla</Link>
                 </p>
               )}
             </div>
@@ -327,28 +348,50 @@ export default function BoardVoyageur() {
               </div>
             </Link>
           ) : (
-            <Link href="/communaute/ajouter" style={{ ...T.tile, minHeight: minH, display: 'flex', flexDirection: 'column', justifyContent: 'center', textAlign: 'center', textDecoration: 'none' }}>
-              <p style={{ fontSize: 26, margin: 0 }}>💎</p>
-              <p style={{ color: '#fdfaf3', fontWeight: 800, fontSize: 13.5, margin: '6px 0 2px' }}>{en ? 'No gem near you yet' : 'Pas encore de pépite près de toi'}</p>
-              <p style={T.meta}>{en ? 'Be the first to share one 🤲' : 'Sois le premier à en partager une 🤲'}</p>
+            // Etat vide = porte, jamais cul-de-sac : on propose un guide deja
+            // rempli (chiffres reels) plutot que de demander de contribuer.
+            vedette ? (
+              <Link href={`/destinations/${vedette.slug}`} style={{ ...T.tile, padding: 0, overflow: 'hidden', minHeight: minH, display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', textDecoration: 'none', backgroundImage: vedette.image ? `linear-gradient(180deg, rgba(11,26,15,0.1) 25%, rgba(11,26,15,0.92)), url(${vedette.image})` : 'linear-gradient(160deg, #1d4a35, #0e2013)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                <div style={{ padding: '10px 12px' }}>
+                  <p style={T.lab}>📖 {villeGuide && vedette.slug === villeGuide.slug ? (en ? 'Your city guide' : 'Le guide de ta ville') : (en ? 'Ready-made guide' : 'Guide déjà prêt')}</p>
+                  <p style={{ color: '#fdfaf3', fontWeight: 800, fontSize: 15, margin: '2px 0 0', lineHeight: 1.25 }}>{vedette.nom} <span style={{ color: 'var(--or)' }}>✦ {vedette.score}</span></p>
+                  <p style={T.meta}>
+                    {vedette.restaurants > 0 && `${vedette.restaurants} ${en ? 'halal restos' : 'restos halal'}`}
+                    {vedette.restaurants > 0 && vedette.mosquees > 0 && ' · '}
+                    {vedette.mosquees > 0 && `${vedette.mosquees} ${en ? 'mosques' : 'mosquées'}`}
+                  </p>
+                </div>
+              </Link>
+            ) : (
+            <Link href="/destinations" style={{ ...T.tile, minHeight: minH, display: 'flex', flexDirection: 'column', justifyContent: 'center', textAlign: 'center', textDecoration: 'none' }}>
+              <p style={{ fontSize: 26, margin: 0 }}>📖</p>
+              <p style={{ color: '#fdfaf3', fontWeight: 800, fontSize: 13.5, margin: '6px 0 2px' }}>{en ? 'Browse the guides' : 'Parcourir les guides'}</p>
+              <p style={T.meta}>{en ? 'Mosques, halal restos, city by city' : 'Mosquées, restos halal, ville par ville'}</p>
             </Link>
+            )
           )
           const spotsTile = (
-            <Link href="/autour-de-moi" style={{ ...T.tile, flex: 1, textDecoration: 'none', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+            <Link href={pres && !pres.proches.length && !pres.autour.length ? '/spots' : '/autour-de-moi'} style={{ ...T.tile, flex: 1, textDecoration: 'none', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
               {(() => {
-                const n = pres ? (pres.proches.length || pres.autour.length) : null
+                const proches = pres?.proches.length ?? 0
+                const zone = pres?.autour.length ?? 0
+                const total = pres?.total ?? 0
+                const n = pres ? (proches || zone || total) : null
                 const villeNom = pres?.autour[0]?.villeNom
-                const labZone = pres && !pres.proches.length && villeNom
+                const lab = !pres ? (en ? 'spots around you' : 'spots autour de toi')
+                  : proches ? (en ? 'spots around you' : 'spots autour de toi')
+                  : zone && villeNom ? (en ? `spots in ${villeNom}` : `spots à ${villeNom}`)
+                  : (en ? 'spots shared by travelers' : 'spots partagés par des voyageurs')
                 return (
                   <p style={{ margin: 0 }}>
                     <span style={{ fontFamily: "'Playfair Display', Georgia, serif", color: 'var(--or)', fontSize: 26, fontWeight: 700 }}>{n ?? '…'}</span>
-                    <span style={{ ...T.meta, marginLeft: 6 }}>
-                      {labZone ? (en ? `spots in ${villeNom}` : `spots à ${villeNom}`) : (en ? 'spots around you' : 'spots autour de toi')}
-                    </span>
+                    <span style={{ ...T.meta, marginLeft: 6 }}>{lab}</span>
                   </p>
                 )
               })()}
-              <p style={{ ...T.meta, color: 'var(--or)', fontWeight: 700 }}>{en ? 'Open the map →' : 'Ouvrir la carte →'}</p>
+              <p style={{ ...T.meta, color: 'var(--or)', fontWeight: 700 }}>
+                {pres && !pres.proches.length && !pres.autour.length ? (en ? 'See the feed →' : 'Voir le fil →') : (en ? 'Open the map →' : 'Ouvrir la carte →')}
+              </p>
             </Link>
           )
 
