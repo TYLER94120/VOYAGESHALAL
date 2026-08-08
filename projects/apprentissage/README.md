@@ -24,7 +24,7 @@ Version de travail, hebergee provisoirement dans le repo VOYAGESHALAL sur la bra
 | Fichier | Role |
 | --- | --- |
 | `index.html` | Ecran d'accueil — les trois questions a la 1re visite, puis « Aujourd'hui » |
-| `lecon-al-fatiha.html` | Lecon 1 : sourate Al-Fatiha verset par verset (7 versets) |
+| `lecon-al-fatiha.html` | Lecon 1 : Al-Fatiha verset par verset, avec la prononciation |
 | `lecon-invocations-matin.html` | Lecon 2 : trois invocations pour commencer la journee |
 | `chemin.html` | La progression : compteur, calendrier des jours, parcours, revisions a venir |
 | `style.css` | Toute la mise en forme (charte de la famille) |
@@ -63,6 +63,28 @@ Trois regles de ton, a ne pas casser en ajoutant des questions :
 
 Le point de depart est rappele sur « Mon chemin », avec un lien pour le
 refaire quand le niveau change.
+
+## La prononciation
+
+Lire Al-Fatiha en lettres francaises seulement, c'est la moitie du produit :
+sans savoir comment ca sonne, on n'ose pas reciter. Chaque verset est donc
+decoupe en syllabes, chacune dans sa propre puce, et une carte de reference
+explique les huit lettres qui posent probleme a un francophone.
+
+Marquees `<b class="dur">` (en dore, soulignees) : `ayn`, `ha`, `qaf`, `sad`,
+`ta`, `dad`, `ghayn`, `dhal`. On ne marque **que** ce qui n'existe pas en
+francais ou qui trompe le lecteur francais — le `h` doux de la lettre `ha`
+(ه) reste non marque, et la carte le precise.
+
+Deux regles ici :
+
+- **le texte ne remplace pas l'oreille**, et la lecon le dit clairement :
+  il faut se faire corriger par quelqu'un qui recite bien ;
+- **aucun fichier audio** ne sera ajoute tant que Mohamed n'a pas la licence
+  ecrite d'un enregistrement. Une recitation prise en ligne sans licence
+  claire engage sa responsabilite. Dans le doute, on s'abstient.
+
+Al-Fatiha passe donc de 10 a 11 cartes, et de 5 a 6 minutes annoncees.
 
 ## Technique
 

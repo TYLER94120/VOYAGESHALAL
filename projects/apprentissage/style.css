@@ -550,3 +550,62 @@ a.pc:hover, button.pc:hover { border-color: var(--trait-fort); }
 .niveau-carte .ligne-n { display: flex; gap: 12px; align-items: baseline; font-size: 16px; }
 .niveau-carte dt { color: var(--texte-3); }
 .niveau-carte dd { margin: 0; margin-left: auto; text-align: right; color: var(--creme); }
+
+/* ---------- prononciation : syllabes et lettres difficiles ---------- */
+
+/* Chaque syllabe dans sa propre puce : l'oeil decoupe le mot sans effort. */
+.syl {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 0;
+  line-height: 1;
+}
+.syl > span {
+  background: var(--surface-1);
+  border: 1px solid var(--trait);
+  border-radius: 9px;
+  padding: 9px 12px;
+  font-size: 19px;
+  white-space: nowrap;
+}
+
+/* Une lettre qui n'existe pas en francais, ou qui trompe le lecteur francais. */
+.dur {
+  color: var(--or);
+  font-weight: 700;
+  border-bottom: 2px solid var(--or);
+}
+
+/* La legende des lettres. */
+.lettres { margin: 0; display: flex; flex-direction: column; gap: 12px; }
+
+.lettre {
+  background: var(--surface-1);
+  border: 1px solid var(--trait);
+  border-radius: var(--r-petit);
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.lettre dt {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  font-size: 19px;
+  font-weight: 600;
+}
+.lettre dt em { color: var(--texte-3); font-size: 15px; font-weight: 400; }
+.lettre dd { margin: 0; font-size: 16px; line-height: 1.55; color: var(--texte-2); }
+
+.ar-petit {
+  font-family: var(--arabe);
+  font-size: 26px;
+  line-height: 1;
+  color: var(--creme);
+}
+
+@media (min-width: 620px) {
+  .syl > span { font-size: 21px; }
+}

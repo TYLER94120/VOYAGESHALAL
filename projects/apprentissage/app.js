@@ -28,8 +28,8 @@
       titre: 'Sourate Al-Fatiha, verset par verset',
       url: 'lecon-al-fatiha.html',
       parcours: 'sourates',
-      minutes: 5,
-      cartes: 10,
+      minutes: 6,
+      cartes: 11,
       acquis: 7,
       publiee: true,
       resume: 'Tu la recites dans chaque priere. Aujourd\'hui, tu vas comprendre '
