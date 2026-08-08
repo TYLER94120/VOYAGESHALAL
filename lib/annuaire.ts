@@ -1,6 +1,6 @@
 import fs from 'fs'
 import path from 'path'
-import { correspondEnvie } from '@/lib/envies'
+import { forceEnvie } from '@/lib/envies'
 
 // 📒 ANNUAIRE — les lieux DEJA documentes dans nos 354 fiches villes
 // (mosquees et restaurants), exposes autour d'une position.
@@ -18,6 +18,8 @@ export interface AnnuaireLieu {
   type: 'priere' | 'resto'
   /** type de cuisine brut (OSM) : sert au filtre « j'ai envie de… » */
   cuisine?: string
+  /** force de la correspondance a l'envie demandee (2 fort, 1 faible) */
+  force?: number
   villeSlug: string
   villeNom: string
   source: 'annuaire'
@@ -99,12 +101,19 @@ export function annuaireAutour(
       if (opts.type && l.type !== opts.type) continue
       // « j'ai envie de… » : filtre sur le type de cuisine, jamais sur le
       // statut halal (qui reste « signalé · à vérifier » dans tous les cas)
-      if (opts.envie && !(l.type === 'resto' && correspondEnvie(l.cuisine, opts.envie))) continue
+      let force = 0
+      if (opts.envie) {
+        if (l.type !== 'resto') continue
+        force = forceEnvie(l.cuisine, l.nom, opts.envie)
+        if (!force) continue
+      }
       const d = distKm(lat, lng, l.lat, l.lng)
-      if (d <= rayon) lieux.push({ ...l, distKm: Math.round(d * 10) / 10 })
+      if (d <= rayon) lieux.push({ ...l, force: force || undefined, distKm: Math.round(d * 10) / 10 })
     }
   }
-  lieux.sort((a, b) => a.distKm - b.distKm)
+  // Une envie : les correspondances SURES d'abord, puis la distance.
+  // Sans envie : la distance seule.
+  lieux.sort((a, b) => (opts.envie ? (b.force ?? 0) - (a.force ?? 0) : 0) || a.distKm - b.distKm)
   return {
     lieux: lieux.slice(0, limit),
     ville: { slug: villes[0].slug, nom: villes[0].nom, distKm: Math.round(villes[0].d * 10) / 10 },

@@ -36,13 +36,31 @@ export const ENVIES: Envie[] = [
 const sansAccent = (s: string) =>
   s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
 
-/** Le type OSM d'un lieu correspond-il a l'envie demandee ? */
-export function correspondEnvie(type: string | undefined, envieId: string): boolean {
-  if (!type) return false
+/**
+ * Force de la correspondance entre un lieu et une envie :
+ *   2 = signal FORT  — la cuisine principale (1er tag) correspond, ou le nom
+ *                      du lieu le dit (« Pizza Unica », « Istanbul Grill »)
+ *   1 = signal FAIBLE — l'envie n'apparait qu'en tag secondaire
+ *                      (« asian, kebab » pour une envie d'asiatique)
+ *   0 = aucun rapport
+ * On sert d'abord les signaux forts : mieux vaut un vrai burger a 1 km
+ * qu'un « burger » en 3e etiquette a 200 m.
+ */
+export function forceEnvie(type: string | undefined, nom: string | undefined, envieId: string): 0 | 1 | 2 {
   const envie = ENVIES.find((e) => e.id === envieId)
-  if (!envie) return false
-  const t = sansAccent(type)
-  return envie.mots.some((m) => t.includes(m))
+  if (!envie) return 0
+  const tags = type ? sansAccent(type).split(/[,;/]+/).map((t) => t.trim()).filter(Boolean) : []
+  // Le nom parle : on n'accepte que des mots assez longs pour etre surs
+  const n = nom ? sansAccent(nom) : ''
+  if (n && envie.mots.some((m) => m.length >= 5 && n.includes(m))) return 2
+  if (tags.length && envie.mots.some((m) => tags[0].includes(m))) return 2
+  if (tags.some((t) => envie.mots.some((m) => t.includes(m)))) return 1
+  return 0
+}
+
+/** Compatibilite : y a-t-il un rapport, meme faible ? */
+export function correspondEnvie(type: string | undefined, envieId: string): boolean {
+  return forceEnvie(type, undefined, envieId) > 0
 }
 
 export function envieById(id: string | null | undefined): Envie | null {

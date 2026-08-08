@@ -15,7 +15,7 @@ import { ENVIES, envieById } from '@/lib/envies'
 // sections serveur) ne change pas — SEO intact. Sans position : rien (repli =
 // accueil classique).
 
-interface Lieu { nom: string; lat: number; lng: number; source: 'osm' | 'communaute' | 'annuaire'; distM: number; spotId?: string }
+interface Lieu { nom: string; lat: number; lng: number; source: 'osm' | 'communaute' | 'annuaire'; distM: number; spotId?: string; cuisine?: string; force?: number }
 interface FeedSpot {
   id: string; nom: string; villeNom: string; villeSlug: string; categorie?: string
   lat?: number; lng?: number; photos?: string[]; video?: string; villeImage?: string
@@ -173,8 +173,8 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
       .then((r) => r.json())
       .then((j) => {
         if (off) return
-        const l = (j.lieux as { nom: string; lat: number; lng: number }[] | undefined)?.[0]
-        setRestoEnvie(l ? { nom: l.nom, lat: l.lat, lng: l.lng, source: 'annuaire', distM: hav(pos.lat, pos.lng, l.lat, l.lng) } : null)
+        const l = (j.lieux as { nom: string; lat: number; lng: number; cuisine?: string; force?: number }[] | undefined)?.[0]
+        setRestoEnvie(l ? { nom: l.nom, lat: l.lat, lng: l.lng, source: 'annuaire', distM: hav(pos.lat, pos.lng, l.lat, l.lng), cuisine: l.cuisine, force: l.force } : null)
       })
       .catch(() => { if (!off) setRestoEnvie(null) })
     return () => { off = true }
@@ -271,7 +271,8 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
     prayerUrgent ? 'priere'
     // Une envie exprimee est un signal fort : la tuile manger passe devant
     // (sauf priere imminente, qui garde toujours la priorite).
-    : (envie || repas) && bestResto ? 'manger'
+    : envie ? 'manger'
+    : repas && bestResto ? 'manger'
     : soiree && pepite ? 'soiree'
     : 'priere'
 
@@ -371,11 +372,41 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
               </p>
               <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginTop: 8, flexWrap: 'wrap' }}>
                 <p style={{ flex: 1, minWidth: 160, ...T.meta, fontSize: 13 }}>
-                  {walk(bestResto.distM)} {en ? 'min walk' : 'min à pied'} · {bestResto.source === 'communaute' ? (en ? 'shared by a traveler · to confirm' : 'partagé par un voyageur · à confirmer') : (en ? 'listed halal · to verify' : 'signalé halal · à vérifier')}
+                  {walk(bestResto.distM)} {en ? 'min walk' : 'min à pied'}
+                  {bestResto.cuisine ? <> · <span style={{ color: 'rgba(253,250,243,0.75)' }}>{bestResto.cuisine}</span></> : null}
+                  {bestResto.force === 1 ? <> · <span style={{ color: 'var(--or)' }}>{en ? 'secondary tag' : 'mention secondaire'}</span></> : null}
+                  {' · '}{bestResto.source === 'communaute' ? (en ? 'shared by a traveler · to confirm' : 'partagé par un voyageur · à confirmer') : (en ? 'listed halal · to verify' : 'signalé halal · à vérifier')}
                 </p>
                 <a href={itin(bestResto.lat, bestResto.lng)} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}
                   style={{ minHeight: 44, display: 'inline-flex', alignItems: 'center', padding: '0 16px', borderRadius: 999, background: 'var(--or)', color: '#0b1a0f', fontWeight: 800, fontSize: 13.5, textDecoration: 'none' }}>
                   🚶 {en ? 'Directions' : 'Itinéraire'}
+                </a>
+              </div>
+            </div>
+          )
+          // Envie exprimee mais aucun resultat : on l'assume et on ouvre des
+          // portes (guide de la ville, HalalGPT) au lieu de revenir en
+          // silence sur la mosquee — le voyageur a pose une question.
+          const mangerVide = envieActive && (
+            <div style={{ ...T.tile, background: 'linear-gradient(150deg, rgba(27,67,50,0.85), rgba(255,255,255,0.04))', borderColor: 'rgba(201,168,76,0.35)' }}>
+              <p style={T.lab}>{envieActive.emoji} {envieActive[en ? 'en' : 'fr']}</p>
+              <p style={{ fontFamily: "'Playfair Display', Georgia, serif", color: '#fdfaf3', fontSize: 20, fontWeight: 900, margin: '4px 0 0', lineHeight: 1.2 }}>
+                {en ? `No ${envieActive.en.toLowerCase()} listed within 12 km` : `Aucun ${envieActive.fr.toLowerCase()} signalé à moins de 12 km`}
+              </p>
+              <p style={{ ...T.meta, marginTop: 4 }}>
+                {en ? 'Our directory does not list one here — we would rather say so than send you somewhere wrong.' : 'Notre annuaire n\'en référence pas ici — on préfère te le dire plutôt que t\'envoyer au mauvais endroit.'}
+              </p>
+              <div style={{ display: 'flex', gap: 8, marginTop: 10, flexWrap: 'wrap' }}>
+                <button onClick={() => setEnvie(null)} style={{ minHeight: 44, padding: '0 14px', borderRadius: 999, border: '1.5px solid rgba(201,168,76,0.5)', background: 'transparent', color: 'var(--creme)', fontWeight: 700, fontSize: 13, cursor: 'pointer' }}>
+                  🍽 {en ? 'Nearest halal instead' : 'Le plus proche à la place'}
+                </button>
+                {villeProche && (
+                  <Link href={`/destinations/${villeProche}`} style={{ minHeight: 44, display: 'inline-flex', alignItems: 'center', padding: '0 14px', borderRadius: 999, border: '1.5px solid rgba(201,168,76,0.5)', color: 'var(--creme)', fontWeight: 700, fontSize: 13, textDecoration: 'none' }}>
+                    📖 {en ? 'All restos in the city' : 'Tous les restos de la ville'}
+                  </Link>
+                )}
+                <a href={en ? '/halalgpt' : 'https://halalgpt.fr'} style={{ minHeight: 44, display: 'inline-flex', alignItems: 'center', padding: '0 14px', borderRadius: 999, background: 'var(--or)', color: '#0b1a0f', fontWeight: 800, fontSize: 13, textDecoration: 'none' }}>
+                  🌙 {en ? 'Ask HalalGPT' : 'Demander à HalalGPT'}
                 </a>
               </div>
             </div>
@@ -460,10 +491,10 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
             </Link>
           )
 
-          if (focus === 'manger' && mangerWide) {
+          if (focus === 'manger' && (mangerWide || mangerVide)) {
             return (
               <>
-                {mangerWide}
+                {mangerWide || mangerVide}
                 {priereSlim}
                 <div className="board-duo" style={{ display: 'grid', gridTemplateColumns: '1.15fr 1fr', gap: 10, marginTop: 10 }}>
                   {pepiteTile(150)}
