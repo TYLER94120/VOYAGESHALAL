@@ -736,6 +736,95 @@ a.lien-bas:hover { color: var(--creme); }
 .pliens:empty { display: none; }
 .pliens .ligne { background: var(--nuit); }
 
+/* ---------- le chemin ----------
+   Six lecons sur un trajet plutot que dans une liste : meme contenu, effet
+   inverse. Le trait se dore au fur et a mesure, l'etape en cours respire.
+
+   Sans JavaScript, .trace n'est jamais posee : il ne reste qu'une pile de
+   cartes, propre et lisible. Le trajet est une decoration, jamais le contenu. */
+
+.chemin-vertical { display: flex; flex-direction: column; }
+/* Avant le trace : des cartes simplement espacees. */
+.chemin-vertical:not(.trace) { gap: 12px; }
+
+/* Le retrait est le meme pour toutes les cartes : elles s'alignent, et c'est le
+   trace qui serpente dans la gouttiere ainsi liberee. */
+.chemin-vertical.trace .etape-chemin {
+  position: relative;
+  padding-left: 54px;
+  border-radius: var(--r-petit);
+}
+/* Le segment vertical qui traverse l'etape, a son abscisse. */
+.chemin-vertical.trace .etape-chemin::before {
+  content: "";
+  position: absolute;
+  left: calc(var(--x) - 1px);
+  top: 0; bottom: 0;
+  width: 2px;
+  background: rgba(253, 250, 243, 0.10);
+}
+.chemin-vertical.trace .etape-chemin.faite::before { background: var(--or); }
+/* La premiere moitie du trait de l'etape en cours est deja parcourue. */
+.chemin-vertical.trace .etape-chemin.encours::before {
+  background: linear-gradient(var(--or) 0 50%, rgba(253, 250, 243, 0.10) 50% 100%);
+}
+/* Le trait ne doit pas depasser en haut de la premiere etape ni en bas de la
+   derniere : un trajet a un debut et une fin. */
+.chemin-vertical.trace .etape-chemin:first-child::before { top: 26px; }
+.chemin-vertical.trace .etape-chemin:last-child::before { bottom: auto; height: 26px; }
+
+.medaillon {
+  position: absolute;
+  top: 13px;
+  left: calc(var(--x) - 13px);
+  width: 26px; height: 26px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--surface-1);
+  border: 2px solid rgba(253, 250, 243, 0.12);
+  box-sizing: border-box;
+}
+.etape-chemin.faite .medaillon { background: var(--or); border-color: var(--or); }
+/* L'etape en cours : plus grande, centree sur la meme abscisse, et elle respire. */
+.etape-chemin.encours .medaillon {
+  background: var(--or);
+  border-color: var(--or);
+  width: 34px; height: 34px;
+  top: 9px;
+  left: calc(var(--x) - 17px);
+  box-shadow: 0 0 0 5px rgba(201, 168, 76, 0.14);
+  animation: respire 2.6s ease-in-out infinite;
+}
+@keyframes respire {
+  0%, 100% { box-shadow: 0 0 0 5px rgba(201, 168, 76, 0.14); }
+  50%      { box-shadow: 0 0 0 10px rgba(201, 168, 76, 0.05); }
+}
+
+/* Les courbes entre deux etapes. Hauteur fixe : le trace ne depend jamais de
+   la hauteur d'une carte. Largeur fixe aussi : la courbe doit rester dans la
+   gouttiere, pas s'etirer sur tout l'ecran. */
+.pont { height: 34px; }
+.pont svg { display: block; width: 60px; height: 34px; }
+.pont path { stroke: rgba(253, 250, 243, 0.10); }
+.pont.franchi path { stroke: var(--or); }
+
+/* L'etape en cours est la plus grande, et la seule a porter la bordure doree.
+   Ce qui est derriere s'estompe, ce qui vient attend sans crier. */
+.chemin-vertical.trace .etape-chemin.encours {
+  border-color: var(--trait-fort);
+  background: linear-gradient(100deg, rgba(201,168,76,0.10), rgba(201,168,76,0.02));
+}
+.chemin-vertical.trace .etape-chemin.encours h3 { font-size: 23px; }
+.chemin-vertical.trace .etape-chemin.faite h3,
+.chemin-vertical.trace .etape-chemin.faite .pquoi { opacity: 0.6; }
+.chemin-vertical.trace .etape-chemin.avenir { border-color: var(--trait); }
+.chemin-vertical.trace .etape-chemin.avenir h3 { opacity: 0.82; }
+
+/* Un ecran qui demande moins de mouvement n'en recoit aucun. */
+@media (prefers-reduced-motion: reduce) {
+  .etape-chemin.encours .medaillon { animation: none; }
+}
+
 @media (min-width: 620px) {
   .famille > h2 { font-size: 31px; }
   .ch .n { font-size: 31px; }

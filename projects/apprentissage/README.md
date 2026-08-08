@@ -327,6 +327,40 @@ nombre de versets.
 Si un hebergeur demandait l'arret, tout se retire en une ligne : les quatre
 sources sont dans `SOURCES`, en haut d'`audio-coran.js`.
 
+### Le chemin, pas la liste
+
+Les six lecons sont posees sur un **trajet vertical qui serpente** plutot que
+dans une liste. Meme contenu, effet inverse&nbsp;: une liste de six lignes dit
+« il n'y en a que six », un trajet dit « voila ou tu en es ».
+
+- le trait se **dore** au fur et a mesure&nbsp;: on voit le chemin parcouru ;
+- l'etape en cours est la plus grande, seule a porter la bordure doree, et son
+  medaillon **respire** (supprime sous `prefers-reduced-motion`) ;
+- l'etape en cours est celle que **l'accueil propose** (`leconDuJour()`) : les
+  deux ecrans doivent raconter la meme chose.
+
+Deux regles de construction, apprises en le cassant&nbsp;:
+
+1. **Les courbes ont une hauteur ET une largeur fixes.** Elles vivent dans des
+   elements intercales de 34px de haut, et leur `<svg>` fait 60px de large. Avec
+   `width: 100%` et `preserveAspectRatio="none"`, la courbe s'etirait sur toute
+   la largeur de l'ecran et devenait un grand ruban. Une carte qui grandit ne
+   doit jamais deformer le trace.
+2. **Le retrait des cartes est constant** (54px, en CSS). Seuls le trait et les
+   medaillons serpentent, dans la gouttiere ainsi liberee. Faire varier le
+   retrait des cartes donnait un bord gauche en dents de scie qui ressemblait a
+   un bug.
+
+Et une correction qui comptait&nbsp;: le trajet **reordonne les etapes** selon
+`ordreLecons()`, l'ordre conseille qui depend des trois reponses du depart. Sans
+cela, « Mon chemin » affichait une etape faite apres deux etapes a venir — un
+chemin troue, alors que rien n'etait faux : c'etait seulement l'ordre du
+catalogue.
+
+Sans JavaScript, la classe `.trace` n'est jamais posee&nbsp;: il ne reste qu'une
+pile de cartes espacees, propre et lisible. **Le trajet est une decoration,
+jamais le contenu.**
+
 ### La serie, son filet, et l'anneau du jour
 
 **Rien de tout cela n'est stocke.** La serie, le stock de jours de grace et le
@@ -547,6 +581,18 @@ fichiers servis en HTTP :
 - dans l'etat « serie cassee », **aucun mot de reproche** n'est present ;
 - l'anneau reste a un seul bouton et une seule carte a l'accueil dans les sept
   etats, sans debordement.
+
+**Le chemin**
+
+- 4 scenes verifiees : rien de fait, deux etapes faites, le chemin sur
+  « Mon chemin », et sans JavaScript ;
+- 6 etapes, 6 medaillons, 5 courbes, une seule etape « en cours » a chaque fois ;
+- les abscisses **alternent** sur deux valeurs (le test verifie l'alternance,
+  pas des pixels precis) ;
+- les courbes deja franchies sont dorees, les autres non ;
+- sans JavaScript : aucun trace, aucun medaillon orphelin, les 6 cartes
+  presentes et espacees ;
+- aucun debordement a 375px dans les quatre scenes.
 
 **Defaut connu, pas encore corrige** : quatre lecons sur six ne contiennent
 **aucune question** (`priere-gestes`, `six-piliers-foi`, `invocations-matin`,

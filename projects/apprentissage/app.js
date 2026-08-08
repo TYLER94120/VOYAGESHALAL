@@ -873,8 +873,9 @@ function ippRendreChemin(racine) {
   // --- rappel du point de depart, et possibilite de le refaire ---
   ippRendrePointDepart(q);
 
-  // --- toutes les lecons qui existent, et leur etat ---
+  // --- le chemin : toutes les lecons, et ou l'on en est ---
   q('lecons').innerHTML = ippListeLecons();
+  ippTracerChemin(q('lecons').parentNode);
 
   // --- revisions a venir ---
   var prevues = [];
@@ -986,13 +987,129 @@ function ippListeLecons() {
   for (var i = 0; i < pubs.length; i++) {
     var l = pubs[i];
     var faite = IPP.estFaite(l.id);
-    out += '<a class="ligne" href="' + l.url + '">'
-         + ippEtoile(17, faite ? '#c9a84c' : '#6c8271')
-         + '<span><span class="t">' + ippEchappe(l.titre) + '</span>'
-         + '<span class="s">' + (faite ? 'Deja faite' : l.minutes + ' min') + '</span></span>'
-         + '<span class="fl" aria-hidden="true">&rsaquo;</span></a>';
+    out += '<article class="pcarte ouvert" data-lecon="' + l.id + '">'
+         + '<span class="etiq-p ok" data-r-etat>' + (faite ? 'Deja faite' : l.minutes + ' min')
+         + '</span>'
+         + '<h3>' + ippEchappe(l.titre) + '</h3>'
+         + '<p class="pquoi">' + ippEchappe(l.resume || '') + '</p>'
+         + '<div class="pliens"><a class="ligne" href="' + l.url + '">'
+         + ippEtoile(15, '#c9a84c')
+         + '<span><span class="t">Ouvrir la lecon</span>'
+         + '<span class="s">' + l.cartes + ' cartes &middot; '
+         + ippEchappe(IPP.nomParcours(l.parcours)) + '</span></span>'
+         + '<span class="fl" aria-hidden="true">&rsaquo;</span></a></div>'
+         + '</article>';
   }
   return out;
+}
+
+
+/* =========================================================
+   Le chemin : six lecons sur un trajet, pas dans une liste
+
+   Meme contenu, effet inverse. Une liste de six lignes dit « il n'y en a que
+   six ». Un trajet qui serpente dit « voila ou tu en es », et l'etape suivante
+   se voit avant d'etre lue.
+
+   Comment c'est construit, et pourquoi : les cartes sont deja dans le HTML de
+   parcours.html (donc lisibles par Google et sans JavaScript). Cette fonction
+   ne fait que POSER le trajet par-dessus — medaillons, segments, etat. Sans
+   JavaScript, il reste une suite de cartes propres : on ne perd que la
+   decoration.
+
+   Le zigzag ne depend jamais de la hauteur des cartes : les courbes vivent
+   dans des elements de hauteur FIXE intercales entre les etapes. Une carte qui
+   grandit ne casse donc pas le trace.
+   ========================================================= */
+
+// Les deux abscisses du serpent. Le medaillon le plus large (34px, l'etape en
+// cours) doit rester dans la gouttiere : 36 + 17 = 53, sous les 54px de retrait
+// des cartes. Si l'une de ces valeurs change, verifier l'autre.
+var IPP_CHEMIN_X = [18, 36];
+
+function ippTracerChemin(racine) {
+  'use strict';
+  var r = racine || document;
+  var zone = r.querySelector('.chemin-vertical');
+  if (!zone) { return; }
+
+  var etapes = [].slice.call(zone.querySelectorAll('[data-lecon]'));
+  if (!etapes.length) { return; }
+
+  // Un appel precedent a pu laisser ses courbes : on repart propre, sinon
+  // elles s'empilent (l'apercu en un seul fichier retrace a chaque visite).
+  var vieuxPonts = zone.querySelectorAll('.pont');
+  for (var v = 0; v < vieuxPonts.length; v++) {
+    vieuxPonts[v].parentNode.removeChild(vieuxPonts[v]);
+  }
+
+  // Les etapes sont remises dans l'ordre CONSEILLE, celui qui depend des trois
+  // reponses du depart et qui decide aussi de la lecon du jour. Sans cela le
+  // trajet montrait une etape faite apres deux etapes a venir : un chemin
+  // troue, alors que rien n'etait faux — c'etait juste l'ordre d'affichage.
+  var rang = {};
+  var conseil = IPP.ordreLecons();
+  for (var k = 0; k < conseil.length; k++) { rang[conseil[k].id] = k; }
+  etapes.sort(function (a, b) {
+    var ra = rang[a.getAttribute('data-lecon')];
+    var rb = rang[b.getAttribute('data-lecon')];
+    if (ra === undefined) { ra = 999; }
+    if (rb === undefined) { rb = 999; }
+    return ra - rb;
+  });
+  for (var m = 0; m < etapes.length; m++) { zone.appendChild(etapes[m]); }
+
+  // L'etape en cours est celle que l'accueil propose : les deux ecrans doivent
+  // raconter la meme chose, sinon on ne sait plus lequel croire.
+  var choix = IPP.leconDuJour();
+  var enCours = choix ? choix.lecon.id : null;
+
+  zone.classList.add('trace');
+  var precedent = null;
+
+  for (var i = 0; i < etapes.length; i++) {
+    var el = etapes[i];
+    var id = el.getAttribute('data-lecon');
+    var faite = IPP.estFaite(id);
+    var etat = faite ? 'faite' : (id === enCours ? 'encours' : 'avenir');
+
+    el.classList.remove('faite', 'encours', 'avenir');
+    el.classList.add('etape-chemin', etat);
+
+    // Le retrait des cartes est CONSTANT (pose en CSS) : seul le trace serpente,
+    // dans la gouttiere. Faire varier le retrait des cartes donnait un bord
+    // gauche en dents de scie qui ressemblait a un defaut, pas a un chemin.
+    el.style.setProperty('--x', IPP_CHEMIN_X[i % 2] + 'px');
+
+    // Le medaillon, pose sur le trait, a l'abscisse de cette etape.
+    var vieux = el.querySelector('.medaillon');
+    if (vieux) { vieux.parentNode.removeChild(vieux); }
+    var med = document.createElement('span');
+    med.className = 'medaillon';
+    med.setAttribute('aria-hidden', 'true');
+    med.innerHTML = ippEtoile(15, (faite || etat === 'encours') ? '#0b1a0f' : '#6c8271');
+    el.insertBefore(med, el.firstChild);
+
+    // La courbe qui relie l'etape precedente a celle-ci. Hauteur fixe : elle ne
+    // depend d'aucun contenu.
+    if (precedent !== null) {
+      var de = IPP_CHEMIN_X[(i - 1) % 2];
+      var vers = IPP_CHEMIN_X[i % 2];
+      var franchi = IPP.estFaite(precedent);   // dore si l'etape d'avant est faite
+      var pont = document.createElement('div');
+      pont.className = 'pont' + (franchi ? ' franchi' : '');
+      pont.setAttribute('aria-hidden', 'true');
+      // Largeur FIXE, jamais 100% : etiree sur la largeur de l'ecran, la courbe
+      // devenait un grand ruban au lieu d'un trait qui serpente.
+      pont.innerHTML =
+          '<svg width="60" height="34" viewBox="0 0 60 34" focusable="false">'
+        + '<path d="M' + de + ' 0 C' + de + ' 17 ' + vers + ' 17 ' + vers + ' 34" '
+        + 'fill="none" stroke-width="2" stroke-linecap="round"/>'
+        + '</svg>';
+      el.parentNode.insertBefore(pont, el);
+    }
+    precedent = id;
+  }
 }
 
 
@@ -1031,10 +1148,12 @@ function ippRendreOffre(racine) {
   for (var j = 0; j < cartes.length; j++) {
     var el = cartes[j];
     if (!IPP.estFaite(el.getAttribute('data-lecon'))) { continue; }
-    el.className += ' faite';
     var etiq = el.querySelector('[data-r-etat]');
     if (etiq) { etiq.textContent = 'Deja faite'; }
   }
+
+  // --- puis poser le trajet par-dessus les cartes ---
+  ippTracerChemin(r);
 }
 
 
