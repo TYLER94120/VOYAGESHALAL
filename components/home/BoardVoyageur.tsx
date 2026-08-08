@@ -175,29 +175,42 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
     let off = false
     setRestoEnvie(undefined); setAvisEnvoye(false)
     type Cand = { nom: string; lat: number; lng: number; cuisine?: string; force?: number; halal?: string }
-    fetch(`/api/annuaire?lat=${pos.lat}&lng=${pos.lng}&rayon=12&type=resto&envie=${envie}&limit=12`)
+    fetch(`/api/annuaire?lat=${pos.lat}&lng=${pos.lng}&rayon=12&type=resto&envie=${envie}&limit=25`)
       .then((r) => r.json())
       .then(async (j) => {
         if (off) return
         const cands = ((j.lieux as Cand[] | undefined) ?? []).map((l) => ({
           ...l, distM: hav(pos.lat, pos.lng, l.lat, l.lng), id: lieuId(l.lat, l.lng),
+          // Un lieu etiquete « pizza, burger, italian, kebab, sandwich… » est
+          // un generaliste : il ressortait pour TOUTES les envies. On compte
+          // ses etiquettes pour lui preferer une adresse specialisee.
+          nbTags: (l.cuisine ?? '').split(/[,;/]+/).filter(Boolean).length || 1,
         }))
         if (!cands.length) { setRestoEnvie(null); return }
+        // Regle commune aux deux modes : on ne sert un « peut-etre » que si
+        // AUCUNE correspondance sure n'existe dans le rayon. Sinon le meme
+        // generaliste du coin sortait pour chaque envie.
+        const surs = cands.filter((c) => c.force === 2)
+        const pool = surs.length ? surs : cands
         // Avis communautaires (les notres — aucune note inventee)
         let avis: Record<string, number> = {}
         if (mode === 'meilleur') {
           try {
-            const a = await fetch(`/api/avis?ids=${cands.slice(0, 12).map((c) => c.id).join(',')}`).then((r) => r.json())
+            const a = await fetch(`/api/avis?ids=${pool.slice(0, 20).map((c) => c.id).join(',')}`).then((r) => r.json())
             avis = (a.avis as Record<string, number>) ?? {}
           } catch { /* pas d'avis : on retombe sur les criteres objectifs */ }
         }
         const halalPoids = (h?: string) => (h === 'only' ? 2 : h === 'yes' || h === 'high' || h === 'certified' ? 1 : 0)
         const choisi = mode === 'proche'
-          ? [...cands].sort((a, b) => a.distM - b.distM)[0]
-          : [...cands].sort((a, b) => {
-              const sa = (avis[a.id] ?? 0) * 6 + (a.force === 2 ? 3 : 0) + halalPoids(a.halal) - a.distM / 1500
-              const sb = (avis[b.id] ?? 0) * 6 + (b.force === 2 ? 3 : 0) + halalPoids(b.halal) - b.distM / 1500
-              return sb - sa
+          ? [...pool].sort((a, b) => a.distM - b.distM || a.nbTags - b.nbTags)[0]
+          : [...pool].sort((a, b) => {
+              const sc = (c: typeof a) =>
+                Math.min(avis[c.id] ?? 0, 3) * 2   // nos avis, plafonnes
+                + (c.force === 2 ? 3 : 0)          // le plat est bien celui-la
+                + halalPoids(c.halal)              // niveau halal signale
+                - (c.nbTags - 1) * 0.6             // penalise les generalistes
+                - c.distM / 1500                   // et la distance
+              return sc(b) - sc(a)
             })[0]
         setRestoEnvie({
           nom: choisi.nom, lat: choisi.lat, lng: choisi.lng, source: 'annuaire',
