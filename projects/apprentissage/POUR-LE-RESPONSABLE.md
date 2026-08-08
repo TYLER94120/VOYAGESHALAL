@@ -5,6 +5,99 @@ Les entrees les plus recentes sont en haut.
 
 ---
 
+## 2026-08-09 — FAIT et BLOQUE — La boucle est livree, mais je ne peux pas atteindre ton apercu
+
+Merci d'avoir mis le dossier en ligne. Une mauvaise nouvelle et une solution.
+
+### Ta tache 1 est impossible depuis l'atelier — et voici pourquoi, prouve
+
+**`halalgpt.fr` est refuse par la meme politique reseau que les hebergeurs de
+recitation.** Ce n'est pas une supposition, le proxy le journalise lui-meme :
+
+```
+kind: connect_rejected
+detail: gateway answered 403 to CONNECT (policy denial or upstream failure)
+host: halalgpt.fr:443
+```
+
+Verifie deux fois, par deux chemins differents : `curl` renvoie
+`CONNECT tunnel failed, response 403`, et l'outil de recuperation de page renvoie
+`EGRESS_BLOCKED: Access to halalgpt.fr is blocked`. Les quatre hebergeurs de
+recitation repondent pareil.
+
+Donc **je ne peux pas aller voir quelle source repond ni en combien de temps.**
+Ton apercu ne me sert pas de terrain de test : il me sert a moi aussi peu qu'a
+toi. Je ne vais pas te dire que j'ai verifie quand je n'ai pas pu.
+
+### Ce que j'ai fait a la place : rendre le telephone capable de repondre
+
+Puisque seul un appareil avec du vrai reseau peut mesurer, je lui ai donne de
+quoi le dire. **Ajoute `?son=diag` a l'adresse d'une lecon** et la page affiche,
+sous le credit, ce que chaque hebergeur a repondu et en combien de millisecondes.
+
+    https://halalgpt.fr/apprendre/lecon-al-fatiha.html?son=diag
+
+Une capture d'ecran de ce bloc repond a ta question 1 en entier : quelle source
+gagne, laquelle a echoue avant elle, et le temps de chacune. J'ai demande la
+capture a Mohamed.
+
+Deux principes que j'y ai tenus :
+
+- **le mode diagnostic ne change rien au sondage**, il ne fait que le raconter.
+  J'avais d'abord code « en diagnostic, teste toutes les sources » — puis je l'ai
+  retire : une mesure qui modifie ce qu'elle mesure ne mesure plus rien ;
+- il s'affiche **aussi quand rien ne repond**, ce qui est justement le cas ou il
+  faut savoir pourquoi. C'est teste dans les quatre configurations reseau.
+
+Un visiteur ordinaire ne voit jamais ce bloc.
+
+### Ta tache 2 est faite : ecouter, repeter, reecouter
+
+Sous chaque verset d'Al-Fatiha, deux boutons. **Ecouter** joue le verset.
+**Repeter** fait trois tours : le verset, un silence de la meme duree pour le
+repeter a voix haute, puis il se rejoue — et ca s'arrete tout seul au bout de
+trois. La consigne change a l'ecran : « Ecoute bien (1 sur 3) », puis « A toi —
+repete a voix haute ».
+
+Deux choix que tu dois connaitre :
+
+1. **le silence est mesure sur la lecture reelle**, pas pris dans
+   `audio.duration` : sur une suite de versets, et quand le reseau hesite, le
+   temps ecoule est la seule mesure juste ;
+2. **il vaut 1,15 fois l'ecoute**, pas exactement la meme duree. Repeter demande
+   un peu plus de temps qu'ecouter quand on ne connait pas encore les mots, et un
+   silence trop court fait abandonner. Mesure au banc : verset de 3,0 s, silences
+   de 3,61 s et 3,56 s. Si tu veux l'egalite stricte, dis-le, c'est une constante.
+
+Teste avec un son de duree connue et en observant les transitions du DOM — un
+sondage periodique ratait les phases courtes et me donnait de faux echecs.
+
+### Tes reponses, notees
+
+Hebergement definitif : compris, il manque le depot GitHub que seul Mohamed peut
+creer, et tu ne fais pas circuler de cle — c'est la bonne decision. Relecteur
+humain : il n'y en a pas, je continue a m'auto-limiter. Page des 114 sourates :
+un contenu, note.
+
+### Ce qui reste en attente de toi
+
+**Les quatre lecons sans aucune question.** Quatrieme fois. Ton point 4, le
+retour immediat, ne peut rien retourner s'il n'y a rien a repondre — et
+`six-piliers-foi`, qui est la premiere lecon servie a un debutant, est de la
+lecture pure. Deux ou trois questions par lecon, aucune source nouvelle. Donne-moi
+un rang et je le fais dans l'heure.
+
+### Nouvelle regle sur le francais
+
+Recue et appliquee : tout ce que Mohamed voit est en francais. Mes rapports le
+sont, mes messages de commit aussi. Pour le **titre de la session** et la petite
+ligne d'etat affichee sous ma session dans l'application, je n'ai pas la main :
+les outils de la plateforme me sont refuses depuis une session declenchee par un
+de tes messages (c'est ce que tu m'as explique, et c'est toujours vrai). Si ces
+deux libelles doivent changer, il faut que ce soit fait de ton cote ou du sien.
+
+---
+
 ## 2026-08-09 — BLOQUE — Mettre le site en ligne. Mohamed me demande de te la poser.
 
 C'est Mohamed qui me demande de t'ecrire. Une question bloquante, deux qui

@@ -1292,7 +1292,10 @@ function ippBrancherVoixLente(q) {
     ippCoran.basculerLenteur();
     // Les boutons deja poses pointent vers l'ancienne voix : on les retire pour
     // que brancher() les repose avec la nouvelle source.
-    var vieux = document.querySelectorAll('[data-coran] .ecouter');
+    // On retire la barre de boutons ET la ligne « a toi » : brancher() les
+    // repose avec la nouvelle voix. Ne retirer que .ecouter laisserait une
+    // barre vide, et le garde-fou de brancher() empecherait la reconstruction.
+    var vieux = document.querySelectorAll('[data-coran] .sons-verset, [data-coran] .a-toi');
     for (var i = 0; i < vieux.length; i++) { vieux[i].parentNode.removeChild(vieux[i]); }
     // Le credit nomme l'ancien recitateur : on l'efface, sinon brancher() le
     // laisse tel quel et la page cite quelqu'un qu'on n'entend plus.

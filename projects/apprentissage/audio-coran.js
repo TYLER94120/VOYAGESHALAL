@@ -117,19 +117,32 @@ var ippCoran = (function () {
     return new Promise(function (resolve) {
       var audio = new Audio();
       var fini = false;
+      var depart = null;
+      try { depart = performance.now(); } catch (e) { depart = null; }
       audio.preload = 'metadata';
 
-      function conclure(ok) {
+      function conclure(ok, pourquoi) {
         if (fini) { return; }
         fini = true;
+        var ms = null;
+        try { if (depart !== null) { ms = Math.round(performance.now() - depart); } }
+        catch (e) { ms = null; }
+        journal.push({
+          nom: source.nom,
+          recitateur: source.recitateur,
+          lent: source.lent,
+          repond: ok,
+          ms: ms,
+          motif: pourquoi || (ok ? 'repond' : 'pas de reponse')
+        });
         audio.src = '';
         resolve(ok ? source : null);
       }
 
-      audio.addEventListener('loadedmetadata', function () { conclure(true); });
-      audio.addEventListener('canplay', function () { conclure(true); });
-      audio.addEventListener('error', function () { conclure(false); });
-      setTimeout(function () { conclure(false); }, 9000);
+      audio.addEventListener('loadedmetadata', function () { conclure(true, 'metadonnees lues'); });
+      audio.addEventListener('canplay', function () { conclure(true, 'lecture possible'); });
+      audio.addEventListener('error', function () { conclure(false, 'erreur de chargement'); });
+      setTimeout(function () { conclure(false, 'delai depasse (9 s)'); }, 9000);
 
       audio.src = source.url(1, 1);   // Al-Fatiha, premier verset : present partout
       audio.load();
@@ -138,12 +151,29 @@ var ippCoran = (function () {
 
   var promesseSource = null;
 
+  /* Le journal du sondage. Il existe pour une raison precise : l'atelier des
+     agents ne peut joindre AUCUN hebergeur de recitation, donc personne ne peut
+     verifier d'ici quelle source repond ni en combien de temps. Avec
+     « ?son=diag » dans l'adresse, la page le raconte elle-meme, et un telephone
+     avec du vrai reseau devient l'instrument de mesure. */
+  var journal = [];
+
+  function modeDiagnostic() {
+    try {
+      return /[?&]son=diag\b/.test(window.location.search);
+    } catch (e) {
+      return false;
+    }
+  }
+
   /** Renvoie la source utilisable, ou null. Testee une seule fois par visite. */
   function choisirSource() {
     if (promesseSource) { return promesseSource; }
 
     var candidates = SOURCES.filter(function (s) { return s.lent === veutLent(); });
     if (!candidates.length) { candidates = SOURCES; }
+    // Le mode diagnostic ne change RIEN au sondage : il ne fait que raconter ce
+    // qui s'est passe. Une mesure qui modifie ce qu'elle mesure ne sert a rien.
 
     // Une source deja validee lors d'une visite precedente passe en tete.
     var retenue = lireMemoire(CLE_SOURCE);
@@ -199,11 +229,83 @@ var ippCoran = (function () {
     suivant();
   }
 
+  var minuterie = null;
+
   function arreter() {
+    if (minuterie) { clearTimeout(minuterie); minuterie = null; }
     if (enCours) {
       enCours.pause();
       enCours = null;
     }
+  }
+
+  /* ---------- ecouter, repeter, reecouter ---------------------------------
+     C'est la boucle qui fait passer de « j'ai entendu » a « je sais reciter ».
+     Le verset se joue, puis on laisse un silence de la MEME duree — le temps
+     de le repeter a voix haute — puis il se rejoue.
+
+     La duree du silence est mesuree sur la lecture reelle, pas prise dans
+     audio.duration : sur une suite de versets, et quand le reseau hesite, le
+     temps ecoule est la seule mesure juste.
+
+     surPhase(phase, tour) est appele avec 'ecoute', 'silence' ou 'fini' : la
+     lecon peut ainsi dire a l'eleve quand c'est a lui de parler.
+     ---------------------------------------------------------------------- */
+
+  function jouerBoucle(source, ref, tours, surPhase) {
+    arreter();
+    var tour = 0;
+
+    function cycle() {
+      tour++;
+      if (tour > tours) { if (surPhase) { surPhase('fini', tours); } return; }
+      if (surPhase) { surPhase('ecoute', tour); }
+
+      var debut = null;
+      try { debut = performance.now(); } catch (e) { debut = null; }
+
+      jouer(source, ref, null, function () {
+        var ecoule = 1500;
+        try {
+          if (debut !== null) { ecoule = Math.max(900, performance.now() - debut); }
+        } catch (e) { /* sans horloge fine, on garde le repli */ }
+        // Repeter demande un peu plus de temps que d'ecouter : on n'est pas
+        // encore a l'aise avec les mots. Un silence trop court fait abandonner.
+        var silence = Math.min(12000, ecoule * 1.15);
+        if (tour >= tours) { if (surPhase) { surPhase('fini', tour); } return; }
+        if (surPhase) { surPhase('silence', tour); }
+        minuterie = setTimeout(function () { minuterie = null; cycle(); }, silence);
+      });
+    }
+
+    cycle();
+  }
+
+  /* Le compte rendu du sondage, affiche seulement avec « ?son=diag ».
+     Un visiteur ordinaire ne le voit jamais. Il sert a repondre a une question
+     qu'on ne peut pas trancher depuis l'atelier : quelle source repond, et en
+     combien de temps. Une capture d'ecran de ce bloc suffit. */
+  function ecrireDiagnostic(pres) {
+    if (!modeDiagnostic() || !pres || !pres.parentNode) { return; }
+    if (document.querySelector('.diag-son')) { return; }
+
+    var lignes = '';
+    for (var i = 0; i < journal.length; i++) {
+      var e = journal[i];
+      lignes += '<li>' + (e.repond ? '&#10003; ' : '&#10007; ')
+              + '<strong>' + e.nom + '</strong> — ' + e.recitateur
+              + (e.lent ? ' (voix lente)' : '')
+              + '<br>' + e.motif + (e.ms === null ? '' : ' en ' + e.ms + ' ms')
+              + '</li>';
+    }
+    if (!lignes) { lignes = '<li>Aucun hebergeur sonde.</li>'; }
+
+    var bloc = document.createElement('div');
+    bloc.className = 'diag-son';
+    bloc.innerHTML = '<p class="diag-titre">Diagnostic du son</p><ul>' + lignes + '</ul>'
+      + '<p class="diag-note">Bloc visible uniquement avec <code>?son=diag</code> '
+      + 'dans l\'adresse. Retire-le pour revenir a la page normale.</p>';
+    pres.parentNode.insertBefore(bloc, pres.nextSibling);
   }
 
   /** Pose les boutons « Ecouter » sur tous les [data-coran] d'une zone. */
@@ -213,40 +315,91 @@ var ippCoran = (function () {
     if (!blocs.length || !window.Promise) { return; }
 
     choisirSource().then(function (source) {
-      if (!source) { return; }   // rien ne repond : aucun bouton, et rien ne ment
+      if (!source) {
+        // Rien ne repond : aucun bouton, et rien ne mente. Mais on ecrit tout de
+        // meme le diagnostic — c'est justement le cas ou il faut savoir pourquoi.
+        ecrireDiagnostic(r.querySelector('[data-r="credit-audio"]')
+                      || document.querySelector('[data-r="credit-audio"]'));
+        return;
+      }
 
       for (var i = 0; i < blocs.length; i++) {
         (function (bloc) {
-          if (bloc.querySelector('.ecouter')) { return; }
+          if (bloc.querySelector('.sons-verset')) { return; }
           var ref = lireReference(bloc.getAttribute('data-coran'));
           if (!ref) { return; }
 
-          var bouton = document.createElement('button');
-          bouton.type = 'button';
-          bouton.className = 'ecouter';
-          bouton.setAttribute('aria-label', 'Ecouter la recitation');
-          bouton.innerHTML = '<span aria-hidden="true">&#9654;</span> Ecouter';
+          var barre = document.createElement('div');
+          barre.className = 'sons-verset';
 
-          var joue = false;
-          bouton.addEventListener('click', function () {
-            if (joue) {
-              arreter();
-              joue = false;
-              bouton.classList.remove('joue');
-              bouton.innerHTML = '<span aria-hidden="true">&#9654;</span> Ecouter';
-              return;
-            }
-            joue = true;
-            bouton.classList.add('joue');
-            bouton.innerHTML = '<span aria-hidden="true">&#9632;</span> Arreter';
-            jouer(source, ref, null, function () {
-              joue = false;
-              bouton.classList.remove('joue');
-              bouton.innerHTML = '<span aria-hidden="true">&#9654;</span> Ecouter';
+          var ecoute = document.createElement('button');
+          ecoute.type = 'button';
+          ecoute.className = 'ecouter';
+          ecoute.setAttribute('aria-label', 'Ecouter la recitation');
+
+          var repete = document.createElement('button');
+          repete.type = 'button';
+          repete.className = 'ecouter repeter';
+          repete.setAttribute('aria-label', 'Ecouter puis repeter, trois fois');
+
+          var phrase = document.createElement('p');
+          phrase.className = 'a-toi';
+          phrase.hidden = true;
+
+          var LIRE = '<span aria-hidden="true">&#9654;</span> Ecouter';
+          var STOP = '<span aria-hidden="true">&#9632;</span> Arreter';
+          var BOUCLE = '<span aria-hidden="true">&#8635;</span> Repeter';
+
+          function repos() {
+            ecoute.innerHTML = LIRE;
+            repete.innerHTML = BOUCLE;
+            ecoute.classList.remove('joue');
+            repete.classList.remove('joue');
+            phrase.hidden = true;
+            actif = null;
+          }
+
+          var actif = null;   // null | 'ecoute' | 'boucle'
+
+          ecoute.addEventListener('click', function () {
+            // On retient l'etat AVANT de remettre a zero : repos() efface
+            // `actif`, donc le tester apres ne dit plus rien.
+            var avant = actif;
+            if (avant) { arreter(); repos(); }
+            if (avant === 'ecoute') { return; }   // second appui : on arrete
+            actif = 'ecoute';
+            ecoute.classList.add('joue');
+            ecoute.innerHTML = STOP;
+            jouer(source, ref, null, repos);
+          });
+
+          // Trois tours : ecoute, a toi, ecoute, a toi, ecoute. Assez pour que
+          // ca rentre, assez court pour ne pas lasser, et ca s'arrete tout seul.
+          repete.addEventListener('click', function () {
+            var avant = actif;
+            if (avant) { arreter(); repos(); }
+            if (avant === 'boucle') { return; }
+            actif = 'boucle';
+            repete.classList.add('joue');
+            repete.innerHTML = STOP;
+            phrase.hidden = false;
+            jouerBoucle(source, ref, 3, function (phase, tour) {
+              if (phase === 'fini') { repos(); return; }
+              if (phase === 'ecoute') {
+                phrase.className = 'a-toi ecoute';
+                phrase.textContent = 'Ecoute bien (' + tour + ' sur 3)';
+              } else {
+                phrase.className = 'a-toi parle';
+                phrase.textContent = 'A toi — repete a voix haute';
+              }
             });
           });
 
-          bloc.appendChild(bouton);
+          repos();
+          barre.appendChild(ecoute);
+          barre.appendChild(repete);
+          bloc.appendChild(barre);
+          bloc.appendChild(phrase);
         }(blocs[i]));
       }
 
@@ -257,6 +410,8 @@ var ippCoran = (function () {
         hote.textContent = 'Recitation : ' + source.recitateur + ' — source : ' + source.nom
           + '. Les fichiers ne sont pas heberges par ce site.';
       }
+
+      ecrireDiagnostic(hote);
     });
   }
 
@@ -269,7 +424,9 @@ var ippCoran = (function () {
   return {
     brancher: brancher,
     jouer: jouer,
+    jouerBoucle: jouerBoucle,
     arreter: arreter,
+    journal: function () { return journal.slice(); },
     choisirSource: choisirSource,
     basculerLenteur: basculerLenteur,
     veutLent: veutLent,

@@ -388,6 +388,43 @@ de pression religieuse : on ne melange pas un mecanisme de produit avec la
 crainte d'Allah. Ce serait malhonnete, et ce serait la meilleure facon de faire
 fuir quelqu'un.
 
+### Ecouter, repeter, reecouter
+
+C'est la boucle qui fait passer de « j'ai entendu » a « je sais reciter ». Sous
+chaque verset d'Al-Fatiha, deux boutons&nbsp;:
+
+- **Ecouter** — le verset une fois ;
+- **Repeter** — trois tours : le verset se joue, puis un **silence de la meme
+  duree** pour le repeter a voix haute, puis il se rejoue. La consigne change a
+  l'ecran (« Ecoute bien (1 sur 3) », « A toi — repete a voix haute »), et la
+  boucle **s'arrete toute seule** au bout de trois tours.
+
+Deux details qui comptent&nbsp;:
+
+- la duree du silence est **mesuree sur la lecture reelle**, pas prise dans
+  `audio.duration` : sur une suite de versets, et quand le reseau hesite, le
+  temps ecoule est la seule mesure juste. Elle vaut 1,15 fois l'ecoute — repeter
+  demande un peu plus de temps qu'ecouter, et un silence trop court fait
+  abandonner. Mesure au banc : verset de 3,0 s, silences de 3,6 s ;
+- les deux boutons **s'excluent** : lancer l'un arrete l'autre, un second appui
+  arrete tout, et `arreter()` annule aussi le silence en attente.
+
+### Le diagnostic du son : « ?son=diag »
+
+Ajouter `?son=diag` a l'adresse d'une lecon affiche, sous le credit, **ce que
+chaque hebergeur a repondu et en combien de millisecondes**. Un visiteur
+ordinaire ne le voit jamais.
+
+Pourquoi ca existe&nbsp;: **l'atelier des agents ne peut joindre aucun hebergeur
+de recitation** — ni les CDN, ni meme `halalgpt.fr` (le proxy refuse le CONNECT
+avec un 403, il le journalise lui-meme). Personne ne peut donc verifier d'ici
+quelle source repond. Avec ce parametre, un telephone avec du vrai reseau devient
+l'instrument de mesure, et une capture d'ecran suffit a repondre.
+
+Regle appliquee&nbsp;: **le mode diagnostic ne change rien au sondage**, il ne
+fait que le raconter. Une mesure qui modifie ce qu'elle mesure ne sert a rien.
+Il s'affiche aussi — et surtout — quand **aucune** source ne repond.
+
 ### Les six sons d'interface
 
 `sons.js` + `sons/` : six timbres de cloche synthetises, aucune licence en jeu.
@@ -593,6 +630,18 @@ fichiers servis en HTTP :
 - sans JavaScript : aucun trace, aucun medaillon orphelin, les 6 cartes
   presentes et espacees ;
 - aucun debordement a 375px dans les quatre scenes.
+
+**La boucle et le diagnostic**
+
+- la boucle enchaine bien ecoute / silence / ecoute sur **trois tours** puis
+  s'arrete seule (phases relevees par observation du DOM, pas par sondage : un
+  sondage rate toute phase plus courte que son intervalle) ;
+- **duree mesuree** : verset de 3,0 s, silences de 3,61 s et 3,56 s ;
+- un second appui arrete la boucle ; « Ecouter » prend la main sur elle ;
+- deux boutons de 56px cote a cote sans debordement a 375px ;
+- le diagnostic : absent sans le parametre, present avec, il nomme l'hebergeur
+  et donne un temps, note l'echec d'un hebergeur puis la reussite du suivant, et
+  s'affiche meme quand rien ne repond.
 
 **Defaut connu, pas encore corrige** : quatre lecons sur six ne contiennent
 **aucune question** (`priere-gestes`, `six-piliers-foi`, `invocations-matin`,

@@ -1064,6 +1064,30 @@ a.lien-bas:hover { color: var(--creme); }
   color: var(--nuit);
 }
 
+/* Ecouter et Repeter, cote a cote sous le verset. Ils passent a la ligne si la
+   place manque : deux boutons de 56px ne doivent jamais deborder. */
+.sons-verset { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 10px; }
+.sons-verset .ecouter { margin-top: 0; }
+.repeter { border-style: dashed; }
+.repeter.joue { border-style: solid; }
+
+/* La consigne pendant la boucle : c'est elle qui dit quand se taire et quand
+   parler. Assez grande pour se lire d'un coup d'oeil, le telephone a la main. */
+.a-toi {
+  margin: 11px 0 0;
+  padding: 11px 14px;
+  border-radius: var(--r-petit);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.a-toi.ecoute { background: rgba(253, 250, 243, 0.06); color: var(--texte-2); }
+.a-toi.parle {
+  background: rgba(201, 168, 76, 0.15);
+  color: var(--or);
+  border-left: 2px solid var(--or);
+}
+
 /* L'interrupteur du son, en pied de lecon. Visible, pas cache dans un menu :
    quelqu'un qui apprend dans une piece silencieuse doit pouvoir le couper
    sans chercher. */
@@ -1073,3 +1097,27 @@ a.lien-bas:hover { color: var(--creme); }
   padding-bottom: 4px;
 }
 .reglages .lien-discret { align-items: center; display: inline-flex; gap: 7px; }
+
+/* Le diagnostic du son : visible seulement avec ?son=diag dans l'adresse.
+   Il existe parce que l'atelier des agents ne peut joindre aucun hebergeur de
+   recitation : c'est un telephone avec du vrai reseau qui doit repondre. */
+.diag-son {
+  margin-top: 14px;
+  padding: 14px 16px;
+  border: 1px dashed var(--trait-fort);
+  border-radius: var(--r-petit);
+  background: var(--surface-1);
+}
+.diag-titre {
+  margin: 0 0 9px;
+  font-size: 12px;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--or);
+}
+.diag-son ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 9px; }
+.diag-son li { font-size: 14px; line-height: 1.45; color: var(--texte-2); }
+.diag-son strong { color: var(--creme); }
+.diag-note { margin: 11px 0 0; font-size: 13px; line-height: 1.5; color: var(--texte-3); }
+.diag-note code { font-size: 12px; color: var(--or-clair); }
