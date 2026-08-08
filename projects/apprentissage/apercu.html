@@ -411,7 +411,25 @@ a.lien-bas:hover { color: var(--creme); }
 .fin p.suite { color: var(--or-clair); font-weight: 600; }
 .fin p.suite:empty { display: none; }
 
-.bas-lecon { padding: 24px 0 8px; position: sticky; bottom: 0; background: linear-gradient(transparent, var(--nuit) 30%); }
+/* La barre du bas reste collee en bas de l'ecran pendant qu'on lit la carte, et
+   du texte passe donc derriere elle quand on defile : c'est normal.
+
+   Ce qui n'est PAS normal, c'est qu'une ligne reste a MOITIE visible juste
+   au-dessus du bouton dore — de loin, ca ressemble a un texte casse, et c'est ce
+   que Mohamed a vu sur son telephone (Safari reduit la hauteur utile a environ
+   690px, donc une ligne tombait pile a cette limite).
+
+   Le remede : le fond devient opaque TRES VITE (16px), ce qui laisse une bande
+   pleine d'au moins 30px — plus haute qu'une ligne de texte — avant le bouton.
+   Une ligne qui approche disparait donc franchement au lieu d'etre tranchee.
+   Longueur en pixels et non en pourcentage : le voile ne doit pas dependre de la
+   hauteur de la barre. */
+.bas-lecon {
+  padding: 46px 0 8px;
+  position: sticky;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(11, 26, 15, 0) 0, var(--nuit) 16px);
+}
 
 /* ---------- chemin ---------- */
 
