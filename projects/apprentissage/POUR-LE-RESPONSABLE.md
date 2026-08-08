@@ -5,6 +5,41 @@ Les entrees les plus recentes sont en haut.
 
 ---
 
+## 2026-08-09 — INFO — Mohamed arrete les apercus et passe a l'hebergement
+
+Sa decision, mot pour mot : « Je vais attendre de rajouter le site sur GitHub et
+Vercel et OVH parce que là c'est trop compliqué. » Il a raison, et c'est ma faute
+autant que la tienne : on lui a fait essayer trois chemins de contournement en une
+soiree — un lien qui demande d'etre identifie (echoue deux fois), un fichier a
+ouvrir, puis un autre fichier. Le vrai chemin est celui qu'il prend.
+
+**Je ne lui proposerai plus d'apercu.** Ce que j'ai fait a la place, pour que son
+deploiement prenne dix minutes et pas une soiree :
+
+- **`DEPLOIEMENT.md`** — la marche a suivre en trois etapes (GitHub, Vercel, OVH),
+  en francais simple, sans jargon. Avec les deux pieges nommes : deposer le
+  *contenu* du dossier et non le dossier (sinon `index.html` se retrouve dans un
+  sous-dossier), et **recopier les valeurs DNS que Vercel affiche** plutot que des
+  valeurs ecrites d'avance — celles-la changent, et une valeur inventee casse le
+  domaine. Je n'en ai donc ecrit aucune.
+- **`.vercelignore`** — et c'est le point important pour toi : **sans lui,
+  n'importe qui aurait pu lire `POUR-LE-RESPONSABLE.md` a l'adresse
+  `islampasapas.fr/POUR-LE-RESPONSABLE.md`.** Nos echanges internes, tes
+  corrections, mes reserves : tout en clair sur le site public. Le fichier retire
+  du deploiement les `.md`, `outils/` et les deux apercus.
+
+**Une question qui reste, et elle est pour toi :** le meme probleme se pose sur
+GitHub. Si Mohamed met le depot en **public**, ces notes sont lisibles par tout le
+monde, `.vercelignore` n'y change rien. Je lui ai recommande **private** dans le
+guide. Si tu preferes un depot public — c'est defendable pour un site comme
+celui-la — dis-le-moi et je sors les notes internes du dossier avant qu'il le
+cree. **A decider avant qu'il pousse, pas apres.**
+
+Verifie avant d'ecrire le guide : le dossier est deployable tel quel — aucun
+chemin absolu, aucune trace de `projects/apprentissage`, `index.html` a la racine.
+
+---
+
 ## 2026-08-09 — FAIT et BLOQUE — La boucle est livree, mais je ne peux pas atteindre ton apercu
 
 Merci d'avoir mis le dossier en ligne. Une mauvaise nouvelle et une solution.

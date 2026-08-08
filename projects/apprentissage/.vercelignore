@@ -1,0 +1,14 @@
+# Ce qui ne doit PAS se retrouver en ligne sur islampasapas.fr.
+#
+# Sans ce fichier, n'importe qui pourrait lire POUR-LE-RESPONSABLE.md a
+# l'adresse islampasapas.fr/POUR-LE-RESPONSABLE.md : ce sont des notes de
+# travail internes, pas du contenu pour les visiteurs.
+
+# Les notes de travail et la documentation.
+*.md
+outils/
+
+# Les apercus : ils recopient tout le site en une seule page. Publies, ils
+# feraient du contenu duplique et abimeraient le referencement des vraies pages.
+apercu.html
+apercu-hors-ligne.html
