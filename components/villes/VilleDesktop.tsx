@@ -18,6 +18,7 @@ import { favId } from '@/lib/favorites'
 import { getCityGuide } from '@/lib/cityGuides'
 import GuideCarousel from '@/components/villes/GuideCarousel'
 import CitySpots from '@/components/villes/CitySpots'
+import StickySections from '@/components/villes/StickySections'
 
 // Sections guidées (refonte « Netflix » des fiches) — libellés orientés usage
 const TABS = [
@@ -229,7 +230,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
           {descShort && <p style={{ textAlign: 'center', color: 'rgba(253,250,243,0.72)', fontSize: '14.5px', lineHeight: 1.7, maxWidth: 700, margin: '0 auto 18px' }}>{descShort}</p>}
 
           {/* ONGLETS — cartes blanches contrastées, une rangée sur PC, 2 colonnes mobile */}
-          <div className="ville-tabs-grid">
+          <div className="ville-tabs-grid" id="ville-onglets">
             {TABS.map((tab) => {
               const active = activeTab === tab.id
               const count = tabCounts[tab.id]
@@ -241,6 +242,10 @@ export default function VilleDesktop({ ville }: { ville: any }) {
               )
             })}
           </div>
+
+          {/* Navigation collante : dès que ces onglets sortent de l'écran,
+              une barre compacte prend le relais (fiche = 46 écrans) */}
+          <StickySections ancre="ville-onglets" en={en} />
 
           {/* Guide PDF gratuit (aimant à emails, doré) + Vols */}
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px', marginTop: '10px' }}>
@@ -303,7 +308,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
       {/* 🕌 OÙ PRIER — mis en avant (différenciateur n°1) : mosquées principales
           réelles (OSM) + accès direct « la plus proche » */}
       {mosquees.length > 0 && (
-        <section id="sec-mosquees" style={{ maxWidth: WRAP, margin: '0 auto', padding: '26px 24px 0', scrollMarginTop: 12 }}>
+        <section id="sec-mosquees" style={{ maxWidth: WRAP, margin: '0 auto', padding: '26px 24px 0', scrollMarginTop: 118 }}>
           <div style={{ background: 'var(--nuit)', borderRadius: 20, padding: '20px 20px 18px', color: '#fdfaf3' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: 8, marginBottom: 12 }}>
               <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: 22, fontWeight: 900, color: '#fff', margin: 0 }}>
@@ -348,7 +353,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
       {/* 🏊 ESPACES FEMMES & FAMILLE — le différenciateur. Données vérifiées
           HalalBooking uniquement ; sinon invitation communauté (jamais de faux). */}
       {espacesFemmes.length > 0 && (
-      <section id="sec-femmes" style={{ maxWidth: WRAP, margin: '0 auto', padding: '26px 24px 0', scrollMarginTop: 12 }}>
+      <section id="sec-femmes" style={{ maxWidth: WRAP, margin: '0 auto', padding: '26px 24px 0', scrollMarginTop: 118 }}>
         <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: 24, fontWeight: 900, color: 'var(--nuit)', margin: '0 0 6px' }}>
           🏊 {en ? 'Women & family spaces' : 'Espaces femmes & famille'}
         </h2>
@@ -477,7 +482,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
       {/* PARTIE BAS (claire) — GUIDE en un seul flux : manger, dormir, faire,
           conseils, communauté. Les onglets du haut sont des ancres. */}
       <div ref={contentRef} style={{ maxWidth: WRAP, margin: '0 auto', padding: '28px 24px 80px', scrollMarginTop: '12px' }}>
-        <section id="sec-restaurants" style={{ scrollMarginTop: 12 }}>
+        <section id="sec-restaurants" style={{ scrollMarginTop: 118 }}>
           <>
             <h2 style={sectionTitle}>🍽 {en ? `Eating halal in ${ville.nom}` : `Manger halal à ${ville.nom}`}</h2>
             {/* BLOC 3 — statut halal HONNÊTE selon le contexte de la ville */}
@@ -627,7 +632,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
           </>
         </section>
 
-        <section id="sec-hotels" style={{ scrollMarginTop: 12, marginTop: 40 }}>
+        <section id="sec-hotels" style={{ scrollMarginTop: 118, marginTop: 40 }}>
           <h2 style={sectionTitle}>🏨 {en ? `Where to stay in ${ville.nom}` : `Où dormir à ${ville.nom}`}</h2>
           <div style={{ marginBottom: 20 }}>
             <HotelCTA cityName={ville.nom} variant="banner" />
@@ -649,7 +654,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
           </section>
         )}
         {activites.length > 0 && (
-        <section id="sec-activites" style={{ scrollMarginTop: 12, marginTop: 40 }}>
+        <section id="sec-activites" style={{ scrollMarginTop: 118, marginTop: 40 }}>
           <h2 style={sectionTitle}>🎯 {en ? `Things to do in ${ville.nom}` : `Que faire à ${ville.nom}`}</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '16px' }}>
             {activites.map((a: any, i: number) => (
@@ -670,7 +675,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
 
         {/* 💡 CONSEILS PRATIQUES — texte concret RÉDIGÉ (jamais un lieu inventé) */}
         {(guideVille?.conseils?.length || pratiqueItems.length > 0) && (
-        <section id="sec-pratique" style={{ scrollMarginTop: 12, marginTop: 40 }}>
+        <section id="sec-pratique" style={{ scrollMarginTop: 118, marginTop: 40 }}>
           <h2 style={sectionTitle}>💡 {en ? 'Practical tips' : 'Conseils pratiques'}</h2>
           {guideVille?.conseils && (
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(270px, 1fr))', gap: 12, marginBottom: pratiqueItems.length ? 18 : 0 }}>
@@ -697,7 +702,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
         )}
 
         {/* 🤝 CE QUE LA COMMUNAUTÉ PARTAGE ICI — spots réels, sinon invitation */}
-        <section id="sec-communaute" style={{ scrollMarginTop: 12, marginTop: 40 }}>
+        <section id="sec-communaute" style={{ scrollMarginTop: 118, marginTop: 40 }}>
           <h2 style={sectionTitle}>🤝 {en ? `What the community shares in ${ville.nom}` : `Ce que la communauté partage à ${ville.nom}`}</h2>
           {hasCoords
             ? <CitySpots lat={coords.lat} lng={coords.lng} villeNom={ville.nom} slug={ville.slug ?? ''} en={en} />

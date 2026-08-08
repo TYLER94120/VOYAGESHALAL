@@ -516,6 +516,18 @@ body { top: 0 !important; }
   }
 }
 
+/* Ancres des fiches ville : la section visee doit atterrir SOUS le bandeau
+   de priere et sous la barre de sections, sinon son titre reste cache. */
+@media (max-width: 1023px) {
+  [id^="sec-"] { scroll-margin-top: 118px; }
+}
+
+/* Barre de sections collante des fiches ville : mobile et tablette
+   uniquement — sur PC la page est assez large pour garder ses reperes. */
+.sticky-sections { scrollbar-width: none; }
+.sticky-sections::-webkit-scrollbar { display: none; }
+@media (min-width: 1024px) { .sticky-sections { display: none !important; } }
+
 /* ===== Board voyageur : colonne sur mobile, bento large sur écran PC =====
    Sur mobile le board reste une pile lisible ; au-delà de 1024px il devient
    une vraie grille : plus de bande vide sur les côtés, tout tient en un écran. */
