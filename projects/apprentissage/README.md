@@ -31,7 +31,7 @@ Version de travail, hebergee provisoirement dans le repo VOYAGESHALAL sur la bra
 | `style.css` | Toute la mise en forme (charte de la famille) |
 | `app.js` | Catalogue, niveau, progression, revisions, et le lecteur de lecon commun |
 | `robots.txt` | Ce que les robots peuvent lire, et l'adresse du sitemap |
-| `sitemap.xml` | Les 3 pages de contenu, pour Google |
+| `sitemap.xml` | Les pages de contenu, pour Google |
 | `partage.png` | L'image qui s'affiche quand on partage un lien (1200x630) |
 | `outils/faire-apercu.py` | Genere `apercu.html`, un apercu en un seul fichier (pour relecture) |
 | `apercu.html` | **Fichier genere.** Ne pas modifier a la main, relancer le script |
@@ -68,7 +68,9 @@ Trois regles de ton, a ne pas casser en ajoutant des questions :
   peut-etre un converti d'hier, et c'est exactement pour lui que le site
   existe ;
 - **on reste honnete avec celui qui est en avance.** Plutot que de lui servir
-  une lecon qu'il connait, on lui dit qu'il n'y a que deux lecons aujourd'hui.
+  une lecon qu'il connait, on lui dit combien il y en a reellement. Le nombre
+  est calcule depuis le catalogue (`{n}` dans `IPP_BILANS`), jamais ecrit en
+  dur : un chiffre fige devient faux des la lecon suivante.
 
 Le point de depart est rappele sur « Mon chemin », avec un lien pour le
 refaire quand le niveau change.
@@ -175,6 +177,7 @@ Ce que Google doit voir, et ce qu'il ne doit pas voir :
 | `index.html` | indexee, canonical `/` | l'accueil |
 | `lecon-al-fatiha.html` | indexee | page de contenu |
 | `lecon-invocations-matin.html` | indexee | page de contenu |
+| `lecon-six-piliers-foi.html` | indexee | page de contenu |
 | `chemin.html` | **noindex, follow** | ecran personnel, vide pour un visiteur |
 | `apercu.html` | **noindex** + bloque dans robots.txt | recopie tout le site : contenu duplique |
 

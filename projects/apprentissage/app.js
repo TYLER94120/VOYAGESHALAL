@@ -918,11 +918,13 @@ var IPP_BILANS = {
     message: 'On ne va pas te refaire ce que tu sais. On va surtout rendre plus clair '
            + 'ce que tu recites deja.'
   },
+  // {n} est remplace par le nombre reel de lecons publiees, pour que ce
+  // message ne devienne jamais faux quand le catalogue grandit.
   avance: {
     titre: 'Tu es en avance sur le site.',
-    message: 'Autant te le dire franchement : il n\'y a que deux lecons ici aujourd\'hui, '
-           + 'et tu connais deja une bonne partie de la premiere. On commence donc par '
-           + 'les invocations, et j\'ecris la suite.'
+    message: 'Autant te le dire franchement : il n\'y a que {n} lecons ici aujourd\'hui, '
+           + 'et tu connais deja une bonne partie de l\'une d\'elles. On commence donc '
+           + 'par ce que tu ne sais pas, et j\'ecris la suite.'
   },
   inconnu: {
     titre: 'Comme tu veux.',
@@ -968,7 +970,8 @@ function ippDemarrerDiagnostic(racine, quandFini) {
     q('diag-passer').hidden = true;
     q('diag-points').innerHTML = '';
     q('diag-titre').textContent = bilan.titre;
-    q('diag-message').textContent = bilan.message;
+    q('diag-message').textContent =
+      bilan.message.replace('{n}', String(IPP.publiees().length));
 
     var suite = IPP.leconDuJour();
     var bouton = q('diag-go');
