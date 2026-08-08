@@ -30,6 +30,7 @@ Version de travail, hebergee provisoirement dans le repo VOYAGESHALAL sur la bra
 | `lecon-priere-gestes.html` | Lecon 4 : les gestes de la priere, dans l'ordre |
 | `lecon-alphabet-arabe.html` | Lecon 5 : les 28 lettres de l'alphabet arabe |
 | `parcours.html` | Le programme complet : 18 parcours dans 5 familles |
+| `sourates.html` | Repere : la liste complete des 114 sourates |
 | `chemin.html` | La progression : compteur, calendrier des jours, parcours, revisions a venir |
 | `style.css` | Toute la mise en forme (charte de la famille) |
 | `app.js` | Catalogue, niveau, progression, revisions, et le lecteur de lecon commun |
@@ -95,6 +96,25 @@ et elle a rempli la famille « langue arabe » qui etait vide.
 **L'objectif de lancement n'est pas 18 parcours sur 18.** C'est
 **aucune famille vide** : un visiteur qui ouvre le programme doit trouver du
 contenu reel dans chacune des cinq familles. C'est atteint depuis la lecon 5.
+
+### Les pages de repere
+
+Mohamed veut un site **complet des le lancement**, et il l'a confirme. C'est sa
+decision, elle est appliquee. La voie qui permet du volume sans jamais engager
+sa responsabilite, ce sont les **pages de repere** : du contenu factuel,
+verifiable, sans aucun avis religieux.
+
+`sourates.html` en est la premiere : les 114 sourates dans l'ordre, avec le
+numero, le nom arabe et le nom transcrit. C'est utile tous les jours, c'est
+tres recherche sur Google, et il n'y a rien a trancher.
+
+Deux precautions y sont ecrites au lecteur : sept sourates portent **deux noms**
+selon les editions (ils sont signales, pas caches), et les transcriptions en
+lettres latines varient d'un ouvrage a l'autre.
+
+Prochaines pages de repere possibles, meme logique : les prophetes nommes dans
+le Coran, les mots arabes les plus frequents, les formes des lettres selon leur
+place dans le mot.
 
 ### Une formulation a ne pas reintroduire
 

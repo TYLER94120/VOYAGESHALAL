@@ -760,3 +760,80 @@ a.pc:hover, button.pc:hover { border-color: var(--trait-fort); }
 @media (min-width: 620px) {
   .gros-ar { font-size: 54px; flex-basis: 66px; }
 }
+
+/* ---------- l'index des 114 sourates ---------- */
+
+.sourates {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.srow {
+  display: grid;
+  grid-template-columns: 40px 1fr auto;
+  align-items: center;
+  gap: 12px;
+  background: var(--surface-1);
+  border: 1px solid var(--trait);
+  border-radius: 11px;
+  padding: 11px 13px;
+  min-height: 56px;
+}
+
+.s-num {
+  font-variant-numeric: tabular-nums;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--texte-3);
+  text-align: right;
+}
+
+/* Le nom arabe et le nom transcrit partagent la colonne du milieu, l'arabe
+   au-dessus : a 375px, les mettre cote a cote ecraserait les deux. */
+.s-ar {
+  grid-column: 2;
+  font-family: var(--arabe);
+  font-size: 25px;
+  line-height: 1.35;
+  color: var(--creme);
+  text-align: right;
+  direction: rtl;
+}
+
+.s-tr {
+  grid-column: 2;
+  font-size: 15px;
+  line-height: 1.3;
+  color: var(--or);
+  font-weight: 600;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px 8px;
+  align-items: baseline;
+}
+.s-alt { font-size: 13px; color: var(--texte-3); font-weight: 400; }
+
+.s-lien {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  text-decoration: none;
+  border: 1px solid var(--trait-fort);
+  border-radius: 999px;
+  padding: 9px 13px;
+}
+.s-lien:hover { background: rgba(201, 168, 76, 0.12); }
+
+@media (min-width: 620px) {
+  /* Assez de place pour aligner l'arabe et la transcription sur une ligne. */
+  .srow { grid-template-columns: 44px 1fr 1fr auto; }
+  .s-ar { grid-column: 2; text-align: right; }
+  .s-tr { grid-column: 3; }
+  .s-lien { grid-column: 4; grid-row: auto; }
+}

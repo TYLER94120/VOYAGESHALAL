@@ -30,6 +30,7 @@ VUES = [
     ("lecon-priere-gestes.html", "priere-gestes"),
     ("lecon-alphabet-arabe.html", "alphabet-arabe"),
     ("parcours.html", "programme"),
+    ("sourates.html", "sourates"),
     ("chemin.html", "chemin"),
 ]
 
@@ -77,6 +78,7 @@ def main() -> int:
 
     if (vue === 'accueil')       { ippRendreAccueil(hote); }
     else if (vue === 'programme'){ ippRendreOffre(hote); }
+    else if (vue === 'sourates') { /* page de repere, rien a piloter */ }
     else if (vue === 'chemin')  { ippRendreChemin(hote); }
     else                        { ippDemarrerLecon(vue, hote); }
 
