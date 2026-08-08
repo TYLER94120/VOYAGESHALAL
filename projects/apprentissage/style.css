@@ -714,3 +714,49 @@ a.pc:hover, button.pc:hover { border-color: var(--trait-fort); }
   .famille > h2 { font-size: 31px; }
   .ch .n { font-size: 31px; }
 }
+
+/* ---------- fiches de lettres (alphabet) ---------- */
+
+.lettres-groupe { display: flex; flex-direction: column; gap: 10px; }
+
+.lfiche {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--surface-1);
+  border: 1px solid var(--trait);
+  border-radius: var(--r-petit);
+  padding: 14px 16px;
+  min-height: 72px;
+}
+
+/* La lettre en grand, dans une case de largeur fixe : les noms s'alignent
+   ainsi tous a la meme abscisse, meme quand le glyphe est large ou etroit. */
+.gros-ar {
+  font-family: var(--arabe);
+  font-size: 46px;
+  line-height: 1;
+  color: var(--or);
+  flex: 0 0 56px;
+  text-align: center;
+}
+
+.linfo { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.lnom {
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.lson { font-size: 15px; line-height: 1.45; color: var(--texte-2); }
+.lpoint {
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  color: var(--texte-3);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+@media (min-width: 620px) {
+  .gros-ar { font-size: 54px; flex-basis: 66px; }
+}

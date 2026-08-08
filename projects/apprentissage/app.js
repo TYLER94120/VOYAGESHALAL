@@ -136,6 +136,18 @@
       publiee: true,
       resume: 'Sept gestes, dans l\'ordre, tires d\'un seul hadith. Et les points '
             + 'ou les ecoles ne disent pas la meme chose.'
+    },
+    {
+      id: 'alphabet-arabe',
+      titre: 'L\'alphabet arabe : les 28 lettres',
+      url: 'lecon-alphabet-arabe.html',
+      parcours: 'alphabet',
+      minutes: 7,
+      cartes: 12,
+      acquis: 28,
+      publiee: true,
+      resume: 'Bonne nouvelle : ce ne sont pas 28 dessins a retenir, mais 18. '
+            + 'Ce sont les points qui font le reste.'
     }
   ];
 
@@ -683,8 +695,8 @@ function ippRendreChemin(racine) {
   q('compteur-n').textContent = String(n);
   q('compteur-txt').innerHTML = (n === 0)
     ? 'Rien encore.<br>Ta premiere lecon t\'attend.'
-    : (n === 1 ? 'enseignement appris.<br>Avec sa source verifiee.'
-               : 'enseignements appris.<br>Chacun avec sa source verifiee.');
+    : (n === 1 ? 'chose apprise.<br>Continue demain.'
+               : 'choses apprises,<br>lecon apres lecon.');
 
   // --- calendrier du mois en cours ---
   var maintenant = new Date();
@@ -885,8 +897,10 @@ function ippRendreOffre(racine) {
         '<div class="chiffres">'
       + '<div class="ch"><span class="n">' + c.lecons + '</span>'
       + '<span class="l">' + (c.lecons === 1 ? 'lecon prete' : 'lecons pretes') + '</span></div>'
-      + '<div class="ch"><span class="n">' + c.parcoursOuverts + ' / ' + c.parcours + '</span>'
-      + '<span class="l">parcours ouverts</span></div>'
+      // On n'annonce pas "4 / 18" : la fraction fait paraitre le site inachevé
+      // alors que l'honnetete se joue ligne par ligne, sur chaque parcours.
+      + '<div class="ch"><span class="n">' + c.parcours + '</span>'
+      + '<span class="l">parcours au programme</span></div>'
       + '<div class="ch"><span class="n">' + c.familles + '</span>'
       + '<span class="l">familles de themes</span></div>'
       + '</div>';
@@ -992,7 +1006,7 @@ function ippDemarrerLecon(id, racine) {
     var total = IPP.acquis();
     var reste = IPP.publiees().filter(function (l) { return !IPP.estFaite(l.id); }).length;
 
-    var phrase = 'Tu connais maintenant ' + total + ' enseignements, chacun avec sa source. '
+    var phrase = 'Tu as maintenant appris ' + total + ' choses sur ce site. '
                + 'Cette lecon reviendra dans ' + r.pas + (r.pas > 1 ? ' jours.' : ' jour.');
     if (serie > 1) { phrase += ' ' + serie + ' jours d\'affilee.'; }
 

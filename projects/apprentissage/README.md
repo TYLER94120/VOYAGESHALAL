@@ -28,6 +28,7 @@ Version de travail, hebergee provisoirement dans le repo VOYAGESHALAL sur la bra
 | `lecon-invocations-matin.html` | Lecon 2 : trois invocations pour commencer la journee |
 | `lecon-six-piliers-foi.html` | Lecon 3 : les six piliers de la foi (hadith de Jibril) |
 | `lecon-priere-gestes.html` | Lecon 4 : les gestes de la priere, dans l'ordre |
+| `lecon-alphabet-arabe.html` | Lecon 5 : les 28 lettres de l'alphabet arabe |
 | `parcours.html` | Le programme complet : 18 parcours dans 5 familles |
 | `chemin.html` | La progression : compteur, calendrier des jours, parcours, revisions a venir |
 | `style.css` | Toute la mise en forme (charte de la famille) |
@@ -73,6 +74,35 @@ decourageantes.
 **La zakat et tout ce qui touche a l'argent.** Decision de Mohamed, sa
 responsabilite est en jeu. Ne pas l'ajouter a `PARCOURS` sans son accord
 explicite, meme si un theme semble le reclamer.
+
+### Deux vitesses assumees
+
+Tout le contenu ne porte pas le meme risque, et cela change le rythme
+possible :
+
+- **le contenu juridique** (le jeune, le pelerinage, la purification, le
+  comportement) demande une verification lente. Une regle fausse engage
+  Mohamed. Ces parcours ouvriront lentement ;
+- **le contenu factuel et linguistique** (l'alphabet, les prophetes nommes
+  dans le Coran, l'index des sourates, les mots frequents) ne comporte pas ce
+  risque&nbsp;: ce sont des faits verifiables, pas des avis. Ces parcours
+  peuvent ouvrir vite.
+
+C'est par la qu'on rend le site complet sans rien sacrifier. La lecon sur
+l'alphabet en est le premier exemple&nbsp;: 28 lettres, aucun avis religieux,
+et elle a rempli la famille « langue arabe » qui etait vide.
+
+**L'objectif de lancement n'est pas 18 parcours sur 18.** C'est
+**aucune famille vide** : un visiteur qui ouvre le programme doit trouver du
+contenu reel dans chacune des cinq familles. C'est atteint depuis la lecon 5.
+
+### Une formulation a ne pas reintroduire
+
+La fin de lecon disait « N enseignements, chacun avec sa source ». C'est devenu
+faux avec l'alphabet&nbsp;: une lettre n'est pas un texte rapporte. La phrase
+dit maintenant « N choses apprises ». Les sources restent affichees carte par
+carte, la ou elles existent vraiment — ne pas remettre une promesse globale
+que tout le contenu ne peut pas tenir.
 
 ### Si la carte change
 

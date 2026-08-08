@@ -724,6 +724,52 @@ a.pc:hover, button.pc:hover { border-color: var(--trait-fort); }
   .ch .n { font-size: 31px; }
 }
 
+/* ---------- fiches de lettres (alphabet) ---------- */
+
+.lettres-groupe { display: flex; flex-direction: column; gap: 10px; }
+
+.lfiche {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--surface-1);
+  border: 1px solid var(--trait);
+  border-radius: var(--r-petit);
+  padding: 14px 16px;
+  min-height: 72px;
+}
+
+/* La lettre en grand, dans une case de largeur fixe : les noms s'alignent
+   ainsi tous a la meme abscisse, meme quand le glyphe est large ou etroit. */
+.gros-ar {
+  font-family: var(--arabe);
+  font-size: 46px;
+  line-height: 1;
+  color: var(--or);
+  flex: 0 0 56px;
+  text-align: center;
+}
+
+.linfo { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.lnom {
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.lson { font-size: 15px; line-height: 1.45; color: var(--texte-2); }
+.lpoint {
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  color: var(--texte-3);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+@media (min-width: 620px) {
+  .gros-ar { font-size: 54px; flex-basis: 66px; }
+}
+
 </style>
 
 <div id="vue"></div>
@@ -1958,6 +2004,314 @@ a.pc:hover, button.pc:hover { border-color: var(--trait-fort); }
 </div>
 </template>
 
+<template data-vue="alphabet-arabe">
+<div class="page">
+
+  <header class="lecon-haut">
+    <a class="quitter" href="index.html" aria-label="Quitter la lecon">&times;</a>
+    <div class="points" data-r="points" aria-hidden="true"></div>
+  </header>
+
+  <main id="principal">
+
+    <div class="etapes" data-r="etapes">
+
+      <!-- 1 : pourquoi, et la bonne nouvelle -->
+      <section class="etape" data-etape="1">
+        <span class="eyebrow">La lecon du jour</span>
+        <h2 style="font-size:29px">L'alphabet arabe&nbsp;: les 28 lettres</h2>
+        <div>
+          <p class="ar" lang="ar" dir="rtl">إِنَّا أَنزَلْنَاهُ قُرْآنًا عَرَبِيًّا</p>
+          <p class="phon">Inna anzalnahou qour'anan 'arabiyya</p>
+        </div>
+        <div>
+          <span class="etiquette">Traduction du sens</span>
+          <p class="sens">&laquo;&nbsp;Nous l'avons fait descendre, un Coran en langue arabe.&nbsp;&raquo;</p>
+        </div>
+        <div class="source">
+          <span class="lab">Source</span>
+          <span class="val">Coran, sourate Yousouf (12), verset 2.</span>
+        </div>
+        <p class="clair">
+          Tant qu'on ne lit pas les lettres, on depend de la phonetique
+          — donc de quelqu'un d'autre. Apprendre l'alphabet, c'est arreter
+          d'etre dependant.
+        </p>
+      </section>
+
+      <!-- 2 : la bonne nouvelle -->
+      <section class="etape" data-etape="2">
+        <span class="eyebrow">La bonne nouvelle</span>
+        <h2>28 lettres, mais 18 formes</h2>
+        <p class="clair">
+          Beaucoup de lettres arabes <strong>partagent exactement le meme
+          dessin</strong>. Ce qui les distingue, ce sont les points&nbsp;: un
+          dessus, deux dessous, trois dessus.
+        </p>
+        <div class="lettres-groupe">
+          <div class="lfiche">
+            <span class="gros-ar" lang="ar" dir="rtl">ب</span>
+            <div class="linfo"><span class="lnom">ba</span><span class="lson">1 point dessous</span></div>
+          </div>
+          <div class="lfiche">
+            <span class="gros-ar" lang="ar" dir="rtl">ت</span>
+            <div class="linfo"><span class="lnom">ta</span><span class="lson">2 points dessus</span></div>
+          </div>
+          <div class="lfiche">
+            <span class="gros-ar" lang="ar" dir="rtl">ث</span>
+            <div class="linfo"><span class="lnom">tha</span><span class="lson">3 points dessus</span></div>
+          </div>
+        </div>
+        <p class="clair">
+          Meme forme, trois lettres. Tu n'as donc pas 28 dessins a retenir,
+          mais 18. C'est ce qui rend l'alphabet arabe plus facile qu'il n'y parait.
+        </p>
+      </section>
+
+      <!-- 3 : alif -->
+      <section class="etape" data-etape="3">
+        <span class="eyebrow">Lettre 1 sur 28</span>
+        <h2>La barre</h2>
+        <div class="lettres-groupe">
+          <div class="lfiche">
+            <span class="gros-ar" lang="ar" dir="rtl">ا</span>
+            <div class="linfo"><span class="lnom">alif</span><span class="lson">un <em>a</em> long, comme dans &laquo;&nbsp;pate&nbsp;&raquo;</span></div>
+          </div>
+        </div>
+        <p class="clair">
+          Alif fait partie des <strong>six lettres qui ne s'attachent jamais a
+          la lettre suivante</strong>&nbsp;:
+          <span class="ar-petit" lang="ar" dir="rtl">ا د ذ ر ز و</span>.
+          Quand tu en vois une, le mot se coupe visuellement apres elle. Ce
+          detail t'evitera beaucoup d'erreurs de lecture.
+        </p>
+      </section>
+
+      <!-- 4 : la dent -->
+      <section class="etape" data-etape="4">
+        <span class="eyebrow">Lettres 2 a 4</span>
+        <h2>La dent, et ses points</h2>
+        <div class="lettres-groupe">
+          <div class="lfiche">
+            <span class="gros-ar" lang="ar" dir="rtl">ب</span>
+            <div class="linfo"><span class="lnom">ba</span><span class="lson">le son <em>b</em></span><span class="lpoint">1 point dessous</span></div>
+          </div>
+          <div class="lfiche">
+            <span class="gros-ar" lang="ar" dir="rtl">ت</span>
+            <div class="linfo"><span class="lnom">ta</span><span class="lson">le son <em>t</em></span><span class="lpoint">2 points dessus</span></div>
+          </div>
+          <div class="lfiche">
+            <span class="gros-ar" lang="ar" dir="rtl">ث</span>
+            <div class="linfo"><span class="lnom">tha</span><span class="lson">le <em>th</em> anglais de &laquo;&nbsp;think&nbsp;&raquo;</span><span class="lpoint">3 points dessus</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5 : le corps rond -->
+      <section class="etape" data-etape="5">
+        <span class="eyebrow">Lettres 5 a 7</span>
+        <h2>Le corps rond</h2>
+        <div class="lettres-groupe">
+          <div class="lfiche">
+            <span class="gros-ar" lang="ar" dir="rtl">ج</span>
+            <div class="linfo"><span class="lnom">jim</span><span class="lson">le son <em>dj</em>, comme dans &laquo;&nbsp;Djeddah&nbsp;&raquo;</span><span class="lpoint">1 point dedans</span></div>
+          </div>
+          <div class="lfiche">
+            <span class="gros-ar" lang="ar" dir="rtl">ح</span>
+            <div class="linfo"><span class="lnom">ha</span><span class="lson">un <em>h</em> souffle, du fond de la gorge</span><span class="lpoint">aucun point</span></div>
+          </div>
+          <div class="lfiche">
+            <span class="gros-ar" lang="ar" dir="rtl">خ</span>
+            <div class="linfo"><span class="lnom">kha</span><span class="lson">un <em>kh</em> racle, comme dans &laquo;&nbsp;Bach&nbsp;&raquo;</span><span class="lpoint">1 point dessus</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6 : les quatre courtes -->
+      <section class="etape" data-etape="6">
+        <span class="eyebrow">Lettres 8 a 11</span>
+        <h2>Les quatre courtes</h2>
+        <p class="clair">Deux paires, et toutes les quatre ne s'attachent pas a la suivante.</p>
+        <div class="lettres-groupe">
+          <div class="lfiche">
+            <span class="gros-ar" lang="ar" dir="rtl">د</span>
+            <div class="linfo"><span class="lnom">dal</span><span class="lson">le son <em>d</em></span><span class="lpoint">aucun point</span></div>
+          </div>
+          <div class="lfiche">
+            <span class="gros-ar" lang="ar" dir="rtl">ذ</span>
+            <div class="linfo"><span class="lnom">dhal</span><span class="lson">le <em>th</em> anglais de &laquo;&nbsp;this&nbsp;&raquo;</span><span class="lpoint">1 point dessus</span></div>
+          </div>
+          <div class="lfiche">
+            <span class="gros-ar" lang="ar" dir="rtl">ر</span>
+            <div class="linfo"><span class="lnom">ra</span><span class="lson">un <em>r</em> roule, pas le r francais</span><span class="lpoint">aucun point</span></div>
+          </div>
+          <div class="lfiche">
+            <span class="gros-ar" lang="ar" dir="rtl">ز</span>
+            <div class="linfo"><span class="lnom">zay</span><span class="lson">le son <em>z</em></span><span class="lpoint">1 point dessus</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7 : les dents en serie et les boucles -->
+      <section class="etape" data-etape="7">
+        <span class="eyebrow">Lettres 12 a 15</span>
+        <h2>Les dents, et les boucles</h2>
+        <div class="lettres-groupe">
+          <div class="lfiche">
+            <span class="gros-ar" lang="ar" dir="rtl">س</span>
+            <div class="linfo"><span class="lnom">sin</span><span class="lson">le son <em>s</em></span><span class="lpoint">trois dents, aucun point</span></div>
+          </div>
+          <div class="lfiche">
+            <span class="gros-ar" lang="ar" dir="rtl">ش</span>
+            <div class="linfo"><span class="lnom">shin</span><span class="lson">le son <em>ch</em> de &laquo;&nbsp;chat&nbsp;&raquo;</span><span class="lpoint">trois dents, 3 points</span></div>
+          </div>
+          <div class="lfiche">
+            <span class="gros-ar" lang="ar" dir="rtl">ص</span>
+            <div class="linfo"><span class="lnom">sad</span><span class="lson">un <em>s</em> epais, bouche creusee</span><span class="lpoint">aucun point</span></div>
+          </div>
+          <div class="lfiche">
+            <span class="gros-ar" lang="ar" dir="rtl">ض</span>
+            <div class="linfo"><span class="lnom">dad</span><span class="lson">un <em>d</em> epais, la plus difficile</span><span class="lpoint">1 point dessus</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8 : deux paires -->
+      <section class="etape" data-etape="8">
+        <span class="eyebrow">Lettres 16 a 19</span>
+        <h2>Deux paires de plus</h2>
+        <div class="lettres-groupe">
+          <div class="lfiche">
+            <span class="gros-ar" lang="ar" dir="rtl">ط</span>
+            <div class="linfo"><span class="lnom">ta</span><span class="lson">un <em>t</em> epais</span><span class="lpoint">aucun point</span></div>
+          </div>
+          <div class="lfiche">
+            <span class="gros-ar" lang="ar" dir="rtl">ظ</span>
+            <div class="linfo"><span class="lnom">za</span><span class="lson">un <em>z</em> epais</span><span class="lpoint">1 point dessus</span></div>
+          </div>
+          <div class="lfiche">
+            <span class="gros-ar" lang="ar" dir="rtl">ع</span>
+            <div class="linfo"><span class="lnom">&lsquo;ayn</span><span class="lson">un son de gorge qui n'existe pas en francais</span><span class="lpoint">aucun point</span></div>
+          </div>
+          <div class="lfiche">
+            <span class="gros-ar" lang="ar" dir="rtl">غ</span>
+            <div class="linfo"><span class="lnom">ghayn</span><span class="lson">proche du <em>r</em> francais grasseye</span><span class="lpoint">1 point dessus</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9 : quatre lettres -->
+      <section class="etape" data-etape="9">
+        <span class="eyebrow">Lettres 20 a 23</span>
+        <h2>Quatre lettres</h2>
+        <div class="lettres-groupe">
+          <div class="lfiche">
+            <span class="gros-ar" lang="ar" dir="rtl">ف</span>
+            <div class="linfo"><span class="lnom">fa</span><span class="lson">le son <em>f</em></span><span class="lpoint">1 point dessus</span></div>
+          </div>
+          <div class="lfiche">
+            <span class="gros-ar" lang="ar" dir="rtl">ق</span>
+            <div class="linfo"><span class="lnom">qaf</span><span class="lson">un <em>k</em> prononce tres en arriere</span><span class="lpoint">2 points dessus</span></div>
+          </div>
+          <div class="lfiche">
+            <span class="gros-ar" lang="ar" dir="rtl">ك</span>
+            <div class="linfo"><span class="lnom">kaf</span><span class="lson">le son <em>k</em> de &laquo;&nbsp;kilo&nbsp;&raquo;</span><span class="lpoint">aucun point</span></div>
+          </div>
+          <div class="lfiche">
+            <span class="gros-ar" lang="ar" dir="rtl">ل</span>
+            <div class="linfo"><span class="lnom">lam</span><span class="lson">le son <em>l</em></span><span class="lpoint">aucun point</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10 : les cinq dernieres -->
+      <section class="etape" data-etape="10">
+        <span class="eyebrow">Lettres 24 a 28</span>
+        <h2>Les cinq dernieres</h2>
+        <div class="lettres-groupe">
+          <div class="lfiche">
+            <span class="gros-ar" lang="ar" dir="rtl">م</span>
+            <div class="linfo"><span class="lnom">mim</span><span class="lson">le son <em>m</em></span><span class="lpoint">aucun point</span></div>
+          </div>
+          <div class="lfiche">
+            <span class="gros-ar" lang="ar" dir="rtl">ن</span>
+            <div class="linfo"><span class="lnom">noun</span><span class="lson">le son <em>n</em></span><span class="lpoint">1 point dessus</span></div>
+          </div>
+          <div class="lfiche">
+            <span class="gros-ar" lang="ar" dir="rtl">ه</span>
+            <div class="linfo"><span class="lnom">ha</span><span class="lson">un <em>h</em> leger, comme en anglais</span><span class="lpoint">aucun point</span></div>
+          </div>
+          <div class="lfiche">
+            <span class="gros-ar" lang="ar" dir="rtl">و</span>
+            <div class="linfo"><span class="lnom">waw</span><span class="lson">le son <em>w</em>, ou un <em>ou</em> long</span><span class="lpoint">aucun point</span></div>
+          </div>
+          <div class="lfiche">
+            <span class="gros-ar" lang="ar" dir="rtl">ي</span>
+            <div class="linfo"><span class="lnom">ya</span><span class="lson">le son <em>y</em>, ou un <em>i</em> long</span><span class="lpoint">2 points dessous</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 11 : ce que tu retiens -->
+      <section class="etape" data-etape="11">
+        <div class="retenir">
+          <span class="eyebrow">Ce que tu retiens</span>
+          <p class="q">Ce ne sont pas<br>28 dessins a apprendre,<br>mais 18.</p>
+          <p class="r">Les points font le reste. Cette carte te reviendra dans deux jours.</p>
+        </div>
+        <p class="clair">
+          Ouvre un Coran et regarde la premiere ligne. Tu ne la liras pas encore,
+          mais tu vas <strong>reconnaitre des lettres</strong>. C'est exactement
+          ce qu'il fallait obtenir aujourd'hui.
+        </p>
+        <p class="prudence">
+          Les formes changent legerement selon la place de la lettre dans le mot
+          (debut, milieu, fin). C'est la prochaine lecon de ce parcours&nbsp;:
+          une chose a la fois.
+        </p>
+      </section>
+
+      <!-- 12 : fin -->
+      <section class="etape fin" data-etape="12">
+        <svg width="46" height="46" viewBox="0 0 24 24" fill="#c9a84c" aria-hidden="true">
+          <path d="M12 2 L22 12 L12 22 L2 12 Z M5 5 H19 V19 H5 Z"/>
+        </svg>
+        <h2>Lecon terminee</h2>
+        <p data-r="fin-texte">Tu connais maintenant les 28 lettres de l'alphabet arabe.</p>
+        <p data-r="fin-suite" class="suite"></p>
+        <div class="moment-zone" data-r="moment-choix" hidden></div>
+        <a class="btn" href="index.html">Continuer</a>
+        <a class="btn fantome" href="parcours.html">Voir tout le programme</a>
+      </section>
+
+    </div>
+
+    <div class="bas-lecon" data-r="bas" hidden>
+      <button class="btn" data-r="suivant" type="button">Suivant</button>
+    </div>
+
+  </main>
+
+  <footer class="pied">
+    <p class="note-pied">
+      Cette lecon porte sur la <strong>langue</strong>&nbsp;: elle decrit des
+      lettres et des sons, pas des regles religieuses. Les reperes de
+      prononciation aident a demarrer, mais aucun texte ne remplace l'oreille&nbsp;:
+      fais-toi corriger par quelqu'un qui lit bien.
+      Une question personnelle&nbsp;? <a href="https://halalgpt.fr">Pose-la sur halalgpt.fr</a>.
+    </p>
+    <span class="t">Les autres sites de la famille</span>
+    <nav class="freres" aria-label="Sites partenaires">
+      <a href="https://halalgpt.fr"><span class="d">halalgpt.fr</span><span class="q">L'IA musulmane, pour poser une question</span></a>
+      <a href="https://halalcheck.fr"><span class="d">halalcheck.fr</span><span class="q">Scanner un produit en magasin</span></a>
+      <a href="https://voyageshalal.fr"><span class="d">voyageshalal.fr</span><span class="q">Voyager halal, et les horaires de priere</span></a>
+      <a href="https://gohalaltravel.com"><span class="d">gohalaltravel.com</span><span class="q">Halal travel guide (EN)</span></a>
+    </nav>
+  </footer>
+
+</div>
+</template>
+
 <template data-vue="programme">
 <div class="page">
 
@@ -2368,6 +2722,18 @@ a.pc:hover, button.pc:hover { border-color: var(--trait-fort); }
       publiee: true,
       resume: 'Sept gestes, dans l\'ordre, tires d\'un seul hadith. Et les points '
             + 'ou les ecoles ne disent pas la meme chose.'
+    },
+    {
+      id: 'alphabet-arabe',
+      titre: 'L\'alphabet arabe : les 28 lettres',
+      url: 'lecon-alphabet-arabe.html',
+      parcours: 'alphabet',
+      minutes: 7,
+      cartes: 12,
+      acquis: 28,
+      publiee: true,
+      resume: 'Bonne nouvelle : ce ne sont pas 28 dessins a retenir, mais 18. '
+            + 'Ce sont les points qui font le reste.'
     }
   ];
 
@@ -2915,8 +3281,8 @@ function ippRendreChemin(racine) {
   q('compteur-n').textContent = String(n);
   q('compteur-txt').innerHTML = (n === 0)
     ? 'Rien encore.<br>Ta premiere lecon t\'attend.'
-    : (n === 1 ? 'enseignement appris.<br>Avec sa source verifiee.'
-               : 'enseignements appris.<br>Chacun avec sa source verifiee.');
+    : (n === 1 ? 'chose apprise.<br>Continue demain.'
+               : 'choses apprises,<br>lecon apres lecon.');
 
   // --- calendrier du mois en cours ---
   var maintenant = new Date();
@@ -3117,8 +3483,10 @@ function ippRendreOffre(racine) {
         '<div class="chiffres">'
       + '<div class="ch"><span class="n">' + c.lecons + '</span>'
       + '<span class="l">' + (c.lecons === 1 ? 'lecon prete' : 'lecons pretes') + '</span></div>'
-      + '<div class="ch"><span class="n">' + c.parcoursOuverts + ' / ' + c.parcours + '</span>'
-      + '<span class="l">parcours ouverts</span></div>'
+      // On n'annonce pas "4 / 18" : la fraction fait paraitre le site inachevé
+      // alors que l'honnetete se joue ligne par ligne, sur chaque parcours.
+      + '<div class="ch"><span class="n">' + c.parcours + '</span>'
+      + '<span class="l">parcours au programme</span></div>'
       + '<div class="ch"><span class="n">' + c.familles + '</span>'
       + '<span class="l">familles de themes</span></div>'
       + '</div>';
@@ -3224,7 +3592,7 @@ function ippDemarrerLecon(id, racine) {
     var total = IPP.acquis();
     var reste = IPP.publiees().filter(function (l) { return !IPP.estFaite(l.id); }).length;
 
-    var phrase = 'Tu connais maintenant ' + total + ' enseignements, chacun avec sa source. '
+    var phrase = 'Tu as maintenant appris ' + total + ' choses sur ce site. '
                + 'Cette lecon reviendra dans ' + r.pas + (r.pas > 1 ? ' jours.' : ' jour.');
     if (serie > 1) { phrase += ' ' + serie + ' jours d\'affilee.'; }
 
@@ -3433,6 +3801,7 @@ function ippDemarrerDiagnostic(racine, quandFini) {
       "lecon-invocations-matin.html": "invocations-matin",
       "lecon-six-piliers-foi.html": "six-piliers-foi",
       "lecon-priere-gestes.html": "priere-gestes",
+      "lecon-alphabet-arabe.html": "alphabet-arabe",
       "parcours.html": "programme"
   };
 
