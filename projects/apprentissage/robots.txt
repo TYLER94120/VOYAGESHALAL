@@ -1,0 +1,15 @@
+# islampasapas.fr
+
+User-agent: *
+Allow: /
+
+# apercu.html est un fichier genere qui recopie tout le contenu du site en une
+# seule page. Laisse indexe, il ferait du contenu duplique et abimerait le
+# referencement des vraies pages. Il sert uniquement a faire relire le site.
+Disallow: /apercu.html
+
+# Remarque : chemin.html n'est PAS bloque ici, volontairement. Il porte une
+# balise noindex dans son en-tete, et un robot doit pouvoir la lire pour en
+# tenir compte. Bloquer l'acces empecherait justement de voir le noindex.
+
+Sitemap: https://islampasapas.fr/sitemap.xml

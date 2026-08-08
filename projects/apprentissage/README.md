@@ -29,6 +29,9 @@ Version de travail, hebergee provisoirement dans le repo VOYAGESHALAL sur la bra
 | `chemin.html` | La progression : compteur, calendrier des jours, parcours, revisions a venir |
 | `style.css` | Toute la mise en forme (charte de la famille) |
 | `app.js` | Catalogue, niveau, progression, revisions, et le lecteur de lecon commun |
+| `robots.txt` | Ce que les robots peuvent lire, et l'adresse du sitemap |
+| `sitemap.xml` | Les 3 pages de contenu, pour Google |
+| `partage.png` | L'image qui s'affiche quand on partage un lien (1200x630) |
 | `outils/faire-apercu.py` | Genere `apercu.html`, un apercu en un seul fichier (pour relecture) |
 | `apercu.html` | **Fichier genere.** Ne pas modifier a la main, relancer le script |
 
@@ -151,6 +154,35 @@ elle se transforme en parcours carte par carte.
 
 Les parcours sans lecon publiee s'affichent honnetement comme « Bientot ».
 On n'affiche jamais un contenu qui n'existe pas.
+
+## Referencement
+
+Le nom de domaine est **islampasapas.fr** (valide par Mohamed et l'agent
+responsable). A ecrire toujours sans accent : l'accent de « pas a pas »
+n'existe pas dans une adresse internet, et il ne faut jamais laisser croire
+le contraire.
+
+Ce que Google doit voir, et ce qu'il ne doit pas voir :
+
+| Page | Etat | Pourquoi |
+| --- | --- | --- |
+| `index.html` | indexee, canonical `/` | l'accueil |
+| `lecon-al-fatiha.html` | indexee | page de contenu |
+| `lecon-invocations-matin.html` | indexee | page de contenu |
+| `chemin.html` | **noindex, follow** | ecran personnel, vide pour un visiteur |
+| `apercu.html` | **noindex** + bloque dans robots.txt | recopie tout le site : contenu duplique |
+
+Le cas `apercu.html` etait un vrai piege : ce fichier genere contient
+l'integralite des lecons. Indexe, il aurait fait concurrence aux vraies pages
+sur leur propre contenu.
+
+`chemin.html` est **volontairement laisse accessible** aux robots dans
+`robots.txt`. Le bloquer empecherait de lire sa balise `noindex`, et Google
+pourrait le garder dans son index sans jamais pouvoir constater qu'il doit
+l'en retirer. On bloque l'indexation, pas la lecture.
+
+Chaque page de contenu porte aussi ses balises de partage (Open Graph), avec
+`partage.png` en visuel.
 
 ## Regle editoriale — la plus importante
 

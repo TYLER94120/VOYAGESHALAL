@@ -97,6 +97,10 @@ def main() -> int:
     )
 
     sortie = "\n".join([
+        # Ce fichier recopie tout le contenu du site. Indexe, il ferait du
+        # contenu duplique. robots.txt le bloque deja ; cette balise est une
+        # seconde barriere pour le cas ou il serait servi autrement.
+        '<meta name="robots" content="noindex,nofollow">',
         "<!-- FICHIER GENERE - NE PAS MODIFIER A LA MAIN.",
         "     Produit par outils/faire-apercu.py a partir de index.html, chemin.html,",
         "     des lecons, de style.css et de app.js. Pour le mettre a jour :",
