@@ -51,7 +51,17 @@ const FEATURES = [
   { icon: '🧭', title: 'Guides pratiques', titleEn: 'Practical guides', desc: 'Conseils culturels, visa, transports — tout pour voyager l\'esprit libre.', descEn: 'Cultural tips, visas, transport — everything for worry-free travel.' },
 ]
 
+// ⚡ Même cache que /destinations : compter les villes et les continents
+// obligeait à parser 27 Mo de JSON à chaque affichage de la page d'accueil.
+let cacheStats: { totalVilles: number; totalContinents: number } | null = null
+
 function getVillesStats() {
+  if (cacheStats) return cacheStats
+  cacheStats = lireVillesStats()
+  return cacheStats
+}
+
+function lireVillesStats() {
   try {
     const dir = path.join(process.cwd(), 'data', 'villes')
     const files = fs.readdirSync(dir).filter((f) => f.endsWith('.json'))

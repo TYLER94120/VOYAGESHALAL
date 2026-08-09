@@ -41,7 +41,19 @@ export async function generateMetadata(): Promise<Metadata> {
   }
 }
 
+// ⚡ Les 354 fiches villes pèsent 27 Mo. Les relire et les parser à CHAQUE
+// visite coûtait ~280 ms de temps serveur sur cette page et sur l'accueil.
+// Le contenu de data/villes ne change qu'au déploiement : on le lit une
+// fois par processus et on garde le résultat en mémoire.
+let cacheVilles: VilleCard[] | null = null
+
 function getAllVilles(): VilleCard[] {
+  if (cacheVilles) return cacheVilles
+  cacheVilles = lireVilles()
+  return cacheVilles
+}
+
+function lireVilles(): VilleCard[] {
   const dir = path.join(process.cwd(), 'data', 'villes')
   if (!fs.existsSync(dir)) return []
   return fs

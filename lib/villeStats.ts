@@ -18,7 +18,20 @@ export interface VilleCounts {
   image: string | null
 }
 
+// Cache par processus : ces fiches ne changent qu'au deploiement, et
+// certaines pesent plusieurs centaines de Ko (l'accueil en lit six).
+const cache = new Map<string, VilleCounts | null>()
+
 export function getVilleCounts(slug: string, en = false): VilleCounts | null {
+  const cle = `${slug}:${en ? 'en' : 'fr'}`
+  const hit = cache.get(cle)
+  if (hit !== undefined) return hit
+  const res = lireVilleCounts(slug, en)
+  cache.set(cle, res)
+  return res
+}
+
+function lireVilleCounts(slug: string, en = false): VilleCounts | null {
   try {
     const raw = fs.readFileSync(path.join(process.cwd(), 'data', 'villes', `${slug}.json`), 'utf8')
     const v = JSON.parse(raw)
