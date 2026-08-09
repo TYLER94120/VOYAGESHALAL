@@ -621,6 +621,14 @@ export default function VilleDesktop({ ville }: { ville: any }) {
               </button>
             </div>
             )}
+            {/* Nos adresses viennent de sources ouvertes : on dit comment
+                vérifier soi-même plutôt que de promettre une certification. */}
+            {restaurants.length > 0 && !en && (
+              <a href="/blog/restaurant-vraiment-halal-verifier"
+                style={{ display: 'inline-flex', alignItems: 'center', gap: 8, minHeight: 44, marginBottom: 14, fontSize: 13.5, fontWeight: 700, color: 'var(--foret)', textDecoration: 'none' }}>
+                🔎 Ce restaurant est-il vraiment halal ? Les 7 vérifications à faire →
+              </a>
+            )}
             {/* LISTE COMPACTE — lignes denses scannables, zéro faux visuel :
                 nom + type, puce source discrète, une action Maps à droite */}
             {showAllRestos && (

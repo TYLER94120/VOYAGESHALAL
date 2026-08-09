@@ -54,11 +54,19 @@ const LIEUX: Record<string, Lieu> = {
   },
 }
 
+// Guides pratiques qu'on garde comme une fiche de terrain : on les rouvre
+// au restaurant, dans la rue, souvent sans réseau.
+const GUIDES_A_GARDER = new Set([
+  'dire-sans-porc-sans-alcool-langues',
+  'restaurant-vraiment-halal-verifier',
+  'aucun-restaurant-halal-que-faire',
+])
+
 export default function GarderSpot({ slug, titre, en = false }: { slug: string; titre: string; en?: boolean }) {
   // Repli pour les autres guides « où prier » (aéroports, gares, centres
   // commerciaux…) : on garde LE GUIDE, sans nommer un lieu qu'on n'a pas
   // documenté ici. Jamais d'adresse inventée pour remplir un encadré.
-  const lieu: Lieu | undefined = LIEUX[slug] ?? (slug.startsWith('ou-prier-') || slug.startsWith('where-to-pray-')
+  const lieu: Lieu | undefined = LIEUX[slug] ?? (slug.startsWith('ou-prier-') || slug.startsWith('where-to-pray-') || GUIDES_A_GARDER.has(slug)
     ? { nom: titre, ville: '', precision: en ? 'This guide stays in your notebook, readable offline.' : 'Ce guide reste dans ton carnet, consultable hors ligne.' }
     : undefined)
   if (lieu === undefined) return null
@@ -68,7 +76,9 @@ export default function GarderSpot({ slug, titre, en = false }: { slug: string; 
   return (
     <div style={{ marginTop: 30, background: 'var(--nuit)', borderRadius: 20, padding: '20px 22px', color: '#fdfaf3' }}>
       <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 900, fontSize: 19, margin: '0 0 6px', color: '#fff' }}>
-        ⭐ {en ? 'Keep this address' : 'Garde cette adresse'}
+        ⭐ {GUIDES_A_GARDER.has(slug)
+          ? (en ? 'Keep this guide' : 'Garde cette fiche')
+          : (en ? 'Keep this address' : 'Garde cette adresse')}
       </p>
       <p style={{ fontSize: 14, lineHeight: 1.6, color: 'rgba(253,250,243,0.72)', margin: '0 0 14px' }}>
         {en
