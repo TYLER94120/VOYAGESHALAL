@@ -72,4 +72,8 @@ export const BLOG_FR_TO_EN: Record<string, string> = {
   'voyager-pendant-ramadan-guide-complet': '/guides/traveling-during-ramadan',
   'restaurants-halal-paris': '/blog/halal-travel-france-2026',
   'meilleurs-hotels-halal-istanbul': '/hotels/istanbul',
+  // Bloc « manger » (aout 2026)
+  'restaurant-vraiment-halal-verifier': '/blog/is-this-restaurant-really-halal',
+  'aucun-restaurant-halal-que-faire': '/blog/no-halal-restaurant-what-to-eat',
+  'dire-sans-porc-sans-alcool-langues': '/blog/no-pork-no-alcohol-in-12-languages',
 }

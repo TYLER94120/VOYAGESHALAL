@@ -60,6 +60,9 @@ const GUIDES_A_GARDER = new Set([
   'dire-sans-porc-sans-alcool-langues',
   'restaurant-vraiment-halal-verifier',
   'aucun-restaurant-halal-que-faire',
+  'no-pork-no-alcohol-in-12-languages',
+  'is-this-restaurant-really-halal',
+  'no-halal-restaurant-what-to-eat',
 ])
 
 export default function GarderSpot({ slug, titre, en = false }: { slug: string; titre: string; en?: boolean }) {

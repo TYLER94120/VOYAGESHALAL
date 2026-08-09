@@ -1447,6 +1447,189 @@ export const guides: Guide[] = [...guidesFr, ...guidesEn]
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "is-this-restaurant-really-halal",
+    title: "Is this restaurant really halal? 7 checks to make before you order",
+    description: "A halal logo proves nothing on its own. Here are the 7 practical checks, the questions to ask the staff, and the warning signs — for Muslim travellers anywhere.",
+    coverImage: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&q=80",
+    category: 'Practical',
+    readTime: "6 min",
+    publishedAt: '2026-08-10',
+    lang: 'en',
+    tags: ['halal', 'restaurant', 'practical', 'certification'],
+    content: `<p>A shopfront says "HALAL" in big green letters. Is that enough? No. In most countries the word "halal" is not a protected term: anyone can paint it on a window. Here is how to actually check, in a couple of minutes, without being rude to anyone.</p>
+
+<h2>The short version</h2>
+<p>What matters is not the logo, it is <strong>the chain</strong>: where the meat comes from, who certifies it, and what happens in the kitchen. Three politely asked questions at the counter tell you more than any sticker. And the best single signal is who eats there.</p>
+
+<h2>1. Look for the certificate, not the logo</h2>
+<p>A logo is an image — it takes three seconds to copy. A <strong>certificate</strong> is a named document: the venue's name, the certifying body, an expiry date. Serious places display it near the till or in the window. If it is framed on the wall, take ten seconds to read the date. A certificate that expired two years ago tells its own story.</p>
+<p>No document at all is not a deal-breaker. Plenty of good neighbourhood places have no formal certification but buy from a halal butcher everyone locally knows. The next point settles it.</p>
+
+<h2>2. Ask where the meat comes from</h2>
+<p>The question that settles everything, asked plainly: <em>"Where do you get your meat from?"</em> An owner who works with a halal butcher will give you a name, often proudly. An owner who hesitates, stays vague or changes the subject has already answered.</p>
+<p>This is a normal customer question, asked every day. You are not being suspicious — you are asking.</p>
+
+<h2>3. Check what they pour</h2>
+<p>A place serving alcohol while stating its meat is halal is not necessarily dishonest — but the atmosphere no longer matches what a Muslim family is looking for, and that is a question in itself. Look at the drinks menu and the fridges behind the counter before you sit down.</p>
+<p>Watch the <strong>desserts and sauces</strong> too: tiramisu with marsala, white wine sauce, chocolate mousse with liqueur. The main course can be spotless and the dessert not.</p>
+
+<h2>4. Ask about the shared kitchen</h2>
+<p>Second useful question: <em>"Do you also cook pork?"</em> In a mixed kitchen, halal meat may go on the same griddle, the same fryer, the same oil as the bacon on the next order. Some places separate everything scrupulously — they usually say so unprompted. Others have simply never thought about it.</p>
+<p>The classic case: the "halal meat" fast-food counter that also fries products in the same oil.</p>
+
+<h2>5. Be wary of "100% halal" and nothing else</h2>
+<p>The louder the shopfront, the less the shopfront is the answer. "100% halal", "halal guaranteed", "certified meat" — these are words, and they commit no one. Meanwhile many excellent addresses write nothing at all and are known to the whole local community. Marketing is not proof.</p>
+
+<h2>6. Read reviews the right way</h2>
+<p>On Google Maps, don't read the score — read <strong>recent reviews written by Muslim customers</strong>. They are the ones who flag a change of ownership, meat that is no longer the same, or ten years of consistency. A 2019 review says nothing about today's restaurant; venues change hands often.</p>
+<p>Look at customer photos too: they show the real drinks menu and the real room, not the promotional shot.</p>
+
+<h2>7. Trust the room</h2>
+<p>The best signal by far: <strong>who is eating there</strong>. A place full of local Muslim families on a Friday after prayer is worth every certificate. The local community knows, shares the information, and does not stay wrong for long.</p>
+
+<h2>And if you are still unsure?</h2>
+<p>You are allowed to walk out. It is not a big deal and nobody will notice. Doubt that lasts the whole meal ruins the meal anyway. On our city guides, every address carries exactly what our source says — <em>"reported halal · to verify"</em> or <em>"likely halal"</em>. We never write "certified": we certify nothing, we tell you what is known and you check on the ground.</p>
+
+<h2>FAQ</h2>
+<p><strong>Is a halal logo enough?</strong> No. The word is not protected and logos are copied. A dated certificate and the source of the meat are real signals; a logo alone is not.<br/>
+<strong>Can I ask without offending?</strong> Yes. "Where do you buy your meat?" is an everyday customer question. A serious owner answers gladly.<br/>
+<strong>Abroad, without the language?</strong> Show the sentence written in the local language — see <a href="/blog/no-pork-no-alcohol-in-12-languages">our phrases to show the waiter</a>.<br/>
+<strong>And if there is no halal restaurant at all?</strong> It happens often, and it is manageable: see <a href="/blog/no-halal-restaurant-what-to-eat">what to eat when there is nothing halal</a>.<br/>
+<strong>A religious question?</strong> On the meat of the People of the Book, on doubt, or on what to do afterwards, ask <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&utm_medium=passerelle&utm_campaign=verify-halal-en" target="_blank" rel="noopener noreferrer">HalalGPT</a> — we do not issue rulings.</p>
+
+<h2>Help the community</h2>
+<p>Checked an address and it holds up? Or were you disappointed? Share it — whole families will benefit. <a href="/communaute/ajouter">→ Add an address</a></p>`,
+  },
+  {
+    slug: "no-halal-restaurant-what-to-eat",
+    title: "No halal restaurant anywhere: what to eat? A traveller's survival guide",
+    description: "Rural France, rural Japan, Eastern Europe — sometimes there is simply nothing. Here is how to eat properly for a whole week without a single halal address, and without living on crisps.",
+    coverImage: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=1200&q=80",
+    category: 'Practical',
+    readTime: "7 min",
+    publishedAt: '2026-08-10',
+    lang: 'en',
+    tags: ['halal', 'food', 'practical', 'travel'],
+    content: `<p>It happens to everyone: a mountain village, a small Japanese town, a corner of Poland — and not one halal address within fifty kilometres. The good news: you can eat very well in that situation, provided you have a plan. Here is the one used by families who have been travelling halal for years.</p>
+
+<h2>The short version</h2>
+<p>Three habits are enough: <strong>aim for cuisines that are vegetarian by tradition</strong> (they are everywhere and often excellent), <strong>book accommodation with a kitchen</strong> as soon as you stay more than two nights, and <strong>shop at the market</strong> rather than eat out. Fish is your best ally.</p>
+
+<h2>1. Fish changes everything</h2>
+<p>Fish and seafood raise no slaughter question. In a coastal country it is the simplest solution and often the best: grilled, baked, in soup. Only two precautions — ask for it <strong>without white wine</strong> in the sauce (common in France, Italy, Portugal), and watch out for fryers shared with non-halal products.</p>
+<p>The sentence to remember: <em>"Fish please, and no wine in the sauce."</em></p>
+
+<h2>2. Cuisines that are vegetarian by tradition</h2>
+<p>Some cuisines have served complete meat-free dishes for centuries. These are not sad substitutes — they are their classics:</p>
+<p><strong>South Indian</strong>: dosa, idli, vegetarian thali, vegetable curry. Restaurants marked "pure veg" are a traveller's blessing.<br/>
+<strong>Italian</strong>: pizza margherita, pasta al pomodoro, vegetable or seafood pasta. Check the cheese (rennet) if that matters to you.<br/>
+<strong>Lebanese and Mediterranean</strong>: the entire mezze is vegetarian — hummus, moutabal, falafel, tabbouleh, fatayer.<br/>
+<strong>Japanese</strong>: sushi, sashimi, rice, miso soup — mind the mirin and sake in some sauces.<br/>
+<strong>Ethiopian</strong>: the fasting platter ("beyaynetu") is entirely plant-based, generous and outstanding.</p>
+
+<h2>3. A place with a kitchen: the real answer</h2>
+<p>Beyond three days in one spot, self-catering settles the question for good. You buy fish, vegetables, eggs, pasta, and you eat what you want, when you want. Children get their bearings back, the budget halves, and the halal question stops coming up.</p>
+<p>This is the number one habit of families travelling outside big cities. If there is a halal butcher on the way — usually in the first large town — stock up on arrival and freeze.</p>
+
+<h2>4. The supermarket is your friend</h2>
+<p>In the chilled aisle of any European supermarket: eggs, tuna, salmon, cheese, vegetables, bread, fruit, yoghurt. Enough for a real meal — and a well-made picnic beats a bad restaurant.</p>
+<p>Check labels for three things: <strong>gelatine</strong> (sweets, yoghurts, desserts), <strong>animal rennet</strong> in some cheeses, and traces of <strong>alcohol</strong> in industrial pastries. Many countries print "vegetarian" on the pack — the most reliable shortcut when you cannot read the language.</p>
+
+<h2>5. International chains: check country by country</h2>
+<p>A chain that is halal in one country is not in the next. The same brand is halal-certified in Malaysia, the UAE or Türkiye, and not at all in France or Spain. Never assume: check the brand's site <em>for that country</em>, or move on.</p>
+<p>Failing that, these places still have fish options, salads and breakfast.</p>
+
+<h2>6. What you bring from home</h2>
+<p>Regulars permanently keep in their suitcase: dates, dried fruit, tinned tuna, vegetarian instant noodles, a bar of chocolate. Not to live on all week — to never be stuck on a Sunday night in a village where everything is shut.</p>
+
+<h2>7. What to do when it is 9pm and everything is closed</h2>
+<p>Order of priority, tried and tested: the <strong>pizzeria</strong> (a margherita exists everywhere), the <strong>bakery</strong>, the <strong>station supermarket</strong>, <strong>room service in its vegetarian version</strong>, and as a last resort the omelette and chips any café can make — asking for a clean pan.</p>
+
+<h2>What we will not decide for you</h2>
+<p>Some of these situations raise a genuine religious question: meat in a Christian country, what to do after eating something by mistake, necessity under constraint. We do not settle those here — we give you the ground, and for the ruling, ask <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&utm_medium=passerelle&utm_campaign=no-halal-en" target="_blank" rel="noopener noreferrer">HalalGPT</a>.</p>
+
+<h2>FAQ</h2>
+<p><strong>Can you eat vegetarian anywhere safely?</strong> It is the simplest route, with two watch points: shared fryers, and alcohol in sauces and desserts.<br/>
+<strong>Is fish always acceptable?</strong> It raises no slaughter question. Wine in the cooking and shared fryers remain.<br/>
+<strong>How do I ask without the language?</strong> See <a href="/blog/no-pork-no-alcohol-in-12-languages">our phrases to show the waiter in 12 languages</a>.<br/>
+<strong>How do I check an address when there is one?</strong> See <a href="/blog/is-this-restaurant-really-halal">the 7 checks to make</a>.<br/>
+<strong>Where do I find halal addresses in a city?</strong> In <a href="/destinations">our city guides</a> and with the <a href="/autour-de-moi">around me</a> tool.</p>
+
+<h2>Help the community</h2>
+<p>Found a good address somewhere there is "nothing"? That is exactly what others need. <a href="/communaute/ajouter">→ Add an address</a></p>`,
+  },
+  {
+    slug: "no-pork-no-alcohol-in-12-languages",
+    title: "\"No pork, no alcohol\" in 12 languages: the card to show your waiter",
+    description: "The 4 essential sentences for Muslim travellers, written in 12 languages to show directly to the waiter. Save it to your notebook — it works offline.",
+    coverImage: "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=1200&q=80",
+    category: 'Practical',
+    readTime: "4 min",
+    publishedAt: '2026-08-10',
+    lang: 'en',
+    tags: ['halal', 'food', 'languages', 'practical'],
+    content: `<p>The awkward moment: the waiter speaks no English, you speak none of their language, and you need to explain that you do not eat pork and want no alcohol in the sauce. The fix is simple — <strong>don't speak, show</strong>. Here are the four sentences that solve 95% of situations, written in twelve languages.</p>
+
+<h2>How to use it</h2>
+<p>Save this page to your notebook (button below): it stays readable <strong>with no signal at all</strong>. At the restaurant, just turn your screen towards the waiter. It is faster, clearer and more polite than an approximate exchange — and nobody is embarrassed.</p>
+<p>Two tips: show the sentence <strong>before</strong> ordering, not after; and a smile covers the rest.</p>
+
+<h2>The 4 sentences</h2>
+<p>1. <strong>I'm Muslim, I don't eat pork.</strong><br/>
+2. <strong>No alcohol please — no wine in the sauce.</strong><br/>
+3. <strong>Is this halal?</strong><br/>
+4. <strong>Does this contain pork?</strong></p>
+
+<h2>🇫🇷 French</h2>
+<p>1. Je suis musulman / musulmane, je ne mange pas de porc.<br/>2. Sans alcool, s'il vous plaît — pas de vin dans la sauce.<br/>3. Est-ce que c'est halal ?<br/>4. Est-ce qu'il y a du porc dedans ?</p>
+
+<h2>🇪🇸 Spanish</h2>
+<p>1. Soy musulmán / musulmana, no como cerdo.<br/>2. Sin alcohol, por favor — sin vino en la salsa.<br/>3. ¿Esto es halal?<br/>4. ¿Lleva cerdo?</p>
+
+<h2>🇵🇹 Portuguese</h2>
+<p>1. Sou muçulmano / muçulmana, não como carne de porco.<br/>2. Sem álcool, por favor — sem vinho no molho.<br/>3. Isto é halal?<br/>4. Tem carne de porco?</p>
+
+<h2>🇮🇹 Italian</h2>
+<p>1. Sono musulmano / musulmana, non mangio maiale.<br/>2. Senza alcol, per favore — niente vino nella salsa.<br/>3. È halal?<br/>4. C'è maiale?</p>
+
+<h2>🇩🇪 German</h2>
+<p>1. Ich bin Muslim / Muslima, ich esse kein Schweinefleisch.<br/>2. Ohne Alkohol, bitte — kein Wein in der Soße.<br/>3. Ist das halal?<br/>4. Ist da Schweinefleisch drin?</p>
+
+<h2>🇳🇱 Dutch</h2>
+<p>1. Ik ben moslim, ik eet geen varkensvlees.<br/>2. Zonder alcohol, alstublieft — geen wijn in de saus.<br/>3. Is dit halal?<br/>4. Zit er varkensvlees in?</p>
+
+<h2>🇵🇱 Polish</h2>
+<p>1. Jestem muzułmaninem / muzułmanką, nie jem wieprzowiny.<br/>2. Bez alkoholu, proszę — bez wina w sosie.<br/>3. Czy to jest halal?<br/>4. Czy jest tam wieprzowina?</p>
+
+<h2>🇬🇷 Greek</h2>
+<p>1. Είμαι μουσουλμάνος / μουσουλμάνα, δεν τρώω χοιρινό.<br/>2. Χωρίς αλκοόλ, παρακαλώ.<br/>3. Είναι χαλάλ;<br/>4. Έχει χοιρινό;</p>
+
+<h2>🇹🇷 Turkish</h2>
+<p>1. Müslümanım, domuz eti yemiyorum.<br/>2. Alkolsüz olsun lütfen.<br/>3. Bu helal mi?<br/>4. İçinde domuz eti var mı?</p>
+
+<h2>🇯🇵 Japanese</h2>
+<p>1. イスラム教徒です。豚肉は食べられません。<br/>2. お酒は入れないでください。<br/>3. これはハラルですか？<br/>4. 豚肉は入っていますか？</p>
+
+<h2>🇨🇳 Chinese (Mandarin)</h2>
+<p>Worth knowing: the word used in China for halal is <strong>清真 (qīngzhēn)</strong> — look for it on shopfronts, it marks Hui Muslim restaurants.</p>
+<p>1. 我是穆斯林，我不吃猪肉。<br/>2. 请不要放酒。<br/>3. 这是清真的吗？<br/>4. 里面有猪肉吗？</p>
+
+<h2>🇹🇭 Thai</h2>
+<p>1. ผมเป็นมุสลิม ไม่กินหมู (women: ดิฉันเป็นมุสลิม ไม่กินหมู)<br/>2. ไม่ใส่แอลกอฮอล์<br/>3. อันนี้ฮาลาลไหม<br/>4. มีหมูไหม</p>
+
+<h2>Words worth recognising on a menu</h2>
+<p>Even without the language, these words are worth knowing because they signal pork: <strong>bacon, ham, lard, chorizo, pancetta, prosciutto, speck, Schinken, jamón, presunto, 猪肉, 豚肉, หมู</strong>. And for alcohol in the cooking: <strong>wine, marsala, cognac, sake, mirin, beer batter, Weißwein, vino.</strong></p>
+
+<h2>FAQ</h2>
+<p><strong>Should I pronounce it or show it?</strong> Show it. Approximate pronunciation creates more confusion than it solves, especially in Thai, Chinese and Japanese where tone changes meaning.<br/>
+<strong>What if the waiter says yes without understanding?</strong> That is the real risk. Cross-check on the ground: see <a href="/blog/is-this-restaurant-really-halal">the 7 checks to make</a>.<br/>
+<strong>Does it work offline?</strong> Yes, if you save the page to your notebook using the button on this page.<br/>
+<strong>And if there is no halal address at all?</strong> See <a href="/blog/no-halal-restaurant-what-to-eat">the survival guide</a>.</p>
+
+<h2>Help the community</h2>
+<p>A language is missing, or a better wording exists in your country? Tell us — this card will serve thousands of travellers. <a href="/communaute">→ Join the community</a></p>`,
+  },
+  {
     slug: "restaurant-vraiment-halal-verifier",
     title: "Ce restaurant est-il vraiment halal ? Les 7 vérifications à faire",
     description: "Un logo halal ne prouve rien à lui seul. Voici les 7 vérifications concrètes à faire avant de commander, les questions à poser au personnel, et les signaux qui doivent alerter.",
