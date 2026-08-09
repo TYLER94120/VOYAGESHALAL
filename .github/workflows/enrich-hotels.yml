@@ -1,0 +1,44 @@
+name: Enrichir les hôtels (alcool, halal, mosquée)
+
+# Va chercher chez OpenStreetMap ce qu'on ne peut pas inventer : le tag
+# `alcohol` d'un hôtel, sa restauration halal, ses étoiles. Et calcule la
+# distance à pied de la mosquée la plus proche avec nos propres données.
+#
+# La requête n°1 de gohalaltravel.com est « non alcoholic hotels dubai » :
+# sans ces tags, la page ne peut pas répondre honnêtement. Un hôtel qu'OSM
+# ne renseigne pas reste « information non vérifiée » — jamais autre chose.
+#
+# Lancement manuel (onglet Actions), villes en paramètre.
+
+on:
+  workflow_dispatch:
+    inputs:
+      villes:
+        description: "Slugs séparés par une espace (défaut : istanbul dubai)"
+        required: false
+        default: 'istanbul dubai'
+
+permissions:
+  contents: write
+
+jobs:
+  enrichir:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Enrichissement OSM des hôtels
+        run: node scripts/enrich-hotels-osm.mjs ${{ github.event.inputs.villes || 'istanbul dubai' }}
+      - name: Commit & push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/villes
+          if git diff --cached --quiet; then
+            echo "Aucun changement."
+          else
+            git commit -m "data(hotels) : alcool, restauration halal et distance mosquée depuis OSM"
+            git push
+          fi

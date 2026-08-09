@@ -27,3 +27,29 @@ repo du nouveau site.
 - Honnetete absolue : jamais inventer une salle de priere, un resto, une certification.
 - Aucun avis de finance islamique sur aucun site.
 - Palette famille : nuit #0b1a0f, foret #1b4332, or #c9a84c, creme #fdfaf3.
+
+## Dates de référence pour mesurer le CTR
+
+- **9 août 2026, 12h32** — correction des titres et descriptions
+  (383 titres tronqués, noms de villes remis en anglais, chiffres faux).
+  Chiffres AVANT cette correction, 7 jours :
+  voyageshalal.fr 1 970 impressions / 29 clics / 1,5 % ·
+  gohalaltravel.com 441 / 3 / 0,7 % · halalgpt.fr 88 / 3 / 3,4 %.
+  → Remesurer entre le 16 et le 19 août. Ne rien conclure avant.
+
+- **9 août 2026, soir** — pages hôtels d'Istanbul et Dubaï refaites
+  (filtres, distance mosquée à pied, états « non vérifié »).
+  Requêtes réelles à surveiller : « non alcoholic hotels dubai » (32),
+  « islamische hotels in dubai » (21), « halal holidays istanbul » (20),
+  « istanbul islami oteller » (16), « hotel musulman a istanbul » (18).
+
+## À reprendre plus tard (noté, pas fait)
+
+- **Allemand et turc** : 4 langues arrivent spontanément sur le domaine
+  anglais (allemand 21 impressions, turc 26 sur deux requêtes). Signal
+  réel mais faible. Décision prise : on ne traduit RIEN tant qu'Istanbul
+  et Dubaï ne sont pas imprenables — deux versions mal faites abîmeraient
+  les deux marchés. À rouvrir quand le CTR anglais sera remonté.
+- Le premier pays du site anglais est le **Maroc** (69 visites), devant
+  l'Allemagne et les États-Unis : le domaine « anglais » est en réalité
+  mondial. À creuser avant toute décision de langue.

@@ -7,6 +7,7 @@ import type { Ville } from '@/lib/villeTypes'
 import { getDomainSEO, FR_URL, EN_URL } from '@/lib/domain'
 import { dedupeHotels, noteOf, priceRank } from '@/lib/hotelFilter'
 import HotelCTA from '@/components/affiliate/HotelCTA'
+import HotelsSansAlcool from '@/components/hotels/HotelsSansAlcool'
 import JsonLd from '@/components/seo/JsonLd'
 import cityCoords from '@/lib/cityCoords.json'
 
@@ -118,23 +119,32 @@ export default async function HotelsVillePage({ params }: Props) {
         <HotelCTA cityName={ville.nom} variant="banner" />
       </div>
 
-      <ul style={{ listStyle: 'none', padding: 0, display: 'grid', gap: 10 }}>
-        {hotels.slice(0, 60).map((h, i) => (
-          <li key={h.id || i} style={{ padding: '16px 18px', borderRadius: 14, border: '1px solid rgba(27,67,50,0.15)', background: '#fff' }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', gap: 12, flexWrap: 'wrap' }}>
-              <strong style={{ fontSize: 16 }}>{h.nom}</strong>
-              {noteOf(h) != null && <span style={{ fontWeight: 700, color: 'var(--or)' }}>★ {noteOf(h)}</span>}
-            </div>
-            <div style={{ fontSize: 13, opacity: 0.75, marginTop: 4, display: 'flex', gap: 8, flexWrap: 'wrap' }}>
-              {(h.categorie || h.type) && <span>{h.categorie || h.type}</span>}
-              {(h.priceRange) && <span>· {h.priceRange}</span>}
-              {(h.sansAlcool ?? h.sans_alcool) && <span>· {isEN ? 'Alcohol-free' : 'Sans alcool'}</span>}
-              {(h.halalFriendly ?? h.halal_certifie) && <span>· {isEN ? 'Halal-friendly · verify on site' : 'Halal-friendly · à vérifier'}</span>}
-            </div>
-            {h.adresse && <div style={{ fontSize: 13, opacity: 0.6, marginTop: 2 }}>📍 {h.adresse}</div>}
-          </li>
-        ))}
-      </ul>
+      <HotelsSansAlcool hotels={hotels} villeNom={ville.nom} villeSlug={slug} en={isEN} />
+
+      {/* Ce qu'on ne sait pas, et comment le savoir. Un lecteur qui repart
+          avec les bonnes questions vaut mieux qu'un lecteur à qui on a
+          affirmé n'importe quoi. */}
+      <div style={{ marginTop: 26, padding: '18px 20px', borderRadius: 16, background: 'var(--nuit)', color: '#fdfaf3' }}>
+        <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 900, fontSize: 18, margin: '0 0 8px', color: '#fff' }}>
+          {isEN ? 'Before you book: 6 questions to ask the hotel' : 'Avant de réserver : 6 questions à poser à l’hôtel'}
+        </p>
+        <ol style={{ margin: 0, paddingLeft: 20, fontSize: 14, lineHeight: 1.85, color: 'rgba(253,250,243,0.85)' }}>
+          <li>{isEN ? 'Is alcohol served in the bar, the restaurant or the minibar?' : 'L’alcool est-il servi au bar, au restaurant, dans le minibar ?'}</li>
+          <li>{isEN ? 'Is the breakfast — and the meat — halal, and certified by whom?' : 'Le petit-déjeuner et la viande sont-ils halal, et certifiés par qui ?'}</li>
+          <li>{isEN ? 'Is there a prayer mat and a qibla direction in the room?' : 'Y a-t-il un tapis de prière et la direction de la qibla en chambre ?'}</li>
+          <li>{isEN ? 'Does the pool or spa have women-only slots?' : 'La piscine ou le spa ont-ils des créneaux réservés aux femmes ?'}</li>
+          <li>{isEN ? 'Is there a nightclub or an event venue in the building?' : 'Y a-t-il une boîte de nuit ou une salle de fête dans l’établissement ?'}</li>
+          <li>{isEN ? 'Are there family rooms, and can the minibar be emptied on request?' : 'Existe-t-il des chambres familiales, et le minibar peut-il être vidé sur demande ?'}</li>
+        </ol>
+        <p style={{ fontSize: 12.5, lineHeight: 1.6, color: 'rgba(253,250,243,0.55)', margin: '12px 0 0' }}>
+          {isEN
+            ? 'We list what our sources say and nothing more. We never write “certified”: we certify nothing.'
+            : 'Nous affichons ce que disent nos sources, rien de plus. Nous n’écrivons jamais « certifié » : nous ne certifions rien.'}
+        </p>
+        <a href="/communaute/ajouter" style={{ display: 'inline-flex', alignItems: 'center', minHeight: 44, padding: '0 16px', marginTop: 14, borderRadius: 999, border: '1px solid rgba(201,168,76,0.45)', color: 'var(--or-clair)', fontSize: 13.5, fontWeight: 700, textDecoration: 'none' }}>
+          ➕ {isEN ? 'Stayed in one of these hotels? Tell us what you saw' : 'Tu as séjourné dans l’un de ces hôtels ? Dis-nous ce que tu as vu'}
+        </a>
+      </div>
 
       <p style={{ fontSize: 12, opacity: 0.6, marginTop: 20 }}>
         {isEN
