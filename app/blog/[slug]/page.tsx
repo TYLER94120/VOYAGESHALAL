@@ -6,7 +6,8 @@ import { buildMetadata, buildArticleSchema, buildBreadcrumbSchema } from '@/lib/
 import JsonLd from '@/components/seo/JsonLd'
 import EmailCapture from '@/components/ui/EmailCapture'
 import { ShareButtons } from '@/components/ShareButtons'
-import { getDomainSEO, FR_URL, EN_URL } from '@/lib/domain'
+import { getDomainSEO } from '@/lib/domain'
+import { alternatesFor } from '@/lib/hreflang'
 import { updatedAtOf, fmtMonthYear, cityOfArticle } from '@/lib/freshness'
 import CommunityCTA from '@/components/blog/CommunityCTA'
 import GarderSpot from '@/components/blog/GarderSpot'
@@ -27,20 +28,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = getBlogPostBySlug(slug) || guides.find((g) => g.slug === slug)
   if (!post) return {}
 
-  const { siteUrl } = await getDomainSEO()
+  const { isEN } = await getDomainSEO()
+  // Les hreflang du blog pointaient vers le MÊME slug sur l'autre domaine —
+  // or le jumeau anglais porte un autre slug (ou n'existe pas). On annonçait
+  // donc des URL qui redirigent, que Google ignore. alternatesFor() ne
+  // déclare une paire que si les deux pages existent, à leur URL finale.
+  const alt = alternatesFor(`/blog/${post.slug}`, isEN)
   const base = buildMetadata({
     title: post.title,
     description: post.description,
     path: `/blog/${post.slug}`,
     type: 'article',
-    canonical: `${siteUrl}/blog/${post.slug}`,
-    languages: {
-      fr: `${FR_URL}/blog/${post.slug}`,
-      en: `${EN_URL}/blog/${post.slug}`,
-      'x-default': `${EN_URL}/blog/${post.slug}`,
-    },
+    canonical: alt.canonical,
+    languages: alt.languages,
   })
-  const { isEN } = await getDomainSEO()
   const postLang = ('lang' in post ? (post as { lang?: string }).lang : undefined) ?? 'fr'
   if (postLang !== (isEN ? 'en' : 'fr')) return { ...base, robots: { index: false, follow: true } }
   return base

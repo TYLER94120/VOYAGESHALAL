@@ -5,6 +5,7 @@ import { buildMetadata } from '@/lib/seo'
 import IslamicPattern from '@/components/ui/IslamicPattern'
 import BlogClient, { type BlogCard } from '@/components/blog/BlogClient'
 import { getDomainSEO } from '@/lib/domain'
+import { alternatesFor } from '@/lib/hreflang'
 import { updatedAtOf } from '@/lib/freshness'
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -17,6 +18,7 @@ export async function generateMetadata(): Promise<Metadata> {
       ? 'Halal travel articles and tips: hotels, restaurants, mosques, destinations and practical advice for Muslim travelers worldwide.'
       : 'Articles et conseils voyage halal : hôtels, restaurants, mosquées, destinations et astuces pratiques. Tout pour voyager en accord avec vos valeurs islamiques.',
     path: '/blog',
+    ...alternatesFor('/blog', isEN),
   })
 }
 

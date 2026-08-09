@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import { readFileSync } from 'fs'
 import path from 'path'
 import { getDomainSEO } from '@/lib/domain'
+import { alternatesFor } from '@/lib/hreflang'
 import { listSpotsByVille } from '@/lib/prayerSpots'
 import { CATEGORIES, SEUIL_CONFIANCE } from '@/lib/community'
 import ShareSpot from '@/components/community/ShareSpot'
@@ -49,7 +50,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description,
     // Indexé seulement quand le guide a de la matière (≥ 3 spots)
     robots: spots.length >= 3 ? undefined : { index: false, follow: true },
-    alternates: { canonical: `${siteUrl}/guide-vivant/${ville}` },
+    alternates: alternatesFor(`/guide-vivant/${ville}`, isEN),
     openGraph: { title, description, url: `${siteUrl}/guide-vivant/${ville}` },
   }
 }

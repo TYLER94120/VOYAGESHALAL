@@ -827,6 +827,22 @@ export const countries: Country[] = [
   },
 ]
 
+// Nom du continent en anglais (gohalaltravel.com) — les données sont
+// saisies en français, on ne duplique pas le fichier pour sept mots.
+const CONTINENTS_EN: Record<string, string> = {
+  'Afrique': 'Africa',
+  'Asie': 'Asia',
+  'Asie du Sud': 'South Asia',
+  'Asie du Sud-Est': 'Southeast Asia',
+  'Europe': 'Europe',
+  'Europe / Asie': 'Europe / Asia',
+  'Moyen-Orient': 'Middle East',
+}
+
+export function continentLabel(continent: string, en: boolean): string {
+  return en ? (CONTINENTS_EN[continent] ?? continent) : continent
+}
+
 export function getCountryBySlug(slug: string): Country | undefined {
   return countries.find((c) => c.slug === slug)
 }
