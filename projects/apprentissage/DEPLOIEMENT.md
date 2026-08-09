@@ -1,31 +1,76 @@
 # Mettre le site en ligne — la marche a suivre
 
-Pour Mohamed. Aucune connaissance technique demandee, et rien a installer.
+Pour Mohamed, **sur ordinateur**. Le site est **statique** : des fichiers, rien
+d'autre. Pas de base de donnees, pas de serveur a regler, aucune cle a saisir.
 
-Le site est un site **statique** : des fichiers, rien d'autre. Pas de base de
-donnees, pas de serveur a regler, aucune cle a saisir. On le depose, il marche.
+## Ou on en est (mis a jour le 10/08)
 
----
+- Le depot **`islampasapas` existe deja**, cree par Mohamed, **prive et vide**.
+- Le site vit aujourd'hui dans le depot `VOYAGESHALAL`, dossier
+  `projects/apprentissage/`, sur la branche
+  `claude/islamic-learning-platform-l7o7to`.
+- **Je ne peux pas remplir `islampasapas` moi-meme** : mon acces GitHub est
+  verrouille sur le seul depot `voyageshalal`. C'est verifie, ce n'est pas
+  contournable de mon cote.
 
-## 1. GitHub — creer le depot
-
-1. Sur github.com : **New repository**.
-2. Nom : `islampasapas`.
-3. **Coche « Private ».** C'est important : ce dossier contient des notes de
-   travail internes (`POUR-LE-RESPONSABLE.md`). En depot public, tout le monde
-   pourrait les lire. Si tu preferes un depot public, dis-le-moi et je sors ces
-   notes du dossier avant.
-4. **Create repository**.
-5. Puis **Add file → Upload files**, et depose **le contenu** du dossier
-   `projects/apprentissage/`.
-
-**Le point a ne pas rater :** c'est le *contenu* qu'on depose, pas le dossier.
-`index.html` doit se trouver **tout en haut** du depot. S'il finit dans un
-sous-dossier, le site s'affichera a la mauvaise adresse.
+Deux chemins ci-dessous. **Le 1 est le plus propre**, le 2 est le plus rapide.
 
 ---
 
-## 2. Vercel — publier
+## Chemin 1 — remplir le depot islampasapas (recommande)
+
+### Avec git, si tu l'as sur ton PC
+
+```
+git clone https://github.com/TYLER94120/VOYAGESHALAL.git
+cd VOYAGESHALAL
+git checkout claude/islamic-learning-platform-l7o7to
+cd projects/apprentissage
+
+git init
+git add .
+git commit -m "Islam pas a pas - premiere version"
+git branch -M main
+git remote add origin https://github.com/TYLER94120/islampasapas.git
+git push -u origin main
+```
+
+La ligne qui compte est `cd projects/apprentissage` : on part **du contenu du
+dossier**, pour que `index.html` se retrouve **a la racine** du nouveau depot.
+
+### Sans git, par glisser-deposer
+
+1. Recupere le dossier `projects/apprentissage/` sur ton PC.
+2. Va sur `github.com/TYLER94120/islampasapas/upload/main`.
+3. Glisse **le contenu** du dossier (pas le dossier lui-meme) dans la page.
+4. **Commit changes**.
+
+**Le point a ne pas rater :** c'est le *contenu* qu'on depose. `index.html` doit
+etre **tout en haut** du depot. S'il finit dans un sous-dossier, le site
+s'affichera a la mauvaise adresse.
+
+---
+
+## Chemin 2 — ne rien deposer du tout
+
+Vercel sait aller chercher un sous-dossier dans un depot existant.
+
+1. Vercel : **Add New → Project**, importe **`VOYAGESHALAL`**.
+2. **Root Directory** : `projects/apprentissage`
+3. Framework Preset : **Other**. Rien dans « Build Command » ni « Output Directory ».
+4. **Deploy**.
+5. Puis **Settings → Git → Production Branch** :
+   `claude/islamic-learning-platform-l7o7to`, et redeploie.
+
+C'est un **projet Vercel separe** : `voyageshalal.fr` n'est pas touche. Chaque
+fois que je pousse, le site se met a jour tout seul.
+
+L'inconvenient : le site reste loge dans le depot d'un autre projet. A ranger
+un jour, mais ca marche des ce soir.
+
+---
+
+## Puis Vercel — publier (uniquement si tu as pris le chemin 1)
 
 1. Sur vercel.com : **Add New → Project**.
 2. **Import** le depot `islampasapas`.
@@ -42,7 +87,7 @@ seule. Il n'y a plus rien a refaire.
 
 ---
 
-## 3. OVH — brancher islampasapas.fr
+## Enfin OVH — brancher islampasapas.fr (dans les deux cas)
 
 1. Dans Vercel : **le projet → Settings → Domains**.
 2. Ajoute `islampasapas.fr`, puis `www.islampasapas.fr`.
