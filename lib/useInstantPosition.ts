@@ -47,9 +47,23 @@ export function useInstantPosition(en = false) {
     if (resolved.current) return
     resolved.current = true
 
-    // 1) Dernière position (clé partagée, avec reprise des anciennes clés)
     let initial: InstantPos | null = null
     let s: PosSource = 'default'
+
+    // 0) Lieu explicitement demandé dans l'URL (?lat&lng&lieu) — c'est le cas
+    // quand on arrive depuis une fiche ville : on connaît déjà la ville, il
+    // serait absurde de redemander la géolocalisation. Ce choix prime sur
+    // tout le reste, et rien (ni IP ni GPS) ne vient l'écraser ensuite.
+    try {
+      const q = new URLSearchParams(window.location.search)
+      const lat = parseFloat(q.get('lat') || ''), lng = parseFloat(q.get('lng') || '')
+      if (Number.isFinite(lat) && Number.isFinite(lng)) {
+        setPos({ lat, lng, label: q.get('lieu') || (en ? 'Selected city' : 'Ville choisie') }, 'manual')
+        return
+      }
+    } catch { /* noop */ }
+
+    // 1) Dernière position (clé partagée, avec reprise des anciennes clés)
     try {
       for (const k of [LAST_KEY, ...LEGACY_KEYS]) {
         const saved = JSON.parse(localStorage.getItem(k) || 'null')

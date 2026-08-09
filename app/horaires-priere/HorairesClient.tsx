@@ -58,9 +58,22 @@ export default function HorairesClient() {
     if (resolved.current) return
     resolved.current = true
 
-    // 1) Dernière position utilisée
     let initial: Pos | null = null
     let source: typeof posSource = 'default'
+
+    // 0) Ville demandée dans l'URL (?lat&lng&lieu) — on arrive d'une fiche
+    // ville : la ville est connue, on affiche SES horaires sans rien redemander.
+    try {
+      const q = new URLSearchParams(window.location.search)
+      const la = parseFloat(q.get('lat') || ''), ln = parseFloat(q.get('lng') || '')
+      if (Number.isFinite(la) && Number.isFinite(ln)) {
+        setPos({ lat: la, lng: ln, label: q.get('lieu') || (en ? 'Selected city' : 'Ville choisie'), pays: q.get('pays') || undefined })
+        setPosSource('manual')
+        return
+      }
+    } catch { /* noop */ }
+
+    // 1) Dernière position utilisée
     try {
       // Clé partagée entre tous les outils (vh_last_pos) puis clé historique
       for (const k of ['vh_last_pos', LAST_POS_KEY]) {

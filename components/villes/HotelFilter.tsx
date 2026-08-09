@@ -1,6 +1,8 @@
 'use client'
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useMemo, useState } from 'react'
+import SaveButton from '@/components/ui/SaveButton'
+import { favId } from '@/lib/favorites'
 import { useLanguage } from '@/components/i18n/LanguageProvider'
 import {
   type HotelLike, type LatLng, coordsOf, distanceKm, priceRank, noteOf, reviewCountOf,
@@ -26,8 +28,9 @@ const BUDGET: { id: string; fr: string; en: string; min?: number; max?: number }
   { id: 'b4', fr: '200 €+', en: '€200+', min: 200 },
 ]
 
-export default function HotelFilter({ hotels, mosques, restos, center, en: enProp }: {
+export default function HotelFilter({ hotels, mosques, restos, center, en: enProp, villeNom, villeSlug }: {
   hotels: HotelLike[]; mosques: LatLng[]; restos: LatLng[]; center: LatLng | null; en?: boolean
+  villeNom?: string; villeSlug?: string
 }) {
   const { lang } = useLanguage()
   const en = enProp ?? lang === 'en'
@@ -166,6 +169,11 @@ export default function HotelFilter({ hotels, mosques, restos, center, en: enPro
                   <span key={eq.id} style={{ background: 'rgba(27,67,50,0.07)', color: 'var(--foret)', fontSize: 11, fontWeight: 700, borderRadius: 20, padding: '3px 9px' }}>✓ {en ? eq.en : eq.fr}{(eq.id === 'piscineNonMixte' || eq.id === 'plagePrivee') ? ' · HalalBooking' : ''}</span>
                 ))}
               </div>
+              {villeNom && (
+                <div style={{ marginBottom: 8 }}>
+                  <SaveButton en={en} fav={{ id: favId('hotel', villeSlug ?? villeNom, h.nom), kind: 'hotel', nom: String(h.nom ?? ''), villeNom, href: `/destinations/${villeSlug ?? ''}` }} />
+                </div>
+              )}
               <div style={{ display: 'flex', gap: 8 }}>
                 {(h.mapsUrl || e.c) && <a href={h.mapsUrl || `https://maps.google.com/?q=${e.c!.lat},${e.c!.lng}`} target="_blank" rel="noopener noreferrer" style={{ flex: 1, minHeight: 48, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', background: 'var(--halal-bg)', color: 'var(--halal-tx)', borderRadius: 12, fontSize: 13.5, fontWeight: 700, textDecoration: 'none' }}>🗺 {t('Carte', 'Map')}</a>}
                 {(h.halalBookingUrl || h.halal_booking_url) && <a href={h.halalBookingUrl || h.halal_booking_url} target="_blank" rel="sponsored noopener noreferrer" style={{ flex: 1, minHeight: 48, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', background: 'var(--foret)', color: 'var(--creme)', borderRadius: 12, textAlign: 'center', fontSize: 13, fontWeight: 700, textDecoration: 'none' }}>🕌 {t('Réserver halal', 'Book halal')}</a>}

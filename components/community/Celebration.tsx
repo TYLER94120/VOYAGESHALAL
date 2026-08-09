@@ -8,7 +8,7 @@ import { BADGES } from '@/lib/community'
 const COLORS = ['#C9A84C', '#1B4332', '#2d6a4f', '#e9dcbe', '#0B1A0F']
 
 export default function Celebration({
-  points, badges, impact, spotUrl, onClose, claimCta, mediaCta, en = false,
+  points, badges, impact, spotUrl, onClose, claimCta, mediaCta, en = false, enAttente = false,
 }: {
   points: number
   badges: string[]
@@ -20,6 +20,8 @@ export default function Celebration({
   /* Média optionnel après publication : « ajoute une photo / un reel » */
   mediaCta?: React.ReactNode
   en?: boolean
+  /* Coin prière : la contribution attend une vérification humaine */
+  enAttente?: boolean
 }) {
   const [confetti] = useState(() => Array.from({ length: 60 }, (_, i) => ({
     left: Math.random() * 100, delay: Math.random() * 0.6, dur: 1.6 + Math.random() * 1.4,
@@ -45,10 +47,16 @@ export default function Celebration({
         <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: 26, fontWeight: 900, color: '#0b1a0f', margin: '0 0 8px' }}>
           {en ? 'Barak Allahou fik !' : 'Barak Allahou fik !'}
         </h2>
+        {/* On ne dit JAMAIS « en ligne » quand ce n'est pas vrai : un coin
+            prière attend d'être vérifié par un humain avant d'apparaître. */}
         <p style={{ fontSize: 16, color: '#1b4332', lineHeight: 1.6, margin: '0 0 16px' }}>
-          {en
-            ? 'Your spot is live — it will help dozens of travelers find their way. A sadaqa that keeps giving, in shā’ Allāh. 🌱'
-            : 'Ton spot est en ligne — il va aider des dizaines de voyageurs. Une sadaqa jâriya qui continue, in shā’ Allāh. 🌱'}
+          {enAttente
+            ? (en
+              ? 'Thank you! Your spot is waiting to be checked — we verify every prayer place before showing it. You will find it here once it is live, in shā’ Allāh. 🌱'
+              : 'Merci ! Ton spot est en attente de vérification — on vérifie chaque lieu de prière avant de l’afficher. Tu le retrouveras ici une fois publié, in shā’ Allāh. 🌱')
+            : (en
+              ? 'Your spot is live — it will help dozens of travelers find their way. A sadaqa that keeps giving, in shā’ Allāh. 🌱'
+              : 'Ton spot est en ligne — il va aider des dizaines de voyageurs. Une sadaqa jâriya qui continue, in shā’ Allāh. 🌱')}
         </p>
         {points > 0 && (
         <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'rgba(201,168,76,0.18)', borderRadius: 999, padding: '10px 18px', marginBottom: 14 }}>
@@ -74,9 +82,11 @@ export default function Celebration({
           ) : null
         })}
         <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginTop: 8 }}>
-          <Link href={spotUrl} style={{ display: 'block', minHeight: 56, lineHeight: '56px', borderRadius: 18, background: 'var(--foret, #1B4332)', color: '#fff', fontWeight: 800, fontSize: 16, textDecoration: 'none' }}>
-            {en ? 'See my spot →' : 'Voir mon spot →'}
-          </Link>
+          {!enAttente && (
+            <Link href={spotUrl} style={{ display: 'block', minHeight: 56, lineHeight: '56px', borderRadius: 18, background: 'var(--foret, #1B4332)', color: '#fff', fontWeight: 800, fontSize: 16, textDecoration: 'none' }}>
+              {en ? 'See my spot →' : 'Voir mon spot →'}
+            </Link>
+          )}
           <button onClick={onClose} style={{ minHeight: 56, borderRadius: 18, border: '1.5px solid rgba(27,67,50,0.3)', background: 'transparent', color: '#1b4332', fontWeight: 700, fontSize: 15, cursor: 'pointer' }}>
             {en ? '+ Add another spot' : '+ Ajouter un autre spot'}
           </button>

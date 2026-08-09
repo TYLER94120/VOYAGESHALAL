@@ -393,6 +393,8 @@ export async function createAnonSpot(
     lat: input.lat, lng: input.lng,
     description: input.note?.slice(0, 200),
     source: 'community',
+    // Un coin prière part EN ATTENTE de vérification (voir villeTypes).
+    status: input.categorie === 'coin_priere' ? 'pending' : 'published',
   } as Parameters<typeof saveSpotRaw>[0])
   if (!spot) return null
   const r = getRedis()!
@@ -400,7 +402,7 @@ export async function createAnonSpot(
   await r.set(`vh:spot:${spot.id}`, spot)
   const claimKey = `${Date.now().toString(36)}${Math.random().toString(36).slice(2, 12)}`
   await r.set(`vh:spot:${spot.id}:claim`, claimKey, { ex: 60 * 60 * 48 })
-  await pushFeed({ type: 'spot', pseudo: 'Un voyageur', spotId: spot.id, spotNom: spot.nom, spotSlug: spot.slug, villeSlug: spot.villeSlug, villeNom: spot.villeNom, categorie: spot.categorie ?? 'autre', date: new Date().toISOString() })
+  if (spot.status === 'published') await pushFeed({ type: 'spot', pseudo: 'Un voyageur', spotId: spot.id, spotNom: spot.nom, spotSlug: spot.slug, villeSlug: spot.villeSlug, villeNom: spot.villeNom, categorie: spot.categorie ?? 'autre', date: new Date().toISOString() })
   return { spot, claimKey }
 }
 
@@ -434,6 +436,7 @@ export async function createCommunitySpot(
     description: input.note?.slice(0, 200),
     photo: input.photo?.slice(0, 300),
     source: 'community',
+    status: input.categorie === 'coin_priere' ? 'pending' : 'published',
   } as Parameters<typeof saveSpotRaw>[0])
   if (!spot) return null
   const r = getRedis()!

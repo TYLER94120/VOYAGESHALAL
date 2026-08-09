@@ -39,8 +39,9 @@ export async function POST(request: NextRequest) {
       villeSlug: city.slug, villeNom: city.nom,
     })
     if (!anon) return NextResponse.json({ error: 'Base indisponible' }, { status: 500 })
-    // Push « pépite près de toi » (25 km) — best-effort, jamais bloquant
-    import('@/lib/spotPush').then((m) => m.notifySpotNearby(anon.spot)).catch(() => {})
+    // Push « pépite près de toi » (25 km) — best-effort, jamais bloquant.
+    // Jamais pour une contribution en attente de vérification.
+    if (anon.spot.status === 'published') import('@/lib/spotPush').then((m) => m.notifySpotNearby(anon.spot)).catch(() => {})
     return NextResponse.json({
       ok: true, anon: true, spot: anon.spot, claimKey: anon.claimKey,
       pointsGagnes: 0, nouveauxBadges: [], impact: 0,
@@ -55,7 +56,7 @@ export async function POST(request: NextRequest) {
     typeLieu: categorie === 'coin_priere' ? 'autre' : 'autre',
   })
   if (!res) return NextResponse.json({ error: 'Base indisponible' }, { status: 500 })
-  import('@/lib/spotPush').then((m) => m.notifySpotNearby(res.spot)).catch(() => {})
+  if (res.spot.status === 'published') import('@/lib/spotPush').then((m) => m.notifySpotNearby(res.spot)).catch(() => {})
   const impact = await impactOf(user.id)
   return NextResponse.json({
     ok: true, spot: res.spot, pointsGagnes: res.pointsGagnes, nouveauxBadges: res.nouveauxBadges,

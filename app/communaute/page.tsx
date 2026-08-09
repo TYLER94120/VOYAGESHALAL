@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { getDomainSEO } from '@/lib/domain'
+import { alternatesFor } from '@/lib/hreflang'
 import HubClient from '@/components/community/HubClient'
 import IslamicPattern from '@/components/ui/IslamicPattern'
 
@@ -12,7 +13,7 @@ export async function generateMetadata(): Promise<Metadata> {
     description: isEN
       ? 'The network where Muslim travelers share real knowledge: prayer spots, halal restaurants, hidden gems. Every contribution helps travelers — a sadaqa jariya.'
       : 'Le réseau où les voyageurs musulmans partagent le vrai savoir : coins prière, restos halal, pépites. Chaque contribution aide des voyageurs — une sadaqa jâriya.',
-    alternates: { canonical: `${siteUrl}/communaute` },
+    alternates: alternatesFor('/communaute', isEN),
   }
 }
 

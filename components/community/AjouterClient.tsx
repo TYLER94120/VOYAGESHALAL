@@ -50,7 +50,7 @@ export default function AjouterClient() {
   const [pendingPhoto, setPendingPhoto] = useState<string | null>(null)
   const [pendingVideo, setPendingVideo] = useState<{ payload: string; videoTexte?: string; videoDebut?: number; videoFin?: number } | null>(null)
   const [reelOpen, setReelOpen] = useState(false)
-  const [done, setDone] = useState<{ points: number; badges: string[]; impact: number; url: string; anon?: boolean; spotId?: string; claimKey?: string } | null>(null)
+  const [done, setDone] = useState<{ points: number; badges: string[]; impact: number; url: string; anon?: boolean; spotId?: string; claimKey?: string; enAttente?: boolean } | null>(null)
 
   // Étape 2 : GPS précis automatique + lieux nommés à proximité (OpenStreetMap,
   // vrais noms — on TAPE, on n'écrit pas)
@@ -109,7 +109,7 @@ export default function AjouterClient() {
         fetch('/api/community/enrich', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) }).catch(() => {})
         setMediaDone(true)
       }
-      setDone({ points: j.pointsGagnes, badges: j.nouveauxBadges ?? [], impact: j.impact ?? 0, url: j.url, anon: j.anon === true, spotId: j.spot?.id, claimKey: j.claimKey })
+      setDone({ points: j.pointsGagnes, badges: j.nouveauxBadges ?? [], impact: j.impact ?? 0, url: j.url, anon: j.anon === true, spotId: j.spot?.id, claimKey: j.claimKey, enAttente: j.spot?.status === 'pending' })
       await refresh()
     } catch (ex) {
       const msg = String((ex as Error).message)
@@ -333,7 +333,7 @@ export default function AjouterClient() {
           </div>
         </div>
       )}
-      {done && <Celebration points={done.points} badges={done.badges} impact={done.impact} spotUrl={done.url} onClose={reset} en={en}
+      {done && <Celebration points={done.points} badges={done.badges} impact={done.impact} spotUrl={done.url} onClose={reset} en={en} enAttente={done.enAttente === true}
         mediaCta={done.spotId && !mediaDone ? (
           <button onClick={() => setMediaOpen(true)}
             style={{ display: 'block', width: '100%', minHeight: 54, borderRadius: 16, border: '2px solid rgba(27,67,50,0.35)', background: '#fff', color: '#1b4332', fontWeight: 900, fontSize: 15, cursor: 'pointer', marginBottom: 12 }}>

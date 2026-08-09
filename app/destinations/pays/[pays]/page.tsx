@@ -2,12 +2,13 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import { countries, getCountryBySlug } from '@/lib/countriesData'
+import { countries, getCountryBySlug, continentLabel } from '@/lib/countriesData'
 import { buildMetadata, buildBreadcrumbSchema, buildFAQSchema } from '@/lib/seo'
 import JsonLd from '@/components/seo/JsonLd'
 import EmailCapture from '@/components/ui/EmailCapture'
 import { relatedForCountry } from '@/lib/relatedContent'
 import { getDomainSEO } from '@/lib/domain'
+import { alternatesFor } from '@/lib/hreflang'
 import { countryEn, countryValueEn } from '@/lib/poiI18n'
 import cityCoords from '@/lib/cityCoords.json'
 
@@ -33,6 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? `Halal travel guide for ${nomEN}: halal restaurants, mosques, hotels and practical tips for Muslim travelers.`
       : `${country.shortDescription} Restaurants halal, mosquées, hôtels et conseils pratiques pour voyager en ${country.name}.`,
     path: `/destinations/pays/${country.slug}`,
+    ...alternatesFor(`/destinations/pays/${country.slug}`, isEN),
     type: 'article',
   })
 }
@@ -64,6 +66,11 @@ export default async function CountryPage({ params }: Props) {
   const country = getCountryBySlug(pays)
   if (!country) notFound()
   const { isEN: en } = await getDomainSEO()
+
+  // Les 8 autres pays du même continent (ordre stable, jamais aléatoire)
+  const voisins = countries
+    .filter((c) => c.continent === country.continent && c.slug !== country.slug)
+    .slice(0, 8)
   const nomLoc = countryEn(country.name, en)
 
   const breadcrumbSchema = buildBreadcrumbSchema([
@@ -115,7 +122,7 @@ export default async function CountryPage({ params }: Props) {
             <div className="flex items-center gap-3 mb-3">
               <span className="text-3xl">{country.flagEmoji}</span>
               <span style={{ color: '#c9a870' }} className="text-xs font-semibold uppercase tracking-[0.2em]">
-                {country.continent}
+                {continentLabel(country.continent, en)}
               </span>
             </div>
             <h1
@@ -315,6 +322,28 @@ export default async function CountryPage({ params }: Props) {
                     </li>
                   ))}
                 </ul>
+              </div>
+            )}
+
+            {/* 🔗 Pays du même continent — maillage interne.
+                Sans ce bloc, un pays sans fiche ville (Zanzibar) n'était
+                pointé par AUCUNE page : Google l'explorait à peine. */}
+            {voisins.length > 0 && (
+              <div className="bg-white rounded-2xl p-5 border border-gray-100">
+                <h2 className="font-bold text-xs text-gray-500 uppercase tracking-[0.15em] mb-3">
+                  {en ? `Also in ${continentLabel(country.continent, true)}` : `Aussi en ${country.continent}`}
+                </h2>
+                <div className="flex flex-wrap gap-2">
+                  {voisins.map((v) => (
+                    <Link
+                      key={v.slug}
+                      href={`/destinations/pays/${v.slug}`}
+                      className="inline-flex items-center gap-1.5 bg-[#faf8f4] border border-gray-200 hover:border-[#c9a870] text-gray-700 hover:text-[#1a3a2a] px-3 rounded-full text-xs font-medium transition-all min-h-[44px]"
+                    >
+                      <span aria-hidden>{v.flagEmoji}</span>{v.name}
+                    </Link>
+                  ))}
+                </div>
               </div>
             )}
 

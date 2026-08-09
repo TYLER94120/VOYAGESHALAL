@@ -4,6 +4,7 @@ import { readFileSync } from 'fs'
 import path from 'path'
 import { listSpotsByVille, LIEU_LABELS } from '@/lib/prayerSpots'
 import { getDomainSEO } from '@/lib/domain'
+import { alternatesFor } from '@/lib/hreflang'
 import cityCoords from '@/lib/cityCoords.json'
 import JsonLd from '@/components/seo/JsonLd'
 
@@ -37,7 +38,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const description = isEN
     ? `Prayer spots in ${nom}: malls, restaurants, airports and stations where Muslim travelers can pray. Shared, community-confirmed.`
     : `Coins prière à ${nom} : centres commerciaux, restaurants, aéroports et gares où prier en voyage. Partagés et confirmés par la communauté.`
-  return { title: { absolute: title }, description, alternates: { canonical: `${siteUrl}/priere/${ville}` }, openGraph: { url: `${siteUrl}/priere/${ville}` } }
+  return { title: { absolute: title }, description, alternates: alternatesFor(`/priere/${ville}`, isEN), openGraph: { url: `${siteUrl}/priere/${ville}` } }
 }
 
 export default async function PrayerVillePage({ params }: Props) {

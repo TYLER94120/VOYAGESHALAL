@@ -39,6 +39,35 @@ export async function listAllSpots(): Promise<PrayerSpot[]> {
   return spots.filter((s): s is PrayerSpot => !!s && s.status === 'published')
 }
 
+/**
+ * Liste BRUTE, tous statuts confondus — réservée à l'administration.
+ * C'est le seul endroit d'où l'on voit les contributions en attente
+ * (`pending`) : elles n'apparaissent nulle part sur le site public tant
+ * qu'un humain ne les a pas vérifiées.
+ */
+export async function listAllSpotsRaw(): Promise<PrayerSpot[]> {
+  const r = getRedis(); if (!r) return []
+  const ids = (await r.smembers(IDS)) as string[]
+  if (!ids.length) return []
+  const spots = await Promise.all(ids.map((id) => r.get(spotKey(id)) as Promise<PrayerSpot | null>))
+  return spots.filter((s): s is PrayerSpot => !!s)
+}
+
+export async function getSpotById(id: string): Promise<PrayerSpot | null> {
+  const r = getRedis(); if (!r) return null
+  return ((await r.get(spotKey(id))) as PrayerSpot | null) ?? null
+}
+
+/** Met à jour un spot (validation d'une contribution, masquage). */
+export async function updateSpot(id: string, patch: Partial<PrayerSpot>): Promise<PrayerSpot | null> {
+  const r = getRedis(); if (!r) return null
+  const spot = (await r.get(spotKey(id))) as PrayerSpot | null
+  if (!spot) return null
+  const maj = { ...spot, ...patch, id: spot.id }
+  await r.set(spotKey(id), maj)
+  return maj
+}
+
 export async function listSpotsByVille(villeSlug: string): Promise<PrayerSpot[]> {
   const r = getRedis(); if (!r) return []
   const ids = (await r.smembers(villeKey(villeSlug))) as string[]

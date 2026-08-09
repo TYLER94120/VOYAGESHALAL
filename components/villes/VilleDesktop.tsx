@@ -13,12 +13,14 @@ import HotelCTA from '@/components/affiliate/HotelCTA'
 import HotelFilter from '@/components/villes/HotelFilter'
 import { coordsOf, type LatLng } from '@/lib/hotelFilter'
 import FavButton from '@/components/ui/FavButton'
+import SaveButton from '@/components/ui/SaveButton'
 import PlacePhoto from '@/components/ui/PlacePhoto'
 import { favId } from '@/lib/favorites'
 import { getCityGuide } from '@/lib/cityGuides'
 import GuideCarousel from '@/components/villes/GuideCarousel'
 import CitySpots from '@/components/villes/CitySpots'
 import StickySections from '@/components/villes/StickySections'
+import { HalalScoreBadge } from '@/components/HalalScoreBadge'
 
 // Sections guidées (refonte « Netflix » des fiches) — libellés orientés usage
 const TABS = [
@@ -58,6 +60,12 @@ const CATEGORY_GRADIENT: Record<string, [string, string]> = {
 const DEFAULT_GRADIENT: [string, string] = ['#0b1a0f', '#2d6a4f']
 
 export default function VilleDesktop({ ville }: { ville: any }) {
+  // Contexte ville passé aux outils : ils s'ouvrent SUR cette ville au lieu
+  // de redemander la géolocalisation (on la connaît déjà).
+  const co = ville.coordonnees ?? {}
+  const ctxVille = co.lat != null && co.lng != null
+    ? `?lat=${co.lat}&lng=${co.lng}&lieu=${encodeURIComponent(ville.nom)}${ville.pays ? `&pays=${encodeURIComponent(ville.pays)}` : ''}`
+    : ''
   const [activeTab, setActiveTab] = useState<string | null>(null) // onglet surligné (ancres)
   const [activeFilter, setActiveFilter] = useState('Tous')
   // Poids DOM / Core Web Vitals : on rend 20 restaurants (indexés en SSR),
@@ -217,10 +225,21 @@ export default function VilleDesktop({ ville }: { ville: any }) {
               <FavButton size={22} fav={{ id: favId('ville', ville.slug ?? ville.nom), kind: 'ville', nom: ville.nom, href: `/destinations/${ville.slug ?? ''}` }} />
             </span>
           </h1>
+          {/* Le score est CLIQUABLE : il montre les chiffres d'où il sort.
+              Un 9.3/10 sans explication, personne n'y croit. */}
           {halalScore != null && (
-            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '7px', marginTop: '14px', padding: '7px 16px', borderRadius: '30px', background: 'rgba(201,168,76,0.18)', border: '1px solid rgba(201,168,76,0.5)', color: 'var(--or-clair)', fontSize: '13px', fontWeight: 700 }}>
-              <span style={{ width: 7, height: 7, borderRadius: '50%', background: '#3BD17A' }} /> ✦ {halalScore}/10 · Halal Score
-            </span>
+            <div style={{ display: 'flex', justifyContent: 'center', marginTop: 14 }}>
+              <HalalScoreBadge
+                score={halalScore}
+                ville={ville.nom}
+                stats={{
+                  mosquees: ville.statistiques?.mosquees ?? mosquees.length,
+                  restaurants: restaurantsTotal,
+                  hotels: hotels.length,
+                  pctMusulmans: ville.statistiques?.habitants_musulmans_pct,
+                }}
+              />
+            </div>
           )}
         </div>
       </section>
@@ -249,13 +268,29 @@ export default function VilleDesktop({ ville }: { ville: any }) {
               une barre compacte prend le relais (fiche = 46 écrans) */}
           <StickySections ancre="ville-onglets" en={en} />
 
-          {/* Guide PDF gratuit (aimant à emails, doré) + Vols */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px', marginTop: '10px' }}>
+          {/* Guide PDF gratuit (aimant à emails). Le bouton « Vols » qui
+              était à côté a été retiré : lien non affilié, il faisait juste
+              sortir le visiteur du site sans rien rapporter. */}
+          <div style={{ display: 'grid', gap: '12px', marginTop: '10px' }}>
             <EbookButton ville={ville} />
-            <a href={en ? `https://www.skyscanner.net/flights-to/${ville.slug ?? ville.nom}` : `https://www.skyscanner.fr/vols-vers/${ville.slug ?? ville.nom}`} target="_blank" rel="noopener noreferrer" className="ville-action">
-              <span className="ico">✈️</span>{en ? <>Flights to {ville.nom}</> : <>Vols vers {ville.nom}</>}
-            </a>
           </div>
+
+          {/* Outils de prière ouverts DIRECTEMENT sur la ville (coordonnées
+              passées en paramètre) — plus de « autorisez la géolocalisation »
+              alors qu'on sait déjà de quelle ville on parle. */}
+          {ctxVille && (
+            <div style={{ display: 'flex', gap: 10, marginTop: 10, flexWrap: 'wrap', justifyContent: 'center' }}>
+              {[
+                { href: `/horaires-priere${ctxVille}`, ico: '🕐', txt: en ? `Prayer times in ${ville.nom}` : `Horaires de prière à ${ville.nom}` },
+                { href: `/qibla${ctxVille}`, ico: '🧭', txt: en ? `Qibla from ${ville.nom}` : `Qibla depuis ${ville.nom}` },
+              ].map((t) => (
+                <a key={t.href} href={t.href}
+                  style={{ display: 'inline-flex', alignItems: 'center', gap: 8, minHeight: 44, padding: '0 16px', borderRadius: 999, background: 'rgba(255,255,255,0.07)', border: '1px solid rgba(201,168,76,0.35)', color: 'var(--or-clair)', fontSize: 13.5, fontWeight: 700, textDecoration: 'none' }}>
+                  <span>{t.ico}</span>{t.txt}
+                </a>
+              ))}
+            </div>
+          )}
         </div>
       </div>
 
@@ -316,17 +351,19 @@ export default function VilleDesktop({ ville }: { ville: any }) {
               <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: 22, fontWeight: 900, color: '#fff', margin: 0 }}>
                 🕌 {en ? `Where to pray in ${ville.nom}` : `Où prier à ${ville.nom}`}
               </h2>
-              <a href="/mosquee-proche" style={{ display: 'inline-flex', alignItems: 'center', minHeight: 44, fontSize: 14, fontWeight: 800, color: 'var(--or)', textDecoration: 'none' }}>
-                📍 {en ? 'Nearest to me (GPS) →' : 'La plus proche de moi (GPS) →'}
+              <a href={`/mosquee-proche${ctxVille}`} style={{ display: 'inline-flex', alignItems: 'center', minHeight: 44, fontSize: 14, fontWeight: 800, color: 'var(--or)', textDecoration: 'none' }}>
+                📍 {en ? `All mosques in ${ville.nom} →` : `Toutes les mosquées de ${ville.nom} →`}
               </a>
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 10 }}>
               {mosquees.slice(0, 3).map((m: any, i: number) => (
-                <a key={i} href={m.mapsUrl} target="_blank" rel="noopener noreferrer"
-                  style={{ background: 'rgba(255,255,255,0.07)', border: '1px solid rgba(201,168,76,0.3)', borderRadius: 14, padding: '12px 14px', textDecoration: 'none', display: 'block' }}>
-                  <p style={{ fontWeight: 700, fontSize: 14.5, color: '#fdfaf3', margin: '0 0 3px', lineHeight: 1.3 }}>🕌 {m.nom}</p>
-                  <p style={{ fontSize: 12, color: 'rgba(253,250,243,0.6)', margin: 0 }}>🗺 {en ? 'Open in Maps' : 'Ouvrir dans Maps'} · {m.source === 'osm' ? 'OpenStreetMap' : ''}</p>
-                </a>
+                <div key={i} style={{ background: 'rgba(255,255,255,0.07)', border: '1px solid rgba(201,168,76,0.3)', borderRadius: 14, padding: '12px 14px' }}>
+                  <a href={m.mapsUrl} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', display: 'block' }}>
+                    <p style={{ fontWeight: 700, fontSize: 14.5, color: '#fdfaf3', margin: '0 0 3px', lineHeight: 1.3 }}>🕌 {m.nom}</p>
+                    <p style={{ fontSize: 12, color: 'rgba(253,250,243,0.6)', margin: '0 0 9px' }}>🗺 {en ? 'Open in Maps' : 'Ouvrir dans Maps'} · {m.source === 'osm' ? 'OpenStreetMap' : ''}</p>
+                  </a>
+                  <SaveButton en={en} fav={{ id: favId('mosquee', ville.slug ?? ville.nom, m.nom), kind: 'mosquee', nom: m.nom, villeNom: ville.nom, href: `/destinations/${ville.slug ?? ''}` }} />
+                </div>
               ))}
             </div>
             {mosquees.length > 3 && (
@@ -435,7 +472,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
                   <div style={{ padding: '16px 20px 20px' }}>
                     <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 8 }}>
                       <h3 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 800, fontSize: 22, color: 'var(--nuit)', margin: 0 }}>{it.nom}</h3>
-                      <FavButton size={17} fav={{ id: favId(detail.kind, ville.slug ?? ville.nom, it.nom), kind: detail.kind, nom: it.nom, villeNom: ville.nom, href: `/destinations/${ville.slug ?? ''}` }} />
+                      <SaveButton en={en} fav={{ id: favId(detail.kind, ville.slug ?? ville.nom, it.nom), kind: detail.kind, nom: it.nom, villeNom: ville.nom, href: `/destinations/${ville.slug ?? ''}` }} />
                     </div>
                     <p style={{ fontSize: 12.5, color: 'var(--texte-2)', margin: '2px 0 10px' }}>
                       {detail.kind === 'resto' ? enLabel(cat, en) : detail.kind === 'mosquee' ? (en ? 'Mosque' : 'Mosquée') : detail.kind === 'hotel' ? `${en ? 'Hotel' : 'Hôtel'}${it.etoiles ? ` ${'★'.repeat(Math.min(5, it.etoiles))}` : ''}` : (it.categorie || (en ? 'Activity' : 'Activité'))}
@@ -604,10 +641,13 @@ export default function VilleDesktop({ ville }: { ville: any }) {
                         {(r.score ?? r.note) != null ? ` · ★ ${r.score ?? r.note}` : ''}
                       </p>
                     </div>
-                    <a href={r.mapsUrl} target="_blank" rel="noopener noreferrer" onClick={() => toast('Ouverture dans Google Maps…', 'success')}
-                      style={{ flexShrink: 0, minHeight: 44, display: 'inline-flex', alignItems: 'center', padding: '0 14px', background: 'var(--halal-bg)', color: 'var(--halal-tx)', borderRadius: 10, fontSize: 12.5, fontWeight: 700, textDecoration: 'none', whiteSpace: 'nowrap' }}>
-                      🗺 {en ? 'Maps' : 'Maps'}
-                    </a>
+                    <div style={{ flexShrink: 0, display: 'flex', gap: 8, alignItems: 'center' }}>
+                      <SaveButton en={en} fav={{ id: favId('resto', ville.slug ?? ville.nom, r.nom), kind: 'resto', nom: r.nom, villeNom: ville.nom, href: `/destinations/${ville.slug ?? ''}` }} />
+                      <a href={r.mapsUrl} target="_blank" rel="noopener noreferrer" onClick={() => toast('Ouverture dans Google Maps…', 'success')}
+                        style={{ minHeight: 44, display: 'inline-flex', alignItems: 'center', padding: '0 14px', background: 'var(--halal-bg)', color: 'var(--halal-tx)', borderRadius: 10, fontSize: 12.5, fontWeight: 700, textDecoration: 'none', whiteSpace: 'nowrap' }}>
+                        🗺 Maps
+                      </a>
+                    </div>
                   </div>
                 )
               })}
@@ -646,7 +686,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
             <p style={{ color: 'var(--texte-2)', fontSize: 14, lineHeight: 1.6, margin: 0 }}>{en ? `Halal-friendly stays in ${ville.nom} are on the way.` : `Les hébergements halal-friendly de ${ville.nom} arrivent bientôt.`}</p>
           </div>
         ) : (
-          <HotelFilter hotels={hotels} mosques={mosquesLL} restos={restosLL} center={centerLL} en={en} />
+          <HotelFilter hotels={hotels} mosques={mosquesLL} restos={restosLL} center={centerLL} en={en} villeNom={ville.nom} villeSlug={ville.slug} />
         )}
         </section>
 
@@ -667,7 +707,10 @@ export default function VilleDesktop({ ville }: { ville: any }) {
                 </div>
                 <span style={{ display: 'inline-block', fontSize: '11px', color: 'var(--texte-2)', marginBottom: '6px' }}>{a.categorie} · {a.duree}</span>
                 <p style={{ fontSize: '13px', color: 'var(--texte-2)', lineHeight: 1.6, marginBottom: '12px' }}>{a.description}</p>
-                <a href={a.mapsUrl} target="_blank" rel="noopener noreferrer" onClick={() => toast('Ouverture dans Google Maps…', 'success')} style={{ display: 'inline-flex', alignItems: 'center', minHeight: 48, padding: '0 16px', background: 'var(--halal-bg)', color: 'var(--halal-tx)', borderRadius: '11px', fontSize: '13px', fontWeight: 700, textDecoration: 'none' }}>🗺 Maps →</a>
+                <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', alignItems: 'center' }}>
+                  <a href={a.mapsUrl} target="_blank" rel="noopener noreferrer" onClick={() => toast('Ouverture dans Google Maps…', 'success')} style={{ display: 'inline-flex', alignItems: 'center', minHeight: 48, padding: '0 16px', background: 'var(--halal-bg)', color: 'var(--halal-tx)', borderRadius: '11px', fontSize: '13px', fontWeight: 700, textDecoration: 'none' }}>🗺 Maps →</a>
+                  <SaveButton en={en} fav={{ id: favId('activite', ville.slug ?? ville.nom, a.nom), kind: 'activite', nom: a.nom, villeNom: ville.nom, href: `/destinations/${ville.slug ?? ''}` }} />
+                </div>
                 <SourceLine item={a} />
               </div>
             ))}
