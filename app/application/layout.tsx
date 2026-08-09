@@ -8,11 +8,11 @@ export async function generateMetadata(): Promise<Metadata> {
   const { isEN, brand, siteUrl } = await getDomainSEO()
   const url = `${siteUrl}${isEN ? '/app' : '/application'}`
   const title = isEN
-    ? `The ${brand} App — Halal Restaurants, Mosques & Prayer Times`
-    : `L'application ${brand} — Restaurants halal, mosquées & horaires de prière`
+    ? 'Halal Travel App: Qibla, Prayer Times, Mosques'
+    : 'Application voyage halal : qibla, prière, mosquées'
   const description = isEN
     ? 'Download the free app: Qibla compass, prayer times, nearby halal restaurants and mosques, offline travel notebook — for Muslim travelers worldwide.'
-    : "Téléchargez l'application gratuite : boussole Qibla, horaires de prière, restaurants halal et mosquées à proximité, carnet de voyage hors-ligne — pour les voyageurs musulmans."
+    : "Boussole qibla, horaires de prière, mosquées et adresses halal autour de vous, carnet consultable hors ligne. Gratuit, sans compte."
   return {
     title,
     description,

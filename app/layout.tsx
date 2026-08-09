@@ -26,14 +26,18 @@ export async function generateMetadata(): Promise<Metadata> {
   const { isEN, brand, siteUrl } = await getDomainSEO()
   return {
     metadataBase: new URL(siteUrl),
+    // Google coupe un titre vers 60 caracteres. Les deux titres par defaut
+    // faisaient 81 et 84 : la fin utile etait tronquee. Le suffixe de marque
+    // du template coutait 15 a 19 caracteres sur CHAQUE page — il disparait,
+    // les pages qui veulent la marque la mettent elles-memes.
     title: isEN
       ? {
-          default: 'GoHalalTravel — #1 Halal Travel Guide | Restaurants, Mosques & Destinations',
-          template: '%s | GoHalalTravel',
+          default: 'Halal Travel Guide 2026 — Restaurants, Mosques, Prayer',
+          template: '%s',
         }
       : {
-          default: 'VoyagesHalal.fr — Guide Voyage Halal #1 | Restaurants, Mosquées & Destinations',
-          template: '%s | VoyagesHalal.fr',
+          default: 'Guide Voyage Halal 2026 — Restaurants, Mosquées, Prière',
+          template: '%s',
         },
     description: isEN ? EN_DEFAULT_DESCRIPTION : DEFAULT_DESCRIPTION,
     authors: [{ name: brand }],

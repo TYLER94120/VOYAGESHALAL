@@ -8,10 +8,10 @@ import { alternatesFor } from '@/lib/hreflang'
 export async function generateMetadata(): Promise<Metadata> {
   const { isEN } = await getDomainSEO()
   return buildMetadata({
-    title: isEN ? 'Halal Travel Guides — Practical Tips for Muslim Travelers' : 'Guides Voyage Halal — Conseils Pratiques pour Voyageurs Musulmans',
+    title: isEN ? 'Muslim Travel Guides 2026: Cities, Ramadan, Umrah' : 'Guides Voyage Musulman 2026 : Villes, Ramadan, Omra',
     description: isEN
-      ? 'All our practical guides for halal travel: beginners, destinations, Ramadan, accommodation. Practical tips to travel with peace of mind.'
-      : 'Tous nos guides pratiques pour voyager halal : débutants, destinations, Ramadan, hébergement. Des conseils vérifiés pour voyager sereinement.',
+      ? 'City guides, Ramadan abroad, Umrah, halal hotels, first trip: our long-form guides for Muslim travellers, with real addresses and their source.'
+      : 'Guides de villes, Ramadan à l’étranger, Omra, hôtels halal, premier voyage : nos guides longs pour voyageurs musulmans, adresses réelles et sourcées.',
     path: '/guides',
     ...alternatesFor('/guides', isEN),
   })

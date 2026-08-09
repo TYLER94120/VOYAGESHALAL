@@ -11,12 +11,14 @@ import { updatedAtOf } from '@/lib/freshness'
 export async function generateMetadata(): Promise<Metadata> {
   const { isEN } = await getDomainSEO()
   return buildMetadata({
+    // 704 impressions et zero clic sur /blog et l'accueil reunis : le titre
+    // ne donnait aucune raison de cliquer. On annonce ce qu'il y a dedans.
     title: isEN
-      ? 'Halal Travel Blog — Tips, Guides & Destinations 2026'
-      : 'Blog Voyage Halal — Conseils, Guides & Destinations 2026',
+      ? 'Halal Travel Guides: Where to Pray, Eat & Stay (2026)'
+      : 'Guides Voyage Halal 2026 : Où Prier, Manger et Dormir',
     description: isEN
-      ? 'Halal travel articles and tips: hotels, restaurants, mosques, destinations and practical advice for Muslim travelers worldwide.'
-      : 'Articles et conseils voyage halal : hôtels, restaurants, mosquées, destinations et astuces pratiques. Tout pour voyager en accord avec vos valeurs islamiques.',
+      ? 'Prayer rooms in airports and parks, halal food abroad, flights and hotels: practical guides for Muslim travellers, each one written from the ground.'
+      : 'Salles de prière en aéroport et parc, manger halal à l’étranger, avion, hôtels : nos guides pratiques pour voyageurs musulmans, écrits depuis le terrain.',
     path: '/blog',
     ...alternatesFor('/blog', isEN),
   })

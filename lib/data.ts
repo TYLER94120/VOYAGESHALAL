@@ -404,7 +404,7 @@ import { guidesEn } from './guidesEn'
 const guidesFr: Guide[] = [
   {
     slug: 'voyage-halal-debutant',
-    title: 'Voyage halal pour débutants : tout ce qu\'il faut savoir avant de partir',
+    title: 'Voyage halal pour débutants : le guide complet',
     description:
       'Premier voyage halal ? Ce guide complet vous explique les fondamentaux : nourriture, prière, hébergement, destinations et applications indispensables.',
     coverImage: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&q=80',
@@ -606,7 +606,7 @@ const guidesFr: Guide[] = [
   },
   {
     slug: 'lune-de-miel-halal',
-    title: 'Lune de miel halal : 10 destinations romantiques pour les jeunes mariés musulmans',
+    title: 'Lune de miel halal : 10 destinations romantiques',
     description: 'Notre sélection des meilleures destinations pour une lune de miel halal inoubliable : de Marrakech aux Maldives, en passant par Dubaï et Bali.',
     coverImage: 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1200&q=80',
     category: 'Destinations',
@@ -715,7 +715,7 @@ const guidesFr: Guide[] = [
   },
   {
     slug: 'istanbul-guide-halal-complet',
-    title: 'Istanbul halal : guide complet 2026 — restaurants, mosquées et conseils',
+    title: 'Istanbul halal 2026 : restos, mosquées, quartiers',
     description: 'Notre guide complet pour visiter Istanbul en respectant vos valeurs islamiques : les meilleurs restaurants halal, mosquées incontournables, quartiers à privilégier et astuces pratiques.',
     coverImage: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&q=80',
     category: 'Destinations',
@@ -772,7 +772,7 @@ const guidesFr: Guide[] = [
   },
   {
     slug: 'dubai-guide-halal-2026',
-    title: 'Dubai halal : guide complet 2026 — tout savoir pour votre voyage',
+    title: 'Dubaï halal 2026 : le guide complet du voyage',
     description: 'Guide complet Dubai 2026 pour les voyageurs musulmans : restaurants halal signalés, mosquées, activités famille, budget et meilleures adresses.',
     coverImage: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&q=80',
     category: 'Destinations',
@@ -822,7 +822,7 @@ const guidesFr: Guide[] = [
   },
   {
     slug: 'marrakech-guide-halal',
-    title: 'Marrakech halal : guide complet 2026 — la ville ocre pour les voyageurs musulmans',
+    title: 'Marrakech halal 2026 : le guide de la ville ocre',
     description: 'Tout savoir pour visiter Marrakech en famille ou en couple : mosquées, restaurants halal, riads, souks et conseils pratiques pour un séjour parfait.',
     coverImage: 'https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1200&q=80',
     category: 'Destinations',
@@ -868,7 +868,7 @@ const guidesFr: Guide[] = [
   },
   {
     slug: 'vacances-halal-famille-2026',
-    title: 'Voyage halal en famille 2026 : les 5 meilleures destinations avec enfants',
+    title: 'Voyage halal en famille : 5 destinations 2026',
     description: 'Les meilleures destinations et conseils pour des vacances halal réussies en famille : sécurité, activités enfants, hébergement adapté et budget.',
     coverImage: 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1200&q=80',
     category: 'Famille',
@@ -905,7 +905,7 @@ const guidesFr: Guide[] = [
   },
   {
     slug: 'malaisie-halal-destination',
-    title: 'Malaisie : la destination n°1 mondiale pour les voyageurs musulmans',
+    title: 'Malaisie : la destination halal n°1 mondiale',
     description: 'Pourquoi la Malaisie est régulièrement élue meilleure destination halal mondiale ? JAKIM, gastronomie, nature — notre guide complet.',
     coverImage: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=1200&q=80',
     category: 'Destinations',
@@ -1016,7 +1016,7 @@ const guidesFr: Guide[] = [
   },
   {
     slug: 'voyage-halal-solo-femme',
-    title: 'Voyage femme musulmane seule : destinations sûres (même voilée) et conseils',
+    title: 'Femme musulmane seule : 8 destinations sûres',
     description: 'Guide complet pour les femmes musulmanes souhaitant voyager seules : destinations les plus sûres, conseils de sécurité, question du mahram et communautés.',
     coverImage: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&q=80',
     category: 'Pratique',
@@ -1082,7 +1082,7 @@ const guidesFr: Guide[] = [
   },
   {
     slug: 'tourisme-halal-definition-2026',
-    title: 'Tourisme halal : définition, critères et marché mondial en 2026',
+    title: 'Tourisme halal : définition et marché en 2026',
     description: 'Qu\'est-ce que le tourisme halal exactement ? Définition complète, critères, marché mondial (240 milliards $) et tendances 2026.',
     coverImage: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&q=80',
     category: 'Pratique',
@@ -1272,7 +1272,7 @@ const guidesFr: Guide[] = [
   },
   {
     slug: 'voyage-halal-japon-guide',
-    title: 'Voyage halal au Japon 2026 : manger halal à Tokyo, Osaka et Kyoto',
+    title: 'Voyage halal au Japon : Tokyo, Osaka, Kyoto 2026',
     description: 'Le Japon en voyageur musulman : restaurants halal à Tokyo et Osaka, ramen et wagyu halal, mosquées, salles de prière et conseils concrets pour un séjour serein.',
     coverImage: 'https://images.unsplash.com/photo-1557672172-298e090bd0f1?w=1200&q=80',
     category: 'Destinations',
@@ -1312,7 +1312,7 @@ const guidesFr: Guide[] = [
   },
     {
     slug: 'voyage-halal-petit-budget',
-    title: 'Voyage halal pas cher : les destinations et astuces petit budget (étudiants inclus)',
+    title: 'Voyage halal pas cher : destinations et astuces',
     description: 'Voyager halal avec un petit budget : les destinations les moins chères (Turquie, Maroc, Balkans, Malaisie), astuces transport/hébergement et budgets réels par jour.',
     coverImage: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&q=80',
     category: 'Pratique',
@@ -1350,7 +1350,7 @@ const guidesFr: Guide[] = [
   },
   {
     slug: 'europe-halal-friendly',
-    title: 'Pays halal friendly en Europe : où voyager musulman sereinement',
+    title: 'Pays halal friendly en Europe : où voyager',
     description: 'Bosnie, Albanie, Espagne (héritage andalou), Royaume-Uni… Le classement des pays européens les plus halal friendly : mosquées, restaurants halal, ambiance.',
     coverImage: 'https://images.unsplash.com/photo-1555993539-1732b0258235?w=1200&q=80',
     category: 'Destinations',
@@ -1409,7 +1409,7 @@ const guidesFr: Guide[] = [
   },
   {
     slug: 'manger-halal-thailande-guide',
-    title: 'Manger halal en Thaïlande : Bangkok, Phuket et le label à connaître',
+    title: 'Manger halal en Thaïlande : Bangkok et Phuket',
     description: 'Guide complet du halal en Thaïlande : quartiers musulmans de Bangkok, Phuket et sa forte communauté musulmane, street food à choisir ou éviter, et le label officiel CICOT.',
     coverImage: 'https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=1200&q=80',
     category: 'Destinations',
@@ -1448,7 +1448,7 @@ export const guides: Guide[] = [...guidesFr, ...guidesEn]
 export const blogPosts: BlogPost[] = [
   {
     slug: "repas-halal-avion-moml",
-    title: "Repas halal en avion (MOML) : comment le commander et est-il vraiment halal ?",
+    title: "Repas halal en avion : commander le MOML (2026)",
     description: "Le repas musulman en avion se commande à l'avance, sous le code MOML. Comment le réserver, ce qu'il contient vraiment, et quoi faire si vous l'avez oublié.",
     coverImage: "/guides/blog-avion.jpg",
     category: 'Pratique',
@@ -1505,7 +1505,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "ablutions-avion-train",
-    title: "Faire ses ablutions dans un avion, un train ou des toilettes publiques",
+    title: "Ablutions en avion, en train et en toilettes publiques",
     description: "Peu d'eau, peu de place, du monde derrière la porte : voici la méthode concrète pour faire ses ablutions en voyage sans inonder le lavabo ni bloquer les toilettes.",
     coverImage: "/guides/blog-train.jpg",
     category: 'Pratique',
@@ -1559,8 +1559,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "heure-priere-avion-fuseaux",
-    title: "Quelle heure de prière suivre en avion ? Fuseaux horaires et vols longs",
-    description: "Départ à 22h, arrivée à 6h, trois fuseaux traversés : quelle heure suivre pour prier en vol ? La méthode pratique, les outils qui marchent sans réseau, et ce qui relève de l'avis religieux.",
+    title: "Heure de prière en avion : quel fuseau suivre ?",
+    description: "Trois fuseaux traversés, le soleil qui se lève à 3 h du matin : comment savoir où vous êtes et quelle heure il y est. Écran de bord, GPS sans réseau, hublot.",
     coverImage: "/guides/blog-aeroports.jpg",
     category: 'Pratique',
     readTime: "6 min",
@@ -1614,7 +1614,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "is-this-restaurant-really-halal",
-    title: "Is this restaurant really halal? 7 checks to make before you order",
+    title: "Is This Restaurant Really Halal? 7 Checks to Make",
     description: "A halal logo proves nothing on its own. Here are the 7 practical checks, the questions to ask the staff, and the warning signs — for Muslim travellers anywhere.",
     coverImage: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&q=80",
     category: 'Practical',
@@ -1668,8 +1668,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "no-halal-restaurant-what-to-eat",
-    title: "No halal restaurant anywhere: what to eat? A traveller's survival guide",
-    description: "Rural France, rural Japan, Eastern Europe — sometimes there is simply nothing. Here is how to eat properly for a whole week without a single halal address, and without living on crisps.",
+    title: "No Halal Restaurant Nearby: What to Eat?",
+    description: "Sometimes there is nothing within 50 km. How to eat properly for a whole week with no halal address: fish, naturally vegetarian cuisines, self-catering.",
     coverImage: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=1200&q=80",
     category: 'Practical',
     readTime: "7 min",
@@ -1797,8 +1797,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "restaurant-vraiment-halal-verifier",
-    title: "Ce restaurant est-il vraiment halal ? Les 7 vérifications à faire",
-    description: "Un logo halal ne prouve rien à lui seul. Voici les 7 vérifications concrètes à faire avant de commander, les questions à poser au personnel, et les signaux qui doivent alerter.",
+    title: "Restaurant vraiment halal ? Les 7 vérifications",
+    description: "Le mot « halal » n'est protégé par aucune loi : le logo se copie. Les 7 vérifications à faire avant de commander et les 2 questions à poser au comptoir.",
     coverImage: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&q=80",
     category: 'Pratique',
     readTime: "6 min",
@@ -1850,8 +1850,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "aucun-restaurant-halal-que-faire",
-    title: "Aucun restaurant halal : que manger ? Le guide de survie du voyageur",
-    description: "Campagne française, Japon, Europe de l'Est : parfois il n'y a rien. Voici comment manger correctement toute une semaine sans une seule adresse halal, sans se nourrir de chips.",
+    title: "Aucun restaurant halal : que manger en voyage ?",
+    description: "Parfois il n'y a rien à 50 km. Comment manger correctement toute une semaine sans une seule adresse halal : poisson, cuisines végétariennes, gîte, marché.",
     coverImage: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=1200&q=80",
     category: 'Pratique',
     readTime: "7 min",
@@ -1907,7 +1907,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "dire-sans-porc-sans-alcool-langues",
-    title: "« Sans porc, sans alcool » en 12 langues : la fiche à montrer au serveur",
+    title: "« Sans porc, sans alcool » en 12 langues",
     description: "Les 4 phrases essentielles du voyageur musulman, écrites en 12 langues à montrer directement au serveur. À garder dans ton carnet, consultable hors ligne.",
     coverImage: "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=1200&q=80",
     category: 'Pratique',
@@ -2105,8 +2105,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "where-to-pray-disneyland-paris",
-    title: "Prayer room at Disneyland Paris: where to pray? (2026 guide)",
-    description: "Yes, you can pray at Disneyland Paris: a quiet, discreet space is available on request at City Hall. Here is how to access it, step by step.",
+    title: "Prayer Room at Disneyland Paris: Where to Pray in 2026",
+    description: "A quiet space is offered on request at City Hall, by the park entrance. Exactly where it is, what to ask a Cast Member, and the best time of day.",
     coverImage: "/guides/blog-disneyland.jpg",
     category: 'Practical',
     readTime: "3 min",
@@ -2129,7 +2129,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "where-to-pray-paris-airports",
-    title: "Where to pray at Paris airports (CDG & Orly) — 2026 guide",
+    title: "Prayer Rooms in Paris Airports: CDG & Orly (2026)",
     description: "Flying should never force you to miss a prayer. Most major airports have a prayer room or multi-faith space — here is how to find them, plus our airport-by-airport guides.",
     coverImage: "/guides/blog-aeroports.jpg",
     category: 'Practical',
@@ -2156,8 +2156,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "where-to-pray-cdg-airport",
-    title: "Where to pray at Paris-Charles de Gaulle (CDG) — 2026 guide",
-    description: "Transiting through Roissy? Paris-CDG has several prayer spaces across Terminals 1, 2E and 2F, with a Muslim area and wudu facilities. Here is where to find them.",
+    title: "Prayer Room at Paris CDG Airport: Where to Pray (2026)",
+    description: "Paris-CDG has prayer spaces in Terminals 1, 2E and 2F, with a Muslim area and wudu facilities. Where each one is, landside or after security.",
     coverImage: "/guides/blog-cdg.jpg",
     category: 'Practical',
     readTime: "4 min",
@@ -2184,7 +2184,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "where-to-pray-orly-airport",
-    title: "Where to pray at Paris-Orly airport — 2026 guide",
+    title: "Prayer Room at Paris Orly Airport: Where to Pray (2026)",
     description: "Flying from Orly? The airport has prayer rooms and quiet spaces, including a Muslim prayer room with separate areas for men and women. Here is where to find them.",
     coverImage: "/guides/blog-orly.jpg",
     category: 'Practical',
@@ -2296,7 +2296,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "ou-prier-gares-paris",
-    title: "Où prier dans les gares parisiennes (Gare du Nord, Lyon, Montparnasse…) — 2026",
+    title: "Où prier dans les gares de Paris : 6 gares (2026)",
     tags: ["Gare", "Paris", "Train", "Prière", "Pratique"],
     description: "Pas de salle de prière dans les gares françaises — mais des solutions à moins de 15 minutes existent presque toujours. Le guide gare par gare.",
     coverImage: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&q=80",
@@ -2330,7 +2330,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "voyage-halal-france",
-    title: "Voyage halal en France : le guide 2026 des vacances halal-friendly",
+    title: "Vacances halal en France : le guide 2026",
     tags: ['france', 'tourisme halal', 'vacances', 'week-end', 'halal'],
     description: "Tourisme halal en France : où partir, où manger halal, où prier — villes faciles, côte, montagne, gîtes et idées de vacances halal sans prise de tête.",
     coverImage: "/guides/blog-nice.jpg",
@@ -2364,7 +2364,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "week-end-musulman",
-    title: "Week-end musulman : 10 destinations halal depuis la France (2026)",
+    title: "Week-end musulman : 10 destinations à 4 h de vol",
     tags: ['week-end', 'destinations', 'halal', 'france'],
     description: "Envie d'un week-end musulman sans casse-tête ? 10 destinations à 1-4 h de vol de la France où manger halal et prier facilement — avec nos guides ville pour chacune.",
     coverImage: "/guides/marrakech-j1.jpg",
@@ -2481,8 +2481,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "prier-en-avion",
-    title: "Comment prier en avion : le guide pratique du voyageur musulman (2026)",
-    description: "Ton vol tombe sur l'heure de la prière ? Prier au sol si possible, sinon assis à ta place avec les facilités du voyageur. Voici comment faire, sereinement et discrètement.",
+    title: "Prier dans l'avion : le guide du voyageur (2026)",
+    description: "Ton vol tombe sur l'heure de la prière ? Où se placer, comment faire assis, à quel moment du vol, et ce qu'il faut préparer avant de décoller.",
     coverImage: "/guides/blog-avion.jpg",
     category: 'Pratique',
     readTime: "5 min",
@@ -2521,7 +2521,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "ou-prier-aire-autoroute",
-    title: "Où prier sur une aire d'autoroute : guide du road trip halal (2026)",
+    title: "Où prier sur une aire d'autoroute (2026)",
     description: "Rares sont les aires équipées d'une salle de prière : coin calme, voiture, ablutions aux toilettes et facilités du voyageur — voici comment prier en route.",
     coverImage: "/guides/blog-autoroute.jpg",
     category: 'Pratique',
@@ -2557,8 +2557,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "ou-prier-aeroports",
-    title: "Où prier dans un aéroport : le guide complet (2026)",
-    description: "Prendre l'avion ne devrait jamais t'obliger à sauter une prière. La plupart des grands aéroports disposent d'une salle de prière ou d'un espace de recueillement — encore faut-il savoir où le trouver.",
+    title: "Salle de prière en aéroport : 8 aéroports détaillés (2026)",
+    description: "CDG, Orly, Lyon, Nice, Marseille, Toulouse, Genève, Bruxelles : où se trouve la salle de prière de chaque aéroport, avant ou après les contrôles.",
     coverImage: "/guides/blog-aeroports.jpg",
     category: 'Pratique',
     readTime: "6 min",
@@ -2596,8 +2596,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "ou-prier-aeroport-cdg",
-    title: "Où prier à l'aéroport de Paris-Charles de Gaulle (CDG) — guide 2026",
-    description: "Tu transites par Roissy ? Paris-CDG dispose de plusieurs espaces de prière entre les terminaux 1, 2E et 2F, avec un coin musulman et des ablutions. Voici où les trouver.",
+    title: "Salle de prière à l'aéroport CDG : où prier en 2026",
+    description: "Paris-CDG a plusieurs espaces de prière aux terminaux 1, 2E et 2F, avec coin musulman et ablutions. Où ils se trouvent, côté ville ou après la sécurité.",
     coverImage: "/guides/blog-cdg.jpg",
     category: 'Pratique',
     readTime: "4 min",
@@ -2620,7 +2620,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "ou-prier-aeroport-orly",
-    title: "Où prier à l'aéroport de Paris-Orly — guide 2026",
+    title: "Salle de prière à l'aéroport d'Orly : où prier en 2026",
     description: "Orly dispose de salles de prière et d'espaces de recueillement, dont une salle de prière musulmane avec espaces séparés hommes / femmes. Voici où les trouver.",
     coverImage: "/guides/blog-orly.jpg",
     category: 'Pratique',
@@ -2664,8 +2664,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "ou-prier-disneyland-paris",
-    title: "Salle de prière à Disneyland Paris : où prier ? — guide 2026",
-    description: "Oui, il existe une salle de prière à Disneyland Paris : un espace calme et discret, accessible sur simple demande au City Hall. Voici comment y accéder, étape par étape.",
+    title: "Salle de prière à Disneyland Paris : où prier en 2026",
+    description: "Un espace calme est accessible sur demande au City Hall, à l'entrée du parc. Où il se trouve exactement, quoi dire au Cast Member, à quel moment y aller.",
     coverImage: "/guides/blog-disneyland.jpg",
     category: 'Pratique',
     readTime: "3 min",
@@ -2697,7 +2697,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'restaurants-halal-paris',
-    title: 'Les meilleurs restaurants halal à Paris en 2026 : guide par arrondissement',
+    title: 'Restaurants halal à Paris 2026 : par arrondissement',
     description:
       'Guide complet et mis à jour des meilleurs restaurants halal signalés à Paris : du kebab artisanal au gastronomique, des Grands Boulevards à la banlieue, tous les quartiers couverts.',
     coverImage: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&q=80',
@@ -2709,7 +2709,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "voyage-halal-maroc-2026-guide-complet",
-    title: "Voyage Halal au Maroc 2026 : Le Guide Complet pour Voyager en Musulman",
+    title: "Voyage halal au Maroc 2026 : le guide complet",
     description: "Tout ce qu'il faut savoir pour un voyage halal au Maroc en 2026 : restaurants, mosquées, villes à visiter, conseils pratiques et budget. Guide complet par VoyagesHalal.fr",
     coverImage: "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1200&q=80",
     category: "Destinations",
@@ -2780,7 +2780,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "horaires-priere-voyage-guide-musulman",
-    title: "Horaires de Prière en Voyage : Comment Ne Jamais Rater une Prière ?",
+    title: "Horaires de prière en voyage : ne plus en rater",
     description: "Guide complet pour gérer les horaires de prière en voyage : décalage horaire, prière en avion, qasr, jam' et outils gratuits pour le voyageur musulman.",
     coverImage: "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&q=80",
     category: "Pratique",
@@ -2807,7 +2807,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "top-10-destinations-halal-2026",
-    title: "Top 10 Destinations Halal 2026 : Notre Sélection des Meilleures Villes",
+    title: "Top 10 des destinations halal en 2026",
     description: "Notre classement des 10 meilleures destinations halal en 2026 : Médine, Kuala Lumpur, Istanbul, Dubaï, Maroc... Basé sur le Halal Trust Score, un système unique.",
     coverImage: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&q=80",
     category: "Destinations",
@@ -3038,7 +3038,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'halal-hotels-marrakech-2026',
-    title: 'Halal Hotels in Marrakech 2026: Where Muslim Travelers Should Stay',
+    title: 'Halal Hotels in Marrakech 2026: Where to Stay',
     description: 'The best halal-friendly hotels and riads in Marrakech for Muslim travelers: alcohol-free options, close to mosques, family-friendly, for every budget.',
     coverImage: 'https://images.unsplash.com/photo-1597212618440-806262de4f6b?w=1200&q=80',
     category: 'Accommodation',
@@ -3118,7 +3118,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'ramadan-voyage-meilleures-villes',
-    title: 'Ramadan en voyage 2026 : les meilleures villes où vivre le mois sacré',
+    title: 'Ramadan en voyage 2026 : les meilleures villes',
     description: 'Où voyager pendant le Ramadan ? Notre sélection de villes à l\'atmosphère unique : ftour animés, mosquées, prières de Tarawih et ambiance spirituelle inoubliable.',
     coverImage: 'https://images.unsplash.com/photo-1519817650390-64a93db51149?w=1200&q=80',
     category: 'Spiritualité',
@@ -3172,7 +3172,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'restaurant-halal-barcelone',
-    title: 'Restaurant halal à Barcelone : où manger halal dans la capitale catalane',
+    title: 'Restaurant halal à Barcelone : les bonnes adresses',
     description: 'Les meilleurs quartiers pour trouver un restaurant halal à Barcelone : le Raval, ses grillades et kebabs, la paella halal, et nos conseils près de la Sagrada Família.',
     coverImage: 'https://images.unsplash.com/photo-1583422409516-2895a77efded?w=1200&q=80',
     category: 'Gastronomie', readTime: '5 min', publishedAt: '2026-04-25',
@@ -3206,7 +3206,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'manger-halal-lisbonne',
-    title: 'Manger halal à Lisbonne : les bonnes adresses du voyageur musulman',
+    title: 'Manger halal à Lisbonne : les bonnes adresses',
     description: 'Où manger halal à Lisbonne : le quartier de la mosquée centrale, Martim Moniz et ses cantines, poisson grillé portugais et conseils pratiques.',
     coverImage: 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=1200&q=80',
     category: 'Gastronomie', readTime: '4 min', publishedAt: '2026-05-03',

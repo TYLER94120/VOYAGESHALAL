@@ -43,12 +43,16 @@ function sortedHotels(ville: any) {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { ville: slug } = await params
   const ville = getVille(slug)
-  const { isEN, brand, siteUrl } = await getDomainSEO()
+  const { isEN, siteUrl } = await getDomainSEO()
   if (!ville) return { title: isEN ? 'Halal hotels' : 'Hôtels halal' }
   const n = (ville.hotels?.length ?? 0)
+  // 91 caracteres sur les 354 pages hotels : Google coupait tout apres
+  // « 2026 ». Le nom de la ville est celui que tape le lecteur, et la marque
+  // n'est plus dans le titre.
+  const nomLocal = (isEN && ville.nom_en) ? ville.nom_en : ville.nom
   const title = isEN
-    ? `Muslim-friendly & Halal Hotels in ${ville.nom} 2026 — Alcohol-free, near mosques | ${brand}`
-    : `Hôtel musulman à ${ville.nom} — hôtels halal 2026 (sans alcool, proches mosquées) | ${brand}`
+    ? `Halal Hotels in ${nomLocal} 2026: Alcohol-Free`
+    : `Hôtels halal ${nomLocal} 2026 : sans alcool, mosquée proche`
   const description = isEN
     ? `${n}+ halal-friendly hotels in ${ville.nom}: alcohol-free options, near mosques, family-friendly. Compare and book for your Muslim trip.`
     : `${n}+ hôtels halal-friendly à ${ville.nom} : options sans alcool, proches des mosquées, adaptés aux familles. Comparez et réservez pour votre voyage musulman.`

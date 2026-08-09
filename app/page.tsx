@@ -19,12 +19,16 @@ import { getVillesCounts } from '@/lib/villeStats'
 // Métadonnées par domaine : anglais sur gohalaltravel.com, français sur voyageshalal.fr
 export async function generateMetadata(): Promise<Metadata> {
   const { isEN, siteUrl } = await getDomainSEO()
+  // 81 et 84 caracteres : Google coupait les deux titres, et la marque en
+  // tete mangeait la place des mots que les gens tapent vraiment. On ouvre
+  // desormais sur le besoin (« halal travel guide », « voyage halal ») et
+  // on annonce un chiffre verifiable.
   const title = isEN
-    ? 'GoHalalTravel — #1 Halal Travel Guide | Restaurants, Mosques & Destinations'
-    : 'VoyagesHalal.fr — Guide Voyage Halal #1 | Restaurants, Mosquées & Destinations'
+    ? 'Halal Travel Guide 2026: 354 Cities, Mosques & Food'
+    : 'Guide Voyage Halal 2026 : 354 Villes, Mosquées, Restos'
   const description = isEN
-    ? 'Halal restaurants, mosques, prayer times and practical guides in 354+ destinations worldwide — for Muslim travelers.'
-    : 'Restaurants halal signalés, mosquées, hébergements et guides pratiques dans 354+ destinations — pour les musulmans du monde entier.'
+    ? 'Prayer times and qibla wherever you are, the nearest mosque, halal addresses in 354 cities. Every listing carries its source. Free, no account needed.'
+    : 'Horaires de prière et qibla où que vous soyez, la mosquée la plus proche, des adresses halal dans 354 villes. Chaque adresse porte sa source. Gratuit.'
   return {
     title: { absolute: title },
     description,

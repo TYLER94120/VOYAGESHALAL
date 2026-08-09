@@ -23,10 +23,10 @@ const VILLE_COUNT = (() => {
 })()
 
 export async function generateMetadata(): Promise<Metadata> {
-  const { isEN, brand, siteUrl } = await getDomainSEO()
+  const { isEN, siteUrl } = await getDomainSEO()
   const title = isEN
-    ? `Halal Destinations Worldwide — ${VILLE_COUNT}+ Cities | ${brand}`
-    : `Destinations Voyage Halal — Meilleures Villes du Monde | ${brand}`
+    ? `${VILLE_COUNT} Halal Destinations 2026: Cities, Mosques, Food`
+    : `${VILLE_COUNT} Destinations Halal 2026 : Villes, Mosquées, Restos`
   const description = isEN
     ? `${VILLE_COUNT}+ hand-picked halal destinations: Istanbul, Marrakech, Dubai, Kuala Lumpur, Mecca and more. Halal restaurants, mosques and guides for every city.`
     : `${VILLE_COUNT}+ destinations halal sélectionnées : Istanbul, Marrakech, Dubaï, Kuala Lumpur, La Mecque et bien plus. Restaurants halal signalés, mosquées et guides pour chaque ville.`

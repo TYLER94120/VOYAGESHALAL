@@ -61,19 +61,44 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const nbMosq = ville.mosqueesPrincipales?.length ?? mosquees ?? 0
   const nbHotels = ville.hotels?.length ?? 0
 
-  const { isEN, brand, siteUrl } = await getDomainSEO()
+  const { isEN, siteUrl } = await getDomainSEO()
+
+  // 🔎 CE QUE GOOGLE AFFICHE. Trois corrections mesurees :
+  //
+  // 1. Le nom de la ville doit etre celui que TAPE le lecteur. Sur le
+  //    domaine anglais, 34 fiches sortaient encore leur nom francais
+  //    (« Dubaï », « La Mecque », « Le Caire »…). Un anglophone cherche
+  //    « Dubai », « Mecca » : sans le mot exact, Google ne le met pas en
+  //    gras et le resultat n'est pas choisi.
+  // 2. Plus de marque dans le titre : « | GoHalalTravel.com » coutait 19
+  //    caracteres sur une limite d'environ 60, et faisait tronquer la fin
+  //    utile du titre par Google.
+  // 3. Les chiffres viennent des donnees REELLES de la fiche. Les
+  //    descriptions figees annonçaient un nombre de restaurants faux sur
+  //    93 fiches sur 354 (Mecque : « 76 » annonces, 26 reels).
+  const nomLocal = (isEN && ville.nom_en) ? ville.nom_en : ville.nom
   const title = isEN
-    ? `${ville.nom} Halal Travel Guide 2026 — Restaurants, Mosques & Tips | ${brand}`
-    : `${ville.nom} Halal 2026 : Restaurants, Mosquées & Guide Complet | ${brand}`
+    ? `${nomLocal} Halal Guide 2026: Restaurants, Mosques & Prayer`
+    : `${nomLocal} Halal 2026 : Restaurants, Mosquées & Prière`
+  const chiffresEn = [
+    nbRestos > 0 ? `${nbRestos} halal restaurants` : null,
+    nbMosq > 0 ? `${nbMosq} mosques` : null,
+    nbHotels > 0 ? `${nbHotels} hotels` : null,
+  ].filter(Boolean).join(', ')
+  const chiffresFr = [
+    nbRestos > 0 ? `${nbRestos} restaurants halal` : null,
+    nbMosq > 0 ? `${nbMosq} mosquées` : null,
+    nbHotels > 0 ? `${nbHotels} hôtels` : null,
+  ].filter(Boolean).join(', ')
   const description = isEN
-    ? (ville.metaDescription_en ?? `Complete halal guide for ${ville.nom}: ${nbRestos}+ halal restaurants, ${nbMosq} mosques, ${nbHotels} hotels, prayer times and practical tips for Muslim travelers.`).slice(0, 300)
-    : `Guide halal complet pour ${ville.nom} : ${nbRestos}+ restaurants halal, ${nbMosq} mosquées, ${nbHotels} hôtels, horaires de prière et conseils pratiques pour voyager en musulman. ${richDesc}`.slice(0, 300)
+    ? `${chiffresEn || 'Halal addresses'} listed in ${nomLocal}, with prayer times, qibla and where to pray. Every listing carries its source.`.slice(0, 300)
+    : `${chiffresFr || 'Adresses halal'} référencés à ${nomLocal} : horaires de prière, qibla et où prier. Chaque adresse porte sa source.`.slice(0, 300)
   const ogTitle = isEN
-    ? `${ville.nom} Halal Travel Guide 2026 — Muslim-Friendly`
-    : `${ville.nom} Halal 2026 — Guide Voyage Musulman`
+    ? `${nomLocal} Halal Travel Guide 2026 — Muslim-Friendly`
+    : `${nomLocal} Halal 2026 — Guide Voyage Musulman`
   const ogDesc = isEN
-    ? `Halal restaurants, nearby mosques and prayer times in ${ville.nom}. The complete guide for Muslim travel.`
-    : `Restaurants halal, mosquées proches et horaires de prière à ${ville.nom}. Le guide complet pour voyager halal.`
+    ? `Halal restaurants, nearby mosques and prayer times in ${nomLocal}. The complete guide for Muslim travel.`
+    : `Restaurants halal, mosquées proches et horaires de prière à ${nomLocal}. Le guide complet pour voyager halal.`
 
   // Protection qualité : une fiche sans aucun contenu réel (0 resto, 0 mosquée,
   // 0 hôtel, 0 activité) dilue le domaine → noindex (mais on garde follow pour
