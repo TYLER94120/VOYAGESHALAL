@@ -1447,6 +1447,172 @@ export const guides: Guide[] = [...guidesFr, ...guidesEn]
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "repas-halal-avion-moml",
+    title: "Repas halal en avion (MOML) : comment le commander et est-il vraiment halal ?",
+    description: "Le repas musulman en avion se commande à l'avance, sous le code MOML. Comment le réserver, ce qu'il contient vraiment, et quoi faire si vous l'avez oublié.",
+    coverImage: "/guides/blog-avion.jpg",
+    category: 'Pratique',
+    readTime: "5 min",
+    publishedAt: '2026-08-10',
+    tags: ['avion', 'halal', 'repas', 'pratique'],
+    content: `<p>Vous montez dans l'avion, le chariot arrive, et vous découvrez que le plat du jour est au porc. Ça se prépare — mais pas au moment de l'embarquement. Voici comment fonctionne réellement le repas musulman en avion.</p>
+
+<h2>L'essentiel en 30 secondes</h2>
+<p>Le repas musulman porte un code international : <strong>MOML</strong> (Moslem Meal). Il se commande <strong>au moins 24 à 48 heures avant le vol</strong>, jamais à bord. Il est préparé par un traiteur, et le niveau de garantie dépend entièrement de la compagnie — d'où l'importance de la question suivante : est-ce que « MOML » veut dire « certifié halal » ? Pas toujours.</p>
+
+<h2>Comment le commander</h2>
+<p>Trois façons, par ordre de fiabilité :</p>
+<p><strong>1. Au moment de la réservation.</strong> C'est le plus sûr. Sur la plupart des sites de compagnies, une rubrique « repas spéciaux » apparaît juste après le choix des sièges.<br/>
+<strong>2. Dans « gérer ma réservation ».</strong> Connectez-vous avec votre numéro de dossier, cherchez « repas spécial » ou « special meal », et sélectionnez <strong>MOML</strong>.<br/>
+<strong>3. Par téléphone au service client</strong>, en donnant votre référence. Utile quand le billet a été acheté via une agence ou un comparateur — dans ce cas, le repas spécial n'est presque jamais transmis automatiquement.</p>
+<p>La règle : <strong>48 heures avant le départ</strong>, c'est bouclé. Après, la plupart des compagnies refusent, parce que les plateaux sont déjà chargés.</p>
+
+<h2>Un point important : vérifiez la veille</h2>
+<p>Le repas spécial se perd. Changement d'avion, correspondance opérée par une autre compagnie, billet modifié : à chaque étape, la demande peut disparaître. Le réflexe des habitués : <strong>rouvrir sa réservation la veille du départ</strong> et vérifier que la mention MOML est toujours là. Trente secondes qui évitent six heures de vol le ventre vide.</p>
+<p>Sur un vol avec correspondance opérée par deux compagnies différentes, la demande doit souvent être faite <strong>pour chaque segment</strong>.</p>
+
+<h2>MOML veut-il dire « certifié halal » ?</h2>
+<p>Honnêtement : <strong>ça dépend de la compagnie</strong>, et nous ne pouvons pas garantir à votre place. Ce qu'on peut dire de vérifiable :</p>
+<p>— Les compagnies des pays musulmans servent en général un repas standard halal sur tous leurs vols, sans commande particulière.<br/>
+— Les compagnies européennes et asiatiques proposent le MOML comme un repas spécial parmi une trentaine (végétarien, casher, sans gluten…). Le traiteur est parfois certifié, parfois simplement « sans porc ni alcool ».<br/>
+— La distinction « sans porc » et « halal » n'est pas la même chose : un plat de poulet non abattu selon le rite entre dans la première catégorie et pas dans la seconde.</p>
+<p>Le seul moyen de savoir : <strong>poser la question à la compagnie</strong>, et regarder l'emballage à bord — les plateaux certifiés portent en général le logo de l'organisme certificateur et sont scellés. C'est un signe utile, pas une preuve absolue.</p>
+
+<h2>Si vous avez oublié de le commander</h2>
+<p>C'est très fréquent, et ça se gère :</p>
+<p>— <strong>Demandez à l'équipage dès l'embarquement</strong>, pas au moment du service. Il y a parfois un plateau spécial non réclamé.<br/>
+— <strong>Rabattez-vous sur le végétarien.</strong> Demandez s'il reste un plateau VGML ou VLML : c'est la solution la plus simple et la plus sûre.<br/>
+— <strong>Mangez avant.</strong> Un vrai repas à l'aéroport règle la question d'un vol de six heures.<br/>
+— <strong>Emportez de quoi tenir.</strong> Sandwich, dattes, fruits secs, barres : tout cela passe le contrôle de sécurité (seuls les liquides sont limités à 100 ml).</p>
+
+<h2>À bord, ce qu'on peut manger sans risque</h2>
+<p>Sur un plateau standard, restent en général accessibles : le pain, la salade sans sauce à la viande, les crudités, le fromage (si la présure ne vous pose pas de question), les fruits, le yaourt nature, les crackers et le chocolat. Évitez les desserts industriels (gélatine) et les sauces.</p>
+<p>Et bien sûr, on ne boit pas les boissons alcoolisées offertes — un « jus d'orange, s'il vous plaît » suffit, personne ne relève.</p>
+
+<h2>Questions fréquentes</h2>
+<p><strong>Quel est le code du repas musulman ?</strong> MOML (Moslem Meal). Le végétarien est VGML, l'hindou AVML, le casher KSML.<br/>
+<strong>Combien de temps avant ?</strong> 24 à 48 heures selon la compagnie. Au moment de la réservation, c'est mieux.<br/>
+<strong>Est-ce payant ?</strong> Non, chez la quasi-totalité des compagnies. C'est un repas spécial, pas une option.<br/>
+<strong>Et sur les compagnies low-cost ?</strong> Elles ne servent en général aucun repas inclus : vous achetez à bord, et il n'y a pas de MOML. Prévoyez votre propre repas.<br/>
+<strong>Peut-on emporter sa nourriture dans l'avion ?</strong> Oui pour le solide. Les liquides et pâtes (yaourt, soupe, sauces) restent limités à 100 ml au contrôle.<br/>
+<strong>Une question religieuse sur le doute ou la nécessité ?</strong> Posez-la à <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&utm_medium=passerelle&utm_campaign=repas-avion" target="_blank" rel="noopener noreferrer">HalalGPT</a> — nous ne tranchons pas de fiqh.</p>
+
+<h2>À lire avant de décoller</h2>
+<p><a href="/blog/prier-en-avion">Comment prier dans l'avion</a> · <a href="/blog/heure-priere-avion-fuseaux">Quelle heure de prière suivre en vol</a> · <a href="/blog/ablutions-avion-train">Faire ses ablutions à bord</a> · <a href="/blog/ou-prier-aeroports">Les salles de prière des aéroports</a></p>
+
+<h2>Aide la communauté</h2>
+<p>Tu as testé le MOML sur une compagnie récemment ? Dis-nous ce que valait le plateau — l'information sert à des milliers de voyageurs. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
+  },
+  {
+    slug: "ablutions-avion-train",
+    title: "Faire ses ablutions dans un avion, un train ou des toilettes publiques",
+    description: "Peu d'eau, peu de place, du monde derrière la porte : voici la méthode concrète pour faire ses ablutions en voyage sans inonder le lavabo ni bloquer les toilettes.",
+    coverImage: "/guides/blog-train.jpg",
+    category: 'Pratique',
+    readTime: "5 min",
+    publishedAt: '2026-08-10',
+    tags: ['ablutions', 'avion', 'train', 'pratique', 'prière'],
+    content: `<p>Le vrai obstacle à la prière en voyage n'est presque jamais la prière : ce sont les ablutions. Un lavabo de vingt centimètres, un robinet qui coule trois secondes, une file d'attente derrière la porte. Voici comment font ceux qui voyagent beaucoup.</p>
+
+<h2>L'essentiel en 30 secondes</h2>
+<p>Trois principes : <strong>préparez-vous avant d'entrer</strong> (manches remontées, chaussettes gérées à votre place), <strong>allez du plus haut vers le plus bas</strong> pour ne rien remouiller, et <strong>emportez une petite bouteille</strong> — c'est l'objet qui change tout et personne n'y pense.</p>
+
+<h2>La méthode dans un avion</h2>
+<p>Les toilettes d'avion sont minuscules et le robinet est à pression, souvent trois secondes par appui. Ce qui marche :</p>
+<p><strong>Avant d'entrer</strong> : remontez vos manches, retirez montre et bagues, et préparez des serviettes en papier <em>en amont</em> (le distributeur est parfois vide).<br/>
+<strong>Le remplissage</strong> : une petite bouteille d'eau vide de 50 cl, remplie au lavabo, vous donne un débit continu et vous évite de vous battre avec le robinet. Vous pouvez aussi demander un gobelet d'eau à l'équipage.<br/>
+<strong>Les pieds</strong> : c'est là que tout se complique dans un espace aussi étroit. Deux solutions — le lavage à la bouteille au-dessus de la cuvette, ou l'essuyage sur les chaussettes si vous les aviez enfilées en état de pureté (règle religieuse : voir plus bas).<br/>
+<strong>En sortant</strong> : essuyez le lavabo et le sol avec une serviette. C'est une question de respect, et cela évite qu'on associe nos ablutions à des toilettes trempées.</p>
+<p><strong>Le bon moment</strong> : juste après le service repas, quand tout le monde est assis. Évitez les 30 minutes avant l'atterrissage et la ruée du réveil.</p>
+
+<h2>Dans un train</h2>
+<p>C'est plus facile qu'en avion — le lavabo est plus grand, le robinet plus généreux, et l'espace suffit. Deux différences :</p>
+<p>— Le train <strong>bouge</strong> : gardez une main d'appui, faites-le en gare ou sur une portion droite.<br/>
+— Sur les trains à grande vitesse, l'eau des toilettes est parfois signalée non potable ; cela ne l'empêche pas d'être <strong>pure</strong> au sens des ablutions (l'eau du réseau, simplement non contrôlée pour la boisson).</p>
+<p>Astuce peu connue : dans les grandes gares, les toilettes payantes disposent souvent de <strong>cabines individuelles avec lavabo à l'intérieur</strong>. Beaucoup plus confortable, et pour un euro c'est réglé.</p>
+
+<h2>Dans des toilettes publiques</h2>
+<p>La difficulté n'est pas technique, elle est sociale : on n'a pas envie de faire ses ablutions devant dix personnes qui se lavent les mains. Ce qui fonctionne :</p>
+<p>— <strong>Utilisez la cabine pour handicapés</strong> quand elle est libre : lavabo à l'intérieur, porte fermée, personne ne vous regarde. Laissez-la immédiatement si quelqu'un en a besoin.<br/>
+— <strong>Faites l'essentiel au lavabo, les pieds en cabine</strong>, avec une bouteille.<br/>
+— <strong>Un lavabo bas</strong> (espace enfants dans les centres commerciaux, toilettes familiales) rend le lavage des pieds beaucoup plus simple.<br/>
+— <strong>Séchez le sol derrière vous.</strong> Toujours.</p>
+
+<h2>Les trois objets qui changent tout</h2>
+<p><strong>1. Une petite bouteille souple de 50 cl</strong> — vide au contrôle de sécurité, remplie après. C'est l'objet numéro un du voyageur : ablutions, istinja, dépannage.<br/>
+<strong>2. Une paire de chaussettes propres</strong> dans le sac.<br/>
+<strong>3. Une petite serviette microfibre</strong> qui sèche en dix minutes et prend la place d'un mouchoir.</p>
+<p>Ajoutez un tapis de poche et vous êtes autonome partout — voir <a href="/guides/checklist-voyage-halal">notre checklist du voyageur</a>.</p>
+
+<h2>Ce que nous ne tranchons pas ici</h2>
+<p>Plusieurs questions de cette page relèvent du fiqh et pas du terrain : l'essuyage sur les chaussettes (le <em>mash</em>) et ses conditions, le tayammum quand il n'y a pas d'eau du tout, la validité de telle ou telle eau, ce qui annule les ablutions pendant un long vol. <strong>Nous ne rendons aucun avis religieux.</strong> Pour ces questions, adressez-vous à un imam ou posez-les à <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&utm_medium=passerelle&utm_campaign=ablutions" target="_blank" rel="noopener noreferrer">HalalGPT</a>.</p>
+
+<h2>Questions fréquentes</h2>
+<p><strong>Peut-on faire ses ablutions dans les toilettes d'un avion ?</strong> Oui, matériellement c'est possible ; la bouteille rend l'opération simple et propre.<br/>
+<strong>Faut-il demander l'autorisation à l'équipage ?</strong> Non. Vous utilisez les toilettes normalement. Si vous voulez un gobelet d'eau, demandez-le simplement.<br/>
+<strong>Et s'il n'y a pas d'eau du tout ?</strong> C'est le cas du tayammum, une question religieuse : voir ci-dessus.<br/>
+<strong>Où prier une fois les ablutions faites ?</strong> Voir <a href="/blog/prier-en-avion">prier dans l'avion</a> et <a href="/blog/prier-en-train">prier dans le train</a>.<br/>
+<strong>Et à l'aéroport ?</strong> Plusieurs salles de prière ont une zone d'ablutions dédiée : voir <a href="/blog/ou-prier-aeroports">nos guides aéroports</a>.</p>
+
+<h2>Aide la communauté</h2>
+<p>Tu connais un aéroport ou une gare avec de vraies installations d'ablutions ? C'est une information précieuse et rarement écrite. <a href="/communaute/ajouter">→ Ajouter le lieu</a></p>`,
+  },
+  {
+    slug: "heure-priere-avion-fuseaux",
+    title: "Quelle heure de prière suivre en avion ? Fuseaux horaires et vols longs",
+    description: "Départ à 22h, arrivée à 6h, trois fuseaux traversés : quelle heure suivre pour prier en vol ? La méthode pratique, les outils qui marchent sans réseau, et ce qui relève de l'avis religieux.",
+    coverImage: "/guides/blog-aeroports.jpg",
+    category: 'Pratique',
+    readTime: "6 min",
+    publishedAt: '2026-08-10',
+    tags: ['avion', 'prière', 'horaires', 'pratique'],
+    content: `<p>Vous décollez de Paris à 22 h, vous atterrissez à Dubaï à 6 h 30, et pendant le vol le soleil se lève à 3 h du matin par le hublot. Quelle heure suivez-vous ? C'est l'une des questions les plus posées par les voyageurs musulmans, et elle mélange deux choses très différentes : <strong>ce qu'on peut mesurer</strong>, et <strong>ce que dit la jurisprudence</strong>. Voici la première partie, honnêtement séparée de la seconde.</p>
+
+<h2>L'essentiel en 30 secondes</h2>
+<p>Ce qui compte, ce n'est pas l'heure affichée sur votre montre : c'est <strong>l'endroit où vous êtes au moment où vous priez</strong>. En vol, cet endroit change en permanence. La méthode pratique : consulter votre <strong>position réelle</strong> sur l'écran de bord, calculer les horaires pour ce point, et prier quand le créneau y est ouvert. Un principe simple : <em>le soleil que vous voyez par le hublot est votre meilleure horloge</em>.</p>
+
+<h2>1. Préparez avant de décoller</h2>
+<p>La chose la plus efficace se fait au sol, avec du réseau. Avant l'embarquement :</p>
+<p>— Notez les horaires de prière de votre <strong>ville de départ</strong> et de votre <strong>ville d'arrivée</strong> pour le jour du vol (nos <a href="/horaires-priere">horaires de prière</a> les donnent pour n'importe quelle ville).<br/>
+— Notez l'heure de décollage et d'atterrissage <strong>en heure locale de chaque ville</strong>.<br/>
+— Regardez si une prière tombe pendant le vol. Souvent, la réponse est « une seule » — et tout devient beaucoup plus simple.</p>
+<p>Gardez la page dans votre carnet : elle reste lisible <strong>en mode avion</strong>.</p>
+
+<h2>2. En vol, l'écran de bord est votre outil</h2>
+<p>L'écran de suivi du vol donne votre <strong>position, l'heure locale du point survolé</strong>, et souvent le lever et le coucher du soleil à destination. C'est l'information la plus utile du vol, et personne ne la regarde.</p>
+<p>Sans écran, la carte hors ligne de votre téléphone en mode avion fonctionne toujours : le <strong>GPS n'a pas besoin de réseau</strong>. Votre position s'affiche, et notre <a href="/qibla">boussole qibla</a> comme nos horaires savent la lire.</p>
+
+<h2>3. Le soleil par le hublot ne ment pas</h2>
+<p>Sur un vol vers l'est, la nuit dure parfois trois heures. Sur un vol vers l'ouest, le coucher du soleil peut durer six heures. Ce que vous voyez est la réalité astronomique de l'endroit où vous êtes : si le soleil se couche par le hublot, maghrib entre à cet endroit-là. Beaucoup de voyageurs s'y fient, en croisant avec l'écran de bord.</p>
+<p>Le cas piège : <strong>les vols polaires</strong> (Europe → Asie de l'Est, Amérique du Nord → Golfe). Aux très hautes latitudes, les repères solaires deviennent inutilisables — il n'y a parfois pas de nuit du tout. C'est précisément un cas où la question devient religieuse et non pratique.</p>
+
+<h2>4. À l'arrivée, remettez-vous à l'heure locale</h2>
+<p>Dès l'atterrissage, tout redevient normal : vous êtes quelque part, ce quelque part a des horaires. Le seul vrai piège est le <strong>décalage du corps</strong> pendant deux ou trois jours — fajr paraît absurdement tôt et isha absurdement tard.</p>
+<p>Ce qui aide : activer les <strong>notifications de prière</strong> pour votre nouvelle ville dès l'arrivée, et ne pas se fier à sa sensation de fatigue pour estimer l'heure.</p>
+
+<h2>5. Ce qui marche sans réseau</h2>
+<p>En vol et à l'étranger sans forfait, trois choses fonctionnent toujours : le <strong>GPS</strong> (indépendant du réseau), une <strong>page gardée dans votre carnet</strong>, et une <strong>capture d'écran</strong> des horaires prise avant le départ. C'est basique et c'est ce qui sauve.</p>
+
+<h2>Ce que nous ne tranchons pas</h2>
+<p>Cette page vous dit <strong>comment savoir où vous êtes et quelle heure il y est</strong>. Elle ne dit pas ce qu'il faut faire, parce que ce sont des questions de jurisprudence, avec des avis différents selon les écoles :</p>
+<p>— Faut-il prier en vol ou attendre l'arrivée ?<br/>
+— Peut-on regrouper deux prières en voyage, et lesquelles ?<br/>
+— Peut-on raccourcir (le <em>qasr</em>), et à partir de quelle distance ?<br/>
+— Que faire quand un vol traverse une zone sans nuit réelle ?<br/>
+— Une prière commencée avant l'entrée d'un fuseau est-elle valide ?</p>
+<p><strong>Nous ne rendons aucun avis religieux.</strong> Ces questions se posent à un imam, ou à <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&utm_medium=passerelle&utm_campaign=heure-avion" target="_blank" rel="noopener noreferrer">HalalGPT</a>, qui est fait pour ça. Notre travail s'arrête à la mesure et au terrain — et c'est déjà beaucoup.</p>
+
+<h2>Questions fréquentes</h2>
+<p><strong>Quelle heure suivre : départ, arrivée ou sol survolé ?</strong> Ce qu'on peut affirmer : l'heure pertinente est celle de l'endroit où vous vous trouvez. La règle religieuse qui en découle est un avis à demander.<br/>
+<strong>Comment connaître ma position en vol ?</strong> L'écran de bord, ou le GPS de votre téléphone en mode avion — il fonctionne sans réseau.<br/>
+<strong>Comment trouver la qibla à 10 000 mètres ?</strong> Voir <a href="/qibla">notre boussole qibla</a> et <a href="/blog/prier-en-avion">prier dans l'avion</a>.<br/>
+<strong>Et si je rate une prière ?</strong> Le rattrapage est une question religieuse : posez-la à HalalGPT.<br/>
+<strong>Où prier avant ou après le vol ?</strong> Voir <a href="/blog/ou-prier-aeroports">les salles de prière des aéroports</a>.</p>
+
+<h2>Aide la communauté</h2>
+<p>Tu voyages souvent sur les longs courriers ? Partage ta méthode et les compagnies dont l'écran de bord donne les infos utiles. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
+  },
+  {
     slug: "is-this-restaurant-really-halal",
     title: "Is this restaurant really halal? 7 checks to make before you order",
     description: "A halal logo proves nothing on its own. Here are the 7 practical checks, the questions to ask the staff, and the warning signs — for Muslim travellers anywhere.",
@@ -2330,7 +2496,8 @@ export const blogPosts: BlogPost[] = [
 <h2>4. Debout, si l'espace le permet</h2><p>Sur certains vols, un espace peut permettre de prier debout si l'équipage l'autorise et hors turbulences/ceinture obligatoire. Reste discret ; la sécurité du vol prime.</p>
 <h2>Les facilités du voyageur</h2><p>Raccourcir les prières de 4 à 2 rakats (dhuhr, asr, isha) et regrouper dhuhr/asr, maghrib/isha règle la plupart des situations.</p>
 <h2>Questions fréquentes</h2><p><strong>Prier assis en avion ?</strong> Oui, en cas de nécessité.<br/><strong>Trouver la qibla ?</strong> Oriente-toi au mieux au départ ; la prière reste valable si le cap change.<br/><strong>Pas d'eau ?</strong> Le tayammoum est permis en cas de nécessité.</p>
-<h2>Aide la communauté</h2><p>Une astuce, un endroit où prier avant un vol ? Partage-le — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
+<h2>Aide la communauté</h2><p>Une astuce, un endroit où prier avant un vol ? Partage-le — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>
+<p><strong>À lire aussi :</strong> <a href="/blog/heure-priere-avion-fuseaux">quelle heure de prière suivre en vol</a> · <a href="/blog/ablutions-avion-train">faire ses ablutions à bord</a> · <a href="/blog/repas-halal-avion-moml">commander le repas halal (MOML)</a>.</p>`,
   },
   {
     slug: "prier-en-train",
@@ -2349,7 +2516,8 @@ export const blogPosts: BlogPost[] = [
 <h2>4. Les ablutions</h2><p>Fais tes ablutions avant de monter si possible. Sinon les toilettes ; en cas d'impossibilité, le tayammoum.</p>
 <h2>Questions fréquentes</h2><p><strong>Prier assis dans le train ?</strong> Oui, en cas de nécessité.<br/><strong>S'orienter ?</strong> Au mieux ; la prière reste valable en déplacement.<br/><strong>Regrouper ?</strong> Oui, dhuhr/asr et maghrib/isha.</p>
 <p>Voir aussi <a href="/blog/prier-en-avion">comment prier en avion</a> et <a href="/blog/ou-prier-aire-autoroute">sur une aire d'autoroute</a>.</p>
-<h2>Aide la communauté</h2><p>Un espace calme en gare, un coin pour prier avant un train ? Partage-le — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
+<h2>Aide la communauté</h2><p>Un espace calme en gare, un coin pour prier avant un train ? Partage-le — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>
+<p><strong>À lire aussi :</strong> <a href="/blog/ablutions-avion-train">faire ses ablutions dans un train</a>.</p>`,
   },
   {
     slug: "ou-prier-aire-autoroute",
@@ -2423,7 +2591,8 @@ export const blogPosts: BlogPost[] = [
 <li><a href="/blog/ou-prier-stade-de-france">Où prier au Stade de France</a></li>
 </ul>
 <p>En transit ou en route : <a href="/blog/prier-en-avion">prier en avion</a>, <a href="/blog/prier-en-train">dans le train</a>, <a href="/blog/ou-prier-aire-autoroute">sur une aire d'autoroute</a> et <a href="/blog/ou-prier-centre-commercial">dans un centre commercial</a>.</p>
-<h2>Aide la communauté</h2><p>Tu as trouvé un coin prière dans un aéroport, une gare, un centre commercial ? Partage-le : chaque spot aide des dizaines de frères et sœurs à prier en voyage — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
+<h2>Aide la communauté</h2><p>Tu as trouvé un coin prière dans un aéroport, une gare, un centre commercial ? Partage-le : chaque spot aide des dizaines de frères et sœurs à prier en voyage — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>
+<p><strong>À lire aussi :</strong> <a href="/blog/repas-halal-avion-moml">le repas halal en avion (MOML)</a> · <a href="/blog/heure-priere-avion-fuseaux">quelle heure de prière suivre en vol</a>.</p>`,
   },
   {
     slug: "ou-prier-aeroport-cdg",
