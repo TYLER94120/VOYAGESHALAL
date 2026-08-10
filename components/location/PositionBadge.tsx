@@ -111,7 +111,18 @@ export default function PositionBadge({
           padding: '4px 13px', borderRadius: 999, cursor: 'pointer',
           // Sur une seule ligne, toujours : cassée en deux, la pilule ne se
           // lit plus comme un bouton (constaté sur une capture d'accueil).
-          whiteSpace: 'nowrap', maxWidth: '100%', overflow: 'hidden',
+          // `minWidth: 0` : sans lui, un élément flex refuse de rétrécir sous
+          // la largeur de son texte. Avec un nom long (« Tafoughalt »), la
+          // pilule poussait « Tout voir → » à la ligne suivante. Elle se
+          // rétrécit et coupe proprement à la place.
+          // ⚠️ `flexBasis: 0` et pas seulement `minWidth: 0`.
+          // Dans un conteneur qui peut passer à la ligne, le navigateur décide
+          // du retour à la ligne d'après la largeur NATURELLE de l'élément —
+          // avant de le rétrécir. Un nom long (« Tafoughalt ») poussait donc
+          // « Tout voir → » à la ligne suivante malgré `minWidth: 0`. Avec une
+          // base de 0, la pilule ne force plus jamais de retour : elle occupe
+          // ce qui reste et coupe proprement.
+          whiteSpace: 'nowrap', minWidth: 0, flex: '1 1 0%', overflow: 'hidden', textOverflow: 'ellipsis',
           border: `1px solid ${rassurant ? 'rgba(34,197,94,0.5)' : bord}`,
           background: rassurant ? 'rgba(34,197,94,0.12)' : 'rgba(201,168,76,0.16)',
           color: tx, fontSize: 13.5, fontWeight: 800,

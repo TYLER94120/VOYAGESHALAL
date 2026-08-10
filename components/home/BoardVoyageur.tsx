@@ -38,7 +38,15 @@ const slugifyVille = (s: string) =>
   s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
     .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '')
 const lieuId = (lat: number, lng: number) => `a_${lat.toFixed(5)}_${lng.toFixed(5)}`
-const itin = (lat: number, lng: number) => `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}&travelmode=walking`
+const itin = (lat: number, lng: number, mode: 'walking' | 'driving' = 'walking') =>
+  `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}&travelmode=${mode}`
+/** Au-delà, « à pied » n'est plus une réponse : c'est une plaisanterie.
+ *  25 min ≈ 2 km. Constaté sur une capture de Mohamed : la tuile annonçait
+ *  « 81 min à pied » alors que Dhuhr se terminait dans 12 minutes, et
+ *  proposait quand même un itinéraire piéton. */
+const MARCHE_MAX = 25
+/** ~50 km/h en ville et sur route, marges comprises. */
+const routeMin = (distM: number) => Math.max(1, Math.round(distM / 833))
 
 export interface BoardVedette { slug: string; nom: string; score: number; restaurants: number; mosquees: number; image: string | null }
 
@@ -416,7 +424,7 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
               même regard : « Rabat · exacte ✓  ☀️ 30° ». */}
           {meteo?.maintenant && (
             <Link href="/meteo" aria-label={en ? 'Weather' : 'Météo'}
-              style={{ display: 'inline-flex', alignItems: 'center', gap: 5, minHeight: 44, padding: '0 10px', borderRadius: 999, textDecoration: 'none', border: '1px solid rgba(201,168,76,0.35)' }}>
+              style={{ display: 'inline-flex', alignItems: 'center', gap: 5, minHeight: 44, padding: '0 10px', borderRadius: 999, textDecoration: 'none', border: '1px solid rgba(201,168,76,0.35)', flexShrink: 0 }}>
               <span style={{ fontSize: 17 }} aria-hidden>{emojiMeteo(meteo.maintenant.code)}</span>
               <span style={{ color: '#fdfaf3', fontWeight: 900, fontSize: 15 }}>{meteo.maintenant.temp}°</span>
             </Link>
@@ -450,7 +458,17 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
                 </p>
               )}
               {mosquee === undefined && <p style={{ ...T.meta, marginTop: 8 }}>{en ? 'Finding the nearest prayer place…' : 'Recherche du lieu de prière le plus proche…'}</p>}
-              {mosquee && (
+              {/* ⚠️ « 81 MIN À PIED » N'EST PAS UNE RÉPONSE.
+                  Capture de Mohamed, à Fezouane : la tuile proposait une
+                  mosquée à 81 minutes de marche — avec un itinéraire piéton —
+                  alors que Dhuhr se terminait dans 12 minutes. Le bandeau
+                  disait pourtant « 🔴 Prie où tu peux » juste au-dessus :
+                  l'écran se contredisait tout seul.
+                  Au-delà de 25 minutes de marche, on ne fait pas semblant :
+                  on dit la distance en voiture, on donne l'itinéraire en
+                  voiture, et on met en avant la Qibla — parce que la vraie
+                  réponse, à cette distance, c'est de prier sur place. */}
+              {mosquee && (walkMin === null || walkMin <= MARCHE_MAX) && (
                 <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginTop: 10, flexWrap: 'wrap' }}>
                   <p style={{ flex: 1, minWidth: 170, color: '#fdfaf3', fontSize: 14, margin: 0, lineHeight: 1.45 }}>
                     {mosquee.source === 'communaute' ? '🤝' : mosquee.source === 'annuaire' ? '📒' : '🕌'} <strong><bdi>{mosquee.nom}</bdi></strong>
@@ -463,6 +481,26 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
                     style={{ minHeight: 44, display: 'inline-flex', alignItems: 'center', padding: '0 16px', borderRadius: 999, background: 'var(--or)', color: '#0b1a0f', fontWeight: 800, fontSize: 13.5, textDecoration: 'none' }}>
                     🚶 {en ? 'Directions' : 'Itinéraire'}
                   </a>
+                </div>
+              )}
+
+              {mosquee && walkMin !== null && walkMin > MARCHE_MAX && (
+                <div style={{ marginTop: 10 }}>
+                  <p style={{ color: '#fdfaf3', fontSize: 14, margin: 0, lineHeight: 1.45 }}>
+                    {en
+                      ? <>No mosque within walking distance. <span style={{ color: 'rgba(253,250,243,0.78)' }}>The nearest we know is <strong><bdi>{mosquee.nom}</bdi></strong>, {(mosquee.distM / 1000).toFixed(1)} km — about {routeMin(mosquee.distM)} min by car.</span></>
+                      : <>Aucune mosquée à distance de marche. <span style={{ color: 'rgba(253,250,243,0.78)' }}>La plus proche que nous connaissons est <strong><bdi>{mosquee.nom}</bdi></strong>, à {(mosquee.distM / 1000).toFixed(1)} km — environ {routeMin(mosquee.distM)} min en voiture.</span></>}
+                  </p>
+                  <div style={{ display: 'flex', gap: 8, marginTop: 9, flexWrap: 'wrap' }}>
+                    <Link href="/qibla" onClick={(e) => e.stopPropagation()}
+                      style={{ minHeight: 44, display: 'inline-flex', alignItems: 'center', padding: '0 16px', borderRadius: 999, background: 'var(--or)', color: '#0b1a0f', fontWeight: 900, fontSize: 13.5, textDecoration: 'none' }}>
+                      🧭 {en ? 'Pray here — Qibla' : 'Prier ici — Qibla'}
+                    </Link>
+                    <a href={itin(mosquee.lat, mosquee.lng, 'driving')} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}
+                      style={{ minHeight: 44, display: 'inline-flex', alignItems: 'center', padding: '0 16px', borderRadius: 999, border: '1px solid rgba(201,168,76,0.5)', color: 'var(--or)', fontWeight: 800, fontSize: 13.5, textDecoration: 'none' }}>
+                      🚗 {en ? 'Directions' : 'Itinéraire'}
+                    </a>
+                  </div>
                 </div>
               )}
               {mosquee === null && (
@@ -692,7 +730,12 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
             return (
               <>
                 {priereSlim}
-                <div className="board-duo" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginTop: 10 }}>
+                <div className="board-duo" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginTop: 10,
+                  // `start` et non l'étirement par défaut : quand « Manger » n'a
+                  // rien à dire, la grille lui donnait la hauteur de la tuile
+                  // voisine (avec sa vignette vidéo) — une boîte vide d'un demi
+                  // écran pour trois mots. Chaque tuile prend sa vraie hauteur.
+                  alignItems: 'start' }}>
                   {mangerSmall}
                   {spotsWidget}
                 </div>
@@ -702,7 +745,12 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
           return (
             <>
               {priereWide}
-              <div className="board-duo" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginTop: 10 }}>
+              <div className="board-duo" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginTop: 10,
+                  // `start` et non l'étirement par défaut : quand « Manger » n'a
+                  // rien à dire, la grille lui donnait la hauteur de la tuile
+                  // voisine (avec sa vignette vidéo) — une boîte vide d'un demi
+                  // écran pour trois mots. Chaque tuile prend sa vraie hauteur.
+                  alignItems: 'start' }}>
                 {mangerSmall}
                 {spotsWidget}
               </div>
