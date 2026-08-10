@@ -22,21 +22,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 > **214 elements contiennent de l'arabe, 214 portent `lang="ar"` et `dir="rtl"`**,
 > zero nu.
 
-1. **La couleur la plus pale du site n'atteint pas le seuil de lisibilite.**
-   *Preuve :* mesure du 10 aout, cycle 6 — contraste WCAG calcule sur les
-   **10 pages servies**, fonds translucides composes : **36 couleurs de texte
-   affichees, 8 sous le seuil AA**. Six des huit sont la meme variable,
-   `--texte-3` (`#6c8271`) sur le fond nuit : **3,71 la ou il faut 4,5**, a 11,
-   13, 14 et 15 px. Elle sert partout — « Halal travel guide (EN) » a l'accueil,
-   « choses a apprendre » sur les lecons, les initiales des jours du calendrier,
-   les numeros de sourate, « Traduction du sens » sur une carte de lecon. Les deux
-   dernieres : `.t` du pied a 4,34 et la pastille `.etiq-p.ok` a 4,32.
-   *Pourquoi ca compte ici :* Mohamed lit sur un telephone, souvent dehors, et le
-   site est en fond sombre — une couleur juste au seuil dans l'atelier devient
-   illisible au soleil. Correctif attendu : eclaircir `--texte-3`, puis
-   **re-mesurer les 36** ; une seule variable, effet sur les 10 pages.
-
-2. **Le nombre de cartes annonce compte l'ecran de fin, la barre non.** *(mineur,
+1. **Le nombre de cartes annonce compte l'ecran de fin, la barre non.** *(mineur,
    assume comme tel)*
    *Preuve :* mesure du 10 aout, cycle 6 — le catalogue et `app.js` annoncent
    **14** cartes pour Al-Fatiha, et la barre de progression en dessine **13**,
@@ -45,7 +31,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    defendables ; ce qui ne l'est pas, c'est qu'ils **diffèrent dans le meme
    produit**. A trancher une fois, pas six.
 
-3. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
+2. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
    *Preuve :* c'est la piece la plus puissante de la liste du responsable, et
    elle est la seule non commencee. Le blocage est reel et non technique : une
    notification calee sur une heure de priere suppose de **connaitre** cette
@@ -57,7 +43,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    **N'entre pas en travaux avant arbitrage** — c'est une decision, pas un
    chantier.
 
-4. **Aucune mesure d'entree, et un traceur est interdit ici.**
+3. **Aucune mesure d'entree, et un traceur est interdit ici.**
    *Preuve :* `grep -ril "gtag\|analytics\|plausible\|matomo\|umami"` sur toutes
    les pages et les trois fichiers JavaScript ne rend **rien**. Or le pied de
    page promet « Ta progression reste sur ton telephone. Aucun compte, aucun
@@ -66,7 +52,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    journaux). Bloque jusqu'au deploiement — question posee aux trois autres
    agents dans le brainstorm des passerelles.
 
-5. **La recitation n'a jamais ete entendue par personne.**
+4. **La recitation n'a jamais ete entendue par personne.**
    *Preuve :* `halalgpt.fr:443` et `cdn.islamic.network:443` sont refuses par la
    politique reseau de l'atelier (403 au CONNECT, journalise par le proxy,
    verifie trois fois). Le mecanisme est teste avec un recitateur simule — 7
@@ -78,6 +64,28 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 ---
 
 ## Fait
+
+- **Tout le texte du site atteint le seuil de lisibilite** *(10 aout, cycle 8)* —
+  **avant : 36 couleurs de texte affichees, 8 sous le seuil AA. Apres : 36
+  mesurees, 0 sous le seuil.** Le pire cas passe de **3,71 a 4,60** (il faut
+  4,5), la pastille de **4,32 a 4,91**.
+  *Deux changements, pas huit.* Six des huit cas etaient la meme variable :
+  `--texte-3`, **`#6c8271` → `#7c9281`**, eclaircie a **teinte et saturation
+  identiques** (133,6°, 9,2 %) — meme famille de couleur, la charte n'est pas
+  touchee, et l'ecart avec `--texte-2` reste lisible comme une hierarchie. Le
+  huitieme cas est la pastille « 5 min » : son fond dore passe de **0,17 a 0,10**
+  d'opacite. J'ai assombri le fond plutot que d'eteindre le texte, parce que l'or
+  `#c9a84c` **est** une couleur de la charte et n'avait pas a bouger.
+  *La valeur n'a pas ete choisie a l'oeil ni calculee sur un fond suppose.* Un
+  premier calcul hors navigateur donnait 4,34 pour `--texte-3` — faux : il
+  supposait le fond nuit, alors que ce texte est le plus souvent sur la surface
+  plus claire des cartes, ou le contraste tombe a 3,71. Six valeurs candidates
+  ont donc ete **essayees dans les vraies pages**, les 10 re-mesurees a chaque
+  essai ; `#7c9281` est la premiere qui passe partout.
+  *Verrou :* `audit-contraste.mjs` **echoue** maintenant (code de sortie 1) des
+  qu'une couleur repasse sous le seuil, au lieu d'imprimer un avertissement que
+  personne ne lira. Il compose les fonds translucides — sans cela il mesurait de
+  l'or sur de l'or et annoncait un texte invisible qui ne l'etait pas.
 
 - **Les 28 ecrans qui citent un texte sacre portent tous leur source** *(10 aout,
   cycle 7)* — **avant : 26 sur 28. Apres : 28 sur 28.** Les deux ecrans nus :

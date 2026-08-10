@@ -16,7 +16,12 @@
   --surface-1: #102a19;
   --surface-2: #16351f;
   --texte-2:   #93a894;
-  --texte-3:   #6c8271;
+  /* Etait #6c8271 : mesure a 3,71 de contraste sur la surface des cartes, pour
+     4,5 exiges. Eclairci a teinte et saturation identiques — meme famille, la
+     charte n'est pas touchee, et la hierarchie avec --texte-2 tient toujours.
+     Mohamed lit dehors sur un telephone : une couleur juste au seuil dans
+     l'atelier devient illisible au soleil. */
+  --texte-3:   #7c9281;
   --trait:     rgba(201, 168, 76, 0.16);
   --trait-fort:rgba(201, 168, 76, 0.34);
 
@@ -790,7 +795,10 @@ a.lien-bas:hover { color: var(--creme); }
   background: rgba(253, 250, 243, 0.07);
   color: var(--texte-3);
 }
-.etiq-p.ok { background: rgba(201, 168, 76, 0.17); color: var(--or); }
+/* Fond dore passe de 0,17 a 0,10 : la pastille etait a 4,32 de contraste sur la
+   surface d'une carte, pour 4,5 exiges. On assombrit le fond plutot que
+   d'eteindre le texte — l'or #c9a84c est une couleur de la charte, il reste. */
+.etiq-p.ok { background: rgba(201, 168, 76, 0.10); color: var(--or); }
 
 .pliens { display: flex; flex-direction: column; gap: 8px; }
 .pliens:empty { display: none; }
