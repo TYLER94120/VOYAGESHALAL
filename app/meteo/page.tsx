@@ -26,13 +26,13 @@ export default async function MeteoPage() {
   const { isEN: en } = await getDomainSEO()
   return (
     <main style={{ minHeight: '100vh', background: 'var(--creme)' }}>
-      <section className="relative overflow-hidden text-center" style={{ background: 'var(--nuit)', padding: '1.75rem 1.5rem 1.5rem' }}>
+      <section className="relative overflow-hidden text-center" style={{ background: 'var(--nuit)', padding: '1.1rem 1.5rem 1rem' }}>
         <IslamicPattern opacity={0.06} />
         <div className="relative z-10">
-          <p style={{ color: 'var(--or)', fontSize: 11, fontWeight: 600, letterSpacing: 3, textTransform: 'uppercase', marginBottom: '0.5rem' }}>
+          <p style={{ color: 'var(--or)', fontSize: 11, fontWeight: 600, letterSpacing: 3, textTransform: 'uppercase', marginBottom: '0.35rem' }}>
             ✦ {en ? 'Muslim tools' : 'Outils musulmans'}
           </p>
-          <h1 style={{ fontFamily: "'Playfair Display', serif", fontSize: 'clamp(1.65rem, 4.5vw, 2.5rem)', fontWeight: 900, color: 'white', marginBottom: '0.4rem', lineHeight: 1.1 }}>
+          <h1 style={{ fontFamily: "'Playfair Display', serif", fontSize: 'clamp(1.4rem, 4vw, 2.1rem)', fontWeight: 900, color: 'white', marginBottom: '0.4rem', lineHeight: 1.1 }}>
             {en ? 'The weather' : 'La météo'}<br />
             <em style={{ color: 'var(--or)' }}>{en ? 'where you are going' : 'là où tu vas'}</em>
           </h1>

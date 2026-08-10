@@ -43,6 +43,8 @@ export default function MeteoClient({ en = false }: { en?: boolean }) {
   const [q, setQ] = useState('')
   const [partage, setPartage] = useState<'' | 'copie' | 'echec'>('')
   const reponseRef = useRef<HTMLDivElement>(null)
+  /** Vrai quand la page a été ouverte par un lien partagé (?ville=…). */
+  const [arriveParLien, setArriveParLien] = useState(false)
 
   useEffect(() => {
     if (!pos) return
@@ -62,7 +64,7 @@ export default function MeteoClient({ en = false }: { en?: boolean }) {
       const slug = new URLSearchParams(window.location.search).get('ville')
       if (!slug) return
       const v = VILLES.find((x) => x.slug === slug)
-      if (v) setVille(v)
+      if (v) { setVille(v); setArriveParLien(true) }
     } catch { /* noop */ }
   }, [])
 
@@ -74,7 +76,8 @@ export default function MeteoClient({ en = false }: { en?: boolean }) {
     // pile derrière la barre de navigation du téléphone : on ne voyait que
     // « BERKANE · MAROC » et le reste passait dessous. Choisir une ville et
     // ne rien voir bouger, c'est croire que ça n'a pas marché.
-    setTimeout(() => reponseRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 80)
+    // Inutile — et désagréable — quand la réponse est déjà le premier bloc.
+    if (!arriveParLien) setTimeout(() => reponseRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 80)
     const g = meteoInstantanee(ville.lat, ville.lng, (m) => { setLaBas(m); setCherche(false) })
     if (g) { setLaBas(g); setCherche(false) }
     // Un écran qui cherche indéfiniment ment sur son état.
@@ -132,167 +135,200 @@ export default function MeteoClient({ en = false }: { en?: boolean }) {
     border: '1px solid rgba(27,67,50,0.1)', marginBottom: 14,
   }
 
+  // 📐 L'ORDRE DÉPEND DE LA FAÇON DONT ON ARRIVE.
+  //
+  // Quelqu'un qui ouvre la page cherche une destination : le champ de
+  // recherche vient d'abord. Mais quelqu'un qui arrive par un LIEN PARTAGÉ a
+  // déjà sa réponse — il vient pour Berkane, pas pour chercher Berkane.
+  // Lui servir d'abord « Tu pars où ? » l'oblige à faire défiler pour trouver
+  // ce qu'on lui a envoyé. On met donc la réponse en premier.
+  // 1. Ici, sur une ligne. Un repère, pas le sujet.
+  const blocIci = (
+          <div style={{
+            display: 'flex', alignItems: 'center', gap: 10, marginBottom: 16,
+            padding: '10px 13px', borderRadius: 14,
+            background: 'rgba(27,67,50,0.06)', border: '1px solid rgba(27,67,50,0.1)',
+          }}>
+            <span style={{ fontSize: 22 }}>{ici?.maintenant ? emojiMeteo(ici.maintenant.code) : '📍'}</span>
+            <span style={{ fontWeight: 800, color: 'var(--foret)', fontSize: 15 }}>{pos?.label ?? '…'}</span>
+            <span style={{ marginLeft: 'auto', fontWeight: 900, color: 'var(--foret)', fontSize: 20 }}>
+              {ici?.maintenant ? `${ici.maintenant.temp}°` : '—'}
+            </span>
+            <span style={{ color: 'var(--texte-2)', fontSize: 13 }}>
+              {ici?.maintenant ? motMeteo(ici.maintenant.code, en) : (en ? 'here' : 'ici')}
+            </span>
+          </div>
+
+  )
+
+  // 2. Là où je vais.
+  const blocRecherche = (
+          <div style={carte}>
+            <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: '1.15rem', color: 'var(--foret)', margin: '0 0 3px' }}>
+              ✈️ {arriveParLien
+            ? (en ? 'Another destination?' : 'Une autre destination ?')
+            : (en ? 'Where are you going?' : 'Tu pars où ?')}
+            </h2>
+            <p style={{ fontSize: 13, color: 'var(--texte-2)', margin: '0 0 11px' }}>
+              {en ? 'See the weather there before you pack.' : 'Vois le temps qu’il fait là-bas avant de faire ta valise.'}
+            </p>
+
+            <input
+              value={q}
+              onChange={(e) => setQ(e.target.value)}
+              placeholder={en ? 'A city (Dubai, Istanbul…)' : 'Une ville (Dubaï, Istanbul…)'}
+              aria-label={en ? 'Search a destination' : 'Chercher une destination'}
+              style={{
+                width: '100%', minHeight: 48, padding: '0 14px', borderRadius: 12, fontSize: 16,
+                border: '1.5px solid rgba(27,67,50,0.2)', background: '#fff', color: 'var(--texte)',
+              }}
+            />
+
+            {resultats.length > 0 && (
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 4, marginTop: 8 }}>
+                {resultats.map((v) => (
+                  <button key={v.slug} onClick={() => { setVille(v); setQ('') }}
+                    style={{ display: 'flex', alignItems: 'center', gap: 8, minHeight: 46, padding: '0 12px', borderRadius: 11, border: '1px solid rgba(27,67,50,0.12)', background: '#FDFAF3', cursor: 'pointer', textAlign: 'left' }}>
+                    <span style={{ fontWeight: 800, color: 'var(--foret)', fontSize: 14.5 }}>{v.nom}</span>
+                    <span style={{ color: 'var(--texte-2)', fontSize: 13 }}>{v.pays}</span>
+                  </button>
+                ))}
+              </div>
+            )}
+
+            {!q && (
+              <div style={{ display: 'flex', gap: 7, flexWrap: 'wrap', marginTop: 10 }}>
+                {raccourcis.map((v) => (
+                  <button key={v.slug} onClick={() => setVille(v)}
+                    style={{
+                      minHeight: 44, padding: '0 14px', borderRadius: 999, cursor: 'pointer', fontSize: 14, fontWeight: 800,
+                      border: `1.5px solid ${ville?.slug === v.slug ? 'var(--foret)' : 'rgba(27,67,50,0.2)'}`,
+                      background: ville?.slug === v.slug ? 'var(--foret)' : 'transparent',
+                      color: ville?.slug === v.slug ? '#fff' : 'var(--foret)',
+                    }}>
+                    {v.nom}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+
+  )
+
+  // 3. La réponse.
+  const blocReponse = ville && (
+            <div ref={reponseRef} style={{ ...carte, scrollMarginTop: 12, background: 'var(--nuit)', border: '1px solid rgba(201,168,76,0.3)', textAlign: 'center' }}>
+              <p style={{ color: 'var(--or)', fontSize: 11, fontWeight: 800, letterSpacing: 2, textTransform: 'uppercase', margin: 0 }}>
+                {ville.nom} · {ville.pays}
+              </p>
+
+              {laBas?.maintenant ? (
+                <>
+                  <p style={{ fontSize: 52, margin: '4px 0 0', lineHeight: 1 }}>{emojiMeteo(laBas.maintenant.code)}</p>
+                  <p style={{ fontFamily: "'Playfair Display', serif", fontSize: '3rem', fontWeight: 900, color: '#fff', margin: '2px 0 0', lineHeight: 1 }}>
+                    {laBas.maintenant.temp}°
+                  </p>
+                  <p style={{ color: 'var(--or-clair)', fontSize: 15, margin: '2px 0 0' }}>
+                    {(() => { const m = motMeteo(laBas.maintenant!.code, en); return m.charAt(0).toUpperCase() + m.slice(1) })()}
+                    {' · '}{en ? 'right now' : 'en ce moment'}
+                  </p>
+
+                  {conseil && (
+                    <p style={{ color: '#fdfaf3', fontSize: 14.5, fontWeight: 700, margin: '10px 0 0', padding: '9px 12px', background: 'rgba(201,168,76,0.16)', borderRadius: 12 }}>
+                      {conseil}
+                    </p>
+                  )}
+
+                  {/* 📤 LES DEUX ACTIONS, SUR UNE LIGNE ET AVANT LA LISTE DES
+                      JOURS. Empilées et placées après les 7 jours, elles
+                      tombaient à 740 et 800 px — sous la barre de navigation et
+                      sous le bouton flottant. Mesuré, pas supposé.
+                      Le bon ordre est aussi le plus juste : la température et
+                      le conseil répondent à la question, les deux boutons sont
+                      la suite, et le détail jour par jour vient après.
+                      Le partage a deux règles : le lien atterrit sur LA MÉTÉO
+                      DE CETTE VILLE, et le message dit déjà l'essentiel —
+                      beaucoup ne cliqueront jamais. */}
+                  <div style={{ display: 'flex', gap: 8, marginTop: 12 }}>
+                    <button onClick={partager}
+                      style={{ flex: 1, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 6, minHeight: 48, borderRadius: 999, border: '1.5px solid rgba(201,168,76,0.55)', background: 'transparent', color: 'var(--or)', fontWeight: 900, fontSize: 14, cursor: 'pointer' }}>
+                      {partage === 'copie'
+                        ? (en ? '✓ Copied' : '✓ Copié')
+                        : partage === 'echec'
+                          ? (en ? 'Copy failed' : 'Copie impossible')
+                          : (en ? '📤 Share' : '📤 Partager')}
+                    </button>
+                    <Link href={`/destinations/${ville.slug}`}
+                      style={{ flex: 1.4, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', minHeight: 48, padding: '0 10px', borderRadius: 999, background: 'var(--or)', color: 'var(--nuit)', fontWeight: 900, fontSize: 14, textDecoration: 'none', textAlign: 'center' }}>
+                      {en ? 'Halal guide →' : 'Guide halal →'}
+                    </Link>
+                  </div>
+
+                  {/* Les jours à venir : c'est ça, préparer une valise. */}
+                  {laBas.jours.length > 1 && (
+                    <div style={{ marginTop: 12, textAlign: 'left' }}>
+                      {laBas.jours.map((j) => {
+                        const d = new Date(j.date + 'T12:00:00')
+                        return (
+                          <div key={j.date} style={{ display: 'flex', alignItems: 'center', gap: 9, padding: '5px 2px', borderTop: '1px solid rgba(253,250,243,0.12)' }}>
+                            {/* nowrap : « Lun. 10 août » se cassait en deux lignes
+                                et faisait tanguer toute la colonne. */}
+                            <span style={{ width: 104, whiteSpace: 'nowrap', fontWeight: 700, color: 'rgba(253,250,243,0.85)', fontSize: 13, textTransform: 'capitalize' }}>
+                              {d.toLocaleDateString(en ? 'en-GB' : 'fr-FR', { weekday: 'short', day: 'numeric', month: 'short' })}
+                            </span>
+                            <span style={{ fontSize: 17 }}>{emojiMeteo(j.code)}</span>
+                            <span style={{ color: 'rgba(253,250,243,0.7)', fontSize: 13, flex: 1 }}>{motMeteo(j.code, en)}</span>
+                            {j.pluieMm >= 1 && <span style={{ fontSize: 12, fontWeight: 800, color: '#93c5fd' }}>{j.pluieMm} mm</span>}
+                            <span style={{ fontWeight: 900, color: '#fff', fontSize: 15, width: 64, textAlign: 'right' }}>
+                              {j.max}° <span style={{ fontWeight: 600, color: 'rgba(253,250,243,0.6)', fontSize: 13 }}>{j.min}°</span>
+                            </span>
+                          </div>
+                        )
+                      })}
+                    </div>
+                  )}
+
+                  {/* D'où vient le chiffre — jamais une donnée sans sa provenance. */}
+                  {(age || laBas.perime) && (
+                    <p style={{ color: 'rgba(253,250,243,0.6)', fontSize: 12, margin: '9px 0 0' }}>
+                      📴 {en ? 'Reading kept on your phone' : 'Relevé gardé sur ton téléphone'}{age ? ` · ${age}` : ''}
+                    </p>
+                  )}
+
+                </>
+              ) : cherche ? (
+                <p style={{ color: 'var(--or-clair)', fontSize: 15, margin: 0, padding: '20px 0' }}>
+                  🌤️ {en ? 'Getting the weather…' : 'Recherche de la météo…'}
+                </p>
+              ) : (
+                <div style={{ padding: '14px 0' }}>
+                  <p style={{ color: '#fdfaf3', fontSize: 15, fontWeight: 700, margin: 0 }}>
+                    {en ? `No forecast for ${ville.nom} right now.` : `Pas de prévision pour ${ville.nom} pour le moment.`}
+                  </p>
+                  <p style={{ color: 'rgba(253,250,243,0.7)', fontSize: 13, margin: '5px 0 0' }}>
+                    {en ? 'Try again in a moment.' : 'Réessaie dans un instant.'}
+                  </p>
+                </div>
+              )}
+            </div>
+  )
+
   return (
     // 150 px en bas : la barre de navigation (86 px + marge de sécurité) ET
     // le bouton flottant « Question halal ? » recouvraient la fin de la carte.
     <section style={{ maxWidth: 640, margin: '0 auto', padding: '1.25rem 1rem 150px' }}>
-      {/* ── 1. Ici, sur une ligne. Un repère, pas le sujet. ── */}
-      <div style={{
-        display: 'flex', alignItems: 'center', gap: 10, marginBottom: 16,
-        padding: '10px 13px', borderRadius: 14,
-        background: 'rgba(27,67,50,0.06)', border: '1px solid rgba(27,67,50,0.1)',
-      }}>
-        <span style={{ fontSize: 22 }}>{ici?.maintenant ? emojiMeteo(ici.maintenant.code) : '📍'}</span>
-        <span style={{ fontWeight: 800, color: 'var(--foret)', fontSize: 15 }}>{pos?.label ?? '…'}</span>
-        <span style={{ marginLeft: 'auto', fontWeight: 900, color: 'var(--foret)', fontSize: 20 }}>
-          {ici?.maintenant ? `${ici.maintenant.temp}°` : '—'}
-        </span>
-        <span style={{ color: 'var(--texte-2)', fontSize: 13 }}>
-          {ici?.maintenant ? motMeteo(ici.maintenant.code, en) : (en ? 'here' : 'ici')}
-        </span>
-      </div>
-
-      {/* ── 2. Là où je vais. Le vrai sujet. ── */}
-      <div style={carte}>
-        <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: '1.15rem', color: 'var(--foret)', margin: '0 0 3px' }}>
-          ✈️ {en ? 'Where are you going?' : 'Tu pars où ?'}
-        </h2>
-        <p style={{ fontSize: 13, color: 'var(--texte-2)', margin: '0 0 11px' }}>
-          {en ? 'See the weather there before you pack.' : 'Vois le temps qu’il fait là-bas avant de faire ta valise.'}
-        </p>
-
-        <input
-          value={q}
-          onChange={(e) => setQ(e.target.value)}
-          placeholder={en ? 'A city (Dubai, Istanbul…)' : 'Une ville (Dubaï, Istanbul…)'}
-          aria-label={en ? 'Search a destination' : 'Chercher une destination'}
-          style={{
-            width: '100%', minHeight: 48, padding: '0 14px', borderRadius: 12, fontSize: 16,
-            border: '1.5px solid rgba(27,67,50,0.2)', background: '#fff', color: 'var(--texte)',
-          }}
-        />
-
-        {resultats.length > 0 && (
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 4, marginTop: 8 }}>
-            {resultats.map((v) => (
-              <button key={v.slug} onClick={() => { setVille(v); setQ('') }}
-                style={{ display: 'flex', alignItems: 'center', gap: 8, minHeight: 46, padding: '0 12px', borderRadius: 11, border: '1px solid rgba(27,67,50,0.12)', background: '#FDFAF3', cursor: 'pointer', textAlign: 'left' }}>
-                <span style={{ fontWeight: 800, color: 'var(--foret)', fontSize: 14.5 }}>{v.nom}</span>
-                <span style={{ color: 'var(--texte-2)', fontSize: 13 }}>{v.pays}</span>
-              </button>
-            ))}
-          </div>
-        )}
-
-        {!q && (
-          <div style={{ display: 'flex', gap: 7, flexWrap: 'wrap', marginTop: 10 }}>
-            {raccourcis.map((v) => (
-              <button key={v.slug} onClick={() => setVille(v)}
-                style={{
-                  minHeight: 44, padding: '0 14px', borderRadius: 999, cursor: 'pointer', fontSize: 14, fontWeight: 800,
-                  border: `1.5px solid ${ville?.slug === v.slug ? 'var(--foret)' : 'rgba(27,67,50,0.2)'}`,
-                  background: ville?.slug === v.slug ? 'var(--foret)' : 'transparent',
-                  color: ville?.slug === v.slug ? '#fff' : 'var(--foret)',
-                }}>
-                {v.nom}
-              </button>
-            ))}
-          </div>
-        )}
-      </div>
-
-      {/* ── 3. La réponse ── */}
-      {ville && (
-        <div ref={reponseRef} style={{ ...carte, scrollMarginTop: 12, background: 'var(--nuit)', border: '1px solid rgba(201,168,76,0.3)', textAlign: 'center' }}>
-          <p style={{ color: 'var(--or)', fontSize: 11, fontWeight: 800, letterSpacing: 2, textTransform: 'uppercase', margin: 0 }}>
-            {ville.nom} · {ville.pays}
-          </p>
-
-          {laBas?.maintenant ? (
-            <>
-              <p style={{ fontSize: 52, margin: '4px 0 0', lineHeight: 1 }}>{emojiMeteo(laBas.maintenant.code)}</p>
-              <p style={{ fontFamily: "'Playfair Display', serif", fontSize: '3rem', fontWeight: 900, color: '#fff', margin: '2px 0 0', lineHeight: 1 }}>
-                {laBas.maintenant.temp}°
-              </p>
-              <p style={{ color: 'var(--or-clair)', fontSize: 15, margin: '2px 0 0' }}>
-                {(() => { const m = motMeteo(laBas.maintenant!.code, en); return m.charAt(0).toUpperCase() + m.slice(1) })()}
-                {' · '}{en ? 'right now' : 'en ce moment'}
-              </p>
-
-              {conseil && (
-                <p style={{ color: '#fdfaf3', fontSize: 14.5, fontWeight: 700, margin: '10px 0 0', padding: '9px 12px', background: 'rgba(201,168,76,0.16)', borderRadius: 12 }}>
-                  {conseil}
-                </p>
-              )}
-
-              {/* Les jours à venir : c'est ça, préparer une valise. */}
-              {laBas.jours.length > 1 && (
-                <div style={{ marginTop: 12, textAlign: 'left' }}>
-                  {laBas.jours.map((j) => {
-                    const d = new Date(j.date + 'T12:00:00')
-                    return (
-                      <div key={j.date} style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '7px 2px', borderTop: '1px solid rgba(253,250,243,0.12)' }}>
-                        {/* nowrap : « Lun. 10 août » se cassait en deux lignes
-                            et faisait tanguer toute la colonne. */}
-                        <span style={{ width: 104, whiteSpace: 'nowrap', fontWeight: 700, color: 'rgba(253,250,243,0.85)', fontSize: 13, textTransform: 'capitalize' }}>
-                          {d.toLocaleDateString(en ? 'en-GB' : 'fr-FR', { weekday: 'short', day: 'numeric', month: 'short' })}
-                        </span>
-                        <span style={{ fontSize: 17 }}>{emojiMeteo(j.code)}</span>
-                        <span style={{ color: 'rgba(253,250,243,0.7)', fontSize: 13, flex: 1 }}>{motMeteo(j.code, en)}</span>
-                        {j.pluieMm >= 1 && <span style={{ fontSize: 12, fontWeight: 800, color: '#93c5fd' }}>{j.pluieMm} mm</span>}
-                        <span style={{ fontWeight: 900, color: '#fff', fontSize: 15, width: 64, textAlign: 'right' }}>
-                          {j.max}° <span style={{ fontWeight: 600, color: 'rgba(253,250,243,0.6)', fontSize: 13 }}>{j.min}°</span>
-                        </span>
-                      </div>
-                    )
-                  })}
-                </div>
-              )}
-
-              {/* D'où vient le chiffre — jamais une donnée sans sa provenance. */}
-              {(age || laBas.perime) && (
-                <p style={{ color: 'rgba(253,250,243,0.6)', fontSize: 12, margin: '9px 0 0' }}>
-                  📴 {en ? 'Reading kept on your phone' : 'Relevé gardé sur ton téléphone'}{age ? ` · ${age}` : ''}
-                </p>
-              )}
-
-              {/* 📤 PARTAGER — demandé par Mohamed, et c'est aussi ainsi qu'on
-                  fait revenir du monde. Deux règles pour que ça marche :
-                  1. le lien atterrit sur LA MÉTÉO DE CETTE VILLE (?ville=…),
-                     jamais sur une page d'accueil que le destinataire devrait
-                     fouiller ;
-                  2. le message dit déjà l'essentiel — beaucoup de gens ne
-                     cliqueront pas, et le partage doit leur servir quand même. */}
-              <button onClick={partager}
-                style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 8, width: '100%', minHeight: 48, marginTop: 12, borderRadius: 999, border: '1.5px solid rgba(201,168,76,0.55)', background: 'transparent', color: 'var(--or)', fontWeight: 900, fontSize: 14.5, cursor: 'pointer' }}>
-                {partage === 'copie'
-                  ? (en ? '✓ Link copied' : '✓ Lien copié')
-                  : partage === 'echec'
-                    ? (en ? 'Copy failed — select the text' : 'Copie impossible — sélectionne le texte')
-                    : (en ? `📤 Share ${ville.nom} weather` : `📤 Partager la météo de ${ville.nom}`)}
-              </button>
-
-              {/* La suite naturelle : le guide halal de cette ville. */}
-              <Link href={`/destinations/${ville.slug}`}
-                style={{ display: 'inline-flex', alignItems: 'center', minHeight: 46, padding: '0 18px', marginTop: 12, borderRadius: 999, background: 'var(--or)', color: 'var(--nuit)', fontWeight: 900, fontSize: 14.5, textDecoration: 'none' }}>
-                {en ? `Halal guide to ${ville.nom} →` : `Le guide halal de ${ville.nom} →`}
-              </Link>
-            </>
-          ) : cherche ? (
-            <p style={{ color: 'var(--or-clair)', fontSize: 15, margin: 0, padding: '20px 0' }}>
-              🌤️ {en ? 'Getting the weather…' : 'Recherche de la météo…'}
-            </p>
-          ) : (
-            <div style={{ padding: '14px 0' }}>
-              <p style={{ color: '#fdfaf3', fontSize: 15, fontWeight: 700, margin: 0 }}>
-                {en ? `No forecast for ${ville.nom} right now.` : `Pas de prévision pour ${ville.nom} pour le moment.`}
-              </p>
-              <p style={{ color: 'rgba(253,250,243,0.7)', fontSize: 13, margin: '5px 0 0' }}>
-                {en ? 'Try again in a moment.' : 'Réessaie dans un instant.'}
-              </p>
-            </div>
-          )}
-        </div>
+      {arriveParLien ? (
+        <>
+          {blocReponse}
+          {blocIci}
+          {blocRecherche}
+        </>
+      ) : (
+        <>
+          {blocIci}
+          {blocRecherche}
+          {blocReponse}
+        </>
       )}
 
       <p style={{ fontSize: 12, color: 'var(--texte-2)', textAlign: 'center', margin: '4px 0 0' }}>
