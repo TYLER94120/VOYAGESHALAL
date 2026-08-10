@@ -687,7 +687,12 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
             <div style={{ ...T.tile, background: 'linear-gradient(150deg, rgba(27,67,50,0.85), rgba(255,255,255,0.04))', borderColor: 'rgba(201,168,76,0.35)' }}>
               <p style={T.lab}>{envieActive.emoji} {envieActive[en ? 'en' : 'fr']}</p>
               <p style={{ fontFamily: "'Playfair Display', Georgia, serif", color: '#fdfaf3', fontSize: 20, fontWeight: 900, margin: '4px 0 0', lineHeight: 1.2 }}>
-                {en ? `No ${envieActive.en.toLowerCase()} listed within 12 km` : `Aucun ${envieActive.fr.toLowerCase()} signalé à moins de 12 km`}
+                {/* ✍️ « Aucun pizza signalé » — photographié par Mohamed.
+                    Le gabarit accordait au masculin pour les onze envies.
+                    On met l'envie en apposition entre guillemets : plus
+                    aucun accord à faire, et ça marche pour « Pizza » comme
+                    pour « Café · petit-déj ». */}
+                {en ? `No “${envieActive.en}” spot within 12 km` : `Aucune adresse « ${envieActive.fr} » à moins de 12 km`}
               </p>
               <p style={{ ...T.meta, marginTop: 4 }}>
                 {en ? 'Our directory does not list one here — we would rather say so than send you somewhere wrong.' : 'Notre annuaire n\'en référence pas ici — on préfère te le dire plutôt que t\'envoyer au mauvais endroit.'}
@@ -720,7 +725,7 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
                 : `🍽 ${en ? 'Eat — the closest' : 'Manger — le plus proche'}`}</p>
               {(rattrapageEnCours || (envie ? restoEnvie === undefined : resto === undefined && !bestResto)) ? <p style={{ ...T.meta, marginTop: 4 }}>…</p>
                 : !bestResto ? <p style={{ ...T.meta, marginTop: 4 }}>{
-                    envieActive ? (en ? `No halal ${envieActive.en.toLowerCase()} listed within 12 km` : `Aucun ${envieActive.fr.toLowerCase()} signalé halal à moins de 12 km`)
+                    envieActive ? (en ? `No “${envieActive.en}” spot within 12 km` : `Aucune adresse « ${envieActive.fr} » à moins de 12 km`)
                       : osmOk ? (en ? 'None reported nearby' : 'Aucun signalé à proximité')
                       : (en ? 'Search not finished — try again' : 'Recherche non terminée — réessaie')
                   }</p>
