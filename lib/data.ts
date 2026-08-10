@@ -2671,26 +2671,64 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     description: "Paris-CDG has prayer spaces in Terminals 1, 2E and 2F, with a Muslim area and wudu facilities. Where each one is, landside or after security.",
     coverImage: "/guides/blog-cdg.jpg",
     category: 'Practical',
-    readTime: "4 min",
+    readTime: "6 min",
     publishedAt: '2026-08-01',
     lang: 'en',
     tags: ['prayer', 'airport', 'cdg', 'paris'],
     content: `
-<p>Transiting through Roissy and looking for where to pray at CDG airport? Paris-Charles de Gaulle has several prayer spaces spread across Terminals 1, 2E and 2F, with a Muslim area and wudu facilities. Here is where to find them.</p>
+<p>Transiting through Roissy and looking for where to pray at CDG airport? Here is what we know, where it comes from, what we do not know, and above all how to plan so you do not spend your connection searching.</p>
+
 <h2>The essentials in 30 seconds</h2>
-<p>CDG has three multi-faith zones: a modern space in Terminal 1, plus spaces in Terminals 2E and 2F. Each includes a Muslim area, a chapel and a synagogue. Access is free.</p>
-<h2>Terminal 1 — the newest prayer space</h2>
-<p>Opened in 2023, the most recent one. Level 2, in the international departure zone (after security), near McDonald's and Paul. It brings together a mosque space, a synagogue and a chapel. Big plus: a wudu area with restrooms nearby.</p>
+<p>Paris-Charles de Gaulle has several <strong>multi-faith spaces</strong> — one in Terminal 1, others in Terminals 2E and 2F. Each brings together a Muslim area, a chapel and a synagogue. Access is <strong>free</strong>. The real question is not "is there a room", it is <strong>which side of security you are on</strong>: that is what decides whether it is reachable at all.</p>
+
+<h2>What we know, and where it comes from</h2>
+<p>The locations below come from the <strong>airport's public information and from traveller reports</strong>. <strong>We have not verified them ourselves on site.</strong> An airport this size is permanently under works: a room moves, an access closes, signage changes. We would rather tell you than let you believe in a map that is accurate to the metre.</p>
+<p><strong>What is established and does not move</strong>: these spaces exist, they are free, they are multi-faith, and airport staff know the request — there is nothing unusual about it.</p>
+
+<h2>Trap number one: before or after security</h2>
+<p>This is the mistake that costs the most at Roissy. A space <strong>after security</strong> is useless if you have just landed and are collecting your bags; a <strong>landside</strong> space is useless once you are in the departure zone, because you do not go back through security to pray — or you queue all over again.</p>
+<p>So before crossing the terminal, ask yourself one question: <em>where am I, and can I still get there without passing a checkpoint?</em> If the answer is no, skip straight to "if you cannot find it".</p>
+
+<h2>Terminal 1 — the newest space</h2>
+<p>Opened in 2023. Level 2, in the international departure zone, so <strong>after security</strong>, near McDonald's and Paul. It brings together a mosque space, a synagogue and a chapel, with a <strong>wudu area</strong> and restrooms nearby. It is the best equipped of the three.</p>
+
 <h2>Terminal 2E — in the transit zone</h2>
-<p>A prayer space is accessible in the transit zone, generally on the L-gates side, level 2. Convenient for long-haul flights from this terminal.</p>
+<p>A prayer space is accessible in the transit zone, generally on the L-gates side, level 2. This is the long-haul terminal: if you are connecting between two long flights, this is probably where your prayer will fall.</p>
+
 <h2>Terminal 2F — at arrivals level</h2>
-<p>A quiet room at arrivals level. Useful for praying before collecting your bags.</p>
-<h2>Practical tips</h2>
-<p>Check which side of security you are on. If you are short on time, a quiet corner near your gate is enough (traveler's prayer, shortened and combined). Keep a small wudu kit; use <a href="/qibla">our qibla tool</a>. See also <a href="/blog/where-to-pray-paris-airports">our complete airports guide</a>.</p>
+<p>A quiet room at arrivals level. Useful for praying <strong>before</strong> collecting your bags, or while waiting for someone.</p>
+
+<h2>What about Terminals 2A, 2B, 2C, 2D and 3?</h2>
+<p><strong>We do not know.</strong> We are not aware of any identified prayer space in those terminals, and we are not going to invent one. If your flight leaves from one of them, plan for the fallback below from the start — or, if you have time and you are still landside, take the CDGVAL to Terminal 2E/2F before going through security.</p>
+
+<h2>If you cannot find it, or you have no time</h2>
+<p>The most common case, and it can be prepared for. Four options, from the simplest down:</p>
+<p><strong>1. Ask at an information desk.</strong> The words that get an answer in a French airport are <strong>"lieu de culte"</strong> or <strong>"salle de recueillement"</strong>, not "prayer room": that is the wording used on the signage, and the agent will know immediately what you mean.<br/>
+<strong>2. Follow the signage.</strong> Places of worship are signposted like toilets or lifts, often with a small pictogram. Look up at the overhead panels rather than hunting for a door.<br/>
+<strong>3. A quiet corner near your gate.</strong> Pier ends, gates for later departures and connecting corridors empty out between flights. A pocket mat and two minutes are enough.<br/>
+<strong>4. Praying seated in the gate area.</strong> When only a few minutes of the window are left, this is what many travellers do.</p>
+<p>On what is permitted in those situations — shortening, combining, making up — <strong>we do not rule</strong>: that is a religious question. Put it to <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&amp;utm_medium=passerelle&amp;utm_campaign=cdg-en" target="_blank" rel="noopener noreferrer">HalalGPT</a>, which is built for it.</p>
+
+<h2>Wudu</h2>
+<p>This is the real obstacle, more than the prayer itself. Only Terminal 1 has a dedicated area as far as we know: everywhere else it is the toilets — busy, with high basins and sensor taps that cut the water. Two habits change everything: filling <strong>a small squeezable bottle</strong> at the basin before going into the cubicle, and keeping a <strong>microfibre towel</strong> in your cabin bag. The accessible cubicle, when free, has a basin inside — leave it immediately if someone needs it. The full method is in our guide: <a href="/blog/wudu-on-a-plane-or-train">making wudu while travelling</a>.</p>
+
+<h2>The prayer that causes trouble</h2>
+<p>At CDG it depends on your flight time. <strong>Fajr</strong> for early departures: the window ends at sunrise, often while you are checking in or queueing at security. <strong>Maghrib</strong> in winter: it falls in the late afternoon, at the peak of departures, and its window is short.</p>
+<p>The habit that fixes it: check the day's times <em>before leaving home</em>, not in the queue. Our <a href="/prayer-times">prayer times</a> give them for Roissy as well as Paris, and the page still works without a signal once opened. Remember too that <strong>boarding closes around 20 minutes before departure</strong>: that is the time that decides whether you pray now or at the gate — not the departure time on the board.</p>
+
+<h2>With children, a pushchair, a cabin bag</h2>
+<p>A <strong>pocket prayer mat is no problem at security</strong>: it is an ordinary item and nobody blinks. Pack it along the side of the bag rather than at the bottom — you will get it out faster. With a pushchair and luggage, the quiet corner near your gate is often the sensible choice: crossing two terminals for a room you are not sure to find costs more than it returns.</p>
+
 <h2>Frequently asked questions</h2>
-<p><strong>Is there a Muslim prayer room at CDG?</strong> Yes, several spaces (Terminals 1, 2E, 2F).<br/><strong>Can you do wudu?</strong> Yes, wudu corner in Terminal 1; otherwise the restrooms.<br/><strong>Is access free?</strong> Yes.</p>
+<p><strong>Is there a Muslim prayer room at CDG?</strong> Yes, several multi-faith spaces with a Muslim area (Terminals 1, 2E, 2F).<br/>
+<strong>Are they before or after security?</strong> The Terminal 1 one is in the departure zone, so after; the 2F one is at arrivals level. Check which side you are on before crossing.<br/>
+<strong>Can you do wudu?</strong> There is a dedicated area in Terminal 1; elsewhere, the restrooms.<br/>
+<strong>Is access free?</strong> Yes.<br/>
+<strong>What about Orly?</strong> See <a href="/blog/where-to-pray-orly-airport">where to pray at Paris Orly</a>.<br/>
+<strong>And other airports?</strong> See <a href="/blog/where-to-pray-paris-airports">our complete airport prayer room guide</a>.</p>
+
 <h2>Help the community</h2>
-<p>Noticed a change at CDG, a precise landmark? Share it — an ongoing sadaqa. <a href="/communaute">→ Join the community</a></p>
+<p>Have you prayed at Roissy recently? Tell us <strong>which terminal, which side of security, and what the information desk told you</strong>. That is exactly the information this page is missing, and it will serve hundreds of connecting travellers. <a href="/communaute/ajouter">→ Add the place</a> · <a href="/communaute">→ Join the community</a></p>
 `,
   },
   {
@@ -2699,26 +2737,67 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     description: "Orly has prayer rooms and quiet spaces, including a Muslim prayer room with separate areas for men and women. Here is where to find them.",
     coverImage: "/guides/blog-orly.jpg",
     category: 'Practical',
-    readTime: "4 min",
+    readTime: "6 min",
     publishedAt: '2026-08-01',
     lang: 'en',
     tags: ['prayer', 'airport', 'orly', 'paris'],
     content: `
-<p>Flying from Orly? The airport has prayer rooms and multi-faith spaces, including a Muslim prayer room with separate men's and women's areas. Here is where to find them.</p>
+<p>Flying from Paris Orly and looking for where to pray? Here is what we know, where it comes from, what we do not know, and above all how to plan — because at Orly the hard part is not finding the room, it is finding it <strong>open</strong>.</p>
+
 <h2>The essentials in 30 seconds</h2>
-<p>At Orly you can pray in a chapel, a synagogue or a Muslim prayer room, spread across Orly 1, 2 and 4. A multi-faith space is generally open from 7:00 to 22:00.</p>
-<h2>The Muslim prayer room (Orly 4 / former Orly Sud)</h2>
-<p>The main one: level -1 of the South terminal (Orly 4). It holds around fifty people, split into two areas (men / women).</p>
+<p>Orly has several places of worship: a <strong>Muslim prayer room</strong>, a chapel and a synagogue, spread across Orly 1, 2 and 4. Access is <strong>free</strong>. The multi-faith space is generally open from <strong>7:00 to 22:00</strong> — and that is the sentence to remember, not the location.</p>
+
+<h2>What we know, and where it comes from</h2>
+<p>The locations below come from the <strong>airport's public information and from traveller reports</strong>. <strong>We have not verified them ourselves on site.</strong> Orly has been heavily reworked: the terminals were renumbered (Orly Sud and Orly Ouest became Orly 1, 2, 3 and 4) and works continue. Many landmarks you will find online are still written in the old vocabulary — that is the main source of confusion.</p>
+<p><strong>What is established and does not move</strong>: these places exist, they are free, staff know the request, and French signage calls them <strong>"lieu de culte"</strong> or <strong>"salle de recueillement"</strong>.</p>
+
+<h2>Trap number one at Orly: the hours</h2>
+<p>Closing around 22:00 at an airport that departs flights at 6:00 and lands them after midnight means one simple thing: <strong>for a night flight or a very early one, the room will probably not be available to you</strong>. That is the difference with Roissy, where the question is rather which side of security you are on.</p>
+<p>So the decision is made <em>before you leave home</em>, not in the terminal: if your prayer falls outside the 07:00–22:00 window, assume from the start that you will pray in a quiet corner, and prepare accordingly (pocket mat within reach, wudu done early).</p>
+
+<h2>Trap number two: before or after security</h2>
+<p>It applies here too. A landside space is of no use once you are in the departure zone: you do not go back through security to pray, or you queue all over again. Before crossing the terminal, ask yourself: <em>where am I, and can I still get there without passing a checkpoint?</em></p>
+
+<h2>The Muslim prayer room (Orly 4, former Orly Sud)</h2>
+<p>The main one: level -1 of the South terminal, now Orly 4. It holds around fifty people and has two separate areas, men and women. As far as we know it is the only space at the airport explicitly dedicated to Muslim prayer.</p>
+
 <h2>The chapel (Orly 4)</h2>
 <p>On the second level of the Orly 4 hall (former Orly Sud), among the airport's historic places of worship.</p>
+
 <h2>Orly 1 and 2</h2>
-<p>Quiet spaces also exist on the Orly 1 and 2 side. Follow the "place of worship" signs or ask a staff member.</p>
-<h2>Practical tips</h2>
-<p>Check the opening hours (closes around 22:00): for a night flight, pray beforehand. Note whether the space is before or after security. In a rush, a quiet corner is enough (shortened and combined traveler's prayer). Use <a href="/qibla">our qibla tool</a>. See also <a href="/blog/where-to-pray-paris-airports">our complete airports guide</a>.</p>
+<p>Quiet spaces also exist on that side. Follow the "lieu de culte" signs or ask a staff member. <strong>We do not know</strong> whether they include a separate Muslim area — we will not write it until it has been verified.</p>
+
+<h2>What about Orly 3?</h2>
+<p><strong>We do not know.</strong> We are not aware of any identified place of worship on the Orly 3 side, and we are not going to invent one. If your flight leaves from there, assume you will pray in a quiet corner, or walk over to Orly 4 while you are still landside.</p>
+
+<h2>If it is closed, or you have no time</h2>
+<p>The most common case at Orly, and it can be prepared for. Four options, from the simplest down:</p>
+<p><strong>1. Ask at an information desk.</strong> Use the words on the signage — <strong>"lieu de culte"</strong>, <strong>"salle de recueillement"</strong> — rather than "prayer room": the agent will know immediately what you mean, and will also know whether it is open at that hour.<br/>
+<strong>2. Follow the overhead panels.</strong> Places of worship are signposted like toilets or lifts, often with a small pictogram. Look up rather than hunting for a door.<br/>
+<strong>3. A quiet corner near your gate.</strong> Pier ends and gates for later departures empty out between flights. A pocket mat and two minutes are enough.<br/>
+<strong>4. Praying seated in the gate area.</strong> When only a few minutes of the window are left, this is what many travellers do.</p>
+<p>On what is permitted in those situations — shortening, combining, making up — <strong>we do not rule</strong>: that is a religious question. Put it to <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&amp;utm_medium=passerelle&amp;utm_campaign=orly-en" target="_blank" rel="noopener noreferrer">HalalGPT</a>, which is built for it.</p>
+
+<h2>Wudu</h2>
+<p>This is the real obstacle, more than the prayer itself: airport toilets are busy, basins are high and sensor taps cut the water every three seconds. Two habits change everything: filling <strong>a small squeezable bottle</strong> at the basin before going into the cubicle, and keeping a <strong>microfibre towel</strong> in your cabin bag. The accessible cubicle, when free, has a basin inside — leave it immediately if someone needs it. The full method is in our guide: <a href="/blog/wudu-on-a-plane-or-train">making wudu while travelling</a>.</p>
+
+<h2>The prayer that causes trouble</h2>
+<p>At Orly it is <strong>Fajr</strong>, and it is structural: the airport runs early departures, the room only opens at 07:00, and the Fajr window ends at sunrise — so before opening for much of the year. In winter, <strong>Isha</strong> creates the mirror problem: it falls after closing time for an evening flight.</p>
+<p>The habit that fixes it: check the day's times <em>before leaving home</em>. Our <a href="/prayer-times">prayer times</a> give them for Paris and its southern suburbs, and the page still works without a signal once opened. Remember too that <strong>boarding closes around 20 minutes before departure</strong>: that is the time that decides whether you pray now or at the gate — not the departure time on the board.</p>
+
+<h2>With children, a pushchair, a cabin bag</h2>
+<p>A <strong>pocket prayer mat is no problem at security</strong>: it is an ordinary item and nobody blinks. Pack it along the side of the bag rather than at the bottom — you will get it out faster. With a pushchair, going down to level -1 and back up costs real time: if your flight leaves from another building, the quiet corner near your gate is usually the sensible choice.</p>
+
 <h2>Frequently asked questions</h2>
-<p><strong>Is there a Muslim prayer room at Orly?</strong> Yes, level -1 of the South terminal (Orly 4).<br/><strong>Opening hours?</strong> Multi-faith space generally 7:00-22:00.<br/><strong>Free?</strong> Yes.</p>
+<p><strong>Is there a Muslim prayer room at Orly?</strong> Yes, on level -1 of the South terminal (Orly 4), with separate men's and women's areas.<br/>
+<strong>What are the opening hours?</strong> The multi-faith space is generally open from 07:00 to 22:00. For a night or very early flight, plan something else.<br/>
+<strong>Is it free?</strong> Yes.<br/>
+<strong>Is it before or after security?</strong> Check which side you are on before crossing: you do not go back through a checkpoint to pray.<br/>
+<strong>What about CDG?</strong> See <a href="/blog/where-to-pray-cdg-airport">where to pray at Paris CDG airport</a>.<br/>
+<strong>And other airports?</strong> See <a href="/blog/where-to-pray-paris-airports">our complete airport prayer room guide</a>.</p>
+
 <h2>Help the community</h2>
-<p>Found a good prayer corner with the Orly works? Share it — every spot helps dozens of brothers and sisters pray while traveling, an ongoing sadaqa. <a href="/communaute">→ Join the community</a></p>
+<p>Have you prayed at Orly recently? Tell us <strong>which building, at what time, whether it was open, and which side of security</strong>. Real opening hours are exactly what this page is missing, and they matter most for night flights. <a href="/communaute/ajouter">→ Add the place</a> · <a href="/communaute">→ Join the community</a></p>
 `,
   },
   {
@@ -3112,23 +3191,62 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     description: "Paris-CDG a plusieurs espaces de prière aux terminaux 1, 2E et 2F, avec coin musulman et ablutions. Où ils se trouvent, côté ville ou après la sécurité.",
     coverImage: "/guides/blog-cdg.jpg",
     category: 'Pratique',
-    readTime: "4 min",
+    readTime: "7 min",
     publishedAt: '2026-07-20',
     tags: ["CDG", "Paris", "Aéroports", "Prière"],
-    content: `<p>Tu transites par Roissy et tu cherches où prier à l'aéroport CDG ? Paris-Charles de Gaulle dispose de plusieurs espaces de prière, répartis entre les terminaux 1, 2E et 2F, avec un coin musulman et des ablutions. Voici où les trouver.</p>
+    content: `<p>Tu transites par Roissy et tu cherches où prier à l'aéroport CDG ? Voici ce qu'on sait, d'où ça vient, ce qu'on ignore, et surtout comment t'organiser pour ne pas passer ta correspondance à chercher.</p>
+
 <h2>L'essentiel en 30 secondes</h2>
-<p>CDG compte trois zones de recueillement : un espace multiconfessionnel moderne au Terminal 1, plus des espaces aux Terminaux 2E et 2F. Chacun regroupe un espace musulman, une chapelle et une synagogue. Accès gratuit.</p>
-<h2>Terminal 1 — le nouvel espace de prière</h2>
-<p>Inauguré en 2023, le plus récent. Niveau 2, en zone d'embarquement internationale (après les contrôles), près du McDonald's et du Paul. Il réunit un espace mosquée, une synagogue et une chapelle. Atout : un espace pour les ablutions et des toilettes à proximité.</p>
+<p>Paris-Charles de Gaulle dispose de plusieurs <strong>espaces multiconfessionnels</strong> — un au Terminal 1, d'autres aux Terminaux 2E et 2F. Chacun réunit un espace musulman, une chapelle et une synagogue. L'accès est <strong>gratuit</strong>. La vraie question n'est pas « y a-t-il une salle », c'est <strong>de quel côté des contrôles tu te trouves</strong> : c'est ce qui décide si elle t'est accessible ou non.</p>
+
+<h2>Ce que nous savons, et d'où ça vient</h2>
+<p>Les emplacements ci-dessous viennent des <strong>informations publiques de l'aéroport et de témoignages de voyageurs</strong>. <strong>Nous ne les avons pas vérifiés nous-mêmes sur place.</strong> Un aéroport de cette taille est en travaux permanents : une salle déménage, un accès ferme, une signalétique change. Nous préférons te le dire plutôt que te laisser croire à une carte à jour au mètre près.</p>
+<p><strong>Ce qui est établi et ne bouge pas</strong> : ces espaces existent, ils sont gratuits, ils sont multiconfessionnels, et le personnel de l'aéroport connaît la demande — elle n'a rien d'exceptionnel.</p>
+
+<h2>Le piège n° 1 : avant ou après les contrôles</h2>
+<p>C'est l'erreur qui coûte le plus cher à Roissy. Un espace situé <strong>après les contrôles</strong> ne te sert à rien si tu viens d'atterrir et que tu récupères tes bagages ; un espace <strong>côté ville</strong> ne te sert à rien si tu es déjà en zone d'embarquement, car on ne repasse pas la sécurité pour aller prier — ou alors on refait toute la file.</p>
+<p>Avant de traverser le terminal, pose-toi donc une seule question : <em>où suis-je, et est-ce que je peux encore y aller sans repasser un contrôle ?</em> Si la réponse est non, saute directement à la section « si tu ne trouves pas ».</p>
+
+<h2>Terminal 1 — l'espace le plus récent</h2>
+<p>Inauguré en 2023. Niveau 2, en zone d'embarquement internationale, donc <strong>après les contrôles</strong>, près du McDonald's et du Paul. Il réunit un espace mosquée, une synagogue et une chapelle, avec un <strong>espace pour les ablutions</strong> et des toilettes à proximité. C'est le mieux équipé des trois.</p>
+
 <h2>Terminal 2E — en zone de transit</h2>
-<p>Un espace de prière est accessible en zone de transit, généralement côté porte L, niveau 2. Pratique pour les long-courriers de ce terminal.</p>
+<p>Un espace de prière est accessible en zone de transit, généralement côté portes L, niveau 2. C'est le terminal des long-courriers : si tu enchaînes deux vols longs, c'est probablement là que ta prière tombera.</p>
+
 <h2>Terminal 2F — au niveau des arrivées</h2>
-<p>Un espace de recueillement au niveau des arrivées. Utile pour prier avant de récupérer tes bagages.</p>
-<h2>Conseils pratiques</h2>
-<p>Vérifie de quel côté de la sécurité tu es. Si tu es serré, un coin calme près de ta porte suffit (prière du voyageur raccourcie et regroupée). Garde un nécessaire d'ablutions ; utilise <a href="/qibla">notre outil qibla</a>. Voir aussi <a href="/blog/ou-prier-aeroports">notre guide complet des aéroports</a>.</p>
+<p>Un espace de recueillement au niveau des arrivées. Utile pour prier <strong>avant</strong> de récupérer tes bagages, ou en attendant quelqu'un.</p>
+
+<h2>Et dans les terminaux 2A, 2B, 2C, 2D et 3 ?</h2>
+<p><strong>Nous ne savons pas.</strong> Nous n'avons connaissance d'aucun espace de prière identifié dans ces terminaux, et nous n'allons pas en inventer un. Si ton vol part de l'un d'eux, prévois d'emblée la solution de repli ci-dessous — ou, si tu as le temps et que tu es côté ville, rejoins le terminal 2E/2F par le CDGVAL avant de passer les contrôles.</p>
+
+<h2>Si tu ne trouves pas, ou si tu n'as pas le temps</h2>
+<p>Le cas le plus fréquent, et il se prépare. Quatre solutions, de la plus simple à la moins confortable :</p>
+<p><strong>1. Demande au comptoir information.</strong> Le mot qui obtient une réponse dans un aéroport français est <strong>« lieu de culte »</strong> ou <strong>« salle de recueillement »</strong>, pas « salle de prière » : c'est le vocabulaire de la signalétique, et l'agent saura immédiatement de quoi tu parles.<br/>
+<strong>2. Suis la signalétique.</strong> Les lieux de culte sont fléchés comme les toilettes ou les ascenseurs, souvent avec un pictogramme discret. Lève les yeux vers les panneaux suspendus plutôt que de chercher une porte.<br/>
+<strong>3. Un coin calme près de ta porte.</strong> Les extrémités de jetée, les zones d'embarquement des vols suivants et les couloirs de correspondance se vident entre deux départs. Un tapis de poche et deux minutes suffisent.<br/>
+<strong>4. Prier assis, en salle d'embarquement.</strong> Quand il ne reste que quelques minutes avant la fin du créneau, c'est ce que font beaucoup de voyageurs.</p>
+<p>Sur ce qu'on a le droit de faire dans ces situations — raccourcir, regrouper, rattraper — <strong>nous ne tranchons pas</strong> : c'est une question religieuse. Pose-la à <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&amp;utm_medium=passerelle&amp;utm_campaign=cdg" target="_blank" rel="noopener noreferrer">HalalGPT</a>, qui est fait pour ça.</p>
+
+<h2>Les ablutions</h2>
+<p>C'est le vrai obstacle, plus que la prière elle-même. Seul le Terminal 1 dispose d'un espace dédié à notre connaissance : partout ailleurs, ce sont les toilettes, très fréquentées, avec des lavabos hauts et des capteurs qui coupent l'eau. Deux habitudes qui changent tout : remplir <strong>une petite bouteille souple</strong> au lavabo avant d'entrer dans la cabine, et garder une <strong>serviette microfibre</strong> dans le bagage cabine. La cabine pour personnes handicapées, quand elle est libre, a un lavabo à l'intérieur — laisse-la immédiatement si quelqu'un en a besoin. Le détail de la méthode est dans notre guide : <a href="/blog/ablutions-avion-train">faire ses ablutions en voyage</a>.</p>
+
+<h2>La prière qui pose problème</h2>
+<p>À CDG, ce n'est pas la même selon l'heure de ton vol. <strong>Fajr</strong> pour les départs matinaux : le créneau se termine au lever du soleil, souvent pendant l'enregistrement ou la file de sécurité. <strong>Maghrib</strong> en hiver : il tombe en fin d'après-midi, au pic des départs, et son créneau est court.</p>
+<p>Le réflexe qui règle ça : regarder les horaires du jour <em>avant de partir de chez toi</em>, pas dans la file. Nos <a href="/horaires-priere">horaires de prière</a> les donnent pour Roissy comme pour Paris, et la page fonctionne encore sans réseau une fois ouverte. Retiens aussi que <strong>l'embarquement ferme environ 20 minutes avant le décollage</strong> : c'est cette heure-là qui décide si tu pries maintenant ou à la porte, pas l'heure de départ affichée.</p>
+
+<h2>Avec des enfants, une poussette, un bagage cabine</h2>
+<p>Un <strong>tapis de prière de poche ne pose aucun problème au contrôle</strong> : c'est un objet courant et personne ne s'en étonne. Range-le sur le côté du sac plutôt qu'au fond, tu le sortiras plus vite. Avec une poussette et des bagages, la solution la plus simple reste souvent le coin calme près de la porte : traverser deux terminaux pour une salle qu'on n'est pas sûr de trouver coûte plus qu'elle ne rapporte.</p>
+
 <h2>Questions fréquentes</h2>
-<p><strong>Y a-t-il une salle de prière musulmane à CDG ?</strong> Oui, plusieurs espaces (Terminaux 1, 2E, 2F).<br/><strong>Peut-on faire les ablutions ?</strong> Oui, coin ablutions au Terminal 1 ; sinon les toilettes.<br/><strong>L'accès est-il gratuit ?</strong> Oui.</p>
-<h2>Aide la communauté</h2><p>Tu as trouvé un coin prière ou noté un changement à Roissy ? Partage-le : chaque spot aide des dizaines de frères et sœurs à prier en voyage — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
+<p><strong>Y a-t-il une salle de prière musulmane à CDG ?</strong> Oui, plusieurs espaces multiconfessionnels avec une partie musulmane (Terminaux 1, 2E, 2F).<br/>
+<strong>Sont-ils avant ou après la sécurité ?</strong> Celui du Terminal 1 est en zone d'embarquement, donc après ; celui du 2F est au niveau des arrivées. Vérifie de quel côté tu es avant de traverser.<br/>
+<strong>Peut-on faire les ablutions ?</strong> Un espace dédié existe au Terminal 1 ; ailleurs, ce sont les toilettes.<br/>
+<strong>L'accès est-il payant ?</strong> Non.<br/>
+<strong>Et à Orly ?</strong> Voir <a href="/blog/ou-prier-aeroport-orly">où prier à l'aéroport d'Orly</a>.<br/>
+<strong>Et les autres aéroports ?</strong> Voir <a href="/blog/ou-prier-aeroports">notre guide complet des salles de prière d'aéroport</a>.</p>
+
+<h2>Aide la communauté</h2>
+<p>Tu as prié à Roissy récemment ? Dis-nous <strong>dans quel terminal, de quel côté des contrôles, et ce qu'on t'a répondu au comptoir information</strong>. C'est exactement l'information qui manque à cette page, et elle servira à des centaines de voyageurs en correspondance. <a href="/communaute/ajouter">→ Ajouter le lieu</a> · <a href="/communaute">→ Rejoindre la communauté</a></p>`,
   },
   {
     slug: "ou-prier-aeroport-orly",
@@ -3136,23 +3254,65 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     description: "Orly dispose de salles de prière et d'espaces de recueillement, dont une salle de prière musulmane avec espaces séparés hommes / femmes. Voici où les trouver.",
     coverImage: "/guides/blog-orly.jpg",
     category: 'Pratique',
-    readTime: "4 min",
+    readTime: "7 min",
     publishedAt: '2026-07-20',
     tags: ["Orly", "Paris", "Aéroports", "Prière"],
-    content: `<p>Tu voyages depuis Orly ? L'aéroport dispose de salles de prière et d'espaces de recueillement, dont une salle de prière musulmane avec espaces séparés hommes / femmes. Voici où les trouver.</p>
+    content: `<p>Tu voyages depuis Orly et tu cherches où prier ? Voici ce qu'on sait, d'où ça vient, ce qu'on ignore, et surtout comment t'organiser — parce qu'à Orly le vrai problème n'est pas de trouver la salle, c'est de la trouver <strong>ouverte</strong>.</p>
+
 <h2>L'essentiel en 30 secondes</h2>
-<p>À Orly, tu peux prier dans une chapelle, une synagogue ou une salle de prière musulmane, réparties sur Orly 1, 2 et 4. Un espace multiconfessionnel est généralement ouvert de 7h00 à 22h00.</p>
-<h2>La salle de prière musulmane (Orly 4 / ex-Orly Sud)</h2>
-<p>La référence : niveau -1 du terminal Sud (Orly 4). Elle accueille une cinquantaine de personnes, séparée en deux (hommes / femmes).</p>
+<p>Orly dispose de plusieurs lieux de culte : une <strong>salle de prière musulmane</strong>, une chapelle et une synagogue, répartis entre Orly 1, 2 et 4. L'accès est <strong>gratuit</strong>. L'espace multiconfessionnel est généralement ouvert de <strong>7h à 22h</strong> — et c'est cette phrase-là qu'il faut retenir, pas l'emplacement.</p>
+
+<h2>Ce que nous savons, et d'où ça vient</h2>
+<p>Les emplacements ci-dessous viennent des <strong>informations publiques de l'aéroport et de témoignages de voyageurs</strong>. <strong>Nous ne les avons pas vérifiés nous-mêmes sur place.</strong> Orly a été profondément remanié : les terminaux ont été renumérotés (Orly Sud et Orly Ouest sont devenus Orly 1, 2, 3 et 4) et les travaux se poursuivent. Beaucoup de repères qui circulent en ligne sont écrits dans l'ancien vocabulaire — c'est la première source d'erreur.</p>
+<p><strong>Ce qui est établi et ne bouge pas</strong> : ces lieux existent, ils sont gratuits, le personnel connaît la demande, et la signalétique française les appelle <strong>« lieu de culte »</strong> ou <strong>« salle de recueillement »</strong>.</p>
+
+<h2>Le piège n° 1 à Orly : l'heure</h2>
+<p>Une fermeture vers 22h dans un aéroport qui fait décoller des vols à 6h et en fait atterrir après minuit, cela veut dire une chose simple : <strong>pour un vol de nuit ou un vol très matinal, la salle ne te sera probablement pas accessible</strong>. C'est la différence avec Roissy, où la question est plutôt de savoir de quel côté des contrôles on se trouve.</p>
+<p>La bonne décision se prend donc <em>avant</em> de partir de chez toi, pas dans le terminal : si ta prière tombe en dehors de la plage 7h-22h, considère d'emblée que tu prieras dans un coin calme, et prépare-toi en conséquence (tapis de poche accessible, ablutions faites tôt).</p>
+
+<h2>Le piège n° 2 : avant ou après les contrôles</h2>
+<p>Il existe aussi ici. Un espace situé côté ville ne te sert plus à rien une fois en zone d'embarquement : on ne repasse pas la sécurité pour aller prier, ou alors on refait toute la file. Avant de traverser le terminal, pose-toi la question : <em>où suis-je, et puis-je encore y aller sans repasser un contrôle ?</em></p>
+
+<h2>La salle de prière musulmane (Orly 4, ex-Orly Sud)</h2>
+<p>La référence : niveau -1 du terminal Sud, aujourd'hui Orly 4. Elle accueille une cinquantaine de personnes et comporte deux espaces séparés, hommes et femmes. C'est le seul lieu de l'aéroport explicitement dédié à la prière musulmane à notre connaissance.</p>
+
 <h2>La chapelle (Orly 4)</h2>
 <p>Au second niveau du hall d'Orly 4 (ex-Orly Sud), parmi les lieux de culte historiques de l'aéroport.</p>
+
 <h2>Orly 1 et 2</h2>
-<p>Des espaces de recueillement existent aussi côté Orly 1 et 2. Suis la signalétique « lieu de culte » ou demande à un agent.</p>
-<h2>Conseils pratiques</h2>
-<p>Vérifie l'horaire (fermeture vers 22h) : pour un vol de nuit, prie avant. Repère si l'espace est avant ou après les contrôles. En urgence, un coin calme suffit (prière raccourcie et regroupée). Utilise <a href="/qibla">notre outil qibla</a>. Voir aussi <a href="/blog/ou-prier-aeroports">notre guide complet des aéroports</a>.</p>
+<p>Des espaces de recueillement existent aussi de ce côté. Suis la signalétique « lieu de culte » ou demande à un agent. <strong>Nous ne savons pas</strong> s'ils comportent un espace musulman distinct — nous ne l'écrirons pas tant que ce ne sera pas vérifié.</p>
+
+<h2>Et Orly 3 ?</h2>
+<p><strong>Nous ne savons pas.</strong> Nous n'avons connaissance d'aucun lieu de culte identifié côté Orly 3, et nous n'allons pas en inventer un. Si ton vol part de là, pars du principe que tu prieras dans un coin calme, ou traverse vers Orly 4 tant que tu es encore côté ville.</p>
+
+<h2>Si c'est fermé, ou si tu n'as pas le temps</h2>
+<p>Le cas le plus fréquent à Orly, et il se prépare. Quatre solutions, de la plus simple à la moins confortable :</p>
+<p><strong>1. Demande au comptoir information.</strong> Emploie les mots de la signalétique — <strong>« lieu de culte »</strong>, <strong>« salle de recueillement »</strong> — plutôt que « salle de prière » : l'agent saura immédiatement de quoi tu parles, et il sait aussi si c'est ouvert à cette heure-là.<br/>
+<strong>2. Suis les panneaux suspendus.</strong> Les lieux de culte sont fléchés comme les toilettes ou les ascenseurs, souvent avec un pictogramme discret. Lève les yeux plutôt que de chercher une porte.<br/>
+<strong>3. Un coin calme près de ta porte.</strong> Les extrémités de jetée et les salles d'embarquement des vols suivants se vident entre deux départs. Un tapis de poche et deux minutes suffisent.<br/>
+<strong>4. Prier assis, en salle d'embarquement.</strong> Quand il ne reste que quelques minutes avant la fin du créneau, c'est ce que font beaucoup de voyageurs.</p>
+<p>Sur ce qu'on a le droit de faire dans ces situations — raccourcir, regrouper, rattraper — <strong>nous ne tranchons pas</strong> : c'est une question religieuse. Pose-la à <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&amp;utm_medium=passerelle&amp;utm_campaign=orly" target="_blank" rel="noopener noreferrer">HalalGPT</a>, qui est fait pour ça.</p>
+
+<h2>Les ablutions</h2>
+<p>C'est le vrai obstacle, plus que la prière elle-même : les toilettes d'aéroport sont fréquentées, les lavabos sont hauts et les robinets à capteur coupent l'eau toutes les trois secondes. Deux habitudes qui changent tout : remplir <strong>une petite bouteille souple</strong> au lavabo avant d'entrer dans la cabine, et garder une <strong>serviette microfibre</strong> dans le bagage cabine. La cabine pour personnes handicapées, quand elle est libre, a un lavabo à l'intérieur — laisse-la immédiatement si quelqu'un en a besoin. Le détail de la méthode est dans notre guide : <a href="/blog/ablutions-avion-train">faire ses ablutions en voyage</a>.</p>
+
+<h2>La prière qui pose problème</h2>
+<p>À Orly, c'est <strong>Fajr</strong>, et c'est structurel : l'aéroport enchaîne les départs matinaux, la salle n'ouvre qu'à 7h, et le créneau de Fajr se termine au lever du soleil — donc avant l'ouverture pendant une grande partie de l'année. En hiver, <strong>Isha</strong> pose le problème symétrique : elle tombe après la fermeture pour un vol du soir.</p>
+<p>Le réflexe qui règle ça : regarder les horaires du jour <em>avant de partir de chez toi</em>. Nos <a href="/horaires-priere">horaires de prière</a> les donnent pour Paris et sa banlieue sud, et la page fonctionne encore sans réseau une fois ouverte. Retiens aussi que <strong>l'embarquement ferme environ 20 minutes avant le décollage</strong> : c'est cette heure-là qui décide si tu pries maintenant ou à la porte, pas l'heure de départ affichée.</p>
+
+<h2>Avec des enfants, une poussette, un bagage cabine</h2>
+<p>Un <strong>tapis de prière de poche ne pose aucun problème au contrôle</strong> : c'est un objet courant et personne ne s'en étonne. Range-le sur le côté du sac plutôt qu'au fond, tu le sortiras plus vite. Avec une poussette, descendre au niveau -1 puis remonter coûte cher en temps : si ton vol part d'un autre bâtiment, le coin calme près de la porte est souvent le choix raisonnable.</p>
+
 <h2>Questions fréquentes</h2>
-<p><strong>Salle de prière musulmane à Orly ?</strong> Oui, niveau -1 du terminal Sud (Orly 4).<br/><strong>Horaires ?</strong> Espace multiconfessionnel généralement 7h-22h.<br/><strong>Gratuit ?</strong> Oui.</p>
-<h2>Aide la communauté</h2><p>Tu as trouvé un coin prière avec les travaux d'Orly, un bon coin prière ? Partage-le : chaque spot aide des dizaines de frères et sœurs à prier en voyage — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
+<p><strong>Y a-t-il une salle de prière musulmane à Orly ?</strong> Oui, au niveau -1 du terminal Sud (Orly 4), avec deux espaces séparés hommes et femmes.<br/>
+<strong>Quels horaires ?</strong> L'espace multiconfessionnel est généralement ouvert de 7h à 22h. Pour un vol de nuit ou très matinal, prévois autre chose.<br/>
+<strong>Est-ce payant ?</strong> Non.<br/>
+<strong>Est-ce avant ou après la sécurité ?</strong> Vérifie de quel côté tu es avant de traverser : on ne repasse pas un contrôle pour aller prier.<br/>
+<strong>Et à Roissy ?</strong> Voir <a href="/blog/ou-prier-aeroport-cdg">où prier à l'aéroport CDG</a>.<br/>
+<strong>Et les autres aéroports ?</strong> Voir <a href="/blog/ou-prier-aeroports">notre guide complet des salles de prière d'aéroport</a>.</p>
+
+<h2>Aide la communauté</h2>
+<p>Tu as prié à Orly récemment ? Dis-nous <strong>dans quel bâtiment, à quelle heure, si c'était ouvert, et de quel côté des contrôles</strong>. Les horaires réels sont exactement ce qui manque à cette page, et c'est ce qui servira le plus aux vols de nuit. <a href="/communaute/ajouter">→ Ajouter le lieu</a> · <a href="/communaute">→ Rejoindre la communauté</a></p>`,
   },
   {
     slug: "ou-prier-aeroport-marseille",

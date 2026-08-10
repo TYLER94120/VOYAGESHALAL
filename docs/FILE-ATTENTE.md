@@ -53,20 +53,76 @@ requêtes ces pages sortent réellement.
 ### 4. Les 10 pages « où prier » restantes sont courtes
 **Mesuré le 11 août, sur les pages rendues** (et non sur le code — mon
 premier compteur renvoyait 0 partout) : 11 pages, 2 853 mots au total,
-soit 259 en moyenne. Disneyland est passée à 879 ; restent CDG 308,
-Orly 263, guide aéroports 453, gares de Paris 322, Marseille 250,
+soit 259 en moyenne. Disneyland est passée à 879, **CDG à 1 207**,
+**Orly à 1 249** ; restent guide aéroports 453, gares de Paris 322,
+Marseille 250,
 Lyon 224, Bruxelles 221, Genève 208, Toulouse 193, Nice 185.
 Nos guides récents font 900 à 1 200 mots.
 Le modèle est en place : ce qu'on peut ajouter sans rien inventer, c'est
 la méthode (que demander, que faire si on dit non), les ablutions, la
 prière qui pose problème selon la saison, et l'aveu de ce qu'on ne sait
-pas. Suivante à traiter : CDG, puis Orly.
+pas. **Suivante à traiter : le guide aéroports** (453 mots), puis les gares
+de Paris (322).
 
 
 
 ---
 
 ## Fait
+
+### Orly : 263 → 1 249 mots, et le vrai piège est l'HEURE — 11 août
+Troisième page « où prier » approfondie, après Disneyland et CDG. **Avant** :
+263 mots en français, 257 en anglais. **Après : 1 249 et 1 168.** Total des
+onze pages : 4 685 → 5 919 mots.
+
+**Ce qui manquait, et qui est propre à Orly** : la salle ferme vers 22h dans
+un aéroport qui fait décoller à 6h et atterrir après minuit. Le défaut n° 1
+n'est donc pas de trouver la salle, c'est de la trouver ouverte — et
+**Fajr** est structurellement hors plage une grande partie de l'année,
+Isha l'étant en hiver. La page le dit maintenant en tête, avant tout
+emplacement.
+
+**Deuxième piège écrit** : les terminaux ont été renumérotés (Orly Sud et
+Ouest → Orly 1 à 4), donc la plupart des repères qui circulent en ligne
+sont dans l'ancien vocabulaire.
+
+**Provenance qualifiée**, comme pour CDG : les emplacements viennent des
+informations publiques de l'aéroport et de témoignages, pas d'une
+vérification sur place. Aucun nouvel emplacement ajouté, et deux aveux
+francs : Orly 3 (aucun lieu de culte connu de nous) et Orly 1-2 (nous ne
+savons pas s'il y a un espace musulman distinct).
+
+**Vérifié sur les deux domaines** : FR en `lang=fr`, EN en `lang=en`, 15 h2
+de chaque côté, titres à 54 et 55 caractères, descriptions à 158 et 137,
+hreflang réciproque, liens internes en 200. Temps de lecture 4 → 7 min.
+
+### CDG : 308 → 1 207 mots, et le vrai piège enfin écrit — 11 août
+Deuxième page « où prier » approfondie après Disneyland. **Avant** : 308
+mots en français, 272 en anglais. **Après : 1 207 et 1 114.** Total des
+onze pages : 3 506 → 4 685 mots.
+
+**Une affirmation a été qualifiée**, comme pour Disneyland. La page donnait
+les emplacements (Terminal 1 niveau 2, 2E côté portes L, 2F aux arrivées)
+comme des faits établis. Ils viennent des informations publiques de
+l'aéroport et de témoignages de voyageurs — c'est écrit maintenant, avec
+la raison : un aéroport de cette taille est en travaux permanents.
+
+**Ce qui manquait vraiment, et qui n'était nulle part** : le piège du côté
+des contrôles. Un espace après la sécurité ne sert à rien quand on vient
+d'atterrir, et on ne repasse pas un contrôle pour aller prier. C'est la
+question à se poser AVANT de traverser le terminal.
+
+Ajouté sans rien inventer : le mot qui obtient une réponse au comptoir
+(« lieu de culte », pas « salle de prière »), les ablutions dans des
+toilettes à capteurs, **Fajr** pour les vols matinaux et **Maghrib** en
+hiver, la fermeture de l'embarquement 20 minutes avant le décollage comme
+vraie heure limite, et l'aveu franc pour les terminaux 2A à 2D et 3 :
+**nous ne savons pas**, et nous n'inventerons pas.
+
+**Vérifié sur les deux domaines** : FR en `lang=fr`, EN en `lang=en`,
+14 h2 de chaque côté, titres à 51 et 54 caractères, descriptions à 152 et
+141, hreflang réciproque FR ↔ EN, et les 8 liens internes des deux versions
+répondent en 200 sur le bon domaine. Temps de lecture corrigé (4 → 7 min).
 
 ### `force-dynamic` réexaminé — et un vrai défaut trouvé au passage — 11 août
 **La prémisse de l'élément était fausse**, et c'est la mesure qui l'a dit :
