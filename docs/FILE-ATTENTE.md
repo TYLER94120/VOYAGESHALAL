@@ -13,6 +13,12 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 
 ## A faire
 
+> **Etat au cycle 5 : les trois elements ci-dessous sont tous bloques**, et pas
+> par du travail — l'un attend un arbitrage, les deux autres attendent le
+> deploiement. Le prochain cycle doit donc **auditer le site pour remplir la
+> file**, pas forcer un de ces trois. Ne pas inventer de chantier : un element
+> entre ici avec sa preuve mesuree.
+
 1. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
    *Preuve :* c'est la piece la plus puissante de la liste du responsable, et
    elle est la seule non commencee. Le blocage est reel et non technique : une
@@ -43,18 +49,28 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    la reponse sur un telephone avec du vrai reseau. Attend une capture d'ecran de
    Mohamed, ou le deploiement.
 
-4. **Deux lecons sur six proposent la mauvaise deuxieme action.**
-   *Preuve :* mesure du 10 aout, cycle 4 — sur l'ecran de fin, quatre lecons
-   offrent « Voir mon chemin » (`chemin.html`, la page de progression) et
-   **`alphabet-arabe` et `prophetes-coran` offrent « Voir tout le programme »**
-   (`parcours.html`, le catalogue). Pour quelqu'un qui vient de finir, la page de
-   progression sert la seule mesure du site — revenir — et le catalogue montre
-   surtout qu'il n'y a que six lecons. Trouve en posant le lien sortant de fin de
-   lecon ; non corrige dans le meme cycle, un cycle ne fait qu'un element.
-
 ---
 
 ## Fait
+
+- **Les six lecons finissent sur la meme deuxieme action, et c'est la mesure qui
+  l'a choisie** *(10 aout, cycle 5)* — **avant : 4 lecons vers « Mon chemin », 2
+  vers « Tout le programme ». Apres : 6 sur 6 vers « Mon chemin ».**
+  L'incoherence etait le defaut consigne, mais uniformiser vers la mauvaise page
+  aurait ete pire. Alors j'ai compte, apres avoir joue une lecon en entier, les
+  signaux qui donnent une raison de revenir sur chaque destination :
+  **`chemin.html` 7, `parcours.html` 1, l'accueil 2.** `chemin.html` porte la
+  serie, le record, la collection, le calendrier, la prochaine revision, le
+  rendez-vous et le chemin des lecons ; le catalogue ne porte que le chemin des
+  lecons — et montre surtout qu'il n'y en a que six. Le catalogue reste atteignable
+  depuis l'accueil et depuis la page des sourates : rien n'est devenu orphelin.
+  *Deux fois, la mesure elle-meme etait fausse, et elle a failli me faire ecrire
+  un chiffre faux.* Premier jet : l'accueil marquait **0** — mon selecteur de la
+  serie n'existait que sur `chemin.html`. Deuxieme jet : l'anneau du jour
+  marquait absent sur l'accueil — je comptais un signal comme present s'il
+  contenait du **texte**, et l'anneau est un dessin. Corrige : visible **et**
+  porteur de texte ou d'un dessin. Une comparaison ou chaque page est jugee avec
+  le selecteur d'une autre ne compare rien.
 
 - **Un lien sortant enfin pose la ou la question nait** *(10 aout, cycle 4)* —
   **avant : 48 liens sortants, 48 en pied de page, 0 dans le contenu des pages
