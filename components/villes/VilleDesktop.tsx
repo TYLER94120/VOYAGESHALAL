@@ -632,12 +632,26 @@ export default function VilleDesktop({ ville }: { ville: any }) {
             </div>
             )}
             {/* Nos adresses viennent de sources ouvertes : on dit comment
-                vérifier soi-même plutôt que de promettre une certification. */}
+                vérifier soi-même plutôt que de promettre une certification.
+
+                MESURÉ : ce lien pointait vers la MÊME page depuis 338 fiches,
+                avec la même ancre. Un lien de gabarit répété à l'identique est
+                dévalué par Google, et il concentrait tout le maillage sur un
+                seul guide. Le lien reste — il est utile — mais il s'adapte
+                désormais à la ville : peu d'adresses → le guide de survie,
+                beaucoup → les vérifications à faire. */}
             {restaurants.length > 0 && !en && (
-              <a href="/blog/restaurant-vraiment-halal-verifier"
-                style={{ display: 'inline-flex', alignItems: 'center', gap: 8, minHeight: 44, marginBottom: 14, fontSize: 13.5, fontWeight: 700, color: 'var(--foret)', textDecoration: 'none' }}>
-                🔎 Ce restaurant est-il vraiment halal ? Les 7 vérifications à faire →
-              </a>
+              restaurantsTotal < 15 ? (
+                <a href="/blog/aucun-restaurant-halal-que-faire"
+                  style={{ display: 'inline-flex', alignItems: 'center', gap: 8, minHeight: 44, marginBottom: 14, fontSize: 13.5, fontWeight: 700, color: 'var(--foret)', textDecoration: 'none' }}>
+                  🥘 Peu d&apos;adresses ici ? Que manger quand il n&apos;y a pas de halal →
+                </a>
+              ) : (
+                <a href="/blog/restaurant-vraiment-halal-verifier"
+                  style={{ display: 'inline-flex', alignItems: 'center', gap: 8, minHeight: 44, marginBottom: 14, fontSize: 13.5, fontWeight: 700, color: 'var(--foret)', textDecoration: 'none' }}>
+                  🔎 Vérifier qu&apos;un restaurant est vraiment halal : 7 contrôles →
+                </a>
+              )
             )}
             {/* LISTE COMPACTE — lignes denses scannables, zéro faux visuel :
                 nom + type, puce source discrète, une action Maps à droite */}

@@ -1662,7 +1662,7 @@ Si un ajustement est nécessaire, il est presque toujours possible de le faire s
   {
     slug: "ablutions-avion-train",
     title: "Ablutions en avion, en train et en toilettes publiques",
-    description: "Peu d'eau, peu de place, du monde derrière la porte : voici la méthode concrète pour faire ses ablutions en voyage sans inonder le lavabo ni bloquer les toilettes.",
+    description: "Peu d'eau, peu de place, du monde derrière la porte : la méthode concrète pour faire ses ablutions en avion, en train et en toilettes publiques.",
     coverImage: "/guides/blog-train.jpg",
     category: 'Pratique',
     readTime: "5 min",
