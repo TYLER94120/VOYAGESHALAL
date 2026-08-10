@@ -775,11 +775,23 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
             Fusionnees pour alleger le board (7 instruments -> 6). Deux
             zones de frappe distinctes, chacune >= 44 px. */}
         <div className="board-smalls" style={{ ...T.tile, marginTop: 10, display: 'flex', alignItems: 'center', gap: 10, padding: '6px 10px' }}>
-          <Link href="/qibla" style={{ flex: 1, minHeight: 44, display: 'flex', alignItems: 'center', gap: 8, textDecoration: 'none' }}>
+          {/* 🧭 LA QIBLA EN DORÉ PLEIN — demandé par Mohamed : « mets le bouton
+              de la Qibla plus visible ». Il était en texte clair sur fond
+              sombre, au même poids que la date hégirienne à côté : rien ne
+              disait que c'était le bouton le plus utile de la ligne. L'or plein
+              est la couleur d'action du site (celle d'« Itinéraire »), donc il
+              se lit comme un bouton et non comme une information. */}
+          <Link href="/qibla" aria-label={en ? 'Qibla compass' : 'Boussole Qibla'}
+            style={{
+              flex: 1, minHeight: 46, display: 'flex', alignItems: 'center', justifyContent: 'center',
+              gap: 8, textDecoration: 'none', borderRadius: 999,
+              background: 'var(--or)', color: 'var(--nuit)',
+              boxShadow: '0 2px 12px rgba(201,168,76,0.35)',
+            }}>
             <span style={{ fontSize: 19, transform: `rotate(${qibla.deg}deg)`, display: 'inline-block', lineHeight: 1 }} aria-hidden>🧭</span>
-            <span style={{ color: '#fdfaf3', fontWeight: 800, fontSize: 14 }}>
+            <span style={{ color: 'var(--nuit)', fontWeight: 900, fontSize: 14.5 }}>
               {qibla.deg}° · {qibla.dir}
-              <span style={{ ...T.meta, fontWeight: 600, marginLeft: 6 }}>{en ? 'Qibla' : 'Qibla'}</span>
+              <span style={{ fontWeight: 800, fontSize: 12.5, marginLeft: 6, opacity: 0.75 }}>Qibla</span>
             </span>
           </Link>
           <span aria-hidden style={{ width: 1, alignSelf: 'stretch', background: 'rgba(253,250,243,0.14)' }} />
