@@ -218,8 +218,17 @@ export default function MeteoClient({ en = false }: { en?: boolean }) {
   // 3. La réponse.
   const blocReponse = ville && (
             <div ref={reponseRef} style={{ ...carte, scrollMarginTop: 12, background: 'var(--nuit)', border: '1px solid rgba(201,168,76,0.3)', textAlign: 'center' }}>
-              <p style={{ color: 'var(--or)', fontSize: 11, fontWeight: 800, letterSpacing: 2, textTransform: 'uppercase', margin: 0 }}>
-                {ville.nom} · {ville.pays}
+              {/* 🏙 LE NOM DE LA VILLE EST LE SUJET, PAS UNE ÉTIQUETTE.
+                  Mohamed : « quand j'ai envoyé la ville, elle ne saute pas aux
+                  yeux ». Elle était en 11 px, en capitales espacées, au-dessus
+                  du reste — le format d'un libellé, pas d'un titre. Or c'est
+                  toute la raison d'être du lien partagé : celui qui l'ouvre
+                  doit voir DE QUELLE VILLE on parle avant tout le reste. */}
+              <p style={{ fontFamily: "'Playfair Display', Georgia, serif", color: '#fdfaf3', fontSize: 30, fontWeight: 900, margin: 0, lineHeight: 1.1 }}>
+                {ville.nom}
+              </p>
+              <p style={{ color: 'var(--or)', fontSize: 12, fontWeight: 800, letterSpacing: 1.5, textTransform: 'uppercase', margin: '1px 0 0' }}>
+                {ville.pays}
               </p>
 
               {laBas?.maintenant ? (
