@@ -5,6 +5,67 @@ Les entrees les plus recentes sont en haut.
 
 ---
 
+## 2026-08-10 — LIVRE — `faire-revenir-sans-culpabiliser`, et je ne peux pas la copier partout
+
+Elle est ecrite et poussee :
+`.claude/skills/faire-revenir-sans-culpabiliser/SKILL.md`, 205 lignes.
+
+Trois remarques sur le fond, une sur la logistique.
+
+**J'ai suivi tes trois exigences, et la troisieme est la plus utile.** La section
+« QUAND NE PAS APPLIQUER » nomme tes produits un par un : une serie n'a aucun sens
+sur un guide de voyage (elle reprocherait a quelqu'un de ne pas partir en voyage)
+ni sur un scanner en magasin (l'usage est declenche par un besoin, pas par
+l'assiduite). Le test tient en une question : **« si la personne n'ouvre pas ce
+produit pendant deux semaines, est-ce un probleme pour elle ? »** Si non, pas de
+serie. J'y precise ce qui reste malgre tout transferable aux quatre produits : le
+son d'erreur qui ne punit pas, et l'interdiction d'affirmer une recompense non
+observee.
+
+**La lecon dont je suis le plus sur, c'est celle-ci : rends la regle de ton
+mecanique, pas morale.** Une consigne « jamais de culpabilite » se perd en trois
+semaines. Un test qui echoue si les mots « perdu », « casse », « dommage »,
+« rate », « echec » apparaissent dans l'etat « serie cassee », ca tient. Six
+lignes, et un futur agent presse ne peut plus reintroduire la honte par
+inadvertance. Si une seule chose de ma competence doit passer dans les autres,
+c'est celle-la.
+
+**Un chiffre a corriger dans ton message.** Tu ecris que mon jour de grace est
+« gagne tous les 5 jours, consomme automatiquement, annonce apres coup » : c'est
+exact, et il y a une quatrieme regle que tu ne cites pas et qui compte autant —
+**2 en stock au maximum**. Sans plafond, un absent de trois semaines garde sa
+serie et le compteur ne veut plus rien dire. Les constantes sont verifiees dans le
+code avant d'etre ecrites dans la competence (`GRACE_TOUS_LES = 5`,
+`GRACE_MAX = 2`, `OBJ_REVISIONS = 3`, 900 ms entre deux sons, 20 controles de
+logique pure).
+
+**La logistique : je ne peux pas la copier dans les trois depots.** C'est verifie
+ce soir, deux fois : mon acces GitHub est verrouille sur le seul depot
+`voyageshalal` (creation de depot refusee en 403, lecture d'un autre depot
+refusee), et l'outil qui rattacherait un autre depot demande une approbation que
+cette session n'a pas. S'y ajoute ma consigne fondatrice : **ne jamais toucher aux
+depots halalgpt et voyageshalal-app.** La copie vers ces deux depots doit donc
+venir de toi ou de Mohamed.
+
+Un detail a savoir avant de copier : `.claude/skills/` vit sur `main` du depot
+voyageshalal, ma branche n'en portait aucune copie. J'ai donc ajoute **ma
+competence seule**, sans rapatrier les trois autres — je ne voulais pas dupliquer
+sur une branche ce qui vit deja sur main. Quand tu integreras, prends juste le
+dossier `faire-revenir-sans-culpabiliser/`.
+
+**Et ce que je n'ai pas fait :** je n'ai pas ajoute d'entree dans le tableau du
+`README.md` de la bibliotheque, parce qu'il vit sur `main` et que je ne touche pas
+a main. Ligne prete a coller :
+
+    | `faire-revenir-sans-culpabiliser` | Un retour quotidien sans culpabilite : la serie et son jour de grace, l'objectif toujours atteignable, la limite a ne pas franchir sur une pratique religieuse. Et les produits ou une serie n'a aucun sens. |
+
+Tu peux aussi retirer « Rendre un produit addictif » de tes candidates : c'est
+couvert, et nomme autrement — parce que le nom compte. « Addictif » decrit ce
+qu'on veut obtenir ; « faire revenir sans culpabiliser » decrit la contrainte, et
+c'est la contrainte qui est difficile.
+
+---
+
 ## 2026-08-10 — FAIT (1 et 2) — et le rappel se heurte a une regle du site
 
 ### Ta tache 1 etait deja livree — voici ce qui manquait vraiment
