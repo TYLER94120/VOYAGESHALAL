@@ -13,13 +13,60 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 
 ## A faire
 
-> **Etat au cycle 5 : les trois elements ci-dessous sont tous bloques**, et pas
-> par du travail — l'un attend un arbitrage, les deux autres attendent le
-> deploiement. Le prochain cycle doit donc **auditer le site pour remplir la
-> file**, pas forcer un de ces trois. Ne pas inventer de chantier : un element
-> entre ici avec sa preuve mesuree.
+> **Cycle 6 : audit.** Les trois elements bloques etaient les seuls restants, et
+> aucun n'attend du travail — un arbitrage, et deux fois le deploiement. Ce cycle
+> a donc mesure le site sur quatre points jamais mesures et en a tire **trois
+> elements, chacun avec son chiffre**. Ils passent devant les bloques.
+>
+> **Mesure au cycle 6, et rien a corriger** — a ne pas re-mesurer sans raison :
+> **214 elements contiennent de l'arabe, 214 portent `lang="ar"` et `dir="rtl"`**,
+> zero nu. Et sur les 28 ecrans qui citent un texte sacre, **26 sont sources sur
+> place** : le defaut de l'element 1 porte sur 2 ecrans, pas sur une habitude.
 
-1. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
+1. **Deux ecrans portent un texte sacre sans sa source sur le meme ecran.**
+   *Preuve :* mesure du 10 aout, cycle 6 — sur les **28 ecrans de lecon qui
+   portent du texte coranique ou une traduction du sens, 26 affichent leur source
+   sur le meme ecran, 2 non** :
+   - `priere-gestes` carte 3, « La meme chose en francais » : la traduction
+     complete du hadith des sept gestes, **sans le recueil**. L'arabe et sa source
+     (« Rapporte par al-Boukhari et Mouslim ») sont sur la carte 2.
+   - `invocations-matin` carte 2 : l'arabe complet de *sayyid al-istighfar*, avec
+     « Le Prophete l'a appelee… », **sans le recueil**. Il est sur la carte 3.
+   *Pourquoi c'est un defaut et non un choix :* en mode carte par carte — celui
+   que tout le monde utilise — **un ecran se lit seul**. Une source posee sur la
+   carte voisine est invisible, exactement comme la question du cycle 2 qui
+   arrivait apres sa propre reponse. Et les deux cas se coupent en sens inverse :
+   l'un laisse nu l'ecran **francais**, celui que lit la majorite qui ne lit pas
+   l'arabe ; l'autre laisse nu l'ecran **arabe**, celui qui cite le Prophete.
+   *Ce n'est pas un travail de contenu :* la reference existe deja, sourcee, sur
+   la carte voisine de la meme lecon — il n'y a rien a chercher et rien a decider.
+   Le bon modele existe aussi dans le site : `invocations-matin` carte 5 porte
+   arabe, traduction **et** source sur un seul ecran.
+
+2. **La couleur la plus pale du site n'atteint pas le seuil de lisibilite.**
+   *Preuve :* mesure du 10 aout, cycle 6 — contraste WCAG calcule sur les
+   **10 pages servies**, fonds translucides composes : **36 couleurs de texte
+   affichees, 8 sous le seuil AA**. Six des huit sont la meme variable,
+   `--texte-3` (`#6c8271`) sur le fond nuit : **3,71 la ou il faut 4,5**, a 11,
+   13, 14 et 15 px. Elle sert partout — « Halal travel guide (EN) » a l'accueil,
+   « choses a apprendre » sur les lecons, les initiales des jours du calendrier,
+   les numeros de sourate, « Traduction du sens » sur une carte de lecon. Les deux
+   dernieres : `.t` du pied a 4,34 et la pastille `.etiq-p.ok` a 4,32.
+   *Pourquoi ca compte ici :* Mohamed lit sur un telephone, souvent dehors, et le
+   site est en fond sombre — une couleur juste au seuil dans l'atelier devient
+   illisible au soleil. Correctif attendu : eclaircir `--texte-3`, puis
+   **re-mesurer les 36** ; une seule variable, effet sur les 10 pages.
+
+3. **Le nombre de cartes annonce compte l'ecran de fin, la barre non.** *(mineur,
+   assume comme tel)*
+   *Preuve :* mesure du 10 aout, cycle 6 — le catalogue et `app.js` annoncent
+   **14** cartes pour Al-Fatiha, et la barre de progression en dessine **13**,
+   parce qu'elle exclut l'ecran « Lecon terminee ». Ecart identique sur les 6
+   lecons (14/13, 15/14, 14/13, 10/9, 15/14, 12/11). Les deux chiffres sont
+   defendables ; ce qui ne l'est pas, c'est qu'ils **diffèrent dans le meme
+   produit**. A trancher une fois, pas six.
+
+4. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
    *Preuve :* c'est la piece la plus puissante de la liste du responsable, et
    elle est la seule non commencee. Le blocage est reel et non technique : une
    notification calee sur une heure de priere suppose de **connaitre** cette
@@ -31,7 +78,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    **N'entre pas en travaux avant arbitrage** — c'est une decision, pas un
    chantier.
 
-2. **Aucune mesure d'entree, et un traceur est interdit ici.**
+5. **Aucune mesure d'entree, et un traceur est interdit ici.**
    *Preuve :* `grep -ril "gtag\|analytics\|plausible\|matomo\|umami"` sur toutes
    les pages et les trois fichiers JavaScript ne rend **rien**. Or le pied de
    page promet « Ta progression reste sur ton telephone. Aucun compte, aucun
@@ -40,7 +87,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    journaux). Bloque jusqu'au deploiement — question posee aux trois autres
    agents dans le brainstorm des passerelles.
 
-3. **La recitation n'a jamais ete entendue par personne.**
+6. **La recitation n'a jamais ete entendue par personne.**
    *Preuve :* `halalgpt.fr:443` et `cdn.islamic.network:443` sont refuses par la
    politique reseau de l'atelier (403 au CONNECT, journalise par le proxy,
    verifie trois fois). Le mecanisme est teste avec un recitateur simule — 7
