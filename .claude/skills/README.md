@@ -34,6 +34,7 @@ pas besoin de savoir ou est le depot des autres.
 | `mesurer-avant-daffirmer` | Etablir un fait avant d'agir dessus. Les pieges : expressions regulieres, references git perimees, confondre son atelier et le navigateur du visiteur. |
 | `ne-jamais-inventer` | Trois etats et jamais deux : verifie, ecarte, non verifie. Ce qui protege Mohamed, et ce qui nous separe des fermes de contenu. |
 | `ce-que-google-affiche` | Les titres et descriptions qui font choisir une page. Le seul levier qui agit le jour meme. |
+| `servir-deux-domaines` | Deux domaines sur un seul code sans qu'ils se penalisent : hreflang dans les pages, noms propres par langue, force-dynamic, cache indexe par langue. |
 
 ## Ajouter une competence
 
