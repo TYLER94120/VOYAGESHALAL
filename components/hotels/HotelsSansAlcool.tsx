@@ -117,7 +117,10 @@ export default function HotelsSansAlcool({
           : <>{liste.length} hôtels sur {hotels.length} affichés. La politique alcool est confirmée par OpenStreetMap pour <strong>{nbAlcoolConnu}</strong> d’entre eux — pour les autres nous écrivons « non vérifié » plutôt que de supposer.</>}
       </p>
 
-      <ul style={{ listStyle: 'none', padding: 0, display: 'grid', gap: 10 }}>
+      {/* Sur téléphone : une colonne. Sur PC : deux, sinon chaque carte
+          s'étire sur 860 px pour trois lignes de texte et on ne voit que
+          deux hôtels par écran — du défilement pour rien. */}
+      <ul style={{ listStyle: 'none', padding: 0, display: 'grid', gap: 10, gridTemplateColumns: 'repeat(auto-fill, minmax(330px, 1fr))', alignItems: 'start' }}>
         {liste.slice(0, visibles).map((h, i) => {
           const alcool = etatAlcool(h), halal = etatHalal(h)
           return (
