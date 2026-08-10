@@ -20,30 +20,9 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 >
 > **Mesure au cycle 6, et rien a corriger** — a ne pas re-mesurer sans raison :
 > **214 elements contiennent de l'arabe, 214 portent `lang="ar"` et `dir="rtl"`**,
-> zero nu. Et sur les 28 ecrans qui citent un texte sacre, **26 sont sources sur
-> place** : le defaut de l'element 1 porte sur 2 ecrans, pas sur une habitude.
+> zero nu.
 
-1. **Deux ecrans portent un texte sacre sans sa source sur le meme ecran.**
-   *Preuve :* mesure du 10 aout, cycle 6 — sur les **28 ecrans de lecon qui
-   portent du texte coranique ou une traduction du sens, 26 affichent leur source
-   sur le meme ecran, 2 non** :
-   - `priere-gestes` carte 3, « La meme chose en francais » : la traduction
-     complete du hadith des sept gestes, **sans le recueil**. L'arabe et sa source
-     (« Rapporte par al-Boukhari et Mouslim ») sont sur la carte 2.
-   - `invocations-matin` carte 2 : l'arabe complet de *sayyid al-istighfar*, avec
-     « Le Prophete l'a appelee… », **sans le recueil**. Il est sur la carte 3.
-   *Pourquoi c'est un defaut et non un choix :* en mode carte par carte — celui
-   que tout le monde utilise — **un ecran se lit seul**. Une source posee sur la
-   carte voisine est invisible, exactement comme la question du cycle 2 qui
-   arrivait apres sa propre reponse. Et les deux cas se coupent en sens inverse :
-   l'un laisse nu l'ecran **francais**, celui que lit la majorite qui ne lit pas
-   l'arabe ; l'autre laisse nu l'ecran **arabe**, celui qui cite le Prophete.
-   *Ce n'est pas un travail de contenu :* la reference existe deja, sourcee, sur
-   la carte voisine de la meme lecon — il n'y a rien a chercher et rien a decider.
-   Le bon modele existe aussi dans le site : `invocations-matin` carte 5 porte
-   arabe, traduction **et** source sur un seul ecran.
-
-2. **La couleur la plus pale du site n'atteint pas le seuil de lisibilite.**
+1. **La couleur la plus pale du site n'atteint pas le seuil de lisibilite.**
    *Preuve :* mesure du 10 aout, cycle 6 — contraste WCAG calcule sur les
    **10 pages servies**, fonds translucides composes : **36 couleurs de texte
    affichees, 8 sous le seuil AA**. Six des huit sont la meme variable,
@@ -57,7 +36,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    illisible au soleil. Correctif attendu : eclaircir `--texte-3`, puis
    **re-mesurer les 36** ; une seule variable, effet sur les 10 pages.
 
-3. **Le nombre de cartes annonce compte l'ecran de fin, la barre non.** *(mineur,
+2. **Le nombre de cartes annonce compte l'ecran de fin, la barre non.** *(mineur,
    assume comme tel)*
    *Preuve :* mesure du 10 aout, cycle 6 — le catalogue et `app.js` annoncent
    **14** cartes pour Al-Fatiha, et la barre de progression en dessine **13**,
@@ -66,7 +45,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    defendables ; ce qui ne l'est pas, c'est qu'ils **diffèrent dans le meme
    produit**. A trancher une fois, pas six.
 
-4. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
+3. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
    *Preuve :* c'est la piece la plus puissante de la liste du responsable, et
    elle est la seule non commencee. Le blocage est reel et non technique : une
    notification calee sur une heure de priere suppose de **connaitre** cette
@@ -78,7 +57,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    **N'entre pas en travaux avant arbitrage** — c'est une decision, pas un
    chantier.
 
-5. **Aucune mesure d'entree, et un traceur est interdit ici.**
+4. **Aucune mesure d'entree, et un traceur est interdit ici.**
    *Preuve :* `grep -ril "gtag\|analytics\|plausible\|matomo\|umami"` sur toutes
    les pages et les trois fichiers JavaScript ne rend **rien**. Or le pied de
    page promet « Ta progression reste sur ton telephone. Aucun compte, aucun
@@ -87,7 +66,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    journaux). Bloque jusqu'au deploiement — question posee aux trois autres
    agents dans le brainstorm des passerelles.
 
-6. **La recitation n'a jamais ete entendue par personne.**
+5. **La recitation n'a jamais ete entendue par personne.**
    *Preuve :* `halalgpt.fr:443` et `cdn.islamic.network:443` sont refuses par la
    politique reseau de l'atelier (403 au CONNECT, journalise par le proxy,
    verifie trois fois). Le mecanisme est teste avec un recitateur simule — 7
@@ -99,6 +78,27 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 ---
 
 ## Fait
+
+- **Les 28 ecrans qui citent un texte sacre portent tous leur source** *(10 aout,
+  cycle 7)* — **avant : 26 sur 28. Apres : 28 sur 28.** Les deux ecrans nus :
+  - `priere-gestes` carte 3 — la traduction complete du hadith des sept gestes.
+    Ajoute : « Rapporte par al-Boukhari et Mouslim, d'apres Abou Hourayra. »
+  - `invocations-matin` carte 2 — l'arabe entier de *sayyid al-istighfar*, avec
+    « Le Prophete l'a appelee… ». Ajoute : « Rapporte par al-Boukhari (n°6306),
+    d'apres Chaddad ibn Aws. »
+  *Aucune reference n'a ete cherchee ni redigee.* Les deux existaient, exactes,
+  sur la carte voisine de la meme lecon ; elles sont **recopiees a l'identique**.
+  Zero affirmation religieuse nouvelle, zero traduction touchee. Le nombre de
+  cartes est inchange : ce sont deux blocs de source, pas deux cartes.
+  *Le verrou pose vaut plus que le correctif.* Une regle de ton se perd en trois
+  semaines, un test non : `test-sources.mjs` echoue si un ecran porte du texte
+  coranique ou une traduction du sens **sans sa source sur le meme ecran**.
+  Verifie dans les deux sens — il **echoue** sur la version d'avant en nommant
+  exactement les deux ecrans, il passe sur celle d'apres. Deux controles en
+  prime, tous deux verts : **29 references, aucune vague** (chacune nomme un
+  recueil ou une sourate), et **les 16 sources coraniques nomment la sourate ET
+  le verset**.
+  Regression : 6 suites, 0 echec.
 
 - **Les six lecons finissent sur la meme deuxieme action, et c'est la mesure qui
   l'a choisie** *(10 aout, cycle 5)* — **avant : 4 lecons vers « Mon chemin », 2
