@@ -1,3 +1,4 @@
+import { descriptionSeo } from '@/lib/titre-seo'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Image from 'next/image'
@@ -30,9 +31,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: isEN
       ? `Halal Travel in ${nomEN} — Complete Guide ${new Date().getFullYear()}`
       : `Voyage Halal en ${country.name} — Guide Complet ${new Date().getFullYear()}`,
+    // La phrase d'accroche du pays est de longueur libre : collée devant, elle
+    // faisait dépasser 27 pages. Elle saute quand elle ne tient pas.
     description: isEN
       ? `Halal travel guide for ${nomEN}: halal restaurants, mosques, hotels and practical tips for Muslim travelers.`
-      : `${country.shortDescription} Restaurants halal, mosquées, hôtels et conseils pratiques pour voyager en ${country.name}.`,
+      : descriptionSeo([
+          `${country.shortDescription} Restaurants halal, mosquées, hôtels et conseils pratiques pour voyager en ${country.name}.`,
+          `${country.shortDescription} Restaurants halal, mosquées et hôtels en ${country.name}.`,
+          `Guide du voyage halal en ${country.name} : restaurants halal, mosquées, hôtels et conseils pratiques pour les voyageurs musulmans.`,
+        ]),
     path: `/destinations/pays/${country.slug}`,
     ...alternatesFor(`/destinations/pays/${country.slug}`, isEN),
     type: 'article',

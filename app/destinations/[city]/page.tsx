@@ -1,3 +1,4 @@
+import { titreSeo } from '@/lib/titre-seo'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { readdirSync, readFileSync } from 'fs'
@@ -78,9 +79,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   //    descriptions figees annonçaient un nombre de restaurants faux sur
   //    93 fiches sur 354 (Mecque : « 76 » annonces, 26 reels).
   const nomLocal = (isEN && ville.nom_en) ? ville.nom_en : ville.nom
+  // Se replie sur les noms longs (« Bandar Seri Begawan », « Al-Quds
+  // (Jérusalem) », « La Nouvelle-Orléans ») — voir lib/titre-seo.
   const title = isEN
-    ? `${nomLocal} Halal Guide 2026: Restaurants, Mosques & Prayer`
-    : `${nomLocal} Halal 2026 : Restaurants, Mosquées & Prière`
+    ? titreSeo([
+        `${nomLocal} Halal Guide 2026: Restaurants, Mosques & Prayer`,
+        `${nomLocal} Halal Guide 2026: Restaurants & Mosques`,
+        `${nomLocal} Halal Guide: Restaurants & Mosques`,
+        `${nomLocal} Halal Guide 2026`,
+      ])
+    : titreSeo([
+        `${nomLocal} Halal 2026 : Restaurants, Mosquées & Prière`,
+        `${nomLocal} Halal 2026 : Restaurants & Mosquées`,
+        `${nomLocal} Halal : Restaurants & Mosquées`,
+        `${nomLocal} Halal 2026`,
+      ])
   const chiffresEn = [
     nbRestos > 0 ? `${nbRestos} halal restaurants` : null,
     nbMosq > 0 ? `${nbMosq} mosques` : null,

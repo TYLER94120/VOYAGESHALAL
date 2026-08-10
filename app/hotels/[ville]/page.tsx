@@ -1,3 +1,4 @@
+import { titreSeo, descriptionSeo } from '@/lib/titre-seo'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { readFileSync } from 'fs'
@@ -51,12 +52,35 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // « 2026 ». Le nom de la ville est celui que tape le lecteur, et la marque
   // n'est plus dans le titre.
   const nomLocal = (isEN && ville.nom_en) ? ville.nom_en : ville.nom
+  // Le titre se replie tout seul quand le nom de la ville est long
+  // (« Bandar Seri Begawan » débordait de 7 caractères) — voir lib/titre-seo.
   const title = isEN
-    ? `Halal Hotels in ${nomLocal} 2026: Alcohol-Free`
-    : `Hôtels halal ${nomLocal} 2026 : sans alcool, mosquée proche`
+    ? titreSeo([
+        `Halal Hotels in ${nomLocal} 2026: Alcohol-Free, Near a Mosque`,
+        `Halal Hotels in ${nomLocal} 2026: Alcohol-Free`,
+        `Halal Hotels in ${nomLocal}: Alcohol-Free`,
+        `Halal Hotels in ${nomLocal}`,
+      ])
+    : titreSeo([
+        `Hôtels halal ${nomLocal} 2026 : sans alcool, mosquée proche`,
+        `Hôtels halal ${nomLocal} : sans alcool, mosquée proche`,
+        `Hôtels halal ${nomLocal} 2026 : sans alcool`,
+        `Hôtels halal ${nomLocal}`,
+      ])
+  // Même défaut que le titre, même correction : la description tenait pour
+  // « Dubaï » et débordait pour « Salvador de Bahia » (33 pages coupées).
   const description = isEN
-    ? `${n}+ halal-friendly hotels in ${ville.nom}: alcohol-free options, near mosques, family-friendly. Compare and book for your Muslim trip.`
-    : `${n}+ hôtels halal-friendly à ${ville.nom} : options sans alcool, proches des mosquées, adaptés aux familles. Comparez et réservez pour votre voyage musulman.`
+    ? descriptionSeo([
+        `${n}+ halal-friendly hotels in ${nomLocal}: alcohol-free options, near mosques, family-friendly. Compare and book for your Muslim trip.`,
+        `${n}+ halal-friendly hotels in ${nomLocal}: alcohol-free options, near mosques, family-friendly.`,
+        `${n}+ halal-friendly hotels in ${nomLocal}: alcohol-free options, near mosques.`,
+      ])
+    : descriptionSeo([
+        `${n}+ hôtels halal-friendly à ${nomLocal} : options sans alcool, proches des mosquées, adaptés aux familles. Comparez et réservez pour votre voyage musulman.`,
+        `${n}+ hôtels halal-friendly à ${nomLocal} : options sans alcool, proches des mosquées, adaptés aux familles. Comparez et réservez.`,
+        `${n}+ hôtels halal-friendly à ${nomLocal} : options sans alcool, proches des mosquées, adaptés aux familles.`,
+        `${n}+ hôtels halal-friendly à ${nomLocal} : options sans alcool, proches des mosquées.`,
+      ])
   return {
     title: { absolute: title }, description,
     ...(n < 3 ? { robots: { index: false, follow: true } } : {}),

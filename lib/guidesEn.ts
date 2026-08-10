@@ -30,7 +30,7 @@ export const guidesEn: Guide[] = [
   {
     slug: 'istanbul-halal-travel-guide',
     lang: 'en',
-    title: 'Istanbul Halal Travel Guide 2026: Restaurants, Mosques & Neighborhoods',
+    title: 'Istanbul Halal Travel Guide 2026: Food & Mosques',
     description: 'The complete Muslim traveler guide to Istanbul: where to eat halal, the must-see mosques, the best neighborhoods and a realistic 2026 budget.',
     coverImage: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&q=80',
     category: 'Destinations',
@@ -53,7 +53,7 @@ export const guidesEn: Guide[] = [
   {
     slug: 'dubai-halal-travel-guide-2026',
     lang: 'en',
-    title: 'Dubai Halal Travel Guide 2026: Everything for Your Muslim-Friendly Trip',
+    title: 'Dubai Halal Travel Guide 2026: Muslim-Friendly Trip',
     description: 'Dubai for Muslim travelers: halal food everywhere by law, Jumeirah Mosque, Old Dubai, family activities and a realistic budget for 2026.',
     coverImage: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&q=80',
     category: 'Destinations',
@@ -76,7 +76,7 @@ export const guidesEn: Guide[] = [
   {
     slug: 'marrakech-halal-travel-guide',
     lang: 'en',
-    title: 'Marrakesh Halal Travel Guide 2026: The Red City for Muslim Travelers',
+    title: 'Marrakesh Halal Travel Guide 2026: The Red City',
     description: 'Marrakesh for Muslim travelers: Koutoubia, Ben Youssef Madrasa, the souks, where to eat halal and a realistic 2026 budget.',
     coverImage: 'https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1200&q=80',
     category: 'Destinations',
@@ -201,7 +201,7 @@ export const guidesEn: Guide[] = [
   {
     slug: 'halal-honeymoon-guide',
     lang: 'en',
-    title: 'Halal Honeymoon: Romantic Destinations That Respect Your Values',
+    title: 'Halal Honeymoon: Destinations That Respect Your Values',
     description: 'Planning a halal honeymoon? The most romantic Muslim-friendly destinations: private villas, alcohol-free resorts, couple-friendly privacy and halal dining.',
     coverImage: 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1200&q=80',
     category: 'Destinations',
@@ -253,7 +253,7 @@ export const guidesEn: Guide[] = [
   {
     slug: 'halal-travel-checklist',
     lang: 'en',
-    title: 'The Halal Travel Checklist: Everything to Prepare Before You Go',
+    title: 'The Halal Travel Checklist: What to Prepare Before You Go',
     description: 'The complete pre-departure checklist for Muslim travelers: food, prayer, documents, apps and the small items that save a trip.',
     coverImage: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&q=80',
     category: 'Practical',
@@ -286,7 +286,7 @@ export const guidesEn: Guide[] = [
   {
     slug: 'what-is-halal-tourism',
     lang: 'en',
-    title: 'What Is Halal Tourism? Definition, Numbers & What It Means for You',
+    title: 'What Is Halal Tourism? Definition, Numbers & Meaning',
     description: 'Halal tourism explained: what it covers (food, prayer, environment), what it does not, the market numbers, and how to travel halal without over-complicating.',
     coverImage: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&q=80',
     category: 'Practical',
