@@ -62,15 +62,37 @@ la méthode (que demander, que faire si on dit non), les ablutions, la
 prière qui pose problème selon la saison, et l'aveu de ce qu'on ne sait
 pas. Suivante à traiter : CDG, puis Orly.
 
-### 5. `force-dynamic` : 8 pages à réexaminer
-**Mesuré** : 37 fichiers, dont **29 routes /api** où le réglage n'a aucun
-effet. Restent 8 pages. Vérification déjà faite pour le layout racine (il
-est nécessaire au bi-domaine, voir la compétence `servir-deux-domaines`).
-Les 7 autres n'ont pas été examinées une par une.
+
 
 ---
 
 ## Fait
+
+### `force-dynamic` réexaminé — et un vrai défaut trouvé au passage — 11 août
+**La prémisse de l'élément était fausse**, et c'est la mesure qui l'a dit :
+sur les 39 fichiers concernés, 31 sont des routes /api où le réglage n'a
+aucun effet sur le rendu, et **les 8 pages restantes lisent toutes le
+domaine** (`getDomainSEO`). Aucune ne peut donc être rendue en statique :
+il n'y avait rien à retirer.
+
+**Vérification qui comptait vraiment** : aucune page HTML n'est rendue en
+statique sur les deux domaines — donc zéro risque de servir la mauvaise
+langue par mise en cache. Seuls quatre fichiers l'étaient : l'icône, l'audio
+de l'adhan… **et le manifeste**.
+
+**LE DÉFAUT** : le manifeste PWA était identique sur les deux domaines.
+Qui installait l'application depuis gohalaltravel.com obtenait sur son
+écran d'accueil une icône nommée « VoyagesHalal.fr — Guide Voyage Halal »,
+une description en français, `lang: fr`, et des raccourcis vers
+/horaires-priere au lieu de /prayer-times. Tous les jours, sur son
+téléphone.
+
+Il passait sous le radar parce qu'un manifeste ne s'affiche nulle part :
+il ne se voit qu'au moment de l'installation.
+
+**Mesuré après** : `GoHalalTravel — Halal Travel Guide`, `lang: en`, et les
+raccourcis pointent vers `/notebook` et `/prayer-times` sur le domaine
+anglais ; le français est inchangé.
 
 ### Disneyland Paris, notre meilleure page, était la plus courte — 11 août
 22 des 29 clics du site sur 7 jours viennent d'elle. Elle faisait **226
