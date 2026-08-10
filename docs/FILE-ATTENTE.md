@@ -26,11 +26,14 @@ Chiffres AVANT le 9 août, 7 jours : voyageshalal.fr 1 970 impressions /
 
 ## À faire
 
-### 1. Les sections « manger » et « prier » manquent sur 344 fiches villes
-**Mesuré** : sur 354 fiches, **10 ont une section « manger halal » rédigée
-et 10 une section « où prier »**. Les 344 autres n'ont que des listes
-d'adresses — donc peu de texte unique, et rien qui réponde à « manger halal
-à X » en toutes lettres. Commencer par Istanbul et Dubaï.
+### 1. Les sections « manger » et « prier » manquent sur 330 fiches villes
+**Mesuré le 11 août** : 24 fiches sur 354 ont leurs quatre sections
+(manger et prier, FR et EN). Les 330 autres n'ont que des listes d'adresses
+— donc peu de texte unique, et rien qui réponde à « manger halal à X » en
+toutes lettres.
+Prochaine série à viser : les villes d'Europe où la question se pose
+vraiment (Berlin, Amsterdam, Bruxelles, Vienne, Rome, Madrid) — c'est là
+que le voyageur doute, alors qu'en pays musulman la réponse est « tout ».
 
 ### 2. Les hôtels d'Istanbul et Dubaï attendent le robot OSM
 **Mesuré** : 41 mentions « information non vérifiée » par page, et
@@ -62,6 +65,27 @@ Les 7 autres n'ont pas été examinées une par une.
 ---
 
 ## Fait
+
+### 14 villes ont leurs sections « manger » et « prier » — 11 août
+**Avant** : 10 fiches sur 354 (Istanbul et Dubaï en faisaient déjà partie).
+**Après** : **24 fiches**, soit **2 485 mots uniques** ajoutés sur 28 pages
+(14 villes × 2 domaines).
+
+Villes traitées, choisies sur la demande halal réelle et non sur le volume
+de données : Kuala Lumpur, La Mecque, Médine, Londres, Casablanca, Fès,
+Singapour, Doha, Abu Dhabi, Sharjah, Amman, Le Caire, Tunis, Alger.
+
+**Rien d'inventé** : aucun restaurant nommé, aucune salle de prière que
+nous n'aurions pas vérifiée. Uniquement des quartiers, des mosquées
+majeures et les organismes de certification officiels (JAKIM en Malaisie,
+MUIS à Singapour, HMC et HFA au Royaume-Uni) — tout est vérifiable par
+n'importe qui. Là où la nuance compte, elle est écrite : « no pork » n'est
+pas « halal » à Kuala Lumpur ; à Singapour le stand voisin du stand
+certifié ne l'est pas ; Sharjah est le seul émirat entièrement sans alcool.
+
+Vérifié sur les deux domaines : les sections sortent bien en français sur
+voyageshalal.fr et en anglais sur gohalaltravel.com, et les 1 627 pages
+restent à zéro titre coupé et zéro description coupée.
 
 ### Les 6 guides pratiques ont leur version anglaise — 11 août
 Ils n'existaient qu'en français : repas MOML en avion, ablutions, heure de

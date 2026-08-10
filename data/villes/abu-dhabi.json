@@ -1,2642 +1,2646 @@
 {
-  "slug": "abu-dhabi",
-  "nom": "Abu Dhabi",
-  "nom_arabe": "أبوظبي",
-  "pays": "Émirats Arabes Unis",
-  "pays_slug": "emirats-arabes-unis",
-  "drapeau": "🇦🇪",
-  "region": "Moyen-Orient",
-  "coordonnees": {
-    "lat": 24.4539,
-    "lng": 54.3773
+ "slug": "abu-dhabi",
+ "nom": "Abu Dhabi",
+ "nom_arabe": "أبوظبي",
+ "pays": "Émirats Arabes Unis",
+ "pays_slug": "emirats-arabes-unis",
+ "drapeau": "🇦🇪",
+ "region": "Moyen-Orient",
+ "coordonnees": {
+  "lat": 24.4539,
+  "lng": 54.3773
+ },
+ "score_halal": 4.65,
+ "score_securite": 5,
+ "score_famille": 5,
+ "score_budget": 3,
+ "description": {
+  "court": "La capitale des Émirats, symbole de grandeur islamique et de modernité",
+  "long": "Abu Dhabi est la capitale des Émirats Arabes Unis, un État islamique où la loi et les valeurs islamiques structurent la vie quotidienne. Pays musulman à majorité, la quasi-totalité des restaurants est halal et l'alcool est strictement réglementé. La Grande Mosquée Sheikh Zayed — l'une des plus belles du monde — est un lieu de pèlerinage pour les musulmans du monde entier. Abu Dhabi combine luxe absolu, architecture islamique grandiose et accueil chaleureux pour les familles musulmanes."
+ },
+ "statistiques": {
+  "mosquees": 46,
+  "restaurants_halal": 69,
+  "hotels_halal_friendly": 400,
+  "population": "3 millions",
+  "hotels": 106
+ },
+ "infos_pratiques": {
+  "langue": "Arabe (officiel), Anglais très répandu",
+  "monnaie": "Dirham des Émirats (AED) — 1 AED ≈ 0,25 €",
+  "fuseau_horaire": "GMT+4",
+  "meilleure_periode": "Novembre–mars (hiver doux)",
+  "visa": "Visa à l'arrivée gratuit 30 jours pour ressortissants français, belges, canadiens",
+  "transport": "Taxi, metro (limité), applications Careem/Uber"
+ },
+ "restaurants": [
+  {
+   "nom": "ملك الأقاشي أبوظبي",
+   "lat": 24.4594958,
+   "lng": 54.3881464,
+   "type": "barbecue, arab, tea, sausage, sandwich, grill, coffee shop, chicken",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4594958,54.3881464",
+   "source": "osm"
   },
-  "score_halal": 4.65,
-  "score_securite": 5,
-  "score_famille": 5,
-  "score_budget": 3,
-  "description": {
-    "court": "La capitale des Émirats, symbole de grandeur islamique et de modernité",
-    "long": "Abu Dhabi est la capitale des Émirats Arabes Unis, un État islamique où la loi et les valeurs islamiques structurent la vie quotidienne. Pays musulman à majorité, la quasi-totalité des restaurants est halal et l'alcool est strictement réglementé. La Grande Mosquée Sheikh Zayed — l'une des plus belles du monde — est un lieu de pèlerinage pour les musulmans du monde entier. Abu Dhabi combine luxe absolu, architecture islamique grandiose et accueil chaleureux pour les familles musulmanes."
+  {
+   "nom": "Salam Bombay",
+   "lat": 24.4649732,
+   "lng": 54.3846926,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4649732,54.3846926",
+   "source": "osm"
   },
-  "statistiques": {
-    "mosquees": 46,
-    "restaurants_halal": 69,
-    "hotels_halal_friendly": 400,
-    "population": "3 millions",
-    "hotels": 106
+  {
+   "nom": "Salam Bombay Vegetarian Restaurant",
+   "lat": 24.4722766,
+   "lng": 54.3777747,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4722766,54.3777747",
+   "source": "osm"
   },
-  "infos_pratiques": {
-    "langue": "Arabe (officiel), Anglais très répandu",
-    "monnaie": "Dirham des Émirats (AED) — 1 AED ≈ 0,25 €",
-    "fuseau_horaire": "GMT+4",
-    "meilleure_periode": "Novembre–mars (hiver doux)",
-    "visa": "Visa à l'arrivée gratuit 30 jours pour ressortissants français, belges, canadiens",
-    "transport": "Taxi, metro (limité), applications Careem/Uber"
+  {
+   "nom": "مطعم زهرة لبنان",
+   "lat": 24.4756132,
+   "lng": 54.3774909,
+   "type": "lebanese grill",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4756132,54.3774909",
+   "source": "osm"
   },
-  "restaurants": [
-    {
-      "nom": "ملك الأقاشي أبوظبي",
-      "lat": 24.4594958,
-      "lng": 54.3881464,
-      "type": "barbecue, arab, tea, sausage, sandwich, grill, coffee shop, chicken",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4594958,54.3881464",
-      "source": "osm"
-    },
-    {
-      "nom": "Salam Bombay",
-      "lat": 24.4649732,
-      "lng": 54.3846926,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4649732,54.3846926",
-      "source": "osm"
-    },
-    {
-      "nom": "Salam Bombay Vegetarian Restaurant",
-      "lat": 24.4722766,
-      "lng": 54.3777747,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4722766,54.3777747",
-      "source": "osm"
-    },
-    {
-      "nom": "مطعم زهرة لبنان",
-      "lat": 24.4756132,
-      "lng": 54.3774909,
-      "type": "lebanese grill",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4756132,54.3774909",
-      "source": "osm"
-    },
-    {
-      "nom": "Operation Falafel",
-      "lat": 24.4781097,
-      "lng": 54.3715718,
-      "type": "arab, lebanese",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4781097,54.3715718",
-      "source": "osm"
-    },
-    {
-      "nom": "Shatter Al Hassan Lebanese Grill",
-      "lat": 24.4784293,
-      "lng": 54.3698558,
-      "type": "lebanese grill",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4784293,54.3698558",
-      "source": "osm"
-    },
-    {
-      "nom": "Bhavana",
-      "lat": 24.4777301,
-      "lng": 54.3652375,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4777301,54.3652375",
-      "source": "osm"
-    },
-    {
-      "nom": "Bikanervala - Indian Sweets & Vegetarian Restaurant",
-      "lat": 24.4786167,
-      "lng": 54.3633166,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4786167,54.3633166",
-      "source": "osm"
-    },
-    {
-      "nom": "Fresh Bun & Mour Bakery (B&G Pares House)",
-      "lat": 24.4772518,
-      "lng": 54.3569646,
-      "type": "asian",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=24.4772518,54.3569646",
-      "source": "osm"
-    },
-    {
-      "nom": "oktay restutent",
-      "lat": 24.4759309,
-      "lng": 54.3542757,
-      "type": "turkish",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4759309,54.3542757",
-      "source": "osm"
-    },
-    {
-      "nom": "Syrian Flower",
-      "lat": 24.4776427,
-      "lng": 54.3562326,
-      "type": "syrian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4776427,54.3562326",
-      "source": "osm"
-    },
-    {
-      "nom": "Punjabi Dhaba Restaurant",
-      "lat": 24.4730622,
-      "lng": 54.3509529,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4730622,54.3509529",
-      "source": "osm"
-    },
-    {
-      "nom": "دار الكرك & المحال",
-      "lat": 24.4843114,
-      "lng": 54.3828434,
-      "type": "arab, indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4843114,54.3828434",
-      "source": "osm"
-    },
-    {
-      "nom": "Al Sultan Bakeries and Markets",
-      "lat": 24.4826743,
-      "lng": 54.3645604,
-      "type": "lebanese sweets, manaqish",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4826743,54.3645604",
-      "source": "osm"
-    },
-    {
-      "nom": "Al Ajawed",
-      "lat": 24.479823,
-      "lng": 54.3579769,
-      "type": "arab, lebanese, pizza",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.479823,54.3579769",
-      "source": "osm"
-    },
-    {
-      "nom": "مطعم زهرة لبنان",
-      "lat": 24.4763655,
-      "lng": 54.3531048,
-      "type": "lebanese",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4763655,54.3531048",
-      "source": "osm"
-    },
-    {
-      "nom": "Koshary El Tahrir",
-      "lat": 24.4750175,
-      "lng": 54.3514993,
-      "type": "egyptian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4750175,54.3514993",
-      "source": "osm"
-    },
-    {
-      "nom": "مقهى أبو فهد",
-      "lat": 24.4789115,
-      "lng": 54.3523078,
-      "type": "arab",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4789115,54.3523078",
-      "source": "osm"
-    },
-    {
-      "nom": "Sangeetha Vegetarian Restaurant",
-      "lat": 24.4854367,
-      "lng": 54.363554,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4854367,54.363554",
-      "source": "osm"
-    },
-    {
-      "nom": "Rabab Kabab Restaurant",
-      "lat": 24.4808783,
-      "lng": 54.3546063,
-      "type": "pakistani, indian",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=24.4808783,54.3546063",
-      "source": "osm"
-    },
-    {
-      "nom": "Bait El Khetyar",
-      "lat": 24.4881626,
-      "lng": 54.3711958,
-      "type": "lebanese",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4881626,54.3711958",
-      "source": "osm"
-    },
-    {
-      "nom": "Ritaj Restaurant",
-      "lat": 24.4856376,
-      "lng": 54.3614694,
-      "type": "indian, hyderabadi",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4856376,54.3614694",
-      "source": "osm"
-    },
-    {
-      "nom": "Dolmabahce Restaurant",
-      "lat": 24.4796636,
-      "lng": 54.3508927,
-      "type": "turkish",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4796636,54.3508927",
-      "source": "osm"
-    },
-    {
-      "nom": "Lebanese Mill Restaurant",
-      "lat": 24.4889879,
-      "lng": 54.3727971,
-      "type": "lebanese",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4889879,54.3727971",
-      "source": "osm"
-    },
-    {
-      "nom": "Zali",
-      "lat": 24.4537778,
-      "lng": 54.3381294,
-      "type": "lebanese",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4537778,54.3381294",
-      "source": "osm"
-    },
-    {
-      "nom": "مطعم الابراهيمي شارع االیکٹرا",
-      "lat": 24.4884054,
-      "lng": 54.3673041,
-      "type": "pakistani",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4884054,54.3673041",
-      "source": "osm"
-    },
-    {
-      "nom": "My Tea Cafeteria",
-      "lat": 24.4891343,
-      "lng": 54.3836723,
-      "type": "arab",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4891343,54.3836723",
-      "source": "osm"
-    },
-    {
-      "nom": "German Doner Kebab",
-      "lat": 24.4702582,
-      "lng": 54.3417043,
-      "type": "kebab",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4702582,54.3417043",
-      "source": "osm"
-    },
-    {
-      "nom": "Mondo Cafe",
-      "lat": 24.4480091,
-      "lng": 54.3375221,
-      "type": "arab, greek, indian, italian, pasta, pizza",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4480091,54.3375221",
-      "source": "osm"
-    },
-    {
-      "nom": "Sun light Restaurant",
-      "lat": 24.4888739,
-      "lng": 54.364818,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4888739,54.364818",
-      "source": "osm"
-    },
-    {
-      "nom": "لحمجون",
-      "lat": 24.4911499,
-      "lng": 54.3737563,
-      "type": "turkish",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4911499,54.3737563",
-      "source": "osm"
-    },
-    {
-      "nom": "Sangam RESTAURANT & SWEETS",
-      "lat": 24.4912922,
-      "lng": 54.3751079,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4912922,54.3751079",
-      "source": "osm"
-    },
-    {
-      "nom": "AL SAYYAD Restaurant & grill br.",
-      "lat": 24.43888,
-      "lng": 54.4150706,
-      "type": "arab, breakfast, chicken, coffee shop, diner, fish, fish and chips, grill, sandwich, seafood, tea",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.43888,54.4150706",
-      "source": "osm"
-    },
-    {
-      "nom": "Al Farah Butchery",
-      "lat": 24.4899495,
-      "lng": 54.365493,
-      "type": "arab",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4899495,54.365493",
-      "source": "osm"
-    },
-    {
-      "nom": "Hyderabad Bawarchi Restaurant",
-      "lat": 24.4911486,
-      "lng": 54.3680164,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4911486,54.3680164",
-      "source": "osm"
-    },
-    {
-      "nom": "McDonald's",
-      "lat": 24.4877149,
-      "lng": 54.3575138,
-      "type": "burger",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=24.4877149,54.3575138",
-      "source": "osm"
-    },
-    {
-      "nom": "Special",
-      "lat": 24.4719622,
-      "lng": 54.3398043,
-      "type": "kebab",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4719622,54.3398043",
-      "source": "osm"
-    },
-    {
-      "nom": "مطعم قصر الهند",
-      "lat": 24.4929944,
-      "lng": 54.3767675,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4929944,54.3767675",
-      "source": "osm"
-    },
-    {
-      "nom": "مطعم سنجيتا",
-      "lat": 24.4936223,
-      "lng": 54.3761091,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4936223,54.3761091",
-      "source": "osm"
-    },
-    {
-      "nom": "Special Restaurant & Cafe",
-      "lat": 24.470173,
-      "lng": 54.3374057,
-      "type": "kebab",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.470173,54.3374057",
-      "source": "osm"
-    },
-    {
-      "nom": "Bshawarma",
-      "lat": 24.4904964,
-      "lng": 54.3950171,
-      "type": "shawarma",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4904964,54.3950171",
-      "source": "osm"
-    },
-    {
-      "nom": "Petek",
-      "lat": 24.4886327,
-      "lng": 54.3553305,
-      "type": "turkish",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4886327,54.3553305",
-      "source": "osm"
-    },
-    {
-      "nom": "Rotana Cafe",
-      "lat": 24.4237914,
-      "lng": 54.4070358,
-      "type": "arab, barbecue, international, lebanese",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4237914,54.4070358",
-      "source": "osm"
-    },
-    {
-      "nom": "مطعم ومشاوي كاليكوت فود بوك",
-      "lat": 24.4949285,
-      "lng": 54.379331,
-      "type": "arab, chinese, grill, indian, tea",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4949285,54.379331",
-      "source": "osm"
-    },
-    {
-      "nom": "Perfect Biryani House",
-      "lat": 24.4950945,
-      "lng": 54.3725152,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4950945,54.3725152",
-      "source": "osm"
-    },
-    {
-      "nom": "مطعم ومشاوي شيكيس",
-      "lat": 24.4955401,
-      "lng": 54.3782261,
-      "type": "arab, asian, barbecue, burger, chicken, kebab, local",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4955401,54.3782261",
-      "source": "osm"
-    },
-    {
-      "nom": "Indigo",
-      "lat": 24.4952572,
-      "lng": 54.3843666,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4952572,54.3843666",
-      "source": "osm"
-    },
-    {
-      "nom": "Zyara",
-      "lat": 24.4940345,
-      "lng": 54.3615599,
-      "type": "lebanese",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4940345,54.3615599",
-      "source": "osm"
-    },
-    {
-      "nom": "Jabal Al Rahman Restaurant",
-      "lat": 24.4974336,
-      "lng": 54.3695119,
-      "type": "russian, asian",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=24.4974336,54.3695119",
-      "source": "osm"
-    },
-    {
-      "nom": "Derwandi Restaurant & Lounge",
-      "lat": 24.4637643,
-      "lng": 54.3263793,
-      "type": "lebanese",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4637643,54.3263793",
-      "source": "osm"
-    },
-    {
-      "nom": "Marmoura Lebanese Restaurant and Lounge",
-      "lat": 24.4127885,
-      "lng": 54.3495665,
-      "type": "lebanese",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4127885,54.3495665",
-      "source": "osm"
-    },
-    {
-      "nom": "Sajway",
-      "lat": 24.5022914,
-      "lng": 54.374712,
-      "type": "lebanese",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.5022914,54.374712",
-      "source": "osm"
-    },
-    {
-      "nom": "José by Pizarro",
-      "lat": 24.4582983,
-      "lng": 54.3220493,
-      "type": "spanish",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=24.4582983,54.3220493",
-      "source": "osm"
-    },
-    {
-      "nom": "Al Dhafra Restaurant",
-      "lat": 24.5092457,
-      "lng": 54.375972,
-      "type": "seafood, fish, arab",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.5092457,54.375972",
-      "source": "osm"
-    },
-    {
-      "nom": "ماكدونالدز",
-      "lat": 24.4285296,
-      "lng": 54.4316867,
-      "type": "burger",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=24.4285296,54.4316867",
-      "source": "osm"
-    },
-    {
-      "nom": "LaLQiLa",
-      "lat": 24.472343,
-      "lng": 54.3189087,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.472343,54.3189087",
-      "source": "osm"
-    },
-    {
-      "nom": "28 Degrees Restaurant",
-      "lat": 24.4164291,
-      "lng": 54.3305934,
-      "type": "arab, international",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4164291,54.3305934",
-      "source": "osm"
-    },
-    {
-      "nom": "Zahrat Lebnan",
-      "lat": 24.433809,
-      "lng": 54.4368352,
-      "type": "lebanese",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.433809,54.4368352",
-      "source": "osm"
-    },
-    {
-      "nom": "مطعم فسفور قدورة للمأكولات",
-      "lat": 24.514182,
-      "lng": 54.3753622,
-      "type": "arab, fish, seafood",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=24.514182,54.3753622",
-      "source": "osm"
-    },
-    {
-      "nom": "City Gate Restaurant",
-      "lat": 24.5185951,
-      "lng": 54.3791757,
-      "type": "indian, pakistani",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.5185951,54.3791757",
-      "source": "osm"
-    },
-    {
-      "nom": "Tamarind The Terrace",
-      "lat": 24.4185737,
-      "lng": 54.4401378,
-      "type": "Restaurant",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=24.4185737,54.4401378",
-      "source": "osm"
-    },
-    {
-      "nom": "c. deli",
-      "lat": 24.4178917,
-      "lng": 54.4404369,
-      "type": "Restaurant",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=24.4178917,54.4404369",
-      "source": "osm"
-    },
-    {
-      "nom": "Shwarma Planet Lebanese Food",
-      "lat": 24.4202676,
-      "lng": 54.4424192,
-      "type": "Restaurant",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=24.4202676,54.4424192",
-      "source": "osm"
-    },
-    {
-      "nom": "Kurakura Restaurant",
-      "lat": 24.4184021,
-      "lng": 54.4430252,
-      "type": "pakistani, indian",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=24.4184021,54.4430252",
-      "source": "osm"
-    },
-    {
-      "nom": "Belgrave Abu Dhabi",
-      "lat": 24.4218839,
-      "lng": 54.44515,
-      "type": "persian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4218839,54.44515",
-      "source": "osm"
-    },
-    {
-      "nom": "Zaytinya",
-      "lat": 24.4349868,
-      "lng": 54.4559288,
-      "type": "lebanese",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4349868,54.4559288",
-      "source": "osm"
-    },
-    {
-      "nom": "Jarousha",
-      "lat": 24.4207747,
-      "lng": 54.4561819,
-      "type": "lebanese, middle eastern",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.4207747,54.4561819",
-      "source": "osm"
-    },
-    {
-      "nom": "Champions Story Pizza",
-      "lat": 24.4295887,
-      "lng": 54.4632439,
-      "type": "pizza, italian, arabic",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=24.4295887,54.4632439",
-      "source": "osm"
-    },
-    {
-      "nom": "Indian by Nature",
-      "lat": 24.5245648,
-      "lng": 54.4340287,
-      "type": "indian",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=24.5245648,54.4340287",
-      "source": "osm"
-    }
-  ],
-  "mosquees": [],
-  "hotels": [
-    {
-      "nom": "Murjan Asfar hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4592844,54.3802679",
-      "lat": 24.4592844,
-      "lng": 54.3802679,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4592844,54.3802679",
-      "source": "osm"
-    },
-    {
-      "nom": "Liwa house",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.455012,54.3697819",
-      "lat": 24.455012,
-      "lng": 54.3697819,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.455012,54.3697819",
-      "source": "osm"
-    },
-    {
-      "nom": "Jannah Place",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.463433,54.3764226",
-      "lat": 24.463433,
-      "lng": 54.3764226,
-      "halalFriendly": false,
-      "bookingUrl": "www.jannahplace.com",
-      "source": "osm"
-    },
-    {
-      "nom": "SMD COMFY APARTAMENTS (10 floor, aprtament 02)",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4649668,54.3764821",
-      "lat": 24.4649668,
-      "lng": 54.3764821,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4649668,54.3764821",
-      "source": "osm"
-    },
-    {
-      "nom": "AG Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4593797,54.3883155",
-      "lat": 24.4593797,
-      "lng": 54.3883155,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4593797,54.3883155",
-      "source": "osm"
-    },
-    {
-      "nom": "Grand Villaggio Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4652394,54.374746",
-      "lat": 24.4652394,
-      "lng": 54.374746,
-      "halalFriendly": false,
-      "bookingUrl": "https://villaggiohotels.ae/",
-      "source": "osm"
-    },
-    {
-      "nom": "Al Diar Sawa Hotel Apartments",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4665344,54.3850752",
-      "lat": 24.4665344,
-      "lng": 54.3850752,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4665344,54.3850752",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Al Rawda Arjan by Rotana",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4689949,54.3725189",
-      "lat": 24.4689949,
-      "lng": 54.3725189,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4689949,54.3725189",
-      "source": "osm"
-    },
-    {
-      "nom": "Villah",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4594949,54.3608779",
-      "lat": 24.4594949,
-      "lng": 54.3608779,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4594949,54.3608779",
-      "source": "osm"
-    },
-    {
-      "nom": "Ministry Of Health Abu Dhabi",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4554167,54.3958856",
-      "lat": 24.4554167,
-      "lng": 54.3958856,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4554167,54.3958856",
-      "source": "osm"
-    },
-    {
-      "nom": "هيئة الامارات للهوية .. تجديد هوية ..عمل هوية",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4712172,54.374689",
-      "lat": 24.4712172,
-      "lng": 54.374689,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4712172,54.374689",
-      "source": "osm"
-    },
-    {
-      "nom": "Grand Millennium Al Wahda",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4712049,54.3738184",
-      "lat": 24.4712049,
-      "lng": 54.3738184,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.millenniumhotels.com/ae/grandmillenniumalwahda/index.html",
-      "source": "osm"
-    },
-    {
-      "nom": "Marriott Downtown Abu-Dhabi",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4702212,54.3700323",
-      "lat": 24.4702212,
-      "lng": 54.3700323,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4702212,54.3700323",
-      "source": "osm"
-    },
-    {
-      "nom": "Kristine Plaza Residence",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4483555,54.397679",
-      "lat": 24.4483555,
-      "lng": 54.397679,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4483555,54.397679",
-      "source": "osm"
-    },
-    {
-      "nom": "Tomz place",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4506351,54.3992648",
-      "lat": 24.4506351,
-      "lng": 54.3992648,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4506351,54.3992648",
-      "source": "osm"
-    },
-    {
-      "nom": "Backpackers Place",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.47385,54.3709321",
-      "lat": 24.47385,
-      "lng": 54.3709321,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.airbnb.de/users/show/181896309",
-      "source": "osm"
-    },
-    {
-      "nom": "Royal Suite",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4746185,54.3789852",
-      "lat": 24.4746185,
-      "lng": 54.3789852,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4746185,54.3789852",
-      "source": "osm"
-    },
-    {
-      "nom": "Ono to One",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.474997,54.3881662",
-      "lat": 24.474997,
-      "lng": 54.3881662,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.474997,54.3881662",
-      "source": "osm"
-    },
-    {
-      "nom": "روني",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4534607,54.4029509",
-      "lat": 24.4534607,
-      "lng": 54.4029509,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4534607,54.4029509",
-      "source": "osm"
-    },
-    {
-      "nom": "قاعة الاعراس المشرف",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4396348,54.3976372",
-      "lat": 24.4396348,
-      "lng": 54.3976372,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.royalcatering.ae/",
-      "source": "osm"
-    },
-    {
-      "nom": "ICC Abu Dhabi",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4762837,54.3692015",
-      "lat": 24.4762837,
-      "lng": 54.3692015,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4762837,54.3692015",
-      "source": "osm"
-    },
-    {
-      "nom": "Gava",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4776066,54.3830413",
-      "lat": 24.4776066,
-      "lng": 54.3830413,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4776066,54.3830413",
-      "source": "osm"
-    },
-    {
-      "nom": "muroor building",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4413727,54.4007073",
-      "lat": 24.4413727,
-      "lng": 54.4007073,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4413727,54.4007073",
-      "source": "osm"
-    },
-    {
-      "nom": "Squere",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4490231,54.4062531",
-      "lat": 24.4490231,
-      "lng": 54.4062531,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4490231,54.4062531",
-      "source": "osm"
-    },
-    {
-      "nom": "liwa hotel",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4796597,54.3665254",
-      "lat": 24.4796597,
-      "lng": 54.3665254,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4796597,54.3665254",
-      "source": "osm"
-    },
-    {
-      "nom": "ڤيلا ٢٥",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4813064,54.3807885",
-      "lat": 24.4813064,
-      "lng": 54.3807885,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4813064,54.3807885",
-      "source": "osm"
-    },
-    {
-      "nom": "Flamingo Hotel Apartment",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.479789,54.3662641",
-      "lat": 24.479789,
-      "lng": 54.3662641,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.479789,54.3662641",
-      "source": "osm"
-    },
-    {
-      "nom": "Villa 167 and 169",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4665062,54.3497742",
-      "lat": 24.4665062,
-      "lng": 54.3497742,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4665062,54.3497742",
-      "source": "osm"
-    },
-    {
-      "nom": "Al jazira royal",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4816463,54.3652696",
-      "lat": 24.4816463,
-      "lng": 54.3652696,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4816463,54.3652696",
-      "source": "osm"
-    },
-    {
-      "nom": "Hilton",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4721107,54.3490504",
-      "lat": 24.4721107,
-      "lng": 54.3490504,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4721107,54.3490504",
-      "source": "osm"
-    },
-    {
-      "nom": "بيت احمد حسن",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4772595,54.3540542",
-      "lat": 24.4772595,
-      "lng": 54.3540542,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4772595,54.3540542",
-      "source": "osm"
-    },
-    {
-      "nom": "بيت يونس فتح علي",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.430025,54.4008719",
-      "lat": 24.430025,
-      "lng": 54.4008719,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.430025,54.4008719",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Paragon Abu Dhabi",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.484521,54.3637328",
-      "lat": 24.484521,
-      "lng": 54.3637328,
-      "halalFriendly": false,
-      "bookingUrl": "http://paragonhoteluae.com/index.php",
-      "source": "osm"
-    },
-    {
-      "nom": "Sheraton Khalidiyah",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4751932,54.3495531",
-      "lat": 24.4751932,
-      "lng": 54.3495531,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4751932,54.3495531",
-      "source": "osm"
-    },
-    {
-      "nom": "The Villa Hostel Abu Dhabi",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4758292,54.3499261",
-      "lat": 24.4758292,
-      "lng": 54.3499261,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4758292,54.3499261",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Cristal Abu Dhabi",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.484719,54.363574",
-      "lat": 24.484719,
-      "lng": 54.363574,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.cristalhospitality.com/cristalhotels/unitedarabemirates/abudhabi/cristalhotel",
-      "source": "osm"
-    },
-    {
-      "nom": "The Villa Hostel - By Lunar",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4761077,54.3499209",
-      "lat": 24.4761077,
-      "lng": 54.3499209,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4761077,54.3499209",
-      "source": "osm"
-    },
-    {
-      "nom": "Platinum Hotel Apartments",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4804433,54.3549904",
-      "lat": 24.4804433,
-      "lng": 54.3549904,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4804433,54.3549904",
-      "source": "osm"
-    },
-    {
-      "nom": "Hamed Center",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4851019,54.3628505",
-      "lat": 24.4851019,
-      "lng": 54.3628505,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4851019,54.3628505",
-      "source": "osm"
-    },
-    {
-      "nom": "منزل معتز عابدين",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4715256,54.3454827",
-      "lat": 24.4715256,
-      "lng": 54.3454827,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4715256,54.3454827",
-      "source": "osm"
-    },
-    {
-      "nom": "فيلا 17 البطين",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4623856,54.3411362",
-      "lat": 24.4623856,
-      "lng": 54.3411362,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4623856,54.3411362",
-      "source": "osm"
-    },
-    {
-      "nom": "منزل معتز عابدين",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4716961,54.3452918",
-      "lat": 24.4716961,
-      "lng": 54.3452918,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4716961,54.3452918",
-      "source": "osm"
-    },
-    {
-      "nom": "Cassells Hotel Apartments",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.484588,54.3608075",
-      "lat": 24.484588,
-      "lng": 54.3608075,
-      "halalFriendly": false,
-      "bookingUrl": "http://www.cassellshotelapartments.ae/",
-      "source": "osm"
-    },
-    {
-      "nom": "KM TRADING Bldg",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4859351,54.3640263",
-      "lat": 24.4859351,
-      "lng": 54.3640263,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4859351,54.3640263",
-      "source": "osm"
-    },
-    {
-      "nom": "بلدية ابو ظبي تجديد عقود ايجار",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4883634,54.3781748",
-      "lat": 24.4883634,
-      "lng": 54.3781748,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4883634,54.3781748",
-      "source": "osm"
-    },
-    {
-      "nom": "Al Shahama Tower",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4792162,54.3513315",
-      "lat": 24.4792162,
-      "lng": 54.3513315,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4792162,54.3513315",
-      "source": "osm"
-    },
-    {
-      "nom": "Home",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4856128,54.3607223",
-      "lat": 24.4856128,
-      "lng": 54.3607223,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4856128,54.3607223",
-      "source": "osm"
-    },
-    {
-      "nom": "Jannat Place City Center",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4888748,54.3831727",
-      "lat": 24.4888748,
-      "lng": 54.3831727,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4888748,54.3831727",
-      "source": "osm"
-    },
-    {
-      "nom": "Copthorne Downtown by Millennium",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4886596,54.3677436",
-      "lat": 24.4886596,
-      "lng": 54.3677436,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4886596,54.3677436",
-      "source": "osm"
-    },
-    {
-      "nom": "Copthorne Downtown Abu Dhabi",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4889426,54.3682137",
-      "lat": 24.4889426,
-      "lng": 54.3682137,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.millenniumhotels.com/en/abu-dhabi/copthorne-downtown-abu-dhabi/",
-      "source": "osm"
-    },
-    {
-      "nom": "Century Hotel Apartments",
-      "categorie": "Hôtel",
-      "priceRange": "€€€",
-      "score": 3,
-      "mapsUrl": "https://maps.google.com/?q=24.4898627,54.3794352",
-      "lat": 24.4898627,
-      "lng": 54.3794352,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4898627,54.3794352",
-      "source": "osm"
-    },
-    {
-      "nom": "Royal M Hotel by Gewan Abu Dhabi",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4484968,54.3379736",
-      "lat": 24.4484968,
-      "lng": 54.3379736,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4484968,54.3379736",
-      "source": "osm"
-    },
-    {
-      "nom": "Oxen234",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4692099,54.3412148",
-      "lat": 24.4692099,
-      "lng": 54.3412148,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4692099,54.3412148",
-      "source": "osm"
-    },
-    {
-      "nom": "Cristal Salam",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4901161,54.3798571",
-      "lat": 24.4901161,
-      "lng": 54.3798571,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4901161,54.3798571",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Oryx",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4691745,54.3408487",
-      "lat": 24.4691745,
-      "lng": 54.3408487,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4691745,54.3408487",
-      "source": "osm"
-    },
-    {
-      "nom": "My Home - Wael",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4899181,54.3848273",
-      "lat": 24.4899181,
-      "lng": 54.3848273,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4899181,54.3848273",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Ramada Downtown / Abu Dhabi",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4907373,54.3800971",
-      "lat": 24.4907373,
-      "lng": 54.3800971,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4907373,54.3800971",
-      "source": "osm"
-    },
-    {
-      "nom": "The Abu Dhabi EDITION",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4519639,54.3366909",
-      "lat": 24.4519639,
-      "lng": 54.3366909,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4519639,54.3366909",
-      "source": "osm"
-    },
-    {
-      "nom": "Meera ali al Jallaf",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4905663,54.3716073",
-      "lat": 24.4905663,
-      "lng": 54.3716073,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4905663,54.3716073",
-      "source": "osm"
-    },
-    {
-      "nom": "مكاتب شركة ماتركس وجرين مواد غذائيه",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4817753,54.3502697",
-      "lat": 24.4817753,
-      "lng": 54.3502697,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4817753,54.3502697",
-      "source": "osm"
-    },
-    {
-      "nom": "Novel Hotel City Center",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4884526,54.3621197",
-      "lat": 24.4884526,
-      "lng": 54.3621197,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4884526,54.3621197",
-      "source": "osm"
-    },
-    {
-      "nom": "LLH Hostel",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.489881,54.36676",
-      "lat": 24.489881,
-      "lng": 54.36676,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.489881,54.36676",
-      "source": "osm"
-    },
-    {
-      "nom": "City Seasons Al Hamra Abu Dhabi",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4907644,54.3707627",
-      "lat": 24.4907644,
-      "lng": 54.3707627,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4907644,54.3707627",
-      "source": "osm"
-    },
-    {
-      "nom": "Al Baheya Hotel Apartments",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4911931,54.3750997",
-      "lat": 24.4911931,
-      "lng": 54.3750997,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4911931,54.3750997",
-      "source": "osm"
-    },
-    {
-      "nom": "Courtyard by Marriott Abu Dhabi",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4868177,54.3572984",
-      "lat": 24.4868177,
-      "lng": 54.3572984,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4868177,54.3572984",
-      "source": "osm"
-    },
-    {
-      "nom": "Kingsgate",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4916208,54.3797505",
-      "lat": 24.4916208,
-      "lng": 54.3797505,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4916208,54.3797505",
-      "source": "osm"
-    },
-    {
-      "nom": "Abu Dhabi Plaza Hotel Apartments",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4909787,54.3688926",
-      "lat": 24.4909787,
-      "lng": 54.3688926,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4909787,54.3688926",
-      "source": "osm"
-    },
-    {
-      "nom": "Crowne Plaza Abu Dhabi",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.490908,54.3656465",
-      "lat": 24.490908,
-      "lng": 54.3656465,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.ihg.com/crowneplaza/hotels/us/en/abu-dhabi/auhua/hoteldetail?qAdlt=1",
-      "source": "osm"
-    },
-    {
-      "nom": "Strand Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4923507,54.3815788",
-      "lat": 24.4923507,
-      "lng": 54.3815788,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4923507,54.3815788",
-      "source": "osm"
-    },
-    {
-      "nom": "Mutawa Marine Works LLC Guest House",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.429915,54.4109767",
-      "lat": 24.429915,
-      "lng": 54.4109767,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.429915,54.4109767",
-      "source": "osm"
-    },
-    {
-      "nom": "Al reem plaza",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.492603,54.3715209",
-      "lat": 24.492603,
-      "lng": 54.3715209,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.492603,54.3715209",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Oaks Liwa Executive Suites",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4929646,54.3820508",
-      "lat": 24.4929646,
-      "lng": 54.3820508,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4929646,54.3820508",
-      "source": "osm"
-    },
-    {
-      "nom": "Royal Rose Abu Dhabi, a Curio Collection by Hilton Affiliated Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4933546,54.3728842",
-      "lat": 24.4933546,
-      "lng": 54.3728842,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.hilton.com/en/hotels/auhrrqq-royal-rose-abu-dhabi/",
-      "source": "osm"
-    },
-    {
-      "nom": "C18",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4836654,54.4064279",
-      "lat": 24.4836654,
-      "lng": 54.4064279,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4836654,54.4064279",
-      "source": "osm"
-    },
-    {
-      "nom": "Grand Continental Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4927584,54.3661973",
-      "lat": 24.4927584,
-      "lng": 54.3661973,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4927584,54.3661973",
-      "source": "osm"
-    },
-    {
-      "nom": "Eclipse Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4903228,54.3578107",
-      "lat": 24.4903228,
-      "lng": 54.3578107,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4903228,54.3578107",
-      "source": "osm"
-    },
-    {
-      "nom": "Gloria Downtown Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4932561,54.3667142",
-      "lat": 24.4932561,
-      "lng": 54.3667142,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4932561,54.3667142",
-      "source": "osm"
-    },
-    {
-      "nom": "فندق كليبس",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4908013,54.3583168",
-      "lat": 24.4908013,
-      "lng": 54.3583168,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4908013,54.3583168",
-      "source": "osm"
-    },
-    {
-      "nom": "Beach Rotana Hotel & Towers",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 5,
-      "mapsUrl": "https://maps.google.com/?q=24.4945417,54.3842674",
-      "lat": 24.4945417,
-      "lng": 54.3842674,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4945417,54.3842674",
-      "source": "osm"
-    },
-    {
-      "nom": "Rafeeque manalody Abudhabi",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4949719,54.373782",
-      "lat": 24.4949719,
-      "lng": 54.373782,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4949719,54.373782",
-      "source": "osm"
-    },
-    {
-      "nom": "TOP Grand Continental Flamingo",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4939063,54.3651358",
-      "lat": 24.4939063,
-      "lng": 54.3651358,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.gcfhotel.net/",
-      "source": "osm"
-    },
-    {
-      "nom": "Trianon Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4942335,54.3662132",
-      "lat": 24.4942335,
-      "lng": 54.3662132,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4942335,54.3662132",
-      "source": "osm"
-    },
-    {
-      "nom": "Millenium Corniche Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.494631,54.3642556",
-      "lat": 24.494631,
-      "lng": 54.3642556,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.millenniumhotels.com/ae/millenniumabudhabi/index.html",
-      "source": "osm"
-    },
-    {
-      "nom": "Diplomat Hotel Howard Johnson",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4954191,54.3667581",
-      "lat": 24.4954191,
-      "lng": 54.3667581,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4954191,54.3667581",
-      "source": "osm"
-    },
-    {
-      "nom": "Dana Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4965722,54.3796568",
-      "lat": 24.4965722,
-      "lng": 54.3796568,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4965722,54.3796568",
-      "source": "osm"
-    },
-    {
-      "nom": "Tryp Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4957036,54.3664931",
-      "lat": 24.4957036,
-      "lng": 54.3664931,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4957036,54.3664931",
-      "source": "osm"
-    },
-    {
-      "nom": "KFC Accommodation",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4971181,54.3782567",
-      "lat": 24.4971181,
-      "lng": 54.3782567,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4971181,54.3782567",
-      "source": "osm"
-    },
-    {
-      "nom": "Oriental Hotel Apartments",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4973671,54.3786199",
-      "lat": 24.4973671,
-      "lng": 54.3786199,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4973671,54.3786199",
-      "source": "osm"
-    },
-    {
-      "nom": "Wonder Island Gift",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4973443,54.373162",
-      "lat": 24.4973443,
-      "lng": 54.373162,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4973443,54.373162",
-      "source": "osm"
-    },
-    {
-      "nom": "فندق النهال",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4974319,54.3735282",
-      "lat": 24.4974319,
-      "lng": 54.3735282,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4974319,54.3735282",
-      "source": "osm"
-    },
-    {
-      "nom": "Nehal",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4974913,54.3736077",
-      "lat": 24.4974913,
-      "lng": 54.3736077,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4974913,54.3736077",
-      "source": "osm"
-    },
-    {
-      "nom": "Le Royal Meridien Abu Dhabi",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4963206,54.3654239",
-      "lat": 24.4963206,
-      "lng": 54.3654239,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4963206,54.3654239",
-      "source": "osm"
-    },
-    {
-      "nom": "Hamdan",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4972277,54.3681125",
-      "lat": 24.4972277,
-      "lng": 54.3681125,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4972277,54.3681125",
-      "source": "osm"
-    },
-    {
-      "nom": "Al Ain Palace Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€€",
-      "score": 3,
-      "mapsUrl": "https://maps.google.com/?q=24.4969943,54.3650004",
-      "lat": 24.4969943,
-      "lng": 54.3650004,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.alainpalacehotel.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel InterContinental Abu Dhabi",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 5,
-      "mapsUrl": "https://maps.google.com/?q=24.4571236,54.328513",
-      "lat": 24.4571236,
-      "lng": 54.328513,
-      "halalFriendly": false,
-      "bookingUrl": "http://www.ichotelsgroup.com/intercontinental/hotels/gb/en/abu-dhabi/auhha/hoteldetail",
-      "source": "osm"
-    },
-    {
-      "nom": "Swiss-Belhotel Corniche",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 4,
-      "mapsUrl": "https://maps.google.com/?q=24.4985685,54.3719475",
-      "lat": 24.4985685,
-      "lng": 54.3719475,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4985685,54.3719475",
-      "source": "osm"
-    },
-    {
-      "nom": "Le Meridien Abu Dhabi",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4989978,54.3812073",
-      "lat": 24.4989978,
-      "lng": 54.3812073,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4989978,54.3812073",
-      "source": "osm"
-    },
-    {
-      "nom": "Sofitel Abu Dhabi Corniche",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 5,
-      "mapsUrl": "https://maps.google.com/?q=24.4990149,54.3675061",
-      "lat": 24.4990149,
-      "lng": 54.3675061,
-      "halalFriendly": false,
-      "bookingUrl": "https://sofitel.accor.com/en/hotels/7507.html?merchantid=ppc-sof-nom-goo-ww-pl-sear-mob&sourceid=bp-cenbp-cen&utm_source=google&utm_medium=cpc&utm_campaign=ppc-sof-nom-goo-ww-pl-ww-mix-sear-bp&utm_term=nom&utm_content=ww-pl-AE-V4919&wiz_campaign=208626806",
-      "source": "osm"
-    },
-    {
-      "nom": "Bin Majid Tower Hotel Apartment",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4998628,54.3708936",
-      "lat": 24.4998628,
-      "lng": 54.3708936,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4998628,54.3708936",
-      "source": "osm"
-    },
-    {
-      "nom": "The St. Regis Abu Dhabi",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4640109,54.3273413",
-      "lat": 24.4640109,
-      "lng": 54.3273413,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.marriott.com/en-us/hotels/auhrx-the-st-regis-abu-dhabi/",
-      "source": "osm"
-    },
-    {
-      "nom": "قصر السراب ابوظبي",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.5003814,54.3725796",
-      "lat": 24.5003814,
-      "lng": 54.3725796,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.5003814,54.3725796",
-      "source": "osm"
-    },
-    {
-      "nom": "Rosewood Maryah Island",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.4997259,54.3873072",
-      "lat": 24.4997259,
-      "lng": 54.3873072,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=24.4997259,54.3873072",
-      "source": "osm"
-    },
-    {
-      "nom": "أجنحة هوثورن من وندهام أبو ظبي وسط المدينة",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.5002476,54.3704112",
-      "lat": 24.5002476,
-      "lng": 54.3704112,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.wyndhamhotels.com/hawthorn-extended-stay/abu-dhabi-united-arab-emirates/hawthorn-suites-by-wyndham-city-center-abu-dhabi/overview?CID=LC:BH::GGL:RIO:National:49908&iata=00093796",
-      "source": "osm"
-    },
-    {
-      "nom": "Southern Sun Abu Dhabi",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 4,
-      "mapsUrl": "https://maps.google.com/?q=24.500509,54.3712475",
-      "lat": 24.500509,
-      "lng": 54.3712475,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.southernsun.com/southern-sun-abu-dhabi?utm_source=openstreetmaps&utm_medium=businesslisting&utm_campaign=hotel_southern-sun-abu-dhabi",
-      "source": "osm"
-    },
-    {
-      "nom": "Sheraton Abu Dhabi Hotel & Resort",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 5,
-      "mapsUrl": "https://maps.google.com/?q=24.5004207,54.3685507",
-      "lat": 24.5004207,
-      "lng": 54.3685507,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.marriott.com/hotels/travel/auhsi-sheraton-abu-dhabi-hotel-and-resort/",
-      "source": "osm"
-    },
-    {
-      "nom": "Jannah Burj Al Sarab Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=24.5014862,54.3731729",
-      "lat": 24.5014862,
-      "lng": 54.3731729,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.jannah-hotels.com/hotels/jannah-burj-al-sarab/en",
-      "source": "osm"
-    }
-  ],
-  "activites": [
-    {
-      "nom": "مسجد سراقة بن مالك",
-      "lat": 24.4623892,
-      "lng": 54.3854677,
-      "coordonnees": {
-        "lat": 24.4623892,
-        "lng": 54.3854677
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=24.4623892,54.3854677",
-      "source": "osm"
-    },
-    {
-      "nom": "جامع عبدالجليل الفهيم",
-      "lat": 24.4665503,
-      "lng": 54.3771572,
-      "coordonnees": {
-        "lat": 24.4665503,
-        "lng": 54.3771572
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=24.4665503,54.3771572",
-      "source": "osm"
-    },
-    {
-      "nom": "قصر الشيخ محمد بن زايد آل نهيان",
-      "lat": 24.452714,
-      "lng": 54.3628231,
-      "coordonnees": {
-        "lat": 24.452714,
-        "lng": 54.3628231
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=24.452714,54.3628231",
-      "source": "osm"
-    },
-    {
-      "nom": "Baby shop parking",
-      "lat": 24.4712056,
-      "lng": 54.3711361,
-      "coordonnees": {
-        "lat": 24.4712056,
-        "lng": 54.3711361
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=24.4712056,54.3711361",
-      "source": "osm"
-    },
-    {
-      "nom": "منزل صديق",
-      "lat": 24.4774461,
-      "lng": 54.3680983,
-      "coordonnees": {
-        "lat": 24.4774461,
-        "lng": 54.3680983
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=24.4774461,54.3680983",
-      "source": "osm"
-    },
-    {
-      "nom": "Prodome Consulting, Al Fahah plaza",
-      "lat": 24.4787321,
-      "lng": 54.3711792,
-      "coordonnees": {
-        "lat": 24.4787321,
-        "lng": 54.3711792
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=24.4787321,54.3711792",
-      "source": "osm"
-    },
-    {
-      "nom": "حديقة الدلافين",
-      "lat": 24.4539487,
-      "lng": 54.4055677,
-      "coordonnees": {
-        "lat": 24.4539487,
-        "lng": 54.4055677
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=24.4539487,54.4055677",
-      "source": "osm"
-    },
-    {
-      "nom": "Summit",
-      "lat": 24.4782865,
-      "lng": 54.3662876,
-      "coordonnees": {
-        "lat": 24.4782865,
-        "lng": 54.3662876
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=24.4782865,54.3662876",
-      "source": "osm"
-    },
-    {
-      "nom": "المرسال للشحن البرى",
-      "lat": 24.4793636,
-      "lng": 54.385954,
-      "coordonnees": {
-        "lat": 24.4793636,
-        "lng": 54.385954
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=24.4793636,54.385954",
-      "source": "osm"
-    },
-    {
-      "nom": "مبنى الدفاع المدني",
-      "lat": 24.4812118,
-      "lng": 54.3799865,
-      "coordonnees": {
-        "lat": 24.4812118,
-        "lng": 54.3799865
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=24.4812118,54.3799865",
-      "source": "osm"
-    },
-    {
-      "nom": "ad shekha",
-      "lat": 24.4547182,
-      "lng": 54.3429251,
-      "coordonnees": {
-        "lat": 24.4547182,
-        "lng": 54.3429251
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=24.4547182,54.3429251",
-      "source": "osm"
-    },
-    {
-      "nom": "AD islamic bank bateen branch",
-      "lat": 24.4510314,
-      "lng": 54.343012,
-      "coordonnees": {
-        "lat": 24.4510314,
-        "lng": 54.343012
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=24.4510314,54.343012",
-      "source": "osm"
-    },
-    {
-      "nom": "خيرات لبنان",
-      "lat": 24.4725833,
-      "lng": 54.3489467,
-      "coordonnees": {
-        "lat": 24.4725833,
-        "lng": 54.3489467
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=24.4725833,54.3489467",
-      "source": "osm"
-    },
-    {
-      "nom": "Folklore Gallery",
-      "lat": 24.4722771,
-      "lng": 54.3468971,
-      "coordonnees": {
-        "lat": 24.4722771,
-        "lng": 54.3468971
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=24.4722771,54.3468971",
-      "source": "osm"
-    },
-    {
-      "nom": "Ayesha Hadhir's \"Playful Traditions\"",
-      "lat": 24.4820513,
-      "lng": 54.3564821,
-      "coordonnees": {
-        "lat": 24.4820513,
-        "lng": 54.3564821
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=24.4820513,54.3564821",
-      "source": "osm"
-    },
-    {
-      "nom": "3D Cube Display;Mircea Cantor's \"Aquilla non capit muscas\"",
-      "lat": 24.4830298,
-      "lng": 54.3581447,
-      "coordonnees": {
-        "lat": 24.4830298,
-        "lng": 54.3581447
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=24.4830298,54.3581447",
-      "source": "osm"
-    },
-    {
-      "nom": "Nnenna Okore's \"Let's Not Wait to Fill Our Cups with Time\"",
-      "lat": 24.4814248,
-      "lng": 54.3552578,
-      "coordonnees": {
-        "lat": 24.4814248,
-        "lng": 54.3552578
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=24.4814248,54.3552578",
-      "source": "osm"
-    },
-    {
-      "nom": "Mohammed Al Astad's \"Danat Al Shawati\"",
-      "lat": 24.4830527,
-      "lng": 54.3571516,
-      "coordonnees": {
-        "lat": 24.4830527,
-        "lng": 54.3571516
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=24.4830527,54.3571516",
-      "source": "osm"
-    },
-    {
-      "nom": "سوق كل شيء ابو ظبي",
-      "lat": 24.485605,
-      "lng": 54.3604021,
-      "coordonnees": {
-        "lat": 24.485605,
-        "lng": 54.3604021
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=24.485605,54.3604021",
-      "source": "osm"
-    },
-    {
-      "nom": "مكتب الفن الرفيع للاستشارات الهندسية",
-      "lat": 24.4899135,
-      "lng": 54.3839677,
-      "coordonnees": {
-        "lat": 24.4899135,
-        "lng": 54.3839677
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=24.4899135,54.3839677",
-      "source": "osm"
-    },
-    {
-      "nom": "Arquitectura Expandida's \"Urban Negotiation\"",
-      "lat": 24.4842303,
-      "lng": 54.35461,
-      "coordonnees": {
-        "lat": 24.4842303,
-        "lng": 54.35461
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=24.4842303,54.35461",
-      "source": "osm"
-    },
-    {
-      "nom": "Hamdan Center",
-      "lat": 24.4888154,
-      "lng": 54.3626291,
-      "coordonnees": {
-        "lat": 24.4888154,
-        "lng": 54.3626291
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=24.4888154,54.3626291",
-      "source": "osm"
-    },
-    {
-      "nom": "Infinite Technology & Solutions LLC",
-      "lat": 24.4905543,
-      "lng": 54.3653357,
-      "coordonnees": {
-        "lat": 24.4905543,
-        "lng": 54.3653357
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=24.4905543,54.3653357",
-      "source": "osm"
-    },
-    {
-      "nom": "Nicholas Galanin's \"In Every Language There is Land\"",
-      "lat": 24.4733515,
-      "lng": 54.3406582,
-      "coordonnees": {
-        "lat": 24.4733515,
-        "lng": 54.3406582
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=24.4733515,54.3406582",
-      "source": "osm"
-    },
-    {
-      "nom": "UAE",
-      "lat": 24.4935116,
-      "lng": 54.3748575,
-      "coordonnees": {
-        "lat": 24.4935116,
-        "lng": 54.3748575
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=24.4935116,54.3748575",
-      "source": "osm"
-    },
-    {
-      "nom": "UT-R Studio's \"Shifting Sands\"",
-      "lat": 24.4834021,
-      "lng": 54.3467339,
-      "coordonnees": {
-        "lat": 24.4834021,
-        "lng": 54.3467339
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=24.4834021,54.3467339",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد",
-      "lat": 24.4916659,
-      "lng": 54.3585915,
-      "coordonnees": {
-        "lat": 24.4916659,
-        "lng": 54.3585915
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=24.4916659,54.3585915",
-      "source": "osm"
-    },
-    {
-      "nom": "Etihad Facade",
-      "lat": 24.4897004,
-      "lng": 54.3543187,
-      "coordonnees": {
-        "lat": 24.4897004,
-        "lng": 54.3543187
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=24.4897004,54.3543187",
-      "source": "osm"
-    },
-    {
-      "nom": "Rami Kashou × Emirati Artisans' \"Continuum\"",
-      "lat": 24.4924699,
-      "lng": 54.3562724,
-      "coordonnees": {
-        "lat": 24.4924699,
-        "lng": 54.3562724
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=24.4924699,54.3562724",
-      "source": "osm"
-    },
-    {
-      "nom": "Abdullah Al Saadi",
-      "lat": 24.4924044,
-      "lng": 54.3552645,
-      "coordonnees": {
-        "lat": 24.4924044,
-        "lng": 54.3552645
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=24.4924044,54.3552645",
-      "source": "osm"
-    }
-  ],
-  "codeISO": "AE",
-  "image": "https://images.unsplash.com/photo-1569836741193-dcff5e3e07d7?w=1400&q=85",
-  "continent": "Asie",
-  "metaDescription": "Restaurants halal signalés, mosquées et guide pratique pour Abu Dhabi — Halal Trust Score 5/5.",
-  "image_hero": "https://images.unsplash.com/photo-1569836741193-dcff5e3e07d7?w=1400&q=85",
-  "mosqueesPrincipales": [
-    {
-      "nom": "Shaikh Mohammed bin Khalid Al Nahyan Mosque",
-      "lat": 24.4439993,
-      "lng": 54.3691753,
-      "coordonnees": {
-        "lat": 24.4439993,
-        "lng": 54.3691753
-      },
-      "mapsUrl": "https://maps.google.com/?q=24.4439993,54.3691753",
-      "source": "osm"
-    },
-    {
-      "nom": "Hanzalah Bin Abi Amer",
-      "lat": 24.4921602,
-      "lng": 54.3620976,
-      "coordonnees": {
-        "lat": 24.4921602,
-        "lng": 54.3620976
-      },
-      "mapsUrl": "https://maps.google.com/?q=24.4921602,54.3620976",
-      "source": "osm"
-    },
-    {
-      "nom": "Junk Removal dubai",
-      "lat": 24.4230511,
-      "lng": 54.4372815,
-      "coordonnees": {
-        "lat": 24.4230511,
-        "lng": 54.4372815
-      },
-      "mapsUrl": "https://maps.google.com/?q=24.4230511,54.4372815",
-      "source": "osm"
-    },
-    {
-      "nom": "Prayer Room",
-      "lat": 24.5291316,
-      "lng": 54.379457,
-      "coordonnees": {
-        "lat": 24.5291316,
-        "lng": 54.379457
-      },
-      "mapsUrl": "https://maps.google.com/?q=24.5291316,54.379457",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد عثمان",
-      "lat": 24.3658852,
-      "lng": 54.5126471,
-      "coordonnees": {
-        "lat": 24.3658852,
-        "lng": 54.5126471
-      },
-      "mapsUrl": "https://maps.google.com/?q=24.3658852,54.5126471",
-      "source": "osm"
-    },
-    {
-      "nom": "Al siraj mosque mussafa",
-      "lat": 24.3556618,
-      "lng": 54.514568,
-      "coordonnees": {
-        "lat": 24.3556618,
-        "lng": 54.514568
-      },
-      "mapsUrl": "https://maps.google.com/?q=24.3556618,54.514568",
-      "source": "osm"
-    },
-    {
-      "nom": "Worker village mosque",
-      "lat": 24.3608006,
-      "lng": 54.5200406,
-      "coordonnees": {
-        "lat": 24.3608006,
-        "lng": 54.5200406
-      },
-      "mapsUrl": "https://maps.google.com/?q=24.3608006,54.5200406",
-      "source": "osm"
-    },
-    {
-      "id": "osm-62281265",
-      "nom": "Sheikh Khalifa Mosque",
-      "type": "mosquee",
-      "lat": 24.4845676,
-      "lng": 54.3528948,
-      "mapsUrl": "https://maps.google.com/?q=24.4845676,54.3528948",
-      "source": "osm"
-    },
-    {
-      "id": "osm-79124389",
-      "nom": "مسجد أبي بن كعب",
-      "type": "mosquee",
-      "lat": 24.4368659,
-      "lng": 54.4372648,
-      "mapsUrl": "https://maps.google.com/?q=24.4368659,54.4372648",
-      "source": "osm"
-    },
-    {
-      "id": "osm-89664831",
-      "nom": "Sultan bin Zayed Mosque",
-      "type": "mosquee",
-      "lat": 24.4516888,
-      "lng": 54.3485098,
-      "mapsUrl": "https://maps.google.com/?q=24.4516888,54.3485098",
-      "source": "osm"
-    },
-    {
-      "id": "osm-100596043",
-      "nom": "جامع الشيخ زايد",
-      "type": "mosquee",
-      "lat": 24.4812272,
-      "lng": 54.3587189,
-      "mapsUrl": "https://maps.google.com/?q=24.4812272,54.3587189",
-      "source": "osm"
-    },
-    {
-      "id": "osm-108742401",
-      "nom": "مسجد بلال",
-      "type": "mosquee",
-      "lat": 24.4916667,
-      "lng": 54.3802951,
-      "mapsUrl": "https://maps.google.com/?q=24.4916667,54.3802951",
-      "source": "osm"
-    },
-    {
-      "id": "osm-117208338",
-      "nom": "Abdul Jaleel Muhammed",
-      "type": "mosquee",
-      "lat": 24.4228693,
-      "lng": 54.4491035,
-      "mapsUrl": "https://maps.google.com/?q=24.4228693,54.4491035",
-      "source": "osm"
-    },
-    {
-      "id": "osm-120113814",
-      "nom": "Masjid Derwish Bin Karam",
-      "type": "mosquee",
-      "lat": 24.4904288,
-      "lng": 54.3663281,
-      "mapsUrl": "https://maps.google.com/?q=24.4904288,54.3663281",
-      "source": "osm"
-    },
-    {
-      "id": "osm-141176782",
-      "nom": "Abdullah Salem Mosque",
-      "type": "mosquee",
-      "lat": 24.4545258,
-      "lng": 54.3609,
-      "mapsUrl": "https://maps.google.com/?q=24.4545258,54.3609",
-      "source": "osm"
-    },
-    {
-      "id": "osm-144308190",
-      "nom": "Muhammad Bin Masoud Al Muhairbi Mosque",
-      "type": "mosquee",
-      "lat": 24.4804124,
-      "lng": 54.3545165,
-      "mapsUrl": "https://maps.google.com/?q=24.4804124,54.3545165",
-      "source": "osm"
-    },
-    {
-      "id": "osm-159146899",
-      "nom": "مسجد مريم أم عيسى",
-      "type": "mosquee",
-      "lat": 24.4497122,
-      "lng": 54.3858236,
-      "mapsUrl": "https://maps.google.com/?q=24.4497122,54.3858236",
-      "source": "osm"
-    },
-    {
-      "id": "osm-172829156",
-      "nom": "Fatima Bint Mohammed",
-      "type": "mosquee",
-      "lat": 24.4764768,
-      "lng": 54.346462,
-      "mapsUrl": "https://maps.google.com/?q=24.4764768,54.346462",
-      "source": "osm"
-    },
-    {
-      "id": "osm-173009868",
-      "nom": "Ali Abdullah Jasim Al Zaabi Mosque",
-      "type": "mosquee",
-      "lat": 24.4789562,
-      "lng": 54.3527646,
-      "mapsUrl": "https://maps.google.com/?q=24.4789562,54.3527646",
-      "source": "osm"
-    },
-    {
-      "id": "osm-177130320",
-      "nom": "مسجد هامل بن خادم",
-      "type": "mosquee",
-      "lat": 24.4832448,
-      "lng": 54.3668044,
-      "mapsUrl": "https://maps.google.com/?q=24.4832448,54.3668044",
-      "source": "osm"
-    },
-    {
-      "id": "osm-177427593",
-      "nom": "Mariam Bint Said",
-      "type": "mosquee",
-      "lat": 24.4772515,
-      "lng": 54.3729975,
-      "mapsUrl": "https://maps.google.com/?q=24.4772515,54.3729975",
-      "source": "osm"
-    },
-    {
-      "id": "osm-200054824",
-      "nom": "مسجد الشيخ هزاع بن سلطان",
-      "type": "mosquee",
-      "lat": 24.4976045,
-      "lng": 54.3757959,
-      "mapsUrl": "https://maps.google.com/?q=24.4976045,54.3757959",
-      "source": "osm"
-    },
-    {
-      "id": "osm-204796904",
-      "nom": "Al Bateen Mosque",
-      "type": "mosquee",
-      "lat": 24.4581509,
-      "lng": 54.3311949,
-      "mapsUrl": "https://maps.google.com/?q=24.4581509,54.3311949",
-      "source": "osm"
-    },
-    {
-      "id": "osm-225581700",
-      "nom": "Mosque",
-      "type": "mosquee",
-      "lat": 24.4763163,
-      "lng": 54.330731,
-      "mapsUrl": "https://maps.google.com/?q=24.4763163,54.330731",
-      "source": "osm"
-    },
-    {
-      "id": "osm-229636128",
-      "nom": "Al Madina Al Riyadiyah Mosque",
-      "type": "mosquee",
-      "lat": 24.4116437,
-      "lng": 54.4678383,
-      "mapsUrl": "https://maps.google.com/?q=24.4116437,54.4678383",
-      "source": "osm"
-    },
-    {
-      "id": "osm-232767912",
-      "nom": "Thani Bin Murshid Al Romaithy",
-      "type": "mosquee",
-      "lat": 24.4860616,
-      "lng": 54.3669196,
-      "mapsUrl": "https://maps.google.com/?q=24.4860616,54.3669196",
-      "source": "osm"
-    },
-    {
-      "id": "osm-260009996",
-      "nom": "Al Mansoori Mosque",
-      "type": "mosquee",
-      "lat": 24.44215,
-      "lng": 54.3737656,
-      "mapsUrl": "https://maps.google.com/?q=24.44215,54.3737656",
-      "source": "osm"
-    },
-    {
-      "id": "osm-281272450",
-      "nom": "Souq Al Anshetah",
-      "type": "mosquee",
-      "adresse": "أبو ظبي",
-      "lat": 24.5272756,
-      "lng": 54.3647906,
-      "mapsUrl": "https://maps.google.com/?q=24.5272756,54.3647906",
-      "source": "osm"
-    },
-    {
-      "id": "osm-377252634",
-      "nom": "Sheikh Hamdan bin Mohammed bin Khalifa Al Nahyan Mosque",
-      "type": "mosquee",
-      "lat": 24.4713315,
-      "lng": 54.3864934,
-      "mapsUrl": "https://maps.google.com/?q=24.4713315,54.3864934",
-      "source": "osm"
-    },
-    {
-      "id": "osm-384806198",
-      "nom": "Ibn Timia Mosque",
-      "type": "mosquee",
-      "lat": 24.4136608,
-      "lng": 54.4695291,
-      "mapsUrl": "https://maps.google.com/?q=24.4136608,54.4695291",
-      "source": "osm"
-    },
-    {
-      "id": "osm-391554738",
-      "nom": "Jamia Bani Hashem",
-      "type": "mosquee",
-      "lat": 24.4092725,
-      "lng": 54.4937196,
-      "mapsUrl": "https://maps.google.com/?q=24.4092725,54.4937196",
-      "source": "osm"
-    },
-    {
-      "id": "osm-395020133",
-      "nom": "Shareefa Mosque",
-      "type": "mosquee",
-      "lat": 24.4911559,
-      "lng": 54.3606611,
-      "mapsUrl": "https://maps.google.com/?q=24.4911559,54.3606611",
-      "source": "osm"
-    },
-    {
-      "id": "osm-399206859",
-      "nom": "Nashu Hajii Al Qabiisii",
-      "type": "mosquee",
-      "lat": 24.4375141,
-      "lng": 54.4334114,
-      "mapsUrl": "https://maps.google.com/?q=24.4375141,54.4334114",
-      "source": "osm"
-    },
-    {
-      "id": "osm-399207149",
-      "nom": "Rashid Watiq Al Muroor",
-      "type": "mosquee",
-      "lat": 24.4391275,
-      "lng": 54.4318978,
-      "mapsUrl": "https://maps.google.com/?q=24.4391275,54.4318978",
-      "source": "osm"
-    },
-    {
-      "id": "osm-428424439",
-      "nom": "Mohammed Saif Bin Musaed",
-      "type": "mosquee",
-      "lat": 24.4729877,
-      "lng": 54.3430865,
-      "mapsUrl": "https://maps.google.com/?q=24.4729877,54.3430865",
-      "source": "osm"
-    },
-    {
-      "id": "osm-437418070",
-      "nom": "مسجد مبارك و مطر أبناء حاظر",
-      "type": "mosquee",
-      "lat": 24.4556456,
-      "lng": 54.3463404,
-      "mapsUrl": "https://maps.google.com/?q=24.4556456,54.3463404",
-      "source": "osm"
-    },
-    {
-      "id": "osm-437421667",
-      "nom": "مسجد محمد بن عبدالله صالح",
-      "type": "mosquee",
-      "lat": 24.4556857,
-      "lng": 54.3424244,
-      "mapsUrl": "https://maps.google.com/?q=24.4556857,54.3424244",
-      "source": "osm"
-    },
-    {
-      "id": "osm-464657963",
-      "nom": "Al Aziz",
-      "type": "mosquee",
-      "lat": 24.4924444,
-      "lng": 54.395825,
-      "mapsUrl": "https://maps.google.com/?q=24.4924444,54.395825",
-      "source": "osm"
-    },
-    {
-      "id": "osm-474869150",
-      "nom": "مسجد الشهيد الشيبه حاضر خميس العميمي",
-      "type": "mosquee",
-      "lat": 24.4766913,
-      "lng": 54.3493243,
-      "mapsUrl": "https://maps.google.com/?q=24.4766913,54.3493243",
-      "source": "osm"
-    },
-    {
-      "id": "osm-480691101",
-      "nom": "Faraj Muhammad Al-Muhairbi Mosque",
-      "type": "mosquee",
-      "lat": 24.4800407,
-      "lng": 54.3531477,
-      "mapsUrl": "https://maps.google.com/?q=24.4800407,54.3531477",
-      "source": "osm"
-    },
-    {
-      "id": "osm-1019914867",
-      "nom": "Imam Al-Tayeb Mosque",
-      "type": "mosquee",
-      "adresse": "أبو ظبي",
-      "lat": 24.5307266,
-      "lng": 54.4051485,
-      "mapsUrl": "https://maps.google.com/?q=24.5307266,54.4051485",
-      "source": "osm"
-    },
-    {
-      "id": "osm-1047401808",
-      "nom": "Jumma Mosque",
-      "type": "mosquee",
-      "lat": 24.5397684,
-      "lng": 54.4397866,
-      "mapsUrl": "https://maps.google.com/?q=24.5397684,54.4397866",
-      "source": "osm"
-    },
-    {
-      "id": "osm-1161227744",
-      "nom": "مسجد سعد بن معاذ",
-      "type": "mosquee",
-      "lat": 24.4513619,
-      "lng": 54.3918894,
-      "mapsUrl": "https://maps.google.com/?q=24.4513619,54.3918894",
-      "source": "osm"
-    },
-    {
-      "id": "osm-1470832492",
-      "nom": "مسجد عناية بنت صالح المهيري",
-      "type": "mosquee",
-      "lat": 24.4762971,
-      "lng": 54.3479467,
-      "mapsUrl": "https://maps.google.com/?q=24.4762971,54.3479467",
-      "source": "osm"
-    },
-    {
-      "id": "osm-1635169",
-      "nom": "جامع الشيخ زايد الكبير",
-      "type": "mosquee",
-      "lat": 24.4124407,
-      "lng": 54.474993,
-      "mapsUrl": "https://maps.google.com/?q=24.4124407,54.474993",
-      "source": "osm"
-    },
-    {
-      "id": "osm-15735117",
-      "nom": "Khalid bin Al Waleed Mosque",
-      "type": "mosquee",
-      "lat": 24.4512867,
-      "lng": 54.3558098,
-      "mapsUrl": "https://maps.google.com/?q=24.4512867,54.3558098",
-      "source": "osm"
-    }
-  ],
-  "halalScore": 9.3,
-  "description_en": "Abu Dhabi, in the UAE, is a halal-friendly destination with a Halal Trust Score of 4.6/5. Muslim travelers will find 119 halal restaurants listed, 1,600 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind. Best time to visit: November–March.",
-  "metaDescription_en": "Halal guide to Abu Dhabi: 119 halal restaurants listed, 1,600 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.6/5.",
-  "nom_en": "Abu Dhabi",
-  "boucheries": [],
-  "dataPurgedAt": "2026-07-15",
-  "osmEnrichedAt": "2026-07-15"
+  {
+   "nom": "Operation Falafel",
+   "lat": 24.4781097,
+   "lng": 54.3715718,
+   "type": "arab, lebanese",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4781097,54.3715718",
+   "source": "osm"
+  },
+  {
+   "nom": "Shatter Al Hassan Lebanese Grill",
+   "lat": 24.4784293,
+   "lng": 54.3698558,
+   "type": "lebanese grill",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4784293,54.3698558",
+   "source": "osm"
+  },
+  {
+   "nom": "Bhavana",
+   "lat": 24.4777301,
+   "lng": 54.3652375,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4777301,54.3652375",
+   "source": "osm"
+  },
+  {
+   "nom": "Bikanervala - Indian Sweets & Vegetarian Restaurant",
+   "lat": 24.4786167,
+   "lng": 54.3633166,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4786167,54.3633166",
+   "source": "osm"
+  },
+  {
+   "nom": "Fresh Bun & Mour Bakery (B&G Pares House)",
+   "lat": 24.4772518,
+   "lng": 54.3569646,
+   "type": "asian",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=24.4772518,54.3569646",
+   "source": "osm"
+  },
+  {
+   "nom": "oktay restutent",
+   "lat": 24.4759309,
+   "lng": 54.3542757,
+   "type": "turkish",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4759309,54.3542757",
+   "source": "osm"
+  },
+  {
+   "nom": "Syrian Flower",
+   "lat": 24.4776427,
+   "lng": 54.3562326,
+   "type": "syrian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4776427,54.3562326",
+   "source": "osm"
+  },
+  {
+   "nom": "Punjabi Dhaba Restaurant",
+   "lat": 24.4730622,
+   "lng": 54.3509529,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4730622,54.3509529",
+   "source": "osm"
+  },
+  {
+   "nom": "دار الكرك & المحال",
+   "lat": 24.4843114,
+   "lng": 54.3828434,
+   "type": "arab, indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4843114,54.3828434",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Sultan Bakeries and Markets",
+   "lat": 24.4826743,
+   "lng": 54.3645604,
+   "type": "lebanese sweets, manaqish",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4826743,54.3645604",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Ajawed",
+   "lat": 24.479823,
+   "lng": 54.3579769,
+   "type": "arab, lebanese, pizza",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.479823,54.3579769",
+   "source": "osm"
+  },
+  {
+   "nom": "مطعم زهرة لبنان",
+   "lat": 24.4763655,
+   "lng": 54.3531048,
+   "type": "lebanese",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4763655,54.3531048",
+   "source": "osm"
+  },
+  {
+   "nom": "Koshary El Tahrir",
+   "lat": 24.4750175,
+   "lng": 54.3514993,
+   "type": "egyptian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4750175,54.3514993",
+   "source": "osm"
+  },
+  {
+   "nom": "مقهى أبو فهد",
+   "lat": 24.4789115,
+   "lng": 54.3523078,
+   "type": "arab",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4789115,54.3523078",
+   "source": "osm"
+  },
+  {
+   "nom": "Sangeetha Vegetarian Restaurant",
+   "lat": 24.4854367,
+   "lng": 54.363554,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4854367,54.363554",
+   "source": "osm"
+  },
+  {
+   "nom": "Rabab Kabab Restaurant",
+   "lat": 24.4808783,
+   "lng": 54.3546063,
+   "type": "pakistani, indian",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=24.4808783,54.3546063",
+   "source": "osm"
+  },
+  {
+   "nom": "Bait El Khetyar",
+   "lat": 24.4881626,
+   "lng": 54.3711958,
+   "type": "lebanese",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4881626,54.3711958",
+   "source": "osm"
+  },
+  {
+   "nom": "Ritaj Restaurant",
+   "lat": 24.4856376,
+   "lng": 54.3614694,
+   "type": "indian, hyderabadi",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4856376,54.3614694",
+   "source": "osm"
+  },
+  {
+   "nom": "Dolmabahce Restaurant",
+   "lat": 24.4796636,
+   "lng": 54.3508927,
+   "type": "turkish",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4796636,54.3508927",
+   "source": "osm"
+  },
+  {
+   "nom": "Lebanese Mill Restaurant",
+   "lat": 24.4889879,
+   "lng": 54.3727971,
+   "type": "lebanese",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4889879,54.3727971",
+   "source": "osm"
+  },
+  {
+   "nom": "Zali",
+   "lat": 24.4537778,
+   "lng": 54.3381294,
+   "type": "lebanese",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4537778,54.3381294",
+   "source": "osm"
+  },
+  {
+   "nom": "مطعم الابراهيمي شارع االیکٹرا",
+   "lat": 24.4884054,
+   "lng": 54.3673041,
+   "type": "pakistani",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4884054,54.3673041",
+   "source": "osm"
+  },
+  {
+   "nom": "My Tea Cafeteria",
+   "lat": 24.4891343,
+   "lng": 54.3836723,
+   "type": "arab",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4891343,54.3836723",
+   "source": "osm"
+  },
+  {
+   "nom": "German Doner Kebab",
+   "lat": 24.4702582,
+   "lng": 54.3417043,
+   "type": "kebab",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4702582,54.3417043",
+   "source": "osm"
+  },
+  {
+   "nom": "Mondo Cafe",
+   "lat": 24.4480091,
+   "lng": 54.3375221,
+   "type": "arab, greek, indian, italian, pasta, pizza",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4480091,54.3375221",
+   "source": "osm"
+  },
+  {
+   "nom": "Sun light Restaurant",
+   "lat": 24.4888739,
+   "lng": 54.364818,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4888739,54.364818",
+   "source": "osm"
+  },
+  {
+   "nom": "لحمجون",
+   "lat": 24.4911499,
+   "lng": 54.3737563,
+   "type": "turkish",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4911499,54.3737563",
+   "source": "osm"
+  },
+  {
+   "nom": "Sangam RESTAURANT & SWEETS",
+   "lat": 24.4912922,
+   "lng": 54.3751079,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4912922,54.3751079",
+   "source": "osm"
+  },
+  {
+   "nom": "AL SAYYAD Restaurant & grill br.",
+   "lat": 24.43888,
+   "lng": 54.4150706,
+   "type": "arab, breakfast, chicken, coffee shop, diner, fish, fish and chips, grill, sandwich, seafood, tea",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.43888,54.4150706",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Farah Butchery",
+   "lat": 24.4899495,
+   "lng": 54.365493,
+   "type": "arab",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4899495,54.365493",
+   "source": "osm"
+  },
+  {
+   "nom": "Hyderabad Bawarchi Restaurant",
+   "lat": 24.4911486,
+   "lng": 54.3680164,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4911486,54.3680164",
+   "source": "osm"
+  },
+  {
+   "nom": "McDonald's",
+   "lat": 24.4877149,
+   "lng": 54.3575138,
+   "type": "burger",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=24.4877149,54.3575138",
+   "source": "osm"
+  },
+  {
+   "nom": "Special",
+   "lat": 24.4719622,
+   "lng": 54.3398043,
+   "type": "kebab",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4719622,54.3398043",
+   "source": "osm"
+  },
+  {
+   "nom": "مطعم قصر الهند",
+   "lat": 24.4929944,
+   "lng": 54.3767675,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4929944,54.3767675",
+   "source": "osm"
+  },
+  {
+   "nom": "مطعم سنجيتا",
+   "lat": 24.4936223,
+   "lng": 54.3761091,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4936223,54.3761091",
+   "source": "osm"
+  },
+  {
+   "nom": "Special Restaurant & Cafe",
+   "lat": 24.470173,
+   "lng": 54.3374057,
+   "type": "kebab",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.470173,54.3374057",
+   "source": "osm"
+  },
+  {
+   "nom": "Bshawarma",
+   "lat": 24.4904964,
+   "lng": 54.3950171,
+   "type": "shawarma",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4904964,54.3950171",
+   "source": "osm"
+  },
+  {
+   "nom": "Petek",
+   "lat": 24.4886327,
+   "lng": 54.3553305,
+   "type": "turkish",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4886327,54.3553305",
+   "source": "osm"
+  },
+  {
+   "nom": "Rotana Cafe",
+   "lat": 24.4237914,
+   "lng": 54.4070358,
+   "type": "arab, barbecue, international, lebanese",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4237914,54.4070358",
+   "source": "osm"
+  },
+  {
+   "nom": "مطعم ومشاوي كاليكوت فود بوك",
+   "lat": 24.4949285,
+   "lng": 54.379331,
+   "type": "arab, chinese, grill, indian, tea",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4949285,54.379331",
+   "source": "osm"
+  },
+  {
+   "nom": "Perfect Biryani House",
+   "lat": 24.4950945,
+   "lng": 54.3725152,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4950945,54.3725152",
+   "source": "osm"
+  },
+  {
+   "nom": "مطعم ومشاوي شيكيس",
+   "lat": 24.4955401,
+   "lng": 54.3782261,
+   "type": "arab, asian, barbecue, burger, chicken, kebab, local",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4955401,54.3782261",
+   "source": "osm"
+  },
+  {
+   "nom": "Indigo",
+   "lat": 24.4952572,
+   "lng": 54.3843666,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4952572,54.3843666",
+   "source": "osm"
+  },
+  {
+   "nom": "Zyara",
+   "lat": 24.4940345,
+   "lng": 54.3615599,
+   "type": "lebanese",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4940345,54.3615599",
+   "source": "osm"
+  },
+  {
+   "nom": "Jabal Al Rahman Restaurant",
+   "lat": 24.4974336,
+   "lng": 54.3695119,
+   "type": "russian, asian",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=24.4974336,54.3695119",
+   "source": "osm"
+  },
+  {
+   "nom": "Derwandi Restaurant & Lounge",
+   "lat": 24.4637643,
+   "lng": 54.3263793,
+   "type": "lebanese",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4637643,54.3263793",
+   "source": "osm"
+  },
+  {
+   "nom": "Marmoura Lebanese Restaurant and Lounge",
+   "lat": 24.4127885,
+   "lng": 54.3495665,
+   "type": "lebanese",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4127885,54.3495665",
+   "source": "osm"
+  },
+  {
+   "nom": "Sajway",
+   "lat": 24.5022914,
+   "lng": 54.374712,
+   "type": "lebanese",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.5022914,54.374712",
+   "source": "osm"
+  },
+  {
+   "nom": "José by Pizarro",
+   "lat": 24.4582983,
+   "lng": 54.3220493,
+   "type": "spanish",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=24.4582983,54.3220493",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Dhafra Restaurant",
+   "lat": 24.5092457,
+   "lng": 54.375972,
+   "type": "seafood, fish, arab",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.5092457,54.375972",
+   "source": "osm"
+  },
+  {
+   "nom": "ماكدونالدز",
+   "lat": 24.4285296,
+   "lng": 54.4316867,
+   "type": "burger",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=24.4285296,54.4316867",
+   "source": "osm"
+  },
+  {
+   "nom": "LaLQiLa",
+   "lat": 24.472343,
+   "lng": 54.3189087,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.472343,54.3189087",
+   "source": "osm"
+  },
+  {
+   "nom": "28 Degrees Restaurant",
+   "lat": 24.4164291,
+   "lng": 54.3305934,
+   "type": "arab, international",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4164291,54.3305934",
+   "source": "osm"
+  },
+  {
+   "nom": "Zahrat Lebnan",
+   "lat": 24.433809,
+   "lng": 54.4368352,
+   "type": "lebanese",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.433809,54.4368352",
+   "source": "osm"
+  },
+  {
+   "nom": "مطعم فسفور قدورة للمأكولات",
+   "lat": 24.514182,
+   "lng": 54.3753622,
+   "type": "arab, fish, seafood",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=24.514182,54.3753622",
+   "source": "osm"
+  },
+  {
+   "nom": "City Gate Restaurant",
+   "lat": 24.5185951,
+   "lng": 54.3791757,
+   "type": "indian, pakistani",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.5185951,54.3791757",
+   "source": "osm"
+  },
+  {
+   "nom": "Tamarind The Terrace",
+   "lat": 24.4185737,
+   "lng": 54.4401378,
+   "type": "Restaurant",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=24.4185737,54.4401378",
+   "source": "osm"
+  },
+  {
+   "nom": "c. deli",
+   "lat": 24.4178917,
+   "lng": 54.4404369,
+   "type": "Restaurant",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=24.4178917,54.4404369",
+   "source": "osm"
+  },
+  {
+   "nom": "Shwarma Planet Lebanese Food",
+   "lat": 24.4202676,
+   "lng": 54.4424192,
+   "type": "Restaurant",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=24.4202676,54.4424192",
+   "source": "osm"
+  },
+  {
+   "nom": "Kurakura Restaurant",
+   "lat": 24.4184021,
+   "lng": 54.4430252,
+   "type": "pakistani, indian",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=24.4184021,54.4430252",
+   "source": "osm"
+  },
+  {
+   "nom": "Belgrave Abu Dhabi",
+   "lat": 24.4218839,
+   "lng": 54.44515,
+   "type": "persian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4218839,54.44515",
+   "source": "osm"
+  },
+  {
+   "nom": "Zaytinya",
+   "lat": 24.4349868,
+   "lng": 54.4559288,
+   "type": "lebanese",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4349868,54.4559288",
+   "source": "osm"
+  },
+  {
+   "nom": "Jarousha",
+   "lat": 24.4207747,
+   "lng": 54.4561819,
+   "type": "lebanese, middle eastern",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.4207747,54.4561819",
+   "source": "osm"
+  },
+  {
+   "nom": "Champions Story Pizza",
+   "lat": 24.4295887,
+   "lng": 54.4632439,
+   "type": "pizza, italian, arabic",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=24.4295887,54.4632439",
+   "source": "osm"
+  },
+  {
+   "nom": "Indian by Nature",
+   "lat": 24.5245648,
+   "lng": 54.4340287,
+   "type": "indian",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=24.5245648,54.4340287",
+   "source": "osm"
+  }
+ ],
+ "mosquees": [],
+ "hotels": [
+  {
+   "nom": "Murjan Asfar hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4592844,54.3802679",
+   "lat": 24.4592844,
+   "lng": 54.3802679,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4592844,54.3802679",
+   "source": "osm"
+  },
+  {
+   "nom": "Liwa house",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.455012,54.3697819",
+   "lat": 24.455012,
+   "lng": 54.3697819,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.455012,54.3697819",
+   "source": "osm"
+  },
+  {
+   "nom": "Jannah Place",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.463433,54.3764226",
+   "lat": 24.463433,
+   "lng": 54.3764226,
+   "halalFriendly": false,
+   "bookingUrl": "www.jannahplace.com",
+   "source": "osm"
+  },
+  {
+   "nom": "SMD COMFY APARTAMENTS (10 floor, aprtament 02)",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4649668,54.3764821",
+   "lat": 24.4649668,
+   "lng": 54.3764821,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4649668,54.3764821",
+   "source": "osm"
+  },
+  {
+   "nom": "AG Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4593797,54.3883155",
+   "lat": 24.4593797,
+   "lng": 54.3883155,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4593797,54.3883155",
+   "source": "osm"
+  },
+  {
+   "nom": "Grand Villaggio Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4652394,54.374746",
+   "lat": 24.4652394,
+   "lng": 54.374746,
+   "halalFriendly": false,
+   "bookingUrl": "https://villaggiohotels.ae/",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Diar Sawa Hotel Apartments",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4665344,54.3850752",
+   "lat": 24.4665344,
+   "lng": 54.3850752,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4665344,54.3850752",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Al Rawda Arjan by Rotana",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4689949,54.3725189",
+   "lat": 24.4689949,
+   "lng": 54.3725189,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4689949,54.3725189",
+   "source": "osm"
+  },
+  {
+   "nom": "Villah",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4594949,54.3608779",
+   "lat": 24.4594949,
+   "lng": 54.3608779,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4594949,54.3608779",
+   "source": "osm"
+  },
+  {
+   "nom": "Ministry Of Health Abu Dhabi",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4554167,54.3958856",
+   "lat": 24.4554167,
+   "lng": 54.3958856,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4554167,54.3958856",
+   "source": "osm"
+  },
+  {
+   "nom": "هيئة الامارات للهوية .. تجديد هوية ..عمل هوية",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4712172,54.374689",
+   "lat": 24.4712172,
+   "lng": 54.374689,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4712172,54.374689",
+   "source": "osm"
+  },
+  {
+   "nom": "Grand Millennium Al Wahda",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4712049,54.3738184",
+   "lat": 24.4712049,
+   "lng": 54.3738184,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.millenniumhotels.com/ae/grandmillenniumalwahda/index.html",
+   "source": "osm"
+  },
+  {
+   "nom": "Marriott Downtown Abu-Dhabi",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4702212,54.3700323",
+   "lat": 24.4702212,
+   "lng": 54.3700323,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4702212,54.3700323",
+   "source": "osm"
+  },
+  {
+   "nom": "Kristine Plaza Residence",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4483555,54.397679",
+   "lat": 24.4483555,
+   "lng": 54.397679,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4483555,54.397679",
+   "source": "osm"
+  },
+  {
+   "nom": "Tomz place",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4506351,54.3992648",
+   "lat": 24.4506351,
+   "lng": 54.3992648,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4506351,54.3992648",
+   "source": "osm"
+  },
+  {
+   "nom": "Backpackers Place",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.47385,54.3709321",
+   "lat": 24.47385,
+   "lng": 54.3709321,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.airbnb.de/users/show/181896309",
+   "source": "osm"
+  },
+  {
+   "nom": "Royal Suite",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4746185,54.3789852",
+   "lat": 24.4746185,
+   "lng": 54.3789852,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4746185,54.3789852",
+   "source": "osm"
+  },
+  {
+   "nom": "Ono to One",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.474997,54.3881662",
+   "lat": 24.474997,
+   "lng": 54.3881662,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.474997,54.3881662",
+   "source": "osm"
+  },
+  {
+   "nom": "روني",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4534607,54.4029509",
+   "lat": 24.4534607,
+   "lng": 54.4029509,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4534607,54.4029509",
+   "source": "osm"
+  },
+  {
+   "nom": "قاعة الاعراس المشرف",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4396348,54.3976372",
+   "lat": 24.4396348,
+   "lng": 54.3976372,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.royalcatering.ae/",
+   "source": "osm"
+  },
+  {
+   "nom": "ICC Abu Dhabi",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4762837,54.3692015",
+   "lat": 24.4762837,
+   "lng": 54.3692015,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4762837,54.3692015",
+   "source": "osm"
+  },
+  {
+   "nom": "Gava",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4776066,54.3830413",
+   "lat": 24.4776066,
+   "lng": 54.3830413,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4776066,54.3830413",
+   "source": "osm"
+  },
+  {
+   "nom": "muroor building",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4413727,54.4007073",
+   "lat": 24.4413727,
+   "lng": 54.4007073,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4413727,54.4007073",
+   "source": "osm"
+  },
+  {
+   "nom": "Squere",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4490231,54.4062531",
+   "lat": 24.4490231,
+   "lng": 54.4062531,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4490231,54.4062531",
+   "source": "osm"
+  },
+  {
+   "nom": "liwa hotel",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4796597,54.3665254",
+   "lat": 24.4796597,
+   "lng": 54.3665254,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4796597,54.3665254",
+   "source": "osm"
+  },
+  {
+   "nom": "ڤيلا ٢٥",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4813064,54.3807885",
+   "lat": 24.4813064,
+   "lng": 54.3807885,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4813064,54.3807885",
+   "source": "osm"
+  },
+  {
+   "nom": "Flamingo Hotel Apartment",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.479789,54.3662641",
+   "lat": 24.479789,
+   "lng": 54.3662641,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.479789,54.3662641",
+   "source": "osm"
+  },
+  {
+   "nom": "Villa 167 and 169",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4665062,54.3497742",
+   "lat": 24.4665062,
+   "lng": 54.3497742,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4665062,54.3497742",
+   "source": "osm"
+  },
+  {
+   "nom": "Al jazira royal",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4816463,54.3652696",
+   "lat": 24.4816463,
+   "lng": 54.3652696,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4816463,54.3652696",
+   "source": "osm"
+  },
+  {
+   "nom": "Hilton",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4721107,54.3490504",
+   "lat": 24.4721107,
+   "lng": 54.3490504,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4721107,54.3490504",
+   "source": "osm"
+  },
+  {
+   "nom": "بيت احمد حسن",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4772595,54.3540542",
+   "lat": 24.4772595,
+   "lng": 54.3540542,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4772595,54.3540542",
+   "source": "osm"
+  },
+  {
+   "nom": "بيت يونس فتح علي",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.430025,54.4008719",
+   "lat": 24.430025,
+   "lng": 54.4008719,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.430025,54.4008719",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Paragon Abu Dhabi",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.484521,54.3637328",
+   "lat": 24.484521,
+   "lng": 54.3637328,
+   "halalFriendly": false,
+   "bookingUrl": "http://paragonhoteluae.com/index.php",
+   "source": "osm"
+  },
+  {
+   "nom": "Sheraton Khalidiyah",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4751932,54.3495531",
+   "lat": 24.4751932,
+   "lng": 54.3495531,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4751932,54.3495531",
+   "source": "osm"
+  },
+  {
+   "nom": "The Villa Hostel Abu Dhabi",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4758292,54.3499261",
+   "lat": 24.4758292,
+   "lng": 54.3499261,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4758292,54.3499261",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Cristal Abu Dhabi",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.484719,54.363574",
+   "lat": 24.484719,
+   "lng": 54.363574,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.cristalhospitality.com/cristalhotels/unitedarabemirates/abudhabi/cristalhotel",
+   "source": "osm"
+  },
+  {
+   "nom": "The Villa Hostel - By Lunar",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4761077,54.3499209",
+   "lat": 24.4761077,
+   "lng": 54.3499209,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4761077,54.3499209",
+   "source": "osm"
+  },
+  {
+   "nom": "Platinum Hotel Apartments",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4804433,54.3549904",
+   "lat": 24.4804433,
+   "lng": 54.3549904,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4804433,54.3549904",
+   "source": "osm"
+  },
+  {
+   "nom": "Hamed Center",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4851019,54.3628505",
+   "lat": 24.4851019,
+   "lng": 54.3628505,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4851019,54.3628505",
+   "source": "osm"
+  },
+  {
+   "nom": "منزل معتز عابدين",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4715256,54.3454827",
+   "lat": 24.4715256,
+   "lng": 54.3454827,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4715256,54.3454827",
+   "source": "osm"
+  },
+  {
+   "nom": "فيلا 17 البطين",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4623856,54.3411362",
+   "lat": 24.4623856,
+   "lng": 54.3411362,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4623856,54.3411362",
+   "source": "osm"
+  },
+  {
+   "nom": "منزل معتز عابدين",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4716961,54.3452918",
+   "lat": 24.4716961,
+   "lng": 54.3452918,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4716961,54.3452918",
+   "source": "osm"
+  },
+  {
+   "nom": "Cassells Hotel Apartments",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.484588,54.3608075",
+   "lat": 24.484588,
+   "lng": 54.3608075,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.cassellshotelapartments.ae/",
+   "source": "osm"
+  },
+  {
+   "nom": "KM TRADING Bldg",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4859351,54.3640263",
+   "lat": 24.4859351,
+   "lng": 54.3640263,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4859351,54.3640263",
+   "source": "osm"
+  },
+  {
+   "nom": "بلدية ابو ظبي تجديد عقود ايجار",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4883634,54.3781748",
+   "lat": 24.4883634,
+   "lng": 54.3781748,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4883634,54.3781748",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Shahama Tower",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4792162,54.3513315",
+   "lat": 24.4792162,
+   "lng": 54.3513315,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4792162,54.3513315",
+   "source": "osm"
+  },
+  {
+   "nom": "Home",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4856128,54.3607223",
+   "lat": 24.4856128,
+   "lng": 54.3607223,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4856128,54.3607223",
+   "source": "osm"
+  },
+  {
+   "nom": "Jannat Place City Center",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4888748,54.3831727",
+   "lat": 24.4888748,
+   "lng": 54.3831727,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4888748,54.3831727",
+   "source": "osm"
+  },
+  {
+   "nom": "Copthorne Downtown by Millennium",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4886596,54.3677436",
+   "lat": 24.4886596,
+   "lng": 54.3677436,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4886596,54.3677436",
+   "source": "osm"
+  },
+  {
+   "nom": "Copthorne Downtown Abu Dhabi",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4889426,54.3682137",
+   "lat": 24.4889426,
+   "lng": 54.3682137,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.millenniumhotels.com/en/abu-dhabi/copthorne-downtown-abu-dhabi/",
+   "source": "osm"
+  },
+  {
+   "nom": "Century Hotel Apartments",
+   "categorie": "Hôtel",
+   "priceRange": "€€€",
+   "score": 3,
+   "mapsUrl": "https://maps.google.com/?q=24.4898627,54.3794352",
+   "lat": 24.4898627,
+   "lng": 54.3794352,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4898627,54.3794352",
+   "source": "osm"
+  },
+  {
+   "nom": "Royal M Hotel by Gewan Abu Dhabi",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4484968,54.3379736",
+   "lat": 24.4484968,
+   "lng": 54.3379736,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4484968,54.3379736",
+   "source": "osm"
+  },
+  {
+   "nom": "Oxen234",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4692099,54.3412148",
+   "lat": 24.4692099,
+   "lng": 54.3412148,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4692099,54.3412148",
+   "source": "osm"
+  },
+  {
+   "nom": "Cristal Salam",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4901161,54.3798571",
+   "lat": 24.4901161,
+   "lng": 54.3798571,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4901161,54.3798571",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Oryx",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4691745,54.3408487",
+   "lat": 24.4691745,
+   "lng": 54.3408487,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4691745,54.3408487",
+   "source": "osm"
+  },
+  {
+   "nom": "My Home - Wael",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4899181,54.3848273",
+   "lat": 24.4899181,
+   "lng": 54.3848273,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4899181,54.3848273",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Ramada Downtown / Abu Dhabi",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4907373,54.3800971",
+   "lat": 24.4907373,
+   "lng": 54.3800971,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4907373,54.3800971",
+   "source": "osm"
+  },
+  {
+   "nom": "The Abu Dhabi EDITION",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4519639,54.3366909",
+   "lat": 24.4519639,
+   "lng": 54.3366909,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4519639,54.3366909",
+   "source": "osm"
+  },
+  {
+   "nom": "Meera ali al Jallaf",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4905663,54.3716073",
+   "lat": 24.4905663,
+   "lng": 54.3716073,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4905663,54.3716073",
+   "source": "osm"
+  },
+  {
+   "nom": "مكاتب شركة ماتركس وجرين مواد غذائيه",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4817753,54.3502697",
+   "lat": 24.4817753,
+   "lng": 54.3502697,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4817753,54.3502697",
+   "source": "osm"
+  },
+  {
+   "nom": "Novel Hotel City Center",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4884526,54.3621197",
+   "lat": 24.4884526,
+   "lng": 54.3621197,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4884526,54.3621197",
+   "source": "osm"
+  },
+  {
+   "nom": "LLH Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.489881,54.36676",
+   "lat": 24.489881,
+   "lng": 54.36676,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.489881,54.36676",
+   "source": "osm"
+  },
+  {
+   "nom": "City Seasons Al Hamra Abu Dhabi",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4907644,54.3707627",
+   "lat": 24.4907644,
+   "lng": 54.3707627,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4907644,54.3707627",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Baheya Hotel Apartments",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4911931,54.3750997",
+   "lat": 24.4911931,
+   "lng": 54.3750997,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4911931,54.3750997",
+   "source": "osm"
+  },
+  {
+   "nom": "Courtyard by Marriott Abu Dhabi",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4868177,54.3572984",
+   "lat": 24.4868177,
+   "lng": 54.3572984,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4868177,54.3572984",
+   "source": "osm"
+  },
+  {
+   "nom": "Kingsgate",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4916208,54.3797505",
+   "lat": 24.4916208,
+   "lng": 54.3797505,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4916208,54.3797505",
+   "source": "osm"
+  },
+  {
+   "nom": "Abu Dhabi Plaza Hotel Apartments",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4909787,54.3688926",
+   "lat": 24.4909787,
+   "lng": 54.3688926,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4909787,54.3688926",
+   "source": "osm"
+  },
+  {
+   "nom": "Crowne Plaza Abu Dhabi",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.490908,54.3656465",
+   "lat": 24.490908,
+   "lng": 54.3656465,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.ihg.com/crowneplaza/hotels/us/en/abu-dhabi/auhua/hoteldetail?qAdlt=1",
+   "source": "osm"
+  },
+  {
+   "nom": "Strand Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4923507,54.3815788",
+   "lat": 24.4923507,
+   "lng": 54.3815788,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4923507,54.3815788",
+   "source": "osm"
+  },
+  {
+   "nom": "Mutawa Marine Works LLC Guest House",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.429915,54.4109767",
+   "lat": 24.429915,
+   "lng": 54.4109767,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.429915,54.4109767",
+   "source": "osm"
+  },
+  {
+   "nom": "Al reem plaza",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.492603,54.3715209",
+   "lat": 24.492603,
+   "lng": 54.3715209,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.492603,54.3715209",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Oaks Liwa Executive Suites",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4929646,54.3820508",
+   "lat": 24.4929646,
+   "lng": 54.3820508,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4929646,54.3820508",
+   "source": "osm"
+  },
+  {
+   "nom": "Royal Rose Abu Dhabi, a Curio Collection by Hilton Affiliated Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4933546,54.3728842",
+   "lat": 24.4933546,
+   "lng": 54.3728842,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.hilton.com/en/hotels/auhrrqq-royal-rose-abu-dhabi/",
+   "source": "osm"
+  },
+  {
+   "nom": "C18",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4836654,54.4064279",
+   "lat": 24.4836654,
+   "lng": 54.4064279,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4836654,54.4064279",
+   "source": "osm"
+  },
+  {
+   "nom": "Grand Continental Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4927584,54.3661973",
+   "lat": 24.4927584,
+   "lng": 54.3661973,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4927584,54.3661973",
+   "source": "osm"
+  },
+  {
+   "nom": "Eclipse Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4903228,54.3578107",
+   "lat": 24.4903228,
+   "lng": 54.3578107,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4903228,54.3578107",
+   "source": "osm"
+  },
+  {
+   "nom": "Gloria Downtown Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4932561,54.3667142",
+   "lat": 24.4932561,
+   "lng": 54.3667142,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4932561,54.3667142",
+   "source": "osm"
+  },
+  {
+   "nom": "فندق كليبس",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4908013,54.3583168",
+   "lat": 24.4908013,
+   "lng": 54.3583168,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4908013,54.3583168",
+   "source": "osm"
+  },
+  {
+   "nom": "Beach Rotana Hotel & Towers",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 5,
+   "mapsUrl": "https://maps.google.com/?q=24.4945417,54.3842674",
+   "lat": 24.4945417,
+   "lng": 54.3842674,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4945417,54.3842674",
+   "source": "osm"
+  },
+  {
+   "nom": "Rafeeque manalody Abudhabi",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4949719,54.373782",
+   "lat": 24.4949719,
+   "lng": 54.373782,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4949719,54.373782",
+   "source": "osm"
+  },
+  {
+   "nom": "TOP Grand Continental Flamingo",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4939063,54.3651358",
+   "lat": 24.4939063,
+   "lng": 54.3651358,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.gcfhotel.net/",
+   "source": "osm"
+  },
+  {
+   "nom": "Trianon Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4942335,54.3662132",
+   "lat": 24.4942335,
+   "lng": 54.3662132,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4942335,54.3662132",
+   "source": "osm"
+  },
+  {
+   "nom": "Millenium Corniche Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.494631,54.3642556",
+   "lat": 24.494631,
+   "lng": 54.3642556,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.millenniumhotels.com/ae/millenniumabudhabi/index.html",
+   "source": "osm"
+  },
+  {
+   "nom": "Diplomat Hotel Howard Johnson",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4954191,54.3667581",
+   "lat": 24.4954191,
+   "lng": 54.3667581,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4954191,54.3667581",
+   "source": "osm"
+  },
+  {
+   "nom": "Dana Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4965722,54.3796568",
+   "lat": 24.4965722,
+   "lng": 54.3796568,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4965722,54.3796568",
+   "source": "osm"
+  },
+  {
+   "nom": "Tryp Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4957036,54.3664931",
+   "lat": 24.4957036,
+   "lng": 54.3664931,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4957036,54.3664931",
+   "source": "osm"
+  },
+  {
+   "nom": "KFC Accommodation",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4971181,54.3782567",
+   "lat": 24.4971181,
+   "lng": 54.3782567,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4971181,54.3782567",
+   "source": "osm"
+  },
+  {
+   "nom": "Oriental Hotel Apartments",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4973671,54.3786199",
+   "lat": 24.4973671,
+   "lng": 54.3786199,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4973671,54.3786199",
+   "source": "osm"
+  },
+  {
+   "nom": "Wonder Island Gift",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4973443,54.373162",
+   "lat": 24.4973443,
+   "lng": 54.373162,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4973443,54.373162",
+   "source": "osm"
+  },
+  {
+   "nom": "فندق النهال",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4974319,54.3735282",
+   "lat": 24.4974319,
+   "lng": 54.3735282,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4974319,54.3735282",
+   "source": "osm"
+  },
+  {
+   "nom": "Nehal",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4974913,54.3736077",
+   "lat": 24.4974913,
+   "lng": 54.3736077,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4974913,54.3736077",
+   "source": "osm"
+  },
+  {
+   "nom": "Le Royal Meridien Abu Dhabi",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4963206,54.3654239",
+   "lat": 24.4963206,
+   "lng": 54.3654239,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4963206,54.3654239",
+   "source": "osm"
+  },
+  {
+   "nom": "Hamdan",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4972277,54.3681125",
+   "lat": 24.4972277,
+   "lng": 54.3681125,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4972277,54.3681125",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Ain Palace Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€€",
+   "score": 3,
+   "mapsUrl": "https://maps.google.com/?q=24.4969943,54.3650004",
+   "lat": 24.4969943,
+   "lng": 54.3650004,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.alainpalacehotel.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel InterContinental Abu Dhabi",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 5,
+   "mapsUrl": "https://maps.google.com/?q=24.4571236,54.328513",
+   "lat": 24.4571236,
+   "lng": 54.328513,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.ichotelsgroup.com/intercontinental/hotels/gb/en/abu-dhabi/auhha/hoteldetail",
+   "source": "osm"
+  },
+  {
+   "nom": "Swiss-Belhotel Corniche",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 4,
+   "mapsUrl": "https://maps.google.com/?q=24.4985685,54.3719475",
+   "lat": 24.4985685,
+   "lng": 54.3719475,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4985685,54.3719475",
+   "source": "osm"
+  },
+  {
+   "nom": "Le Meridien Abu Dhabi",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4989978,54.3812073",
+   "lat": 24.4989978,
+   "lng": 54.3812073,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4989978,54.3812073",
+   "source": "osm"
+  },
+  {
+   "nom": "Sofitel Abu Dhabi Corniche",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 5,
+   "mapsUrl": "https://maps.google.com/?q=24.4990149,54.3675061",
+   "lat": 24.4990149,
+   "lng": 54.3675061,
+   "halalFriendly": false,
+   "bookingUrl": "https://sofitel.accor.com/en/hotels/7507.html?merchantid=ppc-sof-nom-goo-ww-pl-sear-mob&sourceid=bp-cenbp-cen&utm_source=google&utm_medium=cpc&utm_campaign=ppc-sof-nom-goo-ww-pl-ww-mix-sear-bp&utm_term=nom&utm_content=ww-pl-AE-V4919&wiz_campaign=208626806",
+   "source": "osm"
+  },
+  {
+   "nom": "Bin Majid Tower Hotel Apartment",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4998628,54.3708936",
+   "lat": 24.4998628,
+   "lng": 54.3708936,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4998628,54.3708936",
+   "source": "osm"
+  },
+  {
+   "nom": "The St. Regis Abu Dhabi",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4640109,54.3273413",
+   "lat": 24.4640109,
+   "lng": 54.3273413,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.marriott.com/en-us/hotels/auhrx-the-st-regis-abu-dhabi/",
+   "source": "osm"
+  },
+  {
+   "nom": "قصر السراب ابوظبي",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.5003814,54.3725796",
+   "lat": 24.5003814,
+   "lng": 54.3725796,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.5003814,54.3725796",
+   "source": "osm"
+  },
+  {
+   "nom": "Rosewood Maryah Island",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.4997259,54.3873072",
+   "lat": 24.4997259,
+   "lng": 54.3873072,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=24.4997259,54.3873072",
+   "source": "osm"
+  },
+  {
+   "nom": "أجنحة هوثورن من وندهام أبو ظبي وسط المدينة",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.5002476,54.3704112",
+   "lat": 24.5002476,
+   "lng": 54.3704112,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.wyndhamhotels.com/hawthorn-extended-stay/abu-dhabi-united-arab-emirates/hawthorn-suites-by-wyndham-city-center-abu-dhabi/overview?CID=LC:BH::GGL:RIO:National:49908&iata=00093796",
+   "source": "osm"
+  },
+  {
+   "nom": "Southern Sun Abu Dhabi",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 4,
+   "mapsUrl": "https://maps.google.com/?q=24.500509,54.3712475",
+   "lat": 24.500509,
+   "lng": 54.3712475,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.southernsun.com/southern-sun-abu-dhabi?utm_source=openstreetmaps&utm_medium=businesslisting&utm_campaign=hotel_southern-sun-abu-dhabi",
+   "source": "osm"
+  },
+  {
+   "nom": "Sheraton Abu Dhabi Hotel & Resort",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 5,
+   "mapsUrl": "https://maps.google.com/?q=24.5004207,54.3685507",
+   "lat": 24.5004207,
+   "lng": 54.3685507,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.marriott.com/hotels/travel/auhsi-sheraton-abu-dhabi-hotel-and-resort/",
+   "source": "osm"
+  },
+  {
+   "nom": "Jannah Burj Al Sarab Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.5014862,54.3731729",
+   "lat": 24.5014862,
+   "lng": 54.3731729,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.jannah-hotels.com/hotels/jannah-burj-al-sarab/en",
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "مسجد سراقة بن مالك",
+   "lat": 24.4623892,
+   "lng": 54.3854677,
+   "coordonnees": {
+    "lat": 24.4623892,
+    "lng": 54.3854677
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=24.4623892,54.3854677",
+   "source": "osm"
+  },
+  {
+   "nom": "جامع عبدالجليل الفهيم",
+   "lat": 24.4665503,
+   "lng": 54.3771572,
+   "coordonnees": {
+    "lat": 24.4665503,
+    "lng": 54.3771572
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=24.4665503,54.3771572",
+   "source": "osm"
+  },
+  {
+   "nom": "قصر الشيخ محمد بن زايد آل نهيان",
+   "lat": 24.452714,
+   "lng": 54.3628231,
+   "coordonnees": {
+    "lat": 24.452714,
+    "lng": 54.3628231
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=24.452714,54.3628231",
+   "source": "osm"
+  },
+  {
+   "nom": "Baby shop parking",
+   "lat": 24.4712056,
+   "lng": 54.3711361,
+   "coordonnees": {
+    "lat": 24.4712056,
+    "lng": 54.3711361
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=24.4712056,54.3711361",
+   "source": "osm"
+  },
+  {
+   "nom": "منزل صديق",
+   "lat": 24.4774461,
+   "lng": 54.3680983,
+   "coordonnees": {
+    "lat": 24.4774461,
+    "lng": 54.3680983
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=24.4774461,54.3680983",
+   "source": "osm"
+  },
+  {
+   "nom": "Prodome Consulting, Al Fahah plaza",
+   "lat": 24.4787321,
+   "lng": 54.3711792,
+   "coordonnees": {
+    "lat": 24.4787321,
+    "lng": 54.3711792
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=24.4787321,54.3711792",
+   "source": "osm"
+  },
+  {
+   "nom": "حديقة الدلافين",
+   "lat": 24.4539487,
+   "lng": 54.4055677,
+   "coordonnees": {
+    "lat": 24.4539487,
+    "lng": 54.4055677
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=24.4539487,54.4055677",
+   "source": "osm"
+  },
+  {
+   "nom": "Summit",
+   "lat": 24.4782865,
+   "lng": 54.3662876,
+   "coordonnees": {
+    "lat": 24.4782865,
+    "lng": 54.3662876
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=24.4782865,54.3662876",
+   "source": "osm"
+  },
+  {
+   "nom": "المرسال للشحن البرى",
+   "lat": 24.4793636,
+   "lng": 54.385954,
+   "coordonnees": {
+    "lat": 24.4793636,
+    "lng": 54.385954
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=24.4793636,54.385954",
+   "source": "osm"
+  },
+  {
+   "nom": "مبنى الدفاع المدني",
+   "lat": 24.4812118,
+   "lng": 54.3799865,
+   "coordonnees": {
+    "lat": 24.4812118,
+    "lng": 54.3799865
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=24.4812118,54.3799865",
+   "source": "osm"
+  },
+  {
+   "nom": "ad shekha",
+   "lat": 24.4547182,
+   "lng": 54.3429251,
+   "coordonnees": {
+    "lat": 24.4547182,
+    "lng": 54.3429251
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=24.4547182,54.3429251",
+   "source": "osm"
+  },
+  {
+   "nom": "AD islamic bank bateen branch",
+   "lat": 24.4510314,
+   "lng": 54.343012,
+   "coordonnees": {
+    "lat": 24.4510314,
+    "lng": 54.343012
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=24.4510314,54.343012",
+   "source": "osm"
+  },
+  {
+   "nom": "خيرات لبنان",
+   "lat": 24.4725833,
+   "lng": 54.3489467,
+   "coordonnees": {
+    "lat": 24.4725833,
+    "lng": 54.3489467
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=24.4725833,54.3489467",
+   "source": "osm"
+  },
+  {
+   "nom": "Folklore Gallery",
+   "lat": 24.4722771,
+   "lng": 54.3468971,
+   "coordonnees": {
+    "lat": 24.4722771,
+    "lng": 54.3468971
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=24.4722771,54.3468971",
+   "source": "osm"
+  },
+  {
+   "nom": "Ayesha Hadhir's \"Playful Traditions\"",
+   "lat": 24.4820513,
+   "lng": 54.3564821,
+   "coordonnees": {
+    "lat": 24.4820513,
+    "lng": 54.3564821
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=24.4820513,54.3564821",
+   "source": "osm"
+  },
+  {
+   "nom": "3D Cube Display;Mircea Cantor's \"Aquilla non capit muscas\"",
+   "lat": 24.4830298,
+   "lng": 54.3581447,
+   "coordonnees": {
+    "lat": 24.4830298,
+    "lng": 54.3581447
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=24.4830298,54.3581447",
+   "source": "osm"
+  },
+  {
+   "nom": "Nnenna Okore's \"Let's Not Wait to Fill Our Cups with Time\"",
+   "lat": 24.4814248,
+   "lng": 54.3552578,
+   "coordonnees": {
+    "lat": 24.4814248,
+    "lng": 54.3552578
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=24.4814248,54.3552578",
+   "source": "osm"
+  },
+  {
+   "nom": "Mohammed Al Astad's \"Danat Al Shawati\"",
+   "lat": 24.4830527,
+   "lng": 54.3571516,
+   "coordonnees": {
+    "lat": 24.4830527,
+    "lng": 54.3571516
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=24.4830527,54.3571516",
+   "source": "osm"
+  },
+  {
+   "nom": "سوق كل شيء ابو ظبي",
+   "lat": 24.485605,
+   "lng": 54.3604021,
+   "coordonnees": {
+    "lat": 24.485605,
+    "lng": 54.3604021
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=24.485605,54.3604021",
+   "source": "osm"
+  },
+  {
+   "nom": "مكتب الفن الرفيع للاستشارات الهندسية",
+   "lat": 24.4899135,
+   "lng": 54.3839677,
+   "coordonnees": {
+    "lat": 24.4899135,
+    "lng": 54.3839677
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=24.4899135,54.3839677",
+   "source": "osm"
+  },
+  {
+   "nom": "Arquitectura Expandida's \"Urban Negotiation\"",
+   "lat": 24.4842303,
+   "lng": 54.35461,
+   "coordonnees": {
+    "lat": 24.4842303,
+    "lng": 54.35461
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=24.4842303,54.35461",
+   "source": "osm"
+  },
+  {
+   "nom": "Hamdan Center",
+   "lat": 24.4888154,
+   "lng": 54.3626291,
+   "coordonnees": {
+    "lat": 24.4888154,
+    "lng": 54.3626291
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=24.4888154,54.3626291",
+   "source": "osm"
+  },
+  {
+   "nom": "Infinite Technology & Solutions LLC",
+   "lat": 24.4905543,
+   "lng": 54.3653357,
+   "coordonnees": {
+    "lat": 24.4905543,
+    "lng": 54.3653357
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=24.4905543,54.3653357",
+   "source": "osm"
+  },
+  {
+   "nom": "Nicholas Galanin's \"In Every Language There is Land\"",
+   "lat": 24.4733515,
+   "lng": 54.3406582,
+   "coordonnees": {
+    "lat": 24.4733515,
+    "lng": 54.3406582
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=24.4733515,54.3406582",
+   "source": "osm"
+  },
+  {
+   "nom": "UAE",
+   "lat": 24.4935116,
+   "lng": 54.3748575,
+   "coordonnees": {
+    "lat": 24.4935116,
+    "lng": 54.3748575
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=24.4935116,54.3748575",
+   "source": "osm"
+  },
+  {
+   "nom": "UT-R Studio's \"Shifting Sands\"",
+   "lat": 24.4834021,
+   "lng": 54.3467339,
+   "coordonnees": {
+    "lat": 24.4834021,
+    "lng": 54.3467339
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=24.4834021,54.3467339",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد",
+   "lat": 24.4916659,
+   "lng": 54.3585915,
+   "coordonnees": {
+    "lat": 24.4916659,
+    "lng": 54.3585915
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=24.4916659,54.3585915",
+   "source": "osm"
+  },
+  {
+   "nom": "Etihad Facade",
+   "lat": 24.4897004,
+   "lng": 54.3543187,
+   "coordonnees": {
+    "lat": 24.4897004,
+    "lng": 54.3543187
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=24.4897004,54.3543187",
+   "source": "osm"
+  },
+  {
+   "nom": "Rami Kashou × Emirati Artisans' \"Continuum\"",
+   "lat": 24.4924699,
+   "lng": 54.3562724,
+   "coordonnees": {
+    "lat": 24.4924699,
+    "lng": 54.3562724
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=24.4924699,54.3562724",
+   "source": "osm"
+  },
+  {
+   "nom": "Abdullah Al Saadi",
+   "lat": 24.4924044,
+   "lng": 54.3552645,
+   "coordonnees": {
+    "lat": 24.4924044,
+    "lng": 54.3552645
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=24.4924044,54.3552645",
+   "source": "osm"
+  }
+ ],
+ "codeISO": "AE",
+ "image": "https://images.unsplash.com/photo-1569836741193-dcff5e3e07d7?w=1400&q=85",
+ "continent": "Asie",
+ "metaDescription": "Restaurants halal signalés, mosquées et guide pratique pour Abu Dhabi — Halal Trust Score 5/5.",
+ "image_hero": "https://images.unsplash.com/photo-1569836741193-dcff5e3e07d7?w=1400&q=85",
+ "mosqueesPrincipales": [
+  {
+   "nom": "Shaikh Mohammed bin Khalid Al Nahyan Mosque",
+   "lat": 24.4439993,
+   "lng": 54.3691753,
+   "coordonnees": {
+    "lat": 24.4439993,
+    "lng": 54.3691753
+   },
+   "mapsUrl": "https://maps.google.com/?q=24.4439993,54.3691753",
+   "source": "osm"
+  },
+  {
+   "nom": "Hanzalah Bin Abi Amer",
+   "lat": 24.4921602,
+   "lng": 54.3620976,
+   "coordonnees": {
+    "lat": 24.4921602,
+    "lng": 54.3620976
+   },
+   "mapsUrl": "https://maps.google.com/?q=24.4921602,54.3620976",
+   "source": "osm"
+  },
+  {
+   "nom": "Junk Removal dubai",
+   "lat": 24.4230511,
+   "lng": 54.4372815,
+   "coordonnees": {
+    "lat": 24.4230511,
+    "lng": 54.4372815
+   },
+   "mapsUrl": "https://maps.google.com/?q=24.4230511,54.4372815",
+   "source": "osm"
+  },
+  {
+   "nom": "Prayer Room",
+   "lat": 24.5291316,
+   "lng": 54.379457,
+   "coordonnees": {
+    "lat": 24.5291316,
+    "lng": 54.379457
+   },
+   "mapsUrl": "https://maps.google.com/?q=24.5291316,54.379457",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد عثمان",
+   "lat": 24.3658852,
+   "lng": 54.5126471,
+   "coordonnees": {
+    "lat": 24.3658852,
+    "lng": 54.5126471
+   },
+   "mapsUrl": "https://maps.google.com/?q=24.3658852,54.5126471",
+   "source": "osm"
+  },
+  {
+   "nom": "Al siraj mosque mussafa",
+   "lat": 24.3556618,
+   "lng": 54.514568,
+   "coordonnees": {
+    "lat": 24.3556618,
+    "lng": 54.514568
+   },
+   "mapsUrl": "https://maps.google.com/?q=24.3556618,54.514568",
+   "source": "osm"
+  },
+  {
+   "nom": "Worker village mosque",
+   "lat": 24.3608006,
+   "lng": 54.5200406,
+   "coordonnees": {
+    "lat": 24.3608006,
+    "lng": 54.5200406
+   },
+   "mapsUrl": "https://maps.google.com/?q=24.3608006,54.5200406",
+   "source": "osm"
+  },
+  {
+   "id": "osm-62281265",
+   "nom": "Sheikh Khalifa Mosque",
+   "type": "mosquee",
+   "lat": 24.4845676,
+   "lng": 54.3528948,
+   "mapsUrl": "https://maps.google.com/?q=24.4845676,54.3528948",
+   "source": "osm"
+  },
+  {
+   "id": "osm-79124389",
+   "nom": "مسجد أبي بن كعب",
+   "type": "mosquee",
+   "lat": 24.4368659,
+   "lng": 54.4372648,
+   "mapsUrl": "https://maps.google.com/?q=24.4368659,54.4372648",
+   "source": "osm"
+  },
+  {
+   "id": "osm-89664831",
+   "nom": "Sultan bin Zayed Mosque",
+   "type": "mosquee",
+   "lat": 24.4516888,
+   "lng": 54.3485098,
+   "mapsUrl": "https://maps.google.com/?q=24.4516888,54.3485098",
+   "source": "osm"
+  },
+  {
+   "id": "osm-100596043",
+   "nom": "جامع الشيخ زايد",
+   "type": "mosquee",
+   "lat": 24.4812272,
+   "lng": 54.3587189,
+   "mapsUrl": "https://maps.google.com/?q=24.4812272,54.3587189",
+   "source": "osm"
+  },
+  {
+   "id": "osm-108742401",
+   "nom": "مسجد بلال",
+   "type": "mosquee",
+   "lat": 24.4916667,
+   "lng": 54.3802951,
+   "mapsUrl": "https://maps.google.com/?q=24.4916667,54.3802951",
+   "source": "osm"
+  },
+  {
+   "id": "osm-117208338",
+   "nom": "Abdul Jaleel Muhammed",
+   "type": "mosquee",
+   "lat": 24.4228693,
+   "lng": 54.4491035,
+   "mapsUrl": "https://maps.google.com/?q=24.4228693,54.4491035",
+   "source": "osm"
+  },
+  {
+   "id": "osm-120113814",
+   "nom": "Masjid Derwish Bin Karam",
+   "type": "mosquee",
+   "lat": 24.4904288,
+   "lng": 54.3663281,
+   "mapsUrl": "https://maps.google.com/?q=24.4904288,54.3663281",
+   "source": "osm"
+  },
+  {
+   "id": "osm-141176782",
+   "nom": "Abdullah Salem Mosque",
+   "type": "mosquee",
+   "lat": 24.4545258,
+   "lng": 54.3609,
+   "mapsUrl": "https://maps.google.com/?q=24.4545258,54.3609",
+   "source": "osm"
+  },
+  {
+   "id": "osm-144308190",
+   "nom": "Muhammad Bin Masoud Al Muhairbi Mosque",
+   "type": "mosquee",
+   "lat": 24.4804124,
+   "lng": 54.3545165,
+   "mapsUrl": "https://maps.google.com/?q=24.4804124,54.3545165",
+   "source": "osm"
+  },
+  {
+   "id": "osm-159146899",
+   "nom": "مسجد مريم أم عيسى",
+   "type": "mosquee",
+   "lat": 24.4497122,
+   "lng": 54.3858236,
+   "mapsUrl": "https://maps.google.com/?q=24.4497122,54.3858236",
+   "source": "osm"
+  },
+  {
+   "id": "osm-172829156",
+   "nom": "Fatima Bint Mohammed",
+   "type": "mosquee",
+   "lat": 24.4764768,
+   "lng": 54.346462,
+   "mapsUrl": "https://maps.google.com/?q=24.4764768,54.346462",
+   "source": "osm"
+  },
+  {
+   "id": "osm-173009868",
+   "nom": "Ali Abdullah Jasim Al Zaabi Mosque",
+   "type": "mosquee",
+   "lat": 24.4789562,
+   "lng": 54.3527646,
+   "mapsUrl": "https://maps.google.com/?q=24.4789562,54.3527646",
+   "source": "osm"
+  },
+  {
+   "id": "osm-177130320",
+   "nom": "مسجد هامل بن خادم",
+   "type": "mosquee",
+   "lat": 24.4832448,
+   "lng": 54.3668044,
+   "mapsUrl": "https://maps.google.com/?q=24.4832448,54.3668044",
+   "source": "osm"
+  },
+  {
+   "id": "osm-177427593",
+   "nom": "Mariam Bint Said",
+   "type": "mosquee",
+   "lat": 24.4772515,
+   "lng": 54.3729975,
+   "mapsUrl": "https://maps.google.com/?q=24.4772515,54.3729975",
+   "source": "osm"
+  },
+  {
+   "id": "osm-200054824",
+   "nom": "مسجد الشيخ هزاع بن سلطان",
+   "type": "mosquee",
+   "lat": 24.4976045,
+   "lng": 54.3757959,
+   "mapsUrl": "https://maps.google.com/?q=24.4976045,54.3757959",
+   "source": "osm"
+  },
+  {
+   "id": "osm-204796904",
+   "nom": "Al Bateen Mosque",
+   "type": "mosquee",
+   "lat": 24.4581509,
+   "lng": 54.3311949,
+   "mapsUrl": "https://maps.google.com/?q=24.4581509,54.3311949",
+   "source": "osm"
+  },
+  {
+   "id": "osm-225581700",
+   "nom": "Mosque",
+   "type": "mosquee",
+   "lat": 24.4763163,
+   "lng": 54.330731,
+   "mapsUrl": "https://maps.google.com/?q=24.4763163,54.330731",
+   "source": "osm"
+  },
+  {
+   "id": "osm-229636128",
+   "nom": "Al Madina Al Riyadiyah Mosque",
+   "type": "mosquee",
+   "lat": 24.4116437,
+   "lng": 54.4678383,
+   "mapsUrl": "https://maps.google.com/?q=24.4116437,54.4678383",
+   "source": "osm"
+  },
+  {
+   "id": "osm-232767912",
+   "nom": "Thani Bin Murshid Al Romaithy",
+   "type": "mosquee",
+   "lat": 24.4860616,
+   "lng": 54.3669196,
+   "mapsUrl": "https://maps.google.com/?q=24.4860616,54.3669196",
+   "source": "osm"
+  },
+  {
+   "id": "osm-260009996",
+   "nom": "Al Mansoori Mosque",
+   "type": "mosquee",
+   "lat": 24.44215,
+   "lng": 54.3737656,
+   "mapsUrl": "https://maps.google.com/?q=24.44215,54.3737656",
+   "source": "osm"
+  },
+  {
+   "id": "osm-281272450",
+   "nom": "Souq Al Anshetah",
+   "type": "mosquee",
+   "adresse": "أبو ظبي",
+   "lat": 24.5272756,
+   "lng": 54.3647906,
+   "mapsUrl": "https://maps.google.com/?q=24.5272756,54.3647906",
+   "source": "osm"
+  },
+  {
+   "id": "osm-377252634",
+   "nom": "Sheikh Hamdan bin Mohammed bin Khalifa Al Nahyan Mosque",
+   "type": "mosquee",
+   "lat": 24.4713315,
+   "lng": 54.3864934,
+   "mapsUrl": "https://maps.google.com/?q=24.4713315,54.3864934",
+   "source": "osm"
+  },
+  {
+   "id": "osm-384806198",
+   "nom": "Ibn Timia Mosque",
+   "type": "mosquee",
+   "lat": 24.4136608,
+   "lng": 54.4695291,
+   "mapsUrl": "https://maps.google.com/?q=24.4136608,54.4695291",
+   "source": "osm"
+  },
+  {
+   "id": "osm-391554738",
+   "nom": "Jamia Bani Hashem",
+   "type": "mosquee",
+   "lat": 24.4092725,
+   "lng": 54.4937196,
+   "mapsUrl": "https://maps.google.com/?q=24.4092725,54.4937196",
+   "source": "osm"
+  },
+  {
+   "id": "osm-395020133",
+   "nom": "Shareefa Mosque",
+   "type": "mosquee",
+   "lat": 24.4911559,
+   "lng": 54.3606611,
+   "mapsUrl": "https://maps.google.com/?q=24.4911559,54.3606611",
+   "source": "osm"
+  },
+  {
+   "id": "osm-399206859",
+   "nom": "Nashu Hajii Al Qabiisii",
+   "type": "mosquee",
+   "lat": 24.4375141,
+   "lng": 54.4334114,
+   "mapsUrl": "https://maps.google.com/?q=24.4375141,54.4334114",
+   "source": "osm"
+  },
+  {
+   "id": "osm-399207149",
+   "nom": "Rashid Watiq Al Muroor",
+   "type": "mosquee",
+   "lat": 24.4391275,
+   "lng": 54.4318978,
+   "mapsUrl": "https://maps.google.com/?q=24.4391275,54.4318978",
+   "source": "osm"
+  },
+  {
+   "id": "osm-428424439",
+   "nom": "Mohammed Saif Bin Musaed",
+   "type": "mosquee",
+   "lat": 24.4729877,
+   "lng": 54.3430865,
+   "mapsUrl": "https://maps.google.com/?q=24.4729877,54.3430865",
+   "source": "osm"
+  },
+  {
+   "id": "osm-437418070",
+   "nom": "مسجد مبارك و مطر أبناء حاظر",
+   "type": "mosquee",
+   "lat": 24.4556456,
+   "lng": 54.3463404,
+   "mapsUrl": "https://maps.google.com/?q=24.4556456,54.3463404",
+   "source": "osm"
+  },
+  {
+   "id": "osm-437421667",
+   "nom": "مسجد محمد بن عبدالله صالح",
+   "type": "mosquee",
+   "lat": 24.4556857,
+   "lng": 54.3424244,
+   "mapsUrl": "https://maps.google.com/?q=24.4556857,54.3424244",
+   "source": "osm"
+  },
+  {
+   "id": "osm-464657963",
+   "nom": "Al Aziz",
+   "type": "mosquee",
+   "lat": 24.4924444,
+   "lng": 54.395825,
+   "mapsUrl": "https://maps.google.com/?q=24.4924444,54.395825",
+   "source": "osm"
+  },
+  {
+   "id": "osm-474869150",
+   "nom": "مسجد الشهيد الشيبه حاضر خميس العميمي",
+   "type": "mosquee",
+   "lat": 24.4766913,
+   "lng": 54.3493243,
+   "mapsUrl": "https://maps.google.com/?q=24.4766913,54.3493243",
+   "source": "osm"
+  },
+  {
+   "id": "osm-480691101",
+   "nom": "Faraj Muhammad Al-Muhairbi Mosque",
+   "type": "mosquee",
+   "lat": 24.4800407,
+   "lng": 54.3531477,
+   "mapsUrl": "https://maps.google.com/?q=24.4800407,54.3531477",
+   "source": "osm"
+  },
+  {
+   "id": "osm-1019914867",
+   "nom": "Imam Al-Tayeb Mosque",
+   "type": "mosquee",
+   "adresse": "أبو ظبي",
+   "lat": 24.5307266,
+   "lng": 54.4051485,
+   "mapsUrl": "https://maps.google.com/?q=24.5307266,54.4051485",
+   "source": "osm"
+  },
+  {
+   "id": "osm-1047401808",
+   "nom": "Jumma Mosque",
+   "type": "mosquee",
+   "lat": 24.5397684,
+   "lng": 54.4397866,
+   "mapsUrl": "https://maps.google.com/?q=24.5397684,54.4397866",
+   "source": "osm"
+  },
+  {
+   "id": "osm-1161227744",
+   "nom": "مسجد سعد بن معاذ",
+   "type": "mosquee",
+   "lat": 24.4513619,
+   "lng": 54.3918894,
+   "mapsUrl": "https://maps.google.com/?q=24.4513619,54.3918894",
+   "source": "osm"
+  },
+  {
+   "id": "osm-1470832492",
+   "nom": "مسجد عناية بنت صالح المهيري",
+   "type": "mosquee",
+   "lat": 24.4762971,
+   "lng": 54.3479467,
+   "mapsUrl": "https://maps.google.com/?q=24.4762971,54.3479467",
+   "source": "osm"
+  },
+  {
+   "id": "osm-1635169",
+   "nom": "جامع الشيخ زايد الكبير",
+   "type": "mosquee",
+   "lat": 24.4124407,
+   "lng": 54.474993,
+   "mapsUrl": "https://maps.google.com/?q=24.4124407,54.474993",
+   "source": "osm"
+  },
+  {
+   "id": "osm-15735117",
+   "nom": "Khalid bin Al Waleed Mosque",
+   "type": "mosquee",
+   "lat": 24.4512867,
+   "lng": 54.3558098,
+   "mapsUrl": "https://maps.google.com/?q=24.4512867,54.3558098",
+   "source": "osm"
+  }
+ ],
+ "halalScore": 9.3,
+ "description_en": "Abu Dhabi, in the UAE, is a halal-friendly destination with a Halal Trust Score of 4.6/5. Muslim travelers will find 119 halal restaurants listed, 1,600 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind. Best time to visit: November–March.",
+ "metaDescription_en": "Halal guide to Abu Dhabi: 119 halal restaurants listed, 1,600 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.6/5.",
+ "nom_en": "Abu Dhabi",
+ "boucheries": [],
+ "dataPurgedAt": "2026-07-15",
+ "osmEnrichedAt": "2026-07-15",
+ "sectionMangerHalal": "La viande servie aux Émirats est halal par défaut et contrôlée. L'alcool existe, mais uniquement sous licence, dans les hôtels — un restaurant de rue ou de centre commercial n'en sert pas. C'est la même situation qu'à Dubaï, en plus calme.",
+ "sectionMangerHalal_en": "Meat served in the UAE is halal by default and regulated. Alcohol exists, but only under licence, inside hotels — a street or mall restaurant does not serve it. The same situation as Dubai, but quieter.",
+ "sectionOuPrier": "La Grande Mosquée Cheikh Zayed, ouverte aux visiteurs non musulmans en dehors des heures de prière, est l'une des plus vastes du monde. Partout ailleurs, les salles de prière sont systématiques dans les centres commerciaux et à l'aéroport.",
+ "sectionOuPrier_en": "The Sheikh Zayed Grand Mosque, open to non-Muslim visitors outside prayer times, is one of the largest in the world. Everywhere else, prayer rooms are standard in malls and at the airport."
 }

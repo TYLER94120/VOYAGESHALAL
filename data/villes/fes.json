@@ -1,2588 +1,2592 @@
 {
-  "slug": "fes",
-  "nom": "Fès",
-  "nom_arabe": "فاس",
-  "pays": "Maroc",
-  "pays_slug": "maroc",
-  "drapeau": "🇲🇦",
-  "region": "Afrique du Nord",
-  "coordonnees": {
-    "lat": 34.0181,
-    "lng": -5.0078
+ "slug": "fes",
+ "nom": "Fès",
+ "nom_arabe": "فاس",
+ "pays": "Maroc",
+ "pays_slug": "maroc",
+ "drapeau": "🇲🇦",
+ "region": "Afrique du Nord",
+ "coordonnees": {
+  "lat": 34.0181,
+  "lng": -5.0078
+ },
+ "score_halal": 4.35,
+ "score_securite": 4,
+ "score_famille": 5,
+ "score_budget": 5,
+ "description": {
+  "court": "La capitale spirituelle et intellectuelle du Maroc, fondée en 789",
+  "long": "Fès est la plus ancienne des villes impériales du Maroc et l'une des villes médiévales les mieux préservées au monde. Sa médina, inscrite au patrimoine mondial de l'UNESCO, abrite la plus ancienne université du monde — la Qarawiyyin, fondée en 859. Pays à majorité musulmane, le halal est la norme absolue dans toute la ville. Fès est une destination spirituelle et culturelle de premier ordre pour les voyageurs musulmans."
+ },
+ "statistiques": {
+  "mosquees": 60,
+  "restaurants_halal": 26,
+  "hotels_halal_friendly": 95,
+  "population": "1,2 million",
+  "hotels": 110
+ },
+ "infos_pratiques": {
+  "langue": "Arabe, Berbère, Français",
+  "monnaie": "Dirham marocain (MAD)",
+  "fuseau_horaire": "GMT+1",
+  "meilleure_periode": "Mars–mai, Septembre–novembre",
+  "visa": "Entrée libre pour ressortissants français, belges, canadiens",
+  "transport": "Taxi, bus, à pied dans la médina"
+ },
+ "restaurants": [
+  {
+   "nom": "Majorelle",
+   "lat": 34.0273598,
+   "lng": -5.0127925,
+   "type": "moroccan, seafood",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=34.0273598,-5.0127925",
+   "source": "osm"
   },
-  "score_halal": 4.35,
-  "score_securite": 4,
-  "score_famille": 5,
-  "score_budget": 5,
-  "description": {
-    "court": "La capitale spirituelle et intellectuelle du Maroc, fondée en 789",
-    "long": "Fès est la plus ancienne des villes impériales du Maroc et l'une des villes médiévales les mieux préservées au monde. Sa médina, inscrite au patrimoine mondial de l'UNESCO, abrite la plus ancienne université du monde — la Qarawiyyin, fondée en 859. Pays à majorité musulmane, le halal est la norme absolue dans toute la ville. Fès est une destination spirituelle et culturelle de premier ordre pour les voyageurs musulmans."
+  {
+   "nom": "La Table Libanaise",
+   "lat": 34.0262049,
+   "lng": -5.0002774,
+   "type": "lebanese",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=34.0262049,-5.0002774",
+   "source": "osm"
   },
-  "statistiques": {
-    "mosquees": 60,
-    "restaurants_halal": 26,
-    "hotels_halal_friendly": 95,
-    "population": "1,2 million",
-    "hotels": 110
+  {
+   "nom": "Bomo Coffee",
+   "lat": 34.0049731,
+   "lng": -5.0013975,
+   "type": "brunch, burger, sandwich, chicken, tea, coffee shop, moroccan, cafe, matcha",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=34.0049731,-5.0013975",
+   "source": "osm"
   },
-  "infos_pratiques": {
-    "langue": "Arabe, Berbère, Français",
-    "monnaie": "Dirham marocain (MAD)",
-    "fuseau_horaire": "GMT+1",
-    "meilleure_periode": "Mars–mai, Septembre–novembre",
-    "visa": "Entrée libre pour ressortissants français, belges, canadiens",
-    "transport": "Taxi, bus, à pied dans la médina"
+  {
+   "nom": "VOSS CAFE",
+   "lat": 34.0040878,
+   "lng": -5.0160571,
+   "type": "pizza, burger, coffee shop, italian, ice cream, steak house",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=34.0040878,-5.0160571",
+   "source": "osm"
   },
-  "restaurants": [
-    {
-      "nom": "Majorelle",
-      "lat": 34.0273598,
-      "lng": -5.0127925,
-      "type": "moroccan, seafood",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=34.0273598,-5.0127925",
-      "source": "osm"
-    },
-    {
-      "nom": "La Table Libanaise",
-      "lat": 34.0262049,
-      "lng": -5.0002774,
-      "type": "lebanese",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=34.0262049,-5.0002774",
-      "source": "osm"
-    },
-    {
-      "nom": "Bomo Coffee",
-      "lat": 34.0049731,
-      "lng": -5.0013975,
-      "type": "brunch, burger, sandwich, chicken, tea, coffee shop, moroccan, cafe, matcha",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=34.0049731,-5.0013975",
-      "source": "osm"
-    },
-    {
-      "nom": "VOSS CAFE",
-      "lat": 34.0040878,
-      "lng": -5.0160571,
-      "type": "pizza, burger, coffee shop, italian, ice cream, steak house",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=34.0040878,-5.0160571",
-      "source": "osm"
-    },
-    {
-      "nom": "Sweet Time",
-      "lat": 34.0016913,
-      "lng": -5.0127272,
-      "type": "waffle, cocktails, juice, crepe, pancake",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=34.0016913,-5.0127272",
-      "source": "osm"
-    },
-    {
-      "nom": "Kim Taki كيم طاكي",
-      "lat": 34.0184159,
-      "lng": -4.9856684,
-      "type": "chicken, burger, steak house, italian, sandwich, italian pizza, pizza, deli, hot dog, kebab, barbecue, moroccan",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=34.0184159,-4.9856684",
-      "source": "osm"
-    },
-    {
-      "nom": "L'unica لونيكا",
-      "lat": 33.9996794,
-      "lng": -5.0129618,
-      "type": "sandwich, ice cream, crepe, cake, coffee shop, pasta, pancake, pizza, chicken, arab, italian pizza, hotdog, breakfast, savory pancakes",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=33.9996794,-5.0129618",
-      "source": "osm"
-    },
-    {
-      "nom": "Pizzeria doigts d or بيزيريا الأصابع الدهبية",
-      "lat": 34.0062199,
-      "lng": -4.9877735,
-      "type": "italian pizza, kebab, pizza",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=34.0062199,-4.9877735",
-      "source": "osm"
-    },
-    {
-      "nom": "Café la Première Tasse",
-      "lat": 34.0187237,
-      "lng": -5.0494001,
-      "type": "arab",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=34.0187237,-5.0494001",
-      "source": "osm"
-    },
-    {
-      "nom": "Cafe RIM",
-      "lat": 34.0596862,
-      "lng": -4.9885653,
-      "type": "regional, pizza, burger, fish, tea",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=34.0596862,-4.9885653",
-      "source": "osm"
-    },
-    {
-      "nom": "Palais Laraichi",
-      "lat": 34.0593446,
-      "lng": -4.9802428,
-      "type": "moroccan",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=34.0593446,-4.9802428",
-      "source": "osm"
-    },
-    {
-      "nom": "Cinema cafe",
-      "lat": 34.060114,
-      "lng": -4.9813138,
-      "type": "italian pizza, seafood, burger, lebanese, pancake, american, moroccan, breakfast, coffee shop, arab",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=34.060114,-4.9813138",
-      "source": "osm"
-    },
-    {
-      "nom": "Restaurant Terrace",
-      "lat": 34.0613693,
-      "lng": -4.9840345,
-      "type": "moroccan",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=34.0613693,-4.9840345",
-      "source": "osm"
-    },
-    {
-      "nom": "Thami's restaurant",
-      "lat": 34.0618008,
-      "lng": -4.9832742,
-      "type": "moroccan",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=34.0618008,-4.9832742",
-      "source": "osm"
-    },
-    {
-      "nom": "Le Peroke Cafe Restaurant",
-      "lat": 34.0617289,
-      "lng": -4.981042,
-      "type": "moroccan, italian pizza, italian",
-      "halalConfidence": "high",
-      "mapsUrl": "https://maps.google.com/?q=34.0617289,-4.981042",
-      "source": "osm"
-    },
-    {
-      "nom": "Ben Lemlih",
-      "lat": 34.0624935,
-      "lng": -4.982647,
-      "type": "moroccan, sandwich",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=34.0624935,-4.982647",
-      "source": "osm"
-    },
-    {
-      "nom": "Made in M",
-      "lat": 34.0632822,
-      "lng": -4.9817285,
-      "type": "local, moroccan",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=34.0632822,-4.9817285",
-      "source": "osm"
-    },
-    {
-      "nom": "Palais Medina",
-      "lat": 34.0590107,
-      "lng": -4.9724176,
-      "type": "moroccan",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=34.0590107,-4.9724176",
-      "source": "osm"
-    },
-    {
-      "nom": "Le tarbouche",
-      "lat": 34.0639245,
-      "lng": -4.9809009,
-      "type": "burger, oriental, sandwich, international, sausage, moroccan, mediterranean, coffee shop, pizza, arab, mexican",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=34.0639245,-4.9809009",
-      "source": "osm"
-    },
-    {
-      "nom": "Al Mandar",
-      "lat": 34.0599458,
-      "lng": -4.9723676,
-      "type": "moroccan",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=34.0599458,-4.9723676",
-      "source": "osm"
-    },
-    {
-      "nom": "Fondouk Bazaar",
-      "lat": 34.0643529,
-      "lng": -4.9795588,
-      "type": "moroccan, mediterranean",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=34.0643529,-4.9795588",
-      "source": "osm"
-    },
-    {
-      "nom": "Mécafé",
-      "lat": 34.0622009,
-      "lng": -4.9726314,
-      "type": "burger, sandwich, moroccan, coffee shop, local",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=34.0622009,-4.9726314",
-      "source": "osm"
-    },
-    {
-      "nom": "Restaurant dar khabya",
-      "lat": 34.0643994,
-      "lng": -4.9766949,
-      "type": "moroccan",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=34.0643994,-4.9766949",
-      "source": "osm"
-    },
-    {
-      "nom": "Restaurant Nejjarine",
-      "lat": 34.0649167,
-      "lng": -4.9760475,
-      "type": "moroccan",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=34.0649167,-4.9760475",
-      "source": "osm"
-    },
-    {
-      "nom": "Fezvacationtours",
-      "lat": 34.0704816,
-      "lng": -4.9832938,
-      "type": "chicken, diner, african, moroccan, coffee shop, local, arab",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=34.0704816,-4.9832938",
-      "source": "osm"
-    },
-    {
-      "nom": "Maracana Café Restaurant",
-      "lat": 33.9729098,
-      "lng": -4.9490771,
-      "type": "breakfast, burger, cake, chicken, coffee shop, crepe, moroccan",
-      "halalConfidence": "likely",
-      "mapsUrl": "https://maps.google.com/?q=33.9729098,-4.9490771",
-      "source": "osm"
-    }
-  ],
-  "mosquees": [],
-  "hotels": [
-    {
-      "nom": "Residence Al majd",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0180165,-5.00643",
-      "lat": 34.0180165,
-      "lng": -5.00643,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0180165,-5.00643",
-      "source": "osm"
-    },
-    {
-      "nom": "Log atmani",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.012926,-5.008737",
-      "lat": 34.012926,
-      "lng": -5.008737,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.012926,-5.008737",
-      "source": "osm"
-    },
-    {
-      "nom": "Les olivier",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.013548,-5.0037398",
-      "lat": 34.013548,
-      "lng": -5.0037398,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.013548,-5.0037398",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Sebti",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0206994,-4.9995792",
-      "lat": 34.0206994,
-      "lng": -4.9995792,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0206994,-4.9995792",
-      "source": "osm"
-    },
-    {
-      "nom": "Dar Yasmine",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0269567,-5.0067104",
-      "lat": 34.0269567,
-      "lng": -5.0067104,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0269567,-5.0067104",
-      "source": "osm"
-    },
-    {
-      "nom": "séjour confort et design à Fès",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.009999,-5.015772",
-      "lat": 34.009999,
-      "lng": -5.015772,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.009999,-5.015772",
-      "source": "osm"
-    },
-    {
-      "nom": "Residence idrissi",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0316999,-5.0051073",
-      "lat": 34.0316999,
-      "lng": -5.0051073,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0316999,-5.0051073",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Nous Plazza",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0323136,-5.0061868",
-      "lat": 34.0323136,
-      "lng": -5.0061868,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0323136,-5.0061868",
-      "source": "osm"
-    },
-    {
-      "nom": "Fes Bed and Breakfast",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0285636,-4.995908",
-      "lat": 34.0285636,
-      "lng": -4.995908,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0285636,-4.995908",
-      "source": "osm"
-    },
-    {
-      "nom": "Fes Marriott Hotel Jnan Palace فندق ماريوت",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.03186,-5.002709",
-      "lat": 34.03186,
-      "lng": -5.002709,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.03186,-5.002709",
-      "source": "osm"
-    },
-    {
-      "nom": "Centre de Vacances COS’ONE Fès",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.032539,-5.015729",
-      "lat": 34.032539,
-      "lng": -5.015729,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.032539,-5.015729",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Errabie",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0281491,-4.9915876",
-      "lat": 34.0281491,
-      "lng": -4.9915876,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0281491,-4.9915876",
-      "source": "osm"
-    },
-    {
-      "nom": "Residence Laghzaouia",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0291479,-4.9916899",
-      "lat": 34.0291479,
-      "lng": -4.9916899,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0291479,-4.9916899",
-      "source": "osm"
-    },
-    {
-      "nom": "DAR ZIiryab",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0354824,-5.0073425",
-      "lat": 34.0354824,
-      "lng": -5.0073425,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0354824,-5.0073425",
-      "source": "osm"
-    },
-    {
-      "nom": "Hôtel Volubilis",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 4,
-      "mapsUrl": "https://maps.google.com/?q=34.0352784,-5.0034243",
-      "lat": 34.0352784,
-      "lng": -5.0034243,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0352784,-5.0034243",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Rex",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.032464,-4.9952554",
-      "lat": 34.032464,
-      "lng": -4.9952554,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.032464,-4.9952554",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Mimosa",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0329249,-5.0197437",
-      "lat": 34.0329249,
-      "lng": -5.0197437,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0329249,-5.0197437",
-      "source": "osm"
-    },
-    {
-      "nom": "Nouzha",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0328624,-4.9934725",
-      "lat": 34.0328624,
-      "lng": -4.9934725,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0328624,-4.9934725",
-      "source": "osm"
-    },
-    {
-      "nom": "Hôtel Royal Mirage",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.03686,-5.0042418",
-      "lat": 34.03686,
-      "lng": -5.0042418,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.03686,-5.0042418",
-      "source": "osm"
-    },
-    {
-      "nom": "Hôtel l'Escale",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0381439,-5.0050647",
-      "lat": 34.0381439,
-      "lng": -5.0050647,
-      "halalFriendly": false,
-      "bookingUrl": "http://www.hotelescale.ma/",
-      "source": "osm"
-    },
-    {
-      "nom": "عادل",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0376243,-5.0140795",
-      "lat": 34.0376243,
-      "lng": -5.0140795,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0376243,-5.0140795",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel zahrat al jabal",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0382624,-5.0053168",
-      "lat": 34.0382624,
-      "lng": -5.0053168,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0382624,-5.0053168",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Zahrat Aljabal",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0383304,-5.005345",
-      "lat": 34.0383304,
-      "lng": -5.005345,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0383304,-5.005345",
-      "source": "osm"
-    },
-    {
-      "nom": "Maghreb Hôtel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0373407,-4.9990984",
-      "lat": 34.0373407,
-      "lng": -4.9990984,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0373407,-4.9990984",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Noumidya",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.002317,-4.991782",
-      "lat": 34.002317,
-      "lng": -4.991782,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.002317,-4.991782",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel central",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0370835,-4.9979499",
-      "lat": 34.0370835,
-      "lng": -4.9979499,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0370835,-4.9979499",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Splendid",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0378501,-5.0004358",
-      "lat": 34.0378501,
-      "lng": -5.0004358,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0378501,-5.0004358",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Renaissance",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0381979,-4.9994375",
-      "lat": 34.0381979,
-      "lng": -4.9994375,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0381979,-4.9994375",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Wassim",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0389629,-5.0026432",
-      "lat": 34.0389629,
-      "lng": -5.0026432,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0389629,-5.0026432",
-      "source": "osm"
-    },
-    {
-      "nom": "Golden Tulip",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 4,
-      "mapsUrl": "https://maps.google.com/?q=34.0396383,-5.007896",
-      "lat": 34.0396383,
-      "lng": -5.007896,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0396383,-5.007896",
-      "source": "osm"
-    },
-    {
-      "nom": "Café et Hôtel Narjis",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0132532,-4.9822382",
-      "lat": 34.0132532,
-      "lng": -4.9822382,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0132532,-4.9822382",
-      "source": "osm"
-    },
-    {
-      "nom": "Dar Alian",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0370791,-4.9942756",
-      "lat": 34.0370791,
-      "lng": -4.9942756,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0370791,-4.9942756",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel al Fath",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0388811,-4.9986323",
-      "lat": 34.0388811,
-      "lng": -4.9986323,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0388811,-4.9986323",
-      "source": "osm"
-    },
-    {
-      "nom": "Grand Hôtel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0388052,-4.9975324",
-      "lat": 34.0388052,
-      "lng": -4.9975324,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0388052,-4.9975324",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel sofia",
-      "categorie": "Hôtel",
-      "priceRange": "€€€€",
-      "score": 4,
-      "mapsUrl": "https://maps.google.com/?q=34.0404036,-5.0019849",
-      "lat": 34.0404036,
-      "lng": -5.0019849,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0404036,-5.0019849",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Olympic",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0397431,-4.9985678",
-      "lat": 34.0397431,
-      "lng": -4.9985678,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0397431,-4.9985678",
-      "source": "osm"
-    },
-    {
-      "nom": "Kevin appart",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0223917,-5.0355754",
-      "lat": 34.0223917,
-      "lng": -5.0355754,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0223917,-5.0355754",
-      "source": "osm"
-    },
-    {
-      "nom": "Kevin 61",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0225567,-5.0358866",
-      "lat": 34.0225567,
-      "lng": -5.0358866,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0225567,-5.0358866",
-      "source": "osm"
-    },
-    {
-      "nom": "Hôtel Amour",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0413468,-5.0012068",
-      "lat": 34.0413468,
-      "lng": -5.0012068,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0413468,-5.0012068",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Savoy",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0404394,-4.9969605",
-      "lat": 34.0404394,
-      "lng": -4.9969605,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0404394,-4.9969605",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Royal",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0430735,-5.0011278",
-      "lat": 34.0430735,
-      "lng": -5.0011278,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0430735,-5.0011278",
-      "source": "osm"
-    },
-    {
-      "nom": "رياض باسيفلورا",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.99573,-4.992709",
-      "lat": 33.99573,
-      "lng": -4.992709,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.99573,-4.992709",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel de la Paix",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0427436,-4.9989594",
-      "lat": 34.0427436,
-      "lng": -4.9989594,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0427436,-4.9989594",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Perla فندق بيرلا",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0437889,-5.0052347",
-      "lat": 34.0437889,
-      "lng": -5.0052347,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0437889,-5.0052347",
-      "source": "osm"
-    },
-    {
-      "nom": "Menzeh Zalagh",
-      "categorie": "Hôtel",
-      "priceRange": "€€€",
-      "score": 3,
-      "mapsUrl": "https://maps.google.com/?q=34.0417077,-4.9946752",
-      "lat": 34.0417077,
-      "lng": -4.9946752,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0417077,-4.9946752",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Sahrai",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0436358,-4.9922166",
-      "lat": 34.0436358,
-      "lng": -4.9922166,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0436358,-4.9922166",
-      "source": "osm"
-    },
-    {
-      "nom": "Ibis Fès إيبس فاس",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.046783,-5.0041596",
-      "lat": 34.046783,
-      "lng": -5.0041596,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.046783,-5.0041596",
-      "source": "osm"
-    },
-    {
-      "nom": "Palais Medina Spa",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.04765,-4.9929539",
-      "lat": 34.04765,
-      "lng": -4.9929539,
-      "halalFriendly": false,
-      "bookingUrl": "https://palais-medina-fes-spa.hotel-rn.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Diamant Vert Bungalows",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.9879724,-5.0209406",
-      "lat": 33.9879724,
-      "lng": -5.0209406,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.9879724,-5.0209406",
-      "source": "osm"
-    },
-    {
-      "nom": "Hôtel Diamant Vert",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.987547,-5.020287",
-      "lat": 33.987547,
-      "lng": -5.020287,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.987547,-5.020287",
-      "source": "osm"
-    },
-    {
-      "nom": "Hôtel Glacier",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0519225,-4.9928861",
-      "lat": 34.0519225,
-      "lng": -4.9928861,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0519225,-4.9928861",
-      "source": "osm"
-    },
-    {
-      "nom": "فندق أرينا",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0471369,-5.0380454",
-      "lat": 34.0471369,
-      "lng": -5.0380454,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0471369,-5.0380454",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Agadir",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0539706,-4.9894317",
-      "lat": 34.0539706,
-      "lng": -4.9894317,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0539706,-4.9894317",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Zalagh Parc Palace",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.052244,-5.0323491",
-      "lat": 34.052244,
-      "lng": -5.0323491,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.052244,-5.0323491",
-      "source": "osm"
-    },
-    {
-      "nom": "Ibis Budget Fes",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0511773,-5.0360553",
-      "lat": 34.0511773,
-      "lng": -5.0360553,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0511773,-5.0360553",
-      "source": "osm"
-    },
-    {
-      "nom": "Hôtel Ibis budget",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0511836,-5.0360619",
-      "lat": 34.0511836,
-      "lng": -5.0360619,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0511836,-5.0360619",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Serendipity",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0547877,-4.9868403",
-      "lat": 34.0547877,
-      "lng": -4.9868403,
-      "halalFriendly": false,
-      "bookingUrl": "https://sudfa.ma/riad/serendipity/",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Dalal",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0581434,-4.9917051",
-      "lat": 34.0581434,
-      "lng": -4.9917051,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.booking.com/hotel/ma/riad-dalal.html",
-      "source": "osm"
-    },
-    {
-      "nom": "Fes",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0574738,-5.0316688",
-      "lat": 34.0574738,
-      "lng": -5.0316688,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0574738,-5.0316688",
-      "source": "osm"
-    },
-    {
-      "nom": "Home louah",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.973829,-5.003412",
-      "lat": 33.973829,
-      "lng": -5.003412,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.973829,-5.003412",
-      "source": "osm"
-    },
-    {
-      "nom": "Campini",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0580549,-4.9836516",
-      "lat": 34.0580549,
-      "lng": -4.9836516,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0580549,-4.9836516",
-      "source": "osm"
-    },
-    {
-      "nom": "Jnan sbil",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0599386,-4.9880517",
-      "lat": 34.0599386,
-      "lng": -4.9880517,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0599386,-4.9880517",
-      "source": "osm"
-    },
-    {
-      "nom": "Maison PAPA دار بابا",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0609375,-5.0256641",
-      "lat": 34.0609375,
-      "lng": -5.0256641,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0609375,-5.0256641",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Palais Batha",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.059475,-4.9817706",
-      "lat": 34.059475,
-      "lng": -4.9817706,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.059475,-4.9817706",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Norma",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0578843,-4.9782473",
-      "lat": 34.0578843,
-      "lng": -4.9782473,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0578843,-4.9782473",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Authentic Palace & Spa",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.058431,-4.9791733",
-      "lat": 34.058431,
-      "lng": -4.9791733,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.058431,-4.9791733",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Damia",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0577688,-4.9778236",
-      "lat": 34.0577688,
-      "lng": -4.9778236,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0577688,-4.9778236",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Fes Ziyat",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0579993,-4.9782444",
-      "lat": 34.0579993,
-      "lng": -4.9782444,
-      "halalFriendly": false,
-      "bookingUrl": "https://riadfesziyat.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Al Bartal",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0575859,-4.9774089",
-      "lat": 34.0575859,
-      "lng": -4.9774089,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.riadalbartal.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Palais des Hôtes",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0578799,-4.9778182",
-      "lat": 34.0578799,
-      "lng": -4.9778182,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0578799,-4.9778182",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel JARDIN",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0608683,-4.9845586",
-      "lat": 34.0608683,
-      "lng": -4.9845586,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0608683,-4.9845586",
-      "source": "osm"
-    },
-    {
-      "nom": "riad les chirifi",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0608376,-4.9844594",
-      "lat": 34.0608376,
-      "lng": -4.9844594,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0608376,-4.9844594",
-      "source": "osm"
-    },
-    {
-      "nom": "فضاء الامل للاطفال المعاقين دهنيا",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0598116,-5.0340712",
-      "lat": 34.0598116,
-      "lng": -5.0340712,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0598116,-5.0340712",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Jardin Chrifa",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0585835,-4.9787525",
-      "lat": 34.0585835,
-      "lng": -4.9787525,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0585835,-4.9787525",
-      "source": "osm"
-    },
-    {
-      "nom": "BackHome Fez",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0588612,-4.9791905",
-      "lat": 34.0588612,
-      "lng": -4.9791905,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0588612,-4.9791905",
-      "source": "osm"
-    },
-    {
-      "nom": "Road La Perle De La Medina",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0584558,-4.9782809",
-      "lat": 34.0584558,
-      "lng": -4.9782809,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0584558,-4.9782809",
-      "source": "osm"
-    },
-    {
-      "nom": "Fes Heritage",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.059833,-4.981209",
-      "lat": 34.059833,
-      "lng": -4.981209,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.059833,-4.981209",
-      "source": "osm"
-    },
-    {
-      "nom": "Dar Lala Wafae",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0609478,-4.9838173",
-      "lat": 34.0609478,
-      "lng": -4.9838173,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0609478,-4.9838173",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Salam Fès",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0586237,-4.978311",
-      "lat": 34.0586237,
-      "lng": -4.978311,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0586237,-4.978311",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Lune et Soleil",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0593457,-4.9797281",
-      "lat": 34.0593457,
-      "lng": -4.9797281,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.luneetsoleil.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Tizwa Fes",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0596004,-4.9802281",
-      "lat": 34.0596004,
-      "lng": -4.9802281,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0596004,-4.9802281",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Dar Chrifa",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.057838,-4.9765925",
-      "lat": 34.057838,
-      "lng": -4.9765925,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.057838,-4.9765925",
-      "source": "osm"
-    },
-    {
-      "nom": "Palais Sheherazade & spa",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0589883,-4.9787833",
-      "lat": 34.0589883,
-      "lng": -4.9787833,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0589883,-4.9787833",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Anata",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0587456,-4.9782683",
-      "lat": 34.0587456,
-      "lng": -4.9782683,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0587456,-4.9782683",
-      "source": "osm"
-    },
-    {
-      "nom": "cine House",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0601418,-4.9812351",
-      "lat": 34.0601418,
-      "lng": -4.9812351,
-      "halalFriendly": false,
-      "bookingUrl": "https://cine-house.business.site/",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Bab Boujloud",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0612879,-4.9837741",
-      "lat": 34.0612879,
-      "lng": -4.9837741,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0612879,-4.9837741",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Verus",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0593537,-4.9790184",
-      "lat": 34.0593537,
-      "lng": -4.9790184,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0593537,-4.9790184",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Zamane Fès",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0597066,-4.9795993",
-      "lat": 34.0597066,
-      "lng": -4.9795993,
-      "halalFriendly": false,
-      "bookingUrl": "http://riadzamane.com",
-      "source": "osm"
-    },
-    {
-      "nom": "Casa La Espanola Hotel",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0589882,-4.9780711",
-      "lat": 34.0589882,
-      "lng": -4.9780711,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0589882,-4.9780711",
-      "source": "osm"
-    },
-    {
-      "nom": "Le Grand Alcazar - Riad",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0599344,-4.9800488",
-      "lat": 34.0599344,
-      "lng": -4.9800488,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0599344,-4.9800488",
-      "source": "osm"
-    },
-    {
-      "nom": "Messi Elli Asja",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0580797,-4.9763147",
-      "lat": 34.0580797,
-      "lng": -4.9763147,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0580797,-4.9763147",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Mesbah",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0613277,-4.9829871",
-      "lat": 34.0613277,
-      "lng": -4.9829871,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0613277,-4.9829871",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Sara",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0600122,-4.9798027",
-      "lat": 34.0600122,
-      "lng": -4.9798027,
-      "halalFriendly": false,
-      "bookingUrl": "http://www.riadsarafes.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Jaouhara",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0614103,-4.983069",
-      "lat": 34.0614103,
-      "lng": -4.983069,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0614103,-4.983069",
-      "source": "osm"
-    },
-    {
-      "nom": "Dar Abdesalam",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0597129,-4.9791003",
-      "lat": 34.0597129,
-      "lng": -4.9791003,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0597129,-4.9791003",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Methaf",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0612472,-4.9825866",
-      "lat": 34.0612472,
-      "lng": -4.9825866,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0612472,-4.9825866",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Layla",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0594023,-4.9784257",
-      "lat": 34.0594023,
-      "lng": -4.9784257,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0594023,-4.9784257",
-      "source": "osm"
-    },
-    {
-      "nom": "Dar Fès Medina",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.058278,-4.9762186",
-      "lat": 34.058278,
-      "lng": -4.9762186,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.058278,-4.9762186",
-      "source": "osm"
-    },
-    {
-      "nom": "Dar Lalamoune",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.060111,-4.9798493",
-      "lat": 34.060111,
-      "lng": -4.9798493,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.060111,-4.9798493",
-      "source": "osm"
-    },
-    {
-      "nom": "downtown backpacker fez",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0620839,-4.9846024",
-      "lat": 34.0620839,
-      "lng": -4.9846024,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0620839,-4.9846024",
-      "source": "osm"
-    },
-    {
-      "nom": "Dar aya fes",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0566179,-4.9732145",
-      "lat": 34.0566179,
-      "lng": -4.9732145,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0566179,-4.9732145",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad La Clé de Fes",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0601689,-4.9798325",
-      "lat": 34.0601689,
-      "lng": -4.9798325,
-      "halalFriendly": false,
-      "bookingUrl": "www.riadlacledefes.com",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Cascade",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0617972,-4.9837364",
-      "lat": 34.0617972,
-      "lng": -4.9837364,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0617972,-4.9837364",
-      "source": "osm"
-    },
-    {
-      "nom": "Hostel Amir",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0612146,-4.9822201",
-      "lat": 34.0612146,
-      "lng": -4.9822201,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0612146,-4.9822201",
-      "source": "osm"
-    },
-    {
-      "nom": "Riad Dar Skalli",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0601385,-4.9797185",
-      "lat": 34.0601385,
-      "lng": -4.9797185,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0601385,-4.9797185",
-      "source": "osm"
-    },
-    {
-      "nom": "Dar Batha",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0607371,-4.9809121",
-      "lat": 34.0607371,
-      "lng": -4.9809121,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0607371,-4.9809121",
-      "source": "osm"
-    },
-    {
-      "nom": "Palais Houyam",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.0583013,-4.9758884",
-      "lat": 34.0583013,
-      "lng": -4.9758884,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.0583013,-4.9758884",
-      "source": "osm"
-    },
-    {
-      "nom": "ودادية الألفة للسكن",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=33.9950199,-4.9568333",
-      "lat": 33.9950199,
-      "lng": -4.9568333,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=33.9950199,-4.9568333",
-      "source": "osm"
-    },
-    {
-      "nom": "El Kasbah",
-      "categorie": "Auberge",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.062543,-4.9854569",
-      "lat": 34.062543,
-      "lng": -4.9854569,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.062543,-4.9854569",
-      "source": "osm"
-    },
-    {
-      "nom": "Dar Kenza",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=34.060216,-4.9796142",
-      "lat": 34.060216,
-      "lng": -4.9796142,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=34.060216,-4.9796142",
-      "source": "osm"
-    }
-  ],
-  "activites": [
-    {
-      "nom": "Art shows alami",
-      "lat": 34.0176635,
-      "lng": -5.0057115,
-      "coordonnees": {
-        "lat": 34.0176635,
-        "lng": -5.0057115
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=34.0176635,-5.0057115",
-      "source": "osm"
-    },
-    {
-      "nom": "New Boussole Travel",
-      "lat": 34.0137376,
-      "lng": -5.0064688,
-      "coordonnees": {
-        "lat": 34.0137376,
-        "lng": -5.0064688
-      },
-      "categorie": "Shopping",
-      "mapsUrl": "https://maps.google.com/?q=34.0137376,-5.0064688",
-      "source": "osm"
-    },
-    {
-      "nom": "Salle des fêtes Jamai",
-      "lat": 34.0163503,
-      "lng": -4.9937127,
-      "coordonnees": {
-        "lat": 34.0163503,
-        "lng": -4.9937127
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=34.0163503,-4.9937127",
-      "source": "osm"
-    },
-    {
-      "nom": "Grillade Brahim",
-      "lat": 34.0168126,
-      "lng": -4.9924067,
-      "coordonnees": {
-        "lat": 34.0168126,
-        "lng": -4.9924067
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=34.0168126,-4.9924067",
-      "source": "osm"
-    },
-    {
-      "nom": "rond point alkitabe",
-      "lat": 34.0271663,
-      "lng": -5.0277513,
-      "coordonnees": {
-        "lat": 34.0271663,
-        "lng": -5.0277513
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=34.0271663,-5.0277513",
-      "source": "osm"
-    },
-    {
-      "nom": "Sandwich Benmaseoud",
-      "lat": 34.0246523,
-      "lng": -4.9853306,
-      "coordonnees": {
-        "lat": 34.0246523,
-        "lng": -4.9853306
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=34.0246523,-4.9853306",
-      "source": "osm"
-    },
-    {
-      "nom": "غليظ أبو لحية",
-      "lat": 34.0220632,
-      "lng": -5.0319597,
-      "coordonnees": {
-        "lat": 34.0220632,
-        "lng": -5.0319597
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=34.0220632,-5.0319597",
-      "source": "osm"
-    },
-    {
-      "nom": "Orientaliste Art Gallery",
-      "lat": 34.0358146,
-      "lng": -4.9954246,
-      "coordonnees": {
-        "lat": 34.0358146,
-        "lng": -4.9954246
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=34.0358146,-4.9954246",
-      "source": "osm"
-    },
-    {
-      "nom": "Musée Meryem",
-      "lat": 34.0386772,
-      "lng": -5.0098041,
-      "coordonnees": {
-        "lat": 34.0386772,
-        "lng": -5.0098041
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=34.0386772,-5.0098041",
-      "source": "osm"
-    },
-    {
-      "nom": "Cendrillon",
-      "lat": 34.0397143,
-      "lng": -4.9985127,
-      "coordonnees": {
-        "lat": 34.0397143,
-        "lng": -4.9985127
-      },
-      "categorie": "Shopping",
-      "mapsUrl": "https://maps.google.com/?q=34.0397143,-4.9985127",
-      "source": "osm"
-    },
-    {
-      "nom": "Dreams Engineering",
-      "lat": 34.040481,
-      "lng": -4.9978602,
-      "coordonnees": {
-        "lat": 34.040481,
-        "lng": -4.9978602
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=34.040481,-4.9978602",
-      "source": "osm"
-    },
-    {
-      "nom": "مفروشات المنازل",
-      "lat": 34.0080845,
-      "lng": -5.0341123,
-      "coordonnees": {
-        "lat": 34.0080845,
-        "lng": -5.0341123
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=34.0080845,-5.0341123",
-      "source": "osm"
-    },
-    {
-      "nom": "Cofirad",
-      "lat": 34.0423418,
-      "lng": -4.9967616,
-      "coordonnees": {
-        "lat": 34.0423418,
-        "lng": -4.9967616
-      },
-      "categorie": "Shopping",
-      "mapsUrl": "https://maps.google.com/?q=34.0423418,-4.9967616",
-      "source": "osm"
-    },
-    {
-      "nom": "Royal air maroc",
-      "lat": 34.0437941,
-      "lng": -4.9981249,
-      "coordonnees": {
-        "lat": 34.0437941,
-        "lng": -4.9981249
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=34.0437941,-4.9981249",
-      "source": "osm"
-    },
-    {
-      "nom": "Cass-croute",
-      "lat": 34.0450971,
-      "lng": -4.997662,
-      "coordonnees": {
-        "lat": 34.0450971,
-        "lng": -4.997662
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=34.0450971,-4.997662",
-      "source": "osm"
-    },
-    {
-      "nom": "Rond Point Le ballon de foot",
-      "lat": 34.0027328,
-      "lng": -4.9739137,
-      "coordonnees": {
-        "lat": 34.0027328,
-        "lng": -4.9739137
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=34.0027328,-4.9739137",
-      "source": "osm"
-    },
-    {
-      "nom": "رشيد",
-      "lat": 34.0212192,
-      "lng": -5.0485008,
-      "coordonnees": {
-        "lat": 34.0212192,
-        "lng": -5.0485008
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=34.0212192,-5.0485008",
-      "source": "osm"
-    },
-    {
-      "nom": "منزل يهودي",
-      "lat": 34.0519819,
-      "lng": -4.9926085,
-      "coordonnees": {
-        "lat": 34.0519819,
-        "lng": -4.9926085
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=34.0519819,-4.9926085",
-      "source": "osm"
-    },
-    {
-      "nom": "Quartier Mellah",
-      "lat": 34.0529494,
-      "lng": -4.9919814,
-      "coordonnees": {
-        "lat": 34.0529494,
-        "lng": -4.9919814
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=34.0529494,-4.9919814",
-      "source": "osm"
-    },
-    {
-      "nom": "Bab El Magana",
-      "lat": 34.0536973,
-      "lng": -4.9905816,
-      "coordonnees": {
-        "lat": 34.0536973,
-        "lng": -4.9905816
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=34.0536973,-4.9905816",
-      "source": "osm"
-    },
-    {
-      "nom": "Zaouia of Moulay Idriss II",
-      "lat": 34.0545477,
-      "lng": -4.9876653,
-      "coordonnees": {
-        "lat": 34.0545477,
-        "lng": -4.9876653
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=34.0545477,-4.9876653",
-      "source": "osm"
-    },
-    {
-      "nom": "Bab Mechouar",
-      "lat": 34.0582158,
-      "lng": -4.9910279,
-      "coordonnees": {
-        "lat": 34.0582158,
-        "lng": -4.9910279
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=34.0582158,-4.9910279",
-      "source": "osm"
-    },
-    {
-      "nom": "يونس صحراوي",
-      "lat": 33.9958651,
-      "lng": -5.0524053,
-      "coordonnees": {
-        "lat": 33.9958651,
-        "lng": -5.0524053
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=33.9958651,-5.0524053",
-      "source": "osm"
-    },
-    {
-      "nom": "محل",
-      "lat": 34.0570411,
-      "lng": -5.0306622,
-      "coordonnees": {
-        "lat": 34.0570411,
-        "lng": -5.0306622
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=34.0570411,-5.0306622",
-      "source": "osm"
-    },
-    {
-      "nom": "Bab Makina باب المكينة",
-      "lat": 34.0595289,
-      "lng": -4.9917826,
-      "coordonnees": {
-        "lat": 34.0595289,
-        "lng": -4.9917826
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=34.0595289,-4.9917826",
-      "source": "osm"
-    },
-    {
-      "nom": "Bab Chems",
-      "lat": 34.0599522,
-      "lng": -4.9875552,
-      "coordonnees": {
-        "lat": 34.0599522,
-        "lng": -4.9875552
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=34.0599522,-4.9875552",
-      "source": "osm"
-    },
-    {
-      "nom": "Parc hay El laymoune",
-      "lat": 34.0530622,
-      "lng": -5.043231,
-      "coordonnees": {
-        "lat": 34.0530622,
-        "lng": -5.043231
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=34.0530622,-5.043231",
-      "source": "osm"
-    },
-    {
-      "nom": "Bab Jdid",
-      "lat": 34.0559937,
-      "lng": -4.9746413,
-      "coordonnees": {
-        "lat": 34.0559937,
-        "lng": -4.9746413
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=34.0559937,-4.9746413",
-      "source": "osm"
-    },
-    {
-      "nom": "Musée Batha",
-      "lat": 34.0604457,
-      "lng": -4.9827382,
-      "coordonnees": {
-        "lat": 34.0604457,
-        "lng": -4.9827382
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=34.0604457,-4.9827382",
-      "source": "osm"
-    },
-    {
-      "nom": "Bab Mahrouk باب المحروق",
-      "lat": 34.0624855,
-      "lng": -4.9860926,
-      "coordonnees": {
-        "lat": 34.0624855,
-        "lng": -4.9860926
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=34.0624855,-4.9860926",
-      "source": "osm"
-    },
-    {
-      "nom": "Palais el Glaoui دار لكلاوي",
-      "lat": 34.0590536,
-      "lng": -4.9770823,
-      "coordonnees": {
-        "lat": 34.0590536,
-        "lng": -4.9770823
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=34.0590536,-4.9770823",
-      "source": "osm"
-    },
-    {
-      "nom": "Palais Mokri دار المقري",
-      "lat": 34.0584984,
-      "lng": -4.9751414,
-      "coordonnees": {
-        "lat": 34.0584984,
-        "lng": -4.9751414
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=34.0584984,-4.9751414",
-      "source": "osm"
-    },
-    {
-      "nom": "l'art du bronze",
-      "lat": 34.0619957,
-      "lng": -4.981128,
-      "coordonnees": {
-        "lat": 34.0619957,
-        "lng": -4.981128
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=34.0619957,-4.981128",
-      "source": "osm"
-    },
-    {
-      "nom": "Med'in Art",
-      "lat": 34.0633911,
-      "lng": -4.9783251,
-      "coordonnees": {
-        "lat": 34.0633911,
-        "lng": -4.9783251
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=34.0633911,-4.9783251",
-      "source": "osm"
-    },
-    {
-      "nom": "Musée Dar Belghazi",
-      "lat": 34.0638892,
-      "lng": -4.9763836,
-      "coordonnees": {
-        "lat": 34.0638892,
-        "lng": -4.9763836
-      },
-      "categorie": "Culture",
-      "mapsUrl": "https://maps.google.com/?q=34.0638892,-4.9763836",
-      "source": "osm"
-    },
-    {
-      "nom": "Tanneries view",
-      "lat": 34.064133,
-      "lng": -4.9754091,
-      "coordonnees": {
-        "lat": 34.064133,
-        "lng": -4.9754091
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=34.064133,-4.9754091",
-      "source": "osm"
-    },
-    {
-      "nom": "Bab Sid L'Aouad",
-      "lat": 34.0630578,
-      "lng": -4.9723728,
-      "coordonnees": {
-        "lat": 34.0630578,
-        "lng": -4.9723728
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=34.0630578,-4.9723728",
-      "source": "osm"
-    },
-    {
-      "nom": "Chez Boutbi Nadia",
-      "lat": 34.0651458,
-      "lng": -4.9756518,
-      "coordonnees": {
-        "lat": 34.0651458,
-        "lng": -4.9756518
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=34.0651458,-4.9756518",
-      "source": "osm"
-    },
-    {
-      "nom": "Belvedère",
-      "lat": 34.0616855,
-      "lng": -4.9691812,
-      "coordonnees": {
-        "lat": 34.0616855,
-        "lng": -4.9691812
-      },
-      "categorie": "Panorama",
-      "mapsUrl": "https://maps.google.com/?q=34.0616855,-4.9691812",
-      "source": "osm"
-    },
-    {
-      "nom": "Bab Ftouh باب الفتوح",
-      "lat": 34.059868,
-      "lng": -4.9652998,
-      "coordonnees": {
-        "lat": 34.059868,
-        "lng": -4.9652998
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=34.059868,-4.9652998",
-      "source": "osm"
-    }
-  ],
-  "codeISO": "MA",
-  "image": "https://images.unsplash.com/photo-1675782357250-8329a7677819?w=1600&q=80",
-  "continent": "Afrique",
-  "metaDescription": "Restaurants halal signalés, mosquées et guide pratique pour Fès — Halal Trust Score 5/5.",
-  "image_hero": "https://images.unsplash.com/photo-1675782357250-8329a7677819?w=1600&q=80",
-  "mosqueesPrincipales": [
-    {
-      "nom": "Mosquée Anakhil مسجد النخيل",
-      "lat": 34.0147063,
-      "lng": -5.0232098,
-      "coordonnees": {
-        "lat": 34.0147063,
-        "lng": -5.0232098
-      },
-      "mapsUrl": "https://maps.google.com/?q=34.0147063,-5.0232098",
-      "source": "osm"
-    },
-    {
-      "nom": "Moquée Rida",
-      "lat": 34.0039123,
-      "lng": -4.9970381,
-      "coordonnees": {
-        "lat": 34.0039123,
-        "lng": -4.9970381
-      },
-      "mapsUrl": "https://maps.google.com/?q=34.0039123,-4.9970381",
-      "source": "osm"
-    },
-    {
-      "nom": "Mosquée Bilal Ibn Rabah مسجد بلال بن رباح",
-      "lat": 34.0092067,
-      "lng": -5.0286916,
-      "coordonnees": {
-        "lat": 34.0092067,
-        "lng": -5.0286916
-      },
-      "mapsUrl": "https://maps.google.com/?q=34.0092067,-5.0286916",
-      "source": "osm"
-    },
-    {
-      "nom": "جيل الي مسجد الشرايبي",
-      "lat": 34.0135919,
-      "lng": -4.9801932,
-      "coordonnees": {
-        "lat": 34.0135919,
-        "lng": -4.9801932
-      },
-      "mapsUrl": "https://maps.google.com/?q=34.0135919,-4.9801932",
-      "source": "osm"
-    },
-    {
-      "nom": "Mosquée Zayd ibn al-Khattab",
-      "lat": 33.9887959,
-      "lng": -5.0359088,
-      "coordonnees": {
-        "lat": 33.9887959,
-        "lng": -5.0359088
-      },
-      "adresse": "ZONE INDUSTRIELLE - AIN CHKEF, FES",
-      "mapsUrl": "https://maps.google.com/?q=33.9887959,-5.0359088",
-      "source": "osm"
-    },
-    {
-      "nom": "White Mosque",
-      "lat": 34.0559272,
-      "lng": -4.9903142,
-      "coordonnees": {
-        "lat": 34.0559272,
-        "lng": -4.9903142
-      },
-      "mapsUrl": "https://maps.google.com/?q=34.0559272,-4.9903142",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد المدينة المنورة",
-      "lat": 34.0344608,
-      "lng": -5.0557357,
-      "coordonnees": {
-        "lat": 34.0344608,
-        "lng": -5.0557357
-      },
-      "mapsUrl": "https://maps.google.com/?q=34.0344608,-5.0557357",
-      "source": "osm"
-    },
-    {
-      "nom": "mosquée al lazaz",
-      "lat": 34.0621444,
-      "lng": -4.9830503,
-      "coordonnees": {
-        "lat": 34.0621444,
-        "lng": -4.9830503
-      },
-      "adresse": "Fes Médina",
-      "mapsUrl": "https://maps.google.com/?q=34.0621444,-4.9830503",
-      "source": "osm"
-    },
-    {
-      "nom": "mosquée sidi Ala",
-      "lat": 34.0632088,
-      "lng": -4.9820205,
-      "coordonnees": {
-        "lat": 34.0632088,
-        "lng": -4.9820205
-      },
-      "adresse": "Fes Médina talaa el kbira",
-      "mapsUrl": "https://maps.google.com/?q=34.0632088,-4.9820205",
-      "source": "osm"
-    },
-    {
-      "nom": "Masjid Hay El Amal",
-      "lat": 34.0700055,
-      "lng": -5.0056062,
-      "coordonnees": {
-        "lat": 34.0700055,
-        "lng": -5.0056062
-      },
-      "adresse": "Ain Bou Ali آيت بو علي",
-      "mapsUrl": "https://maps.google.com/?q=34.0700055,-5.0056062",
-      "source": "osm"
-    },
-    {
-      "nom": "Madrasa al-Attarine مدرسة العطارين",
-      "lat": 34.0651258,
-      "lng": -4.9735649,
-      "coordonnees": {
-        "lat": 34.0651258,
-        "lng": -4.9735649
-      },
-      "adresse": "FEZ MEDINA, FES medina",
-      "mapsUrl": "https://maps.google.com/?q=34.0651258,-4.9735649",
-      "source": "osm"
-    },
-    {
-      "nom": "Salle de prière قاعة للصلاة",
-      "lat": 33.9304865,
-      "lng": -4.9837434,
-      "coordonnees": {
-        "lat": 33.9304865,
-        "lng": -4.9837434
-      },
-      "mapsUrl": "https://maps.google.com/?q=33.9304865,-4.9837434",
-      "source": "osm"
-    },
-    {
-      "nom": "مسجد السيد محمد مدني",
-      "lat": 34.0399887,
-      "lng": -5.141142,
-      "coordonnees": {
-        "lat": 34.0399887,
-        "lng": -5.141142
-      },
-      "mapsUrl": "https://maps.google.com/?q=34.0399887,-5.141142",
-      "source": "osm"
-    },
-    {
-      "id": "osm-116257044",
-      "nom": "Mosquée R'cif مسجد الرصيف",
-      "type": "mosquee",
-      "adresse": "Fès",
-      "lat": 34.0625294,
-      "lng": -4.9731786,
-      "mapsUrl": "https://maps.google.com/?q=34.0625294,-4.9731786",
-      "source": "osm"
-    },
-    {
-      "id": "osm-174473391",
-      "nom": "Mosquée Imam Malik",
-      "type": "mosquee",
-      "adresse": "Fès",
-      "lat": 34.0425795,
-      "lng": -5.0029309,
-      "mapsUrl": "https://maps.google.com/?q=34.0425795,-5.0029309",
-      "source": "osm"
-    },
-    {
-      "id": "osm-180258789",
-      "nom": "Mosquée Imam Ali مسجد الإمام علي",
-      "type": "mosquee",
-      "adresse": "Avenue Abi Bakr Essedik, fés",
-      "lat": 34.0437481,
-      "lng": -5.0062676,
-      "mapsUrl": "https://maps.google.com/?q=34.0437481,-5.0062676",
-      "source": "osm"
-    },
-    {
-      "id": "osm-180258790",
-      "nom": "Mosquée de Tunis مسجد تونس",
-      "type": "mosquee",
-      "adresse": "Fès",
-      "lat": 34.0395378,
-      "lng": -4.996249,
-      "mapsUrl": "https://maps.google.com/?q=34.0395378,-4.996249",
-      "source": "osm"
-    },
-    {
-      "id": "osm-186942892",
-      "nom": "مسجد يوسف بن تاشفين",
-      "type": "mosquee",
-      "adresse": "Fès",
-      "lat": 34.0313426,
-      "lng": -4.9970744,
-      "mapsUrl": "https://maps.google.com/?q=34.0313426,-4.9970744",
-      "source": "osm"
-    },
-    {
-      "id": "osm-192606915",
-      "nom": "Mosquée Al Qods",
-      "type": "mosquee",
-      "adresse": "Fès",
-      "lat": 34.0299962,
-      "lng": -5.007656,
-      "mapsUrl": "https://maps.google.com/?q=34.0299962,-5.007656",
-      "source": "osm"
-    },
-    {
-      "id": "osm-203670952",
-      "nom": "Jamaï Hafssa",
-      "type": "mosquee",
-      "lat": 34.0135535,
-      "lng": -4.9908811,
-      "mapsUrl": "https://maps.google.com/?q=34.0135535,-4.9908811",
-      "source": "osm"
-    },
-    {
-      "id": "osm-203670953",
-      "nom": "Mosquée Saad Ibn Abi Wakkas مسجد سعد بن أبي وقاص",
-      "type": "mosquee",
-      "lat": 34.0043775,
-      "lng": -4.9850459,
-      "mapsUrl": "https://maps.google.com/?q=34.0043775,-4.9850459",
-      "source": "osm"
-    },
-    {
-      "id": "osm-203670954",
-      "nom": "Masjid Moulay Idriss I",
-      "type": "mosquee",
-      "adresse": "Avenue Moulay Abdellah, fez",
-      "lat": 34.0144218,
-      "lng": -4.9973241,
-      "mapsUrl": "https://maps.google.com/?q=34.0144218,-4.9973241",
-      "source": "osm"
-    },
-    {
-      "id": "osm-316035535",
-      "nom": "Masjid Al Baraka",
-      "type": "mosquee",
-      "lat": 34.0199367,
-      "lng": -5.0141281,
-      "mapsUrl": "https://maps.google.com/?q=34.0199367,-5.0141281",
-      "source": "osm"
-    },
-    {
-      "id": "osm-394189031",
-      "nom": "Dar Al Qoran",
-      "type": "mosquee",
-      "adresse": "Avenue Moulay Youssef شارع مولاي يوسف, فاس",
-      "lat": 34.0465784,
-      "lng": -4.9955511,
-      "mapsUrl": "https://maps.google.com/?q=34.0465784,-4.9955511",
-      "source": "osm"
-    },
-    {
-      "id": "osm-427524976",
-      "nom": "Mosquée مسجد العنبرة",
-      "type": "mosquee",
-      "lat": 34.006745,
-      "lng": -5.0330008,
-      "mapsUrl": "https://maps.google.com/?q=34.006745,-5.0330008",
-      "source": "osm"
-    },
-    {
-      "id": "osm-455763554",
-      "nom": "Mosquée Bouramana",
-      "type": "mosquee",
-      "lat": 34.020884,
-      "lng": -4.9933534,
-      "mapsUrl": "https://maps.google.com/?q=34.020884,-4.9933534",
-      "source": "osm"
-    },
-    {
-      "id": "osm-455810336",
-      "nom": "Masjid Tariq Ibn Ziad مسجد طارق بن زياد",
-      "type": "mosquee",
-      "adresse": "فاس",
-      "lat": 34.0372607,
-      "lng": -5.0211054,
-      "mapsUrl": "https://maps.google.com/?q=34.0372607,-5.0211054",
-      "source": "osm"
-    },
-    {
-      "id": "osm-455811196",
-      "nom": "Masjid Tghat مسجد تغات",
-      "type": "mosquee",
-      "adresse": "فاس",
-      "lat": 34.0407057,
-      "lng": -5.019277,
-      "mapsUrl": "https://maps.google.com/?q=34.0407057,-5.019277",
-      "source": "osm"
-    },
-    {
-      "id": "osm-455812242",
-      "nom": "Mosquée Taqwa مسجد التقوى",
-      "type": "mosquee",
-      "adresse": "Fès",
-      "lat": 34.0192932,
-      "lng": -5.0061997,
-      "mapsUrl": "https://maps.google.com/?q=34.0192932,-5.0061997",
-      "source": "osm"
-    },
-    {
-      "id": "osm-455813335",
-      "nom": "Masjid Mouad Ibn Jabal",
-      "type": "mosquee",
-      "lat": 34.0118064,
-      "lng": -5.0109687,
-      "mapsUrl": "https://maps.google.com/?q=34.0118064,-5.0109687",
-      "source": "osm"
-    },
-    {
-      "id": "osm-455813456",
-      "nom": "Masjid Hay Anass",
-      "type": "mosquee",
-      "adresse": "fez",
-      "lat": 34.0073615,
-      "lng": -5.0044493,
-      "mapsUrl": "https://maps.google.com/?q=34.0073615,-5.0044493",
-      "source": "osm"
-    },
-    {
-      "id": "osm-455814009",
-      "nom": "Masjid El Karaouine",
-      "type": "mosquee",
-      "lat": 34.0048275,
-      "lng": -5.0132332,
-      "mapsUrl": "https://maps.google.com/?q=34.0048275,-5.0132332",
-      "source": "osm"
-    },
-    {
-      "id": "osm-455816588",
-      "nom": "Masjid Jawamah",
-      "type": "mosquee",
-      "adresse": "fez",
-      "lat": 33.9982543,
-      "lng": -5.009369,
-      "mapsUrl": "https://maps.google.com/?q=33.9982543,-5.009369",
-      "source": "osm"
-    },
-    {
-      "id": "osm-455816775",
-      "nom": "Masjid Hay Riad",
-      "type": "mosquee",
-      "adresse": "Ain Chkef عين الشقف",
-      "lat": 33.9982357,
-      "lng": -5.0154287,
-      "mapsUrl": "https://maps.google.com/?q=33.9982357,-5.0154287",
-      "source": "osm"
-    },
-    {
-      "id": "osm-455817264",
-      "nom": "Masjid Ibn Taymiyyah",
-      "type": "mosquee",
-      "lat": 33.9930171,
-      "lng": -4.9896161,
-      "mapsUrl": "https://maps.google.com/?q=33.9930171,-4.9896161",
-      "source": "osm"
-    },
-    {
-      "id": "osm-455818219",
-      "nom": "Masjid Al Nour",
-      "type": "mosquee",
-      "lat": 34.01101,
-      "lng": -4.9667546,
-      "mapsUrl": "https://maps.google.com/?q=34.01101,-4.9667546",
-      "source": "osm"
-    },
-    {
-      "id": "osm-455818220",
-      "nom": "Masjid Al Iman مسجد الإيمان",
-      "type": "mosquee",
-      "lat": 34.0143693,
-      "lng": -4.9638965,
-      "mapsUrl": "https://maps.google.com/?q=34.0143693,-4.9638965",
-      "source": "osm"
-    },
-    {
-      "id": "osm-455819706",
-      "nom": "Masjid Salman Al Farisi مسجد سلمان الفارسي",
-      "type": "mosquee",
-      "lat": 34.0111345,
-      "lng": -4.9714895,
-      "mapsUrl": "https://maps.google.com/?q=34.0111345,-4.9714895",
-      "source": "osm"
-    },
-    {
-      "id": "osm-455821177",
-      "nom": "Mosquée Meriem Borkaoui",
-      "type": "mosquee",
-      "adresse": "Fès",
-      "lat": 34.0198545,
-      "lng": -4.9671178,
-      "mapsUrl": "https://maps.google.com/?q=34.0198545,-4.9671178",
-      "source": "osm"
-    },
-    {
-      "id": "osm-455822593",
-      "nom": "Mosquée Riad مسجد الرياض",
-      "type": "mosquee",
-      "adresse": "فاس",
-      "lat": 34.0338167,
-      "lng": -4.9833331,
-      "mapsUrl": "https://maps.google.com/?q=34.0338167,-4.9833331",
-      "source": "osm"
-    },
-    {
-      "id": "osm-455826559",
-      "nom": "Majid Al-Ihssane Mosque مسجد الإحسان",
-      "type": "mosquee",
-      "lat": 34.0314984,
-      "lng": -5.0268406,
-      "mapsUrl": "https://maps.google.com/?q=34.0314984,-5.0268406",
-      "source": "osm"
-    },
-    {
-      "id": "osm-455827033",
-      "nom": "Masjid Al Ikhlass",
-      "type": "mosquee",
-      "adresse": "fez",
-      "lat": 34.0373802,
-      "lng": -5.0269081,
-      "mapsUrl": "https://maps.google.com/?q=34.0373802,-5.0269081",
-      "source": "osm"
-    },
-    {
-      "id": "osm-455827954",
-      "nom": "Masjid Arrahma مسجد الرحمة",
-      "type": "mosquee",
-      "lat": 34.058001,
-      "lng": -5.0211332,
-      "mapsUrl": "https://maps.google.com/?q=34.058001,-5.0211332",
-      "source": "osm"
-    },
-    {
-      "id": "osm-455828247",
-      "nom": "Masjid Dayaa",
-      "type": "mosquee",
-      "adresse": "fez tghat",
-      "lat": 34.0628851,
-      "lng": -5.0180844,
-      "mapsUrl": "https://maps.google.com/?q=34.0628851,-5.0180844",
-      "source": "osm"
-    },
-    {
-      "id": "osm-455828658",
-      "nom": "Masjid Ain Haroune",
-      "type": "mosquee",
-      "adresse": "fez",
-      "lat": 34.0674117,
-      "lng": -5.0088695,
-      "mapsUrl": "https://maps.google.com/?q=34.0674117,-5.0088695",
-      "source": "osm"
-    },
-    {
-      "id": "osm-455829879",
-      "nom": "Masjid Massira مسجد المسيرة",
-      "type": "mosquee",
-      "adresse": "فاس",
-      "lat": 33.9920621,
-      "lng": -5.0591032,
-      "mapsUrl": "https://maps.google.com/?q=33.9920621,-5.0591032",
-      "source": "osm"
-    },
-    {
-      "id": "osm-455829984",
-      "nom": "Masjid La Ferraille",
-      "type": "mosquee",
-      "lat": 33.9991465,
-      "lng": -5.0581977,
-      "mapsUrl": "https://maps.google.com/?q=33.9991465,-5.0581977",
-      "source": "osm"
-    },
-    {
-      "id": "osm-455830083",
-      "nom": "Masjid Abi Obaida Al Jarah",
-      "type": "mosquee",
-      "lat": 34.0143383,
-      "lng": -5.0538825,
-      "mapsUrl": "https://maps.google.com/?q=34.0143383,-5.0538825",
-      "source": "osm"
-    },
-    {
-      "id": "osm-478963308",
-      "nom": "مسجد الغفران",
-      "type": "mosquee",
-      "adresse": "67 LOT ZINEB DOKKARATفاس",
-      "lat": 34.0252164,
-      "lng": -5.0129844,
-      "mapsUrl": "https://maps.google.com/?q=34.0252164,-5.0129844",
-      "source": "osm"
-    },
-    {
-      "id": "osm-486042864",
-      "nom": "Masjid Bab Guissa مسجد باب عجيسة",
-      "type": "mosquee",
-      "adresse": "Fès",
-      "lat": 34.0685485,
-      "lng": -4.9758313,
-      "mapsUrl": "https://maps.google.com/?q=34.0685485,-4.9758313",
-      "source": "osm"
-    },
-    {
-      "id": "osm-525968422",
-      "nom": "Mosquée El Fath مسجد الفتح",
-      "type": "mosquee",
-      "adresse": "فاس",
-      "lat": 34.0231503,
-      "lng": -5.0312086,
-      "mapsUrl": "https://maps.google.com/?q=34.0231503,-5.0312086",
-      "source": "osm"
-    },
-    {
-      "id": "osm-564005273",
-      "nom": "مسجد خالد بن الوليد",
-      "type": "mosquee",
-      "adresse": "فاس",
-      "lat": 34.0170781,
-      "lng": -5.0341695,
-      "mapsUrl": "https://maps.google.com/?q=34.0170781,-5.0341695",
-      "source": "osm"
-    },
-    {
-      "id": "osm-604314161",
-      "nom": "Ansar mosque",
-      "type": "mosquee",
-      "adresse": "Boulevard des Merinides",
-      "lat": 34.0708401,
-      "lng": -4.9666379,
-      "mapsUrl": "https://maps.google.com/?q=34.0708401,-4.9666379",
-      "source": "osm"
-    },
-    {
-      "id": "osm-605624209",
-      "nom": "Rahma الرحمة",
-      "type": "mosquee",
-      "lat": 34.0165283,
-      "lng": -4.9711619,
-      "mapsUrl": "https://maps.google.com/?q=34.0165283,-4.9711619",
-      "source": "osm"
-    },
-    {
-      "id": "osm-605639445",
-      "nom": "Mosquée Sa'd ibn Abi Waqqas مسجد سعد بن أبي وقاص",
-      "type": "mosquee",
-      "adresse": "hay lalla soukaiyna",
-      "lat": 34.0192375,
-      "lng": -5.0259073,
-      "mapsUrl": "https://maps.google.com/?q=34.0192375,-5.0259073",
-      "source": "osm"
-    },
-    {
-      "id": "osm-606790037",
-      "nom": "Mosquée Omar ibn el Khattab",
-      "type": "mosquee",
-      "adresse": "Avenue Ettabari, Fès",
-      "lat": 34.0260182,
-      "lng": -5.0066266,
-      "mapsUrl": "https://maps.google.com/?q=34.0260182,-5.0066266",
-      "source": "osm"
-    },
-    {
-      "id": "osm-761858803",
-      "nom": "Mosquée El Abawayne",
-      "type": "mosquee",
-      "lat": 34.0105534,
-      "lng": -4.9753688,
-      "mapsUrl": "https://maps.google.com/?q=34.0105534,-4.9753688",
-      "source": "osm"
-    },
-    {
-      "id": "osm-919350570",
-      "nom": "مسجد الضويات",
-      "type": "mosquee",
-      "lat": 34.0334669,
-      "lng": -5.1025579,
-      "mapsUrl": "https://maps.google.com/?q=34.0334669,-5.1025579",
-      "source": "osm"
-    },
-    {
-      "id": "osm-919389478",
-      "nom": "مسجد الإنبعاث",
-      "type": "mosquee",
-      "lat": 33.9734919,
-      "lng": -5.0989745,
-      "mapsUrl": "https://maps.google.com/?q=33.9734919,-5.0989745",
-      "source": "osm"
-    },
-    {
-      "id": "osm-1256708014",
-      "nom": "marco",
-      "type": "mosquee",
-      "lat": 34.0410032,
-      "lng": -5.0085277,
-      "mapsUrl": "https://maps.google.com/?q=34.0410032,-5.0085277",
-      "source": "osm"
-    }
-  ],
-  "halalScore": 8.7,
-  "description_en": "Fez, in Morocco, is a halal-friendly destination with a Halal Trust Score of 4.5/5. Muslim travelers will find 71 halal restaurants listed, 785 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind. Best time to visit: March–May, September–November.",
-  "metaDescription_en": "Halal guide to Fez: 71 halal restaurants listed, 785 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.5/5.",
-  "nom_en": "Fez",
-  "boucheries": [],
-  "infos_pratiques_en": {
-    "monnaie": "Moroccan dirham (MAD)",
-    "fuseau_horaire": "GMT+1",
-    "meilleure_periode": "March–May, September–November"
+  {
+   "nom": "Sweet Time",
+   "lat": 34.0016913,
+   "lng": -5.0127272,
+   "type": "waffle, cocktails, juice, crepe, pancake",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=34.0016913,-5.0127272",
+   "source": "osm"
   },
-  "dataPurgedAt": "2026-07-15",
-  "osmEnrichedAt": "2026-07-15"
+  {
+   "nom": "Kim Taki كيم طاكي",
+   "lat": 34.0184159,
+   "lng": -4.9856684,
+   "type": "chicken, burger, steak house, italian, sandwich, italian pizza, pizza, deli, hot dog, kebab, barbecue, moroccan",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=34.0184159,-4.9856684",
+   "source": "osm"
+  },
+  {
+   "nom": "L'unica لونيكا",
+   "lat": 33.9996794,
+   "lng": -5.0129618,
+   "type": "sandwich, ice cream, crepe, cake, coffee shop, pasta, pancake, pizza, chicken, arab, italian pizza, hotdog, breakfast, savory pancakes",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=33.9996794,-5.0129618",
+   "source": "osm"
+  },
+  {
+   "nom": "Pizzeria doigts d or بيزيريا الأصابع الدهبية",
+   "lat": 34.0062199,
+   "lng": -4.9877735,
+   "type": "italian pizza, kebab, pizza",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=34.0062199,-4.9877735",
+   "source": "osm"
+  },
+  {
+   "nom": "Café la Première Tasse",
+   "lat": 34.0187237,
+   "lng": -5.0494001,
+   "type": "arab",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=34.0187237,-5.0494001",
+   "source": "osm"
+  },
+  {
+   "nom": "Cafe RIM",
+   "lat": 34.0596862,
+   "lng": -4.9885653,
+   "type": "regional, pizza, burger, fish, tea",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=34.0596862,-4.9885653",
+   "source": "osm"
+  },
+  {
+   "nom": "Palais Laraichi",
+   "lat": 34.0593446,
+   "lng": -4.9802428,
+   "type": "moroccan",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=34.0593446,-4.9802428",
+   "source": "osm"
+  },
+  {
+   "nom": "Cinema cafe",
+   "lat": 34.060114,
+   "lng": -4.9813138,
+   "type": "italian pizza, seafood, burger, lebanese, pancake, american, moroccan, breakfast, coffee shop, arab",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=34.060114,-4.9813138",
+   "source": "osm"
+  },
+  {
+   "nom": "Restaurant Terrace",
+   "lat": 34.0613693,
+   "lng": -4.9840345,
+   "type": "moroccan",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=34.0613693,-4.9840345",
+   "source": "osm"
+  },
+  {
+   "nom": "Thami's restaurant",
+   "lat": 34.0618008,
+   "lng": -4.9832742,
+   "type": "moroccan",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=34.0618008,-4.9832742",
+   "source": "osm"
+  },
+  {
+   "nom": "Le Peroke Cafe Restaurant",
+   "lat": 34.0617289,
+   "lng": -4.981042,
+   "type": "moroccan, italian pizza, italian",
+   "halalConfidence": "high",
+   "mapsUrl": "https://maps.google.com/?q=34.0617289,-4.981042",
+   "source": "osm"
+  },
+  {
+   "nom": "Ben Lemlih",
+   "lat": 34.0624935,
+   "lng": -4.982647,
+   "type": "moroccan, sandwich",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=34.0624935,-4.982647",
+   "source": "osm"
+  },
+  {
+   "nom": "Made in M",
+   "lat": 34.0632822,
+   "lng": -4.9817285,
+   "type": "local, moroccan",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=34.0632822,-4.9817285",
+   "source": "osm"
+  },
+  {
+   "nom": "Palais Medina",
+   "lat": 34.0590107,
+   "lng": -4.9724176,
+   "type": "moroccan",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=34.0590107,-4.9724176",
+   "source": "osm"
+  },
+  {
+   "nom": "Le tarbouche",
+   "lat": 34.0639245,
+   "lng": -4.9809009,
+   "type": "burger, oriental, sandwich, international, sausage, moroccan, mediterranean, coffee shop, pizza, arab, mexican",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=34.0639245,-4.9809009",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Mandar",
+   "lat": 34.0599458,
+   "lng": -4.9723676,
+   "type": "moroccan",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=34.0599458,-4.9723676",
+   "source": "osm"
+  },
+  {
+   "nom": "Fondouk Bazaar",
+   "lat": 34.0643529,
+   "lng": -4.9795588,
+   "type": "moroccan, mediterranean",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=34.0643529,-4.9795588",
+   "source": "osm"
+  },
+  {
+   "nom": "Mécafé",
+   "lat": 34.0622009,
+   "lng": -4.9726314,
+   "type": "burger, sandwich, moroccan, coffee shop, local",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=34.0622009,-4.9726314",
+   "source": "osm"
+  },
+  {
+   "nom": "Restaurant dar khabya",
+   "lat": 34.0643994,
+   "lng": -4.9766949,
+   "type": "moroccan",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=34.0643994,-4.9766949",
+   "source": "osm"
+  },
+  {
+   "nom": "Restaurant Nejjarine",
+   "lat": 34.0649167,
+   "lng": -4.9760475,
+   "type": "moroccan",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=34.0649167,-4.9760475",
+   "source": "osm"
+  },
+  {
+   "nom": "Fezvacationtours",
+   "lat": 34.0704816,
+   "lng": -4.9832938,
+   "type": "chicken, diner, african, moroccan, coffee shop, local, arab",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=34.0704816,-4.9832938",
+   "source": "osm"
+  },
+  {
+   "nom": "Maracana Café Restaurant",
+   "lat": 33.9729098,
+   "lng": -4.9490771,
+   "type": "breakfast, burger, cake, chicken, coffee shop, crepe, moroccan",
+   "halalConfidence": "likely",
+   "mapsUrl": "https://maps.google.com/?q=33.9729098,-4.9490771",
+   "source": "osm"
+  }
+ ],
+ "mosquees": [],
+ "hotels": [
+  {
+   "nom": "Residence Al majd",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0180165,-5.00643",
+   "lat": 34.0180165,
+   "lng": -5.00643,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0180165,-5.00643",
+   "source": "osm"
+  },
+  {
+   "nom": "Log atmani",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.012926,-5.008737",
+   "lat": 34.012926,
+   "lng": -5.008737,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.012926,-5.008737",
+   "source": "osm"
+  },
+  {
+   "nom": "Les olivier",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.013548,-5.0037398",
+   "lat": 34.013548,
+   "lng": -5.0037398,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.013548,-5.0037398",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Sebti",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0206994,-4.9995792",
+   "lat": 34.0206994,
+   "lng": -4.9995792,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0206994,-4.9995792",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar Yasmine",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0269567,-5.0067104",
+   "lat": 34.0269567,
+   "lng": -5.0067104,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0269567,-5.0067104",
+   "source": "osm"
+  },
+  {
+   "nom": "séjour confort et design à Fès",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.009999,-5.015772",
+   "lat": 34.009999,
+   "lng": -5.015772,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.009999,-5.015772",
+   "source": "osm"
+  },
+  {
+   "nom": "Residence idrissi",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0316999,-5.0051073",
+   "lat": 34.0316999,
+   "lng": -5.0051073,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0316999,-5.0051073",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Nous Plazza",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0323136,-5.0061868",
+   "lat": 34.0323136,
+   "lng": -5.0061868,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0323136,-5.0061868",
+   "source": "osm"
+  },
+  {
+   "nom": "Fes Bed and Breakfast",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0285636,-4.995908",
+   "lat": 34.0285636,
+   "lng": -4.995908,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0285636,-4.995908",
+   "source": "osm"
+  },
+  {
+   "nom": "Fes Marriott Hotel Jnan Palace فندق ماريوت",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.03186,-5.002709",
+   "lat": 34.03186,
+   "lng": -5.002709,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.03186,-5.002709",
+   "source": "osm"
+  },
+  {
+   "nom": "Centre de Vacances COS’ONE Fès",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.032539,-5.015729",
+   "lat": 34.032539,
+   "lng": -5.015729,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.032539,-5.015729",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Errabie",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0281491,-4.9915876",
+   "lat": 34.0281491,
+   "lng": -4.9915876,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0281491,-4.9915876",
+   "source": "osm"
+  },
+  {
+   "nom": "Residence Laghzaouia",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0291479,-4.9916899",
+   "lat": 34.0291479,
+   "lng": -4.9916899,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0291479,-4.9916899",
+   "source": "osm"
+  },
+  {
+   "nom": "DAR ZIiryab",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0354824,-5.0073425",
+   "lat": 34.0354824,
+   "lng": -5.0073425,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0354824,-5.0073425",
+   "source": "osm"
+  },
+  {
+   "nom": "Hôtel Volubilis",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 4,
+   "mapsUrl": "https://maps.google.com/?q=34.0352784,-5.0034243",
+   "lat": 34.0352784,
+   "lng": -5.0034243,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0352784,-5.0034243",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Rex",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.032464,-4.9952554",
+   "lat": 34.032464,
+   "lng": -4.9952554,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.032464,-4.9952554",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Mimosa",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0329249,-5.0197437",
+   "lat": 34.0329249,
+   "lng": -5.0197437,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0329249,-5.0197437",
+   "source": "osm"
+  },
+  {
+   "nom": "Nouzha",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0328624,-4.9934725",
+   "lat": 34.0328624,
+   "lng": -4.9934725,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0328624,-4.9934725",
+   "source": "osm"
+  },
+  {
+   "nom": "Hôtel Royal Mirage",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.03686,-5.0042418",
+   "lat": 34.03686,
+   "lng": -5.0042418,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.03686,-5.0042418",
+   "source": "osm"
+  },
+  {
+   "nom": "Hôtel l'Escale",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0381439,-5.0050647",
+   "lat": 34.0381439,
+   "lng": -5.0050647,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.hotelescale.ma/",
+   "source": "osm"
+  },
+  {
+   "nom": "عادل",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0376243,-5.0140795",
+   "lat": 34.0376243,
+   "lng": -5.0140795,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0376243,-5.0140795",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel zahrat al jabal",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0382624,-5.0053168",
+   "lat": 34.0382624,
+   "lng": -5.0053168,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0382624,-5.0053168",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Zahrat Aljabal",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0383304,-5.005345",
+   "lat": 34.0383304,
+   "lng": -5.005345,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0383304,-5.005345",
+   "source": "osm"
+  },
+  {
+   "nom": "Maghreb Hôtel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0373407,-4.9990984",
+   "lat": 34.0373407,
+   "lng": -4.9990984,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0373407,-4.9990984",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Noumidya",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.002317,-4.991782",
+   "lat": 34.002317,
+   "lng": -4.991782,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.002317,-4.991782",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel central",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0370835,-4.9979499",
+   "lat": 34.0370835,
+   "lng": -4.9979499,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0370835,-4.9979499",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Splendid",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0378501,-5.0004358",
+   "lat": 34.0378501,
+   "lng": -5.0004358,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0378501,-5.0004358",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Renaissance",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0381979,-4.9994375",
+   "lat": 34.0381979,
+   "lng": -4.9994375,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0381979,-4.9994375",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Wassim",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0389629,-5.0026432",
+   "lat": 34.0389629,
+   "lng": -5.0026432,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0389629,-5.0026432",
+   "source": "osm"
+  },
+  {
+   "nom": "Golden Tulip",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 4,
+   "mapsUrl": "https://maps.google.com/?q=34.0396383,-5.007896",
+   "lat": 34.0396383,
+   "lng": -5.007896,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0396383,-5.007896",
+   "source": "osm"
+  },
+  {
+   "nom": "Café et Hôtel Narjis",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0132532,-4.9822382",
+   "lat": 34.0132532,
+   "lng": -4.9822382,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0132532,-4.9822382",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar Alian",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0370791,-4.9942756",
+   "lat": 34.0370791,
+   "lng": -4.9942756,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0370791,-4.9942756",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel al Fath",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0388811,-4.9986323",
+   "lat": 34.0388811,
+   "lng": -4.9986323,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0388811,-4.9986323",
+   "source": "osm"
+  },
+  {
+   "nom": "Grand Hôtel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0388052,-4.9975324",
+   "lat": 34.0388052,
+   "lng": -4.9975324,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0388052,-4.9975324",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel sofia",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 4,
+   "mapsUrl": "https://maps.google.com/?q=34.0404036,-5.0019849",
+   "lat": 34.0404036,
+   "lng": -5.0019849,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0404036,-5.0019849",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Olympic",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0397431,-4.9985678",
+   "lat": 34.0397431,
+   "lng": -4.9985678,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0397431,-4.9985678",
+   "source": "osm"
+  },
+  {
+   "nom": "Kevin appart",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0223917,-5.0355754",
+   "lat": 34.0223917,
+   "lng": -5.0355754,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0223917,-5.0355754",
+   "source": "osm"
+  },
+  {
+   "nom": "Kevin 61",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0225567,-5.0358866",
+   "lat": 34.0225567,
+   "lng": -5.0358866,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0225567,-5.0358866",
+   "source": "osm"
+  },
+  {
+   "nom": "Hôtel Amour",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0413468,-5.0012068",
+   "lat": 34.0413468,
+   "lng": -5.0012068,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0413468,-5.0012068",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Savoy",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0404394,-4.9969605",
+   "lat": 34.0404394,
+   "lng": -4.9969605,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0404394,-4.9969605",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Royal",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0430735,-5.0011278",
+   "lat": 34.0430735,
+   "lng": -5.0011278,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0430735,-5.0011278",
+   "source": "osm"
+  },
+  {
+   "nom": "رياض باسيفلورا",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.99573,-4.992709",
+   "lat": 33.99573,
+   "lng": -4.992709,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.99573,-4.992709",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel de la Paix",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0427436,-4.9989594",
+   "lat": 34.0427436,
+   "lng": -4.9989594,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0427436,-4.9989594",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Perla فندق بيرلا",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0437889,-5.0052347",
+   "lat": 34.0437889,
+   "lng": -5.0052347,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0437889,-5.0052347",
+   "source": "osm"
+  },
+  {
+   "nom": "Menzeh Zalagh",
+   "categorie": "Hôtel",
+   "priceRange": "€€€",
+   "score": 3,
+   "mapsUrl": "https://maps.google.com/?q=34.0417077,-4.9946752",
+   "lat": 34.0417077,
+   "lng": -4.9946752,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0417077,-4.9946752",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Sahrai",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0436358,-4.9922166",
+   "lat": 34.0436358,
+   "lng": -4.9922166,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0436358,-4.9922166",
+   "source": "osm"
+  },
+  {
+   "nom": "Ibis Fès إيبس فاس",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.046783,-5.0041596",
+   "lat": 34.046783,
+   "lng": -5.0041596,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.046783,-5.0041596",
+   "source": "osm"
+  },
+  {
+   "nom": "Palais Medina Spa",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.04765,-4.9929539",
+   "lat": 34.04765,
+   "lng": -4.9929539,
+   "halalFriendly": false,
+   "bookingUrl": "https://palais-medina-fes-spa.hotel-rn.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Diamant Vert Bungalows",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.9879724,-5.0209406",
+   "lat": 33.9879724,
+   "lng": -5.0209406,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.9879724,-5.0209406",
+   "source": "osm"
+  },
+  {
+   "nom": "Hôtel Diamant Vert",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.987547,-5.020287",
+   "lat": 33.987547,
+   "lng": -5.020287,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.987547,-5.020287",
+   "source": "osm"
+  },
+  {
+   "nom": "Hôtel Glacier",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0519225,-4.9928861",
+   "lat": 34.0519225,
+   "lng": -4.9928861,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0519225,-4.9928861",
+   "source": "osm"
+  },
+  {
+   "nom": "فندق أرينا",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0471369,-5.0380454",
+   "lat": 34.0471369,
+   "lng": -5.0380454,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0471369,-5.0380454",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Agadir",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0539706,-4.9894317",
+   "lat": 34.0539706,
+   "lng": -4.9894317,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0539706,-4.9894317",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Zalagh Parc Palace",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.052244,-5.0323491",
+   "lat": 34.052244,
+   "lng": -5.0323491,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.052244,-5.0323491",
+   "source": "osm"
+  },
+  {
+   "nom": "Ibis Budget Fes",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0511773,-5.0360553",
+   "lat": 34.0511773,
+   "lng": -5.0360553,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0511773,-5.0360553",
+   "source": "osm"
+  },
+  {
+   "nom": "Hôtel Ibis budget",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0511836,-5.0360619",
+   "lat": 34.0511836,
+   "lng": -5.0360619,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0511836,-5.0360619",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Serendipity",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0547877,-4.9868403",
+   "lat": 34.0547877,
+   "lng": -4.9868403,
+   "halalFriendly": false,
+   "bookingUrl": "https://sudfa.ma/riad/serendipity/",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Dalal",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0581434,-4.9917051",
+   "lat": 34.0581434,
+   "lng": -4.9917051,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.booking.com/hotel/ma/riad-dalal.html",
+   "source": "osm"
+  },
+  {
+   "nom": "Fes",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0574738,-5.0316688",
+   "lat": 34.0574738,
+   "lng": -5.0316688,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0574738,-5.0316688",
+   "source": "osm"
+  },
+  {
+   "nom": "Home louah",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.973829,-5.003412",
+   "lat": 33.973829,
+   "lng": -5.003412,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.973829,-5.003412",
+   "source": "osm"
+  },
+  {
+   "nom": "Campini",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0580549,-4.9836516",
+   "lat": 34.0580549,
+   "lng": -4.9836516,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0580549,-4.9836516",
+   "source": "osm"
+  },
+  {
+   "nom": "Jnan sbil",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0599386,-4.9880517",
+   "lat": 34.0599386,
+   "lng": -4.9880517,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0599386,-4.9880517",
+   "source": "osm"
+  },
+  {
+   "nom": "Maison PAPA دار بابا",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0609375,-5.0256641",
+   "lat": 34.0609375,
+   "lng": -5.0256641,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0609375,-5.0256641",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Palais Batha",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.059475,-4.9817706",
+   "lat": 34.059475,
+   "lng": -4.9817706,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.059475,-4.9817706",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Norma",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0578843,-4.9782473",
+   "lat": 34.0578843,
+   "lng": -4.9782473,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0578843,-4.9782473",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Authentic Palace & Spa",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.058431,-4.9791733",
+   "lat": 34.058431,
+   "lng": -4.9791733,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.058431,-4.9791733",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Damia",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0577688,-4.9778236",
+   "lat": 34.0577688,
+   "lng": -4.9778236,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0577688,-4.9778236",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Fes Ziyat",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0579993,-4.9782444",
+   "lat": 34.0579993,
+   "lng": -4.9782444,
+   "halalFriendly": false,
+   "bookingUrl": "https://riadfesziyat.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Al Bartal",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0575859,-4.9774089",
+   "lat": 34.0575859,
+   "lng": -4.9774089,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.riadalbartal.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Palais des Hôtes",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0578799,-4.9778182",
+   "lat": 34.0578799,
+   "lng": -4.9778182,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0578799,-4.9778182",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel JARDIN",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0608683,-4.9845586",
+   "lat": 34.0608683,
+   "lng": -4.9845586,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0608683,-4.9845586",
+   "source": "osm"
+  },
+  {
+   "nom": "riad les chirifi",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0608376,-4.9844594",
+   "lat": 34.0608376,
+   "lng": -4.9844594,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0608376,-4.9844594",
+   "source": "osm"
+  },
+  {
+   "nom": "فضاء الامل للاطفال المعاقين دهنيا",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0598116,-5.0340712",
+   "lat": 34.0598116,
+   "lng": -5.0340712,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0598116,-5.0340712",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Jardin Chrifa",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0585835,-4.9787525",
+   "lat": 34.0585835,
+   "lng": -4.9787525,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0585835,-4.9787525",
+   "source": "osm"
+  },
+  {
+   "nom": "BackHome Fez",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0588612,-4.9791905",
+   "lat": 34.0588612,
+   "lng": -4.9791905,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0588612,-4.9791905",
+   "source": "osm"
+  },
+  {
+   "nom": "Road La Perle De La Medina",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0584558,-4.9782809",
+   "lat": 34.0584558,
+   "lng": -4.9782809,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0584558,-4.9782809",
+   "source": "osm"
+  },
+  {
+   "nom": "Fes Heritage",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.059833,-4.981209",
+   "lat": 34.059833,
+   "lng": -4.981209,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.059833,-4.981209",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar Lala Wafae",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0609478,-4.9838173",
+   "lat": 34.0609478,
+   "lng": -4.9838173,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0609478,-4.9838173",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Salam Fès",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0586237,-4.978311",
+   "lat": 34.0586237,
+   "lng": -4.978311,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0586237,-4.978311",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Lune et Soleil",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0593457,-4.9797281",
+   "lat": 34.0593457,
+   "lng": -4.9797281,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.luneetsoleil.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Tizwa Fes",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0596004,-4.9802281",
+   "lat": 34.0596004,
+   "lng": -4.9802281,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0596004,-4.9802281",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Dar Chrifa",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.057838,-4.9765925",
+   "lat": 34.057838,
+   "lng": -4.9765925,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.057838,-4.9765925",
+   "source": "osm"
+  },
+  {
+   "nom": "Palais Sheherazade & spa",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0589883,-4.9787833",
+   "lat": 34.0589883,
+   "lng": -4.9787833,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0589883,-4.9787833",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Anata",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0587456,-4.9782683",
+   "lat": 34.0587456,
+   "lng": -4.9782683,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0587456,-4.9782683",
+   "source": "osm"
+  },
+  {
+   "nom": "cine House",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0601418,-4.9812351",
+   "lat": 34.0601418,
+   "lng": -4.9812351,
+   "halalFriendly": false,
+   "bookingUrl": "https://cine-house.business.site/",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Bab Boujloud",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0612879,-4.9837741",
+   "lat": 34.0612879,
+   "lng": -4.9837741,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0612879,-4.9837741",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Verus",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0593537,-4.9790184",
+   "lat": 34.0593537,
+   "lng": -4.9790184,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0593537,-4.9790184",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Zamane Fès",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0597066,-4.9795993",
+   "lat": 34.0597066,
+   "lng": -4.9795993,
+   "halalFriendly": false,
+   "bookingUrl": "http://riadzamane.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Casa La Espanola Hotel",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0589882,-4.9780711",
+   "lat": 34.0589882,
+   "lng": -4.9780711,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0589882,-4.9780711",
+   "source": "osm"
+  },
+  {
+   "nom": "Le Grand Alcazar - Riad",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0599344,-4.9800488",
+   "lat": 34.0599344,
+   "lng": -4.9800488,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0599344,-4.9800488",
+   "source": "osm"
+  },
+  {
+   "nom": "Messi Elli Asja",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0580797,-4.9763147",
+   "lat": 34.0580797,
+   "lng": -4.9763147,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0580797,-4.9763147",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Mesbah",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0613277,-4.9829871",
+   "lat": 34.0613277,
+   "lng": -4.9829871,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0613277,-4.9829871",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Sara",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0600122,-4.9798027",
+   "lat": 34.0600122,
+   "lng": -4.9798027,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.riadsarafes.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Jaouhara",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0614103,-4.983069",
+   "lat": 34.0614103,
+   "lng": -4.983069,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0614103,-4.983069",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar Abdesalam",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0597129,-4.9791003",
+   "lat": 34.0597129,
+   "lng": -4.9791003,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0597129,-4.9791003",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Methaf",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0612472,-4.9825866",
+   "lat": 34.0612472,
+   "lng": -4.9825866,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0612472,-4.9825866",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Layla",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0594023,-4.9784257",
+   "lat": 34.0594023,
+   "lng": -4.9784257,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0594023,-4.9784257",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar Fès Medina",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.058278,-4.9762186",
+   "lat": 34.058278,
+   "lng": -4.9762186,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.058278,-4.9762186",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar Lalamoune",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.060111,-4.9798493",
+   "lat": 34.060111,
+   "lng": -4.9798493,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.060111,-4.9798493",
+   "source": "osm"
+  },
+  {
+   "nom": "downtown backpacker fez",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0620839,-4.9846024",
+   "lat": 34.0620839,
+   "lng": -4.9846024,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0620839,-4.9846024",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar aya fes",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0566179,-4.9732145",
+   "lat": 34.0566179,
+   "lng": -4.9732145,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0566179,-4.9732145",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad La Clé de Fes",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0601689,-4.9798325",
+   "lat": 34.0601689,
+   "lng": -4.9798325,
+   "halalFriendly": false,
+   "bookingUrl": "www.riadlacledefes.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Cascade",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0617972,-4.9837364",
+   "lat": 34.0617972,
+   "lng": -4.9837364,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0617972,-4.9837364",
+   "source": "osm"
+  },
+  {
+   "nom": "Hostel Amir",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0612146,-4.9822201",
+   "lat": 34.0612146,
+   "lng": -4.9822201,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0612146,-4.9822201",
+   "source": "osm"
+  },
+  {
+   "nom": "Riad Dar Skalli",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0601385,-4.9797185",
+   "lat": 34.0601385,
+   "lng": -4.9797185,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0601385,-4.9797185",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar Batha",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0607371,-4.9809121",
+   "lat": 34.0607371,
+   "lng": -4.9809121,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0607371,-4.9809121",
+   "source": "osm"
+  },
+  {
+   "nom": "Palais Houyam",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0583013,-4.9758884",
+   "lat": 34.0583013,
+   "lng": -4.9758884,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.0583013,-4.9758884",
+   "source": "osm"
+  },
+  {
+   "nom": "ودادية الألفة للسكن",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.9950199,-4.9568333",
+   "lat": 33.9950199,
+   "lng": -4.9568333,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.9950199,-4.9568333",
+   "source": "osm"
+  },
+  {
+   "nom": "El Kasbah",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.062543,-4.9854569",
+   "lat": 34.062543,
+   "lng": -4.9854569,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.062543,-4.9854569",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar Kenza",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.060216,-4.9796142",
+   "lat": 34.060216,
+   "lng": -4.9796142,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.060216,-4.9796142",
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Art shows alami",
+   "lat": 34.0176635,
+   "lng": -5.0057115,
+   "coordonnees": {
+    "lat": 34.0176635,
+    "lng": -5.0057115
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=34.0176635,-5.0057115",
+   "source": "osm"
+  },
+  {
+   "nom": "New Boussole Travel",
+   "lat": 34.0137376,
+   "lng": -5.0064688,
+   "coordonnees": {
+    "lat": 34.0137376,
+    "lng": -5.0064688
+   },
+   "categorie": "Shopping",
+   "mapsUrl": "https://maps.google.com/?q=34.0137376,-5.0064688",
+   "source": "osm"
+  },
+  {
+   "nom": "Salle des fêtes Jamai",
+   "lat": 34.0163503,
+   "lng": -4.9937127,
+   "coordonnees": {
+    "lat": 34.0163503,
+    "lng": -4.9937127
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=34.0163503,-4.9937127",
+   "source": "osm"
+  },
+  {
+   "nom": "Grillade Brahim",
+   "lat": 34.0168126,
+   "lng": -4.9924067,
+   "coordonnees": {
+    "lat": 34.0168126,
+    "lng": -4.9924067
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=34.0168126,-4.9924067",
+   "source": "osm"
+  },
+  {
+   "nom": "rond point alkitabe",
+   "lat": 34.0271663,
+   "lng": -5.0277513,
+   "coordonnees": {
+    "lat": 34.0271663,
+    "lng": -5.0277513
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=34.0271663,-5.0277513",
+   "source": "osm"
+  },
+  {
+   "nom": "Sandwich Benmaseoud",
+   "lat": 34.0246523,
+   "lng": -4.9853306,
+   "coordonnees": {
+    "lat": 34.0246523,
+    "lng": -4.9853306
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=34.0246523,-4.9853306",
+   "source": "osm"
+  },
+  {
+   "nom": "غليظ أبو لحية",
+   "lat": 34.0220632,
+   "lng": -5.0319597,
+   "coordonnees": {
+    "lat": 34.0220632,
+    "lng": -5.0319597
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=34.0220632,-5.0319597",
+   "source": "osm"
+  },
+  {
+   "nom": "Orientaliste Art Gallery",
+   "lat": 34.0358146,
+   "lng": -4.9954246,
+   "coordonnees": {
+    "lat": 34.0358146,
+    "lng": -4.9954246
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=34.0358146,-4.9954246",
+   "source": "osm"
+  },
+  {
+   "nom": "Musée Meryem",
+   "lat": 34.0386772,
+   "lng": -5.0098041,
+   "coordonnees": {
+    "lat": 34.0386772,
+    "lng": -5.0098041
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=34.0386772,-5.0098041",
+   "source": "osm"
+  },
+  {
+   "nom": "Cendrillon",
+   "lat": 34.0397143,
+   "lng": -4.9985127,
+   "coordonnees": {
+    "lat": 34.0397143,
+    "lng": -4.9985127
+   },
+   "categorie": "Shopping",
+   "mapsUrl": "https://maps.google.com/?q=34.0397143,-4.9985127",
+   "source": "osm"
+  },
+  {
+   "nom": "Dreams Engineering",
+   "lat": 34.040481,
+   "lng": -4.9978602,
+   "coordonnees": {
+    "lat": 34.040481,
+    "lng": -4.9978602
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=34.040481,-4.9978602",
+   "source": "osm"
+  },
+  {
+   "nom": "مفروشات المنازل",
+   "lat": 34.0080845,
+   "lng": -5.0341123,
+   "coordonnees": {
+    "lat": 34.0080845,
+    "lng": -5.0341123
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=34.0080845,-5.0341123",
+   "source": "osm"
+  },
+  {
+   "nom": "Cofirad",
+   "lat": 34.0423418,
+   "lng": -4.9967616,
+   "coordonnees": {
+    "lat": 34.0423418,
+    "lng": -4.9967616
+   },
+   "categorie": "Shopping",
+   "mapsUrl": "https://maps.google.com/?q=34.0423418,-4.9967616",
+   "source": "osm"
+  },
+  {
+   "nom": "Royal air maroc",
+   "lat": 34.0437941,
+   "lng": -4.9981249,
+   "coordonnees": {
+    "lat": 34.0437941,
+    "lng": -4.9981249
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=34.0437941,-4.9981249",
+   "source": "osm"
+  },
+  {
+   "nom": "Cass-croute",
+   "lat": 34.0450971,
+   "lng": -4.997662,
+   "coordonnees": {
+    "lat": 34.0450971,
+    "lng": -4.997662
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=34.0450971,-4.997662",
+   "source": "osm"
+  },
+  {
+   "nom": "Rond Point Le ballon de foot",
+   "lat": 34.0027328,
+   "lng": -4.9739137,
+   "coordonnees": {
+    "lat": 34.0027328,
+    "lng": -4.9739137
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=34.0027328,-4.9739137",
+   "source": "osm"
+  },
+  {
+   "nom": "رشيد",
+   "lat": 34.0212192,
+   "lng": -5.0485008,
+   "coordonnees": {
+    "lat": 34.0212192,
+    "lng": -5.0485008
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=34.0212192,-5.0485008",
+   "source": "osm"
+  },
+  {
+   "nom": "منزل يهودي",
+   "lat": 34.0519819,
+   "lng": -4.9926085,
+   "coordonnees": {
+    "lat": 34.0519819,
+    "lng": -4.9926085
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=34.0519819,-4.9926085",
+   "source": "osm"
+  },
+  {
+   "nom": "Quartier Mellah",
+   "lat": 34.0529494,
+   "lng": -4.9919814,
+   "coordonnees": {
+    "lat": 34.0529494,
+    "lng": -4.9919814
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=34.0529494,-4.9919814",
+   "source": "osm"
+  },
+  {
+   "nom": "Bab El Magana",
+   "lat": 34.0536973,
+   "lng": -4.9905816,
+   "coordonnees": {
+    "lat": 34.0536973,
+    "lng": -4.9905816
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=34.0536973,-4.9905816",
+   "source": "osm"
+  },
+  {
+   "nom": "Zaouia of Moulay Idriss II",
+   "lat": 34.0545477,
+   "lng": -4.9876653,
+   "coordonnees": {
+    "lat": 34.0545477,
+    "lng": -4.9876653
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=34.0545477,-4.9876653",
+   "source": "osm"
+  },
+  {
+   "nom": "Bab Mechouar",
+   "lat": 34.0582158,
+   "lng": -4.9910279,
+   "coordonnees": {
+    "lat": 34.0582158,
+    "lng": -4.9910279
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=34.0582158,-4.9910279",
+   "source": "osm"
+  },
+  {
+   "nom": "يونس صحراوي",
+   "lat": 33.9958651,
+   "lng": -5.0524053,
+   "coordonnees": {
+    "lat": 33.9958651,
+    "lng": -5.0524053
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=33.9958651,-5.0524053",
+   "source": "osm"
+  },
+  {
+   "nom": "محل",
+   "lat": 34.0570411,
+   "lng": -5.0306622,
+   "coordonnees": {
+    "lat": 34.0570411,
+    "lng": -5.0306622
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=34.0570411,-5.0306622",
+   "source": "osm"
+  },
+  {
+   "nom": "Bab Makina باب المكينة",
+   "lat": 34.0595289,
+   "lng": -4.9917826,
+   "coordonnees": {
+    "lat": 34.0595289,
+    "lng": -4.9917826
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=34.0595289,-4.9917826",
+   "source": "osm"
+  },
+  {
+   "nom": "Bab Chems",
+   "lat": 34.0599522,
+   "lng": -4.9875552,
+   "coordonnees": {
+    "lat": 34.0599522,
+    "lng": -4.9875552
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=34.0599522,-4.9875552",
+   "source": "osm"
+  },
+  {
+   "nom": "Parc hay El laymoune",
+   "lat": 34.0530622,
+   "lng": -5.043231,
+   "coordonnees": {
+    "lat": 34.0530622,
+    "lng": -5.043231
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=34.0530622,-5.043231",
+   "source": "osm"
+  },
+  {
+   "nom": "Bab Jdid",
+   "lat": 34.0559937,
+   "lng": -4.9746413,
+   "coordonnees": {
+    "lat": 34.0559937,
+    "lng": -4.9746413
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=34.0559937,-4.9746413",
+   "source": "osm"
+  },
+  {
+   "nom": "Musée Batha",
+   "lat": 34.0604457,
+   "lng": -4.9827382,
+   "coordonnees": {
+    "lat": 34.0604457,
+    "lng": -4.9827382
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=34.0604457,-4.9827382",
+   "source": "osm"
+  },
+  {
+   "nom": "Bab Mahrouk باب المحروق",
+   "lat": 34.0624855,
+   "lng": -4.9860926,
+   "coordonnees": {
+    "lat": 34.0624855,
+    "lng": -4.9860926
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=34.0624855,-4.9860926",
+   "source": "osm"
+  },
+  {
+   "nom": "Palais el Glaoui دار لكلاوي",
+   "lat": 34.0590536,
+   "lng": -4.9770823,
+   "coordonnees": {
+    "lat": 34.0590536,
+    "lng": -4.9770823
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=34.0590536,-4.9770823",
+   "source": "osm"
+  },
+  {
+   "nom": "Palais Mokri دار المقري",
+   "lat": 34.0584984,
+   "lng": -4.9751414,
+   "coordonnees": {
+    "lat": 34.0584984,
+    "lng": -4.9751414
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=34.0584984,-4.9751414",
+   "source": "osm"
+  },
+  {
+   "nom": "l'art du bronze",
+   "lat": 34.0619957,
+   "lng": -4.981128,
+   "coordonnees": {
+    "lat": 34.0619957,
+    "lng": -4.981128
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=34.0619957,-4.981128",
+   "source": "osm"
+  },
+  {
+   "nom": "Med'in Art",
+   "lat": 34.0633911,
+   "lng": -4.9783251,
+   "coordonnees": {
+    "lat": 34.0633911,
+    "lng": -4.9783251
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=34.0633911,-4.9783251",
+   "source": "osm"
+  },
+  {
+   "nom": "Musée Dar Belghazi",
+   "lat": 34.0638892,
+   "lng": -4.9763836,
+   "coordonnees": {
+    "lat": 34.0638892,
+    "lng": -4.9763836
+   },
+   "categorie": "Culture",
+   "mapsUrl": "https://maps.google.com/?q=34.0638892,-4.9763836",
+   "source": "osm"
+  },
+  {
+   "nom": "Tanneries view",
+   "lat": 34.064133,
+   "lng": -4.9754091,
+   "coordonnees": {
+    "lat": 34.064133,
+    "lng": -4.9754091
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=34.064133,-4.9754091",
+   "source": "osm"
+  },
+  {
+   "nom": "Bab Sid L'Aouad",
+   "lat": 34.0630578,
+   "lng": -4.9723728,
+   "coordonnees": {
+    "lat": 34.0630578,
+    "lng": -4.9723728
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=34.0630578,-4.9723728",
+   "source": "osm"
+  },
+  {
+   "nom": "Chez Boutbi Nadia",
+   "lat": 34.0651458,
+   "lng": -4.9756518,
+   "coordonnees": {
+    "lat": 34.0651458,
+    "lng": -4.9756518
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=34.0651458,-4.9756518",
+   "source": "osm"
+  },
+  {
+   "nom": "Belvedère",
+   "lat": 34.0616855,
+   "lng": -4.9691812,
+   "coordonnees": {
+    "lat": 34.0616855,
+    "lng": -4.9691812
+   },
+   "categorie": "Panorama",
+   "mapsUrl": "https://maps.google.com/?q=34.0616855,-4.9691812",
+   "source": "osm"
+  },
+  {
+   "nom": "Bab Ftouh باب الفتوح",
+   "lat": 34.059868,
+   "lng": -4.9652998,
+   "coordonnees": {
+    "lat": 34.059868,
+    "lng": -4.9652998
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=34.059868,-4.9652998",
+   "source": "osm"
+  }
+ ],
+ "codeISO": "MA",
+ "image": "https://images.unsplash.com/photo-1675782357250-8329a7677819?w=1600&q=80",
+ "continent": "Afrique",
+ "metaDescription": "Restaurants halal signalés, mosquées et guide pratique pour Fès — Halal Trust Score 5/5.",
+ "image_hero": "https://images.unsplash.com/photo-1675782357250-8329a7677819?w=1600&q=80",
+ "mosqueesPrincipales": [
+  {
+   "nom": "Mosquée Anakhil مسجد النخيل",
+   "lat": 34.0147063,
+   "lng": -5.0232098,
+   "coordonnees": {
+    "lat": 34.0147063,
+    "lng": -5.0232098
+   },
+   "mapsUrl": "https://maps.google.com/?q=34.0147063,-5.0232098",
+   "source": "osm"
+  },
+  {
+   "nom": "Moquée Rida",
+   "lat": 34.0039123,
+   "lng": -4.9970381,
+   "coordonnees": {
+    "lat": 34.0039123,
+    "lng": -4.9970381
+   },
+   "mapsUrl": "https://maps.google.com/?q=34.0039123,-4.9970381",
+   "source": "osm"
+  },
+  {
+   "nom": "Mosquée Bilal Ibn Rabah مسجد بلال بن رباح",
+   "lat": 34.0092067,
+   "lng": -5.0286916,
+   "coordonnees": {
+    "lat": 34.0092067,
+    "lng": -5.0286916
+   },
+   "mapsUrl": "https://maps.google.com/?q=34.0092067,-5.0286916",
+   "source": "osm"
+  },
+  {
+   "nom": "جيل الي مسجد الشرايبي",
+   "lat": 34.0135919,
+   "lng": -4.9801932,
+   "coordonnees": {
+    "lat": 34.0135919,
+    "lng": -4.9801932
+   },
+   "mapsUrl": "https://maps.google.com/?q=34.0135919,-4.9801932",
+   "source": "osm"
+  },
+  {
+   "nom": "Mosquée Zayd ibn al-Khattab",
+   "lat": 33.9887959,
+   "lng": -5.0359088,
+   "coordonnees": {
+    "lat": 33.9887959,
+    "lng": -5.0359088
+   },
+   "adresse": "ZONE INDUSTRIELLE - AIN CHKEF, FES",
+   "mapsUrl": "https://maps.google.com/?q=33.9887959,-5.0359088",
+   "source": "osm"
+  },
+  {
+   "nom": "White Mosque",
+   "lat": 34.0559272,
+   "lng": -4.9903142,
+   "coordonnees": {
+    "lat": 34.0559272,
+    "lng": -4.9903142
+   },
+   "mapsUrl": "https://maps.google.com/?q=34.0559272,-4.9903142",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد المدينة المنورة",
+   "lat": 34.0344608,
+   "lng": -5.0557357,
+   "coordonnees": {
+    "lat": 34.0344608,
+    "lng": -5.0557357
+   },
+   "mapsUrl": "https://maps.google.com/?q=34.0344608,-5.0557357",
+   "source": "osm"
+  },
+  {
+   "nom": "mosquée al lazaz",
+   "lat": 34.0621444,
+   "lng": -4.9830503,
+   "coordonnees": {
+    "lat": 34.0621444,
+    "lng": -4.9830503
+   },
+   "adresse": "Fes Médina",
+   "mapsUrl": "https://maps.google.com/?q=34.0621444,-4.9830503",
+   "source": "osm"
+  },
+  {
+   "nom": "mosquée sidi Ala",
+   "lat": 34.0632088,
+   "lng": -4.9820205,
+   "coordonnees": {
+    "lat": 34.0632088,
+    "lng": -4.9820205
+   },
+   "adresse": "Fes Médina talaa el kbira",
+   "mapsUrl": "https://maps.google.com/?q=34.0632088,-4.9820205",
+   "source": "osm"
+  },
+  {
+   "nom": "Masjid Hay El Amal",
+   "lat": 34.0700055,
+   "lng": -5.0056062,
+   "coordonnees": {
+    "lat": 34.0700055,
+    "lng": -5.0056062
+   },
+   "adresse": "Ain Bou Ali آيت بو علي",
+   "mapsUrl": "https://maps.google.com/?q=34.0700055,-5.0056062",
+   "source": "osm"
+  },
+  {
+   "nom": "Madrasa al-Attarine مدرسة العطارين",
+   "lat": 34.0651258,
+   "lng": -4.9735649,
+   "coordonnees": {
+    "lat": 34.0651258,
+    "lng": -4.9735649
+   },
+   "adresse": "FEZ MEDINA, FES medina",
+   "mapsUrl": "https://maps.google.com/?q=34.0651258,-4.9735649",
+   "source": "osm"
+  },
+  {
+   "nom": "Salle de prière قاعة للصلاة",
+   "lat": 33.9304865,
+   "lng": -4.9837434,
+   "coordonnees": {
+    "lat": 33.9304865,
+    "lng": -4.9837434
+   },
+   "mapsUrl": "https://maps.google.com/?q=33.9304865,-4.9837434",
+   "source": "osm"
+  },
+  {
+   "nom": "مسجد السيد محمد مدني",
+   "lat": 34.0399887,
+   "lng": -5.141142,
+   "coordonnees": {
+    "lat": 34.0399887,
+    "lng": -5.141142
+   },
+   "mapsUrl": "https://maps.google.com/?q=34.0399887,-5.141142",
+   "source": "osm"
+  },
+  {
+   "id": "osm-116257044",
+   "nom": "Mosquée R'cif مسجد الرصيف",
+   "type": "mosquee",
+   "adresse": "Fès",
+   "lat": 34.0625294,
+   "lng": -4.9731786,
+   "mapsUrl": "https://maps.google.com/?q=34.0625294,-4.9731786",
+   "source": "osm"
+  },
+  {
+   "id": "osm-174473391",
+   "nom": "Mosquée Imam Malik",
+   "type": "mosquee",
+   "adresse": "Fès",
+   "lat": 34.0425795,
+   "lng": -5.0029309,
+   "mapsUrl": "https://maps.google.com/?q=34.0425795,-5.0029309",
+   "source": "osm"
+  },
+  {
+   "id": "osm-180258789",
+   "nom": "Mosquée Imam Ali مسجد الإمام علي",
+   "type": "mosquee",
+   "adresse": "Avenue Abi Bakr Essedik, fés",
+   "lat": 34.0437481,
+   "lng": -5.0062676,
+   "mapsUrl": "https://maps.google.com/?q=34.0437481,-5.0062676",
+   "source": "osm"
+  },
+  {
+   "id": "osm-180258790",
+   "nom": "Mosquée de Tunis مسجد تونس",
+   "type": "mosquee",
+   "adresse": "Fès",
+   "lat": 34.0395378,
+   "lng": -4.996249,
+   "mapsUrl": "https://maps.google.com/?q=34.0395378,-4.996249",
+   "source": "osm"
+  },
+  {
+   "id": "osm-186942892",
+   "nom": "مسجد يوسف بن تاشفين",
+   "type": "mosquee",
+   "adresse": "Fès",
+   "lat": 34.0313426,
+   "lng": -4.9970744,
+   "mapsUrl": "https://maps.google.com/?q=34.0313426,-4.9970744",
+   "source": "osm"
+  },
+  {
+   "id": "osm-192606915",
+   "nom": "Mosquée Al Qods",
+   "type": "mosquee",
+   "adresse": "Fès",
+   "lat": 34.0299962,
+   "lng": -5.007656,
+   "mapsUrl": "https://maps.google.com/?q=34.0299962,-5.007656",
+   "source": "osm"
+  },
+  {
+   "id": "osm-203670952",
+   "nom": "Jamaï Hafssa",
+   "type": "mosquee",
+   "lat": 34.0135535,
+   "lng": -4.9908811,
+   "mapsUrl": "https://maps.google.com/?q=34.0135535,-4.9908811",
+   "source": "osm"
+  },
+  {
+   "id": "osm-203670953",
+   "nom": "Mosquée Saad Ibn Abi Wakkas مسجد سعد بن أبي وقاص",
+   "type": "mosquee",
+   "lat": 34.0043775,
+   "lng": -4.9850459,
+   "mapsUrl": "https://maps.google.com/?q=34.0043775,-4.9850459",
+   "source": "osm"
+  },
+  {
+   "id": "osm-203670954",
+   "nom": "Masjid Moulay Idriss I",
+   "type": "mosquee",
+   "adresse": "Avenue Moulay Abdellah, fez",
+   "lat": 34.0144218,
+   "lng": -4.9973241,
+   "mapsUrl": "https://maps.google.com/?q=34.0144218,-4.9973241",
+   "source": "osm"
+  },
+  {
+   "id": "osm-316035535",
+   "nom": "Masjid Al Baraka",
+   "type": "mosquee",
+   "lat": 34.0199367,
+   "lng": -5.0141281,
+   "mapsUrl": "https://maps.google.com/?q=34.0199367,-5.0141281",
+   "source": "osm"
+  },
+  {
+   "id": "osm-394189031",
+   "nom": "Dar Al Qoran",
+   "type": "mosquee",
+   "adresse": "Avenue Moulay Youssef شارع مولاي يوسف, فاس",
+   "lat": 34.0465784,
+   "lng": -4.9955511,
+   "mapsUrl": "https://maps.google.com/?q=34.0465784,-4.9955511",
+   "source": "osm"
+  },
+  {
+   "id": "osm-427524976",
+   "nom": "Mosquée مسجد العنبرة",
+   "type": "mosquee",
+   "lat": 34.006745,
+   "lng": -5.0330008,
+   "mapsUrl": "https://maps.google.com/?q=34.006745,-5.0330008",
+   "source": "osm"
+  },
+  {
+   "id": "osm-455763554",
+   "nom": "Mosquée Bouramana",
+   "type": "mosquee",
+   "lat": 34.020884,
+   "lng": -4.9933534,
+   "mapsUrl": "https://maps.google.com/?q=34.020884,-4.9933534",
+   "source": "osm"
+  },
+  {
+   "id": "osm-455810336",
+   "nom": "Masjid Tariq Ibn Ziad مسجد طارق بن زياد",
+   "type": "mosquee",
+   "adresse": "فاس",
+   "lat": 34.0372607,
+   "lng": -5.0211054,
+   "mapsUrl": "https://maps.google.com/?q=34.0372607,-5.0211054",
+   "source": "osm"
+  },
+  {
+   "id": "osm-455811196",
+   "nom": "Masjid Tghat مسجد تغات",
+   "type": "mosquee",
+   "adresse": "فاس",
+   "lat": 34.0407057,
+   "lng": -5.019277,
+   "mapsUrl": "https://maps.google.com/?q=34.0407057,-5.019277",
+   "source": "osm"
+  },
+  {
+   "id": "osm-455812242",
+   "nom": "Mosquée Taqwa مسجد التقوى",
+   "type": "mosquee",
+   "adresse": "Fès",
+   "lat": 34.0192932,
+   "lng": -5.0061997,
+   "mapsUrl": "https://maps.google.com/?q=34.0192932,-5.0061997",
+   "source": "osm"
+  },
+  {
+   "id": "osm-455813335",
+   "nom": "Masjid Mouad Ibn Jabal",
+   "type": "mosquee",
+   "lat": 34.0118064,
+   "lng": -5.0109687,
+   "mapsUrl": "https://maps.google.com/?q=34.0118064,-5.0109687",
+   "source": "osm"
+  },
+  {
+   "id": "osm-455813456",
+   "nom": "Masjid Hay Anass",
+   "type": "mosquee",
+   "adresse": "fez",
+   "lat": 34.0073615,
+   "lng": -5.0044493,
+   "mapsUrl": "https://maps.google.com/?q=34.0073615,-5.0044493",
+   "source": "osm"
+  },
+  {
+   "id": "osm-455814009",
+   "nom": "Masjid El Karaouine",
+   "type": "mosquee",
+   "lat": 34.0048275,
+   "lng": -5.0132332,
+   "mapsUrl": "https://maps.google.com/?q=34.0048275,-5.0132332",
+   "source": "osm"
+  },
+  {
+   "id": "osm-455816588",
+   "nom": "Masjid Jawamah",
+   "type": "mosquee",
+   "adresse": "fez",
+   "lat": 33.9982543,
+   "lng": -5.009369,
+   "mapsUrl": "https://maps.google.com/?q=33.9982543,-5.009369",
+   "source": "osm"
+  },
+  {
+   "id": "osm-455816775",
+   "nom": "Masjid Hay Riad",
+   "type": "mosquee",
+   "adresse": "Ain Chkef عين الشقف",
+   "lat": 33.9982357,
+   "lng": -5.0154287,
+   "mapsUrl": "https://maps.google.com/?q=33.9982357,-5.0154287",
+   "source": "osm"
+  },
+  {
+   "id": "osm-455817264",
+   "nom": "Masjid Ibn Taymiyyah",
+   "type": "mosquee",
+   "lat": 33.9930171,
+   "lng": -4.9896161,
+   "mapsUrl": "https://maps.google.com/?q=33.9930171,-4.9896161",
+   "source": "osm"
+  },
+  {
+   "id": "osm-455818219",
+   "nom": "Masjid Al Nour",
+   "type": "mosquee",
+   "lat": 34.01101,
+   "lng": -4.9667546,
+   "mapsUrl": "https://maps.google.com/?q=34.01101,-4.9667546",
+   "source": "osm"
+  },
+  {
+   "id": "osm-455818220",
+   "nom": "Masjid Al Iman مسجد الإيمان",
+   "type": "mosquee",
+   "lat": 34.0143693,
+   "lng": -4.9638965,
+   "mapsUrl": "https://maps.google.com/?q=34.0143693,-4.9638965",
+   "source": "osm"
+  },
+  {
+   "id": "osm-455819706",
+   "nom": "Masjid Salman Al Farisi مسجد سلمان الفارسي",
+   "type": "mosquee",
+   "lat": 34.0111345,
+   "lng": -4.9714895,
+   "mapsUrl": "https://maps.google.com/?q=34.0111345,-4.9714895",
+   "source": "osm"
+  },
+  {
+   "id": "osm-455821177",
+   "nom": "Mosquée Meriem Borkaoui",
+   "type": "mosquee",
+   "adresse": "Fès",
+   "lat": 34.0198545,
+   "lng": -4.9671178,
+   "mapsUrl": "https://maps.google.com/?q=34.0198545,-4.9671178",
+   "source": "osm"
+  },
+  {
+   "id": "osm-455822593",
+   "nom": "Mosquée Riad مسجد الرياض",
+   "type": "mosquee",
+   "adresse": "فاس",
+   "lat": 34.0338167,
+   "lng": -4.9833331,
+   "mapsUrl": "https://maps.google.com/?q=34.0338167,-4.9833331",
+   "source": "osm"
+  },
+  {
+   "id": "osm-455826559",
+   "nom": "Majid Al-Ihssane Mosque مسجد الإحسان",
+   "type": "mosquee",
+   "lat": 34.0314984,
+   "lng": -5.0268406,
+   "mapsUrl": "https://maps.google.com/?q=34.0314984,-5.0268406",
+   "source": "osm"
+  },
+  {
+   "id": "osm-455827033",
+   "nom": "Masjid Al Ikhlass",
+   "type": "mosquee",
+   "adresse": "fez",
+   "lat": 34.0373802,
+   "lng": -5.0269081,
+   "mapsUrl": "https://maps.google.com/?q=34.0373802,-5.0269081",
+   "source": "osm"
+  },
+  {
+   "id": "osm-455827954",
+   "nom": "Masjid Arrahma مسجد الرحمة",
+   "type": "mosquee",
+   "lat": 34.058001,
+   "lng": -5.0211332,
+   "mapsUrl": "https://maps.google.com/?q=34.058001,-5.0211332",
+   "source": "osm"
+  },
+  {
+   "id": "osm-455828247",
+   "nom": "Masjid Dayaa",
+   "type": "mosquee",
+   "adresse": "fez tghat",
+   "lat": 34.0628851,
+   "lng": -5.0180844,
+   "mapsUrl": "https://maps.google.com/?q=34.0628851,-5.0180844",
+   "source": "osm"
+  },
+  {
+   "id": "osm-455828658",
+   "nom": "Masjid Ain Haroune",
+   "type": "mosquee",
+   "adresse": "fez",
+   "lat": 34.0674117,
+   "lng": -5.0088695,
+   "mapsUrl": "https://maps.google.com/?q=34.0674117,-5.0088695",
+   "source": "osm"
+  },
+  {
+   "id": "osm-455829879",
+   "nom": "Masjid Massira مسجد المسيرة",
+   "type": "mosquee",
+   "adresse": "فاس",
+   "lat": 33.9920621,
+   "lng": -5.0591032,
+   "mapsUrl": "https://maps.google.com/?q=33.9920621,-5.0591032",
+   "source": "osm"
+  },
+  {
+   "id": "osm-455829984",
+   "nom": "Masjid La Ferraille",
+   "type": "mosquee",
+   "lat": 33.9991465,
+   "lng": -5.0581977,
+   "mapsUrl": "https://maps.google.com/?q=33.9991465,-5.0581977",
+   "source": "osm"
+  },
+  {
+   "id": "osm-455830083",
+   "nom": "Masjid Abi Obaida Al Jarah",
+   "type": "mosquee",
+   "lat": 34.0143383,
+   "lng": -5.0538825,
+   "mapsUrl": "https://maps.google.com/?q=34.0143383,-5.0538825",
+   "source": "osm"
+  },
+  {
+   "id": "osm-478963308",
+   "nom": "مسجد الغفران",
+   "type": "mosquee",
+   "adresse": "67 LOT ZINEB DOKKARATفاس",
+   "lat": 34.0252164,
+   "lng": -5.0129844,
+   "mapsUrl": "https://maps.google.com/?q=34.0252164,-5.0129844",
+   "source": "osm"
+  },
+  {
+   "id": "osm-486042864",
+   "nom": "Masjid Bab Guissa مسجد باب عجيسة",
+   "type": "mosquee",
+   "adresse": "Fès",
+   "lat": 34.0685485,
+   "lng": -4.9758313,
+   "mapsUrl": "https://maps.google.com/?q=34.0685485,-4.9758313",
+   "source": "osm"
+  },
+  {
+   "id": "osm-525968422",
+   "nom": "Mosquée El Fath مسجد الفتح",
+   "type": "mosquee",
+   "adresse": "فاس",
+   "lat": 34.0231503,
+   "lng": -5.0312086,
+   "mapsUrl": "https://maps.google.com/?q=34.0231503,-5.0312086",
+   "source": "osm"
+  },
+  {
+   "id": "osm-564005273",
+   "nom": "مسجد خالد بن الوليد",
+   "type": "mosquee",
+   "adresse": "فاس",
+   "lat": 34.0170781,
+   "lng": -5.0341695,
+   "mapsUrl": "https://maps.google.com/?q=34.0170781,-5.0341695",
+   "source": "osm"
+  },
+  {
+   "id": "osm-604314161",
+   "nom": "Ansar mosque",
+   "type": "mosquee",
+   "adresse": "Boulevard des Merinides",
+   "lat": 34.0708401,
+   "lng": -4.9666379,
+   "mapsUrl": "https://maps.google.com/?q=34.0708401,-4.9666379",
+   "source": "osm"
+  },
+  {
+   "id": "osm-605624209",
+   "nom": "Rahma الرحمة",
+   "type": "mosquee",
+   "lat": 34.0165283,
+   "lng": -4.9711619,
+   "mapsUrl": "https://maps.google.com/?q=34.0165283,-4.9711619",
+   "source": "osm"
+  },
+  {
+   "id": "osm-605639445",
+   "nom": "Mosquée Sa'd ibn Abi Waqqas مسجد سعد بن أبي وقاص",
+   "type": "mosquee",
+   "adresse": "hay lalla soukaiyna",
+   "lat": 34.0192375,
+   "lng": -5.0259073,
+   "mapsUrl": "https://maps.google.com/?q=34.0192375,-5.0259073",
+   "source": "osm"
+  },
+  {
+   "id": "osm-606790037",
+   "nom": "Mosquée Omar ibn el Khattab",
+   "type": "mosquee",
+   "adresse": "Avenue Ettabari, Fès",
+   "lat": 34.0260182,
+   "lng": -5.0066266,
+   "mapsUrl": "https://maps.google.com/?q=34.0260182,-5.0066266",
+   "source": "osm"
+  },
+  {
+   "id": "osm-761858803",
+   "nom": "Mosquée El Abawayne",
+   "type": "mosquee",
+   "lat": 34.0105534,
+   "lng": -4.9753688,
+   "mapsUrl": "https://maps.google.com/?q=34.0105534,-4.9753688",
+   "source": "osm"
+  },
+  {
+   "id": "osm-919350570",
+   "nom": "مسجد الضويات",
+   "type": "mosquee",
+   "lat": 34.0334669,
+   "lng": -5.1025579,
+   "mapsUrl": "https://maps.google.com/?q=34.0334669,-5.1025579",
+   "source": "osm"
+  },
+  {
+   "id": "osm-919389478",
+   "nom": "مسجد الإنبعاث",
+   "type": "mosquee",
+   "lat": 33.9734919,
+   "lng": -5.0989745,
+   "mapsUrl": "https://maps.google.com/?q=33.9734919,-5.0989745",
+   "source": "osm"
+  },
+  {
+   "id": "osm-1256708014",
+   "nom": "marco",
+   "type": "mosquee",
+   "lat": 34.0410032,
+   "lng": -5.0085277,
+   "mapsUrl": "https://maps.google.com/?q=34.0410032,-5.0085277",
+   "source": "osm"
+  }
+ ],
+ "halalScore": 8.7,
+ "description_en": "Fez, in Morocco, is a halal-friendly destination with a Halal Trust Score of 4.5/5. Muslim travelers will find 71 halal restaurants listed, 785 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind. Best time to visit: March–May, September–November.",
+ "metaDescription_en": "Halal guide to Fez: 71 halal restaurants listed, 785 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.5/5.",
+ "nom_en": "Fez",
+ "boucheries": [],
+ "infos_pratiques_en": {
+  "monnaie": "Moroccan dirham (MAD)",
+  "fuseau_horaire": "GMT+1",
+  "meilleure_periode": "March–May, September–November"
+ },
+ "dataPurgedAt": "2026-07-15",
+ "osmEnrichedAt": "2026-07-15",
+ "sectionMangerHalal": "Dans la médina, tout est halal : rôtisseries, *sfenj* du matin, pastilla, et les cantines populaires autour de Bab Boujloud. L'alcool est rare et concentré dans quelques hôtels de la ville nouvelle, ce qui rend Fès particulièrement simple pour une famille.",
+ "sectionMangerHalal_en": "In the medina everything is halal: rotisseries, morning *sfenj*, pastilla, and the popular canteens around Bab Boujloud. Alcohol is rare and confined to a few hotels in the new town, which makes Fes particularly straightforward for a family.",
+ "sectionOuPrier": "Fès abrite la Qarawiyyin, fondée au IXe siècle, considérée comme la plus ancienne université encore en activité au monde. La médina en compte des dizaines d'autres, et l'appel à la prière s'y entend de partout. L'accès aux salles de prière est réservé aux musulmans, comme dans presque tout le Maroc.",
+ "sectionOuPrier_en": "Fes is home to al-Qarawiyyin, founded in the 9th century and regarded as the oldest continuously operating university in the world. The medina holds dozens more, and the call to prayer is audible everywhere. Prayer halls are reserved for Muslims, as almost everywhere in Morocco."
 }
