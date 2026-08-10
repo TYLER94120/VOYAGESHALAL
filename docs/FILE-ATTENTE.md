@@ -25,14 +25,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    **N'entre pas en travaux avant arbitrage** — c'est une decision, pas un
    chantier.
 
-2. **La session n'est pas toujours gagnable.**
-   *Preuve :* mesure du 10 aout — une mauvaise reponse ne bloque pas la
-   progression (elle montre la bonne et explique), mais **la carte ne revient
-   pas** plus loin dans la seance. Tant qu'elle ne revient pas, une erreur reste
-   une erreur au lieu de devenir un apprentissage. C'est la piece 3 de la liste
-   « addictif » du responsable, et la seule de cette liste encore ouverte.
-
-3. **Aucune mesure d'entree, et un traceur est interdit ici.**
+2. **Aucune mesure d'entree, et un traceur est interdit ici.**
    *Preuve :* `grep -ril "gtag\|analytics\|plausible\|matomo\|umami"` sur toutes
    les pages et les trois fichiers JavaScript ne rend **rien**. Or le pied de
    page promet « Ta progression reste sur ton telephone. Aucun compte, aucun
@@ -41,7 +34,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    journaux). Bloque jusqu'au deploiement — question posee aux trois autres
    agents dans le brainstorm des passerelles.
 
-4. **La recitation n'a jamais ete entendue par personne.**
+3. **La recitation n'a jamais ete entendue par personne.**
    *Preuve :* `halalgpt.fr:443` et `cdn.islamic.network:443` sont refuses par la
    politique reseau de l'atelier (403 au CONNECT, journalise par le proxy,
    verifie trois fois). Le mecanisme est teste avec un recitateur simule — 7
@@ -50,7 +43,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    la reponse sur un telephone avec du vrai reseau. Attend une capture d'ecran de
    Mohamed, ou le deploiement.
 
-5. **Les liens sortants sont tous au mauvais endroit.**
+4. **Les liens sortants sont tous au mauvais endroit.**
    *Preuve :* mesure du 10 aout — **48 liens sortants, 48 en pied de page, 0 dans
    le contenu**. Les 8 qui sont des phrases utiles (« Une question personnelle ?
    Pose-la sur halalgpt.fr ») sont elles aussi enfermees dans le pied. Ils sont
@@ -61,6 +54,34 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 ---
 
 ## Fait
+
+- **La seance est devenue gagnable : une carte manquee revient** *(10 aout,
+  cycle 3)* — **avant : 0 carte manquee ne revenait, une erreur restait une
+  erreur, le score plafonnait a 2 sur 3. Apres : la carte revient 8 cartes plus
+  loin et la seance se termine a 3 sur 3.** 18 controles au navigateur a
+  414x690, trois scenes :
+  1. *une question ratee* — la carte revient une fois, marquee « ON LA REVOIT »,
+     **8 cartes plus loin** (jamais juste apres : une question posee juste apres
+     sa reponse ne fait rien retenir, defaut corrige au cycle 2) ; fin affichee
+     **« 3 sur 3, dont 1 rattrapee a la reprise »**.
+  2. *les trois questions ratees deux fois* — **aucune carte jouee plus de deux
+     fois** (maxi mesure : 2). Une carte qui reviendrait sans fin serait une
+     cage, et une cage est une pression. La lecon va quand meme jusqu'a la fin,
+     affiche « 0 sur 3 », et **aucun mot de reproche n'apparait a l'ecran** —
+     verrou mecanique, pas consigne de ton.
+  3. *tout juste du premier coup* — **11 cartes, 0 reprise, « 3 sur 3 — sans
+     faute »** : le chemin d'origine est intact.
+  *Deux choix de fond.* La barre de progression **ne recule jamais** (mesure :
+  0 1 2 … 11, strictement croissante) — elle s'allonge d'un point quand une
+  carte est remise, car voir une barre reculer, c'est perdre quelque chose. Et
+  « sans faute » reste **reserve au premier essai** : le chiffre annonce l'etat
+  final, donc une reprise reussie compte, mais elle est **dite**. Un compteur
+  enonce le fait exact, il n'embellit pas.
+  *Au passage, le lecteur de lecon ne compte plus, il joue une liste.* Le
+  compteur `courante` qui montait de 1 a N ne pouvait pas revenir en arriere
+  sans faire reculer la barre ; les cartes sont maintenant une liste ou l'on
+  ajoute au bout. Aucune erreur JavaScript, aucun debordement a 414 px, les 6
+  lecons vont toujours jusqu'a l'ecran de fin.
 
 - **La question de `prophetes-coran` arrive maintenant a l'heure** *(10 aout,
   cycle 2)* — **avant : apres 4 tapes. Apres : apres 3 tapes.** La regle « une

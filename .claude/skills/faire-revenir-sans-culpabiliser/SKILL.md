@@ -32,8 +32,8 @@ Voici ce qui a marche sans ce levier, ce qui a casse, et ce qui manque encore.
 ## 1. Une serie nue est un piege : il faut un filet
 
 Une serie sans filet se detruit elle-meme. Un jour manque, le compteur tombe a
-zero, et la personne se dit « j'ai perdu mes 40 jours, j'arrete ». Le mecanisme
-cense faire revenir devient la raison de partir.
+zero, « j'ai perdu mes 40 jours, j'arrete » : le mecanisme cense faire revenir
+devient la raison de partir.
 
 **Le jour de grace**, tel qu'implemente : on en gagne **1 tous les 5 jours**,
 **2 en stock maximum** (sinon un absent de trois semaines garde sa serie et le
@@ -76,16 +76,12 @@ ressemble a une salissure.
 ## 3. Le chemin bat la liste, a contenu identique
 
 Six lecons dans une liste disent « il n'y en a que six ». Les **memes** six sur
-un trajet vertical qui serpente disent « voila ou tu en es ». Le trait se dore au
-fur et a mesure, l'etape en cours est plus grande et respire, ce qui est fait
-s'estompe.
+un trajet vertical qui serpente disent « voila ou tu en es ». Trois defauts
+trouves en le cassant :
 
-Trois defauts trouves en le cassant :
-
-1. **La decoration ne doit jamais dependre de la taille du contenu.** Les courbes
-   ont une hauteur ET une largeur fixes. Un `<svg>` de 60 unites en `width: 100%`
-   avec `preserveAspectRatio="none"` s'etirait sur tout l'ecran : le trait
-   devenait un ruban.
+1. **La decoration ne doit jamais dependre de la taille du contenu.** Un `<svg>`
+   de 60 unites en `width: 100%` avec `preserveAspectRatio="none"` s'etirait sur
+   tout l'ecran : le trait devenait un ruban. Hauteur ET largeur fixes.
 2. **Ne fais pas serpenter les cartes elles-memes**, seulement le trait et les
    medaillons. Un retrait variable donne un bord gauche en dents de scie qui se
    lit comme un bug.
@@ -135,7 +131,9 @@ v('aucun reproche affiche',
 
 Six lignes, et c'est ce qui empeche un futur agent presse de reintroduire la
 honte par inadvertance. **Une serie cassee repart a 1 sans un mot**, et le
-message affiche est une invitation, pas un constat de perte.
+message affiche est une invitation, pas un constat de perte. Le meme verrou
+tourne sur l'ecran de fin de lecon, dans l'etat le plus dur — **toutes les
+questions ratees deux fois** : aucun de ces mots n'apparait.
 
 ### Une recompense ne peut affirmer que ce qui a ete observe
 
@@ -147,7 +145,33 @@ site dont tout l'argument est de ne rien affirmer sans source, c'est le premier
 fil qu'on tire. Si tu veux ecrire « par coeur », construis d'abord le test de
 restitution.
 
-## 6. Quand tu simplifies, cherche ce que tu as rendu invisible
+## 6. Une seance doit pouvoir se terminer gagnee
+
+Une mauvaise reponse qui explique et laisse passer a l'air bienveillante. Elle
+ne l'est pas : **tant que la carte ne revient pas, l'erreur reste une erreur.**
+La personne finit a 2 sur 3, sans aucun moyen d'y changer quoi que ce soit. Ce
+n'est pas une punition, c'est pire — c'est un plafond.
+
+Ce qui marche : la carte manquee **revient en fin de seance**, et le score
+annonce l'etat final. Quatre regles tirees de la mise en oeuvre :
+
+- **Plus loin, jamais juste apres.** Mesure : 8 cartes d'ecart. Une question
+  reposee dans la foulee de son explication ne fait rien retenir — c'est le
+  meme defaut qu'une question placee juste apres la carte qui donne la reponse.
+- **Une seule fois.** Une carte qui revient sans fin est une cage, et une cage
+  est une pression. Deux passages maximum, puis la repetition espacee prend le
+  relais dans deux jours.
+- **La barre de progression ne recule jamais.** Elle s'allonge d'un point quand
+  une carte est remise. Voir une barre reculer, c'est perdre quelque chose — et
+  on ne fait rien perdre a personne. Techniquement cela veut dire jouer une
+  **liste** de cartes ou l'on ajoute au bout, pas un compteur qui monte : un
+  compteur ne sait pas revenir en arriere sans reculer.
+- **Dis la reprise.** « 3 sur 3, dont 1 rattrapee a la reprise », et « sans
+  faute » reste reserve au premier essai. C'est la meme regle qu'au 5 : un
+  compteur enonce le fait exact, il n'embellit pas. Un score gonfle en silence
+  est un compliment invente.
+
+## 7. Quand tu simplifies, cherche ce que tu as rendu invisible
 
 L'accueil montre **une carte et un bouton**, tout le reste derriere un lien
 discret. Consequence imprevue : en retirant le bloc des revisions, la repetition
@@ -177,8 +201,9 @@ un probleme pour elle ? »** Si non, ne construis pas de serie. Compte autre
 chose, ou ne compte rien.
 
 Sur ces produits, restent transferables la **partie 4** (le son d'erreur qui ne
-punit pas) et la **partie 5** (la limite religieuse, et l'interdiction d'affirmer
-une recompense non observee).
+punit pas), la **partie 5** (la limite religieuse, et l'interdiction d'affirmer
+une recompense non observee) et la **partie 6** (une seance gagnable — elle vaut
+partout ou il y a un score, meme sans serie).
 
 **Deux verrous sur le rappel quotidien.** Une notification calee sur une heure de
 priere suppose de **connaitre** cette heure : Islam pas a pas s'interdit de
@@ -195,10 +220,10 @@ deux points.
    fait **414 x 690** pixels CSS, pas 414 x 896 : les barres du navigateur en
    mangent 200. Deux defauts visuels n'apparaissaient qu'a cette hauteur, dont une
    ligne de texte tranchee en deux par le bouton du bas.
-3. **La piece qui manque : la session toujours gagnable.** Une mauvaise reponse ne
-   bloque pas, mais la carte ne **revient pas** plus loin dans la seance. Tant
-   qu'elle ne revient pas, une erreur reste une erreur au lieu de devenir un
-   apprentissage.
+3. **Construire la seance gagnable en premier** (partie 6), pas en dernier. Je
+   l'ai livree apres la serie, l'anneau, le chemin et les sons — alors que
+   c'est la seule piece qui agit sur ce que la personne ressent **pendant** la
+   lecon. Tout le reste agit sur l'apres.
 4. **Verifier ce que la personne peut lire.** La prononciation en lettres latines
    — la seule ligne utilisable par qui ne lit pas l'arabe — etait le plus petit
    texte de la carte : 15 px, gris pale, italique. Une boucle « repete avec moi »

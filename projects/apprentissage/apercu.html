@@ -6072,9 +6072,57 @@ function ippRendreOffre(racine) {
 
    Regle de ton : jamais punitif. Une mauvaise reponse montre la bonne et
    explique. Pas de vies perdues, pas de score qui humilie.
+
+   Et elle revient : une carte manquee est remise en fin de seance (voir
+   ippDemarrerLecon). Tant qu'elle ne revenait pas, une erreur restait une
+   erreur au lieu de devenir un apprentissage — la seance n'etait pas
+   gagnable. Elle ne revient qu'UNE fois : une carte qui reviendrait sans
+   fin serait une cage, et une cage est une pression.
    ========================================================= */
 
-function ippPreparerQuiz(etape, bouton, score, sonner) {
+// Nombre de passages maximum pour une meme question dans une seance : le
+// premier, puis la reprise. Au-dela on ne rejoue pas — la lecon reviendra
+// d'elle-meme dans deux jours par la repetition espacee.
+var IPP_PASSAGES_MAX = 2;
+
+function ippMelanger(choix, opts) {
+  'use strict';
+  // Sinon la bonne reponse finit toujours a la meme place et on apprend la
+  // position au lieu du contenu. Remelange aussi a la reprise : retrouver un
+  // bouton la ou il etait ne prouve rien.
+  for (var i = opts.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var tmp = opts[i]; opts[i] = opts[j]; opts[j] = tmp;
+  }
+  for (var k = 0; k < opts.length; k++) { choix.appendChild(opts[k]); }
+}
+
+// Remet une carte de question dans son etat d'avant reponse. L'ecouteur de
+// clic n'est pas rebranche : il est pose une seule fois, et c'est __passages
+// qui lui dit s'il s'agit d'une reprise.
+function ippRearmerQuiz(etape) {
+  'use strict';
+  var choix = etape.querySelector('.q-choix');
+  var retour = etape.querySelector('[data-r-retour]');
+  if (!choix) { return; }
+
+  etape.__repondu = false;
+  var opts = [].slice.call(etape.querySelectorAll('.q-opt'));
+  for (var i = 0; i < opts.length; i++) {
+    opts[i].disabled = false;
+    opts[i].classList.remove('juste', 'faux');
+  }
+  if (retour) { retour.hidden = true; retour.textContent = ''; }
+  ippMelanger(choix, opts);
+
+  // On dit pourquoi elle revient. "On la revoit" est une invitation ; ce
+  // n'est ni un reproche ni un constat d'echec.
+  var oeil = etape.querySelector('.eyebrow');
+  if (oeil) { oeil.textContent = 'On la revoit'; }
+  etape.classList.add('reprise');
+}
+
+function ippPreparerQuiz(etape, bouton, score, sonner, surFaux) {
   'use strict';
   if (etape.__quizPret) { return; }
   etape.__quizPret = true;
@@ -6084,20 +6132,15 @@ function ippPreparerQuiz(etape, bouton, score, sonner) {
   var retour = etape.querySelector('[data-r-retour]');
   if (!choix) { return; }
 
-  // On melange les reponses : sinon la bonne finit toujours a la meme place et
-  // on apprend la position au lieu du contenu.
   var opts = [].slice.call(etape.querySelectorAll('.q-opt'));
-  for (var i = opts.length - 1; i > 0; i--) {
-    var j = Math.floor(Math.random() * (i + 1));
-    var tmp = opts[i]; opts[i] = opts[j]; opts[j] = tmp;
-  }
-  for (var k = 0; k < opts.length; k++) { choix.appendChild(opts[k]); }
+  ippMelanger(choix, opts);
 
   choix.addEventListener('click', function (e) {
     var b = e.target.closest ? e.target.closest('.q-opt') : null;
     if (!b || etape.__repondu) { return; }
     etape.__repondu = true;
 
+    var reprise = etape.__passages > 1;
     var juste = b.hasAttribute('data-bonne');
     // "presque" et non un buzzer : le son de l'erreur decide si la personne
     // recommence ou ferme l'onglet.
@@ -6109,15 +6152,31 @@ function ippPreparerQuiz(etape, bouton, score, sonner) {
     }
     for (var m = 0; m < opts.length; m++) { opts[m].disabled = true; }
 
+    // La carte ne revient que si elle n'a pas deja servi sa reprise.
+    var reviendra = !juste && etape.__passages < IPP_PASSAGES_MAX;
+
     if (retour) {
       retour.hidden = false;
       retour.className = 'q-retour ' + (juste ? 'ok' : 'non');
       var explique = etape.getAttribute('data-explique') || '';
-      retour.textContent = (juste ? 'Oui. ' : 'Pas tout a fait — la bonne reponse est en dore. ') + explique;
+      var tete;
+      if (juste && reprise) { tete = 'Voila — tu l\'as. '; }
+      else if (juste) { tete = 'Oui. '; }
+      else { tete = 'Pas tout a fait — la bonne reponse est en dore. '; }
+      retour.textContent = tete + explique
+        + (reviendra ? ' On la revoit avant la fin.' : '');
     }
 
-    score.total++;
-    if (juste) { score.justes++; }
+    // Le compte des questions est fait au premier passage : une reprise ne
+    // rajoute pas une question, elle change son issue.
+    if (!reprise) {
+      score.total++;
+      if (juste) { score.justes++; }
+    } else if (juste) {
+      score.rattrapees++;
+    }
+
+    if (reviendra && surFaux) { surFaux(etape); }
     bouton.disabled = false;
   });
 }
@@ -6234,9 +6293,19 @@ function ippDemarrerLecon(id, racine) {
   var etapes = zone.querySelectorAll('.etape');
   var TOTAL = etapes.length;
   var CONTENU = TOTAL - 1;
-  var courante = 1;
+
+  // La lecon se joue comme une LISTE de cartes, pas comme un compteur qui
+  // monte. C'est ce qui permet a une carte manquee d'etre remise a la fin :
+  // on ajoute au bout de la liste, on n'a jamais a reculer. La barre de
+  // progression suit la position dans cette liste, donc elle ne redescend
+  // jamais non plus — voir une barre reculer, c'est perdre quelque chose.
+  var ordre = [];
+  for (var d = 0; d < CONTENU; d++) { ordre.push(etapes[d]); }
+  var finale = etapes[TOTAL - 1];
+  var pos = 0;                      // index dans ordre ; ordre.length = la fin
+
   var enregistree = false;
-  var score = { justes: 0, total: 0 };
+  var score = { justes: 0, total: 0, rattrapees: 0 };
 
   zone.classList.add('pilote');
   ippBrancherAudio(zone);
@@ -6259,26 +6328,44 @@ function ippDemarrerLecon(id, racine) {
   q('points').innerHTML = html;
   var segments = q('points').querySelectorAll('.pt');
 
+  // Une carte remise a la fin ajoute son point : la barre s'allonge un peu,
+  // elle ne recule pas.
+  function remettreALaFin(etape) {
+    if (ordre.indexOf(etape, pos + 1) !== -1) { return; }
+    ordre.push(etape);
+    var pt = document.createElement('span');
+    pt.className = 'pt';
+    q('points').appendChild(pt);
+    segments = q('points').querySelectorAll('.pt');
+    nommerBouton();
+  }
+
+  function nommerBouton() {
+    if (pos >= ordre.length) { return; }
+    bouton.textContent = (pos === ordre.length - 1) ? 'Terminer' : 'Suivant';
+  }
+
   function afficher(defiler) {
+    var ici = (pos < ordre.length) ? ordre[pos] : finale;
     for (var a = 0; a < etapes.length; a++) {
-      etapes[a].classList.toggle('actif',
-        Number(etapes[a].getAttribute('data-etape')) === courante);
+      etapes[a].classList.toggle('actif', etapes[a] === ici);
     }
     for (var b = 0; b < segments.length; b++) {
-      segments[b].classList.toggle('faite', b < Math.min(courante, CONTENU));
+      segments[b].classList.toggle('faite', b < pos);
     }
 
-    if (courante === TOTAL) {
+    if (ici === finale) {
       bas.hidden = true;
     } else {
-      bouton.textContent = (courante === CONTENU) ? 'Terminer' : 'Suivant';
+      nommerBouton();
 
       // Sur une carte de test, on ne peut pas passer sans repondre : c'est
       // justement l'effort qui fait retenir.
-      var ici = zone.querySelector('.etape.actif');
-      if (ici && ici.hasAttribute('data-quiz')) {
+      if (ici.hasAttribute('data-quiz')) {
+        ici.__passages = (ici.__passages || 0) + 1;
+        if (ici.__passages > 1) { ippRearmerQuiz(ici); }
         bouton.disabled = !ici.__repondu;
-        ippPreparerQuiz(ici, bouton, score, sonner);
+        ippPreparerQuiz(ici, bouton, score, sonner, remettreALaFin);
       } else {
         bouton.disabled = false;
       }
@@ -6313,8 +6400,20 @@ function ippDemarrerLecon(id, racine) {
 
     var phrase = '';
     if (score.total) {
-      phrase += score.justes + ' sur ' + score.total
-              + (score.justes === score.total ? ' — sans faute. ' : '. ');
+      // Le chiffre annonce l'etat FINAL : une carte rattrapee a la reprise
+      // compte. C'est ce qui rend la seance gagnable. Mais "sans faute" reste
+      // reserve au premier essai, et la reprise est dite — un compteur enonce
+      // le fait exact, il n'embellit pas.
+      phrase += (score.justes + score.rattrapees) + ' sur ' + score.total;
+      if (score.justes === score.total) {
+        phrase += ' — sans faute. ';
+      } else if (score.rattrapees) {
+        phrase += ', dont ' + score.rattrapees
+                + (score.rattrapees > 1 ? ' rattrapees' : ' rattrapee')
+                + ' a la reprise. ';
+      } else {
+        phrase += '. ';
+      }
     }
     phrase += 'Tu as maintenant appris ' + total + ' choses sur ce site. '
             + 'Cette lecon reviendra dans ' + r.pas + (r.pas > 1 ? ' jours.' : ' jour.');
@@ -6336,11 +6435,11 @@ function ippDemarrerLecon(id, racine) {
   }
 
   bouton.addEventListener('click', function () {
-    if (courante >= TOTAL) { return; }
-    courante++;
+    if (pos >= ordre.length) { return; }
+    pos++;
     // "tap" s'entend quatorze fois par lecon : il doit rester presque
     // invisible, et "fin" seul doit se remarquer.
-    if (courante === TOTAL) {
+    if (pos === ordre.length) {
       cloturer();
       sonner('fin');
       // Puis un seul des deux, jamais les deux : la serie si elle a monte,
