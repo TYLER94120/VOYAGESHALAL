@@ -164,8 +164,20 @@ export default async function HomePage() {
           sizes="100vw"
           style={{ objectFit: 'cover', opacity: 0.42 }}
         />
-        <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, rgba(11,26,15,0.7) 0%, rgba(11,26,15,0.85) 100%)' }} />
-        <IslamicPattern opacity={0.06} />
+        {/* Voile sombre. La première centaine de pixels est OPAQUE : sans
+            elle, une rupture nette apparaissait entre le tableau de bord
+            (noir uni) et ce hero (éclairci par le motif doré) — Mohamed l'a
+            vue depuis sa voiture, « le fond n'est pas noir, c'est vert ».
+            Les deux zones se fondent maintenant l'une dans l'autre. */}
+        {/* Le voile s'ouvre sur EXACTEMENT le fond du tableau de bord, puis
+            se fond vers l'image. Mesuré : le board affiche un vert à
+            RVB (26,45,29) et ce hero descendait à (12,26,15) — deux fonds
+            différents à l'œil, ce que Mohamed a vu depuis sa voiture. */}
+        <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, rgba(26,45,29,1) 0px, rgba(20,36,23,0.94) 120px, rgba(11,26,15,0.82) 100%)' }} />
+        {/* Motif adouci : à 0,06 il donnait au bas de page une teinte
+            olive (mesurée RVB 37,45,24) alors que le tableau de bord au-dessus
+            est vert-nuit (29,47,33). Deux fonds différents à l'œil. */}
+        <IslamicPattern opacity={0.022} />
 
         <div className="relative z-10 max-w-3xl mx-auto w-full">
           <p style={{ color: '#c9a84c' }} className="text-xs font-semibold uppercase tracking-[0.35em] mb-2">
