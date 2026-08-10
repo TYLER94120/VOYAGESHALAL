@@ -41,12 +41,29 @@ export default function MeteoClient({ en = false }: { en?: boolean }) {
   const [laBas, setLaBas] = useState<Meteo | null>(null)
   const [cherche, setCherche] = useState(false)
   const [q, setQ] = useState('')
+  const [partage, setPartage] = useState<'' | 'copie' | 'echec'>('')
 
   useEffect(() => {
     if (!pos) return
     const g = meteoInstantanee(pos.lat, pos.lng, setIci)
     if (g) setIci(g)
   }, [pos])
+
+  // 🔗 LIEN PROFOND — ?ville=berkane.
+  // Un partage qui atterrit sur une page vide ne ramène personne : celui qui
+  // reçoit le lien doit voir EXACTEMENT ce qu'on a voulu lui montrer, sans
+  // rien chercher. On utilise `ville` et surtout PAS `lat/lng/lieu` : ces
+  // paramètres-là déplacent la position de l'utilisateur pour tout le site,
+  // ce qui serait une vraie mauvaise surprise pour quelqu'un qui a juste
+  // cliqué sur un lien reçu par message.
+  useEffect(() => {
+    try {
+      const slug = new URLSearchParams(window.location.search).get('ville')
+      if (!slug) return
+      const v = VILLES.find((x) => x.slug === slug)
+      if (v) setVille(v)
+    } catch { /* noop */ }
+  }, [])
 
   useEffect(() => {
     if (!ville) { setLaBas(null); return }
@@ -67,6 +84,41 @@ export default function MeteoClient({ en = false }: { en?: boolean }) {
   const raccourcis = RACCOURCIS.map((s) => VILLES.find((v) => v.slug === s)).filter(Boolean) as Ville[]
   const conseil = laBas ? conseilDuJour(laBas, en) : null
   const age = laBas ? ageReleve(laBas.releveA, en) : null
+
+  /** Le texte partagé : lisible seul, et un lien qui atterrit au bon endroit.
+   *  Les `utm_` ne sont pas de la décoration — sans eux on ne saura jamais si
+   *  le partage ramène qui que ce soit, et on gardera un bouton inutile. */
+  const partager = async () => {
+    if (!ville || !laBas?.maintenant) return
+    const aujourdhui = laBas.jours[0]
+    const demain = laBas.jours[1]
+    const lien = `https://www.${en ? 'gohalaltravel.com/weather' : 'voyageshalal.fr/meteo'}?ville=${ville.slug}`
+      + `&utm_source=partage&utm_medium=meteo&utm_campaign=${ville.slug}`
+    const texte = en
+      ? `${ville.nom}: ${laBas.maintenant.temp}° right now, ${motMeteo(laBas.maintenant.code, true)}.`
+        + (aujourdhui ? ` Today ${aujourdhui.max}°/${aujourdhui.min}°.` : '')
+        + (demain ? ` Tomorrow ${demain.max}°/${demain.min}°.` : '')
+      : `${ville.nom} : ${laBas.maintenant.temp}° en ce moment, ${motMeteo(laBas.maintenant.code)}.`
+        + (aujourdhui ? ` Aujourd’hui ${aujourdhui.max}°/${aujourdhui.min}°.` : '')
+        + (demain ? ` Demain ${demain.max}°/${demain.min}°.` : '')
+
+    // Sur téléphone, la feuille de partage native (WhatsApp, Messages…) est
+    // ce que les gens attendent. Ailleurs, on copie — et on le DIT.
+    try {
+      if (typeof navigator !== 'undefined' && navigator.share) {
+        await navigator.share({ title: `${en ? 'Weather' : 'Météo'} — ${ville.nom}`, text: texte, url: lien })
+        return
+      }
+    } catch { /* partage annulé par l'utilisateur : on ne fait rien */ return }
+    try {
+      await navigator.clipboard.writeText(`${texte} ${lien}`)
+      setPartage('copie')
+      setTimeout(() => setPartage(''), 2500)
+    } catch {
+      setPartage('echec')
+      setTimeout(() => setPartage(''), 4000)
+    }
+  }
 
   const carte: React.CSSProperties = {
     background: '#fff', borderRadius: 18, padding: '1rem 1.1rem',
@@ -192,6 +244,22 @@ export default function MeteoClient({ en = false }: { en?: boolean }) {
                   📴 {en ? 'Reading kept on your phone' : 'Relevé gardé sur ton téléphone'}{age ? ` · ${age}` : ''}
                 </p>
               )}
+
+              {/* 📤 PARTAGER — demandé par Mohamed, et c'est aussi ainsi qu'on
+                  fait revenir du monde. Deux règles pour que ça marche :
+                  1. le lien atterrit sur LA MÉTÉO DE CETTE VILLE (?ville=…),
+                     jamais sur une page d'accueil que le destinataire devrait
+                     fouiller ;
+                  2. le message dit déjà l'essentiel — beaucoup de gens ne
+                     cliqueront pas, et le partage doit leur servir quand même. */}
+              <button onClick={partager}
+                style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 8, width: '100%', minHeight: 48, marginTop: 12, borderRadius: 999, border: '1.5px solid rgba(201,168,76,0.55)', background: 'transparent', color: 'var(--or)', fontWeight: 900, fontSize: 14.5, cursor: 'pointer' }}>
+                {partage === 'copie'
+                  ? (en ? '✓ Link copied' : '✓ Lien copié')
+                  : partage === 'echec'
+                    ? (en ? 'Copy failed — select the text' : 'Copie impossible — sélectionne le texte')
+                    : (en ? `📤 Share ${ville.nom} weather` : `📤 Partager la météo de ${ville.nom}`)}
+              </button>
 
               {/* La suite naturelle : le guide halal de cette ville. */}
               <Link href={`/destinations/${ville.slug}`}
