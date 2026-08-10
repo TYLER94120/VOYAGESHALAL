@@ -275,6 +275,16 @@ export default function VilleDesktop({ ville }: { ville: any }) {
             <EbookButton ville={ville} />
           </div>
 
+          {/* 📅 Fraîcheur : la date vient de l'historique git (dernier commit
+              ayant modifié cette fiche), jamais d'une valeur écrite à la
+              main. Un guide de voyage sans date ne se fait pas confiance. */}
+          {ville.misAJour && (
+            <p style={{ textAlign: 'center', fontSize: 12.5, color: 'rgba(253,250,243,0.55)', margin: '14px 0 0' }}>
+              ✓ {en ? 'Updated' : 'Mis à jour'} {new Date(ville.misAJour).toLocaleDateString(en ? 'en-US' : 'fr-FR', { month: 'long', year: 'numeric' })}
+              {' · '}{en ? 'sources: OpenStreetMap + our own checks' : 'sources : OpenStreetMap + relevés maison'}
+            </p>
+          )}
+
           {/* Outils de prière ouverts DIRECTEMENT sur la ville (coordonnées
               passées en paramètre) — plus de « autorisez la géolocalisation »
               alors qu'on sait déjà de quelle ville on parle. */}

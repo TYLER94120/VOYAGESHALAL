@@ -1,0 +1,43 @@
+name: Recalculer les dates de mise à jour
+
+# Les dates affichées sur les articles, guides et fiches villes viennent de
+# l'historique git (dernier commit ayant modifié CHAQUE bloc de contenu).
+# Elles se périment donc à chaque fois qu'on retouche un contenu.
+#
+# Ce workflow régénère data/dates-contenu.json. Le `fetch-depth: 0` est
+# indispensable : sur un clone superficiel, toutes les dates remonteraient
+# au début de l'historique tronqué — le script refuse d'ailleurs de tourner
+# dans ce cas plutôt que d'écrire des dates fausses.
+
+on:
+  schedule:
+    # Tous les lundis à 4 h UTC — après les nuits de production
+    - cron: '0 4 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  dates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Lire les dates réelles dans l'historique
+        run: node scripts/dates-contenu.mjs
+      - name: Commit & push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/dates-contenu.json
+          if git diff --cached --quiet; then
+            echo "Aucun changement."
+          else
+            git commit -m "data(dates) : dates de mise à jour relues dans l'historique git"
+            git push
+          fi

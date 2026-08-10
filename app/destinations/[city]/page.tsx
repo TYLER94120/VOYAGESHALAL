@@ -15,6 +15,7 @@ import { cityEn, countryEn } from '@/lib/poiI18n'
 import cityCoords from '@/lib/cityCoords.json'
 import { getDomainSEO, FR_URL, EN_URL } from '@/lib/domain'
 import { conforme } from '@/lib/conformite'
+import { dateGitVille, fmtMonthYear } from '@/lib/freshness'
 
 export const dynamicParams = false
 
@@ -123,6 +124,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: ogTitle,
       description: ogDesc,
       url: `${siteUrl}/destinations/${city}`,
+      // Date de modification réelle (historique git) : Google s'en sert pour
+      // juger la fraîcheur d'un guide. Absente jusqu'ici sur les 354 fiches.
+      ...(dateGitVille(city) ? { modifiedTime: dateGitVille(city) as string } : {}),
       ...(ogImage ? { images: [{ url: ogImage, width: 1200, height: 630, alt: `Halal travel ${ville.nom}` }] } : {}),
     },
   }
@@ -159,6 +163,10 @@ export default async function DestinationPage({ params }: Props) {
           charge à la demande via /api/villes/[slug]/restos. */}
       <VilleDesktop ville={{
         ...ville,
+        // Date de dernière modification RÉELLE, lue dans l'historique git.
+        // Une fiche ville n'affichait aucune date : impossible pour le
+        // lecteur (et pour Google) de savoir si l'information est fraîche.
+        misAJour: dateGitVille(city),
         // Bars, lounges à chicha et boîtes de nuit sont écartés : le lieu
         // compte autant que la nourriture (lib/conformite.ts)
         restaurants: restaurantsConformes.slice(0, 24),

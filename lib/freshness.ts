@@ -8,7 +8,36 @@ import cityCoords from '@/lib/cityCoords.json'
 // publication — jamais de date future ni arbitraire.
 export const CONTENT_REVISED_AT = '2026-07-01'
 
-export function updatedAtOf(p: { updatedAt?: string; publishedAt: string }): string {
+// ── Dates de mise à jour RÉELLES ──
+// Elles ne sont plus posées à la main : scripts/dates-contenu.mjs lit dans
+// l'historique git la date du dernier commit ayant modifié CHAQUE bloc de
+// contenu (git log -L, qui suit une plage de lignes — `git log -S` ne
+// verrait que la création). Résultat dans data/dates-contenu.json.
+//
+// Une date affichée doit être vraie : « mis à jour en août » sur un texte
+// qui n'a pas bougé depuis juin est un mensonge que Google finit par voir,
+// et surtout que le lecteur constate en lisant.
+import datesContenu from '@/data/dates-contenu.json'
+
+const DATES = (datesContenu as { dates: Record<string, string> }).dates ?? {}
+
+/** Date git réelle d'un contenu, ou null si le fichier n'a pas encore été généré. */
+export function dateGit(slug?: string): string | null {
+  if (!slug) return null
+  return DATES[slug] ?? null
+}
+
+/** Date git réelle d'une fiche ville. */
+export function dateGitVille(slug?: string): string | null {
+  if (!slug) return null
+  return DATES[`ville:${slug}`] ?? null
+}
+
+export function updatedAtOf(p: { updatedAt?: string; publishedAt: string; slug?: string }): string {
+  // 1. La date git réelle prime — c'est la seule qu'on n'a pas choisie.
+  const git = dateGit(p.slug)
+  if (git) return [p.publishedAt, git].sort().at(-1) as string
+  // 2. Repli : date propre à l'article, sinon révision de site.
   const candidates = [p.publishedAt, p.updatedAt, CONTENT_REVISED_AT].filter(Boolean) as string[]
   return candidates.sort().at(-1) as string
 }
