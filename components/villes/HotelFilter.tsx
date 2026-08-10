@@ -162,11 +162,11 @@ export default function HotelFilter({ hotels, mosques, restos, center, en: enPro
               {/* Différenciateur : proximité mosquée + restos halal */}
               <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', margin: '4px 0 10px' }}>
                 {e.nearestMosqueKm !== Infinity && e.nearestMosqueKm <= 3 && (
-                  <span style={{ background: 'var(--halal-bg)', color: 'var(--halal-tx)', fontSize: 11, fontWeight: 700, borderRadius: 20, padding: '3px 9px' }}>🕌 {t('Mosquée', 'Mosque')} {e.nearestMosqueKm < 1 ? `${Math.round(e.nearestMosqueKm * 1000)} m` : `${e.nearestMosqueKm.toFixed(1)} km`}</span>
+                  <span style={{ background: 'var(--halal-bg)', color: 'var(--halal-tx)', fontSize: 11.5, fontWeight: 700, borderRadius: 20, padding: '4px 10px' }}>🕌 {t('Mosquée', 'Mosque')} {e.nearestMosqueKm < 1 ? `${Math.round(e.nearestMosqueKm * 1000)} m` : `${e.nearestMosqueKm.toFixed(1)} km`}</span>
                 )}
-                {e.restosNear > 0 && <span style={{ background: 'rgba(201,168,76,0.18)', color: '#8A6D1E', fontSize: 11, fontWeight: 700, borderRadius: 20, padding: '3px 9px' }}>🍽 {e.restosNear} {t('restos halal < 1 km', 'halal restos < 1 km')}</span>}
+                {e.restosNear > 0 && <span style={{ background: 'rgba(201,168,76,0.18)', color: '#8A6D1E', fontSize: 11.5, fontWeight: 700, borderRadius: 20, padding: '4px 10px' }}>🍽 {e.restosNear} {t('restos halal < 1 km', 'halal restos < 1 km')}</span>}
                 {equipList.filter((eq) => (EQUIP as any)[eq.id](h)).slice(0, 3).map((eq) => (
-                  <span key={eq.id} style={{ background: 'rgba(27,67,50,0.07)', color: 'var(--foret)', fontSize: 11, fontWeight: 700, borderRadius: 20, padding: '3px 9px' }}>✓ {en ? eq.en : eq.fr}{(eq.id === 'piscineNonMixte' || eq.id === 'plagePrivee') ? ' · HalalBooking' : ''}</span>
+                  <span key={eq.id} style={{ background: 'rgba(27,67,50,0.07)', color: 'var(--foret)', fontSize: 11.5, fontWeight: 700, borderRadius: 20, padding: '4px 10px' }}>✓ {en ? eq.en : eq.fr}{(eq.id === 'piscineNonMixte' || eq.id === 'plagePrivee') ? ' · HalalBooking' : ''}</span>
                 ))}
               </div>
               {villeNom && (

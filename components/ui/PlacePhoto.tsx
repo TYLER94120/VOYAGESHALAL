@@ -49,7 +49,7 @@ export default function PlacePhoto({
         <>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={photo.url} alt="" loading="lazy" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
-          <span style={{ position: 'absolute', bottom: 4, right: 6, fontSize: 8.5, color: 'rgba(255,255,255,0.85)', background: 'rgba(0,0,0,0.35)', borderRadius: 6, padding: '1px 5px', maxWidth: '70%', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+          <span style={{ position: 'absolute', bottom: 4, right: 6, fontSize: 10, color: 'rgba(255,255,255,0.85)', background: 'rgba(0,0,0,0.35)', borderRadius: 6, padding: '1px 5px', maxWidth: '70%', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
             📷 {photo.attribution || 'Google'}
           </span>
         </>

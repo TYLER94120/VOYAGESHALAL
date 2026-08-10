@@ -36,7 +36,7 @@ export default function GuideCarousel({ guide, villeNom, heroImage, en }: { guid
                     style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
                 )}
                 {monument?.credit && (
-                  <span style={{ position: 'absolute', bottom: 4, right: 6, fontSize: 8.5, color: 'rgba(255,255,255,0.85)', background: 'rgba(0,0,0,0.35)', borderRadius: 6, padding: '1px 5px', maxWidth: '60%', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                  <span style={{ position: 'absolute', bottom: 4, right: 6, fontSize: 10, color: 'rgba(255,255,255,0.85)', background: 'rgba(0,0,0,0.35)', borderRadius: 6, padding: '1px 5px', maxWidth: '60%', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
                     📷 {monument.credit}
                   </span>
                 )}
