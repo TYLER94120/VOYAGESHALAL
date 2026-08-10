@@ -409,6 +409,18 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
         {/* Barre ville : 1 tap = GPS exact (le roaming fausse la geoloc IP) */}
         <div className="board-topbar" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 10 }}>
           <PositionBadge compact etat={etatPos} en={en} apresRefus={() => { window.location.href = '/horaires-priere' }} />
+          {/* 🌤 LA TEMPÉRATURE SE MET LÀ OÙ L'ŒIL EST DÉJÀ.
+              Je l'avais glissée dans la petite ligne Qibla, six tuiles plus
+              bas : Mohamed ne l'a pas vue, et il avait raison de ne pas la
+              chercher. Elle est maintenant collée à la position — même ligne,
+              même regard : « Rabat · exacte ✓  ☀️ 30° ». */}
+          {meteo?.maintenant && (
+            <Link href="/meteo" aria-label={en ? 'Weather' : 'Météo'}
+              style={{ display: 'inline-flex', alignItems: 'center', gap: 5, minHeight: 44, padding: '0 10px', borderRadius: 999, textDecoration: 'none', border: '1px solid rgba(201,168,76,0.35)' }}>
+              <span style={{ fontSize: 17 }} aria-hidden>{emojiMeteo(meteo.maintenant.code)}</span>
+              <span style={{ color: '#fdfaf3', fontWeight: 900, fontSize: 15 }}>{meteo.maintenant.temp}°</span>
+            </Link>
+          )}
           <Link href="/spots" style={{ color: 'var(--or)', fontSize: 13.5, fontWeight: 800, textDecoration: 'none', minHeight: 48, padding: '0 8px', display: 'flex', alignItems: 'center' }}>
             {en ? 'See all →' : 'Tout voir →'}
           </Link>
@@ -771,22 +783,10 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
             </span>
           </Link>
           <span aria-hidden style={{ width: 1, alignSelf: 'stretch', background: 'rgba(253,250,243,0.14)' }} />
-          {/* La météo prend la place quand elle est connue ; sinon la date
-              hégirienne reste. Aucune case vide, aucun rond qui tourne. */}
-          {meteo?.maintenant ? (
-            <Link href="/meteo" style={{ flex: 1, minHeight: 44, display: 'flex', alignItems: 'center', gap: 8, textDecoration: 'none', justifyContent: 'flex-end' }}>
-              <span style={{ fontSize: 19 }} aria-hidden>{emojiMeteo(meteo.maintenant.code)}</span>
-              <span style={{ color: '#fdfaf3', fontWeight: 800, fontSize: 14 }}>
-                {meteo.maintenant.temp}°
-                <span style={{ ...T.meta, fontWeight: 600, marginLeft: 6 }}>{en ? 'Weather' : 'Météo'}</span>
-              </span>
-            </Link>
-          ) : (
-            <Link href="/horaires-priere" style={{ flex: 1, minHeight: 44, display: 'flex', alignItems: 'center', gap: 8, textDecoration: 'none', justifyContent: 'flex-end' }}>
-              <span style={{ fontSize: 17 }} aria-hidden>🌙</span>
-              <span style={{ color: 'rgba(253,250,243,0.85)', fontWeight: 700, fontSize: 13, textAlign: 'right', lineHeight: 1.25 }}>{hijri ?? '—'}</span>
-            </Link>
-          )}
+          <Link href="/horaires-priere" style={{ flex: 1, minHeight: 44, display: 'flex', alignItems: 'center', gap: 8, textDecoration: 'none', justifyContent: 'flex-end' }}>
+            <span style={{ fontSize: 17 }} aria-hidden>🌙</span>
+            <span style={{ color: 'rgba(253,250,243,0.85)', fontWeight: 700, fontSize: 13, textAlign: 'right', lineHeight: 1.25 }}>{hijri ?? '—'}</span>
+          </Link>
         </div>
 
         {/* Pas de phrase météo ici : Mohamed a demandé que l'accueil reste

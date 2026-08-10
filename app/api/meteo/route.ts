@@ -78,12 +78,21 @@ export async function GET(req: Request) {
     // Le cache est borné : sans ça, un site mondial finit par tout garder.
     if (cache.size > 500) cache.delete(cache.keys().next().value as string)
     return NextResponse.json(v, { headers: { 'Cache-Control': 'public, max-age=900' } })
-  } catch {
+  } catch (e) {
     // ⚠️ Une météo d'il y a deux heures vaut infiniment mieux que rien —
     // à condition de DIRE qu'elle date. C'est `perime` qui sert à ça, et
     // l'écran l'affiche.
     if (enCache) return NextResponse.json({ ...enCache.v, perime: true }, { headers: { 'Cache-Control': 'no-store' } })
-    return NextResponse.json({ error: 'météo indisponible' }, { status: 503, headers: { 'Cache-Control': 'no-store' } })
+    // La RAISON est renvoyée en clair : sans elle, une météo absente en ligne
+    // ne se diagnostique qu'en devinant. Ouvrir cette adresse dans un
+    // navigateur suffit alors à savoir si c'est un délai, un refus de la
+    // source, ou autre chose.
+    const raison = e instanceof Error ? e.message : String(e)
+    console.error('[meteo] échec', raison)
+    return NextResponse.json(
+      { error: 'météo indisponible', raison, source: BASE },
+      { status: 503, headers: { 'Cache-Control': 'no-store' } },
+    )
   }
 }
 
