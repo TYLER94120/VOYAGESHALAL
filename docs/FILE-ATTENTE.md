@@ -26,14 +26,15 @@ Chiffres AVANT le 9 août, 7 jours : voyageshalal.fr 1 970 impressions /
 
 ## À faire
 
-### 1. Les sections « manger » et « prier » manquent sur 330 fiches villes
-**Mesuré le 11 août** : 24 fiches sur 354 ont leurs quatre sections
-(manger et prier, FR et EN). Les 330 autres n'ont que des listes d'adresses
+### 1. Les sections « manger » et « prier » manquent sur 316 fiches villes
+**Mesuré le 11 août** : 38 fiches sur 354 ont leurs quatre sections
+(manger et prier, FR et EN). Les 316 autres n'ont que des listes d'adresses
 — donc peu de texte unique, et rien qui réponde à « manger halal à X » en
 toutes lettres.
-Prochaine série à viser : les villes d'Europe où la question se pose
-vraiment (Berlin, Amsterdam, Bruxelles, Vienne, Rome, Madrid) — c'est là
-que le voyageur doute, alors qu'en pays musulman la réponse est « tout ».
+Prochaines séries à viser, toujours par ordre de doute réel du voyageur :
+l'Asie non musulmane (Tokyo et Bangkok sont déjà faites — restent Séoul,
+Taipei, Hong Kong, Singapour fait, Delhi, Colombo) puis l'Amérique du Nord
+(Toronto, Montréal, Chicago, Los Angeles).
 
 ### 2. Les hôtels d'Istanbul et Dubaï attendent le robot OSM
 **Mesuré** : 41 mentions « information non vérifiée » par page, et
@@ -65,6 +66,33 @@ Les 7 autres n'ont pas été examinées une par une.
 ---
 
 ## Fait
+
+### 14 villes d'Europe ont leurs sections « manger » et « prier » — 11 août
+**Avant** : 24 fiches sur 354. **Après** : **38**, soit **2 634 mots
+uniques** de plus sur 28 pages (14 villes × 2 domaines).
+
+Berlin, Amsterdam, Bruxelles, Vienne, Rome, Madrid, Milan, Munich, Genève,
+Lyon, Marseille, Birmingham, Manchester, Rotterdam.
+
+**Pourquoi l'Europe et pas le Golfe** : en pays musulman la réponse est
+« tout est halal », la page est vite écrite et sert peu. En Europe, c'est
+là que le voyageur doute — donc là que nous avons quelque chose à dire.
+
+Deux vérités européennes que peu de guides écrivent franchement, et qui
+valent plus que dix adresses :
+ · **aucun label d'État n'existe en Europe** — la certification est privée
+   et diffère d'un organisme et d'un pays à l'autre ;
+ · **« viande halal » ne veut pas dire « sans alcool »** — beaucoup de
+   restaurants à viande halal servent du vin. Deux questions distinctes.
+
+Et les difficultés sont dites, pas gommées : à Madrid le jambon est partout
+y compris là où on ne l'attend pas, à Munich la cuisine bavaroise tourne
+autour du porc, à Milan il n'y a pas de grande mosquée visible, à Marseille
+il n'y a pas de mosquée centrale — le projet n'a jamais abouti.
+
+Vérifié : les sections sortent en français sur voyageshalal.fr et en anglais
+sur gohalaltravel.com, et les 1 629 pages restent à zéro titre coupé, zéro
+description coupée, zéro H1 manquant, zéro page lente.
 
 ### 14 villes ont leurs sections « manger » et « prier » — 11 août
 **Avant** : 10 fiches sur 354 (Istanbul et Dubaï en faisaient déjà partie).
