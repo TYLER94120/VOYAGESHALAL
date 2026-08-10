@@ -13,6 +13,7 @@ import BoardVoyageur from '@/components/home/BoardVoyageur'
 import { HomeScoreRanking } from '@/components/HomeScoreRanking'
 import IslamicPattern from '@/components/ui/IslamicPattern'
 import SearchBarHome from '@/components/search/SearchBarHome'
+import { photoLargeur } from '@/lib/imageLargeur'
 import { getDomainSEO, FR_URL, EN_URL } from '@/lib/domain'
 import { getVillesCounts } from '@/lib/villeStats'
 
@@ -154,7 +155,9 @@ export default async function HomePage() {
       >
         {/* Image d'architecture islamique (sans personne) + voile sombre */}
         <Image
-          src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1920&q=80"
+          // Fond à 42 % d'opacité sous un voile sombre : 1200 px suffisent,
+          // la différence avec 1920 est invisible et pèse trois fois moins.
+          src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&q=75"
           alt={isEN ? 'Blue Mosque of Istanbul at sunset' : 'Mosquée Bleue d\'Istanbul au coucher du soleil'}
           fill
           priority
@@ -198,7 +201,8 @@ export default async function HomePage() {
                     border: '1px solid rgba(201,168,76,0.35)',
                     display: 'flex', flexDirection: 'column', justifyContent: 'flex-end',
                     backgroundImage: v.image
-                      ? `linear-gradient(180deg, rgba(11,26,15,0.15) 20%, rgba(11,26,15,0.92)), url(${v.image})`
+                      // 168 px à l'écran : inutile de télécharger du 1600.
+                      ? `linear-gradient(180deg, rgba(11,26,15,0.15) 20%, rgba(11,26,15,0.92)), url(${photoLargeur(v.image, 168)})`
                       : 'linear-gradient(160deg, #1d4a35, #0e2013)',
                     backgroundSize: 'cover', backgroundPosition: 'center',
                     textAlign: 'left',

@@ -6,6 +6,8 @@ import { computePrayerTimesFull } from '@/lib/prayerCalc'
 import { useLanguage } from '@/components/i18n/LanguageProvider'
 import { ENVIES, envieById, niveauHalal } from '@/lib/envies'
 import { conforme } from '@/lib/conformite'
+import { fetchCourt } from '@/lib/fetchCourt'
+import { photoLargeur } from '@/lib/imageLargeur'
 
 // 🎛️ BOARD VOYAGEUR (bento) — l'accueil devient un tableau de bord contextuel :
 // des REPONSES deja calculees, jamais des menus. Il absorbe le Radar Priere
@@ -99,7 +101,7 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
     let osmDone = false
     const mc: Lieu[] = [], rc: Lieu[] = []
     const q = `[out:json][timeout:12];(node["amenity"="place_of_worship"]["religion"="muslim"](around:5000,${pos.lat},${pos.lng});way["amenity"="place_of_worship"]["religion"="muslim"](around:5000,${pos.lat},${pos.lng});node["amenity"~"restaurant|fast_food"]["diet:halal"~"yes|only"](around:3000,${pos.lat},${pos.lng});way["amenity"~"restaurant|fast_food"]["diet:halal"~"yes|only"](around:3000,${pos.lat},${pos.lng}););out center 40;`
-    const p1 = fetch('https://overpass-api.de/api/interpreter', { method: 'POST', body: `data=${encodeURIComponent(q)}` })
+    const p1 = fetchCourt('https://overpass-api.de/api/interpreter', { method: 'POST', body: `data=${encodeURIComponent(q)}`, delai: 5000 })
       .then((r) => r.json())
       .then((d) => {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -114,7 +116,7 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
         }
         osmDone = true
       }).catch(() => {})
-    const p2 = fetch(`/api/spots?lat=${pos.lat}&lng=${pos.lng}&radius=5`)
+    const p2 = fetchCourt(`/api/spots?lat=${pos.lat}&lng=${pos.lng}&radius=5`)
       .then((r) => r.json())
       .then((j) => {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -129,7 +131,7 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
     // villes). Il rend la tuile « ou prier » fiable meme si Overpass est
     // lent ou indisponible. Etiquete « referencé · à vérifier » : ce sont
     // des donnees OpenStreetMap, pas des temoignages ni des verifications.
-    const p3 = fetch(`/api/annuaire?lat=${pos.lat}&lng=${pos.lng}&rayon=8&limit=40`)
+    const p3 = fetchCourt(`/api/annuaire?lat=${pos.lat}&lng=${pos.lng}&rayon=8&limit=40`)
       .then((r) => r.json())
       .then((j) => {
         if (j.ville?.slug) setVilleProche(j.ville.slug as string)
@@ -168,7 +170,7 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
     const slug = villeProche || (pos ? slugifyVille(pos.label) : '')
     if (!slug || slug.length < 3) { setVilleGuide(null); return }
     let off = false
-    fetch(`/api/ville-counts?slug=${encodeURIComponent(slug)}${en ? '&en=1' : ''}`)
+    fetchCourt(`/api/ville-counts?slug=${encodeURIComponent(slug)}${en ? '&en=1' : ''}`)
       .then((r) => r.json())
       .then((j) => { if (!off) setVilleGuide(j.ville ?? null) })
       .catch(() => {})
@@ -180,7 +182,7 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
     let off = false
     setRestoEnvie(undefined); setAvisEnvoye(false)
     type Cand = { nom: string; lat: number; lng: number; cuisine?: string; force?: number; halal?: string }
-    fetch(`/api/annuaire?lat=${pos.lat}&lng=${pos.lng}&rayon=12&type=resto&envie=${envie}&limit=25`)
+    fetchCourt(`/api/annuaire?lat=${pos.lat}&lng=${pos.lng}&rayon=12&type=resto&envie=${envie}&limit=25`)
       .then((r) => r.json())
       .then(async (j) => {
         if (off) return
@@ -201,7 +203,7 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
         let avis: Record<string, number> = {}
         if (mode === 'meilleur') {
           try {
-            const a = await fetch(`/api/avis?ids=${pool.slice(0, 20).map((c) => c.id).join(',')}`).then((r) => r.json())
+            const a = await fetchCourt(`/api/avis?ids=${pool.slice(0, 20).map((c) => c.id).join(',')}`).then((r) => r.json())
             avis = (a.avis as Record<string, number>) ?? {}
           } catch { /* pas d'avis : on retombe sur les criteres objectifs */ }
         }
@@ -229,7 +231,7 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
 
   // ── Spots communautaires (pepite + bande de reels + compteur) ──
   useEffect(() => {
-    fetch('/api/community/spots?limit=30')
+    fetchCourt('/api/community/spots?limit=30')
       .then((r) => r.json())
       .then((j) => setSpots((j.spots as FeedSpot[]) ?? []))
       .catch(() => setSpots([]))
@@ -464,6 +466,9 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
                       if (avisEnvoye) return
                       setAvisEnvoye(true)
                       setRestoEnvie((r) => (r ? { ...r, avis: (r.avis ?? 0) + 1 } : r))
+                      // ÉCRITURE : volontairement sans délai maximum.
+                      // Abandonner côté navigateur n'annulerait rien côté
+                      // serveur, et l'avis partirait peut-être deux fois.
                       fetch('/api/avis', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ id: bestResto.id, nom: bestResto.nom }) }).catch(() => {})
                     }}
                     style={{ minHeight: 44, padding: '0 12px', borderRadius: 999, border: '1px solid rgba(253,250,243,0.25)', background: avisEnvoye ? 'rgba(201,168,76,0.18)' : 'transparent', color: avisEnvoye ? 'var(--or)' : 'var(--creme)', fontWeight: 700, fontSize: 12.5, cursor: avisEnvoye ? 'default' : 'pointer' }}
@@ -577,7 +582,9 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
                     return (
                       <span key={sp.id} style={{
                         flex: 1, height: 62, borderRadius: 10, overflow: 'hidden', position: 'relative',
-                        backgroundImage: img ? `linear-gradient(180deg, rgba(11,26,15,0) 35%, rgba(11,26,15,0.92)), url(${img})` : 'linear-gradient(180deg, #1d4a35, #0e2013)',
+                        // Aperçus de 62 px de haut, trois par ligne : 260 px
+                        // de large suffisent largement.
+                        backgroundImage: img ? `linear-gradient(180deg, rgba(11,26,15,0) 35%, rgba(11,26,15,0.92)), url(${photoLargeur(img, 130)})` : 'linear-gradient(180deg, #1d4a35, #0e2013)',
                         backgroundSize: 'cover', backgroundPosition: 'center', display: 'flex', alignItems: 'flex-end',
                       }}>
                         {sp.video && <span style={{ position: 'absolute', top: 3, left: 4, fontSize: 10 }}>🎬</span>}

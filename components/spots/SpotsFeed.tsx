@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useLanguage } from '@/components/i18n/LanguageProvider'
 import { CATEGORIES, SEUIL_CONFIANCE, prixResume } from '@/lib/community'
 import PrixSpot from '@/components/community/PrixSpot'
+import QcmSpot from '@/components/community/QcmSpot'
 import MediaCapture from '@/components/spots/MediaCapture'
 import ShareSpot from '@/components/community/ShareSpot'
 import type { PrayerSpot } from '@/lib/villeTypes'
@@ -291,6 +292,12 @@ export default function SpotsFeed({ initialSpots }: { initialSpots?: Spot[] }) {
                 {/* 💶 Après « J'y suis allé » sur un resto : le prix payé, 1 tap */}
                 {confirmed[s.id] && (s.categorie === 'resto' || s.categorie === 'boucherie') && (
                   <PrixSpot spotId={s.id} votes={s.prixVotes} en={en} dark />
+                )}
+                {/* ❓ Puis les questions facultatives, une par une. Elles
+                    remplissent exactement ce qui manque à nos données :
+                    l'alcool, le halal affiché, un endroit pour prier. */}
+                {confirmed[s.id] && (
+                  <QcmSpot spotId={s.id} categorie={s.categorie} en={en} dark />
                 )}
                 {/* Enrichissement collectif : astuce + photo/reel — tout optionnel */}
                 {enriching === s.id && (

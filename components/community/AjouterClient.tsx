@@ -4,6 +4,7 @@ import { useCommunity, authFetch } from '@/lib/useCommunity'
 import { useInstantPosition } from '@/lib/useInstantPosition'
 import AuthSheet from '@/components/community/AuthSheet'
 import Celebration from '@/components/community/Celebration'
+import QcmSpot from '@/components/community/QcmSpot'
 import MediaCapture, { compressPhoto } from '@/components/spots/MediaCapture'
 import { useLanguage } from '@/components/i18n/LanguageProvider'
 
@@ -334,6 +335,11 @@ export default function AjouterClient() {
         </div>
       )}
       {done && <Celebration points={done.points} badges={done.badges} impact={done.impact} spotUrl={done.url} onClose={reset} en={en} enAttente={done.enAttente === true}
+        qcm={done.spotId ? (
+          // Le meilleur moment pour ces questions : la personne est ENCORE
+          // sur place, elle vient d'ajouter le lieu. Tout est facultatif.
+          <QcmSpot spotId={done.spotId} categorie={categorie} en={en} />
+        ) : undefined}
         mediaCta={done.spotId && !mediaDone ? (
           <button onClick={() => setMediaOpen(true)}
             style={{ display: 'block', width: '100%', minHeight: 54, borderRadius: 16, border: '2px solid rgba(27,67,50,0.35)', background: '#fff', color: '#1b4332', fontWeight: 900, fontSize: 15, cursor: 'pointer', marginBottom: 12 }}>
