@@ -437,6 +437,36 @@ a.lien-bas:hover { color: var(--creme); }
 .fin p.suite { color: var(--or-clair); font-weight: 600; }
 .fin p.suite:empty { display: none; }
 
+/* Le seul lien sortant place dans le contenu, et il l'est apres les deux
+   boutons : la lecon qui suit et le rendez-vous quotidien passent devant, c'est
+   eux qui servent la seule mesure du site. Mais il est LISIBLE — 16 px, et le
+   lien dans l'or des liens de contenu, pas dans le gris du pied de page ou un
+   lien ne se clique pas. */
+.fin p.apres-lecon {
+  margin: 6px 0 0;
+  padding-top: 20px;
+  border-top: 1px solid var(--trait);
+  width: 100%;
+  max-width: 36ch;
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--texte-2);
+}
+/* Le lien prend sa propre ligne et une hauteur de cible reelle : mesure a
+   414 px, un lien pose dans le fil du texte ne faisait que 19 px de haut. Un
+   lien qu'on rate au doigt n'est pas mieux place qu'un lien de pied de page. */
+.fin p.apres-lecon a {
+  display: block;
+  margin: 8px auto 0;
+  padding: 13px 10px;
+  color: var(--or);
+  font-weight: 600;
+  text-underline-offset: 3px;
+}
+/* La mise en garde garde la MEME taille que le reste : c'est la phrase la plus
+   importante des deux, elle ne doit jamais devenir la plus petite. */
+.fin p.apres-lecon .al-note { display: block; margin-top: 4px; color: var(--texte-3); }
+
 /* La barre du bas reste collee en bas de l'ecran pendant qu'on lit la carte, et
    du texte passe donc derriere elle quand on defile : c'est normal.
 
@@ -1732,6 +1762,12 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
         <div class="moment-zone" data-r="moment-choix" hidden></div>
         <a class="btn" href="index.html">Continuer</a>
         <a class="btn fantome" href="chemin.html">Voir mon chemin</a>
+
+        <p class="apres-lecon">
+          Cette lecon t'a laisse une question personnelle&nbsp;?
+          <a href="https://halalgpt.fr?utm_source=islampasapas&utm_medium=contenu&utm_campaign=fin-lecon-al-fatiha">Pose-la sur halalgpt.fr</a>
+          <span class="al-note">Et pour un cas qui t'engage&nbsp;: demande a un savant, pas a un site.</span>
+        </p>
       </section>
 
     </div>
@@ -1953,6 +1989,11 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
         <div class="moment-zone" data-r="moment-choix" hidden></div>
         <a class="btn" href="index.html">Continuer</a>
         <a class="btn fantome" href="chemin.html">Voir mon chemin</a>
+        <p class="apres-lecon">
+          Cette lecon t'a laisse une question personnelle&nbsp;?
+          <a href="https://halalgpt.fr?utm_source=islampasapas&utm_medium=contenu&utm_campaign=fin-lecon-invocations-matin">Pose-la sur halalgpt.fr</a>
+          <span class="al-note">Et pour un cas qui t'engage&nbsp;: demande a un savant, pas a un site.</span>
+        </p>
       </section>
 
     </div>
@@ -2227,6 +2268,11 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
         <div class="moment-zone" data-r="moment-choix" hidden></div>
         <a class="btn" href="index.html">Continuer</a>
         <a class="btn fantome" href="chemin.html">Voir mon chemin</a>
+        <p class="apres-lecon">
+          Cette lecon t'a laisse une question personnelle&nbsp;?
+          <a href="https://halalgpt.fr?utm_source=islampasapas&utm_medium=contenu&utm_campaign=fin-lecon-six-piliers-foi">Pose-la sur halalgpt.fr</a>
+          <span class="al-note">Et pour un cas qui t'engage&nbsp;: demande a un savant, pas a un site.</span>
+        </p>
       </section>
 
     </div>
@@ -2578,6 +2624,11 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
         <div class="moment-zone" data-r="moment-choix" hidden></div>
         <a class="btn" href="index.html">Continuer</a>
         <a class="btn fantome" href="chemin.html">Voir mon chemin</a>
+        <p class="apres-lecon">
+          Cette lecon t'a laisse une question personnelle&nbsp;?
+          <a href="https://halalgpt.fr?utm_source=islampasapas&utm_medium=contenu&utm_campaign=fin-lecon-priere-gestes">Pose-la sur halalgpt.fr</a>
+          <span class="al-note">Et pour un cas qui t'engage&nbsp;: demande a un savant, pas a un site.</span>
+        </p>
       </section>
 
     </div>
@@ -2928,6 +2979,11 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
         <div class="moment-zone" data-r="moment-choix" hidden></div>
         <a class="btn" href="index.html">Continuer</a>
         <a class="btn fantome" href="parcours.html">Voir tout le programme</a>
+        <p class="apres-lecon">
+          Cette lecon t'a laisse une question personnelle&nbsp;?
+          <a href="https://halalgpt.fr?utm_source=islampasapas&utm_medium=contenu&utm_campaign=fin-lecon-alphabet-arabe">Pose-la sur halalgpt.fr</a>
+          <span class="al-note">Et pour un cas qui t'engage&nbsp;: demande a un savant, pas a un site.</span>
+        </p>
       </section>
 
     </div>
@@ -3190,6 +3246,11 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
         <div class="moment-zone" data-r="moment-choix" hidden></div>
         <a class="btn" href="index.html">Continuer</a>
         <a class="btn fantome" href="parcours.html">Voir tout le programme</a>
+        <p class="apres-lecon">
+          Cette lecon t'a laisse une question personnelle&nbsp;?
+          <a href="https://halalgpt.fr?utm_source=islampasapas&utm_medium=contenu&utm_campaign=fin-lecon-prophetes-coran">Pose-la sur halalgpt.fr</a>
+          <span class="al-note">Et pour un cas qui t'engage&nbsp;: demande a un savant, pas a un site.</span>
+        </p>
       </section>
 
     </div>

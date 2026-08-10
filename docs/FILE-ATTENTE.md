@@ -43,17 +43,51 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    la reponse sur un telephone avec du vrai reseau. Attend une capture d'ecran de
    Mohamed, ou le deploiement.
 
-4. **Les liens sortants sont tous au mauvais endroit.**
-   *Preuve :* mesure du 10 aout — **48 liens sortants, 48 en pied de page, 0 dans
-   le contenu**. Les 8 qui sont des phrases utiles (« Une question personnelle ?
-   Pose-la sur halalgpt.fr ») sont elles aussi enfermees dans le pied. Ils sont
-   maintenant balises, donc mesurables, mais un lien de pied de page ne se clique
-   pas. Prediction ecrite d'avance : proche de zero. A deplacer dans le contenu
-   apres confirmation par HalalGPT.
+4. **Deux lecons sur six proposent la mauvaise deuxieme action.**
+   *Preuve :* mesure du 10 aout, cycle 4 — sur l'ecran de fin, quatre lecons
+   offrent « Voir mon chemin » (`chemin.html`, la page de progression) et
+   **`alphabet-arabe` et `prophetes-coran` offrent « Voir tout le programme »**
+   (`parcours.html`, le catalogue). Pour quelqu'un qui vient de finir, la page de
+   progression sert la seule mesure du site — revenir — et le catalogue montre
+   surtout qu'il n'y a que six lecons. Trouve en posant le lien sortant de fin de
+   lecon ; non corrige dans le meme cycle, un cycle ne fait qu'un element.
 
 ---
 
 ## Fait
+
+- **Un lien sortant enfin pose la ou la question nait** *(10 aout, cycle 4)* —
+  **avant : 48 liens sortants, 48 en pied de page, 0 dans le contenu des pages
+  servies. Apres : 6 dans le contenu**, un par lecon, sur l'ecran de fin. 11
+  controles au navigateur a 414x690, la lecon jouee en entier a chaque fois —
+  **un lien qu'on n'atteint pas ne compte pas** :
+  - **atteint dans les 6 lecons**, chacun avec **sa propre campagne**
+    (`fin-lecon-<lecon>`), donc mesurable lecon par lecon ;
+  - **16 px et la couleur d'un lien de contenu** (`#c9a84c`), pas les 14 px en
+    gris `--texte-2` du pied — c'est ecrit dans le CSS du pied de page, la
+    couleur du lien y est volontairement eteinte ;
+  - **le rendez-vous quotidien et « Continuer » passent avant lui** (positions
+    mesurees 4 < 5 < 7). La seule mesure du site est qu'on revienne, pas qu'on
+    sorte : un lien sortant ne double jamais le retour.
+  *Un defaut trouve et corrige en mesurant.* Pose dans le fil de la phrase, le
+  lien ne faisait que **19 px de haut** — sous le minimum WCAG de 24, tres loin
+  des 56 px de la charte. Un lien qu'un doigt rate n'est pas mieux place qu'un
+  lien de pied de page. Il prend maintenant sa propre ligne : **51 px**. Le seuil
+  du test est passe de 24 a 44.
+  *Deux choix contraires a l'intitule de l'element, assumes.* (1) La phrase
+  **reste aussi dans le pied**, avec `utm_medium=pied` : la prediction ecrite
+  d'avance etait « le pied, proche de zero ». En la retirant, la prediction
+  devenait intestable. Deux emplacements, deux campagnes, la comparaison se fera
+  au deploiement. (2) **halalcheck.fr et gohalaltravel.com n'ont recu aucun lien
+  de contenu** : aucun moment d'une lecon d'apprentissage ne rend utile un
+  scanner de produits ou un guide de voyage. Leur inventer un moment, c'est
+  refaire la decoration qu'on corrige ici.
+  *Et un endroit ou j'ai refuse de le poser.* Les cartes `.prudence` disent
+  « demande a un savant, **pas a un site** ». Y ajouter un lien vers une IA
+  contredirait la phrase d'a cote, sur le seul point ou le site s'engage a ne pas
+  trancher. Le bloc de fin garde donc les deux moities : la question personnelle
+  vers halalgpt.fr, **et** le cas qui engage vers un savant — cette derniere
+  ligne dans la meme taille que le reste, jamais plus petite.
 
 - **La seance est devenue gagnable : une carte manquee revient** *(10 aout,
   cycle 3)* — **avant : 0 carte manquee ne revenait, une erreur restait une
