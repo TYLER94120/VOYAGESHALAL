@@ -51,8 +51,13 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
   const [mosquee, setMosquee] = useState<Lieu | null | undefined>(undefined)
   const [resto, setResto] = useState<Lieu | null | undefined>(undefined)
   const [spots, setSpots] = useState<FeedSpot[] | null>(null)
-  // La recherche OSM a-t-elle abouti ? Sans elle on ne peut PAS affirmer
-  // « aucun lieu connu » — on dit qu'on n'a pas pu chercher (honnetete).
+  // ⚠️ AVONS-NOUS PU CHERCHER ? Sans réponse d'AUCUNE source on ne peut pas
+  // affirmer « aucun lieu connu ». Mais on ne peut pas non plus accuser la
+  // connexion : Mohamed a photographié « Recherche impossible (pas de
+  // connexion) » alors qu'il était en 4G et que le compteur « 23 spots
+  // partagés » — servi par notre propre API — s'affichait juste à côté.
+  // C'était OpenStreetMap qui n'avait pas répondu à temps, rien d'autre.
+  // On ne parle donc plus de connexion : on dit ce qu'on sait.
   const [osmOk, setOsmOk] = useState(true)
   // Guide de la ville OU L'ON EST (compteurs reels), pour proposer mieux
   // qu'une vedette generique quand il n'y a pas encore de pepite autour.
@@ -107,6 +112,9 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
     if (!pos) return
     let cancelled = false
     let osmDone = false
+    // Notre propre annuaire : s'il répond, même avec zéro résultat, la
+    // recherche A EU LIEU. C'est lui qui fait foi pour « aucun lieu connu ».
+    let annuaireDone = false
     const mc: Lieu[] = [], rc: Lieu[] = []
     const q = `[out:json][timeout:12];(node["amenity"="place_of_worship"]["religion"="muslim"](around:5000,${pos.lat},${pos.lng});way["amenity"="place_of_worship"]["religion"="muslim"](around:5000,${pos.lat},${pos.lng});node["amenity"~"restaurant|fast_food"]["diet:halal"~"yes|only"](around:3000,${pos.lat},${pos.lng});way["amenity"~"restaurant|fast_food"]["diet:halal"~"yes|only"](around:3000,${pos.lat},${pos.lng}););out center 40;`
     const p1 = fetchCourt('https://overpass-api.de/api/interpreter', { method: 'POST', body: `data=${encodeURIComponent(q)}`, delai: 5000 })
@@ -142,6 +150,7 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
     const p3 = fetchCourt(`/api/annuaire?lat=${pos.lat}&lng=${pos.lng}&rayon=8&limit=40`)
       .then((r) => r.json())
       .then((j) => {
+        annuaireDone = true
         if (j.ville?.slug) setVilleProche(j.ville.slug as string)
         for (const l of (j.lieux as { nom: string; lat: number; lng: number; type: string; cuisine?: string; halal?: string }[]) ?? []) {
           // on garde cuisine et niveau halal : sans eux, la tuile n'affiche
@@ -168,8 +177,38 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
       const parDistance = (a: Lieu, b: Lieu) => a.distM - b.distM || rang(a) - rang(b)
       mc.splice(0, mc.length, ...dedupe(mc).sort(parDistance))
       rc.splice(0, rc.length, ...dedupe(rc).sort(parDistance))
-      setOsmOk(osmDone || mc.length > 0 || rc.length > 0)
+      setOsmOk(osmDone || annuaireDone || mc.length > 0 || rc.length > 0)
       setMosquee(mc[0] ?? null); setResto(rc[0] ?? null)
+
+      // 🔁 UNE SECONDE CHANCE POUR LA CAMPAGNE.
+      // 5 secondes suffisent en ville, pas dans un village : notre annuaire
+      // n'y a rien, et OpenStreetMap — la seule source qui connaisse la
+      // mosquée du coin — est justement la plus lente à répondre. Abandonner
+      // là, c'est afficher « aucun lieu connu » à quelqu'un qui a une mosquée
+      // à trois cents mètres.
+      // On ne relance QUE si la première tentative a échoué ET qu'on n'a rien
+      // à montrer : jamais de deuxième appel quand le premier a servi.
+      if (!osmDone && mc.length === 0 && rc.length === 0) {
+        fetchCourt('https://overpass-api.de/api/interpreter', { method: 'POST', body: `data=${encodeURIComponent(q)}`, delai: 15000 })
+          .then((r) => r.json())
+          .then((d) => {
+            if (cancelled) return
+            const m2: Lieu[] = [], r2: Lieu[] = []
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            for (const el of (d.elements as any[]) ?? []) {
+              const la = el.lat ?? el.center?.lat, lo = el.lon ?? el.center?.lon
+              if (!la || !lo || !el.tags?.name) continue
+              const lieu: Lieu = { nom: el.tags.name, lat: la, lng: lo, source: 'osm', distM: hav(pos.lat, pos.lng, la, lo), cuisine: el.tags.cuisine ?? undefined, halal: el.tags['diet:halal'] ?? undefined }
+              if (el.tags.amenity === 'place_of_worship') m2.push(lieu)
+              else if (conforme(el.tags.name, el.tags.cuisine, el.tags['diet:halal'])) r2.push(lieu)
+            }
+            m2.sort(parDistance); r2.sort(parDistance)
+            if (m2[0]) setMosquee(m2[0])
+            if (r2[0]) setResto(r2[0])
+            setOsmOk(true)
+          })
+          .catch(() => { /* on garde le message honnête déjà affiché */ })
+      }
     })
     return () => { cancelled = true }
   }, [pos])
@@ -405,7 +444,7 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
                 <p style={{ ...T.meta, marginTop: 8 }}>
                   {osmOk
                     ? (en ? 'No known prayer place within 5 km — ' : 'Aucun lieu de prière connu à moins de 5 km — ')
-                    : (en ? 'Could not search nearby places (no connection) — ' : 'Recherche des lieux impossible (pas de connexion) — ')}
+                    : (en ? 'Could not finish the search — try again in a moment. ' : 'Recherche non terminée — réessaie dans un instant. ')}
                   <Link href="/qibla" onClick={(e) => e.stopPropagation()} style={{ color: 'var(--or)', fontWeight: 800, display: 'inline-flex', alignItems: 'center', minHeight: 44, padding: '0 10px', borderRadius: 999, border: '1px solid rgba(201,168,76,0.4)' }}>🧭 Qibla</Link>
                 </p>
               )}
@@ -546,7 +585,7 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
                 : !bestResto ? <p style={{ ...T.meta, marginTop: 4 }}>{
                     envieActive ? (en ? `No halal ${envieActive.en.toLowerCase()} listed within 12 km` : `Aucun ${envieActive.fr.toLowerCase()} signalé halal à moins de 12 km`)
                       : osmOk ? (en ? 'None reported nearby' : 'Aucun signalé à proximité')
-                      : (en ? 'Search unavailable (no connection)' : 'Recherche indisponible (pas de connexion)')
+                      : (en ? 'Search not finished — try again' : 'Recherche non terminée — réessaie')
                   }</p>
                 : (
                   <>

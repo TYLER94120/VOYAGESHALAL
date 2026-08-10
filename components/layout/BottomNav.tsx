@@ -23,7 +23,11 @@ export default function BottomNav() {
   const restosHref = city ? `/destinations/${city.slug}` : '/destinations'
 
   const tools = [
-    { href: restosHref, icon: city ? '📍' : '🗺️', label: city ? city.nom : (en ? 'Destinations' : 'Destinations') },
+    // 🔎 et non 📍 : c'est la ville qu'on CONSULTE, pas là où l'on est.
+    // Sur une capture de Mohamed, ce bouton affichait « 📍 Marrakech »
+    // pendant que la barre de position affichait « 📍 Houara Oulad Raho ».
+    // Les deux étaient justes ; c'est l'épingle commune qui mentait.
+    { href: restosHref, icon: city ? '🔎' : '🗺️', label: city ? `${en ? 'City' : 'Ville'} : ${city.nom}` : 'Destinations' },
     { href: localizedHref('/mosquee-proche', en), icon: '🕌', label: t('nav.mosque') },
     { href: '/qibla', icon: '🧭', label: t('nav.qibla') },
     { href: localizedHref('/planificateur', en), icon: '🗺️', label: en ? 'Trip planner' : 'Planificateur' },
