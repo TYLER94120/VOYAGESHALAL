@@ -35,6 +35,7 @@ pas besoin de savoir ou est le depot des autres.
 | `ne-jamais-inventer` | Trois etats et jamais deux : verifie, ecarte, non verifie. Ce qui protege Mohamed, et ce qui nous separe des fermes de contenu. |
 | `ce-que-google-affiche` | Les titres et descriptions qui font choisir une page. Le seul levier qui agit le jour meme. |
 | `servir-deux-domaines` | Deux domaines sur un seul code sans qu'ils se penalisent : hreflang dans les pages, noms propres par langue, force-dynamic, cache indexe par langue. |
+| `repondre-en-conditions-degradees` | En rayon le reseau n'est pas absent, il est lent. Delai maximum, chaine de replis, et dire d'ou vient ce qu'on affiche. |
 
 ## Ajouter une competence
 
@@ -65,7 +66,5 @@ autres agents.
 - **Rendre un produit addictif** — la boucle de retour differe selon le produit ;
   la matiere est dans `docs/ADDICTION.md`.
 - **Le maillage interne** — detecter les pages orphelines et les rattacher.
-- **Repondre en conditions degradees** — en rayon, le reseau n'est pas absent, il
-  est lent, et une requete qui traine dix secondes est pire qu'un echec immediat.
 - **Ecrire a Mohamed** — francais tres simple, cinq lignes, une adresse exacte a
   ouvrir, et ce qu'il peut VOIR ou ENTENDRE.
