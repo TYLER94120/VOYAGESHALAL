@@ -78,6 +78,23 @@ Les 7 autres n'ont pas été examinées une par une.
 
 ## Fait
 
+### Deux horaires de prière différents sur le même écran — 11 août
+**Constaté sur une capture de Mohamed** : le bandeau du haut annonçait
+Dhuhr à **13h37**, la tuile du tableau de bord **13h24**. Quatorze minutes
+d'écart, sur un produit de prière.
+
+Vérifié par un calcul solaire indépendant (équation du temps + longitude) :
+Dhuhr à Marrakech le 11 août = **13h37**. Le bandeau avait raison, et la
+bibliothèque de calcul est juste elle aussi (13h38 en méthode Ligue
+islamique mondiale).
+
+La cause n'était donc pas un mauvais calcul mais **deux sources** : le
+bandeau partait de la ville mémorisée, le tableau de bord de la position
+réelle, et le board forçait la méthode 3 en dur alors que le bandeau lit
+le choix de l'utilisateur. Les deux lisent désormais la même position et
+la même méthode.
+**Mesure après correction** : une seule heure affichée, **13:38**.
+
 ### Vitesse de la page d'accueil — 11 août
 Un appel réseau restait **13,7 s** sans jamais se terminer (le serveur
 répond en 4 ms) : `fetch` n'a aucun délai maximum. Les 7 lectures du

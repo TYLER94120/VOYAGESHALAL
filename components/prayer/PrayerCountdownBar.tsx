@@ -1,7 +1,7 @@
 'use client'
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { useLocation } from '@/components/location/LocationProvider'
+import { useInstantPosition } from '@/lib/useInstantPosition'
 import LanguageSwitcher from '@/components/i18n/LanguageSwitcher'
 import { useLanguage } from '@/components/i18n/LanguageProvider'
 
@@ -10,8 +10,22 @@ const LABELS: Record<string, string> = { Fajr: 'Fajr', Dhuhr: 'Dhuhr', Asr: 'ʿA
 
 // Bandeau fin, sticky, présent sur toutes les pages : prochaine prière + compte à rebours
 // (+ accès langue sur mobile, où le header est masqué).
+// ⚠️ UNE SEULE SOURCE D'HORAIRES POUR TOUT LE SITE.
+// Mohamed a photographié l'accueil : le bandeau annonçait Dhuhr à 13h37 et
+// la tuile du tableau de bord 13h24, sur le même écran. Quatorze minutes
+// d'écart, sur un produit de prière.
+//
+// La cause n'était pas un mauvais calcul — vérifié par un calcul solaire
+// indépendant, 13h37 est juste pour Marrakech ce jour-là — mais DEUX
+// SOURCES : ce bandeau partait de la ville mémorisée, le tableau de bord
+// de la position réelle. Deux points différents donnent deux horaires
+// différents, et l'utilisateur n'a aucun moyen de savoir lequel croire.
+//
+// Les deux lisent désormais la MÊME position (useInstantPosition, la même
+// que le board) et la même méthode de calcul.
 export default function PrayerCountdownBar() {
-  const { city } = useLocation()
+  const { pos } = useInstantPosition()
+  const city = pos ? { nom: pos.label, lat: pos.lat, lng: pos.lng } : null
   const { lang } = useLanguage()
   const en = lang === 'en'
   const [timings, setTimings] = useState<Record<string, string> | null>(null)

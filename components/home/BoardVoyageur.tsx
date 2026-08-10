@@ -71,12 +71,17 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
     return () => clearInterval(id)
   }, [])
 
-  // ── Fenetre de priere (identique au Radar : calcul local, zero reseau) ──
+  // ── Fenetre de priere (calcul local, zero reseau) ──
+  // La méthode et l'école viennent du choix de l'utilisateur, comme dans le
+  // bandeau du haut : forcer 3 en dur ici donnait deux horaires différents
+  // sur le même écran quand la personne avait choisi une autre méthode.
   const fenetre = useMemo(() => {
     if (!pos) return null
     try {
-      const today = computePrayerTimesFull(pos.lat, pos.lng, 3, 0, new Date(now))
-      const tomorrow = computePrayerTimesFull(pos.lat, pos.lng, 3, 0, new Date(now + 86_400_000))
+      const meth = Number((typeof localStorage !== 'undefined' && localStorage.getItem('vh_prayer_method')) || 3)
+      const ecole = Number((typeof localStorage !== 'undefined' && localStorage.getItem('vh_prayer_school')) || 0)
+      const today = computePrayerTimesFull(pos.lat, pos.lng, meth, ecole, new Date(now))
+      const tomorrow = computePrayerTimesFull(pos.lat, pos.lng, meth, ecole, new Date(now + 86_400_000))
       const seq: { key: string; start: Date; end: Date }[] = [
         { key: 'Fajr', start: today.Fajr, end: today.Sunrise },
         { key: 'Dhuhr', start: today.Dhuhr, end: today.Asr },
@@ -281,7 +286,9 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
   // Les 5 prieres du jour (meme calcul local que la tuile maitre)
   const journee = (() => {
     try {
-      const t = computePrayerTimesFull(pos.lat, pos.lng, 3, 0, new Date(now))
+      const meth = Number((typeof localStorage !== 'undefined' && localStorage.getItem('vh_prayer_method')) || 3)
+      const ecole = Number((typeof localStorage !== 'undefined' && localStorage.getItem('vh_prayer_school')) || 0)
+      const t = computePrayerTimesFull(pos.lat, pos.lng, meth, ecole, new Date(now))
       return (['Fajr', 'Dhuhr', 'Asr', 'Maghrib', 'Isha'] as const).map((k) => ({ k, d: t[k] }))
     } catch { return null }
   })()
