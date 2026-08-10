@@ -507,7 +507,7 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
                     📖 {en ? 'All restos in the city' : 'Tous les restos de la ville'}
                   </Link>
                 )}
-                <a href={en ? '/halalgpt' : 'https://halalgpt.fr'} style={{ minHeight: 44, display: 'inline-flex', alignItems: 'center', padding: '0 14px', borderRadius: 999, background: 'var(--or)', color: '#0b1a0f', fontWeight: 800, fontSize: 13, textDecoration: 'none' }}>
+                <a href={en ? '/halalgpt' : 'https://halalgpt.fr?utm_source=voyageshalal&utm_medium=passerelle&utm_campaign=board-accueil'} style={{ minHeight: 44, display: 'inline-flex', alignItems: 'center', padding: '0 14px', borderRadius: 999, background: 'var(--or)', color: '#0b1a0f', fontWeight: 800, fontSize: 13, textDecoration: 'none' }}>
                   🌙 {en ? 'Ask HalalGPT' : 'Demander à HalalGPT'}
                 </a>
               </div>

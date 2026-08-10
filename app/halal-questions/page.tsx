@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default async function HalalQuestionsPage() {
   const { isEN } = await getDomainSEO()
-  if (!isEN) redirect('https://halalgpt.fr/questions')
+  if (!isEN) redirect('https://halalgpt.fr/questions?utm_source=voyageshalal&utm_medium=passerelle&utm_campaign=redirection-questions')
 
   return (
     <main className="min-h-screen" style={{ backgroundColor: '#0b1a0f' }}>

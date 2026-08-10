@@ -17,8 +17,8 @@ function getFooterLinks(en: boolean) {
       { href: '/qibla', label: en ? '🧭 Qibla finder' : '🧭 Calculateur Qibla' },
       { href: localizedHref('/mosquee-proche', en), label: en ? '🕌 Nearest mosque' : '🕌 Mosquée la plus proche' },
       { href: localizedHref('/omra', en), label: en ? '🕋 Umrah & Hajj' : '🕋 Omra & Hajj' },
-      { href: en ? '/halalgpt' : 'https://halalgpt.fr', label: en ? '🌙 Ask HalalGPT — halal AI' : '🌙 HalalGPT — l’IA musulmane' },
-      ...(en ? [] : [{ href: 'https://halalcheck.fr', label: '✓ HalalCheck — scanner halal' }]),
+      { href: en ? '/halalgpt' : 'https://halalgpt.fr?utm_source=voyageshalal&utm_medium=passerelle&utm_campaign=pied-de-page', label: en ? '🌙 Ask HalalGPT — halal AI' : '🌙 HalalGPT — l’IA musulmane' },
+      ...(en ? [] : [{ href: 'https://halalcheck.fr?utm_source=voyageshalal&utm_medium=passerelle&utm_campaign=pied-de-page', label: '✓ HalalCheck — scanner halal' }]),
     ],
     [en ? 'Resources' : 'Ressources']: [
       { href: '/blog', label: en ? 'Blog & Guides' : 'Blog & Guides' },

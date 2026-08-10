@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function HalalQuestionPage({ params }: Props) {
   const { isEN } = await getDomainSEO()
-  if (!isEN) redirect('https://halalgpt.fr/questions')
+  if (!isEN) redirect('https://halalgpt.fr/questions?utm_source=voyageshalal&utm_medium=passerelle&utm_campaign=redirection-question')
 
   const { slug } = await params
   const qa = getHalalQA(slug)

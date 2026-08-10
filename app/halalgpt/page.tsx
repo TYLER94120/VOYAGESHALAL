@@ -25,7 +25,7 @@ const POPULAR_SLUGS = [
 export default async function AskHalalGPTPage() {
   const { isEN } = await getDomainSEO()
   // The French audience has its own dedicated site.
-  if (!isEN) redirect('https://halalgpt.fr')
+  if (!isEN) redirect('https://halalgpt.fr?utm_source=voyageshalal&utm_medium=passerelle&utm_campaign=redirection-halalgpt')
 
   const popular = POPULAR_SLUGS
     .map((slug) => HALAL_QA_EN.find((q) => q.slug === slug))

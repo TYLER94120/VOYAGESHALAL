@@ -16,7 +16,11 @@
 // reperable. Il garde son texte — jamais une icone seule.
 // zIndex 90 : sous les panneaux du dock (98-99), jamais par-dessus.
 export default function HalalGPTFab({ en = false }: { en?: boolean }) {
-  const href = en ? '/halalgpt' : 'https://halalgpt.fr'
+  // Balise : ce bouton est sur toutes les pages, c'est notre plus gros
+  // emetteur potentiel — et jusqu'ici ses clics arrivaient anonymes chez
+  // HalalGPT, donc invisibles. On ne peut pas juger un emplacement qu'on
+  // ne voit pas.
+  const href = en ? '/halalgpt' : 'https://halalgpt.fr?utm_source=voyageshalal&utm_medium=passerelle&utm_campaign=bouton-flottant'
   const label = en ? 'Halal question?' : 'Question halal ?'
   return (
     <a
