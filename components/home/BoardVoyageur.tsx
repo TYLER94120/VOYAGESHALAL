@@ -407,7 +407,7 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
     <section style={{ background: 'var(--nuit)', padding: '14px 14px 6px' }} aria-label={en ? 'Your travel board' : 'Ton tableau de bord voyage'}>
       <div className="board-wrap" style={{ margin: '0 auto' }}>
         {/* Barre ville : 1 tap = GPS exact (le roaming fausse la geoloc IP) */}
-        <div className="board-topbar" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 10 }}>
+        <div className="board-topbar" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 8, flexWrap: 'wrap', marginBottom: 10 }}>
           <PositionBadge compact etat={etatPos} en={en} apresRefus={() => { window.location.href = '/horaires-priere' }} />
           {/* 🌤 LA TEMPÉRATURE SE MET LÀ OÙ L'ŒIL EST DÉJÀ.
               Je l'avais glissée dans la petite ligne Qibla, six tuiles plus

@@ -1,5 +1,6 @@
 'use client'
-import { useInstantPosition } from '@/lib/useInstantPosition'
+import { useState } from 'react'
+import { useInstantPosition, distanceKm } from '@/lib/useInstantPosition'
 
 // 📍 LA POSITION, DITE EN CLAIR — UN SEUL COMPOSANT POUR TOUT LE SITE.
 //
@@ -40,7 +41,7 @@ export default function PositionBadge({
   /** Où envoyer l'utilisateur si le navigateur refuse la géolocalisation. */
   apresRefus?: () => void
 }) {
-  const { pos, source, geoLoading, geoErr, refineGps } = etat
+  const { pos, source, geoLoading, geoErr, refineGps, detectee, adopterDetectee } = etat
   // Trois qualités, pas deux : une ville choisie à la main n'est ni une
   // position exacte ni une estimation ratée — c'est un choix, et le dire
   // évite de proposer un bouton qui ferait perdre ce choix par erreur.
@@ -55,9 +56,53 @@ export default function PositionBadge({
 
   const demander = () => { refineGps().then((ok) => { if (!ok) apresRefus?.() }) }
 
+  // « Rester sur X » : on ne redemande plus pour cette visite. Poser deux fois
+  // la même question à quelqu'un qui a déjà répondu, c'est du harcèlement.
+  const [ignore, setIgnore] = useState(false)
+
+  // 🧭 « TU N'ES PLUS LÀ-BAS ? » — la question qu'il faut poser.
+  //
+  // Mohamed a choisi une ville à la main, puis l'accueil est resté dessus
+  // alors qu'il était à des centaines de kilomètres, sans jamais le lui
+  // signaler. Un choix manuel doit primer, sinon il ne sert à rien — mais
+  // le site sait où il est, et faire semblant de l'ignorer est pire que de
+  // demander.
+  //
+  // 80 km : au-delà, ce n'est plus la même ville ni la même météo ni les
+  // mêmes horaires. En deçà, on se tait — personne n'a envie qu'on lui
+  // demande ça à chaque banlieue traversée.
+  const ailleurs =
+    !ignore && detectee && pos && (source === 'manual' || source === 'city' || source === 'last') &&
+    distanceKm(pos, detectee) > 80
+      ? detectee
+      : null
+
+  /** La question « tu n'es plus là-bas ? », identique dans les deux formes.
+   *  Elle vaut surtout sur l'ACCUEIL, en pilule compacte : c'est là que
+   *  Mohamed l'attendait, et la version compacte n'y avait pas droit. */
+  const questionAilleurs = ailleurs && (
+    <div style={{ padding: '9px 12px', borderRadius: 12, background: clair ? 'rgba(201,168,76,0.14)' : 'rgba(201,168,76,0.18)', border: `1px solid ${clair ? 'rgba(201,168,76,0.45)' : 'rgba(201,168,76,0.5)'}` }}>
+      <p style={{ margin: 0, fontSize: 13.5, fontWeight: 800, color: tx }}>
+        {en
+          ? `You are not in ${pos!.label}? We place you in ${ailleurs.label}.`
+          : `Tu n’es pas à ${pos!.label} ? On te situe à ${ailleurs.label}.`}
+      </p>
+      <div style={{ display: 'flex', gap: 7, flexWrap: 'wrap', marginTop: 8 }}>
+        <button onClick={adopterDetectee}
+          style={{ minHeight: 44, padding: '0 15px', borderRadius: 999, border: 'none', background: 'var(--or)', color: 'var(--nuit)', fontSize: 13.5, fontWeight: 900, cursor: 'pointer' }}>
+          {en ? `Use ${ailleurs.label}` : `Passer à ${ailleurs.label}`}
+        </button>
+        <button onClick={() => setIgnore(true)}
+          style={{ minHeight: 44, padding: '0 15px', borderRadius: 999, border: 'none', background: 'transparent', color: tx2, fontSize: 13.5, fontWeight: 700, cursor: 'pointer' }}>
+          {en ? `Stay on ${pos!.label}` : `Rester sur ${pos!.label}`}
+        </button>
+      </div>
+    </div>
+  )
+
   // ── Pilule compacte : le nom + l'état, et le tap relance la localisation ──
   if (compact) {
-    return (
+    const pilule = (
       <button
         onClick={demander}
         aria-label={en ? 'Update my location' : 'Mettre à jour ma position'}
@@ -80,6 +125,16 @@ export default function PositionBadge({
                 : (en ? '· approx. — tap' : '· approx. — appuie')}
             </span></>}
       </button>
+    )
+    if (!questionAilleurs) return pilule
+    // Toute la largeur : coincée entre la température et « Tout voir », la
+    // question se retrouvait sur quatre lignes et écrasait ses voisines.
+    // Elle est rare — elle a le droit de prendre la place quand elle sort.
+    return (
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 8, flex: '1 1 100%' }}>
+        {pilule}
+        <div style={{ width: '100%' }}>{questionAilleurs}</div>
+      </div>
     )
   }
 
@@ -146,6 +201,8 @@ export default function PositionBadge({
           </button>
         </>
       )}
+
+      {questionAilleurs && <div style={{ marginTop: 10 }}>{questionAilleurs}</div>}
 
       {geoErr && (
         <div style={{ marginTop: 9, padding: '9px 11px', borderRadius: 11, background: 'rgba(220,38,38,0.12)', border: '1px solid rgba(220,38,38,0.3)' }}>

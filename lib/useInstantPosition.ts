@@ -46,12 +46,49 @@ export const DEFAULT_POS: InstantPos = { lat: 48.8566, lng: 2.3522, label: 'Pari
 const RANG: Record<PosSource, number> = { default: 0, last: 1, city: 2, ip: 3, gps: 4, manual: 5 }
 
 let partagee: { pos: InstantPos; source: PosSource } | null = null
-const abonnes = new Set<(v: { pos: InstantPos; source: PosSource }) => void>()
+const abonnes = new Set<(v: { pos: InstantPos; source: PosSource; forcer?: boolean }) => void>()
 
-function diffuser(pos: InstantPos, source: PosSource) {
-  if (partagee && RANG[source] < RANG[partagee.source]) return
+// ─── OÙ L'ON EST VRAIMENT, MÊME QUAND ON AFFICHE AUTRE CHOSE ──────────────
+// Mohamed a choisi une ville à la main ; l'accueil est resté dessus alors
+// qu'il était à Berkane, sans jamais proposer de revenir. Un choix manuel
+// doit primer — sinon il ne servirait à rien — mais le site ne doit pas
+// faire SEMBLANT de ne pas savoir : quand la ville affichée et l'endroit
+// détecté sont à des centaines de kilomètres, il faut poser la question.
+//
+// On garde donc de côté ce que l'IP ou le GPS ont trouvé, même quand ça ne
+// remplace rien. C'est ce qui permet d'écrire « on te situe à Berkane »
+// plutôt qu'un vague « me relocaliser ».
+let detecteePartagee: InstantPos | null = null
+const abonnesDetectee = new Set<(p: InstantPos) => void>()
+
+function noterDetectee(p: InstantPos) {
+  detecteePartagee = p
+  abonnesDetectee.forEach((f) => f(p))
+  // « On te situe à Ma position » ne veut rien dire : c'est la méthode, pas
+  // le lieu. Même correction que pour la position affichée — on va chercher
+  // le nom, puis on rediffuse. La question devient « on te situe à Berkane ».
+  if (LIBELLES_SANS_LIEU.has(p.label)) {
+    void nommerLeLieu(p.lat, p.lng).then((nom) => {
+      if (!nom) return
+      const nomme = { ...p, label: nom }
+      detecteePartagee = nomme
+      abonnesDetectee.forEach((f) => f(nomme))
+    })
+  }
+}
+
+/** Distance approximative en kilomètres. */
+export function distanceKm(a: { lat: number; lng: number }, b: { lat: number; lng: number }): number {
+  const r = Math.PI / 180
+  const h = Math.sin(((b.lat - a.lat) * r) / 2) ** 2 +
+    Math.cos(a.lat * r) * Math.cos(b.lat * r) * Math.sin(((b.lng - a.lng) * r) / 2) ** 2
+  return 6371 * 2 * Math.atan2(Math.sqrt(h), Math.sqrt(1 - h))
+}
+
+function diffuser(pos: InstantPos, source: PosSource, forcer = false) {
+  if (!forcer && partagee && RANG[source] < RANG[partagee.source]) return
   partagee = { pos, source }
-  abonnes.forEach((f) => f({ pos, source }))
+  abonnes.forEach((f) => f({ pos, source, forcer }))
 }
 
 // ─── NOMMER LE LIEU, PAS LA MÉTHODE ──────────────────────────────────────
@@ -89,19 +126,24 @@ export function useInstantPosition(en = false) {
   const [source, setSource] = useState<PosSource>('default')
   const [geoLoading, setGeoLoading] = useState(false)
   const [geoErr, setGeoErr] = useState<GeoError | null>(null)
+  /** Où l'appareil se croit, indépendamment de ce qu'on affiche. */
+  const [detectee, setDetectee] = useState<InstantPos | null>(null)
   const resolved = useRef(false)
   const rangCourant = useRef<PosSource>('default')
 
-  const setPos = useCallback((p: InstantPos, s: PosSource) => {
+  const setPos = useCallback((p: InstantPos, s: PosSource, forcer = false) => {
     // Un autre outil de la page a peut-être déjà trouvé mieux (le GPS pendant
     // qu'on partait sur la ville mémorisée) : on ne redescend pas.
-    if (RANG[s] < RANG[rangCourant.current]) return
+    // `forcer` sert au seul cas où l'utilisateur DEMANDE explicitement de
+    // quitter sa ville choisie (« Passer à Berkane ») : là, sa décision passe
+    // avant tout classement de fiabilité.
+    if (!forcer && RANG[s] < RANG[rangCourant.current]) return
     rangCourant.current = s
     setPosState(p); setSource(s)
     if (s !== 'default') {
       try { localStorage.setItem(LAST_KEY, JSON.stringify(p)) } catch { /* stockage privé */ }
     }
-    diffuser(p, s)
+    diffuser(p, s, forcer)
 
     // Le GPS donne des coordonnées, pas un nom. On va chercher le nom, et on
     // rediffuse — l'écran passe de « Ma position » à « Rabat » tout seul.
@@ -114,15 +156,18 @@ export function useInstantPosition(en = false) {
   // On écoute ce que trouvent les autres outils de la page, et on ne descend
   // jamais en fiabilité (le GPS ne se fait pas écraser par une position IP).
   useEffect(() => {
-    const surMieux = (v: { pos: InstantPos; source: PosSource }) => {
-      if (RANG[v.source] < RANG[rangCourant.current]) return
+    const surMieux = (v: { pos: InstantPos; source: PosSource; forcer?: boolean }) => {
+      if (!v.forcer && RANG[v.source] < RANG[rangCourant.current]) return
       rangCourant.current = v.source
       setPosState(v.pos)
       setSource(v.source)
     }
     abonnes.add(surMieux)
     if (partagee) surMieux(partagee)
-    return () => { abonnes.delete(surMieux) }
+    const surDetectee = (p: InstantPos) => setDetectee(p)
+    abonnesDetectee.add(surDetectee)
+    if (detecteePartagee) surDetectee(detecteePartagee)
+    return () => { abonnes.delete(surMieux); abonnesDetectee.delete(surDetectee) }
   }, [])
 
   useEffect(() => {
@@ -132,21 +177,29 @@ export function useInstantPosition(en = false) {
     let initial: InstantPos | null = null
     let s: PosSource = 'default'
 
-    // 0) Lieu explicitement demandé dans l'URL (?lat&lng&lieu) — c'est le cas
-    // quand on arrive depuis une fiche ville : on connaît déjà la ville, il
-    // serait absurde de redemander la géolocalisation. Ce choix prime sur
-    // tout le reste, et rien (ni IP ni GPS) ne vient l'écraser ensuite.
+    let choixExplicite = false
+
+    // 0) Lieu explicitement demandé dans l'URL (?lat&lng&lieu) — on arrive
+    // d'une fiche ville : le choix prime, et rien ne vient l'écraser.
+    //
+    // ⚠️ MAIS ON CONTINUE À REGARDER OÙ L'ON EST.
+    // Avant, on sortait ici : le site cessait toute détection, donc il ne
+    // pouvait plus savoir qu'on était ailleurs — c'est exactement ce que
+    // Mohamed a constaté (ville choisie, lui à Berkane, et jamais la moindre
+    // proposition de revenir). La détection continue en silence ; elle
+    // n'écrase rien, elle sert uniquement à pouvoir POSER LA QUESTION.
     try {
       const q = new URLSearchParams(window.location.search)
       const lat = parseFloat(q.get('lat') || ''), lng = parseFloat(q.get('lng') || '')
       if (Number.isFinite(lat) && Number.isFinite(lng)) {
-        setPos({ lat, lng, label: q.get('lieu') || (en ? 'Selected city' : 'Ville choisie') }, 'manual')
-        return
+        initial = { lat, lng, label: q.get('lieu') || (en ? 'Selected city' : 'Ville choisie') }
+        s = 'manual'
+        choixExplicite = true
       }
     } catch { /* noop */ }
 
     // 1) Dernière position (clé partagée, avec reprise des anciennes clés)
-    try {
+    if (!choixExplicite) try {
       for (const k of [LAST_KEY, ...LEGACY_KEYS]) {
         const saved = JSON.parse(localStorage.getItem(k) || 'null')
         if (saved && typeof saved.lat === 'number' && typeof saved.lng === 'number') {
@@ -157,7 +210,7 @@ export function useInstantPosition(en = false) {
       }
     } catch { /* noop */ }
     // 2) Ville mémorisée du site
-    if (!initial && city && city.lat != null && city.lng != null) {
+    if (!choixExplicite && !initial && city && city.lat != null && city.lng != null) {
       initial = { lat: city.lat, lng: city.lng, label: city.nom, pays: city.pays }
       s = 'city'
     }
@@ -174,12 +227,13 @@ export function useInstantPosition(en = false) {
         .then((r) => r.json())
         .then((j) => {
           if (!(j?.ok && typeof j.lat === 'number')) return
-          const p = Math.PI / 180
-          const a = Math.sin(((j.lat - base.lat) * p) / 2) ** 2 + Math.cos(base.lat * p) * Math.cos(j.lat * p) * Math.sin(((j.lng - base.lng) * p) / 2) ** 2
-          const distKm = 6371 * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a))
-          if (s === 'default' || distKm > 100) {
-            setPos({ lat: j.lat, lng: j.lng, label: j.city || (en ? 'Around you' : 'Autour de vous') }, 'ip')
-          }
+          const trouvee: InstantPos = { lat: j.lat, lng: j.lng, label: j.city || (en ? 'Around you' : 'Autour de vous') }
+          // Notée dans tous les cas : c'est elle qui permettra de demander
+          // « tu n'es plus à Marrakech ? » sans avoir à deviner.
+          noterDetectee(trouvee)
+          // Un choix explicite ne se fait JAMAIS écraser — on se contente de
+          // l'avoir noté ci-dessus pour pouvoir demander.
+          if (!choixExplicite && (s === 'default' || distanceKm(base, trouvee) > 100)) setPos(trouvee, 'ip')
         })
         .catch(() => { /* on garde la position courante */ })
     }
@@ -189,7 +243,9 @@ export function useInstantPosition(en = false) {
       navigator.permissions?.query({ name: 'geolocation' as PermissionName }).then((st) => {
         if (st.state === 'granted') {
           getPosition().then(({ lat, lng }) => {
-            setPos({ lat, lng, label: en ? 'My position' : 'Ma position' }, 'gps')
+            const p: InstantPos = { lat, lng, label: en ? 'My position' : 'Ma position' }
+            noterDetectee(p)
+            if (!choixExplicite) setPos(p, 'gps')
           }).catch(() => { /* silencieux */ })
         }
       }).catch(() => { /* Safari sans permissions API */ })
@@ -202,7 +258,9 @@ export function useInstantPosition(en = false) {
     setGeoLoading(true); setGeoErr(null)
     try {
       const { lat, lng } = await getPosition({ highAccuracy: true })
-      setPos({ lat, lng, label: en ? 'My exact location' : 'Ma position exacte' }, 'gps')
+      const p: InstantPos = { lat, lng, label: en ? 'My exact location' : 'Ma position exacte' }
+      noterDetectee(p)
+      setPos(p, 'gps')
       return true
     } catch (code) {
       setGeoErr(describeGeoError(code as GeoErrorCode))
@@ -214,5 +272,13 @@ export function useInstantPosition(en = false) {
 
   const setManual = useCallback((p: InstantPos) => setPos(p, 'manual'), [setPos])
 
-  return { pos, source, geoLoading, geoErr, refineGps, setManual }
+  /** Adopter l'endroit détecté sans repasser par le GPS (il est déjà connu). */
+  const adopterDetectee = useCallback(() => {
+    // `forcer` : sans lui, le choix manuel (rang le plus haut) refusait la
+    // bascule, la question disparaissait de l'écran mais le bandeau du haut
+    // continuait d'afficher l'ancienne ville. Constaté au test.
+    if (detectee) setPos(detectee, 'gps', true)
+  }, [detectee, setPos])
+
+  return { pos, source, geoLoading, geoErr, refineGps, setManual, detectee, adopterDetectee }
 }
