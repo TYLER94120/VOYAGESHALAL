@@ -9,7 +9,7 @@ import { conforme } from '@/lib/conformite'
 import { fetchCourt } from '@/lib/fetchCourt'
 import { photoLargeur } from '@/lib/imageLargeur'
 import PositionBadge from '@/components/location/PositionBadge'
-import { meteoInstantanee, emojiMeteo, conseilDuJour, type Meteo } from '@/lib/meteo'
+import { meteoInstantanee, emojiMeteo, type Meteo } from '@/lib/meteo'
 
 // 🎛️ BOARD VOYAGEUR (bento) — l'accueil devient un tableau de bord contextuel :
 // des REPONSES deja calculees, jamais des menus. Il absorbe le Radar Priere
@@ -789,21 +789,8 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
           )}
         </div>
 
-        {/* ── ANTICIPER : la seule phrase météo qui vaille la peine ──
-            Pas « 24° et nuageux » (c'est juste au-dessus), mais ce qui va
-            CHANGER : la pluie de 17 h, les 38° de midi. Elle n'apparaît que
-            quand il y a quelque chose à annoncer. */}
-        {(() => {
-          const c = meteo ? conseilDuJour(meteo, en) : null
-          if (!c) return null
-          return (
-            <Link href="/meteo" style={{ ...T.tile, marginTop: 10, display: 'flex', alignItems: 'center', gap: 9, minHeight: 46, padding: '9px 12px', textDecoration: 'none', borderColor: 'rgba(201,168,76,0.35)' }}>
-              <span style={{ fontSize: 17 }} aria-hidden>{emojiMeteo(meteo!.maintenant?.code ?? '')}</span>
-              <span style={{ color: '#fdfaf3', fontWeight: 700, fontSize: 13.5, lineHeight: 1.35 }}>{c}</span>
-              <span style={{ marginLeft: 'auto', color: 'var(--or)', fontWeight: 800, fontSize: 16 }}>→</span>
-            </Link>
-          )
-        })()}
+        {/* Pas de phrase météo ici : Mohamed a demandé que l'accueil reste
+            léger. La température suffit, le reste est sur /meteo. */}
 
         {/* ── Les 5 prieres du jour — lisibles d'un coup d'oeil ──
             Remonte a la place de l'ancienne bande de vignettes : c'est
