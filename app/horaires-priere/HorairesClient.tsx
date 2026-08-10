@@ -1,128 +1,63 @@
 'use client'
 import { useState, useEffect, useRef } from 'react'
 import { PrayerTimesWidget } from '@/components/PrayerTimesWidget'
-import { useLocation } from '@/components/location/LocationProvider'
-import { getPosition, describeGeoError, type GeoError, type GeoErrorCode } from '@/lib/geo'
+import { useInstantPosition } from '@/lib/useInstantPosition'
+import PositionBadge from '@/components/location/PositionBadge'
 import { PRAYER_METHODS, ASR_SCHOOLS, defaultMethodForCountry } from '@/lib/prayer'
 import AdhanSettings from '@/components/adhan/AdhanSettings'
 import { useLanguage } from '@/components/i18n/LanguageProvider'
 
 // UX « Muslim Pro » : les horaires s'affichent INSTANTANÉMENT en haut, sans
-// aucun clic. Ordre de résolution de la position (du plus rapide) :
-//   1. dernière position utilisée (localStorage)   → 0 ms
-//   2. ville mémorisée du site (LocationProvider)  → 0 ms
-//   3. Paris par défaut, affiché tout de suite     → 0 ms
-//   4. géoloc IP (/api/geoip) en arrière-plan      → ~100-300 ms, transition douce
-//   5. GPS en arrière-plan UNIQUEMENT si la permission est déjà accordée
-// Le bouton « Ma position exacte » reste disponible pour affiner — il ne
-// conditionne JAMAIS l'affichage.
+// aucun clic. La position vient de useInstantPosition, la source commune à
+// tout le site.
+//
+// Cette page avait sa PROPRE copie de la résolution de position : sa propre
+// géoloc IP, son propre GPS, sa propre clé de stockage. Deux implémentations
+// pour une même question, qui pouvaient répondre différemment sur le même
+// écran — c'est exactement ce qui a donné deux horaires de prière
+// contradictoires. Il n'en reste qu'une.
 
-interface VilleOption { nom: string; apiName: string; pays: string; code: string }
+interface VilleOption { nom: string; apiName: string; pays: string; code: string; lat: number; lng: number }
 
 const VILLES: VilleOption[] = [
-  { nom: 'Marrakech', apiName: 'Marrakech', pays: 'Maroc', code: 'MA' },
-  { nom: 'Casablanca', apiName: 'Casablanca', pays: 'Maroc', code: 'MA' },
-  { nom: 'Alger', apiName: 'Algiers', pays: 'Algérie', code: 'DZ' },
-  { nom: 'Tunis', apiName: 'Tunis', pays: 'Tunisie', code: 'TN' },
-  { nom: 'Istanbul', apiName: 'Istanbul', pays: 'Turquie', code: 'TR' },
-  { nom: 'Le Caire', apiName: 'Cairo', pays: 'Égypte', code: 'EG' },
-  { nom: 'Dubaï', apiName: 'Dubai', pays: 'Émirats', code: 'AE' },
-  { nom: 'La Mecque', apiName: 'Mecca', pays: 'Arabie Saoudite', code: 'SA' },
-  { nom: 'Médine', apiName: 'Medina', pays: 'Arabie Saoudite', code: 'SA' },
-  { nom: 'Paris', apiName: 'Paris', pays: 'France', code: 'FR' },
-  { nom: 'Marseille', apiName: 'Marseille', pays: 'France', code: 'FR' },
-  { nom: 'Londres', apiName: 'London', pays: 'Royaume-Uni', code: 'GB' },
-  { nom: 'Kuala Lumpur', apiName: 'Kuala Lumpur', pays: 'Malaisie', code: 'MY' },
+  { nom: 'Marrakech', apiName: 'Marrakech', pays: 'Maroc', code: 'MA' , lat: 31.6295, lng: -7.9811 },
+  { nom: 'Casablanca', apiName: 'Casablanca', pays: 'Maroc', code: 'MA' , lat: 33.5731, lng: -7.5898 },
+  { nom: 'Alger', apiName: 'Algiers', pays: 'Algérie', code: 'DZ' , lat: 36.7372, lng: 3.0865 },
+  { nom: 'Tunis', apiName: 'Tunis', pays: 'Tunisie', code: 'TN' , lat: 36.819, lng: 10.1658 },
+  { nom: 'Istanbul', apiName: 'Istanbul', pays: 'Turquie', code: 'TR' , lat: 41.0082, lng: 28.9784 },
+  { nom: 'Le Caire', apiName: 'Cairo', pays: 'Égypte', code: 'EG' , lat: 30.0444, lng: 31.2357 },
+  { nom: 'Dubaï', apiName: 'Dubai', pays: 'Émirats', code: 'AE' , lat: 25.2048, lng: 55.2708 },
+  { nom: 'La Mecque', apiName: 'Mecca', pays: 'Arabie Saoudite', code: 'SA' , lat: 21.3891, lng: 39.8579 },
+  { nom: 'Médine', apiName: 'Medina', pays: 'Arabie Saoudite', code: 'SA' , lat: 24.5247, lng: 39.5692 },
+  { nom: 'Paris', apiName: 'Paris', pays: 'France', code: 'FR' , lat: 48.8566, lng: 2.3522 },
+  { nom: 'Marseille', apiName: 'Marseille', pays: 'France', code: 'FR' , lat: 43.2965, lng: 5.3698 },
+  { nom: 'Londres', apiName: 'London', pays: 'Royaume-Uni', code: 'GB' , lat: 51.5074, lng: -0.1278 },
+  { nom: 'Kuala Lumpur', apiName: 'Kuala Lumpur', pays: 'Malaisie', code: 'MY' , lat: 3.139, lng: 101.6869 },
 ]
 
 interface Pos { lat?: number; lng?: number; label: string; pays?: string; apiName?: string; code?: string }
 
-const LAST_POS_KEY = 'vh_prayer_last_pos'
-const DEFAULT_POS: Pos = { lat: 48.8566, lng: 2.3522, label: 'Paris', pays: 'France', code: 'FR' }
-
 export default function HorairesClient() {
-  const { city } = useLocation()
   const { lang } = useLanguage()
   const en = lang === 'en'
-  const [pos, setPos] = useState<Pos | null>(null)
-  const [posSource, setPosSource] = useState<'last' | 'city' | 'default' | 'ip' | 'gps' | 'manual'>('default')
-  const [geoLoading, setGeoLoading] = useState(false)
-  const [geoErr, setGeoErr] = useState<GeoError | null>(null)
+  // Position partagée par tout le site (le badge et le reste de la page
+  // regardent le même objet — jamais deux enquêtes en parallèle).
+  const etatPos = useInstantPosition(en)
+  // Ville choisie à la main dans la liste ci-dessous : elle prime, et elle est
+  // diffusée au reste du site (setManual) pour que rien ne la contredise.
+  const [choixVille, setChoixVille] = useState<VilleOption | null>(null)
+  const pos: Pos | null = choixVille
+    ? { lat: choixVille.lat, lng: choixVille.lng, label: choixVille.nom, pays: choixVille.pays, apiName: choixVille.apiName, code: choixVille.code }
+    : etatPos.pos
   const [method, setMethod] = useState(3)
   const [school, setSchool] = useState(0)
   const [methodTouched, setMethodTouched] = useState(false)
-  const resolved = useRef(false)
 
-  // ── Position instantanée (jamais bloquante) ──
+  // « J'ai bougé — me relocaliser » doit vraiment libérer la ville choisie,
+  // sinon le GPS répond et l'écran continue d'afficher l'ancienne ville.
   useEffect(() => {
-    if (resolved.current) return
-    resolved.current = true
-
-    let initial: Pos | null = null
-    let source: typeof posSource = 'default'
-
-    // 0) Ville demandée dans l'URL (?lat&lng&lieu) — on arrive d'une fiche
-    // ville : la ville est connue, on affiche SES horaires sans rien redemander.
-    try {
-      const q = new URLSearchParams(window.location.search)
-      const la = parseFloat(q.get('lat') || ''), ln = parseFloat(q.get('lng') || '')
-      if (Number.isFinite(la) && Number.isFinite(ln)) {
-        setPos({ lat: la, lng: ln, label: q.get('lieu') || (en ? 'Selected city' : 'Ville choisie'), pays: q.get('pays') || undefined })
-        setPosSource('manual')
-        return
-      }
-    } catch { /* noop */ }
-
-    // 1) Dernière position utilisée
-    try {
-      // Clé partagée entre tous les outils (vh_last_pos) puis clé historique
-      for (const k of ['vh_last_pos', LAST_POS_KEY]) {
-        const saved = JSON.parse(localStorage.getItem(k) || 'null') as Pos | null
-        if (saved && saved.label) { initial = saved; source = 'last'; break }
-      }
-    } catch { /* stockage privé */ }
-    // 2) Ville mémorisée du site
-    if (!initial && city && city.lat != null && city.lng != null) {
-      initial = { lat: city.lat, lng: city.lng, label: city.nom, pays: city.pays }
-      source = 'city'
-    }
-    // 3) Défaut immédiat (Paris) — l'utilisateur voit des horaires TOUT DE SUITE
-    if (!initial) { initial = DEFAULT_POS; source = 'default' }
-    setPos(initial); setPosSource(source)
-
-    // 4) Géoloc IP en arrière-plan — n'écrase que le défaut (pas un choix mémorisé)
-    if (source === 'default') {
-      fetch('/api/geoip')
-        .then((r) => r.json())
-        .then((j) => {
-          if (j?.ok && typeof j.lat === 'number') {
-            setPos({ lat: j.lat, lng: j.lng, label: j.city || (en ? 'Around you' : 'Autour de vous') })
-            setPosSource('ip')
-          }
-        })
-        .catch(() => { /* on garde le défaut */ })
-    }
-
-    // 5) GPS en arrière-plan UNIQUEMENT si la permission est déjà accordée
-    //    (pas de pop-up surprise, jamais bloquant)
-    try {
-      navigator.permissions?.query({ name: 'geolocation' as PermissionName }).then((st) => {
-        if (st.state === 'granted') {
-          getPosition().then(({ lat, lng }) => {
-            setPos({ lat, lng, label: en ? 'My position' : 'Ma position' })
-            setPosSource('gps')
-          }).catch(() => { /* silencieux */ })
-        }
-      }).catch(() => { /* Safari sans permissions API */ })
-    } catch { /* noop */ }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [city])
-
-  // Mémorise la position affichée pour un prochain chargement instantané
-  useEffect(() => {
-    if (!pos || posSource === 'default') return
-    try { localStorage.setItem(LAST_POS_KEY, JSON.stringify(pos)) } catch { /* noop */ }
-  }, [pos, posSource])
+    if (etatPos.source === 'gps') setChoixVille(null)
+  }, [etatPos.source])
 
   // Préférences méthode/école
   useEffect(() => {
@@ -146,20 +81,6 @@ export default function HorairesClient() {
     try { localStorage.setItem('vh_prayer_school', String(s)) } catch { /* noop */ }
   }
 
-  // Affinage GPS à la demande — rapide (timeout 8-12 s max), sans recharger
-  const useMyPosition = async () => {
-    setGeoLoading(true); setGeoErr(null)
-    try {
-      const { lat, lng } = await getPosition({ highAccuracy: true })
-      setPos({ lat, lng, label: en ? 'My exact location' : 'Ma position exacte' })
-      setPosSource('gps')
-    } catch (code) {
-      setGeoErr(describeGeoError(code as GeoErrorCode))
-    } finally {
-      setGeoLoading(false)
-    }
-  }
-
   const selectStyle = { width: '100%', minHeight: 48, padding: '0 12px', borderRadius: 10, border: '1.5px solid rgba(27,67,50,0.25)', background: '#fff', fontSize: 14.5, color: 'var(--texte)', textAlign: 'center' as const, textAlignLast: 'center' as const }
 
   return (
@@ -181,27 +102,11 @@ export default function HorairesClient() {
         <div className="prayer-widget prayer-loading" style={{ minHeight: 220 }} />
       )}
 
-      {/* Affiner : GPS à la demande — n'a jamais bloqué l'affichage */}
-      <div style={{ display: 'flex', gap: 8, marginTop: 12, flexWrap: 'wrap' }}>
-        <button
-          onClick={useMyPosition}
-          disabled={geoLoading}
-          style={{ flex: 1, minWidth: 220, padding: '13px 16px', borderRadius: 12, border: 'none', cursor: geoLoading ? 'wait' : 'pointer', background: 'var(--foret)', color: '#fff', fontSize: 14.5, fontWeight: 700 }}
-        >
-          📍 {geoLoading ? (en ? 'Locating…' : 'Localisation…') : (en ? 'My exact position (GPS)' : 'Ma position exacte (GPS)')}
-        </button>
+      {/* Position : le même bloc que sur toutes les pages du site — le lieu
+          est nommé, l'état est dit, et l'action est visible quand elle sert. */}
+      <div style={{ marginTop: 12 }}>
+        <PositionBadge etat={etatPos} en={en} clair />
       </div>
-      {posSource === 'ip' && (
-        <p style={{ fontSize: 12, color: 'var(--texte-2)', margin: '6px 2px 0' }}>
-          {en ? 'Approximate position (network). Tap the button above for minute-accurate times.' : 'Position approximative (réseau). Touchez le bouton ci-dessus pour des horaires à la minute.'}
-        </p>
-      )}
-      {geoErr && (
-        <div style={{ background: 'rgba(255,100,100,0.12)', border: '1px solid rgba(255,100,100,0.3)', borderRadius: 12, padding: '12px 16px', marginTop: 10 }}>
-          <p style={{ color: '#b91c1c', fontWeight: 700, margin: 0, fontSize: 14 }}>{geoErr.message}</p>
-          <p style={{ color: 'var(--texte-2)', fontSize: 13, margin: '4px 0 0' }}>{geoErr.detail}</p>
-        </div>
-      )}
 
       {/* ═══ 2. VILLES RAPIDES ═══ */}
       <details style={{ marginTop: 14 }}>
@@ -210,7 +115,7 @@ export default function HorairesClient() {
         </summary>
         <div className="ville-grid" style={{ marginTop: 10 }}>
           {VILLES.map((v) => (
-            <button key={v.nom} className="ville-btn" onClick={() => { setMethodTouched(false); setPos({ label: v.nom, pays: v.pays, apiName: v.apiName, code: v.code }); setPosSource('manual') }}>
+            <button key={v.nom} className="ville-btn" onClick={() => { setMethodTouched(false); setChoixVille(v); etatPos.setManual({ lat: v.lat, lng: v.lng, label: v.nom, pays: v.pays }) }}>
               {v.nom}
             </button>
           ))}

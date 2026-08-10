@@ -1,5 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react'
+import { computePrayerTimesFull } from '@/lib/prayerCalc'
 
 interface PrayerTime {
   name: string
@@ -64,6 +65,9 @@ function fmtCountdown(diffSec: number, en: boolean): string {
 export function PrayerTimesWidget({ ville, countryCode, lat, lng, method = 3, school = 0, en = false }: Props) {
   const [timings, setTimings] = useState<Record<string, string> | null>(null)
   const [loading, setLoading] = useState(true)
+  // D'où viennent les horaires affichés — on ne signe pas Aladhan un calcul
+  // qu'on a fait nous-mêmes (charte : ne jamais affirmer ce qu'on n'a pas).
+  const [calculLocal, setCalculLocal] = useState(false)
   const [now, setNow] = useState<Date>(() => new Date())
 
   const props = { ville, pays: '', countryCode, lat, lng, method, school }
@@ -77,7 +81,29 @@ export function PrayerTimesWidget({ ville, countryCode, lat, lng, method = 3, sc
     if (cached) { setTimings(cached); setLoading(false) }
     else setLoading(true)
 
-    // 2) Réseau → données fraîches (mêmes en général) sans bloquer l'affichage
+    // 2) CALCUL LOCAL immédiat — le filet de sécurité.
+    //
+    // Cette page affichait « Horaires indisponibles — réessayez » dès que
+    // api.aladhan.com ne répondait pas (avion, métro, réseau étranger,
+    // panne du service), alors que le bandeau juste au-dessus donnait
+    // l'heure sans problème : lui calcule en local. Deux réponses
+    // contradictoires sur le même écran, et la mauvaise était celle de la
+    // page dédiée aux horaires.
+    //
+    // Le calcul local ne remplace pas l'API (elle applique les conventions
+    // officielles pays par pays), mais il n'échoue jamais. On l'affiche
+    // tout de suite, l'API l'affine si elle répond.
+    if (!cached && lat != null && lng != null) {
+      try {
+        const t = computePrayerTimesFull(lat, lng, method, school, new Date())
+        const hhmm = (d: Date) => `${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}`
+        setTimings({ Fajr: hhmm(t.Fajr), Sunrise: hhmm(t.Sunrise), Dhuhr: hhmm(t.Dhuhr), Asr: hhmm(t.Asr), Maghrib: hhmm(t.Maghrib), Isha: hhmm(t.Isha) })
+        setCalculLocal(true)
+        setLoading(false)
+      } catch { /* on garde l'attente de l'API */ }
+    }
+
+    // 3) Réseau → données fraîches (mêmes en général) sans bloquer l'affichage
     const ts = Math.floor(Date.now() / 1000)
     const url = (lat != null && lng != null)
       ? `https://api.aladhan.com/v1/timings/${ts}?latitude=${lat}&longitude=${lng}&method=${method}&school=${school}`
@@ -91,6 +117,7 @@ export function PrayerTimesWidget({ ville, countryCode, lat, lng, method = 3, sc
           const clean: Record<string, string> = {}
           for (const k of Object.keys(raw)) clean[k] = (raw[k] || '').slice(0, 5)
           setTimings(clean)
+          setCalculLocal(false)
           writeCache(key, clean)
         }
         setLoading(false)
@@ -135,7 +162,7 @@ export function PrayerTimesWidget({ ville, countryCode, lat, lng, method = 3, sc
     return (
       <div className="prayer-widget" style={{ minHeight: 120 }}>
         <div className="prayer-widget-header">
-          <span>🕌 {en ? 'Times unavailable right now — please retry.' : 'Horaires indisponibles pour le moment — réessayez.'}</span>
+          <span>🕌 {en ? 'Choose a place to see prayer times.' : 'Choisissez un lieu pour voir les horaires.'}</span>
         </div>
       </div>
     )
@@ -172,7 +199,9 @@ export function PrayerTimesWidget({ ville, countryCode, lat, lng, method = 3, sc
         ))}
       </div>
       <p className="prayer-credit">
-        {en ? 'Times by Aladhan.com — adjust the calculation method in settings below.' : 'Horaires fournis par Aladhan.com — méthode de calcul réglable ci-dessous.'}
+        {calculLocal
+          ? (en ? 'Times calculated on your phone (network unavailable) — adjust the calculation method in settings below.' : 'Horaires calculés sur votre téléphone (réseau indisponible) — méthode de calcul réglable ci-dessous.')
+          : (en ? 'Times by Aladhan.com — adjust the calculation method in settings below.' : 'Horaires fournis par Aladhan.com — méthode de calcul réglable ci-dessous.')}
       </p>
     </div>
   )

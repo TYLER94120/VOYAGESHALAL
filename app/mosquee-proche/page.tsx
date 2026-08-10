@@ -5,6 +5,7 @@ import type { Map as LeafletMap, Marker } from 'leaflet'
 import IslamicPattern from '@/components/ui/IslamicPattern'
 import { useLanguage } from '@/components/i18n/LanguageProvider'
 import { useInstantPosition } from '@/lib/useInstantPosition'
+import PositionBadge from '@/components/location/PositionBadge'
 
 // UX « Muslim Pro » : la liste + la carte des mosquées s'affichent
 // AUTOMATIQUEMENT autour de la position instantanée (dernière position →
@@ -36,7 +37,8 @@ function fmt(m: number): string {
 export default function MosqueeProchePage() {
   const { lang } = useLanguage()
   const en = lang === 'en'
-  const { pos, source, geoLoading, geoErr, refineGps } = useInstantPosition(en)
+  const etatPos = useInstantPosition(en)
+  const { pos } = etatPos
   const [loading, setLoading] = useState(true)
   const [mosques, setMosques] = useState<Mosque[]>([])
   const [selectedMosque, setSelectedMosque] = useState<Mosque | null>(null)
@@ -145,22 +147,11 @@ export default function MosqueeProchePage() {
       </section>
 
       <section style={{ maxWidth: '900px', margin: '0 auto', padding: '1.25rem 1rem 2rem' }}>
-        {/* Position + affinage GPS — n'a jamais bloqué l'affichage */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap', marginBottom: 12 }}>
-          <span style={{ fontWeight: 700, color: 'var(--foret)', fontSize: 14.5 }}>
-            📍 {pos ? pos.label : '…'}{source === 'ip' || source === 'default' ? (en ? ' (approximate)' : ' (approximatif)') : ''}
-          </span>
-          <button onClick={() => void refineGps()} disabled={geoLoading}
-            style={{ marginLeft: 'auto', padding: '8px 14px', borderRadius: 20, border: 'none', background: 'var(--foret)', color: '#fff', fontWeight: 700, fontSize: 13, cursor: geoLoading ? 'wait' : 'pointer' }}>
-            {geoLoading ? (en ? 'Locating…' : 'Localisation…') : (en ? '📍 My exact position' : '📍 Ma position exacte')}
-          </button>
+        {/* Position : nom du lieu, état explicite, action visible (composant
+            unique du site — voir components/location/PositionBadge). */}
+        <div style={{ marginBottom: 12 }}>
+          <PositionBadge etat={etatPos} en={en} clair />
         </div>
-        {geoErr && (
-          <div style={{ background: 'rgba(255,100,100,0.12)', border: '1px solid rgba(255,100,100,0.3)', borderRadius: 12, padding: '10px 14px', marginBottom: 12 }}>
-            <p style={{ color: '#b91c1c', fontWeight: 700, margin: 0, fontSize: 13.5 }}>{geoErr.message}</p>
-            <p style={{ color: 'var(--texte-2)', fontSize: 12.5, margin: '3px 0 0' }}>{geoErr.detail}</p>
-          </div>
-        )}
 
         {/* Carte — hauteur fixe (zéro layout shift), remplie dès la 1re réponse */}
         <div ref={mapContainerRef} style={{ height: 340, borderRadius: '20px', overflow: 'hidden', marginBottom: '1rem', boxShadow: '0 4px 20px rgba(0,0,0,0.12)', border: '2px solid rgba(201,168,76,0.3)', background: '#dfe6e2' }} />

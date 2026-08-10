@@ -1,7 +1,8 @@
 'use client'
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import Link from 'next/link'
 import { useInstantPosition } from '@/lib/useInstantPosition'
+import { computePrayerTimesFull } from '@/lib/prayerCalc'
 import LanguageSwitcher from '@/components/i18n/LanguageSwitcher'
 import { useLanguage } from '@/components/i18n/LanguageProvider'
 
@@ -25,10 +26,8 @@ const LABELS: Record<string, string> = { Fajr: 'Fajr', Dhuhr: 'Dhuhr', Asr: 'ʿA
 // que le board) et la même méthode de calcul.
 export default function PrayerCountdownBar() {
   const { pos } = useInstantPosition()
-  const city = pos ? { nom: pos.label, lat: pos.lat, lng: pos.lng } : null
   const { lang } = useLanguage()
   const en = lang === 'en'
-  const [timings, setTimings] = useState<Record<string, string> | null>(null)
   const [now, setNow] = useState(Date.now())
 
   useEffect(() => {
@@ -36,25 +35,33 @@ export default function PrayerCountdownBar() {
     return () => clearInterval(id)
   }, [])
 
-  useEffect(() => {
-    if (!city || city.lat == null || city.lng == null) { setTimings(null); return }
-    let cancelled = false
-    const method = Number((typeof localStorage !== 'undefined' && localStorage.getItem('vh_prayer_method')) || 3)
-    const school = Number((typeof localStorage !== 'undefined' && localStorage.getItem('vh_prayer_school')) || 0)
-    const ts = Math.floor(Date.now() / 1000)
-    fetch(`https://api.aladhan.com/v1/timings/${ts}?latitude=${city.lat}&longitude=${city.lng}&method=${method}&school=${school}`)
-      .then((r) => r.json())
-      .then((d) => {
-        if (cancelled) return
-        const t = d?.data?.timings as Record<string, string> | undefined
-        if (!t) return
-        const clean: Record<string, string> = {}
-        for (const k of KEYS) clean[k] = (t[k] || '').slice(0, 5)
-        setTimings(clean)
-      })
-      .catch(() => {})
-    return () => { cancelled = true }
-  }, [city])
+  // ⚠️ CALCUL LOCAL, comme le tableau de bord de l'accueil.
+  //
+  // Ce bandeau interrogeait api.aladhan.com pendant que le board calculait
+  // lui-même. Deux moteurs pour un même horaire, et deux défauts :
+  //   · sans réseau (avion, métro, étranger), le bandeau restait bloqué sur
+  //     « Chargement des horaires… » — vu sur nos propres captures ;
+  //   · l'objet `city` était reconstruit à chaque rendu, donc l'effet qui en
+  //     dépendait relançait un appel réseau CHAQUE SECONDE (le compte à
+  //     rebours provoque un rendu par seconde).
+  // Le calcul local ne peut ni échouer ni diverger.
+  const timings = useMemo(() => {
+    if (!pos) return null
+    try {
+      const method = Number((typeof localStorage !== 'undefined' && localStorage.getItem('vh_prayer_method')) || 3)
+      const school = Number((typeof localStorage !== 'undefined' && localStorage.getItem('vh_prayer_school')) || 0)
+      const t = computePrayerTimesFull(pos.lat, pos.lng, method, school, new Date())
+      const hhmm = (d: Date) => `${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}`
+      const out: Record<string, string> = {}
+      for (const k of KEYS) out[k] = hhmm(t[k])
+      return out
+    } catch { return null }
+    // Recalculé quand la position change ou qu'on passe un jour — pas à
+    // chaque tic du compte à rebours.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pos?.lat, pos?.lng, new Date(now).getDate()])
+
+  const city = pos ? { nom: pos.label, lat: pos.lat, lng: pos.lng } : null
 
   let inner: React.ReactNode
   if (!city) {

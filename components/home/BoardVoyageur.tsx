@@ -8,6 +8,7 @@ import { ENVIES, envieById, niveauHalal } from '@/lib/envies'
 import { conforme } from '@/lib/conformite'
 import { fetchCourt } from '@/lib/fetchCourt'
 import { photoLargeur } from '@/lib/imageLargeur'
+import PositionBadge from '@/components/location/PositionBadge'
 
 // 🎛️ BOARD VOYAGEUR (bento) — l'accueil devient un tableau de bord contextuel :
 // des REPONSES deja calculees, jamais des menus. Il absorbe le Radar Priere
@@ -43,7 +44,9 @@ export interface BoardVedette { slug: string; nom: string; score: number; restau
 export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedette[] }) {
   const { lang } = useLanguage()
   const en = lang === 'en'
-  const { pos, source, geoLoading, refineGps } = useInstantPosition(en)
+  // Un seul état de position pour tout l'écran, partagé avec le badge.
+  const etatPos = useInstantPosition(en)
+  const { pos, source } = etatPos
   const [now, setNow] = useState(() => Date.now())
   const [mosquee, setMosquee] = useState<Lieu | null | undefined>(undefined)
   const [resto, setResto] = useState<Lieu | null | undefined>(undefined)
@@ -353,14 +356,7 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
       <div className="board-wrap" style={{ margin: '0 auto' }}>
         {/* Barre ville : 1 tap = GPS exact (le roaming fausse la geoloc IP) */}
         <div className="board-topbar" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 10 }}>
-          <button
-            onClick={() => { refineGps().then((ok) => { if (!ok) window.location.href = '/horaires-priere' }) }}
-            style={{ display: 'flex', alignItems: 'center', gap: 6, minHeight: 48, padding: '4px 14px', borderRadius: 999, border: '1px solid rgba(201,168,76,0.4)', background: 'transparent', color: 'var(--creme)', fontSize: 14.5, fontWeight: 800, cursor: 'pointer' }}
-          >
-            {geoLoading ? (en ? '📡 Locating…' : '📡 Localisation…')
-              : source === 'gps' ? `📍 ${pos.label}`
-              : `📍 ${pos.label} · ${en ? 'not you? Tap' : 'pas toi ? Appuie'}`}
-          </button>
+          <PositionBadge compact etat={etatPos} en={en} apresRefus={() => { window.location.href = '/horaires-priere' }} />
           <Link href="/spots" style={{ color: 'var(--or)', fontSize: 13.5, fontWeight: 800, textDecoration: 'none', minHeight: 48, padding: '0 8px', display: 'flex', alignItems: 'center' }}>
             {en ? 'See all →' : 'Tout voir →'}
           </Link>

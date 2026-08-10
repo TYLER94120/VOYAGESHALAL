@@ -3,6 +3,7 @@ import { useState, useEffect, useRef, useCallback } from 'react'
 import 'leaflet/dist/leaflet.css'
 import type { Map as LeafletMap } from 'leaflet'
 import { useInstantPosition } from '@/lib/useInstantPosition'
+import PositionBadge from '@/components/location/PositionBadge'
 import { getDeclination } from '@/lib/declination'
 
 // Coordonnées de La Mecque (Kaaba)
@@ -37,7 +38,8 @@ type Mode = 'boussole' | 'direction' | 'carte'
 export default function QiblaCompass() {
   // Position instantanée (dernière position → ville → Paris → IP → GPS si permis)
   // → la boussole + l'angle s'affichent IMMÉDIATEMENT, le GPS ne bloque jamais.
-  const { pos, source, geoLoading: loading, geoErr, refineGps } = useInstantPosition()
+  const etatPos = useInstantPosition()
+  const { pos, refineGps } = etatPos
   const [mode, setMode] = useState<Mode>('boussole')
 
   // Boussole live
@@ -144,18 +146,13 @@ export default function QiblaCompass() {
             de boussole visible sans faire défiler. L'angle par rapport au Nord
             géographique est déjà expliqué sous le cadran. */}
         {distance && <p style={{ color: 'rgba(253,250,243,0.6)', fontSize: 13, margin: '5px 0 0' }}>🕋 {distance.toLocaleString('fr-FR')} km jusqu’à La Mecque</p>}
-        {source !== 'gps' && (
-          <p style={{ color: '#fbbf24', fontSize: 12, margin: '7px 0 0', fontWeight: 600 }}>⚠️ Position approximative ({pos.label})</p>
-        )}
-        <button onClick={usePrecise} disabled={loading} style={{ marginTop: 9, background: source !== 'gps' ? 'var(--or)' : 'none', border: '1px solid rgba(201,168,76,0.5)', color: source !== 'gps' ? 'var(--nuit)' : 'var(--or-clair)', borderRadius: 20, padding: '6px 16px', fontSize: 12.5, fontWeight: 700, cursor: 'pointer' }}>📍 {loading ? 'Localisation…' : source !== 'gps' ? 'Ma position exacte (GPS)' : 'Position GPS active'}</button>
       </div>
 
-      {geoErr && (
-        <div style={{ background: 'rgba(255,100,100,0.12)', border: '1px solid rgba(255,100,100,0.3)', borderRadius: 12, padding: '12px 16px', marginBottom: 14 }}>
-          <p style={{ color: '#b91c1c', fontWeight: 700, margin: 0, fontSize: 14 }}>{geoErr.message}</p>
-          <p style={{ color: 'var(--texte-2)', fontSize: 13, margin: '4px 0 0' }}>{geoErr.detail}</p>
-        </div>
-      )}
+      {/* Position : même bloc que partout ailleurs sur le site. La Qibla est
+          calculée depuis ce point — il doit être nommé et qualifié. */}
+      <div style={{ marginBottom: 16 }}>
+        <PositionBadge etat={etatPos} en={false} clair />
+      </div>
 
       {/* MODE BOUSSOLE — cadran live : Kaaba qui se déplace sur le cercle */}
       {mode === 'boussole' && (

@@ -2,6 +2,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import Link from 'next/link'
 import { useInstantPosition } from '@/lib/useInstantPosition'
+import PositionBadge from '@/components/location/PositionBadge'
 import { computePrayerTimesFull } from '@/lib/prayerCalc'
 import { useLanguage } from '@/components/i18n/LanguageProvider'
 
@@ -29,7 +30,8 @@ const fmtMin = (m: number, en: boolean) => {
 export default function RadarPriere() {
   const { lang } = useLanguage()
   const en = lang === 'en'
-  const { pos, source, geoLoading, refineGps } = useInstantPosition(en)
+  const etatPos = useInstantPosition(en)
+  const { pos, source } = etatPos
   const [now, setNow] = useState(() => Date.now())
   const [lieu, setLieu] = useState<Lieu | null | undefined>(undefined) // undefined = chargement
   const [resto, setResto] = useState<Lieu | null | undefined>(undefined) // resto signalé halal le plus proche
@@ -163,14 +165,9 @@ export default function RadarPriere() {
       <div style={{ maxWidth: 640, margin: '0 auto', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(201,168,76,0.3)', borderRadius: 20, padding: '16px 18px' }}>
         {/* Ville du calcul : un tap = GPS exact (le roaming fausse la géoloc IP).
             Tant que la position n'est pas GPS, on invite clairement à ajuster. */}
-        <button
-          onClick={() => { refineGps().then((ok) => { if (!ok) window.location.href = '/horaires-priere' }) }}
-          style={{ display: 'flex', alignItems: 'center', gap: 6, margin: '0 0 8px auto', padding: '5px 12px', borderRadius: 999, border: '1px solid rgba(201,168,76,0.4)', background: 'transparent', color: 'var(--or)', fontSize: 12.5, fontWeight: 700, cursor: 'pointer' }}
-        >
-          {geoLoading ? (en ? '📡 Locating…' : '📡 Localisation…')
-            : source === 'gps' ? `📍 ${pos.label}`
-            : `📍 ${pos.label} · ${en ? 'not you? Tap' : 'pas toi ? Appuie'}`}
-        </button>
+        <div style={{ marginBottom: 10 }}>
+          <PositionBadge etat={etatPos} en={en} apresRefus={() => { window.location.href = '/horaires-priere' }} />
+        </div>
         {/* Double carte « Maintenant / Suivant » (pattern Muslim Pro) */}
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginBottom: 10 }}>
           <div style={{ background: 'rgba(255,255,255,0.06)', borderRadius: 14, padding: '11px 14px' }}>

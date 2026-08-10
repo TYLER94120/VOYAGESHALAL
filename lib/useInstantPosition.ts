@@ -54,6 +54,35 @@ function diffuser(pos: InstantPos, source: PosSource) {
   abonnes.forEach((f) => f({ pos, source }))
 }
 
+// ─── NOMMER LE LIEU, PAS LA MÉTHODE ──────────────────────────────────────
+// « Ma position » n'est pas une réponse : ça ne dit pas OÙ. L'utilisateur ne
+// peut donc pas vérifier que sa position a été prise en compte, et il se
+// demande s'il doit réappuyer. Dès que le GPS répond, on va chercher le nom
+// du lieu (notre propre liste de villes d'abord) et on remplace le libellé.
+// Le résultat se diffuse à toute la page par le mécanisme ci-dessus.
+const nomsConnus = new Map<string, string>()
+
+/** Libellés qui décrivent la MÉTHODE et non le LIEU : ceux-là, on les remplace. */
+const LIBELLES_SANS_LIEU = new Set([
+  'Ma position', 'Ma position exacte', 'My position', 'My exact location',
+  'Autour de vous', 'Around you', 'Dernière position', 'Last position',
+])
+
+async function nommerLeLieu(lat: number, lng: number): Promise<string | null> {
+  const cle = `${lat.toFixed(2)},${lng.toFixed(2)}`
+  if (nomsConnus.has(cle)) return nomsConnus.get(cle)!
+  try {
+    const ac = new AbortController()
+    const t = setTimeout(() => ac.abort(), 4000)
+    const r = await fetch(`/api/reverse?lat=${lat}&lng=${lng}`, { signal: ac.signal })
+    clearTimeout(t)
+    if (!r.ok) return null
+    const j = await r.json()
+    if (typeof j?.nom === 'string' && j.nom) { nomsConnus.set(cle, j.nom); return j.nom }
+  } catch { /* on garde le libellé actuel */ }
+  return null
+}
+
 export function useInstantPosition(en = false) {
   const { city } = useLocation()
   const [pos, setPosState] = useState<InstantPos | null>(null)
@@ -73,6 +102,13 @@ export function useInstantPosition(en = false) {
       try { localStorage.setItem(LAST_KEY, JSON.stringify(p)) } catch { /* stockage privé */ }
     }
     diffuser(p, s)
+
+    // Le GPS donne des coordonnées, pas un nom. On va chercher le nom, et on
+    // rediffuse — l'écran passe de « Ma position » à « Rabat » tout seul.
+    if (s === 'gps' && LIBELLES_SANS_LIEU.has(p.label)) {
+      void nommerLeLieu(p.lat, p.lng).then((nom) => { if (nom) setPos({ ...p, label: nom }, s) })
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   // On écoute ce que trouvent les autres outils de la page, et on ne descend
