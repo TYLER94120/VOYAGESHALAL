@@ -13,15 +13,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 
 ## A faire
 
-1. **La premiere question de `prophetes-coran` arrive trop tard.**
-   *Preuve :* mesure au navigateur, cycle du 10 aout — elle tombe **apres 4
-   tapes** (carte 5), alors que les cinq autres lecons sont a 2 ou 3 tapes. La
-   regle du site est « une question dans les trois premieres cartes », et c'est
-   la seule lecon qui ne la tient pas. Le test la nomme explicitement comme
-   exception connue plutot que de la masquer. Correctif : deplacer la carte de
-   question de la position 5 vers la position 4.
-
-2. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
+1. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
    *Preuve :* c'est la piece la plus puissante de la liste du responsable, et
    elle est la seule non commencee. Le blocage est reel et non technique : une
    notification calee sur une heure de priere suppose de **connaitre** cette
@@ -33,14 +25,14 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    **N'entre pas en travaux avant arbitrage** — c'est une decision, pas un
    chantier.
 
-3. **La session n'est pas toujours gagnable.**
+2. **La session n'est pas toujours gagnable.**
    *Preuve :* mesure du 10 aout — une mauvaise reponse ne bloque pas la
    progression (elle montre la bonne et explique), mais **la carte ne revient
    pas** plus loin dans la seance. Tant qu'elle ne revient pas, une erreur reste
    une erreur au lieu de devenir un apprentissage. C'est la piece 3 de la liste
    « addictif » du responsable, et la seule de cette liste encore ouverte.
 
-4. **Aucune mesure d'entree, et un traceur est interdit ici.**
+3. **Aucune mesure d'entree, et un traceur est interdit ici.**
    *Preuve :* `grep -ril "gtag\|analytics\|plausible\|matomo\|umami"` sur toutes
    les pages et les trois fichiers JavaScript ne rend **rien**. Or le pied de
    page promet « Ta progression reste sur ton telephone. Aucun compte, aucun
@@ -49,7 +41,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    journaux). Bloque jusqu'au deploiement — question posee aux trois autres
    agents dans le brainstorm des passerelles.
 
-5. **La recitation n'a jamais ete entendue par personne.**
+4. **La recitation n'a jamais ete entendue par personne.**
    *Preuve :* `halalgpt.fr:443` et `cdn.islamic.network:443` sont refuses par la
    politique reseau de l'atelier (403 au CONNECT, journalise par le proxy,
    verifie trois fois). Le mecanisme est teste avec un recitateur simule — 7
@@ -58,7 +50,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    la reponse sur un telephone avec du vrai reseau. Attend une capture d'ecran de
    Mohamed, ou le deploiement.
 
-6. **Les liens sortants sont tous au mauvais endroit.**
+5. **Les liens sortants sont tous au mauvais endroit.**
    *Preuve :* mesure du 10 aout — **48 liens sortants, 48 en pied de page, 0 dans
    le contenu**. Les 8 qui sont des phrases utiles (« Une question personnelle ?
    Pose-la sur halalgpt.fr ») sont elles aussi enfermees dans le pied. Ils sont
@@ -69,6 +61,20 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 ---
 
 ## Fait
+
+- **La question de `prophetes-coran` arrive maintenant a l'heure** *(10 aout,
+  cycle 2)* — **avant : apres 4 tapes. Apres : apres 3 tapes.** La regle « une
+  question dans les trois premieres cartes » vaut desormais pour les **six**
+  lecons : 3, 3, 3, 3, 2, 3 tapes. L'exception que le test nommait a ete retiree,
+  il verifie la regle partout.
+  *Et le correctif a reglé un defaut plus grave que celui qui etait consigne.* La
+  question « quel passage nomme dix-sept prophetes d'affilee ? » venait **juste
+  apres** la carte recapitulative titree « Nommes dans Al-An'am, 84 a 86 » : la
+  reponse etait ecrite a l'ecran precedent, la question ne faisait donc rien
+  retenir. En echangeant les deux cartes, elle devient un vrai rappel — les
+  cartes 2 et 3 citent la sourate, la recapitulation qui suit sert de
+  renforcement. Nombre de cartes inchange (12), aucune erreur JavaScript, aucun
+  debordement, les 6 lecons vont jusqu'a l'ecran de fin.
 
 - **Les quatre lecons muettes posent enfin des questions** *(10 aout)* —
   **avant : 2 lecons sur 6 avaient une question. Apres : 6 sur 6.** 11 questions
