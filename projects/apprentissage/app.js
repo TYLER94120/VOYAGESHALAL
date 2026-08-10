@@ -635,7 +635,20 @@ function ippRendreAccueil(racine) {
   // lisible par Google et sans JavaScript), on le masque seulement le temps
   // des questions.
   var corps = q('accueil-corps');
-  if (!IPP.niveau() && q('diag')) {
+
+  // On n'impose les trois questions qu'a quelqu'un qui n'a RIEN fait encore.
+  //
+  // Pourquoi ce garde-fou : on arrive aussi ici par une passerelle depuis un
+  // autre site de la famille, directement sur une lecon. Cette personne a
+  // travaille six minutes, puis ouvre l'accueil — et sans cette condition, le
+  // site lui demandait « ou en es-tu avec la priere ? » comme a une inconnue,
+  // en masquant au passage sa serie et son anneau du jour. Le pire accueil
+  // possible pour quelqu'un qui vient de faire l'effort.
+  //
+  // Les questions restent proposees, jamais perdues : « Mon chemin » porte le
+  // bouton « Repondre aux 3 questions ».
+  var dejaVenu = IPP.jours().length > 0;
+  if (!IPP.niveau() && !dejaVenu && q('diag')) {
     if (corps) { corps.hidden = true; }
     ippDemarrerDiagnostic(racine, function () {
       if (corps) { corps.hidden = false; }
@@ -1008,7 +1021,7 @@ function ippRendreMoment(q) {
       + '<p class="rdv cest-maintenant">' + ippEchappe(m.nom) + '</p>'
       + '<p class="note-pied">Le site ne calcule pas les horaires de priere. '
       + 'Pour ceux de ta ville&nbsp;: '
-      + '<a href="https://voyageshalal.fr/horaires-priere">voyageshalal.fr</a>.</p>'
+      + '<a href="https://voyageshalal.fr/horaires-priere?utm_source=islampasapas&utm_medium=contenu&utm_campaign=rendez-vous">voyageshalal.fr</a>.</p>'
       + '<button class="btn fantome" type="button" data-r="moment-changer">Changer de moment</button>'
       + '</div>';
     var b = zone.querySelector('[data-r="moment-changer"]');
@@ -1580,7 +1593,7 @@ function ippProposerMoment(q, quandChoisi) {
     + '<p class="prudence">Ce site <strong>ne calcule pas</strong> les horaires de priere&nbsp;: '
     + 'tu choisis seulement un repere dans ta journee, et rien d\'autre n\'est affiche. '
     + 'Pour les horaires exacts de ta ville, va sur '
-    + '<a href="https://voyageshalal.fr/horaires-priere">voyageshalal.fr</a>.</p>'
+    + '<a href="https://voyageshalal.fr/horaires-priere?utm_source=islampasapas&utm_medium=contenu&utm_campaign=rendez-vous">voyageshalal.fr</a>.</p>'
     + '</div>';
   zone.hidden = false;
 
