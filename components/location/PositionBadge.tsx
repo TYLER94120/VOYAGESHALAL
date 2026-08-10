@@ -73,7 +73,7 @@ export default function PositionBadge({
         }}
       >
         {geoLoading
-          ? (en ? '📡 Locating…' : '📡 Localisation…')
+          ? <>📡 <span style={{ overflow: 'hidden', textOverflow: 'ellipsis' }}>{nom}</span><span style={{ fontSize: 11.5, fontWeight: 700, color: 'var(--or)' }}>{en ? '· locating…' : '· recherche…'}</span></>
           : <>📍 <span style={{ overflow: 'hidden', textOverflow: 'ellipsis' }}>{nom}</span><span style={{ fontSize: 11.5, fontWeight: 700, color: rassurant ? '#22c55e' : 'var(--or)' }}>
               {exacte ? (en ? '· exact ✓' : '· exacte ✓')
                 : choisie ? (en ? '· chosen city' : '· ville choisie')
@@ -94,7 +94,9 @@ export default function PositionBadge({
     }}>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 10, flexWrap: 'wrap' }}>
         <p style={{ margin: 0, color: tx, fontSize: 15.5, fontWeight: 800 }}>
-          📍 {geoLoading ? (en ? 'Locating…' : 'Localisation…') : nom}
+          {/* Le nom reste affiché pendant la recherche : le faire disparaître
+              enlève le seul repère au moment précis où on doute. */}
+          📍 {nom}
         </p>
         <p style={{
           margin: 0, fontSize: 12.5, fontWeight: 800,

@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react'
 import { useCommunity, authFetch } from '@/lib/useCommunity'
 import { useInstantPosition } from '@/lib/useInstantPosition'
+import PositionBadge from '@/components/location/PositionBadge'
 import AuthSheet from '@/components/community/AuthSheet'
 import Celebration from '@/components/community/Celebration'
 import QcmSpot from '@/components/community/QcmSpot'
@@ -35,7 +36,8 @@ export default function AjouterClient() {
   const { lang } = useLanguage()
   const en = lang === 'en'
   const { me, loaded, sendCode, verify, googleLogin, refresh } = useCommunity()
-  const { pos, refineGps } = useInstantPosition(en)
+  const etatPos = useInstantPosition(en)
+  const { pos, source, refineGps } = etatPos
   const [step, setStep] = useState(1)
   const [categorie, setCategorie] = useState('')
   const [lieu, setLieu] = useState<{ nom: string; lat: number; lng: number; manuel: boolean } | null>(null)
@@ -154,9 +156,16 @@ export default function AjouterClient() {
           <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: 24, fontWeight: 900, color: '#0b1a0f', margin: '0 0 6px' }}>
             {en ? 'Where is it? 📍' : 'C\'est où ? 📍'}
           </h2>
+          {/* ⚠️ ICI LA POSITION N'EST PAS UN CONFORT, C'EST UNE DONNÉE.
+              Ce qu'on enregistre ira dans la base et sera montré à d'autres
+              voyageurs. Une position approximative écrite comme exacte, c'est
+              un lieu faux publié en notre nom. Donc on l'affiche en grand. */}
+          <div style={{ margin: '0 0 12px' }}>
+            <PositionBadge etat={etatPos} en={en} clair />
+          </div>
           <p style={{ fontSize: 14, color: '#4b5563', margin: '0 0 12px' }}>
             {pos
-              ? (en ? `Around you (${pos.label}) — tap the place:` : `Autour de toi (${pos.label}) — tape le lieu :`)
+              ? (en ? 'Tap the place around you:' : 'Tape le lieu autour de toi :')
               : (en ? 'Locating…' : 'Localisation…')}
           </p>
 
@@ -188,12 +197,23 @@ export default function AjouterClient() {
             </p>
           )}
 
-          {/* Toujours possible : ma position exacte + nom saisi (jamais d'adresse) */}
+          {/* « Je suis ici » n'a le droit d'exister QUE si la position vient
+              vraiment du GPS. Sans ça, on enregistrait la position estimée
+              depuis la connexion — à plusieurs kilomètres — sous l'étiquette
+              « ma position exacte ». Tant que le GPS n'a pas répondu, le
+              bouton demande le GPS au lieu de publier un lieu faux. */}
           {pos && (
-            <button onClick={() => { setLieu({ nom: '', lat: pos.lat, lng: pos.lng, manuel: true }); setStep(3) }}
-              style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10, width: '100%', minHeight: 56, borderRadius: 14, border: '2px dashed rgba(27,67,50,0.35)', background: 'rgba(201,168,76,0.08)', color: '#1b4332', fontWeight: 800, fontSize: 15, cursor: 'pointer' }}>
-              📍 {en ? 'I\'m here (my exact GPS spot)' : 'Je suis ici (ma position exacte)'}
-            </button>
+            source === 'gps' ? (
+              <button onClick={() => { setLieu({ nom: '', lat: pos.lat, lng: pos.lng, manuel: true }); setStep(3) }}
+                style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10, width: '100%', minHeight: 56, borderRadius: 14, border: '2px dashed rgba(27,67,50,0.35)', background: 'rgba(201,168,76,0.08)', color: '#1b4332', fontWeight: 800, fontSize: 15, cursor: 'pointer' }}>
+                📍 {en ? 'I\'m here (my exact GPS spot)' : 'Je suis ici (ma position exacte)'}
+              </button>
+            ) : (
+              <button onClick={() => void refineGps()}
+                style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10, width: '100%', minHeight: 56, borderRadius: 14, border: '2px dashed rgba(27,67,50,0.35)', background: 'rgba(201,168,76,0.08)', color: '#1b4332', fontWeight: 800, fontSize: 15, cursor: 'pointer' }}>
+                📍 {en ? 'Turn on exact position to add a place here' : 'Active ta position exacte pour ajouter ici'}
+              </button>
+            )
           )}
           <button onClick={() => setStep(1)} style={{ background: 'none', border: 'none', color: '#6b7280', fontSize: 14, cursor: 'pointer', minHeight: 44, marginTop: 6 }}>← {en ? 'Back' : 'Retour'}</button>
         </div>

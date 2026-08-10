@@ -68,20 +68,26 @@ export default function Header({ brandEN = false }: { brandEN?: boolean }) {
 
         {/* Actions */}
         <div className="header-actions">
-          {/* Badge ville mémorisée — visible sur toutes les pages, clic = effacer */}
+          {/* Badge VILLE CONSULTÉE — à ne pas confondre avec la position.
+              Les deux s'affichaient avec la même épingle 📍 : Mohamed a
+              photographié l'accueil annonçant « Marrakech » en haut et
+              « spots à Fès » dans une tuile. Ce n'était pas un bug de
+              calcul — c'étaient deux notions différentes portant le même
+              symbole. L'épingle est désormais réservée à « où tu es » ;
+              la ville qu'on consulte porte la loupe et le mot « Ville ». */}
           {city && (
             <button
               type="button"
               onClick={clearLocation}
-              title="Changer de ville"
-              aria-label={`Ville actuelle : ${city.nom}. Cliquer pour changer.`}
+              title="Ville que vous consultez — cliquer pour changer"
+              aria-label={`Ville consultée : ${city.nom}. Cliquer pour changer.`}
               style={{
                 display: 'flex', alignItems: 'center', gap: '6px',
                 background: 'rgba(201,168,76,0.15)', border: '1px solid rgba(201,168,76,0.4)',
                 borderRadius: '20px', padding: '5px 12px', cursor: 'pointer',
               }}
             >
-              <span style={{ color: 'var(--or)', fontSize: '13px', fontWeight: 700 }}>📍 {city.nom}</span>
+              <span style={{ color: 'var(--or)', fontSize: '13px', fontWeight: 700 }}>🔎 {city.nom}</span>
               <span style={{ color: 'rgba(0,0,0,0.35)', fontSize: '11px' }}>✕</span>
             </button>
           )}

@@ -4,6 +4,7 @@ import 'leaflet/dist/leaflet.css'
 import type { Map as LeafletMap, Marker } from 'leaflet'
 import { getPosition, describeGeoError, type GeoError, type GeoErrorCode } from '@/lib/geo'
 import { useInstantPosition } from '@/lib/useInstantPosition'
+import PositionBadge from '@/components/location/PositionBadge'
 import { computePrayerTimesFull } from '@/lib/prayerCalc'
 import { prixResume } from '@/lib/community'
 
@@ -104,7 +105,8 @@ function pinIcon(L: any, color: string, icon: string, selected: boolean, rank?: 
 export default function AutourDeMoiPage() {
   // Position instantanée (dernière position → ville → Paris → IP → GPS si permis)
   // → les points s'affichent IMMÉDIATEMENT, le GPS n'est qu'un affinage.
-  const { pos: instantPos } = useInstantPosition()
+  const etatPos = useInstantPosition()
+  const { pos: instantPos } = etatPos
   const [cat, setCat] = useState<Cat>('mosquees')
   const [pos, setPos] = useState<{ lat: number; lng: number } | null>(null)
   const [spots, setSpots] = useState<Spot[]>([])
@@ -142,7 +144,10 @@ export default function AutourDeMoiPage() {
   useEffect(() => {
     if (userChose.current || !instantPos) return
     try {
-      const t = computePrayerTimesFull(instantPos.lat, instantPos.lng, 3, 0, new Date())
+      // Méthode et école de l'utilisateur — la même que partout ailleurs.
+      const meth = Number((typeof localStorage !== 'undefined' && localStorage.getItem('vh_prayer_method')) || 3)
+      const ecole = Number((typeof localStorage !== 'undefined' && localStorage.getItem('vh_prayer_school')) || 0)
+      const t = computePrayerTimesFull(instantPos.lat, instantPos.lng, meth, ecole, new Date())
       const now = Date.now()
       const soon = [t.Fajr, t.Dhuhr, t.Asr, t.Maghrib, t.Isha]
         .some((d) => d.getTime() - now > 0 && d.getTime() - now < 45 * 60 * 1000)
@@ -435,6 +440,17 @@ export default function AutourDeMoiPage() {
             <button onClick={searchHere} style={{ pointerEvents: 'auto', minHeight: 44, background: '#fff', color: 'var(--nuit)', fontWeight: 700, fontSize: 13.5, border: 'none', borderRadius: 30, padding: '0 16px', cursor: 'pointer', boxShadow: '0 4px 14px rgba(0,0,0,.18)' }}>
               🔄 Rechercher dans cette zone
             </button>
+            {/* Même pilule de position que sur le reste du site : sur une
+                carte aussi, il faut savoir d'où partent les distances. */}
+            <span
+              // Le tap relance le GPS : la carte doit alors reprendre la main
+              // sur une éventuelle ville cherchée à la main, sinon elle reste
+              // là où elle était et le bouton semble ne rien faire.
+              onClick={() => { manualMove.current = false }}
+              style={{ pointerEvents: 'auto', boxShadow: '0 4px 14px rgba(0,0,0,.18)', borderRadius: 999, background: '#fff' }}
+            >
+              <PositionBadge compact clair etat={etatPos} />
+            </span>
           </div>
         </div>
 

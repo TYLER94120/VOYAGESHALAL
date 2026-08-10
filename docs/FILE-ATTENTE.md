@@ -62,13 +62,7 @@ sont plus courtes que nos guides récents (900 à 1 200 mots). Approfondir
 vaut mieux que créer : ajouter le plan d'accès précis, les horaires
 d'affluence, ce qu'on fait quand la salle est fermée.
 
-### 6. Deux villes différentes affichées en même temps sur l'accueil
-**Constaté sur une capture de Mohamed (11 août)** : le bandeau du haut
-indiquait « Marrakech » pendant qu'une tuile annonçait « spots à Fès ».
-Non reproduit depuis. À investiguer quand le cas se représente — noter
-l'heure et la position.
-
-### 7. `force-dynamic` : 8 pages à réexaminer
+### 6. `force-dynamic` : 8 pages à réexaminer
 **Mesuré** : 37 fichiers, dont **29 routes /api** où le réglage n'a aucun
 effet. Restent 8 pages. Vérification déjà faite pour le layout racine (il
 est nécessaire au bi-domaine, voir la compétence `servir-deux-domaines`).
@@ -77,6 +71,41 @@ Les 7 autres n'ont pas été examinées une par une.
 ---
 
 ## Fait
+
+### La position, dite en clair sur tout le site — 11 août
+**Reproché par Mohamed** : « il y a écrit ma position, mais ce n'est pas
+clair, on ne sait pas si ça l'a pris en compte, s'il faut rappuyer ».
+
+Le fond du problème n'était pas l'affichage : « Ma position » décrit la
+MÉTHODE et non le LIEU. Rien à vérifier, donc aucune confiance possible.
+Le GPS donne maintenant un nom (`/api/reverse`, notre propre liste de 354
+villes, Nominatim seulement au-delà de 60 km) : **« Ma position » → « Rabat »**.
+
+Un composant unique (`components/location/PositionBadge`) répond partout aux
+trois mêmes questions dans le même ordre : où · quelle qualité · quoi faire.
+Trois qualités, pas deux : exacte, ville choisie, approximative.
+**Mesuré sur 6 pages × 2 états** (GPS refusé / accordé) : même lieu, même
+horaire, même formulation, zéro erreur JavaScript.
+
+Trois défauts trouvés en chemin :
+ · la page horaires avait sa **propre copie** de la résolution de position ;
+ · le bandeau du haut rappelait api.aladhan.com **chaque seconde** ;
+ · la page horaires affichait « indisponibles » dès qu'aladhan ne répondait
+   pas, pendant que le bandeau donnait l'heure (calcul local en repli).
+
+Et « Je suis ici (ma position exacte) », sur l'ajout d'un spot, enregistrait
+la position estimée depuis la connexion quand le GPS n'avait pas répondu :
+**un lieu faux publié sous l'étiquette « exact »**. Le bouton demande
+désormais le GPS d'abord.
+
+### Deux villes différentes affichées en même temps — 11 août
+**Constaté sur une capture de Mohamed** : le bandeau annonçait « Marrakech »
+pendant qu'une tuile annonçait « spots à Fès ».
+
+Ce n'était pas un bug de calcul : **deux notions différentes portaient la
+même épingle 📍** — la position réelle, et la ville qu'on consulte (mémorisée
+par le site). L'épingle est maintenant réservée à « où tu es » ; la ville
+consultée porte la loupe 🔎 et le mot « Ville consultée ».
 
 ### Deux horaires de prière différents sur le même écran — 11 août
 **Constaté sur une capture de Mohamed** : le bandeau du haut annonçait

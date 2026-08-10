@@ -19,7 +19,9 @@ export default function LocationBar({ dark = true }: { dark?: boolean }) {
     <>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '10px 16px' }}>
         <span style={{ display: 'flex', alignItems: 'center', gap: '6px', color: dark ? 'var(--nuit)' : '#fff', fontSize: '15px', fontWeight: 700 }}>
-          <span>📍</span> {city ? city.nom : 'Choisir une ville'}
+          {/* 🔎 = la ville qu'on consulte. 📍 reste réservée à la position
+              réelle (voir components/location/PositionBadge). */}
+          <span>🔎</span> {city ? city.nom : 'Choisir une ville'}
         </span>
         <button onClick={() => setOpen(true)} style={{ display: 'flex', alignItems: 'center', gap: '5px', background: 'rgba(201,168,76,0.16)', border: '1px solid rgba(201,168,76,0.4)', color: 'var(--or)', borderRadius: '20px', padding: '6px 14px', fontSize: '12.5px', fontWeight: 700, cursor: 'pointer' }}>
           ⇄ Changer
