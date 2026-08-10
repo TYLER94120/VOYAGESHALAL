@@ -2598,19 +2598,45 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     publishedAt: '2026-08-01',
     lang: 'en',
     tags: ['prayer', 'disneyland', 'paris', 'muslim travel'],
-    content: `
-<p>Spending a day at Disneyland Paris and wondering where to pray? The park provides a quiet, discreet space, available on simple request. Here is how to access it.</p>
-<h2>The essentials in 30 seconds</h2>
-<p>A discreet, quiet room is made available at City Hall, at the entrance of Disneyland Park. Simply ask a Cast Member to access it.</p>
-<h2>How to access it, step by step</h2>
-<p>City Hall is directly on your left after the entrance gates of Disneyland Park (Main Street). Walk in, go to the welcome desk, and ask for an appropriate place to pray. The staff will guide you. It is free, and the team is used to this request.</p>
-<h2>Practical tips</h2>
-<p>Plan around prayer times (<a href="/prayer-times">our prayer times tool</a> helps), especially dhuhr and asr. Do your wudu in the restrooms beforehand. Use the traveler's facilities (shortening and combining prayers). Depending on crowds, staff may direct you to another quiet spot. See also <a href="/blog/where-to-pray-paris-airports">our Paris airports guide</a>.</p>
+    content: `<p>Spending a day at Disneyland Paris and wondering where to pray? Here is what we know, what we do not, and above all how to plan so you are not stuck between two rides when ʿAsr comes in.</p>
+
+<h2>The short version</h2>
+<p>There is <strong>no official, signposted prayer room</strong> at Disneyland Paris. What travellers report is that asking at <strong>City Hall</strong> (on the left just after the turnstiles of Disneyland Park, on Main Street) gets you directed to a quiet, out-of-the-way space. It is free and the request is not unusual. <strong>We have not verified this ourselves</strong> — see below.</p>
+
+<h2>What we know, and what we do not</h2>
+<p><strong>What is established</strong>: City Hall is the park's guest services point, where all special requests are handled. So it is the right place to ask, whatever the answer on the day.</p>
+<p><strong>What we cannot guarantee</strong>: that a space will be available at the moment you ask. It depends on crowds, on the staff on duty and on the season. We will not write "there is a prayer room" until we have had it verified — that is the rule we hold ourselves to across the site, and it applies when it suits us least.</p>
+
+<h2>If the answer is no, or you have no time</h2>
+<p>This is the most common case on a busy day, and it can be prepared for. Four options, from the simplest down:</p>
+<p><strong>1. Step outside the park and come back.</strong> The esplanade between the two parks and the area around the station are far quieter than Main Street. Check the day's re-entry rule at the gate: everything else depends on it.<br/>
+<strong>2. Your hotel, if you are staying on site.</strong> The resort hotels are minutes away on foot or by shuttle. Praying in your room is by far the calmest option with children.<br/>
+<strong>3. A quiet corner of the park.</strong> The far ends of the themed lands, the paths behind the big attractions and the dining areas outside meal times all empty out. A pocket mat and two minutes are enough.<br/>
+<strong>4. Praying seated, in a queue or a show.</strong> When only a few minutes of the window are left, this is what many families do.</p>
+<p>On what is permitted in those situations — shortening, combining, making up — <strong>we do not rule</strong>: that is a religious question. Put it to <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&amp;utm_medium=passerelle&amp;utm_campaign=disneyland-en" target="_blank" rel="noopener noreferrer">HalalGPT</a>, which is built for it.</p>
+
+<h2>Wudu</h2>
+<p>This is the real obstacle, more than the prayer itself: park toilets are busy and the basins are high. Two habits change everything: filling <strong>a small squeezable bottle</strong> at the basin before going into the cubicle, and keeping a <strong>microfibre towel</strong> in your bag. The accessible cubicle, when free, has a basin inside — leave it immediately if someone needs it. The full method is in our guide: <a href="/blog/wudu-on-a-plane-or-train">making wudu while travelling</a>.</p>
+
+<h2>The prayer that causes trouble</h2>
+<p>It is never Dhuhr, it is <strong>Maghrib</strong>. In summer it falls in the middle of the evening at the park, at peak crowding; in winter it falls before closing, when everyone is heading for the exit. Either way the window is short and the place is packed.</p>
+<p>The habit that fixes it: check the day's times <em>in the morning</em>, not when the call arrives. Our <a href="/prayer-times">prayer times</a> give them for Marne-la-Vallée, and the page still works without a signal once opened.</p>
+
+<h2>With children, a pushchair, a bag</h2>
+<p>Bags are opened at the entrance check: <strong>a pocket prayer mat is no problem at all</strong>, it is an ordinary item and nobody blinks. Pack it rolled along the side of the bag rather than at the bottom — you will get it out faster. With a pushchair, stepping out to the esplanade and back is easier than crossing the park.</p>
+
+<h2>At Walt Disney Studios</h2>
+<p>The equivalent guest services point is <strong>Studio Services</strong>, just past the entrance. Same approach, same uncertainty about availability.</p>
+
 <h2>Frequently asked questions</h2>
-<p><strong>Is there a prayer room at Disneyland Paris?</strong> A quiet space via City Hall, on request to a Cast Member.<br/><strong>Is it free?</strong> Yes.<br/><strong>What about Walt Disney Studios?</strong> Ask at Studio Services.</p>
+<p><strong>Is there a prayer room at Disneyland Paris?</strong> No official signposted room. Travellers report a quiet space offered on request at City Hall; we have not verified it.<br/>
+<strong>Does it cost anything?</strong> No, requests of this kind are not charged for.<br/>
+<strong>Can you pray outdoors in the park?</strong> Nothing forbids it somewhere that does not block the way. The far ends of the lands are the quietest.<br/>
+<strong>What about halal food there?</strong> See our <a href="/destinations/paris">halal guide to Paris</a> and our <a href="/spots">traveller-shared spots</a>.<br/>
+<strong>And at the airport before or after?</strong> See <a href="/blog/where-to-pray-paris-airports">airport prayer rooms</a>.</p>
+
 <h2>Help the community</h2>
-<p>Prayed at Disneyland recently, or were shown a specific spot? Share it — you will help dozens of families, an ongoing sadaqa. <a href="/communaute">→ Join the community</a></p>
-`,
+<p>Have you prayed at Disneyland recently? Tell us <strong>what City Hall said and where they sent you</strong>. That is exactly the information this page is missing, and it will serve dozens of families. <a href="/communaute/ajouter">→ Add the place</a> · <a href="/communaute">→ Join the community</a></p>`,
   },
   {
     slug: "where-to-pray-paris-airports",
@@ -3157,17 +3183,45 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     readTime: "3 min",
     publishedAt: '2026-07-20',
     tags: ["Disneyland", "Paris", "Famille", "Prière"],
-    content: `<p>Tu passes une journée à Disneyland Paris et tu te demandes où prier ? Le parc met à disposition un espace calme et discret, accessible sur simple demande. Voici comment y accéder.</p>
+    content: `<p>Tu passes une journée à Disneyland Paris et tu te demandes où prier ? Voici ce qu'on sait, ce qu'on ne sait pas, et surtout comment t'organiser pour ne pas te retrouver coincé entre deux attractions à l'heure du ʿAsr.</p>
+
 <h2>L'essentiel en 30 secondes</h2>
-<p>Une salle discrète et calme est mise à disposition au City Hall, à l'entrée du parc Disneyland. Il suffit de s'adresser à un Cast Member pour y accéder.</p>
-<h2>Comment y accéder, étape par étape</h2>
-<p>Le City Hall se situe directement sur ta gauche après les portes d'entrée du parc Disneyland (Main Street). Entre, va au bureau d'accueil, et demande un endroit approprié pour prier. Le personnel te guidera. Gratuit, et l'accueil est habitué à ce type de demande.</p>
-<h2>Conseils pratiques</h2>
-<p>Anticipe selon les heures de prière (<a href="/horaires-priere">notre outil horaires</a> t'aide), surtout dhuhr et asr. Pense aux ablutions aux toilettes. Utilise les facilités du voyageur (raccourcir/regrouper). Selon l'affluence, le personnel peut orienter vers un autre endroit calme. Voir aussi <a href="/blog/ou-prier-aeroports">notre guide des aéroports</a>.</p>
+<p>Il n'existe <strong>pas de salle de prière officielle et signalée</strong> à Disneyland Paris. Ce que rapportent des voyageurs, c'est qu'en le demandant au <strong>City Hall</strong> (à gauche juste après les tourniquets du parc Disneyland, sur Main Street), le personnel oriente vers un endroit calme et à l'écart. C'est gratuit et la demande n'a rien d'inhabituel. <strong>Nous ne l'avons pas vérifié nous-mêmes</strong> — voir plus bas.</p>
+
+<h2>Ce que nous savons, et ce que nous ne savons pas</h2>
+<p><strong>Ce qui est établi</strong> : le City Hall est le point d'accueil du parc, celui où l'on traite toutes les demandes particulières. C'est donc le bon endroit où poser la question, quelle que soit la réponse du jour.</p>
+<p><strong>Ce que nous ne pouvons pas garantir</strong> : qu'un espace soit disponible à l'heure où tu le demanderas. Cela dépend de l'affluence, du personnel présent et de la saison. Nous n'écrirons pas « il y a une salle de prière » tant que nous ne l'aurons pas fait vérifier — c'est la règle que nous nous imposons sur tout le site, et elle vaut aussi quand elle nous arrange moins.</p>
+
+<h2>Si on te dit non, ou si tu n'as pas le temps</h2>
+<p>C'est le cas le plus fréquent un jour d'affluence, et il se prépare. Quatre solutions, de la plus simple à la moins confortable :</p>
+<p><strong>1. Sortir du parc et revenir.</strong> L'esplanade entre les deux parcs et les abords de la gare sont nettement plus calmes que Main Street. Vérifie la règle de sortie et de retour du jour à l'entrée : elle conditionne tout le reste de ton organisation.<br/>
+<strong>2. Ton hôtel, si tu dors sur place.</strong> Les hôtels du complexe sont à quelques minutes à pied ou en navette. Prier dans sa chambre reste la solution la plus sereine avec des enfants.<br/>
+<strong>3. Un coin tranquille du parc.</strong> Les extrémités des zones thématiques, les allées derrière les grandes attractions et les espaces de restauration en dehors des heures de repas se vident. Un tapis de poche et deux minutes suffisent.<br/>
+<strong>4. Prier assis, dans une file ou un spectacle.</strong> Quand il ne reste que quelques minutes avant la fin du créneau, c'est ce que font beaucoup de familles.</p>
+<p>Sur ce qu'on a le droit de faire dans ces situations — raccourcir, regrouper, rattraper — <strong>nous ne tranchons pas</strong> : c'est une question religieuse. Pose-la à <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&amp;utm_medium=passerelle&amp;utm_campaign=disneyland" target="_blank" rel="noopener noreferrer">HalalGPT</a>, qui est fait pour ça.</p>
+
+<h2>Les ablutions</h2>
+<p>C'est le vrai obstacle, plus que la prière elle-même : les toilettes du parc sont fréquentées et les lavabos sont hauts. Deux habitudes qui changent tout : remplir <strong>une petite bouteille souple</strong> au lavabo avant d'entrer dans la cabine, et garder une <strong>serviette microfibre</strong> dans le sac. La cabine pour personnes handicapées, quand elle est libre, dispose d'un lavabo à l'intérieur — laisse-la immédiatement si quelqu'un en a besoin. Le détail de la méthode est dans notre guide : <a href="/blog/ablutions-avion-train">faire ses ablutions en voyage</a>.</p>
+
+<h2>L'heure qui pose problème</h2>
+<p>Ce n'est jamais Dhuhr, c'est <strong>Maghrib</strong>. En été il tombe en plein milieu de la soirée au parc, au moment de la plus forte affluence ; en hiver il tombe avant même la fermeture, quand tout le monde se dirige vers la sortie. Dans les deux cas, le créneau est court et l'endroit est bondé.</p>
+<p>Le réflexe qui règle ça : regarder les horaires du jour <em>le matin</em>, pas au moment où l'appel arrive. Nos <a href="/horaires-priere">horaires de prière</a> les donnent pour Marne-la-Vallée, et la page fonctionne encore sans réseau une fois ouverte.</p>
+
+<h2>Avec des enfants, une poussette, un sac</h2>
+<p>Les sacs sont ouverts au contrôle à l'entrée : <strong>un tapis de prière de poche ne pose aucun problème</strong>, c'est un objet courant et personne ne s'en étonne. Prévois-le roulé sur le côté du sac plutôt qu'au fond, tu le sortiras plus vite. Avec une poussette, la sortie et le retour vers l'esplanade sont plus simples que de traverser le parc.</p>
+
+<h2>Aux Walt Disney Studios</h2>
+<p>Le point d'accueil équivalent est le <strong>Studio Services</strong>, juste après l'entrée. Même démarche, même incertitude sur la disponibilité.</p>
+
 <h2>Questions fréquentes</h2>
-<p><strong>Salle de prière à Disneyland Paris ?</strong> Un espace calme via le City Hall, sur demande à un Cast Member.<br/><strong>Gratuit ?</strong> Oui.<br/><strong>Et aux Walt Disney Studios ?</strong> Adresse-toi au Studio Services.</p>
+<p><strong>Y a-t-il une salle de prière à Disneyland Paris ?</strong> Pas de salle officielle signalée. Des voyageurs rapportent qu'un espace calme est proposé sur demande au City Hall ; nous ne l'avons pas vérifié.<br/>
+<strong>Est-ce payant ?</strong> Non, aucune demande de ce type n'est facturée.<br/>
+<strong>Peut-on prier dehors dans le parc ?</strong> Rien ne l'interdit dans un endroit qui ne gêne pas le passage. Les extrémités des zones sont les plus tranquilles.<br/>
+<strong>Et pour manger halal sur place ?</strong> Voir notre <a href="/destinations/paris">guide halal de Paris</a> et nos <a href="/spots">spots partagés par des voyageurs</a>.<br/>
+<strong>Et à l'aéroport avant ou après ?</strong> Voir <a href="/blog/ou-prier-aeroports">les salles de prière des aéroports</a>.</p>
+
 <h2>Aide la communauté</h2>
-<p>Tu as prié à Disneyland récemment, on t'a indiqué un endroit précis ? Partage-le — tu aideras des dizaines de familles, une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
+<p>Tu as prié à Disneyland récemment ? Dis-nous <strong>ce qu'on t'a répondu au City Hall et où on t'a orienté</strong>. C'est exactement l'information qui manque à cette page, et elle servira à des dizaines de familles. <a href="/communaute/ajouter">→ Ajouter le lieu</a> · <a href="/communaute">→ Rejoindre la communauté</a></p>`,
   },
   {
     slug: 'meilleurs-hotels-halal-istanbul',

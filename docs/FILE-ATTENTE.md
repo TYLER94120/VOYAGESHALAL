@@ -50,12 +50,17 @@ donc **ne rien conclure avant le 16**. Si le zéro persiste après cette
 date, le problème n'est pas le titre : il faudra regarder sur quelles
 requêtes ces pages sortent réellement.
 
-### 4. Les 8 pages aéroport sont courtes
-**Mesuré** : CDG 310 mots, Orly 265, Disneyland 228. Ce sont nos meilleures
-portes d'entrée (22 des 29 clics du site viennent de Disneyland) et elles
-sont plus courtes que nos guides récents (900 à 1 200 mots). Approfondir
-vaut mieux que créer : ajouter le plan d'accès précis, les horaires
-d'affluence, ce qu'on fait quand la salle est fermée.
+### 4. Les 10 pages « où prier » restantes sont courtes
+**Mesuré le 11 août, sur les pages rendues** (et non sur le code — mon
+premier compteur renvoyait 0 partout) : 11 pages, 2 853 mots au total,
+soit 259 en moyenne. Disneyland est passée à 879 ; restent CDG 308,
+Orly 263, guide aéroports 453, gares de Paris 322, Marseille 250,
+Lyon 224, Bruxelles 221, Genève 208, Toulouse 193, Nice 185.
+Nos guides récents font 900 à 1 200 mots.
+Le modèle est en place : ce qu'on peut ajouter sans rien inventer, c'est
+la méthode (que demander, que faire si on dit non), les ablutions, la
+prière qui pose problème selon la saison, et l'aveu de ce qu'on ne sait
+pas. Suivante à traiter : CDG, puis Orly.
 
 ### 5. `force-dynamic` : 8 pages à réexaminer
 **Mesuré** : 37 fichiers, dont **29 routes /api** où le réglage n'a aucun
@@ -66,6 +71,28 @@ Les 7 autres n'ont pas été examinées une par une.
 ---
 
 ## Fait
+
+### Disneyland Paris, notre meilleure page, était la plus courte — 11 août
+22 des 29 clics du site sur 7 jours viennent d'elle. Elle faisait **226
+mots**, la plus courte des onze pages « où prier », derrière le guide
+aéroports (453).
+
+**Après : 879 mots en français, 799 en anglais.** Total des onze pages :
+2 853 → 3 506 mots.
+
+**Et une affirmation a été qualifiée.** La page annonçait « le parc met à
+disposition un espace calme, accessible sur simple demande » comme un
+fait. Nous ne l'avons jamais vérifié — l'information vient de témoignages.
+C'est écrit noir sur blanc maintenant : « nous ne l'avons pas vérifié
+nous-mêmes », avec ce qui est établi (le City Hall est le point d'accueil,
+donc le bon endroit où demander) et ce qui ne l'est pas (qu'un espace soit
+libre à cette heure-là). Vérifié sur les deux domaines.
+
+Ce qui a été ajouté sans rien inventer : quoi faire si on te dit non
+(quatre solutions), les ablutions dans des toilettes très fréquentées,
+**Maghrib** comme la seule prière vraiment problématique (été comme
+hiver), et le tapis de poche au contrôle des sacs. Aucune adresse, aucun
+lieu précis que nous n'aurions pas vérifié.
 
 ### 14 villes d'Europe ont leurs sections « manger » et « prier » — 11 août
 **Avant** : 24 fiches sur 354. **Après** : **38**, soit **2 634 mots
