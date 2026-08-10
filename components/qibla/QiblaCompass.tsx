@@ -63,6 +63,7 @@ export default function QiblaCompass() {
 
   // Capteur de boussole (orientation appareil)
   const handlerRef = useRef<((e: DeviceOrientationEvent) => void) | null>(null)
+  const cadranRef = useRef<HTMLDivElement>(null)
   const iosPermNeeded = typeof window !== 'undefined' && typeof DeviceOrientationEvent !== 'undefined' &&
     typeof (DeviceOrientationEvent as unknown as { requestPermission?: () => Promise<string> })?.requestPermission === 'function'
 
@@ -85,7 +86,13 @@ export default function QiblaCompass() {
       try { if ((await (DeviceOrientationEvent as unknown as { requestPermission: () => Promise<string> }).requestPermission()) !== 'granted') return } catch { return }
     }
     attachSensor()
+    // Le cadran devient vivant : on l'amène sous les yeux au lieu de laisser
+    // l'utilisateur deviner qu'il se passe quelque chose plus bas.
+    setTimeout(() => cadranRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' }), 60)
   }
+
+  /** Vrai tant que la boussole attend le geste que seul iOS exige. */
+  const besoinActivation = iosPermNeeded && !sensorAsked
 
   // Android / navigateurs sans permission : capteur attaché automatiquement
   useEffect(() => {
@@ -116,7 +123,9 @@ export default function QiblaCompass() {
   }
 
   return (
-    <section style={{ maxWidth: 480, margin: '0 auto', padding: '1.5rem 1.5rem' }}>
+    // 96 px en bas : la barre de navigation du téléphone recouvrait la fin du
+    // cadran et la carte (constaté sur une capture).
+    <section style={{ maxWidth: 480, margin: '0 auto', padding: '1.25rem 1.5rem 96px' }}>
       {/* Sélecteur de mode */}
       <div style={{ display: 'flex', gap: 6, background: '#fff', padding: 6, borderRadius: 14, border: '1px solid rgba(27,67,50,0.12)', marginBottom: 20 }}>
         {([['boussole', '🧭 Boussole'], ['direction', '📐 Direction'], ['carte', '🗺️ Carte']] as [Mode, string][]).map(([m, label]) => (
@@ -131,11 +140,14 @@ export default function QiblaCompass() {
         <p style={{ color: 'var(--or)', fontSize: 11, fontWeight: 600, letterSpacing: 2, textTransform: 'uppercase', margin: 0 }}>Direction Qibla</p>
         <p style={{ fontFamily: "'Playfair Display', serif", fontSize: '2.6rem', fontWeight: 900, color: '#fff', margin: '2px 0 0', lineHeight: 1 }}>{Math.round(qibla!)}°</p>
         <p style={{ color: 'var(--or-clair)', fontSize: 15, margin: '2px 0 0' }}>{getCardinal(qibla!)} · 📍 {pos.label}</p>
-        {distance && <p style={{ color: 'rgba(253,250,243,0.6)', fontSize: 13, margin: '6px 0 0' }}>🕋 La Mecque est à {distance.toLocaleString('fr-FR')} km · angle par rapport au Nord géographique</p>}
+        {/* Carte volontairement courte : chaque ligne gagnée ici, c'est autant
+            de boussole visible sans faire défiler. L'angle par rapport au Nord
+            géographique est déjà expliqué sous le cadran. */}
+        {distance && <p style={{ color: 'rgba(253,250,243,0.6)', fontSize: 13, margin: '5px 0 0' }}>🕋 {distance.toLocaleString('fr-FR')} km jusqu’à La Mecque</p>}
         {source !== 'gps' && (
-          <p style={{ color: '#fbbf24', fontSize: 12, margin: '8px 0 0', fontWeight: 600 }}>⚠️ Position approximative ({pos.label}). Activez le GPS pour la Qibla exacte.</p>
+          <p style={{ color: '#fbbf24', fontSize: 12, margin: '7px 0 0', fontWeight: 600 }}>⚠️ Position approximative ({pos.label})</p>
         )}
-        <button onClick={usePrecise} disabled={loading} style={{ marginTop: 10, background: source !== 'gps' ? 'var(--or)' : 'none', border: '1px solid rgba(201,168,76,0.5)', color: source !== 'gps' ? 'var(--nuit)' : 'var(--or-clair)', borderRadius: 20, padding: '6px 16px', fontSize: 12.5, fontWeight: 700, cursor: 'pointer' }}>📍 {loading ? 'Localisation…' : 'Utiliser ma position exacte (GPS)'}</button>
+        <button onClick={usePrecise} disabled={loading} style={{ marginTop: 9, background: source !== 'gps' ? 'var(--or)' : 'none', border: '1px solid rgba(201,168,76,0.5)', color: source !== 'gps' ? 'var(--nuit)' : 'var(--or-clair)', borderRadius: 20, padding: '6px 16px', fontSize: 12.5, fontWeight: 700, cursor: 'pointer' }}>📍 {loading ? 'Localisation…' : source !== 'gps' ? 'Ma position exacte (GPS)' : 'Position GPS active'}</button>
       </div>
 
       {geoErr && (
@@ -148,13 +160,36 @@ export default function QiblaCompass() {
       {/* MODE BOUSSOLE — cadran live : Kaaba qui se déplace sur le cercle */}
       {mode === 'boussole' && (
         <div style={{ textAlign: 'center' }}>
-          <div style={{ width: 280, height: 280, margin: '0 auto 0.75rem', position: 'relative' }}>
-            <CompassDial heading={trueHeading} qibla={qibla!} live={hasSensor} aligned={aligned} />
-          </div>
-
-          {iosPermNeeded && !sensorAsked && (
-            <button onClick={startSensor} style={btnPrimary}>🧭 Activer la boussole</button>
+          {/* ⚠️ L'ACTIVATION PASSE AVANT LE CADRAN.
+              iOS n'autorise l'accès au capteur d'orientation QUE sur un geste
+              de l'utilisateur : on ne peut pas allumer la boussole tout seul.
+              Mais le bouton était placé SOUS un cadran de 280 px, donc sous la
+              ligne de flottaison : on arrivait sur une boussole morte sans
+              rien pour l'allumer. Il est maintenant le premier élément, et le
+              cadran lui-même est cliquable. */}
+          {besoinActivation && (
+            <button onClick={startSensor} style={{ ...btnPrimary, marginBottom: 14 }}>🧭 Activer la boussole</button>
           )}
+
+          <div
+            ref={cadranRef}
+            onClick={besoinActivation ? startSensor : undefined}
+            role={besoinActivation ? 'button' : undefined}
+            style={{ width: 280, height: 280, margin: '0 auto 0.75rem', position: 'relative', cursor: besoinActivation ? 'pointer' : 'default' }}
+          >
+            <div style={{ opacity: besoinActivation ? 0.4 : 1, transition: 'opacity .25s' }}>
+              <CompassDial heading={trueHeading} qibla={qibla!} live={hasSensor} aligned={aligned} />
+            </div>
+            {besoinActivation && (
+              <p style={{
+                position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center',
+                margin: 0, padding: '0 2.5rem', color: '#fff', fontWeight: 800, fontSize: 15, lineHeight: 1.4,
+                textShadow: '0 2px 10px rgba(0,0,0,0.6)',
+              }}>
+                Touchez pour activer la boussole
+              </p>
+            )}
+          </div>
 
           {sensorAsked && !hasSensor && (
             <div style={{ background: 'rgba(201,168,76,0.12)', border: '1px solid rgba(201,168,76,0.35)', borderRadius: 12, padding: '12px 16px', fontSize: 13, color: 'var(--foret)', marginBottom: 12 }}>

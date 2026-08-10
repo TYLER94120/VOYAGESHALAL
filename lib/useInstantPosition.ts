@@ -28,6 +28,32 @@ const LAST_KEY = 'vh_last_pos'
 const LEGACY_KEYS = ['vh_prayer_last_pos']
 export const DEFAULT_POS: InstantPos = { lat: 48.8566, lng: 2.3522, label: 'Paris', pays: 'France' }
 
+// ─── UNE SEULE POSITION POUR TOUTE LA PAGE ───────────────────────────────
+// Constaté sur une capture (page Qibla) : le bandeau du haut affichait
+// « 📍 Ma position » (GPS obtenu) pendant que la carte Qibla juste en dessous
+// affichait « ⚠️ Position approximative (Rabat) ». Même écran, deux réponses.
+//
+// La cause : chaque composant qui appelle ce hook mène sa propre enquête
+// (mémoire, IP, GPS) et arrive au but à des moments différents. Aucun ne
+// prévient les autres. C'est le même défaut que les deux horaires de prière.
+//
+// La correction : les instances se parlent. Dès qu'une trouve mieux, elle le
+// diffuse ; les autres s'alignent — jamais l'inverse, une position moins sûre
+// n'écrase jamais une position plus sûre.
+
+/** Du moins fiable au plus fiable. Une diffusion n'est acceptée que si elle
+ *  vaut au moins ce qu'on affiche déjà. */
+const RANG: Record<PosSource, number> = { default: 0, last: 1, city: 2, ip: 3, gps: 4, manual: 5 }
+
+let partagee: { pos: InstantPos; source: PosSource } | null = null
+const abonnes = new Set<(v: { pos: InstantPos; source: PosSource }) => void>()
+
+function diffuser(pos: InstantPos, source: PosSource) {
+  if (partagee && RANG[source] < RANG[partagee.source]) return
+  partagee = { pos, source }
+  abonnes.forEach((f) => f({ pos, source }))
+}
+
 export function useInstantPosition(en = false) {
   const { city } = useLocation()
   const [pos, setPosState] = useState<InstantPos | null>(null)
@@ -35,12 +61,32 @@ export function useInstantPosition(en = false) {
   const [geoLoading, setGeoLoading] = useState(false)
   const [geoErr, setGeoErr] = useState<GeoError | null>(null)
   const resolved = useRef(false)
+  const rangCourant = useRef<PosSource>('default')
 
   const setPos = useCallback((p: InstantPos, s: PosSource) => {
+    // Un autre outil de la page a peut-être déjà trouvé mieux (le GPS pendant
+    // qu'on partait sur la ville mémorisée) : on ne redescend pas.
+    if (RANG[s] < RANG[rangCourant.current]) return
+    rangCourant.current = s
     setPosState(p); setSource(s)
     if (s !== 'default') {
       try { localStorage.setItem(LAST_KEY, JSON.stringify(p)) } catch { /* stockage privé */ }
     }
+    diffuser(p, s)
+  }, [])
+
+  // On écoute ce que trouvent les autres outils de la page, et on ne descend
+  // jamais en fiabilité (le GPS ne se fait pas écraser par une position IP).
+  useEffect(() => {
+    const surMieux = (v: { pos: InstantPos; source: PosSource }) => {
+      if (RANG[v.source] < RANG[rangCourant.current]) return
+      rangCourant.current = v.source
+      setPosState(v.pos)
+      setSource(v.source)
+    }
+    abonnes.add(surMieux)
+    if (partagee) surMieux(partagee)
+    return () => { abonnes.delete(surMieux) }
   }, [])
 
   useEffect(() => {

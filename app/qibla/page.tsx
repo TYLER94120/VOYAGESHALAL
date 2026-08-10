@@ -22,16 +22,19 @@ export default async function QiblaPage() {
   const { isEN: en } = await getDomainSEO()
   return (
     <main style={{ minHeight: '100vh', background: 'var(--creme)' }}>
-      <section className="relative overflow-hidden text-center" style={{ background: 'var(--nuit)', padding: '4rem 1.5rem 3rem' }}>
+      {/* Le titre occupait 40 % du premier écran : l'outil commençait sous la
+          ligne de flottaison. Il est réduit — on vient ici pour la boussole,
+          pas pour lire un titre. */}
+      <section className="relative overflow-hidden text-center" style={{ background: 'var(--nuit)', padding: '1.75rem 1.5rem 1.5rem' }}>
         <IslamicPattern opacity={0.06} />
         <div className="relative z-10">
-          <p style={{ color: 'var(--or)', fontSize: '11px', fontWeight: 600, letterSpacing: '3px', textTransform: 'uppercase', marginBottom: '1rem' }}>✦ {en ? 'Muslim tools' : 'Outils musulmans'}</p>
-          <h1 style={{ fontFamily: "'Playfair Display', serif", fontSize: 'clamp(2rem, 5vw, 3rem)', fontWeight: 900, color: 'white', marginBottom: '0.75rem', lineHeight: 1.1 }}>
+          <p style={{ color: 'var(--or)', fontSize: '11px', fontWeight: 600, letterSpacing: '3px', textTransform: 'uppercase', marginBottom: '0.5rem' }}>✦ {en ? 'Muslim tools' : 'Outils musulmans'}</p>
+          <h1 style={{ fontFamily: "'Playfair Display', serif", fontSize: 'clamp(1.65rem, 4.5vw, 2.5rem)', fontWeight: 900, color: 'white', marginBottom: '0.4rem', lineHeight: 1.1 }}>
             {en ? 'Direction to' : 'Direction de'}
             <br />
             <em style={{ color: 'var(--or)' }}>{en ? 'Mecca' : 'La Mecque'}</em>
           </h1>
-          <p style={{ color: 'var(--or-clair)', fontSize: '1rem', opacity: 0.85 }}>{en ? 'Qibla compass · Precise GPS · Real-time' : 'Compas Qibla · GPS précis · Temps réel'}</p>
+          <p style={{ color: 'var(--or-clair)', fontSize: '0.9rem', opacity: 0.85 }}>{en ? 'Qibla compass · Precise GPS · Real-time' : 'Compas Qibla · GPS précis · Temps réel'}</p>
         </div>
       </section>
 
