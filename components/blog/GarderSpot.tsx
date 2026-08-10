@@ -66,6 +66,8 @@ const GUIDES_A_GARDER = new Set([
   'repas-halal-avion-moml',
   'ablutions-avion-train',
   'heure-priere-avion-fuseaux',
+  'voile-controle-securite-aeroport',
+  'toilettes-sans-douchette-voyage',
 ])
 
 export default function GarderSpot({ slug, titre, en = false }: { slug: string; titre: string; en?: boolean }) {

@@ -1447,6 +1447,162 @@ export const guides: Guide[] = [...guidesFr, ...guidesEn]
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "voile-controle-securite-aeroport",
+    title: "Voile au contrôle de sécurité : ce qu'on peut vous demander",
+    description: "Palpation, scanner, retrait du foulard : ce qui se passe vraiment au contrôle quand on porte le hijab, et les 3 phrases qui règlent la situation.",
+    coverImage: "/guides/blog-aeroports.jpg",
+    category: 'Pratique',
+    readTime: "5 min",
+    publishedAt: '2026-08-11',
+    tags: ['voile', 'aéroport', 'femme', 'pratique'],
+    content: `<p>C'est le moment que beaucoup de voyageuses redoutent : la file du contrôle, l'agent qui fait signe, et cette question dans la tête — « est-ce qu'on va me demander de l'enlever ? » Voici comment ça se passe réellement, et ce que vous pouvez demander.</p>
+
+<h2>L'essentiel en 30 secondes</h2>
+<p>Dans la très grande majorité des aéroports, <strong>le foulard ne se retire pas en public</strong>. Ce qui peut arriver, c'est une <strong>palpation de la tête</strong> si le portique ou le scanner signale quelque chose. Vous pouvez alors demander deux choses, et elles sont presque toujours accordées : que ce soit <strong>une agente</strong> qui le fasse, et que ce soit <strong>dans un espace à l'écart</strong>.</p>
+
+<h2>Ce qui déclenche un contrôle supplémentaire</h2>
+<p>Ce n'est pas le voile en lui-même, ce sont les <strong>volumes et les objets</strong> : épingles, broches et pinces métalliques, chignon volumineux, plusieurs épaisseurs de tissu, écharpe épaisse. Le scanner corporel signale une zone, et l'agent doit lever le doute.</p>
+<p>Trois gestes qui évitent la moitié des palpations : préférer des <strong>épingles en plastique</strong> le jour du vol, retirer les bijoux et pinces métalliques avant le portique, et éviter de superposer trois couches de tissu autour du cou.</p>
+
+<h2>Les trois phrases à connaître</h2>
+<p>Elles sont simples, polies, et elles règlent la situation dans l'immense majorité des cas.</p>
+<p><strong>1. « Je porte un foulard religieux. Est-ce qu'une agente peut faire le contrôle ? »</strong><br/>
+Le contrôle par palpation est en principe assuré par une personne du même sexe. C'est la règle dans la plupart des aéroports ; le demander avant qu'on vous touche évite le malaise.</p>
+<p><strong>2. « Je préfère un contrôle à l'écart, s'il vous plaît. »</strong><br/>
+Les postes de contrôle disposent en général d'une cabine ou d'un espace fermé. Le demander est un droit d'usage courant, pas une faveur.</p>
+<p><strong>3. « Je peux le repositionner moi-même si besoin. »</strong><br/>
+Si un ajustement est nécessaire, il est presque toujours possible de le faire soi-même plutôt que de se laisser manipuler.</p>
+<p>En anglais : <em>« I wear a religious head covering. Could a female officer do the check, in a private area, please? »</em></p>
+
+<h2>Et le retrait complet ?</h2>
+<p><strong>Il reste exceptionnel</strong>, et il ne se fait pas devant la file. Si un agent l'estime nécessaire, cela doit se dérouler à l'écart et avec une agente. Vous pouvez demander la présence d'un supérieur, et vous pouvez demander sur quel fondement la demande est faite.</p>
+<p>Le <strong>niqab</strong> et tout ce qui couvre le visage relèvent d'un autre cas : la vérification d'identité impose de montrer son visage, et cela peut se faire dans un espace privé avec une agente. Renseignez-vous sur les règles du pays avant de partir — elles varient beaucoup, et nous ne les résumerons pas ici parce qu'elles changent.</p>
+
+<h2>Ce qu'on ne vous dit jamais et qui aide vraiment</h2>
+<p><strong>Arrivez plus tôt.</strong> Le stress d'un contrôle supplémentaire vient surtout de la peur de rater l'avion. Une demi-heure de marge change tout.<br/>
+<strong>Voyagez léger côté accessoires.</strong> Moins de métal, moins d'arrêts.<br/>
+<strong>Gardez le sourire et le contact visuel.</strong> Les agents traitent des centaines de passagers ; une demande calme et claire obtient presque toujours ce qu'elle demande.<br/>
+<strong>Notez le nom de l'agent</strong> si quelque chose se passe mal. Une réclamation écrite après coup vaut mieux qu'une dispute sur place, qui vous ferait rater le vol.</p>
+
+<h2>Si ça s'est mal passé</h2>
+<p>Vous pouvez déposer une réclamation auprès de la compagnie et de l'aéroport, et selon le pays auprès de l'autorité qui supervise la sûreté aérienne ou d'une association de lutte contre les discriminations. Écrivez pendant que les détails sont frais : date, heure, terminal, poste de contrôle, et ce qui a été dit.</p>
+
+<h2>Questions fréquentes</h2>
+<p><strong>Doit-on enlever son foulard au contrôle ?</strong> Dans la grande majorité des cas, non. Une palpation de la tête peut être demandée ; le retrait complet reste exceptionnel et se fait à l'écart.<br/>
+<strong>Peut-on exiger une agente ?</strong> Le contrôle par palpation est en principe assuré par une personne du même sexe — demandez-le avant le contrôle.<br/>
+<strong>Et pour le passeport ?</strong> L'identification impose de montrer son visage ; cela peut se faire dans un espace privé.<br/>
+<strong>Où prier ensuite ?</strong> Voir <a href="/blog/ou-prier-aeroports">nos guides des salles de prière d'aéroport</a>.<br/>
+<strong>Une question religieuse sur le voile en voyage ?</strong> Posez-la à <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&utm_medium=passerelle&utm_campaign=voile-controle" target="_blank" rel="noopener noreferrer">HalalGPT</a> — nous ne rendons pas d'avis.</p>
+
+<h2>Aide la communauté</h2>
+<p>Tu as vécu un contrôle particulièrement bien — ou mal — géré dans un aéroport ? Raconte-le, ça prépare les autres. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
+  },
+  {
+    slug: "voyager-voilee-se-renseigner-pays",
+    title: "Voyager voilée : comment se renseigner sur un pays",
+    description: "Les listes de pays « sûrs » vieillissent mal. La méthode pour savoir en dix minutes comment le voile est vécu là où vous allez, et à qui le demander.",
+    coverImage: "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1200&q=80",
+    category: 'Pratique',
+    readTime: "6 min",
+    publishedAt: '2026-08-11',
+    tags: ['voile', 'femme', 'destinations', 'pratique'],
+    content: `<p>« Est-ce que je peux porter le hijab là-bas sans problème ? » C'est l'une des questions les plus posées avant un départ, et la plus mal traitée sur internet : on y trouve des listes de pays « safe » et « pas safe », recopiées d'un blog à l'autre, souvent périmées de plusieurs années.</p>
+<p>Nous n'écrirons pas cette liste. Voici la méthode qui reste juste, quel que soit le pays et quelle que soit l'année.</p>
+
+<h2>Pourquoi pas une liste ?</h2>
+<p>Parce qu'une loi change, un climat politique change, et surtout parce que <strong>la question n'a pas une seule réponse par pays</strong>. Le voile peut se vivre très différemment entre une capitale et une petite ville, entre un quartier touristique et un quartier d'affaires, entre la plage et l'administration. Une étiquette « pays sûr » collée sur une carte est presque toujours fausse quelque part.</p>
+<p>Ce qui est vrai, c'est la méthode. Elle prend dix minutes.</p>
+
+<h2>1. Séparez trois choses qu'on confond toujours</h2>
+<p><strong>La loi</strong> — existe-t-il des règles écrites sur le couvre-chef ou le voile intégral, et où s'appliquent-elles (rue, administration, écoles, tribunaux) ? C'est le seul point qui se vérifie officiellement.<br/>
+<strong>L'usage</strong> — comment les gens réagissent dans la rue. Ça ne se lit pas dans un texte, ça se demande à quelqu'un qui y vit.<br/>
+<strong>Le confort personnel</strong> — vous pouvez être parfaitement en règle et mal à l'aise, ou l'inverse. Personne ne peut décider ça pour vous.</p>
+<p>La plupart des articles mélangent les trois, et c'est pour ça qu'ils se contredisent.</p>
+
+<h2>2. Les sources qui valent quelque chose</h2>
+<p><strong>Le site officiel des affaires étrangères de votre pays</strong>, rubrique « conseils aux voyageurs » de la destination. C'est daté, c'est officiel, et c'est signalé quand une règle vestimentaire existe.<br/>
+<strong>L'ambassade du pays de destination</strong> : un mail ou un appel obtient une réponse écrite. Peu de gens le font, ça marche très bien.<br/>
+<strong>Des femmes qui y vivent</strong> — c'est la source la plus fiable pour l'usage. Groupes de voyageuses musulmanes, communautés locales, associations d'expatriés.<br/>
+<strong>Les vidéos récentes</strong> tournées dans la rue de la ville visée : regardez simplement <em>les passantes</em> à l'arrière-plan. C'est un indicateur brut mais honnête.</p>
+<p>Ce qui ne vaut rien : un article non daté, une liste sans source, un forum de 2018.</p>
+
+<h2>3. Les questions à poser (elles sont plus utiles que « c'est safe ? »)</h2>
+<p>— Le voile est-il courant dans la rue, ou est-ce qu'on se retourne ?<br/>
+— Y a-t-il des lieux où il pose problème : administrations, banques, certains musées, discothèques d'hôtel ?<br/>
+— Comment ça se passe pour la photo d'identité, à l'hôtel, à la location de voiture ?<br/>
+— Quelles sont les habitudes à la plage et à la piscine ?<br/>
+— Y a-t-il un quartier où l'on est plus tranquille ?</p>
+<p>Ces questions obtiennent des réponses concrètes. « C'est safe ? » n'en obtient jamais.</p>
+
+<h2>4. Ce qui change tout sur place</h2>
+<p><strong>Le premier jour donne le ton.</strong> Sortez d'abord dans un quartier vivant en journée, observez, et ajustez.<br/>
+<strong>Deux options dans la valise.</strong> Beaucoup de voyageuses emportent un foulard discret et un plus couvrant, et choisissent selon le lieu et le moment. Ce n'est pas se renier, c'est s'adapter à un contexte.<br/>
+<strong>Repérez la mosquée la plus proche dès l'arrivée.</strong> Au-delà de la prière, c'est le point de contact le plus simple avec la communauté locale, qui saura répondre à tout le reste. Notre outil <a href="/mosquee-proche">mosquée la plus proche</a> la trouve en quelques secondes.<br/>
+<strong>Gardez le numéro de votre ambassade.</strong> Deux minutes à l'arrivée, et vous n'y penserez plus.</p>
+
+<h2>5. Le cas particulier des plages et piscines</h2>
+<p>Les règles d'accès varient d'un établissement à l'autre, parfois dans une même ville : certaines piscines d'hôtel acceptent le burkini, d'autres non, et certaines réservent des créneaux aux femmes. La seule réponse fiable est celle de l'établissement lui-même : <strong>écrivez-leur avant de réserver</strong>. Une réponse par écrit vaut mieux que dix avis en ligne.</p>
+<p>Sur nos pages hôtels, quand l'information sur une piscine non mixte vient d'une source vérifiée, elle est affichée avec cette source — et quand nous ne savons pas, nous écrivons que nous ne savons pas.</p>
+
+<h2>Questions fréquentes</h2>
+<p><strong>Existe-t-il une liste de pays sûrs pour une femme voilée ?</strong> Aucune liste ne reste juste longtemps. La méthode ci-dessus, oui.<br/>
+<strong>Qui donne l'information la plus fiable ?</strong> Des femmes qui vivent sur place, pour l'usage ; le ministère des affaires étrangères, pour les règles.<br/>
+<strong>Et au contrôle de sécurité de l'aéroport ?</strong> Voir <a href="/blog/voile-controle-securite-aeroport">ce qu'on peut vous demander au contrôle</a>.<br/>
+<strong>Et voyager seule ?</strong> Voir <a href="/guides/voyage-halal-solo-femme">notre guide du voyage au féminin</a>.<br/>
+<strong>Une question religieuse sur le voile ?</strong> Posez-la à <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&utm_medium=passerelle&utm_campaign=voyager-voilee" target="_blank" rel="noopener noreferrer">HalalGPT</a>.</p>
+
+<h2>Aide la communauté</h2>
+<p>Tu as voyagé voilée quelque part récemment ? Raconte comment ça s'est passé, ville par ville — c'est exactement ce qui manque aux autres. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
+  },
+  {
+    slug: "toilettes-sans-douchette-voyage",
+    title: "Toilettes sans douchette en voyage : comment faire",
+    description: "Ni douchette, ni jet, parfois pas de point d'eau : la méthode concrète pour rester propre en voyage, et les 3 objets qui règlent tout pour dix euros.",
+    coverImage: "https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=1200&q=80",
+    category: 'Pratique',
+    readTime: "4 min",
+    publishedAt: '2026-08-11',
+    tags: ['hygiène', 'pratique', 'voyage'],
+    content: `<p>C'est le sujet dont personne ne parle et que tout le monde découvre au premier voyage : dans une grande partie de l'Europe, de l'Amérique et de l'Asie de l'Est, <strong>il n'y a ni douchette, ni jet, ni seau</strong>. Juste du papier. Voici comment font ceux qui voyagent souvent.</p>
+
+<h2>L'essentiel en 30 secondes</h2>
+<p>Un seul objet règle 90 % du problème : <strong>une petite bouteille souple</strong>, celle qu'on remplit après le contrôle de sécurité. Le reste est une question d'organisation : remplir <em>avant</em> d'entrer, et prévoir de quoi sécher.</p>
+
+<h2>Les trois objets qui suffisent</h2>
+<p><strong>1. Une bouteille souple de 50 cl</strong> — le mieux : une bouteille de sport à bec verseur, ou une petite bouteille d'eau ordinaire dont on perce le bouchon avec une aiguille chauffée. Le jet devient précis et l'eau dure. Elle passe vide au contrôle et se remplit au robinet de l'autre côté.<br/>
+<strong>2. Un petit flacon pliable de voyage</strong> (parfois vendu comme « bidet portatif ») — même principe, se replie dans une poche. Quelques euros.<br/>
+<strong>3. Une serviette microfibre de la taille d'un mouchoir</strong> — sèche en dix minutes, ne prend pas de place, remplace avantageusement le papier.</p>
+<p>Total : moins de dix euros, et le sujet est réglé pour des années.</p>
+
+<h2>La méthode, étape par étape</h2>
+<p><strong>Avant d'entrer</strong> : remplissez la bouteille au lavabo. C'est le seul point qui demande d'y penser — une fois la porte fermée, il n'y a en général pas de point d'eau à l'intérieur de la cabine.<br/>
+<strong>Dans la cabine</strong> : posez de quoi sécher à portée de main avant de commencer. Utilisez l'eau avec la main gauche, la bouteille dans la droite.<br/>
+<strong>Le séchage</strong> : papier ou serviette microfibre. C'est ce qui évite l'inconfort ensuite, et c'est l'étape que les gens négligent.<br/>
+<strong>En sortant</strong> : essuyez ce qui a coulé. Toujours. On partage ces toilettes avec des dizaines de personnes, et la propreté fait partie de la religion.</p>
+
+<h2>Les cas particuliers</h2>
+<p><strong>L'avion</strong> : lavabo minuscule, robinet à pression. La bouteille est indispensable ; l'équipage donne volontiers un gobelet d'eau si vous n'en avez pas.<br/>
+<strong>Le train</strong> : plus confortable, mais ça bouge — gardez une main d'appui.<br/>
+<strong>Les toilettes publiques</strong> : la cabine pour personnes handicapées a souvent un lavabo à l'intérieur, ce qui simplifie tout. Laissez-la immédiatement si quelqu'un en a besoin.<br/>
+<strong>Le camping ou la randonnée</strong> : la bouteille sert aussi, et l'eau doit être emportée.<br/>
+<strong>Les pays à toilettes à la turque</strong> : c'est en général l'inverse — il y a de l'eau mais pas de papier. Gardez toujours un paquet de mouchoirs sur vous.</p>
+
+<h2>Et dans la chambre d'hôtel ?</h2>
+<p>Deux astuces connues des habitués : la <strong>douchette de la douche</strong> fait très bien l'affaire si la salle de bain est petite, et une <strong>bouteille laissée en permanence à côté des toilettes</strong> évite d'y penser à chaque fois. Certains hôtels du Golfe et d'Asie du Sud-Est équipent les chambres d'un jet — c'est une information qu'on peut demander avant de réserver, et qui figure parfois sur la fiche de l'hôtel.</p>
+
+<h2>Ce que nous ne traitons pas ici</h2>
+<p>Les règles religieuses de la purification — ce qui est obligatoire, ce qui est recommandé, ce qui suffit quand l'eau manque — ne sont pas de notre ressort. Nous décrivons le terrain. Pour la règle, adressez-vous à un imam ou posez la question à <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&utm_medium=passerelle&utm_campaign=istinja" target="_blank" rel="noopener noreferrer">HalalGPT</a>.</p>
+
+<h2>Questions fréquentes</h2>
+<p><strong>Peut-on emporter une bouteille dans l'avion ?</strong> Vide, oui : on la remplit après le contrôle. Pleine, elle est limitée à 100 ml comme tous les liquides.<br/>
+<strong>Que faire s'il n'y a pas d'eau du tout ?</strong> C'est une question religieuse (tayammum) : voir ci-dessus.<br/>
+<strong>Et les ablutions ?</strong> Voir <a href="/blog/ablutions-avion-train">faire ses ablutions en avion, en train et en toilettes publiques</a>.<br/>
+<strong>Que mettre d'autre dans son sac ?</strong> Voir <a href="/guides/checklist-voyage-halal">la checklist du voyageur</a>.</p>
+
+<h2>Aide la communauté</h2>
+<p>Tu as un objet ou une astuce qui marche mieux ? Partage-la — c'est le genre de conseil qu'on ne trouve nulle part. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
+  },
+  {
     slug: "repas-halal-avion-moml",
     title: "Repas halal en avion : commander le MOML (2026)",
     description: "Le repas musulman en avion se commande à l'avance, sous le code MOML. Comment le réserver, ce qu'il contient vraiment, et quoi faire si vous l'avez oublié.",
@@ -1555,7 +1711,8 @@ export const blogPosts: BlogPost[] = [
 <strong>Et à l'aéroport ?</strong> Plusieurs salles de prière ont une zone d'ablutions dédiée : voir <a href="/blog/ou-prier-aeroports">nos guides aéroports</a>.</p>
 
 <h2>Aide la communauté</h2>
-<p>Tu connais un aéroport ou une gare avec de vraies installations d'ablutions ? C'est une information précieuse et rarement écrite. <a href="/communaute/ajouter">→ Ajouter le lieu</a></p>`,
+<p>Tu connais un aéroport ou une gare avec de vraies installations d'ablutions ? C'est une information précieuse et rarement écrite. <a href="/communaute/ajouter">→ Ajouter le lieu</a></p>
+<p><strong>À lire aussi :</strong> <a href="/blog/toilettes-sans-douchette-voyage">se laver aux toilettes sans douchette</a>.</p>`,
   },
   {
     slug: "heure-priere-avion-fuseaux",
@@ -2592,7 +2749,8 @@ export const blogPosts: BlogPost[] = [
 </ul>
 <p>En transit ou en route : <a href="/blog/prier-en-avion">prier en avion</a>, <a href="/blog/prier-en-train">dans le train</a>, <a href="/blog/ou-prier-aire-autoroute">sur une aire d'autoroute</a> et <a href="/blog/ou-prier-centre-commercial">dans un centre commercial</a>.</p>
 <h2>Aide la communauté</h2><p>Tu as trouvé un coin prière dans un aéroport, une gare, un centre commercial ? Partage-le : chaque spot aide des dizaines de frères et sœurs à prier en voyage — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>
-<p><strong>À lire aussi :</strong> <a href="/blog/repas-halal-avion-moml">le repas halal en avion (MOML)</a> · <a href="/blog/heure-priere-avion-fuseaux">quelle heure de prière suivre en vol</a>.</p>`,
+<p><strong>À lire aussi :</strong> <a href="/blog/repas-halal-avion-moml">le repas halal en avion (MOML)</a> · <a href="/blog/heure-priere-avion-fuseaux">quelle heure de prière suivre en vol</a>.</p>
+<p><strong>À lire aussi :</strong> <a href="/blog/voile-controle-securite-aeroport">le voile au contrôle de sécurité</a>.</p>`,
   },
   {
     slug: "ou-prier-aeroport-cdg",
