@@ -4,7 +4,8 @@ import Link from 'next/link'
 import { useInstantPosition } from '@/lib/useInstantPosition'
 import { computePrayerTimesFull } from '@/lib/prayerCalc'
 import { useLanguage } from '@/components/i18n/LanguageProvider'
-import { ENVIES, envieById, niveauHalal } from '@/lib/envies'
+import { ENVIES, envieById, niveauHalal, forceEnvie } from '@/lib/envies'
+import { mentionPaysMusulman } from '@/lib/paysHalalDefaut'
 import { conforme } from '@/lib/conformite'
 import { fetchCourt } from '@/lib/fetchCourt'
 import { photoLargeur } from '@/lib/imageLargeur'
@@ -20,7 +21,9 @@ import { meteoInstantanee, emojiMeteo, type Meteo } from '@/lib/meteo'
 // sections serveur) ne change pas — SEO intact. Sans position : rien (repli =
 // accueil classique).
 
-interface Lieu { nom: string; lat: number; lng: number; source: 'osm' | 'communaute' | 'annuaire'; distM: number; spotId?: string; cuisine?: string; force?: number; halal?: string; mapsUrl?: string; avis?: number; id?: string }
+interface Lieu { nom: string; lat: number; lng: number; source: 'osm' | 'communaute' | 'annuaire'; distM: number; spotId?: string; cuisine?: string; force?: number; halal?: string; mapsUrl?: string; avis?: number; id?: string
+  /** montré sans étiquette halal, uniquement parce que le pays l'autorise */
+  sansEtiquette?: boolean }
 interface FeedSpot {
   id: string; nom: string; villeNom: string; villeSlug: string; categorie?: string
   lat?: number; lng?: number; photos?: string[]; video?: string; villeImage?: string
@@ -74,6 +77,13 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
   // Ville la plus proche selon l'annuaire : fiable meme quand le GPS ne
   // donne pas de nom (« Ma position ») ou quand le libelle est inconnu.
   const [villeProche, setVilleProche] = useState<string | null>(null)
+  // 🇲🇦 SOMMES-NOUS DANS UN PAYS OÙ LA VIANDE EST HALAL PAR DÉFAUT ?
+  // Notre annuaire le dit d'après la ville la plus proche. Ça ne rend aucun
+  // restaurant « halal » : ça décide seulement si un lieu SANS étiquette
+  // OpenStreetMap a le droit d'être montré, avec la mention honnête qui va
+  // avec. Sans cette question, l'accueil annonçait « aucun kebab signalé
+  // halal à moins de 12 km » à quelqu'un qui se tenait à Berkane.
+  const [paysDefaut, setPaysDefaut] = useState(false)
   // 🍔 « J'ai envie de… » : l'envie du moment et le lieu correspondant le
   // plus proche (undefined = pas encore cherche, null = rien trouve).
   const [envie, setEnvie] = useState<string | null>(null)
@@ -173,6 +183,7 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
       .then((j) => {
         annuaireDone = true
         if (j.ville?.slug) setVilleProche(j.ville.slug as string)
+        setPaysDefaut(!!j.ville?.halalParDefaut)
         for (const l of (j.lieux as { nom: string; lat: number; lng: number; type: string; cuisine?: string; halal?: string }[]) ?? []) {
           // on garde cuisine et niveau halal : sans eux, la tuile n'affiche
           // qu'un nom (« Orangeraie »), qui ne dit rien au voyageur
@@ -297,6 +308,59 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
     return () => { off = true }
   }, [pos, envie, mode])
 
+  // ── 🇲🇦 LE RATTRAPAGE DES PAYS MUSULMANS ────────────────────────────────
+  // Mesuré sur nos propres fiches : 19 villes sur 354 n'ont AUCUN restaurant,
+  // et ce sont presque toutes des villes de pays musulmans (Berkane, Saïdia,
+  // Taza, Larache, Kairouan, Peshawar, Abha, Homs…). Ce n'est pas qu'il n'y a
+  // rien à manger là-bas : c'est que le tag OpenStreetMap `diet:halal` sert à
+  // signaler une exception, et qu'à Berkane il ne distingue rien. Personne ne
+  // l'écrit. Notre filtre était donc aveugle là où tout convient.
+  //
+  // On ne relâche le filtre QUE dans ces pays, QUE si les sources normales
+  // n'ont rien donné, et JAMAIS en promettant du halal : la mention affichée
+  // dit exactement ce qu'on sait — statut non renseigné, à vérifier sur place.
+  // Le filtre de conformité du LIEU (bar, chicha, porc dans le nom) continue
+  // de s'appliquer, lui, et les cuisines où le porc est la norme restent
+  // écartées faute d'étiquette (voir lib/conformite.ts).
+  const [restoPays, setRestoPays] = useState<Lieu | null | undefined>(undefined)
+  const manqueResto = envie ? restoEnvie === null : resto === null
+  useEffect(() => {
+    if (!pos || !paysDefaut || !manqueResto) { setRestoPays(undefined); return }
+    let off = false
+    const autour = `(around:4000,${pos.lat},${pos.lng})`
+    const q = `[out:json][timeout:20];(node["amenity"~"restaurant|fast_food"]${autour};way["amenity"~"restaurant|fast_food"]${autour};);out center 60;`
+    fetchCourt('https://overpass-api.de/api/interpreter', { method: 'POST', body: `data=${encodeURIComponent(q)}`, delai: 12000 })
+      .then((r) => r.json())
+      .then((d) => {
+        if (off) return
+        const cands: Lieu[] = []
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        for (const el of (d.elements as any[]) ?? []) {
+          const la = el.lat ?? el.center?.lat, lo = el.lon ?? el.center?.lon
+          const nom = el.tags?.name
+          if (!la || !lo || !nom) continue
+          const cuisine: string | undefined = el.tags.cuisine ?? undefined
+          const halal: string | undefined = el.tags['diet:halal'] ?? undefined
+          if (!conforme(nom, cuisine, halal)) continue
+          let force = 0
+          if (envie) {
+            force = forceEnvie(cuisine, nom, envie)
+            if (!force) continue
+          }
+          cands.push({
+            nom, lat: la, lng: lo, source: 'osm', distM: hav(pos.lat, pos.lng, la, lo),
+            cuisine, halal, force: force || undefined, sansEtiquette: !halal,
+            id: lieuId(la, lo),
+          })
+        }
+        // Une correspondance sûre passe devant un peut-être ; sinon distance.
+        cands.sort((a, b) => (b.force ?? 0) - (a.force ?? 0) || a.distM - b.distM)
+        setRestoPays(cands[0] ?? null)
+      })
+      .catch(() => { if (!off) setRestoPays(null) })
+    return () => { off = true }
+  }, [pos, paysDefaut, manqueResto, envie])
+
   // ── Spots communautaires (pepite + bande de reels + compteur) ──
   useEffect(() => {
     fetchCourt('/api/community/spots?limit=30')
@@ -378,7 +442,12 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
     : null)
   // Une envie choisie prime sur « le plus proche »
   const envieActive = envieById(envie)
-  const bestResto = envie ? (restoEnvie ?? null) : restoProche
+  // Le rattrapage « pays musulman » ne passe qu'en DERNIER : un lieu signalé
+  // halal, ou partagé par un voyageur, vaut toujours mieux qu'un lieu montré
+  // sur la seule foi du pays.
+  const bestResto = (envie ? restoEnvie : restoProche) ?? restoPays ?? null
+  /** le rattrapage cherche encore : on ne dit surtout pas « aucun » */
+  const rattrapageEnCours = paysDefaut && manqueResto && restoPays === undefined
 
   // ── Etape 3 : le board vit avec l'heure — la bonne tuile grossit au bon
   // moment. La priere garde toujours la priorite quand elle approche. ──
@@ -548,6 +617,8 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
                   {' · '}
                   {(() => {
                     if (bestResto.source === 'communaute') return en ? 'shared by a traveler · to confirm' : 'partagé par un voyageur · à confirmer'
+                    // Montré parce que le pays l'autorise : on le DIT.
+                    if (bestResto.sansEtiquette) return mentionPaysMusulman(en)
                     const n = niveauHalal(bestResto.halal, en)
                     return n ? <span style={{ color: n.fort ? 'var(--or)' : undefined }}>{n.texte}</span> : (en ? 'listed halal · to verify' : 'signalé halal · à vérifier')
                   })()}
@@ -609,7 +680,10 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
           // Envie exprimee mais aucun resultat : on l'assume et on ouvre des
           // portes (guide de la ville, HalalGPT) au lieu de revenir en
           // silence sur la mosquee — le voyageur a pose une question.
-          const mangerVide = envieActive && (
+          // Tant que le rattrapage « pays musulman » cherche encore, on ne
+          // dit pas « aucun » : on n'en sait rien. Le vide ne s'affiche
+          // qu'une fois TOUTES les sources revenues.
+          const mangerVide = envieActive && !rattrapageEnCours && (
             <div style={{ ...T.tile, background: 'linear-gradient(150deg, rgba(27,67,50,0.85), rgba(255,255,255,0.04))', borderColor: 'rgba(201,168,76,0.35)' }}>
               <p style={T.lab}>{envieActive.emoji} {envieActive[en ? 'en' : 'fr']}</p>
               <p style={{ fontFamily: "'Playfair Display', Georgia, serif", color: '#fdfaf3', fontSize: 20, fontWeight: 900, margin: '4px 0 0', lineHeight: 1.2 }}>
@@ -644,7 +718,7 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
               <p style={T.lab}>{envieActive
                 ? `${envieActive.emoji} ${envieActive[en ? 'en' : 'fr']}`
                 : `🍽 ${en ? 'Eat — the closest' : 'Manger — le plus proche'}`}</p>
-              {(envie ? restoEnvie === undefined : resto === undefined && !bestResto) ? <p style={{ ...T.meta, marginTop: 4 }}>…</p>
+              {(rattrapageEnCours || (envie ? restoEnvie === undefined : resto === undefined && !bestResto)) ? <p style={{ ...T.meta, marginTop: 4 }}>…</p>
                 : !bestResto ? <p style={{ ...T.meta, marginTop: 4 }}>{
                     envieActive ? (en ? `No halal ${envieActive.en.toLowerCase()} listed within 12 km` : `Aucun ${envieActive.fr.toLowerCase()} signalé halal à moins de 12 km`)
                       : osmOk ? (en ? 'None reported nearby' : 'Aucun signalé à proximité')
@@ -665,6 +739,7 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
                       {' · '}
                       {(() => {
                         if (bestResto.source === 'communaute') return en ? 'shared by a traveler' : 'partagé par un voyageur'
+                        if (bestResto.sansEtiquette) return mentionPaysMusulman(en)
                         const n = niveauHalal(bestResto.halal, en)
                         return n ? n.texte : (en ? 'listed halal · to verify' : 'signalé halal · à vérifier')
                       })()}

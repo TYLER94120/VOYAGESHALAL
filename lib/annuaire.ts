@@ -2,6 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import { forceEnvie } from '@/lib/envies'
 import { conforme } from '@/lib/conformite'
+import { halalParDefaut } from '@/lib/paysHalalDefaut'
 
 // 📒 ANNUAIRE — les lieux DEJA documentes dans nos 354 fiches villes
 // (mosquees et restaurants), exposes autour d'une position.
@@ -31,7 +32,16 @@ export interface AnnuaireLieu {
   distKm: number
 }
 
-interface VilleIdx { slug: string; nom: string; lat: number; lng: number }
+interface VilleIdx { slug: string; nom: string; lat: number; lng: number; pays: string }
+
+export interface AnnuaireVille {
+  slug: string
+  nom: string
+  pays: string
+  /** le pays autorise-t-il a montrer un lieu sans etiquette halal ? */
+  halalParDefaut: boolean
+  distKm: number
+}
 
 let idxCache: VilleIdx[] | null = null
 const fileCache = new Map<string, AnnuaireLieu[]>()
@@ -53,7 +63,7 @@ function getIndex(): VilleIdx[] {
       try {
         const v = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'))
         const lat = Number(v.coordonnees?.lat), lng = Number(v.coordonnees?.lng)
-        if (Number.isFinite(lat) && Number.isFinite(lng)) out.push({ slug: v.slug ?? f.replace('.json', ''), nom: v.nom ?? '', lat, lng })
+        if (Number.isFinite(lat) && Number.isFinite(lng)) out.push({ slug: v.slug ?? f.replace('.json', ''), nom: v.nom ?? '', lat, lng, pays: v.pays ?? '' })
       } catch { /* fiche illisible : ignoree */ }
     }
   } catch { /* dossier absent */ }
@@ -100,7 +110,7 @@ export function annuaireAutour(
   lat: number,
   lng: number,
   opts: { rayonKm?: number; type?: 'priere' | 'resto'; limit?: number; envie?: string } = {},
-): { lieux: AnnuaireLieu[]; ville: { slug: string; nom: string; distKm: number } | null } {
+): { lieux: AnnuaireLieu[]; ville: AnnuaireVille | null } {
   const rayon = opts.rayonKm ?? 25
   const limit = opts.limit ?? 40
   const villes = getIndex()
@@ -130,6 +140,15 @@ export function annuaireAutour(
   lieux.sort((a, b) => (opts.envie ? (b.force ?? 0) - (a.force ?? 0) : 0) || a.distKm - b.distKm)
   return {
     lieux: lieux.slice(0, limit),
-    ville: { slug: villes[0].slug, nom: villes[0].nom, distKm: Math.round(villes[0].d * 10) / 10 },
+    // Le PAYS voyage avec la ville : c'est lui qui dit au board s'il a le
+    // droit de montrer un restaurant sans etiquette halal (voir
+    // lib/paysHalalDefaut.ts — l'accueil affichait « aucun kebab » a Berkane).
+    ville: {
+      slug: villes[0].slug,
+      nom: villes[0].nom,
+      pays: villes[0].pays,
+      halalParDefaut: halalParDefaut(villes[0].pays),
+      distKm: Math.round(villes[0].d * 10) / 10,
+    },
   }
 }

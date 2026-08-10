@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/test-titres.mjs && next build",
+    "build": "node scripts/test-titres.mjs && node scripts/test-pays-halal.mjs && next build",
     "test:titres": "node scripts/test-titres.mjs",
+    "test:pays": "node scripts/test-pays-halal.mjs",
     "start": "next start",
     "lint": "eslint"
   },
