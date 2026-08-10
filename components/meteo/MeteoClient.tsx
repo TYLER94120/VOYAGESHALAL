@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import Link from 'next/link'
 import { useInstantPosition } from '@/lib/useInstantPosition'
 import villesJson from '@/lib/cityCoords.json'
@@ -42,6 +42,7 @@ export default function MeteoClient({ en = false }: { en?: boolean }) {
   const [cherche, setCherche] = useState(false)
   const [q, setQ] = useState('')
   const [partage, setPartage] = useState<'' | 'copie' | 'echec'>('')
+  const reponseRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     if (!pos) return
@@ -68,6 +69,12 @@ export default function MeteoClient({ en = false }: { en?: boolean }) {
   useEffect(() => {
     if (!ville) { setLaBas(null); return }
     setLaBas(null); setCherche(true)
+    // 👇 AMENER LA RÉPONSE SOUS LES YEUX.
+    // Sur une capture de Mohamed, il choisit Berkane et la réponse s'ouvre
+    // pile derrière la barre de navigation du téléphone : on ne voyait que
+    // « BERKANE · MAROC » et le reste passait dessous. Choisir une ville et
+    // ne rien voir bouger, c'est croire que ça n'a pas marché.
+    setTimeout(() => reponseRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 80)
     const g = meteoInstantanee(ville.lat, ville.lng, (m) => { setLaBas(m); setCherche(false) })
     if (g) { setLaBas(g); setCherche(false) }
     // Un écran qui cherche indéfiniment ment sur son état.
@@ -126,7 +133,9 @@ export default function MeteoClient({ en = false }: { en?: boolean }) {
   }
 
   return (
-    <section style={{ maxWidth: 640, margin: '0 auto', padding: '1.25rem 1rem 96px' }}>
+    // 150 px en bas : la barre de navigation (86 px + marge de sécurité) ET
+    // le bouton flottant « Question halal ? » recouvraient la fin de la carte.
+    <section style={{ maxWidth: 640, margin: '0 auto', padding: '1.25rem 1rem 150px' }}>
       {/* ── 1. Ici, sur une ligne. Un repère, pas le sujet. ── */}
       <div style={{
         display: 'flex', alignItems: 'center', gap: 10, marginBottom: 16,
@@ -194,7 +203,7 @@ export default function MeteoClient({ en = false }: { en?: boolean }) {
 
       {/* ── 3. La réponse ── */}
       {ville && (
-        <div style={{ ...carte, background: 'var(--nuit)', border: '1px solid rgba(201,168,76,0.3)', textAlign: 'center' }}>
+        <div ref={reponseRef} style={{ ...carte, scrollMarginTop: 12, background: 'var(--nuit)', border: '1px solid rgba(201,168,76,0.3)', textAlign: 'center' }}>
           <p style={{ color: 'var(--or)', fontSize: 11, fontWeight: 800, letterSpacing: 2, textTransform: 'uppercase', margin: 0 }}>
             {ville.nom} · {ville.pays}
           </p>
@@ -223,7 +232,9 @@ export default function MeteoClient({ en = false }: { en?: boolean }) {
                     const d = new Date(j.date + 'T12:00:00')
                     return (
                       <div key={j.date} style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '7px 2px', borderTop: '1px solid rgba(253,250,243,0.12)' }}>
-                        <span style={{ width: 92, fontWeight: 700, color: 'rgba(253,250,243,0.85)', fontSize: 13.5, textTransform: 'capitalize' }}>
+                        {/* nowrap : « Lun. 10 août » se cassait en deux lignes
+                            et faisait tanguer toute la colonne. */}
+                        <span style={{ width: 104, whiteSpace: 'nowrap', fontWeight: 700, color: 'rgba(253,250,243,0.85)', fontSize: 13, textTransform: 'capitalize' }}>
                           {d.toLocaleDateString(en ? 'en-GB' : 'fr-FR', { weekday: 'short', day: 'numeric', month: 'short' })}
                         </span>
                         <span style={{ fontSize: 17 }}>{emojiMeteo(j.code)}</span>
