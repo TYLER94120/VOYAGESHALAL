@@ -1770,6 +1770,334 @@ Si un ajustement est nécessaire, il est presque toujours possible de le faire s
 <p>Tu voyages souvent sur les longs courriers ? Partage ta méthode et les compagnies dont l'écran de bord donne les infos utiles. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
   },
   {
+    slug: "hijab-airport-security-check",
+    title: "Hijab at Airport Security: What They Can Ask You",
+    description: "Pat-downs, scanners, removing the headscarf: what really happens at security when you wear hijab, and the three sentences that settle it.",
+    coverImage: "/guides/blog-aeroports.jpg",
+    category: 'Practical',
+    readTime: "5 min",
+    publishedAt: '2026-08-11',
+    lang: 'en',
+    tags: ['hijab', 'airport', 'women', 'practical'],
+    content: `<p>It is the moment many women travellers dread: the queue at security, the officer waving you over, and that thought — "are they going to ask me to take it off?" Here is what actually happens, and what you are entitled to ask for.</p>
+
+<h2>The short version</h2>
+<p>At the vast majority of airports, <strong>the headscarf does not come off in public</strong>. What can happen is a <strong>pat-down of the head</strong> if the archway or the body scanner flags something. You can then ask for two things, and they are almost always granted: that <strong>a female officer</strong> does it, and that it happens <strong>in a private area</strong>.</p>
+
+<h2>What actually triggers the extra check</h2>
+<p>It is not the scarf itself, it is <strong>bulk and metal</strong>: pins, brooches and metal clips, a voluminous bun, several layers of fabric, a thick scarf around the neck. The body scanner flags an area and the officer has to clear it.</p>
+<p>Three habits that prevent half of all pat-downs: use <strong>plastic pins</strong> on flying days, take off metal jewellery and clips before the archway, and avoid stacking three layers of fabric around the neck.</p>
+
+<h2>The three sentences worth knowing</h2>
+<p>They are simple, polite, and they settle the situation in the overwhelming majority of cases.</p>
+<p><strong>1. "I wear a religious head covering. Could a female officer carry out the check?"</strong><br/>
+Pat-down searches are, as a rule, carried out by an officer of the same sex. That is the standard at most airports; asking before anyone touches you removes the awkwardness.</p>
+<p><strong>2. "I would prefer the check in a private area, please."</strong><br/>
+Security points generally have a booth or a screened space. Asking is normal practice, not a favour.</p>
+<p><strong>3. "I can reposition it myself if needed."</strong><br/>
+If an adjustment is required, it is almost always possible to do it yourself rather than being handled.</p>
+
+<h2>What about removing it completely?</h2>
+<p><strong>It remains exceptional</strong>, and it does not happen in front of the queue. If an officer judges it necessary, it should take place away from public view and with a female officer. You can ask for a supervisor, and you can ask on what basis the request is being made.</p>
+<p>The <strong>niqab</strong> and anything covering the face is a different matter: identity checks require the face to be shown, and this can be done in a private space with a female officer. Check the rules of the country before you go — they vary a great deal, and we will not summarise them here because they change.</p>
+
+<h2>What nobody tells you, and what genuinely helps</h2>
+<p><strong>Arrive earlier.</strong> The stress of an extra check comes mostly from the fear of missing the plane. Thirty minutes of margin changes everything.<br/>
+<strong>Travel light on accessories.</strong> Less metal, fewer stops.<br/>
+<strong>Keep smiling and make eye contact.</strong> Officers process hundreds of passengers; a calm, clear request almost always gets what it asks for.<br/>
+<strong>Note the officer's name</strong> if something goes wrong. A written complaint afterwards is worth more than an argument on the spot, which would make you miss the flight.</p>
+
+<h2>If it went badly</h2>
+<p>You can complain to the airline and to the airport, and depending on the country to the authority that oversees aviation security or to an anti-discrimination organisation. Write while the details are fresh: date, time, terminal, security lane, and what was said.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Do you have to remove your headscarf at security?</strong> In the vast majority of cases, no. A pat-down of the head may be requested; full removal remains exceptional and happens in private.<br/>
+<strong>Can you insist on a female officer?</strong> Pat-down searches are as a rule carried out by an officer of the same sex — ask before the check begins.<br/>
+<strong>And for the passport?</strong> Identification requires the face to be shown; this can be done in a private space.<br/>
+<strong>Where do I pray afterwards?</strong> See <a href="/blog/where-to-pray-paris-airports">our airport prayer room guides</a>.<br/>
+<strong>A religious question about hijab while travelling?</strong> Ask <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&utm_medium=passerelle&utm_campaign=hijab-security-en" target="_blank" rel="noopener noreferrer">HalalGPT</a> — we do not issue rulings.</p>
+
+<h2>Help the community</h2>
+<p>Have you been through a security check that was handled particularly well — or particularly badly — at an airport? Tell us; it prepares the next traveller. <a href="/communaute">→ Join the community</a></p>`,
+  },
+  {
+    slug: "traveling-in-hijab-country-check",
+    title: "Travelling in Hijab: How to Check a Country First",
+    description: "Lists of \"safe\" countries age badly. The ten-minute method to find out how hijab is actually lived where you are going, and who to ask.",
+    coverImage: "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1200&q=80",
+    category: 'Practical',
+    readTime: "6 min",
+    publishedAt: '2026-08-11',
+    lang: 'en',
+    tags: ['hijab', 'women', 'destinations', 'practical'],
+    content: `<p>"Can I wear hijab there without trouble?" It is one of the most asked questions before a trip, and the worst served online: you find lists of "safe" and "unsafe" countries, copied from one blog to the next, often years out of date.</p>
+<p>We are not going to write that list. Here is the method that stays true, whatever the country and whatever the year.</p>
+
+<h2>Why not a list?</h2>
+<p>Because laws change, political climates change, and above all because <strong>the question does not have one answer per country</strong>. Hijab can be lived very differently between a capital and a small town, between a tourist district and a business district, between the beach and a government office. A "safe country" label stuck on a map is almost always wrong somewhere.</p>
+<p>What holds true is the method. It takes ten minutes.</p>
+
+<h2>1. Separate three things that always get confused</h2>
+<p><strong>The law</strong> — are there written rules about head coverings or face veils, and where do they apply (street, government offices, schools, courts)? This is the only point that can be verified officially.<br/>
+<strong>Custom</strong> — how people react in the street. That is not written in any text; you ask someone who lives there.<br/>
+<strong>Your own comfort</strong> — you can be perfectly within the rules and still uncomfortable, or the reverse. Nobody can decide that for you.</p>
+<p>Most articles mix the three, which is exactly why they contradict each other.</p>
+
+<h2>2. Sources that are actually worth something</h2>
+<p><strong>Your own foreign ministry's travel advice</strong> for that destination. It is dated, it is official, and dress rules are flagged when they exist.<br/>
+<strong>The destination country's embassy</strong>: an email or a phone call gets you a written answer. Very few people do this, and it works very well.<br/>
+<strong>Women who live there</strong> — the most reliable source on custom. Muslim women's travel groups, local communities, expatriate associations.<br/>
+<strong>Recent videos</strong> filmed in the streets of the city you are visiting: simply look at <em>the women walking past</em> in the background. It is a blunt indicator, but an honest one.</p>
+<p>What is worth nothing: an undated article, a list with no source, a forum thread from 2018.</p>
+
+<h2>3. The questions to ask (far more useful than "is it safe?")</h2>
+<p>— Is hijab common in the street, or do people turn around?<br/>
+— Are there places where it causes problems: government offices, banks, some museums, hotel clubs?<br/>
+— How does it work for ID photos, at hotel check-in, at car rental desks?<br/>
+— What are the norms at the beach and at the pool?<br/>
+— Is there a neighbourhood where one is left in peace?</p>
+<p>These questions get concrete answers. "Is it safe?" never does.</p>
+
+<h2>4. What changes everything once you are there</h2>
+<p><strong>The first day sets the tone.</strong> Go out first in a busy area in daylight, watch, and adjust.<br/>
+<strong>Two options in the suitcase.</strong> Many women travellers pack one discreet scarf and one more covering, and choose depending on the place and the moment. That is not compromising yourself, it is reading a context.<br/>
+<strong>Find the nearest mosque as soon as you arrive.</strong> Beyond prayer, it is the simplest point of contact with the local community, who will know the answer to everything else. Our <a href="/mosque-near-me">nearest mosque</a> tool finds it in seconds.<br/>
+<strong>Save your embassy's number.</strong> Two minutes on arrival, and you will never think about it again.</p>
+
+<h2>5. The special case of beaches and pools</h2>
+<p>Access rules vary from one venue to the next, sometimes within the same city: some hotel pools accept the burkini, others do not, and some set aside women-only slots. The only reliable answer is the venue's own: <strong>write to them before you book</strong>. One answer in writing beats ten online reviews.</p>
+<p>On our hotel pages, when information about a women-only pool comes from a verified source, it is shown with that source — and when we do not know, we write that we do not know.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Is there a list of safe countries for a woman in hijab?</strong> No list stays accurate for long. The method above does.<br/>
+<strong>Who gives the most reliable information?</strong> Women living there, for custom; your foreign ministry, for the rules.<br/>
+<strong>And at airport security?</strong> See <a href="/blog/hijab-airport-security-check">what they can ask you at security</a>.<br/>
+<strong>And travelling alone?</strong> See <a href="/guides/solo-female-muslim-travel">our solo female travel guide</a>.<br/>
+<strong>A religious question about hijab?</strong> Ask <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&utm_medium=passerelle&utm_campaign=hijab-country-en" target="_blank" rel="noopener noreferrer">HalalGPT</a>.</p>
+
+<h2>Help the community</h2>
+<p>Have you travelled in hijab somewhere recently? Tell us how it went, city by city — that is exactly what other travellers are missing. <a href="/communaute">→ Join the community</a></p>`,
+  },
+  {
+    slug: "no-bidet-shower-toilets-travel",
+    title: "No Bidet Shower Abroad: How to Manage",
+    description: "No bidet spray, no jug, sometimes no water point at all: the practical method to stay clean while travelling, and three items that solve it for ten euros.",
+    coverImage: "https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=1200&q=80",
+    category: 'Practical',
+    readTime: "4 min",
+    publishedAt: '2026-08-11',
+    lang: 'en',
+    tags: ['hygiene', 'practical', 'travel'],
+    content: `<p>It is the subject nobody talks about and everybody discovers on their first trip: across much of Europe, the Americas and East Asia, <strong>there is no bidet spray, no jet, no jug</strong>. Just paper. Here is how frequent travellers deal with it.</p>
+
+<h2>The short version</h2>
+<p>One object solves 90% of the problem: <strong>a small squeezable bottle</strong>, the kind you fill after the security check. The rest is organisation: fill it <em>before</em> going in, and bring something to dry with.</p>
+
+<h2>The three items that are enough</h2>
+<p><strong>1. A 500 ml squeezable bottle</strong> — best of all, a sports bottle with a spout, or an ordinary small water bottle whose cap you pierce with a heated needle. The jet becomes precise and the water lasts. It goes through security empty and is filled at the tap on the other side.<br/>
+<strong>2. A collapsible travel bottle</strong> (sometimes sold as a "portable bidet") — same principle, folds into a pocket. A few euros.<br/>
+<strong>3. A microfibre towel the size of a handkerchief</strong> — dries in ten minutes, takes no space, and works far better than paper.</p>
+<p>Total: under ten euros, and the matter is settled for years.</p>
+
+<h2>The method, step by step</h2>
+<p><strong>Before going in</strong>: fill the bottle at the washbasin. This is the only step that requires thinking ahead — once the door is closed there is usually no water point inside the cubicle.<br/>
+<strong>Inside</strong>: put whatever you will dry with within reach before you start. Use the water with the left hand, the bottle in the right.<br/>
+<strong>Drying</strong>: paper or the microfibre towel. This is what prevents discomfort afterwards, and it is the step people skip.<br/>
+<strong>On the way out</strong>: wipe up anything that spilled. Always. Dozens of people share these toilets, and cleanliness is part of the religion.</p>
+
+<h2>Special cases</h2>
+<p><strong>On a plane</strong>: tiny basin, push-button tap. The bottle is essential; cabin crew will happily give you a cup of water if you have none.<br/>
+<strong>On a train</strong>: more comfortable, but it moves — keep one hand for support.<br/>
+<strong>Public toilets</strong>: the accessible cubicle often has a basin inside, which makes everything simpler. Leave it immediately if someone needs it.<br/>
+<strong>Camping or hiking</strong>: the bottle works here too, and the water has to be carried in.<br/>
+<strong>Countries with squat toilets</strong>: it is usually the opposite — there is water but no paper. Always keep a packet of tissues on you.</p>
+
+<h2>And in the hotel room?</h2>
+<p>Two things regulars know: the <strong>shower head</strong> does the job perfectly well if the bathroom is small, and a <strong>bottle left permanently next to the toilet</strong> saves you from thinking about it each time. Some hotels in the Gulf and in Southeast Asia fit rooms with a bidet spray — that is something you can ask before booking, and it sometimes appears on the hotel page.</p>
+
+<h2>What we do not cover here</h2>
+<p>The religious rules of purification — what is obligatory, what is recommended, what is sufficient when there is no water — are not ours to settle. We describe the ground. For the ruling, ask an imam or put the question to <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&utm_medium=passerelle&utm_campaign=istinja-en" target="_blank" rel="noopener noreferrer">HalalGPT</a>.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Can you take a bottle on a plane?</strong> Empty, yes: you fill it after security. Full, it is limited to 100 ml like all liquids.<br/>
+<strong>What if there is no water at all?</strong> That is a religious question (tayammum): see above.<br/>
+<strong>And wudu?</strong> See <a href="/blog/wudu-on-a-plane-or-train">making wudu on a plane, on a train and in public toilets</a>.<br/>
+<strong>What else should go in the bag?</strong> See <a href="/guides/halal-travel-checklist">the traveller's checklist</a>.</p>
+
+<h2>Help the community</h2>
+<p>Do you have an item or a trick that works better? Share it — it is the kind of advice you find nowhere else. <a href="/communaute">→ Join the community</a></p>`,
+  },
+  {
+    slug: "halal-airline-meal-moml",
+    title: "Halal Airline Meal: How to Order MOML (2026)",
+    description: "The Muslim meal on a plane is ordered in advance, under the code MOML. How to book it, what it really contains, and what to do if you forgot.",
+    coverImage: "/guides/blog-avion.jpg",
+    category: 'Practical',
+    readTime: "5 min",
+    publishedAt: '2026-08-10',
+    lang: 'en',
+    tags: ['flight', 'halal', 'meal', 'practical'],
+    content: `<p>You board the plane, the trolley arrives, and you discover that today's dish is pork. This can be prepared for — but not at boarding time. Here is how the Muslim meal on a plane really works.</p>
+
+<h2>The short version</h2>
+<p>The Muslim meal has an international code: <strong>MOML</strong> (Moslem Meal). It is ordered <strong>at least 24 to 48 hours before the flight</strong>, never on board. It is prepared by a caterer, and the level of guarantee depends entirely on the airline — hence the next question: does "MOML" mean "certified halal"? Not always.</p>
+
+<h2>How to order it</h2>
+<p>Three ways, in order of reliability:</p>
+<p><strong>1. When you book.</strong> This is the safest. On most airline websites, a "special meals" section appears just after seat selection.<br/>
+<strong>2. In "manage my booking".</strong> Log in with your reference, look for "special meal", and select <strong>MOML</strong>.<br/>
+<strong>3. By phone to customer service</strong>, giving your reference. Useful when the ticket was bought through an agency or a comparison site — in that case the special meal is almost never passed on automatically.</p>
+<p>The rule: <strong>48 hours before departure</strong>, it is closed. After that, most airlines refuse, because the trays are already loaded.</p>
+
+<h2>One important point: check the day before</h2>
+<p>Special meals get lost. Aircraft change, a connection operated by another airline, a modified ticket: at each step the request can vanish. What regulars do: <strong>reopen your booking the day before departure</strong> and check that MOML is still there. Thirty seconds that save six hours of flying on an empty stomach.</p>
+<p>On a journey with a connection operated by two different airlines, the request often has to be made <strong>for each segment</strong>.</p>
+
+<h2>Does MOML mean "certified halal"?</h2>
+<p>Honestly: <strong>it depends on the airline</strong>, and we cannot guarantee it on your behalf. What can be said and checked:</p>
+<p>— Airlines from Muslim countries generally serve a standard halal meal on all flights, with no special request needed.<br/>
+— European and Asian airlines offer MOML as one special meal among about thirty (vegetarian, kosher, gluten-free and so on). The caterer is sometimes certified, sometimes simply "no pork, no alcohol".<br/>
+— "Pork-free" and "halal" are not the same thing: a chicken dish not slaughtered according to the rite falls into the first category and not the second.</p>
+<p>The only way to know: <strong>ask the airline</strong>, and look at the packaging on board — certified trays generally carry the certifying body's logo and are sealed. That is a useful sign, not absolute proof.</p>
+
+<h2>If you forgot to order it</h2>
+<p>This happens all the time, and it can be handled:</p>
+<p>— <strong>Ask the crew at boarding</strong>, not at service time. There is sometimes an unclaimed special tray.<br/>
+— <strong>Fall back on vegetarian.</strong> Ask whether a VGML or VLML tray is left: it is the simplest and safest solution.<br/>
+— <strong>Eat before.</strong> A proper meal at the airport settles the question for a six-hour flight.<br/>
+— <strong>Bring enough to last.</strong> Sandwich, dates, dried fruit, bars: all of it passes security (only liquids are limited to 100 ml).</p>
+
+<h2>On board, what you can eat safely</h2>
+<p>On a standard tray, what generally stays available: bread, salad without meat dressing, raw vegetables, cheese (if rennet is not a question for you), fruit, plain yoghurt, crackers and chocolate. Avoid industrial desserts (gelatine) and sauces.</p>
+<p>And of course you do not drink the alcohol on offer — "orange juice, please" is enough, nobody notices.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>What is the Muslim meal code?</strong> MOML (Moslem Meal). Vegetarian is VGML, Hindu is AVML, kosher is KSML.<br/>
+<strong>How far in advance?</strong> 24 to 48 hours depending on the airline. At booking time is better.<br/>
+<strong>Does it cost extra?</strong> No, at almost every airline. It is a special meal, not an add-on.<br/>
+<strong>What about low-cost airlines?</strong> They generally include no meal at all: you buy on board, and there is no MOML. Bring your own food.<br/>
+<strong>Can you bring your own food on a plane?</strong> Yes for solids. Liquids and pastes (yoghurt, soup, sauces) remain limited to 100 ml at security.<br/>
+<strong>A religious question about doubt or necessity?</strong> Ask <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&utm_medium=passerelle&utm_campaign=moml-en" target="_blank" rel="noopener noreferrer">HalalGPT</a> — we do not settle fiqh.</p>
+
+<h2>Read before take-off</h2>
+<p><a href="/blog/praying-on-a-plane">How to pray on a plane</a> · <a href="/blog/prayer-times-on-a-plane-time-zones">Which prayer time to follow in flight</a> · <a href="/blog/wudu-on-a-plane-or-train">Making wudu on board</a> · <a href="/blog/where-to-pray-paris-airports">Airport prayer rooms</a></p>
+
+<h2>Help the community</h2>
+<p>Have you tried MOML on an airline recently? Tell us what the tray was like — that information serves thousands of travellers. <a href="/communaute">→ Join the community</a></p>`,
+  },
+  {
+    slug: "wudu-on-a-plane-or-train",
+    title: "Wudu on a Plane, a Train and in Public Toilets",
+    description: "Little water, little space, a queue behind the door: the practical method for making wudu on a plane, on a train and in public toilets.",
+    coverImage: "/guides/blog-train.jpg",
+    category: 'Practical',
+    readTime: "5 min",
+    publishedAt: '2026-08-10',
+    lang: 'en',
+    tags: ['wudu', 'flight', 'train', 'practical', 'prayer'],
+    content: `<p>The real obstacle to praying while travelling is almost never the prayer: it is wudu. A basin twenty centimetres across, a tap that runs for three seconds, a queue behind the door. Here is how frequent travellers manage.</p>
+
+<h2>The short version</h2>
+<p>Three principles: <strong>get ready before you go in</strong> (sleeves rolled up, socks handled your way), <strong>work from the highest part downwards</strong> so you do not re-wet anything, and <strong>carry a small bottle</strong> — that is the object that changes everything and nobody thinks of it.</p>
+
+<h2>The method on a plane</h2>
+<p>Aircraft toilets are tiny and the tap is push-button, often three seconds per press. What works:</p>
+<p><strong>Before going in</strong>: roll your sleeves up, take off watch and rings, and get paper towels ready <em>in advance</em> (the dispenser is sometimes empty).<br/>
+<strong>Filling up</strong>: an empty 500 ml water bottle, filled at the basin, gives you a continuous flow and saves you fighting the tap. You can also ask the crew for a cup of water.<br/>
+<strong>The feet</strong>: this is where it gets complicated in such a narrow space. Two options — washing with the bottle over the bowl, or wiping over socks if you put them on in a state of purity (a religious rule: see below).<br/>
+<strong>On the way out</strong>: wipe the basin and the floor with a towel. It is a matter of respect, and it stops people associating our wudu with soaked toilets.</p>
+<p><strong>The right moment</strong>: just after the meal service, when everyone is seated. Avoid the thirty minutes before landing and the wake-up rush.</p>
+
+<h2>On a train</h2>
+<p>Easier than on a plane — the basin is bigger, the tap more generous, and there is room. Two differences:</p>
+<p>— The train <strong>moves</strong>: keep one hand for support, do it in a station or on a straight stretch.<br/>
+— On high-speed trains, toilet water is sometimes marked as not drinking water; that does not stop it being <strong>pure</strong> for the purposes of wudu (mains water, simply not tested for drinking).</p>
+<p>A little-known tip: in large stations, the paid toilets often have <strong>individual cubicles with a basin inside</strong>. Much more comfortable, and for one euro the problem is solved.</p>
+
+<h2>In public toilets</h2>
+<p>The difficulty here is not technical, it is social: nobody wants to make wudu in front of ten people washing their hands. What works:</p>
+<p>— <strong>Use the accessible cubicle</strong> when it is free: basin inside, door closed, nobody watching. Leave it immediately if someone needs it.<br/>
+— <strong>Do the main part at the basin and the feet in a cubicle</strong>, with a bottle.<br/>
+— <strong>A low basin</strong> (children's area in shopping centres, family toilets) makes washing the feet far easier.<br/>
+— <strong>Dry the floor behind you.</strong> Always.</p>
+
+<h2>The three items that change everything</h2>
+<p><strong>1. A small 500 ml squeezable bottle</strong> — empty through security, filled afterwards. It is the traveller's number one item: wudu, istinja, emergencies.<br/>
+<strong>2. A clean pair of socks</strong> in the bag.<br/>
+<strong>3. A small microfibre towel</strong> that dries in ten minutes and takes up the space of a handkerchief.</p>
+<p>Add a pocket prayer mat and you are self-sufficient anywhere — see <a href="/guides/halal-travel-checklist">our traveller's checklist</a>.</p>
+
+<h2>What we do not settle here</h2>
+<p>Several questions on this page belong to fiqh and not to the ground: wiping over socks (<em>mash</em>) and its conditions, tayammum when there is no water at all, the validity of this or that water, what breaks wudu on a long flight. <strong>We issue no religious rulings.</strong> For those questions, ask an imam or put them to <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&utm_medium=passerelle&utm_campaign=wudu-en" target="_blank" rel="noopener noreferrer">HalalGPT</a>.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Can you make wudu in an aircraft toilet?</strong> Yes, practically speaking it is possible; the bottle makes it simple and clean.<br/>
+<strong>Do you need the crew's permission?</strong> No. You are using the toilets normally. If you want a cup of water, just ask.<br/>
+<strong>And if there is no water at all?</strong> That is the case of tayammum, a religious question: see above.<br/>
+<strong>Where do I pray once wudu is done?</strong> See <a href="/blog/praying-on-a-plane">praying on a plane</a> and <a href="/blog/praying-on-a-train">praying on a train</a>.<br/>
+<strong>And at the airport?</strong> Several prayer rooms have a dedicated ablution area: see <a href="/blog/where-to-pray-paris-airports">our airport guides</a>.</p>
+
+<h2>Help the community</h2>
+<p>Do you know an airport or a station with genuine ablution facilities? That is valuable information and rarely written down. <a href="/communaute/ajouter">→ Add the place</a></p>
+<p><strong>Also worth reading:</strong> <a href="/blog/no-bidet-shower-toilets-travel">staying clean in toilets with no bidet shower</a>.</p>`,
+  },
+  {
+    slug: "prayer-times-on-a-plane-time-zones",
+    title: "Prayer Times on a Plane: Which Time Zone?",
+    description: "Three time zones crossed, sunrise at 3am through the window: how to know where you are and what time it is there. Flight screen, GPS without signal, window.",
+    coverImage: "/guides/blog-aeroports.jpg",
+    category: 'Practical',
+    readTime: "6 min",
+    publishedAt: '2026-08-10',
+    lang: 'en',
+    tags: ['flight', 'prayer', 'times', 'practical'],
+    content: `<p>You take off from London at 10pm, you land in Dubai at 6.30am, and during the flight the sun rises at 3am through the window. Which time do you follow? It is one of the most asked questions by Muslim travellers, and it mixes two very different things: <strong>what can be measured</strong>, and <strong>what jurisprudence says</strong>. Here is the first part, honestly separated from the second.</p>
+
+<h2>The short version</h2>
+<p>What matters is not the time on your watch: it is <strong>where you are at the moment you pray</strong>. In flight, that place is constantly changing. The practical method: check your <strong>real position</strong> on the flight screen, work out the times for that point, and pray when the window is open there. One simple principle: <em>the sun you can see through the window is your best clock</em>.</p>
+
+<h2>1. Prepare before take-off</h2>
+<p>The most effective thing happens on the ground, with a signal. Before boarding:</p>
+<p>— Note the prayer times for your <strong>departure city</strong> and your <strong>arrival city</strong> for the day of the flight (our <a href="/prayer-times">prayer times</a> give them for any city).<br/>
+— Note take-off and landing times <strong>in the local time of each city</strong>.<br/>
+— Check whether a prayer falls during the flight. Often the answer is "only one" — and everything becomes much simpler.</p>
+<p>Keep the page in your notebook: it stays readable <strong>in flight mode</strong>.</p>
+
+<h2>2. In flight, the seat-back screen is your tool</h2>
+<p>The flight tracking screen gives your <strong>position, the local time of the ground below</strong>, and often sunrise and sunset at the destination. It is the most useful information on the flight, and nobody looks at it.</p>
+<p>Without a screen, your phone's offline map in flight mode still works: <strong>GPS does not need a signal</strong>. Your position appears, and both our <a href="/qibla">qibla compass</a> and our prayer times can read it.</p>
+
+<h2>3. The sun through the window does not lie</h2>
+<p>On an eastbound flight, night sometimes lasts three hours. On a westbound flight, sunset can last six. What you see is the astronomical reality of where you are: if the sun sets through the window, maghrib begins at that spot. Many travellers rely on it, cross-checked with the flight screen.</p>
+<p>The trap: <strong>polar routes</strong> (Europe to East Asia, North America to the Gulf). At very high latitudes the solar markers become unusable — sometimes there is no night at all. That is precisely where the question becomes religious rather than practical.</p>
+
+<h2>4. On arrival, reset to local time</h2>
+<p>As soon as you land, everything is normal again: you are somewhere, and that somewhere has times. The only real trap is your <strong>body's lag</strong> for two or three days — fajr feels absurdly early and isha absurdly late.</p>
+<p>What helps: switch on <strong>prayer notifications</strong> for your new city as soon as you arrive, and do not use your sense of tiredness to estimate the time.</p>
+
+<h2>5. What works with no signal</h2>
+<p>In flight and abroad without a data plan, three things always work: <strong>GPS</strong> (independent of the network), a <strong>page saved in your notebook</strong>, and a <strong>screenshot</strong> of the times taken before departure. It is basic, and it is what saves you.</p>
+
+<h2>What we do not settle</h2>
+<p>This page tells you <strong>how to know where you are and what time it is there</strong>. It does not tell you what to do, because those are questions of jurisprudence, with differing views between schools:</p>
+<p>— Should you pray in flight or wait until you arrive?<br/>
+— Can two prayers be combined while travelling, and which ones?<br/>
+— Can prayers be shortened (<em>qasr</em>), and from what distance?<br/>
+— What do you do when a flight crosses a zone with no real night?<br/>
+— Is a prayer begun before entering a time zone valid?</p>
+<p><strong>We issue no religious rulings.</strong> Those questions go to an imam, or to <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&utm_medium=passerelle&utm_campaign=flight-times-en" target="_blank" rel="noopener noreferrer">HalalGPT</a>, which is built for them. Our work stops at measurement and at the ground — and that is already plenty.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Which time: departure, arrival or the ground below?</strong> What can be stated: the relevant time is that of the place where you are. The religious rule that follows from it is a ruling to ask for.<br/>
+<strong>How do I know my position in flight?</strong> The seat-back screen, or your phone's GPS in flight mode — it works without a signal.<br/>
+<strong>How do I find the qibla at 10,000 metres?</strong> See <a href="/qibla">our qibla compass</a> and <a href="/blog/praying-on-a-plane">praying on a plane</a>.<br/>
+<strong>And if I miss a prayer?</strong> Making it up is a religious question: ask HalalGPT.<br/>
+<strong>Where do I pray before or after the flight?</strong> See <a href="/blog/where-to-pray-paris-airports">airport prayer rooms</a>.</p>
+
+<h2>Help the community</h2>
+<p>Do you fly long-haul often? Share your method and the airlines whose seat-back screens actually give the useful information. <a href="/communaute">→ Join the community</a></p>`,
+  },
+  {
     slug: "is-this-restaurant-really-halal",
     title: "Is This Restaurant Really Halal? 7 Checks to Make",
     description: "A halal logo proves nothing on its own. Here are the 7 practical checks, the questions to ask the staff, and the warning signs — for Muslim travellers anywhere.",

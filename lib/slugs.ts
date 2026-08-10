@@ -76,4 +76,11 @@ export const BLOG_FR_TO_EN: Record<string, string> = {
   'restaurant-vraiment-halal-verifier': '/blog/is-this-restaurant-really-halal',
   'aucun-restaurant-halal-que-faire': '/blog/no-halal-restaurant-what-to-eat',
   'dire-sans-porc-sans-alcool-langues': '/blog/no-pork-no-alcohol-in-12-languages',
+  // Bloc « pratique » (11 aout 2026) — traductions, pas de nouveaux sujets
+  'voile-controle-securite-aeroport': '/blog/hijab-airport-security-check',
+  'voyager-voilee-se-renseigner-pays': '/blog/traveling-in-hijab-country-check',
+  'toilettes-sans-douchette-voyage': '/blog/no-bidet-shower-toilets-travel',
+  'repas-halal-avion-moml': '/blog/halal-airline-meal-moml',
+  'ablutions-avion-train': '/blog/wudu-on-a-plane-or-train',
+  'heure-priere-avion-fuseaux': '/blog/prayer-times-on-a-plane-time-zones',
 }

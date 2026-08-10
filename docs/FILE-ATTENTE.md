@@ -26,22 +26,13 @@ Chiffres AVANT le 9 août, 7 jours : voyageshalal.fr 1 970 impressions /
 
 ## À faire
 
-### 1. Traduire les 6 guides pratiques qui n'ont pas de version anglaise
-**Mesuré** : sur les 9 guides écrits cette semaine, **3 seulement** ont un
-jumeau anglais. Les 6 autres — repas MOML en avion, ablutions, heure de
-prière en vol, voile au contrôle, voyager voilée, toilettes sans douchette
-— n'existent qu'en français. Or le domaine anglais ne compte que **22
-contenus sur 108 (20 %)** et son marché est presque vide.
-Traduire n'est pas créer : cela ne compte pas dans la limite de 2-3
-contenus par jour. Chaque paire ajoute aussi un hreflang réciproque.
-
-### 2. Les sections « manger » et « prier » manquent sur 344 fiches villes
+### 1. Les sections « manger » et « prier » manquent sur 344 fiches villes
 **Mesuré** : sur 354 fiches, **10 ont une section « manger halal » rédigée
 et 10 une section « où prier »**. Les 344 autres n'ont que des listes
 d'adresses — donc peu de texte unique, et rien qui réponde à « manger halal
 à X » en toutes lettres. Commencer par Istanbul et Dubaï.
 
-### 3. Les hôtels d'Istanbul et Dubaï attendent le robot OSM
+### 2. Les hôtels d'Istanbul et Dubaï attendent le robot OSM
 **Mesuré** : 41 mentions « information non vérifiée » par page, et
 **0 hôtel avec une politique alcool connue**. Le script et le workflow
 existent (`enrich-hotels-osm.mjs`, `.github/workflows/enrich-hotels.yml`)
@@ -49,20 +40,20 @@ mais n'ont jamais été lancés : le réseau externe est fermé depuis
 l'environnement de l'agent. **Action pour Mohamed**, pas pour l'agent :
 GitHub → Actions → « Enrichir les hôtels » → Run workflow.
 
-### 4. L'accueil et le blog : 704 impressions, ZÉRO clic
+### 3. L'accueil et le blog : 704 impressions, ZÉRO clic
 **Mesuré** (7 jours avant le 9 août). Les titres ont été refaits le 9 août,
 donc **ne rien conclure avant le 16**. Si le zéro persiste après cette
 date, le problème n'est pas le titre : il faudra regarder sur quelles
 requêtes ces pages sortent réellement.
 
-### 5. Les 8 pages aéroport sont courtes
+### 4. Les 8 pages aéroport sont courtes
 **Mesuré** : CDG 310 mots, Orly 265, Disneyland 228. Ce sont nos meilleures
 portes d'entrée (22 des 29 clics du site viennent de Disneyland) et elles
 sont plus courtes que nos guides récents (900 à 1 200 mots). Approfondir
 vaut mieux que créer : ajouter le plan d'accès précis, les horaires
 d'affluence, ce qu'on fait quand la salle est fermée.
 
-### 6. `force-dynamic` : 8 pages à réexaminer
+### 5. `force-dynamic` : 8 pages à réexaminer
 **Mesuré** : 37 fichiers, dont **29 routes /api** où le réglage n'a aucun
 effet. Restent 8 pages. Vérification déjà faite pour le layout racine (il
 est nécessaire au bi-domaine, voir la compétence `servir-deux-domaines`).
@@ -71,6 +62,26 @@ Les 7 autres n'ont pas été examinées une par une.
 ---
 
 ## Fait
+
+### Les 6 guides pratiques ont leur version anglaise — 11 août
+Ils n'existaient qu'en français : repas MOML en avion, ablutions, heure de
+prière en vol, voile au contrôle, voyager voilée, toilettes sans douchette.
+Traduire n'est pas créer — cela ne consomme pas la limite de 2-3 contenus
+par jour.
+
+**Mesuré après** : 23 articles anglais (17 avant), **25 paires FR/EN
+déclarées** (19 avant). Les 6 pages répondent en 200 sur le domaine
+anglais, apparaissent dans /blog et dans le sitemap EN, et l'ancienne URL
+française y fait bien une 301 vers le slug anglais.
+
+**Réciprocité hreflang vérifiée dans les deux sens** sur les 6 paires :
+chaque page FR déclare sa jumelle EN, et chaque page EN déclare sa jumelle
+FR — jamais vers une URL qui redirige.
+
+Titres tous sous 62 caractères (37 à 49), descriptions sous 160 (135 à
+156). Les 14 liens internes des articles anglais pointent vers des pages
+anglaises qui existent (`/prayer-times`, `/mosque-near-me`,
+`/guides/halal-travel-checklist`…) — vérifié un par un.
 
 ### La position, dite en clair sur tout le site — 11 août
 **Reproché par Mohamed** : « il y a écrit ma position, mais ce n'est pas
