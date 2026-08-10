@@ -325,10 +325,20 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
     : soiree && pepite ? 'soiree'
     : 'priere'
 
+  // ☀️ LISIBILITÉ EN PLEIN JOUR.
+  // Mesuré sur une capture du premier écran : 84 % des pixels étaient très
+  // sombres, luminosité moyenne 38 sur 255, à peine 2 % de pixels clairs.
+  // Dans une voiture au soleil, avec les reflets sur l'écran, les tuiles se
+  // confondaient avec le fond — elles « ne ressortaient pas ».
+  //
+  // On ne change pas la palette (nuit + or, c'est l'identité). On augmente
+  // l'ÉCART entre la tuile et le fond : fond de tuile trois fois plus clair,
+  // bordure deux fois plus marquée, et texte secondaire remonté de 0,6 à
+  // 0,78 d'opacité. La différence se voit au soleil, pas dans le noir.
   const T = {
-    lab: { fontSize: 10.5, fontWeight: 800 as const, letterSpacing: '0.12em', textTransform: 'uppercase' as const, color: 'var(--or)', margin: 0 },
-    tile: { background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(253,250,243,0.1)', borderRadius: 18, padding: '13px 14px' },
-    meta: { fontSize: 12, color: 'rgba(253,250,243,0.6)', margin: 0 },
+    lab: { fontSize: 11, fontWeight: 800 as const, letterSpacing: '0.12em', textTransform: 'uppercase' as const, color: 'var(--or)', margin: 0 },
+    tile: { background: 'rgba(255,255,255,0.14)', border: '1px solid rgba(253,250,243,0.22)', borderRadius: 18, padding: '13px 14px' },
+    meta: { fontSize: 12.5, color: 'rgba(253,250,243,0.78)', margin: 0 },
   }
 
   return (
@@ -377,7 +387,7 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
                 <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginTop: 10, flexWrap: 'wrap' }}>
                   <p style={{ flex: 1, minWidth: 170, color: '#fdfaf3', fontSize: 14, margin: 0, lineHeight: 1.45 }}>
                     {mosquee.source === 'communaute' ? '🤝' : mosquee.source === 'annuaire' ? '📒' : '🕌'} <strong><bdi>{mosquee.nom}</bdi></strong>
-                    <span style={{ color: 'rgba(253,250,243,0.6)' }}> · {walkMin} {en ? 'min walk' : 'min à pied'} · {
+                    <span style={{ color: 'rgba(253,250,243,0.78)' }}> · {walkMin} {en ? 'min walk' : 'min à pied'} · {
                       mosquee.source === 'communaute' ? (en ? 'shared by a traveler' : 'partagé par un voyageur')
                         : (en ? 'listed · to verify' : 'référencé · à vérifier')
                     }</span>
@@ -405,7 +415,7 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
               <span style={{ fontSize: 18 }} aria-hidden>🕌</span>
               <p style={{ flex: 1, color: '#fdfaf3', fontWeight: 700, fontSize: 13.5, margin: 0, lineHeight: 1.35 }}>
                 {fenetre.key} {fenetre.mode === 'current' ? (en ? 'ends in' : 'se termine dans') : (en ? 'in' : 'dans')} <strong style={{ color: 'var(--or)' }}>{fmtMin(minLeft)}</strong>
-                {mosquee ? <span style={{ color: 'rgba(253,250,243,0.6)' }}> · <bdi>{mosquee.nom}</bdi> ({walkMin} min)</span> : null}
+                {mosquee ? <span style={{ color: 'rgba(253,250,243,0.78)' }}> · <bdi>{mosquee.nom}</bdi> ({walkMin} min)</span> : null}
               </p>
               <span style={{ color: 'var(--or)', fontWeight: 800, fontSize: 13 }}>→</span>
             </Link>
@@ -659,7 +669,7 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
                   aria-pressed={on}
                   style={{
                     flex: 'none', minHeight: 44, padding: '0 14px', borderRadius: 999, cursor: 'pointer',
-                    border: on ? '1.5px solid var(--or)' : '1px solid rgba(253,250,243,0.18)',
+                    border: on ? '1.5px solid var(--or)' : '1px solid rgba(253,250,243,0.3)',
                     background: on ? 'rgba(201,168,76,0.18)' : 'rgba(255,255,255,0.05)',
                     color: on ? 'var(--or)' : 'var(--creme)',
                     fontWeight: on ? 800 : 700, fontSize: 13.5, whiteSpace: 'nowrap',
@@ -682,7 +692,7 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
                     key={m} onClick={() => setMode(m)} aria-pressed={on}
                     style={{
                       minHeight: 44, padding: '0 14px', borderRadius: 999, cursor: 'pointer',
-                      border: on ? '1.5px solid var(--or)' : '1px solid rgba(253,250,243,0.18)',
+                      border: on ? '1.5px solid var(--or)' : '1px solid rgba(253,250,243,0.3)',
                       background: on ? 'rgba(201,168,76,0.18)' : 'rgba(255,255,255,0.05)',
                       color: on ? 'var(--or)' : 'var(--creme)', fontWeight: on ? 800 : 700, fontSize: 13,
                     }}
@@ -721,7 +731,7 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
               const active = fenetre.key === k
               return (
                 <div key={k} style={{ textAlign: 'center', flex: 1, borderRadius: 12, padding: '7px 2px', background: active ? 'rgba(201,168,76,0.18)' : 'transparent', border: active ? '1px solid rgba(201,168,76,0.45)' : '1px solid transparent' }}>
-                  <p style={{ fontSize: 11.5, fontWeight: 800, letterSpacing: '0.04em', textTransform: 'uppercase', color: active ? 'var(--or)' : 'rgba(253,250,243,0.6)', margin: 0 }}>{k}</p>
+                  <p style={{ fontSize: 11.5, fontWeight: 800, letterSpacing: '0.04em', textTransform: 'uppercase', color: active ? 'var(--or)' : 'rgba(253,250,243,0.78)', margin: 0 }}>{k}</p>
                   <p style={{ fontFamily: "'Playfair Display', Georgia, serif", color: active ? '#fdfaf3' : 'rgba(253,250,243,0.9)', fontWeight: active ? 900 : 700, fontSize: 17, margin: '3px 0 0', fontVariantNumeric: 'tabular-nums', lineHeight: 1.1 }}>{fmtClock(d)}</p>
                 </div>
               )
