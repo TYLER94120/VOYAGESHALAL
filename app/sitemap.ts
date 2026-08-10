@@ -40,6 +40,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${SITE_URL}/quiz`, lastModified: now, changeFrequency: 'monthly', priority: 0.7, alternates: pageAlternates('/quiz') },
     { url: `${SITE_URL}/communaute`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
     { url: L('/mosquee-proche'), lastModified: now, changeFrequency: 'monthly', priority: 0.9, alternates: pageAlternates('/mosquee-proche') },
+    { url: L('/meteo'), lastModified: now, changeFrequency: 'daily', priority: 0.8, alternates: pageAlternates('/meteo') },
     { url: `${SITE_URL}/autour-de-moi`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: L('/a-propos'), lastModified: now, changeFrequency: 'monthly', priority: 0.6, alternates: pageAlternates('/a-propos') },
     { url: `${SITE_URL}/contact`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },

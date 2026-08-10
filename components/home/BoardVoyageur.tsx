@@ -9,6 +9,7 @@ import { conforme } from '@/lib/conformite'
 import { fetchCourt } from '@/lib/fetchCourt'
 import { photoLargeur } from '@/lib/imageLargeur'
 import PositionBadge from '@/components/location/PositionBadge'
+import { meteoInstantanee, emojiMeteo, conseilDuJour, type Meteo } from '@/lib/meteo'
 
 // 🎛️ BOARD VOYAGEUR (bento) — l'accueil devient un tableau de bord contextuel :
 // des REPONSES deja calculees, jamais des menus. Il absorbe le Radar Priere
@@ -73,11 +74,23 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
   // (« je ne veux pas me prendre la tete ») ou le MEILLEUR compromis.
   const [mode, setMode] = useState<'proche' | 'meilleur'>('proche')
   const [avisEnvoye, setAvisEnvoye] = useState(false)
+  // 🌤 Météo — demandée par Mohamed : « en voyage, la température de la
+  // position et pouvoir anticiper ». Elle ne bloque RIEN : la tuile n'existe
+  // que si la réponse arrive, et son absence ne se voit pas.
+  const [meteo, setMeteo] = useState<Meteo | null>(null)
 
   useEffect(() => {
     const id = setInterval(() => setNow(Date.now()), 30_000)
     return () => clearInterval(id)
   }, [])
+
+  // La météo arrive quand elle arrive. Ce qui est gardé sur l'appareil
+  // s'affiche tout de suite ; le réseau rafraîchit en silence derrière.
+  useEffect(() => {
+    if (!pos) return
+    const gardee = meteoInstantanee(pos.lat, pos.lng, setMeteo)
+    if (gardee) setMeteo(gardee)
+  }, [pos])
 
   // ── Fenetre de priere (calcul local, zero reseau) ──
   // La méthode et l'école viennent du choix de l'utilisateur, comme dans le
@@ -758,11 +771,39 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
             </span>
           </Link>
           <span aria-hidden style={{ width: 1, alignSelf: 'stretch', background: 'rgba(253,250,243,0.14)' }} />
-          <Link href="/horaires-priere" style={{ flex: 1, minHeight: 44, display: 'flex', alignItems: 'center', gap: 8, textDecoration: 'none', justifyContent: 'flex-end' }}>
-            <span style={{ fontSize: 17 }} aria-hidden>🌙</span>
-            <span style={{ color: 'rgba(253,250,243,0.85)', fontWeight: 700, fontSize: 13, textAlign: 'right', lineHeight: 1.25 }}>{hijri ?? '—'}</span>
-          </Link>
+          {/* La météo prend la place quand elle est connue ; sinon la date
+              hégirienne reste. Aucune case vide, aucun rond qui tourne. */}
+          {meteo?.maintenant ? (
+            <Link href="/meteo" style={{ flex: 1, minHeight: 44, display: 'flex', alignItems: 'center', gap: 8, textDecoration: 'none', justifyContent: 'flex-end' }}>
+              <span style={{ fontSize: 19 }} aria-hidden>{emojiMeteo(meteo.maintenant.code)}</span>
+              <span style={{ color: '#fdfaf3', fontWeight: 800, fontSize: 14 }}>
+                {meteo.maintenant.temp}°
+                <span style={{ ...T.meta, fontWeight: 600, marginLeft: 6 }}>{en ? 'Weather' : 'Météo'}</span>
+              </span>
+            </Link>
+          ) : (
+            <Link href="/horaires-priere" style={{ flex: 1, minHeight: 44, display: 'flex', alignItems: 'center', gap: 8, textDecoration: 'none', justifyContent: 'flex-end' }}>
+              <span style={{ fontSize: 17 }} aria-hidden>🌙</span>
+              <span style={{ color: 'rgba(253,250,243,0.85)', fontWeight: 700, fontSize: 13, textAlign: 'right', lineHeight: 1.25 }}>{hijri ?? '—'}</span>
+            </Link>
+          )}
         </div>
+
+        {/* ── ANTICIPER : la seule phrase météo qui vaille la peine ──
+            Pas « 24° et nuageux » (c'est juste au-dessus), mais ce qui va
+            CHANGER : la pluie de 17 h, les 38° de midi. Elle n'apparaît que
+            quand il y a quelque chose à annoncer. */}
+        {(() => {
+          const c = meteo ? conseilDuJour(meteo, en) : null
+          if (!c) return null
+          return (
+            <Link href="/meteo" style={{ ...T.tile, marginTop: 10, display: 'flex', alignItems: 'center', gap: 9, minHeight: 46, padding: '9px 12px', textDecoration: 'none', borderColor: 'rgba(201,168,76,0.35)' }}>
+              <span style={{ fontSize: 17 }} aria-hidden>{emojiMeteo(meteo!.maintenant?.code ?? '')}</span>
+              <span style={{ color: '#fdfaf3', fontWeight: 700, fontSize: 13.5, lineHeight: 1.35 }}>{c}</span>
+              <span style={{ marginLeft: 'auto', color: 'var(--or)', fontWeight: 800, fontSize: 16 }}>→</span>
+            </Link>
+          )
+        })()}
 
         {/* ── Les 5 prieres du jour — lisibles d'un coup d'oeil ──
             Remonte a la place de l'ancienne bande de vignettes : c'est

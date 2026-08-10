@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useLanguage } from '@/components/i18n/LanguageProvider'
-import { useLocation } from '@/components/location/LocationProvider'
 import { localizedHref } from '@/lib/slugs'
 
 // Barre mobile — parité avec le desktop : 5 onglets max (design system),
@@ -12,22 +11,18 @@ export default function BottomNav() {
   const pathname = usePathname()
   const { t, lang } = useLanguage()
   const en = lang === 'en'
-  const { city } = useLocation()
   const [toolsOpen, setToolsOpen] = useState(false)
   const isActive = (path: string) => pathname === path || pathname.startsWith(path + '/')
 
   // Fermer le panneau Outils à chaque navigation
   useEffect(() => { setToolsOpen(false) }, [pathname])
 
-  // « Restos » mène à la ville mémorisée (onglet restos), sinon à la liste des destinations
-  const restosHref = city ? `/destinations/${city.slug}` : '/destinations'
-
   const tools = [
-    // 🔎 et non 📍 : c'est la ville qu'on CONSULTE, pas là où l'on est.
-    // Sur une capture de Mohamed, ce bouton affichait « 📍 Marrakech »
-    // pendant que la barre de position affichait « 📍 Houara Oulad Raho ».
-    // Les deux étaient justes ; c'est l'épingle commune qui mentait.
-    { href: restosHref, icon: city ? '🔎' : '🗺️', label: city ? `${en ? 'City' : 'Ville'} : ${city.nom}` : 'Destinations' },
+    // La ville a quitté cette liste : Mohamed — « je ne vois pas à quoi sert
+    // la ville dans Outils ». Il avait raison, elle doublonnait le menu
+    // Destinations. La météo prend sa place, parce qu'en voyage on veut
+    // savoir s'il va pleuvoir avant de sortir pour Maghrib.
+    { href: localizedHref('/meteo', en), icon: '🌤️', label: en ? 'Weather' : 'Météo' },
     { href: localizedHref('/mosquee-proche', en), icon: '🕌', label: t('nav.mosque') },
     { href: '/qibla', icon: '🧭', label: t('nav.qibla') },
     { href: localizedHref('/planificateur', en), icon: '🗺️', label: en ? 'Trip planner' : 'Planificateur' },

@@ -16,6 +16,7 @@ export const FR_TO_EN_SLUG: Record<string, string> = {
   '/application': '/app',
   '/planificateur': '/trip-planner',
   '/carnet': '/notebook',
+  '/meteo': '/weather',
 }
 
 export const EN_TO_FR_SLUG: Record<string, string> = Object.fromEntries(
