@@ -2463,25 +2463,56 @@ If an adjustment is required, it is almost always possible to do it yourself rat
   {
     slug: "where-to-pray-lyon-airport",
     title: "Where to pray at Lyon-Saint-Exupery airport — 2026 guide",
-    description: "Flying via Lyon? Saint-Exupery airport has a multi-faith spiritual centre with a Muslim prayer room. Here is where to find it.",
+    description: "Lyon-Saint-Exupery does have a Muslim prayer room — but it is landside, before security. Where to find it, and what to do if you have already cleared.",
     coverImage: "/guides/blog-lyon.jpg",
     category: 'Practical',
-    readTime: "3 min",
+    readTime: "6 min",
     publishedAt: '2026-08-01',
     lang: 'en',
     tags: ['prayer', 'airport', 'lyon'],
     content: `
-<p>Traveling through Lyon and looking for a prayer room at Saint-Exupery airport? Lyon-Saint-Exupery has a multi-faith spiritual centre with a Muslim prayer room. Here is where to find it.</p>
+<p>Flying from Lyon and looking for a prayer room at Saint-Exupery airport? Good news: there is one. Bad news: <strong>it is landside</strong>, so if you have already cleared security it is out of reach. Here is how to plan around that.</p>
+
 <h2>The essentials in 30 seconds</h2>
-<p>Lyon airport provides a prayer space open to all, grouping rooms for Catholics, Protestants, Muslims and Jews. Opening hours are posted at the entrance of each room, and any information desk can point you there.</p>
-<h2>Where the prayer room is</h2>
-<p>The spiritual centre sits between Terminal 1 and Terminal 2, near the Moxy hotel. Separate spaces per faith, including a Muslim one. Follow the "spiritual centre / place of worship" signs or ask a staff member.</p>
-<h2>Practical tips</h2>
-<p>Allow a few minutes' walk depending on your terminal. Check the posted opening hours. Plan your wudu (restrooms, small kit). Short on time? The traveler's prayer, shortened and combined, solves it. Use <a href="/qibla">our qibla tool</a>.</p>
+<p>Lyon-Saint-Exupery has a <strong>multi-faith spiritual centre</strong>, with separate spaces per faith including a Muslim one. Access is <strong>free</strong> and open to all. It sits <strong>between Terminal 1 and Terminal 2</strong>, near the Moxy hotel — so <strong>before the security checks</strong>.</p>
+
+<h2>The trap specific to Lyon: go there BEFORE</h2>
+<p>This is the piece of information missing everywhere, and the one that changes everything. A space between the terminals is, by construction, <strong>landside</strong>. Once you are in the departure zone you cannot reach it: you do not go back through security to pray, or you queue all over again — and at Saint-Exupery at peak times, that is the surest way to miss a flight.</p>
+<p>So the rule is simple: <strong>if you want to use the room, go when you arrive, before or just after check-in</strong>. If you have already cleared security, skip to “if you are already airside”.</p>
+
+<h2>What we know, and where it comes from</h2>
+<p>The location above comes from the <strong>airport's public information and from traveller reports</strong>. <strong>We have not verified it ourselves on site.</strong> Nor can we guarantee the <strong>opening hours</strong>: they are posted at the entrance of each room and can change. For a very early or a night flight, assume it may be closed.</p>
+
+<h2>How to find it</h2>
+<p>Follow the <strong>“centre spirituel”</strong> or <strong>“lieu de culte”</strong> signs — that is the wording used in French airports, not “prayer room”. The pictogram is on the overhead panels, next to toilets and lifts: look up rather than hunting for a door.</p>
+<p>If in doubt, ask at an information desk: the request is routine and staff know the place. Allow a few minutes' walk depending on your terminal.</p>
+
+<h2>If you are already airside</h2>
+<p>Three options, from the simplest down:</p>
+<p><strong>1. A quiet corner near your gate.</strong> Pier ends and gates for later departures empty out between flights. A pocket mat and two minutes are enough.<br/>
+<strong>2. A dining area outside meal times.</strong> Often the calmest part of the terminal mid-afternoon.<br/>
+<strong>3. Praying seated at the gate.</strong> When only a few minutes of the window are left, this is what many travellers do.</p>
+<p>A <strong>pocket prayer mat is no problem at security</strong>: it is an ordinary item. Pack it along the side of your bag so you can get it out faster.</p>
+
+<h2>Wudu</h2>
+<p>The spiritual centre is the best place if you go there; elsewhere it is the toilets, with high basins and sensor taps that cut the water every three seconds. Two habits change everything: filling <strong>a small squeezable bottle</strong> before going into the cubicle, and keeping a <strong>microfibre towel</strong> in your cabin bag. The full method is in our guide: <a href="/blog/wudu-on-a-plane-or-train">making wudu while travelling</a>.</p>
+
+<h2>What we do not rule on</h2>
+<p>Shortening, combining, making up on arrival, praying seated: these are <strong>religious questions</strong>, with differing opinions and conditions, and <strong>we do not answer them</strong>. This page covers where and how, not what is permitted. Put the question to <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&amp;utm_medium=passerelle&amp;utm_campaign=lyon-en" target="_blank" rel="noopener noreferrer">HalalGPT</a>, which is built for it, or to your local imam.</p>
+<p>What we can do is give you the exact window: our <a href="/prayer-times">prayer times</a> give them for Lyon and its region, and the page still works without a signal once open.</p>
+
+<h2>The prayer that causes trouble</h2>
+<p>It all rests on one figure: <strong>boarding closes around 20 minutes before departure</strong>. That is your real deadline, not the time on the board. Combine it with the landside trap and the decision becomes obvious: either you pray at the spiritual centre <em>before</em> security, or you pray at the gate.</p>
+
 <h2>Frequently asked questions</h2>
-<p><strong>Is there a Muslim room at Lyon-Saint-Exupery?</strong> Yes, in the spiritual centre between Terminals 1 and 2.<br/><strong>Open to everyone?</strong> Yes, free of charge.<br/><strong>Opening hours?</strong> Posted at each room's entrance; information desks can help.</p>
+<p><strong>Is there a Muslim prayer room at Lyon-Saint-Exupery?</strong> Yes, in the multi-faith spiritual centre between Terminals 1 and 2.<br/>
+<strong>Is it before or after security?</strong> Before. That is the point to remember.<br/>
+<strong>Is it free?</strong> Yes.<br/>
+<strong>What are the opening hours?</strong> Posted at each room's entrance; we do not publish them, they change.<br/>
+<strong>And other airports?</strong> See <a href="/blog/where-to-pray-paris-airports">our complete airport prayer room guide</a>.</p>
+
 <h2>Help the community</h2>
-<p>A location change, an opening time, a landmark? Share it — an ongoing sadaqa. <a href="/communaute">→ Join the community</a></p>
+<p>Have you prayed at Saint-Exupery recently? Tell us <strong>the actual posted hours and whether access has changed</strong>. That is exactly what we cannot produce on our own, and it matters most for morning flights. <a href="/communaute/ajouter">→ Add the place</a> · <a href="/communaute">→ Join the community</a></p>
 `,
   },
   {
@@ -3111,18 +3142,54 @@ If an adjustment is required, it is almost always possible to do it yourself rat
   {
     slug: "ou-prier-aeroport-lyon",
     title: "Où prier à l'aéroport de Lyon-Saint-Exupéry — guide 2026",
-    description: "Lyon-Saint-Exupéry dispose d'un centre spirituel multiconfessionnel avec une salle de prière musulmane. Voici où le trouver.",
+    description: "Lyon-Saint-Exupéry a bien une salle de prière musulmane — mais elle est côté ville, avant les contrôles. Où la trouver et quoi faire si tu es déjà passé.",
     coverImage: "/guides/blog-lyon.jpg",
     category: 'Pratique',
-    readTime: "3 min",
+    readTime: "7 min",
     publishedAt: '2026-07-20',
     tags: ["Lyon", "Aéroports", "Prière"],
-    content: `<p>Tu voyages depuis Lyon et tu cherches une salle de prière à l'aéroport Saint-Exupéry ? Lyon-Saint-Exupéry dispose d'un centre spirituel multiconfessionnel avec une salle de prière musulmane. Voici où le trouver.</p>
-<h2>L'essentiel en 30 secondes</h2><p>L'aéroport de Lyon met à disposition un espace de prière ouvert à tous, qui regroupe des salles pour les catholiques, protestants, musulmans et juifs. Les horaires sont affichés à l'entrée de chaque salle, et un point d'information peut te renseigner.</p>
-<h2>Où se trouve la salle de prière</h2><p>Le centre spirituel se situe entre le Terminal 1 et le Terminal 2, à proximité de l'hôtel Moxy. Espaces distincts par culte, dont un espace musulman. Suis la signalétique « centre spirituel / lieu de culte » ou demande à un agent.</p>
-<h2>Conseils pratiques</h2><p>Prévois quelques minutes de marche selon ton terminal. Vérifie les horaires affichés. Anticipe les ablutions (toilettes, petit nécessaire). En cas de temps serré, prière du voyageur raccourcie et regroupée. Utilise <a href="/qibla">notre outil qibla</a>.</p>
-<h2>Questions fréquentes</h2><p><strong>Salle musulmane à Lyon-Saint-Exupéry ?</strong> Oui, dans le centre spirituel entre les terminaux 1 et 2.<br/><strong>Ouvert à tous ?</strong> Oui, gratuitement.<br/><strong>Horaires ?</strong> Affichés à l'entrée de chaque salle ; point d'information disponible.</p>
-<p>Voir aussi <a href="/blog/ou-prier-aeroports">notre guide complet des aéroports</a>.</p><h2>Aide la communauté</h2><p>Un changement d'emplacement, un horaire, un repère ? Partage-le — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
+    content: `<p>Tu voyages depuis Lyon et tu cherches une salle de prière à l'aéroport Saint-Exupéry ? Bonne nouvelle : il y en a une. Mauvaise nouvelle : <strong>elle est côté ville</strong>, et si tu as déjà passé les contrôles, elle ne te sert plus à rien. Voici comment t'organiser en conséquence.</p>
+
+<h2>L'essentiel en 30 secondes</h2>
+<p>Lyon-Saint-Exupéry dispose d'un <strong>centre spirituel multiconfessionnel</strong>, avec des espaces distincts par culte dont un espace musulman. L'accès est <strong>gratuit</strong> et ouvert à tous. Il se situe <strong>entre le Terminal 1 et le Terminal 2</strong>, à proximité de l'hôtel Moxy — donc <strong>avant les contrôles de sécurité</strong>.</p>
+
+<h2>Le piège propre à Lyon : il faut y aller AVANT</h2>
+<p>C'est l'information qui manque partout, et celle qui fait toute la différence. Un espace situé entre les terminaux est, par construction, <strong>côté ville</strong>. Une fois en zone d'embarquement, tu ne peux plus y aller : on ne repasse pas la sécurité pour prier, ou alors on refait toute la file — et à Saint-Exupéry, aux heures de pointe, c'est le meilleur moyen de rater un vol.</p>
+<p>La règle est donc simple : <strong>si tu veux utiliser la salle, vas-y en arrivant, avant l'enregistrement ou juste après</strong>. Si tu es déjà passé, saute directement à la section « si tu es déjà côté embarquement ».</p>
+
+<h2>Ce que nous savons, et d'où ça vient</h2>
+<p>L'emplacement ci-dessus vient des <strong>informations publiques de l'aéroport et de témoignages de voyageurs</strong>. <strong>Nous ne l'avons pas vérifié nous-mêmes sur place.</strong> Ce que nous ne pouvons pas garantir non plus, ce sont les <strong>horaires</strong> : ils sont affichés à l'entrée de chaque salle et peuvent changer. Pour un vol très matinal ou de nuit, pars du principe que ce sera peut-être fermé.</p>
+
+<h2>Comment le trouver</h2>
+<p>Suis la signalétique <strong>« centre spirituel »</strong> ou <strong>« lieu de culte »</strong> — c'est le vocabulaire employé dans les aéroports français, pas « salle de prière ». Le pictogramme se trouve sur les panneaux suspendus, à côté de ceux des toilettes et des ascenseurs : lève les yeux plutôt que de chercher une porte.</p>
+<p>En cas de doute, demande au comptoir information : la demande est courante et le personnel connaît l'endroit. Compte quelques minutes de marche selon le terminal d'où tu pars.</p>
+
+<h2>Si tu es déjà côté embarquement</h2>
+<p>Trois solutions, de la plus simple à la moins confortable :</p>
+<p><strong>1. Un coin calme près de ta porte.</strong> Les extrémités de jetée et les salles d'embarquement des vols suivants se vident entre deux départs. Un tapis de poche et deux minutes suffisent.<br/>
+<strong>2. Une zone de restauration en dehors des heures de repas.</strong> Souvent la partie la plus tranquille du terminal en milieu d'après-midi.<br/>
+<strong>3. Prier assis, en salle d'embarquement.</strong> Quand il ne reste que quelques minutes de créneau, c'est ce que font beaucoup de voyageurs.</p>
+<p>Un <strong>tapis de prière de poche ne pose aucun problème au contrôle</strong> : c'est un objet courant. Range-le sur le côté du sac, tu le sortiras plus vite.</p>
+
+<h2>Les ablutions</h2>
+<p>Le centre spirituel est le meilleur endroit si tu y vas ; ailleurs, ce sont les toilettes, avec des lavabos hauts et des robinets à capteur qui coupent l'eau toutes les trois secondes. Deux habitudes qui changent tout : remplir <strong>une petite bouteille souple</strong> avant d'entrer dans la cabine, et garder une <strong>serviette microfibre</strong> dans le bagage cabine. La méthode complète est dans notre guide : <a href="/blog/ablutions-avion-train">faire ses ablutions en voyage</a>.</p>
+
+<h2>Ce que nous ne tranchons pas</h2>
+<p>Raccourcir, regrouper, rattraper à l'arrivée, prier assis : ce sont des <strong>questions religieuses</strong>, avec des avis et des conditions, et <strong>nous n'y répondons pas</strong>. Cette page dit où et comment, pas ce qui est permis. Pose la question à <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&amp;utm_medium=passerelle&amp;utm_campaign=lyon" target="_blank" rel="noopener noreferrer">HalalGPT</a>, qui est fait pour ça, ou à l'imam de ta mosquée.</p>
+<p>Ce que nous pouvons faire, c'est te donner l'heure exacte du créneau : nos <a href="/horaires-priere">horaires de prière</a> les donnent pour Lyon et sa région, et la page fonctionne encore sans réseau une fois ouverte.</p>
+
+<h2>La prière qui pose problème</h2>
+<p>Tout se joue sur une seule donnée : <strong>l'embarquement ferme environ 20 minutes avant le décollage</strong>. C'est ta vraie limite, pas l'heure affichée au tableau. Combine-la avec le piège du côté ville et la décision devient évidente : soit tu pries au centre spirituel <em>avant</em> les contrôles, soit tu pries à la porte.</p>
+
+<h2>Questions fréquentes</h2>
+<p><strong>Y a-t-il une salle de prière musulmane à Lyon-Saint-Exupéry ?</strong> Oui, dans le centre spirituel multiconfessionnel, entre les Terminaux 1 et 2.<br/>
+<strong>Est-ce avant ou après la sécurité ?</strong> Avant. C'est le point à retenir.<br/>
+<strong>Est-ce payant ?</strong> Non.<br/>
+<strong>Quels horaires ?</strong> Affichés à l'entrée de chaque salle ; nous ne les publions pas, ils changent.<br/>
+<strong>Et les autres aéroports ?</strong> Voir <a href="/blog/ou-prier-aeroports">notre guide complet des salles de prière d'aéroport</a>.</p>
+
+<h2>Aide la communauté</h2>
+<p>Tu as prié à Saint-Exupéry récemment ? Dis-nous <strong>les horaires réels affichés et si l'accès a changé</strong>. C'est exactement ce que nous ne pouvons pas produire seuls, et ce qui servira le plus aux vols du matin. <a href="/communaute/ajouter">→ Ajouter le lieu</a> · <a href="/communaute">→ Rejoindre la communauté</a></p>`,
   },
   {
     slug: "ou-prier-aeroport-nice",

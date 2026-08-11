@@ -55,19 +55,41 @@ requêtes ces pages sortent réellement.
 premier compteur renvoyait 0 partout) : 11 pages, 2 853 mots au total,
 soit 259 en moyenne. Disneyland est passée à 879, **CDG à 1 207**,
 **Orly à 1 249**, **guide aéroports à 1 134**, **gares de Paris à 940**,
-**Marseille à 814** ; restent Lyon 224, Bruxelles 221, Genève 208,
+**Marseille à 814**, **Lyon à 850** ; restent Bruxelles 221, Genève 208,
 Toulouse 193, Nice 185.
 Nos guides récents font 900 à 1 200 mots.
 Le modèle est en place : ce qu'on peut ajouter sans rien inventer, c'est
 la méthode (que demander, que faire si on dit non), les ablutions, la
 prière qui pose problème selon la saison, et l'aveu de ce qu'on ne sait
-pas. **Suivante à traiter : Lyon** (224 mots), puis Bruxelles (221).
+pas. **Suivante à traiter : Bruxelles** (221 mots), puis Genève (208).
 
 
 
 ---
 
 ## Fait
+
+### Lyon : la salle existe, mais elle est côté ville — 11 août
+Septième page « où prier » approfondie, la plus courte qui restait.
+**Avant** : 224 mots en français, 207 en anglais. **Après : 850 et 759.**
+
+**L'information qui manquait, et qui coûte cher** : le centre spirituel de
+Saint-Exupéry est **entre les deux terminaux**, donc **côté ville**. Une
+fois les contrôles passés, il est inaccessible — on ne repasse pas la
+sécurité pour prier. Aucune page ne le disait, et c'est pourtant le seul
+point qui décide de la journée du voyageur. Il est maintenant en tête, dans
+le titre de section et dans la description.
+
+**Cinquième page de la série où je trouve la même contradiction** : elle
+tranchait une question religieuse (« prière du voyageur raccourcie et
+regroupée »). C'était un réflexe de gabarit, pas un accident.
+
+**Horaires** : nous ne les publions pas. Ils sont affichés sur place et
+changent ; la page le dit au lieu d'inventer une plage.
+
+**Vérifié sur les deux domaines** : 11 h2 de chaque côté, titres à 56
+caractères, descriptions à 153 et 150, hreflang réciproque, 10 liens
+internes en 200 de chaque côté.
 
 ### Marseille : la seule page où la réponse est NON — 11 août
 Sixième page « où prier » approfondie. **Avant** : 250 mots, aucun jumeau
