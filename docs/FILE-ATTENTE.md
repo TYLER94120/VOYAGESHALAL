@@ -55,19 +55,42 @@ requêtes ces pages sortent réellement.
 premier compteur renvoyait 0 partout) : 11 pages, 2 853 mots au total,
 soit 259 en moyenne. Disneyland est passée à 879, **CDG à 1 207**,
 **Orly à 1 249**, **guide aéroports à 1 134**, **gares de Paris à 940**,
-**Marseille à 814**, **Lyon à 850**, **Bruxelles à 765**, **Genève à 789** ;
-restent Toulouse 193 et Nice 185.
+**Marseille à 814**, **Lyon à 850**, **Bruxelles à 765**, **Genève à 789**,
+**Toulouse à 811** ; reste **Nice** (185), la dernière.
 Nos guides récents font 900 à 1 200 mots.
 Le modèle est en place : ce qu'on peut ajouter sans rien inventer, c'est
 la méthode (que demander, que faire si on dit non), les ablutions, la
 prière qui pose problème selon la saison, et l'aveu de ce qu'on ne sait
-pas. **Suivantes, et dernières : Toulouse** (193 mots) puis **Nice** (185).
+pas. **Dernière à traiter : Nice** (185 mots).
 
 
 
 ---
 
 ## Fait
+
+### Toulouse : un espace au 3ᵉ étage, donc une question de temps — 11 août
+Dixième page « où prier » approfondie, et **création de sa version
+anglaise**, qui n'existait pas. **Avant** : 193 mots, aucun jumeau anglais.
+**Après : 811 mots en français, 747 en anglais.**
+
+**La contrainte que personne ne mentionne** : l'espace est au 3ᵉ étage du
+Hall C. Il faut y monter, prier, et redescendre. La vraie question n'est
+donc pas « où est-ce » mais « ai-je le temps ». La page donne la règle :
+**plus de 40 minutes, on monte ; en dessous, un coin calme près de la
+porte**, en rappelant que l'embarquement ferme 20 minutes avant le
+décollage.
+
+**Trois aveux au lieu de trois suppositions** : nous ne connaissons ni les
+horaires, ni la présence d'un espace d'ablutions, **ni si l'espace est
+avant ou après les contrôles** — et ce dernier point décide de tout. La
+page dit de le demander au comptoir information, avec le mot qui obtient
+une réponse (« espace de recueillement »).
+
+**Vérifié sur les deux domaines** : 10 h2 de chaque côté, titres à 54 et 50
+caractères, descriptions à 146 et 144, hreflang réciproque, 11 liens
+internes en 200 de chaque côté, page anglaise dans le sitemap EN et absente
+du sitemap FR.
 
 ### Genève : ce n'est pas une salle de prière, c'est une pièce partagée — 11 août
 Neuvième page « où prier » approfondie. **Avant** : 208 mots en français,
