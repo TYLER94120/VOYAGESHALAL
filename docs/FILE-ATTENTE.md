@@ -50,12 +50,6 @@ donc **ne rien conclure avant le 16**. Si le zéro persiste après cette
 date, le problème n'est pas le titre : il faudra regarder sur quelles
 requêtes ces pages sortent réellement.
 
-### 5. Étendre l'audit de langue aux 1 629 pages
-`scripts/audit-langue.mjs` échantillonne aujourd'hui 60 pages par domaine
-(120 sur 1 629, soit 7 %). Le seul défaut trouvé l'a été dans cet
-échantillon — il peut donc en rester ailleurs. À faire tourner en entier
-une fois, puis à brancher sur le build si le temps d'exécution le permet.
-
 ### 4. Les 10 pages « où prier » restantes sont courtes
 **Mesuré le 11 août, sur les pages rendues** (et non sur le code — mon
 premier compteur renvoyait 0 partout) : 11 pages, 2 853 mots au total,
@@ -75,6 +69,21 @@ de Paris (322).
 ---
 
 ## Fait
+
+### Audit de langue passé de 7 % à 100 % des pages — 11 août
+L'échantillon de 120 pages avait trouvé le défaut de `/privacy` ; restait à
+savoir s'il en cachait d'autres. **Mesuré maintenant sur la totalité des
+deux sitemaps : 813 pages sur voyageshalal.fr et 816 sur gohalaltravel.com,
+soit 1 629 pages — zéro défaut.**
+
+Aucune page servie dans la mauvaise langue, aucune page sans H1, aucune
+description absente, aucune page quasi vide sur les deux domaines.
+
+**Non branché sur le build, volontairement** : la passe complète prend
+plusieurs minutes et exige un serveur de production démarré. Le mode
+échantillon (60 pages par domaine, quelques secondes) reste l'outil de
+tous les jours ; la passe complète se relance à la main après tout
+changement de gabarit ou de traduction.
 
 ### La politique de confidentialité était en français sur le domaine anglais — 11 août
 **Trouvé en mesurant, pas en supposant.** Nouvel outil :
