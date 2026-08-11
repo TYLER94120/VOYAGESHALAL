@@ -13,16 +13,54 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 
 ## A faire
 
-> **Cycle 6 : audit.** Les trois elements bloques etaient les seuls restants, et
-> aucun n'attend du travail — un arbitrage, et deux fois le deploiement. Ce cycle
-> a donc mesure le site sur quatre points jamais mesures et en a tire **trois
-> elements, chacun avec son chiffre**. Ils passent devant les bloques.
+> **Cycles 6 et 10 : audits.** Quand les seuls elements restants sont bloques —
+> un arbitrage, deux fois le deploiement — le cycle sert a mesurer, pas a forcer
+> un blocage. Les elements 1 et 2 viennent de l'audit du cycle 10.
 >
-> **Mesure au cycle 6, et rien a corriger** — a ne pas re-mesurer sans raison :
-> **214 elements contiennent de l'arabe, 214 portent `lang="ar"` et `dir="rtl"`**,
-> zero nu.
+> **Mesure aux cycles 6 et 10, et rien a corriger** — a ne pas re-mesurer sans
+> raison :
+> - **214 elements contiennent de l'arabe, 214 portent `lang="ar"` et
+>   `dir="rtl"`**, zero nu.
+> - **La page des 114 sourates est complete** : 114 lignes, numerotees 1 a 114
+>   sans trou ni doublon, 114 noms arabes, 114 noms transcrits, aucune case vide.
+> - **Une lecon se termine entierement au clavier**, sans souris (126
+>   tabulations), et un style de focus visible est bien declare.
 
-1. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
+1. **Sans JavaScript, 57 commandes sont affichees et ne font rien.**
+   *Preuve :* mesure du 10 aout, cycle 10 — les 10 pages ouvertes avec
+   JavaScript **desactive**. Les 4 pages hors lecon sont propres (0 commande
+   morte). Les 6 lecons affichent **57 boutons inertes** : 10, 9, 11, 7, 10, 10.
+   Ce sont les options des questions — « Quatre | Six | Deux », « Le takbir | La
+   recitation | L'inclinaison » — plus « Voix lente » sur `al-fatiha`.
+   *Pourquoi c'est un defaut :* le site promet qu'« une lecon se lit d'un seul
+   tenant sans JavaScript, et c'est ce que Google indexe ». Or une carte de
+   question sans JavaScript, ce sont **trois boutons qui ne repondent pas et
+   aucune bonne reponse affichee** : ce n'est pas du contenu lisible, c'est un
+   mecanisme casse — et il est indexe comme tel. « Voix lente » est pire : il
+   promet un son qui n'arrivera jamais.
+   *Direction recommandee, a confirmer en la construisant :* ne pas masquer les
+   cartes de question (on perdrait du contenu indexable **exact**), mais les
+   rendre **lisibles comme un document** — la bonne reponse et son explication
+   visibles, le JavaScript les remasquant pour redevenir un test. Le bouton
+   « Voix lente », lui, doit simplement ne pas exister sans JavaScript, comme les
+   boutons de recitation qui n'apparaissent deja que si une source repond.
+
+2. **18 cibles tactiles sur 114 sont sous 44 px de haut.**
+   *Preuve :* mesure du 10 aout, cycle 10 — tous les liens et boutons visibles
+   des 10 pages, a 414x690. **114 cibles, 18 sous 44 px**, en 4 sortes. Trois
+   sont de vraies commandes autonomes :
+   - `a.marque` « Islam pas a pas », **20 px** — le retour a l'accueil, present
+     **sur les 10 pages** ;
+   - `a.jeton` « Aujourd'hui », **40 px** — l'autre commande de l'en-tete ;
+   - `a.s-lien` « La lecon », **42 px** — sur la page des sourates.
+   Les autres sont des liens **au fil d'une phrase** (16 px dans le pied, 21 px
+   dans une lecon), que la norme exempte : on ne peut pas donner 44 px a un mot
+   souligne au milieu d'un paragraphe. La charte du site demande **56 px** pour
+   un bouton ; l'en-tete est a 20.
+   *Deja rencontre :* c'est exactement le defaut du cycle 4, ou le lien de fin de
+   lecon faisait 19 px. Corrige la-bas seul ; jamais mesure ailleurs.
+
+3. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
    *Preuve :* c'est la piece la plus puissante de la liste du responsable, et
    elle est la seule non commencee. Le blocage est reel et non technique : une
    notification calee sur une heure de priere suppose de **connaitre** cette
@@ -34,7 +72,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    **N'entre pas en travaux avant arbitrage** — c'est une decision, pas un
    chantier.
 
-2. **Aucune mesure d'entree, et un traceur est interdit ici.**
+4. **Aucune mesure d'entree, et un traceur est interdit ici.**
    *Preuve :* `grep -ril "gtag\|analytics\|plausible\|matomo\|umami"` sur toutes
    les pages et les trois fichiers JavaScript ne rend **rien**. Or le pied de
    page promet « Ta progression reste sur ton telephone. Aucun compte, aucun
@@ -43,7 +81,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    journaux). Bloque jusqu'au deploiement — question posee aux trois autres
    agents dans le brainstorm des passerelles.
 
-3. **La recitation n'a jamais ete entendue par personne.**
+5. **La recitation n'a jamais ete entendue par personne.**
    *Preuve :* `halalgpt.fr:443` et `cdn.islamic.network:443` sont refuses par la
    politique reseau de l'atelier (403 au CONNECT, journalise par le proxy,
    verifie trois fois). Le mecanisme est teste avec un recitateur simule — 7
