@@ -2644,25 +2644,58 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     description: "Most major airports have a prayer room or multi-faith space — here is how to find them, plus our airport-by-airport guides.",
     coverImage: "/guides/blog-aeroports.jpg",
     category: 'Practical',
-    readTime: "5 min",
+    readTime: "7 min",
     publishedAt: '2026-08-01',
     lang: 'en',
     tags: ['prayer', 'airport', 'paris', 'muslim travel'],
     content: `
-<p>Flying should never force you to skip a prayer. Most major airports now have a prayer room or a multi-faith quiet space — you just need to know where to find it. This guide explains how to pray peacefully at the airport, with links to our detailed airport-by-airport pages.</p>
+<p>Flying should never force you to skip a prayer. Most major airports now have a quiet room — you just need to find it, know whether it is open, and know what to do when there is none. This guide gives the method; our airport pages give the locations.</p>
+
 <h2>The essentials in 30 seconds</h2>
-<p>Most airports offer one of three options: a multi-faith space (often with a Muslim corner and wudu facilities), a dedicated Muslim prayer room, or — when nothing is provided — a quiet corner where you can pray discreetly. Simple reflex: look for the "place of worship / prayer" pictogram on terminal maps, or ask any staff member for the "multi-faith room".</p>
-<h2>Before or after security</h2>
-<p>Some spaces are landside (before security), others airside (after). If your flight is within the hour, choose a space after security, in your departure zone. Our airport pages always tell you which side each room is on.</p>
-<h2>Wudu: the real challenge</h2>
-<p>Finding water is often harder than finding a mat. Three solutions: recent spaces include a wudu corner; otherwise restrooms work with discretion; and carrying a small wudu kit makes everything easier. Tayammum (dry ablution) remains a recognised option when water is genuinely unavailable.</p>
-<h2>Praying on time while traveling</h2>
-<p>The traveler (musafir) may shorten 4-rakat prayers to 2, and combine dhuhr with asr, maghrib with isha. Check the qibla (<a href="/qibla">our qibla tool</a> helps); many spaces already indicate it.</p>
+<p>Three situations, one reflex. The three: a <strong>multi-faith space</strong> (often with a Muslim corner and sometimes wudu facilities), a <strong>dedicated Muslim prayer room</strong> (rare), or <strong>nothing at all</strong> — more common than people expect. The reflex: ask at an information desk for the <strong>multi-faith room</strong>, using that exact wording.</p>
+
+<h2>The wording that gets an answer</h2>
+<p>This is the detail that saves ten minutes. In a French-speaking airport the signage says <strong>“lieu de culte”</strong> or <strong>“salle de recueillement”</strong> — almost never “prayer room”. In English it is <strong>“multi-faith room”</strong>. Use the local wording and staff will know instantly; use the other and you risk a genuinely puzzled shrug.</p>
+<p>The pictogram is nearly always the same: a kneeling figure or a plain diamond, on the overhead panels next to toilets and lifts. Look up instead of hunting for a door.</p>
+
+<h2>The five questions, in this order</h2>
+<p><strong>1. Which side of security am I on?</strong> This decides everything. A landside space is useless once you are in the departure zone: you do not go back through security to pray, or you queue all over again. An airside space is useless if you have just landed.<br/>
+<strong>2. Is it open at this hour?</strong> Many spaces close in the evening. For a night flight or a very early one, assume it will be shut.<br/>
+<strong>3. How much time do I really have?</strong> Boarding closes around <strong>20 minutes before departure</strong>. That is your deadline, not the time on the board.<br/>
+<strong>4. Where will I make wudu?</strong> Almost always harder than the prayer itself (see below).<br/>
+<strong>5. And if the answer is no?</strong> Prepare for it before you need it.</p>
+
+<h2>If the airport has nothing, or it is closed</h2>
+<p>A common case, especially at regional airports and off season. Three options, from the simplest down:</p>
+<p><strong>1. A quiet corner near your gate.</strong> Pier ends, gates for later departures and connecting corridors empty out between flights. A pocket mat and two minutes are enough, and nobody blinks.<br/>
+<strong>2. Landside, if you have not cleared security yet.</strong> Check-in areas off-peak are often calmer than departure lounges.<br/>
+<strong>3. Praying seated, at the gate or on board.</strong> When only a few minutes of the window are left, this is what many travellers do.</p>
+
+<h2>What we do not rule on</h2>
+<p>Shortening, combining, making up later, praying seated, tayammum when there is no water: these are <strong>religious questions</strong>, with differing opinions and conditions, and <strong>we do not answer them</strong>. It is not our role, and it would be dishonest to slip an answer into a practical guide. Put them to <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&amp;utm_medium=passerelle&amp;utm_campaign=airports-en" target="_blank" rel="noopener noreferrer">HalalGPT</a>, which is built for it, or to your local imam.</p>
+<p>What we can do is give you the exact window where you are: our <a href="/prayer-times">prayer times</a> still work without a signal once the page is open — which matters in a transit zone abroad.</p>
+
+<h2>Wudu: the real difficulty</h2>
+<p>Finding water is harder than finding a mat. Airport toilets are busy, basins are high, and sensor taps cut the water every three seconds. Two habits change everything:</p>
+<p>· fill <strong>a small squeezable bottle</strong> at the basin <em>before</em> going into the cubicle;<br/>
+· keep a <strong>microfibre towel</strong> in your cabin bag — it dries in minutes and takes no space.</p>
+<p>The accessible cubicle, when free, has a basin inside: leave it immediately if someone needs it. The full method is in our guide: <a href="/blog/wudu-on-a-plane-or-train">making wudu while travelling</a>.</p>
+
+<h2>The difficult prayer depends on your flight</h2>
+<p><strong>Fajr</strong> for early departures: the window ends at sunrise, often while you are checking in or queueing, and spaces rarely open before 07:00. <strong>Maghrib</strong> in winter: a short window at the peak of departures. <strong>Isha</strong> for evening flights: spaces often close before it. Checking the day's times <em>before leaving home</em> settles all three.</p>
+
+<h2>With children, a pushchair, a cabin bag</h2>
+<p>A <strong>pocket prayer mat is no problem at security</strong>: it is an ordinary item. Pack it along the side of the bag rather than at the bottom. And with a pushchair, crossing two terminals for a room you are not sure to find costs more than the quiet corner near your gate.</p>
+
+<h2>What we do not know</h2>
+<p>The locations we publish come from airports' public information and from traveller reports — <strong>we have not verified them ourselves on site</strong>, and airports are permanently under works. We will never publish a prayer room we have no trace of, even when an airport “ought” to have one. When we do not know, we write it.</p>
+
 <h2>Our airport guides</h2>
-<p><a href="/blog/where-to-pray-cdg-airport">Paris-Charles de Gaulle (CDG)</a> · <a href="/blog/where-to-pray-orly-airport">Paris-Orly</a> · <a href="/blog/where-to-pray-lyon-airport">Lyon-Saint-Exupery</a> · <a href="/blog/where-to-pray-nice-airport">Nice-Cote d'Azur</a> · <a href="/blog/where-to-pray-geneva-airport">Geneva</a> · <a href="/blog/where-to-pray-brussels-airport">Brussels-Zaventem</a></p>
-<p>In transit: <a href="/blog/praying-on-a-plane">how to pray on a plane</a> and <a href="/blog/praying-on-a-train">on a train</a>.</p>
+<p><a href="/blog/where-to-pray-cdg-airport">Paris-Charles de Gaulle (CDG)</a> · <a href="/blog/where-to-pray-orly-airport">Paris-Orly</a> · <a href="/blog/where-to-pray-lyon-airport">Lyon-Saint-Exupery</a> · <a href="/blog/where-to-pray-nice-airport">Nice-Cote d'Azur</a> · <a href="/blog/where-to-pray-geneva-airport">Geneva</a> · <a href="/blog/where-to-pray-brussels-airport">Brussels-Zaventem</a> · <a href="/blog/where-to-pray-disneyland-paris">Disneyland Paris</a></p>
+<p>In transit: <a href="/blog/praying-on-a-plane">how to pray on a plane</a> and <a href="/blog/praying-on-a-train">on a train</a>. See also <a href="/blog/halal-airline-meal-moml">the halal airline meal (MOML)</a>, <a href="/blog/prayer-times-on-a-plane-time-zones">which prayer time to follow in flight</a> and <a href="/blog/hijab-airport-security-check">the hijab at the security check</a>.</p>
+
 <h2>Help the community</h2>
-<p>Found a prayer room that moved, a good quiet corner, an update? Share it — every spot helps dozens of brothers and sisters pray while traveling, an ongoing sadaqa. <a href="/communaute">→ Join the community</a></p>
+<p>Have you prayed at an airport recently? Tell us <strong>which one, which terminal, which side of security, and whether it was open</strong>. Those are the three pieces of information missing everywhere, and they help the next traveller immediately. <a href="/communaute/ajouter">→ Add the place</a> · <a href="/communaute">→ Join the community</a></p>
 `,
   },
   {
@@ -3151,18 +3184,50 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     description: "CDG, Orly, Lyon, Nice, Marseille, Toulouse, Genève, Bruxelles : où se trouve la salle de prière de chaque aéroport, avant ou après les contrôles.",
     coverImage: "/guides/blog-aeroports.jpg",
     category: 'Pratique',
-    readTime: "6 min",
+    readTime: "8 min",
     publishedAt: '2026-07-20',
     tags: ["Aéroports", "Prière", "Voyage"],
-    content: `<p>Prendre l'avion ne devrait jamais t'obliger à sauter une prière. La plupart des grands aéroports disposent aujourd'hui d'une salle de prière ou d'un espace de recueillement multiconfessionnel — encore faut-il savoir où le trouver. Ce guide explique comment prier sereinement en aéroport, et renvoie vers nos fiches détaillées aéroport par aéroport.</p>
+    content: `<p>Prendre l'avion ne devrait jamais t'obliger à sauter une prière. La plupart des grands aéroports ont aujourd'hui un espace de recueillement — encore faut-il savoir le trouver, savoir s'il est ouvert, et savoir quoi faire quand il n'y en a pas. Ce guide donne la méthode ; nos fiches par aéroport donnent les emplacements.</p>
+
 <h2>L'essentiel en 30 secondes</h2>
-<p>La plupart des aéroports proposent une des trois options : un espace multiconfessionnel (souvent avec un coin musulman et un espace d'ablutions), une salle de prière musulmane dédiée, ou — quand rien n'est prévu — un coin calme où prier discrètement. Réflexe simple : repérer le pictogramme « lieu de culte / prière » sur les plans, ou demander à un agent « où est l'espace de recueillement ? ».</p>
-<h2>Avant / après les contrôles de sécurité</h2>
-<p>Certains espaces sont côté ville (avant les contrôles), d'autres en zone d'embarquement (après). Si ton vol est dans l'heure, privilégie un espace après la sécurité, dans ta zone de départ. Nos fiches précisent à chaque fois de quel côté se trouve chaque salle.</p>
+<p>Trois cas de figure, et un seul réflexe. Les trois cas : un <strong>espace multiconfessionnel</strong> (souvent avec un coin musulman et parfois des ablutions), une <strong>salle de prière musulmane dédiée</strong> (rare), ou <strong>rien du tout</strong> — et c'est plus fréquent qu'on ne le croit. Le réflexe : demander à un comptoir information <strong>« où est la salle de recueillement ? »</strong>, en employant ce mot-là.</p>
+
+<h2>Le vocabulaire qui obtient une réponse</h2>
+<p>C'est le détail qui fait gagner dix minutes. Dans un aéroport francophone, la signalétique dit <strong>« lieu de culte »</strong> ou <strong>« salle de recueillement »</strong> — presque jamais « salle de prière ». En anglais, c'est <strong>« multi-faith room »</strong> ou <strong>« prayer room »</strong>. Emploie le mot du pays et l'agent saura immédiatement de quoi tu parles ; emploie l'autre et tu risques un haussement d'épaules sincère.</p>
+<p>Le pictogramme, lui, est presque toujours le même : une silhouette agenouillée ou un simple losange, sur les panneaux suspendus, à côté des toilettes et des ascenseurs. Lève les yeux au lieu de chercher une porte.</p>
+
+<h2>Les cinq questions à se poser, dans cet ordre</h2>
+<p><strong>1. De quel côté des contrôles suis-je ?</strong> C'est la question qui décide de tout. Un espace côté ville ne te sert plus à rien une fois en zone d'embarquement : on ne repasse pas la sécurité pour aller prier, ou alors on refait toute la file. Un espace après les contrôles ne te sert à rien si tu viens d'atterrir.<br/>
+<strong>2. Est-ce ouvert à cette heure-ci ?</strong> Beaucoup d'espaces ferment le soir. Pour un vol de nuit ou un vol très matinal, pars du principe que ce sera fermé.<br/>
+<strong>3. Combien de temps me reste-t-il vraiment ?</strong> L'embarquement ferme environ <strong>20 minutes avant le décollage</strong>. C'est cette heure-là ta limite, pas celle affichée au tableau.<br/>
+<strong>4. Où ferai-je mes ablutions ?</strong> Presque toujours plus compliqué que la prière elle-même (voir plus bas).<br/>
+<strong>5. Et si la réponse est non ?</strong> Prépare-le avant d'en avoir besoin.</p>
+
+<h2>Si l'aéroport n'a rien, ou si c'est fermé</h2>
+<p>C'est un cas courant, surtout dans les aéroports régionaux et à basse saison. Trois solutions, de la plus simple à la moins confortable :</p>
+<p><strong>1. Un coin calme près de ta porte.</strong> Les extrémités de jetée, les salles d'embarquement des vols suivants et les couloirs de correspondance se vident entre deux départs. Un tapis de poche et deux minutes suffisent, et personne ne s'en étonne.<br/>
+<strong>2. Le côté ville, si tu n'as pas encore passé les contrôles.</strong> Les zones d'enregistrement en heures creuses sont souvent plus tranquilles que les salles d'embarquement.<br/>
+<strong>3. Prier assis, en salle ou dans l'avion.</strong> Quand il ne reste que quelques minutes de créneau, c'est ce que font beaucoup de voyageurs.</p>
+
+<h2>Ce que nous ne tranchons pas</h2>
+<p>Raccourcir, regrouper, rattraper plus tard, prier assis, faire le tayammoum quand l'eau manque : ce sont des <strong>questions religieuses</strong>, avec des avis et des conditions, et <strong>nous n'y répondons pas</strong>. Ce n'est pas notre rôle et ce serait malhonnête de le faire au détour d'un guide pratique. Pose-les à <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&amp;utm_medium=passerelle&amp;utm_campaign=aeroports" target="_blank" rel="noopener noreferrer">HalalGPT</a>, qui est fait pour ça, ou à l'imam de ta mosquée.</p>
+<p>Ce que nous pouvons faire, en revanche, c'est te donner l'heure exacte du créneau là où tu te trouves : nos <a href="/horaires-priere">horaires de prière</a> fonctionnent encore sans réseau une fois la page ouverte, ce qui compte quand on est en zone de transit à l'étranger.</p>
+
 <h2>Les ablutions : la vraie difficulté</h2>
-<p>Trouver de l'eau est souvent plus dur que trouver un tapis. Trois solutions : les espaces récents intègrent un coin ablutions ; sinon les toilettes font l'affaire avec discrétion ; enfin garder un petit nécessaire sur soi simplifie tout. Le tayammoum (ablution sèche) reste une option reconnue en cas d'impossibilité réelle.</p>
-<h2>Prier à l'heure quand on voyage</h2>
-<p>Le voyageur (musâfir) peut raccourcir les prières de 4 à 2 rakats, et regrouper dhuhr avec asr, maghrib avec isha. Pense à vérifier la qibla (<a href="/qibla">notre outil qibla</a> t'aide) ; beaucoup d'espaces l'indiquent déjà.</p>
+<p>Trouver de l'eau est plus dur que trouver un tapis. Les toilettes d'aéroport sont fréquentées, les lavabos sont hauts, et les robinets à capteur coupent l'eau toutes les trois secondes. Deux habitudes changent tout :</p>
+<p>· remplir <strong>une petite bouteille souple</strong> au lavabo <em>avant</em> d'entrer dans la cabine ;<br/>
+· garder une <strong>serviette microfibre</strong> dans le bagage cabine — elle sèche en quelques minutes et ne prend pas de place.</p>
+<p>La cabine pour personnes handicapées, quand elle est libre, a un lavabo à l'intérieur : laisse-la immédiatement si quelqu'un en a besoin. Le détail de la méthode est dans notre guide : <a href="/blog/ablutions-avion-train">faire ses ablutions en voyage</a>.</p>
+
+<h2>La prière qui pose problème dépend de ton vol</h2>
+<p><strong>Fajr</strong> pour les départs matinaux : le créneau se termine au lever du soleil, souvent pendant l'enregistrement ou la file de sécurité, et les espaces ouvrent rarement avant 7h. <strong>Maghrib</strong> en hiver : créneau court, au pic des départs. <strong>Isha</strong> pour les vols du soir : les espaces ferment souvent avant. Regarder les horaires du jour <em>avant de partir de chez toi</em> règle les trois cas.</p>
+
+<h2>Avec des enfants, une poussette, un bagage cabine</h2>
+<p>Un <strong>tapis de prière de poche ne pose aucun problème au contrôle</strong> : c'est un objet courant. Range-le sur le côté du sac plutôt qu'au fond. Et avec une poussette, traverser deux terminaux pour une salle qu'on n'est pas sûr de trouver coûte plus cher que le coin calme près de la porte.</p>
+
+<h2>Ce que nous ne savons pas</h2>
+<p>Les emplacements que nous publions viennent des informations publiques des aéroports et de témoignages de voyageurs — <strong>nous ne les avons pas vérifiés nous-mêmes sur place</strong>, et un aéroport est en travaux permanents. Nous ne publierons jamais une salle de prière dont nous n'avons pas trace, même si l'aéroport « devrait » en avoir une. Quand nous ne savons pas, nous l'écrivons.</p>
+
 <h2>Nos guides par aéroport</h2>
 <ul>
 <li><a href="/blog/ou-prier-aeroport-cdg">Où prier à l'aéroport de Paris-CDG</a></li>
@@ -3181,9 +3246,10 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <li><a href="/blog/ou-prier-stade-de-france">Où prier au Stade de France</a></li>
 </ul>
 <p>En transit ou en route : <a href="/blog/prier-en-avion">prier en avion</a>, <a href="/blog/prier-en-train">dans le train</a>, <a href="/blog/ou-prier-aire-autoroute">sur une aire d'autoroute</a> et <a href="/blog/ou-prier-centre-commercial">dans un centre commercial</a>.</p>
-<h2>Aide la communauté</h2><p>Tu as trouvé un coin prière dans un aéroport, une gare, un centre commercial ? Partage-le : chaque spot aide des dizaines de frères et sœurs à prier en voyage — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>
-<p><strong>À lire aussi :</strong> <a href="/blog/repas-halal-avion-moml">le repas halal en avion (MOML)</a> · <a href="/blog/heure-priere-avion-fuseaux">quelle heure de prière suivre en vol</a>.</p>
-<p><strong>À lire aussi :</strong> <a href="/blog/voile-controle-securite-aeroport">le voile au contrôle de sécurité</a>.</p>`,
+<p><strong>À lire aussi :</strong> <a href="/blog/repas-halal-avion-moml">le repas halal en avion (MOML)</a> · <a href="/blog/heure-priere-avion-fuseaux">quelle heure de prière suivre en vol</a> · <a href="/blog/voile-controle-securite-aeroport">le voile au contrôle de sécurité</a>.</p>
+
+<h2>Aide la communauté</h2>
+<p>Tu as prié dans un aéroport récemment ? Dis-nous <strong>lequel, dans quel terminal, de quel côté des contrôles, et si c'était ouvert</strong>. Ce sont les trois informations qui manquent partout, et elles servent immédiatement au voyageur suivant. <a href="/communaute/ajouter">→ Ajouter le lieu</a> · <a href="/communaute">→ Rejoindre la communauté</a></p>`,
   },
   {
     slug: "ou-prier-aeroport-cdg",
