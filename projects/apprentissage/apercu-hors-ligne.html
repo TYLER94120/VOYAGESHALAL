@@ -5136,6 +5136,29 @@ if (typeof module !== 'undefined' && module.exports) { module.exports = ippCoran
     } catch (e) { /* on n'empeche jamais la lecture d'une lecon */ }
   }
 
+  /* Le stockage marche-t-il vraiment ?
+
+     Tout le site continue de fonctionner quand il est refuse — chaque acces est
+     dans un try/catch. Mais continuer ne suffit pas : sans cette question, la
+     fin de lecon annoncait « tu as maintenant appris 0 choses » juste apres un
+     sans-faute, et promettait une revision qui n'arriverait jamais. Un compteur
+     qui ment est pire qu'un compteur absent.
+
+     On teste en ecrivant pour de vrai : sur iPhone en navigation privee, LIRE
+     peut reussir et ECRIRE lever. La cle d'essai est effacee aussitot. */
+  var _memoire = null;
+  function memoire() {
+    if (_memoire !== null) { return _memoire; }
+    try {
+      global.localStorage.setItem('ipp.essai', '1');
+      global.localStorage.removeItem('ipp.essai');
+      _memoire = true;
+    } catch (e) {
+      _memoire = false;
+    }
+    return _memoire;
+  }
+
   /* ---------- niveau de depart --------------------------------------------
      Trois questions, une seule fois, sans compte et sans inscription.
      But : ne pas faire apprendre a quelqu'un ce qu'il sait deja.
@@ -5505,6 +5528,7 @@ if (typeof module !== 'undefined' && module.exports) { module.exports = ippCoran
   global.IPP = {
     PARCOURS: PARCOURS,
     CATALOGUE: CATALOGUE,
+    memoire: memoire,
     nomParcours: nomParcours,
     aujourdhui: aujourdhui,
     dateLongue: dateLongue,
@@ -6549,7 +6573,12 @@ function ippDemarrerLecon(id, racine) {
     objectifFerme = !avant && IPP.objectifDuJour().atteint;
     var serie = IPP.serie();
     var total = IPP.acquis();
-    var reste = IPP.publiees().filter(function (l) { return !IPP.estFaite(l.id); }).length;
+    // On exclut la lecon qu'on vient de finir explicitement, et pas seulement
+    // via estFaite : sans stockage, estFaite reste faux et le site annoncait
+    // "6 autres lecons t'attendent" alors qu'il en reste 5.
+    var reste = IPP.publiees().filter(function (l) {
+      return l.id !== id && !IPP.estFaite(l.id);
+    }).length;
 
     var phrase = '';
     if (score.total) {
@@ -6568,15 +6597,26 @@ function ippDemarrerLecon(id, racine) {
         phrase += '. ';
       }
     }
-    phrase += 'Tu as maintenant appris ' + total + ' choses sur ce site. '
-            + 'Cette lecon reviendra dans ' + r.pas + (r.pas > 1 ? ' jours.' : ' jour.');
-    if (serie > 1) { phrase += ' ' + serie + ' jours d\'affilee.'; }
+    if (IPP.memoire()) {
+      phrase += 'Tu as maintenant appris ' + total + ' choses sur ce site. '
+              + 'Cette lecon reviendra dans ' + r.pas + (r.pas > 1 ? ' jours.' : ' jour.');
+      if (serie > 1) { phrase += ' ' + serie + ' jours d\'affilee.'; }
+    } else {
+      // Sans stockage, le total vaut 0 et la revision n'aura pas lieu. On ne
+      // dit donc ni l'un ni l'autre : on dit le fait, sans reproche et sans
+      // faire porter a la personne un probleme qui vient du navigateur.
+      phrase += 'Ce telephone n\'enregistre rien — souvent, c\'est la navigation '
+              + 'privee. Ce que tu viens d\'apprendre est a toi, mais le site ne '
+              + 's\'en souviendra pas. Pour garder ta progression, ouvre-le dans '
+              + 'une fenetre normale.';
+    }
 
     var cible = q('fin-texte');
     if (cible) { cible.textContent = phrase; }
 
     // C'est ici qu'on demande le rendez-vous quotidien : juste apres l'effort.
-    ippProposerMoment(q);
+    // Mais on ne demande pas un rendez-vous qu'on serait incapable de retenir.
+    if (IPP.memoire()) { ippProposerMoment(q); }
 
     var suite = q('fin-suite');
     if (suite) {

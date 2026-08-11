@@ -35,26 +35,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 >   double. Et les meta absentes de `chemin.html` (og, canonical) sont
 >   **coherentes** : cette page est en `noindex,follow`, c'est une page privee.
 
-1. **Quand le telephone refuse le stockage, l'ecran de fin annonce deux choses
-   fausses.**
-   *Preuve :* mesure du 10 aout, cycle 13 — `localStorage` rendu inaccessible
-   avant tout script, comme en navigation privee sur iPhone. Bonne nouvelle
-   d'abord : **les 10 pages restent lisibles, la lecon va jusqu'au bout, zero
-   erreur JavaScript** — les `try/catch` tiennent. Mais l'ecran de fin affiche,
-   apres une lecon reussie :
-   > « 2 sur 2 — sans faute. Tu as maintenant appris **0 choses** sur ce site.
-   > Cette lecon **reviendra dans 2 jours**. »
-   Les deux dernieres affirmations sont fausses : la personne vient d'apprendre
-   deux choses, et rien ne reviendra puisque rien n'a pu etre enregistre.
-   *Pourquoi ca compte plus qu'un detail :* « tu as appris 0 choses » juste
-   apres un sans-faute est un **compteur qui ment**, et la regle du site est
-   qu'un compteur enonce le fait exact. C'est aussi la seule phrase du site qui
-   pourrait decourager quelqu'un, et elle apparait au moment le plus fragile.
-   *Direction :* detecter une fois que le stockage est refuse, et alors **ne
-   rien annoncer** de ce qui depend de lui — ni total, ni revision — en le
-   disant simplement plutot qu'en affichant un zero.
-
-2. **Aucune page de lecon n'annonce son sujet dans un titre lisible.**
+1. **Aucune page de lecon n'annonce son sujet dans un titre lisible.**
    *Preuve :* mesure du 10 aout, cycle 13 — sur les 6 lecons, **5 n'ont aucun
    `<h1>`** : le titre de la lecon est un `<h2>` agrandi en style en ligne
    (`font-size:29px`). La sixieme, `al-fatiha`, en a un — mais
@@ -67,7 +48,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    page » pour un lecteur d'ecran comme pour Google, et ces pages sont les
    seules du site destinees a etre trouvees. Les 4 autres pages en ont un.
 
-3. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
+2. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
    *Preuve :* c'est la piece la plus puissante de la liste du responsable, et
    elle est la seule non commencee. Le blocage est reel et non technique : une
    notification calee sur une heure de priere suppose de **connaitre** cette
@@ -79,7 +60,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    **N'entre pas en travaux avant arbitrage** — c'est une decision, pas un
    chantier.
 
-4. **Aucune mesure d'entree, et un traceur est interdit ici.**
+3. **Aucune mesure d'entree, et un traceur est interdit ici.**
    *Preuve :* `grep -ril "gtag\|analytics\|plausible\|matomo\|umami"` sur toutes
    les pages et les trois fichiers JavaScript ne rend **rien**. Or le pied de
    page promet « Ta progression reste sur ton telephone. Aucun compte, aucun
@@ -88,7 +69,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    journaux). Bloque jusqu'au deploiement — question posee aux trois autres
    agents dans le brainstorm des passerelles.
 
-5. **La recitation n'a jamais ete entendue par personne.**
+4. **La recitation n'a jamais ete entendue par personne.**
    *Preuve :* `halalgpt.fr:443` et `cdn.islamic.network:443` sont refuses par la
    politique reseau de l'atelier (403 au CONNECT, journalise par le proxy,
    verifie trois fois). Le mecanisme est teste avec un recitateur simule — 7
@@ -100,6 +81,32 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 ---
 
 ## Fait
+
+- **Le site ne promet plus rien quand le telephone refuse d'enregistrer**
+  *(10 aout, cycle 14)* — **avant : 3 affirmations fausses sur l'ecran de fin.
+  Apres : 0.** `localStorage` rendu inaccessible avant tout script, comme en
+  navigation privee sur iPhone. Ce qui etait annonce apres une lecon reussie :
+  « Tu as maintenant appris **0 choses** sur ce site. Cette lecon **reviendra
+  dans 2 jours**. » — et **« 6 autres lecons t'attendent »** alors qu'il en
+  reste 5. S'y ajoutait un rendez-vous quotidien propose, que rien n'aurait pu
+  retenir.
+  *Ce qui est dit maintenant :* le score de la seance — il est vrai, il ne
+  depend de rien — puis « Ce telephone n'enregistre rien — souvent, c'est la
+  navigation privee. Ce que tu viens d'apprendre est a toi, mais le site ne s'en
+  souviendra pas. Pour garder ta progression, ouvre-le dans une fenetre
+  normale. » Le fait, la cause, et la sortie. **Aucun mot de reproche** — le
+  test echoue si l'un d'eux apparait.
+  *Une question posee une fois, et honnetement :* `IPP.memoire()` **ecrit** une
+  cle d'essai puis l'efface, au lieu de se fier a une lecture. Sur iPhone en
+  navigation privee, lire peut reussir et ecrire lever — tester la lecture
+  aurait repondu « tout va bien » juste avant de tout perdre.
+  *Un quatrieme mensonge trouve en corrigeant :* le compte des lecons restantes
+  excluait la lecon courante **via** `estFaite`, qui reste faux sans stockage.
+  Il l'exclut maintenant par son identifiant — juste dans les deux cas.
+  *Verrou :* `test-sans-memoire.mjs`, **19 controles**, joue le site dans les
+  deux mondes : avec stockage, rien ne doit changer (total, revision et
+  rendez-vous toujours annonces) ; sans stockage, rien ne doit etre promis.
+  Verifie dans les deux sens — il **echoue 5 fois** sur la version d'avant.
 
 - **Chaque commande du site est atteignable au doigt** *(10 aout, cycle 12)* —
   **avant : 8 commandes autonomes sous 44 px de haut. Apres : 0**, sur les 114
