@@ -1304,7 +1304,12 @@ function ippRearmerQuiz(etape) {
     opts[i].disabled = false;
     opts[i].classList.remove('juste', 'faux');
   }
-  if (retour) { retour.hidden = true; retour.textContent = ''; }
+  // On remet l'explication telle qu'elle est ecrite dans la page, et on retire
+  // "repondu" : la carte redevient une question posee.
+  if (retour) {
+    retour.className = 'q-retour';
+    retour.textContent = etape.__explique || '';
+  }
   ippMelanger(choix, opts);
 
   // On dit pourquoi elle revient. "On la revoit" est une invitation ; ce
@@ -1323,6 +1328,14 @@ function ippPreparerQuiz(etape, bouton, score, sonner, surFaux) {
   var choix = etape.querySelector('.q-choix');
   var retour = etape.querySelector('[data-r-retour]');
   if (!choix) { return; }
+
+  // L'explication est ECRITE dans la page, pas rangee dans un attribut : sans
+  // JavaScript elle se lit, et la carte reste un document au lieu d'etre trois
+  // boutons muets. On la retient ici ; le CSS la remasque tant qu'on n'a pas
+  // repondu, donc avec JavaScript la carte redevient un test.
+  if (retour && etape.__explique === undefined) {
+    etape.__explique = retour.textContent.trim();
+  }
 
   var opts = [].slice.call(etape.querySelectorAll('.q-opt'));
   ippMelanger(choix, opts);
@@ -1348,9 +1361,9 @@ function ippPreparerQuiz(etape, bouton, score, sonner, surFaux) {
     var reviendra = !juste && etape.__passages < IPP_PASSAGES_MAX;
 
     if (retour) {
-      retour.hidden = false;
-      retour.className = 'q-retour ' + (juste ? 'ok' : 'non');
-      var explique = etape.getAttribute('data-explique') || '';
+      // "repondu" est ce qui rend le retour visible en mode pilote.
+      retour.className = 'q-retour repondu ' + (juste ? 'ok' : 'non');
+      var explique = etape.__explique || '';
       var tete;
       if (juste && reprise) { tete = 'Voila — tu l\'as. '; }
       else if (juste) { tete = 'Oui. '; }
@@ -1429,8 +1442,10 @@ function ippBrancherVoixLente(q) {
   var b = q('voix-lente');
   if (!b) { return; }
 
-  // Sans audio-coran.js, le bouton ne promet rien : il disparait.
+  // Le bouton est cache dans la page : sans JavaScript il promettrait un son
+  // qui n'arriverait jamais. Il n'apparait que si audio-coran.js est la.
   if (typeof ippCoran === 'undefined') { b.hidden = true; return; }
+  b.hidden = false;
 
   var note = q('voix-note');
 

@@ -123,7 +123,9 @@
 
         <!-- La voix lente : celle des ecoles coraniques. C'est avec elle qu'on
              apprend, pas avec une recitation rapide. -->
-        <button class="btn fantome" type="button" data-r="voix-lente">Voix lente</button>
+        <!-- Cache par defaut : sans JavaScript il promettrait un son qui
+             n'arriverait jamais. C'est app.js qui le montre. -->
+        <button class="btn fantome" type="button" data-r="voix-lente" hidden>Voix lente</button>
         <p class="note-pied" data-r="voix-note"></p>
       </section>
 
@@ -156,8 +158,7 @@
       </section>
 
       <!-- test : question 2 -->
-      <section class="etape carte-quiz" data-etape="4" data-quiz
-               data-explique="Sept, et tu les recites dans chaque unite de priere.">
+      <section class="etape carte-quiz" data-etape="4" data-quiz>
         <span class="eyebrow">Question 1 sur 3</span>
         <h2>Combien Al-Fatiha compte-t-elle de versets&nbsp;?</h2>
         <div class="q-choix">
@@ -165,7 +166,7 @@
         <button class="q-opt" type="button">Cinq</button>
         <button class="q-opt" type="button">Dix</button>
         </div>
-        <p class="q-retour" data-r-retour hidden></p>
+        <p class="q-retour" data-r-retour>Sept, et tu les recites dans chaque unite de priere.</p>
       </section>
 
       <!-- 4 : verset 2 -->
@@ -281,8 +282,7 @@
       </section>
 
       <!-- test : question 3 -->
-      <section class="etape carte-quiz" data-etape="9" data-quiz
-               data-explique="En arabe, l'ordre des mots porte le sens.">
+      <section class="etape carte-quiz" data-etape="9" data-quiz>
         <span class="eyebrow">Question 2 sur 3</span>
         <h2>Au verset 5, pourquoi &laquo;&nbsp;Toi&nbsp;&raquo; est-il place avant le verbe&nbsp;?</h2>
         <div class="q-choix">
@@ -290,7 +290,7 @@
         <button class="q-opt" type="button">Parce que l'arabe place toujours ce mot en premier</button>
         <button class="q-opt" type="button">Parce que c'est plus court a reciter</button>
         </div>
-        <p class="q-retour" data-r-retour hidden></p>
+        <p class="q-retour" data-r-retour>En arabe, l'ordre des mots porte le sens.</p>
       </section>
 
       <!-- 8 : verset 6 -->
@@ -322,8 +322,7 @@
       </section>
 
       <!-- test : question 1 -->
-      <section class="etape carte-quiz" data-etape="11" data-quiz
-               data-explique="C'est la seule demande de toute la sourate, au verset 6.">
+      <section class="etape carte-quiz" data-etape="11" data-quiz>
         <span class="eyebrow">Question 3 sur 3</span>
         <h2>Que demande-t-on dans Al-Fatiha&nbsp;?</h2>
         <div class="q-choix">
@@ -331,7 +330,7 @@
         <button class="q-opt" type="button">La sante et l'argent</button>
         <button class="q-opt" type="button">La victoire sur les ennemis</button>
         </div>
-        <p class="q-retour" data-r-retour hidden></p>
+        <p class="q-retour" data-r-retour>C'est la seule demande de toute la sourate, au verset 6.</p>
       </section>
 
       <!-- 9 : verset 7 -->

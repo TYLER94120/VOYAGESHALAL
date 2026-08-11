@@ -26,26 +26,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 > - **Une lecon se termine entierement au clavier**, sans souris (126
 >   tabulations), et un style de focus visible est bien declare.
 
-1. **Sans JavaScript, 57 commandes sont affichees et ne font rien.**
-   *Preuve :* mesure du 10 aout, cycle 10 — les 10 pages ouvertes avec
-   JavaScript **desactive**. Les 4 pages hors lecon sont propres (0 commande
-   morte). Les 6 lecons affichent **57 boutons inertes** : 10, 9, 11, 7, 10, 10.
-   Ce sont les options des questions — « Quatre | Six | Deux », « Le takbir | La
-   recitation | L'inclinaison » — plus « Voix lente » sur `al-fatiha`.
-   *Pourquoi c'est un defaut :* le site promet qu'« une lecon se lit d'un seul
-   tenant sans JavaScript, et c'est ce que Google indexe ». Or une carte de
-   question sans JavaScript, ce sont **trois boutons qui ne repondent pas et
-   aucune bonne reponse affichee** : ce n'est pas du contenu lisible, c'est un
-   mecanisme casse — et il est indexe comme tel. « Voix lente » est pire : il
-   promet un son qui n'arrivera jamais.
-   *Direction recommandee, a confirmer en la construisant :* ne pas masquer les
-   cartes de question (on perdrait du contenu indexable **exact**), mais les
-   rendre **lisibles comme un document** — la bonne reponse et son explication
-   visibles, le JavaScript les remasquant pour redevenir un test. Le bouton
-   « Voix lente », lui, doit simplement ne pas exister sans JavaScript, comme les
-   boutons de recitation qui n'apparaissent deja que si une source repond.
-
-2. **18 cibles tactiles sur 114 sont sous 44 px de haut.**
+1. **18 cibles tactiles sur 114 sont sous 44 px de haut.**
    *Preuve :* mesure du 10 aout, cycle 10 — tous les liens et boutons visibles
    des 10 pages, a 414x690. **114 cibles, 18 sous 44 px**, en 4 sortes. Trois
    sont de vraies commandes autonomes :
@@ -60,7 +41,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    *Deja rencontre :* c'est exactement le defaut du cycle 4, ou le lien de fin de
    lecon faisait 19 px. Corrige la-bas seul ; jamais mesure ailleurs.
 
-3. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
+2. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
    *Preuve :* c'est la piece la plus puissante de la liste du responsable, et
    elle est la seule non commencee. Le blocage est reel et non technique : une
    notification calee sur une heure de priere suppose de **connaitre** cette
@@ -72,7 +53,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    **N'entre pas en travaux avant arbitrage** — c'est une decision, pas un
    chantier.
 
-4. **Aucune mesure d'entree, et un traceur est interdit ici.**
+3. **Aucune mesure d'entree, et un traceur est interdit ici.**
    *Preuve :* `grep -ril "gtag\|analytics\|plausible\|matomo\|umami"` sur toutes
    les pages et les trois fichiers JavaScript ne rend **rien**. Or le pied de
    page promet « Ta progression reste sur ton telephone. Aucun compte, aucun
@@ -81,7 +62,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    journaux). Bloque jusqu'au deploiement — question posee aux trois autres
    agents dans le brainstorm des passerelles.
 
-5. **La recitation n'a jamais ete entendue par personne.**
+4. **La recitation n'a jamais ete entendue par personne.**
    *Preuve :* `halalgpt.fr:443` et `cdn.islamic.network:443` sont refuses par la
    politique reseau de l'atelier (403 au CONNECT, journalise par le proxy,
    verifie trois fois). Le mecanisme est teste avec un recitateur simule — 7
@@ -93,6 +74,30 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 ---
 
 ## Fait
+
+- **Une lecon se lit vraiment sans JavaScript** *(10 aout, cycle 11)* —
+  **avant : 52 commandes pressables qui ne repondent a rien, 0 question sur 17
+  montrant sa bonne reponse, 0 sur 17 montrant son explication. Apres : 0, 17
+  sur 17, 17 sur 17.** Mesure sur les 10 pages servies, JavaScript desactive, et
+  **la version d'avant re-mesuree avec le meme harnais** pour que les deux
+  chiffres se comparent.
+  *Trois changements.* (1) L'explication quittait un attribut `data-explique`,
+  invisible a la lecture ; elle est maintenant **ecrite dans la page**, une
+  seule source, lisible par un humain comme par Google. (2) Sans JavaScript, une
+  option n'est plus un bouton : elle devient une ligne de liste, et **la bonne
+  reponse est dite** au lieu d'etre devinee. (3) « Voix lente » est cache par
+  defaut et revele par le script — sans JavaScript il promettait un son qui
+  n'arrivait jamais.
+  *Et l'inverse est verifie :* avec JavaScript, **0 explication ne fuit avant la
+  reponse** et **17 sur 17 apparaissent apres**. La carte redevient un test ;
+  sinon on aurait repare la lecture en cassant l'apprentissage.
+  *Correction d'un chiffre que j'avais publie.* Le cycle 10 annoncait **57**
+  commandes mortes. Ce chiffre venait d'un harnais qui mesurait **avant que la
+  feuille de style soit analysee** : deux passages de suite ont accuse des
+  lecons differentes d'etre cassees, puis compte 37 puis 10 sur un site
+  identique. Le harnais attend desormais que `style.css` soit reellement en
+  place — condition neutre, qui ne presume pas du resultat — et donne **trois
+  fois le meme resultat**. Le chiffre juste est **52**, il remplace 57.
 
 - **Le site annonce le nombre de cartes qu'il montre vraiment** *(10 aout,
   cycle 9)* — **avant : 6 lecons sur 6 annoncaient un chiffre que la barre de

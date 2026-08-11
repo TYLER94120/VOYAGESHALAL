@@ -1112,6 +1112,47 @@ a.lien-bas:hover { color: var(--creme); }
 .q-retour.ok { color: var(--or-clair); }
 .q-retour.non { color: var(--texte-2); }
 
+/* ---------- la question sans JavaScript ----------
+   La regle du site : une lecon se lit d'un seul tenant sans JavaScript, et
+   c'est ce que Google indexe. Une carte de question y etait pourtant trois
+   boutons qui ne repondent pas, sans jamais montrer la bonne reponse : un
+   mecanisme casse, pas du contenu. Ici elle redevient un document.
+
+   `.pilote` est posee par app.js. Tout ce qui suit ne s'applique donc QUE
+   lorsque le JavaScript n'a pas pris la main. */
+
+/* Une option qu'on ne peut pas presser ne doit pas avoir l'air pressable. */
+.etapes:not(.pilote) .q-opt {
+  cursor: default;
+  pointer-events: none;
+  min-height: 0;
+  padding: 12px 0 12px 26px;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-size: 16px;
+  color: var(--texte-2);
+  position: relative;
+}
+.etapes:not(.pilote) .q-opt::before {
+  content: '\2022';
+  position: absolute;
+  left: 6px;
+  color: var(--texte-3);
+}
+/* La bonne reponse est dite, pas devinee. */
+.etapes:not(.pilote) .q-opt[data-bonne] { color: var(--or-clair); font-weight: 600; }
+.etapes:not(.pilote) .q-opt[data-bonne]::before { content: '\2713'; color: var(--or); }
+.etapes:not(.pilote) .q-opt[data-bonne]::after {
+  content: ' \2014 la bonne reponse';
+  color: var(--texte-2);
+  font-weight: 400;
+}
+
+/* Avec JavaScript, l'explication se cache jusqu'a la reponse : sinon elle
+   donnerait la solution avant qu'on ait cherche. */
+.etapes.pilote .q-retour:not(.repondu) { display: none; }
+
 /* ---------- bouton d'ecoute (apparait seulement si un fichier existe) ---------- */
 
 .ecouter {
@@ -1488,7 +1529,9 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
 
         <!-- La voix lente : celle des ecoles coraniques. C'est avec elle qu'on
              apprend, pas avec une recitation rapide. -->
-        <button class="btn fantome" type="button" data-r="voix-lente">Voix lente</button>
+        <!-- Cache par defaut : sans JavaScript il promettrait un son qui
+             n'arriverait jamais. C'est app.js qui le montre. -->
+        <button class="btn fantome" type="button" data-r="voix-lente" hidden>Voix lente</button>
         <p class="note-pied" data-r="voix-note"></p>
       </section>
 
@@ -1521,8 +1564,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
       </section>
 
       <!-- test : question 2 -->
-      <section class="etape carte-quiz" data-etape="4" data-quiz
-               data-explique="Sept, et tu les recites dans chaque unite de priere.">
+      <section class="etape carte-quiz" data-etape="4" data-quiz>
         <span class="eyebrow">Question 1 sur 3</span>
         <h2>Combien Al-Fatiha compte-t-elle de versets&nbsp;?</h2>
         <div class="q-choix">
@@ -1530,7 +1572,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
         <button class="q-opt" type="button">Cinq</button>
         <button class="q-opt" type="button">Dix</button>
         </div>
-        <p class="q-retour" data-r-retour hidden></p>
+        <p class="q-retour" data-r-retour>Sept, et tu les recites dans chaque unite de priere.</p>
       </section>
 
       <!-- 4 : verset 2 -->
@@ -1646,8 +1688,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
       </section>
 
       <!-- test : question 3 -->
-      <section class="etape carte-quiz" data-etape="9" data-quiz
-               data-explique="En arabe, l'ordre des mots porte le sens.">
+      <section class="etape carte-quiz" data-etape="9" data-quiz>
         <span class="eyebrow">Question 2 sur 3</span>
         <h2>Au verset 5, pourquoi &laquo;&nbsp;Toi&nbsp;&raquo; est-il place avant le verbe&nbsp;?</h2>
         <div class="q-choix">
@@ -1655,7 +1696,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
         <button class="q-opt" type="button">Parce que l'arabe place toujours ce mot en premier</button>
         <button class="q-opt" type="button">Parce que c'est plus court a reciter</button>
         </div>
-        <p class="q-retour" data-r-retour hidden></p>
+        <p class="q-retour" data-r-retour>En arabe, l'ordre des mots porte le sens.</p>
       </section>
 
       <!-- 8 : verset 6 -->
@@ -1687,8 +1728,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
       </section>
 
       <!-- test : question 1 -->
-      <section class="etape carte-quiz" data-etape="11" data-quiz
-               data-explique="C'est la seule demande de toute la sourate, au verset 6.">
+      <section class="etape carte-quiz" data-etape="11" data-quiz>
         <span class="eyebrow">Question 3 sur 3</span>
         <h2>Que demande-t-on dans Al-Fatiha&nbsp;?</h2>
         <div class="q-choix">
@@ -1696,7 +1736,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
         <button class="q-opt" type="button">La sante et l'argent</button>
         <button class="q-opt" type="button">La victoire sur les ennemis</button>
         </div>
-        <p class="q-retour" data-r-retour hidden></p>
+        <p class="q-retour" data-r-retour>C'est la seule demande de toute la sourate, au verset 6.</p>
       </section>
 
       <!-- 9 : verset 7 -->
@@ -1883,8 +1923,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
         </div>
       </section>
       <!-- question -->
-      <section class="etape carte-quiz" data-etape="4" data-quiz
-               data-explique="Le pardon : le Prophete l'a appelee la meilleure facon de demander pardon.">
+      <section class="etape carte-quiz" data-etape="4" data-quiz>
         <span class="eyebrow">Question 1 sur 2</span>
         <h2>La premiere invocation est appelee <em>sayyid al-istighfar</em>. Que demande-t-elle&nbsp;?</h2>
         <div class="q-choix">
@@ -1892,7 +1931,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
         <button class="q-opt" type="button">La subsistance</button>
         <button class="q-opt" type="button">La protection contre le mal</button>
         </div>
-        <p class="q-retour" data-r-retour hidden></p>
+        <p class="q-retour" data-r-retour>Le pardon : le Prophete l'a appelee la meilleure facon de demander pardon.</p>
       </section>
 
 
@@ -1952,8 +1991,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
         </p>
       </section>
       <!-- question -->
-      <section class="etape carte-quiz" data-etape="8" data-quiz
-               data-explique="Cent fois dans la journee, pour &laquo;&nbsp;Soubhana Llahi wa bihamdih&nbsp;&raquo;.">
+      <section class="etape carte-quiz" data-etape="8" data-quiz>
         <span class="eyebrow">Question 2 sur 2</span>
         <h2>Pour la plus courte, combien de fois le hadith mentionne-t-il&nbsp;?</h2>
         <div class="q-choix">
@@ -1961,7 +1999,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
         <button class="q-opt" type="button">Trois fois le matin</button>
         <button class="q-opt" type="button">Sept fois apres la priere</button>
         </div>
-        <p class="q-retour" data-r-retour hidden></p>
+        <p class="q-retour" data-r-retour>Cent fois dans la journee, pour &laquo;&nbsp;Soubhana Llahi wa bihamdih&nbsp;&raquo;.</p>
       </section>
 
 
@@ -2102,8 +2140,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
         </div>
       </section>
       <!-- question -->
-      <section class="etape carte-quiz" data-etape="4" data-quiz
-               data-explique="Quatre : Allah, Ses anges, Ses livres et Ses messagers, dans Al-Baqara (2), verset 285.">
+      <section class="etape carte-quiz" data-etape="4" data-quiz>
         <span class="eyebrow">Question 1 sur 3</span>
         <h2>Combien de ces six piliers sont reunis dans un seul verset&nbsp;?</h2>
         <div class="q-choix">
@@ -2111,7 +2148,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
         <button class="q-opt" type="button">Six</button>
         <button class="q-opt" type="button">Deux</button>
         </div>
-        <p class="q-retour" data-r-retour hidden></p>
+        <p class="q-retour" data-r-retour>Quatre : Allah, Ses anges, Ses livres et Ses messagers, dans Al-Baqara (2), verset 285.</p>
       </section>
 
 
@@ -2175,8 +2212,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
         </div>
       </section>
       <!-- question -->
-      <section class="etape carte-quiz" data-etape="9" data-quiz
-               data-explique="En tous. La lecon le dit : on ne choisit pas entre eux.">
+      <section class="etape carte-quiz" data-etape="9" data-quiz>
         <span class="eyebrow">Question 2 sur 3</span>
         <h2>Croire en Ses messagers, c'est croire&hellip;</h2>
         <div class="q-choix">
@@ -2184,7 +2220,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
         <button class="q-opt" type="button">Seulement au dernier</button>
         <button class="q-opt" type="button">Seulement a ceux que le Coran nomme</button>
         </div>
-        <p class="q-retour" data-r-retour hidden></p>
+        <p class="q-retour" data-r-retour>En tous. La lecon le dit : on ne choisit pas entre eux.</p>
       </section>
 
 
@@ -2231,8 +2267,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
         </p>
       </section>
       <!-- question -->
-      <section class="etape carte-quiz" data-etape="12" data-quiz
-               data-explique="&laquo;&nbsp;En son bien et en son mal&nbsp;&raquo; : c'est la formule exacte du hadith.">
+      <section class="etape carte-quiz" data-etape="12" data-quiz>
         <span class="eyebrow">Question 3 sur 3</span>
         <h2>Le hadith precise que le decret concerne&hellip;</h2>
         <div class="q-choix">
@@ -2240,7 +2275,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
         <button class="q-opt" type="button">Seulement son bien</button>
         <button class="q-opt" type="button">Seulement ce qu'on ne peut pas eviter</button>
         </div>
-        <p class="q-retour" data-r-retour hidden></p>
+        <p class="q-retour" data-r-retour>&laquo;&nbsp;En son bien et en son mal&nbsp;&raquo; : c'est la formule exacte du hadith.</p>
       </section>
 
 
@@ -2391,8 +2426,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
         </div>
       </section>
       <!-- question -->
-      <section class="etape carte-quiz" data-etape="4" data-quiz
-               data-explique="Le takbir : &laquo;&nbsp;Quand tu te leves pour la priere, dis le takbir.&nbsp;&raquo;">
+      <section class="etape carte-quiz" data-etape="4" data-quiz>
         <span class="eyebrow">Question 1 sur 3</span>
         <h2>Quel est le premier geste de la priere&nbsp;?</h2>
         <div class="q-choix">
@@ -2400,7 +2434,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
         <button class="q-opt" type="button">La recitation</button>
         <button class="q-opt" type="button">L'inclinaison</button>
         </div>
-        <p class="q-retour" data-r-retour hidden></p>
+        <p class="q-retour" data-r-retour>Le takbir : &laquo;&nbsp;Quand tu te leves pour la priere, dis le takbir.&nbsp;&raquo;</p>
       </section>
 
 
@@ -2507,8 +2541,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
         </div>
       </section>
       <!-- question -->
-      <section class="etape carte-quiz" data-etape="9" data-quiz
-               data-explique="On se redresse, et completement : &laquo;&nbsp;jusqu'a etre droit debout&nbsp;&raquo;, avant de descendre.">
+      <section class="etape carte-quiz" data-etape="9" data-quiz>
         <span class="eyebrow">Question 2 sur 3</span>
         <h2>Entre l'inclinaison et la prosternation, que fait-on&nbsp;?</h2>
         <div class="q-choix">
@@ -2516,7 +2549,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
         <button class="q-opt" type="button">On s'assoit</button>
         <button class="q-opt" type="button">On se prosterne directement</button>
         </div>
-        <p class="q-retour" data-r-retour hidden></p>
+        <p class="q-retour" data-r-retour>On se redresse, et completement : &laquo;&nbsp;jusqu'a etre droit debout&nbsp;&raquo;, avant de descendre.</p>
       </section>
 
 
@@ -2561,8 +2594,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
         </div>
       </section>
       <!-- question -->
-      <section class="etape carte-quiz" data-etape="12" data-quiz
-               data-explique="Sept : takbir, recitation, inclinaison, redressement, prosternation, assise, prosternation.">
+      <section class="etape carte-quiz" data-etape="12" data-quiz>
         <span class="eyebrow">Question 3 sur 3</span>
         <h2>Combien de gestes forment une unite de priere&nbsp;?</h2>
         <div class="q-choix">
@@ -2570,7 +2602,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
         <button class="q-opt" type="button">Cinq</button>
         <button class="q-opt" type="button">Neuf</button>
         </div>
-        <p class="q-retour" data-r-retour hidden></p>
+        <p class="q-retour" data-r-retour>Sept : takbir, recitation, inclinaison, redressement, prosternation, assise, prosternation.</p>
       </section>
 
 
@@ -2735,8 +2767,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
         </p>
       </section>
       <!-- question -->
-      <section class="etape carte-quiz" data-etape="3" data-quiz
-               data-explique="18 : beaucoup de lettres partagent le meme dessin, et ce sont les points qui les distinguent.">
+      <section class="etape carte-quiz" data-etape="3" data-quiz>
         <span class="eyebrow">Question 1 sur 3</span>
         <h2>28 lettres, mais combien de dessins differents a retenir&nbsp;?</h2>
         <div class="q-choix">
@@ -2744,7 +2775,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
         <button class="q-opt" type="button">28</button>
         <button class="q-opt" type="button">12</button>
         </div>
-        <p class="q-retour" data-r-retour hidden></p>
+        <p class="q-retour" data-r-retour>18 : beaucoup de lettres partagent le meme dessin, et ce sont les points qui les distinguent.</p>
       </section>
 
 
@@ -2832,8 +2863,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
         </div>
       </section>
       <!-- question -->
-      <section class="etape carte-quiz" data-etape="8" data-quiz
-               data-explique="Le meme dessin, et les points : 1 dessous, 2 dessus, 3 dessus.">
+      <section class="etape carte-quiz" data-etape="8" data-quiz>
         <span class="eyebrow">Question 2 sur 3</span>
         <h2>Qu'est-ce qui distingue <span class="ar-petit" lang="ar" dir="rtl">ب</span>, <span class="ar-petit" lang="ar" dir="rtl">ت</span> et <span class="ar-petit" lang="ar" dir="rtl">ث</span>&nbsp;?</h2>
         <div class="q-choix">
@@ -2841,7 +2871,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
         <button class="q-opt" type="button">La taille du dessin</button>
         <button class="q-opt" type="button">Le sens de lecture</button>
         </div>
-        <p class="q-retour" data-r-retour hidden></p>
+        <p class="q-retour" data-r-retour>Le meme dessin, et les points : 1 dessous, 2 dessus, 3 dessus.</p>
       </section>
 
 
@@ -2945,8 +2975,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
         </div>
       </section>
       <!-- question -->
-      <section class="etape carte-quiz" data-etape="13" data-quiz
-               data-explique="Six. Quand tu en vois une, le mot se coupe visuellement apres elle.">
+      <section class="etape carte-quiz" data-etape="13" data-quiz>
         <span class="eyebrow">Question 3 sur 3</span>
         <h2>Combien de lettres ne s'attachent jamais a la suivante&nbsp;?</h2>
         <div class="q-choix">
@@ -2954,7 +2983,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
         <button class="q-opt" type="button">Trois</button>
         <button class="q-opt" type="button">Douze</button>
         </div>
-        <p class="q-retour" data-r-retour hidden></p>
+        <p class="q-retour" data-r-retour>Six. Quand tu en vois une, le mot se coupe visuellement apres elle.</p>
       </section>
 
 
@@ -3108,8 +3137,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
       </section>
 
       <!-- test : question 1 -->
-      <section class="etape carte-quiz" data-etape="4" data-quiz
-               data-explique="C'est le passage le plus dense du Coran sur les prophetes.">
+      <section class="etape carte-quiz" data-etape="4" data-quiz>
         <span class="eyebrow">Question 1 sur 3</span>
         <h2>Quel passage nomme dix-sept prophetes d'affilee&nbsp;?</h2>
         <div class="q-choix">
@@ -3117,7 +3145,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
         <button class="q-opt" type="button">Sourate Al-Fatiha, versets 1 a 7</button>
         <button class="q-opt" type="button">Sourate Al-Baqara, verset 255</button>
         </div>
-        <p class="q-retour" data-r-retour hidden></p>
+        <p class="q-retour" data-r-retour>C'est le passage le plus dense du Coran sur les prophetes.</p>
       </section>
 
       <!-- 4 : les dix-sept, en clair -->
@@ -3188,8 +3216,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
       </section>
 
       <!-- test : question 2 -->
-      <section class="etape carte-quiz" data-etape="8" data-quiz
-               data-explique="Sourate Al-Ahzab, verset 40.">
+      <section class="etape carte-quiz" data-etape="8" data-quiz>
         <span class="eyebrow">Question 2 sur 3</span>
         <h2>Que veut dire &laquo;&nbsp;le sceau des prophetes&nbsp;&raquo;&nbsp;?</h2>
         <div class="q-choix">
@@ -3197,7 +3224,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
         <button class="q-opt" type="button">Celui qui a ecrit le Coran de sa main</button>
         <button class="q-opt" type="button">Celui qui recitait le plus longtemps</button>
         </div>
-        <p class="q-retour" data-r-retour hidden></p>
+        <p class="q-retour" data-r-retour>Sourate Al-Ahzab, verset 40.</p>
       </section>
 
       <!-- 7 : ce que le Coran ne dit pas -->
@@ -3219,8 +3246,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
       </section>
 
       <!-- test : question 3 -->
-      <section class="etape carte-quiz" data-etape="10" data-quiz
-               data-explique="Le Coran indique que des messagers ont ete envoyes a chaque communaute, sans tous les nommer.">
+      <section class="etape carte-quiz" data-etape="10" data-quiz>
         <span class="eyebrow">Question 3 sur 3</span>
         <h2>&laquo;&nbsp;Vingt-cinq prophetes&nbsp;&raquo; veut dire&nbsp;:</h2>
         <div class="q-choix">
@@ -3228,7 +3254,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
         <button class="q-opt" type="button">Il n'y a eu que vingt-cinq prophetes en tout</button>
         <button class="q-opt" type="button">Vingt-cinq ont recu un livre</button>
         </div>
-        <p class="q-retour" data-r-retour hidden></p>
+        <p class="q-retour" data-r-retour>Le Coran indique que des messagers ont ete envoyes a chaque communaute, sans tous les nommer.</p>
       </section>
 
       <!-- 8 : ce que tu retiens -->
@@ -6196,7 +6222,12 @@ function ippRearmerQuiz(etape) {
     opts[i].disabled = false;
     opts[i].classList.remove('juste', 'faux');
   }
-  if (retour) { retour.hidden = true; retour.textContent = ''; }
+  // On remet l'explication telle qu'elle est ecrite dans la page, et on retire
+  // "repondu" : la carte redevient une question posee.
+  if (retour) {
+    retour.className = 'q-retour';
+    retour.textContent = etape.__explique || '';
+  }
   ippMelanger(choix, opts);
 
   // On dit pourquoi elle revient. "On la revoit" est une invitation ; ce
@@ -6215,6 +6246,14 @@ function ippPreparerQuiz(etape, bouton, score, sonner, surFaux) {
   var choix = etape.querySelector('.q-choix');
   var retour = etape.querySelector('[data-r-retour]');
   if (!choix) { return; }
+
+  // L'explication est ECRITE dans la page, pas rangee dans un attribut : sans
+  // JavaScript elle se lit, et la carte reste un document au lieu d'etre trois
+  // boutons muets. On la retient ici ; le CSS la remasque tant qu'on n'a pas
+  // repondu, donc avec JavaScript la carte redevient un test.
+  if (retour && etape.__explique === undefined) {
+    etape.__explique = retour.textContent.trim();
+  }
 
   var opts = [].slice.call(etape.querySelectorAll('.q-opt'));
   ippMelanger(choix, opts);
@@ -6240,9 +6279,9 @@ function ippPreparerQuiz(etape, bouton, score, sonner, surFaux) {
     var reviendra = !juste && etape.__passages < IPP_PASSAGES_MAX;
 
     if (retour) {
-      retour.hidden = false;
-      retour.className = 'q-retour ' + (juste ? 'ok' : 'non');
-      var explique = etape.getAttribute('data-explique') || '';
+      // "repondu" est ce qui rend le retour visible en mode pilote.
+      retour.className = 'q-retour repondu ' + (juste ? 'ok' : 'non');
+      var explique = etape.__explique || '';
       var tete;
       if (juste && reprise) { tete = 'Voila — tu l\'as. '; }
       else if (juste) { tete = 'Oui. '; }
@@ -6321,8 +6360,10 @@ function ippBrancherVoixLente(q) {
   var b = q('voix-lente');
   if (!b) { return; }
 
-  // Sans audio-coran.js, le bouton ne promet rien : il disparait.
+  // Le bouton est cache dans la page : sans JavaScript il promettrait un son
+  // qui n'arriverait jamais. Il n'apparait que si audio-coran.js est la.
   if (typeof ippCoran === 'undefined') { b.hidden = true; return; }
+  b.hidden = false;
 
   var note = q('voix-note');
 

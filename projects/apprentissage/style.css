@@ -1103,6 +1103,47 @@ a.lien-bas:hover { color: var(--creme); }
 .q-retour.ok { color: var(--or-clair); }
 .q-retour.non { color: var(--texte-2); }
 
+/* ---------- la question sans JavaScript ----------
+   La regle du site : une lecon se lit d'un seul tenant sans JavaScript, et
+   c'est ce que Google indexe. Une carte de question y etait pourtant trois
+   boutons qui ne repondent pas, sans jamais montrer la bonne reponse : un
+   mecanisme casse, pas du contenu. Ici elle redevient un document.
+
+   `.pilote` est posee par app.js. Tout ce qui suit ne s'applique donc QUE
+   lorsque le JavaScript n'a pas pris la main. */
+
+/* Une option qu'on ne peut pas presser ne doit pas avoir l'air pressable. */
+.etapes:not(.pilote) .q-opt {
+  cursor: default;
+  pointer-events: none;
+  min-height: 0;
+  padding: 12px 0 12px 26px;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-size: 16px;
+  color: var(--texte-2);
+  position: relative;
+}
+.etapes:not(.pilote) .q-opt::before {
+  content: '\2022';
+  position: absolute;
+  left: 6px;
+  color: var(--texte-3);
+}
+/* La bonne reponse est dite, pas devinee. */
+.etapes:not(.pilote) .q-opt[data-bonne] { color: var(--or-clair); font-weight: 600; }
+.etapes:not(.pilote) .q-opt[data-bonne]::before { content: '\2713'; color: var(--or); }
+.etapes:not(.pilote) .q-opt[data-bonne]::after {
+  content: ' \2014 la bonne reponse';
+  color: var(--texte-2);
+  font-weight: 400;
+}
+
+/* Avec JavaScript, l'explication se cache jusqu'a la reponse : sinon elle
+   donnerait la solution avant qu'on ait cherche. */
+.etapes.pilote .q-retour:not(.repondu) { display: none; }
+
 /* ---------- bouton d'ecoute (apparait seulement si un fichier existe) ---------- */
 
 .ecouter {
