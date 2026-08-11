@@ -50,24 +50,41 @@ donc **ne rien conclure avant le 16**. Si le zéro persiste après cette
 date, le problème n'est pas le titre : il faudra regarder sur quelles
 requêtes ces pages sortent réellement.
 
-### 4. Les 10 pages « où prier » restantes sont courtes
-**Mesuré le 11 août, sur les pages rendues** (et non sur le code — mon
-premier compteur renvoyait 0 partout) : 11 pages, 2 853 mots au total,
-soit 259 en moyenne. Disneyland est passée à 879, **CDG à 1 207**,
-**Orly à 1 249**, **guide aéroports à 1 134**, **gares de Paris à 940**,
-**Marseille à 814**, **Lyon à 850**, **Bruxelles à 765**, **Genève à 789**,
-**Toulouse à 811** ; reste **Nice** (185), la dernière.
-Nos guides récents font 900 à 1 200 mots.
-Le modèle est en place : ce qu'on peut ajouter sans rien inventer, c'est
-la méthode (que demander, que faire si on dit non), les ablutions, la
-prière qui pose problème selon la saison, et l'aveu de ce qu'on ne sait
-pas. **Dernière à traiter : Nice** (185 mots).
-
-
-
 ---
 
 ## Fait
+
+### Les 11 pages « où prier » sont terminées : 2 853 → 10 270 mots — 11 août
+**L'élément est clos.** Onzième et dernière page approfondie : **Nice**,
+185 → 832 mots en français, 170 → 764 en anglais.
+
+**Le total de la série** : 2 853 mots au départ, **10 270 aujourd'hui** en
+français — moyenne **259 → 934 mots** par page. (Somme des onze corps
+d'article ; les pages rendues, navigation et pied de page compris, pèsent
+14 634 mots.) Trois versions anglaises ont été créées au passage — gares de Paris,
+Marseille, Toulouse — sur un domaine presque vide.
+
+**LE DÉFAUT DE FOND, trouvé en travaillant et corrigé sur huit pages** :
+elles tranchaient une question religieuse (« la prière du voyageur
+raccourcie et regroupée », « c'est prévu par la religion »), alors que le
+site dit partout ailleurs qu'il ne tranche pas et renvoie à HalalGPT. Ce
+n'était pas un accident isolé mais un réflexe de gabarit, présent dans le
+guide-mère comme dans les fiches. Il a disparu de la série.
+
+**Ce que chaque page dit maintenant qu'elle ne disait pas** : le côté des
+contrôles (CDG), l'heure de fermeture (Orly), la salle côté ville (Lyon),
+l'ouverture 24h/24 (Bruxelles), la pièce partagée (Genève), le 3ᵉ étage
+(Toulouse), l'autre terminal (Nice), l'absence totale de salle (Marseille),
+la règle des 45 minutes (gares de Paris).
+
+**Aucun emplacement inventé.** Les emplacements existants ont reçu leur
+provenance — informations publiques des aéroports et témoignages, jamais
+une vérification de notre part — et les pages écrivent noir sur blanc ce
+que nous ne savons pas : horaires, ablutions, et côté des contrôles.
+
+**Vérifié sur les deux domaines pour les 11 paires** : bonne langue,
+titres sous 60 caractères, descriptions sous 160, hreflang réciproque,
+liens internes en 200.
 
 ### Toulouse : un espace au 3ᵉ étage, donc une question de temps — 11 août
 Dixième page « où prier » approfondie, et **création de sa version

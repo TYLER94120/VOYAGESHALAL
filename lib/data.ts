@@ -2518,25 +2518,56 @@ If an adjustment is required, it is almost always possible to do it yourself rat
   {
     slug: "where-to-pray-nice-airport",
     title: "Where to pray at Nice-Cote d'Azur airport — 2026 guide",
-    description: "Flying from Nice? Nice-Cote d'Azur has offered a multi-faith prayer space for over 20 years, with a room reserved for Muslims. Here is where to find it.",
+    description: "Nice-Côte d'Azur has a room reserved for Muslims — but in Terminal 2. Where it is, what to do if you fly from Terminal 1, and where to make wudu.",
     coverImage: "/guides/blog-nice.jpg",
     category: 'Practical',
-    readTime: "3 min",
+    readTime: "6 min",
     publishedAt: '2026-08-01',
     lang: 'en',
     tags: ['prayer', 'airport', 'nice'],
     content: `
-<p>Flying from Nice? Nice-Cote d'Azur airport has offered a multi-faith prayer space for more than 20 years, with a room reserved for Muslims. Here is where to find it.</p>
+<p>Flying from Nice-Côte d'Azur and looking for somewhere to pray? There is better than a quiet corner here: a <strong>room reserved for Muslims</strong>, which is rare. But it is in <strong>Terminal 2</strong> — and if your flight leaves from Terminal 1, that changes everything.</p>
+
 <h2>The essentials in 30 seconds</h2>
-<p>In Terminal 2: a chapel for Christians, a room for Jewish worshippers and a room for Muslims, around a shared welcome hall. Volunteer chaplains are regularly present.</p>
-<h2>Where the prayer room is</h2>
-<p>The space is in Terminal 2: three separate rooms plus a welcome area, in a quiet spot. Look for the "prayer space / place of worship" signs or ask a staff member.</p>
-<h2>Practical tips</h2>
-<p>Coming from Terminal 1, check the route to Terminal 2. Plan your wudu beforehand. For a tight flight, the shortened and combined traveler's prayer works. Use <a href="/qibla">our qibla tool</a>.</p>
+<p>Nice-Côte d'Azur has offered a <strong>multi-faith prayer space</strong> for more than twenty years, in <strong>Terminal 2</strong>: a chapel, a room for Jewish worshippers and a <strong>room for Muslims</strong>, around a shared welcome hall where volunteer chaplains are regularly present. Access is <strong>free</strong>.</p>
+
+<h2>A genuinely dedicated room: that is rare</h2>
+<p>Across our airport series, most spaces are a single room shared between all faiths — at Geneva and Toulouse you pray in a room someone else may be using in silence. Here, <strong>the Muslim room is separate</strong>. In practice: no waiting behind someone, no awkwardness, and the space matches what you came to do.</p>
+
+<h2>The question to settle BEFORE security: which terminal?</h2>
+<p>This is Nice's trap. A space in Terminal 2 is not “a few minutes away” if you depart from Terminal 1: <strong>it is another building</strong>. Two cases:</p>
+<p><strong>· You depart from Terminal 2</strong>: you are in the right place, look for the signage on arrival.<br/>
+<strong>· You depart from Terminal 1</strong>: decide <em>before</em> clearing security. Once airside in Terminal 1, switching terminals is no longer a reasonable option.</p>
+<p><strong>We do not know</strong> whether the space is before or after security in Terminal 2, and we will not invent it: ask at an information desk — that is the question that decides your plan.</p>
+
+<h2>How to find it</h2>
+<p>Follow the <strong>“espace de prière”</strong> or <strong>“lieu de culte”</strong> signs — that is the wording used in French airports, not “prayer room”. The pictogram is on the overhead panels, next to toilets and lifts: look up rather than hunting for a door.</p>
+<p>The presence of volunteer chaplains is an asset: when someone is there, you get an immediate answer on access and hours.</p>
+
+<h2>What we know, and what we do not</h2>
+<p>The location comes from the <strong>airport's public information</strong> — <strong>we have not verified it ourselves on site</strong>. We publish <strong>no opening hours</strong>: we have none we trust, and an invented window would do more harm than good to someone with a 6 a.m. flight. We also have no trace of a dedicated <strong>wudu area</strong>.</p>
+
+<h2>Wudu</h2>
+<p>In the toilets, then, until proven otherwise — high basins and sensor taps that cut the water every three seconds. Two habits change everything: filling <strong>a small squeezable bottle</strong> before going into the cubicle, and keeping a <strong>microfibre towel</strong> in your cabin bag. The full method is in our guide: <a href="/blog/wudu-on-a-plane-or-train">making wudu while travelling</a>.</p>
+
+<h2>If you have no time to get there</h2>
+<p>The only figure that counts: <strong>boarding closes around 20 minutes before departure</strong>. That is your real deadline, not the time on the board. With less than 30 usable minutes, a <strong>quiet corner near your gate</strong> is the sensible choice — pier ends, gates for later departures, dining areas outside meal times.</p>
+<p>A <strong>pocket prayer mat is no problem at security</strong>: it is an ordinary item. Pack it along the side of your bag so you can get it out faster.</p>
+
+<h2>What we do not rule on</h2>
+<p>Shortening, combining, making up on arrival, praying seated: these are <strong>religious questions</strong>, with differing opinions and conditions, and <strong>we do not answer them</strong>. This page covers where and how, not what is permitted. Put the question to <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&amp;utm_medium=passerelle&amp;utm_campaign=nice-en" target="_blank" rel="noopener noreferrer">HalalGPT</a>, which is built for it, or to your local imam.</p>
+<p>What we can do is give you the exact window: our <a href="/prayer-times">prayer times</a> give them for Nice, and the page still works without a signal once open.</p>
+
 <h2>Frequently asked questions</h2>
-<p><strong>Is there a Muslim room in Nice?</strong> Yes, in Terminal 2.<br/><strong>Since when?</strong> More than 20 years.<br/><strong>Free?</strong> Yes.</p>
+<p><strong>Is there a Muslim prayer room at Nice?</strong> Yes, a separate room, in Terminal 2.<br/>
+<strong>What if I depart from Terminal 1?</strong> Decide before security: afterwards, switching terminals is not reasonable.<br/>
+<strong>Is it before or after security?</strong> We do not know — ask at an information desk.<br/>
+<strong>What are the opening hours?</strong> We have none we trust, so we publish none.<br/>
+<strong>Is it free?</strong> Yes.<br/>
+<strong>And other airports?</strong> See <a href="/blog/where-to-pray-paris-airports">our complete airport prayer room guide</a>.</p>
+
 <h2>Help the community</h2>
-<p>An update at Nice airport? Share it — an ongoing sadaqa. <a href="/communaute">→ Join the community</a></p>
+<p>Have you prayed at Nice recently? Tell us <strong>whether the room is before or after security, its actual opening hours, and whether there is anywhere to make wudu</strong>. Those are the only three points we cannot state anything about. <a href="/communaute/ajouter">→ Add the place</a> · <a href="/communaute">→ Join the community</a></p>
 `,
   },
   {
@@ -3250,18 +3281,54 @@ If an adjustment is required, it is almost always possible to do it yourself rat
   {
     slug: "ou-prier-aeroport-nice",
     title: "Où prier à l'aéroport de Nice-Côte d'Azur — guide 2026",
-    description: "Nice-Côte d'Azur propose depuis plus de 20 ans un espace de prière multiconfessionnel, avec une salle réservée aux musulmans. Voici où le trouver.",
+    description: "Nice-Côte d'Azur a une salle réservée aux musulmans — mais au Terminal 2. Où elle est, quoi faire si tu pars du Terminal 1, et où faire ses ablutions.",
     coverImage: "/guides/blog-nice.jpg",
     category: 'Pratique',
-    readTime: "3 min",
+    readTime: "7 min",
     publishedAt: '2026-07-20',
     tags: ["Nice", "Aéroports", "Prière"],
-    content: `<p>Tu pars de Nice ? Nice-Côte d'Azur propose depuis plus de 20 ans un espace de prière multiconfessionnel, avec une salle réservée aux musulmans. Voici où le trouver.</p>
-<h2>L'essentiel en 30 secondes</h2><p>Au Terminal 2 : une chapelle pour les chrétiens, une salle pour les fidèles juifs et une salle pour les musulmans, autour d'un hall d'accueil commun. Des aumôniers bénévoles y assurent une présence.</p>
-<h2>Où se trouve la salle de prière</h2><p>L'espace est au Terminal 2 : trois salles distinctes plus une zone d'accueil, dans un endroit calme. Repère la signalétique « espace de prière / lieu de culte » ou demande à un agent.</p>
-<h2>Conseils pratiques</h2><p>Depuis le Terminal 1, vérifie le trajet vers le Terminal 2. Anticipe les ablutions. Pour un vol serré, prière du voyageur raccourcie et regroupée. Utilise <a href="/qibla">notre outil qibla</a>.</p>
-<h2>Questions fréquentes</h2><p><strong>Salle musulmane à Nice ?</strong> Oui, au Terminal 2.<br/><strong>Depuis quand ?</strong> Plus de 20 ans.<br/><strong>Gratuit ?</strong> Oui.</p>
-<p>Voir aussi <a href="/blog/ou-prier-aeroports">notre guide complet des aéroports</a>.</p><h2>Aide la communauté</h2><p>Un horaire, un changement à Nice ? Partage-le — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
+    content: `<p>Tu pars de Nice-Côte d'Azur et tu cherches où prier ? Il y a mieux qu'un coin calme : une <strong>salle réservée aux musulmans</strong>, ce qui est rare. Mais elle est au <strong>Terminal 2</strong> — et si ton vol part du Terminal 1, ça change tout.</p>
+
+<h2>L'essentiel en 30 secondes</h2>
+<p>Nice-Côte d'Azur propose depuis plus de vingt ans un <strong>espace de prière multiconfessionnel</strong>, au <strong>Terminal 2</strong> : une chapelle, une salle pour les fidèles juifs et une <strong>salle pour les musulmans</strong>, autour d'un hall d'accueil commun, où des aumôniers bénévoles assurent une présence. L'accès est <strong>gratuit</strong>.</p>
+
+<h2>Une salle vraiment dédiée : c'est rare</h2>
+<p>Dans notre série d'aéroports, la plupart des espaces sont des pièces uniques partagées entre toutes les confessions — à Genève et à Toulouse, on prie dans une salle que quelqu'un d'autre peut occuper en silence. Ici, <strong>la salle musulmane est distincte</strong>. Concrètement : pas d'attente derrière quelqu'un, pas de gêne, et l'espace correspond à ce qu'on vient y faire.</p>
+
+<h2>La question à se poser AVANT les contrôles : quel terminal ?</h2>
+<p>C'est le piège de Nice. Un espace au Terminal 2 n'est pas « à quelques minutes » si tu pars du Terminal 1 : <strong>c'est un autre bâtiment</strong>. Deux cas :</p>
+<p><strong>· Tu pars du Terminal 2</strong> : tu es au bon endroit, repère la signalétique en arrivant.<br/>
+<strong>· Tu pars du Terminal 1</strong> : décide <em>avant</em> de passer les contrôles. Une fois en zone d'embarquement du Terminal 1, changer de terminal n'est plus une option raisonnable.</p>
+<p><strong>Nous ne savons pas</strong> si l'espace se trouve avant ou après les contrôles du Terminal 2, et nous ne l'inventerons pas : demande-le au comptoir information, c'est la question qui décide de ton organisation.</p>
+
+<h2>Comment le trouver</h2>
+<p>Suis la signalétique <strong>« espace de prière »</strong> ou <strong>« lieu de culte »</strong> — c'est le vocabulaire employé dans les aéroports français, pas « salle de prière ». Le pictogramme est sur les panneaux suspendus, à côté de ceux des toilettes et des ascenseurs : lève les yeux plutôt que de chercher une porte.</p>
+<p>La présence d'aumôniers bénévoles est un atout : quand quelqu'un est là, tu as une réponse immédiate sur l'accès et les horaires.</p>
+
+<h2>Ce que nous savons, et ce que nous ne savons pas</h2>
+<p>L'emplacement vient des <strong>informations publiques de l'aéroport</strong> — <strong>nous ne l'avons pas vérifié nous-mêmes sur place</strong>. Nous ne publions <strong>aucun horaire</strong> : nous n'en avons pas de fiables, et une plage inventée ferait plus de mal que de bien à quelqu'un qui a un vol à 6 h. Nous n'avons pas non plus trace d'un <strong>espace d'ablutions</strong> dédié.</p>
+
+<h2>Les ablutions</h2>
+<p>Aux toilettes, donc, jusqu'à preuve du contraire — lavabos hauts et robinets à capteur qui coupent l'eau toutes les trois secondes. Deux habitudes qui changent tout : remplir <strong>une petite bouteille souple</strong> avant d'entrer dans la cabine, et garder une <strong>serviette microfibre</strong> dans le bagage cabine. La méthode complète est dans notre guide : <a href="/blog/ablutions-avion-train">faire ses ablutions en voyage</a>.</p>
+
+<h2>Si tu n'as pas le temps d'y aller</h2>
+<p>Le seul chiffre qui compte : <strong>l'embarquement ferme environ 20 minutes avant le décollage</strong>. C'est ta vraie limite, pas l'heure affichée au tableau. En dessous de 30 minutes utiles, un <strong>coin calme près de ta porte</strong> est le choix raisonnable — extrémités de jetée, portes des vols suivants, zones de restauration en dehors des heures de repas.</p>
+<p>Un <strong>tapis de prière de poche ne pose aucun problème au contrôle</strong> : c'est un objet courant. Range-le sur le côté du sac, tu le sortiras plus vite.</p>
+
+<h2>Ce que nous ne tranchons pas</h2>
+<p>Raccourcir, regrouper, rattraper à l'arrivée, prier assis : ce sont des <strong>questions religieuses</strong>, avec des avis et des conditions, et <strong>nous n'y répondons pas</strong>. Cette page dit où et comment, pas ce qui est permis. Pose la question à <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&amp;utm_medium=passerelle&amp;utm_campaign=nice" target="_blank" rel="noopener noreferrer">HalalGPT</a>, qui est fait pour ça, ou à l'imam de ta mosquée.</p>
+<p>Ce que nous pouvons faire, c'est te donner l'heure exacte du créneau : nos <a href="/horaires-priere">horaires de prière</a> les donnent pour Nice, et la page fonctionne encore sans réseau une fois ouverte.</p>
+
+<h2>Questions fréquentes</h2>
+<p><strong>Y a-t-il une salle de prière musulmane à Nice ?</strong> Oui, une salle distincte, au Terminal 2.<br/>
+<strong>Et si je pars du Terminal 1 ?</strong> Décide avant les contrôles : après, changer de terminal n'est plus raisonnable.<br/>
+<strong>Est-ce avant ou après la sécurité ?</strong> Nous ne le savons pas — demande au comptoir information.<br/>
+<strong>Quels horaires ?</strong> Nous n'en avons pas de fiables, donc nous n'en publions pas.<br/>
+<strong>Est-ce payant ?</strong> Non.<br/>
+<strong>Et les autres aéroports ?</strong> Voir <a href="/blog/ou-prier-aeroports">notre guide complet des salles de prière d'aéroport</a>.</p>
+
+<h2>Aide la communauté</h2>
+<p>Tu as prié à Nice récemment ? Dis-nous <strong>si la salle est avant ou après les contrôles, ses horaires réels, et s'il y a de quoi faire les ablutions</strong>. Ce sont les trois seuls points sur lesquels nous ne pouvons rien affirmer. <a href="/communaute/ajouter">→ Ajouter le lieu</a> · <a href="/communaute">→ Rejoindre la communauté</a></p>`,
   },
   {
     slug: "where-to-pray-toulouse-airport",
