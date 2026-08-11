@@ -50,6 +50,12 @@ donc **ne rien conclure avant le 16**. Si le zéro persiste après cette
 date, le problème n'est pas le titre : il faudra regarder sur quelles
 requêtes ces pages sortent réellement.
 
+### 5. Étendre l'audit de langue aux 1 629 pages
+`scripts/audit-langue.mjs` échantillonne aujourd'hui 60 pages par domaine
+(120 sur 1 629, soit 7 %). Le seul défaut trouvé l'a été dans cet
+échantillon — il peut donc en rester ailleurs. À faire tourner en entier
+une fois, puis à brancher sur le build si le temps d'exécution le permet.
+
 ### 4. Les 10 pages « où prier » restantes sont courtes
 **Mesuré le 11 août, sur les pages rendues** (et non sur le code — mon
 premier compteur renvoyait 0 partout) : 11 pages, 2 853 mots au total,
@@ -69,6 +75,28 @@ de Paris (322).
 ---
 
 ## Fait
+
+### La politique de confidentialité était en français sur le domaine anglais — 11 août
+**Trouvé en mesurant, pas en supposant.** Nouvel outil :
+`scripts/audit-langue.mjs`, qui interroge les deux domaines depuis
+l'extérieur (en-tête Host, donc `http.request` et non `fetch`, qui supprime
+cet en-tête) et compte les MOTS OUTILS exclusifs à chaque langue plutôt
+qu'un mot isolé.
+
+**Avant** : 120 pages échantillonnées sur les 1 629 des deux sitemaps,
+**1 défaut** — `gohalaltravel.com/privacy` : titre et description anglais,
+mais **579 mots de corps en français** (51 mots outils français contre 11
+anglais), et l'application s'y présentait sous le nom « VoyagesHalal ».
+Seules les métadonnées avaient été traduites.
+
+C'est le défaut le plus grave d'un site bi-domaine, sur la pire page
+possible : celle qu'on lit précisément parce qu'on se méfie, et celle que
+réclament les magasins d'applications. Elle passait sous le radar parce
+qu'aucun lien de navigation ne la met en avant.
+
+**Après** : 120 pages, **0 défaut**. `/privacy` sort en anglais sous le nom
+GoHalalTravel, `/confidentialite` est inchangée en français. Rien
+d'inventé : l'adresse de contact reste celle qui existe réellement.
 
 ### Orly : 263 → 1 249 mots, et le vrai piège est l'HEURE — 11 août
 Troisième page « où prier » approfondie, après Disneyland et CDG. **Avant** :
