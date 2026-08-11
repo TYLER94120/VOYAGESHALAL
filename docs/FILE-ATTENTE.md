@@ -54,20 +54,41 @@ requêtes ces pages sortent réellement.
 **Mesuré le 11 août, sur les pages rendues** (et non sur le code — mon
 premier compteur renvoyait 0 partout) : 11 pages, 2 853 mots au total,
 soit 259 en moyenne. Disneyland est passée à 879, **CDG à 1 207**,
-**Orly à 1 249**, **guide aéroports à 1 134**, **gares de Paris à 940** ;
-restent Marseille 250,
-Lyon 224, Bruxelles 221, Genève 208, Toulouse 193, Nice 185.
+**Orly à 1 249**, **guide aéroports à 1 134**, **gares de Paris à 940**,
+**Marseille à 814** ; restent Lyon 224, Bruxelles 221, Genève 208,
+Toulouse 193, Nice 185.
 Nos guides récents font 900 à 1 200 mots.
 Le modèle est en place : ce qu'on peut ajouter sans rien inventer, c'est
 la méthode (que demander, que faire si on dit non), les ablutions, la
 prière qui pose problème selon la saison, et l'aveu de ce qu'on ne sait
-pas. **Suivante à traiter : Marseille** (250 mots), puis Lyon (224).
+pas. **Suivante à traiter : Lyon** (224 mots), puis Bruxelles (221).
 
 
 
 ---
 
 ## Fait
+
+### Marseille : la seule page où la réponse est NON — 11 août
+Sixième page « où prier » approfondie. **Avant** : 250 mots, aucun jumeau
+anglais. **Après : 814 mots en français, 759 en anglais.**
+
+**Trois défauts, pas un seul.** La page tranchait une question religieuse
+(« en profitant des facilités du voyageur », « le tayammoum reste une
+option ») — même correction que le guide aéroports, Orly et les gares. Elle
+affirmait aussi que « plusieurs mosquées existent autour de Marignane »
+sans que nous en ayons vérifié une seule : remplacé par l'outil, qui
+s'appuie sur des données à jour. Et elle n'avait pas de version anglaise.
+
+**Ce qui fait sa valeur** : c'est la seule page de la série où la réponse
+est non. Une page qui dit franchement « il n'y a rien, voilà comment
+faire » vaut mieux que dix pages qui promettent une salle. La vraie réponse
+est écrite en clair : prier AVANT d'arriver à l'aéroport.
+
+**Vérifié sur les deux domaines** : 10 h2 de chaque côté, titres à 56 et 51
+caractères, descriptions à 159 et 134, hreflang réciproque, 10 liens
+internes en 200 de chaque côté, page anglaise dans le sitemap EN et absente
+du sitemap FR.
 
 ### Les gares de Paris : 322 → 940 mots, et une version anglaise créée — 11 août
 Cinquième page « où prier » approfondie. **Avant** : 322 mots, et **aucun

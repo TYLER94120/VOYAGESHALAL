@@ -3469,24 +3469,103 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <p>Tu as prié à Orly récemment ? Dis-nous <strong>dans quel bâtiment, à quelle heure, si c'était ouvert, et de quel côté des contrôles</strong>. Les horaires réels sont exactement ce qui manque à cette page, et c'est ce qui servira le plus aux vols de nuit. <a href="/communaute/ajouter">→ Ajouter le lieu</a> · <a href="/communaute">→ Rejoindre la communauté</a></p>`,
   },
   {
+    slug: "where-to-pray-marseille-airport",
+    title: "Prayer Room at Marseille Airport: The Honest Answer",
+    description: "Marseille-Provence has no prayer room. Where to pray anyway, why praying before you arrive is the real answer, and where to make wudu.",
+    coverImage: "/guides/blog-marseille.jpg",
+    category: 'Practical',
+    readTime: "6 min",
+    publishedAt: '2026-08-11',
+    lang: 'en',
+    tags: ['prayer', 'airport', 'marseille', 'muslim travel'],
+    content: `
+<p>Flying from Marseille and looking for a prayer room at Marseille-Provence airport? Let us say it straight away: <strong>there is none</strong>. This is the one page in our series where the answer is no — which is exactly why it needs to be precise about what you can do instead.</p>
+
+<h2>The essentials in 30 seconds</h2>
+<p>As far as we know, Marseille-Provence airport (Marignane) has <strong>no prayer space and no multi-faith quiet room</strong>, unlike Paris-CDG, Orly, Lyon or Nice. So the solution fits in one sentence: <strong>pray before you get there</strong> if the window allows, and otherwise find a quiet corner in the terminal.</p>
+
+<h2>What we know, and what we do not</h2>
+<p><strong>What we state</strong>: we are not aware of any dedicated space, landside or airside.</p>
+<p><strong>What we cannot guarantee</strong>: that there is not a small or recent one we have missed. Airports change, and nobody announces a modest quiet room. If you find one, <strong>tell us</strong> — this is the page where a first-hand report is worth the most.</p>
+<p>And we will not invent an address to fill the gap: a page that says “there is nothing, here is what to do” beats a page that sends someone hunting for a room that does not exist with a flight in forty minutes.</p>
+
+<h2>The best solution: pray before you arrive</h2>
+<p>That is the real answer, and it is prepared the night before. Marseille-Provence is a mid-sized airport: most people reach it by car, by shuttle from Saint-Charles station, or from Vitrolles-Aéroport. In other words, <strong>you pass through places where praying is far easier than in a departure lounge</strong>.</p>
+<p>Check the window <em>in the morning</em>, not when the call comes: our <a href="/prayer-times">prayer times</a> give them for Marseille and its region, and the page still works without a signal once open. If the window is already open when you leave home or your hotel, pray there — the problem disappears.</p>
+<p>To find a mosque on the way or on arrival, <a href="/mosque-near-me">our nearest-mosque tool</a> locates you. We would rather send you to up-to-date data than quote an address from memory.</p>
+
+<h2>Inside the terminal: what works</h2>
+<p>What works: <strong>the far ends of the piers</strong>, gates for later departures (empty between flights), <strong>quiet window bays</strong>, and dining areas outside meal times.</p>
+<p>What does not: the flow zones in front of desks and departure boards, and the immediate area around a gate at boarding time.</p>
+<p>A <strong>pocket mat is no problem at security</strong>: it is an ordinary item. Pack it along the side of your bag so you can get it out faster. And keep your belongings with you: an unattended bag triggers a procedure.</p>
+
+<h2>Wudu</h2>
+<p>In the toilets, as everywhere nothing is provided. The real obstacle is not modesty, it is high basins and sensor taps that cut the water every three seconds. Two habits change everything: filling <strong>a small squeezable bottle</strong> before going into the cubicle, and keeping a <strong>microfibre towel</strong> in your cabin bag. The full method is in our guide: <a href="/blog/wudu-on-a-plane-or-train">making wudu while travelling</a>.</p>
+
+<h2>What we do not rule on</h2>
+<p>Shortening, combining, making up on arrival, praying seated, tayammum when there is no water: these are <strong>religious questions</strong>, with differing opinions and conditions, and <strong>we do not answer them</strong>. This page covers where and how, not what is permitted. Put the question to <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&amp;utm_medium=passerelle&amp;utm_campaign=marseille-en" target="_blank" rel="noopener noreferrer">HalalGPT</a>, which is built for it, or to your local imam.</p>
+
+<h2>The prayer that causes trouble</h2>
+<p>Here it depends entirely on your flight time, and the maths rests on one figure: <strong>boarding closes around 20 minutes before departure</strong>. That is your real deadline, not the time on the board. If your window ends after it, plan to pray at the gate rather than to run.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Is there a prayer room at Marseille airport?</strong> As far as we know, no — neither a Muslim space nor a multi-faith quiet room.<br/>
+<strong>So how do you pray?</strong> In a quiet corner of the terminal, or better: before you arrive.<br/>
+<strong>Where can you make wudu?</strong> In the terminal toilets.<br/>
+<strong>Could that change?</strong> Yes. Tell us about any opening and we will correct this page.<br/>
+<strong>And other airports?</strong> See <a href="/blog/where-to-pray-paris-airports">our complete airport prayer room guide</a>.</p>
+
+<h2>Help the community</h2>
+<p>It is when there is no official room that your help matters most. Do you know <strong>a corner that works well at Marignane, a room that has opened, a mosque on the way to the airport</strong>? Tell us. <a href="/communaute/ajouter">→ Add the place</a> · <a href="/communaute">→ Join the community</a></p>
+`,
+  },
+  {
     slug: "ou-prier-aeroport-marseille",
     title: "Où prier à l'aéroport de Marseille-Provence — guide 2026",
     description: "Soyons honnêtes : à ce jour, l'aéroport de Marseille-Provence (Marignane) ne dispose pas d'un espace de prière dédié. Voici comment prier quand même sur place.",
     coverImage: "/guides/blog-marseille.jpg",
     category: 'Pratique',
-    readTime: "3 min",
+    readTime: "7 min",
     publishedAt: '2026-07-20',
     tags: ["Marseille", "Aéroports", "Prière"],
-    content: `<p>Tu pars de Marseille et tu cherches une salle de prière à l'aéroport Marseille-Provence ? Soyons honnêtes : à ce jour, l'aéroport de Marseille-Provence (Marignane) ne dispose pas d'un espace de prière dédié, contrairement à Paris-CDG, Orly, Lyon ou Nice. Voici comment prier quand même sur place.</p>
+    content: `<p>Tu pars de Marseille et tu cherches une salle de prière à l'aéroport Marseille-Provence ? Disons-le tout de suite : <strong>il n'y en a pas</strong>. C'est la seule page de notre série où la réponse est non — et c'est justement pour ça qu'elle mérite d'être précise sur ce qu'on peut faire à la place.</p>
+
 <h2>L'essentiel en 30 secondes</h2>
-<p>Pas de salle officielle à Marseille-Provence pour l'instant. Solution : prier discrètement dans un coin calme, en profitant des facilités du voyageur (prière raccourcie et regroupée).</p>
-<h2>Nos conseils pour prier à Marseille-Provence</h2>
-<p>Repère un coin tranquille (bout de jetée, baie vitrée peu fréquentée), pose une veste ou un tapis, oriente-toi vers la qibla (<a href="/qibla">notre outil qibla</a>). Anticipe les ablutions aux toilettes ; garde un petit nécessaire ; le tayammoum reste une option en cas d'impossibilité. Utilise les facilités du voyageur (raccourcir/regrouper). Si tu as le temps, plusieurs mosquées existent autour de Marignane : prier avant de partir ou après l'atterrissage est parfois plus serein.</p>
+<p>À notre connaissance, l'aéroport de Marseille-Provence (Marignane) <strong>ne dispose pas d'espace de prière ni de salle de recueillement</strong>, contrairement à Paris-CDG, Orly, Lyon ou Nice. La solution tient donc en une phrase : <strong>prier avant d'arriver</strong> si le créneau le permet, et sinon repérer un coin calme dans l'aérogare.</p>
+
+<h2>Ce que nous savons, et ce que nous ne savons pas</h2>
+<p><strong>Ce que nous affirmons</strong> : nous n'avons connaissance d'aucun espace dédié, ni côté ville ni en zone d'embarquement.</p>
+<p><strong>Ce que nous ne pouvons pas garantir</strong> : qu'il n'en existe pas un, discret ou récent, que nous n'aurions pas vu. Un aéroport change, et personne ne communique sur une petite salle. Si tu en trouves une, <strong>dis-le-nous</strong> : cette page est précisément celle où une information de terrain vaut le plus.</p>
+<p>Et nous n'irons pas inventer une adresse pour combler le vide : mieux vaut une page qui dit « il n'y a rien, voilà comment faire » qu'une page qui envoie quelqu'un chercher une salle inexistante avec un vol dans quarante minutes.</p>
+
+<h2>La meilleure solution : prier avant d'arriver</h2>
+<p>C'est la vraie réponse, et elle se prépare la veille. Marseille-Provence est un aéroport de taille moyenne : on y arrive souvent en voiture, en navette depuis la gare Saint-Charles ou depuis Vitrolles-Aéroport. Autrement dit, <strong>tu passes par des endroits où prier est bien plus simple qu'en salle d'embarquement</strong>.</p>
+<p>Regarde l'heure du créneau <em>le matin</em>, pas au moment de l'appel : nos <a href="/horaires-priere">horaires de prière</a> les donnent pour Marseille et sa région, et la page fonctionne encore sans réseau une fois ouverte. Si le créneau est déjà ouvert quand tu pars de chez toi ou de ton hôtel, prie là-bas — le problème disparaît.</p>
+<p>Pour trouver une mosquée sur la route ou à l'arrivée, <a href="/mosquee-proche">notre outil mosquée la plus proche</a> te géolocalise. Nous préférons t'envoyer vers des données mises à jour plutôt que de citer une adresse de mémoire.</p>
+
+<h2>Dans l'aérogare : où ça marche</h2>
+<p>Ce qui marche : les <strong>extrémités de jetée</strong>, les salles d'embarquement des vols suivants (vides entre deux départs), les <strong>baies vitrées peu fréquentées</strong> et les zones de restauration en dehors des heures de repas.</p>
+<p>Ce qui ne marche pas : les zones de flux devant les comptoirs et les panneaux d'affichage, et les abords immédiats d'une porte au moment de l'embarquement.</p>
+<p>Un <strong>tapis de poche ne pose aucun problème au contrôle</strong> : c'est un objet courant. Range-le sur le côté du sac, tu le sortiras plus vite. Et garde tes affaires contre toi : un bagage laissé seul déclenche une procédure.</p>
+
+<h2>Les ablutions</h2>
+<p>Aux toilettes, comme partout où rien n'est prévu. Le vrai obstacle n'est pas la pudeur, ce sont les lavabos hauts et les robinets à capteur qui coupent l'eau toutes les trois secondes. Deux habitudes qui changent tout : remplir <strong>une petite bouteille souple</strong> avant d'entrer dans la cabine, et garder une <strong>serviette microfibre</strong> dans le bagage cabine. La méthode complète est dans notre guide : <a href="/blog/ablutions-avion-train">faire ses ablutions en voyage</a>.</p>
+
+<h2>Ce que nous ne tranchons pas</h2>
+<p>Raccourcir, regrouper, rattraper à l'arrivée, prier assis, faire le tayammoum quand l'eau manque : ce sont des <strong>questions religieuses</strong>, avec des avis et des conditions, et <strong>nous n'y répondons pas</strong>. Cette page dit où et comment, pas ce qui est permis. Pose la question à <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&amp;utm_medium=passerelle&amp;utm_campaign=marseille" target="_blank" rel="noopener noreferrer">HalalGPT</a>, qui est fait pour ça, ou à l'imam de ta mosquée.</p>
+
+<h2>La prière qui pose problème</h2>
+<p>Ici, tout dépend de l'heure de ton vol, et le calcul se fait sur une seule donnée : <strong>l'embarquement ferme environ 20 minutes avant le décollage</strong>. C'est cette heure-là ta limite réelle, pas celle affichée au tableau. Si ton créneau se termine après, prépare-toi à prier à la porte plutôt qu'à courir.</p>
+
 <h2>Questions fréquentes</h2>
-<p><strong>Y a-t-il une salle de prière à l'aéroport de Marseille ?</strong> À ce jour, non.<br/><strong>Comment prier alors ?</strong> Dans un coin calme, avec la prière du voyageur et les ablutions aux toilettes.<br/><strong>Ça peut changer ?</strong> Oui — signale-nous toute ouverture.</p>
-<p>Voir aussi <a href="/blog/ou-prier-aeroports">notre guide complet des aéroports</a>.</p>
+<p><strong>Y a-t-il une salle de prière à l'aéroport de Marseille ?</strong> À notre connaissance, non — ni espace musulman, ni salle de recueillement multiconfessionnelle.<br/>
+<strong>Comment prier alors ?</strong> Dans un coin calme de l'aérogare, ou mieux : avant d'arriver.<br/>
+<strong>Où faire les ablutions ?</strong> Aux toilettes de l'aérogare.<br/>
+<strong>Ça peut changer ?</strong> Oui. Signale-nous toute ouverture, nous corrigerons cette page.<br/>
+<strong>Et dans les autres aéroports ?</strong> Voir <a href="/blog/ou-prier-aeroports">notre guide complet des salles de prière d'aéroport</a>.</p>
+
 <h2>Aide la communauté</h2>
-<p>C'est quand il n'y a pas de salle officielle que ton aide compte le plus. Tu connais un coin discret, une salle qui aurait ouvert, une mosquée proche ? Partage-le — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
+<p>C'est quand il n'y a pas de salle officielle que ton aide compte le plus. Tu connais <strong>un coin qui marche bien à Marignane, une salle qui aurait ouvert, une mosquée sur la route de l'aéroport</strong> ? Dis-le-nous. <a href="/communaute/ajouter">→ Ajouter le lieu</a> · <a href="/communaute">→ Rejoindre la communauté</a></p>`,
   },
   {
     slug: "ou-prier-disneyland-paris",
