@@ -10,6 +10,7 @@ import { guides } from '@/lib/data'
 import NearbySpotsHome from '@/components/community/NearbySpotsHome'
 import RecentSpotsHome from '@/components/spots/RecentSpotsHome'
 import BoardVoyageur from '@/components/home/BoardVoyageur'
+import { localizedHref } from '@/lib/slugs'
 import { HomeScoreRanking } from '@/components/HomeScoreRanking'
 import IslamicPattern from '@/components/ui/IslamicPattern'
 import SearchBarHome from '@/components/search/SearchBarHome'
@@ -89,7 +90,15 @@ export default async function HomePage() {
   const { isEN, brand, siteUrl } = await getDomainSEO()
   const websiteSchema = buildWebSiteSchema({ en: isEN, siteUrl, name: isEN ? brand : undefined })
   const orgSchema = buildOrganizationSchema({ en: isEN, siteUrl, name: isEN ? brand : undefined })
-  const featuredGuides = guides.slice(0, 3)
+  // 📚 GUIDES VEDETTES — DANS LA LANGUE DU DOMAINE.
+  // Défaut mesuré le 11 août : `guides.slice(0, 3)` prenait les trois
+  // premiers guides du fichier, tous français. L'accueil anglais affichait
+  // donc « Voyage halal pour débutants : le guide complet » et « Pratique »
+  // sous des libellés anglais, et pointait vers /guides/voyage-halal-debutant
+  // — une URL qui fait une 301 vers le slug anglais. Trois titres français
+  // sur la page la plus importante du domaine anglais.
+  const guidesDuDomaine = guides.filter((g) => (g.lang ?? 'fr') === (isEN ? 'en' : 'fr'))
+  const featuredGuides = (guidesDuDomaine.length >= 3 ? guidesDuDomaine : guides).slice(0, 3)
   const { totalVilles } = getVillesStats()
   // Guides vedettes : chiffres RÉELS lus dans les fiches villes, pour que le
   // premier écran donne (la richesse du site) avant de demander (contribuer).
@@ -269,7 +278,7 @@ export default async function HomePage() {
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-white font-bold text-lg mb-1">✦ {isEN ? 'Add VoyagesHalal to your home screen' : 'Ajoute VoyagesHalal à ton écran d\'accueil'}</p>
           <p className="text-white/60 text-sm mb-5">{isEN ? 'Full screen, offline, prayer notifications — like an app, no store needed.' : 'Plein écran, hors-ligne, notifications de prière — comme une app, sans store.'}</p>
-          <Link href="/application" style={{ display: 'inline-flex', alignItems: 'center', minHeight: 50, padding: '0 24px', borderRadius: 999, background: 'var(--or)', color: '#0b1a0f', fontWeight: 800, fontSize: 15, textDecoration: 'none' }}>
+          <Link href={localizedHref('/application', isEN)} style={{ display: 'inline-flex', alignItems: 'center', minHeight: 50, padding: '0 24px', borderRadius: 999, background: 'var(--or)', color: '#0b1a0f', fontWeight: 800, fontSize: 15, textDecoration: 'none' }}>
             {isEN ? 'How to install (30 sec) →' : 'Comment l\'installer (30 sec) →'}
           </Link>
         </div>
