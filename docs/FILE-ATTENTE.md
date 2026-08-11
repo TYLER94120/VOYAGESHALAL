@@ -54,20 +54,46 @@ requêtes ces pages sortent réellement.
 **Mesuré le 11 août, sur les pages rendues** (et non sur le code — mon
 premier compteur renvoyait 0 partout) : 11 pages, 2 853 mots au total,
 soit 259 en moyenne. Disneyland est passée à 879, **CDG à 1 207**,
-**Orly à 1 249**, **guide aéroports à 1 134** ; restent gares de Paris 322,
-Marseille 250,
+**Orly à 1 249**, **guide aéroports à 1 134**, **gares de Paris à 940** ;
+restent Marseille 250,
 Lyon 224, Bruxelles 221, Genève 208, Toulouse 193, Nice 185.
 Nos guides récents font 900 à 1 200 mots.
 Le modèle est en place : ce qu'on peut ajouter sans rien inventer, c'est
 la méthode (que demander, que faire si on dit non), les ablutions, la
 prière qui pose problème selon la saison, et l'aveu de ce qu'on ne sait
-pas. **Suivante à traiter : les gares de Paris** (322 mots), puis Marseille (250).
+pas. **Suivante à traiter : Marseille** (250 mots), puis Lyon (224).
 
 
 
 ---
 
 ## Fait
+
+### Les gares de Paris : 322 → 940 mots, et une version anglaise créée — 11 août
+Cinquième page « où prier » approfondie. **Avant** : 322 mots, et **aucun
+jumeau anglais**. **Après : 940 mots en français, 843 en anglais** — une
+page de plus sur un domaine presque vide. Traduire n'est pas créer.
+
+**Même défaut que le guide aéroports, réparé** : la page tranchait une
+question religieuse (« les facilités du voyageur existent pour ça :
+raccourcir, regrouper », « c'est prévu par la religion »). Elle décrit
+maintenant la question et renvoie à HalalGPT.
+
+**Ce qui a été ajouté** : la règle des 45 minutes (sortir, rester, ou ne
+pas bouger), les endroits qui marchent dans une gare et ceux qui ne
+marchent pas, l'avertissement du bagage laissé sans surveillance, les
+toilettes payantes pour les ablutions, et Maghrib comme prière difficile en
+gare — créneau court au pic des départs du soir.
+
+**Rien d'inventé** : aucune salle de quartier n'est nommée, précisément
+parce que ce sont celles que nous n'avons pas vérifiées, et la page le dit.
+Le seul lieu cité est la Grande Mosquée de Paris, institution publique,
+avec une distance donnée comme ordre de grandeur.
+
+**Vérifié sur les deux domaines** : 10 h2 de chaque côté, titres à 49 et 44
+caractères, descriptions à 134 et 141, hreflang réciproque dans les deux
+sens, 11 liens internes en 200 de chaque côté, page anglaise présente dans
+le sitemap EN et dans /blog EN, absente du sitemap FR.
 
 ### Le domaine anglais renvoyait vers des adresses françaises — 11 août
 **Mesuré** avec un outil neuf, `scripts/audit-liens-internes.mjs` : sur 189

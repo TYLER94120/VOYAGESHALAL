@@ -2918,21 +2918,109 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <h2>Aide la communauté</h2><p>Un spot testé au Futuroscope, une info fraîche ? Partage-la — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
   },
   {
+    slug: "where-to-pray-paris-stations",
+    title: "Where to Pray at Paris Train Stations (2026)",
+    description: "French railway stations have no prayer room — but a solution under 15 minutes away almost always exists. The honest station-by-station guide.",
+    coverImage: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&q=80",
+    category: 'Practical',
+    readTime: "7 min",
+    publishedAt: '2026-08-11',
+    lang: 'en',
+    tags: ['prayer', 'train station', 'paris', 'muslim travel'],
+    content: `
+<p>Connecting in Paris, train in two hours, and the prayer window closing? Here is the reality of Paris stations — including what they do not have — and what actually works, depending on how much time you have left.</p>
+
+<h2>The essentials in 30 seconds</h2>
+<p>Start with the bad news, said plainly: <strong>French railway stations have no prayer room</strong>. Not Gare du Nord, not Gare de Lyon, not Montparnasse. That is not an omission on our part, it is the situation. The good news is that Paris is Paris: around every major station the neighbourhood has prayer spaces, often discreet and rarely marked on tourist maps.</p>
+<p>So everything depends on one thing: <strong>how many minutes do you have?</strong></p>
+
+<h2>The 45-minute rule</h2>
+<p>This is the threshold that decides everything, and it is better decided on the platform than in front of a closed door.</p>
+<p><strong>More than 45 minutes</strong>: leaving the station is realistic. Count ten to fifteen minutes' walk each way, and keep a margin to find your platform again — Paris stations are vast and the platform number is often posted late.<br/>
+<strong>Between 20 and 45 minutes</strong>: stay inside and find a quiet corner (see below). Going out means risking a run.<br/>
+<strong>Under 20 minutes</strong>: do not move. Plan to pray on board or on arrival.</p>
+
+<h2>Finding the neighbourhood prayer space</h2>
+<p>Every major station — Nord, Est, Lyon, Montparnasse, Saint-Lazare, Austerlitz — sits in a lively district where prayer spaces exist. <a href="/mosque-near-me">Our nearest-mosque tool</a> locates you and gives you the closest one in two seconds, with directions.</p>
+<p>One reliable landmark for south-east Paris: the <strong>Grande Mosquée de Paris</strong>, in the 5th arrondissement, is roughly a fifteen-minute walk from Gare d'Austerlitz — a public, open, easy-to-find place, which makes it the safe option in that area when you do not know the neighbourhood.</p>
+<p>For the other stations, <strong>we will not publish an address we have not verified</strong>. Neighbourhood prayer rooms open, move and close; quoting one from memory would send someone to a locked door with a train to catch. The tool relies on continuously updated data instead.</p>
+
+<h2>Inside the station: what works, what does not</h2>
+<p>What works: <strong>the far ends of the platforms</strong>, very quiet once you are a hundred metres from the concourse; <strong>lower levels</strong> and connecting corridors off-peak; the area around the left-luggage lockers.</p>
+<p>What does not: the main concourse, the flow zones in front of the departure boards, and platforms at departure time. It is not about being seen, it is about traffic: you do not pray in the middle of a corridor where three hundred people are walking fast with suitcases.</p>
+<p>Two pieces of common sense in a station: <strong>keep your belongings against you</strong> and never leave a bag behind you. An unattended bag triggers a procedure, and you do not want to be the person who gets a concourse evacuated.</p>
+
+<h2>Wudu</h2>
+<p>This is where stations are weakest. Toilets are <strong>often paid</strong> — bring coins or a card, depending on the station — and busy, with high basins. The two habits that change everything: filling <strong>a small squeezable bottle</strong> before going into the cubicle, and keeping a <strong>microfibre towel</strong> in your bag. The full method is in our guide: <a href="/blog/wudu-on-a-plane-or-train">making wudu while travelling</a>.</p>
+
+<h2>What we do not rule on</h2>
+<p>Shortening, combining, making up on arrival, praying seated on the train: these are <strong>religious questions</strong>, with differing opinions and conditions, and <strong>we do not answer them</strong>. This guide covers where and how, not what is permitted. Put the question to <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&amp;utm_medium=passerelle&amp;utm_campaign=paris-stations-en" target="_blank" rel="noopener noreferrer">HalalGPT</a>, which is built for it, or to your local imam.</p>
+<p>What we can do is give you the exact window where you are: our <a href="/prayer-times">prayer times</a> still work without a signal once the page is open — useful in an underground station, where reception often drops.</p>
+
+<h2>The prayer that causes trouble</h2>
+<p>In stations it is <strong>Maghrib</strong>: a short window, falling right at the evening departure peak, when the station is at its densest and quiet corners at their rarest. In winter it arrives before many late-afternoon trains. The habit that fixes it: check the day's time <em>before</em> you reach the station, and pray early if the window is already open.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Is there a prayer room at Gare du Nord or Gare de Lyon?</strong> No. No French railway station has one. The surrounding district does.<br/>
+<strong>Can you pray inside the station?</strong> Nothing forbids it somewhere that does not block the way. Platform ends are the quietest.<br/>
+<strong>Where can you make wudu?</strong> In the station toilets, often paid.<br/>
+<strong>And on the train?</strong> See our guide <a href="/blog/praying-on-a-train">praying on a train</a>.<br/>
+<strong>And at airports?</strong> There, spaces do exist: see <a href="/blog/where-to-pray-paris-airports">airport prayer rooms</a>.</p>
+
+<h2>Help the community</h2>
+<p>Do you know <strong>the discreet prayer room near a Paris station</strong>? That is the most valuable information on this page, and the only thing we cannot produce on our own. Tell us which one, near which station, and how many minutes' walk. <a href="/communaute/ajouter">→ Add the place</a> · <a href="/communaute">→ Join the community</a></p>
+`,
+  },
+  {
     slug: "ou-prier-gares-paris",
     title: "Où prier dans les gares de Paris : 6 gares (2026)",
     tags: ["Gare", "Paris", "Train", "Prière", "Pratique"],
-    description: "Pas de salle de prière dans les gares françaises — mais des solutions à moins de 15 minutes existent presque toujours. Le guide gare par gare.",
+    description: "Aucune gare française n'a de salle de prière. La règle des 45 minutes, les coins qui marchent dans la gare, et où faire ses ablutions.",
     coverImage: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&q=80",
     category: 'Pratique',
-    readTime: "4 min",
+    readTime: "8 min",
     publishedAt: '2026-08-06',
-    content: `<p>Correspondance à Paris, train dans deux heures, et l'heure de la prière qui tourne ? Voici la réalité des gares parisiennes et les solutions qui marchent.</p>
-<h2>L'essentiel en 30 secondes</h2><p>Contrairement aux <a href="/blog/ou-prier-aeroports">aéroports</a>, les gares françaises n'ont pas de salles de prière. MAIS : Paris étant Paris, une mosquée ou salle de prière de quartier se trouve presque toujours à 10-15 minutes à pied d'une grande gare. Le réflexe : <a href="/mosquee-proche">notre outil mosquée la plus proche</a> dès l'arrivée sur le quai.</p>
-<h2>1. Le réflexe n°1 : la mosquée de quartier</h2><p>Chaque grande gare parisienne (Nord, Est, Lyon, Montparnasse, Saint-Lazare, Austerlitz) est entourée de quartiers vivants où les salles de prière existent — souvent discrètes, rarement sur les cartes touristiques. <a href="/mosquee-proche">L'outil</a> géolocalise la plus proche en deux secondes ; avec 45 minutes devant toi, c'est jouable.</p>
-<h2>2. Dans la gare : les coins possibles</h2><p>Extrémités de quais peu fréquentées, niveaux inférieurs calmes, recoins près des consignes… En dernier recours, un coin propre et discret fait l'affaire — tapis de poche et <a href="/qibla">outil qibla</a>. Évite les zones de flux et reste attentif à tes affaires.</p>
-<h2>3. Le timing malin</h2><p>Arrivé en avance ? Prie AVANT d'entrer en mode « embarquement ». Correspondance serrée ? Les facilités du voyageur existent pour ça : raccourcir, regrouper (dhuhr+asr / maghrib+isha), et prier sereinement à destination. <a href="/blog/prier-en-train">Prier dans le train</a> est aussi une option couverte dans notre guide dédié.</p>
-<h2>Questions fréquentes</h2><p><strong>Salle de prière à Gare du Nord / Gare de Lyon ?</strong> Non, aucune gare française n'en a — mais le quartier, oui : utilise l'outil.<br/><strong>Ablutions ?</strong> Toilettes de la gare (souvent payantes, monnaie utile).<br/><strong>Train imminent ?</strong> Regroupe, ou prie à bord — c'est prévu par la religion pour le voyageur.</p>
-<h2>Aide la communauté</h2><p>Tu connais LA salle de prière discrète près d'une gare parisienne ? C'est l'info la plus précieuse de ce guide — partage-la, une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
+    content: `<p>Correspondance à Paris, train dans deux heures, et l'heure de la prière qui tourne ? Voici la réalité des gares parisiennes — y compris ce qu'elles n'ont pas — et les solutions qui marchent vraiment selon le temps qu'il te reste.</p>
+
+<h2>L'essentiel en 30 secondes</h2>
+<p>Commençons par la mauvaise nouvelle, dite franchement : <strong>les gares françaises n'ont pas de salle de prière</strong>. Ni Gare du Nord, ni Gare de Lyon, ni Montparnasse. Ce n'est pas un oubli de notre part, c'est la situation. La bonne nouvelle est que Paris est Paris : autour de chaque grande gare, le quartier en compte, souvent discrètes et rarement signalées sur les cartes.</p>
+<p>Tout dépend donc d'une seule chose : <strong>combien de minutes te reste-t-il ?</strong></p>
+
+<h2>La règle des 45 minutes</h2>
+<p>C'est le seuil qui décide de tout, et il vaut mieux le trancher sur le quai que devant une porte fermée.</p>
+<p><strong>Plus de 45 minutes</strong> : sortir de la gare est jouable. Compte dix à quinze minutes de marche à l'aller, autant au retour, et garde une marge pour retrouver ton quai — les grandes gares parisiennes sont vastes et l'affichage du quai tombe souvent tard.<br/>
+<strong>Entre 20 et 45 minutes</strong> : reste dans la gare et repère un coin calme (voir plus bas). Sortir, c'est prendre le risque de courir.<br/>
+<strong>Moins de 20 minutes</strong> : ne bouge pas. Prépare-toi à prier à bord ou à l'arrivée.</p>
+
+<h2>Trouver la salle de prière du quartier</h2>
+<p>Chaque grande gare — Nord, Est, Lyon, Montparnasse, Saint-Lazare, Austerlitz — est entourée de quartiers vivants où des salles existent. <a href="/mosquee-proche">Notre outil mosquée la plus proche</a> te géolocalise et te donne la plus proche en deux secondes, avec l'itinéraire.</p>
+<p>Un repère utile pour le sud-est de Paris : la <strong>Grande Mosquée de Paris</strong>, dans le 5<sup>e</sup> arrondissement, est à une quinzaine de minutes de marche de la gare d'Austerlitz — c'est un lieu public, ouvert et facile à trouver, ce qui en fait la valeur sûre du secteur quand on ne connaît pas le quartier.</p>
+<p>Pour les autres gares, <strong>nous ne publierons pas d'adresse que nous n'avons pas vérifiée</strong>. Les salles de quartier ouvrent, déménagent et ferment ; en citer une de mémoire enverrait quelqu'un devant une porte close avec un train à prendre. L'outil, lui, s'appuie sur des données mises à jour en continu.</p>
+
+<h2>Dans la gare : où ça marche, où ça ne marche pas</h2>
+<p>Ce qui marche : les <strong>extrémités de quai</strong>, très peu fréquentées dès qu'on s'éloigne de cent mètres du hall ; les <strong>niveaux inférieurs</strong> et les couloirs de correspondance en heures creuses ; les abords des consignes à bagages.</p>
+<p>Ce qui ne marche pas : le hall central, les zones de flux devant les panneaux d'affichage, et les quais au moment d'un départ. Ce n'est pas une question de regard des autres, c'est une question de passage : on ne prie pas au milieu d'un couloir où trois cents personnes marchent vite avec des valises.</p>
+<p>Deux précautions de bon sens dans une gare : <strong>garde tes affaires contre toi</strong> et évite de laisser un sac derrière toi. Un bagage isolé déclenche une procédure, et tu ne veux pas être celui qui fait évacuer un hall.</p>
+
+<h2>Les ablutions</h2>
+<p>C'est le point faible des gares. Les toilettes y sont <strong>souvent payantes</strong> — prévois de la monnaie ou une carte, selon la gare — et fréquentées, avec des lavabos hauts. Les deux habitudes qui changent tout : remplir <strong>une petite bouteille souple</strong> avant d'entrer dans la cabine, et garder une <strong>serviette microfibre</strong> dans le sac. La méthode complète est dans notre guide : <a href="/blog/ablutions-avion-train">faire ses ablutions en voyage</a>.</p>
+
+<h2>Ce que nous ne tranchons pas</h2>
+<p>Raccourcir, regrouper, rattraper à l'arrivée, prier assis dans le train : ce sont des <strong>questions religieuses</strong>, avec des avis et des conditions, et <strong>nous n'y répondons pas</strong>. Ce guide dit où et comment, pas ce qui est permis. Pose la question à <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&amp;utm_medium=passerelle&amp;utm_campaign=gares-paris" target="_blank" rel="noopener noreferrer">HalalGPT</a>, qui est fait pour ça, ou à l'imam de ta mosquée.</p>
+<p>Ce que nous pouvons faire, c'est te donner l'heure exacte du créneau là où tu es : nos <a href="/horaires-priere">horaires de prière</a> fonctionnent encore sans réseau une fois la page ouverte — utile dans une gare souterraine, où le réseau tombe souvent.</p>
+
+<h2>La prière qui pose problème</h2>
+<p>Dans les gares, c'est <strong>Maghrib</strong> : créneau court, et il tombe en plein pic de départs du soir, quand la gare est la plus dense et les coins calmes les plus rares. En hiver il arrive même avant beaucoup de trains de fin d'après-midi. Le réflexe qui règle ça : regarder l'heure du jour <em>avant</em> d'arriver à la gare, et prier en avance si le créneau est déjà ouvert.</p>
+
+<h2>Questions fréquentes</h2>
+<p><strong>Y a-t-il une salle de prière à Gare du Nord ou Gare de Lyon ?</strong> Non. Aucune gare française n'en a. Le quartier, lui, en compte.<br/>
+<strong>Peut-on prier dans la gare ?</strong> Rien ne l'interdit dans un endroit qui ne gêne pas le passage. Les extrémités de quai sont les plus tranquilles.<br/>
+<strong>Où faire les ablutions ?</strong> Dans les toilettes de la gare, souvent payantes.<br/>
+<strong>Et dans le train ?</strong> Voir notre guide <a href="/blog/prier-en-train">prier dans le train</a>.<br/>
+<strong>Et dans les aéroports ?</strong> Là, il y a des espaces : voir <a href="/blog/ou-prier-aeroports">les salles de prière des aéroports</a>.</p>
+
+<h2>Aide la communauté</h2>
+<p>Tu connais <strong>la salle de prière discrète près d'une gare parisienne</strong> ? C'est l'information la plus précieuse de cette page, et la seule que nous ne pouvons pas produire seuls. Dis-nous laquelle, près de quelle gare, et combien de minutes de marche. <a href="/communaute/ajouter">→ Ajouter le lieu</a> · <a href="/communaute">→ Rejoindre la communauté</a></p>`,
   },
   {
     slug: "ou-prier-stade-de-france",
