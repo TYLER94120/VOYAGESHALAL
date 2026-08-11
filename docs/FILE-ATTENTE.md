@@ -55,19 +55,43 @@ requêtes ces pages sortent réellement.
 premier compteur renvoyait 0 partout) : 11 pages, 2 853 mots au total,
 soit 259 en moyenne. Disneyland est passée à 879, **CDG à 1 207**,
 **Orly à 1 249**, **guide aéroports à 1 134**, **gares de Paris à 940**,
-**Marseille à 814**, **Lyon à 850** ; restent Bruxelles 221, Genève 208,
-Toulouse 193, Nice 185.
+**Marseille à 814**, **Lyon à 850**, **Bruxelles à 765** ; restent
+Genève 208, Toulouse 193, Nice 185.
 Nos guides récents font 900 à 1 200 mots.
 Le modèle est en place : ce qu'on peut ajouter sans rien inventer, c'est
 la méthode (que demander, que faire si on dit non), les ablutions, la
 prière qui pose problème selon la saison, et l'aveu de ce qu'on ne sait
-pas. **Suivante à traiter : Bruxelles** (221 mots), puis Genève (208).
+pas. **Suivante à traiter : Genève** (208 mots), puis Toulouse (193) et Nice (185).
 
 
 
 ---
 
 ## Fait
+
+### Bruxelles : l'inverse exact de Lyon, et c'est une bonne nouvelle — 11 août
+Huitième page « où prier » approfondie. **Avant** : 221 mots en français,
+201 en anglais. **Après : 765 et 732.**
+
+**Ce que la page ne disait pas, et qui la rend utile** : à Zaventem les
+salles sont **après les contrôles** et **ouvertes 24h/24**. C'est l'exact
+inverse de Lyon (salle côté ville) et la réponse au défaut n° 1 relevé à
+Orly (fermeture vers 22h qui rend Fajr et Isha inaccessibles). Pour un vol
+de nuit ou un premier vol du matin, c'est l'aéroport le plus simple de la
+série — dit en tête, avec la conséquence : si tu es encore côté ville, tu
+ne peux pas y aller, passe les contrôles d'abord.
+
+**Sixième page de la série avec la même contradiction**, réparée : elle
+tranchait une question religieuse (« Prière du voyageur raccourcie et
+regroupée »).
+
+**Ce que nous n'affirmons pas** : la présence d'un espace d'ablutions. Nous
+n'en avons pas trace, donc nous ne l'écrivons pas — et c'est justement ce
+que la page demande à la communauté.
+
+**Vérifié sur les deux domaines** : 10 h2 de chaque côté, titres à 47 et 46
+caractères, descriptions à 147 et 144, hreflang réciproque, 10 liens
+internes en 200 de chaque côté.
 
 ### Lyon : la salle existe, mais elle est côté ville — 11 août
 Septième page « où prier » approfondie, la plus courte qui restait.

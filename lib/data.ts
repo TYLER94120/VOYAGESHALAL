@@ -2571,24 +2571,53 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     description: "Traveling via Brussels-Zaventem? The airport has several prayer rooms, including a dedicated Muslim room, open 24/7. Here is where to find them.",
     coverImage: "/guides/blog-bruxelles.jpg",
     category: 'Practical',
-    readTime: "4 min",
+    readTime: "6 min",
     publishedAt: '2026-08-01',
     lang: 'en',
     tags: ['prayer', 'airport', 'brussels'],
     content: `
-<p>Traveling via Brussels-Zaventem? The airport has several prayer rooms, including a dedicated Muslim room, open 24/7. Here is where to find them.</p>
+<p>Travelling via Brussels-Zaventem and wondering where to pray? Of our whole series, this is the best-equipped airport — and for once, <strong>it is the traveller in a hurry who is best served</strong>. Here is why, and how to plan around it.</p>
+
 <h2>The essentials in 30 seconds</h2>
-<p>The rooms are after security, in the A and B gate areas. A dedicated Muslim room, plus spaces for Jewish, Catholic, Orthodox and Protestant worship. Open 24/7, access with a boarding pass.</p>
-<h2>Where the prayer rooms are</h2>
-<p>Terminal B: above the shops, at the far end of the hall. Terminal A: at the top of the stairs, near the Crystal Media Shop, opposite gate A42, at lounge level. Follow the "prayer rooms" signs.</p>
-<h2>Good to know</h2>
-<p>Rooms are after security, so a boarding pass is required. Open 24/7 — precious for night flights. Dedicated contact: prayerrooms@brusselsairport.be.</p>
-<h2>Practical tips</h2>
-<p>Check whether you fly from the A or B gates. Plan your wudu. Traveler's prayer, shortened and combined. Use <a href="/qibla">our qibla tool</a>.</p>
+<p>Zaventem has <strong>several prayer rooms</strong>, including a <strong>dedicated Muslim room</strong>, in the A and B gate areas. They are <strong>after security</strong> and <strong>open 24/7</strong>. Access is free, but you need a boarding pass — so you must already be airside.</p>
+
+<h2>The opposite of Lyon, and that is good news</h2>
+<p>At Lyon the room is landside: once through security it is out of reach. At Brussels it is exactly the reverse. The rooms are <strong>in the departure zone</strong>, so:</p>
+<p>· if you have already cleared security, you are in the right place — the most common and the most time-pressed case;<br/>
+· if you are still <strong>landside</strong>, you cannot get there: clear security first, then pray at your ease.</p>
+<p>Above all, <strong>being open 24/7 solves the number one airport problem</strong>: at Orly the room closes around 22:00, which puts Fajr and Isha out of reach for much of the year. Not here. For a night flight or a first flight of the morning, Zaventem is the easiest airport in the series.</p>
+
+<h2>Where they are</h2>
+<p><strong>B gates area</strong>: above the shops, at the far end of the hall.<br/>
+<strong>A gates area</strong>: at the top of the stairs, near the Crystal Media Shop, opposite gate A42, at lounge level.</p>
+<p>Follow the <strong>“prayer rooms”</strong> signs — that is the wording used on site, and it works in all three languages of the airport. The pictogram is on the overhead panels next to the toilets: look up rather than hunting for a door.</p>
+
+<h2>What we know, and where it comes from</h2>
+<p>These locations come from the <strong>airport's public information</strong>. <strong>We have not verified them ourselves on site</strong>, and airports get rebuilt. Zaventem publishes a <strong>contact address dedicated to the prayer rooms</strong>: <a href="mailto:prayerrooms@brusselsairport.be">prayerrooms@brusselsairport.be</a>. That is rare, and it is the best way to get an up-to-date answer before you travel.</p>
+<p>What we will not claim: that there is a dedicated wudu area. We have no trace of one, so we do not write it.</p>
+
+<h2>Wudu</h2>
+<p>In the toilets, then, until proven otherwise. Two habits change everything against high basins and sensor taps: filling <strong>a small squeezable bottle</strong> before going into the cubicle, and keeping a <strong>microfibre towel</strong> in your cabin bag. The full method is in our guide: <a href="/blog/wudu-on-a-plane-or-train">making wudu while travelling</a>.</p>
+
+<h2>If you have no time to get there</h2>
+<p>Zaventem is large, and a room at the far end of the terminal is unreachable when boarding is close. Two markers:</p>
+<p><strong>· Boarding closes around 20 minutes before departure.</strong> That is your real deadline, not the time on the board.<br/>
+<strong>· A quiet corner near your gate is enough.</strong> Pier ends and gates for later departures empty out between flights. A pocket mat and two minutes.</p>
+<p>A <strong>pocket prayer mat is no problem at security</strong>: it is an ordinary item. Pack it along the side of your bag.</p>
+
+<h2>What we do not rule on</h2>
+<p>Shortening, combining, making up on arrival, praying seated: these are <strong>religious questions</strong>, with differing opinions and conditions, and <strong>we do not answer them</strong>. This page covers where and how, not what is permitted. Put the question to <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&amp;utm_medium=passerelle&amp;utm_campaign=brussels-en" target="_blank" rel="noopener noreferrer">HalalGPT</a>, which is built for it, or to your local imam.</p>
+<p>What we can do is give you the exact window: our <a href="/prayer-times">prayer times</a> give them for Brussels, and the page still works without a signal once open.</p>
+
 <h2>Frequently asked questions</h2>
-<p><strong>Is there a Muslim room in Brussels?</strong> Yes, in the A and B gate areas, after security.<br/><strong>Opening hours?</strong> 24/7.<br/><strong>Do I need a ticket?</strong> Yes, a boarding pass.</p>
+<p><strong>Is there a Muslim prayer room at Brussels-Zaventem?</strong> Yes, a dedicated room, in the A and B gate areas.<br/>
+<strong>Is it before or after security?</strong> After. So you need a boarding pass.<br/>
+<strong>What are the opening hours?</strong> 24/7 — the only airport in our series like that.<br/>
+<strong>Is it free?</strong> Yes.<br/>
+<strong>And other airports?</strong> See <a href="/blog/where-to-pray-paris-airports">our complete airport prayer room guide</a>.</p>
+
 <h2>Help the community</h2>
-<p>A changed location, a new landmark at Zaventem? Share it — an ongoing sadaqa. <a href="/communaute">→ Join the community</a></p>
+<p>Have you prayed at Zaventem recently? Tell us <strong>which area, whether the location has changed, and whether there is anywhere to make wudu</strong>. That last point is the one thing we have nothing on, and it matters. <a href="/communaute/ajouter">→ Add the place</a> · <a href="/communaute">→ Join the community</a></p>
 `,
   },
   {
@@ -3246,16 +3275,51 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     description: "Bruxelles-Zaventem dispose de plusieurs salles de prière, dont une salle musulmane dédiée, ouvertes 24h/24 après la sécurité. Voici où les trouver.",
     coverImage: "/guides/blog-bruxelles.jpg",
     category: 'Pratique',
-    readTime: "3 min",
+    readTime: "7 min",
     publishedAt: '2026-07-20',
     tags: ["Bruxelles", "Aéroports", "Prière"],
-    content: `<p>Tu voyages via Bruxelles-Zaventem ? L'aéroport dispose de plusieurs salles de prière, dont une salle musulmane dédiée, ouvertes 24h/24. Voici où les trouver.</p>
-<h2>L'essentiel en 30 secondes</h2><p>Les salles sont après les contrôles de sécurité, dans les zones des portes A et B. Une salle dédiée aux musulmans, plus des espaces pour les cultes juif, catholique, orthodoxe et protestant. Ouvertes 24h/24, accès avec carte d'embarquement.</p>
-<h2>Où se trouvent les salles de prière</h2><p>Au Terminal B : au-dessus des boutiques, au fond du hall. Au Terminal A : en haut des escaliers, près du Crystal Media Shop, face à la porte A42, au niveau des salons. Suis la signalétique « prayer rooms / salles de prière ».</p>
-<h2>Bon à savoir</h2><p>Salles après les contrôles → carte d'embarquement nécessaire. Ouvertes 24h/24 (précieux pour les vols de nuit). Contact dédié : prayerrooms@brusselsairport.be.</p>
-<h2>Conseils pratiques</h2><p>Repère si tu pars des portes A ou B. Anticipe les ablutions. Prière du voyageur raccourcie et regroupée. Utilise <a href="/qibla">notre outil qibla</a>.</p>
-<h2>Questions fréquentes</h2><p><strong>Salle musulmane à Bruxelles ?</strong> Oui, dans les zones des portes A et B, après la sécurité.<br/><strong>Horaires ?</strong> 24h/24.<br/><strong>Un billet ?</strong> Oui, carte d'embarquement.</p>
-<p>Voir aussi <a href="/blog/ou-prier-aeroports">notre guide complet des aéroports</a>.</p><h2>Aide la communauté</h2><p>Un emplacement modifié, un nouveau repère à Zaventem ? Partage-le — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
+    content: `<p>Tu voyages via Bruxelles-Zaventem et tu cherches où prier ? C'est, de toute notre série, l'aéroport le mieux équipé — et pour une fois, <strong>c'est le voyageur pressé qui est le mieux servi</strong>. Voici pourquoi, et comment t'organiser.</p>
+
+<h2>L'essentiel en 30 secondes</h2>
+<p>Zaventem dispose de <strong>plusieurs salles de prière</strong>, dont une <strong>salle musulmane dédiée</strong>, dans les zones des portes A et B. Elles sont <strong>après les contrôles de sécurité</strong> et <strong>ouvertes 24h/24</strong>. L'accès est gratuit, mais il faut une carte d'embarquement — donc être déjà passé.</p>
+
+<h2>L'inverse de Lyon, et c'est une bonne nouvelle</h2>
+<p>À Lyon, la salle est côté ville : une fois les contrôles passés, elle est hors d'atteinte. À Bruxelles, c'est exactement le contraire. Les salles sont <strong>en zone d'embarquement</strong>, donc :</p>
+<p>· si tu es déjà passé, tu es au bon endroit — c'est le cas le plus fréquent et le plus contraint en temps ;<br/>
+· si tu es encore <strong>côté ville</strong>, tu ne peux pas y aller : passe les contrôles d'abord, puis prie tranquillement.</p>
+<p>Et surtout, <strong>l'ouverture 24h/24 règle le problème n° 1 des aéroports</strong> : à Orly la salle ferme vers 22h, ce qui rend Fajr et Isha inaccessibles une grande partie de l'année. Ici, non. Pour un vol de nuit ou un premier vol du matin, Zaventem est l'aéroport le plus simple de la série.</p>
+
+<h2>Où elles se trouvent</h2>
+<p><strong>Zone des portes B</strong> : au-dessus des boutiques, au fond du hall.<br/>
+<strong>Zone des portes A</strong> : en haut des escaliers, près du Crystal Media Shop, face à la porte A42, au niveau des salons.</p>
+<p>Suis la signalétique <strong>« prayer rooms »</strong> — c'est le terme employé sur place, et il fonctionne dans les trois langues de l'aéroport. Le pictogramme est sur les panneaux suspendus, à côté de ceux des toilettes : lève les yeux plutôt que de chercher une porte.</p>
+
+<h2>Ce que nous savons, et d'où ça vient</h2>
+<p>Ces emplacements viennent des <strong>informations publiques de l'aéroport</strong>. <strong>Nous ne les avons pas vérifiés nous-mêmes sur place</strong>, et un aéroport se réaménage. Zaventem publie une <strong>adresse de contact dédiée aux salles de prière</strong> : <a href="mailto:prayerrooms@brusselsairport.be">prayerrooms@brusselsairport.be</a>. C'est rare, et c'est le meilleur moyen d'avoir une réponse à jour avant de partir.</p>
+<p>Ce que nous n'affirmerons pas : la présence d'un espace d'ablutions dédié. Nous n'en avons pas trace, donc nous ne l'écrivons pas.</p>
+
+<h2>Les ablutions</h2>
+<p>Aux toilettes, donc, jusqu'à preuve du contraire. Deux habitudes qui changent tout face aux lavabos hauts et aux robinets à capteur : remplir <strong>une petite bouteille souple</strong> avant d'entrer dans la cabine, et garder une <strong>serviette microfibre</strong> dans le bagage cabine. La méthode complète est dans notre guide : <a href="/blog/ablutions-avion-train">faire ses ablutions en voyage</a>.</p>
+
+<h2>Si tu n'as pas le temps d'y aller</h2>
+<p>Zaventem est vaste, et une salle à l'autre bout du terminal reste inatteignable quand l'embarquement approche. Deux repères :</p>
+<p><strong>· L'embarquement ferme environ 20 minutes avant le décollage.</strong> C'est ta vraie limite, pas l'heure affichée au tableau.<br/>
+<strong>· Un coin calme près de ta porte suffit.</strong> Les extrémités de jetée et les portes des vols suivants se vident entre deux départs. Un tapis de poche et deux minutes.</p>
+<p>Un <strong>tapis de prière de poche ne pose aucun problème au contrôle</strong> : c'est un objet courant. Range-le sur le côté du sac.</p>
+
+<h2>Ce que nous ne tranchons pas</h2>
+<p>Raccourcir, regrouper, rattraper à l'arrivée, prier assis : ce sont des <strong>questions religieuses</strong>, avec des avis et des conditions, et <strong>nous n'y répondons pas</strong>. Cette page dit où et comment, pas ce qui est permis. Pose la question à <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&amp;utm_medium=passerelle&amp;utm_campaign=bruxelles" target="_blank" rel="noopener noreferrer">HalalGPT</a>, qui est fait pour ça, ou à l'imam de ta mosquée.</p>
+<p>Ce que nous pouvons faire, c'est te donner l'heure exacte du créneau : nos <a href="/horaires-priere">horaires de prière</a> les donnent pour Bruxelles, et la page fonctionne encore sans réseau une fois ouverte.</p>
+
+<h2>Questions fréquentes</h2>
+<p><strong>Y a-t-il une salle de prière musulmane à Bruxelles-Zaventem ?</strong> Oui, une salle dédiée, dans les zones des portes A et B.<br/>
+<strong>Est-ce avant ou après la sécurité ?</strong> Après. Il faut donc une carte d'embarquement.<br/>
+<strong>Quels horaires ?</strong> 24h/24 — le seul aéroport de notre série dans ce cas.<br/>
+<strong>Est-ce payant ?</strong> Non.<br/>
+<strong>Et les autres aéroports ?</strong> Voir <a href="/blog/ou-prier-aeroports">notre guide complet des salles de prière d'aéroport</a>.</p>
+
+<h2>Aide la communauté</h2>
+<p>Tu as prié à Zaventem récemment ? Dis-nous <strong>dans quelle zone, si l'emplacement a changé, et s'il y a de quoi faire les ablutions</strong>. C'est le seul point sur lequel nous n'avons rien, et il compte. <a href="/communaute/ajouter">→ Ajouter le lieu</a> · <a href="/communaute">→ Rejoindre la communauté</a></p>`,
   },
   {
     slug: "prier-en-avion",
