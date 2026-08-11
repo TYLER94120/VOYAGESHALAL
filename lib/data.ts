@@ -2542,27 +2542,54 @@ If an adjustment is required, it is almost always possible to do it yourself rat
   {
     slug: "where-to-pray-geneva-airport",
     title: "Where to pray at Geneva airport — 2026 guide",
-    description: "Transiting through Geneva-Cointrin? The airport has a multi-faith quiet room after security, with prayer mats and a Quran. Here is where to find it.",
+    description: "Geneva-Cointrin has a shared quiet room, after security, on the mezzanine. Where to find it, what is provided, and what to do when it is occupied.",
     coverImage: "/guides/blog-geneve.jpg",
     category: 'Practical',
-    readTime: "3 min",
+    readTime: "6 min",
     publishedAt: '2026-08-01',
     lang: 'en',
     tags: ['prayer', 'airport', 'geneva'],
     content: `
-<p>Transiting through Geneva-Cointrin? The airport has a multi-faith quiet room located after security. Here is where to find it.</p>
+<p>Transiting through Geneva-Cointrin and looking for somewhere to pray? There is a space, it is well placed, and it has one particularity: <strong>it is a shared quiet room, not a Muslim prayer room</strong>. Here is what that changes in practice.</p>
+
 <h2>The essentials in 30 seconds</h2>
-<p>Geneva Airport offers a meditation / quiet room open to all religions, in the transit zone (after security). You will find prayer mats and a Quran there.</p>
-<h2>Where the prayer space is</h2>
-<p>In the transit zone, on the mezzanine, near the airline lounges, towards the kids' area / nursery. Follow the "quiet room" symbol after security, then go up to the mezzanine. A small, calm and bright room.</p>
-<h2>Good to know</h2>
-<p>The space is after security, so you need a boarding pass. The room is small: pray at a quieter time if you can.</p>
-<h2>Practical tips</h2>
-<p>Plan your wudu. Traveler's prayer, shortened and combined. Use <a href="/qibla">our qibla tool</a> even though mats are provided.</p>
+<p>Geneva Airport provides a <strong>meditation / quiet room open to all religions</strong>, in the <strong>transit zone, after security</strong>. According to the airport's public information, you will find <strong>prayer mats and a Quran</strong> there. Access is free, but you need a boarding pass.</p>
+
+<h2>After security: what that implies</h2>
+<p>Good news for the most common case — you are already airside, waiting for your flight, and the room is reachable. But the reverse holds too: <strong>if you are still landside, you cannot get there</strong>. Clear security first, then go up. And if you have just landed in Geneva without flying on, this room is not for you: look for a mosque in town with <a href="/mosque-near-me">our nearest-mosque tool</a>.</p>
+
+<h2>Where to find it</h2>
+<p>In the <strong>transit zone</strong>, on the <strong>mezzanine</strong>, near the airline lounges, towards the kids' area. Follow the <strong>“quiet room”</strong> symbol after security, then go up to the mezzanine.</p>
+<p>The wording matters: Swiss signage says “espace de recueillement” or “quiet room”, not “prayer room”. If you ask staff for a prayer room, say “the quiet room” — you will get an immediate answer.</p>
+
+<h2>A small room, and a shared one</h2>
+<p>This is Geneva's particularity, and it deserves saying. The space is <strong>small</strong> and <strong>multi-faith</strong>: other people may be using it, in silence, for something else entirely. Two practical consequences:</p>
+<p>· <strong>Pray at a quiet moment if you can</strong> — at the departure peak, a small room fills up fast.<br/>
+· <strong>Have a fallback</strong>: if the room is occupied and your window is closing, a quiet corner near your gate will do. It beats waiting.</p>
+
+<h2>What we know, and what we do not guarantee</h2>
+<p>The location and the mats come from the <strong>airport's public information</strong> — <strong>we have not verified them ourselves on site</strong>. And this kind of provision can disappear without notice: <strong>keep your pocket mat in your bag</strong> rather than relying on it. A pocket mat is no problem at security, it is an ordinary item.</p>
+<p>We do not publish opening hours: we have none we trust.</p>
+
+<h2>Wudu</h2>
+<p>We have no trace of a dedicated wudu area, so it is the toilets — high basins and sensor taps that cut the water every three seconds. Two habits change everything: filling <strong>a small squeezable bottle</strong> before going into the cubicle, and keeping a <strong>microfibre towel</strong> in your cabin bag. The full method is in our guide: <a href="/blog/wudu-on-a-plane-or-train">making wudu while travelling</a>.</p>
+
+<h2>What we do not rule on</h2>
+<p>Shortening, combining, making up on arrival, praying seated: these are <strong>religious questions</strong>, with differing opinions and conditions, and <strong>we do not answer them</strong>. This page covers where and how, not what is permitted. Put the question to <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&amp;utm_medium=passerelle&amp;utm_campaign=geneva-en" target="_blank" rel="noopener noreferrer">HalalGPT</a>, which is built for it, or to your local imam.</p>
+<p>What we can do is give you the exact window: our <a href="/prayer-times">prayer times</a> give them for Geneva, and the page still works without a signal once open — useful in a transit zone on a foreign plan.</p>
+
+<h2>The calculation that decides everything</h2>
+<p><strong>Boarding closes around 20 minutes before departure.</strong> That is your real deadline, not the time on the board. Going up to the mezzanine, finding the room and praying takes time: if the gap is short, the quiet corner near your gate is the sensible choice.</p>
+
 <h2>Frequently asked questions</h2>
-<p><strong>Is there a prayer room in Geneva?</strong> Yes, a multi-faith quiet room in the transit zone.<br/><strong>Mats?</strong> Yes, mats and a Quran available.<br/><strong>Do I need a ticket?</strong> Yes, a boarding pass is required.</p>
+<p><strong>Is there a prayer room at Geneva airport?</strong> A multi-faith quiet room, in the transit zone — not a dedicated Muslim room.<br/>
+<strong>Is it before or after security?</strong> After. Boarding pass required.<br/>
+<strong>Are there mats?</strong> According to the airport, yes, along with a Quran. Keep your own anyway.<br/>
+<strong>Is it free?</strong> Yes.<br/>
+<strong>And other airports?</strong> See <a href="/blog/where-to-pray-paris-airports">our complete airport prayer room guide</a>.</p>
+
 <h2>Help the community</h2>
-<p>Space moved, a new landmark at Cointrin? Share it — an ongoing sadaqa. <a href="/communaute">→ Join the community</a></p>
+<p>Have you prayed at Cointrin recently? Tell us <strong>whether the mats are still there, whether the room has moved, and whether there is anywhere to make wudu</strong>. Those are the three points we cannot state anything about. <a href="/communaute/ajouter">→ Add the place</a> · <a href="/communaute">→ Join the community</a></p>
 `,
   },
   {
@@ -3255,19 +3282,52 @@ If an adjustment is required, it is almost always possible to do it yourself rat
   {
     slug: "ou-prier-aeroport-geneve",
     title: "Où prier à l'aéroport de Genève — guide 2026",
-    description: "Genève-Cointrin dispose d'un espace de recueillement multiconfessionnel après les contrôles de sécurité, avec tapis de prière et Coran. Voici où le trouver.",
+    description: "Genève-Cointrin a un espace de recueillement partagé, après les contrôles, sur la mezzanine. Où le trouver, ce qu'on y trouve, et quoi faire s'il est occupé.",
     coverImage: "/guides/blog-geneve.jpg",
     category: 'Pratique',
-    readTime: "3 min",
+    readTime: "7 min",
     publishedAt: '2026-07-20',
     tags: ["Genève", "Aéroports", "Prière"],
-    content: `<p>Tu transites par Genève-Cointrin ? L'aéroport dispose d'un espace de recueillement multiconfessionnel après les contrôles de sécurité. Voici où le trouver.</p>
-<h2>L'essentiel en 30 secondes</h2><p>Genève Aéroport propose un espace de recueillement / méditation ouvert à toutes les religions, en zone de transit (après la sécurité). On y trouve des tapis de prière et un Coran.</p>
-<h2>Où se trouve l'espace de prière</h2><p>En zone de transit, sur la mezzanine, à proximité des salons des compagnies, en direction de l'espace enfants / nurserie. Suis le symbole « espace de recueillement » après la sécurité, puis monte à la mezzanine. Petite salle, calme et lumineuse.</p>
-<h2>Bon à savoir</h2><p>Espace après les contrôles → carte d'embarquement nécessaire. La salle est petite : prie à un moment moins chargé si possible.</p>
-<h2>Conseils pratiques</h2><p>Anticipe les ablutions. Prière du voyageur raccourcie et regroupée. Utilise <a href="/qibla">notre outil qibla</a> même si des tapis sont sur place.</p>
-<h2>Questions fréquentes</h2><p><strong>Salle de prière à Genève ?</strong> Oui, espace de recueillement multiconfessionnel en zone de transit.<br/><strong>Des tapis ?</strong> Oui, tapis et Coran disponibles.<br/><strong>Un billet ?</strong> Oui, carte d'embarquement nécessaire.</p>
-<p>Voir aussi <a href="/blog/ou-prier-aeroports">notre guide complet des aéroports</a>.</p><h2>Aide la communauté</h2><p>Espace déplacé, nouveau repère à Cointrin ? Partage-le — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
+    content: `<p>Tu transites par Genève-Cointrin et tu cherches où prier ? Il y a un espace, il est bien situé, et il a une particularité : <strong>c'est une salle de recueillement partagée, pas une salle de prière musulmane</strong>. Voici ce que ça change concrètement.</p>
+
+<h2>L'essentiel en 30 secondes</h2>
+<p>Genève Aéroport met à disposition un <strong>espace de recueillement / méditation ouvert à toutes les religions</strong>, en <strong>zone de transit, après les contrôles</strong>. D'après les informations publiques de l'aéroport, on y trouve des <strong>tapis de prière et un Coran</strong>. L'accès est gratuit, mais il faut une carte d'embarquement.</p>
+
+<h2>Après les contrôles : ce que ça implique</h2>
+<p>C'est une bonne nouvelle pour le cas le plus fréquent — tu es déjà passé, tu attends ton vol, l'espace est accessible. Mais l'inverse est vrai aussi : <strong>si tu es encore côté ville, tu ne peux pas y aller</strong>. Passe les contrôles d'abord, puis monte. Et si tu viens d'atterrir à Genève sans repartir, cet espace ne te concerne pas : cherche plutôt une mosquée en ville avec <a href="/mosquee-proche">notre outil mosquée la plus proche</a>.</p>
+
+<h2>Où le trouver</h2>
+<p>En <strong>zone de transit</strong>, sur la <strong>mezzanine</strong>, à proximité des salons des compagnies, en direction de l'espace enfants. Suis le symbole <strong>« espace de recueillement »</strong> après la sécurité, puis monte à la mezzanine.</p>
+<p>Le mot compte : la signalétique suisse dit « espace de recueillement » ou « quiet room », pas « salle de prière ». Si tu demandes une salle de prière à un agent, précise « l'espace de recueillement » — tu auras une réponse immédiate.</p>
+
+<h2>Une petite salle, et partagée</h2>
+<p>C'est la particularité de Genève, et elle mérite d'être dite. L'espace est <strong>petit</strong> et il est <strong>multiconfessionnel</strong> : d'autres personnes peuvent l'occuper, en silence, pour tout autre chose. Deux conséquences pratiques :</p>
+<p>· <strong>Prie à un moment creux si tu peux</strong> — au pic des départs, une petite salle se remplit vite.<br/>
+· <strong>Prévois un repli</strong> : si la salle est occupée et que ton créneau se termine, un coin calme près de ta porte fait l'affaire. C'est plus simple que d'attendre.</p>
+
+<h2>Ce que nous savons, et ce que nous ne garantissons pas</h2>
+<p>L'emplacement et la présence de tapis viennent des <strong>informations publiques de l'aéroport</strong> — <strong>nous ne les avons pas vérifiés nous-mêmes sur place</strong>. Et une mise à disposition de ce type peut disparaître sans annonce : <strong>garde ton tapis de poche dans le sac</strong> plutôt que de compter dessus. Un tapis de poche ne pose aucun problème au contrôle, c'est un objet courant.</p>
+<p>Nous ne publions pas d'horaires : nous n'en avons pas de fiables.</p>
+
+<h2>Les ablutions</h2>
+<p>Nous n'avons pas trace d'un espace d'ablutions dédié, donc ce sont les toilettes — lavabos hauts et robinets à capteur qui coupent l'eau toutes les trois secondes. Deux habitudes qui changent tout : remplir <strong>une petite bouteille souple</strong> avant d'entrer dans la cabine, et garder une <strong>serviette microfibre</strong> dans le bagage cabine. La méthode complète est dans notre guide : <a href="/blog/ablutions-avion-train">faire ses ablutions en voyage</a>.</p>
+
+<h2>Ce que nous ne tranchons pas</h2>
+<p>Raccourcir, regrouper, rattraper à l'arrivée, prier assis : ce sont des <strong>questions religieuses</strong>, avec des avis et des conditions, et <strong>nous n'y répondons pas</strong>. Cette page dit où et comment, pas ce qui est permis. Pose la question à <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&amp;utm_medium=passerelle&amp;utm_campaign=geneve" target="_blank" rel="noopener noreferrer">HalalGPT</a>, qui est fait pour ça, ou à l'imam de ta mosquée.</p>
+<p>Ce que nous pouvons faire, c'est te donner l'heure exacte du créneau : nos <a href="/horaires-priere">horaires de prière</a> les donnent pour Genève, et la page fonctionne encore sans réseau une fois ouverte — utile en zone de transit avec un forfait étranger.</p>
+
+<h2>Le calcul qui décide de tout</h2>
+<p><strong>L'embarquement ferme environ 20 minutes avant le décollage.</strong> C'est ta vraie limite, pas l'heure affichée au tableau. Monter à la mezzanine, trouver la salle et prier prend du temps : si l'écart est court, le coin calme près de ta porte est le choix raisonnable.</p>
+
+<h2>Questions fréquentes</h2>
+<p><strong>Y a-t-il une salle de prière à l'aéroport de Genève ?</strong> Un espace de recueillement multiconfessionnel, en zone de transit — pas une salle musulmane dédiée.<br/>
+<strong>Est-ce avant ou après la sécurité ?</strong> Après. Carte d'embarquement nécessaire.<br/>
+<strong>Y a-t-il des tapis ?</strong> D'après l'aéroport, oui, ainsi qu'un Coran. Garde quand même le tien.<br/>
+<strong>Est-ce payant ?</strong> Non.<br/>
+<strong>Et les autres aéroports ?</strong> Voir <a href="/blog/ou-prier-aeroports">notre guide complet des salles de prière d'aéroport</a>.</p>
+
+<h2>Aide la communauté</h2>
+<p>Tu as prié à Cointrin récemment ? Dis-nous <strong>si les tapis sont toujours là, si la salle a bougé, et s'il y a de quoi faire les ablutions</strong>. Ce sont les trois points sur lesquels nous ne pouvons rien affirmer. <a href="/communaute/ajouter">→ Ajouter le lieu</a> · <a href="/communaute">→ Rejoindre la communauté</a></p>`,
   },
   {
     slug: "ou-prier-aeroport-bruxelles",

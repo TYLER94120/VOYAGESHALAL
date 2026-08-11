@@ -55,19 +55,45 @@ requêtes ces pages sortent réellement.
 premier compteur renvoyait 0 partout) : 11 pages, 2 853 mots au total,
 soit 259 en moyenne. Disneyland est passée à 879, **CDG à 1 207**,
 **Orly à 1 249**, **guide aéroports à 1 134**, **gares de Paris à 940**,
-**Marseille à 814**, **Lyon à 850**, **Bruxelles à 765** ; restent
-Genève 208, Toulouse 193, Nice 185.
+**Marseille à 814**, **Lyon à 850**, **Bruxelles à 765**, **Genève à 789** ;
+restent Toulouse 193 et Nice 185.
 Nos guides récents font 900 à 1 200 mots.
 Le modèle est en place : ce qu'on peut ajouter sans rien inventer, c'est
 la méthode (que demander, que faire si on dit non), les ablutions, la
 prière qui pose problème selon la saison, et l'aveu de ce qu'on ne sait
-pas. **Suivante à traiter : Genève** (208 mots), puis Toulouse (193) et Nice (185).
+pas. **Suivantes, et dernières : Toulouse** (193 mots) puis **Nice** (185).
 
 
 
 ---
 
 ## Fait
+
+### Genève : ce n'est pas une salle de prière, c'est une pièce partagée — 11 août
+Neuvième page « où prier » approfondie. **Avant** : 208 mots en français,
+194 en anglais. **Après : 789 et 714.**
+
+**Ce que la page ne disait pas franchement** : l'espace de Cointrin est un
+**espace de recueillement multiconfessionnel**, pas une salle musulmane, et
+il est **petit**. D'autres personnes peuvent l'occuper en silence pour tout
+autre chose. La page le dit maintenant, avec les deux conséquences
+pratiques : viser un moment creux, et prévoir un repli près de la porte
+plutôt que d'attendre.
+
+**Septième page de la série avec la même contradiction, réparée** : elle
+tranchait une question religieuse (« Prière du voyageur raccourcie et
+regroupée »). Le réflexe de gabarit est maintenant éliminé sur toute la
+série.
+
+**Provenance et prudence** : les tapis et le Coran viennent des
+informations publiques de l'aéroport — c'est écrit — et la page conseille
+de **garder son tapis de poche** plutôt que de compter dessus, une mise à
+disposition pouvant disparaître sans annonce. Aucun horaire publié : nous
+n'en avons pas de fiables.
+
+**Vérifié sur les deux domaines** : 11 h2 de chaque côté, titres à 44
+caractères, descriptions à 157 et 146, hreflang réciproque, 10 liens
+internes en 200 de chaque côté.
 
 ### Bruxelles : l'inverse exact de Lyon, et c'est une bonne nouvelle — 11 août
 Huitième page « où prier » approfondie. **Avant** : 221 mots en français,
