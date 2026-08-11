@@ -787,11 +787,17 @@ function ippRendreAccueil(racine) {
 
   // --- une revision due : une ligne, pas un bloc ---
   // L'accueil ne propose qu'un seul geste. Mais si une lecon deja vue revient
-  // aujourd'hui et qu'une lecon neuve passe devant, on ne l'efface pas pour
+  // aujourd'hui et qu'une lecon NEUVE passe devant, on ne l'efface pas pour
   // autant : elle tient sur une ligne, sous le bouton.
+  //
+  // Cette ligne n'existe que pour cette raison-la. Quand la carte du jour est
+  // deja une revision, il n'y a plus rien a rattraper : la ligne se tait. Sinon
+  // l'accueil nommait DEUX lecons differentes — mesure du 11 aout, carte
+  // « Al-Fatiha, Revoir → » et juste dessous « Trois invocations revient
+  // aujourd'hui » — sur un ecran dont toute la regle est une carte, un bouton.
   var rappel = q('rappel');
   if (rappel) {
-    var dues = IPP.aRevoir();
+    var dues = (choix && choix.mode === 'revision') ? [] : IPP.aRevoir();
     var autre = null;
     for (var i = 0; i < dues.length; i++) {
       if (!choix || dues[i].id !== choix.lecon.id) { autre = dues[i]; break; }

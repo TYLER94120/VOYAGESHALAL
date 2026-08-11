@@ -19,8 +19,9 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 > faits** (cycles 7, 8, 9, 11, 12, 14, 15). **L'audit du cycle 16 n'a produit
 > aucun element valable** : son unique constat etait faux, et le cycle 17 l'a
 > retire — voir « Fait ». **L'audit du cycle 18 a conduit le site comme une
-> personne** sur quatre chemins jamais parcourus ainsi : il en sort les elements
-> 1 et 2, et trois promesses verifiees saines.
+> personne** sur quatre chemins jamais parcourus ainsi : ses deux elements sont
+> **faits** (cycles 19 et 20), et trois promesses en sont ressorties saines.
+> Les trois qui restent sont les trois bloques : le prochain cycle sera un audit.
 >
 > **Mesure aux cycles 6, 10, 13, 16 et 18, et rien a corriger** — a ne pas
 > re-mesurer sans raison :
@@ -51,18 +52,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 > - **La revision arrive a J+2** *(cycle 18)*. Les six lecons faites il y a deux
 >   jours : la carte du jour devient **« Revoir → »** au lieu de proposer du neuf.
 
-1. **Quand la carte du jour est deja une revision, la ligne de rappel en nomme
-   une autre.** *(mineur, assume comme tel)*
-   *Preuve :* mesure du 11 aout, cycle 18 — les six lecons dues le meme jour : la
-   carte propose « Sourate Al-Fatiha… Revoir → » et, juste en dessous, la ligne
-   annonce « **Trois invocations** revient aujourd'hui ». Deux lecons differentes
-   nommees sur un ecran dont toute la regle est **une carte, un bouton**.
-   *Pourquoi la ligne existe :* elle a ete ajoutee parce qu'une lecon neuve passe
-   toujours devant, ce qui rendait la revision invisible six jours durant. Ce
-   besoin disparait quand la carte **est** la revision : la ligne devrait alors
-   se taire, ou parler de la meme lecon.
-
-2. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
+1. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
    *Preuve :* c'est la piece la plus puissante de la liste du responsable, et
    elle est la seule non commencee. Le blocage est reel et non technique : une
    notification calee sur une heure de priere suppose de **connaitre** cette
@@ -74,7 +64,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    **N'entre pas en travaux avant arbitrage** — c'est une decision, pas un
    chantier.
 
-3. **Aucune mesure d'entree, et un traceur est interdit ici.**
+2. **Aucune mesure d'entree, et un traceur est interdit ici.**
    *Preuve :* `grep -ril "gtag\|analytics\|plausible\|matomo\|umami"` sur toutes
    les pages et les trois fichiers JavaScript ne rend **rien**. Or le pied de
    page promet « Ta progression reste sur ton telephone. Aucun compte, aucun
@@ -83,7 +73,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    journaux). Bloque jusqu'au deploiement — question posee aux trois autres
    agents dans le brainstorm des passerelles.
 
-4. **La recitation n'a jamais ete entendue par personne.**
+3. **La recitation n'a jamais ete entendue par personne.**
    *Preuve :* `halalgpt.fr:443` et `cdn.islamic.network:443` sont refuses par la
    politique reseau de l'atelier (403 au CONNECT, journalise par le proxy,
    verifie trois fois). Le mecanisme est teste avec un recitateur simule — 7
@@ -95,6 +85,25 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 ---
 
 ## Fait
+
+- **L'accueil ne nomme plus jamais deux lecons a la fois** *(11 aout, cycle
+  20)* — **avant : quand la carte du jour etait deja une revision, la ligne en
+  dessous en nommait une autre. Apres : elle se tait.** Trois scenes mesurees au
+  navigateur, 11 controles.
+  - carte « **Ta lecon du jour** » + une revision due ailleurs → la ligne
+    **parle** : c'est le seul cas pour lequel elle existe, une lecon neuve passe
+    devant et masquerait la revision ;
+  - carte « **Ta revision du jour** » → la ligne **se tait** : il n'y a plus
+    rien a rattraper. C'etait la « Al-Fatiha, Revoir → » sur la carte et
+    « Trois invocations revient aujourd'hui » juste dessous ;
+  - rien de du → la ligne se tait.
+  *Une ligne de code, mais la bonne question :* pas « comment eviter de repeter
+  la meme lecon » — le code l'evitait deja — mais **a quoi cette ligne sert-elle
+  encore** quand la carte fait deja son travail. La regle de l'accueil est une
+  carte, un bouton ; tout ce qui ajoute un second nom la casse.
+  *Verrou :* `test-une-carte.mjs` verifie les **deux** sens — il echouerait
+  aussi si la ligne devenait muette dans le cas ou elle est utile. Sur la
+  version d'avant, il echoue 2 fois.
 
 - **S'entrainer ne repousse plus la revision, et n'annule plus l'objectif du
   jour** *(11 aout, cycle 19)* — une lecon faite aujourd'hui, refaite dans la
