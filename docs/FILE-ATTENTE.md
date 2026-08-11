@@ -15,7 +15,9 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 
 > **Cycles 6 et 10 : audits.** Quand les seuls elements restants sont bloques —
 > un arbitrage, deux fois le deploiement — le cycle sert a mesurer, pas a forcer
-> un blocage. Les elements 1 et 2 viennent de l'audit du cycle 10.
+> un blocage. Les cinq elements que ces deux audits ont produits sont
+> **tous faits** (cycles 7, 8, 9, 11, 12). Les trois qui restent sont les trois
+> bloques : le prochain cycle sera donc un audit.
 >
 > **Mesure aux cycles 6 et 10, et rien a corriger** — a ne pas re-mesurer sans
 > raison :
@@ -26,22 +28,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 > - **Une lecon se termine entierement au clavier**, sans souris (126
 >   tabulations), et un style de focus visible est bien declare.
 
-1. **18 cibles tactiles sur 114 sont sous 44 px de haut.**
-   *Preuve :* mesure du 10 aout, cycle 10 — tous les liens et boutons visibles
-   des 10 pages, a 414x690. **114 cibles, 18 sous 44 px**, en 4 sortes. Trois
-   sont de vraies commandes autonomes :
-   - `a.marque` « Islam pas a pas », **20 px** — le retour a l'accueil, present
-     **sur les 10 pages** ;
-   - `a.jeton` « Aujourd'hui », **40 px** — l'autre commande de l'en-tete ;
-   - `a.s-lien` « La lecon », **42 px** — sur la page des sourates.
-   Les autres sont des liens **au fil d'une phrase** (16 px dans le pied, 21 px
-   dans une lecon), que la norme exempte : on ne peut pas donner 44 px a un mot
-   souligne au milieu d'un paragraphe. La charte du site demande **56 px** pour
-   un bouton ; l'en-tete est a 20.
-   *Deja rencontre :* c'est exactement le defaut du cycle 4, ou le lien de fin de
-   lecon faisait 19 px. Corrige la-bas seul ; jamais mesure ailleurs.
-
-2. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
+1. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
    *Preuve :* c'est la piece la plus puissante de la liste du responsable, et
    elle est la seule non commencee. Le blocage est reel et non technique : une
    notification calee sur une heure de priere suppose de **connaitre** cette
@@ -53,7 +40,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    **N'entre pas en travaux avant arbitrage** — c'est une decision, pas un
    chantier.
 
-3. **Aucune mesure d'entree, et un traceur est interdit ici.**
+2. **Aucune mesure d'entree, et un traceur est interdit ici.**
    *Preuve :* `grep -ril "gtag\|analytics\|plausible\|matomo\|umami"` sur toutes
    les pages et les trois fichiers JavaScript ne rend **rien**. Or le pied de
    page promet « Ta progression reste sur ton telephone. Aucun compte, aucun
@@ -62,7 +49,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    journaux). Bloque jusqu'au deploiement — question posee aux trois autres
    agents dans le brainstorm des passerelles.
 
-4. **La recitation n'a jamais ete entendue par personne.**
+3. **La recitation n'a jamais ete entendue par personne.**
    *Preuve :* `halalgpt.fr:443` et `cdn.islamic.network:443` sont refuses par la
    politique reseau de l'atelier (403 au CONNECT, journalise par le proxy,
    verifie trois fois). Le mecanisme est teste avec un recitateur simule — 7
@@ -74,6 +61,26 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 ---
 
 ## Fait
+
+- **Chaque commande du site est atteignable au doigt** *(10 aout, cycle 12)* —
+  **avant : 8 commandes autonomes sous 44 px de haut. Apres : 0**, sur les 114
+  cibles des 10 pages, a 414x690, resultat identique sur deux passages.
+  - `a.marque` « Islam pas a pas », **20 px → 44** — le retour a l'accueil, sur
+    les 4 pages hors lecon. C'etait la moitie de ce qu'un doigt atteint sans
+    viser, et c'est la commande la plus repetee du site.
+  - `a.jeton` « Aujourd'hui », **40 px → 44** — l'autre commande de l'en-tete.
+  - `a.s-lien` « La lecon », **42 px → 44** — sur la liste des 114 sourates, ou
+    les lignes se suivent de pres et ou le doigt vise mal.
+  *Aucun texte n'a grossi :* seule la zone cliquable change (`min-height`, et
+  deux pixels de rembourrage sur le jeton). La mise en page ne bouge pas.
+  *Correction d'un chiffre que j'avais publie.* Le cycle 10 annoncait **18**
+  cibles trop petites. Deux erreurs : le harnais mesurait avant que la feuille
+  de style soit analysee, et il comptait les liens **au fil d'une phrase**, que
+  la norme exempte — on ne peut pas donner 44 px de haut a un mot souligne au
+  milieu d'un paragraphe. Le harnais les exempte maintenant explicitement (**11
+  liens**) et attend le CSS. Le chiffre juste est **8**, il remplace 18.
+  *Verrou :* `test-cibles.mjs` echoue si une commande autonome repasse sous
+  44 px.
 
 - **Une lecon se lit vraiment sans JavaScript** *(10 aout, cycle 11)* —
   **avant : 52 commandes pressables qui ne repondent a rien, 0 question sur 17

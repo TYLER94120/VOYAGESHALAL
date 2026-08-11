@@ -122,8 +122,14 @@ button { font: inherit; }
   border-bottom: 1px solid var(--trait);
 }
 
+/* min-height : c'est le retour a l'accueil, present sur toutes les pages hors
+   lecon. Mesure a 414 px : 20 px de haut, soit la moitie de ce qu'un doigt
+   atteint sans viser. La charte demande 56 px pour un bouton ; 44 est le
+   minimum tenable pour un lien, et il ne coute rien ici — la barre a deja sa
+   hauteur, seule la zone cliquable manquait. */
 .marque {
   display: flex; align-items: center; gap: 9px;
+  min-height: 44px;
   text-decoration: none; color: var(--creme);
   font-family: var(--serif); font-size: 19px; font-weight: 600;
   line-height: 1;
@@ -132,13 +138,16 @@ button { font: inherit; }
 
 .barre .droite { margin-left: auto; display: flex; align-items: center; gap: 8px; }
 
+/* 40 px mesures : deux pixels de trop peu, et c'est la commande d'a cote du
+   retour a l'accueil. On monte la zone, pas le texte. */
 .jeton {
-  display: inline-flex; align-items: center; gap: 7px;
+  display: inline-flex; align-items: center; justify-content: center; gap: 7px;
+  min-height: 44px;
   background: rgba(201, 168, 76, 0.13);
   border: 1px solid var(--trait-fort);
   color: var(--or-clair);
   border-radius: 999px;
-  padding: 8px 13px;
+  padding: 8px 15px;
   font-size: 14px; font-weight: 600;
   white-space: nowrap;
 }
@@ -1000,9 +1009,14 @@ a.lien-bas:hover { color: var(--creme); }
 }
 .s-alt { font-size: 13px; color: var(--texte-3); font-weight: 400; }
 
+/* 42 px mesures. Sur une liste de 114 lignes, le doigt vise mal : la zone
+   passe a 44 px sans changer la taille du texte. */
 .s-lien {
   grid-column: 3;
   grid-row: 1 / span 2;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   font-size: 14px;
   font-weight: 600;
   white-space: nowrap;
