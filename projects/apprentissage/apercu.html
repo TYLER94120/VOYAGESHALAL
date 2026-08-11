@@ -88,6 +88,27 @@ button { font: inherit; }
 }
 .saut-contenu:focus { left: 0; top: 0; }
 
+/* Lu, mais pas vu.
+
+   Une page de lecon se joue carte par carte : son titre visible appartient a la
+   premiere carte et disparait des qu'on avance. Le <h1> qui repond « de quoi
+   parle cette page » doit, lui, rester — pour un lecteur d'ecran comme pour
+   Google. Il est donc pose en haut de <main> et masque a l'oeil seulement.
+
+   Surtout PAS `hidden` ni `display: none` : les deux retirent l'element de
+   l'arbre d'accessibilite, et le titre ne servirait plus a personne. C'etait le
+   cas d'`al-fatiha`, seule lecon a en avoir un — et il etait `hidden`, avec une
+   classe qui n'existait meme pas dans ce fichier. */
+.visuellement-cache {
+  position: absolute;
+  width: 1px; height: 1px;
+  margin: -1px; padding: 0; border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 /* ---------- structure ---------- */
 
 .page {
@@ -168,7 +189,17 @@ button { font: inherit; }
   font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase;
   color: var(--texte-3); font-weight: 700;
 }
-.salut h1 { font-size: 32px; }
+/* La salutation garde exactement son apparence, mais ce n'est plus le titre de
+   la page : « Bonsoir » ne dit pas de quoi parle l'accueil, et le vrai titre
+   etait masque avec le corps pendant les trois questions d'accueil — la
+   premiere visite du site n'en annoncait donc aucun. */
+.salut h1, .salut .salut-mot {
+  font-size: 32px;
+  font-family: var(--serif);
+  font-weight: 600;
+  line-height: 1.15;
+  margin: 0;
+}
 
 /* L'anneau du jour et la serie : une seule ligne, en haut de l'accueil. */
 .jour-etat {
@@ -543,7 +574,7 @@ a.lien-bas:hover { color: var(--creme); }
 /* ---------- ecrans plus larges ---------- */
 
 @media (min-width: 620px) {
-  .salut h1 { font-size: 38px; }
+  .salut h1, .salut .salut-mot { font-size: 38px; }
   .carte-jour { padding: 30px 26px 24px; }
   .carte-jour h2 { font-size: 32px; }
   .freres { grid-template-columns: 1fr 1fr; }
@@ -1315,6 +1346,8 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
 
   <main class="contenu" id="principal">
 
+    <h1 class="visuellement-cache">Islam pas a pas — apprendre l'islam cinq minutes par jour</h1>
+
     <!-- Les trois questions d'accueil. Masquees par defaut : elles n'apparaissent
          qu'a la premiere visite, posees par app.js. Ainsi le vrai contenu de
          l'accueil reste dans la page, lisible par Google et sans JavaScript. -->
@@ -1375,7 +1408,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
 
     <div class="salut">
       <span class="date" data-r="date">Aujourd'hui</span>
-      <h1 data-r="salut">Bienvenue</h1>
+      <p class="salut-mot" data-r="salut">Bienvenue</p>
       <p class="rdv" data-r="rdv" hidden></p>
     </div>
 
@@ -1454,7 +1487,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
 
   <main id="principal">
 
-    <h1 class="visuellement-cache" hidden>Sourate Al-Fatiha, verset par verset</h1>
+    <h1 class="visuellement-cache">Sourate Al-Fatiha, verset par verset</h1>
 
     <div class="etapes" data-r="etapes">
 
@@ -1861,6 +1894,8 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
 
   <main id="principal">
 
+    <h1 class="visuellement-cache">Trois invocations pour commencer ta journee</h1>
+
     <div class="etapes" data-r="etapes">
 
       <!-- 1 : pourquoi -->
@@ -2093,6 +2128,8 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
   </header>
 
   <main id="principal">
+
+    <h1 class="visuellement-cache">Les six piliers de la foi</h1>
 
     <div class="etapes" data-r="etapes">
 
@@ -2363,6 +2400,8 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
   </header>
 
   <main id="principal">
+
+    <h1 class="visuellement-cache">Les gestes de la priere, dans l'ordre</h1>
 
     <div class="etapes" data-r="etapes">
 
@@ -2727,6 +2766,8 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
 
   <main id="principal">
 
+    <h1 class="visuellement-cache">L'alphabet arabe&nbsp;: les 28 lettres</h1>
+
     <div class="etapes" data-r="etapes">
 
       <!-- 1 : pourquoi, et la bonne nouvelle -->
@@ -3078,6 +3119,8 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
   </header>
 
   <main id="principal">
+
+    <h1 class="visuellement-cache">Les 25 prophetes nommes dans le Coran</h1>
 
     <div class="etapes" data-r="etapes">
 

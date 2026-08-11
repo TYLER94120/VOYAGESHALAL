@@ -35,20 +35,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 >   double. Et les meta absentes de `chemin.html` (og, canonical) sont
 >   **coherentes** : cette page est en `noindex,follow`, c'est une page privee.
 
-1. **Aucune page de lecon n'annonce son sujet dans un titre lisible.**
-   *Preuve :* mesure du 10 aout, cycle 13 — sur les 6 lecons, **5 n'ont aucun
-   `<h1>`** : le titre de la lecon est un `<h2>` agrandi en style en ligne
-   (`font-size:29px`). La sixieme, `al-fatiha`, en a un — mais
-   `<h1 class="visuellement-cache" hidden>`, et **`hidden` retire l'element de
-   l'arbre d'accessibilite** : il n'est lu ni a l'oeil ni par un lecteur
-   d'ecran. Pire, la classe **`visuellement-cache` n'existe nulle part dans le
-   CSS**. Le compte utile est donc **0 sur 6**, pas 1 sur 6 — mon premier
-   relevé disait 1, il comptait la balise sans verifier qu'elle servait.
-   *Pourquoi c'est un defaut :* un `<h1>` est la reponse a « de quoi parle cette
-   page » pour un lecteur d'ecran comme pour Google, et ces pages sont les
-   seules du site destinees a etre trouvees. Les 4 autres pages en ont un.
-
-2. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
+1. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
    *Preuve :* c'est la piece la plus puissante de la liste du responsable, et
    elle est la seule non commencee. Le blocage est reel et non technique : une
    notification calee sur une heure de priere suppose de **connaitre** cette
@@ -60,7 +47,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    **N'entre pas en travaux avant arbitrage** — c'est une decision, pas un
    chantier.
 
-3. **Aucune mesure d'entree, et un traceur est interdit ici.**
+2. **Aucune mesure d'entree, et un traceur est interdit ici.**
    *Preuve :* `grep -ril "gtag\|analytics\|plausible\|matomo\|umami"` sur toutes
    les pages et les trois fichiers JavaScript ne rend **rien**. Or le pied de
    page promet « Ta progression reste sur ton telephone. Aucun compte, aucun
@@ -69,7 +56,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    journaux). Bloque jusqu'au deploiement — question posee aux trois autres
    agents dans le brainstorm des passerelles.
 
-4. **La recitation n'a jamais ete entendue par personne.**
+3. **La recitation n'a jamais ete entendue par personne.**
    *Preuve :* `halalgpt.fr:443` et `cdn.islamic.network:443` sont refuses par la
    politique reseau de l'atelier (403 au CONNECT, journalise par le proxy,
    verifie trois fois). Le mecanisme est teste avec un recitateur simule — 7
@@ -81,6 +68,36 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 ---
 
 ## Fait
+
+- **Chaque page dit enfin de quoi elle parle** *(10 aout, cycle 15)* — **avant :
+  4 pages sur 10 annoncaient un titre de niveau 1. Apres : 10 sur 10.** Mesure
+  faite **par role**, pas par balise : un selecteur de role s'appuie sur le
+  calcul d'accessibilite, donc un titre masque ne repond pas. C'est exactement
+  la difference entre « la balise est dans le fichier » et « quelqu'un
+  l'entend ».
+  - **Les 6 lecons** : 5 n'avaient aucun `<h1>` — leur titre etait un `<h2>`
+    agrandi par un style en ligne. La sixieme, `al-fatiha`, en avait un, mais
+    marque `hidden` : present dans le fichier, absent de l'arbre
+    d'accessibilite. Et sa classe `visuellement-cache` **n'existait nulle part
+    dans le CSS**. Chacune porte maintenant son titre, masque a l'oeil
+    seulement — **1 px de haut, la mise en page ne bouge pas**.
+  - **L'accueil**, trouve en mesurant : son seul `<h1>` etait la salutation
+    (« Bonjour », « Bonsoir »), qui ne dit pas de quoi parle la page et change
+    trois fois par jour. Pire, il vit dans le bloc **masque pendant les trois
+    questions de bienvenue** : la toute premiere visite du site n'annoncait donc
+    **aucun** titre. La salutation redevient une phrase, et le titre est pose
+    hors du bloc masque.
+  *La classe qui manquait :* `.visuellement-cache` existe desormais, et surtout
+  **elle n'utilise ni `hidden` ni `display: none`** — les deux retirent
+  l'element de l'arbre d'accessibilite, ce qui etait le defaut d'origine.
+  *Verrou :* `test-titres.mjs`, 8 controles — un seul `<h1>` par page, annonce
+  par role, jamais `hidden`, jamais une salutation, et sur les lecons identique
+  au titre de l'onglet.
+  *Une assertion a moi corrigee en cours de route :* j'exigeais d'abord que le
+  `<h1>` egale le titre de l'onglet **sur toutes les pages**. C'est faux : un
+  titre d'onglet s'ecrit pour un resultat de recherche, un `<h1>` pour qui est
+  deja sur la page. L'exigence ne vaut que pour les lecons, ou j'ai copie l'un
+  dans l'autre a dessein.
 
 - **Le site ne promet plus rien quand le telephone refuse d'enregistrer**
   *(10 aout, cycle 14)* — **avant : 3 affirmations fausses sur l'ecran de fin.
