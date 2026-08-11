@@ -26,15 +26,14 @@ Chiffres AVANT le 9 août, 7 jours : voyageshalal.fr 1 970 impressions /
 
 ## À faire
 
-### 1. Les sections « manger » et « prier » manquent sur 316 fiches villes
-**Mesuré le 11 août** : 38 fiches sur 354 ont leurs quatre sections
-(manger et prier, FR et EN). Les 316 autres n'ont que des listes d'adresses
-— donc peu de texte unique, et rien qui réponde à « manger halal à X » en
-toutes lettres.
-Prochaines séries à viser, toujours par ordre de doute réel du voyageur :
-l'Asie non musulmane (Tokyo et Bangkok sont déjà faites — restent Séoul,
-Taipei, Hong Kong, Singapour fait, Delhi, Colombo) puis l'Amérique du Nord
-(Toronto, Montréal, Chicago, Los Angeles).
+### 1. Les sections « manger » et « prier » manquent sur 311 fiches villes
+**Mesuré le 11 août, après la série Asie** : **43 fiches sur 354** ont leurs
+quatre sections (manger et prier, FR et EN). Les 311 autres n'ont que des
+listes d'adresses — donc peu de texte unique, et rien qui réponde à
+« manger halal à X » en toutes lettres.
+Prochaine série, par ordre de doute réel du voyageur : **l'Amérique du
+Nord** (Toronto, Montréal, Chicago, Los Angeles, New York), puis l'Europe
+de l'Est.
 
 ### 2. Les hôtels d'Istanbul et Dubaï attendent le robot OSM
 **Mesuré** : 41 mentions « information non vérifiée » par page, et
@@ -53,6 +52,32 @@ requêtes ces pages sortent réellement.
 ---
 
 ## Fait
+
+### Cinq villes d'Asie non musulmane ont leurs sections — 11 août
+**Avant** : 38 fiches sur 354 avec les quatre sections. **Après : 43.**
+**671 mots uniques en français, 563 en anglais**, sur 10 pages
+(5 villes × 2 domaines).
+
+Villes traitées, choisies là où le voyageur doute vraiment : **Séoul,
+Taipei, Hong Kong, Delhi, Colombo**. En pays musulman la réponse est « tout
+est halal » et la page sert peu ; ici la question se pose à chaque repas.
+
+**Aucun restaurant nommé.** Uniquement des institutions vérifiables par
+n'importe qui — grandes mosquées, organismes de certification — et des
+quartiers. Et les difficultés sont dites, pas gommées : à Séoul le porc et
+l'alcool de cuisine sont partout et les bouillons contiennent souvent de
+l'anchois ; à Hong Kong le saindoux est un ingrédient de base de la cuisine
+cantonaise ; à Delhi beaucoup de cuisines mélangent halal et non-halal, le
+végétarien restant le repli sûr ; à Colombo la vigilance porte sur les
+hôtels de bord de mer.
+
+**Ce qui distingue Taipei** : Taïwan a fait de l'accueil des voyageurs
+musulmans une politique publique — c'est l'une des rares destinations
+d'Asie de l'Est avec des espaces de prière hors des mosquées.
+
+**Vérifié** : les 5 fiches répondent en 200 sur les deux domaines, les
+sections sortent en français sur voyageshalal.fr et en anglais sur
+gohalaltravel.com, et aucun texte français n'apparaît côté anglais.
 
 ### Les 11 pages « où prier » sont terminées : 2 853 → 10 270 mots — 11 août
 **L'élément est clos.** Onzième et dernière page approfondie : **Nice**,
