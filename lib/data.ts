@@ -3264,20 +3264,111 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <p>Voir aussi <a href="/blog/ou-prier-aeroports">notre guide complet des aéroports</a>.</p><h2>Aide la communauté</h2><p>Un horaire, un changement à Nice ? Partage-le — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
   },
   {
+    slug: "where-to-pray-toulouse-airport",
+    title: "Prayer Room at Toulouse Airport: 3rd Floor, Hall C",
+    description: "Toulouse-Blagnac has an interfaith quiet room on the 3rd floor of Hall C. Where it is, the 40-minute rule, and what to do when you cannot go up.",
+    coverImage: "/guides/blog-toulouse.jpg",
+    category: 'Practical',
+    readTime: "6 min",
+    publishedAt: '2026-08-11',
+    lang: 'en',
+    tags: ['prayer', 'airport', 'toulouse', 'muslim travel'],
+    content: `
+<p>Flying from Toulouse-Blagnac and looking for somewhere to pray? There is a space, it is clearly identified — and it comes with a constraint nobody mentions: <strong>you have to go up to the 3rd floor</strong>. Here is what that changes when boarding is close.</p>
+
+<h2>The essentials in 30 seconds</h2>
+<p>A <strong>quiet and prayer space</strong> is located on the <strong>3rd floor of Hall C</strong>. It is a silent room <strong>open to all faiths</strong>, run by the airport's interfaith committee. Access is <strong>free</strong>.</p>
+
+<h2>It is not a Muslim room, and that matters</h2>
+<p>We are not aware of a separate Muslim space at Blagnac. The room is <strong>shared</strong>: other people may be using it in silence for something else entirely. Two practical consequences:</p>
+<p>· <strong>find the qibla yourself</strong> — nothing guarantees it is marked on site; our <a href="/qibla">qibla tool</a> gives it to you in two seconds;<br/>
+· <strong>keep your pocket mat</strong> rather than relying on equipment being provided, which we have no trace of.</p>
+
+<h2>The calculation that decides everything: up and back down</h2>
+<p>A space on the 3rd floor of a hall is not on your way. You have to go there, pray, and come back. The only figure that counts: <strong>boarding closes around 20 minutes before departure</strong> — that is your real deadline, not the time on the board.</p>
+<p>The simple rule: <strong>if you have more than 40 minutes, go up</strong>. Below that, a quiet corner near your gate is the sensible choice — and it is perfectly enough.</p>
+
+<h2>What we know, and what we do not</h2>
+<p>The location comes from the <strong>airport's public information</strong>. <strong>We have not verified it ourselves on site.</strong> What we do not know, and will not invent: the <strong>opening hours</strong>, whether there is a <strong>wudu area</strong>, and whether the space is before or after security. That last point decides everything: <strong>check it at an information desk before crossing</strong>.</p>
+<p>The wording that gets an answer in a French airport is <strong>“espace de recueillement”</strong> or <strong>“lieu de culte”</strong>, not “prayer room”: that is the signage vocabulary, and staff will know immediately what you mean.</p>
+
+<h2>If you cannot go up</h2>
+<p>Three options, from the simplest down:</p>
+<p><strong>1. A quiet corner near your gate.</strong> Pier ends and gates for later departures empty out between flights. A pocket mat and two minutes are enough.<br/>
+<strong>2. A dining area outside meal times.</strong> Often the calmest part of the hall mid-afternoon.<br/>
+<strong>3. Praying seated at the gate.</strong> When only a few minutes of the window are left, this is what many travellers do.</p>
+<p>A <strong>pocket prayer mat is no problem at security</strong>: it is an ordinary item and nobody blinks. Pack it along the side of your bag so you can get it out faster.</p>
+
+<h2>Wudu</h2>
+<p>In the toilets, until proven otherwise — high basins and sensor taps that cut the water every three seconds. Two habits change everything: filling <strong>a small squeezable bottle</strong> before going into the cubicle, and keeping a <strong>microfibre towel</strong> in your cabin bag. The full method is in our guide: <a href="/blog/wudu-on-a-plane-or-train">making wudu while travelling</a>.</p>
+
+<h2>What we do not rule on</h2>
+<p>Shortening, combining, making up on arrival, praying seated: these are <strong>religious questions</strong>, with differing opinions and conditions, and <strong>we do not answer them</strong>. This page covers where and how, not what is permitted. Put the question to <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&amp;utm_medium=passerelle&amp;utm_campaign=toulouse-en" target="_blank" rel="noopener noreferrer">HalalGPT</a>, which is built for it, or to your local imam.</p>
+<p>What we can do is give you the exact window: our <a href="/prayer-times">prayer times</a> give them for Toulouse, and the page still works without a signal once open.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Is there a prayer space at Toulouse airport?</strong> Yes, a quiet room on the 3rd floor of Hall C.<br/>
+<strong>Is it a Muslim room?</strong> No, an interfaith space open to everyone.<br/>
+<strong>Is it before or after security?</strong> We do not know for certain — ask at an information desk before crossing.<br/>
+<strong>What are the opening hours?</strong> We have none we trust, so we do not publish any.<br/>
+<strong>Is it free?</strong> Yes.<br/>
+<strong>And other airports?</strong> See <a href="/blog/where-to-pray-paris-airports">our complete airport prayer room guide</a>.</p>
+
+<h2>Help the community</h2>
+<p>Have you prayed at Blagnac recently? Tell us <strong>whether the space is before or after security, its actual opening hours, and whether there is anywhere to make wudu</strong>. Those are exactly the three points we cannot state anything about, and they change everything for the next traveller. <a href="/communaute/ajouter">→ Add the place</a> · <a href="/communaute">→ Join the community</a></p>
+`,
+  },
+  {
     slug: "ou-prier-aeroport-toulouse",
     title: "Où prier à l'aéroport de Toulouse-Blagnac — guide 2026",
-    description: "L'aéroport de Toulouse dispose d'un centre spirituel / espace de recueillement ouvert à tous, au 3ᵉ étage du Hall C. Voici où le trouver et comment y prier.",
+    description: "Toulouse-Blagnac a un espace de recueillement au 3ᵉ étage du Hall C. Où il est, la règle des 40 minutes, et quoi faire si tu ne peux pas y monter.",
     coverImage: "/guides/blog-toulouse.jpg",
     category: 'Pratique',
-    readTime: "3 min",
+    readTime: "7 min",
     publishedAt: '2026-07-20',
     tags: ["Toulouse", "Aéroports", "Prière"],
-    content: `<p>Tu voyages depuis Toulouse ? L'aéroport dispose d'un centre spirituel / espace de recueillement ouvert à tous. Voici où le trouver et comment y prier.</p>
-<h2>L'essentiel en 30 secondes</h2><p>Un espace de recueillement et de prière est au 3ᵉ étage du Hall C. Lieu de silence ouvert à tous, pour prier au calme avant l'embarquement.</p>
-<h2>Où se trouve l'espace de prière</h2><p>Rends-toi au Hall C et prends l'ascenseur jusqu'au 3ᵉ étage. Espace géré par le comité interconfessionnel, ouvert à toutes confessions. Comme c'est un espace partagé, oriente-toi vers la qibla (<a href="/qibla">notre outil qibla</a>) et prie au calme.</p>
-<h2>Conseils pratiques</h2><p>Repère le Hall C, 3ᵉ étage à l'avance. Anticipe les ablutions aux toilettes. Prière du voyageur raccourcie et regroupée possible.</p>
-<h2>Questions fréquentes</h2><p><strong>Espace de prière à Toulouse ?</strong> Oui, centre spirituel au 3ᵉ étage du Hall C.<br/><strong>Salle musulmane dédiée ?</strong> C'est un espace interconfessionnel ouvert à tous ; signale-nous une salle distincte si tu en vois une.<br/><strong>Gratuit ?</strong> Oui.</p>
-<p>Voir aussi <a href="/blog/ou-prier-aeroports">notre guide complet des aéroports</a>.</p><h2>Aide la communauté</h2><p>Un repère précis, un coin qui marche bien, une évolution ? Partage-le — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
+    content: `<p>Tu voyages depuis Toulouse-Blagnac et tu cherches où prier ? Il y a un espace, il est bien identifié — et il a une contrainte que personne ne mentionne : <strong>il faut monter au 3<sup>e</sup> étage</strong>. Voici ce que ça change quand l'embarquement approche.</p>
+
+<h2>L'essentiel en 30 secondes</h2>
+<p>Un <strong>espace de recueillement et de prière</strong> se trouve au <strong>3<sup>e</sup> étage du Hall C</strong>. C'est un lieu de silence <strong>ouvert à toutes les confessions</strong>, géré par le comité interconfessionnel de l'aéroport. L'accès est <strong>gratuit</strong>.</p>
+
+<h2>Ce n'est pas une salle musulmane, et c'est important</h2>
+<p>Nous n'avons pas connaissance d'un espace musulman distinct à Blagnac. L'espace est <strong>partagé</strong> : d'autres personnes peuvent l'occuper en silence pour tout autre chose. Deux conséquences pratiques :</p>
+<p>· <strong>oriente-toi toi-même vers la qibla</strong> — rien ne garantit qu'elle soit indiquée sur place ; notre <a href="/qibla">outil qibla</a> te la donne en deux secondes ;<br/>
+· <strong>garde ton tapis de poche</strong> plutôt que de compter sur du matériel mis à disposition, dont nous n'avons pas trace.</p>
+
+<h2>Le calcul qui décide de tout : monter et redescendre</h2>
+<p>Un espace au 3<sup>e</sup> étage d'un hall n'est pas sur ton chemin. Il faut y aller, prier, et revenir. Le seul chiffre qui compte : <strong>l'embarquement ferme environ 20 minutes avant le décollage</strong> — c'est ta vraie limite, pas l'heure affichée au tableau.</p>
+<p>La règle simple : <strong>si tu as plus de 40 minutes devant toi, monte</strong>. En dessous, un coin calme près de ta porte est le choix raisonnable — et c'est parfaitement suffisant.</p>
+
+<h2>Ce que nous savons, et ce que nous ne savons pas</h2>
+<p>L'emplacement vient des <strong>informations publiques de l'aéroport</strong>. <strong>Nous ne l'avons pas vérifié nous-mêmes sur place.</strong> Ce que nous ignorons, et que nous n'inventerons pas : les <strong>horaires d'ouverture</strong>, la présence d'un <strong>espace d'ablutions</strong>, et si l'espace se trouve avant ou après les contrôles de sécurité. Ce dernier point décide de tout : <strong>vérifie-le au comptoir information avant de traverser</strong>.</p>
+<p>Le mot qui obtient une réponse dans un aéroport français est <strong>« espace de recueillement »</strong> ou <strong>« lieu de culte »</strong>, pas « salle de prière » : c'est le vocabulaire de la signalétique, et l'agent saura immédiatement de quoi tu parles.</p>
+
+<h2>Si tu ne peux pas y monter</h2>
+<p>Trois solutions, de la plus simple à la moins confortable :</p>
+<p><strong>1. Un coin calme près de ta porte.</strong> Les extrémités de jetée et les salles d'embarquement des vols suivants se vident entre deux départs. Un tapis de poche et deux minutes suffisent.<br/>
+<strong>2. Une zone de restauration en dehors des heures de repas.</strong> Souvent la partie la plus tranquille du hall en milieu d'après-midi.<br/>
+<strong>3. Prier assis, en salle d'embarquement.</strong> Quand il ne reste que quelques minutes de créneau, c'est ce que font beaucoup de voyageurs.</p>
+<p>Un <strong>tapis de prière de poche ne pose aucun problème au contrôle</strong> : c'est un objet courant et personne ne s'en étonne. Range-le sur le côté du sac, tu le sortiras plus vite.</p>
+
+<h2>Les ablutions</h2>
+<p>Aux toilettes, jusqu'à preuve du contraire — lavabos hauts et robinets à capteur qui coupent l'eau toutes les trois secondes. Deux habitudes qui changent tout : remplir <strong>une petite bouteille souple</strong> avant d'entrer dans la cabine, et garder une <strong>serviette microfibre</strong> dans le bagage cabine. La méthode complète est dans notre guide : <a href="/blog/ablutions-avion-train">faire ses ablutions en voyage</a>.</p>
+
+<h2>Ce que nous ne tranchons pas</h2>
+<p>Raccourcir, regrouper, rattraper à l'arrivée, prier assis : ce sont des <strong>questions religieuses</strong>, avec des avis et des conditions, et <strong>nous n'y répondons pas</strong>. Cette page dit où et comment, pas ce qui est permis. Pose la question à <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&amp;utm_medium=passerelle&amp;utm_campaign=toulouse" target="_blank" rel="noopener noreferrer">HalalGPT</a>, qui est fait pour ça, ou à l'imam de ta mosquée.</p>
+<p>Ce que nous pouvons faire, c'est te donner l'heure exacte du créneau : nos <a href="/horaires-priere">horaires de prière</a> les donnent pour Toulouse, et la page fonctionne encore sans réseau une fois ouverte.</p>
+
+<h2>Questions fréquentes</h2>
+<p><strong>Y a-t-il un espace de prière à l'aéroport de Toulouse ?</strong> Oui, un espace de recueillement au 3<sup>e</sup> étage du Hall C.<br/>
+<strong>Est-ce une salle musulmane ?</strong> Non, un espace interconfessionnel ouvert à tous.<br/>
+<strong>Est-ce avant ou après la sécurité ?</strong> Nous ne le savons pas avec certitude — demande au comptoir information avant de traverser.<br/>
+<strong>Quels horaires ?</strong> Nous n'en avons pas de fiables, donc nous n'en publions pas.<br/>
+<strong>Est-ce payant ?</strong> Non.<br/>
+<strong>Et les autres aéroports ?</strong> Voir <a href="/blog/ou-prier-aeroports">notre guide complet des salles de prière d'aéroport</a>.</p>
+
+<h2>Aide la communauté</h2>
+<p>Tu as prié à Blagnac récemment ? Dis-nous <strong>si l'espace est avant ou après les contrôles, ses horaires réels, et s'il y a de quoi faire les ablutions</strong>. Ce sont exactement les trois points sur lesquels nous ne pouvons rien affirmer, et ils changent tout pour le voyageur suivant. <a href="/communaute/ajouter">→ Ajouter le lieu</a> · <a href="/communaute">→ Rejoindre la communauté</a></p>`,
   },
   {
     slug: "ou-prier-aeroport-geneve",
