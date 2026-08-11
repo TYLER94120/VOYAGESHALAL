@@ -5,9 +5,8 @@ import { useInstantPosition } from '@/lib/useInstantPosition'
 import { computePrayerTimesFull } from '@/lib/prayerCalc'
 import { useLanguage } from '@/components/i18n/LanguageProvider'
 import { localizedHref } from '@/lib/slugs'
-import { ENVIES, envieById, niveauHalal, forceEnvie } from '@/lib/envies'
+import { ENVIES, envieById, niveauHalal } from '@/lib/envies'
 import { mentionPaysMusulman } from '@/lib/paysHalalDefaut'
-import { conforme } from '@/lib/conformite'
 import { fetchCourt } from '@/lib/fetchCourt'
 import { photoLargeur } from '@/lib/imageLargeur'
 import PositionBadge from '@/components/location/PositionBadge'
@@ -148,19 +147,24 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
     // recherche A EU LIEU. C'est lui qui fait foi pour « aucun lieu connu ».
     let annuaireDone = false
     const mc: Lieu[] = [], rc: Lieu[] = []
-    const q = `[out:json][timeout:12];(node["amenity"="place_of_worship"]["religion"="muslim"](around:5000,${pos.lat},${pos.lng});way["amenity"="place_of_worship"]["religion"="muslim"](around:5000,${pos.lat},${pos.lng});node["amenity"~"restaurant|fast_food"]["diet:halal"~"yes|only"](around:3000,${pos.lat},${pos.lng});way["amenity"~"restaurant|fast_food"]["diet:halal"~"yes|only"](around:3000,${pos.lat},${pos.lng}););out center 40;`
-    const p1 = fetchCourt('https://overpass-api.de/api/interpreter', { method: 'POST', body: `data=${encodeURIComponent(q)}`, delai: 5000 })
+    // ⚠️ PLUS AUCUN APPEL DIRECT À OPENSTREETMAP DEPUIS LE TÉLÉPHONE.
+    // C'est ce que Mohamed a photographié deux fois à Berkane : les tuiles
+    // qui dépendaient d'Overpass restaient vides ou en « … » pendant que
+    // celles servies par nos propres API s'affichaient. Notre serveur essaie
+    // trois miroirs et garde la réponse 30 minutes (/api/osm-restos).
+    const p1 = fetchCourt(`/api/osm-restos?lat=${pos.lat}&lng=${pos.lng}&rayon=3000&quoi=tout`, { delai: 9000 })
       .then((r) => r.json())
       .then((d) => {
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        for (const el of (d.elements as any[]) ?? []) {
-          const la = el.lat ?? el.center?.lat, lo = el.lon ?? el.center?.lon
-          if (!la || !lo || !el.tags?.name) continue
-          const lieu: Lieu = { nom: el.tags.name, lat: la, lng: lo, source: 'osm', distM: hav(pos.lat, pos.lng, la, lo), cuisine: el.tags.cuisine ?? undefined, halal: el.tags['diet:halal'] ?? undefined }
-          if (el.tags.amenity === 'place_of_worship') mc.push(lieu)
-          // Un « Restaurant & Lounge » a chicha reste un lieu ou l'on
-          // n'envoie personne, meme si sa cuisine est halal
-          else if (conforme(el.tags.name, el.tags.cuisine, el.tags['diet:halal'])) rc.push(lieu)
+        if (d.erreur) return
+        for (const m of (d.mosquees as { nom: string; lat: number; lng: number }[]) ?? []) {
+          mc.push({ nom: m.nom, lat: m.lat, lng: m.lng, source: 'osm', distM: hav(pos.lat, pos.lng, m.lat, m.lng) })
+        }
+        for (const r of (d.restos as { nom: string; lat: number; lng: number; cuisine?: string; halal?: string }[]) ?? []) {
+          // Cette tuile-ci reste sur la règle stricte : sans étiquette halal,
+          // le lieu n'y entre pas. Le rattrapage « pays musulman » a sa
+          // propre tuile et sa propre mention.
+          if (!r.halal) continue
+          rc.push({ nom: r.nom, lat: r.lat, lng: r.lng, source: 'osm', distM: hav(pos.lat, pos.lng, r.lat, r.lng), cuisine: r.cuisine, halal: r.halal })
         }
         osmDone = true
       }).catch(() => {})
@@ -213,27 +217,24 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
       setOsmOk(osmDone || annuaireDone || mc.length > 0 || rc.length > 0)
       setMosquee(mc[0] ?? null); setResto(rc[0] ?? null)
 
-      // 🔁 UNE SECONDE CHANCE POUR LA CAMPAGNE.
-      // 5 secondes suffisent en ville, pas dans un village : notre annuaire
-      // n'y a rien, et OpenStreetMap — la seule source qui connaisse la
-      // mosquée du coin — est justement la plus lente à répondre. Abandonner
-      // là, c'est afficher « aucun lieu connu » à quelqu'un qui a une mosquée
-      // à trois cents mètres.
-      // On ne relance QUE si la première tentative a échoué ET qu'on n'a rien
-      // à montrer : jamais de deuxième appel quand le premier a servi.
+      // 🔁 UNE SECONDE CHANCE, avec plus de patience.
+      // 9 secondes suffisent en ville, pas toujours dans un village : notre
+      // annuaire n'y a rien, et OpenStreetMap — la seule source qui
+      // connaisse la mosquée du coin — est justement la plus lente.
+      // On ne relance QUE si la première tentative a échoué ET qu'on n'a
+      // rien à montrer : jamais de deuxième appel quand le premier a servi.
       if (!osmDone && mc.length === 0 && rc.length === 0) {
-        fetchCourt('https://overpass-api.de/api/interpreter', { method: 'POST', body: `data=${encodeURIComponent(q)}`, delai: 15000 })
+        fetchCourt(`/api/osm-restos?lat=${pos.lat}&lng=${pos.lng}&rayon=3000&quoi=tout`, { delai: 20000 })
           .then((r) => r.json())
           .then((d) => {
-            if (cancelled) return
+            if (cancelled || d.erreur) return
             const m2: Lieu[] = [], r2: Lieu[] = []
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
-            for (const el of (d.elements as any[]) ?? []) {
-              const la = el.lat ?? el.center?.lat, lo = el.lon ?? el.center?.lon
-              if (!la || !lo || !el.tags?.name) continue
-              const lieu: Lieu = { nom: el.tags.name, lat: la, lng: lo, source: 'osm', distM: hav(pos.lat, pos.lng, la, lo), cuisine: el.tags.cuisine ?? undefined, halal: el.tags['diet:halal'] ?? undefined }
-              if (el.tags.amenity === 'place_of_worship') m2.push(lieu)
-              else if (conforme(el.tags.name, el.tags.cuisine, el.tags['diet:halal'])) r2.push(lieu)
+            for (const m of (d.mosquees as { nom: string; lat: number; lng: number }[]) ?? []) {
+              m2.push({ nom: m.nom, lat: m.lat, lng: m.lng, source: 'osm', distM: hav(pos.lat, pos.lng, m.lat, m.lng) })
+            }
+            for (const r of (d.restos as { nom: string; lat: number; lng: number; cuisine?: string; halal?: string }[]) ?? []) {
+              if (!r.halal) continue
+              r2.push({ nom: r.nom, lat: r.lat, lng: r.lng, source: 'osm', distM: hav(pos.lat, pos.lng, r.lat, r.lng), cuisine: r.cuisine, halal: r.halal })
             }
             m2.sort(parDistance); r2.sort(parDistance)
             if (m2[0]) setMosquee(m2[0])
@@ -328,30 +329,23 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
   useEffect(() => {
     if (!pos || !paysDefaut || !manqueResto) { setRestoPays(undefined); return }
     let off = false
-    const autour = `(around:4000,${pos.lat},${pos.lng})`
-    const q = `[out:json][timeout:20];(node["amenity"~"restaurant|fast_food"]${autour};way["amenity"~"restaurant|fast_food"]${autour};);out center 60;`
-    fetchCourt('https://overpass-api.de/api/interpreter', { method: 'POST', body: `data=${encodeURIComponent(q)}`, delai: 12000 })
+    // ⚠️ ON N'APPELLE PLUS OPENSTREETMAP DEPUIS LE TÉLÉPHONE.
+    // Deuxième capture de Mohamed à Berkane, en 4G : la tuile « KEBAB … »
+    // tournait indéfiniment pendant que la mosquée s'affichait — et elle
+    // vient de NOTRE annuaire. Overpass ne répondait tout simplement pas
+    // depuis son appareil. Notre serveur, lui, essaie trois miroirs et
+    // garde la réponse 30 minutes pour tout le quartier (/api/osm-restos).
+    fetchCourt(`/api/osm-restos?lat=${pos.lat}&lng=${pos.lng}&rayon=4000${envie ? `&envie=${envie}` : ''}`, { delai: 12000 })
       .then((r) => r.json())
       .then((d) => {
         if (off) return
         const cands: Lieu[] = []
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        for (const el of (d.elements as any[]) ?? []) {
-          const la = el.lat ?? el.center?.lat, lo = el.lon ?? el.center?.lon
-          const nom = el.tags?.name
-          if (!la || !lo || !nom) continue
-          const cuisine: string | undefined = el.tags.cuisine ?? undefined
-          const halal: string | undefined = el.tags['diet:halal'] ?? undefined
-          if (!conforme(nom, cuisine, halal)) continue
-          let force = 0
-          if (envie) {
-            force = forceEnvie(cuisine, nom, envie)
-            if (!force) continue
-          }
+        for (const el of (d.restos as { nom: string; lat: number; lng: number; cuisine?: string; halal?: string; force?: number }[]) ?? []) {
           cands.push({
-            nom, lat: la, lng: lo, source: 'osm', distM: hav(pos.lat, pos.lng, la, lo),
-            cuisine, halal, force: force || undefined, sansEtiquette: !halal,
-            id: lieuId(la, lo),
+            nom: el.nom, lat: el.lat, lng: el.lng, source: 'osm',
+            distM: hav(pos.lat, pos.lng, el.lat, el.lng),
+            cuisine: el.cuisine, halal: el.halal, force: el.force || undefined,
+            sansEtiquette: !el.halal, id: lieuId(el.lat, el.lng),
           })
         }
         // Une correspondance sûre passe devant un peut-être ; sinon distance.
