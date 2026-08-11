@@ -16,8 +16,9 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 > **Cycles 6, 10, 13 et 16 : audits.** Quand les seuls elements restants sont
 > bloques — un arbitrage, deux fois le deploiement — le cycle sert a mesurer,
 > pas a forcer un blocage. Les sept elements des audits 6, 10 et 13 sont **tous
-> faits** (cycles 7, 8, 9, 11, 12, 14, 15). L'element 1 ci-dessous vient de
-> l'audit du cycle 16.
+> faits** (cycles 7, 8, 9, 11, 12, 14, 15). **L'audit du cycle 16 n'a produit
+> aucun element valable** : son unique constat etait faux, et le cycle 17 l'a
+> retire — voir « Fait ». Les trois qui restent sont les trois bloques.
 >
 > **Mesure aux cycles 6, 10, 13 et 16, et rien a corriger** — a ne pas
 > re-mesurer sans raison :
@@ -39,32 +40,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 >   `.vercelignore` a tous les fichiers : **24 publics, 8 retires, zero fuite** —
 >   aucune note de travail, aucun outil, aucun apercu ne serait lisible en ligne.
 
-1. **Le seul acces de Mohamed est un document, pas le site.**
-   *Preuve :* mesure du 11 aout, cycle 16 — il vient d'ecrire « **j'ai aucun
-   acces** ». Le site n'est pas deploye ; son unique acces est le fichier hors
-   ligne que je lui envoie. Ouvert dans un vrai navigateur en `file://`, ce
-   fichier donne :
-   - **10 vues empilees**, lisibles — c'est ce pour quoi il a ete fait ;
-   - mais **0 zone de lecon sur 6 est pilotee**, **0 carte de lecon visible**, et
-     **appuyer sur « Suivant » ne change rien**.
-   Il peut donc **lire** le site, pas le **faire** : pas une question repondue,
-   pas une carte franchie, pas un jour de serie. **La seule mesure de succes du
-   projet — « Mohamed ouvre le site sept jours d'affilee » — est inatteignable
-   par le seul canal qu'il possede.** C'est l'element le plus important de cette
-   file, et de loin.
-   *Rien ne l'empeche techniquement :* dans le meme fichier, **le moteur `IPP`
-   est charge**, les 2 scripts sont embarques, **zero erreur JavaScript**, et
-   **`localStorage` fonctionne** a l'origine `file://`. Le fichier a ete construit
-   comme un document a lire, pas comme le site ; c'est un choix a refaire, pas un
-   mur.
-   *Ce qui reste inconnu, et qu'il ne faut pas presumer :* j'ai mesure
-   `localStorage` en `file://` **dans Chromium**, pas dans Safari sur iPhone —
-   ou un fichier telecharge peut n'avoir aucune memoire persistante. Donc :
-   construire le fichier qui **fait** tourner une lecon, oui ; **promettre une
-   serie de sept jours dedans, non**, tant que ce n'est pas verifie sur son
-   telephone. La serie reste liee au site deploye.
-
-2. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
+1. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
    *Preuve :* c'est la piece la plus puissante de la liste du responsable, et
    elle est la seule non commencee. Le blocage est reel et non technique : une
    notification calee sur une heure de priere suppose de **connaitre** cette
@@ -76,7 +52,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    **N'entre pas en travaux avant arbitrage** — c'est une decision, pas un
    chantier.
 
-3. **Aucune mesure d'entree, et un traceur est interdit ici.**
+2. **Aucune mesure d'entree, et un traceur est interdit ici.**
    *Preuve :* `grep -ril "gtag\|analytics\|plausible\|matomo\|umami"` sur toutes
    les pages et les trois fichiers JavaScript ne rend **rien**. Or le pied de
    page promet « Ta progression reste sur ton telephone. Aucun compte, aucun
@@ -85,7 +61,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    journaux). Bloque jusqu'au deploiement — question posee aux trois autres
    agents dans le brainstorm des passerelles.
 
-4. **La recitation n'a jamais ete entendue par personne.**
+3. **La recitation n'a jamais ete entendue par personne.**
    *Preuve :* `halalgpt.fr:443` et `cdn.islamic.network:443` sont refuses par la
    politique reseau de l'atelier (403 au CONNECT, journalise par le proxy,
    verifie trois fois). Le mecanisme est teste avec un recitateur simule — 7
@@ -97,6 +73,38 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 ---
 
 ## Fait
+
+- **Le fichier hors ligne EST le site, et il marche — mon constat du cycle 16
+  etait faux** *(11 aout, cycle 17)* — **mesure : 13 tapes, 3 questions
+  repondues, ecran de fin « 3 sur 3 — sans faute », progression enregistree, et
+  a la reouverture « Objectif du jour atteint. 1 jour. »** Ouvert en `file://`
+  dans un vrai navigateur, une lecon se fait **en entier**, une seule carte a la
+  fois, 13 points de progression, zero erreur JavaScript.
+  **Mohamed a donc un acces complet depuis hier.** Il lui a ete dit le
+  contraire ; c'est corrige aupres de lui.
+  *Ce que j'avais mesure, et pourquoi c'etait faux — deux fois.*
+  1. Cycle 16 : j'ai clique le bouton « Suivant » de la premiere lecon **du
+     document**. Le fichier ouvre sur la vue « accueil » et un routeur change de
+     vue au clic ; les autres vues sont **masquees**. J'ai donc clique un bouton
+     cache et conclu « rien ne bouge ». De meme, « 0 zone de lecon pilotee » est
+     l'etat **normal** au chargement : seule la vue affichee est pilotee.
+  2. Cycle 17, premier essai : j'ai pris le bouton « Commencer : Sourate
+     Al-Fatiha » de l'ecran de bilan des trois questions — il **ferme
+     l'accueil de bienvenue**, il n'ouvre pas la lecon — pour celui de la carte
+     du jour, « Commencer → ». Le vrai parcours a **trois** etapes, pas deux.
+  *La lecon de methode, et elle est plus utile que le correctif :* **un
+  interrupteur qu'on actionne hors de l'ecran visible ne mesure rien.** Mes
+  quatre erreurs de mesure de la journee ont toutes la meme forme — mesurer
+  avant que le CSS soit la, compter une balise sans verifier qu'elle sert,
+  chercher un element present plutot que visible, cliquer un bouton masque.
+  Le harnais conduit maintenant le site **comme une personne** : il ne touche
+  que ce qui est visible dans la vue active.
+  *Verrou :* `test-fichier-usage.mjs`, **12 controles**, joue une lecon complete
+  dans le fichier hors ligne et verifie que la progression survit a un
+  rechargement.
+  *Ce qui reste inconnu :* `localStorage` en `file://` est verifie **dans
+  Chromium**, pas dans Safari sur iPhone. Une serie de sept jours dans un fichier
+  telecharge n'est donc **pas** promise — elle reste liee au site deploye.
 
 - **Chaque page dit enfin de quoi elle parle** *(10 aout, cycle 15)* — **avant :
   4 pages sur 10 annoncaient un titre de niveau 1. Apres : 10 sur 10.** Mesure
