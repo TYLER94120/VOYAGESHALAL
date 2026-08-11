@@ -54,21 +54,55 @@ requêtes ces pages sortent réellement.
 **Mesuré le 11 août, sur les pages rendues** (et non sur le code — mon
 premier compteur renvoyait 0 partout) : 11 pages, 2 853 mots au total,
 soit 259 en moyenne. Disneyland est passée à 879, **CDG à 1 207**,
-**Orly à 1 249** ; restent guide aéroports 453, gares de Paris 322,
+**Orly à 1 249**, **guide aéroports à 1 134** ; restent gares de Paris 322,
 Marseille 250,
 Lyon 224, Bruxelles 221, Genève 208, Toulouse 193, Nice 185.
 Nos guides récents font 900 à 1 200 mots.
 Le modèle est en place : ce qu'on peut ajouter sans rien inventer, c'est
 la méthode (que demander, que faire si on dit non), les ablutions, la
 prière qui pose problème selon la saison, et l'aveu de ce qu'on ne sait
-pas. **Suivante à traiter : le guide aéroports** (453 mots), puis les gares
-de Paris (322).
+pas. **Suivante à traiter : les gares de Paris** (322 mots), puis Marseille (250).
 
 
 
 ---
 
 ## Fait
+
+### Le domaine anglais renvoyait vers des adresses françaises — 11 août
+**Mesuré** avec un outil neuf, `scripts/audit-liens-internes.mjs` : sur 189
+liens internes distincts du domaine anglais, **6 faisaient une 301** — dont
+`/horaires-priere`, présent dans la barre de prière, donc **sur les 816
+pages**. Un lien interne qui redirige coûte un aller-retour au visiteur et
+du budget d'exploration à Google, et affiche une adresse française à un
+public anglophone.
+
+En suivant les trois derniers, un défaut plus visible est apparu :
+**l'accueil anglais affichait trois titres de guides en français**
+(« Voyage halal pour débutants », « Pratique »), parce que
+`guides.slice(0, 3)` prenait les trois premiers guides du fichier sans
+regarder la langue. Sur la page la plus importante du domaine anglais, et
+sous le radar de l'audit de langue : trois titres pèsent peu face à une
+page entière.
+
+**Après** : 187 liens sur le domaine anglais, **0 redirigé** ; 208 côté
+français, **0 redirigé**. L'accueil anglais annonce « Halal Travel for
+Beginners ». Réparé dans les composants partagés avec `localizedHref`, pas
+lien par lien.
+
+### Le guide aéroports tranchait une question religieuse — 11 août
+Quatrième page « où prier » approfondie. **Avant** : 453 mots en français,
+305 en anglais. **Après : 1 134 et 914.** Total des onze pages :
+5 919 → 7 296 mots.
+
+**Le vrai défaut n'était pas la longueur.** La page écrivait « le voyageur
+peut raccourcir les prières de 4 à 2 rakats, et regrouper dhuhr avec asr »
+comme une règle établie, alors que partout ailleurs nous disons que nous ne
+tranchons pas les questions religieuses et renvoyons à HalalGPT. La
+contradiction était dans le guide-mère de la série.
+
+**Vérifié sur les deux domaines** : 12 h2 de chaque côté, titres à 58 et 49
+caractères, descriptions à 145 et 123, 26 et 18 liens internes tous en 200.
 
 ### Audit de langue passé de 7 % à 100 % des pages — 11 août
 L'échantillon de 120 pages avait trouvé le défaut de `/privacy` ; restait à

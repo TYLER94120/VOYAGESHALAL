@@ -4,6 +4,7 @@ import { readFileSync } from 'fs'
 import path from 'path'
 import { listSpotsByVille, LIEU_LABELS } from '@/lib/prayerSpots'
 import { getDomainSEO } from '@/lib/domain'
+import { localizedHref } from '@/lib/slugs'
 import { alternatesFor } from '@/lib/hreflang'
 import cityCoords from '@/lib/cityCoords.json'
 import JsonLd from '@/components/seo/JsonLd'
@@ -84,7 +85,7 @@ export default async function PrayerVillePage({ params }: Props) {
           </p>
           <div style={{ marginTop: 14, display: 'flex', gap: 10, justifyContent: 'center', flexWrap: 'wrap' }}>
             <Link className="lead-btn" href={`/destinations/${ville}`}>{isEN ? `${nom} guide` : `Guide ${nom}`}</Link>
-            <Link className="lead-btn" href="/horaires-priere" style={{ background: '#1b4332', color: '#fff' }}>{isEN ? 'Prayer times' : 'Horaires de prière'}</Link>
+            <Link className="lead-btn" href={localizedHref('/horaires-priere', isEN)} style={{ background: '#1b4332', color: '#fff' }}>{isEN ? 'Prayer times' : 'Horaires de prière'}</Link>
           </div>
         </div>
       )}
@@ -139,7 +140,7 @@ export default async function PrayerVillePage({ params }: Props) {
           </ul>
           <div style={{ marginTop: 14, display: 'flex', gap: 10, flexWrap: 'wrap' }}>
             <Link className="lead-btn" href={`/destinations/${ville}`}>{isEN ? `${nom} halal guide` : `Guide halal ${nom}`}</Link>
-            <Link className="lead-btn" href="/horaires-priere" style={{ background: '#1b4332', color: '#fff' }}>{isEN ? 'Prayer times' : 'Horaires de prière'}</Link>
+            <Link className="lead-btn" href={localizedHref('/horaires-priere', isEN)} style={{ background: '#1b4332', color: '#fff' }}>{isEN ? 'Prayer times' : 'Horaires de prière'}</Link>
           </div>
         </section>
       )}

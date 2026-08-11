@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useInstantPosition } from '@/lib/useInstantPosition'
 import { computePrayerTimesFull } from '@/lib/prayerCalc'
 import { useLanguage } from '@/components/i18n/LanguageProvider'
+import { localizedHref } from '@/lib/slugs'
 import { ENVIES, envieById, niveauHalal, forceEnvie } from '@/lib/envies'
 import { mentionPaysMusulman } from '@/lib/paysHalalDefaut'
 import { conforme } from '@/lib/conformite'
@@ -585,7 +586,7 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
           // Bandeau priere compact : tout tient sur une ligne quand la priere
           // n'est pas le moment dominant
           const priereSlim = (
-            <Link className="board-slim" href="/horaires-priere" style={{ ...T.tile, marginTop: 10, display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none', padding: '11px 14px' }}>
+            <Link className="board-slim" href={localizedHref('/horaires-priere', en)} style={{ ...T.tile, marginTop: 10, display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none', padding: '11px 14px' }}>
               <span style={{ fontSize: 18 }} aria-hidden>🕌</span>
               <p style={{ flex: 1, color: '#fdfaf3', fontWeight: 700, fontSize: 13.5, margin: 0, lineHeight: 1.35 }}>
                 {fenetre.key} {fenetre.mode === 'current' ? (en ? 'ends in' : 'se termine dans') : (en ? 'in' : 'dans')} <strong style={{ color: 'var(--or)' }}>{fmtMin(minLeft)}</strong>
@@ -923,7 +924,7 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
             </span>
           </Link>
           <span aria-hidden style={{ width: 1, alignSelf: 'stretch', background: 'rgba(253,250,243,0.14)' }} />
-          <Link href="/horaires-priere" style={{ flex: 1, minHeight: 44, display: 'flex', alignItems: 'center', gap: 8, textDecoration: 'none', justifyContent: 'flex-end' }}>
+          <Link href={localizedHref('/horaires-priere', en)} style={{ flex: 1, minHeight: 44, display: 'flex', alignItems: 'center', gap: 8, textDecoration: 'none', justifyContent: 'flex-end' }}>
             <span style={{ fontSize: 17 }} aria-hidden>🌙</span>
             <span style={{ color: 'rgba(253,250,243,0.85)', fontWeight: 700, fontSize: 13, textAlign: 'right', lineHeight: 1.25 }}>{hijri ?? '—'}</span>
           </Link>
@@ -936,7 +937,7 @@ export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedet
             Remonte a la place de l'ancienne bande de vignettes : c'est
             l'information qu'on ouvre le site pour consulter. */}
         {journee && (
-          <Link href="/horaires-priere" className="board-strip" style={{ ...T.tile, marginTop: 10, display: 'flex', justifyContent: 'space-between', gap: 4, padding: '13px 10px', textDecoration: 'none' }}>
+          <Link href={localizedHref('/horaires-priere', en)} className="board-strip" style={{ ...T.tile, marginTop: 10, display: 'flex', justifyContent: 'space-between', gap: 4, padding: '13px 10px', textDecoration: 'none' }}>
             {journee.map(({ k, d }) => {
               const active = fenetre.key === k
               return (

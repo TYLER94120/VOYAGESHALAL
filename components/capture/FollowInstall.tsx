@@ -1,6 +1,7 @@
 'use client'
 import { track } from '@vercel/analytics'
 import { useLanguage } from '@/components/i18n/LanguageProvider'
+import { localizedHref } from '@/lib/slugs'
 import { SOCIAL_LINKS } from '@/lib/seo'
 
 // CTA « Suivre » (réseaux) + « Installer l'app ». Chaque interaction pose un
@@ -41,7 +42,7 @@ export default function FollowInstall({ source = 'home' }: { source?: string }) 
       <div className="fi-block">
         <h3 className="fi-title">{en ? 'Get the app' : 'Installe l\'app'}</h3>
         <p className="fi-sub">{en ? 'Qibla, prayer times & nearby — even offline.' : 'Qibla, horaires & autour de moi — même hors-ligne.'}</p>
-        <a href="/application" className="fi-install" onClick={onInstall}>
+        <a href={localizedHref('/application', en)} className="fi-install" onClick={onInstall}>
           📲 {en ? 'Join the waitlist' : 'Rejoindre la liste d\'attente'}
         </a>
       </div>
