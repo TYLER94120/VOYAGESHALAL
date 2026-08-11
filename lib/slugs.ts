@@ -65,6 +65,7 @@ export const BLOG_FR_TO_EN: Record<string, string> = {
   'prier-en-train': '/blog/praying-on-a-train',
   'ou-prier-aeroports': '/blog/where-to-pray-paris-airports',
   'ou-prier-gares-paris': '/blog/where-to-pray-paris-stations',
+  'ou-prier-aeroport-marseille': '/blog/where-to-pray-marseille-airport',
   'ou-prier-aeroport-cdg': '/blog/where-to-pray-cdg-airport',
   'ou-prier-aeroport-orly': '/blog/where-to-pray-orly-airport',
   'prier-en-avion': '/blog/praying-on-a-plane',
