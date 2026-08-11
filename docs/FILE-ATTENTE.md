@@ -13,14 +13,16 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 
 ## A faire
 
-> **Cycles 6, 10, 13 et 16 : audits.** Quand les seuls elements restants sont
+> **Cycles 6, 10, 13, 16 et 18 : audits.** Quand les seuls elements restants sont
 > bloques — un arbitrage, deux fois le deploiement — le cycle sert a mesurer,
 > pas a forcer un blocage. Les sept elements des audits 6, 10 et 13 sont **tous
 > faits** (cycles 7, 8, 9, 11, 12, 14, 15). **L'audit du cycle 16 n'a produit
 > aucun element valable** : son unique constat etait faux, et le cycle 17 l'a
-> retire — voir « Fait ». Les trois qui restent sont les trois bloques.
+> retire — voir « Fait ». **L'audit du cycle 18 a conduit le site comme une
+> personne** sur quatre chemins jamais parcourus ainsi : il en sort les elements
+> 1 et 2, et trois promesses verifiees saines.
 >
-> **Mesure aux cycles 6, 10, 13 et 16, et rien a corriger** — a ne pas
+> **Mesure aux cycles 6, 10, 13, 16 et 18, et rien a corriger** — a ne pas
 > re-mesurer sans raison :
 > - **214 elements contiennent de l'arabe, 214 portent `lang="ar"` et
 >   `dir="rtl"`**, zero nu.
@@ -39,8 +41,43 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 >   visiteur ne voit que les pages du site ». Verifie en appliquant les regles de
 >   `.vercelignore` a tous les fichiers : **24 publics, 8 retires, zero fuite** —
 >   aucune note de travail, aucun outil, aucun apercu ne serait lisible en ligne.
+> - **Les trois questions d'accueil orientent vraiment** *(cycle 18)*. Trois
+>   reponses, trois departs differents : questions passees → Al-Fatiha ;
+>   « je ne prie pas encore » → **Les six piliers de la foi** ; « Al-Fatiha, oui
+>   par coeur » → **Trois invocations**. Elles ne sont donc pas decoratives.
+> - **Le deuxieme jour compte** *(cycle 18)*. Etat d'hier ecrit, lecon du jour
+>   faite : l'accueil affiche **« 2 jours d'affilee — c'est ton record. »** et
+>   **« Objectif du jour atteint. »**
+> - **La revision arrive a J+2** *(cycle 18)*. Les six lecons faites il y a deux
+>   jours : la carte du jour devient **« Revoir → »** au lieu de proposer du neuf.
 
-1. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
+1. **Refaire une lecon le meme jour repousse sa revision de 2 a 7 jours.**
+   *Preuve :* mesure du 11 aout, cycle 18 — une lecon faite aujourd'hui, rouverte
+   et refaite dans la minute. L'ecran de fin annonce alors « Cette lecon
+   reviendra dans **7 jours** » au lieu de 2. La repetition espacee compte les
+   tours (`ESPACEMENT = [2, 7, 21, 60]`) sans regarder **quand** le tour
+   precedent a eu lieu.
+   *Pourquoi c'est un defaut, et pas un detail :* refaire une carte trente
+   secondes plus tard n'est pas un souvenir retrouve apres un delai — c'est une
+   relecture. Le site la traite pourtant comme une reussite et **eloigne la vraie
+   revision**. Quelqu'un qui repasse une lecon pour s'entrainer est donc
+   **penalise par le calendrier**, en silence, sans rien voir.
+   *Direction :* ne pas avancer le tour quand `faitLe` est deja aujourd'hui —
+   la seance compte pour l'objectif et pour la serie, mais l'echeance ne bouge
+   pas. Une seule condition ; le reste du calcul est deja juste.
+
+2. **Quand la carte du jour est deja une revision, la ligne de rappel en nomme
+   une autre.** *(mineur, assume comme tel)*
+   *Preuve :* mesure du 11 aout, cycle 18 — les six lecons dues le meme jour : la
+   carte propose « Sourate Al-Fatiha… Revoir → » et, juste en dessous, la ligne
+   annonce « **Trois invocations** revient aujourd'hui ». Deux lecons differentes
+   nommees sur un ecran dont toute la regle est **une carte, un bouton**.
+   *Pourquoi la ligne existe :* elle a ete ajoutee parce qu'une lecon neuve passe
+   toujours devant, ce qui rendait la revision invisible six jours durant. Ce
+   besoin disparait quand la carte **est** la revision : la ligne devrait alors
+   se taire, ou parler de la meme lecon.
+
+3. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
    *Preuve :* c'est la piece la plus puissante de la liste du responsable, et
    elle est la seule non commencee. Le blocage est reel et non technique : une
    notification calee sur une heure de priere suppose de **connaitre** cette
@@ -52,7 +89,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    **N'entre pas en travaux avant arbitrage** — c'est une decision, pas un
    chantier.
 
-2. **Aucune mesure d'entree, et un traceur est interdit ici.**
+4. **Aucune mesure d'entree, et un traceur est interdit ici.**
    *Preuve :* `grep -ril "gtag\|analytics\|plausible\|matomo\|umami"` sur toutes
    les pages et les trois fichiers JavaScript ne rend **rien**. Or le pied de
    page promet « Ta progression reste sur ton telephone. Aucun compte, aucun
@@ -61,7 +98,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    journaux). Bloque jusqu'au deploiement — question posee aux trois autres
    agents dans le brainstorm des passerelles.
 
-3. **La recitation n'a jamais ete entendue par personne.**
+5. **La recitation n'a jamais ete entendue par personne.**
    *Preuve :* `halalgpt.fr:443` et `cdn.islamic.network:443` sont refuses par la
    politique reseau de l'atelier (403 au CONNECT, journalise par le proxy,
    verifie trois fois). Le mecanisme est teste avec un recitateur simule — 7
