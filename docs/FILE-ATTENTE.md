@@ -13,22 +13,61 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 
 ## A faire
 
-> **Cycles 6 et 10 : audits.** Quand les seuls elements restants sont bloques —
-> un arbitrage, deux fois le deploiement — le cycle sert a mesurer, pas a forcer
-> un blocage. Les cinq elements que ces deux audits ont produits sont
-> **tous faits** (cycles 7, 8, 9, 11, 12). Les trois qui restent sont les trois
-> bloques : le prochain cycle sera donc un audit.
+> **Cycles 6, 10 et 13 : audits.** Quand les seuls elements restants sont
+> bloques — un arbitrage, deux fois le deploiement — le cycle sert a mesurer,
+> pas a forcer un blocage. Les cinq elements des audits 6 et 10 sont **tous
+> faits** (cycles 7, 8, 9, 11, 12). Les elements 1 et 2 ci-dessous viennent de
+> l'audit du cycle 13.
 >
-> **Mesure aux cycles 6 et 10, et rien a corriger** — a ne pas re-mesurer sans
-> raison :
+> **Mesure aux cycles 6, 10 et 13, et rien a corriger** — a ne pas re-mesurer
+> sans raison :
 > - **214 elements contiennent de l'arabe, 214 portent `lang="ar"` et
 >   `dir="rtl"`**, zero nu.
 > - **La page des 114 sourates est complete** : 114 lignes, numerotees 1 a 114
 >   sans trou ni doublon, 114 noms arabes, 114 noms transcrits, aucune case vide.
 > - **Une lecon se termine entierement au clavier**, sans souris (126
 >   tabulations), et un style de focus visible est bien declare.
+> - **Rien ne deborde a 320 px** (iPhone SE), sur les 10 pages : tout etait
+>   verifie a 414 jusque-la. Zero erreur JavaScript a cette largeur.
+> - **Le poids tient** : 2 a 5 requetes et **66 a 149 Ko** par page, le plus gros
+>   etant `app.js` a 67 Ko.
+> - **La structure des titres est saine** : aucun saut de niveau, aucun `id` en
+>   double. Et les meta absentes de `chemin.html` (og, canonical) sont
+>   **coherentes** : cette page est en `noindex,follow`, c'est une page privee.
 
-1. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
+1. **Quand le telephone refuse le stockage, l'ecran de fin annonce deux choses
+   fausses.**
+   *Preuve :* mesure du 10 aout, cycle 13 — `localStorage` rendu inaccessible
+   avant tout script, comme en navigation privee sur iPhone. Bonne nouvelle
+   d'abord : **les 10 pages restent lisibles, la lecon va jusqu'au bout, zero
+   erreur JavaScript** — les `try/catch` tiennent. Mais l'ecran de fin affiche,
+   apres une lecon reussie :
+   > « 2 sur 2 — sans faute. Tu as maintenant appris **0 choses** sur ce site.
+   > Cette lecon **reviendra dans 2 jours**. »
+   Les deux dernieres affirmations sont fausses : la personne vient d'apprendre
+   deux choses, et rien ne reviendra puisque rien n'a pu etre enregistre.
+   *Pourquoi ca compte plus qu'un detail :* « tu as appris 0 choses » juste
+   apres un sans-faute est un **compteur qui ment**, et la regle du site est
+   qu'un compteur enonce le fait exact. C'est aussi la seule phrase du site qui
+   pourrait decourager quelqu'un, et elle apparait au moment le plus fragile.
+   *Direction :* detecter une fois que le stockage est refuse, et alors **ne
+   rien annoncer** de ce qui depend de lui — ni total, ni revision — en le
+   disant simplement plutot qu'en affichant un zero.
+
+2. **Aucune page de lecon n'annonce son sujet dans un titre lisible.**
+   *Preuve :* mesure du 10 aout, cycle 13 — sur les 6 lecons, **5 n'ont aucun
+   `<h1>`** : le titre de la lecon est un `<h2>` agrandi en style en ligne
+   (`font-size:29px`). La sixieme, `al-fatiha`, en a un — mais
+   `<h1 class="visuellement-cache" hidden>`, et **`hidden` retire l'element de
+   l'arbre d'accessibilite** : il n'est lu ni a l'oeil ni par un lecteur
+   d'ecran. Pire, la classe **`visuellement-cache` n'existe nulle part dans le
+   CSS**. Le compte utile est donc **0 sur 6**, pas 1 sur 6 — mon premier
+   relevé disait 1, il comptait la balise sans verifier qu'elle servait.
+   *Pourquoi c'est un defaut :* un `<h1>` est la reponse a « de quoi parle cette
+   page » pour un lecteur d'ecran comme pour Google, et ces pages sont les
+   seules du site destinees a etre trouvees. Les 4 autres pages en ont un.
+
+3. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
    *Preuve :* c'est la piece la plus puissante de la liste du responsable, et
    elle est la seule non commencee. Le blocage est reel et non technique : une
    notification calee sur une heure de priere suppose de **connaitre** cette
@@ -40,7 +79,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    **N'entre pas en travaux avant arbitrage** — c'est une decision, pas un
    chantier.
 
-2. **Aucune mesure d'entree, et un traceur est interdit ici.**
+4. **Aucune mesure d'entree, et un traceur est interdit ici.**
    *Preuve :* `grep -ril "gtag\|analytics\|plausible\|matomo\|umami"` sur toutes
    les pages et les trois fichiers JavaScript ne rend **rien**. Or le pied de
    page promet « Ta progression reste sur ton telephone. Aucun compte, aucun
@@ -49,7 +88,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    journaux). Bloque jusqu'au deploiement — question posee aux trois autres
    agents dans le brainstorm des passerelles.
 
-3. **La recitation n'a jamais ete entendue par personne.**
+5. **La recitation n'a jamais ete entendue par personne.**
    *Preuve :* `halalgpt.fr:443` et `cdn.islamic.network:443` sont refuses par la
    politique reseau de l'atelier (403 au CONNECT, journalise par le proxy,
    verifie trois fois). Le mecanisme est teste avec un recitateur simule — 7
