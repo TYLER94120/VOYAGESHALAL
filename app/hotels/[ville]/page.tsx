@@ -6,6 +6,7 @@ import path from 'path'
 import type { Metadata } from 'next'
 import type { Ville } from '@/lib/villeTypes'
 import { getDomainSEO, FR_URL, EN_URL } from '@/lib/domain'
+import { GUIDES_FR_TO_EN } from '@/lib/slugs'
 import { dedupeHotels, noteOf, priceRank } from '@/lib/hotelFilter'
 import HotelCTA from '@/components/affiliate/HotelCTA'
 import HotelsSansAlcool from '@/components/hotels/HotelsSansAlcool'
@@ -178,7 +179,7 @@ export default async function HotelsVillePage({ params }: Props) {
 
       <div style={{ marginTop: 24, display: 'flex', gap: 14, flexWrap: 'wrap' }}>
         <Link href={`/destinations/${slug}`} style={{ fontWeight: 700, color: 'var(--foret)' }}>← {isEN ? `Full ${ville.nom} guide` : `Guide complet ${ville.nom}`}</Link>
-        <Link href="/guides/hotel-halal-tout-savoir" style={{ fontWeight: 700, color: 'var(--foret)' }}>{isEN ? 'What is a halal hotel?' : 'Qu\'est-ce qu\'un hôtel halal ?'} →</Link>
+        <Link href={`/guides/${isEN ? GUIDES_FR_TO_EN['hotel-halal-tout-savoir'] : 'hotel-halal-tout-savoir'}`} style={{ fontWeight: 700, color: 'var(--foret)' }}>{isEN ? 'What is a halal hotel?' : 'Qu\'est-ce qu\'un hôtel halal ?'} →</Link>
       </div>
     </main>
   )

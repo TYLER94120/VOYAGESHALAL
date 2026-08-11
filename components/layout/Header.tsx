@@ -92,7 +92,7 @@ export default function Header({ brandEN = false }: { brandEN?: boolean }) {
             </button>
           )}
           <LanguageSwitcher />
-          <Link href="/application" className="btn-app-gold">
+          <Link href={localizedHref('/application', isEN)} className="btn-app-gold">
             {t('nav.app')}
           </Link>
           {/* Burger mobile */}

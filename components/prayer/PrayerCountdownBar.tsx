@@ -5,6 +5,7 @@ import { useInstantPosition } from '@/lib/useInstantPosition'
 import { computePrayerTimesFull } from '@/lib/prayerCalc'
 import LanguageSwitcher from '@/components/i18n/LanguageSwitcher'
 import { useLanguage } from '@/components/i18n/LanguageProvider'
+import { localizedHref } from '@/lib/slugs'
 
 const KEYS = ['Fajr', 'Dhuhr', 'Asr', 'Maghrib', 'Isha'] as const
 const LABELS: Record<string, string> = { Fajr: 'Fajr', Dhuhr: 'Dhuhr', Asr: 'ʿAsr', Maghrib: 'Maghrib', Isha: 'ʿIshâ' }
@@ -65,7 +66,7 @@ export default function PrayerCountdownBar() {
 
   let inner: React.ReactNode
   if (!city) {
-    inner = <Link href="/horaires-priere" className="prayer-bar-main"><span style={{ opacity: 0.85 }}>🕌 {en ? 'Choose your city for prayer times' : 'Choisissez votre ville pour les horaires'}</span></Link>
+    inner = <Link href={localizedHref('/horaires-priere', en)} className="prayer-bar-main"><span style={{ opacity: 0.85 }}>🕌 {en ? 'Choose your city for prayer times' : 'Choisissez votre ville pour les horaires'}</span></Link>
   } else if (!timings) {
     inner = <span className="prayer-bar-main">🕌 <span style={{ opacity: 0.7 }}>{en ? 'Loading prayer times…' : 'Chargement des horaires…'}</span></span>
   } else {
@@ -88,7 +89,7 @@ export default function PrayerCountdownBar() {
     const ss = Math.floor((diff % 60000) / 1000)
     const remaining = hh > 0 ? `${hh}h ${String(mm).padStart(2, '0')}min` : `${mm}min ${String(ss).padStart(2, '0')}s`
     inner = (
-      <Link href="/horaires-priere" className="prayer-bar-main">
+      <Link href={localizedHref('/horaires-priere', en)} className="prayer-bar-main">
         <span>🕌 <strong style={{ color: 'var(--or)' }}>{LABELS[nextKey]}</strong> {timings[nextKey]}</span>
         <span style={{ opacity: 0.6 }}>·</span>
         <span>{en ? 'in' : 'dans'} <strong>{remaining}</strong></span>
