@@ -22,16 +22,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 > **214 elements contiennent de l'arabe, 214 portent `lang="ar"` et `dir="rtl"`**,
 > zero nu.
 
-1. **Le nombre de cartes annonce compte l'ecran de fin, la barre non.** *(mineur,
-   assume comme tel)*
-   *Preuve :* mesure du 10 aout, cycle 6 — le catalogue et `app.js` annoncent
-   **14** cartes pour Al-Fatiha, et la barre de progression en dessine **13**,
-   parce qu'elle exclut l'ecran « Lecon terminee ». Ecart identique sur les 6
-   lecons (14/13, 15/14, 14/13, 10/9, 15/14, 12/11). Les deux chiffres sont
-   defendables ; ce qui ne l'est pas, c'est qu'ils **diffèrent dans le meme
-   produit**. A trancher une fois, pas six.
-
-2. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
+1. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
    *Preuve :* c'est la piece la plus puissante de la liste du responsable, et
    elle est la seule non commencee. Le blocage est reel et non technique : une
    notification calee sur une heure de priere suppose de **connaitre** cette
@@ -43,7 +34,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    **N'entre pas en travaux avant arbitrage** — c'est une decision, pas un
    chantier.
 
-3. **Aucune mesure d'entree, et un traceur est interdit ici.**
+2. **Aucune mesure d'entree, et un traceur est interdit ici.**
    *Preuve :* `grep -ril "gtag\|analytics\|plausible\|matomo\|umami"` sur toutes
    les pages et les trois fichiers JavaScript ne rend **rien**. Or le pied de
    page promet « Ta progression reste sur ton telephone. Aucun compte, aucun
@@ -52,7 +43,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    journaux). Bloque jusqu'au deploiement — question posee aux trois autres
    agents dans le brainstorm des passerelles.
 
-4. **La recitation n'a jamais ete entendue par personne.**
+3. **La recitation n'a jamais ete entendue par personne.**
    *Preuve :* `halalgpt.fr:443` et `cdn.islamic.network:443` sont refuses par la
    politique reseau de l'atelier (403 au CONNECT, journalise par le proxy,
    verifie trois fois). Le mecanisme est teste avec un recitateur simule — 7
@@ -64,6 +55,25 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 ---
 
 ## Fait
+
+- **Le site annonce le nombre de cartes qu'il montre vraiment** *(10 aout,
+  cycle 9)* — **avant : 6 lecons sur 6 annoncaient un chiffre que la barre de
+  progression contredisait. Apres : 0.** Al-Fatiha annoncait **14** cartes, la
+  barre en dessinait **13** ; meme ecart partout (15/14, 10/9, 15/14, 12/11,
+  14/13). **13 emplacements** corriges : 6 dans le catalogue de `app.js`, 6 dans
+  le repli de `parcours.html`, 1 dans le repli de l'accueil.
+  *Le chiffre retenu est celui du contenu, et ce n'est pas arbitraire.* Le
+  chiffre annonce comptait l'ecran « Lecon terminee », qui n'est pas une carte
+  qu'on apprend. Surtout, la barre se remplit **entierement au moment ou cet
+  ecran apparait** : elle n'est coherente qu'avec le compte du contenu. Aucun
+  calcul du site n'utilisait ce nombre — il n'est qu'affiche — donc rien d'autre
+  ne bouge : ni la progression, ni la collection, ni les revisions.
+  *Verrou :* `test-nombres.mjs` confronte les **trois copies** du chiffre au
+  nombre reel de cartes de chaque lecon, et au nombre de points de la barre.
+  Trois copies d'un meme nombre derivent toujours ; maintenant elles echouent au
+  lieu de deriver. Verifie dans les deux sens — il **echoue** sur la version
+  d'avant en affichant chaque ecart (14/13, 15/14, 10/9…), il passe sur celle
+  d'apres.
 
 - **Tout le texte du site atteint le seuil de lisibilite** *(10 aout, cycle 8)* —
   **avant : 36 couleurs de texte affichees, 8 sous le seuil AA. Apres : 36
