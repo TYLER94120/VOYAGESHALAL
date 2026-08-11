@@ -26,14 +26,15 @@ Chiffres AVANT le 9 août, 7 jours : voyageshalal.fr 1 970 impressions /
 
 ## À faire
 
-### 1. Les sections « manger » et « prier » manquent sur 311 fiches villes
-**Mesuré le 11 août, après la série Asie** : **43 fiches sur 354** ont leurs
-quatre sections (manger et prier, FR et EN). Les 311 autres n'ont que des
-listes d'adresses — donc peu de texte unique, et rien qui réponde à
-« manger halal à X » en toutes lettres.
-Prochaine série, par ordre de doute réel du voyageur : **l'Amérique du
-Nord** (Toronto, Montréal, Chicago, Los Angeles, New York), puis l'Europe
-de l'Est.
+### 1. Les sections « manger » et « prier » manquent sur 307 fiches villes
+**Mesuré le 11 août, après les séries Asie et Amérique du Nord** :
+**47 fiches sur 354** ont leurs quatre sections (manger et prier, FR et EN).
+Les 307 autres n'ont que des listes d'adresses — donc peu de texte unique,
+et rien qui réponde à « manger halal à X » en toutes lettres.
+Prochaine série, par ordre de doute réel du voyageur : **l'Europe de l'Est
+et les Balkans** (Sarajevo, Sofia, Bucarest, Varsovie, Prague), où la
+question se pose autrement — communautés anciennes d'un côté, quasi rien
+de l'autre.
 
 ### 2. Les hôtels d'Istanbul et Dubaï attendent le robot OSM
 **Mesuré** : 41 mentions « information non vérifiée » par page, et
@@ -52,6 +53,31 @@ requêtes ces pages sortent réellement.
 ---
 
 ## Fait
+
+### Quatre villes d'Amérique du Nord ont leurs sections — 11 août
+**Avant** : 43 fiches sur 354. **Après : 47.** **516 mots uniques en
+français, 460 en anglais**, sur 8 pages (Toronto, Montréal, Chicago,
+Los Angeles — New York avait déjà les siennes).
+
+**La vérité nord-américaine que peu de guides écrivent**, et qui vaut plus
+que dix adresses : **il n'existe aucun label d'État**, ni aux États-Unis ni
+au Canada. La certification est privée et plusieurs organismes coexistent.
+Et le vocabulaire courant y ajoute une nuance décisive : **« zabiha
+halal » précise le mode d'abattage, « halal » seul ne le garantit pas**.
+C'est écrit sur les trois villes concernées.
+
+**La difficulté commune, dite franchement** : ce n'est pas de trouver une
+mosquée ou un restaurant, c'est la DISTANCE. À Los Angeles une mosquée à
+quinze kilomètres peut demander une heure ; à Toronto et Chicago les
+quartiers concernés sont loin du centre. Montréal fait exception, et la
+page le dit : ville compacte, métro suffisant.
+
+**Aucun restaurant nommé** : quartiers, institutions publiques et
+fonctionnement réel de la certification, rien d'autre.
+
+**Vérifié** : les 4 fiches répondent en 200 sur les deux domaines, les
+sections sortent dans la bonne langue, et aucun texte français n'apparaît
+côté anglais.
 
 ### Cinq villes d'Asie non musulmane ont leurs sections — 11 août
 **Avant** : 38 fiches sur 354 avec les quatre sections. **Après : 43.**
