@@ -5326,14 +5326,34 @@ if (typeof module !== 'undefined' && module.exports) { module.exports = ippCoran
     var d = charger();
     var jour = aujourdhui();
     var f = d.lecons[id] || { tours: 0 };
-    f.tours = (f.tours || 0) + 1;
+
+    /* Un tour ne compte qu'une fois par jour.
+
+       Sans cette condition, refaire une lecon dans la minute faisait passer son
+       echeance de 2 jours a 7 : le calcul comptait les tours sans regarder QUAND
+       le tour precedent avait eu lieu. Or refaire une carte trente secondes plus
+       tard n'est pas un souvenir retrouve apres un delai, c'est une relecture —
+       et l'espacement ne se merite qu'avec le delai.
+
+       Consequence : quelqu'un qui repassait une lecon pour s'entrainer voyait sa
+       vraie revision s'eloigner, en silence. Il etait puni de s'entrainer.
+
+       Ce qui compte quand meme, comme avant : la journee est enregistree, donc
+       la serie et l'objectif du jour avancent normalement. */
+    var refait = (f.faitLe === jour);
+    if (!refait) { f.tours = (f.tours || 0) + 1; }
     f.faitLe = jour;
-    var pas = ESPACEMENT[Math.min(f.tours - 1, ESPACEMENT.length - 1)];
-    f.revoirLe = plusDeJours(jour, pas);
+
+    var pas = ESPACEMENT[Math.min(Math.max(f.tours, 1) - 1, ESPACEMENT.length - 1)];
+    // Une reprise du meme jour ne repousse pas l'echeance deja fixee.
+    if (!refait || !f.revoirLe) { f.revoirLe = plusDeJours(jour, pas); }
+
     d.lecons[id] = f;
     if (d.jours.indexOf(jour) === -1) { d.jours.push(jour); }
     sauver(d);
-    return { pas: pas };
+    // `pas` sert la phrase de fin de lecon : on annonce les jours qui restent
+    // reellement avant l'echeance, pas l'espacement theorique.
+    return { pas: Math.max(1, ecartJours(jour, f.revoirLe)) };
   }
 
   function jours() { return charger().jours.slice().sort(); }

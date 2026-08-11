@@ -51,22 +51,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 > - **La revision arrive a J+2** *(cycle 18)*. Les six lecons faites il y a deux
 >   jours : la carte du jour devient **« Revoir → »** au lieu de proposer du neuf.
 
-1. **Refaire une lecon le meme jour repousse sa revision de 2 a 7 jours.**
-   *Preuve :* mesure du 11 aout, cycle 18 — une lecon faite aujourd'hui, rouverte
-   et refaite dans la minute. L'ecran de fin annonce alors « Cette lecon
-   reviendra dans **7 jours** » au lieu de 2. La repetition espacee compte les
-   tours (`ESPACEMENT = [2, 7, 21, 60]`) sans regarder **quand** le tour
-   precedent a eu lieu.
-   *Pourquoi c'est un defaut, et pas un detail :* refaire une carte trente
-   secondes plus tard n'est pas un souvenir retrouve apres un delai — c'est une
-   relecture. Le site la traite pourtant comme une reussite et **eloigne la vraie
-   revision**. Quelqu'un qui repasse une lecon pour s'entrainer est donc
-   **penalise par le calendrier**, en silence, sans rien voir.
-   *Direction :* ne pas avancer le tour quand `faitLe` est deja aujourd'hui —
-   la seance compte pour l'objectif et pour la serie, mais l'echeance ne bouge
-   pas. Une seule condition ; le reste du calcul est deja juste.
-
-2. **Quand la carte du jour est deja une revision, la ligne de rappel en nomme
+1. **Quand la carte du jour est deja une revision, la ligne de rappel en nomme
    une autre.** *(mineur, assume comme tel)*
    *Preuve :* mesure du 11 aout, cycle 18 — les six lecons dues le meme jour : la
    carte propose « Sourate Al-Fatiha… Revoir → » et, juste en dessous, la ligne
@@ -77,7 +62,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    besoin disparait quand la carte **est** la revision : la ligne devrait alors
    se taire, ou parler de la meme lecon.
 
-3. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
+2. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
    *Preuve :* c'est la piece la plus puissante de la liste du responsable, et
    elle est la seule non commencee. Le blocage est reel et non technique : une
    notification calee sur une heure de priere suppose de **connaitre** cette
@@ -89,7 +74,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    **N'entre pas en travaux avant arbitrage** — c'est une decision, pas un
    chantier.
 
-4. **Aucune mesure d'entree, et un traceur est interdit ici.**
+3. **Aucune mesure d'entree, et un traceur est interdit ici.**
    *Preuve :* `grep -ril "gtag\|analytics\|plausible\|matomo\|umami"` sur toutes
    les pages et les trois fichiers JavaScript ne rend **rien**. Or le pied de
    page promet « Ta progression reste sur ton telephone. Aucun compte, aucun
@@ -98,7 +83,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    journaux). Bloque jusqu'au deploiement — question posee aux trois autres
    agents dans le brainstorm des passerelles.
 
-5. **La recitation n'a jamais ete entendue par personne.**
+4. **La recitation n'a jamais ete entendue par personne.**
    *Preuve :* `halalgpt.fr:443` et `cdn.islamic.network:443` sont refuses par la
    politique reseau de l'atelier (403 au CONNECT, journalise par le proxy,
    verifie trois fois). Le mecanisme est teste avec un recitateur simule — 7
@@ -110,6 +95,32 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 ---
 
 ## Fait
+
+- **S'entrainer ne repousse plus la revision, et n'annule plus l'objectif du
+  jour** *(11 aout, cycle 19)* — une lecon faite aujourd'hui, refaite dans la
+  minute. **Avant : le tour passait de 1 a 2, l'echeance sautait de 2 a 7 jours,
+  et l'objectif du jour passait de « atteint » a « pas atteint ». Apres : tour
+  1, echeance 2 jours, objectif toujours atteint.** 15 controles au navigateur.
+  *Le defaut, en une phrase :* l'espacement comptait les tours sans regarder
+  **quand** le tour precedent avait eu lieu. Refaire une carte trente secondes
+  plus tard n'est pas un souvenir retrouve apres un delai, c'est une relecture —
+  et l'espacement ne se gagne qu'avec le delai.
+  *Le second defaut, decouvert en corrigeant le premier, est le plus grave.*
+  L'objectif du jour compte une lecon **neuve** (`tours === 1`) ou trois
+  revisions. En passant a « tour 2 », la seance cessait d'etre une lecon neuve :
+  **l'anneau du jour se vidait apres qu'on ait travaille plus.** Cela contredit
+  la regle du site — on ne fait rien perdre a personne, et un objectif deja
+  atteint ne se reprend pas.
+  *Ce qui n'a pas change, et devait ne pas changer :* la journee reste
+  enregistree, donc la serie avance ; et apres un **vrai** delai l'echeance
+  avance bien de 2 a 7 jours. Le test verifie les deux sens — sinon on remplace
+  un defaut par son inverse.
+  *Un detail de justesse :* la phrase de fin annonce maintenant les jours qui
+  restent **reellement** avant l'echeance, calcules depuis la date, au lieu de
+  l'espacement theorique du tour.
+  *Verrou :* `test-espacement.mjs`, 4 scenes — premiere fois, refaite le meme
+  jour, refaite apres un vrai delai, trois fois le meme jour. Il **echoue 4
+  fois** sur la version d'avant.
 
 - **Le fichier hors ligne EST le site, et il marche — mon constat du cycle 16
   etait faux** *(11 aout, cycle 17)* — **mesure : 13 tapes, 3 questions
