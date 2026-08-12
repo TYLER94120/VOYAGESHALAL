@@ -26,15 +26,14 @@ Chiffres AVANT le 9 août, 7 jours : voyageshalal.fr 1 970 impressions /
 
 ## À faire
 
-### 1. Les sections « manger » et « prier » manquent sur 307 fiches villes
-**Mesuré le 11 août, après les séries Asie et Amérique du Nord** :
-**47 fiches sur 354** ont leurs quatre sections (manger et prier, FR et EN).
-Les 307 autres n'ont que des listes d'adresses — donc peu de texte unique,
+### 1. Les sections « manger » et « prier » manquent sur 302 fiches villes
+**Mesuré le 11 août, après les séries Asie, Amérique du Nord et Balkans** :
+**52 fiches sur 354** ont leurs quatre sections (manger et prier, FR et EN).
+Les 302 autres n'ont que des listes d'adresses — donc peu de texte unique,
 et rien qui réponde à « manger halal à X » en toutes lettres.
-Prochaine série, par ordre de doute réel du voyageur : **l'Europe de l'Est
-et les Balkans** (Sarajevo, Sofia, Bucarest, Varsovie, Prague), où la
-question se pose autrement — communautés anciennes d'un côté, quasi rien
-de l'autre.
+Prochaine série : **l'Europe du Nord** (Stockholm, Copenhague, Oslo,
+Helsinki, Dublin), où le halal existe mais se cherche, et où l'été pose la
+question des latitudes extrêmes.
 
 ### 2. Les hôtels d'Istanbul et Dubaï attendent le robot OSM
 **Mesuré** : 41 mentions « information non vérifiée » par page, et
@@ -53,6 +52,37 @@ requêtes ces pages sortent réellement.
 ---
 
 ## Fait
+
+### Balkans et Europe centrale : deux mondes que le voyageur confond — 11 août
+**Avant** : 47 fiches sur 354. **Après : 52.** **608 mots uniques en
+français, 561 en anglais**, sur 10 pages (Sarajevo, Skopje, Tirana, Sofia,
+Prague).
+
+**Ce que ces cinq pages disent ensemble, et qu'aucune ne pouvait dire
+seule** : la région se sépare en deux mondes.
+· **Sarajevo, Skopje, Tirana** — communautés musulmanes **autochtones**,
+  vieilles de plusieurs siècles. La viande y est souvent halal **par
+  habitude, sans logo ni certificat**, parce que la question ne se pose pas
+  localement. Chercher une étiquette est le mauvais réflexe : on demande.
+· **Sofia, Prague** — le halal s'y cherche comme à Berlin, dans des
+  adresses turques ou arabes, et le porc est central dans la cuisine.
+
+**La nuance la plus utile de toute la région**, écrite sur Sarajevo et
+Tirana : **viande halal ≠ sans alcool**. Beaucoup d'établissements servent
+une viande qui convient tout en proposant de l'alcool ; ce sont deux
+questions distinctes.
+
+**Et l'histoire est dite** pour Tirana : l'Albanie a connu des décennies
+d'athéisme d'État, donc la pratique et l'étiquetage y sont très inégaux.
+Prague est présentée franchement comme l'une des villes les plus
+difficiles, sans mosquée monumentale.
+
+**Aucun restaurant nommé.** Mosquées historiques, quartiers, fonctionnement
+réel du halal — rien d'autre.
+
+**Vérifié** : les 5 fiches répondent en 200 sur les deux domaines, chaque
+repère attendu est présent dans la bonne langue, et aucun texte français
+n'apparaît côté anglais.
 
 ### Quatre villes d'Amérique du Nord ont leurs sections — 11 août
 **Avant** : 43 fiches sur 354. **Après : 47.** **516 mots uniques en
