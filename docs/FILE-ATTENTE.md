@@ -26,14 +26,14 @@ Chiffres AVANT le 9 août, 7 jours : voyageshalal.fr 1 970 impressions /
 
 ## À faire
 
-### 1. Les sections « manger » et « prier » manquent sur 297 fiches villes
-**Mesuré le 11 août, après quatre séries** (Asie, Amérique du Nord,
-Balkans, Europe du Nord) : **57 fiches sur 354** ont leurs quatre sections.
-Les 297 autres n'ont que des listes d'adresses — donc peu de texte unique,
-et rien qui réponde à « manger halal à X » en toutes lettres.
-Prochaine série : **l'Amérique latine** (Mexico, Buenos Aires, São Paulo,
-Bogotá, Lima), la région la plus difficile — communautés petites, porc
-central, et presque aucune certification.
+### 1. Les sections « manger » et « prier » manquent sur 292 fiches villes
+**Mesuré le 11 août, après cinq séries** (Asie, Amérique du Nord, Balkans,
+Europe du Nord, Amérique latine) : **62 fiches sur 354** ont leurs quatre
+sections. Les 292 autres n'ont que des listes d'adresses.
+**Le rythme tient : 24 villes traitées en une journée, 3 059 mots uniques
+en français et 2 681 en anglais**, sans qu'aucun restaurant ne soit nommé.
+Prochaine série : **l'Afrique subsaharienne** (Dakar, Abidjan, Lagos,
+Nairobi, Le Cap), où la question se pose en sens inverse selon les pays.
 
 ### 2. Les hôtels d'Istanbul et Dubaï attendent le robot OSM
 **Mesuré** : 41 mentions « information non vérifiée » par page, et
@@ -52,6 +52,35 @@ requêtes ces pages sortent réellement.
 ---
 
 ## Fait
+
+### Amérique latine : la région la plus difficile, et on le dit — 11 août
+**Avant** : 57 fiches sur 354. **Après : 62.** **613 mots uniques en
+français, 544 en anglais**, sur 10 pages (Mexico, Buenos Aires, São Paulo,
+Bogotá, Lima).
+
+**Le choix éditorial du jour** : ne pas habiller le vide. Mexico, Bogotá et
+Lima sont annoncées comme difficiles dès la première phrase — communautés
+petites, certification quasi inexistante, et surtout **le porc invisible** :
+le saindoux entre traditionnellement dans les haricots, les tamales,
+certaines tortillas et les fritures colombiennes. Une page qui prétendrait
+le contraire tromperait son lecteur.
+
+**Deux exceptions, dites comme telles** :
+· **Buenos Aires** — l'une des plus anciennes communautés arabes du
+  continent, et un grand centre islamique à Palermo.
+· **São Paulo** — le paradoxe brésilien : le pays est l'un des premiers
+  exportateurs mondiaux de volaille halal, avec des organismes reconnus,
+  **mais cette machine certifie pour l'export, pas pour ses propres
+  restaurants**. C'est la nuance que personne n'écrit.
+
+**Le repli est réel, pas un remplissage** : poisson et végétarien au
+Mexique, ceviche et cuisine de la côte à Lima — l'une des plus riches du
+monde en produits de la mer.
+
+**Vérifié** : les 5 fiches répondent en 200 sur les deux domaines, chaque
+repère attendu est présent dans la bonne langue, aucun texte français côté
+anglais, et aucune balise HTML brute dans les sections (elles sont rendues
+en texte, pas en HTML — piège évité avant publication).
 
 ### Europe du Nord : la latitude devient une difficulté réelle — 11 août
 **Avant** : 52 fiches sur 354. **Après : 57.** **651 mots uniques en
