@@ -340,4 +340,39 @@ export const guidesEn: Guide[] = [
       { q: "Do konbini stores have halal options?", a: "No halal label, but safe meat-free options: salmon or plum onigiri, edamame, plain salads, fruit. Handy between two proper halal addresses." }
     ],
   },
+  {
+    slug: 'halal-food-thailand-guide',
+    lang: 'en',
+    title: 'Eating Halal in Thailand: Bangkok and Phuket',
+    description: 'Halal in Thailand: the Muslim districts of Bangkok, Phuket, which street food to choose or avoid, and the official CICOT label.',
+    coverImage: 'https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=1200&q=80',
+    category: 'Destinations',
+    readTime: '8 min',
+    publishedAt: '2026-05-11',
+    tags: ['Thailand', 'Bangkok', 'Phuket', 'Halal food'],
+    content: `<p>Thailand surprises Muslim travellers: behind the party-destination image lies one of the strongest halal offerings in Southeast Asia. The country has several million Muslims, an <strong>official halal label run by CICOT</strong> (the Central Islamic Council of Thailand) that reaches as far as the supermarket shelf, and whole districts where eating halal is the norm.</p>
+<h2>The CICOT label: your first landmark</h2>
+<p>The Thai halal logo — a green diamond with Arabic calligraphy — is issued by the Central Islamic Council of Thailand and covers tens of thousands of products and restaurants. You will find it on supermarket packaging (7-Eleven included), on shop windows and even on some restaurant chains. It is one of the most developed systems in Asia: when you see it, you can eat with peace of mind.</p>
+<h2>Bangkok: the districts where halal is at home</h2>
+<p><strong>Sukhumvit Soi 3/3-1 (Nana)</strong>, nicknamed « Soi Arab »: a concentration of Middle Eastern, Egyptian, Pakistani and halal Thai restaurants, open late — the place to land on your first evening. <strong>The Haroon Mosque area</strong> (Bang Rak, near the river and Charoenkrung): family Thai-Muslim cooking in the lanes around the mosque — the most authentic experience in the city. <strong>Around Hua Lamphong station and towards Pratunam</strong>, biryanis and Indian-Muslim stalls complete the picture. Our geolocated listings are on the <a href="/destinations/bangkok">Bangkok</a> page.</p>
+<h2>Phuket: the island with a large Muslim community</h2>
+<p>It is often overlooked: <strong>a significant share of Phuket's population is Muslim</strong> — a Malay legacy of the region. The result: mosques in almost every village on the island, and easy halal food away from the party zones. The markets around <strong>Phuket Town</strong> and the eateries on the eastern beaches serve grilled chicken, massaman and halal fish; several restaurants near the mosques display the CICOT label (look for the green diamond — check exact addresses on the spot, the offer changes fast). Simply avoid the main Patong strips if the drinking atmosphere bothers you: the rest of the island lives differently.</p>
+<h2>Street food: what to choose and what to skip</h2>
+<p><strong>Choose</strong>: massaman curry (a dish of Thai-Muslim origin), khao mok gai (the Thai « biryani »), chicken satay, roti mataba, and grilled fish from stalls run by women in hijab — a reliable visual cue. <strong>Skip without a label</strong>: anything containing pork (moo), which is very common, oyster sauce in shared woks, and pre-made curries whose base you cannot identify. The magic phrase is « <em>mai sai moo</em> » (no pork) — but prefer stalls that are visibly Muslim-run or labelled.</p>
+<h2>Praying in Thailand</h2>
+<p>Bangkok has more than 160 mosques; Suvarnabhumi airport has prayer rooms in several zones. Timings vary little across the year at tropical latitudes — keep <a href="/prayer-times">our prayer times</a> and the <a href="/qibla">Qibla</a> to hand, and find the closest mosque with <a href="/mosque-near-me">our tool</a>. Thailand is also one of the best-value destinations in Asia, on a par with Malaysia — see our <a href="/guides/malaysia-halal-destination-guide">Malaysia guide</a> for the comparison.</p>
+<h2>Beyond Bangkok and Phuket</h2>
+<p><strong>Chiang Mai</strong>, the northern capital, has its historic Muslim quarter around the Ban Haw mosque (a community of Chinese Yunnan origin): halal khao soi and night markets that suit you — a striking contrast with the city's « temples and trekking » image. <strong>The deep south</strong> (Satun, the villages of Krabi province, Songkhla) is majority Muslim: halal is the norm there, a foretaste of neighbouring Malaysia. The tourist islands (Koh Samui, Koh Phi Phi) call for more care: aim for the eateries run by Muslim families near the village mosques.</p>
+<h2>Budget: halal Thailand is hard to beat</h2>
+<p>Halal street food: 40-80 baht (£1-2) a dish; a sit-down Muslim restaurant: 80-200 baht; a large grilled seafood platter in Phuket: 300-500 baht. Add decent guesthouses at £9-18 and domestic flights at £18-35: Thailand rivals Malaysia on value for money.</p>
+<h2>Ramadan and mosque life in Thailand</h2>
+<p>During Ramadan, Bangkok's Muslim districts come alive at sunset: the iftar market around the Haroon Mosque and the stalls of Soi Arab serve dates, curries and Malay sweets. Mosques readily welcome travellers for tarawih — a side of Thailand few tourists suspect, and one of the best moments to meet the local community.</p>`,
+    faq: [
+      { q: "Is food halal in Thailand?", a: "Not by default — pork is very common — but the country has a highly developed official halal label (CICOT) and entire Muslim districts in Bangkok and Phuket. Spot the green diamond and the Muslim-run stalls and eating halal becomes easy." },
+      { q: "Which is the halal district in Bangkok?", a: "« Soi Arab » (Sukhumvit Soi 3, Nana area) has dozens of halal restaurants, and the lanes around the Haroon Mosque (Bang Rak) offer the most authentic Thai-Muslim cooking." },
+      { q: "Does Phuket suit Muslim travellers?", a: "Yes — the island has a large Muslim community, mosques in most villages and easy halal food away from party zones such as Patong. The eastern beaches and Phuket Town suit best." },
+      { q: "Is massaman curry halal?", a: "It is a dish of Thai-Muslim origin, traditionally made with beef or chicken. In a Muslim-run or CICOT-labelled restaurant, yes; at a generic stall, check the curry base and that there is no pork." },
+      { q: "How do I recognise the Thai halal label?", a: "A green diamond containing Arabic calligraphy, issued by the Central Islamic Council of Thailand (CICOT). It appears on packaging, shop windows and the menus of inspected venues." },
+    ],
+  },
 ]
