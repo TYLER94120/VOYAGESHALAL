@@ -13,7 +13,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 
 ## A faire
 
-> **Cycles 6, 10, 13, 16 et 18 : audits.** Quand les seuls elements restants sont
+> **Cycles 6, 10, 13, 16, 18 et 21 : audits.** Quand les seuls elements restants sont
 > bloques — un arbitrage, deux fois le deploiement — le cycle sert a mesurer,
 > pas a forcer un blocage. Les sept elements des audits 6, 10 et 13 sont **tous
 > faits** (cycles 7, 8, 9, 11, 12, 14, 15). **L'audit du cycle 16 n'a produit
@@ -21,9 +21,11 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 > retire — voir « Fait ». **L'audit du cycle 18 a conduit le site comme une
 > personne** sur quatre chemins jamais parcourus ainsi : ses deux elements sont
 > **faits** (cycles 19 et 20), et trois promesses en sont ressorties saines.
-> Les trois qui restent sont les trois bloques : le prochain cycle sera un audit.
+> **L'audit du cycle 21** a regarde « Mon chemin » avec une vraie progression :
+> il en sort l'element 1 — un defaut de mon propre outillage — et quatre
+> promesses verifiees saines.
 >
-> **Mesure aux cycles 6, 10, 13, 16 et 18, et rien a corriger** — a ne pas
+> **Mesure aux cycles 6, 10, 13, 16, 18 et 21, et rien a corriger** — a ne pas
 > re-mesurer sans raison :
 > - **214 elements contiennent de l'arabe, 214 portent `lang="ar"` et
 >   `dir="rtl"`**, zero nu.
@@ -51,8 +53,39 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 >   **« Objectif du jour atteint. »**
 > - **La revision arrive a J+2** *(cycle 18)*. Les six lecons faites il y a deux
 >   jours : la carte du jour devient **« Revoir → »** au lieu de proposer du neuf.
+> - **« Mon chemin » n'affirme que ce qui a ete fait** *(cycle 21)*. Deux lecons
+>   faites → la collection affiche **exactement deux rangees** (« 7 versets
+>   d'Al-Fatiha », « 28 lettres de l'alphabet »), et rien des quatre autres.
+> - **Le ton tient dans les etats difficiles** *(cycle 21)*. Serie cassee :
+>   « Serie interrompue — elle repartira a 1 des ta prochaine lecon · record :
+>   3 jours » — le record survit, **aucun** mot de reproche. Sans progression :
+>   « Rien encore. Ta premiere lecon t'attend. »
+> - **Le jour de grace s'annonce apres coup, jamais avant** *(cycle 21)*. Trou
+>   d'un jour apres six : « **Ton jour de grace a sauve ta serie.** Il en faut
+>   cinq jours pour en regagner un. » Trou de trois jours : la serie repart a 1,
+>   « ton record est de 3 », et **aucun stock de grace n'est annonce a l'avance**.
 
-1. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
+1. **Le verrou anti-culpabilite se declenche sur le mot « sourate ».**
+   *Preuve :* mesure du 11 aout, cycle 21 — le filtre de ton, tel qu'il est ecrit
+   dans mes tests **et publie dans la skill `faire-revenir-sans-culpabiliser`**,
+   cherche `perdu|cass[ée]|dommage|rat[ée]|[ée]chec|nul|honte` **sans limite de
+   mot**. Or « sou**rate** » contient « rate ». Sur les 10 pages servies :
+   **16 declenchements, sur 6 pages** — 5 sur `sourates.html`, 4 sur
+   `parcours.html`, 3 sur `al-fatiha`, 2 sur `chemin.html`, 1 sur deux autres.
+   **Tous faux.** Avec le meme filtre en **mots entiers** : **0**.
+   *Pourquoi c'est plus grave qu'un test bavard :* c'est le mecanisme cense
+   empecher un futur agent de reintroduire la honte. Un verrou qui crie au loup
+   sur le mot le plus frequent d'un site coranique sera desactive ou affaibli par
+   le premier qui l'etend a une page listant les lecons — et la vraie protection
+   partira avec. La skill le **publie tel quel** aux autres depots de l'empire :
+   le defaut se recopie.
+   *Pourquoi il n'a jamais explose jusqu'ici :* les tests qui l'utilisent lisent
+   le texte **visible** d'un ecran de fin de lecon, ou le mot « sourate »
+   n'apparait pas. Il dormait ; il n'etait pas juste pour autant.
+   *A corriger aux deux endroits*, avec la mesure des deux cotes : les tests, et
+   le texte de la skill.
+
+2. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
    *Preuve :* c'est la piece la plus puissante de la liste du responsable, et
    elle est la seule non commencee. Le blocage est reel et non technique : une
    notification calee sur une heure de priere suppose de **connaitre** cette
@@ -64,7 +97,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    **N'entre pas en travaux avant arbitrage** — c'est une decision, pas un
    chantier.
 
-2. **Aucune mesure d'entree, et un traceur est interdit ici.**
+3. **Aucune mesure d'entree, et un traceur est interdit ici.**
    *Preuve :* `grep -ril "gtag\|analytics\|plausible\|matomo\|umami"` sur toutes
    les pages et les trois fichiers JavaScript ne rend **rien**. Or le pied de
    page promet « Ta progression reste sur ton telephone. Aucun compte, aucun
@@ -73,7 +106,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    journaux). Bloque jusqu'au deploiement — question posee aux trois autres
    agents dans le brainstorm des passerelles.
 
-3. **La recitation n'a jamais ete entendue par personne.**
+4. **La recitation n'a jamais ete entendue par personne.**
    *Preuve :* `halalgpt.fr:443` et `cdn.islamic.network:443` sont refuses par la
    politique reseau de l'atelier (403 au CONNECT, journalise par le proxy,
    verifie trois fois). Le mecanisme est teste avec un recitateur simule — 7
