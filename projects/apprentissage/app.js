@@ -167,7 +167,7 @@
 
   /* ---------- stockage --------------------------------------------------- */
 
-  function vide() { return { v: 1, lecons: {}, jours: [] }; }
+  function vide() { return { v: 1, lecons: {}, jours: [], vides: [] }; }
 
   function charger() {
     try {
@@ -177,6 +177,8 @@
       if (!d || typeof d !== 'object') { return vide(); }
       if (!d.lecons || typeof d.lecons !== 'object') { d.lecons = {}; }
       if (Object.prototype.toString.call(d.jours) !== '[object Array]') { d.jours = []; }
+      // Ajoute apres coup : un etat ecrit avant n'en a pas, et c'est normal.
+      if (Object.prototype.toString.call(d.vides) !== '[object Array]') { d.vides = []; }
       return d;
     } catch (e) {
       // Navigation privee ou stockage refuse : on continue sans memoire.
@@ -369,6 +371,56 @@
 
   function jours() { return charger().jours.slice().sort(); }
 
+  /* ---------- les jours ou le site n'avait rien a proposer -----------------
+     Mesure du 12 aout, seize jours parcourus a la suite en faisant chaque jour
+     tout ce que le site demande : les jours 9 a 13, il n'y avait plus une seule
+     lecon neuve ni une seule revision due. La personne est venue quand meme. Le
+     dixieme jour, son jour de grace a ete depense pour couvrir ce trou ; le
+     onzieme, la ligne affichait « Ta serie commence aujourd'hui. » Elle etait a
+     huit.
+
+     C'est le seul cas ou le compteur devenait un jugement : il punissait
+     quelqu'un pour une absence qui etait la NOTRE. Le jour de grace existe pour
+     une personne qui s'absente, pas pour excuser un catalogue trop court.
+
+     Ce qu'on enregistre donc : le jour ou la personne est venue et ou le site
+     n'avait rien. Ce jour-la ne compte PAS comme un jour de serie — on
+     n'inventerait pas un apprentissage qui n'a pas eu lieu — mais il ne casse
+     plus la chaine. Il devient neutre : le compteur reste ou il est.
+
+     Un plafond, parce qu'une liste sans plafond finit par occuper la place
+     d'autre chose : les 120 derniers jours suffisent largement, la plus longue
+     serie imaginable tient dedans.
+     ---------------------------------------------------------------------- */
+
+  var VIDES_MAX = 120;
+
+  function joursVides() { return charger().vides.slice().sort(); }
+
+  /* Appele par l'accueil quand il affiche « Tu es a jour ». */
+  function noterJourVide() {
+    var d = charger();
+    var jour = aujourdhui();
+    // Si la journee est deja enregistree comme faite, elle n'est pas vide.
+    if (d.jours.indexOf(jour) !== -1) { return false; }
+    if (d.vides.indexOf(jour) !== -1) { return false; }
+    d.vides.push(jour);
+    d.vides.sort();
+    if (d.vides.length > VIDES_MAX) { d.vides = d.vides.slice(-VIDES_MAX); }
+    sauver(d);
+    return true;
+  }
+
+  /* Combien de jours vides STRICTEMENT entre deux dates. Sert a enjamber un
+     trou sans le compter ni comme presence ni comme absence. */
+  function videsEntre(liste, a, b) {
+    var n = 0;
+    for (var i = 0; i < liste.length; i++) {
+      if (liste[i] > a && liste[i] < b) { n++; }
+    }
+    return n;
+  }
+
   /* ---------- la serie, et son filet ---------------------------------------
      Une serie nue est un piege : le premier jour manque et tout s'effondre
      (« j'ai perdu mes quarante jours, j'arrete »). D'ou le JOUR DE GRACE : on
@@ -396,13 +448,15 @@
   function serieDetaillee() {
     var liste = jours();
     if (!liste.length) {
-      return { serie: 0, record: 0, grace: 0, sauvee: false, jamais: true };
+      return { serie: 0, record: 0, grace: 0, sauvee: false, jamais: true, enjambes: 0 };
     }
 
+    var vides = joursVides();
     var serie = 0;
     var grace = 0;
     var record = 0;
     var sauvee = false;      // la serie en cours a-t-elle ete sauvee par une grace ?
+    var enjambes = 0;        // jours ou le site n'avait rien, et qui n'ont rien casse
 
     function compter() {
       serie++;
@@ -410,9 +464,18 @@
       if (serie > record) { record = serie; }
     }
 
+    /* Les jours ou le site n'avait rien a proposer sortent du calcul avant tout
+       le reste : ni presence, ni absence. Sans ca, c'est notre catalogue trop
+       court qui casse la serie de la personne. */
+    function trous(a, b) {
+      var vus = videsEntre(vides, a, b);
+      enjambes += vus;
+      return Math.max(0, ecartJours(a, b) - 1 - vus);
+    }
+
     compter();               // le premier jour de l'historique
     for (var i = 1; i < liste.length; i++) {
-      var manques = ecartJours(liste[i - 1], liste[i]) - 1;
+      var manques = trous(liste[i - 1], liste[i]);
       if (manques === 0) {
         compter();
       } else if (manques <= grace) {
@@ -423,13 +486,14 @@
         serie = 0;           // la chaine casse : on repart, sans commentaire
         grace = 0;
         sauvee = false;
+        enjambes = 0;
         compter();
       }
     }
 
     // De la derniere visite a aujourd'hui. Aujourd'hui ne compte pas comme
     // manque : la journee n'est pas finie.
-    var restant = ecartJours(liste[liste.length - 1], aujourdhui()) - 1;
+    var restant = trous(liste[liste.length - 1], aujourdhui());
     if (restant > 0) {
       if (restant <= grace) {
         grace -= restant;
@@ -438,10 +502,12 @@
         serie = 0;
         grace = 0;
         sauvee = false;
+        enjambes = 0;
       }
     }
 
-    return { serie: serie, record: record, grace: grace, sauvee: sauvee, jamais: false };
+    return { serie: serie, record: record, grace: grace, sauvee: sauvee,
+             jamais: false, enjambes: enjambes };
   }
 
   function serie() { return serieDetaillee().serie; }
@@ -613,6 +679,8 @@
     estFaite: estFaite,
     terminer: terminer,
     jours: jours,
+    joursVides: joursVides,
+    noterJourVide: noterJourVide,
     serie: serie,
     serieDetaillee: serieDetaillee,
     objectifDuJour: objectifDuJour,
@@ -702,6 +770,12 @@ function ippRendreAccueil(racine) {
   }
   if (corps) { corps.hidden = false; }
   if (q('diag')) { q('diag').hidden = true; }
+
+  // --- le jour ou le site n'a rien a proposer ---
+  // Il faut l'enregistrer AVANT de dessiner l'anneau et la serie, sinon
+  // l'affichage a un jour de retard sur l'etat. Ce jour-la ne compte pas comme
+  // un jour de serie, mais il ne la casse plus : voir noterJourVide().
+  if (dejaVenu && !IPP.leconDuJour()) { IPP.noterJourVide(); }
 
   // --- date et salutation ---
   var maintenant = new Date();
@@ -927,6 +1001,11 @@ function ippRendreChemin(racine) {
   'use strict';
   var q = ippViseur(racine);
   if (!q('mois')) { return; }
+
+  // Meme regle qu'a l'accueil, parce qu'on arrive aussi ici directement : venir
+  // un jour ou le site n'a rien a proposer ne doit pas casser la serie. Avant
+  // toute lecture de la serie, sinon l'affichage a un jour de retard.
+  if (IPP.jours().length > 0 && !IPP.leconDuJour()) { IPP.noterJourVide(); }
 
   // --- compteur ---
   var n = IPP.acquis();

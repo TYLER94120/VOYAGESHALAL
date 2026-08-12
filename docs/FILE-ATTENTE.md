@@ -27,9 +27,10 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 > **L'audit du cycle 23 a parcouru la mesure de succes elle-meme** : seize jours
 > consecutifs, une seule personne, l'horloge avancee d'un jour a la fois, en
 > faisant chaque jour tout ce que le site demande. Personne ne l'avait jamais
-> fait au-dela du deuxieme jour. Il en sort **quatre elements, les 1 a 4
-> ci-dessous** — les trois plus graves n'apparaissent qu'apres le huitieme jour,
-> c'est-a-dire au-dela de tout ce qui avait ete regarde jusqu'ici.
+> fait au-dela du deuxieme jour. Il en a sorti **quatre elements** — tous
+> invisibles avant le huitieme jour, donc au-dela de tout ce qui avait ete
+> regarde jusqu'ici. **Le plus grave est fait** (cycle 24) ; les trois autres
+> sont les elements 1 a 3 ci-dessous.
 > *Ma premiere passe etait fausse et je l'ecris ici :* elle annoncait « aucun
 > bouton, aucune serie, les dix jours ». Mon outil n'avait pas repondu aux trois
 > questions d'accueil, qui masquent tout le reste tant qu'on n'y a pas repondu —
@@ -96,22 +97,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 > - **Zero erreur JavaScript sur seize jours** *(cycle 23)*, 40 lecons jouees,
 >   l'horloge deplacee quinze fois.
 
-1. **La serie casse alors que la personne est venue tous les jours — c'est le
-   site qui la casse.**
-   *Preuve :* seize jours parcourus a la suite, en faisant chaque jour tout ce
-   que le site propose, sans en manquer un seul. La serie monte a **8 le
-   huitieme jour**. Les jours 9 a 13, le site n'a **rien** a proposer. Le
-   dixieme jour il annonce « Ton jour de grace a sauve ta serie ». Le
-   **onzieme jour, la ligne dit « Ta serie commence aujourd'hui. »** Le
-   quatorzieme : « 1 jour — ton record est de 8. » La personne n'a pas manque un
-   jour ; c'est le site qui n'avait rien, et c'est elle qui perd sa serie.
-   Le jour de grace a ete pense pour quelqu'un qui s'absente, pas pour couvrir
-   un manque de contenu — il est depense ici a la place du site.
-   *Ce n'est pas un chantier de contenu :* un jour ou le site n'a rien a
-   proposer ne devrait pas compter contre la personne. C'est une regle a
-   ecrire dans `serieDetaillee()`, pas une lecon a rediger.
-
-2. **L'objectif du jour reclame une lecon que la carte vient de dire
+1. **L'objectif du jour reclame une lecon que la carte vient de dire
    inexistante.**
    *Preuve :* les jours 9, 10, 11, 12, 13 et 16, sur le meme ecran, a trois
    centimetres d'ecart : la ligne d'objectif dit **« Objectif du jour : une
@@ -125,7 +111,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    rend `null`, l'objectif du jour n'a pas de sens et doit se taire — ou se
    declarer atteint. Six jours sur seize sont concernes.
 
-3. **Cinq jours sur seize, le site n'a rien du tout a proposer.**
+2. **Cinq jours sur seize, le site n'a rien du tout a proposer.**
    *Preuve :* jours 9 a 13, cinq jours de suite, et de nouveau le jour 16 :
    aucune carte, aucun bouton. Six lecons, un espacement de 2 puis 7 puis 21
    jours : tout ce qui a ete appris la premiere semaine ne revient qu'aux jours
@@ -141,7 +127,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    l'espacement pour que les six lecons existantes couvrent les trous. La
    promesse « la prochaine lecon arrive bientot », elle, se corrige aujourd'hui.
 
-4. **Le septieme jour coute trois fois plus cher que les six premiers.**
+3. **Le septieme jour coute trois fois plus cher que les six premiers.**
    *Preuve :* mesure jour par jour, en fermant l'anneau chaque jour.
    Jours 1 a 6 : **une lecon, ~7 min en moyenne**, l'anneau se ferme.
    Jour 7 : **trois lecons, ~18 min**. Jour 8 : **trois lecons, ~21 min**. La
@@ -158,7 +144,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    vraiment une lecon neuve ? Le chiffre 3 n'a jamais ete mesure contre quoi que
    ce soit.
 
-5. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
+4. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
    *Preuve :* c'est la piece la plus puissante de la liste du responsable, et
    elle est la seule non commencee. Le blocage est reel et non technique : une
    notification calee sur une heure de priere suppose de **connaitre** cette
@@ -170,7 +156,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    **N'entre pas en travaux avant arbitrage** — c'est une decision, pas un
    chantier.
 
-6. **Aucune mesure d'entree, et un traceur est interdit ici.**
+5. **Aucune mesure d'entree, et un traceur est interdit ici.**
    *Preuve :* `grep -ril "gtag\|analytics\|plausible\|matomo\|umami"` sur toutes
    les pages et les trois fichiers JavaScript ne rend **rien**. Or le pied de
    page promet « Ta progression reste sur ton telephone. Aucun compte, aucun
@@ -179,7 +165,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    journaux). Bloque jusqu'au deploiement — question posee aux trois autres
    agents dans le brainstorm des passerelles.
 
-7. **La recitation n'a jamais ete entendue par personne.**
+6. **La recitation n'a jamais ete entendue par personne.**
    *Preuve :* `halalgpt.fr:443` et `cdn.islamic.network:443` sont refuses par la
    politique reseau de l'atelier (403 au CONNECT, journalise par le proxy,
    verifie trois fois). Le mecanisme est teste avec un recitateur simule — 7
@@ -191,6 +177,42 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 ---
 
 ## Fait
+
+- **La serie ne casse plus quand c'est le site qui n'a rien** *(12 aout, cycle
+  24)* — seize jours parcourus des deux cotes avec le meme instrument, en venant
+  chaque jour et en faisant tout ce que le site demande.
+  **Avant :** jour 10, « Ton jour de grace a sauve ta serie » — depense pour
+  couvrir notre propre trou ; **jour 11, « Ta serie commence aujourd'hui. »**
+  Elle etait a 8. Jours 12 et 13 idem. Jour 14 : « 1 jour — ton record est de
+  8. » Fin du seizieme jour : **2**.
+  **Apres :** jours 9 a 13, **« 8 jours d'affilee — c'est ton record. »** sans
+  interruption. Jour 14 : 9. Jour 15 : 10. Fin du seizieme jour : **10**.
+  **Grace depensee : 1 avant, 0 apres.**
+  *La regle exacte, et elle ne se relache dans aucun sens :* un jour ou la
+  personne vient et ou le site n'a **rien** a proposer est **enjambe** — il ne
+  compte pas comme un jour de serie, parce qu'on n'inventerait pas un
+  apprentissage qui n'a pas eu lieu, mais il ne la casse plus. Un jour que
+  personne n'a vu n'est pas enjambe : on ne reconstruit pas une histoire qu'on
+  n'a pas observee. Les deux portes d'entree notent le jour vide, l'accueil
+  **et** « Mon chemin » — sans ca, quelqu'un qui n'ouvre que « Mon chemin »
+  perdait encore sa serie.
+  *Verrous :* `test-serie.mjs` passe de 20 a **33 controles de logique pure**, 13
+  nouveaux sur les jours vides, moitie dans un sens moitie dans l'autre : un
+  trou de 3 jours dont 1 vide casse toujours, un vide anterieur au premier jour
+  fait est sans effet, un jour a la fois vide et fait ne compte qu'une fois, la
+  cassure remet le compteur d'enjambees a zero. Et `test-jour-vide.mjs`, nouveau,
+  joue les deux portes au navigateur : venir chaque jour → serie tenue et 5 jours
+  vides notes ; ne pas venir → cassure identique a avant ; venir un jour sur deux
+  → **3** jours notes, pas 5.
+  *Un defaut de mon outillage trouve en chemin, et il etait grave :*
+  `test-serie.mjs` lisait `app.js` **au chemin courant**, et une copie datee du
+  **8 aout** dormait dans mon dossier de travail — **377 lignes d'ecart** avec le
+  fichier livre. Pendant quatorze cycles, ce test a annonce « TOUT PASSE » en
+  validant un fichier fige. Il n'avait rien cache — pointe sur le vrai fichier,
+  les 20 controles d'origine passent tous — mais il n'aurait rien attrape. Il lit
+  maintenant un chemin absolu et s'arrete net si le fichier manque. C'est la
+  deuxieme fois en trois cycles que le defaut est dans l'instrument et pas dans
+  le site : **un instrument de mesure se verifie comme le reste.**
 
 - **Le verrou anti-culpabilite ne crie plus au loup sur le mot « sourate »**
   *(12 aout, cycle 22)* — **avant : 16 declenchements sur 6 pages, les 16 faux.
