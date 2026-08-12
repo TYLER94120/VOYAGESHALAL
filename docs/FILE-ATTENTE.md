@@ -44,7 +44,21 @@ Colombo) — à vérifier fiche par fiche avant d'écrire. La question s'y pose
 encore autrement : en Inde le halal est courant et signalé, mais la
 question végétarienne et celle du bœuf s'y ajoutent.
 
-### 2. Les hôtels d'Istanbul et Dubaï attendent le robot OSM
+### 2. Le domaine anglais a 15 guides quand le français en a 24
+**Mesuré le 12 août sur les deux sitemaps servis** : voyageshalal.fr publie
+**24 guides et 45 articles de blog**, gohalaltravel.com **15 guides et 32
+articles**. Traduire n'est pas créer et n'entre donc pas dans le quota de
+contenu — c'est le levier le moins cher du domaine anglais, qui pèse
+441 impressions contre 1 970.
+
+Restent **5 guides français sans jumeau anglais** : `europe-halal-friendly`,
+`manger-halal-thailande-guide`, `voyage-halal-petit-budget`,
+`voyage-aid-en-famille`, et `priere-avion-train-guide`.
+⚠️ **Ce dernier est à relire avant traduction, pas à traduire tel quel** :
+il tranche une question religieuse (qasr, jam'), ce que nos onze pages
+« où prier » ont justement cessé de faire le 11 août.
+
+### 3. Les hôtels d'Istanbul et Dubaï attendent le robot OSM
 **Mesuré** : 41 mentions « information non vérifiée » par page, et
 **0 hôtel avec une politique alcool connue**. Le script et le workflow
 existent (`enrich-hotels-osm.mjs`, `.github/workflows/enrich-hotels.yml`)
@@ -52,7 +66,7 @@ mais n'ont jamais été lancés : le réseau externe est fermé depuis
 l'environnement de l'agent. **Action pour Mohamed**, pas pour l'agent :
 GitHub → Actions → « Enrichir les hôtels » → Run workflow.
 
-### 3. L'accueil et le blog : 704 impressions, ZÉRO clic
+### 4. L'accueil et le blog : 704 impressions, ZÉRO clic
 **Mesuré** (7 jours avant le 9 août). Les titres ont été refaits le 9 août,
 donc **ne rien conclure avant le 16**. Si le zéro persiste après cette
 date, le problème n'est pas le titre : il faudra regarder sur quelles
@@ -61,6 +75,24 @@ requêtes ces pages sortent réellement.
 ---
 
 ## Fait
+
+### Le guide Japon existe enfin en anglais — 12 août
+**Avant** : 15 guides sur gohalaltravel.com contre 24 sur voyageshalal.fr.
+**Après : 16.** Le guide Japon (1 246 mots en français) a été **traduit,
+pas réécrit** : mêmes faits, mêmes mosquées, mêmes réserves — « présence à
+vérifier avant visite », « adresses précises à vérifier ». Aucun
+restaurant nommé n'a été ajouté ni retiré.
+
+**Pourquoi le Japon d'abord** : c'est une destination très recherchée en
+anglais, et le guide ne tranche aucune question religieuse — contrairement
+au guide « prière en avion et en train », laissé de côté exprès.
+
+**Mesuré après publication** : la page anglaise répond 200 (1 291 mots,
+titre 47 caractères, description 134), l'ancien slug français fait bien
+une 301 vers le slug anglais sur le domaine EN et reste intact en 200 sur
+le domaine FR, **les 32 liens internes répondent tous 200 — aucune
+redirection**, et le guide figure dans le sitemap anglais sans polluer le
+français.
 
 ### Les 1 632 pages passées au crible, la description de repli était coupée — 12 août
 **Pourquoi ce cycle** : le précédent n'avait audité que 20 pages et y avait
