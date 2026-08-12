@@ -26,14 +26,17 @@ Chiffres AVANT le 9 août, 7 jours : voyageshalal.fr 1 970 impressions /
 
 ## À faire
 
-### 1. Les sections « manger » et « prier » manquent sur 292 fiches villes
-**Mesuré le 11 août, après cinq séries** (Asie, Amérique du Nord, Balkans,
-Europe du Nord, Amérique latine) : **62 fiches sur 354** ont leurs quatre
-sections. Les 292 autres n'ont que des listes d'adresses.
-**Le rythme tient : 24 villes traitées en une journée, 3 059 mots uniques
-en français et 2 681 en anglais**, sans qu'aucun restaurant ne soit nommé.
-Prochaine série : **l'Afrique subsaharienne** (Dakar, Abidjan, Lagos,
-Nairobi, Le Cap), où la question se pose en sens inverse selon les pays.
+### 1. Les sections « manger » et « prier » manquent sur 287 fiches villes
+**Mesuré le 12 août, après six séries** (Asie, Amérique du Nord, Balkans,
+Europe du Nord, Amérique latine, Afrique subsaharienne) : **67 fiches sur
+354** ont leurs quatre sections. Les 287 autres n'ont que des listes
+d'adresses. Le rythme tient : 29 villes traitées, sans qu'aucun restaurant
+ne soit nommé.
+Prochaine série : **le Golfe et le Levant** (Dubaï, Abou Dabi, Doha,
+Amman, Le Caire), où la difficulté s'inverse encore une fois — tout est
+halal, donc la page doit parler d'autre chose que du halal : alcool en
+zone hôtelière, Ramadan, tenue, horaires. **Dubaï est une des deux mines
+(53 impressions hôtels)** : cette série sert directement la priorité.
 
 ### 2. Les hôtels d'Istanbul et Dubaï attendent le robot OSM
 **Mesuré** : 41 mentions « information non vérifiée » par page, et
@@ -52,6 +55,27 @@ requêtes ces pages sortent réellement.
 ---
 
 ## Fait
+
+### Afrique subsaharienne : la question s'inverse d'une ville à l'autre — 12 août
+**Avant** : 62 fiches sur 354. **Après : 67.** **733 mots uniques en
+français, 660 en anglais**, sur 10 pages (Dakar, Abidjan, Lagos, Nairobi,
+Le Cap).
+
+**Le fait régional que le voyageur ignore** : ici le pays ne dit rien du
+quartier. À Dakar, chercher un logo halal n'a aucun sens — il n'y en aura
+pas, et la viande est halal par habitude. À Abidjan, Lagos et Nairobi, la
+réponse dépend du quartier et pas du pays : le Nigéria a l'une des plus
+grandes populations musulmanes du monde, mais elle est au nord, et Lagos
+est au sud. Le Cap est le cas inverse du Brésil vu la veille : l'Afrique
+du Sud certifie **pour son marché intérieur**, pas pour l'export — on y
+voit des logos halal en supermarché, ce qui n'arrive presque nulle part
+ailleurs sur le continent.
+
+**Mesuré après publication** : les 5 fiches en 200 sur les deux domaines,
+les quatre sections servies dans la bonne langue à chaque fois, aucune
+balise HTML brute (les sections sont rendues en texte). Vérifié aussi : le
+texte de l'autre langue voyage dans la charge RSC, mais **4,4 ko sur
+934 ko, soit 0,5 %** — mesuré, jugé négligeable, pas de chantier ouvert.
 
 ### Amérique latine : la région la plus difficile, et on le dit — 11 août
 **Avant** : 57 fiches sur 354. **Après : 62.** **613 mots uniques en
