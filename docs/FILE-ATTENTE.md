@@ -19,6 +19,7 @@ dessus.
 | 10 août 2026 | Liens sortants balisés (19 liens, campagne par emplacement) | 24 août |
 | 11 août 2026 | Vitesse (appels réseau bornés, images 1600 → 300 px) | 18-21 août |
 | **12 août 2026** | **14 titres et descriptions coupés par Google, dont /hotels (80 car.), la page qui mène à Istanbul et Dubaï** | **19-22 août** |
+| **12 août 2026, soir** | **Description de repli (`lib/seo.ts`, 171 car.) et /destinations** | **19-22 août** |
 
 Chiffres AVANT le 9 août, 7 jours : voyageshalal.fr 1 970 impressions /
 29 clics / 1,5 % · gohalaltravel.com 441 / 3 / 0,7 %.
@@ -60,6 +61,28 @@ requêtes ces pages sortent réellement.
 ---
 
 ## Fait
+
+### Les 1 632 pages passées au crible, la description de repli était coupée — 12 août
+**Pourquoi ce cycle** : le précédent n'avait audité que 20 pages et y avait
+trouvé 14 défauts. Il fallait savoir ce que valait le reste.
+
+**Mesuré sur l'intégralité des deux sitemaps** — 813 pages en français,
+819 en anglais, servies avec l'en-tête `Host` réel : **2 descriptions
+coupées, et rien d'autre**. Zéro titre trop long, zéro description
+absente, zéro page sans H1, zéro page en erreur.
+
+**Ce que les deux défauts avaient en commun** : ils échappaient au
+garde-fou pour deux raisons distinctes, et les deux sont bouchées.
+- `lib/seo.ts` portait la description de **repli**, servie à toute page qui
+  n'en définit pas : 171 caractères, donc coupée partout à la fois. Le test
+  ne lisait que les pages, jamais ce fichier.
+- `/destinations` construit sa description avec `${VILLE_COUNT}` ; le test
+  sautait toute valeur contenant une interpolation. Il mesure désormais le
+  **texte fixe seul** — une borne inférieure, donc sans aucun faux positif.
+
+**Mesure d'arrivée** : **2 → 0**, revérifié en servant les 1 632 pages
+après correction. Le test refuse maintenant l'ancienne valeur : vérifié en
+la remettant exprès, il crie.
 
 ### Le garde-fou des titres ne regardait pas les pages app/ — 12 août
 **Trouvé en auditant les deux mines** : `/hotels`, la page qui mène à

@@ -29,7 +29,7 @@ export async function generateMetadata(): Promise<Metadata> {
     : `${VILLE_COUNT} Destinations Halal 2026 : Villes, Mosquées, Restos`
   const description = isEN
     ? `${VILLE_COUNT}+ hand-picked halal destinations: Istanbul, Marrakech, Dubai, Kuala Lumpur, Mecca and more. Halal restaurants, mosques and guides for every city.`
-    : `${VILLE_COUNT}+ destinations halal sélectionnées : Istanbul, Marrakech, Dubaï, Kuala Lumpur, La Mecque et bien plus. Restaurants halal signalés, mosquées et guides pour chaque ville.`
+    : `${VILLE_COUNT}+ destinations halal : Istanbul, Marrakech, Dubaï, Kuala Lumpur, La Mecque et bien plus. Restaurants signalés, mosquées et guides ville par ville.`
   return {
     title: { absolute: title },
     description,
