@@ -29,8 +29,9 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 > faisant chaque jour tout ce que le site demande. Personne ne l'avait jamais
 > fait au-dela du deuxieme jour. Il en a sorti **quatre elements** — tous
 > invisibles avant le huitieme jour, donc au-dela de tout ce qui avait ete
-> regarde jusqu'ici. **Le plus grave est fait** (cycle 24) ; les trois autres
-> sont les elements 1 a 3 ci-dessous.
+> regarde jusqu'ici. **Deux sont faits** (cycles 24 et 25) — les deux qui ne
+> demandaient pas une ligne de contenu ; les deux autres sont les elements 1 et
+> 2 ci-dessous, et le second est un arbitrage.
 > *Ma premiere passe etait fausse et je l'ecris ici :* elle annoncait « aucun
 > bouton, aucune serie, les dix jours ». Mon outil n'avait pas repondu aux trois
 > questions d'accueil, qui masquent tout le reste tant qu'on n'y a pas repondu —
@@ -97,21 +98,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 > - **Zero erreur JavaScript sur seize jours** *(cycle 23)*, 40 lecons jouees,
 >   l'horloge deplacee quinze fois.
 
-1. **L'objectif du jour reclame une lecon que la carte vient de dire
-   inexistante.**
-   *Preuve :* les jours 9, 10, 11, 12, 13 et 16, sur le meme ecran, a trois
-   centimetres d'ecart : la ligne d'objectif dit **« Objectif du jour : une
-   lecon. Cinq minutes suffisent. »** et la carte juste dessous dit **« Tu es a
-   jour — toutes les lecons disponibles sont terminees, et aucune revision n'est
-   prevue aujourd'hui. »** L'anneau reste ouvert a zero. Le site demande une
-   chose qu'il vient d'annoncer impossible, puis ne la valide pas.
-   C'est exactement ce que la regle de ton interdit : un compteur qui reste
-   ouvert sans que la personne puisse rien y faire devient un jugement.
-   *Reparable tout de suite*, sans une ligne de contenu : quand `leconDuJour()`
-   rend `null`, l'objectif du jour n'a pas de sens et doit se taire — ou se
-   declarer atteint. Six jours sur seize sont concernes.
-
-2. **Cinq jours sur seize, le site n'a rien du tout a proposer.**
+1. **Cinq jours sur seize, le site n'a rien du tout a proposer.**
    *Preuve :* jours 9 a 13, cinq jours de suite, et de nouveau le jour 16 :
    aucune carte, aucun bouton. Six lecons, un espacement de 2 puis 7 puis 21
    jours : tout ce qui a ete appris la premiere semaine ne revient qu'aux jours
@@ -127,7 +114,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    l'espacement pour que les six lecons existantes couvrent les trous. La
    promesse « la prochaine lecon arrive bientot », elle, se corrige aujourd'hui.
 
-3. **Le septieme jour coute trois fois plus cher que les six premiers.**
+2. **Le septieme jour coute trois fois plus cher que les six premiers.**
    *Preuve :* mesure jour par jour, en fermant l'anneau chaque jour.
    Jours 1 a 6 : **une lecon, ~7 min en moyenne**, l'anneau se ferme.
    Jour 7 : **trois lecons, ~18 min**. Jour 8 : **trois lecons, ~21 min**. La
@@ -144,7 +131,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    vraiment une lecon neuve ? Le chiffre 3 n'a jamais ete mesure contre quoi que
    ce soit.
 
-4. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
+3. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
    *Preuve :* c'est la piece la plus puissante de la liste du responsable, et
    elle est la seule non commencee. Le blocage est reel et non technique : une
    notification calee sur une heure de priere suppose de **connaitre** cette
@@ -156,7 +143,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    **N'entre pas en travaux avant arbitrage** — c'est une decision, pas un
    chantier.
 
-5. **Aucune mesure d'entree, et un traceur est interdit ici.**
+4. **Aucune mesure d'entree, et un traceur est interdit ici.**
    *Preuve :* `grep -ril "gtag\|analytics\|plausible\|matomo\|umami"` sur toutes
    les pages et les trois fichiers JavaScript ne rend **rien**. Or le pied de
    page promet « Ta progression reste sur ton telephone. Aucun compte, aucun
@@ -165,7 +152,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    journaux). Bloque jusqu'au deploiement — question posee aux trois autres
    agents dans le brainstorm des passerelles.
 
-6. **La recitation n'a jamais ete entendue par personne.**
+5. **La recitation n'a jamais ete entendue par personne.**
    *Preuve :* `halalgpt.fr:443` et `cdn.islamic.network:443` sont refuses par la
    politique reseau de l'atelier (403 au CONNECT, journalise par le proxy,
    verifie trois fois). Le mecanisme est teste avec un recitateur simule — 7
@@ -177,6 +164,34 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 ---
 
 ## Fait
+
+- **L'ecran ne reclame plus une lecon qu'il vient de dire inexistante**
+  *(12 aout, cycle 25)* — mesure avant/apres sur les seize memes jours, meme
+  instrument, les deux versions servies cote a cote.
+  **Avant : 6 jours sur 16** affichaient, sur un seul ecran, « Objectif du jour :
+  une lecon. Cinq minutes suffisent. » a trois centimetres de leur propre carte
+  disant « aucune revision n'est prevue aujourd'hui » — et un anneau ouvert a
+  zero que rien ne pouvait fermer. **Apres : 0.** Les jours 9 a 13 et 16 disent
+  **« Pas d'objectif aujourd'hui : le site n'a rien de neuf pour toi. »** et
+  l'anneau est retire. Les dix autres jours ne changent pas d'un mot.
+  *Deux situations, et c'etait le piege du cycle :* le jour ou la personne
+  **finit** la derniere chose disponible, il ne reste rien non plus — effacer
+  son anneau ce jour-la aurait effacé son travail. La regle distingue donc les
+  deux : rien a faire **et** rien de fait → pas d'objectif, pas d'anneau, et
+  **aucune felicitation inventee** ; rien ne reste **mais** quelque chose a ete
+  fait → objectif atteint, anneau garde et ferme. Consequence utile au passage :
+  une seule revision due, faite, n'affiche plus « ou 2 revisions de plus »
+  quand ces deux-la n'existent pas.
+  *Qui manque a l'appel est nomme, et ce n'est pas la personne.* La phrase dit
+  que c'est le site qui n'a rien. Un compteur qu'on ne peut pas fermer n'est
+  plus un compteur, c'est un jugement — et c'etait le seul endroit du site ou
+  cette ligne etait franchie.
+  *Verrous :* `test-serie.mjs` passe de 33 a **38 controles de logique pure**,
+  dont le piege dans les deux sens. Et `test-objectif-vide.mjs`, nouveau, joue
+  l'ecran au navigateur en 414 et 320 px : il verifie que les deux phrases ne
+  coexistent plus, que l'anneau vide disparait, que celui du jour de travail
+  reste, qu'aucun mot de reproche n'apparait. **Sur la version d'avant, il
+  echoue 4 fois.**
 
 - **La serie ne casse plus quand c'est le site qui n'a rien** *(12 aout, cycle
   24)* — seize jours parcourus des deux cotes avec le meme instrument, en venant

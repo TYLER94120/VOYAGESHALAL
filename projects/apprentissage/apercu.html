@@ -5556,11 +5556,37 @@ if (typeof module !== 'undefined' && module.exports) { module.exports = ippCoran
     }
 
     var part = Math.max(neuves, revisions / OBJ_REVISIONS);
+
+    /* Le jour ou le site n'a plus rien a proposer.
+
+       Mesure du 12 aout : six jours sur seize, la ligne affichait « Objectif du
+       jour : une lecon. Cinq minutes suffisent. » a trois centimetres de sa
+       propre carte qui disait « aucune revision n'est prevue aujourd'hui ».
+       L'anneau restait ouvert a zero. Le site reclamait une chose qu'il venait
+       d'annoncer impossible — un compteur qu'on ne peut pas fermer n'est plus un
+       compteur, c'est un jugement.
+
+       Deux situations, et elles ne se traitent pas pareil :
+
+       - il ne reste rien ET rien n'a ete fait : il n'y a PAS d'objectif
+         aujourd'hui. On le dit, et on ne felicite personne pour une journee
+         vide — ce serait un compliment invente.
+
+       - il ne reste rien MAIS quelque chose a ete fait : l'objectif du jour
+         etait de faire ce que le site avait, et c'est fait. Une seule revision
+         due, faite, ne doit pas afficher « ou 2 revisions de plus » : elles
+         n'existent pas. */
+    var rien = !leconDuJour();
+    var fait = (neuves + revisions) > 0;
+    if (rien && fait) { part = 1; }
+
     return {
       neuves: neuves,
       revisions: revisions,
       atteint: part >= 1,
-      part: Math.min(1, part)
+      part: Math.min(1, part),
+      // Aucun objectif possible aujourd'hui : ni a atteindre, ni a rater.
+      rien: rien && !fait
     };
   }
 
@@ -5912,13 +5938,22 @@ function ippRendreJourEtat(q) {
   bloc.hidden = false;
   bloc.classList.toggle('ferme', o.atteint);
 
+  // L'anneau existe pour etre ferme. Le jour ou il n'y a rien a faire, il n'y a
+  // rien a fermer : un cercle vide a cote de « rien a faire » se lit comme un
+  // trou, et c'est nous qui l'avons creuse. On le retire ce jour-la.
   var anneau = q('anneau');
-  if (anneau) { anneau.innerHTML = ippAnneau(o.part, o.atteint); }
+  if (anneau) {
+    anneau.hidden = o.rien;
+    anneau.innerHTML = o.rien ? '' : ippAnneau(o.part, o.atteint);
+  }
 
   // L'objectif : ce qu'il reste a faire, dit en une ligne et sans reproche.
   var txt = q('objectif-txt');
   if (txt) {
-    if (o.atteint) {
+    if (o.rien) {
+      // On nomme celui qui manque a l'appel, et ce n'est pas la personne.
+      txt.textContent = 'Pas d\'objectif aujourd\'hui : le site n\'a rien de neuf pour toi.';
+    } else if (o.atteint) {
       txt.textContent = 'Objectif du jour atteint.';
     } else if (o.revisions > 0) {
       var reste = 3 - o.revisions;
