@@ -13,7 +13,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 
 ## A faire
 
-> **Cycles 6, 10, 13, 16, 18, 21 et 23 : audits.** Quand les seuls elements restants sont
+> **Cycles 6, 10, 13, 16, 18, 21, 23 et 29 : audits.** Quand les seuls elements restants sont
 > bloques — un arbitrage, deux fois le deploiement — le cycle sert a mesurer,
 > pas a forcer un blocage. Les sept elements des audits 6, 10 et 13 sont **tous
 > faits** (cycles 7, 8, 9, 11, 12, 14, 15). **L'audit du cycle 16 n'a produit
@@ -42,7 +42,19 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 > le site allait bien, c'est le parcours simule qui n'etait pas celui d'une vraie
 > personne. Rien n'a ete publie sur cette base.
 >
-> **Mesure aux cycles 6, 10, 13, 16, 18, 21 et 23, et rien a corriger** — a ne pas
+> **L'audit du cycle 29 a suivi la personne pressee** — sept lecons d'affilee le
+> meme jour, le chemin que la mesure du cycle 28 avait designe et que personne
+> n'avait parcouru. Deux elements en sortent, les **1 et 2** ci-dessous, et six
+> promesses en sont ressorties saines.
+> *Et j'ai failli publier un constat faux, la encore par ma faute :* ma premiere
+> passe annoncait « le site redemande le rendez-vous sept fois ». C'etait vrai
+> pour ma personne simulee, qui ne repondait jamais a la question. Une personne
+> qui **choisit** un repere ne se la voit poser **qu'une fois sur sept**, et le
+> code gerait deja ce cas. Le vrai defaut est ailleurs et plus etroit — voir
+> l'element 2. **Une simulation qui ne repond pas aux questions n'est pas une
+> personne.**
+>
+> **Mesure aux cycles 6, 10, 13, 16, 18, 21, 23 et 29, et rien a corriger** — a ne pas
 > re-mesurer sans raison :
 > - **214 elements contiennent de l'arabe, 214 portent `lang="ar"` et
 >   `dir="rtl"`**, zero nu.
@@ -101,8 +113,52 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 >   acquis.
 > - **Zero erreur JavaScript sur seize jours** *(cycle 23)*, 40 lecons jouees,
 >   l'horloge deplacee quinze fois.
+> - **Le compte des lecons restantes est exact a chaque ecran de fin**
+>   *(cycle 29)*. Sept lecons d'affilee : **6, 5, 4, 3, 2, 1, puis « c'est la
+>   derniere disponible »**. Aucun ecart, y compris le passage au singulier
+>   (« Une autre lecon t'attend deja »).
+> - **Le total appris atterrit pile sur le catalogue** *(cycle 29)*.
+>   6 → 13 → 20 → 23 → 51 → 59 → **84**, et le catalogue vaut exactement 84. Ni
+>   un de trop, ni un de moins, sur sept lecons enchainees.
+> - **Sept lecons le meme jour ne font pas sept jours** *(cycle 29)*. La serie
+>   reste a **« 1 jour »** du debut a la fin, et l'objectif atteint **ne se
+>   rouvre jamais** : sept releves, un seul texte, « Objectif du jour atteint. »
+> - **Le rendez-vous disparait pour qui le choisit** *(cycle 29)*. Question posee
+>   **1 fois sur 7**, puis remplacee par « On se retrouve apres le Fajr. »
+> - **Rien ne casse au bout de sept lecons enchainees** *(cycle 29)* : aucun
+>   debordement a 414 px, **zero erreur JavaScript**.
 
-1. **Qui avance vite trouve un site vide : 15 jours sur 18.**
+1. **« Ta lecon du jour » est ecrit sept fois le meme jour.**
+   *Preuve :* sept lecons enchainees le 7 septembre simule, l'etiquette de la
+   carte relevee avant chacune. **7 cartes sur 7 portent « TA LECON DU JOUR »** —
+   donc six fois de trop. Des la deuxieme, l'etiquette est fausse : ce n'est plus
+   la lecon du jour, c'est la deuxieme, la troisieme, la septieme.
+   Ce n'est pas un detail de vocabulaire. La doctrine de l'accueil, ecrite dans
+   `index.html`, est **« l'accueil ne montre qu'une seule chose : la lecon du
+   jour, et un bouton »**. Si sept lecons tiennent dans une journee, cette phrase
+   ne decrit pas le site — et c'est exactement ce mecanisme qui vide le catalogue
+   en 46 minutes (element 3).
+   *A trancher en meme temps, et c'est une vraie question de produit :* faut-il
+   seulement **renommer** l'etiquette a partir de la deuxieme (« Une lecon de
+   plus »), ou **arreter de proposer du neuf** une fois l'objectif atteint ? La
+   premiere voie ne coute qu'une phrase juste ; la seconde retient quelqu'un de
+   motive, ce que le site n'a jamais fait a personne. Je recommande la premiere,
+   et de mesurer la seconde avant d'y toucher.
+
+2. **Un refus n'est pas enregistre : « Pas d'heure fixe » et la question revient
+   six fois.**
+   *Preuve :* trois comportements mesures a la fin de chaque lecon, sept lecons
+   d'affilee. Elle **choisit** un repere → la question est posee **1 fois sur
+   7**. Elle **refuse** en tapant « Pas d'heure fixe » → **7 fois sur 7**. Elle
+   **ignore** → 7 fois sur 7. Le troisieme cas se defend : elle n'a jamais
+   repondu. Le deuxieme, non : **elle a repondu, et sa reponse etait non.**
+   *La cause est courte :* dans `ippProposerMoment`, le bouton « Pas d'heure
+   fixe » n'appelle pas `enregistrerMoment` — rien n'ecrit le refus, donc
+   `IPP.moment()` reste vide et la question se represente a chaque ecran de fin.
+   Un mecanisme qui ne prend pas un non pour un non est exactement ce que ma
+   competence `faire-revenir-sans-culpabiliser` interdit.
+
+3. **Qui avance vite trouve un site vide : 15 jours sur 18.**
    *Preuve, re-mesuree au cycle 28 sur deux comportements — un seul aurait
    menti :* une personne qui **suit l'objectif du jour** et s'arrete ne rencontre
    plus **aucun** jour vide sur 18 (c'etait 5 avant que `OBJ_REVISIONS` passe a
@@ -124,7 +180,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    chaque fois plutot qu'il ne s'extrapole : l'espacement redistribue les trous a
    chaque ajout.
 
-2. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
+4. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
    *Preuve :* c'est la piece la plus puissante de la liste du responsable, et
    elle est la seule non commencee. Le blocage est reel et non technique : une
    notification calee sur une heure de priere suppose de **connaitre** cette
@@ -136,7 +192,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    **N'entre pas en travaux avant arbitrage** — c'est une decision, pas un
    chantier.
 
-3. **Aucune mesure d'entree, et un traceur est interdit ici.**
+5. **Aucune mesure d'entree, et un traceur est interdit ici.**
    *Preuve :* `grep -ril "gtag\|analytics\|plausible\|matomo\|umami"` sur toutes
    les pages et les trois fichiers JavaScript ne rend **rien**. Or le pied de
    page promet « Ta progression reste sur ton telephone. Aucun compte, aucun
@@ -145,7 +201,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    journaux). Bloque jusqu'au deploiement — question posee aux trois autres
    agents dans le brainstorm des passerelles.
 
-4. **La recitation n'a jamais ete entendue par personne.**
+6. **La recitation n'a jamais ete entendue par personne.**
    *Preuve :* `halalgpt.fr:443` et `cdn.islamic.network:443` sont refuses par la
    politique reseau de l'atelier (403 au CONNECT, journalise par le proxy,
    verifie trois fois). Le mecanisme est teste avec un recitateur simule — 7
