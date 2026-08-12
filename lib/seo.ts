@@ -2,8 +2,11 @@ import type { Metadata } from 'next'
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.voyageshalal.fr'
 const SITE_NAME = 'VoyagesHalal.fr'
+// 160 caractères maximum : c'est ce que Google affiche. L'ancienne version
+// en faisait 171 et servait de repli à toute page sans description propre —
+// donc coupée partout à la fois, sans que rien ne le signale.
 const DEFAULT_DESCRIPTION =
-  'Découvrez les meilleures destinations de voyage halal dans le monde. Guides, restaurants halal, mosquées et conseils pratiques pour voyager en conformité avec vos valeurs.'
+  'Guides de voyage halal dans le monde entier : restaurants signalés, mosquées, horaires de prière et conseils pratiques, ville par ville.'
 
 export function buildMetadata({
   title,

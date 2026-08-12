@@ -196,6 +196,10 @@ const explore = (dir) => {
   }
 }
 explore('../app')
+// lib/seo.ts porte la description de REPLI, servie à toute page qui n'en
+// définit pas. Elle faisait 171 caractères le 12 août : coupée partout à la
+// fois, et invisible pour un test qui ne regardait que les pages.
+fichiersApp.push('../lib/seo.ts')
 
 let litterauxRelus = 0
 for (const f of fichiersApp) {
@@ -217,15 +221,18 @@ for (const f of fichiersApp) {
   const lignes = []
   let dedans = false
   for (const l of toutesLignes) {
-    if (/export (async function generateMetadata|const metadata)/.test(l)) dedans = true
+    if (/export (async function generateMetadata|const metadata)|DEFAULT_DESCRIPTION\s*=/.test(l)) dedans = true
     else if (dedans && /^\}/.test(l)) dedans = false
     if (dedans) lignes.push(l)
     else lignes.push('')
   }
   for (let i = 0; i < lignes.length; i++) {
-    const debut = lignes[i].match(/\b(?:const\s+)?(title|description)\s*[:=]/)
+    // `DEFAULT_DESCRIPTION` est nommé explicitement : `\b` ne coupe pas avant
+    // un souligné, donc le motif générique ne le voyait pas — et c'est
+    // justement la description de repli servie à toute page sans la sienne.
+    const debut = lignes[i].match(/\b(?:const\s+)?(title|description|DEFAULT_DESCRIPTION)\s*[:=]/i)
     if (!debut) continue
-    const cle = debut[1]
+    const cle = debut[1].toLowerCase().includes('title') ? 'title' : 'description'
     const max = cle === 'title' ? TITRE_MAX : DESCRIPTION_MAX
     // On s'arrête à la clé suivante. Sans cette borne, le bloc de `title`
     // avalait la `description` de la ligne d'après et la jugeait avec la
@@ -238,14 +245,17 @@ for (const f of fichiersApp) {
       suite.push(lignes[k])
     }
     const bloc = suite.join('\n')
-    for (const [, , brut] of bloc.matchAll(/(['"])((?:\\.|(?!\1)[^\n])*)\1/g)) {
+    for (const [, , brut] of bloc.matchAll(/(['"`])((?:\\.|(?!\1)[^\n])*)\1/g)) {
       // \' compte pour UN caractère à l'écran, pas deux : sans ce
       // dé-échappement le test réclamerait de raccourcir des titres qui
       // tiennent déjà.
-      const texte = brut.replace(/\\(['"\\])/g, '$1')
-      // ${...} : valeur construite à partir d'un nom de ville, donc couverte
-      // par le point 1. Moins de 25 caractères : un fragment, pas un titre.
-      if (texte.includes('${') || texte.length < 25) continue
+      // Les `${...}` sont retirés, pas exclus : on mesure alors le texte FIXE,
+      // qui est une borne INFÉRIEURE de ce que Google verra — donc aucun faux
+      // positif possible, et le gabarit qui déborde déjà sans sa variable est
+      // attrapé. C'est ainsi que la description de /destinations (171
+      // caractères servis) a été trouvée le 12 août.
+      const texte = brut.replace(/\\(['"\\])/g, '$1').replace(/\$\{[^}]*\}/g, '')
+      if (texte.length < 25) continue // un fragment, pas un titre
       litterauxRelus++
       if (texte.length > max) rate(`${cle} (${f.replace('../', '')})`, texte.length, max, texte)
     }
