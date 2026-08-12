@@ -13,7 +13,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 
 ## A faire
 
-> **Cycles 6, 10, 13, 16, 18 et 21 : audits.** Quand les seuls elements restants sont
+> **Cycles 6, 10, 13, 16, 18, 21 et 23 : audits.** Quand les seuls elements restants sont
 > bloques — un arbitrage, deux fois le deploiement — le cycle sert a mesurer,
 > pas a forcer un blocage. Les sept elements des audits 6, 10 et 13 sont **tous
 > faits** (cycles 7, 8, 9, 11, 12, 14, 15). **L'audit du cycle 16 n'a produit
@@ -23,10 +23,20 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 > **faits** (cycles 19 et 20), et trois promesses en sont ressorties saines.
 > **L'audit du cycle 21** a regarde « Mon chemin » avec une vraie progression :
 > son element — un defaut de mon propre outillage — est **fait** (cycle 22), et
-> quatre promesses en sont ressorties saines. Les trois qui restent sont les
-> trois bloques : le prochain cycle sera un audit.
+> quatre promesses en sont ressorties saines.
+> **L'audit du cycle 23 a parcouru la mesure de succes elle-meme** : seize jours
+> consecutifs, une seule personne, l'horloge avancee d'un jour a la fois, en
+> faisant chaque jour tout ce que le site demande. Personne ne l'avait jamais
+> fait au-dela du deuxieme jour. Il en sort **quatre elements, les 1 a 4
+> ci-dessous** — les trois plus graves n'apparaissent qu'apres le huitieme jour,
+> c'est-a-dire au-dela de tout ce qui avait ete regarde jusqu'ici.
+> *Ma premiere passe etait fausse et je l'ecris ici :* elle annoncait « aucun
+> bouton, aucune serie, les dix jours ». Mon outil n'avait pas repondu aux trois
+> questions d'accueil, qui masquent tout le reste tant qu'on n'y a pas repondu —
+> le site allait bien, c'est le parcours simule qui n'etait pas celui d'une vraie
+> personne. Rien n'a ete publie sur cette base.
 >
-> **Mesure aux cycles 6, 10, 13, 16, 18 et 21, et rien a corriger** — a ne pas
+> **Mesure aux cycles 6, 10, 13, 16, 18, 21 et 23, et rien a corriger** — a ne pas
 > re-mesurer sans raison :
 > - **214 elements contiennent de l'arabe, 214 portent `lang="ar"` et
 >   `dir="rtl"`**, zero nu.
@@ -65,8 +75,90 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 >   d'un jour apres six : « **Ton jour de grace a sauve ta serie.** Il en faut
 >   cinq jours pour en regagner un. » Trou de trois jours : la serie repart a 1,
 >   « ton record est de 3 », et **aucun stock de grace n'est annonce a l'avance**.
+> - **Les sept premiers jours tiennent, un par un** *(cycle 23)*. Chacun des
+>   jours 1 a 7 propose quelque chose, la serie compte juste — 1, 2, 3, 4, 5, 6,
+>   puis **« 7 jours d'affilee — c'est ton record »** — et l'anneau se ferme les
+>   sept jours. La mesure de succes est atteignable : c'est **apres** qu'elle
+>   casse.
+> - **Le site ne se repete jamais** *(cycle 23)*. Les six lecons sortent dans
+>   l'ordre du niveau declare — debutant complet → les six piliers d'abord,
+>   Al-Fatiha en troisieme — et **aucune n'est proposee deux fois en neuf** sur
+>   les seize jours.
+> - **L'espacement annonce est bien celui qui est applique** *(cycle 23)*.
+>   L'ecran de fin dit « reviendra dans **2 jours** » apres une lecon neuve,
+>   « dans **7** » apres la premiere revision, « dans **21** » apres la seconde —
+>   les trois premieres valeurs de `ESPACEMENT`, observees a l'ecran et non
+>   lues dans le code.
+> - **Le total appris ne bouge plus quand on revise** *(cycle 23)*. Il monte
+>   6 → 13 → 20 → 23 → 51 → 76 sur les six lecons neuves, puis **reste a 76** sur
+>   toutes les revisions des dix jours suivants. Une revision n'invente pas un
+>   acquis.
+> - **Zero erreur JavaScript sur seize jours** *(cycle 23)*, 40 lecons jouees,
+>   l'horloge deplacee quinze fois.
 
-1. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
+1. **La serie casse alors que la personne est venue tous les jours — c'est le
+   site qui la casse.**
+   *Preuve :* seize jours parcourus a la suite, en faisant chaque jour tout ce
+   que le site propose, sans en manquer un seul. La serie monte a **8 le
+   huitieme jour**. Les jours 9 a 13, le site n'a **rien** a proposer. Le
+   dixieme jour il annonce « Ton jour de grace a sauve ta serie ». Le
+   **onzieme jour, la ligne dit « Ta serie commence aujourd'hui. »** Le
+   quatorzieme : « 1 jour — ton record est de 8. » La personne n'a pas manque un
+   jour ; c'est le site qui n'avait rien, et c'est elle qui perd sa serie.
+   Le jour de grace a ete pense pour quelqu'un qui s'absente, pas pour couvrir
+   un manque de contenu — il est depense ici a la place du site.
+   *Ce n'est pas un chantier de contenu :* un jour ou le site n'a rien a
+   proposer ne devrait pas compter contre la personne. C'est une regle a
+   ecrire dans `serieDetaillee()`, pas une lecon a rediger.
+
+2. **L'objectif du jour reclame une lecon que la carte vient de dire
+   inexistante.**
+   *Preuve :* les jours 9, 10, 11, 12, 13 et 16, sur le meme ecran, a trois
+   centimetres d'ecart : la ligne d'objectif dit **« Objectif du jour : une
+   lecon. Cinq minutes suffisent. »** et la carte juste dessous dit **« Tu es a
+   jour — toutes les lecons disponibles sont terminees, et aucune revision n'est
+   prevue aujourd'hui. »** L'anneau reste ouvert a zero. Le site demande une
+   chose qu'il vient d'annoncer impossible, puis ne la valide pas.
+   C'est exactement ce que la regle de ton interdit : un compteur qui reste
+   ouvert sans que la personne puisse rien y faire devient un jugement.
+   *Reparable tout de suite*, sans une ligne de contenu : quand `leconDuJour()`
+   rend `null`, l'objectif du jour n'a pas de sens et doit se taire — ou se
+   declarer atteint. Six jours sur seize sont concernes.
+
+3. **Cinq jours sur seize, le site n'a rien du tout a proposer.**
+   *Preuve :* jours 9 a 13, cinq jours de suite, et de nouveau le jour 16 :
+   aucune carte, aucun bouton. Six lecons, un espacement de 2 puis 7 puis 21
+   jours : tout ce qui a ete appris la premiere semaine ne revient qu'aux jours
+   14 et 15, puis plus rien avant le jour 35. Le trou est structurel, pas
+   accidentel.
+   S'y ajoute une promesse : la carte vide dit **« Reviens demain : la prochaine
+   lecon arrive bientot. »** Or `CATALOGUE` ne contient **que six entrees, les
+   six publiees** — aucune lecon n'arrive, ni demain ni le jour d'apres. Le
+   fichier `NOTES-lecons-a-venir.md` pose pourtant la regle inverse : « on
+   n'affiche que ce qui existe ».
+   *Deux voies, et la premiere ne se force pas :* ecrire des lecons — une tous
+   les deux jours au plus, jamais plus vite, c'est la regle. Ou revoir
+   l'espacement pour que les six lecons existantes couvrent les trous. La
+   promesse « la prochaine lecon arrive bientot », elle, se corrige aujourd'hui.
+
+4. **Le septieme jour coute trois fois plus cher que les six premiers.**
+   *Preuve :* mesure jour par jour, en fermant l'anneau chaque jour.
+   Jours 1 a 6 : **une lecon, ~7 min en moyenne**, l'anneau se ferme.
+   Jour 7 : **trois lecons, ~18 min**. Jour 8 : **trois lecons, ~21 min**. La
+   marche se produit exactement le jour ou se joue la seule mesure de succes du
+   projet — « sept jours d'affilee ». Une revision compte pour un tiers de
+   lecon (`OBJ_REVISIONS = 3`), et le septieme jour il n'y a plus que des
+   revisions.
+   La carte n'en propose qu'une a la fois : il faut revenir a l'accueil deux
+   fois de plus pour fermer l'anneau. La ligne « revient aujourd'hui » se tait
+   sur une carte de revision — c'est voulu depuis le cycle 20 et c'etait la
+   bonne decision pour une carte, un bouton — mais la ligne d'objectif est alors
+   la seule a dire « ou 2 revisions de plus ».
+   *A arbitrer, pas a coder tout de suite :* trois revisions valent-elles
+   vraiment une lecon neuve ? Le chiffre 3 n'a jamais ete mesure contre quoi que
+   ce soit.
+
+5. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
    *Preuve :* c'est la piece la plus puissante de la liste du responsable, et
    elle est la seule non commencee. Le blocage est reel et non technique : une
    notification calee sur une heure de priere suppose de **connaitre** cette
@@ -78,7 +170,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    **N'entre pas en travaux avant arbitrage** — c'est une decision, pas un
    chantier.
 
-2. **Aucune mesure d'entree, et un traceur est interdit ici.**
+6. **Aucune mesure d'entree, et un traceur est interdit ici.**
    *Preuve :* `grep -ril "gtag\|analytics\|plausible\|matomo\|umami"` sur toutes
    les pages et les trois fichiers JavaScript ne rend **rien**. Or le pied de
    page promet « Ta progression reste sur ton telephone. Aucun compte, aucun
@@ -87,7 +179,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    journaux). Bloque jusqu'au deploiement — question posee aux trois autres
    agents dans le brainstorm des passerelles.
 
-3. **La recitation n'a jamais ete entendue par personne.**
+7. **La recitation n'a jamais ete entendue par personne.**
    *Preuve :* `halalgpt.fr:443` et `cdn.islamic.network:443` sont refuses par la
    politique reseau de l'atelier (403 au CONNECT, journalise par le proxy,
    verifie trois fois). Le mecanisme est teste avec un recitateur simule — 7

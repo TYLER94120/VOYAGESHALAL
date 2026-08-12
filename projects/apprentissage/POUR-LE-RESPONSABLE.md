@@ -5,6 +5,61 @@ Les entrees les plus recentes sont en haut.
 
 ---
 
+## 2026-08-12 — MESURE — j'ai parcouru les seize premiers jours. La serie casse le 11e, et c'est le site qui la casse.
+
+La seule mesure du projet est « Mohamed ouvre le site sept jours d'affilee ».
+Personne ne l'avait jamais parcourue au-dela du deuxieme jour. Je viens de le
+faire : seize jours a la suite, une seule personne, l'horloge avancee d'un jour
+a la fois, en faisant chaque jour **tout** ce que le site demande.
+
+**Les sept premiers jours tiennent.** Un geste par jour, ~7 minutes, l'anneau se
+ferme, la serie compte juste jusqu'a « 7 jours d'affilee — c'est ton record ».
+La mesure est atteignable. Ce n'est pas la que ca casse.
+
+**Ce qui casse est apres, et c'est nous qui le cassons :**
+
+| jour | ce que le site propose | anneau |
+|---|---|---|
+| 1 a 6 | 1 lecon, ~7 min | ferme |
+| 7 | 3 revisions, ~18 min | ferme |
+| 8 | 3 revisions, ~21 min | ferme |
+| **9 a 13** | **rien du tout** | **ouvert** |
+| 14, 15 | 3 revisions, ~18 et 21 min | ferme |
+| 16 | rien | ouvert |
+
+Six lecons, un espacement de 2 puis 7 puis 21 jours : le trou des jours 9 a 13
+est structurel. Et pendant ces cinq jours, la personne vient, ne trouve rien, et
+le site lui dit quand meme **« Objectif du jour : une lecon. Cinq minutes
+suffisent. »** — a trois centimetres de sa propre carte qui dit « Tu es a jour,
+aucune revision n'est prevue aujourd'hui ». Le dixieme jour, il depense son jour
+de grace pour couvrir ce trou. **Le onzieme, la serie affiche « Ta serie commence
+aujourd'hui. »** Elle etait a 8. La personne n'a pas manque un seul jour.
+
+Le jour de grace a ete concu pour quelqu'un qui s'absente. Il sert ici a masquer
+un manque de contenu, puis il ne suffit plus, et c'est la personne qui paie.
+
+**Trois de ces quatre defauts se reparent sans ecrire une ligne de contenu** —
+ils sont dans ma file, je les prends dans les prochains cycles :
+1. un jour ou le site n'a rien ne doit pas compter contre la personne ;
+2. quand il n'y a rien a faire, l'objectif du jour doit se taire, pas rester
+   ouvert a zero ;
+3. la carte vide promet « la prochaine lecon arrive bientot » alors que le
+   catalogue ne contient que les six lecons publiees. C'est une promesse a
+   credit, exactement ce que le fichier `NOTES-lecons-a-venir.md` nous
+   interdisait.
+
+**Le quatrieme te revient**, parce que c'est un arbitrage et pas un chantier :
+`OBJ_REVISIONS = 3` — trois revisions valent une lecon neuve. Ce chiffre n'a
+jamais ete mesure contre quoi que ce soit, et c'est lui qui fait tripler le cout
+du septieme jour, le jour meme ou se joue la mesure. Deux ou trois ?
+
+**Et une chose que je ne peux pas resoudre seul :** au rythme d'une lecon tous
+les deux jours — la regle, et je ne l'accelererai pas — il faut **cinq lecons de
+plus** pour couvrir les jours 9 a 13. Dis-moi si la priorite est la, ou si tu
+preferes que je resserre l'espacement des six existantes en attendant.
+
+---
+
 ## 2026-08-12 — CORRECTION — le verrou de ton que je t'ai livre etait faux. Ne copie pas cette version.
 
 Le 10 aout je t'ai ecrit : « si une seule chose de ma competence doit passer dans
