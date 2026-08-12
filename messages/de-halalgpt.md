@@ -225,3 +225,79 @@ positifs que je t'avais annoncés à tort sont déjà retirés.
 *Écris ta réponse à la suite, dans ce fichier. Je la lirai.*
 
 — Agent HalalGPT
+
+
+---
+
+# LE COMPTE COMPLET — promis le 12 août à 01 h, mesuré à 04 h 21
+
+J'avais écrit plus haut : « le balayage complet de 02 h 47 donnera le compte
+sur les 1959 pages, et je te l'écris ici demain. »
+
+**Ce rendez-vous n'a jamais eu lieu.** GitHub saute une partie des rendez-vous
+programmés : sur 37 heures, la ronde aurait dû tourner 74 fois, elle a tourné
+30 fois, et 02 h 47 est tombé dans un trou de trois heures. La seule ronde de
+la nuit a duré 21 secondes — 1 967 pages ne se balaient pas en 21 secondes.
+
+J'ai réparé le robot (il se rattrape désormais tout seul quand le relevé est
+vieux de plus de 20 h) et lancé le balayage à la main. **Il a tourné
+11 minutes sur 1 967 pages.** Voici le compte réel, celui que je te devais.
+
+## Ce qui reste, sur tout le site
+
+| Défaut | Combien | Où |
+|---|---|---|
+| 🟠 titre coupé par Google | **61** | 34 sur gohalaltravel, 27 sur voyageshalal |
+| 🟠 français sur le domaine anglais | **28** | 20 pages distinctes |
+| 🟡 description trop courte | 14 | à ne pas laisser grossir |
+| 🔴 page qui ne répond pas | **0** | aucune, sur 1 967 |
+
+**Zéro défaut grave sur 1 967 pages.** Ton site répond partout. C'est le
+chiffre qu'il faut retenir en premier.
+
+## Une correction que je te dois
+
+Je t'avais écrit « au plus 56 titres à reprendre ». La mesure honnête en donne
+61. Je ne m'étais pas trompé : entre-temps tu as publié des pages, et
+elles arrivent avec le même défaut de gabarit. C'est pour ça que ce n'est pas
+une liste à cocher mais un gabarit à corriger — sinon la liste repoussera
+chaque nuit.
+
+## Le français sur le domaine anglais : 20 pages
+
+C'est le défaut qui coûte le plus cher, parce qu'il fait juger le domaine
+anglais comme un site mal traduit. Presque toutes ces pages ont la même
+origine : **un nom de lieu saisi par un visiteur, publié tel quel**.
+
+```
+https://www.gohalaltravel.com/contact
+https://www.gohalaltravel.com/priere/berkane/mosquee-magnifique
+https://www.gohalaltravel.com/priere/essaouira/resto-sidi-koi-ali-en-bord-de-mer
+https://www.gohalaltravel.com/priere/fes/cafe-sympa-sorti-de-des-direction-berkane
+https://www.gohalaltravel.com/priere/marrakech/coin-priere-dans-un-restaurant-familial
+https://www.gohalaltravel.com/priere/marrakech/hotel-excentre-magnifique
+https://www.gohalaltravel.com/priere/marrakech/resto-traditionnel-special-jus-de-fruit-et-petit-dej
+https://www.gohalaltravel.com/priere/saidia/mosque-a-10-minutes-de-saidia-dans-la-montagne
+https://www.gohalaltravel.com/priere/tafoughalt/resto-avec-piscine
+https://www.gohalaltravel.com/spot/sp_mrtftu4b_52671
+https://www.gohalaltravel.com/spot/sp_mrtmy7zu_wd5zv
+https://www.gohalaltravel.com/spot/sp_ms28x8qb_g18zz
+https://www.gohalaltravel.com/spot/sp_ms2d7i1y_gtzpt
+https://www.gohalaltravel.com/spot/sp_ms3ag9sm_uv5ug
+https://www.gohalaltravel.com/spot/sp_ms7iirki_ws5oz
+https://www.gohalaltravel.com/spot/sp_ms8u2638_sreaa
+https://www.gohalaltravel.com/spot/sp_msdnho52_dw9u4
+https://www.gohalaltravel.com/spot/sp_mselbxzb_9ujf8
+https://www.gohalaltravel.com/spot/sp_msn1o7z8_zaii0
+https://www.gohalaltravel.com/spot/sp_msnbwgey_0st3g
+```
+
+La réparation n'est pas de traduire ces 20 pages une par une : demain il y en
+aura d'autres. C'est le chemin de publication qu'il faut reprendre — un nom
+saisi en français ne doit pas devenir le `<title>` d'une page anglaise.
+
+Le relevé complet est à jour dans `docs/ronde/BALAYAGE-COMPLET.md` du dépôt
+voyageshalal-app, et il porte désormais sa durée : un balayage qui rend la
+main en quelques secondes n'a pas eu lieu.
+
+— Agent HalalGPT, 12 août 06 h
