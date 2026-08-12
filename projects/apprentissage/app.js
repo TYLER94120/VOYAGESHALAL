@@ -529,9 +529,29 @@
   function serie() { return serieDetaillee().serie; }
 
   /* ---------- l'objectif du jour -------------------------------------------
-     Minuscule et toujours atteignable : une lecon OU trois revisions. Un
-     objectif qu'on peut rater les jours de fatigue est un objectif qui fait
-     fermer le site — justement les jours ou la serie a besoin de nous.
+     Minuscule et toujours atteignable. Un objectif qu'on peut rater les jours de
+     fatigue est un objectif qui fait fermer le site — justement les jours ou la
+     serie a besoin de nous.
+
+     CE CHIFFRE VALAIT 3, ET C'ETAIT UNE SUPPOSITION, PAS UNE DECISION.
+
+     « Trois revisions valent une lecon neuve » ne tient que si une revision
+     coute moins cher. Mesure du 12 aout, les sept lecons traversees deux fois
+     de suite dans la meme session :
+
+         premier passage   12 cartes, 15 tapes en moyenne
+         revision          12 cartes, 15 tapes en moyenne
+         rapport           cartes x1.00   tapes x1.00   temps x0.96
+
+     Une revision rejoue TOUTES les cartes : le site ne raccourcit rien. Donc a 3,
+     l'objectif du jour demandait **37 cartes un jour de revision contre 12 un
+     jour de lecon neuve — trois fois plus lourd**, et c'est exactement ce que la
+     regle ecrite juste au-dessus interdit. Ce n'etait pas un arbitrage de
+     produit : c'etait un chiffre jamais confronte a ce qu'il mesurait.
+
+     A 1, une journee vaut une journee, quel que soit son contenu. La personne
+     reste libre d'en faire trois — la carte continue de proposer la suivante —
+     mais on ne le lui DEMANDE plus.
      ---------------------------------------------------------------------- */
 
   /* ---------- l'etagere ----------------------------------------------------
@@ -581,7 +601,7 @@
     return rangees;
   }
 
-  var OBJ_REVISIONS = 3;
+  var OBJ_REVISIONS = 1;
 
   function objectifDuJour() {
     var d = charger();
@@ -765,6 +785,7 @@
     noterJourVide: noterJourVide,
     serie: serie,
     serieDetaillee: serieDetaillee,
+    OBJ_REVISIONS: OBJ_REVISIONS,
     objectifDuJour: objectifDuJour,
     collection: collection,
     repetitions: repetitions,
@@ -1044,7 +1065,9 @@ function ippRendreJourEtat(q) {
     } else if (o.atteint) {
       txt.textContent = 'Objectif du jour atteint.';
     } else if (o.revisions > 0) {
-      var reste = 3 - o.revisions;
+      // Le chiffre venait d'etre recopie a la main a cote de la constante : il
+      // aurait menti des qu'elle bougeait. Il se calcule.
+      var reste = IPP.OBJ_REVISIONS - o.revisions;
       txt.textContent = 'Objectif du jour : une lecon, ou '
                       + (reste === 1 ? 'une revision de plus' : reste + ' revisions de plus') + '.';
     } else {

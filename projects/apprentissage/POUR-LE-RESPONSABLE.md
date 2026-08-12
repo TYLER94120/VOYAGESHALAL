@@ -5,6 +5,69 @@ Les entrees les plus recentes sont en haut.
 
 ---
 
+## 2026-08-12 — RETRAIT DE QUESTION — l'arbitrage `OBJ_REVISIONS` que je t'ai demande n'existait pas. Je l'ai mesure.
+
+Ce matin je t'ai ecrit : « Le quatrieme te revient, parce que c'est un arbitrage
+et pas un chantier : `OBJ_REVISIONS = 3` — trois revisions valent une lecon
+neuve. Deux ou trois ? » **Ne reponds pas : la question etait mal posee, et c'est
+ma faute.**
+
+« Trois revisions valent une lecon neuve » ne tient que si une revision coute
+moins cher qu'une lecon neuve. Je ne l'avais jamais verifie. Je viens de le
+faire : les sept lecons traversees deux fois de suite dans la meme session.
+
+| | cartes | tapes | temps |
+|---|---|---|---|
+| premier passage | 12 | 15 | 2664 ms |
+| revision | 12 | 15 | 2569 ms |
+| rapport | **x1,00** | **x1,00** | x0,96 |
+
+**Une revision rejoue toutes les cartes.** Le site ne raccourcit rien — il n'a
+jamais eu de mode revision. Donc a 3, l'objectif du jour demandait **37 cartes un
+jour de revision contre 12 un jour de lecon neuve**. Trois fois plus lourd, le
+jour ou il n'y a plus rien de neuf, c'est-a-dire le jour ou la personne est le
+plus susceptible de decrocher.
+
+Et la regle etait deja ecrite, trois lignes au-dessus de la constante, dans mon
+propre code : « minuscule et toujours atteignable ; un objectif qu'on peut rater
+les jours de fatigue est un objectif qui fait fermer le site ». Le chiffre 3
+contredisait la regle a cote de laquelle il etait pose. Il n'y avait pas deux
+valeurs defendables : il y avait une supposition non verifiee.
+
+**Passe a 1.** Une journee vaut une journee, quel que soit son contenu. La
+personne reste libre d'en faire trois — la carte continue de proposer la suivante
+— mais on ne le lui demande plus.
+
+L'effet sur dix-huit jours joues, et j'ai mesure **deux comportements** parce
+qu'un seul aurait menti :
+
+| | elle suit l'objectif | elle vide tout |
+|---|---|---|
+| avant (3) | 5 jours vides / 18 | 15 / 18 |
+| apres (1) | **0** / 18 | 15 / 18 |
+
+La marche du huitieme jour est **supprimee** : les dix-huit jours coutent
+maintenant une lecon, 5 a 8 minutes, sans exception. Et pour qui suit l'objectif,
+les jours vides disparaissent — non par du contenu ajoute, mais parce qu'on ne
+vide plus trois jours de revisions d'un coup.
+
+**Ce que ca ne repare pas**, et je prefere te le donner net : qui fait tout ce qui
+est propose garde **15 jours vides sur 18** — sept lecons en 46 minutes le premier
+jour, puis six jours de rien. C'est la borne haute du manque de contenu, pas une
+prediction. Elle est intacte, et c'est le seul element de ma file qui demande
+encore des lecons.
+
+**Si tu penses que 1 est trop bas, dis-le et je remets 3** : c'est ton appel sur
+le produit. Mais alors il faudra assumer qu'un jour de revision coute trois fois
+un jour de lecon, et ca, ce n'est plus une supposition.
+
+**Et une lecon de methode que je garde** : j'ai classe un element « a arbitrer,
+pas a coder », et il suffisait de mesurer. Une question qui ressemble a un choix
+de produit peut n'etre qu'un chiffre jamais confronte a ce qu'il mesure. Je
+mesurerai d'abord, meme quand je crois avoir affaire a une decision.
+
+---
+
 ## 2026-08-12 — MESURE — j'ai parcouru les seize premiers jours. La serie casse le 11e, et c'est le site qui la casse.
 
 La seule mesure du projet est « Mohamed ouvre le site sept jours d'affilee ».

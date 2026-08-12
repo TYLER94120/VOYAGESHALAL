@@ -29,9 +29,13 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 > faisant chaque jour tout ce que le site demande. Personne ne l'avait jamais
 > fait au-dela du deuxieme jour. Il en a sorti **quatre elements** — tous
 > invisibles avant le huitieme jour, donc au-dela de tout ce qui avait ete
-> regarde jusqu'ici. **Deux sont faits** (cycles 24 et 25) — les deux qui ne
-> demandaient pas une ligne de contenu ; les deux autres sont les elements 1 et
-> 2 ci-dessous, et le second est un arbitrage.
+> regarde jusqu'ici. **Trois sont faits** (cycles 24, 25 et 28). Le quatrieme,
+> l'element 1 ci-dessous, est le seul qui demande du contenu — et le cycle 28 a
+> montre qu'il est **plus grave** que ce que j'avais ecrit.
+> *Un element que j'avais classe « a arbitrer » n'en demandait pas :* le cycle 28
+> a mesure le chiffre au lieu d'attendre une decision, et la question s'est
+> dissoute — elle reposait sur une premisse fausse. **Mesurer d'abord, meme quand
+> on croit avoir affaire a un choix.**
 > *Ma premiere passe etait fausse et je l'ecris ici :* elle annoncait « aucun
 > bouton, aucune serie, les dix jours ». Mon outil n'avait pas repondu aux trois
 > questions d'accueil, qui masquent tout le reste tant qu'on n'y a pas repondu —
@@ -98,39 +102,29 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 > - **Zero erreur JavaScript sur seize jours** *(cycle 23)*, 40 lecons jouees,
 >   l'horloge deplacee quinze fois.
 
-1. **Quatre jours sur seize, le site n'a rien du tout a proposer.**
-   *Preuve, re-mesuree au cycle 26 apres la septieme lecon :* jours 11 a 14,
-   quatre jours de suite, et de nouveau le jour 18 : aucune carte, aucun bouton.
-   **C'etait cinq jours (9 a 13) avec six lecons** — une lecon a donc rendu
-   exactement un jour. Sept lecons, un espacement de 2 puis 7 puis 21 jours :
-   ce qui est appris la premiere semaine revient aux jours 15, 16 et 17, puis
-   plus rien avant le jour 36. Le trou est structurel, pas accidentel.
+1. **Qui avance vite trouve un site vide : 15 jours sur 18.**
+   *Preuve, re-mesuree au cycle 28 sur deux comportements — un seul aurait
+   menti :* une personne qui **suit l'objectif du jour** et s'arrete ne rencontre
+   plus **aucun** jour vide sur 18 (c'etait 5 avant que `OBJ_REVISIONS` passe a
+   1 : elle ne consomme plus trois jours de revisions d'un coup). Mais une
+   personne qui **fait tout ce qui est propose** trouve **15 jours vides sur
+   18** : jour 1, sept lecons en 46 minutes, puis six jours ou l'accueil n'a
+   aucune carte et aucun bouton. Sept lecons, un espacement de 2 puis 7 puis 21
+   jours : le trou est structurel, pas accidentel — l'etalement le cache pour
+   qui va lentement, il ne le comble pas.
+   Cette colonne est une **borne haute**, pas une prediction : aucun debutant ne
+   fait sept lecons le premier jour. Elle dit ce que le site ne sait pas encore
+   soutenir.
    La promesse creuse qui accompagnait ces jours — « la prochaine lecon arrive
    bientot » — **est retiree** (cycle 27) : la carte annonce desormais la date
    reelle de la prochaine revision. Le trou, lui, reste un trou.
    *La voie est ouverte et elle ne se force pas :* une lecon tous les deux jours
-   au plus, jamais plus vite. Au taux de change mesure, il en faut **quatre de
-   plus** pour fermer les jours 11 a 14 — a re-mesurer a chaque fois plutot qu'a
-   extrapoler, l'espacement redistribue les trous a chaque ajout.
+   au plus, jamais plus vite — la derniere date du 12 aout. Le taux de change
+   mesure au cycle 26 etait d'un jour vide rendu par lecon, et il se re-mesure a
+   chaque fois plutot qu'il ne s'extrapole : l'espacement redistribue les trous a
+   chaque ajout.
 
-2. **La marche a trois lecons existe toujours, un jour plus loin.**
-   *Preuve, re-mesuree au cycle 26 :* jours 1 a **7** : une lecon, ~6 min en
-   moyenne, l'anneau se ferme. Jour 8 : **trois lecons, ~18 min**. Jour 9 :
-   **trois lecons, ~20 min**. La septieme lecon a retire la marche du septieme
-   jour — les sept jours qui portent la mesure de succes sont maintenant sept
-   jours identiques — mais elle l'a **deplacee au huitieme**, pas supprimee. Une revision compte pour un tiers de
-   lecon (`OBJ_REVISIONS = 3`), et le septieme jour il n'y a plus que des
-   revisions.
-   La carte n'en propose qu'une a la fois : il faut revenir a l'accueil deux
-   fois de plus pour fermer l'anneau. La ligne « revient aujourd'hui » se tait
-   sur une carte de revision — c'est voulu depuis le cycle 20 et c'etait la
-   bonne decision pour une carte, un bouton — mais la ligne d'objectif est alors
-   la seule a dire « ou 2 revisions de plus ».
-   *A arbitrer, pas a coder tout de suite :* trois revisions valent-elles
-   vraiment une lecon neuve ? Le chiffre 3 n'a jamais ete mesure contre quoi que
-   ce soit.
-
-3. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
+2. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
    *Preuve :* c'est la piece la plus puissante de la liste du responsable, et
    elle est la seule non commencee. Le blocage est reel et non technique : une
    notification calee sur une heure de priere suppose de **connaitre** cette
@@ -142,7 +136,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    **N'entre pas en travaux avant arbitrage** — c'est une decision, pas un
    chantier.
 
-4. **Aucune mesure d'entree, et un traceur est interdit ici.**
+3. **Aucune mesure d'entree, et un traceur est interdit ici.**
    *Preuve :* `grep -ril "gtag\|analytics\|plausible\|matomo\|umami"` sur toutes
    les pages et les trois fichiers JavaScript ne rend **rien**. Or le pied de
    page promet « Ta progression reste sur ton telephone. Aucun compte, aucun
@@ -151,7 +145,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    journaux). Bloque jusqu'au deploiement — question posee aux trois autres
    agents dans le brainstorm des passerelles.
 
-5. **La recitation n'a jamais ete entendue par personne.**
+4. **La recitation n'a jamais ete entendue par personne.**
    *Preuve :* `halalgpt.fr:443` et `cdn.islamic.network:443` sont refuses par la
    politique reseau de l'atelier (403 au CONNECT, journalise par le proxy,
    verifie trois fois). Le mecanisme est teste avec un recitateur simule — 7
@@ -163,6 +157,48 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 ---
 
 ## Fait
+
+- **`OBJ_REVISIONS` passe de 3 a 1 : une journee vaut une journee** *(12 aout,
+  cycle 28)* — j'avais classe cet element « a arbitrer, pas a coder », en ecrivant
+  que **« le chiffre 3 n'a jamais ete mesure contre quoi que ce soit »**. Je l'ai
+  mesure, et il n'y avait plus d'arbitrage a rendre : la question reposait sur une
+  premisse fausse.
+  *La mesure.* Les sept lecons traversees **deux fois de suite dans la meme
+  session**, premier passage puis revision :
+  | | cartes | tapes | temps |
+  |---|---|---|---|
+  | premier passage | 12 | 15 | 2664 ms |
+  | revision | 12 | 15 | 2569 ms |
+  | rapport | **x1,00** | **x1,00** | x0,96 |
+  **Une revision rejoue toutes les cartes : le site ne raccourcit rien.** « Trois
+  revisions valent une lecon neuve » ne tenait que si une revision coutait moins
+  cher. Elle coute exactement pareil. A 3, l'objectif du jour demandait donc
+  **37 cartes un jour de revision contre 12 un jour de lecon neuve — trois fois
+  plus lourd** — et la regle ecrite trois lignes au-dessus de la constante, dans
+  `app.js`, dit : « minuscule et toujours atteignable ; un objectif qu'on peut
+  rater les jours de fatigue est un objectif qui fait fermer le site ».
+  *L'effet, sur dix-huit jours joues, et j'ai mesure DEUX comportements parce
+  qu'un seul aurait menti :*
+  | | elle suit l'objectif | elle vide tout |
+  |---|---|---|
+  | avant (3) | **5** jours vides / 18 | 15 / 18 |
+  | apres (1) | **0** jours vides / 18 | 15 / 18 |
+  - **La marche du huitieme jour est supprimee, pas deplacee** : 3 lecons et
+    ~18 min pour fermer l'anneau, contre **1 lecon et ~8 min** maintenant. Les
+    dix-huit jours coutent desormais **une lecon, 5 a 8 minutes**, sans exception.
+  - Et pour qui suit l'objectif, **les jours vides disparaissent** : en ne
+    consommant plus trois revisions d'un coup, on ne vide plus trois jours
+    d'avance. Ce n'est pas du contenu ajoute, c'est de l'etalement.
+  - **Ce que ca ne repare pas, et il faut le dire** : qui vide tout ce qui est
+    propose garde **15 jours vides sur 18** — jour 1, sept lecons en 46 minutes,
+    puis six jours de rien. Le manque de contenu est intact, et cette colonne est
+    la borne haute du probleme, pas une prediction : aucun debutant ne fait sept
+    lecons le premier jour.
+  *Verrous :* le chiffre etait **recopie a la main dans l'affichage** a cote de la
+  constante — il aurait menti des qu'elle bougeait ; il se calcule. `cat.mjs` le
+  lit desormais, et `test-serie.mjs` ne l'ecrit plus : ses controles se derivent
+  de la constante, dont **« une journee vaut une journee : revision et lecon neuve
+  pesent pareil »**.
 
 - **La promesse « la prochaine lecon arrive bientot » est remplacee par une date
   vraie** *(12 aout, cycle 27)* — **avant : 27 ecrans portaient cette promesse
