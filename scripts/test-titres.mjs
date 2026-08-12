@@ -20,7 +20,7 @@
 //
 // Usage : node scripts/test-titres.mjs
 
-import { readFileSync } from 'node:fs'
+import { readFileSync, readdirSync } from 'node:fs'
 
 const TITRE_MAX = 60
 const DESCRIPTION_MAX = 160
@@ -178,6 +178,80 @@ const descs = TOUTES.filter((x) => x.desc && !x.desc.includes('${'))
 const descsLongues = descs.filter((x) => x.desc.length > DESCRIPTION_MAX)
 descsLongues.forEach((x) => rate(`${x.slug} (${x.fichier})`, x.desc.length, DESCRIPTION_MAX, x.desc))
 console.log(`   ${descsLongues.length ? '✗' : '✓'} ${descs.length} descriptions de pages relues, ${descsLongues.length} trop longues`)
+
+// ── 4. Les titres et descriptions écrits DANS les pages app/ ──────────────
+// LE TROU QUE CE BLOC BOUCHE, trouvé le 12 août : les points 2 et 3 ne
+// lisent que lib/data.ts et lib/guidesEn.ts. Or beaucoup de pages écrivent
+// leur `title` directement dans leur `generateMetadata()`. C'est ainsi que
+// /hotels — la page qui mène aux deux meilleures pages du site, Istanbul et
+// Dubaï — servait un titre de 80 caractères sans que rien ne le signale.
+// Google en coupait 20 : « ...souvent moins cher sur HalalBooking » n'était
+// jamais lu.
+console.log(`\n4. Titres et descriptions écrits dans les pages app/`)
+const fichiersApp = []
+const explore = (dir) => {
+  for (const e of readdirSync(new URL(dir, import.meta.url), { withFileTypes: true })) {
+    if (e.isDirectory()) explore(`${dir}/${e.name}`)
+    else if (e.name === 'page.tsx' || e.name === 'layout.tsx') fichiersApp.push(`${dir}/${e.name}`)
+  }
+}
+explore('../app')
+
+let litterauxRelus = 0
+for (const f of fichiersApp) {
+  const src = readFileSync(new URL(f, import.meta.url), 'utf8')
+  // On lit les BLOCS `const title = ...` / `title: ...`, puis toutes les
+  // chaînes littérales qu'ils contiennent. Il faut aller jusque-là parce que
+  // la forme réelle du dépôt est un ternaire bi-domaine sur trois lignes :
+  //     const title = isEN
+  //       ? 'Halal hotels ...'
+  //       : 'Hôtels halal ...'
+  // Une expression simple sur une ligne ne l'aurait pas vue — et c'est
+  // exactement la forme qu'avait le titre de 80 caractères de /hotels.
+  // ⚠️ On ne regarde QUE l'intérieur de `generateMetadata()` ou de
+  // `export const metadata`. Deuxième leçon du 12 août : en scannant tout le
+  // fichier, le test relevait les `title:` des cartes de la page d'accueil et
+  // les étapes de l'Omra — 42 alertes dont aucune n'était une balise <title>.
+  // Ce ne sont pas des méta-titres, ils n'ont aucune limite à respecter.
+  const toutesLignes = src.split('\n')
+  const lignes = []
+  let dedans = false
+  for (const l of toutesLignes) {
+    if (/export (async function generateMetadata|const metadata)/.test(l)) dedans = true
+    else if (dedans && /^\}/.test(l)) dedans = false
+    if (dedans) lignes.push(l)
+    else lignes.push('')
+  }
+  for (let i = 0; i < lignes.length; i++) {
+    const debut = lignes[i].match(/\b(?:const\s+)?(title|description)\s*[:=]/)
+    if (!debut) continue
+    const cle = debut[1]
+    const max = cle === 'title' ? TITRE_MAX : DESCRIPTION_MAX
+    // On s'arrête à la clé suivante. Sans cette borne, le bloc de `title`
+    // avalait la `description` de la ligne d'après et la jugeait avec la
+    // limite des titres : 106 fausses alertes au premier jet. Un test qui
+    // crie à tort finit par ne plus être lu — c'est déjà écrit plus haut
+    // dans ce fichier, et je viens de me refaire prendre.
+    const suite = []
+    for (let k = i; k < Math.min(i + 4, lignes.length); k++) {
+      if (k > i && /\b(?:const\s+)?(?:title|description|openGraph|alternates|keywords|return)\s*[:=]/.test(lignes[k])) break
+      suite.push(lignes[k])
+    }
+    const bloc = suite.join('\n')
+    for (const [, , brut] of bloc.matchAll(/(['"])((?:\\.|(?!\1)[^\n])*)\1/g)) {
+      // \' compte pour UN caractère à l'écran, pas deux : sans ce
+      // dé-échappement le test réclamerait de raccourcir des titres qui
+      // tiennent déjà.
+      const texte = brut.replace(/\\(['"\\])/g, '$1')
+      // ${...} : valeur construite à partir d'un nom de ville, donc couverte
+      // par le point 1. Moins de 25 caractères : un fragment, pas un titre.
+      if (texte.includes('${') || texte.length < 25) continue
+      litterauxRelus++
+      if (texte.length > max) rate(`${cle} (${f.replace('../', '')})`, texte.length, max, texte)
+    }
+  }
+}
+console.log(`   ${echecs ? '' : '✓ '}${litterauxRelus} valeurs littérales relues dans ${fichiersApp.length} fichiers app/`)
 
 console.log()
 if (echecs) {

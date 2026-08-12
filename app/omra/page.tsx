@@ -12,7 +12,7 @@ export async function generateMetadata(): Promise<Metadata> {
     title: isEN ? 'Umrah 2026 — Complete Guide, Packages & Preparation' : 'Omra 2026 — Guide Complet, Forfaits & Préparation',
     description: isEN
       ? 'Everything to prepare your Umrah 2026: visa, packages, budget, rituals, best agencies and practical tips for a successful pilgrimage.'
-      : "Tout ce qu'il faut savoir pour préparer votre Omra 2026 : visa, forfaits, budget, rituels, meilleures agences en France et conseils pratiques pour un pèlerinage réussi.",
+      : "Préparer son Omra 2026 : visa, forfaits, budget, rituels étape par étape et agences en France. Le guide complet, gratuit.",
     type: 'article',
     canonical: `${siteUrl}${isEN ? '/umrah' : '/omra'}`,
     languages: {

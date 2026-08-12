@@ -9,7 +9,7 @@ export async function generateMetadata(): Promise<Metadata> {
     title: isEN ? 'Qibla finder — Real-time compass to Mecca' : 'Calculateur Qibla — Compas temps réel vers La Mecque',
     description: isEN
       ? "Real-time Qibla compass: the needle points to Mecca using your phone's sensor (GPS + compass). Free, accurate, from anywhere in the world."
-      : "Boussole Qibla en temps réel : l'aiguille pointe vers La Mecque grâce au capteur de votre téléphone (GPS + compas). Gratuit, précis, depuis n'importe où dans le monde.",
+      : "L'aiguille pointe vers La Mecque grâce au capteur de votre téléphone (GPS + compas). Gratuit, précis, partout dans le monde.",
     alternates: {
       canonical: `${siteUrl}/qibla`,
       languages: { fr: 'https://www.voyageshalal.fr/qibla', en: 'https://www.gohalaltravel.com/qibla', 'x-default': 'https://www.gohalaltravel.com/qibla' },

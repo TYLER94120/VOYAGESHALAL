@@ -8,10 +8,10 @@ export async function generateMetadata(): Promise<Metadata> {
   const { isEN, siteUrl } = await getDomainSEO()
   const title = isEN
     ? 'Audio & Spiritual — traveler duas and protection surahs'
-    : 'Audio & Spirituel — dou\'as du voyageur et sourates de protection'
+    : 'Sourates de protection et dou\'as du voyageur — audio'
   const description = isEN
-    ? 'Listen to protection surahs (Al-Fatiha, Ayat al-Kursi, Al-Mulk, Ya-Sin…) and read the traveler\'s duas with Arabic text, transliteration and translation. Downloadable for offline use.'
-    : 'Écoutez les sourates de protection (Al-Fâtiha, Âyat al-Kursî, Al-Mulk, Yâ-Sîn…) et lisez les dou\'as du voyageur : arabe, phonétique et traduction. Téléchargeables pour le hors-ligne.'
+    ? 'Protection surahs (Al-Fatiha, Ayat al-Kursi, Al-Mulk, Ya-Sin) in audio, plus the traveller\'s duas: Arabic, transliteration, translation. Works offline.'
+    : 'Sourates de protection (Al-Fâtiha, Âyat al-Kursî, Al-Mulk, Yâ-Sîn) en audio et dou\'as du voyageur : arabe, phonétique, traduction. Écoute hors ligne.'
   return {
     title,
     description,

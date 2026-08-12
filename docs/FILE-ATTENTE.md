@@ -18,6 +18,7 @@ dessus.
 | 9 août 2026, soir | Pages hôtels Istanbul et Dubaï (filtres, distance mosquée) | 16-19 août |
 | 10 août 2026 | Liens sortants balisés (19 liens, campagne par emplacement) | 24 août |
 | 11 août 2026 | Vitesse (appels réseau bornés, images 1600 → 300 px) | 18-21 août |
+| **12 août 2026** | **14 titres et descriptions coupés par Google, dont /hotels (80 car.), la page qui mène à Istanbul et Dubaï** | **19-22 août** |
 
 Chiffres AVANT le 9 août, 7 jours : voyageshalal.fr 1 970 impressions /
 29 clics / 1,5 % · gohalaltravel.com 441 / 3 / 0,7 %.
@@ -59,6 +60,31 @@ requêtes ces pages sortent réellement.
 ---
 
 ## Fait
+
+### Le garde-fou des titres ne regardait pas les pages app/ — 12 août
+**Trouvé en auditant les deux mines** : `/hotels`, la page qui mène à
+Istanbul et Dubaï, servait un titre de **80 caractères** en français et 74
+en anglais. Google en coupait vingt : « …souvent moins cher sur
+HalalBooking » n'était jamais lu.
+
+**La cause, et c'est la vraie trouvaille** : `scripts/test-titres.mjs` ne
+lisait que les gabarits, `lib/data.ts` et `lib/guidesEn.ts`. Or beaucoup de
+pages écrivent leur titre directement dans leur `generateMetadata()` — ce
+pan-là n'était surveillé par personne. Le test a été étendu à
+`app/**/{page,layout}.tsx`, en ne lisant que l'intérieur des
+`generateMetadata()` / `export const metadata`.
+
+**Deux erreurs commises et corrigées en chemin**, notées parce qu'elles se
+reproduiront : un bloc de `title` qui avalait la `description` suivante
+(106 fausses alertes), puis un scan de tout le fichier qui relevait les
+`title:` des cartes d'accueil et des étapes de l'Omra (42 fausses alertes).
+Un test qui crie à tort finit par ne plus être lu.
+
+**Mesuré** : **14 titres ou descriptions coupés → 0**, vérifié en servant
+les 20 pages sur les deux domaines avec l'en-tête Host réel. Le test
+tourne à chaque `npm run build` : la page suivante ne peut plus
+réintroduire le défaut. **Remesurer sur Search Console à partir du
+19-22 août** (Google met 7 à 10 jours).
 
 ### Maghreb : la question n'est pas « est-ce halal » mais « quel type d'établissement » — 12 août
 **Avant** : 72 fiches sur 354. **Après : 77.** **716 mots uniques en

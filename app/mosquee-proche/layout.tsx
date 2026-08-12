@@ -9,7 +9,7 @@ export async function generateMetadata(): Promise<Metadata> {
     title: isEN ? 'Nearest mosque — Find a mosque around you' : 'Mosquée la plus proche — Trouvez une mosquée autour de vous',
     description: isEN
       ? 'Find the nearest mosque anywhere in the world in seconds, with directions and prayer times. Free, based on OpenStreetMap data.'
-      : "Trouvez la mosquée la plus proche partout dans le monde en quelques secondes, avec itinéraire et horaires de prière. Gratuit, basé sur les données OpenStreetMap.",
+      : "La mosquée la plus proche en quelques secondes, partout dans le monde, avec itinéraire et horaires. Gratuit, données OpenStreetMap.",
     alternates: {
       canonical: `${siteUrl}${isEN ? '/mosque-near-me' : '/mosquee-proche'}`,
       languages: {
