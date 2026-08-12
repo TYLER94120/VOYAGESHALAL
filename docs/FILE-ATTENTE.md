@@ -47,13 +47,13 @@ question végétarienne et celle du bœuf s'y ajoutent.
 ### 2. Le domaine anglais a 15 guides quand le français en a 24
 **Mesuré le 12 août sur les deux sitemaps servis** : voyageshalal.fr publie
 **24 guides et 45 articles de blog**, gohalaltravel.com **15 guides et 32
-articles**. Traduire n'est pas créer et n'entre donc pas dans le quota de
+articles**. Deux traduits depuis (Japon, Thaïlande) : **17 guides**. Traduire n'est pas créer et n'entre donc pas dans le quota de
 contenu — c'est le levier le moins cher du domaine anglais, qui pèse
 441 impressions contre 1 970.
 
-Restent **5 guides français sans jumeau anglais** : `europe-halal-friendly`,
-`manger-halal-thailande-guide`, `voyage-halal-petit-budget`,
-`voyage-aid-en-famille`, et `priere-avion-train-guide`.
+Restent **4 guides français sans jumeau anglais** : `europe-halal-friendly`,
+`voyage-halal-petit-budget`, `voyage-aid-en-famille`, et
+`priere-avion-train-guide`.
 ⚠️ **Ce dernier est à relire avant traduction, pas à traduire tel quel** :
 il tranche une question religieuse (qasr, jam'), ce que nos onze pages
 « où prier » ont justement cessé de faire le 11 août.
@@ -75,6 +75,23 @@ requêtes ces pages sortent réellement.
 ---
 
 ## Fait
+
+### Le guide Thaïlande en anglais, et le piège des liens sans jumeau — 12 août
+**Avant** : 16 guides sur gohalaltravel.com. **Après : 17.** Guide traduit,
+pas réécrit : même label CICOT, mêmes quartiers, même réserve
+(« adresses précises à vérifier sur place — l'offre évolue vite »).
+
+**Le piège évité, et il valait le détour** : la version française renvoie
+vers `/blog/manger-halal-bangkok` et `/guides/voyage-halal-petit-budget`,
+qui n'ont **aucun jumeau anglais**. Traduits tels quels, ces deux liens
+auraient créé des redirections au milieu du texte — exactement le défaut
+réparé le 10 août sur six liens. Ils ont été remplacés par des cibles
+anglaises qui existent, pas conservés.
+
+**Mesuré** : page anglaise en 200 (1 251 mots, titre 44 caractères,
+description 127), ancien slug français en 301 vers le slug anglais côté
+EN et en 200 côté FR, **31 liens internes tous en 200**, sitemap anglais
+seulement.
 
 ### Le guide Japon existe enfin en anglais — 12 août
 **Avant** : 15 guides sur gohalaltravel.com contre 24 sur voyageshalal.fr.

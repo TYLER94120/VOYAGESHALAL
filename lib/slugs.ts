@@ -52,6 +52,7 @@ export const GUIDES_FR_TO_EN: Record<string, string> = {
   'voyage-halal-solo-femme': 'solo-female-muslim-travel',
   'tourisme-halal-definition-2026': 'what-is-halal-tourism',
   'voyage-halal-japon-guide': 'japan-halal-travel-guide',
+  'manger-halal-thailande-guide': 'halal-food-thailand-guide',
 }
 
 // Articles de blog FR ayant un jumeau EN (301 sur le domaine EN).
