@@ -26,14 +26,14 @@ Chiffres AVANT le 9 août, 7 jours : voyageshalal.fr 1 970 impressions /
 
 ## À faire
 
-### 1. Les sections « manger » et « prier » manquent sur 302 fiches villes
-**Mesuré le 11 août, après les séries Asie, Amérique du Nord et Balkans** :
-**52 fiches sur 354** ont leurs quatre sections (manger et prier, FR et EN).
-Les 302 autres n'ont que des listes d'adresses — donc peu de texte unique,
+### 1. Les sections « manger » et « prier » manquent sur 297 fiches villes
+**Mesuré le 11 août, après quatre séries** (Asie, Amérique du Nord,
+Balkans, Europe du Nord) : **57 fiches sur 354** ont leurs quatre sections.
+Les 297 autres n'ont que des listes d'adresses — donc peu de texte unique,
 et rien qui réponde à « manger halal à X » en toutes lettres.
-Prochaine série : **l'Europe du Nord** (Stockholm, Copenhague, Oslo,
-Helsinki, Dublin), où le halal existe mais se cherche, et où l'été pose la
-question des latitudes extrêmes.
+Prochaine série : **l'Amérique latine** (Mexico, Buenos Aires, São Paulo,
+Bogotá, Lima), la région la plus difficile — communautés petites, porc
+central, et presque aucune certification.
 
 ### 2. Les hôtels d'Istanbul et Dubaï attendent le robot OSM
 **Mesuré** : 41 mentions « information non vérifiée » par page, et
@@ -52,6 +52,35 @@ requêtes ces pages sortent réellement.
 ---
 
 ## Fait
+
+### Europe du Nord : la latitude devient une difficulté réelle — 11 août
+**Avant** : 52 fiches sur 354. **Après : 57.** **651 mots uniques en
+français, 553 en anglais**, sur 10 pages (Stockholm, Copenhague, Oslo,
+Helsinki, Dublin).
+
+**Ce qu'aucune autre série n'a eu à dire : la LATITUDE.** À Oslo et
+Helsinki, en juin, la nuit dure deux à trois heures — le créneau entre
+Isha et Fajr devient minuscule. C'est un fait astronomique vérifiable, et
+le voyageur le découvre sur place s'il n'a pas été prévenu. Les deux pages
+le disent.
+
+**Et nous ne tranchons pas ce qu'il faut en faire** : suivre l'horaire de
+La Mecque, celui du pays musulman le plus proche, ou un autre avis, est une
+question religieuse débattue. Même règle que sur les onze pages « où
+prier » — on décrit, on renvoie à HalalGPT ou à l'imam. Vérifié : la
+mention est présente des deux côtés, en français comme en anglais.
+
+**Le reste est de la géographie utile** : le halal est dans les quartiers
+(Rinkeby et Södertälje à Stockholm, Nørrebro à Copenhague, Grønland à Oslo,
+South Circular Road et Clonskeagh à Dublin), pas dans les centres
+touristiques. Aucun label d'État dans les cinq pays. Helsinki est présentée
+franchement comme la plus difficile, avec des salles discrètes qu'il faut
+repérer avant d'arriver. Dublin fait exception sur la latitude, et la page
+le dit.
+
+**Vérifié** : les 5 fiches répondent en 200 sur les deux domaines, chaque
+repère attendu est présent dans la bonne langue, aucun texte français côté
+anglais.
 
 ### Balkans et Europe centrale : deux mondes que le voyageur confond — 11 août
 **Avant** : 47 fiches sur 354. **Après : 52.** **608 mots uniques en
