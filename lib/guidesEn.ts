@@ -299,4 +299,45 @@ export const guidesEn: Guide[] = [
 <h2>The numbers</h2><p>Muslim travelers represent hundreds of billions of dollars in annual travel spending, and destinations compete for them: dedicated prayer rooms in airports, halal menus, Muslim-friendly labels from national tourism boards.</p>
 <h2>How to start</h2><p>Pick an easy destination (<a href="/destinations/istanbul">Istanbul</a>, <a href="/destinations/kuala-lumpur">Kuala Lumpur</a>, <a href="/destinations/marrakech">Marrakesh</a>), use our <a href="/guides/halal-travel-for-beginners">beginner guide</a> and <a href="/guides/halal-travel-checklist">checklist</a>, and keep the <a href="/prayer-times">prayer tools</a> at hand. That is all it takes.</p>`,
   },
+  {
+    slug: 'japan-halal-travel-guide',
+    lang: 'en',
+    title: 'Halal Travel in Japan: Tokyo, Osaka, Kyoto 2026',
+    description: 'Japan as a Muslim traveller: halal food in Tokyo and Osaka, halal ramen and wagyu, mosques, prayer rooms and the ingredients to watch.',
+    coverImage: 'https://images.unsplash.com/photo-1557672172-298e090bd0f1?w=1200&q=80',
+    category: 'Destinations',
+    readTime: '7 min',
+    publishedAt: '2026-03-28',
+    tags: ['Japan', 'Tokyo', 'Osaka', 'Halal food', 'Asia'],
+    content: `<p><strong>Halal travel in Japan</strong> is no longer a challenge: the halal scene in Tokyo and Osaka has grown fast, driven by Muslim tourism from Southeast Asia. Here is how to make the most of it.</p>
+<h2>Eating halal in Tokyo</h2>
+<p>Tokyo holds most of what is on offer: <strong>halal ramen</strong> (several dedicated addresses), <strong>halal wagyu</strong>, Indian, Turkish and Indonesian kitchens, and a growing number of Japanese restaurants labelled by local bodies. The Asakusa, Shinjuku and Shibuya districts are the best supplied — all our listings are on the <a href="/destinations/tokyo">Tokyo</a> page.</p>
+<h2>Eating halal in Osaka and Kyoto</h2>
+<p>Japanese cooking itself has gone halal: halal takoyaki and okonomiyaki exist in <a href="/destinations/osaka">Osaka</a>, and the Osaka mosque is happy to point visitors in the right direction. <a href="/destinations/kyoto">Kyoto</a> is following, with halal addresses around the station and the temple districts. One universal tip: Indian and Turkish restaurants are present in every mid-sized city.</p>
+<h2>Mosques and prayer rooms</h2>
+<p>Tokyo Camii (the large Ottoman mosque in Shibuya), the mosques of Osaka, Kobe and Nagoya, and a growing number of <strong>prayer rooms</strong> in airports (Narita, Haneda, Kansai), department stores and some stations. Use <a href="/mosque-near-me">nearest mosque</a> and the <a href="/qibla">Qibla</a> anywhere.</p>
+<h2>Practical advice</h2>
+<p>Check the local halal label or ask « halal desu ka? »; konbini stores (7-Eleven and the like) offer safe meat-free options (salmon onigiri, salads); fish is your ally. Watch out for dashi (stock) and mirin (cooking alcohol) in classic Japanese cooking — halal restaurants replace them.</p>
+<h2>Japan in practice</h2>
+<p>Exceptional safety, cleanliness, flawless trains: Japan is one of the most enjoyable trips there is for a prepared Muslim family. Best seasons: March to May (sakura) and October to November (maple leaves).</p>
+<h2>Tokyo Camii: the Muslim heart of Japan</h2>
+<p>In the Yoyogi-Uehara area (Shibuya), <strong>Tokyo Camii</strong> is the largest mosque in Japan — a jewel of Ottoman architecture built with the support of the Turkish Diyanet, open to visitors and to the daily prayers. Its cultural centre will gladly point you to halal addresses nearby, and the adjoining Turkish market is useful for halal groceries. Other landmarks: the <strong>Otsuka</strong> mosque (Toshima) and <strong>Masjid Okachimachi</strong> near Ueno (check before visiting, opening times vary).</p>
+<h2>Apps and habits that save a trip</h2>
+<p>Japanese community guides (Halal Media Japan, Halal Gourmet Japan) list restaurants labelled by local bodies — always cross-check with recent reviews, the scene moves fast. In konbini stores (7-Eleven, Lawson, FamilyMart), read the labels: salmon or umeboshi onigiri and plain salads without meat-based mayonnaise are safe bets. And keep our three tools to hand: <a href="/prayer-times">prayer times</a>, <a href="/qibla">Qibla</a>, <a href="/mosque-near-me">nearest mosque</a>.</p>
+<h2>The ingredient list to photograph</h2>
+<p><strong>To avoid</strong>: mirin (sweet rice alcohol, everywhere in Japanese sauces), sake and cooking wine, dashi — bonito-based but sometimes carrying questionable additives, so ask; pork (buta) in every form, including the tonkotsu broth of classic ramen. <strong>Usually fine</strong>: raw fish sushi without marinade, vegetable tempura (check for shared oil), soba and udon with a vegetable broth, chicken yakitori in halal venues. Halal restaurants replace mirin and sake with alcohol-free alternatives.</p>
+<h2>Osaka and Kyoto: how it works on the ground</h2>
+<p>In Osaka, the area around <strong>Shin-Osaka and the Nishinari district</strong> is home to Masjid Osaka; on the food side, Dotonbori now has halal takoyaki and okonomiyaki addresses — look for the « halal » signs in the windows, as the scene changes quickly (check exact addresses before going). In Kyoto, the offer clusters around the station and the Gion district: halal ramen, Indian cooking, and several halal wagyu restaurants that appeared with Malaysian tourism. Temples can be visited without any food constraint — just pack a halal picnic for full days at Arashiyama or Fushimi Inari.</p>
+<h2>What halal meals cost in Japan</h2>
+<p>Budget ¥900-1,500 (£5-8) for halal ramen or curry, ¥2,500-4,000 for a mid-range wagyu set, and ¥300-500 for a konbini stopgap. That is barely more than the non-halal equivalent — Japan's extra cost is in accommodation, not on the plate. Book popular halal tables at weekends: tour groups from Southeast Asia fill them.</p>
+<h2>When to go, and Ramadan in Japan</h2>
+<p>March to May (sakura) and October to November (maple leaves) are the finest windows — book early, the whole country travels on those dates. Ramadan in Japan is straightforward: fasting hours are reasonable depending on the season, community iftars at Tokyo Camii welcome travellers, and konbini stores open around the clock cover suhoor. The drink vending machines on every street corner become your allies at maghrib.</p>`,
+    faq: [
+      { q: "Is it hard to eat halal in Japan?", a: "Not any more: Tokyo and Osaka have dozens of halal restaurants (ramen, wagyu, sushi), driven by Muslim tourism from Southeast Asia. You simply need to know the districts (around Tokyo Camii, Asakusa, Shinjuku) and the ingredients to avoid." },
+      { q: "Is fish always halal in Japan?", a: "The fish itself yes, but watch the marinades (mirin, sake) and the sauces. Plain raw fish sushi is generally safe; a simmered dish rarely is without checking." },
+      { q: "Where can I pray in Tokyo?", a: "Tokyo Camii (Yoyogi-Uehara) is the city's main mosque, open for the five prayers. Narita and Haneda airports have prayer rooms, and several department stores add one each year." },
+      { q: "What is mirin and why avoid it?", a: "Mirin is a condiment made from rice alcohol (around 14%) used in countless Japanese sauces, teriyaki above all. Being an alcohol, it is to be avoided — halal restaurants use alcohol-free substitutes." },
+      { q: "Do konbini stores have halal options?", a: "No halal label, but safe meat-free options: salmon or plum onigiri, edamame, plain salads, fruit. Handy between two proper halal addresses." }
+    ],
+  },
 ]
