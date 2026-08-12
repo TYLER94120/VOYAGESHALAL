@@ -26,17 +26,22 @@ Chiffres AVANT le 9 août, 7 jours : voyageshalal.fr 1 970 impressions /
 
 ## À faire
 
-### 1. Les sections « manger » et « prier » manquent sur 287 fiches villes
-**Mesuré le 12 août, après six séries** (Asie, Amérique du Nord, Balkans,
-Europe du Nord, Amérique latine, Afrique subsaharienne) : **67 fiches sur
-354** ont leurs quatre sections. Les 287 autres n'ont que des listes
-d'adresses. Le rythme tient : 29 villes traitées, sans qu'aucun restaurant
-ne soit nommé.
-Prochaine série : **le Golfe et le Levant** (Dubaï, Abou Dabi, Doha,
-Amman, Le Caire), où la difficulté s'inverse encore une fois — tout est
-halal, donc la page doit parler d'autre chose que du halal : alcool en
-zone hôtelière, Ramadan, tenue, horaires. **Dubaï est une des deux mines
-(53 impressions hôtels)** : cette série sert directement la priorité.
+### 1. Les sections « manger » et « prier » manquent sur 282 fiches villes
+**Mesuré le 12 août, après sept séries** (Asie, Amérique du Nord, Balkans,
+Europe du Nord, Amérique latine, Afrique subsaharienne, Turquie) :
+**72 fiches sur 354** ont leurs quatre sections. Les 282 autres n'ont que
+des listes d'adresses. 34 villes traitées, aucun restaurant nommé.
+
+**Correction d'une note fausse** : j'avais inscrit « prochaine série : le
+Golfe et le Levant ». Vérifié avant d'écrire — Dubaï, Abou Dabi, Doha,
+Amman et Le Caire **ont déjà leurs quatre sections**. La série aurait
+réécrit du travail fait.
+
+Prochaine série : **le Maghreb** (Casablanca, Marrakech, Tanger, Alger,
+Tunis) — à vérifier fiche par fiche avant d'écrire, comme ci-dessus. La
+difficulté y est la même qu'en Turquie et inverse de l'Europe : la viande
+ne pose pas de question, ce sont les zones touristiques et les complexes
+hôteliers qui en posent une.
 
 ### 2. Les hôtels d'Istanbul et Dubaï attendent le robot OSM
 **Mesuré** : 41 mentions « information non vérifiée » par page, et
@@ -55,6 +60,29 @@ requêtes ces pages sortent réellement.
 ---
 
 ## Fait
+
+### Turquie hors Istanbul : la viande n'est pas le sujet, l'alcool si — 12 août
+**Avant** : 67 fiches sur 354. **Après : 72.** **751 mots uniques en
+français, 681 en anglais**, sur 10 pages (Ankara, Antalya, Bursa,
+Cappadoce, Izmir).
+
+**Pourquoi cette série et pas une autre** : Istanbul est l'une des deux
+mines (79 impressions sur les requêtes d'hôtels). Ces cinq fiches sont ses
+voisines directes — même pays, mêmes questions, maillage interne naturel.
+
+**Le fait turc** : le porc est quasi absent du circuit courant, donc la
+viande n'est pas le sujet — l'alcool l'est, et il est très inégal selon la
+ville. Antalya vit du « tout compris » avec bar ouvert ; Bursa, ancienne
+capitale ottomane, est à l'opposé ; Izmir est la plus laïque des grandes
+villes. Fait vérifiable et rare, écrit sans aller plus loin : la Turquie a
+un organisme **public** d'accréditation du halal depuis 2017, là où la
+certification est privée partout ailleurs. Aucun hôtel, aucun restaurant,
+aucune certification d'établissement n'est nommé.
+
+**Mesuré après publication** : les 5 fiches en 200 sur les deux domaines,
+bonne langue servie dans le HTML visible à chaque fois, **aucune trace de
+l'autre langue dans le HTML visible**, aucune balise brute, build sans
+erreur.
 
 ### Afrique subsaharienne : la question s'inverse d'une ville à l'autre — 12 août
 **Avant** : 62 fiches sur 354. **Après : 67.** **733 mots uniques en
