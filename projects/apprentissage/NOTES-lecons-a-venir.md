@@ -26,12 +26,19 @@ tous les deux jours, jamais plus.
 | La purification | Les ablutions geste par geste, et ce qui les annule | Les ecoles divergent sur plusieurs points : les presenter, ne pas trancher. |
 | Les moments et les conditions de la priere | Les cinq prieres, leurs moments, ce qui rend la priere valable | Ne pas calculer d'horaires : renvoyer vers voyageshalal.fr. |
 | Memoriser le Coran | Une methode par petits morceaux, avec revisions espacees | Le site sait deja faire des revisions espacees. C'est surtout une methode a ecrire. |
-| Lire l'arabe du Coran | Dechiffrer lettres et voyelles pour lire par soi-meme | Suite logique de la lecon sur l'alphabet. Sans doute le prochain a ouvrir. |
 | Les mots qui reviennent le plus | Comprendre une grande part du Coran avec peu de mots | Les comptes d'occurrences doivent etre verifies un par un, pas repris d'un site. |
 | Le comportement | La parole, la colere, les parents, les voisins | Beaucoup de hadiths courts et solides. Facile a bien sourcer. |
 | Le jeune et le Ramadan | Ce que le jeune demande, et ce qui le rompt | A ouvrir avant Ramadan, pas apres. |
 | Le pelerinage | Les etapes du Hajj et de la Omra, dans l'ordre | Long. Sans doute plusieurs lecons. |
 | Les moments de l'annee | Le vendredi, Ramadan, les dix jours, Achoura | Le vendredi seul ferait deja une bonne lecon. |
+
+## Sorties de la file
+
+- **Lire l'arabe du Coran** — sortie le 12 aout : la lecon « Lire l'arabe : les
+  signes au-dessus et en dessous » est ecrite, relue et sourcee (huit signes,
+  12 cartes, sur les mots d'Al-Fatiha deja publies). La suite de ce theme
+  — dechiffrer les formes selon la place dans le mot, puis le tanwin — n'est
+  pas encore ecrite et ne compte donc pas.
 
 ## Ce qui reste hors du site
 

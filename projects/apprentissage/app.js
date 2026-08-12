@@ -114,6 +114,22 @@
             + 'Ce sont les points qui font le reste.'
     },
     {
+      // Placee juste apres l'alphabet, et pas ailleurs : elle suppose de
+      // reconnaitre les lettres. L'ordre du catalogue est l'ordre propose.
+      id: 'lire-arabe-voyelles',
+      titre: 'Lire l\'arabe : les signes au-dessus et en dessous',
+      url: 'lecon-lire-arabe-voyelles.html',
+      parcours: 'alphabet',
+      minutes: 7,
+      cartes: 12,
+      acquis: 8,
+      unite: 'signe de lecture',
+      unites: 'signes de lecture',
+      publiee: true,
+      resume: 'Tu connais les lettres, et tu ne lis pas encore : il manque huit '
+            + 'petits signes. Sur les mots d\'Al-Fatiha, que tu connais deja.'
+    },
+    {
       id: 'prophetes-coran',
       titre: 'Les 25 prophetes nommes dans le Coran',
       url: 'lecon-prophetes-coran.html',

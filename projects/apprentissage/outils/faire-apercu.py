@@ -21,19 +21,25 @@ import sys
 
 RACINE = pathlib.Path(__file__).resolve().parent.parent
 
+# Les lecons sont LUES DANS LE CATALOGUE, pas ecrites ici.
+#
+# Cette liste etait figee a dix vues. Au cycle 26, une septieme lecon est nee et
+# n'est pas entree dans l'apercu : le fichier hors ligne, qui est le seul moyen
+# de voir le site quand il n'est pas deploye, ne l'aurait pas montree. Une liste
+# ecrite a la main a cote d'une liste qui bouge finit toujours par mentir.
+def _lecons_du_catalogue() -> list:
+    app = (RACINE / "app.js").read_text(encoding="utf-8")
+    bloc = app[app.index("var CATALOGUE = ["):app.index("function nomParcours")]
+    return [(u, u[len("lecon-"):-len(".html")])
+            for u in re.findall(r"url: '(lecon-[^']+\.html)'", bloc)]
+
+
 # Nom de fichier de la page -> nom court de la vue dans l'apercu.
-VUES = [
-    ("index.html", "accueil"),
-    ("lecon-al-fatiha.html", "al-fatiha"),
-    ("lecon-invocations-matin.html", "invocations-matin"),
-    ("lecon-six-piliers-foi.html", "six-piliers-foi"),
-    ("lecon-priere-gestes.html", "priere-gestes"),
-    ("lecon-alphabet-arabe.html", "alphabet-arabe"),
-    ("lecon-prophetes-coran.html", "prophetes-coran"),
-    ("parcours.html", "programme"),
-    ("sourates.html", "sourates"),
-    ("chemin.html", "chemin"),
-]
+VUES = ([("index.html", "accueil")]
+        + _lecons_du_catalogue()
+        + [("parcours.html", "programme"),
+           ("sourates.html", "sourates"),
+           ("chemin.html", "chemin")])
 
 
 def corps_de_page(chemin: pathlib.Path) -> str:

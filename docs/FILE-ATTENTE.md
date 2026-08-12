@@ -46,7 +46,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 >   sans trou ni doublon, 114 noms arabes, 114 noms transcrits, aucune case vide.
 > - **Une lecon se termine entierement au clavier**, sans souris (126
 >   tabulations), et un style de focus visible est bien declare.
-> - **Rien ne deborde a 320 px** (iPhone SE), sur les 10 pages : tout etait
+> - **Rien ne deborde a 320 px** (iPhone SE), sur les pages du site : tout etait
 >   verifie a 414 jusque-la. Zero erreur JavaScript a cette largeur.
 > - **Le poids tient** : 2 a 5 requetes et **66 a 149 Ko** par page, le plus gros
 >   etant `app.js` a 67 Ko.
@@ -98,28 +98,30 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 > - **Zero erreur JavaScript sur seize jours** *(cycle 23)*, 40 lecons jouees,
 >   l'horloge deplacee quinze fois.
 
-1. **Cinq jours sur seize, le site n'a rien du tout a proposer.**
-   *Preuve :* jours 9 a 13, cinq jours de suite, et de nouveau le jour 16 :
-   aucune carte, aucun bouton. Six lecons, un espacement de 2 puis 7 puis 21
-   jours : tout ce qui a ete appris la premiere semaine ne revient qu'aux jours
-   14 et 15, puis plus rien avant le jour 35. Le trou est structurel, pas
-   accidentel.
+1. **Quatre jours sur seize, le site n'a rien du tout a proposer.**
+   *Preuve, re-mesuree au cycle 26 apres la septieme lecon :* jours 11 a 14,
+   quatre jours de suite, et de nouveau le jour 18 : aucune carte, aucun bouton.
+   **C'etait cinq jours (9 a 13) avec six lecons** — une lecon a donc rendu
+   exactement un jour. Sept lecons, un espacement de 2 puis 7 puis 21 jours :
+   ce qui est appris la premiere semaine revient aux jours 15, 16 et 17, puis
+   plus rien avant le jour 36. Le trou est structurel, pas accidentel.
    S'y ajoute une promesse : la carte vide dit **« Reviens demain : la prochaine
-   lecon arrive bientot. »** Or `CATALOGUE` ne contient **que six entrees, les
-   six publiees** — aucune lecon n'arrive, ni demain ni le jour d'apres. Le
+   lecon arrive bientot. »** Or `CATALOGUE` ne contient **que les sept lecons
+   publiees** — rien n'arrive demain, et « bientot » n'est pas verifiable. Le
    fichier `NOTES-lecons-a-venir.md` pose pourtant la regle inverse : « on
    n'affiche que ce qui existe ».
-   *Deux voies, et la premiere ne se force pas :* ecrire des lecons — une tous
-   les deux jours au plus, jamais plus vite, c'est la regle. Ou revoir
-   l'espacement pour que les six lecons existantes couvrent les trous. La
-   promesse « la prochaine lecon arrive bientot », elle, se corrige aujourd'hui.
+   *La voie est ouverte et elle ne se force pas :* une lecon tous les deux jours
+   au plus, jamais plus vite. Au taux de change mesure, il en faut **quatre de
+   plus** pour fermer les jours 11 a 14 — a re-mesurer a chaque fois plutot qu'a
+   extrapoler, l'espacement redistribue les trous a chaque ajout. La promesse
+   « la prochaine lecon arrive bientot », elle, se corrige aujourd'hui.
 
-2. **Le septieme jour coute trois fois plus cher que les six premiers.**
-   *Preuve :* mesure jour par jour, en fermant l'anneau chaque jour.
-   Jours 1 a 6 : **une lecon, ~7 min en moyenne**, l'anneau se ferme.
-   Jour 7 : **trois lecons, ~18 min**. Jour 8 : **trois lecons, ~21 min**. La
-   marche se produit exactement le jour ou se joue la seule mesure de succes du
-   projet — « sept jours d'affilee ». Une revision compte pour un tiers de
+2. **La marche a trois lecons existe toujours, un jour plus loin.**
+   *Preuve, re-mesuree au cycle 26 :* jours 1 a **7** : une lecon, ~6 min en
+   moyenne, l'anneau se ferme. Jour 8 : **trois lecons, ~18 min**. Jour 9 :
+   **trois lecons, ~20 min**. La septieme lecon a retire la marche du septieme
+   jour — les sept jours qui portent la mesure de succes sont maintenant sept
+   jours identiques — mais elle l'a **deplacee au huitieme**, pas supprimee. Une revision compte pour un tiers de
    lecon (`OBJ_REVISIONS = 3`), et le septieme jour il n'y a plus que des
    revisions.
    La carte n'en propose qu'une a la fois : il faut revenir a l'accueil deux
@@ -164,6 +166,73 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 ---
 
 ## Fait
+
+- **Une septieme lecon — « Lire l'arabe : les signes au-dessus et en dessous »**
+  *(12 aout, cycle 26)* — la premiere depuis le 8 aout, et la premiere ecrite
+  parce qu'une **mesure** la demandait et non parce qu'elle manquait a une liste.
+  Choisie sans rien inventer : `NOTES-lecons-a-venir.md` la designait deja
+  comme « sans doute le prochain a ouvrir », elle est purement **linguistique**
+  — donc voie rapide, aucun avis juridique, aucun hadith a peser.
+  *Ce que ca change, mesure sur les memes seize jours, meme instrument :*
+  - **Le septieme jour coutait 3 lecons et ~18 min ; il coute maintenant
+    1 lecon et ~8 min.** Les sept jours qui portent la mesure de succes sont
+    desormais **sept jours identiques** : une lecon, 5 a 8 minutes. La marche
+    n'a pas disparu, elle s'est deplacee au huitieme jour.
+  - **Jours vides sur seize : 5 avant, 4 apres** (ils passent des jours 9-13 aux
+    jours 11-14).
+  - **Le taux de change est donc connu : une lecon = un jour vide en moins.**
+    Il faudra le re-mesurer a chaque lecon plutot que l'extrapoler.
+  *Zero texte arabe saisi a la main.* Les neuf mots cites — بِسْمِ, اللَّهِ,
+  الْحَمْدُ, الرَّحْمَٰنِ, مَالِكِ, الْعَالَمِينَ, إِيَّاكَ, الْمَغْضُوبِ,
+  الدِّينِ — sont **extraits par script du texte d'Al-Fatiha deja publie et
+  relu**, et verifies presents avant ecriture ; les huit signes isoles sont
+  composes **point de code par point de code** et leurs noms Unicode
+  controles un par un. Un signe faux dans un texte coranique n'est pas une
+  coquille, et une lecon ecrite a la main en aurait pris le risque.
+  *Verifie apres coup :* **33 groupes arabes, 33 dans un element
+  `lang="ar" dir="rtl"`, zero nu**. Une seule source citee, au format du site :
+  « Coran, sourate Al-Fatiha (1), verset 1. » 12 cartes annoncees, 12 affichees,
+  3 questions, 3 bonnes reponses. Elle se place bien **apres** l'alphabet dans
+  l'ordre propose — elle en depend.
+  *Et la lecon telle que je l'avais d'abord ecrite etait fautive :* sa premiere
+  question tombait **apres 5 tapes**, alors que la regle du site — posee au
+  cycle 3 — est **3 au plus**, et que les six autres lecons sont a 2 ou 3. C'est
+  mon propre test qui l'a attrapee. J'ai fusionne la fatha et la kasra en une
+  seule carte, ce qui ramene la question a **3 tapes** et donne, au passage, la
+  meilleure formulation de la lecon : c'est le **meme trait**, au-dessus il fait
+  <em>a</em>, en dessous <em>i</em>. La contrainte a ameliore le contenu.
+  *Et deux pieges de ma methode, du meme sang que la copie figee du cycle 24 :*
+  - neuf de mes suites portaient une liste de pages **ecrite en dur**. Une
+    onzieme page n'y serait jamais entree, et aurait donc echappe au controle du
+    contraste, des cibles au doigt, du sans-JavaScript, du ton, des titres. Les
+    neuf sont a jour : **11 pages examinees, plus 10** ;
+  - deux suites portaient un **nombre** deduit du catalogue et recopie a la main
+    — « les 10 pages », « il reste 5 autres lecons ». Ajouter une lecon les a
+    fait **echouer 6 fois**, sans qu'un seul defaut du site soit en cause. Elles
+    **calculent** maintenant ces nombres depuis `CATALOGUE`.
+  Au total, ajouter une lecon a fait **echouer 12 controles dans 6 suites**, et
+  **aucun** ne venait du site — a une exception, la question trop tardive
+  ci-dessus. Troisieme cycle de suite ou le defaut est dans l'instrument. J'ai
+  donc arrete de les reparer un par un : il existe maintenant **une source
+  unique**, `cat.mjs`, qui lit le catalogue et d'ou tous les tests tirent la
+  liste des lecons, le nombre de pages, les minutes et le total appris. **Plus
+  aucun test n'ecrit un nombre qui vit dans `app.js`.**
+  *Et le pire des quatre, trouve en dernier :* **mon lanceur de regression
+  pouvait rater un echec.** Il lisait les trois dernieres lignes de chaque suite
+  et y cherchait « TOUT PASSE » ou « ECHEC ». Une suite est tombee avec cinq
+  controles rouges dont le resume tenait en six lignes&nbsp;: `tail -3` l'a
+  coupe, et j'ai lu **« 19 suites, 0 echec » sur une regression rouge**. Le
+  lanceur decide desormais sur le **code de sortie** de chaque suite, jamais sur
+  du texte, et nomme celles qui tombent. Un lanceur qui peut rater un echec est
+  pire qu'aucun lanceur : il fabrique de la confiance.
+  *Et un cinquieme, celui-la sur un livrable :* le generateur d'apercu portait
+  lui aussi **dix vues ecrites a la main**. La septieme lecon n'est pas entree
+  dans le fichier hors ligne — le seul moyen de voir le site tant qu'il n'est
+  pas deploye. Il lit maintenant le catalogue : **11 vues**. C'est le defaut le
+  plus grave des cinq, parce qu'il touchait ce que Mohamed ouvrirait.
+  *Ce que « Mon chemin » a prouve au passage :* le site s'adapte de lui-meme —
+  **8 cartes, 8 liens, 7 etapes, 6 courbes**, sans une ligne a changer. C'etaient
+  bien les tests qui comptaient six.
 
 - **L'ecran ne reclame plus une lecon qu'il vient de dire inexistante**
   *(12 aout, cycle 25)* — mesure avant/apres sur les seize memes jours, meme
