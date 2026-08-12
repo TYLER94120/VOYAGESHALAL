@@ -44,8 +44,9 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 >
 > **L'audit du cycle 29 a suivi la personne pressee** — sept lecons d'affilee le
 > meme jour, le chemin que la mesure du cycle 28 avait designe et que personne
-> n'avait parcouru. Deux elements en sortent, les **1 et 2** ci-dessous, et six
-> promesses en sont ressorties saines.
+> n'avait parcouru. Deux elements en sont sortis : **le premier est fait**
+> (cycle 30), le second est l'element 1 ci-dessous. Six promesses en sont
+> ressorties saines.
 > *Et j'ai failli publier un constat faux, la encore par ma faute :* ma premiere
 > passe annoncait « le site redemande le rendez-vous sept fois ». C'etait vrai
 > pour ma personne simulee, qui ne repondait jamais a la question. Une personne
@@ -128,24 +129,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 > - **Rien ne casse au bout de sept lecons enchainees** *(cycle 29)* : aucun
 >   debordement a 414 px, **zero erreur JavaScript**.
 
-1. **« Ta lecon du jour » est ecrit sept fois le meme jour.**
-   *Preuve :* sept lecons enchainees le 7 septembre simule, l'etiquette de la
-   carte relevee avant chacune. **7 cartes sur 7 portent « TA LECON DU JOUR »** —
-   donc six fois de trop. Des la deuxieme, l'etiquette est fausse : ce n'est plus
-   la lecon du jour, c'est la deuxieme, la troisieme, la septieme.
-   Ce n'est pas un detail de vocabulaire. La doctrine de l'accueil, ecrite dans
-   `index.html`, est **« l'accueil ne montre qu'une seule chose : la lecon du
-   jour, et un bouton »**. Si sept lecons tiennent dans une journee, cette phrase
-   ne decrit pas le site — et c'est exactement ce mecanisme qui vide le catalogue
-   en 46 minutes (element 3).
-   *A trancher en meme temps, et c'est une vraie question de produit :* faut-il
-   seulement **renommer** l'etiquette a partir de la deuxieme (« Une lecon de
-   plus »), ou **arreter de proposer du neuf** une fois l'objectif atteint ? La
-   premiere voie ne coute qu'une phrase juste ; la seconde retient quelqu'un de
-   motive, ce que le site n'a jamais fait a personne. Je recommande la premiere,
-   et de mesurer la seconde avant d'y toucher.
-
-2. **Un refus n'est pas enregistre : « Pas d'heure fixe » et la question revient
+1. **Un refus n'est pas enregistre : « Pas d'heure fixe » et la question revient
    six fois.**
    *Preuve :* trois comportements mesures a la fin de chaque lecon, sept lecons
    d'affilee. Elle **choisit** un repere → la question est posee **1 fois sur
@@ -158,7 +142,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    Un mecanisme qui ne prend pas un non pour un non est exactement ce que ma
    competence `faire-revenir-sans-culpabiliser` interdit.
 
-3. **Qui avance vite trouve un site vide : 15 jours sur 18.**
+2. **Qui avance vite trouve un site vide : 15 jours sur 18.**
    *Preuve, re-mesuree au cycle 28 sur deux comportements — un seul aurait
    menti :* une personne qui **suit l'objectif du jour** et s'arrete ne rencontre
    plus **aucun** jour vide sur 18 (c'etait 5 avant que `OBJ_REVISIONS` passe a
@@ -180,7 +164,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    chaque fois plutot qu'il ne s'extrapole : l'espacement redistribue les trous a
    chaque ajout.
 
-4. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
+3. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
    *Preuve :* c'est la piece la plus puissante de la liste du responsable, et
    elle est la seule non commencee. Le blocage est reel et non technique : une
    notification calee sur une heure de priere suppose de **connaitre** cette
@@ -192,7 +176,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    **N'entre pas en travaux avant arbitrage** — c'est une decision, pas un
    chantier.
 
-5. **Aucune mesure d'entree, et un traceur est interdit ici.**
+4. **Aucune mesure d'entree, et un traceur est interdit ici.**
    *Preuve :* `grep -ril "gtag\|analytics\|plausible\|matomo\|umami"` sur toutes
    les pages et les trois fichiers JavaScript ne rend **rien**. Or le pied de
    page promet « Ta progression reste sur ton telephone. Aucun compte, aucun
@@ -201,7 +185,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    journaux). Bloque jusqu'au deploiement — question posee aux trois autres
    agents dans le brainstorm des passerelles.
 
-6. **La recitation n'a jamais ete entendue par personne.**
+5. **La recitation n'a jamais ete entendue par personne.**
    *Preuve :* `halalgpt.fr:443` et `cdn.islamic.network:443` sont refuses par la
    politique reseau de l'atelier (403 au CONNECT, journalise par le proxy,
    verifie trois fois). Le mecanisme est teste avec un recitateur simule — 7
@@ -213,6 +197,41 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 ---
 
 ## Fait
+
+- **L'etiquette de la carte dit enfin la verite** *(12 aout, cycle 30)* —
+  **avant : « TA LECON DU JOUR » sur 7 cartes sur 7** quand on enchaine sept
+  lecons le meme jour, et **« LA LECON DU JOUR » sur une revision**. **Apres :
+  « du jour » une seule fois sur les sept**, les six suivantes disent « une lecon
+  de plus », et une revision s'annonce comme une revision.
+  *Le defaut etait a deux endroits, et je n'avais vu que le premier.* La carte de
+  l'accueil calculait mal ; mais la meme phrase etait **ecrite en dur dans les
+  sept fichiers de lecon**, donc fausse sur chaque revision, meme la premiere de
+  la journee. L'etiquette statique reste « La lecon du jour » — c'est le bon repli
+  **sans JavaScript**, ou le site ne sait rien de la journee — et le code la
+  corrige quand il sait.
+  *Quatre situations, deux questions, aucune qui felicite :*
+  | deja vue ? | deja quelque chose aujourd'hui ? | l'accueil dit | la lecon dit |
+  |---|---|---|---|
+  | non | non | Ta lecon du jour | La lecon du jour |
+  | non | oui | Une lecon de plus | Une lecon de plus |
+  | oui | non | Ta revision du jour | La revision du jour |
+  | oui | oui | Une revision de plus | Une revision de plus |
+  *On ne numerote pas.* « Ta 5e lecon aujourd'hui » serait exact et ce serait pire :
+  un rang s'installe comme un score, et un score sur une pratique religieuse est
+  precisement ce que ce site s'interdit. « Une lecon de plus » dit le fait sans
+  le noter.
+  *Ce que ce cycle NE fait pas, et c'est delibere :* il ne retient personne. La
+  deuxieme voie que j'avais posee — arreter de proposer du neuf une fois
+  l'objectif atteint — n'est pas prise. Elle empecherait quelqu'un de motive
+  d'apprendre, et je n'ai aucune mesure qui dise que c'est un bien. Le site vide
+  toujours son catalogue en 46 minutes si on le lui demande : c'est l'element 2.
+  *Verrous :* `test-etiquette.mjs`, nouveau, verifie les **quatre situations aux
+  deux endroits** — huit etiquettes — puis rejoue les sept lecons enchainees.
+  **Sur la version d'avant, il echoue 7 fois.**
+  *Une erreur de mon test, corrigee avant de compter :* ma premiere passe
+  annoncait 10 controles rouges. Trois etaient faux — je comparais avec la casse
+  alors que le CSS passe l'etiquette en majuscules, donc `innerText` rend « TA
+  LECON DU JOUR ». Le meme piege qu'au cycle 21. **Le chiffre publie est 7.**
 
 - **`OBJ_REVISIONS` passe de 3 a 1 : une journee vaut une journee** *(12 aout,
   cycle 28)* — j'avais classe cet element « a arbitrer, pas a coder », en ecrivant

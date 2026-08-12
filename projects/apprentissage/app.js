@@ -939,7 +939,9 @@ function ippRendreAccueil(racine) {
   } else {
     var l = choix.lecon;
     var revision = (choix.mode === 'revision');
-    q('carte-eyebrow').textContent = revision ? 'Ta revision du jour' : 'Ta lecon du jour';
+    // « du jour » n'est vrai que la premiere fois de la journee.
+    q('carte-eyebrow').textContent =
+      ippEtiquette(revision, IPP.faitAujourdhui(), true);
     q('carte-titre').textContent = l.titre;
     q('carte-meta').innerHTML =
       '<span>' + l.minutes + ' min</span><span class="puce"></span>'
@@ -1751,6 +1753,15 @@ function ippDemarrerLecon(id, racine) {
   var TOTAL = etapes.length;
   var CONTENU = TOTAL - 1;
 
+  /* L'etiquette de la premiere carte est ecrite en dur dans le fichier — « La
+     lecon du jour » — ce qui est le bon repli sans JavaScript, mais faux des
+     qu'on ouvre une revision ou une deuxieme lecon dans la meme journee. On la
+     corrige ici, avec le meme vocabulaire que la carte de l'accueil. */
+  var etiq = q('lecon-etiquette');
+  if (etiq) {
+    etiq.textContent = ippEtiquette(!!IPP.fiche(id), IPP.faitAujourdhui(), false);
+  }
+
   // La lecon se joue comme une LISTE de cartes, pas comme un compteur qui
   // monte. C'est ce qui permet a une carte manquee d'etre remise a la fin :
   // on ajoute au bout de la liste, on n'a jamais a reculer. La barre de
@@ -1956,6 +1967,36 @@ function ippSuiteSansLecon() {
   if (!ech) { return 'C\'est la derniere lecon disponible aujourd\'hui.'; }
   return 'C\'est la derniere lecon disponible. Ta prochaine revision\u00a0: '
        + IPP.ditEcheance(ech) + '.';
+}
+
+
+/* L'ETIQUETTE, ET POURQUOI ELLE DOIT SE CALCULER.
+ *
+ * Elle disait « Ta lecon du jour ». Mesure du cycle 29, sept lecons enchainees
+ * le meme jour : **7 cartes sur 7** portaient cette etiquette — six fois de trop.
+ * Des la deuxieme, ce n'est plus la lecon du jour, c'est une lecon de plus. Et
+ * la meme phrase etait ecrite en dur dans les sept fichiers de lecon, donc
+ * fausse aussi sur chaque revision.
+ *
+ * La doctrine de l'accueil est « une seule chose : la lecon du jour, et un
+ * bouton ». Tant que sept lecons tiennent dans une journee, l'etiquette doit
+ * dire laquelle on ouvre — pas repeter une phrase qui a cesse d'etre vraie.
+ *
+ * Deux questions, quatre reponses, aucune qui felicite ni qui compte les points :
+ *   deja vue ?  deja quelque chose aujourd'hui ?
+ *   non   non  -> La lecon du jour
+ *   non   oui  -> Une lecon de plus
+ *   oui   non  -> La revision du jour
+ *   oui   oui  -> Une revision de plus
+ *
+ * On ne numerote pas (« ta 5e lecon ») : un rang s'installe comme un score, et
+ * un score sur une pratique religieuse est exactement ce qu'on s'interdit.
+ */
+function ippEtiquette(revision, enPlus, possessif) {
+  'use strict';
+  var quoi = revision ? 'revision' : 'lecon';
+  if (enPlus) { return 'Une ' + quoi + ' de plus'; }
+  return (possessif ? 'Ta ' : 'La ') + quoi + ' du jour';
 }
 
 
