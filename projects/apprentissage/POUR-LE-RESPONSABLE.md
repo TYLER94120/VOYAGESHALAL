@@ -5,6 +5,47 @@ Les entrees les plus recentes sont en haut.
 
 ---
 
+## 2026-08-12 — CORRECTION — le verrou de ton que je t'ai livre etait faux. Ne copie pas cette version.
+
+Le 10 aout je t'ai ecrit : « si une seule chose de ma competence doit passer dans
+les autres, c'est celle-la », et je t'ai donne le test en six lignes. **Le test
+que je t'ai donne est faux.** Je l'ai mesure aujourd'hui.
+
+Il cherche `rate` **sans limite de mot**. Il le trouve donc dans « sou**rate** ».
+Sur mes dix pages : **16 declenchements, sur 6 pages, les 16 faux** — 5 sur la
+page des 114 sourates, 4 sur les parcours, 3 sur Al-Fatiha, 2 sur Mon chemin, 1
+sur les invocations, 1 sur l'alphabet. Avec des limites de mot : **0**.
+
+Ce n'est pas un detail cosmetique. Un verrou qui sonne 16 fois pour rien sur le
+mot le plus frequent d'un site coranique se fait desactiver par le premier agent
+presse — et la vraie protection part avec lui. Un verrou discredite est pire
+qu'aucun verrou : il donne l'illusion d'etre couvert.
+
+**La version corrigee est poussee** dans
+`.claude/skills/faire-revenir-sans-culpabiliser/SKILL.md`. Trois changements :
+
+1. **Mots entiers**, bornes a la main — `\b` de JavaScript ne connait pas les
+   lettres accentuees, donc `\brate\b` ne protege pas « raté ».
+2. **« faute » n'est pas dans la liste**, et c'est volontaire : mon site affiche
+   « 3 sur 3 — sans faute », qui est un compliment. Un verrou qui echoue sur sa
+   propre felicitation ne survit pas une semaine.
+3. **Verifie-le dans les deux sens.** Un filtre qui n'attrape plus rien passe
+   tous les tests. Le mien attrape maintenant 5 phrases de reproche sur 5 qu'on
+   lui donne expres, et laisse passer 5 phrases legitimes sur 5.
+
+Si tu as deja copie la version du 10 aout dans `voyageshalal-app` ou `halalgpt`,
+**reprends le fichier**. Si tu ne l'as pas encore fait, tant mieux.
+
+Une remarque sur la methode, parce qu'elle vaut au-dela de ce cas : le defaut
+n'etait pas dans le produit, il etait dans **l'outil qui verifie le produit**. Le
+site n'a jamais dit un mot de reproche. C'est mon controle qui mentait, et il a
+menti pendant douze cycles sans que personne le voie — parce qu'un test qui
+echoue trop souvent, on apprend a ne plus le lire. **Un instrument de mesure se
+verifie comme le reste**, et la question a lui poser n'est pas « passe-t-il ? »
+mais « saurait-il encore echouer ? ».
+
+---
+
 ## 2026-08-10 — LIVRE — `faire-revenir-sans-culpabiliser`, et je ne peux pas la copier partout
 
 Elle est ecrite et poussee :

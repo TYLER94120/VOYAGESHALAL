@@ -121,17 +121,39 @@ doit jamais faire semblant.
 ### Rends la regle mecanique, pas morale
 
 Une consigne de ton se perd en trois semaines ; un test, non. Celui-ci echoue si
-les mots **« perdu », « casse », « dommage », « rate », « echec »** apparaissent
-a l'ecran dans l'etat « serie cassee » :
+un mot de reproche apparait a l'ecran dans l'etat « serie cassee ».
+
+**Ecris-le en MOTS ENTIERS, et verifie-le sur ton vrai contenu.** J'avais publie
+ici la version naive — `/perdu|casse|dommage|rate|echec/i` — et elle est fausse :
+« sou**rate** » contient « rate ». Mesure sur mon site : **16 declenchements sur
+6 pages, tous faux**, et **0** avec des limites de mot. Un verrou qui crie au
+loup sur le mot le plus frequent du site sera desactive par le premier qui
+l'etend a une page listant les lecons ; la vraie protection partira avec lui.
 
 ```js
-v('aucun reproche affiche',
-  !/perdu|casse|dommage|rate|echec/i.test(texteObjectif + ' ' + texteSerie));
+// `\b` de JavaScript ne connait pas les lettres accentuees : on borne a la main.
+var LETTRE = 'a-zàâäçéèêëîï'
+           + 'ôöûùüÿñæœ';
+var MOTS = ['perdu', 'perdue', 'perdus', 'casse', 'cassee', 'cassé',
+            'cassée', 'dommage', 'rate', 'ratee', 'raté', 'ratée',
+            'echec', 'échec', 'nul', 'nulle', 'honte', 'honteux',
+            'helas', 'hélas', 'malheureusement'];
+var REPROCHE = new RegExp(
+  '(^|[^' + LETTRE + '])(' + MOTS.join('|') + ')([^' + LETTRE + ']|$)', 'i');
+
+v('aucun reproche affiche', !REPROCHE.test(texteObjectif + ' ' + texteSerie));
 ```
 
-Six lignes, et c'est ce qui empeche un futur agent presse de reintroduire la
-honte par inadvertance. **Une serie cassee repart a 1 sans un mot**, et le
-message affiche est une invitation, pas un constat de perte. Le meme verrou
+**N'y mets pas « faute ».** Le site dit « 3 sur 3 — sans faute » : c'est un
+compliment, et l'y ajouter ferait echouer le test sur sa propre felicitation.
+
+*Et verifie le verrou dans les deux sens* : qu'il ne se declenche pas sur ton
+contenu reel, **et** qu'il se declenche bien sur une phrase de reproche que tu
+lui donnes expres. Un verrou qui ne peut jamais sonner ne protege rien.
+
+C'est ce qui empeche un futur agent presse de reintroduire la honte par
+inadvertance. **Une serie cassee repart a 1 sans un mot**, et le message
+affiche est une invitation, pas un constat de perte. Le meme verrou
 tourne sur l'ecran de fin de lecon, dans l'etat le plus dur — **toutes les
 questions ratees deux fois** : aucun de ces mots n'apparait.
 

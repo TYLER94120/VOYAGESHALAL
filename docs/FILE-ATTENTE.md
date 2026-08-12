@@ -22,8 +22,9 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 > personne** sur quatre chemins jamais parcourus ainsi : ses deux elements sont
 > **faits** (cycles 19 et 20), et trois promesses en sont ressorties saines.
 > **L'audit du cycle 21** a regarde « Mon chemin » avec une vraie progression :
-> il en sort l'element 1 — un defaut de mon propre outillage — et quatre
-> promesses verifiees saines.
+> son element — un defaut de mon propre outillage — est **fait** (cycle 22), et
+> quatre promesses en sont ressorties saines. Les trois qui restent sont les
+> trois bloques : le prochain cycle sera un audit.
 >
 > **Mesure aux cycles 6, 10, 13, 16, 18 et 21, et rien a corriger** — a ne pas
 > re-mesurer sans raison :
@@ -65,27 +66,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 >   cinq jours pour en regagner un. » Trou de trois jours : la serie repart a 1,
 >   « ton record est de 3 », et **aucun stock de grace n'est annonce a l'avance**.
 
-1. **Le verrou anti-culpabilite se declenche sur le mot « sourate ».**
-   *Preuve :* mesure du 11 aout, cycle 21 — le filtre de ton, tel qu'il est ecrit
-   dans mes tests **et publie dans la skill `faire-revenir-sans-culpabiliser`**,
-   cherche `perdu|cass[ée]|dommage|rat[ée]|[ée]chec|nul|honte` **sans limite de
-   mot**. Or « sou**rate** » contient « rate ». Sur les 10 pages servies :
-   **16 declenchements, sur 6 pages** — 5 sur `sourates.html`, 4 sur
-   `parcours.html`, 3 sur `al-fatiha`, 2 sur `chemin.html`, 1 sur deux autres.
-   **Tous faux.** Avec le meme filtre en **mots entiers** : **0**.
-   *Pourquoi c'est plus grave qu'un test bavard :* c'est le mecanisme cense
-   empecher un futur agent de reintroduire la honte. Un verrou qui crie au loup
-   sur le mot le plus frequent d'un site coranique sera desactive ou affaibli par
-   le premier qui l'etend a une page listant les lecons — et la vraie protection
-   partira avec. La skill le **publie tel quel** aux autres depots de l'empire :
-   le defaut se recopie.
-   *Pourquoi il n'a jamais explose jusqu'ici :* les tests qui l'utilisent lisent
-   le texte **visible** d'un ecran de fin de lecon, ou le mot « sourate »
-   n'apparait pas. Il dormait ; il n'etait pas juste pour autant.
-   *A corriger aux deux endroits*, avec la mesure des deux cotes : les tests, et
-   le texte de la skill.
-
-2. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
+1. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
    *Preuve :* c'est la piece la plus puissante de la liste du responsable, et
    elle est la seule non commencee. Le blocage est reel et non technique : une
    notification calee sur une heure de priere suppose de **connaitre** cette
@@ -97,7 +78,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    **N'entre pas en travaux avant arbitrage** — c'est une decision, pas un
    chantier.
 
-3. **Aucune mesure d'entree, et un traceur est interdit ici.**
+2. **Aucune mesure d'entree, et un traceur est interdit ici.**
    *Preuve :* `grep -ril "gtag\|analytics\|plausible\|matomo\|umami"` sur toutes
    les pages et les trois fichiers JavaScript ne rend **rien**. Or le pied de
    page promet « Ta progression reste sur ton telephone. Aucun compte, aucun
@@ -106,7 +87,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    journaux). Bloque jusqu'au deploiement — question posee aux trois autres
    agents dans le brainstorm des passerelles.
 
-4. **La recitation n'a jamais ete entendue par personne.**
+3. **La recitation n'a jamais ete entendue par personne.**
    *Preuve :* `halalgpt.fr:443` et `cdn.islamic.network:443` sont refuses par la
    politique reseau de l'atelier (403 au CONNECT, journalise par le proxy,
    verifie trois fois). Le mecanisme est teste avec un recitateur simule — 7
@@ -118,6 +99,33 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 ---
 
 ## Fait
+
+- **Le verrou anti-culpabilite ne crie plus au loup sur le mot « sourate »**
+  *(12 aout, cycle 22)* — **avant : 16 declenchements sur 6 pages, les 16 faux.
+  Apres : 0.** Le filtre cherchait `rate` sans limite de mot ; il le trouvait
+  dans « sou**rate** » — 5 fois sur la page des 114 sourates, 4 sur les
+  parcours, 3 sur Al-Fatiha, 2 sur Mon chemin, 1 sur les invocations, 1 sur
+  l'alphabet. Le defaut n'etait pas dans le site : il etait dans **mon propre
+  outillage**, dans la regle ecrite du dossier de competence. Mesure faite sur
+  les deux filtres cote a cote, memes 10 pages, meme instant.
+  *Pourquoi ca comptait :* un verrou qui sonne 16 fois pour rien sur le mot le
+  plus frequent d'un site coranique se fait desactiver — et la vraie protection
+  part avec lui. Ce n'etait pas un faux positif, c'etait une alarme en train de
+  perdre sa credibilite.
+  *Corrige a trois endroits*, pas un : la regle dans
+  `.claude/skills/faire-revenir-sans-culpabiliser/`, et les **deux** tests qui
+  la recopiaient (`test-reprise.mjs`, `test-sans-memoire.mjs`) — une regle
+  fausse copiee trois fois est fausse trois fois.
+  *Verrou :* `test-ton.mjs`, nouveau, verifie le filtre **dans les deux sens** —
+  car un filtre qui n'attrape plus rien passe tous les tests. Il attrape **5/5**
+  phrases de reproche qu'on lui donne expres (« Dommage, tu as perdu ta
+  serie. », « Ta serie est cassee. », « Echec : recommence a zero. »…) et laisse
+  passer **5/5** phrases legitimes (« Sourate Al-Fatiha, verset par verset »,
+  « 3 sur 3 — sans faute »). Puis il balaye **10 pages**, **6 etats difficiles**
+  (serie cassee vue de deux endroits, grace consommee, jamais rien fait, tout
+  fait) et **une lecon ratee a chaque question** — ecran de fin « 0 sur 3 » :
+  **aucun mot de reproche nulle part**. Le mot « faute » est explicitement hors
+  de la liste : le site dit « sans faute », et c'est un compliment.
 
 - **L'accueil ne nomme plus jamais deux lecons a la fois** *(11 aout, cycle
   20)* — **avant : quand la carte du jour etait deja une revision, la ligne en
