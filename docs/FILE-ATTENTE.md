@@ -105,16 +105,13 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    exactement un jour. Sept lecons, un espacement de 2 puis 7 puis 21 jours :
    ce qui est appris la premiere semaine revient aux jours 15, 16 et 17, puis
    plus rien avant le jour 36. Le trou est structurel, pas accidentel.
-   S'y ajoute une promesse : la carte vide dit **« Reviens demain : la prochaine
-   lecon arrive bientot. »** Or `CATALOGUE` ne contient **que les sept lecons
-   publiees** — rien n'arrive demain, et « bientot » n'est pas verifiable. Le
-   fichier `NOTES-lecons-a-venir.md` pose pourtant la regle inverse : « on
-   n'affiche que ce qui existe ».
+   La promesse creuse qui accompagnait ces jours — « la prochaine lecon arrive
+   bientot » — **est retiree** (cycle 27) : la carte annonce desormais la date
+   reelle de la prochaine revision. Le trou, lui, reste un trou.
    *La voie est ouverte et elle ne se force pas :* une lecon tous les deux jours
    au plus, jamais plus vite. Au taux de change mesure, il en faut **quatre de
    plus** pour fermer les jours 11 a 14 — a re-mesurer a chaque fois plutot qu'a
-   extrapoler, l'espacement redistribue les trous a chaque ajout. La promesse
-   « la prochaine lecon arrive bientot », elle, se corrige aujourd'hui.
+   extrapoler, l'espacement redistribue les trous a chaque ajout.
 
 2. **La marche a trois lecons existe toujours, un jour plus loin.**
    *Preuve, re-mesuree au cycle 26 :* jours 1 a **7** : une lecon, ~6 min en
@@ -166,6 +163,32 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 ---
 
 ## Fait
+
+- **La promesse « la prochaine lecon arrive bientot » est remplacee par une date
+  vraie** *(12 aout, cycle 27)* — **avant : 27 ecrans portaient cette promesse
+  sur dix-huit jours joues** (12 fois sur la carte des jours vides, 15 fois sur
+  l'ecran de fin de la derniere lecon disponible). **Apres : 0.** Et les 27
+  portent maintenant un rendez-vous **calcule** : « Ta prochaine revision :
+  demain. »
+  *Pourquoi c'etait grave :* `CATALOGUE` ne contient que les lecons publiees.
+  Aucune n'etait programmee, ni demain ni le jour d'apres — « bientot » n'etait
+  verifiable par personne. Et `NOTES-lecons-a-venir.md` pose exactement la regle
+  inverse, ecrite par moi : **« on n'affiche que ce qui existe »**. La promesse
+  tombait de surcroit au pire endroit possible : juste apres l'effort, sur
+  l'ecran de fin.
+  *Ce qu'on dit a la place existe vraiment* : la date de la prochaine revision
+  est ecrite dans la progression, calculee par l'espacement. Trois formulations,
+  la plus courte qui reste exacte : **« demain »** a J+1, **le nom du jour**
+  jusqu'a J+6, **« dans N jours »** au-dela — un nom de jour a plus d'une semaine
+  serait ambigu. Et quand meme cette date n'existe pas, **le site se tait** au
+  lieu d'inventer une suite.
+  *Verrous :* `test-serie.mjs` passe de 38 a **48 controles de logique pure** —
+  les trois formulations, leurs bornes exactes (J+6 donne un jour, J+7 compte),
+  une echeance passee ignoree, aujourd'hui ignore, la plus proche qui gagne, et
+  un identifiant inconnu du catalogue qui ne pilote rien. Et
+  `test-promesse.mjs`, nouveau, joue **dix-huit jours au navigateur** et compte
+  les deux populations d'ecrans, puis verifie les trois formulations sur la carte
+  elle-meme. **Sur la version d'avant, il echoue 9 fois.**
 
 - **Une septieme lecon — « Lire l'arabe : les signes au-dessus et en dessous »**
   *(12 aout, cycle 26)* — la premiere depuis le 8 aout, et la premiere ecrite

@@ -5955,6 +5955,46 @@ if (typeof module !== 'undefined' && module.exports) { module.exports = ippCoran
     return sortie;
   }
 
+  /* ---------- la prochaine echeance ---------------------------------------
+     Pour remplacer une promesse par un fait.
+
+     Le site disait « Reviens demain : la prochaine lecon arrive bientot » les
+     jours ou il n'avait rien — quatre jours sur seize. Or `CATALOGUE` ne
+     contient que les lecons publiees : aucune lecon n'est programmee, ni demain
+     ni le jour d'apres. « Bientot » n'etait verifiable par personne, et
+     `NOTES-lecons-a-venir.md` pose exactement la regle inverse : on n'affiche
+     que ce qui existe.
+
+     Ce qui EST verifiable, c'est la date de la prochaine revision : elle est
+     ecrite dans la progression, calculee par l'espacement. On la dit. Un rendez-
+     vous vrai fait revenir mieux qu'une promesse vague, et il ne coute pas la
+     confiance quand il n'est pas tenu.
+
+     Renvoie le nombre de jours d'ici la (1 = demain), ou null si rien n'est
+     prevu — auquel cas on se taira.
+     ---------------------------------------------------------------------- */
+  function prochaineEcheance() {
+    var d = charger();
+    var jour = aujourdhui();
+    var plus = null;
+    for (var i = 0; i < CATALOGUE.length; i++) {
+      var f = d.lecons[CATALOGUE[i].id];
+      if (!f || !f.revoirLe || f.revoirLe <= jour) { continue; }
+      if (plus === null || f.revoirLe < plus) { plus = f.revoirLe; }
+    }
+    if (plus === null) { return null; }
+    return { cle: plus, dans: ecartJours(jour, plus) };
+  }
+
+  /* « demain », « jeudi », ou « dans 12 jours » : la formulation la plus courte
+     qui reste exacte. Au-dela d'une semaine, un nom de jour serait ambigu. */
+  function ditEcheance(e) {
+    if (!e) { return ''; }
+    if (e.dans <= 1) { return 'demain'; }
+    if (e.dans <= 6) { return JOURS_FR[depuisCle(e.cle).getDay()]; }
+    return 'dans ' + e.dans + ' jours';
+  }
+
   function acquis() {
     var d = charger();
     var n = 0;
@@ -6042,6 +6082,8 @@ if (typeof module !== 'undefined' && module.exports) { module.exports = ippCoran
     repetitions: repetitions,
     compterRepetition: compterRepetition,
     aRevoir: aRevoir,
+    prochaineEcheance: prochaineEcheance,
+    ditEcheance: ditEcheance,
     acquis: acquis,
     publiees: publiees,
     ordreLecons: ordreLecons,
@@ -6173,12 +6215,17 @@ function ippRendreAccueil(racine) {
   var carte = q('carte');
 
   if (!choix) {
-    // Tout est fait et rien n'est a revoir : on le dit franchement.
+    // Tout est fait et rien n'est a revoir : on le dit franchement, et on donne
+    // la seule chose qu'on sache vraiment — la date de la prochaine revision.
+    // Pas de « la prochaine lecon arrive bientot » : rien ne l'adosse.
+    var ech = IPP.prochaineEcheance();
     carte.innerHTML =
       '<span class="eyebrow">C\'est fait pour aujourd\'hui</span>'
       + '<h2>Tu es a jour</h2>'
       + '<p class="clair">Toutes les lecons disponibles sont terminees, et aucune revision '
-      + 'n\'est prevue aujourd\'hui. Reviens demain : la prochaine lecon arrive bientot.</p>'
+      + 'n\'est prevue aujourd\'hui.'
+      + (ech ? ' Ta prochaine revision\u00a0: <strong>' + IPP.ditEcheance(ech) + '</strong>.' : '')
+      + '</p>'
       + '<a class="btn fantome" href="chemin.html">Voir mon chemin</a>';
   } else {
     var l = choix.lecon;
@@ -7145,7 +7192,7 @@ function ippDemarrerLecon(id, racine) {
       suite.textContent = reste
         ? (reste === 1 ? 'Une autre lecon t\'attend deja.'
                        : reste + ' autres lecons t\'attendent deja.')
-        : 'C\'est la derniere lecon disponible. La prochaine arrive bientot.';
+        : ippSuiteSansLecon();
     }
   }
 
@@ -7182,6 +7229,24 @@ function ippDemarrerLecon(id, racine) {
    pas a l'inscription (il n'y en a pas) ni dans les trois questions
    d'accueil, qui restent a trois.
    ========================================================= */
+
+/* La derniere ligne de l'ecran de fin, quand il ne reste plus une seule lecon
+   a decouvrir.
+
+   Elle disait « C'est la derniere lecon disponible. La prochaine arrive
+   bientot. » — au moment le plus fort de la seance, juste apres l'effort, une
+   promesse que rien n'adosse : le catalogue ne contient que les lecons deja
+   publiees. On la remplace par le seul fait qu'on connaisse, la date de la
+   prochaine revision. Et si meme celle-la n'existe pas, on se tait plutot que
+   d'inventer une suite. */
+function ippSuiteSansLecon() {
+  'use strict';
+  var ech = IPP.prochaineEcheance();
+  if (!ech) { return 'C\'est la derniere lecon disponible aujourd\'hui.'; }
+  return 'C\'est la derniere lecon disponible. Ta prochaine revision\u00a0: '
+       + IPP.ditEcheance(ech) + '.';
+}
+
 
 function ippProposerMoment(q, quandChoisi) {
   'use strict';
