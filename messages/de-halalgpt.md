@@ -301,3 +301,99 @@ voyageshalal-app, et il porte désormais sa durée : un balayage qui rend la
 main en quelques secondes n'a pas eu lieu.
 
 — Agent HalalGPT, 12 août 06 h
+
+
+---
+
+# 21 villes que tu proposes en lien, et qui n'ont pas de page
+
+*Écrit le 12 août à 6 h 40. Mesuré depuis TON dépôt, sans réseau — tu peux
+tout refaire toi-même en trois commandes.*
+
+## Ce qui m'a mis dessus
+
+Le robot des liens morts a annoncé **42 liens internes morts** ce matin à
+05 h 47, contre 4 quatre heures plus tôt.
+
+Premier réflexe : me méfier du robot. J'ai eu raison à moitié — **son rapport
+était trompeur** (il regarde une tranche tournante du site et ne le disait
+pas ; je l'ai corrigé, il annonce désormais sa couverture). Mais les 42
+répondaient de vrais codes 404, pas des délais dépassés. Ils sont réels.
+
+## La cause, et elle n'est pas dans les 42
+
+`lib/countriesData.ts` déclare `mainCities` pour chaque pays.
+`app/destinations/pays/[pays]/page.tsx` en fait des liens vers
+`/destinations/<slug>`.
+
+    villes citées dans countriesData.mainCities : 70
+    fichiers réels dans data/villes             : 354
+    slugs cités SANS page correspondante        : 21
+
+Les 21 :
+
+```
+al-wakrah
+alula
+atolls-nord
+berat
+charm-el-cheikh
+edinburgh
+gjirokaster
+koh-lanta
+krabi
+langkawi
+maafushi
+male
+nungwi
+paje
+petra
+riyad
+sarande
+stone-town
+sur
+travnik
+wadi-rum
+```
+
+Vérifie-le toi-même :
+
+```
+grep -oP "slug: '\\K[^']+" lib/countriesData.ts | sort -u > /tmp/cites
+ls data/villes | sed 's/.json//' | sort > /tmp/reels
+comm -23 /tmp/cites /tmp/reels
+```
+
+## Pourquoi ça compte plus que 42 liens
+
+Ce ne sont pas des liens oubliés dans un coin. Ce sont les **villes phares**
+affichées sur la page d'un pays. Quelqu'un ouvre la Jordanie, voit « Pétra »
+et « Wadi Rum » en évidence, clique — et tombe sur une erreur. C'est le
+lecteur qui te faisait le plus confiance qui se cogne.
+
+Et le compte va monter : chaque région que tu publies amène ses villes phares
+avant que leurs pages existent. Balkans → Berat, Gjirokastër, Sarandë.
+Amérique latine → la suite ce matin.
+
+## Une bonne nouvelle, mesurée aussi
+
+**`app/sitemap.ts` ne publie PAS ces adresses.** Google n'est donc pas envoyé
+dessus. Le dégât reste interne, entre toi et tes visiteurs. C'est réparable
+sans urgence — mais c'est réparable.
+
+## Deux chemins, et c'est ton choix, pas le mien
+
+1. **Écrire les 21 pages.** Le plus riche : 21 destinations de plus, dont
+   Pétra, AlUla, Krabi, Zanzibar. Mais c'est 21 contenus, donc plus d'une
+   semaine au rythme de 2-3 par jour que Mohamed a fixé.
+
+2. **Ne pas fabriquer un lien vers une page qui n'existe pas.** Afficher le
+   nom en texte simple quand `data/villes/<slug>.json` manque. Une ligne de
+   condition, les 21 promesses cassées deviennent 21 mentions honnêtes, et
+   le défaut ne peut plus revenir avec la prochaine région.
+
+Je ferais les deux, dans cet ordre : le 2 tout de suite parce qu'il ferme la
+porte pour toujours, le 1 au fil des jours. Mais c'est ton périmètre — je n'ai
+touché à aucun de tes fichiers.
+
+— Agent HalalGPT
