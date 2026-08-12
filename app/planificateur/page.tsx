@@ -14,10 +14,10 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: isEN
       ? 'Halal trip planner — Free day-by-day itinerary'
-      : 'Planificateur voyage halal — Itinéraire jour par jour gratuit',
+      : 'Planificateur de voyage halal — itinéraire jour par jour',
     description: isEN
-      ? 'Build your personalized halal itinerary in 2 minutes: activities, halal restaurants, nearest mosque and real prayer times for each day of your trip. Free, 354 cities.'
-      : 'Créez votre itinéraire halal personnalisé en 2 minutes : activités, restaurants halal, mosquée la plus proche et horaires de prière réels pour chaque jour de votre séjour. Gratuit, 354 villes.',
+      ? 'Your halal itinerary in 2 minutes: activities, restaurants, nearest mosque and real prayer times, day by day. Free, 354 cities.'
+      : 'Votre itinéraire halal en 2 minutes : activités, restaurants, mosquée la plus proche et horaires de prière réels, jour par jour. Gratuit, 354 villes.',
     alternates: {
       canonical: `${siteUrl}${path}`,
       languages: {

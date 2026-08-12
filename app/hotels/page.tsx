@@ -13,9 +13,12 @@ import { hotelBookingUrl } from '@/lib/affiliate'
 // jamais inventés, toujours « vérifie le prix du jour ».
 export async function generateMetadata(): Promise<Metadata> {
   const { isEN, siteUrl } = await getDomainSEO()
+  // 60 caractères maximum : au-delà, Google coupe et le lecteur ne voit plus
+  // la fin. « HalalBooking » était en queue de titre — donc invisible dans les
+  // résultats. Ce qui fait cliquer passe devant : piscines femmes, sans alcool.
   const title = isEN
-    ? 'Halal hotels — women-only pools, no alcohol, often cheaper on HalalBooking'
-    : 'Hôtels halal — piscines femmes, sans alcool, souvent moins cher sur HalalBooking'
+    ? 'Halal hotels 2026: women-only pools, no alcohol, family'
+    : 'Hôtels halal 2026 : piscines femmes, sans alcool, famille'
   const description = isEN
     ? 'Find your halal gem: verified women/family facilities, honest community price checks, and HalalBooking member prices.'
     : 'Trouve ta pépite halal : équipements femmes/famille vérifiés, relevés de prix honnêtes de la communauté, et prix membres HalalBooking.'

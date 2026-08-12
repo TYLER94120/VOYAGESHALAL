@@ -10,7 +10,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const { isEN, siteUrl } = await getDomainSEO()
   const title = isEN
     ? 'Spots — halal gems shared by Muslim travelers'
-    : 'Spots — les pépites halal partagées par les voyageurs musulmans'
+    : 'Spots : les pépites halal partagées par les voyageurs'
   const description = isEN
     ? 'Prayer corners, halal restaurants, women-friendly places and hidden gems — real spots shared, enriched and confirmed by the Muslim community.'
     : 'Coins prière, restos halal, espaces femmes et pépites — de vrais spots partagés, enrichis et confirmés par la communauté musulmane.'

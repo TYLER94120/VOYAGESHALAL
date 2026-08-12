@@ -6,7 +6,7 @@ import { HALAL_QA_CATEGORIES, HALAL_QA_EN } from '@/lib/halalgpt-en'
 import { getDomainSEO, EN_URL } from '@/lib/domain'
 
 export const metadata: Metadata = {
-  title: 'Halal Questions — Clear Answers on Additives, Products & Travel',
+  title: 'Halal questions: clear answers on additives and products',
   description:
     'Is E120 halal? Is KFC halal in the UK? Is gelatine halal? Every halal question answered clearly, with scholarly nuances — by HalalGPT.',
   alternates: { canonical: `${EN_URL}/halal-questions` },
