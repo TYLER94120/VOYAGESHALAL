@@ -42,14 +42,15 @@ du site :
 |---|---|
 | `voyage-halal-marrakech-guide-2026` | 343 |
 | `voyage-halal-dubai-guide-2026` | 381 |
-| `voyage-halal-istanbul-guide-2026` | **432** |
 | `dubai-guide-halal-2026` | 574 |
 | `marrakech-guide-halal` | 580 |
-| `istanbul-guide-halal-complet` | 751 |
+| ~~`istanbul-guide-halal-complet`~~ | ~~751~~ → **1 136, fusionné le 12 août** |
 
-**Les doublons, ensuite.** Istanbul a deux guides, Dubaï deux, Marrakech
-deux — six pages qui se disputent les mêmes requêtes, dont les 79 et 53
-impressions d'Istanbul et Dubaï. Il faut fusionner, pas empiler.
+**Les doublons, ensuite.** Istanbul, Dubaï et Marrakech avaient chacune
+deux guides. **Istanbul est fait.** Restent **Dubaï** (mine n°2, 53
+impressions) puis **Marrakech** : même méthode — garder le plus riche,
+rediriger l'autre en 301, reprendre ce qu'il avait d'unique, et retirer
+les restaurants nommés sans vérification.
 
 **Les formules creuses, enfin**, mais c'est le moindre : 4 guides sur 24
 en comptent au moins trois (« sereinement », « incontournable »,
@@ -110,6 +111,36 @@ requêtes ces pages sortent réellement.
 ---
 
 ## Fait
+
+### Istanbul : deux guides moyens fusionnés en un, et quatre restaurants retirés — 12 août
+**Istanbul est la mine n°1** (79 impressions) et se présentait avec **deux
+guides qui se disputaient les mêmes requêtes** : 751 mots et 432 mots.
+
+**Fait** : le plus riche absorbe ce que l'autre avait d'unique — où loger
+quartier par quartier, la carte Istanbulkart, la saison, la monnaie — et
+l'ancien slug part en 301. **751 → 1 136 mots**, une seule page au lieu
+de deux.
+
+**Le vrai défaut trouvé en chemin, et c'est celui que Mohamed sentait** :
+le guide conservé listait **quatre restaurants sous « Les meilleurs
+restaurants halal d'Istanbul — nos coups de cœur »**. Personne chez nous
+n'y est allé, et nous n'avons vérifié le statut halal d'aucun. C'est
+exactement ce que la règle interdit. La section est remplacée par ce que
+nous pouvons réellement affirmer : à Istanbul la viande ne pose pas de
+question, **c'est l'alcool qui change d'un quartier à l'autre** — présent à
+Beyoğlu, Karaköy, Kadıköy et sur les quais, rare à Fatih et Üsküdar. Les
+adresses restent sur la fiche ville, où chacune porte sa source.
+
+**Un défaut de plus, trouvé parce que j'ai mesuré au lieu de conclure** :
+la redirection s'appliquait AUSSI sur le domaine anglais et y envoyait
+l'anglophone sur la page française. Corrigé avec `has: host` ; le domaine
+anglais continue de passer par `GUIDES_FR_TO_EN`.
+
+**Mesuré** : ancien slug en 308 vers le guide français côté FR, en 301
+vers le guide **anglais** côté EN · guide conservé en 200, 1 136 mots,
+temps affiché 5 min (exact) · aucun des quatre restaurants n'apparaît
+plus · slug supprimé absent des deux sitemaps · 28 liens internes tous
+en 200.
 
 ### « 10 min de lecture » pour quatre minutes de texte — 12 août
 **Point de départ** : Mohamed trouve les guides « mal faits ». Première
