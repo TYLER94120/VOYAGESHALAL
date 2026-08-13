@@ -56,7 +56,28 @@ guides, présents et à venir.
    fait tomber quatre restaurants inventés sur Istanbul et la promesse
    fausse de Dubaï, pas l'ajout de paragraphes.
 
-### 2. Les guides des deux mines sont les pages les plus maigres du site
+### 2. « 100 % halal », « aucune vérification nécessaire » : 57 pages à trier
+**Trouvé le 12 août en relisant Marrakech**, dont le premier paragraphe
+disait « la totalité des restaurants respectent les préceptes halal par
+défaut, aucune vérification n'est nécessaire, c'est la liberté totale du
+voyageur musulman » — **en contradiction directe avec l'encadré placé juste
+en dessous**. C'est la même famille de défaut que la promesse de Dubaï.
+
+**Mesuré en balayant les deux sitemaps** : **32 pages côté français, 25
+côté anglais**, portant « 100 % halal », « tout est halal », « la totalité
+des restaurants », « liberté totale », « everything is halal », « entirely
+halal ».
+
+⚠️ **Ce chiffre est une borne haute, à trier une page à la fois** : dire
+« 100 % halal » est légitime dans un article qui explique justement comment
+vérifier qu'un restaurant l'est vraiment, et les pages de liste
+(`/destinations`, `/guides`) ne font que reprendre des extraits. Le tri
+fait partie du travail — pas de correction en masse à l'aveugle.
+
+**Ordre** : les fiches des pays du Golfe et du Maghreb d'abord (ce sont
+elles qui promettent le plus), puis les guides, puis le blog.
+
+### 3. Les guides des deux mines sont les pages les plus maigres du site
 **Demande directe de Mohamed, 12 août** : « Il faut retravailler les
 guides, ils sont extrêmement génériques et très mal faits. » Mesuré plutôt
 que discuté, et il a raison — mais le défaut n'est pas où on l'attendrait.
@@ -89,7 +110,7 @@ en comptent au moins trois (« sereinement », « incontournable »,
 Marrakech. Fusionner les doublons avant d'écrire une ligne, sinon on
 enrichit une page qui sera redirigée.
 
-### 3. Les sections « manger » et « prier » manquent sur 277 fiches villes
+### 4. Les sections « manger » et « prier » manquent sur 277 fiches villes
 **Mesuré le 12 août, après huit séries** (Asie, Amérique du Nord, Balkans,
 Europe du Nord, Amérique latine, Afrique subsaharienne, Turquie, Maghreb) :
 **77 fiches sur 354** ont leurs quatre sections. Les 277 autres n'ont que
@@ -105,7 +126,7 @@ Colombo) — à vérifier fiche par fiche avant d'écrire. La question s'y pose
 encore autrement : en Inde le halal est courant et signalé, mais la
 question végétarienne et celle du bœuf s'y ajoutent.
 
-### 4. Un seul guide français reste sans version anglaise, et c'est exprès
+### 5. Un seul guide français reste sans version anglaise, et c'est exprès
 **Mesuré le 12 août sur les deux sitemaps servis** : le domaine anglais
 est passé de **15 à 20 guides** (le français en a 24 ; l'écart restant
 tient à trois doublons français qui pointent vers le même jumeau anglais).
@@ -121,7 +142,7 @@ anglais un défaut qu'on vient de corriger en français.
 Le vrai gisement suivant est **le blog : 45 articles en français, 32 en
 anglais**.
 
-### 5. Les hôtels d'Istanbul et Dubaï attendent le robot OSM
+### 6. Les hôtels d'Istanbul et Dubaï attendent le robot OSM
 **Mesuré** : 41 mentions « information non vérifiée » par page, et
 **0 hôtel avec une politique alcool connue**. Le script et le workflow
 existent (`enrich-hotels-osm.mjs`, `.github/workflows/enrich-hotels.yml`)
@@ -129,7 +150,7 @@ mais n'ont jamais été lancés : le réseau externe est fermé depuis
 l'environnement de l'agent. **Action pour Mohamed**, pas pour l'agent :
 GitHub → Actions → « Enrichir les hôtels » → Run workflow.
 
-### 6. L'accueil et le blog : 704 impressions, ZÉRO clic
+### 7. L'accueil et le blog : 704 impressions, ZÉRO clic
 **Mesuré** (7 jours avant le 9 août). Les titres ont été refaits le 9 août,
 donc **ne rien conclure avant le 16**. Si le zéro persiste après cette
 date, le problème n'est pas le titre : il faudra regarder sur quelles
@@ -138,6 +159,30 @@ requêtes ces pages sortent réellement.
 ---
 
 ## Fait
+
+### Dubaï et Marrakech au modèle d'Istanbul : les trois doublons sont réglés — 12 août
+**Les trois villes qui avaient deux guides en ont maintenant un seul.**
+Six redirections vérifiées dans les deux langues : sur le domaine français
+l'ancien slug renvoie au guide français, sur le domaine anglais il renvoie
+au guide **anglais** — pas à la page française.
+
+**Dubaï** reçoit sa couverture (vue aérienne, le Burj Khalifa au centre) et
+une photo de section. ⚠️ **Le piège évité** : la seconde photo montre la
+marina de nuit. Le réflexe aurait été de la poser sous « Old Dubai, l'âme
+authentique » — la section qui appelle une image. Mais elle montre
+exactement l'inverse : ce qu'il y a de plus récent dans la ville. Elle est
+donc allée sur la section budget, où elle illustre son propos. **Une image
+mal légendée ment aussi sûrement qu'une phrase fausse.**
+
+**Marrakech** est fusionné, illustré (la Koutoubia, un plafond de cèdre
+peint) et **nettoyé de trois adresses nommées** que personne chez nous n'a
+vérifiées — même défaut que sur Istanbul. Le guide gagne au passage ce que
+le doublon avait d'utile : où loger et ce que change un riad, et un guide
+pratique en quatre points.
+
+**Mesuré** : les 3 guides en 200 avec leurs images (3, 2 et 2), **0 adresse
+nommée sans vérification**, 6 redirections correctes sur les deux domaines,
+build sans erreur.
 
 ### Les guides n'avaient AUCUNE image, et l'email « guide gratuit » était cassé — 12 août
 **Deux découvertes du même cycle, toutes deux parties de la même remarque
