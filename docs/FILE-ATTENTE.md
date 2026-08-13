@@ -28,7 +28,40 @@ Chiffres AVANT le 9 août, 7 jours : voyageshalal.fr 1 970 impressions /
 
 ## À faire
 
-### 1. Les sections « manger » et « prier » manquent sur 277 fiches villes
+### 1. Les guides des deux mines sont les pages les plus maigres du site
+**Demande directe de Mohamed, 12 août** : « Il faut retravailler les
+guides, ils sont extrêmement génériques et très mal faits. » Mesuré plutôt
+que discuté, et il a raison — mais le défaut n'est pas où on l'attendrait.
+
+**La longueur, d'abord.** Médiane des 24 guides : **574 mots**. Or les
+fiches villes que nous enrichissons depuis trois jours en font 1 300. Les
+pages censées convertir nos deux meilleures requêtes sont les plus pauvres
+du site :
+
+| Guide | Mots |
+|---|---|
+| `voyage-halal-marrakech-guide-2026` | 343 |
+| `voyage-halal-dubai-guide-2026` | 381 |
+| `voyage-halal-istanbul-guide-2026` | **432** |
+| `dubai-guide-halal-2026` | 574 |
+| `marrakech-guide-halal` | 580 |
+| `istanbul-guide-halal-complet` | 751 |
+
+**Les doublons, ensuite.** Istanbul a deux guides, Dubaï deux, Marrakech
+deux — six pages qui se disputent les mêmes requêtes, dont les 79 et 53
+impressions d'Istanbul et Dubaï. Il faut fusionner, pas empiler.
+
+**Les formules creuses, enfin**, mais c'est le moindre : 4 guides sur 24
+en comptent au moins trois (« sereinement », « incontournable »,
+« de plus en plus »). Densité de faits durs — noms propres et chiffres —
+**14,9 pour 100 mots** en moyenne, avec un plancher à 4,0 sur
+`priere-avion-train-guide`.
+
+**L'ordre de traitement** : Istanbul d'abord (mine n°1), puis Dubaï, puis
+Marrakech. Fusionner les doublons avant d'écrire une ligne, sinon on
+enrichit une page qui sera redirigée.
+
+### 2. Les sections « manger » et « prier » manquent sur 277 fiches villes
 **Mesuré le 12 août, après huit séries** (Asie, Amérique du Nord, Balkans,
 Europe du Nord, Amérique latine, Afrique subsaharienne, Turquie, Maghreb) :
 **77 fiches sur 354** ont leurs quatre sections. Les 277 autres n'ont que
@@ -44,7 +77,7 @@ Colombo) — à vérifier fiche par fiche avant d'écrire. La question s'y pose
 encore autrement : en Inde le halal est courant et signalé, mais la
 question végétarienne et celle du bœuf s'y ajoutent.
 
-### 2. Un seul guide français reste sans version anglaise, et c'est exprès
+### 3. Un seul guide français reste sans version anglaise, et c'est exprès
 **Mesuré le 12 août sur les deux sitemaps servis** : le domaine anglais
 est passé de **15 à 20 guides** (le français en a 24 ; l'écart restant
 tient à trois doublons français qui pointent vers le même jumeau anglais).
@@ -60,7 +93,7 @@ anglais un défaut qu'on vient de corriger en français.
 Le vrai gisement suivant est **le blog : 45 articles en français, 32 en
 anglais**.
 
-### 3. Les hôtels d'Istanbul et Dubaï attendent le robot OSM
+### 4. Les hôtels d'Istanbul et Dubaï attendent le robot OSM
 **Mesuré** : 41 mentions « information non vérifiée » par page, et
 **0 hôtel avec une politique alcool connue**. Le script et le workflow
 existent (`enrich-hotels-osm.mjs`, `.github/workflows/enrich-hotels.yml`)
@@ -68,7 +101,7 @@ mais n'ont jamais été lancés : le réseau externe est fermé depuis
 l'environnement de l'agent. **Action pour Mohamed**, pas pour l'agent :
 GitHub → Actions → « Enrichir les hôtels » → Run workflow.
 
-### 4. L'accueil et le blog : 704 impressions, ZÉRO clic
+### 5. L'accueil et le blog : 704 impressions, ZÉRO clic
 **Mesuré** (7 jours avant le 9 août). Les titres ont été refaits le 9 août,
 donc **ne rien conclure avant le 16**. Si le zéro persiste après cette
 date, le problème n'est pas le titre : il faudra regarder sur quelles
@@ -77,6 +110,26 @@ requêtes ces pages sortent réellement.
 ---
 
 ## Fait
+
+### « 10 min de lecture » pour quatre minutes de texte — 12 août
+**Point de départ** : Mohamed trouve les guides « mal faits ». Première
+chose mesurée, et la plus embarrassante : **16 guides sur 24 annonçaient
+au moins 3 minutes de lecture de plus qu'il n'y a à lire**, jusqu'à
+**4,5 fois trop** — « Voyage halal à Istanbul, le guide complet, 9 min »
+pour 432 mots, soit deux minutes. Le lecteur ouvre, finit en un tiers du
+temps promis, et en conclut que la page est bâclée. Il a raison, et
+l'étiquette y est pour beaucoup.
+
+**Réparé comme une règle, pas comme 24 retouches** : `lib/tempsLecture.ts`
+calcule le temps à partir du texte réellement servi (200 mots/minute,
+questions fréquentes comprises), et `lib/data.ts` l'applique à **tous** les
+guides et articles au moment où ils sortent. Les valeurs écrites à la main
+restent dans les entrées mais ne s'affichent plus nulle part. Retirer un
+paragraphe fait désormais baisser le chiffre tout seul.
+
+**Mesure d'arrivée** : **119 pages servies vérifiées sur les deux
+domaines** — 44 guides et 75 articles — **0 temps de lecture faux de plus
+d'une minute**. Avant : 16 guides faux sur 24.
 
 ### Le guide de l'Aïd en anglais, et le compte s'arrête là — 12 août
 **Avant** : 19 guides listés côté anglais. **Après : 20** dans le sitemap

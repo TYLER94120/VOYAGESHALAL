@@ -1,4 +1,5 @@
 import type { Destination, Guide, BlogPost } from './types'
+import { tempsLecture } from './tempsLecture'
 
 export const destinations: Destination[] = [
   {
@@ -1443,9 +1444,23 @@ const guidesFr: Guide[] = [
   },
 ]
 
-export const guides: Guide[] = [...guidesFr, ...guidesEn]
+// ⏱ Le temps de lecture est RECALCULÉ ici, à partir du texte réellement
+// servi, et écrase le `readTime` écrit à la main dans chaque entrée.
+// Mesuré le 12 août : 16 guides sur 24 annonçaient au moins 3 minutes de
+// plus qu'il n'y a à lire, jusqu'à 4,5 fois trop. Un lecteur qui finit un
+// « guide complet de 9 minutes » en deux minutes en conclut, à raison, que
+// la page est bâclée. Les valeurs manuelles restent dans les entrées mais
+// ne sortent plus nulle part : c'est le calcul qui gagne, toujours.
+const avecTempsReel = <T extends { content?: string; readTime?: string; faq?: { q: string; a: string }[] }>(x: T): T => ({
+  ...x,
+  readTime: tempsLecture(x.content ?? '', (x.faq ?? []).map((f) => `${f.q} ${f.a}`).join(' ')),
+})
 
-export const blogPosts: BlogPost[] = [
+export const guides: Guide[] = [...guidesFr, ...guidesEn].map(avecTempsReel)
+
+// Même règle que pour les guides : le temps de lecture affiché est celui du
+// texte, pas celui qu'on avait annoncé.
+const blogPostsBruts: BlogPost[] = [
   {
     slug: "voile-controle-securite-aeroport",
     title: "Voile au contrôle de sécurité : ce qu'on peut vous demander",
@@ -4522,6 +4537,8 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <p>Prayer rooms exist at Incheon airport, COEX mall and several universities. Full listings on our <a href="/destinations/seoul">Seoul city guide</a>, with <a href="/prayer-times">prayer times</a> and the <a href="/qibla">Qibla compass</a>.</p>`,
   },
 ]
+
+export const blogPosts: BlogPost[] = blogPostsBruts.map(avecTempsReel)
 
 export function getDestinationBySlug(slug: string): Destination | undefined {
   return destinations.find((d) => d.slug === slug)
