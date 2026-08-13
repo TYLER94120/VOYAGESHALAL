@@ -44,9 +44,8 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 >
 > **L'audit du cycle 29 a suivi la personne pressee** — sept lecons d'affilee le
 > meme jour, le chemin que la mesure du cycle 28 avait designe et que personne
-> n'avait parcouru. Deux elements en sont sortis : **le premier est fait**
-> (cycle 30), le second est l'element 1 ci-dessous. Six promesses en sont
-> ressorties saines.
+> n'avait parcouru. **Ses deux elements sont faits** (cycles 30 et 31), et six
+> promesses en sont ressorties saines.
 > *Et j'ai failli publier un constat faux, la encore par ma faute :* ma premiere
 > passe annoncait « le site redemande le rendez-vous sept fois ». C'etait vrai
 > pour ma personne simulee, qui ne repondait jamais a la question. Une personne
@@ -129,20 +128,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 > - **Rien ne casse au bout de sept lecons enchainees** *(cycle 29)* : aucun
 >   debordement a 414 px, **zero erreur JavaScript**.
 
-1. **Un refus n'est pas enregistre : « Pas d'heure fixe » et la question revient
-   six fois.**
-   *Preuve :* trois comportements mesures a la fin de chaque lecon, sept lecons
-   d'affilee. Elle **choisit** un repere → la question est posee **1 fois sur
-   7**. Elle **refuse** en tapant « Pas d'heure fixe » → **7 fois sur 7**. Elle
-   **ignore** → 7 fois sur 7. Le troisieme cas se defend : elle n'a jamais
-   repondu. Le deuxieme, non : **elle a repondu, et sa reponse etait non.**
-   *La cause est courte :* dans `ippProposerMoment`, le bouton « Pas d'heure
-   fixe » n'appelle pas `enregistrerMoment` — rien n'ecrit le refus, donc
-   `IPP.moment()` reste vide et la question se represente a chaque ecran de fin.
-   Un mecanisme qui ne prend pas un non pour un non est exactement ce que ma
-   competence `faire-revenir-sans-culpabiliser` interdit.
-
-2. **Qui avance vite trouve un site vide : 15 jours sur 18.**
+1. **Qui avance vite trouve un site vide : 15 jours sur 18.**
    *Preuve, re-mesuree au cycle 28 sur deux comportements — un seul aurait
    menti :* une personne qui **suit l'objectif du jour** et s'arrete ne rencontre
    plus **aucun** jour vide sur 18 (c'etait 5 avant que `OBJ_REVISIONS` passe a
@@ -164,7 +150,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    chaque fois plutot qu'il ne s'extrapole : l'espacement redistribue les trous a
    chaque ajout.
 
-3. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
+2. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
    *Preuve :* c'est la piece la plus puissante de la liste du responsable, et
    elle est la seule non commencee. Le blocage est reel et non technique : une
    notification calee sur une heure de priere suppose de **connaitre** cette
@@ -176,7 +162,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    **N'entre pas en travaux avant arbitrage** — c'est une decision, pas un
    chantier.
 
-4. **Aucune mesure d'entree, et un traceur est interdit ici.**
+3. **Aucune mesure d'entree, et un traceur est interdit ici.**
    *Preuve :* `grep -ril "gtag\|analytics\|plausible\|matomo\|umami"` sur toutes
    les pages et les trois fichiers JavaScript ne rend **rien**. Or le pied de
    page promet « Ta progression reste sur ton telephone. Aucun compte, aucun
@@ -185,7 +171,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    journaux). Bloque jusqu'au deploiement — question posee aux trois autres
    agents dans le brainstorm des passerelles.
 
-5. **La recitation n'a jamais ete entendue par personne.**
+4. **La recitation n'a jamais ete entendue par personne.**
    *Preuve :* `halalgpt.fr:443` et `cdn.islamic.network:443` sont refuses par la
    politique reseau de l'atelier (403 au CONNECT, journalise par le proxy,
    verifie trois fois). Le mecanisme est teste avec un recitateur simule — 7
@@ -197,6 +183,34 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 ---
 
 ## Fait
+
+- **Un non est enregistre, et le site n'insiste plus** *(12 aout, cycle 31)* —
+  **avant : « Pas d'heure fixe » puis la question reposee 7 fois sur 7** en
+  enchainant sept lecons le meme jour. **Apres : 1 fois sur 7.** Celle qui
+  **choisit** un repere etait deja tranquille (1 sur 7, inchange) ; le seul non
+  gere etait le refus.
+  *La cause tenait en un mot :* le bouton « Pas d'heure fixe » affichait « Comme
+  tu veux. Reviens quand tu peux. » et **n'ecrivait rien**. `moment()` restait
+  vide, donc la question se representait a chaque ecran de fin. Le refus est
+  desormais garde — `{"refuse":true}` — et la fin de lecon ne le pousse plus.
+  *Un refus definitif, mais pas une porte fermee.* C'est la partie qui compte :
+  « Mon chemin » **continue de proposer le choix**, sur une page qu'elle a ouverte
+  elle-meme. Verifie : apres un refus, le bloc offre les reperes ; si elle en
+  prend un, le refus est efface et l'accueil annonce « Prochain rendez-vous :
+  demain apres le Fajr. » Insister n'est pas la meme chose que rester
+  disponible.
+  *Ce que je n'ai pas invente :* redemander apres un delai serait peut-etre
+  mieux, mais aucune mesure ne dit lequel. Ecrire « au bout de deux semaines »
+  aurait ete poser un chiffre sorti de nulle part.
+  *Et un cas qui reste a 7 sur 7, deliberement :* celle qui **ignore** la question
+  la revoit. Elle n'a pas repondu — il n'y a rien a enregistrer, et se taire
+  reviendrait a decider a sa place. C'est ecrit dans le test pour que ce soit un
+  choix et non un oubli.
+  *Verrous :* `test-refus.mjs`, nouveau, joue les **quatre etats** au navigateur —
+  refus puis six lecons, la porte de sortie par « Mon chemin » avec changement
+  d'avis, le choix d'emblee, et l'absence de reponse. **Sur la version d'avant, il
+  echoue 2 fois** : « le refus est ENREGISTRE → null » et « la question n'est
+  jamais reposee → 6 fois ».
 
 - **L'etiquette de la carte dit enfin la verite** *(12 aout, cycle 30)* —
   **avant : « TA LECON DU JOUR » sur 7 cartes sur 7** quand on enchaine sept

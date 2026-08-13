@@ -324,6 +324,40 @@
     return momentParId(id);
   }
 
+  /* UN NON EST UNE REPONSE, ET IL S'ENREGISTRE.
+
+     Mesure du cycle 29, sept lecons enchainees le meme jour : quelqu'un qui tape
+     « Pas d'heure fixe » se voit reposer la question **7 fois sur 7**. Le bouton
+     n'ecrivait rien — il affichait « Comme tu veux » et repartait —, donc
+     `moment()` restait vide et la question se representait a chaque ecran de fin.
+     Celle qui CHOISIT un repere, elle, ne la voit qu'une fois : le cas etait deja
+     traite. Le seul non gere etait le refus.
+
+     Un mecanisme qui redemande six fois dans l'heure ce qu'on vient de refuser
+     est exactement ce que ma competence interdit. On garde donc le refus.
+
+     Il est definitif, et c'est volontaire : **la porte reste ouverte du cote de
+     la personne** — « Mon chemin » propose toujours le choix, sur une page
+     qu'elle a ouverte elle-meme. Redemander apres un delai serait peut-etre
+     mieux, mais je n'ai aucune mesure qui dise lequel : inventer « au bout de
+     deux semaines » serait inventer une regle. */
+  function refuserMoment() {
+    try {
+      global.localStorage.setItem(CLE_MOMENT, JSON.stringify({ refuse: true, faitLe: aujourdhui() }));
+    } catch (e) { /* sans memoire, la question reviendra : on ne peut pas mieux */ }
+  }
+
+  function momentRefuse() {
+    try {
+      var brut = global.localStorage.getItem(CLE_MOMENT);
+      if (!brut) { return false; }
+      var d = JSON.parse(brut);
+      return !!(d && d.refuse && !d.id);
+    } catch (e) {
+      return false;
+    }
+  }
+
   function oublierMoment() {
     try { global.localStorage.removeItem(CLE_MOMENT); } catch (e) { /* rien a faire */ }
   }
@@ -805,6 +839,8 @@
     MOMENTS: MOMENTS,
     moment: moment,
     enregistrerMoment: enregistrerMoment,
+    refuserMoment: refuserMoment,
+    momentRefuse: momentRefuse,
     oublierMoment: oublierMoment,
     positionMoment: positionMoment,
     faitAujourdhui: function () { return charger().jours.indexOf(aujourdhui()) !== -1; }
@@ -1907,7 +1943,9 @@ function ippDemarrerLecon(id, racine) {
 
     // C'est ici qu'on demande le rendez-vous quotidien : juste apres l'effort.
     // Mais on ne demande pas un rendez-vous qu'on serait incapable de retenir.
-    if (IPP.memoire()) { ippProposerMoment(q); }
+    // On ne pousse pas la question a qui l'a deja refusee. « Mon chemin » la
+    // propose toujours : c'est a elle d'y revenir, pas a nous d'insister.
+    if (IPP.memoire() && !IPP.momentRefuse()) { ippProposerMoment(q); }
 
     var suite = q('fin-suite');
     if (suite) {
@@ -2041,6 +2079,7 @@ function ippProposerMoment(q, quandChoisi) {
     if (!b || !zone.contains(b)) { return; }
     var id = b.getAttribute('data-m');
     var choisi = id ? IPP.enregistrerMoment(id) : null;
+    if (!id) { IPP.refuserMoment(); }
     zone.innerHTML = '<p class="rdv cest-maintenant" style="text-align:center">'
       + (choisi ? 'On se retrouve ' + ippEchappe(choisi.dit) + '.'
                 : 'Comme tu veux. Reviens quand tu peux.')
