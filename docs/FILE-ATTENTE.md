@@ -42,9 +42,11 @@ soignée et format d'encadré. La maquette profite d'un coup à tous les
 guides, présents et à venir.
 
 **Ce qui reste, et c'est le gros du travail** :
-1. **Les images.** Mesuré : **55 contenus pour seulement 18 images
-   distinctes**, et **la même photo sur 19 pages** — Istanbul, l'Omra, le
-   Ramadan, la checklist et le voyage solo femme partagent le même cliché.
+1. **Les images.** Point de départ : **55 contenus pour seulement 18 images
+   distinctes**, et **la même photo sur 19 pages**. Au 12 août au soir :
+   **23 images distinctes, la plus partagée est tombée à 17 pages, et
+   11 pages de guide sur 41 ont une photo qui leur est propre** (Istanbul,
+   Dubaï, Marrakech, Omra, Malaisie, Europe — en français comme en anglais).
    Le dépôt contient pourtant **55 photos inutilisées** dans
    `public/guides/` (istanbul, dubai, marrakech, fès, antalya, doha, amman,
    le caire, londres, paris, sarajevo, singapour, kuala lumpur, médine…).
@@ -159,6 +161,32 @@ requêtes ces pages sortent réellement.
 ---
 
 ## Fait
+
+### Omra, Malaisie, Europe illustrés — et deux photos écartées faute de certitude — 12 août
+**Avant** : 0 guide avec une photo à lui. **Après : 11 pages de guide sur
+41**, en français comme en anglais. Les couvertures anglaises reçoivent la
+**même photo que leur jumeau français** : il n'y avait aucune raison que
+l'anglophone hérite d'une image générique.
+
+**La décision du cycle, et c'est elle qui compte** : deux photos ont été
+**écartées faute de pouvoir nommer leur sujet**.
+- `medine-j2` montre une mosquée blanche à quatre minarets avec des
+  pèlerins. C'est très probablement Quba — « très probablement » ne se
+  légende pas.
+- `la-mecque-j2` montre une montagne avec une construction au sommet. Sans
+  doute Jabal al-Nour, sans doute la grotte de Hira — encore « sans doute ».
+
+Le guide Omra garde donc **une seule** image : la Mosquée du Prophète et son
+Dôme Vert, que n'importe quel musulman reconnaît. **Sur une page de
+pèlerinage, une légende approximative n'est pas une maladresse, c'est une
+faute.** Mieux vaut une image sûre que trois dont deux au jugé.
+
+**Ajouté au guide Omra** : un encadré qui dit ce que nous ne faisons pas —
+nous ne tranchons aucune question religieuse, et nous renvoyons à HalalGPT
+ou à l'imam. C'est la même règle que sur les onze pages « où prier ».
+
+**Mesuré** : 41 guides servis sur les deux domaines, **0 en erreur, 0 sans
+image**, les 10 fichiers photo vérifiés en 200, build sans erreur.
 
 ### Dubaï et Marrakech au modèle d'Istanbul : les trois doublons sont réglés — 12 août
 **Les trois villes qui avaient deux guides en ont maintenant un seul.**
