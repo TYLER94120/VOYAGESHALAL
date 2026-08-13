@@ -13,7 +13,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 
 ## A faire
 
-> **Cycles 6, 10, 13, 16, 18, 21, 23, 29, 32, 34, 35 et 37 : audits.** Quand les seuls elements restants sont
+> **Cycles 6, 10, 13, 16, 18, 21, 23, 29, 32, 34, 35, 37 et 38 : audits.** Quand les seuls elements restants sont
 > bloques — un arbitrage, deux fois le deploiement — le cycle sert a mesurer,
 > pas a forcer un blocage. Les sept elements des audits 6, 10 et 13 sont **tous
 > faits** (cycles 7, 8, 9, 11, 12, 14, 15). **L'audit du cycle 16 n'a produit
@@ -94,7 +94,20 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 > trouve deux defauts, **corriges dans le meme cycle** parce qu'ils portaient sur
 > des donnees que la personne ne peut pas reparer — voir « Fait ».
 >
-> **Mesure aux cycles 6, 10, 13, 16, 18, 21, 23, 29, 32, 34, 35 et 37, et rien a corriger** — a ne pas
+> **L'audit du cycle 38 a appuye sur Retour** — le bouton le plus presse d'un
+> telephone, et le seul que le site ne controle pas. Une lecon est **une** page :
+> quinze cartes, aucune entree d'historique. Jamais mesure. Un element en sort,
+> le 1 ci-dessous ; **rien ne double**, ce qui etait la vraie inquietude.
+> *Et un defaut de mon outillage qui ralentissait tout depuis trois cycles :*
+> `isEnabled()` **attend**, contrairement a `isVisible()`. Sur une carte sans
+> question, `.q-opt` n'existe pas, et la garde que j'avais posee au cycle 35
+> patientait le delai par defaut — trente secondes — **a chaque carte**. Finir
+> une lecon de treize cartes prenait **196 secondes** au lieu de trois, et
+> l'audit du bouton Retour expirait sans rien mesurer. Corrige dans les huit
+> outils concernes : on demande d'abord s'il est **visible**, ensuite s'il est
+> actif, et l'attente est bornee. **196 s → 2,9 s.**
+>
+> **Mesure aux cycles 6, 10, 13, 16, 18, 21, 23, 29, 32, 34, 35, 37 et 38, et rien a corriger** — a ne pas
 > re-mesurer sans raison :
 > - **214 elements contiennent de l'arabe, 214 portent `lang="ar"` et
 >   `dir="rtl"`**, zero nu.
@@ -216,11 +229,37 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 > - **Le cout au clavier reste faible** *(cycle 35)* : apres avoir repondu, **une
 >   seule tabulation** ramene sur « Suivant ». Le probleme n'est pas le
 >   deplacement, c'est le silence.
+> - **Le bouton Retour ne fait rien compter deux fois** *(cycle 38)*. Une lecon
+>   finie, Retour, la meme lecon refaite entierement : **1 jour** (pas 2),
+>   **1 lecon** (pas 2), `tours` **inchange**, echeance de revision
+>   **inchangee**, et le total appris affiche **6, pas 12**. C'etait la vraie
+>   inquietude, et elle est levee.
+> - **Retour ne casse pas l'accueil** *(cycle 38)*. Les trois questions ne sont
+>   **pas** reposees, la carte du jour est bien la, et le niveau declare survit.
 > - **Le bouton n'existe que si une source repond** *(cycle 34)* : avec une source
 >   simulee qui repond en 21 ms, « ↻ Repeter avec moi » apparait sur la carte du
 >   verset ; sans reponse, aucun bouton — la regle tient dans les deux sens.
 
-1. **La feuille de route promet un silence « de meme duree ». Il est 15 % plus
+1. **Appuyer sur Retour au milieu d'une lecon renvoie au debut : jusqu'a 14
+   tapes perdues.**
+   *Preuve :* six tapes dans « Les six piliers de la foi », on est sur la carte 7
+   (« Croire en Ses livres »). **Retour ramene a l'accueil** — c'est correct, la
+   lecon est une seule page. Mais en rouvrant la lecon, **on repart de la carte
+   1** : les six tapes et les reponses deja donnees sont perdues.
+   *Le pire cas est chiffre :* la lecon la plus longue fait **15 cartes**, donc
+   **14 tapes** perdues pour qui appuie juste avant la fin. Les sept lecons font
+   12 cartes en moyenne.
+   *Ce n'est pas un bogue, c'est une absence* : le site ne pose aucune entree
+   d'historique — `history.pushState` n'apparait nulle part. Sur un telephone, le
+   geste de retour au bord de l'ecran part tout seul ; perdre sa place au
+   quatorzieme geste d'une lecon est une bonne raison de ne pas la reprendre.
+   *Deux voies, et elles ne se valent pas :* poser une entree d'historique par
+   carte — Retour recule alors d'**une** carte, ce que la personne attend — ou
+   se souvenir de la position et proposer de reprendre. La premiere respecte le
+   geste, la seconde ajoute un choix a faire. **A mesurer avant de trancher**, y
+   compris ce que devient le compteur de cartes quand on recule.
+
+2. **La feuille de route promet un silence « de meme duree ». Il est 15 % plus
    long, et c'est le texte qui a tort.**
    *Preuve, chronometree :* verset simule de **3,00 s** → silence de **3,45 s**,
    trois fois de suite, soit **x1,15**. Or la feuille de route, redite a chaque
@@ -238,7 +277,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    decrit pas ce que fait le site** — c'est la sienne, il decide s'il veut le
    texte ou le 1,15.
 
-2. **Qui avance vite trouve un site vide : 15 jours sur 18.**
+3. **Qui avance vite trouve un site vide : 15 jours sur 18.**
    *Preuve, re-mesuree au cycle 28 sur deux comportements — un seul aurait
    menti :* une personne qui **suit l'objectif du jour** et s'arrete ne rencontre
    plus **aucun** jour vide sur 18 (c'etait 5 avant que `OBJ_REVISIONS` passe a
@@ -260,7 +299,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    chaque fois plutot qu'il ne s'extrapole : l'espacement redistribue les trous a
    chaque ajout.
 
-3. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
+4. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
    *Preuve :* c'est la piece la plus puissante de la liste du responsable, et
    elle est la seule non commencee. Le blocage est reel et non technique : une
    notification calee sur une heure de priere suppose de **connaitre** cette
@@ -272,7 +311,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    **N'entre pas en travaux avant arbitrage** — c'est une decision, pas un
    chantier.
 
-4. **Aucune mesure d'entree, et un traceur est interdit ici.**
+5. **Aucune mesure d'entree, et un traceur est interdit ici.**
    *Preuve :* `grep -ril "gtag\|analytics\|plausible\|matomo\|umami"` sur toutes
    les pages et les trois fichiers JavaScript ne rend **rien**. Or le pied de
    page promet « Ta progression reste sur ton telephone. Aucun compte, aucun
@@ -281,7 +320,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    journaux). Bloque jusqu'au deploiement — question posee aux trois autres
    agents dans le brainstorm des passerelles.
 
-5. **La recitation n'a jamais ete entendue par personne.**
+6. **La recitation n'a jamais ete entendue par personne.**
    *Preuve :* `halalgpt.fr:443` et `cdn.islamic.network:443` sont refuses par la
    politique reseau de l'atelier (403 au CONNECT, journalise par le proxy,
    verifie trois fois). Le mecanisme est teste avec un recitateur simule — 7
