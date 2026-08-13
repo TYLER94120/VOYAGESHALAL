@@ -13,7 +13,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 
 ## A faire
 
-> **Cycles 6, 10, 13, 16, 18, 21, 23, 29, 32, 34 et 35 : audits.** Quand les seuls elements restants sont
+> **Cycles 6, 10, 13, 16, 18, 21, 23, 29, 32, 34, 35 et 37 : audits.** Quand les seuls elements restants sont
 > bloques — un arbitrage, deux fois le deploiement — le cycle sert a mesurer,
 > pas a forcer un blocage. Les sept elements des audits 6, 10 et 13 sont **tous
 > faits** (cycles 7, 8, 9, 11, 12, 14, 15). **L'audit du cycle 16 n'a produit
@@ -88,7 +88,13 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 > cycles* : il cliquait une option de quiz deja repondue, donc desactivee. Corrige
 > — on verifie qu'un element est cliquable avant de cliquer, partout.
 >
-> **Mesure aux cycles 6, 10, 13, 16, 18, 21, 23, 29, 32, 34 et 35, et rien a corriger** — a ne pas
+> **L'audit du cycle 37 a abime la memoire du telephone** — 16 etats corrompus
+> mais lisibles. Le cycle 14 avait verifie le stockage qui REFUSE d'ecrire ;
+> personne n'avait verifie celui qui accepte et contient n'importe quoi. Il a
+> trouve deux defauts, **corriges dans le meme cycle** parce qu'ils portaient sur
+> des donnees que la personne ne peut pas reparer — voir « Fait ».
+>
+> **Mesure aux cycles 6, 10, 13, 16, 18, 21, 23, 29, 32, 34, 35 et 37, et rien a corriger** — a ne pas
 > re-mesurer sans raison :
 > - **214 elements contiennent de l'arabe, 214 portent `lang="ar"` et
 >   `dir="rtl"`**, zero nu.
@@ -287,6 +293,52 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 ---
 
 ## Fait
+
+- **La memoire abimee ne casse plus le site, et ne gonfle plus le compteur**
+  *(13 aout, cycle 37)* — **avant : 3 controles rouges. Apres : 0.**
+  *Ce cycle devait etre un audit* — les cinq elements restants attendent une
+  reponse, un deploiement ou le 14 aout. **L'audit a trouve un plantage sur les
+  donnees de la personne, et je l'ai corrige dans le meme cycle** : c'est un
+  defaut qu'elle ne peut pas reparer elle-meme, et attendre un cycle de plus
+  n'avait aucun sens. Je note l'ecart pour qu'il ne devienne pas une habitude.
+  *Le premier defaut : un nombre glisse dans la liste des jours faisait tout
+  tomber.* `s.split is not a function`, deux fois. Ce qu'elle perd, mesure a
+  l'ecran, etat sain contre etat abime :
+  | | memoire saine | memoire abimee |
+  |---|---|---|
+  | l'anneau du jour | affiche | **absent** |
+  | la serie | « 3 jours d'affilee — c'est ton record » | **vide** |
+  | l'objectif | « Objectif du jour atteint. » | **vide** |
+  | la carte | « Une lecon de plus — Les gestes de la priere » | **« Ta lecon du jour — Al-Fatiha »**, une lecon deja finie |
+  | « Mon chemin » | 7 etapes | **0 etape** |
+  **Et c'est definitif** : la valeur reste sur son telephone, elle revient a
+  chaque visite, rien a l'ecran ne lui dit pourquoi.
+  *Le second defaut est plus grave, et mon propre audit l'avait rate.* Il
+  cherchait du texte absurde — or **« 5 jours d'affilee — c'est ton record »
+  n'a rien d'absurde a lire**. C'est pourtant ce que le site affichait pour **un
+  seul jour ecrit cinq fois** : le compteur inventait quatre jours de pratique.
+  Quatre jours ecrits ainsi donnaient 4. Un compteur qui invente est exactement
+  ce que ma competence interdit, et ca ne se voit pas.
+  *La cause commune :* `charger()` verifiait la forme du **contenant** — un
+  tableau, un objet — sans jamais regarder ce qu'il y avait dedans. Il ne garde
+  desormais que ce qui est vraiment une date (le controle de forme ne suffit
+  pas : « 2026-13-45 » a la bonne forme et n'existe pas — on relit ce que la
+  date rend), et **dedoublonne**.
+  *Ce qui tenait deja, et qui n'avait jamais ete eprouve* : 15 autres memoires
+  abimees, **toutes traversees sans une erreur ni un mot absurde** — un texte qui
+  n'est pas du JSON, un tableau a la place de l'objet, une lecon supprimee du
+  catalogue, un tour negatif, une fiche qui est une chaine, une echeance nulle,
+  une echeance vieille d'un an, un rendez-vous inconnu, un niveau de la mauvaise
+  forme, des repetitions « en toutes lettres », et **mille jours** — qui donnent
+  bien **1000**, sans deborder.
+  *Verrous :* `audit-memoire-abimee.mjs` entre dans la regression comme suite
+  dure, 16 memoires abimees et le compte de la serie verifie **par le chiffre**,
+  pas par la forme du texte. **Sur la version d'avant, il echoue 3 fois.**
+  *Et un defaut de mon instrument, ecarte avant de conclure :* il chargeait la
+  page **avant** de vider le stockage, donc le premier chargement de chaque cas
+  tournait avec les donnees du cas precedent — j'ai failli publier **deux**
+  plantages la ou il n'y en avait **qu'un**. Chaque cas tourne maintenant dans un
+  contexte neuf.
 
 - **Le site parle enfin a qui ne voit pas l'ecran** *(13 aout, cycle 36)* —
   **avant : 4 controles rouges. Apres : 0.**

@@ -5591,6 +5591,53 @@ if (typeof module !== 'undefined' && module.exports) { module.exports = ippCoran
 
   function vide() { return { v: 1, lecons: {}, jours: [], vides: [] }; }
 
+  /* ---------- une date lue du telephone n'est jamais sure -----------------
+     `charger()` verifiait la forme du CONTENANT — un tableau, un objet — sans
+     regarder ce qu'il y avait dedans. Mesure du cycle 37 : un nombre glisse dans
+     la liste des jours faisait lever `s.split is not a function`, et la personne
+     perdait d'un coup **l'anneau, sa serie, son objectif et son chemin**. Le
+     site lui reproposait alors Al-Fatiha, une lecon qu'elle avait deja finie,
+     comme si elle n'avait jamais rien fait.
+
+     Le pire n'est pas le plantage, c'est qu'il est **definitif** : la valeur
+     reste sur son telephone, elle revient a chaque visite, et rien a l'ecran ne
+     lui dit pourquoi. Elle ne peut pas la reparer.
+
+     On ne garde donc que ce qui est vraiment une date. Le controle de forme ne
+     suffit pas : « 2026-13-45 » a la bonne forme et n'existe pas. On relit donc
+     ce que la date rend, et on exige que ca redonne le meme texte.            */
+  var FORME_JOUR = /^\d{4}-\d{2}-\d{2}$/;
+
+  function estUnJour(s) {
+    if (typeof s !== 'string' || !FORME_JOUR.test(s)) { return false; }
+    var d = depuisCle(s);
+    return !isNaN(d.getTime()) && enCle(d) === s;
+  }
+
+  /* Un jour ecrit deux fois n'est pas deux jours.
+
+     `terminer()` se garde deja d'ajouter deux fois la meme date, donc le site
+     n'en fabrique pas. Mais la memoire peut en contenir — une restauration, une
+     copie, un futur bout de code — et le calcul de la serie, lui, comptait
+     chaque ligne : mesure du cycle 37, **un seul jour ecrit cinq fois affichait
+     « 5 jours d'affilee — c'est ton record »**. Le compteur inventait quatre
+     jours de pratique.
+
+     C'est la faute la plus grave qu'un compteur puisse commettre ici, et elle ne
+     se voit pas : le chiffre a l'air normal. On dedoublonne a la lecture, une
+     bonne fois, plutot que de faire confiance a chaque endroit qui compte.     */
+  function sansDoublon(liste) {
+    var vus = {};
+    var sortie = [];
+    for (var i = 0; i < liste.length; i++) {
+      if (!Object.prototype.hasOwnProperty.call(vus, liste[i])) {
+        vus[liste[i]] = true;
+        sortie.push(liste[i]);
+      }
+    }
+    return sortie;
+  }
+
   function charger() {
     try {
       var brut = global.localStorage.getItem(CLE);
@@ -5601,6 +5648,9 @@ if (typeof module !== 'undefined' && module.exports) { module.exports = ippCoran
       if (Object.prototype.toString.call(d.jours) !== '[object Array]') { d.jours = []; }
       // Ajoute apres coup : un etat ecrit avant n'en a pas, et c'est normal.
       if (Object.prototype.toString.call(d.vides) !== '[object Array]') { d.vides = []; }
+      // Et le contenu, pas seulement le contenant : voir estUnJour().
+      d.jours = sansDoublon(d.jours.filter(estUnJour));
+      d.vides = sansDoublon(d.vides.filter(estUnJour));
       return d;
     } catch (e) {
       // Navigation privee ou stockage refuse : on continue sans memoire.
