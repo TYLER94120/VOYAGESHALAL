@@ -8,6 +8,13 @@ function isValidEmail(email: string): boolean {
 }
 
 // Email de bienvenue = le « guide gratuit » livré directement dans la boîte mail.
+//
+// ⚠️ CHAQUE LIEN D'ICI EST TESTÉ par scripts/test-email-bienvenue.mjs, branché
+// sur `npm run build`. Le 12 août, cet email partait avec UN LIEN MORT DANS
+// CHAQUE LANGUE : `/guides/voyager-pendant-ramadan-guide-complet` (l'article
+// est dans /blog, pas dans /guides) et `/nearby-mosque` (le slug anglais est
+// /mosque-near-me). C'était le tout premier message reçu par quelqu'un qui
+// venait de nous confier son adresse — et il tombait sur une page d'erreur.
 // Envoyé via l'API transactionnelle Brevo (aucun template à configurer côté dashboard).
 function welcomeEmail(en: boolean) {
   const brand = en ? 'GoHalalTravel' : 'VoyagesHalal'
@@ -27,7 +34,7 @@ ${link('/guides', 'All our halal travel guides')}
 ${link('/destinations', 'Halal destination guides (350+ cities)')}
 ${link('/prayer-times', 'Prayer times for any city')}
 ${link('/qibla', 'Qibla compass')}
-${link('/nearby-mosque', 'Find a mosque near you')}
+${link('/mosque-near-me', 'Find a mosque near you')}
 </ul>
 <p style="font-size:13px;color:#666">We never certify the halal status of a place ourselves — we report information and always recommend verifying on site.</p>
 <p>— The ${brand} team</p>
@@ -36,7 +43,7 @@ ${link('/nearby-mosque', 'Find a mosque near you')}
 <h2 style="color:#1a3a2a">Bienvenue sur ${brand} 🌙</h2>
 <p>Merci pour votre inscription ! Voici votre guide gratuit — nos ressources les plus utiles pour voyager en tant que musulman :</p>
 <ul>
-${link('/guides/voyager-pendant-ramadan-guide-complet', 'Voyager pendant le Ramadan — guide complet')}
+${link('/blog/voyager-pendant-ramadan-guide-complet', 'Voyager pendant le Ramadan — le guide complet')}
 ${link('/guides', 'Tous nos guides voyage halal')}
 ${link('/destinations', 'Guides destinations halal (350+ villes)')}
 ${link('/horaires-priere', 'Horaires de prière pour toutes les villes')}

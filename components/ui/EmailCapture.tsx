@@ -20,7 +20,11 @@ export default function EmailCapture({
   const { lang } = useLanguage()
   const en = lang === 'en'
   title = title ?? (en ? 'Get our free halal travel guide' : 'Recevez notre guide voyage halal gratuit')
-  subtitle = subtitle ?? (en ? '20+ pages: destinations, restaurants, practical tips — straight to your inbox.' : '20+ pages : destinations, restaurants, conseils pratiques — directement dans votre boîte mail.')
+  // ⚠️ NE PROMETTRE QUE CE QUE L'EMAIL CONTIENT. L'ancienne version annonçait
+  // « 20+ pages » ; ce qui part est une sélection de nos meilleures ressources,
+  // pas un livret de vingt pages. Promettre plus que ce qu'on livre est la
+  // façon la plus sûre de décevoir quelqu'un qui vient de nous faire confiance.
+  subtitle = subtitle ?? (en ? 'Our best halal travel resources, hand-picked — straight to your inbox.' : 'Nos meilleures ressources voyage halal, sélectionnées — directement dans votre boîte mail.')
   const [email, setEmail] = useState('')
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
   const [message, setMessage] = useState('')

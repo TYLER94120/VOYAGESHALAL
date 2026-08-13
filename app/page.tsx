@@ -140,8 +140,10 @@ export default async function HomePage() {
     readGuide: isEN ? 'Read the guide →' : 'Lire le guide →',
     emailTitle: isEN ? 'Get our free halal travel guide' : 'Recevez notre guide voyage halal gratuit',
     emailSub: isEN
-      ? '20+ pages of tips, the best destinations and must-visit addresses — straight to your inbox.'
-      : '20+ pages de conseils, les meilleures destinations et adresses incontournables — directement dans votre boîte mail.',
+      // Ne promettre que ce que l'email contient réellement : une sélection
+      // de ressources, pas un livret de vingt pages.
+      ? 'Our best halal travel resources, hand-picked — straight to your inbox.'
+      : 'Nos meilleures ressources voyage halal, sélectionnées — directement dans votre boîte mail.',
   }
 
   return (
