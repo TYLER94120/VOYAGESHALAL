@@ -718,7 +718,7 @@ const guidesFr: Guide[] = [
     slug: 'istanbul-guide-halal-complet',
     title: 'Istanbul halal 2026 : restos, mosquées, quartiers',
     description: 'Visiter Istanbul en respectant vos valeurs : les meilleurs restaurants halal, les mosquées incontournables et les quartiers à privilégier.',
-    coverImage: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&q=80',
+    coverImage: '/guides/istanbul-j1.jpg',
     category: 'Destinations',
     readTime: '10 min',
     publishedAt: '2026-06-25',
@@ -744,6 +744,7 @@ const guidesFr: Guide[] = [
 <h3>Üsküdar — L'âme anatolienne sur la rive asiatique</h3>
 <p>Traversez le Bosphore en ferry (8 minutes depuis Eminönü) pour découvrir le vrai Istanbul résidentiel et conservateur. Mosquée Mihrimah Sultan, café surplombant le détroit, marchés locaux — une immersion authentique loin du tourisme de masse.</p>
 
+<figure><img src="/guides/istanbul-j2.jpg" alt="Cour intérieure de la mosquée Süleymaniye à Istanbul, avec sa fontaine aux ablutions" width="900" height="587" loading="lazy" /><figcaption>La cour de la Süleymaniye et sa fontaine aux ablutions : l’une des trois grandes mosquées à voir absolument.</figcaption></figure>
 <h2>Les mosquées incontournables d'Istanbul</h2>
 <ul>
 <li><strong>Mosquée Bleue (Sultan Ahmed Camii)</strong> : 6 minarets, dôme central de 43 mètres, 20 000 carreaux de faïence bleue Iznik. Construite entre 1609 et 1616, elle reste l'une des plus belles mosquées du monde.</li>
@@ -765,8 +766,12 @@ const guidesFr: Guide[] = [
 <li>Billet Palais de Topkapi : 25 €</li>
 <li>Transport Istanbulkart (journée) : 3–5 €</li>
 </ul>
+<figure><img src="/guides/istanbul-j3.jpg" alt="Sainte-Sophie vue depuis le Bosphore, un ferry municipal au premier plan" width="900" height="587" loading="lazy" /><figcaption>Sainte-Sophie vue du Bosphore. Le ferry, à 20 minutes d’Üsküdar, coûte le prix d’un ticket de métro.</figcaption></figure>
 <h2>Où loger, quartier par quartier</h2>
 <p><strong>Sultanahmet</strong> pour un premier séjour : on marche à tout, les hôtels y sont nombreux et une bonne partie ne sert pas d'alcool — à demander à la réservation plutôt qu'à l'arrivée. <strong>Fatih</strong>, juste à côté, est plus conservateur et moins cher, avec la Süleymaniye et le Grand Bazar à pied. <strong>Üsküdar</strong>, rive asiatique, pour dormir dans l'Istanbul des Stambouliotes : moins de touristes, prix plus bas, quinze minutes de ferry pour rejoindre la vieille ville. <strong>Şişli et Beşiktaş</strong> sont plus modernes et mieux reliés aux affaires, mais l'alcool y est bien plus présent dans les rues et les hôtels.</p>
+<div class="encadre">
+<p><strong>À retenir avant de partir.</strong> La viande ne pose pas de question à Istanbul : le porc est absent du circuit courant. Ce qui change d’une rue à l’autre, c’est l’alcool — très présent à Beyoğlu, Karaköy et Kadıköy, rare à Fatih et Üsküdar. Prenez une carte Istanbulkart en arrivant, elle sert aussi aux ferries. Et vérifiez les horaires de prière chaque matin : ils bougent vite selon la saison.</p>
+</div>
 <h2>Le guide pratique en quatre points</h2>
 <p><strong>Quand partir</strong> : avril-juin et septembre-octobre. L'été est chaud et saturé, l'hiver stambouliote est humide et venteux — mais les mosquées sont vides, ce qui a son charme. <strong>La carte Istanbulkart</strong> s'achète dans n'importe quelle station et sert au métro, au tram, au funiculaire et surtout aux ferries : la traversée du Bosphore coûte le prix d'un ticket, c'est la plus belle promenade bon marché de la ville. <strong>La monnaie</strong> est la livre turque ; changez en ville, jamais à l'aéroport. <strong>Les horaires de prière</strong> se décalent vite selon la saison — nos <a href="/horaires-priere">horaires</a> et la <a href="/qibla">Qibla</a> se règlent sur votre position exacte.</p>
 <h2>Trouver un restaurant halal : la vraie méthode</h2>

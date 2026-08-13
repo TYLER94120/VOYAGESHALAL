@@ -10,6 +10,9 @@ import AppCTA from '@/components/ui/AppCTA'
 import EmailCapture from '@/components/ui/EmailCapture'
 import { updatedAtOf, fmtMonthYear, cityOfArticle } from '@/lib/freshness'
 import CommunityCTA from '@/components/blog/CommunityCTA'
+import GuideHero from '@/components/guides/GuideHero'
+import Sommaire from '@/components/guides/Sommaire'
+import { preparerGuide } from '@/lib/guideHtml'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -56,6 +59,10 @@ export default async function GuidePage({ params }: Props) {
     { name: guide.title, url: `/guides/${guide.slug}` },
   ])
 
+  // Ancres sur les titres + sommaire, calculés à partir du contenu lui-même :
+  // rien à maintenir, et les 24 guides en profitent d'un coup.
+  const { html: contenu, sections } = preparerGuide(guide.content.trim())
+
   return (
     <>
       <JsonLd data={articleSchema} />
@@ -71,28 +78,34 @@ export default async function GuidePage({ params }: Props) {
           <span className="text-gray-700">{guide.title}</span>
         </nav>
 
-        <header className="mb-10">
-          <div className="flex items-center gap-3 mb-4">
-            <span className="bg-emerald-100 text-emerald-700 text-sm font-semibold px-3 py-1 rounded-full">
-              {guide.category}
-            </span>
-            <span className="text-gray-400 text-sm">⏱ {guide.readTime}</span>
-            <span className="text-gray-400 text-sm">
-              {isEN ? 'Published' : 'Publié'} {fmtMonthYear(guide.publishedAt, isEN)}
-            </span>
-            <span className="text-sm font-semibold" style={{ color: '#1a6b3c' }}>
-              ✓ {isEN ? 'Updated' : 'Mis à jour'} {fmtMonthYear(updatedAtOf(guide), isEN)}
-            </span>
-          </div>
-          <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight mb-4">
-            {guide.title}
-          </h1>
-          <p className="text-xl text-gray-500">{guide.description}</p>
-        </header>
+        {/* La couverture existait dans les données depuis toujours mais n'était
+            affichée nulle part : les 24 guides étaient des murs de texte. */}
+        <GuideHero
+          src={guide.coverImage}
+          alt={guide.title}
+          categorie={guide.category}
+          titre={guide.title}
+          chapeau={guide.description}
+          meta={
+            <>
+              <span>⏱ {guide.readTime}</span>
+              <span>·</span>
+              <span>
+                {isEN ? 'Published' : 'Publié'} {fmtMonthYear(guide.publishedAt, isEN)}
+              </span>
+              <span>·</span>
+              <span className="font-semibold text-white/90">
+                ✓ {isEN ? 'Updated' : 'Mis à jour'} {fmtMonthYear(updatedAtOf(guide), isEN)}
+              </span>
+            </>
+          }
+        />
+
+        <Sommaire sections={sections} en={isEN} />
 
         <article
-          className="prose prose-lg prose-emerald max-w-none"
-          dangerouslySetInnerHTML={{ __html: guide.content.trim() }}
+          className="prose prose-lg prose-emerald max-w-none guide-prose"
+          dangerouslySetInnerHTML={{ __html: contenu }}
         />
 
         {guide.faq?.length ? (

@@ -791,3 +791,119 @@ body { top: 0 !important; }
   font-weight: 600; color: #1b4332; text-decoration: none;
 }
 .nav-tools-item:hover { background: #f0fdf4; }
+
+/* ─────────────────────────────────────────────────────────────────────────
+   📖 LA MISE EN PAGE DES GUIDES
+   Mohamed, 12 août : « des beaux guides, pas un truc donné à la va-vite ».
+   Mesuré ce jour-là : les 24 guides étaient des murs de texte sans une seule
+   image. La couverture et le sommaire sont revenus côté composants ; ici,
+   c'est la lecture elle-même qu'on soigne — c'est ce qui sépare un texte
+   collé d'un guide qu'on a envie de lire jusqu'au bout.
+   ───────────────────────────────────────────────────────────────────────── */
+
+.guide-prose {
+  font-size: 1.075rem;
+  line-height: 1.8;
+  color: #2c3e35;
+}
+
+/* Les titres de section respirent et portent la typographie de la marque. */
+.guide-prose h2 {
+  font-family: var(--font-playfair), Georgia, serif;
+  font-size: 1.65rem;
+  line-height: 1.25;
+  color: #1b4332;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  padding-top: 0.25rem;
+  /* Décalage d'ancre : sans lui, cliquer dans le sommaire colle le titre
+     sous l'en-tête fixe et le lecteur croit avoir raté la section. */
+  scroll-margin-top: 90px;
+}
+
+.guide-prose h2::after {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 3px;
+  margin-top: 0.7rem;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #c9a870, #e8d5a3);
+}
+
+.guide-prose h3 {
+  font-family: var(--font-playfair), Georgia, serif;
+  font-size: 1.25rem;
+  color: #1b4332;
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
+}
+
+.guide-prose p { margin-bottom: 1.15rem; }
+
+/* La première phrase du guide donne le ton : on la traite comme un chapeau. */
+.guide-prose > p:first-of-type {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #1b4332;
+}
+
+.guide-prose strong { color: #1b4332; font-weight: 650; }
+
+.guide-prose a {
+  color: #1a6b3c;
+  text-decoration-color: #c9a870;
+  text-underline-offset: 3px;
+}
+.guide-prose a:hover { color: #14532d; }
+
+/* Les listes portent nos puces dorées plutôt que les points gris par défaut. */
+.guide-prose ul { list-style: none; padding-left: 0; }
+.guide-prose ul > li {
+  position: relative;
+  padding-left: 1.6rem;
+  margin-bottom: 0.6rem;
+}
+.guide-prose ul > li::before {
+  content: '';
+  position: absolute;
+  left: 0.25rem;
+  top: 0.72em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #c9a870;
+}
+
+/* Une image posée au milieu d'un guide : pleine largeur, coins arrondis,
+   légende lisible. C'est le format prévu pour les photos de section. */
+.guide-prose figure {
+  margin: 2.5rem 0;
+}
+.guide-prose figure img {
+  width: 100%;
+  border-radius: 1.25rem;
+  display: block;
+}
+.guide-prose figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.875rem;
+  color: #6b7a72;
+  text-align: center;
+}
+
+/* L'encadré « à retenir » : ce que le lecteur photographie avant de partir. */
+.guide-prose .encadre {
+  background: #faf7f0;
+  border: 1px solid #e8d5a3;
+  border-left: 4px solid #c9a870;
+  border-radius: 1rem;
+  padding: 1.25rem 1.4rem;
+  margin: 2rem 0;
+}
+.guide-prose .encadre > :last-child { margin-bottom: 0; }
+
+@media (max-width: 640px) {
+  .guide-prose h2 { font-size: 1.4rem; margin-top: 2.4rem; }
+  .guide-prose > p:first-of-type { font-size: 1.1rem; }
+}
