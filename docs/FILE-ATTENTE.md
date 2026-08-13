@@ -47,11 +47,11 @@ question végétarienne et celle du bœuf s'y ajoutent.
 ### 2. Le domaine anglais a 15 guides quand le français en a 24
 **Mesuré le 12 août sur les deux sitemaps servis** : voyageshalal.fr publie
 **24 guides et 45 articles de blog**, gohalaltravel.com **15 guides et 32
-articles**. Deux traduits depuis (Japon, Thaïlande) : **17 guides**. Traduire n'est pas créer et n'entre donc pas dans le quota de
+articles**. Trois traduits depuis (Japon, Thaïlande, Europe) : **18 guides**. Traduire n'est pas créer et n'entre donc pas dans le quota de
 contenu — c'est le levier le moins cher du domaine anglais, qui pèse
 441 impressions contre 1 970.
 
-Restent **4 guides français sans jumeau anglais** : `europe-halal-friendly`,
+Restent **3 guides français sans jumeau anglais** :
 `voyage-halal-petit-budget`, `voyage-aid-en-famille`, et
 `priere-avion-train-guide`.
 ⚠️ **Ce dernier est à relire avant traduction, pas à traduire tel quel** :
@@ -75,6 +75,22 @@ requêtes ces pages sortent réellement.
 ---
 
 ## Fait
+
+### Le guide Europe en anglais — 12 août
+**Avant** : 17 guides sur gohalaltravel.com. **Après : 18.** Traduit, pas
+réécrit : mêmes pays, mêmes mosquées (toutes des monuments publics),
+mêmes réserves — « la viande halal est courante mais pas systématique »,
+« demandez la composition ». Aucun restaurant nommé.
+
+**Le lien traité plutôt que recopié** : la version française renvoie vers
+`/blog/restaurants-halal-paris`, qui a un jumeau anglais déclaré. La
+version anglaise pointe directement dessus, au lieu de laisser une 301 au
+milieu du texte.
+
+**Mesuré** : page anglaise en 200 (1 256 mots, titre 51 caractères,
+description 148), ancien slug français en 301 vers le slug anglais côté EN
+et en 200 côté FR, **37 liens internes tous en 200**, sitemap anglais
+seulement.
 
 ### Le guide Thaïlande en anglais, et le piège des liens sans jumeau — 12 août
 **Avant** : 16 guides sur gohalaltravel.com. **Après : 17.** Guide traduit,

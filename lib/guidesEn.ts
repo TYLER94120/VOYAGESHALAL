@@ -375,4 +375,45 @@ export const guidesEn: Guide[] = [
       { q: "How do I recognise the Thai halal label?", a: "A green diamond containing Arabic calligraphy, issued by the Central Islamic Council of Thailand (CICOT). It appears on packaging, shop windows and the menus of inspected venues." },
     ],
   },
+  {
+    slug: 'halal-friendly-europe',
+    lang: 'en',
+    title: 'Halal-Friendly Countries in Europe: Where to Travel',
+    description: 'Bosnia, Albania, Spain and its Andalusian heritage, the UK: the European countries where halal travel is easiest, with mosques, food and atmosphere.',
+    coverImage: 'https://images.unsplash.com/photo-1555993539-1732b0258235?w=1200&q=80',
+    category: 'Destinations',
+    readTime: '7 min',
+    publishedAt: '2026-04-09',
+    tags: ['Europe', 'Halal friendly', 'Bosnia', 'Spain', 'Andalusia'],
+    content: `<p>You do not need a long-haul flight to travel halal with peace of mind: Europe hides deeply <strong>halal-friendly</strong> destinations — including two countries with a living Muslim heritage.</p>
+<h2>1. Bosnia and Herzegovina — Muslim Europe</h2>
+<p><a href="/destinations/sarajevo">Sarajevo</a> and <a href="/destinations/mostar">Mostar</a>: Ottoman mosques on every street, ćevapi halal by default, the call to prayer echoing across the hills. The most natural immersion on the continent, two hours away by plane.</p>
+<h2>2. Albania and Kosovo — the surprise</h2>
+<p>A Muslim majority, legendary hospitality, beaches and mountains, and very low prices. <a href="/destinations/tirana">Tirana</a> is taking off.</p>
+<h2>3. Spain — the legacy of Al-Andalus</h2>
+<p>The Alhambra in <a href="/destinations/grenade">Granada</a>, the Mezquita of Córdoba, <a href="/destinations/seville">Seville</a>: the most moving Muslim heritage in Europe, with a halal offer growing fast (Granada has many halal restaurants around the Albaicín).</p>
+<h2>4. United Kingdom — the easy option</h2>
+<p><a href="/destinations/londres">London</a> is one of the halal capitals of the world: thousands of restaurants (the HMC label is widespread), major mosques, entire districts. Manchester and Birmingham follow.</p>
+<h2>5. France, Germany, the Netherlands</h2>
+<p>Large communities mean a dense halal offer in every major city: <a href="/destinations/paris">Paris</a>, Lyon, Berlin, Amsterdam. See our article on <a href="/blog/halal-travel-france-2026">halal travel in France</a>.</p>
+<h2>Planning advice</h2>
+<p>For a first halal city break in Europe: Sarajevo for immersion, Granada for the history, or London for zero effort. All our European cities are on <a href="/destinations">the destinations map</a>.</p>
+<h2>Where to eat and pray, country by country</h2>
+<p><strong>Bosnia</strong>: in <a href="/destinations/sarajevo">Sarajevo</a>, the Baščaršija serves ćevapi and burek that are halal by default; the 16th-century Gazi Husrev-beg Mosque is the beating heart of the old town. <strong>Spain</strong>: in <a href="/destinations/grenade">Granada</a>, Calderería Nueva street (the « little Albaicín ») lines up tea houses and halal restaurants facing the Alhambra; the Mezquita Mayor de Granada, by the San Nicolás viewpoint, holds prayers with a view of the Alhambra. <strong>Albania</strong>: Et'hem Bey Mosque stands on Skanderbeg Square in <a href="/destinations/tirana">Tirana</a>, and the grills (zgara) serve lamb and chicken — ask, as halal meat is common but not systematic.</p>
+<h2>The European pitfalls, and how to avoid them</h2>
+<p><strong>Hidden pork</strong>: Spanish jamón reaches into croquettes and stocks, French lardons into salads, Italian speck into everything — asking for « no pork » is not always enough, ask what is actually in the dish. <strong>Alcohol in the cooking</strong>: wine in sauces and risottos, beer in frying batter; when in doubt, choose simple grilled dishes and plain fish. <strong>The post-Yugoslav Balkans</strong>: Muslim Bosnia sits alongside regions where the meat is not halal — outside Sarajevo and Mostar, go back to the « Muslim-run restaurant » habit. One reliability bonus in the UK: the HMC label, which is strict, is displayed in the window.</p>
+<h2>Andalusia itinerary: five days in the footsteps of Al-Andalus</h2>
+<p>Days 1-2: <a href="/destinations/grenade">Granada</a> — book the Alhambra weeks ahead (the Nasrid Palaces slot at sunrise), then an evening in the Albaicín between tea houses and the San Nicolás viewpoint. Day 3: on to Córdoba — the Mezquita at opening time, when the forest of columns is empty; flower-filled patios in the afternoon. Days 4-5: <a href="/destinations/seville">Seville</a> — the Alcázar and the Giralda, a former Almohad minaret turned bell tower, the stone memory of Muslim Spain. Direct trains link the three cities; halal food is easy in Granada, and found near the centres in Córdoba and Seville — line up the addresses beforehand (our city pages list them).</p>
+<h2>Kosovo and North Macedonia: the connoisseur's bonus</h2>
+<p>Pristina and Prizren (Kosovo) live to the rhythm of restored Ottoman mosques, with a welcoming young population and Balkan prices; Skopje has its old bazaar (Čaršija), where halal burek and kebapi are eaten between two listed mosques. Two destinations still off the radar — ideal for extending a Bosnian trip.</p>
+<h2>Transport and seasons for Muslim Europe</h2>
+<p>Bosnia and Albania are reachable on direct low-cost flights from western Europe (often under £70 return outside school holidays); on the ground, intercity buses cost a few pounds. Andalusia is best covered by high-speed train (book the AVE early for the cheap fares). Best seasons: May-June and September everywhere — the Andalusian summer passes 40°C, and Sarajevo is glorious in autumn colours.</p>`,
+    faq: [
+      { q: "Which European countries are the most halal-friendly?", a: "Bosnia and Herzegovina and Albania (Muslim majority or large community, halal widely available), then the UK (London and its HMC label), then Andalusian Spain (Granada first) and the big cities with large communities such as Paris, Berlin and Amsterdam." },
+      { q: "Is it easy to eat halal in Andalusia?", a: "Yes in Granada (Calderería Nueva street, the Albaicín quarter) and increasingly in Córdoba and Seville. Do watch for the jamón that runs through classic Spanish cooking — always ask what is in the dish." },
+      { q: "Where can I pray in Sarajevo?", a: "Everywhere: the old town has dozens of Ottoman mosques, including the 16th-century Gazi Husrev-beg. The call to prayer sets the rhythm of the Baščaršija — this is living Muslim Europe." },
+      { q: "Is Albania safe and halal-friendly?", a: "Yes: a Muslim-majority country, very welcoming, and among the cheapest in Europe. Halal meat is common without being systematic — ask, or head for restaurants near the mosques." },
+      { q: "What are the halal pitfalls in Europe?", a: "Hidden pork (lardons, jamón, stocks), alcohol in the cooking (wine sauces, beer batter) and shared fryers. The habits that work: ask what is in the dish, choose simple grilled food, look for Muslim districts and labels such as HMC in the UK." }
+    ],
+  },
 ]
