@@ -54,6 +54,7 @@ export const GUIDES_FR_TO_EN: Record<string, string> = {
   'voyage-halal-japon-guide': 'japan-halal-travel-guide',
   'manger-halal-thailande-guide': 'halal-food-thailand-guide',
   'europe-halal-friendly': 'halal-friendly-europe',
+  'voyage-halal-petit-budget': 'budget-halal-travel',
 }
 
 // Articles de blog FR ayant un jumeau EN (301 sur le domaine EN).
