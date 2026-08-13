@@ -781,7 +781,7 @@ const guidesFr: Guide[] = [
     slug: 'dubai-guide-halal-2026',
     title: 'Dubaï halal 2026 : le guide complet du voyage',
     description: 'Guide complet Dubai 2026 pour les voyageurs musulmans : restaurants halal signalés, mosquées, activités famille, budget et meilleures adresses.',
-    coverImage: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&q=80',
+    coverImage: '/guides/dubai-j1.jpg',
     category: 'Destinations',
     readTime: '9 min',
     publishedAt: '2026-06-22',
@@ -793,6 +793,9 @@ const guidesFr: Guide[] = [
 <p>Aux Émirats, la certification halal n'est pas volontaire comme en Europe : elle relève d'un cadre national, et la viande du circuit courant est contrôlée. C'est ce qui rend la ville si confortable — on n'y cherche pas une étiquette, on n'y interroge pas les serveurs.</p>
 <p><strong>Mais « tout est halal » serait faux, et le raccourci coûte cher.</strong> Deux réserves, à connaître avant d'arriver. D'abord <strong>l'alcool</strong> : il est servi légalement dans les établissements titulaires d'une licence — l'immense majorité des bars et restaurants d'hôtel. Un restaurant peut donc servir une viande parfaitement correcte et proposer une carte des vins. Ensuite <strong>le porc</strong> : il est vendu dans des rayons séparés et signalés de certains supermarchés, et servi dans une minorité d'établissements autorisés. Le repère utile n'est donc pas « est-ce halal » mais « quel type d'établissement, et que sert-on à la table d'à côté ». Nos adresses géolocalisées, chacune avec sa source, sont sur la fiche <a href="/destinations/dubai">Dubaï</a>.</p>
 
+<div class="encadre">
+<p><strong>À retenir avant de partir.</strong> La viande ne pose pas de question à Dubaï : le circuit courant est encadré par la réglementation des Émirats. Ce qu'il faut regarder, c'est le type d'établissement — l'alcool est servi dans les lieux titulaires d'une licence, la plupart des bars et restaurants d'hôtel. Le métro est propre, climatisé et bien moins cher que les taxis. Et la meilleure saison va de novembre à mars : l'été dépasse 45 °C.</p>
+</div>
 <h2>La Mosquée Jumeirah — Une visite incontournable</h2>
 <p>La Mosquée Jumeirah est l'une des rares mosquées de Dubai ouverte aux non-musulmans. Les visites guidées organisées par le SMCCU (Sheikh Mohammed Centre for Cultural Understanding) permettent aux touristes de toutes confessions de découvrir l'islam et l'architecture islamique.</p>
 <ul>
@@ -817,6 +820,7 @@ const guidesFr: Guide[] = [
 <li><strong>Dubai Aquarium & Underwater Zoo</strong> : l'un des plus grands aquariums du monde, au Dubai Mall.</li>
 </ul>
 
+<figure><img src="/guides/dubai-j3.jpg" alt="La marina de Dubaï de nuit, tours éclairées et bateaux amarrés" width="900" height="600" loading="lazy" /><figcaption>La marina de nuit — le Dubaï le plus cher, et le plus facile à éviter : les quartiers de Deira et Bur Dubaï offrent la même ville pour trois fois moins.</figcaption></figure>
 <h2>Budget Dubai 2026</h2>
 <ul>
 <li>Vol Paris–Dubai (aller-retour) : 350–700 € (Emirates, Air France, Fly Dubai)</li>
@@ -832,14 +836,17 @@ const guidesFr: Guide[] = [
     slug: 'marrakech-guide-halal',
     title: 'Marrakech halal 2026 : le guide de la ville ocre',
     description: 'Tout savoir pour visiter Marrakech en famille ou en couple : mosquées, restaurants halal, riads, souks et conseils pratiques pour un séjour parfait.',
-    coverImage: 'https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1200&q=80',
+    coverImage: '/guides/marrakech-j1.jpg',
     category: 'Destinations',
     readTime: '8 min',
     publishedAt: '2026-06-20',
     tags: ['Marrakech', 'Maroc', 'Guide', 'Famille', 'Médina'],
     content: `<h2>Marrakech : destination halal naturelle</h2>
-<p>À Marrakech, la question "est-ce halal ?" n'existe tout simplement pas dans la médina. Le Maroc est un État islamique à 99% musulman — la totalité des restaurants, boucheries et étals alimentaires respectent les préceptes halal par défaut. Aucune vérification n'est nécessaire. C'est la liberté totale du voyageur musulman.</p>
+<p>À Marrakech, la question « est-ce halal ? » ne se pose pratiquement pas dans la médina : le Maroc est un pays très majoritairement musulman, l'islam y est religion d'État, et la viande du circuit courant est halal sans qu'aucune étiquette ne soit nécessaire. Ne cherchez donc pas de logo, il n'y en aura pas. <strong>Ce qui demande de l'attention est ailleurs</strong> : l'alcool, servi dans une partie des hôtels et des restaurants de Guéliz, la ville nouvelle — et c'est à peu près tout ce que ce guide vous demandera de surveiller.</p>
 
+<div class="encadre">
+<p><strong>À retenir avant de partir.</strong> La viande ne pose pas de question au Maroc. Ce qui varie, c'est l'alcool : rare dans la médina, courant à Guéliz et dans les hôtels. Logez en riad pour être à pied de tout. Évitez juillet-août, changez vos dirhams en ville, et n'oubliez pas que les mosquées marocaines ne se visitent pas si l'on n'est pas musulman.</p>
+</div>
 <h2>La Mosquée Koutoubia — Le symbole de Marrakech</h2>
 <p>Le minaret de la Koutoubia (70 mètres) est visible depuis presque toute la ville et constitue le modèle de l'architecture almohade qui influencera la Tour Hassan de Rabat et la Giralda de Séville. L'espace qui l'entoure est un jardin de roses, idéal pour une promenade au coucher du soleil avec le son de l'appel à la prière.</p>
 
@@ -855,14 +862,16 @@ const guidesFr: Guide[] = [
 <li><strong>Derb Dabachi</strong> : le souk des artisans du bois et du métal.</li>
 </ul>
 
-<h2>Restaurants halal incontournables de Marrakech</h2>
-<ul>
-<li><strong>Le Jardin (Médina)</strong> : cuisine marocaine raffinée dans un riad du XVIe siècle, cadre végétal luxuriant. Parfait pour un déjeuner élégant.</li>
-<li><strong>Chez Lamine (Médina)</strong> : les meilleures tangia (agneau au four de potier) de Marrakech dans une ambiance 100% locale.</li>
-<li><strong>Café de France (Jemaa el-Fna)</strong> : terrasse avec vue sur la place — l'endroit parfait pour observer l'animation.</li>
-<li><strong>Jemaa el-Fna la nuit</strong> : les dizaines d'étals de restauration qui envahissent la place à partir du coucher du soleil — harira, méchoui, brochettes — sont une expérience en soi.</li>
-</ul>
+<h2>Où manger, et ce qui distingue vraiment une adresse</h2>
+<p>Nous ne publions pas de liste de « restaurants incontournables » : nous n'avons visité aucune de ces salles, et nommer une adresse halal sans l'avoir vérifiée serait vous engager sur notre seule bonne foi. Ce que nous pouvons dire est plus utile.</p>
+<p>Au Maroc, la viande du circuit courant est halal et la question ne se pose pas : tajines, couscous, pastilla, méchoui, harira se mangent sans arrière-pensée. <strong>Ce qui change d'une adresse à l'autre, c'est l'alcool.</strong> Il est quasi absent des gargotes et des restaurants de la médina, et nettement plus présent dans les hôtels, les riads haut de gamme et les tables de Guéliz, la ville nouvelle. Les étals de restauration qui envahissent la place Jemaa el-Fna au coucher du soleil — harira, brochettes, escargots, méchoui — sont l'expérience la plus simple et la plus sûre de la ville.</p>
+<p>Nos adresses géolocalisées, chacune avec sa source, sont sur la fiche <a href="/destinations/marrakech">Marrakech</a>.</p>
 
+<figure><img src="/guides/marrakech-j2.jpg" alt="Plafond de cèdre peint et sculpté, motifs géométriques marocains" width="900" height="654" loading="lazy" /><figcaption>Plafond de cèdre peint : le savoir-faire qu'on retrouve dans la médersa Ben Youssef et dans les riads de la médina.</figcaption></figure>
+<h2>Où loger : le riad, et ce qu'il change</h2>
+<p>Dormir dans un <strong>riad</strong> de la médina n'est pas seulement plus joli : ces maisons à patio sont souvent tenues en famille, ne servent pas d'alcool, et vous placent à pied de tout — Jemaa el-Fna, les souks, la Koutoubia. Les hôtels de Guéliz, la ville nouvelle construite au XXᵉ siècle, offrent plus de confort standardisé mais aussi des bars et des piscines mixtes : à regarder avant de réserver plutôt qu'en arrivant. L'Hivernage, entre les deux, est le quartier des grands hôtels.</p>
+<h2>Le guide pratique en quatre points</h2>
+<p><strong>Quand partir</strong> : mars-mai et septembre-novembre. L'été dépasse régulièrement 40 °C et la médina devient éprouvante l'après-midi. <strong>La monnaie</strong> est le dirham, qui ne s'exporte pas : changez sur place, en ville plutôt qu'à l'aéroport. <strong>Les taxis</strong> : les petits taxis beiges sont pour la ville, les grands taxis pour l'extérieur ; le compteur existe, demandez-le. <strong>La prière</strong> : l'appel rythme la journée et les mosquées sont partout — nos <a href="/horaires-priere">horaires</a> et la <a href="/qibla">Qibla</a> se règlent sur votre position exacte. À noter, les mosquées du Maroc ne se visitent pas si l'on n'est pas musulman, la Koutoubia comprise.</p>
 <h2>Budget Marrakech 2026</h2>
 <ul>
 <li>Vol Paris–Marrakech (aller-retour) : 80–250 € (Royal Air Maroc, EasyJet, Ryanair)</li>
@@ -1138,39 +1147,6 @@ const guidesFr: Guide[] = [
 
 <h2>Comment VoyagesHalal.fr accompagne cette tendance</h2>
 <p>VoyagesHalal.fr est la première plateforme francophone dédiée au voyage halal : guides de destinations, carte interactive des adresses halal, conseils pratiques et comparatif de forfaits Omra — tout ce dont vous avez besoin pour voyager en accord avec vos valeurs.</p>`,
-  },
-  {
-    slug: 'voyage-halal-marrakech-guide-2026',
-    title: 'Voyage halal à Marrakech : le guide complet 2026',
-    description:
-      'Médina, riads, souks et gastronomie : le guide 2026 pour un voyage halal authentique à Marrakech. Restaurants, mosquées, hôtels et conseils pratiques.',
-    coverImage: 'https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1200&q=80',
-    category: 'Destinations',
-    readTime: '8 min',
-    publishedAt: '2026-06-22',
-    tags: ['Marrakech', 'Maroc', 'Guide ville'],
-    content: `<h2>Marrakech, l'authenticité halal à 3h de Paris</h2>
-<p>La ville ocre est une destination de choix pour les voyageurs musulmans francophones : proximité, langue, et un cadre <strong>naturellement halal</strong>. Tout est sur notre <a href="/destinations/marrakech">guide complet de Marrakech</a>.</p>
-
-<h2>Que voir et que faire ?</h2>
-<ul>
-<li><strong>Place Jemaa el-Fna</strong> — le cœur vibrant de la médina, classée UNESCO.</li>
-<li><strong>Mosquée Koutoubia</strong> — le minaret emblématique du XIIe siècle.</li>
-<li><strong>Jardin Majorelle</strong> et <strong>palais de la Bahia</strong>.</li>
-<li><strong>Souks</strong> — épices, cuir, tapis et artisanat berbère.</li>
-</ul>
-
-<h2>Gastronomie halal</h2>
-<p>Tajines, couscous, pastilla, thé à la menthe : la cuisine marocaine est un voyage à elle seule, et entièrement halal. Logez dans un <strong>riad</strong> traditionnel au cœur de la médina pour une expérience authentique et sans alcool.</p>
-
-<h2>Conseils pratiques</h2>
-<ul>
-<li><strong>Meilleure période</strong> : mars-mai et septembre-novembre.</li>
-<li><strong>Monnaie</strong> : dirham marocain (MAD).</li>
-<li><strong>Prière</strong> : mosquées à chaque coin de rue. Voir les <a href="/horaires-priere">horaires de prière à Marrakech</a>.</li>
-</ul>
-
-<p>Préparez votre séjour avec le <a href="/destinations/marrakech">guide halal de Marrakech</a>.</p>`,
   },
     {
     slug: 'priere-avion-train-guide',
