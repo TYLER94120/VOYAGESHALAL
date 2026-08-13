@@ -46,6 +46,12 @@ const nextConfig: NextConfig = {
         destination: '/guides/istanbul-guide-halal-complet',
         permanent: true,
       },
+      {
+        source: '/guides/voyage-halal-dubai-guide-2026',
+        has: [{ type: 'host', value: '(www\\.)?voyageshalal\\.fr' }],
+        destination: '/guides/dubai-guide-halal-2026',
+        permanent: true,
+      },
     ]
   },
 }

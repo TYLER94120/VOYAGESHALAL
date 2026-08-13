@@ -41,16 +41,15 @@ du site :
 | Guide | Mots |
 |---|---|
 | `voyage-halal-marrakech-guide-2026` | 343 |
-| `voyage-halal-dubai-guide-2026` | 381 |
-| `dubai-guide-halal-2026` | 574 |
 | `marrakech-guide-halal` | 580 |
+| ~~`dubai-guide-halal-2026`~~ | ~~574~~ → **699, fusionné le 12 août** |
 | ~~`istanbul-guide-halal-complet`~~ | ~~751~~ → **1 136, fusionné le 12 août** |
 
-**Les doublons, ensuite.** Istanbul, Dubaï et Marrakech avaient chacune
-deux guides. **Istanbul est fait.** Restent **Dubaï** (mine n°2, 53
-impressions) puis **Marrakech** : même méthode — garder le plus riche,
-rediriger l'autre en 301, reprendre ce qu'il avait d'unique, et retirer
-les restaurants nommés sans vérification.
+**Les doublons.** Istanbul, Dubaï et Marrakech avaient chacune deux
+guides. **Istanbul et Dubaï sont faits.** Reste **Marrakech** : même
+méthode — garder le plus riche, rediriger l'autre en 301, reprendre ce
+qu'il avait d'unique, et **relire chaque affirmation avant de la garder**.
+C'est ce passage-là qui rapporte le plus, pas l'ajout de paragraphes.
 
 **Les formules creuses, enfin**, mais c'est le moindre : 4 guides sur 24
 en comptent au moins trois (« sereinement », « incontournable »,
@@ -111,6 +110,40 @@ requêtes ces pages sortent réellement.
 ---
 
 ## Fait
+
+### Le guide Dubaï disait « mangez partout sans vérifier ». C'était faux — 12 août
+**Le défaut le plus grave trouvé depuis le début de ce chantier**, et il
+était sur la mine n°2 (53 impressions). Le guide affirmait :
+
+> « Tous les restaurants de Dubaï sont halal par obligation légale —
+> manger partout sans vérifier. »
+> « une garantie absolue que l'on ne trouve nulle part ailleurs »
+> « vous pouvez manger dans n'importe quel restaurant sans la moindre
+> inquiétude »
+
+**C'est faux, et c'est le genre de faux qui fait manger du haram à
+quelqu'un qui nous a fait confiance.** La viande du circuit courant est
+bien encadrée aux Émirats — c'est vrai et ça reste écrit. Mais l'alcool y
+est servi dans les établissements titulaires d'une licence, ce qui couvre
+la plupart des bars et restaurants d'hôtel, et le porc est vendu dans des
+rayons séparés et servi dans une minorité d'établissements autorisés.
+Le repère juste n'est pas « est-ce halal » mais « quel type
+d'établissement ».
+
+**Corrigé dans les cinq endroits où la promesse vivait** : le guide
+français, sa version anglaise, la fiche ville Dubaï dans les deux langues,
+et un conseil pratique de la fiche. Au passage, le doublon
+`voyage-halal-dubai-guide-2026` (381 mots) est supprimé et redirigé —
+574 → 699 mots pour la page qui reste.
+
+**Mesure d'arrivée** : **1 635 pages balayées sur les deux domaines
+(811 + 824), 0 page portant encore la promesse.** Le balayage a aussi
+rattrapé une phrase oubliée sur Berkane (« la viande servie est halal sans
+exception »), nuancée elle aussi.
+
+**Vérifié également** : ancien slug en 308 côté FR et en 301 vers le guide
+anglais côté EN, guide conservé en 200 avec un temps de lecture exact,
+slug supprimé absent des deux sitemaps, 27 liens internes tous en 200.
 
 ### Istanbul : deux guides moyens fusionnés en un, et quatre restaurants retirés — 12 août
 **Istanbul est la mine n°1** (79 impressions) et se présentait avec **deux

@@ -205,7 +205,7 @@ export const destinations: Destination[] = [
       { slug: 'hotel-halal-tout-savoir', title: 'Hôtel halal : tout ce qu\'il faut savoir', type: 'guide' },
     ],
     tips: [
-      'Tous les restaurants de Dubaï sont halal par obligation légale — manger partout sans vérifier.',
+      'Aux Émirats, la viande du circuit courant est halal : la question ne se pose presque jamais. Ce qui varie, c\'est l\'alcool, servi dans les établissements titulaires d\'une licence, surtout en hôtel.',
       'Le Ramadan à Dubaï est une expérience unique : iftar dans les grandes tentes des hôtels 5 étoiles, ambiance festive nocturne.',
       'Le Dubai Metro est propre, climatisé et économique — eviter les taxis en heure de pointe.',
       'Les plages publiques (Jumeirah Beach) sont gratuites et bien équipées.',
@@ -709,7 +709,7 @@ const guidesFr: Guide[] = [
 <h2>Notre recommandation par destination</h2>
 <ul>
 <li><strong>Istanbul</strong> : hôtels du quartier de Fatih et Sultanahmet — halal par tradition culturelle.</li>
-<li><strong>Dubaï</strong> : tous les hôtels sont halal par obligation légale.</li>
+<li><strong>Dubaï</strong> : la nourriture ne pose pas de question, mais beaucoup d'hôtels ont une licence d'alcool et un bar — c'est cela qu'il faut regarder avant de réserver.</li>
 <li><strong>Kuala Lumpur</strong> : label JAKIM = référence sur tous les établissements labellisés.</li>
 <li><strong>Marrakech</strong> : les riads de la médina sont halal par nature — un choix idéal pour les familles.</li>
 </ul>`,
@@ -782,16 +782,17 @@ const guidesFr: Guide[] = [
     publishedAt: '2026-06-22',
     tags: ['Dubai', 'EAU', 'Guide', 'Luxe', 'Famille'],
     content: `<h2>Dubai : la destination halal de luxe par excellence</h2>
-<p>Dubai est unique au monde pour les voyageurs musulmans : <strong>tous les restaurants sont halal par obligation légale</strong>. Le contrôle halal est imposé par le gouvernement des Émirats à l'ensemble des établissements de restauration — une garantie absolue que l'on ne trouve nulle part ailleurs.</p>
+<p>Dubaï est l'une des villes les plus simples au monde pour un voyageur musulman : la viande vendue et servie dans le circuit courant est halal, encadrée par la réglementation des Émirats. La question « où manger halal » ne se pose donc presque jamais. Celle qui se pose vraiment est différente, et c'est l'objet de ce guide.</p>
 
-<h2>Le halal aux EAU : une obligation légale</h2>
-<p>Contrairement à la plupart des pays où le label halal est volontaire, aux Émirats Arabes Unis, elle est <strong>obligatoire et gouvernementale</strong>. L'ESMA (Emirates Authority for Standardization and Metrology) supervise l'ensemble des contrôles halal. Résultat : vous pouvez manger dans n'importe quel restaurant de Dubai sans la moindre inquiétude.</p>
+<h2>Ce qui est encadré, et ce qui ne l'est pas</h2>
+<p>Aux Émirats, la certification halal n'est pas volontaire comme en Europe : elle relève d'un cadre national, et la viande du circuit courant est contrôlée. C'est ce qui rend la ville si confortable — on n'y cherche pas une étiquette, on n'y interroge pas les serveurs.</p>
+<p><strong>Mais « tout est halal » serait faux, et le raccourci coûte cher.</strong> Deux réserves, à connaître avant d'arriver. D'abord <strong>l'alcool</strong> : il est servi légalement dans les établissements titulaires d'une licence — l'immense majorité des bars et restaurants d'hôtel. Un restaurant peut donc servir une viande parfaitement correcte et proposer une carte des vins. Ensuite <strong>le porc</strong> : il est vendu dans des rayons séparés et signalés de certains supermarchés, et servi dans une minorité d'établissements autorisés. Le repère utile n'est donc pas « est-ce halal » mais « quel type d'établissement, et que sert-on à la table d'à côté ». Nos adresses géolocalisées, chacune avec sa source, sont sur la fiche <a href="/destinations/dubai">Dubaï</a>.</p>
 
 <h2>La Mosquée Jumeirah — Une visite incontournable</h2>
 <p>La Mosquée Jumeirah est l'une des rares mosquées de Dubai ouverte aux non-musulmans. Les visites guidées organisées par le SMCCU (Sheikh Mohammed Centre for Cultural Understanding) permettent aux touristes de toutes confessions de découvrir l'islam et l'architecture islamique.</p>
 <ul>
-<li>Visites guidées : samedi, dimanche, lundi, mardi et jeudi à 10h</li>
-<li>Prix : 35 AED (environ 9€)</li>
+
+<li>Prix et jours de visite à vérifier auprès du centre avant de vous déplacer : ils changent.</li>
 <li>Tenue modeste obligatoire — abaya fournie sur place</li>
 </ul>
 
@@ -1132,39 +1133,6 @@ const guidesFr: Guide[] = [
 
 <h2>Comment VoyagesHalal.fr accompagne cette tendance</h2>
 <p>VoyagesHalal.fr est la première plateforme francophone dédiée au voyage halal : guides de destinations, carte interactive des adresses halal, conseils pratiques et comparatif de forfaits Omra — tout ce dont vous avez besoin pour voyager en accord avec vos valeurs.</p>`,
-  },
-  {
-    slug: 'voyage-halal-dubai-guide-2026',
-    title: 'Voyage halal à Dubaï : le guide complet 2026',
-    description:
-      'Luxe, plages, gratte-ciel, halal partout : le guide 2026 pour un voyage halal inoubliable à Dubaï — restaurants, hôtels, mosquées et activités.',
-    coverImage: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&q=80',
-    category: 'Destinations',
-    readTime: '8 min',
-    publishedAt: '2026-06-21',
-    tags: ['Dubaï', 'Émirats', 'Guide ville'],
-    content: `<h2>Dubaï, le luxe halal par excellence</h2>
-<p>Dubaï combine modernité spectaculaire et valeurs islamiques. Toute la nourriture servie aux Émirats est <strong>halal par défaut</strong>, les hôtels proposent des options sans alcool, et la ville est l'une des plus sûres au monde. Explorez notre <a href="/destinations/dubai">guide complet de Dubaï</a>.</p>
-
-<h2>Que faire à Dubaï en famille musulmane ?</h2>
-<ul>
-<li><strong>Burj Khalifa</strong> — la plus haute tour du monde et sa vue à 360°.</li>
-<li><strong>Mosquée de Jumeirah</strong> — l'une des rares ouvertes aux visiteurs non-musulmans.</li>
-<li><strong>Dubai Mall & fontaines</strong> — shopping, aquarium et spectacles.</li>
-<li><strong>Désert</strong> — safari en 4x4 et dîner sous les étoiles (versions sans alcool disponibles).</li>
-</ul>
-
-<h2>Restaurants et hôtels halal</h2>
-<p>Des tables gastronomiques aux food courts, tout est halal. Pour l'hébergement, de nombreux resorts proposent des étages familiaux, des piscines à horaires dédiés et une absence totale d'alcool sur demande. Comparez les adresses sur notre <a href="/destinations/dubai">page Dubaï</a>.</p>
-
-<h2>Conseils pratiques</h2>
-<ul>
-<li><strong>Meilleure période</strong> : novembre à mars (éviter l'été très chaud).</li>
-<li><strong>Tenue</strong> : décontractée en ville, modeste dans les lieux de culte.</li>
-<li><strong>Prière</strong> : mosquées partout + salles de prière dans tous les malls. Voir les <a href="/horaires-priere">horaires de prière</a>.</li>
-</ul>
-
-<p>Planifiez votre séjour avec le <a href="/destinations/dubai">guide halal de Dubaï</a>.</p>`,
   },
   {
     slug: 'voyage-halal-marrakech-guide-2026',
@@ -4017,7 +3985,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     tags: ["Berkane", "Restaurants", "Maroc"],
     content: `<p>Capitale de l'orange et joyau de la région de l'Oriental, <strong>Berkane</strong> est une ville 100 % halal par défaut, où la cuisine du terroir se déguste dans une ambiance familiale et chaleureuse. Voici notre guide des <strong>meilleurs restaurants halal à Berkane</strong> en 2026.</p>
 <h2>Berkane, terre d'agrumes et de saveurs</h2>
-<p>Réputée pour ses oranges parmi les meilleures du monde, Berkane offre une gastronomie ancrée dans le terroir : produits frais, viandes halal, poissons venus de la voisine <a href="/destinations/saidia">Saïdia</a> et plats berbères transmis de génération en génération. Comme partout au Maroc, la viande servie est halal sans exception.</p>
+<p>Réputée pour ses oranges parmi les meilleures du monde, Berkane offre une gastronomie ancrée dans le terroir : produits frais, viandes halal, poissons venus de la voisine <a href="/destinations/saidia">Saïdia</a> et plats berbères transmis de génération en génération. Comme partout au Maroc, la viande du circuit courant est halal : la question ne se pose pas.</p>
 <h2>Les spécialités locales à goûter</h2>
 <ul>
 <li><strong>Oranges de Berkane</strong> : en jus pressé, en salade ou en dessert parfumé à la cannelle.</li>
