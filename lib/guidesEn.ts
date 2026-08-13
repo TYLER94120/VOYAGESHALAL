@@ -54,15 +54,16 @@ export const guidesEn: Guide[] = [
     slug: 'dubai-halal-travel-guide-2026',
     lang: 'en',
     title: 'Dubai Halal Travel Guide 2026: Muslim-Friendly Trip',
-    description: 'Dubai for Muslim travelers: halal food everywhere by law, Jumeirah Mosque, Old Dubai, family activities and a realistic budget for 2026.',
+    description: 'Dubai for Muslim travellers: what the Emirates actually regulate, where alcohol is served, Jumeirah Mosque, Old Dubai and a realistic 2026 budget.',
     coverImage: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&q=80',
     category: 'Destinations',
     readTime: '7 min',
     publishedAt: '2026-01-22',
     tags: ['Dubai', 'UAE', 'Guide', 'Luxury', 'Family'],
-    content: `<p><strong>Dubai</strong> is the most comfortable luxury destination for Muslim travelers: halal food is required by law in restaurants, mosques and prayer rooms are everywhere, and the city is built for families.</p>
+    content: `<p><strong>Dubai</strong> is one of the easiest cities in the world for a Muslim traveller: the meat sold and served through the ordinary supply chain is halal, under the Emirates' own regulation, and mosques and prayer rooms are everywhere. So « where can I eat halal » barely comes up. The question that does come up is a different one, and it is what this guide is about.</p>
 <h2>Halal in the UAE: a legal requirement</h2>
-<p>Unlike most countries where halal labels are voluntary, food service in the Emirates is state-controlled: restaurants must serve halal meat. You can eat almost anywhere with peace of mind — a guarantee few destinations offer.</p>
+<p>Unlike most countries where halal labels are voluntary, food service in the Emirates sits within a national framework, and meat in the ordinary supply chain is inspected. That is what makes the city so comfortable — you are not hunting for a label or quizzing the waiter.</p>
+<p><strong>But « everything is halal » would be false, and the shortcut is expensive.</strong> Two caveats, worth knowing before you land. First <strong>alcohol</strong>: it is served legally in licensed venues, which covers the great majority of hotel bars and restaurants. A place can therefore serve perfectly suitable meat and hand you a wine list. Second <strong>pork</strong>: it is sold in separate, signposted sections of some supermarkets and served in a minority of licensed venues. The useful question is not « is this halal » but « what kind of venue is this, and what is being served at the next table ». Our geolocated listings, each carrying its source, are on the <a href="/destinations/dubai">Dubai</a> page.</p>
 <h2>Jumeirah Mosque — a must-visit</h2>
 <p>One of the few mosques in the Emirates open to non-Muslim visitors, and one of the most beautiful. Guided visits explain Islam with openness; for prayer, neighborhood mosques and mall prayer rooms are everywhere.</p>
 <h2>Old Dubai: the authentic soul</h2>
