@@ -751,14 +751,9 @@ const guidesFr: Guide[] = [
 <li><strong>Mosquée Süleymaniye</strong> : commandée par Soliman le Magnifique, achevée en 1557. Vue panoramique sur la Corne d'Or depuis les jardins.</li>
 </ul>
 
-<h2>Les meilleurs restaurants halal d'Istanbul</h2>
-<p>Rappelons-le : dans les quartiers historiques, presque tout est halal. Voici nos coups de cœur :</p>
-<ul>
-<li><strong>Hamdi Restaurant (Eminönü)</strong> : institution depuis 1970, kebab d'agneau avec vue sur la Corne d'Or. Incontournable.</li>
-<li><strong>Sultanahmet Köftecisi</strong> : depuis 1920, les meilleurs köfte d'Istanbul. Simplicité, qualité.</li>
-<li><strong>Çiya Sofrası (Kadıköy)</strong> : la référence de la cuisine anatolienne authentique — plus de 50 plats régionaux différents chaque jour.</li>
-<li><strong>Karaköy Güllüoğlu</strong> : la meilleure baklava d'Istanbul depuis 1949. À déguster chaud à la sortie du four.</li>
-</ul>
+<h2>Où manger, et comment lire un quartier</h2>
+<p>Nous ne publions pas de « coups de cœur » dans un guide : nous n'avons visité aucune de ces salles, et nommer un restaurant halal sans l'avoir vérifié serait vous engager sur notre seule bonne foi. Ce que nous pouvons dire est plus utile. À Istanbul, la viande ne pose pas de question — la ville est musulmane à très large majorité et le porc est absent du circuit courant. Ce qui change d'une rue à l'autre, c'est <strong>l'alcool</strong> : très présent à Beyoğlu, Karaköy, Kadıköy et sur les quais touristiques ; rare à Fatih, Üsküdar et dans les rues intérieures de Sultanahmet. Un restaurant sans carte des boissons alcoolisées en vitrine, plein de familles à l'heure du déjeuner, est le repère le plus fiable qui soit.</p>
+<p>Nos adresses géolocalisées, chacune avec sa source, sont sur la fiche <a href="/destinations/istanbul">Istanbul</a>.</p>
 
 <h2>Budget Istanbul 2026</h2>
 <ul>
@@ -769,7 +764,13 @@ const guidesFr: Guide[] = [
 <li>Repas restaurant touristique : 20–40 €</li>
 <li>Billet Palais de Topkapi : 25 €</li>
 <li>Transport Istanbulkart (journée) : 3–5 €</li>
-</ul>`,
+</ul>
+<h2>Où loger, quartier par quartier</h2>
+<p><strong>Sultanahmet</strong> pour un premier séjour : on marche à tout, les hôtels y sont nombreux et une bonne partie ne sert pas d'alcool — à demander à la réservation plutôt qu'à l'arrivée. <strong>Fatih</strong>, juste à côté, est plus conservateur et moins cher, avec la Süleymaniye et le Grand Bazar à pied. <strong>Üsküdar</strong>, rive asiatique, pour dormir dans l'Istanbul des Stambouliotes : moins de touristes, prix plus bas, quinze minutes de ferry pour rejoindre la vieille ville. <strong>Şişli et Beşiktaş</strong> sont plus modernes et mieux reliés aux affaires, mais l'alcool y est bien plus présent dans les rues et les hôtels.</p>
+<h2>Le guide pratique en quatre points</h2>
+<p><strong>Quand partir</strong> : avril-juin et septembre-octobre. L'été est chaud et saturé, l'hiver stambouliote est humide et venteux — mais les mosquées sont vides, ce qui a son charme. <strong>La carte Istanbulkart</strong> s'achète dans n'importe quelle station et sert au métro, au tram, au funiculaire et surtout aux ferries : la traversée du Bosphore coûte le prix d'un ticket, c'est la plus belle promenade bon marché de la ville. <strong>La monnaie</strong> est la livre turque ; changez en ville, jamais à l'aéroport. <strong>Les horaires de prière</strong> se décalent vite selon la saison — nos <a href="/horaires-priere">horaires</a> et la <a href="/qibla">Qibla</a> se règlent sur votre position exacte.</p>
+<h2>Trouver un restaurant halal : la vraie méthode</h2>
+<p>À Istanbul, le problème n'est pas de trouver du halal — la ville est musulmane à très large majorité et la viande de porc est absente du circuit courant — mais de savoir <strong>ce qui est servi à côté</strong>. Beaucoup de restaurants parfaitement corrects côté viande servent de l'alcool, notamment à Beyoğlu, Karaköy, Kadıköy et sur les quais touristiques. À Fatih et à Üsküdar, c'est l'inverse : l'alcool y est rare. Nous ne recommandons aucune adresse que nous n'ayons pas vérifiée ; nos listes par quartier figurent sur la fiche <a href="/destinations/istanbul">Istanbul</a>, et chaque entrée porte sa source.</p>`,
   },
   {
     slug: 'dubai-guide-halal-2026',
@@ -1131,43 +1132,6 @@ const guidesFr: Guide[] = [
 
 <h2>Comment VoyagesHalal.fr accompagne cette tendance</h2>
 <p>VoyagesHalal.fr est la première plateforme francophone dédiée au voyage halal : guides de destinations, carte interactive des adresses halal, conseils pratiques et comparatif de forfaits Omra — tout ce dont vous avez besoin pour voyager en accord avec vos valeurs.</p>`,
-  },
-  {
-    slug: 'voyage-halal-istanbul-guide-2026',
-    title: 'Voyage halal à Istanbul : le guide complet 2026',
-    description:
-      'Restaurants halal, mosquées emblématiques, hôtels sans alcool et bons plans : tout pour préparer un voyage halal réussi à Istanbul en 2026.',
-    coverImage: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&q=80',
-    category: 'Destinations',
-    readTime: '9 min',
-    publishedAt: '2026-06-20',
-    tags: ['Istanbul', 'Turquie', 'Guide ville'],
-    content: `<h2>Pourquoi Istanbul est la destination halal n°1</h2>
-<p>À cheval entre l'Europe et l'Asie, Istanbul est sans doute la ville la plus accueillante au monde pour un voyageur musulman. Quasiment <strong>100% de la nourriture y est halal</strong>, l'appel à la prière rythme les journées, et les mosquées historiques font partie du décor quotidien. Notre <a href="/destinations/istanbul">guide complet d'Istanbul</a> recense des dizaines de restaurants halal signalés, hôtels et activités.</p>
-
-<h2>Les restaurants halal incontournables</h2>
-<p>À Istanbul, le défi n'est pas de trouver du halal, mais de choisir ! Quelques institutions :</p>
-<ul>
-<li><strong>Hamdi Restaurant</strong> (Eminönü) — kebabs et baklavas avec vue sur la Corne d'Or.</li>
-<li><strong>Sultanahmet Köftecisi</strong> — les köfte traditionnels depuis 1920.</li>
-<li><strong>Karaköy Lokantası</strong> — cuisine turque raffinée près du Bosphore.</li>
-</ul>
-
-<h2>Mosquées à visiter</h2>
-<p>La <strong>Mosquée Bleue</strong> et <strong>Sainte-Sophie</strong> sont des merveilles d'architecture islamique. N'oubliez pas la mosquée de <strong>Soliman le Magnifique</strong> (Süleymaniye) et la mosquée <strong>Fatih</strong>. Toutes sont ouvertes aux visiteurs en dehors des heures de prière.</p>
-
-<h2>Où loger ?</h2>
-<p>Le quartier de <strong>Sultanahmet</strong> est idéal pour un premier séjour : proche des sites, calme, nombreux hôtels sans alcool. Pour une ambiance plus moderne, optez pour <strong>Şişli</strong> ou <strong>Beşiktaş</strong>.</p>
-
-<h2>Conseils pratiques</h2>
-<ul>
-<li><strong>Meilleure période</strong> : avril-juin et septembre-octobre (climat doux).</li>
-<li><strong>Monnaie</strong> : livre turque (TRY) — le change est avantageux.</li>
-<li><strong>Transport</strong> : carte Istanbulkart pour métro, tram et ferry.</li>
-<li>Consultez les <a href="/horaires-priere">horaires de prière à Istanbul</a> et la <a href="/qibla">direction de la Qibla</a> directement sur VoyagesHalal.fr.</li>
-</ul>
-
-<p>Prêt à partir ? Découvrez toutes nos adresses sur le <a href="/destinations/istanbul">guide halal d'Istanbul</a>.</p>`,
   },
   {
     slug: 'voyage-halal-dubai-guide-2026',
