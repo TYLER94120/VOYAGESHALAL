@@ -214,30 +214,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 >   simulee qui repond en 21 ms, « ↻ Repeter avec moi » apparait sur la carte du
 >   verset ; sans reponse, aucun bouton — la regle tient dans les deux sens.
 
-1. **Le site ne dit rien a qui ne voit pas l'ecran : zero region vivante.**
-   *Preuve, relevee a chaque changement de contenu :*
-   - **`aria-live` : 0 occurrence sur tout le site.** Aucune region vivante,
-     aucun `role="status"`, aucun `role="alert"`.
-   - **On tape « Suivant », la carte change** — « Sourate Al-Fatiha, verset par
-     verset » devient « Huit lettres a surveiller » — **et le focus reste sur le
-     bouton**. Rien n'est annonce : la personne ne sait pas que l'ecran a change.
-   - **On repond a une question, l'explication s'affiche** — « Oui. Sept, et tu
-     les recites dans chaque unite de priere. » — **et rien ne l'annonce**. Le
-     focus tombe sur `body`. Elle ne sait meme pas si elle a eu juste.
-   - **A la fin, le score s'affiche** — « 3 sur 3 — sans faute » — **et rien ne
-     l'annonce** non plus. Focus sur `body`.
-   Un lecteur d'ecran n'apprend un changement que par une region vivante ou par
-   le focus deplace. **Le site n'a ni l'un ni l'autre** : tout ce qui bouge est
-   invisible a qui n'a que la voix.
-   *Ce n'est pas un probleme de clavier* — une seule tabulation ramene sur
-   « Suivant », et le cycle 6 avait deja verifie qu'une lecon se termine sans
-   souris. **C'est un probleme de silence.**
-   *Une seule mecanique repare les trois :* deplacer le focus sur le titre de la
-   nouvelle carte a chaque transition (`tabindex="-1"`), et poser une region
-   vivante discrete sur le retour de question. A mesurer apres, aux memes trois
-   endroits.
-
-2. **La feuille de route promet un silence « de meme duree ». Il est 15 % plus
+1. **La feuille de route promet un silence « de meme duree ». Il est 15 % plus
    long, et c'est le texte qui a tort.**
    *Preuve, chronometree :* verset simule de **3,00 s** → silence de **3,45 s**,
    trois fois de suite, soit **x1,15**. Or la feuille de route, redite a chaque
@@ -255,7 +232,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    decrit pas ce que fait le site** — c'est la sienne, il decide s'il veut le
    texte ou le 1,15.
 
-3. **Qui avance vite trouve un site vide : 15 jours sur 18.**
+2. **Qui avance vite trouve un site vide : 15 jours sur 18.**
    *Preuve, re-mesuree au cycle 28 sur deux comportements — un seul aurait
    menti :* une personne qui **suit l'objectif du jour** et s'arrete ne rencontre
    plus **aucun** jour vide sur 18 (c'etait 5 avant que `OBJ_REVISIONS` passe a
@@ -277,7 +254,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    chaque fois plutot qu'il ne s'extrapole : l'espacement redistribue les trous a
    chaque ajout.
 
-4. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
+3. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
    *Preuve :* c'est la piece la plus puissante de la liste du responsable, et
    elle est la seule non commencee. Le blocage est reel et non technique : une
    notification calee sur une heure de priere suppose de **connaitre** cette
@@ -289,7 +266,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    **N'entre pas en travaux avant arbitrage** — c'est une decision, pas un
    chantier.
 
-5. **Aucune mesure d'entree, et un traceur est interdit ici.**
+4. **Aucune mesure d'entree, et un traceur est interdit ici.**
    *Preuve :* `grep -ril "gtag\|analytics\|plausible\|matomo\|umami"` sur toutes
    les pages et les trois fichiers JavaScript ne rend **rien**. Or le pied de
    page promet « Ta progression reste sur ton telephone. Aucun compte, aucun
@@ -298,7 +275,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    journaux). Bloque jusqu'au deploiement — question posee aux trois autres
    agents dans le brainstorm des passerelles.
 
-6. **La recitation n'a jamais ete entendue par personne.**
+5. **La recitation n'a jamais ete entendue par personne.**
    *Preuve :* `halalgpt.fr:443` et `cdn.islamic.network:443` sont refuses par la
    politique reseau de l'atelier (403 au CONNECT, journalise par le proxy,
    verifie trois fois). Le mecanisme est teste avec un recitateur simule — 7
@@ -310,6 +287,45 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 ---
 
 ## Fait
+
+- **Le site parle enfin a qui ne voit pas l'ecran** *(13 aout, cycle 36)* —
+  **avant : 4 controles rouges. Apres : 0.**
+  | | avant | apres |
+  |---|---|---|
+  | regions vivantes sur une lecon | **0** | **1** |
+  | apres « Suivant », le focus est | sur le bouton | **dans la nouvelle carte** |
+  | l'explication d'une reponse est | affichee, **jamais annoncee** | **annoncee, mot pour mot** |
+  | a la fin, le focus est | sur `body` | **sur l'ecran de fin** |
+  *Deux mecaniques, chacune pour ce qu'elle sait faire — et j'ai failli n'en
+  poser qu'une :*
+  - **le focus** se deplace sur la nouvelle carte a chaque « Suivant ». C'est le
+    seul moyen de **poser** la personne dans le nouveau contenu ; une region
+    vivante lui lirait le texte en la laissant sur la carte precedente, a
+    chercher. Elle lit maintenant l'etiquette, le titre, puis le contenu, dans
+    l'ordre : « AVANT DE COMMENCER — Huit lettres a surveiller… ».
+  - **une region vivante** pour la reponse a une question, parce que la il ne
+    faut surtout **pas** deplacer le focus : elle vient d'appuyer sur un bouton,
+    on ne le lui arrache pas.
+  *La region est invisible mais jamais `display:none`* — masquer ainsi la
+  retirerait de l'arbre d'accessibilite et elle ne servirait plus a rien. Elle
+  porte **exactement** le texte affiche : on n'annonce pas autre chose que ce
+  qui est a l'ecran.
+  *Et une phrase qui renvoyait a une couleur, trouvee en chemin.* Une reponse
+  fausse affichait **« Pas tout a fait — la bonne reponse est en dore. »** Une
+  couleur ne se lit pas a voix haute, et ne se voit pas non plus quand on
+  distingue mal les teintes. Elle affiche desormais **« Pas tout a fait —
+  c'etait "Le takbir". »** : vrai pour tout le monde, et plus utile meme pour
+  qui voit l'ecran.
+  *Le cout au clavier n'a pas bouge* — c'etait le risque de deplacer le focus :
+  **1 tabulation** pour revenir sur « Suivant », apres une reponse comme apres
+  un changement de carte, exactement comme avant.
+  *Verrous :* `audit-annonces.mjs` passe de suite d'information a **suite dure**,
+  ses quatre controles etant verts. **Sur la version d'avant, il echoue 4 fois.**
+  *Une correction de mon instrument, et elle valait la peine :* il exigeait un
+  `aria-live` **sur l'explication elle-meme** — c'etait mesurer une mise en
+  oeuvre, pas une propriete. Il aurait declare rouge une correction correcte. Il
+  demande maintenant que **le texte affiche soit porte par une region vivante,
+  ou qu'elle soit**.
 
 - **Les 18 formes sont montrees, numerotees, comptables** *(13 aout, cycle 33)* —
   **avant : le nombre 18 affirme 6 fois dans la lecon, etaye par 1 seul groupe de

@@ -6999,7 +6999,7 @@ function ippRearmerQuiz(etape) {
   etape.classList.add('reprise');
 }
 
-function ippPreparerQuiz(etape, bouton, score, sonner, surFaux) {
+function ippPreparerQuiz(etape, bouton, score, sonner, surFaux, dire) {
   'use strict';
   if (etape.__quizPret) { return; }
   etape.__quizPret = true;
@@ -7047,9 +7047,22 @@ function ippPreparerQuiz(etape, bouton, score, sonner, surFaux) {
       var tete;
       if (juste && reprise) { tete = 'Voila — tu l\'as. '; }
       else if (juste) { tete = 'Oui. '; }
-      else { tete = 'Pas tout a fait — la bonne reponse est en dore. '; }
+      else {
+        /* On disait « la bonne reponse est en dore ». Une couleur ne se lit pas
+           a voix haute, et elle ne se voit pas non plus quand on distingue mal
+           les teintes. On NOMME la bonne reponse : c'est vrai pour tout le
+           monde, et plus utile meme pour qui voit l'ecran. */
+        var bonneRep = etape.querySelector('.q-opt[data-bonne]');
+        var nomBonne = bonneRep ? bonneRep.textContent.trim() : '';
+        tete = nomBonne
+          ? 'Pas tout a fait — c\'etait «\u00a0' + nomBonne + '\u00a0». '
+          : 'Pas tout a fait. ';
+      }
       retour.textContent = tete + explique
         + (reviendra ? ' On la revoit avant la fin.' : '');
+      // Le meme texte que celui affiche : on n'annonce pas autre chose que ce
+      // qui est a l'ecran.
+      if (dire) { dire(retour.textContent); }
     }
 
     // Le compte des questions est fait au premier passage : une reprise ne
@@ -7241,6 +7254,41 @@ function ippDemarrerLecon(id, racine) {
     bouton.textContent = (pos === ordre.length - 1) ? 'Terminer' : 'Suivant';
   }
 
+  /* ---------- ce qu'entend quelqu'un qui ne voit pas l'ecran ---------------
+     Mesure du cycle 35 : le site changeait de carte, affichait une explication,
+     annoncait un score — **en silence**. Zero region vivante sur tout le site,
+     et le focus qui ne bougeait jamais. Un lecteur d'ecran n'apprend un
+     changement que par l'un des deux ; il n'y avait ni l'un ni l'autre.
+
+     Deux mecaniques, et chacune pour ce qu'elle sait faire :
+
+     - **le focus** deplace sur la nouvelle carte. C'est le seul moyen fiable de
+       POSER la personne dans le nouveau contenu : une region vivante lui lirait
+       le texte mais la laisserait sur la carte precedente, a chercher.
+     - **une region vivante** pour la reponse a une question, parce que la, il ne
+       faut surtout pas deplacer le focus : elle vient d'appuyer sur un bouton,
+       on ne le lui arrache pas.
+
+     La region est invisible mais jamais `display:none` — masquer ainsi la
+     retirerait de l'arbre d'accessibilite, et elle ne servirait plus a rien.  */
+  var annonce = q('annonce');
+  if (!annonce) {
+    annonce = document.createElement('p');
+    annonce.className = 'visuellement-cache';
+    annonce.setAttribute('data-r', 'annonce');
+    annonce.setAttribute('role', 'status');
+    annonce.setAttribute('aria-live', 'polite');
+    zone.parentNode.insertBefore(annonce, zone);
+  }
+
+  /* Un lecteur d'ecran n'annonce que ce qui CHANGE : reecrire deux fois le meme
+     texte ne changerait rien. On vide d'abord. */
+  function dire(texte) {
+    if (!annonce || !texte) { return; }
+    annonce.textContent = '';
+    setTimeout(function () { annonce.textContent = texte; }, 60);
+  }
+
   function afficher(defiler) {
     var ici = (pos < ordre.length) ? ordre[pos] : finale;
     for (var a = 0; a < etapes.length; a++) {
@@ -7261,7 +7309,7 @@ function ippDemarrerLecon(id, racine) {
         ici.__passages = (ici.__passages || 0) + 1;
         if (ici.__passages > 1) { ippRearmerQuiz(ici); }
         bouton.disabled = !ici.__repondu;
-        ippPreparerQuiz(ici, bouton, score, sonner, remettreALaFin);
+        ippPreparerQuiz(ici, bouton, score, sonner, remettreALaFin, dire);
       } else {
         bouton.disabled = false;
       }
@@ -7271,6 +7319,15 @@ function ippDemarrerLecon(id, racine) {
     if (defiler) {
       var haut = zone.getBoundingClientRect().top + window.pageYOffset - 70;
       window.scrollTo(0, Math.max(0, haut));
+
+      /* Et sans cela, quelqu'un qui n'a que la voix resterait sur le bouton
+         « Suivant » sans savoir que l'ecran a change. On le pose au debut de la
+         carte : il lit alors l'etiquette, le titre, puis le contenu, dans
+         l'ordre. `preventScroll` parce qu'on vient de choisir ou defiler.
+         Seulement quand la personne a AGI : on ne vole jamais le focus au
+         chargement de la page. */
+      ici.setAttribute('tabindex', '-1');
+      try { ici.focus({ preventScroll: true }); } catch (e) { ici.focus(); }
     }
   }
 
