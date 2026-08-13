@@ -5,6 +5,7 @@ import { getSpot, listSpotsByVille, LIEU_LABELS } from '@/lib/prayerSpots'
 import { getDomainSEO } from '@/lib/domain'
 import JsonLd from '@/components/seo/JsonLd'
 import FavButton from '@/components/ui/FavButton'
+import { titreSpot, descriptionSpot } from '@/lib/titreSpot'
 
 export const dynamic = 'force-dynamic' // lit Redis à la demande (données seed en direct)
 
@@ -17,12 +18,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!spot) return { title: isEN ? 'Prayer spot not found' : 'Coin prière introuvable' }
   const lieu = LIEU_LABELS[spot.typeLieu]
   const url = `${siteUrl}/priere/${ville}/${spotSlug}`
-  const title = isEN
-    ? `Where to pray at ${spot.nom} — ${spot.villeNom} | ${brand}`
-    : `Où prier à ${spot.nom} — ${spot.villeNom} | ${brand}`
-  const description = isEN
-    ? `Prayer spot at ${spot.nom} (${lieu.en}) in ${spot.villeNom}. Location, access and traveler tips. Shared spot — confirm on site.`
-    : `Coin prière à ${spot.nom} (${lieu.fr}) à ${spot.villeNom}. Emplacement, accès et conseils de voyageurs. Spot partagé — à confirmer sur place.`
+  // Le titre et la description passent par un gabarit qui SE REPLIE : le nom
+  // du lieu d'abord, le reste sacrifié dans l'ordre inverse de son utilité.
+  // Voir lib/titreSpot.ts — 101 défauts du balayage du 13 août venaient d'ici.
+  const title = titreSpot({ nom: spot.nom, villeNom: spot.villeNom, marque: brand, isEN, typeLieuEn: lieu.en })
+  const description = descriptionSpot({ nom: spot.nom, villeNom: spot.villeNom, lieu: isEN ? lieu.en : lieu.fr, isEN })
   return {
     title: { absolute: title }, description,
     alternates: { canonical: url },

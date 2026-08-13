@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/test-titres.mjs && node scripts/test-pays-halal.mjs && node scripts/test-email-bienvenue.mjs && next build",
+    "build": "node scripts/test-titres.mjs && node scripts/test-pays-halal.mjs && node scripts/test-email-bienvenue.mjs && node --experimental-strip-types --no-warnings scripts/test-titres-spots.mjs && next build",
     "test:titres": "node scripts/test-titres.mjs",
     "test:pays": "node scripts/test-pays-halal.mjs",
     "test:email": "node scripts/test-email-bienvenue.mjs",
+    "test:spots": "node --experimental-strip-types --no-warnings scripts/test-titres-spots.mjs",
     "start": "next start",
     "lint": "eslint"
   },

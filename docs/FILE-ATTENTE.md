@@ -20,6 +20,7 @@ dessus.
 | 11 août 2026 | Vitesse (appels réseau bornés, images 1600 → 300 px) | 18-21 août |
 | **12 août 2026** | **14 titres et descriptions coupés par Google, dont /hotels (80 car.), la page qui mène à Istanbul et Dubaï** | **19-22 août** |
 | **12 août 2026, soir** | **Description de repli (`lib/seo.ts`, 171 car.) et /destinations** | **19-22 août** |
+| **13 août 2026** | **Gabarit des pages « où prier » : 73 titres coupés, 19 titres et 9 descriptions en français sur le domaine anglais** | **20-23 août** |
 
 Chiffres AVANT le 9 août, 7 jours : voyageshalal.fr 1 970 impressions /
 29 clics / 1,5 % · gohalaltravel.com 441 / 3 / 0,7 %.
@@ -27,6 +28,12 @@ Chiffres AVANT le 9 août, 7 jours : voyageshalal.fr 1 970 impressions /
 ---
 
 ## À faire
+
+### 0. ⛔ CONTENU GELÉ JUSQU'AU 15 AOÛT AU SOIR — décision de Mohamed
+Prise après le bilan référencement : **le SEO est le chantier principal et
+prioritaire sur tout le reste**. Les éléments 1 à 3 ci-dessous touchent au
+contenu : **ne pas les reprendre avant le 15 au soir**. Seuls les défauts
+techniques et les corrections de gabarit peuvent avancer d'ici là.
 
 ### 1. Refondre les 22 guides : la maquette est faite, le contenu reste à écrire
 **Demande de Mohamed, 12 août** : « Des beaux guides avec de belles photos,
@@ -164,6 +171,59 @@ requêtes ces pages sortent réellement.
 ---
 
 ## Fait
+
+### Le gabarit « où prier » ne peut plus déborder — 13 août
+**Balayage complet du 13 août, 1 976 pages : 101 défauts, tous sur ces
+pages-là.** Trois symptômes d'une seule cause — un gabarit qui mettait le
+décor avant l'information :
+
+- 73 titres coupés par Google (médiane 67 caractères, maximum 101) ;
+- 19 titres en français sur le domaine anglais ;
+- 9 descriptions en français sur le domaine anglais.
+
+**La cause.** `Où prier à ${nom} — ${ville} | ${marque}` : 29 caractères de
+décor plus la ville avant d'arriver au lieu. 35 en anglais. Sur
+« Marrakech », il restait **22 caractères** pour nommer le lieu en
+français, **16** en anglais. Et `nom` est saisi par la communauté, en
+français : la même valeur partait telle quelle sur le domaine anglais, d'où
+« Where to pray at Mosquée magnifique — Berkane ».
+
+**Pourquoi c'était la priorité.** La loi du 11 août : le précis gagne.
+« où prier au parc Astérix » convertit à 100 sur 100 ; « voyage halal »
+fait 144 vues et zéro clic. Ces pages **sont** les pages précises — celles
+qui gagnent déjà — et c'étaient exactement celles dont le titre était
+cassé.
+
+**Ce qui a été fait** : `lib/titreSpot.ts`. Le lieu d'abord, le reste
+sacrifié dans l'ordre inverse de son utilité (marque, puis ville), et une
+coupe sur un mot entier en dernier recours. **Ce n'est pas un test qui
+alerte, c'est un gabarit qui ne peut pas dépasser.** Sur le domaine
+anglais, un nom contenant des mots français bascule sur un titre bâti à
+partir du type de lieu, qui est traduit : « Where to pray in a shopping
+mall — Berkane ». Un titre générique honnête vaut mieux qu'un titre
+bilingue accidentel.
+
+**Mesuré sur 70 combinaisons nom × ville × langue**, avec les cas durs
+relevés par la ronde :
+
+| | Ancien gabarit | Nouveau |
+|---|---|---|
+| titres coupés | **41 / 70** (médiane 94, max 114) | **0** |
+| français servi en anglais | **40** | **0** |
+
+Les titres qui tenaient déjà ne bougent pas : « Où prier à Parc Astérix —
+Paris | VoyagesHalal.fr » reste identique.
+
+⚠️ **Ce que je n'ai PAS pu mesurer** : les spots vivent dans Redis, hors
+d'atteinte depuis mon environnement. Je n'ai donc pas pu servir une vraie
+page et compter les défauts réels. **C'est à la ronde de confirmer le
+passage de 101 à 0** — et au plafond de `docs/ronde/plafond.json` de le
+verrouiller.
+
+**Le garde-fou** : `scripts/test-titres-spots.mjs`, branché sur
+`npm run build`. Il n'éprouve pas les pages — impossible, le nom du lieu
+n'existe pas à la construction — **il éprouve la règle**, en important le
+vrai `lib/titreSpot.ts` plutôt qu'une copie qui finirait par diverger.
 
 ### Quatre guides de plus illustrés, et une photo remise à sa place — 12 août
 **Avant** : 11 pages de guide avec une photo à elles. **Après : 15 sur 41.**
