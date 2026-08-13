@@ -3,8 +3,10 @@
 Pour Mohamed, **sur ordinateur**. Le site est **statique** : des fichiers, rien
 d'autre. Pas de base de donnees, pas de serveur a regler, aucune cle a saisir.
 
-## Ou on en est (mis a jour le 10/08)
+## Ou on en est (mis a jour le 13/08)
 
+- **7 lecons**, 87 cartes, 46 minutes de contenu, 84 choses a apprendre.
+  **19 fichiers, 424 Ko** — c'est tout le site.
 - Le depot **`islampasapas` existe deja**, cree par Mohamed, **prive et vide**.
 - Le site vit aujourd'hui dans le depot `VOYAGESHALAL`, dossier
   `projects/apprentissage/`, sur la branche
@@ -106,6 +108,41 @@ le temps que le changement se propage sur internet, personne n'y peut rien.
 
 ---
 
+## Google : ce qui est deja pret, et les trois gestes qui restent
+
+**Deja en place, rien a faire :**
+
+- `sitemap.xml` — **10 pages** : l'accueil, les 7 lecons, la page des parcours,
+  les 114 sourates. « Mon chemin » en est volontairement absent : c'est une page
+  privee, elle porte une balise `noindex`.
+- **10 titres uniques et 10 descriptions uniques.** Aucun doublon — c'est ce qui
+  fait chuter un site dans les resultats.
+- Une **adresse canonique** et une image de partage sur chaque page indexable.
+- `robots.txt` bloque les deux apercus : publies, ils feraient du contenu
+  duplique avec le site entier.
+- **Donnees structurees (JSON-LD)** sur les 9 pages indexables, generees depuis
+  le catalogue par `outils/poser-json-ld.py`. Chaque lecon se declare comme une
+  ressource d'apprentissage gratuite, en francais, avec ce qu'elle enseigne
+  (« 7 versets d'Al-Fatiha ») et sa duree reelle. **On ne declare rien qu'on
+  n'ait pas** : pas de type « cours » — pour Google un cours suppose des
+  sessions et un formateur —, pas de fil d'Ariane, pas de note, pas d'avis,
+  pas d'auteur, pas de logo.
+
+**Les trois gestes qui restent, et ils sont pour toi :**
+
+1. Google Search Console → **Ajouter une propriete** → `islampasapas.fr`.
+2. **Verifier le domaine** : la methode DNS chez OVH est la plus simple, un
+   enregistrement TXT a coller.
+3. **Soumettre le sitemap** : dans « Sitemaps », taper `sitemap.xml`.
+
+L'indexation prend quelques jours. Ne la force pas page par page : le sitemap
+suffit, et une demande d'indexation manuelle n'accelere rien sur un site neuf.
+
+**Apres chaque nouvelle lecon**, relance `python3 outils/poser-json-ld.py` :
+les donnees structurees se regenerent depuis le catalogue, jamais a la main.
+
+---
+
 ## Une fois en ligne, ce qu'il faut verifier
 
 Ouvre `islampasapas.fr` sur ton telephone :
@@ -116,6 +153,12 @@ Ouvre `islampasapas.fr` sur ton telephone :
 - si tu n'entends rien, ouvre
   `islampasapas.fr/lecon-al-fatiha.html?son=diag` : un petit cadre en bas de la
   lecon dit quel recitateur repond, et envoie-moi la photo.
+
+Et pour les donnees structurees, une verification en trente secondes :
+**search.google.com/test/rich-results**, colle l'adresse d'une lecon. Il doit
+lire un bloc `LearningResource` sans erreur. Il dira peut-etre « aucun element
+enrichi detecte » : c'est normal et voulu — on n'a pas revendique de type qui
+donne une carte enrichie, parce qu'on n'y a pas droit.
 
 ---
 
