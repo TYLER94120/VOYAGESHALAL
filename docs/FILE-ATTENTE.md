@@ -13,7 +13,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 
 ## A faire
 
-> **Cycles 6, 10, 13, 16, 18, 21, 23, 29, 32 et 34 : audits.** Quand les seuls elements restants sont
+> **Cycles 6, 10, 13, 16, 18, 21, 23, 29, 32, 34 et 35 : audits.** Quand les seuls elements restants sont
 > bloques — un arbitrage, deux fois le deploiement — le cycle sert a mesurer,
 > pas a forcer un blocage. Les sept elements des audits 6, 10 et 13 sont **tous
 > faits** (cycles 7, 8, 9, 11, 12, 14, 15). **L'audit du cycle 16 n'a produit
@@ -80,7 +80,15 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 > — les 14 boutons sont bien construits, mais une seule carte s'affiche a la
 > fois. Le site allait bien les deux fois.
 >
-> **Mesure aux cycles 6, 10, 13, 16, 18, 21, 23, 29, 32 et 34, et rien a corriger** — a ne pas
+> **L'audit du cycle 35 a regarde qui le site laisse dehors** : ce qu'entend
+> quelqu'un qui ne voit pas l'ecran. Le cycle 6 avait verifie qu'une lecon se
+> termine **au clavier** ; personne n'avait verifie ce qui est **annonce**. Un
+> element en sort, le 1 ci-dessous, et quatre promesses sont saines.
+> *Mon instrument a plante au lieu d'echouer, pour la deuxieme fois en trois
+> cycles* : il cliquait une option de quiz deja repondue, donc desactivee. Corrige
+> — on verifie qu'un element est cliquable avant de cliquer, partout.
+>
+> **Mesure aux cycles 6, 10, 13, 16, 18, 21, 23, 29, 32, 34 et 35, et rien a corriger** — a ne pas
 > re-mesurer sans raison :
 > - **214 elements contiennent de l'arabe, 214 portent `lang="ar"` et
 >   `dir="rtl"`**, zero nu.
@@ -191,11 +199,45 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 > - **Quitter en pleine boucle arrete tout** *(cycle 34)* : **zero** phase apres
 >   l'arret, et la lecture en cours est coupee. Rien ne continue de tourner
 >   derriere.
+> - **Ce qui est decoratif est bien masque au lecteur d'ecran** *(cycle 35)* : la
+>   barre de progression et l'anneau du jour portent tous deux
+>   `aria-hidden="true"`. On ne fait pas lire des points a quelqu'un.
+> - **Toute commande visible a un nom accessible** *(cycle 35)* : zero bouton et
+>   zero lien sans texte ni `aria-label`, sur l'accueil comme en lecon.
+> - **Juste ou faux ne repose pas que sur la couleur** *(cycle 35)* : apres une
+>   reponse, l'option devient `disabled` — un lecteur d'ecran l'entend, meme s'il
+>   n'entend pas « juste ».
+> - **Le cout au clavier reste faible** *(cycle 35)* : apres avoir repondu, **une
+>   seule tabulation** ramene sur « Suivant ». Le probleme n'est pas le
+>   deplacement, c'est le silence.
 > - **Le bouton n'existe que si une source repond** *(cycle 34)* : avec une source
 >   simulee qui repond en 21 ms, « ↻ Repeter avec moi » apparait sur la carte du
 >   verset ; sans reponse, aucun bouton — la regle tient dans les deux sens.
 
-1. **La feuille de route promet un silence « de meme duree ». Il est 15 % plus
+1. **Le site ne dit rien a qui ne voit pas l'ecran : zero region vivante.**
+   *Preuve, relevee a chaque changement de contenu :*
+   - **`aria-live` : 0 occurrence sur tout le site.** Aucune region vivante,
+     aucun `role="status"`, aucun `role="alert"`.
+   - **On tape « Suivant », la carte change** — « Sourate Al-Fatiha, verset par
+     verset » devient « Huit lettres a surveiller » — **et le focus reste sur le
+     bouton**. Rien n'est annonce : la personne ne sait pas que l'ecran a change.
+   - **On repond a une question, l'explication s'affiche** — « Oui. Sept, et tu
+     les recites dans chaque unite de priere. » — **et rien ne l'annonce**. Le
+     focus tombe sur `body`. Elle ne sait meme pas si elle a eu juste.
+   - **A la fin, le score s'affiche** — « 3 sur 3 — sans faute » — **et rien ne
+     l'annonce** non plus. Focus sur `body`.
+   Un lecteur d'ecran n'apprend un changement que par une region vivante ou par
+   le focus deplace. **Le site n'a ni l'un ni l'autre** : tout ce qui bouge est
+   invisible a qui n'a que la voix.
+   *Ce n'est pas un probleme de clavier* — une seule tabulation ramene sur
+   « Suivant », et le cycle 6 avait deja verifie qu'une lecon se termine sans
+   souris. **C'est un probleme de silence.**
+   *Une seule mecanique repare les trois :* deplacer le focus sur le titre de la
+   nouvelle carte a chaque transition (`tabindex="-1"`), et poser une region
+   vivante discrete sur le retour de question. A mesurer apres, aux memes trois
+   endroits.
+
+2. **La feuille de route promet un silence « de meme duree ». Il est 15 % plus
    long, et c'est le texte qui a tort.**
    *Preuve, chronometree :* verset simule de **3,00 s** → silence de **3,45 s**,
    trois fois de suite, soit **x1,15**. Or la feuille de route, redite a chaque
@@ -213,7 +255,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    decrit pas ce que fait le site** — c'est la sienne, il decide s'il veut le
    texte ou le 1,15.
 
-2. **Qui avance vite trouve un site vide : 15 jours sur 18.**
+3. **Qui avance vite trouve un site vide : 15 jours sur 18.**
    *Preuve, re-mesuree au cycle 28 sur deux comportements — un seul aurait
    menti :* une personne qui **suit l'objectif du jour** et s'arrete ne rencontre
    plus **aucun** jour vide sur 18 (c'etait 5 avant que `OBJ_REVISIONS` passe a
@@ -235,7 +277,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    chaque fois plutot qu'il ne s'extrapole : l'espacement redistribue les trous a
    chaque ajout.
 
-3. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
+4. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
    *Preuve :* c'est la piece la plus puissante de la liste du responsable, et
    elle est la seule non commencee. Le blocage est reel et non technique : une
    notification calee sur une heure de priere suppose de **connaitre** cette
@@ -247,7 +289,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    **N'entre pas en travaux avant arbitrage** — c'est une decision, pas un
    chantier.
 
-4. **Aucune mesure d'entree, et un traceur est interdit ici.**
+5. **Aucune mesure d'entree, et un traceur est interdit ici.**
    *Preuve :* `grep -ril "gtag\|analytics\|plausible\|matomo\|umami"` sur toutes
    les pages et les trois fichiers JavaScript ne rend **rien**. Or le pied de
    page promet « Ta progression reste sur ton telephone. Aucun compte, aucun
@@ -256,7 +298,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    journaux). Bloque jusqu'au deploiement — question posee aux trois autres
    agents dans le brainstorm des passerelles.
 
-5. **La recitation n'a jamais ete entendue par personne.**
+6. **La recitation n'a jamais ete entendue par personne.**
    *Preuve :* `halalgpt.fr:443` et `cdn.islamic.network:443` sont refuses par la
    politique reseau de l'atelier (403 au CONNECT, journalise par le proxy,
    verifie trois fois). Le mecanisme est teste avec un recitateur simule — 7
