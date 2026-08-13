@@ -455,4 +455,24 @@ export const guidesEn: Guide[] = [
       { q: "Do hostels suit Muslim travellers?", a: "Many offer single-sex dorms — filter for « female dorm » if you need one. In North Africa, family guesthouses often give you more for the same price, in a naturally halal atmosphere." }
     ],
   },
+  {
+    slug: 'eid-family-travel',
+    lang: 'en',
+    title: 'Eid Travel with the Family: Where to Go in 2026',
+    description: 'Travelling for Eid al-Fitr or Eid al-Adha: where to experience the celebration as a family, Eid prayer abroad, and how to book well.',
+    coverImage: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&q=80',
+    category: 'Family',
+    readTime: '6 min',
+    publishedAt: '2026-04-13',
+    tags: ['Eid', 'Family', 'Celebration', 'Seasonal'],
+    content: `<p>Celebrating <strong>Eid while travelling</strong> gives your children a memory for life: the Eid prayer in a great mosque, streets in celebration, local sweets. Here is where and how.</p>
+<h2>Where to experience a memorable Eid</h2>
+<p><strong><a href="/destinations/istanbul">Istanbul</a></strong>: prayer at the Süleymaniye or the Blue Mosque, then baklava and celebration in the squares — Eid on a grand scale. <strong><a href="/destinations/marrakech">Marrakesh</a></strong>: a Moroccan family Eid, msemen in the morning and the medina in new clothes. <strong><a href="/destinations/dubai">Dubai</a></strong>: fireworks, festivals and activities for children throughout the period. <strong><a href="/destinations/sarajevo">Sarajevo</a></strong>: the most authentic Eid in Europe.</p>
+<h2>Eid prayer abroad</h2>
+<p>Ask the day before: the timing varies from country to country (often 30 to 60 minutes after sunrise) and the large mosques fill early. Our <a href="/mosque-near-me">nearest mosque</a> tool finds you the place; arrive ahead of time, and walk back if you can.</p>
+<h2>Booking wisely</h2>
+<p>Eid dates push prices up in Muslim-majority destinations: book flights and hotels <strong>two to three months ahead</strong>, and aim for the days just after the celebration to unwind — prices have come back down and the atmosphere is still festive.</p>
+<h2>With children</h2>
+<p>Pack the celebration clothes, plan a gift and eidiya budget in local currency, and keep one morning with no programme at all: Eid is lived, not scheduled to the minute. Round it out with our <a href="/guides/halal-family-holidays-2026">halal family travel guide</a>.</p>`,
+  },
 ]

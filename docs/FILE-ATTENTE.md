@@ -44,19 +44,21 @@ Colombo) — à vérifier fiche par fiche avant d'écrire. La question s'y pose
 encore autrement : en Inde le halal est courant et signalé, mais la
 question végétarienne et celle du bœuf s'y ajoutent.
 
-### 2. Le domaine anglais a 15 guides quand le français en a 24
-**Mesuré le 12 août sur les deux sitemaps servis** : voyageshalal.fr publie
-**24 guides et 45 articles de blog**, gohalaltravel.com **15 guides et 32
-articles**. Quatre traduits depuis (Japon, Thaïlande, Europe, petit budget) :
-**19 guides**. Traduire n'est pas créer et n'entre donc pas dans le quota de
-contenu — c'est le levier le moins cher du domaine anglais, qui pèse
-441 impressions contre 1 970.
+### 2. Un seul guide français reste sans version anglaise, et c'est exprès
+**Mesuré le 12 août sur les deux sitemaps servis** : le domaine anglais
+est passé de **15 à 20 guides** (le français en a 24 ; l'écart restant
+tient à trois doublons français qui pointent vers le même jumeau anglais).
+Cinq traduits dans la journée : Japon, Thaïlande, Europe, petit budget,
+Aïd en famille.
 
-Restent **2 guides français sans jumeau anglais** :
-`voyage-aid-en-famille` et `priere-avion-train-guide`.
-⚠️ **Ce dernier est à relire avant traduction, pas à traduire tel quel** :
-il tranche une question religieuse (qasr, jam'), ce que nos onze pages
-« où prier » ont justement cessé de faire le 11 août.
+Reste **`priere-avion-train-guide`**, et il n'est pas oublié : ⚠️ **il est
+à relire avant traduction, pas à traduire tel quel**. Il tranche une
+question religieuse (qasr, jam'), ce que nos onze pages « où prier » ont
+justement cessé de faire le 11 août. Le traduire en l'état propagerait en
+anglais un défaut qu'on vient de corriger en français.
+
+Le vrai gisement suivant est **le blog : 45 articles en français, 32 en
+anglais**.
 
 ### 3. Les hôtels d'Istanbul et Dubaï attendent le robot OSM
 **Mesuré** : 41 mentions « information non vérifiée » par page, et
@@ -75,6 +77,21 @@ requêtes ces pages sortent réellement.
 ---
 
 ## Fait
+
+### Le guide de l'Aïd en anglais, et le compte s'arrête là — 12 août
+**Avant** : 19 guides listés côté anglais. **Après : 20** dans le sitemap
+servi, contre 24 côté français — l'écart restant tient à trois doublons
+français qui renvoient au même jumeau anglais.
+
+**Ce que je n'ai pas fait, et c'est le point** : le guide français fait
+507 mots, le plus court de la série. Je ne l'ai pas étoffé. Ajouter des
+sections que personne n'a vérifiées pour « faire un vrai guide » serait
+exactement ce qu'on reproche aux fermes de contenu.
+
+**Mesuré** : page anglaise en 200 (592 mots, titre 47 caractères,
+description 132), ancien slug français en 301 vers le slug anglais côté EN
+et en 200 côté FR, **31 liens internes tous en 200**, sitemap anglais
+seulement.
 
 ### Le guide « petit budget » en anglais — 12 août
 **Avant** : 18 guides sur gohalaltravel.com. **Après : 19.**
