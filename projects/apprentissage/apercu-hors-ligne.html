@@ -1007,6 +1007,50 @@ a.lien-bas:hover { color: var(--creme); }
   .gros-ar { font-size: 54px; flex-basis: 66px; }
 }
 
+/* ---------- les 18 formes de base ----------
+   La lecon affirmait « 18 formes » six fois et ne l'etayait que par un groupe de
+   trois lettres : le nombre etait a croire, pas a verifier (mesure du cycle 32).
+   Cette grille numerote les dix-huit dessins pour qu'on PUISSE les compter. Le
+   numero n'est pas decoratif : c'est lui qui rend l'affirmation controlable. */
+
+.formes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.formes li {
+  background: var(--surface-1);
+  border: 1px solid var(--trait);
+  border-radius: var(--r-petit);
+  padding: 9px 6px 7px;
+  text-align: center;
+}
+
+.formes .fn {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  color: var(--texte-3);
+  font-weight: 600;
+}
+
+/* Les lettres d'une meme forme, cote a cote et dans le sens de l'arabe. */
+.formes .fl {
+  display: block;
+  font-family: var(--arabe);
+  font-size: 30px;
+  line-height: 1.25;
+  color: var(--or);
+}
+
+@media (min-width: 620px) {
+  .formes { grid-template-columns: repeat(6, 1fr); }
+}
+
 /* ---------- l'index des 114 sourates ---------- */
 
 .sourates {
@@ -2835,8 +2879,44 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
           mais 18. C'est ce qui rend l'alphabet arabe plus facile qu'il n'y parait.
         </p>
       </section>
+      <!-- 2 bis : les 18 formes, pour qu'on puisse les compter -->
+      <section class="etape" data-etape="3">
+        <span class="eyebrow">De quoi il s'agit</span>
+        <h2>Les 18 formes, une par une</h2>
+        <p class="clair">
+          Compte-les&nbsp;: <strong>dix-huit dessins</strong>, et les 28 lettres
+          tiennent dedans. Les lettres d'une meme case ont exactement le meme
+          trace&nbsp;&mdash;&nbsp;seuls les points changent.
+        </p>
+        <ol class="formes">
+          <li><span class="fn">1</span><span class="fl" lang="ar" dir="rtl">ا</span></li>
+          <li><span class="fn">2</span><span class="fl" lang="ar" dir="rtl">ب ت ث</span></li>
+          <li><span class="fn">3</span><span class="fl" lang="ar" dir="rtl">ج ح خ</span></li>
+          <li><span class="fn">4</span><span class="fl" lang="ar" dir="rtl">د ذ</span></li>
+          <li><span class="fn">5</span><span class="fl" lang="ar" dir="rtl">ر ز</span></li>
+          <li><span class="fn">6</span><span class="fl" lang="ar" dir="rtl">س ش</span></li>
+          <li><span class="fn">7</span><span class="fl" lang="ar" dir="rtl">ص ض</span></li>
+          <li><span class="fn">8</span><span class="fl" lang="ar" dir="rtl">ط ظ</span></li>
+          <li><span class="fn">9</span><span class="fl" lang="ar" dir="rtl">ع غ</span></li>
+          <li><span class="fn">10</span><span class="fl" lang="ar" dir="rtl">ف</span></li>
+          <li><span class="fn">11</span><span class="fl" lang="ar" dir="rtl">ق</span></li>
+          <li><span class="fn">12</span><span class="fl" lang="ar" dir="rtl">ك</span></li>
+          <li><span class="fn">13</span><span class="fl" lang="ar" dir="rtl">ل</span></li>
+          <li><span class="fn">14</span><span class="fl" lang="ar" dir="rtl">م</span></li>
+          <li><span class="fn">15</span><span class="fl" lang="ar" dir="rtl">ن</span></li>
+          <li><span class="fn">16</span><span class="fl" lang="ar" dir="rtl">ه</span></li>
+          <li><span class="fn">17</span><span class="fl" lang="ar" dir="rtl">و</span></li>
+          <li><span class="fn">18</span><span class="fl" lang="ar" dir="rtl">ي</span></li>
+        </ol>
+        <p class="prudence">
+          Ce sont les formes de la lettre <strong>isolee</strong>, celles que tu
+          vois ci-dessus. Attachee dans un mot, chaque forme se raccourcit&nbsp;:
+          c'est le sujet de la lecon suivante, une chose a la fois.
+        </p>
+      </section>
+
       <!-- question -->
-      <section class="etape carte-quiz" data-etape="3" data-quiz>
+      <section class="etape carte-quiz" data-etape="4" data-quiz>
         <span class="eyebrow">Question 1 sur 3</span>
         <h2>28 lettres, mais combien de dessins differents a retenir&nbsp;?</h2>
         <div class="q-choix">
@@ -2849,7 +2929,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
 
 
       <!-- 3 : alif -->
-      <section class="etape" data-etape="4">
+      <section class="etape" data-etape="5">
         <span class="eyebrow">Lettre 1 sur 28</span>
         <h2>La barre</h2>
         <div class="lettres-groupe">
@@ -2868,7 +2948,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
       </section>
 
       <!-- 4 : la dent -->
-      <section class="etape" data-etape="5">
+      <section class="etape" data-etape="6">
         <span class="eyebrow">Lettres 2 a 4</span>
         <h2>La dent, et ses points</h2>
         <div class="lettres-groupe">
@@ -2888,7 +2968,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
       </section>
 
       <!-- 5 : le corps rond -->
-      <section class="etape" data-etape="6">
+      <section class="etape" data-etape="7">
         <span class="eyebrow">Lettres 5 a 7</span>
         <h2>Le corps rond</h2>
         <div class="lettres-groupe">
@@ -2908,7 +2988,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
       </section>
 
       <!-- 6 : les quatre courtes -->
-      <section class="etape" data-etape="7">
+      <section class="etape" data-etape="8">
         <span class="eyebrow">Lettres 8 a 11</span>
         <h2>Les quatre courtes</h2>
         <p class="clair">Deux paires, et toutes les quatre ne s'attachent pas a la suivante.</p>
@@ -2932,7 +3012,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
         </div>
       </section>
       <!-- question -->
-      <section class="etape carte-quiz" data-etape="8" data-quiz>
+      <section class="etape carte-quiz" data-etape="9" data-quiz>
         <span class="eyebrow">Question 2 sur 3</span>
         <h2>Qu'est-ce qui distingue <span class="ar-petit" lang="ar" dir="rtl">ب</span>, <span class="ar-petit" lang="ar" dir="rtl">ت</span> et <span class="ar-petit" lang="ar" dir="rtl">ث</span>&nbsp;?</h2>
         <div class="q-choix">
@@ -2945,7 +3025,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
 
 
       <!-- 7 : les dents en serie et les boucles -->
-      <section class="etape" data-etape="9">
+      <section class="etape" data-etape="10">
         <span class="eyebrow">Lettres 12 a 15</span>
         <h2>Les dents, et les boucles</h2>
         <div class="lettres-groupe">
@@ -2969,7 +3049,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
       </section>
 
       <!-- 8 : deux paires -->
-      <section class="etape" data-etape="10">
+      <section class="etape" data-etape="11">
         <span class="eyebrow">Lettres 16 a 19</span>
         <h2>Deux paires de plus</h2>
         <div class="lettres-groupe">
@@ -2993,7 +3073,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
       </section>
 
       <!-- 9 : quatre lettres -->
-      <section class="etape" data-etape="11">
+      <section class="etape" data-etape="12">
         <span class="eyebrow">Lettres 20 a 23</span>
         <h2>Quatre lettres</h2>
         <div class="lettres-groupe">
@@ -3017,7 +3097,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
       </section>
 
       <!-- 10 : les cinq dernieres -->
-      <section class="etape" data-etape="12">
+      <section class="etape" data-etape="13">
         <span class="eyebrow">Lettres 24 a 28</span>
         <h2>Les cinq dernieres</h2>
         <div class="lettres-groupe">
@@ -3044,7 +3124,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
         </div>
       </section>
       <!-- question -->
-      <section class="etape carte-quiz" data-etape="13" data-quiz>
+      <section class="etape carte-quiz" data-etape="14" data-quiz>
         <span class="eyebrow">Question 3 sur 3</span>
         <h2>Combien de lettres ne s'attachent jamais a la suivante&nbsp;?</h2>
         <div class="q-choix">
@@ -3057,7 +3137,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
 
 
       <!-- 11 : ce que tu retiens -->
-      <section class="etape" data-etape="14">
+      <section class="etape" data-etape="15">
         <div class="retenir">
           <span class="eyebrow">Ce que tu retiens</span>
           <p class="q">Ce ne sont pas<br>28 dessins a apprendre,<br>mais 18.</p>
@@ -3076,7 +3156,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
       </section>
 
       <!-- 12 : fin -->
-      <section class="etape fin" data-etape="15">
+      <section class="etape fin" data-etape="16">
         <svg width="46" height="46" viewBox="0 0 24 24" fill="#c9a84c" aria-hidden="true">
           <path d="M12 2 L22 12 L12 22 L2 12 Z M5 5 H19 V19 H5 Z"/>
         </svg>
@@ -3831,7 +3911,7 @@ body { padding-bottom: calc(34px + env(safe-area-inset-bottom)); }
         <div class="pliens">
           <a class="ligne" href="lecon-alphabet-arabe.html">
             <svg class="etoile" width="15" height="15" viewBox="0 0 24 24" fill="#c9a84c" aria-hidden="true"><path d="M12 2 L22 12 L12 22 L2 12 Z M5 5 H19 V19 H5 Z"/></svg>
-            <span><span class="t">Ouvrir la lecon</span><span class="s">14 cartes &middot; La langue arabe</span></span>
+            <span><span class="t">Ouvrir la lecon</span><span class="s">15 cartes &middot; La langue arabe</span></span>
             <span class="fl" aria-hidden="true">&rsaquo;</span>
           </a>
         </div>
@@ -5431,13 +5511,13 @@ if (typeof module !== 'undefined' && module.exports) { module.exports = ippCoran
       url: 'lecon-alphabet-arabe.html',
       parcours: 'alphabet',
       minutes: 7,
-      cartes: 14,
+      cartes: 15,
       acquis: 28,
       unite: 'lettre de l\'alphabet',
       unites: 'lettres de l\'alphabet',
       publiee: true,
-      resume: 'Bonne nouvelle : ce ne sont pas 28 dessins a retenir, mais 18. '
-            + 'Ce sont les points qui font le reste.'
+      resume: 'Bonne nouvelle : ce ne sont pas 28 dessins a retenir, mais 18 — '
+            + 'affiches un par un pour que tu les comptes. Les points font le reste.'
     },
     {
       // Placee juste apres l'alphabet, et pas ailleurs : elle suppose de

@@ -984,6 +984,50 @@ a.lien-bas:hover { color: var(--creme); }
   .gros-ar { font-size: 54px; flex-basis: 66px; }
 }
 
+/* ---------- les 18 formes de base ----------
+   La lecon affirmait « 18 formes » six fois et ne l'etayait que par un groupe de
+   trois lettres : le nombre etait a croire, pas a verifier (mesure du cycle 32).
+   Cette grille numerote les dix-huit dessins pour qu'on PUISSE les compter. Le
+   numero n'est pas decoratif : c'est lui qui rend l'affirmation controlable. */
+
+.formes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.formes li {
+  background: var(--surface-1);
+  border: 1px solid var(--trait);
+  border-radius: var(--r-petit);
+  padding: 9px 6px 7px;
+  text-align: center;
+}
+
+.formes .fn {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  color: var(--texte-3);
+  font-weight: 600;
+}
+
+/* Les lettres d'une meme forme, cote a cote et dans le sens de l'arabe. */
+.formes .fl {
+  display: block;
+  font-family: var(--arabe);
+  font-size: 30px;
+  line-height: 1.25;
+  color: var(--or);
+}
+
+@media (min-width: 620px) {
+  .formes { grid-template-columns: repeat(6, 1fr); }
+}
+
 /* ---------- l'index des 114 sourates ---------- */
 
 .sourates {

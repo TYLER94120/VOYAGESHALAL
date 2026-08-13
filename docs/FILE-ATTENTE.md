@@ -58,7 +58,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 > qu'elle montre**, et la coherence des references. Jamais fait : les cycles 6 et
 > 9 avaient compte les cartes, personne n'avait compte le contenu. **Sept lecons
 > sur sept sont exactes** — detail plus bas — et l'audit n'a produit **qu'un seul
-> element**, le 1 ci-dessous.
+> element**, **fait au cycle 33**.
 > *Deux faux positifs de mon propre outillage, ecartes avant publication :* mon
 > detecteur de compagnon cherchait « d'apres » et signalait deux citations qui
 > nomment bien Abou Hourayra, par renvoi (« Fin du hadith d'Abou Hourayra
@@ -162,28 +162,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 >   trois sources explicites, Al-An'am (6) versets **84, 85 et 86**, et Mouhammad
 >   a part, Al-Ahzab (33) verset 40.
 
-1. **La lecon d'alphabet promet « 18 formes » six fois et n'en montre jamais 18.**
-   *Preuve :* le nombre **18** est affirme **six fois** dans la meme lecon — la
-   meta description, l'og:description, le titre d'une carte (« 28 lettres, mais
-   18 formes »), le corps du texte, la bonne reponse d'une question, et la carte
-   « Ce que tu retiens ». C'est la promesse centrale de la lecon, sa « bonne
-   nouvelle ». Ce que la page montre pour l'etayer : **un seul groupe de trois
-   lettres** (ب ت ث, meme dessin, points differents).
-   Et le reste de la lecon enseigne les 28 lettres en **huit cartes** (1, 3, 3, 4,
-   4, 4, 4, 5). Un lecteur qui compte ce qu'on lui montre obtient **8**, pas 18 —
-   les deux nombres sont vrais mais ne comptent pas la meme chose (les dessins de
-   base d'un cote, les paquets d'apprentissage de l'autre), et **la page ne
-   reconcilie jamais les deux**. Seules les trois premieres cartes portent un nom
-   de forme (« La barre », « La dent », « Le corps rond ») ; les cinq suivantes
-   sont de simples lots.
-   *Ce n'est pas une faute de fait* — 28 lettres partagent bien 18 dessins de
-   base — **c'est un nombre qu'on demande de croire.** Sur un site dont la regle
-   est qu'une affirmation se verifie, la promesse la plus repetee de cette lecon
-   est la seule qu'un lecteur ne peut pas controler.
-   *Sujet linguistique, donc voie rapide :* montrer les 18, ou nommer chaque
-   carte par sa forme et annoncer le nombre que la lecon enseigne vraiment.
-
-2. **Qui avance vite trouve un site vide : 15 jours sur 18.**
+1. **Qui avance vite trouve un site vide : 15 jours sur 18.**
    *Preuve, re-mesuree au cycle 28 sur deux comportements — un seul aurait
    menti :* une personne qui **suit l'objectif du jour** et s'arrete ne rencontre
    plus **aucun** jour vide sur 18 (c'etait 5 avant que `OBJ_REVISIONS` passe a
@@ -205,7 +184,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    chaque fois plutot qu'il ne s'extrapole : l'espacement redistribue les trous a
    chaque ajout.
 
-3. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
+2. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
    *Preuve :* c'est la piece la plus puissante de la liste du responsable, et
    elle est la seule non commencee. Le blocage est reel et non technique : une
    notification calee sur une heure de priere suppose de **connaitre** cette
@@ -217,7 +196,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    **N'entre pas en travaux avant arbitrage** — c'est une decision, pas un
    chantier.
 
-4. **Aucune mesure d'entree, et un traceur est interdit ici.**
+3. **Aucune mesure d'entree, et un traceur est interdit ici.**
    *Preuve :* `grep -ril "gtag\|analytics\|plausible\|matomo\|umami"` sur toutes
    les pages et les trois fichiers JavaScript ne rend **rien**. Or le pied de
    page promet « Ta progression reste sur ton telephone. Aucun compte, aucun
@@ -226,7 +205,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    journaux). Bloque jusqu'au deploiement — question posee aux trois autres
    agents dans le brainstorm des passerelles.
 
-5. **La recitation n'a jamais ete entendue par personne.**
+4. **La recitation n'a jamais ete entendue par personne.**
    *Preuve :* `halalgpt.fr:443` et `cdn.islamic.network:443` sont refuses par la
    politique reseau de l'atelier (403 au CONNECT, journalise par le proxy,
    verifie trois fois). Le mecanisme est teste avec un recitateur simule — 7
@@ -238,6 +217,37 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 ---
 
 ## Fait
+
+- **Les 18 formes sont montrees, numerotees, comptables** *(13 aout, cycle 33)* —
+  **avant : le nombre 18 affirme 6 fois dans la lecon, etaye par 1 seul groupe de
+  trois lettres.** Un lecteur qui comptait ce qu'on lui montrait obtenait **8**,
+  les huit cartes d'apprentissage. **Apres : une carte affiche les 18 dessins,
+  numerotes 1 a 18**, et elle arrive **avant** la question qui demande ce nombre —
+  on ne demande plus de croire ce qu'on n'a pas montre.
+  *Verifie a l'ecran, pas dans le code :* **18 cases, numerotees 1 a 18 sans
+  trou**, contenant **28 lettres, 28 distinctes**, et ce sont **exactement les 28
+  de l'alphabet** — aucun ecart. Les groupes : ا | بتث | جحخ | دذ | رز | سش | صض |
+  طظ | عغ | ف | ق | ك | ل | م | ن | ه | و | ي.
+  *Le nombre est desormais ancre a quelque chose de visible.* La carte precise que
+  ce sont les formes de la lettre **isolee** — celles affichees juste au-dessus —
+  et que la forme se raccourcit une fois la lettre attachee, ce qui est le sujet
+  de la lecon suivante. Sans cette phrase, 18 flottait : selon qu'on compte les
+  formes isolees ou attachees, le nombre change.
+  *Aucun arabe saisi a la main*, comme au cycle 26 : les 18 groupes sont composes
+  point de code par point de code, et l'union verifiee **egale a l'alphabet, dans
+  l'ordre, sans doublon**, avant d'ecrire le fichier.
+  *La lecon passe de 14 a 15 cartes*, annonce corrige dans le catalogue et sur la
+  page des lecons. La premiere question reste a **3 tapes**, la limite du site.
+  *Verrous :* `test-formes.mjs`, nouveau, compte les cases a l'ecran en 414 et en
+  **320 px**. **Sur la version d'avant, il echoue 3 fois.**
+  *Et un defaut de mon instrument, trouve en le verifiant :* sa premiere version
+  **plantait** sur l'ancien code au lieu d'echouer — elle cliquait « Suivant » sur
+  une carte-question, ou le bouton est desactive, et l'attente expirait. Mon
+  comptage des lignes « ECHEC » a alors lu **0 rouge sur un crash**. C'est
+  exactement le defaut corrige dans le lanceur au cycle 26, refait a la main
+  ailleurs : **un test qui plante n'est pas un test qui passe**, et un verdict ne
+  se lit pas dans du texte. Le test s'arrete maintenant des que le bouton n'est
+  plus cliquable, et les deux cotes sont mesures au **code de sortie**.
 
 - **Un non est enregistre, et le site n'insiste plus** *(12 aout, cycle 31)* —
   **avant : « Pas d'heure fixe » puis la question reposee 7 fois sur 7** en

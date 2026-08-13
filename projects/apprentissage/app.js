@@ -105,13 +105,13 @@
       url: 'lecon-alphabet-arabe.html',
       parcours: 'alphabet',
       minutes: 7,
-      cartes: 14,
+      cartes: 15,
       acquis: 28,
       unite: 'lettre de l\'alphabet',
       unites: 'lettres de l\'alphabet',
       publiee: true,
-      resume: 'Bonne nouvelle : ce ne sont pas 28 dessins a retenir, mais 18. '
-            + 'Ce sont les points qui font le reste.'
+      resume: 'Bonne nouvelle : ce ne sont pas 28 dessins a retenir, mais 18 — '
+            + 'affiches un par un pour que tu les comptes. Les points font le reste.'
     },
     {
       // Placee juste apres l'alphabet, et pas ailleurs : elle suppose de
