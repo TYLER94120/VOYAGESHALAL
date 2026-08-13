@@ -44,9 +44,12 @@ guides, présents et à venir.
 **Ce qui reste, et c'est le gros du travail** :
 1. **Les images.** Point de départ : **55 contenus pour seulement 18 images
    distinctes**, et **la même photo sur 19 pages**. Au 12 août au soir :
-   **23 images distinctes, la plus partagée est tombée à 17 pages, et
-   11 pages de guide sur 41 ont une photo qui leur est propre** (Istanbul,
-   Dubaï, Marrakech, Omra, Malaisie, Europe — en français comme en anglais).
+   **15 pages de guide sur 41 ont une photo qui leur est propre**, en
+   français comme en anglais : Istanbul, Dubaï, Marrakech, Omra, Malaisie,
+   Europe, prière en avion, petit budget. **Il reste 26 pages** à traiter,
+   et une trentaine de photos encore inutilisées dans `public/guides/`
+   (Antalya, Le Caire, Paris, Singapour, Tanger, New York, Casablanca,
+   Amman, Doha, Abou Dabi, et les images de blog).
    Le dépôt contient pourtant **55 photos inutilisées** dans
    `public/guides/` (istanbul, dubai, marrakech, fès, antalya, doha, amman,
    le caire, londres, paris, sarajevo, singapour, kuala lumpur, médine…).
@@ -161,6 +164,30 @@ requêtes ces pages sortent réellement.
 ---
 
 ## Fait
+
+### Quatre guides de plus illustrés, et une photo remise à sa place — 12 août
+**Avant** : 11 pages de guide avec une photo à elles. **Après : 15 sur 41.**
+
+**Les choix du lot**, tous faits en ouvrant les images avant de les poser :
+- « Prière en avion et en train » reçoit une aile d'avion au-dessus des
+  nuages — le sujet même de la page ;
+- « Voyage halal pas cher » reçoit un arc à muqarnas d'une médersa de Fès,
+  le minaret au fond : le Maroc est la première destination que ce guide
+  cite ;
+- « Pays halal friendly en Europe » passe en couverture sur le portique
+  ottoman de Sarajevo — c'est le premier pays de son classement, il mérite
+  l'ouverture — et Londres, quatrième, illustre la section britannique.
+
+**Le détail qui compte** : en promouvant Sarajevo en couverture, la même
+image se retrouvait deux fois sur la page. Vérifié et retiré. Une photo en
+double dans un guide, c'est le genre de négligence qui donne l'impression
+que personne ne relit.
+
+**Les versions anglaises reçoivent les mêmes photos**, y compris celle de
+Londres dans le corps du texte.
+
+**Mesuré** : 41 guides servis sur les deux domaines, **0 en erreur, 0 sans
+image**, les 4 nouveaux fichiers photo vérifiés en 200.
 
 ### Omra, Malaisie, Europe illustrés — et deux photos écartées faute de certitude — 12 août
 **Avant** : 0 guide avec une photo à lui. **Après : 11 pages de guide sur
