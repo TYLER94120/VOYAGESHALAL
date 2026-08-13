@@ -558,7 +558,7 @@ const guidesFr: Guide[] = [
     slug: 'omra-2026-guide-complet',
     title: 'Omra 2026 : guide complet pour préparer votre pèlerinage',
     description: 'Tout ce qu\'il faut savoir pour préparer votre Omra en 2026 : visa, agences, budget, rituels, meilleure période et conseils pratiques.',
-    coverImage: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&q=80',
+    coverImage: '/guides/medine-j1.jpg',
     category: 'Spiritualité',
     readTime: '10 min',
     publishedAt: '2026-06-01',
@@ -589,6 +589,9 @@ const guidesFr: Guide[] = [
 <li><strong>Budget journalier (repas + déplacements)</strong> : 30 € à 80 €/jour</li>
 </ul>
 
+<div class="encadre">
+<p><strong>Ce que nous ne faisons pas.</strong> Nous ne tranchons aucune question religieuse sur cette page : la validité d'un rite, les cas particuliers, ce qui est obligatoire ou recommandé se demandent à un savant ou à votre imam. Ce guide ne traite que du côté pratique — visa, période, budget, organisation — et rien d'autre. Pour une question religieuse, <a href="https://halalgpt.fr" rel="noopener">HalalGPT</a> ou votre mosquée vous répondront mieux que nous.</p>
+</div>
 <h2>Les étapes clés des rituels de l'Omra</h2>
 <ol>
 <li><strong>Ihram</strong> : état de pureté rituel revêtu à la Miqat (point de limite). Tenue blanche pour les hommes, tenue modeste pour les femmes.</li>
@@ -924,7 +927,7 @@ const guidesFr: Guide[] = [
     slug: 'malaisie-halal-destination',
     title: 'Malaisie : la destination halal n°1 mondiale',
     description: 'Pourquoi la Malaisie est régulièrement élue meilleure destination halal mondiale ? JAKIM, gastronomie, nature — notre guide complet.',
-    coverImage: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=1200&q=80',
+    coverImage: '/guides/kuala-lumpur-j1.jpg',
     category: 'Destinations',
     readTime: '8 min',
     publishedAt: '2026-06-15',
@@ -1284,6 +1287,7 @@ const guidesFr: Guide[] = [
 <p>Grandes communautés = offre halal dense dans toutes les métropoles : <a href="/destinations/paris">Paris</a>, Lyon, Berlin, Amsterdam. Voir notre article <a href="/blog/restaurants-halal-paris">restaurants halal à Paris</a>.</p>
 <h2>Conseil de planification</h2>
 <p>Pour un premier city-break halal en Europe : Sarajevo (immersion), Grenade (émotion historique) ou Londres (zéro effort). Toutes nos villes européennes sont sur <a href="/destinations">la carte des destinations</a>.</p>
+<figure><img src="/guides/sarajevo-j1.jpg" alt="Portique à arcades et colonnes d'une mosquée ottomane à Sarajevo" width="900" height="600" loading="lazy" /><figcaption>Le portique d'une mosquée ottomane de Sarajevo. La vieille ville en compte des dizaines, toutes en activité.</figcaption></figure>
 <h2>Où manger et prier, pays par pays</h2>
 <p><strong>Bosnie</strong> : à <a href="/destinations/sarajevo">Sarajevo</a>, la Baščaršija sert ćevapi et burek halal par défaut ; la mosquée Gazi Husrev-beg (XVIe) est le cœur battant de la vieille ville. <strong>Espagne</strong> : à <a href="/destinations/grenade">Grenade</a>, la rue Calderería Nueva (« petite Albaicín ») aligne teterías et restaurants halal face à l'Alhambra ; la Mezquita Mayor de Granada, sur le mirador de San Nicolás, accueille les prières avec vue sur l'Alhambra. <strong>Albanie</strong> : la mosquée Et'hem Bey trône sur la place Skanderbeg de <a href="/destinations/tirana">Tirana</a>, et les grills (zgara) servent agneau et poulet — demandez, la viande halal est courante mais pas systématique.</p>
 <h2>Les pièges européens (et comment les éviter)</h2>
