@@ -28,7 +28,35 @@ Chiffres AVANT le 9 août, 7 jours : voyageshalal.fr 1 970 impressions /
 
 ## À faire
 
-### 1. Les guides des deux mines sont les pages les plus maigres du site
+### 1. Refondre les 22 guides : la maquette est faite, le contenu reste à écrire
+**Demande de Mohamed, 12 août** : « Des beaux guides avec de belles photos,
+pas un truc donné à la va-vite. Les personnes laissent leur mail pour avoir
+un guide gratuit, je ne veux pas qu'elles soient déçues. »
+
+**La cause racine, mesurée le jour même : ZÉRO image sur les 24 pages de
+guide.** La photo de couverture existait dans les données depuis toujours,
+mais la page ne l'affichait nulle part — les guides étaient des murs de
+texte. **C'est fait : 42 pages de guide sur les deux domaines, 0 sans
+image.** Avec couverture pleine largeur, sommaire automatique, typographie
+soignée et format d'encadré. La maquette profite d'un coup à tous les
+guides, présents et à venir.
+
+**Ce qui reste, et c'est le gros du travail** :
+1. **Les images.** Mesuré : **55 contenus pour seulement 18 images
+   distinctes**, et **la même photo sur 19 pages** — Istanbul, l'Omra, le
+   Ramadan, la checklist et le voyage solo femme partagent le même cliché.
+   Le dépôt contient pourtant **55 photos inutilisées** dans
+   `public/guides/` (istanbul, dubai, marrakech, fès, antalya, doha, amman,
+   le caire, londres, paris, sarajevo, singapour, kuala lumpur, médine…).
+   Istanbul est fait et sert de modèle : couverture propre + 2 photos de
+   section légendées, **chaque image ouverte et regardée avant d'être
+   posée**. À dérouler ville par ville.
+2. **Le fond.** Médiane à 574 mots quand nos fiches villes en font 1 300 —
+   et surtout, chaque affirmation est à relire : c'est ce passage-là qui a
+   fait tomber quatre restaurants inventés sur Istanbul et la promesse
+   fausse de Dubaï, pas l'ajout de paragraphes.
+
+### 2. Les guides des deux mines sont les pages les plus maigres du site
 **Demande directe de Mohamed, 12 août** : « Il faut retravailler les
 guides, ils sont extrêmement génériques et très mal faits. » Mesuré plutôt
 que discuté, et il a raison — mais le défaut n'est pas où on l'attendrait.
@@ -61,7 +89,7 @@ en comptent au moins trois (« sereinement », « incontournable »,
 Marrakech. Fusionner les doublons avant d'écrire une ligne, sinon on
 enrichit une page qui sera redirigée.
 
-### 2. Les sections « manger » et « prier » manquent sur 277 fiches villes
+### 3. Les sections « manger » et « prier » manquent sur 277 fiches villes
 **Mesuré le 12 août, après huit séries** (Asie, Amérique du Nord, Balkans,
 Europe du Nord, Amérique latine, Afrique subsaharienne, Turquie, Maghreb) :
 **77 fiches sur 354** ont leurs quatre sections. Les 277 autres n'ont que
@@ -77,7 +105,7 @@ Colombo) — à vérifier fiche par fiche avant d'écrire. La question s'y pose
 encore autrement : en Inde le halal est courant et signalé, mais la
 question végétarienne et celle du bœuf s'y ajoutent.
 
-### 3. Un seul guide français reste sans version anglaise, et c'est exprès
+### 4. Un seul guide français reste sans version anglaise, et c'est exprès
 **Mesuré le 12 août sur les deux sitemaps servis** : le domaine anglais
 est passé de **15 à 20 guides** (le français en a 24 ; l'écart restant
 tient à trois doublons français qui pointent vers le même jumeau anglais).
@@ -93,7 +121,7 @@ anglais un défaut qu'on vient de corriger en français.
 Le vrai gisement suivant est **le blog : 45 articles en français, 32 en
 anglais**.
 
-### 4. Les hôtels d'Istanbul et Dubaï attendent le robot OSM
+### 5. Les hôtels d'Istanbul et Dubaï attendent le robot OSM
 **Mesuré** : 41 mentions « information non vérifiée » par page, et
 **0 hôtel avec une politique alcool connue**. Le script et le workflow
 existent (`enrich-hotels-osm.mjs`, `.github/workflows/enrich-hotels.yml`)
@@ -101,7 +129,7 @@ mais n'ont jamais été lancés : le réseau externe est fermé depuis
 l'environnement de l'agent. **Action pour Mohamed**, pas pour l'agent :
 GitHub → Actions → « Enrichir les hôtels » → Run workflow.
 
-### 5. L'accueil et le blog : 704 impressions, ZÉRO clic
+### 6. L'accueil et le blog : 704 impressions, ZÉRO clic
 **Mesuré** (7 jours avant le 9 août). Les titres ont été refaits le 9 août,
 donc **ne rien conclure avant le 16**. Si le zéro persiste après cette
 date, le problème n'est pas le titre : il faudra regarder sur quelles
@@ -110,6 +138,34 @@ requêtes ces pages sortent réellement.
 ---
 
 ## Fait
+
+### Les guides n'avaient AUCUNE image, et l'email « guide gratuit » était cassé — 12 août
+**Deux découvertes du même cycle, toutes deux parties de la même remarque
+de Mohamed sur la qualité des guides.**
+
+**1. L'email de bienvenue partait avec un lien mort dans chaque langue.**
+Le tout premier message reçu par quelqu'un qui vient de nous confier son
+adresse. Côté français, le **premier lien de la liste** renvoyait une 404
+(`/guides/voyager-pendant-ramadan-guide-complet` : l'article est dans
+`/blog`). Côté anglais, `/nearby-mosque` n'existe pas — le slug est
+`/mosque-near-me`. **12 liens, 2 morts → 0**, et
+`scripts/test-email-bienvenue.mjs` refuse désormais de construire le site
+si l'un d'eux ne mène nulle part. Corrigé aussi la promesse « 20+ pages »
+affichée sous le formulaire : ce qui part est une sélection de ressources.
+Promettre plus que ce qu'on livre est la façon la plus sûre de décevoir.
+
+**2. Les 24 pages de guide n'affichaient aucune image.** La couverture
+existait dans les données mais n'était rendue nulle part. **42 pages de
+guide sur les deux domaines, 0 sans image** désormais — couverture pleine
+largeur avec titre en surimpression, **sommaire construit automatiquement
+à partir des titres** (donc jamais désynchronisé), typographie de lecture,
+puces dorées, format de figure légendée et d'encadré « à retenir ».
+
+**Istanbul sert de modèle** : couverture remplacée par une photo à nous, et
+deux photos de section — la cour de la Süleymaniye, Sainte-Sophie vue du
+Bosphore — **chacune ouverte et regardée avant d'être posée**. On ne publie
+pas une image dont on ignore ce qu'elle montre, c'est la même règle que
+pour les faits.
 
 ### Le guide Dubaï disait « mangez partout sans vérifier ». C'était faux — 12 août
 **Le défaut le plus grave trouvé depuis le début de ce chantier**, et il
