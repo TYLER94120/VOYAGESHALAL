@@ -381,7 +381,7 @@ export const guidesEn: Guide[] = [
     lang: 'en',
     title: 'Halal-Friendly Countries in Europe: Where to Travel',
     description: 'Bosnia, Albania, Spain and its Andalusian heritage, the UK: the European countries where halal travel is easiest, with mosques, food and atmosphere.',
-    coverImage: 'https://images.unsplash.com/photo-1555993539-1732b0258235?w=1200&q=80',
+    coverImage: '/guides/sarajevo-j1.jpg',
     category: 'Destinations',
     readTime: '7 min',
     publishedAt: '2026-04-09',
@@ -393,6 +393,7 @@ export const guidesEn: Guide[] = [
 <p>A Muslim majority, legendary hospitality, beaches and mountains, and very low prices. <a href="/destinations/tirana">Tirana</a> is taking off.</p>
 <h2>3. Spain — the legacy of Al-Andalus</h2>
 <p>The Alhambra in <a href="/destinations/grenade">Granada</a>, the Mezquita of Córdoba, <a href="/destinations/seville">Seville</a>: the most moving Muslim heritage in Europe, with a halal offer growing fast (Granada has many halal restaurants around the Albaicín).</p>
+<figure><img src="/guides/londres-j1.jpg" alt="The Palace of Westminster and Big Ben at dusk, seen from the Thames" width="900" height="396" loading="lazy" /><figcaption>London is one of the best-served capitals in the world for halal food: the HMC label is displayed in the window.</figcaption></figure>
 <h2>4. United Kingdom — the easy option</h2>
 <p><a href="/destinations/londres">London</a> is one of the halal capitals of the world: thousands of restaurants (the HMC label is widespread), major mosques, entire districts. Manchester and Birmingham follow.</p>
 <h2>5. France, Germany, the Netherlands</h2>
@@ -422,7 +423,7 @@ export const guidesEn: Guide[] = [
     lang: 'en',
     title: 'Cheap Halal Travel: Destinations and Real Budgets',
     description: 'Travelling halal on a small budget: the cheapest destinations (Turkey, Morocco, the Balkans, Malaysia) and real daily budgets, laid out plainly.',
-    coverImage: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&q=80',
+    coverImage: '/guides/fes-j1.jpg',
     category: 'Practical',
     readTime: '6 min',
     publishedAt: '2026-04-05',

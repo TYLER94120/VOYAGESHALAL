@@ -1155,7 +1155,7 @@ const guidesFr: Guide[] = [
     slug: 'priere-avion-train-guide',
     title: 'Prière en avion et en train : comment faire, concrètement',
     description: 'Peut-on prier dans l\'avion ou le train ? Oui — assis, par gestes, en regroupant les prières. Le guide pratique du voyageur musulman.',
-    coverImage: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&q=80',
+    coverImage: '/guides/blog-avion.jpg',
     category: 'Pratique',
     readTime: '5 min',
     publishedAt: '2026-03-24',
@@ -1231,7 +1231,7 @@ const guidesFr: Guide[] = [
     slug: 'voyage-halal-petit-budget',
     title: 'Voyage halal pas cher : destinations et astuces',
     description: 'Voyager halal avec un petit budget : les destinations les moins chères (Turquie, Maroc, Balkans, Malaisie), et des budgets réels par jour.',
-    coverImage: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&q=80',
+    coverImage: '/guides/fes-j1.jpg',
     category: 'Pratique',
     readTime: '6 min',
     publishedAt: '2026-04-05',
@@ -1269,7 +1269,7 @@ const guidesFr: Guide[] = [
     slug: 'europe-halal-friendly',
     title: 'Pays halal friendly en Europe : où voyager',
     description: 'Bosnie, Albanie, Espagne (héritage andalou), Royaume-Uni… Le classement des pays européens les plus halal friendly : mosquées, restaurants halal, ambiance.',
-    coverImage: 'https://images.unsplash.com/photo-1555993539-1732b0258235?w=1200&q=80',
+    coverImage: '/guides/sarajevo-j1.jpg',
     category: 'Destinations',
     readTime: '7 min',
     publishedAt: '2026-04-09',
@@ -1281,13 +1281,13 @@ const guidesFr: Guide[] = [
 <p>Majorité musulmane, hospitalité légendaire, plages et montagnes, prix mini. <a href="/destinations/tirana">Tirana</a> décolle.</p>
 <h2>3. Espagne — l\'héritage d\'Al-Andalus</h2>
 <p>L\'Alhambra de <a href="/destinations/grenade">Grenade</a>, la Mezquita de Cordoue, <a href="/destinations/seville">Séville</a> : le patrimoine musulman le plus émouvant d\'Europe, et une offre halal en forte croissance (Grenade compte de nombreux restaurants halal autour de l\'Albaicín).</p>
+<figure><img src="/guides/londres-j1.jpg" alt="Le palais de Westminster et Big Ben au crépuscule, vus depuis la Tamise" width="900" height="396" loading="lazy" /><figcaption>Londres est l'une des capitales du monde les mieux pourvues en halal : le label HMC y est affiché en vitrine.</figcaption></figure>
 <h2>4. Royaume-Uni — la facilité</h2>
 <p><a href="/destinations/londres">Londres</a> est l\'une des capitales halal du monde : des milliers de restaurants (label HMC répandu), mosquées majeures, quartiers entiers. Manchester et Birmingham suivent.</p>
 <h2>5. France, Allemagne, Pays-Bas</h2>
 <p>Grandes communautés = offre halal dense dans toutes les métropoles : <a href="/destinations/paris">Paris</a>, Lyon, Berlin, Amsterdam. Voir notre article <a href="/blog/restaurants-halal-paris">restaurants halal à Paris</a>.</p>
 <h2>Conseil de planification</h2>
 <p>Pour un premier city-break halal en Europe : Sarajevo (immersion), Grenade (émotion historique) ou Londres (zéro effort). Toutes nos villes européennes sont sur <a href="/destinations">la carte des destinations</a>.</p>
-<figure><img src="/guides/sarajevo-j1.jpg" alt="Portique à arcades et colonnes d'une mosquée ottomane à Sarajevo" width="900" height="600" loading="lazy" /><figcaption>Le portique d'une mosquée ottomane de Sarajevo. La vieille ville en compte des dizaines, toutes en activité.</figcaption></figure>
 <h2>Où manger et prier, pays par pays</h2>
 <p><strong>Bosnie</strong> : à <a href="/destinations/sarajevo">Sarajevo</a>, la Baščaršija sert ćevapi et burek halal par défaut ; la mosquée Gazi Husrev-beg (XVIe) est le cœur battant de la vieille ville. <strong>Espagne</strong> : à <a href="/destinations/grenade">Grenade</a>, la rue Calderería Nueva (« petite Albaicín ») aligne teterías et restaurants halal face à l'Alhambra ; la Mezquita Mayor de Granada, sur le mirador de San Nicolás, accueille les prières avec vue sur l'Alhambra. <strong>Albanie</strong> : la mosquée Et'hem Bey trône sur la place Skanderbeg de <a href="/destinations/tirana">Tirana</a>, et les grills (zgara) servent agneau et poulet — demandez, la viande halal est courante mais pas systématique.</p>
 <h2>Les pièges européens (et comment les éviter)</h2>
