@@ -416,4 +416,43 @@ export const guidesEn: Guide[] = [
       { q: "What are the halal pitfalls in Europe?", a: "Hidden pork (lardons, jamón, stocks), alcohol in the cooking (wine sauces, beer batter) and shared fryers. The habits that work: ask what is in the dish, choose simple grilled food, look for Muslim districts and labels such as HMC in the UK." }
     ],
   },
+  {
+    slug: 'budget-halal-travel',
+    lang: 'en',
+    title: 'Cheap Halal Travel: Destinations and Real Budgets',
+    description: 'Travelling halal on a small budget: the cheapest destinations (Turkey, Morocco, the Balkans, Malaysia) and real daily budgets, laid out plainly.',
+    coverImage: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&q=80',
+    category: 'Practical',
+    readTime: '6 min',
+    publishedAt: '2026-04-05',
+    tags: ['Budget', 'Cheap travel', 'Students', 'Tips'],
+    content: `<p>Travelling halal does not cost more — often the opposite: the best halal destinations are also among the <strong>cheapest in the world</strong>.</p>
+<h2>The value-for-money podium</h2>
+<p><strong>Turkey outside Istanbul</strong> (Bursa, Konya, the coast): meals €3-6, hotels €25-50. <strong>Morocco</strong>: <a href="/destinations/fes">Fez</a> and <a href="/destinations/agadir">Agadir</a> stay very gentle, meals €3-8. <strong>The Muslim Balkans</strong>: <a href="/destinations/sarajevo">Sarajevo</a> and Albania — Europe at low prices with mosques everywhere. <strong>Malaysia</strong>: €2-4 for a labelled food-court meal, unbeatable in Asia.</p>
+<h2>Real daily budgets (per person, flights excluded)</h2>
+<p>Backpacking: €25-35 a day (hostel or guesthouse plus halal street food). Simple comfort: €45-70 a day. Family of four: budget €120-180 a day in Morocco or Turkey, everything included once you are there.</p>
+<h2>The tips that change everything</h2>
+<p>Flights: book two to three months ahead, fly Tuesday or Wednesday, compare secondary airports. Accommodation: family guesthouses and simple riads (often naturally alcohol-free) rather than chains. Food: markets and halal street food cost half what tourist restaurants charge — and are often better.</p>
+<h2>Free and priceless</h2>
+<p>Historic mosques are free to visit, medinas and bazaars are a permanent spectacle, and our tools (<a href="/prayer-times">prayer times</a>, <a href="/qibla">Qibla</a>, <a href="/mosque-near-me">nearest mosque</a>) are free for life. See our <a href="/guides/top-halal-destinations-2026">top destinations</a> to compare.</p>
+<h2>Egypt and Tunisia: the forgotten bargains</h2>
+<p><strong>Egypt</strong> remains one of the cheapest trips in the Muslim world: koshari for €1-2, Cairo taxis and metro almost free, reasonable entry fees at the major sites — and unmatched historical depth from <a href="/destinations/le-caire">Cairo</a> to Aswan. <strong>Tunisia</strong> combines beaches, medinas and soft prices: a full meal €4-7, decent hotels from €25-35, and flights often heavily discounted from Europe. Two destinations where halal is the standard and every euro goes a long way.</p>
+<h2>Cheap flights, concretely</h2>
+<p>Book six to ten weeks ahead for North Africa, two to four months for Asia; fly midweek and come back midweek. Compare secondary airports (Beauvais, Charleroi, Bergamo) and the Gulf carriers for Asia — a stopover in Istanbul or Doha often costs less than the direct flight and buys you a mini halal city break. Turn on price alerts and stay flexible by three days either way: that is where the 40% savings hide.</p>
+<h2>The budget in black and white</h2>
+<p><strong>Backpacking</strong> (hostel or guesthouse, street food, local transport): Morocco, Tunisia and Egypt €25-35 a day · Turkey outside Istanbul €30-40 · Malaysia €30-40. <strong>Simple comfort</strong> (3-star hotel, restaurants, a few visits): budget €50-75 a day in those same countries. <strong>Family of four</strong>: €120-180 a day all-in on the ground in North Africa. In every case the free items are enormous: historic mosques, medinas, beaches, markets — the heart of halal travel costs nothing.</p>
+<h2>Three costed itineraries, ready to copy</h2>
+<p><strong>Morocco, 7 days (about €380 on the ground)</strong>: three nights in Marrakesh (simple riad at €25 a night), train to Fez (€20), three nights in Fez, street food plus two restaurants, a local hammam, the souks. <strong>Turkey, 10 days (about €550)</strong>: four nights in Istanbul in the Fatih district, night bus to Cappadocia (€15-20), three nights in a cave guesthouse away from the premium sites, back to Istanbul on the Asian side. <strong>Malaysia, 14 days (about €700)</strong>: five nights in Kuala Lumpur, bus to Penang (€10), four nights of George Town street food, ferry and bus to Langkawi, four nights on the beach in a guesthouse. Flights come on top — hence the section above.</p>
+<h2>The mistakes that cost you</h2>
+<p>Changing money at the airport (dreadful rates — withdraw from a cash machine in town); metered-free taxis at the terminal exit (use local ride apps or shuttles); « restaurants with a view » on the tourist squares, two to three times the price of the same plate two streets away; and buying excursions at the hotel rather than from neighbourhood agencies. Every mistake avoided pays for another day of travel.</p>
+<h2>Travelling free, or nearly: what costs nothing</h2>
+<p>The finest halal experiences are often free: praying in the Süleymaniye at sunset, getting lost in the medina of Fez, the round of Ottoman mosques in Sarajevo, the public beaches of Agadir, sunsets over the Bosphorus from Üsküdar. Add the markets — a permanent spectacle — and our free tools: <a href="/prayer-times">prayer times</a>, <a href="/qibla">Qibla</a>, <a href="/mosque-near-me">nearest mosque</a>. The essentials of the trip weigh nothing on the budget.</p>`,
+    faq: [
+      { q: "Which is the cheapest halal destination?", a: "Egypt and Tunisia lead (€25-35 a day backpacking, halal by default), followed by Morocco and Turkey outside Istanbul. In Asia, Malaysia offers the best comfort-to-price ratio with its €2-4 food courts." },
+      { q: "What daily budget for cheap halal travel?", a: "Backpacking: €25-40 a day depending on the country (bed, halal street food, local transport). Simple comfort: €50-75. Those budgets exclude flights — hence the value of price alerts and flexible dates." },
+      { q: "How do I find cheap flights to halal destinations?", a: "Book six to ten weeks ahead for North Africa, fly midweek, compare secondary airports, and accept a stopover in Istanbul or Doha: often cheaper than the direct flight, and a chance for a halal stopover." },
+      { q: "Can you eat halal cheaply everywhere?", a: "In Muslim-majority countries, halal street food is both the cheapest and the best (€1-5 a meal). Elsewhere, the Muslim districts — kebab shops, Pakistani canteens — stay very affordable. See our city pages." },
+      { q: "Do hostels suit Muslim travellers?", a: "Many offer single-sex dorms — filter for « female dorm » if you need one. In North Africa, family guesthouses often give you more for the same price, in a naturally halal atmosphere." }
+    ],
+  },
 ]

@@ -47,13 +47,13 @@ question végétarienne et celle du bœuf s'y ajoutent.
 ### 2. Le domaine anglais a 15 guides quand le français en a 24
 **Mesuré le 12 août sur les deux sitemaps servis** : voyageshalal.fr publie
 **24 guides et 45 articles de blog**, gohalaltravel.com **15 guides et 32
-articles**. Trois traduits depuis (Japon, Thaïlande, Europe) : **18 guides**. Traduire n'est pas créer et n'entre donc pas dans le quota de
+articles**. Quatre traduits depuis (Japon, Thaïlande, Europe, petit budget) :
+**19 guides**. Traduire n'est pas créer et n'entre donc pas dans le quota de
 contenu — c'est le levier le moins cher du domaine anglais, qui pèse
 441 impressions contre 1 970.
 
-Restent **3 guides français sans jumeau anglais** :
-`voyage-halal-petit-budget`, `voyage-aid-en-famille`, et
-`priere-avion-train-guide`.
+Restent **2 guides français sans jumeau anglais** :
+`voyage-aid-en-famille` et `priere-avion-train-guide`.
 ⚠️ **Ce dernier est à relire avant traduction, pas à traduire tel quel** :
 il tranche une question religieuse (qasr, jam'), ce que nos onze pages
 « où prier » ont justement cessé de faire le 11 août.
@@ -75,6 +75,19 @@ requêtes ces pages sortent réellement.
 ---
 
 ## Fait
+
+### Le guide « petit budget » en anglais — 12 août
+**Avant** : 18 guides sur gohalaltravel.com. **Après : 19.**
+
+**Le choix qui compte ici** : les montants sont recopiés **à l'identique,
+en euros**. Les convertir en livres aurait produit des chiffres que
+personne n'a relevés — et un prix inventé est un fait inventé, au même
+titre qu'une salle de prière inventée.
+
+**Mesuré** : page anglaise en 200 (1 266 mots, titre 49 caractères,
+description 144), ancien slug français en 301 vers le slug anglais côté EN
+et en 200 côté FR, **34 liens internes tous en 200**, sitemap anglais
+seulement.
 
 ### Le guide Europe en anglais — 12 août
 **Avant** : 17 guides sur gohalaltravel.com. **Après : 18.** Traduit, pas
