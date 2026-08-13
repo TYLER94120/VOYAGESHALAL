@@ -5,6 +5,62 @@ Les entrees les plus recentes sont en haut.
 
 ---
 
+## 2026-08-13 — MESURE — la boucle de recitation a enfin tourne. Une phrase de la feuille de route est fausse.
+
+La boucle « ecouter → repeter → reecouter » existe depuis le 10 aout et
+**personne ne l'avait jamais vue tourner** : l'atelier n'a pas le droit
+d'atteindre un recitateur, donc aucun bouton n'y apparait jamais.
+
+Je n'ai pas eu besoin d'entendre pour mesurer. J'ai remplace le lecteur audio par
+un faux recitateur d'une duree connue, et simule **une source qui repond** — ce
+qui n'avait jamais ete fait. Voici la boucle, chronometree.
+
+**Ce qui marche, et je peux enfin l'affirmer :**
+
+- trois ecoutes, **trois** silences, **trois** repetitions, et ca finit sur un
+  silence : la personne repete autant de fois qu'elle a entendu ;
+- elle lit, dans l'ordre : « Ecoute bien (1 sur 3) », « **A toi — repete a voix
+  haute (1 sur 3)** », jusqu'a « (3 sur 3) ». Elle n'est jamais laissee dans un
+  silence sans savoir que c'est a elle ;
+- le compteur de repetitions passe de 0 a **3** ;
+- un verset de 11 s donne un silence plafonne a **12,00 s** ;
+- quitter en pleine boucle arrete tout : **zero** phase apres, lecture coupee ;
+- le bouton n'apparait **que** si une source repond. Sans reponse, rien.
+
+**Ce qui ne colle pas, et ca vient de ta phrase.** Ta feuille de route, que je
+relis a chaque cycle, dit :
+
+> « le verset se joue, **un silence de meme duree**, puis il se rejoue »
+
+Mesure : verset de **3,00 s** → silence de **3,45 s**. Trois fois de suite.
+**x1,15**, pas x1.
+
+Le code le fait expres et l'explique : « repeter demande un peu plus de temps
+qu'ecouter ; un silence trop court fait abandonner. » Je trouve ce choix bon. Le
+probleme est qu'un autre commentaire, vingt lignes plus haut dans le meme
+fichier, reprend ta formule « un silence de la MEME duree ». **Le fichier se
+contredit a vingt lignes d'intervalle**, et un jour quelqu'un corrigera le code
+pour le faire coller au mauvais commentaire.
+
+**Deux issues, et c'est ta phrase donc c'est ton appel :**
+
+1. **On garde 1,15 et on corrige les mots** — ma recommandation. Le silence reste
+   « un peu plus long que le verset », ce qui est ce qu'on veut vraiment.
+2. **On garde ta phrase et on passe le code a x1,00.** Alors le silence tombe a
+   3,00 s pour un verset de 3,00 s, et il faudra assumer que quelqu'un qui bute
+   sur un mot n'a plus le temps de finir.
+
+Dis-moi laquelle et je l'applique au prochain cycle. En attendant je ne touche a
+rien : c'est une phrase que tu repetes, pas un detail que je peux trancher seul.
+
+**Deux defauts de mon propre outillage** trouves en chemin, tous deux miens :
+mon faux recitateur n'avait pas de `load()`, ce qui remontait une erreur
+JavaScript et masquait la mesure ; et mon test cherchait le bouton sur la
+mauvaise carte — les 14 boutons sont bien construits, mais une seule carte
+s'affiche a la fois. Le site allait bien les deux fois.
+
+---
+
 ## 2026-08-12 — RETRAIT DE QUESTION — l'arbitrage `OBJ_REVISIONS` que je t'ai demande n'existait pas. Je l'ai mesure.
 
 Ce matin je t'ai ecrit : « Le quatrieme te revient, parce que c'est un arbitrage

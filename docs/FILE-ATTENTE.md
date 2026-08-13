@@ -13,7 +13,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 
 ## A faire
 
-> **Cycles 6, 10, 13, 16, 18, 21, 23, 29 et 32 : audits.** Quand les seuls elements restants sont
+> **Cycles 6, 10, 13, 16, 18, 21, 23, 29, 32 et 34 : audits.** Quand les seuls elements restants sont
 > bloques — un arbitrage, deux fois le deploiement — le cycle sert a mesurer,
 > pas a forcer un blocage. Les sept elements des audits 6, 10 et 13 sont **tous
 > faits** (cycles 7, 8, 9, 11, 12, 14, 15). **L'audit du cycle 16 n'a produit
@@ -66,7 +66,21 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 > « 25 noms, 1 distinct » alors que les noms sont dans deux sous-elements. Les
 > deux corriges, les deux comptes refaits.
 >
-> **Mesure aux cycles 6, 10, 13, 16, 18, 21, 23, 29 et 32, et rien a corriger** — a ne pas
+> **L'audit du cycle 34 a chronometre la boucle « ecouter → repeter →
+> reecouter »**, celle que la feuille de route redit a chaque cycle. Elle existe
+> depuis le 10 aout et **personne ne l'avait jamais vue tourner** : l'atelier n'a
+> pas le droit d'atteindre un recitateur. On n'a pas besoin d'entendre pour
+> mesurer — `Audio` a ete remplace par un faux recitateur d'une duree connue, et
+> **une source qui repond** simulee pour la premiere fois. Un seul element en
+> sort, le 1 ci-dessous ; il ne porte pas sur le mecanisme mais sur les mots qui
+> le decrivent.
+> *Deux defauts de mon instrument, corriges avant de conclure :* mon faux
+> recitateur n'avait pas de `load()`, ce qui remontait une erreur JavaScript et
+> masquait la mesure ; et mon test cherchait le bouton **sur la mauvaise carte**
+> — les 14 boutons sont bien construits, mais une seule carte s'affiche a la
+> fois. Le site allait bien les deux fois.
+>
+> **Mesure aux cycles 6, 10, 13, 16, 18, 21, 23, 29, 32 et 34, et rien a corriger** — a ne pas
 > re-mesurer sans raison :
 > - **214 elements contiennent de l'arabe, 214 portent `lang="ar"` et
 >   `dir="rtl"`**, zero nu.
@@ -161,8 +175,45 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 > - **Les dix-sept prophetes « cites d'affilee » sont sources** *(cycle 32)* :
 >   trois sources explicites, Al-An'am (6) versets **84, 85 et 86**, et Mouhammad
 >   a part, Al-Ahzab (33) verset 40.
+> - **La boucle tourne exactement comme annonce, sauf la duree du silence**
+>   *(cycle 34)*. Avec un verset simule de 3,0 s : **trois ecoutes, trois
+>   silences, trois repetitions**, et elle finit sur un silence — la personne
+>   repete donc autant de fois qu'elle a entendu, ce que le code promettait.
+> - **La moitie visible de la boucle existe et se lit** *(cycle 34)*. Six messages
+>   dans l'ordre : « Ecoute bien (1 sur 3) », « A toi — repete a voix haute (1 sur
+>   3) », jusqu'a « (3 sur 3) ». La personne n'est jamais laissee dans un silence
+>   sans savoir que c'est a elle.
+> - **Le compteur de repetitions compte trois, pas deux** *(cycle 34)* : 0 → 3
+>   apres une boucle complete. C'est le seul chiffre du site qui compte un effort
+>   de la voix.
+> - **Le silence est plafonne** *(cycle 34)* : un verset de 11,0 s donne un
+>   silence de **12,00 s**, pas 12,65.
+> - **Quitter en pleine boucle arrete tout** *(cycle 34)* : **zero** phase apres
+>   l'arret, et la lecture en cours est coupee. Rien ne continue de tourner
+>   derriere.
+> - **Le bouton n'existe que si une source repond** *(cycle 34)* : avec une source
+>   simulee qui repond en 21 ms, « ↻ Repeter avec moi » apparait sur la carte du
+>   verset ; sans reponse, aucun bouton — la regle tient dans les deux sens.
 
-1. **Qui avance vite trouve un site vide : 15 jours sur 18.**
+1. **La feuille de route promet un silence « de meme duree ». Il est 15 % plus
+   long, et c'est le texte qui a tort.**
+   *Preuve, chronometree :* verset simule de **3,00 s** → silence de **3,45 s**,
+   trois fois de suite, soit **x1,15**. Or la feuille de route, redite a chaque
+   cycle, dit « le verset se joue, **un silence de meme duree**, puis il se
+   rejoue », et le commentaire d'en-tete de `jouerBoucle` repete mot pour mot
+   « un silence de la **MEME** duree ».
+   *Le comportement est defendable, et defendu :* vingt lignes plus bas, le meme
+   fichier explique le choix — « repeter demande un peu plus de temps
+   qu'ecouter : on n'est pas encore a l'aise avec les mots ; un silence trop
+   court fait abandonner ». Le facteur 1,15 est donc voulu, avec un plancher de
+   0,9 s et un plafond de 12 s, **tous deux verifies**.
+   *Ce qui cloche est donc l'ecrit, pas le code* : un fichier qui se contredit a
+   vingt lignes d'intervalle finit par etre cru sur la mauvaise ligne. Corriger
+   le commentaire, et **dire a Mohamed que sa phrase de feuille de route ne
+   decrit pas ce que fait le site** — c'est la sienne, il decide s'il veut le
+   texte ou le 1,15.
+
+2. **Qui avance vite trouve un site vide : 15 jours sur 18.**
    *Preuve, re-mesuree au cycle 28 sur deux comportements — un seul aurait
    menti :* une personne qui **suit l'objectif du jour** et s'arrete ne rencontre
    plus **aucun** jour vide sur 18 (c'etait 5 avant que `OBJ_REVISIONS` passe a
@@ -184,7 +235,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    chaque fois plutot qu'il ne s'extrapole : l'espacement redistribue les trous a
    chaque ajout.
 
-2. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
+3. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
    *Preuve :* c'est la piece la plus puissante de la liste du responsable, et
    elle est la seule non commencee. Le blocage est reel et non technique : une
    notification calee sur une heure de priere suppose de **connaitre** cette
@@ -196,7 +247,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    **N'entre pas en travaux avant arbitrage** — c'est une decision, pas un
    chantier.
 
-3. **Aucune mesure d'entree, et un traceur est interdit ici.**
+4. **Aucune mesure d'entree, et un traceur est interdit ici.**
    *Preuve :* `grep -ril "gtag\|analytics\|plausible\|matomo\|umami"` sur toutes
    les pages et les trois fichiers JavaScript ne rend **rien**. Or le pied de
    page promet « Ta progression reste sur ton telephone. Aucun compte, aucun
@@ -205,7 +256,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    journaux). Bloque jusqu'au deploiement — question posee aux trois autres
    agents dans le brainstorm des passerelles.
 
-4. **La recitation n'a jamais ete entendue par personne.**
+5. **La recitation n'a jamais ete entendue par personne.**
    *Preuve :* `halalgpt.fr:443` et `cdn.islamic.network:443` sont refuses par la
    politique reseau de l'atelier (403 au CONNECT, journalise par le proxy,
    verifie trois fois). Le mecanisme est teste avec un recitateur simule — 7
