@@ -13,7 +13,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 
 ## A faire
 
-> **Cycles 6, 10, 13, 16, 18, 21, 23 et 29 : audits.** Quand les seuls elements restants sont
+> **Cycles 6, 10, 13, 16, 18, 21, 23, 29 et 32 : audits.** Quand les seuls elements restants sont
 > bloques — un arbitrage, deux fois le deploiement — le cycle sert a mesurer,
 > pas a forcer un blocage. Les sept elements des audits 6, 10 et 13 sont **tous
 > faits** (cycles 7, 8, 9, 11, 12, 14, 15). **L'audit du cycle 16 n'a produit
@@ -54,7 +54,19 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 > l'element 2. **Une simulation qui ne repond pas aux questions n'est pas une
 > personne.**
 >
-> **Mesure aux cycles 6, 10, 13, 16, 18, 21, 23 et 29, et rien a corriger** — a ne pas
+> **L'audit du cycle 32 a verifie les nombres que chaque lecon AFFIRME contre ce
+> qu'elle montre**, et la coherence des references. Jamais fait : les cycles 6 et
+> 9 avaient compte les cartes, personne n'avait compte le contenu. **Sept lecons
+> sur sept sont exactes** — detail plus bas — et l'audit n'a produit **qu'un seul
+> element**, le 1 ci-dessous.
+> *Deux faux positifs de mon propre outillage, ecartes avant publication :* mon
+> detecteur de compagnon cherchait « d'apres » et signalait deux citations qui
+> nomment bien Abou Hourayra, par renvoi (« Fin du hadith d'Abou Hourayra
+> ci-dessus »). Et mon compteur de prophetes lisait un element vide : il annoncait
+> « 25 noms, 1 distinct » alors que les noms sont dans deux sous-elements. Les
+> deux corriges, les deux comptes refaits.
+>
+> **Mesure aux cycles 6, 10, 13, 16, 18, 21, 23, 29 et 32, et rien a corriger** — a ne pas
 > re-mesurer sans raison :
 > - **214 elements contiennent de l'arabe, 214 portent `lang="ar"` et
 >   `dir="rtl"`**, zero nu.
@@ -127,8 +139,51 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 >   **1 fois sur 7**, puis remplacee par « On se retrouve apres le Fajr. »
 > - **Rien ne casse au bout de sept lecons enchainees** *(cycle 29)* : aucun
 >   debordement a 414 px, **zero erreur JavaScript**.
+> - **Chaque lecon montre exactement ce que le catalogue lui credite**
+>   *(cycle 32)*, 7 sur 7 : **7 versets** d'Al-Fatiha, sources « verset 1 » a
+>   « verset 7 » sans trou ; **28 lettres distinctes** (31 fiches, dont 3 repetees
+>   en demonstration) et ce sont **exactement les 28** de l'alphabet, aucune
+>   manquante, aucune etrangere ; **25 prophetes**, 25 noms arabes et 25
+>   transcriptions, **tous distincts** ; **3 invocations**, **6 piliers**,
+>   **7 gestes**, **8 signes**, numerotes sans saut. Total : **84**, la somme
+>   exacte. L'etagere de « Mon chemin » ne credite donc rien d'invente.
+> - **La liste des « six lettres qui ne s'attachent jamais » est juste**
+>   *(cycle 32)* : ا د ذ ر ز و, six affichees, six attendues.
+> - **Les 36 sources du site sont toutes attribuees** *(cycle 32)* : 17
+>   coraniques, 19 de hadith ou mixtes. **Chacune nomme son recueil** — aucune
+>   citation vague. Le compagnon est nomme dans les 19. Et les numeros sont
+>   coherents : al-Boukhari n°756 et Mouslim n°394 designent le meme hadith dans
+>   les **deux** lecons qui le citent, **aucun numero n'est attribue a deux
+>   recueils differents**.
+> - **La question des six piliers dit vrai** *(cycle 32)* : « quatre piliers reunis
+>   dans un seul verset — Allah, Ses anges, Ses livres, Ses messagers,
+>   Al-Baqara (2), verset 285 », et le verset les nomme bien tous les quatre.
+> - **Les dix-sept prophetes « cites d'affilee » sont sources** *(cycle 32)* :
+>   trois sources explicites, Al-An'am (6) versets **84, 85 et 86**, et Mouhammad
+>   a part, Al-Ahzab (33) verset 40.
 
-1. **Qui avance vite trouve un site vide : 15 jours sur 18.**
+1. **La lecon d'alphabet promet « 18 formes » six fois et n'en montre jamais 18.**
+   *Preuve :* le nombre **18** est affirme **six fois** dans la meme lecon — la
+   meta description, l'og:description, le titre d'une carte (« 28 lettres, mais
+   18 formes »), le corps du texte, la bonne reponse d'une question, et la carte
+   « Ce que tu retiens ». C'est la promesse centrale de la lecon, sa « bonne
+   nouvelle ». Ce que la page montre pour l'etayer : **un seul groupe de trois
+   lettres** (ب ت ث, meme dessin, points differents).
+   Et le reste de la lecon enseigne les 28 lettres en **huit cartes** (1, 3, 3, 4,
+   4, 4, 4, 5). Un lecteur qui compte ce qu'on lui montre obtient **8**, pas 18 —
+   les deux nombres sont vrais mais ne comptent pas la meme chose (les dessins de
+   base d'un cote, les paquets d'apprentissage de l'autre), et **la page ne
+   reconcilie jamais les deux**. Seules les trois premieres cartes portent un nom
+   de forme (« La barre », « La dent », « Le corps rond ») ; les cinq suivantes
+   sont de simples lots.
+   *Ce n'est pas une faute de fait* — 28 lettres partagent bien 18 dessins de
+   base — **c'est un nombre qu'on demande de croire.** Sur un site dont la regle
+   est qu'une affirmation se verifie, la promesse la plus repetee de cette lecon
+   est la seule qu'un lecteur ne peut pas controler.
+   *Sujet linguistique, donc voie rapide :* montrer les 18, ou nommer chaque
+   carte par sa forme et annoncer le nombre que la lecon enseigne vraiment.
+
+2. **Qui avance vite trouve un site vide : 15 jours sur 18.**
    *Preuve, re-mesuree au cycle 28 sur deux comportements — un seul aurait
    menti :* une personne qui **suit l'objectif du jour** et s'arrete ne rencontre
    plus **aucun** jour vide sur 18 (c'etait 5 avant que `OBJ_REVISIONS` passe a
@@ -150,7 +205,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    chaque fois plutot qu'il ne s'extrapole : l'espacement redistribue les trous a
    chaque ajout.
 
-2. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
+3. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
    *Preuve :* c'est la piece la plus puissante de la liste du responsable, et
    elle est la seule non commencee. Le blocage est reel et non technique : une
    notification calee sur une heure de priere suppose de **connaitre** cette
@@ -162,7 +217,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    **N'entre pas en travaux avant arbitrage** — c'est une decision, pas un
    chantier.
 
-3. **Aucune mesure d'entree, et un traceur est interdit ici.**
+4. **Aucune mesure d'entree, et un traceur est interdit ici.**
    *Preuve :* `grep -ril "gtag\|analytics\|plausible\|matomo\|umami"` sur toutes
    les pages et les trois fichiers JavaScript ne rend **rien**. Or le pied de
    page promet « Ta progression reste sur ton telephone. Aucun compte, aucun
@@ -171,7 +226,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    journaux). Bloque jusqu'au deploiement — question posee aux trois autres
    agents dans le brainstorm des passerelles.
 
-4. **La recitation n'a jamais ete entendue par personne.**
+5. **La recitation n'a jamais ete entendue par personne.**
    *Preuve :* `halalgpt.fr:443` et `cdn.islamic.network:443` sont refuses par la
    politique reseau de l'atelier (403 au CONNECT, journalise par le proxy,
    verifie trois fois). Le mecanisme est teste avec un recitateur simule — 7
