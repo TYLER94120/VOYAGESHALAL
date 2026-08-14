@@ -1,6 +1,8 @@
 'use client'
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { cuisineCategory, CATEGORY_ORDER } from '@/lib/cuisineCategory'
+import PriereVille from '@/components/villes/PriereVille'
+import PresDeMoi from '@/components/lieux/PresDeMoi'
 import { enLabel, countryEn } from '@/lib/poiI18n'
 import { useState, useRef } from 'react'
 import Image from 'next/image'
@@ -250,6 +252,25 @@ export default function VilleDesktop({ ville }: { ville: any }) {
           {/* intro courte — en tête du bloc */}
           {descShort && <p style={{ textAlign: 'center', color: 'rgba(253,250,243,0.72)', fontSize: '14.5px', lineHeight: 1.7, maxWidth: 700, margin: '0 auto 18px' }}>{descShort}</p>}
 
+          {/* 🕌 LA PRIÈRE, REMONTÉE DU BAS — ordre de Mohamed, 15 août :
+              « "Horaires de prière à Istanbul" et "Qibla depuis Istanbul"
+              traînent tout en bas en boutons orphelins alors que c'est le
+              besoin numéro un ». Ils deviennent un vrai bloc, juste sous
+              le chapô : prochaine prière à la ville avec son horaire, les
+              cinq horaires du jour, la Qibla depuis la ville. */}
+          {co.lat != null && co.lng != null && (
+            <PriereVille lat={co.lat} lng={co.lng} nom={ville.nom} ctx={ctxVille} en={en} />
+          )}
+
+          {/* 🧭 EXPLORER — UNE SEULE ZONE. Les tuiles portent les vrais
+              compteurs du site ; la recherche IA se FOND dessous, sans
+              cadre ni catégories : ses boutons Manger / Mosquée /
+              Activités refaisaient exactement ces tuiles. On n'empile
+              pas, on intègre. */}
+          <p style={{ textAlign: 'center', color: 'var(--or)', fontSize: 12.5, fontWeight: 900, letterSpacing: '0.08em', textTransform: 'uppercase', margin: '0 0 10px' }}>
+            🧭 {en ? `Explore ${ville.nom}` : `Explorer ${ville.nom}`}
+          </p>
+
           {/* ONGLETS — cartes blanches contrastées, une rangée sur PC, 2 colonnes mobile */}
           <div className="ville-tabs-grid" id="ville-onglets">
             {TABS.map((tab) => {
@@ -263,6 +284,15 @@ export default function VilleDesktop({ ville }: { ville: any }) {
               )
             })}
           </div>
+
+          {/* La recherche IA, fondue dans la zone Explorer : une seule
+              barre, qui comprend « où manger un kebab à Sultanahmet »
+              comme « une mosquée près du Grand Bazar ». */}
+          {co.lat != null && co.lng != null && !en && (
+            <div style={{ marginTop: 12 }}>
+              <PresDeMoi fondu destination={{ lat: co.lat, lng: co.lng, nom: ville.nom }} />
+            </div>
+          )}
 
           {/* Navigation collante : dès que ces onglets sortent de l'écran,
               une barre compacte prend le relais (fiche = 46 écrans) */}
@@ -285,22 +315,8 @@ export default function VilleDesktop({ ville }: { ville: any }) {
             </p>
           )}
 
-          {/* Outils de prière ouverts DIRECTEMENT sur la ville (coordonnées
-              passées en paramètre) — plus de « autorisez la géolocalisation »
-              alors qu'on sait déjà de quelle ville on parle. */}
-          {ctxVille && (
-            <div style={{ display: 'flex', gap: 10, marginTop: 10, flexWrap: 'wrap', justifyContent: 'center' }}>
-              {[
-                { href: `/horaires-priere${ctxVille}`, ico: '🕐', txt: en ? `Prayer times in ${ville.nom}` : `Horaires de prière à ${ville.nom}` },
-                { href: `/qibla${ctxVille}`, ico: '🧭', txt: en ? `Qibla from ${ville.nom}` : `Qibla depuis ${ville.nom}` },
-              ].map((t) => (
-                <a key={t.href} href={t.href}
-                  style={{ display: 'inline-flex', alignItems: 'center', gap: 8, minHeight: 44, padding: '0 16px', borderRadius: 999, background: 'rgba(255,255,255,0.07)', border: '1px solid rgba(201,168,76,0.35)', color: 'var(--or-clair)', fontSize: 13.5, fontWeight: 700, textDecoration: 'none' }}>
-                  <span>{t.ico}</span>{t.txt}
-                </a>
-              ))}
-            </div>
-          )}
+          {/* (Les deux boutons « Horaires de prière » et « Qibla » qui
+              vivaient ici sont remontés dans le bloc Prière, en tête.) */}
         </div>
       </div>
 

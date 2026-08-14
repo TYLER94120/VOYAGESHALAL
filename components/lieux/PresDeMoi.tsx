@@ -56,9 +56,17 @@ const fmtDist = (m: number, versUneVille = false) =>
  *     (fiche Dubaï, Istanbul…), sans jamais demander la position — le
  *     voyageur qui prépare son séjour n'est pas encore sur place.
  */
-export default function PresDeMoi({ posInitiale, destination }: {
+export default function PresDeMoi({ posInitiale, destination, fondu = false }: {
   posInitiale?: { lat: number; lng: number; ville?: string | null } | null
   destination?: { lat: number; lng: number; nom: string } | null
+  /** 🔗 MODE FONDU — Mohamed, 15 août : « on n'empile pas, on intègre.
+   *  Toute nouveauté remplace ce qu'elle double, ou elle ne sort pas. »
+   *  Sur une fiche ville, les boutons Manger / Mosquée / Activités
+   *  refaisaient les tuiles « Où manger / Où prier / Que faire » qui
+   *  existent déjà avec leurs vrais compteurs. En mode fondu, le widget
+   *  n'est plus qu'UNE barre de recherche posée dans la zone Explorer :
+   *  ni cadre à lui, ni titre, ni catégories. */
+  fondu?: boolean
 }) {
   const [texte, setTexte] = useState('')
   const [cat, setCat] = useState<'manger' | 'mosquee' | 'activite'>('manger')
@@ -80,6 +88,17 @@ export default function PresDeMoi({ posInitiale, destination }: {
         { timeout: delaiMs - 500, maximumAge: 60_000 },
       )
     })
+  }
+
+  // 🧠 En mode fondu il n'y a qu'UNE barre : la catégorie se devine dans la
+  // phrase (« où prier à Sultanahmet » → mosquée, « musée » → activité).
+  // Aucun risque d'invention : la catégorie ne change que la requête
+  // envoyée et la phrase d'honnêteté, jamais un fait sur un lieu.
+  function deviner(q: string): 'manger' | 'mosquee' | 'activite' {
+    const t = q.toLowerCase()
+    if (/mosqu|prier|pri[èe]re|salle de pri|masjid|mosque/.test(t)) return 'mosquee'
+    if (/mus[ée]e|parc|visite|visiter|activit|hammam|plage|zoo|balade|sortie|famille|museum|park/.test(t)) return 'activite'
+    return 'manger'
   }
 
   async function chercher(requete: string, forcerGPS = false, categorie = cat) {
@@ -146,21 +165,22 @@ export default function PresDeMoi({ posInitiale, destination }: {
   }
 
   return (
-    <section style={{ background: 'var(--nuit)' }} className="pt-2 pb-8 px-4" aria-label={destination ? `À ${destination.nom}` : 'Près de moi'}>
-      {/* ⭐ Le poids visuel d'un cœur de page : liseré or marqué et fond
-          légèrement relevé — c'est LA fonction du site, pas une carte
-          parmi d'autres. */}
-      <div className="max-w-3xl mx-auto" style={{ background: 'linear-gradient(150deg, rgba(27,67,50,0.5), rgba(255,255,255,0.05))', border: '1.5px solid rgba(201,168,76,0.55)', borderRadius: 18, padding: 16, boxShadow: '0 4px 22px rgba(0,0,0,0.25)' }}>
-        <p style={{ color: 'var(--or)', fontSize: 13, fontWeight: 900, letterSpacing: '0.08em', textTransform: 'uppercase', margin: 0 }}>
-          📍 {destination ? `À ${destination.nom}` : 'Près de moi'}
-        </p>
-        <p style={{ color: 'rgba(253,250,243,0.7)', fontSize: 13, margin: '4px 0 0', lineHeight: 1.4 }}>
-          {destination
-            ? 'Restaurants, mosquées et activités — chaque adresse porte sa source.'
-            : 'Dis ce que tu cherches, on regarde autour de toi — chaque adresse porte sa source.'}
-        </p>
-        {/* Les trois ateliers : un tap change la catégorie et vide le résultat. */}
-        <div style={{ display: 'flex', gap: 7, marginTop: 10, flexWrap: 'wrap' }}>
+    <Enveloppe fondu={fondu} titre={destination ? `À ${destination.nom}` : 'Près de moi'}>
+        {!fondu && (
+          <>
+            <p style={{ color: 'var(--or)', fontSize: 13, fontWeight: 900, letterSpacing: '0.08em', textTransform: 'uppercase', margin: 0 }}>
+              📍 {destination ? `À ${destination.nom}` : 'Près de moi'}
+            </p>
+            <p style={{ color: 'rgba(253,250,243,0.7)', fontSize: 13, margin: '4px 0 0', lineHeight: 1.4 }}>
+              {destination
+                ? 'Restaurants, mosquées et activités — chaque adresse porte sa source.'
+                : 'Dis ce que tu cherches, on regarde autour de toi — chaque adresse porte sa source.'}
+            </p>
+          </>
+        )}
+        {/* Les trois ateliers : un tap change la catégorie et vide le résultat.
+            Masqués en mode fondu — les tuiles de la fiche ville les portent déjà. */}
+        <div style={{ display: fondu ? 'none' : 'flex', gap: 7, marginTop: 10, flexWrap: 'wrap' }}>
           {CATS.map((c) => {
             const on = cat === c.id
             return (
@@ -175,12 +195,12 @@ export default function PresDeMoi({ posInitiale, destination }: {
           })}
         </div>
         <form
-          onSubmit={(e) => { e.preventDefault(); chercher(texte) }}
+          onSubmit={(e) => { e.preventDefault(); chercher(texte, false, fondu ? deviner(texte) : cat) }}
           style={{ display: 'flex', gap: 8, marginTop: 10 }}
         >
           <input
             value={texte} onChange={(e) => setTexte(e.target.value)}
-            placeholder={destination ? `${CATS.find((c) => c.id === cat)!.label} à ${destination.nom}…` : CATS.find((c) => c.id === cat)!.placeholder}
+            placeholder={fondu && destination ? `Où manger un kebab à ${destination.nom} ?` : destination ? `${CATS.find((c) => c.id === cat)!.label} à ${destination.nom}…` : CATS.find((c) => c.id === cat)!.placeholder}
             style={{ flex: 1, minWidth: 0, minHeight: 48, borderRadius: 12, border: '1px solid rgba(253,250,243,0.25)', background: 'rgba(255,255,255,0.07)', color: '#fdfaf3', padding: '0 14px', fontSize: 16 }}
           />
           <button type="submit" disabled={etat === 'cherche'}
@@ -188,7 +208,7 @@ export default function PresDeMoi({ posInitiale, destination }: {
             {etat === 'cherche' ? '…' : 'Chercher'}
           </button>
         </form>
-        <div style={{ display: 'flex', gap: 7, marginTop: 8, flexWrap: 'wrap' }}>
+        <div style={{ display: fondu ? 'none' : 'flex', gap: 7, marginTop: 8, flexWrap: 'wrap' }}>
           {CATS.find((c) => c.id === cat)!.raccourcis.map((rq) => (
             <button key={rq} onClick={() => { setTexte(rq); chercher(rq === 'La plus proche' ? '' : rq) }}
               style={{ minHeight: 44, padding: '0 13px', borderRadius: 999, border: '1px solid rgba(253,250,243,0.28)', background: 'rgba(255,255,255,0.05)', color: 'var(--creme)', fontWeight: 700, fontSize: 13, cursor: 'pointer' }}>
@@ -258,6 +278,21 @@ export default function PresDeMoi({ posInitiale, destination }: {
             🌙 {prose}
           </p>
         )}
+    </Enveloppe>
+  )
+}
+
+/** Cadre du widget : une vraie carte quand il est autonome, un simple
+ *  conteneur transparent quand il se fond dans une zone existante. */
+function Enveloppe({ fondu, titre, children }: { fondu: boolean; titre: string; children: React.ReactNode }) {
+  if (fondu) return <div style={{ margin: '0 auto', maxWidth: 700 }}>{children}</div>
+  return (
+    <section style={{ background: 'var(--nuit)' }} className="pt-2 pb-8 px-4" aria-label={titre}>
+      {/* ⭐ Le poids visuel d'un cœur de page : liseré or marqué et fond
+          légèrement relevé — c'est LA fonction du site, pas une carte
+          parmi d'autres. */}
+      <div className="max-w-3xl mx-auto" style={{ background: 'linear-gradient(150deg, rgba(27,67,50,0.5), rgba(255,255,255,0.05))', border: '1.5px solid rgba(201,168,76,0.55)', borderRadius: 18, padding: 16, boxShadow: '0 4px 22px rgba(0,0,0,0.25)' }}>
+        {children}
       </div>
     </section>
   )
