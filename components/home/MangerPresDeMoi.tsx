@@ -31,12 +31,21 @@ interface Lieu {
   lat: number; lng: number
 }
 
-const RACCOURCIS = ['Pizza', 'Kebab', 'Burger', 'Restaurant']
+// 🗂️ Trois ateliers dans le même bloc — Mohamed, 15 août : « il faut
+// faire la même chose pour activités, mosquées ». Même moteur, mêmes
+// règles ; seuls la requête, les raccourcis et la phrase d'honnêteté
+// changent (portée par l'API, jamais reformulée ici).
+const CATS = [
+  { id: 'manger' as const, icon: '🍽', label: 'Manger', placeholder: 'Je veux une pizza…', raccourcis: ['Pizza', 'Kebab', 'Burger', 'Restaurant'] },
+  { id: 'mosquee' as const, icon: '🕌', label: 'Mosquée', placeholder: 'Mosquée près de moi…', raccourcis: ['La plus proche'] },
+  { id: 'activite' as const, icon: '🎡', label: 'Activités', placeholder: 'Parc, musée, sortie en famille…', raccourcis: ['Parc', 'Musée', 'En famille', 'Hammam'] },
+]
 
 const fmtDist = (m: number) => (m >= 2000 ? `${(m / 1000).toFixed(1)} km` : `${Math.max(1, Math.round(m / 80))} min à pied`)
 
 export default function MangerPresDeMoi({ posInitiale }: { posInitiale: { lat: number; lng: number; ville?: string | null } | null }) {
   const [texte, setTexte] = useState('')
+  const [cat, setCat] = useState<'manger' | 'mosquee' | 'activite'>('manger')
   const [etat, setEtat] = useState<'repos' | 'cherche' | 'fini' | 'sans-position'>('repos')
   const [lieux, setLieux] = useState<Lieu[]>([])
   const [source, setSource] = useState('')
@@ -57,7 +66,7 @@ export default function MangerPresDeMoi({ posInitiale }: { posInitiale: { lat: n
     })
   }
 
-  async function chercher(requete: string, forcerGPS = false) {
+  async function chercher(requete: string, forcerGPS = false, categorie = cat) {
     if (enCours.current) return
     enCours.current = true
     derniereRequete.current = requete
@@ -75,7 +84,7 @@ export default function MangerPresDeMoi({ posInitiale }: { posInitiale: { lat: n
         const r = await fetch('/api/lieux', {
           method: 'POST', signal: ac.signal,
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ lat: pos.lat, lng: pos.lng, requete }),
+          body: JSON.stringify({ lat: pos.lat, lng: pos.lng, requete, categorie }),
         })
         corps = r.ok ? await r.json() : {}
       } finally { clearTimeout(t) }
@@ -93,7 +102,12 @@ export default function MangerPresDeMoi({ posInitiale }: { posInitiale: { lat: n
           const r2 = await fetch('/api/lieux/assistant', {
             method: 'POST', signal: ac2.signal,
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ question: requete ? `Je cherche : ${requete}, halal, près de moi.` : 'Où manger halal près de moi ?', contexte }),
+            body: JSON.stringify({
+              question: categorie === 'mosquee' ? (requete && requete !== 'La plus proche' ? `Je cherche une mosquée près de moi : ${requete}.` : 'Quelle est la mosquée la plus proche de moi ?')
+                : categorie === 'activite' ? `Je cherche une activité près de moi${requete ? ` : ${requete}` : ''}.`
+                : requete ? `Je cherche : ${requete}, halal, près de moi.` : 'Où manger halal près de moi ?',
+              contexte,
+            }),
           })
           if (r2.ok && r2.body) {
             const lecteur = r2.body.getReader()
@@ -110,18 +124,33 @@ export default function MangerPresDeMoi({ posInitiale }: { posInitiale: { lat: n
   }
 
   return (
-    <section style={{ background: 'var(--nuit)' }} className="pb-8 px-4" aria-label="Manger halal près de moi">
+    <section style={{ background: 'var(--nuit)' }} className="pb-8 px-4" aria-label="Près de moi">
       <div className="max-w-3xl mx-auto" style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(201,168,76,0.3)', borderRadius: 16, padding: 16 }}>
         <p style={{ color: 'var(--or)', fontSize: 12, fontWeight: 800, letterSpacing: '0.08em', textTransform: 'uppercase', margin: 0 }}>
-          🍽 Manger halal près de moi
+          📍 Près de moi
         </p>
+        {/* Les trois ateliers : un tap change la catégorie et vide le résultat. */}
+        <div style={{ display: 'flex', gap: 7, marginTop: 10, flexWrap: 'wrap' }}>
+          {CATS.map((c) => {
+            const on = cat === c.id
+            return (
+              <button key={c.id} onClick={() => { setCat(c.id); setTexte(''); setLieux([]); setProse(''); setEtat('repos') }} aria-pressed={on}
+                style={{ minHeight: 44, padding: '0 14px', borderRadius: 999, cursor: 'pointer',
+                  border: on ? '1.5px solid var(--or)' : '1px solid rgba(253,250,243,0.28)',
+                  background: on ? 'rgba(201,168,76,0.18)' : 'rgba(255,255,255,0.05)',
+                  color: on ? 'var(--or)' : 'var(--creme)', fontWeight: on ? 800 : 700, fontSize: 13.5 }}>
+                {c.icon} {c.label}
+              </button>
+            )
+          })}
+        </div>
         <form
           onSubmit={(e) => { e.preventDefault(); chercher(texte) }}
           style={{ display: 'flex', gap: 8, marginTop: 10 }}
         >
           <input
             value={texte} onChange={(e) => setTexte(e.target.value)}
-            placeholder="Je veux une pizza…"
+            placeholder={CATS.find((c) => c.id === cat)!.placeholder}
             style={{ flex: 1, minWidth: 0, minHeight: 48, borderRadius: 12, border: '1px solid rgba(253,250,243,0.25)', background: 'rgba(255,255,255,0.07)', color: '#fdfaf3', padding: '0 14px', fontSize: 16 }}
           />
           <button type="submit" disabled={etat === 'cherche'}
@@ -130,8 +159,8 @@ export default function MangerPresDeMoi({ posInitiale }: { posInitiale: { lat: n
           </button>
         </form>
         <div style={{ display: 'flex', gap: 7, marginTop: 8, flexWrap: 'wrap' }}>
-          {RACCOURCIS.map((rq) => (
-            <button key={rq} onClick={() => { setTexte(rq); chercher(rq) }}
+          {CATS.find((c) => c.id === cat)!.raccourcis.map((rq) => (
+            <button key={rq} onClick={() => { setTexte(rq); chercher(rq === 'La plus proche' ? '' : rq) }}
               style={{ minHeight: 44, padding: '0 13px', borderRadius: 999, border: '1px solid rgba(253,250,243,0.28)', background: 'rgba(255,255,255,0.05)', color: 'var(--creme)', fontWeight: 700, fontSize: 13, cursor: 'pointer' }}>
               {rq}
             </button>

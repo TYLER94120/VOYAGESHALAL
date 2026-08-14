@@ -193,6 +193,13 @@ export default async function HomePage() {
           ne change pas. Sur le domaine anglais (pas encore de widget), la
           section Destinations reprend seule toute la largeur. */}
       <div className="rangee-bas" style={{ background: 'var(--nuit)' }}>
+      {/* 🍽 Widget « manger halal près de moi » — ordre du 14 août au soir :
+          « La priorité est Google Maps. » Une seule page pour valider :
+          l'accueil FRANÇAIS. L'anglais suivra quand le français marche.
+          Prêt-pour-la-clé : sans GOOGLE_PLACES_KEY il répond avec nos
+          spots + OpenStreetMap et le dit sobrement. */}
+      {!isEN && <MangerPresDeMoi posInitiale={posIP} />}
+
       {/* 🌍 DESTINATIONS — remontées JUSTE SOUS le tableau de bord.
           Mohamed, 15 août : « les destinations avec les images, c'est
           beau — j'aimerais que ce soit visible dès qu'on ouvre la page ».
@@ -252,12 +259,7 @@ export default async function HomePage() {
 
       {/* 💎 Le cœur : derniers spots partagés + spots près de toi
           (le Radar Prière vit désormais dans le Board voyageur ci-dessus) */}
-      {/* 🍽 Widget « manger halal près de moi » — ordre du 14 août au soir :
-          « La priorité est Google Maps. » Une seule page pour valider :
-          l'accueil FRANÇAIS. L'anglais suivra quand le français marche.
-          Prêt-pour-la-clé : sans GOOGLE_PLACES_KEY il répond avec nos
-          spots + OpenStreetMap et le dit sobrement. */}
-      {!isEN && <MangerPresDeMoi posInitiale={posIP} />}
+
       </div>
 
 
