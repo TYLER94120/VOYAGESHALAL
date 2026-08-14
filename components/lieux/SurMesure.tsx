@@ -83,6 +83,10 @@ const LIB_MODE: Record<Mode, [string, string]> = {
 
 const euros = (p?: number) => (p ? '€'.repeat(Math.min(4, p)) : null)
 
+/** « Guide d'Istanbul », pas « Guide de Istanbul ». Une élision ratée se
+ *  voit immédiatement — et tout ce que Mohamed lit est en français. */
+const deVille = (nom: string) => (/^[aeiouyàâäéèêëîïôöûüh]/i.test(nom) ? `d'${nom}` : `de ${nom}`)
+
 export default function SurMesure({ posInitiale, destination: destinationProp, en = false, fondu = false, titrePage = false }: {
   posInitiale?: { lat: number; lng: number; ville?: string | null } | null
   destination?: { lat: number; lng: number; nom: string } | null
@@ -441,7 +445,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
                 {t('Autour de moi', 'Around me')}
               </button>
               <a href={`/destinations/${ambigu.slug}`} style={{ ...puce(false), display: 'inline-flex', alignItems: 'center', textDecoration: 'none' }}>
-                {t(`Guide de ${ambigu.nom}`, `${ambigu.nom} guide`)} →
+                {t(`Guide ${deVille(ambigu.nom)}`, `${ambigu.nom} guide`)} →
               </a>
             </div>
           </div>
