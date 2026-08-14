@@ -1056,7 +1056,22 @@ a.lien-bas:hover { color: var(--creme); }
   text-decoration: none;
 }
 
+/* Mesure a 21 px la premiere fois : la moitie de ce qu'un doigt atteint sans
+   viser. Un lien seul dans un paragraphe n'herite d'aucune hauteur — il lui en
+   faut une a lui. */
 .retour-dizaines { margin: 0; }
+
+.retour-dizaines a {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 48px;
+  padding: 8px 18px;
+  background: rgba(201, 168, 76, 0.10);
+  border: 1px solid var(--trait-fort);
+  border-radius: 11px;
+  color: var(--or-clair);
+  font-size: 14px; font-weight: 600;
+  text-decoration: none;
+}
 
 @media (min-width: 620px) {
   .dizaines { grid-template-columns: repeat(6, 1fr); }

@@ -384,6 +384,12 @@ a auditer pour remplir la file — jamais a inventer un chantier.
   *Verifie aussi :* aucun debordement a 414, 375 ni 320 px, les 12 liens font
   **48 px de haut minimum** (le precedent de la barre du haut, 44 px pour un
   lien), aucun texte coupe, 114 lignes toujours la, zero erreur JavaScript.
+  *Et ma propre suite a attrape mon propre defaut, ce qui est exactement son
+  role :* le lien « Revenir aux dizaines » mesurait **21 px de haut** — la
+  moitie de ce qu'un doigt atteint sans viser. Un lien seul dans un paragraphe
+  n'herite d'aucune hauteur. Corrige a 48 px, re-mesure : **149 cibles sur les
+  10 pages, zero sous 44 px.** Les mesures ci-dessus ont ete faites avant que
+  la suite complete ne tourne ; c'est elle qui a eu le dernier mot.
   *Et une correction a mon propre releve du cycle 41 :* j'y avais ecrit « la
   page fait 11 695 px de haut, soit 16,9 ecrans ». **C'est faux** : 11 695 px
   est la position du **haut de la derniere ligne**, pas la hauteur de la page.
