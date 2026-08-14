@@ -3,28 +3,42 @@
 Pour Mohamed, **sur ordinateur**. Le site est **statique** : des fichiers, rien
 d'autre. Pas de base de donnees, pas de serveur a regler, aucune cle a saisir.
 
-## Ou on en est (mis a jour le 14/08, apres la neuvieme lecon)
+## Ou on en est (14 aout, 19 h)
 
-- **9 lecons**, 117 cartes, 58 minutes de contenu, 94 choses a apprendre.
-  **21 fichiers, 549 Ko** — c'est tout le site.
-- **LE SITE EST EN LIGNE depuis le 14 aout au soir.** Mohamed a rempli le depot
-  `Islampasapas` a la main (glisser-deposer sur GitHub), et Vercel l'a deploye.
-  Les huit premieres lecons y sont.
-- Le site vit toujours dans le depot `VOYAGESHALAL`, dossier
-  `projects/apprentissage/`, sur la branche
-  `claude/islamic-learning-platform-l7o7to`. **C'est la que j'ecris.**
-- **Le goulot d'etranglement est la, et il est le vrai sujet.** Je n'ai pas
-  l'acces en ecriture au depot `Islampasapas` : la demande revient
-  « cette action demande une approbation », et l'autorisation n'arrive pas
-  jusqu'a Mohamed. **Chaque nouvelle lecon doit donc etre re-deposee a la
-  main** — la neuvieme attend deja.
-- La sortie propre : **rebrancher le projet Vercel sur `VOYAGESHALAL`**
-  (Settings → Git → Connected Git Repository), avec Production Branch
-  `claude/islamic-learning-platform-l7o7to` et Root Directory
-  `projects/apprentissage`. Alors tout ce que je pousse part en ligne seul.
-  Voir le chemin 2.
+**LE SITE EST EN LIGNE ET LE DOMAINE REPOND.**
 
-Les chemins ci-dessous restent valables pour toute remise a plat.
+| | |
+|---|---|
+| adresse | **https://islampasapas.fr** (le www redirige en 308) |
+| contenu | **29 lecons**, 335 cartes, 171 minutes, 224 choses a apprendre |
+| QCM | **83 questions**, tirees des lecons, aucune ecrite en plus |
+| sitemap | **33 pages** |
+| deploiement | **automatique** : un push sur la branche part en ligne en ~6 s |
+| Search Console | propriete `https://islampasapas.fr/` **validee** (fichier `google460d2c815736f50e.html`, a ne jamais supprimer) |
+
+**Ce qui a debloque la journee, dans l'ordre :**
+
+1. Le depot `Islampasapas` rempli a la main par Mohamed — premiere mise en ligne.
+2. Le projet Vercel **rebranche sur `VOYAGESHALAL`**, branche
+   `claude/islamic-learning-platform-l7o7to`, Root Directory
+   `projects/apprentissage`. C'est ce qui a rendu le deploiement automatique.
+3. Un **`vercel.json`** dans le dossier : deux deploiements avaient echoue
+   parce que Vercel construisait l'application Next.js de voyageshalal. Le
+   fichier dit « pas de framework, rien a construire, sers le dossier ». Le
+   reglage vit dans le depot, plus dans un ecran.
+4. Le domaine branche chez OVH : `islampasapas.fr` est passe de
+   `213.186.33.5` (page vide OVH) a `216.198.79.1` (Vercel).
+5. **La redirection remise a l'endroit** : elle allait vers le www, alors que
+   les 223 adresses absolues du site declarent le sans-www. Google aurait
+   tourne en rond. Aujourd'hui : `www` -> `islampasapas.fr` en **308**.
+
+**Ce qui reste a faire, et c'est court :**
+
+- **Soumettre le sitemap** : Search Console -> Sitemaps -> `sitemap.xml`.
+- **La photo de `?son=diag`** : personne n'a jamais verifie qu'un recitateur
+  repond vraiment. L'atelier ne peut pas joindre les sources audio.
+- Prevenir l'agent responsable que le domaine repond, pour qu'il ajoute le
+  site a sa ronde de surveillance.
 
 ---
 
