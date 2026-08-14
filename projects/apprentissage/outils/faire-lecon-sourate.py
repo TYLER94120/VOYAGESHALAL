@@ -265,10 +265,14 @@ def lecon(num, nom, nom_ar, autre, vs):
           <strong>%s</strong>. Le Coran, c'est l'arabe&nbsp;: une traduction
           approche, elle ne remplace pas.
         </p>
+        <div class="source">
+          <span class="lab">Source</span>
+          <span class="val">Coran, sourate %s (%d), %s versets.</span>
+        </div>
       </section>
 """ % (e, nom, nom_ar, num, en_lettres(k),
        (' Aussi appelee <strong>%s</strong>.' % autre) if autre else '',
-       TRADUCTEUR))
+       TRADUCTEUR, nom, num, en_lettres(k)))
     e += 1
 
     # Ou placer les questions : jamais deux d'affilee, jamais en derniere carte.
@@ -539,6 +543,10 @@ def main():
             ('catalogue+' if c else '') + ('sitemap+' if s else '') + ('parcours+' if q else '')))
         faits += 1
     print("\n  %d lecon(s) ecrite(s)." % faits)
+    if faits:
+        print("  A FAIRE MAINTENANT : python3 outils/poser-json-ld.py")
+        print("  (generer une page EFFACE son bloc JSON-LD : il se repose apres,")
+        print("   jamais avant. Oublie une fois le 14 aout, vu par la suite.)")
 
 
 if __name__ == '__main__':

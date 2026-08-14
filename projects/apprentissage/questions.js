@@ -502,7 +502,7 @@ var IPP_QUESTIONS = [
   ],
   "quoi": "Sept. La lecon les a montres un par un.",
   "lecon": "sourate-al-ma-un",
-  "titreLecon": "Sourate Al-Ma",
+  "titreLecon": "Sourate Al-Ma'un, verset par verset",
   "url": "lecon-sourate-al-ma-un.html"
  },
  {
@@ -514,7 +514,7 @@ var IPP_QUESTIONS = [
   ],
   "quoi": "Al-Ma'un est la 107e sourate du Coran, sur 114.",
   "lecon": "sourate-al-ma-un",
-  "titreLecon": "Sourate Al-Ma",
+  "titreLecon": "Sourate Al-Ma'un, verset par verset",
   "url": "lecon-sourate-al-ma-un.html"
  },
  {
@@ -526,7 +526,7 @@ var IPP_QUESTIONS = [
   ],
   "quoi": "Le verset 2. Tu peux revenir en arriere pour le relire.",
   "lecon": "sourate-al-ma-un",
-  "titreLecon": "Sourate Al-Ma",
+  "titreLecon": "Sourate Al-Ma'un, verset par verset",
   "url": "lecon-sourate-al-ma-un.html"
  },
  {
@@ -754,7 +754,7 @@ var IPP_QUESTIONS = [
   ],
   "quoi": "Onze. La lecon les a montres un par un.",
   "lecon": "sourate-al-qari-a",
-  "titreLecon": "Sourate Al-Qari",
+  "titreLecon": "Sourate Al-Qari'a, verset par verset",
   "url": "lecon-sourate-al-qari-a.html"
  },
  {
@@ -766,7 +766,7 @@ var IPP_QUESTIONS = [
   ],
   "quoi": "Al-Qari'a est la 101e sourate du Coran, sur 114.",
   "lecon": "sourate-al-qari-a",
-  "titreLecon": "Sourate Al-Qari",
+  "titreLecon": "Sourate Al-Qari'a, verset par verset",
   "url": "lecon-sourate-al-qari-a.html"
  },
  {
@@ -778,7 +778,7 @@ var IPP_QUESTIONS = [
   ],
   "quoi": "Le verset 2. Tu peux revenir en arriere pour le relire.",
   "lecon": "sourate-al-qari-a",
-  "titreLecon": "Sourate Al-Qari",
+  "titreLecon": "Sourate Al-Qari'a, verset par verset",
   "url": "lecon-sourate-al-qari-a.html"
  },
  {
