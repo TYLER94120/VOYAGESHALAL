@@ -39,7 +39,9 @@
     { id: 'alphabet', nom: 'L\'alphabet arabe',
       quoi: 'Les 28 lettres, leur son et leurs formes selon la place.' },
     { id: 'invocations', nom: 'Les invocations du jour',
-      quoi: 'Au reveil, en mangeant, en sortant, avant de dormir.' }
+      quoi: 'Au reveil, en mangeant, en sortant, avant de dormir.' },
+    { id: 'comportement', nom: 'Le comportement',
+      quoi: 'La parole, la colere, les parents, les voisins.' }
   ];
 
   var CATALOGUE = [
@@ -158,6 +160,20 @@
       publiee: true,
       resume: 'Dix-sept d\'entre eux sont cites d\'affilee dans un seul passage. '
             + 'Tu les apprends par paquets, pas un par un.'
+    },
+    {
+      id: 'comportement',
+      titre: 'Six phrases du Prophete sur le comportement',
+      url: 'lecon-comportement.html',
+      parcours: 'comportement',
+      minutes: 6,
+      cartes: 12,
+      acquis: 6,
+      unite: 'phrase du Prophete',
+      unites: 'phrases du Prophete',
+      publiee: true,
+      resume: 'Six hadiths qui tiennent chacun en une phrase, tous dans Sahih '
+            + 'al-Boukhari, avec leur numero. Prends-en une seule pour aujourd\'hui.'
     }
   ];
 
