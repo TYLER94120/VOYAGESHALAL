@@ -1,7 +1,6 @@
 import fs from 'fs'
 import path from 'path'
 import Link from 'next/link'
-import Image from 'next/image'
 import type { Metadata } from 'next'
 import JsonLd from '@/components/seo/JsonLd'
 import EmailCapture from '@/components/ui/EmailCapture'
@@ -175,19 +174,18 @@ export default async function HomePage() {
         // Mohamed. Il devient un BANDEAU : le titre et la recherche
         // subsistent, pour le nouveau venu comme pour Google, mais ils ne
         // coûtent plus un écran. Le tableau de bord passe devant.
-        style={{ padding: '28px 24px 26px', backgroundColor: '#0b1a0f' }}
+        style={{ padding: '22px 24px 22px', backgroundColor: '#0b1a0f' }}
       >
-        {/* Image d'architecture islamique (sans personne) + voile sombre */}
-        <Image
-          // Fond à 42 % d'opacité sous un voile sombre : 1200 px suffisent,
-          // la différence avec 1920 est invisible et pèse trois fois moins.
-          src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&q=75"
-          alt={isEN ? 'Blue Mosque of Istanbul at sunset' : 'Mosquée Bleue d\'Istanbul au coucher du soleil'}
-          fill
-          priority
-          sizes="100vw"
-          style={{ objectFit: 'cover', opacity: 0.42 }}
-        />
+        {/* 📷 15 août — L'IMAGE DE FOND A ÉTÉ RETIRÉE D'ICI.
+            Ce hero portait une photo de la Mosquée Bleue en `priority`,
+            c'est-à-dire téléchargée AVANT tout le reste, parce qu'elle
+            remplissait alors un écran entier. Le hero ne fait plus que
+            169 px de haut et son voile est opaque sur les 120 premiers :
+            de la photo, il ne restait qu'une bande sombre indiscernable du
+            fond uni. On payait donc une image plein écran, en tête du
+            chemin critique, pour un résultat invisible — exactement le
+            genre de poids qui fait dire « le site met du temps à s'ouvrir ».
+            Le dégradé et le motif suffisent. */}
         {/* Voile sombre. La première centaine de pixels est OPAQUE : sans
             elle, une rupture nette apparaissait entre le tableau de bord
             (noir uni) et ce hero (éclairci par le motif doré) — Mohamed l'a
@@ -203,76 +201,34 @@ export default async function HomePage() {
             est vert-nuit (29,47,33). Deux fonds différents à l'œil. */}
         <IslamicPattern opacity={0.022} />
 
+        {/* 🧹 15 août — CE QUI A ÉTÉ RETIRÉ D'ICI, ET POURQUOI.
+            Mohamed, capture à l'appui : « les 2 pages n'ont pas fusionné,
+            c'est tout entassé ». Il avait raison : mettre le tableau de bord
+            devant sans rien enlever derrière ne fusionne rien, ça empile.
+            Quatre blocs de ce hero répétaient mot pour mot ce que le
+            tableau de bord ou la barre du bas donnaient déjà :
+              · le sur-titre « 354 destinations » — le lien vers les 354
+                destinations vit maintenant dans sa propre section ;
+              · le sous-titre de trois lignes — il redisait le titre ;
+              · « Découvrir les spots » — déjà dans le tableau de bord ET
+                dans la barre du bas (onglet Spots) ;
+              · « Ajouter un spot » — déjà le bouton ➕ central de la barre
+                du bas, celui qu'on ne peut pas manquer.
+            Les cartes de destinations ne sont PAS supprimées : elles
+            descendent dans une section à elles, avec un titre. Il ne reste
+            ici qu'une chose, celle que ce bandeau est seul à savoir faire :
+            chercher une ville. */}
         <div className="relative z-10 max-w-3xl mx-auto w-full">
-          <p style={{ color: '#c9a84c' }} className="text-xs font-semibold uppercase tracking-[0.35em] mb-2">
-            {t.heroEyebrow}
-          </p>
           <h1
-            className="text-2xl sm:text-3xl lg:text-4xl text-white leading-[1.08] mb-2"
+            className="text-xl sm:text-2xl lg:text-3xl text-white leading-[1.12] mb-3"
             style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 900 }}
           >
             {t.heroTitlePre}<span className="gold-em">{t.heroTitleGold}</span>{t.heroTitlePost}
           </h1>
-          <p className="text-white/70 text-sm sm:text-base leading-relaxed mb-4 max-w-xl mx-auto">
-            {t.heroSub}
-          </p>
 
-          {/* DONNER AVANT DE DEMANDER : la recherche puis les guides déjà
-              remplis (chiffres réels lus dans les fiches villes). Contribuer
-              vient après avoir reçu — « Ajouter » passe en second rang. */}
           <div style={{ maxWidth: 560, margin: '0 auto', width: '100%' }}>
             <div style={{ background: 'rgba(255,255,255,0.1)', border: '1.5px solid rgba(201,168,76,0.45)', borderRadius: 16, padding: 4 }}>
               <SearchBarHome />
-            </div>
-
-            {/* Guides prêts à l'emploi — la richesse du site, visible tout de suite */}
-            <div style={{ display: 'flex', gap: 10, overflowX: 'auto', padding: '12px 2px 4px', scrollSnapType: 'x mandatory' }}>
-              {vedettes.map((v) => (
-                <Link
-                  key={v.slug}
-                  href={`/destinations/${v.slug}`}
-                  style={{
-                    flex: 'none', width: 168, minHeight: 116, scrollSnapAlign: 'start',
-                    borderRadius: 16, overflow: 'hidden', textDecoration: 'none',
-                    border: '1px solid rgba(201,168,76,0.35)',
-                    display: 'flex', flexDirection: 'column', justifyContent: 'flex-end',
-                    backgroundImage: v.image
-                      // 168 px à l'écran : inutile de télécharger du 1600.
-                      ? `linear-gradient(180deg, rgba(11,26,15,0.15) 20%, rgba(11,26,15,0.92)), url(${photoLargeur(v.image, 168)})`
-                      : 'linear-gradient(160deg, #1d4a35, #0e2013)',
-                    backgroundSize: 'cover', backgroundPosition: 'center',
-                    textAlign: 'left',
-                  }}
-                >
-                  <span style={{ padding: '8px 10px 9px' }}>
-                    <span style={{ display: 'flex', alignItems: 'baseline', gap: 6 }}>
-                      <span style={{ color: '#fdfaf3', fontWeight: 800, fontSize: 15 }}>{v.nom}</span>
-                      <span style={{ color: '#c9a84c', fontWeight: 800, fontSize: 13 }}>✦ {v.score}</span>
-                    </span>
-                    <span style={{ display: 'block', color: 'rgba(253,250,243,0.72)', fontSize: 11.5, lineHeight: 1.35, marginTop: 2 }}>
-                      {v.restaurants > 0 && `${v.restaurants} ${isEN ? 'halal restos' : 'restos halal'}`}
-                      {v.restaurants > 0 && v.mosquees > 0 && ' · '}
-                      {v.mosquees > 0 && `${v.mosquees} ${isEN ? 'mosques' : 'mosquées'}`}
-                    </span>
-                  </span>
-                </Link>
-              ))}
-              <Link
-                href="/destinations"
-                style={{ flex: 'none', width: 132, minHeight: 116, borderRadius: 16, border: '1.5px dashed rgba(201,168,76,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', color: 'var(--or)', fontWeight: 800, fontSize: 13, textDecoration: 'none', padding: '0 10px' }}
-              >
-                {isEN ? `All ${totalVilles} destinations →` : `Les ${totalVilles} destinations →`}
-              </Link>
-            </div>
-
-            {/* Second rang : explorer les spots, puis contribuer */}
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginTop: 6 }}>
-              <Link href="/spots" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: 56, borderRadius: 14, border: '2px solid rgba(201,168,76,0.55)', background: 'rgba(255,255,255,0.06)', color: 'var(--creme)', fontWeight: 800, fontSize: 14.5, textDecoration: 'none' }}>
-                {t.heroDiscover}
-              </Link>
-              <Link href="/communaute/ajouter" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: 56, borderRadius: 14, border: '2px solid rgba(201,168,76,0.55)', background: 'rgba(255,255,255,0.06)', color: 'var(--creme)', fontWeight: 800, fontSize: 14.5, textDecoration: 'none' }}>
-                {t.heroAdd}
-              </Link>
             </div>
           </div>
         </div>
@@ -282,6 +238,61 @@ export default async function HomePage() {
           (le Radar Prière vit désormais dans le Board voyageur ci-dessus) */}
       <RecentSpotsHome />
       <NearbySpotsHome />
+
+      {/* 🌍 DESTINATIONS — une section à part entière, avec un titre.
+          Ces cartes étaient collées sous la barre de recherche, dans le
+          hero, sans rien pour dire ce qu'elles étaient. Les chiffres sont
+          lus dans les fiches villes, jamais inventés. */}
+      <section style={{ background: 'var(--nuit)' }} className="py-10 px-4">
+        <div className="max-w-3xl mx-auto">
+          <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 12, marginBottom: 14 }}>
+            <h2 className="text-white text-xl font-bold" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+              🌍 {t.popularTitle}
+            </h2>
+            <Link href="/destinations" style={{ color: 'var(--or)', fontWeight: 800, fontSize: 14, textDecoration: 'none', whiteSpace: 'nowrap' }}>
+              {t.seeAll}
+            </Link>
+          </div>
+          <div style={{ display: 'flex', gap: 10, overflowX: 'auto', padding: '2px 2px 6px', scrollSnapType: 'x mandatory' }}>
+            {vedettes.map((v) => (
+              <Link
+                key={v.slug}
+                href={`/destinations/${v.slug}`}
+                style={{
+                  flex: 'none', width: 168, minHeight: 116, scrollSnapAlign: 'start',
+                  borderRadius: 16, overflow: 'hidden', textDecoration: 'none',
+                  border: '1px solid rgba(201,168,76,0.35)',
+                  display: 'flex', flexDirection: 'column', justifyContent: 'flex-end',
+                  backgroundImage: v.image
+                    // 168 px à l'écran : inutile de télécharger du 1600.
+                    ? `linear-gradient(180deg, rgba(11,26,15,0.15) 20%, rgba(11,26,15,0.92)), url(${photoLargeur(v.image, 168)})`
+                    : 'linear-gradient(160deg, #1d4a35, #0e2013)',
+                  backgroundSize: 'cover', backgroundPosition: 'center',
+                  textAlign: 'left',
+                }}
+              >
+                <span style={{ padding: '8px 10px 9px' }}>
+                  <span style={{ display: 'flex', alignItems: 'baseline', gap: 6 }}>
+                    <span style={{ color: '#fdfaf3', fontWeight: 800, fontSize: 15 }}>{v.nom}</span>
+                    <span style={{ color: '#c9a84c', fontWeight: 800, fontSize: 13 }}>✦ {v.score}</span>
+                  </span>
+                  <span style={{ display: 'block', color: 'rgba(253,250,243,0.72)', fontSize: 11.5, lineHeight: 1.35, marginTop: 2 }}>
+                    {v.restaurants > 0 && `${v.restaurants} ${isEN ? 'halal restos' : 'restos halal'}`}
+                    {v.restaurants > 0 && v.mosquees > 0 && ' · '}
+                    {v.mosquees > 0 && `${v.mosquees} ${isEN ? 'mosques' : 'mosquées'}`}
+                  </span>
+                </span>
+              </Link>
+            ))}
+            <Link
+              href="/destinations"
+              style={{ flex: 'none', width: 132, minHeight: 116, borderRadius: 16, border: '1.5px dashed rgba(201,168,76,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', color: 'var(--or)', fontWeight: 800, fontSize: 13, textDecoration: 'none', padding: '0 10px' }}
+            >
+              {isEN ? `All ${totalVilles} destinations →` : `Les ${totalVilles} destinations →`}
+            </Link>
+          </div>
+        </div>
+      </section>
 
 
 
