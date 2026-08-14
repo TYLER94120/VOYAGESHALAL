@@ -27,7 +27,6 @@ tous les deux jours, jamais plus.
 | Les moments et les conditions de la priere | Les cinq prieres, leurs moments, ce qui rend la priere valable | Ne pas calculer d'horaires : renvoyer vers voyageshalal.fr. |
 | Memoriser le Coran | Une methode par petits morceaux, avec revisions espacees | Le site sait deja faire des revisions espacees. C'est surtout une methode a ecrire. |
 | Les mots qui reviennent le plus | Comprendre une grande part du Coran avec peu de mots | Les comptes d'occurrences doivent etre verifies un par un, pas repris d'un site. |
-| Le comportement | La parole, la colere, les parents, les voisins | Beaucoup de hadiths courts et solides. Facile a bien sourcer. |
 | Le jeune et le Ramadan | Ce que le jeune demande, et ce qui le rompt | A ouvrir avant Ramadan, pas apres. |
 | Le pelerinage | Les etapes du Hajj et de la Omra, dans l'ordre | Long. Sans doute plusieurs lecons. |
 | Les moments de l'annee | Le vendredi, Ramadan, les dix jours, Achoura | Le vendredi seul ferait deja une bonne lecon. |
@@ -41,6 +40,16 @@ tous les deux jours, jamais plus.
   « Les lettres changent de forme selon leur place » (9 cartes, quatre formes,
   sur les mots d'Al-Fatiha deja publies). **Le tanwin reste a ecrire** et ne
   compte donc pas.
+
+- **Le comportement** — sortie le 14 aout : « Six phrases du Prophete sur le
+  comportement » (12 cartes, six hadiths, tous dans Sahih al-Boukhari avec leur
+  numero et leur compagnon). Ecrite a la demande de Mohamed, qui trouvait le
+  site trop leger — et il avait raison, la mesure lui donnait raison.
+  **Cette lecon n'affiche pas l'arabe**, et elle le dit : recopier un hadith en
+  arabe demande de le prendre lettre par lettre dans le recueil, ce qui n'etait
+  pas possible ici. Une traduction du sens avec sa reference est verifiable ;
+  un texte arabe approximatif ne l'est pas. **L'arabe est a ajouter le jour ou
+  il pourra l'etre sans risque d'erreur** — c'est une dette, elle est ecrite.
 
 ## Ce qui reste hors du site
 

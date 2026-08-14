@@ -3,19 +3,28 @@
 Pour Mohamed, **sur ordinateur**. Le site est **statique** : des fichiers, rien
 d'autre. Pas de base de donnees, pas de serveur a regler, aucune cle a saisir.
 
-## Ou on en est (mis a jour le 14/08)
+## Ou on en est (mis a jour le 14/08, apres la neuvieme lecon)
 
-- **8 lecons**, 112 cartes, 52 minutes de contenu, 88 choses a apprendre.
-  **20 fichiers, 529 Ko** — c'est tout le site.
-- Le depot **`islampasapas` existe deja**, cree par Mohamed, **prive et vide**.
-- Le site vit aujourd'hui dans le depot `VOYAGESHALAL`, dossier
+- **9 lecons**, 117 cartes, 58 minutes de contenu, 94 choses a apprendre.
+  **21 fichiers, 549 Ko** — c'est tout le site.
+- **LE SITE EST EN LIGNE depuis le 14 aout au soir.** Mohamed a rempli le depot
+  `Islampasapas` a la main (glisser-deposer sur GitHub), et Vercel l'a deploye.
+  Les huit premieres lecons y sont.
+- Le site vit toujours dans le depot `VOYAGESHALAL`, dossier
   `projects/apprentissage/`, sur la branche
-  `claude/islamic-learning-platform-l7o7to`.
-- **Je ne peux pas remplir `islampasapas` moi-meme** : mon acces GitHub est
-  verrouille sur le seul depot `voyageshalal`. C'est verifie, ce n'est pas
-  contournable de mon cote.
+  `claude/islamic-learning-platform-l7o7to`. **C'est la que j'ecris.**
+- **Le goulot d'etranglement est la, et il est le vrai sujet.** Je n'ai pas
+  l'acces en ecriture au depot `Islampasapas` : la demande revient
+  « cette action demande une approbation », et l'autorisation n'arrive pas
+  jusqu'a Mohamed. **Chaque nouvelle lecon doit donc etre re-deposee a la
+  main** — la neuvieme attend deja.
+- La sortie propre : **rebrancher le projet Vercel sur `VOYAGESHALAL`**
+  (Settings → Git → Connected Git Repository), avec Production Branch
+  `claude/islamic-learning-platform-l7o7to` et Root Directory
+  `projects/apprentissage`. Alors tout ce que je pousse part en ligne seul.
+  Voir le chemin 2.
 
-Deux chemins ci-dessous. **Le 1 est le plus propre**, le 2 est le plus rapide.
+Les chemins ci-dessous restent valables pour toute remise a plat.
 
 ---
 
@@ -112,15 +121,15 @@ le temps que le changement se propage sur internet, personne n'y peut rien.
 
 **Deja en place, rien a faire :**
 
-- `sitemap.xml` — **11 pages** : l'accueil, les 8 lecons, la page des lecons,
+- `sitemap.xml` — **12 pages** : l'accueil, les 9 lecons, la page des lecons,
   les 114 sourates. « Mon chemin » en est volontairement absent : c'est une page
   privee, elle porte une balise `noindex`.
-- **11 titres uniques et 11 descriptions uniques.** Aucun doublon — c'est ce qui
+- **12 titres uniques et 12 descriptions uniques.** Aucun doublon — c'est ce qui
   fait chuter un site dans les resultats.
 - Une **adresse canonique** et une image de partage sur chaque page indexable.
 - `robots.txt` bloque les deux apercus : publies, ils feraient du contenu
   duplique avec le site entier.
-- **Donnees structurees (JSON-LD)** sur 10 des 11 pages indexables, generees depuis
+- **Donnees structurees (JSON-LD)** sur 11 des 12 pages indexables, generees depuis
   le catalogue par `outils/poser-json-ld.py`. Chaque lecon se declare comme une
   ressource d'apprentissage gratuite, en francais, avec ce qu'elle enseigne
   (« 7 versets d'Al-Fatiha ») et sa duree reelle. **On ne declare rien qu'on

@@ -299,10 +299,18 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    texte ou le 1,15.
 
 3. **Qui avance vite trouve un site vide : 15 jours sur 18.**
-   *Re-mesure au cycle 40, apres la huitieme lecon : inchange.* Huit lecons en
-   **52 minutes** le premier jour, puis le vide. Une lecon de plus ne deplace pas
-   cette colonne — elle repousse seulement la premiere repetition d'un jour pour
-   qui avance au rythme du site.
+   *Re-mesure au cycle 43, apres la neuvieme lecon : inchange.* Neuf lecons en
+   **58 minutes** le premier jour, puis le vide — **15 jours vides sur 18**,
+   exactement comme a huit lecons et comme a sept. Deux lecons de plus en deux
+   jours n'ont pas deplace cette colonne d'une unite. *Et la re-mesure a failli
+   annoncer le contraire :* mon audit tronquait a huit lecons et rendait « 12
+   jours vides », une amelioration qui n'existait pas — voir « Fait », cycle 43.
+   **C'est cette mesure-la qui a fait naitre `IDEES-facons-d-apprendre.md` :**
+   si ecrire deux lecons de plus ne bouge rien, le probleme n'est pas la
+   quantite de matiere, c'est qu'il n'existe **qu'une seule facon** de la
+   consommer. Six formes y sont posees — QCM libere, hors ligne, une seule main,
+   ecoute, lecture longue, chemins selon le moment — et **aucune ne demande
+   d'ecrire un texte religieux de plus**.
    *Preuve, re-mesuree au cycle 28 sur deux comportements — un seul aurait
    menti :* une personne qui **suit l'objectif du jour** et s'arrete ne rencontre
    plus **aucun** jour vide sur 18 (c'etait 5 avant que `OBJ_REVISIONS` passe a
@@ -357,6 +365,52 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 ---
 
 ## Fait
+
+- **Une neuvieme lecon — « Six phrases du Prophete sur le comportement »**
+  *(14 aout, cycle 43)* — **demandee par Mohamed**, qui trouvait le site trop
+  leger. Il avait raison et ma propre mesure lui donnait raison.
+  *Six hadiths, tous dans Sahih al-Boukhari, chacun avec son numero et son
+  compagnon :* la parole (n&deg;6018), la langue et la main (n&deg;10), aimer
+  pour son frere (n&deg;13), la colere (n&deg;6116), les parents (n&deg;5971,
+  avec Al-Isra 17:23), le voisin (n&deg;6014). 12 cartes, 3 questions, 6 min.
+  *Une decision editoriale assumee, et ecrite DANS la lecon :* **elle n'affiche
+  pas l'arabe.** Recopier un hadith en arabe demande de le prendre lettre par
+  lettre dans le recueil, ce qui n'etait pas possible ici. Une traduction du
+  sens avec sa reference est **verifiable** ; un texte arabe approximatif ne
+  l'est pas. La carte 11 le dit au lecteur au lieu de le cacher. **C'est une
+  dette, elle est ecrite dans les notes.**
+  *Ce que ca change, re-mesure sur dix-huit jours joues :*
+  | | 8 lecons | 9 lecons |
+  |---|---|---|
+  | jours vides, pour qui suit l'objectif | 0 / 18 | **0 / 18** |
+  | cout d'une journee | ~6 min | **~6 min** |
+  | jour 1, pour qui vide tout | 8 lecons, 52 min | **9 lecons, 58 min** |
+  | jours vides, pour qui vide tout | 15 / 18 | **15 / 18** |
+  **La neuvieme lecon ne comble pas le trou**, et il faut le dire aussi
+  franchement que le reste : elle deplace le calendrier, elle ne le remplit pas.
+  L'element 3 reste entier, et c'est lui qui a fait naitre le document
+  `IDEES-facons-d-apprendre.md` — *le site ne manque pas de matiere, il manque
+  de formes*.
+  *Trois defauts de mon propre outillage, tous trouves ce cycle :*
+  1. **Mon test lisait 13 la ou `app.js` ecrit 12.** Mon nouveau parcours et ma
+     nouvelle lecon portent le meme identifiant (`comportement`) — le premier
+     cas en neuf lecons — et le test cherchait `id: 'x'` dans **tout** `app.js` :
+     il tombait sur le parcours, puis remontait au premier `cartes:` venu. Il
+     lit maintenant le catalogue seul.
+  2. **Mon audit des comptes a refuse de valider la lecon** tant qu'on ne lui
+     avait pas dit quoi compter — c'est voulu. Il compte les **numeros de hadith
+     distincts** : six numeros, six acquis. Deux cartes citant le meme hadith ne
+     feraient pas deux acquis.
+  3. **Et le plus grave : mon audit des dix-huit jours TRONQUAIT EN SILENCE.**
+     Un plafond ecrit en dur a `k < 8`, du temps ou le site avait moins de
+     lecons. Avec neuf lecons il annoncait « 8 lecons, 52 min » — donc une
+     personne qui n'avait pas fini son premier jour — et comptait des jours
+     vides sur un parcours incomplet : **12 jours vides au lieu de 15**. J'ai
+     failli publier une amelioration qui n'existait pas. Le plafond vient
+     maintenant du catalogue **et se plaint a l'ecran s'il sert**. *Une borne
+     qui coupe la mesure sans le dire est pire que pas de borne — c'est ma
+     propre regle, et mon outil la violait depuis des semaines.*
+  *32 suites, toutes vertes* apres correction.
 
 - **Les 114 sourates sont atteignables : douze liens, zero JavaScript**
   *(14 aout, cycle 42)* — l'element 1 de l'audit du cycle 41.
