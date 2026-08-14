@@ -130,6 +130,22 @@
             + 'petits signes. Sur les mots d\'Al-Fatiha, que tu connais deja.'
     },
     {
+      // Elle suppose les 28 lettres ET les huit signes : elle vient donc apres
+      // « Lire l'arabe ». Les deux lecons precedentes l'annoncent deja.
+      id: 'lire-arabe-formes',
+      titre: 'Les lettres changent de forme selon leur place',
+      url: 'lecon-lire-arabe-formes.html',
+      parcours: 'alphabet',
+      minutes: 6,
+      cartes: 9,
+      acquis: 4,
+      unite: 'forme de la lettre',
+      unites: 'formes de la lettre',
+      publiee: true,
+      resume: 'Une lettre ne change pas : elle se raccourcit. Quatre places, '
+            + 'quatre formes — et deux pour celles qui ne s\'attachent jamais.'
+    },
+    {
       id: 'prophetes-coran',
       titre: 'Les 25 prophetes nommes dans le Coran',
       url: 'lecon-prophetes-coran.html',

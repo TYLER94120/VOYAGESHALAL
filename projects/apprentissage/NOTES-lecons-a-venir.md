@@ -37,8 +37,10 @@ tous les deux jours, jamais plus.
 - **Lire l'arabe du Coran** — sortie le 12 aout : la lecon « Lire l'arabe : les
   signes au-dessus et en dessous » est ecrite, relue et sourcee (huit signes,
   12 cartes, sur les mots d'Al-Fatiha deja publies). La suite de ce theme
-  — dechiffrer les formes selon la place dans le mot, puis le tanwin — n'est
-  pas encore ecrite et ne compte donc pas.
+  — dechiffrer les formes selon la place dans le mot — est sortie le 14 aout :
+  « Les lettres changent de forme selon leur place » (9 cartes, quatre formes,
+  sur les mots d'Al-Fatiha deja publies). **Le tanwin reste a ecrire** et ne
+  compte donc pas.
 
 ## Ce qui reste hors du site
 

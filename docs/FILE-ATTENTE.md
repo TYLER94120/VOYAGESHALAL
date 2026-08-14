@@ -259,6 +259,10 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    texte ou le 1,15.
 
 2. **Qui avance vite trouve un site vide : 15 jours sur 18.**
+   *Re-mesure au cycle 40, apres la huitieme lecon : inchange.* Huit lecons en
+   **52 minutes** le premier jour, puis le vide. Une lecon de plus ne deplace pas
+   cette colonne — elle repousse seulement la premiere repetition d'un jour pour
+   qui avance au rythme du site.
    *Preuve, re-mesuree au cycle 28 sur deux comportements — un seul aurait
    menti :* une personne qui **suit l'objectif du jour** et s'arrete ne rencontre
    plus **aucun** jour vide sur 18 (c'etait 5 avant que `OBJ_REVISIONS` passe a
@@ -313,6 +317,40 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 ---
 
 ## Fait
+
+- **Une huitieme lecon — « Les lettres changent de forme selon leur place »**
+  *(14 aout, cycle 40)* — la premiere depuis le 12, au rythme d'une tous les deux
+  jours, jamais plus.
+  *Elle n'a pas ete choisie : elle etait promise.* La lecon de l'alphabet dit
+  deux fois qu'elle arrive — « les formes changent legerement selon la place de
+  la lettre dans le mot : c'est la prochaine lecon de ce parcours » — et celle
+  des voyelles la reprend. **Une promesse ecrite dans le site depuis quatre
+  jours ; elle est tenue.**
+  *Ce que ca change, mesure sur dix-huit jours joues :*
+  | | 7 lecons | 8 lecons |
+  |---|---|---|
+  | jours vides, pour qui suit l'objectif | 0 / 18 | **0 / 18** |
+  | premiere revision | jour 8 | **jour 9** |
+  | jours vides, pour qui vide tout | 15 / 18 | **15 / 18** |
+  **Le taux de change a change, et il faut le dire :** au cycle 26 une lecon
+  rendait un jour vide. Ce n'est plus le cas — les jours vides etaient deja a
+  zero depuis `OBJ_REVISIONS`. Ce qu'elle rend maintenant, c'est **un jour de
+  neuf de plus** : huit lecons d'affilee au lieu de sept avant la premiere
+  repetition. Et **elle ne repare pas** le cas de qui vide tout : 15 jours vides
+  sur 18, inchange. L'element 2 reste entier.
+  *Elle se place exactement ou il faut* : jour 7, juste apres l'alphabet (jour 5)
+  et les signes (jour 6) — les deux lecons dont elle depend.
+  *Zero arabe saisi a la main*, comme aux cycles 26 et 33. Les mots cites sont
+  **extraits par script** d'Al-Fatiha deja publiee et relue ; les quatre formes
+  sont composees avec le **liant de largeur nulle**, point de code par point de
+  code, et verifiees : `BEH`, `BEH+ZWJ`, `ZWJ+BEH+ZWJ`, `ZWJ+BEH`.
+  *Et une verification que je n'avais jamais faite : que les formes se voient
+  vraiment.* Une lecon sur les formes qui montrerait quatre fois le meme dessin
+  ne montrerait rien. Mesure des largeurs a l'ecran, police de repli comprise :
+  **56,5 / 16,7 / 18,1 / 58,9 px — quatre formes distinctes sur quatre.**
+  Sinon je ne l'aurais pas publiee.
+  *9 cartes, 3 questions, 6 minutes, 4 formes creditees.* Catalogue, page des
+  lecons, sitemap et donnees structurees regeneres : **8 lecons, 88 choses**.
 
 - **Retour recule d'une carte, plus de quinze** *(13 aout, cycle 39)* —
   **avant : Retour quittait la lecon et la rouvrir repartait de la carte 1,
