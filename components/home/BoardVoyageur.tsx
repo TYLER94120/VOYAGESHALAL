@@ -663,6 +663,59 @@ export default function BoardVoyageur({
               <span style={{ color: 'var(--or)', fontWeight: 800, fontSize: 13 }}>→</span>
             </Link>
           )
+          // 🧠 L'ENVIE VIT DANS LA TUILE MANGER — Mohamed, 15 août : « manger
+          // le plus proche, il faut que ça serve à quelque chose… je suis à
+          // Noisy, j'aimerais une pizza bien notée et la plus proche ». La
+          // question a trois curseurs : QUOI (pizza), COMMENT (bien notée ou
+          // proche), OÙ (déjà connu). Les deux premiers se règlent ICI, dans
+          // la tuile — pas dans une rangée de boutons flottante (retirée le
+          // même jour au nom de la cohérence). Aujourd'hui « bien notée »
+          // s'appuie sur les avis des voyageurs du site ; quand l'API Google
+          // Maps sera débloquée, les notes Google se brancheront sur ces
+          // mêmes curseurs sans rien changer à l'écran.
+          const enviesChips = (compact: boolean) => (
+            <div onClick={(e) => e.stopPropagation()} style={{ display: 'flex', gap: 6, overflowX: 'auto', paddingBottom: 2, marginTop: compact ? 8 : 10, WebkitOverflowScrolling: 'touch' }}>
+              {envie && (
+                <button onClick={() => setEnvie(null)}
+                  style={{ flex: 'none', minHeight: 44, padding: '0 11px', borderRadius: 999, border: '1px solid rgba(253,250,243,0.25)', background: 'transparent', color: 'rgba(253,250,243,0.75)', fontWeight: 700, fontSize: 12.5, cursor: 'pointer' }}>
+                  ✕ {en ? 'Any' : 'Tout'}
+                </button>
+              )}
+              {ENVIES.map((e) => {
+                const on = envie === e.id
+                return (
+                  <button key={e.id} onClick={() => setEnvie(on ? null : e.id)} aria-pressed={on}
+                    style={{
+                      flex: 'none', minHeight: 44, padding: compact ? '0 10px' : '0 13px', borderRadius: 999, cursor: 'pointer',
+                      border: on ? '1.5px solid var(--or)' : '1px solid rgba(253,250,243,0.28)',
+                      background: on ? 'rgba(201,168,76,0.18)' : 'rgba(255,255,255,0.05)',
+                      color: on ? 'var(--or)' : 'var(--creme)',
+                      fontWeight: on ? 800 : 700, fontSize: compact ? 12.5 : 13, whiteSpace: 'nowrap',
+                    }}>
+                    {e.emoji}{compact ? '' : ` ${e[en ? 'en' : 'fr']}`}
+                  </button>
+                )
+              })}
+            </div>
+          )
+          const modeChips = (
+            <div onClick={(e) => e.stopPropagation()} style={{ display: 'flex', gap: 7, marginTop: 8, alignItems: 'center', flexWrap: 'wrap' }}>
+              {([['proche', '📍', en ? 'Closest' : 'La plus proche'], ['meilleur', '⭐', en ? 'Best rated' : 'La mieux aimée']] as const).map(([m, ic, lab]) => {
+                const on = mode === m
+                return (
+                  <button key={m} onClick={() => setMode(m)} aria-pressed={on}
+                    style={{
+                      minHeight: 44, padding: '0 13px', borderRadius: 999, cursor: 'pointer',
+                      border: on ? '1.5px solid var(--or)' : '1px solid rgba(253,250,243,0.28)',
+                      background: on ? 'rgba(201,168,76,0.18)' : 'rgba(255,255,255,0.05)',
+                      color: on ? 'var(--or)' : 'var(--creme)', fontWeight: on ? 800 : 700, fontSize: 13,
+                    }}>
+                    {ic} {lab}
+                  </button>
+                )
+              })}
+            </div>
+          )
           const mangerWide = bestResto && (
             <div className="board-hero" role="link" tabIndex={0} onClick={() => window.open(itin(bestResto.lat, bestResto.lng), '_blank', 'noopener')} onKeyDown={(e) => { if (e.key === 'Enter') window.open(itin(bestResto.lat, bestResto.lng), '_blank', 'noopener') }}
               style={{ ...T.tile, background: 'linear-gradient(150deg, rgba(27,67,50,0.85), rgba(255,255,255,0.04))', borderColor: 'rgba(201,168,76,0.35)', cursor: 'pointer' }}>
@@ -744,6 +797,9 @@ export default function BoardVoyageur({
                     : (en ? 'Closest first — nothing else considered.' : 'Le plus proche d\'abord — rien d\'autre n\'entre en compte.')}
                 </p>
               )}
+              {/* Les curseurs de la question : QUOI, puis COMMENT. */}
+              {enviesChips(false)}
+              {envieActive && modeChips}
             </div>
           )
           // Envie exprimee mais aucun resultat : on l'assume et on ouvre des
@@ -766,6 +822,8 @@ export default function BoardVoyageur({
               <p style={{ ...T.meta, marginTop: 4 }}>
                 {en ? 'Our directory does not list one here — we would rather say so than send you somewhere wrong.' : 'Notre annuaire n\'en référence pas ici — on préfère te le dire plutôt que t\'envoyer au mauvais endroit.'}
               </p>
+              {/* Changer d'envie sans quitter la carte : la question reste ouverte. */}
+              {enviesChips(false)}
               <div style={{ display: 'flex', gap: 8, marginTop: 10, flexWrap: 'wrap' }}>
                 <button onClick={() => setEnvie(null)} style={{ minHeight: 44, padding: '0 14px', borderRadius: 999, border: '1.5px solid rgba(201,168,76,0.5)', background: 'transparent', color: 'var(--creme)', fontWeight: 700, fontSize: 13, cursor: 'pointer' }}>
                   🍽 {en ? 'Nearest halal instead' : 'Le plus proche à la place'}
@@ -820,6 +878,10 @@ export default function BoardVoyageur({
                     </p>
                   </>
                 )}
+              {/* La rangée d'envies, compacte (emojis seuls) : un tap sur 🍕
+                  et la tuile passe en grande carte-réponse avec le sélecteur
+                  « la plus proche / la mieux aimée ». */}
+              {enviesChips(true)}
             </div>
           )
 
