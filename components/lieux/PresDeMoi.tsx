@@ -146,10 +146,18 @@ export default function PresDeMoi({ posInitiale, destination }: {
   }
 
   return (
-    <section style={{ background: 'var(--nuit)' }} className="pb-8 px-4" aria-label={destination ? `À ${destination.nom}` : 'Près de moi'}>
-      <div className="max-w-3xl mx-auto" style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(201,168,76,0.3)', borderRadius: 16, padding: 16 }}>
-        <p style={{ color: 'var(--or)', fontSize: 12, fontWeight: 800, letterSpacing: '0.08em', textTransform: 'uppercase', margin: 0 }}>
+    <section style={{ background: 'var(--nuit)' }} className="pt-2 pb-8 px-4" aria-label={destination ? `À ${destination.nom}` : 'Près de moi'}>
+      {/* ⭐ Le poids visuel d'un cœur de page : liseré or marqué et fond
+          légèrement relevé — c'est LA fonction du site, pas une carte
+          parmi d'autres. */}
+      <div className="max-w-3xl mx-auto" style={{ background: 'linear-gradient(150deg, rgba(27,67,50,0.5), rgba(255,255,255,0.05))', border: '1.5px solid rgba(201,168,76,0.55)', borderRadius: 18, padding: 16, boxShadow: '0 4px 22px rgba(0,0,0,0.25)' }}>
+        <p style={{ color: 'var(--or)', fontSize: 13, fontWeight: 900, letterSpacing: '0.08em', textTransform: 'uppercase', margin: 0 }}>
           📍 {destination ? `À ${destination.nom}` : 'Près de moi'}
+        </p>
+        <p style={{ color: 'rgba(253,250,243,0.7)', fontSize: 13, margin: '4px 0 0', lineHeight: 1.4 }}>
+          {destination
+            ? 'Restaurants, mosquées et activités — chaque adresse porte sa source.'
+            : 'Dis ce que tu cherches, on regarde autour de toi — chaque adresse porte sa source.'}
         </p>
         {/* Les trois ateliers : un tap change la catégorie et vide le résultat. */}
         <div style={{ display: 'flex', gap: 7, marginTop: 10, flexWrap: 'wrap' }}>
