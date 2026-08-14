@@ -562,13 +562,15 @@ export default function BoardVoyageur({
           const priereWide = (
             // Ouvert : un tap sur le fond REFERME (l'accordéon se replie là où
             // il s'est ouvert). Les actions vivent sur leurs propres boutons.
-            <div className="board-hero board-pousse" role="button" tabIndex={0} aria-expanded onClick={() => setOuvert(null)} onKeyDown={(e) => { if (e.key === 'Enter') setOuvert(null) }}
-              style={{ ...T.tile, background: 'linear-gradient(150deg, rgba(27,67,50,0.85), rgba(255,255,255,0.04))', borderColor: 'rgba(201,168,76,0.35)', cursor: 'pointer' }}>
+            // 🕌 TOUJOURS OUVERT — ordre du 15 août : « la prière d'abord,
+            // tout de suite, sans défilement ». Ce bloc ne se replie plus :
+            // c'est la première raison d'ouvrir le site.
+            <div className="board-hero" style={{ ...T.tile, background: 'linear-gradient(150deg, rgba(27,67,50,0.85), rgba(255,255,255,0.04))', borderColor: 'rgba(201,168,76,0.45)' }}>
               <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 10 }}>
                 <p style={{ ...T.lab, color: accent }}>
                   🕌 {fenetre.mode === 'current' ? (en ? 'Now' : 'Maintenant') : (en ? 'Next prayer' : 'Prochaine prière')} · {fenetre.key}
                 </p>
-                <p style={{ ...T.meta, fontWeight: 700 }}>{fmtClock(fenetre.start)} <span style={{ color: 'var(--or)' }} aria-hidden>▴</span></p>
+                <p style={{ ...T.meta, fontWeight: 700 }}>{fmtClock(fenetre.start)}</p>
               </div>
               <p style={{ fontFamily: "'Playfair Display', Georgia, serif", color: '#fdfaf3', fontSize: 30, fontWeight: 900, margin: '2px 0 0', lineHeight: 1.05 }}>
                 {fenetre.mode === 'current'
@@ -638,6 +640,21 @@ export default function BoardVoyageur({
                     : (en ? 'Could not finish the search — try again in a moment.' : 'Recherche non terminée — réessaie dans un instant.')}
                 </p>
               )}
+              {/* 🧭 LA QIBLA DANS LE MÊME BLOC — ordre de Mohamed,
+                  15 août : « regroupe en UN bloc unique la prochaine
+                  prière, la mosquée la plus proche et la Qibla ; le
+                  visiteur qui cherche où prier ne doit pas balayer trois
+                  endroits ». Elle vivait seule, deux cartes plus bas. */}
+              <Link href="/qibla" onClick={(e) => e.stopPropagation()}
+                aria-label={en ? 'Qibla compass' : 'Boussole Qibla'}
+                style={{ marginTop: 10, minHeight: 48, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8,
+                  textDecoration: 'none', borderRadius: 999, border: '1.5px solid rgba(201,168,76,0.6)', background: 'rgba(201,168,76,0.10)' }}>
+                <span style={{ fontSize: 18, transform: `rotate(${qibla.deg}deg)`, display: 'inline-block', lineHeight: 1 }} aria-hidden>🧭</span>
+                <span style={{ color: 'var(--or)', fontWeight: 900, fontSize: 14 }}>
+                  {qibla.deg}° · {qibla.dir}
+                  <span style={{ fontWeight: 800, fontSize: 12.5, marginLeft: 6, opacity: 0.85 }}>Qibla</span>
+                </span>
+              </Link>
               {horairesDansCarte}
             </div>
           )
@@ -911,36 +928,17 @@ export default function BoardVoyageur({
                   moi » juste en dessous fait la même chose en mieux :
                   Google Maps, trois catégories, réponse IA. Deux portes
                   vers la même pièce, la moins bonne se ferme. */}
-              {ouvert === 'priere' ? priereWide : priereSlim}
-              {spotsWidget}
+              {/* 💎 LA LIGNE « SPOTS » A QUITTÉ LE TABLEAU DE BORD, elle
+                  aussi : l'ordre du 15 août est prière · autour de moi ·
+                  destinations, et nos spots vérifiés remontent DÉJÀ dans
+                  « Près de moi » (ils passent même au-dessus des résultats
+                  Google — c'est notre valeur). L'onglet Spots de la barre
+                  du bas et le menu Outils restent les portes du feed. */}
+              {priereWide}
             </>
           )
         })()}
 
-        {/* 🧭 LA QIBLA, seule sur sa ligne — en doré plein (demandé par
-            Mohamed : « mets le bouton de la Qibla plus visible »). La date
-            hégirienne qui partageait cette ligne part sur /horaires-priere :
-            belle information, mais pas une action — et l'écran épuré ne
-            garde que ce qu'on vient y FAIRE. Les cinq horaires ont rejoint
-            la carte prière, plus haut : le religieux vit dans UNE zone. */}
-        {/* 📐 COHÉRENCE : l'aplat or plein est réservé à UNE action par
-            écran — le bouton Rechercher. Cette ligne rejoint la famille des
-            cartes (même fond, même rayon) avec la bordure or la plus
-            marquée de l'écran : toujours la plus visible de sa rangée,
-            sans crier plus fort que l'action principale. */}
-        <Link href="/qibla" className="board-slim" aria-label={en ? 'Qibla compass' : 'Boussole Qibla'}
-          style={{
-            ...T.tile, marginTop: 10, minHeight: 52, display: 'flex', alignItems: 'center', justifyContent: 'center',
-            gap: 8, textDecoration: 'none',
-            border: '1.5px solid rgba(201,168,76,0.65)',
-          }}>
-          <span style={{ fontSize: 19, transform: `rotate(${qibla.deg}deg)`, display: 'inline-block', lineHeight: 1 }} aria-hidden>🧭</span>
-          <span style={{ color: 'var(--or)', fontWeight: 900, fontSize: 14.5 }}>
-            {qibla.deg}° · {qibla.dir}
-            <span style={{ fontWeight: 800, fontSize: 12.5, marginLeft: 6, opacity: 0.85 }}>Qibla</span>
-          </span>
-          <span style={{ color: 'var(--or)', fontWeight: 800, marginLeft: 4 }} aria-hidden>→</span>
-        </Link>
 
       </div>
     </section>
