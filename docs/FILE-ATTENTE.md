@@ -173,6 +173,35 @@ requêtes ces pages sortent réellement.
 
 ## Fait
 
+### ⛔ « 37 fichiers en force-dynamic dont certains n'en ont pas besoin » : faux chantier, mesuré — 14 août
+Ce point traînait dans les consignes de cycle depuis le 10 août. **Mesuré
+plutôt que cru, et il n'y a rien à gagner.**
+
+**L'état réel** : 41 directives `force-dynamic`, dont **32 sur des routes
+API** — celles-là lisent Redis, la position ou la météo, elles sont
+dynamiques par nature. Restent **9 pages**.
+
+**Le test qui tranche** : j'ai retiré `force-dynamic` de `/destinations` et
+reconstruit. **La page reste dynamique (`ƒ`).** Deux raisons, toutes deux
+structurelles :
+- `app/layout.tsx` est lui-même en `force-dynamic`, ce qui s'applique à
+  toutes les routes ;
+- surtout, **`getDomainSEO()` lit les en-têtes HTTP** pour savoir sur quel
+  domaine on se trouve. Une page qui lit les en-têtes **ne peut pas** être
+  statique. C'est le prix du bi-domaine par en-tête `Host`, pas un oubli.
+
+**Chiffre de fin** : 97 routes, **3 statiques** (les icônes), 94
+dynamiques — et ce serait 94 même en retirant les 9 directives. Les
+supprimer ne rendrait aucune page statique ; ça ne ferait que retirer une
+ceinture qui ne gêne personne.
+
+**Ce qu'il faudrait pour vraiment gagner** : servir chaque langue depuis
+son propre point d'entrée au lieu de lire l'en-tête à l'exécution. C'est un
+changement d'architecture, pas un nettoyage — **à ne pas entreprendre sans
+une raison mesurée**, et la vitesse a déjà été traitée le 11 août.
+
+**Cet élément est clos. Il ne doit plus revenir dans les consignes.**
+
 ### La même cause frappait quatre autres gabarits — 14 août
 **Le gabarit « où prier » corrigé hier n'était pas seul.** Après l'avoir
 réparé, j'ai cherché si la cause — du décor placé devant une valeur qu'on
