@@ -111,8 +111,10 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 > verifie qu'elle est complete ; personne n'avait essaye d'y **trouver** une
 > sourate. La question devient urgente : la page est dans le sitemap avec sa
 > propre description, donc Google y enverra des gens qui cherchent une sourate
-> precise, sans avoir jamais vu l'accueil. Un element en sort, le 1 ci-dessous ;
-> cinq promesses sont saines.
+> precise, sans avoir jamais vu l'accueil. Un element en sort, **fait au
+> cycle 42** ; cinq promesses sont saines. *Une de ses mesures etait pourtant
+> fausse* — la hauteur de la page — et c'est le cycle 42 qui l'a vue en la
+> re-mesurant : voir « Fait ». **Une mesure republiee est une mesure verifiee.**
 >
 > **Mesure aux cycles 6, 10, 13, 16, 18, 21, 23, 29, 32, 34, 35, 37, 38 et 41, et rien a corriger** — a ne pas
 > re-mesurer sans raison :
@@ -254,27 +256,29 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 >   simulee qui repond en 21 ms, « ↻ Repeter avec moi » apparait sur la carte du
 >   verset ; sans reponse, aucun bouton — la regle tient dans les deux sens.
 
-1. **La page des 114 sourates fait 17 ecrans de telephone, et on ne peut rien y
-   chercher.**
-   *Preuve, mesuree a 414 px :* la page fait **11 695 px de haut**, soit
-   **16,9 ecrans**. Pour atteindre une sourate, il faut defiler :
-   | sourate | position | ecrans a defiler |
-   |---|---|---|
-   | Al-Kahf (18) | 2 206 px | 3,2 |
-   | Ya-Sin (36) | 3 985 px | 5,8 |
-   | Al-Mulk (67) | 7 049 px | 10,2 |
-   | An-Nas (114) | 11 695 px | **16,9** |
-   Et **aucun moyen de chercher** : zero champ, zero filtre, zero ancre. Le seul
-   chemin est le pouce.
-   *Pourquoi ca compte maintenant :* la page est dans le sitemap avec sa propre
-   description, « Les 114 sourates du Coran : la liste complete ». Quelqu'un qui
-   cherche « sourate Al-Mulk » sur Google atterrira dessus et devra defiler dix
-   ecrans. Une liste qu'on ne peut pas parcourir autrement qu'au pouce n'est pas
-   « complete » au sens ou la personne l'entend.
-   *La voie qui colle au site :* des **ancres par dizaines** (1-10, 11-20, …) en
-   haut de page. Douze liens, du HTML pur, **aucun JavaScript** — donc ca marche
-   aussi sans, ce qu'un champ de recherche ne ferait pas. A mesurer apres : le
-   nombre d'ecrans pour atteindre la 67e et la 114e.
+1. **Arriver dans une dizaine ne coute plus rien ; en changer coute encore
+   6,8 ecrans.**
+   *Preuve, mesuree a 414 px apres la pose des ancres (cycle 42) :* on tape
+   « 61-70 », on arrive sur la 61e sans defiler. Mais pour revenir aux douze
+   liens et choisir une autre dizaine, il faut remonter :
+   | dizaine ou l'on est | distance au plus proche lien de retour |
+   |---|---|
+   | 11-20 | 1 175 px = 1,7 ecran |
+   | 61-70 | 4 712 px = **6,8 ecrans** |
+   | 111-114 | 0 px (le lien du bas est deja a l'ecran) |
+   Il y a **deux** points de retour sur la page — les douze liens en haut, un
+   lien « Revenir aux dizaines » sous la liste — et le milieu de la liste est
+   exactement a mi-chemin des deux.
+   *Ce n'est pas une regression :* avant les ancres, changer de sourate coutait
+   ce meme defilement, et davantage. C'est le **residu** du geste, pas un degat.
+   Et il ne touche que la personne qui consulte **deux** sourates de suite ;
+   celle qui vient de Google pour une seule ne le rencontre jamais.
+   *A mesurer avant de choisir une voie :* est-ce que quelqu'un consulte deux
+   sourates de suite ? Sans mesure d'entree (element 5), je ne le sais pas. La
+   voie technique existe et elle est sans JavaScript — le site sait deja faire
+   du `position: sticky` (`.bas-lecon`) — mais poser un bandeau flottant sur
+   une page de repere pour un besoin non demontre serait ajouter du bruit.
+   **Attendre le deploiement plutot que deviner.**
 
 2. **La feuille de route promet un silence « de meme duree ». Il est 15 % plus
    long, et c'est le texte qui a tort.**
@@ -353,6 +357,39 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 ---
 
 ## Fait
+
+- **Les 114 sourates sont atteignables : douze liens, zero JavaScript**
+  *(14 aout, cycle 42)* — l'element 1 de l'audit du cycle 41.
+  *La mesure, avant et apres, sur le meme telephone simule (414 x 690), en
+  comptant le defilement REEL de la personne — pas la position dans le
+  document :*
+  | sourate | avant | apres | |
+  |---|---|---|---|
+  | Al-Kahf (18) | 2,3 ecrans | **0,1** | -2,2 |
+  | Ya-Sin (36) | 4,9 ecrans | **0,0** | -4,9 |
+  | Al-Mulk (67) | 9,3 ecrans | **0,0** | -9,3 |
+  | Al-Ikhlas (112) | 15,8 ecrans | **0,0** | -15,8 |
+  | An-Nas (114) | 16,1 ecrans | **0,0** | -16,1 |
+  **Le pire cas passe de 16,1 ecrans a 0,1.** Une seule sourate demande encore
+  un geste apres le lien — la 18e, 104 px, parce qu'elle est la huitieme de sa
+  dizaine.
+  *Ce qui est pose :* douze liens en haut de page (1-10 … 111-114), un `id` sur
+  la premiere ligne de chaque dizaine, un `scroll-margin-top` pour que la ligne
+  visee ne colle pas au bord, et un lien de retour sous la liste. Les douze
+  liens et les 114 `id` sont poses **par script**, pas a la main : un numero
+  recopie de travers ne se voit pas a l'oeil.
+  *Verifie, et c'etait l'argument contre un champ de recherche :* **les ancres
+  marchent JavaScript desactive** — la 61e est atteinte a 10 px du haut dans
+  les deux cas. Un champ de recherche ne l'aurait pas fait.
+  *Verifie aussi :* aucun debordement a 414, 375 ni 320 px, les 12 liens font
+  **48 px de haut minimum** (le precedent de la barre du haut, 44 px pour un
+  lien), aucun texte coupe, 114 lignes toujours la, zero erreur JavaScript.
+  *Et une correction a mon propre releve du cycle 41 :* j'y avais ecrit « la
+  page fait 11 695 px de haut, soit 16,9 ecrans ». **C'est faux** : 11 695 px
+  est la position du **haut de la derniere ligne**, pas la hauteur de la page.
+  La page fait **12 675 px, soit 18,4 ecrans** — verifie, et ce n'est pas un
+  effet des polices : meme chiffre polices chargees et polices bloquees.
+  J'avais fait servir un seul nombre a deux choses differentes.
 
 - **Une huitieme lecon — « Les lettres changent de forme selon leur place »**
   *(14 aout, cycle 40)* — la premiere depuis le 12, au rythme d'une tous les deux

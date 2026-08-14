@@ -1030,6 +1030,39 @@ a.lien-bas:hover { color: var(--creme); }
 
 /* ---------- l'index des 114 sourates ---------- */
 
+/* Mesure a 414 px : la page fait 11 695 px, soit 16,9 ecrans de telephone.
+   Sans ces douze liens, le seul chemin vers la 67e sourate etait le pouce —
+   10,2 ecrans. Douze liens, du HTML pur : ils marchent sans JavaScript, ce
+   qu'un champ de recherche ne ferait pas, et le clavier les parcourt dans
+   l'ordre.
+   48 px et non 56 : c'est un lien de navigation, pas un bouton d'action, et la
+   barre du haut a deja pose ce precedent a 44 px. */
+.dizaines {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin: 0 0 4px;
+}
+
+.dizaines a {
+  display: flex; align-items: center; justify-content: center;
+  min-height: 48px;
+  background: rgba(201, 168, 76, 0.10);
+  border: 1px solid var(--trait-fort);
+  border-radius: 11px;
+  color: var(--or-clair);
+  font-size: 14px; font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  text-decoration: none;
+}
+
+.retour-dizaines { margin: 0; }
+
+@media (min-width: 620px) {
+  .dizaines { grid-template-columns: repeat(6, 1fr); }
+  .dizaines a { font-size: 15px; }
+}
+
 .sourates {
   list-style: none;
   margin: 0;
@@ -1038,6 +1071,10 @@ a.lien-bas:hover { color: var(--creme); }
   flex-direction: column;
   gap: 7px;
 }
+
+/* La ligne visee ne doit pas coller au bord haut de l'ecran : on la pose a
+   dix pixels du bord, sinon on ne voit pas qu'il y a quelque chose au-dessus. */
+.srow[id] { scroll-margin-top: 10px; }
 
 .srow {
   display: grid;
