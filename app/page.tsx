@@ -165,22 +165,6 @@ export default async function HomePage() {
       <BoardVoyageur
         vedettes={vedettes.map((v) => ({ slug: v.slug, nom: v.nom, score: v.score, restaurants: v.restaurants, mosquees: v.mosquees, image: v.image }))}
         posInitiale={posIP}
-        recherche={
-          <div style={{ textAlign: 'center' }}>
-            {/* Le H1 garde son texte complet pour Google, mais à l'écran il
-                redevient une ligne discrète : sur un écran épuré, c'est la
-                RECHERCHE qui est la vedette de cette zone, pas la phrase. */}
-            <h1
-              className="text-white/85"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 800, fontSize: 16.5, lineHeight: 1.3, margin: '0 0 8px' }}
-            >
-              {t.heroTitlePre}<span className="gold-em">{t.heroTitleGold}</span>{t.heroTitlePost}
-            </h1>
-            <div style={{ background: 'rgba(255,255,255,0.1)', border: '1.5px solid rgba(201,168,76,0.45)', borderRadius: 16, padding: 4 }}>
-              <SearchBarHome />
-            </div>
-          </div>
-        }
       />
 
       {/* ⭐ LE CŒUR DU SITE — Mohamed, 15 août : « je veux que cette
@@ -200,9 +184,32 @@ export default async function HomePage() {
           d'une section est récupérée et tout tient. Sur mobile, la pile
           ne change pas. Sur le domaine anglais (pas encore de widget), la
           section Destinations reprend seule toute la largeur. */}
+      {/* 🔎 LE TITRE ET LA RECHERCHE DE VILLE DESCENDENT ICI.
+          Ordre de Mohamed, 15 août : prière · autour de moi · destinations.
+          Chercher « Istanbul » n'est PAS le besoin de quelqu'un qui est
+          dehors maintenant : c'est celui de quelqu'un qui prépare un
+          voyage. Le H1 accompagne donc les destinations, et le premier
+          écran est rendu à la prière. */}
+      <section style={{ background: 'var(--nuit)' }} className="pt-2 pb-1 px-4">
+        <div className="max-w-3xl mx-auto text-center">
+          <div style={{ textAlign: 'center' }}>
+            {/* Le H1 garde son texte complet pour Google, mais à l'écran il
+                redevient une ligne discrète : sur un écran épuré, c'est la
+                RECHERCHE qui est la vedette de cette zone, pas la phrase. */}
+            <h1
+              className="text-white/85"
+              style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 800, fontSize: 16.5, lineHeight: 1.3, margin: '0 0 8px' }}
+            >
+              {t.heroTitlePre}<span className="gold-em">{t.heroTitleGold}</span>{t.heroTitlePost}
+            </h1>
+            <div style={{ background: 'rgba(255,255,255,0.1)', border: '1.5px solid rgba(201,168,76,0.45)', borderRadius: 16, padding: 4 }}>
+              <SearchBarHome />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <div className="rangee-bas" style={{ background: 'var(--nuit)' }}>
-
-
       {/* 🌍 DESTINATIONS — remontées JUSTE SOUS le tableau de bord.
           Mohamed, 15 août : « les destinations avec les images, c'est
           beau — j'aimerais que ce soit visible dès qu'on ouvre la page ».
