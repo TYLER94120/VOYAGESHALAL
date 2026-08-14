@@ -263,6 +263,19 @@ export default function VilleDesktop({ ville }: { ville: any }) {
       {/* PARTIE HAUT (sombre) — toute la navigation : boutons + intro + onglets */}
       <div style={{ background: 'var(--nuit)' }}>
         <div style={{ maxWidth: WRAP, margin: '0 auto', padding: '20px 24px 26px' }}>
+          {/* 🔎 LA RECHERCHE, IMMÉDIATEMENT SOUS LE TITRE — ordre de
+              Mohamed, 15 août au soir : « la chose la plus importante du
+              site est la dernière qu'on voit ; sur téléphone, la plupart
+              des visiteurs ne descendent jamais jusque-là ». Elle est
+              désormais le PREMIER élément avec lequel on peut agir, visible
+              sans descendre d'un millimètre. Le titre reste au-dessus :
+              on ne refait pas l'erreur inverse. */}
+          {co.lat != null && co.lng != null && (
+            <div style={{ margin: '0 auto 18px', maxWidth: 700 }}>
+              <SurMesure fondu en={en} destination={{ lat: co.lat, lng: co.lng, nom: ville.nom }} />
+            </div>
+          )}
+
           {/* intro courte — en tête du bloc */}
           {descShort && <p style={{ textAlign: 'center', color: 'rgba(253,250,243,0.72)', fontSize: '14.5px', lineHeight: 1.7, maxWidth: 700, margin: '0 auto 18px' }}>{descShort}</p>}
 
@@ -299,14 +312,10 @@ export default function VilleDesktop({ ville }: { ville: any }) {
             })}
           </div>
 
-          {/* La recherche IA, fondue dans la zone Explorer : une seule
-              barre, qui comprend « où manger un kebab à Sultanahmet »
-              comme « une mosquée près du Grand Bazar ». */}
-          {co.lat != null && co.lng != null && (
-            <div style={{ marginTop: 12 }}>
-              <SurMesure fondu en={en} destination={{ lat: co.lat, lng: co.lng, nom: ville.nom }} />
-            </div>
-          )}
+          {/* (La recherche a REMONTÉ juste sous le titre : c'est la
+              raison d'être du site, elle ne peut pas être la dernière
+              chose qu'on voit. Aucune autre entrée de recherche sur cette
+              page — on n'empile pas, on intègre.) */}
 
           {/* Navigation collante : dès que ces onglets sortent de l'écran,
               une barre compacte prend le relais (fiche = 46 écrans) */}

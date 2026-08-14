@@ -110,6 +110,33 @@ function modeDe(c: Criteres): Mode {
   return c.mode === 'peu-importe' ? 'voiture' : c.mode
 }
 
+/** 🕌 Ce qu'on demande à Google selon la catégorie. Pour une mosquée, on
+ *  ne dit JAMAIS « halal » : c'est absurde, et ça brouillerait la
+ *  recherche. Chaque catégorie a aussi sa phrase d'honnêteté. */
+const CATEGORIE: Record<'manger' | 'mosquee' | 'activite', { texte: (q: string) => string; statut: string; statutOSM: string; spots: string[] }> = {
+  manger: {
+    texte: (q) => q,
+    statut: 'signalé halal sur Google Maps — à confirmer sur place',
+    statutOSM: 'signalé halal sur OpenStreetMap — à confirmer sur place',
+    spots: ['resto', 'boucherie'],
+  },
+  mosquee: {
+    texte: () => 'mosque',
+    // Pas d'étiquette halal ici, et surtout aucune supposition sur les
+    // équipements : « une erreur envoie quelqu'un devant une porte fermée
+    // à l'heure de la prière » (Mohamed).
+    statut: 'référencée sur Google Maps — horaires et équipements à vérifier',
+    statutOSM: 'référencée sur OpenStreetMap — horaires à vérifier',
+    spots: ['coin_priere'],
+  },
+  activite: {
+    texte: (q) => q.replace(/^halal /, ''),
+    statut: 'trouvée sur Google Maps — à vérifier selon tes critères',
+    statutOSM: '',
+    spots: ['pepite', 'autre'],
+  },
+}
+
 const TEXTE: Record<Criteres['quoi'], string> = {
   pizza: 'halal pizza', kebab: 'halal kebab', burger: 'halal burger',
   oriental: 'halal middle eastern restaurant', asiatique: 'halal asian restaurant',
@@ -123,7 +150,7 @@ async function nosSpots(lat: number, lng: number, c: Criteres, rayon: number): P
   try {
     const tous = await listAllSpots()
     return tous
-      .filter((s) => s.categorie === 'resto' || s.categorie === 'boucherie')
+      .filter((s) => CATEGORIE[c.categorie].spots.includes(s.categorie ?? ''))
       .map((s) => ({ s, d: distM(lat, lng, s.lat, s.lng) }))
       .filter(({ d }) => d <= rayon)
       .sort((a, b) => a.d - b.d)
@@ -178,7 +205,7 @@ async function passe1(lat: number, lng: number, c: Criteres, cle: string, lang: 
       method: 'POST', signal: ac.signal,
       headers: { 'Content-Type': 'application/json', 'X-Goog-Api-Key': cle, 'X-Goog-FieldMask': CHAMPS_PASSE1 },
       body: JSON.stringify({
-        textQuery: TEXTE[c.quoi],
+        textQuery: CATEGORIE[c.categorie].texte(TEXTE[c.quoi]),
         languageCode: lang,
         pageSize: CANDIDATS,
         openNow: c.ouvertMaintenant || undefined,
@@ -249,11 +276,11 @@ const CHAMPS_PASSE2 = [
   'servesVegetarianFood', 'reservable', 'accessibilityOptions',
 ].join(',')
 
-async function enrichir(cand: Candidat, cle: string, lang: string, origin: string): Promise<Fiche> {
+async function enrichir(cand: Candidat, cle: string, lang: string, origin: string, cat: 'manger' | 'mosquee' | 'activite'): Promise<Fiche> {
   const base: Fiche = {
     id: cand.id, nom: cand.nom, distanceM: cand.distanceM, lat: cand.lat, lng: cand.lng,
     note: cand.note, nbAvis: cand.nbAvis, prix: cand.prix, ouvert: cand.ouvert, adresse: cand.adresse,
-    statut: 'signalé halal sur Google Maps — à confirmer sur place',
+    statut: CATEGORIE[cat].statut,
     source: 'google',
   }
   if (!cand.id) return base
@@ -311,18 +338,19 @@ function heureFermeture(desc?: string[]): string | undefined {
 
 // ─────────────────────── repli OpenStreetMap ───────────────────────
 
-async function viaOSM(origin: string, lat: number, lng: number, rayon: number): Promise<Fiche[]> {
+async function viaOSM(origin: string, lat: number, lng: number, rayon: number, cat: 'manger' | 'mosquee' | 'activite'): Promise<Fiche[]> {
   const ac = new AbortController()
   const t = setTimeout(() => ac.abort(), DELAI_OSM)
   try {
     const r = await fetch(`${origin}/api/osm-restos?lat=${lat}&lng=${lng}`, { signal: ac.signal })
     if (!r.ok) return []
-    const j = await r.json() as { restos?: { nom: string; lat: number; lng: number }[] }
-    return (j.restos ?? [])
+    const j = await r.json() as { restos?: { nom: string; lat: number; lng: number }[]; mosquees?: { nom: string; lat: number; lng: number }[] }
+    if (cat === 'activite') return [] // rien de fiable à offrir — on le dit
+    return ((cat === 'mosquee' ? j.mosquees : j.restos) ?? [])
       .map((x) => ({
         nom: x.nom, lat: x.lat, lng: x.lng,
         distanceM: distM(lat, lng, x.lat, x.lng),
-        statut: 'signalé halal sur OpenStreetMap — à confirmer sur place',
+        statut: CATEGORIE[cat].statutOSM,
         source: 'osm' as const,
       }))
       .filter((x) => x.distanceM <= rayon)
@@ -364,7 +392,7 @@ export async function POST(req: Request) {
   await compter('surmesure:recherches', corps.ecrit ? 'surmesure:ecrites' : 'surmesure:cliquees')
 
   const zone = `${lat.toFixed(2)},${lng.toFixed(2)}`
-  const empreinte = `${zone}:${c.quoi}:${c.mode}:${c.budget}:${c.exigence}:${c.ouvertMaintenant ? 1 : 0}:${lang}`
+  const empreinte = `${zone}:${c.categorie}:${c.quoi}:${c.mode}:${c.budget}:${c.exigence}:${c.ouvertMaintenant ? 1 : 0}:${lang}`
   if (r) {
     try {
       const cache = await r.get<{ fiches: Fiche[]; autres: Fiche[]; source: string }>(`surmesure:cache:${empreinte}`)
@@ -400,20 +428,20 @@ export async function POST(req: Request) {
       const classes = classer(cands, c, rayon).filter((x) => !spots.some((s) => distM(s.lat, s.lng, x.lat, x.lng) < 60))
       const placesRetenues = classes.slice(0, Math.max(0, RETENUS - spots.length))
       // PASSE 2 : uniquement sur les retenues.
-      const enrichies = await Promise.all(placesRetenues.map((x) => enrichir(x, cle, lang, origin)))
+      const enrichies = await Promise.all(placesRetenues.map((x) => enrichir(x, cle, lang, origin, c.categorie)))
       source = 'google'
       fiches = [...spots, ...enrichies].slice(0, RETENUS)
       autres = classes.slice(placesRetenues.length, placesRetenues.length + AUTRES).map((x) => ({
         id: x.id, nom: x.nom, distanceM: x.distanceM, lat: x.lat, lng: x.lng,
         note: x.note, nbAvis: x.nbAvis, prix: x.prix, ouvert: x.ouvert, adresse: x.adresse,
-        statut: 'signalé halal sur Google Maps — à confirmer sur place',
+        statut: CATEGORIE[c.categorie].statut,
         source: 'google' as const,
       }))
     }
   }
 
   if (source !== 'google' && c.exigence !== 'verifies') {
-    const osm = await viaOSM(origin, lat, lng, rayon)
+    const osm = await viaOSM(origin, lat, lng, rayon, c.categorie)
     if (osm.length) {
       source = 'osm'
       const sansDoublon = osm.filter((o) => !spots.some((s) => distM(s.lat, s.lng, o.lat, o.lng) < 60))
