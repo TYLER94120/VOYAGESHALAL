@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react'
 import { CRITERES_DEFAUT, lireDemande, relance, resumerCriteres, type Criteres } from '@/lib/criteres'
 import { trajet, type Mode } from '@/lib/trajet'
 import { ligneAlcool, mentionPermanente } from '@/lib/alcool.mjs'
+import { choisirPourMoi, pistes as genererPistes, type Piste } from '@/lib/pistes'
 import { computePrayerTimesFull } from '@/lib/prayerCalc'
 
 // 🎯 LE SUR MESURE — « dis-moi ce que tu cherches ».
@@ -46,8 +47,11 @@ type Etape = 'question' | 'relance' | 'cherche' | 'resultat' | 'sans-position'
 const EXEMPLES_FR = ['un kebab pas cher pas loin', 'un endroit calme pour dîner en famille', 'une pâtisserie ouverte après la prière']
 const EXEMPLES_EN = ['a cheap kebab nearby', 'a quiet place for a family dinner', 'a bakery open after prayer']
 
+// Ordre voulu par Mohamed : la prière d'abord, comme sur l'accueil.
+// « Où dormir » n'est pas ici : ce n'est pas un besoin de l'instant, il
+// reste dans les tuiles « Explorer <Ville> ».
 const CAT_OPTS = [
-  ['manger', '🍽 Manger', '🍽 Eat'], ['mosquee', '🕌 Mosquée', '🕌 Mosque'], ['activite', '🎡 Que faire', '🎡 Things to do'],
+  ['mosquee', '🕌 Prier', '🕌 Pray'], ['manger', '🍽️ Manger', '🍽️ Eat'], ['activite', '🎯 Que faire', '🎯 Things to do'],
 ] as const
 
 const QUOI_OPTS = [
@@ -93,6 +97,10 @@ export default function SurMesure({ posInitiale, destination, en = false, fondu 
   const [posUtilisee, setPosUtilisee] = useState<'gps' | 'ip' | 'ville' | null>(null)
   const [prose, setProse] = useState('')
   const [aEcrit, setAEcrit] = useState(false)
+  // ✨ L'aide au choix : quelle catégorie est ouverte, et les pistes du
+  // moment. `null` = zone fermée, on n'a encore rien demandé.
+  const [aide, setAide] = useState<{ cat: 'manger' | 'mosquee' | 'activite'; pistes: Piste[] } | null>(null)
+  const [raisonIA, setRaisonIA] = useState('')
   const [ex, setEx] = useState(0)
   const enCours = useRef(false)
   const EXEMPLES = en ? EXEMPLES_EN : EXEMPLES_FR
@@ -116,6 +124,18 @@ export default function SurMesure({ posInitiale, destination, en = false, fondu 
         { timeout: delai - 500, maximumAge: 60_000 },
       )
     })
+  }
+
+  /** Le contexte réel : heure, jour, et prochaine prière quand on la sait.
+   *  C'est lui qui fait qu'une piste à midi n'est pas celle de 23 h. */
+  function contexte() {
+    const d = new Date()
+    const pos = destination ?? posInitiale
+    return { heure: d.getHours(), jour: d.getDay(), priere: pos ? avantPriere(pos) : null }
+  }
+
+  function pistesDuMoment(cat: 'manger' | 'mosquee' | 'activite'): Piste[] {
+    return genererPistes(cat, contexte(), en)
   }
 
   /** Étape 1 → 2 : on lit la phrase, on montre ce qu'on a compris. */
@@ -299,17 +319,61 @@ export default function SurMesure({ posInitiale, destination, en = false, fondu 
         <div style={{ display: 'flex', gap: 7, marginTop: 9, flexWrap: 'wrap' }}>
           {CAT_OPTS.map(([v, fr, an]) => (
             <button key={v}
+              // TEMPS 1 : le bouton n'ouvre PAS une page et ne lance pas
+              // encore la recherche — il ouvre l'aide au choix juste en
+              // dessous. C'est ce qui le distingue des tuiles « Explorer »,
+              // qui sont le catalogue et mènent aux pages du site.
               onClick={() => {
-                const c = { ...crit, categorie: v }
-                setCrit(c); setAEcrit(false)
-                const r = relance(c, en)
-                if (r) setEtape('relance'); else lancer(c, false)
+                setCrit((c) => ({ ...c, categorie: v }))
+                setAide({ cat: v, pistes: pistesDuMoment(v) })
+                setRaisonIA('')
+                compter(`cat-${v}`)
               }}
-              aria-pressed={crit.categorie === v} style={puce(crit.categorie === v)}>
+              aria-pressed={aide?.cat === v} style={puce(aide?.cat === v)}>
               {t(fr, an)}
             </button>
           ))}
         </div>
+
+        {/* ── TEMPS 2 — L'IA AIDE À CHOISIR ─────────────────────────
+            Les pistes viennent du CONTEXTE du moment : l'heure, la
+            prochaine prière, le jour. À 23 h on ne propose pas « déjeuner
+            en famille » ; 20 minutes avant Maghrib, on propose ce qui est
+            atteignable à pied. Elles sont écrites dans lib/pistes.ts et
+            non générées librement : une piste est du contenu comme un
+            autre, et aucune ne peut mener à un lieu de boisson. */}
+        {aide && etape !== 'cherche' && (
+          <div className="board-pousse" style={{ marginTop: 12, paddingTop: 11, borderTop: '1px solid rgba(253,250,243,0.12)' }}>
+            <p style={{ color: 'rgba(253,250,243,0.6)', fontSize: 12, fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', margin: 0 }}>
+              {t('Je te propose', 'Suggestions')}
+            </p>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 7, marginTop: 8 }}>
+              {aide.pistes.map((pi) => (
+                <button key={pi.id}
+                  onClick={() => {
+                    const c = { ...crit, ...pi.patch } as Criteres
+                    setCrit(c); setAEcrit(false); setRaisonIA(''); compter('piste')
+                    lancer(c, false)
+                  }}
+                  style={{ ...puce(false), justifyContent: 'flex-start', textAlign: 'left', minHeight: 48, padding: '0 14px', display: 'flex', alignItems: 'center', width: '100%' }}>
+                  {t(pi.fr, pi.en)}
+                </button>
+              ))}
+            </div>
+
+            {/* ✨ Le bouton que Mohamed voulait retrouver. */}
+            <button
+              onClick={() => {
+                const d = choisirPourMoi(contexte(), en)
+                const c = { ...crit, ...d.criteres } as Criteres
+                setCrit(c); setAEcrit(false); setRaisonIA(d.raison); compter('choisis-pour-moi')
+                lancer(c, false)
+              }}
+              style={{ marginTop: 10, width: '100%', minHeight: 50, borderRadius: 14, border: 'none', background: 'var(--or)', color: 'var(--nuit)', fontWeight: 900, fontSize: 14.5, cursor: 'pointer' }}>
+              ✨ {t('Je ne sais pas — choisis pour moi', "I don't know — choose for me")}
+            </button>
+          </div>
+        )}
 
         {/* ── 2. CE QU'ON A COMPRIS, CORRIGEABLE ────────────────── */}
         {(aEcrit || ouvrirQcm) && etape !== 'cherche' && (
@@ -463,6 +527,12 @@ export default function SurMesure({ posInitiale, destination, en = false, fondu 
               )}
             </div>
           </div>
+        )}
+
+        {/* ✨ Le raisonnement de « choisis pour moi » : ce qui distingue
+            « on a deviné » de « on a choisi pour toi ». */}
+        {raisonIA && etape === 'resultat' && (
+          <p style={{ color: 'var(--or)', fontSize: 13.5, fontWeight: 700, marginTop: 12, lineHeight: 1.5 }}>✨ {raisonIA}</p>
         )}
 
         {fiches.length > 0 && (

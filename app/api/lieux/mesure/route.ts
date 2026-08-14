@@ -15,7 +15,14 @@ import { Redis } from '@upstash/redis'
 export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
 
-const AUTORISEES = new Set(['itineraires', 'appels', 'fiches-ouvertes', 'relances-sautees'])
+// La mesure de l'aide au choix (16 août) : « c'est ce qui nous dira ce
+// que les gens viennent VRAIMENT chercher — et donc ce qu'il faudra
+// développer ensuite ».
+const AUTORISEES = new Set([
+  'itineraires', 'appels', 'fiches-ouvertes', 'relances-sautees',
+  'cat-mosquee', 'cat-manger', 'cat-activite',
+  'piste', 'choisis-pour-moi',
+])
 
 let redis: Redis | null | undefined
 function getRedis(): Redis | null {
