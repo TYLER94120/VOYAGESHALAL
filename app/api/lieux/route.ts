@@ -3,6 +3,7 @@ import { Redis } from '@upstash/redis'
 import { listAllSpots } from '@/lib/prayerSpots'
 import { CRITERES_DEFAUT, type Criteres } from '@/lib/criteres'
 import { minutes, modeSuivant, plafondMin, rayonM, type Mode } from '@/lib/trajet'
+import { verdictAlcool } from '@/lib/alcool.mjs'
 
 // 🍽 LE SUR MESURE — POST /api/lieux
 //
@@ -52,6 +53,8 @@ const CACHE_S = 24 * 3600
 const CANDIDATS = 15
 const RETENUS = 3
 const AUTRES = 4
+/** Pool sur lequel on paie la vérification alcool (§3 de l'alerte). */
+const POOL_ALCOOL = 9
 
 let redis: Redis | null | undefined
 function getRedis(): Redis | null {
@@ -95,7 +98,15 @@ export interface Fiche {
     reservation?: boolean; accessible?: boolean
   }
   statut: string
+  /** 🔴 Ce qu'on SAIT de l'alcool : jamais une supposition. */
+  alcool: 'non' | 'inconnu'
   source: 'spot' | 'google' | 'osm'
+}
+
+/** L'état alcool d'un candidat, tel que le verdict l'a établi. */
+function alcoolDe(x: { nom: string; primaryType?: string; types?: string[]; servesBeer?: boolean; servesWine?: boolean; servesCocktails?: boolean }): 'non' | 'inconnu' {
+  const v = verdictAlcool(x)
+  return v.garde ? v.alcool : 'inconnu'
 }
 
 function distM(a: number, b: number, c: number, d: number) {
@@ -161,6 +172,10 @@ async function nosSpots(lat: number, lng: number, c: Criteres, rayon: number): P
         statut: s.source === 'community'
           ? `vérifié par la communauté · ${s.confirmations || 0} confirmation${(s.confirmations ?? 0) > 1 ? 's' : ''}`
           : 'référencé par VoyagesHalal · à vérifier sur place',
+        // Nos spots sont vérifiés par des voyageurs musulmans, mais nous ne
+        // stockons pas encore l'information « sert de l'alcool » : on ne
+        // l'invente donc pas.
+        alcool: 'inconnu' as const,
         source: 'spot' as const,
       }))
   } catch { return [] }
@@ -178,12 +193,19 @@ const CHAMPS_PASSE1 = [
   'places.userRatingCount',
   'places.priceLevel',
   'places.currentOpeningHours.openNow',
+  // 🔴 Le TYPE est dans les champs peu coûteux : le premier barrage anti
+  // alcool s'applique donc dès la passe 1, avant de payer quoi que ce soit.
+  'places.primaryType',
+  'places.types',
 ].join(',')
 
 interface Candidat {
   id: string; nom: string; lat: number; lng: number
   note?: number; nbAvis?: number; prix?: number; ouvert?: boolean; adresse?: string
   distanceM: number
+  primaryType?: string; types?: string[]
+  /** Renseigné par la passe intermédiaire. `undefined` = inconnu. */
+  servesBeer?: boolean; servesWine?: boolean; servesCocktails?: boolean
 }
 
 /** Un rectangle englobant le cercle de rayon `m` — la forme attendue par
@@ -232,10 +254,66 @@ async function passe1(lat: number, lng: number, c: Criteres, cle: string, lang: 
           ouvert: (p.currentOpeningHours as { openNow?: boolean } | undefined)?.openNow,
           adresse: p.formattedAddress as string | undefined,
           distanceM: distM(lat, lng, loc.latitude, loc.longitude),
+          primaryType: p.primaryType as string | undefined,
+          types: p.types as string[] | undefined,
         } as Candidat
       })
-      .filter(Boolean) as Candidat[]
+      .filter((x): x is Candidat => x !== null)
+      // 🔴 BARRAGE 1 — par le type, gratuit et immédiat : bar, pub,
+      // wine_bar, night_club, liquor_store… ne franchissent jamais la
+      // porte. Pas d'avertissement, pas de rétrogradation.
+      .filter((x) => verdictAlcool({ nom: x.nom, primaryType: x.primaryType, types: x.types }).garde
+        // Un signal dans le NOM n'écarte pas ici : le lieu part en
+        // vérification d'attributs (barrage 2). C'est là qu'on tranchera.
+        || estRefusPourNomSeul(x))
   } catch { return null } finally { clearTimeout(t) }
+}
+
+/** Vrai si le seul reproche est un mot du nom : ce cas mérite la
+ *  vérification payante des attributs, pas un refus immédiat. */
+function estRefusPourNomSeul(x: Candidat): boolean {
+  const v = verdictAlcool({ nom: x.nom, primaryType: x.primaryType, types: x.types })
+  return !v.garde && v.motif === 'doute-nom'
+}
+
+/** Champs STRICTEMENT nécessaires au barrage alcool — le masque le plus
+ *  étroit possible, demandé sur un pool élargi. */
+const CHAMPS_ALCOOL = ['id', 'displayName', 'primaryType', 'types', 'servesBeer', 'servesWine', 'servesCocktails'].join(',')
+
+/**
+ * 🔴 BARRAGE 2 — les attributs de service, sur un POOL ÉLARGI.
+ *
+ * « Comme ces champs coûtent plus cher, demande-les sur huit à dix
+ * candidats et non sur les trois finalistes seulement — sinon tu
+ * découvres trop tard qu'il ne t'en reste qu'un. C'est de l'argent bien
+ * dépensé : c'est le filtre qui protège la promesse du site. » (Mohamed)
+ */
+async function verifierAlcool(cands: Candidat[], cle: string): Promise<Candidat[]> {
+  const pool = cands.slice(0, POOL_ALCOOL)
+  const verifies = await Promise.all(pool.map(async (x) => {
+    if (!x.id) return null
+    const ac = new AbortController()
+    const t = setTimeout(() => ac.abort(), DELAI)
+    try {
+      const r = await fetch(`https://places.googleapis.com/v1/places/${encodeURIComponent(x.id)}`, {
+        signal: ac.signal,
+        headers: { 'X-Goog-Api-Key': cle, 'X-Goog-FieldMask': CHAMPS_ALCOOL },
+      })
+      // Appel muet = information INCONNUE. La règle d'or s'applique :
+      // dans le doute, seul un lieu sans aucun signal peut passer.
+      if (!r.ok) return { ...x }
+      const p = await r.json() as Record<string, unknown>
+      return {
+        ...x,
+        primaryType: (p.primaryType as string | undefined) ?? x.primaryType,
+        types: (p.types as string[] | undefined) ?? x.types,
+        servesBeer: p.servesBeer as boolean | undefined,
+        servesWine: p.servesWine as boolean | undefined,
+        servesCocktails: p.servesCocktails as boolean | undefined,
+      }
+    } catch { return { ...x } } finally { clearTimeout(t) }
+  }))
+  return verifies.filter((x): x is Candidat => !!x && verdictAlcool(x).garde)
 }
 
 /** Le tri : c'est lui qui rend le résultat « sur mesure ». */
@@ -281,6 +359,7 @@ async function enrichir(cand: Candidat, cle: string, lang: string, origin: strin
     id: cand.id, nom: cand.nom, distanceM: cand.distanceM, lat: cand.lat, lng: cand.lng,
     note: cand.note, nbAvis: cand.nbAvis, prix: cand.prix, ouvert: cand.ouvert, adresse: cand.adresse,
     statut: CATEGORIE[cat].statut,
+    alcool: alcoolDe(cand),
     source: 'google',
   }
   if (!cand.id) return base
@@ -351,6 +430,9 @@ async function viaOSM(origin: string, lat: number, lng: number, rayon: number, c
         nom: x.nom, lat: x.lat, lng: x.lng,
         distanceM: distM(lat, lng, x.lat, x.lng),
         statut: CATEGORIE[cat].statutOSM,
+        // OpenStreetMap ne nous dit rien de l'alcool : inconnu, et affiché
+        // comme tel.
+        alcool: 'inconnu' as const,
         source: 'osm' as const,
       }))
       .filter((x) => x.distanceM <= rayon)
@@ -425,7 +507,12 @@ export async function POST(req: Request) {
     const cands = await passe1(lat, lng, c, cle, lang, rayon)
     if (cands !== null) etatGoogle = cands.length ? 'ok' : 'vide'
     if (cands?.length) {
-      const classes = classer(cands, c, rayon).filter((x) => !spots.some((s) => distM(s.lat, s.lng, x.lat, x.lng) < 60))
+      const tries = classer(cands, c, rayon).filter((x) => !spots.some((s) => distM(s.lat, s.lng, x.lat, x.lng) < 60))
+      // 🔴 BARRAGE 2 — on paie la vérification alcool sur un pool élargi
+      // AVANT de choisir les trois. C'est l'ordre inverse qui avait laissé
+      // passer un bistrot : on filtrait trop tard, ou pas du tout.
+      // La catégorie « mosquée » n'a pas à passer par là.
+      const classes = c.categorie === 'mosquee' ? tries : await verifierAlcool(tries, cle)
       const placesRetenues = classes.slice(0, Math.max(0, RETENUS - spots.length))
       // PASSE 2 : uniquement sur les retenues.
       const enrichies = await Promise.all(placesRetenues.map((x) => enrichir(x, cle, lang, origin, c.categorie)))
@@ -435,6 +522,7 @@ export async function POST(req: Request) {
         id: x.id, nom: x.nom, distanceM: x.distanceM, lat: x.lat, lng: x.lng,
         note: x.note, nbAvis: x.nbAvis, prix: x.prix, ouvert: x.ouvert, adresse: x.adresse,
         statut: CATEGORIE[c.categorie].statut,
+        alcool: alcoolDe(x),
         source: 'google' as const,
       }))
     }
