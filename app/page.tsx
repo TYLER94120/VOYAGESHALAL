@@ -185,6 +185,14 @@ export default async function HomePage() {
         }
       />
 
+      {/* 🖥️ RANGÉE DU BAS — sur PC, Destinations et « manger halal près
+          de moi » se mettent CÔTE À CÔTE : Mohamed, 15 août, « la ligne du
+          bas est coupée, elle doit rentrer dans la page ». Empilés, les
+          deux blocs dépassaient l'écran ; côte à côte, toute la hauteur
+          d'une section est récupérée et tout tient. Sur mobile, la pile
+          ne change pas. Sur le domaine anglais (pas encore de widget), la
+          section Destinations reprend seule toute la largeur. */}
+      <div className="rangee-bas" style={{ background: 'var(--nuit)' }}>
       {/* 🌍 DESTINATIONS — remontées JUSTE SOUS le tableau de bord.
           Mohamed, 15 août : « les destinations avec les images, c'est
           beau — j'aimerais que ce soit visible dès qu'on ouvre la page ».
@@ -250,6 +258,8 @@ export default async function HomePage() {
           Prêt-pour-la-clé : sans GOOGLE_PLACES_KEY il répond avec nos
           spots + OpenStreetMap et le dit sobrement. */}
       {!isEN && <MangerPresDeMoi posInitiale={posIP} />}
+      </div>
+
 
       <RecentSpotsHome />
       <NearbySpotsHome />
