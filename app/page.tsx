@@ -7,7 +7,7 @@ import EmailCapture from '@/components/ui/EmailCapture'
 import { buildWebSiteSchema, buildOrganizationSchema } from '@/lib/seo'
 import { guides } from '@/lib/data'
 import BoardVoyageur from '@/components/home/BoardVoyageur'
-import PresDeMoi from '@/components/lieux/PresDeMoi'
+import SurMesure from '@/components/lieux/SurMesure'
 import { positionServeur } from '@/lib/positionServeur'
 import { localizedHref } from '@/lib/slugs'
 import { HomeScoreRanking } from '@/components/HomeScoreRanking'
@@ -175,7 +175,7 @@ export default async function HomePage() {
           première chose qu'on voit après l'heure de la prière — et la
           ligne « Manger » du tableau de bord a été retirée, elle faisait
           doublon avec lui. Français d'abord ; l'anglais suit. */}
-      {!isEN && <PresDeMoi posInitiale={posIP} />}
+      <SurMesure posInitiale={posIP} en={isEN} />
 
       {/* 🖥️ RANGÉE DU BAS — sur PC, Destinations et « manger halal près
           de moi » se mettent CÔTE À CÔTE : Mohamed, 15 août, « la ligne du

@@ -5,7 +5,7 @@ import type { Map as LeafletMap, Marker } from 'leaflet'
 import { getPosition, describeGeoError, type GeoError, type GeoErrorCode } from '@/lib/geo'
 import { useInstantPosition } from '@/lib/useInstantPosition'
 import PositionBadge from '@/components/location/PositionBadge'
-import PresDeMoi from '@/components/lieux/PresDeMoi'
+import SurMesure from '@/components/lieux/SurMesure'
 import { computePrayerTimesFull } from '@/lib/prayerCalc'
 import { prixResume } from '@/lib/community'
 
@@ -577,7 +577,7 @@ export default function AutourDeMoiPage() {
           (« pizza », « la plus proche », « hammam ») et fait rédiger la
           réponse par l'IA. La position vient de celle déjà connue par la
           page : on ne redemande jamais deux fois la même chose. */}
-      <PresDeMoi posInitiale={instantPos ? { lat: instantPos.lat, lng: instantPos.lng, ville: instantPos.label ?? null } : null} />
+      <SurMesure posInitiale={instantPos ? { lat: instantPos.lat, lng: instantPos.lng, ville: instantPos.label ?? null } : null} />
     </main>
   )
 }
