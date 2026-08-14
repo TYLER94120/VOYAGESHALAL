@@ -6,6 +6,7 @@
 // fond sombre, liseré or — repérable pour qui le cherche, invisible pour
 // qui lit. L'accessibilité garde le libellé complet (aria-label).
 //
+// (Reposé le 15 août pour déclencher le build que Vercel avait manqué.)
 // Ancré sur la GÉOMÉTRIE DU DOCK (leçon des premières versions) :
 //   dock 10px + hauteur 62px + débord ➕ 30px + marge 12px = 114px + safe-area.
 // zIndex 90 : sous les panneaux du dock (98-99), jamais par-dessus.
