@@ -53,12 +53,28 @@ const routeMin = (distM: number) => Math.max(1, Math.round(distM / 833))
 
 export interface BoardVedette { slug: string; nom: string; score: number; restaurants: number; mosquees: number; image: string | null }
 
-export default function BoardVoyageur({ vedettes = [] }: { vedettes?: BoardVedette[] }) {
+export default function BoardVoyageur({
+  vedettes = [],
+  posInitiale = null,
+}: {
+  vedettes?: BoardVedette[]
+  /** Position approximative fournie par le serveur (adresse IP), pour que
+   *  l'écran soit utile AVANT que le navigateur ait donné sa position.
+   *  Voir lib/positionServeur.ts : c'est ce qui supprime l'attente et le
+   *  saut de mise en page à l'ouverture. */
+  posInitiale?: { lat: number; lng: number; ville: string | null } | null
+}) {
   const { lang } = useLanguage()
   const en = lang === 'en'
   // Un seul état de position pour tout l'écran, partagé avec le badge.
   const etatPos = useInstantPosition(en)
-  const { pos, source } = etatPos
+  // Tant que rien de mieux n'est arrivé, on part de ce que le serveur savait
+  // déjà. Dès que le navigateur donne mieux — ville mémorisée, puis GPS —
+  // `etatPos.pos` prend le relais et l'affichage s'affine sans rien casser.
+  const pos = etatPos.pos ?? (posInitiale
+    ? { lat: posInitiale.lat, lng: posInitiale.lng, label: posInitiale.ville ?? (en ? 'Your area' : 'Votre zone') }
+    : null)
+  const source = etatPos.pos ? etatPos.source : ('ip' as typeof etatPos.source)
   const [now, setNow] = useState(() => Date.now())
   const [mosquee, setMosquee] = useState<Lieu | null | undefined>(undefined)
   const [resto, setResto] = useState<Lieu | null | undefined>(undefined)

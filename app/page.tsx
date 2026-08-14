@@ -10,6 +10,7 @@ import { guides } from '@/lib/data'
 import NearbySpotsHome from '@/components/community/NearbySpotsHome'
 import RecentSpotsHome from '@/components/spots/RecentSpotsHome'
 import BoardVoyageur from '@/components/home/BoardVoyageur'
+import { positionServeur } from '@/lib/positionServeur'
 import { localizedHref } from '@/lib/slugs'
 import { HomeScoreRanking } from '@/components/HomeScoreRanking'
 import IslamicPattern from '@/components/ui/IslamicPattern'
@@ -88,6 +89,11 @@ function lireVillesStats() {
 
 export default async function HomePage() {
   const { isEN, brand, siteUrl } = await getDomainSEO()
+  // La position approximative de l'adresse IP, connue AVANT le premier octet
+  // de HTML : le tableau de bord s'affiche rempli, sans attendre le
+  // navigateur et sans faire sauter la page quand la vraie position arrive.
+  const ip = await positionServeur()
+  const posIP = ip ? { lat: ip.lat, lng: ip.lng, ville: ip.ville } : null
   const websiteSchema = buildWebSiteSchema({ en: isEN, siteUrl, name: isEN ? brand : undefined })
   const orgSchema = buildOrganizationSchema({ en: isEN, siteUrl, name: isEN ? brand : undefined })
   // 📚 GUIDES VEDETTES — DANS LA LANGUE DU DOMAINE.
@@ -155,14 +161,21 @@ export default async function HomePage() {
       {/* 🎛️ Board voyageur (bento) : rendu client au-dessus du hero quand la
           position est connue — absorbe le Radar Prière. Le HTML serveur
           en dessous ne change pas : SEO intact. */}
-      <BoardVoyageur vedettes={vedettes.map((v) => ({ slug: v.slug, nom: v.nom, score: v.score, restaurants: v.restaurants, mosquees: v.mosquees, image: v.image }))} />
+      <BoardVoyageur
+        vedettes={vedettes.map((v) => ({ slug: v.slug, nom: v.nom, score: v.score, restaurants: v.restaurants, mosquees: v.mosquees, image: v.image }))}
+        posInitiale={posIP}
+      />
       {/* Hero plein écran minimaliste */}
       <section
-        className="relative overflow-hidden flex items-center justify-center text-center px-6"
-        // 100dvh (et non 100vh) : les barres du navigateur mobile ne coupent rien ;
-        // on soustrait bandeau + header (~100px) pour que le widget prière suivant
-        // commence proprement sous la ligne de flottaison, jamais coupé à moitié.
-        style={{ minHeight: 'calc(100dvh - 100px)', padding: '24px 24px 18px', backgroundColor: '#0b1a0f' }}
+        className="relative overflow-hidden text-center px-6"
+        // 🔻 14 août : le hero occupait UN ÉCRAN ENTIER (calc(100dvh - 100px)).
+        // Quelqu'un qui ouvrait le site pour savoir où prier devait faire
+        // défiler toute une page de présentation avant d'atteindre quoi que
+        // ce soit d'utile — c'est le reproche le plus fréquent remonté à
+        // Mohamed. Il devient un BANDEAU : le titre et la recherche
+        // subsistent, pour le nouveau venu comme pour Google, mais ils ne
+        // coûtent plus un écran. Le tableau de bord passe devant.
+        style={{ padding: '28px 24px 26px', backgroundColor: '#0b1a0f' }}
       >
         {/* Image d'architecture islamique (sans personne) + voile sombre */}
         <Image
