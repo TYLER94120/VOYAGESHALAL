@@ -191,9 +191,9 @@ export default async function HomePage() {
           Ce sont les seules belles photos dont on dispose aujourd'hui :
           elles font la première impression. Les chiffres restent lus dans
           les fiches villes, jamais inventés. */}
-      <section style={{ background: 'var(--nuit)' }} className="pt-4 pb-8 px-4">
+      <section style={{ background: 'var(--nuit)' }} className="pt-3 pb-4 px-4">
         <div className="max-w-3xl mx-auto">
-          <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 12, marginBottom: 14 }}>
+          <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 12, marginBottom: 10 }}>
             <h2 className="text-white text-xl font-bold" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
               🌍 {t.popularTitle}
             </h2>
@@ -201,7 +201,7 @@ export default async function HomePage() {
               {t.seeAll}
             </Link>
           </div>
-          <div style={{ display: 'flex', gap: 10, overflowX: 'auto', padding: '2px 2px 6px', scrollSnapType: 'x mandatory' }}>
+          <div style={{ display: 'flex', gap: 10, overflowX: 'auto', padding: '2px 2px 6px', scrollSnapType: 'x mandatory', scrollbarWidth: 'none' }}>
             {vedettes.map((v) => (
               <Link
                 key={v.slug}
