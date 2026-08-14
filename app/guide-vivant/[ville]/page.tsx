@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { replier } from '@/lib/titreSpot'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { readFileSync } from 'fs'
@@ -39,9 +40,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const info = villeInfo(ville)
   const spots = (await listSpotsByVille(ville)).filter((s) => s.status === 'published')
   const nom = info?.nom ?? ville
-  const title = isEN
-    ? `Living halal guide to ${nom} — by the Muslim community (${spots.length} spots)`
-    : `Guide vivant halal de ${nom} — par la communauté (${spots.length} spots)`
+  // Le nom de la ville passe devant : le compte de spots et la mention de la
+  // communauté sont sacrifiés en premier. 11 titres sur 14 dépassaient.
+  const title = replier(isEN
+    ? [`Living halal guide to ${nom} — by the Muslim community (${spots.length} spots)`,
+       `Living halal guide to ${nom} — ${spots.length} community spots`,
+       `Living halal guide to ${nom} (${spots.length} spots)`,
+       `Living halal guide to ${nom}`]
+    : [`Guide vivant halal de ${nom} — par la communauté (${spots.length} spots)`,
+       `Guide vivant halal de ${nom} — ${spots.length} spots partagés`,
+       `Guide vivant halal de ${nom} (${spots.length} spots)`,
+       `Guide vivant halal de ${nom}`])
   const description = isEN
     ? `Where to pray, eat halal and stay in ${nom} — real spots shared, enriched and confirmed by Muslim travelers. A guide that grows every day.`
     : `Où prier, manger halal et dormir à ${nom} — de vrais spots partagés, enrichis et confirmés par des voyageurs musulmans. Un guide qui grandit chaque jour.`
