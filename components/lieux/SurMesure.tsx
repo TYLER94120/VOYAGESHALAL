@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { CRITERES_DEFAUT, lireDemande, relance, resumerCriteres, type Criteres } from '@/lib/criteres'
+import { trajet, type Mode } from '@/lib/trajet'
 
 // 🎯 LE SUR MESURE — « dis-moi ce que tu cherches ».
 //
@@ -49,12 +50,17 @@ const QUOI_OPTS = [
   ['petit-dejeuner', 'Petit-déj', 'Breakfast'], ['patisserie', 'Pâtisserie', 'Pastry'],
   ['peu-importe', 'Peu importe', 'Anything'],
 ] as const
-const DIST_OPTS = [['pied', 'À pied (10 min)', 'Walking (10 min)'], ['court', 'Court trajet (15 min)', 'Short drive (15 min)'], ['peu-importe', 'Peu importe', 'Any distance']] as const
+// « COMMENT TU Y VAS ? » — et non « jusqu'où ? » : c'est le mode qui
+// décide du rayon, pas l'inverse (§5.3).
+const MODE_OPTS = [['pied', 'À pied', 'On foot'], ['voiture', 'En voiture', 'By car'], ['transports', 'En transports', 'By transit'], ['peu-importe', 'Peu importe', "Doesn't matter"]] as const
 const BUDGET_OPTS = [['petit', 'Petit prix', 'Cheap'], ['moyen', 'Moyen', 'Mid-range'], ['peu-importe', 'Sans importance', "Doesn't matter"]] as const
 const EXIG_OPTS = [['verifies', 'Vérifiées par la communauté', 'Community-verified only'], ['signales', 'Tout ce qui est signalé halal', 'Anything reported halal']] as const
 
-const km = (m: number) => (m >= 1000 ? `${(m / 1000).toFixed(1)} km` : `${m} m`)
-const marche = (m: number) => Math.max(1, Math.round(m / 80))
+/** Le mode écrit en toutes lettres — jamais un nombre de minutes seul. */
+const LIB_MODE: Record<Mode, [string, string]> = {
+  pied: ['à pied', 'on foot'], voiture: ['en voiture', 'by car'], transports: ['en transports', 'by transit'],
+}
+
 const euros = (p?: number) => (p ? '€'.repeat(Math.min(4, p)) : null)
 
 export default function SurMesure({ posInitiale, destination, en = false, fondu = false }: {
@@ -75,6 +81,9 @@ export default function SurMesure({ posInitiale, destination, en = false, fondu 
   const [autres, setAutres] = useState<Fiche[]>([])
   const [voirAutres, setVoirAutres] = useState(false)
   const [source, setSource] = useState('')
+  const [mode, setMode] = useState<Mode>('voiture')
+  const [plafond, setPlafond] = useState(15)
+  const [plusLoin, setPlusLoin] = useState<{ minutes: number; mode: Mode; nombre: number } | null>(null)
   const [posUtilisee, setPosUtilisee] = useState<'gps' | 'ip' | 'ville' | null>(null)
   const [prose, setProse] = useState('')
   const [aEcrit, setAEcrit] = useState(false)
@@ -125,7 +134,7 @@ export default function SurMesure({ posInitiale, destination, en = false, fondu 
 
       const ac = new AbortController()
       const to = setTimeout(() => ac.abort(), 20_000)
-      let corps: { fiches?: Fiche[]; autres?: Fiche[]; source?: string } = {}
+      let corps: { fiches?: Fiche[]; autres?: Fiche[]; source?: string; mode?: Mode; plafondMin?: number; plusLoin?: { minutes: number; mode: Mode; nombre: number } | null } = {}
       try {
         const r = await fetch('/api/lieux', {
           method: 'POST', signal: ac.signal,
@@ -136,13 +145,15 @@ export default function SurMesure({ posInitiale, destination, en = false, fondu 
       } finally { clearTimeout(to) }
 
       const trois = corps.fiches ?? []
-      setFiches(trois); setAutres(corps.autres ?? []); setSource(corps.source ?? ''); setEtape('resultat')
-      if (trois.length) redigerIA(trois, c)
+      setFiches(trois); setAutres(corps.autres ?? []); setSource(corps.source ?? '')
+      setMode(corps.mode ?? 'voiture'); setPlafond(corps.plafondMin ?? 15); setPlusLoin(corps.plusLoin ?? null)
+      setEtape('resultat')
+      if (trois.length) redigerIA(trois, c, corps.mode ?? 'voiture')
     } finally { enCours.current = false }
   }
 
   /** §3 — l'IA écrit CE QUE LES CHIFFRES NE DISENT PAS. */
-  async function redigerIA(trois: Fiche[], c: Criteres) {
+  async function redigerIA(trois: Fiche[], c: Criteres, corpsMode: Mode) {
     // Le contexte contient les FAITS bruts : avis, attributs, horaires.
     // La porte refuse d'affirmer quoi que ce soit d'absent d'ici — la
     // qualité de la réponse EST la qualité de ces lignes.
@@ -158,7 +169,8 @@ export default function SurMesure({ posInitiale, destination, en = false, fondu 
         `LIEU ${i + 1} — ${f.nom}`,
         f.note != null ? `note ${f.note}/5 sur ${f.nbAvis ?? '?'} avis` : null,
         f.prix ? `niveau de prix ${f.prix}/4` : null,
-        `${km(f.distanceM)}${destination ? ' du centre' : `, ${marche(f.distanceM)} min à pied`}`,
+        // §5.7 — « 1,4 km » ne veut rien dire à quelqu'un qui a faim.
+        trajet(f.distanceM, corpsMode, false, !!destination),
         f.ouvert === true ? `ouvert${f.fermeA ? `, ferme à ${f.fermeA}` : ''}` : f.ouvert === false ? 'fermé actuellement' : null,
         attrs ? `attributs : ${attrs}` : null,
         f.resume ? `description : ${f.resume}` : null,
@@ -257,10 +269,10 @@ export default function SurMesure({ posInitiale, destination, en = false, fondu 
                     <button key={v} onClick={() => maj({ quoi: v })} aria-pressed={crit.quoi === v} style={puce(crit.quoi === v)}>{t(fr, an)}</button>
                   ))}
                 </div>
-                <p style={label}>{t("Jusqu'où ?", 'How far?')}</p>
+                <p style={label}>{t('Comment tu y vas ?', 'How are you getting there?')}</p>
                 <div style={rangee}>
-                  {DIST_OPTS.map(([v, fr, an]) => (
-                    <button key={v} onClick={() => maj({ distance: v })} aria-pressed={crit.distance === v} style={puce(crit.distance === v)}>{t(fr, an)}</button>
+                  {MODE_OPTS.map(([v, fr, an]) => (
+                    <button key={v} onClick={() => maj({ mode: v })} aria-pressed={crit.mode === v} style={puce(crit.mode === v)}>{t(fr, an)}</button>
                   ))}
                 </div>
                 <p style={label}>{t('Budget ?', 'Budget?')}</p>
@@ -353,16 +365,28 @@ export default function SurMesure({ posInitiale, destination, en = false, fondu 
           </div>
         )}
 
+        {/* §5.5 — ON ANNONCE LE NOMBRE AVANT D'ÉLARGIR. Le visiteur décide,
+            au lieu de subir une liste qui s'allonge toute seule. Et §5.4 :
+            deux adresses valent mieux que trois dont une absurde — on le
+            dit quand on n'en a trouvé que deux. */}
+        {etape === 'resultat' && fiches.length > 0 && fiches.length < 3 && plusLoin && (
+          <p style={{ color: 'rgba(253,250,243,0.72)', fontSize: 13, marginTop: 12, lineHeight: 1.5 }}>
+            {t(`Seulement ${fiches.length} adresse${fiches.length > 1 ? 's' : ''} à moins de ${plafond} min ${LIB_MODE[mode][0]} — on ne complète pas avec du lointain.`,
+               `Only ${fiches.length} place${fiches.length > 1 ? 's' : ''} within ${plafond} min ${LIB_MODE[mode][1]} — we do not pad the list with far-away results.`)}
+          </p>
+        )}
+
         {etape === 'resultat' && fiches.length === 0 && (
           <div style={{ marginTop: 14 }}>
             <p style={{ color: 'rgba(253,250,243,0.8)', fontSize: 14, lineHeight: 1.5, margin: 0 }}>
-              {t("Rien trouvé avec ces critères — on préfère te le dire plutôt que d'inventer une adresse.",
-                 'Nothing matched — we would rather say so than invent an address.')}
+              {t(`Aucune adresse à moins de ${plafond} min ${LIB_MODE[mode][0]} — on préfère te le dire plutôt que d'inventer.`,
+                 `Nothing within ${plafond} min ${LIB_MODE[mode][1]} — we would rather say so than invent an address.`)}
             </p>
             <div style={rangee}>
-              {crit.distance !== 'peu-importe' && (
-                <button onClick={() => { const c = { ...crit, distance: 'peu-importe' as const }; setCrit(c); lancer(c, aEcrit) }} style={puce(false)}>
-                  {t('Élargir la distance', 'Widen the distance')}
+              {plusLoin && (
+                <button onClick={() => { const c = { ...crit, mode: plusLoin.mode }; setCrit(c); lancer(c, aEcrit) }} style={puce(false)}>
+                  {t(`Élargir à ${plusLoin.minutes} min ${LIB_MODE[plusLoin.mode][0]} ? (${plusLoin.nombre} adresse${plusLoin.nombre > 1 ? 's' : ''})`,
+                     `Widen to ${plusLoin.minutes} min ${LIB_MODE[plusLoin.mode][1]}? (${plusLoin.nombre} place${plusLoin.nombre > 1 ? 's' : ''})`)}
                 </button>
               )}
               {crit.budget !== 'peu-importe' && (
@@ -381,7 +405,7 @@ export default function SurMesure({ posInitiale, destination, en = false, fondu 
 
         {fiches.length > 0 && (
           <div style={{ marginTop: 14, display: 'flex', flexDirection: 'column', gap: 12 }}>
-            {fiches.map((f, i) => <Carte key={f.id ?? i} f={f} en={en} destination={!!destination} onItineraire={() => compter('itineraires')} />)}
+            {fiches.map((f, i) => <Carte key={f.id ?? i} f={f} en={en} mode={mode} destination={!!destination} onItineraire={() => compter('itineraires')} />)}
           </div>
         )}
 
@@ -396,8 +420,8 @@ export default function SurMesure({ posInitiale, destination, en = false, fondu 
           <a key={f.id ?? i} href={`https://www.google.com/maps/dir/?api=1&destination=${f.lat},${f.lng}`} target="_blank" rel="noopener noreferrer"
             onClick={() => compter('itineraires')}
             style={{ display: 'flex', alignItems: 'center', gap: 8, marginTop: 8, padding: '10px 12px', borderRadius: 12, border: '1px solid rgba(253,250,243,0.14)', textDecoration: 'none' }}>
-            <span style={{ flex: 1, color: '#fdfaf3', fontWeight: 700, fontSize: 13.5 }}>{f.nom}</span>
-            <span style={{ color: 'rgba(253,250,243,0.6)', fontSize: 12.5 }}>{km(f.distanceM)}</span>
+            <span style={{ flex: 1, color: '#fdfaf3', fontWeight: 700, fontSize: 13.5, overflowWrap: 'anywhere' }}>{f.nom}</span>
+            <span style={{ color: 'rgba(253,250,243,0.6)', fontSize: 12.5, whiteSpace: 'nowrap' }}>{trajet(f.distanceM, mode, en)}</span>
           </a>
         ))}
 
@@ -431,9 +455,12 @@ function Cadre({ fondu, titre, children }: { fondu: boolean; titre: string; chil
 }
 
 /** UNE FICHE = une carte qui respire, la photo la porte (§2 et §6). */
-function Carte({ f, en, destination, onItineraire }: { f: Fiche; en: boolean; destination: boolean; onItineraire: () => void }) {
+function Carte({ f, en, mode, destination, onItineraire }: { f: Fiche; en: boolean; mode: Mode; destination: boolean; onItineraire: () => void }) {
   const t = (fr: string, an: string) => (en ? an : fr)
-  const dist = destination ? `${km(f.distanceM)} ${t('du centre', 'from centre')}` : `${km(f.distanceM)} · ${marche(f.distanceM)} ${t('min à pied', 'min walk')}`
+  // §5.1 et §5.2 : le temps est TOUJOURS accompagné de son mode, et
+  // jamais « 91 min à pied » — au-delà de 20 minutes, on bascule sur la
+  // voiture. §5.6 : sur une fiche ville, le repère est le centre.
+  const dist = trajet(f.distanceM, mode, en, destination)
   return (
     <article style={{ borderRadius: 16, border: '1px solid rgba(253,250,243,0.16)', overflow: 'hidden', background: 'rgba(255,255,255,0.04)' }}>
       {f.photos?.length ? (
@@ -446,7 +473,9 @@ function Carte({ f, en, destination, onItineraire }: { f: Fiche; en: boolean; de
         </div>
       ) : null}
       <div style={{ padding: 13 }}>
-        <p style={{ color: '#fdfaf3', fontWeight: 900, fontSize: 16.5, margin: 0, lineHeight: 1.3 }}><bdi>{f.nom}</bdi></p>
+        {/* §2 — « les noms ne sont JAMAIS tronqués : la carte s'adapte au
+            texte ». Pas de nowrap, pas d'ellipse : le nom passe à la ligne. */}
+        <p style={{ color: '#fdfaf3', fontWeight: 900, fontSize: 16.5, margin: 0, lineHeight: 1.3, overflowWrap: 'anywhere' }}><bdi>{f.nom}</bdi></p>
         <p style={{ color: 'rgba(253,250,243,0.82)', fontSize: 13, margin: '5px 0 0', lineHeight: 1.5 }}>
           {/* Une note ne veut rien dire sans son nombre d'avis (§2). */}
           {f.note != null && <><strong style={{ color: 'var(--or)' }}>★ {f.note.toFixed(1)}</strong>{f.nbAvis != null && ` · ${f.nbAvis} ${t('avis', 'reviews')}`}{' · '}</>}
