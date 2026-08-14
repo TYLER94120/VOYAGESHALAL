@@ -833,10 +833,15 @@ export default function BoardVoyageur({
           const spotsWidget = (
             <Link href={pres && !pres.proches.length && !pres.autour.length ? '/spots' : '/autour-de-moi'}
               style={{ ...T.tile, textDecoration: 'none', display: 'flex', flexDirection: 'column', gap: 8 }}>
+              {/* 📐 COHÉRENCE (Mohamed, 15 août : « tous les éléments doivent
+                  être cohérents ») : chaque carte suit la MÊME anatomie —
+                  étiquette dorée en capitales, contenu, porte « → ». Cette
+                  tuile était la seule à ouvrir sur un chiffre sans étiquette. */}
+              <p style={T.lab}>💎 {en ? 'Spots' : 'Spots'}</p>
               <div style={{ display: 'flex', alignItems: 'baseline', gap: 7 }}>
                 <span style={{ fontFamily: "'Playfair Display', Georgia, serif", color: 'var(--or)', fontSize: 26, fontWeight: 700, lineHeight: 1 }}>{nSpots ?? '…'}</span>
                 <span style={{ ...T.meta, fontSize: 13 }}>
-                  💎 {villeNom ? (en ? `spots in ${villeNom}` : `spots à ${villeNom}`) : (en ? 'spots shared by travelers' : 'spots partagés par des voyageurs')}
+                  {villeNom ? (en ? `in ${villeNom}` : `à ${villeNom}`) : (en ? 'shared by travelers' : 'partagés par des voyageurs')}
                 </span>
               </div>
               {apercus.length > 0 && (
@@ -925,18 +930,23 @@ export default function BoardVoyageur({
             belle information, mais pas une action — et l'écran épuré ne
             garde que ce qu'on vient y FAIRE. Les cinq horaires ont rejoint
             la carte prière, plus haut : le religieux vit dans UNE zone. */}
+        {/* 📐 COHÉRENCE : l'aplat or plein est réservé à UNE action par
+            écran — le bouton Rechercher. Cette ligne rejoint la famille des
+            cartes (même fond, même rayon) avec la bordure or la plus
+            marquée de l'écran : toujours la plus visible de sa rangée,
+            sans crier plus fort que l'action principale. */}
         <Link href="/qibla" aria-label={en ? 'Qibla compass' : 'Boussole Qibla'}
           style={{
-            marginTop: 10, minHeight: 50, display: 'flex', alignItems: 'center', justifyContent: 'center',
-            gap: 8, textDecoration: 'none', borderRadius: 999,
-            background: 'var(--or)', color: 'var(--nuit)',
-            boxShadow: '0 2px 12px rgba(201,168,76,0.35)',
+            ...T.tile, marginTop: 10, minHeight: 52, display: 'flex', alignItems: 'center', justifyContent: 'center',
+            gap: 8, textDecoration: 'none',
+            border: '1.5px solid rgba(201,168,76,0.65)',
           }}>
           <span style={{ fontSize: 19, transform: `rotate(${qibla.deg}deg)`, display: 'inline-block', lineHeight: 1 }} aria-hidden>🧭</span>
-          <span style={{ color: 'var(--nuit)', fontWeight: 900, fontSize: 14.5 }}>
+          <span style={{ color: 'var(--or)', fontWeight: 900, fontSize: 14.5 }}>
             {qibla.deg}° · {qibla.dir}
-            <span style={{ fontWeight: 800, fontSize: 12.5, marginLeft: 6, opacity: 0.75 }}>Qibla</span>
+            <span style={{ fontWeight: 800, fontSize: 12.5, marginLeft: 6, opacity: 0.85 }}>Qibla</span>
           </span>
+          <span style={{ color: 'var(--or)', fontWeight: 800, marginLeft: 4 }} aria-hidden>→</span>
         </Link>
 
       </div>

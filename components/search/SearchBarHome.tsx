@@ -123,8 +123,12 @@ export default function SearchBarHome() {
             if (results.length === 1) navigate(results[0])
             else if (query.trim()) router.push(`/search?q=${encodeURIComponent(query.trim())}`)
           }}
-          style={{ backgroundColor: GREEN }}
-          className="text-white px-7 py-4 rounded-r-2xl font-semibold text-base hover:opacity-90 transition-opacity whitespace-nowrap"
+          // L'OR EST LA COULEUR D'ACTION DU SITE (Itinéraire, ➕ Ajouter).
+          // Ce bouton était vert sombre — la seule action de l'écran qui ne
+          // parlait pas la langue des autres. Un seul doré plein par écran :
+          // celui-ci, l'action n° 1 de l'accueil.
+          style={{ backgroundColor: 'var(--or)', color: 'var(--nuit)' }}
+          className="px-7 py-4 rounded-r-2xl font-extrabold text-base hover:opacity-90 transition-opacity whitespace-nowrap"
         >
           {en ? 'Search' : 'Rechercher'}
         </button>
