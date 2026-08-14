@@ -41,15 +41,31 @@ const CATS = [
   { id: 'activite' as const, icon: '🎡', label: 'Activités', placeholder: 'Parc, musée, sortie en famille…', raccourcis: ['Parc', 'Musée', 'En famille', 'Hammam'] },
 ]
 
-const fmtDist = (m: number) => (m >= 2000 ? `${(m / 1000).toFixed(1)} km` : `${Math.max(1, Math.round(m / 80))} min à pied`)
+const fmtDist = (m: number, versUneVille = false) =>
+  versUneVille || m >= 2000
+    ? `${(m / 1000).toFixed(1)} km${versUneVille ? ' du centre' : ''}`
+    : `${Math.max(1, Math.round(m / 80))} min à pied`
 
-export default function MangerPresDeMoi({ posInitiale }: { posInitiale: { lat: number; lng: number; ville?: string | null } | null }) {
+/**
+ * 📍 LE MÊME MOTEUR, DEUX ANCRAGES — Mohamed, 15 août : « tout le site
+ * doit tourner autour de sa destination, Dubaï, + IA + Google Maps, idem
+ * pour autour de moi ».
+ *   · sans `destination` : on cherche autour du VISITEUR (accueil,
+ *     autour de moi) — GPS d'abord, adresse IP en repli annoncé ;
+ *   · avec `destination` : on cherche autour de la VILLE affichée
+ *     (fiche Dubaï, Istanbul…), sans jamais demander la position — le
+ *     voyageur qui prépare son séjour n'est pas encore sur place.
+ */
+export default function PresDeMoi({ posInitiale, destination }: {
+  posInitiale?: { lat: number; lng: number; ville?: string | null } | null
+  destination?: { lat: number; lng: number; nom: string } | null
+}) {
   const [texte, setTexte] = useState('')
   const [cat, setCat] = useState<'manger' | 'mosquee' | 'activite'>('manger')
   const [etat, setEtat] = useState<'repos' | 'cherche' | 'fini' | 'sans-position'>('repos')
   const [lieux, setLieux] = useState<Lieu[]>([])
   const [source, setSource] = useState('')
-  const [posUtilisee, setPosUtilisee] = useState<'gps' | 'ip' | null>(null)
+  const [posUtilisee, setPosUtilisee] = useState<'gps' | 'ip' | 'ville' | null>(null)
   const [prose, setProse] = useState('')
   const enCours = useRef(false)
   const derniereRequete = useRef('')
@@ -72,11 +88,12 @@ export default function MangerPresDeMoi({ posInitiale }: { posInitiale: { lat: n
     derniereRequete.current = requete
     setProse(''); setLieux([]); setEtat('cherche')
     try {
-      // 20 s : le temps de LIRE la fenêtre d'autorisation et d'y répondre.
-      const exacte = await gps(forcerGPS ? 25_000 : 20_000)
-      const pos = exacte ?? posInitiale
+      // Sur une fiche destination, la ville EST la position : on ne
+      // demande jamais le GPS de quelqu'un qui prépare son voyage.
+      const exacte = destination ? null : await gps(forcerGPS ? 25_000 : 20_000)
+      const pos = destination ?? exacte ?? posInitiale
       if (!pos) { setEtat('sans-position'); return }
-      setPosUtilisee(exacte ? 'gps' : 'ip')
+      setPosUtilisee(destination ? 'ville' : exacte ? 'gps' : 'ip')
       const ac = new AbortController()
       const t = setTimeout(() => ac.abort(), 15_000)
       let corps: { lieux?: Lieu[]; source?: string } = {}
@@ -94,7 +111,7 @@ export default function MangerPresDeMoi({ posInitiale }: { posInitiale: { lat: n
       // La prose IA — un bonus, jamais une condition. Elle s'écrit mot à mot.
       if (trouves.length) {
         const contexte = trouves.map((l) =>
-          [l.nom, fmtDist(l.distanceM), l.note ? `note ${l.note}` : null, l.ouvert === true ? 'ouvert' : l.ouvert === false ? 'fermé' : null, l.statut]
+          [l.nom, fmtDist(l.distanceM, !!destination), l.note ? `note ${l.note}` : null, l.ouvert === true ? 'ouvert' : l.ouvert === false ? 'fermé' : null, l.statut]
             .filter(Boolean).join(' — '))
         const ac2 = new AbortController()
         const t2 = setTimeout(() => ac2.abort(), 30_000)
@@ -103,9 +120,14 @@ export default function MangerPresDeMoi({ posInitiale }: { posInitiale: { lat: n
             method: 'POST', signal: ac2.signal,
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-              question: categorie === 'mosquee' ? (requete && requete !== 'La plus proche' ? `Je cherche une mosquée près de moi : ${requete}.` : 'Quelle est la mosquée la plus proche de moi ?')
-                : categorie === 'activite' ? `Je cherche une activité près de moi${requete ? ` : ${requete}` : ''}.`
-                : requete ? `Je cherche : ${requete}, halal, près de moi.` : 'Où manger halal près de moi ?',
+              // La question SITUE la recherche : « à Dubaï » ou « près de
+              // moi ». La porte IA n'affirme rien hors du contexte fourni.
+              question: (() => {
+                const ou = destination ? `à ${destination.nom}` : 'près de moi'
+                if (categorie === 'mosquee') return requete && requete !== 'La plus proche' ? `Je cherche une mosquée ${ou} : ${requete}.` : `Quelle est la mosquée la plus proche ${ou} ?`
+                if (categorie === 'activite') return `Je cherche une activité ${ou}${requete ? ` : ${requete}` : ''}.`
+                return requete ? `Je cherche : ${requete}, halal, ${ou}.` : `Où manger halal ${ou} ?`
+              })(),
               contexte,
             }),
           })
@@ -124,10 +146,10 @@ export default function MangerPresDeMoi({ posInitiale }: { posInitiale: { lat: n
   }
 
   return (
-    <section style={{ background: 'var(--nuit)' }} className="pb-8 px-4" aria-label="Près de moi">
+    <section style={{ background: 'var(--nuit)' }} className="pb-8 px-4" aria-label={destination ? `À ${destination.nom}` : 'Près de moi'}>
       <div className="max-w-3xl mx-auto" style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(201,168,76,0.3)', borderRadius: 16, padding: 16 }}>
         <p style={{ color: 'var(--or)', fontSize: 12, fontWeight: 800, letterSpacing: '0.08em', textTransform: 'uppercase', margin: 0 }}>
-          📍 Près de moi
+          📍 {destination ? `À ${destination.nom}` : 'Près de moi'}
         </p>
         {/* Les trois ateliers : un tap change la catégorie et vide le résultat. */}
         <div style={{ display: 'flex', gap: 7, marginTop: 10, flexWrap: 'wrap' }}>
@@ -150,7 +172,7 @@ export default function MangerPresDeMoi({ posInitiale }: { posInitiale: { lat: n
         >
           <input
             value={texte} onChange={(e) => setTexte(e.target.value)}
-            placeholder={CATS.find((c) => c.id === cat)!.placeholder}
+            placeholder={destination ? `${CATS.find((c) => c.id === cat)!.label} à ${destination.nom}…` : CATS.find((c) => c.id === cat)!.placeholder}
             style={{ flex: 1, minWidth: 0, minHeight: 48, borderRadius: 12, border: '1px solid rgba(253,250,243,0.25)', background: 'rgba(255,255,255,0.07)', color: '#fdfaf3', padding: '0 14px', fontSize: 16 }}
           />
           <button type="submit" disabled={etat === 'cherche'}
@@ -169,7 +191,9 @@ export default function MangerPresDeMoi({ posInitiale }: { posInitiale: { lat: n
 
         {etat === 'cherche' && (
           <p style={{ color: 'rgba(253,250,243,0.65)', fontSize: 13, marginTop: 12 }}>
-            Recherche autour de toi… (si le navigateur demande ta position, accepte pour des résultats exacts)
+            {destination
+              ? `Recherche à ${destination.nom}…`
+              : 'Recherche autour de toi… (si le navigateur demande ta position, accepte pour des résultats exacts)'}
           </p>
         )}
         {etat === 'sans-position' && (
@@ -190,7 +214,7 @@ export default function MangerPresDeMoi({ posInitiale }: { posInitiale: { lat: n
         )}
         {etat === 'fini' && lieux.length === 0 && (
           <p style={{ color: 'rgba(253,250,243,0.75)', fontSize: 13.5, marginTop: 12, lineHeight: 1.5 }}>
-            Aucune adresse trouvée autour de toi — on préfère te le dire plutôt que d&apos;inventer.
+            {destination ? `Aucune adresse trouvée à ${destination.nom}` : 'Aucune adresse trouvée autour de toi'} — on préfère te le dire plutôt que d&apos;inventer.
           </p>
         )}
         {lieux.length > 0 && (
@@ -205,7 +229,7 @@ export default function MangerPresDeMoi({ posInitiale }: { posInitiale: { lat: n
                     {l.ouvert === false && <span style={{ color: 'rgba(253,250,243,0.6)', fontWeight: 700, fontSize: 12.5 }}> · fermé</span>}
                   </p>
                   <p style={{ color: 'rgba(253,250,243,0.7)', fontSize: 12.5, margin: '2px 0 0', lineHeight: 1.4 }}>
-                    {fmtDist(l.distanceM)} · {l.statut}
+                    {fmtDist(l.distanceM, !!destination)} · {l.statut}
                   </p>
                 </div>
                 <a href={`https://www.google.com/maps/dir/?api=1&destination=${l.lat},${l.lng}`} target="_blank" rel="noopener noreferrer"
