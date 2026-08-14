@@ -115,6 +115,11 @@ export default function BoardVoyageur({
   // (« je ne veux pas me prendre la tete ») ou le MEILLEUR compromis.
   const [mode, setMode] = useState<'proche' | 'meilleur'>('proche')
   const [avisEnvoye, setAvisEnvoye] = useState(false)
+  // 🪗 L'ACCORDÉON — Mohamed, 15 août : « au début épuré, on voit le
+  // minimum ; quand on clique sur un widget, il grossit et on travaille
+  // dessus ». Au repos, chaque widget est une ligne fine. Un tap l'ouvre
+  // SUR PLACE (animation courte), et c'est là que vivent ses filtres.
+  const [ouvert, setOuvert] = useState<'priere' | 'manger' | null>(null)
   // 🌤 Météo — demandée par Mohamed : « en voyage, la température de la
   // position et pouvoir anticiper ». Elle ne bloque RIEN : la tuile n'existe
   // que si la réponse arrive, et son absence ne se voit pas.
@@ -476,20 +481,9 @@ export default function BoardVoyageur({
   /** le rattrapage cherche encore : on ne dit surtout pas « aucun » */
   const rattrapageEnCours = paysDefaut && manqueResto && restoPays === undefined
 
-  // ── Etape 3 : le board vit avec l'heure — la bonne tuile grossit au bon
-  // moment. La priere garde toujours la priorite quand elle approche. ──
-  const heure = new Date(now).getHours()
-  const prayerUrgent = minLeft <= 45 || (statut != null && statut !== 'vert')
-  const repas = (heure >= 11 && heure < 14) || (heure >= 19 && heure < 22)
-  const soiree = heure >= 21 || heure < 5
-  const focus: 'priere' | 'manger' | 'soiree' =
-    prayerUrgent ? 'priere'
-    // Une envie exprimee est un signal fort : la tuile manger passe devant
-    // (sauf priere imminente, qui garde toujours la priorite).
-    : envie ? 'manger'
-    : repas && bestResto ? 'manger'
-    : soiree && pepite ? 'soiree'
-    : 'priere'
+  // (l'ancien « focus » automatique — la tuile qui grossissait selon
+  // l'heure — a disparu : c'est l'utilisateur qui ouvre le widget qu'il
+  // veut travailler. L'accordéon remplace la devinette.)
 
   // ☀️ LISIBILITÉ EN PLEIN JOUR.
   // Mesuré sur une capture du premier écran : 84 % des pixels étaient très
@@ -566,19 +560,16 @@ export default function BoardVoyageur({
               {horairesLigne}
             </div>
           )
-          const horairesStrip = horairesLigne && (
-            <Link href={localizedHref('/horaires-priere', en)} className="board-strip" style={{ ...T.tile, marginTop: 8, display: 'block', padding: '11px 10px', textDecoration: 'none' }}>
-              {horairesLigne}
-            </Link>
-          )
           const priereWide = (
-            <div className="board-hero" role="link" tabIndex={0} onClick={() => { window.location.href = '/horaires-priere' }} onKeyDown={(e) => { if (e.key === 'Enter') window.location.href = '/horaires-priere' }}
+            // Ouvert : un tap sur le fond REFERME (l'accordéon se replie là où
+            // il s'est ouvert). Les actions vivent sur leurs propres boutons.
+            <div className="board-hero board-pousse" role="button" tabIndex={0} aria-expanded onClick={() => setOuvert(null)} onKeyDown={(e) => { if (e.key === 'Enter') setOuvert(null) }}
               style={{ ...T.tile, background: 'linear-gradient(150deg, rgba(27,67,50,0.85), rgba(255,255,255,0.04))', borderColor: 'rgba(201,168,76,0.35)', cursor: 'pointer' }}>
               <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 10 }}>
                 <p style={{ ...T.lab, color: accent }}>
                   🕌 {fenetre.mode === 'current' ? (en ? 'Now' : 'Maintenant') : (en ? 'Next prayer' : 'Prochaine prière')} · {fenetre.key}
                 </p>
-                <p style={{ ...T.meta, fontWeight: 700 }}>{fmtClock(fenetre.start)}</p>
+                <p style={{ ...T.meta, fontWeight: 700 }}>{fmtClock(fenetre.start)} <span style={{ color: 'var(--or)' }} aria-hidden>▴</span></p>
               </div>
               <p style={{ fontFamily: "'Playfair Display', Georgia, serif", color: '#fdfaf3', fontSize: 30, fontWeight: 900, margin: '2px 0 0', lineHeight: 1.05 }}>
                 {fenetre.mode === 'current'
@@ -653,15 +644,19 @@ export default function BoardVoyageur({
           )
           // Bandeau priere compact : tout tient sur une ligne quand la priere
           // n'est pas le moment dominant
+          // Fermé : une ligne fine. Le tap OUVRE sur place — il ne navigue
+          // plus : « quand on clique sur un widget, il grossit et on
+          // travaille dessus » (Mohamed, 15 août).
           const priereSlim = (
-            <Link className="board-slim" href={localizedHref('/horaires-priere', en)} style={{ ...T.tile, marginTop: 10, display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none', padding: '11px 14px' }}>
+            <button className="board-slim" onClick={() => setOuvert('priere')} aria-expanded={false}
+              style={{ ...T.tile, width: '100%', marginTop: 10, display: 'flex', alignItems: 'center', gap: 10, padding: '13px 14px', cursor: 'pointer', textAlign: 'left' }}>
               <span style={{ fontSize: 18 }} aria-hidden>🕌</span>
               <p style={{ flex: 1, color: '#fdfaf3', fontWeight: 700, fontSize: 13.5, margin: 0, lineHeight: 1.35 }}>
                 {fenetre.key} {fenetre.mode === 'current' ? (en ? 'ends in' : 'se termine dans') : (en ? 'in' : 'dans')} <strong style={{ color: 'var(--or)' }}>{fmtMin(minLeft)}</strong>
                 {mosquee ? <span style={{ color: 'rgba(253,250,243,0.78)' }}> · <bdi>{mosquee.nom}</bdi> ({walkMin} min)</span> : null}
               </p>
-              <span style={{ color: 'var(--or)', fontWeight: 800, fontSize: 13 }}>→</span>
-            </Link>
+              <span style={{ color: 'var(--or)', fontWeight: 800, fontSize: 13 }} aria-hidden>▾</span>
+            </button>
           )
           // 🧠 L'ENVIE VIT DANS LA TUILE MANGER — Mohamed, 15 août : « manger
           // le plus proche, il faut que ça serve à quelque chose… je suis à
@@ -717,15 +712,18 @@ export default function BoardVoyageur({
             </div>
           )
           const mangerWide = bestResto && (
-            <div className="board-hero" role="link" tabIndex={0} onClick={() => window.open(itin(bestResto.lat, bestResto.lng), '_blank', 'noopener')} onKeyDown={(e) => { if (e.key === 'Enter') window.open(itin(bestResto.lat, bestResto.lng), '_blank', 'noopener') }}
-              style={{ ...T.tile, background: 'linear-gradient(150deg, rgba(27,67,50,0.85), rgba(255,255,255,0.04))', borderColor: 'rgba(201,168,76,0.35)', cursor: 'pointer' }}>
-              <p style={T.lab}>{envieActive
-                ? [
-                    `${envieActive.emoji} ${envieActive[en ? 'en' : 'fr']}`,
-                    bestResto?.force === 1 ? (en ? 'maybe' : 'peut-être') : null,
-                    mode === 'meilleur' ? (en ? 'best pick' : 'meilleur choix') : (en ? 'closest' : 'le plus proche'),
-                  ].filter(Boolean).join(' · ')
-                : `🍽 ${en ? 'Time to eat — nearest halal' : 'C\'est l\'heure de manger — le plus proche'}`}</p>
+            <div className="board-hero board-pousse" role="button" tabIndex={0} aria-expanded onClick={() => setOuvert(null)} onKeyDown={(e) => { if (e.key === 'Enter') setOuvert(null) }}
+              style={{ ...T.tile, marginTop: 10, background: 'linear-gradient(150deg, rgba(27,67,50,0.85), rgba(255,255,255,0.04))', borderColor: 'rgba(201,168,76,0.35)', cursor: 'pointer' }}>
+              <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 10 }}>
+                <p style={T.lab}>{envieActive
+                  ? [
+                      `${envieActive.emoji} ${envieActive[en ? 'en' : 'fr']}`,
+                      bestResto?.force === 1 ? (en ? 'maybe' : 'peut-être') : null,
+                      mode === 'meilleur' ? (en ? 'best pick' : 'meilleur choix') : (en ? 'closest' : 'le plus proche'),
+                    ].filter(Boolean).join(' · ')
+                  : `🍽 ${en ? 'Eat' : 'Manger'}`}</p>
+                <span style={{ color: 'var(--or)', fontWeight: 800 }} aria-hidden>▴</span>
+              </div>
               <p style={{ fontFamily: "'Playfair Display', Georgia, serif", color: '#fdfaf3', fontSize: 24, fontWeight: 900, margin: '4px 0 0', lineHeight: 1.15 }}>
                 <bdi>{bestResto.nom}</bdi>
               </p>
@@ -809,7 +807,7 @@ export default function BoardVoyageur({
           // dit pas « aucun » : on n'en sait rien. Le vide ne s'affiche
           // qu'une fois TOUTES les sources revenues.
           const mangerVide = envieActive && !rattrapageEnCours && (
-            <div style={{ ...T.tile, background: 'linear-gradient(150deg, rgba(27,67,50,0.85), rgba(255,255,255,0.04))', borderColor: 'rgba(201,168,76,0.35)' }}>
+            <div className="board-pousse" style={{ ...T.tile, marginTop: 10, background: 'linear-gradient(150deg, rgba(27,67,50,0.85), rgba(255,255,255,0.04))', borderColor: 'rgba(201,168,76,0.35)' }}>
               <p style={T.lab}>{envieActive.emoji} {envieActive[en ? 'en' : 'fr']}</p>
               <p style={{ fontFamily: "'Playfair Display', Georgia, serif", color: '#fdfaf3', fontSize: 20, fontWeight: 900, margin: '4px 0 0', lineHeight: 1.2 }}>
                 {/* ✍️ « Aucun pizza signalé » — photographié par Mohamed.
@@ -839,49 +837,41 @@ export default function BoardVoyageur({
               </div>
             </div>
           )
-          const mangerSmall = (
-            <div role="link" tabIndex={0}
-              onClick={() => { if (bestResto) window.open(itin(bestResto.lat, bestResto.lng), '_blank', 'noopener'); else window.location.href = '/autour-de-moi' }}
-              onKeyDown={(e) => { if (e.key !== 'Enter') return; if (bestResto) window.open(itin(bestResto.lat, bestResto.lng), '_blank', 'noopener'); else window.location.href = '/autour-de-moi' }}
-              style={{ ...T.tile, flex: 1, cursor: 'pointer' }}>
-              {/* Le libelle dit POURQUOI ce lieu est la : sans envie exprimee,
-                  c'est simplement le plus proche. Un nom seul (« Orangeraie »)
-                  ne veut rien dire — on montre la cuisine et la distance. */}
-              <p style={T.lab}>{envieActive
-                ? `${envieActive.emoji} ${envieActive[en ? 'en' : 'fr']}`
-                : `🍽 ${en ? 'Eat — the closest' : 'Manger — le plus proche'}`}</p>
-              {(rattrapageEnCours || (envie ? restoEnvie === undefined : resto === undefined && !bestResto)) ? <p style={{ ...T.meta, marginTop: 4 }}>…</p>
-                : !bestResto ? <p style={{ ...T.meta, marginTop: 4 }}>{
-                    envieActive ? (en ? `No “${envieActive.en}” spot within 12 km` : `Aucune adresse « ${envieActive.fr} » à moins de 12 km`)
-                      : osmOk ? (en ? 'None reported nearby' : 'Aucun signalé à proximité')
-                      : (en ? 'Search not finished — try again' : 'Recherche non terminée — réessaie')
-                  }</p>
-                : (
-                  <>
-                    <a href={itin(bestResto.lat, bestResto.lng)} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} style={{ color: '#fdfaf3', fontWeight: 800, fontSize: 14, textDecoration: 'none', display: 'block', margin: '3px 0 2px', lineHeight: 1.3 }}>
-                      <bdi>{bestResto.nom}</bdi> →
-                    </a>
-                    {bestResto.cuisine && (
-                      <p style={{ ...T.meta, color: 'rgba(253,250,243,0.8)', fontWeight: 600 }}>{bestResto.cuisine}</p>
-                    )}
-                    <p style={T.meta}>
-                      {bestResto.distM > 2000
-                        ? `${(bestResto.distM / 1000).toFixed(1)} km`
-                        : `${walk(bestResto.distM)} ${en ? 'min walk' : 'min à pied'}`}
-                      {' · '}
-                      {(() => {
-                        if (bestResto.source === 'communaute') return en ? 'shared by a traveler' : 'partagé par un voyageur'
-                        if (bestResto.sansEtiquette) return mentionPaysMusulman(en)
-                        const n = niveauHalal(bestResto.halal, en)
-                        return n ? n.texte : (en ? 'listed halal · to verify' : 'signalé halal · à vérifier')
-                      })()}
-                    </p>
-                  </>
-                )}
-              {/* La rangée d'envies, compacte (emojis seuls) : un tap sur 🍕
-                  et la tuile passe en grande carte-réponse avec le sélecteur
-                  « la plus proche / la mieux aimée ». */}
-              {enviesChips(true)}
+          // Fermé : UNE ligne — l'essentiel (le plus proche, sa distance) et
+          // rien d'autre. Les filtres n'apparaissent qu'à l'ouverture.
+          // (La rangée d'emojis qui vivait ici a été vue par Mohamed :
+          // « des ronds avec bout de pizza, on ne comprend rien, le widget
+          // dépasse ». Il avait raison — des pictogrammes sans étiquette,
+          // interdits par nos propres règles.)
+          const mangerSlim = (
+            <button className="board-slim" onClick={() => setOuvert('manger')} aria-expanded={false}
+              style={{ ...T.tile, width: '100%', marginTop: 10, display: 'flex', alignItems: 'center', gap: 10, padding: '13px 14px', cursor: 'pointer', textAlign: 'left' }}>
+              <span style={{ fontSize: 18 }} aria-hidden>🍽</span>
+              <p style={{ flex: 1, color: '#fdfaf3', fontWeight: 700, fontSize: 13.5, margin: 0, lineHeight: 1.35 }}>
+                {en ? 'Eat' : 'Manger'}
+                {bestResto
+                  ? <span style={{ color: 'rgba(253,250,243,0.78)' }}> · <bdi>{bestResto.nom}</bdi> ({bestResto.distM > 2000 ? `${(bestResto.distM / 1000).toFixed(1)} km` : `${walk(bestResto.distM)} min`})</span>
+                  : (rattrapageEnCours || resto === undefined)
+                    ? <span style={{ color: 'rgba(253,250,243,0.6)' }}> · …</span>
+                    : <span style={{ color: 'rgba(253,250,243,0.6)' }}> · {osmOk ? (en ? 'none reported nearby' : 'aucun signalé à proximité') : (en ? 'search not finished' : 'recherche non terminée')}</span>}
+              </p>
+              <span style={{ color: 'var(--or)', fontWeight: 800, fontSize: 13 }} aria-hidden>▾</span>
+            </button>
+          )
+          // Ouvert sans résultat : la carte reste un lieu de travail — on
+          // choisit son envie ici, la recherche part aussitôt.
+          const mangerOuvertVide = (
+            <div className="board-pousse" style={{ ...T.tile, marginTop: 10 }}>
+              <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 10 }}>
+                <p style={T.lab}>🍽 {en ? 'Eat' : 'Manger'}</p>
+                <button onClick={() => setOuvert(null)} aria-label={en ? 'Close' : 'Fermer'} style={{ background: 'none', border: 'none', color: 'var(--or)', fontWeight: 800, cursor: 'pointer', minHeight: 44, padding: '0 6px' }}>▴</button>
+              </div>
+              <p style={{ ...T.meta, marginTop: 2 }}>
+                {(rattrapageEnCours || resto === undefined) ? '…'
+                  : osmOk ? (en ? 'None reported nearby — pick a craving, we search right away.' : 'Aucun signalé à proximité — choisis une envie, on cherche aussitôt.')
+                  : (en ? 'Search not finished — try again in a moment.' : 'Recherche non terminée — réessaie dans un instant.')}
+              </p>
+              {enviesChips(false)}
             </div>
           )
 
@@ -933,58 +923,22 @@ export default function BoardVoyageur({
             </Link>
           )
 
-          if (focus === 'manger' && (mangerWide || mangerVide)) {
-            return (
-              <>
-                {mangerWide || mangerVide}
-                {priereSlim}
-                {horairesStrip}
-                <div className="board-duo" style={{ display: 'grid', gridTemplateColumns: '1fr', gap: 10, marginTop: 10 }}>
-                  {spotsWidget}
-                </div>
-              </>
-            )
-          }
-          if (focus === 'soiree') {
-            return (
-              <>
-                {priereSlim}
-                {horairesStrip}
-                <div className="board-duo" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginTop: 10,
-                  // `start` et non l'étirement par défaut : quand « Manger » n'a
-                  // rien à dire, la grille lui donnait la hauteur de la tuile
-                  // voisine (avec sa vignette vidéo) — une boîte vide d'un demi
-                  // écran pour trois mots. Chaque tuile prend sa vraie hauteur.
-                  alignItems: 'start' }}>
-                  {mangerSmall}
-                  {spotsWidget}
-                </div>
-              </>
-            )
-          }
+          // 🪗 L'ACCORDÉON : chaque widget est une ligne fine tant qu'on ne
+          // lui a rien demandé. Un tap l'ouvre sur place ; un tap sur le
+          // fond ouvert le referme. Un seul ouvert à la fois : l'écran
+          // reste épuré même en travaillant.
           return (
             <>
-              {priereWide}
-              <div className="board-duo" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginTop: 10,
-                  // `start` et non l'étirement par défaut : quand « Manger » n'a
-                  // rien à dire, la grille lui donnait la hauteur de la tuile
-                  // voisine (avec sa vignette vidéo) — une boîte vide d'un demi
-                  // écran pour trois mots. Chaque tuile prend sa vraie hauteur.
-                  alignItems: 'start' }}>
-                {mangerSmall}
+              {ouvert === 'priere' ? priereWide : priereSlim}
+              {ouvert === 'manger'
+                ? (mangerWide || mangerVide || mangerOuvertVide)
+                : mangerSlim}
+              <div style={{ marginTop: 10 }}>
                 {spotsWidget}
               </div>
             </>
           )
         })()}
-
-
-        {/* 🧹 15 août — la rangée « J'ai envie de… » et son sélecteur
-            « le plus proche / le meilleur choix » quittent l'accueil : deux
-            rangées de boutons pour affiner une seule tuile, c'est un outil,
-            pas un premier écran. La tuile Manger ouvre /autour-de-moi où ce
-            choix existe déjà. L'écran répond à trois questions — prier,
-            manger, explorer — et s'arrête là. */}
 
         {/* 🧭 LA QIBLA, seule sur sa ligne — en doré plein (demandé par
             Mohamed : « mets le bouton de la Qibla plus visible »). La date
