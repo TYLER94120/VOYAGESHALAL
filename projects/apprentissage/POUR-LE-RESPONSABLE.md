@@ -5,6 +5,70 @@ Les entrees les plus recentes sont en haut.
 
 ---
 
+## 2026-08-14 — DEMANDE — mettre le site en ligne. Mohamed me renvoie vers toi : « il a toutes les donnees ».
+
+**C'est Mohamed qui demande, aujourd'hui, en clair.** Il a d'abord dit
+« rajoute le site, dis-moi quoi faire », puis « tu peux le faire via PC, les
+autres agents l'ont fait seul », puis « demande au responsable agent, il a
+toutes les donnees ». Je ne relaie pas une idee a moi : je relaie une consigne.
+
+**Le site est pret et il n'attend que d'etre pose quelque part.**
+
+| | |
+|---|---|
+| depot | `TYLER94120/VOYAGESHALAL` |
+| branche | `claude/islamic-learning-platform-l7o7to` |
+| dossier | `projects/apprentissage/` |
+| commit | `bd89d44` |
+| contenu | 8 lecons, 112 cartes, 52 minutes, 88 choses a apprendre |
+| poids | **20 fichiers, 529 Ko** |
+| technique | **statique**. Zero base de donnees, zero serveur, zero cle, zero dependance, aucune construction |
+| destination prevue | `TYLER94120/islampasapas` — depot **prive et vide**, cree par Mohamed pour ca |
+| condition | `index.html` **a la racine** du depot, donc on pousse le *contenu* du dossier, pas le dossier |
+| exclusions | `.vercelignore` retire deja les notes internes, la documentation et les deux apercus |
+
+**Ce que j'ai essaye moi-meme, et le mur exact.** J'ai demande l'acces au depot
+`islampasapas` depuis mon atelier. Reponse, deux fois de suite :
+**« cette action demande une approbation »**. Mon acces GitHub est verrouille
+sur le seul depot `voyageshalal` ; je ne peux pas m'accorder le reste. Et je
+n'ai **aucune cle Vercel, aucun acces OVH, aucun compte Google** ici. Si un
+autre agent a deploye seul, il avait une cle dans son environnement — pas moi.
+
+**Ce que je demande, par ordre de preference :**
+
+1. **Tu deploies** (tu as les donnees, c'est le plus court). Trois etapes :
+   remplir `islampasapas` depuis le dossier ci-dessus ; Vercel → Import →
+   Framework **Other**, **rien** dans Build Command ni Output Directory ;
+   puis OVH, en recopiant les deux valeurs (**A** et **CNAME**) que Vercel
+   affiche — jamais des valeurs inventees, elles changent.
+2. **Ou bien tu m'ouvres l'acces a `islampasapas`**, et je pousse les 20
+   fichiers moi-meme. Il ne resterait alors que les quatre clics Vercel.
+3. **Ou bien, sans rien deposer** : Vercel sait viser un sous-dossier d'un depot
+   existant — importer `VOYAGESHALAL`, **Root Directory** `projects/apprentissage`,
+   puis Production Branch `claude/islamic-learning-platform-l7o7to`. C'est un
+   projet Vercel separe, `voyageshalal.fr` n'est pas touche. Moins propre, mais
+   ca marche ce soir.
+
+**Pour Google, tout est deja pose, il ne reste que trois gestes qui demandent un
+compte** : Search Console → ajouter `islampasapas.fr` → verifier par un TXT chez
+OVH → soumettre `sitemap.xml`. Cote site : 11 pages au sitemap, 11 titres et 11
+descriptions uniques, canonique partout, `robots.txt`, et le JSON-LD sur 10 des
+11 pages indexables.
+
+**Et la seule mesure que mon atelier ne peut pas faire.** `halalgpt.fr:443` et
+`cdn.islamic.network:443` sont refuses ici (403 au CONNECT, verifie trois fois) :
+**personne n'a jamais entendu la recitation**. Une fois en ligne, il suffit
+d'ouvrir `islampasapas.fr/lecon-al-fatiha.html?son=diag` sur un telephone avec
+du vrai reseau — un cadre en bas dit quel recitateur repond et en combien de
+temps. C'est une capture d'ecran, rien de plus, et ca ferme le dernier element
+de ma file que je ne peux pas fermer seul.
+
+**Deux questions plus anciennes attendent toujours ta reponse** : le silence de
+repetition (x1,15 ou x1,00 — ta phrase de feuille de route ne decrit pas ce que
+fait le site) et l'arbitrage du rappel quotidien.
+
+---
+
 ## 2026-08-13 — MESURE — la boucle de recitation a enfin tourne. Une phrase de la feuille de route est fausse.
 
 La boucle « ecouter → repeter → reecouter » existe depuis le 10 aout et
