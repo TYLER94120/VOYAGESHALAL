@@ -56,8 +56,15 @@ export interface BoardVedette { slug: string; nom: string; score: number; restau
 export default function BoardVoyageur({
   vedettes = [],
   posInitiale = null,
+  recherche = null,
 }: {
   vedettes?: BoardVedette[]
+  /** Le titre + la barre de recherche de la page, rendus PAR LE SERVEUR et
+   *  glissés ici pour que l'accueil soit UN SEUL écran — Mohamed, 15 août :
+   *  « les 2 premières pages doivent fusionner, garde le meilleur des 2 ».
+   *  Le meilleur de l'ancienne page, c'est la recherche ; le meilleur de la
+   *  nouvelle, c'est le tableau de bord. Ils vivent désormais ensemble. */
+  recherche?: React.ReactNode
   /** Position approximative fournie par le serveur (adresse IP), pour que
    *  l'écran soit utile AVANT que le navigateur ait donné sa position.
    *  Voir lib/positionServeur.ts : c'est ce qui supprime l'attente et le
@@ -400,7 +407,16 @@ export default function BoardVoyageur({
     return { autour, reels, pepite, proches, restoCom, total: spots.length }
   }, [pos, spots])
 
-  if (!pos || !fenetre) return null
+  // Sans position (robot d'indexation, IP inconnue), on ne rend pas les
+  // tuiles — mais JAMAIS une page sans titre ni recherche : le meilleur de
+  // l'ancienne page reste servi, et Google voit toujours le H1.
+  if (!pos || !fenetre) {
+    return recherche ? (
+      <section style={{ background: 'var(--nuit)', padding: '14px 14px 6px' }}>
+        <div className="board-wrap" style={{ margin: '0 auto' }}>{recherche}</div>
+      </section>
+    ) : null
+  }
 
   // ── Cadrans locaux supplementaires (zero reseau, zero invention) ──
   // Qibla : cap vers la Kaaba depuis la position
@@ -513,6 +529,10 @@ export default function BoardVoyageur({
             {en ? 'See all →' : 'Tout voir →'}
           </Link>
         </div>
+
+        {/* 🔎 Le titre et la recherche de l'ancienne page d'accueil, fondus
+            DANS le tableau de bord : un seul écran, plus deux empilés. */}
+        {recherche && <div style={{ marginBottom: 10 }}>{recherche}</div>}
 
         {/* ── Tuiles composables : la taille suit le moment (focus) ── */}
         {(() => {

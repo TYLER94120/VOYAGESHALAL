@@ -12,7 +12,6 @@ import BoardVoyageur from '@/components/home/BoardVoyageur'
 import { positionServeur } from '@/lib/positionServeur'
 import { localizedHref } from '@/lib/slugs'
 import { HomeScoreRanking } from '@/components/HomeScoreRanking'
-import IslamicPattern from '@/components/ui/IslamicPattern'
 import SearchBarHome from '@/components/search/SearchBarHome'
 import { photoLargeur } from '@/lib/imageLargeur'
 import { getDomainSEO, FR_URL, EN_URL } from '@/lib/domain'
@@ -157,82 +156,30 @@ export default async function HomePage() {
     <JsonLd data={orgSchema} />
     {/* Design unifié : même accueil sur mobile et desktop */}
     <main style={{ backgroundColor: '#fdfaf3' }}>
-      {/* 🎛️ Board voyageur (bento) : rendu client au-dessus du hero quand la
-          position est connue — absorbe le Radar Prière. Le HTML serveur
-          en dessous ne change pas : SEO intact. */}
+      {/* 🎛️ UN SEUL PREMIER ÉCRAN — Mohamed, 15 août : « les 2 premières
+          pages doivent fusionner, garde le meilleur des 2 ». Le hero
+          n'existe plus comme section séparée : son meilleur — le titre et
+          la recherche — est rendu ici par le serveur et glissé DANS le
+          tableau de bord, sous la barre de position. Un écran, pas deux
+          empilés. Le H1 et la recherche restent du HTML serveur : Google
+          les voit toujours, position connue ou non. */}
       <BoardVoyageur
         vedettes={vedettes.map((v) => ({ slug: v.slug, nom: v.nom, score: v.score, restaurants: v.restaurants, mosquees: v.mosquees, image: v.image }))}
         posInitiale={posIP}
-      />
-      {/* Hero plein écran minimaliste */}
-      <section
-        className="relative overflow-hidden text-center px-6"
-        // 🔻 14 août : le hero occupait UN ÉCRAN ENTIER (calc(100dvh - 100px)).
-        // Quelqu'un qui ouvrait le site pour savoir où prier devait faire
-        // défiler toute une page de présentation avant d'atteindre quoi que
-        // ce soit d'utile — c'est le reproche le plus fréquent remonté à
-        // Mohamed. Il devient un BANDEAU : le titre et la recherche
-        // subsistent, pour le nouveau venu comme pour Google, mais ils ne
-        // coûtent plus un écran. Le tableau de bord passe devant.
-        style={{ padding: '22px 24px 22px', backgroundColor: '#0b1a0f' }}
-      >
-        {/* 📷 15 août — L'IMAGE DE FOND A ÉTÉ RETIRÉE D'ICI.
-            Ce hero portait une photo de la Mosquée Bleue en `priority`,
-            c'est-à-dire téléchargée AVANT tout le reste, parce qu'elle
-            remplissait alors un écran entier. Le hero ne fait plus que
-            169 px de haut et son voile est opaque sur les 120 premiers :
-            de la photo, il ne restait qu'une bande sombre indiscernable du
-            fond uni. On payait donc une image plein écran, en tête du
-            chemin critique, pour un résultat invisible — exactement le
-            genre de poids qui fait dire « le site met du temps à s'ouvrir ».
-            Le dégradé et le motif suffisent. */}
-        {/* Voile sombre. La première centaine de pixels est OPAQUE : sans
-            elle, une rupture nette apparaissait entre le tableau de bord
-            (noir uni) et ce hero (éclairci par le motif doré) — Mohamed l'a
-            vue depuis sa voiture, « le fond n'est pas noir, c'est vert ».
-            Les deux zones se fondent maintenant l'une dans l'autre. */}
-        {/* Le voile s'ouvre sur EXACTEMENT le fond du tableau de bord, puis
-            se fond vers l'image. Mesuré : le board affiche un vert à
-            RVB (26,45,29) et ce hero descendait à (12,26,15) — deux fonds
-            différents à l'œil, ce que Mohamed a vu depuis sa voiture. */}
-        <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, rgba(26,45,29,1) 0px, rgba(20,36,23,0.94) 120px, rgba(11,26,15,0.82) 100%)' }} />
-        {/* Motif adouci : à 0,06 il donnait au bas de page une teinte
-            olive (mesurée RVB 37,45,24) alors que le tableau de bord au-dessus
-            est vert-nuit (29,47,33). Deux fonds différents à l'œil. */}
-        <IslamicPattern opacity={0.022} />
-
-        {/* 🧹 15 août — CE QUI A ÉTÉ RETIRÉ D'ICI, ET POURQUOI.
-            Mohamed, capture à l'appui : « les 2 pages n'ont pas fusionné,
-            c'est tout entassé ». Il avait raison : mettre le tableau de bord
-            devant sans rien enlever derrière ne fusionne rien, ça empile.
-            Quatre blocs de ce hero répétaient mot pour mot ce que le
-            tableau de bord ou la barre du bas donnaient déjà :
-              · le sur-titre « 354 destinations » — le lien vers les 354
-                destinations vit maintenant dans sa propre section ;
-              · le sous-titre de trois lignes — il redisait le titre ;
-              · « Découvrir les spots » — déjà dans le tableau de bord ET
-                dans la barre du bas (onglet Spots) ;
-              · « Ajouter un spot » — déjà le bouton ➕ central de la barre
-                du bas, celui qu'on ne peut pas manquer.
-            Les cartes de destinations ne sont PAS supprimées : elles
-            descendent dans une section à elles, avec un titre. Il ne reste
-            ici qu'une chose, celle que ce bandeau est seul à savoir faire :
-            chercher une ville. */}
-        <div className="relative z-10 max-w-3xl mx-auto w-full">
-          <h1
-            className="text-xl sm:text-2xl lg:text-3xl text-white leading-[1.12] mb-3"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 900 }}
-          >
-            {t.heroTitlePre}<span className="gold-em">{t.heroTitleGold}</span>{t.heroTitlePost}
-          </h1>
-
-          <div style={{ maxWidth: 560, margin: '0 auto', width: '100%' }}>
+        recherche={
+          <div style={{ textAlign: 'center' }}>
+            <h1
+              className="text-xl sm:text-2xl text-white leading-[1.12] mb-2"
+              style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 900 }}
+            >
+              {t.heroTitlePre}<span className="gold-em">{t.heroTitleGold}</span>{t.heroTitlePost}
+            </h1>
             <div style={{ background: 'rgba(255,255,255,0.1)', border: '1.5px solid rgba(201,168,76,0.45)', borderRadius: 16, padding: 4 }}>
               <SearchBarHome />
             </div>
           </div>
-        </div>
-      </section>
+        }
+      />
 
       {/* 💎 Le cœur : derniers spots partagés + spots près de toi
           (le Radar Prière vit désormais dans le Board voyageur ci-dessus) */}
