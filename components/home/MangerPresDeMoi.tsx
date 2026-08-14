@@ -12,11 +12,18 @@ import { useRef, useState } from 'react'
 // (« signalé halal sur Google Maps — à confirmer sur place », « partagé
 // par un voyageur »…) — le widget ne reformule jamais un statut.
 //
-// CONDITIONS DÉGRADÉES, dans l'ordre où elles peuvent frapper :
-//   · pas de GPS → position approximative de l'IP (passée par le serveur) ;
-//   · ni GPS ni IP → on le dit, on n'affiche pas un écran qui tourne ;
-//   · l'IA muette → la liste des lieux reste, la prose est un bonus ;
-//   · zéro résultat → on le dit tel quel, on n'invente pas une adresse.
+// 📍 LA POSITION, corrigée le 15 août après le test de Mohamed : le widget
+// le croyait « à Montréal » alors qu'il est en France. Deux causes :
+//   · on n'attendait la géolocalisation que 5 s — le temps que la fenêtre
+//     d'autorisation s'affiche et qu'on la lise, le délai expirait et on
+//     retombait sur l'adresse IP (qui peut se tromper de continent) ;
+//   · on ne DISAIT pas quelle position servait la recherche.
+// Désormais : 20 s pour répondre à la fenêtre, et si la recherche a dû
+// se faire à l'IP, le widget l'écrit (« position approximative : X ») et
+// propose « 🎯 Ma position exacte » qui relance avec le GPS.
+//
+// CONDITIONS DÉGRADÉES : ni GPS ni IP → on le dit ; l'IA muette → la
+// liste reste ; zéro résultat → on le dit, on n'invente pas une adresse.
 
 interface Lieu {
   nom: string; distanceM: number; note?: number; ouvert?: boolean
@@ -28,34 +35,39 @@ const RACCOURCIS = ['Pizza', 'Kebab', 'Burger', 'Restaurant']
 
 const fmtDist = (m: number) => (m >= 2000 ? `${(m / 1000).toFixed(1)} km` : `${Math.max(1, Math.round(m / 80))} min à pied`)
 
-export default function MangerPresDeMoi({ posInitiale }: { posInitiale: { lat: number; lng: number } | null }) {
+export default function MangerPresDeMoi({ posInitiale }: { posInitiale: { lat: number; lng: number; ville?: string | null } | null }) {
   const [texte, setTexte] = useState('')
   const [etat, setEtat] = useState<'repos' | 'cherche' | 'fini' | 'sans-position'>('repos')
   const [lieux, setLieux] = useState<Lieu[]>([])
   const [source, setSource] = useState('')
+  const [posUtilisee, setPosUtilisee] = useState<'gps' | 'ip' | null>(null)
   const [prose, setProse] = useState('')
   const enCours = useRef(false)
+  const derniereRequete = useRef('')
 
-  async function position(): Promise<{ lat: number; lng: number } | null> {
-    const gps = await new Promise<{ lat: number; lng: number } | null>((res) => {
+  function gps(delaiMs: number): Promise<{ lat: number; lng: number } | null> {
+    return new Promise((res) => {
       if (!navigator.geolocation) return res(null)
-      const t = setTimeout(() => res(null), 5000)
+      const t = setTimeout(() => res(null), delaiMs)
       navigator.geolocation.getCurrentPosition(
         (p) => { clearTimeout(t); res({ lat: p.coords.latitude, lng: p.coords.longitude }) },
         () => { clearTimeout(t); res(null) },
-        { timeout: 4500, maximumAge: 120_000 },
+        { timeout: delaiMs - 500, maximumAge: 60_000 },
       )
     })
-    return gps ?? posInitiale
   }
 
-  async function chercher(requete: string) {
+  async function chercher(requete: string, forcerGPS = false) {
     if (enCours.current) return
     enCours.current = true
+    derniereRequete.current = requete
     setProse(''); setLieux([]); setEtat('cherche')
     try {
-      const pos = await position()
+      // 20 s : le temps de LIRE la fenêtre d'autorisation et d'y répondre.
+      const exacte = await gps(forcerGPS ? 25_000 : 20_000)
+      const pos = exacte ?? posInitiale
       if (!pos) { setEtat('sans-position'); return }
+      setPosUtilisee(exacte ? 'gps' : 'ip')
       const ac = new AbortController()
       const t = setTimeout(() => ac.abort(), 15_000)
       let corps: { lieux?: Lieu[]; source?: string } = {}
@@ -110,7 +122,7 @@ export default function MangerPresDeMoi({ posInitiale }: { posInitiale: { lat: n
           <input
             value={texte} onChange={(e) => setTexte(e.target.value)}
             placeholder="Je veux une pizza…"
-            style={{ flex: 1, minHeight: 48, borderRadius: 12, border: '1px solid rgba(253,250,243,0.25)', background: 'rgba(255,255,255,0.07)', color: '#fdfaf3', padding: '0 14px', fontSize: 16 }}
+            style={{ flex: 1, minWidth: 0, minHeight: 48, borderRadius: 12, border: '1px solid rgba(253,250,243,0.25)', background: 'rgba(255,255,255,0.07)', color: '#fdfaf3', padding: '0 14px', fontSize: 16 }}
           />
           <button type="submit" disabled={etat === 'cherche'}
             style={{ minHeight: 48, padding: '0 18px', borderRadius: 12, border: 'none', background: 'var(--or)', color: 'var(--nuit)', fontWeight: 800, fontSize: 14.5, cursor: 'pointer', opacity: etat === 'cherche' ? 0.6 : 1 }}>
@@ -126,10 +138,26 @@ export default function MangerPresDeMoi({ posInitiale }: { posInitiale: { lat: n
           ))}
         </div>
 
+        {etat === 'cherche' && (
+          <p style={{ color: 'rgba(253,250,243,0.65)', fontSize: 13, marginTop: 12 }}>
+            Recherche autour de toi… (si le navigateur demande ta position, accepte pour des résultats exacts)
+          </p>
+        )}
         {etat === 'sans-position' && (
           <p style={{ color: 'rgba(253,250,243,0.75)', fontSize: 13.5, marginTop: 12, lineHeight: 1.5 }}>
             Impossible de connaître ta position (GPS refusé et adresse IP muette) — autorise la position ou cherche ta ville dans la barre plus haut.
           </p>
+        )}
+        {etat === 'fini' && posUtilisee === 'ip' && (
+          <div style={{ display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap', marginTop: 12 }}>
+            <p style={{ color: 'rgba(253,250,243,0.7)', fontSize: 12.5, margin: 0 }}>
+              📍 Position approximative{posInitiale?.ville ? ` : ${posInitiale.ville}` : ''} (adresse IP) — elle peut se tromper.
+            </p>
+            <button onClick={() => chercher(derniereRequete.current, true)}
+              style={{ minHeight: 44, padding: '0 13px', borderRadius: 999, border: '1.5px solid rgba(201,168,76,0.55)', background: 'transparent', color: 'var(--or)', fontWeight: 800, fontSize: 12.5, cursor: 'pointer' }}>
+              🎯 Ma position exacte
+            </button>
+          </div>
         )}
         {etat === 'fini' && lieux.length === 0 && (
           <p style={{ color: 'rgba(253,250,243,0.75)', fontSize: 13.5, marginTop: 12, lineHeight: 1.5 }}>

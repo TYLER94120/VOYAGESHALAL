@@ -199,10 +199,19 @@ export async function POST(req: Request) {
   const spots = await nosSpots(lat, lng, requete)
   let lieux: Lieu[] = [...spots]
   let source: 'google' | 'osm' | 'spots-seulement' = 'spots-seulement'
+  // Trace pour vérifier EN PRODUCTION quelle branche a réellement parlé —
+  // le 15 août, le widget en ligne servait le repli et personne ne pouvait
+  // dire pourquoi sans ce champ.
+  let etatGoogle: 'ok' | 'vide' | 'muet' | 'sans-cle' = cleGoogle ? 'muet' : 'sans-cle'
 
   if (cleGoogle) {
     const dePlaces = await viaPlaces(lat, lng, requete, cleGoogle)
-    if (dePlaces !== null) {
+    // ⚠️ CORRIGÉ le 15 août : « Google a répondu zéro lieu » déclarait
+    // quand même source google et court-circuitait OpenStreetMap — le
+    // visiteur recevait « aucune adresse trouvée » alors qu'OSM en avait.
+    // Google ne devient LA source que s'il apporte au moins un lieu.
+    if (dePlaces !== null) etatGoogle = dePlaces.length ? 'ok' : 'vide'
+    if (dePlaces?.length) {
       source = 'google'
       lieux = [...spots, ...dePlaces.filter((g) => !spots.some((s) => distM(s.lat, s.lng, g.lat, g.lng) < 60))].slice(0, 6)
     }
@@ -222,9 +231,9 @@ export async function POST(req: Request) {
       await r.incr(lieux.length ? 'lieux:avec' : 'lieux:vides')
     } catch { /* compter ne doit jamais casser la réponse */ }
     if (source === 'google') {
-      try { await r.set(`lieux:cache:${zone}`, { lieux, source }, { ex: CACHE_S }) } catch { /* idem */ }
+      try { await r.set(`lieux:cache:${zone}`, { lieux, source, etatGoogle }, { ex: CACHE_S }) } catch { /* idem */ }
     }
   }
 
-  return NextResponse.json({ lieux, source })
+  return NextResponse.json({ lieux, source, etatGoogle })
 }
