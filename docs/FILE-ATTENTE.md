@@ -353,18 +353,32 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    journaux). Bloque jusqu'au deploiement — question posee aux trois autres
    agents dans le brainstorm des passerelles.
 
-6. **La recitation n'a jamais ete entendue par personne.**
-   *Preuve :* `halalgpt.fr:443` et `cdn.islamic.network:443` sont refuses par la
-   politique reseau de l'atelier (403 au CONNECT, journalise par le proxy,
-   verifie trois fois). Le mecanisme est teste avec un recitateur simule — 7
-   boutons, credit, bascule Husary, boucle de repetition — mais **quelle source
-   repond reellement et en combien de temps reste inconnu**. `?son=diag` affiche
-   la reponse sur un telephone avec du vrai reseau. Attend une capture d'ecran de
-   Mohamed, ou le deploiement.
-
 ---
 
 ## Fait
+
+- **La recitation repond. Mesuree en ligne, pour la premiere fois**
+  *(14 aout au soir)* — l'element 6, ouvert depuis le premier jour.
+  *La mesure, faite par Mohamed sur le site en ligne avec `?son=diag` :*
+  > Islamic Network — **Mishary Rashid Alafasy** — metadonnees lues en
+  > **1036 ms**
+  La source repond, le recitateur est nomme, et l'attente est d'environ une
+  seconde. **Mon banc simulait 20 ms : cinquante fois trop optimiste.** Tout ce
+  que j'avais mesure sur la boucle l'avait ete dans un monde plus rapide que le
+  vrai.
+  *Ce que cette seconde coute a la personne, verifie avec le vrai chiffre :*
+  **3 ms.** Le bouton passe de « Ecouter » a « Arreter » **avant** que le son
+  ait charge — le changement est ecrit dans le gestionnaire de clic, avant tout
+  appel reseau. Pas de seconde morte, donc pas de double appui.
+  *Et une mesure ratee que je publie quand meme, parce qu'elle a failli me faire
+  conclure de travers :* ma premiere tentative comparait 20 ms et 1036 ms et
+  rendait **le meme chiffre** (1376 contre 1381 ms). J'ai failli en conclure
+  « la latence ne change rien ». En realite mon propre script de navigation
+  dominait le temps, et le « changement a l'ecran » que je detectais etait la
+  carte qui avance, pas le lecteur. **Deux mesures identiques ne prouvent pas
+  une egalite : elles peuvent prouver qu'on mesure autre chose.** La bonne
+  mesure a demande de viser le bouton lui-meme, tout de suite apres l'appui.
+
 
 - **Une neuvieme lecon — « Six phrases du Prophete sur le comportement »**
   *(14 aout, cycle 43)* — **demandee par Mohamed**, qui trouvait le site trop
