@@ -149,6 +149,79 @@ texte, la meme source.
 
 ---
 
+---
+
+# Par niveau — ce que le site fait deja, et ce qu'il fait semblant de faire
+
+Demande de Mohamed le 14 aout : *« un enfant n'est pas un adulte, une personne
+qui connait 50 sourates est differente d'une personne qui n'en connait
+aucune »*. Il a raison. Voici ce que le site fait **reellement** aujourd'hui,
+mesure et non suppose.
+
+## La mesure : cinq personnes, cinq profils, le meme site
+
+| la personne | profil calcule | premiere lecon proposee |
+|---|---|---|
+| debutant complet | `debutant` | Les six piliers de la foi |
+| prie parfois, Al-Fatiha incertaine | `intermediaire` | Al-Fatiha |
+| prie les cinq, quelques sourates | `intermediaire` | Trois invocations du matin |
+| prie les cinq, **plus de dix sourates** | `avance` | Trois invocations du matin |
+| ne repond pas aux questions | `inconnu` | Al-Fatiha |
+
+**Cinq profils, trois ordres distincts, trois premieres lecons distinctes.**
+Le niveau n'est donc pas decoratif : il change bien quelque chose.
+
+**Mais voici ce qu'il ne change pas, et c'est le point.**
+
+1. **Tout le monde recoit les memes neuf lecons.** Le niveau change **l'ordre**,
+   jamais le **contenu**. Personne ne recoit une lecon que les autres n'ont pas,
+   personne n'en saute une.
+2. **Deux profils sur cinq recoivent exactement la meme chose.** « prie les
+   cinq, quelques sourates » et « plus de dix sourates par coeur » ont **le meme
+   ordre, lecon pour lecon**. La troisieme question — *combien de sourates
+   connais-tu par coeur* — ne deplace **aucune** lecon aujourd'hui. Elle ne
+   change qu'**une phrase de bilan**.
+3. Donc : on demande a quelqu'un qui connait cinquante sourates ou il en est, et
+   on lui sert ensuite le meme parcours qu'a un debutant, dans un ordre a peine
+   different. **C'est une promesse a moitie tenue**, et c'est mesurable.
+
+## Ce qu'il faudrait vraiment, et ce que ca coute
+
+**Pour le niveau avance — il manque du contenu, pas du code.** Quelqu'un qui
+connait cinquante sourates n'a presque rien a apprendre dans les neuf lecons
+actuelles, sauf peut-etre lire l'arabe. Le site est **un site de debutants** :
+neuf lecons de debutant. Aucun reglage ne fera apparaitre ce qui n'est pas
+ecrit. Ce qui lui servirait vraiment — le sens verset par verset de sourates
+qu'il recite deja, le vocabulaire coranique, la memorisation methodique — **est
+du contenu, et le contenu n'accelere jamais.**
+
+**Pour l'enfant — ce n'est pas un reglage, c'est un deuxieme site.** Un enfant
+n'est pas un adulte en plus petit : le vocabulaire change, la longueur des
+phrases change, les exemples changent, le registre change. Un bouton « mode
+enfant » qui servirait les memes textes serait un mensonge d'interface. Ecrire
+une version enfant, c'est **reecrire les neuf lecons**. Je le pose ici pour que
+ce soit dit clairement, et je ne le commence pas sans decision explicite :
+c'est doubler le site, pas ajouter une option.
+
+*Ce qui est cheap et honnete, en revanche : des cartes plus courtes.* Mais il
+faut appeler ca **de la brievete**, pas de l'enfance.
+
+## Ce que je recommande, dans l'ordre
+
+1. **Faire servir la troisieme question a quelque chose, ou la retirer.**
+   Aujourd'hui elle ne deplace aucune lecon. Une question posee pour rien est un
+   appui de trop — et on vient d'en supprimer un pour cette raison exacte.
+2. **Dire la verite au profil avance.** Le message le fait deja a moitie
+   (« il n'y a que N lecons ici aujourd'hui »). Il pourrait aller plus loin :
+   proposer d'emblee les lecons d'arabe, les seules qui lui apprennent quelque
+   chose, et dire franchement que le reste viendra.
+3. **Les formes avant les niveaux.** Un QCM tire de ce qu'on sait deja sert
+   *toutes* les personnes ci-dessus sans ecrire une ligne de contenu. Un niveau
+   avance demande d'ecrire des lecons avancees. **A cout egal, la forme rapporte
+   plus que le niveau** — c'est le meme constat que plus haut, mesure deux fois.
+
+---
+
 ## Une idee que je pose et que je ne recommande pas encore
 
 **Le mode a deux.** Une page tenue entre deux personnes : l'un lit la question a

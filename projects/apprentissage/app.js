@@ -982,17 +982,42 @@ function ippRendreAccueil(racine) {
   //
   // Les questions restent proposees, jamais perdues : « Mon chemin » porte le
   // bouton « Repondre aux 3 questions ».
+  // LES TROIS QUESTIONS NE BARRENT PLUS L'ENTREE  (14 aout, sur decision de
+  // Mohamed apres avoir ouvert le site sur son telephone).
+  //
+  // Elles s'affichaient AVANT tout le reste. Mesure faite ce jour-la, sur un
+  // telephone de 414 x 690 et une memoire vide : il fallait **cinq appuis**
+  // pour apprendre le premier mot, et lire 115 mots avant meme la premiere
+  // question. Un peage paye avant d'avoir rien recu — et la premiere chose
+  // demandee a un inconnu etait ou il en est avec la priere.
+  //
+  // Desormais : la carte du jour d'abord, jouable tout de suite. Les questions
+  // se proposent SOUS la carte, et depuis « Mon chemin ». Elles ne sont pas
+  // perdues, elles ne sont plus un passage oblige.
+  //
+  // Ce que ca coute, et il faut le dire : sans reponse, tout le monde commence
+  // par Al-Fatiha. C'etait deja le cas de qui touchait « Passer », et pour un
+  // debutant comme pour un pratiquant, c'est un bon premier pas — c'est la
+  // sourate de chaque priere.
   var dejaVenu = IPP.jours().length > 0;
-  if (!IPP.niveau() && !dejaVenu && q('diag')) {
-    if (corps) { corps.hidden = true; }
-    ippDemarrerDiagnostic(racine, function () {
-      if (corps) { corps.hidden = false; }
-      ippRendreAccueil(racine);
-    });
-    return;
-  }
   if (corps) { corps.hidden = false; }
   if (q('diag')) { q('diag').hidden = true; }
+
+  var ouvrir = q('diag-ouvrir');
+  if (ouvrir) {
+    var aRepondu = !!IPP.niveau();
+    ouvrir.hidden = aRepondu || !q('diag');
+    if (!ouvrir.hidden && !ouvrir.getAttribute('data-branche')) {
+      ouvrir.setAttribute('data-branche', '1');
+      ouvrir.addEventListener('click', function () {
+        if (corps) { corps.hidden = true; }
+        ippDemarrerDiagnostic(racine, function () {
+          if (corps) { corps.hidden = false; }
+          ippRendreAccueil(racine);
+        });
+      });
+    }
+  }
 
   // --- le jour ou le site n'a rien a proposer ---
   // Il faut l'enregistrer AVANT de dessiner l'anneau et la serie, sinon
@@ -2373,7 +2398,18 @@ function ippDemarrerDiagnostic(racine, quandFini) {
 
   q('diag-passer').addEventListener('click', function () { conclure(true); });
 
+  // « Commencer : Les six piliers de la foi » DOIT commencer cette lecon.
+  // Avant le 14 aout, ce bouton se contentait de reveler la carte du jour, qui
+  // portait un SECOND bouton « Commencer → » : deux « Commencer » d'affilee, et
+  // le premier mentait un peu. L'appui de trop a ete trouve en chronometrant,
+  // pas en relisant le code.
   q('diag-go').addEventListener('click', function () {
+    var suite = IPP.leconDuJour();
+    if (suite && suite.lecon && suite.lecon.url) {
+      window.location.href = suite.lecon.url;
+      return;
+    }
+    // Rien a proposer aujourd'hui : le bouton dit « Voir mon chemin », il y va.
     zone.hidden = true;
     if (typeof quandFini === 'function') { quandFini(); }
   });
