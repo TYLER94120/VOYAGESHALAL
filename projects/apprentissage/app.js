@@ -174,6 +174,286 @@
       publiee: true,
       resume: 'Six hadiths qui tiennent chacun en une phrase, tous dans Sahih '
             + 'al-Boukhari, avec leur numero. Prends-en une seule pour aujourd\'hui.'
+    },
+    {
+      id: 'sourate-al-ikhlas',
+      titre: 'Sourate Al-Ikhlas, verset par verset',
+      url: 'lecon-sourate-al-ikhlas.html',
+      parcours: 'sourates',
+      minutes: 5,
+      cartes: 9,
+      acquis: 4,
+      unite: 'verset de Al-Ikhlas',
+      unites: 'versets de Al-Ikhlas',
+      publiee: true,
+      resume: 'La 112e sourate du Coran, quatre versets. Le texte arabe, le sens de '
+            + 'chaque verset, et la reference a chaque fois.'
+    },
+    {
+      id: 'sourate-al-falaq',
+      titre: 'Sourate Al-Falaq, verset par verset',
+      url: 'lecon-sourate-al-falaq.html',
+      parcours: 'sourates',
+      minutes: 5,
+      cartes: 10,
+      acquis: 5,
+      unite: 'verset de Al-Falaq',
+      unites: 'versets de Al-Falaq',
+      publiee: true,
+      resume: 'La 113e sourate du Coran, cinq versets. Le texte arabe, le sens de '
+            + 'chaque verset, et la reference a chaque fois.'
+    },
+    {
+      id: 'sourate-an-nas',
+      titre: 'Sourate An-Nas, verset par verset',
+      url: 'lecon-sourate-an-nas.html',
+      parcours: 'sourates',
+      minutes: 5,
+      cartes: 11,
+      acquis: 6,
+      unite: 'verset de An-Nas',
+      unites: 'versets de An-Nas',
+      publiee: true,
+      resume: 'La 114e sourate du Coran, six versets. Le texte arabe, le sens de '
+            + 'chaque verset, et la reference a chaque fois.'
+    },
+    {
+      id: 'sourate-al-kawthar',
+      titre: 'Sourate Al-Kawthar, verset par verset',
+      url: 'lecon-sourate-al-kawthar.html',
+      parcours: 'sourates',
+      minutes: 4,
+      cartes: 7,
+      acquis: 3,
+      unite: 'verset de Al-Kawthar',
+      unites: 'versets de Al-Kawthar',
+      publiee: true,
+      resume: 'La 108e sourate du Coran, trois versets. Le texte arabe, le sens de '
+            + 'chaque verset, et la reference a chaque fois.'
+    },
+    {
+      id: 'sourate-al-asr',
+      titre: 'Sourate Al-Asr, verset par verset',
+      url: 'lecon-sourate-al-asr.html',
+      parcours: 'sourates',
+      minutes: 4,
+      cartes: 7,
+      acquis: 3,
+      unite: 'verset de Al-Asr',
+      unites: 'versets de Al-Asr',
+      publiee: true,
+      resume: 'La 103e sourate du Coran, trois versets. Le texte arabe, le sens de '
+            + 'chaque verset, et la reference a chaque fois.'
+    },
+    {
+      id: 'sourate-an-nasr',
+      titre: 'Sourate An-Nasr, verset par verset',
+      url: 'lecon-sourate-an-nasr.html',
+      parcours: 'sourates',
+      minutes: 4,
+      cartes: 7,
+      acquis: 3,
+      unite: 'verset de An-Nasr',
+      unites: 'versets de An-Nasr',
+      publiee: true,
+      resume: 'La 110e sourate du Coran, trois versets. Le texte arabe, le sens de '
+            + 'chaque verset, et la reference a chaque fois.'
+    },
+    {
+      id: 'sourate-al-ma-un',
+      titre: 'Sourate Al-Ma\'un, verset par verset',
+      url: 'lecon-sourate-al-ma-un.html',
+      parcours: 'sourates',
+      minutes: 6,
+      cartes: 12,
+      acquis: 7,
+      unite: 'verset de Al-Ma\'un',
+      unites: 'versets de Al-Ma\'un',
+      publiee: true,
+      resume: 'La 107e sourate du Coran, sept versets. Le texte arabe, le sens de '
+            + 'chaque verset, et la reference a chaque fois.'
+    },
+    {
+      id: 'sourate-al-kafirun',
+      titre: 'Sourate Al-Kafirun, verset par verset',
+      url: 'lecon-sourate-al-kafirun.html',
+      parcours: 'sourates',
+      minutes: 5,
+      cartes: 11,
+      acquis: 6,
+      unite: 'verset de Al-Kafirun',
+      unites: 'versets de Al-Kafirun',
+      publiee: true,
+      resume: 'La 109e sourate du Coran, six versets. Le texte arabe, le sens de '
+            + 'chaque verset, et la reference a chaque fois.'
+    },
+    {
+      id: 'sourate-quraysh',
+      titre: 'Sourate Quraysh, verset par verset',
+      url: 'lecon-sourate-quraysh.html',
+      parcours: 'sourates',
+      minutes: 5,
+      cartes: 9,
+      acquis: 4,
+      unite: 'verset de Quraysh',
+      unites: 'versets de Quraysh',
+      publiee: true,
+      resume: 'La 106e sourate du Coran, quatre versets. Le texte arabe, le sens de '
+            + 'chaque verset, et la reference a chaque fois.'
+    },
+    {
+      id: 'sourate-al-fil',
+      titre: 'Sourate Al-Fil, verset par verset',
+      url: 'lecon-sourate-al-fil.html',
+      parcours: 'sourates',
+      minutes: 5,
+      cartes: 10,
+      acquis: 5,
+      unite: 'verset de Al-Fil',
+      unites: 'versets de Al-Fil',
+      publiee: true,
+      resume: 'La 105e sourate du Coran, cinq versets. Le texte arabe, le sens de '
+            + 'chaque verset, et la reference a chaque fois.'
+    },
+    {
+      id: 'sourate-al-masad',
+      titre: 'Sourate Al-Masad, verset par verset',
+      url: 'lecon-sourate-al-masad.html',
+      parcours: 'sourates',
+      minutes: 5,
+      cartes: 10,
+      acquis: 5,
+      unite: 'verset de Al-Masad',
+      unites: 'versets de Al-Masad',
+      publiee: true,
+      resume: 'La 111e sourate du Coran, cinq versets. Le texte arabe, le sens de '
+            + 'chaque verset, et la reference a chaque fois.'
+    },
+    {
+      id: 'sourate-al-humaza',
+      titre: 'Sourate Al-Humaza, verset par verset',
+      url: 'lecon-sourate-al-humaza.html',
+      parcours: 'sourates',
+      minutes: 7,
+      cartes: 14,
+      acquis: 9,
+      unite: 'verset de Al-Humaza',
+      unites: 'versets de Al-Humaza',
+      publiee: true,
+      resume: 'La 104e sourate du Coran, neuf versets. Le texte arabe, le sens de '
+            + 'chaque verset, et la reference a chaque fois.'
+    },
+    {
+      id: 'sourate-at-takathur',
+      titre: 'Sourate At-Takathur, verset par verset',
+      url: 'lecon-sourate-at-takathur.html',
+      parcours: 'sourates',
+      minutes: 6,
+      cartes: 13,
+      acquis: 8,
+      unite: 'verset de At-Takathur',
+      unites: 'versets de At-Takathur',
+      publiee: true,
+      resume: 'La 102e sourate du Coran, huit versets. Le texte arabe, le sens de '
+            + 'chaque verset, et la reference a chaque fois.'
+    },
+    {
+      id: 'sourate-al-qari-a',
+      titre: 'Sourate Al-Qari\'a, verset par verset',
+      url: 'lecon-sourate-al-qari-a.html',
+      parcours: 'sourates',
+      minutes: 8,
+      cartes: 16,
+      acquis: 11,
+      unite: 'verset de Al-Qari\'a',
+      unites: 'versets de Al-Qari\'a',
+      publiee: true,
+      resume: 'La 101e sourate du Coran, onze versets. Le texte arabe, le sens de '
+            + 'chaque verset, et la reference a chaque fois.'
+    },
+    {
+      id: 'sourate-al-adiyat',
+      titre: 'Sourate Al-Adiyat, verset par verset',
+      url: 'lecon-sourate-al-adiyat.html',
+      parcours: 'sourates',
+      minutes: 8,
+      cartes: 16,
+      acquis: 11,
+      unite: 'verset de Al-Adiyat',
+      unites: 'versets de Al-Adiyat',
+      publiee: true,
+      resume: 'La 100e sourate du Coran, onze versets. Le texte arabe, le sens de '
+            + 'chaque verset, et la reference a chaque fois.'
+    },
+    {
+      id: 'sourate-az-zalzala',
+      titre: 'Sourate Az-Zalzala, verset par verset',
+      url: 'lecon-sourate-az-zalzala.html',
+      parcours: 'sourates',
+      minutes: 6,
+      cartes: 13,
+      acquis: 8,
+      unite: 'verset de Az-Zalzala',
+      unites: 'versets de Az-Zalzala',
+      publiee: true,
+      resume: 'La 99e sourate du Coran, huit versets. Le texte arabe, le sens de '
+            + 'chaque verset, et la reference a chaque fois.'
+    },
+    {
+      id: 'sourate-al-qadr',
+      titre: 'Sourate Al-Qadr, verset par verset',
+      url: 'lecon-sourate-al-qadr.html',
+      parcours: 'sourates',
+      minutes: 5,
+      cartes: 10,
+      acquis: 5,
+      unite: 'verset de Al-Qadr',
+      unites: 'versets de Al-Qadr',
+      publiee: true,
+      resume: 'La 97e sourate du Coran, cinq versets. Le texte arabe, le sens de '
+            + 'chaque verset, et la reference a chaque fois.'
+    },
+    {
+      id: 'sourate-at-tin',
+      titre: 'Sourate At-Tin, verset par verset',
+      url: 'lecon-sourate-at-tin.html',
+      parcours: 'sourates',
+      minutes: 6,
+      cartes: 13,
+      acquis: 8,
+      unite: 'verset de At-Tin',
+      unites: 'versets de At-Tin',
+      publiee: true,
+      resume: 'La 95e sourate du Coran, huit versets. Le texte arabe, le sens de '
+            + 'chaque verset, et la reference a chaque fois.'
+    },
+    {
+      id: 'sourate-ash-sharh',
+      titre: 'Sourate Ash-Sharh, verset par verset',
+      url: 'lecon-sourate-ash-sharh.html',
+      parcours: 'sourates',
+      minutes: 6,
+      cartes: 13,
+      acquis: 8,
+      unite: 'verset de Ash-Sharh',
+      unites: 'versets de Ash-Sharh',
+      publiee: true,
+      resume: 'La 94e sourate du Coran, huit versets. Le texte arabe, le sens de '
+            + 'chaque verset, et la reference a chaque fois.'
+    },
+    {
+      id: 'sourate-ad-duha',
+      titre: 'Sourate Ad-Duha, verset par verset',
+      url: 'lecon-sourate-ad-duha.html',
+      parcours: 'sourates',
+      minutes: 8,
+      cartes: 16,
+      acquis: 11,
+      unite: 'verset de Ad-Duha',
+      unites: 'versets de Ad-Duha',
+      publiee: true,
+      resume: 'La 93e sourate du Coran, onze versets. Le texte arabe, le sens de '
+            + 'chaque verset, et la reference a chaque fois.'
     }
   ];
 
@@ -2415,4 +2695,187 @@ function ippDemarrerDiagnostic(racine, quandFini) {
   });
 
   afficher();
+}
+
+/* ------------------------------------------------------------------------
+   LE QCM — dix questions tirees des lecons, et rien d'autre
+
+   Les questions existaient deja : trois par lecon, ecrites, relues, sourcees,
+   et ENFERMEES — on ne pouvait en rencontrer une qu'en refaisant la lecon
+   entiere. `questions.js` les rassemble (genere par outils/faire-questions.py,
+   jamais ecrit a la main). Ici, on ne fait que les rejouer.
+
+   LA REGLE QUI NE BOUGE PAS : un score est un COMPTEUR, pas un jugement.
+   Pas de « rate », pas de pourcentage, pas de rouge. On dit ce qui est
+   retrouve, et on dit que le reste reviendra — c'est tout ce qu'un compteur
+   a le droit de dire sur un sujet religieux.
+
+   D'abord les lecons deja faites : interroger quelqu'un sur ce qu'il n'a
+   jamais lu, ce n'est pas une revision, c'est un piege.
+   ------------------------------------------------------------------------ */
+
+var IPP_QUIZ_PAR_TOUR = 10;
+
+function ippDemarrerQuiz(racine) {
+  'use strict';
+  var q = ippViseur(racine);
+  var banque = (typeof IPP_QUESTIONS !== 'undefined' && IPP_QUESTIONS) ? IPP_QUESTIONS : [];
+  if (!q('quiz-carte') || !banque.length) { return; }
+
+  var intro = q('quiz-intro');
+  var carte = q('quiz-carte');
+  var bas = q('quiz-bas');
+  var fin = q('quiz-fin');
+  var sansjs = q('quiz-sansjs');
+  if (sansjs) { sansjs.hidden = true; }
+
+  var tirage = [], pos = 0, justes = 0, manquees = [];
+
+  function melanger(l) {
+    var a = l.slice();
+    for (var i = a.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var t = a[i]; a[i] = a[j]; a[j] = t;
+    }
+    return a;
+  }
+
+  /* Les questions des lecons faites d'abord, les autres ensuite. Si rien n'a
+     ete fait, tout le site est eligible : la page ne reste jamais vide. */
+  function tirer() {
+    var faites = [], reste = [];
+    for (var i = 0; i < banque.length; i++) {
+      var f = false;
+      try { f = IPP.estFaite(banque[i].lecon); } catch (e) { f = false; }
+      (f ? faites : reste).push(banque[i]);
+    }
+    var l = melanger(faites).concat(melanger(reste));
+    return l.slice(0, Math.min(IPP_QUIZ_PAR_TOUR, l.length));
+  }
+
+  function afficher() {
+    var item = tirage[pos];
+    q('quiz-rang').textContent = 'Question ' + (pos + 1) + ' sur ' + tirage.length;
+    q('quiz-titre').innerHTML = item.q;
+    var choix = q('quiz-choix');
+    choix.innerHTML = '';
+    var options = melanger([item.bonne].concat(item.autres));
+    for (var i = 0; i < options.length; i++) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'q-opt';
+      b.innerHTML = options[i];
+      b.setAttribute('data-val', options[i]);
+      choix.appendChild(b);
+    }
+    q('quiz-retour').hidden = true;
+    var src = q('quiz-source');
+    if (src) { src.hidden = true; }
+    bas.hidden = true;
+  }
+
+  function repondre(bouton) {
+    var item = tirage[pos];
+    var choisie = bouton.getAttribute('data-val');
+    var bonne = choisie === item.bonne;
+    if (bonne) { justes++; } else { manquees.push(item); }
+
+    var tous = q('quiz-choix').querySelectorAll('.q-opt');
+    for (var i = 0; i < tous.length; i++) {
+      tous[i].disabled = true;
+      if (tous[i].getAttribute('data-val') === item.bonne) {
+        tous[i].classList.add('juste');
+      } else if (tous[i] === bouton) {
+        tous[i].classList.add('faux');
+      }
+    }
+
+    var r = q('quiz-retour');
+    r.innerHTML = (bonne ? '' : 'La reponse etait&nbsp;: <strong>' + item.bonne + '</strong>. ')
+                + (item.quoi || '');
+    r.hidden = false;
+
+    var src = q('quiz-source');
+    if (src) {
+      src.href = item.url;
+      src.textContent = 'Revoir : ' + item.titreLecon;
+      src.hidden = false;
+    }
+
+    if (typeof ippSonner === 'function') { ippSonner(bonne ? 'bon' : 'presque'); }
+    bas.hidden = false;
+    q('quiz-suivant').textContent = (pos + 1 < tirage.length) ? 'Suivant' : 'Voir le total';
+    q('quiz-suivant').focus({ preventScroll: true });
+  }
+
+  function terminer() {
+    carte.hidden = true;
+    bas.hidden = true;
+    fin.hidden = false;
+    q('quiz-score').textContent = justes + ' sur ' + tirage.length;
+
+    /* Ce que le site a le droit de dire : ce qui est su, et ce qui revient.
+       Jamais un jugement, jamais un reproche, quel que soit le chiffre. */
+    var mot;
+    if (justes === tirage.length) {
+      mot = 'Tout est retrouve. Reviens demain, les questions changeront.';
+    } else if (justes === 0) {
+      mot = 'Ces questions viennent des lecons. Ouvre-en une, et elles '
+          + 'deviendront faciles — c\'est fait pour.';
+    } else {
+      mot = 'Tu as retrouve ' + justes + ' reponse' + (justes > 1 ? 's' : '')
+          + '. Les autres sont dans leurs lecons, elles reviendront.';
+    }
+    q('quiz-mot').textContent = mot;
+
+    var zone = q('quiz-revoir');
+    zone.innerHTML = '';
+    var vus = {};
+    for (var i = 0; i < manquees.length; i++) {
+      var m = manquees[i];
+      if (vus[m.lecon]) { continue; }
+      vus[m.lecon] = true;
+      var a = document.createElement('a');
+      a.className = 'lien-discret lien-bas';
+      a.href = m.url;
+      a.textContent = 'Revoir : ' + m.titreLecon;
+      zone.appendChild(a);
+    }
+  }
+
+  q('quiz-choix').addEventListener('click', function (e) {
+    var b = e.target.closest ? e.target.closest('.q-opt') : null;
+    if (!b || b.disabled) { return; }
+    repondre(b);
+  });
+
+  q('quiz-suivant').addEventListener('click', function () {
+    pos++;
+    if (pos >= tirage.length) { terminer(); return; }
+    afficher();
+    carte.setAttribute('tabindex', '-1');
+    carte.focus({ preventScroll: true });
+  });
+
+  function lancer() {
+    tirage = tirer();
+    pos = 0; justes = 0; manquees = [];
+    if (intro) { intro.hidden = true; }
+    fin.hidden = true;
+    carte.hidden = false;
+    afficher();
+  }
+
+  q('quiz-rejouer').addEventListener('click', lancer);
+
+  // Le bouton d'entree : il remplace « Voir les lecons » des que JS tourne.
+  var go = q('quiz-go');
+  if (go) {
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'btn';
+    b.textContent = 'Commencer les dix questions';
+    b.addEventListener('click', lancer);
+    go.parentNode.replaceChild(b, go);
+  }
 }
