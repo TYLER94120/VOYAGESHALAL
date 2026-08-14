@@ -3,10 +3,10 @@
 Pour Mohamed, **sur ordinateur**. Le site est **statique** : des fichiers, rien
 d'autre. Pas de base de donnees, pas de serveur a regler, aucune cle a saisir.
 
-## Ou on en est (mis a jour le 13/08)
+## Ou on en est (mis a jour le 14/08)
 
-- **7 lecons**, 87 cartes, 46 minutes de contenu, 84 choses a apprendre.
-  **19 fichiers, 424 Ko** — c'est tout le site.
+- **8 lecons**, 112 cartes, 52 minutes de contenu, 88 choses a apprendre.
+  **20 fichiers, 529 Ko** — c'est tout le site.
 - Le depot **`islampasapas` existe deja**, cree par Mohamed, **prive et vide**.
 - Le site vit aujourd'hui dans le depot `VOYAGESHALAL`, dossier
   `projects/apprentissage/`, sur la branche
@@ -112,15 +112,15 @@ le temps que le changement se propage sur internet, personne n'y peut rien.
 
 **Deja en place, rien a faire :**
 
-- `sitemap.xml` — **10 pages** : l'accueil, les 7 lecons, la page des parcours,
+- `sitemap.xml` — **11 pages** : l'accueil, les 8 lecons, la page des lecons,
   les 114 sourates. « Mon chemin » en est volontairement absent : c'est une page
   privee, elle porte une balise `noindex`.
-- **10 titres uniques et 10 descriptions uniques.** Aucun doublon — c'est ce qui
+- **11 titres uniques et 11 descriptions uniques.** Aucun doublon — c'est ce qui
   fait chuter un site dans les resultats.
 - Une **adresse canonique** et une image de partage sur chaque page indexable.
 - `robots.txt` bloque les deux apercus : publies, ils feraient du contenu
   duplique avec le site entier.
-- **Donnees structurees (JSON-LD)** sur les 9 pages indexables, generees depuis
+- **Donnees structurees (JSON-LD)** sur 10 des 11 pages indexables, generees depuis
   le catalogue par `outils/poser-json-ld.py`. Chaque lecon se declare comme une
   ressource d'apprentissage gratuite, en francais, avec ce qu'elle enseigne
   (« 7 versets d'Al-Fatiha ») et sa duree reelle. **On ne declare rien qu'on
