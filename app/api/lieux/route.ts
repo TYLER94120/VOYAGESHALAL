@@ -37,6 +37,44 @@ import { listAllSpots } from '@/lib/prayerSpots'
 // LA MESURE, SINON RIEN : compteurs Redis lieux:recherches, lieux:avec,
 // lieux:vides — un widget qu'on ne mesure pas n'existe pas.
 
+// 🗂️ TROIS CATÉGORIES, TROIS HONNÊTETÉS — Mohamed, 15 août : « il faut
+// faire la même chose pour activités, mosquées, etc. ». Même moteur,
+// mais chaque catégorie dit ce qu'elle SAIT et rien de plus :
+//   · manger   → requête Google « halal … », étiquette « signalé halal
+//     sur Google Maps — à confirmer sur place » ;
+//   · mosquee  → pas de mention halal (absurde ici) : « référencée sur
+//     Google Maps — horaires à vérifier » ; repli OSM = les mosquées du
+//     relais, spots vérifiés = nos coins prière ;
+//   · activite → on n'invente JAMAIS qu'une activité est « halal » :
+//     requête neutre, étiquette « trouvée sur Google Maps — à vérifier
+//     selon tes critères ». Pas de repli OSM (rien de fiable à offrir).
+export type Categorie = 'manger' | 'mosquee' | 'activite'
+const CATEGORIES: Record<Categorie, {
+  texteGoogle: (q: string) => string
+  statutGoogle: string
+  statutOSM: string
+  spotsCategories: string[]
+}> = {
+  manger: {
+    texteGoogle: (q) => `halal ${q || 'restaurant'}`,
+    statutGoogle: 'signalé halal sur Google Maps — à confirmer sur place',
+    statutOSM: 'signalé halal sur OpenStreetMap — à confirmer sur place',
+    spotsCategories: ['resto', 'boucherie'],
+  },
+  mosquee: {
+    texteGoogle: (q) => q ? `mosquée ${q}` : 'mosquée',
+    statutGoogle: 'référencée sur Google Maps — horaires à vérifier',
+    statutOSM: 'référencée sur OpenStreetMap — horaires à vérifier',
+    spotsCategories: ['coin_priere'],
+  },
+  activite: {
+    texteGoogle: (q) => q || 'choses à faire',
+    statutGoogle: 'trouvée sur Google Maps — à vérifier selon tes critères',
+    statutOSM: '',
+    spotsCategories: ['pepite', 'autre'],
+  },
+}
+
 export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
 
@@ -74,12 +112,12 @@ function distM(a: number, b: number, c: number, d: number) {
 }
 
 /** Nos spots vérifiés autour du point — TOUJOURS servis, toujours premiers. */
-async function nosSpots(lat: number, lng: number, requete: string): Promise<Lieu[]> {
+async function nosSpots(lat: number, lng: number, requete: string, cat: Categorie): Promise<Lieu[]> {
   try {
     const tous = await listAllSpots()
     const q = requete.trim().toLowerCase()
     return tous
-      .filter((s) => s.categorie === 'resto' || s.categorie === 'boucherie')
+      .filter((s) => CATEGORIES[cat].spotsCategories.includes(s.categorie ?? ''))
       .map((s) => ({ s, d: distM(lat, lng, s.lat, s.lng) }))
       .filter(({ s, d }) => d <= 8000 && (!q || `${s.nom} ${s.description ?? ''}`.toLowerCase().includes(q)))
       .sort((a, b) => a.d - b.d)
@@ -96,7 +134,7 @@ async function nosSpots(lat: number, lng: number, requete: string): Promise<Lieu
 }
 
 /** Google Places Text Search — seulement si la clé est posée. */
-async function viaPlaces(lat: number, lng: number, requete: string, cle: string): Promise<Lieu[] | null> {
+async function viaPlaces(lat: number, lng: number, requete: string, cle: string, cat: Categorie): Promise<Lieu[] | null> {
   const ac = new AbortController()
   const minuteur = setTimeout(() => ac.abort(), DELAI_PLACES)
   try {
@@ -109,7 +147,7 @@ async function viaPlaces(lat: number, lng: number, requete: string, cle: string)
         'X-Goog-FieldMask': 'places.displayName,places.location,places.rating,places.currentOpeningHours.openNow,places.formattedAddress',
       },
       body: JSON.stringify({
-        textQuery: `halal ${requete.trim() || 'restaurant'}`,
+        textQuery: CATEGORIES[cat].texteGoogle(requete.trim()),
         languageCode: 'fr',
         pageSize: 6,
         locationBias: { circle: { center: { latitude: lat, longitude: lng }, radius: 5000 } },
@@ -127,7 +165,7 @@ async function viaPlaces(lat: number, lng: number, requete: string, cle: string)
         note: p.rating,
         ouvert: p.currentOpeningHours?.openNow,
         adresse: p.formattedAddress,
-        statut: 'signalé halal sur Google Maps — à confirmer sur place',
+        statut: CATEGORIES[cat].statutGoogle,
         source: 'google' as const,
       }))
       .sort((a, b) => a.distanceM - b.distanceM)
@@ -136,18 +174,19 @@ async function viaPlaces(lat: number, lng: number, requete: string, cle: string)
 }
 
 /** Repli : notre relais OpenStreetMap (miroirs + cache déjà en place). */
-async function viaOSM(origin: string, lat: number, lng: number): Promise<Lieu[]> {
+async function viaOSM(origin: string, lat: number, lng: number, cat: Categorie): Promise<Lieu[]> {
+  if (cat === 'activite') return [] // rien de fiable à offrir — on le dit
   const ac = new AbortController()
   const minuteur = setTimeout(() => ac.abort(), DELAI_OSM)
   try {
     const r = await fetch(`${origin}/api/osm-restos?lat=${lat}&lng=${lng}`, { signal: ac.signal })
     if (!r.ok) return []
-    const j = await r.json() as { restos?: { nom: string; lat: number; lng: number; halal?: string }[] }
-    return (j.restos ?? [])
+    const j = await r.json() as { restos?: { nom: string; lat: number; lng: number }[]; mosquees?: { nom: string; lat: number; lng: number }[] }
+    return ((cat === 'mosquee' ? j.mosquees : j.restos) ?? [])
       .map((x) => ({
         nom: x.nom, lat: x.lat, lng: x.lng,
         distanceM: distM(lat, lng, x.lat, x.lng),
-        statut: 'signalé halal sur OpenStreetMap — à confirmer sur place',
+        statut: CATEGORIES[cat].statutOSM,
         source: 'osm' as const,
       }))
       .sort((a, b) => a.distanceM - b.distanceM)
@@ -156,10 +195,11 @@ async function viaOSM(origin: string, lat: number, lng: number): Promise<Lieu[]>
 }
 
 export async function POST(req: Request) {
-  let corps: { lat?: number; lng?: number; requete?: string }
+  let corps: { lat?: number; lng?: number; requete?: string; categorie?: string }
   try { corps = await req.json() } catch { return NextResponse.json({ erreur: 'corps invalide' }, { status: 400 }) }
   const lat = Number(corps.lat), lng = Number(corps.lng)
   const requete = String(corps.requete ?? '').slice(0, 60)
+  const cat: Categorie = corps.categorie === 'mosquee' || corps.categorie === 'activite' ? corps.categorie : 'manger'
   if (!Number.isFinite(lat) || !Number.isFinite(lng) || Math.abs(lat) > 90 || Math.abs(lng) > 180) {
     return NextResponse.json({ erreur: 'position invalide' }, { status: 400 })
   }
@@ -181,7 +221,7 @@ export async function POST(req: Request) {
   // Cache par zone (~1 km) + requête : la même recherche ne se paie pas
   // deux fois. On ne met en cache QUE les réponses Google : mettre le
   // repli en cache 24 h retarderait l'allumage quand la clé arrive.
-  const zone = `${lat.toFixed(2)},${lng.toFixed(2)}:${requete.trim().toLowerCase() || 'tout'}`
+  const zone = `${cat}:${lat.toFixed(2)},${lng.toFixed(2)}:${requete.trim().toLowerCase() || 'tout'}`
   if (r) {
     try {
       const enCache = await r.get<{ lieux: Lieu[]; source: string }>(`lieux:cache:${zone}`)
@@ -196,7 +236,7 @@ export async function POST(req: Request) {
   const origin = new URL(req.url).origin
   const cleGoogle = process.env.GOOGLE_PLACES_KEY
 
-  const spots = await nosSpots(lat, lng, requete)
+  const spots = await nosSpots(lat, lng, requete, cat)
   let lieux: Lieu[] = [...spots]
   let source: 'google' | 'osm' | 'spots-seulement' = 'spots-seulement'
   // Trace pour vérifier EN PRODUCTION quelle branche a réellement parlé —
@@ -205,7 +245,7 @@ export async function POST(req: Request) {
   let etatGoogle: 'ok' | 'vide' | 'muet' | 'sans-cle' = cleGoogle ? 'muet' : 'sans-cle'
 
   if (cleGoogle) {
-    const dePlaces = await viaPlaces(lat, lng, requete, cleGoogle)
+    const dePlaces = await viaPlaces(lat, lng, requete, cleGoogle, cat)
     // ⚠️ CORRIGÉ le 15 août : « Google a répondu zéro lieu » déclarait
     // quand même source google et court-circuitait OpenStreetMap — le
     // visiteur recevait « aucune adresse trouvée » alors qu'OSM en avait.
@@ -217,7 +257,7 @@ export async function POST(req: Request) {
     }
   }
   if (source !== 'google') {
-    const deOSM = await viaOSM(origin, lat, lng)
+    const deOSM = await viaOSM(origin, lat, lng, cat)
     if (deOSM.length) {
       source = 'osm'
       lieux = [...spots, ...deOSM.filter((o) => !spots.some((s) => distM(s.lat, s.lng, o.lat, o.lng) < 60))].slice(0, 6)
