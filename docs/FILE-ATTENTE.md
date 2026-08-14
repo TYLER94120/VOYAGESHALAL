@@ -69,7 +69,38 @@ guides, présents et à venir.
    fait tomber quatre restaurants inventés sur Istanbul et la promesse
    fausse de Dubaï, pas l'ajout de paragraphes.
 
-### 2. « 100 % halal », « aucune vérification nécessaire » : 57 pages à trier
+### 2. Six outils n'offrent rien à lire à Google — 13 pages sur 1 634
+**Mesuré le 14 août** avec `scripts/audit-pages-vides.mjs`, sur
+l'intégralité des deux sitemaps. C'était le **dernier des défauts
+surveillés par la ronde que je n'avais jamais vérifié**.
+
+Le HTML servi — celui que Google reçoit avant d'exécuter le JavaScript —
+compte moins de 120 mots lisibles sur **13 pages**, toutes les mêmes des
+deux côtés :
+
+| Page | Mots servis (FR) |
+|---|---|
+| `/qibla` | **52** |
+| `/autour-de-moi` | 59 |
+| `/planificateur` | 67 |
+| `/mosquee-proche` | 70 |
+| `/quiz` | 71 |
+| `/meteo` | 81 |
+
+**Ce ne sont pas des pages ratées** : ce sont des outils dont le contenu
+dépend de la position du visiteur. Titre, description et H1 sont corrects
+partout. Mais **il n'y a rien à indexer sous le titre** — et
+`/mosquee-proche` et `/qibla` visent des requêtes qui comptent
+(« mosquée près de moi », « direction qibla »).
+
+**Le remède** : un texte servi côté serveur qui explique l'outil — utile au
+visiteur autant qu'à Google. Une à deux sections courtes suffisent, pas un
+guide.
+
+⏸️ **À faire après la levée du gel du 15 août au soir**, parce que la
+correction consiste à écrire du texte. Le défaut, lui, est mesuré et daté.
+
+### 3. « 100 % halal », « aucune vérification nécessaire » : 57 pages à trier
 **Trouvé le 12 août en relisant Marrakech**, dont le premier paragraphe
 disait « la totalité des restaurants respectent les préceptes halal par
 défaut, aucune vérification n'est nécessaire, c'est la liberté totale du
@@ -90,7 +121,7 @@ fait partie du travail — pas de correction en masse à l'aveugle.
 **Ordre** : les fiches des pays du Golfe et du Maghreb d'abord (ce sont
 elles qui promettent le plus), puis les guides, puis le blog.
 
-### 3. Les guides des deux mines sont les pages les plus maigres du site
+### 4. Les guides des deux mines sont les pages les plus maigres du site
 **Demande directe de Mohamed, 12 août** : « Il faut retravailler les
 guides, ils sont extrêmement génériques et très mal faits. » Mesuré plutôt
 que discuté, et il a raison — mais le défaut n'est pas où on l'attendrait.
@@ -123,7 +154,7 @@ en comptent au moins trois (« sereinement », « incontournable »,
 Marrakech. Fusionner les doublons avant d'écrire une ligne, sinon on
 enrichit une page qui sera redirigée.
 
-### 4. Les sections « manger » et « prier » manquent sur 277 fiches villes
+### 5. Les sections « manger » et « prier » manquent sur 277 fiches villes
 **Mesuré le 12 août, après huit séries** (Asie, Amérique du Nord, Balkans,
 Europe du Nord, Amérique latine, Afrique subsaharienne, Turquie, Maghreb) :
 **77 fiches sur 354** ont leurs quatre sections. Les 277 autres n'ont que
@@ -139,7 +170,7 @@ Colombo) — à vérifier fiche par fiche avant d'écrire. La question s'y pose
 encore autrement : en Inde le halal est courant et signalé, mais la
 question végétarienne et celle du bœuf s'y ajoutent.
 
-### 5. Un seul guide français reste sans version anglaise, et c'est exprès
+### 6. Un seul guide français reste sans version anglaise, et c'est exprès
 **Mesuré le 12 août sur les deux sitemaps servis** : le domaine anglais
 est passé de **15 à 20 guides** (le français en a 24 ; l'écart restant
 tient à trois doublons français qui pointent vers le même jumeau anglais).
@@ -155,7 +186,7 @@ anglais un défaut qu'on vient de corriger en français.
 Le vrai gisement suivant est **le blog : 45 articles en français, 32 en
 anglais**.
 
-### 6. Les hôtels d'Istanbul et Dubaï attendent le robot OSM
+### 7. Les hôtels d'Istanbul et Dubaï attendent le robot OSM
 **Mesuré** : 41 mentions « information non vérifiée » par page, et
 **0 hôtel avec une politique alcool connue**. Le script et le workflow
 existent (`enrich-hotels-osm.mjs`, `.github/workflows/enrich-hotels.yml`)
@@ -163,7 +194,7 @@ mais n'ont jamais été lancés : le réseau externe est fermé depuis
 l'environnement de l'agent. **Action pour Mohamed**, pas pour l'agent :
 GitHub → Actions → « Enrichir les hôtels » → Run workflow.
 
-### 7. L'accueil et le blog : 704 impressions, ZÉRO clic
+### 8. L'accueil et le blog : 704 impressions, ZÉRO clic
 **Mesuré** (7 jours avant le 9 août). Les titres ont été refaits le 9 août,
 donc **ne rien conclure avant le 16**. Si le zéro persiste après cette
 date, le problème n'est pas le titre : il faudra regarder sur quelles
@@ -172,6 +203,25 @@ requêtes ces pages sortent réellement.
 ---
 
 ## Fait
+
+### Le dernier défaut jamais vérifié : 13 pages quasi vides — 14 août
+Des cinq défauts que la ronde surveille, « page quasi vide » — code 200
+mais rien à lire — était le seul que je n'avais jamais mesuré. Il est
+sournois : la page s'affiche parfaitement dans un navigateur, c'est le
+JavaScript qui la remplit ; mais ce que Google reçoit d'abord, c'est le
+HTML servi.
+
+**Mesuré sur 1 634 pages : 13 sous 120 mots lisibles sans JavaScript**,
+soit 0,8 %. Toutes des outils — qibla, mosquée proche, autour de moi,
+planificateur, quiz, météo — et les mêmes sur les deux domaines.
+
+**Ce que ce n'est pas** : un défaut de rendu. Titre, description et H1 sont
+corrects partout. C'est le corps qui est vide.
+
+L'outil reste dans le dépôt (`scripts/audit-pages-vides.mjs`). La
+correction — un texte servi côté serveur qui explique l'outil — est versée
+à la file **et attend la levée du gel du 15 août**, parce qu'écrire ce
+texte, c'est écrire du contenu.
 
 ### Données structurées : 4 588 blocs, zéro défaut — 14 août
 **Un des cinq défauts que la ronde surveille, et que je n'avais jamais
