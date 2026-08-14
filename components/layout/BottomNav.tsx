@@ -23,6 +23,13 @@ export default function BottomNav() {
     // Destinations. La météo prend sa place, parce qu'en voyage on veut
     // savoir s'il va pleuvoir avant de sortir pour Maghrib.
     { href: localizedHref('/meteo', en), icon: '🌤️', label: en ? 'Weather' : 'Météo' },
+    // 📐 15 août — Mohamed : « vérifie tous les écarts » PC/téléphone.
+    // Diff complet des deux menus Outils : il manquait ici Destinations,
+    // Communauté et Horaires de prière, présents sur PC. Les deux menus
+    // listent désormais les MÊMES outils.
+    { href: '/destinations', icon: '🗺️', label: t('nav.destinations') },
+    { href: '/communaute', icon: '🤝', label: en ? 'Community · profiles' : 'Communauté · profils' },
+    { href: localizedHref('/horaires-priere', en), icon: '🕐', label: t('nav.prayer') },
     { href: localizedHref('/mosquee-proche', en), icon: '🕌', label: t('nav.mosque') },
     { href: '/qibla', icon: '🧭', label: t('nav.qibla') },
     { href: localizedHref('/planificateur', en), icon: '🗺️', label: en ? 'Trip planner' : 'Planificateur' },
