@@ -525,7 +525,7 @@ export default function BoardVoyageur({
 
         {/* 🔎 Le titre et la recherche de l'ancienne page d'accueil, fondus
             DANS le tableau de bord : un seul écran, plus deux empilés. */}
-        {recherche && <div style={{ marginBottom: 10 }}>{recherche}</div>}
+        {recherche && <div className="board-recherche" style={{ marginBottom: 10 }}>{recherche}</div>}
 
         {/* ── Tuiles composables : la taille suit le moment (focus) ── */}
         {(() => {
@@ -806,7 +806,7 @@ export default function BoardVoyageur({
           // dit pas « aucun » : on n'en sait rien. Le vide ne s'affiche
           // qu'une fois TOUTES les sources revenues.
           const mangerVide = envieActive && !rattrapageEnCours && (
-            <div className="board-pousse" style={{ ...T.tile, marginTop: 10, background: 'linear-gradient(150deg, rgba(27,67,50,0.85), rgba(255,255,255,0.04))', borderColor: 'rgba(201,168,76,0.35)' }}>
+            <div className="board-hero board-pousse" style={{ ...T.tile, marginTop: 10, background: 'linear-gradient(150deg, rgba(27,67,50,0.85), rgba(255,255,255,0.04))', borderColor: 'rgba(201,168,76,0.35)' }}>
               <p style={T.lab}>{envieActive.emoji} {envieActive[en ? 'en' : 'fr']}</p>
               <p style={{ fontFamily: "'Playfair Display', Georgia, serif", color: '#fdfaf3', fontSize: 20, fontWeight: 900, margin: '4px 0 0', lineHeight: 1.2 }}>
                 {/* ✍️ « Aucun pizza signalé » — photographié par Mohamed.
@@ -860,7 +860,7 @@ export default function BoardVoyageur({
           // Ouvert sans résultat : la carte reste un lieu de travail — on
           // choisit son envie ici, la recherche part aussitôt.
           const mangerOuvertVide = (
-            <div className="board-pousse" style={{ ...T.tile, marginTop: 10 }}>
+            <div className="board-hero board-pousse" style={{ ...T.tile, marginTop: 10 }}>
               <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 10 }}>
                 <p style={T.lab}>🍽 {en ? 'Eat' : 'Manger'}</p>
                 <button onClick={() => setOuvert(null)} aria-label={en ? 'Close' : 'Fermer'} style={{ background: 'none', border: 'none', color: 'var(--or)', fontWeight: 800, cursor: 'pointer', minHeight: 44, padding: '0 6px' }}>▴</button>
@@ -889,7 +889,7 @@ export default function BoardVoyageur({
           const spotsWidget = (
             <Link href={pres && !pres.proches.length && !pres.autour.length ? '/spots' : '/autour-de-moi'}
               className="board-slim"
-              style={{ ...T.tile, width: '100%', display: 'flex', alignItems: 'center', gap: 10, padding: '13px 14px', textDecoration: 'none' }}>
+              style={{ ...T.tile, marginTop: 10, width: '100%', display: 'flex', alignItems: 'center', gap: 10, padding: '13px 14px', textDecoration: 'none' }}>
               <span style={{ fontSize: 18 }} aria-hidden>💎</span>
               <p style={{ flex: 1, color: '#fdfaf3', fontWeight: 700, fontSize: 13.5, margin: 0, lineHeight: 1.35 }}>
                 Spots{nSpots != null && nSpots > 0 ? <span style={{ color: 'rgba(253,250,243,0.78)' }}> · {nSpots} {villeNom ? (en ? `in ${villeNom}` : `à ${villeNom}`) : (en ? 'shared by travelers' : 'partagés par des voyageurs')}</span> : null}
@@ -908,9 +908,7 @@ export default function BoardVoyageur({
               {ouvert === 'manger'
                 ? (mangerWide || mangerVide || mangerOuvertVide)
                 : mangerSlim}
-              <div style={{ marginTop: 10 }}>
-                {spotsWidget}
-              </div>
+              {spotsWidget}
             </>
           )
         })()}
@@ -926,7 +924,7 @@ export default function BoardVoyageur({
             cartes (même fond, même rayon) avec la bordure or la plus
             marquée de l'écran : toujours la plus visible de sa rangée,
             sans crier plus fort que l'action principale. */}
-        <Link href="/qibla" aria-label={en ? 'Qibla compass' : 'Boussole Qibla'}
+        <Link href="/qibla" className="board-slim" aria-label={en ? 'Qibla compass' : 'Boussole Qibla'}
           style={{
             ...T.tile, marginTop: 10, minHeight: 52, display: 'flex', alignItems: 'center', justifyContent: 'center',
             gap: 8, textDecoration: 'none',

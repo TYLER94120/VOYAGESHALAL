@@ -539,26 +539,29 @@ body { top: 0 !important; }
 .sticky-sections::-webkit-scrollbar { display: none; }
 @media (min-width: 1024px) { .sticky-sections { display: none !important; } }
 
-/* ===== Board voyageur : colonne sur mobile, bento large sur écran PC =====
-   Sur mobile le board reste une pile lisible ; au-delà de 1024px il devient
-   une vraie grille : plus de bande vide sur les côtés, tout tient en un écran. */
+/* ===== Board voyageur : pile sur mobile, grille sur PC =====
+   Mohamed, 15 août : « sur tél c'est correct, sur PC c'est catastrophique —
+   il y a plus d'espace, adapte-le ». L'ancienne grille PC datait du board
+   d'avant l'accordéon : ses classes (.board-duo, .board-strip…) n'existent
+   plus, les éléments tombaient au hasard. Nouvelle règle, calée sur
+   l'accordéon : les LIGNES FINES se rangent deux par rangée ; le widget
+   OUVERT — l'atelier — prend toute la largeur ; titre + recherche restent
+   centrés à largeur de lecture. */
 .board-wrap { max-width: 640px; }
 @media (min-width: 1024px) {
   .board-wrap {
     max-width: 1080px;
     display: grid;
-    grid-template-columns: 1.45fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 12px;
     align-items: start;
   }
   /* les marges verticales mobiles sont remplacées par le gap de la grille */
   .board-wrap > * { margin-top: 0 !important; }
   .board-topbar { grid-column: 1 / -1; margin-bottom: 0 !important; }
-  .board-hero, .board-slim { grid-column: 1; align-self: stretch; }
-  .board-duo { grid-column: 2; align-content: start; }
-  .board-reels { grid-column: 1 / -1; }
-  .board-smalls { grid-column: 1; }
-  .board-strip { grid-column: 2; align-items: center; }
+  .board-recherche { grid-column: 1 / -1; width: 100%; max-width: 640px; justify-self: center; margin-bottom: 0 !important; }
+  .board-hero { grid-column: 1 / -1; }
+  .board-slim { grid-column: auto; }
 }
 
 /* Dock flottant (étape 2 du board) : pilule détachée du bord, fond nuit,
