@@ -160,7 +160,51 @@
          14 aout : posees avant, il fallait CINQ appuis pour apprendre le
          premier mot ; la carte d'abord, il en faut UN. La ligne disparait des
          qu'on a repondu, et « Mon chemin » garde le meme bouton. -->
-    <a class="lien-discret lien-bas" href="quiz.html">Dix questions pour tester ce que tu sais</a>
+    <!-- CE QUE CONTIENT LE SITE.
+         L'accueil ne montrait qu'une carte : une regle que je m'etais donnee
+         pour proteger l'habitude quotidienne. Mohamed a ouvert le site le
+         14 aout et a dit « il est litteralement vide ». Il avait raison : on
+         ne voyait rien des 29 lecons, et une page d'accueil aussi maigre ne
+         vaut rien pour Google non plus.
+         La carte du jour reste EN PREMIER — c'est elle qui fait revenir. Ce
+         bloc vient dessous, pour celui qui arrive et qui veut voir le fond.
+         Les chiffres sont calcules par app.js depuis le catalogue ; le texte
+         ci-dessous est le repli, lisible sans JavaScript et par Google. -->
+    <section class="famille" data-r="offre">
+      <h2>Ce qu'il y a sur ce site</h2>
+      <p class="famille-quoi" data-r="offre-chiffres">
+        Vingt-neuf lecons, cent soixante et onze minutes, deux cent
+        vingt-quatre choses a apprendre. Tout est gratuit, sans compte.
+      </p>
+
+      <div class="pliens">
+        <a class="ligne" href="parcours.html">
+          <svg class="etoile" width="15" height="15" viewBox="0 0 24 24" fill="#c9a84c" aria-hidden="true"><path d="M12 2 L22 12 L12 22 L2 12 Z M5 5 H19 V19 H5 Z"/></svg>
+          <span><span class="t">Le sens des sourates</span><span class="s">Al-Fatiha et vingt sourates courtes, verset par verset</span></span>
+          <span class="fl" aria-hidden="true">&rsaquo;</span>
+        </a>
+        <a class="ligne" href="parcours.html">
+          <svg class="etoile" width="15" height="15" viewBox="0 0 24 24" fill="#c9a84c" aria-hidden="true"><path d="M12 2 L22 12 L12 22 L2 12 Z M5 5 H19 V19 H5 Z"/></svg>
+          <span><span class="t">Lire l'arabe</span><span class="s">Les 28 lettres, les voyelles, les formes selon la place</span></span>
+          <span class="fl" aria-hidden="true">&rsaquo;</span>
+        </a>
+        <a class="ligne" href="parcours.html">
+          <svg class="etoile" width="15" height="15" viewBox="0 0 24 24" fill="#c9a84c" aria-hidden="true"><path d="M12 2 L22 12 L12 22 L2 12 Z M5 5 H19 V19 H5 Z"/></svg>
+          <span><span class="t">La foi, la priere, le comportement</span><span class="s">Les six piliers, les gestes dans l'ordre, six hadiths</span></span>
+          <span class="fl" aria-hidden="true">&rsaquo;</span>
+        </a>
+        <a class="ligne" href="quiz.html">
+          <svg class="etoile" width="15" height="15" viewBox="0 0 24 24" fill="#c9a84c" aria-hidden="true"><path d="M12 2 L22 12 L12 22 L2 12 Z M5 5 H19 V19 H5 Z"/></svg>
+          <span><span class="t">Les QCM</span><span class="s">Quatre-vingt-trois questions tirees des lecons</span></span>
+          <span class="fl" aria-hidden="true">&rsaquo;</span>
+        </a>
+        <a class="ligne" href="sourates.html">
+          <svg class="etoile" width="15" height="15" viewBox="0 0 24 24" fill="#c9a84c" aria-hidden="true"><path d="M12 2 L22 12 L12 22 L2 12 Z M5 5 H19 V19 H5 Z"/></svg>
+          <span><span class="t">Les 114 sourates</span><span class="s">La liste complete, nom arabe et nom transcrit</span></span>
+          <span class="fl" aria-hidden="true">&rsaquo;</span>
+        </a>
+      </div>
+    </section>
 
     <button class="lien-discret lien-bas" type="button" data-r="diag-ouvrir" hidden>
       Adapter a mon niveau &mdash; 3 questions, 15 secondes

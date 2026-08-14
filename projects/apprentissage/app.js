@@ -1283,6 +1283,16 @@ function ippRendreAccueil(racine) {
   if (corps) { corps.hidden = false; }
   if (q('diag')) { q('diag').hidden = true; }
 
+  /* Les chiffres de l'accueil viennent du catalogue, jamais recopies : le jour
+     ou une lecon s'ajoute, la phrase se met a jour toute seule. Le HTML porte
+     un repli en toutes lettres, pour Google et pour qui n'execute rien. */
+  var chiffres = q('offre-chiffres');
+  if (chiffres) {
+    var o = IPP.chiffresOffre();
+    chiffres.textContent = o.lecons + ' lecons, ' + o.minutes + ' minutes, '
+      + o.acquis + ' choses a apprendre. Tout est gratuit, sans compte.';
+  }
+
   var ouvrir = q('diag-ouvrir');
   if (ouvrir) {
     var aRepondu = !!IPP.niveau();
