@@ -210,7 +210,10 @@ export default async function HomePage() {
             <h2 className="text-white text-xl font-bold" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
               🌍 {t.popularTitle}
             </h2>
-            <Link href="/destinations" style={{ color: 'var(--or)', fontWeight: 800, fontSize: 14, textDecoration: 'none', whiteSpace: 'nowrap' }}>
+            {/* 44 px de cible tactile : ce lien est remonté dans le premier
+                écran, il n'a plus le droit d'être une ligne de texte de
+                21 px de haut qu'on rate deux fois sur trois au pouce. */}
+            <Link href="/destinations" style={{ display: 'inline-flex', alignItems: 'center', minHeight: 44, padding: '0 4px', color: 'var(--or)', fontWeight: 800, fontSize: 14, textDecoration: 'none', whiteSpace: 'nowrap' }}>
               {t.seeAll}
             </Link>
           </div>

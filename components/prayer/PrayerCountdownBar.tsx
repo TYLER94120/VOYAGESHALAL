@@ -1,11 +1,14 @@
 'use client'
 import { useEffect, useMemo, useState } from 'react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { useInstantPosition } from '@/lib/useInstantPosition'
 import { computePrayerTimesFull } from '@/lib/prayerCalc'
 import LanguageSwitcher from '@/components/i18n/LanguageSwitcher'
 import { useLanguage } from '@/components/i18n/LanguageProvider'
 import { localizedHref } from '@/lib/slugs'
+import PositionBadge from '@/components/location/PositionBadge'
+import { meteoInstantanee, emojiMeteo, type Meteo } from '@/lib/meteo'
 
 const KEYS = ['Fajr', 'Dhuhr', 'Asr', 'Maghrib', 'Isha'] as const
 const LABELS: Record<string, string> = { Fajr: 'Fajr', Dhuhr: 'Dhuhr', Asr: 'ʿAsr', Maghrib: 'Maghrib', Isha: 'ʿIshâ' }
@@ -25,16 +28,42 @@ const LABELS: Record<string, string> = { Fajr: 'Fajr', Dhuhr: 'Dhuhr', Asr: 'ʿA
 //
 // Les deux lisent désormais la MÊME position (useInstantPosition, la même
 // que le board) et la même méthode de calcul.
+//
+// ════════ 16 AOÛT — UN SEUL BANDEAU, PAS TROIS LIGNES EMPILÉES ════════
+//
+// Ordre de Mohamed : « La pastille "Paris · exacte" et la météo remontent
+// dans la fine barre du haut, avec la langue. » Elles vivaient sur une
+// deuxième ligne, dans le tableau de bord, juste en dessous de celle-ci :
+// deux bandeaux qui parlaient du même endroit.
+//
+// ET SUR L'ACCUEIL, CE BANDEAU NE COMPTE PLUS LES MINUTES. Le bloc prière
+// est là, quatre centimètres plus bas, avec le même compte à rebours en
+// bien plus lisible. Deux comptes à rebours sur un écran, c'est celui du
+// haut qui devient du bruit. Il garde donc son décompte PARTOUT AILLEURS
+// — sur une fiche ville, un guide, un article, il est la seule réponse à
+// « c'est dans combien de temps ? ».
 export default function PrayerCountdownBar() {
-  const { pos } = useInstantPosition()
+  const etatPos = useInstantPosition()
+  const { pos } = etatPos
   const { lang } = useLanguage()
   const en = lang === 'en'
   const [now, setNow] = useState(Date.now())
+  const chemin = usePathname()
+  const surAccueil = chemin === '/' || chemin === '/en'
+  const [meteo, setMeteo] = useState<Meteo | null>(null)
 
   useEffect(() => {
     const id = setInterval(() => setNow(Date.now()), 1000)
     return () => clearInterval(id)
   }, [])
+
+  // La météo est un CONFORT : elle arrive quand elle arrive, et si elle
+  // n'arrive pas la barre ne montre rien plutôt qu'un rond qui tourne.
+  useEffect(() => {
+    if (!pos) return
+    const gardee = meteoInstantanee(pos.lat, pos.lng, setMeteo)
+    if (gardee) setMeteo(gardee)
+  }, [pos?.lat, pos?.lng]) // eslint-disable-line react-hooks/exhaustive-deps
 
   // ⚠️ CALCUL LOCAL, comme le tableau de bord de l'accueil.
   //
@@ -98,9 +127,25 @@ export default function PrayerCountdownBar() {
     )
   }
 
+  // 📍 LA POSITION EN PASTILLE, ET NON EN TEXTE MORT. Elle garde son appui
+  // « ma position exacte » : le roaming fausse la géolocalisation par IP, et
+  // une position fausse ne donne pas un site imprécis, elle donne un site faux.
+  const positionEtMeteo = (
+    <span className="prayer-bar-lieu">
+      <PositionBadge compact etat={etatPos} en={en}
+        apresRefus={() => { window.location.href = localizedHref('/horaires-priere', en) }} />
+      {meteo?.maintenant && (
+        <Link href="/meteo" aria-label={en ? 'Weather' : 'Météo'} className="prayer-bar-meteo">
+          <span style={{ fontSize: 15 }} aria-hidden>{emojiMeteo(meteo.maintenant.code)}</span>
+          <span style={{ color: '#fdfaf3', fontWeight: 900, fontSize: 13.5 }}>{meteo.maintenant.temp}°</span>
+        </Link>
+      )}
+    </span>
+  )
+
   return (
     <div className="prayer-bar">
-      {inner}
+      {surAccueil ? positionEtMeteo : <>{inner}{positionEtMeteo}</>}
       {/* Accès langue (surtout utile sur mobile où le header est masqué) */}
       <span className="prayer-bar-lang"><LanguageSwitcher /></span>
     </div>

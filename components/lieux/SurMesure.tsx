@@ -376,39 +376,50 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
     minHeight: 44, padding: '0 14px', borderRadius: 999, cursor: 'pointer',
     border: on ? '1.5px solid var(--or)' : '1px solid rgba(253,250,243,0.28)',
     background: on ? 'rgba(201,168,76,0.18)' : 'rgba(255,255,255,0.05)',
-    color: on ? 'var(--or)' : 'var(--creme)', fontWeight: on ? 800 : 700, fontSize: 13.5,
+    color: on ? 'var(--or)' : 'var(--creme)', fontWeight: on ? 800 : 700, fontSize: 14,
   })
   const rangee: React.CSSProperties = { display: 'flex', gap: 7, flexWrap: 'wrap', marginTop: 8 }
   const label: React.CSSProperties = { color: 'rgba(253,250,243,0.6)', fontSize: 12, fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', margin: '12px 0 0' }
 
   return (
     <Cadre fondu={fondu} titre={destination ? `${t('À', 'In')} ${destination.nom}` : t('Près de moi', 'Near me')}>
-        {/* ── 1. LA QUESTION OUVERTE ────────────────────────────── */}
-        {!fondu && (
+        {/* ── 1. LA QUESTION OUVERTE ──────────────────────────────
+            🧹 16 août — le chapeau « 📍 PRÈS DE MOI » ne s'affiche plus
+            sur l'accueil : la pastille de position est maintenant dans la
+            barre fine du haut, et le titre juste en dessous dit déjà la
+            même chose. Trois façons d'annoncer « ici », c'est deux de
+            trop, et c'était 25 px pris sur le premier écran. Il reste
+            partout ailleurs, où il n'y a pas de barre de position. */}
+        {!fondu && !titrePage && (
           <p style={{ color: 'var(--or)', fontSize: 13, fontWeight: 900, letterSpacing: '0.08em', textTransform: 'uppercase', margin: 0 }}>
             📍 {destination ? `${t('À', 'In')} ${destination.nom}` : t('Près de moi', 'Near me')}
           </p>
         )}
-        <h3 style={{ fontFamily: "'Playfair Display', Georgia, serif", color: '#fdfaf3', fontSize: 22, fontWeight: 900, margin: '6px 0 0', lineHeight: 1.25 }}>
-          {destination
-            ? t(`Que cherches-tu à ${destination.nom} ?`, `What are you looking for in ${destination.nom}?`)
-            : t('Dis-moi ce que tu cherches.', 'Tell me what you are looking for.')}
-        </h3>
-
-        {/* 🏠 LE TITRE DE LA PAGE DEVIENT LE SOUS-TITRE DE LA BARRE.
+        {/* 🏠 UN SEUL TITRE AU-DESSUS DE LA BARRE, PAS DEUX.
             Mohamed, 16 août : « Le titre "Où prier, où manger halal —
-            partout où tu voyages" devient le sous-titre de CETTE barre,
-            plus une section séparée. » Le H1 est toujours là pour Google,
-            et il ne coûte plus une section entière de hauteur. */}
-        {titrePage && !destination && (
-          <h1 style={{ color: 'rgba(253,250,243,0.72)', fontSize: 14, fontWeight: 600, lineHeight: 1.35, margin: '5px 0 0' }}>
+            partout où tu voyages" devient le sous-titre de CETTE barre. »
+            Sur l'accueil, il y avait « Dis-moi ce que tu cherches. », puis
+            ce titre, puis le champ dont l'exemple en filigrane dit encore
+            « un kebab pas cher pas loin » : trois phrases pour dire
+            « écris ici ». Le H1 prend la place du h3 — il garde son texte
+            entier pour Google et devient ce qu'on lit vraiment. Ailleurs
+            (fiche ville, autour de moi), le h3 reste : il n'y a pas de H1
+            à lui donner, et la page a déjà son titre. */}
+        {titrePage && !destination ? (
+          <h1 style={{ fontFamily: "'Playfair Display', Georgia, serif", color: '#fdfaf3', fontSize: 20, fontWeight: 900, margin: '2px 0 0', lineHeight: 1.25 }}>
             {t('Où prier, où ', 'Where to pray, where to ')}
             <span className="gold-em">{t('manger halal', 'eat halal')}</span>
             {t(' — partout où tu voyages.', ' — anywhere you travel.')}
           </h1>
+        ) : (
+          <h3 style={{ fontFamily: "'Playfair Display', Georgia, serif", color: '#fdfaf3', fontSize: 20, fontWeight: 900, margin: '2px 0 0', lineHeight: 1.2 }}>
+            {destination
+              ? t(`Que cherches-tu à ${destination.nom} ?`, `What are you looking for in ${destination.nom}?`)
+              : t('Dis-moi ce que tu cherches.', 'Tell me what you are looking for.')}
+          </h3>
         )}
 
-        <form onSubmit={(e) => { e.preventDefault(); comprendre(phrase) }} style={{ display: 'flex', gap: 8, marginTop: 10, flexWrap: 'wrap' }}>
+        <form onSubmit={(e) => { e.preventDefault(); comprendre(phrase) }} style={{ display: 'flex', gap: 8, marginTop: 8, flexWrap: 'wrap' }}>
           <input
             value={phrase} onChange={(e) => setPhrase(e.target.value)}
             placeholder={`« ${EXEMPLES[ex]} »`}
@@ -469,10 +480,18 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
         {/* §B.2 — « suggestions d'un appui : Manger · Mosquée · Que faire ».
             Elles lancent la recherche immédiatement : celui qui ne veut
             pas écrire est servi en un geste. Pour la mosquée, la relance
-            porte sur le TEMPS (prier maintenant ?), pas sur le budget. */}
-        <div style={{ display: 'flex', gap: 7, marginTop: 9, flexWrap: 'wrap' }}>
+            porte sur le TEMPS (prier maintenant ?), pas sur le budget.
+
+            📏 16 août — LES TROIS TIENNENT SUR UNE SEULE LIGNE. Ils
+            passaient à la ligne sur un téléphone de 390 px : 95 px pour
+            trois boutons, soit une rangée entière perdue sur le premier
+            écran. Chacun prend un tiers de la largeur, le texte se serre
+            plutôt que de sauter — et les 44 px de cible tactile sont
+            intacts, c'est la règle qui ne se négocie pas. */}
+        <div style={{ display: 'flex', gap: 7, marginTop: 9, flexWrap: 'nowrap' }}>
           {CAT_OPTS.map(([v, fr, an]) => (
             <button key={v}
+              className="surmesure-cat"
               // TEMPS 1 : le bouton n'ouvre PAS une page et ne lance pas
               // encore la recherche — il ouvre l'aide au choix juste en
               // dessous. C'est ce qui le distingue des tuiles « Explorer »,
@@ -483,23 +502,53 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
                 setRaisonIA('')
                 compter(`cat-${v}`)
               }}
-              aria-pressed={aide?.cat === v} style={puce(aide?.cat === v)}>
+              aria-pressed={aide?.cat === v} style={{ ...puce(aide?.cat === v), flex: '1 1 0', minWidth: 0, padding: '0 6px', whiteSpace: 'nowrap' }}>
               {t(fr, an)}
             </button>
           ))}
+          {/* 👤 16 août — LE PROFIL REJOINT LA RANGÉE, EN PASTILLE.
+              Il occupait une rangée de 44 px à lui seul sur le premier
+              écran. Ce n'est pas une quatrième catégorie : c'est la
+              porte de côté qui dit « le site me connaît ». En pastille
+              au bout de la rangée, il ne coûte plus une ligne, il reste
+              à un appui, et il PARLE quand il est rempli — la pastille
+              devient dorée dès qu'il y a quelque chose dedans. */}
+          {titrePage && (
+            <button onClick={() => setOuvrirProfil((o) => !o)}
+              aria-expanded={ouvrirProfil}
+              aria-label={profilVide(profil)
+                ? t('Mon profil alimentaire', 'My eating profile')
+                : `${t('Mon profil', 'My profile')} : ${resumerProfil(profil, en).join(' · ')}`}
+              style={{ ...puce(!profilVide(profil)), flex: '0 0 auto', padding: '0 12px', fontSize: 16 }}>
+              👤
+            </button>
+          )}
         </div>
 
         {/* ── 👤 MON PROFIL — replié, accessible d'un appui ─────────
             « Un sur mesure qu'il faut retaper à chaque fois n'est pas du
             sur mesure. » Le profil vit dans le téléphone : aucun compte,
             rien sur nos serveurs, et « oublier tout » efface vraiment. */}
-        <div style={{ marginTop: 10 }}>
-          <button onClick={() => setOuvrirProfil((o) => !o)}
-            style={{ background: 'none', border: 'none', color: profilVide(profil) ? 'rgba(253,250,243,0.6)' : 'var(--or)', textDecoration: 'underline', fontWeight: 800, fontSize: 13, cursor: 'pointer', minHeight: 44, padding: 0, textAlign: 'left' }}>
-            👤 {profilVide(profil)
-              ? t('Mon profil', 'My profile')
-              : `${t('Mon profil', 'My profile')} : ${resumerProfil(profil, en).join(' · ')}`}
-          </button>
+        {/* 📏 16 août — LES DEUX LIENS SECONDAIRES PARTAGENT UNE LIGNE.
+            « 👤 Mon profil » et « ou choisis dans une liste » occupaient
+            chacun leur rangée de 44 px, l'une sous l'autre. Ce sont deux
+            portes de côté, pas deux étapes : elles tiennent sur la même
+            ligne et rendent 54 px au premier écran. */}
+        <div style={{ marginTop: titrePage ? 0 : 10 }}>
+          {/* Ailleurs que sur l'accueil, le profil garde son lien en toutes
+              lettres : la place ne manque pas et le libellé se lit mieux.
+              🧹 « ou choisis dans une liste » est supprimé — les trois
+              boutons Prier · Manger · Que faire SONT la liste, et ils sont
+              juste au-dessus : « c'est le seul point d'entrée de recherche
+              de la page » (Mohamed). Le QCM reste sous chaque catégorie. */}
+          {!titrePage && (
+            <button onClick={() => setOuvrirProfil((o) => !o)}
+              style={{ width: '100%', background: 'none', border: 'none', color: profilVide(profil) ? 'rgba(253,250,243,0.6)' : 'var(--or)', textDecoration: 'underline', fontWeight: 800, cursor: 'pointer', minHeight: 44, padding: 0, textAlign: 'left', fontSize: 14 }}>
+              👤 {profilVide(profil)
+                ? t('Mon profil', 'My profile')
+                : `${t('Mon profil', 'My profile')} : ${resumerProfil(profil, en).join(' · ')}`}
+            </button>
+          )}
 
           {ouvrirProfil && (
             <div className="board-pousse" style={{ marginTop: 8, padding: 12, borderRadius: 14, border: '1px solid rgba(253,250,243,0.16)' }}>
@@ -649,13 +698,6 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
               </>
             )}
           </div>
-        )}
-
-        {!aEcrit && !ouvrirQcm && etape === 'question' && (
-          <button onClick={() => setOuvrirQcm(true)}
-            style={{ marginTop: 10, background: 'none', border: 'none', color: 'var(--or)', textDecoration: 'underline', fontWeight: 800, fontSize: 13.5, cursor: 'pointer', minHeight: 44, padding: 0 }}>
-            {t('ou choisis dans une liste', 'or pick from a list')}
-          </button>
         )}
 
         {/* ── 3. LA RELANCE — une seule, sautable ───────────────── */}
@@ -811,8 +853,12 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
 function Cadre({ fondu, titre, children }: { fondu: boolean; titre: string; children: React.ReactNode }) {
   if (fondu) return <div style={{ margin: '0 auto', maxWidth: 700 }}>{children}</div>
   return (
-    <section style={{ background: 'var(--nuit)' }} className="pt-2 pb-8 px-4" aria-label={titre}>
-      <div className="max-w-3xl mx-auto" style={{ background: 'linear-gradient(150deg, rgba(27,67,50,0.5), rgba(255,255,255,0.05))', border: '1.5px solid rgba(201,168,76,0.55)', borderRadius: 18, padding: 16, boxShadow: '0 4px 22px rgba(0,0,0,0.25)' }}>
+    <section style={{ background: 'var(--nuit)' }} className="pt-1 pb-2 px-4" aria-label={titre}>
+      {/* 📏 16 août : pb-8 → pb-4 et padding 16 → 13. Trente pixels de
+          marge basse sous une carte déjà posée sur un fond de la même
+          couleur ne se voient pas — ils repoussent seulement ce qui suit
+          sous la ligne de flottaison. */}
+      <div className="max-w-3xl mx-auto" style={{ background: 'linear-gradient(150deg, rgba(27,67,50,0.5), rgba(255,255,255,0.05))', border: '1.5px solid rgba(201,168,76,0.55)', borderRadius: 18, padding: 13, boxShadow: '0 4px 22px rgba(0,0,0,0.25)' }}>
         {children}
       </div>
     </section>

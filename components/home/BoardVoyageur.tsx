@@ -501,27 +501,16 @@ export default function BoardVoyageur({
   }
 
   return (
-    <section style={{ background: 'var(--nuit)', padding: '14px 14px 6px' }} aria-label={en ? 'Your travel board' : 'Ton tableau de bord voyage'}>
+    <section style={{ background: 'var(--nuit)', padding: '8px 14px 0' }} aria-label={en ? 'Your travel board' : 'Ton tableau de bord voyage'}>
       <div className="board-wrap" style={{ margin: '0 auto' }}>
-        {/* Barre ville : 1 tap = GPS exact (le roaming fausse la geoloc IP) */}
-        <div className="board-topbar" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 8, flexWrap: 'wrap', marginBottom: 10 }}>
-          <PositionBadge compact etat={etatPos} en={en} apresRefus={() => { window.location.href = '/horaires-priere' }} />
-          {/* 🌤 LA TEMPÉRATURE SE MET LÀ OÙ L'ŒIL EST DÉJÀ.
-              Je l'avais glissée dans la petite ligne Qibla, six tuiles plus
-              bas : Mohamed ne l'a pas vue, et il avait raison de ne pas la
-              chercher. Elle est maintenant collée à la position — même ligne,
-              même regard : « Rabat · exacte ✓  ☀️ 30° ». */}
-          {meteo?.maintenant && (
-            <Link href="/meteo" aria-label={en ? 'Weather' : 'Météo'}
-              style={{ display: 'inline-flex', alignItems: 'center', gap: 5, minHeight: 44, padding: '0 10px', borderRadius: 999, textDecoration: 'none', border: '1px solid rgba(201,168,76,0.35)', flexShrink: 0 }}>
-              <span style={{ fontSize: 17 }} aria-hidden>{emojiMeteo(meteo.maintenant.code)}</span>
-              <span style={{ color: '#fdfaf3', fontWeight: 900, fontSize: 15 }}>{meteo.maintenant.temp}°</span>
-            </Link>
-          )}
-          {/* 🧹 15 août : « Tout voir → » retiré — il menait à /spots, déjà
-              servi par la tuile Spots ET l'onglet Spots de la barre du bas.
-              Trois portes vers la même pièce, deux de trop. */}
-        </div>
+        {/* 📍 16 août — LA LIGNE POSITION + MÉTÉO A QUITTÉ CE TABLEAU.
+            Elle est remontée dans la fine barre du haut, avec la langue
+            (components/prayer/PrayerCountdownBar.tsx). Elle vivait ici,
+            à quatre centimètres de la même information : « un seul
+            bandeau, pas trois lignes empilées » (Mohamed). La pastille
+            garde son appui « ma position exacte » là-haut — le roaming
+            fausse la géolocalisation par IP, et une position fausse ne
+            donne pas un site imprécis, elle donne un site faux. */}
 
         {/* 🔎 Le titre et la recherche de l'ancienne page d'accueil, fondus
             DANS le tableau de bord : un seul écran, plus deux empilés. */}
@@ -544,9 +533,9 @@ export default function BoardVoyageur({
               {journee.map(({ k, d }) => {
                 const active = fenetre.key === k
                 return (
-                  <div key={k} style={{ textAlign: 'center', flex: 1, borderRadius: 12, padding: '6px 2px', background: active ? 'rgba(201,168,76,0.18)' : 'transparent', border: active ? '1px solid rgba(201,168,76,0.45)' : '1px solid transparent' }}>
-                    <p style={{ fontSize: 11.5, fontWeight: 800, letterSpacing: '0.04em', textTransform: 'uppercase', color: active ? 'var(--or)' : 'rgba(253,250,243,0.78)', margin: 0 }}>{k}</p>
-                    <p style={{ fontFamily: "'Playfair Display', Georgia, serif", color: active ? '#fdfaf3' : 'rgba(253,250,243,0.9)', fontWeight: active ? 900 : 700, fontSize: 17, margin: '3px 0 0', fontVariantNumeric: 'tabular-nums', lineHeight: 1.1 }}>{fmtClock(d)}</p>
+                  <div key={k} style={{ textAlign: 'center', flex: 1, borderRadius: 12, padding: '3px 2px', background: active ? 'rgba(201,168,76,0.18)' : 'transparent', border: active ? '1px solid rgba(201,168,76,0.45)' : '1px solid transparent' }}>
+                    <p style={{ fontSize: 14, fontWeight: 800, letterSpacing: '0.01em', color: active ? 'var(--or)' : 'rgba(253,250,243,0.78)', margin: 0 }}>{k}</p>
+                    <p style={{ fontFamily: "'Playfair Display', Georgia, serif", color: active ? '#fdfaf3' : 'rgba(253,250,243,0.9)', fontWeight: active ? 900 : 700, fontSize: 16, margin: '1px 0 0', fontVariantNumeric: 'tabular-nums', lineHeight: 1.1 }}>{fmtClock(d)}</p>
                   </div>
                 )
               })}
@@ -556,7 +545,7 @@ export default function BoardVoyageur({
           // seule boîte pour toute la question « où prier ».
           const horairesDansCarte = horairesLigne && (
             // Ligne 3 : les cinq horaires, fins, la suivante en surbrillance.
-            <div style={{ marginTop: 9, paddingTop: 8, borderTop: '1px solid rgba(253,250,243,0.12)' }}>
+            <div style={{ marginTop: 7, paddingTop: 7, borderTop: '1px solid rgba(253,250,243,0.12)' }}>
               {horairesLigne}
             </div>
           )
@@ -569,7 +558,7 @@ export default function BoardVoyageur({
               style={{ minHeight: 44, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 6, padding: '0 13px',
                 textDecoration: 'none', borderRadius: 999, border: '1.5px solid rgba(201,168,76,0.6)', background: 'rgba(201,168,76,0.10)' }}>
               <span style={{ fontSize: 16, transform: `rotate(${qibla.deg}deg)`, display: 'inline-block', lineHeight: 1 }} aria-hidden>🧭</span>
-              <span style={{ color: 'var(--or)', fontWeight: 900, fontSize: 13.5 }}>{qibla.deg}° · {qibla.dir}</span>
+              <span style={{ color: 'var(--or)', fontWeight: 900, fontSize: 14 }}>{qibla.deg}° · {qibla.dir}</span>
             </Link>
           )
           // Y a-t-il une mosquée atteignable à pied ? Si oui, la Qibla est
@@ -583,12 +572,12 @@ export default function BoardVoyageur({
             // c'est la première raison d'ouvrir le site.
             <div className="board-hero" style={{ ...T.tile, background: 'linear-gradient(150deg, rgba(27,67,50,0.85), rgba(255,255,255,0.04))', borderColor: 'rgba(201,168,76,0.45)' }}>
               <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 10 }}>
-                <p style={{ ...T.lab, color: accent }}>
+                <p style={{ ...T.lab, color: accent, fontSize: 14 }}>
                   🕌 {fenetre.mode === 'current' ? (en ? 'Now' : 'Maintenant') : (en ? 'Next prayer' : 'Prochaine prière')} · {fenetre.key}
                 </p>
-                <p style={{ ...T.meta, fontWeight: 700 }}>{fmtClock(fenetre.start)}</p>
+                <p style={{ ...T.meta, fontWeight: 700, fontSize: 14 }}>{fmtClock(fenetre.start)}</p>
               </div>
-              <p style={{ fontFamily: "'Playfair Display', Georgia, serif", color: '#fdfaf3', fontSize: 30, fontWeight: 900, margin: '2px 0 0', lineHeight: 1.05 }}>
+              <p style={{ fontFamily: "'Playfair Display', Georgia, serif", color: '#fdfaf3', fontSize: 28, fontWeight: 900, margin: '1px 0 0', lineHeight: 1.05 }}>
                 {fenetre.mode === 'current'
                   ? (en ? `ends in ${fmtMin(minLeft)}` : `se termine dans ${fmtMin(minLeft)}`)
                   : (en ? `in ${fmtMin(minLeft)}` : `dans ${fmtMin(minLeft)}`)}
@@ -612,8 +601,8 @@ export default function BoardVoyageur({
                   qui parlent du MÊME geste — aller prier. Elles sont
                   maintenant réunies. Rien n'est retiré : tout est plié. */}
               {mosquee && (walkMin === null || walkMin <= MARCHE_MAX) && (
-                <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginTop: 8, flexWrap: 'wrap' }}>
-                  <p style={{ flex: 1, minWidth: 170, color: '#fdfaf3', fontSize: 14, margin: 0, lineHeight: 1.4 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 7, marginTop: 7, flexWrap: 'wrap' }}>
+                  <p style={{ flex: 1, minWidth: 170, color: '#fdfaf3', fontSize: 14, margin: 0, lineHeight: 1.38 }}>
                     {mosquee.source === 'communaute' ? '🤝' : mosquee.source === 'annuaire' ? '📒' : '🕌'} <strong><bdi>{mosquee.nom}</bdi></strong>
                     {/* ⚠️ LA SOURCE NE SE PLIE PAS. En compactant, je
                         l'avais laissée tomber pour gagner une ligne : la
@@ -635,7 +624,7 @@ export default function BoardVoyageur({
                     )}
                   </p>
                   <a href={itin(mosquee.lat, mosquee.lng)} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}
-                    style={{ minHeight: 44, display: 'inline-flex', alignItems: 'center', padding: '0 14px', borderRadius: 999, background: 'var(--or)', color: '#0b1a0f', fontWeight: 800, fontSize: 13.5, textDecoration: 'none' }}>
+                    style={{ minHeight: 44, display: 'inline-flex', alignItems: 'center', padding: '0 14px', borderRadius: 999, background: 'var(--or)', color: '#0b1a0f', fontWeight: 800, fontSize: 14, textDecoration: 'none' }}>
                     🚶 {en ? 'Directions' : 'Itinéraire'}
                   </a>
                   {qiblaPuce}
