@@ -1,46 +1,32 @@
-// Bouton flottant « Question halal ? » — le pont vers HalalGPT.
-// FR (voyageshalal.fr) → halalgpt.fr ; EN (gohalaltravel.com) → /halalgpt.
+// Bouton flottant vers HalalGPT — devenu PASTILLE DISCRÈTE le 15 août.
+// Mohamed, capture à l'appui : la pilule dorée « Question halal ? »
+// flottait en plein milieu du contenu et cassait la lecture (« vaut mieux
+// l'enlever ou le mettre dans un coin très discret »). Elle devient un
+// petit disque 🌙 de 44 px, collé au bord droit au-dessus du dock :
+// fond sombre, liseré or — repérable pour qui le cherche, invisible pour
+// qui lit. L'accessibilité garde le libellé complet (aria-label).
 //
-// LECON : les premieres versions calaient sa hauteur sur des pixels releves
-// sur UN seul ecran. Sur un telephone plus grand, il retombait sur le dock —
-// deux formes dorees qui se percutent. Il est donc desormais ancre sur la
-// GEOMETRIE DU DOCK, pas sur un vide suppose :
-//
-//   dock : bottom 10px + safe-area, hauteur ~62px
-//   pastille ➕ : deborde de 30px au-dessus du dock
-//   marge de respiration : 12px
-//   => 10 + 62 + 30 + 12 = 114px + safe-area
-//
-// Il passe ainsi au-dessus du dock ET de sa pastille sur tous les formats.
-// Taille contenue (44px de haut, 150px max) et or plein : petit mais
-// reperable. Il garde son texte — jamais une icone seule.
+// Ancré sur la GÉOMÉTRIE DU DOCK (leçon des premières versions) :
+//   dock 10px + hauteur 62px + débord ➕ 30px + marge 12px = 114px + safe-area.
 // zIndex 90 : sous les panneaux du dock (98-99), jamais par-dessus.
 export default function HalalGPTFab({ en = false }: { en?: boolean }) {
-  // Balise : ce bouton est sur toutes les pages, c'est notre plus gros
-  // emetteur potentiel — et jusqu'ici ses clics arrivaient anonymes chez
-  // HalalGPT, donc invisibles. On ne peut pas juger un emplacement qu'on
-  // ne voit pas.
   const href = en ? '/halalgpt' : 'https://halalgpt.fr?utm_source=voyageshalal&utm_medium=passerelle&utm_campaign=bouton-flottant'
-  const label = en ? 'Halal question?' : 'Question halal ?'
+  const label = en ? 'Halal question? Ask HalalGPT' : 'Question halal ? Demander à HalalGPT'
   return (
     <a
       href={href}
-      className="fixed right-3 md:right-6 bottom-[calc(114px+env(safe-area-inset-bottom,0px))] md:bottom-6 inline-flex items-center gap-1.5 h-11 px-3.5 rounded-full font-extrabold text-[12.5px] whitespace-nowrap transition-transform hover:scale-105 active:scale-95"
+      className="fixed right-3 md:right-6 bottom-[calc(114px+env(safe-area-inset-bottom,0px))] md:bottom-6 inline-flex items-center justify-center rounded-full transition-transform hover:scale-105 active:scale-95"
       style={{
         zIndex: 90,
-        maxWidth: 150,
-        background: 'linear-gradient(145deg, #d8b95e, #c9a84c)',
-        color: '#0b1a0f',
-        // liseré sombre + ombre portée : le bouton se détache du fond sans
-        // écraser le contenu qu'il survole
-        boxShadow: '0 4px 14px rgba(0,0,0,0.4), 0 0 0 1.5px rgba(11,26,15,0.35)',
+        width: 44, height: 44,
+        background: 'rgba(11,26,15,0.85)',
+        border: '1.5px solid rgba(201,168,76,0.65)',
+        boxShadow: '0 3px 10px rgba(0,0,0,0.35)',
       }}
       aria-label={label}
+      title={label}
     >
-      <span className="text-sm leading-none" aria-hidden>
-        🌙
-      </span>
-      <span>{label}</span>
+      <span className="text-lg leading-none" aria-hidden>🌙</span>
     </a>
   )
 }
