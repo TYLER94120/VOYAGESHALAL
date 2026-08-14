@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { replier } from '@/lib/titreSpot'
+import { replier } from '@/lib/titreSpot.mjs'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { getDomainSEO } from '@/lib/domain'
