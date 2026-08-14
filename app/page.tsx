@@ -11,7 +11,6 @@ import SurMesure from '@/components/lieux/SurMesure'
 import { positionServeur } from '@/lib/positionServeur'
 import { localizedHref } from '@/lib/slugs'
 import { HomeScoreRanking } from '@/components/HomeScoreRanking'
-import SearchBarHome from '@/components/search/SearchBarHome'
 import { photoLargeur } from '@/lib/imageLargeur'
 import { getDomainSEO, FR_URL, EN_URL } from '@/lib/domain'
 import { getVillesCounts } from '@/lib/villeStats'
@@ -175,7 +174,14 @@ export default async function HomePage() {
           première chose qu'on voit après l'heure de la prière — et la
           ligne « Manger » du tableau de bord a été retirée, elle faisait
           doublon avec lui. Français d'abord ; l'anglais suit. */}
-      <SurMesure posInitiale={posIP} en={isEN} />
+      {/* 🗺️ 16 août — UNE SEULE BARRE DE RECHERCHE SUR L'ACCUEIL.
+          Mohamed : « Il y a DEUX barres : "Dis-moi ce que tu cherches" et
+          "Istanbul, Marrakech, Dubaï…". C'est le même geste, deux fois,
+          et c'est ce qui prend toute la hauteur. » Celle-ci comprend
+          désormais les deux — « un kebab pas loin » cherche autour de
+          soi, « Istanbul » ouvre le guide, « une pâtisserie à Tirana »
+          cherche là-bas — et elle porte le H1 en sous-titre. */}
+      <SurMesure posInitiale={posIP} en={isEN} titrePage />
 
       {/* 🖥️ RANGÉE DU BAS — sur PC, Destinations et « manger halal près
           de moi » se mettent CÔTE À CÔTE : Mohamed, 15 août, « la ligne du
@@ -184,30 +190,12 @@ export default async function HomePage() {
           d'une section est récupérée et tout tient. Sur mobile, la pile
           ne change pas. Sur le domaine anglais (pas encore de widget), la
           section Destinations reprend seule toute la largeur. */}
-      {/* 🔎 LE TITRE ET LA RECHERCHE DE VILLE DESCENDENT ICI.
-          Ordre de Mohamed, 15 août : prière · autour de moi · destinations.
-          Chercher « Istanbul » n'est PAS le besoin de quelqu'un qui est
-          dehors maintenant : c'est celui de quelqu'un qui prépare un
-          voyage. Le H1 accompagne donc les destinations, et le premier
-          écran est rendu à la prière. */}
-      <section style={{ background: 'var(--nuit)' }} className="pt-2 pb-1 px-4">
-        <div className="max-w-3xl mx-auto text-center">
-          <div style={{ textAlign: 'center' }}>
-            {/* Le H1 garde son texte complet pour Google, mais à l'écran il
-                redevient une ligne discrète : sur un écran épuré, c'est la
-                RECHERCHE qui est la vedette de cette zone, pas la phrase. */}
-            <h1
-              className="text-white/85"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 800, fontSize: 16.5, lineHeight: 1.3, margin: '0 0 8px' }}
-            >
-              {t.heroTitlePre}<span className="gold-em">{t.heroTitleGold}</span>{t.heroTitlePost}
-            </h1>
-            <div style={{ background: 'rgba(255,255,255,0.1)', border: '1.5px solid rgba(201,168,76,0.45)', borderRadius: 16, padding: 4 }}>
-              <SearchBarHome />
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* 🗺️ 16 août — LA DEUXIÈME BARRE DE RECHERCHE EST SUPPRIMÉE.
+          Elle ne faisait qu'une chose que la barre unique fait désormais
+          mieux : ouvrir le guide d'une ville. Le H1 est parti avec elle,
+          en sous-titre de la barre unique (voir <SurMesure titrePage />).
+          C'est cette section — titre + champ + marges — qui coûtait la
+          hauteur empêchant tout de tenir sur un écran. */}
 
       <div className="rangee-bas" style={{ background: 'var(--nuit)' }}>
       {/* 🌍 DESTINATIONS — remontées JUSTE SOUS le tableau de bord.

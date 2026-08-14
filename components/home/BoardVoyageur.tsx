@@ -555,10 +555,26 @@ export default function BoardVoyageur({
           // Dans la carte prière : même contenu, séparé par un filet — UNE
           // seule boîte pour toute la question « où prier ».
           const horairesDansCarte = horairesLigne && (
-            <div style={{ marginTop: 12, paddingTop: 10, borderTop: '1px solid rgba(253,250,243,0.12)' }}>
+            // Ligne 3 : les cinq horaires, fins, la suivante en surbrillance.
+            <div style={{ marginTop: 9, paddingTop: 8, borderTop: '1px solid rgba(253,250,243,0.12)' }}>
               {horairesLigne}
             </div>
           )
+          // 🧭 LA QIBLA EN PASTILLE — même information, même destination,
+          // mais posée à côté de l'itinéraire plutôt que sur une ligne à
+          // elle. Elle garde ses 44 px de hauteur de cible tactile.
+          const qiblaPuce = (
+            <Link href="/qibla" onClick={(e) => e.stopPropagation()}
+              aria-label={en ? 'Qibla compass' : 'Boussole Qibla'}
+              style={{ minHeight: 44, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 6, padding: '0 13px',
+                textDecoration: 'none', borderRadius: 999, border: '1.5px solid rgba(201,168,76,0.6)', background: 'rgba(201,168,76,0.10)' }}>
+              <span style={{ fontSize: 16, transform: `rotate(${qibla.deg}deg)`, display: 'inline-block', lineHeight: 1 }} aria-hidden>🧭</span>
+              <span style={{ color: 'var(--or)', fontWeight: 900, fontSize: 13.5 }}>{qibla.deg}° · {qibla.dir}</span>
+            </Link>
+          )
+          // Y a-t-il une mosquée atteignable à pied ? Si oui, la Qibla est
+          // déjà sur la ligne 2 et le grand bouton ferait doublon.
+          const qiblaSurLigne2 = !!mosquee && (walkMin === null || walkMin <= MARCHE_MAX)
           const priereWide = (
             // Ouvert : un tap sur le fond REFERME (l'accordéon se replie là où
             // il s'est ouvert). Les actions vivent sur leurs propres boutons.
@@ -577,13 +593,6 @@ export default function BoardVoyageur({
                   ? (en ? `ends in ${fmtMin(minLeft)}` : `se termine dans ${fmtMin(minLeft)}`)
                   : (en ? `in ${fmtMin(minLeft)}` : `dans ${fmtMin(minLeft)}`)}
               </p>
-              {statut && (
-                <p style={{ fontSize: 13, fontWeight: 800, color: accent, margin: '4px 0 0' }}>
-                  {statut === 'vert' ? (en ? '🟢 You have time to reach the mosque' : '🟢 Tu as le temps d\'arriver à la mosquée')
-                    : statut === 'orange' ? (en ? '🟠 Leave now' : '🟠 Pars maintenant')
-                    : (en ? '🔴 Pray where you can' : '🔴 Prie où tu peux')}
-                </p>
-              )}
               {mosquee === undefined && <p style={{ ...T.meta, marginTop: 8 }}>{en ? 'Finding the nearest prayer place…' : 'Recherche du lieu de prière le plus proche…'}</p>}
               {/* ⚠️ « 81 MIN À PIED » N'EST PAS UNE RÉPONSE.
                   Capture de Mohamed, à Fezouane : la tuile proposait une
@@ -595,19 +604,41 @@ export default function BoardVoyageur({
                   on dit la distance en voiture, on donne l'itinéraire en
                   voiture, et on met en avant la Qibla — parce que la vraie
                   réponse, à cette distance, c'est de prier sur place. */}
+              {/* 📏 16 août — LA PRIÈRE TIENT EN TROIS LIGNES.
+                  Mohamed : « ligne 2 : mosquée + ≈ marche + statut +
+                  [Itinéraire] + 🧭 Qibla ». Le statut (🟢/🟠/🔴) vivait
+                  sur sa propre ligne et la Qibla sur un bouton pleine
+                  largeur de 48 px : trois lignes pour trois informations
+                  qui parlent du MÊME geste — aller prier. Elles sont
+                  maintenant réunies. Rien n'est retiré : tout est plié. */}
               {mosquee && (walkMin === null || walkMin <= MARCHE_MAX) && (
-                <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginTop: 10, flexWrap: 'wrap' }}>
-                  <p style={{ flex: 1, minWidth: 170, color: '#fdfaf3', fontSize: 14, margin: 0, lineHeight: 1.45 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginTop: 8, flexWrap: 'wrap' }}>
+                  <p style={{ flex: 1, minWidth: 170, color: '#fdfaf3', fontSize: 14, margin: 0, lineHeight: 1.4 }}>
                     {mosquee.source === 'communaute' ? '🤝' : mosquee.source === 'annuaire' ? '📒' : '🕌'} <strong><bdi>{mosquee.nom}</bdi></strong>
-                    <span style={{ color: 'rgba(253,250,243,0.78)' }}> · {walkMin} {en ? 'min walk' : 'min à pied'} · {
+                    {/* ⚠️ LA SOURCE NE SE PLIE PAS. En compactant, je
+                        l'avais laissée tomber pour gagner une ligne : la
+                        mesure a montré une carte plus courte et un écran
+                        qui ne disait plus si l'adresse venait d'un
+                        voyageur ou d'un annuaire à vérifier. Vérifié,
+                        signalé et inconnu se distinguent TOUJOURS — ça
+                        n'est pas une ligne qu'on sacrifie à la hauteur. */}
+                    <span style={{ color: 'rgba(253,250,243,0.78)' }}> · ≈ {walkMin} {en ? 'min walk' : 'min à pied'} · {
                       mosquee.source === 'communaute' ? (en ? 'shared by a traveler' : 'partagé par un voyageur')
                         : (en ? 'listed · to verify' : 'référencé · à vérifier')
                     }</span>
+                    {statut && (
+                      <span style={{ color: accent, fontWeight: 800 }}> · {
+                        statut === 'vert' ? (en ? '🟢 you have time' : '🟢 tu as le temps')
+                          : statut === 'orange' ? (en ? '🟠 leave now' : '🟠 pars maintenant')
+                          : (en ? '🔴 pray where you can' : '🔴 prie où tu peux')
+                      }</span>
+                    )}
                   </p>
                   <a href={itin(mosquee.lat, mosquee.lng)} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}
-                    style={{ minHeight: 44, display: 'inline-flex', alignItems: 'center', padding: '0 16px', borderRadius: 999, background: 'var(--or)', color: '#0b1a0f', fontWeight: 800, fontSize: 13.5, textDecoration: 'none' }}>
+                    style={{ minHeight: 44, display: 'inline-flex', alignItems: 'center', padding: '0 14px', borderRadius: 999, background: 'var(--or)', color: '#0b1a0f', fontWeight: 800, fontSize: 13.5, textDecoration: 'none' }}>
                     🚶 {en ? 'Directions' : 'Itinéraire'}
                   </a>
+                  {qiblaPuce}
                 </div>
               )}
 
@@ -645,16 +676,18 @@ export default function BoardVoyageur({
                   prière, la mosquée la plus proche et la Qibla ; le
                   visiteur qui cherche où prier ne doit pas balayer trois
                   endroits ». Elle vivait seule, deux cartes plus bas. */}
-              <Link href="/qibla" onClick={(e) => e.stopPropagation()}
-                aria-label={en ? 'Qibla compass' : 'Boussole Qibla'}
-                style={{ marginTop: 10, minHeight: 48, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8,
-                  textDecoration: 'none', borderRadius: 999, border: '1.5px solid rgba(201,168,76,0.6)', background: 'rgba(201,168,76,0.10)' }}>
-                <span style={{ fontSize: 18, transform: `rotate(${qibla.deg}deg)`, display: 'inline-block', lineHeight: 1 }} aria-hidden>🧭</span>
-                <span style={{ color: 'var(--or)', fontWeight: 900, fontSize: 14 }}>
-                  {qibla.deg}° · {qibla.dir}
-                  <span style={{ fontWeight: 800, fontSize: 12.5, marginLeft: 6, opacity: 0.85 }}>Qibla</span>
-                </span>
-              </Link>
+              {!qiblaSurLigne2 && (
+                <Link href="/qibla" onClick={(e) => e.stopPropagation()}
+                  aria-label={en ? 'Qibla compass' : 'Boussole Qibla'}
+                  style={{ marginTop: 10, minHeight: 48, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8,
+                    textDecoration: 'none', borderRadius: 999, border: '1.5px solid rgba(201,168,76,0.6)', background: 'rgba(201,168,76,0.10)' }}>
+                  <span style={{ fontSize: 18, transform: `rotate(${qibla.deg}deg)`, display: 'inline-block', lineHeight: 1 }} aria-hidden>🧭</span>
+                  <span style={{ color: 'var(--or)', fontWeight: 900, fontSize: 14 }}>
+                    {qibla.deg}° · {qibla.dir}
+                    <span style={{ fontWeight: 800, fontSize: 12.5, marginLeft: 6, opacity: 0.85 }}>Qibla</span>
+                  </span>
+                </Link>
+              )}
               {horairesDansCarte}
             </div>
           )
