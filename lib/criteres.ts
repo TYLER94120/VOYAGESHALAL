@@ -26,13 +26,15 @@
 // affirmation sur un restaurant.
 
 export type Quoi = 'pizza' | 'kebab' | 'burger' | 'oriental' | 'asiatique' | 'petit-dejeuner' | 'patisserie' | 'peu-importe'
-export type Distance = 'pied' | 'court' | 'peu-importe'
+// 🚶 COMMENT TU Y VAS — ce n'est pas seulement de l'affichage : le mode
+// change le RAYON et le TRI (§5.3 de l'ordre du 15 août au soir).
+export type ModeChoisi = 'pied' | 'voiture' | 'transports' | 'peu-importe'
 export type Budget = 'petit' | 'moyen' | 'peu-importe'
 export type Exigence = 'verifies' | 'signales'
 
 export interface Criteres {
   quoi: Quoi
-  distance: Distance
+  mode: ModeChoisi
   budget: Budget
   exigence: Exigence
   ouvertMaintenant: boolean
@@ -47,7 +49,7 @@ export interface Criteres {
 
 export const CRITERES_DEFAUT: Criteres = {
   quoi: 'peu-importe',
-  distance: 'peu-importe',
+  mode: 'peu-importe',
   budget: 'peu-importe',
   // Par défaut on montre TOUT ce qui est signalé halal, en le disant : se
   // limiter aux adresses vérifiées renverrait presque toujours zéro
@@ -69,9 +71,11 @@ const MOTIFS: { champ: keyof Criteres; valeur: unknown; re: RegExp }[] = [
   { champ: 'quoi', valeur: 'asiatique', re: /\basiat|\basian|\bchinois|\bchinese|\bjapon|\bjapanese|\bsushi|\bthaï|\bthai\b|\bindien|\bindian|\bwok\b|\bnouilles|\bnoodles/i },
   { champ: 'quoi', valeur: 'petit-dejeuner', re: /petit[- ]d[ée]j|\bbrunch|\bbreakfast|\bmsemen|\bbaghrir/i },
   { champ: 'quoi', valeur: 'patisserie', re: /\bp[âa]tisser|\bpastry|\bg[âa]teau|\bcake\b|\bdessert|\bcr[êe]pe|\bglace\b|\bice cream|\bcaf[ée]\b|\bcoffee/i },
-  // — JUSQU'OÙ
-  { champ: 'distance', valeur: 'pied', re: /\bà pied\b|\bpas loin\b|\btout près\b|\bjuste à c[ôo]t[ée]\b|\bwalking\b|\bon foot\b|\bnearby\b|\bclose by\b|\bautour de moi\b/i },
-  { champ: 'distance', valeur: 'court', re: /\ben voiture\b|\bcourt trajet\b|\bquelques minutes\b|\bshort drive\b|\bby car\b|\b15 min/i },
+  // — COMMENT TU Y VAS. « en bas de chez moi » = à pied, « je suis sur la
+  // route » = voiture : le mode se devine dans la phrase (§5.3).
+  { champ: 'mode', valeur: 'pied', re: /\bà pied\b|\bpas loin\b|\btout près\b|\bjuste à c[ôo]t[ée]\b|\ben bas de chez moi\b|\bdans le coin\b|\bwalking\b|\bon foot\b|\bnearby\b|\bclose by\b|\baround the corner\b|\bautour de moi\b/i },
+  { champ: 'mode', valeur: 'voiture', re: /\ben voiture\b|\bje conduis\b|\bsur la route\b|\ben bagnole\b|\bby car\b|\bdriving\b|\bshort drive\b|\bi.m driving\b/i },
+  { champ: 'mode', valeur: 'transports', re: /\ben transports?\b|\ben m[ée]tro\b|\ben bus\b|\ben tram\b|\bby (metro|bus|tram|transit)\b|\bpublic transport\b/i },
   // — BUDGET
   { champ: 'budget', valeur: 'petit', re: /\bpas cher\b|\bpas ch[èe]re\b|\bbon march[ée]\b|\b[ée]conomique\b|\bpetit budget\b|\bpetit prix\b|\bcheap\b|\bbudget\b|\baffordable\b|\binexpensive\b/i },
   { champ: 'budget', valeur: 'moyen', re: /\bmoyen\b|\bcorrect\b|\bmid[- ]range\b|\bmoderate\b/i },
@@ -120,8 +124,9 @@ export function resumerCriteres(c: Criteres, en: boolean): string[] {
   if (c.quoi !== 'peu-importe') L.push(QUOI[c.quoi][en ? 1 : 0])
   if (c.budget === 'petit') L.push(en ? 'cheap' : 'petit prix')
   if (c.budget === 'moyen') L.push(en ? 'mid-range' : 'prix moyen')
-  if (c.distance === 'pied') L.push(en ? 'walking distance' : 'à pied')
-  if (c.distance === 'court') L.push(en ? 'short drive' : 'court trajet')
+  if (c.mode === 'pied') L.push(en ? 'on foot' : 'à pied')
+  if (c.mode === 'voiture') L.push(en ? 'by car' : 'en voiture')
+  if (c.mode === 'transports') L.push(en ? 'by transit' : 'en transports')
   if (c.ouvertMaintenant) L.push(en ? 'open now' : 'ouvert maintenant')
   if (c.exigence === 'verifies') L.push(en ? 'community-verified only' : 'vérifiées seulement')
   if (c.sallePriere) L.push(en ? 'prayer room nearby' : 'salle de prière')

@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server'
 import { Redis } from '@upstash/redis'
 import { listAllSpots } from '@/lib/prayerSpots'
 import { CRITERES_DEFAUT, type Criteres } from '@/lib/criteres'
+import { minutes, modeSuivant, plafondMin, rayonM, type Mode } from '@/lib/trajet'
 
 // 🍽 LE SUR MESURE — POST /api/lieux
 //
@@ -103,7 +104,11 @@ function distM(a: number, b: number, c: number, d: number) {
   return Math.round(R * 2 * Math.atan2(Math.sqrt(x), Math.sqrt(1 - x)))
 }
 
-const RAYON: Record<Criteres['distance'], number> = { pied: 1200, court: 5000, 'peu-importe': 12000 }
+/** Le mode effectif : « peu importe » devient la voiture, qui couvre le
+ *  plus de cas sans jamais annoncer une marche absurde. */
+function modeDe(c: Criteres): Mode {
+  return c.mode === 'peu-importe' ? 'voiture' : c.mode
+}
 
 const TEXTE: Record<Criteres['quoi'], string> = {
   pizza: 'halal pizza', kebab: 'halal kebab', burger: 'halal burger',
@@ -114,13 +119,13 @@ const TEXTE: Record<Criteres['quoi'], string> = {
 
 // ─────────────────────── nos spots vérifiés ───────────────────────
 
-async function nosSpots(lat: number, lng: number, c: Criteres): Promise<Fiche[]> {
+async function nosSpots(lat: number, lng: number, c: Criteres, rayon: number): Promise<Fiche[]> {
   try {
     const tous = await listAllSpots()
     return tous
       .filter((s) => s.categorie === 'resto' || s.categorie === 'boucherie')
       .map((s) => ({ s, d: distM(lat, lng, s.lat, s.lng) }))
-      .filter(({ d }) => d <= RAYON[c.distance])
+      .filter(({ d }) => d <= rayon)
       .sort((a, b) => a.d - b.d)
       .slice(0, RETENUS)
       .map(({ s, d }) => ({
@@ -154,7 +159,18 @@ interface Candidat {
   distanceM: number
 }
 
-async function passe1(lat: number, lng: number, c: Criteres, cle: string, lang: string): Promise<Candidat[] | null> {
+/** Un rectangle englobant le cercle de rayon `m` — la forme attendue par
+ *  `locationRestriction` du Text Search. */
+function cadre(lat: number, lng: number, m: number) {
+  const dLat = m / 111_320
+  const dLng = m / (111_320 * Math.max(0.2, Math.cos((lat * Math.PI) / 180)))
+  return {
+    low: { latitude: lat - dLat, longitude: lng - dLng },
+    high: { latitude: lat + dLat, longitude: lng + dLng },
+  }
+}
+
+async function passe1(lat: number, lng: number, c: Criteres, cle: string, lang: string, rayon: number): Promise<Candidat[] | null> {
   const ac = new AbortController()
   const t = setTimeout(() => ac.abort(), DELAI)
   try {
@@ -166,7 +182,11 @@ async function passe1(lat: number, lng: number, c: Criteres, cle: string, lang: 
         languageCode: lang,
         pageSize: CANDIDATS,
         openNow: c.ouvertMaintenant || undefined,
-        locationBias: { circle: { center: { latitude: lat, longitude: lng }, radius: RAYON[c.distance] } },
+        // 🎯 locationRESTRICTION et non locationBias : la contrainte est DURE.
+        // Avec un simple biais, Google renvoyait des adresses à 90 minutes
+        // « parce qu'elles correspondaient bien » — c'est le défaut du
+        // 15 août au soir. Ici, hors du rayon = hors de la réponse.
+        locationRestriction: { rectangle: cadre(lat, lng, rayon) },
       }),
     })
     if (!r.ok) return null
@@ -192,14 +212,20 @@ async function passe1(lat: number, lng: number, c: Criteres, cle: string, lang: 
 }
 
 /** Le tri : c'est lui qui rend le résultat « sur mesure ». */
-function classer(cands: Candidat[], c: Criteres): Candidat[] {
+function classer(cands: Candidat[], c: Criteres, rayon: number): Candidat[] {
+  const mode = modeDe(c)
   return [...cands]
+    // 🚧 LE FILTRE DUR : rien au-delà du rayon qui a du sens. Mieux vaut
+    // deux adresses que trois dont une absurde (§5.4) — on ne complète
+    // JAMAIS avec du lointain pour faire nombre.
+    .filter((x) => x.distanceM <= rayon)
     .filter((x) => (c.budget === 'petit' ? (x.prix ?? 2) <= 2 : c.budget === 'moyen' ? (x.prix ?? 2) <= 3 : true))
     .map((x) => {
       let s = 0
-      // Proximité : décisive quand le visiteur a dit « à pied ».
-      const poidsDist = c.distance === 'pied' ? 3 : c.distance === 'court' ? 2 : 1
-      s -= (x.distanceM / 1000) * poidsDist
+      // Le mode change le TRI, pas seulement l'affichage (§5.3) : à pied,
+      // chaque minute compte trois fois plus qu'en voiture.
+      const poids = mode === 'pied' ? 3 : mode === 'transports' ? 2 : 1
+      s -= minutes(x.distanceM, mode) * poids * 0.25
       // Une note ne vaut que par son nombre d'avis : 5,0 sur 3 avis ne
       // dit rien, 4,4 sur 900 dit beaucoup.
       if (x.note && x.nbAvis) s += x.note * Math.min(1, Math.log10(x.nbAvis + 1) / 2.5) * 1.6
@@ -285,7 +311,7 @@ function heureFermeture(desc?: string[]): string | undefined {
 
 // ─────────────────────── repli OpenStreetMap ───────────────────────
 
-async function viaOSM(origin: string, lat: number, lng: number, c: Criteres): Promise<Fiche[]> {
+async function viaOSM(origin: string, lat: number, lng: number, rayon: number): Promise<Fiche[]> {
   const ac = new AbortController()
   const t = setTimeout(() => ac.abort(), DELAI_OSM)
   try {
@@ -299,7 +325,7 @@ async function viaOSM(origin: string, lat: number, lng: number, c: Criteres): Pr
         statut: 'signalé halal sur OpenStreetMap — à confirmer sur place',
         source: 'osm' as const,
       }))
-      .filter((x) => x.distanceM <= RAYON[c.distance])
+      .filter((x) => x.distanceM <= rayon)
       .sort((a, b) => a.distanceM - b.distanceM)
       .slice(0, RETENUS + AUTRES)
   } catch { return [] } finally { clearTimeout(t) }
@@ -338,7 +364,7 @@ export async function POST(req: Request) {
   await compter('surmesure:recherches', corps.ecrit ? 'surmesure:ecrites' : 'surmesure:cliquees')
 
   const zone = `${lat.toFixed(2)},${lng.toFixed(2)}`
-  const empreinte = `${zone}:${c.quoi}:${c.distance}:${c.budget}:${c.exigence}:${c.ouvertMaintenant ? 1 : 0}:${lang}`
+  const empreinte = `${zone}:${c.quoi}:${c.mode}:${c.budget}:${c.exigence}:${c.ouvertMaintenant ? 1 : 0}:${lang}`
   if (r) {
     try {
       const cache = await r.get<{ fiches: Fiche[]; autres: Fiche[]; source: string }>(`surmesure:cache:${empreinte}`)
@@ -351,7 +377,13 @@ export async function POST(req: Request) {
 
   const origin = new URL(req.url).origin
   const cle = process.env.GOOGLE_PLACES_KEY
-  const spots = await nosSpots(lat, lng, c)
+
+  // 📏 LE RAYON QUI A DU SENS — calculé une fois, appliqué partout : à
+  // l'appel Google, à nos spots, au repli OSM, et au tri. C'est lui qui
+  // interdit la pâtisserie à 90 minutes.
+  const mode = modeDe(c)
+  const rayon = rayonM(c, mode)
+  const spots = await nosSpots(lat, lng, c, rayon)
 
   let fiches: Fiche[] = []
   let autres: Fiche[] = []
@@ -362,10 +394,10 @@ export async function POST(req: Request) {
   if (c.exigence === 'verifies') {
     fiches = spots.slice(0, RETENUS)
   } else if (cle) {
-    const cands = await passe1(lat, lng, c, cle, lang)
+    const cands = await passe1(lat, lng, c, cle, lang, rayon)
     if (cands !== null) etatGoogle = cands.length ? 'ok' : 'vide'
     if (cands?.length) {
-      const classes = classer(cands, c).filter((x) => !spots.some((s) => distM(s.lat, s.lng, x.lat, x.lng) < 60))
+      const classes = classer(cands, c, rayon).filter((x) => !spots.some((s) => distM(s.lat, s.lng, x.lat, x.lng) < 60))
       const placesRetenues = classes.slice(0, Math.max(0, RETENUS - spots.length))
       // PASSE 2 : uniquement sur les retenues.
       const enrichies = await Promise.all(placesRetenues.map((x) => enrichir(x, cle, lang, origin)))
@@ -381,7 +413,7 @@ export async function POST(req: Request) {
   }
 
   if (source !== 'google' && c.exigence !== 'verifies') {
-    const osm = await viaOSM(origin, lat, lng, c)
+    const osm = await viaOSM(origin, lat, lng, rayon)
     if (osm.length) {
       source = 'osm'
       const sansDoublon = osm.filter((o) => !spots.some((s) => distM(s.lat, s.lng, o.lat, o.lng) < 60))
@@ -392,8 +424,28 @@ export async function POST(req: Request) {
     }
   }
 
+  // §5.5 — quand le rayon qui a du sens ne donne rien (ou trop peu), on
+  // ne s'élargit PAS tout seul : on compte ce qu'il y aurait plus loin et
+  // on laisse le visiteur décider. Ce second appel n'a lieu QUE dans ce
+  // cas, et il n'utilise que les champs de tri (les moins chers).
+  let plusLoin: { minutes: number; mode: Mode; nombre: number } | null = null
+  if (cle && fiches.length < RETENUS && c.exigence !== 'verifies') {
+    const suivant = modeSuivant(mode)
+    if (suivant) {
+      const grand = rayonM(c, suivant) * 2
+      const large = await passe1(lat, lng, c, cle, lang, grand)
+      const enPlus = (large ?? []).filter((x) => x.distanceM > rayon).length
+      if (enPlus > 0) plusLoin = { minutes: plafondMin(c, suivant) * 2, mode: suivant, nombre: enPlus }
+    }
+  }
+
   await compter(fiches.length ? 'surmesure:avec' : 'surmesure:vides')
-  const reponse = { fiches, autres, source, etatGoogle }
+  const reponse = {
+    fiches, autres, source, etatGoogle,
+    // Le client a besoin du mode pour ÉCRIRE le temps de trajet, et du
+    // plafond pour dire « à moins de 10 minutes à pied ».
+    mode, plafondMin: plafondMin(c, mode), plusLoin,
+  }
   if (r && source === 'google') {
     try { await r.set(`surmesure:cache:${empreinte}`, reponse, { ex: CACHE_S }) } catch { /* jamais bloquant */ }
   }
