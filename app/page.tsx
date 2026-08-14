@@ -9,6 +9,7 @@ import { guides } from '@/lib/data'
 import NearbySpotsHome from '@/components/community/NearbySpotsHome'
 import RecentSpotsHome from '@/components/spots/RecentSpotsHome'
 import BoardVoyageur from '@/components/home/BoardVoyageur'
+import MangerPresDeMoi from '@/components/home/MangerPresDeMoi'
 import { positionServeur } from '@/lib/positionServeur'
 import { localizedHref } from '@/lib/slugs'
 import { HomeScoreRanking } from '@/components/HomeScoreRanking'
@@ -243,6 +244,13 @@ export default async function HomePage() {
 
       {/* 💎 Le cœur : derniers spots partagés + spots près de toi
           (le Radar Prière vit désormais dans le Board voyageur ci-dessus) */}
+      {/* 🍽 Widget « manger halal près de moi » — ordre du 14 août au soir :
+          « La priorité est Google Maps. » Une seule page pour valider :
+          l'accueil FRANÇAIS. L'anglais suivra quand le français marche.
+          Prêt-pour-la-clé : sans GOOGLE_PLACES_KEY il répond avec nos
+          spots + OpenStreetMap et le dit sobrement. */}
+      {!isEN && <MangerPresDeMoi posInitiale={posIP} />}
+
       <RecentSpotsHome />
       <NearbySpotsHome />
 
