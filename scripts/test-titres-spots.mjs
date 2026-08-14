@@ -25,11 +25,16 @@ import { readFileSync } from 'node:fs'
 const TITRE_MAX = 60
 const DESCRIPTION_MAX = 160
 
-// On importe la VRAIE règle, pas une copie : Node lit le TypeScript
-// directement (--experimental-strip-types). Une copie recopiée à la main
-// finirait par diverger du fichier qu'elle prétend éprouver — et un test
-// qui teste autre chose que le code servi ne protège personne.
-const { titreSpot, descriptionSpot, replier, contientDuFrancais } = await import('../lib/titreSpot.ts')
+// On importe la VRAIE règle, pas une copie : une copie recopiée à la main
+// finirait par diverger du fichier qu'elle prétend éprouver, et un test qui
+// teste autre chose que le code servi ne protège personne.
+//
+// ⚠️ Le fichier est en .mjs, et c'est délibéré. Il a d'abord été importé en
+// .ts avec `--experimental-strip-types` : ce drapeau exige Node 22.6, la
+// plateforme de déploiement tourne en dessous, et cinq déploiements de
+// production ont échoué de suite. Un garde-fou ne doit jamais dépendre d'un
+// drapeau expérimental.
+const { titreSpot, descriptionSpot, replier, contientDuFrancais } = await import('../lib/titreSpot.mjs')
 
 const NOMS = [
   'Parc Astérix',

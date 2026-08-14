@@ -5,7 +5,7 @@ import { getSpot, listSpotsByVille, LIEU_LABELS } from '@/lib/prayerSpots'
 import { getDomainSEO } from '@/lib/domain'
 import JsonLd from '@/components/seo/JsonLd'
 import FavButton from '@/components/ui/FavButton'
-import { titreSpot, descriptionSpot } from '@/lib/titreSpot'
+import { titreSpot, descriptionSpot } from '@/lib/titreSpot.mjs'
 
 export const dynamic = 'force-dynamic' // lit Redis à la demande (données seed en direct)
 
