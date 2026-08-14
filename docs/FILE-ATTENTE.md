@@ -173,6 +173,34 @@ requêtes ces pages sortent réellement.
 
 ## Fait
 
+### Données structurées : 4 588 blocs, zéro défaut — 14 août
+**Un des cinq défauts que la ronde surveille, et que je n'avais jamais
+vérifié.** Un bloc JSON-LD invalide ne casse rien à l'écran : la page
+s'affiche normalement et l'on perd simplement les résultats enrichis dans
+Google, sans jamais le savoir.
+
+**Mesuré sur l'intégralité des deux sitemaps** — 810 pages en français,
+824 en anglais, **4 588 blocs de données structurées** :
+
+| Contrôle | Défauts |
+|---|---|
+| JSON illisible | **0** |
+| `@context` ou `@type` manquant | **0** |
+| `FAQPage` vide | **0** |
+| `Article` sans titre, date ou auteur | **0** |
+
+**Rien à corriger.** L'outil reste dans le dépôt
+(`scripts/audit-donnees-structurees.mjs`) pour que la prochaine
+vérification coûte une minute. Il n'est pas branché sur `npm run build` :
+il a besoin d'un serveur, contrairement aux autres garde-fous.
+
+**Le seul constat, versé à la file sans être présenté comme un chantier** :
+30 pages n'émettent aucune donnée structurée — les pages de liste
+(`/destinations`, `/guides`, `/blog`) et les outils (`/qibla`, `/quiz`).
+Un `ItemList` y serait recevable par Google, **mais le gain n'est pas
+démontré** : ce sont des pages de premier niveau, et rien ne dit qu'elles
+en tireraient un clic. À ne pas traiter avant d'avoir une raison mesurée.
+
 ### ⛔ « 37 fichiers en force-dynamic dont certains n'en ont pas besoin » : faux chantier, mesuré — 14 août
 Ce point traînait dans les consignes de cycle depuis le 10 août. **Mesuré
 plutôt que cru, et il n'y a rien à gagner.**
