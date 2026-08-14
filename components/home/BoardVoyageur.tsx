@@ -904,10 +904,14 @@ export default function BoardVoyageur({
           // reste épuré même en travaillant.
           return (
             <>
+              {/* 🍽 LA LIGNE « MANGER » A QUITTÉ LE TABLEAU DE BORD.
+                  Mohamed, 15 août : « enlève de la page d'accueil le
+                  widget manger, je veux que cette nouvelle fonction soit
+                  au cœur du site — on tient un truc ». Le bloc « Près de
+                  moi » juste en dessous fait la même chose en mieux :
+                  Google Maps, trois catégories, réponse IA. Deux portes
+                  vers la même pièce, la moins bonne se ferme. */}
               {ouvert === 'priere' ? priereWide : priereSlim}
-              {ouvert === 'manger'
-                ? (mangerWide || mangerVide || mangerOuvertVide)
-                : mangerSlim}
               {spotsWidget}
             </>
           )

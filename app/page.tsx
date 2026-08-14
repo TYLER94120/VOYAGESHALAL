@@ -183,6 +183,16 @@ export default async function HomePage() {
         }
       />
 
+      {/* ⭐ LE CŒUR DU SITE — Mohamed, 15 août : « je veux que cette
+          nouvelle fonction soit au cœur du site et au centre de la page
+          d'accueil, on tient un truc ». « Près de moi » quitte la rangée
+          du bas où il partageait la place avec les destinations : il
+          prend toute la largeur, juste sous le tableau de bord. C'est la
+          première chose qu'on voit après l'heure de la prière — et la
+          ligne « Manger » du tableau de bord a été retirée, elle faisait
+          doublon avec lui. Français d'abord ; l'anglais suit. */}
+      {!isEN && <PresDeMoi posInitiale={posIP} />}
+
       {/* 🖥️ RANGÉE DU BAS — sur PC, Destinations et « manger halal près
           de moi » se mettent CÔTE À CÔTE : Mohamed, 15 août, « la ligne du
           bas est coupée, elle doit rentrer dans la page ». Empilés, les
@@ -191,12 +201,7 @@ export default async function HomePage() {
           ne change pas. Sur le domaine anglais (pas encore de widget), la
           section Destinations reprend seule toute la largeur. */}
       <div className="rangee-bas" style={{ background: 'var(--nuit)' }}>
-      {/* 🍽 Widget « manger halal près de moi » — ordre du 14 août au soir :
-          « La priorité est Google Maps. » Une seule page pour valider :
-          l'accueil FRANÇAIS. L'anglais suivra quand le français marche.
-          Prêt-pour-la-clé : sans GOOGLE_PLACES_KEY il répond avec nos
-          spots + OpenStreetMap et le dit sobrement. */}
-      {!isEN && <PresDeMoi posInitiale={posIP} />}
+
 
       {/* 🌍 DESTINATIONS — remontées JUSTE SOUS le tableau de bord.
           Mohamed, 15 août : « les destinations avec les images, c'est
