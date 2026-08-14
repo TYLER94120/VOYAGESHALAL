@@ -168,9 +168,12 @@ export default async function HomePage() {
         posInitiale={posIP}
         recherche={
           <div style={{ textAlign: 'center' }}>
+            {/* Le H1 garde son texte complet pour Google, mais à l'écran il
+                redevient une ligne discrète : sur un écran épuré, c'est la
+                RECHERCHE qui est la vedette de cette zone, pas la phrase. */}
             <h1
-              className="text-xl sm:text-2xl text-white leading-[1.12] mb-2"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 900 }}
+              className="text-white/85"
+              style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 800, fontSize: 16.5, lineHeight: 1.3, margin: '0 0 8px' }}
             >
               {t.heroTitlePre}<span className="gold-em">{t.heroTitleGold}</span>{t.heroTitlePost}
             </h1>

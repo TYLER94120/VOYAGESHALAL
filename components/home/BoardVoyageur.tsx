@@ -543,8 +543,11 @@ export default function BoardVoyageur({
           // cinq horaires tout en bas. L'œil devait recoller les morceaux.
           // Les cinq horaires viennent maintenant SOUS la tuile prière,
           // dans la même zone visuelle : une question, une carte.
-          const horairesStrip = journee && (
-            <Link href={localizedHref('/horaires-priere', en)} className="board-strip" style={{ ...T.tile, marginTop: 8, display: 'flex', justifyContent: 'space-between', gap: 4, padding: '11px 10px', textDecoration: 'none' }}>
+          // Rendu en simple <div> quand il vit DANS la carte prière (elle
+          // navigue déjà vers /horaires-priere : pas de lien dans un lien),
+          // en <Link> quand il est seul (bandeau prière compact).
+          const horairesLigne = journee && (
+            <div style={{ display: 'flex', justifyContent: 'space-between', gap: 4 }}>
               {journee.map(({ k, d }) => {
                 const active = fenetre.key === k
                 return (
@@ -554,6 +557,18 @@ export default function BoardVoyageur({
                   </div>
                 )
               })}
+            </div>
+          )
+          // Dans la carte prière : même contenu, séparé par un filet — UNE
+          // seule boîte pour toute la question « où prier ».
+          const horairesDansCarte = horairesLigne && (
+            <div style={{ marginTop: 12, paddingTop: 10, borderTop: '1px solid rgba(253,250,243,0.12)' }}>
+              {horairesLigne}
+            </div>
+          )
+          const horairesStrip = horairesLigne && (
+            <Link href={localizedHref('/horaires-priere', en)} className="board-strip" style={{ ...T.tile, marginTop: 8, display: 'block', padding: '11px 10px', textDecoration: 'none' }}>
+              {horairesLigne}
             </Link>
           )
           const priereWide = (
@@ -633,6 +648,7 @@ export default function BoardVoyageur({
                     : (en ? 'Could not finish the search — try again in a moment.' : 'Recherche non terminée — réessaie dans un instant.')}
                 </p>
               )}
+              {horairesDansCarte}
             </div>
           )
           // Bandeau priere compact : tout tient sur une ligne quand la priere
@@ -842,8 +858,10 @@ export default function BoardVoyageur({
                   })}
                 </div>
               )}
-              <p style={{ ...T.meta, color: 'var(--or)', fontWeight: 700 }}>
-                {en ? 'Places lived by Muslim travelers → ' : 'Des lieux vécus par des voyageurs musulmans → '}
+              {/* Une seule phrase : « spots partagés par des voyageurs » au-dessus
+                  disait déjà qui les a vécus. Ici, juste la porte. */}
+              <p style={{ ...T.meta, color: 'var(--or)', fontWeight: 800 }}>
+                {en ? 'Explore →' : 'Explorer →'}
               </p>
             </Link>
           )
@@ -880,7 +898,6 @@ export default function BoardVoyageur({
           return (
             <>
               {priereWide}
-              {horairesStrip}
               <div className="board-duo" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginTop: 10,
                   // `start` et non l'étirement par défaut : quand « Manger » n'a
                   // rien à dire, la grille lui donnait la hauteur de la tuile
