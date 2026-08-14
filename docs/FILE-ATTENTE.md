@@ -13,7 +13,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 
 ## A faire
 
-> **Cycles 6, 10, 13, 16, 18, 21, 23, 29, 32, 34, 35, 37 et 38 : audits.** Quand les seuls elements restants sont
+> **Cycles 6, 10, 13, 16, 18, 21, 23, 29, 32, 34, 35, 37, 38 et 41 : audits.** Quand les seuls elements restants sont
 > bloques — un arbitrage, deux fois le deploiement — le cycle sert a mesurer,
 > pas a forcer un blocage. Les sept elements des audits 6, 10 et 13 sont **tous
 > faits** (cycles 7, 8, 9, 11, 12, 14, 15). **L'audit du cycle 16 n'a produit
@@ -107,7 +107,14 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 > outils concernes : on demande d'abord s'il est **visible**, ensuite s'il est
 > actif, et l'attente est bornee. **196 s → 2,9 s.**
 >
-> **Mesure aux cycles 6, 10, 13, 16, 18, 21, 23, 29, 32, 34, 35, 37 et 38, et rien a corriger** — a ne pas
+> **L'audit du cycle 41 a UTILISE la page des 114 sourates.** Le cycle 6 avait
+> verifie qu'elle est complete ; personne n'avait essaye d'y **trouver** une
+> sourate. La question devient urgente : la page est dans le sitemap avec sa
+> propre description, donc Google y enverra des gens qui cherchent une sourate
+> precise, sans avoir jamais vu l'accueil. Un element en sort, le 1 ci-dessous ;
+> cinq promesses sont saines.
+>
+> **Mesure aux cycles 6, 10, 13, 16, 18, 21, 23, 29, 32, 34, 35, 37, 38 et 41, et rien a corriger** — a ne pas
 > re-mesurer sans raison :
 > - **214 elements contiennent de l'arabe, 214 portent `lang="ar"` et
 >   `dir="rtl"`**, zero nu.
@@ -234,13 +241,42 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 >   **1 lecon** (pas 2), `tours` **inchange**, echeance de revision
 >   **inchangee**, et le total appris affiche **6, pas 12**. C'etait la vraie
 >   inquietude, et elle est levee.
+> - **On ne se perd pas sur la page des sourates** *(cycle 41)*. En y arrivant de
+>   Google : un titre, une phrase qui dit de quoi il s'agit **avant** la liste,
+>   et **5 liens internes atteignables sans defiler** — dont trois vers
+>   l'accueil. On peut aussi en partir vers la lecon d'Al-Fatiha, la seule
+>   sourate qui en a une : **1 ligne cliquable sur 114**, et c'est exact.
+> - **La page des sourates ne casse rien** *(cycle 41)* : aucun debordement a
+>   414 ni a 320 px, zero erreur JavaScript, 114 lignes bien la.
 > - **Retour ne casse pas l'accueil** *(cycle 38)*. Les trois questions ne sont
 >   **pas** reposees, la carte du jour est bien la, et le niveau declare survit.
 > - **Le bouton n'existe que si une source repond** *(cycle 34)* : avec une source
 >   simulee qui repond en 21 ms, « ↻ Repeter avec moi » apparait sur la carte du
 >   verset ; sans reponse, aucun bouton — la regle tient dans les deux sens.
 
-1. **La feuille de route promet un silence « de meme duree ». Il est 15 % plus
+1. **La page des 114 sourates fait 17 ecrans de telephone, et on ne peut rien y
+   chercher.**
+   *Preuve, mesuree a 414 px :* la page fait **11 695 px de haut**, soit
+   **16,9 ecrans**. Pour atteindre une sourate, il faut defiler :
+   | sourate | position | ecrans a defiler |
+   |---|---|---|
+   | Al-Kahf (18) | 2 206 px | 3,2 |
+   | Ya-Sin (36) | 3 985 px | 5,8 |
+   | Al-Mulk (67) | 7 049 px | 10,2 |
+   | An-Nas (114) | 11 695 px | **16,9** |
+   Et **aucun moyen de chercher** : zero champ, zero filtre, zero ancre. Le seul
+   chemin est le pouce.
+   *Pourquoi ca compte maintenant :* la page est dans le sitemap avec sa propre
+   description, « Les 114 sourates du Coran : la liste complete ». Quelqu'un qui
+   cherche « sourate Al-Mulk » sur Google atterrira dessus et devra defiler dix
+   ecrans. Une liste qu'on ne peut pas parcourir autrement qu'au pouce n'est pas
+   « complete » au sens ou la personne l'entend.
+   *La voie qui colle au site :* des **ancres par dizaines** (1-10, 11-20, …) en
+   haut de page. Douze liens, du HTML pur, **aucun JavaScript** — donc ca marche
+   aussi sans, ce qu'un champ de recherche ne ferait pas. A mesurer apres : le
+   nombre d'ecrans pour atteindre la 67e et la 114e.
+
+2. **La feuille de route promet un silence « de meme duree ». Il est 15 % plus
    long, et c'est le texte qui a tort.**
    *Preuve, chronometree :* verset simule de **3,00 s** → silence de **3,45 s**,
    trois fois de suite, soit **x1,15**. Or la feuille de route, redite a chaque
@@ -258,7 +294,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    decrit pas ce que fait le site** — c'est la sienne, il decide s'il veut le
    texte ou le 1,15.
 
-2. **Qui avance vite trouve un site vide : 15 jours sur 18.**
+3. **Qui avance vite trouve un site vide : 15 jours sur 18.**
    *Re-mesure au cycle 40, apres la huitieme lecon : inchange.* Huit lecons en
    **52 minutes** le premier jour, puis le vide. Une lecon de plus ne deplace pas
    cette colonne — elle repousse seulement la premiere repetition d'un jour pour
@@ -284,7 +320,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    chaque fois plutot qu'il ne s'extrapole : l'espacement redistribue les trous a
    chaque ajout.
 
-3. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
+4. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
    *Preuve :* c'est la piece la plus puissante de la liste du responsable, et
    elle est la seule non commencee. Le blocage est reel et non technique : une
    notification calee sur une heure de priere suppose de **connaitre** cette
@@ -296,7 +332,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    **N'entre pas en travaux avant arbitrage** — c'est une decision, pas un
    chantier.
 
-4. **Aucune mesure d'entree, et un traceur est interdit ici.**
+5. **Aucune mesure d'entree, et un traceur est interdit ici.**
    *Preuve :* `grep -ril "gtag\|analytics\|plausible\|matomo\|umami"` sur toutes
    les pages et les trois fichiers JavaScript ne rend **rien**. Or le pied de
    page promet « Ta progression reste sur ton telephone. Aucun compte, aucun
@@ -305,7 +341,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    journaux). Bloque jusqu'au deploiement — question posee aux trois autres
    agents dans le brainstorm des passerelles.
 
-5. **La recitation n'a jamais ete entendue par personne.**
+6. **La recitation n'a jamais ete entendue par personne.**
    *Preuve :* `halalgpt.fr:443` et `cdn.islamic.network:443` sont refuses par la
    politique reseau de l'atelier (403 au CONNECT, journalise par le proxy,
    verifie trois fois). Le mecanisme est teste avec un recitateur simule — 7
