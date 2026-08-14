@@ -58,8 +58,14 @@ export default function Header({ brandEN = false }: { brandEN?: boolean }) {
               <Link href={localizedHref('/horaires-priere', isEN)} className="nav-tools-item">🕐 {t('nav.prayer')}</Link>
               <Link href="/qibla" className="nav-tools-item">🧭 {t('nav.qibla')}</Link>
               <Link href={localizedHref('/mosquee-proche', isEN)} className="nav-tools-item">🕌 {t('nav.mosque')}</Link>
+              {/* 🌤️ + 🕋 : le menu PC avait pris du retard sur celui du
+                  téléphone — Mohamed, 15 août : « je ne vois pas Météo dans
+                  Outils ». Les deux menus listent désormais les MÊMES
+                  outils : deux portes d'entrée, une seule maison. */}
+              <Link href={localizedHref('/meteo', isEN)} className="nav-tools-item">🌤️ {isEN ? 'Weather' : 'Météo'}</Link>
               <Link href="/autour-de-moi" className="nav-tools-item">📍 {isEN ? 'Around me' : 'Autour de moi'}</Link>
               <Link href="/audio" className="nav-tools-item">🎧 {isEN ? 'Audio · Spiritual' : 'Audio · Spirituel'}</Link>
+              <Link href={localizedHref('/omra', isEN)} className="nav-tools-item">🕋 {isEN ? 'Umrah & Hajj' : 'Omra & Hajj'}</Link>
               {/* Favoris conservés, déplacés en fin de menu (remplacés par Audio) */}
               <Link href={localizedHref('/carnet', isEN)} className="nav-tools-item">❤️ {isEN ? 'My spots' : 'Mes spots'}</Link>
             </div>
