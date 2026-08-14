@@ -5,6 +5,7 @@ import type { Map as LeafletMap, Marker } from 'leaflet'
 import { getPosition, describeGeoError, type GeoError, type GeoErrorCode } from '@/lib/geo'
 import { useInstantPosition } from '@/lib/useInstantPosition'
 import PositionBadge from '@/components/location/PositionBadge'
+import PresDeMoi from '@/components/lieux/PresDeMoi'
 import { computePrayerTimesFull } from '@/lib/prayerCalc'
 import { prixResume } from '@/lib/community'
 
@@ -569,6 +570,14 @@ export default function AutourDeMoiPage() {
           </p>
         )}
       </div>
+
+      {/* 📍 Le moteur « Près de moi » (Google Maps + IA) sous la carte —
+          Mohamed, 15 août : « idem pour autour de moi ». La carte montre
+          où sont les lieux ; ce bloc RÉPOND à une demande précise
+          (« pizza », « la plus proche », « hammam ») et fait rédiger la
+          réponse par l'IA. La position vient de celle déjà connue par la
+          page : on ne redemande jamais deux fois la même chose. */}
+      <PresDeMoi posInitiale={instantPos ? { lat: instantPos.lat, lng: instantPos.lng, ville: instantPos.label ?? null } : null} />
     </main>
   )
 }

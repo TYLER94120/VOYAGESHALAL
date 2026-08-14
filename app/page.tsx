@@ -6,10 +6,8 @@ import JsonLd from '@/components/seo/JsonLd'
 import EmailCapture from '@/components/ui/EmailCapture'
 import { buildWebSiteSchema, buildOrganizationSchema } from '@/lib/seo'
 import { guides } from '@/lib/data'
-import NearbySpotsHome from '@/components/community/NearbySpotsHome'
-import RecentSpotsHome from '@/components/spots/RecentSpotsHome'
 import BoardVoyageur from '@/components/home/BoardVoyageur'
-import MangerPresDeMoi from '@/components/home/MangerPresDeMoi'
+import PresDeMoi from '@/components/lieux/PresDeMoi'
 import { positionServeur } from '@/lib/positionServeur'
 import { localizedHref } from '@/lib/slugs'
 import { HomeScoreRanking } from '@/components/HomeScoreRanking'
@@ -198,7 +196,7 @@ export default async function HomePage() {
           l'accueil FRANÇAIS. L'anglais suivra quand le français marche.
           Prêt-pour-la-clé : sans GOOGLE_PLACES_KEY il répond avec nos
           spots + OpenStreetMap et le dit sobrement. */}
-      {!isEN && <MangerPresDeMoi posInitiale={posIP} />}
+      {!isEN && <PresDeMoi posInitiale={posIP} />}
 
       {/* 🌍 DESTINATIONS — remontées JUSTE SOUS le tableau de bord.
           Mohamed, 15 août : « les destinations avec les images, c'est
@@ -257,16 +255,16 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* 💎 Le cœur : derniers spots partagés + spots près de toi
-          (le Radar Prière vit désormais dans le Board voyageur ci-dessus) */}
-
       </div>
 
-
-      <RecentSpotsHome />
-      <NearbySpotsHome />
-
-
+      {/* 🧹 15 août — LES DEUX SECTIONS SPOTS QUITTENT L'ACCUEIL.
+          Mohamed : « spot et destination n'ont pas leur place ; tout le
+          site doit tourner autour de sa destination + IA + Google Maps ».
+          Elles ne sont PAS supprimées du site : l'onglet Spots de la barre
+          du bas, la ligne Spots du tableau de bord et le menu Outils y
+          mènent toujours — trois portes suffisent. L'accueil, lui, répond
+          d'abord à « j'ai besoin de quelque chose, MAINTENANT », et les
+          destinations gardent une seule rangée de photos, en vitrine. */}
 
 
       {/* Halal Trust Score™ ranking */}

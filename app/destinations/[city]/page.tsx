@@ -9,6 +9,7 @@ import VilleFaq from '@/components/villes/VilleFaq'
 import HotelCTA from '@/components/affiliate/HotelCTA'
 import { DestinationFaqSchema, DestinationSchema } from '@/components/SchemaOrg'
 import CitySync from '@/components/location/CitySync'
+import PresDeMoi from '@/components/lieux/PresDeMoi'
 import EmailCapture from '@/components/ui/EmailCapture'
 import ContinueExploring from '@/components/discover/ContinueExploring'
 import { relatedForCity, countrySlugForName } from '@/lib/relatedContent'
@@ -171,6 +172,21 @@ export default async function DestinationPage({ params }: Props) {
         <CitySync city={{ slug: city, nom: ville.nom, pays: ville.pays, lat: coords.lat, lng: coords.lng }} />
       )}
 
+      {/* 📍 LE MOTEUR « PRÈS DE MOI », ANCRÉ SUR LA VILLE — Mohamed,
+          15 août : « tout le site doit tourner autour de sa destination,
+          Dubaï, + IA + Google Maps ». Manger, mosquée, activités : les
+          mêmes trois ateliers que sur l'accueil, mais centrés sur la
+          ville affichée, sans jamais demander la position de quelqu'un
+          qui prépare encore son voyage. Français d'abord (l'anglais suit
+          quand le français est validé).
+          PLACÉ EN TÊTE, et c'est mesuré : posé après le contenu de la
+          fiche, il tombait à 7 418 px du haut — invisible, donc inutile.
+          Il annonce « À Dubaï » : on sait où on est dès le premier
+          regard, et le titre de la page suit immédiatement. */}
+      {!isEN && coords?.lat != null && coords?.lng != null && (
+        <PresDeMoi destination={{ lat: coords.lat, lng: coords.lng, nom: ville.nom }} />
+      )}
+
       {/* Design unifié responsive (mobile + desktop : 1 colonne épurée).
           Perf mobile : seuls 24 restos sont sérialisés — la liste complète se
           charge à la demande via /api/villes/[slug]/restos. */}
@@ -185,6 +201,7 @@ export default async function DestinationPage({ params }: Props) {
         restaurants: restaurantsConformes.slice(0, 24),
         restaurantsTotal: restaurantsConformes.length,
       }} />
+
 
       {/* CTA affilié hôtels (revenu n°1) — visible sur toute la page ville */}
       <section style={{ background: 'var(--creme)', padding: '8px 18px 24px' }}>
