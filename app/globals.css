@@ -920,3 +920,18 @@ body { top: 0 !important; }
   to   { opacity: 1;    transform: scaleY(1); }
 }
 .board-pousse { animation: board-pousse 0.18s ease-out; transform-origin: top; }
+
+/* 🖥️ La rangée du bas de l'accueil : pile sur mobile, deux colonnes sur PC.
+   Un seul enfant (domaine anglais, pas de widget) → pleine largeur. */
+@media (min-width: 1024px) {
+  /* le fond nuit couvre TOUTE la largeur ; seules les colonnes sont
+     centrées — sinon deux bandes claires encadraient la rangée */
+  .rangee-bas {
+    display: grid;
+    grid-template-columns: minmax(0, 660px) minmax(0, 440px);
+    justify-content: center;
+    gap: 0 12px;
+    align-items: start;
+  }
+  .rangee-bas > :only-child { grid-column: 1 / -1; justify-self: center; width: 100%; max-width: 900px; }
+}
