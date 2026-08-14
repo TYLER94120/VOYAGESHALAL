@@ -8,7 +8,6 @@ import { localizedHref } from '@/lib/slugs'
 import { ENVIES, envieById, niveauHalal } from '@/lib/envies'
 import { mentionPaysMusulman } from '@/lib/paysHalalDefaut'
 import { fetchCourt } from '@/lib/fetchCourt'
-import { photoLargeur } from '@/lib/imageLargeur'
 import PositionBadge from '@/components/location/PositionBadge'
 import { meteoInstantanee, emojiMeteo, type Meteo } from '@/lib/meteo'
 
@@ -879,47 +878,23 @@ export default function BoardVoyageur({
           // une porte. Avant, trois zones differentes parlaient de spots
           // (grande photo, compteur, bande de vignettes) sans qu'on comprenne
           // ce qu'on regardait.
-          const apercus = (pres?.pepite ? [pres.pepite, ...(pres?.reels ?? [])] : (pres?.reels ?? [])).slice(0, 3)
           const nSpots = pres ? (pres.proches.length || pres.autour.length || pres.total) : null
           const villeNom = pres?.autour[0]?.villeNom
+          // 📏 UNE LIGNE, comme Prière et Manger — Mohamed, 15 août : « le
+          // widget spot est beaucoup trop gros pour ce que c'est, il prend
+          // de la place pour rien ». C'est une PORTE vers /spots, pas un
+          // atelier : une porte n'a pas besoin d'être plus grosse que les
+          // widgets sur lesquels on travaille. Les photos, elles, vivent
+          // dans les sections juste en dessous.
           const spotsWidget = (
             <Link href={pres && !pres.proches.length && !pres.autour.length ? '/spots' : '/autour-de-moi'}
-              style={{ ...T.tile, textDecoration: 'none', display: 'flex', flexDirection: 'column', gap: 8 }}>
-              {/* 📐 COHÉRENCE (Mohamed, 15 août : « tous les éléments doivent
-                  être cohérents ») : chaque carte suit la MÊME anatomie —
-                  étiquette dorée en capitales, contenu, porte « → ». Cette
-                  tuile était la seule à ouvrir sur un chiffre sans étiquette. */}
-              <p style={T.lab}>💎 {en ? 'Spots' : 'Spots'}</p>
-              <div style={{ display: 'flex', alignItems: 'baseline', gap: 7 }}>
-                <span style={{ fontFamily: "'Playfair Display', Georgia, serif", color: 'var(--or)', fontSize: 26, fontWeight: 700, lineHeight: 1 }}>{nSpots ?? '…'}</span>
-                <span style={{ ...T.meta, fontSize: 13 }}>
-                  {villeNom ? (en ? `in ${villeNom}` : `à ${villeNom}`) : (en ? 'shared by travelers' : 'partagés par des voyageurs')}
-                </span>
-              </div>
-              {apercus.length > 0 && (
-                <div style={{ display: 'flex', gap: 6 }}>
-                  {apercus.map((sp) => {
-                    const img = sp.photos?.[0]?.startsWith('http') ? sp.photos[0] : sp.villeImage
-                    return (
-                      <span key={sp.id} style={{
-                        flex: 1, height: 62, borderRadius: 10, overflow: 'hidden', position: 'relative',
-                        // Aperçus de 62 px de haut, trois par ligne : 260 px
-                        // de large suffisent largement.
-                        backgroundImage: img ? `linear-gradient(180deg, rgba(11,26,15,0) 35%, rgba(11,26,15,0.92)), url(${photoLargeur(img, 130)})` : 'linear-gradient(180deg, #1d4a35, #0e2013)',
-                        backgroundSize: 'cover', backgroundPosition: 'center', display: 'flex', alignItems: 'flex-end',
-                      }}>
-                        {sp.video && <span style={{ position: 'absolute', top: 3, left: 4, fontSize: 10 }}>🎬</span>}
-                        <span style={{ padding: '2px 4px', color: '#fdfaf3', fontSize: 8.5, fontWeight: 700, lineHeight: 1.2 }}>{sp.nom.slice(0, 22)}</span>
-                      </span>
-                    )
-                  })}
-                </div>
-              )}
-              {/* Une seule phrase : « spots partagés par des voyageurs » au-dessus
-                  disait déjà qui les a vécus. Ici, juste la porte. */}
-              <p style={{ ...T.meta, color: 'var(--or)', fontWeight: 800 }}>
-                {en ? 'Explore →' : 'Explorer →'}
+              className="board-slim"
+              style={{ ...T.tile, width: '100%', display: 'flex', alignItems: 'center', gap: 10, padding: '13px 14px', textDecoration: 'none' }}>
+              <span style={{ fontSize: 18 }} aria-hidden>💎</span>
+              <p style={{ flex: 1, color: '#fdfaf3', fontWeight: 700, fontSize: 13.5, margin: 0, lineHeight: 1.35 }}>
+                Spots{nSpots != null && nSpots > 0 ? <span style={{ color: 'rgba(253,250,243,0.78)' }}> · {nSpots} {villeNom ? (en ? `in ${villeNom}` : `à ${villeNom}`) : (en ? 'shared by travelers' : 'partagés par des voyageurs')}</span> : null}
               </p>
+              <span style={{ color: 'var(--or)', fontWeight: 800, fontSize: 13 }} aria-hidden>→</span>
             </Link>
           )
 

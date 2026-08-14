@@ -184,16 +184,13 @@ export default async function HomePage() {
         }
       />
 
-      {/* 💎 Le cœur : derniers spots partagés + spots près de toi
-          (le Radar Prière vit désormais dans le Board voyageur ci-dessus) */}
-      <RecentSpotsHome />
-      <NearbySpotsHome />
-
-      {/* 🌍 DESTINATIONS — une section à part entière, avec un titre.
-          Ces cartes étaient collées sous la barre de recherche, dans le
-          hero, sans rien pour dire ce qu'elles étaient. Les chiffres sont
-          lus dans les fiches villes, jamais inventés. */}
-      <section style={{ background: 'var(--nuit)' }} className="py-10 px-4">
+      {/* 🌍 DESTINATIONS — remontées JUSTE SOUS le tableau de bord.
+          Mohamed, 15 août : « les destinations avec les images, c'est
+          beau — j'aimerais que ce soit visible dès qu'on ouvre la page ».
+          Ce sont les seules belles photos dont on dispose aujourd'hui :
+          elles font la première impression. Les chiffres restent lus dans
+          les fiches villes, jamais inventés. */}
+      <section style={{ background: 'var(--nuit)' }} className="pt-4 pb-8 px-4">
         <div className="max-w-3xl mx-auto">
           <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 12, marginBottom: 14 }}>
             <h2 className="text-white text-xl font-bold" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
@@ -243,6 +240,12 @@ export default async function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* 💎 Le cœur : derniers spots partagés + spots près de toi
+          (le Radar Prière vit désormais dans le Board voyageur ci-dessus) */}
+      <RecentSpotsHome />
+      <NearbySpotsHome />
+
 
 
 
