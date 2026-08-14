@@ -4,6 +4,7 @@ import { listAllSpots } from '@/lib/prayerSpots'
 import { CRITERES_DEFAUT, type Criteres } from '@/lib/criteres'
 import { minutes, modeSuivant, plafondMin, rayonM, type Mode } from '@/lib/trajet'
 import { verdictAlcool } from '@/lib/alcool.mjs'
+import { PROFIL_VIDE, profilVide, requeteAvecProfil, criteresRelachables, type Profil } from '@/lib/profil'
 
 // 🍽 LE SUR MESURE — POST /api/lieux
 //
@@ -219,7 +220,7 @@ function cadre(lat: number, lng: number, m: number) {
   }
 }
 
-async function passe1(lat: number, lng: number, c: Criteres, cle: string, lang: string, rayon: number): Promise<Candidat[] | null> {
+async function passe1(lat: number, lng: number, c: Criteres, cle: string, lang: string, rayon: number, texte: string): Promise<Candidat[] | null> {
   const ac = new AbortController()
   const t = setTimeout(() => ac.abort(), DELAI)
   try {
@@ -227,7 +228,7 @@ async function passe1(lat: number, lng: number, c: Criteres, cle: string, lang: 
       method: 'POST', signal: ac.signal,
       headers: { 'Content-Type': 'application/json', 'X-Goog-Api-Key': cle, 'X-Goog-FieldMask': CHAMPS_PASSE1 },
       body: JSON.stringify({
-        textQuery: CATEGORIE[c.categorie].texte(TEXTE[c.quoi]),
+        textQuery: texte,
         languageCode: lang,
         pageSize: CANDIDATS,
         openNow: c.ouvertMaintenant || undefined,
@@ -444,7 +445,7 @@ async function viaOSM(origin: string, lat: number, lng: number, rayon: number, c
 // ─────────────────────── la route ───────────────────────
 
 export async function POST(req: Request) {
-  let corps: { lat?: number; lng?: number; criteres?: Partial<Criteres>; lang?: string; ecrit?: boolean }
+  let corps: { lat?: number; lng?: number; criteres?: Partial<Criteres>; lang?: string; ecrit?: boolean; profil?: Partial<Profil> }
   try { corps = await req.json() } catch { return NextResponse.json({ erreur: 'corps invalide' }, { status: 400 }) }
   const lat = Number(corps.lat), lng = Number(corps.lng)
   if (!Number.isFinite(lat) || !Number.isFinite(lng) || Math.abs(lat) > 90 || Math.abs(lng) > 180) {
@@ -452,6 +453,9 @@ export async function POST(req: Request) {
   }
   const c: Criteres = { ...CRITERES_DEFAUT, ...(corps.criteres ?? {}) }
   const lang = corps.lang === 'en' ? 'en' : 'fr'
+  // 👤 Le profil arrive du TÉLÉPHONE à chaque appel : il n'est jamais
+  // stocké ici. Le serveur ne le retient pas, il s'en sert et l'oublie.
+  const profil: Profil = { ...PROFIL_VIDE, ...(corps.profil ?? {}) }
   const r = getRedis()
 
   // Quota — Redis absent : on laisse passer (un compteur en panne ne doit
@@ -474,7 +478,7 @@ export async function POST(req: Request) {
   await compter('surmesure:recherches', corps.ecrit ? 'surmesure:ecrites' : 'surmesure:cliquees')
 
   const zone = `${lat.toFixed(2)},${lng.toFixed(2)}`
-  const empreinte = `${zone}:${c.categorie}:${c.quoi}:${c.mode}:${c.budget}:${c.exigence}:${c.ouvertMaintenant ? 1 : 0}:${lang}`
+  const empreinte = `${zone}:${c.categorie}:${c.quoi}:${profil.regime}:${profil.sansGluten ? 1 : 0}:${profil.sansLactose ? 1 : 0}:${profil.objectif}:${c.mode}:${c.budget}:${c.exigence}:${c.ouvertMaintenant ? 1 : 0}:${lang}`
   if (r) {
     try {
       const cache = await r.get<{ fiches: Fiche[]; autres: Fiche[]; source: string }>(`surmesure:cache:${empreinte}`)
@@ -499,12 +503,32 @@ export async function POST(req: Request) {
   let autres: Fiche[] = []
   let source: 'google' | 'osm' | 'spots-seulement' = 'spots-seulement'
   let etatGoogle: 'ok' | 'vide' | 'muet' | 'sans-cle' = cle ? 'muet' : 'sans-cle'
+  /** Les critères de profil qu'on a dû relâcher — affichés tels quels. */
+  const relaches: string[] = []
 
   // « Seulement les adresses vérifiées » : on n'interroge même pas Google.
   if (c.exigence === 'verifies') {
     fiches = spots.slice(0, RETENUS)
   } else if (cle) {
-    const cands = await passe1(lat, lng, c, cle, lang, rayon)
+    // 👤 LE PROFIL AFFINE LA REQUÊTE — jamais les filtres de base. Google
+    // ne connaît pas « protéiné » : on traduit en poke, grillades, bowls…
+    const texteBase = CATEGORIE[c.categorie].texte(TEXTE[c.quoi])
+    const avecProfil = c.categorie === 'manger' ? requeteAvecProfil(texteBase, profil) : texteBase
+    let cands = await passe1(lat, lng, c, cle, lang, rayon, avecProfil)
+
+    // §5 — QUAND TOUT NE PEUT PAS ÊTRE SATISFAIT, ON DIT CE QU'ON A LÂCHÉ.
+    // On relâche du MOINS au PLUS essentiel, un cran à la fois, et jamais
+    // en silence : « un critère relâché en silence, c'est un mensonge ».
+    const aLacher = c.categorie === 'manger' ? criteresRelachables(profil, lang === 'en') : []
+    let profilCourant: Profil = { ...profil }
+    for (const critere of [...aLacher].reverse()) {
+      if ((cands?.length ?? 0) >= RETENUS) break
+      profilCourant = { ...profilCourant, [critere.cle]: critere.cle === 'regime' ? 'aucun' : critere.cle === 'objectif' ? 'aucun' : false } as Profil
+      relaches.push(critere.libelle)
+      const encore = await passe1(lat, lng, c, cle, lang, rayon, requeteAvecProfil(texteBase, profilCourant))
+      if (encore?.length) cands = encore
+    }
+
     if (cands !== null) etatGoogle = cands.length ? 'ok' : 'vide'
     if (cands?.length) {
       const tries = classer(cands, c, rayon).filter((x) => !spots.some((s) => distM(s.lat, s.lng, x.lat, x.lng) < 60))
@@ -549,18 +573,31 @@ export async function POST(req: Request) {
     const suivant = modeSuivant(mode)
     if (suivant) {
       const grand = rayonM(c, suivant) * 2
-      const large = await passe1(lat, lng, c, cle, lang, grand)
+      const large = await passe1(lat, lng, c, cle, lang, grand, CATEGORIE[c.categorie].texte(TEXTE[c.quoi]))
       const enPlus = (large ?? []).filter((x) => x.distanceM > rayon).length
       if (enPlus > 0) plusLoin = { minutes: plafondMin(c, suivant) * 2, mode: suivant, nombre: enPlus }
     }
   }
 
   await compter(fiches.length ? 'surmesure:avec' : 'surmesure:vides')
+  // §7 — « combien de recherches où un critère a dû être relâché, et sur
+  // quelles villes. Cette mesure vaut de l'or : elle dira où l'offre
+  // manque, donc quelles villes méritent nos propres relevés vérifiés. »
+  if (r && relaches.length) {
+    try {
+      await r.incr('surmesure:relache')
+      await r.zincrby('surmesure:relache:zones', 1, zone)
+    } catch { /* jamais bloquant */ }
+  }
+  if (r && !profilVide(profil)) { try { await r.incr('surmesure:avec-profil') } catch { /* idem */ } }
+
   const reponse = {
     fiches, autres, source, etatGoogle,
     // Le client a besoin du mode pour ÉCRIRE le temps de trajet, et du
     // plafond pour dire « à moins de 10 minutes à pied ».
     mode, plafondMin: plafondMin(c, mode), plusLoin,
+    // §5 — ce qu'on a dû lâcher pour trouver quelque chose.
+    relaches,
   }
   if (r && source === 'google') {
     try { await r.set(`surmesure:cache:${empreinte}`, reponse, { ex: CACHE_S }) } catch { /* jamais bloquant */ }

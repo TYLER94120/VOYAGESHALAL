@@ -21,7 +21,7 @@ export const dynamic = 'force-dynamic'
 const AUTORISEES = new Set([
   'itineraires', 'appels', 'fiches-ouvertes', 'relances-sautees',
   'cat-mosquee', 'cat-manger', 'cat-activite',
-  'piste', 'choisis-pour-moi',
+  'piste', 'choisis-pour-moi', 'profil-cree',
 ])
 
 let redis: Redis | null | undefined

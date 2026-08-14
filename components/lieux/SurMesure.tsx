@@ -5,6 +5,10 @@ import { CRITERES_DEFAUT, lireDemande, relance, resumerCriteres, type Criteres }
 import { trajet, type Mode } from '@/lib/trajet'
 import { ligneAlcool, mentionPermanente } from '@/lib/alcool.mjs'
 import { choisirPourMoi, pistes as genererPistes, type Piste } from '@/lib/pistes'
+import {
+  PROFIL_VIDE, consigneProfilIA, ecrireProfil, lireProfil, ligneAllergie,
+  mentionneAllergie, oublierProfil, profilVide, resumerProfil, type Profil,
+} from '@/lib/profil'
 import { computePrayerTimesFull } from '@/lib/prayerCalc'
 
 // 🎯 LE SUR MESURE — « dis-moi ce que tu cherches ».
@@ -101,6 +105,13 @@ export default function SurMesure({ posInitiale, destination, en = false, fondu 
   // moment. `null` = zone fermée, on n'a encore rien demandé.
   const [aide, setAide] = useState<{ cat: 'manger' | 'mosquee' | 'activite'; pistes: Piste[] } | null>(null)
   const [raisonIA, setRaisonIA] = useState('')
+  // 👤 Le profil vit dans le TÉLÉPHONE. On le lit après le montage : le
+  // serveur ne le connaît pas, et le HTML servi ne doit pas en dépendre.
+  const [profil, setProfil] = useState<Profil>(PROFIL_VIDE)
+  const [ouvrirProfil, setOuvrirProfil] = useState(false)
+  const [proposerMemoire, setProposerMemoire] = useState<Partial<Profil> | null>(null)
+  const [relaches, setRelaches] = useState<string[]>([])
+  useEffect(() => { setProfil(lireProfil()) }, [])
   const [ex, setEx] = useState(0)
   const enCours = useRef(false)
   const EXEMPLES = en ? EXEMPLES_EN : EXEMPLES_FR
@@ -138,11 +149,31 @@ export default function SurMesure({ posInitiale, destination, en = false, fondu 
     return genererPistes(cat, contexte(), en)
   }
 
+  /** 👤 « Je retiens ? Tu n'auras plus à le redire. » On ne mémorise
+   *  JAMAIS sans le demander : le profil appartient au visiteur. */
+  function besoinDansLaPhrase(txt: string): Partial<Profil> | null {
+    const t = txt.toLowerCase()
+    const p: Partial<Profil> = {}
+    if (/\bv[ée]gan|\bvegan\b/.test(t)) p.regime = 'vegane'
+    else if (/\bv[ée]g[ée]tarien|\bvegetarian\b/.test(t)) p.regime = 'vegetarien'
+    else if (/\bpesc[ée]tarien|\bpescatarian\b/.test(t)) p.regime = 'pescetarien'
+    if (/sans gluten|gluten[- ]free|c[œoe]liaque|celiac/.test(t)) p.sansGluten = true
+    if (/sans lactose|lactose[- ]free|sans produits laitiers/.test(t)) p.sansLactose = true
+    if (/prot[ée]in|salle de sport|\bmuscu|\bgym\b|after (the )?gym|sportif/.test(t)) { p.objectif = 'proteine'; p.habitueSport = true }
+    else if (/\bl[ée]ger\b|\blight\b/.test(t)) p.objectif = 'leger'
+    return Object.keys(p).length ? p : null
+  }
+
   /** Étape 1 → 2 : on lit la phrase, on montre ce qu'on a compris. */
   function comprendre(txt: string) {
     const c = lireDemande(txt)
     setCrit(c)
     setAEcrit(txt.trim().length > 0)
+    const trouve = besoinDansLaPhrase(txt)
+    // On ne propose de retenir que ce qui n'est pas DÉJÀ dans le profil.
+    if (trouve && Object.entries(trouve).some(([k, v]) => (profil as unknown as Record<string, unknown>)[k] !== v)) {
+      setProposerMemoire(trouve)
+    }
     const r = relance(c, en)
     if (r) setEtape('relance')
     else lancer(c, txt.trim().length > 0)
@@ -160,19 +191,19 @@ export default function SurMesure({ posInitiale, destination, en = false, fondu 
 
       const ac = new AbortController()
       const to = setTimeout(() => ac.abort(), 20_000)
-      let corps: { fiches?: Fiche[]; autres?: Fiche[]; source?: string; mode?: Mode; plafondMin?: number; plusLoin?: { minutes: number; mode: Mode; nombre: number } | null } = {}
+      let corps: { fiches?: Fiche[]; autres?: Fiche[]; source?: string; mode?: Mode; plafondMin?: number; plusLoin?: { minutes: number; mode: Mode; nombre: number } | null; relaches?: string[] } = {}
       try {
         const r = await fetch('/api/lieux', {
           method: 'POST', signal: ac.signal,
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ lat: pos.lat, lng: pos.lng, criteres: c, lang: en ? 'en' : 'fr', ecrit }),
+          body: JSON.stringify({ lat: pos.lat, lng: pos.lng, criteres: c, lang: en ? 'en' : 'fr', ecrit, profil }),
         })
         corps = r.ok ? await r.json() : {}
       } finally { clearTimeout(to) }
 
       const trois = corps.fiches ?? []
       setFiches(trois); setAutres(corps.autres ?? []); setSource(corps.source ?? '')
-      setMode(corps.mode ?? 'voiture'); setPlafond(corps.plafondMin ?? 15); setPlusLoin(corps.plusLoin ?? null)
+      setMode(corps.mode ?? 'voiture'); setPlafond(corps.plafondMin ?? 15); setPlusLoin(corps.plusLoin ?? null); setRelaches(corps.relaches ?? [])
       setEtape('resultat')
       if (trois.length) redigerIA(trois, c, corps.mode ?? 'voiture', c.categorie === 'mosquee' ? avantPriere(pos) : null)
     } finally { enCours.current = false }
@@ -239,6 +270,9 @@ export default function SurMesure({ posInitiale, destination, en = false, fondu 
       en
         ? 'Never minimise on alcohol or pork ("you can still go, just order the dish") and never issue a religious ruling — you are not a scholar. If information is missing, say so plainly instead of reassuring.'
         : "Ne minimise JAMAIS sur l'alcool ou le porc (pas de « tu peux y aller, prends juste le plat ») et ne tranche AUCUNE question religieuse — tu n'es pas un savant. Si une information manque, dis-le franchement au lieu de rassurer.",
+      // 👤 §3 et §6 — ce que l'IA a le droit de dire du profil, et
+      // surtout pas : on ne connaît pas les menus.
+      consigneProfilIA(profil, en),
       priere
         ? (en
           ? `IMPORTANT: ${priere.minutes} minutes remain before ${priere.nom}. For EACH mosque, say plainly whether the traveller can get there in time given the travel time shown, and if not, say so. Never invent facilities (women's area, ablutions, parking): if they are not in the data, write that they are not documented.`
@@ -274,6 +308,7 @@ export default function SurMesure({ posInitiale, destination, en = false, fondu 
   }
 
   const maj = (p: Partial<Criteres>) => setCrit((c) => ({ ...c, ...p }))
+  const majProfil = (p: Partial<Profil>) => setProfil((v) => { const n = { ...v, ...p }; ecrireProfil(n); return n })
 
   // ── styles partagés ──────────────────────────────────────────────
   const puce = (on: boolean): React.CSSProperties => ({
@@ -333,6 +368,69 @@ export default function SurMesure({ posInitiale, destination, en = false, fondu 
               {t(fr, an)}
             </button>
           ))}
+        </div>
+
+        {/* ── 👤 MON PROFIL — replié, accessible d'un appui ─────────
+            « Un sur mesure qu'il faut retaper à chaque fois n'est pas du
+            sur mesure. » Le profil vit dans le téléphone : aucun compte,
+            rien sur nos serveurs, et « oublier tout » efface vraiment. */}
+        <div style={{ marginTop: 10 }}>
+          <button onClick={() => setOuvrirProfil((o) => !o)}
+            style={{ background: 'none', border: 'none', color: profilVide(profil) ? 'rgba(253,250,243,0.6)' : 'var(--or)', textDecoration: 'underline', fontWeight: 800, fontSize: 13, cursor: 'pointer', minHeight: 44, padding: 0, textAlign: 'left' }}>
+            👤 {profilVide(profil)
+              ? t('Mon profil', 'My profile')
+              : `${t('Mon profil', 'My profile')} : ${resumerProfil(profil, en).join(' · ')}`}
+          </button>
+
+          {ouvrirProfil && (
+            <div className="board-pousse" style={{ marginTop: 8, padding: 12, borderRadius: 14, border: '1px solid rgba(253,250,243,0.16)' }}>
+              <p style={label}>{t('Régime', 'Diet')}</p>
+              <div style={rangee}>
+                {([['aucun', 'Aucun', 'None'], ['vegane', 'Végane', 'Vegan'], ['vegetarien', 'Végétarien', 'Vegetarian'], ['pescetarien', 'Pescétarien', 'Pescatarian']] as const).map(([v, fr, an]) => (
+                  <button key={v} onClick={() => majProfil({ regime: v })} aria-pressed={profil.regime === v} style={puce(profil.regime === v)}>{t(fr, an)}</button>
+                ))}
+              </div>
+              <p style={label}>{t('Objectif', 'Goal')}</p>
+              <div style={rangee}>
+                {([['aucun', 'Peu importe', "Doesn't matter"], ['proteine', 'Protéiné / sportif', 'High-protein'], ['leger', 'Léger', 'Light'], ['pas-cher', 'Pas cher', 'Cheap']] as const).map(([v, fr, an]) => (
+                  <button key={v} onClick={() => majProfil({ objectif: v })} aria-pressed={profil.objectif === v} style={puce(profil.objectif === v)}>{t(fr, an)}</button>
+                ))}
+              </div>
+              <div style={rangee}>
+                <button onClick={() => majProfil({ sansGluten: !profil.sansGluten })} aria-pressed={profil.sansGluten} style={puce(profil.sansGluten)}>{t('Sans gluten', 'Gluten-free')}</button>
+                <button onClick={() => majProfil({ sansLactose: !profil.sansLactose })} aria-pressed={profil.sansLactose} style={puce(profil.sansLactose)}>{t('Sans lactose', 'Lactose-free')}</button>
+                <button onClick={() => majProfil({ habitueSport: !profil.habitueSport })} aria-pressed={profil.habitueSport} style={puce(profil.habitueSport)}>{t('Je sors souvent de la salle', 'Often after the gym')}</button>
+              </div>
+              <p style={label}>{t('Ce que je ne mange pas', 'What I avoid')}</p>
+              <input
+                value={profil.exclusions}
+                onChange={(e) => majProfil({ exclusions: e.target.value.slice(0, 120) })}
+                placeholder={t('fruits de mer, arachide…', 'shellfish, peanuts…')}
+                style={{ width: '100%', minHeight: 46, marginTop: 8, borderRadius: 12, border: '1px solid rgba(253,250,243,0.25)', background: 'rgba(255,255,255,0.07)', color: '#fdfaf3', padding: '0 12px', fontSize: 15 }}
+              />
+              <p style={{ color: 'rgba(253,250,243,0.5)', fontSize: 11.5, margin: '10px 0 0', lineHeight: 1.5 }}>
+                {t('Ce profil reste dans ton téléphone. Rien n’est envoyé sur nos serveurs, aucun compte n’est nécessaire.',
+                   'This profile stays on your phone. Nothing is sent to our servers, no account needed.')}
+              </p>
+              <button onClick={() => { oublierProfil(); setProfil(PROFIL_VIDE); setProposerMemoire(null) }}
+                style={{ marginTop: 8, background: 'none', border: 'none', color: 'rgba(253,250,243,0.65)', textDecoration: 'underline', fontWeight: 700, fontSize: 12.5, cursor: 'pointer', minHeight: 44, padding: 0 }}>
+                🗑 {t('Oublier tout', 'Forget everything')}
+              </button>
+            </div>
+          )}
+
+          {/* « Je retiens ? Tu n'auras plus à le redire. » */}
+          {proposerMemoire && (
+            <div style={{ marginTop: 8, padding: '10px 12px', borderRadius: 12, border: '1px solid rgba(201,168,76,0.4)', display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap' }}>
+              <p style={{ flex: 1, minWidth: 170, color: 'rgba(253,250,243,0.9)', fontSize: 13, margin: 0 }}>
+                {t('Je retiens ? Tu n’auras plus à le redire.', 'Shall I remember? You will not have to say it again.')}
+              </p>
+              <button onClick={() => { majProfil(proposerMemoire); setProposerMemoire(null); compter('profil-cree') }}
+                style={{ ...puce(true), fontWeight: 900 }}>{t('Oui, retiens', 'Yes, remember')}</button>
+              <button onClick={() => setProposerMemoire(null)}
+                style={{ ...puce(false), border: 'none', background: 'none', color: 'rgba(253,250,243,0.6)', textDecoration: 'underline' }}>{t('non', 'no')}</button>
+            </div>
+          )}
         </div>
 
         {/* ── TEMPS 2 — L'IA AIDE À CHOISIR ─────────────────────────
@@ -537,7 +635,7 @@ export default function SurMesure({ posInitiale, destination, en = false, fondu 
 
         {fiches.length > 0 && (
           <div style={{ marginTop: 14, display: 'flex', flexDirection: 'column', gap: 12 }}>
-            {fiches.map((f, i) => <Carte key={f.id ?? i} f={f} en={en} mode={mode} destination={!!destination} onItineraire={() => compter('itineraires')} />)}
+            {fiches.map((f, i) => <Carte key={f.id ?? i} f={f} en={en} mode={mode} destination={!!destination} allergie={mentionneAllergie(profil)} onItineraire={() => compter('itineraires')} />)}
           </div>
         )}
 
@@ -562,6 +660,15 @@ export default function SurMesure({ posInitiale, destination, en = false, fondu 
           <div style={{ marginTop: 14, paddingTop: 12, borderTop: '1px solid rgba(253,250,243,0.14)' }}>
             <p style={{ color: 'rgba(253,250,243,0.9)', fontSize: 14, lineHeight: 1.65, margin: 0, whiteSpace: 'pre-wrap' }}>🌙 {prose}</p>
           </div>
+        )}
+
+        {/* §5 — ON DIT CE QU'ON A DÛ LÂCHER. « Un critère relâché en
+            silence, c'est un mensonge. » */}
+        {relaches.length > 0 && fiches.length > 0 && (
+          <p style={{ color: 'var(--or)', fontSize: 13, marginTop: 12, lineHeight: 1.5 }}>
+            ⚠ {t(`Aucune adresse ne cochait tout : j'ai dû laisser de côté ${relaches.join(', ')}.`,
+                  `No place matched everything: I had to set aside ${relaches.join(', ')}.`)}
+          </p>
         )}
 
         {/* 🔴 §6 — la phrase permanente, sobre, sous les résultats. */}
@@ -594,7 +701,7 @@ function Cadre({ fondu, titre, children }: { fondu: boolean; titre: string; chil
 }
 
 /** UNE FICHE = une carte qui respire, la photo la porte (§2 et §6). */
-function Carte({ f, en, mode, destination, onItineraire }: { f: Fiche; en: boolean; mode: Mode; destination: boolean; onItineraire: () => void }) {
+function Carte({ f, en, mode, destination, allergie, onItineraire }: { f: Fiche; en: boolean; mode: Mode; destination: boolean; allergie: boolean; onItineraire: () => void }) {
   const t = (fr: string, an: string) => (en ? an : fr)
   // §5.1 et §5.2 : le temps est TOUJOURS accompagné de son mode, et
   // jamais « 91 min à pied » — au-delà de 20 minutes, on bascule sur la
@@ -631,6 +738,14 @@ function Carte({ f, en, mode, destination, onItineraire }: { f: Fiche; en: boole
         <p style={{ color: f.alcool === 'non' ? '#7dd87d' : 'rgba(253,250,243,0.72)', fontSize: 12.5, fontWeight: 700, margin: '3px 0 0' }}>
           {ligneAlcool(f.alcool ?? 'inconnu', en)}
         </p>
+        {/* 🔴 LA LIGNE ALLERGIE — fixe, visible, jamais reformulée. Une
+            allergie mal gérée peut tuer : nous ne connaissons pas la
+            composition des plats, et nous le disons sur CHAQUE fiche. */}
+        {allergie && (
+          <p style={{ color: '#ffb4a2', fontSize: 12.5, fontWeight: 800, margin: '4px 0 0', lineHeight: 1.45 }}>
+            ⚠ {ligneAllergie(en)}
+          </p>
+        )}
 
         <div style={{ display: 'flex', gap: 8, marginTop: 10, flexWrap: 'wrap' }}>
           <a href={`https://www.google.com/maps/dir/?api=1&destination=${f.lat},${f.lng}`} target="_blank" rel="noopener noreferrer" onClick={onItineraire}
