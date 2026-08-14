@@ -1,7 +1,10 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
+import { useRouter } from 'next/navigation'
 import { CRITERES_DEFAUT, lireDemande, relance, resumerCriteres, type Criteres } from '@/lib/criteres'
+import { lireIntention } from '@/lib/villesIndex'
+import type { VilleLue } from '@/lib/lireVille.mjs'
 import { trajet, type Mode } from '@/lib/trajet'
 import { ligneAlcool, mentionPermanente } from '@/lib/alcool.mjs'
 import { choisirPourMoi, pistes as genererPistes, type Piste } from '@/lib/pistes'
@@ -48,8 +51,11 @@ export interface Fiche {
 
 type Etape = 'question' | 'relance' | 'cherche' | 'resultat' | 'sans-position'
 
-const EXEMPLES_FR = ['un kebab pas cher pas loin', 'un endroit calme pour dîner en famille', 'une pâtisserie ouverte après la prière']
-const EXEMPLES_EN = ['a cheap kebab nearby', 'a quiet place for a family dinner', 'a bakery open after prayer']
+// 🗺️ Les exemples APPRENNENT la barre unique : deux besoins autour de
+// soi, une ville seule, un besoin dans une ville. C'est ainsi que le
+// visiteur découvre qu'il n'a plus qu'un seul champ à remplir.
+const EXEMPLES_FR = ['un kebab pas cher pas loin', 'Istanbul', 'une pâtisserie à Tirana', 'un endroit calme pour dîner en famille']
+const EXEMPLES_EN = ['a cheap kebab nearby', 'Istanbul', 'a bakery in Tirana', 'a quiet place for a family dinner']
 
 // Ordre voulu par Mohamed : la prière d'abord, comme sur l'accueil.
 // « Où dormir » n'est pas ici : ce n'est pas un besoin de l'instant, il
@@ -77,7 +83,7 @@ const LIB_MODE: Record<Mode, [string, string]> = {
 
 const euros = (p?: number) => (p ? '€'.repeat(Math.min(4, p)) : null)
 
-export default function SurMesure({ posInitiale, destination, en = false, fondu = false }: {
+export default function SurMesure({ posInitiale, destination: destinationProp, en = false, fondu = false, titrePage = false }: {
   posInitiale?: { lat: number; lng: number; ville?: string | null } | null
   destination?: { lat: number; lng: number; nom: string } | null
   en?: boolean
@@ -85,8 +91,22 @@ export default function SurMesure({ posInitiale, destination, en = false, fondu 
    *  déjà en place : ni cadre, ni bandeau de titre — la zone en a un.
    *  « On n'empile pas, on intègre » (Mohamed, 15 août). */
   fondu?: boolean
+  /** 🏠 Sur l'accueil SEULEMENT : « Où prier, où manger halal — partout où
+   *  tu voyages » devient le SOUS-TITRE de cette barre, plus une section
+   *  séparée (Mohamed, 16 août). Le H1 reste donc rendu — Google le voit
+   *  toujours — mais il ne coûte plus un écran entier. */
+  titrePage?: boolean
 }) {
+  const router = useRouter()
   const [phrase, setPhrase] = useState('')
+  // 🗺️ UNE SEULE BARRE. Quand la phrase désigne une ville, c'est elle qui
+  // devient le point de départ de la recherche — sans que le visiteur
+  // ait à changer de champ ni à retaper quoi que ce soit.
+  const [villeChoisie, setVilleChoisie] = useState<{ lat: number; lng: number; nom: string } | null>(null)
+  // Quand les deux lectures se défendent (« kebab Istanbul »), on ne
+  // tranche pas : on propose les deux en un appui.
+  const [ambigu, setAmbigu] = useState<VilleLue | null>(null)
+  const destination = destinationProp ?? villeChoisie
   const [crit, setCrit] = useState<Criteres>(CRITERES_DEFAUT)
   const [etape, setEtape] = useState<Etape>('question')
   const [ouvrirQcm, setOuvrirQcm] = useState(false)
@@ -164,8 +184,42 @@ export default function SurMesure({ posInitiale, destination, en = false, fondu 
     return Object.keys(p).length ? p : null
   }
 
+  /**
+   * 🗺️ ÉTAPE 0 — LA BARRE UNIQUE : de quoi parle cette phrase ?
+   *
+   * Ordre de Mohamed, 16 août : « UNE SEULE BARRE désormais. J'écris "un
+   * kebab pas loin" → recherche autour de moi. J'écris "Istanbul" → ouvre
+   * le guide de la ville. J'écris "une pâtisserie à Tirana" → recherche
+   * dans cette ville. Si c'est ambigu, elle propose les deux en un appui. »
+   *
+   * Rend `true` quand la phrase a été entièrement traitée ici (guide
+   * ouvert, ou question posée) et qu'il n'y a plus rien à chercher.
+   */
+  function aiguiller(txt: string): boolean {
+    if (destinationProp) return false // sur une fiche ville, le lieu est déjà fixé
+    const i = lireIntention(txt)
+    if (i.quoi === 'guide') {
+      // Rien d'autre que le nom d'une ville : c'est un guide qu'on veut.
+      router.push(`/destinations/${i.ville.slug}`)
+      return true
+    }
+    if (i.quoi === 'ambigu') { setAmbigu(i.ville); return true }
+    if (i.quoi === 'dans-ville') {
+      const v = { lat: i.ville.lat, lng: i.ville.lng, nom: i.ville.nom }
+      setVilleChoisie(v)
+      setAmbigu(null)
+      comprendre(i.ville.reste, v)
+      return true
+    }
+    // Aucune ville : on repart de la position du visiteur.
+    if (villeChoisie) setVilleChoisie(null)
+    setAmbigu(null)
+    return false
+  }
+
   /** Étape 1 → 2 : on lit la phrase, on montre ce qu'on a compris. */
-  function comprendre(txt: string) {
+  function comprendre(txt: string, ville?: { lat: number; lng: number; nom: string } | null) {
+    if (ville === undefined && aiguiller(txt)) return
     const c = lireDemande(txt)
     setCrit(c)
     setAEcrit(txt.trim().length > 0)
@@ -176,18 +230,21 @@ export default function SurMesure({ posInitiale, destination, en = false, fondu 
     }
     const r = relance(c, en)
     if (r) setEtape('relance')
-    else lancer(c, txt.trim().length > 0)
+    else lancer(c, txt.trim().length > 0, false, ville)
   }
 
-  async function lancer(c: Criteres, ecrit: boolean, forcerGPS = false) {
+  async function lancer(c: Criteres, ecrit: boolean, forcerGPS = false, ville?: { lat: number; lng: number; nom: string } | null) {
     if (enCours.current) return
     enCours.current = true
     setProse(''); setFiches([]); setAutres([]); setVoirAutres(false); setEtape('cherche')
     try {
-      const exacte = destination ? null : await gps(forcerGPS ? 25_000 : 20_000)
-      const pos = destination ?? exacte ?? posInitiale
+      // `ville` est passée quand la barre unique vient de reconnaître une
+      // ville dans la phrase : l'état React n'est pas encore à jour.
+      const lieu = ville ?? destination
+      const exacte = lieu ? null : await gps(forcerGPS ? 25_000 : 20_000)
+      const pos = lieu ?? exacte ?? posInitiale
       if (!pos) { setEtape('sans-position'); return }
-      setPosUtilisee(destination ? 'ville' : exacte ? 'gps' : 'ip')
+      setPosUtilisee(lieu ? 'ville' : exacte ? 'gps' : 'ip')
 
       const ac = new AbortController()
       const to = setTimeout(() => ac.abort(), 20_000)
@@ -205,7 +262,7 @@ export default function SurMesure({ posInitiale, destination, en = false, fondu 
       setFiches(trois); setAutres(corps.autres ?? []); setSource(corps.source ?? '')
       setMode(corps.mode ?? 'voiture'); setPlafond(corps.plafondMin ?? 15); setPlusLoin(corps.plusLoin ?? null); setRelaches(corps.relaches ?? [])
       setEtape('resultat')
-      if (trois.length) redigerIA(trois, c, corps.mode ?? 'voiture', c.categorie === 'mosquee' ? avantPriere(pos) : null)
+      if (trois.length) redigerIA(trois, c, corps.mode ?? 'voiture', c.categorie === 'mosquee' ? avantPriere(pos) : null, !!lieu)
     } finally { enCours.current = false }
   }
 
@@ -230,7 +287,7 @@ export default function SurMesure({ posInitiale, destination, en = false, fondu 
   }
 
   /** §3 — l'IA écrit CE QUE LES CHIFFRES NE DISENT PAS. */
-  async function redigerIA(trois: Fiche[], c: Criteres, corpsMode: Mode, priere: { nom: string; minutes: number } | null) {
+  async function redigerIA(trois: Fiche[], c: Criteres, corpsMode: Mode, priere: { nom: string; minutes: number } | null, depuisVille: boolean) {
     // Le contexte contient les FAITS bruts : avis, attributs, horaires.
     // La porte refuse d'affirmer quoi que ce soit d'absent d'ici — la
     // qualité de la réponse EST la qualité de ces lignes.
@@ -247,7 +304,7 @@ export default function SurMesure({ posInitiale, destination, en = false, fondu 
         f.note != null ? `note ${f.note}/5 sur ${f.nbAvis ?? '?'} avis` : null,
         f.prix ? `niveau de prix ${f.prix}/4` : null,
         // §5.7 — « 1,4 km » ne veut rien dire à quelqu'un qui a faim.
-        trajet(f.distanceM, corpsMode, false, !!destination),
+        trajet(f.distanceM, corpsMode, false, depuisVille),
         f.ouvert === true ? `ouvert${f.fermeA ? `, ferme à ${f.fermeA}` : ''}` : f.ouvert === false ? 'fermé actuellement' : null,
         attrs ? `attributs : ${attrs}` : null,
         f.resume ? `description : ${f.resume}` : null,
@@ -334,6 +391,19 @@ export default function SurMesure({ posInitiale, destination, en = false, fondu 
             : t('Dis-moi ce que tu cherches.', 'Tell me what you are looking for.')}
         </h3>
 
+        {/* 🏠 LE TITRE DE LA PAGE DEVIENT LE SOUS-TITRE DE LA BARRE.
+            Mohamed, 16 août : « Le titre "Où prier, où manger halal —
+            partout où tu voyages" devient le sous-titre de CETTE barre,
+            plus une section séparée. » Le H1 est toujours là pour Google,
+            et il ne coûte plus une section entière de hauteur. */}
+        {titrePage && !destination && (
+          <h1 style={{ color: 'rgba(253,250,243,0.72)', fontSize: 14, fontWeight: 600, lineHeight: 1.35, margin: '5px 0 0' }}>
+            {t('Où prier, où ', 'Where to pray, where to ')}
+            <span className="gold-em">{t('manger halal', 'eat halal')}</span>
+            {t(' — partout où tu voyages.', ' — anywhere you travel.')}
+          </h1>
+        )}
+
         <form onSubmit={(e) => { e.preventDefault(); comprendre(phrase) }} style={{ display: 'flex', gap: 8, marginTop: 10, flexWrap: 'wrap' }}>
           <input
             value={phrase} onChange={(e) => setPhrase(e.target.value)}
@@ -346,6 +416,51 @@ export default function SurMesure({ posInitiale, destination, en = false, fondu 
             {etape === 'cherche' ? '…' : t('Trouver', 'Find')}
           </button>
         </form>
+
+        {/* 🗺️ QUAND LES DEUX LECTURES SE DÉFENDENT, C'EST LE VISITEUR QUI
+            TRANCHE — en un appui, sans retaper.
+            « kebab Istanbul » : cherche-t-il un kebab autour de lui, ou à
+            Istanbul ? Nous ne le savons pas, donc nous ne le devinons
+            pas. La même prudence que partout ailleurs sur ce site. */}
+        {ambigu && (
+          <div style={{ marginTop: 10, padding: '10px 12px', borderRadius: 14, background: 'rgba(201,168,76,0.12)', border: '1px solid rgba(201,168,76,0.4)' }}>
+            <p style={{ color: 'var(--creme)', fontSize: 14, fontWeight: 700, margin: 0 }}>
+              {t(`Tu cherches autour de toi, ou à ${ambigu.nom} ?`, `Around you, or in ${ambigu.nom}?`)}
+            </p>
+            <div style={{ display: 'flex', gap: 7, flexWrap: 'wrap', marginTop: 8 }}>
+              <button style={puce(false)} onClick={() => {
+                const v = { lat: ambigu.lat, lng: ambigu.lng, nom: ambigu.nom }
+                setVilleChoisie(v); setAmbigu(null); compter('barre-ville'); comprendre(ambigu.reste, v)
+              }}>
+                {t('À', 'In')} {ambigu.nom}
+              </button>
+              <button style={puce(false)} onClick={() => {
+                const reste = ambigu.reste
+                setVilleChoisie(null); setAmbigu(null); compter('barre-autour'); comprendre(reste, null)
+              }}>
+                {t('Autour de moi', 'Around me')}
+              </button>
+              <a href={`/destinations/${ambigu.slug}`} style={{ ...puce(false), display: 'inline-flex', alignItems: 'center', textDecoration: 'none' }}>
+                {t(`Guide de ${ambigu.nom}`, `${ambigu.nom} guide`)} →
+              </a>
+            </div>
+          </div>
+        )}
+
+        {/* 📍 Une ville reconnue dans la phrase : on le DIT, et on laisse
+            revenir autour de soi en un appui. Un point de départ changé
+            en silence serait exactement le genre de devinette qu'on
+            s'interdit. */}
+        {villeChoisie && !destinationProp && (
+          <p style={{ margin: '8px 0 0', fontSize: 13, color: 'rgba(253,250,243,0.72)' }}>
+            📍 {t('Recherche à', 'Searching in')} <strong style={{ color: 'var(--or)' }}>{villeChoisie.nom}</strong>
+            {' · '}
+            <button onClick={() => { setVilleChoisie(null); setEtape('question') }}
+              style={{ background: 'none', border: 'none', color: 'var(--creme)', textDecoration: 'underline', fontSize: 13, fontWeight: 700, cursor: 'pointer', padding: 0 }}>
+              {t('revenir autour de moi', 'back to around me')}
+            </button>
+          </p>
+        )}
 
         {/* §B.2 — « suggestions d'un appui : Manger · Mosquée · Que faire ».
             Elles lancent la recherche immédiatement : celui qui ne veut
