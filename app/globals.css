@@ -907,3 +907,13 @@ body { top: 0 !important; }
   .guide-prose h2 { font-size: 1.4rem; margin-top: 2.4rem; }
   .guide-prose > p:first-of-type { font-size: 1.1rem; }
 }
+
+/* 🪗 L'accordéon du tableau de bord : le widget qui s'ouvre POUSSE depuis
+   sa ligne — l'œil comprend que c'est le même objet qui grandit, pas un
+   nouveau bloc qui apparaît. 180 ms : sous la limite des 200 ms au-delà
+   de laquelle une interface se met à paraître lente. */
+@keyframes board-pousse {
+  from { opacity: 0.55; transform: scaleY(0.96); }
+  to   { opacity: 1;    transform: scaleY(1); }
+}
+.board-pousse { animation: board-pousse 0.18s ease-out; transform-origin: top; }
