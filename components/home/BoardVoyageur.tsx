@@ -525,9 +525,9 @@ export default function BoardVoyageur({
               <span style={{ color: '#fdfaf3', fontWeight: 900, fontSize: 15 }}>{meteo.maintenant.temp}°</span>
             </Link>
           )}
-          <Link href="/spots" style={{ color: 'var(--or)', fontSize: 13.5, fontWeight: 800, textDecoration: 'none', minHeight: 48, padding: '0 8px', display: 'flex', alignItems: 'center' }}>
-            {en ? 'See all →' : 'Tout voir →'}
-          </Link>
+          {/* 🧹 15 août : « Tout voir → » retiré — il menait à /spots, déjà
+              servi par la tuile Spots ET l'onglet Spots de la barre du bas.
+              Trois portes vers la même pièce, deux de trop. */}
         </div>
 
         {/* 🔎 Le titre et la recherche de l'ancienne page d'accueil, fondus
@@ -536,6 +536,26 @@ export default function BoardVoyageur({
 
         {/* ── Tuiles composables : la taille suit le moment (focus) ── */}
         {(() => {
+          // 📿 TOUT LE RELIGIEUX DANS UNE SEULE ZONE — l'équation « épurée »
+          // demandée par Mohamed le 15 août. Avant, la prière vivait à trois
+          // endroits de l'écran : la grande tuile en haut, la ligne
+          // Qibla + date hégirienne six tuiles plus bas, et la bande des
+          // cinq horaires tout en bas. L'œil devait recoller les morceaux.
+          // Les cinq horaires viennent maintenant SOUS la tuile prière,
+          // dans la même zone visuelle : une question, une carte.
+          const horairesStrip = journee && (
+            <Link href={localizedHref('/horaires-priere', en)} className="board-strip" style={{ ...T.tile, marginTop: 8, display: 'flex', justifyContent: 'space-between', gap: 4, padding: '11px 10px', textDecoration: 'none' }}>
+              {journee.map(({ k, d }) => {
+                const active = fenetre.key === k
+                return (
+                  <div key={k} style={{ textAlign: 'center', flex: 1, borderRadius: 12, padding: '6px 2px', background: active ? 'rgba(201,168,76,0.18)' : 'transparent', border: active ? '1px solid rgba(201,168,76,0.45)' : '1px solid transparent' }}>
+                    <p style={{ fontSize: 11.5, fontWeight: 800, letterSpacing: '0.04em', textTransform: 'uppercase', color: active ? 'var(--or)' : 'rgba(253,250,243,0.78)', margin: 0 }}>{k}</p>
+                    <p style={{ fontFamily: "'Playfair Display', Georgia, serif", color: active ? '#fdfaf3' : 'rgba(253,250,243,0.9)', fontWeight: active ? 900 : 700, fontSize: 17, margin: '3px 0 0', fontVariantNumeric: 'tabular-nums', lineHeight: 1.1 }}>{fmtClock(d)}</p>
+                  </div>
+                )
+              })}
+            </Link>
+          )
           const priereWide = (
             <div className="board-hero" role="link" tabIndex={0} onClick={() => { window.location.href = '/horaires-priere' }} onKeyDown={(e) => { if (e.key === 'Enter') window.location.href = '/horaires-priere' }}
               style={{ ...T.tile, background: 'linear-gradient(150deg, rgba(27,67,50,0.85), rgba(255,255,255,0.04))', borderColor: 'rgba(201,168,76,0.35)', cursor: 'pointer' }}>
@@ -605,10 +625,12 @@ export default function BoardVoyageur({
               )}
               {mosquee === null && (
                 <p style={{ ...T.meta, marginTop: 8 }}>
+                  {/* Pas de lien Qibla ici : le grand bouton doré vit trois
+                      cartes plus bas — deux Qibla sur un écran épuré, c'est
+                      une de trop. */}
                   {osmOk
-                    ? (en ? 'No known prayer place within 5 km — ' : 'Aucun lieu de prière connu à moins de 5 km — ')
-                    : (en ? 'Could not finish the search — try again in a moment. ' : 'Recherche non terminée — réessaie dans un instant. ')}
-                  <Link href="/qibla" onClick={(e) => e.stopPropagation()} style={{ color: 'var(--or)', fontWeight: 800, display: 'inline-flex', alignItems: 'center', minHeight: 44, padding: '0 10px', borderRadius: 999, border: '1px solid rgba(201,168,76,0.4)' }}>🧭 Qibla</Link>
+                    ? (en ? 'No known prayer place within 5 km — pray where you are.' : 'Aucun lieu de prière connu à moins de 5 km — prie où tu es.')
+                    : (en ? 'Could not finish the search — try again in a moment.' : 'Recherche non terminée — réessaie dans un instant.')}
                 </p>
               )}
             </div>
@@ -831,6 +853,7 @@ export default function BoardVoyageur({
               <>
                 {mangerWide || mangerVide}
                 {priereSlim}
+                {horairesStrip}
                 <div className="board-duo" style={{ display: 'grid', gridTemplateColumns: '1fr', gap: 10, marginTop: 10 }}>
                   {spotsWidget}
                 </div>
@@ -841,6 +864,7 @@ export default function BoardVoyageur({
             return (
               <>
                 {priereSlim}
+                {horairesStrip}
                 <div className="board-duo" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginTop: 10,
                   // `start` et non l'étirement par défaut : quand « Manger » n'a
                   // rien à dire, la grille lui donnait la hauteur de la tuile
@@ -856,6 +880,7 @@ export default function BoardVoyageur({
           return (
             <>
               {priereWide}
+              {horairesStrip}
               <div className="board-duo" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginTop: 10,
                   // `start` et non l'étirement par défaut : quand « Manger » n'a
                   // rien à dire, la grille lui donnait la hauteur de la tuile
@@ -870,115 +895,32 @@ export default function BoardVoyageur({
         })()}
 
 
-        {/* 🍔 « J'ai envie de… » — l'envie du moment, pas seulement le plus
-            proche. Filtre le TYPE de cuisine ; le statut halal ne change pas
-            (« signalé halal · à vérifier » dans tous les cas). */}
-        <div style={{ marginTop: 10 }}>
-          <div style={{ display: 'flex', gap: 7, overflowX: 'auto', paddingBottom: 4, WebkitOverflowScrolling: 'touch' }}>
-            <span style={{ flex: 'none', alignSelf: 'center', ...T.lab, paddingRight: 2 }}>
-              {en ? 'I feel like' : 'J\'ai envie de'}
-            </span>
-            {envie && (
-              <button
-                onClick={() => setEnvie(null)}
-                style={{ flex: 'none', minHeight: 44, padding: '0 14px', borderRadius: 999, border: '1px solid rgba(253,250,243,0.25)', background: 'transparent', color: 'rgba(253,250,243,0.75)', fontWeight: 700, fontSize: 13, cursor: 'pointer' }}
-              >
-                ✕ {en ? 'Any' : 'Tout'}
-              </button>
-            )}
-            {ENVIES.map((e) => {
-              const on = envie === e.id
-              return (
-                <button
-                  key={e.id}
-                  onClick={() => setEnvie(on ? null : e.id)}
-                  aria-pressed={on}
-                  style={{
-                    flex: 'none', minHeight: 44, padding: '0 14px', borderRadius: 999, cursor: 'pointer',
-                    border: on ? '1.5px solid var(--or)' : '1px solid rgba(253,250,243,0.3)',
-                    background: on ? 'rgba(201,168,76,0.18)' : 'rgba(255,255,255,0.05)',
-                    color: on ? 'var(--or)' : 'var(--creme)',
-                    fontWeight: on ? 800 : 700, fontSize: 13.5, whiteSpace: 'nowrap',
-                  }}
-                >
-                  {e.emoji} {e[en ? 'en' : 'fr']}
-                </button>
-              )
-            })}
-          </div>
-        </div>
+        {/* 🧹 15 août — la rangée « J'ai envie de… » et son sélecteur
+            « le plus proche / le meilleur choix » quittent l'accueil : deux
+            rangées de boutons pour affiner une seule tuile, c'est un outil,
+            pas un premier écran. La tuile Manger ouvre /autour-de-moi où ce
+            choix existe déjà. L'écran répond à trois questions — prier,
+            manger, explorer — et s'arrête là. */}
 
-
-          {envie && (
-            <div style={{ display: 'flex', gap: 7, marginTop: 8, alignItems: 'center', flexWrap: 'wrap' }}>
-              {([['proche', '📍', en ? 'Closest' : 'Le plus proche'], ['meilleur', '⭐', en ? 'Best pick' : 'Le meilleur choix']] as const).map(([m, ic, lab]) => {
-                const on = mode === m
-                return (
-                  <button
-                    key={m} onClick={() => setMode(m)} aria-pressed={on}
-                    style={{
-                      minHeight: 44, padding: '0 14px', borderRadius: 999, cursor: 'pointer',
-                      border: on ? '1.5px solid var(--or)' : '1px solid rgba(253,250,243,0.3)',
-                      background: on ? 'rgba(201,168,76,0.18)' : 'rgba(255,255,255,0.05)',
-                      color: on ? 'var(--or)' : 'var(--creme)', fontWeight: on ? 800 : 700, fontSize: 13,
-                    }}
-                  >
-                    {ic} {lab}
-                  </button>
-                )
-              })}
-            </div>
-          )}
-
-        {/* ── Une seule ligne discrete : Qibla + date hegirienne ──
-            Fusionnees pour alleger le board (7 instruments -> 6). Deux
-            zones de frappe distinctes, chacune >= 44 px. */}
-        <div className="board-smalls" style={{ ...T.tile, marginTop: 10, display: 'flex', alignItems: 'center', gap: 10, padding: '6px 10px' }}>
-          {/* 🧭 LA QIBLA EN DORÉ PLEIN — demandé par Mohamed : « mets le bouton
-              de la Qibla plus visible ». Il était en texte clair sur fond
-              sombre, au même poids que la date hégirienne à côté : rien ne
-              disait que c'était le bouton le plus utile de la ligne. L'or plein
-              est la couleur d'action du site (celle d'« Itinéraire »), donc il
-              se lit comme un bouton et non comme une information. */}
-          <Link href="/qibla" aria-label={en ? 'Qibla compass' : 'Boussole Qibla'}
-            style={{
-              flex: 1, minHeight: 46, display: 'flex', alignItems: 'center', justifyContent: 'center',
-              gap: 8, textDecoration: 'none', borderRadius: 999,
-              background: 'var(--or)', color: 'var(--nuit)',
-              boxShadow: '0 2px 12px rgba(201,168,76,0.35)',
-            }}>
-            <span style={{ fontSize: 19, transform: `rotate(${qibla.deg}deg)`, display: 'inline-block', lineHeight: 1 }} aria-hidden>🧭</span>
-            <span style={{ color: 'var(--nuit)', fontWeight: 900, fontSize: 14.5 }}>
-              {qibla.deg}° · {qibla.dir}
-              <span style={{ fontWeight: 800, fontSize: 12.5, marginLeft: 6, opacity: 0.75 }}>Qibla</span>
-            </span>
-          </Link>
-          <span aria-hidden style={{ width: 1, alignSelf: 'stretch', background: 'rgba(253,250,243,0.14)' }} />
-          <Link href={localizedHref('/horaires-priere', en)} style={{ flex: 1, minHeight: 44, display: 'flex', alignItems: 'center', gap: 8, textDecoration: 'none', justifyContent: 'flex-end' }}>
-            <span style={{ fontSize: 17 }} aria-hidden>🌙</span>
-            <span style={{ color: 'rgba(253,250,243,0.85)', fontWeight: 700, fontSize: 13, textAlign: 'right', lineHeight: 1.25 }}>{hijri ?? '—'}</span>
-          </Link>
-        </div>
-
-        {/* Pas de phrase météo ici : Mohamed a demandé que l'accueil reste
-            léger. La température suffit, le reste est sur /meteo. */}
-
-        {/* ── Les 5 prieres du jour — lisibles d'un coup d'oeil ──
-            Remonte a la place de l'ancienne bande de vignettes : c'est
-            l'information qu'on ouvre le site pour consulter. */}
-        {journee && (
-          <Link href={localizedHref('/horaires-priere', en)} className="board-strip" style={{ ...T.tile, marginTop: 10, display: 'flex', justifyContent: 'space-between', gap: 4, padding: '13px 10px', textDecoration: 'none' }}>
-            {journee.map(({ k, d }) => {
-              const active = fenetre.key === k
-              return (
-                <div key={k} style={{ textAlign: 'center', flex: 1, borderRadius: 12, padding: '7px 2px', background: active ? 'rgba(201,168,76,0.18)' : 'transparent', border: active ? '1px solid rgba(201,168,76,0.45)' : '1px solid transparent' }}>
-                  <p style={{ fontSize: 11.5, fontWeight: 800, letterSpacing: '0.04em', textTransform: 'uppercase', color: active ? 'var(--or)' : 'rgba(253,250,243,0.78)', margin: 0 }}>{k}</p>
-                  <p style={{ fontFamily: "'Playfair Display', Georgia, serif", color: active ? '#fdfaf3' : 'rgba(253,250,243,0.9)', fontWeight: active ? 900 : 700, fontSize: 17, margin: '3px 0 0', fontVariantNumeric: 'tabular-nums', lineHeight: 1.1 }}>{fmtClock(d)}</p>
-                </div>
-              )
-            })}
-          </Link>
-        )}
+        {/* 🧭 LA QIBLA, seule sur sa ligne — en doré plein (demandé par
+            Mohamed : « mets le bouton de la Qibla plus visible »). La date
+            hégirienne qui partageait cette ligne part sur /horaires-priere :
+            belle information, mais pas une action — et l'écran épuré ne
+            garde que ce qu'on vient y FAIRE. Les cinq horaires ont rejoint
+            la carte prière, plus haut : le religieux vit dans UNE zone. */}
+        <Link href="/qibla" aria-label={en ? 'Qibla compass' : 'Boussole Qibla'}
+          style={{
+            marginTop: 10, minHeight: 50, display: 'flex', alignItems: 'center', justifyContent: 'center',
+            gap: 8, textDecoration: 'none', borderRadius: 999,
+            background: 'var(--or)', color: 'var(--nuit)',
+            boxShadow: '0 2px 12px rgba(201,168,76,0.35)',
+          }}>
+          <span style={{ fontSize: 19, transform: `rotate(${qibla.deg}deg)`, display: 'inline-block', lineHeight: 1 }} aria-hidden>🧭</span>
+          <span style={{ color: 'var(--nuit)', fontWeight: 900, fontSize: 14.5 }}>
+            {qibla.deg}° · {qibla.dir}
+            <span style={{ fontWeight: 800, fontSize: 12.5, marginLeft: 6, opacity: 0.75 }}>Qibla</span>
+          </span>
+        </Link>
 
       </div>
     </section>
