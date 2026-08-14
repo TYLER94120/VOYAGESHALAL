@@ -2,7 +2,8 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { CRITERES_DEFAUT, lireDemande, relance, resumerCriteres, type Criteres } from '@/lib/criteres'
-import { minutes as minTrajet, trajet, type Mode } from '@/lib/trajet'
+import { trajet, type Mode } from '@/lib/trajet'
+import { ligneAlcool, mentionPermanente } from '@/lib/alcool.mjs'
 import { computePrayerTimesFull } from '@/lib/prayerCalc'
 
 // 🎯 LE SUR MESURE — « dis-moi ce que tu cherches ».
@@ -37,7 +38,7 @@ export interface Fiche {
   adresse?: string; telephone?: string; mapsUri?: string
   photos?: string[]; attributionsPhotos?: string[]; avis?: Avis[]; resume?: string
   attributs?: Record<string, boolean | undefined>
-  statut: string; source: 'spot' | 'google' | 'osm'
+  statut: string; alcool?: 'non' | 'inconnu'; source: 'spot' | 'google' | 'osm'
 }
 
 type Etape = 'question' | 'relance' | 'cherche' | 'resultat' | 'sans-position'
@@ -211,6 +212,13 @@ export default function SurMesure({ posInitiale, destination, en = false, fondu 
       // 🕌 Pour la prière, la vraie question n'est pas « laquelle est la
       // mieux notée » mais « ai-je le temps d'y arriver ». On donne donc
       // le temps restant, et on demande de RAISONNER dessus.
+      // 🔴 §7 — ce que l'IA n'a PAS le droit de faire. Le filtre est déjà
+      // passé (elle ne voit que des lieux retenus), mais elle ne doit ni
+      // minimiser, ni rassurer à tort, ni trancher une question
+      // religieuse : elle signale un fait, elle n'arbitre pas.
+      en
+        ? 'Never minimise on alcohol or pork ("you can still go, just order the dish") and never issue a religious ruling — you are not a scholar. If information is missing, say so plainly instead of reassuring.'
+        : "Ne minimise JAMAIS sur l'alcool ou le porc (pas de « tu peux y aller, prends juste le plat ») et ne tranche AUCUNE question religieuse — tu n'es pas un savant. Si une information manque, dis-le franchement au lieu de rassurer.",
       priere
         ? (en
           ? `IMPORTANT: ${priere.minutes} minutes remain before ${priere.nom}. For EACH mosque, say plainly whether the traveller can get there in time given the travel time shown, and if not, say so. Never invent facilities (women's area, ablutions, parking): if they are not in the data, write that they are not documented.`
@@ -486,6 +494,13 @@ export default function SurMesure({ posInitiale, destination, en = false, fondu 
           </div>
         )}
 
+        {/* 🔴 §6 — la phrase permanente, sobre, sous les résultats. */}
+        {fiches.length > 0 && (
+          <p style={{ color: 'rgba(253,250,243,0.55)', fontSize: 11.5, marginTop: 12, lineHeight: 1.5 }}>
+            {mentionPermanente(en)}
+          </p>
+        )}
+
         {source === 'osm' && fiches.length > 0 && (
           <p style={{ color: 'rgba(253,250,243,0.55)', fontSize: 12, marginTop: 10 }}>
             {t('Résultats OpenStreetMap — les fiches Google Maps arrivent bientôt.', 'OpenStreetMap results — Google Maps details coming soon.')}
@@ -540,6 +555,12 @@ function Carte({ f, en, mode, destination, onItineraire }: { f: Fiche; en: boole
         </p>
         {f.adresse && <p style={{ color: 'rgba(253,250,243,0.6)', fontSize: 12.5, margin: '4px 0 0' }}>{f.adresse}</p>}
         <p style={{ color: 'var(--or)', fontSize: 12.5, fontWeight: 700, margin: '6px 0 0' }}>{f.statut}</p>
+        {/* 🔴 §6 — une ligne alcool sur CHAQUE fiche, jamais optionnelle.
+            Verte quand Google l'affirme, ambre quand on ne sait pas : on
+            ne rassure jamais à tort. */}
+        <p style={{ color: f.alcool === 'non' ? '#7dd87d' : 'rgba(253,250,243,0.72)', fontSize: 12.5, fontWeight: 700, margin: '3px 0 0' }}>
+          {ligneAlcool(f.alcool ?? 'inconnu', en)}
+        </p>
 
         <div style={{ display: 'flex', gap: 8, marginTop: 10, flexWrap: 'wrap' }}>
           <a href={`https://www.google.com/maps/dir/?api=1&destination=${f.lat},${f.lng}`} target="_blank" rel="noopener noreferrer" onClick={onItineraire}
