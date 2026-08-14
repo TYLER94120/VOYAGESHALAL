@@ -3,6 +3,7 @@
 import { cuisineCategory, CATEGORY_ORDER } from '@/lib/cuisineCategory'
 import PriereVille from '@/components/villes/PriereVille'
 import PresDeMoi from '@/components/lieux/PresDeMoi'
+import { infoPratiqueEn } from '@/lib/infoPratiqueEn'
 import { enLabel, countryEn } from '@/lib/poiI18n'
 import { useState, useRef } from 'react'
 import Image from 'next/image'
@@ -190,16 +191,29 @@ export default function VilleDesktop({ ville }: { ville: any }) {
   const restosAffiches = restosFiltres.slice(0, visibleRestos)
   const tabCounts: Record<string, number> = { restaurants: restaurantsTotal, mosquees: mosquees.length, hotels: hotels.length, activites: activites.length, pratique: 0 }
 
+  // 🌍 INFOS PRATIQUES BILINGUES — défaut mesuré le 15 août : 189 fiches
+  // sur 354 servaient ce bloc EN FRANÇAIS sur gohalaltravel.com, libellés
+  // compris. La règle vit dans lib/infoPratiqueEn.ts : elle traduit ce
+  // qu'elle reconnaît et rend `null` sinon — dans ce cas la ligne DISPARAÎT
+  // de la fiche anglaise. Mieux vaut une ligne absente qu'une ligne en
+  // français, et infiniment mieux qu'un fait pratique (visa, vaccin)
+  // traduit à la devinette.
   const pratiqueItems = [
-    { icon: '✈️', label: 'Visa', value: ip.visa },
-    { icon: '💉', label: 'Vaccins', value: ip.vaccins },
-    { icon: '🚇', label: 'Transport', value: ip.transport || legacyIp.transport },
-    { icon: '🔌', label: 'Prise électrique', value: ip.priseElectrique },
-    { icon: '🕐', label: 'Décalage horaire', value: ip.decalageHoraire },
-    { icon: '💱', label: 'Monnaie', value: ville.monnaie || legacyIp.monnaie },
-    { icon: '🌤', label: 'Meilleure époque', value: ville.meilleureEpoque || legacyIp.meilleure_periode },
-    { icon: '🗣️', label: 'Langue', value: ville.langue || legacyIp.langue },
-  ].filter((i) => i.value)
+    { icon: '✈️', label: 'Visa', labelEn: 'Visa', value: ip.visa },
+    { icon: '💉', label: 'Vaccins', labelEn: 'Vaccinations', value: ip.vaccins },
+    { icon: '🚇', label: 'Transport', labelEn: 'Getting around', value: ip.transport || legacyIp.transport },
+    { icon: '🔌', label: 'Prise électrique', labelEn: 'Power socket', value: ip.priseElectrique },
+    { icon: '🕐', label: 'Décalage horaire', labelEn: 'Time difference', value: ip.decalageHoraire },
+    { icon: '💱', label: 'Monnaie', labelEn: 'Currency', value: ville.monnaie || legacyIp.monnaie },
+    { icon: '🌤', label: 'Meilleure époque', labelEn: 'Best time to visit', value: ville.meilleureEpoque || legacyIp.meilleure_periode },
+    { icon: '🗣️', label: 'Langue', labelEn: 'Language', value: ville.langue || legacyIp.langue },
+  ]
+    .map((i) => ({
+      ...i,
+      label: en ? i.labelEn : i.label,
+      value: !i.value ? i.value : en ? infoPratiqueEn(String(i.value)) : i.value,
+    }))
+    .filter((i) => i.value)
 
   const card: React.CSSProperties = { background: '#fff', borderRadius: '20px', padding: '22px', border: '1px solid rgba(11,26,15,0.06)', boxShadow: '0 8px 28px rgba(11,26,15,0.06)', transition: 'transform .2s, box-shadow .2s' }
   const WRAP = 900
