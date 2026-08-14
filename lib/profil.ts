@@ -177,3 +177,5 @@ export function consigneProfilIA(p: Profil, en: boolean): string | null {
     ? ' The traveller mentions an allergy: NEVER guarantee the absence of an allergen, under any wording. Tell them to check directly with the restaurant.'
     : " Le voyageur mentionne une allergie : ne garantis JAMAIS l'absence d'un allergène, sous aucune formulation. Invite-le à vérifier directement auprès du restaurant.")
 }
+
+// (Redéploiement : le webhook Vercel a manqué le commit e9f4d1b.)
