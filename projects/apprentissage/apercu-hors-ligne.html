@@ -7469,9 +7469,54 @@ function ippDemarrerLecon(id, racine) {
     }
   }
 
+  /* ---------- le bouton Retour du telephone --------------------------------
+     Mesure du cycle 38 : six tapes dans une lecon, Retour, et en la rouvrant on
+     repart de la carte 1. Jusqu'a **14 tapes perdues** sur la plus longue. Le
+     site ne posait aucune entree d'historique : une lecon etait UNE page, donc
+     Retour la quittait entierement.
+
+     Sur un telephone, le geste de retour au bord de l'ecran part tout seul. Le
+     punir en effacant quinze minutes de travail est la meilleure facon de ne pas
+     faire reprendre la lecon.
+
+     On pose donc une entree par carte : **Retour recule d'une carte**, ce que le
+     geste veut dire. Deux fois de suite depuis la premiere carte, on quitte la
+     lecon — c'est aussi ce qu'on attend.
+
+     La barre de progression recule alors d'un point, et c'est voulu : la regle du
+     cycle 3 dit qu'elle ne recule pas TOUTE SEULE, quand une carte manquee est
+     remise a la fin. Ici c'est la personne qui a demande a revenir ; lui montrer
+     le contraire serait lui mentir sur ou elle est.
+
+     `history` peut manquer ou etre refuse : on retombe alors sur l'ancien
+     comportement, sans rien casser.                                           */
+  var histoire = !!(window.history && window.history.pushState);
+
+  function noterPosition() {
+    if (!histoire) { return; }
+    try { window.history.pushState({ ippPos: pos }, '', window.location.href); }
+    catch (e) { histoire = false; }
+  }
+
+  if (histoire) {
+    // L'entree d'origine porte la carte 0 : sans elle, un retour depuis la
+    // premiere carte n'aurait rien a lire.
+    try { window.history.replaceState({ ippPos: 0 }, '', window.location.href); }
+    catch (e) { histoire = false; }
+
+    window.addEventListener('popstate', function (e) {
+      var ou = (e.state && typeof e.state.ippPos === 'number') ? e.state.ippPos : null;
+      // Pas d'etat a nous : on sort de la lecon, on laisse le navigateur faire.
+      if (ou === null) { return; }
+      pos = Math.max(0, Math.min(ou, ordre.length));
+      afficher(true);
+    });
+  }
+
   bouton.addEventListener('click', function () {
     if (pos >= ordre.length) { return; }
     pos++;
+    noterPosition();
     // "tap" s'entend quatorze fois par lecon : il doit rester presque
     // invisible, et "fin" seul doit se remarquer.
     if (pos === ordre.length) {

@@ -240,26 +240,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 >   simulee qui repond en 21 ms, « ↻ Repeter avec moi » apparait sur la carte du
 >   verset ; sans reponse, aucun bouton — la regle tient dans les deux sens.
 
-1. **Appuyer sur Retour au milieu d'une lecon renvoie au debut : jusqu'a 14
-   tapes perdues.**
-   *Preuve :* six tapes dans « Les six piliers de la foi », on est sur la carte 7
-   (« Croire en Ses livres »). **Retour ramene a l'accueil** — c'est correct, la
-   lecon est une seule page. Mais en rouvrant la lecon, **on repart de la carte
-   1** : les six tapes et les reponses deja donnees sont perdues.
-   *Le pire cas est chiffre :* la lecon la plus longue fait **15 cartes**, donc
-   **14 tapes** perdues pour qui appuie juste avant la fin. Les sept lecons font
-   12 cartes en moyenne.
-   *Ce n'est pas un bogue, c'est une absence* : le site ne pose aucune entree
-   d'historique — `history.pushState` n'apparait nulle part. Sur un telephone, le
-   geste de retour au bord de l'ecran part tout seul ; perdre sa place au
-   quatorzieme geste d'une lecon est une bonne raison de ne pas la reprendre.
-   *Deux voies, et elles ne se valent pas :* poser une entree d'historique par
-   carte — Retour recule alors d'**une** carte, ce que la personne attend — ou
-   se souvenir de la position et proposer de reprendre. La premiere respecte le
-   geste, la seconde ajoute un choix a faire. **A mesurer avant de trancher**, y
-   compris ce que devient le compteur de cartes quand on recule.
-
-2. **La feuille de route promet un silence « de meme duree ». Il est 15 % plus
+1. **La feuille de route promet un silence « de meme duree ». Il est 15 % plus
    long, et c'est le texte qui a tort.**
    *Preuve, chronometree :* verset simule de **3,00 s** → silence de **3,45 s**,
    trois fois de suite, soit **x1,15**. Or la feuille de route, redite a chaque
@@ -277,7 +258,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    decrit pas ce que fait le site** — c'est la sienne, il decide s'il veut le
    texte ou le 1,15.
 
-3. **Qui avance vite trouve un site vide : 15 jours sur 18.**
+2. **Qui avance vite trouve un site vide : 15 jours sur 18.**
    *Preuve, re-mesuree au cycle 28 sur deux comportements — un seul aurait
    menti :* une personne qui **suit l'objectif du jour** et s'arrete ne rencontre
    plus **aucun** jour vide sur 18 (c'etait 5 avant que `OBJ_REVISIONS` passe a
@@ -299,7 +280,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    chaque fois plutot qu'il ne s'extrapole : l'espacement redistribue les trous a
    chaque ajout.
 
-4. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
+3. **Le rappel quotidien n'existe pas, et il est bloque par une regle du site.**
    *Preuve :* c'est la piece la plus puissante de la liste du responsable, et
    elle est la seule non commencee. Le blocage est reel et non technique : une
    notification calee sur une heure de priere suppose de **connaitre** cette
@@ -311,7 +292,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    **N'entre pas en travaux avant arbitrage** — c'est une decision, pas un
    chantier.
 
-5. **Aucune mesure d'entree, et un traceur est interdit ici.**
+4. **Aucune mesure d'entree, et un traceur est interdit ici.**
    *Preuve :* `grep -ril "gtag\|analytics\|plausible\|matomo\|umami"` sur toutes
    les pages et les trois fichiers JavaScript ne rend **rien**. Or le pied de
    page promet « Ta progression reste sur ton telephone. Aucun compte, aucun
@@ -320,7 +301,7 @@ a auditer pour remplir la file — jamais a inventer un chantier.
    journaux). Bloque jusqu'au deploiement — question posee aux trois autres
    agents dans le brainstorm des passerelles.
 
-6. **La recitation n'a jamais ete entendue par personne.**
+5. **La recitation n'a jamais ete entendue par personne.**
    *Preuve :* `halalgpt.fr:443` et `cdn.islamic.network:443` sont refuses par la
    politique reseau de l'atelier (403 au CONNECT, journalise par le proxy,
    verifie trois fois). Le mecanisme est teste avec un recitateur simule — 7
@@ -332,6 +313,47 @@ a auditer pour remplir la file — jamais a inventer un chantier.
 ---
 
 ## Fait
+
+- **Retour recule d'une carte, plus de quinze** *(13 aout, cycle 39)* —
+  **avant : Retour quittait la lecon et la rouvrir repartait de la carte 1,
+  jusqu'a 14 tapes perdues. Apres : une carte.**
+  *Le vrai trajet, mesure depuis l'accueil :* on ouvre la lecon, six tapes, on
+  est carte 7. Retour : **6, 5, 4, 3, 2, 1**, puis **l'accueil**, avec la carte
+  du jour bien la. Sept appuis pour sortir depuis la carte 7 — un par carte,
+  puis dehors. C'est ce que le geste veut dire.
+  *Pourquoi ca comptait :* sur un telephone, le geste de retour au bord de
+  l'ecran part tout seul. Le punir en effacant quinze minutes de travail est la
+  meilleure facon de ne pas faire reprendre la lecon. Le site ne posait **aucune**
+  entree d'historique — `history.pushState` n'apparaissait nulle part.
+  *La barre de progression recule aussi, et c'est voulu.* La regle du cycle 3 dit
+  qu'elle ne recule pas **toute seule**, quand une carte manquee est remise a la
+  fin. Ici c'est la personne qui a demande a revenir : lui montrer le contraire
+  serait lui mentir sur ou elle est. Mesure : carte 7 et 6 points, Retour, carte
+  6 et 5 points. Et `test-reprise.mjs` passe toujours — la regle d'origine est
+  intacte.
+  *Verifie dans l'autre sens, parce que c'etait le risque :* **on n'est pas
+  enferme dans la lecon.** Depuis la premiere carte, un Retour de plus en sort.
+  Et repartir en avant apres deux Retour remonte carte par carte, avec une barre
+  coherente.
+  *Rien ne compte deux fois*, meme apres des allers-retours : une lecon finie,
+  deux Retour, la fin refaite → **1 jour** (pas 2), `tours` **inchange**,
+  echeance de revision **inchangee**.
+  *Ce qui reste vrai, et je le dis :* si elle **quitte** vraiment la lecon — la
+  croix, ou Retour depuis la carte 1 — la rouvrir repart de la carte 1. Le geste
+  accidentel est repare ; le depart volontaire, non. C'est un cas plus petit et
+  plus rare, et il n'a pas de mesure qui le justifie aujourd'hui.
+  *Verrous :* `test-retour-carte.mjs`, nouveau, verifie les deux sens — reculer
+  d'une carte, la barre coherente, la sortie possible, la reprise en avant, et
+  l'absence de double comptage. **Sur la version d'avant, il echoue 6 fois.**
+  *Repli :* si `history.pushState` manque ou est refuse, on retombe sur l'ancien
+  comportement sans rien casser.
+  *Et un test a moi qui affirmait l'ancienne regle.* `audit-retour.mjs`, ecrit
+  au cycle 38, verifiait « Retour ramene a l'accueil » — exactement ce que je
+  viens de changer. Il est passe rouge sur une bonne correction. Je l'ai reecrit
+  pour qu'il ne garde que ce qui reste vrai des deux cotes (on ne sort pas dans
+  le vide, rien ne se compte deux fois), et le nouveau comportement est verifie
+  par `test-retour-carte.mjs`. **Un test qui decrit un comportement doit changer
+  quand le comportement change** — sinon il defend l'ancien defaut.
 
 - **La memoire abimee ne casse plus le site, et ne gonfle plus le compteur**
   *(13 aout, cycle 37)* — **avant : 3 controles rouges. Apres : 0.**
