@@ -22,10 +22,14 @@ const PORTE = 'https://halalgpt.fr/api/assistant'
 const DELAI_PREMIER_OCTET = 12_000
 
 export async function POST(req: Request) {
-  let corps: { question?: string; contexte?: string[] }
+  let corps: { question?: string; contexte?: string[]; site?: string }
   try { corps = await req.json() } catch { return NextResponse.json({ erreur: 'corps invalide' }, { status: 400 }) }
-  const question = String(corps.question ?? '').slice(0, 300)
-  const contexte = Array.isArray(corps.contexte) ? corps.contexte.slice(0, 8).map((c) => String(c).slice(0, 300)) : []
+  const question = String(corps.question ?? '').slice(0, 600)
+  // Le contexte porte désormais les AVIS et les ATTRIBUTS des trois lieux :
+  // c'est la matière de ce que l'IA doit écrire (§3 de l'ordre du 15 août).
+  // Plus long, donc, mais toujours borné — et toujours factuel : la porte
+  // refuse d'affirmer un fait local absent d'ici.
+  const contexte = Array.isArray(corps.contexte) ? corps.contexte.slice(0, 12).map((c) => String(c).slice(0, 1400)) : []
   if (!question) return NextResponse.json({ erreur: 'question vide' }, { status: 400 })
 
   const ac = new AbortController()
@@ -36,7 +40,11 @@ export async function POST(req: Request) {
       method: 'POST',
       signal: ac.signal,
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ site: 'voyageshalal', question, contexte }),
+      body: JSON.stringify({
+        site: corps.site === 'gohalaltravel' ? 'gohalaltravel' : 'voyageshalal',
+        question,
+        contexte,
+      }),
     })
   } catch {
     clearTimeout(minuteur)

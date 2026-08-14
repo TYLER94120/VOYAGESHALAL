@@ -935,3 +935,9 @@ body { top: 0 !important; }
   }
   .rangee-bas > :only-child { grid-column: 1 / -1; justify-self: center; width: 100%; max-width: 900px; }
 }
+
+/* 💀 Squelette de chargement du « sur mesure » : pendant la recherche, on
+   montre la FORME de ce qui arrive plutôt qu'un vide. L'attente devient
+   lisible, et la page ne saute pas quand les fiches se posent. */
+@keyframes squelette-pulse { 0%,100% { opacity: .35 } 50% { opacity: .7 } }
+.squelette { animation: squelette-pulse 1.4s ease-in-out infinite; }

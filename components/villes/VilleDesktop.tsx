@@ -2,7 +2,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { cuisineCategory, CATEGORY_ORDER } from '@/lib/cuisineCategory'
 import PriereVille from '@/components/villes/PriereVille'
-import PresDeMoi from '@/components/lieux/PresDeMoi'
+import SurMesure from '@/components/lieux/SurMesure'
 import { infoPratiqueEn } from '@/lib/infoPratiqueEn'
 import { enLabel, countryEn } from '@/lib/poiI18n'
 import { useState, useRef } from 'react'
@@ -302,9 +302,9 @@ export default function VilleDesktop({ ville }: { ville: any }) {
           {/* La recherche IA, fondue dans la zone Explorer : une seule
               barre, qui comprend « où manger un kebab à Sultanahmet »
               comme « une mosquée près du Grand Bazar ». */}
-          {co.lat != null && co.lng != null && !en && (
+          {co.lat != null && co.lng != null && (
             <div style={{ marginTop: 12 }}>
-              <PresDeMoi fondu destination={{ lat: co.lat, lng: co.lng, nom: ville.nom }} />
+              <SurMesure fondu en={en} destination={{ lat: co.lat, lng: co.lng, nom: ville.nom }} />
             </div>
           )}
 
