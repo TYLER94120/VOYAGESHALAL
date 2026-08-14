@@ -2,7 +2,8 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { CRITERES_DEFAUT, lireDemande, relance, resumerCriteres, type Criteres } from '@/lib/criteres'
-import { trajet, type Mode } from '@/lib/trajet'
+import { minutes as minTrajet, trajet, type Mode } from '@/lib/trajet'
+import { computePrayerTimesFull } from '@/lib/prayerCalc'
 
 // 🎯 LE SUR MESURE — « dis-moi ce que tu cherches ».
 //
@@ -43,6 +44,10 @@ type Etape = 'question' | 'relance' | 'cherche' | 'resultat' | 'sans-position'
 
 const EXEMPLES_FR = ['un kebab pas cher pas loin', 'un endroit calme pour dîner en famille', 'une pâtisserie ouverte après la prière']
 const EXEMPLES_EN = ['a cheap kebab nearby', 'a quiet place for a family dinner', 'a bakery open after prayer']
+
+const CAT_OPTS = [
+  ['manger', '🍽 Manger', '🍽 Eat'], ['mosquee', '🕌 Mosquée', '🕌 Mosque'], ['activite', '🎡 Que faire', '🎡 Things to do'],
+] as const
 
 const QUOI_OPTS = [
   ['pizza', 'Pizza', 'Pizza'], ['kebab', 'Kebab', 'Kebab'], ['burger', 'Burger', 'Burger'],
@@ -148,12 +153,32 @@ export default function SurMesure({ posInitiale, destination, en = false, fondu 
       setFiches(trois); setAutres(corps.autres ?? []); setSource(corps.source ?? '')
       setMode(corps.mode ?? 'voiture'); setPlafond(corps.plafondMin ?? 15); setPlusLoin(corps.plusLoin ?? null)
       setEtape('resultat')
-      if (trois.length) redigerIA(trois, c, corps.mode ?? 'voiture')
+      if (trois.length) redigerIA(trois, c, corps.mode ?? 'voiture', c.categorie === 'mosquee' ? avantPriere(pos) : null)
     } finally { enCours.current = false }
   }
 
+  /**
+   * 🕌 LE TEMPS RESTANT AVANT LA PRIÈRE — « il te reste 23 minutes avant
+   * Maghrib : celle-ci est à ≈ 6 minutes à pied, tu pries large ». C'est
+   * ça qui n'existe nulle part ailleurs (§C de l'ordre du 15 août au
+   * soir). Calculé sur place, zéro réseau ; `null` si on ne sait pas —
+   * on ne devine jamais une heure de prière.
+   */
+  function avantPriere(pos: { lat: number; lng: number }): { nom: string; minutes: number } | null {
+    try {
+      const meth = Number((typeof localStorage !== 'undefined' && localStorage.getItem('vh_prayer_method')) || 3)
+      const ecole = Number((typeof localStorage !== 'undefined' && localStorage.getItem('vh_prayer_school')) || 0)
+      const now = Date.now()
+      const j = computePrayerTimesFull(pos.lat, pos.lng, meth, ecole, new Date(now))
+      const dem = computePrayerTimesFull(pos.lat, pos.lng, meth, ecole, new Date(now + 86_400_000))
+      const liste = (['Fajr', 'Dhuhr', 'Asr', 'Maghrib', 'Isha'] as const).map((k) => ({ nom: k, d: j[k] as Date }))
+      const suiv = liste.find((x) => x.d.getTime() > now) ?? { nom: 'Fajr', d: dem.Fajr as Date }
+      return { nom: suiv.nom, minutes: Math.max(0, Math.round((suiv.d.getTime() - now) / 60_000)) }
+    } catch { return null }
+  }
+
   /** §3 — l'IA écrit CE QUE LES CHIFFRES NE DISENT PAS. */
-  async function redigerIA(trois: Fiche[], c: Criteres, corpsMode: Mode) {
+  async function redigerIA(trois: Fiche[], c: Criteres, corpsMode: Mode, priere: { nom: string; minutes: number } | null) {
     // Le contexte contient les FAITS bruts : avis, attributs, horaires.
     // La porte refuse d'affirmer quoi que ce soit d'absent d'ici — la
     // qualité de la réponse EST la qualité de ces lignes.
@@ -183,10 +208,18 @@ export default function SurMesure({ posInitiale, destination, en = false, fondu 
       en
         ? `The traveller asked: "${phrase || resumerCriteres(c, true).join(', ')}".`
         : `Le voyageur a demandé : « ${phrase || resumerCriteres(c, false).join(', ')} ».`,
+      // 🕌 Pour la prière, la vraie question n'est pas « laquelle est la
+      // mieux notée » mais « ai-je le temps d'y arriver ». On donne donc
+      // le temps restant, et on demande de RAISONNER dessus.
+      priere
+        ? (en
+          ? `IMPORTANT: ${priere.minutes} minutes remain before ${priere.nom}. For EACH mosque, say plainly whether the traveller can get there in time given the travel time shown, and if not, say so. Never invent facilities (women's area, ablutions, parking): if they are not in the data, write that they are not documented.`
+          : `IMPORTANT : il reste ${priere.minutes} minutes avant ${priere.nom}. Pour CHAQUE mosquée, dis franchement si le voyageur a le temps d'y arriver compte tenu du trajet affiché, et sinon dis-le. N'invente JAMAIS un équipement (espace femmes, ablutions, parking) : s'il n'est pas dans les données, écris qu'il n'est pas renseigné.`)
+        : null,
       en
         ? `Write 2 to 4 short sentences PER PLACE. NEVER repeat what is already on screen (rating, distance, price, opening hours) — the traveller reads it above. Say only what the numbers do NOT say: the dish people mention in the reviews, the real atmosphere, the pitfall that avoids a wasted trip, the service. Then say in one sentence WHAT SETS THE THREE APART, so the traveller can choose. Every claim must come from the data below; when it comes from reviews, say "according to reviews". Never state a halal certification. Answer in English.`
         : `Écris 2 à 4 phrases courtes PAR LIEU. NE RÉPÈTE JAMAIS ce qui est déjà affiché (note, distance, prix, horaires) — le voyageur le lit au-dessus. Dis seulement ce que les chiffres ne disent pas : le plat que les gens citent dans les avis, l'ambiance réelle, le piège qui évite un déplacement raté, le service. Puis dis en une phrase CE QUI DISTINGUE LES TROIS, pour qu'il puisse choisir. Chaque affirmation doit venir des données ci-dessous ; quand ça vient des avis, dis « d'après les avis ». N'affirme jamais une certification halal. Réponds en français.`,
-    ].join('\n')
+    ].filter(Boolean).join('\n')
 
     const ac = new AbortController()
     const to = setTimeout(() => ac.abort(), 35_000)
@@ -232,8 +265,10 @@ export default function SurMesure({ posInitiale, destination, en = false, fondu 
             📍 {destination ? `${t('À', 'In')} ${destination.nom}` : t('Près de moi', 'Near me')}
           </p>
         )}
-        <h3 style={{ fontFamily: "'Playfair Display', Georgia, serif", color: '#fdfaf3', fontSize: 21, fontWeight: 900, margin: '6px 0 0', lineHeight: 1.25 }}>
-          {t('Dis-moi ce que tu cherches.', 'Tell me what you are looking for.')}
+        <h3 style={{ fontFamily: "'Playfair Display', Georgia, serif", color: '#fdfaf3', fontSize: 22, fontWeight: 900, margin: '6px 0 0', lineHeight: 1.25 }}>
+          {destination
+            ? t(`Que cherches-tu à ${destination.nom} ?`, `What are you looking for in ${destination.nom}?`)
+            : t('Dis-moi ce que tu cherches.', 'Tell me what you are looking for.')}
         </h3>
 
         <form onSubmit={(e) => { e.preventDefault(); comprendre(phrase) }} style={{ display: 'flex', gap: 8, marginTop: 10, flexWrap: 'wrap' }}>
@@ -248,6 +283,25 @@ export default function SurMesure({ posInitiale, destination, en = false, fondu 
             {etape === 'cherche' ? '…' : t('Trouver', 'Find')}
           </button>
         </form>
+
+        {/* §B.2 — « suggestions d'un appui : Manger · Mosquée · Que faire ».
+            Elles lancent la recherche immédiatement : celui qui ne veut
+            pas écrire est servi en un geste. Pour la mosquée, la relance
+            porte sur le TEMPS (prier maintenant ?), pas sur le budget. */}
+        <div style={{ display: 'flex', gap: 7, marginTop: 9, flexWrap: 'wrap' }}>
+          {CAT_OPTS.map(([v, fr, an]) => (
+            <button key={v}
+              onClick={() => {
+                const c = { ...crit, categorie: v }
+                setCrit(c); setAEcrit(false)
+                const r = relance(c, en)
+                if (r) setEtape('relance'); else lancer(c, false)
+              }}
+              aria-pressed={crit.categorie === v} style={puce(crit.categorie === v)}>
+              {t(fr, an)}
+            </button>
+          ))}
+        </div>
 
         {/* ── 2. CE QU'ON A COMPRIS, CORRIGEABLE ────────────────── */}
         {(aEcrit || ouvrirQcm) && etape !== 'cherche' && (

@@ -1,4 +1,4 @@
-import type { Criteres, Quoi } from '@/lib/criteres'
+import type { Criteres } from '@/lib/criteres'
 
 // 🚶 LA DISTANCE, CHIRURGICALE — et jamais absurde.
 //
@@ -86,20 +86,25 @@ const MINUTES_MAX: Record<'snack' | 'repas' | 'large', Record<Mode, number>> = {
   large: { pied: 25, voiture: 25, transports: 30 },
 }
 
-function nature(quoi: Quoi): 'snack' | 'repas' | 'large' {
-  if (quoi === 'patisserie' || quoi === 'petit-dejeuner') return 'snack'
+function nature(c: Criteres): 'snack' | 'repas' | 'large' {
+  // 🕌 Une mosquée pour prier MAINTENANT : 10 minutes à pied, comme un
+  // café. C'est le temps restant avant la prière qui décide vraiment.
+  if (c.categorie === 'mosquee') return 'snack'
+  // Activité, « que faire » : le large est légitime.
+  if (c.categorie === 'activite') return 'large'
+  if (c.quoi === 'patisserie' || c.quoi === 'petit-dejeuner') return 'snack'
   return 'repas'
 }
 
 /** Rayon de recherche en mètres — jamais plus loin que le sens commun. */
 export function rayonM(c: Criteres, mode: Mode): number {
-  const min = MINUTES_MAX[nature(c.quoi)][mode]
+  const min = MINUTES_MAX[nature(c)][mode]
   return Math.round((min * VITESSE[mode]) / DETOUR[mode])
 }
 
 /** Le même plafond, en minutes : sert à ÉCRIRE le message d'élargissement. */
 export function plafondMin(c: Criteres, mode: Mode): number {
-  return MINUTES_MAX[nature(c.quoi)][mode]
+  return MINUTES_MAX[nature(c)][mode]
 }
 
 /**

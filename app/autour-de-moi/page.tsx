@@ -4,7 +4,6 @@ import 'leaflet/dist/leaflet.css'
 import type { Map as LeafletMap, Marker } from 'leaflet'
 import { getPosition, describeGeoError, type GeoError, type GeoErrorCode } from '@/lib/geo'
 import { useInstantPosition } from '@/lib/useInstantPosition'
-import PositionBadge from '@/components/location/PositionBadge'
 import SurMesure from '@/components/lieux/SurMesure'
 import { computePrayerTimesFull } from '@/lib/prayerCalc'
 import { prixResume } from '@/lib/community'
@@ -160,6 +159,9 @@ export default function AutourDeMoiPage() {
   // La position instantanée alimente la carte dès qu'elle est résolue (0 ms
   // dans la plupart des cas) et s'affine toute seule (IP puis GPS si permis).
   const manualMove = useRef(false)
+  // §D — « Rechercher dans cette zone » n'apparaît QUE si le visiteur a
+  // déplacé la carte. Sinon c'est une commande de plus qui encombre.
+  const [carteDeplacee, setCarteDeplacee] = useState(false)
   useEffect(() => {
     if (instantPos && !manualMove.current) {
       setPos({ lat: instantPos.lat, lng: instantPos.lng })
@@ -175,6 +177,9 @@ export default function AutourDeMoiPage() {
     if (!mapRef.current) {
       const map = L.map(mapEl.current, { center: [lat, lng], zoom: 14, zoomControl: true })
       mapRef.current = map
+      // §D — le bouton « Rechercher dans cette zone » n'apparaît qu'après
+      // un déplacement VOLONTAIRE (glissé ou zoom), jamais au repos.
+      map.on('dragend zoomend', () => setCarteDeplacee(true))
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '© OpenStreetMap' }).addTo(map)
     } else {
       mapRef.current.setView([lat, lng], 14)
@@ -418,11 +423,40 @@ export default function AutourDeMoiPage() {
       <h1 style={{ position: 'absolute', width: 1, height: 1, padding: 0, margin: -1, overflow: 'hidden', clip: 'rect(0 0 0 0)', whiteSpace: 'nowrap', border: 0 }}>
         Mosquées, restaurants halal et spots autour de moi
       </h1>
+      {/* 🎯 LE SUR MESURE EN TÊTE — ordre de Mohamed, 15 août au soir :
+          « Autour de moi, c'est encore une liste brute : trois mosquées
+          empilées, un nom tronqué, un badge coupé, aucune question,
+          aucune IA. » Le même moteur que partout ailleurs passe donc
+          AVANT la carte : on pose la question, on répond par trois fiches
+          riches. La carte reste en dessous — elle MONTRE où sont les
+          lieux, elle ne répond pas à une demande. */}
+      <div style={{ background: 'var(--nuit)' }}>
+        <SurMesure posInitiale={instantPos ? { lat: instantPos.lat, lng: instantPos.lng, ville: instantPos.label ?? null } : null} />
+      </div>
+
+      {/* §D — LE CHAMP VILLE VIT AU-DESSUS DE LA CARTE, PAS PAR-DESSUS.
+          Mohamed : « les pastilles se chevauchent et recouvrent le bandeau
+          de prière, illisible ». Empilées en flottant, quatre commandes se
+          marchaient dessus ; ici la recherche de ville a sa propre ligne,
+          et la carte garde une seule pastille. */}
+      <form onSubmit={goToCity} style={{ display: 'flex', gap: 6, margin: '0 auto', maxWidth: 700, padding: '10px 12px 0' }}>
+        <input
+          value={q}
+          onChange={(e) => setQ(e.target.value)}
+          placeholder="Chercher une ville (Berkane, Istanbul…)"
+          aria-label="Chercher une ville sur la carte"
+          style={{ flex: 1, minHeight: 48, border: '1px solid rgba(11,26,15,0.15)', outline: 'none', fontSize: 15, padding: '0 14px', borderRadius: 12, color: 'var(--nuit)', background: '#fff' }}
+        />
+        <button type="submit" disabled={searching} style={{ border: 'none', minHeight: 48, background: 'var(--foret)', color: '#fff', fontWeight: 700, fontSize: 14, borderRadius: 12, padding: '0 16px', cursor: searching ? 'wait' : 'pointer' }}>
+          {searching ? '…' : '🔍'}
+        </button>
+      </form>
+
       <div style={{ position: 'relative' }}>
         <div ref={mapEl} style={{ height: '62vh', minHeight: 380, width: '100%', background: '#dfe6e2', zIndex: 1 }} />
 
         <div style={{ position: 'absolute', top: 12, left: 12, right: 12, zIndex: 500, display: 'flex', flexDirection: 'column', gap: 8, pointerEvents: 'none' }}>
-          <form onSubmit={goToCity} style={{ pointerEvents: 'auto', display: 'flex', gap: 6, boxShadow: '0 6px 20px rgba(0,0,0,.15)', borderRadius: 14, background: '#fff', padding: 4 }}>
+          <form onSubmit={goToCity} style={{ display: 'none' }}>
             <input
               value={q}
               onChange={(e) => setQ(e.target.value)}
@@ -438,20 +472,13 @@ export default function AutourDeMoiPage() {
             <span style={{ pointerEvents: 'auto', background: 'var(--foret)', color: '#fff', fontWeight: 700, fontSize: 13.5, borderRadius: 30, padding: '8px 14px', boxShadow: '0 4px 14px rgba(0,0,0,.18)' }}>
               {loading ? 'Recherche…' : `${spots.length} ${conf.label} à proximité`}
             </span>
-            <button onClick={searchHere} style={{ pointerEvents: 'auto', minHeight: 44, background: '#fff', color: 'var(--nuit)', fontWeight: 700, fontSize: 13.5, border: 'none', borderRadius: 30, padding: '0 16px', cursor: 'pointer', boxShadow: '0 4px 14px rgba(0,0,0,.18)' }}>
-              🔄 Rechercher dans cette zone
-            </button>
-            {/* Même pilule de position que sur le reste du site : sur une
-                carte aussi, il faut savoir d'où partent les distances. */}
-            <span
-              // Le tap relance le GPS : la carte doit alors reprendre la main
-              // sur une éventuelle ville cherchée à la main, sinon elle reste
-              // là où elle était et le bouton semble ne rien faire.
-              onClick={() => { manualMove.current = false }}
-              style={{ pointerEvents: 'auto', boxShadow: '0 4px 14px rgba(0,0,0,.18)', borderRadius: 999, background: '#fff' }}
-            >
-              <PositionBadge compact clair etat={etatPos} />
-            </span>
+            {carteDeplacee && (
+              <button onClick={() => { setCarteDeplacee(false); searchHere() }} style={{ pointerEvents: 'auto', minHeight: 44, background: '#fff', color: 'var(--nuit)', fontWeight: 700, fontSize: 13.5, border: 'none', borderRadius: 30, padding: '0 16px', cursor: 'pointer', boxShadow: '0 4px 14px rgba(0,0,0,.18)' }}>
+                🔄 Rechercher dans cette zone
+              </button>
+            )}
+            {/* (La pilule de position a quitté la carte : elle doublonnait
+                le badge du haut de page et participait au chevauchement.) */}
           </div>
         </div>
 
@@ -571,13 +598,6 @@ export default function AutourDeMoiPage() {
         )}
       </div>
 
-      {/* 📍 Le moteur « Près de moi » (Google Maps + IA) sous la carte —
-          Mohamed, 15 août : « idem pour autour de moi ». La carte montre
-          où sont les lieux ; ce bloc RÉPOND à une demande précise
-          (« pizza », « la plus proche », « hammam ») et fait rédiger la
-          réponse par l'IA. La position vient de celle déjà connue par la
-          page : on ne redemande jamais deux fois la même chose. */}
-      <SurMesure posInitiale={instantPos ? { lat: instantPos.lat, lng: instantPos.lng, ville: instantPos.label ?? null } : null} />
     </main>
   )
 }

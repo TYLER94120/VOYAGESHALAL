@@ -31,8 +31,14 @@ export type Quoi = 'pizza' | 'kebab' | 'burger' | 'oriental' | 'asiatique' | 'pe
 export type ModeChoisi = 'pied' | 'voiture' | 'transports' | 'peu-importe'
 export type Budget = 'petit' | 'moyen' | 'peu-importe'
 export type Exigence = 'verifies' | 'signales'
+// 🕌 LA CATÉGORIE — « où prier, où manger, ici et maintenant » (Mohamed,
+// 15 août au soir). Pour la prière, le critère décisif n'est PAS le
+// budget : c'est le TEMPS RESTANT avant l'heure. Une mosquée qu'on ne
+// peut pas atteindre avant l'iqama n'est pas un résultat.
+export type Categorie = 'manger' | 'mosquee' | 'activite'
 
 export interface Criteres {
+  categorie: Categorie
   quoi: Quoi
   mode: ModeChoisi
   budget: Budget
@@ -48,6 +54,7 @@ export interface Criteres {
 }
 
 export const CRITERES_DEFAUT: Criteres = {
+  categorie: 'manger',
   quoi: 'peu-importe',
   mode: 'peu-importe',
   budget: 'peu-importe',
@@ -63,6 +70,10 @@ export const CRITERES_DEFAUT: Criteres = {
 }
 
 const MOTIFS: { champ: keyof Criteres; valeur: unknown; re: RegExp }[] = [
+  // — QUOI
+  // — CATÉGORIE (elle prime : « mosquée » n'est pas un plat)
+  { champ: 'categorie', valeur: 'mosquee', re: /\bmosqu[ée]e?\b|\bmasjid\b|\bmusalla\b|\bo[ùu] prier\b|\bpour prier\b|\bfaire la pri[èe]re\b|\bmosque\b|\bwhere to pray\b|\bprayer room\b/i },
+  { champ: 'categorie', valeur: 'activite', re: /\bque faire\b|\bactivit[ée]|\bmus[ée]e\b|\bparc\b|\bvisiter\b|\bbalade\b|\bhammam\b|\bplage\b|\bwhat to do\b|\bmuseum\b|\bpark\b|\bthings to do\b/i },
   // — QUOI
   { champ: 'quoi', valeur: 'pizza', re: /\bpizz|\bitalien|\bitalian/i },
   { champ: 'quoi', valeur: 'kebab', re: /\bkebab|\bdurum|\btacos|\bshawarma|\bgrec\b/i },
@@ -149,6 +160,30 @@ export function resumerCriteres(c: Criteres, en: boolean): string[] {
  * arbitrer entre « vite fait » et « s'installer ».
  */
 export function relance(c: Criteres, en: boolean): { question: string; choix: [string, Partial<Criteres>][] } | null {
+  // 🕌 POUR LA PRIÈRE, LE CRITÈRE N'EST PAS LE BUDGET, C'EST LE TEMPS.
+  // Celui qui cherche une mosquée cherche presque toujours à prier
+  // MAINTENANT : on lui demande ça, pas s'il est en famille.
+  if (c.categorie === 'mosquee') {
+    if (!c.moment) {
+      return {
+        question: en ? 'Praying now, or later? (changes what we suggest)' : 'Tu veux prier maintenant ou plus tard ? (ça change ce qu\'on propose)',
+        choix: [
+          [en ? 'Now' : 'Maintenant', { moment: 'maintenant', ouvertMaintenant: true }],
+          [en ? 'Later' : 'Plus tard', { moment: 'ce-soir' }],
+        ],
+      }
+    }
+    if (c.mode === 'peu-importe') {
+      return {
+        question: en ? 'On foot or by car? (changes the radius)' : 'À pied ou en voiture ? (ça change le rayon)',
+        choix: [
+          [en ? 'On foot' : 'À pied', { mode: 'pied' }],
+          [en ? 'By car' : 'En voiture', { mode: 'voiture' }],
+        ],
+      }
+    }
+    return null
+  }
   if (!c.compagnie && !c.famille) {
     return {
       question: en ? 'Are you on your own or with family? (changes the room size)' : 'Tu es seul ou en famille ? (ça change la taille de la salle)',
