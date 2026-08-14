@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { replier } from '@/lib/titreSpot'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { getDomainSEO } from '@/lib/domain'
@@ -16,7 +17,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { pseudo } = await params
   const { isEN } = await getDomainSEO()
   return {
-    title: isEN ? `${decodeURIComponent(pseudo)} — community contributor` : `${decodeURIComponent(pseudo)} — contributeur de la communauté`,
+    // Le pseudo est saisi par le visiteur : il peut être très long.
+    title: replier(isEN
+      ? [`${decodeURIComponent(pseudo)} — community contributor`, `${decodeURIComponent(pseudo)} — contributor`, `${decodeURIComponent(pseudo)}`]
+      : [`${decodeURIComponent(pseudo)} — contributeur de la communauté`, `${decodeURIComponent(pseudo)} — contributeur`, `${decodeURIComponent(pseudo)}`]),
     robots: { index: false, follow: true },
   }
 }

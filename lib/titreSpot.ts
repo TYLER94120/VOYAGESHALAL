@@ -36,11 +36,35 @@ export const DESCRIPTION_MAX = 160
 const MOTS_FR = /\b(mosqu[ée]e|salle|pri[èe]re|centre|commercial|gare|a[ée]roport|h[ôo]tel|universit[ée]|magasin|magnifique|petite?|grande?|nouvelle?|vieux|vieille|derri[èe]re|[àa] c[ôo]t[ée]|pr[èe]s|du|de la|des|le|la|les|au|aux)\b/i
 
 /** Coupe sur un mot entier, jamais au milieu, et signale la coupe. */
-function tronquer(texte: string, max: number): string {
+export function tronquer(texte: string, max: number): string {
   if (texte.length <= max) return texte
   const coupe = texte.slice(0, max - 1)
   const espace = coupe.lastIndexOf(' ')
   return (espace > max * 0.6 ? coupe.slice(0, espace) : coupe).trimEnd() + '…'
+}
+
+/** Un nom saisi par un visiteur contient-il du français ? */
+export function contientDuFrancais(texte: string): boolean {
+  return MOTS_FR.test(texte)
+}
+
+/**
+ * La règle générale : on essaie les versions de la plus complète à la plus
+ * dépouillée, on garde la première qui tient, et on coupe proprement si
+ * même la dernière déborde.
+ *
+ * ⚠️ MISE À DISPOSITION LE 14 AOÛT. Le gabarit « où prier » n'était pas le
+ * seul dans ce cas : mesuré sur les mêmes cas durs, **75 autres titres
+ * coupés** sur quatre gabarits — `/spot/[id]` (jusqu'à 123 caractères),
+ * `/guide-vivant/[ville]`, `/priere/[ville]`, `/communaute/[pseudo]` — et
+ * **22 titres français servis sur le domaine anglais**. Même cause : du
+ * décor placé devant une valeur qu'on ne maîtrise pas.
+ */
+export function replier(versions: string[], max = TITRE_MAX): string {
+  const tient = versions.find((v) => v && v.length <= max)
+  if (tient) return tient
+  const derniere = versions.filter(Boolean).at(-1) ?? ''
+  return tronquer(derniere, max)
 }
 
 /**

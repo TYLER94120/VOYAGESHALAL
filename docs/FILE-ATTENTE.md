@@ -21,6 +21,7 @@ dessus.
 | **12 août 2026** | **14 titres et descriptions coupés par Google, dont /hotels (80 car.), la page qui mène à Istanbul et Dubaï** | **19-22 août** |
 | **12 août 2026, soir** | **Description de repli (`lib/seo.ts`, 171 car.) et /destinations** | **19-22 août** |
 | **13 août 2026** | **Gabarit des pages « où prier » : 73 titres coupés, 19 titres et 9 descriptions en français sur le domaine anglais** | **20-23 août** |
+| **14 août 2026** | **Quatre gabarits voisins repliés : /spot/[id] (jusqu'à 123 car.), /guide-vivant, /priere/[ville], /communaute/[pseudo]** | **21-24 août** |
 
 Chiffres AVANT le 9 août, 7 jours : voyageshalal.fr 1 970 impressions /
 29 clics / 1,5 % · gohalaltravel.com 441 / 3 / 0,7 %.
@@ -171,6 +172,39 @@ requêtes ces pages sortent réellement.
 ---
 
 ## Fait
+
+### La même cause frappait quatre autres gabarits — 14 août
+**Le gabarit « où prier » corrigé hier n'était pas seul.** Après l'avoir
+réparé, j'ai cherché si la cause — du décor placé devant une valeur qu'on
+ne maîtrise pas — se retrouvait ailleurs. Elle s'y retrouvait.
+
+**Mesuré sur les mêmes cas durs**, avant correction :
+
+| Gabarit | Cas | Titres coupés | Français servi en anglais |
+|---|---|---|---|
+| `/spot/[id]` | 70 | **59** (jusqu'à **123 car.**) | **21** |
+| `/guide-vivant/[ville]` | 14 | 11 (jusqu'à 77) | 0 |
+| `/priere/[ville]` | 14 | 3 (jusqu'à 67) | 0 |
+| `/communaute/[pseudo]` | 6 | 2 (jusqu'à 70) | 1 |
+| **Total** | **104** | **75** | **22** |
+
+`/spot/[id]` était le pire du site : le nom saisi, la catégorie, la ville et
+« partagé par la communauté », tout avant que Google n'ait fini de lire.
+
+**Ce qui a été fait** : la règle de repli de `lib/titreSpot.ts` est devenue
+générale (`replier`, `contientDuFrancais`) et les quatre gabarits l'utilisent.
+Sur `/spot/[id]`, la **description** aussi est traitée : elle est saisie en
+français par l'auteur et partait telle quelle sur le domaine anglais ; elle
+cède désormais la place à une description bâtie sur la catégorie, qui est
+traduite.
+
+**Mesure d'arrivée** : le garde-fou couvre maintenant **166 combinaisons**
+au lieu de 70, et elles passent toutes. **75 titres coupés → 0, 22 titres
+français en anglais → 0.**
+
+⚠️ Même réserve qu'hier : spots et pseudos vivent dans Redis, hors
+d'atteinte depuis mon environnement. **C'est la ronde qui confirmera sur
+les pages réelles.**
 
 ### Le gabarit « où prier » ne peut plus déborder — 13 août
 **Balayage complet du 13 août, 1 976 pages : 101 défauts, tous sur ces

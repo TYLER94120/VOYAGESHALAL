@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { readFileSync } from 'fs'
 import path from 'path'
 import { listSpotsByVille, LIEU_LABELS } from '@/lib/prayerSpots'
+import { replier } from '@/lib/titreSpot'
 import { getDomainSEO } from '@/lib/domain'
 import { localizedHref } from '@/lib/slugs'
 import { alternatesFor } from '@/lib/hreflang'
@@ -35,7 +36,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { isEN, brand, siteUrl } = await getDomainSEO()
   const city = CITIES.find((c) => c.slug === ville)
   const nom = city?.nom || ville
-  const title = isEN ? `Where to pray in ${nom} — prayer spots | ${brand}` : `Où prier à ${nom} — coins prière | ${brand}`
+  // La ville d'abord, la marque sacrifiée quand ça dépasse. « Bandar Seri
+  // Begawan » faisait 67 caractères avec l'ancien gabarit.
+  const title = replier(isEN
+    ? [`Where to pray in ${nom} — prayer spots | ${brand}`, `Where to pray in ${nom} — prayer spots`, `Where to pray in ${nom}`]
+    : [`Où prier à ${nom} — coins prière | ${brand}`, `Où prier à ${nom} — coins prière`, `Où prier à ${nom}`])
   const description = isEN
     ? `Prayer spots in ${nom}: malls, restaurants, airports and stations where Muslim travelers can pray. Shared, community-confirmed.`
     : `Coins prière à ${nom} : centres commerciaux, restaurants, aéroports et gares où prier en voyage. Partagés et confirmés par la communauté.`

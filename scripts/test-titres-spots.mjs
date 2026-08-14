@@ -29,7 +29,7 @@ const DESCRIPTION_MAX = 160
 // directement (--experimental-strip-types). Une copie recopiée à la main
 // finirait par diverger du fichier qu'elle prétend éprouver — et un test
 // qui teste autre chose que le code servi ne protège personne.
-const { titreSpot, descriptionSpot } = await import('../lib/titreSpot.ts')
+const { titreSpot, descriptionSpot, replier, contientDuFrancais } = await import('../lib/titreSpot.ts')
 
 const NOMS = [
   'Parc Astérix',
@@ -77,7 +77,68 @@ for (const nom of NOMS) {
   }
 }
 
-console.log(`\nPages « où prier » — ${cas} combinaisons nom × ville × langue`)
+// ── Les QUATRE AUTRES gabarits bâtis sur des valeurs non maîtrisées ───────
+// Mesuré le 14 août, avant correction : 75 titres coupés et 22 titres
+// français servis en anglais, sur les mêmes cas durs. La cause du 13 août
+// ne touchait pas que « où prier ».
+const PSEUDOS = ['ahmed', 'oummxmarrakech2026', 'le_voyageur_qui_partage_ses_bons_plans']
+const CAT = { fr: 'Coin prière', en: 'Prayer spot' }
+
+const AUTRES = [
+  {
+    nom: '/priere/[ville]',
+    titres: (v, en, marque) => replier(en
+      ? [`Where to pray in ${v} — prayer spots | ${marque}`, `Where to pray in ${v} — prayer spots`, `Where to pray in ${v}`]
+      : [`Où prier à ${v} — coins prière | ${marque}`, `Où prier à ${v} — coins prière`, `Où prier à ${v}`]),
+    cas: VILLES.map((v) => [v]),
+  },
+  {
+    nom: '/guide-vivant/[ville]',
+    titres: (v, en) => replier(en
+      ? [`Living halal guide to ${v} — by the Muslim community (7 spots)`, `Living halal guide to ${v} — 7 community spots`, `Living halal guide to ${v} (7 spots)`, `Living halal guide to ${v}`]
+      : [`Guide vivant halal de ${v} — par la communauté (7 spots)`, `Guide vivant halal de ${v} — 7 spots partagés`, `Guide vivant halal de ${v} (7 spots)`, `Guide vivant halal de ${v}`]),
+    cas: VILLES.map((v) => [v]),
+  },
+  {
+    nom: '/communaute/[pseudo]',
+    titres: (p, en) => replier(en
+      ? [`${p} — community contributor`, `${p} — contributor`, `${p}`]
+      : [`${p} — contributeur de la communauté`, `${p} — contributeur`, `${p}`]),
+    cas: PSEUDOS.map((p) => [p]),
+  },
+]
+
+for (const g of AUTRES) {
+  for (const [v] of g.cas) {
+    for (const isEN of [false, true]) {
+      cas++
+      const t = g.titres(v, isEN, isEN ? MARQUES.en : MARQUES.fr)
+      if (t.length > TITRE_MAX) rate(`titre ${isEN ? 'EN' : 'FR'} — ${g.nom} / ${v}`, t, TITRE_MAX)
+    }
+  }
+}
+
+// /spot/[id] : le pire du lot, jusqu'à 123 caractères, avec le nom saisi.
+for (const nom of NOMS) {
+  for (const villeNom of VILLES) {
+    for (const isEN of [false, true]) {
+      cas++
+      const nomEnAnglais = !contientDuFrancais(nom)
+      const t = replier(isEN
+        ? (nomEnAnglais
+            ? [`${nom} — ${CAT.en} in ${villeNom} (community-shared)`, `${nom} — ${CAT.en} in ${villeNom}`, `${nom} — ${villeNom}`, `${nom}`]
+            : [`${CAT.en} in ${villeNom} — shared by the community`, `${CAT.en} in ${villeNom} — community-shared`, `${CAT.en} in ${villeNom}`])
+        : [`${nom} — ${CAT.fr} à ${villeNom} (partagé par la communauté)`, `${nom} — ${CAT.fr} à ${villeNom}`, `${nom} — ${villeNom}`, `${nom}`])
+      if (t.length > TITRE_MAX) rate(`titre ${isEN ? 'EN' : 'FR'} — /spot/[id] / ${nom} / ${villeNom}`, t, TITRE_MAX)
+      if (isEN && FR_DANS_EN.test(t)) {
+        echecs++
+        console.error(`  ✗ français dans un titre ANGLAIS — /spot/[id] / ${nom} / ${villeNom}\n       « ${t} »`)
+      }
+    }
+  }
+}
+
+console.log(`\nPages « où prier » et gabarits voisins — ${cas} combinaisons`)
 console.log(`   ${echecs ? '✗' : '✓'} pire titre FR ${pireFr.n}/${TITRE_MAX} — ${pireFr.nom} / ${pireFr.villeNom}`)
 console.log(`   ${echecs ? '✗' : '✓'} pire titre EN ${pireEn.n}/${TITRE_MAX} — ${pireEn.nom} / ${pireEn.villeNom}`)
 
@@ -85,4 +146,4 @@ if (echecs) {
   console.error(`\n❌ ${echecs} problème(s) sur le gabarit des pages « où prier ».\n`)
   process.exit(1)
 }
-console.log('✅ le gabarit « où prier » tient sur tous les cas durs.\n')
+console.log('✅ les gabarits bâtis sur des valeurs saisies tiennent tous.\n')

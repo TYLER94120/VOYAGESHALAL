@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { replier, contientDuFrancais } from '@/lib/titreSpot'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { getDomainSEO } from '@/lib/domain'
@@ -27,19 +28,42 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const spot = await getSpotById(id)
   if (!spot || spot.status === 'hidden') return { robots: { index: false } }
   const cat = CATEGORIES.find((c) => c.id === spot.categorie) ?? CATEGORIES[0]
-  const title = isEN
-    ? `${spot.nom} — ${cat.en} in ${spot.villeNom} (community-shared)`
-    : `${spot.nom} — ${cat.fr} à ${spot.villeNom} (partagé par la communauté)`
+  // Le pire gabarit du site avant le 14 août : jusqu'à 123 caractères, et
+  // 21 titres français servis sur le domaine anglais. Le nom du spot passe
+  // devant ; sur le domaine anglais, un nom saisi en français cède la place
+  // à la catégorie, qui est traduite.
+  const nomEnAnglais = !contientDuFrancais(spot.nom)
+  const title = replier(isEN
+    ? (nomEnAnglais
+        ? [`${spot.nom} — ${cat.en} in ${spot.villeNom} (community-shared)`,
+           `${spot.nom} — ${cat.en} in ${spot.villeNom}`,
+           `${spot.nom} — ${spot.villeNom}`,
+           `${spot.nom}`]
+        : [`${cat.en} in ${spot.villeNom} — shared by the community`,
+           `${cat.en} in ${spot.villeNom} — community-shared`,
+           `${cat.en} in ${spot.villeNom}`])
+    : [`${spot.nom} — ${cat.fr} à ${spot.villeNom} (partagé par la communauté)`,
+       `${spot.nom} — ${cat.fr} à ${spot.villeNom}`,
+       `${spot.nom} — ${spot.villeNom}`,
+       `${spot.nom}`])
+  // La description est saisie par l'auteur, en français. Sur le domaine
+  // anglais, on ne la sert que si elle ne contient pas de français ; sinon on
+  // écrit une description anglaise à partir de la catégorie, qui est traduite.
+  const descriptionSaisie = spot.description?.slice(0, 150)
+  const descriptionUtilisable = descriptionSaisie && (!isEN || !contientDuFrancais(descriptionSaisie))
+  const descriptionDuSpot = descriptionUtilisable
+    ? descriptionSaisie
+    : isEN
+      ? `${cat.en} shared by a Muslim traveller in ${spot.villeNom}. Location, tips and community confirmations — to verify on site.`
+      : `${cat.fr} partagé par un voyageur musulman à ${spot.villeNom}. Emplacement, conseils et confirmations de la communauté — à vérifier sur place.`
   return {
     title,
-    description: spot.description?.slice(0, 150) || (isEN
-      ? `${cat.en} shared by a Muslim traveler in ${spot.villeNom}. Location, tips and community confirmations — to verify on site.`
-      : `${cat.fr} partagé par un voyageur musulman à ${spot.villeNom}. Emplacement, conseils et confirmations de la communauté — à vérifier sur place.`),
+    description: descriptionDuSpot,
     alternates: { canonical: `${siteUrl}/spot/${spot.id}` },
     // Aperçu riche au partage (WhatsApp…) : photo utilisateur http sinon rien
     openGraph: {
       title,
-      description: spot.description?.slice(0, 150) || undefined,
+      description: descriptionDuSpot,
       url: `${siteUrl}/spot/${spot.id}`,
       images: (spot.photos ?? []).find((p) => p.startsWith('http')) ? [{ url: (spot.photos ?? []).find((p) => p.startsWith('http'))! }] : undefined,
     },
