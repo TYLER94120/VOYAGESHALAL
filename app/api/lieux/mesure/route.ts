@@ -22,6 +22,13 @@ const AUTORISEES = new Set([
   'itineraires', 'appels', 'fiches-ouvertes', 'relances-sautees',
   'cat-mosquee', 'cat-manger', 'cat-activite',
   'piste', 'choisis-pour-moi', 'profil-cree',
+  // 🗺️ La barre unique (16 août) : quand la phrase désigne une ville ET un
+  // besoin, laquelle des deux lectures le visiteur choisit-il ? C'est ce
+  // qui dira si l'aiguillage automatique devine juste. Ces deux clés
+  // étaient appelées par le composant SANS être ici : elles renvoyaient
+  // 400 et ne comptaient rien. Une mesure qu'on croit avoir est pire que
+  // pas de mesure du tout.
+  'barre-ville', 'barre-autour',
 ])
 
 let redis: Redis | null | undefined
