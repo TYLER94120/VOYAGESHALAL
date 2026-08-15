@@ -33,6 +33,9 @@ export interface FicheEcran {
   lng: number
 }
 
+// Tentative de déploiement du 15 août au soir : les commits 7b33f74 et
+// 5ea27f8 ont été refusés par Vercel (plafond journalier), donc ni le ciel
+// visible ni cet écran n'avaient atteint la production.
 const SERIF = "Georgia,'Iowan Old Style','Times New Roman',serif"
 
 function minutesAPied(m: number) { return Math.max(1, Math.round(m / 75)) }
