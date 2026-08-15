@@ -124,7 +124,19 @@ const LIBELLES_SANS_LIEU = new Set([
 ])
 
 function nommerLeLieu(lat: number, lng: number): Promise<string | null> {
-  const cle = `${lat.toFixed(2)},${lng.toFixed(2)}`
+  // 🔴🔴 L'ARRONDI NE SORT JAMAIS DE LA CLÉ DE CACHE — Mohamed, 16 août :
+  // « Je suis à Fontenay-sous-Bois. Le site me place à Paris. »
+  //
+  // Cette clé était arrondie au centième de degré, soit une case de ~1,1 km.
+  // Le NOM trouvé pour un point était donc resservi à n'importe quel autre
+  // point de la case — et à la frontière d'une commune, ça écrit la commune
+  // du voisin. Un arrondi qui sert à nommer un lieu n'est plus une clé de
+  // cache : c'est une approximation qui contamine ce qu'on affiche.
+  //
+  // Cinq décimales ≈ 1 mètre : deux appels ne se confondent plus, et le
+  // souvenir ne sert qu'à ce qu'il doit servir — ne pas redemander deux fois
+  // le même point.
+  const cle = `${lat.toFixed(5)},${lng.toFixed(5)}`
   const dejaEnCours = nomsConnus.get(cle)
   if (dejaEnCours) return dejaEnCours
   const p = (async () => {

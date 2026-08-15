@@ -21,10 +21,15 @@ interface Props {
   en?: boolean
 }
 
-// Cache localStorage des réponses Aladhan (par position arrondie + date +
-// méthode + école) → affichage INSTANTANÉ au retour, rafraîchi en arrière-plan.
+// Cache localStorage des réponses Aladhan (par position + date + méthode +
+// école) → affichage INSTANTANÉ au retour, rafraîchi en arrière-plan.
+//
+// 🔴 La case était arrondie au DIXIÈME de degré, soit environ 11 km. Un
+// horaire calculé à Paris était donc resservi à Fontenay-sous-Bois — et
+// une heure de prière ne se devine pas. Trois décimales ≈ 110 m : le cache
+// sert toujours à quelque chose, sans jamais déplacer personne.
 function cacheKey(p: Props): string {
-  const loc = p.lat != null && p.lng != null ? `${p.lat.toFixed(1)},${p.lng!.toFixed(1)}` : p.ville
+  const loc = p.lat != null && p.lng != null ? `${p.lat.toFixed(3)},${p.lng!.toFixed(3)}` : p.ville
   return `vh_pt:${loc}:${new Date().toISOString().slice(0, 10)}:${p.method ?? 3}:${p.school ?? 0}`
 }
 function readCache(key: string): Record<string, string> | null {
