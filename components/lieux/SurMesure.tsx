@@ -594,7 +594,11 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
             style={{ flex: 1, minWidth: 200, minHeight: 52, borderRadius: 14, border: '1px solid rgba(253,250,243,0.25)', background: 'rgba(255,255,255,0.07)', color: '#fdfaf3', padding: '0 14px', fontSize: 16 }}
           />
           <button type="submit" disabled={etape === 'cherche'}
-            style={{ minHeight: 52, padding: '0 20px', borderRadius: 14, border: 'none', background: 'var(--or)', color: 'var(--nuit)', fontWeight: 900, fontSize: 15, cursor: 'pointer', opacity: etape === 'cherche' ? 0.6 : 1 }}>
+                        /* Le bouton dominant prend l'ACCENT DE L'HEURE, pas l'or de
+               tous les annuaires halal du monde. C'est la seule audace de
+               l'écran, et elle porte une information : la couleur dit
+               quel moment de la journée on est en train de vivre. */
+            style={{ minHeight: 56, padding: '0 20px', borderRadius: 16, border: 'none', background: 'var(--ciel-accent, var(--or))', color: '#141018', fontWeight: 900, fontSize: 16, cursor: 'pointer', opacity: etape === 'cherche' ? 0.6 : 1 }}>
             {/* Le bouton DIT qu'il travaille : « … » ne se lit pas comme
                 un travail en cours, ça se lit comme un bouton cassé. */}
             {etape === 'cherche' ? t('Je cherche…', 'Searching…') : t('Trouver', 'Find')}
@@ -689,7 +693,12 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
             sa place sur l'écran le plus précieux du site.
             Il dit maintenant ce qu'il fait, en pleine largeur, et il EMPORTE
             la recherche déjà tapée — la carte s'ouvre avec les kebabs. */}
-        {titrePage && (
+        {/* 🔴 SUR L'ACCUEIL, CES DEUX BOUTONS SORTENT — décision du 15 août
+            au soir : « si ce n'est pas ① la recherche, ② les trois onglets,
+            ③ la bande de prière, ça sort. » « Voir sur la carte » double le
+            raccourci Carte, et « Profil » demande un effort avant qu'on ait
+            rendu le moindre service. Ils restent partout ailleurs. */}
+        {false && titrePage && (
           <div style={{ display: 'flex', gap: 7, marginTop: 6 }}>
             <button onClick={() => {
               compter('vue-carte')

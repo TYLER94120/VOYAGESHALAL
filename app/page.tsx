@@ -175,158 +175,18 @@ export default async function HomePage() {
           Le ruban dit POURQUOI cette réponse à cette heure-ci. */}
       <AccueilCiel posInitiale={posIP} en={isEN} />
 
-      {/* 🖥️ RANGÉE DU BAS — sur PC, Destinations et « manger halal près
-          de moi » se mettent CÔTE À CÔTE : Mohamed, 15 août, « la ligne du
-          bas est coupée, elle doit rentrer dans la page ». Empilés, les
-          deux blocs dépassaient l'écran ; côte à côte, toute la hauteur
-          d'une section est récupérée et tout tient. Sur mobile, la pile
-          ne change pas. Sur le domaine anglais (pas encore de widget), la
-          section Destinations reprend seule toute la largeur. */}
-      {/* 🗺️ 16 août — LA DEUXIÈME BARRE DE RECHERCHE EST SUPPRIMÉE.
-          Elle ne faisait qu'une chose que la barre unique fait désormais
-          mieux : ouvrir le guide d'une ville. Le H1 est parti avec elle,
-          en sous-titre de la barre unique (voir <SurMesure titrePage />).
-          C'est cette section — titre + champ + marges — qui coûtait la
-          hauteur empêchant tout de tenir sur un écran. */}
+      {/* 🔴 TOUT LE RESTE EST PARTI, ET C'EST LE SUJET DE L'ORDRE.
+          Mohamed, 15 août au soir : « On arrête d'empiler. L'accueil garde
+          ce qu'on a réussi de mieux aujourd'hui, et rien d'autre. »
+          Trois choses vivent ici, et la règle de tri ne souffre aucune
+          exception : si ce n'est pas ① la recherche, ② les trois onglets,
+          ③ la bande fine de prière — ça sort.
 
-      <div className="rangee-bas" style={{ background: 'var(--nuit)' }}>
-      {/* 🌍 DESTINATIONS — remontées JUSTE SOUS le tableau de bord.
-          Mohamed, 15 août : « les destinations avec les images, c'est
-          beau — j'aimerais que ce soit visible dès qu'on ouvre la page ».
-          Ce sont les seules belles photos dont on dispose aujourd'hui :
-          elles font la première impression. Les chiffres restent lus dans
-          les fiches villes, jamais inventés. */}
-      <section style={{ background: 'var(--nuit)' }} className="pt-2 pb-4 px-4">
-        <div className="max-w-3xl mx-auto">
-          <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 12, marginBottom: 10 }}>
-            <h2 className="text-white text-xl font-bold" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
-              🌍 {t.popularTitle}
-            </h2>
-            {/* 44 px de cible tactile : ce lien est remonté dans le premier
-                écran, il n'a plus le droit d'être une ligne de texte de
-                21 px de haut qu'on rate deux fois sur trois au pouce. */}
-            <Link href="/destinations" style={{ display: 'inline-flex', alignItems: 'center', minHeight: 44, padding: '0 4px', color: 'var(--or)', fontWeight: 800, fontSize: 14, textDecoration: 'none', whiteSpace: 'nowrap' }}>
-              {t.seeAll}
-            </Link>
-          </div>
-          {/* 🖼️ AUCUNE VIGNETTE COUPÉE EN DEUX PAR LE BORD DE L'ÉCRAN.
-              Mohamed, 15 août : « Le carrousel est coupé net par le bas : on
-              voit une demi-image, ça fait négligé. »
-              Mesuré sur six hauteurs (667, 844, 896, 1024, 768, 780) :
-              aucune vignette n'est coupée — elles commencent toutes SOUS la
-              ligne de flottaison. Il reste une bande de hauteurs
-              intermédiaires où la rangée peut être traversée, et c'est
-              inévitable : du contenu qui continue sous l'écran est coupé
-              quelque part. Ce dégradé fait que cette bande se lit comme
-              « il y a la suite » et non comme une image cassée. */}
-          <div style={{ display: 'flex', gap: 10, overflowX: 'auto', padding: '2px 2px 6px', scrollSnapType: 'x mandatory', scrollbarWidth: 'none', WebkitMaskImage: 'linear-gradient(to bottom, #000 76%, transparent 100%)', maskImage: 'linear-gradient(to bottom, #000 76%, transparent 100%)' }}>
-            {vedettes.map((v) => (
-              <Link
-                key={v.slug}
-                href={`/destinations/${v.slug}`}
-                style={{
-                  flex: 'none', width: 168, minHeight: 116, scrollSnapAlign: 'start',
-                  borderRadius: 16, overflow: 'hidden', textDecoration: 'none',
-                  border: '1px solid rgba(201,168,76,0.35)',
-                  display: 'flex', flexDirection: 'column', justifyContent: 'flex-end',
-                  backgroundImage: v.image
-                    // 168 px à l'écran : inutile de télécharger du 1600.
-                    ? `linear-gradient(180deg, rgba(11,26,15,0.15) 20%, rgba(11,26,15,0.92)), url(${photoLargeur(v.image, 168)})`
-                    : 'linear-gradient(160deg, #1d4a35, #0e2013)',
-                  backgroundSize: 'cover', backgroundPosition: 'center',
-                  textAlign: 'left',
-                }}
-              >
-                <span style={{ padding: '8px 10px 9px' }}>
-                  <span style={{ display: 'flex', alignItems: 'baseline', gap: 6 }}>
-                    <span style={{ color: '#fdfaf3', fontWeight: 800, fontSize: 15 }}>{v.nom}</span>
-                    <span style={{ color: '#c9a84c', fontWeight: 800, fontSize: 13 }}>✦ {v.score}</span>
-                  </span>
-                  <span style={{ display: 'block', color: 'rgba(253,250,243,0.72)', fontSize: 11.5, lineHeight: 1.35, marginTop: 2 }}>
-                    {v.restaurants > 0 && `${v.restaurants} ${isEN ? 'halal restos' : 'restos halal'}`}
-                    {v.restaurants > 0 && v.mosquees > 0 && ' · '}
-                    {v.mosquees > 0 && `${v.mosquees} ${isEN ? 'mosques' : 'mosquées'}`}
-                  </span>
-                </span>
-              </Link>
-            ))}
-            <Link
-              href="/destinations"
-              style={{ flex: 'none', width: 132, minHeight: 116, borderRadius: 16, border: '1.5px dashed rgba(201,168,76,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', color: 'var(--or)', fontWeight: 800, fontSize: 13, textDecoration: 'none', padding: '0 10px' }}
-            >
-              {isEN ? `All ${totalVilles} destinations →` : `Les ${totalVilles} destinations →`}
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      </div>
-
-      {/* 🧹 15 août — LES DEUX SECTIONS SPOTS QUITTENT L'ACCUEIL.
-          Mohamed : « spot et destination n'ont pas leur place ; tout le
-          site doit tourner autour de sa destination + IA + Google Maps ».
-          Elles ne sont PAS supprimées du site : l'onglet Spots de la barre
-          du bas, la ligne Spots du tableau de bord et le menu Outils y
-          mènent toujours — trois portes suffisent. L'accueil, lui, répond
-          d'abord à « j'ai besoin de quelque chose, MAINTENANT », et les
-          destinations gardent une seule rangée de photos, en vitrine. */}
-
-
-      {/* Halal Trust Score™ ranking */}
-      <HomeScoreRanking en={isEN} />
-
-      {/* Installer l'app — une ligne, pas un écran (le site EST l'app) */}
-      <section style={{ background: 'var(--nuit)' }} className="py-10 px-4">
-        <div className="max-w-3xl mx-auto text-center">
-          <p className="text-white font-bold text-lg mb-1">✦ {isEN ? 'Add VoyagesHalal to your home screen' : 'Ajoute VoyagesHalal à ton écran d\'accueil'}</p>
-          <p className="text-white/60 text-sm mb-5">{isEN ? 'Full screen, offline, prayer notifications — like an app, no store needed.' : 'Plein écran, hors-ligne, notifications de prière — comme une app, sans store.'}</p>
-          <Link href={localizedHref('/application', isEN)} style={{ display: 'inline-flex', alignItems: 'center', minHeight: 50, padding: '0 24px', borderRadius: 999, background: 'var(--or)', color: '#0b1a0f', fontWeight: 800, fontSize: 15, textDecoration: 'none' }}>
-            {isEN ? 'How to install (30 sec) →' : 'Comment l\'installer (30 sec) →'}
-          </Link>
-        </div>
-      </section>
-
-      {/* Guides — maillage interne vers blog */}
-      <section style={{ backgroundColor: '#faf8f4' }} className="py-16 px-4">
-        <div className="max-w-5xl mx-auto">
-          <div className="flex items-end justify-between mb-8">
-            <div>
-              <p style={{ color: '#c9a84c' }} className="text-xs font-semibold uppercase tracking-[0.2em] mb-2">{t.ourGuides}</p>
-              <h2 className="text-2xl font-bold" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', color: '#1b4332' }}>
-                {t.guidesTitle}
-              </h2>
-            </div>
-            <Link href="/guides" className="text-sm font-medium hover:underline" style={{ color: '#1b4332' }}>
-              {t.seeAllGuides}
-            </Link>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            {featuredGuides.map((guide) => (
-              <Link
-                key={guide.slug}
-                href={`/guides/${guide.slug}`}
-                className="group bg-white rounded-2xl p-5 border border-gray-100 hover:border-[#c9a84c]/40 hover:shadow-sm transition-all"
-              >
-                <span style={{ backgroundColor: '#f5f0e8', color: '#1b4332' }} className="text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded-full">
-                  {guide.category}
-                </span>
-                <h3 className="font-bold text-gray-900 mt-3 mb-2 text-sm leading-snug group-hover:text-[#1b4332]">
-                  {guide.title}
-                </h3>
-                <p className="text-xs text-gray-400">⏱ {guide.readTime} {t.readTime}</p>
-                <p style={{ color: '#c9a84c' }} className="text-xs font-medium mt-3">{t.readGuide}</p>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Email capture — lead magnet (« près de toi » est remonté sous le Radar) */}
-      <EmailCapture
-        title={t.emailTitle}
-        subtitle={t.emailSub}
-        source="homepage"
-      />
+          Sont partis : les destinations populaires (elles ont leur page),
+          la lettre d'information, les blocs éditoriaux, le classement des
+          villes, le tableau de bord et ses vingt éléments cliquables.
+          Aucun n'aidait quelqu'un dans les cinq secondes qui suivent son
+          arrivée — c'est le seul critère qui compte à l'accueil. */}
     </main>
     </>
   )
