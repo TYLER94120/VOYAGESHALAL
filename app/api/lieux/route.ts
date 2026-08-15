@@ -156,6 +156,15 @@ export interface Fiche {
   /** 🔴 Ce qu'on SAIT de l'alcool : jamais une supposition. */
   alcool: 'non' | 'inconnu'
   source: 'spot' | 'google' | 'osm'
+  /**
+   * 🔴 LE TYPE PRINCIPAL RENDU PAR GOOGLE, tel quel (bakery, cafe,
+   * meal_takeaway, restaurant, mosque, museum…). Il sert à construire les
+   * propositions à partir de ce qui existe VRAIMENT autour — « s'il y a
+   * trois kebabs et deux pâtisseries, on propose un kebab et une
+   * pâtisserie ». Ce n'est jamais une devinette sur le nom : c'est le
+   * classement de Google, recopié sans interprétation.
+   */
+  famille?: string
 }
 
 /** L'état alcool d'un candidat, tel que le verdict l'a établi. */
@@ -658,6 +667,7 @@ async function enrichir(cand: Candidat, cle: string, lang: string, origin: strin
     statut: CATEGORIE[cat].statut,
     alcool: alcoolDe(cand),
     source: 'google',
+    famille: cand.primaryType,
   }
   if (!cand.id) return base
   const ac = new AbortController()
@@ -909,6 +919,7 @@ export async function POST(req: Request) {
         statut: CATEGORIE[c.categorie].statut,
         alcool: alcoolDe(x),
         source: 'google' as const,
+        famille: x.primaryType,
       }))
     }
   }
