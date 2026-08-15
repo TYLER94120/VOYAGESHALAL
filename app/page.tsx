@@ -204,7 +204,7 @@ export default async function HomePage() {
           Ce sont les seules belles photos dont on dispose aujourd'hui :
           elles font la première impression. Les chiffres restent lus dans
           les fiches villes, jamais inventés. */}
-      <section style={{ background: 'var(--nuit)' }} className="pt-3 pb-4 px-4">
+      <section style={{ background: 'var(--nuit)' }} className="pt-2 pb-4 px-4">
         <div className="max-w-3xl mx-auto">
           <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 12, marginBottom: 10 }}>
             <h2 className="text-white text-xl font-bold" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>

@@ -83,6 +83,22 @@ export default function BoardVoyageur({
   const source = etatPos.pos ? etatPos.source : ('ip' as typeof etatPos.source)
   const [now, setNow] = useState(() => Date.now())
   const [mosquee, setMosquee] = useState<Lieu | null | undefined>(undefined)
+  // ⏱️ AUCUN CHARGEMENT N'EST ÉTERNEL.
+  //
+  // Capture de Mohamed, 15 août : « Recherche du lieu de prière le plus
+  // proche… tourne toujours. Un chargement sans fin est un mensonge poli :
+  // le visiteur attend une réponse qui ne viendra pas. »
+  //
+  // Trois sources alimentent cette tuile ; il suffit qu'une seule reste
+  // pendue (réseau coupé en plein appel, serveur qui ne répond ni ne
+  // ferme) pour que `mosquee` demeure `undefined` à jamais. Ce délai est
+  // la garantie de dernier recours : au bout de douze secondes, on
+  // affiche ce qu'on a — et si l'on n'a rien, on le DIT.
+  const [delaiDepasse, setDelaiDepasse] = useState(false)
+  useEffect(() => {
+    const t = setTimeout(() => setDelaiDepasse(true), 12_000)
+    return () => clearTimeout(t)
+  }, [])
   const [resto, setResto] = useState<Lieu | null | undefined>(undefined)
   const [spots, setSpots] = useState<FeedSpot[] | null>(null)
   // ⚠️ AVONS-NOUS PU CHERCHER ? Sans réponse d'AUCUNE source on ne peut pas
@@ -501,7 +517,7 @@ export default function BoardVoyageur({
   }
 
   return (
-    <section style={{ background: 'var(--nuit)', padding: '8px 14px 0' }} aria-label={en ? 'Your travel board' : 'Ton tableau de bord voyage'}>
+    <section style={{ background: 'var(--nuit)', padding: '4px 14px 0' }} aria-label={en ? 'Your travel board' : 'Ton tableau de bord voyage'}>
       <div className="board-wrap" style={{ margin: '0 auto' }}>
         {/* 📍 16 août — LA LIGNE POSITION + MÉTÉO A QUITTÉ CE TABLEAU.
             Elle est remontée dans la fine barre du haut, avec la langue
@@ -545,7 +561,7 @@ export default function BoardVoyageur({
           // seule boîte pour toute la question « où prier ».
           const horairesDansCarte = horairesLigne && (
             // Ligne 3 : les cinq horaires, fins, la suivante en surbrillance.
-            <div style={{ marginTop: 7, paddingTop: 7, borderTop: '1px solid rgba(253,250,243,0.12)' }}>
+            <div style={{ marginTop: 5, paddingTop: 6, borderTop: '1px solid rgba(253,250,243,0.12)' }}>
               {horairesLigne}
             </div>
           )
@@ -582,7 +598,15 @@ export default function BoardVoyageur({
                   ? (en ? `ends in ${fmtMin(minLeft)}` : `se termine dans ${fmtMin(minLeft)}`)
                   : (en ? `in ${fmtMin(minLeft)}` : `dans ${fmtMin(minLeft)}`)}
               </p>
-              {mosquee === undefined && <p style={{ ...T.meta, marginTop: 8 }}>{en ? 'Finding the nearest prayer place…' : 'Recherche du lieu de prière le plus proche…'}</p>}
+              {mosquee === undefined && (
+                <p style={{ ...T.meta, marginTop: 8 }}>
+                  {delaiDepasse
+                    ? (en
+                      ? 'Nearest prayer place unavailable right now — the Qibla below still works.'
+                      : 'Mosquée la plus proche indisponible pour le moment — la Qibla ci-dessous fonctionne.')
+                    : (en ? 'Finding the nearest prayer place…' : 'Recherche du lieu de prière le plus proche…')}
+                </p>
+              )}
               {/* ⚠️ « 81 MIN À PIED » N'EST PAS UNE RÉPONSE.
                   Capture de Mohamed, à Fezouane : la tuile proposait une
                   mosquée à 81 minutes de marche — avec un itinéraire piéton —
@@ -601,7 +625,7 @@ export default function BoardVoyageur({
                   qui parlent du MÊME geste — aller prier. Elles sont
                   maintenant réunies. Rien n'est retiré : tout est plié. */}
               {mosquee && (walkMin === null || walkMin <= MARCHE_MAX) && (
-                <div style={{ display: 'flex', alignItems: 'center', gap: 7, marginTop: 7, flexWrap: 'wrap' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 7, marginTop: 6, flexWrap: 'wrap' }}>
                   <p style={{ flex: 1, minWidth: 170, color: '#fdfaf3', fontSize: 14, margin: 0, lineHeight: 1.38 }}>
                     {mosquee.source === 'communaute' ? '🤝' : mosquee.source === 'annuaire' ? '📒' : '🕌'} <strong><bdi>{mosquee.nom}</bdi></strong>
                     {/* ⚠️ LA SOURCE NE SE PLIE PAS. En compactant, je
