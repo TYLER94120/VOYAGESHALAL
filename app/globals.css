@@ -1013,8 +1013,13 @@ body:has(.autour-plein) { padding-bottom: 0 !important; }
 .autour-moteur { background: var(--nuit); padding: 12px 12px calc(96px + env(safe-area-inset-bottom, 0px)); min-height: 100%; }
 /* 🏠 La porte de sortie : au-dessus de la carte ET de la feuille (z-index
    supérieur), jamais masquée, 44 px de cible tactile. */
+/* 🔴 QUATRIÈME DEMANDE DE MOHAMED : « le logo est cliquable au début, puis
+   il disparaît et on est prisonnier de l'écran. »
+   La cause : `position: absolute` l'attachait au conteneur de la page, qui
+   défile avec elle. `fixed` l'attache à l'ÉCRAN — il ne peut plus partir,
+   quel que soit le défilement, feuille ouverte ou fermée. */
 .autour-retour {
-  position: absolute; z-index: 700; top: 10px; left: 10px;
+  position: fixed; z-index: 700; top: 10px; left: 10px;
   min-height: 44px; display: inline-flex; align-items: center; padding: 0 15px;
   border-radius: 999px; text-decoration: none;
   background: rgba(11, 26, 15, 0.92); color: var(--or);
@@ -1048,8 +1053,13 @@ body:has(.autour-plein) { padding-bottom: 0 !important; }
   .autour-poignee { cursor: default; }
   /* 🏠 La porte de sortie : au-dessus de la carte ET de la feuille (z-index
    supérieur), jamais masquée, 44 px de cible tactile. */
+/* 🔴 QUATRIÈME DEMANDE DE MOHAMED : « le logo est cliquable au début, puis
+   il disparaît et on est prisonnier de l'écran. »
+   La cause : `position: absolute` l'attachait au conteneur de la page, qui
+   défile avec elle. `fixed` l'attache à l'ÉCRAN — il ne peut plus partir,
+   quel que soit le défilement, feuille ouverte ou fermée. */
 .autour-retour {
-  position: absolute; z-index: 700; top: 10px; left: 10px;
+  position: fixed; z-index: 700; top: 10px; left: 10px;
   min-height: 44px; display: inline-flex; align-items: center; padding: 0 15px;
   border-radius: 999px; text-decoration: none;
   background: rgba(11, 26, 15, 0.92); color: var(--or);
