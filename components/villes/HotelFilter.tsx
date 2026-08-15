@@ -10,7 +10,7 @@ import {
 } from '@/lib/hotelFilter'
 
 type SortKey = 'reco' | 'situe' | 'proche' | 'note' | 'cher'
-interface Enriched { h: HotelLike; c: LatLng | null; dist: number | null; reco: number; situe: number; nearestMosqueKm: number; restosNear: number; pr: number | null }
+interface Enriched { h: HotelLike; c: LatLng | null; dist: number | null; reco: number; situe: number; nearestMosqueKm: number; restosNear: number; nearestRestoKm: number; pr: number | null }
 
 const equipList = [
   { id: 'salleDePriere', fr: 'Salle de prière', en: 'Prayer room' },
@@ -49,8 +49,8 @@ export default function HotelFilter({ hotels, mosques, restos, center, en: enPro
   const enriched: Enriched[] = useMemo(() => hotels.map((h) => {
     const c = coordsOf(h)
     const dist = c && center ? distanceKm(c, center) : null
-    const s = c ? scoreSitue(c, mosques, restos) : { score: 0, nearestMosqueKm: Infinity, restosNear: 0 }
-    return { h, c, dist, reco: scoreRecommended(h, dist), situe: s.score, nearestMosqueKm: s.nearestMosqueKm, restosNear: s.restosNear, pr: priceRank(h) }
+    const s = c ? scoreSitue(c, mosques, restos) : { score: 0, nearestMosqueKm: Infinity, restosNear: 0, nearestRestoKm: Infinity }
+    return { h, c, dist, reco: scoreRecommended(h, dist), situe: s.score, nearestMosqueKm: s.nearestMosqueKm, restosNear: s.restosNear, nearestRestoKm: s.nearestRestoKm, pr: priceRank(h) }
   }), [hotels, mosques, restos, center])
 
   const availTypes = useMemo(() => Array.from(new Set(hotels.map((h) => categoryOf(h)).filter(Boolean))) as string[], [hotels])
@@ -164,7 +164,16 @@ export default function HotelFilter({ hotels, mosques, restos, center, en: enPro
                 {e.nearestMosqueKm !== Infinity && e.nearestMosqueKm <= 3 && (
                   <span style={{ background: 'var(--halal-bg)', color: 'var(--halal-tx)', fontSize: 11.5, fontWeight: 700, borderRadius: 20, padding: '4px 10px' }}>🕌 {t('Mosquée', 'Mosque')} {e.nearestMosqueKm < 1 ? `${Math.round(e.nearestMosqueKm * 1000)} m` : `${e.nearestMosqueKm.toFixed(1)} km`}</span>
                 )}
-                {e.restosNear > 0 && <span style={{ background: 'rgba(201,168,76,0.18)', color: '#8A6D1E', fontSize: 11.5, fontWeight: 700, borderRadius: 20, padding: '4px 10px' }}>🍽 {e.restosNear} {t('restos halal < 1 km', 'halal restos < 1 km')}</span>}
+                {/* 🔴 La pastille dit maintenant la DISTANCE au plus proche, pas
+                    seulement un compte : quatre hôtels du même quartier
+                    voyaient les mêmes 7 restaurants, et une pastille
+                    identique partout n'aide personne à choisir. */}
+                {e.restosNear > 0 && (
+                  <span style={{ background: 'rgba(201,168,76,0.18)', color: '#8A6D1E', fontSize: 11.5, fontWeight: 700, borderRadius: 20, padding: '4px 10px' }}>
+                    🍽 {e.nearestRestoKm < 1 ? `${Math.round(e.nearestRestoKm * 1000)} m` : `${e.nearestRestoKm.toFixed(1)} km`}
+                    {' · '}{e.restosNear} {t('à moins d’1 km', 'within 1 km')}
+                  </span>
+                )}
                 {equipList.filter((eq) => (EQUIP as any)[eq.id](h)).slice(0, 3).map((eq) => (
                   <span key={eq.id} style={{ background: 'rgba(27,67,50,0.07)', color: 'var(--foret)', fontSize: 11.5, fontWeight: 700, borderRadius: 20, padding: '4px 10px' }}>✓ {en ? eq.en : eq.fr}{(eq.id === 'piscineNonMixte' || eq.id === 'plagePrivee') ? ' · HalalBooking' : ''}</span>
                 ))}
