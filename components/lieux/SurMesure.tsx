@@ -7,8 +7,7 @@ import { lireIntention } from '@/lib/villesIndex'
 import type { VilleLue } from '@/lib/lireVille.mjs'
 import { trajet, type Mode } from '@/lib/trajet'
 import { ligneAlcool, mentionPermanente } from '@/lib/alcool.mjs'
-import { choisirPourMoi } from '@/lib/pistes'
-import { propositions, filtrer } from '@/lib/propositions.mjs'
+import { filtresDisponibles, appliquer } from '@/lib/propositions.mjs'
 import {
   PROFIL_VIDE, consigneProfilIA, ecrireProfil, lireProfil, ligneAllergie,
   mentionneAllergie, oublierProfil, profilVide, resumerProfil, type Profil,
@@ -176,7 +175,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
    * quota, et il ne peut PAS aboutir sur une liste vide — le filtre a été
    * appliqué avant même que le bouton n'apparaisse.
    */
-  const [filtre, setFiltre] = useState<string | null>(null)
+  const [filtres, setFiltres] = useState<string[]>([])
   const [raisonIA, setRaisonIA] = useState('')
   // 👤 Le profil vit dans le TÉLÉPHONE. On le lit après le montage : le
   // serveur ne le connaît pas, et le HTML servi ne doit pas en dépendre.
@@ -338,7 +337,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
   async function lancer(c: Criteres, ecrit: boolean, forcerGPS = false, ville?: { lat: number; lng: number; nom: string } | null) {
     if (enCours.current) return
     enCours.current = true
-    setProse(''); setFiches([]); setAutres([]); setVoirAutres(false); setPanne(null); setFiltre(null); setEtape('cherche')
+    setProse(''); setFiches([]); setAutres([]); setVoirAutres(false); setPanne(null); setFiltres([]); setEtape('cherche')
     // Dès le clic, la vue descend sur la zone de réponse : le squelette y
     // est déjà, donc le visiteur SAIT que son geste a été pris en compte.
     requestAnimationFrame(() => zoneResultats.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }))
@@ -516,10 +515,10 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
   // `autres` compte : une proposition qui ne trierait que trois adresses
   // n'aurait presque jamais de quoi exister.
   const toutes = useMemo(() => [...fiches, ...autres], [fiches, autres])
-  const ctxProp = useMemo(() => ({ priere: prochainePriere }), [prochainePriere])
-  const lesPropositions = useMemo(() => propositions(toutes, ctxProp, en), [toutes, ctxProp, en])
-  /** La liste affichée : filtrée si une proposition est active. */
-  const aVoir = useMemo(() => (filtre ? filtrer(toutes, filtre, ctxProp).slice(0, 6) : fiches), [filtre, toutes, fiches, ctxProp])
+  const lesFiltres = useMemo(() => filtresDisponibles(toutes), [toutes])
+  /** La liste affichée : les filtres allumés se cumulent, et le tri place
+   *  toujours les ouverts avant les fermés. */
+  const aVoir = useMemo(() => (filtres.length ? appliquer(toutes, filtres).slice(0, 6) : fiches), [filtres, toutes, fiches])
 
   /** Le délai, écrit comme on le dirait. Zéro seconde connue → « bientôt ». */
   function attente(secondes: number | undefined, anglais: boolean): string {
@@ -645,15 +644,19 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
           {CAT_OPTS.map(([v, fr, an]) => (
             <button key={v}
               className="surmesure-cat"
-              // TEMPS 1 : le bouton n'ouvre PAS une page et ne lance pas
-              // encore la recherche — il ouvre l'aide au choix juste en
-              // dessous. C'est ce qui le distingue des tuiles « Explorer »,
-              // qui sont le catalogue et mènent aux pages du site.
+              // 🔴 LE CLIC CHERCHE, TOUT DE SUITE. Il ouvrait auparavant un
+              // bloc de pistes à lire — et ces pistes ont été supprimées
+              // faute de filtre réel derrière. Un bouton qui n'ouvre plus
+              // rien serait un bouton mort : il lance donc la recherche de
+              // sa catégorie, et les trois filtres apparaissent sous les
+              // adresses trouvées. Un geste du visiteur = un appel.
               onClick={() => {
-                setCrit((c) => ({ ...c, categorie: v }))
+                const c = { ...crit, categorie: v } as Criteres
+                setCrit(c)
                 setAide({ cat: v })
                 setRaisonIA('')
                 compter(`cat-${v}`)
+                lancer(c, false)
               }}
               aria-pressed={aide?.cat === v} style={{ ...puce(aide?.cat === v), flex: '1 1 0', minWidth: 0, padding: '0 6px', whiteSpace: 'nowrap' }}>
               {t(fr, an)}
@@ -767,40 +770,17 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
           )}
         </div>
 
-        {/* ── TEMPS 2 — UN SEUL RACCOURCI, ET IL PART VRAIMENT CHERCHER ──
-            Il ne reste ici que « choisis pour moi », parce que lui lance une
-            recherche réelle et respecte l'onglet actif. Les propositions,
-            elles, s'affichent sous les résultats : elles sont calculées à
-            partir des adresses trouvées, donc chacune tient parole. */}
-        {aide && etape !== 'cherche' && (
-          <div className="board-pousse" style={{ marginTop: 12, paddingTop: 11, borderTop: '1px solid rgba(253,250,243,0.12)' }}>
-            {/* 🔴 LES PISTES ÉCRITES EN DUR ONT ÉTÉ SUPPRIMÉES ICI.
-                « À l'abri s'il pleut », « avec un espace pour les femmes »,
-                « sans rien dépenser », « en deux heures à pied », « en
-                famille pour s'asseoir » : cinq promesses derrière lesquelles
-                Google n'expose AUCUN filtre. Elles rendaient la même liste
-                que tout le reste — des coquilles vides.
-                Les propositions vivent maintenant sous les résultats, et
-                elles sont calculées sur les adresses réellement trouvées :
-                voir lib/propositions.mjs. */}
-            {/* ✨ Le bouton que Mohamed voulait retrouver. */}
-            <button
-              onClick={() => {
-                // 🔴 L'ONGLET ACTIF EST SOUVERAIN. On le passe à la
-                // fonction, et on le REPOSE par-dessus le résultat : deux
-                // verrous plutôt qu'un, parce que ce défaut-là a envoyé un
-                // traiteur libanais à quelqu'un qui cherchait où prier.
-                const cible = aide?.cat ?? crit.categorie
-                const d = choisirPourMoi(cible, contexte(), en)
-                const c = { ...crit, ...d.criteres, categorie: cible } as Criteres
-                setCrit(c); setAEcrit(false); setRaisonIA(d.raison); compter('choisis-pour-moi')
-                lancer(c, false)
-              }}
-              style={{ marginTop: 10, width: '100%', minHeight: 50, borderRadius: 14, border: 'none', background: 'var(--or)', color: 'var(--nuit)', fontWeight: 900, fontSize: 14.5, cursor: 'pointer' }}>
-              ✨ {t('Je ne sais pas — choisis pour moi', "I don't know — choose for me")}
-            </button>
-          </div>
-        )}
+        {/* 🔴 CE BLOC A ÉTÉ VIDÉ, et c'est voulu.
+            Les cinq pistes écrites en dur — « à l'abri s'il pleut », « avec
+            un espace pour les femmes », « sans rien dépenser », « en deux
+            heures à pied », « en famille pour s'asseoir » — n'avaient aucun
+            filtre Google derrière : des coquilles vides.
+            « Je ne sais pas — choisis pour moi » les suit : il ne faisait
+            que relancer la même recherche avec une phrase par-dessus, et
+            « toute proposition affichée est un engagement ».
+            Ce qui reste tient dans une ligne, sous les résultats : trois
+            filtres — prix, distance, note — qui trient les adresses déjà
+            trouvées. Voir lib/propositions.mjs. */}
 
         {/* 📍 L'ANCRE DE LA RÉPONSE. Elle est placée ICI, avant « ce qu'on
             a compris », avant la relance et avant les fiches : quelle que
@@ -994,30 +974,40 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
           <p style={{ color: 'var(--or)', fontSize: 13.5, fontWeight: 700, marginTop: 12, lineHeight: 1.5 }}>✨ {raisonIA}</p>
         )}
 
-        {/* ✨ LES PROPOSITIONS, CALCULÉES SUR CE QUI EXISTE VRAIMENT AUTOUR.
-            Elles sont placées ICI, juste au-dessus des adresses : « les
-            résultats apparaissent là où je regarde, sans que j'aie à
-            défiler ». Chacune porte son compte — le filtre a déjà été
-            appliqué pour l'obtenir, donc aucune ne peut mener à du vide.
-            Un clic trie la liste sous les yeux : instantané, zéro appel. */}
-        {etape === 'resultat' && lesPropositions.length > 0 && (
-          <div style={{ marginTop: 14 }}>
-            <p style={{ color: 'rgba(253,250,243,0.55)', fontSize: 11.5, fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', margin: '0 0 8px' }}>
-              {t('Parmi ces adresses', 'Among these places')}
-            </p>
-            <div style={rangee}>
-              {lesPropositions.map((pr) => (
-                <button key={pr.id} aria-pressed={filtre === pr.id}
-                  onClick={() => { const v = filtre === pr.id ? null : pr.id; setFiltre(v); compter('piste') }}
-                  style={puce(filtre === pr.id)}>{pr.libelle}</button>
-              ))}
-              {filtre && (
-                <button onClick={() => setFiltre(null)} style={{ ...puce(false), border: 'none', background: 'none', color: 'rgba(253,250,243,0.6)', textDecoration: 'underline' }}>
-                  {t('Tout revoir', 'Show all')}
+        {/* 💶 📍 ⭐ TROIS FILTRES, UNE SEULE LIGNE, AUCUNE IA.
+            « Les propositions sont trop longues, prennent quatre lignes sur
+            téléphone, et sont lentes. » Trois critères que Google rend
+            toujours — prix, distance, note —, qui s'allument, s'éteignent
+            et SE CUMULENT. La liste se retrie en direct, sans le moindre
+            appel réseau. L'écran gagné va aux résultats, qui sont la vraie
+            réponse. « Ouvert maintenant » n'est pas un bouton : c'est le
+            tri par défaut, les fermés derrière. */}
+        {etape === 'resultat' && lesFiltres.length > 0 && (
+          <div style={{ marginTop: 14, display: 'flex', gap: 8, overflowX: 'auto', paddingBottom: 2 }}>
+            {lesFiltres.map((f) => {
+              const actif = filtres.includes(f.id)
+              return (
+                <button key={f.id} aria-pressed={actif}
+                  onClick={() => {
+                    setFiltres((v) => (v.includes(f.id) ? v.filter((x) => x !== f.id) : [...v, f.id]))
+                    compter('piste')
+                  }}
+                  style={{ ...puce(actif), flex: '0 0 auto', whiteSpace: 'nowrap' }}>
+                  {f.icone} {en ? f.en : f.fr}
                 </button>
-              )}
-            </div>
+              )
+            })}
           </div>
+        )}
+
+        {/* Un filtre qui ne laisse rien : on le dit, et on rend la main. */}
+        {etape === 'resultat' && filtres.length > 0 && aVoir.length === 0 && (
+          <p style={{ color: 'rgba(253,250,243,0.75)', fontSize: 13.5, marginTop: 12, lineHeight: 1.5 }}>
+            {t('Aucune adresse ne réunit tous ces critères à la fois.', 'No place matches all of these at once.')}{' '}
+            <button onClick={() => setFiltres([])} style={{ background: 'none', border: 'none', color: 'var(--or)', textDecoration: 'underline', fontWeight: 800, cursor: 'pointer', padding: 0, fontSize: 13.5 }}>
+              {t('Tout revoir', 'Show all')}
+            </button>
+          </p>
         )}
 
         {aVoir.length > 0 && (
