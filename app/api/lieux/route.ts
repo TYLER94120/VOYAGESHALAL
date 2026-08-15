@@ -296,6 +296,21 @@ async function passe1(lat: number, lng: number, c: Criteres, cle: string, lang: 
         textQuery: texte,
         languageCode: lang,
         pageSize: CANDIDATS,
+        // 🔴🔴 ON IMPOSE LE TRI PAR DISTANCE. Défaut du 15 août, et il
+        // peut faire rater une prière : depuis Fontenay-sous-Bois, la
+        // « mosquée la plus proche à pied » proposait Clichy-sous-Bois à
+        // 31 min DE VOITURE et Ivry à 38 min, alors que Dhuhr était dans
+        // 19 minutes — et qu'il y a des mosquées à Montreuil, Vincennes,
+        // Nogent, Fontenay même.
+        //
+        // LA CAUSE : `searchText` classe par PERTINENCE. Dans un rectangle
+        // de 20 km, Google remonte donc les mosquées les plus CONNUES, pas
+        // les plus proches — et les quinze candidats qu'il nous rend ne
+        // contiennent même pas les mosquées du quartier. Les retrier
+        // nous-mêmes ne servait à rien : on triait les mauvais candidats.
+        //
+        // Élargir le rayon sans imposer le tri, c'est éparpiller.
+        rankPreference: 'DISTANCE',
         openNow: c.ouvertMaintenant || undefined,
         // 🎯 locationRESTRICTION et non locationBias : la contrainte est DURE.
         // Avec un simple biais, Google renvoyait des adresses à 90 minutes
@@ -429,14 +444,14 @@ function classer(cands: Candidat[], c: Criteres, rayon: number): Candidat[] {
   // sensée. Le poulet rôti à 300 m n'apparaît plus du tout — non parce
   // qu'on l'a relégué, mais parce qu'il n'est pas un kebab.
   //
-  // Reste un garde-fou : Google range ses résultats par pertinence
-  // décroissante, et la queue de liste s'éloigne du sujet. On écarte donc
-  // les derniers rangs plutôt que de les remonter en tête sous prétexte
-  // qu'ils sont proches.
-  const PERTINENCE_MIN = 12
+  // ⚠️ LE GARDE-FOU DE PERTINENCE A ÉTÉ RETIRÉ, et c'est important.
+  // Il écartait les rangs au-delà du douzième, ce qui avait du sens quand
+  // Google classait par pertinence. Maintenant qu'il classe par DISTANCE,
+  // le rang 13 est simplement le treizième plus proche — l'écarter
+  // reviendrait à jeter des adresses parce qu'elles sont loin, alors que
+  // c'est déjà le rôle du rayon.
   return [...cands]
     .filter((x) => x.distanceM <= rayon)
-    .filter((x) => x.rang < PERTINENCE_MIN)
     .filter((x) => (c.budget === 'petit' ? (x.prix ?? 2) <= 2 : c.budget === 'moyen' ? (x.prix ?? 2) <= 3 : true))
     // « Ouvert maintenant » reste un filtre dur quand il est demandé : une
     // adresse fermée n'est pas une réponse à « je veux manger là, tout de
@@ -492,7 +507,18 @@ async function enrichir(cand: Candidat, cle: string, lang: string, origin: strin
       fermeA: heureFermeture(oh?.weekdayDescriptions),
       resume: (p.editorialSummary as { text?: string } | undefined)?.text,
       // Les photos passent par NOTRE proxy : la clé ne sort jamais.
-      photos: photos.slice(0, 2).map((ph) => `${origin}/api/lieux/photo?ref=${encodeURIComponent(ph.name ?? '')}`).filter((u) => !u.endsWith('ref=')),
+      // 🔴 URL RELATIVE, JAMAIS `origin`. Défaut trouvé le 15 août :
+      // Mohamed voyait des rectangles vides avec un « ? » à la place des
+      // photos de restaurants, alors que les photos de mosquées (servies
+      // par Wikimedia, en absolu) s'affichaient très bien.
+      // La cause : `origin` était calculé depuis `req.url`, c'est-à-dire
+      // l'URL INTERNE vue par le serveur derrière le proxy de Vercel —
+      // pas l'adresse publique du site. Le navigateur recevait donc un
+      // `src` pointant vers un hôte qu'il ne peut pas joindre.
+      // Une URL relative est résolue par le navigateur contre la page
+      // courante : elle est juste par construction, sur les deux domaines,
+      // en préproduction comme en production.
+      photos: photos.slice(0, 2).map((ph) => `/api/lieux/photo?ref=${encodeURIComponent(ph.name ?? '')}`).filter((u) => !u.endsWith('ref=')),
       attributionsPhotos: photos.slice(0, 2).flatMap((ph) => (ph.authorAttributions ?? []).map((a) => a.displayName ?? '').filter(Boolean)),
       avis: reviews.slice(0, 4).map((rv) => ({
         texte: (rv.text?.text ?? '').slice(0, 400),
@@ -710,6 +736,11 @@ export async function POST(req: Request) {
     // Le client a besoin du mode pour ÉCRIRE le temps de trajet, et du
     // plafond pour dire « à moins de 10 minutes à pied ».
     mode, plafondMin: plafondMin(c, mode), rayonKm: RAYON_KM,
+    // ⏱️ L'URGENCE PRIME QUAND LA PRIÈRE APPROCHE. Le composant connaît le
+    // temps restant (il le calcule sur place, sans réseau) ; on lui donne
+    // ici de quoi dire « atteignable avant » : chaque fiche porte déjà sa
+    // distance, il suffit de la comparer aux minutes restantes.
+    urgencePriere: c.categorie === 'mosquee',
     // §5 — ce qu'on a dû lâcher pour trouver quelque chose.
     relaches,
   }

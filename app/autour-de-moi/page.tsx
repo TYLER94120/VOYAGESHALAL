@@ -4,7 +4,6 @@ import 'leaflet/dist/leaflet.css'
 import type { Map as LeafletMap, Marker } from 'leaflet'
 import { useInstantPosition } from '@/lib/useInstantPosition'
 import SurMesure, { type Fiche } from '@/components/lieux/SurMesure'
-import PositionBadge from '@/components/location/PositionBadge'
 
 // 🗺️ « AUTOUR DE MOI » — LA MÊME RECHERCHE, EN VUE CARTE.
 //
@@ -50,7 +49,11 @@ function epingle(L: any, rang: number, choisie: boolean) {
 }
 
 type Feuille = 'repliee' | 'moitie' | 'pleine'
-const HAUTEUR: Record<Feuille, string> = { repliee: '132px', moitie: '52dvh', pleine: '88dvh' }
+// 📏 « Soit la carte est assez grande pour servir, soit elle cède la place
+// à la liste » (Mohamed). En ouverture, la liste prend les deux tiers : ce
+// sont les ADRESSES qu'on vient chercher, la carte dit seulement où elles
+// sont. Un bouton la rend pleine quand on veut la regarder.
+const HAUTEUR: Record<Feuille, string> = { repliee: '148px', moitie: '68dvh', pleine: '92dvh' }
 
 export default function AutourDeMoiPage() {
   const etatPos = useInstantPosition()
@@ -212,11 +215,12 @@ export default function AutourDeMoiPage() {
           DONNÉES des lieux (la clé est d'ailleurs restreinte aux Places). */}
       <div ref={mapEl} className="autour-carte" style={{ background: '#dfe6e2' }} />
 
-      {/* La position, en clair et corrigeable — c'est d'elle que dépendent
-          l'horaire de la prière, la Qibla et toutes les distances. */}
-      <div className="autour-barre">
-        <PositionBadge etat={etatPos} clair compact />
-      </div>
+      {/* 🧹 15 août — LA POSITION N'EST PLUS AFFICHÉE ICI.
+          Mohamed : « une pastille de position TRONQUÉE : "📍 · ex…" — on ne
+          lit même pas le nom de la ville — et DEDANS, une deuxième fois
+          "Fontenay-sous-Bois · exacte ✓". La même information deux fois à
+          3 cm d'écart. » Le bandeau fin du haut la porte déjà, en entier,
+          sur toutes les pages du site. Une seule mention, jamais tronquée. */}
 
       <button onClick={recentrer} className="autour-recentrer" aria-label="Revenir à ma position exacte">
         {etatPos.geoLoading ? '…' : '🎯'}
@@ -252,9 +256,12 @@ export default function AutourDeMoiPage() {
           onTouchEnd={() => { glisse.current = null }}
         >
           <span className="autour-trait" aria-hidden />
-          <p style={{ margin: 0, fontWeight: 800, fontSize: 14, color: 'var(--foret)' }}>
-            {fiches.length ? `${fiches.length} adresse${fiches.length > 1 ? 's' : ''}` : 'Dis-moi ce que tu cherches'}
-            <span style={{ color: 'var(--texte-2)', fontWeight: 600 }}> · {feuille === 'pleine' ? 'tout' : 'tire pour voir'}</span>
+          {/* 🧹 « tire pour voir » disparaît : c'est un geste que personne
+              ne devine. Le bandeau dit ce qu'il CONTIENT, et le bouton dit
+              ce qu'il FAIT. */}
+          <p style={{ margin: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, fontWeight: 800, fontSize: 14, color: 'var(--foret)' }}>
+            <span>{fiches.length ? `${fiches.length} adresse${fiches.length > 1 ? 's' : ''} autour de toi` : 'Recherche autour de toi…'}</span>
+            <span style={{ color: 'var(--or)', fontWeight: 800 }}>{feuille === 'pleine' ? '▾ Réduire' : '▴ Tout voir'}</span>
           </p>
         </div>
         <div className="autour-liste">
@@ -267,6 +274,9 @@ export default function AutourDeMoiPage() {
               fondu
               posInitiale={pos ? { lat: pos.lat, lng: pos.lng, ville: pos.label } : null}
               phraseInitiale={phraseVenue}
+              // ► On répond avant qu'on demande : la recherche part dès que
+              // la position est connue, sans rien taper ni rien tirer.
+              chercheDesLOuverture={phraseVenue ? undefined : 'manger'}
               onResultats={setFiches}
               selectionId={choisie}
               onSelection={setChoisie}

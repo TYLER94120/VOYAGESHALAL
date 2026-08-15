@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { CRITERES_DEFAUT, lireDemande, relance, resumerCriteres, type Criteres } from '@/lib/criteres'
+import { CRITERES_DEFAUT, lireDemande, relance, resumerCriteres, type Categorie, type Criteres } from '@/lib/criteres'
 import { lireIntention } from '@/lib/villesIndex'
 import type { VilleLue } from '@/lib/lireVille.mjs'
 import { trajet, type Mode } from '@/lib/trajet'
@@ -87,7 +87,7 @@ const euros = (p?: number) => (p ? '€'.repeat(Math.min(4, p)) : null)
  *  voit immédiatement — et tout ce que Mohamed lit est en français. */
 const deVille = (nom: string) => (/^[aeiouyàâäéèêëîïôöûüh]/i.test(nom) ? `d'${nom}` : `de ${nom}`)
 
-export default function SurMesure({ posInitiale, destination: destinationProp, en = false, fondu = false, titrePage = false, onResultats, selectionId, onSelection, phraseInitiale }: {
+export default function SurMesure({ posInitiale, destination: destinationProp, en = false, fondu = false, titrePage = false, onResultats, selectionId, onSelection, phraseInitiale, chercheDesLOuverture }: {
   posInitiale?: { lat: number; lng: number; ville?: string | null } | null
   destination?: { lat: number; lng: number; nom: string } | null
   en?: boolean
@@ -113,6 +113,13 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
   onSelection?: (id: string | null) => void
   /** La phrase apportée par l'accueil (?q=…) : on la lance toute seule. */
   phraseInitiale?: string
+  /** ► SI ON SAIT OÙ JE SUIS, ON RÉPOND AVANT QUE JE DEMANDE.
+   *  Ordre de Mohamed, 15 août : « On ouvre la page, on ne voit AUCUN
+   *  résultat, et on nous demande de taper quelque chose. Alors que le
+   *  site SAIT déjà où je suis. » Quand cette catégorie est fournie, la
+   *  recherche part toute seule dès que la position est là — le champ ne
+   *  sert plus qu'à PRÉCISER. */
+  chercheDesLOuverture?: Categorie
 }) {
   const router = useRouter()
   const [phrase, setPhrase] = useState('')
@@ -158,6 +165,9 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
   /** Le mot demandé qu'aucune fiche ne porte — on le dit, on ne fait pas
    *  passer autre chose pour la réponse. */
   const [motManquant, setMotManquant] = useState<string | null>(null)
+  /** ⏱️ Le temps qui reste avant la prière, au moment de la recherche.
+   *  « Dhuhr dans 19 min : voici ce que tu peux atteindre avant. » */
+  const [urgence, setUrgence] = useState<{ nom: string; minutes: number } | null>(null)
   useEffect(() => { setProfil(lireProfil()) }, [])
   // 🔗 La recherche apportée par l'accueil part toute seule : « rien à
   // retaper » (§2.5). Une seule fois, au montage.
@@ -169,6 +179,26 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
     comprendre(phraseInitiale)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [phraseInitiale])
+
+  // ► ON RÉPOND AVANT QU'ON DEMANDE. Dès que la position est connue et
+  // qu'aucune phrase n'est venue de l'accueil, on lance la recherche de la
+  // catégorie voulue. « Zéro vide : si un tiers de l'écran est noir et
+  // muet, c'est que la page n'a pas fait son travail. »
+  useEffect(() => {
+    if (lancee.current || !chercheDesLOuverture) return
+    if (!posInitiale && !destinationProp) return
+    if (phraseInitiale?.trim()) return
+    lancee.current = true
+    const c: Criteres = { ...CRITERES_DEFAUT, categorie: chercheDesLOuverture, mode: 'pied' }
+    setCrit(c)
+    // ⚠️ On n'ouvre PAS la zone de suggestions ici. Mohamed veut des
+    // RÉSULTATS à l'ouverture, pas une liste de propositions à lire : « on
+    // ouvre la page, on ne voit AUCUN résultat, et on nous demande de taper
+    // quelque chose ». Les pistes restent accessibles par les trois
+    // boutons — elles ne prennent pas la place de la réponse.
+    lancer(c, false)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [chercheDesLOuverture, posInitiale, destinationProp])
   const [ex, setEx] = useState(0)
   const enCours = useRef(false)
   /** 📍 OÙ LA RÉPONSE APPARAÎT. Mohamed, 15 août : « Je clique sur Trouver
@@ -315,7 +345,12 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
       requestAnimationFrame(() => {
         setTimeout(() => zoneResultats.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 60)
       })
-      if (trois.length) redigerIA(trois, c, corps.mode ?? 'voiture', c.categorie === 'mosquee' ? avantPriere(pos) : null, !!lieu)
+      const pr = c.categorie === 'mosquee' ? avantPriere(pos) : null
+      // Moins de 30 minutes : on le DIT, et on met en avant ce qui est
+      // atteignable à temps. Rater une prière parce qu'on a suivi notre
+      // conseil serait le pire service qu'on puisse rendre.
+      setUrgence(pr && pr.minutes <= 30 ? pr : null)
+      if (trois.length) redigerIA(trois, c, corps.mode ?? 'voiture', pr, !!lieu)
     } finally { enCours.current = false }
   }
 
@@ -913,6 +948,17 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
           </p>
         )}
 
+        {/* ⏱️ LA PRIÈRE EST DANS MOINS DE 30 MINUTES : on le dit AVANT les
+            fiches, et on rappelle que le temps de trajet de chacune est
+            écrit dessus. Le visiteur compare lui-même — il n'y a rien de
+            plus honnête que de lui donner les deux nombres. */}
+        {urgence && fiches.length > 0 && etape === 'resultat' && (
+          <p style={{ marginTop: 12, padding: '9px 12px', borderRadius: 12, background: 'rgba(201,168,76,0.16)', border: '1px solid var(--or)', color: 'var(--creme)', fontSize: 13.5, fontWeight: 700, lineHeight: 1.45 }}>
+            ⏱️ {t(`${urgence.nom} dans ${urgence.minutes} min — le temps de trajet est écrit sur chaque adresse.`,
+                  `${urgence.nom} in ${urgence.minutes} min — travel time is written on each place.`)}
+          </p>
+        )}
+
         {/* 🔴 « On ne sert pas un poulet rôti en faisant semblant que c'est
             la réponse. » Quand le mot demandé ne se retrouve nulle part, on
             le dit avant les fiches — elles restent utiles, mais elles ne
@@ -963,6 +1009,28 @@ function Cadre({ fondu, titre, children }: { fondu: boolean; titre: string; chil
   )
 }
 
+/**
+ * Les photos d'une fiche, qui disparaissent proprement quand elles ne
+ * chargent pas. En 4G, une image lente ne doit pas laisser un rectangle
+ * béant : tant qu'elle n'est pas arrivée, le fond du site tient la place ;
+ * si elle échoue, elle s'efface et la fiche se referme sur son texte.
+ */
+function Photos({ photos, nom }: { photos?: string[]; nom: string }) {
+  const [mortes, setMortes] = useState<Set<number>>(new Set())
+  const vivantes = (photos ?? []).slice(0, 2).map((src, i) => ({ src, i })).filter(({ i }) => !mortes.has(i))
+  if (!vivantes.length) return null
+  return (
+    <div style={{ display: 'flex', gap: 2 }}>
+      {vivantes.map(({ src, i }) => (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img key={i} src={src} alt={nom} loading="lazy"
+          onError={() => setMortes((m) => new Set(m).add(i))}
+          style={{ flex: 1, width: '100%', height: 150, objectFit: 'cover', display: 'block', background: 'linear-gradient(150deg, rgba(27,67,50,0.55), rgba(11,26,15,0.85))' }} />
+      ))}
+    </div>
+  )
+}
+
 /** UNE FICHE = une carte qui respire, la photo la porte (§2 et §6). */
 function Carte({ f, en, mode, destination, allergie, choisie = false, onChoisir, onItineraire }: { f: Fiche; en: boolean; mode: Mode; destination: boolean; allergie: boolean; choisie?: boolean; onChoisir?: () => void; onItineraire: () => void }) {
   const t = (fr: string, an: string) => (en ? an : fr)
@@ -975,15 +1043,12 @@ function Carte({ f, en, mode, destination, allergie, choisie = false, onChoisir,
     // grossit sur la carte : c'est une seule sélection, vue des deux côtés.
     <article onClick={onChoisir} aria-current={choisie || undefined} data-fiche={f.id}
       style={{ borderRadius: 16, border: `1px solid ${choisie ? 'var(--or)' : 'rgba(253,250,243,0.16)'}`, boxShadow: choisie ? '0 0 0 3px rgba(201,168,76,0.28)' : 'none', overflow: 'hidden', background: 'rgba(255,255,255,0.04)', cursor: onChoisir ? 'pointer' : 'default', scrollMarginTop: 8 }}>
-      {f.photos?.length ? (
-        <div style={{ display: 'flex', gap: 2 }}>
-          {f.photos.slice(0, 2).map((src, i) => (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img key={i} src={src} alt={f.nom} loading="lazy"
-              style={{ flex: 1, width: '100%', height: 150, objectFit: 'cover', display: 'block', background: 'rgba(255,255,255,0.06)' }} />
-          ))}
-        </div>
-      ) : null}
+      {/* 🖼️ UNE IMAGE QUI NE CHARGE PAS NE LAISSE JAMAIS UN TROU.
+          Mohamed, 15 août : « des rectangles vides avec un "?" bleu, le nom
+          du lieu s'affiche en gris derrière le trou. » Un trou dans la page
+          fait plus de dégâts qu'une absence assumée : la photo qui échoue
+          se retire, et la fiche se réorganise sans elle. */}
+      <Photos photos={f.photos} nom={f.nom} />
       <div style={{ padding: 13 }}>
         {/* §2 — « les noms ne sont JAMAIS tronqués : la carte s'adapte au
             texte ». Pas de nowrap, pas d'ellipse : le nom passe à la ligne. */}
