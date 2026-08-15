@@ -1,0 +1,197 @@
+'use client'
+import { useMemo, useState } from 'react'
+import Link from 'next/link'
+import { CIELS } from '@/lib/cielDuMoment.mjs'
+import { filtresDisponibles, appliquer } from '@/lib/propositions.mjs'
+
+// 🌅 L'ÉCRAN DES CINQ CIELS — reproduction fidèle de
+// docs/maquette-cinq-ciels.html (commit 52b4563).
+//
+// Toutes les valeurs viennent de la maquette, pas d'une invention : ruban
+// 11,5 px / .1em / padding 9-16, photo 126 px, nom serif 21 px, infos
+// 13,5 px, aveu 12,5 px, bouton 15,5 px coins 16 px, vignette 48 px coins
+// 13 px, filtres coins 999 px padding 8-14, écart entre blocs 10 px,
+// padding d'écran 8px 14px.
+//
+// ⚠️ Ce composant N'APPELLE RIEN. Il reçoit les adresses déjà trouvées par
+// le moteur commun — il n'existe qu'UN seul chemin vers /api/lieux, et ce
+// n'est pas ici. Il met en forme, il ne cherche pas.
+
+export interface FicheEcran {
+  id?: string
+  nom: string
+  distanceM: number
+  note?: number
+  nbAvis?: number
+  prix?: number
+  ouvert?: boolean
+  photos?: string[]
+  statut?: string
+  alcool?: 'non' | 'inconnu'
+  mapsUri?: string
+  lat: number
+  lng: number
+}
+
+const SERIF = "Georgia,'Iowan Old Style','Times New Roman',serif"
+
+function minutesAPied(m: number) { return Math.max(1, Math.round(m / 75)) }
+
+export default function EcranCiel({
+  ciel, lieu, exacte, priere, fiches, ruban, onOuvrirHoraires, horairesOuverts, horaires, qibla,
+}: {
+  ciel: keyof typeof CIELS
+  lieu: string
+  exacte: boolean
+  priere: { nom: string; reste: string; urgent: boolean } | null
+  fiches: FicheEcran[]
+  ruban: string
+  onOuvrirHoraires: () => void
+  horairesOuverts: boolean
+  horaires: { nom: string; heure: string; courante: boolean }[]
+  qibla: { deg: number; dir: string } | null
+}) {
+  const accent = CIELS[ciel].accent
+  const [filtres, setFiltres] = useState<string[]>([])
+  const dispo = useMemo(() => filtresDisponibles(fiches), [fiches])
+  const liste = useMemo(() => appliquer(fiches, filtres), [fiches, filtres])
+  const [tete, ...suite] = liste
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 10, padding: '8px 14px 0', fontVariantNumeric: 'tabular-nums' }}>
+
+      {/* ① LA POSITION — jamais tronquée : c'est le nom de la commune qui
+          dit au visiteur que le site parle bien de LUI. */}
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 10, padding: '2px 2px 0' }}>
+        <span style={{ fontSize: 16, fontWeight: 600, color: '#fff', display: 'flex', alignItems: 'center', gap: 5, minWidth: 0 }}>
+          📍 <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{lieu}</span>
+          <span style={{ fontSize: 12, color: exacte ? '#4FD69C' : '#E0A340', fontWeight: 700, flex: '0 0 auto' }}>
+            {exacte ? 'exacte ✓' : 'approximative'}
+          </span>
+        </span>
+      </div>
+
+      {/* ② LA PRIÈRE, EN UNE LIGNE. Les cinq horaires prenaient 40 % de
+          l'écran pour deux secondes de lecture : ils sont repliés, et le
+          chevron les déplie avec la Qibla. */}
+      <button
+        onClick={onOuvrirHoraires}
+        aria-expanded={horairesOuverts}
+        style={{ display: 'flex', alignItems: 'baseline', gap: 9, padding: '4px 2px', background: 'none', border: 'none', width: '100%', textAlign: 'left', cursor: 'pointer', minHeight: 56 }}
+      >
+        <span style={{ fontSize: 12, letterSpacing: '.2em', textTransform: 'uppercase', fontWeight: 700, color: 'rgba(255,255,255,.66)' }}>
+          {priere?.nom ?? '—'}
+        </span>
+        <span style={{ fontFamily: SERIF, fontSize: 26, lineHeight: 1, color: priere?.urgent ? '#FFC978' : '#fff' }}>
+          {priere?.reste ?? '…'}
+        </span>
+        <span style={{ marginLeft: 'auto', fontSize: 15, color: 'rgba(255,255,255,.5)' }} aria-hidden>{horairesOuverts ? '⌃' : '⌄'}</span>
+      </button>
+
+      {horairesOuverts && (
+        <div style={{ background: 'rgba(255,255,255,.07)', border: '1px solid rgba(255,255,255,.1)', borderRadius: 16, padding: '11px 13px' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', gap: 6 }}>
+            {horaires.map((h) => (
+              <div key={h.nom} style={{ textAlign: 'center', flex: 1 }}>
+                <p style={{ margin: 0, fontSize: 12, color: h.courante ? accent : 'rgba(255,255,255,.66)', fontWeight: 700 }}>{h.nom}</p>
+                <p style={{ margin: '2px 0 0', fontSize: 16, color: '#fff', fontFamily: SERIF }}>{h.heure}</p>
+              </div>
+            ))}
+          </div>
+          {qibla && (
+            <p style={{ margin: '10px 0 0', fontSize: 13.5, color: 'rgba(255,255,255,.82)' }}>
+              🧭 Qibla <b style={{ color: '#fff' }}>{qibla.deg}°</b> · {qibla.dir}
+            </p>
+          )}
+        </div>
+      )}
+
+      {/* ③ LA RÉPONSE — la seule chose dominante de l'écran. */}
+      {tete ? (
+        <article style={{ borderRadius: 22, overflow: 'hidden', background: 'rgba(255,255,255,.09)', border: '1px solid rgba(255,255,255,.16)' }}>
+          <div style={{ fontSize: 11.5, fontWeight: 700, letterSpacing: '.1em', textTransform: 'uppercase', padding: '9px 16px', background: accent, color: '#141018' }}>
+            {ruban}
+          </div>
+          <div style={{ height: 126, position: 'relative', background: 'linear-gradient(150deg,#8A5B2E 0%,#5A3A1C 52%,#33200F 100%)' }}>
+            {tete.photos?.[0] && (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img src={tete.photos[0]} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            )}
+            <span style={{ position: 'absolute', top: 11, right: 11, fontSize: 12, fontWeight: 700, borderRadius: 999, padding: '5px 11px', background: '#E0A340', color: '#231603' }}>
+              {tete.statut ?? 'à vérifier'}
+            </span>
+          </div>
+          <div style={{ padding: '14px 16px 16px' }}>
+            <h2 style={{ fontFamily: SERIF, fontSize: 21, fontWeight: 400, lineHeight: 1.18, margin: '0 0 7px', color: '#fff' }}>{tete.nom}</h2>
+            <p style={{ fontSize: 13.5, color: 'rgba(255,255,255,.82)', margin: '0 0 3px' }}>
+              {tete.note != null && <><span style={{ color: '#FFC978', fontWeight: 700 }}>★ {tete.note}</span>{tete.nbAvis ? ` · ${tete.nbAvis} avis` : ''} · </>}
+              <b>{tete.distanceM < 1000 ? `${tete.distanceM} m` : `${(tete.distanceM / 1000).toFixed(1)} km`}</b> · {minutesAPied(tete.distanceM)} min à pied
+              {tete.ouvert === true && <span style={{ color: '#4FD69C', fontWeight: 600 }}> · ouvert</span>}
+              {tete.ouvert === false && <span style={{ color: 'rgba(255,255,255,.6)' }}> · fermé</span>}
+            </p>
+            <p style={{ fontSize: 12.5, lineHeight: 1.4, margin: '8px 0 0', color: 'rgba(255,255,255,.66)' }}>
+              {tete.statut ?? 'Statut halal non confirmé — à vérifier sur place'}
+              {tete.alcool === 'non' && <> · <b style={{ color: '#FFC978', fontWeight: 600 }}>✓ Ne sert pas d&apos;alcool</b></>}
+            </p>
+            <a
+              href={tete.mapsUri ?? `https://www.google.com/maps/dir/?api=1&destination=${tete.lat},${tete.lng}`}
+              target="_blank" rel="noopener noreferrer"
+              style={{ display: 'block', marginTop: 13, borderRadius: 16, padding: 14, textAlign: 'center', fontSize: 15.5, fontWeight: 700, background: accent, color: '#141018', textDecoration: 'none', minHeight: 56, boxSizing: 'border-box' }}
+            >
+              🚶 Itinéraire
+            </a>
+          </div>
+        </article>
+      ) : (
+        // 🔴 JAMAIS DE POINTS DE SUSPENSION ÉTERNELS. Tant qu'on n'a rien,
+        // on le dit en une phrase franche — pas en « recherche… » qui tourne.
+        <p style={{ background: 'rgba(255,255,255,.07)', border: '1px solid rgba(255,255,255,.1)', borderRadius: 16, padding: '16px', fontSize: 16, color: 'rgba(255,255,255,.82)', margin: 0 }}>
+          On cherche les adresses autour de toi. Si rien n&apos;arrive d&apos;ici quelques secondes, c&apos;est qu&apos;on n&apos;a pas pu joindre nos sources — et on te le dira franchement plutôt que de faire tourner un rond.
+        </p>
+      )}
+
+      {/* ④ UNE OU DEUX FICHES SECONDAIRES */}
+      {suite.slice(0, 2).map((f) => (
+        <div key={f.id ?? f.nom} style={{ display: 'flex', gap: 12, alignItems: 'center', background: 'rgba(255,255,255,.07)', borderRadius: 16, padding: '11px 13px', border: '1px solid rgba(255,255,255,.1)' }}>
+          <div style={{ width: 48, height: 48, flex: '0 0 auto', borderRadius: 13, overflow: 'hidden', background: 'linear-gradient(140deg,#2C4A7A,#0D1830)' }}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            {f.photos?.[0] && <img src={f.photos[0]} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />}
+          </div>
+          <div style={{ minWidth: 0 }}>
+            <p style={{ fontFamily: SERIF, fontSize: 16, margin: '0 0 2px', color: '#fff', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{f.nom}</p>
+            <p style={{ fontSize: 12.5, margin: 0, color: 'rgba(255,255,255,.82)' }}>
+              {f.note != null && <span style={{ color: '#FFC978', fontWeight: 700 }}>★ {f.note} </span>}
+              · {f.distanceM < 1000 ? `${f.distanceM} m` : `${(f.distanceM / 1000).toFixed(1)} km`}
+              {f.ouvert === true && <span style={{ color: '#4FD69C' }}> · ouvert</span>}
+            </p>
+          </div>
+        </div>
+      ))}
+
+      {/* ⑤ LES TROIS FILTRES */}
+      {dispo.length > 0 && (
+        <div style={{ display: 'flex', gap: 7 }}>
+          {dispo.map((f) => {
+            const on = filtres.includes(f.id)
+            return (
+              <button key={f.id} aria-pressed={on}
+                onClick={() => setFiltres((v) => (v.includes(f.id) ? v.filter((x) => x !== f.id) : [...v, f.id]))}
+                style={{ border: `1px solid ${on ? '#fff' : 'rgba(255,255,255,.28)'}`, borderRadius: 999, padding: '8px 14px', fontSize: 16, fontWeight: 600, color: on ? '#0A1020' : 'rgba(255,255,255,.9)', background: on ? '#fff' : 'transparent', whiteSpace: 'nowrap', minHeight: 56, cursor: 'pointer' }}>
+                {f.icone} {f.fr}
+              </button>
+            )
+          })}
+        </div>
+      )}
+
+      {/* ⑥ LES RACCOURCIS, discrets */}
+      <div style={{ display: 'flex', gap: 7 }}>
+        {[['🕌 Prier', '/mosquee-proche'], ['🎯 Que faire', '/autour-de-moi?cat=activite'], ['📍 Carte', '/autour-de-moi']].map(([lib, href]) => (
+          <Link key={href} href={href} style={{ flex: 1, textAlign: 'center', fontSize: 16, fontWeight: 600, color: 'rgba(255,255,255,.72)', border: '1px solid rgba(255,255,255,.14)', borderRadius: 14, padding: '10px 3px', textDecoration: 'none', minHeight: 56, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            {lib}
+          </Link>
+        ))}
+      </div>
+    </div>
+  )
+}

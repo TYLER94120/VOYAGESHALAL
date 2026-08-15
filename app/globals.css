@@ -1123,9 +1123,16 @@ body:has(.autour-plein) { padding-bottom: 0 !important; }
 .accueil-ciel > div,
 .accueil-ciel .rangee-bas,
 .accueil-ciel .rangee-bas > section,
-.accueil-ciel .board-fond {
+.accueil-ciel .board-fond,
+.accueil-ciel .prayer-bar,
+.accueil-ciel section,
+.accueil-ciel .board-wrap,
+body:has(.accueil-ciel) .prayer-bar {
   background: transparent !important;
 }
+/* Le ciel doit traverser TOUT l'écran, du haut de la page à la barre du
+   bas — « plus aucun fond vert nulle part ». */
+body:has(.accueil-ciel) { background: transparent !important; }
 /* Les chiffres qui se lisent d'un coup d'œil — heures, distances — sont
    tabulaires : ils s'alignent d'une ligne à l'autre au lieu de danser. */
 .prayer-bar time, .prayer-bar-lieu, .chiffre-tabulaire {
