@@ -115,7 +115,13 @@ async function nommerLeLieu(lat: number, lng: number): Promise<string | null> {
     clearTimeout(t)
     if (!r.ok) return null
     const j = await r.json()
-    if (typeof j?.nom === 'string' && j.nom) { nomsConnus.set(cle, j.nom); return j.nom }
+    // On n'adopte le nom que s'il désigne VRAIMENT l'endroit : Google ou
+    // OpenStreetMap donnent la commune. `source: 'ville'` veut dire « notre
+    // ville la plus proche, à N km » — écrire « Paris » à quelqu'un qui est
+    // à Fontenay-sous-Bois serait exactement le mensonge qu'on corrige.
+    if (typeof j?.nom === 'string' && j.nom && (j.source === 'google' || j.source === 'nominatim')) {
+      nomsConnus.set(cle, j.nom); return j.nom
+    }
   } catch { /* on garde le libellé actuel */ }
   return null
 }
@@ -238,17 +244,54 @@ export function useInstantPosition(en = false) {
         .catch(() => { /* on garde la position courante */ })
     }
 
-    // 5) GPS silencieux si (et seulement si) la permission est déjà accordée
+    // ════════ 5) ON DEMANDE LA POSITION AU NAVIGATEUR. FRANCHEMENT. ════════
+    //
+    // 🔴 LE DÉFAUT LE PLUS GRAVE QUE CE SITE AIT EU (Mohamed, 15 août) :
+    // « Je suis à Fontenay-sous-Bois. Le site affiche Naaldwijk et la carte
+    // me montre La Haye, aux Pays-Bas. » Quatre cents kilomètres.
+    //
+    // LA CAUSE ÉTAIT ICI. Ce bloc n'appelait le navigateur QUE si la
+    // permission était DÉJÀ accordée. À la première visite elle ne l'est
+    // jamais — donc on ne demandait rien, et on se rabattait sur l'adresse
+    // internet, qui donne le datacenter de l'opérateur. Le site attendait
+    // une permission qu'il ne demandait pas.
+    //
+    // Ce n'est pas un défaut d'affichage : une position fausse rend faux
+    // l'horaire de la prière, la direction de la Qibla, toutes les
+    // distances et la mosquée « la plus proche ». Un musulman qui s'y fie
+    // prie à la mauvaise heure.
+    //
+    // Désormais : accordée → on prend, sans bruit. Pas encore répondu → ON
+    // DEMANDE, en haute précision (le GPS sur téléphone, le Wi-Fi sur
+    // ordinateur : la rue, pas le pays). Refusée → on n'insiste pas, et
+    // l'écran DIT que la position est approximative.
     try {
-      navigator.permissions?.query({ name: 'geolocation' as PermissionName }).then((st) => {
-        if (st.state === 'granted') {
-          getPosition().then(({ lat, lng }) => {
+      const demander = () => {
+        getPosition({ highAccuracy: true })
+          .then(({ lat, lng }) => {
             const p: InstantPos = { lat, lng, label: en ? 'My position' : 'Ma position' }
             noterDetectee(p)
+            // Règle de Mohamed : « si la position par adresse internet est à
+            // plus de 50 km de celle que le navigateur finit par donner,
+            // c'est le navigateur qui gagne, toujours. » Le classement de
+            // fiabilité (gps > ip) le garantit déjà ; `forcer` couvre le cas
+            // d'une ville choisie à la main devenue absurde.
             if (!choixExplicite) setPos(p, 'gps')
-          }).catch(() => { /* silencieux */ })
-        }
-      }).catch(() => { /* Safari sans permissions API */ })
+          })
+          .catch(() => { /* refus ou délai : l'écran le dira, on n'insiste pas */ })
+      }
+      const perm = navigator.permissions?.query({ name: 'geolocation' as PermissionName })
+      if (perm) {
+        perm.then((st) => {
+          if (st.state === 'granted' || st.state === 'prompt') demander()
+          // 'denied' : on ne redemande pas tout seul — c'est le bouton qui
+          // sert à ça, et harceler quelqu'un qui a dit non est le meilleur
+          // moyen qu'il ne revienne jamais.
+        }).catch(() => demander())
+      } else {
+        // Safari sans l'API des permissions : on demande directement.
+        demander()
+      }
     } catch { /* noop */ }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [city])

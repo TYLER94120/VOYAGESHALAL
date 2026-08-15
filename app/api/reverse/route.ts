@@ -31,6 +31,49 @@ function distKm(aLat: number, aLng: number, bLat: number, bLng: number) {
   return 6371 * 2 * Math.atan2(Math.sqrt(h), Math.sqrt(1 - h))
 }
 
+/** La phrase exacte de Google quand il refuse — jamais reformulée. On la
+ *  remonte telle quelle : « ne devine pas, ne contourne pas : rapporte la
+ *  phrase, Mohamed a la console sous la main ». */
+async function googleCommune(lat: number, lng: number): Promise<{ nom?: string; pays?: string; refus?: string }> {
+  const cle = process.env.GOOGLE_PLACES_KEY
+  if (!cle) return { refus: 'GOOGLE_PLACES_KEY absente de l\'environnement' }
+  const ac = new AbortController()
+  const t = setTimeout(() => ac.abort(), 4000)
+  try {
+    const u = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${lng}&language=fr&result_type=locality|postal_town|administrative_area_level_2&key=${cle}`
+    const r = await fetch(u, { signal: ac.signal })
+    const j = await r.json()
+    if (j.status !== 'OK') return { refus: `${j.status}${j.error_message ? ' — ' + j.error_message : ''}` }
+    const comp = j.results?.[0]?.address_components ?? []
+    const trouve = (t: string) => comp.find((c: { types: string[]; long_name: string }) => c.types.includes(t))?.long_name
+    const nom = trouve('locality') || trouve('postal_town') || trouve('administrative_area_level_2')
+    return nom ? { nom, pays: trouve('country') } : { refus: 'OK mais aucune commune dans la réponse' }
+  } catch (e) {
+    return { refus: String(e).slice(0, 140) }
+  } finally { clearTimeout(t) }
+}
+
+/** OpenStreetMap : gratuit, sans clé, et il connaît les communes. C'est
+ *  notre filet quand Google refuse — et il donne le MÊME niveau de détail. */
+async function nominatimCommune(lat: number, lng: number): Promise<{ nom?: string; pays?: string }> {
+  const ac = new AbortController()
+  const t = setTimeout(() => ac.abort(), 4000)
+  try {
+    // zoom=12 : la commune, pas le département. À zoom=10 Fontenay-sous-Bois
+    // remontait « Val-de-Marne » — un département n'est pas un endroit où
+    // l'on est.
+    const url = `https://nominatim.openstreetmap.org/reverse?format=json&zoom=12&lat=${lat}&lon=${lng}`
+    const r = await fetch(url, {
+      headers: { 'User-Agent': 'VoyagesHalal/1.0 (contact@voyageshalal.fr)', 'Accept-Language': 'fr,en' },
+      signal: ac.signal,
+    })
+    if (!r.ok) return {}
+    const a = (await r.json())?.address ?? {}
+    const nom = a.city || a.town || a.village || a.municipality || a.suburb
+    return nom ? { nom, pays: a.country } : {}
+  } catch { return {} } finally { clearTimeout(t) }
+}
+
 export async function GET(req: Request) {
   const u = new URL(req.url)
   const lat = parseFloat(u.searchParams.get('lat') || '')
@@ -39,7 +82,34 @@ export async function GET(req: Request) {
     return NextResponse.json({ error: 'lat et lng requis' }, { status: 400 })
   }
 
-  // 1) La plus proche de nos villes
+  // ════════ LA VRAIE COMMUNE D'ABORD ════════
+  //
+  // DÉFAUT CORRIGÉ LE 15 AOÛT. Cette route commençait par chercher la plus
+  // proche de NOS 354 villes dans un rayon de 60 km. Résultat pour quelqu'un
+  // à Fontenay-sous-Bois : « Paris », à dix kilomètres — une ville où il
+  // n'est pas. Le raccourci était gratuit et instantané, mais il répondait à
+  // une autre question que celle posée : « quelle est notre ville la plus
+  // proche ? » au lieu de « où suis-je ? ».
+  //
+  // Nos villes redescendent donc en DERNIER recours, et quand elles servent
+  // la réponse porte sa distance : on ne fait jamais passer « la ville la
+  // plus proche » pour « ta ville ».
+  const g = await googleCommune(lat, lng)
+  if (g.nom) {
+    return NextResponse.json(
+      { nom: g.nom, pays: g.pays ?? null, slug: null, distKm: 0, source: 'google' },
+      { headers: { 'Cache-Control': 'public, max-age=86400' } },
+    )
+  }
+  const n = await nominatimCommune(lat, lng)
+  if (n.nom) {
+    return NextResponse.json(
+      { nom: n.nom, pays: n.pays ?? null, slug: null, distKm: 0, source: 'nominatim', diagnostic: g.refus },
+      { headers: { 'Cache-Control': 'public, max-age=86400' } },
+    )
+  }
+
+  // Dernier recours : notre propre liste, et on DIT que c'est approximatif.
   let best: CityRef | null = null
   let bestD = Infinity
   for (const c of CITIES) {
@@ -48,34 +118,11 @@ export async function GET(req: Request) {
   }
   if (best && bestD <= RAYON_KM) {
     return NextResponse.json(
-      { nom: best.nom, pays: best.pays, slug: best.slug, distKm: Math.round(bestD), source: 'ville' },
+      { nom: best.nom, pays: best.pays, slug: best.slug, distKm: Math.round(bestD), source: 'ville', diagnostic: g.refus },
       { headers: { 'Cache-Control': 'public, max-age=86400' } },
     )
   }
 
-  // 2) Sinon le vrai nom du lieu (village, quartier) — le réseau ne bloque
-  //    jamais l'affichage : l'appelant garde son libellé si ça échoue.
-  try {
-    const url = `https://nominatim.openstreetmap.org/reverse?format=json&zoom=10&lat=${lat}&lon=${lng}`
-    const ac = new AbortController()
-    const t = setTimeout(() => ac.abort(), 4000)
-    const r = await fetch(url, {
-      headers: { 'User-Agent': 'VoyagesHalal/1.0 (contact@voyageshalal.fr)', 'Accept-Language': 'fr,en' },
-      signal: ac.signal,
-    })
-    clearTimeout(t)
-    if (r.ok) {
-      const j = await r.json()
-      const a = j?.address ?? {}
-      const nom = a.city || a.town || a.village || a.municipality || a.county || a.state
-      if (nom) {
-        return NextResponse.json(
-          { nom, pays: a.country ?? null, slug: null, distKm: 0, source: 'nominatim' },
-          { headers: { 'Cache-Control': 'public, max-age=86400' } },
-        )
-      }
-    }
-  } catch { /* pas de nom : l'appelant garde le sien */ }
-
-  return NextResponse.json({ nom: null, source: 'inconnu' }, { headers: { 'Cache-Control': 'no-store' } })
+  // Aucun nom sûr : on n'en invente pas.
+  return NextResponse.json({ nom: null, source: 'inconnu', diagnostic: g.refus }, { headers: { 'Cache-Control': 'no-store' } })
 }

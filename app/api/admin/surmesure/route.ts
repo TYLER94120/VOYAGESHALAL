@@ -41,6 +41,8 @@ const COMPTEURS: [string, string][] = [
   ['surmesure:cat-activite', 'bouton 🎯 Que faire'],
   ['surmesure:relances-sautees', 'relances sautées (« passe »)'],
   ['surmesure:profil-cree', 'profils alimentaires créés'],
+  ['surmesure:vue-carte', 'passages accueil → carte'],
+  ['surmesure:vue-liste', 'retours carte → liste'],
 ]
 
 export async function GET(req: Request) {

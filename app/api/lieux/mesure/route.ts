@@ -29,6 +29,10 @@ const AUTORISEES = new Set([
   // 400 et ne comptaient rien. Une mesure qu'on croit avoir est pire que
   // pas de mesure du tout.
   'barre-ville', 'barre-autour',
+  // 📍 Le passage à la vue carte depuis l'accueil : c'est ce qui dira si
+  // les gens veulent la liste ou la carte, et donc laquelle mérite le
+  // prochain effort.
+  'vue-carte', 'vue-liste',
 ])
 
 let redis: Redis | null | undefined

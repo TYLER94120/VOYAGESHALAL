@@ -87,7 +87,7 @@ const euros = (p?: number) => (p ? '€'.repeat(Math.min(4, p)) : null)
  *  voit immédiatement — et tout ce que Mohamed lit est en français. */
 const deVille = (nom: string) => (/^[aeiouyàâäéèêëîïôöûüh]/i.test(nom) ? `d'${nom}` : `de ${nom}`)
 
-export default function SurMesure({ posInitiale, destination: destinationProp, en = false, fondu = false, titrePage = false }: {
+export default function SurMesure({ posInitiale, destination: destinationProp, en = false, fondu = false, titrePage = false, onResultats, selectionId, onSelection, phraseInitiale }: {
   posInitiale?: { lat: number; lng: number; ville?: string | null } | null
   destination?: { lat: number; lng: number; nom: string } | null
   en?: boolean
@@ -100,6 +100,19 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
    *  séparée (Mohamed, 16 août). Le H1 reste donc rendu — Google le voit
    *  toujours — mais il ne coûte plus un écran entier. */
   titrePage?: boolean
+  /** 🗺️ LA VUE CARTE — même moteur, autre affichage.
+   *  Ordre de Mohamed, 15 août : « cette page appelle LE MÊME MOTEUR que
+   *  partout ailleurs, une seule source de vérité, aucun chemin
+   *  parallèle. » La page carte ne refait donc pas de recherche : elle
+   *  écoute les fiches que ce composant vient de trouver, et pose une
+   *  épingle par fiche. Rien d'autre ne peuple la carte. */
+  onResultats?: (f: Fiche[]) => void
+  /** L'épingle touchée sur la carte : la fiche correspondante se met en
+   *  avant ici. C'est l'autre sens du lien. */
+  selectionId?: string | null
+  onSelection?: (id: string | null) => void
+  /** La phrase apportée par l'accueil (?q=…) : on la lance toute seule. */
+  phraseInitiale?: string
 }) {
   const router = useRouter()
   const [phrase, setPhrase] = useState('')
@@ -143,6 +156,16 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
   const [proposerMemoire, setProposerMemoire] = useState<Partial<Profil> | null>(null)
   const [relaches, setRelaches] = useState<string[]>([])
   useEffect(() => { setProfil(lireProfil()) }, [])
+  // 🔗 La recherche apportée par l'accueil part toute seule : « rien à
+  // retaper » (§2.5). Une seule fois, au montage.
+  const lancee = useRef(false)
+  useEffect(() => {
+    if (lancee.current || !phraseInitiale?.trim()) return
+    lancee.current = true
+    setPhrase(phraseInitiale)
+    comprendre(phraseInitiale)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [phraseInitiale])
   const [ex, setEx] = useState(0)
   const enCours = useRef(false)
   const EXEMPLES = en ? EXEMPLES_EN : EXEMPLES_FR
@@ -271,6 +294,8 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
 
       const trois = corps.fiches ?? []
       setFiches(trois); setAutres(corps.autres ?? []); setSource(corps.source ?? ''); setEtatGoogle(corps.etatGoogle ?? '')
+      // La carte se peuple d'ici, et de nulle part ailleurs.
+      onResultats?.(trois)
       setMode(corps.mode ?? 'voiture'); setPlafond(corps.plafondMin ?? 15); setPlusLoin(corps.plusLoin ?? null); setRelaches(corps.relaches ?? [])
       setEtape('resultat')
       if (trois.length) redigerIA(trois, c, corps.mode ?? 'voiture', c.categorie === 'mosquee' ? avantPriere(pos) : null, !!lieu)
@@ -513,6 +538,27 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
               {t(fr, an)}
             </button>
           ))}
+          {/* 📍 « AUTOUR DE MOI » — LA MÊME RECHERCHE, EN VUE CARTE.
+              Ordre de Mohamed, 15 août : « Je veux que le visiteur
+              choisisse : la liste, ou la carte. Et il EMPORTE ce qui a
+              déjà été fait — rien à retaper. » Le bouton transporte donc
+              la phrase et la catégorie dans l'adresse ; la carte s'ouvre
+              avec la recherche déjà lancée. */}
+          {titrePage && (
+            <button onClick={() => {
+              compter('vue-carte')
+              const p = new URLSearchParams()
+              if (phrase.trim()) p.set('q', phrase.trim())
+              if (aide?.cat) p.set('cat', aide.cat)
+              else if (crit.categorie !== 'manger' || aEcrit) p.set('cat', crit.categorie)
+              router.push(`/autour-de-moi${p.toString() ? `?${p}` : ''}`)
+            }}
+              aria-label={t('Voir sur la carte, autour de moi', 'See on the map, around me')}
+              style={{ ...puce(false), flex: '0 0 auto', padding: '0 12px', fontSize: 16 }}>
+              📍
+            </button>
+          )}
+
           {/* 👤 16 août — LE PROFIL REJOINT LA RANGÉE, EN PASTILLE.
               Il occupait une rangée de 44 px à lui seul sur le premier
               écran. Ce n'est pas une quatrième catégorie : c'est la
@@ -813,7 +859,13 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
 
         {fiches.length > 0 && (
           <div style={{ marginTop: 14, display: 'flex', flexDirection: 'column', gap: 12 }}>
-            {fiches.map((f, i) => <Carte key={f.id ?? i} f={f} en={en} mode={mode} destination={!!destination} allergie={mentionneAllergie(profil)} onItineraire={() => compter('itineraires')} />)}
+            {fiches.map((f, i) => (
+              <Carte key={f.id ?? i} f={f} en={en} mode={mode} destination={!!destination}
+                allergie={mentionneAllergie(profil)}
+                choisie={!!f.id && f.id === selectionId}
+                onChoisir={() => { onSelection?.(f.id ?? null); compter('fiches-ouvertes') }}
+                onItineraire={() => compter('itineraires')} />
+            ))}
           </div>
         )}
 
@@ -889,14 +941,17 @@ function Cadre({ fondu, titre, children }: { fondu: boolean; titre: string; chil
 }
 
 /** UNE FICHE = une carte qui respire, la photo la porte (§2 et §6). */
-function Carte({ f, en, mode, destination, allergie, onItineraire }: { f: Fiche; en: boolean; mode: Mode; destination: boolean; allergie: boolean; onItineraire: () => void }) {
+function Carte({ f, en, mode, destination, allergie, choisie = false, onChoisir, onItineraire }: { f: Fiche; en: boolean; mode: Mode; destination: boolean; allergie: boolean; choisie?: boolean; onChoisir?: () => void; onItineraire: () => void }) {
   const t = (fr: string, an: string) => (en ? an : fr)
   // §5.1 et §5.2 : le temps est TOUJOURS accompagné de son mode, et
   // jamais « 91 min à pied » — au-delà de 20 minutes, on bascule sur la
   // voiture. §5.6 : sur une fiche ville, le repère est le centre.
   const dist = trajet(f.distanceM, mode, en, destination)
   return (
-    <article style={{ borderRadius: 16, border: '1px solid rgba(253,250,243,0.16)', overflow: 'hidden', background: 'rgba(255,255,255,0.04)' }}>
+    // 🔗 La fiche choisie porte le même liseré doré que son épingle
+    // grossit sur la carte : c'est une seule sélection, vue des deux côtés.
+    <article onClick={onChoisir} aria-current={choisie || undefined} data-fiche={f.id}
+      style={{ borderRadius: 16, border: `1px solid ${choisie ? 'var(--or)' : 'rgba(253,250,243,0.16)'}`, boxShadow: choisie ? '0 0 0 3px rgba(201,168,76,0.28)' : 'none', overflow: 'hidden', background: 'rgba(255,255,255,0.04)', cursor: onChoisir ? 'pointer' : 'default', scrollMarginTop: 8 }}>
       {f.photos?.length ? (
         <div style={{ display: 'flex', gap: 2 }}>
           {f.photos.slice(0, 2).map((src, i) => (
