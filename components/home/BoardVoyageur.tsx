@@ -91,11 +91,16 @@ export default function BoardVoyageur({
   // Trois sources alimentent cette tuile ; il suffit qu'une seule reste
   // pendue (réseau coupé en plein appel, serveur qui ne répond ni ne
   // ferme) pour que `mosquee` demeure `undefined` à jamais. Ce délai est
-  // la garantie de dernier recours : au bout de douze secondes, on
-  // affiche ce qu'on a — et si l'on n'a rien, on le DIT.
+  // la garantie de dernier recours : on affiche ce qu'on a — et si l'on n'a
+  // rien, on le DIT.
+  //
+  // 🔴 16 août : douze secondes, c'était encore trop. Sur TOUTES les
+  // captures de Mohamed depuis midi, la ligne « Recherche du lieu de prière
+  // le plus proche… » tournait toujours. Six secondes : au-delà, personne
+  // n'attend, il conclut que le site est cassé — et il a raison.
   const [delaiDepasse, setDelaiDepasse] = useState(false)
   useEffect(() => {
-    const t = setTimeout(() => setDelaiDepasse(true), 12_000)
+    const t = setTimeout(() => setDelaiDepasse(true), 6_000)
     return () => clearTimeout(t)
   }, [])
   const [resto, setResto] = useState<Lieu | null | undefined>(undefined)

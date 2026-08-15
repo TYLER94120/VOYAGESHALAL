@@ -39,9 +39,33 @@ export interface FicheEcran {
 const SERIF = "Georgia,'Iowan Old Style','Times New Roman',serif"
 
 function minutesAPied(m: number) { return Math.max(1, Math.round(m / 75)) }
+function distanceLisible(m: number) { return m < 1000 ? `${m} m` : `${(m / 1000).toFixed(1)} km` }
+
+/** La fiche compacte du modèle : vignette 48 px coins 13 px, nom 15,5 px,
+ *  infos 12,5 px. Même objet en secondaire et sous la Qibla la nuit. */
+function FicheMini({ f }: { f: FicheEcran }) {
+  return (
+    <div style={{ display: 'flex', gap: 12, alignItems: 'center', background: 'rgba(255,255,255,.07)', borderRadius: 16, padding: '11px 13px', border: '1px solid rgba(255,255,255,.1)' }}>
+      <div style={{ width: 48, height: 48, flex: '0 0 auto', borderRadius: 13, overflow: 'hidden', background: 'linear-gradient(140deg,#2C4A7A,#0D1830)' }}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        {f.photos?.[0] && <img src={f.photos[0]} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />}
+      </div>
+      <div style={{ minWidth: 0 }}>
+        <p style={{ fontFamily: SERIF, fontSize: 16, margin: '0 0 2px', color: '#fff', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{f.nom}</p>
+        <p style={{ fontSize: 12.5, margin: 0, color: 'rgba(255,255,255,.82)' }}>
+          {f.note != null && <span style={{ color: '#FFC978', fontWeight: 700 }}>★ {f.note} · </span>}
+          {minutesAPied(f.distanceM)} min à pied · {distanceLisible(f.distanceM)}
+          {f.ouvert === true && <span style={{ color: '#4FD69C' }}> · ouvert</span>}
+          {f.ouvert === false && <span style={{ color: 'rgba(255,255,255,.6)' }}> · fermé</span>}
+        </p>
+      </div>
+    </div>
+  )
+}
 
 export default function EcranCiel({
   ciel, lieu, exacte, priere, fiches, ruban, onOuvrirHoraires, horairesOuverts, horaires, qibla,
+  mode, verdict,
 }: {
   ciel: keyof typeof CIELS
   lieu: string
@@ -53,6 +77,15 @@ export default function EcranCiel({
   horairesOuverts: boolean
   horaires: { nom: string; heure: string; courante: boolean }[]
   qibla: { deg: number; dir: string } | null
+  /**
+   * 🔴 CE QUE L'HEURE CHANGE — les quatre écrans du modèle.
+   *   nuit    : la Qibla seule. « Personne ne cherche à dîner à 4 h. »
+   *   priere  : la mosquée domine, et on ne filtre pas une mosquée.
+   *   voyage  : le verdict d'arrivée, en texte, avec ses trois jauges.
+   *   normal  : la réponse, puis les quatre portes de même poids.
+   */
+  mode: 'nuit' | 'priere' | 'voyage' | 'normal'
+  verdict: { ville: string; titre: string; lignes: string[]; attention: string | null; jauges: { nom: string; note: number | null }[] } | null
 }) {
   const accent = CIELS[ciel].accent
   const [filtres, setFiltres] = useState<string[]>([])
@@ -109,8 +142,65 @@ export default function EcranCiel({
         </div>
       )}
 
-      {/* ③ LA RÉPONSE — la seule chose dominante de l'écran. */}
-      {tete ? (
+      {/* ③ LA RÉPONSE — la seule chose dominante de l'écran.
+          Sa forme change avec le moment : la Qibla la nuit, le verdict
+          d'arrivée en voyage, une adresse le reste du temps. */}
+
+      {mode === 'nuit' && (
+        <>
+          <article style={{ borderRadius: 22, overflow: 'hidden', background: 'rgba(255,255,255,.09)', border: '1px solid rgba(255,255,255,.16)' }}>
+            <div style={{ fontSize: 11.5, fontWeight: 700, letterSpacing: '.1em', textTransform: 'uppercase', padding: '9px 16px', background: accent, color: '#141018' }}>
+              🧭 Tourne-toi vers La Mecque
+            </div>
+            <div style={{ textAlign: 'center', padding: '26px 16px 22px' }}>
+              <p style={{ fontFamily: SERIF, fontSize: 56, margin: 0, lineHeight: 1, color: '#fff' }}>{qibla?.deg ?? '—'}°</p>
+              <p style={{ fontSize: 16, margin: '8px 0 0', color: 'rgba(255,255,255,.82)' }}>
+                {qibla?.dir ?? ''} · depuis ta position {exacte ? 'exacte' : 'approximative'}
+              </p>
+              <Link href="/qibla" style={{ display: 'block', marginTop: 13, borderRadius: 16, padding: 14, fontSize: 15.5, fontWeight: 700, background: accent, color: '#141018', textDecoration: 'none', minHeight: 56, boxSizing: 'border-box' }}>
+                🧭 Ouvrir la boussole
+              </Link>
+            </div>
+          </article>
+          {/* Une seule fiche : la mosquée la plus proche. Rien d'autre — et
+              on dit pourquoi, plutôt que de laisser un écran vide. */}
+          {tete && <FicheMini f={tete} />}
+          <p style={{ fontSize: 12.5, color: 'rgba(255,255,255,.66)', margin: 0 }}>
+            Le reste du site attend qu&apos;il fasse jour.
+          </p>
+        </>
+      )}
+
+      {mode === 'voyage' && verdict && (
+        <article style={{ borderRadius: 22, overflow: 'hidden', background: 'rgba(255,255,255,.09)', border: '1px solid rgba(255,255,255,.16)' }}>
+          <div style={{ fontSize: 11.5, fontWeight: 700, letterSpacing: '.1em', textTransform: 'uppercase', padding: '9px 16px', background: accent, color: '#141018' }}>
+            ✦ Ton premier soir à {verdict.ville}
+          </div>
+          <div style={{ padding: '14px 16px 16px' }}>
+            <h2 style={{ fontFamily: SERIF, fontSize: 24, fontWeight: 400, margin: '0 0 8px', color: '#fff', lineHeight: 1.2 }}>{verdict.titre}</h2>
+            {verdict.lignes.map((l) => (
+              <p key={l} style={{ fontSize: 16, lineHeight: 1.5, margin: '0 0 6px', color: 'rgba(255,255,255,.82)' }}>{l}</p>
+            ))}
+            {verdict.attention && (
+              <p style={{ fontSize: 12.5, lineHeight: 1.4, margin: '8px 0 0', color: 'rgba(255,255,255,.66)' }}>
+                ⚠ <b style={{ color: '#FFC978', fontWeight: 600 }}>Le point d&apos;attention :</b> {verdict.attention}
+              </p>
+            )}
+            <div style={{ display: 'flex', gap: 8, marginTop: 14 }}>
+              {verdict.jauges.map((j) => (
+                <div key={j.nom} style={{ flex: 1, background: 'rgba(0,0,0,.3)', borderRadius: 14, padding: '11px 7px', textAlign: 'center', fontSize: 12.5, color: 'rgba(255,255,255,.7)' }}>
+                  {j.nom}
+                  <b style={{ display: 'block', fontFamily: SERIF, fontSize: 20, fontWeight: 400, marginTop: 3, color: j.note == null ? 'rgba(255,255,255,.5)' : j.note >= 8 ? '#4FD69C' : '#FFC978' }}>
+                    {j.note ?? '—'}
+                  </b>
+                </div>
+              ))}
+            </div>
+          </div>
+        </article>
+      )}
+
+      {(mode === 'normal' || mode === 'priere') && (tete ? (
         <article style={{ borderRadius: 22, overflow: 'hidden', background: 'rgba(255,255,255,.09)', border: '1px solid rgba(255,255,255,.16)' }}>
           <div style={{ fontSize: 11.5, fontWeight: 700, letterSpacing: '.1em', textTransform: 'uppercase', padding: '9px 16px', background: accent, color: '#141018' }}>
             {ruban}
@@ -141,7 +231,7 @@ export default function EcranCiel({
               target="_blank" rel="noopener noreferrer"
               style={{ display: 'block', marginTop: 13, borderRadius: 16, padding: 14, textAlign: 'center', fontSize: 15.5, fontWeight: 700, background: accent, color: '#141018', textDecoration: 'none', minHeight: 56, boxSizing: 'border-box' }}
             >
-              🚶 Itinéraire
+              🚶 {mode === 'priere' ? `Y aller — ${minutesAPied(tete.distanceM)} min` : 'Itinéraire'}
             </a>
           </div>
         </article>
@@ -151,28 +241,13 @@ export default function EcranCiel({
         <p style={{ background: 'rgba(255,255,255,.07)', border: '1px solid rgba(255,255,255,.1)', borderRadius: 16, padding: '16px', fontSize: 16, color: 'rgba(255,255,255,.82)', margin: 0 }}>
           On cherche les adresses autour de toi. Si rien n&apos;arrive d&apos;ici quelques secondes, c&apos;est qu&apos;on n&apos;a pas pu joindre nos sources — et on te le dira franchement plutôt que de faire tourner un rond.
         </p>
-      )}
-
-      {/* ④ UNE OU DEUX FICHES SECONDAIRES */}
-      {suite.slice(0, 2).map((f) => (
-        <div key={f.id ?? f.nom} style={{ display: 'flex', gap: 12, alignItems: 'center', background: 'rgba(255,255,255,.07)', borderRadius: 16, padding: '11px 13px', border: '1px solid rgba(255,255,255,.1)' }}>
-          <div style={{ width: 48, height: 48, flex: '0 0 auto', borderRadius: 13, overflow: 'hidden', background: 'linear-gradient(140deg,#2C4A7A,#0D1830)' }}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            {f.photos?.[0] && <img src={f.photos[0]} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />}
-          </div>
-          <div style={{ minWidth: 0 }}>
-            <p style={{ fontFamily: SERIF, fontSize: 16, margin: '0 0 2px', color: '#fff', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{f.nom}</p>
-            <p style={{ fontSize: 12.5, margin: 0, color: 'rgba(255,255,255,.82)' }}>
-              {f.note != null && <span style={{ color: '#FFC978', fontWeight: 700 }}>★ {f.note} </span>}
-              · {f.distanceM < 1000 ? `${f.distanceM} m` : `${(f.distanceM / 1000).toFixed(1)} km`}
-              {f.ouvert === true && <span style={{ color: '#4FD69C' }}> · ouvert</span>}
-            </p>
-          </div>
-        </div>
       ))}
 
+      {/* ④ UNE OU DEUX FICHES SECONDAIRES */}
+      {mode !== 'nuit' && suite.slice(0, 2).map((f) => <FicheMini key={f.id ?? f.nom} f={f} />)}
+
       {/* ⑤ LES TROIS FILTRES */}
-      {dispo.length > 0 && (
+      {mode === 'normal' && dispo.length > 0 && (
         <div style={{ display: 'flex', gap: 7 }}>
           {dispo.map((f) => {
             const on = filtres.includes(f.id)
@@ -187,14 +262,21 @@ export default function EcranCiel({
         </div>
       )}
 
-      {/* ⑥ LES RACCOURCIS, discrets */}
-      <div style={{ display: 'flex', gap: 7 }}>
-        {[['🕌 Prier', '/mosquee-proche'], ['🎯 Que faire', '/autour-de-moi?cat=activite'], ['📍 Carte', '/autour-de-moi']].map(([lib, href]) => (
-          <Link key={href} href={href} style={{ flex: 1, textAlign: 'center', fontSize: 16, fontWeight: 600, color: 'rgba(255,255,255,.72)', border: '1px solid rgba(255,255,255,.14)', borderRadius: 14, padding: '10px 3px', textDecoration: 'none', minHeight: 56, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      {/* ⑥ LES QUATRE PORTES — Mohamed, 16 août : « VoyagesHalal n'est pas
+          une appli de restauration. S'ouvrir sur un traiteur, c'est perdre
+          le voyage ET la prière d'un coup. » La réponse ne règne donc plus
+          seule : sous elle, de même poids, les autres portes du site.
+          En mode nuit, elles disparaissent avec le reste : à 4 h du matin,
+          il n'y a rien à proposer d'autre que la Qibla. */}
+      {mode !== 'nuit' && (
+      <div style={{ display: 'flex', gap: 7, flexWrap: 'wrap' }}>
+        {[['🕌 Prier', '/mosquee-proche'], ['🎯 Que faire', '/autour-de-moi?cat=activite'], ['🌍 Voyages', '/destinations'], ['📍 Carte', '/autour-de-moi']].map(([lib, href]) => (
+          <Link key={href} href={href} style={{ flex: '1 1 40%', textAlign: 'center', fontSize: 16, fontWeight: 600, color: 'rgba(255,255,255,.82)', border: '1px solid rgba(255,255,255,.14)', borderRadius: 14, padding: '10px 3px', textDecoration: 'none', minHeight: 56, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             {lib}
           </Link>
         ))}
       </div>
+      )}
     </div>
   )
 }
