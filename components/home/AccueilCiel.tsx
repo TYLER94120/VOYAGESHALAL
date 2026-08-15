@@ -114,8 +114,21 @@ export default function AccueilCiel({ posInitiale, en }: {
     return { categorie: undefined, ruban: '', mode: 'portes' as const }
   }, [calc?.minutes, heure, dejaVenu])
 
+  // 🔴 L'ORDRE DE L'ÉCRAN CHANGE — décision de Mohamed du 15 août au soir :
+  // « ① la barre de recherche, l'élément DOMINANT de la page · ② trois
+  // onglets · ③ une bande FINE en bas pour les horaires et la Qibla. C'est
+  // une information de référence, pas le sujet de la page. »
+  // La recherche passe donc en tête, la prière descend en bande fine.
   return (
     <>
+      <div style={{ padding: '10px 14px 0' }}>
+        <SurMesure
+          fondu en={en} titrePage
+          posInitiale={posInitiale ? { lat: posInitiale.lat, lng: posInitiale.lng, ville: posInitiale.ville ?? undefined } : null}
+          chercheDesLOuverture={categorie}
+          onResultats={(f) => setFiches(f as unknown as FicheEcran[])}
+        />
+      </div>
       <EcranCiel
         ciel={ciel}
         lieu={pos?.label ?? posInitiale?.ville ?? 'Ta position'}
@@ -130,16 +143,6 @@ export default function AccueilCiel({ posInitiale, en }: {
         mode={mode}
         verdict={null}
       />
-      {/* Le champ libre reste — pour tout ce qui sort des catégories. Et
-          c'est lui qui porte le moteur : un seul chemin vers /api/lieux. */}
-      <div style={{ padding: '10px 14px 0' }}>
-        <SurMesure
-          fondu en={en} titrePage
-          posInitiale={posInitiale ? { lat: posInitiale.lat, lng: posInitiale.lng, ville: posInitiale.ville ?? undefined } : null}
-          chercheDesLOuverture={categorie}
-          onResultats={(f) => setFiches(f as unknown as FicheEcran[])}
-        />
-      </div>
     </>
   )
 }

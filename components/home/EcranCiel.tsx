@@ -110,41 +110,6 @@ export default function EcranCiel({
         </span>
       </div>
 
-      {/* ② LA PRIÈRE, EN UNE LIGNE. Les cinq horaires prenaient 40 % de
-          l'écran pour deux secondes de lecture : ils sont repliés, et le
-          chevron les déplie avec la Qibla. */}
-      <button
-        onClick={onOuvrirHoraires}
-        aria-expanded={horairesOuverts}
-        style={{ display: 'flex', alignItems: 'baseline', gap: 9, padding: '4px 2px', background: 'none', border: 'none', width: '100%', textAlign: 'left', cursor: 'pointer', minHeight: 56 }}
-      >
-        <span style={{ fontSize: 12, letterSpacing: '.2em', textTransform: 'uppercase', fontWeight: 700, color: 'rgba(255,255,255,.66)' }}>
-          {priere?.nom ?? '—'}
-        </span>
-        <span style={{ fontFamily: SERIF, fontSize: 26, lineHeight: 1, color: priere?.urgent ? '#FFC978' : '#fff' }}>
-          {priere?.reste ?? '…'}
-        </span>
-        <span style={{ marginLeft: 'auto', fontSize: 15, color: 'rgba(255,255,255,.5)' }} aria-hidden>{horairesOuverts ? '⌃' : '⌄'}</span>
-      </button>
-
-      {horairesOuverts && (
-        <div style={{ background: 'rgba(255,255,255,.07)', border: '1px solid rgba(255,255,255,.1)', borderRadius: 16, padding: '11px 13px' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', gap: 6 }}>
-            {horaires.map((h) => (
-              <div key={h.nom} style={{ textAlign: 'center', flex: 1 }}>
-                <p style={{ margin: 0, fontSize: 12, color: h.courante ? accent : 'rgba(255,255,255,.66)', fontWeight: 700 }}>{h.nom}</p>
-                <p style={{ margin: '2px 0 0', fontSize: 16, color: '#fff', fontFamily: SERIF }}>{h.heure}</p>
-              </div>
-            ))}
-          </div>
-          {qibla && (
-            <p style={{ margin: '10px 0 0', fontSize: 13.5, color: 'rgba(255,255,255,.82)' }}>
-              🧭 Qibla <b style={{ color: '#fff' }}>{qibla.deg}°</b> · {qibla.dir}
-            </p>
-          )}
-        </div>
-      )}
-
       {/* ③ LA RÉPONSE — la seule chose dominante de l'écran.
           Sa forme change avec le moment : la Qibla la nuit, le verdict
           d'arrivée en voyage, une adresse le reste du temps. */}
@@ -280,7 +245,13 @@ export default function EcranCiel({
           seule : sous elle, de même poids, les autres portes du site.
           En mode nuit, elles disparaissent avec le reste : à 4 h du matin,
           il n'y a rien à proposer d'autre que la Qibla. */}
-      {mode !== 'nuit' && (
+      {/* 🔴 LES QUATRE PORTES SONT SUPPRIMÉES ICI. Elles doublaient les
+          trois onglets Prier · Manger · Que faire, qui sont juste au-dessus
+          et qui, eux, RÉPONDENT sans quitter la page. « Aujourd'hui Prier
+          existe deux fois : le visiteur n'y voit pas un choix, il y voit
+          qu'il n'a pas compris. » Les onglets gagnent, les portes sortent.
+          La navigation complète reste dans la barre du bas. */}
+      {false && (
       <div style={{ display: 'flex', gap: 7, flexWrap: 'wrap' }}>
         {[['🕌 Prier', '/mosquee-proche'], ['🎯 Que faire', '/autour-de-moi?cat=activite'], ['🌍 Voyages', '/destinations'], ['📍 Carte', '/autour-de-moi']].map(([lib, href]) => (
           <Link key={href} href={href} style={{ flex: '1 1 40%', textAlign: 'center', fontSize: 16, fontWeight: 600, color: 'rgba(255,255,255,.82)', border: '1px solid rgba(255,255,255,.14)', borderRadius: 14, padding: '10px 3px', textDecoration: 'none', minHeight: 56, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -289,6 +260,46 @@ export default function EcranCiel({
         ))}
       </div>
       )}
+
+      {/* ③ LA BANDE FINE DE PRIÈRE — EN BAS, ET DISCRÈTE.
+          Décision de Mohamed du 15 août au soir : « une bande FINE en bas :
+          les cinq horaires avec la prochaine mise en valeur, et la Qibla.
+          C'est une information de référence, PAS le sujet de la page.
+          Jamais plus d'un dixième de l'écran. »
+          Elle occupait le tiers du haut ; elle ferme maintenant l'écran,
+          repliée, et se déplie au tap. */}
+      <button
+        onClick={onOuvrirHoraires}
+        aria-expanded={horairesOuverts}
+        style={{ display: 'flex', alignItems: 'baseline', gap: 9, padding: '4px 2px', background: 'none', border: 'none', width: '100%', textAlign: 'left', cursor: 'pointer', minHeight: 56 }}
+      >
+        <span style={{ fontSize: 12, letterSpacing: '.2em', textTransform: 'uppercase', fontWeight: 700, color: 'rgba(255,255,255,.66)' }}>
+          {priere?.nom ?? '—'}
+        </span>
+        <span style={{ fontFamily: SERIF, fontSize: 26, lineHeight: 1, color: priere?.urgent ? '#FFC978' : '#fff' }}>
+          {priere?.reste ?? '…'}
+        </span>
+        <span style={{ marginLeft: 'auto', fontSize: 15, color: 'rgba(255,255,255,.5)' }} aria-hidden>{horairesOuverts ? '⌃' : '⌄'}</span>
+      </button>
+
+      {horairesOuverts && (
+        <div style={{ background: 'rgba(255,255,255,.07)', border: '1px solid rgba(255,255,255,.1)', borderRadius: 16, padding: '11px 13px' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', gap: 6 }}>
+            {horaires.map((h) => (
+              <div key={h.nom} style={{ textAlign: 'center', flex: 1 }}>
+                <p style={{ margin: 0, fontSize: 12, color: h.courante ? accent : 'rgba(255,255,255,.66)', fontWeight: 700 }}>{h.nom}</p>
+                <p style={{ margin: '2px 0 0', fontSize: 16, color: '#fff', fontFamily: SERIF }}>{h.heure}</p>
+              </div>
+            ))}
+          </div>
+          {qibla && (
+            <p style={{ margin: '10px 0 0', fontSize: 13.5, color: 'rgba(255,255,255,.82)' }}>
+              🧭 Qibla <b style={{ color: '#fff' }}>{qibla.deg}°</b> · {qibla.dir}
+            </p>
+          )}
+        </div>
+      )}
+
     </div>
   )
 }
