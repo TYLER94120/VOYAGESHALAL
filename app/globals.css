@@ -1111,6 +1111,21 @@ body:has(.autour-plein) { padding-bottom: 0 !important; }
   background-attachment: fixed;
   transition: background 400ms ease;
 }
+/* 🔴 LE CIEL ÉTAIT LÀ, MAIS CACHÉ. Défaut trouvé par Mohamed le 16 août sur
+   sa capture : le dégradé était bien posé sur la page, et chaque section
+   par-dessus repeignait son propre `background: var(--nuit)` opaque — un
+   vert plein qui masquait entièrement le ciel. Poser une couleur sur un
+   parent ne sert à rien si tous ses enfants en peignent une autre.
+   Sur l'accueil, ces fonds pleins s'effacent : le ciel traverse. Les
+   CARTES gardent le leur (blanc à 9 %), c'est ce qui les détache du fond
+   — et elles ont été calculées pour tenir sur les cinq teintes. */
+.accueil-ciel > section,
+.accueil-ciel > div,
+.accueil-ciel .rangee-bas,
+.accueil-ciel .rangee-bas > section,
+.accueil-ciel .board-fond {
+  background: transparent !important;
+}
 /* Les chiffres qui se lisent d'un coup d'œil — heures, distances — sont
    tabulaires : ils s'alignent d'une ligne à l'autre au lieu de danser. */
 .prayer-bar time, .prayer-bar-lieu, .chiffre-tabulaire {
