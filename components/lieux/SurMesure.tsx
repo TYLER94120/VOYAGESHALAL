@@ -301,8 +301,16 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
       setProposerMemoire(trouve)
     }
     const r = relance(c, en)
-    if (r) setEtape('relance')
-    else lancer(c, txt.trim().length > 0, false, ville)
+    if (r) {
+      setEtape('relance')
+      // 🔴 « Je clique sur Trouver, RIEN ne se passe. » La cause : quand
+      // une relance était nécessaire, la question s'affichait plus bas
+      // dans la page et la vue ne bougeait pas. Le clic AVAIT été pris,
+      // mais rien ne le montrait — donc rien ne s'était passé, du point de
+      // vue du seul qui compte. La vue descend maintenant sur la réponse
+      // dans TOUS les cas, question comprise.
+      requestAnimationFrame(() => zoneResultats.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }))
+    } else lancer(c, txt.trim().length > 0, false, ville)
   }
 
   async function lancer(c: Criteres, ecrit: boolean, forcerGPS = false, ville?: { lat: number; lng: number; nom: string } | null) {
@@ -745,6 +753,14 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
           </div>
         )}
 
+        {/* 📍 L'ANCRE DE LA RÉPONSE. Elle est placée ICI, avant « ce qu'on
+            a compris », avant la relance et avant les fiches : quelle que
+            soit l'issue du clic — une question, un squelette ou trois
+            adresses —, le visiteur la voit. « Je clique sur Trouver, RIEN
+            ne se passe » venait de là : le clic était pris, mais rien ne
+            le montrait, et c'est la même chose. */}
+        <div ref={zoneResultats} style={{ scrollMarginTop: 12 }} />
+
         {/* ── 2. CE QU'ON A COMPRIS, CORRIGEABLE ────────────────── */}
         {(aEcrit || ouvrirQcm) && etape !== 'cherche' && (
           <div style={{ marginTop: 12, paddingTop: 10, borderTop: '1px solid rgba(253,250,243,0.12)' }}>
@@ -823,10 +839,6 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
           )
         })()}
 
-        {/* 📍 L'ANCRE DE LA RÉPONSE. C'est ici que la vue se place dès que
-            les fiches arrivent — et dès la recherche, pour que le squelette
-            soit visible : le visiteur voit que son clic a été pris. */}
-        <div ref={zoneResultats} style={{ scrollMarginTop: 12 }} />
 
         {/* ── 4. CHARGEMENT : un squelette, jamais un blanc ─────── */}
         {etape === 'cherche' && (

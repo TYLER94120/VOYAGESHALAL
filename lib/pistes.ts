@@ -7,6 +7,23 @@ import type { Categorie, Criteres } from '@/lib/criteres'
 // des pistes concrètes et cliquables, générées à partir du CONTEXTE RÉEL
 // du moment : l'heure, la prochaine prière, le jour de la semaine.
 //
+// ════════ 🔴 UNE PISTE DOIT CHANGER CE QU'ON DEMANDE À GOOGLE ════════
+//
+// Défaut de Mohamed, 15 août : « "Petit prix", "tout près", "en famille",
+// "pour s'asseoir" : quatre intentions différentes, quatre fois la même
+// liste. Les boutons sont décoratifs. »
+//
+// LA CAUSE : chaque piste ne remplissait que des critères de FILTRAGE
+// (budget, famille, mode). Or ces critères n'entrent pas dans la requête
+// envoyée à Google — ils ne servent qu'à trier ce qu'il a déjà rendu. Les
+// quatre boutons partaient donc sur la même recherche géographique, et
+// filtraient les mêmes quinze adresses de quatre façons voisines.
+//
+// Chaque piste porte désormais des MOTS. Ces mots partent tels quels chez
+// Google (via `requeteGoogle`), donc les quatre boutons interrogent
+// réellement quatre choses différentes. Les critères de filtrage restent :
+// ils affinent APRÈS, ils ne remplacent pas la demande.
+//
 // ════════ POURQUOI LES PISTES SONT ÉCRITES ICI, ET NON PAR LE MODÈLE ═══
 //
 // C'est la leçon directe de l'alerte rouge du 16 août. Une piste est du
@@ -122,23 +139,23 @@ export function pistes(cat: Categorie, ctx: Contexte, en: boolean): Piste[] {
       id: 'manger-et-prier',
       fr: `${p.nom} dans ${p.minutes} min : manger et prier avant`,
       en: `${p.nom} in ${p.minutes} min: eat and pray before`,
-      patch: { categorie: 'manger', mode: 'pied', ouvertMaintenant: true, moment: 'maintenant' },
+      patch: { categorie: 'manger', mode: 'pied', ouvertMaintenant: true, moment: 'maintenant', motsCles: 'rapide' },
     })
   }
   if (tard) {
     // À 23 h, la plupart ferment : on le dit dans le libellé même.
-    L.push({ id: 'encore-ouvert', fr: 'Encore ouvert maintenant', en: 'Still open right now', patch: { categorie: 'manger', ouvertMaintenant: true, moment: 'maintenant' } })
-    L.push({ id: 'a-emporter', fr: 'À emporter, rapide', en: 'Takeaway, quick', patch: { categorie: 'manger', mode: 'pied', ouvertMaintenant: true } })
-    L.push({ id: 'patisserie-ramener', fr: 'Une pâtisserie pour ramener', en: 'A pastry to take home', patch: { categorie: 'manger', quoi: 'patisserie', ouvertMaintenant: true } })
+    L.push({ id: 'encore-ouvert', fr: 'Encore ouvert maintenant', en: 'Still open right now', patch: { categorie: 'manger', ouvertMaintenant: true, moment: 'maintenant', motsCles: 'ouvert tard' } })
+    L.push({ id: 'a-emporter', fr: 'À emporter, rapide', en: 'Takeaway, quick', patch: { categorie: 'manger', mode: 'pied', ouvertMaintenant: true, motsCles: 'à emporter rapide' } })
+    L.push({ id: 'patisserie-ramener', fr: 'Une pâtisserie pour ramener', en: 'A pastry to take home', patch: { categorie: 'manger', quoi: 'patisserie', ouvertMaintenant: true, motsCles: 'pâtisserie' } })
   } else if (midi) {
-    L.push({ id: 'dejeuner-rapide', fr: 'Déjeuner rapide, tout près', en: 'Quick lunch, very close', patch: { categorie: 'manger', mode: 'pied', ouvertMaintenant: true } })
-    L.push({ id: 'en-famille', fr: 'En famille, pour s’asseoir', en: 'With family, sit-down', patch: { categorie: 'manger', famille: true, compagnie: 'famille' } })
-    L.push({ id: 'petit-prix', fr: 'Petit prix', en: 'Cheap', patch: { categorie: 'manger', budget: 'petit', mode: 'pied' } })
+    L.push({ id: 'dejeuner-rapide', fr: 'Déjeuner rapide, tout près', en: 'Quick lunch, very close', patch: { categorie: 'manger', mode: 'pied', ouvertMaintenant: true, motsCles: 'rapide midi' } })
+    L.push({ id: 'en-famille', fr: 'En famille, pour s’asseoir', en: 'With family, sit-down', patch: { categorie: 'manger', famille: true, compagnie: 'famille', motsCles: 'familial enfants salle' } })
+    L.push({ id: 'petit-prix', fr: 'Petit prix', en: 'Cheap', patch: { categorie: 'manger', budget: 'petit', mode: 'pied', motsCles: 'pas cher petit prix' } })
   } else {
-    L.push({ id: 'pas-cher-pres', fr: 'Pas cher, tout près', en: 'Cheap, very close', patch: { categorie: 'manger', budget: 'petit', mode: 'pied' } })
-    L.push({ id: 'en-famille', fr: 'En famille, pour s’asseoir', en: 'With family, sit-down', patch: { categorie: 'manger', famille: true, compagnie: 'famille' } })
-    L.push({ id: 'a-emporter', fr: 'À emporter, rapide', en: 'Takeaway, quick', patch: { categorie: 'manger', mode: 'pied' } })
-    L.push({ id: 'cafe-patisserie', fr: 'Un café, une pâtisserie', en: 'Coffee and pastry', patch: { categorie: 'manger', quoi: 'patisserie', mode: 'pied' } })
+    L.push({ id: 'pas-cher-pres', fr: 'Pas cher, tout près', en: 'Cheap, very close', patch: { categorie: 'manger', budget: 'petit', mode: 'pied', motsCles: 'pas cher petit prix' } })
+    L.push({ id: 'en-famille', fr: 'En famille, pour s’asseoir', en: 'With family, sit-down', patch: { categorie: 'manger', famille: true, compagnie: 'famille', motsCles: 'familial enfants salle' } })
+    L.push({ id: 'a-emporter', fr: 'À emporter, rapide', en: 'Takeaway, quick', patch: { categorie: 'manger', mode: 'pied', motsCles: 'à emporter rapide' } })
+    L.push({ id: 'cafe-patisserie', fr: 'Un café, une pâtisserie', en: 'Coffee and pastry', patch: { categorie: 'manger', quoi: 'patisserie', mode: 'pied', motsCles: 'pâtisserie café' } })
   }
   return L.slice(0, 5)
 }
