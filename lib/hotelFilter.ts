@@ -59,13 +59,36 @@ export const reviewCountOf = (h: HotelLike): number =>
 export const halalFlagged = (h: HotelLike): boolean =>
   !!(h.halal_certifie || h.halalFriendly)
 
-// §3 Score « bien situé » : proximité mosquée + restaurants halal autour
-export function scoreSitue(h: LatLng, mosques: LatLng[], restos: LatLng[]): { score: number; nearestMosqueKm: number; restosNear: number } {
+/**
+ * §3 Score « bien situé » : proximité mosquée + restaurants halal autour.
+ *
+ * 🔴 CE QUE MOHAMED A VU SUR TIRANA, 15 août : « Quatre hôtels à des
+ * endroits différents, tous exactement 7 restos halal < 1 km. Ce chiffre ne
+ * mesure rien. »
+ *
+ * MESURÉ : le compte EST bien calculé depuis les coordonnées de chaque
+ * hôtel — la preuve est que les distances à la mosquée, elles, diffèrent
+ * (117 m, 148 m, 207 m, 246 m). Les quatre hôtels de Tirana sont
+ * simplement tous dans les 400 mètres du centre, et voient donc les mêmes
+ * sept restaurants.
+ *
+ * Le chiffre n'était donc pas faux — il était INUTILE : une pastille qui
+ * affiche la même valeur partout n'aide personne à choisir, et elle a
+ * l'air inventée, ce qui est presque aussi grave. On ajoute donc la
+ * DISTANCE AU PLUS PROCHE, qui, elle, distingue réellement deux hôtels.
+ */
+export function scoreSitue(h: LatLng, mosques: LatLng[], restos: LatLng[]): { score: number; nearestMosqueKm: number; restosNear: number; nearestRestoKm: number } {
   let nearestMosqueKm = Infinity
   for (const m of mosques) { const d = distanceKm(h, m); if (d < nearestMosqueKm) nearestMosqueKm = d }
-  const restosNear = restos.reduce((n, r) => (distanceKm(h, r) <= 1 ? n + 1 : n), 0)
+  let nearestRestoKm = Infinity
+  let restosNear = 0
+  for (const r of restos) {
+    const d = distanceKm(h, r)
+    if (d < nearestRestoKm) nearestRestoKm = d
+    if (d <= 1) restosNear++
+  }
   const mosqueBonus = nearestMosqueKm === Infinity ? 0 : Math.max(0, 2 - nearestMosqueKm) * 5
-  return { score: restosNear + mosqueBonus, nearestMosqueKm, restosNear }
+  return { score: restosNear + mosqueBonus, nearestMosqueKm, restosNear, nearestRestoKm }
 }
 
 // §4 Score « Recommandé » (0..1)

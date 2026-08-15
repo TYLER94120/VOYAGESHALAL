@@ -1,5 +1,6 @@
 'use client'
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import { verdictHalal, phraseHalal } from '@/lib/halalPrudent.mjs'
 import { cuisineCategory, CATEGORY_ORDER } from '@/lib/cuisineCategory'
 import PriereVille from '@/components/villes/PriereVille'
 import SurMesure from '@/components/lieux/SurMesure'
@@ -187,7 +188,11 @@ export default function VilleDesktop({ ville }: { ville: any }) {
   const restosParCat = activeFilter === 'Tous' ? restaurants : restaurants.filter((r: any) => cuisineCategory(r.type) === activeFilter)
   // « Signalé halal » = pas marqué « à vérifier » (halalConfidence 'likely')
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const restosFiltres = halalOnly ? restosParCat.filter((r: any) => r.halalConfidence !== 'likely') : restosParCat
+  // Le filtre « halal seulement » suit la MÊME règle que l'affichage : il
+  // ne garde que ce qui est vérifié ou signalé — jamais un lieu qui porte
+  // un mot à risque, même si OpenStreetMap le déclare halal.
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const restosFiltres = halalOnly ? restosParCat.filter((r: any) => verdictHalal(r).etat !== 'a-confirmer') : restosParCat
   const restosAffiches = restosFiltres.slice(0, visibleRestos)
   const tabCounts: Record<string, number> = { restaurants: restaurantsTotal, mosquees: mosquees.length, hotels: hotels.length, activites: activites.length, pratique: 0 }
 
@@ -528,9 +533,19 @@ export default function VilleDesktop({ ville }: { ville: any }) {
                       {(it.duree || it.prix) && <> · {[it.duree, it.prix].filter(Boolean).join(' · ')}</>}
                     </p>
                     <div style={{ display: 'flex', alignItems: 'center', gap: 9, flexWrap: 'wrap', marginBottom: 10 }}>
-                      {detail.kind === 'resto' && (it.halalConfidence === 'likely'
-                        ? <span style={{ background: 'rgba(201,168,76,0.18)', color: '#8A6D1E', fontSize: 11, fontWeight: 700, borderRadius: 20, padding: '3px 10px' }}>≈ {en ? 'Halal common · verify' : 'Halal courant · à vérifier'}</span>
-                        : <span style={{ background: 'var(--halal-bg)', color: 'var(--halal-tx)', fontSize: 11, fontWeight: 700, borderRadius: 20, padding: '3px 10px' }}>✓ Halal</span>)}
+                      {/* 🔴🔴 Trois états, jamais deux. Le vert et la coche
+                          sont réservés à ce que NOUS avons vérifié ; un mot
+                          à risque (souvlaki, gyros, bar…) passe en gris,
+                          quoi qu'OpenStreetMap déclare. */}
+                      {detail.kind === 'resto' && (() => {
+                        const vh = verdictHalal(it)
+                        const st = vh.etat === 'verifie'
+                          ? { background: 'var(--halal-bg)', color: 'var(--halal-tx)' }
+                          : vh.etat === 'signale'
+                            ? { background: 'rgba(201,168,76,0.18)', color: '#8A6D1E' }
+                            : { background: 'rgba(107,114,128,0.14)', color: '#4b5563' }
+                        return <span style={{ ...st, fontSize: 11, fontWeight: 700, borderRadius: 20, padding: '3px 10px' }}>{phraseHalal(vh.etat, en)}</span>
+                      })()}
                       {(it.score ?? it.note) != null && <span style={{ fontSize: 13, color: '#B8860B', fontWeight: 700 }}>★ {it.score ?? it.note}</span>}
                       {(it.priceRange ?? it.fourchette_prix) && <span style={{ fontSize: 12, color: 'var(--texte-2)' }}>{it.priceRange ?? it.fourchette_prix}</span>}
                     </div>
@@ -705,9 +720,13 @@ export default function VilleDesktop({ ville }: { ville: any }) {
                         {r.nom} <span style={{ fontWeight: 400, color: 'var(--texte-2)', fontSize: 13 }}>· {enLabel(cat, en)}</span>
                       </p>
                       <p style={{ fontSize: 12, color: '#9ca3af', margin: '3px 0 0' }}>
-                        {r.halalConfidence === 'likely'
-                          ? (en ? '≈ verify on site' : '≈ à vérifier')
-                          : (en ? '✓ reported halal' : '✓ signalé halal')}
+                        {/* 🔴🔴 LA COCHE VERTE SE MÉRITE (15 août). Elle
+                            s'affichait dès qu'OpenStreetMap disait « halal »
+                            — y compris sur « Grill & Souvlaki Stop », dont
+                            notre propre champ `type` annonce du souvlaki.
+                            Trois états désormais, et la coche est réservée à
+                            ce que NOUS avons vérifié. */}
+                        {phraseHalal(verdictHalal(r).etat, en)}
                         {' · '}{r.source === 'google' ? 'Google' : 'OSM'}
                         {(r.score ?? r.note) != null ? ` · ★ ${r.score ?? r.note}` : ''}
                       </p>
