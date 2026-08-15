@@ -99,12 +99,15 @@ const CACHE_S = 24 * 3600
  *   v2 — rankPreference DISTANCE, rayon 20 km, tri du plus proche au plus
  *        lointain, porte par catégorie (Prier n'accepte que des lieux de
  *        culte), mots du visiteur envoyés tels quels à Google
+ *   v4 — le type demandé part seul chez Google (« café », plus « halal
+ *        café » qui ramenait des traiteurs), rayon resserré 2 km d'abord
+ *        même sur une demande écrite, et les fermés passent derrière.
  *   v3 — searchNearby (cercle + types + rayon progressif 2/5/10/20 km) pour
  *        les demandes géographiques ; searchText avec cercle pour les
  *        demandes écrites. C'est le correctif de la régression du 15 août :
  *        searchText ne sait pas faire « le plus proche »
  */
-const VERSION_MOTEUR = 'v3'
+const VERSION_MOTEUR = 'v4'
 const CANDIDATS = 15
 const RETENUS = 3
 const AUTRES = 4
@@ -419,6 +422,31 @@ async function passeProximite(lat: number, lng: number, c: Criteres, cle: string
  */
 const PALIERS_M = [2000, 5000, 10000, 20000]
 
+/**
+ * 🔴 « LE PLUS PROCHE » VEUT DIRE LE PLUS PROCHE — même sur une demande
+ * écrite. Mohamed, 16 août, depuis Noisy-le-Grand : « premier résultat à
+ * 15 min à pied à Villiers-sur-Marne, deuxième à 19 min EN VOITURE et
+ * FERMÉ. Il y a des adresses à cinq minutes. »
+ *
+ * La cause : la recherche textuelle partait d'emblée sur un cercle de
+ * 20 km. Google, à qui l'on donne un grand cercle, remonte les
+ * établissements les plus CONNUS du secteur — pas ceux du quartier.
+ *
+ * On resserre donc : 2 km d'abord, et on n'élargit que si le quartier ne
+ * rend pas assez d'adresses. Le visiteur ne voit rien de cette mécanique ;
+ * il voit seulement que la première adresse est à cinq minutes.
+ */
+async function chercheParTexte(lat: number, lng: number, c: Criteres, cle: string, lang: string, texte: string, journal?: Journal): Promise<Candidat[] | null> {
+  let dernier: Candidat[] | null = null
+  for (const rayon of PALIERS_M) {
+    const trouves = await passe1(lat, lng, c, cle, lang, rayon, texte, journal)
+    if (trouves === null) return dernier
+    dernier = trouves
+    if (trouves.length >= RETENUS) break
+  }
+  return dernier
+}
+
 async function chercheParProximite(lat: number, lng: number, c: Criteres, cle: string, lang: string, journal?: Journal): Promise<Candidat[] | null> {
   let dernier: Candidat[] | null = null
   for (const rayon of PALIERS_M) {
@@ -617,9 +645,20 @@ function classer(cands: Candidat[], c: Criteres, rayon: number): Candidat[] {
     // adresse fermée n'est pas une réponse à « je veux manger là, tout de
     // suite ».
     .filter((x) => !(c.ouvertMaintenant && x.ouvert === false))
-    // Du plus proche au plus lointain. Le visiteur décide lui-même ce qui
-    // est trop loin — chaque fiche porte sa distance et son temps de trajet.
-    .sort((a, b) => a.distanceM - b.distanceM)
+    // 🔴 LES OUVERTS AVANT LES FERMÉS — Mohamed, 16 août : « premier
+    // résultat à 15 min à pied, deuxième à 19 min EN VOITURE et FERMÉ ».
+    // Un lieu fermé n'est jamais une réponse à « où je mange maintenant » :
+    // il passe derrière, quelle que soit sa distance. On ne le supprime pas
+    // pour autant — il peut rouvrir dans l'heure —, et sa fiche porte son
+    // état. Ce qu'on ne sait pas (ouvert === undefined) se range avec les
+    // ouverts : on ne rétrograde pas une adresse sur une ignorance.
+    // Puis, à état égal : du plus proche au plus lointain.
+    .sort((a, b) => {
+      const fa = a.ouvert === false ? 1 : 0
+      const fb = b.ouvert === false ? 1 : 0
+      if (fa !== fb) return fa - fb
+      return a.distanceM - b.distanceM
+    })
 }
 
 /**
@@ -866,6 +905,12 @@ export async function POST(req: Request) {
     // ne connaît pas « protéiné » : on traduit en poke, grillades, bowls…
     const texteBase = requeteGoogle(c)
     const avecProfil = c.categorie === 'manger' ? requeteAvecProfil(texteBase, profil) : texteBase
+    // 🔍 LA TRACE DEMANDÉE PAR MOHAMED, 16 août : « écris dans les journaux
+    // le texte exactement envoyé à Google. Tape "café", puis "kebab",
+    // compare les deux lignes. Ne devine pas : mesure. » Deux lignes
+    // identiques pour deux mots différents = le défaut est prouvé, sans
+    // avoir à supposer où il se cache.
+    console.info(`[lieux] mots du visiteur « ${c.motsCles ?? ''} » → texte envoyé à Google « ${avecProfil} » (catégorie ${c.categorie})`)
 
     // ════════ 🔀 L'AIGUILLAGE : QUEL MOTEUR POUR QUELLE DEMANDE ════════
     //
@@ -884,7 +929,7 @@ export async function POST(req: Request) {
     // une demande purement géographique.
     const demandeEcrite = !!(c.motsCles ?? '').trim()
     let cands = demandeEcrite
-      ? await passe1(lat, lng, c, cle, lang, rayon, avecProfil, journal)
+      ? await chercheParTexte(lat, lng, c, cle, lang, avecProfil, journal)
       : await chercheParProximite(lat, lng, c, cle, lang, journal)
 
     // §5 — QUAND TOUT NE PEUT PAS ÊTRE SATISFAIT, ON DIT CE QU'ON A LÂCHÉ.

@@ -58,8 +58,26 @@ const m = requeteGoogle({ categorie: 'mosquee', quoi: 'peu-importe', motsCles: '
 v(!/halal/i.test(m), `recherche de mosquée : « ${m} » contient « halal », ce qui est absurde`)
 
 // ── 5. Rien d'écrit → le repli par catégorie, honnêtement ────────────
-v(requeteGoogle({ categorie: 'manger', quoi: 'kebab', motsCles: '' }) === 'halal kebab',
+v(requeteGoogle({ categorie: 'manger', quoi: 'kebab', motsCles: '' }) === 'kebab',
   'sans mots écrits, la tuile choisie doit servir de repli')
+
+// ── 6. 🔴 LE TYPE D'ABORD, LE HALAL ENSUITE ──────────────────────────
+// « "café halal" ne cherche plus un café : le mot halal écrase le type et
+// Google remonte tout ce qui est oriental — traiteurs, épiceries. Le
+// visiteur demande un café, on lui répond "établissement musulman". »
+// Le statut halal se qualifie SUR LES RÉSULTATS, jamais dans la requête.
+for (const mot of ['café', 'kebab', 'pizza', 'boulangerie', 'sushi']) {
+  const r = requeteGoogle({ categorie: 'manger', quoi: 'peu-importe', motsCles: mot })
+  v(!/halal/i.test(r), `« ${mot} » part chez Google en « ${r} » : « halal » écrase le type demandé`)
+  v(r.includes(mot), `« ${mot} » n'est plus dans la requête envoyée (« ${r} »)`)
+}
+for (const quoi of ['pizza', 'kebab', 'burger', 'patisserie', 'peu-importe']) {
+  const r = requeteGoogle({ categorie: 'manger', quoi, motsCles: '' })
+  v(!/halal/i.test(r), `le repli de la tuile « ${quoi} » contient encore « halal » : « ${r} »`)
+}
+// Le mot du visiteur lui appartient : s'il écrit « halal », on le garde.
+v(/halal/i.test(requeteGoogle({ categorie: 'manger', quoi: 'peu-importe', motsCles: 'kebab halal' })),
+  'le visiteur a écrit « halal » lui-même et son mot a été retiré')
 
 if (fautes.length) {
   console.error(`\n❌ REQUÊTE — ${fautes.length} défaut(s) : le mot tapé n'arrive pas jusqu'à Google\n`)
