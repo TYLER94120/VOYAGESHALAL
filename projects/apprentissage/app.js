@@ -2739,7 +2739,18 @@ function ippDemarrerQuiz(racine) {
   var sansjs = q('quiz-sansjs');
   if (sansjs) { sansjs.hidden = true; }
 
-  var tirage = [], pos = 0, justes = 0, manquees = [];
+  /* UNE SEANCE DOIT POUVOIR SE TERMINER GAGNEE.
+     Avant : une reponse fausse etait expliquee, puis on passait. Ca a l'air
+     bienveillant et ca ne l'est pas — tant que la question ne revient pas,
+     l'erreur reste une erreur, et la personne finit a 2 sur 10 sans aucun
+     moyen d'y changer quoi que ce soit. Ce n'est pas une punition, c'est pire :
+     c'est un plafond.
+     Desormais la question manquee REVIENT a la fin du tour, UNE SEULE FOIS.
+     Deux passages au maximum : une question qui revient sans fin est une cage.
+     Et on joue une LISTE ou l'on ajoute au bout, pas un compteur : la barre
+     s'allonge, elle ne recule jamais. Voir une barre reculer, c'est perdre
+     quelque chose, et on ne fait rien perdre a personne. */
+  var tirage = [], pos = 0, justes = 0, rattrapees = 0, manquees = [], distinctes = 0;
 
   function melanger(l) {
     var a = l.slice();
@@ -2765,7 +2776,8 @@ function ippDemarrerQuiz(racine) {
 
   function afficher() {
     var item = tirage[pos];
-    q('quiz-rang').textContent = 'Question ' + (pos + 1) + ' sur ' + tirage.length;
+    q('quiz-rang').textContent = 'Question ' + (pos + 1) + ' sur ' + tirage.length
+      + (item.reprise ? ' \u2014 on la revoit' : '');
     q('quiz-titre').innerHTML = item.q;
     var choix = q('quiz-choix');
     choix.innerHTML = '';
@@ -2788,7 +2800,18 @@ function ippDemarrerQuiz(racine) {
     var item = tirage[pos];
     var choisie = bouton.getAttribute('data-val');
     var bonne = choisie === item.bonne;
-    if (bonne) { justes++; } else { manquees.push(item); }
+    if (bonne) {
+      if (item.reprise) { rattrapees++; } else { justes++; }
+    } else if (!item.reprise) {
+      // Plus loin, jamais juste apres : une question reposee dans la foulee de
+      // son explication ne fait rien retenir. Elle part au bout de la liste.
+      var encore = {};
+      for (var k in item) { if (Object.prototype.hasOwnProperty.call(item, k)) { encore[k] = item[k]; } }
+      encore.reprise = true;
+      tirage.push(encore);
+    } else {
+      manquees.push(item);
+    }
 
     var tous = q('quiz-choix').querySelectorAll('.q-opt');
     for (var i = 0; i < tous.length; i++) {
@@ -2822,18 +2845,28 @@ function ippDemarrerQuiz(racine) {
     carte.hidden = true;
     bas.hidden = true;
     fin.hidden = false;
-    q('quiz-score').textContent = justes + ' sur ' + tirage.length;
+    /* Le compte final enonce le FAIT EXACT : ce qui est su a la fin, sur le
+       nombre de questions distinctes — pas sur la longueur de la liste, qui a
+       grandi avec les reprises. Et « sans faute » reste reserve au premier
+       essai : un score gonfle en silence est un compliment invente. */
+    var sus = justes + rattrapees;
+    q('quiz-score').textContent = sus + ' sur ' + distinctes;
 
     /* Ce que le site a le droit de dire : ce qui est su, et ce qui revient.
        Jamais un jugement, jamais un reproche, quel que soit le chiffre. */
     var mot;
-    if (justes === tirage.length) {
-      mot = 'Tout est retrouve. Reviens demain, les questions changeront.';
-    } else if (justes === 0) {
+    if (sus === distinctes && rattrapees === 0) {
+      mot = 'Sans faute, du premier coup. Reviens demain, les questions changeront.';
+    } else if (sus === distinctes) {
+      mot = 'Tout est retrouve, dont ' + rattrapees
+          + (rattrapees > 1 ? ' a la reprise.' : ' a la reprise.')
+          + ' La reprise compte autant que le premier coup.';
+    } else if (sus === 0) {
       mot = 'Ces questions viennent des lecons. Ouvre-en une, et elles '
           + 'deviendront faciles — c\'est fait pour.';
     } else {
-      mot = 'Tu as retrouve ' + justes + ' reponse' + (justes > 1 ? 's' : '')
+      mot = 'Tu as retrouve ' + sus + ' reponse' + (sus > 1 ? 's' : '')
+          + (rattrapees ? ', dont ' + rattrapees + ' a la reprise' : '')
           + '. Les autres sont dans leurs lecons, elles reviendront.';
     }
     q('quiz-mot').textContent = mot;
@@ -2869,7 +2902,8 @@ function ippDemarrerQuiz(racine) {
 
   function lancer() {
     tirage = tirer();
-    pos = 0; justes = 0; manquees = [];
+    distinctes = tirage.length;
+    pos = 0; justes = 0; rattrapees = 0; manquees = [];
     if (intro) { intro.hidden = true; }
     fin.hidden = true;
     carte.hidden = false;
