@@ -97,7 +97,25 @@ function diffuser(pos: InstantPos, source: PosSource, forcer = false) {
 // demande s'il doit réappuyer. Dès que le GPS répond, on va chercher le nom
 // du lieu (notre propre liste de villes d'abord) et on remplace le libellé.
 // Le résultat se diffuse à toute la page par le mécanisme ci-dessus.
-const nomsConnus = new Map<string, string>()
+// Même cause, même remède pour la géolocalisation par IP : plusieurs
+// composants montent ce crochet ensemble, et /api/geoip partait deux fois
+// pour une réponse qui ne change pas. Une seule promesse, partagée.
+let geoipEnCours: Promise<{ ok?: boolean; lat?: number; lng?: number; city?: string } | null> | null = null
+function geoipUneSeuleFois() {
+  if (!geoipEnCours) geoipEnCours = fetch('/api/geoip').then((r) => r.json()).catch(() => null)
+  return geoipEnCours
+}
+
+// 🔴 UNE PAGE, UN SEUL APPEL. Mesuré le 15 août sur /autour-de-moi :
+// QUATRE `/api/reverse` identiques pour une seule position. La cause : le
+// souvenir n'était rangé qu'au RETOUR de la réponse, or plusieurs
+// composants de la page appellent ce crochet en même temps — les quatre
+// partaient avant que le premier ne revienne.
+//
+// On mémorise donc la PROMESSE, pas seulement le résultat : le deuxième
+// appelant attend la réponse du premier au lieu d'en lancer une autre.
+const nomsConnus = new Map<string, Promise<string | null>>()
+
 
 /** Libellés qui décrivent la MÉTHODE et non le LIEU : ceux-là, on les remplace. */
 const LIBELLES_SANS_LIEU = new Set([
@@ -105,25 +123,28 @@ const LIBELLES_SANS_LIEU = new Set([
   'Autour de vous', 'Around you', 'Dernière position', 'Last position',
 ])
 
-async function nommerLeLieu(lat: number, lng: number): Promise<string | null> {
+function nommerLeLieu(lat: number, lng: number): Promise<string | null> {
   const cle = `${lat.toFixed(2)},${lng.toFixed(2)}`
-  if (nomsConnus.has(cle)) return nomsConnus.get(cle)!
-  try {
-    const ac = new AbortController()
-    const t = setTimeout(() => ac.abort(), 4000)
-    const r = await fetch(`/api/reverse?lat=${lat}&lng=${lng}`, { signal: ac.signal })
-    clearTimeout(t)
-    if (!r.ok) return null
-    const j = await r.json()
-    // On n'adopte le nom que s'il désigne VRAIMENT l'endroit : Google ou
-    // OpenStreetMap donnent la commune. `source: 'ville'` veut dire « notre
-    // ville la plus proche, à N km » — écrire « Paris » à quelqu'un qui est
-    // à Fontenay-sous-Bois serait exactement le mensonge qu'on corrige.
-    if (typeof j?.nom === 'string' && j.nom && (j.source === 'google' || j.source === 'nominatim')) {
-      nomsConnus.set(cle, j.nom); return j.nom
-    }
-  } catch { /* on garde le libellé actuel */ }
-  return null
+  const dejaEnCours = nomsConnus.get(cle)
+  if (dejaEnCours) return dejaEnCours
+  const p = (async () => {
+    try {
+      const ac = new AbortController()
+      const t = setTimeout(() => ac.abort(), 4000)
+      const r = await fetch(`/api/reverse?lat=${lat}&lng=${lng}`, { signal: ac.signal })
+      clearTimeout(t)
+      if (!r.ok) return null
+      const j = await r.json()
+      // On n'adopte le nom que s'il désigne VRAIMENT l'endroit : Google ou
+      // OpenStreetMap donnent la commune. `source: 'ville'` veut dire « notre
+      // ville la plus proche, à N km » — écrire « Paris » à quelqu'un qui est
+      // à Fontenay-sous-Bois serait exactement le mensonge qu'on corrige.
+      if (typeof j?.nom === 'string' && j.nom && (j.source === 'google' || j.source === 'nominatim')) return j.nom as string
+    } catch { /* on garde le libellé actuel */ }
+    return null
+  })()
+  nomsConnus.set(cle, p)
+  return p
 }
 
 export function useInstantPosition(en = false) {
@@ -229,10 +250,9 @@ export function useInstantPosition(en = false) {
     // il atterrit à Berkane, sa dernière position était Paris → on bascule)
     {
       const base = initial
-      fetch('/api/geoip')
-        .then((r) => r.json())
+      geoipUneSeuleFois()
         .then((j) => {
-          if (!(j?.ok && typeof j.lat === 'number')) return
+          if (!(j?.ok && typeof j.lat === 'number' && typeof j.lng === 'number')) return
           const trouvee: InstantPos = { lat: j.lat, lng: j.lng, label: j.city || (en ? 'Around you' : 'Autour de vous') }
           // Notée dans tous les cas : c'est elle qui permettra de demander
           // « tu n'es plus à Marrakech ? » sans avoir à deviner.
