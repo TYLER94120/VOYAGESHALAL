@@ -134,7 +134,11 @@ export default function PrayerCountdownBar() {
     <span className="prayer-bar-lieu">
       <PositionBadge compact etat={etatPos} en={en}
         apresRefus={() => { window.location.href = localizedHref('/horaires-priere', en) }} />
-      {meteo?.maintenant && (
+      {/* 🧹 LA MÉTÉO QUITTE L'ACCUEIL — Mohamed, 16 août : « elle ne change
+          aucune décision, le visiteur l'a dans sa barre d'état ». Elle garde
+          tout son sens sur une page destination, où l'on prépare un voyage :
+          elle n'y est pas retirée. */}
+      {!surAccueil && meteo?.maintenant && (
         <Link href="/meteo" aria-label={en ? 'Weather' : 'Météo'} className="prayer-bar-meteo">
           <span style={{ fontSize: 15 }} aria-hidden>{emojiMeteo(meteo.maintenant.code)}</span>
           <span style={{ color: '#fdfaf3', fontWeight: 900, fontSize: 13.5 }}>{meteo.maintenant.temp}°</span>
@@ -146,8 +150,10 @@ export default function PrayerCountdownBar() {
   return (
     <div className="prayer-bar">
       {surAccueil ? positionEtMeteo : <>{inner}{positionEtMeteo}</>}
-      {/* Accès langue (surtout utile sur mobile où le header est masqué) */}
-      <span className="prayer-bar-lang"><LanguageSwitcher /></span>
+      {/* 🧹 LE SÉLECTEUR DE LANGUE QUITTE L'ACCUEIL — « le domaine français
+          sert des francophones, l'anglais a son domaine ». Il reste partout
+          ailleurs, et en pied de page. */}
+      {!surAccueil && <span className="prayer-bar-lang"><LanguageSwitcher /></span>}
     </div>
   )
 }

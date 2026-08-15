@@ -9,7 +9,6 @@ import { ENVIES, envieById, niveauHalal } from '@/lib/envies'
 import { mentionPaysMusulman } from '@/lib/paysHalalDefaut'
 import { fetchCourt } from '@/lib/fetchCourt'
 import PositionBadge from '@/components/location/PositionBadge'
-import { meteoInstantanee, emojiMeteo, type Meteo } from '@/lib/meteo'
 
 // 🎛️ BOARD VOYAGEUR (bento) — l'accueil devient un tableau de bord contextuel :
 // des REPONSES deja calculees, jamais des menus. Il absorbe le Radar Priere
@@ -135,23 +134,16 @@ export default function BoardVoyageur({
   // dessus ». Au repos, chaque widget est une ligne fine. Un tap l'ouvre
   // SUR PLACE (animation courte), et c'est là que vivent ses filtres.
   const [ouvert, setOuvert] = useState<'priere' | 'manger' | null>(null)
-  // 🌤 Météo — demandée par Mohamed : « en voyage, la température de la
-  // position et pouvoir anticiper ». Elle ne bloque RIEN : la tuile n'existe
-  // que si la réponse arrive, et son absence ne se voit pas.
-  const [meteo, setMeteo] = useState<Meteo | null>(null)
+  // 🧹 LA MÉTÉO A QUITTÉ L'ACCUEIL — Mohamed, 16 août : « elle ne change
+  // aucune décision, le visiteur l'a dans sa barre d'état ». Elle n'était
+  // d'ailleurs plus affichée ici : seul l'appel réseau restait, à chaque
+  // ouverture, pour un chiffre que personne ne lisait. Il part avec elle.
+  // Elle garde tout son sens sur /meteo et sur une page destination.
 
   useEffect(() => {
     const id = setInterval(() => setNow(Date.now()), 30_000)
     return () => clearInterval(id)
   }, [])
-
-  // La météo arrive quand elle arrive. Ce qui est gardé sur l'appareil
-  // s'affiche tout de suite ; le réseau rafraîchit en silence derrière.
-  useEffect(() => {
-    if (!pos) return
-    const gardee = meteoInstantanee(pos.lat, pos.lng, setMeteo)
-    if (gardee) setMeteo(gardee)
-  }, [pos])
 
   // ── Fenetre de priere (calcul local, zero reseau) ──
   // La méthode et l'école viennent du choix de l'utilisateur, comme dans le
