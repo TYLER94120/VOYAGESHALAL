@@ -210,7 +210,12 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
   // muet, c'est que la page n'a pas fait son travail. »
   useEffect(() => {
     if (lancee.current || !chercheDesLOuverture) return
-    if (!posInitiale && !destinationProp) return
+    // 🔴 ON N'ATTEND PLUS QU'UNE POSITION SOIT DÉJÀ LÀ. Au montage de
+    // l'accueil, `posInitiale` (géoloc par adresse IP, calculée côté
+    // serveur) est souvent nulle — et cette condition empêchait la
+    // recherche d'ouverture de partir, donc aucune adresse sans clic.
+    // `lancer` sait demander le GPS lui-même, et sait dire honnêtement
+    // « je ne connais pas ta position » si on la lui refuse.
     if (phraseInitiale?.trim()) return
     lancee.current = true
     const c: Criteres = { ...CRITERES_DEFAUT, categorie: chercheDesLOuverture, mode: 'pied' }
@@ -555,8 +560,14 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
             entier pour Google et devient ce qu'on lit vraiment. Ailleurs
             (fiche ville, autour de moi), le h3 reste : il n'y a pas de H1
             à lui donner, et la page a déjà son titre. */}
+        {/* 🧹 LE SLOGAN QUITTE L'ÉCRAN, PAS LE CODE — Mohamed, 16 août :
+            « il sert une fois puis coûte deux lignes à chaque visite. Une
+            adresse à 300 m prouve la promesse mieux que la promesse. »
+            Le H1 reste dans la page pour Google, en lecture d'écran
+            seulement : le supprimer vraiment coûterait le référencement de
+            l'accueil, ce que personne n'a demandé. */}
         {titrePage && !destination ? (
-          <h1 style={{ fontFamily: "'Playfair Display', Georgia, serif", color: '#fdfaf3', fontSize: 20, fontWeight: 900, margin: 0, lineHeight: 1.2 }}>
+          <h1 className="sr-slogan" style={{ position: 'absolute', width: 1, height: 1, padding: 0, margin: -1, overflow: 'hidden', clip: 'rect(0 0 0 0)', whiteSpace: 'nowrap', border: 0 }}>
             {t('Où prier, où ', 'Where to pray, where to ')}
             <span className="gold-em">{t('manger halal', 'eat halal')}</span>
             {t(' — partout où tu voyages.', ' — anywhere you travel.')}

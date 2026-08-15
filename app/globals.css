@@ -597,6 +597,11 @@ body { top: 0 !important; }
   text-decoration: none;
   color: rgba(253, 250, 243, 0.55);
   flex: 1;
+  /* 🔴 56 px, la règle qui ne se négocie pas (skill design, profil « la
+     grand-mère de 75 ans » : le doigt entier, pas le bout de l'ongle).
+     Ces cibles mesuraient 48 px. */
+  min-height: 56px;
+  justify-content: center;
   padding: 4px 0;
   transition: color 0.15s;
 }
@@ -1092,4 +1097,23 @@ body:has(.autour-plein) { padding-bottom: 0 !important; }
   .autour-trait { display: none; }
   .autour-barre { left: 436px; }
   .autour-retour { left: 24px; top: 16px; }
+}
+
+
+/* 🌅 L'HEURE FAIT L'ÉCRAN — le fond de l'accueil suit la course du soleil.
+   La variable est posée par components/home/CielDuMoment.tsx à partir des
+   VRAIS horaires de prière du lieu. Tant qu'elle n'est pas là (première
+   image, position inconnue), on retombe sur la nuit : sombre dans tous les
+   cas, jamais un éclair blanc. La transition ne joue qu'une fois, au
+   chargement — « jamais pendant que le visiteur lit ». */
+.accueil-ciel {
+  background: var(--ciel-fond, linear-gradient(180deg, #0A0F24 0%, #181139 55%, #281B4E 100%)) !important;
+  background-attachment: fixed;
+  transition: background 400ms ease;
+}
+/* Les chiffres qui se lisent d'un coup d'œil — heures, distances — sont
+   tabulaires : ils s'alignent d'une ligne à l'autre au lieu de danser. */
+.prayer-bar time, .prayer-bar-lieu, .chiffre-tabulaire {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: 'tnum' 1;
 }

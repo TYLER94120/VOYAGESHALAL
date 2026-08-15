@@ -7,6 +7,7 @@ import EmailCapture from '@/components/ui/EmailCapture'
 import { buildWebSiteSchema, buildOrganizationSchema } from '@/lib/seo'
 import { guides } from '@/lib/data'
 import BoardVoyageur from '@/components/home/BoardVoyageur'
+import CielDuMoment from '@/components/home/CielDuMoment'
 import SurMesure from '@/components/lieux/SurMesure'
 import { positionServeur } from '@/lib/positionServeur'
 import { localizedHref } from '@/lib/slugs'
@@ -153,7 +154,11 @@ export default async function HomePage() {
     <JsonLd data={websiteSchema} />
     <JsonLd data={orgSchema} />
     {/* Design unifié : même accueil sur mobile et desktop */}
-    <main style={{ backgroundColor: '#fdfaf3' }}>
+    {/* 🌅 « L'heure fait l'écran » : la teinte du fond suit la course du
+        soleil, calculée sur les vrais horaires de prière du lieu. Elle ne
+        change qu'au chargement — jamais pendant qu'on lit. */}
+    <CielDuMoment />
+    <main className="accueil-ciel" style={{ backgroundColor: '#fdfaf3' }}>
       {/* 🎛️ UN SEUL PREMIER ÉCRAN — Mohamed, 15 août : « les 2 premières
           pages doivent fusionner, garde le meilleur des 2 ». Le hero
           n'existe plus comme section séparée : son meilleur — le titre et
@@ -181,7 +186,12 @@ export default async function HomePage() {
           désormais les deux — « un kebab pas loin » cherche autour de
           soi, « Istanbul » ouvre le guide, « une pâtisserie à Tirana »
           cherche là-bas — et elle porte le H1 en sous-titre. */}
-      <SurMesure posInitiale={posIP} en={isEN} titrePage />
+      {/* 🔴 LA RÉPONSE, SANS UN SEUL CLIC — Mohamed, 16 août : « L'accueil
+          mobile affiche VINGT éléments cliquables et PAS UNE SEULE ADRESSE.
+          Tout l'espace sert à chercher, aucun à trouver. »
+          On connaît la position : la recherche part dès l'ouverture, et la
+          première chose qu'on lit est une adresse réelle, pas une promesse. */}
+      <SurMesure posInitiale={posIP} en={isEN} titrePage chercheDesLOuverture="manger" />
 
       {/* 🖥️ RANGÉE DU BAS — sur PC, Destinations et « manger halal près
           de moi » se mettent CÔTE À CÔTE : Mohamed, 15 août, « la ligne du

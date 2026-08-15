@@ -38,7 +38,12 @@ export default function BottomNav() {
     { href: '/audio', icon: '🎧', label: en ? 'Audio · Spiritual' : 'Audio · Spirituel' },
     { href: localizedHref('/omra', en), icon: '🕋', label: en ? 'Umrah & Hajj' : 'Omra & Hajj' },
     // Favoris déplacés en fin de menu secondaire (remplacés par Audio)
-    { href: localizedHref('/carnet', en), icon: '❤️', label: en ? 'My spots' : 'Mes spots' },
+    // « Mes spots » ne veut rien dire pour quelqu'un qui arrive : ce sont
+    // les adresses qu'il a gardées. On l'écrit comme ça.
+    { href: localizedHref('/carnet', en), icon: '❤️', label: en ? 'My saved places' : 'Mes adresses gardées' },
+    // Descendus du dock : utiles, mais pas ce qu'on vient chercher.
+    { href: '/spots', icon: '💎', label: en ? 'Community finds' : 'Les trouvailles de la communauté' },
+    { href: '/communaute/ajouter', icon: '➕', label: en ? 'Add a place' : 'Ajouter une adresse' },
   ]
   const toolsActive = tools.some((tl) => isActive(tl.href.split('?')[0]))
 
@@ -67,19 +72,23 @@ export default function BottomNav() {
           <span className="bottom-nav-icon">🏠</span>
           <span className="bottom-nav-label">{t('bottom.home')}</span>
         </Link>
-        {/* Virage Spots : le feed devient l'onglet central ; « Ville » passe
-            dans le panneau Outils (les pages destinations restent en ligne) */}
-        <Link href="/spots" className={`bottom-nav-item ${isActive('/spots') || isActive('/communaute') || isActive('/spot') ? 'active' : ''}`}>
-          <span className="bottom-nav-icon">💎</span>
-          <span className="bottom-nav-label">Spots</span>
-        </Link>
-        <Link href="/communaute/ajouter" className={`bottom-nav-item bottom-nav-plus ${isActive('/communaute/ajouter') ? 'active' : ''}`}>
-          <span className="bottom-nav-icon" aria-hidden>+</span>
-          <span className="bottom-nav-label">{en ? 'Add' : 'Ajouter'}</span>
-        </Link>
         <Link href={localizedHref('/horaires-priere', en)} className={`bottom-nav-item ${isActive('/horaires-priere') ? 'active' : ''}`}>
-          <span className="bottom-nav-icon">🕐</span>
+          <span className="bottom-nav-icon">🕌</span>
           <span className="bottom-nav-label">{t('bottom.prayer')}</span>
+        </Link>
+        {/* 🔴 LE BOUTON CENTRAL CHANGE DE MÉTIER — Mohamed, 16 août :
+            « Le "＋ Ajouter" occupait la place la plus accessible du pouce
+            pour une action que 99 % des visiteurs ne feront jamais. »
+            Elle revient à « Autour de moi », qui est ce que le site fait de
+            plus utile et ce qu'on vient y chercher. Ajouter et Mes adresses
+            descendent dans Outils, où on les cherche quand on en a besoin. */}
+        <Link href="/autour-de-moi" className={`bottom-nav-item bottom-nav-plus ${isActive('/autour-de-moi') ? 'active' : ''}`}>
+          <span className="bottom-nav-icon" aria-hidden>📍</span>
+          <span className="bottom-nav-label">{en ? 'Around me' : 'Autour de moi'}</span>
+        </Link>
+        <Link href="/destinations" className={`bottom-nav-item ${isActive('/destinations') || isActive('/spots') || isActive('/spot') ? 'active' : ''}`}>
+          <span className="bottom-nav-icon">🌍</span>
+          <span className="bottom-nav-label">{en ? 'Travel' : 'Voyages'}</span>
         </Link>
         <button type="button" onClick={() => setToolsOpen(!toolsOpen)} className={`bottom-nav-item ${toolsOpen || toolsActive ? 'active' : ''}`} style={{ background: 'none', border: 'none', cursor: 'pointer', font: 'inherit' }}>
           <span className="bottom-nav-icon">🧰</span>
