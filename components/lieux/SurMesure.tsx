@@ -119,6 +119,13 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
   const [autres, setAutres] = useState<Fiche[]>([])
   const [voirAutres, setVoirAutres] = useState(false)
   const [source, setSource] = useState('')
+  // 🔌 L'ÉTAT DE GOOGLE MAPS — « le widget le dit sobrement » (ordre du
+  // 14 août, §2). L'API le renvoyait déjà ; personne ne le lisait. Sans
+  // lui, un écran vide accusait la DISTANCE (« aucune adresse à moins de
+  // 15 min ») alors que la vraie raison était qu'on n'avait pas pu
+  // interroger Google. Dire « il n'y a rien » quand on veut dire « nous
+  // n'avons pas pu demander » est un mensonge par raccourci.
+  const [etatGoogle, setEtatGoogle] = useState<'ok' | 'vide' | 'muet' | 'sans-cle' | ''>('')
   const [mode, setMode] = useState<Mode>('voiture')
   const [plafond, setPlafond] = useState(15)
   const [plusLoin, setPlusLoin] = useState<{ minutes: number; mode: Mode; nombre: number } | null>(null)
@@ -252,7 +259,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
 
       const ac = new AbortController()
       const to = setTimeout(() => ac.abort(), 20_000)
-      let corps: { fiches?: Fiche[]; autres?: Fiche[]; source?: string; mode?: Mode; plafondMin?: number; plusLoin?: { minutes: number; mode: Mode; nombre: number } | null; relaches?: string[] } = {}
+      let corps: { fiches?: Fiche[]; autres?: Fiche[]; source?: string; etatGoogle?: 'ok' | 'vide' | 'muet' | 'sans-cle'; mode?: Mode; plafondMin?: number; plusLoin?: { minutes: number; mode: Mode; nombre: number } | null; relaches?: string[] } = {}
       try {
         const r = await fetch('/api/lieux', {
           method: 'POST', signal: ac.signal,
@@ -263,7 +270,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
       } finally { clearTimeout(to) }
 
       const trois = corps.fiches ?? []
-      setFiches(trois); setAutres(corps.autres ?? []); setSource(corps.source ?? '')
+      setFiches(trois); setAutres(corps.autres ?? []); setSource(corps.source ?? ''); setEtatGoogle(corps.etatGoogle ?? '')
       setMode(corps.mode ?? 'voiture'); setPlafond(corps.plafondMin ?? 15); setPlusLoin(corps.plusLoin ?? null); setRelaches(corps.relaches ?? [])
       setEtape('resultat')
       if (trois.length) redigerIA(trois, c, corps.mode ?? 'voiture', c.categorie === 'mosquee' ? avantPriere(pos) : null, !!lieu)
@@ -763,9 +770,19 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
 
         {etape === 'resultat' && fiches.length === 0 && (
           <div style={{ marginTop: 14 }}>
+            {/* 🔌 DEUX RAISONS TRÈS DIFFÉRENTES D'AVOIR UN ÉCRAN VIDE, et
+                on ne dit pas l'une pour l'autre. Soit Google a répondu et
+                il n'y a réellement rien dans le rayon — alors on parle de
+                distance et on propose d'élargir. Soit on n'a PAS PU
+                demander (clé absente, appel muet) — et là, annoncer
+                « aucune adresse à moins de 15 min » serait faux : on ne
+                sait pas. On dit ce qu'on a interrogé, et rien de plus. */}
             <p style={{ color: 'rgba(253,250,243,0.8)', fontSize: 14, lineHeight: 1.5, margin: 0 }}>
-              {t(`Aucune adresse à moins de ${plafond} min ${LIB_MODE[mode][0]} — on préfère te le dire plutôt que d'inventer.`,
-                 `Nothing within ${plafond} min ${LIB_MODE[mode][1]} — we would rather say so than invent an address.`)}
+              {etatGoogle === 'muet' || etatGoogle === 'sans-cle'
+                ? t(`Nous n'avons pas pu interroger Google Maps à l'instant. Nos propres adresses et OpenStreetMap n'en donnent aucune ici — ça ne veut pas dire qu'il n'y a rien.`,
+                    `We could not reach Google Maps just now. Our own listings and OpenStreetMap show none here — that does not mean there is nothing.`)
+                : t(`Aucune adresse à moins de ${plafond} min ${LIB_MODE[mode][0]} — on préfère te le dire plutôt que d'inventer.`,
+                    `Nothing within ${plafond} min ${LIB_MODE[mode][1]} — we would rather say so than invent an address.`)}
             </p>
             <div style={rangee}>
               {plusLoin && (
@@ -839,9 +856,15 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
           </p>
         )}
 
+        {/* Sobre, une ligne, sous les résultats : d'où ils viennent. On ne
+            promet plus « les fiches Google arrivent bientôt » quand Google
+            n'a simplement pas répondu — c'est une panne du moment, pas une
+            fonctionnalité à venir. */}
         {source === 'osm' && fiches.length > 0 && (
           <p style={{ color: 'rgba(253,250,243,0.55)', fontSize: 12, marginTop: 10 }}>
-            {t('Résultats OpenStreetMap — les fiches Google Maps arrivent bientôt.', 'OpenStreetMap results — Google Maps details coming soon.')}
+            {etatGoogle === 'muet' || etatGoogle === 'sans-cle'
+              ? t('Google Maps n’a pas répondu — ces adresses viennent d’OpenStreetMap.', 'Google Maps did not respond — these come from OpenStreetMap.')
+              : t('Résultats OpenStreetMap — les fiches Google Maps arrivent bientôt.', 'OpenStreetMap results — Google Maps details coming soon.')}
           </p>
         )}
     </Cadre>
