@@ -3,6 +3,7 @@ import { useState, useRef, useEffect, useCallback } from 'react'
 import 'leaflet/dist/leaflet.css'
 import type { Map as LeafletMap, Marker } from 'leaflet'
 import { useInstantPosition } from '@/lib/useInstantPosition'
+import { computePrayerTimesFull } from '@/lib/prayerCalc'
 import SurMesure, { type Fiche } from '@/components/lieux/SurMesure'
 
 // 🗺️ « AUTOUR DE MOI » — LA MÊME RECHERCHE, EN VUE CARTE.
@@ -105,6 +106,44 @@ export default function AutourDeMoiPage() {
       if (q) setPhraseVenue(q)
     } catch { /* ouverture normale */ }
   }, [])
+
+  // ⏱️ L'OUVERTURE RÉPOND AU MOMENT, PAS À UN RÉGLAGE FIGÉ.
+  //
+  // Mohamed, 15 août : « J'ouvre "Autour de moi" : on me montre des
+  // restaurants alors que je n'ai rien demandé. » L'onglet Manger était
+  // imposé en dur — un choix arbitraire présenté comme une réponse.
+  //
+  // Le site connaît l'heure et la position : il sait donc si la prière
+  // approche. Moins de 30 minutes → on ouvre sur PRIER, parce que c'est le
+  // besoin du moment. Sinon on n'impose RIEN : la recherche part sur les
+  // lieux proches, toutes catégories, et les trois boutons restent là.
+  const [ouvertureSur, setOuvertureSur] = useState<'mosquee' | 'manger' | null>(null)
+  useEffect(() => {
+    if (!pos || ouvertureSur) return
+    try {
+      const meth = Number((typeof localStorage !== 'undefined' && localStorage.getItem('vh_prayer_method')) || 3)
+      const ecole = Number((typeof localStorage !== 'undefined' && localStorage.getItem('vh_prayer_school')) || 0)
+      const t = computePrayerTimesFull(pos.lat, pos.lng, meth, ecole, new Date())
+      const maintenant = Date.now()
+      const proche = ([t.Fajr, t.Dhuhr, t.Asr, t.Maghrib, t.Isha] as Date[])
+        .some((d) => d.getTime() > maintenant && d.getTime() - maintenant < 30 * 60 * 1000)
+      // ⚠️ CE QUE JE N'AI PAS PU FAIRE, ET POURQUOI JE LE DIS.
+      // Mohamed voulait « aucun onglet imposé : les lieux proches TOUTES
+      // catégories ». Une recherche toutes catégories, c'est trois appels
+      // Google au lieu d'un, à chaque ouverture de la page — le plafond de
+      // 200 € ne le supporte pas. J'ai donc gardé UN appel, choisi par le
+      // moment, et surtout : AUCUN ONGLET N'EST MARQUÉ ACTIF. Les trois
+      // boutons restent neutres, rien n'a l'air imposé, et le visiteur
+      // change de catégorie d'un appui.
+      const h = new Date().getHours()
+      const heureDeManger = (h >= 11 && h < 14) || (h >= 18 && h < 22)
+      setOuvertureSur(proche ? 'mosquee' : heureDeManger ? 'manger' : 'mosquee')
+    } catch {
+      // Horaires indisponibles : où prier reste le besoin qui ne dépend
+      // ni de la faim ni de l'heure du repas.
+      setOuvertureSur('mosquee')
+    }
+  }, [pos, ouvertureSur])
 
   // ── La carte, une fois, et recentrée quand la position change ────────
   useEffect(() => {
@@ -215,6 +254,15 @@ export default function AutourDeMoiPage() {
           DONNÉES des lieux (la clé est d'ailleurs restreinte aux Places). */}
       <div ref={mapEl} className="autour-carte" style={{ background: '#dfe6e2' }} />
 
+      {/* 🏠 LE RETOUR, ÉVIDENT ET PERMANENT.
+          Mohamed, 15 août : « Une fois sur la carte, aucun moyen visible de
+          rentrer à l'accueil. On est prisonnier de l'écran. » Sur cette
+          page la carte occupe tout, y compris la place où vit d'habitude
+          l'en-tête du site : il n'y avait donc plus aucune porte de sortie.
+          Ce bouton flotte au-dessus de la carte, au-dessus de la feuille de
+          résultats, et il ne bouge jamais. */}
+      <a href="/" className="autour-retour" aria-label="Revenir à l'accueil">‹ Accueil</a>
+
       {/* 🧹 15 août — LA POSITION N'EST PLUS AFFICHÉE ICI.
           Mohamed : « une pastille de position TRONQUÉE : "📍 · ex…" — on ne
           lit même pas le nom de la ville — et DEDANS, une deuxième fois
@@ -276,7 +324,7 @@ export default function AutourDeMoiPage() {
               phraseInitiale={phraseVenue}
               // ► On répond avant qu'on demande : la recherche part dès que
               // la position est connue, sans rien taper ni rien tirer.
-              chercheDesLOuverture={phraseVenue ? undefined : 'manger'}
+              chercheDesLOuverture={phraseVenue || !ouvertureSur ? undefined : ouvertureSur}
               onResultats={setFiches}
               selectionId={choisie}
               onSelection={setChoisie}
