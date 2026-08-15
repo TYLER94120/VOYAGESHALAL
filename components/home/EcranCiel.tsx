@@ -1,6 +1,7 @@
 'use client'
 import { useMemo, useState } from 'react'
 import Link from 'next/link'
+import { croisement, phraseCroisement } from '@/lib/croisementPriere.mjs'
 import { CIELS } from '@/lib/cielDuMoment.mjs'
 import { filtresDisponibles, appliquer } from '@/lib/propositions.mjs'
 
@@ -65,12 +66,20 @@ function FicheMini({ f }: { f: FicheEcran }) {
 
 export default function EcranCiel({
   ciel, lieu, exacte, priere, fiches, ruban, onOuvrirHoraires, horairesOuverts, horaires, qibla,
-  mode, verdict,
+  mode, verdict, finPriere, partEcoulee,
 }: {
   ciel: keyof typeof CIELS
   lieu: string
   exacte: boolean
   priere: { nom: string; reste: string; urgent: boolean } | null
+  /**
+   * ⏱️ L'heure de FIN de la fenêtre courante. C'est elle qui permet le
+   * croisement prière × distance — « il te reste 11 min pour partir ».
+   * `null` quand on ne la connaît pas : alors on n'écrit rien du tout.
+   */
+  finPriere: Date | null
+  /** La part écoulée de la fenêtre, de 0 à 1 — la jauge de temps. */
+  partEcoulee: number | null
   fiches: FicheEcran[]
   ruban: string
   onOuvrirHoraires: () => void
@@ -199,6 +208,24 @@ export default function EcranCiel({
               {tete.ouvert === true && <span style={{ color: '#4FD69C', fontWeight: 600 }}> · ouvert</span>}
               {tete.ouvert === false && <span style={{ color: 'rgba(255,255,255,.6)' }}> · fermé</span>}
             </p>
+            {/* ⏱️ LE CROISEMENT PRIÈRE × DISTANCE — ce que personne d'autre
+                ne peut écrire. Google Maps connaît la distance mais pas ta
+                prière ; une application de prière connaît ta prière mais pas
+                le restaurant. Nous avons les deux dans le même écran.
+                Et surtout : « il te reste 11 min pour partir ». Une distance
+                laisse hésiter ; un compte à rebours fait décider. */}
+            {(() => {
+              if (!finPriere || !priere) return null
+              const c = croisement({ distanceM: tete.distanceM, mode: 'pied', finPriere, categorie: mode === 'priere' ? 'mosquee' : 'manger', aller: mode === 'priere' })
+              const ph = phraseCroisement(c, priere.nom)
+              if (!ph) return null
+              return (
+                <p style={{ display: 'flex', gap: 8, fontSize: 13, lineHeight: 1.45, margin: '9px 0 0', padding: '9px 11px', borderRadius: 12, background: 'rgba(0,0,0,.26)' }}>
+                  <span aria-hidden>⏱️</span>
+                  <span style={{ color: c?.etat === 'large' ? '#4FD69C' : c?.etat === 'juste' ? '#FFC978' : 'rgba(255,255,255,.82)' }}>{ph}</span>
+                </p>
+              )
+            })()}
             <p style={{ fontSize: 12.5, lineHeight: 1.4, margin: '8px 0 0', color: 'rgba(255,255,255,.66)' }}>
               {tete.statut ?? 'Statut halal non confirmé — à vérifier sur place'}
               {tete.alcool === 'non' && <> · <b style={{ color: '#FFC978', fontWeight: 600 }}>✓ Ne sert pas d&apos;alcool</b></>}
@@ -281,6 +308,20 @@ export default function EcranCiel({
         </span>
         <span style={{ marginLeft: 'auto', fontSize: 15, color: 'rgba(255,255,255,.5)' }} aria-hidden>{horairesOuverts ? '⌃' : '⌄'}</span>
       </button>
+
+      {/* ⏳ LA JAUGE DE TEMPS — la fenêtre de prière qui s'écoule.
+          « Se termine dans 31 min » est un chiffre qu'il faut lire. Ce trait
+          se lit sans lire : on voit d'un coup d'œil si on est au début ou à
+          la fin. Il passe à l'ambre au dernier cinquième — le moment où on
+          arrête de flâner. La forme porte l'information, elle ne décore pas. */}
+      {partEcoulee != null && (
+        <div style={{ height: 3, borderRadius: 2, background: 'rgba(255,255,255,.14)', overflow: 'hidden' }}
+          role="progressbar" aria-valuemin={0} aria-valuemax={100}
+          aria-valuenow={Math.round(partEcoulee * 100)}
+          aria-label={`Fenêtre de ${priere?.nom ?? 'prière'} écoulée à ${Math.round(partEcoulee * 100)} %`}>
+          <span style={{ display: 'block', height: '100%', borderRadius: 2, width: `${Math.min(100, Math.max(2, partEcoulee * 100))}%`, background: partEcoulee > 0.8 ? '#FFC978' : accent }} />
+        </div>
+      )}
 
       {horairesOuverts && (
         <div style={{ background: 'rgba(255,255,255,.07)', border: '1px solid rgba(255,255,255,.1)', borderRadius: 16, padding: '11px 13px' }}>

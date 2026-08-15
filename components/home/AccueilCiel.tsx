@@ -84,6 +84,21 @@ export default function AccueilCiel({ posInitiale, en }: {
           ? { nom: suiv, urgent: min <= 30, reste: min >= 60 ? `dans ${Math.floor(min / 60)} h ${String(min % 60).padStart(2, '0')}` : `dans ${min} min` }
           : null,
         minutes: min,
+        // ⏱️ La FIN de la fenêtre courante, et la part déjà écoulée.
+        // C'est ce couple qui permet la jauge de temps et le croisement
+        // prière × distance. Sans lui, on n'écrit rien : on ne devine pas
+        // une heure de prière.
+        finPriere: suiv ? (h[suiv] as Date) : null,
+        partEcoulee: (() => {
+          const i = ordre.indexOf(suiv as typeof ordre[number])
+          if (i < 0) return null
+          // Le début de la fenêtre courante : la prière précédente. Avant
+          // Fajr, la fenêtre est celle d'Isha — elle traverse minuit.
+          const debut = i === 0 ? (h.Isha as Date).getTime() - 86_400_000 : (h[ordre[i - 1]] as Date).getTime()
+          const fin = (h[suiv as typeof ordre[number]] as Date).getTime()
+          if (!(fin > debut)) return null
+          return Math.min(1, Math.max(0, (now - debut) / (fin - debut)))
+        })(),
         qibla: qiblaDe(lat, lng),
       }
     } catch { return null }
@@ -142,6 +157,8 @@ export default function AccueilCiel({ posInitiale, en }: {
         ruban={ruban}
         mode={mode}
         verdict={null}
+        finPriere={calc?.finPriere ?? null}
+        partEcoulee={calc?.partEcoulee ?? null}
       />
     </>
   )

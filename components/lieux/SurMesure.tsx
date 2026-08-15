@@ -1036,7 +1036,11 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
           </p>
         )}
 
-        {aVoir.length > 0 && (
+        {/* 🔴 SUR L'ACCUEIL, LES FICHES SONT RENDUES PAR L'ÉCRAN DES CIELS.
+            Elles s'affichaient DEUX FOIS : une liste ici, la même adresse en
+            carte dominante juste en dessous. Une réponse donnée deux fois
+            n'est pas deux fois plus utile — elle fait douter d'avoir compris. */}
+        {!titrePage && aVoir.length > 0 && (
           <div style={{ marginTop: 14, display: 'flex', flexDirection: 'column', gap: 12 }}>
             {aVoir.map((f, i) => (
               <Carte key={f.id ?? i} f={f} en={en} mode={mode} destination={!!destination}
