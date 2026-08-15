@@ -600,7 +600,20 @@ body { top: 0 !important; }
   padding: 4px 0;
   transition: color 0.15s;
 }
+/* 🔎 L'ONGLET ACTIF SE DISTINGUE AU PREMIER COUP D'ŒIL (Mohamed, 15 août :
+   « la barre du bas doit montrer clairement où l'on se trouve »). La
+   couleur dorée seule ne suffisait pas sur un fond nuit : un trait plein
+   au-dessus de l'onglet se lit sans qu'on le cherche, et il fonctionne
+   aussi pour qui distingue mal les couleurs. */
+.bottom-nav-item { position: relative; }
 .bottom-nav-item.active { color: var(--or); }
+.bottom-nav-item.active::before {
+  content: ''; position: absolute; top: 0; left: 22%; right: 22%;
+  height: 3px; border-radius: 0 0 3px 3px; background: var(--or);
+}
+/* Le bouton ➕ central est déjà une pastille pleine : un trait au-dessus
+   ferait doublon et salirait sa forme. */
+.bottom-nav-plus.active::before { display: none; }
 .bottom-nav-icon { font-size: 22px; line-height: 1; }
 .bottom-nav-label { font-size: 10px; font-weight: 700; }
 /* ➕ Ajouter : pastille OR surélevée au centre — l'action la plus précieuse
@@ -998,6 +1011,16 @@ body:has(.autour-plein) { padding-bottom: 0 !important; }
    basse vaut la hauteur de cette barre PLUS la barre gestuelle de l'iPhone
    (env(safe-area-inset-bottom)), qu'aucun pixel fixe ne peut deviner. */
 .autour-moteur { background: var(--nuit); padding: 12px 12px calc(96px + env(safe-area-inset-bottom, 0px)); min-height: 100%; }
+/* 🏠 La porte de sortie : au-dessus de la carte ET de la feuille (z-index
+   supérieur), jamais masquée, 44 px de cible tactile. */
+.autour-retour {
+  position: absolute; z-index: 700; top: 10px; left: 10px;
+  min-height: 44px; display: inline-flex; align-items: center; padding: 0 15px;
+  border-radius: 999px; text-decoration: none;
+  background: rgba(11, 26, 15, 0.92); color: var(--or);
+  font-weight: 800; font-size: 14.5px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.28);
+}
 .autour-recentrer {
   position: absolute; z-index: 550; right: 12px; bottom: calc(52dvh + 12px);
   width: 48px; height: 48px; border-radius: 999px; border: 1px solid rgba(27,67,50,0.18);
@@ -1023,7 +1046,18 @@ body:has(.autour-plein) { padding-bottom: 0 !important; }
     transition: none;
   }
   .autour-poignee { cursor: default; }
-  .autour-recentrer { bottom: 24px; right: 24px; }
+  /* 🏠 La porte de sortie : au-dessus de la carte ET de la feuille (z-index
+   supérieur), jamais masquée, 44 px de cible tactile. */
+.autour-retour {
+  position: absolute; z-index: 700; top: 10px; left: 10px;
+  min-height: 44px; display: inline-flex; align-items: center; padding: 0 15px;
+  border-radius: 999px; text-decoration: none;
+  background: rgba(11, 26, 15, 0.92); color: var(--or);
+  font-weight: 800; font-size: 14.5px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.28);
+}
+.autour-recentrer { bottom: 24px; right: 24px; }
   .autour-trait { display: none; }
   .autour-barre { left: 436px; }
+  .autour-retour { left: 24px; top: 16px; }
 }

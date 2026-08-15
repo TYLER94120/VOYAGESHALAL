@@ -53,6 +53,39 @@ const DELAI = 4000
 const DELAI_OSM = 8500
 const QUOTA_HEURE = 20
 const CACHE_S = 24 * 3600
+
+/**
+ * 🔴 LA VERSION DU MOTEUR — ELLE FAIT PARTIE DE LA CLÉ DE CACHE.
+ *
+ * DÉFAUT CONSTATÉ PAR MOHAMED, 15 août à 13 h 55 : « Le tri est corrigé côté
+ * code, mais les réponses mises en cache AVANT le correctif continuent
+ * d'être servies. On corrige un moteur et on continue à distribuer les
+ * vieilles réponses. » Il recevait encore Clichy-sous-Bois à 31 minutes,
+ * avec Dhuhr dans 51 SECONDES, plusieurs heures après le déploiement.
+ *
+ * Il avait raison, et c'est un défaut de conception, pas un oubli : un cache
+ * de 24 h rend TOUT correctif invisible pendant 24 h. Le code est juste, le
+ * visiteur reçoit du faux, et personne ne comprend pourquoi.
+ *
+ * ════════ LA RÈGLE, DÉSORMAIS ════════
+ *
+ * Cette chaîne entre dans la clé de cache. Changer la logique de recherche
+ * — le classement, le rayon, les champs demandés, les filtres — IMPOSE de
+ * changer cette version. Toutes les entrées précédentes deviennent alors
+ * inatteignables d'elles-mêmes : c'est une purge instantanée qui ne demande
+ * ni accès à la base, ni intervention de Mohamed, ni attente.
+ *
+ * Les vieilles clés ne sont pas effacées : elles expirent seules au bout de
+ * leurs 24 h. Ça ne coûte rien — Redis les oublie — et surtout ça évite un
+ * balayage de clés en production, qui est lent et risqué.
+ *
+ * HISTORIQUE (garder la trace : elle explique pourquoi une version saute) :
+ *   v1 — tri par pertinence Google, rayons serrés par nature de demande
+ *   v2 — rankPreference DISTANCE, rayon 20 km, tri du plus proche au plus
+ *        lointain, porte par catégorie (Prier n'accepte que des lieux de
+ *        culte), mots du visiteur envoyés tels quels à Google
+ */
+const VERSION_MOTEUR = 'v2'
 const CANDIDATS = 15
 const RETENUS = 3
 const AUTRES = 4
@@ -614,7 +647,7 @@ export async function POST(req: Request) {
   // ⚠️ Les mots tapés ENTRENT dans l'empreinte : sans eux, « pizza » se
   // faisait resservir le résultat de « kebab » — le cache reproduisait à
   // lui seul le défaut qu'on vient de corriger.
-  const empreinte = `${zone}:${c.categorie}:${c.quoi}:${(c.motsCles ?? '').toLowerCase()}:${profil.regime}:${profil.sansGluten ? 1 : 0}:${profil.sansLactose ? 1 : 0}:${profil.objectif}:${c.mode}:${c.budget}:${c.exigence}:${c.ouvertMaintenant ? 1 : 0}:${lang}`
+  const empreinte = `${VERSION_MOTEUR}:${zone}:${c.categorie}:${c.quoi}:${(c.motsCles ?? '').toLowerCase()}:${profil.regime}:${profil.sansGluten ? 1 : 0}:${profil.sansLactose ? 1 : 0}:${profil.objectif}:${c.mode}:${c.budget}:${c.exigence}:${c.ouvertMaintenant ? 1 : 0}:${lang}`
   if (r) {
     try {
       const cache = await r.get<{ fiches: Fiche[]; autres: Fiche[]; source: string }>(`surmesure:cache:${empreinte}`)
