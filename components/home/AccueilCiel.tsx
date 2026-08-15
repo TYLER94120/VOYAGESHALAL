@@ -1,5 +1,5 @@
 'use client'
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import EcranCiel, { type FicheEcran } from '@/components/home/EcranCiel'
 import SurMesure from '@/components/lieux/SurMesure'
 import { useInstantPosition } from '@/lib/useInstantPosition'
@@ -33,6 +33,33 @@ export default function AccueilCiel({ posInitiale, en }: {
   const { pos, source } = useInstantPosition(en)
   const [fiches, setFiches] = useState<FicheEcran[]>([])
   const [ouvert, setOuvert] = useState(false)
+  /**
+   * 🔴🔴 ON NE S'OUVRE PLUS SUR DES RESTAURANTS.
+   *
+   * Mohamed, 16 août : « Dès qu'on ouvre la page d'accueil, il y a déjà des
+   * restaurants d'ouverts, et ça, ce n'est pas bon. » Il a raison, et ça
+   * rejoint ce qu'il avait écrit plus tôt : « VoyagesHalal n'est pas une
+   * appli de restauration. S'ouvrir sur un traiteur, c'est perdre le voyage
+   * ET la prière d'un coup. »
+   *
+   * Une adresse ne s'impose donc QUE si le moment la justifie :
+   *   · une prière dans moins d'une heure → la mosquée, c'est urgent ;
+   *   · la nuit → la Qibla, et rien à chercher ;
+   *   · quelqu'un qui REVIENT, à l'heure d'un repas → il sait ce qu'il
+   *     vient chercher, on lui répond.
+   * Sinon : les quatre portes, et il choisit. Un premier visiteur découvre
+   * un site, il ne cherche pas un dîner.
+   *
+   * Effet de bord heureux : aucun appel à Google pour un visiteur qui ne
+   * demande rien. Le quota sert à ceux qui cherchent vraiment.
+   */
+  const [dejaVenu, setDejaVenu] = useState<boolean | null>(null)
+  useEffect(() => {
+    try {
+      setDejaVenu(localStorage.getItem('vh_deja_venu') === '1')
+      localStorage.setItem('vh_deja_venu', '1')
+    } catch { setDejaVenu(false) }
+  }, [])
 
   const lat = pos?.lat ?? posInitiale?.lat
   const lng = pos?.lng ?? posInitiale?.lng
@@ -73,15 +100,19 @@ export default function AccueilCiel({ posInitiale, en }: {
   // CE SOIR" » — une proposition, pas une injonction.
   const { categorie, ruban, mode } = useMemo(() => {
     const nuit = heure >= 23 || heure < 5
-    if (nuit) return { categorie: 'mosquee' as const, ruban: '🧭 Tourne-toi vers La Mecque', mode: 'nuit' as const }
+    // La nuit : la Qibla, et RIEN à chercher — donc aucun appel.
+    if (nuit) return { categorie: undefined, ruban: '🧭 Tourne-toi vers La Mecque', mode: 'nuit' as const }
+    // La prière passe devant à moins d'une heure. C'est le seul cas où une
+    // adresse s'impose sans qu'on ait rien demandé — et elle est urgente.
     if (calc?.minutes != null && calc.minutes <= 60) {
       return { categorie: 'mosquee' as const, ruban: '🕌 Tu peux y être à temps', mode: 'priere' as const }
     }
-    if (heure >= 11 && heure < 14) return { categorie: 'manger' as const, ruban: '🍽 Où déjeuner, tout près', mode: 'normal' as const }
-    if (heure >= 19 && heure < 23) return { categorie: 'manger' as const, ruban: '🍽 À côté de toi ce soir', mode: 'normal' as const }
-    if (heure >= 14 && heure < 19) return { categorie: 'activite' as const, ruban: '🎯 À faire autour de toi', mode: 'normal' as const }
-    return { categorie: 'manger' as const, ruban: '🍽 À cinq minutes de toi', mode: 'normal' as const }
-  }, [calc?.minutes, heure])
+    // Un visiteur qui REVIENT, à l'heure d'un repas : on répond.
+    if (dejaVenu === true && heure >= 11 && heure < 14) return { categorie: 'manger' as const, ruban: '🍽 Où déjeuner, tout près', mode: 'normal' as const }
+    if (dejaVenu === true && heure >= 19 && heure < 23) return { categorie: 'manger' as const, ruban: '🍽 À côté de toi ce soir', mode: 'normal' as const }
+    // Tout le reste — et notamment le premier visiteur : les quatre portes.
+    return { categorie: undefined, ruban: '', mode: 'portes' as const }
+  }, [calc?.minutes, heure, dejaVenu])
 
   return (
     <>

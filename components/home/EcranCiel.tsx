@@ -83,8 +83,11 @@ export default function EcranCiel({
    *   priere  : la mosquée domine, et on ne filtre pas une mosquée.
    *   voyage  : le verdict d'arrivée, en texte, avec ses trois jauges.
    *   normal  : la réponse, puis les quatre portes de même poids.
+   *   portes  : AUCUNE adresse imposée — les quatre portes, et il choisit.
+   *             C'est le cas du premier visiteur, et de toute heure où rien
+   *             ne justifie qu'on décide à sa place.
    */
-  mode: 'nuit' | 'priere' | 'voyage' | 'normal'
+  mode: 'nuit' | 'priere' | 'voyage' | 'normal' | 'portes'
   verdict: { ville: string; titre: string; lignes: string[]; attention: string | null; jauges: { nom: string; note: number | null }[] } | null
 }) {
   const accent = CIELS[ciel].accent
@@ -200,6 +203,15 @@ export default function EcranCiel({
         </article>
       )}
 
+      {/* 🔴 EN MODE « PORTES », ON NE MONTRE AUCUNE ADRESSE. Le visiteur
+          vient d'arriver : il découvre un site, il ne cherche pas un dîner.
+          On lui donne sa position, l'heure de la prière, et les portes. */}
+      {mode === 'portes' && (
+        <p style={{ fontSize: 16, lineHeight: 1.5, margin: 0, color: 'rgba(255,255,255,.82)' }}>
+          Où veux-tu aller ?
+        </p>
+      )}
+
       {(mode === 'normal' || mode === 'priere') && (tete ? (
         <article style={{ borderRadius: 22, overflow: 'hidden', background: 'rgba(255,255,255,.09)', border: '1px solid rgba(255,255,255,.16)' }}>
           <div style={{ fontSize: 11.5, fontWeight: 700, letterSpacing: '.1em', textTransform: 'uppercase', padding: '9px 16px', background: accent, color: '#141018' }}>
@@ -244,7 +256,7 @@ export default function EcranCiel({
       ))}
 
       {/* ④ UNE OU DEUX FICHES SECONDAIRES */}
-      {mode !== 'nuit' && suite.slice(0, 2).map((f) => <FicheMini key={f.id ?? f.nom} f={f} />)}
+      {mode !== 'nuit' && mode !== 'portes' && suite.slice(0, 2).map((f) => <FicheMini key={f.id ?? f.nom} f={f} />)}
 
       {/* ⑤ LES TROIS FILTRES */}
       {mode === 'normal' && dispo.length > 0 && (
