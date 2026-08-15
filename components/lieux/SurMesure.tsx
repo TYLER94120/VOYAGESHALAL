@@ -1,13 +1,14 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { CRITERES_DEFAUT, lireDemande, relance, resumerCriteres, type Categorie, type Criteres } from '@/lib/criteres'
 import { lireIntention } from '@/lib/villesIndex'
 import type { VilleLue } from '@/lib/lireVille.mjs'
 import { trajet, type Mode } from '@/lib/trajet'
 import { ligneAlcool, mentionPermanente } from '@/lib/alcool.mjs'
-import { choisirPourMoi, pistes as genererPistes, type Piste } from '@/lib/pistes'
+import { choisirPourMoi } from '@/lib/pistes'
+import { propositions, filtrer } from '@/lib/propositions.mjs'
 import {
   PROFIL_VIDE, consigneProfilIA, ecrireProfil, lireProfil, ligneAllergie,
   mentionneAllergie, oublierProfil, profilVide, resumerProfil, type Profil,
@@ -168,7 +169,14 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
   const [aEcrit, setAEcrit] = useState(false)
   // ✨ L'aide au choix : quelle catégorie est ouverte, et les pistes du
   // moment. `null` = zone fermée, on n'a encore rien demandé.
-  const [aide, setAide] = useState<{ cat: 'manger' | 'mosquee' | 'activite'; pistes: Piste[] } | null>(null)
+  const [aide, setAide] = useState<{ cat: 'manger' | 'mosquee' | 'activite' } | null>(null)
+  /**
+   * ✨ LA PROPOSITION ACTIVE. Elle ne relance rien : elle trie les adresses
+   * qu'on a déjà en main. Le clic est donc instantané, il ne consomme aucun
+   * quota, et il ne peut PAS aboutir sur une liste vide — le filtre a été
+   * appliqué avant même que le bouton n'apparaisse.
+   */
+  const [filtre, setFiltre] = useState<string | null>(null)
   const [raisonIA, setRaisonIA] = useState('')
   // 👤 Le profil vit dans le TÉLÉPHONE. On le lit après le montage : le
   // serveur ne le connaît pas, et le HTML servi ne doit pas en dépendre.
@@ -182,6 +190,9 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
   /** ⏱️ Le temps qui reste avant la prière, au moment de la recherche.
    *  « Dhuhr dans 19 min : voici ce que tu peux atteindre avant. » */
   const [urgence, setUrgence] = useState<{ nom: string; minutes: number } | null>(null)
+  /** La prochaine prière, quelle que soit la catégorie : les propositions
+   *  doivent en tenir compte même quand on cherche où manger. */
+  const [prochainePriere, setProchainePriere] = useState<{ nom: string; minutes: number } | null>(null)
   useEffect(() => { setProfil(lireProfil()) }, [])
   // 🔗 La recherche apportée par l'accueil part toute seule : « rien à
   // retaper » (§2.5). Une seule fois, au montage.
@@ -251,9 +262,6 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
     return { heure: d.getHours(), jour: d.getDay(), priere: pos ? avantPriere(pos) : null }
   }
 
-  function pistesDuMoment(cat: 'manger' | 'mosquee' | 'activite'): Piste[] {
-    return genererPistes(cat, contexte(), en)
-  }
 
   /** 👤 « Je retiens ? Tu n'auras plus à le redire. » On ne mémorise
    *  JAMAIS sans le demander : le profil appartient au visiteur. */
@@ -330,7 +338,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
   async function lancer(c: Criteres, ecrit: boolean, forcerGPS = false, ville?: { lat: number; lng: number; nom: string } | null) {
     if (enCours.current) return
     enCours.current = true
-    setProse(''); setFiches([]); setAutres([]); setVoirAutres(false); setPanne(null); setEtape('cherche')
+    setProse(''); setFiches([]); setAutres([]); setVoirAutres(false); setPanne(null); setFiltre(null); setEtape('cherche')
     // Dès le clic, la vue descend sur la zone de réponse : le squelette y
     // est déjà, donc le visiteur SAIT que son geste a été pris en compte.
     requestAnimationFrame(() => zoneResultats.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }))
@@ -382,7 +390,11 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
       requestAnimationFrame(() => {
         setTimeout(() => zoneResultats.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 60)
       })
-      const pr = c.categorie === 'mosquee' ? avantPriere(pos) : null
+      // Calculée dans tous les cas : c'est elle qui permet de proposer
+      // « atteignable avant Maghrib » sur une recherche de restaurant.
+      const prTous = avantPriere(pos)
+      setProchainePriere(prTous)
+      const pr = c.categorie === 'mosquee' ? prTous : null
       // Moins de 30 minutes : on le DIT, et on met en avant ce qui est
       // atteignable à temps. Rater une prière parce qu'on a suivi notre
       // conseil serait le pire service qu'on puisse rendre.
@@ -500,6 +512,15 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
     color: on ? 'var(--or)' : 'var(--creme)', fontWeight: on ? 800 : 700, fontSize: 14,
   })
   const rangee: React.CSSProperties = { display: 'flex', gap: 7, flexWrap: 'wrap', marginTop: 8 }
+  // ✨ Ce qu'on a en main, et ce qu'on peut honnêtement en proposer.
+  // `autres` compte : une proposition qui ne trierait que trois adresses
+  // n'aurait presque jamais de quoi exister.
+  const toutes = useMemo(() => [...fiches, ...autres], [fiches, autres])
+  const ctxProp = useMemo(() => ({ priere: prochainePriere }), [prochainePriere])
+  const lesPropositions = useMemo(() => propositions(toutes, ctxProp, en), [toutes, ctxProp, en])
+  /** La liste affichée : filtrée si une proposition est active. */
+  const aVoir = useMemo(() => (filtre ? filtrer(toutes, filtre, ctxProp).slice(0, 6) : fiches), [filtre, toutes, fiches, ctxProp])
+
   /** Le délai, écrit comme on le dirait. Zéro seconde connue → « bientôt ». */
   function attente(secondes: number | undefined, anglais: boolean): string {
     const s = Number(secondes ?? 0)
@@ -630,7 +651,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
               // qui sont le catalogue et mènent aux pages du site.
               onClick={() => {
                 setCrit((c) => ({ ...c, categorie: v }))
-                setAide({ cat: v, pistes: pistesDuMoment(v) })
+                setAide({ cat: v })
                 setRaisonIA('')
                 compter(`cat-${v}`)
               }}
@@ -746,32 +767,22 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
           )}
         </div>
 
-        {/* ── TEMPS 2 — L'IA AIDE À CHOISIR ─────────────────────────
-            Les pistes viennent du CONTEXTE du moment : l'heure, la
-            prochaine prière, le jour. À 23 h on ne propose pas « déjeuner
-            en famille » ; 20 minutes avant Maghrib, on propose ce qui est
-            atteignable à pied. Elles sont écrites dans lib/pistes.ts et
-            non générées librement : une piste est du contenu comme un
-            autre, et aucune ne peut mener à un lieu de boisson. */}
+        {/* ── TEMPS 2 — UN SEUL RACCOURCI, ET IL PART VRAIMENT CHERCHER ──
+            Il ne reste ici que « choisis pour moi », parce que lui lance une
+            recherche réelle et respecte l'onglet actif. Les propositions,
+            elles, s'affichent sous les résultats : elles sont calculées à
+            partir des adresses trouvées, donc chacune tient parole. */}
         {aide && etape !== 'cherche' && (
           <div className="board-pousse" style={{ marginTop: 12, paddingTop: 11, borderTop: '1px solid rgba(253,250,243,0.12)' }}>
-            <p style={{ color: 'rgba(253,250,243,0.6)', fontSize: 12, fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', margin: 0 }}>
-              {t('Je te propose', 'Suggestions')}
-            </p>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 7, marginTop: 8 }}>
-              {aide.pistes.map((pi) => (
-                <button key={pi.id}
-                  onClick={() => {
-                    const c = { ...crit, ...pi.patch } as Criteres
-                    setCrit(c); setAEcrit(false); setRaisonIA(''); compter('piste')
-                    lancer(c, false)
-                  }}
-                  style={{ ...puce(false), justifyContent: 'flex-start', textAlign: 'left', minHeight: 48, padding: '0 14px', display: 'flex', alignItems: 'center', width: '100%' }}>
-                  {t(pi.fr, pi.en)}
-                </button>
-              ))}
-            </div>
-
+            {/* 🔴 LES PISTES ÉCRITES EN DUR ONT ÉTÉ SUPPRIMÉES ICI.
+                « À l'abri s'il pleut », « avec un espace pour les femmes »,
+                « sans rien dépenser », « en deux heures à pied », « en
+                famille pour s'asseoir » : cinq promesses derrière lesquelles
+                Google n'expose AUCUN filtre. Elles rendaient la même liste
+                que tout le reste — des coquilles vides.
+                Les propositions vivent maintenant sous les résultats, et
+                elles sont calculées sur les adresses réellement trouvées :
+                voir lib/propositions.mjs. */}
             {/* ✨ Le bouton que Mohamed voulait retrouver. */}
             <button
               onClick={() => {
@@ -983,9 +994,35 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
           <p style={{ color: 'var(--or)', fontSize: 13.5, fontWeight: 700, marginTop: 12, lineHeight: 1.5 }}>✨ {raisonIA}</p>
         )}
 
-        {fiches.length > 0 && (
+        {/* ✨ LES PROPOSITIONS, CALCULÉES SUR CE QUI EXISTE VRAIMENT AUTOUR.
+            Elles sont placées ICI, juste au-dessus des adresses : « les
+            résultats apparaissent là où je regarde, sans que j'aie à
+            défiler ». Chacune porte son compte — le filtre a déjà été
+            appliqué pour l'obtenir, donc aucune ne peut mener à du vide.
+            Un clic trie la liste sous les yeux : instantané, zéro appel. */}
+        {etape === 'resultat' && lesPropositions.length > 0 && (
+          <div style={{ marginTop: 14 }}>
+            <p style={{ color: 'rgba(253,250,243,0.55)', fontSize: 11.5, fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', margin: '0 0 8px' }}>
+              {t('Parmi ces adresses', 'Among these places')}
+            </p>
+            <div style={rangee}>
+              {lesPropositions.map((pr) => (
+                <button key={pr.id} aria-pressed={filtre === pr.id}
+                  onClick={() => { const v = filtre === pr.id ? null : pr.id; setFiltre(v); compter('piste') }}
+                  style={puce(filtre === pr.id)}>{pr.libelle}</button>
+              ))}
+              {filtre && (
+                <button onClick={() => setFiltre(null)} style={{ ...puce(false), border: 'none', background: 'none', color: 'rgba(253,250,243,0.6)', textDecoration: 'underline' }}>
+                  {t('Tout revoir', 'Show all')}
+                </button>
+              )}
+            </div>
+          </div>
+        )}
+
+        {aVoir.length > 0 && (
           <div style={{ marginTop: 14, display: 'flex', flexDirection: 'column', gap: 12 }}>
-            {fiches.map((f, i) => (
+            {aVoir.map((f, i) => (
               <Carte key={f.id ?? i} f={f} en={en} mode={mode} destination={!!destination}
                 allergie={mentionneAllergie(profil)}
                 choisie={!!f.id && f.id === selectionId}
