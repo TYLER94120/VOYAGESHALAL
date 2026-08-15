@@ -990,6 +990,22 @@ body:has(.autour-plein) { padding-bottom: 0 !important; }
   display: block; width: 42px; height: 4px; margin: 0 auto 7px;
   border-radius: 2px; background: rgba(27, 67, 50, 0.28);
 }
+/* Le moteur commun est rendu sur fond nuit (c'est sa peau partout ailleurs) :
+   la feuille prend la même couleur autour de lui plutôt que de laisser une
+   bande crème derrière des fiches sombres. */
+.autour-moteur { background: var(--nuit); padding: 12px 12px 26px; min-height: 100%; }
+.autour-recentrer {
+  position: absolute; z-index: 550; right: 12px; bottom: calc(52dvh + 12px);
+  width: 48px; height: 48px; border-radius: 999px; border: 1px solid rgba(27,67,50,0.18);
+  background: rgba(253,250,243,0.96); font-size: 20px; cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+}
+.autour-zone {
+  position: absolute; z-index: 550; left: 50%; transform: translateX(-50%);
+  top: 72px; min-height: 44px; padding: 0 18px; border: none; border-radius: 999px;
+  background: var(--nuit); color: var(--or); font-weight: 800; font-size: 14px;
+  cursor: pointer; box-shadow: 0 4px 16px rgba(0,0,0,0.22);
+}
 .autour-liste { flex: 1; overflow-y: auto; -webkit-overflow-scrolling: touch; overscroll-behavior: contain; }
 
 /* 🖥️ Sur ordinateur, la place horizontale existe : on s'en sert. Les fiches
@@ -1003,6 +1019,7 @@ body:has(.autour-plein) { padding-bottom: 0 !important; }
     transition: none;
   }
   .autour-poignee { cursor: default; }
+  .autour-recentrer { bottom: 24px; right: 24px; }
   .autour-trait { display: none; }
   .autour-barre { left: 436px; }
 }
