@@ -25,6 +25,8 @@
 // que l'INTENTION du visiteur. Aucune de ces valeurs ne devient une
 // affirmation sur un restaurant.
 
+import { motsUtiles } from '@/lib/requete.mjs'
+
 export type Quoi = 'pizza' | 'kebab' | 'burger' | 'oriental' | 'asiatique' | 'petit-dejeuner' | 'patisserie' | 'peu-importe'
 // 🚶 COMMENT TU Y VAS — ce n'est pas seulement de l'affichage : le mode
 // change le RAYON et le TRI (§5.3 de l'ordre du 15 août au soir).
@@ -48,6 +50,26 @@ export interface Criteres {
   sansAlcool: boolean
   famille: boolean
   vegetarien: boolean
+  /**
+   * 🔴 LES MOTS DU VISITEUR, TELS QU'IL LES A ÉCRITS.
+   *
+   * DÉFAUT CONSTATÉ PAR MOHAMED, 15 août : « Je tape kebab → Master Poulet.
+   * Je tape pizza → Master Poulet. Je tape autre chose → Master Poulet. Ce
+   * n'est pas du sur mesure, c'est une liste des lieux les plus proches à
+   * laquelle on a collé une barre de recherche. »
+   *
+   * Il avait raison, et la cause était ici : la phrase était réduite à une
+   * liste FERMÉE de sept valeurs (`quoi`). « pâtisserie orientale » devenait
+   * `patisserie` et perdait « orientale » ; « couscous », « tacos »,
+   * « poulet braisé » ne correspondaient à rien et devenaient
+   * « peu-importe », donc « halal restaurant » — une requête générique où le
+   * mot tapé n'existe plus.
+   *
+   * Ce champ garde les mots utiles de la phrase et les envoie TELS QUELS à
+   * la recherche textuelle de Google. La liste fermée ne sert plus qu'à
+   * cocher les boutons de correction et à choisir le rayon.
+   */
+  motsCles?: string
   /** Ce que la phrase a laissé deviner sans certitude — sert à la relance. */
   moment?: 'maintenant' | 'ce-soir'
   compagnie?: 'seul' | 'famille' | 'amis'
@@ -120,8 +142,12 @@ export function lireDemande(phrase: string): Criteres {
     if (dejaFixe && champ !== 'moment' && champ !== 'compagnie') continue
     ;(c as unknown as Record<string, unknown>)[champ] = valeur
   }
+  // 🔴 On garde les mots du visiteur. Sans ça, « pâtisserie orientale »
+  // arrivait chez Google en « halal bakery pastry » — sans « orientale ».
+  c.motsCles = motsUtiles(phrase)
   return c
 }
+
 
 /** Libellés affichés dans les boutons « J'ai compris : … ». */
 export function resumerCriteres(c: Criteres, en: boolean): string[] {

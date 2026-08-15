@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server'
 import { Redis } from '@upstash/redis'
+import { requeteGoogle } from '@/lib/requete.mjs'
 import { listAllSpots } from '@/lib/prayerSpots'
 import { CRITERES_DEFAUT, type Criteres } from '@/lib/criteres'
 import { minutes, modeSuivant, plafondMin, rayonM, type Mode } from '@/lib/trajet'
@@ -149,12 +150,8 @@ const CATEGORIE: Record<'manger' | 'mosquee' | 'activite', { texte: (q: string) 
   },
 }
 
-const TEXTE: Record<Criteres['quoi'], string> = {
-  pizza: 'halal pizza', kebab: 'halal kebab', burger: 'halal burger',
-  oriental: 'halal middle eastern restaurant', asiatique: 'halal asian restaurant',
-  'petit-dejeuner': 'halal breakfast', patisserie: 'halal bakery pastry',
-  'peu-importe': 'halal restaurant',
-}
+// La requête envoyée à Google vit dans lib/requete.mjs : source unique,
+// vérifiée par scripts/test-requete.mjs avant chaque build.
 
 // ─────────────────────── nos spots vérifiés ───────────────────────
 
@@ -204,6 +201,11 @@ interface Candidat {
   id: string; nom: string; lat: number; lng: number
   note?: number; nbAvis?: number; prix?: number; ouvert?: boolean; adresse?: string
   distanceM: number
+  /** 🔴 LE RANG DE PERTINENCE RENDU PAR GOOGLE, 0 = le plus pertinent.
+   *  Google classe déjà ses résultats selon la requête ; nous jetions ce
+   *  classement pour tout re-trier à la distance. D'où « kebab → Master
+   *  Poulet » : le plus proche gagnait toujours, quel que soit le mot tapé. */
+  rang: number
   primaryType?: string; types?: string[]
   /** Renseigné par la passe intermédiaire. `undefined` = inconnu. */
   servesBeer?: boolean; servesWine?: boolean; servesCocktails?: boolean
@@ -260,6 +262,59 @@ async function lireRefus(r: Response): Promise<Refus> {
 /** Ce qu'on retient du dernier refus, pour le remonter jusqu'à la réponse. */
 type Journal = { refus?: Refus }
 
+/**
+ * 🍽️ UN LIEU QUI SERT À MANGER N'EST PAS UNE ACTIVITÉ.
+ *
+ * Défaut constaté par Mohamed, 15 août : « L'onglet activités me sort des
+ * restaurants. Les trois onglets tapent manifestement dans le même sac. »
+ *
+ * Interdiction FORMELLE des restaurants, cafés et bars dans « Que faire ».
+ * Liste de types EXACTE, jamais une expression large : un `/food/` attraperait
+ * `food_court` mais aussi `seafood`, et surtout on ne veut pas d'un filtre
+ * dont on ne sait pas ce qu'il exclut. Même prudence que le filtre alcool.
+ */
+const TYPES_NOURRITURE = new Set([
+  'restaurant', 'cafe', 'coffee_shop', 'bakery', 'bar', 'pub', 'bar_and_grill',
+  'meal_takeaway', 'meal_delivery', 'fast_food_restaurant', 'food_court',
+  'ice_cream_shop', 'sandwich_shop', 'juice_shop', 'dessert_shop', 'donut_shop',
+  'candy_store', 'confectionery', 'deli', 'diner', 'buffet_restaurant',
+  'breakfast_restaurant', 'brunch_restaurant', 'steak_house', 'pizza_restaurant',
+  'hamburger_restaurant', 'sushi_restaurant', 'ramen_restaurant', 'cafeteria',
+  'tea_house', 'wine_bar', 'night_club', 'grocery_store', 'supermarket',
+])
+/** Le filet : tout type se terminant par `_restaurant` (Google en crée
+ *  régulièrement de nouveaux — afghani_restaurant, turkish_restaurant…). */
+const MOTIF_RESTAURANT = /_restaurant$|^restaurant$/
+
+/**
+ * Le mot précis demandé, s'il ne se retrouve dans AUCUNE des fiches.
+ *
+ * On ne compare que sur un mot unique et assez long : « kebab », « pizza »,
+ * « couscous ». Une phrase entière (« un endroit calme pour dîner ») ne se
+ * vérifie pas ainsi — et prétendre le contraire produirait de faux
+ * avertissements, ce qui est pire que pas d'avertissement du tout.
+ */
+function motManquant(c: Criteres, fiches: Fiche[]): string | null {
+  const mots = (c.motsCles ?? '').trim().split(/\s+/).filter((m) => m.length >= 5)
+  if (mots.length !== 1 || !fiches.length) return null
+  const mot = mots[0].toLowerCase()
+  const present = fiches.some((f) =>
+    f.nom.toLowerCase().includes(mot) ||
+    (f.resume ?? '').toLowerCase().includes(mot) ||
+    (f.avis ?? []).some((a) => a.texte.toLowerCase().includes(mot)))
+  return present ? null : mots[0]
+}
+
+/** `true` si ce lieu sert à manger — donc n'a rien à faire dans « Que faire ». */
+export function sertAManger(primaryType?: string, types?: string[]): boolean {
+  for (const t of [primaryType, ...(types ?? [])]) {
+    if (!t) continue
+    const k = t.toLowerCase()
+    if (TYPES_NOURRITURE.has(k) || MOTIF_RESTAURANT.test(k)) return true
+  }
+  return false
+}
+
 async function passe1(lat: number, lng: number, c: Criteres, cle: string, lang: string, rayon: number, texte: string, journal?: Journal): Promise<Candidat[] | null> {
   const ac = new AbortController()
   const t = setTimeout(() => ac.abort(), DELAI)
@@ -288,7 +343,7 @@ async function passe1(lat: number, lng: number, c: Criteres, cle: string, lang: 
     const j = await r.json() as { places?: Record<string, unknown>[] }
     const PRIX: Record<string, number> = { PRICE_LEVEL_INEXPENSIVE: 1, PRICE_LEVEL_MODERATE: 2, PRICE_LEVEL_EXPENSIVE: 3, PRICE_LEVEL_VERY_EXPENSIVE: 4 }
     return (j.places ?? [])
-      .map((p) => {
+      .map((p, i) => {
         const loc = p.location as { latitude: number; longitude: number } | undefined
         const nom = (p.displayName as { text?: string } | undefined)?.text
         if (!loc || !nom) return null
@@ -300,11 +355,18 @@ async function passe1(lat: number, lng: number, c: Criteres, cle: string, lang: 
           ouvert: (p.currentOpeningHours as { openNow?: boolean } | undefined)?.openNow,
           adresse: p.formattedAddress as string | undefined,
           distanceM: distM(lat, lng, loc.latitude, loc.longitude),
+          // L'ordre de Google EST son jugement de pertinence : on le garde.
+          rang: i,
           primaryType: p.primaryType as string | undefined,
           types: p.types as string[] | undefined,
         } as Candidat
       })
       .filter((x): x is Candidat => x !== null)
+      // 🎯 « QUE FAIRE » : aucun lieu qui sert à manger. Musées, parcs,
+      // monuments, jardins, aquariums — pas des restaurants déguisés en
+      // sorties. Le barrage est ici, avant tout le reste : un lieu écarté
+      // ne coûte pas un appel de détail.
+      .filter((x) => c.categorie !== 'activite' || !sertAManger(x.primaryType, x.types))
       // 🔴 BARRAGE 1 — par le type, gratuit et immédiat : bar, pub,
       // wine_bar, night_club, liquor_store… ne franchissent jamais la
       // porte. Pas d'avertissement, pas de rétrogradation.
@@ -386,6 +448,21 @@ function classer(cands: Candidat[], c: Criteres, rayon: number): Candidat[] {
     .filter((x) => (c.budget === 'petit' ? (x.prix ?? 2) <= 2 : c.budget === 'moyen' ? (x.prix ?? 2) <= 3 : true))
     .map((x) => {
       let s = 0
+      // ════════ 🔴 LA PERTINENCE PRIME SUR LA DISTANCE ════════
+      //
+      // Ordre de Mohamed, 15 août : « Un vrai kebab à 1,2 km bat un poulet
+      // rôti à 300 m. Aujourd'hui c'est l'inverse, et c'est le défaut. »
+      //
+      // Google a DÉJÀ classé ses résultats selon la requête. On jetait ce
+      // classement pour tout re-trier à la distance — et le lieu le plus
+      // proche remontait donc en tête quel que soit le mot tapé. C'est
+      // exactement ce qui faisait sortir Master Poulet pour « kebab »,
+      // « pizza » et tout le reste.
+      //
+      // Le rang de Google pèse maintenant plus que le trajet : 3 points
+      // pour le premier, dégressifs. Un lieu deux fois plus loin doit être
+      // nettement plus pertinent pour passer devant — mais il le peut.
+      s += Math.max(0, 3 - x.rang * 0.42)
       // Le mode change le TRI, pas seulement l'affichage (§5.3) : à pied,
       // chaque minute compte trois fois plus qu'en voiture.
       const poids = mode === 'pied' ? 3 : mode === 'transports' ? 2 : 1
@@ -540,7 +617,10 @@ export async function POST(req: Request) {
   await compter('surmesure:recherches', corps.ecrit ? 'surmesure:ecrites' : 'surmesure:cliquees')
 
   const zone = `${lat.toFixed(2)},${lng.toFixed(2)}`
-  const empreinte = `${zone}:${c.categorie}:${c.quoi}:${profil.regime}:${profil.sansGluten ? 1 : 0}:${profil.sansLactose ? 1 : 0}:${profil.objectif}:${c.mode}:${c.budget}:${c.exigence}:${c.ouvertMaintenant ? 1 : 0}:${lang}`
+  // ⚠️ Les mots tapés ENTRENT dans l'empreinte : sans eux, « pizza » se
+  // faisait resservir le résultat de « kebab » — le cache reproduisait à
+  // lui seul le défaut qu'on vient de corriger.
+  const empreinte = `${zone}:${c.categorie}:${c.quoi}:${(c.motsCles ?? '').toLowerCase()}:${profil.regime}:${profil.sansGluten ? 1 : 0}:${profil.sansLactose ? 1 : 0}:${profil.objectif}:${c.mode}:${c.budget}:${c.exigence}:${c.ouvertMaintenant ? 1 : 0}:${lang}`
   if (r) {
     try {
       const cache = await r.get<{ fiches: Fiche[]; autres: Fiche[]; source: string }>(`surmesure:cache:${empreinte}`)
@@ -576,7 +656,7 @@ export async function POST(req: Request) {
   } else if (cle) {
     // 👤 LE PROFIL AFFINE LA REQUÊTE — jamais les filtres de base. Google
     // ne connaît pas « protéiné » : on traduit en poke, grillades, bowls…
-    const texteBase = CATEGORIE[c.categorie].texte(TEXTE[c.quoi])
+    const texteBase = requeteGoogle(c)
     const avecProfil = c.categorie === 'manger' ? requeteAvecProfil(texteBase, profil) : texteBase
     let cands = await passe1(lat, lng, c, cle, lang, rayon, avecProfil, journal)
 
@@ -637,7 +717,7 @@ export async function POST(req: Request) {
     const suivant = modeSuivant(mode)
     if (suivant) {
       const grand = rayonM(c, suivant) * 2
-      const large = await passe1(lat, lng, c, cle, lang, grand, CATEGORIE[c.categorie].texte(TEXTE[c.quoi]))
+      const large = await passe1(lat, lng, c, cle, lang, grand, requeteGoogle(c))
       const enPlus = (large ?? []).filter((x) => x.distanceM > rayon).length
       if (enPlus > 0) plusLoin = { minutes: plafondMin(c, suivant) * 2, mode: suivant, nombre: enPlus }
     }
@@ -663,6 +743,12 @@ export async function POST(req: Request) {
     // avoir à ouvrir les journaux du serveur. C'est ce qui transforme
     // « ça ne marche pas » en « la clé refuse les appels serveur ».
     ...(etatGoogle === 'muet' && journal.refus ? { diagnostic: journal.refus } : {}),
+    // 🔴 « On ne sert pas un poulet rôti en faisant semblant que c'est la
+    // réponse » (Mohamed, 15 août). Si le visiteur a demandé quelque chose
+    // de PRÉCIS et qu'aucune des trois fiches ne porte ce mot, on le DIT.
+    // On ne retire rien — ce qui s'en rapproche reste utile — mais on
+    // n'appelle pas « kebab » un endroit qui n'en est pas un.
+    ...(motManquant(c, fiches) ? { motManquant: motManquant(c, fiches) } : {}),
     // Le client a besoin du mode pour ÉCRIRE le temps de trajet, et du
     // plafond pour dire « à moins de 10 minutes à pied ».
     mode, plafondMin: plafondMin(c, mode), plusLoin,

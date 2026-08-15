@@ -155,6 +155,9 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
   const [ouvrirProfil, setOuvrirProfil] = useState(false)
   const [proposerMemoire, setProposerMemoire] = useState<Partial<Profil> | null>(null)
   const [relaches, setRelaches] = useState<string[]>([])
+  /** Le mot demandé qu'aucune fiche ne porte — on le dit, on ne fait pas
+   *  passer autre chose pour la réponse. */
+  const [motManquant, setMotManquant] = useState<string | null>(null)
   useEffect(() => { setProfil(lireProfil()) }, [])
   // 🔗 La recherche apportée par l'accueil part toute seule : « rien à
   // retaper » (§2.5). Une seule fois, au montage.
@@ -282,7 +285,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
 
       const ac = new AbortController()
       const to = setTimeout(() => ac.abort(), 20_000)
-      let corps: { fiches?: Fiche[]; autres?: Fiche[]; source?: string; etatGoogle?: 'ok' | 'vide' | 'muet' | 'sans-cle'; mode?: Mode; plafondMin?: number; plusLoin?: { minutes: number; mode: Mode; nombre: number } | null; relaches?: string[] } = {}
+      let corps: { fiches?: Fiche[]; autres?: Fiche[]; source?: string; etatGoogle?: 'ok' | 'vide' | 'muet' | 'sans-cle'; mode?: Mode; plafondMin?: number; plusLoin?: { minutes: number; mode: Mode; nombre: number } | null; relaches?: string[]; motManquant?: string | null } = {}
       try {
         const r = await fetch('/api/lieux', {
           method: 'POST', signal: ac.signal,
@@ -296,7 +299,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
       setFiches(trois); setAutres(corps.autres ?? []); setSource(corps.source ?? ''); setEtatGoogle(corps.etatGoogle ?? '')
       // La carte se peuple d'ici, et de nulle part ailleurs.
       onResultats?.(trois)
-      setMode(corps.mode ?? 'voiture'); setPlafond(corps.plafondMin ?? 15); setPlusLoin(corps.plusLoin ?? null); setRelaches(corps.relaches ?? [])
+      setMode(corps.mode ?? 'voiture'); setPlafond(corps.plafondMin ?? 15); setPlusLoin(corps.plusLoin ?? null); setRelaches(corps.relaches ?? []); setMotManquant(corps.motManquant ?? null)
       setEtape('resultat')
       if (trois.length) redigerIA(trois, c, corps.mode ?? 'voiture', c.categorie === 'mosquee' ? avantPriere(pos) : null, !!lieu)
     } finally { enCours.current = false }
@@ -438,7 +441,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
             (fiche ville, autour de moi), le h3 reste : il n'y a pas de H1
             à lui donner, et la page a déjà son titre. */}
         {titrePage && !destination ? (
-          <h1 style={{ fontFamily: "'Playfair Display', Georgia, serif", color: '#fdfaf3', fontSize: 20, fontWeight: 900, margin: '2px 0 0', lineHeight: 1.25 }}>
+          <h1 style={{ fontFamily: "'Playfair Display', Georgia, serif", color: '#fdfaf3', fontSize: 20, fontWeight: 900, margin: 0, lineHeight: 1.2 }}>
             {t('Où prier, où ', 'Where to pray, where to ')}
             <span className="gold-em">{t('manger halal', 'eat halal')}</span>
             {t(' — partout où tu voyages.', ' — anywhere you travel.')}
@@ -451,7 +454,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
           </h3>
         )}
 
-        <form onSubmit={(e) => { e.preventDefault(); comprendre(phrase) }} style={{ display: 'flex', gap: 8, marginTop: 8, flexWrap: 'wrap' }}>
+        <form onSubmit={(e) => { e.preventDefault(); comprendre(phrase) }} style={{ display: 'flex', gap: 8, marginTop: 6, flexWrap: 'wrap' }}>
           <input
             value={phrase} onChange={(e) => setPhrase(e.target.value)}
             placeholder={`« ${EXEMPLES[ex]} »`}
@@ -520,7 +523,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
             écran. Chacun prend un tiers de la largeur, le texte se serre
             plutôt que de sauter — et les 44 px de cible tactile sont
             intacts, c'est la règle qui ne se négocie pas. */}
-        <div style={{ display: 'flex', gap: 7, marginTop: 9, flexWrap: 'nowrap' }}>
+        <div style={{ display: 'flex', gap: 7, marginTop: 7, flexWrap: 'nowrap' }}>
           {CAT_OPTS.map(([v, fr, an]) => (
             <button key={v}
               className="surmesure-cat"
@@ -538,45 +541,37 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
               {t(fr, an)}
             </button>
           ))}
-          {/* 📍 « AUTOUR DE MOI » — LA MÊME RECHERCHE, EN VUE CARTE.
-              Ordre de Mohamed, 15 août : « Je veux que le visiteur
-              choisisse : la liste, ou la carte. Et il EMPORTE ce qui a
-              déjà été fait — rien à retaper. » Le bouton transporte donc
-              la phrase et la catégorie dans l'adresse ; la carte s'ouvre
-              avec la recherche déjà lancée. */}
-          {titrePage && (
+        </div>
+
+        {/* 📍 UN VRAI BOUTON, AVEC DU TEXTE.
+            Mohamed, 15 août : « Sur l'accueil, c'est un petit rond avec une
+            épingle, à côté d'un autre petit rond. On ne le voit pas, on ne
+            sait pas ce qu'il fait, personne ne cliquera dessus. » Il avait
+            raison : une icône seule que personne ne comprend ne mérite pas
+            sa place sur l'écran le plus précieux du site.
+            Il dit maintenant ce qu'il fait, en pleine largeur, et il EMPORTE
+            la recherche déjà tapée — la carte s'ouvre avec les kebabs. */}
+        {titrePage && (
+          <div style={{ display: 'flex', gap: 7, marginTop: 6 }}>
             <button onClick={() => {
               compter('vue-carte')
               const p = new URLSearchParams()
               if (phrase.trim()) p.set('q', phrase.trim())
               if (aide?.cat) p.set('cat', aide.cat)
-              else if (crit.categorie !== 'manger' || aEcrit) p.set('cat', crit.categorie)
               router.push(`/autour-de-moi${p.toString() ? `?${p}` : ''}`)
             }}
-              aria-label={t('Voir sur la carte, autour de moi', 'See on the map, around me')}
-              style={{ ...puce(false), flex: '0 0 auto', padding: '0 12px', fontSize: 16 }}>
-              📍
+              style={{ flex: '1 1 auto', minHeight: 44, borderRadius: 999, cursor: 'pointer',
+                border: '1.5px solid rgba(201,168,76,0.55)', background: 'rgba(201,168,76,0.14)',
+                color: 'var(--or)', fontWeight: 800, fontSize: 14 }}>
+              📍 {t('Voir sur la carte', 'See on the map')}
             </button>
-          )}
-
-          {/* 👤 16 août — LE PROFIL REJOINT LA RANGÉE, EN PASTILLE.
-              Il occupait une rangée de 44 px à lui seul sur le premier
-              écran. Ce n'est pas une quatrième catégorie : c'est la
-              porte de côté qui dit « le site me connaît ». En pastille
-              au bout de la rangée, il ne coûte plus une ligne, il reste
-              à un appui, et il PARLE quand il est rempli — la pastille
-              devient dorée dès qu'il y a quelque chose dedans. */}
-          {titrePage && (
-            <button onClick={() => setOuvrirProfil((o) => !o)}
-              aria-expanded={ouvrirProfil}
-              aria-label={profilVide(profil)
-                ? t('Mon profil alimentaire', 'My eating profile')
-                : `${t('Mon profil', 'My profile')} : ${resumerProfil(profil, en).join(' · ')}`}
-              style={{ ...puce(!profilVide(profil)), flex: '0 0 auto', padding: '0 12px', fontSize: 16 }}>
-              👤
+            {/* Le profil reste à un appui, mais il DIT ce qu'il est. */}
+            <button onClick={() => setOuvrirProfil((o) => !o)} aria-expanded={ouvrirProfil}
+              style={{ ...puce(!profilVide(profil)), flex: '0 0 auto', padding: '0 13px' }}>
+              👤 {t('Profil', 'Profile')}
             </button>
-          )}
-        </div>
+          </div>
+        )}
 
         {/* ── 👤 MON PROFIL — replié, accessible d'un appui ─────────
             « Un sur mesure qu'il faut retaper à chaque fois n'est pas du
@@ -901,6 +896,17 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
           </p>
         )}
 
+        {/* 🔴 « On ne sert pas un poulet rôti en faisant semblant que c'est
+            la réponse. » Quand le mot demandé ne se retrouve nulle part, on
+            le dit avant les fiches — elles restent utiles, mais elles ne
+            sont pas ce qui a été demandé. */}
+        {motManquant && fiches.length > 0 && etape === 'resultat' && (
+          <p style={{ marginTop: 12, padding: '9px 12px', borderRadius: 12, background: 'rgba(201,168,76,0.12)', border: '1px solid rgba(201,168,76,0.35)', color: 'var(--creme)', fontSize: 13.5, lineHeight: 1.45 }}>
+            {t(`Aucun « ${motManquant} » trouvé à moins de ${plafond} min ${LIB_MODE[mode][0]} — voici ce qui s'en rapproche le plus.`,
+               `No “${motManquant}” found within ${plafond} min ${LIB_MODE[mode][1]} — here is the closest match.`)}
+          </p>
+        )}
+
         {/* 🔴 §6 — la phrase permanente, sobre, sous les résultats. */}
         {fiches.length > 0 && (
           <p style={{ color: 'rgba(253,250,243,0.55)', fontSize: 11.5, marginTop: 12, lineHeight: 1.5 }}>
@@ -928,12 +934,12 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
 function Cadre({ fondu, titre, children }: { fondu: boolean; titre: string; children: React.ReactNode }) {
   if (fondu) return <div style={{ margin: '0 auto', maxWidth: 700 }}>{children}</div>
   return (
-    <section style={{ background: 'var(--nuit)' }} className="pt-1 pb-2 px-4" aria-label={titre}>
+    <section style={{ background: 'var(--nuit)' }} className="pt-0 pb-1 px-4" aria-label={titre}>
       {/* 📏 16 août : pb-8 → pb-4 et padding 16 → 13. Trente pixels de
           marge basse sous une carte déjà posée sur un fond de la même
           couleur ne se voient pas — ils repoussent seulement ce qui suit
           sous la ligne de flottaison. */}
-      <div className="max-w-3xl mx-auto" style={{ background: 'linear-gradient(150deg, rgba(27,67,50,0.5), rgba(255,255,255,0.05))', border: '1.5px solid rgba(201,168,76,0.55)', borderRadius: 18, padding: 13, boxShadow: '0 4px 22px rgba(0,0,0,0.25)' }}>
+      <div className="max-w-3xl mx-auto" style={{ background: 'linear-gradient(150deg, rgba(27,67,50,0.5), rgba(255,255,255,0.05))', border: '1.5px solid rgba(201,168,76,0.55)', borderRadius: 18, padding: 10, boxShadow: '0 4px 22px rgba(0,0,0,0.25)' }}>
         {children}
       </div>
     </section>
