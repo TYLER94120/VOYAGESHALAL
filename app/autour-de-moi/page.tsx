@@ -117,7 +117,10 @@ export default function AutourDeMoiPage() {
   // approche. Moins de 30 minutes → on ouvre sur PRIER, parce que c'est le
   // besoin du moment. Sinon on n'impose RIEN : la recherche part sur les
   // lieux proches, toutes catégories, et les trois boutons restent là.
-  const [ouvertureSur, setOuvertureSur] = useState<'mosquee' | 'manger' | null>(null)
+  const [ouvertureSur, setOuvertureSur] = useState<'mosquee' | 'aucune' | null>(null)
+  /** Pourquoi la page s'est ouverte sur Prier — on ne l'impose jamais en
+   *  silence. */
+  const [raisonOuverture, setRaisonOuverture] = useState<'priere' | null>(null)
   useEffect(() => {
     if (!pos || ouvertureSur) return
     try {
@@ -127,21 +130,20 @@ export default function AutourDeMoiPage() {
       const maintenant = Date.now()
       const proche = ([t.Fajr, t.Dhuhr, t.Asr, t.Maghrib, t.Isha] as Date[])
         .some((d) => d.getTime() > maintenant && d.getTime() - maintenant < 30 * 60 * 1000)
-      // ⚠️ CE QUE JE N'AI PAS PU FAIRE, ET POURQUOI JE LE DIS.
-      // Mohamed voulait « aucun onglet imposé : les lieux proches TOUTES
-      // catégories ». Une recherche toutes catégories, c'est trois appels
-      // Google au lieu d'un, à chaque ouverture de la page — le plafond de
-      // 200 € ne le supporte pas. J'ai donc gardé UN appel, choisi par le
-      // moment, et surtout : AUCUN ONGLET N'EST MARQUÉ ACTIF. Les trois
-      // boutons restent neutres, rien n'a l'air imposé, et le visiteur
-      // change de catégorie d'un appui.
-      const h = new Date().getHours()
-      const heureDeManger = (h >= 11 && h < 14) || (h >= 18 && h < 22)
-      setOuvertureSur(proche ? 'mosquee' : heureDeManger ? 'manger' : 'mosquee')
+      // 🔴 AUCUNE CATÉGORIE IMPOSÉE. Mohamed, deux fois de suite : « Hier
+      // les restaurants, aujourd'hui les mosquées, alors qu'Asr était dans
+      // 3 h 42. Rien ne le justifie. » J'avais remplacé un choix arbitraire
+      // par un autre choix arbitraire, un peu plus habillé.
+      //
+      // La seule exception qu'il accorde est la prière imminente — moins de
+      // 30 minutes — et elle DIT pourquoi elle s'impose. Hors de ce cas, la
+      // page n'ouvre RIEN : elle laisse les trois boutons, et ils sont la
+      // réponse à « qu'est-ce que je cherche ».
+      setOuvertureSur(proche ? 'mosquee' : 'aucune')
+      setRaisonOuverture(proche ? 'priere' : null)
     } catch {
-      // Horaires indisponibles : où prier reste le besoin qui ne dépend
-      // ni de la faim ni de l'heure du repas.
-      setOuvertureSur('mosquee')
+      setOuvertureSur('aucune')
+      setRaisonOuverture(null)
     }
   }, [pos, ouvertureSur])
 
@@ -314,6 +316,14 @@ export default function AutourDeMoiPage() {
         </div>
         <div className="autour-liste">
           <div className="autour-moteur">
+            {/* On n'impose une catégorie que pour la prière imminente, et on
+                dit pourquoi : un écran qui décide à notre place sans
+                s'expliquer, c'est ce que Mohamed a reproché deux fois. */}
+            {raisonOuverture === 'priere' && (
+              <p style={{ margin: '0 0 10px', padding: '9px 12px', borderRadius: 12, background: 'rgba(201,168,76,0.16)', border: '1px solid var(--or)', color: 'var(--creme)', fontSize: 13.5, fontWeight: 700 }}>
+                ⏱️ La prière approche — je te montre d’abord où prier.
+              </p>
+            )}
             {/* ⭐ LE MÊME MOTEUR QUE PARTOUT : trois fiches complètes,
                 photos, note et nombre d'avis, prix, trajet avec son mode,
                 statut halal honnête, filtre alcool dans le code, profil
@@ -324,7 +334,7 @@ export default function AutourDeMoiPage() {
               phraseInitiale={phraseVenue}
               // ► On répond avant qu'on demande : la recherche part dès que
               // la position est connue, sans rien taper ni rien tirer.
-              chercheDesLOuverture={phraseVenue || !ouvertureSur ? undefined : ouvertureSur}
+              chercheDesLOuverture={phraseVenue || !ouvertureSur || ouvertureSur === 'aucune' ? undefined : ouvertureSur}
               onResultats={setFiches}
               selectionId={choisie}
               onSelection={setChoisie}

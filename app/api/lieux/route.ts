@@ -84,8 +84,12 @@ const CACHE_S = 24 * 3600
  *   v2 — rankPreference DISTANCE, rayon 20 km, tri du plus proche au plus
  *        lointain, porte par catégorie (Prier n'accepte que des lieux de
  *        culte), mots du visiteur envoyés tels quels à Google
+ *   v3 — searchNearby (cercle + types + rayon progressif 2/5/10/20 km) pour
+ *        les demandes géographiques ; searchText avec cercle pour les
+ *        demandes écrites. C'est le correctif de la régression du 15 août :
+ *        searchText ne sait pas faire « le plus proche »
  */
-const VERSION_MOTEUR = 'v2'
+const VERSION_MOTEUR = 'v3'
 const CANDIDATS = 15
 const RETENUS = 3
 const AUTRES = 4
@@ -318,6 +322,137 @@ function motManquant(c: Criteres, fiches: Fiche[]): string | null {
   return present ? null : mots[0]
 }
 
+/**
+ * 🔴🔴 LE BON OUTIL POUR « LE PLUS PROCHE » : places:searchNearby.
+ *
+ * RÉGRESSION TROUVÉE PAR MOHAMED, 15 août, et son analyse était exacte :
+ *   « searchText cherche PAR LE SENS : elle rend les lieux les plus
+ *     pertinents du cadre, c'est-à-dire les plus connus. Dans un cadre
+ *     serré, ça donnait par chance des lieux proches. Dans 20 km autour de
+ *     Paris, elle remonte les célébrités : Villeneuve-la-Garenne, Clichy,
+ *     Barbès. Les mosquées de Montreuil ne sont même pas dans les
+ *     candidats — donc aucun tri ne peut les faire remonter. Élargir
+ *     n'était pas l'erreur. Élargir SANS CHANGER D'OUTIL, si. »
+ *
+ * Le diff avec b79a34c le confirme : cette version-là cherchait dans un
+ * rectangle de quelques minutes de trajet. Pertinence et proximité y
+ * coïncidaient PAR ACCIDENT. Passer à 20 km a défait l'accident, et
+ * `rankPreference: DISTANCE` triait une liste qui ne contenait déjà plus
+ * les bonnes adresses.
+ *
+ * `searchNearby` est fait pour ça : un CERCLE (qui a un centre, contrairement
+ * à un rectangle), des types demandés, et un classement par distance réelle.
+ *
+ * ⚠️ Il ne remplace pas `searchText` : quand on tape « pâtisserie
+ * orientale », c'est le SENS qu'on cherche, et searchNearby ne sait pas
+ * lire une phrase. Deux outils, deux usages — c'est `chercheGoogle` qui
+ * arbitre.
+ */
+async function passeProximite(lat: number, lng: number, c: Criteres, cle: string, lang: string, rayon: number, journal?: Journal): Promise<Candidat[] | null> {
+  const ac = new AbortController()
+  const t = setTimeout(() => ac.abort(), DELAI)
+  try {
+    const r = await fetch('https://places.googleapis.com/v1/places:searchNearby', {
+      method: 'POST', signal: ac.signal,
+      headers: { 'Content-Type': 'application/json', 'X-Goog-Api-Key': cle, 'X-Goog-FieldMask': CHAMPS_PASSE1 },
+      body: JSON.stringify({
+        languageCode: lang,
+        maxResultCount: 20,
+        includedTypes: TYPES_DEMANDES[c.categorie],
+        ...(TYPES_EXCLUS[c.categorie].length ? { excludedTypes: TYPES_EXCLUS[c.categorie] } : {}),
+        // Un CERCLE, pas un rectangle : Google mesure la distance depuis
+        // son centre, donc depuis le visiteur.
+        locationRestriction: { circle: { center: { latitude: lat, longitude: lng }, radius: rayon } },
+        rankPreference: 'DISTANCE',
+      }),
+    })
+    if (!r.ok) {
+      const refus = await lireRefus(r)
+      if (journal) journal.refus = refus
+      console.error('[lieux] searchNearby refuse', refus.statut, refus.message)
+      return null
+    }
+    const j = await r.json() as { places?: Record<string, unknown>[] }
+    return lireCandidats(j.places ?? [], lat, lng, c)
+  } catch (e) {
+    const refus: Refus = ac.signal.aborted
+      ? { statut: 0, message: `delai de ${DELAI} ms depasse` }
+      : { statut: 0, message: String(e).slice(0, 140) }
+    if (journal) journal.refus = refus
+    return null
+  } finally { clearTimeout(t) }
+}
+
+/**
+ * 📏 LE RAYON PROGRESSIF, INVISIBLE POUR LE VISITEUR.
+ *
+ * « 2 km d'abord. Rien ou trop peu ? 5 km. Puis 10. Puis 20. On ne demande
+ * JAMAIS "veux-tu élargir ?" — on élargit tout seul et on affiche le plus
+ * proche d'abord. Le visiteur n'a rien à savoir de cette mécanique. »
+ *
+ * On s'arrête dès qu'on a de quoi remplir le vivier : chaque cran évité est
+ * un appel non facturé, et un résultat rendu plus vite.
+ */
+const PALIERS_M = [2000, 5000, 10000, 20000]
+
+async function chercheParProximite(lat: number, lng: number, c: Criteres, cle: string, lang: string, journal?: Journal): Promise<Candidat[] | null> {
+  let dernier: Candidat[] | null = null
+  for (const rayon of PALIERS_M) {
+    const trouves = await passeProximite(lat, lng, c, cle, lang, rayon, journal)
+    if (trouves === null) return dernier   // Google muet : on garde ce qu'on avait
+    dernier = trouves
+    if (trouves.length >= POOL_ALCOOL) break
+  }
+  return dernier
+}
+
+/** La lecture d'une réponse Google — commune aux deux moteurs. */
+function lireCandidats(places: Record<string, unknown>[], lat: number, lng: number, c: Criteres): Candidat[] {
+  const PRIX: Record<string, number> = { PRICE_LEVEL_INEXPENSIVE: 1, PRICE_LEVEL_MODERATE: 2, PRICE_LEVEL_EXPENSIVE: 3, PRICE_LEVEL_VERY_EXPENSIVE: 4 }
+  return places
+    .map((p, i) => {
+      const loc = p.location as { latitude: number; longitude: number } | undefined
+      const nom = (p.displayName as { text?: string } | undefined)?.text
+      if (!loc || !nom) return null
+      return {
+        id: String(p.id ?? ''), nom, lat: loc.latitude, lng: loc.longitude,
+        note: p.rating as number | undefined,
+        nbAvis: p.userRatingCount as number | undefined,
+        prix: PRIX[String(p.priceLevel ?? '')],
+        ouvert: (p.currentOpeningHours as { openNow?: boolean } | undefined)?.openNow,
+        adresse: p.formattedAddress as string | undefined,
+        distanceM: distM(lat, lng, loc.latitude, loc.longitude),
+        rang: i,
+        primaryType: p.primaryType as string | undefined,
+        types: p.types as string[] | undefined,
+      } as Candidat
+    })
+    .filter((x): x is Candidat => x !== null)
+    // 🔴🔴 LA PORTE PAR CATÉGORIE (lib/categorie.mjs).
+    .filter((x) => accepte(c.categorie, x.primaryType, x.types))
+    // 🔴 BARRAGE ALCOOL 1 — par le type, gratuit et immédiat.
+    .filter((x) => verdictAlcool({ nom: x.nom, primaryType: x.primaryType, types: x.types }).garde
+      || estRefusPourNomSeul(x))
+}
+
+/**
+ * Les types demandés à `searchNearby`, par catégorie. Une demande
+ * géographique ne se décrit pas par une phrase : elle se décrit par des
+ * TYPES. C'est plus précis, et Google n'a plus à deviner.
+ */
+const TYPES_DEMANDES: Record<'manger' | 'mosquee' | 'activite', string[]> = {
+  mosquee: ['mosque'],
+  manger: ['restaurant', 'meal_takeaway', 'bakery'],
+  // Des ACTIVITÉS, et rien qui serve à manger.
+  activite: ['museum', 'park', 'tourist_attraction', 'art_gallery', 'aquarium', 'zoo', 'historical_landmark', 'garden'],
+}
+/** Ce qu'on refuse explicitement, en plus de la porte par catégorie. */
+const TYPES_EXCLUS: Record<'manger' | 'mosquee' | 'activite', string[]> = {
+  mosquee: [],
+  manger: [],
+  activite: ['restaurant', 'cafe', 'bar', 'meal_takeaway', 'bakery', 'coffee_shop'],
+}
+
 async function passe1(lat: number, lng: number, c: Criteres, cle: string, lang: string, rayon: number, texte: string, journal?: Journal): Promise<Candidat[] | null> {
   const ac = new AbortController()
   const t = setTimeout(() => ac.abort(), DELAI)
@@ -345,11 +480,15 @@ async function passe1(lat: number, lng: number, c: Criteres, cle: string, lang: 
         // Élargir le rayon sans imposer le tri, c'est éparpiller.
         rankPreference: 'DISTANCE',
         openNow: c.ouvertMaintenant || undefined,
-        // 🎯 locationRESTRICTION et non locationBias : la contrainte est DURE.
-        // Avec un simple biais, Google renvoyait des adresses à 90 minutes
-        // « parce qu'elles correspondaient bien » — c'est le défaut du
-        // 15 août au soir. Ici, hors du rayon = hors de la réponse.
-        locationRestriction: { rectangle: cadre(lat, lng, rayon) },
+        // 🔵 UN CERCLE CENTRÉ SUR MOI, jamais un rectangle nu (Mohamed,
+        // 15 août : « un cercle a un centre ; un rectangle n'en a pas pour
+        // Google »). En biais et non en restriction : sur une demande
+        // ÉCRITE (« pâtisserie orientale »), c'est le sens qui prime, et une
+        // contrainte dure rendrait des écrans vides là où une adresse
+        // parfaite existe deux rues plus loin que le cercle. Le filet de
+        // sécurité en aval — recalcul de distance et tri — empêche de
+        // toute façon l'absurde de sortir.
+        locationBias: { circle: { center: { latitude: lat, longitude: lng }, radius: rayon } },
       }),
     })
     if (!r.ok) {
@@ -359,43 +498,7 @@ async function passe1(lat: number, lng: number, c: Criteres, cle: string, lang: 
       return null
     }
     const j = await r.json() as { places?: Record<string, unknown>[] }
-    const PRIX: Record<string, number> = { PRICE_LEVEL_INEXPENSIVE: 1, PRICE_LEVEL_MODERATE: 2, PRICE_LEVEL_EXPENSIVE: 3, PRICE_LEVEL_VERY_EXPENSIVE: 4 }
-    return (j.places ?? [])
-      .map((p, i) => {
-        const loc = p.location as { latitude: number; longitude: number } | undefined
-        const nom = (p.displayName as { text?: string } | undefined)?.text
-        if (!loc || !nom) return null
-        return {
-          id: String(p.id ?? ''), nom, lat: loc.latitude, lng: loc.longitude,
-          note: p.rating as number | undefined,
-          nbAvis: p.userRatingCount as number | undefined,
-          prix: PRIX[String(p.priceLevel ?? '')],
-          ouvert: (p.currentOpeningHours as { openNow?: boolean } | undefined)?.openNow,
-          adresse: p.formattedAddress as string | undefined,
-          distanceM: distM(lat, lng, loc.latitude, loc.longitude),
-          // L'ordre de Google EST son jugement de pertinence : on le garde.
-          rang: i,
-          primaryType: p.primaryType as string | undefined,
-          types: p.types as string[] | undefined,
-        } as Candidat
-      })
-      .filter((x): x is Candidat => x !== null)
-      // 🎯 « QUE FAIRE » : aucun lieu qui sert à manger. Musées, parcs,
-      // monuments, jardins, aquariums — pas des restaurants déguisés en
-      // sorties. Le barrage est ici, avant tout le reste : un lieu écarté
-      // ne coûte pas un appel de détail.
-      // 🔴🔴 LA PORTE PAR CATÉGORIE. En mode Prier, seuls des lieux de
-      // culte DÉCLARÉS passent : liste d'admission, pas d'exclusion — une
-      // liste d'exclusions oublie toujours un cas, et c'est ainsi qu'un
-      // traiteur libanais est sorti pour « où prier ». Dans le doute, non.
-      .filter((x) => accepte(c.categorie, x.primaryType, x.types))
-      // 🔴 BARRAGE 1 — par le type, gratuit et immédiat : bar, pub,
-      // wine_bar, night_club, liquor_store… ne franchissent jamais la
-      // porte. Pas d'avertissement, pas de rétrogradation.
-      .filter((x) => verdictAlcool({ nom: x.nom, primaryType: x.primaryType, types: x.types }).garde
-        // Un signal dans le NOM n'écarte pas ici : le lieu part en
-        // vérification d'attributs (barrage 2). C'est là qu'on tranchera.
-        || estRefusPourNomSeul(x))
+    return lireCandidats(j.places ?? [], lat, lng, c)
   } catch (e) {
     // Le délai dépassé et la panne réseau se ressemblent dans un `catch` —
     // ils ne se réparent pas pareil. On les distingue ici.
@@ -493,6 +596,33 @@ function classer(cands: Candidat[], c: Criteres, rayon: number): Candidat[] {
     // Du plus proche au plus lointain. Le visiteur décide lui-même ce qui
     // est trop loin — chaque fiche porte sa distance et son temps de trajet.
     .sort((a, b) => a.distanceM - b.distanceM)
+}
+
+/**
+ * 🥅 LE FILET DE SÉCURITÉ — quel que soit le moteur, quelle que soit la
+ * catégorie.
+ *
+ * Ordre de Mohamed, 15 août : « On recalcule NOUS-MÊMES la distance depuis
+ * ma position, on trie dessus, et on écarte l'absurde. "Le plus proche" ne
+ * peut jamais rendre 64 minutes de voiture quand il existe des adresses à
+ * 5 minutes. »
+ *
+ * La distance est déjà recalculée chez nous (`distM`, jamais un chiffre de
+ * Google) et le tri est déjà par distance. Ce filet couvre le dernier cas :
+ * une liste qui contient à la fois du très proche et du très lointain. On
+ * ne coupe PAS à un seuil fixe — un seuil fixe rendrait des écrans vides en
+ * rase campagne, où 15 km est la réponse normale. On coupe RELATIVEMENT au
+ * plus proche : si la première adresse est à 800 m, une adresse à 20 km n'a
+ * rien à faire dans la même réponse ; si la première est à 12 km, c'est que
+ * la zone est vide et tout le monde reste.
+ */
+function ecarterLAbsurde(tries: Candidat[]): Candidat[] {
+  if (tries.length < 2) return tries
+  const plusProche = tries[0].distanceM
+  // Cinq fois le plus proche, et au moins 3 km de marge : en ville on
+  // resserre fort, à la campagne on ne coupe rien.
+  const plafond = Math.max(plusProche * 5, plusProche + 3000)
+  return tries.filter((x) => x.distanceM <= plafond)
 }
 
 // ─────────────────────── passe 2 : enrichir les 3 ───────────────────────
@@ -685,7 +815,26 @@ export async function POST(req: Request) {
     // ne connaît pas « protéiné » : on traduit en poke, grillades, bowls…
     const texteBase = requeteGoogle(c)
     const avecProfil = c.categorie === 'manger' ? requeteAvecProfil(texteBase, profil) : texteBase
-    let cands = await passe1(lat, lng, c, cle, lang, rayon, avecProfil, journal)
+
+    // ════════ 🔀 L'AIGUILLAGE : QUEL MOTEUR POUR QUELLE DEMANDE ════════
+    //
+    // Ordre de Mohamed, 15 août, et il vaut pour les TROIS catégories sans
+    // exception :
+    //   · DEMANDE GÉOGRAPHIQUE (bouton Prier / Manger / Que faire, « autour
+    //     de moi », « le plus proche ») → searchNearby, cercle, types,
+    //     rankPreference DISTANCE, rayon progressif.
+    //   · DEMANDE LIBRE (« un kebab pas cher », « pâtisserie orientale »)
+    //     → searchText, parce qu'elle seule sait lire une phrase — mais
+    //     avec un cercle centré sur moi.
+    //
+    // Le critère d'aiguillage est simple et vérifiable : le visiteur
+    // a-t-il ÉCRIT quelque chose d'exploitable ? Ses mots sont dans
+    // `motsCles` ; s'ils sont vides, il a appuyé sur un bouton, et c'est
+    // une demande purement géographique.
+    const demandeEcrite = !!(c.motsCles ?? '').trim()
+    let cands = demandeEcrite
+      ? await passe1(lat, lng, c, cle, lang, rayon, avecProfil, journal)
+      : await chercheParProximite(lat, lng, c, cle, lang, journal)
 
     // §5 — QUAND TOUT NE PEUT PAS ÊTRE SATISFAIT, ON DIT CE QU'ON A LÂCHÉ.
     // On relâche du MOINS au PLUS essentiel, un cran à la fois, et jamais
@@ -702,7 +851,7 @@ export async function POST(req: Request) {
 
     if (cands !== null) etatGoogle = cands.length ? 'ok' : 'vide'
     if (cands?.length) {
-      const tries = classer(cands, c, rayon).filter((x) => !spots.some((s) => distM(s.lat, s.lng, x.lat, x.lng) < 60))
+      const tries = ecarterLAbsurde(classer(cands, c, rayon)).filter((x) => !spots.some((s) => distM(s.lat, s.lng, x.lat, x.lng) < 60))
       // 🔴 BARRAGE 2 — on paie la vérification alcool sur un pool élargi
       // AVANT de choisir les trois. C'est l'ordre inverse qui avait laissé
       // passer un bistrot : on filtrait trop tard, ou pas du tout.
