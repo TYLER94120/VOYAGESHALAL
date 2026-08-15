@@ -8,6 +8,7 @@ import { buildWebSiteSchema, buildOrganizationSchema } from '@/lib/seo'
 import { guides } from '@/lib/data'
 import BoardVoyageur from '@/components/home/BoardVoyageur'
 import CielDuMoment from '@/components/home/CielDuMoment'
+import AccueilCiel from '@/components/home/AccueilCiel'
 import SurMesure from '@/components/lieux/SurMesure'
 import { positionServeur } from '@/lib/positionServeur'
 import { localizedHref } from '@/lib/slugs'
@@ -166,32 +167,13 @@ export default async function HomePage() {
           tableau de bord, sous la barre de position. Un écran, pas deux
           empilés. Le H1 et la recherche restent du HTML serveur : Google
           les voit toujours, position connue ou non. */}
-      <BoardVoyageur
-        vedettes={vedettes.map((v) => ({ slug: v.slug, nom: v.nom, score: v.score, restaurants: v.restaurants, mosquees: v.mosquees, image: v.image }))}
-        posInitiale={posIP}
-      />
-
-      {/* ⭐ LE CŒUR DU SITE — Mohamed, 15 août : « je veux que cette
-          nouvelle fonction soit au cœur du site et au centre de la page
-          d'accueil, on tient un truc ». « Près de moi » quitte la rangée
-          du bas où il partageait la place avec les destinations : il
-          prend toute la largeur, juste sous le tableau de bord. C'est la
-          première chose qu'on voit après l'heure de la prière — et la
-          ligne « Manger » du tableau de bord a été retirée, elle faisait
-          doublon avec lui. Français d'abord ; l'anglais suit. */}
-      {/* 🗺️ 16 août — UNE SEULE BARRE DE RECHERCHE SUR L'ACCUEIL.
-          Mohamed : « Il y a DEUX barres : "Dis-moi ce que tu cherches" et
-          "Istanbul, Marrakech, Dubaï…". C'est le même geste, deux fois,
-          et c'est ce qui prend toute la hauteur. » Celle-ci comprend
-          désormais les deux — « un kebab pas loin » cherche autour de
-          soi, « Istanbul » ouvre le guide, « une pâtisserie à Tirana »
-          cherche là-bas — et elle porte le H1 en sous-titre. */}
-      {/* 🔴 LA RÉPONSE, SANS UN SEUL CLIC — Mohamed, 16 août : « L'accueil
-          mobile affiche VINGT éléments cliquables et PAS UNE SEULE ADRESSE.
-          Tout l'espace sert à chercher, aucun à trouver. »
-          On connaît la position : la recherche part dès l'ouverture, et la
-          première chose qu'on lit est une adresse réelle, pas une promesse. */}
-      <SurMesure posInitiale={posIP} en={isEN} titrePage chercheDesLOuverture="manger" />
+      {/* 🌅 L'ÉCRAN DES CINQ CIELS — reproduction de
+          docs/maquette-cinq-ciels.html : position, prière en UNE ligne
+          (horaires repliés), puis LA RÉPONSE — une adresse réelle, en
+          grand, sans un clic. L'ancien tableau de bord et ses vingt
+          éléments cliquables sans une seule adresse ne sont plus là.
+          Le ruban dit POURQUOI cette réponse à cette heure-ci. */}
+      <AccueilCiel posInitiale={posIP} en={isEN} />
 
       {/* 🖥️ RANGÉE DU BAS — sur PC, Destinations et « manger halal près
           de moi » se mettent CÔTE À CÔTE : Mohamed, 15 août, « la ligne du
