@@ -64,6 +64,16 @@ for (const [cle, f] of appelees) {
     }
     continue
   }
+  // 🔵 Les clés déjà préfixées « surmesure: » sont écrites DIRECTEMENT dans
+  // Redis par le serveur (app/api/lieux/route.ts) : elles ne passent pas par
+  // /api/lieux/mesure, donc pas par sa liste blanche. Ce qui compte pour
+  // elles, c'est qu'un écran sache les lire.
+  if (cle.startsWith('surmesure:')) {
+    if (!LISIBLES.has(cle.slice(10))) {
+      fautes.push(`« ${cle} » écrite dans ${court} : absente de /api/admin/surmesure → personne ne pourra la lire`)
+    }
+    continue
+  }
   if (!AUTORISEES.has(cle)) {
     fautes.push(`« ${cle} » appelée dans ${court} : absente de la liste blanche → l'API répond 400, rien n'est compté`)
   }

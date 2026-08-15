@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server'
+import { checkAdmin } from '@/lib/adminAuth'
 import { Redis } from '@upstash/redis'
 import { requeteGoogle } from '@/lib/requete.mjs'
 import { accepte } from '@/lib/categorie.mjs'
@@ -51,7 +52,21 @@ export const dynamic = 'force-dynamic'
 
 const DELAI = 4000
 const DELAI_OSM = 8500
-const QUOTA_HEURE = 20
+/**
+ * 🔴🔴 LE PLAFOND ANTI-ROBOT — ET LA DEMI-JOURNÉE QU'IL A COÛTÉE.
+ *
+ * Logs Vercel du 15 août : POST /api/lieux → 429 en rafale. Notre PROPRE
+ * limiteur refusait, l'appel n'atteignait jamais Google — d'où zéro erreur
+ * dans la console Google, et une demi-journée passée à chercher la panne
+ * du mauvais côté.
+ *
+ * 20 par heure avait été calibré sur une page qui appelait UNE fois par
+ * recherche. « Le quota protège du robot, pas du curieux » : quelqu'un qui
+ * explore vingt minutes ne doit jamais le toucher. 120 par heure laisse
+ * deux recherches par minute pendant une heure entière — un humain n'y
+ * arrive pas, un robot le dépasse en dix secondes.
+ */
+const QUOTA_HEURE = 120
 const CACHE_S = 24 * 3600
 
 /**
@@ -754,18 +769,6 @@ export async function POST(req: Request) {
   const profil: Profil = { ...PROFIL_VIDE, ...(corps.profil ?? {}) }
   const r = getRedis()
 
-  // Quota — Redis absent : on laisse passer (un compteur en panne ne doit
-  // pas fermer le service).
-  if (r) {
-    try {
-      const ip = (req.headers.get('x-forwarded-for') ?? 'inconnu').split(',')[0].trim()
-      const k = `lieux:quota:${ip}:${new Date().toISOString().slice(0, 13)}`
-      const n = await r.incr(k)
-      if (n === 1) await r.expire(k, 3600)
-      if (n > QUOTA_HEURE) return NextResponse.json({ erreur: 'quota' }, { status: 429 })
-    } catch { /* jamais bloquant */ }
-  }
-
   // 📊 LA MESURE (§7) : sans elle, ça n'existe pas.
   const compter = async (...cles: string[]) => {
     if (!r) return
@@ -786,6 +789,44 @@ export async function POST(req: Request) {
         return NextResponse.json({ ...cache, cache: true })
       }
     } catch { /* cache muet = on cherche */ }
+  }
+
+  // ─────────────────── LE PLAFOND, APRÈS LE CACHE ───────────────────
+  //
+  // 🔴 Il était compté AVANT la lecture du cache : une réponse déjà en
+  // mémoire, qui ne coûte rien et n'appelle personne, consommait du quota.
+  // Désormais on ne compte que ce qui va réellement partir vers Google.
+  //
+  // 🔴 Et on ne réincrémente plus une fois le plafond franchi : chaque
+  // nouvel essai repoussait la sortie de blocage d'un cran. On lit, on
+  // compare, on n'incrémente que si on laisse passer.
+  //
+  // 🔴 L'administrateur ne se bloque pas lui-même : Mohamed teste son
+  // propre site, il doit pouvoir enchaîner trente recherches.
+  if (r && !checkAdmin(req)) {
+    try {
+      const ip = (req.headers.get('x-forwarded-for') ?? 'inconnu').split(',')[0].trim()
+      const k = `lieux:quota:${ip}:${new Date().toISOString().slice(0, 13)}`
+      const dejaFait = Number((await r.get<number>(k)) ?? 0)
+      if (dejaFait >= QUOTA_HEURE) {
+        // ⏱️ Le délai RÉEL, pas une formule : on demande à Redis combien de
+        // temps il reste à la clé. Un message qui dit « réessaie plus tard »
+        // sans dire quand ne vaut pas mieux que le silence.
+        let secondes = 0
+        try { secondes = Math.max(0, Number(await r.ttl(k))) } catch { secondes = 0 }
+        // ⚠️ Un 429 doit se VOIR dans les journaux. Le nôtre passait en
+        // silence, et on a cherché la panne chez Google pendant une
+        // demi-journée.
+        console.warn(`[lieux] QUOTA INTERNE ATTEINT — ${dejaFait}/${QUOTA_HEURE} sur cette heure, ip ${ip}. Google n'a PAS été appelé. Nouvelle tentative possible dans ${Math.ceil(secondes / 60)} min.`)
+        await compter('surmesure:quota-atteint')
+        return NextResponse.json({ erreur: 'quota', secondes }, {
+          status: 429,
+          headers: { 'Retry-After': String(secondes || 60) },
+        })
+      }
+      const n = await r.incr(k)
+      if (n === 1) await r.expire(k, 3600)
+    } catch { /* un compteur en panne ne ferme jamais le service */ }
   }
 
   const origin = new URL(req.url).origin

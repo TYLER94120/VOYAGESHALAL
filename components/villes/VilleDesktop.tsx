@@ -24,7 +24,9 @@ import { getCityGuide } from '@/lib/cityGuides'
 import GuideCarousel from '@/components/villes/GuideCarousel'
 import CitySpots from '@/components/villes/CitySpots'
 import StickySections from '@/components/villes/StickySections'
-import { HalalScoreBadge } from '@/components/HalalScoreBadge'
+import VerdictArrivee from '@/components/villes/VerdictArrivee'
+import { indicateurs, scoreGlobal, verdict } from '@/lib/verdictVille.mjs'
+import { motARisque } from '@/lib/halalPrudent.mjs'
 
 // Sections guidées (refonte « Netflix » des fiches) — libellés orientés usage
 const TABS = [
@@ -104,13 +106,29 @@ export default function VilleDesktop({ ville }: { ville: any }) {
   // à majorité musulmane (liste blanche) — dans le doute : bannière neutre.
   const PAYS_MAJORITE_MUSULMANE = new Set(['Maroc', 'Algérie', 'Tunisie', 'Libye', 'Égypte', 'Mauritanie', 'Sénégal', 'Mali', 'Niger', 'Soudan', 'Somalie', 'Djibouti', 'Comores', 'Gambie', 'Guinée', 'Turquie', 'Arabie Saoudite', 'Émirats Arabes Unis', 'Émirats', 'Qatar', 'Koweït', 'Bahreïn', 'Oman', 'Yémen', 'Jordanie', 'Irak', 'Iran', 'Syrie', 'Liban', 'Palestine', 'Pakistan', 'Afghanistan', 'Bangladesh', 'Indonésie', 'Malaisie', 'Brunei', 'Maldives', 'Ouzbékistan', 'Turkménistan', 'Tadjikistan', 'Kirghizistan', 'Kazakhstan', 'Azerbaïdjan', 'Albanie', 'Kosovo', 'Bosnie-Herzégovine', 'Tchad', 'Burkina Faso', 'Sierra Leone', 'Nigeria'])
   const villeNonMusulmane = !PAYS_MAJORITE_MUSULMANE.has(String(ville.pays ?? ''))
-  const halalScore = ville.halalScore ?? (ville.score_halal ? Math.round(ville.score_halal * 2 * 10) / 10 : null)
   const [restosFull, setRestosFull] = useState<any[] | null>(null)
   const restaurants = restosFull ?? ville.restaurants ?? []
   const restaurantsTotal = ville.restaurantsTotal ?? restaurants.length
   const mosquees = ville.mosqueesPrincipales ?? []
   const hotels = ville.hotels ?? []
   const activites = ville.activites ?? []
+  // 🧭 LE VERDICT D'ARRIVÉE — calculé, jamais généré. Les cinq faits qui le
+  // fondent viennent tous de NOS données ; aucun appel Google n'est fait.
+  const faitsVille = {
+    paysMajoriteMusulmane: !villeNonMusulmane,
+    mosquees: ville.statistiques?.mosquees ?? mosquees.length,
+    restaurants: restaurants.length,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    restaurantsSignales: restaurants.filter((r: any) => r?.halalConfidence === 'yes' || r?.halalConfidence === 'only' || r?.halalFriendly || r?.halal_certifie).length,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    restaurantsARisque: restaurants.filter((r: any) => motARisque(r?.nom ?? r?.name, r?.type)).length,
+  }
+  const indVille = indicateurs(faitsVille)
+  const scoreVille = scoreGlobal(indVille)
+  // Un seul chiffre sur la page : celui qu'on sait décomposer.
+  const halalScore = scoreGlobal(indVille)
+  const phrasesVerdict = verdict({ ville: ville.nom, pays: String(ville.pays ?? ''), paysMajoriteMusulmane: faitsVille.paysMajoriteMusulmane }, indVille)
+
   const coords = ville.coordonnees ?? null
   const hasCoords = coords && typeof coords.lat === 'number' && typeof coords.lng === 'number'
   // Coordonnées pour le score « bien situé » du filtre hôtels (mosquées + restos halal)
@@ -246,22 +264,10 @@ export default function VilleDesktop({ ville }: { ville: any }) {
               <FavButton size={22} fav={{ id: favId('ville', ville.slug ?? ville.nom), kind: 'ville', nom: ville.nom, href: `/destinations/${ville.slug ?? ''}` }} />
             </span>
           </h1>
-          {/* Le score est CLIQUABLE : il montre les chiffres d'où il sort.
-              Un 9.3/10 sans explication, personne n'y croit. */}
-          {halalScore != null && (
-            <div style={{ display: 'flex', justifyContent: 'center', marginTop: 14 }}>
-              <HalalScoreBadge
-                score={halalScore}
-                ville={ville.nom}
-                stats={{
-                  mosquees: ville.statistiques?.mosquees ?? mosquees.length,
-                  restaurants: restaurantsTotal,
-                  hotels: hotels.length,
-                  pctMusulmans: ville.statistiques?.habitants_musulmans_pct,
-                }}
-              />
-            </div>
-          )}
+          {/* Le badge « Halal 8.1/10 » posé sur la photo a été RETIRÉ : un
+              chiffre sans décomposition ne veut rien dire. Il est remplacé,
+              juste sous le titre, par le verdict d'arrivée qui porte ses
+              trois notes ET la phrase qui explique chacune. */}
         </div>
       </section>
 
@@ -275,6 +281,8 @@ export default function VilleDesktop({ ville }: { ville: any }) {
               désormais le PREMIER élément avec lequel on peut agir, visible
               sans descendre d'un millimètre. Le titre reste au-dessus :
               on ne refait pas l'erreur inverse. */}
+          <VerdictArrivee phrases={phrasesVerdict} ind={indVille} score={scoreVille} />
+
           {co.lat != null && co.lng != null && (
             <div style={{ margin: '0 auto 18px', maxWidth: 700 }}>
               <SurMesure fondu en={en} destination={{ lat: co.lat, lng: co.lng, nom: ville.nom }} />

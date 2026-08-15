@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/test-alcool.mjs && node scripts/test-titres.mjs && node scripts/test-pays-halal.mjs && node scripts/test-email-bienvenue.mjs && node scripts/test-titres-spots.mjs && node scripts/test-info-pratique-en.mjs && node scripts/test-lire-ville.mjs && node scripts/test-mesures.mjs && node scripts/test-requete.mjs && node scripts/test-categorie.mjs && node scripts/test-halal-prudent.mjs && node scripts/test-hotels-situes.mjs && node scripts/test-moteur-proximite.mjs && next build",
+    "build": "node scripts/test-alcool.mjs && node scripts/test-titres.mjs && node scripts/test-pays-halal.mjs && node scripts/test-email-bienvenue.mjs && node scripts/test-titres-spots.mjs && node scripts/test-info-pratique-en.mjs && node scripts/test-lire-ville.mjs && node scripts/test-mesures.mjs && node scripts/test-requete.mjs && node scripts/test-categorie.mjs && node scripts/test-halal-prudent.mjs && node scripts/test-hotels-situes.mjs && node scripts/test-moteur-proximite.mjs && node scripts/test-verdict-ville.mjs && node scripts/test-message-erreur.mjs && next build",
     "test:titres": "node scripts/test-titres.mjs",
     "test:pays": "node scripts/test-pays-halal.mjs",
     "test:email": "node scripts/test-email-bienvenue.mjs",

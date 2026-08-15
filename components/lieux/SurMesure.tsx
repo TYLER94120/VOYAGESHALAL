@@ -146,6 +146,20 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
   // interroger Google. Dire « il n'y a rien » quand on veut dire « nous
   // n'avons pas pu demander » est un mensonge par raccourci.
   const [etatGoogle, setEtatGoogle] = useState<'ok' | 'vide' | 'muet' | 'sans-cle' | ''>('')
+  /**
+   * 🔴🔴 CHAQUE PANNE NOMME SA VRAIE CAUSE.
+   *
+   * Défaut du 15 août, et il a coûté une demi-journée : sur un 429 de NOTRE
+   * serveur — notre propre limiteur anti-robot —, l'écran affichait
+   * « Nous n'avons pas pu interroger Google Maps ». C'était faux : Google
+   * n'avait jamais été appelé. On est allé fouiller la console Google pour
+   * rien.
+   *
+   * « Un message d'erreur faux est pire qu'une panne : il envoie chercher
+   * au mauvais endroit. » Donc : quota ≠ Google muet ≠ position refusée ≠
+   * réseau coupé. Un état par cause, un message par état.
+   */
+  const [panne, setPanne] = useState<{ quoi: 'quota' | 'reseau'; secondes?: number } | null>(null)
   const [mode, setMode] = useState<Mode>('voiture')
   const [plafond, setPlafond] = useState(15)
   const [rayonKm, setRayonKm] = useState(20)
@@ -316,7 +330,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
   async function lancer(c: Criteres, ecrit: boolean, forcerGPS = false, ville?: { lat: number; lng: number; nom: string } | null) {
     if (enCours.current) return
     enCours.current = true
-    setProse(''); setFiches([]); setAutres([]); setVoirAutres(false); setEtape('cherche')
+    setProse(''); setFiches([]); setAutres([]); setVoirAutres(false); setPanne(null); setEtape('cherche')
     // Dès le clic, la vue descend sur la zone de réponse : le squelette y
     // est déjà, donc le visiteur SAIT que son geste a été pris en compte.
     requestAnimationFrame(() => zoneResultats.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }))
@@ -338,7 +352,22 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ lat: pos.lat, lng: pos.lng, criteres: c, lang: en ? 'en' : 'fr', ecrit, profil }),
         })
+        if (r.status === 429) {
+          // NOTRE plafond, pas celui de Google. On le dit tel quel, avec le
+          // délai réel renvoyé par le serveur.
+          const j = await r.json().catch(() => ({})) as { secondes?: number }
+          const dEntete = Number(r.headers.get('Retry-After') ?? 0)
+          setPanne({ quoi: 'quota', secondes: j.secondes || dEntete || 0 })
+          setEtape('resultat')
+          return
+        }
         corps = r.ok ? await r.json() : {}
+      } catch {
+        // Réseau coupé, requête abandonnée : c'est NOUS qui n'avons pas pu
+        // partir, pas Google qui n'a pas répondu.
+        setPanne({ quoi: 'reseau' })
+        setEtape('resultat')
+        return
       } finally { clearTimeout(to) }
 
       const trois = corps.fiches ?? []
@@ -471,6 +500,15 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
     color: on ? 'var(--or)' : 'var(--creme)', fontWeight: on ? 800 : 700, fontSize: 14,
   })
   const rangee: React.CSSProperties = { display: 'flex', gap: 7, flexWrap: 'wrap', marginTop: 8 }
+  /** Le délai, écrit comme on le dirait. Zéro seconde connue → « bientôt ». */
+  function attente(secondes: number | undefined, anglais: boolean): string {
+    const s = Number(secondes ?? 0)
+    if (!s) return anglais ? 'shortly' : 'dans un instant'
+    if (s < 90) return anglais ? `in ${s} seconds` : `dans ${s} secondes`
+    const m = Math.ceil(s / 60)
+    return anglais ? `in ${m} minutes` : `dans ${m} minutes`
+  }
+
   const label: React.CSSProperties = { color: 'rgba(253,250,243,0.6)', fontSize: 12, fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', margin: '12px 0 0' }
 
   return (
@@ -876,7 +914,36 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
             deux adresses valent mieux que trois dont une absurde — on le
             dit quand on n'en a trouvé que deux. */}
 
-        {etape === 'resultat' && fiches.length === 0 && (
+        {/* 🔴 LE QUOTA D'ABORD, ET IL DIT SON NOM. C'est NOTRE limiteur qui
+            a refusé : Google n'a pas été appelé, on n'a donc pas le droit
+            de l'accuser. Le délai affiché est celui que le serveur nous a
+            réellement renvoyé. */}
+        {etape === 'resultat' && panne?.quoi === 'quota' && (
+          <div style={{ marginTop: 14, border: '1px solid rgba(201,168,76,0.45)', borderRadius: 14, padding: '13px 14px' }}>
+            <p style={{ color: 'rgba(253,250,243,0.9)', fontSize: 14, lineHeight: 1.55, margin: 0 }}>
+              {t(`Tu as fait beaucoup de recherches d'affilée. C'est notre propre limite, pas une panne : réessaie ${attente(panne.secondes, false)}.`,
+                 `You have run a lot of searches in a row. That is our own limit, not an outage: try again ${attente(panne.secondes, true)}.`)}
+            </p>
+            <p style={{ color: 'rgba(253,250,243,0.55)', fontSize: 12.5, lineHeight: 1.5, margin: '7px 0 0' }}>
+              {t('En attendant, tes adresses enregistrées et les guides restent accessibles.',
+                 'Meanwhile, your saved places and the guides stay available.')}
+            </p>
+          </div>
+        )}
+
+        {/* Réseau : la requête n'est jamais partie. Là encore, ce n'est pas
+            Google qui est muet — c'est nous qui n'avons pas pu parler. */}
+        {etape === 'resultat' && panne?.quoi === 'reseau' && (
+          <div style={{ marginTop: 14, border: '1px solid rgba(253,250,243,0.2)', borderRadius: 14, padding: '13px 14px' }}>
+            <p style={{ color: 'rgba(253,250,243,0.9)', fontSize: 14, lineHeight: 1.55, margin: 0 }}>
+              {t(`La connexion n'a pas tenu jusqu'au bout — la recherche n'est pas partie. Réessaie dans un instant.`,
+                 `The connection dropped before the search left — try again in a moment.`)}
+            </p>
+            <button onClick={() => lancer(crit, aEcrit)} style={{ ...puce(false), marginTop: 10 }}>{t('Réessayer', 'Try again')}</button>
+          </div>
+        )}
+
+        {etape === 'resultat' && !panne && fiches.length === 0 && (
           <div style={{ marginTop: 14 }}>
             {/* 🔌 DEUX RAISONS TRÈS DIFFÉRENTES D'AVOIR UN ÉCRAN VIDE, et
                 on ne dit pas l'une pour l'autre. Soit Google a répondu et

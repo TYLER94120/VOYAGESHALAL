@@ -15,6 +15,7 @@ export interface EntreeHalal {
 
 export declare const MOTS_A_RISQUE: string[]
 export declare function motARisque(nom?: string, type?: string): boolean
+export declare function aMarqueurAlcool(nom?: string, type?: string): boolean
 export declare function verdictHalal(e: EntreeHalal): { etat: EtatHalal; coche: boolean; motif?: string }
 export declare function phraseHalal(etat: EtatHalal, en?: boolean): string
 export declare function familleDepuisType(type?: string): string | null
