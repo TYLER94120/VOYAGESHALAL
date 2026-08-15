@@ -65,16 +65,22 @@ export default function AccueilCiel({ posInitiale, en }: {
   const ciel = calc?.ciel ?? 'isha'
   const heure = new Date().getHours()
 
-  // Le moment décide de ce qu'on cherche, et le ruban le dit à voix haute.
-  const { categorie, ruban } = useMemo(() => {
-    if (calc?.minutes != null && calc.minutes <= 30) {
-      return { categorie: 'mosquee' as const, ruban: '🕌 Tu peux y être à temps' }
+  // 🔴 LE MOMENT DÉCIDE, ET LE RUBAN PROPOSE — il n'impose pas.
+  //
+  // Mohamed, 16 août : « La prière passe devant à MOINS D'UNE HEURE, pas
+  // trente minutes. À "Maghrib dans 1 h 21", c'est la mosquée qui domine. »
+  // Et : « le ruban propose : "À côté de toi ce soir", pas "ENCORE OUVERT
+  // CE SOIR" » — une proposition, pas une injonction.
+  const { categorie, ruban, mode } = useMemo(() => {
+    const nuit = heure >= 23 || heure < 5
+    if (nuit) return { categorie: 'mosquee' as const, ruban: '🧭 Tourne-toi vers La Mecque', mode: 'nuit' as const }
+    if (calc?.minutes != null && calc.minutes <= 60) {
+      return { categorie: 'mosquee' as const, ruban: '🕌 Tu peux y être à temps', mode: 'priere' as const }
     }
-    if (heure >= 23 || heure < 5) return { categorie: 'mosquee' as const, ruban: '🕌 La plus proche, cette nuit' }
-    if (heure >= 11 && heure < 14) return { categorie: 'manger' as const, ruban: '🍽 Où déjeuner, tout près' }
-    if (heure >= 19 && heure < 23) return { categorie: 'manger' as const, ruban: '🍽 Encore ouvert ce soir' }
-    if (heure >= 14 && heure < 19) return { categorie: 'activite' as const, ruban: '🎯 À faire autour de toi' }
-    return { categorie: 'manger' as const, ruban: '🍽 À cinq minutes de toi' }
+    if (heure >= 11 && heure < 14) return { categorie: 'manger' as const, ruban: '🍽 Où déjeuner, tout près', mode: 'normal' as const }
+    if (heure >= 19 && heure < 23) return { categorie: 'manger' as const, ruban: '🍽 À côté de toi ce soir', mode: 'normal' as const }
+    if (heure >= 14 && heure < 19) return { categorie: 'activite' as const, ruban: '🎯 À faire autour de toi', mode: 'normal' as const }
+    return { categorie: 'manger' as const, ruban: '🍽 À cinq minutes de toi', mode: 'normal' as const }
   }, [calc?.minutes, heure])
 
   return (
@@ -90,6 +96,8 @@ export default function AccueilCiel({ posInitiale, en }: {
         onOuvrirHoraires={() => setOuvert((v) => !v)}
         fiches={fiches}
         ruban={ruban}
+        mode={mode}
+        verdict={null}
       />
       {/* Le champ libre reste — pour tout ce qui sort des catégories. Et
           c'est lui qui porte le moteur : un seul chemin vers /api/lieux. */}

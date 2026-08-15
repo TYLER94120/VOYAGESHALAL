@@ -1139,3 +1139,59 @@ body:has(.accueil-ciel) { background: transparent !important; }
   font-variant-numeric: tabular-nums;
   font-feature-settings: 'tnum' 1;
 }
+
+
+/* ════════ L'ACCUEIL DES CINQ CIELS — ce que le modèle impose ════════ */
+
+/* 🔴 LE BANDEAU BLANC DU HAUT — « c'est la cassure qui gâche tout »
+   (Mohamed, 16 août). Un rectangle blanc posé juste au-dessus du ciel
+   annule tout le travail de teinte. Il prend donc le ciel courant, et son
+   texte passe en blanc. On ne le supprime pas : c'est la navigation du
+   site, et un site sans porte de sortie est pire qu'un site moins beau. */
+body:has(.accueil-ciel) .header-premium,
+body:has(.accueil-ciel) .header-premium > div,
+body:has(.accueil-ciel) header,
+body:has(.accueil-ciel) header > div {
+  background: transparent !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+  box-shadow: none !important;
+}
+body:has(.accueil-ciel) header a,
+body:has(.accueil-ciel) header button,
+body:has(.accueil-ciel) header span {
+  color: #fff !important;
+}
+/* Les pastilles claires du bandeau — « Outils », « L'application » — sont
+   des rectangles lumineux au milieu du ciel. Elles deviennent des contours,
+   ce qui les garde lisibles sans casser la teinte. */
+body:has(.accueil-ciel) .header-premium .nav-link-high,
+body:has(.accueil-ciel) .header-premium .btn-app-gold,
+body:has(.accueil-ciel) .header-premium .nav-tools-menu,
+body:has(.accueil-ciel) .header-premium [class*="btn-"],
+body:has(.accueil-ciel) .header-premium [class*="-high"] {
+  background: rgba(255, 255, 255, 0.10) !important;
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  color: #fff !important;
+}
+
+/* 🔴 LA POSITION EN DOUBLE. Elle s'affichait dans le bandeau du haut ET
+   dans le ciel, à trois centimètres d'écart. On garde celle du ciel :
+   c'est celle qui est dans le regard au moment où on lit la réponse. */
+body:has(.accueil-ciel) .prayer-bar { display: none !important; }
+
+/* 🖥️ « La composition est pensée à 320 px, elle ne se dilate pas à
+   l'infini. » Sur ordinateur, la colonne s'arrête à 720 px et se centre —
+   au-delà, les lignes deviennent illisibles et la hiérarchie se dissout. */
+.accueil-ciel > * {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Le rond central de la barre du bas prend l'accent du ciel courant. */
+.bottom-nav-plus .bottom-nav-icon {
+  width: 50px; height: 50px; border-radius: 999px;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--ciel-accent, var(--or));
+  color: #141018; font-size: 20px;
+}

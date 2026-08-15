@@ -1,0 +1,972 @@
+<title>L'heure fait l'écran</title>
+
+<style>
+  :root{
+    /* encres */
+    --encre:#080D1A;
+    --encre-2:#0E1628;
+    --voile:#FBF8F2;
+    --voile-doux:#A8B2C6;
+
+    /* les cinq lumières */
+    --fajr-a:#101A33;  --fajr-b:#3A4A78;  --fajr-c:#E3A88F;
+    --zenith-a:#2C5A86; --zenith-b:#6FA8D6; --zenith-c:#D8ECF8;
+    --maghrib-a:#3D1530; --maghrib-b:#B23F4E; --maghrib-c:#F0864A;
+    --isha-a:#0B1026;  --isha-b:#241945;  --isha-c:#6C5A9E;
+
+    /* sémantique */
+    --sur:#1FA06A;
+    --tiede:#E0A340;
+    --faux:#D6544A;
+
+    --serif:Georgia,'Iowan Old Style','Times New Roman',serif;
+    --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,system-ui,sans-serif;
+  }
+
+  *{box-sizing:border-box;}
+
+  body{
+    margin:0;
+    background:var(--encre);
+    color:var(--voile);
+    font-family:var(--sans);
+    font-size:17px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+
+  .large{max-width:1200px;margin:0 auto;padding:0 24px;}
+  .etroit{max-width:66ch;}
+
+  /* ═══════ OUVERTURE ═══════ */
+  .ouverture{
+    position:relative;
+    padding:120px 0 110px;
+    background:
+      radial-gradient(120% 90% at 50% 108%, #2B1D52 0%, rgba(43,29,82,0) 62%),
+      radial-gradient(90% 70% at 12% 8%, #16234A 0%, rgba(22,35,74,0) 58%),
+      linear-gradient(178deg, #060A16 0%, #0B1226 55%, #10193A 100%);
+    overflow:hidden;
+  }
+  .etoiles{
+    position:absolute;inset:0;pointer-events:none;opacity:.5;
+    background-image:
+      radial-gradient(1.4px 1.4px at 12% 22%, #fff, transparent),
+      radial-gradient(1.2px 1.2px at 78% 14%, #fff, transparent),
+      radial-gradient(1px 1px at 42% 9%, #E8D9B8, transparent),
+      radial-gradient(1.5px 1.5px at 88% 42%, #fff, transparent),
+      radial-gradient(1px 1px at 26% 48%, #C9D6F0, transparent),
+      radial-gradient(1.2px 1.2px at 62% 33%, #fff, transparent),
+      radial-gradient(1px 1px at 6% 62%, #fff, transparent),
+      radial-gradient(1.3px 1.3px at 94% 68%, #E8D9B8, transparent);
+  }
+  .ouverture .large{position:relative;}
+
+  .oeil{
+    font-size:12px;letter-spacing:.26em;text-transform:uppercase;
+    color:#C9A052;font-weight:700;margin:0 0 26px;
+  }
+  h1{
+    font-family:var(--serif);font-weight:400;
+    font-size:clamp(42px,8vw,96px);line-height:.98;letter-spacing:-.015em;
+    margin:0 0 30px;text-wrap:balance;
+  }
+  h1 em{
+    font-style:italic;
+    background:linear-gradient(100deg,#F2C78A 0%,#E8875B 46%,#C9628F 100%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .chapo{
+    font-size:20px;line-height:1.55;color:var(--voile-doux);max-width:56ch;margin:0;
+  }
+  .chapo strong{color:var(--voile);font-weight:600;}
+
+  /* la frise des cinq lumières */
+  .frise{
+    display:flex;margin-top:56px;border-radius:16px;overflow:hidden;
+    box-shadow:0 20px 60px rgba(0,0,0,.5);
+  }
+  .frise > div{
+    flex:1;padding:20px 14px 18px;text-align:center;min-width:0;
+  }
+  .frise .nom{
+    font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;
+    font-weight:700;margin:0 0 6px;opacity:.9;
+  }
+  .frise .h{
+    font-family:var(--serif);font-size:22px;font-weight:400;
+    font-variant-numeric:tabular-nums;margin:0;
+  }
+  .f1{background:linear-gradient(165deg,#131F3E,#3E4E7C);color:#DCC4B4;}
+  .f2{background:linear-gradient(165deg,#2E5F8C,#7FB2DC);color:#08182B;}
+  .f3{background:linear-gradient(165deg,#8B6A3C,#D8A458);color:#1A1206;}
+  .f4{background:linear-gradient(165deg,#8E2F45,#EE8449);color:#2A0912;}
+  .f5{background:linear-gradient(165deg,#0D1229,#3A2A63);color:#B9A9DE;}
+
+  /* ═══════ SECTIONS-CIEL ═══════ */
+  .ciel{padding:104px 0 96px;position:relative;}
+  .ciel-fajr{
+    background:
+      radial-gradient(120% 80% at 78% 104%, #E3A88F 0%, rgba(227,168,143,0) 52%),
+      linear-gradient(172deg, #0A1226 0%, #1B2A50 48%, #46436E 100%);
+  }
+  .ciel-zenith{
+    background:
+      radial-gradient(100% 70% at 50% -8%, #D8ECF8 0%, rgba(216,236,248,0) 48%),
+      linear-gradient(172deg, #4E86B4 0%, #2B5680 62%, #17304E 100%);
+  }
+  .ciel-maghrib{
+    background:
+      radial-gradient(115% 80% at 22% 100%, #F0864A 0%, rgba(240,134,74,0) 54%),
+      linear-gradient(172deg, #2A1030 0%, #6B2440 52%, #A83B4C 100%);
+  }
+  .ciel-ailleurs{
+    background:
+      radial-gradient(110% 75% at 84% 6%, #6C5A9E 0%, rgba(108,90,158,0) 52%),
+      linear-gradient(172deg, #0B1026 0%, #1C1540 58%, #2E2158 100%);
+  }
+
+  .tete-section{
+    display:flex;align-items:baseline;gap:18px;flex-wrap:wrap;margin-bottom:12px;
+  }
+  .tag{
+    font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;font-weight:700;
+    border:1px solid currentColor;border-radius:999px;padding:5px 14px;
+  }
+  .horodate{
+    font-family:var(--serif);font-size:clamp(38px,6vw,64px);font-weight:400;
+    font-variant-numeric:tabular-nums;line-height:1;margin:0;
+  }
+  h2{
+    font-family:var(--serif);font-weight:400;
+    font-size:clamp(28px,4.2vw,44px);line-height:1.12;
+    margin:0 0 16px;text-wrap:balance;
+  }
+  .dit{font-size:18.5px;line-height:1.6;margin:0 0 44px;max-width:58ch;}
+  .dit strong{font-weight:600;}
+
+  .duo-ecran{
+    display:grid;grid-template-columns:minmax(0,320px) minmax(0,1fr);
+    gap:52px;align-items:start;
+  }
+  @media (max-width:860px){
+    .duo-ecran{grid-template-columns:1fr;gap:36px;}
+  }
+
+  /* couleurs de texte par ciel */
+  .ciel-fajr .tag,.ciel-fajr .horodate{color:#F0C4AC;}
+  .ciel-fajr h2{color:#FBF3EC;}
+  .ciel-fajr .dit{color:#CFC0CE;}
+  .ciel-fajr .dit strong{color:#FBF3EC;}
+
+  .ciel-zenith .tag,.ciel-zenith .horodate{color:#08243D;}
+  .ciel-zenith h2{color:#06192C;}
+  .ciel-zenith .dit{color:#0C2F4C;}
+  .ciel-zenith .dit strong{color:#06192C;}
+
+  .ciel-maghrib .tag,.ciel-maghrib .horodate{color:#FFD9B8;}
+  .ciel-maghrib h2{color:#FFF3E8;}
+  .ciel-maghrib .dit{color:#F4C9BC;}
+  .ciel-maghrib .dit strong{color:#FFF3E8;}
+
+  .ciel-ailleurs .tag,.ciel-ailleurs .horodate{color:#CBB9F2;}
+  .ciel-ailleurs h2{color:#F6F1FF;}
+  .ciel-ailleurs .dit{color:#B4A8D2;}
+  .ciel-ailleurs .dit strong{color:#F6F1FF;}
+
+  /* notes à côté de l'écran */
+  .notes{display:flex;flex-direction:column;gap:20px;padding-top:6px;}
+  .note{
+    border-left:2px solid currentColor;padding-left:20px;
+  }
+  .note h3{
+    font-family:var(--serif);font-size:22px;font-weight:400;margin:0 0 7px;
+    line-height:1.2;
+  }
+  .note p{margin:0;font-size:16px;line-height:1.55;opacity:.86;}
+  .ciel-fajr .note{color:#F0C4AC;} .ciel-fajr .note p{color:#DCCBD8;}
+  .ciel-zenith .note{color:#0B3253;} .ciel-zenith .note p{color:#0F3A5E;}
+  .ciel-maghrib .note{color:#FFD9B8;} .ciel-maghrib .note p{color:#F2CCC0;}
+  .ciel-ailleurs .note{color:#CBB9F2;} .ciel-ailleurs .note p{color:#BCB0DA;}
+  .note h3{color:inherit;}
+
+  /* ═══════ TÉLÉPHONE ═══════ */
+  .tel{
+    width:320px;max-width:100%;
+    background:#04070F;border-radius:38px;padding:9px;
+    box-shadow:0 34px 80px rgba(0,0,0,.6), 0 0 0 1px rgba(255,255,255,.1);
+  }
+  .ecran{
+    border-radius:30px;overflow:hidden;min-height:602px;
+    display:flex;flex-direction:column;position:relative;
+  }
+  .fond-fajr{background:linear-gradient(178deg,#0B1327 0%,#1C2B52 62%,#3B3C63 100%);}
+  .fond-zenith{background:linear-gradient(178deg,#0A1F35 0%,#12324F 58%,#1B4266 100%);}
+  .fond-maghrib{background:linear-gradient(178deg,#1B0A20 0%,#3E1430 56%,#6B2438 100%);}
+  .fond-ailleurs{background:linear-gradient(178deg,#0A0F24 0%,#181139 58%,#281B4E 100%);}
+  .fond-mort{background:#1A1D22;}
+
+  .statut{
+    display:flex;justify-content:space-between;align-items:center;
+    padding:11px 20px 4px;font-size:11.5px;color:rgba(255,255,255,.62);
+    font-variant-numeric:tabular-nums;
+  }
+  .dedans{
+    flex:1;padding:8px 14px 0;display:flex;flex-direction:column;gap:10px;
+  }
+
+  /* bandeau position + prière */
+  .entete{
+    display:flex;align-items:center;justify-content:space-between;gap:10px;
+    padding:2px 2px 0;
+  }
+  .lieu{
+    font-size:14px;font-weight:600;color:#fff;display:flex;align-items:center;gap:5px;
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  }
+  .lieu .exact{font-size:11px;color:#4FD69C;font-weight:700;}
+  .plus{font-size:15px;color:rgba(255,255,255,.5);}
+
+  .compte{
+    display:flex;align-items:baseline;gap:9px;padding:1px 2px 3px;
+  }
+  .compte .p{
+    font-size:12px;letter-spacing:.2em;text-transform:uppercase;
+    font-weight:700;color:rgba(255,255,255,.66);
+  }
+  .compte .t{
+    font-family:var(--serif);font-size:26px;line-height:1;color:#fff;
+    font-variant-numeric:tabular-nums;
+  }
+  .compte .t.urgent{color:#FFC978;}
+
+  /* LA RÉPONSE */
+  .reponse{
+    border-radius:22px;overflow:hidden;
+    background:rgba(255,255,255,.09);
+    border:1px solid rgba(255,255,255,.16);
+    backdrop-filter:blur(8px);
+  }
+  .ruban{
+    font-size:11.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+    padding:9px 16px;
+  }
+  .ruban.aube{background:linear-gradient(96deg,#E3A88F,#F0C4AC);color:#2A1520;}
+  .ruban.jour{background:linear-gradient(96deg,#7FB2DC,#C9E4F5);color:#06192C;}
+  .ruban.soir{background:linear-gradient(96deg,#EE8449,#F5B27A);color:#2A0912;}
+  .ruban.nuit{background:linear-gradient(96deg,#6C5A9E,#9B87D4);color:#150E2C;}
+
+  .visuel{
+    height:126px;position:relative;display:flex;align-items:flex-end;
+  }
+  .v-mosquee{background:linear-gradient(150deg,#2C4A7A 0%,#16264A 55%,#0D1830 100%);}
+  .v-plat{background:linear-gradient(150deg,#8A5B2E 0%,#5A3A1C 52%,#33200F 100%);}
+  .v-soir{background:linear-gradient(150deg,#7A2F3E 0%,#4A1C2C 55%,#2A0F1A 100%);}
+  .pastille-halal{
+    position:absolute;top:11px;right:11px;
+    font-size:11px;font-weight:700;border-radius:999px;padding:5px 11px;
+  }
+  .ph-sur{background:#1FA06A;color:#02170E;}
+  .ph-tiede{background:#E0A340;color:#231603;}
+
+  .contenu{padding:14px 16px 16px;}
+  .titre-lieu{
+    font-family:var(--serif);font-size:21px;font-weight:400;line-height:1.18;
+    margin:0 0 7px;color:#fff;
+  }
+  .infos{
+    font-size:13.5px;color:rgba(255,255,255,.82);margin:0 0 3px;
+    font-variant-numeric:tabular-nums;
+  }
+  .infos .n{color:#FFC978;font-weight:700;}
+  .infos .o{color:#4FD69C;font-weight:600;}
+  .aveu{
+    font-size:12.5px;line-height:1.4;margin:8px 0 0;
+    color:rgba(255,255,255,.66);
+  }
+  .aveu b{color:#FFC978;font-weight:600;}
+  .bouton{
+    margin-top:13px;border-radius:16px;padding:14px;text-align:center;
+    font-size:15.5px;font-weight:700;
+  }
+  .b-aube{background:#E3A88F;color:#2A1520;}
+  .b-jour{background:#8FC4E8;color:#06192C;}
+  .b-soir{background:#EE8449;color:#2A0912;}
+  .b-nuit{background:#9B87D4;color:#150E2C;}
+
+  /* fiches secondaires */
+  .mini{
+    display:flex;gap:12px;align-items:center;
+    background:rgba(255,255,255,.07);border-radius:16px;padding:11px 13px;
+    border:1px solid rgba(255,255,255,.1);
+  }
+  .carre{
+    width:48px;height:48px;flex:0 0 auto;border-radius:13px;
+  }
+  .c1{background:linear-gradient(140deg,#8A5B2E,#33200F);}
+  .c2{background:linear-gradient(140deg,#2C4A7A,#0D1830);}
+  .c3{background:linear-gradient(140deg,#6C5A9E,#241945);}
+  .mini .titre-lieu{font-size:15.5px;margin:0 0 2px;}
+  .mini .infos{font-size:12.5px;margin:0;}
+
+  /* filtres */
+  .filtres{display:flex;gap:7px;}
+  .fil{
+    border:1px solid rgba(255,255,255,.28);border-radius:999px;
+    padding:8px 14px;font-size:13px;font-weight:600;color:rgba(255,255,255,.9);
+    white-space:nowrap;
+  }
+  .fil.on{background:#fff;color:#0A1020;border-color:#fff;}
+
+  /* raccourcis */
+  .racc{display:flex;gap:7px;}
+  .racc > div{
+    flex:1;text-align:center;font-size:12.5px;font-weight:600;
+    color:rgba(255,255,255,.72);
+    border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:10px 3px;
+  }
+
+  /* barre du bas */
+  .quai{
+    margin-top:auto;display:flex;align-items:flex-end;justify-content:space-around;
+    padding:10px 6px 13px;border-top:1px solid rgba(255,255,255,.1);
+  }
+  .q{
+    flex:1;text-align:center;font-size:10.5px;color:rgba(255,255,255,.55);
+    display:flex;flex-direction:column;align-items:center;gap:4px;
+  }
+  .q .i{font-size:17px;line-height:1;}
+  .q.on{color:#fff;font-weight:700;}
+  .q.coeur .i{
+    width:50px;height:50px;border-radius:999px;
+    display:flex;align-items:center;justify-content:center;font-size:20px;
+    margin-bottom:1px;
+  }
+  .coeur-aube .i{background:linear-gradient(140deg,#E3A88F,#F0C4AC);color:#2A1520;}
+  .coeur-jour .i{background:linear-gradient(140deg,#8FC4E8,#C9E4F5);color:#06192C;}
+  .coeur-soir .i{background:linear-gradient(140deg,#EE8449,#F5B27A);color:#2A0912;}
+  .coeur-nuit .i{background:linear-gradient(140deg,#9B87D4,#C0AEEC);color:#150E2C;}
+  .q.coeur span:last-child{color:#fff;font-size:10.5px;font-weight:700;}
+
+  /* jauges du verdict voyage */
+  .jauges{display:flex;gap:8px;margin-top:14px;}
+  .jauge{
+    flex:1;background:rgba(0,0,0,.3);border-radius:14px;padding:11px 7px;
+    text-align:center;font-size:11.5px;color:rgba(255,255,255,.7);
+  }
+  .jauge b{
+    display:block;font-family:var(--serif);font-size:20px;font-weight:400;
+    margin-top:3px;font-variant-numeric:tabular-nums;
+  }
+  .jauge.bon b{color:#4FD69C;}
+  .jauge.moyen b{color:#FFC978;}
+
+  /* ═══════ L'ANCIEN ═══════ */
+  .constat{
+    background:var(--encre);padding:104px 0 96px;
+  }
+  .constat h2{color:var(--voile);}
+  .constat .dit{color:var(--voile-doux);}
+  .constat .dit strong{color:var(--voile);}
+
+  .avant-apres{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,320px));
+    gap:44px;justify-content:start;margin-top:44px;
+  }
+  .colonne .legende-col{
+    font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;
+    margin:0 0 6px;
+  }
+  .colonne .sous{font-size:15.5px;color:var(--voile-doux);margin:0 0 20px;min-height:48px;}
+  .l-avant{color:var(--faux);}
+  .l-apres{color:#F2C78A;}
+
+  /* écran mort (l'actuel) */
+  .mort{filter:saturate(.35);}
+  .bloc-mort{
+    background:rgba(255,255,255,.06);border-radius:13px;padding:11px 13px;
+    font-size:13px;color:rgba(255,255,255,.65);
+  }
+  .bloc-mort .lab{font-size:11px;color:rgba(255,255,255,.42);margin:0 0 3px;}
+  .bloc-mort .val{font-family:var(--serif);font-size:19px;color:#fff;margin:0;}
+  .cinq{
+    display:flex;justify-content:space-between;margin-top:10px;font-size:10.5px;
+    color:rgba(255,255,255,.45);text-align:center;font-variant-numeric:tabular-nums;
+  }
+  .cinq b{display:block;color:rgba(255,255,255,.8);font-size:11.5px;}
+  .raye{position:relative;}
+  .raye::after{
+    content:"";position:absolute;inset:-3px;border-radius:14px;
+    border:1.5px solid var(--faux);background:rgba(214,84,74,.14);
+  }
+  .etiq{
+    position:absolute;top:-10px;right:8px;z-index:3;
+    background:var(--faux);color:#fff;font-size:10px;font-weight:700;
+    border-radius:999px;padding:2px 9px;
+  }
+  .rel{position:relative;}
+
+  /* ═══════ TABLEAU ═══════ */
+  .verdicts{background:var(--encre-2);padding:96px 0 100px;}
+  .verdicts h2{color:var(--voile);}
+  .verdicts .dit{color:var(--voile-doux);}
+  .verdicts .dit strong{color:var(--voile);}
+  .enveloppe{overflow-x:auto;margin-top:38px;}
+  table{width:100%;border-collapse:collapse;min-width:620px;font-size:15.5px;}
+  th{
+    text-align:left;font-size:11px;letter-spacing:.2em;text-transform:uppercase;
+    color:#C9A052;font-weight:700;padding:0 18px 13px 0;
+    border-bottom:1px solid rgba(201,160,82,.35);
+  }
+  td{
+    padding:16px 18px 16px 0;vertical-align:top;color:var(--voile-doux);
+    border-bottom:1px solid rgba(255,255,255,.08);
+  }
+  td.q{color:var(--voile);font-weight:600;white-space:nowrap;}
+  .sceau{
+    display:inline-block;font-size:11.5px;font-weight:700;border-radius:999px;
+    padding:4px 11px;white-space:nowrap;
+  }
+  .s-non{background:rgba(214,84,74,.18);color:#F09189;border:1px solid rgba(214,84,74,.5);}
+  .s-mv{background:rgba(224,163,64,.16);color:#EFC078;border:1px solid rgba(224,163,64,.45);}
+  .s-oui{background:rgba(31,160,106,.16);color:#5BD9A4;border:1px solid rgba(31,160,106,.45);}
+
+  /* ═══════ FIN ═══════ */
+  .cloture{
+    padding:96px 0 110px;
+    background:
+      radial-gradient(110% 80% at 50% 110%, #2B1D52 0%, rgba(43,29,82,0) 60%),
+      linear-gradient(178deg,#080D1A 0%,#0E1226 100%);
+  }
+  .grande-idee{
+    font-family:var(--serif);font-size:clamp(26px,4vw,42px);line-height:1.28;
+    font-weight:400;max-width:22ch;margin:0 0 26px;text-wrap:balance;
+  }
+  .grande-idee em{
+    font-style:italic;
+    background:linear-gradient(100deg,#F2C78A,#E8875B 55%,#C9628F);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .pied{
+    font-size:14px;color:var(--voile-doux);max-width:70ch;margin:44px 0 0;
+    padding-top:24px;border-top:1px solid rgba(255,255,255,.12);
+  }
+
+  @media (max-width:640px){
+    .large{padding:0 18px;}
+    .ouverture{padding:76px 0 68px;}
+    .ciel{padding:70px 0 64px;}
+    .constat,.verdicts,.cloture{padding:70px 0 68px;}
+    .frise > div{padding:14px 6px;}
+    .frise .nom{font-size:9px;letter-spacing:.1em;}
+    .frise .h{font-size:15px;}
+  }
+</style>
+
+<!-- ══════════════ OUVERTURE ══════════════ -->
+<header class="ouverture">
+  <div class="etoiles"></div>
+  <div class="large">
+    <p class="oeil">VoyagesHalal.fr · direction artistique</p>
+    <h1>L'heure fait<br><em>l'écran.</em></h1>
+    <p class="chapo">Les cinq prières suivent le soleil. Le rythme d'une journée musulmane <strong>est déjà un dégradé de lumière</strong> — de l'aube bleue au couchant orange. Alors l'interface le suit aussi : à chaque moment sa couleur, et surtout, à chaque moment <strong>sa réponse</strong>.</p>
+
+    <div class="frise">
+      <div class="f1"><p class="nom">Fajr</p><p class="h">04:33</p></div>
+      <div class="f2"><p class="nom">Dhuhr</p><p class="h">13:56</p></div>
+      <div class="f3"><p class="nom">Asr</p><p class="h">17:51</p></div>
+      <div class="f4"><p class="nom">Maghrib</p><p class="h">21:06</p></div>
+      <div class="f5"><p class="nom">Isha</p><p class="h">23:06</p></div>
+    </div>
+  </div>
+</header>
+
+<!-- ══════════════ FAJR ══════════════ -->
+<section class="ciel ciel-fajr">
+  <div class="large">
+    <div class="tete-section">
+      <span class="tag">Fajr</span>
+      <p class="horodate">04:33</p>
+    </div>
+    <h2>Il fait encore nuit. Une seule chose compte.</h2>
+    <p class="dit">Personne ne cherche un restaurant à quatre heures du matin. L'écran ne propose donc <strong>rien d'autre</strong> que ce qui a du sens à cette heure : la direction de la Qibla, et le temps qu'il reste.</p>
+
+    <div class="duo-ecran">
+      <div class="tel">
+        <div class="ecran fond-fajr">
+          <div class="statut"><span>04:33</span><span>4G ▮</span></div>
+          <div class="dedans">
+            <div class="entete">
+              <span class="lieu">📍 Fontenay-sous-Bois <span class="exact">exacte ✓</span></span>
+              <span class="plus">⌄</span>
+            </div>
+            <div class="compte">
+              <span class="p">Fajr</span>
+              <span class="t urgent">maintenant</span>
+            </div>
+
+            <div class="reponse">
+              <div class="ruban aube">🧭 Tourne-toi vers La Mecque</div>
+              <div class="contenu" style="text-align:center;padding:26px 16px 22px;">
+                <p style="font-family:var(--serif);font-size:56px;margin:0;line-height:1;color:#fff;font-variant-numeric:tabular-nums;">119°</p>
+                <p class="infos" style="margin-top:8px;font-size:15px;">Est-sud-est · depuis ta position exacte</p>
+                <div class="bouton b-aube">🧭 Ouvrir la boussole</div>
+              </div>
+            </div>
+
+            <div class="mini">
+              <div class="carre c2"></div>
+              <div>
+                <p class="titre-lieu">La mosquée la plus proche</p>
+                <p class="infos">4 min à pied · ouvre à 05:00</p>
+              </div>
+            </div>
+
+            <p class="aveu" style="padding:0 4px;">Le reste du site attend qu'il fasse jour.</p>
+
+            <div class="quai">
+              <div class="q on"><span class="i">🏠</span>Accueil</div>
+              <div class="q"><span class="i">🕌</span>Prière</div>
+              <div class="q coeur coeur-aube"><span class="i">📍</span><span>Autour de moi</span></div>
+              <div class="q"><span class="i">🌍</span>Voyages</div>
+              <div class="q"><span class="i">☰</span>Plus</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="notes">
+        <div class="note">
+          <h3>Ce qui n'est pas là</h3>
+          <p>Pas de restaurants, pas de destinations, pas de météo. À 4 h 33, ces choses n'aident personne — les afficher, c'est faire du bruit.</p>
+        </div>
+        <div class="note">
+          <h3>La Qibla en grand</h3>
+          <p>119°, en chiffres énormes, lisibles sans lunettes et sans réfléchir. C'est le seul geste de cette heure-là : elle mérite tout l'écran.</p>
+        </div>
+        <div class="note">
+          <h3>La lumière dit l'heure</h3>
+          <p>Ce bleu profond qui se réchauffe vers le bas, c'est le ciel de l'aube. Le visiteur sait où il en est dans sa journée avant même d'avoir lu un mot.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ ZÉNITH ══════════════ -->
+<section class="ciel ciel-zenith">
+  <div class="large">
+    <div class="tete-section">
+      <span class="tag">Dhuhr</span>
+      <p class="horodate">12:30</p>
+    </div>
+    <h2>Le soleil est haut. On a faim.</h2>
+    <p class="dit">Midi et demi, aucune prière imminente : <strong>trois adresses réelles sont déjà là</strong>, sans avoir rien tapé. Le site connaît la position — il répond avant qu'on demande.</p>
+
+    <div class="duo-ecran">
+      <div class="tel">
+        <div class="ecran fond-zenith">
+          <div class="statut"><span>12:30</span><span>4G ▮</span></div>
+          <div class="dedans">
+            <div class="entete">
+              <span class="lieu">📍 Fontenay-sous-Bois <span class="exact">exacte ✓</span></span>
+              <span class="plus">⌄</span>
+            </div>
+            <div class="compte">
+              <span class="p">Dhuhr</span>
+              <span class="t">dans 1 h 26</span>
+            </div>
+
+            <div class="filtres">
+              <div class="fil">💶 Pas cher</div>
+              <div class="fil on">📍 Proche</div>
+              <div class="fil">⭐ Bien noté</div>
+            </div>
+
+            <div class="reponse">
+              <div class="ruban jour">🍽 À cinq minutes de toi</div>
+              <div class="visuel v-plat"><span class="pastille-halal ph-tiede">Signalé halal</span></div>
+              <div class="contenu">
+                <p class="titre-lieu">Traiteur Al Amir</p>
+                <p class="infos"><span class="n">★ 3,9</span> · 424 avis · €€ · <b>5 min à pied</b></p>
+                <p class="infos"><span class="o">Ouvert</span> jusqu'à 23:00 · 12 Ter Rue des Alouettes</p>
+                <p class="aveu">Signalé halal sur Google Maps — <b>à confirmer sur place</b><br>✓ Ne sert pas d'alcool</p>
+                <div class="bouton b-jour">🚶 Itinéraire</div>
+              </div>
+            </div>
+
+            <div class="mini">
+              <div class="carre c1"></div>
+              <div>
+                <p class="titre-lieu">Saveur de l'Atlas</p>
+                <p class="infos"><span class="n">★ 4,9</span> · 59 avis · 9 min</p>
+              </div>
+            </div>
+
+            <div class="racc">
+              <div>🕌 Prier</div><div>🎯 Que faire</div><div>🗺 Carte</div>
+            </div>
+
+            <div class="quai">
+              <div class="q on"><span class="i">🏠</span>Accueil</div>
+              <div class="q"><span class="i">🕌</span>Prière</div>
+              <div class="q coeur coeur-jour"><span class="i">📍</span><span>Autour de moi</span></div>
+              <div class="q"><span class="i">🌍</span>Voyages</div>
+              <div class="q"><span class="i">☰</span>Plus</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="notes">
+        <div class="note">
+          <h3>Zéro clic avant la première adresse</h3>
+          <p>C'est le test qui compte. Aujourd'hui il en faut cinq et une lecture attentive. Ici : aucun. La réponse est là à l'ouverture.</p>
+        </div>
+        <div class="note">
+          <h3>Trois filtres, pas vingt-deux boutons</h3>
+          <p>Pas cher, proche, bien noté. Les trois seuls critères universels, tous les trois livrables par Google. Ils se cumulent et retrient en direct — ils ne bloquent jamais.</p>
+        </div>
+        <div class="note">
+          <h3>L'honnêteté reste visible</h3>
+          <p>« Signalé halal — à confirmer sur place » ne disparaît jamais, même quand c'est moins vendeur. C'est ce qui fera la réputation du site, pas les photos.</p>
+        </div>
+        <div class="note">
+          <h3>La meilleure place du pouce</h3>
+          <p>Le bouton central n'est plus « Ajouter un lieu », que 1 % des visiteurs utilisera. C'est « Autour de moi » — l'action la plus fréquente, à l'endroit le plus accessible.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ MAGHRIB ══════════════ -->
+<section class="ciel ciel-maghrib">
+  <div class="large">
+    <div class="tete-section">
+      <span class="tag">Maghrib</span>
+      <p class="horodate">13:50</p>
+    </div>
+    <h2>Six minutes avant la prière, plus rien d'autre n'existe.</h2>
+    <p class="dit">Le vendredi à 13 h 50, un musulman n'a qu'une question. L'écran entier devient la réponse : <strong>la mosquée atteignable à temps</strong>, et le chemin pour y aller.</p>
+
+    <div class="duo-ecran">
+      <div class="tel">
+        <div class="ecran fond-maghrib">
+          <div class="statut"><span>13:50</span><span>4G ▮</span></div>
+          <div class="dedans">
+            <div class="entete">
+              <span class="lieu">📍 Fontenay-sous-Bois <span class="exact">exacte ✓</span></span>
+              <span class="plus">⌄</span>
+            </div>
+            <div class="compte">
+              <span class="p">Dhuhr · vendredi</span>
+              <span class="t urgent">dans 6 min</span>
+            </div>
+
+            <div class="reponse">
+              <div class="ruban soir">🕌 Tu peux y être à temps</div>
+              <div class="visuel v-soir"><span class="pastille-halal ph-sur">Mosquée</span></div>
+              <div class="contenu">
+                <p class="titre-lieu">La mosquée la plus proche</p>
+                <p class="infos"><span class="n">★ 4,5</span> · 166 avis · <b>4 min à pied</b></p>
+                <p class="infos"><span class="o">Ouverte</span> · prière en congrégation</p>
+                <p class="aveu">Horaires et équipements <b>à vérifier sur place</b></p>
+                <div class="bouton b-soir">🚶 Y aller — 4 min</div>
+              </div>
+            </div>
+
+            <div class="racc">
+              <div>🍽 Manger</div><div>🎯 Que faire</div><div>🗺 Carte</div>
+            </div>
+
+            <div class="quai">
+              <div class="q on"><span class="i">🏠</span>Accueil</div>
+              <div class="q"><span class="i">🕌</span>Prière</div>
+              <div class="q coeur coeur-soir"><span class="i">📍</span><span>Autour de moi</span></div>
+              <div class="q"><span class="i">🌍</span>Voyages</div>
+              <div class="q"><span class="i">☰</span>Plus</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="notes">
+        <div class="note">
+          <h3>« Tu peux y être à temps »</h3>
+          <p>Le site ne dit pas seulement où : il dit que c'est <em>possible</em>. Quatre minutes de marche, six minutes devant soi. C'est la phrase qu'on veut lire quand on est pressé.</p>
+        </div>
+        <div class="note">
+          <h3>Ce que ça remplace</h3>
+          <p>Aujourd'hui, dans cette situation exacte, le site affiche « Aucun lieu de prière connu à moins de 5 km — prie où tu es ». C'était faux, et c'était décourageant.</p>
+        </div>
+        <div class="note">
+          <h3>Le vendredi n'est pas un jour comme un autre</h3>
+          <p>Booking ne le saura jamais. Google Maps non plus. C'est exactement le genre de détail qui ne s'imite pas — il faut vivre le sujet pour y penser.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ AILLEURS ══════════════ -->
+<section class="ciel ciel-ailleurs">
+  <div class="large">
+    <div class="tete-section">
+      <span class="tag">Ailleurs</span>
+      <p class="horodate">20:10</p>
+    </div>
+    <h2>À 1 800 km de chez soi, la question change.</h2>
+    <p class="dit">La position est loin du domicile : le site bascule seul en mode voyage. Plus de « où manger ce midi » — mais <strong>« est-ce que je vais être tranquille ici ? »</strong>, la question que personne ne pose jamais à voix haute.</p>
+
+    <div class="duo-ecran">
+      <div class="tel">
+        <div class="ecran fond-ailleurs">
+          <div class="statut"><span>20:10</span><span>4G ▮</span></div>
+          <div class="dedans">
+            <div class="entete">
+              <span class="lieu">📍 Tirana, Albanie <span class="exact">exacte ✓</span></span>
+              <span class="plus">⌄</span>
+            </div>
+            <div class="compte">
+              <span class="p">Maghrib</span>
+              <span class="t">dans 42 min</span>
+            </div>
+
+            <div class="reponse">
+              <div class="ruban nuit">✦ Ton premier soir à Tirana</div>
+              <div class="contenu" style="padding-top:17px;">
+                <p class="titre-lieu" style="font-size:24px;">Tu vas être tranquille ici.</p>
+                <p class="infos" style="font-size:14px;line-height:1.55;color:rgba(255,255,255,.9);">
+                  Pays à majorité musulmane, des mosquées dans presque chaque quartier, et la plupart des restaurants servent du halal sans même le signaler.
+                </p>
+                <p class="aveu">⚠ <b>Le point d'attention</b> : l'alcool est très présent en terrasse, y compris dans des cafés d'apparence familiale.</p>
+                <div class="jauges">
+                  <div class="jauge bon">Manger<b>9</b></div>
+                  <div class="jauge bon">Prier<b>9</b></div>
+                  <div class="jauge moyen">Vigilance<b>6</b></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mini">
+              <div class="carre c1"></div>
+              <div>
+                <p class="titre-lieu">Où manger ce soir</p>
+                <p class="infos">3 adresses ouvertes à moins de 10 min</p>
+              </div>
+            </div>
+
+            <div class="mini">
+              <div class="carre c3"></div>
+              <div>
+                <p class="titre-lieu">Où loger demain</p>
+                <p class="infos">Le quartier le mieux placé pour prier</p>
+              </div>
+            </div>
+
+            <div class="quai">
+              <div class="q"><span class="i">🏠</span>Accueil</div>
+              <div class="q"><span class="i">🕌</span>Prière</div>
+              <div class="q coeur coeur-nuit"><span class="i">📍</span><span>Autour de moi</span></div>
+              <div class="q on"><span class="i">🌍</span>Voyages</div>
+              <div class="q"><span class="i">☰</span>Plus</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="notes">
+        <div class="note">
+          <h3>Un verdict, pas un annuaire</h3>
+          <p>« 118 hôtels, 24 restaurants » ne répond à rien. Quatre lignes franches sur ce qui attend le voyageur, si. C'est ce qu'un ami qui y est allé dirait en premier.</p>
+        </div>
+        <div class="note">
+          <h3>Le score se décompose</h3>
+          <p>Un « 8.1 » qui sort de nulle part n'inspire aucune confiance. Manger 9, prier 9, vigilance 6 — chaque note s'appuie sur du vérifiable, et le point faible est dit franchement.</p>
+        </div>
+        <div class="note">
+          <h3>Le mode se déclenche seul</h3>
+          <p>Aucun bouton « je voyage » à trouver. La distance au domicile suffit à savoir que la question a changé.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ L'ANCIEN ══════════════ -->
+<section class="constat">
+  <div class="large">
+    <h2>Ce que voit un visiteur aujourd'hui</h2>
+    <p class="dit">Le même moment, le même endroit, l'écran actuel : <strong>vingt éléments cliquables et pas une seule adresse</strong>. Tout l'espace sert à chercher, aucun à trouver.</p>
+
+    <div class="avant-apres">
+      <div class="colonne">
+        <p class="legende-col l-avant">Aujourd'hui · 17:50</p>
+        <p class="sous">Vingt gestes possibles, aucune réponse. Le visiteur doit tout demander.</p>
+
+        <div class="tel mort">
+          <div class="ecran fond-mort">
+            <div class="statut"><span>17:50</span><span>4G ▮</span></div>
+            <div class="dedans">
+
+              <div style="display:flex;gap:6px;">
+                <div class="bloc-mort" style="flex:1;font-size:12.5px;">📍 Autour… approx.</div>
+                <div class="rel"><div class="bloc-mort raye" style="font-size:12.5px;">32°</div></div>
+                <div class="rel"><div class="bloc-mort raye" style="font-size:12.5px;">FR ▾</div></div>
+              </div>
+
+              <div class="rel">
+                <span class="etiq">40 % de l'écran</span>
+                <div class="bloc-mort raye">
+                  <p class="lab">MAINTENANT · DHUHR</p>
+                  <p class="val">se termine dans 0 min</p>
+                  <p class="lab" style="margin-top:6px;color:#F09189;">Aucun lieu de prière connu à moins de 5 km</p>
+                  <div class="bloc-mort" style="margin-top:9px;text-align:center;font-size:12.5px;">🧭 119° · ESE Qibla</div>
+                  <div class="cinq">
+                    <div>Fajr<b>04:33</b></div><div>Dhuhr<b>13:56</b></div><div>Asr<b>17:51</b></div><div>Maghrib<b>21:06</b></div><div>Isha<b>23:06</b></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="rel">
+                <div class="bloc-mort raye" style="font-family:var(--serif);font-size:16px;color:#fff;">
+                  Où prier, où manger halal — partout où tu voyages.
+                </div>
+              </div>
+
+              <div style="display:flex;gap:6px;">
+                <div class="bloc-mort" style="flex:1;">« une pâtisserie à Tirana »</div>
+                <div class="bloc-mort" style="background:rgba(255,255,255,.2);color:#fff;font-weight:700;">Trouver</div>
+              </div>
+
+              <div style="display:flex;gap:6px;">
+                <div class="bloc-mort" style="flex:1;text-align:center;font-size:12px;">🕌 Prier</div>
+                <div class="bloc-mort" style="flex:1;text-align:center;font-size:12px;">🍽 Manger</div>
+                <div class="bloc-mort" style="flex:1;text-align:center;font-size:12px;">🎯 Que faire</div>
+              </div>
+
+              <div style="display:flex;gap:6px;">
+                <div class="bloc-mort" style="flex:1;text-align:center;font-size:12.5px;">📍 Voir sur la carte</div>
+                <div class="rel"><div class="bloc-mort raye" style="font-size:12.5px;">👤 Profil</div></div>
+              </div>
+
+              <div class="rel">
+                <span class="etiq">pas ici</span>
+                <div class="raye" style="padding:7px 4px 5px;">
+                  <p class="lab" style="margin:0 0 6px;">🌍 Destinations halal populaires</p>
+                  <div style="display:flex;gap:6px;">
+                    <div style="flex:1;height:58px;border-radius:11px;background:rgba(255,255,255,.12);"></div>
+                    <div style="flex:1;height:58px;border-radius:11px;background:rgba(255,255,255,.12);"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="quai">
+                <div class="q on"><span class="i">🏠</span>Accueil</div>
+                <div class="q"><span class="i">💎</span>Spots</div>
+                <div class="q coeur rel" style="color:#fff;">
+                  <span class="etiq" style="top:-14px;right:-8px;">1 % l'utilise</span>
+                  <span class="i" style="background:rgba(255,255,255,.35);color:#fff;">＋</span><span>Ajouter</span>
+                </div>
+                <div class="q"><span class="i">🕐</span>Prière</div>
+                <div class="q"><span class="i">🧰</span>Outils</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="colonne">
+        <p class="legende-col l-apres">Demain · 17:50</p>
+        <p class="sous">Fin d'après-midi, Asr approche : une adresse, une direction, rien à demander.</p>
+
+        <div class="tel">
+          <div class="ecran" style="background:linear-gradient(178deg,#241634 0%,#4A2438 55%,#7A3B33 100%);">
+            <div class="statut"><span>17:50</span><span>4G ▮</span></div>
+            <div class="dedans">
+              <div class="entete">
+                <span class="lieu">📍 Fontenay-sous-Bois <span class="exact">exacte ✓</span></span>
+                <span class="plus">⌄</span>
+              </div>
+              <div class="compte">
+                <span class="p">Asr</span>
+                <span class="t urgent">dans 1 min</span>
+              </div>
+
+              <div class="reponse">
+                <div class="ruban soir">🕌 Tu peux y être à temps</div>
+                <div class="visuel v-soir"><span class="pastille-halal ph-sur">Mosquée</span></div>
+                <div class="contenu">
+                  <p class="titre-lieu">La mosquée la plus proche</p>
+                  <p class="infos"><span class="n">★ 4,5</span> · 166 avis · <b>4 min à pied</b></p>
+                  <p class="infos"><span class="o">Ouverte</span> maintenant</p>
+                  <div class="bouton b-soir">🚶 Y aller — 4 min</div>
+                </div>
+              </div>
+
+              <div class="mini">
+                <div class="carre c1"></div>
+                <div>
+                  <p class="titre-lieu">Manger après la prière</p>
+                  <p class="infos">3 adresses ouvertes à côté</p>
+                </div>
+              </div>
+
+              <div class="racc">
+                <div>🍽 Manger</div><div>🎯 Que faire</div><div>🗺 Carte</div>
+              </div>
+
+              <div class="quai">
+                <div class="q on"><span class="i">🏠</span>Accueil</div>
+                <div class="q"><span class="i">🕌</span>Prière</div>
+                <div class="q coeur coeur-soir"><span class="i">📍</span><span>Autour de moi</span></div>
+                <div class="q"><span class="i">🌍</span>Voyages</div>
+                <div class="q"><span class="i">☰</span>Plus</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ VERDICTS ══════════════ -->
+<section class="verdicts">
+  <div class="large">
+    <h2>Élément par élément</h2>
+    <p class="dit">Une seule question pour chaque chose présente à l'écran : <strong>est-ce que ça aide quelqu'un, ici, dans les cinq prochaines secondes ?</strong></p>
+
+    <div class="enveloppe">
+      <table>
+        <thead><tr><th>Élément</th><th>Verdict</th><th>Pourquoi</th></tr></thead>
+        <tbody>
+          <tr><td class="q">Météo 32°</td><td><span class="sceau s-non">Supprimer</span></td><td>Ne change aucune décision. Le visiteur a la météo dans sa barre d'état, deux centimètres plus haut. Elle garde du sens sur une page destination.</td></tr>
+          <tr><td class="q">Sélecteur « FR ▾ »</td><td><span class="sceau s-non">Supprimer</span></td><td>Sur un domaine français, le visiteur est francophone ; l'anglais a son propre domaine. Un usage sur mille, au coin le plus cher de l'écran.</td></tr>
+          <tr><td class="q">Le slogan</td><td><span class="sceau s-non">Supprimer</span></td><td>Il sert une fois, à la première visite, puis coûte deux lignes à chaque ouverture. Une adresse à 300 m prouve la promesse mieux que la promesse.</td></tr>
+          <tr><td class="q">Bouton « Profil »</td><td><span class="sceau s-non">Supprimer</span></td><td>Demander un effort avant d'avoir rendu un service, c'est l'ordre inverse. Le profil revient après une bonne réponse : « je me souviens que tu évites les fruits de mer ? »</td></tr>
+          <tr><td class="q">Bouton « ＋ Ajouter »</td><td><span class="sceau s-non">Déplacer</span></td><td>La place la plus accessible du pouce, donnée à l'action que 99 % des visiteurs ne feront jamais. Elle devient « Autour de moi ».</td></tr>
+          <tr><td class="q">Onglet « Spots »</td><td><span class="sceau s-non">Renommer</span></td><td>Mot interne, pas mot de visiteur. Personne ne sait ce qu'il y trouvera.</td></tr>
+          <tr><td class="q">Les 5 horaires + Qibla</td><td><span class="sceau s-mv">Déplier au tap</span></td><td>Utiles, mais consultés ponctuellement. Ils prennent 40 % de l'écran en permanence pour une information qui se lit en deux secondes.</td></tr>
+          <tr><td class="q">Destinations populaires</td><td><span class="sceau s-mv">Descendre</span></td><td>Ce n'est pas ce que cherche quelqu'un chez lui à 17 h 50. Deuxième raison de venir, pas la première.</td></tr>
+          <tr><td class="q">Prier / Manger / Que faire</td><td><span class="sceau s-mv">Alléger</span></td><td>Font doublon avec la barre du bas. Ils deviennent des raccourcis discrets sous la réponse.</td></tr>
+          <tr><td class="q">Position + prière</td><td><span class="sceau s-oui">Garder</span></td><td>Le cœur du service. Une ligne compacte, jamais tronquée — et « exacte ✓ » seulement quand elle l'est vraiment.</td></tr>
+          <tr><td class="q">Champ de recherche</td><td><span class="sceau s-oui">Garder</span></td><td>Indispensable pour ce qui sort des catégories. Mais son exemple doit parler d'ici : « un kebab près d'ici », pas « une pâtisserie à Tirana ».</td></tr>
+          <tr><td class="q">Des adresses réelles</td><td><span class="sceau s-oui">À ajouter</span></td><td>Le grand absent. Vingt boutons, zéro réponse : c'est le seul vrai défaut de cet écran, et tous les autres en découlent.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ CLÔTURE ══════════════ -->
+<section class="cloture">
+  <div class="large">
+    <p class="grande-idee">Un annuaire attend qu'on lui demande. Un compagnon sait qu'il est <em>13 h 50 un vendredi</em>.</p>
+    <p class="chapo">Il faut connaître les horaires de prière, la position exacte, et comprendre le rythme d'une journée musulmane pour concevoir ça. Booking ne saura jamais que le vendredi midi n'est pas un midi comme les autres — <strong>et c'est précisément là qu'est la barrière que personne ne franchira.</strong></p>
+
+    <p class="pied">Maquettes de travail à 320 px de large. Les adresses, notes et nombres d'avis proviennent des relevés réels du site via Google Places ; les distances et le nom de la mosquée sont illustratifs et devront être calculés depuis la position exacte du visiteur. Direction artistique proposée : la palette suit la course du soleil, chaque écran portant la lumière de son heure de prière.</p>
+  </div>
+</section>

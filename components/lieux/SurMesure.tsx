@@ -225,7 +225,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
     // ouvre la page, on ne voit AUCUN résultat, et on nous demande de taper
     // quelque chose ». Les pistes restent accessibles par les trois
     // boutons — elles ne prennent pas la place de la réponse.
-    lancer(c, false)
+    lancer(c, false, false, null, true)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [chercheDesLOuverture, posInitiale, destinationProp])
   const [ex, setEx] = useState(0)
@@ -339,13 +339,19 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
     } else lancer(c, txt.trim().length > 0, false, ville)
   }
 
-  async function lancer(c: Criteres, ecrit: boolean, forcerGPS = false, ville?: { lat: number; lng: number; nom: string } | null) {
+  async function lancer(c: Criteres, ecrit: boolean, forcerGPS = false, ville?: { lat: number; lng: number; nom: string } | null, silencieux = false) {
     if (enCours.current) return
     enCours.current = true
     setProse(''); setFiches([]); setAutres([]); setVoirAutres(false); setPanne(null); setFiltres([]); setEtape('cherche')
     // Dès le clic, la vue descend sur la zone de réponse : le squelette y
     // est déjà, donc le visiteur SAIT que son geste a été pris en compte.
-    requestAnimationFrame(() => zoneResultats.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }))
+    //
+    // 🔴 SAUF À L'OUVERTURE. Mesuré le 16 août : la recherche automatique
+    // faisait défiler la page toute seule, et la carte-réponse se
+    // retrouvait 894 px AU-DESSUS de l'écran — le visiteur arrivait sur du
+    // vide. On ne déplace la vue que sur un geste : personne n'a demandé à
+    // descendre.
+    if (!silencieux) requestAnimationFrame(() => zoneResultats.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }))
     try {
       // `ville` est passée quand la barre unique vient de reconnaître une
       // ville dans la phrase : l'état React n'est pas encore à jour.
@@ -391,7 +397,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
       // La vue se place sur la réponse, sans que le visiteur ait à la
       // chercher. `requestAnimationFrame` : on attend que les fiches soient
       // réellement dessinées, sinon on défile vers du vide.
-      requestAnimationFrame(() => {
+      if (!silencieux) requestAnimationFrame(() => {
         setTimeout(() => zoneResultats.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 60)
       })
       // Calculée dans tous les cas : c'est elle qui permet de proposer
