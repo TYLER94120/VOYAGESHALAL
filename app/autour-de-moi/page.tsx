@@ -34,7 +34,6 @@ import SurMesure, { type Fiche } from '@/components/lieux/SurMesure'
 //
 //   · le fond de carte OpenStreetMap — gratuit, et Google ne sert QU'AUX
 //     DONNÉES des lieux : une carte Google se facture à chaque chargement ;
-//   · la feuille tirable au pouce, trois positions ;
 //   · le lien à double sens entre les épingles et les fiches ;
 //   · les mosquées visibles en permanence, notre signature.
 
@@ -49,12 +48,32 @@ function epingle(L: any, rang: number, choisie: boolean) {
   })
 }
 
-type Feuille = 'repliee' | 'moitie' | 'pleine'
+/**
+ * 📱 SUR TÉLÉPHONE, LA LISTE GAGNE — Mohamed, 16 août :
+ *
+ *   « La page partage l'écran entre une bande de carte trop petite pour
+ *     servir, un formulaire, et un grand vide noir. Ni carte utilisable,
+ *     ni résultats visibles. »
+ *
+ * On tranche, et c'est assumé : deux écrans au lieu d'un compromis.
+ *   · LISTE (par défaut) — les fiches prennent toute la largeur et toute la
+ *     hauteur. Aucune bande de carte résiduelle, aucun vide noir.
+ *   · CARTE — plein écran, avec un retour évident vers la liste.
+ *
+ * Sur ordinateur, rien ne change : deux colonnes ont la place, et ça
+ * fonctionne. La bascule y est simplement ignorée (voir globals.css).
+ *
+ * Les trois positions coulissantes et le geste « tirer pour agrandir »
+ * disparaissent : personne ne devine ce geste, et un écran qui exige d'être
+ * deviné n'est pas un écran.
+ */
+type Vue = 'liste' | 'carte'
 // 📏 « Soit la carte est assez grande pour servir, soit elle cède la place
 // à la liste » (Mohamed). En ouverture, la liste prend les deux tiers : ce
 // sont les ADRESSES qu'on vient chercher, la carte dit seulement où elles
 // sont. Un bouton la rend pleine quand on veut la regarder.
-const HAUTEUR: Record<Feuille, string> = { repliee: '148px', moitie: '68dvh', pleine: '92dvh' }
+// 📏 Plus de hauteurs intermédiaires : sur téléphone la liste occupe tout,
+// et la carte occupe tout. Le partage d'écran ne servait ni l'une ni l'autre.
 
 export default function AutourDeMoiPage() {
   const etatPos = useInstantPosition()
@@ -62,8 +81,8 @@ export default function AutourDeMoiPage() {
 
   const [fiches, setFiches] = useState<Fiche[]>([])
   const [choisie, setChoisie] = useState<string | null>(null)
-  const [feuille, setFeuille] = useState<Feuille>('moitie')
   const [carteDeplacee, setCarteDeplacee] = useState(false)
+  const [vue, setVue] = useState<Vue>('liste')
   const [phraseVenue, setPhraseVenue] = useState('')
 
   const mapEl = useRef<HTMLDivElement>(null)
@@ -74,7 +93,6 @@ export default function AutourDeMoiPage() {
   const moiRef = useRef<Marker | null>(null)
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const mosqueesFond = useRef<any[]>([])
-  const glisse = useRef<{ y0: number; h0: Feuille } | null>(null)
   const plein = useRef<HTMLElement | null>(null)
 
   // 📏 LA HAUTEUR DISPONIBLE SE MESURE, ELLE NE SE DEVINE PAS. Un
@@ -185,10 +203,11 @@ export default function AutourDeMoiPage() {
     fiches.forEach((f, i) => {
       if (!f.id) return
       const mk = L.marker([f.lat, f.lng], { icon: epingle(L, i + 1, false), zIndexOffset: 500 - i }).addTo(mapRef.current)
-      // 🔗 Toucher une épingle → sa fiche remonte dans la feuille (§2.2).
+      // 🔗 Toucher une épingle sur la carte → on revient à la liste, sur sa
+      // fiche : c'est la fiche qu'on est venu chercher, pas le point.
       mk.on('click', () => {
         setChoisie(f.id!)
-        setFeuille((v) => (v === 'repliee' ? 'moitie' : v))
+        setVue('liste')
         setTimeout(() => document.querySelector(`[data-fiche="${f.id}"]`)?.scrollIntoView({ block: 'start', behavior: 'smooth' }), 260)
       })
       marqueurs.current.push({ id: f.id, marker: mk, rang: i + 1 })
@@ -247,7 +266,7 @@ export default function AutourDeMoiPage() {
   }
 
   return (
-    <main ref={plein} className="autour-plein" style={hautDispo ? { height: hautDispo } : { height: '100dvh' }}>
+    <main ref={plein} className="autour-plein" data-vue={vue} style={hautDispo ? { height: hautDispo } : { height: '100dvh' }}>
       <h1 style={{ position: 'absolute', width: 1, height: 1, padding: 0, margin: -1, overflow: 'hidden', clip: 'rect(0 0 0 0)', whiteSpace: 'nowrap', border: 0 }}>
         Mosquées, restaurants halal et spots autour de moi
       </h1>
@@ -263,7 +282,11 @@ export default function AutourDeMoiPage() {
           l'en-tête du site : il n'y avait donc plus aucune porte de sortie.
           Ce bouton flotte au-dessus de la carte, au-dessus de la feuille de
           résultats, et il ne bouge jamais. */}
-      <a href="/" className="autour-retour" aria-label="Revenir à l'accueil">‹ Accueil</a>
+      {vue === 'carte' ? (
+        <button onClick={() => setVue('liste')} className="autour-retour" aria-label="Revenir à la liste des adresses">‹ Liste</button>
+      ) : (
+        <a href="/" className="autour-retour" aria-label="Revenir à l'accueil">‹ Accueil</a>
+      )}
 
       {/* 🧹 15 août — LA POSITION N'EST PLUS AFFICHÉE ICI.
           Mohamed : « une pastille de position TRONQUÉE : "📍 · ex…" — on ne
@@ -287,31 +310,15 @@ export default function AutourDeMoiPage() {
           Elle est lisible avant que le fond de carte soit chargé : dehors,
           en 4G faible, on ne fait pas attendre quelqu'un qui a faim devant
           une carte qui tourne (§2.4). */}
-      <section className="autour-feuille" style={{ height: HAUTEUR[feuille] }} aria-label="Résultats">
-        <div
-          className="autour-poignee" role="button" tabIndex={0}
-          aria-label={`Résultats — ${feuille === 'pleine' ? 'liste complète' : feuille === 'moitie' ? 'aperçu' : 'replié'}. Tirer pour agrandir.`}
-          onClick={() => setFeuille((f) => (f === 'pleine' ? 'moitie' : f === 'moitie' ? 'pleine' : 'moitie'))}
-          onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setFeuille((f) => (f === 'pleine' ? 'moitie' : 'pleine')) } }}
-          onTouchStart={(e) => { glisse.current = { y0: e.touches[0].clientY, h0: feuille } }}
-          onTouchMove={(e) => {
-            const g = glisse.current; if (!g) return
-            const d = g.y0 - e.touches[0].clientY
-            if (Math.abs(d) < 34) return
-            const ordre: Feuille[] = ['repliee', 'moitie', 'pleine']
-            const i = ordre.indexOf(g.h0)
-            setFeuille(ordre[Math.min(2, Math.max(0, i + (d > 0 ? 1 : -1)))])
-            glisse.current = null
-          }}
-          onTouchEnd={() => { glisse.current = null }}
-        >
-          <span className="autour-trait" aria-hidden />
-          {/* 🧹 « tire pour voir » disparaît : c'est un geste que personne
-              ne devine. Le bandeau dit ce qu'il CONTIENT, et le bouton dit
-              ce qu'il FAIT. */}
-          <p style={{ margin: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, fontWeight: 800, fontSize: 14, color: 'var(--foret)' }}>
+      <section className="autour-feuille" aria-label="Résultats">
+        {/* 🧹 LE GESTE DISPARAÎT. « tire pour voir » n'existe plus : ni
+            poignée, ni trois positions, ni glissement à deviner. Un
+            en-tête qui DIT ce qu'il contient, et un bouton qui DIT ce
+            qu'il fait — ouvrir la carte en plein écran. */}
+        <div className="autour-poignee">
+          <p style={{ margin: 0, display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 10, fontWeight: 800, fontSize: 14, color: 'var(--foret)' }}>
             <span>{fiches.length ? `${fiches.length} adresse${fiches.length > 1 ? 's' : ''} autour de toi` : 'Recherche autour de toi…'}</span>
-            <span style={{ color: 'var(--or)', fontWeight: 800 }}>{feuille === 'pleine' ? '▾ Réduire' : '▴ Tout voir'}</span>
+            <button onClick={() => setVue('carte')} className="autour-vers-carte">📍 Voir sur la carte</button>
           </p>
         </div>
         <div className="autour-liste">
