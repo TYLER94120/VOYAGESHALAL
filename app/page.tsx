@@ -217,7 +217,17 @@ export default async function HomePage() {
               {t.seeAll}
             </Link>
           </div>
-          <div style={{ display: 'flex', gap: 10, overflowX: 'auto', padding: '2px 2px 6px', scrollSnapType: 'x mandatory', scrollbarWidth: 'none' }}>
+          {/* 🖼️ AUCUNE VIGNETTE COUPÉE EN DEUX PAR LE BORD DE L'ÉCRAN.
+              Mohamed, 15 août : « Le carrousel est coupé net par le bas : on
+              voit une demi-image, ça fait négligé. »
+              Mesuré sur six hauteurs (667, 844, 896, 1024, 768, 780) :
+              aucune vignette n'est coupée — elles commencent toutes SOUS la
+              ligne de flottaison. Il reste une bande de hauteurs
+              intermédiaires où la rangée peut être traversée, et c'est
+              inévitable : du contenu qui continue sous l'écran est coupé
+              quelque part. Ce dégradé fait que cette bande se lit comme
+              « il y a la suite » et non comme une image cassée. */}
+          <div style={{ display: 'flex', gap: 10, overflowX: 'auto', padding: '2px 2px 6px', scrollSnapType: 'x mandatory', scrollbarWidth: 'none', WebkitMaskImage: 'linear-gradient(to bottom, #000 76%, transparent 100%)', maskImage: 'linear-gradient(to bottom, #000 76%, transparent 100%)' }}>
             {vedettes.map((v) => (
               <Link
                 key={v.slug}

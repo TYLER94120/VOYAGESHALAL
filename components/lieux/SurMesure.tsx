@@ -141,7 +141,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
   const [etatGoogle, setEtatGoogle] = useState<'ok' | 'vide' | 'muet' | 'sans-cle' | ''>('')
   const [mode, setMode] = useState<Mode>('voiture')
   const [plafond, setPlafond] = useState(15)
-  const [plusLoin, setPlusLoin] = useState<{ minutes: number; mode: Mode; nombre: number } | null>(null)
+  const [rayonKm, setRayonKm] = useState(20)
   const [posUtilisee, setPosUtilisee] = useState<'gps' | 'ip' | 'ville' | null>(null)
   const [prose, setProse] = useState('')
   const [aEcrit, setAEcrit] = useState(false)
@@ -171,6 +171,11 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
   }, [phraseInitiale])
   const [ex, setEx] = useState(0)
   const enCours = useRef(false)
+  /** 📍 OÙ LA RÉPONSE APPARAÎT. Mohamed, 15 août : « Je clique sur Trouver
+   *  et rien ne semble se passer. Il faut que je descende tout en bas de la
+   *  page pour trouver la réponse. » Un clic sans effet visible, c'est un
+   *  clic qu'on croit perdu — et on réappuie, ou on part. */
+  const zoneResultats = useRef<HTMLDivElement | null>(null)
   const EXEMPLES = en ? EXEMPLES_EN : EXEMPLES_FR
 
   // Les exemples défilent en filigrane : ils donnent envie de répondre —
@@ -274,6 +279,9 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
     if (enCours.current) return
     enCours.current = true
     setProse(''); setFiches([]); setAutres([]); setVoirAutres(false); setEtape('cherche')
+    // Dès le clic, la vue descend sur la zone de réponse : le squelette y
+    // est déjà, donc le visiteur SAIT que son geste a été pris en compte.
+    requestAnimationFrame(() => zoneResultats.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }))
     try {
       // `ville` est passée quand la barre unique vient de reconnaître une
       // ville dans la phrase : l'état React n'est pas encore à jour.
@@ -285,7 +293,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
 
       const ac = new AbortController()
       const to = setTimeout(() => ac.abort(), 20_000)
-      let corps: { fiches?: Fiche[]; autres?: Fiche[]; source?: string; etatGoogle?: 'ok' | 'vide' | 'muet' | 'sans-cle'; mode?: Mode; plafondMin?: number; plusLoin?: { minutes: number; mode: Mode; nombre: number } | null; relaches?: string[]; motManquant?: string | null } = {}
+      let corps: { fiches?: Fiche[]; autres?: Fiche[]; source?: string; etatGoogle?: 'ok' | 'vide' | 'muet' | 'sans-cle'; mode?: Mode; plafondMin?: number; rayonKm?: number; relaches?: string[]; motManquant?: string | null } = {}
       try {
         const r = await fetch('/api/lieux', {
           method: 'POST', signal: ac.signal,
@@ -299,8 +307,14 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
       setFiches(trois); setAutres(corps.autres ?? []); setSource(corps.source ?? ''); setEtatGoogle(corps.etatGoogle ?? '')
       // La carte se peuple d'ici, et de nulle part ailleurs.
       onResultats?.(trois)
-      setMode(corps.mode ?? 'voiture'); setPlafond(corps.plafondMin ?? 15); setPlusLoin(corps.plusLoin ?? null); setRelaches(corps.relaches ?? []); setMotManquant(corps.motManquant ?? null)
+      setMode(corps.mode ?? 'voiture'); setPlafond(corps.plafondMin ?? 15); setRayonKm(corps.rayonKm ?? 20); setRelaches(corps.relaches ?? []); setMotManquant(corps.motManquant ?? null)
       setEtape('resultat')
+      // La vue se place sur la réponse, sans que le visiteur ait à la
+      // chercher. `requestAnimationFrame` : on attend que les fiches soient
+      // réellement dessinées, sinon on défile vers du vide.
+      requestAnimationFrame(() => {
+        setTimeout(() => zoneResultats.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 60)
+      })
       if (trois.length) redigerIA(trois, c, corps.mode ?? 'voiture', c.categorie === 'mosquee' ? avantPriere(pos) : null, !!lieu)
     } finally { enCours.current = false }
   }
@@ -463,7 +477,9 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
           />
           <button type="submit" disabled={etape === 'cherche'}
             style={{ minHeight: 52, padding: '0 20px', borderRadius: 14, border: 'none', background: 'var(--or)', color: 'var(--nuit)', fontWeight: 900, fontSize: 15, cursor: 'pointer', opacity: etape === 'cherche' ? 0.6 : 1 }}>
-            {etape === 'cherche' ? '…' : t('Trouver', 'Find')}
+            {/* Le bouton DIT qu'il travaille : « … » ne se lit pas comme
+                un travail en cours, ça se lit comme un bouton cassé. */}
+            {etape === 'cherche' ? t('Je cherche…', 'Searching…') : t('Trouver', 'Find')}
           </button>
         </form>
 
@@ -678,8 +694,13 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
             {/* ✨ Le bouton que Mohamed voulait retrouver. */}
             <button
               onClick={() => {
-                const d = choisirPourMoi(contexte(), en)
-                const c = { ...crit, ...d.criteres } as Criteres
+                // 🔴 L'ONGLET ACTIF EST SOUVERAIN. On le passe à la
+                // fonction, et on le REPOSE par-dessus le résultat : deux
+                // verrous plutôt qu'un, parce que ce défaut-là a envoyé un
+                // traiteur libanais à quelqu'un qui cherchait où prier.
+                const cible = aide?.cat ?? crit.categorie
+                const d = choisirPourMoi(cible, contexte(), en)
+                const c = { ...crit, ...d.criteres, categorie: cible } as Criteres
                 setCrit(c); setAEcrit(false); setRaisonIA(d.raison); compter('choisis-pour-moi')
                 lancer(c, false)
               }}
@@ -767,6 +788,11 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
           )
         })()}
 
+        {/* 📍 L'ANCRE DE LA RÉPONSE. C'est ici que la vue se place dès que
+            les fiches arrivent — et dès la recherche, pour que le squelette
+            soit visible : le visiteur voit que son clic a été pris. */}
+        <div ref={zoneResultats} style={{ scrollMarginTop: 12 }} />
+
         {/* ── 4. CHARGEMENT : un squelette, jamais un blanc ─────── */}
         {etape === 'cherche' && (
           <div style={{ marginTop: 14 }} aria-live="polite">
@@ -802,12 +828,6 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
             au lieu de subir une liste qui s'allonge toute seule. Et §5.4 :
             deux adresses valent mieux que trois dont une absurde — on le
             dit quand on n'en a trouvé que deux. */}
-        {etape === 'resultat' && fiches.length > 0 && fiches.length < 3 && plusLoin && (
-          <p style={{ color: 'rgba(253,250,243,0.72)', fontSize: 13, marginTop: 12, lineHeight: 1.5 }}>
-            {t(`Seulement ${fiches.length} adresse${fiches.length > 1 ? 's' : ''} à moins de ${plafond} min ${LIB_MODE[mode][0]} — on ne complète pas avec du lointain.`,
-               `Only ${fiches.length} place${fiches.length > 1 ? 's' : ''} within ${plafond} min ${LIB_MODE[mode][1]} — we do not pad the list with far-away results.`)}
-          </p>
-        )}
 
         {etape === 'resultat' && fiches.length === 0 && (
           <div style={{ marginTop: 14 }}>
@@ -822,16 +842,13 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
               {etatGoogle === 'muet' || etatGoogle === 'sans-cle'
                 ? t(`Nous n'avons pas pu interroger Google Maps à l'instant. Nos propres adresses et OpenStreetMap n'en donnent aucune ici — ça ne veut pas dire qu'il n'y a rien.`,
                     `We could not reach Google Maps just now. Our own listings and OpenStreetMap show none here — that does not mean there is nothing.`)
-                : t(`Aucune adresse à moins de ${plafond} min ${LIB_MODE[mode][0]} — on préfère te le dire plutôt que d'inventer.`,
-                    `Nothing within ${plafond} min ${LIB_MODE[mode][1]} — we would rather say so than invent an address.`)}
+                : crit.categorie === 'mosquee'
+                  ? t(`Aucun lieu de prière trouvé jusqu'à ${rayonKm} km — on préfère te le dire plutôt que d'inventer.`,
+                      `No prayer place found within ${rayonKm} km — we would rather say so than invent one.`)
+                  : t(`Aucune adresse trouvée jusqu'à ${rayonKm} km — on préfère te le dire plutôt que d'inventer.`,
+                      `Nothing found within ${rayonKm} km — we would rather say so than invent an address.`)}
             </p>
             <div style={rangee}>
-              {plusLoin && (
-                <button onClick={() => { const c = { ...crit, mode: plusLoin.mode }; setCrit(c); lancer(c, aEcrit) }} style={puce(false)}>
-                  {t(`Élargir à ${plusLoin.minutes} min ${LIB_MODE[plusLoin.mode][0]} ? (${plusLoin.nombre} adresse${plusLoin.nombre > 1 ? 's' : ''})`,
-                     `Widen to ${plusLoin.minutes} min ${LIB_MODE[plusLoin.mode][1]}? (${plusLoin.nombre} place${plusLoin.nombre > 1 ? 's' : ''})`)}
-                </button>
-              )}
               {crit.budget !== 'peu-importe' && (
                 <button onClick={() => { const c = { ...crit, budget: 'peu-importe' as const }; setCrit(c); lancer(c, aEcrit) }} style={puce(false)}>
                   {t('Tous les budgets', 'Any budget')}
@@ -902,8 +919,8 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
             sont pas ce qui a été demandé. */}
         {motManquant && fiches.length > 0 && etape === 'resultat' && (
           <p style={{ marginTop: 12, padding: '9px 12px', borderRadius: 12, background: 'rgba(201,168,76,0.12)', border: '1px solid rgba(201,168,76,0.35)', color: 'var(--creme)', fontSize: 13.5, lineHeight: 1.45 }}>
-            {t(`Aucun « ${motManquant} » trouvé à moins de ${plafond} min ${LIB_MODE[mode][0]} — voici ce qui s'en rapproche le plus.`,
-               `No “${motManquant}” found within ${plafond} min ${LIB_MODE[mode][1]} — here is the closest match.`)}
+            {t(`Aucun « ${motManquant} » trouvé jusqu'à ${rayonKm} km — voici ce qui s'en rapproche le plus.`,
+               `No “${motManquant}” found within ${rayonKm} km — here is the closest match.`)}
           </p>
         )}
 

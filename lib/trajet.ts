@@ -77,35 +77,41 @@ export function trajet(distanceM: number, souhaite: Mode, en: boolean, depuisCen
  * Exprimés d'abord en MINUTES — c'est ainsi qu'on raisonne quand on a
  * faim —, puis convertis en mètres pour l'appel réseau.
  */
-const MINUTES_MAX: Record<'snack' | 'repas' | 'large', Record<Mode, number>> = {
-  // Café, pâtisserie, petit-déjeuner : on ne traverse pas une ville.
-  snack: { pied: 10, voiture: 8, transports: 12 },
-  // Restaurant où l'on s'assoit : on accepte un peu plus.
-  repas: { pied: 15, voiture: 10, transports: 18 },
-  // Hôtel, activité, « que faire » : le large est légitime.
-  large: { pied: 25, voiture: 25, transports: 30 },
+/**
+ * ════════ 15 AOÛT — ON CHERCHE LARGE DU PREMIER COUP ════════
+ *
+ * Ordre de Mohamed : « Quand je cherche une mosquée ou un restaurant, on me
+ * répond "je n'ai pas trouvé, veux-tu élargir à 16 km ?". C'est une question
+ * de trop. Le visiteur a déjà demandé — lui refaire payer un clic pour
+ * obtenir une réponse évidente, c'est mauvais. On cherche D'EMBLÉE dans un
+ * rayon de 20 KM. Le visiteur décide lui-même ce qui est trop loin — ce
+ * n'est pas au site de décider à sa place. »
+ *
+ * CE QUI CHANGE, ET CE QUI NE CHANGE PAS. Les plafonds serrés par nature de
+ * demande (10 min pour un café, 15 pour un repas) disparaissent : ils
+ * étaient la cause des écrans vides et de la question d'élargissement. Mais
+ * la règle qui les avait fait naître, elle, reste intacte : « 91 min à
+ * pied » n'existe toujours pas — au-delà de 20 minutes de marche on bascule
+ * sur la voiture (`modeAffichable`), et chaque adresse porte son temps de
+ * trajet AVEC son mode. Une pâtisserie à 18 km reste affichée, mais elle
+ * est affichée en dernier et annoncée « ≈ 35 min en voiture ». Le visiteur
+ * voit ce que ça coûte et tranche lui-même.
+ */
+const RAYON_LARGE_M = 20_000
+
+/** Rayon de recherche en mètres : 20 km pour tout le monde, d'emblée. */
+export function rayonM(_c: Criteres, _mode: Mode): number {
+  return RAYON_LARGE_M
 }
 
-function nature(c: Criteres): 'snack' | 'repas' | 'large' {
-  // 🕌 Une mosquée pour prier MAINTENANT : 10 minutes à pied, comme un
-  // café. C'est le temps restant avant la prière qui décide vraiment.
-  if (c.categorie === 'mosquee') return 'snack'
-  // Activité, « que faire » : le large est légitime.
-  if (c.categorie === 'activite') return 'large'
-  if (c.quoi === 'patisserie' || c.quoi === 'petit-dejeuner') return 'snack'
-  return 'repas'
+/** Le rayon exprimé en minutes de trajet, pour l'écrire à l'écran quand il
+ *  n'y a vraiment rien : « aucun lieu de prière trouvé jusqu'à 20 km ». */
+export function plafondMin(_c: Criteres, mode: Mode): number {
+  return minutes(RAYON_LARGE_M, mode)
 }
 
-/** Rayon de recherche en mètres — jamais plus loin que le sens commun. */
-export function rayonM(c: Criteres, mode: Mode): number {
-  const min = MINUTES_MAX[nature(c)][mode]
-  return Math.round((min * VITESSE[mode]) / DETOUR[mode])
-}
-
-/** Le même plafond, en minutes : sert à ÉCRIRE le message d'élargissement. */
-export function plafondMin(c: Criteres, mode: Mode): number {
-  return MINUTES_MAX[nature(c)][mode]
-}
+/** Le rayon en kilomètres — c'est ainsi qu'on l'annonce quand c'est vide. */
+export const RAYON_KM = RAYON_LARGE_M / 1000
 
 /**
  * La proposition d'élargissement, chiffrée (§5.5) : « Aucune pâtisserie à

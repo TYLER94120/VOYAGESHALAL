@@ -1,9 +1,10 @@
 import { NextResponse } from 'next/server'
 import { Redis } from '@upstash/redis'
 import { requeteGoogle } from '@/lib/requete.mjs'
+import { accepte } from '@/lib/categorie.mjs'
 import { listAllSpots } from '@/lib/prayerSpots'
 import { CRITERES_DEFAUT, type Criteres } from '@/lib/criteres'
-import { minutes, modeSuivant, plafondMin, rayonM, type Mode } from '@/lib/trajet'
+import { minutes, plafondMin, rayonM, RAYON_KM, type Mode } from '@/lib/trajet'
 import { verdictAlcool } from '@/lib/alcool.mjs'
 import { PROFIL_VIDE, profilVide, requeteAvecProfil, criteresRelachables, type Profil } from '@/lib/profil'
 
@@ -262,29 +263,8 @@ async function lireRefus(r: Response): Promise<Refus> {
 /** Ce qu'on retient du dernier refus, pour le remonter jusqu'à la réponse. */
 type Journal = { refus?: Refus }
 
-/**
- * 🍽️ UN LIEU QUI SERT À MANGER N'EST PAS UNE ACTIVITÉ.
- *
- * Défaut constaté par Mohamed, 15 août : « L'onglet activités me sort des
- * restaurants. Les trois onglets tapent manifestement dans le même sac. »
- *
- * Interdiction FORMELLE des restaurants, cafés et bars dans « Que faire ».
- * Liste de types EXACTE, jamais une expression large : un `/food/` attraperait
- * `food_court` mais aussi `seafood`, et surtout on ne veut pas d'un filtre
- * dont on ne sait pas ce qu'il exclut. Même prudence que le filtre alcool.
- */
-const TYPES_NOURRITURE = new Set([
-  'restaurant', 'cafe', 'coffee_shop', 'bakery', 'bar', 'pub', 'bar_and_grill',
-  'meal_takeaway', 'meal_delivery', 'fast_food_restaurant', 'food_court',
-  'ice_cream_shop', 'sandwich_shop', 'juice_shop', 'dessert_shop', 'donut_shop',
-  'candy_store', 'confectionery', 'deli', 'diner', 'buffet_restaurant',
-  'breakfast_restaurant', 'brunch_restaurant', 'steak_house', 'pizza_restaurant',
-  'hamburger_restaurant', 'sushi_restaurant', 'ramen_restaurant', 'cafeteria',
-  'tea_house', 'wine_bar', 'night_club', 'grocery_store', 'supermarket',
-])
-/** Le filet : tout type se terminant par `_restaurant` (Google en crée
- *  régulièrement de nouveaux — afghani_restaurant, turkish_restaurant…). */
-const MOTIF_RESTAURANT = /_restaurant$|^restaurant$/
+// Les portes par catégorie vivent dans lib/categorie.mjs : source unique,
+// vérifiée par scripts/test-categorie.mjs avant chaque build.
 
 /**
  * Le mot précis demandé, s'il ne se retrouve dans AUCUNE des fiches.
@@ -303,16 +283,6 @@ function motManquant(c: Criteres, fiches: Fiche[]): string | null {
     (f.resume ?? '').toLowerCase().includes(mot) ||
     (f.avis ?? []).some((a) => a.texte.toLowerCase().includes(mot)))
   return present ? null : mots[0]
-}
-
-/** `true` si ce lieu sert à manger — donc n'a rien à faire dans « Que faire ». */
-export function sertAManger(primaryType?: string, types?: string[]): boolean {
-  for (const t of [primaryType, ...(types ?? [])]) {
-    if (!t) continue
-    const k = t.toLowerCase()
-    if (TYPES_NOURRITURE.has(k) || MOTIF_RESTAURANT.test(k)) return true
-  }
-  return false
 }
 
 async function passe1(lat: number, lng: number, c: Criteres, cle: string, lang: string, rayon: number, texte: string, journal?: Journal): Promise<Candidat[] | null> {
@@ -366,7 +336,11 @@ async function passe1(lat: number, lng: number, c: Criteres, cle: string, lang: 
       // monuments, jardins, aquariums — pas des restaurants déguisés en
       // sorties. Le barrage est ici, avant tout le reste : un lieu écarté
       // ne coûte pas un appel de détail.
-      .filter((x) => c.categorie !== 'activite' || !sertAManger(x.primaryType, x.types))
+      // 🔴🔴 LA PORTE PAR CATÉGORIE. En mode Prier, seuls des lieux de
+      // culte DÉCLARÉS passent : liste d'admission, pas d'exclusion — une
+      // liste d'exclusions oublie toujours un cas, et c'est ainsi qu'un
+      // traiteur libanais est sorti pour « où prier ». Dans le doute, non.
+      .filter((x) => accepte(c.categorie, x.primaryType, x.types))
       // 🔴 BARRAGE 1 — par le type, gratuit et immédiat : bar, pub,
       // wine_bar, night_club, liquor_store… ne franchissent jamais la
       // porte. Pas d'avertissement, pas de rétrogradation.
@@ -439,44 +413,38 @@ async function verifierAlcool(cands: Candidat[], cle: string): Promise<Candidat[
 
 /** Le tri : c'est lui qui rend le résultat « sur mesure ». */
 function classer(cands: Candidat[], c: Criteres, rayon: number): Candidat[] {
-  const mode = modeDe(c)
+  // ════════ QUI ENTRE, ET DANS QUEL ORDRE — deux questions distinctes ════
+  //
+  // Ordre de Mohamed, 15 août, en deux phrases qui semblent s'opposer :
+  //   « La pertinence prime sur la distance : un vrai kebab à 3 km bat un
+  //     poulet rôti à 300 m. »
+  //   « On affiche du PLUS PROCHE au PLUS LOINTAIN, avec pour chacun sa
+  //     distance ET son temps de trajet. »
+  //
+  // Elles ne s'opposent pas, elles répondent à deux questions différentes.
+  // La PERTINENCE décide QUI entre dans la liste : c'est la recherche
+  // textuelle de Google sur le mot tapé qui ne renvoie que des kebabs, et
+  // c'est elle qui a été réparée. La DISTANCE décide de l'ORDRE : une fois
+  // qu'on n'a que des kebabs, le plus proche d'abord est la seule réponse
+  // sensée. Le poulet rôti à 300 m n'apparaît plus du tout — non parce
+  // qu'on l'a relégué, mais parce qu'il n'est pas un kebab.
+  //
+  // Reste un garde-fou : Google range ses résultats par pertinence
+  // décroissante, et la queue de liste s'éloigne du sujet. On écarte donc
+  // les derniers rangs plutôt que de les remonter en tête sous prétexte
+  // qu'ils sont proches.
+  const PERTINENCE_MIN = 12
   return [...cands]
-    // 🚧 LE FILTRE DUR : rien au-delà du rayon qui a du sens. Mieux vaut
-    // deux adresses que trois dont une absurde (§5.4) — on ne complète
-    // JAMAIS avec du lointain pour faire nombre.
     .filter((x) => x.distanceM <= rayon)
+    .filter((x) => x.rang < PERTINENCE_MIN)
     .filter((x) => (c.budget === 'petit' ? (x.prix ?? 2) <= 2 : c.budget === 'moyen' ? (x.prix ?? 2) <= 3 : true))
-    .map((x) => {
-      let s = 0
-      // ════════ 🔴 LA PERTINENCE PRIME SUR LA DISTANCE ════════
-      //
-      // Ordre de Mohamed, 15 août : « Un vrai kebab à 1,2 km bat un poulet
-      // rôti à 300 m. Aujourd'hui c'est l'inverse, et c'est le défaut. »
-      //
-      // Google a DÉJÀ classé ses résultats selon la requête. On jetait ce
-      // classement pour tout re-trier à la distance — et le lieu le plus
-      // proche remontait donc en tête quel que soit le mot tapé. C'est
-      // exactement ce qui faisait sortir Master Poulet pour « kebab »,
-      // « pizza » et tout le reste.
-      //
-      // Le rang de Google pèse maintenant plus que le trajet : 3 points
-      // pour le premier, dégressifs. Un lieu deux fois plus loin doit être
-      // nettement plus pertinent pour passer devant — mais il le peut.
-      s += Math.max(0, 3 - x.rang * 0.42)
-      // Le mode change le TRI, pas seulement l'affichage (§5.3) : à pied,
-      // chaque minute compte trois fois plus qu'en voiture.
-      const poids = mode === 'pied' ? 3 : mode === 'transports' ? 2 : 1
-      s -= minutes(x.distanceM, mode) * poids * 0.25
-      // Une note ne vaut que par son nombre d'avis : 5,0 sur 3 avis ne
-      // dit rien, 4,4 sur 900 dit beaucoup.
-      if (x.note && x.nbAvis) s += x.note * Math.min(1, Math.log10(x.nbAvis + 1) / 2.5) * 1.6
-      if (x.ouvert === true) s += 1.2
-      if (x.ouvert === false && c.ouvertMaintenant) s -= 8
-      if (c.budget === 'petit' && x.prix === 1) s += 1
-      return { x, s }
-    })
-    .sort((a, b) => b.s - a.s)
-    .map((o) => o.x)
+    // « Ouvert maintenant » reste un filtre dur quand il est demandé : une
+    // adresse fermée n'est pas une réponse à « je veux manger là, tout de
+    // suite ».
+    .filter((x) => !(c.ouvertMaintenant && x.ouvert === false))
+    // Du plus proche au plus lointain. Le visiteur décide lui-même ce qui
+    // est trop loin — chaque fiche porte sa distance et son temps de trajet.
+    .sort((a, b) => a.distanceM - b.distanceM)
 }
 
 // ─────────────────────── passe 2 : enrichir les 3 ───────────────────────
@@ -708,20 +676,10 @@ export async function POST(req: Request) {
     }
   }
 
-  // §5.5 — quand le rayon qui a du sens ne donne rien (ou trop peu), on
-  // ne s'élargit PAS tout seul : on compte ce qu'il y aurait plus loin et
-  // on laisse le visiteur décider. Ce second appel n'a lieu QUE dans ce
-  // cas, et il n'utilise que les champs de tri (les moins chers).
-  let plusLoin: { minutes: number; mode: Mode; nombre: number } | null = null
-  if (cle && fiches.length < RETENUS && c.exigence !== 'verifies') {
-    const suivant = modeSuivant(mode)
-    if (suivant) {
-      const grand = rayonM(c, suivant) * 2
-      const large = await passe1(lat, lng, c, cle, lang, grand, requeteGoogle(c))
-      const enPlus = (large ?? []).filter((x) => x.distanceM > rayon).length
-      if (enPlus > 0) plusLoin = { minutes: plafondMin(c, suivant) * 2, mode: suivant, nombre: enPlus }
-    }
-  }
+  // 🚫 PLUS JAMAIS « VEUX-TU ÉLARGIR ? » (Mohamed, 15 août) : « Le visiteur
+  // a déjà demandé — lui refaire payer un clic pour obtenir une réponse
+  // évidente, c'est mauvais. » On cherche d'emblée à 20 km, donc le second
+  // appel d'élargissement et sa question ont disparu.
 
   await compter(fiches.length ? 'surmesure:avec' : 'surmesure:vides')
   // §7 — « combien de recherches où un critère a dû être relâché, et sur
@@ -751,7 +709,7 @@ export async function POST(req: Request) {
     ...(motManquant(c, fiches) ? { motManquant: motManquant(c, fiches) } : {}),
     // Le client a besoin du mode pour ÉCRIRE le temps de trajet, et du
     // plafond pour dire « à moins de 10 minutes à pied ».
-    mode, plafondMin: plafondMin(c, mode), plusLoin,
+    mode, plafondMin: plafondMin(c, mode), rayonKm: RAYON_KM,
     // §5 — ce qu'on a dû lâcher pour trouver quelque chose.
     relaches,
   }
