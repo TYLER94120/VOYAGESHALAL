@@ -220,7 +220,47 @@ function cadre(lat: number, lng: number, m: number) {
   }
 }
 
-async function passe1(lat: number, lng: number, c: Criteres, cle: string, lang: string, rayon: number, texte: string): Promise<Candidat[] | null> {
+/**
+ * 🔎 POURQUOI GOOGLE A REFUSÉ — la question que personne ne pouvait poser.
+ *
+ * Constat de l'agent HalalGPT, nuit du 15 août : les trois appels Google
+ * faisaient `if (!r.ok) return null` puis `catch { return null }`. Une clé
+ * refusée, un quota dépassé, un masque de champs invalide et un délai
+ * expiré rendaient donc EXACTEMENT le même résultat. Le widget disait
+ * honnêtement « je n'ai pas pu interroger Google » — mais ni Mohamed ni
+ * l'agent ne pouvaient savoir LAQUELLE des quatre causes s'appliquait, et
+ * on ne répare pas ce qu'on ne peut pas nommer.
+ *
+ * Google, lui, le dit très précisément dans le corps de sa réponse :
+ * « API keys with referer restrictions cannot be used with this API »,
+ * « Requests to this API are blocked », « Invalid field mask ». Il suffit
+ * de le lire.
+ *
+ * La clé est nettoyée avant journalisation : un secret ne doit jamais
+ * pouvoir tomber dans un journal, même par accident.
+ */
+type Refus = { statut: number; message: string }
+
+function sansSecret(texte: string): string {
+  return texte.replace(/key=[^&\s"']+/gi, 'key=***').slice(0, 300)
+}
+
+async function lireRefus(r: Response): Promise<Refus> {
+  let message = ''
+  try {
+    const brut = (await r.text()).slice(0, 600)
+    try {
+      const j = JSON.parse(brut) as { error?: { message?: string; status?: string } }
+      message = j.error?.message ?? j.error?.status ?? brut
+    } catch { message = brut }
+  } catch { message = '(corps illisible)' }
+  return { statut: r.status, message: sansSecret(message) }
+}
+
+/** Ce qu'on retient du dernier refus, pour le remonter jusqu'à la réponse. */
+type Journal = { refus?: Refus }
+
+async function passe1(lat: number, lng: number, c: Criteres, cle: string, lang: string, rayon: number, texte: string, journal?: Journal): Promise<Candidat[] | null> {
   const ac = new AbortController()
   const t = setTimeout(() => ac.abort(), DELAI)
   try {
@@ -239,7 +279,12 @@ async function passe1(lat: number, lng: number, c: Criteres, cle: string, lang: 
         locationRestriction: { rectangle: cadre(lat, lng, rayon) },
       }),
     })
-    if (!r.ok) return null
+    if (!r.ok) {
+      const refus = await lireRefus(r)
+      if (journal) journal.refus = refus
+      console.error('[lieux] Google a refuse la recherche', refus.statut, refus.message)
+      return null
+    }
     const j = await r.json() as { places?: Record<string, unknown>[] }
     const PRIX: Record<string, number> = { PRICE_LEVEL_INEXPENSIVE: 1, PRICE_LEVEL_MODERATE: 2, PRICE_LEVEL_EXPENSIVE: 3, PRICE_LEVEL_VERY_EXPENSIVE: 4 }
     return (j.places ?? [])
@@ -267,7 +312,16 @@ async function passe1(lat: number, lng: number, c: Criteres, cle: string, lang: 
         // Un signal dans le NOM n'écarte pas ici : le lieu part en
         // vérification d'attributs (barrage 2). C'est là qu'on tranchera.
         || estRefusPourNomSeul(x))
-  } catch { return null } finally { clearTimeout(t) }
+  } catch (e) {
+    // Le délai dépassé et la panne réseau se ressemblent dans un `catch` —
+    // ils ne se réparent pas pareil. On les distingue ici.
+    const refus: Refus = ac.signal.aborted
+      ? { statut: 0, message: `delai de ${DELAI} ms depasse` }
+      : { statut: 0, message: sansSecret(String(e)) }
+    if (journal) journal.refus = refus
+    console.error('[lieux] recherche Google injoignable :', refus.message)
+    return null
+  } finally { clearTimeout(t) }
 }
 
 /** Vrai si le seul reproche est un mot du nom : ce cas mérite la
@@ -302,7 +356,11 @@ async function verifierAlcool(cands: Candidat[], cle: string): Promise<Candidat[
       })
       // Appel muet = information INCONNUE. La règle d'or s'applique :
       // dans le doute, seul un lieu sans aucun signal peut passer.
-      if (!r.ok) return { ...x }
+      if (!r.ok) {
+        const refus = await lireRefus(r)
+        console.error('[lieux] verification alcool refusee', refus.statut, refus.message)
+        return { ...x }
+      }
       const p = await r.json() as Record<string, unknown>
       return {
         ...x,
@@ -371,7 +429,11 @@ async function enrichir(cand: Candidat, cle: string, lang: string, origin: strin
       signal: ac.signal,
       headers: { 'X-Goog-Api-Key': cle, 'X-Goog-FieldMask': CHAMPS_PASSE2 },
     })
-    if (!r.ok) return base
+    if (!r.ok) {
+      const refus = await lireRefus(r)
+      console.error('[lieux] enrichissement refuse', refus.statut, refus.message)
+      return base
+    }
     const p = await r.json() as Record<string, unknown>
     const oh = p.currentOpeningHours as { openNow?: boolean; weekdayDescriptions?: string[] } | undefined
     const photos = (p.photos as { name?: string; authorAttributions?: { displayName?: string }[] }[] | undefined) ?? []
@@ -503,6 +565,8 @@ export async function POST(req: Request) {
   let autres: Fiche[] = []
   let source: 'google' | 'osm' | 'spots-seulement' = 'spots-seulement'
   let etatGoogle: 'ok' | 'vide' | 'muet' | 'sans-cle' = cle ? 'muet' : 'sans-cle'
+  // « muet » ne suffit pas à réparer : on garde CE QUE Google a répondu.
+  const journal: Journal = {}
   /** Les critères de profil qu'on a dû relâcher — affichés tels quels. */
   const relaches: string[] = []
 
@@ -514,7 +578,7 @@ export async function POST(req: Request) {
     // ne connaît pas « protéiné » : on traduit en poke, grillades, bowls…
     const texteBase = CATEGORIE[c.categorie].texte(TEXTE[c.quoi])
     const avecProfil = c.categorie === 'manger' ? requeteAvecProfil(texteBase, profil) : texteBase
-    let cands = await passe1(lat, lng, c, cle, lang, rayon, avecProfil)
+    let cands = await passe1(lat, lng, c, cle, lang, rayon, avecProfil, journal)
 
     // §5 — QUAND TOUT NE PEUT PAS ÊTRE SATISFAIT, ON DIT CE QU'ON A LÂCHÉ.
     // On relâche du MOINS au PLUS essentiel, un cran à la fois, et jamais
@@ -525,7 +589,7 @@ export async function POST(req: Request) {
       if ((cands?.length ?? 0) >= RETENUS) break
       profilCourant = { ...profilCourant, [critere.cle]: critere.cle === 'regime' ? 'aucun' : critere.cle === 'objectif' ? 'aucun' : false } as Profil
       relaches.push(critere.libelle)
-      const encore = await passe1(lat, lng, c, cle, lang, rayon, requeteAvecProfil(texteBase, profilCourant))
+      const encore = await passe1(lat, lng, c, cle, lang, rayon, requeteAvecProfil(texteBase, profilCourant), journal)
       if (encore?.length) cands = encore
     }
 
@@ -593,6 +657,12 @@ export async function POST(req: Request) {
 
   const reponse = {
     fiches, autres, source, etatGoogle,
+    // 🔎 Présent UNIQUEMENT quand Google a refusé : le statut et sa phrase
+    // exacte. Rien de secret (la clé est nettoyée), rien d'affiché au
+    // visiteur — mais lisible d'un coup d'œil dans l'onglet Réseau, sans
+    // avoir à ouvrir les journaux du serveur. C'est ce qui transforme
+    // « ça ne marche pas » en « la clé refuse les appels serveur ».
+    ...(etatGoogle === 'muet' && journal.refus ? { diagnostic: journal.refus } : {}),
     // Le client a besoin du mode pour ÉCRIRE le temps de trajet, et du
     // plafond pour dire « à moins de 10 minutes à pied ».
     mode, plafondMin: plafondMin(c, mode), plusLoin,
