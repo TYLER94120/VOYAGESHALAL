@@ -170,6 +170,61 @@ export default function AutourDeMoiPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [instantPos])
 
+  // ════════ 16 AOÛT — LA CARTE DEVIENT LE RÉSULTAT ════════
+  //
+  // Ordre de Mohamed : « Aujourd'hui cette page reprend le bloc de
+  // l'accueil, puis pose une carte dessous, plus un deuxième champ
+  // "Chercher une ville". Trois boîtes qui ne se parlent pas. Ce n'est pas
+  // une page, c'est un empilement. » La carte occupe donc TOUT l'écran et
+  // les résultats remontent du bas dans une feuille tirable au pouce.
+  //
+  // Trois positions, parce qu'on ne cherche pas la même chose selon le
+  // moment : repliée on regarde la carte, à moitié on compare trois
+  // adresses, pleine on parcourt la liste. C'est le pouce qui décide.
+  type Feuille = 'repliee' | 'moitie' | 'pleine'
+  const [feuille, setFeuille] = useState<Feuille>('moitie')
+  const HAUTEUR: Record<Feuille, string> = { repliee: '132px', moitie: '46dvh', pleine: '88dvh' }
+  // Le glissé au pouce : on ne retient que le sens et l'ampleur du geste.
+  const glisse = useRef<{ y0: number; h0: Feuille } | null>(null)
+  // Chaque carte est repérée pour pouvoir la faire remonter quand on
+  // touche son épingle — c'est la moitié du lien à double sens.
+  const cartesRef = useRef<Map<number | string, HTMLDivElement | null>>(new Map())
+  const listeRef = useRef<HTMLDivElement | null>(null)
+  // 🕌 NOTRE SIGNATURE : les mosquées restent visibles même quand on
+  // cherche à manger. Couche séparée, épingles discrètes.
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const mosqueesFondRef = useRef<any[]>([])
+
+  // 📏 LA HAUTEUR DISPONIBLE SE MESURE, ELLE NE SE DEVINE PAS.
+  // Le bandeau fin du haut n'a pas la même hauteur selon le téléphone (la
+  // marge de sécurité iPhone en mode application le fait grandir). Un
+  // « calc(100dvh - 59px) » écrit en dur laisserait la feuille dépasser
+  // sous l'écran sur certains appareils, et c'est exactement le genre de
+  // défaut que Mohamed photographie.
+  const [hautDispo, setHautDispo] = useState<number | null>(null)
+  const plein = useRef<HTMLElement | null>(null)
+  useEffect(() => {
+    const lire = () => {
+      const el = plein.current
+      if (!el) return
+      // On ne devine RIEN : on mesure où cette page commence réellement
+      // (sous le bandeau fin, sous l'en-tête sur PC) et où le premier
+      // élément fixe du bas vient la recouvrir (la barre d'onglets sur
+      // téléphone). Un « calc(100dvh - 59px) » écrit en dur serait faux
+      // sur le premier appareil qui ne ressemble pas au mien — et c'est
+      // exactement le genre de défaut que Mohamed photographie.
+      const haut = el.getBoundingClientRect().top + window.scrollY - window.scrollY
+      const nav = document.querySelector('.bottom-nav')
+      const r = nav?.getBoundingClientRect()
+      const basCouvert = r && getComputedStyle(nav!).position === 'fixed' && r.height ? r.top : window.innerHeight
+      setHautDispo(Math.max(320, Math.round(Math.min(basCouvert, window.innerHeight) - haut)))
+    }
+    lire()
+    window.addEventListener('resize', lire)
+    const id = setTimeout(lire, 400)  // après que les polices et la barre se soient posées
+    return () => { window.removeEventListener('resize', lire); clearTimeout(id) }
+  }, [])
+
   const initMap = useCallback(async (lat: number, lng: number) => {
     if (!mapEl.current) return
     const L = LRef.current || (await import('leaflet')).default
@@ -201,10 +256,31 @@ export default function AutourDeMoiPage() {
     markersRef.current.forEach(({ id, marker, rank, community }) => marker.setIcon(pinIcon(L, conf.color, conf.icon, id === selId, rank, community)))
   }, [cat])
 
-  const select = useCallback((s: Spot, scroll = false) => {
+  /**
+   * 🔗 LE GESTE QUI FAIT LA FUSION (§2.2, « le plus important »).
+   *
+   * « Sans ce lien, on a deux boîtes côte à côte, c'est-à-dire le problème
+   * d'aujourd'hui avec un plus beau dessin. Avec ce lien, on a un outil. »
+   *
+   * `depuis` dit d'où vient le geste, parce que la bonne réponse n'est pas
+   * la même :
+   *   · 'fiche'   → on a touché une carte : l'épingle se centre. La feuille
+   *                 se replie à moitié si elle était pleine, sinon la carte
+   *                 qu'on vient de choisir masque la carte géographique.
+   *   · 'epingle' → on a touché une épingle : c'est la FICHE qui doit
+   *                 remonter, et la feuille s'ouvre si elle était repliée.
+   */
+  const select = useCallback((s: Spot, depuis: 'fiche' | 'epingle' = 'fiche') => {
     setSelected(s.id); paint(s.id)
-    mapRef.current?.setView([s.lat, s.lng], 16, { animate: true })
-    if (scroll) window.scrollTo({ top: 0, behavior: 'smooth' })
+    mapRef.current?.setView([s.lat, s.lng], depuis === 'epingle' ? mapRef.current.getZoom() : 16, { animate: true })
+    if (depuis === 'fiche') {
+      setFeuille((f) => (f === 'pleine' ? 'moitie' : f))
+    } else {
+      setFeuille((f) => (f === 'repliee' ? 'moitie' : f))
+      // On laisse la feuille finir son mouvement avant de faire glisser la
+      // fiche : sinon on défile dans une boîte qui change encore de taille.
+      setTimeout(() => cartesRef.current.get(s.id)?.scrollIntoView({ block: 'start', behavior: 'smooth' }), 260)
+    }
   }, [paint])
 
   // Dessine la liste (idée 1 : top 5 numéroté ; le reste en petits points si « Voir plus »)
@@ -218,10 +294,46 @@ export default function AutourDeMoiPage() {
     visible.forEach((s, i) => {
       const rank = i < 5 ? i + 1 : undefined
       const mk = L.marker([s.lat, s.lng], { icon: pinIcon(L, conf.color, conf.icon, false, rank, s.community), zIndexOffset: rank ? 500 - i : 0 }).addTo(mapRef.current)
-      mk.on('click', () => select(s))
+      mk.on('click', () => select(s, 'epingle'))
       markersRef.current.push({ id: s.id, marker: mk, rank, community: s.community })
     })
   }, [select])
+
+  /**
+   * 🕌 LES MOSQUÉES RESTENT VISIBLES, MÊME QUAND JE CHERCHE À MANGER.
+   *
+   * Ordre de Mohamed, §2.3 : « Où que je sois, je vois où prier sans rien
+   * demander. Aucune carte au monde ne fait ça — et ça ne coûte rien. »
+   *
+   * Couche à part, épingles DISCRÈTES : elles ne doivent pas concurrencer
+   * les résultats de la recherche en cours, seulement rester là. Quand on
+   * cherche déjà des mosquées, cette couche s'efface — sinon on aurait
+   * deux épingles pour le même lieu.
+   */
+  const peindreMosqueesDeFond = useCallback(async (lat: number, lng: number, c: Cat) => {
+    const L = LRef.current
+    if (!L || !mapRef.current) return
+    mosqueesFondRef.current.forEach((m) => m.remove()); mosqueesFondRef.current = []
+    if (c === 'mosquees') return
+    let liste: { nom: string; lat: number; lng: number }[] = []
+    try {
+      // Notre propre relais, jamais Overpass depuis le téléphone : c'est ce
+      // que Mohamed a photographié deux fois, des tuiles vides en 4G.
+      const r = await fetch(`/api/osm-restos?lat=${lat}&lng=${lng}&rayon=4000&quoi=tout`)
+      if (r.ok) liste = ((await r.json()).mosquees ?? []).slice(0, 25)
+    } catch { return /* la carte vit très bien sans cette couche */ }
+    if (!mapRef.current) return
+    for (const m of liste) {
+      const icone = L.divIcon({
+        html: `<div style="width:20px;height:20px;background:rgba(45,106,79,.88);border:2px solid rgba(255,255,255,.9);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px">🕌</div>`,
+        className: '', iconSize: [20, 20], iconAnchor: [10, 10],
+      })
+      const mk = L.marker([m.lat, m.lng], { icon: icone, zIndexOffset: -400, opacity: 0.85 })
+        .addTo(mapRef.current)
+        .bindTooltip(m.nom, { direction: 'top' })
+      mosqueesFondRef.current.push(mk)
+    }
+  }, [])
 
   // render = mémorise la liste brute puis peint la version FILTRÉE (P4)
   const render = useCallback((list: Spot[], c: Cat) => {
@@ -385,6 +497,18 @@ export default function AutourDeMoiPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [cat])
 
+  // 🕌 La couche mosquées se repeint quand la position OU la catégorie
+  // change, et seulement une fois la carte réellement créée. Elle vient
+  // APRÈS les résultats : c'est notre signature, pas la réponse à la
+  // question posée — elle ne doit jamais retarder ce qu'on a demandé.
+  useEffect(() => {
+    if (!pos) return
+    let annule = false
+    const t = setTimeout(() => { if (!annule) peindreMosqueesDeFond(pos.lat, pos.lng, cat) }, 600)
+    return () => { annule = true; clearTimeout(t) }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pos, cat])
+
   const searchHere = async () => {
     const c = mapRef.current?.getCenter(); if (!c) return
     setLoading(true)
@@ -417,120 +541,117 @@ export default function AutourDeMoiPage() {
   const conf = CATS.find((x) => x.id === cat)!
 
   return (
-    <main style={{ background: 'var(--creme)', minHeight: '100vh' }}>
+    <main ref={plein} className="autour-plein" style={hautDispo ? { height: hautDispo } : { height: '100dvh' }}>
       {/* Titre de page : la carte occupe l'écran, mais la page doit annoncer
           ce qu'elle est (accessibilité lecteurs d'écran + SEO). */}
       <h1 style={{ position: 'absolute', width: 1, height: 1, padding: 0, margin: -1, overflow: 'hidden', clip: 'rect(0 0 0 0)', whiteSpace: 'nowrap', border: 0 }}>
         Mosquées, restaurants halal et spots autour de moi
       </h1>
-      {/* 🎯 LE SUR MESURE EN TÊTE — ordre de Mohamed, 15 août au soir :
-          « Autour de moi, c'est encore une liste brute : trois mosquées
-          empilées, un nom tronqué, un badge coupé, aucune question,
-          aucune IA. » Le même moteur que partout ailleurs passe donc
-          AVANT la carte : on pose la question, on répond par trois fiches
-          riches. La carte reste en dessous — elle MONTRE où sont les
-          lieux, elle ne répond pas à une demande. */}
-      <div style={{ background: 'var(--nuit)' }}>
-        <SurMesure posInitiale={instantPos ? { lat: instantPos.lat, lng: instantPos.lng, ville: instantPos.label ?? null } : null} />
-      </div>
 
-      {/* §D — LE CHAMP VILLE VIT AU-DESSUS DE LA CARTE, PAS PAR-DESSUS.
-          Mohamed : « les pastilles se chevauchent et recouvrent le bandeau
-          de prière, illisible ». Empilées en flottant, quatre commandes se
-          marchaient dessus ; ici la recherche de ville a sa propre ligne,
-          et la carte garde une seule pastille. */}
-      <form onSubmit={goToCity} style={{ display: 'flex', gap: 6, margin: '0 auto', maxWidth: 700, padding: '10px 12px 0' }}>
-        <input
-          value={q}
-          onChange={(e) => setQ(e.target.value)}
-          placeholder="Chercher une ville (Berkane, Istanbul…)"
-          aria-label="Chercher une ville sur la carte"
-          style={{ flex: 1, minHeight: 48, border: '1px solid rgba(11,26,15,0.15)', outline: 'none', fontSize: 15, padding: '0 14px', borderRadius: 12, color: 'var(--nuit)', background: '#fff' }}
-        />
-        <button type="submit" disabled={searching} style={{ border: 'none', minHeight: 48, background: 'var(--foret)', color: '#fff', fontWeight: 700, fontSize: 14, borderRadius: 12, padding: '0 16px', cursor: searching ? 'wait' : 'pointer' }}>
-          {searching ? '…' : '🔍'}
-        </button>
-      </form>
+      {/* 🗺️ LA CARTE EST LE FOND, PAS UN ENCART (§2.1).
+          « Ce n'est pas une autre fonctionnalité, c'est LA MÊME RECHERCHE,
+          EN VUE CARTE. L'accueil répond "quoi", cette page répond "où par
+          rapport à moi". »
+          Le fond reste OpenStreetMap : Google ne sert QU'AUX DONNÉES des
+          lieux. Afficher une carte Google se facture à chaque chargement,
+          et sur une page qui vit en plein écran l'addition monterait vite
+          — la clé est d'ailleurs restreinte aux Places. */}
+      <div ref={mapEl} className="autour-carte" style={{ background: '#dfe6e2' }} />
 
-      <div style={{ position: 'relative' }}>
-        <div ref={mapEl} style={{ height: '62vh', minHeight: 380, width: '100%', background: '#dfe6e2', zIndex: 1 }} />
-
-        <div style={{ position: 'absolute', top: 12, left: 12, right: 12, zIndex: 500, display: 'flex', flexDirection: 'column', gap: 8, pointerEvents: 'none' }}>
-          <form onSubmit={goToCity} style={{ display: 'none' }}>
-            <input
-              value={q}
-              onChange={(e) => setQ(e.target.value)}
-              placeholder="Chercher une ville (Berkane, Istanbul…)"
-              aria-label="Chercher une ville sur la carte"
-              style={{ flex: 1, minHeight: 48, border: 'none', outline: 'none', fontSize: 15, padding: '0 12px', borderRadius: 12, color: 'var(--nuit)', background: 'transparent' }}
-            />
-            <button type="submit" disabled={searching} style={{ border: 'none', minHeight: 48, background: 'var(--foret)', color: '#fff', fontWeight: 700, fontSize: 14, borderRadius: 12, padding: '0 16px', cursor: searching ? 'wait' : 'pointer' }}>
-              {searching ? '…' : '🔍'}
-            </button>
-          </form>
-          <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
-            <span style={{ pointerEvents: 'auto', background: 'var(--foret)', color: '#fff', fontWeight: 700, fontSize: 13.5, borderRadius: 30, padding: '8px 14px', boxShadow: '0 4px 14px rgba(0,0,0,.18)' }}>
-              {loading ? 'Recherche…' : `${spots.length} ${conf.label} à proximité`}
-            </span>
-            {carteDeplacee && (
-              <button onClick={() => { setCarteDeplacee(false); searchHere() }} style={{ pointerEvents: 'auto', minHeight: 44, background: '#fff', color: 'var(--nuit)', fontWeight: 700, fontSize: 13.5, border: 'none', borderRadius: 30, padding: '0 16px', cursor: 'pointer', boxShadow: '0 4px 14px rgba(0,0,0,.18)' }}>
-                🔄 Rechercher dans cette zone
-              </button>
-            )}
-            {/* (La pilule de position a quitté la carte : elle doublonnait
-                le badge du haut de page et participait au chevauchement.) */}
-          </div>
-        </div>
-
-        {geoErr && (
-          <div style={{ position: 'absolute', inset: 0, zIndex: 600, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(11,26,15,0.55)', padding: 24 }}>
-            <div style={{ background: '#fff', borderRadius: 18, padding: '28px 24px', maxWidth: 420, textAlign: 'center' }}>
-              <div style={{ fontSize: 34, marginBottom: 8 }}>📍</div>
-              <h2 style={{ fontFamily: "'Playfair Display', serif", color: 'var(--foret)', fontSize: 20, margin: '0 0 6px' }}>{geoErr.message}</h2>
-              <p style={{ color: 'var(--texte-2)', fontSize: 14, margin: '0 0 16px' }}>{geoErr.detail}</p>
-              <div style={{ display: 'flex', gap: 8, justifyContent: 'center', flexWrap: 'wrap' }}>
-                <button onClick={retry} style={{ padding: '10px 18px', background: 'var(--foret)', color: '#fff', border: 'none', borderRadius: 12, fontWeight: 700, cursor: 'pointer' }}>Réessayer</button>
-                <a href="/destinations?all=1" style={{ padding: '10px 18px', background: 'rgba(27,67,50,0.08)', color: 'var(--foret)', borderRadius: 12, fontWeight: 700, textDecoration: 'none' }}>Choisir une ville</a>
-              </div>
-            </div>
-          </div>
-        )}
-      </div>
-
-      {/* Idée 1 : UNE question — « Tu cherches quoi, là ? » 3 grandes tuiles + Plus… */}
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr auto', gap: 8, padding: '14px 14px 4px' }}>
-        {([
-          { id: 'mosquees' as Cat, icon: '🕌', label: 'Prier' },
-          { id: 'restaurants' as Cat, icon: '🍽', label: 'Manger' },
-          { id: 'spots' as Cat, icon: '💎', label: 'Pépites' },
-        ]).map((x) => {
-          const on = x.id === cat
-          return (
-            <button key={x.id} onClick={() => { userChose.current = true; setMoreOpen(false); setCat(x.id) }}
-              style={{ minHeight: 58, borderRadius: 16, border: `2px solid ${on ? 'var(--or)' : 'rgba(27,67,50,0.18)'}`, background: on ? 'var(--foret)' : '#fff', color: on ? '#fff' : 'var(--foret)', fontWeight: 800, fontSize: 15, cursor: 'pointer', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 2 }}>
-              <span style={{ fontSize: 20 }}>{x.icon}</span>{x.label}
-            </button>
-          )
-        })}
-        <button onClick={() => setMoreOpen((v) => !v)} aria-expanded={moreOpen}
-          style={{ minHeight: 58, padding: '0 14px', borderRadius: 16, border: `2px solid ${moreOpen || ['hotels', 'activites', 'boucheries'].includes(cat) ? 'var(--or)' : 'rgba(27,67,50,0.18)'}`, background: '#fff', color: 'var(--foret)', fontWeight: 800, fontSize: 14, cursor: 'pointer' }}>
-          ⋯
-        </button>
-      </div>
-      {moreOpen && (
-        <div style={{ display: 'flex', gap: 8, padding: '6px 14px 0', overflowX: 'auto' }}>
-          {CATS.filter((x) => ['hotels', 'activites', 'boucheries'].includes(x.id)).map((x) => {
+      {/* La barre du haut, COMPACTE et flottante — pas le gros bloc de
+          l'accueil. Le champ « Chercher une ville » a disparu : la barre
+          unique comprend déjà « une pâtisserie à Tirana » (règle 1.1). */}
+      <div className="autour-barre">
+        <div style={{ display: 'flex', gap: 7 }}>
+          {([
+            { id: 'mosquees' as Cat, icon: '🕌', label: 'Prier' },
+            { id: 'restaurants' as Cat, icon: '🍽️', label: 'Manger' },
+            { id: 'activites' as Cat, icon: '🎯', label: 'Que faire' },
+          ]).map((x) => {
             const on = x.id === cat
             return (
-              <button key={x.id} onClick={() => { userChose.current = true; setCat(x.id) }}
-                style={{ flexShrink: 0, display: 'flex', alignItems: 'center', gap: 6, padding: '9px 16px', borderRadius: 30, border: `1.5px solid ${on ? x.color : 'rgba(27,67,50,0.2)'}`, background: on ? x.color : '#fff', color: on ? '#fff' : 'var(--foret)', fontWeight: 700, fontSize: 14, cursor: 'pointer', whiteSpace: 'nowrap' }}>
-                <span>{x.icon}</span>{x.label}
+              <button key={x.id} onClick={() => { userChose.current = true; setMoreOpen(false); setCat(x.id) }}
+                aria-pressed={on}
+                style={{ flex: '1 1 0', minWidth: 0, minHeight: 44, borderRadius: 999, border: `1.5px solid ${on ? 'var(--or)' : 'rgba(27,67,50,0.2)'}`, background: on ? 'var(--foret)' : '#fff', color: on ? '#fff' : 'var(--foret)', fontWeight: 800, fontSize: 14, cursor: 'pointer', whiteSpace: 'nowrap' }}>
+                {x.icon} {x.label}
               </button>
             )
           })}
+          <button onClick={() => setMoreOpen((v) => !v)} aria-expanded={moreOpen} aria-label="Plus de catégories"
+            style={{ flexShrink: 0, minHeight: 44, padding: '0 13px', borderRadius: 999, border: `1.5px solid ${moreOpen || ['hotels', 'boucheries', 'spots'].includes(cat) ? 'var(--or)' : 'rgba(27,67,50,0.2)'}`, background: '#fff', color: 'var(--foret)', fontWeight: 800, fontSize: 15, cursor: 'pointer' }}>
+            ⋯
+          </button>
+        </div>
+        {moreOpen && (
+          <div style={{ display: 'flex', gap: 7, marginTop: 7, overflowX: 'auto' }}>
+            {CATS.filter((x) => ['hotels', 'boucheries', 'spots'].includes(x.id)).map((x) => {
+              const on = x.id === cat
+              return (
+                <button key={x.id} onClick={() => { userChose.current = true; setCat(x.id) }}
+                  style={{ flexShrink: 0, minHeight: 44, padding: '0 15px', borderRadius: 999, border: `1.5px solid ${on ? x.color : 'rgba(27,67,50,0.2)'}`, background: on ? x.color : '#fff', color: on ? '#fff' : 'var(--foret)', fontWeight: 700, fontSize: 14, cursor: 'pointer', whiteSpace: 'nowrap' }}>
+                  {x.icon} {x.label}
+                </button>
+              )
+            })}
+          </div>
+        )}
+        {/* « Rechercher dans cette zone » n'apparaît QUE si j'ai déplacé la
+            carte moi-même — jamais en permanence (§2.2). */}
+        {carteDeplacee && (
+          <button onClick={() => { setCarteDeplacee(false); searchHere() }}
+            style={{ marginTop: 7, minHeight: 44, width: '100%', background: 'var(--nuit)', color: 'var(--or)', fontWeight: 800, fontSize: 14, border: 'none', borderRadius: 999, cursor: 'pointer' }}>
+            🔄 Rechercher dans cette zone
+          </button>
+        )}
+      </div>
+
+      {geoErr && (
+        <div style={{ position: 'absolute', inset: 0, zIndex: 600, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(11,26,15,0.55)', padding: 24 }}>
+          <div style={{ background: '#fff', borderRadius: 18, padding: '28px 24px', maxWidth: 420, textAlign: 'center' }}>
+            <div style={{ fontSize: 34, marginBottom: 8 }}>📍</div>
+            <h2 style={{ fontFamily: "'Playfair Display', serif", color: 'var(--foret)', fontSize: 20, margin: '0 0 6px' }}>{geoErr.message}</h2>
+            <p style={{ color: 'var(--texte-2)', fontSize: 14, margin: '0 0 16px' }}>{geoErr.detail}</p>
+            <div style={{ display: 'flex', gap: 8, justifyContent: 'center', flexWrap: 'wrap' }}>
+              <button onClick={retry} style={{ minHeight: 44, padding: '0 18px', background: 'var(--foret)', color: '#fff', border: 'none', borderRadius: 12, fontWeight: 700, cursor: 'pointer' }}>Réessayer</button>
+              <a href="/destinations?all=1" style={{ minHeight: 44, display: 'inline-flex', alignItems: 'center', padding: '0 18px', background: 'rgba(27,67,50,0.08)', color: 'var(--foret)', borderRadius: 12, fontWeight: 700, textDecoration: 'none' }}>Choisir une ville</a>
+            </div>
+          </div>
         </div>
       )}
 
+      {/* 📄 LA FEUILLE QUI REMONTE DU BAS — les résultats.
+          Tirable au pouce, trois positions. Elle s'affiche AVANT la carte :
+          dehors, en 4G faible, une carte met du temps, et on ne fait pas
+          attendre quelqu'un qui a faim devant un fond qui tourne (§2.4). */}
+      <section className="autour-feuille" style={{ height: HAUTEUR[feuille] }} aria-label="Résultats">
+        <div
+          className="autour-poignee"
+          role="button" tabIndex={0}
+          aria-label={`Résultats — ${feuille === 'pleine' ? 'liste complète' : feuille === 'moitie' ? 'aperçu' : 'replié'}. Tirer pour agrandir.`}
+          onClick={() => setFeuille((f) => (f === 'pleine' ? 'moitie' : f === 'moitie' ? 'pleine' : 'moitie'))}
+          onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setFeuille((f) => (f === 'pleine' ? 'moitie' : 'pleine')) } }}
+          onTouchStart={(e) => { glisse.current = { y0: e.touches[0].clientY, h0: feuille } }}
+          onTouchMove={(e) => {
+            const g = glisse.current; if (!g) return
+            const d = g.y0 - e.touches[0].clientY  // vers le haut = positif
+            if (Math.abs(d) < 34) return
+            const ordre: Feuille[] = ['repliee', 'moitie', 'pleine']
+            const i = ordre.indexOf(g.h0)
+            setFeuille(ordre[Math.min(2, Math.max(0, i + (d > 0 ? 1 : -1)))])
+            glisse.current = null
+          }}
+          onTouchEnd={() => { glisse.current = null }}
+        >
+          <span className="autour-trait" aria-hidden />
+          <p style={{ margin: 0, fontWeight: 800, fontSize: 14, color: 'var(--foret)' }}>
+            {loading ? 'Recherche…' : `${spots.length} ${conf.label}`}
+            <span style={{ color: 'var(--texte-2)', fontWeight: 600 }}> · {feuille === 'pleine' ? 'tout' : 'tire pour voir'}</span>
+          </p>
+        </div>
+        <div ref={listeRef} className="autour-liste">
+      {/* 🧹 Les grandes tuiles de catégorie ont quitté cette place : elles
+          sont maintenant dans la barre flottante, par-dessus la carte. On
+          n'empile pas, on intègre — elles étaient le même geste, deux fois. */}
       {/* Filtres d'attributs contextuels (P4) — n'apparaissent que si la
           catégorie porte ces données. « Signalé halal », jamais « certifié ». */}
       {(FILTERS_BY_CAT[cat]?.length || cat === 'restaurants' || cat === 'hotels') && (
@@ -559,10 +680,16 @@ export default function AutourDeMoiPage() {
         </div>
       )}
 
-      <div style={{ padding: '10px 14px 90px', display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: 12 }}>
+      <div style={{ padding: '10px 14px 26px', display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: 12 }}>
         {spots.map((s, i) => (
-          <div key={s.id} onClick={() => select(s, true)}
-            style={{ background: '#fff', borderRadius: 16, padding: '14px 16px', border: `1.5px solid ${selected === s.id ? SELECTED_GOLD : 'rgba(27,67,50,0.1)'}`, cursor: 'pointer', display: 'flex', gap: 12, alignItems: 'center' }}>
+          // 🔗 Toucher une fiche centre son épingle (§2.2). La fiche
+          // sélectionnée se signale par son liseré doré, exactement comme
+          // l'épingle grossit sur la carte : c'est la même sélection, vue
+          // des deux côtés.
+          <div key={s.id} ref={(el) => { cartesRef.current.set(s.id, el) }}
+            onClick={() => select(s, 'fiche')}
+            aria-current={selected === s.id}
+            style={{ background: '#fff', borderRadius: 16, padding: '14px 16px', border: `1.5px solid ${selected === s.id ? SELECTED_GOLD : 'rgba(27,67,50,0.1)'}`, boxShadow: selected === s.id ? '0 0 0 3px rgba(201,168,76,0.25)' : 'none', cursor: 'pointer', display: 'flex', gap: 12, alignItems: 'center', scrollMarginTop: 8 }}>
             <div style={{ width: 42, height: 42, borderRadius: 12, background: conf.color, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 20, flexShrink: 0 }}>{conf.icon}</div>
             <div style={{ flex: 1, minWidth: 0 }}>
               <p style={{ fontWeight: 700, fontSize: 15, color: 'var(--texte)', margin: 0, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
@@ -589,15 +716,30 @@ export default function AutourDeMoiPage() {
             Voir plus ({allRef.current.length - 5} autres)
           </button>
         )}
+        {/* 🤝 §2.3 — « 0 Spots partagés à proximité » affiché en grand, en
+            premier, c'est un accueil décourageant. Ça devient une
+            invitation, avec le bouton déjà pré-rempli. On ne dit pas
+            « il n'y a rien » : on dit « sois le premier ». */}
         {!loading && !geoErr && spots.length === 0 && (
-          <p style={{ gridColumn: '1/-1', textAlign: 'center', color: 'var(--texte-2)', padding: 20 }}>
-            {allRef.current.length > 0
-              ? 'Aucun lieu ne correspond à ces filtres ici — retire un filtre ou élargis la zone.'
-              : 'Rien trouvé dans cette zone. Déplace la carte puis « Rechercher dans cette zone ».'}
-          </p>
+          <div style={{ gridColumn: '1/-1', textAlign: 'center', padding: '18px 12px' }}>
+            <p style={{ color: 'var(--texte-2)', fontSize: 14.5, margin: 0, lineHeight: 1.5 }}>
+              {allRef.current.length > 0
+                ? 'Aucun lieu ne correspond à ces filtres ici — retire un filtre ou élargis la zone.'
+                : cat === 'spots'
+                  ? 'Sois le premier à partager une adresse ici.'
+                  : 'Rien trouvé dans cette zone. Déplace la carte puis « Rechercher dans cette zone ».'}
+            </p>
+            {allRef.current.length === 0 && (
+              <a href={`/ajouter?categorie=${cat}${q ? `&ville=${encodeURIComponent(q)}` : ''}`}
+                style={{ marginTop: 12, minHeight: 48, display: 'inline-flex', alignItems: 'center', padding: '0 20px', borderRadius: 999, background: 'var(--foret)', color: '#fff', fontWeight: 800, fontSize: 15, textDecoration: 'none' }}>
+                ➕ Ajouter une adresse
+              </a>
+            )}
+          </div>
         )}
       </div>
-
+        </div>
+      </section>
     </main>
   )
 }

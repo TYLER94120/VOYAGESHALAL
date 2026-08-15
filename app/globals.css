@@ -946,3 +946,63 @@ body { top: 0 !important; }
    lisible, et la page ne saute pas quand les fiches se posent. */
 @keyframes squelette-pulse { 0%,100% { opacity: .35 } 50% { opacity: .7 } }
 .squelette { animation: squelette-pulse 1.4s ease-in-out infinite; }
+
+/* ════════ « AUTOUR DE MOI » : LA CARTE DEVIENT LE RÉSULTAT (16 août) ════════
+   Ordre de Mohamed : « La carte occupe TOUT l'écran. Elle est le fond, pas un
+   encart. Les résultats arrivent dans une FEUILLE QUI REMONTE DU BAS, tirable
+   au pouce, en trois positions. Sur ordinateur : deux colonnes — les fiches à
+   gauche, la carte à droite. »
+   Hauteurs en dvh et jamais en pixels fixes : la barre d'adresse des téléphones
+   change la hauteur disponible, et un 100vh laisse la feuille sous l'écran. */
+.autour-plein { position: relative; overflow: hidden; background: var(--creme); }
+/* Cette page gère elle-même sa hauteur : la réserve de 96 px que les pages
+   ordinaires gardent sous la barre d'onglets deviendrait ici du vide qu'on
+   peut faire défiler sous une carte censée occuper tout l'écran. */
+body:has(.autour-plein) { padding-bottom: 0 !important; }
+.autour-carte { position: absolute; inset: 0; z-index: 1; }
+
+.autour-barre {
+  position: absolute; z-index: 500; top: 10px; left: 10px; right: 10px;
+  background: rgba(253, 250, 243, 0.94);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(27, 67, 50, 0.14);
+  border-radius: 18px; padding: 8px;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.14);
+}
+
+.autour-feuille {
+  position: absolute; z-index: 600; left: 0; right: 0; bottom: 0;
+  display: flex; flex-direction: column;
+  background: var(--creme);
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 -6px 26px rgba(0, 0, 0, 0.18);
+  /* Le mouvement doit se voir : c'est ce qui apprend qu'on peut la tirer. */
+  transition: height 0.24s cubic-bezier(0.32, 0.72, 0, 1);
+}
+.autour-poignee {
+  flex-shrink: 0; cursor: grab; user-select: none;
+  padding: 8px 14px 9px; text-align: center;
+  /* 44 px de cible tactile, poignée comprise : c'est le geste principal. */
+  min-height: 44px;
+  border-bottom: 1px solid rgba(27, 67, 50, 0.1);
+}
+.autour-trait {
+  display: block; width: 42px; height: 4px; margin: 0 auto 7px;
+  border-radius: 2px; background: rgba(27, 67, 50, 0.28);
+}
+.autour-liste { flex: 1; overflow-y: auto; -webkit-overflow-scrolling: touch; overscroll-behavior: contain; }
+
+/* 🖥️ Sur ordinateur, la place horizontale existe : on s'en sert. Les fiches
+   prennent une colonne fixe à gauche, la carte tout le reste à droite — la
+   feuille n'a plus de raison de coulisser, elle est simplement là. */
+@media (min-width: 1024px) {
+  .autour-carte { left: 420px; }
+  .autour-feuille {
+    top: 0; right: auto; width: 420px; height: 100% !important;
+    border-radius: 0; box-shadow: 4px 0 22px rgba(0, 0, 0, 0.1);
+    transition: none;
+  }
+  .autour-poignee { cursor: default; }
+  .autour-trait { display: none; }
+  .autour-barre { left: 436px; }
+}
