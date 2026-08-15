@@ -146,24 +146,67 @@ export function pistes(cat: Categorie, ctx: Contexte, en: boolean): Piste[] {
 /**
  * ✨ « JE NE SAIS PAS — CHOISIS POUR MOI ».
  *
- * Un appui, aucune question. On prend l'heure, la position, la prochaine
- * prière et ce qui est ouvert, et on décide. La phrase renvoyée explique
- * le RAISONNEMENT — c'est ce qui distingue « on a deviné » de « on a
- * choisi pour toi ».
+ * 🔴🔴 DÉFAUT LE PLUS GRAVE DU SITE, corrigé le 15 août.
+ *
+ * Mohamed : « J'ai sélectionné PRIER. J'ai cliqué "Je ne sais pas — choisis
+ * pour moi". Le site m'a répondu AL AMIR, traiteur, spécialités libanaises,
+ * avec des photos de houmous. Je cherchais un lieu de prière. On m'a servi
+ * un restaurant. C'est le site qui se moque de lui. »
+ *
+ * LA CAUSE ÉTAIT ICI, et elle est nette : cette fonction décidait ELLE-MÊME
+ * de la catégorie. Elle renvoyait `categorie: 'manger'` selon l'heure, et
+ * l'appelant faisait `{ ...crit, ...d.criteres }` — donc « manger » écrasait
+ * le « mosquée » que le visiteur venait de choisir d'un appui.
+ *
+ * LA RÈGLE, désormais sans exception : le raccourci RESPECTE L'ONGLET ACTIF.
+ * Il choisit le MOMENT, le MODE, l'OUVERTURE — jamais la catégorie. Ce n'est
+ * pas au site de décider qu'on cherchait autre chose que ce qu'on a demandé.
+ *
+ * Un appui, aucune question. La phrase renvoyée explique le RAISONNEMENT —
+ * c'est ce qui distingue « on a deviné » de « on a choisi pour toi ».
  */
-export function choisirPourMoi(ctx: Contexte, en: boolean): { criteres: Partial<Criteres>; raison: string } {
+export function choisirPourMoi(cat: Categorie, ctx: Contexte, en: boolean): { criteres: Partial<Criteres>; raison: string } {
   const p = ctx.priere
   const tard = ctx.heure >= 21 || ctx.heure < 5
   const urgent = p && p.minutes <= PRIERE_URGENTE_MIN
 
-  // La prière imminente passe avant tout : rater sa prière pour un
-  // restaurant n'est pas un service qu'on rend.
+  // 🕌 L'ONGLET PRIER : on choisit parmi des MOSQUÉES, point.
+  if (cat === 'mosquee') {
+    if (urgent && p) {
+      return {
+        criteres: { categorie: 'mosquee', mode: 'pied', moment: 'maintenant', ouvertMaintenant: true },
+        raison: en
+          ? `${p.nom} is in ${p.minutes} minutes — I am looking for a prayer place you can reach on foot in time.`
+          : `${p.nom} est dans ${p.minutes} minutes — je cherche un lieu de prière que tu peux atteindre à pied à temps.`,
+      }
+    }
+    return {
+      criteres: { categorie: 'mosquee', mode: 'pied', moment: 'maintenant' },
+      raison: p
+        ? (en
+          ? `${p.nom} is in ${p.minutes} minutes — here are the closest prayer places.`
+          : `${p.nom} est dans ${p.minutes} minutes — voici les lieux de prière les plus proches.`)
+        : (en ? 'Here are the closest prayer places.' : 'Voici les lieux de prière les plus proches.'),
+    }
+  }
+
+  // 🎯 L'ONGLET QUE FAIRE : des activités, jamais un restaurant déguisé.
+  if (cat === 'activite') {
+    return {
+      criteres: { categorie: 'activite', mode: 'voiture' },
+      raison: tard
+        ? (en ? 'It is late — here is what is still open.' : "Il est tard — voici ce qui est encore ouvert.")
+        : (en ? 'Here is what is worth seeing around you right now.' : "Voici ce qui vaut le détour autour de toi, maintenant."),
+    }
+  }
+
+  // 🍽️ L'ONGLET MANGER : c'est ici, et seulement ici, que l'heure décide.
   if (urgent && p) {
     return {
-      criteres: { categorie: 'mosquee', mode: 'pied', moment: 'maintenant', ouvertMaintenant: true },
+      criteres: { categorie: 'manger', mode: 'pied', ouvertMaintenant: true, moment: 'maintenant' },
       raison: en
-        ? `${p.nom} is in ${p.minutes} minutes — I am looking for a prayer place you can reach on foot in time.`
-        : `${p.nom} est dans ${p.minutes} minutes — je cherche un lieu de prière que tu peux atteindre à pied à temps.`,
+        ? `${p.nom} is in ${p.minutes} minutes — I am looking for somewhere close enough to eat and still pray on time.`
+        : `${p.nom} est dans ${p.minutes} minutes — je cherche assez près pour manger et prier à l'heure.`,
     }
   }
   if (tard) {
