@@ -87,9 +87,53 @@ relever au prochain point.
 | /blog/ou-prier-parc-asterix | 7 | 3 | **2,4** | **42,9 %** |
 | / (accueil) | 1 | 1 | 7,0 | — |
 
+### E. 🏛️ TOTAL DE L'EMPIRE — 28 jours, tous appareils
+
+| Site | Impressions | Clics | Taux | Position |
+|---|---|---|---|---|
+| **voyageshalal.fr** | 6 440 | 72 | 1,1 % | 37,2 |
+| **halalgpt.fr** | 1 750 | 23 | 1,3 % | 19,5 |
+| **gohalaltravel.com** | 1 620 | 4 | 0,2 % | 32,2 |
+| halalcheck.fr | non relevé | — | — | — |
+| plateforme apprentissage | non relevé | — | — | — |
+| **TOTAL (3 sites sur 5)** | **9 810** | **99** | **1,0 %** | — |
+
+### F. LA MÊME VUE, MOBILE UNIQUEMENT — 28 jours
+
+| Site | Impressions | Clics | Taux | Position |
+|---|---|---|---|---|
+| voyageshalal.fr | 2 010 | 63 | 3,1 % | **9,2** |
+| halalgpt.fr | 1 240 | 21 | 1,7 % | **9,7** |
+| gohalaltravel.com | 461 | 3 | 0,7 % | 21,7 |
+| **TOTAL MOBILE** | **3 711** | **87** | **2,3 %** | — |
+
+> **Le mobile pèse 38 % des affichages et 88 % des clics.**
+> Le desktop apporte 6 099 impressions pour 12 clics. Sur voyageshalal
+> seul : 4 430 impressions desktop pour 9 clics.
+>
+> ➡️ **Le chiffre à piloter est celui du mobile : 3 711 impressions.**
+> Le total tous appareils est vrai mais flatteur — il gonfle sans jamais
+> se transformer en visite.
+
 ---
 
 ## 🔍 CE QUE CE RELEVÉ RÉVÈLE
+
+### 0. 🎯 L'OBJECTIF DES DOUZE MOIS EST DÉJÀ ATTEINT
+
+Mohamed avait fixé son seuil de satisfaction à **8 000 impressions et
+300 clics par mois, tous sites confondus, à horizon douze mois**.
+
+Au 15 août 2026, sur **trois sites seulement** : **9 810 impressions.**
+L'objectif d'impressions est dépassé avant même d'avoir commencé — il
+n'était pas mesuré, simplement parce que les sites étaient regardés un par
+un, jamais additionnés.
+
+Les clics, en revanche, sont à **99 sur 300** — un tiers du chemin.
+
+**Diagnostic : la visibilité est acquise, la conversion ne l'est pas.**
+C'est une bonne nouvelle : gagner en visibilité prend des mois et dépend de
+Google ; gagner en clic dépend des titres et se règle en quelques heures.
 
 ### 1. 🚀 LA CROISSANCE EST RÉCENTE ET FORTE
 
