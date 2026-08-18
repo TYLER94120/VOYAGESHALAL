@@ -983,7 +983,10 @@ export async function POST(req: Request) {
       // AVANT de choisir les trois. C'est l'ordre inverse qui avait laissé
       // passer un bistrot : on filtrait trop tard, ou pas du tout.
       // La catégorie « mosquée » n'a pas à passer par là.
-      const classes = c.categorie === 'mosquee' ? tries : await verifierAlcool(tries, cle, bilan)
+      // Le barrage alcool ne concerne que MANGER : un parc n'est ni halal
+      // ni pas halal (itération 4, correction 3) — et la vérification
+      // payante sur des musées était de l'argent jeté.
+      const classes = c.categorie === 'manger' ? await verifierAlcool(tries, cle, bilan) : tries
       const placesRetenues = classes.slice(0, Math.max(0, RETENUS - spots.length))
       // PASSE 2 : uniquement sur les retenues.
       const enrichies = await Promise.all(placesRetenues.map((x) => enrichir(x, cle, lang, origin, c.categorie)))
