@@ -10,7 +10,15 @@
 // Ancré sur la GÉOMÉTRIE DU DOCK (leçon des premières versions) :
 //   dock 10px + hauteur 62px + débord ➕ 30px + marge 12px = 114px + safe-area.
 // zIndex 90 : sous les panneaux du dock (98-99), jamais par-dessus.
+'use client'
+import { usePathname } from 'next/navigation'
+
 export default function HalalGPTFab({ en = false }: { en?: boolean }) {
+  // Sur le flux plein écran /spots, chaque pixel du bas droit appartient au
+  // rail et au CTA Itinéraire : la pastille s'efface plutôt que de les
+  // recouvrir (elle reste partout ailleurs).
+  const pathname = usePathname()
+  if (pathname?.startsWith('/spots')) return null
   const href = en ? '/halalgpt' : 'https://halalgpt.fr?utm_source=voyageshalal&utm_medium=passerelle&utm_campaign=bouton-flottant'
   const label = en ? 'Halal question? Ask HalalGPT' : 'Question halal ? Demander à HalalGPT'
   return (

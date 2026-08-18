@@ -109,7 +109,13 @@ export default function AjouterClient() {
         const body: Record<string, unknown> = { spotId: j.spot.id }
         if (pendingPhoto) body.photo = pendingPhoto
         if (pendingVideo) { body.video = pendingVideo.payload; body.videoTexte = pendingVideo.videoTexte; body.videoDebut = pendingVideo.videoDebut; body.videoFin = pendingVideo.videoFin }
-        fetch('/api/community/enrich', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) }).catch(() => {})
+        fetch('/api/community/enrich', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) })
+          .then(() => {
+            // 🔎 Claude lit la photo en arrière-plan (menu → prix réels).
+            // Fire-and-forget : un échec est silencieux, jamais bloquant.
+            if (pendingPhoto) fetch('/api/spots/ia', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ spotId: j.spot.id }) }).catch(() => {})
+          })
+          .catch(() => {})
         setMediaDone(true)
       }
       setDone({ points: j.pointsGagnes, badges: j.nouveauxBadges ?? [], impact: j.impact ?? 0, url: j.url, anon: j.anon === true, spotId: j.spot?.id, claimKey: j.claimKey, enAttente: j.spot?.status === 'pending' })
@@ -276,12 +282,19 @@ export default function AjouterClient() {
               </button>
             )}
           </div>
-          <textarea value={note} onChange={(e) => setNote(e.target.value)} maxLength={200} rows={2}
-            placeholder={en ? '✏️ A word for the next traveler… (e.g. "2nd floor, clean mat")' : '✏️ Un mot pour le prochain… (ex. « 2e étage, tapis propre »)'}
-            style={{ width: '100%', padding: 14, borderRadius: 14, border: '1.5px solid rgba(27,67,50,0.25)', fontSize: 15.5, margin: '0 0 12px', background: '#fff', resize: 'none' }} />
+          {/* 🔑 LA PHRASE « POURQUOI » EST OBLIGATOIRE (brief 2a, ≤ 80 car.) :
+              c'est elle qui rend le spot lisible en 2 secondes dans le flux.
+              Un spot sans raison d'exister n'aide personne. */}
+          <p style={{ fontSize: 13, fontWeight: 800, color: '#1b4332', letterSpacing: 1, textTransform: 'uppercase', margin: '2px 0 6px' }}>
+            {en ? 'Why is it a gem? (required)' : 'Pourquoi c\'est une pépite ? (obligatoire)'}
+          </p>
+          <textarea value={note} onChange={(e) => setNote(e.target.value)} maxLength={80} rows={2}
+            placeholder={en ? 'One sentence, e.g. "Full menu 10–20 €, family vibe, kids pool"' : 'Une phrase, ex. « Menu complet 10–20 €, cadre familial »'}
+            style={{ width: '100%', padding: 14, borderRadius: 14, border: '1.5px solid rgba(27,67,50,0.25)', fontSize: 15.5, margin: '0 0 4px', background: '#fff', resize: 'none' }} />
+          <p style={{ fontSize: 12, color: '#9ca3af', margin: '0 0 12px', textAlign: 'right' }}>{note.trim().length}/80</p>
 
-          <button onClick={() => void publier()} disabled={busy || (lieu.manuel && nom.trim().length < 3)}
-            style={{ ...big, opacity: lieu.manuel && nom.trim().length < 3 ? 0.5 : 1 }}>
+          <button onClick={() => void publier()} disabled={busy || (lieu.manuel && nom.trim().length < 3) || note.trim().length < 5}
+            style={{ ...big, opacity: (lieu.manuel && nom.trim().length < 3) || note.trim().length < 5 ? 0.5 : 1 }}>
             {busy ? '…' : (en ? '🚀 Publish' : '🚀 Publier')}
           </button>
 

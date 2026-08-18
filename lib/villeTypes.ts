@@ -137,6 +137,10 @@ export interface PrayerSpot {
   // « L'addition, s'il te plaît » : prix par personne RÉELLEMENT payés,
   // votés en 1 tap par les passants (b1 <5 € · b2 5-10 € · b3 10-20 € · b4 >20 €)
   prixVotes?: Record<string, number>
+  // Ligne d'extraction IA (« Claude a lu le menu : tacos ~7 € »). UNIQUEMENT
+  // ce que le modèle a LU sur une photo du spot — jamais une estimation.
+  // Absente = rien d'affiché. Écrite par /api/spots/ia, nulle part ailleurs.
+  ia?: { texte: string; date: string }
 }
 
 export interface VilleRoadTrip {

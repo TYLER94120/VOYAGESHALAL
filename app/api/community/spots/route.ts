@@ -90,7 +90,14 @@ export async function GET(request: NextRequest) {
       .filter((s) => (s as { distKm: number }).distKm <= radius)
       .sort((a, b) => (a as { distKm: number }).distKm - (b as { distKm: number }).distKm)
   } else {
-    spots = spots.sort((a, b) => (b.createdAt ?? '').localeCompare(a.createdAt ?? ''))
+    // Récence PONDÉRÉE par l'usage (brief 2a : « utile » pèse dans le
+    // classement) : chaque « ça m'a servi » vaut 6 h de fraîcheur, chaque
+    // confirmation 12 h. Un spot très utile remonte, sans jamais enterrer
+    // les nouveaux — le bonus est borné à 7 jours.
+    const H = 3600_000
+    const score = (s: (typeof spots)[number]) =>
+      (Date.parse(s.createdAt ?? '') || 0) + Math.min(7 * 24 * H, (s.utiles ?? 0) * 6 * H + (s.confirmations ?? 0) * 12 * H)
+    spots = spots.sort((a, b) => score(b) - score(a))
   }
   // Photo d'ambiance de la VILLE (libre de droits, fiche ville) pour les spots
   // sans média utilisateur — affichée avec le label « photo d'illustration ».
