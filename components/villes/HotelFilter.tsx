@@ -35,6 +35,10 @@ export default function HotelFilter({ hotels, mosques, restos, center, en: enPro
   const { lang } = useLanguage()
   const en = enProp ?? lang === 'en'
   const [open, setOpen] = useState(false)
+  // 🛏 ITÉRATION 5 : le choix par PRIORITÉ — le guide choisit pour le
+  // voyageur, l'annuaire (filtres + grille) n'est que le repli.
+  const [priorite, setPriorite] = useState<'mosquee' | 'budget' | 'famille'>('mosquee')
+  const [voirTous, setVoirTous] = useState(false)
   const [sort, setSort] = useState<SortKey>('reco')
   const [types, setTypes] = useState<Set<string>>(new Set())
   const [equip, setEquip] = useState<Set<string>>(new Set())
@@ -95,8 +99,99 @@ export default function HotelFilter({ hotels, mosques, restos, center, en: enPro
   const chip = (on: boolean): React.CSSProperties => ({ minHeight: 46, padding: '0 16px', borderRadius: 30, display: 'inline-flex', alignItems: 'center', border: `1.5px solid ${on ? 'var(--foret)' : 'rgba(27,67,50,0.25)'}`, background: on ? 'var(--foret)' : '#fff', color: on ? '#fff' : 'var(--foret)', fontWeight: 700, fontSize: 13, cursor: 'pointer' })
   const t = (fr: string, en2: string) => (en ? en2 : fr)
 
+  // Le top 3 de la priorité choisie. Un hôtel sans prix affichable descend
+  // en mode budget ; un hôtel sans coordonnées descend en mode mosquée.
+  const top3Prio = useMemo(() => {
+    const L = [...enriched]
+    if (priorite === 'mosquee') L.sort((a, b) => a.nearestMosqueKm - b.nearestMosqueKm)
+    else if (priorite === 'budget') {
+      L.sort((a, b) => {
+        const pa = typeof a.h.prixNuitEur === 'number' ? a.h.prixNuitEur : Infinity
+        const pb = typeof b.h.prixNuitEur === 'number' ? b.h.prixNuitEur : Infinity
+        const na = (noteOf(a.h) ?? 0) >= 4 ? 0 : 1, nb = (noteOf(b.h) ?? 0) >= 4 ? 0 : 1
+        return na - nb || pa - pb
+      })
+    } else {
+      const equipN = (e: Enriched) => equipList.filter((eq) => (EQUIP as any)[eq.id](e.h)).length
+      L.sort((a, b) => equipN(b) - equipN(a) || (noteOf(b.h) ?? 0) - (noteOf(a.h) ?? 0))
+    }
+    return L.slice(0, 3)
+  }, [enriched, priorite])
+
+  const m = (km: number) => (km < 1 ? `${Math.round(km * 1000)} m` : `${km.toFixed(1).replace('.', ',')} km`)
+  const atout = (e: Enriched): string => {
+    if (priorite === 'mosquee' && e.nearestMosqueKm !== Infinity) {
+      return `🕌 ${t('Mosquée à', 'Mosque at')} ${m(e.nearestMosqueKm)}${e.restosNear > 0 ? ` · ${e.restosNear} ${t('restos halal à pied', 'halal spots on foot')}` : ''}`
+    }
+    if (priorite === 'budget' && (noteOf(e.h) ?? 0) > 0) return `⭐ ${noteOf(e.h)} ${t('pour ce prix', 'for this price')}${e.nearestMosqueKm !== Infinity && e.nearestMosqueKm <= 1 ? ` · ${t('mosquée à', 'mosque at')} ${m(e.nearestMosqueKm)}` : ''}`
+    const eqs = equipList.filter((eq) => (EQUIP as any)[eq.id](e.h)).slice(0, 2).map((eq) => (en ? eq.en : eq.fr))
+    if (eqs.length) return `✓ ${eqs.join(' · ')}`
+    return e.restosNear > 0 ? `🍽 ${t('Resto halal à', 'Halal food at')} ${m(e.nearestRestoKm)} · ${e.restosNear} ${t('autres à pied', 'more on foot')}` : ''
+  }
+
+  const PRIOS: { id: typeof priorite; icone: string; fr: string; en: string }[] = [
+    { id: 'mosquee', icone: '🕌', fr: 'Près de la mosquée', en: 'Near the mosque' },
+    { id: 'budget', icone: '💰', fr: 'Petit budget', en: 'Low budget' },
+    { id: 'famille', icone: '👨‍👩‍👧', fr: 'Confort famille', en: 'Family comfort' },
+  ]
+
   return (
     <div>
+      {/* La question, puis 3 priorités — jamais un mur de filtres. */}
+      <p style={{ fontSize: 14.5, color: 'var(--texte-2)', margin: '0 0 12px' }}>
+        {t('Dis-nous ', 'Tell us ')}<strong style={{ color: 'var(--foret)' }}>{t('ce qui compte le plus', 'what matters most')}</strong>{t(' — on te montre les 3 meilleurs pour ça.', ' — we show the 3 best for that.')}
+      </p>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 10, marginBottom: 18 }}>
+        {PRIOS.map((p) => {
+          const on = priorite === p.id
+          return (
+            <button key={p.id} onClick={() => setPriorite(p.id)} aria-pressed={on}
+              style={{ minHeight: 92, borderRadius: 16, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 6, padding: '8px 6px', textAlign: 'center', lineHeight: 1.25, fontSize: 13.5, fontWeight: 600, cursor: 'pointer', border: `1.5px solid ${on ? 'var(--or)' : 'rgba(27,67,50,0.2)'}`, background: on ? 'rgba(201,168,76,0.16)' : '#fff', color: 'var(--foret)' }}>
+              <span style={{ fontSize: 22 }}>{p.icone}</span>{en ? p.en : p.fr}
+            </button>
+          )
+        })}
+      </div>
+
+      {top3Prio.map((e, i) => {
+        const h = e.h
+        const lien = h.halalBookingUrl || h.halal_booking_url || h.bookingUrl || h.booking_url
+        const sansAlcool = (EQUIP as any).sansAlcool?.(h)
+        return (
+          <div key={i} style={{ borderRadius: 18, marginBottom: 14, overflow: 'hidden', border: `1px solid ${i === 0 ? 'var(--or)' : 'rgba(27,67,50,0.12)'}`, background: '#fff' }}>
+            <div style={{ padding: '14px 16px 14px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                <span style={{ flexShrink: 0, width: 32, height: 32, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 15, background: i === 0 ? 'linear-gradient(135deg, #D9BE6C, var(--or))' : 'rgba(201,168,76,0.15)', color: i === 0 ? '#0A1509' : '#8A6D1E' }}>{i + 1}</span>
+                <p style={{ flex: 1, fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 19, color: 'var(--texte)', margin: 0 }}>{h.nom}</p>
+                {sansAlcool && <span style={{ flexShrink: 0, fontSize: 11, fontWeight: 700, padding: '5px 10px', borderRadius: 999, background: '#1F7A4A', color: '#fff', letterSpacing: '0.06em' }}>{t('SANS ALCOOL', 'NO ALCOHOL')}</span>}
+              </div>
+              <p style={{ fontSize: 13.5, color: 'var(--texte-2)', margin: '6px 0 0' }}>{noteOf(h) != null ? `★ ${noteOf(h)}` : ''}{categoryOf(h) ? ` · ${categoryOf(h)}` : ''}</p>
+              {atout(e) && (
+                <span style={{ display: 'inline-flex', alignItems: 'center', gap: 7, marginTop: 8, padding: '6px 12px', borderRadius: 999, background: 'rgba(201,168,76,0.13)', border: '1px solid rgba(201,168,76,0.3)', color: '#8A6D1E', fontSize: 13.5, fontWeight: 600 }}>{atout(e)}</span>
+              )}
+              <div style={{ display: 'flex', gap: 10, marginTop: 12, alignItems: 'center' }}>
+                {typeof h.prixNuitEur === 'number' && (
+                  <span style={{ fontFamily: "'Playfair Display', serif", fontSize: 19, fontWeight: 700, color: '#8A6D1E', whiteSpace: 'nowrap' }}>
+                    {h.prixNuitEur} € <small style={{ fontFamily: 'inherit', fontSize: 13, color: 'var(--texte-2)', fontWeight: 400 }}>/ {t('nuit', 'night')}</small>
+                  </span>
+                )}
+                {lien
+                  ? <a href={lien} target="_blank" rel="sponsored noopener noreferrer" style={{ flex: 1, minHeight: 52, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', borderRadius: 13, background: 'linear-gradient(135deg, #D9BE6C, var(--or))', color: '#0A1509', fontSize: 15.5, fontWeight: 700, textDecoration: 'none' }}>{t('Réserver', 'Book')}</a>
+                  : (h.mapsUrl || e.c) && <a href={h.mapsUrl || `https://maps.google.com/?q=${e.c!.lat},${e.c!.lng}`} target="_blank" rel="noopener noreferrer" style={{ flex: 1, minHeight: 52, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', borderRadius: 13, background: 'linear-gradient(135deg, #D9BE6C, var(--or))', color: '#0A1509', fontSize: 15.5, fontWeight: 700, textDecoration: 'none' }}>🗺 {t('Voir sur la carte', 'See on the map')}</a>}
+              </div>
+            </div>
+          </div>
+        )
+      })}
+
+      {!voirTous && (
+        <button onClick={() => setVoirTous(true)}
+          style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: 48, width: '100%', background: 'none', border: 'none', color: 'var(--texte-2)', fontSize: 14, fontWeight: 600, cursor: 'pointer', gap: 6, marginBottom: 8 }}>
+          {t(`Voir les ${hotels.length} hôtels ↓`, `See all ${hotels.length} hotels ↓`)}
+        </button>
+      )}
+
+      {voirTous && (<>
       {/* Barre repliée : 1 bouton → 1 feuille */}
       <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 16, flexWrap: 'wrap' }}>
         <button onClick={() => setOpen((o) => !o)} style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '11px 18px', borderRadius: 14, border: '1.5px solid var(--foret)', background: '#fff', color: 'var(--foret)', fontWeight: 800, fontSize: 14, cursor: 'pointer' }}>
@@ -170,8 +265,8 @@ export default function HotelFilter({ hotels, mosques, restos, center, en: enPro
                     identique partout n'aide personne à choisir. */}
                 {e.restosNear > 0 && (
                   <span style={{ background: 'rgba(201,168,76,0.18)', color: '#8A6D1E', fontSize: 11.5, fontWeight: 700, borderRadius: 20, padding: '4px 10px' }}>
-                    🍽 {e.nearestRestoKm < 1 ? `${Math.round(e.nearestRestoKm * 1000)} m` : `${e.nearestRestoKm.toFixed(1)} km`}
-                    {' · '}{e.restosNear} {t('à moins d’1 km', 'within 1 km')}
+                    🍽 {t('Resto halal à', 'Halal food at')} {e.nearestRestoKm < 1 ? `${Math.round(e.nearestRestoKm * 1000)} m` : `${e.nearestRestoKm.toFixed(1)} km`}
+                    {e.restosNear > 1 ? ` · ${e.restosNear - 1} ${t('autres à pied', 'more on foot')}` : ''}
                   </span>
                 )}
                 {equipList.filter((eq) => (EQUIP as any)[eq.id](h)).slice(0, 3).map((eq) => (
@@ -186,7 +281,7 @@ export default function HotelFilter({ hotels, mosques, restos, center, en: enPro
               <div style={{ display: 'flex', gap: 8 }}>
                 {(h.mapsUrl || e.c) && <a href={h.mapsUrl || `https://maps.google.com/?q=${e.c!.lat},${e.c!.lng}`} target="_blank" rel="noopener noreferrer" style={{ flex: 1, minHeight: 48, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', background: 'var(--halal-bg)', color: 'var(--halal-tx)', borderRadius: 12, fontSize: 13.5, fontWeight: 700, textDecoration: 'none' }}>🗺 {t('Carte', 'Map')}</a>}
                 {(h.halalBookingUrl || h.halal_booking_url) && <a href={h.halalBookingUrl || h.halal_booking_url} target="_blank" rel="sponsored noopener noreferrer" style={{ flex: 1, minHeight: 48, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', background: 'var(--foret)', color: 'var(--creme)', borderRadius: 12, textAlign: 'center', fontSize: 13, fontWeight: 700, textDecoration: 'none' }}>🕌 {t('Réserver halal', 'Book halal')}</a>}
-                {!(h.halalBookingUrl || h.halal_booking_url) && (h.bookingUrl || h.booking_url) && <a href={h.bookingUrl || h.booking_url} target="_blank" rel="sponsored noopener noreferrer" style={{ flex: 1, minHeight: 48, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', background: 'var(--booking)', color: '#fff', borderRadius: 12, textAlign: 'center', fontSize: 13, fontWeight: 700, textDecoration: 'none' }}>📖 {t('Réserver', 'Book')}</a>}
+                {!(h.halalBookingUrl || h.halal_booking_url) && (h.bookingUrl || h.booking_url) && <a href={h.bookingUrl || h.booking_url} target="_blank" rel="sponsored noopener noreferrer" style={{ flex: 1, minHeight: 48, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', background: 'linear-gradient(135deg, #D9BE6C, var(--or))', color: '#0A1509', borderRadius: 12, textAlign: 'center', fontSize: 13, fontWeight: 700, textDecoration: 'none' }}>📖 {t('Réserver', 'Book')}</a>}
               </div>
             </div>
           )
@@ -207,6 +302,7 @@ export default function HotelFilter({ hotels, mosques, restos, center, en: enPro
       {filtered.length === 0 && (
         <p style={{ textAlign: 'center', color: 'var(--texte-2)', padding: 24 }}>{t('Aucun hôtel ne correspond à ces filtres.', 'No hotel matches these filters.')}</p>
       )}
+      </>)}
     </div>
   )
 }
