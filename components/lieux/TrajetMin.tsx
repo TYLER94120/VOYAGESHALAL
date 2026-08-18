@@ -49,3 +49,34 @@ export default function TrajetMin({ f, en = false }: { f: { distanceM?: number; 
   if (typeof f.distanceM !== 'number') return null
   return <span>{f.distanceM < 1000 ? `${Math.round(f.distanceM)} m` : `${(f.distanceM / 1000).toFixed(1).replace('.', ',')} km`}</span>
 }
+
+
+/** 🟢🟠🔴 LE STATUT D'OUVERTURE — la donnée qui évite un déplacement pour
+ *  rien (itération 4, correction 6). Depuis opening_hours de Places :
+ *  ouvert (+ heure de fermeture), « ferme dans X min » quand < 1 h, fermé.
+ *  Aucune donnée = rien — jamais « non disponible ». */
+export function StatutOuverture({ f, en = false }: { f: { ouvert?: boolean; fermeA?: string }; en?: boolean }) {
+  if (f.ouvert === undefined) return null
+  const pastille = (couleur: string) => (
+    <span aria-hidden style={{ display: 'inline-block', width: 8, height: 8, borderRadius: 999, background: couleur, verticalAlign: '1px', marginRight: 6 }} />
+  )
+  if (f.ouvert === false) {
+    return <span style={{ color: '#E0776B', fontWeight: 600 }}>{pastille('#D6544A')}{en ? 'Closed' : 'Fermé'}</span>
+  }
+  // Ouvert : ferme bientôt ?
+  let dansMin: number | null = null
+  if (f.fermeA) {
+    const m = f.fermeA.match(/^(\d{1,2})[:h](\d{2})$/)
+    if (m) {
+      const now = new Date()
+      const fin = new Date(now); fin.setHours(Number(m[1]), Number(m[2]), 0, 0)
+      if (fin.getTime() < now.getTime()) fin.setDate(fin.getDate() + 1)
+      const d = Math.round((fin.getTime() - now.getTime()) / 60000)
+      if (d <= 60) dansMin = d
+    }
+  }
+  if (dansMin != null) {
+    return <span style={{ color: '#E8B45A', fontWeight: 600 }}>{pastille('#E0A340')}{en ? `Closes in ${dansMin} min` : `Ferme dans ${dansMin} min`}</span>
+  }
+  return <span style={{ color: '#6FD79C', fontWeight: 600 }}>{pastille('#4FD69C')}{en ? 'Open' : 'Ouvert'}{f.fermeA ? ` · ${en ? 'closes at' : 'ferme à'} ${f.fermeA}` : ''}</span>
+}

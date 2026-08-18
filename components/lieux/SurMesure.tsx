@@ -4,7 +4,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { CRITERES_DEFAUT, lireDemande, relance, resumerCriteres, type Categorie, type Criteres } from '@/lib/criteres'
 import { top3 } from '@/lib/top3.mjs'
-import TrajetMin from '@/components/lieux/TrajetMin'
+import TrajetMin, { StatutOuverture } from '@/components/lieux/TrajetMin'
 import { lancerItineraire } from '@/lib/itineraire'
 import { lireIntention } from '@/lib/villesIndex'
 import type { VilleLue } from '@/lib/lireVille.mjs'
@@ -1241,7 +1241,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
                 <FicheScooter key={f.id ?? i} f={f} i={i} en={en}
                   ouverte={!!f.id && f.id === ficheOuverte}
                   onInfo={() => { setFicheOuverte(f.id === ficheOuverte ? null : (f.id ?? null)); compter('fiches-ouvertes') }}
-                  onItineraire={() => { compter('itineraires'); lancerItineraire(f.lat, f.lng) }}
+                  onItineraire={() => { compter('itineraires'); lancerItineraire(f.lat, f.lng, typeof f.marcheMin === 'number' ? f.marcheMin <= 15 : undefined) }}
                   enfant={<Carte f={f} en={en} mode={mode} destination={!!destination}
                     allergie={mentionneAllergie(profil)} choisie
                     onItineraire={() => compter('itineraires')} />}
@@ -1270,7 +1270,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
                 <div onClick={(e) => e.stopPropagation()}
                   onTouchStart={(e) => { (e.currentTarget as HTMLElement & { _y?: number })._y = e.touches[0].clientY }}
                   onTouchMove={(e) => { const el = e.currentTarget as HTMLElement & { _y?: number }; if (el._y != null && e.touches[0].clientY - el._y > 55) { setFeuilleEnvies(false); el._y = undefined } }}
-                  style={{ width: '100%', maxWidth: 430, borderRadius: '22px 22px 0 0', background: '#0D1D12', borderTop: '1px solid rgba(201,168,76,0.26)', padding: '10px 18px calc(20px + env(safe-area-inset-bottom))' }}>
+                  style={{ width: '100%', maxWidth: 430, borderRadius: '22px 22px 0 0', background: '#0D1D12', borderTop: '1px solid rgba(201,168,76,0.26)', padding: '10px 18px calc(20px + env(safe-area-inset-bottom))', maxHeight: '72svh', overflowY: 'auto', overscrollBehavior: 'contain' }}>
                   <div aria-hidden style={{ width: 42, height: 4, borderRadius: 999, background: 'rgba(253,250,243,0.25)', margin: '3px auto 8px' }} />
                   <h3 style={{ fontFamily: "'Playfair Display', Georgia, serif", color: '#fdfaf3', fontSize: 21, fontWeight: 700, margin: 0, padding: '6px 4px 14px' }}>
                     {t('Une envie précise ?', 'Craving something specific?')}
@@ -1450,6 +1450,12 @@ function FicheScooter({ f, i, en, ouverte, onInfo, onItineraire, enfant }: {
     <div style={{ borderRadius: 18, overflow: 'hidden', border: `1px solid ${premier ? 'var(--or)' : 'rgba(201,168,76,0.14)'}`, background: 'linear-gradient(165deg, rgba(253,250,243,0.05), rgba(253,250,243,0.012))' }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '14px 16px 0' }}>
         <span style={{ flexShrink: 0, width: 38, height: 38, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: "'Playfair Display', Georgia, serif", fontSize: 17, fontWeight: 700, ...(premier ? { background: 'linear-gradient(135deg, #D9BE6C, var(--or))', color: '#0A1509' } : { color: 'var(--or-clair, #E9D9A6)', border: '1px solid rgba(201,168,76,0.26)' }) }}>{i + 1}</span>
+        {/* 🖼️ On choisit plus vite avec l'œil : miniature Places (proxy —
+            la clé ne sort jamais), dégradé forêt si absente. */}
+        {f.photos?.[0]
+          // eslint-disable-next-line @next/next/no-img-element
+          ? <img src={f.photos[0]} alt="" loading="lazy" style={{ flexShrink: 0, width: 72, height: 72, objectFit: 'cover', borderRadius: 14 }} />
+          : <span aria-hidden style={{ flexShrink: 0, width: 72, height: 72, borderRadius: 14, background: 'linear-gradient(150deg, #1B4332, #0B1A0F)' }} />}
         <span style={{ flex: 1, minWidth: 0, color: '#fdfaf3', fontSize: 18, fontWeight: 700, overflowWrap: 'anywhere' }}>{f.nom}</span>
         {f.statut === 'verifie' && (
           <span style={{ flexShrink: 0, fontSize: 11, fontWeight: 700, padding: '5px 10px', borderRadius: 999, background: '#1F7A4A', color: '#fff', letterSpacing: '0.08em' }}>{en ? 'VERIFIED' : 'VÉRIFIÉ'}</span>
@@ -1463,6 +1469,8 @@ function FicheScooter({ f, i, en, ouverte, onInfo, onItineraire, enfant }: {
       <p style={{ margin: 0, padding: '4px 16px 0 66px', fontSize: 15, color: 'rgba(253,250,243,0.68)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
         {metaTxt}{metaTxt ? ' · ' : ''}<TrajetMin f={f} en={en} />
       </p>
+      {/* 🟢 LA donnée qui évite un déplacement pour rien. */}
+      <p style={{ margin: 0, padding: '3px 16px 0 66px', fontSize: 14 }}><StatutOuverture f={f} en={en} /></p>
       <div style={{ display: 'flex', gap: 10, padding: '12px 16px 14px' }}>
         <button onClick={onItineraire}
           style={{ flex: 1, minHeight: 56, borderRadius: 14, border: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 9, background: 'linear-gradient(135deg, #D9BE6C, var(--or))', color: '#0A1509', fontSize: 16, fontWeight: 700, cursor: 'pointer' }}>

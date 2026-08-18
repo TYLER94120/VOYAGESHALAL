@@ -7,7 +7,7 @@ import { computePrayerTimesFull } from '@/lib/prayerCalc'
 import SurMesure, { type Fiche } from '@/components/lieux/SurMesure'
 import { top3 } from '@/lib/top3.mjs'
 import { typeMot } from '@/lib/typeMot.mjs'
-import TrajetMin from '@/components/lieux/TrajetMin'
+import TrajetMin, { StatutOuverture } from '@/components/lieux/TrajetMin'
 import { lancerItineraire } from '@/lib/itineraire'
 
 // 🗺️ « AUTOUR DE MOI » — LA MÊME RECHERCHE, EN VUE CARTE.
@@ -227,7 +227,7 @@ export default function AutourDeMoiPage() {
       // 🛵 Itération 2, correction 4 : toucher une épingle OUVRE
       // L'ITINÉRAIRE, directement — arrêté au bord de la route, la fiche
       // est une étape de trop. Elle reste accessible via ℹ sur la liste.
-      mk.on('click', () => lancerItineraire(f.lat, f.lng))
+      mk.on('click', () => lancerItineraire(f.lat, f.lng, typeof (f as { marcheMin?: number }).marcheMin === 'number' ? (f as { marcheMin?: number }).marcheMin! <= 15 : undefined))
       marqueurs.current.push({ id: f.id, marker: mk, rang: i + 1 })
     })
     if (aPeindre.length) {
@@ -366,7 +366,7 @@ export default function AutourDeMoiPage() {
             <button key={f.id} className="carte-tiroir-ligne"
               /* 🛵 Correction 4 : le tap OUVRE L'ITINÉRAIRE, directement —
                  la fiche détail vit sur l'écran liste, derrière ℹ. */
-              onClick={() => lancerItineraire(f.lat, f.lng)}>
+              onClick={() => lancerItineraire(f.lat, f.lng, typeof f.marcheMin === 'number' ? f.marcheMin <= 15 : undefined)}>
               <span className="carte-tiroir-rang">{i + 1}</span>
               <span className="carte-tiroir-txt">
                 {/* Jamais tronqué au point d'être illisible : 24 caractères puis … */}
@@ -377,6 +377,7 @@ export default function AutourDeMoiPage() {
                   {typeof f.prix === 'number' && f.prix > 0 ? ` · ${'€'.repeat(f.prix)}` : ''}
                   {' · '}<TrajetMin f={f} />
                 </span>
+                <span style={{ fontSize: 13 }}><StatutOuverture f={f} /></span>
               </span>
               <span className="carte-tiroir-go" aria-hidden>
                 <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round"><path d="M12 2.5 21 21.5 12 17l-9 4.5z" /></svg>
