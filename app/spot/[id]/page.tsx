@@ -109,7 +109,7 @@ export default async function SpotPage({ params }: Props) {
   }
 
   return (
-    <main style={{ minHeight: '100vh', background: 'var(--creme)' }}>
+    <main style={{ minHeight: '100dvh', background: 'var(--creme)' }}>
       <JsonLd data={place} />
       <JsonLd data={breadcrumb} />
       <div style={{ maxWidth: 560, margin: '0 auto', padding: '24px 16px 70px' }}>

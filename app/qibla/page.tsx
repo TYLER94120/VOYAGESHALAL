@@ -22,7 +22,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function QiblaPage() {
   const { isEN: en } = await getDomainSEO()
   return (
-    <main style={{ minHeight: '100vh', background: 'var(--creme)' }}>
+    <main style={{ minHeight: '100dvh', background: 'var(--creme)' }}>
       {/* ‹ correction 5 : chaque écran secondaire a son retour, pile réelle */}
       <BoutonRetour clair />
       {/* Le titre occupait 40 % du premier écran : l'outil commençait sous la

@@ -20,7 +20,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function CommunautePage() {
   const { isEN: en } = await getDomainSEO()
   return (
-    <main style={{ minHeight: '100vh', background: 'var(--creme)' }}>
+    <main style={{ minHeight: '100dvh', background: 'var(--creme)' }}>
       <section className="relative overflow-hidden text-center" style={{ background: 'var(--nuit)', padding: '2.5rem 1.25rem 2rem' }}>
         <IslamicPattern opacity={0.06} />
         <div className="relative z-10" style={{ maxWidth: 560, margin: '0 auto' }}>

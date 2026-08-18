@@ -38,7 +38,7 @@ export default async function ProfilPage({ params }: Props) {
   const card = { background: '#fff', borderRadius: 18, border: '1px solid rgba(27,67,50,0.1)', padding: 18 } as const
 
   return (
-    <main style={{ minHeight: '100vh', background: 'var(--creme)' }}>
+    <main style={{ minHeight: '100dvh', background: 'var(--creme)' }}>
       {/* En-tête profil */}
       <section style={{ background: 'var(--nuit)', padding: '2.2rem 1.25rem', textAlign: 'center' }}>
         <div style={{ width: 76, height: 76, borderRadius: '50%', background: 'var(--or)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', fontSize: 34, marginBottom: 10 }}>

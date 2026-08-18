@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useLanguage } from '@/components/i18n/LanguageProvider'
@@ -40,6 +40,30 @@ export default function BottomNav() {
     return () => window.removeEventListener('popstate', onPop)
   }, [])
   const [glisse, setGlisse] = useState<number | null>(null)
+
+  // 📌 CORRECTION 7 — « la barre du bas disparaît parfois » (iPhone).
+  // Sur Safari iOS, un élément `position: fixed` est peint par rapport au
+  // LAYOUT viewport ; quand le clavier vient de se fermer ou que la barre
+  // d'outils Safari se déploie, le viewport VISUEL est plus court, et la
+  // nav reste dessinée sous l'écran — on n'en voit que le bord supérieur.
+  // On la recale donc sur le viewport visuel à chaque changement :
+  // bottom = 10px + safe-area + (hauteur cachée sous le viewport visuel).
+  const navRef = useRef<HTMLElement | null>(null)
+  useEffect(() => {
+    const vv = window.visualViewport
+    const el = navRef.current
+    if (!vv || !el) return
+    const cale = () => {
+      const cache = Math.max(0, window.innerHeight - vv.height - vv.offsetTop)
+      el.style.bottom = cache > 1
+        ? `calc(10px + env(safe-area-inset-bottom, 0px) + ${Math.round(cache)}px)`
+        : '' // état normal : la valeur de la feuille de style fait foi
+    }
+    vv.addEventListener('resize', cale)
+    vv.addEventListener('scroll', cale)
+    cale()
+    return () => { vv.removeEventListener('resize', cale); vv.removeEventListener('scroll', cale) }
+  }, [])
 
   const tools = [
     // La ville a quitté cette liste : Mohamed — « je ne vois pas à quoi sert
@@ -96,7 +120,7 @@ export default function BottomNav() {
         </>
       )}
 
-      <nav className="bottom-nav">
+      <nav className="bottom-nav" ref={navRef}>
         {/* 🔵 CINQ ENTRÉES ÉGALES — brief du 17 août : « plus de blob
             central ». Le rond doré surélevé attirait le pouce, mais il
             cassait la grille et laissait croire à une action spéciale là où

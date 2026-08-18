@@ -60,7 +60,7 @@ export default async function HotelsPage() {
   const verifies = loadVerifies()
 
   return (
-    <main style={{ background: 'var(--nuit)', minHeight: '100vh', padding: '26px 16px 80px' }}>
+    <main style={{ background: 'var(--nuit)', minHeight: '100dvh', padding: '26px 16px 80px' }}>
       <div style={{ maxWidth: 640, margin: '0 auto' }}>
         <p style={{ color: 'var(--or)', fontSize: 12, fontWeight: 800, letterSpacing: 3, textTransform: 'uppercase', margin: 0 }}>
           {en ? 'Halal hotels · HalalBooking only' : 'Hôtels halal · 100 % HalalBooking'}

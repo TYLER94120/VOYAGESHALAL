@@ -84,7 +84,7 @@ export default async function GuideVivantPage({ params }: Props) {
   }
 
   return (
-    <main style={{ minHeight: '100vh', background: 'var(--creme)' }}>
+    <main style={{ minHeight: '100dvh', background: 'var(--creme)' }}>
       <JsonLd data={itemList} />
       {/* En-tête sombre, photo d'ambiance de la ville si disponible */}
       <section style={{ position: 'relative', background: 'var(--nuit)', padding: '34px 18px 26px', overflow: 'hidden' }}>

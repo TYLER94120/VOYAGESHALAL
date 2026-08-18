@@ -30,7 +30,7 @@ export default async function MentionsLegalesPage() {
   const h2 = { fontFamily: 'var(--font-playfair), Georgia, serif', color: '#1b4332', fontSize: 20, fontWeight: 800, margin: '28px 0 8px' } as const
   const p = { fontSize: 14.5, color: '#374151', lineHeight: 1.75, margin: '0 0 10px' } as const
   return (
-    <main style={{ background: 'var(--creme)', minHeight: '100vh' }}>
+    <main style={{ background: 'var(--creme)', minHeight: '100dvh' }}>
       <div style={{ maxWidth: 720, margin: '0 auto', padding: '48px 20px 80px' }}>
         <h1 style={{ fontFamily: 'var(--font-playfair), Georgia, serif', color: '#0b1a0f', fontSize: 32, fontWeight: 900, marginBottom: 8 }}>
           {en ? 'Legal notice' : 'Mentions légales'}

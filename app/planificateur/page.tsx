@@ -42,7 +42,7 @@ export default async function PlanificateurPage() {
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
   }
   return (
-    <main style={{ minHeight: '100vh', background: 'var(--creme)' }}>
+    <main style={{ minHeight: '100dvh', background: 'var(--creme)' }}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }} />
       <section className="relative overflow-hidden text-center" style={{ background: 'var(--nuit)', padding: '3.5rem 1.5rem 2.5rem' }}>
         <IslamicPattern opacity={0.06} />

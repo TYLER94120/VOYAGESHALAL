@@ -61,7 +61,7 @@ export default function AdminSpotsPage() {
   const enAttente = spots?.filter((s) => s.status === 'pending').length ?? 0
 
   return (
-    <main style={{ minHeight: '100vh', background: 'var(--creme)', padding: '26px 16px 80px' }}>
+    <main style={{ minHeight: '100dvh', background: 'var(--creme)', padding: '26px 16px 80px' }}>
       <div style={{ maxWidth: 640, margin: '0 auto' }}>
         <h1 style={{ fontFamily: "'Playfair Display', serif", fontSize: 26, fontWeight: 900, color: '#0b1a0f', margin: '0 0 4px' }}>🧹 Modération des spots</h1>
         <p style={{ color: '#6b7280', fontSize: 14, margin: '0 0 16px' }}>Supprime les mauvaises adresses — définitif, réfléchis avant de taper.</p>

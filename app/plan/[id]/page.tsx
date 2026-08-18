@@ -39,7 +39,7 @@ export default async function PlanPage({ params }: Props) {
   if (!plan) notFound()
 
   return (
-    <main style={{ minHeight: '100vh', background: 'var(--creme)' }} className="px-4 py-10">
+    <main style={{ minHeight: '100dvh', background: 'var(--creme)' }} className="px-4 py-10">
       <PlanView plan={plan} />
       <p className="text-center text-sm mt-2">
         <Link href={localizedHref('/planificateur', en)} className="font-bold underline" style={{ color: '#1a3a2a' }}>

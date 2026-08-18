@@ -26,7 +26,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function QuizPage() {
   const { isEN: en } = await getDomainSEO()
   return (
-    <main style={{ minHeight: '100vh', background: 'var(--creme)' }}>
+    <main style={{ minHeight: '100dvh', background: 'var(--creme)' }}>
       <section className="relative overflow-hidden text-center" style={{ background: 'var(--nuit)', padding: '3rem 1.5rem 2.25rem' }}>
         <IslamicPattern opacity={0.06} />
         <div className="relative z-10">

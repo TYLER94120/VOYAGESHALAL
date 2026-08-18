@@ -23,7 +23,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function CarnetPage() {
   const { isEN: en } = await getDomainSEO()
   return (
-    <main style={{ minHeight: '100vh', background: 'var(--creme)' }}>
+    <main style={{ minHeight: '100dvh', background: 'var(--creme)' }}>
       {/* ‹ correction 5 : chaque écran secondaire a son retour, pile réelle */}
       <BoutonRetour clair />
       <section className="relative overflow-hidden text-center" style={{ background: 'var(--nuit)', padding: '3rem 1.5rem 2.25rem' }}>
