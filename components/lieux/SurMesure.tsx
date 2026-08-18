@@ -1485,7 +1485,9 @@ function Carte({ f, en, mode, destination, allergie, choisie = false, onChoisir,
   // §5.1 et §5.2 : le temps est TOUJOURS accompagné de son mode, et
   // jamais « 91 min à pied » — au-delà de 20 minutes, on bascule sur la
   // voiture. §5.6 : sur une fiche ville, le repère est le centre.
-  const dist = trajet(f.distanceM, mode, en, destination)
+  // Itération 4, correction 5 : plus de « ≈ » calculé — les MÊMES temps
+  // réels que la liste (ou des mètres), une seule source de vérité.
+  const dist = <TrajetMin f={f} en={en} />
   return (
     // 🔗 La fiche choisie porte le même liseré doré que son épingle
     // grossit sur la carte : c'est une seule sélection, vue des deux côtés.
@@ -1510,7 +1512,13 @@ function Carte({ f, en, mode, destination, allergie, choisie = false, onChoisir,
           {f.ouvert === false && <span style={{ color: 'rgba(253,250,243,0.6)', fontWeight: 700 }}> · {t('fermé', 'closed')}</span>}
         </p>
         {f.adresse && <p style={{ color: 'rgba(253,250,243,0.6)', fontSize: 12.5, margin: '4px 0 0' }}>{f.adresse}</p>}
-        <p style={{ color: 'var(--or)', fontSize: 12.5, fontWeight: 700, margin: '6px 0 0' }}>{f.statut}</p>
+        {/* Itération 4 : les mentions techniques (« référencée sur Google
+            Maps — à vérifier », « trouvée sur Google Maps ») quittent la
+            fiche — ne restent que les statuts qui disent quelque chose :
+            vérifié, communauté, ou « signalé halal ». */}
+        {!/référencée sur Google Maps|trouvée sur Google Maps|à vérifier selon tes critères/.test(f.statut) && (
+          <p style={{ color: 'var(--or)', fontSize: 12.5, fontWeight: 700, margin: '6px 0 0' }}>{f.statut}</p>
+        )}
         {/* 🔴 §6 — une ligne alcool sur CHAQUE fiche, jamais optionnelle.
             Verte quand Google l'affirme, ambre quand on ne sait pas : on
             ne rassure jamais à tort. */}
