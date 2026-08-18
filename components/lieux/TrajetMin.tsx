@@ -13,7 +13,7 @@
 function Ic({ d }: { d: string }) {
   return (
     <svg viewBox="0 0 24 24" width={15} height={15} fill="none" stroke="currentColor" strokeWidth={1.8}
-      strokeLinecap="round" strokeLinejoin="round" style={{ verticalAlign: '-2px' }} aria-hidden>
+      strokeLinecap="round" strokeLinejoin="round" style={{ display: 'inline-block', verticalAlign: '-2px' }} aria-hidden>
       <path d={d} />
     </svg>
   )
@@ -34,7 +34,7 @@ export default function TrajetMin({ f, en = false }: { f: { distanceM?: number; 
   const aVoiture = typeof f.voitureMin === 'number'
   if (aMarche || aVoiture) {
     return (
-      <span>
+      <span style={{ whiteSpace: 'nowrap' }}>
         {aMarche && (
           <span aria-label={en ? 'on foot' : 'à pied'}><Ic d={D_MARCHE} /> {f.marcheMin} min</span>
         )}

@@ -1426,7 +1426,7 @@ function FicheScooter({ f, i, en, ouverte, onInfo, onItineraire, enfant }: {
       {f.titreIA && (
         <p style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: 'italic', fontSize: 17, color: 'var(--or-clair, #E9D9A6)', margin: 0, padding: '6px 16px 0 66px' }}>{f.titreIA}</p>
       )}
-      <p style={{ margin: 0, padding: '4px 16px 0 66px', fontSize: 15, color: 'rgba(253,250,243,0.68)' }}>
+      <p style={{ margin: 0, padding: '4px 16px 0 66px', fontSize: 15, color: 'rgba(253,250,243,0.68)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
         {metaTxt}{metaTxt ? ' · ' : ''}<TrajetMin f={f} en={en} />
       </p>
       <div style={{ display: 'flex', gap: 10, padding: '12px 16px 14px' }}>
