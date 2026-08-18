@@ -57,9 +57,7 @@ export default function BottomNav() {
     if (!vv || !el) return
     const cale = () => {
       const cache = Math.max(0, window.innerHeight - vv.height - vv.offsetTop)
-      el.style.bottom = cache > 1
-        ? `calc(10px + env(safe-area-inset-bottom, 0px) + ${Math.round(cache)}px)`
-        : '' // état normal : la valeur de la feuille de style fait foi
+      el.style.bottom = cache > 1 ? `${Math.round(cache)}px` : '' // collée au bord sinon
     }
     vv.addEventListener('resize', cale)
     vv.addEventListener('scroll', cale)
@@ -100,12 +98,12 @@ export default function BottomNav() {
       {toolsOpen && (
         <>
           {/* Le voile s'arrête AU-DESSUS de la barre : les 5 onglets restent cliquables */}
-          <div onClick={() => fermerOutils()} style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 'calc(86px + env(safe-area-inset-bottom, 0px))', background: 'rgba(0,0,0,0.45)', zIndex: 98 }} />
+          <div onClick={() => fermerOutils()} style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 'calc(76px + env(safe-area-inset-bottom, 0px))', background: 'rgba(0,0,0,0.45)', zIndex: 98 }} />
           <div
             onTouchStart={(e) => setGlisse(e.touches[0].clientY)}
             onTouchMove={(e) => { if (glisse != null && e.touches[0].clientY - glisse > 55) { setGlisse(null); fermerOutils() } }}
             onTouchEnd={() => setGlisse(null)}
-            style={{ position: 'fixed', left: 10, right: 10, bottom: 'calc(86px + env(safe-area-inset-bottom, 0px))', zIndex: 99, background: '#fff', borderRadius: 22, padding: '14px 14px calc(10px)', boxShadow: '0 -10px 40px rgba(0,0,0,0.2)' }}>
+            style={{ position: 'fixed', left: 10, right: 10, bottom: 'calc(76px + env(safe-area-inset-bottom, 0px))', zIndex: 99, background: '#fff', borderRadius: 22, padding: '14px 14px calc(10px)', boxShadow: '0 -10px 40px rgba(0,0,0,0.2)' }}>
             <div aria-hidden style={{ width: 44, height: 4, borderRadius: 99, background: 'rgba(11,26,15,0.25)', margin: '0 auto 10px' }} />
             <p style={{ margin: '2px 4px 10px', fontWeight: 900, fontSize: 15, color: '#0b1a0f' }}>🧰 {en ? 'All tools' : 'Tous les outils'}</p>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 }}>

@@ -28,7 +28,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function HorairesPrierePage() {
   const { isEN: en } = await getDomainSEO()
   return (
-    <main style={{ backgroundColor: '#fdfaf3' }}>
+    <main style={{ backgroundColor: '#fdfaf3', minHeight: '100svh' }}>
       {/* ‹ correction 5 (retour, pile réelle) + correction 6 : le raccourci
           Qibla vit en haut à droite de la page Prière — pilule dorée
           discrète, boussole + libellé, cible ≥ 52 px. */}
