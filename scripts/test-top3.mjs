@@ -32,5 +32,15 @@ const M = [
 ]
 check(top3(M, 'mosquee')[0].id === 'm2', 'Prier : la fermée toute proche ne bat pas l’ouverte')
 
+// Itération 3 : les minutes réelles priment sur le vol d'oiseau — un lieu
+// à 300 m à vol d'oiseau mais 20 min de marche réelle (fleuve, voie ferrée)
+// ne bat pas un lieu à 600 m atteint en 8 min.
+const T = [
+  { id: 't1', lat: 1, lng: 1, distanceM: 300, marcheMin: 20, voitureMin: 9, note: 4.2, nbAvis: 100, prix: 2 },
+  { id: 't2', lat: 1, lng: 1, distanceM: 600, marcheMin: 8, note: 4.2, nbAvis: 100, prix: 2 },
+  { id: 't3', lat: 1, lng: 1, distanceM: 2000, marcheMin: 26, voitureMin: 7, note: 4.2, nbAvis: 100, prix: 2 },
+]
+check(top3(T, 'manger')[0].id === 't2', 'les minutes réelles priment : 8 min de marche bat 300 m à vol d’oiseau')
+
 if (ko) { console.error(`${ko} promesse(s) du podium cassée(s)`); process.exit(1) }
 console.log('✅ top 3 : l’équilibre se calcule, 3 avis ne font pas une vérité, la fermée ne prie pour personne.')

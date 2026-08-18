@@ -1014,7 +1014,7 @@ export async function POST(req: Request) {
   // ⏱️ Les minutes réelles (règle actée : ≤ 15 min → marche, sinon voiture).
   // 1,5 s maximum, échec silencieux — et elles entrent dans le cache avec
   // les fiches : un cache-hit ne repaie jamais Routes.
-  await ajouterMinutes(fiches, { lat, lng })
+  await ajouterMinutes(fiches, { lat, lng }, r)
 
   const reponse = {
     fiches, autres, source, etatGoogle,
