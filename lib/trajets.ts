@@ -36,9 +36,19 @@ async function matrice(cle: string, origine: { lat: number; lng: number }, dests
       origins: [{ waypoint: { location: { latLng: { latitude: origine.lat, longitude: origine.lng } } } }],
       destinations: dests.map((d) => ({ waypoint: { location: { latLng: { latitude: d.lat, longitude: d.lng } } } })),
       travelMode: mode,
+      // 🚗 Itération 4, correction 5 : le temps voiture tient compte du
+      // TRAFIC MAINTENANT (departure = maintenant implicite avec
+      // TRAFFIC_AWARE) — « ≈ 5 min » calculés qui font 10 en vrai, terminé.
+      ...(mode === 'DRIVE' ? { routingPreference: 'TRAFFIC_AWARE' } : {}),
     }),
   })
-  if (!r.ok) throw new Error(`routes ${r.status}`)
+  if (!r.ok) {
+    // 🔊 Le repli en mètres est HONNÊTE mais il doit se VOIR côté serveur :
+    // une API Routes pas activée sur la clé resterait sinon invisible.
+    const corps = await r.text().catch(() => '')
+    console.error(`[trajets] Routes API ${mode} a refusé : ${r.status} — ${corps.slice(0, 300).replace(/[A-Za-z0-9_-]{30,}/g, '···')}`)
+    throw new Error(`routes ${r.status}`)
+  }
   const rows = (await r.json()) as { destinationIndex?: number; duration?: string; distanceMeters?: number; condition?: string }[]
   const out: (Mesure | null)[] = dests.map(() => null)
   for (const el of rows ?? []) {
@@ -99,5 +109,7 @@ export async function ajouterMinutes(fiches: Dest[], origine: { lat: number; lng
         r.set(cacheCle(f), { ...(f.marcheMin != null ? { m: f.marcheMin } : {}), ...(f.voitureMin != null ? { v: f.voitureMin } : {}) }, { ex: 120 }).catch(() => {})
       }
     })
-  } catch { /* Routes muet : le client affichera les mètres — jamais une estimation */ } finally { clearTimeout(t) }
+  } catch (e) {
+    console.error('[trajets] minutes réelles indisponibles (repli mètres) :', e instanceof Error ? e.message : e)
+  } finally { clearTimeout(t) }
 }
