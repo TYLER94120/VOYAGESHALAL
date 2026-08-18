@@ -6,6 +6,7 @@ import { CRITERES_DEFAUT, lireDemande, relance, resumerCriteres, type Categorie,
 import { top3 } from '@/lib/top3.mjs'
 import TrajetMin, { StatutOuverture } from '@/components/lieux/TrajetMin'
 import { lancerItineraire } from '@/lib/itineraire'
+import { appelerLieux } from '@/lib/appelLieux'
 import { lireIntention } from '@/lib/villesIndex'
 import type { VilleLue } from '@/lib/lireVille.mjs'
 import { trajet, type Mode } from '@/lib/trajet'
@@ -49,6 +50,7 @@ export interface Fiche {
   adresse?: string; telephone?: string; mapsUri?: string
   photos?: string[]; attributionsPhotos?: string[]; avis?: Avis[]; resume?: string
   attributs?: Record<string, boolean | undefined>
+  famille?: string
   titreIA?: string
   conseilIA?: string
   marcheMin?: number; voitureMin?: number
@@ -493,11 +495,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
       const to = setTimeout(() => ac.abort(), 20_000)
       let corps: { fiches?: Fiche[]; autres?: Fiche[]; source?: string; etatGoogle?: 'ok' | 'vide' | 'muet' | 'sans-cle'; mode?: Mode; plafondMin?: number; rayonKm?: number; rayonAtteintKm?: number; ecartesAlcool?: number; relaches?: string[]; motManquant?: string | null } = {}
       try {
-        const r = await fetch('/api/lieux', {
-          method: 'POST', signal: ac.signal,
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ lat: pos.lat, lng: pos.lng, criteres: c, lang: en ? 'en' : 'fr', ecrit, profil }),
-        })
+        const r = await appelerLieux({ lat: pos.lat, lng: pos.lng, criteres: c, lang: en ? 'en' : 'fr', ecrit, profil }, ac.signal)
         if (r.status === 429) {
           // NOTRE plafond, pas celui de Google. On le dit tel quel, avec le
           // délai réel renvoyé par le serveur.

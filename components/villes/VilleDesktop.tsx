@@ -4,7 +4,7 @@ import { verdictHalal, phraseHalal } from '@/lib/halalPrudent.mjs'
 import { cuisineCategory, CATEGORY_ORDER } from '@/lib/cuisineCategory'
 import PriereVille from '@/components/villes/PriereVille'
 import BoutonRetour from '@/components/layout/BoutonRetour'
-import SurMesure from '@/components/lieux/SurMesure'
+import SectionMagazine from '@/components/villes/SectionMagazine'
 import { infoPratiqueEn } from '@/lib/infoPratiqueEn'
 import { enLabel, countryEn } from '@/lib/poiI18n'
 import { useState, useRef } from 'react'
@@ -627,12 +627,8 @@ export default function VilleDesktop({ ville }: { ville: any }) {
             {/* Le moteur vit en contexte NUIT : on ré-ancre les vraies
                 valeurs sombres, que le wrapper du guide avait retraduites. */}
             {centerLL && (
-              <div style={{ background: '#0B1A0F', borderRadius: 20, padding: '14px 12px 16px', marginBottom: 20, ['--nuit' as string]: '#0B1A0F', ['--creme' as string]: '#FDFAF3', ['--texte' as string]: '#FDFAF3', ['--texte-2' as string]: 'rgba(253,250,243,0.65)', ['--foret' as string]: '#1B4332' }}>
-                <SurMesure
-                  scooter fondu en={en}
-                  destination={{ lat: centerLL.lat, lng: centerLL.lng, nom: ville.nom }}
-                  chercheDesLOuverture="manger"
-                />
+              <div style={{ marginBottom: 20 }}>
+                <SectionMagazine destination={{ lat: centerLL.lat, lng: centerLL.lng, nom: ville.nom }} categorie="manger" en={en} />
               </div>
             )}
             {/* BLOC 6 — honnêteté d'échelle : pas de data réelle → on le DIT */}
@@ -794,12 +790,8 @@ export default function VilleDesktop({ ville }: { ville: any }) {
             {activites.length > 0 && <span style={{ fontSize: 13, color: 'var(--texte-2)' }}>{activites.length} {en ? 'activities' : 'activités'}</span>}
           </div>
           {centerLL && (
-            <div style={{ background: '#0B1A0F', borderRadius: 20, padding: '14px 12px 16px', marginBottom: 20, ['--nuit' as string]: '#0B1A0F', ['--creme' as string]: '#FDFAF3', ['--texte' as string]: '#FDFAF3', ['--texte-2' as string]: 'rgba(253,250,243,0.65)', ['--foret' as string]: '#1B4332' }}>
-              <SurMesure
-                scooter fondu en={en}
-                destination={{ lat: centerLL.lat, lng: centerLL.lng, nom: ville.nom }}
-                chercheDesLOuverture="activite"
-              />
+            <div style={{ marginBottom: 20 }}>
+              <SectionMagazine destination={{ lat: centerLL.lat, lng: centerLL.lng, nom: ville.nom }} categorie="activite" en={en} />
             </div>
           )}
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '16px' }}>

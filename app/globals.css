@@ -1544,3 +1544,14 @@ body:has(.autour-plein[data-vue="carte"]) .bottom-nav { display: none !important
 }
 .carte-tiroir-ligne { min-height: 58px; }
 .carte-tiroir-nom { font-size: 15.5px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/* ── Page ville magazine : grilles des sections ── */
+.mag-manger { display: grid; grid-template-columns: 1.6fr 1fr; gap: 12px; }
+.mag-trois { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.mag-grille { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+@media (max-width: 760px) {
+  .mag-manger { grid-template-columns: 1fr; }
+  .mag-trois { display: flex; overflow-x: auto; scrollbar-width: none; }
+  .mag-trois > * { flex: 0 0 230px; }
+  .mag-grille { grid-template-columns: 1fr 1fr; }
+}
