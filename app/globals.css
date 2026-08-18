@@ -1445,3 +1445,46 @@ a.flux-ajouter { display: none !important; }
     max-width: 1060px; margin: 0 auto; padding: 8px 18px 80px;
   }
 }
+
+/* ── CORRECTION 4 : la vue carte — pilule d'onglets + tiroir du podium ── */
+.carte-tabs {
+  position: absolute; top: 14px; left: 50%; transform: translateX(-50%); z-index: 1001;
+  display: flex; gap: 8px; padding: 6px; border-radius: 999px;
+  background: rgba(6,14,8,0.82);
+  -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
+  border: 1px solid rgba(201,168,76,0.14);
+}
+.carte-tab {
+  min-height: 48px; padding: 0 16px; border-radius: 999px; border: none; cursor: pointer;
+  background: none; font-size: 14px; font-weight: 600; color: rgba(253,250,243,0.7);
+  transition: background .16s, color .16s;
+}
+.carte-tab.on { background: linear-gradient(135deg, #D9BE6C, var(--or)); color: #0A1509; }
+/* La pilule ne vit qu'en vue carte */
+.autour-plein[data-vue="liste"] .carte-tabs, .autour-plein[data-vue="liste"] .carte-tiroir { display: none; }
+
+.carte-tiroir {
+  position: absolute; left: 0; right: 0; bottom: 0; z-index: 1001;
+  background: linear-gradient(180deg, rgba(6,14,8,0.88), rgba(6,14,8,0.98));
+  -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px);
+  border-top: 1px solid rgba(201,168,76,0.26); border-radius: 22px 22px 0 0;
+  padding: 8px 16px calc(14px + env(safe-area-inset-bottom));
+}
+.carte-poignee { width: 44px; height: 4px; border-radius: 999px; background: rgba(253,250,243,0.25); margin: 4px auto 10px; }
+.carte-tiroir-titre {
+  margin: 0 0 6px; font-size: 12px; font-weight: 600; letter-spacing: 0.18em;
+  text-transform: uppercase; color: rgba(201,168,76,0.85);
+}
+.carte-tiroir-ligne {
+  display: flex; align-items: center; gap: 12px; min-height: 60px; width: 100%;
+  border: none; background: none; cursor: pointer; text-align: left; padding: 0;
+  border-top: 1px solid rgba(253,250,243,0.06); color: var(--creme, #FDFAF3);
+}
+.carte-tiroir-ligne:first-of-type { border-top: none; }
+.carte-tiroir-rang { flex: none; width: 22px; font-family: 'Playfair Display', Georgia, serif; font-size: 17px; color: var(--or-clair, #E9D9A6); }
+.carte-tiroir-nom { flex: 1; min-width: 0; font-size: 15.5px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.carte-tiroir-meta { flex: none; font-size: 13.5px; color: rgba(253,250,243,0.6); }
+.carte-tiroir-badge {
+  flex: none; font-size: 11px; font-weight: 700; padding: 4px 9px; border-radius: 999px;
+  background: rgba(201,168,76,0.16); color: var(--or-clair, #E9D9A6); border: 1px solid rgba(201,168,76,0.26);
+}

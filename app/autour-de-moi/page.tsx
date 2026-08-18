@@ -5,6 +5,7 @@ import type { Map as LeafletMap, Marker } from 'leaflet'
 import { useInstantPosition } from '@/lib/useInstantPosition'
 import { computePrayerTimesFull } from '@/lib/prayerCalc'
 import SurMesure, { type Fiche } from '@/components/lieux/SurMesure'
+import { top3, ETIQUETTES } from '@/lib/top3.mjs'
 
 // 🗺️ « AUTOUR DE MOI » — LA MÊME RECHERCHE, EN VUE CARTE.
 //
@@ -83,6 +84,9 @@ export default function AutourDeMoiPage() {
   const [choisie, setChoisie] = useState<string | null>(null)
   const [carteDeplacee, setCarteDeplacee] = useState(false)
   const [vue, setVue] = useState<Vue>('liste')
+  // 🗺️ L'onglet actif de la VUE CARTE (correction 4). Il commande le même
+  // moteur que la liste — aucun chemin parallèle.
+  const [modeCarte, setModeCarte] = useState<'mosquee' | 'manger' | 'activite' | null>(null)
   const [phraseVenue, setPhraseVenue] = useState('')
 
   const mapEl = useRef<HTMLDivElement>(null)
@@ -194,13 +198,21 @@ export default function AutourDeMoiPage() {
     return () => { annule = true }
   }, [pos])
 
+  // 🥇 Le podium de la carte : 3 épingles exactement, classées par le
+  // meilleur équilibre (lib/top3.mjs — poids commentés, moyenne bayésienne).
+  // Sans onglet choisi, l'ordre du moteur fait foi, sans étiquettes.
+  const podium = modeCarte
+    ? top3(fiches.filter((f): f is Fiche & { id: string } => !!f.id), modeCarte)
+    : fiches.filter((f) => !!f.id).slice(0, 3).map((f) => ({ ...f, etiquette: null as string | null }))
+
   // ── Une épingle par fiche. Rien d'autre ne peuple la carte ───────────
   useEffect(() => {
     const L = LRef.current
     if (!L || !mapRef.current) return
     marqueurs.current.forEach(({ marker }) => marker.remove())
     marqueurs.current = []
-    fiches.forEach((f, i) => {
+    const aPeindre = vue === 'carte' ? podium : fiches
+    aPeindre.forEach((f, i) => {
       if (!f.id) return
       const mk = L.marker([f.lat, f.lng], { icon: epingle(L, i + 1, false), zIndexOffset: 500 - i }).addTo(mapRef.current)
       // 🔗 Toucher une épingle sur la carte → on revient à la liste, sur sa
@@ -212,12 +224,13 @@ export default function AutourDeMoiPage() {
       })
       marqueurs.current.push({ id: f.id, marker: mk, rang: i + 1 })
     })
-    if (fiches.length) {
+    if (aPeindre.length) {
       try {
-        mapRef.current.fitBounds(L.latLngBounds(fiches.map((f) => [f.lat, f.lng])), { padding: [60, 60], maxZoom: 16, animate: true })
+        mapRef.current.fitBounds(L.latLngBounds(aPeindre.map((f) => [f.lat, f.lng])), { padding: [60, 60], maxZoom: 16, animate: true })
       } catch { /* une seule fiche : le cadrage automatique n'a pas de sens */ }
     }
-  }, [fiches])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [fiches, vue, modeCarte])
 
   // ── La sélection, vue des deux côtés ────────────────────────────────
   useEffect(() => {
@@ -299,6 +312,46 @@ export default function AutourDeMoiPage() {
         {etatPos.geoLoading ? '…' : '🎯'}
       </button>
 
+      {/* 🗂 CORRECTION 4 — trois onglets discrets dans une pilule flottante,
+          et rien d'autre. Chaque onglet relance LE MÊME moteur ; le podium
+          (3 épingles + tiroir) suit. */}
+      {vue === 'carte' && (
+        <div className="carte-tabs" role="tablist" aria-label="Que cherches-tu ?">
+          {([['mosquee', 'Prier'], ['manger', 'Manger'], ['activite', 'Que faire']] as const).map(([m, label]) => (
+            <button key={m} role="tab" aria-selected={modeCarte === m} className={`carte-tab${modeCarte === m ? ' on' : ''}`}
+              onClick={() => setModeCarte(m)}>
+              {label}
+            </button>
+          ))}
+        </div>
+      )}
+
+      {vue === 'carte' && podium.length > 0 && (
+        <div className="carte-tiroir" aria-label="Les 3 meilleurs">
+          <div className="carte-poignee" aria-hidden />
+          <p className="carte-tiroir-titre">
+            {modeCarte === 'manger' ? 'Les 3 meilleurs — distance · note · prix' : 'Les 3 meilleurs'}
+          </p>
+          {podium.map((f, i) => (
+            <button key={f.id} className="carte-tiroir-ligne"
+              onClick={() => {
+                setChoisie(f.id!)
+                setVue('liste')
+                setTimeout(() => document.querySelector(`[data-fiche="${f.id}"]`)?.scrollIntoView({ block: 'start', behavior: 'smooth' }), 260)
+              }}>
+              <span className="carte-tiroir-rang">{i + 1}</span>
+              <span className="carte-tiroir-nom">{f.nom}</span>
+              <span className="carte-tiroir-meta">
+                {typeof f.note === 'number' ? `★ ${f.note.toLocaleString('fr-FR')}` : ''}
+                {typeof f.prix === 'number' && f.prix > 0 ? ` · ${'€'.repeat(f.prix)}` : ''}
+                {typeof f.distanceM === 'number' ? ` · ${Math.max(1, Math.round(f.distanceM / 75))} min` : ''}
+              </span>
+              {f.etiquette && <span className="carte-tiroir-badge">{ETIQUETTES[f.etiquette]?.fr ?? ''}</span>}
+            </button>
+          ))}
+        </div>
+      )}
+
       {carteDeplacee && (
         <button onClick={() => { setCarteDeplacee(false); if (pos) mapRef.current?.setView([pos.lat, pos.lng], 14) }}
           className="autour-zone">
@@ -342,6 +395,7 @@ export default function AutourDeMoiPage() {
               // ► On répond avant qu'on demande : la recherche part dès que
               // la position est connue, sans rien taper ni rien tirer.
               chercheDesLOuverture={phraseVenue || !ouvertureSur || ouvertureSur === 'aucune' ? undefined : ouvertureSur}
+              modeDemande={modeCarte}
               onResultats={setFiches}
               selectionId={choisie}
               onSelection={setChoisie}

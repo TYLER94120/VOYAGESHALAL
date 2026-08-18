@@ -112,7 +112,7 @@ function IconeCat({ id }: { id: string }) {
   return <svg {...c} viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="M15.8 8.2l-2.1 5.5-5.5 2.1 2.1-5.5z" /></svg>
 }
 
-export default function SurMesure({ posInitiale, destination: destinationProp, en = false, fondu = false, titrePage = false, onResultats, selectionId, onSelection, phraseInitiale, chercheDesLOuverture }: {
+export default function SurMesure({ posInitiale, destination: destinationProp, en = false, fondu = false, titrePage = false, onResultats, selectionId, onSelection, phraseInitiale, chercheDesLOuverture, modeDemande }: {
   posInitiale?: { lat: number; lng: number; ville?: string | null } | null
   destination?: { lat: number; lng: number; nom: string } | null
   en?: boolean
@@ -138,6 +138,9 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
   onSelection?: (id: string | null) => void
   /** La phrase apportée par l'accueil (?q=…) : on la lance toute seule. */
   phraseInitiale?: string
+  /** 🗺️ Les onglets de la VUE CARTE commandent le même moteur : un onglet
+   *  choisi là-bas = un mode choisi ici, recherche lancée (correction 4). */
+  modeDemande?: Categorie | null
   /** ► SI ON SAIT OÙ JE SUIS, ON RÉPOND AVANT QUE JE DEMANDE.
    *  Ordre de Mohamed, 15 août : « On ouvre la page, on ne voit AUCUN
    *  résultat, et on nous demande de taper quelque chose. Alors que le
@@ -263,6 +266,15 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
     lancer(c, false, false, null, true)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [chercheDesLOuverture, posInitiale, destinationProp])
+  useEffect(() => {
+    if (!modeDemande) return
+    const c = { ...crit, categorie: modeDemande } as Criteres
+    setCrit(c)
+    setAide({ cat: modeDemande })
+    setPhrase('')
+    lancer(c, false)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [modeDemande])
   const enCours = useRef(false)
   /** 📍 OÙ LA RÉPONSE APPARAÎT. Mohamed, 15 août : « Je clique sur Trouver
    *  et rien ne semble se passer. Il faut que je descende tout en bas de la
