@@ -1,5 +1,6 @@
-import { NextResponse } from 'next/server'
+import { NextResponse, after } from 'next/server'
 import { checkAdmin } from '@/lib/adminAuth'
+import { attacherTitres, genererTitresManquants } from '@/lib/titreIA'
 import { Redis } from '@upstash/redis'
 import { requeteGoogle } from '@/lib/requete.mjs'
 import { accepte } from '@/lib/categorie.mjs'
@@ -155,6 +156,9 @@ export interface Fiche {
     famille?: boolean; terrasse?: boolean; vegetarien?: boolean
     reservation?: boolean; accessible?: boolean
   }
+  /** ✒️ Titre court écrit par l'IA à partir des avis — cache 7 jours,
+   *  jamais généré pendant la requête (lib/titreIA). Absent = rien. */
+  titreIA?: string
   statut: string
   /** 🔴 Ce qu'on SAIT de l'alcool : jamais une supposition. */
   alcool: 'non' | 'inconnu'
@@ -997,6 +1001,11 @@ export async function POST(req: Request) {
     } catch { /* jamais bloquant */ }
   }
   if (r && !profilVide(profil)) { try { await r.incr('surmesure:avec-profil') } catch { /* idem */ } }
+
+  // ✒️ Les titres IA déjà en cache rejoignent les fiches (lecture seule) ;
+  // les manquants se génèrent APRÈS la réponse, jamais pendant l'attente.
+  await attacherTitres(fiches, r)
+  after(() => genererTitresManquants(fiches, r))
 
   const reponse = {
     fiches, autres, source, etatGoogle,

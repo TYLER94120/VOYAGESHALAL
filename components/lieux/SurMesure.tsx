@@ -4,6 +4,8 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { CRITERES_DEFAUT, lireDemande, relance, resumerCriteres, type Categorie, type Criteres } from '@/lib/criteres'
 import { top3 } from '@/lib/top3.mjs'
+import TrajetMin from '@/components/lieux/TrajetMin'
+import { lancerItineraire } from '@/lib/itineraire'
 import { lireIntention } from '@/lib/villesIndex'
 import type { VilleLue } from '@/lib/lireVille.mjs'
 import { trajet, type Mode } from '@/lib/trajet'
@@ -47,6 +49,7 @@ export interface Fiche {
   adresse?: string; telephone?: string; mapsUri?: string
   photos?: string[]; attributionsPhotos?: string[]; avis?: Avis[]; resume?: string
   attributs?: Record<string, boolean | undefined>
+  titreIA?: string
   statut: string; alcool?: 'non' | 'inconnu'; source: 'spot' | 'google' | 'osm'
 }
 
@@ -215,6 +218,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
    * changement est voulu, un tri réordonne au lieu de cacher.
    */
   const [triActif, setTriActif] = useState<string | null>(null)
+  const [ficheOuverte, setFicheOuverte] = useState<string | null>(null) // 🛵 la fiche dépliée par ℹ
   /** Qui a compris la phrase : Claude, le parseur local, ou personne (rien
    *  tapé). C'est ce qui distingue « Claude a compris : hammam » de la
    *  simple mention « Recherche : hammam » — on ne signe pas l'IA quand
@@ -1161,12 +1165,32 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
         {!titrePage && aVoir.length > 0 && (
           <div style={{ marginTop: 14, display: 'flex', flexDirection: 'column', gap: 12 }}>
             {aVoir.map((f, i) => (
-              <Carte key={f.id ?? i} f={f} en={en} mode={mode} destination={!!destination}
-                allergie={mentionneAllergie(profil)}
-                choisie={!!f.id && f.id === selectionId}
-                onChoisir={() => { onSelection?.(f.id ?? null); compter('fiches-ouvertes') }}
-                onItineraire={() => compter('itineraires')} />
+              scooter ? (
+                <FicheScooter key={f.id ?? i} f={f} i={i} en={en}
+                  ouverte={!!f.id && f.id === ficheOuverte}
+                  onInfo={() => { setFicheOuverte(f.id === ficheOuverte ? null : (f.id ?? null)); compter('fiches-ouvertes') }}
+                  onItineraire={() => { compter('itineraires'); lancerItineraire(f.lat, f.lng) }}
+                  enfant={<Carte f={f} en={en} mode={mode} destination={!!destination}
+                    allergie={mentionneAllergie(profil)} choisie
+                    onItineraire={() => compter('itineraires')} />}
+                />
+              ) : (
+                <Carte key={f.id ?? i} f={f} en={en} mode={mode} destination={!!destination}
+                  allergie={mentionneAllergie(profil)}
+                  choisie={!!f.id && f.id === selectionId}
+                  onChoisir={() => { onSelection?.(f.id ?? null); compter('fiches-ouvertes') }}
+                  onItineraire={() => compter('itineraires')} />
+              )
             ))}
+            {/* La seule mention : plus d'adresse postale ni de « trouvée sur
+                Google Maps » sur les cartes — la fiche détail (ℹ) les garde. */}
+            {scooter && (
+              <p style={{ margin: '2px 0 0', textAlign: 'center', fontSize: 13, color: 'rgba(253,250,243,0.45)' }}>
+                {en ? 'Titles and summaries written by ' : 'Titres et résumés écrits par '}
+                <strong style={{ color: 'rgba(201,168,76,0.8)', fontWeight: 600 }}>{en ? 'VoyagesHalal AI' : 'l\u2019IA VoyagesHalal'}</strong>
+                {en ? ' from reviews.' : ' à partir des avis.'}
+              </p>
+            )}
           </div>
         )}
 
@@ -1286,6 +1310,50 @@ function Photos({ photos, nom }: { photos?: string[]; nom: string }) {
 }
 
 /** UNE FICHE = une carte qui respire, la photo la porte (§2 et §6). */
+function FicheScooter({ f, i, en, ouverte, onInfo, onItineraire, enfant }: {
+  f: Fiche; i: number; en: boolean; ouverte: boolean; onInfo: () => void; onItineraire: () => void; enfant?: React.ReactNode
+}) {
+  // La ligne de données : toujours le même format, et un segment absent est
+  // OMIS proprement — jamais « non disponible » (itération 2, correction 3).
+  const metaTxt = [
+    typeof f.note === 'number' ? `★ ${f.note.toLocaleString('fr-FR')}` : '',
+    typeof f.prix === 'number' && f.prix > 0 ? '€'.repeat(f.prix) : '',
+  ].filter(Boolean).join(' · ')
+  const premier = i === 0
+  return (
+    <div style={{ borderRadius: 18, overflow: 'hidden', border: `1px solid ${premier ? 'var(--or)' : 'rgba(201,168,76,0.14)'}`, background: 'linear-gradient(165deg, rgba(253,250,243,0.05), rgba(253,250,243,0.012))' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '14px 16px 0' }}>
+        <span style={{ flexShrink: 0, width: 38, height: 38, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: "'Playfair Display', Georgia, serif", fontSize: 17, fontWeight: 700, ...(premier ? { background: 'linear-gradient(135deg, #D9BE6C, var(--or))', color: '#0A1509' } : { color: 'var(--or-clair, #E9D9A6)', border: '1px solid rgba(201,168,76,0.26)' }) }}>{i + 1}</span>
+        <span style={{ flex: 1, minWidth: 0, color: '#fdfaf3', fontSize: 18, fontWeight: 700, overflowWrap: 'anywhere' }}>{f.nom}</span>
+        {f.statut === 'verifie' && (
+          <span style={{ flexShrink: 0, fontSize: 11, fontWeight: 700, padding: '5px 10px', borderRadius: 999, background: '#1F7A4A', color: '#fff', letterSpacing: '0.08em' }}>{en ? 'VERIFIED' : 'VÉRIFIÉ'}</span>
+        )}
+      </div>
+      {/* ✒️ Le titre de l'IA — seulement s'il existe en cache : jamais
+          généré pendant l'attente, jamais inventé (lib/titreIA). */}
+      {f.titreIA && (
+        <p style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: 'italic', fontSize: 17, color: 'var(--or-clair, #E9D9A6)', margin: 0, padding: '6px 16px 0 66px' }}>{f.titreIA}</p>
+      )}
+      <p style={{ margin: 0, padding: '4px 16px 0 66px', fontSize: 15, color: 'rgba(253,250,243,0.68)' }}>
+        {metaTxt}{metaTxt ? ' · ' : ''}<TrajetMin f={f} en={en} />
+      </p>
+      <div style={{ display: 'flex', gap: 10, padding: '12px 16px 14px' }}>
+        <button onClick={onItineraire}
+          style={{ flex: 1, minHeight: 56, borderRadius: 14, border: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 9, background: 'linear-gradient(135deg, #D9BE6C, var(--or))', color: '#0A1509', fontSize: 16, fontWeight: 700, cursor: 'pointer' }}>
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" aria-hidden><path d="M12 2.5 21 21.5 12 17l-9 4.5z" /></svg>
+          {en ? 'Directions' : 'Itinéraire'}
+        </button>
+        <button onClick={onInfo} aria-expanded={ouverte} aria-label={en ? 'Details' : 'Fiche détail'}
+          style={{ flexShrink: 0, width: 56, minHeight: 56, borderRadius: 14, border: '1px solid rgba(201,168,76,0.26)', background: 'none', color: 'var(--or-clair, #E9D9A6)', fontSize: 15, fontWeight: 700, cursor: 'pointer' }}>
+          {ouverte ? '×' : 'ℹ'}
+        </button>
+      </div>
+      {/* ℹ︎ ouvre la fiche complète — jamais l'action par défaut. */}
+      {ouverte && <div style={{ padding: '0 10px 12px' }}>{enfant}</div>}
+    </div>
+  )
+}
+
 function Carte({ f, en, mode, destination, allergie, choisie = false, onChoisir, onItineraire }: { f: Fiche; en: boolean; mode: Mode; destination: boolean; allergie: boolean; choisie?: boolean; onChoisir?: () => void; onItineraire: () => void }) {
   const t = (fr: string, an: string) => (en ? an : fr)
   // §5.1 et §5.2 : le temps est TOUJOURS accompagné de son mode, et
