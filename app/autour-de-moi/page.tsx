@@ -372,7 +372,7 @@ export default function AutourDeMoiPage() {
                 {/* Jamais tronqué au point d'être illisible : 24 caractères puis … */}
                 <span className="carte-tiroir-nom">{f.nom.length > 24 ? `${f.nom.slice(0, 24)}…` : f.nom}</span>
                 <span className="carte-tiroir-sous">
-                  <b>{typeMot((f as { famille?: string }).famille, modeCarte ?? 'manger')}</b>
+                  <b>{f.cuisine ?? typeMot((f as { famille?: string }).famille, modeCarte ?? 'manger')}</b>
                   {typeof f.note === 'number' ? ` · ★ ${f.note.toLocaleString('fr-FR')}` : ''}
                   {typeof f.prix === 'number' && f.prix > 0 ? ` · ${'€'.repeat(f.prix)}` : ''}
                   {' · '}<TrajetMin f={f} />

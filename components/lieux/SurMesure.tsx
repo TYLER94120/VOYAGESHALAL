@@ -51,6 +51,7 @@ export interface Fiche {
   attributs?: Record<string, boolean | undefined>
   titreIA?: string
   marcheMin?: number; voitureMin?: number
+  cuisine?: string; cuisineSource?: string
   statut: string; alcool?: 'non' | 'inconnu'; source: 'spot' | 'google' | 'osm'
 }
 

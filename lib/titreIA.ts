@@ -25,21 +25,40 @@ interface FichePourTitre {
   resume?: string
   avis?: { texte: string; note?: number }[]
   titreIA?: string
+  cuisine?: string
+  cuisineSource?: 'base' | 'places' | 'ia' | 'generique'
 }
 
-const CLE = (id: string) => `vh:titreia:v1:${id}`
+// v2 : la valeur devient un JSON { t: titre, c: cuisine } — la cuisine est
+// le niveau 3 de la chaîne de fiabilité (itération 3, correction 2) : l'IA
+// ne la nomme que si le même plat/cuisine revient dans PLUSIEURS avis.
+const CLE = (id: string) => `vh:titreia:v2:${id}`
+
+/** Les seuls mots que l'IA a le droit de rendre — un mot hors liste est
+ *  jeté. « Halal » n'y figure pas : ce n'est pas une cuisine, c'est un
+ *  statut, et il a ses propres règles. */
+export const CUISINES_VALIDES = new Set([
+  'Libanais', 'Turc', 'Marocain', 'Algérien', 'Tunisien', 'Somalien', 'Sénégalais', 'Éthiopien',
+  'Indien', 'Pakistanais', 'Afghan', 'Iranien', 'Syrien', 'Yéménite', 'Égyptien', 'Oriental',
+  'Sushi', 'Japonais', 'Chinois', 'Thaï', 'Vietnamien', 'Coréen', 'Indonésien', 'Malaisien', 'Asiatique',
+  'Burger', 'Pizza', 'Kebab', 'Tacos', 'Poulet', 'Grillades', 'Sandwichs',
+  'Brésilien', 'Grec', 'Méditerranéen', 'Africain', 'Traiteur', 'Pâtisserie', 'Dessert', 'Café',
+])
 const SEPT_JOURS_S = 7 * 86400
 
-/** Attache les titres déjà en cache. Ne génère RIEN — lecture seule. */
+/** Attache titres ET cuisines déjà en cache. Ne génère RIEN — lecture seule. */
 export async function attacherTitres(fiches: FichePourTitre[], r: Redis | null): Promise<void> {
   if (!r) return
   const avecId = fiches.filter((f) => f.id)
   if (!avecId.length) return
   try {
-    const vals = await r.mget<(string | null)[]>(...avecId.map((f) => CLE(f.id!)))
+    const vals = await r.mget<({ t?: string; c?: string } | null)[]>(...avecId.map((f) => CLE(f.id!)))
     avecId.forEach((f, i) => {
       const v = vals[i]
-      if (typeof v === 'string' && v) f.titreIA = v
+      if (v && typeof v === 'object') {
+        if (v.t) f.titreIA = v.t
+        if (v.c && CUISINES_VALIDES.has(v.c) && !f.cuisine) { f.cuisine = v.c; f.cuisineSource = 'ia' }
+      }
     })
   } catch { /* pas de titre vaut mieux qu'une réponse lente */ }
 }
@@ -49,9 +68,12 @@ Règles :
 - 6 mots MAXIMUM, en français, sans ponctuation finale, sans guillemets.
 - Uniquement ce que les avis ou les données DISENT vraiment (plats, ambiance, rapidité, familles…). Rien d'inventé, rien de déduit du nom seul.
 - INTERDITS : « halal », « certifié », toute promesse d'hygiène ou d'allergène, tout superlatif non appuyé par les avis.
-- Si les données ne permettent pas un titre honnête, réponds exactement RIEN.
+- Si les données ne permettent pas un titre honnête, mets null.
 Exemples de forme : « Grillades généreuses, service rapide » · « Parc calme pour les enfants ».
-Réponds le titre seul.`
+
+Tu identifies AUSSI la cuisine, en UN mot, UNIQUEMENT si le même type de plats/cuisine revient dans PLUSIEURS avis (deux minimum). Un seul avis, ou un doute = null — jamais un type deviné présenté comme un fait, et jamais déduit du nom seul.
+
+Réponds UNIQUEMENT ce JSON : {"titre": "..." | null, "cuisine": "..." | null}`
 
 function valide(t: string): boolean {
   if (!t || /^RIEN\b/i.test(t)) return false
@@ -69,7 +91,7 @@ function valide(t: string): boolean {
 export async function genererTitresManquants(fiches: FichePourTitre[], r: Redis | null): Promise<void> {
   const cle = process.env.ANTHROPIC_API_KEY
   if (!r || !cle) return
-  const aFaire = fiches.filter((f) => f.id && !f.titreIA && ((f.avis?.length ?? 0) > 0 || f.resume))
+  const aFaire = fiches.filter((f) => f.id && !f.titreIA && !f.cuisine && ((f.avis?.length ?? 0) > 0 || f.resume))
   if (!aFaire.length) return
   try {
     const { default: Anthropic } = await import('@anthropic-ai/sdk')
@@ -85,14 +107,21 @@ export async function genererTitresManquants(fiches: FichePourTitre[], r: Redis 
       ].filter(Boolean).join('\n')
       try {
         const rep = await client.messages.create({
-          model: 'claude-haiku-4-5-20251001', max_tokens: 40, temperature: 0,
+          model: 'claude-haiku-4-5-20251001', max_tokens: 90, temperature: 0,
           messages: [{ role: 'user', content: `${PROMPT}\n\n${donnees}` }],
         })
-        const t = (rep.content.find((c) => c.type === 'text')?.text ?? '').trim()
-        if (valide(t)) await r.set(CLE(f.id!), t, { ex: SEPT_JOURS_S })
-        // « RIEN » aussi se mémorise (24 h) : inutile de redemander à
+        const brut = (rep.content.find((c) => c.type === 'text')?.text ?? '').trim()
+        let t = '', cui = ''
+        try {
+          const j = JSON.parse(brut.match(/\{[\s\S]*\}/)?.[0] ?? '{}') as { titre?: unknown; cuisine?: unknown }
+          if (typeof j.titre === 'string' && valide(j.titre)) t = j.titre
+          // La liste blanche refait le travail du prompt : un mot hors
+          // liste (ou « Halal ») n'entre jamais dans le cache.
+          if (typeof j.cuisine === 'string' && CUISINES_VALIDES.has(j.cuisine)) cui = j.cuisine
+        } catch { /* sortie illisible = rien */ }
+        // Le vide aussi se mémorise (24 h) : inutile de redemander à
         // chaque recherche ce que les avis ne diront pas mieux demain.
-        else await r.set(CLE(f.id!), '', { ex: 86400 })
+        await r.set(CLE(f.id!), { ...(t ? { t } : {}), ...(cui ? { c: cui } : {}) }, { ex: t || cui ? SEPT_JOURS_S : 86400 })
       } catch { return /* quota/panne : on arrête la série, sans bruit */ }
     }
   } catch { /* SDK absent : silencieux */ }

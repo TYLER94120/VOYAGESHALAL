@@ -2,6 +2,7 @@ import { NextResponse, after } from 'next/server'
 import { checkAdmin } from '@/lib/adminAuth'
 import { attacherTitres, genererTitresManquants } from '@/lib/titreIA'
 import { ajouterMinutes } from '@/lib/trajets'
+import { motSpecifique } from '@/lib/typeMot.mjs'
 import { Redis } from '@upstash/redis'
 import { requeteGoogle } from '@/lib/requete.mjs'
 import { accepte } from '@/lib/categorie.mjs'
@@ -161,9 +162,14 @@ export interface Fiche {
    *  jamais généré pendant la requête (lib/titreIA). Absent = rien. */
   titreIA?: string
   /** ⏱️ Minutes réelles (API Routes, lib/trajets) — absentes si Routes n'a
-   *  pas répondu en 1,5 s : le client calcule alors depuis la distance. */
+   *  pas répondu : le client affiche alors des mètres, jamais une estimation. */
   marcheMin?: number
   voitureMin?: number
+  /** 🏷️ Type de cuisine en un mot — chaîne de fiabilité : base > types
+   *  Google spécifiques > IA sur les avis (cache) > rien (le client écrit
+   *  « Resto »). La source est stockée pour audit. */
+  cuisine?: string
+  cuisineSource?: 'base' | 'places' | 'ia' | 'generique'
   statut: string
   /** 🔴 Ce qu'on SAIT de l'alcool : jamais une supposition. */
   alcool: 'non' | 'inconnu'
@@ -1009,6 +1015,14 @@ export async function POST(req: Request) {
 
   // ✒️ Les titres IA déjà en cache rejoignent les fiches (lecture seule) ;
   // les manquants se génèrent APRÈS la réponse, jamais pendant l'attente.
+  // 🏷️ Niveau 2 de la chaîne de fiabilité : le primaryType Google quand il
+  // est SPÉCIFIQUE (turkish_restaurant → Turc). Le niveau 3 (IA sur les
+  // avis, en cache) ne parle que si les niveaux au-dessus se taisent.
+  for (const f of fiches) {
+    if (f.cuisine) continue
+    const spec = motSpecifique(f.famille)
+    if (spec) { f.cuisine = spec; f.cuisineSource = 'places' }
+  }
   await attacherTitres(fiches, r)
   after(() => genererTitresManquants(fiches, r))
   // ⏱️ Les minutes réelles (règle actée : ≤ 15 min → marche, sinon voiture).
