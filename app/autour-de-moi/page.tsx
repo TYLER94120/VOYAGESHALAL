@@ -101,6 +101,11 @@ export default function AutourDeMoiPage() {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const mosqueesFond = useRef<any[]>([])
   const plein = useRef<HTMLElement | null>(null)
+  // Vrai pendant un recadrage déclenché par le CODE : ces mouvements ne
+  // doivent pas faire apparaître « Revenir sur ma zone ».
+  const mouvementProgramme = useRef(false)
+  const [tiroirReplie, setTiroirReplie] = useState(false)
+  const [glisseTiroir, setGlisseTiroir] = useState<number | null>(null)
 
   // 📏 LA HAUTEUR DISPONIBLE SE MESURE, ELLE NE SE DEVINE PAS. Un
   // « calc(100dvh - 59px) » écrit en dur serait faux sur le premier
@@ -185,9 +190,10 @@ export default function AutourDeMoiPage() {
         mapRef.current = m
         L.control.zoom({ position: 'bottomright' }).addTo(m)
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '© OpenStreetMap' }).addTo(m)
-        // « Rechercher dans cette zone » n'apparaît QU'APRÈS un déplacement
-        // volontaire — jamais en permanence.
-        m.on('dragend zoomend', () => setCarteDeplacee(true))
+        // « Revenir sur ma zone » n'apparaît QU'APRÈS un déplacement
+        // VOLONTAIRE (correction 5) : le cadrage automatique (fitBounds au
+        // changement d'onglet) passe par mouvementProgramme et ne compte pas.
+        m.on('dragend zoomend', () => { if (!mouvementProgramme.current) setCarteDeplacee(true) })
       } else {
         mapRef.current.setView([pos.lat, pos.lng], 14)
       }
@@ -226,7 +232,14 @@ export default function AutourDeMoiPage() {
     })
     if (aPeindre.length) {
       try {
-        mapRef.current.fitBounds(L.latLngBounds(aPeindre.map((f) => [f.lat, f.lng])), { padding: [60, 60], maxZoom: 16, animate: true })
+        // 🎯 Correction 5 : le cadrage inclut MA POSITION + les épingles,
+        // avec un padding qui laisse la pilule d'onglets (haut) et le
+        // tiroir (bas) hors du cadre utile — le bonhomme reste au centre.
+        const points = aPeindre.map((f) => [f.lat, f.lng] as [number, number])
+        if (pos) points.push([pos.lat, pos.lng])
+        mouvementProgramme.current = true
+        mapRef.current.fitBounds(L.latLngBounds(points), { paddingTopLeft: [44, 215], paddingBottomRight: [44, 250], maxZoom: 16, animate: true })
+        setTimeout(() => { mouvementProgramme.current = false }, 600)
       } catch { /* une seule fiche : le cadrage automatique n'a pas de sens */ }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -309,8 +322,13 @@ export default function AutourDeMoiPage() {
           3 cm d'écart. » Le bandeau fin du haut la porte déjà, en entier,
           sur toutes les pages du site. Une seule mention, jamais tronquée. */}
 
-      <button onClick={recentrer} className="autour-recentrer" aria-label="Revenir à ma position exacte">
-        {etatPos.geoLoading ? '…' : '🎯'}
+      <button onClick={recentrer} className="autour-recentrer" aria-label="Recentrer sur ma position">
+        {etatPos.geoLoading ? '…' : (
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" aria-hidden>
+            <circle cx="12" cy="12" r="7.5" /><circle cx="12" cy="12" r="2.4" />
+            <path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22" />
+          </svg>
+        )}
       </button>
 
       {/* 🗂 CORRECTION 4 — trois onglets discrets dans une pilule flottante,
@@ -328,8 +346,19 @@ export default function AutourDeMoiPage() {
       )}
 
       {vue === 'carte' && podium.length > 0 && (
-        <div className="carte-tiroir" aria-label="Les 3 meilleurs">
-          <div className="carte-poignee" aria-hidden />
+        <div className={`carte-tiroir${tiroirReplie ? ' replie' : ''}`} aria-label="Les 3 meilleurs"
+          onTouchStart={(e) => setGlisseTiroir(e.touches[0].clientY)}
+          onTouchMove={(e) => {
+            if (glisseTiroir == null) return
+            const d = e.touches[0].clientY - glisseTiroir
+            if (d > 45 && !tiroirReplie) { setTiroirReplie(true); setGlisseTiroir(null) }
+            if (d < -45 && tiroirReplie) { setTiroirReplie(false); setGlisseTiroir(null) }
+          }}
+          onTouchEnd={() => setGlisseTiroir(null)}>
+          <button className="carte-poignee-zone" aria-label={tiroirReplie ? 'Ouvrir le tiroir' : 'Réduire le tiroir'}
+            onClick={() => setTiroirReplie((v) => !v)}>
+            <span className="carte-poignee" aria-hidden />
+          </button>
           <p className="carte-tiroir-titre">
             {modeCarte === 'manger' ? 'Les 3 meilleurs — distance · note · prix' : 'Les 3 meilleurs'}
           </p>
