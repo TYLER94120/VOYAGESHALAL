@@ -54,8 +54,13 @@ type Etape = 'question' | 'relance' | 'cherche' | 'resultat' | 'sans-position'
 // 🗺️ Les exemples APPRENNENT la barre unique : deux besoins autour de
 // soi, une ville seule, un besoin dans une ville. C'est ainsi que le
 // visiteur découvre qu'il n'a plus qu'un seul champ à remplir.
-const EXEMPLES_FR = ['un kebab pas cher pas loin', 'Istanbul', 'une pâtisserie à Tirana', 'un endroit calme pour dîner en famille']
-const EXEMPLES_EN = ['a cheap kebab nearby', 'Istanbul', 'a bakery in Tirana', 'a quiet place for a family dinner']
+// Un exemple par MODE — plus de liste tournante avec « Istanbul » égaré
+// sur Autour de moi (correction 7). [fr, en], affiché selon le mode choisi.
+const PLACEHOLDERS: Record<string, [string, string]> = {
+  mosquee: ['Ex. : espace femmes, ouverte maintenant…', 'E.g.: women\'s area, open now…'],
+  manger: ['Ex. : un endroit calme pour dîner…', 'E.g.: a quiet place for dinner…'],
+  activite: ['Ex. : sortie en famille, gratuit…', 'E.g.: family outing, free…'],
+}
 
 // Ordre voulu par Mohamed : la prière d'abord, comme sur l'accueil.
 // « Où dormir » n'est pas ici : ce n'est pas un besoin de l'instant, il
@@ -258,21 +263,13 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
     lancer(c, false, false, null, true)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [chercheDesLOuverture, posInitiale, destinationProp])
-  const [ex, setEx] = useState(0)
   const enCours = useRef(false)
   /** 📍 OÙ LA RÉPONSE APPARAÎT. Mohamed, 15 août : « Je clique sur Trouver
    *  et rien ne semble se passer. Il faut que je descende tout en bas de la
    *  page pour trouver la réponse. » Un clic sans effet visible, c'est un
    *  clic qu'on croit perdu — et on réappuie, ou on part. */
   const zoneResultats = useRef<HTMLDivElement | null>(null)
-  const EXEMPLES = en ? EXEMPLES_EN : EXEMPLES_FR
 
-  // Les exemples défilent en filigrane : ils donnent envie de répondre —
-  // « c'est la moitié de l'expérience » (§6).
-  useEffect(() => {
-    const id = setInterval(() => setEx((i) => (i + 1) % EXEMPLES.length), 3600)
-    return () => clearInterval(id)
-  }, [EXEMPLES.length])
 
   const t = (fr: string, an: string) => (en ? an : fr)
 
@@ -382,6 +379,9 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
     if (ville === undefined && aiguiller(txt)) return
     // 1. Le parseur LOCAL d'abord — le filet qui ne peut pas casser.
     const c = lireDemande(txt)
+    // Le mode choisi TIENT : le texte affine à l'intérieur du mode, il ne
+    // rebascule pas la recherche ailleurs (un seul état actif à l'écran).
+    if (aide?.cat) c.categorie = aide.cat
     let parClaude = false
     // Le tri demandé dans la phrase (« pas cher ») doit SURVIVRE au départ de
     // la recherche : il est passé à `lancer`, qui l'aurait sinon remis à
@@ -675,28 +675,55 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
           <h3 style={{ fontFamily: "'Playfair Display', Georgia, serif", color: '#fdfaf3', fontSize: 20, fontWeight: 900, margin: '2px 0 0', lineHeight: 1.2 }}>
             {destination
               ? t(`Que cherches-tu à ${destination.nom} ?`, `What are you looking for in ${destination.nom}?`)
-              : t('Dis-moi ce que tu cherches.', 'Tell me what you are looking for.')}
+              : t('Que cherches-tu ?', 'What are you looking for?')}
           </h3>
         )}
 
-        <form onSubmit={(e) => { e.preventDefault(); comprendre(phrase) }} style={{ display: 'flex', gap: 8, marginTop: 6, flexWrap: 'wrap' }}>
-          <input
-            value={phrase} onChange={(e) => setPhrase(e.target.value)}
-            placeholder={`« ${EXEMPLES[ex]} »`}
-            aria-label={t('Décris ta recherche', 'Describe what you want')}
-            style={{ flex: 1, minWidth: 200, minHeight: 52, borderRadius: 14, border: '1px solid rgba(253,250,243,0.25)', background: 'rgba(255,255,255,0.07)', color: '#fdfaf3', padding: '0 14px', fontSize: 16 }}
-          />
-          <button type="submit" disabled={etape === 'cherche'}
-                        /* Le bouton dominant prend l'ACCENT DE L'HEURE, pas l'or de
-               tous les annuaires halal du monde. C'est la seule audace de
-               l'écran, et elle porte une information : la couleur dit
-               quel moment de la journée on est en train de vivre. */
-            style={{ minHeight: 56, padding: '0 20px', borderRadius: 16, border: 'none', background: 'var(--ciel-accent, var(--or))', color: '#141018', fontWeight: 900, fontSize: 16, cursor: 'pointer', opacity: etape === 'cherche' ? 0.6 : 1 }}>
-            {/* Le bouton DIT qu'il travaille : « … » ne se lit pas comme
-                un travail en cours, ça se lit comme un bouton cassé. */}
-            {etape === 'cherche' ? t('Je cherche…', 'Searching…') : t('Trouver', 'Find')}
-          </button>
-        </form>
+        {/* 🗂 LE MODE D'ABORD (correction du 18 août : « on peut avoir Prier
+            actif tout en tapant "un endroit calme pour dîner" — on ne sait
+            pas ce qui sera cherché »). Les trois cartes viennent AVANT le
+            champ ; choisir un mode vide le champ ; un seul état actif. */}
+        <div style={{ display: 'flex', gap: 7, marginTop: 10, flexWrap: 'nowrap' }}>
+          {CAT_OPTS.map(([v, fr, an]) => (
+            <button key={v}
+              className="surmesure-cat"
+              onClick={() => {
+                const c = { ...crit, categorie: v } as Criteres
+                setCrit(c)
+                setAide({ cat: v })
+                setPhrase('') // jamais de reliquat d'une recherche d'un autre mode
+                setRaisonIA('')
+                compter(`cat-${v}`)
+              }}
+              aria-pressed={aide?.cat === v} style={{ ...puce(aide?.cat === v), flex: '1 1 0', minWidth: 0, minHeight: 64, padding: '0 6px', whiteSpace: 'nowrap' }}>
+              <IconeCat id={v} /> {t(fr, an)}
+            </button>
+          ))}
+        </div>
+
+        {aide?.cat && (
+          <>
+            <form onSubmit={(e) => { e.preventDefault(); if (phrase.trim()) comprendre(phrase); else lancer({ ...crit, categorie: aide.cat } as Criteres, false) }} style={{ display: 'flex', gap: 8, marginTop: 10, flexWrap: 'wrap' }}>
+              <input
+                value={phrase} onChange={(e) => setPhrase(e.target.value)}
+                placeholder={PLACEHOLDERS[aide.cat]?.[en ? 1 : 0] ?? ''}
+                aria-label={t('Décris ta recherche', 'Describe what you want')}
+                style={{ flex: 1, minWidth: 200, minHeight: 52, borderRadius: 14, border: '1px solid rgba(253,250,243,0.25)', background: 'rgba(255,255,255,0.07)', color: '#fdfaf3', padding: '0 14px', fontSize: 16 }}
+              />
+              <button type="submit" disabled={etape === 'cherche'}
+                style={{ minHeight: 56, padding: '0 20px', borderRadius: 16, border: 'none', background: 'var(--ciel-accent, var(--or))', color: '#141018', fontWeight: 900, fontSize: 16, cursor: 'pointer', opacity: etape === 'cherche' ? 0.6 : 1 }}>
+                {etape === 'cherche' ? t('Je cherche…', 'Searching…') : t('Trouver', 'Find')}
+              </button>
+            </form>
+            {etape !== 'resultat' && etape !== 'cherche' && (
+              <p style={{ margin: '8px 2px 0', fontSize: 14, color: 'rgba(253,250,243,0.5)' }}>
+                {t('Ou valide sans rien écrire : on te montre ', 'Or search with nothing typed: we show ')}
+                <strong style={{ color: 'var(--or-clair, #E9D9A6)' }}>{t('les 3 meilleurs', 'the top 3')}</strong>
+                {t(' tout de suite.', ' right away.')}
+              </p>
+            )}
+          </>
+        )}
 
         {/* 🗺️ QUAND LES DEUX LECTURES SE DÉFENDENT, C'EST LE VISITEUR QUI
             TRANCHE — en un appui, sans retaper.
@@ -743,40 +770,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
           </p>
         )}
 
-        {/* §B.2 — « suggestions d'un appui : Manger · Mosquée · Que faire ».
-            Elles lancent la recherche immédiatement : celui qui ne veut
-            pas écrire est servi en un geste. Pour la mosquée, la relance
-            porte sur le TEMPS (prier maintenant ?), pas sur le budget.
 
-            📏 16 août — LES TROIS TIENNENT SUR UNE SEULE LIGNE. Ils
-            passaient à la ligne sur un téléphone de 390 px : 95 px pour
-            trois boutons, soit une rangée entière perdue sur le premier
-            écran. Chacun prend un tiers de la largeur, le texte se serre
-            plutôt que de sauter — et les 44 px de cible tactile sont
-            intacts, c'est la règle qui ne se négocie pas. */}
-        <div style={{ display: 'flex', gap: 7, marginTop: 7, flexWrap: 'nowrap' }}>
-          {CAT_OPTS.map(([v, fr, an]) => (
-            <button key={v}
-              className="surmesure-cat"
-              // 🔴 LE CLIC CHERCHE, TOUT DE SUITE. Il ouvrait auparavant un
-              // bloc de pistes à lire — et ces pistes ont été supprimées
-              // faute de filtre réel derrière. Un bouton qui n'ouvre plus
-              // rien serait un bouton mort : il lance donc la recherche de
-              // sa catégorie, et les trois filtres apparaissent sous les
-              // adresses trouvées. Un geste du visiteur = un appel.
-              onClick={() => {
-                const c = { ...crit, categorie: v } as Criteres
-                setCrit(c)
-                setAide({ cat: v })
-                setRaisonIA('')
-                compter(`cat-${v}`)
-                lancer(c, false)
-              }}
-              aria-pressed={aide?.cat === v} style={{ ...puce(aide?.cat === v), flex: '1 1 0', minWidth: 0, padding: '0 6px', whiteSpace: 'nowrap' }}>
-              <IconeCat id={v} /> {t(fr, an)}
-            </button>
-          ))}
-        </div>
 
         {/* 📍 UN VRAI BOUTON, AVEC DU TEXTE.
             Mohamed, 15 août : « Sur l'accueil, c'est un petit rond avec une
@@ -1028,7 +1022,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
         {etape === 'resultat' && posUtilisee === 'ip' && (
           <div style={{ display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap', marginTop: 12 }}>
             <p style={{ color: 'rgba(253,250,243,0.7)', fontSize: 12.5, margin: 0 }}>
-              {t('Position approximative', 'Approximate location')}{posInitiale?.ville ? ` : ${posInitiale.ville}` : ''} {t('(adresse IP)', '(IP address)')}
+              {t('Position approximative', 'Approximate location')}{posInitiale?.ville ? ` : ${posInitiale.ville}` : ''} {t('(adresse IP)', '(IP address)')}{typeof (posInitiale as { precisionM?: number } | null | undefined)?.precisionM === 'number' ? ` · ±${(posInitiale as { precisionM?: number }).precisionM} m` : ''}
             </p>
             <button onClick={() => lancer(crit, aEcrit, true)} style={{ ...puce(false), fontSize: 12.5, fontWeight: 800, borderColor: 'rgba(201,168,76,0.55)', color: 'var(--or)' }}>
               {t('Ma position exacte', 'My exact location')}
