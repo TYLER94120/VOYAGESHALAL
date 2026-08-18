@@ -6,10 +6,9 @@ import JsonLd from '@/components/seo/JsonLd'
 import EmailCapture from '@/components/ui/EmailCapture'
 import { buildWebSiteSchema, buildOrganizationSchema } from '@/lib/seo'
 import { guides } from '@/lib/data'
-import BoardVoyageur from '@/components/home/BoardVoyageur'
-import CielDuMoment from '@/components/home/CielDuMoment'
-import AccueilCiel from '@/components/home/AccueilCiel'
-import SurMesure from '@/components/lieux/SurMesure'
+import HeroDepart from '@/components/accueil/HeroDepart'
+import BlocSeo from '@/components/accueil/BlocSeo'
+import { FAQ_ACCUEIL } from '@/lib/faqAccueil'
 import { positionServeur } from '@/lib/positionServeur'
 import { localizedHref } from '@/lib/slugs'
 import { HomeScoreRanking } from '@/components/HomeScoreRanking'
@@ -150,43 +149,58 @@ export default async function HomePage() {
       : 'Nos meilleures ressources voyage halal, sélectionnées — directement dans votre boîte mail.',
   }
 
+  // ❓ Le schéma FAQ est construit depuis la MÊME source que la FAQ visible
+  // (lib/faqAccueil.ts) : « mot pour mot », comme l'exige le brief — et
+  // comme l'exige Google, qui pénalise un balisage qui ne correspond pas.
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    '@id': `${siteUrl}/#faq`,
+    mainEntity: FAQ_ACCUEIL.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.r },
+    })),
+  }
+
   return (
     <>
     <JsonLd data={websiteSchema} />
     <JsonLd data={orgSchema} />
-    {/* Design unifié : même accueil sur mobile et desktop */}
-    {/* 🌅 « L'heure fait l'écran » : la teinte du fond suit la course du
-        soleil, calculée sur les vrais horaires de prière du lieu. Elle ne
-        change qu'au chargement — jamais pendant qu'on lit. */}
-    <CielDuMoment />
-    <main className="accueil-ciel" style={{ backgroundColor: '#fdfaf3' }}>
-      {/* 🎛️ UN SEUL PREMIER ÉCRAN — Mohamed, 15 août : « les 2 premières
-          pages doivent fusionner, garde le meilleur des 2 ». Le hero
-          n'existe plus comme section séparée : son meilleur — le titre et
-          la recherche — est rendu ici par le serveur et glissé DANS le
-          tableau de bord, sous la barre de position. Un écran, pas deux
-          empilés. Le H1 et la recherche restent du HTML serveur : Google
-          les voit toujours, position connue ou non. */}
-      {/* 🌅 L'ÉCRAN DES CINQ CIELS — reproduction de
-          docs/maquette-cinq-ciels.html : position, prière en UNE ligne
-          (horaires repliés), puis LA RÉPONSE — une adresse réelle, en
-          grand, sans un clic. L'ancien tableau de bord et ses vingt
-          éléments cliquables sans une seule adresse ne sont plus là.
-          Le ruban dit POURQUOI cette réponse à cette heure-ci. */}
-      <AccueilCiel posInitiale={posIP} en={isEN} />
+    <JsonLd data={faqSchema} />
 
-      {/* 🔴 TOUT LE RESTE EST PARTI, ET C'EST LE SUJET DE L'ORDRE.
-          Mohamed, 15 août au soir : « On arrête d'empiler. L'accueil garde
-          ce qu'on a réussi de mieux aujourd'hui, et rien d'autre. »
-          Trois choses vivent ici, et la règle de tri ne souffre aucune
-          exception : si ce n'est pas ① la recherche, ② les trois onglets,
-          ③ la bande fine de prière — ça sort.
+    {/* ⛩️ L'ACCUEIL v6 — maquette du 16 août.
+        Au premier écran : l'ornement, le nom, la ligne du guide, un bouton
+        plein « Autour de moi », un bouton contour « Choisir une ville », et
+        la barre Horaires / Qibla DANS LE FLUX. Rien d'autre.
+        En dessous, au défilement : le contenu que Google lit — présentation,
+        destinations réelles avec leur HalalScore, ce qu'on trouve ici, la
+        FAQ, le pied de page. */}
+    <main className="v6">
+      <HeroDepart />
+      <BlocSeo />
 
-          Sont partis : les destinations populaires (elles ont leur page),
-          la lettre d'information, les blocs éditoriaux, le classement des
-          villes, le tableau de bord et ses vingt éléments cliquables.
-          Aucun n'aidait quelqu'un dans les cinq secondes qui suivent son
-          arrivée — c'est le seul critère qui compte à l'accueil. */}
+      <footer className="v6-pied">
+        <nav aria-label="Liens du site">
+          <Link href="/destinations">Destinations</Link>
+          <Link href={localizedHref('/mosquee-proche', isEN)}>Mosquées</Link>
+          <Link href="/hotels">Hébergements</Link>
+          <Link href={localizedHref('/horaires-priere', isEN)}>Horaires de prière</Link>
+          <Link href="/qibla">Qibla</Link>
+          <Link href="/blog">Blog</Link>
+          <Link href="/a-propos">À propos</Link>
+          <Link href="/contact">Contact</Link>
+        </nav>
+        <div className="v6-bismillah">بِسْمِ اللَّهِ</div>
+        {/* Mentions légales et confidentialité étaient deux liens de 16 px
+            de haut noyés dans une phrase : impossibles à viser au pouce.
+            Ils rejoignent la navigation, où ils font 56 px comme le reste. */}
+        <nav aria-label="Informations légales" className="v6-pied-legal">
+          <Link href="/mentions-legales">Mentions légales</Link>
+          <Link href="/confidentialite">Confidentialité</Link>
+        </nav>
+        <small>© {new Date().getFullYear()} VoyagesHalal — Guide du voyage halal dans le monde.</small>
+      </footer>
     </main>
     </>
   )
