@@ -3,6 +3,7 @@
 import { verdictHalal, phraseHalal } from '@/lib/halalPrudent.mjs'
 import { cuisineCategory, CATEGORY_ORDER } from '@/lib/cuisineCategory'
 import PriereVille from '@/components/villes/PriereVille'
+import BoutonRetour from '@/components/layout/BoutonRetour'
 import SurMesure from '@/components/lieux/SurMesure'
 import { infoPratiqueEn } from '@/lib/infoPratiqueEn'
 import { enLabel, countryEn } from '@/lib/poiI18n'
@@ -249,29 +250,38 @@ export default function VilleDesktop({ ville }: { ville: any }) {
 
   return (
     <main style={{ background: 'var(--creme)', minHeight: '100vh', overflowX: 'hidden' }}>
-      {/* HERO épuré, centré */}
-      <section style={{ position: 'relative', height: 'clamp(170px, 26vw, 230px)', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>
-        {image && <Image src={image} alt={`Guide voyage halal ${ville.nom}`} fill priority sizes="100vw" style={{ objectFit: 'cover', opacity: 0.5 }} />}
-        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(11,26,15,0.55) 0%, rgba(11,26,15,0.82) 100%)' }} />
-        <IslamicPattern opacity={0.05} />
-        <div style={{ position: 'relative', maxWidth: WRAP, padding: '0 24px' }}>
-          <p style={{ color: 'var(--or)', fontSize: '12px', fontWeight: 700, letterSpacing: '2.5px', textTransform: 'uppercase', marginBottom: '12px' }}>{countryEn(ville.pays, en)}{ville.region ? ` · ${ville.region}` : ''}</p>
-          <h1 style={{ fontFamily: "'Playfair Display', serif", color: '#fff', lineHeight: 1.02, margin: 0 }}>
-            <span style={{ fontSize: 'clamp(14px, 4vw, 18px)', fontWeight: 700, color: 'rgba(255,255,255,0.7)' }}>{en ? 'Halal Guide ' : 'Guide Halal '}</span>
-            <span style={{ fontSize: 'clamp(38px, 11vw, 56px)', fontWeight: 900 }}>{ville.nom}</span>
-            <span style={{ fontSize: 'clamp(16px, 5vw, 22px)', fontWeight: 700, color: 'rgba(255,255,255,0.7)' }}> 2026</span>
-            <span style={{ marginLeft: 6, verticalAlign: 'middle' }}>
+      {/* 🏞 HERO MAGAZINE (brief 3a/3c) : photo plein cadre, kicker or,
+          titre Playfair, une accroche, le sceau HalalScore, le retour.
+          Le badge dit HALALSCORE — notre score, décomposé plus bas dans la
+          page — jamais « Trust Score™ » : on n'invente pas une marque de
+          confiance au-dessus d'une note qu'on peut expliquer. */}
+      <section style={{ position: 'relative', height: 'clamp(340px, 40vw, 430px)', overflow: 'hidden', display: 'flex', alignItems: 'flex-end' }}>
+        {image && <Image src={image} alt={`Guide voyage halal ${ville.nom}`} fill priority sizes="100vw" style={{ objectFit: 'cover' }} />}
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(11,26,15,0.25) 0%, rgba(11,26,15,0) 30%, rgba(11,26,15,0.92) 100%)' }} />
+        <div style={{ position: 'absolute', top: 14, left: 14, zIndex: 3 }}>
+          <BoutonRetour libelle={en ? 'Back' : 'Retour'} />
+        </div>
+        {scoreVille != null && (
+          <div aria-label={`HalalScore ${scoreVille}`} style={{ position: 'absolute', right: 18, bottom: 18, zIndex: 3, width: 'clamp(74px, 10vw, 110px)', height: 'clamp(74px, 10vw, 110px)', borderRadius: '50%', border: '2px solid var(--or)', background: 'rgba(11,26,15,0.72)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 2 }}>
+            <span style={{ fontFamily: "'Playfair Display', serif", fontSize: 'clamp(22px, 3.4vw, 34px)', fontWeight: 900, color: '#FDFAF3', lineHeight: 1 }}>{String(scoreVille).replace('.', ',')}</span>
+            <span style={{ fontSize: 9, fontWeight: 700, letterSpacing: '0.18em', color: 'var(--or-clair, #E9D9A6)' }}>HALALSCORE</span>
+          </div>
+        )}
+        <div style={{ position: 'relative', zIndex: 2, maxWidth: WRAP, width: '100%', margin: '0 auto', padding: '0 24px 26px' }}>
+          <p style={{ color: 'var(--or)', fontSize: 12, fontWeight: 700, letterSpacing: '0.22em', textTransform: 'uppercase', margin: '0 0 6px' }}>
+            {countryEn(ville.pays, en)} · {en ? 'Halal destination' : 'Destination halal'}
+          </p>
+          <h1 style={{ fontFamily: "'Playfair Display', serif", color: '#fff', fontWeight: 900, fontSize: 'clamp(44px, 7vw, 68px)', lineHeight: 1.02, margin: 0 }}>
+            {ville.nom}
+            <span style={{ marginLeft: 10, verticalAlign: 'middle' }}>
               <FavButton size={22} fav={{ id: favId('ville', ville.slug ?? ville.nom), kind: 'ville', nom: ville.nom, href: `/destinations/${ville.slug ?? ''}` }} />
             </span>
           </h1>
-          {/* Le badge « Halal 8.1/10 » posé sur la photo a été RETIRÉ : un
-              chiffre sans décomposition ne veut rien dire. Il est remplacé,
-              juste sous le titre, par le verdict d'arrivée qui porte ses
-              trois notes ET la phrase qui explique chacune. */}
+          {descShort && <p style={{ color: 'rgba(253,250,243,0.85)', fontSize: 15.5, lineHeight: 1.5, margin: '8px 0 0', maxWidth: 620 }}>{descShort.slice(0, 120)}</p>}
         </div>
       </section>
 
-      {/* PARTIE HAUT (sombre) — toute la navigation : boutons + intro + onglets */}
+      {/* PARTIE HAUT (sombre)      {/* PARTIE HAUT (sombre) — toute la navigation : boutons + intro + onglets */}
       <div style={{ background: 'var(--nuit)' }}>
         <div style={{ maxWidth: WRAP, margin: '0 auto', padding: '20px 24px 26px' }}>
           {/* 🔎 LA RECHERCHE, IMMÉDIATEMENT SOUS LE TITRE — ordre de
@@ -281,16 +291,11 @@ export default function VilleDesktop({ ville }: { ville: any }) {
               désormais le PREMIER élément avec lequel on peut agir, visible
               sans descendre d'un millimètre. Le titre reste au-dessus :
               on ne refait pas l'erreur inverse. */}
-          <VerdictArrivee phrases={phrasesVerdict} ind={indVille} score={scoreVille} />
+          {/* Itération 7 (magazine) : le VerdictArrivee et l'instance
+              SurMesure du haut ont été REMPLACÉS — le sceau HalalScore vit
+              sur le hero, et « Que cherches-tu ? » n'existe plus qu'une
+              fois, dans les sections. Remplace, ne juxtapose pas. */}
 
-          {co.lat != null && co.lng != null && (
-            <div style={{ margin: '0 auto 18px', maxWidth: 700 }}>
-              <SurMesure fondu en={en} destination={{ lat: co.lat, lng: co.lng, nom: ville.nom }} />
-            </div>
-          )}
-
-          {/* intro courte — en tête du bloc */}
-          {descShort && <p style={{ textAlign: 'center', color: 'rgba(253,250,243,0.72)', fontSize: '14.5px', lineHeight: 1.7, maxWidth: 700, margin: '0 auto 18px' }}>{descShort}</p>}
 
           {/* 🕌 LA PRIÈRE, REMONTÉE DU BAS — ordre de Mohamed, 15 août :
               « "Horaires de prière à Istanbul" et "Qibla depuis Istanbul"
@@ -311,15 +316,17 @@ export default function VilleDesktop({ ville }: { ville: any }) {
             🧭 {en ? `Explore ${ville.nom}` : `Explorer ${ville.nom}`}
           </p>
 
-          {/* ONGLETS — cartes blanches contrastées, une rangée sur PC, 2 colonnes mobile */}
-          <div className="ville-tabs-grid" id="ville-onglets">
+          {/* 📑 SOMMAIRE PILLS (brief 3a) : h 42, outline crème, compteur —
+              scroll horizontal sur mobile. Les ancres sont les sections. */}
+          <div className="ville-tabs-grid" id="ville-onglets" style={{ display: 'flex', gap: 8, overflowX: 'auto', paddingBottom: 4, scrollbarWidth: 'none' }}>
             {TABS.map((tab) => {
               const active = activeTab === tab.id
               const count = tabCounts[tab.id]
               return (
-                <button key={tab.id} onClick={() => goToTab(tab.id)} className={`ville-tab${active ? ' ville-tab--on' : ''}${tab.id === 'pratique' ? ' ville-tab--wide' : ''}`}>
-                  <span className="vt-ico">{tab.icon}</span>{en ? (tab as { labelEn?: string; label: string }).labelEn ?? tab.label : tab.label}
-                  {count > 0 && <span className="vt-count">{count}</span>}
+                <button key={tab.id} onClick={() => goToTab(tab.id)}
+                  style={{ flexShrink: 0, minHeight: 44, padding: '0 16px', borderRadius: 999, display: 'inline-flex', alignItems: 'center', gap: 7, fontSize: 14.5, fontWeight: 600, cursor: 'pointer', whiteSpace: 'nowrap', border: `1px solid ${active ? 'var(--or)' : 'rgba(253,250,243,0.16)'}`, background: active ? 'rgba(201,168,76,0.14)' : 'rgba(253,250,243,0.035)', color: active ? 'var(--or-clair, #E9D9A6)' : 'rgba(253,250,243,0.8)' }}>
+                  {en ? (tab as { labelEn?: string; label: string }).labelEn ?? tab.label : tab.label}
+                  {count > 0 && <span style={{ fontSize: 12, color: 'var(--or)', fontWeight: 700 }}>{count}</span>}
                 </button>
               )
             })}
