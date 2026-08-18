@@ -158,7 +158,7 @@ export default function HotelFilter({ hotels, mosques, restos, center, en: enPro
         const lien = h.halalBookingUrl || h.halal_booking_url || h.bookingUrl || h.booking_url
         const sansAlcool = (EQUIP as any).sansAlcool?.(h)
         return (
-          <div key={i} style={{ borderRadius: 18, marginBottom: 14, overflow: 'hidden', border: `1px solid ${i === 0 ? 'var(--or)' : 'rgba(27,67,50,0.12)'}`, background: '#fff' }}>
+          <div key={i} style={{ borderRadius: 18, marginBottom: 14, overflow: 'hidden', border: `1px solid ${i === 0 ? 'var(--or)' : 'rgba(27,67,50,0.12)'}`, background: 'rgba(253,250,243,0.06)' }}>
             <div style={{ padding: '14px 16px 14px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
                 <span style={{ flexShrink: 0, width: 32, height: 32, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 15, background: i === 0 ? 'linear-gradient(135deg, #D9BE6C, var(--or))' : 'rgba(201,168,76,0.15)', color: i === 0 ? '#0A1509' : '#8A6D1E' }}>{i + 1}</span>
@@ -194,7 +194,7 @@ export default function HotelFilter({ hotels, mosques, restos, center, en: enPro
       {voirTous && (<>
       {/* Barre repliée : 1 bouton → 1 feuille */}
       <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 16, flexWrap: 'wrap' }}>
-        <button onClick={() => setOpen((o) => !o)} style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '11px 18px', borderRadius: 14, border: '1.5px solid var(--foret)', background: '#fff', color: 'var(--foret)', fontWeight: 800, fontSize: 14, cursor: 'pointer' }}>
+        <button onClick={() => setOpen((o) => !o)} style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '11px 18px', borderRadius: 14, border: '1.5px solid var(--foret)', background: 'rgba(253,250,243,0.06)', color: 'var(--foret)', fontWeight: 800, fontSize: 14, cursor: 'pointer' }}>
           ⚙️ {t('Filtrer & trier', 'Filter & sort')}{activeCount ? ` · ${activeCount}` : ''}
         </button>
         <span style={{ fontSize: 13, color: 'var(--texte-2)' }}>
@@ -203,7 +203,7 @@ export default function HotelFilter({ hotels, mosques, restos, center, en: enPro
       </div>
 
       {open && (
-        <div style={{ background: '#fff', border: '1px solid rgba(27,67,50,0.14)', borderRadius: 16, padding: 18, marginBottom: 18, display: 'flex', flexDirection: 'column', gap: 16 }}>
+        <div style={{ background: 'rgba(253,250,243,0.06)', border: '1px solid rgba(27,67,50,0.14)', borderRadius: 16, padding: 18, marginBottom: 18, display: 'flex', flexDirection: 'column', gap: 16 }}>
           <div>
             <p style={{ fontSize: 12, fontWeight: 800, color: 'var(--foret)', margin: '0 0 8px', textTransform: 'uppercase', letterSpacing: 0.5 }}>{t('Trier', 'Sort')}</p>
             <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
@@ -246,7 +246,7 @@ export default function HotelFilter({ hotels, mosques, restos, center, en: enPro
         {filtered.slice(0, visibles).map((e, i) => {
           const h = e.h
           return (
-            <div key={i} style={{ background: '#fff', border: '1px solid rgba(27,67,50,0.1)', borderRadius: 18, padding: 18 }}>
+            <div key={i} style={{ background: 'rgba(253,250,243,0.06)', border: '1px solid rgba(27,67,50,0.1)', borderRadius: 18, padding: 18 }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 6, gap: 8 }}>
                 <div>
                   <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 19, color: 'var(--texte)' }}>{h.nom}</p>
@@ -292,7 +292,7 @@ export default function HotelFilter({ hotels, mosques, restos, center, en: enPro
         <div style={{ textAlign: 'center', marginTop: 22 }}>
           <button
             onClick={() => setVisibles((v) => v + PAR_LOT)}
-            style={{ minHeight: 56, padding: '0 26px', borderRadius: 16, cursor: 'pointer', border: '2px solid rgba(27,67,50,0.25)', background: '#fff', color: 'var(--foret)', fontWeight: 800, fontSize: 15.5 }}
+            style={{ minHeight: 56, padding: '0 26px', borderRadius: 16, cursor: 'pointer', border: '2px solid rgba(27,67,50,0.25)', background: 'rgba(253,250,243,0.06)', color: 'var(--foret)', fontWeight: 800, fontSize: 15.5 }}
           >
             {t(`Voir ${Math.min(filtered.length - visibles, PAR_LOT)} hôtels de plus (${filtered.length - visibles} restants)`,
                `Show ${Math.min(filtered.length - visibles, PAR_LOT)} more hotels (${filtered.length - visibles} left)`)}
