@@ -5,6 +5,7 @@ import { cuisineCategory, CATEGORY_ORDER } from '@/lib/cuisineCategory'
 import PriereVille from '@/components/villes/PriereVille'
 import BoutonRetour from '@/components/layout/BoutonRetour'
 import SectionMagazine from '@/components/villes/SectionMagazine'
+import Sejour from '@/components/villes/Sejour'
 import { infoPratiqueEn } from '@/lib/infoPratiqueEn'
 import { enLabel, countryEn } from '@/lib/poiI18n'
 import { useState, useRef } from 'react'
@@ -22,7 +23,6 @@ import SaveButton from '@/components/ui/SaveButton'
 import PlacePhoto from '@/components/ui/PlacePhoto'
 import { favId } from '@/lib/favorites'
 import { getCityGuide } from '@/lib/cityGuides'
-import GuideCarousel from '@/components/villes/GuideCarousel'
 import CitySpots from '@/components/villes/CitySpots'
 import StickySections from '@/components/villes/StickySections'
 import VerdictArrivee from '@/components/villes/VerdictArrivee'
@@ -213,6 +213,8 @@ export default function VilleDesktop({ ville }: { ville: any }) {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const restosFiltres = halalOnly ? restosParCat.filter((r: any) => verdictHalal(r).etat !== 'a-confirmer') : restosParCat
   const restosAffiches = restosFiltres.slice(0, visibleRestos)
+  // 🗓 Explorer (défaut) / Séjour 3 jours — la seconde vue de la page.
+  const [vueSejour, setVueSejour] = useState(false)
   const tabCounts: Record<string, number> = { restaurants: restaurantsTotal, mosquees: mosquees.length, hotels: hotels.length, activites: activites.length, pratique: 0 }
 
   // 🌍 INFOS PRATIQUES BILINGUES — défaut mesuré le 15 août : 189 fiches
@@ -337,6 +339,16 @@ export default function VilleDesktop({ ville }: { ville: any }) {
               chose qu'on voit. Aucune autre entrée de recherche sur cette
               page — on n'empile pas, on intègre.) */}
 
+          {/* 🗓 Le toggle Explorer / Séjour (maquettes 3b/3d). */}
+          <div style={{ display: 'flex', gap: 8, margin: '12px 0 0' }}>
+            {[[false, en ? 'Explore' : 'Explorer'], [true, en ? '3-day trip' : 'Séjour 3 jours']].map(([v, label]) => (
+              <button key={String(v)} onClick={() => setVueSejour(v as boolean)} aria-pressed={vueSejour === v}
+                style={{ flex: 1, minHeight: 48, borderRadius: 999, border: `1.5px solid ${vueSejour === v ? 'var(--or)' : 'rgba(253,250,243,0.16)'}`, background: vueSejour === v ? 'rgba(201,168,76,0.14)' : 'transparent', color: vueSejour === v ? 'var(--or-clair, #E9D9A6)' : 'rgba(253,250,243,0.75)', fontWeight: 700, fontSize: 15, cursor: 'pointer' }}>
+                {label as string}
+              </button>
+            ))}
+          </div>
+
           {/* Navigation collante : dès que ces onglets sortent de l'écran,
               une barre compacte prend le relais (fiche = 46 écrans) */}
           <StickySections ancre="ville-onglets" en={en} />
@@ -363,6 +375,23 @@ export default function VilleDesktop({ ville }: { ville: any }) {
         </div>
       </div>
 
+      {/* 🗓 LA VUE SÉJOUR — remplace le contenu Explorer quand elle est
+          active. Les prières viennent du calcul réel de la ville. */}
+      {vueSejour && co.lat != null && co.lng != null && (
+        <div style={{ background: '#0B1A0F' }}>
+          <div style={{ maxWidth: WRAP, margin: '0 auto', padding: '24px 24px 80px' }}>
+            <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: 28, fontWeight: 900, color: '#FDFAF3', margin: '0 0 4px' }}>
+              {en ? `${ville.nom} in 3 days` : `${ville.nom} en 3 jours`}
+            </h2>
+            <Sejour nom={ville.nom} lat={co.lat} lng={co.lng} en={en}
+              activites={activites.map((a: any) => ({ nom: a.nom, description: a.description, duree: a.duree, prix: a.prix }))}
+              restaurants={restaurants.slice(0, 3).map((r: any) => ({ nom: r.nom, description: r.description ?? r.specialite }))}
+              mosquees={mosquees.map((m: any) => ({ nom: m.nom }))} />
+          </div>
+        </div>
+      )}
+
+      <div style={vueSejour ? { display: 'none' } : undefined}>
       {/* 🧭 GUIDE VISUEL — 1 phrase forte + chips (pas de pavé), puis carrousel
           photo « L'essentiel en 3 jours » (vraies photos de monuments). */}
       {(() => {
@@ -403,10 +432,8 @@ export default function VilleDesktop({ ville }: { ville: any }) {
                 <span key={i} style={chip}>{c.icon} {en ? c.en : c.fr}</span>
               ))}
             </div>
-            <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: 20, fontWeight: 900, color: 'var(--nuit)', margin: '0 0 12px' }}>
-              📅 {en ? `The essentials in ${guide.jours.length} days` : `L'essentiel en ${guide.jours.length} jours`}
-            </h3>
-            <GuideCarousel guide={guide} villeNom={ville.nom} heroImage={image} en={en} />
+            {/* Itération 7 : le carrousel « L'essentiel en 3 jours » a été
+                REMPLACÉ par la vue Séjour (toggle en haut de page). */}
           </section>
         )
       })()}
@@ -907,6 +934,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
           {en ? 'Sources: OpenStreetMap contributors · Google Maps · our own checks' : 'Sources : contributeurs OpenStreetMap · Google Maps · relevés maison'}
           {fmtDate(ville.osmEnrichedAt) ? ` · ${en ? 'updated' : 'mis à jour'} ${fmtDate(ville.osmEnrichedAt)}` : ''}
         </p>
+      </div>
       </div>
       </div>
     </main>
