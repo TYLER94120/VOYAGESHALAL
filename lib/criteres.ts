@@ -40,6 +40,9 @@ export type Exigence = 'verifies' | 'signales'
 export type Categorie = 'manger' | 'mosquee' | 'activite'
 
 export interface Criteres {
+  /** 🍣 « +5 km » de la feuille d'envies (itération 3) : élargit le rayon
+   *  quand une cuisine précise n'a pas 3 adresses dans le rayon normal. */
+  rayonBonusKm?: number
   categorie: Categorie
   quoi: Quoi
   mode: ModeChoisi

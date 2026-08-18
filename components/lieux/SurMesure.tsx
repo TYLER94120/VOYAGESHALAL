@@ -221,6 +221,9 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
    */
   const [triActif, setTriActif] = useState<string | null>(null)
   const [ficheOuverte, setFicheOuverte] = useState<string | null>(null) // 🛵 la fiche dépliée par ℹ
+  // 🍣 « Une envie précise ? » — un tap, jamais de clavier (itération 3).
+  const [feuilleEnvies, setFeuilleEnvies] = useState(false)
+  const [envie, setEnvie] = useState<{ mot: string; requete: string } | null>(null)
   /** Qui a compris la phrase : Claude, le parseur local, ou personne (rien
    *  tapé). C'est ce qui distingue « Claude a compris : hammam » de la
    *  simple mention « Recherche : hammam » — on ne signe pas l'IA quand
@@ -623,6 +626,17 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
     } catch { /* la liste suffit — la prose est un bonus */ } finally { clearTimeout(to) }
   }
 
+  // 🍣 Le top 3 se recalcule pour l'envie : même moteur, même score,
+  // motsCles = la cuisine — et ✕ retire le filtre d'un tap.
+  function lancerEnvie(e: { mot: string; requete: string } | null, bonusKm = 0) {
+    if (!aide?.cat) return
+    setEnvie(e)
+    setFeuilleEnvies(false)
+    const c = { ...crit, categorie: aide.cat, motsCles: e?.requete ?? '', rayonBonusKm: bonusKm || undefined } as Criteres
+    setCrit(c)
+    lancer(c, false)
+  }
+
   const compter = (cle: string) => {
     // Mesure §7 : le sur mesure se juge à un chiffre — les itinéraires.
     fetch('/api/lieux/mesure', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ cle }) }).catch(() => {})
@@ -721,6 +735,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
                 setCrit(c)
                 setAide({ cat: v })
                 setPhrase('') // jamais de reliquat d'une recherche d'un autre mode
+                setEnvie(null)
                 setRaisonIA('')
                 compter(`cat-${v}`)
                 if (scooter) lancer(c, false) // scooter : un tap = les 3 meilleurs
@@ -1164,6 +1179,29 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
             Elles s'affichaient DEUX FOIS : une liste ici, la même adresse en
             carte dominante juste en dessous. Une réponse donnée deux fois
             n'est pas deux fois plus utile — elle fait douter d'avoir compris. */}
+        {scooter && envie && etape === 'resultat' && (
+          <div style={{ marginTop: 14 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+              <h3 style={{ fontFamily: "'Playfair Display', Georgia, serif", color: '#fdfaf3', fontSize: 20, fontWeight: 700, margin: 0, flex: 1 }}>
+                {t('Les 3 meilleurs — ', 'Top 3 — ')}{envie.mot}
+              </h3>
+              <button onClick={() => lancerEnvie(null)}
+                style={{ minHeight: 44, padding: '0 14px', borderRadius: 999, border: '1px solid rgba(201,168,76,0.4)', background: 'rgba(201,168,76,0.12)', color: 'var(--or-clair, #E9D9A6)', fontSize: 14, fontWeight: 700, cursor: 'pointer' }}>
+                ✕ {envie.mot}
+              </button>
+            </div>
+            {aVoir.length > 0 && aVoir.length < 3 && (
+              <p style={{ margin: '8px 0 0', fontSize: 14, color: 'rgba(253,250,243,0.7)', display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap' }}>
+                {t(`${aVoir.length} adresse${aVoir.length > 1 ? 's' : ''} ${envie.mot.toLowerCase()} dans le coin — élargis le rayon ?`,
+                   `${aVoir.length} ${envie.mot.toLowerCase()} place${aVoir.length > 1 ? 's' : ''} nearby — widen the radius?`)}
+                <button onClick={() => lancerEnvie(envie, (crit.rayonBonusKm ?? 0) + 5)}
+                  style={{ minHeight: 44, padding: '0 14px', borderRadius: 999, border: '1px solid rgba(201,168,76,0.4)', background: 'none', color: 'var(--or)', fontWeight: 800, fontSize: 14, cursor: 'pointer' }}>
+                  +5 km
+                </button>
+              </p>
+            )}
+          </div>
+        )}
         {!titrePage && aVoir.length > 0 && (
           <div style={{ marginTop: 14, display: 'flex', flexDirection: 'column', gap: 12 }}>
             {aVoir.map((f, i) => (
@@ -1184,8 +1222,38 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
                   onItineraire={() => compter('itineraires')} />
               )
             ))}
+            {/* 🍣 Une envie précise ? — pastille pointillée unique, pas en
+                mode Prier. La feuille s'ouvre dessous, sans clavier. */}
+            {scooter && aide?.cat && aide.cat !== 'mosquee' && !envie && (
+              <button onClick={() => setFeuilleEnvies(true)}
+                style={{ minHeight: 56, width: '100%', borderRadius: 999, marginTop: 4, border: '1px dashed rgba(201,168,76,0.26)', background: 'transparent', color: 'var(--or-clair, #E9D9A6)', fontSize: 16, fontWeight: 600, cursor: 'pointer' }}>
+                {t('Une envie précise ?', 'Craving something specific?')}
+              </button>
+            )}
             {/* La seule mention : plus d'adresse postale ni de « trouvée sur
                 Google Maps » sur les cartes — la fiche détail (ℹ) les garde. */}
+            {scooter && feuilleEnvies && aide?.cat && (
+              <div onClick={() => setFeuilleEnvies(false)}
+                style={{ position: 'fixed', inset: 0, zIndex: 210, background: 'rgba(4,9,5,0.6)', backdropFilter: 'blur(3px)', display: 'flex', alignItems: 'flex-end', justifyContent: 'center' }}>
+                <div onClick={(e) => e.stopPropagation()}
+                  onTouchStart={(e) => { (e.currentTarget as HTMLElement & { _y?: number })._y = e.touches[0].clientY }}
+                  onTouchMove={(e) => { const el = e.currentTarget as HTMLElement & { _y?: number }; if (el._y != null && e.touches[0].clientY - el._y > 55) { setFeuilleEnvies(false); el._y = undefined } }}
+                  style={{ width: '100%', maxWidth: 430, borderRadius: '22px 22px 0 0', background: '#0D1D12', borderTop: '1px solid rgba(201,168,76,0.26)', padding: '10px 18px calc(20px + env(safe-area-inset-bottom))' }}>
+                  <div aria-hidden style={{ width: 42, height: 4, borderRadius: 999, background: 'rgba(253,250,243,0.25)', margin: '3px auto 8px' }} />
+                  <h3 style={{ fontFamily: "'Playfair Display', Georgia, serif", color: '#fdfaf3', fontSize: 21, fontWeight: 700, margin: 0, padding: '6px 4px 14px' }}>
+                    {t('Une envie précise ?', 'Craving something specific?')}
+                  </h3>
+                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 10 }}>
+                    {(ENVIES[aide.cat] ?? []).map((e) => (
+                      <button key={e.mot} onClick={() => lancerEnvie(e)}
+                        style={{ minHeight: 72, borderRadius: 16, border: '1px solid rgba(201,168,76,0.14)', background: 'rgba(253,250,243,0.035)', color: '#FDFAF3', fontSize: 15, fontWeight: 600, cursor: 'pointer' }}>
+                        {e.mot}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            )}
             {scooter && (
               <p style={{ margin: '2px 0 0', textAlign: 'center', fontSize: 13, color: 'rgba(253,250,243,0.45)' }}>
                 {en ? 'Titles and summaries written by ' : 'Titres et résumés écrits par '}
@@ -1312,6 +1380,22 @@ function Photos({ photos, nom }: { photos?: string[]; nom: string }) {
 }
 
 /** UNE FICHE = une carte qui respire, la photo la porte (§2 et §6). */
+// 🍣 LA GRILLE D'ENVIES — 9 cases max, un mot chacune, pas de champ texte.
+// La requête part chez Google TELLE QUELLE (le type d'abord, jamais
+// « halal » accolé — règle verrouillée par test-requete) ; le filtre
+// alcool et le statut honnête s'appliquent comme partout.
+const ENVIES: Record<string, { mot: string; requete: string }[]> = {
+  manger: [
+    { mot: 'Sushi', requete: 'sushi' }, { mot: 'Burger', requete: 'burger' }, { mot: 'Pizza', requete: 'pizza' },
+    { mot: 'Turc', requete: 'restaurant turc' }, { mot: 'Indien', requete: 'restaurant indien' }, { mot: 'Marocain', requete: 'restaurant marocain' },
+    { mot: 'Asiatique', requete: 'restaurant asiatique' }, { mot: 'Poulet', requete: 'poulet grillé' }, { mot: 'Dessert', requete: 'pâtisserie' },
+  ],
+  activite: [
+    { mot: 'Parc', requete: 'parc' }, { mot: 'Musée', requete: 'musée' }, { mot: 'Piscine', requete: 'piscine' },
+    { mot: 'Sport', requete: 'salle de sport' }, { mot: 'Marché', requete: 'marché' }, { mot: 'Enfants', requete: 'aire de jeux' },
+  ],
+}
+
 function FicheScooter({ f, i, en, ouverte, onInfo, onItineraire, enfant }: {
   f: Fiche; i: number; en: boolean; ouverte: boolean; onInfo: () => void; onItineraire: () => void; enfant?: React.ReactNode
 }) {
