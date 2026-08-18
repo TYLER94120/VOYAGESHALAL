@@ -218,13 +218,10 @@ export default function AutourDeMoiPage() {
     aPeindre.forEach((f, i) => {
       if (!f.id) return
       const mk = L.marker([f.lat, f.lng], { icon: epingle(L, i + 1, false), zIndexOffset: 500 - i }).addTo(mapRef.current)
-      // 🔗 Toucher une épingle sur la carte → on revient à la liste, sur sa
-      // fiche : c'est la fiche qu'on est venu chercher, pas le point.
-      mk.on('click', () => {
-        setChoisie(f.id!)
-        setVue('liste')
-        setTimeout(() => document.querySelector(`[data-fiche="${f.id}"]`)?.scrollIntoView({ block: 'start', behavior: 'smooth' }), 260)
-      })
+      // 🛵 Itération 2, correction 4 : toucher une épingle OUVRE
+      // L'ITINÉRAIRE, directement — arrêté au bord de la route, la fiche
+      // est une étape de trop. Elle reste accessible via ℹ sur la liste.
+      mk.on('click', () => lancerItineraire(f.lat, f.lng))
       marqueurs.current.push({ id: f.id, marker: mk, rang: i + 1 })
     })
     if (aPeindre.length) {
