@@ -1318,7 +1318,9 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
             onClick={() => compter('itineraires')}
             style={{ display: 'flex', alignItems: 'center', gap: 8, marginTop: 8, padding: '10px 12px', borderRadius: 12, border: '1px solid rgba(253,250,243,0.14)', textDecoration: 'none' }}>
             <span style={{ flex: 1, color: '#fdfaf3', fontWeight: 700, fontSize: 13.5, overflowWrap: 'anywhere' }}>{f.nom}</span>
-            <span style={{ color: 'rgba(253,250,243,0.6)', fontSize: 12.5, whiteSpace: 'nowrap' }}>{trajet(f.distanceM, mode, en)}</span>
+            {/* Itération 6 : dernière survivance du « ≈ estimé » à l'écran —
+                remplacée par le composant partagé (temps réels ou mètres). */}
+            <span style={{ color: 'rgba(253,250,243,0.6)', fontSize: 12.5, whiteSpace: 'nowrap' }}><TrajetMin f={f} en={en} /></span>
           </a>
         ))}
 
