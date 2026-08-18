@@ -641,33 +641,9 @@ export default function VilleDesktop({ ville }: { ville: any }) {
                 <a href="/autour-de-moi" style={{ display: 'inline-block', padding: '10px 20px', background: 'var(--foret)', color: '#fff', borderRadius: 12, fontWeight: 700, fontSize: 13.5, textDecoration: 'none' }}>📍 {en ? 'Search live around me' : 'Chercher en direct autour de moi'}</a>
               </div>
             )}
-            {/* 🍽️ Coups de cœur (profondeur réelle) puis toutes les adresses */}
-            {ccDisplay.length >= 3 && (
-              <div style={{ marginBottom: 26 }}>
-                <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: '24px', fontWeight: 900, color: 'var(--nuit)', margin: '0 0 12px' }}>
-                  🍽️ {en ? 'Where to eat — top-rated on Google' : 'Où manger — les mieux notés sur Google'}
-                </h2>
-                <div style={{ display: 'flex', gap: 12, overflowX: 'auto', paddingBottom: 8, scrollSnapType: 'x mandatory', WebkitOverflowScrolling: 'touch' }}>
-                  {ccDisplay.map((r: any, i: number) => {
-                    const ccat = cuisineCategory(r.type)
-                    const [g1, g2] = CATEGORY_GRADIENT[ccat] ?? DEFAULT_GRADIENT
-                    return (
-                      <button key={i} onClick={() => setDetail({ kind: 'resto', item: r })}
-                        style={{ width: 240, minWidth: 240, scrollSnapAlign: 'start', textAlign: 'left', background: 'rgba(253,250,243,0.06)', border: '1px solid rgba(27,67,50,0.1)', borderRadius: 18, overflow: 'hidden', cursor: 'pointer', padding: 0, boxShadow: '0 6px 20px rgba(11,26,15,0.06)' }}>
-                        <PlacePhoto query={`${r.nom} ${ville.nom}`} height={96} gradient={[g1, g2]} emoji={CATEGORY_EMOJI[ccat] ?? '🍽'} emojiSize={30} hideIfMissing />
-                        <div style={{ padding: '10px 13px 12px' }}>
-                          <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 15.5, color: 'var(--texte)', margin: 0, lineHeight: 1.15 }}>{r.nom}</p>
-                          <p style={{ fontSize: 11.5, color: 'var(--texte-2)', margin: '3px 0 0', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{r.description || r.specialite}</p>
-                          <p style={{ fontSize: 11.5, color: 'var(--foret)', fontWeight: 700, margin: '6px 0 0' }}>
-                            {(r.score ?? r.note) != null && <>★ {r.score ?? r.note} · </>}{en ? 'See details →' : 'Voir le détail →'}
-                          </p>
-                        </div>
-                      </button>
-                    )
-                  })}
-                </div>
-              </div>
-            )}
+            {/* Itération 6, « remplace, ne juxtapose pas » : le carrousel
+                « Coups de cœur — les mieux notés sur Google » doublait le
+                top 3 du moteur commun juste au-dessus. Supprimé. */}
             {/* Liste complète OSM REPLIÉE par défaut — le guide et les coups de
                 cœur répondent d'abord ; la liste reste là pour ceux qui fouillent */}
             {restaurants.length > 0 && !showAllRestos && (
