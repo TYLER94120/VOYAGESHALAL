@@ -50,6 +50,7 @@ export interface Fiche {
   photos?: string[]; attributionsPhotos?: string[]; avis?: Avis[]; resume?: string
   attributs?: Record<string, boolean | undefined>
   titreIA?: string
+  conseilIA?: string
   marcheMin?: number; voitureMin?: number
   cuisine?: string; cuisineSource?: string
   statut: string; alcool?: 'non' | 'inconnu'; source: 'spot' | 'google' | 'osm'
@@ -1470,8 +1471,11 @@ function FicheScooter({ f, i, en, ouverte, onInfo, onItineraire, enfant }: {
       <p style={{ margin: 0, padding: '4px 16px 0 66px', fontSize: 15, color: 'rgba(253,250,243,0.68)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
         {metaTxt}{metaTxt ? ' · ' : ''}<TrajetMin f={f} en={en} />
       </p>
-      {/* 🟢 LA donnée qui évite un déplacement pour rien. */}
-      <p style={{ margin: 0, padding: '3px 16px 0 66px', fontSize: 14 }}><StatutOuverture f={f} en={en} /></p>
+      {/* 🟢 LA donnée qui évite un déplacement pour rien — et le conseil de
+          timing de l'IA quand plusieurs avis en parlent (jamais inventé). */}
+      <p style={{ margin: 0, padding: '3px 16px 0 66px', fontSize: 14 }}>
+        <StatutOuverture f={f} en={en} />{f.conseilIA ? <span style={{ color: 'rgba(253,250,243,0.68)' }}> · {f.conseilIA}</span> : null}
+      </p>
       <div style={{ display: 'flex', gap: 10, padding: '12px 16px 14px' }}>
         <button onClick={onItineraire}
           style={{ flex: 1, minHeight: 56, borderRadius: 14, border: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 9, background: 'linear-gradient(135deg, #D9BE6C, var(--or))', color: '#0A1509', fontSize: 16, fontWeight: 700, cursor: 'pointer' }}>

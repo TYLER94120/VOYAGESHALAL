@@ -161,6 +161,9 @@ export interface Fiche {
   /** ✒️ Titre court écrit par l'IA à partir des avis — cache 7 jours,
    *  jamais généré pendant la requête (lib/titreIA). Absent = rien. */
   titreIA?: string
+  /** 🕐 Conseil de timing IA (« mieux le matin ») — seulement si plusieurs
+   *  avis en parlent, même cache que les titres. */
+  conseilIA?: string
   /** ⏱️ Minutes réelles (API Routes, lib/trajets) — absentes si Routes n'a
    *  pas répondu : le client affiche alors des mètres, jamais une estimation. */
   marcheMin?: number

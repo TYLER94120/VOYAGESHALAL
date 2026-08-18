@@ -25,6 +25,7 @@ interface FichePourTitre {
   resume?: string
   avis?: { texte: string; note?: number }[]
   titreIA?: string
+  conseilIA?: string
   cuisine?: string
   cuisineSource?: 'base' | 'places' | 'ia' | 'generique'
 }
@@ -58,6 +59,7 @@ export async function attacherTitres(fiches: FichePourTitre[], r: Redis | null):
       if (v && typeof v === 'object') {
         if (v.t) f.titreIA = v.t
         if (v.c && CUISINES_VALIDES.has(v.c) && !f.cuisine) { f.cuisine = v.c; f.cuisineSource = 'ia' }
+        if ((v as { a?: string }).a) f.conseilIA = (v as { a?: string }).a
       }
     })
   } catch { /* pas de titre vaut mieux qu'une réponse lente */ }
@@ -73,7 +75,9 @@ Exemples de forme : « Grillades généreuses, service rapide » · « Parc calm
 
 Tu identifies AUSSI la cuisine, en UN mot, UNIQUEMENT si le même type de plats/cuisine revient dans PLUSIEURS avis (deux minimum). Un seul avis, ou un doute = null — jamais un type deviné présenté comme un fait, et jamais déduit du nom seul.
 
-Réponds UNIQUEMENT ce JSON : {"titre": "..." | null, "cuisine": "..." | null}`
+Tu donnes AUSSI un CONSEIL DE TIMING très court (5 mots max, ex. « mieux le matin », « évite 12h–14h »), UNIQUEMENT si plusieurs avis parlent d'affluence ou du meilleur moment. Sinon null — jamais un conseil inventé.
+
+Réponds UNIQUEMENT ce JSON : {"titre": "..." | null, "cuisine": "..." | null, "conseil": "..." | null}`
 
 function valide(t: string): boolean {
   if (!t || /^RIEN\b/i.test(t)) return false
@@ -91,7 +95,7 @@ function valide(t: string): boolean {
 export async function genererTitresManquants(fiches: FichePourTitre[], r: Redis | null): Promise<void> {
   const cle = process.env.ANTHROPIC_API_KEY
   if (!r || !cle) return
-  const aFaire = fiches.filter((f) => f.id && !f.titreIA && !f.cuisine && ((f.avis?.length ?? 0) > 0 || f.resume))
+  const aFaire = fiches.filter((f) => f.id && !f.titreIA && !f.cuisine && !f.conseilIA && ((f.avis?.length ?? 0) > 0 || f.resume))
   if (!aFaire.length) return
   try {
     const { default: Anthropic } = await import('@anthropic-ai/sdk')
@@ -111,17 +115,19 @@ export async function genererTitresManquants(fiches: FichePourTitre[], r: Redis 
           messages: [{ role: 'user', content: `${PROMPT}\n\n${donnees}` }],
         })
         const brut = (rep.content.find((c) => c.type === 'text')?.text ?? '').trim()
-        let t = '', cui = ''
+        let t = '', cui = '', cons = ''
         try {
-          const j = JSON.parse(brut.match(/\{[\s\S]*\}/)?.[0] ?? '{}') as { titre?: unknown; cuisine?: unknown }
+          const j = JSON.parse(brut.match(/\{[\s\S]*\}/)?.[0] ?? '{}') as { titre?: unknown; cuisine?: unknown; conseil?: unknown }
           if (typeof j.titre === 'string' && valide(j.titre)) t = j.titre
           // La liste blanche refait le travail du prompt : un mot hors
           // liste (ou « Halal ») n'entre jamais dans le cache.
           if (typeof j.cuisine === 'string' && CUISINES_VALIDES.has(j.cuisine)) cui = j.cuisine
+          const jc = (j as { conseil?: unknown }).conseil
+          if (typeof jc === 'string' && jc.length <= 40 && !/[.!?]$/.test(jc) && !/halal|certifi/i.test(jc)) cons = jc
         } catch { /* sortie illisible = rien */ }
         // Le vide aussi se mémorise (24 h) : inutile de redemander à
         // chaque recherche ce que les avis ne diront pas mieux demain.
-        await r.set(CLE(f.id!), { ...(t ? { t } : {}), ...(cui ? { c: cui } : {}) }, { ex: t || cui ? SEPT_JOURS_S : 86400 })
+        await r.set(CLE(f.id!), { ...(t ? { t } : {}), ...(cui ? { c: cui } : {}), ...(cons ? { a: cons } : {}) }, { ex: t || cui || cons ? SEPT_JOURS_S : 86400 })
       } catch { return /* quota/panne : on arrête la série, sans bruit */ }
     }
   } catch { /* SDK absent : silencieux */ }

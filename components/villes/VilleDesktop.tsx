@@ -793,7 +793,25 @@ export default function VilleDesktop({ ville }: { ville: any }) {
         )}
         {activites.length > 0 && (
         <section id="sec-activites" style={{ scrollMarginTop: 118, marginTop: 40 }}>
-          <h2 style={sectionTitle}>🎯 {en ? `Things to do in ${ville.nom}` : `Que faire à ${ville.nom}`}</h2>
+          {/* 🎯 ITÉRATION 5 : même modèle que partout — le moteur commun
+              (Places + IA : photos, notes, statut d'ouverture, titres,
+              feuille d'envies dynamique construite depuis ce qui existe).
+              La liste OpenStreetMap descend en repli : ses cartes
+              squelettiques (un nom, un bouton Maps) ne répondent ni à
+              « pourquoi y aller ? » ni à « comment m'organiser ? ». */}
+          <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 10 }}>
+            <h2 style={sectionTitle}>{en ? 'Not to be missed' : 'À ne pas manquer'}</h2>
+            {activites.length > 0 && <span style={{ fontSize: 13, color: 'var(--texte-2)' }}>{activites.length} {en ? 'activities' : 'activités'}</span>}
+          </div>
+          {centerLL && (
+            <div style={{ background: 'var(--nuit)', borderRadius: 20, padding: '14px 12px 16px', marginBottom: 20 }}>
+              <SurMesure
+                scooter fondu en={en}
+                destination={{ lat: centerLL.lat, lng: centerLL.lng, nom: ville.nom }}
+                chercheDesLOuverture="activite"
+              />
+            </div>
+          )}
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '16px' }}>
             {activites.slice(0, visibleActivites).map((a: any, i: number) => (
               <div key={i} style={card}>
