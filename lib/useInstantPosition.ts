@@ -22,6 +22,9 @@ export interface InstantPos {
   lng: number
   label: string
   pays?: string
+  /** Précision GPS en mètres, quand le navigateur la donne (correction du
+   *  18 août : « affiche la précision obtenue ») — jamais estimée. */
+  precisionM?: number
 }
 
 const LAST_KEY = 'vh_last_pos'
@@ -332,8 +335,8 @@ export function useInstantPosition(en = false) {
   const refineGps = useCallback(async () => {
     setGeoLoading(true); setGeoErr(null)
     try {
-      const { lat, lng } = await getPosition({ highAccuracy: true })
-      const p: InstantPos = { lat, lng, label: en ? 'My exact location' : 'Ma position exacte' }
+      const { lat, lng, accuracy } = await getPosition({ highAccuracy: true })
+      const p: InstantPos = { lat, lng, label: en ? 'My exact location' : 'Ma position exacte', precisionM: accuracy ? Math.round(accuracy) : undefined }
       noterDetectee(p)
       setPos(p, 'gps')
       return true

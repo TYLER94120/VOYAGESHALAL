@@ -12,8 +12,8 @@ export default function CommunityCTA({ en = false, city }: { en?: boolean; city?
       <p style={{ fontSize: 30, margin: '0 0 8px' }}>🤲</p>
       <p style={{ fontFamily: "'Playfair Display', Georgia, serif", color: '#fdfaf3', fontSize: 20, fontWeight: 800, margin: '0 0 6px', lineHeight: 1.35 }}>
         {en
-          ? <>Know a good spot{city ? ` in ${nom}` : ''}?</>
-          : <>Tu connais un bon spot{city ? ` à ${nom}` : ' ici'} ?</>}
+          ? <>Know a good place{city ? ` in ${nom}` : ''}?</>
+          : <>Tu connais une bonne adresse{city ? ` à ${nom}` : ' ici'} ?</>}
       </p>
       <p style={{ color: 'rgba(253,250,243,0.65)', fontSize: 14.5, lineHeight: 1.6, margin: '0 0 16px' }}>
         {en

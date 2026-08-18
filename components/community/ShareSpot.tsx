@@ -26,7 +26,7 @@ export default function ShareSpot({ nom, ville, url, en = false, compact = false
   }
   return (
     <button onClick={share} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, width: '100%', minHeight: 54, borderRadius: 16, border: '2px solid rgba(27,67,50,0.3)', background: '#fff', color: '#1b4332', fontWeight: 800, fontSize: 15, cursor: 'pointer', margin: '10px 0 0' }}>
-      {copied ? '✓' : '📤'} {copied ? (en ? 'Link copied!' : 'Lien copié !') : (en ? 'Share this spot (WhatsApp…)' : 'Partager ce spot (WhatsApp…)')}
+      {copied ? '✓' : '📤'} {copied ? (en ? 'Link copied!' : 'Lien copié !') : (en ? 'Share this find (WhatsApp…)' : 'Partager cette trouvaille (WhatsApp…)')}
     </button>
   )
 }

@@ -1,10 +1,9 @@
 import type { Metadata } from 'next'
-import { Suspense } from 'react'
 import fs from 'fs'
 import path from 'path'
 import { getDomainSEO, FR_URL, EN_URL } from '@/lib/domain'
 import DestinationsClient, { type VilleCard } from '@/components/destination/DestinationsClient'
-import DestinationsRedirect from '@/components/location/DestinationsRedirect'
+import BoutonRetour from '@/components/layout/BoutonRetour'
 
 const FALLBACK_IMG = 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&q=80'
 
@@ -111,9 +110,15 @@ export default async function DestinationsPage() {
 
   return (
     <main style={{ backgroundColor: '#fdfaf3' }}>
-      <Suspense fallback={null}>
-        <DestinationsRedirect />
-      </Suspense>
+      {/* ‹ correction 5 : chaque écran secondaire a son retour, pile réelle */}
+      <BoutonRetour clair />
+      {/* 🔴 AUCUNE VILLE PAR DÉFAUT — bug du 18 août : « Voyages »,
+          « Destinations » et « Choisir une ville » ouvraient tous le guide
+          de la DERNIÈRE VILLE MÉMORISÉE (Tirana chez Mohamed). La cause :
+          <DestinationsRedirect /> renvoyait d'office vers la ville stockée
+          dans le téléphone (vh_city). Une page ville ne s'ouvre que si le
+          visiteur l'a explicitement choisie — la mémoire sert à pré-remplir,
+          jamais à décider à sa place. */}
       {/* Hero de recherche + étagères + grille : rendus par le client (refonte
           « étagères » façon Netflix — voir DestinationsClient) */}
       <DestinationsClient villes={villes} continents={continents} />

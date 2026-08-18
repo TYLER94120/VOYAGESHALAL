@@ -13,7 +13,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function AjouterPage() {
   const { isEN: en } = await getDomainSEO()
   return (
-    <main style={{ minHeight: '100vh', background: 'var(--creme)' }}>
+    <main style={{ minHeight: '100dvh', background: 'var(--creme)' }}>
       <section style={{ background: 'var(--nuit)', padding: '1.4rem 1.25rem', textAlign: 'center' }}>
         <h1 style={{ fontFamily: "'Playfair Display', serif", fontSize: 'clamp(1.4rem, 4vw, 1.8rem)', fontWeight: 900, color: 'white', margin: 0 }}>
           ➕ {en ? 'Add a spot' : 'Ajouter un spot'}

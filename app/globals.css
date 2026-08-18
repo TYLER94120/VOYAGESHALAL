@@ -616,24 +616,12 @@ body { top: 0 !important; }
   content: ''; position: absolute; top: 0; left: 22%; right: 22%;
   height: 3px; border-radius: 0 0 3px 3px; background: var(--or);
 }
-/* Le bouton ➕ central est déjà une pastille pleine : un trait au-dessus
-   ferait doublon et salirait sa forme. */
-.bottom-nav-plus.active::before { display: none; }
-.bottom-nav-icon { font-size: 22px; line-height: 1; }
-.bottom-nav-label { font-size: 10px; font-weight: 700; }
-/* ➕ Ajouter : pastille OR surélevée au centre — l'action la plus précieuse
-   du site (nourrir les spots) devient physiquement le bouton le plus visible */
-.bottom-nav-plus { color: rgba(253, 250, 243, 0.75); }
-.bottom-nav-plus .bottom-nav-icon {
-  display: flex; align-items: center; justify-content: center;
-  width: 54px; height: 54px; margin-top: -30px;
-  border-radius: 50%;
-  background: var(--or);
-  color: #0b1a0f;
-  font-size: 26px; font-weight: 800;
-  box-shadow: 0 8px 22px rgba(201, 168, 76, 0.45), 0 0 0 4px rgba(11, 26, 15, 0.94);
-}
-.bottom-nav-plus.active { color: var(--or); }
+/* 🔵 Le blob central surélevé est supprimé — brief du 17 août : « 5 items
+   ÉGAUX, plus de blob ». Il cassait la grille et promettait une action
+   spéciale là où il n'y a qu'un onglet. L'onglet actif se dit par l'or et
+   par la barrette 16×3 — deux signaux, pour qui distingue mal les couleurs. */
+.bottom-nav-icon { line-height: 1; display: flex; align-items: center; justify-content: center; }
+.bottom-nav-label { font-size: 11px; font-weight: 700; }
 @media (max-width: 1023px) {
   .bottom-nav { display: flex; }
   body { padding-bottom: 96px; }
@@ -1188,10 +1176,315 @@ body:has(.accueil-ciel) .prayer-bar { display: none !important; }
   margin-right: auto;
 }
 
-/* Le rond central de la barre du bas prend l'accent du ciel courant. */
-.bottom-nav-plus .bottom-nav-icon {
-  width: 50px; height: 50px; border-radius: 999px;
+/* 🔵 Le blob central est mort — cinq entrées égales (brief du 17 août).
+   L'onglet actif se dit par la couleur or ET une barrette de 16×3 sous le
+   libellé : deux signaux valent mieux qu'un pour qui distingue mal les
+   couleurs. */
+.bottom-nav-item.active .bottom-nav-label { position: relative; }
+.bottom-nav-item.active .bottom-nav-label::after {
+  content: ""; position: absolute; left: 50%; transform: translateX(-50%);
+  bottom: -5px; width: 16px; height: 3px; border-radius: 2px; background: var(--or);
+}
+
+/* ════════════ L'ACCUEIL v6 — maquette du 16 août ════════════
+   Reprise des valeurs de la maquette, traduites dans les variables du
+   projet. Le grain, le motif géométrique, les filets d'un pixel et l'éclat
+   qui traverse le bouton : ce sont eux qui font la différence entre « un
+   fond sombre » et « un écran soigné », et ils ne coûtent aucun octet —
+   tout est en CSS et en SVG intégré. */
+
+.v6 {
+  position: relative;
+  background:
+    radial-gradient(140% 55% at 50% -8%, rgba(27, 67, 50, .85) 0%, rgba(11, 26, 15, 0) 62%),
+    radial-gradient(90% 40% at 100% 100%, rgba(201, 168, 76, .07) 0%, rgba(11, 26, 15, 0) 70%),
+    #060E08;
+  color: var(--creme);
+  padding-bottom: calc(96px + env(safe-area-inset-bottom, 0px));
+}
+/* Le grain : une turbulence SVG en surimpression. Il casse le côté « aplat
+   numérique » d'un dégradé, et c'est ce qui fait qu'un écran sombre paraît
+   imprimé plutôt que calculé. */
+.v6::after {
+  content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 3; opacity: .05;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/></filter><rect width='140' height='140' filter='url(%23n)' opacity='.55'/></svg>");
+}
+/* Le motif géométrique islamique, à 4,5 % : présent, jamais lisible. */
+.v6::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .045;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='88' height='88' viewBox='0 0 88 88'><g fill='none' stroke='%23C9A84C' stroke-width='.8'><path d='M44 4 84 44 44 84 4 44Z'/><circle cx='44' cy='44' r='19'/><path d='M44 25 63 44 44 63 25 44Z'/></g></svg>");
+  background-size: 88px 88px;
+}
+.v6 > * { position: relative; z-index: 1; max-width: 430px; margin-inline: auto; }
+
+/* ── L'écran de départ ── */
+.v6-hero {
+  min-height: 100svh; display: flex; flex-direction: column; justify-content: center;
+  padding: 32px 26px 24px; gap: 0;
+}
+.v6-marque { text-align: center; margin-bottom: 36px; }
+.v6-ornement { width: 78px; height: 44px; margin: 0 auto 20px; display: block; color: var(--or); opacity: .9; }
+.v6-logo {
+  font-family: var(--font-playfair), 'Playfair Display', Georgia, serif;
+  font-weight: 700; font-size: 42px; line-height: 1.05; letter-spacing: -.5px; color: var(--creme); margin: 0;
+}
+/* Le dégradé métallique sur « Halal » : trois arrêts, pas deux — c'est ce
+   qui donne l'impression d'un reflet plutôt que d'un simple dégradé. */
+.v6-logo em {
+  font-style: italic; font-weight: 600;
+  background: linear-gradient(100deg, #8F7229 0%, var(--or-clair) 42%, var(--or) 70%, var(--or-clair) 100%);
+  -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+}
+.v6-tagline {
+  margin: 16px 0 0; font-size: 13px; font-weight: 500; letter-spacing: .2em;
+  text-transform: uppercase; color: rgba(253, 250, 243, .55);
+}
+.v6-btn {
+  position: relative; display: flex; align-items: center; justify-content: center; gap: 12px;
+  width: 100%; min-height: 64px; border-radius: 20px; font-size: 18px; font-weight: 700;
+  overflow: hidden; border: none; cursor: pointer; text-decoration: none;
+  transition: transform .16s ease; font-family: inherit;
+}
+.v6-btn:active { transform: scale(.985); }
+.v6-btn-or {
+  background: linear-gradient(135deg, #D9BE6C 0%, var(--or) 45%, #B08F35 100%); color: #0A1509;
+  box-shadow: 0 14px 40px -14px rgba(201, 168, 76, .75), inset 0 1px 0 rgba(255, 255, 255, .45);
+}
+/* L'éclat qui traverse lentement : 4,5 s, et il s'arrête pour qui a demandé
+   moins d'animations. Une boucle rapide serait du clignotement. */
+.v6-btn-or::after {
+  content: ""; position: absolute; top: 0; left: -60%; width: 45%; height: 100%;
+  background: linear-gradient(100deg, transparent, rgba(255, 255, 255, .55), transparent);
+  transform: skewX(-18deg); animation: v6-eclat 4.5s ease-in-out infinite;
+}
+@keyframes v6-eclat { 0%, 62% { left: -60%; } 88%, 100% { left: 120%; } }
+@media (prefers-reduced-motion: reduce) {
+  .v6-btn-or::after, .v6-vers-bas svg { animation: none; }
+}
+.v6-btn-fantome {
+  background: rgba(253, 250, 243, .035); color: var(--creme);
+  border: 1px solid rgba(201, 168, 76, .26); backdrop-filter: blur(6px); font-weight: 600;
+}
+.v6-refus { margin: 12px 0 0; font-size: 14px; line-height: 1.5; color: var(--or-clair); }
+.v6-ou {
+  display: flex; align-items: center; gap: 14px; margin: 18px 0;
+  color: rgba(253, 250, 243, .42); font-size: 12px; letter-spacing: .2em; text-transform: uppercase;
+}
+.v6-ou::before, .v6-ou::after { content: ""; flex: 1; height: 1px; background: rgba(201, 168, 76, .14); }
+
+/* 🔴 DANS LE FLUX, PAS EN FIXED. En fixed, cette barre passe sous la barre
+   du navigateur mobile et devient invisible — défaut constaté en test réel
+   par Mohamed. */
+.v6-mini {
+  margin-top: 26px; display: flex; align-items: center; justify-content: center;
+  border-top: 1px solid rgba(201, 168, 76, .14); padding-top: 10px;
+}
+.v6-mini a {
+  flex: 1; min-height: 64px; display: flex; flex-direction: column; align-items: center;
+  justify-content: center; gap: 7px; text-decoration: none;
+  color: rgba(253, 250, 243, .66); font-size: 13px; font-weight: 600; letter-spacing: .08em;
+}
+.v6-mini a svg { width: 23px; height: 23px; color: var(--or); opacity: .9; }
+.v6-mini-sep { width: 1px; height: 34px; flex: none; background: linear-gradient(180deg, transparent, rgba(201, 168, 76, .26), transparent); }
+.v6-vers-bas {
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+  margin: 22px auto 0; min-height: 56px; justify-content: center;
+  color: rgba(253, 250, 243, .42); font-size: 11px; letter-spacing: .2em; text-transform: uppercase;
+}
+.v6-vers-bas svg { width: 18px; height: 18px; color: var(--or); animation: v6-flotte 2.4s ease-in-out infinite; }
+@keyframes v6-flotte { 0%, 100% { transform: translateY(0); opacity: .6; } 50% { transform: translateY(4px); opacity: 1; } }
+
+/* ── Le contenu lu par Google, et par ceux qui descendent ── */
+.v6-seo { padding: 0 26px; }
+.v6-seo section { padding: 34px 0; border-top: 1px solid rgba(201, 168, 76, .14); }
+.v6-seo section:first-child { border-top: none; }
+.v6-seo h2 { font-family: var(--font-playfair), 'Playfair Display', Georgia, serif; font-size: 26px; line-height: 1.2; margin: 0 0 14px; font-weight: 700; }
+.v6-seo h3 { font-size: 17px; font-weight: 700; margin: 0 0 6px; color: var(--creme); }
+.v6-seo p { font-size: 16px; line-height: 1.62; color: rgba(253, 250, 243, .74); margin: 0 0 14px; }
+.v6-seo strong { color: var(--or-clair); font-weight: 600; }
+.v6-villes { display: flex; flex-direction: column; gap: 10px; margin-top: 18px; }
+.v6-ville {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  min-height: 60px; padding: 0 18px; border-radius: 14px; text-decoration: none;
+  background: linear-gradient(165deg, rgba(253, 250, 243, .05), rgba(253, 250, 243, .012));
+  border: 1px solid rgba(201, 168, 76, .14); color: var(--creme); font-size: 17px; font-weight: 600;
+  transition: border-color .16s;
+}
+.v6-ville:hover, .v6-ville:focus-visible { border-color: var(--or); }
+.v6-sc { font-size: 14px; font-weight: 700; color: var(--or-clair); letter-spacing: .04em; font-variant-numeric: tabular-nums; }
+.v6-atouts { display: flex; flex-direction: column; gap: 20px; margin-top: 20px; }
+.v6-atout p { font-size: 15px; margin: 0; }
+.v6-faq details { border-top: 1px solid rgba(201, 168, 76, .14); padding: 16px 0; }
+.v6-faq details:first-of-type { border-top: none; }
+.v6-faq summary {
+  list-style: none; cursor: pointer; min-height: 56px; display: flex; align-items: center; gap: 12px;
+  font-size: 17px; font-weight: 600; color: var(--creme);
+}
+.v6-faq summary::-webkit-details-marker { display: none; }
+.v6-faq summary::after { content: "+"; margin-inline-start: auto; color: var(--or); font-size: 22px; font-weight: 400; }
+.v6-faq details[open] summary::after { content: "–"; }
+.v6-faq details p { margin: 10px 0 0; font-size: 15px; }
+
+.v6-pied { padding: 30px 26px calc(30px + env(safe-area-inset-bottom, 0px)); border-top: 1px solid rgba(201, 168, 76, .14); text-align: center; }
+.v6-pied nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 6px; margin-bottom: 20px; }
+.v6-pied nav a {
+  min-height: 56px; padding: 0 14px; display: flex; align-items: center; border-radius: 999px;
+  color: rgba(253, 250, 243, .68); text-decoration: none; font-size: 16px; border: 1px solid rgba(201, 168, 76, .14);
+}
+.v6-bismillah { color: rgba(201, 168, 76, .7); font-size: 22px; padding: 10px 0; }
+.v6-pied small { display: block; color: rgba(253, 250, 243, .45); font-size: 14px; margin-top: 14px; line-height: 1.6; }
+.v6-pied-legal { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; margin-top: 4px; }
+.v6-pied-legal a {
+  min-height: 56px; padding: 0 14px; display: flex; align-items: center; border-radius: 999px;
+  color: rgba(253, 250, 243, .55); text-decoration: none; font-size: 16px;
+}
+
+@media (min-width: 900px) {
+  .v6 > * { max-width: 720px; }
+  .v6-hero { min-height: 88svh; }
+}
+
+/* ── FLUX PÉPITES (/spots) — un spot = un écran, scroll-snap vertical ──
+   Le CTA et la ligne du bas remontent au-dessus de la pilule de nav
+   (fixed, bas 10px + safe-area) : un bouton recouvert n'existe pas. */
+.flux {
+  height: 100dvh;
+  position: relative;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  overscroll-behavior-y: contain;
+  scrollbar-width: none;
+  background: var(--nuit, #0B1A0F);
+}
+.flux::-webkit-scrollbar { display: none; }
+.flux-slide {
+  position: relative;
+  height: 100dvh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  overflow: hidden;
+}
+.flux-slide > img, .flux-slide > video {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+/* Lisibilité garantie même sur photo claire (brief 2a) */
+.flux-voile {
+  position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(180deg, rgba(11,26,15,.72) 0%, transparent 30%, transparent 52%, rgba(11,26,15,.92) 100%);
+}
+.flux-chips {
+  position: absolute; top: 0; left: 0; right: 0; z-index: 4;
+  display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none;
+  padding: calc(10px + env(safe-area-inset-top)) 12px 10px;
+}
+.flux-chips::-webkit-scrollbar { display: none; }
+.flux-chip {
+  flex-shrink: 0; height: 40px; padding: 0 16px; border-radius: 999px;
+  font-weight: 800; font-size: 13.5px; cursor: pointer;
+  background: rgba(11,26,15,.55); color: var(--creme, #FDFAF3);
+  border: 1px solid rgba(253,250,243,.22);
+}
+.flux-chip[aria-pressed="true"] { background: #C9A84C; color: #0B1A0F; border-color: #C9A84C; }
+.flux-dots {
+  position: absolute; left: 10px; top: 50%; transform: translateY(-50%);
+  display: flex; flex-direction: column; gap: 7px; z-index: 3; pointer-events: none;
+}
+.flux-dot { width: 3px; height: 16px; border-radius: 2px; background: rgba(253,250,243,.28); }
+.flux-dot.on { background: #C9A84C; }
+.flux-rail {
+  position: absolute; right: 10px; bottom: 195px; z-index: 4;
+  display: flex; flex-direction: column; gap: 14px; align-items: center;
+}
+.flux-rail button {
+  width: 48px; height: 48px; border-radius: 999px; border: none; cursor: pointer;
+  background: rgba(11,26,15,.55); color: var(--creme, #FDFAF3);
   display: flex; align-items: center; justify-content: center;
-  background: var(--ciel-accent, var(--or));
-  color: #141018; font-size: 20px;
+}
+.flux-rail .lbl { display: block; color: var(--creme, #FDFAF3); font-size: 11px; font-weight: 700; text-align: center; margin-top: 3px; text-shadow: 0 1px 4px rgba(0,0,0,.6); }
+.flux-info {
+  position: absolute; left: 0; right: 66px; bottom: 0; z-index: 3;
+  padding: 0 14px calc(88px + env(safe-area-inset-bottom));
+}
+.flux-info .flux-cta-zone { margin-right: -52px; }
+.flux-pourquoi {
+  color: rgba(253,250,243,.85); font-size: 14px; font-weight: 500; line-height: 1.45;
+  margin: 4px 0 0; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+.flux-carte-texte {
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(circle at 20% 15%, rgba(201,168,76,0.12), transparent 45%),
+    radial-gradient(circle at 85% 80%, rgba(201,168,76,0.08), transparent 40%),
+    #1B4332;
+  display: flex; align-items: center; justify-content: center; padding: 24px 24px 220px;
+}
+/* Mobile : le flux est un écran FIXE (la page a une barre prière sticky et
+   un en-tête qui décaleraient les slides de ~80 px et casseraient le snap).
+   z-index 90 : SOUS la pilule de nav (100) et la barre prière (500), qui
+   restent visibles — les chips commencent donc sous la barre. */
+.flux-solo .flux { position: fixed; inset: 0; z-index: 90; }
+.flux-solo .flux-chips {
+  /* La barre prière sticky fait jusqu'à deux lignes (~80 px) : les chips
+     démarrent dessous, jamais coupées. */
+  padding-top: calc(86px + env(safe-area-inset-top));
+}
+
+a.flux-ajouter { display: none !important; }
+
+/* Desktop : grille 3 colonnes, le flux ne s'ouvre qu'en plein écran au clic */
+.flux-grille { display: none; }
+.flux-plein-desktop { position: fixed; inset: 0; z-index: 300; background: rgba(11,26,15,.97); }
+.flux-plein-desktop .flux { max-width: 480px; margin: 0 auto; }
+@media (min-width: 900px) {
+  .flux-solo { display: none; }
+  a.flux-ajouter { display: inline-flex !important; }
+  .flux-grille {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px;
+    max-width: 1060px; margin: 0 auto; padding: 8px 18px 80px;
+  }
+}
+
+/* ── CORRECTION 4 : la vue carte — pilule d'onglets + tiroir du podium ── */
+.carte-tabs {
+  position: absolute; top: 14px; left: 50%; transform: translateX(-50%); z-index: 1001;
+  display: flex; gap: 8px; padding: 6px; border-radius: 999px;
+  background: rgba(6,14,8,0.82);
+  -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
+  border: 1px solid rgba(201,168,76,0.14);
+}
+.carte-tab {
+  min-height: 48px; padding: 0 16px; border-radius: 999px; border: none; cursor: pointer;
+  background: none; font-size: 14px; font-weight: 600; color: rgba(253,250,243,0.7);
+  transition: background .16s, color .16s;
+}
+.carte-tab.on { background: linear-gradient(135deg, #D9BE6C, var(--or)); color: #0A1509; }
+/* La pilule ne vit qu'en vue carte */
+.autour-plein[data-vue="liste"] .carte-tabs, .autour-plein[data-vue="liste"] .carte-tiroir { display: none; }
+
+.carte-tiroir {
+  position: absolute; left: 0; right: 0; bottom: 0; z-index: 1001;
+  background: linear-gradient(180deg, rgba(6,14,8,0.88), rgba(6,14,8,0.98));
+  -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px);
+  border-top: 1px solid rgba(201,168,76,0.26); border-radius: 22px 22px 0 0;
+  padding: 8px 16px calc(14px + env(safe-area-inset-bottom));
+}
+.carte-poignee { width: 44px; height: 4px; border-radius: 999px; background: rgba(253,250,243,0.25); margin: 4px auto 10px; }
+.carte-tiroir-titre {
+  margin: 0 0 6px; font-size: 12px; font-weight: 600; letter-spacing: 0.18em;
+  text-transform: uppercase; color: rgba(201,168,76,0.85);
+}
+.carte-tiroir-ligne {
+  display: flex; align-items: center; gap: 12px; min-height: 60px; width: 100%;
+  border: none; background: none; cursor: pointer; text-align: left; padding: 0;
+  border-top: 1px solid rgba(253,250,243,0.06); color: var(--creme, #FDFAF3);
+}
+.carte-tiroir-ligne:first-of-type { border-top: none; }
+.carte-tiroir-rang { flex: none; width: 22px; font-family: 'Playfair Display', Georgia, serif; font-size: 17px; color: var(--or-clair, #E9D9A6); }
+.carte-tiroir-nom { flex: 1; min-width: 0; font-size: 15.5px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.carte-tiroir-meta { flex: none; font-size: 13.5px; color: rgba(253,250,243,0.6); }
+.carte-tiroir-badge {
+  flex: none; font-size: 11px; font-weight: 700; padding: 4px 9px; border-radius: 999px;
+  background: rgba(201,168,76,0.16); color: var(--or-clair, #E9D9A6); border: 1px solid rgba(201,168,76,0.26);
 }

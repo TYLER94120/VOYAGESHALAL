@@ -29,7 +29,7 @@ export default function NearbySpotsHome() {
       <div style={{ maxWidth: 640, margin: '0 auto' }}>
         <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 10, marginBottom: 12 }}>
           <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: 22, fontWeight: 900, color: '#0b1a0f', margin: 0 }}>
-            🤝 {en ? 'Shared spots near you' : 'Spots partagés près de toi'}
+            🤝 {en ? 'Shared finds near you' : 'Trouvailles partagées près de toi'}
           </h2>
           <Link href="/communaute" style={{ color: '#1b4332', fontWeight: 700, fontSize: 14, whiteSpace: 'nowrap' }}>
             {en ? 'Community →' : 'Communauté →'}

@@ -47,7 +47,7 @@ export default function CitySpots({ lat, lng, villeNom, slug, en }: { lat: numbe
       )}
       <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
         <Link href={`/communaute/ajouter?ville=${slug}`} style={{ display: 'inline-flex', alignItems: 'center', gap: 8, minHeight: 52, padding: '0 22px', borderRadius: 999, background: 'var(--or)', color: '#0b1a0f', fontWeight: 900, fontSize: 15, textDecoration: 'none' }}>
-          ➕ {en ? 'Share a spot (30 s)' : 'Partager un spot (30 s)'}
+          ➕ {en ? 'Share a find (30 s)' : 'Partager une trouvaille (30 s)'}
         </Link>
         <Link href="/communaute" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, minHeight: 52, padding: '0 22px', borderRadius: 999, border: '1.5px solid rgba(27,67,50,0.3)', color: 'var(--foret)', fontWeight: 700, fontSize: 15, textDecoration: 'none' }}>
           🤝 {en ? 'The community →' : 'La communauté →'}

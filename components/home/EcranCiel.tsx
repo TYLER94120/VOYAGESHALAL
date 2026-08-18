@@ -3,7 +3,7 @@ import { useMemo, useState } from 'react'
 import Link from 'next/link'
 import { croisement, phraseCroisement } from '@/lib/croisementPriere.mjs'
 import { CIELS } from '@/lib/cielDuMoment.mjs'
-import { filtresDisponibles, appliquer } from '@/lib/propositions.mjs'
+import { trisDisponibles, appliquer, type Tri } from '@/lib/propositions.mjs'
 
 // 🌅 L'ÉCRAN DES CINQ CIELS — reproduction fidèle de
 // docs/maquette-cinq-ciels.html (commit 52b4563).
@@ -100,9 +100,10 @@ export default function EcranCiel({
   verdict: { ville: string; titre: string; lignes: string[]; attention: string | null; jauges: { nom: string; note: number | null }[] } | null
 }) {
   const accent = CIELS[ciel].accent
-  const [filtres, setFiltres] = useState<string[]>([])
-  const dispo = useMemo(() => filtresDisponibles(fiches), [fiches])
-  const liste = useMemo(() => appliquer(fiches, filtres), [fiches, filtres])
+  // Un seul tri à la fois — brief du 17 août ; re-tap = retirer.
+  const [triActif, setTriActif] = useState<string | null>(null)
+  const dispo = useMemo(() => trisDisponibles(fiches), [fiches])
+  const liste = useMemo(() => appliquer(fiches, triActif), [fiches, triActif])
   const [tete, ...suite] = liste
 
   return (
@@ -253,13 +254,13 @@ export default function EcranCiel({
       {/* ⑤ LES TROIS FILTRES */}
       {mode === 'normal' && dispo.length > 0 && (
         <div style={{ display: 'flex', gap: 7 }}>
-          {dispo.map((f) => {
-            const on = filtres.includes(f.id)
+          {dispo.map((f: Tri) => {
+            const on = triActif === f.id
             return (
               <button key={f.id} aria-pressed={on}
-                onClick={() => setFiltres((v) => (v.includes(f.id) ? v.filter((x) => x !== f.id) : [...v, f.id]))}
+                onClick={() => setTriActif(on ? null : f.id)}
                 style={{ border: `1px solid ${on ? '#fff' : 'rgba(255,255,255,.28)'}`, borderRadius: 999, padding: '8px 14px', fontSize: 16, fontWeight: 600, color: on ? '#0A1020' : 'rgba(255,255,255,.9)', background: on ? '#fff' : 'transparent', whiteSpace: 'nowrap', minHeight: 56, cursor: 'pointer' }}>
-                {f.icone} {f.fr}
+                {f.fr}
               </button>
             )
           })}

@@ -109,7 +109,13 @@ export default function AjouterClient() {
         const body: Record<string, unknown> = { spotId: j.spot.id }
         if (pendingPhoto) body.photo = pendingPhoto
         if (pendingVideo) { body.video = pendingVideo.payload; body.videoTexte = pendingVideo.videoTexte; body.videoDebut = pendingVideo.videoDebut; body.videoFin = pendingVideo.videoFin }
-        fetch('/api/community/enrich', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) }).catch(() => {})
+        fetch('/api/community/enrich', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) })
+          .then(() => {
+            // 🔎 Claude lit la photo en arrière-plan (menu → prix réels).
+            // Fire-and-forget : un échec est silencieux, jamais bloquant.
+            if (pendingPhoto) fetch('/api/spots/ia', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ spotId: j.spot.id }) }).catch(() => {})
+          })
+          .catch(() => {})
         setMediaDone(true)
       }
       setDone({ points: j.pointsGagnes, badges: j.nouveauxBadges ?? [], impact: j.impact ?? 0, url: j.url, anon: j.anon === true, spotId: j.spot?.id, claimKey: j.claimKey, enAttente: j.spot?.status === 'pending' })
@@ -276,12 +282,19 @@ export default function AjouterClient() {
               </button>
             )}
           </div>
-          <textarea value={note} onChange={(e) => setNote(e.target.value)} maxLength={200} rows={2}
-            placeholder={en ? '✏️ A word for the next traveler… (e.g. "2nd floor, clean mat")' : '✏️ Un mot pour le prochain… (ex. « 2e étage, tapis propre »)'}
-            style={{ width: '100%', padding: 14, borderRadius: 14, border: '1.5px solid rgba(27,67,50,0.25)', fontSize: 15.5, margin: '0 0 12px', background: '#fff', resize: 'none' }} />
+          {/* 🔑 LA PHRASE « POURQUOI » EST OBLIGATOIRE (brief 2a, ≤ 80 car.) :
+              c'est elle qui rend le spot lisible en 2 secondes dans le flux.
+              Un spot sans raison d'exister n'aide personne. */}
+          <p style={{ fontSize: 13, fontWeight: 800, color: '#1b4332', letterSpacing: 1, textTransform: 'uppercase', margin: '2px 0 6px' }}>
+            {en ? 'Why is it a gem? (required)' : 'Pourquoi c\'est une pépite ? (obligatoire)'}
+          </p>
+          <textarea value={note} onChange={(e) => setNote(e.target.value)} maxLength={80} rows={2}
+            placeholder={en ? 'One sentence, e.g. "Full menu 10–20 €, family vibe, kids pool"' : 'Une phrase, ex. « Menu complet 10–20 €, cadre familial »'}
+            style={{ width: '100%', padding: 14, borderRadius: 14, border: '1.5px solid rgba(27,67,50,0.25)', fontSize: 15.5, margin: '0 0 4px', background: '#fff', resize: 'none' }} />
+          <p style={{ fontSize: 12, color: '#9ca3af', margin: '0 0 12px', textAlign: 'right' }}>{note.trim().length}/80</p>
 
-          <button onClick={() => void publier()} disabled={busy || (lieu.manuel && nom.trim().length < 3)}
-            style={{ ...big, opacity: lieu.manuel && nom.trim().length < 3 ? 0.5 : 1 }}>
+          <button onClick={() => void publier()} disabled={busy || (lieu.manuel && nom.trim().length < 3) || note.trim().length < 5}
+            style={{ ...big, opacity: (lieu.manuel && nom.trim().length < 3) || note.trim().length < 5 ? 0.5 : 1 }}>
             {busy ? '…' : (en ? '🚀 Publish' : '🚀 Publier')}
           </button>
 
@@ -298,7 +311,7 @@ export default function AjouterClient() {
         <div style={{ position: 'fixed', inset: 0, zIndex: 210, background: 'rgba(11,26,15,0.96)', overflowY: 'auto', padding: '30px 18px 60px' }}>
           <div style={{ maxWidth: 480, margin: '0 auto' }}>
             <p style={{ color: '#fdfaf3', fontWeight: 900, fontSize: 19, margin: '0 0 14px', textAlign: 'center' }}>
-              {en ? 'Film your spot 🎥' : 'Filme ton spot 🎥'}
+              {en ? 'Film your find' : 'Filme ta trouvaille'}
             </p>
             <MediaCapture
               onSkip={() => setReelOpen(false)}
@@ -330,7 +343,7 @@ export default function AjouterClient() {
         <div style={{ position: 'fixed', inset: 0, zIndex: 210, background: 'rgba(11,26,15,0.96)', overflowY: 'auto', padding: '30px 18px 60px' }}>
           <div style={{ maxWidth: 480, margin: '0 auto' }}>
             <p style={{ color: '#fdfaf3', fontWeight: 900, fontSize: 19, margin: '0 0 14px', textAlign: 'center' }}>
-              {mediaDone ? (en ? '✓ Added to your spot!' : '✓ Ajouté à ton spot !') : (en ? 'Show your spot 🎥' : 'Fais voir ton spot 🎥')}
+              {mediaDone ? (en ? '✓ Added to your find!' : '✓ Ajouté à ta trouvaille !') : (en ? 'Show your find' : 'Fais voir ta trouvaille')}
             </p>
             {mediaDone ? (
               <button onClick={() => setMediaOpen(false)} style={{ display: 'block', width: '100%', minHeight: 54, borderRadius: 16, border: 'none', background: 'var(--or)', color: '#0b1a0f', fontWeight: 900, fontSize: 15, cursor: 'pointer' }}>
@@ -338,7 +351,7 @@ export default function AjouterClient() {
               </button>
             ) : (
               <MediaCapture
-                skipLabel={en ? 'Skip — my spot is already live' : 'Passer — mon spot est déjà publié'}
+                skipLabel={en ? 'Skip — my find is already live' : 'Passer — ma trouvaille est déjà publiée'}
                 onSkip={() => setMediaOpen(false)}
                 onDone={async (m) => {
                   try {

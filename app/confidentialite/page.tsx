@@ -47,7 +47,7 @@ export default async function ConfidentialitePage() {
   const marque = isEN ? 'GoHalalTravel' : 'VoyagesHalal'
 
   return (
-    <main style={{ minHeight: '100vh', background: 'var(--creme)' }}>
+    <main style={{ minHeight: '100dvh', background: 'var(--creme)' }}>
       {/* Hero sombre */}
       <section className="relative overflow-hidden text-center" style={{ background: 'var(--nuit)', padding: '4rem 1.5rem 3rem' }}>
         <IslamicPattern opacity={0.06} />

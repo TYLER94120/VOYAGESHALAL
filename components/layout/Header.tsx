@@ -36,7 +36,7 @@ export default function Header({ brandEN = false }: { brandEN?: boolean }) {
           </Link>
           {/* Virage Spots : le feed en 2e position ; Destinations démoté dans
               « Explorer » (pages villes conservées et indexées — SEO intact) */}
-          <Link href="/spots" className="nav-link">
+          <Link href="/trouvailles" className="nav-link">
             💎 Spots
           </Link>
           <Link href="/guides" className="nav-link">
@@ -119,11 +119,11 @@ export default function Header({ brandEN = false }: { brandEN?: boolean }) {
             🏠 {isEN ? 'Home' : 'Accueil'}
           </Link>
           {/* Virage Spots : le cœur d'abord */}
-          <Link href="/spots" onClick={() => setMenuOpen(false)}>
+          <Link href="/trouvailles" onClick={() => setMenuOpen(false)}>
             💎 Spots
           </Link>
           <Link href="/communaute/ajouter" onClick={() => setMenuOpen(false)}>
-            ➕ {isEN ? 'Add a spot' : 'Ajouter un spot'}
+            ➕ {isEN ? 'Add a find' : 'Ajouter une trouvaille'}
           </Link>
           <Link href="/guides" onClick={() => setMenuOpen(false)}>
             📗 Guides

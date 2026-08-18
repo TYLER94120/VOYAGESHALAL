@@ -135,7 +135,7 @@ export default function MosqueeProchePage() {
   }
 
   return (
-    <main style={{ minHeight: '100vh', background: 'var(--creme)' }}>
+    <main style={{ minHeight: '100dvh', background: 'var(--creme)' }}>
       {/* Bandeau compact : le résultat doit être visible sans scroller */}
       <section className="relative overflow-hidden text-center" style={{ background: 'var(--nuit)', padding: '1.5rem 1.5rem 1.25rem' }}>
         <IslamicPattern opacity={0.06} />

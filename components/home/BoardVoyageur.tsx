@@ -947,12 +947,12 @@ export default function BoardVoyageur({
           // widgets sur lesquels on travaille. Les photos, elles, vivent
           // dans les sections juste en dessous.
           const spotsWidget = (
-            <Link href={pres && !pres.proches.length && !pres.autour.length ? '/spots' : '/autour-de-moi'}
+            <Link href={pres && !pres.proches.length && !pres.autour.length ? '/trouvailles' : '/autour-de-moi'}
               className="board-slim"
               style={{ ...T.tile, marginTop: 10, width: '100%', display: 'flex', alignItems: 'center', gap: 10, padding: '13px 14px', textDecoration: 'none' }}>
               <span style={{ fontSize: 18 }} aria-hidden>💎</span>
               <p style={{ flex: 1, color: '#fdfaf3', fontWeight: 700, fontSize: 13.5, margin: 0, lineHeight: 1.35 }}>
-                Spots{nSpots != null && nSpots > 0 ? <span style={{ color: 'rgba(253,250,243,0.78)' }}> · {nSpots} {villeNom ? (en ? `in ${villeNom}` : `à ${villeNom}`) : (en ? 'shared by travelers' : 'partagés par des voyageurs')}</span> : null}
+                Trouvailles{nSpots != null && nSpots > 0 ? <span style={{ color: 'rgba(253,250,243,0.78)' }}> · {nSpots} {villeNom ? (en ? `in ${villeNom}` : `à ${villeNom}`) : (en ? 'shared by travelers' : 'partagés par des voyageurs')}</span> : null}
               </p>
               <span style={{ color: 'var(--or)', fontWeight: 800, fontSize: 13 }} aria-hidden>→</span>
             </Link>

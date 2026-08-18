@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import IslamicPattern from '@/components/ui/IslamicPattern'
 import QiblaCompass from '@/components/qibla/QiblaCompass'
 import { getDomainSEO } from '@/lib/domain'
+import BoutonRetour from '@/components/layout/BoutonRetour'
 
 export async function generateMetadata(): Promise<Metadata> {
   const { isEN, siteUrl } = await getDomainSEO()
@@ -21,7 +22,9 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function QiblaPage() {
   const { isEN: en } = await getDomainSEO()
   return (
-    <main style={{ minHeight: '100vh', background: 'var(--creme)' }}>
+    <main style={{ minHeight: '100dvh', background: 'var(--creme)' }}>
+      {/* ‹ correction 5 : chaque écran secondaire a son retour, pile réelle */}
+      <BoutonRetour clair />
       {/* Le titre occupait 40 % du premier écran : l'outil commençait sous la
           ligne de flottaison. Il est réduit — on vient ici pour la boussole,
           pas pour lire un titre. */}

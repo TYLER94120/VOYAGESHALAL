@@ -3,6 +3,7 @@ import { getDomainSEO } from '@/lib/domain'
 import { localizedHref } from '@/lib/slugs'
 import CarnetClient from '@/components/carnet/CarnetClient'
 import IslamicPattern from '@/components/ui/IslamicPattern'
+import BoutonRetour from '@/components/layout/BoutonRetour'
 
 // « Mon carnet » (P3) — la collection personnelle de l'utilisateur.
 // Contenu 100 % personnel → noindex (la page n'a pas de valeur SEO).
@@ -22,7 +23,9 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function CarnetPage() {
   const { isEN: en } = await getDomainSEO()
   return (
-    <main style={{ minHeight: '100vh', background: 'var(--creme)' }}>
+    <main style={{ minHeight: '100dvh', background: 'var(--creme)' }}>
+      {/* ‹ correction 5 : chaque écran secondaire a son retour, pile réelle */}
+      <BoutonRetour clair />
       <section className="relative overflow-hidden text-center" style={{ background: 'var(--nuit)', padding: '3rem 1.5rem 2.25rem' }}>
         <IslamicPattern opacity={0.06} />
         <div className="relative z-10">
