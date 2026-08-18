@@ -202,6 +202,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
   const [mode, setMode] = useState<Mode>('voiture')
   const [plafond, setPlafond] = useState(15)
   const [rayonKm, setRayonKm] = useState(20)
+  const [ecartesAlcool, setEcartesAlcool] = useState(0)
   const [posUtilisee, setPosUtilisee] = useState<'gps' | 'ip' | 'ville' | null>(null)
   const [prose, setProse] = useState('')
   const [aEcrit, setAEcrit] = useState(false)
@@ -483,7 +484,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
 
       const ac = new AbortController()
       const to = setTimeout(() => ac.abort(), 20_000)
-      let corps: { fiches?: Fiche[]; autres?: Fiche[]; source?: string; etatGoogle?: 'ok' | 'vide' | 'muet' | 'sans-cle'; mode?: Mode; plafondMin?: number; rayonKm?: number; relaches?: string[]; motManquant?: string | null } = {}
+      let corps: { fiches?: Fiche[]; autres?: Fiche[]; source?: string; etatGoogle?: 'ok' | 'vide' | 'muet' | 'sans-cle'; mode?: Mode; plafondMin?: number; rayonKm?: number; rayonAtteintKm?: number; ecartesAlcool?: number; relaches?: string[]; motManquant?: string | null } = {}
       try {
         const r = await fetch('/api/lieux', {
           method: 'POST', signal: ac.signal,
@@ -512,7 +513,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
       setFiches(trois); setAutres(corps.autres ?? []); setSource(corps.source ?? ''); setEtatGoogle(corps.etatGoogle ?? '')
       // La carte se peuple d'ici, et de nulle part ailleurs.
       onResultats?.(trois)
-      setMode(corps.mode ?? 'voiture'); setPlafond(corps.plafondMin ?? 15); setRayonKm(corps.rayonKm ?? 20); setRelaches(corps.relaches ?? []); setMotManquant(corps.motManquant ?? null)
+      setMode(corps.mode ?? 'voiture'); setPlafond(corps.plafondMin ?? 15); setRayonKm(corps.rayonAtteintKm ?? corps.rayonKm ?? 20); setEcartesAlcool(corps.ecartesAlcool ?? 0); setRelaches(corps.relaches ?? []); setMotManquant(corps.motManquant ?? null)
       setEtape('resultat')
       // La vue se place sur la réponse, sans que le visiteur ait à la
       // chercher. `requestAnimationFrame` : on attend que les fiches soient
@@ -1129,8 +1130,8 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
                 : crit.categorie === 'mosquee'
                   ? t(`Aucun lieu de prière trouvé jusqu'à ${rayonKm} km — on préfère te le dire plutôt que d'inventer.`,
                       `No prayer place found within ${rayonKm} km — we would rather say so than invent one.`)
-                  : t(`Aucune adresse trouvée jusqu'à ${rayonKm} km — on préfère te le dire plutôt que d'inventer.`,
-                      `Nothing found within ${rayonKm} km — we would rather say so than invent an address.`)}
+                  : t(`Aucune adresse trouvée jusqu'à ${rayonKm} km — on préfère te le dire plutôt que d'inventer.${ecartesAlcool ? ` (${ecartesAlcool} adresse${ecartesAlcool > 1 ? 's' : ''} écartée${ecartesAlcool > 1 ? 's' : ''} : service d'alcool identifié.)` : ''}`,
+                      `Nothing found within ${rayonKm} km — we would rather say so than invent an address.${ecartesAlcool ? ` (${ecartesAlcool} set aside: alcohol service identified.)` : ''}`)}
             </p>
             <div style={rangee}>
               {crit.budget !== 'peu-importe' && (
