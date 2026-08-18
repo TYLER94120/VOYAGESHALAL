@@ -595,17 +595,32 @@ export default function VilleDesktop({ ville }: { ville: any }) {
       <div ref={contentRef} style={{ maxWidth: WRAP, margin: '0 auto', padding: '28px 24px 80px', scrollMarginTop: '12px' }}>
         <section id="sec-restaurants" style={{ scrollMarginTop: 118 }}>
           <>
-            <h2 style={sectionTitle}>🍽 {en ? `Eating halal in ${ville.nom}` : `Manger halal à ${ville.nom}`}</h2>
-            {/* BLOC 3 — statut halal HONNÊTE selon le contexte de la ville */}
-            <div style={{ background: villeNonMusulmane ? 'rgba(201,168,76,0.12)' : 'rgba(27,67,50,0.07)', border: '1px solid rgba(27,67,50,0.15)', borderRadius: 14, padding: '12px 16px', marginBottom: 18, fontSize: 13.5, color: 'var(--foret)', lineHeight: 1.6 }}>
-              {villeNonMusulmane
-                ? (en
-                  ? '🔎 Places below are reported halal by their sources (Google / OpenStreetMap) — always verify on site. We never certify.'
-                  : '🔎 Les adresses ci-dessous sont signalées halal par leurs sources (Google / OpenStreetMap) — vérifiez toujours sur place. Nous ne certifions rien.')
-                : (en
-                  ? `🕌 ${ville.nom} is a Muslim-majority city — dining is overwhelmingly halal by default. We never certify individual places.`
-                  : `🕌 ${ville.nom} est une ville à majorité musulmane — la restauration y est très majoritairement halal par défaut. Nous ne certifions aucun lieu individuellement.`)}
+            {/* 🍽 ITÉRATION 5 : le guide CHOISIT — même modèle que Autour.
+                Titre + compteur, UNE ligne de contexte, puis le MOTEUR
+                COMMUN en mode scooter : top 3, titres IA, statut
+                d'ouverture, « une envie précise ? » avec compteurs.
+                L'annuaire complet reste plus bas, replié — le repli, jamais
+                l'écran d'entrée. */}
+            <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 10 }}>
+              <h2 style={sectionTitle}>{en ? 'The 3 best tables' : 'Les 3 meilleures tables'}</h2>
+              {restaurantsTotal > 0 && <span style={{ fontSize: 13, color: 'var(--texte-2)' }}>{restaurantsTotal} {en ? 'listings' : 'adresses'}</span>}
             </div>
+            <div style={{ background: villeNonMusulmane ? 'rgba(201,168,76,0.12)' : 'rgba(27,67,50,0.07)', border: '1px solid rgba(27,67,50,0.15)', borderRadius: 14, padding: '10px 14px', margin: '0 0 14px', fontSize: 13.5, color: 'var(--foret)', lineHeight: 1.55 }}>
+              {villeNonMusulmane
+                ? (en ? '🔎 Reported halal by their sources — verify on site. Green badge = verified by us.'
+                     : '🔎 Adresses signalées halal par leurs sources — à vérifier sur place. Badge vert = vérifié par nous.')
+                : (en ? `🕌 Muslim-majority country: dining is overwhelmingly halal. Green badge = verified by us.`
+                     : `🕌 Pays à majorité musulmane : la restauration est très majoritairement halal. Badge vert = vérifié par nous.`)}
+            </div>
+            {centerLL && (
+              <div style={{ background: 'var(--nuit)', borderRadius: 20, padding: '14px 12px 16px', marginBottom: 20 }}>
+                <SurMesure
+                  scooter fondu en={en}
+                  destination={{ lat: centerLL.lat, lng: centerLL.lng, nom: ville.nom }}
+                  chercheDesLOuverture="manger"
+                />
+              </div>
+            )}
             {/* BLOC 6 — honnêteté d'échelle : pas de data réelle → on le DIT */}
             {restaurants.length === 0 && (
               <div style={{ ...card, textAlign: 'center', padding: '36px 22px', marginBottom: 18 }}>
@@ -675,17 +690,11 @@ export default function VilleDesktop({ ville }: { ville: any }) {
               {ccDisplay.length < 3 && <span style={{ fontSize: '13px', color: 'var(--texte-2)' }}>{restosFiltres.length} {en ? 'listings' : 'adresses'}</span>}
             </div>
             )}
-            {/* filtres catégories en pills */}
+            {/* Itération 5 : le mur de chips cuisines a disparu — la feuille
+                d'envies du moteur commun le remplace. Ne reste que le toggle
+                halal, qui filtre CETTE liste repliée. */}
             {restaurants.length > 0 && showAllRestos && (
             <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginBottom: '22px' }}>
-              {categories.map((cat) => {
-                const active = activeFilter === cat
-                return (
-                  <button key={cat} onClick={() => (setActiveFilter(cat), setVisibleRestos(20))} style={{ padding: '8px 16px', borderRadius: '30px', border: '1.5px solid rgba(27,67,50,0.25)', background: active ? 'var(--foret)' : '#fff', color: active ? '#fff' : 'var(--foret)', fontSize: '13.5px', fontWeight: 600, cursor: 'pointer' }}>
-                    {cat === 'Tous' ? (en ? '🍽 All' : '🍽 Tous') : `${CATEGORY_EMOJI[cat] ?? '🍽'} ${enLabel(cat, en)}`}
-                  </button>
-                )
-              })}
               <button onClick={() => (setHalalOnly(!halalOnly), setVisibleRestos(20))}
                 aria-pressed={halalOnly}
                 style={{ padding: '8px 16px', borderRadius: '30px', border: `1.5px solid ${halalOnly ? '#8A6D1E' : 'rgba(138,109,30,0.4)'}`, background: halalOnly ? '#8A6D1E' : '#fff', color: halalOnly ? '#fff' : '#8A6D1E', fontSize: '13.5px', fontWeight: 700, cursor: 'pointer' }}>
@@ -702,19 +711,8 @@ export default function VilleDesktop({ ville }: { ville: any }) {
                 seul guide. Le lien reste — il est utile — mais il s'adapte
                 désormais à la ville : peu d'adresses → le guide de survie,
                 beaucoup → les vérifications à faire. */}
-            {restaurants.length > 0 && !en && (
-              restaurantsTotal < 15 ? (
-                <a href="/blog/aucun-restaurant-halal-que-faire"
-                  style={{ display: 'inline-flex', alignItems: 'center', gap: 8, minHeight: 44, marginBottom: 14, fontSize: 13.5, fontWeight: 700, color: 'var(--foret)', textDecoration: 'none' }}>
-                  🥘 Peu d&apos;adresses ici ? Que manger quand il n&apos;y a pas de halal →
-                </a>
-              ) : (
-                <a href="/blog/restaurant-vraiment-halal-verifier"
-                  style={{ display: 'inline-flex', alignItems: 'center', gap: 8, minHeight: 44, marginBottom: 14, fontSize: 13.5, fontWeight: 700, color: 'var(--foret)', textDecoration: 'none' }}>
-                  🔎 Vérifier qu&apos;un restaurant est vraiment halal : 7 contrôles →
-                </a>
-              )
-            )}
+            {/* Le lien « 7 contrôles » a déménagé dans Bon à savoir
+                (itération 5, correction 3). */}
             {/* LISTE COMPACTE — lignes denses scannables, zéro faux visuel :
                 nom + type, puce source discrète, une action Maps à droite */}
             {showAllRestos && (
@@ -829,6 +827,14 @@ export default function VilleDesktop({ ville }: { ville: any }) {
         )}
 
         {/* 💡 CONSEILS PRATIQUES — texte concret RÉDIGÉ (jamais un lieu inventé) */}
+        {!en && (
+          <div style={{ margin: '0 0 18px' }}>
+            <a href="/blog/restaurant-vraiment-halal-verifier"
+              style={{ display: 'inline-flex', alignItems: 'center', gap: 8, minHeight: 44, fontSize: 13.5, fontWeight: 700, color: 'var(--foret)', textDecoration: 'none' }}>
+              🔎 Vérifier qu&apos;un restaurant est vraiment halal : 7 contrôles →
+            </a>
+          </div>
+        )}
         {(guideVille?.conseils?.length || pratiqueItems.length > 0) && (
         <section id="sec-pratique" style={{ scrollMarginTop: 118, marginTop: 40 }}>
           <h2 style={sectionTitle}>💡 {en ? 'Practical tips' : 'Conseils pratiques'}</h2>

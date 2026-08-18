@@ -279,6 +279,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
     lancee.current = true
     const c: Criteres = { ...CRITERES_DEFAUT, categorie: chercheDesLOuverture, mode: 'pied' }
     setCrit(c)
+    setAide({ cat: chercheDesLOuverture }) // le mode actif se voit, et la pastille « envie » sait sur quoi elle porte
     // ⚠️ On n'ouvre PAS la zone de suggestions ici. Mohamed veut des
     // RÉSULTATS à l'ouverture, pas une liste de propositions à lire : « on
     // ouvre la page, on ne voit AUCUN résultat, et on nous demande de taper
