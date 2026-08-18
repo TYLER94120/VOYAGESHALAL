@@ -68,30 +68,30 @@ export default function BottomNav() {
       )}
 
       <nav className="bottom-nav">
+        {/* 🔵 CINQ ENTRÉES ÉGALES — brief du 17 août : « plus de blob
+            central ». Le rond doré surélevé attirait le pouce, mais il
+            cassait la grille et laissait croire à une action spéciale là où
+            il n'y a qu'un onglet parmi cinq. Actif = or + barrette 16×3.
+            Et zéro emoji : des tracés SVG, identiques sur tous les
+            appareils — un emoji change de dessin d'un téléphone à l'autre. */}
         <Link href="/" className={`bottom-nav-item ${pathname === '/' ? 'active' : ''}`}>
-          <span className="bottom-nav-icon">🏠</span>
+          <span className="bottom-nav-icon"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" aria-hidden><path d="M3.5 11 12 3.5 20.5 11" /><path d="M5.5 9.6V20.5h13V9.6" /><path d="M10 20.5v-5h4v5" /></svg></span>
           <span className="bottom-nav-label">{t('bottom.home')}</span>
         </Link>
         <Link href={localizedHref('/horaires-priere', en)} className={`bottom-nav-item ${isActive('/horaires-priere') ? 'active' : ''}`}>
-          <span className="bottom-nav-icon">🕌</span>
+          <span className="bottom-nav-icon"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" aria-hidden><circle cx="12" cy="12" r="9" /><path d="M12 6.8V12l3.5 2.1" /></svg></span>
           <span className="bottom-nav-label">{t('bottom.prayer')}</span>
         </Link>
-        {/* 🔴 LE BOUTON CENTRAL CHANGE DE MÉTIER — Mohamed, 16 août :
-            « Le "＋ Ajouter" occupait la place la plus accessible du pouce
-            pour une action que 99 % des visiteurs ne feront jamais. »
-            Elle revient à « Autour de moi », qui est ce que le site fait de
-            plus utile et ce qu'on vient y chercher. Ajouter et Mes adresses
-            descendent dans Outils, où on les cherche quand on en a besoin. */}
-        <Link href="/autour-de-moi" className={`bottom-nav-item bottom-nav-plus ${isActive('/autour-de-moi') ? 'active' : ''}`}>
-          <span className="bottom-nav-icon" aria-hidden>📍</span>
-          <span className="bottom-nav-label">{en ? 'Around me' : 'Autour de moi'}</span>
+        <Link href="/autour-de-moi" className={`bottom-nav-item ${isActive('/autour-de-moi') ? 'active' : ''}`}>
+          <span className="bottom-nav-icon"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" aria-hidden><path d="M21 3 10.5 13.5M21 3l-6.5 18-3-7.5L3 10z" /></svg></span>
+          <span className="bottom-nav-label">{en ? 'Around' : 'Autour'}</span>
         </Link>
         <Link href="/destinations" className={`bottom-nav-item ${isActive('/destinations') || isActive('/spots') || isActive('/spot') ? 'active' : ''}`}>
-          <span className="bottom-nav-icon">🌍</span>
+          <span className="bottom-nav-icon"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3c3.5 3.8 3.5 14.2 0 18M12 3c-3.5 3.8-3.5 14.2 0 18" /></svg></span>
           <span className="bottom-nav-label">{en ? 'Travel' : 'Voyages'}</span>
         </Link>
         <button type="button" onClick={() => setToolsOpen(!toolsOpen)} className={`bottom-nav-item ${toolsOpen || toolsActive ? 'active' : ''}`} style={{ background: 'none', border: 'none', cursor: 'pointer', font: 'inherit' }}>
-          <span className="bottom-nav-icon">🧰</span>
+          <span className="bottom-nav-icon"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" aria-hidden><rect x="4" y="4" width="6.5" height="6.5" rx="1.5" /><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5" /><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5" /><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.5" /></svg></span>
           <span className="bottom-nav-label">{en ? 'Tools' : 'Outils'}</span>
         </button>
       </nav>

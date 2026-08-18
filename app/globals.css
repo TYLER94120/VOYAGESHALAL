@@ -616,24 +616,12 @@ body { top: 0 !important; }
   content: ''; position: absolute; top: 0; left: 22%; right: 22%;
   height: 3px; border-radius: 0 0 3px 3px; background: var(--or);
 }
-/* Le bouton ➕ central est déjà une pastille pleine : un trait au-dessus
-   ferait doublon et salirait sa forme. */
-.bottom-nav-plus.active::before { display: none; }
-.bottom-nav-icon { font-size: 22px; line-height: 1; }
-.bottom-nav-label { font-size: 10px; font-weight: 700; }
-/* ➕ Ajouter : pastille OR surélevée au centre — l'action la plus précieuse
-   du site (nourrir les spots) devient physiquement le bouton le plus visible */
-.bottom-nav-plus { color: rgba(253, 250, 243, 0.75); }
-.bottom-nav-plus .bottom-nav-icon {
-  display: flex; align-items: center; justify-content: center;
-  width: 54px; height: 54px; margin-top: -30px;
-  border-radius: 50%;
-  background: var(--or);
-  color: #0b1a0f;
-  font-size: 26px; font-weight: 800;
-  box-shadow: 0 8px 22px rgba(201, 168, 76, 0.45), 0 0 0 4px rgba(11, 26, 15, 0.94);
-}
-.bottom-nav-plus.active { color: var(--or); }
+/* 🔵 Le blob central surélevé est supprimé — brief du 17 août : « 5 items
+   ÉGAUX, plus de blob ». Il cassait la grille et promettait une action
+   spéciale là où il n'y a qu'un onglet. L'onglet actif se dit par l'or et
+   par la barrette 16×3 — deux signaux, pour qui distingue mal les couleurs. */
+.bottom-nav-icon { line-height: 1; display: flex; align-items: center; justify-content: center; }
+.bottom-nav-label { font-size: 11px; font-weight: 700; }
 @media (max-width: 1023px) {
   .bottom-nav { display: flex; }
   body { padding-bottom: 96px; }
@@ -1188,12 +1176,14 @@ body:has(.accueil-ciel) .prayer-bar { display: none !important; }
   margin-right: auto;
 }
 
-/* Le rond central de la barre du bas prend l'accent du ciel courant. */
-.bottom-nav-plus .bottom-nav-icon {
-  width: 50px; height: 50px; border-radius: 999px;
-  display: flex; align-items: center; justify-content: center;
-  background: var(--ciel-accent, var(--or));
-  color: #141018; font-size: 20px;
+/* 🔵 Le blob central est mort — cinq entrées égales (brief du 17 août).
+   L'onglet actif se dit par la couleur or ET une barrette de 16×3 sous le
+   libellé : deux signaux valent mieux qu'un pour qui distingue mal les
+   couleurs. */
+.bottom-nav-item.active .bottom-nav-label { position: relative; }
+.bottom-nav-item.active .bottom-nav-label::after {
+  content: ""; position: absolute; left: 50%; transform: translateX(-50%);
+  bottom: -5px; width: 16px; height: 3px; border-radius: 2px; background: var(--or);
 }
 
 /* ════════════ L'ACCUEIL v6 — maquette du 16 août ════════════
