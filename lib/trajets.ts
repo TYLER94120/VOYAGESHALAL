@@ -1,4 +1,5 @@
 import { Redis } from '@upstash/redis'
+import { osrmMinutes } from '@/lib/osrm.mjs'
 
 // ⏱️ LES MINUTES RÉELLES — API Routes (computeRouteMatrix).
 //
@@ -16,7 +17,9 @@ import { Redis } from '@upstash/redis'
 //   - GARDE-FOU : le temps piéton doit correspondre à ~4,5 km/h sur la
 //     DISTANCE DU TRAJET (±40 %) ; sinon on journalise et on jette la
 //     minute (le client affichera les mètres) ;
-//   - cache Redis 2 minutes par lieu + position (la position exacte entre
+//   - cascade (itération 6) : Google Routes → OSRM (gratuit, sans clé) →
+//     mètres, chaque échec JOURNALISÉ ;
+//   - cache Redis 10 minutes par lieu + position (la position exacte entre
 //     entière dans la clé — l'arrondi ne sort jamais d'une clé de cache) ;
 //   - 3 destinations max, 1,5 s de délai, échec silencieux.
 
@@ -74,7 +77,7 @@ export async function ajouterMinutes(fiches: Dest[], origine: { lat: number; lng
   const dests = fiches.slice(0, 3).filter((f) => typeof f.lat === 'number' && typeof f.lng === 'number')
   if (!cle || !dests.length) return
 
-  const cacheCle = (d: Dest) => `vh:trajet:v2:${origine.lat},${origine.lng}:${d.lat},${d.lng}`
+  const cacheCle = (d: Dest) => `vh:trajet:v3:${origine.lat},${origine.lng}:${d.lat},${d.lng}`
   const restants: Dest[] = []
   if (r) {
     try {
@@ -90,6 +93,7 @@ export async function ajouterMinutes(fiches: Dest[], origine: { lat: number; lng
   } else restants.push(...dests)
   if (!restants.length) return
 
+  // ── 1. GOOGLE ROUTES — la source préférée (trafic pour la voiture) ──
   const ac = new AbortController()
   const t = setTimeout(() => ac.abort(), 1500)
   try {
@@ -105,11 +109,35 @@ export async function ajouterMinutes(fiches: Dest[], origine: { lat: number; lng
         else console.error(`[trajets] temps piéton incohérent jeté : ${m.min} min pour ${m.metres} m (${f.lat},${f.lng})`)
       }
       if (v) f.voitureMin = v.min
-      if (r && (f.marcheMin != null || f.voitureMin != null)) {
-        r.set(cacheCle(f), { ...(f.marcheMin != null ? { m: f.marcheMin } : {}), ...(f.voitureMin != null ? { v: f.voitureMin } : {}) }, { ex: 120 }).catch(() => {})
-      }
     })
   } catch (e) {
-    console.error('[trajets] minutes réelles indisponibles (repli mètres) :', e instanceof Error ? e.message : e)
+    console.error('[trajets] Google Routes indisponible, on tente OSRM :', e instanceof Error ? e.message : e)
   } finally { clearTimeout(t) }
+
+  // ── 2. OSRM — le repli gratuit, pour ce que Google n'a pas donné ──
+  const sansTemps = restants.filter((f) => f.marcheMin == null || f.voitureMin == null)
+  if (sansTemps.length) {
+    try {
+      const [om, ov] = await Promise.all([
+        osrmMinutes(origine, sansTemps, 'marche').catch((e) => { console.error('[trajets] OSRM marche muet :', e instanceof Error ? e.message : e); return null }),
+        osrmMinutes(origine, sansTemps, 'voiture').catch((e) => { console.error('[trajets] OSRM voiture muet :', e instanceof Error ? e.message : e); return null }),
+      ])
+      sansTemps.forEach((f, i) => {
+        const m = om?.[i], v = ov?.[i]
+        if (f.marcheMin == null && m) {
+          if (marcheCoherente(m.min, m.metres)) f.marcheMin = m.min
+          else console.error(`[trajets] OSRM piéton incohérent jeté : ${m.min} min pour ${m.metres} m`)
+        }
+        if (f.voitureMin == null && v) f.voitureMin = v.min
+      })
+    } catch { /* déjà journalisé */ }
+  }
+
+  // ── 3. Ce qui reste sans temps s'affichera en mètres — et ça se voit ──
+  for (const f of restants) {
+    if (f.marcheMin == null && f.voitureMin == null) console.error(`[trajets] aucun temps trouvé (Google + OSRM) pour ${f.lat},${f.lng} — mètres à l'écran`)
+    if (r && (f.marcheMin != null || f.voitureMin != null)) {
+      r.set(cacheCle(f), { ...(f.marcheMin != null ? { m: f.marcheMin } : {}), ...(f.voitureMin != null ? { v: f.voitureMin } : {}) }, { ex: 600 }).catch(() => {})
+    }
+  }
 }
