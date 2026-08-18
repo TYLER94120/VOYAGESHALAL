@@ -1,6 +1,7 @@
 import { NextResponse, after } from 'next/server'
 import { checkAdmin } from '@/lib/adminAuth'
 import { attacherTitres, genererTitresManquants } from '@/lib/titreIA'
+import { ajouterMinutes } from '@/lib/trajets'
 import { Redis } from '@upstash/redis'
 import { requeteGoogle } from '@/lib/requete.mjs'
 import { accepte } from '@/lib/categorie.mjs'
@@ -159,6 +160,10 @@ export interface Fiche {
   /** ✒️ Titre court écrit par l'IA à partir des avis — cache 7 jours,
    *  jamais généré pendant la requête (lib/titreIA). Absent = rien. */
   titreIA?: string
+  /** ⏱️ Minutes réelles (API Routes, lib/trajets) — absentes si Routes n'a
+   *  pas répondu en 1,5 s : le client calcule alors depuis la distance. */
+  marcheMin?: number
+  voitureMin?: number
   statut: string
   /** 🔴 Ce qu'on SAIT de l'alcool : jamais une supposition. */
   alcool: 'non' | 'inconnu'
@@ -1006,6 +1011,10 @@ export async function POST(req: Request) {
   // les manquants se génèrent APRÈS la réponse, jamais pendant l'attente.
   await attacherTitres(fiches, r)
   after(() => genererTitresManquants(fiches, r))
+  // ⏱️ Les minutes réelles (règle actée : ≤ 15 min → marche, sinon voiture).
+  // 1,5 s maximum, échec silencieux — et elles entrent dans le cache avec
+  // les fiches : un cache-hit ne repaie jamais Routes.
+  await ajouterMinutes(fiches, { lat, lng })
 
   const reponse = {
     fiches, autres, source, etatGoogle,

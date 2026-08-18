@@ -5,7 +5,10 @@ import type { Map as LeafletMap, Marker } from 'leaflet'
 import { useInstantPosition } from '@/lib/useInstantPosition'
 import { computePrayerTimesFull } from '@/lib/prayerCalc'
 import SurMesure, { type Fiche } from '@/components/lieux/SurMesure'
-import { top3, ETIQUETTES } from '@/lib/top3.mjs'
+import { top3 } from '@/lib/top3.mjs'
+import { typeMot } from '@/lib/typeMot.mjs'
+import TrajetMin from '@/components/lieux/TrajetMin'
+import { lancerItineraire } from '@/lib/itineraire'
 
 // 🗺️ « AUTOUR DE MOI » — LA MÊME RECHERCHE, EN VUE CARTE.
 //
@@ -335,19 +338,24 @@ export default function AutourDeMoiPage() {
           </p>
           {podium.map((f, i) => (
             <button key={f.id} className="carte-tiroir-ligne"
-              onClick={() => {
-                setChoisie(f.id!)
-                setVue('liste')
-                setTimeout(() => document.querySelector(`[data-fiche="${f.id}"]`)?.scrollIntoView({ block: 'start', behavior: 'smooth' }), 260)
-              }}>
+              /* 🛵 Correction 4 : le tap OUVRE L'ITINÉRAIRE, directement —
+                 la fiche détail vit sur l'écran liste, derrière ℹ. */
+              onClick={() => lancerItineraire(f.lat, f.lng)}>
               <span className="carte-tiroir-rang">{i + 1}</span>
-              <span className="carte-tiroir-nom">{f.nom}</span>
-              <span className="carte-tiroir-meta">
-                {typeof f.note === 'number' ? `★ ${f.note.toLocaleString('fr-FR')}` : ''}
-                {typeof f.prix === 'number' && f.prix > 0 ? ` · ${'€'.repeat(f.prix)}` : ''}
-                {typeof f.distanceM === 'number' ? ` · ${Math.max(1, Math.round(f.distanceM / 75))} min` : ''}
+              <span className="carte-tiroir-txt">
+                {/* Jamais tronqué au point d'être illisible : 24 caractères puis … */}
+                <span className="carte-tiroir-nom">{f.nom.length > 24 ? `${f.nom.slice(0, 24)}…` : f.nom}</span>
+                <span className="carte-tiroir-sous">
+                  <b>{typeMot((f as { famille?: string }).famille, modeCarte ?? 'manger')}</b>
+                  {typeof f.note === 'number' ? ` · ★ ${f.note.toLocaleString('fr-FR')}` : ''}
+                  {typeof f.prix === 'number' && f.prix > 0 ? ` · ${'€'.repeat(f.prix)}` : ''}
+                  {' · '}<TrajetMin f={f} />
+                </span>
               </span>
-              {f.etiquette && <span className="carte-tiroir-badge">{ETIQUETTES[f.etiquette]?.fr ?? ''}</span>}
+              <span className="carte-tiroir-go" aria-hidden>
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round"><path d="M12 2.5 21 21.5 12 17l-9 4.5z" /></svg>
+                Y aller
+              </span>
             </button>
           ))}
         </div>

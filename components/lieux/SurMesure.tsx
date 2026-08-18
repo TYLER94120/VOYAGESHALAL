@@ -50,6 +50,7 @@ export interface Fiche {
   photos?: string[]; attributionsPhotos?: string[]; avis?: Avis[]; resume?: string
   attributs?: Record<string, boolean | undefined>
   titreIA?: string
+  marcheMin?: number; voitureMin?: number
   statut: string; alcool?: 'non' | 'inconnu'; source: 'spot' | 'google' | 'osm'
 }
 
