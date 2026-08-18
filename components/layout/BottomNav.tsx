@@ -25,6 +25,7 @@ export default function BottomNav() {
   //   panneau au lieu de quitter la page ;
   // - glissement vers le bas sur la feuille : > 55 px = fermeture.
   const ouvrirOutils = () => {
+    setVoirPlus(false) // le panneau rouvre toujours sur les 6 essentiels
     setToolsOpen(true)
     try { window.history.pushState({ vhOutils: true }, '') } catch { /* SSR */ }
   }
@@ -40,6 +41,7 @@ export default function BottomNav() {
     return () => window.removeEventListener('popstate', onPop)
   }, [])
   const [glisse, setGlisse] = useState<number | null>(null)
+  const [voirPlus, setVoirPlus] = useState(false)
 
   // 📌 CORRECTION 7 — « la barre du bas disparaît parfois » (iPhone).
   // Sur Safari iOS, un élément `position: fixed` est peint par rapport au
@@ -65,34 +67,31 @@ export default function BottomNav() {
     return () => { vv.removeEventListener('resize', cale); vv.removeEventListener('scroll', cale) }
   }, [])
 
-  const tools = [
-    // La ville a quitté cette liste : Mohamed — « je ne vois pas à quoi sert
-    // la ville dans Outils ». Il avait raison, elle doublonnait le menu
-    // Destinations. La météo prend sa place, parce qu'en voyage on veut
-    // savoir s'il va pleuvoir avant de sortir pour Maghrib.
+  // 🗂 REGROUPEMENT VALIDÉ PAR MOHAMED (18 août, « OK REGROUPEMENT ») :
+  // 14 entrées c'était trop. Six ESSENTIELS d'abord — ce qu'on vient
+  // vraiment chercher dans Outils — et le reste sous « Plus », replié.
+  // « Autour de moi » vit sous Plus : il a déjà son onglet dans la barre.
+  const essentiels = [
+    { href: localizedHref('/horaires-priere', en), icon: '🕐', label: t('nav.prayer') },
+    { href: '/qibla', icon: '🧭', label: t('nav.qibla') },
+    { href: localizedHref('/mosquee-proche', en), icon: '🕌', label: t('nav.mosque') },
+    { href: '/trouvailles', icon: '💎', label: en ? 'Community finds' : 'Trouvailles' },
+    // « Mes spots » ne veut rien dire pour qui arrive : ce sont les
+    // adresses qu'il a gardées. On l'écrit comme ça.
+    { href: localizedHref('/carnet', en), icon: '❤️', label: en ? 'My saved places' : 'Mes adresses gardées' },
+    { href: '/communaute/ajouter', icon: '➕', label: en ? 'Add a find' : 'Ajouter une trouvaille' },
+  ]
+  const secondaires = [
     { href: localizedHref('/meteo', en), icon: '🌤️', label: en ? 'Weather' : 'Météo' },
-    // 📐 15 août — Mohamed : « vérifie tous les écarts » PC/téléphone.
-    // Diff complet des deux menus Outils : il manquait ici Destinations,
-    // Communauté et Horaires de prière, présents sur PC. Les deux menus
-    // listent désormais les MÊMES outils.
     { href: '/destinations', icon: '🗺️', label: t('nav.destinations') },
     { href: '/communaute', icon: '🤝', label: en ? 'Community · profiles' : 'Communauté · profils' },
-    { href: localizedHref('/horaires-priere', en), icon: '🕐', label: t('nav.prayer') },
-    { href: localizedHref('/mosquee-proche', en), icon: '🕌', label: t('nav.mosque') },
-    { href: '/qibla', icon: '🧭', label: t('nav.qibla') },
     { href: localizedHref('/planificateur', en), icon: '🗺️', label: en ? 'Trip planner' : 'Planificateur' },
     { href: '/quiz', icon: '🎯', label: en ? 'Destination quiz' : 'Quiz destination' },
-    { href: '/autour-de-moi', icon: '📍', label: en ? 'Around me' : 'Autour de moi' },
     { href: '/audio', icon: '🎧', label: en ? 'Audio · Spiritual' : 'Audio · Spirituel' },
     { href: localizedHref('/omra', en), icon: '🕋', label: en ? 'Umrah & Hajj' : 'Omra & Hajj' },
-    // Favoris déplacés en fin de menu secondaire (remplacés par Audio)
-    // « Mes spots » ne veut rien dire pour quelqu'un qui arrive : ce sont
-    // les adresses qu'il a gardées. On l'écrit comme ça.
-    { href: localizedHref('/carnet', en), icon: '❤️', label: en ? 'My saved places' : 'Mes adresses gardées' },
-    // Descendus du dock : utiles, mais pas ce qu'on vient chercher.
-    { href: '/trouvailles', icon: '💎', label: en ? 'Community finds' : 'Les trouvailles de la communauté' },
-    { href: '/communaute/ajouter', icon: '➕', label: en ? 'Add a place' : 'Ajouter une adresse' },
+    { href: '/autour-de-moi', icon: '📍', label: en ? 'Around me' : 'Autour de moi' },
   ]
+  const tools = [...essentiels, ...secondaires]
   const toolsActive = tools.some((tl) => isActive(tl.href.split('?')[0]))
 
   return (
@@ -110,11 +109,18 @@ export default function BottomNav() {
             <div aria-hidden style={{ width: 44, height: 4, borderRadius: 99, background: 'rgba(11,26,15,0.25)', margin: '0 auto 10px' }} />
             <p style={{ margin: '2px 4px 10px', fontWeight: 900, fontSize: 15, color: '#0b1a0f' }}>🧰 {en ? 'All tools' : 'Tous les outils'}</p>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 }}>
-              {tools.map((tl) => (
+              {(voirPlus ? tools : essentiels).map((tl) => (
                 <Link key={tl.href} href={tl.href} onClick={() => fermerOutils()} style={{ display: 'flex', alignItems: 'center', gap: 10, minHeight: 56, padding: '0 14px', borderRadius: 14, background: '#FDFAF3', border: '1px solid rgba(27,67,50,0.12)', textDecoration: 'none', color: '#0b1a0f', fontWeight: 700, fontSize: 14.5 }}>
                   <span style={{ fontSize: 20 }}>{tl.icon}</span> {tl.label}
                 </Link>
               ))}
+              {!voirPlus && (
+                <button type="button" onClick={() => setVoirPlus(true)} aria-expanded={false}
+                  style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, minHeight: 56, padding: '0 14px', borderRadius: 14, background: 'none', border: '1.5px dashed rgba(27,67,50,0.3)', color: '#1b4332', fontWeight: 800, fontSize: 14.5, cursor: 'pointer', gridColumn: '1 / -1' }}>
+                  {en ? `More (${secondaires.length})` : `Plus (${secondaires.length})`}
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden><path d="m6 9 6 6 6-6" /></svg>
+                </button>
+              )}
             </div>
           </div>
         </>
