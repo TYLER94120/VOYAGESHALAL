@@ -3,6 +3,9 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { CRITERES_DEFAUT, lireDemande, relance, resumerCriteres, type Categorie, type Criteres } from '@/lib/criteres'
+import { top3 } from '@/lib/top3.mjs'
+import TrajetMin, { StatutOuverture } from '@/components/lieux/TrajetMin'
+import { lancerItineraire } from '@/lib/itineraire'
 import { lireIntention } from '@/lib/villesIndex'
 import type { VilleLue } from '@/lib/lireVille.mjs'
 import { trajet, type Mode } from '@/lib/trajet'
@@ -46,6 +49,10 @@ export interface Fiche {
   adresse?: string; telephone?: string; mapsUri?: string
   photos?: string[]; attributionsPhotos?: string[]; avis?: Avis[]; resume?: string
   attributs?: Record<string, boolean | undefined>
+  titreIA?: string
+  conseilIA?: string
+  marcheMin?: number; voitureMin?: number
+  cuisine?: string; cuisineSource?: string
   statut: string; alcool?: 'non' | 'inconnu'; source: 'spot' | 'google' | 'osm'
 }
 
@@ -112,7 +119,7 @@ function IconeCat({ id }: { id: string }) {
   return <svg {...c} viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="M15.8 8.2l-2.1 5.5-5.5 2.1 2.1-5.5z" /></svg>
 }
 
-export default function SurMesure({ posInitiale, destination: destinationProp, en = false, fondu = false, titrePage = false, onResultats, selectionId, onSelection, phraseInitiale, chercheDesLOuverture, modeDemande }: {
+export default function SurMesure({ posInitiale, destination: destinationProp, en = false, fondu = false, titrePage = false, onResultats, selectionId, onSelection, phraseInitiale, chercheDesLOuverture, modeDemande, scooter = false }: {
   posInitiale?: { lat: number; lng: number; ville?: string | null } | null
   destination?: { lat: number; lng: number; nom: string } | null
   en?: boolean
@@ -141,6 +148,11 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
   /** 🗺️ Les onglets de la VUE CARTE commandent le même moteur : un onglet
    *  choisi là-bas = un mode choisi ici, recherche lancée (correction 4). */
   modeDemande?: Categorie | null
+  /** 🛵 LE TEST DU SCOOTER (itération 2, 18 août) : arrêté 30 s au bord de
+   *  la route — zéro clavier, zéro réglage. Ni champ, ni bouton Trouver,
+   *  ni chips de tri : mode → les 3 meilleurs (score composite lib/top3),
+   *  et c'est tout. Réservé à Autour de moi ; l'accueil garde la barre. */
+  scooter?: boolean
   /** ► SI ON SAIT OÙ JE SUIS, ON RÉPOND AVANT QUE JE DEMANDE.
    *  Ordre de Mohamed, 15 août : « On ouvre la page, on ne voit AUCUN
    *  résultat, et on nous demande de taper quelque chose. Alors que le
@@ -191,6 +203,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
   const [mode, setMode] = useState<Mode>('voiture')
   const [plafond, setPlafond] = useState(15)
   const [rayonKm, setRayonKm] = useState(20)
+  const [ecartesAlcool, setEcartesAlcool] = useState(0)
   const [posUtilisee, setPosUtilisee] = useState<'gps' | 'ip' | 'ville' | null>(null)
   const [prose, setProse] = useState('')
   const [aEcrit, setAEcrit] = useState(false)
@@ -209,6 +222,15 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
    * changement est voulu, un tri réordonne au lieu de cacher.
    */
   const [triActif, setTriActif] = useState<string | null>(null)
+  const [ficheOuverte, setFicheOuverte] = useState<string | null>(null) // 🛵 la fiche dépliée par ℹ
+  // 🍣 « Une envie précise ? » — un tap, jamais de clavier (itération 3).
+  const [feuilleEnvies, setFeuilleEnvies] = useState(false)
+  const [envie, setEnvie] = useState<{ mot: string; requete: string } | null>(null)
+  // Les envies RÉELLEMENT disponibles (compteurs serveur, cache 10 min) —
+  // null = comptage indisponible, on retombe sur la grille fixe sans
+  // compteurs plutôt que de bloquer (réseau dégradé = le cas normal).
+  const [enviesDispo, setEnviesDispo] = useState<{ mot: string; requete: string; n: number }[] | null>(null)
+  const [enviesChargent, setEnviesChargent] = useState(false)
   /** Qui a compris la phrase : Claude, le parseur local, ou personne (rien
    *  tapé). C'est ce qui distingue « Claude a compris : hammam » de la
    *  simple mention « Recherche : hammam » — on ne signe pas l'IA quand
@@ -258,6 +280,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
     lancee.current = true
     const c: Criteres = { ...CRITERES_DEFAUT, categorie: chercheDesLOuverture, mode: 'pied' }
     setCrit(c)
+    setAide({ cat: chercheDesLOuverture }) // le mode actif se voit, et la pastille « envie » sait sur quoi elle porte
     // ⚠️ On n'ouvre PAS la zone de suggestions ici. Mohamed veut des
     // RÉSULTATS à l'ouverture, pas une liste de propositions à lire : « on
     // ouvre la page, on ne voit AUCUN résultat, et on nous demande de taper
@@ -468,7 +491,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
 
       const ac = new AbortController()
       const to = setTimeout(() => ac.abort(), 20_000)
-      let corps: { fiches?: Fiche[]; autres?: Fiche[]; source?: string; etatGoogle?: 'ok' | 'vide' | 'muet' | 'sans-cle'; mode?: Mode; plafondMin?: number; rayonKm?: number; relaches?: string[]; motManquant?: string | null } = {}
+      let corps: { fiches?: Fiche[]; autres?: Fiche[]; source?: string; etatGoogle?: 'ok' | 'vide' | 'muet' | 'sans-cle'; mode?: Mode; plafondMin?: number; rayonKm?: number; rayonAtteintKm?: number; ecartesAlcool?: number; relaches?: string[]; motManquant?: string | null } = {}
       try {
         const r = await fetch('/api/lieux', {
           method: 'POST', signal: ac.signal,
@@ -497,7 +520,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
       setFiches(trois); setAutres(corps.autres ?? []); setSource(corps.source ?? ''); setEtatGoogle(corps.etatGoogle ?? '')
       // La carte se peuple d'ici, et de nulle part ailleurs.
       onResultats?.(trois)
-      setMode(corps.mode ?? 'voiture'); setPlafond(corps.plafondMin ?? 15); setRayonKm(corps.rayonKm ?? 20); setRelaches(corps.relaches ?? []); setMotManquant(corps.motManquant ?? null)
+      setMode(corps.mode ?? 'voiture'); setPlafond(corps.plafondMin ?? 15); setRayonKm(corps.rayonAtteintKm ?? corps.rayonKm ?? 20); setEcartesAlcool(corps.ecartesAlcool ?? 0); setRelaches(corps.relaches ?? []); setMotManquant(corps.motManquant ?? null)
       setEtape('resultat')
       // La vue se place sur la réponse, sans que le visiteur ait à la
       // chercher. `requestAnimationFrame` : on attend que les fiches soient
@@ -514,7 +537,11 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
       // atteignable à temps. Rater une prière parce qu'on a suivi notre
       // conseil serait le pire service qu'on puisse rendre.
       setUrgence(pr && pr.minutes <= 30 ? pr : null)
-      if (trois.length) redigerIA(trois, c, corps.mode ?? 'voiture', pr, !!lieu)
+      // 🔇 Itération 3, correction 4 : sur l'écran scooter, PLUS AUCUNE
+      // prose conversationnelle — l'ancien flux envoyait une « question du
+      // visiteur » vide et l'IA répondait dans le vide (« votre question
+      // n'a pas été complétée »). Le bloc et son appel meurent ici.
+      if (trois.length && !scooter) redigerIA(trois, c, corps.mode ?? 'voiture', pr, !!lieu)
     } finally { enCours.current = false }
   }
 
@@ -611,6 +638,38 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
     } catch { /* la liste suffit — la prose est un bonus */ } finally { clearTimeout(to) }
   }
 
+  // 🍣 Le top 3 se recalcule pour l'envie : même moteur, même score,
+  // motsCles = la cuisine — et ✕ retire le filtre d'un tap.
+  // 🔢 À l'ouverture de la feuille : combien d'adresses par envie, pour ne
+  // jamais proposer un tap qui mène à une page vide (0 = case cachée).
+  async function ouvrirFeuille() {
+    setFeuilleEnvies(true)
+    if (!posInitiale || enviesChargent) return
+    setEnviesChargent(true)
+    try {
+      const ac = new AbortController()
+      const t = setTimeout(() => ac.abort(), 4000)
+      const r = await fetch('/api/lieux/envies', {
+        method: 'POST', signal: ac.signal, headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ lat: posInitiale.lat, lng: posInitiale.lng, mode: aide?.cat === 'activite' ? 'activite' : 'manger' }),
+      })
+      clearTimeout(t)
+      if (r.ok) {
+        const j = await r.json() as { envies?: { mot: string; requete: string; n: number }[] | null }
+        if (Array.isArray(j.envies) && j.envies.length) setEnviesDispo(j.envies)
+      }
+    } catch { /* la grille fixe suffit */ } finally { setEnviesChargent(false) }
+  }
+
+  function lancerEnvie(e: { mot: string; requete: string } | null, bonusKm = 0) {
+    if (!aide?.cat) return
+    setEnvie(e)
+    setFeuilleEnvies(false)
+    const c = { ...crit, categorie: aide.cat, motsCles: e?.requete ?? '', rayonBonusKm: bonusKm || undefined } as Criteres
+    setCrit(c)
+    lancer(c, false)
+  }
+
   const compter = (cle: string) => {
     // Mesure §7 : le sur mesure se juge à un chiffre — les itinéraires.
     fetch('/api/lieux/mesure', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ cle }) }).catch(() => {})
@@ -634,7 +693,12 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
   const lesTris = useMemo(() => trisDisponibles(toutes), [toutes])
   /** La liste affichée : réordonnée par le tri actif — jamais amputée. Un
    *  tri qui ferait disparaître des adresses redeviendrait un filtre. */
-  const aVoir = useMemo(() => (triActif ? appliquer(toutes, triActif).slice(0, 6) : fiches), [triActif, toutes, fiches])
+  const aVoir = useMemo(() => {
+    // 🛵 Scooter : classement AUTOMATIQUE par le score composite — le même
+    // barème que le podium de la carte (lib/top3.mjs), aucun réglage.
+    if (scooter) return top3(fiches.filter((f) => typeof f.lat === 'number'), crit.categorie ?? 'manger')
+    return triActif ? appliquer(toutes, triActif).slice(0, 6) : fiches
+  }, [scooter, crit.categorie, triActif, toutes, fiches])
 
   /** Le délai, écrit comme on le dirait. Zéro seconde connue → « bientôt ». */
   function attente(secondes: number | undefined, anglais: boolean): string {
@@ -704,8 +768,11 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
                 setCrit(c)
                 setAide({ cat: v })
                 setPhrase('') // jamais de reliquat d'une recherche d'un autre mode
+                setEnvie(null)
+                setEnviesDispo(null)
                 setRaisonIA('')
                 compter(`cat-${v}`)
+                if (scooter) lancer(c, false) // scooter : un tap = les 3 meilleurs
               }}
               aria-pressed={aide?.cat === v} style={{ ...puce(aide?.cat === v), flex: '1 1 0', minWidth: 0, minHeight: 64, padding: '0 6px', whiteSpace: 'nowrap' }}>
               <IconeCat id={v} /> {t(fr, an)}
@@ -713,7 +780,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
           ))}
         </div>
 
-        {aide?.cat && (
+        {!scooter && aide?.cat && (
           <>
             <form onSubmit={(e) => { e.preventDefault(); if (phrase.trim()) comprendre(phrase); else lancer({ ...crit, categorie: aide.cat } as Criteres, false) }} style={{ display: 'flex', gap: 8, marginTop: 10, flexWrap: 'wrap' }}>
               <input
@@ -1092,8 +1159,8 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
                 : crit.categorie === 'mosquee'
                   ? t(`Aucun lieu de prière trouvé jusqu'à ${rayonKm} km — on préfère te le dire plutôt que d'inventer.`,
                       `No prayer place found within ${rayonKm} km — we would rather say so than invent one.`)
-                  : t(`Aucune adresse trouvée jusqu'à ${rayonKm} km — on préfère te le dire plutôt que d'inventer.`,
-                      `Nothing found within ${rayonKm} km — we would rather say so than invent an address.`)}
+                  : t(`Aucune adresse trouvée jusqu'à ${rayonKm} km — on préfère te le dire plutôt que d'inventer.${ecartesAlcool ? ` (${ecartesAlcool} adresse${ecartesAlcool > 1 ? 's' : ''} écartée${ecartesAlcool > 1 ? 's' : ''} : service d'alcool identifié.)` : ''}`,
+                      `Nothing found within ${rayonKm} km — we would rather say so than invent an address.${ecartesAlcool ? ` (${ecartesAlcool} set aside: alcohol service identified.)` : ''}`)}
             </p>
             <div style={rangee}>
               {crit.budget !== 'peu-importe' && (
@@ -1121,7 +1188,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
             le retire. La liste se retrie en direct, sans le moindre appel
             réseau. « Ouvert maintenant » n'est pas un bouton : c'est le tri
             par défaut, les fermés derrière. */}
-        {etape === 'resultat' && lesTris.length > 0 && (
+        {!scooter && etape === 'resultat' && lesTris.length > 0 && (
           <div style={{ marginTop: 14 }}>
             <div style={{ display: 'flex', gap: 8 }}>
               {lesTris.map((f) => {
@@ -1146,15 +1213,96 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
             Elles s'affichaient DEUX FOIS : une liste ici, la même adresse en
             carte dominante juste en dessous. Une réponse donnée deux fois
             n'est pas deux fois plus utile — elle fait douter d'avoir compris. */}
+        {scooter && envie && etape === 'resultat' && (
+          <div style={{ marginTop: 14 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+              <h3 style={{ fontFamily: "'Playfair Display', Georgia, serif", color: '#fdfaf3', fontSize: 20, fontWeight: 700, margin: 0, flex: 1 }}>
+                {t('Les 3 meilleurs — ', 'Top 3 — ')}{envie.mot}
+              </h3>
+              <button onClick={() => lancerEnvie(null)}
+                style={{ minHeight: 44, padding: '0 14px', borderRadius: 999, border: '1px solid rgba(201,168,76,0.4)', background: 'rgba(201,168,76,0.12)', color: 'var(--or-clair, #E9D9A6)', fontSize: 14, fontWeight: 700, cursor: 'pointer' }}>
+                ✕ {envie.mot}
+              </button>
+            </div>
+            {aVoir.length > 0 && aVoir.length < 3 && (
+              <p style={{ margin: '8px 0 0', fontSize: 14, color: 'rgba(253,250,243,0.7)', display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap' }}>
+                {t(`${aVoir.length} adresse${aVoir.length > 1 ? 's' : ''} ${envie.mot.toLowerCase()} dans le coin — élargis le rayon ?`,
+                   `${aVoir.length} ${envie.mot.toLowerCase()} place${aVoir.length > 1 ? 's' : ''} nearby — widen the radius?`)}
+                <button onClick={() => lancerEnvie(envie, (crit.rayonBonusKm ?? 0) + 5)}
+                  style={{ minHeight: 44, padding: '0 14px', borderRadius: 999, border: '1px solid rgba(201,168,76,0.4)', background: 'none', color: 'var(--or)', fontWeight: 800, fontSize: 14, cursor: 'pointer' }}>
+                  +5 km
+                </button>
+              </p>
+            )}
+          </div>
+        )}
         {!titrePage && aVoir.length > 0 && (
           <div style={{ marginTop: 14, display: 'flex', flexDirection: 'column', gap: 12 }}>
             {aVoir.map((f, i) => (
-              <Carte key={f.id ?? i} f={f} en={en} mode={mode} destination={!!destination}
-                allergie={mentionneAllergie(profil)}
-                choisie={!!f.id && f.id === selectionId}
-                onChoisir={() => { onSelection?.(f.id ?? null); compter('fiches-ouvertes') }}
-                onItineraire={() => compter('itineraires')} />
+              scooter ? (
+                <FicheScooter key={f.id ?? i} f={f} i={i} en={en}
+                  ouverte={!!f.id && f.id === ficheOuverte}
+                  onInfo={() => { setFicheOuverte(f.id === ficheOuverte ? null : (f.id ?? null)); compter('fiches-ouvertes') }}
+                  onItineraire={() => { compter('itineraires'); lancerItineraire(f.lat, f.lng, typeof f.marcheMin === 'number' ? f.marcheMin <= 15 : undefined) }}
+                  enfant={<Carte f={f} en={en} mode={mode} destination={!!destination}
+                    allergie={mentionneAllergie(profil)} choisie
+                    onItineraire={() => compter('itineraires')} />}
+                />
+              ) : (
+                <Carte key={f.id ?? i} f={f} en={en} mode={mode} destination={!!destination}
+                  allergie={mentionneAllergie(profil)}
+                  choisie={!!f.id && f.id === selectionId}
+                  onChoisir={() => { onSelection?.(f.id ?? null); compter('fiches-ouvertes') }}
+                  onItineraire={() => compter('itineraires')} />
+              )
             ))}
+            {/* 🍣 Une envie précise ? — pastille pointillée unique, pas en
+                mode Prier. La feuille s'ouvre dessous, sans clavier. */}
+            {scooter && aide?.cat && aide.cat !== 'mosquee' && !envie && (
+              <button onClick={() => void ouvrirFeuille()}
+                style={{ minHeight: 56, width: '100%', borderRadius: 999, marginTop: 4, border: '1px dashed rgba(201,168,76,0.26)', background: 'transparent', color: 'var(--or-clair, #E9D9A6)', fontSize: 16, fontWeight: 600, cursor: 'pointer' }}>
+                {t('Une envie précise ?', 'Craving something specific?')}
+              </button>
+            )}
+            {/* La seule mention : plus d'adresse postale ni de « trouvée sur
+                Google Maps » sur les cartes — la fiche détail (ℹ) les garde. */}
+            {scooter && feuilleEnvies && aide?.cat && (
+              <div onClick={() => setFeuilleEnvies(false)}
+                style={{ position: 'fixed', inset: 0, zIndex: 210, background: 'rgba(4,9,5,0.6)', backdropFilter: 'blur(3px)', display: 'flex', alignItems: 'flex-end', justifyContent: 'center' }}>
+                <div onClick={(e) => e.stopPropagation()}
+                  onTouchStart={(e) => { (e.currentTarget as HTMLElement & { _y?: number })._y = e.touches[0].clientY }}
+                  onTouchMove={(e) => { const el = e.currentTarget as HTMLElement & { _y?: number }; if (el._y != null && e.touches[0].clientY - el._y > 55) { setFeuilleEnvies(false); el._y = undefined } }}
+                  style={{ width: '100%', maxWidth: 430, borderRadius: '22px 22px 0 0', background: '#0D1D12', borderTop: '1px solid rgba(201,168,76,0.26)', padding: '10px 18px calc(20px + env(safe-area-inset-bottom))', maxHeight: '72svh', overflowY: 'auto', overscrollBehavior: 'contain' }}>
+                  <div aria-hidden style={{ width: 42, height: 4, borderRadius: 999, background: 'rgba(253,250,243,0.25)', margin: '3px auto 8px' }} />
+                  <h3 style={{ fontFamily: "'Playfair Display', Georgia, serif", color: '#fdfaf3', fontSize: 21, fontWeight: 700, margin: 0, padding: '6px 4px 14px' }}>
+                    {t('Une envie précise ?', 'Craving something specific?')}
+                  </h3>
+                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 10 }}>
+                    {(enviesDispo ?? ENVIES[aide.cat] ?? []).map((e) => (
+                      <button key={e.mot} onClick={() => lancerEnvie(e)}
+                        style={{ minHeight: 72, borderRadius: 16, border: '1px solid rgba(201,168,76,0.14)', background: 'rgba(253,250,243,0.035)', color: '#FDFAF3', fontSize: 15, fontWeight: 600, cursor: 'pointer', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 4 }}>
+                        {e.mot}
+                        {'n' in e && (e as { n: number }).n > 0 && (
+                          <span style={{ fontSize: 11.5, color: 'rgba(201,168,76,0.75)', fontWeight: 600 }}>{(e as { n: number }).n} dispo</span>
+                        )}
+                      </button>
+                    ))}
+                  </div>
+                  {enviesChargent && !enviesDispo && (
+                    <p style={{ margin: '10px 0 0', textAlign: 'center', fontSize: 13, color: 'rgba(253,250,243,0.45)' }}>{t('Je compte ce qui existe autour…', 'Counting what exists nearby…')}</p>
+                  )}
+                </div>
+              </div>
+            )}
+            {scooter && (
+              <p style={{ margin: '2px 0 0', textAlign: 'center', fontSize: 13, color: 'rgba(253,250,243,0.45)' }}>
+                {en ? 'Titles and summaries written by ' : 'Titres et résumés écrits par '}
+                <strong style={{ color: 'rgba(201,168,76,0.8)', fontWeight: 600 }}>{en ? 'VoyagesHalal AI' : 'l\u2019IA VoyagesHalal'}</strong>
+                {en ? ' from reviews.' : ' à partir des avis.'}
+                <br />
+                {en ? 'We set aside places identified as serving alcohol.' : 'Nous écartons les établissements identifiés comme servant de l\u2019alcool.'}
+              </p>
+            )}
           </div>
         )}
 
@@ -1274,12 +1422,85 @@ function Photos({ photos, nom }: { photos?: string[]; nom: string }) {
 }
 
 /** UNE FICHE = une carte qui respire, la photo la porte (§2 et §6). */
+// 🍣 LA GRILLE D'ENVIES — 9 cases max, un mot chacune, pas de champ texte.
+// La requête part chez Google TELLE QUELLE (le type d'abord, jamais
+// « halal » accolé — règle verrouillée par test-requete) ; le filtre
+// alcool et le statut honnête s'appliquent comme partout.
+const ENVIES: Record<string, { mot: string; requete: string }[]> = {
+  manger: [
+    { mot: 'Sushi', requete: 'sushi' }, { mot: 'Burger', requete: 'burger' }, { mot: 'Pizza', requete: 'pizza' },
+    { mot: 'Turc', requete: 'restaurant turc' }, { mot: 'Indien', requete: 'restaurant indien' }, { mot: 'Marocain', requete: 'restaurant marocain' },
+    { mot: 'Asiatique', requete: 'restaurant asiatique' }, { mot: 'Poulet', requete: 'poulet grillé' }, { mot: 'Dessert', requete: 'pâtisserie' },
+  ],
+  activite: [
+    { mot: 'Parc', requete: 'parc' }, { mot: 'Musée', requete: 'musée' }, { mot: 'Piscine', requete: 'piscine' },
+    { mot: 'Sport', requete: 'salle de sport' }, { mot: 'Marché', requete: 'marché' }, { mot: 'Enfants', requete: 'aire de jeux' },
+  ],
+}
+
+function FicheScooter({ f, i, en, ouverte, onInfo, onItineraire, enfant }: {
+  f: Fiche; i: number; en: boolean; ouverte: boolean; onInfo: () => void; onItineraire: () => void; enfant?: React.ReactNode
+}) {
+  // La ligne de données : toujours le même format, et un segment absent est
+  // OMIS proprement — jamais « non disponible » (itération 2, correction 3).
+  const metaTxt = [
+    typeof f.note === 'number' ? `★ ${f.note.toLocaleString('fr-FR')}` : '',
+    typeof f.prix === 'number' && f.prix > 0 ? '€'.repeat(f.prix) : '',
+  ].filter(Boolean).join(' · ')
+  const premier = i === 0
+  return (
+    <div style={{ borderRadius: 18, overflow: 'hidden', border: `1px solid ${premier ? 'var(--or)' : 'rgba(201,168,76,0.14)'}`, background: 'linear-gradient(165deg, rgba(253,250,243,0.05), rgba(253,250,243,0.012))' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '14px 16px 0' }}>
+        <span style={{ flexShrink: 0, width: 38, height: 38, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: "'Playfair Display', Georgia, serif", fontSize: 17, fontWeight: 700, ...(premier ? { background: 'linear-gradient(135deg, #D9BE6C, var(--or))', color: '#0A1509' } : { color: 'var(--or-clair, #E9D9A6)', border: '1px solid rgba(201,168,76,0.26)' }) }}>{i + 1}</span>
+        {/* 🖼️ On choisit plus vite avec l'œil : miniature Places (proxy —
+            la clé ne sort jamais), dégradé forêt si absente. */}
+        {f.photos?.[0]
+          // eslint-disable-next-line @next/next/no-img-element
+          ? <img src={f.photos[0]} alt="" loading="lazy" style={{ flexShrink: 0, width: 72, height: 72, objectFit: 'cover', borderRadius: 14 }} />
+          : <span aria-hidden style={{ flexShrink: 0, width: 72, height: 72, borderRadius: 14, background: 'linear-gradient(150deg, #1B4332, #0B1A0F)' }} />}
+        <span style={{ flex: 1, minWidth: 0, color: '#fdfaf3', fontSize: 18, fontWeight: 700, overflowWrap: 'anywhere' }}>{f.nom}</span>
+        {f.statut === 'verifie' && (
+          <span style={{ flexShrink: 0, fontSize: 11, fontWeight: 700, padding: '5px 10px', borderRadius: 999, background: '#1F7A4A', color: '#fff', letterSpacing: '0.08em' }}>{en ? 'VERIFIED' : 'VÉRIFIÉ'}</span>
+        )}
+      </div>
+      {/* ✒️ Le titre de l'IA — seulement s'il existe en cache : jamais
+          généré pendant l'attente, jamais inventé (lib/titreIA). */}
+      {f.titreIA && (
+        <p style={{ fontFamily: "'Playfair Display', Georgia, serif", fontStyle: 'italic', fontSize: 17, color: 'var(--or-clair, #E9D9A6)', margin: 0, padding: '6px 16px 0 66px' }}>{f.titreIA}</p>
+      )}
+      <p style={{ margin: 0, padding: '4px 16px 0 66px', fontSize: 15, color: 'rgba(253,250,243,0.68)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+        {metaTxt}{metaTxt ? ' · ' : ''}<TrajetMin f={f} en={en} />
+      </p>
+      {/* 🟢 LA donnée qui évite un déplacement pour rien — et le conseil de
+          timing de l'IA quand plusieurs avis en parlent (jamais inventé). */}
+      <p style={{ margin: 0, padding: '3px 16px 0 66px', fontSize: 14 }}>
+        <StatutOuverture f={f} en={en} />{f.conseilIA ? <span style={{ color: 'rgba(253,250,243,0.68)' }}> · {f.conseilIA}</span> : null}
+      </p>
+      <div style={{ display: 'flex', gap: 10, padding: '12px 16px 14px' }}>
+        <button onClick={onItineraire}
+          style={{ flex: 1, minHeight: 56, borderRadius: 14, border: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 9, background: 'linear-gradient(135deg, #D9BE6C, var(--or))', color: '#0A1509', fontSize: 16, fontWeight: 700, cursor: 'pointer' }}>
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" aria-hidden><path d="M12 2.5 21 21.5 12 17l-9 4.5z" /></svg>
+          {en ? 'Directions' : 'Itinéraire'}
+        </button>
+        <button onClick={onInfo} aria-expanded={ouverte} aria-label={en ? 'Details' : 'Fiche détail'}
+          style={{ flexShrink: 0, width: 56, minHeight: 56, borderRadius: 14, border: '1px solid rgba(201,168,76,0.26)', background: 'none', color: 'var(--or-clair, #E9D9A6)', fontSize: 15, fontWeight: 700, cursor: 'pointer' }}>
+          {ouverte ? '×' : 'ℹ'}
+        </button>
+      </div>
+      {/* ℹ︎ ouvre la fiche complète — jamais l'action par défaut. */}
+      {ouverte && <div style={{ padding: '0 10px 12px' }}>{enfant}</div>}
+    </div>
+  )
+}
+
 function Carte({ f, en, mode, destination, allergie, choisie = false, onChoisir, onItineraire }: { f: Fiche; en: boolean; mode: Mode; destination: boolean; allergie: boolean; choisie?: boolean; onChoisir?: () => void; onItineraire: () => void }) {
   const t = (fr: string, an: string) => (en ? an : fr)
   // §5.1 et §5.2 : le temps est TOUJOURS accompagné de son mode, et
   // jamais « 91 min à pied » — au-delà de 20 minutes, on bascule sur la
   // voiture. §5.6 : sur une fiche ville, le repère est le centre.
-  const dist = trajet(f.distanceM, mode, en, destination)
+  // Itération 4, correction 5 : plus de « ≈ » calculé — les MÊMES temps
+  // réels que la liste (ou des mètres), une seule source de vérité.
+  const dist = <TrajetMin f={f} en={en} />
   return (
     // 🔗 La fiche choisie porte le même liseré doré que son épingle
     // grossit sur la carte : c'est une seule sélection, vue des deux côtés.
@@ -1304,7 +1525,13 @@ function Carte({ f, en, mode, destination, allergie, choisie = false, onChoisir,
           {f.ouvert === false && <span style={{ color: 'rgba(253,250,243,0.6)', fontWeight: 700 }}> · {t('fermé', 'closed')}</span>}
         </p>
         {f.adresse && <p style={{ color: 'rgba(253,250,243,0.6)', fontSize: 12.5, margin: '4px 0 0' }}>{f.adresse}</p>}
-        <p style={{ color: 'var(--or)', fontSize: 12.5, fontWeight: 700, margin: '6px 0 0' }}>{f.statut}</p>
+        {/* Itération 4 : les mentions techniques (« référencée sur Google
+            Maps — à vérifier », « trouvée sur Google Maps ») quittent la
+            fiche — ne restent que les statuts qui disent quelque chose :
+            vérifié, communauté, ou « signalé halal ». */}
+        {!/référencée sur Google Maps|trouvée sur Google Maps|à vérifier selon tes critères/.test(f.statut) && (
+          <p style={{ color: 'var(--or)', fontSize: 12.5, fontWeight: 700, margin: '6px 0 0' }}>{f.statut}</p>
+        )}
         {/* 🔴 §6 — une ligne alcool sur CHAQUE fiche, jamais optionnelle.
             Verte quand Google l'affirme, ambre quand on ne sait pas : on
             ne rassure jamais à tort. */}

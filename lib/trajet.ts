@@ -100,8 +100,11 @@ export function trajet(distanceM: number, souhaite: Mode, en: boolean, depuisCen
 const RAYON_LARGE_M = 20_000
 
 /** Rayon de recherche en mètres : 20 km pour tout le monde, d'emblée. */
-export function rayonM(_c: Criteres, _mode: Mode): number {
-  return RAYON_LARGE_M
+export function rayonM(c: Criteres, _mode: Mode): number {
+  // Le bonus vient de la feuille d'envies (« élargis le rayon ? +5 km ») —
+  // borné : on n'envoie personne à 50 km sur une envie de sushi.
+  const bonus = Math.min(10, Math.max(0, c.rayonBonusKm ?? 0)) * 1000
+  return RAYON_LARGE_M + bonus
 }
 
 /** Le rayon exprimé en minutes de trajet, pour l'écrire à l'écran quand il

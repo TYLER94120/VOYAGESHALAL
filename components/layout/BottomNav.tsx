@@ -57,9 +57,7 @@ export default function BottomNav() {
     if (!vv || !el) return
     const cale = () => {
       const cache = Math.max(0, window.innerHeight - vv.height - vv.offsetTop)
-      el.style.bottom = cache > 1
-        ? `calc(10px + env(safe-area-inset-bottom, 0px) + ${Math.round(cache)}px)`
-        : '' // état normal : la valeur de la feuille de style fait foi
+      el.style.bottom = cache > 1 ? `${Math.round(cache)}px` : '' // collée au bord sinon
     }
     vv.addEventListener('resize', cale)
     vv.addEventListener('scroll', cale)
@@ -100,23 +98,28 @@ export default function BottomNav() {
       {toolsOpen && (
         <>
           {/* Le voile s'arrête AU-DESSUS de la barre : les 5 onglets restent cliquables */}
-          <div onClick={() => fermerOutils()} style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 'calc(86px + env(safe-area-inset-bottom, 0px))', background: 'rgba(0,0,0,0.45)', zIndex: 98 }} />
+          <div onClick={() => fermerOutils()} style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 'calc(76px + env(safe-area-inset-bottom, 0px))', background: 'rgba(0,0,0,0.45)', zIndex: 98 }} />
           <div
             onTouchStart={(e) => setGlisse(e.touches[0].clientY)}
             onTouchMove={(e) => { if (glisse != null && e.touches[0].clientY - glisse > 55) { setGlisse(null); fermerOutils() } }}
             onTouchEnd={() => setGlisse(null)}
-            style={{ position: 'fixed', left: 10, right: 10, bottom: 'calc(86px + env(safe-area-inset-bottom, 0px))', zIndex: 99, background: '#fff', borderRadius: 22, padding: '14px 14px calc(10px)', boxShadow: '0 -10px 40px rgba(0,0,0,0.2)' }}>
+            style={{ position: 'fixed', left: 10, right: 10, bottom: 'calc(76px + env(safe-area-inset-bottom, 0px))', zIndex: 99, background: '#0D1D12', border: '1px solid rgba(201,168,76,0.26)', borderRadius: 22, padding: '14px 14px calc(10px)', boxShadow: '0 -10px 40px rgba(0,0,0,0.4)' }}>
             <div aria-hidden style={{ width: 44, height: 4, borderRadius: 99, background: 'rgba(11,26,15,0.25)', margin: '0 auto 10px' }} />
-            <p style={{ margin: '2px 4px 10px', fontWeight: 900, fontSize: 15, color: '#0b1a0f' }}>🧰 {en ? 'All tools' : 'Tous les outils'}</p>
+            <p style={{ margin: '2px 4px 10px', fontWeight: 900, fontSize: 15, color: '#FDFAF3' }}>🧰 {en ? 'All tools' : 'Tous les outils'}</p>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 }}>
               {(voirPlus ? tools : essentiels).map((tl) => (
-                <Link key={tl.href} href={tl.href} onClick={() => fermerOutils()} style={{ display: 'flex', alignItems: 'center', gap: 10, minHeight: 56, padding: '0 14px', borderRadius: 14, background: '#FDFAF3', border: '1px solid rgba(27,67,50,0.12)', textDecoration: 'none', color: '#0b1a0f', fontWeight: 700, fontSize: 14.5 }}>
+                <Link key={tl.href} href={tl.href}
+                  // 🔴 BUG « Trouvailles ne fait rien » (itération 5) : fermer
+                  // par fermerOutils() déclenchait history.back(), qui ANNULAIT
+                  // la navigation du lien. Un lien ferme le panneau sans
+                  // toucher à l'historique — la navigation s'en charge.
+                  onClick={() => setToolsOpen(false)} style={{ display: 'flex', alignItems: 'center', gap: 10, minHeight: 56, padding: '0 14px', borderRadius: 14, background: 'rgba(253,250,243,0.05)', border: '1px solid rgba(201,168,76,0.14)', textDecoration: 'none', color: '#FDFAF3', fontWeight: 700, fontSize: 14.5 }}>
                   <span style={{ fontSize: 20 }}>{tl.icon}</span> {tl.label}
                 </Link>
               ))}
               {!voirPlus && (
                 <button type="button" onClick={() => setVoirPlus(true)} aria-expanded={false}
-                  style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, minHeight: 56, padding: '0 14px', borderRadius: 14, background: 'none', border: '1.5px dashed rgba(27,67,50,0.3)', color: '#1b4332', fontWeight: 800, fontSize: 14.5, cursor: 'pointer', gridColumn: '1 / -1' }}>
+                  style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, minHeight: 56, padding: '0 14px', borderRadius: 14, background: 'none', border: '1.5px dashed rgba(201,168,76,0.35)', color: '#E9D9A6', fontWeight: 800, fontSize: 14.5, cursor: 'pointer', gridColumn: '1 / -1' }}>
                   {en ? `More (${secondaires.length})` : `Plus (${secondaires.length})`}
                   <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden><path d="m6 9 6 6 6-6" /></svg>
                 </button>

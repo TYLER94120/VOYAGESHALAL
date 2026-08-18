@@ -1,5 +1,8 @@
-import { NextResponse } from 'next/server'
+import { NextResponse, after } from 'next/server'
 import { checkAdmin } from '@/lib/adminAuth'
+import { attacherTitres, genererTitresManquants } from '@/lib/titreIA'
+import { ajouterMinutes } from '@/lib/trajets'
+import { motSpecifique } from '@/lib/typeMot.mjs'
 import { Redis } from '@upstash/redis'
 import { requeteGoogle } from '@/lib/requete.mjs'
 import { accepte } from '@/lib/categorie.mjs'
@@ -155,6 +158,21 @@ export interface Fiche {
     famille?: boolean; terrasse?: boolean; vegetarien?: boolean
     reservation?: boolean; accessible?: boolean
   }
+  /** ✒️ Titre court écrit par l'IA à partir des avis — cache 7 jours,
+   *  jamais généré pendant la requête (lib/titreIA). Absent = rien. */
+  titreIA?: string
+  /** 🕐 Conseil de timing IA (« mieux le matin ») — seulement si plusieurs
+   *  avis en parlent, même cache que les titres. */
+  conseilIA?: string
+  /** ⏱️ Minutes réelles (API Routes, lib/trajets) — absentes si Routes n'a
+   *  pas répondu : le client affiche alors des mètres, jamais une estimation. */
+  marcheMin?: number
+  voitureMin?: number
+  /** 🏷️ Type de cuisine en un mot — chaîne de fiabilité : base > types
+   *  Google spécifiques > IA sur les avis (cache) > rien (le client écrit
+   *  « Resto »). La source est stockée pour audit. */
+  cuisine?: string
+  cuisineSource?: 'base' | 'places' | 'ia' | 'generique'
   statut: string
   /** 🔴 Ce qu'on SAIT de l'alcool : jamais une supposition. */
   alcool: 'non' | 'inconnu'
@@ -194,6 +212,8 @@ function modeDe(c: Criteres): Mode {
 const CATEGORIE: Record<'manger' | 'mosquee' | 'activite', { texte: (q: string) => string; statut: string; statutOSM: string; spots: string[] }> = {
   manger: {
     texte: (q) => q,
+    // ⚠️ Ce statut n'est plus appliqué en bloc : voir statutManger() —
+    // « signalé halal » exige une MENTION réelle (nom, résumé ou avis).
     statut: 'signalé halal sur Google Maps — à confirmer sur place',
     statutOSM: 'signalé halal sur OpenStreetMap — à confirmer sur place',
     spots: ['resto', 'boucherie'],
@@ -307,6 +327,8 @@ function cadre(lat: number, lng: number, m: number) {
  * pouvoir tomber dans un journal, même par accident.
  */
 type Refus = { statut: number; message: string }
+// Le journal de recherche : ce qui explique un résultat vide (itération 4).
+interface Bilan { rayonAtteintM?: number; ecartesAlcool?: number }
 
 function sansSecret(texte: string): string {
   return texte.replace(/key=[^&\s"']+/gi, 'key=***').slice(0, 300)
@@ -436,10 +458,11 @@ const PALIERS_M = [2000, 5000, 10000, 20000]
  * rend pas assez d'adresses. Le visiteur ne voit rien de cette mécanique ;
  * il voit seulement que la première adresse est à cinq minutes.
  */
-async function chercheParTexte(lat: number, lng: number, c: Criteres, cle: string, lang: string, texte: string, journal?: Journal): Promise<Candidat[] | null> {
+async function chercheParTexte(lat: number, lng: number, c: Criteres, cle: string, lang: string, texte: string, journal?: Journal, bilan?: Bilan): Promise<Candidat[] | null> {
   let dernier: Candidat[] | null = null
   for (const rayon of PALIERS_M) {
     const trouves = await passe1(lat, lng, c, cle, lang, rayon, texte, journal)
+    if (bilan) bilan.rayonAtteintM = rayon
     if (trouves === null) return dernier
     dernier = trouves
     if (trouves.length >= RETENUS) break
@@ -582,7 +605,7 @@ const CHAMPS_ALCOOL = ['id', 'displayName', 'primaryType', 'types', 'servesBeer'
  * découvres trop tard qu'il ne t'en reste qu'un. C'est de l'argent bien
  * dépensé : c'est le filtre qui protège la promesse du site. » (Mohamed)
  */
-async function verifierAlcool(cands: Candidat[], cle: string): Promise<Candidat[]> {
+async function verifierAlcool(cands: Candidat[], cle: string, bilan?: Bilan): Promise<Candidat[]> {
   const pool = cands.slice(0, POOL_ALCOOL)
   const verifies = await Promise.all(pool.map(async (x) => {
     if (!x.id) return null
@@ -611,7 +634,13 @@ async function verifierAlcool(cands: Candidat[], cle: string): Promise<Candidat[
       }
     } catch { return { ...x } } finally { clearTimeout(t) }
   }))
-  return verifies.filter((x): x is Candidat => !!x && verdictAlcool(x).garde)
+  const gardes = verifies.filter((x): x is Candidat => !!x && verdictAlcool(x).garde)
+  const ecartes = verifies.filter((x) => x && !verdictAlcool(x).garde)
+  if (bilan) bilan.ecartesAlcool = (bilan.ecartesAlcool ?? 0) + ecartes.length
+  // 🔎 Itération 4, diagnostic : quand le barrage vide la liste, on veut le
+  // VOIR — c'est la première cause suspecte d'un « aucune adresse » à tort.
+  if (ecartes.length) console.warn(`[lieux] barrage alcool : ${ecartes.length}/${verifies.length} écarté(s) — ${ecartes.map((x) => { const v = verdictAlcool(x!); return `${x!.nom} (${'motif' in v ? v.motif : '?'})` }).join(' · ')}`)
+  return gardes
 }
 
 /** Le tri : c'est lui qui rend le résultat « sur mesure ». */
@@ -896,6 +925,7 @@ export async function POST(req: Request) {
   const journal: Journal = {}
   /** Les critères de profil qu'on a dû relâcher — affichés tels quels. */
   const relaches: string[] = []
+  const bilan: Bilan = {}
 
   // « Seulement les adresses vérifiées » : on n'interroge même pas Google.
   if (c.exigence === 'verifies') {
@@ -929,8 +959,12 @@ export async function POST(req: Request) {
     // une demande purement géographique.
     const demandeEcrite = !!(c.motsCles ?? '').trim()
     let cands = demandeEcrite
-      ? await chercheParTexte(lat, lng, c, cle, lang, avecProfil, journal)
+      ? await chercheParTexte(lat, lng, c, cle, lang, avecProfil, journal, bilan)
       : await chercheParProximite(lat, lng, c, cle, lang, journal)
+    if (!demandeEcrite) bilan.rayonAtteintM = rayon
+    // 🔎 Le journal du diagnostic (itération 4) : la requête exacte et ce
+    // que chaque étage a laissé passer — lisible dans les logs serveur.
+    console.warn(`[lieux] «${avecProfil}» cat=${c.categorie ?? 'manger'} rayon=${bilan.rayonAtteintM ?? rayon}m → candidats=${cands?.length ?? 'aucune réponse'}`)
 
     // §5 — QUAND TOUT NE PEUT PAS ÊTRE SATISFAIT, ON DIT CE QU'ON A LÂCHÉ.
     // On relâche du MOINS au PLUS essentiel, un cran à la fois, et jamais
@@ -952,10 +986,25 @@ export async function POST(req: Request) {
       // AVANT de choisir les trois. C'est l'ordre inverse qui avait laissé
       // passer un bistrot : on filtrait trop tard, ou pas du tout.
       // La catégorie « mosquée » n'a pas à passer par là.
-      const classes = c.categorie === 'mosquee' ? tries : await verifierAlcool(tries, cle)
+      // Le barrage alcool ne concerne que MANGER : un parc n'est ni halal
+      // ni pas halal (itération 4, correction 3) — et la vérification
+      // payante sur des musées était de l'argent jeté.
+      const classes = c.categorie === 'manger' ? await verifierAlcool(tries, cle, bilan) : tries
       const placesRetenues = classes.slice(0, Math.max(0, RETENUS - spots.length))
       // PASSE 2 : uniquement sur les retenues.
       const enrichies = await Promise.all(placesRetenues.map((x) => enrichir(x, cle, lang, origin, c.categorie)))
+      // 🏅 COUCHE HALAL HONNÊTE (itération 4) : « signalé halal » exige une
+      // MENTION réelle — dans le nom, le résumé Google ou un avis. Sans
+      // mention : « à vérifier », franchement. Le badge vert reste réservé
+      // à notre base vérifiée (spots), comme toujours.
+      if (c.categorie === 'manger') {
+        for (const f of enrichies) {
+          const mention = /halal/i.test(f.nom) || /halal/i.test(f.resume ?? '') || (f.avis ?? []).some((a) => /halal/i.test(a.texte))
+          f.statut = mention
+            ? 'signalé halal sur Google Maps — à confirmer sur place'
+            : 'à vérifier selon tes critères'
+        }
+      }
       source = 'google'
       fiches = [...spots, ...enrichies].slice(0, RETENUS)
       autres = classes.slice(placesRetenues.length, placesRetenues.length + AUTRES).map((x) => ({
@@ -998,6 +1047,23 @@ export async function POST(req: Request) {
   }
   if (r && !profilVide(profil)) { try { await r.incr('surmesure:avec-profil') } catch { /* idem */ } }
 
+  // ✒️ Les titres IA déjà en cache rejoignent les fiches (lecture seule) ;
+  // les manquants se génèrent APRÈS la réponse, jamais pendant l'attente.
+  // 🏷️ Niveau 2 de la chaîne de fiabilité : le primaryType Google quand il
+  // est SPÉCIFIQUE (turkish_restaurant → Turc). Le niveau 3 (IA sur les
+  // avis, en cache) ne parle que si les niveaux au-dessus se taisent.
+  for (const f of fiches) {
+    if (f.cuisine) continue
+    const spec = motSpecifique(f.famille)
+    if (spec) { f.cuisine = spec; f.cuisineSource = 'places' }
+  }
+  await attacherTitres(fiches, r)
+  after(() => genererTitresManquants(fiches, r))
+  // ⏱️ Les minutes réelles (règle actée : ≤ 15 min → marche, sinon voiture).
+  // 1,5 s maximum, échec silencieux — et elles entrent dans le cache avec
+  // les fiches : un cache-hit ne repaie jamais Routes.
+  await ajouterMinutes(fiches, { lat, lng }, r)
+
   const reponse = {
     fiches, autres, source, etatGoogle,
     // 🔎 Présent UNIQUEMENT quand Google a refusé : le statut et sa phrase
@@ -1015,6 +1081,10 @@ export async function POST(req: Request) {
     // Le client a besoin du mode pour ÉCRIRE le temps de trajet, et du
     // plafond pour dire « à moins de 10 minutes à pied ».
     mode, plafondMin: plafondMin(c, mode), rayonKm: RAYON_KM,
+    // 🔎 Itération 4 : le rayon RÉELLEMENT cherché, et ce que le barrage
+    // alcool a écarté — pour qu'un écran vide dise la vérité.
+    rayonAtteintKm: Math.round((bilan.rayonAtteintM ?? rayonM(c, mode)) / 1000),
+    ...(bilan.ecartesAlcool ? { ecartesAlcool: bilan.ecartesAlcool } : {}),
     // ⏱️ L'URGENCE PRIME QUAND LA PRIÈRE APPROCHE. Le composant connaît le
     // temps restant (il le calcule sur place, sans réseau) ; on lui donne
     // ici de quoi dire « atteignable avant » : chaque fiche porte déjà sa

@@ -89,4 +89,12 @@ if (fautes.length) {
   console.error('')
   process.exit(1)
 }
+// Itération 4 : un musée n'est pas sa cafétéria — les types SECONDAIRES
+// n'excluent plus en « Que faire » (seul le type principal décide).
+if (!accepte('activite', 'museum', ['museum', 'cafe', 'gift_shop', 'store'])) {
+  console.error('❌ un musée avec café en type secondaire doit passer en Que faire'); process.exit(1)
+}
+if (accepte('activite', 'restaurant', ['restaurant'])) {
+  console.error('❌ un restaurant (type principal) ne doit jamais sortir en Que faire'); process.exit(1)
+}
 console.log(`✅ catégories : ${total} cas — aucun restaurant ne peut sortir en mode Prier, aucun en mode Que faire.`)

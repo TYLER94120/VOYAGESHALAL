@@ -109,7 +109,7 @@ export default async function DestinationsPage() {
   const continents = ['Toutes', ...CONTINENT_ORDER.filter((c) => presents.has(c))]
 
   return (
-    <main style={{ backgroundColor: '#fdfaf3' }}>
+    <main style={{ backgroundColor: '#fdfaf3', minHeight: '100svh' }}>
       {/* ‹ correction 5 : chaque écran secondaire a son retour, pile réelle */}
       <BoutonRetour clair />
       {/* 🔴 AUCUNE VILLE PAR DÉFAUT — bug du 18 août : « Voyages »,

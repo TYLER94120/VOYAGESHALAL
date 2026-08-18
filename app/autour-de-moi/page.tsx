@@ -5,7 +5,10 @@ import type { Map as LeafletMap, Marker } from 'leaflet'
 import { useInstantPosition } from '@/lib/useInstantPosition'
 import { computePrayerTimesFull } from '@/lib/prayerCalc'
 import SurMesure, { type Fiche } from '@/components/lieux/SurMesure'
-import { top3, ETIQUETTES } from '@/lib/top3.mjs'
+import { top3 } from '@/lib/top3.mjs'
+import { typeMot } from '@/lib/typeMot.mjs'
+import TrajetMin, { StatutOuverture } from '@/components/lieux/TrajetMin'
+import { lancerItineraire } from '@/lib/itineraire'
 
 // 🗺️ « AUTOUR DE MOI » — LA MÊME RECHERCHE, EN VUE CARTE.
 //
@@ -98,6 +101,11 @@ export default function AutourDeMoiPage() {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const mosqueesFond = useRef<any[]>([])
   const plein = useRef<HTMLElement | null>(null)
+  // Vrai pendant un recadrage déclenché par le CODE : ces mouvements ne
+  // doivent pas faire apparaître « Revenir sur ma zone ».
+  const mouvementProgramme = useRef(false)
+  const [tiroirReplie, setTiroirReplie] = useState(false)
+  const [glisseTiroir, setGlisseTiroir] = useState<number | null>(null)
 
   // 📏 LA HAUTEUR DISPONIBLE SE MESURE, ELLE NE SE DEVINE PAS. Un
   // « calc(100dvh - 59px) » écrit en dur serait faux sur le premier
@@ -182,9 +190,10 @@ export default function AutourDeMoiPage() {
         mapRef.current = m
         L.control.zoom({ position: 'bottomright' }).addTo(m)
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '© OpenStreetMap' }).addTo(m)
-        // « Rechercher dans cette zone » n'apparaît QU'APRÈS un déplacement
-        // volontaire — jamais en permanence.
-        m.on('dragend zoomend', () => setCarteDeplacee(true))
+        // « Revenir sur ma zone » n'apparaît QU'APRÈS un déplacement
+        // VOLONTAIRE (correction 5) : le cadrage automatique (fitBounds au
+        // changement d'onglet) passe par mouvementProgramme et ne compte pas.
+        m.on('dragend zoomend', () => { if (!mouvementProgramme.current) setCarteDeplacee(true) })
       } else {
         mapRef.current.setView([pos.lat, pos.lng], 14)
       }
@@ -215,18 +224,22 @@ export default function AutourDeMoiPage() {
     aPeindre.forEach((f, i) => {
       if (!f.id) return
       const mk = L.marker([f.lat, f.lng], { icon: epingle(L, i + 1, false), zIndexOffset: 500 - i }).addTo(mapRef.current)
-      // 🔗 Toucher une épingle sur la carte → on revient à la liste, sur sa
-      // fiche : c'est la fiche qu'on est venu chercher, pas le point.
-      mk.on('click', () => {
-        setChoisie(f.id!)
-        setVue('liste')
-        setTimeout(() => document.querySelector(`[data-fiche="${f.id}"]`)?.scrollIntoView({ block: 'start', behavior: 'smooth' }), 260)
-      })
+      // 🛵 Itération 2, correction 4 : toucher une épingle OUVRE
+      // L'ITINÉRAIRE, directement — arrêté au bord de la route, la fiche
+      // est une étape de trop. Elle reste accessible via ℹ sur la liste.
+      mk.on('click', () => lancerItineraire(f.lat, f.lng, typeof (f as { marcheMin?: number }).marcheMin === 'number' ? (f as { marcheMin?: number }).marcheMin! <= 15 : undefined))
       marqueurs.current.push({ id: f.id, marker: mk, rang: i + 1 })
     })
     if (aPeindre.length) {
       try {
-        mapRef.current.fitBounds(L.latLngBounds(aPeindre.map((f) => [f.lat, f.lng])), { padding: [60, 60], maxZoom: 16, animate: true })
+        // 🎯 Correction 5 : le cadrage inclut MA POSITION + les épingles,
+        // avec un padding qui laisse la pilule d'onglets (haut) et le
+        // tiroir (bas) hors du cadre utile — le bonhomme reste au centre.
+        const points = aPeindre.map((f) => [f.lat, f.lng] as [number, number])
+        if (pos) points.push([pos.lat, pos.lng])
+        mouvementProgramme.current = true
+        mapRef.current.fitBounds(L.latLngBounds(points), { paddingTopLeft: [44, 215], paddingBottomRight: [44, 250], maxZoom: 16, animate: true })
+        setTimeout(() => { mouvementProgramme.current = false }, 600)
       } catch { /* une seule fiche : le cadrage automatique n'a pas de sens */ }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -309,8 +322,13 @@ export default function AutourDeMoiPage() {
           3 cm d'écart. » Le bandeau fin du haut la porte déjà, en entier,
           sur toutes les pages du site. Une seule mention, jamais tronquée. */}
 
-      <button onClick={recentrer} className="autour-recentrer" aria-label="Revenir à ma position exacte">
-        {etatPos.geoLoading ? '…' : '🎯'}
+      <button onClick={recentrer} className="autour-recentrer" aria-label="Recentrer sur ma position">
+        {etatPos.geoLoading ? '…' : (
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" aria-hidden>
+            <circle cx="12" cy="12" r="7.5" /><circle cx="12" cy="12" r="2.4" />
+            <path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22" />
+          </svg>
+        )}
       </button>
 
       {/* 🗂 CORRECTION 4 — trois onglets discrets dans une pilule flottante,
@@ -328,26 +346,43 @@ export default function AutourDeMoiPage() {
       )}
 
       {vue === 'carte' && podium.length > 0 && (
-        <div className="carte-tiroir" aria-label="Les 3 meilleurs">
-          <div className="carte-poignee" aria-hidden />
+        <div className={`carte-tiroir${tiroirReplie ? ' replie' : ''}`} aria-label="Les 3 meilleurs"
+          onTouchStart={(e) => setGlisseTiroir(e.touches[0].clientY)}
+          onTouchMove={(e) => {
+            if (glisseTiroir == null) return
+            const d = e.touches[0].clientY - glisseTiroir
+            if (d > 45 && !tiroirReplie) { setTiroirReplie(true); setGlisseTiroir(null) }
+            if (d < -45 && tiroirReplie) { setTiroirReplie(false); setGlisseTiroir(null) }
+          }}
+          onTouchEnd={() => setGlisseTiroir(null)}>
+          <button className="carte-poignee-zone" aria-label={tiroirReplie ? 'Ouvrir le tiroir' : 'Réduire le tiroir'}
+            onClick={() => setTiroirReplie((v) => !v)}>
+            <span className="carte-poignee" aria-hidden />
+          </button>
           <p className="carte-tiroir-titre">
             {modeCarte === 'manger' ? 'Les 3 meilleurs — distance · note · prix' : 'Les 3 meilleurs'}
           </p>
           {podium.map((f, i) => (
             <button key={f.id} className="carte-tiroir-ligne"
-              onClick={() => {
-                setChoisie(f.id!)
-                setVue('liste')
-                setTimeout(() => document.querySelector(`[data-fiche="${f.id}"]`)?.scrollIntoView({ block: 'start', behavior: 'smooth' }), 260)
-              }}>
+              /* 🛵 Correction 4 : le tap OUVRE L'ITINÉRAIRE, directement —
+                 la fiche détail vit sur l'écran liste, derrière ℹ. */
+              onClick={() => lancerItineraire(f.lat, f.lng, typeof f.marcheMin === 'number' ? f.marcheMin <= 15 : undefined)}>
               <span className="carte-tiroir-rang">{i + 1}</span>
-              <span className="carte-tiroir-nom">{f.nom}</span>
-              <span className="carte-tiroir-meta">
-                {typeof f.note === 'number' ? `★ ${f.note.toLocaleString('fr-FR')}` : ''}
-                {typeof f.prix === 'number' && f.prix > 0 ? ` · ${'€'.repeat(f.prix)}` : ''}
-                {typeof f.distanceM === 'number' ? ` · ${Math.max(1, Math.round(f.distanceM / 75))} min` : ''}
+              <span className="carte-tiroir-txt">
+                {/* Jamais tronqué au point d'être illisible : 24 caractères puis … */}
+                <span className="carte-tiroir-nom">{f.nom.length > 24 ? `${f.nom.slice(0, 24)}…` : f.nom}</span>
+                <span className="carte-tiroir-sous">
+                  <b>{f.cuisine ?? typeMot((f as { famille?: string }).famille, modeCarte ?? 'manger')}</b>
+                  {typeof f.note === 'number' ? ` · ★ ${f.note.toLocaleString('fr-FR')}` : ''}
+                  {typeof f.prix === 'number' && f.prix > 0 ? ` · ${'€'.repeat(f.prix)}` : ''}
+                  {' · '}<TrajetMin f={f} />
+                </span>
+                <span style={{ fontSize: 13 }}><StatutOuverture f={f} /></span>
               </span>
-              {f.etiquette && <span className="carte-tiroir-badge">{ETIQUETTES[f.etiquette]?.fr ?? ''}</span>}
+              <span className="carte-tiroir-go" aria-hidden>
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round"><path d="M12 2.5 21 21.5 12 17l-9 4.5z" /></svg>
+                Y aller
+              </span>
             </button>
           ))}
         </div>
@@ -390,6 +425,7 @@ export default function AutourDeMoiPage() {
                 statut halal honnête, filtre alcool dans le code, profil
                 alimentaire, et les phrases d'IA. Aucun chemin parallèle. */}
             <SurMesure
+              scooter
               fondu
               posInitiale={pos ? { lat: pos.lat, lng: pos.lng, ville: pos.label } : null}
               phraseInitiale={phraseVenue}

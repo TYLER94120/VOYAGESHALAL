@@ -170,6 +170,10 @@ export default function DestinationsClient({ villes }: Props) {
   const [sort, setSort] = useState('default')
   const [visible, setVisible] = useState(PAGE_SIZE)
   const [sheetOpen, setSheetOpen] = useState(false)
+  // 🗂 Itération 5 : les pastilles deviennent des COLLECTIONS — un tap
+  // réordonne/filtre la liste tout de suite, l'état actif est doré avec ✕.
+  const [collection, setCollection] = useState<'proche' | 'famille' | 'budget' | 'omra' | 'mer' | null>(null)
+  const [posVisiteur, setPosVisiteur] = useState<{ lat: number; lng: number } | null>(null)
   const [showSuggest, setShowSuggest] = useState(false)
   const gridRef = useRef<HTMLDivElement>(null)
 
@@ -241,16 +245,23 @@ export default function DestinationsClient({ villes }: Props) {
     )
     const sc = (v: VilleCard) => v.scoreHalal ?? 0
     const sorted = [...list]
+    if (collection === 'proche' && posVisiteur) {
+      const d = (v: VilleCard) => (typeof v.lat === 'number' && typeof v.lng === 'number')
+        ? (v.lat - posVisiteur.lat) ** 2 + (v.lng - posVisiteur.lng) ** 2 : Infinity
+      sorted.sort((a, b) => d(a) - d(b))
+      return sorted
+    }
+    if (collection === 'budget') { sorted.sort((a, b) => sc(b) - sc(a)); return sorted }
     if (sort === 'note') sorted.sort((a, b) => sc(b) - sc(a) || a.nom.localeCompare(b.nom, 'fr'))
     else if (sort === 'az') sorted.sort((a, b) => a.nom.localeCompare(b.nom, 'fr'))
     else sorted.sort((a, b) => (HOLY.has(b.slug) ? 1 : 0) - (HOLY.has(a.slug) ? 1 : 0) || sc(b) - sc(a) || a.nom.localeCompare(b.nom, 'fr'))
     return sorted
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [villes, query, region, typeVoyage, budget, scoreMin, sort])
+  }, [villes, query, region, typeVoyage, budget, scoreMin, sort, collection, posVisiteur])
 
   useEffect(() => { setVisible(PAGE_SIZE) }, [query, region, typeVoyage, budget, scoreMin, sort])
 
-  const anyFilter = Boolean(query || region !== 'Toutes' || typeVoyage || budget !== 'tous' || scoreMin > 0)
+  const anyFilter = Boolean(query || region !== 'Toutes' || typeVoyage || budget !== 'tous' || scoreMin > 0 || collection)
   const goToGrid = (preset?: () => void) => {
     preset?.()
     setTimeout(() => gridRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 60)
@@ -264,13 +275,28 @@ export default function DestinationsClient({ villes }: Props) {
       .slice(0, 7)
   }, [query, villes])
 
-  const CHIPS: { icon: string; fr: string; en: string; go: () => void }[] = [
-    { icon: '📍', fr: 'Proche de moi', en: 'Near me', go: () => document.getElementById('shelf-near')?.scrollIntoView({ behavior: 'smooth' }) },
-    { icon: '👨‍👩‍👧', fr: 'Famille', en: 'Family', go: () => goToGrid(() => setTypeVoyage('famille')) },
-    { icon: '💶', fr: 'Petit budget', en: 'Low budget', go: () => goToGrid(() => setBudget('petit')) },
-    { icon: '🕋', fr: 'Omra', en: 'Umrah', go: () => goToGrid(() => setTypeVoyage('omra')) },
-    { icon: '🏖️', fr: 'Bord de mer', en: 'Seaside', go: () => goToGrid(() => setTypeVoyage('detente')) },
+  const COLLECTIONS: { id: 'proche' | 'famille' | 'budget' | 'omra' | 'mer'; icon: string; fr: string; en: string }[] = [
+    { id: 'proche', icon: '📍', fr: 'Proche de moi', en: 'Near me' },
+    { id: 'famille', icon: '👨‍👩‍👧', fr: 'Famille', en: 'Family' },
+    { id: 'budget', icon: '💶', fr: 'Petit budget', en: 'Low budget' },
+    { id: 'omra', icon: '🕋', fr: 'Omra', en: 'Umrah' },
+    { id: 'mer', icon: '🏖️', fr: 'Bord de mer', en: 'Seaside' },
   ]
+  const tapCollection = (id: typeof COLLECTIONS[number]['id']) => {
+    if (collection === id) { setCollection(null); setTypeVoyage(null); setBudget('tous'); return }
+    setCollection(id)
+    setTypeVoyage(id === 'famille' ? 'famille' : id === 'omra' ? 'omra' : id === 'mer' ? 'detente' : null)
+    setBudget(id === 'budget' ? 'petit' : 'tous')
+    if (id === 'proche' && !posVisiteur) {
+      // Le temps de vol n'existe pas dans nos données : on trie par
+      // DISTANCE réelle depuis la position — honnête et vérifiable.
+      navigator.geolocation?.getCurrentPosition(
+        (p) => setPosVisiteur({ lat: p.coords.latitude, lng: p.coords.longitude }),
+        () => setCollection(null), { timeout: 8000 },
+      )
+    }
+    setTimeout(() => gridRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 60)
+  }
 
   const selectStyle: React.CSSProperties = { minHeight: 46, padding: '0 10px', borderRadius: 10, border: '1.5px solid rgba(27,67,50,0.25)', background: '#fff', color: 'var(--foret)', fontSize: 14, fontWeight: 600, cursor: 'pointer', maxWidth: 170 }
 
@@ -331,50 +357,21 @@ export default function DestinationsClient({ villes }: Props) {
             )}
           </div>
           <div style={{ display: 'flex', gap: 8, justifyContent: 'center', flexWrap: 'wrap', marginTop: 14 }}>
-            {CHIPS.map((c) => (
-              <button key={c.fr} onClick={c.go}
-                style={{ minHeight: 46, display: 'inline-flex', alignItems: 'center', padding: '0 16px', borderRadius: 30, border: '1px solid rgba(201,168,76,0.45)', background: 'rgba(201,168,76,0.12)', color: '#e9dcbe', fontSize: 13.5, fontWeight: 700, cursor: 'pointer', whiteSpace: 'nowrap' }}>
-                {c.icon} {en ? c.en : c.fr}
-              </button>
-            ))}
+            {COLLECTIONS.map((c) => {
+              const actif = collection === c.id
+              return (
+                <button key={c.id} onClick={() => tapCollection(c.id)} aria-pressed={actif}
+                  style={{ minHeight: 46, display: 'inline-flex', alignItems: 'center', gap: 6, padding: '0 16px', borderRadius: 30, border: `1px solid ${actif ? 'var(--or)' : 'rgba(201,168,76,0.45)'}`, background: actif ? 'var(--or)' : 'rgba(201,168,76,0.12)', color: actif ? '#0A1509' : '#e9dcbe', fontSize: 13.5, fontWeight: 700, cursor: 'pointer', whiteSpace: 'nowrap' }}>
+                  {c.icon} {en ? c.en : c.fr}{actif ? ' ✕' : ''}
+                </button>
+              )
+            })}
           </div>
         </div>
       </section>
 
-      {/* ═══ 2. Barre de filtres STICKY ═══ */}
-      <div style={{ position: 'sticky', top: 0, zIndex: 40, background: 'rgba(253,250,243,0.96)', backdropFilter: 'blur(8px)', borderBottom: '1px solid rgba(27,67,50,0.08)', padding: '10px 16px' }}>
-        <div className="max-w-6xl mx-auto" style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
-          {/* Desktop : selects inline · Mobile : bouton panneau */}
-          <div className="hidden sm:flex" style={{ gap: 8, flexWrap: 'wrap', alignItems: 'center' }}>{filterControls}</div>
-          <button className="sm:hidden" onClick={() => setSheetOpen(true)}
-            style={{ minHeight: 46, padding: '0 18px', borderRadius: 30, border: '1.5px solid rgba(27,67,50,0.3)', background: anyFilter ? 'var(--foret)' : '#fff', color: anyFilter ? '#fff' : 'var(--foret)', fontWeight: 700, fontSize: 13.5, cursor: 'pointer' }}>
-            ⚙️ {en ? 'Filters' : 'Filtres'}{anyFilter ? ' ·' : ''}
-          </button>
-          {anyFilter && (
-            <button onClick={() => { setQuery(''); setRegion('Toutes'); setTypeVoyage(null); setBudget('tous'); setScoreMin(0) }}
-              style={{ background: 'none', border: 'none', color: '#b45309', fontWeight: 700, fontSize: 12.5, cursor: 'pointer' }}>
-              ✕ {en ? 'Clear' : 'Effacer'}
-            </button>
-          )}
-          <span style={{ marginLeft: 'auto', fontSize: 12, color: 'var(--texte-2)' }}>
-            {filtered.length}/{villes.length} destinations
-          </span>
-        </div>
-      </div>
-
-      {/* Panneau filtres mobile (bottom sheet) */}
-      {sheetOpen && (
-        <div onClick={() => setSheetOpen(false)} style={{ position: 'fixed', inset: 0, zIndex: 90, background: 'rgba(11,26,15,0.5)' }}>
-          <div onClick={(e) => e.stopPropagation()} style={{ position: 'absolute', left: 0, right: 0, bottom: 0, background: '#fdfaf3', borderRadius: '22px 22px 0 0', padding: '18px 18px calc(env(safe-area-inset-bottom, 0px) + 18px)' }}>
-            <p style={{ fontWeight: 800, color: '#0b1a0f', margin: '0 0 12px', fontSize: 16 }}>⚙️ {en ? 'Filters' : 'Filtres'}</p>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>{filterControls}</div>
-            <button onClick={() => setSheetOpen(false)} style={{ width: '100%', marginTop: 14, padding: '13px', borderRadius: 14, border: 'none', background: 'var(--foret)', color: '#fff', fontWeight: 800, fontSize: 15, cursor: 'pointer' }}>
-              {en ? `Show ${filtered.length} destinations` : `Voir ${filtered.length} destinations`}
-            </button>
-          </div>
-        </div>
-      )}
-
+      {/* Itération 5 : la barre « ⚙️ Filtres · 354/354 » et son panneau ont
+          été supprimés — jargon technique, remplacés par les collections. */}
       <div className="max-w-6xl mx-auto px-4 sm:px-8 pb-24 pt-8">
         {/* ═══ 3. ÉTAGÈRES (masquées si recherche/filtre actif) ═══ */}
         {!anyFilter && (

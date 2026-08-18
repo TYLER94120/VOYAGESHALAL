@@ -50,10 +50,15 @@
     scroll-behavior: smooth;
     /* clip (et non hidden) : stoppe le scroll horizontal SANS casser position:sticky sur mobile */
     overflow-x: clip;
+    background-color: #060E08;
   }
 
   body {
-    background-color: #fdfaf3;
+    /* 🔦 Itération 3, correction 5 — LA CAUSE DU RECTANGLE BEIGE : ce fond
+       clair par défaut apparaissait dès que le contenu était plus court
+       que l'écran, sous la nav. html et body sont désormais SOMBRES
+       partout ; les écrans clairs peignent leur propre fond, volontaire. */
+    background-color: #060E08;
     color: #1a1a18;
     font-family: var(--font-inter), 'DM Sans', system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -572,21 +577,23 @@ body { top: 0 !important; }
 /* Dock flottant (étape 2 du board) : pilule détachée du bord, fond nuit,
    liseré or — la nav fait partie du design au lieu de le couper. */
 .bottom-nav {
+  /* Itération 3, correction 5 : COLLÉE AU BORD BAS de la fenêtre — plus de
+     pilule flottante détachée avec du vide dessous. */
   display: none;
   position: fixed;
-  bottom: calc(10px + env(safe-area-inset-bottom));
-  left: 12px;
-  right: 12px;
-  max-width: 560px;
-  margin: 0 auto;
-  background: rgba(11, 26, 15, 0.94);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: none;
+  margin: 0;
+  background: rgba(11, 26, 15, 0.96);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(201, 168, 76, 0.35);
-  border-radius: 999px;
-  box-shadow: 0 10px 34px rgba(0, 0, 0, 0.45);
+  border-top: 1px solid rgba(201, 168, 76, 0.35);
+  border-radius: 18px 18px 0 0;
+  box-shadow: 0 -10px 34px rgba(0, 0, 0, 0.35);
   z-index: 100;
-  padding: 8px 6px;
+  padding: 6px 6px calc(6px + env(safe-area-inset-bottom));
   align-items: flex-end;
 }
 .bottom-nav-item {
@@ -1022,7 +1029,8 @@ body:has(.autour-plein) { padding-bottom: 0 !important; }
    défile avec elle. `fixed` l'attache à l'ÉCRAN — il ne peut plus partir,
    quel que soit le défilement, feuille ouverte ou fermée. */
 .autour-retour {
-  position: fixed; z-index: 700; top: 10px; left: 10px;
+  /* Sous la barre prière sticky (~80 px), jamais dessus. */
+  position: fixed; z-index: 700; top: calc(86px + env(safe-area-inset-top)); left: 10px;
   min-height: 44px; display: inline-flex; align-items: center; padding: 0 15px;
   border-radius: 999px; text-decoration: none;
   background: rgba(11, 26, 15, 0.92); color: var(--or);
@@ -1034,10 +1042,13 @@ body:has(.autour-plein) { padding-bottom: 0 !important; }
 .autour-plein[data-vue="liste"] .autour-recentrer,
 .autour-plein[data-vue="liste"] .autour-zone { display: none; }
 .autour-recentrer {
-  position: absolute; z-index: 550; right: 12px; bottom: calc(24px + env(safe-area-inset-bottom, 0px));
-  width: 48px; height: 48px; border-radius: 999px; border: 1px solid rgba(27,67,50,0.18);
-  background: rgba(253,250,243,0.96); font-size: 20px; cursor: pointer;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  /* Itération 2 : rond « cible » en HAUT à droite, sous la pilule d'onglets */
+  position: absolute; z-index: 1002; right: 14px; top: 76px;
+  width: 52px; height: 52px; border-radius: 999px; border: 1px solid rgba(201,168,76,0.26);
+  background: rgba(6,14,8,0.85); color: var(--or); cursor: pointer;
+  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
 }
 .autour-zone {
   position: absolute; z-index: 550; left: 50%; transform: translateX(-50%);
@@ -1074,7 +1085,8 @@ body:has(.autour-plein) { padding-bottom: 0 !important; }
    défile avec elle. `fixed` l'attache à l'ÉCRAN — il ne peut plus partir,
    quel que soit le défilement, feuille ouverte ou fermée. */
 .autour-retour {
-  position: fixed; z-index: 700; top: 10px; left: 10px;
+  /* Sous la barre prière sticky (~80 px), jamais dessus. */
+  position: fixed; z-index: 700; top: calc(86px + env(safe-area-inset-top)); left: 10px;
   min-height: 44px; display: inline-flex; align-items: center; padding: 0 15px;
   border-radius: 999px; text-decoration: none;
   background: rgba(11, 26, 15, 0.92); color: var(--or);
@@ -1433,6 +1445,32 @@ body:has(.accueil-ciel) .prayer-bar { display: none !important; }
 
 a.flux-ajouter { display: none !important; }
 
+/* ── Itération 2, correction 5 : la carte occupe TOUT l'écran ──
+   En vue carte : 100svh, la nav globale se masque (on sort par ‹ Liste ou
+   le geste retour), et le tiroir est collé au bord bas — zéro zone morte.
+   Un glissement vers le bas réduit le tiroir à sa poignée. */
+.autour-plein[data-vue="carte"] {
+  /* Plein écran RÉEL : la page a une barre prière sticky (~80 px) qui
+     décalerait la carte et pousserait le tiroir sous l'écran. En vue
+     carte, l'écran devient fixe et couvre tout ; la pilule d'onglets et
+     le retour descendent sous la barre prière (z 500), qui reste lisible. */
+  position: fixed; inset: 0; height: 100svh !important; z-index: 60;
+}
+.autour-plein[data-vue="carte"] .carte-tabs { top: calc(140px + env(safe-area-inset-top)); }
+.carte-tab { white-space: nowrap; }
+/* La pastille HalalGPT n'a rien à faire sur la carte plein écran */
+body:has(.autour-plein[data-vue="carte"]) a[href*="halalgpt"] { display: none !important; }
+.autour-plein[data-vue="carte"] .autour-recentrer { top: calc(204px + env(safe-area-inset-top)); }
+
+body:has(.autour-plein[data-vue="carte"]) .bottom-nav { display: none !important; }
+.carte-tiroir { transition: transform 0.18s ease-out; }
+.carte-tiroir.replie { transform: translateY(calc(100% - 26px)); }
+.carte-poignee-zone {
+  display: block; width: 100%; min-height: 26px; padding: 4px 0 0;
+  background: none; border: none; cursor: pointer;
+}
+.carte-poignee-zone .carte-poignee { display: block; }
+
 /* Desktop : grille 3 colonnes, le flux ne s'ouvre qu'en plein écran au clic */
 .flux-grille { display: none; }
 .flux-plein-desktop { position: fixed; inset: 0; z-index: 300; background: rgba(11,26,15,.97); }
@@ -1488,3 +1526,21 @@ a.flux-ajouter { display: none !important; }
   flex: none; font-size: 11px; font-weight: 700; padding: 4px 9px; border-radius: 999px;
   background: rgba(201,168,76,0.16); color: var(--or-clair, #E9D9A6); border: 1px solid rgba(201,168,76,0.26);
 }
+
+/* Le bandeau de la feuille laisse sa gauche au bouton ‹ Retour (fixe). */
+.autour-plein[data-vue="liste"] .autour-poignee { padding-left: 104px; min-height: 56px; }
+
+/* Itération 2 : gabarit strict du tiroir — deux lignes, type en un mot doré */
+.carte-tiroir-txt { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.carte-tiroir-sous { display: block; font-size: 13.5px; color: rgba(253,250,243,0.62); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.carte-tiroir-sous * { white-space: nowrap; display: inline; }
+.carte-tiroir-sous svg { display: inline-block; }
+.carte-tiroir-sous b { color: var(--or-clair, #E9D9A6); font-weight: 600; }
+.carte-tiroir-go {
+  flex: none; min-width: 56px; min-height: 48px; border-radius: 12px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1px;
+  background: rgba(201,168,76,0.15); border: 1px solid rgba(201,168,76,0.26);
+  color: var(--or-clair, #E9D9A6); font-size: 11px; font-weight: 700;
+}
+.carte-tiroir-ligne { min-height: 58px; }
+.carte-tiroir-nom { font-size: 15.5px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }

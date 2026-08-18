@@ -238,10 +238,10 @@ export default function VilleDesktop({ ville }: { ville: any }) {
     }))
     .filter((i) => i.value)
 
-  const card: React.CSSProperties = { background: '#fff', borderRadius: '20px', padding: '22px', border: '1px solid rgba(11,26,15,0.06)', boxShadow: '0 8px 28px rgba(11,26,15,0.06)', transition: 'transform .2s, box-shadow .2s' }
+  const card: React.CSSProperties = { background: 'rgba(253,250,243,0.05)', borderRadius: '20px', padding: '22px', border: '1px solid rgba(201,168,76,0.14)', transition: 'transform .2s, box-shadow .2s' }
   const WRAP = 900
   const guideVille = getCityGuide(ville.slug)
-  const sectionTitle: React.CSSProperties = { fontFamily: "'Playfair Display', serif", fontSize: 24, fontWeight: 900, color: 'var(--nuit)', margin: '0 0 14px' }
+  const sectionTitle: React.CSSProperties = { fontFamily: "'Playfair Display', serif", fontSize: 24, fontWeight: 900, color: '#FDFAF3', margin: '0 0 14px' }
   // 🏊 Espaces femmes & famille — UNIQUEMENT depuis des équipements vérifiés
   // (HalalBooking) : piscine non mixte / plage privée femmes. Zéro invention.
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -363,7 +363,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
         // Villes sans guide rédigé : « En bref » COURT, uniquement des faits
         // réels (compteurs OSM, score, période) — zéro remplissage inventé.
         if (!guide) {
-          const chip = { display: 'inline-flex', alignItems: 'center', gap: 7, background: '#fff', border: '1px solid rgba(27,67,50,0.15)', borderRadius: 999, padding: '9px 15px', fontSize: 14, fontWeight: 700, color: 'var(--foret)' } as const
+          const chip = { display: 'inline-flex', alignItems: 'center', gap: 7, background: 'rgba(253,250,243,0.06)', border: '1px solid rgba(27,67,50,0.15)', borderRadius: 999, padding: '9px 15px', fontSize: 14, fontWeight: 700, color: 'var(--foret)' } as const
           const periode = ville.meilleureEpoque || legacyIp.meilleure_periode
           const facts = [
             halalScore != null ? { icon: '✦', txt: `${halalScore} HalalScore` } : null,
@@ -383,7 +383,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
             </section>
           )
         }
-        const chip = { display: 'inline-flex', alignItems: 'center', gap: 7, background: '#fff', border: '1px solid rgba(27,67,50,0.15)', borderRadius: 999, padding: '9px 15px', fontSize: 14, fontWeight: 700, color: 'var(--foret)' } as const
+        const chip = { display: 'inline-flex', alignItems: 'center', gap: 7, background: 'rgba(253,250,243,0.06)', border: '1px solid rgba(27,67,50,0.15)', borderRadius: 999, padding: '9px 15px', fontSize: 14, fontWeight: 700, color: 'var(--foret)' } as const
         return (
           <section style={{ maxWidth: WRAP, margin: '0 auto', padding: '24px 24px 0' }}>
             <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: 'clamp(21px, 5.6vw, 26px)', fontWeight: 900, color: 'var(--nuit)', margin: '0 0 14px', lineHeight: 1.25 }}>
@@ -464,7 +464,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
         {espacesFemmes.length > 0 ? (
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 12 }}>
             {espacesFemmes.map((h: any, i: number) => (
-              <div key={i} style={{ background: '#fff', border: '1px solid rgba(27,67,50,0.1)', borderRadius: 18, padding: '16px 18px', boxShadow: '0 6px 20px rgba(11,26,15,0.06)' }}>
+              <div key={i} style={{ background: 'rgba(253,250,243,0.06)', border: '1px solid rgba(27,67,50,0.1)', borderRadius: 18, padding: '16px 18px', boxShadow: '0 6px 20px rgba(11,26,15,0.06)' }}>
                 <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 800, fontSize: 17, color: 'var(--nuit)', margin: '0 0 6px' }}>{h.nom}</p>
                 <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 10 }}>
                   {h.piscineNonMixte === true && <span style={{ background: 'rgba(27,67,50,0.08)', color: 'var(--foret)', fontSize: 12, fontWeight: 700, borderRadius: 20, padding: '4px 11px' }}>🏊 {en ? 'Ladies-only pool' : 'Piscine femmes'}</span>}
@@ -499,7 +499,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
               const emoji = kind === 'resto' ? (CATEGORY_EMOJI[cat] ?? '🍽') : kind === 'mosquee' ? '🕌' : kind === 'hotel' ? '🏨' : '🎯'
               return (
                 <button key={`${kind}-${i}`} onClick={() => setDetail({ kind, item })}
-                  style={{ width: 250, minWidth: 250, scrollSnapAlign: 'start', textAlign: 'left', background: '#fff', border: '1px solid rgba(27,67,50,0.1)', borderRadius: 18, overflow: 'hidden', cursor: 'pointer', padding: 0, boxShadow: '0 6px 20px rgba(11,26,15,0.06)' }}>
+                  style={{ width: 250, minWidth: 250, scrollSnapAlign: 'start', textAlign: 'left', background: 'rgba(253,250,243,0.06)', border: '1px solid rgba(27,67,50,0.1)', borderRadius: 18, overflow: 'hidden', cursor: 'pointer', padding: 0, boxShadow: '0 6px 20px rgba(11,26,15,0.06)' }}>
                   <PlacePhoto query={`${item.nom} ${ville.nom}`} height={104} gradient={grad} emoji={emoji} emojiSize={34} />
                   <div style={{ padding: '11px 13px 13px' }}>
                     <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 16, color: 'var(--texte)', margin: 0, lineHeight: 1.15 }}>{item.nom}</p>
@@ -592,20 +592,42 @@ export default function VilleDesktop({ ville }: { ville: any }) {
 
       {/* PARTIE BAS (claire) — GUIDE en un seul flux : manger, dormir, faire,
           conseils, communauté. Les onglets du haut sont des ancres. */}
-      <div ref={contentRef} style={{ maxWidth: WRAP, margin: '0 auto', padding: '28px 24px 80px', scrollMarginTop: '12px' }}>
+      {/* 🌑 Itération 5, correction 6 : la partie guide rejoint le design
+          system — fond nuit, cartes en verre sombre, or pour l'action.
+          Les variables de texte sont retraduites localement : tout ce qui
+          lisait sombre-sur-clair lit maintenant clair-sur-sombre. */}
+      <div style={{ background: '#0B1A0F' }}>
+      <div ref={contentRef} style={{ maxWidth: WRAP, margin: '0 auto', padding: '28px 24px 80px', scrollMarginTop: '12px', ['--texte' as string]: '#FDFAF3', ['--texte-2' as string]: 'rgba(253,250,243,0.65)', ['--nuit' as string]: '#FDFAF3', ['--foret' as string]: '#9CD3AE', ['--halal-bg' as string]: 'rgba(31,122,74,0.25)', ['--halal-tx' as string]: '#7FBF8F' }}>
         <section id="sec-restaurants" style={{ scrollMarginTop: 118 }}>
           <>
-            <h2 style={sectionTitle}>🍽 {en ? `Eating halal in ${ville.nom}` : `Manger halal à ${ville.nom}`}</h2>
-            {/* BLOC 3 — statut halal HONNÊTE selon le contexte de la ville */}
-            <div style={{ background: villeNonMusulmane ? 'rgba(201,168,76,0.12)' : 'rgba(27,67,50,0.07)', border: '1px solid rgba(27,67,50,0.15)', borderRadius: 14, padding: '12px 16px', marginBottom: 18, fontSize: 13.5, color: 'var(--foret)', lineHeight: 1.6 }}>
-              {villeNonMusulmane
-                ? (en
-                  ? '🔎 Places below are reported halal by their sources (Google / OpenStreetMap) — always verify on site. We never certify.'
-                  : '🔎 Les adresses ci-dessous sont signalées halal par leurs sources (Google / OpenStreetMap) — vérifiez toujours sur place. Nous ne certifions rien.')
-                : (en
-                  ? `🕌 ${ville.nom} is a Muslim-majority city — dining is overwhelmingly halal by default. We never certify individual places.`
-                  : `🕌 ${ville.nom} est une ville à majorité musulmane — la restauration y est très majoritairement halal par défaut. Nous ne certifions aucun lieu individuellement.`)}
+            {/* 🍽 ITÉRATION 5 : le guide CHOISIT — même modèle que Autour.
+                Titre + compteur, UNE ligne de contexte, puis le MOTEUR
+                COMMUN en mode scooter : top 3, titres IA, statut
+                d'ouverture, « une envie précise ? » avec compteurs.
+                L'annuaire complet reste plus bas, replié — le repli, jamais
+                l'écran d'entrée. */}
+            <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 10 }}>
+              <h2 style={sectionTitle}>{en ? 'The 3 best tables' : 'Les 3 meilleures tables'}</h2>
+              {restaurantsTotal > 0 && <span style={{ fontSize: 13, color: 'var(--texte-2)' }}>{restaurantsTotal} {en ? 'listings' : 'adresses'}</span>}
             </div>
+            <div style={{ background: villeNonMusulmane ? 'rgba(201,168,76,0.12)' : 'rgba(27,67,50,0.07)', border: '1px solid rgba(27,67,50,0.15)', borderRadius: 14, padding: '10px 14px', margin: '0 0 14px', fontSize: 13.5, color: 'var(--foret)', lineHeight: 1.55 }}>
+              {villeNonMusulmane
+                ? (en ? '🔎 Reported halal by their sources — verify on site. Green badge = verified by us.'
+                     : '🔎 Adresses signalées halal par leurs sources — à vérifier sur place. Badge vert = vérifié par nous.')
+                : (en ? `🕌 Muslim-majority country: dining is overwhelmingly halal. Green badge = verified by us.`
+                     : `🕌 Pays à majorité musulmane : la restauration est très majoritairement halal. Badge vert = vérifié par nous.`)}
+            </div>
+            {/* Le moteur vit en contexte NUIT : on ré-ancre les vraies
+                valeurs sombres, que le wrapper du guide avait retraduites. */}
+            {centerLL && (
+              <div style={{ background: '#0B1A0F', borderRadius: 20, padding: '14px 12px 16px', marginBottom: 20, ['--nuit' as string]: '#0B1A0F', ['--creme' as string]: '#FDFAF3', ['--texte' as string]: '#FDFAF3', ['--texte-2' as string]: 'rgba(253,250,243,0.65)', ['--foret' as string]: '#1B4332' }}>
+                <SurMesure
+                  scooter fondu en={en}
+                  destination={{ lat: centerLL.lat, lng: centerLL.lng, nom: ville.nom }}
+                  chercheDesLOuverture="manger"
+                />
+              </div>
+            )}
             {/* BLOC 6 — honnêteté d'échelle : pas de data réelle → on le DIT */}
             {restaurants.length === 0 && (
               <div style={{ ...card, textAlign: 'center', padding: '36px 22px', marginBottom: 18 }}>
@@ -631,7 +653,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
                     const [g1, g2] = CATEGORY_GRADIENT[ccat] ?? DEFAULT_GRADIENT
                     return (
                       <button key={i} onClick={() => setDetail({ kind: 'resto', item: r })}
-                        style={{ width: 240, minWidth: 240, scrollSnapAlign: 'start', textAlign: 'left', background: '#fff', border: '1px solid rgba(27,67,50,0.1)', borderRadius: 18, overflow: 'hidden', cursor: 'pointer', padding: 0, boxShadow: '0 6px 20px rgba(11,26,15,0.06)' }}>
+                        style={{ width: 240, minWidth: 240, scrollSnapAlign: 'start', textAlign: 'left', background: 'rgba(253,250,243,0.06)', border: '1px solid rgba(27,67,50,0.1)', borderRadius: 18, overflow: 'hidden', cursor: 'pointer', padding: 0, boxShadow: '0 6px 20px rgba(11,26,15,0.06)' }}>
                         <PlacePhoto query={`${r.nom} ${ville.nom}`} height={96} gradient={[g1, g2]} emoji={CATEGORY_EMOJI[ccat] ?? '🍽'} emojiSize={30} hideIfMissing />
                         <div style={{ padding: '10px 13px 12px' }}>
                           <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 15.5, color: 'var(--texte)', margin: 0, lineHeight: 1.15 }}>{r.nom}</p>
@@ -657,7 +679,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
                       .then((j) => { if (Array.isArray(j.restaurants)) setRestosFull(j.restaurants) }).catch(() => {})
                   }
                 }}
-                  style={{ padding: '14px 26px', borderRadius: 30, border: '1.5px solid var(--foret)', background: '#fff', color: 'var(--foret)', fontSize: 15, fontWeight: 800, cursor: 'pointer', minHeight: 52 }}>
+                  style={{ padding: '14px 26px', borderRadius: 30, border: '1.5px solid var(--foret)', background: 'rgba(253,250,243,0.06)', color: 'var(--foret)', fontSize: 15, fontWeight: 800, cursor: 'pointer', minHeight: 52 }}>
                   📂 {en ? `See all listings (${restaurantsTotal})` : `Voir toutes les adresses (${restaurantsTotal})`}
                 </button>
                 <p style={{ fontSize: 12.5, color: 'var(--texte-2)', margin: '8px 0 0' }}>
@@ -675,17 +697,11 @@ export default function VilleDesktop({ ville }: { ville: any }) {
               {ccDisplay.length < 3 && <span style={{ fontSize: '13px', color: 'var(--texte-2)' }}>{restosFiltres.length} {en ? 'listings' : 'adresses'}</span>}
             </div>
             )}
-            {/* filtres catégories en pills */}
+            {/* Itération 5 : le mur de chips cuisines a disparu — la feuille
+                d'envies du moteur commun le remplace. Ne reste que le toggle
+                halal, qui filtre CETTE liste repliée. */}
             {restaurants.length > 0 && showAllRestos && (
             <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginBottom: '22px' }}>
-              {categories.map((cat) => {
-                const active = activeFilter === cat
-                return (
-                  <button key={cat} onClick={() => (setActiveFilter(cat), setVisibleRestos(20))} style={{ padding: '8px 16px', borderRadius: '30px', border: '1.5px solid rgba(27,67,50,0.25)', background: active ? 'var(--foret)' : '#fff', color: active ? '#fff' : 'var(--foret)', fontSize: '13.5px', fontWeight: 600, cursor: 'pointer' }}>
-                    {cat === 'Tous' ? (en ? '🍽 All' : '🍽 Tous') : `${CATEGORY_EMOJI[cat] ?? '🍽'} ${enLabel(cat, en)}`}
-                  </button>
-                )
-              })}
               <button onClick={() => (setHalalOnly(!halalOnly), setVisibleRestos(20))}
                 aria-pressed={halalOnly}
                 style={{ padding: '8px 16px', borderRadius: '30px', border: `1.5px solid ${halalOnly ? '#8A6D1E' : 'rgba(138,109,30,0.4)'}`, background: halalOnly ? '#8A6D1E' : '#fff', color: halalOnly ? '#fff' : '#8A6D1E', fontSize: '13.5px', fontWeight: 700, cursor: 'pointer' }}>
@@ -702,23 +718,12 @@ export default function VilleDesktop({ ville }: { ville: any }) {
                 seul guide. Le lien reste — il est utile — mais il s'adapte
                 désormais à la ville : peu d'adresses → le guide de survie,
                 beaucoup → les vérifications à faire. */}
-            {restaurants.length > 0 && !en && (
-              restaurantsTotal < 15 ? (
-                <a href="/blog/aucun-restaurant-halal-que-faire"
-                  style={{ display: 'inline-flex', alignItems: 'center', gap: 8, minHeight: 44, marginBottom: 14, fontSize: 13.5, fontWeight: 700, color: 'var(--foret)', textDecoration: 'none' }}>
-                  🥘 Peu d&apos;adresses ici ? Que manger quand il n&apos;y a pas de halal →
-                </a>
-              ) : (
-                <a href="/blog/restaurant-vraiment-halal-verifier"
-                  style={{ display: 'inline-flex', alignItems: 'center', gap: 8, minHeight: 44, marginBottom: 14, fontSize: 13.5, fontWeight: 700, color: 'var(--foret)', textDecoration: 'none' }}>
-                  🔎 Vérifier qu&apos;un restaurant est vraiment halal : 7 contrôles →
-                </a>
-              )
-            )}
+            {/* Le lien « 7 contrôles » a déménagé dans Bon à savoir
+                (itération 5, correction 3). */}
             {/* LISTE COMPACTE — lignes denses scannables, zéro faux visuel :
                 nom + type, puce source discrète, une action Maps à droite */}
             {showAllRestos && (
-            <div style={{ background: '#fff', borderRadius: 16, border: '1px solid rgba(27,67,50,0.1)', overflow: 'hidden' }}>
+            <div style={{ background: 'rgba(253,250,243,0.06)', borderRadius: 16, border: '1px solid rgba(27,67,50,0.1)', overflow: 'hidden' }}>
               {restosAffiches.map((r: any, i: number) => {
                 const cat = cuisineCategory(r.type)
                 return (
@@ -753,7 +758,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
             )}
             {showAllRestos && restosFiltres.length > visibleRestos && (
               <div style={{ textAlign: 'center', marginTop: 18 }}>
-                <button onClick={() => setVisibleRestos((v) => v + 40)} style={{ padding: '13px 28px', borderRadius: 30, border: '1.5px solid var(--foret)', background: '#fff', color: 'var(--foret)', fontSize: 14, fontWeight: 700, cursor: 'pointer' }}>
+                <button onClick={() => setVisibleRestos((v) => v + 40)} style={{ padding: '13px 28px', borderRadius: 30, border: '1.5px solid var(--foret)', background: 'rgba(253,250,243,0.06)', color: 'var(--foret)', fontSize: 14, fontWeight: 700, cursor: 'pointer' }}>
                   {en ? `Show more (${restosFiltres.length - visibleRestos} more)` : `Voir plus (${restosFiltres.length - visibleRestos} autres)`}
                 </button>
               </div>
@@ -795,7 +800,25 @@ export default function VilleDesktop({ ville }: { ville: any }) {
         )}
         {activites.length > 0 && (
         <section id="sec-activites" style={{ scrollMarginTop: 118, marginTop: 40 }}>
-          <h2 style={sectionTitle}>🎯 {en ? `Things to do in ${ville.nom}` : `Que faire à ${ville.nom}`}</h2>
+          {/* 🎯 ITÉRATION 5 : même modèle que partout — le moteur commun
+              (Places + IA : photos, notes, statut d'ouverture, titres,
+              feuille d'envies dynamique construite depuis ce qui existe).
+              La liste OpenStreetMap descend en repli : ses cartes
+              squelettiques (un nom, un bouton Maps) ne répondent ni à
+              « pourquoi y aller ? » ni à « comment m'organiser ? ». */}
+          <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 10 }}>
+            <h2 style={sectionTitle}>{en ? 'Not to be missed' : 'À ne pas manquer'}</h2>
+            {activites.length > 0 && <span style={{ fontSize: 13, color: 'var(--texte-2)' }}>{activites.length} {en ? 'activities' : 'activités'}</span>}
+          </div>
+          {centerLL && (
+            <div style={{ background: '#0B1A0F', borderRadius: 20, padding: '14px 12px 16px', marginBottom: 20, ['--nuit' as string]: '#0B1A0F', ['--creme' as string]: '#FDFAF3', ['--texte' as string]: '#FDFAF3', ['--texte-2' as string]: 'rgba(253,250,243,0.65)', ['--foret' as string]: '#1B4332' }}>
+              <SurMesure
+                scooter fondu en={en}
+                destination={{ lat: centerLL.lat, lng: centerLL.lng, nom: ville.nom }}
+                chercheDesLOuverture="activite"
+              />
+            </div>
+          )}
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '16px' }}>
             {activites.slice(0, visibleActivites).map((a: any, i: number) => (
               <div key={i} style={card}>
@@ -817,7 +840,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
             <div style={{ textAlign: 'center', marginTop: 20 }}>
               <button
                 onClick={() => setVisibleActivites((v) => v + 6)}
-                style={{ minHeight: 56, padding: '0 26px', borderRadius: 16, cursor: 'pointer', border: '2px solid rgba(27,67,50,0.25)', background: '#fff', color: 'var(--foret)', fontWeight: 800, fontSize: 15.5 }}
+                style={{ minHeight: 56, padding: '0 26px', borderRadius: 16, cursor: 'pointer', border: '2px solid rgba(27,67,50,0.25)', background: 'rgba(253,250,243,0.06)', color: 'var(--foret)', fontWeight: 800, fontSize: 15.5 }}
               >
                 {en
                   ? `Show ${Math.min(activites.length - visibleActivites, 6)} more (${activites.length - visibleActivites} left)`
@@ -829,13 +852,21 @@ export default function VilleDesktop({ ville }: { ville: any }) {
         )}
 
         {/* 💡 CONSEILS PRATIQUES — texte concret RÉDIGÉ (jamais un lieu inventé) */}
+        {!en && (
+          <div style={{ margin: '0 0 18px' }}>
+            <a href="/blog/restaurant-vraiment-halal-verifier"
+              style={{ display: 'inline-flex', alignItems: 'center', gap: 8, minHeight: 44, fontSize: 13.5, fontWeight: 700, color: 'var(--foret)', textDecoration: 'none' }}>
+              🔎 Vérifier qu&apos;un restaurant est vraiment halal : 7 contrôles →
+            </a>
+          </div>
+        )}
         {(guideVille?.conseils?.length || pratiqueItems.length > 0) && (
         <section id="sec-pratique" style={{ scrollMarginTop: 118, marginTop: 40 }}>
           <h2 style={sectionTitle}>💡 {en ? 'Practical tips' : 'Conseils pratiques'}</h2>
           {guideVille?.conseils && (
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(270px, 1fr))', gap: 12, marginBottom: pratiqueItems.length ? 18 : 0 }}>
               {guideVille.conseils.map((c, i) => (
-                <div key={i} style={{ background: '#fff', border: '1px solid rgba(27,67,50,0.1)', borderRadius: 16, padding: '15px 17px' }}>
+                <div key={i} style={{ background: 'rgba(253,250,243,0.06)', border: '1px solid rgba(27,67,50,0.1)', borderRadius: 16, padding: '15px 17px' }}>
                   <p style={{ fontWeight: 800, fontSize: 14.5, color: 'var(--foret)', margin: '0 0 6px' }}>{c.icon} {en ? c.titreEn : c.titre}</p>
                   <p style={{ fontSize: 14, color: 'var(--texte)', lineHeight: 1.6, margin: 0 }}>{en ? c.en : c.fr}</p>
                 </div>
@@ -867,6 +898,13 @@ export default function VilleDesktop({ ville }: { ville: any }) {
               </a>
             )}
         </section>
+        {/* Une seule ligne de crédits — les mentions de source quittent les
+            cartes (itération 5, correction 6). */}
+        <p style={{ textAlign: 'center', fontSize: 12, color: 'rgba(253,250,243,0.4)', margin: '30px 0 0' }}>
+          {en ? 'Sources: OpenStreetMap contributors · Google Maps · our own checks' : 'Sources : contributeurs OpenStreetMap · Google Maps · relevés maison'}
+          {fmtDate(ville.osmEnrichedAt) ? ` · ${en ? 'updated' : 'mis à jour'} ${fmtDate(ville.osmEnrichedAt)}` : ''}
+        </p>
+      </div>
       </div>
     </main>
   )
