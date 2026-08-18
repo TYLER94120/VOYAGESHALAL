@@ -225,6 +225,11 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
   // 🍣 « Une envie précise ? » — un tap, jamais de clavier (itération 3).
   const [feuilleEnvies, setFeuilleEnvies] = useState(false)
   const [envie, setEnvie] = useState<{ mot: string; requete: string } | null>(null)
+  // Les envies RÉELLEMENT disponibles (compteurs serveur, cache 10 min) —
+  // null = comptage indisponible, on retombe sur la grille fixe sans
+  // compteurs plutôt que de bloquer (réseau dégradé = le cas normal).
+  const [enviesDispo, setEnviesDispo] = useState<{ mot: string; requete: string; n: number }[] | null>(null)
+  const [enviesChargent, setEnviesChargent] = useState(false)
   /** Qui a compris la phrase : Claude, le parseur local, ou personne (rien
    *  tapé). C'est ce qui distingue « Claude a compris : hammam » de la
    *  simple mention « Recherche : hammam » — on ne signe pas l'IA quand
@@ -633,6 +638,27 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
 
   // 🍣 Le top 3 se recalcule pour l'envie : même moteur, même score,
   // motsCles = la cuisine — et ✕ retire le filtre d'un tap.
+  // 🔢 À l'ouverture de la feuille : combien d'adresses par envie, pour ne
+  // jamais proposer un tap qui mène à une page vide (0 = case cachée).
+  async function ouvrirFeuille() {
+    setFeuilleEnvies(true)
+    if (!posInitiale || enviesChargent) return
+    setEnviesChargent(true)
+    try {
+      const ac = new AbortController()
+      const t = setTimeout(() => ac.abort(), 4000)
+      const r = await fetch('/api/lieux/envies', {
+        method: 'POST', signal: ac.signal, headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ lat: posInitiale.lat, lng: posInitiale.lng, mode: aide?.cat === 'activite' ? 'activite' : 'manger' }),
+      })
+      clearTimeout(t)
+      if (r.ok) {
+        const j = await r.json() as { envies?: { mot: string; requete: string; n: number }[] | null }
+        if (Array.isArray(j.envies) && j.envies.length) setEnviesDispo(j.envies)
+      }
+    } catch { /* la grille fixe suffit */ } finally { setEnviesChargent(false) }
+  }
+
   function lancerEnvie(e: { mot: string; requete: string } | null, bonusKm = 0) {
     if (!aide?.cat) return
     setEnvie(e)
@@ -741,6 +767,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
                 setAide({ cat: v })
                 setPhrase('') // jamais de reliquat d'une recherche d'un autre mode
                 setEnvie(null)
+                setEnviesDispo(null)
                 setRaisonIA('')
                 compter(`cat-${v}`)
                 if (scooter) lancer(c, false) // scooter : un tap = les 3 meilleurs
@@ -1230,7 +1257,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
             {/* 🍣 Une envie précise ? — pastille pointillée unique, pas en
                 mode Prier. La feuille s'ouvre dessous, sans clavier. */}
             {scooter && aide?.cat && aide.cat !== 'mosquee' && !envie && (
-              <button onClick={() => setFeuilleEnvies(true)}
+              <button onClick={() => void ouvrirFeuille()}
                 style={{ minHeight: 56, width: '100%', borderRadius: 999, marginTop: 4, border: '1px dashed rgba(201,168,76,0.26)', background: 'transparent', color: 'var(--or-clair, #E9D9A6)', fontSize: 16, fontWeight: 600, cursor: 'pointer' }}>
                 {t('Une envie précise ?', 'Craving something specific?')}
               </button>
@@ -1249,13 +1276,19 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
                     {t('Une envie précise ?', 'Craving something specific?')}
                   </h3>
                   <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 10 }}>
-                    {(ENVIES[aide.cat] ?? []).map((e) => (
+                    {(enviesDispo ?? ENVIES[aide.cat] ?? []).map((e) => (
                       <button key={e.mot} onClick={() => lancerEnvie(e)}
-                        style={{ minHeight: 72, borderRadius: 16, border: '1px solid rgba(201,168,76,0.14)', background: 'rgba(253,250,243,0.035)', color: '#FDFAF3', fontSize: 15, fontWeight: 600, cursor: 'pointer' }}>
+                        style={{ minHeight: 72, borderRadius: 16, border: '1px solid rgba(201,168,76,0.14)', background: 'rgba(253,250,243,0.035)', color: '#FDFAF3', fontSize: 15, fontWeight: 600, cursor: 'pointer', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 4 }}>
                         {e.mot}
+                        {'n' in e && (e as { n: number }).n > 0 && (
+                          <span style={{ fontSize: 11.5, color: 'rgba(201,168,76,0.75)', fontWeight: 600 }}>{(e as { n: number }).n} dispo</span>
+                        )}
                       </button>
                     ))}
                   </div>
+                  {enviesChargent && !enviesDispo && (
+                    <p style={{ margin: '10px 0 0', textAlign: 'center', fontSize: 13, color: 'rgba(253,250,243,0.45)' }}>{t('Je compte ce qui existe autour…', 'Counting what exists nearby…')}</p>
+                  )}
                 </div>
               </div>
             )}
