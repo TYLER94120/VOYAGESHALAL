@@ -7,7 +7,7 @@ import { lireIntention } from '@/lib/villesIndex'
 import type { VilleLue } from '@/lib/lireVille.mjs'
 import { trajet, type Mode } from '@/lib/trajet'
 import { ligneAlcool, mentionPermanente } from '@/lib/alcool.mjs'
-import { filtresDisponibles, appliquer } from '@/lib/propositions.mjs'
+import { trisDisponibles, appliquer } from '@/lib/propositions.mjs'
 import {
   PROFIL_VIDE, consigneProfilIA, ecrireProfil, lireProfil, ligneAllergie,
   mentionneAllergie, oublierProfil, profilVide, resumerProfil, type Profil,
@@ -61,7 +61,7 @@ const EXEMPLES_EN = ['a cheap kebab nearby', 'Istanbul', 'a bakery in Tirana', '
 // « Où dormir » n'est pas ici : ce n'est pas un besoin de l'instant, il
 // reste dans les tuiles « Explorer <Ville> ».
 const CAT_OPTS = [
-  ['mosquee', '🕌 Prier', '🕌 Pray'], ['manger', '🍽️ Manger', '🍽️ Eat'], ['activite', '🎯 Que faire', '🎯 Things to do'],
+  ['mosquee', 'Prier', 'Pray'], ['manger', 'Manger', 'Eat'], ['activite', 'Que faire', 'Things to do'],
 ] as const
 
 const QUOI_OPTS = [
@@ -86,6 +86,26 @@ const euros = (p?: number) => (p ? '€'.repeat(Math.min(4, p)) : null)
 /** « Guide d'Istanbul », pas « Guide de Istanbul ». Une élision ratée se
  *  voit immédiatement — et tout ce que Mohamed lit est en français. */
 const deVille = (nom: string) => (/^[aeiouyàâäéèêëîïôöûüh]/i.test(nom) ? `d'${nom}` : `de ${nom}`)
+
+/**
+ * Les icônes des tris, tracées en SVG. Le brief demandait Material Symbols :
+ * c'est une police distante de plus, qui peut échouer en silence — ces trois
+ * tracés font le même dessin pour zéro octet réseau. Aucun emoji au rendu.
+ */
+function IconeTri({ id }: { id: string }) {
+  const c = { width: 17, height: 17, fill: 'none' as const, stroke: 'currentColor', strokeWidth: 1.7, strokeLinecap: 'round' as const, strokeLinejoin: 'round' as const, 'aria-hidden': true }
+  if (id === 'billet') return <svg {...c} viewBox="0 0 24 24"><rect x="2.5" y="6.5" width="19" height="11" rx="2.5" /><circle cx="12" cy="12" r="2.6" /></svg>
+  if (id === 'fleche') return <svg {...c} viewBox="0 0 24 24"><path d="M21 3 10.5 13.5M21 3l-6.5 18-3-7.5L3 10z" /></svg>
+  return <svg {...c} viewBox="0 0 24 24"><path d="m12 3 2.7 5.8 6.3.7-4.7 4.3 1.3 6.2L12 16.8 6.4 20l1.3-6.2L3 9.5l6.3-.7z" /></svg>
+}
+
+/* Les trois segments, mêmes règles : SVG en ligne, aucun emoji au rendu. */
+function IconeCat({ id }: { id: string }) {
+  const c = { width: 17, height: 17, fill: 'none' as const, stroke: 'currentColor', strokeWidth: 1.6, strokeLinecap: 'round' as const, strokeLinejoin: 'round' as const, 'aria-hidden': true }
+  if (id === 'mosquee') return <svg {...c} viewBox="0 0 24 24"><path d="M12 3c3.2 2.4 5 4.7 5 7.2V20H7v-9.8C7 7.7 8.8 5.4 12 3z" /><path d="M4 20h16M10 20v-3.4a2 2 0 0 1 4 0V20" /></svg>
+  if (id === 'manger') return <svg {...c} viewBox="0 0 24 24"><path d="M7 3v7a2.5 2.5 0 0 1-2.5-2.5V3M4.5 3v18M7 3v18" transform="translate(1.5 0)" /><path d="M17 3c-1.7 1.5-2.5 3.4-2.5 5.5S15.3 12 17 12v9" /></svg>
+  return <svg {...c} viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="M15.8 8.2l-2.1 5.5-5.5 2.1 2.1-5.5z" /></svg>
+}
 
 export default function SurMesure({ posInitiale, destination: destinationProp, en = false, fondu = false, titrePage = false, onResultats, selectionId, onSelection, phraseInitiale, chercheDesLOuverture }: {
   posInitiale?: { lat: number; lng: number; ville?: string | null } | null
@@ -175,7 +195,17 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
    * quota, et il ne peut PAS aboutir sur une liste vide — le filtre a été
    * appliqué avant même que le bouton n'apparaisse.
    */
-  const [filtres, setFiltres] = useState<string[]>([])
+  /**
+   * 💶 📍 ⭐ LE TRI ACTIF — un seul à la fois, re-tap = retirer.
+   * Brief du 17 août. La veille c'étaient des filtres cumulables : le
+   * changement est voulu, un tri réordonne au lieu de cacher.
+   */
+  const [triActif, setTriActif] = useState<string | null>(null)
+  /** Qui a compris la phrase : Claude, le parseur local, ou personne (rien
+   *  tapé). C'est ce qui distingue « Claude a compris : hammam » de la
+   *  simple mention « Recherche : hammam » — on ne signe pas l'IA quand
+   *  c'est le repli local qui a travaillé. */
+  const [parseSource, setParseSource] = useState<'claude' | 'local' | null>(null)
   const [raisonIA, setRaisonIA] = useState('')
   // 👤 Le profil vit dans le TÉLÉPHONE. On le lit après le montage : le
   // serveur ne le connaît pas, et le HTML servi ne doit pas en dépendre.
@@ -315,10 +345,69 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
     return false
   }
 
-  /** Étape 1 → 2 : on lit la phrase, on montre ce qu'on a compris. */
-  function comprendre(txt: string, ville?: { lat: number; lng: number; nom: string } | null) {
+  /**
+   * ✳️ LE TEXTE LIBRE PASSE PAR CLAUDE — ET PAR LUI SEUL.
+   *
+   * Brief du 17 août : « Claude n'est appelé QUE pour le texte libre.
+   * Chips et segments = requête directe, 0 latence, 0 coût. » Et :
+   * « Fallback si Claude échoue ou dépasse 3 s : matching mots-clés local —
+   * la recherche ne doit JAMAIS être bloquée par l'API. »
+   *
+   * Le parseur local (lireDemande) tourne D'ABORD, dans tous les cas :
+   * c'est lui le filet, et il donne une base même si le réseau meurt au
+   * milieu. Claude ne fait qu'AFFINER par-dessus. Le résultat rejoint le
+   * même pipeline que les boutons — aucun chemin parallèle.
+   */
+  async function parseClaude(txt: string): Promise<{ intent: string; categorie: string | null; tri: string | null; budget_max: number | null; contraintes: string[] } | null> {
+    // Cache de session : la même phrase ne se re-parse pas, et le retour
+    // arrière redevient instantané.
+    const cle = `vh_parse:${txt.toLowerCase()}`
+    try { const c = sessionStorage.getItem(cle); if (c) return JSON.parse(c) } catch { /* stockage privé */ }
+    const ac = new AbortController()
+    const t = setTimeout(() => ac.abort(), 3000)
+    try {
+      const r = await fetch('/api/lieux/comprendre', {
+        method: 'POST', signal: ac.signal,
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ texte: txt }),
+      })
+      if (!r.ok) return null
+      const j = await r.json()
+      try { sessionStorage.setItem(cle, JSON.stringify(j)) } catch { /* plein */ }
+      return j
+    } catch { return null } finally { clearTimeout(t) }
+  }
+
+  async function comprendre(txt: string, ville?: { lat: number; lng: number; nom: string } | null) {
     if (ville === undefined && aiguiller(txt)) return
+    // 1. Le parseur LOCAL d'abord — le filet qui ne peut pas casser.
     const c = lireDemande(txt)
+    let parClaude = false
+    // Le tri demandé dans la phrase (« pas cher ») doit SURVIVRE au départ de
+    // la recherche : il est passé à `lancer`, qui l'aurait sinon remis à
+    // zéro en réinitialisant l'écran.
+    let triVoulu: string | null = null
+    // 2. Claude affine, seulement s'il y a du texte, et sans jamais bloquer.
+    if (txt.trim()) {
+      const p = await parseClaude(txt)
+      if (p) {
+        parClaude = true
+        if (p.intent === 'mosque') c.categorie = 'mosquee'
+        else if (p.intent === 'activity') c.categorie = 'activite'
+        else if (p.intent === 'food') c.categorie = 'manger'
+        // ⚠️ La catégorie parsée remplace les mots SEULEMENT si elle existe :
+        // et elle part chez Google TELLE QUELLE — jamais « halal » accolé,
+        // c'est la règle « le type d'abord, le halal ensuite » et le test
+        // test-requete la verrouille. Le brief suggérait « sushi halal » ;
+        // on a déjà mesuré que ce collage ramène des traiteurs.
+        if (p.categorie) c.motsCles = p.categorie
+        if (p.budget_max === 1) c.budget = 'petit'
+        else if (p.budget_max === 2) c.budget = 'moyen'
+        if (p.contraintes?.some((x: string) => /ouvert/i.test(x))) c.ouvertMaintenant = true
+        triVoulu = p.tri === 'cheap' ? 'pas-cher' : p.tri === 'near' ? 'proche' : p.tri === 'rating' ? 'bien-note' : null
+      }
+    }
+    setParseSource(txt.trim() ? (parClaude ? 'claude' : 'local') : null)
     setCrit(c)
     setAEcrit(txt.trim().length > 0)
     const trouve = besoinDansLaPhrase(txt)
@@ -326,7 +415,11 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
     if (trouve && Object.entries(trouve).some(([k, v]) => (profil as unknown as Record<string, unknown>)[k] !== v)) {
       setProposerMemoire(trouve)
     }
-    const r = relance(c, en)
+    // 🔴 AUCUNE QUESTION INTERMÉDIAIRE. JAMAIS. (Brief du 17 août — et déjà
+    // le reproche du 15 : « seul ou en famille ? » bloquait le visiteur
+    // devant un écran qu'il croyait en panne.) La relance est morte : on
+    // cherche tout de suite, et les tris affinent après.
+    const r = null as ReturnType<typeof relance> | null
     if (r) {
       setEtape('relance')
       // 🔴 « Je clique sur Trouver, RIEN ne se passe. » La cause : quand
@@ -336,13 +429,13 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
       // vue du seul qui compte. La vue descend maintenant sur la réponse
       // dans TOUS les cas, question comprise.
       requestAnimationFrame(() => zoneResultats.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }))
-    } else lancer(c, txt.trim().length > 0, false, ville)
+    } else lancer(c, txt.trim().length > 0, false, ville, false, triVoulu)
   }
 
-  async function lancer(c: Criteres, ecrit: boolean, forcerGPS = false, ville?: { lat: number; lng: number; nom: string } | null, silencieux = false) {
+  async function lancer(c: Criteres, ecrit: boolean, forcerGPS = false, ville?: { lat: number; lng: number; nom: string } | null, silencieux = false, triInitial: string | null = null) {
     if (enCours.current) return
     enCours.current = true
-    setProse(''); setFiches([]); setAutres([]); setVoirAutres(false); setPanne(null); setFiltres([]); setEtape('cherche')
+    setProse(''); setFiches([]); setAutres([]); setVoirAutres(false); setPanne(null); setTriActif(triInitial); setEtape('cherche')
     // Dès le clic, la vue descend sur la zone de réponse : le squelette y
     // est déjà, donc le visiteur SAIT que son geste a été pris en compte.
     //
@@ -526,10 +619,10 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
   // `autres` compte : une proposition qui ne trierait que trois adresses
   // n'aurait presque jamais de quoi exister.
   const toutes = useMemo(() => [...fiches, ...autres], [fiches, autres])
-  const lesFiltres = useMemo(() => filtresDisponibles(toutes), [toutes])
-  /** La liste affichée : les filtres allumés se cumulent, et le tri place
-   *  toujours les ouverts avant les fermés. */
-  const aVoir = useMemo(() => (filtres.length ? appliquer(toutes, filtres).slice(0, 6) : fiches), [filtres, toutes, fiches])
+  const lesTris = useMemo(() => trisDisponibles(toutes), [toutes])
+  /** La liste affichée : réordonnée par le tri actif — jamais amputée. Un
+   *  tri qui ferait disparaître des adresses redeviendrait un filtre. */
+  const aVoir = useMemo(() => (triActif ? appliquer(toutes, triActif).slice(0, 6) : fiches), [triActif, toutes, fiches])
 
   /** Le délai, écrit comme on le dirait. Zéro seconde connue → « bientôt ». */
   function attente(secondes: number | undefined, anglais: boolean): string {
@@ -553,7 +646,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
             partout ailleurs, où il n'y a pas de barre de position. */}
         {!fondu && !titrePage && (
           <p style={{ color: 'var(--or)', fontSize: 13, fontWeight: 900, letterSpacing: '0.08em', textTransform: 'uppercase', margin: 0 }}>
-            📍 {destination ? `${t('À', 'In')} ${destination.nom}` : t('Près de moi', 'Near me')}
+            {destination ? `${t('À', 'In')} ${destination.nom}` : t('Près de moi', 'Near me')}
           </p>
         )}
         {/* 🏠 UN SEUL TITRE AU-DESSUS DE LA BARRE, PAS DEUX.
@@ -641,7 +734,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
             s'interdit. */}
         {villeChoisie && !destinationProp && (
           <p style={{ margin: '8px 0 0', fontSize: 13, color: 'rgba(253,250,243,0.72)' }}>
-            📍 {t('Recherche à', 'Searching in')} <strong style={{ color: 'var(--or)' }}>{villeChoisie.nom}</strong>
+            {t('Recherche à', 'Searching in')} <strong style={{ color: 'var(--or)' }}>{villeChoisie.nom}</strong>
             {' · '}
             <button onClick={() => { setVilleChoisie(null); setEtape('question') }}
               style={{ background: 'none', border: 'none', color: 'var(--creme)', textDecoration: 'underline', fontSize: 13, fontWeight: 700, cursor: 'pointer', padding: 0 }}>
@@ -680,7 +773,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
                 lancer(c, false)
               }}
               aria-pressed={aide?.cat === v} style={{ ...puce(aide?.cat === v), flex: '1 1 0', minWidth: 0, padding: '0 6px', whiteSpace: 'nowrap' }}>
-              {t(fr, an)}
+              <IconeCat id={v} /> {t(fr, an)}
             </button>
           ))}
         </div>
@@ -710,7 +803,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
               style={{ flex: '1 1 auto', minHeight: 44, borderRadius: 999, cursor: 'pointer',
                 border: '1.5px solid rgba(201,168,76,0.55)', background: 'rgba(201,168,76,0.14)',
                 color: 'var(--or)', fontWeight: 800, fontSize: 14 }}>
-              📍 {t('Voir sur la carte', 'See on the map')}
+              {t('Voir sur la carte', 'See on the map')}
             </button>
             {/* Le profil reste à un appui, mais il DIT ce qu'il est. */}
             <button onClick={() => setOuvrirProfil((o) => !o)} aria-expanded={ouvrirProfil}
@@ -736,10 +829,16 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
               boutons Prier · Manger · Que faire SONT la liste, et ils sont
               juste au-dessus : « c'est le seul point d'entrée de recherche
               de la page » (Mohamed). Le QCM reste sous chaque catégorie. */}
-          {!titrePage && (
+          {/* 🧹 17 août — « Mon profil » QUITTE L'ÉCRAN DE RECHERCHE (brief :
+              il partait déjà de l'accueil le 16). Il ne s'ouvre plus que
+              depuis « modifier », là où l'on affine sa demande : c'est le
+              seul moment où le régime alimentaire a sa place. Un profil qui
+              s'affiche AVANT la première réponse, c'est demander un effort
+              avant d'avoir rendu un service. */}
+          {ouvrirQcm && (
             <button onClick={() => setOuvrirProfil((o) => !o)}
               style={{ width: '100%', background: 'none', border: 'none', color: profilVide(profil) ? 'rgba(253,250,243,0.6)' : 'var(--or)', textDecoration: 'underline', fontWeight: 800, cursor: 'pointer', minHeight: 44, padding: 0, textAlign: 'left', fontSize: 14 }}>
-              👤 {profilVide(profil)
+              {profilVide(profil)
                 ? t('Mon profil', 'My profile')
                 : `${t('Mon profil', 'My profile')} : ${resumerProfil(profil, en).join(' · ')}`}
             </button>
@@ -819,9 +918,20 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
         {/* ── 2. CE QU'ON A COMPRIS, CORRIGEABLE ────────────────── */}
         {(aEcrit || ouvrirQcm) && etape !== 'cherche' && (
           <div style={{ marginTop: 12, paddingTop: 10, borderTop: '1px solid rgba(253,250,243,0.12)' }}>
+            {/* ✳️ Le retour de lecture signe son auteur : « Claude a
+                compris » seulement quand c'est vraiment lui — quand le repli
+                local a travaillé, on écrit « Recherche : … » sans signature.
+                S'attribuer une compréhension qu'on n'a pas eue, c'est le
+                même mensonge en petit que la coche verte imméritée. */}
             {aEcrit && !ouvrirQcm && (
-              <p style={{ color: 'rgba(253,250,243,0.85)', fontSize: 13.5, margin: 0, lineHeight: 1.5 }}>
-                {t("J'ai compris", 'Understood')} : <strong style={{ color: 'var(--or)' }}>{resumerCriteres(crit, en).join(' · ') || t('tout', 'anything')}</strong>
+              <p style={{ color: parseSource === 'claude' ? '#7FBF8F' : 'rgba(253,250,243,0.85)', fontSize: 13.5, margin: 0, lineHeight: 1.5, fontWeight: 500 }}>
+                {parseSource === 'claude' && (
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden style={{ verticalAlign: '-2px', marginRight: 5 }}>
+                    <path d="M12 2l1.8 5.4L19 9l-5.2 1.6L12 16l-1.8-5.4L5 9l5.2-1.6zM19 15l.9 2.6 2.6.9-2.6.9L19 22l-.9-2.6-2.6-.9 2.6-.9z" />
+                  </svg>
+                )}
+                {parseSource === 'claude' ? t('Claude a compris', 'Claude understood') : t('Recherche', 'Search')} : <strong style={{ color: parseSource === 'claude' ? '#7FBF8F' : 'var(--or)' }}>{[...new Set([crit.motsCles, ...resumerCriteres(crit, en)].filter(Boolean))].join(' · ') || t('tout', 'anything')}</strong>
+                {parseSource === 'claude' && ' ✓'}
                 {' '}
                 <button onClick={() => setOuvrirQcm(true)} style={{ background: 'none', border: 'none', color: 'var(--or)', textDecoration: 'underline', fontWeight: 800, fontSize: 13, cursor: 'pointer', minHeight: 44 }}>
                   {t('modifier', 'change')}
@@ -918,10 +1028,10 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
         {etape === 'resultat' && posUtilisee === 'ip' && (
           <div style={{ display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap', marginTop: 12 }}>
             <p style={{ color: 'rgba(253,250,243,0.7)', fontSize: 12.5, margin: 0 }}>
-              📍 {t('Position approximative', 'Approximate location')}{posInitiale?.ville ? ` : ${posInitiale.ville}` : ''} {t('(adresse IP)', '(IP address)')}
+              {t('Position approximative', 'Approximate location')}{posInitiale?.ville ? ` : ${posInitiale.ville}` : ''} {t('(adresse IP)', '(IP address)')}
             </p>
             <button onClick={() => lancer(crit, aEcrit, true)} style={{ ...puce(false), fontSize: 12.5, fontWeight: 800, borderColor: 'rgba(201,168,76,0.55)', color: 'var(--or)' }}>
-              🎯 {t('Ma position exacte', 'My exact location')}
+              {t('Ma position exacte', 'My exact location')}
             </button>
           </div>
         )}
@@ -997,43 +1107,33 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
         {/* ✨ Le raisonnement de « choisis pour moi » : ce qui distingue
             « on a deviné » de « on a choisi pour toi ». */}
         {raisonIA && etape === 'resultat' && (
-          <p style={{ color: 'var(--or)', fontSize: 13.5, fontWeight: 700, marginTop: 12, lineHeight: 1.5 }}>✨ {raisonIA}</p>
+          <p style={{ color: 'var(--or)', fontSize: 13.5, fontWeight: 700, marginTop: 12, lineHeight: 1.5 }}>{raisonIA}</p>
         )}
 
-        {/* 💶 📍 ⭐ TROIS FILTRES, UNE SEULE LIGNE, AUCUNE IA.
-            « Les propositions sont trop longues, prennent quatre lignes sur
-            téléphone, et sont lentes. » Trois critères que Google rend
-            toujours — prix, distance, note —, qui s'allument, s'éteignent
-            et SE CUMULENT. La liste se retrie en direct, sans le moindre
-            appel réseau. L'écran gagné va aux résultats, qui sont la vraie
-            réponse. « Ouvert maintenant » n'est pas un bouton : c'est le
-            tri par défaut, les fermés derrière. */}
-        {etape === 'resultat' && lesFiltres.length > 0 && (
-          <div style={{ marginTop: 14, display: 'flex', gap: 8, overflowX: 'auto', paddingBottom: 2 }}>
-            {lesFiltres.map((f) => {
-              const actif = filtres.includes(f.id)
-              return (
-                <button key={f.id} aria-pressed={actif}
-                  onClick={() => {
-                    setFiltres((v) => (v.includes(f.id) ? v.filter((x) => x !== f.id) : [...v, f.id]))
-                    compter('piste')
-                  }}
-                  style={{ ...puce(actif), flex: '0 0 auto', whiteSpace: 'nowrap' }}>
-                  {f.icone} {en ? f.en : f.fr}
-                </button>
-              )
-            })}
+        {/* TROIS TRIS, UNE SEULE LIGNE, AUCUNE IA — et UN SEUL à la fois.
+            Brief du 17 août : un tri réordonne, il n'exclut jamais ; re-taper
+            le retire. La liste se retrie en direct, sans le moindre appel
+            réseau. « Ouvert maintenant » n'est pas un bouton : c'est le tri
+            par défaut, les fermés derrière. */}
+        {etape === 'resultat' && lesTris.length > 0 && (
+          <div style={{ marginTop: 14 }}>
+            <div style={{ display: 'flex', gap: 8 }}>
+              {lesTris.map((f) => {
+                const actif = triActif === f.id
+                return (
+                  <button key={f.id} aria-pressed={actif}
+                    onClick={() => { setTriActif(actif ? null : f.id); compter('piste') }}
+                    style={{ ...puce(actif), flex: '1 1 0', minWidth: 0, whiteSpace: 'nowrap', justifyContent: 'center', minHeight: 48 }}>
+                    <IconeTri id={f.icone} /> {en ? f.en : f.fr}
+                  </button>
+                )
+              })}
+            </div>
+            {/* Le choix unique se DIT, sinon il se découvre en s'énervant. */}
+            <p style={{ margin: '7px 0 0', textAlign: 'center', fontSize: 12, color: 'rgba(253,250,243,0.35)' }}>
+              {t('un seul tri à la fois — re-taper pour retirer', 'one sort at a time — tap again to remove')}
+            </p>
           </div>
-        )}
-
-        {/* Un filtre qui ne laisse rien : on le dit, et on rend la main. */}
-        {etape === 'resultat' && filtres.length > 0 && aVoir.length === 0 && (
-          <p style={{ color: 'rgba(253,250,243,0.75)', fontSize: 13.5, marginTop: 12, lineHeight: 1.5 }}>
-            {t('Aucune adresse ne réunit tous ces critères à la fois.', 'No place matches all of these at once.')}{' '}
-            <button onClick={() => setFiltres([])} style={{ background: 'none', border: 'none', color: 'var(--or)', textDecoration: 'underline', fontWeight: 800, cursor: 'pointer', padding: 0, fontSize: 13.5 }}>
-              {t('Tout revoir', 'Show all')}
-            </button>
-          </p>
         )}
 
         {/* 🔴 SUR L'ACCUEIL, LES FICHES SONT RENDUES PAR L'ÉCRAN DES CIELS.
