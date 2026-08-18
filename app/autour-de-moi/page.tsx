@@ -177,6 +177,25 @@ export default function AutourDeMoiPage() {
     }
   }, [pos, ouvertureSur])
 
+  // 🔄 RETOUR DEPUIS MAPS (itération 6, correction 3) : quand la page
+  // revient du bfcache (pageshow persisted) ou repasse au premier plan,
+  // on réveille ce qui fige — la carte Leaflet recalcule sa taille, la
+  // barre de nav se recale. Si le conteneur principal est VIDE (état
+  // perdu), on recharge l'écran plutôt que de rester blanc.
+  useEffect(() => {
+    const reveille = () => {
+      try {
+        mapRef.current?.invalidateSize()
+        if (plein.current && plein.current.childElementCount === 0) window.location.reload()
+      } catch { /* jamais bloquant */ }
+    }
+    const surPageshow = (e: PageTransitionEvent) => { if (e.persisted) reveille() }
+    const surVisible = () => { if (document.visibilityState === 'visible') reveille() }
+    window.addEventListener('pageshow', surPageshow)
+    document.addEventListener('visibilitychange', surVisible)
+    return () => { window.removeEventListener('pageshow', surPageshow); document.removeEventListener('visibilitychange', surVisible) }
+  }, [])
+
   // ── La carte, une fois, et recentrée quand la position change ────────
   useEffect(() => {
     if (!pos || !mapEl.current) return
