@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { CRITERES_DEFAUT, lireDemande, relance, resumerCriteres, type Categorie, type Criteres } from '@/lib/criteres'
+import { top3 } from '@/lib/top3.mjs'
 import { lireIntention } from '@/lib/villesIndex'
 import type { VilleLue } from '@/lib/lireVille.mjs'
 import { trajet, type Mode } from '@/lib/trajet'
@@ -112,7 +113,7 @@ function IconeCat({ id }: { id: string }) {
   return <svg {...c} viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="M15.8 8.2l-2.1 5.5-5.5 2.1 2.1-5.5z" /></svg>
 }
 
-export default function SurMesure({ posInitiale, destination: destinationProp, en = false, fondu = false, titrePage = false, onResultats, selectionId, onSelection, phraseInitiale, chercheDesLOuverture, modeDemande }: {
+export default function SurMesure({ posInitiale, destination: destinationProp, en = false, fondu = false, titrePage = false, onResultats, selectionId, onSelection, phraseInitiale, chercheDesLOuverture, modeDemande, scooter = false }: {
   posInitiale?: { lat: number; lng: number; ville?: string | null } | null
   destination?: { lat: number; lng: number; nom: string } | null
   en?: boolean
@@ -141,6 +142,11 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
   /** 🗺️ Les onglets de la VUE CARTE commandent le même moteur : un onglet
    *  choisi là-bas = un mode choisi ici, recherche lancée (correction 4). */
   modeDemande?: Categorie | null
+  /** 🛵 LE TEST DU SCOOTER (itération 2, 18 août) : arrêté 30 s au bord de
+   *  la route — zéro clavier, zéro réglage. Ni champ, ni bouton Trouver,
+   *  ni chips de tri : mode → les 3 meilleurs (score composite lib/top3),
+   *  et c'est tout. Réservé à Autour de moi ; l'accueil garde la barre. */
+  scooter?: boolean
   /** ► SI ON SAIT OÙ JE SUIS, ON RÉPOND AVANT QUE JE DEMANDE.
    *  Ordre de Mohamed, 15 août : « On ouvre la page, on ne voit AUCUN
    *  résultat, et on nous demande de taper quelque chose. Alors que le
@@ -634,7 +640,12 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
   const lesTris = useMemo(() => trisDisponibles(toutes), [toutes])
   /** La liste affichée : réordonnée par le tri actif — jamais amputée. Un
    *  tri qui ferait disparaître des adresses redeviendrait un filtre. */
-  const aVoir = useMemo(() => (triActif ? appliquer(toutes, triActif).slice(0, 6) : fiches), [triActif, toutes, fiches])
+  const aVoir = useMemo(() => {
+    // 🛵 Scooter : classement AUTOMATIQUE par le score composite — le même
+    // barème que le podium de la carte (lib/top3.mjs), aucun réglage.
+    if (scooter) return top3(fiches.filter((f) => typeof f.lat === 'number'), crit.categorie ?? 'manger')
+    return triActif ? appliquer(toutes, triActif).slice(0, 6) : fiches
+  }, [scooter, crit.categorie, triActif, toutes, fiches])
 
   /** Le délai, écrit comme on le dirait. Zéro seconde connue → « bientôt ». */
   function attente(secondes: number | undefined, anglais: boolean): string {
@@ -706,6 +717,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
                 setPhrase('') // jamais de reliquat d'une recherche d'un autre mode
                 setRaisonIA('')
                 compter(`cat-${v}`)
+                if (scooter) lancer(c, false) // scooter : un tap = les 3 meilleurs
               }}
               aria-pressed={aide?.cat === v} style={{ ...puce(aide?.cat === v), flex: '1 1 0', minWidth: 0, minHeight: 64, padding: '0 6px', whiteSpace: 'nowrap' }}>
               <IconeCat id={v} /> {t(fr, an)}
@@ -713,7 +725,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
           ))}
         </div>
 
-        {aide?.cat && (
+        {!scooter && aide?.cat && (
           <>
             <form onSubmit={(e) => { e.preventDefault(); if (phrase.trim()) comprendre(phrase); else lancer({ ...crit, categorie: aide.cat } as Criteres, false) }} style={{ display: 'flex', gap: 8, marginTop: 10, flexWrap: 'wrap' }}>
               <input
@@ -1121,7 +1133,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
             le retire. La liste se retrie en direct, sans le moindre appel
             réseau. « Ouvert maintenant » n'est pas un bouton : c'est le tri
             par défaut, les fermés derrière. */}
-        {etape === 'resultat' && lesTris.length > 0 && (
+        {!scooter && etape === 'resultat' && lesTris.length > 0 && (
           <div style={{ marginTop: 14 }}>
             <div style={{ display: 'flex', gap: 8 }}>
               {lesTris.map((f) => {

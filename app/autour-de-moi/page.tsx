@@ -390,6 +390,7 @@ export default function AutourDeMoiPage() {
                 statut halal honnête, filtre alcool dans le code, profil
                 alimentaire, et les phrases d'IA. Aucun chemin parallèle. */}
             <SurMesure
+              scooter
               fondu
               posInitiale={pos ? { lat: pos.lat, lng: pos.lng, ville: pos.label } : null}
               phraseInitiale={phraseVenue}
