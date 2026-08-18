@@ -242,7 +242,7 @@ export default async function DestinationPage({ params }: Props) {
             <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: '20px', fontWeight: 700, color: 'var(--nuit)', margin: 0 }}>
               {isEN ? 'More halal destinations' : 'Autres destinations halal'}
             </h2>
-            <a href="/destinations?all=1" style={{ display: 'inline-flex', alignItems: 'center', minHeight: 44, fontSize: '14px', fontWeight: 700, color: 'var(--foret)', textDecoration: 'none' }}>
+            <a href="/destinations" style={{ display: 'inline-flex', alignItems: 'center', minHeight: 44, fontSize: '14px', fontWeight: 700, color: 'var(--foret)', textDecoration: 'none' }}>
               {isEN ? 'See all destinations →' : 'Voir toutes les destinations →'}
             </a>
           </div>
