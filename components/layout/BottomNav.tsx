@@ -108,7 +108,12 @@ export default function BottomNav() {
             <p style={{ margin: '2px 4px 10px', fontWeight: 900, fontSize: 15, color: '#0b1a0f' }}>🧰 {en ? 'All tools' : 'Tous les outils'}</p>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 }}>
               {(voirPlus ? tools : essentiels).map((tl) => (
-                <Link key={tl.href} href={tl.href} onClick={() => fermerOutils()} style={{ display: 'flex', alignItems: 'center', gap: 10, minHeight: 56, padding: '0 14px', borderRadius: 14, background: '#FDFAF3', border: '1px solid rgba(27,67,50,0.12)', textDecoration: 'none', color: '#0b1a0f', fontWeight: 700, fontSize: 14.5 }}>
+                <Link key={tl.href} href={tl.href}
+                  // 🔴 BUG « Trouvailles ne fait rien » (itération 5) : fermer
+                  // par fermerOutils() déclenchait history.back(), qui ANNULAIT
+                  // la navigation du lien. Un lien ferme le panneau sans
+                  // toucher à l'historique — la navigation s'en charge.
+                  onClick={() => setToolsOpen(false)} style={{ display: 'flex', alignItems: 'center', gap: 10, minHeight: 56, padding: '0 14px', borderRadius: 14, background: '#FDFAF3', border: '1px solid rgba(27,67,50,0.12)', textDecoration: 'none', color: '#0b1a0f', fontWeight: 700, fontSize: 14.5 }}>
                   <span style={{ fontSize: 20 }}>{tl.icon}</span> {tl.label}
                 </Link>
               ))}
