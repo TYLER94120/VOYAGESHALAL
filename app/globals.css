@@ -1555,3 +1555,4 @@ body:has(.autour-plein[data-vue="carte"]) .bottom-nav { display: none !important
   .mag-trois > * { flex: 0 0 230px; }
   .mag-grille { grid-template-columns: 1fr 1fr; }
 }
+@media (min-width: 760px) { .mag-savoir { grid-template-columns: 1fr 1fr 1fr; } }

@@ -827,6 +827,34 @@ export default function VilleDesktop({ ville }: { ville: any }) {
         )}
 
         {/* 💡 CONSEILS PRATIQUES — texte concret RÉDIGÉ (jamais un lieu inventé) */}
+        {/* 💡 Bon à savoir (maquette 3a) : un bandeau, trois points — le
+            contexte halal du pays, la prière, la vigilance. Les faits
+            viennent des données (compte réel de mosquées) ; le reste est
+            un conseil, jamais une promesse. */}
+        <div style={{ background: 'rgba(201,168,76,0.06)', border: '1px solid rgba(201,168,76,0.2)', borderRadius: 16, padding: '16px 18px', margin: '0 0 18px', display: 'grid', gap: 14 }} className="mag-savoir">
+          <div>
+            <p style={{ margin: 0, fontSize: 11.5, fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--or)' }}>{en ? 'Eating' : 'Manger'}</p>
+            <p style={{ margin: '3px 0 0', fontSize: 13.5, color: 'rgba(253,250,243,0.8)', lineHeight: 1.5 }}>
+              {villeNonMusulmane
+                ? (en ? 'Check the status on each address — we never certify.' : 'Vérifie le statut sur chaque adresse — nous ne certifions rien.')
+                : (en ? 'Dining is overwhelmingly halal, often without saying so.' : 'Restauration très majoritairement halal, souvent sans le signaler.')}
+            </p>
+          </div>
+          <div>
+            <p style={{ margin: 0, fontSize: 11.5, fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--or)' }}>{en ? 'Praying' : 'Prier'}</p>
+            <p style={{ margin: '3px 0 0', fontSize: 13.5, color: 'rgba(253,250,243,0.8)', lineHeight: 1.5 }}>
+              {mosquees.length > 0
+                ? (en ? `${mosquees.length} mosques listed in the city.` : `${mosquees.length} mosquées relevées dans la ville.`)
+                : (en ? 'Prayer places are listed as we verify them.' : 'Les lieux de prière s\u2019ajoutent à mesure qu\u2019on les vérifie.')}
+            </p>
+          </div>
+          <div>
+            <p style={{ margin: 0, fontSize: 11.5, fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#E8B45A' }}>{en ? 'Caution' : 'Vigilance'}</p>
+            <p style={{ margin: '3px 0 0', fontSize: 13.5, color: 'rgba(253,250,243,0.8)', lineHeight: 1.5 }}>
+              {en ? 'Some tourist restaurants serve alcohol: check the menu.' : 'Certains restos touristiques servent de l\u2019alcool : vérifie la carte.'}
+            </p>
+          </div>
+        </div>
         {!en && (
           <div style={{ margin: '0 0 18px' }}>
             <a href="/blog/restaurant-vraiment-halal-verifier"
