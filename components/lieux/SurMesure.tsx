@@ -529,7 +529,11 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
       // atteignable à temps. Rater une prière parce qu'on a suivi notre
       // conseil serait le pire service qu'on puisse rendre.
       setUrgence(pr && pr.minutes <= 30 ? pr : null)
-      if (trois.length) redigerIA(trois, c, corps.mode ?? 'voiture', pr, !!lieu)
+      // 🔇 Itération 3, correction 4 : sur l'écran scooter, PLUS AUCUNE
+      // prose conversationnelle — l'ancien flux envoyait une « question du
+      // visiteur » vide et l'IA répondait dans le vide (« votre question
+      // n'a pas été complétée »). Le bloc et son appel meurent ici.
+      if (trois.length && !scooter) redigerIA(trois, c, corps.mode ?? 'voiture', pr, !!lieu)
     } finally { enCours.current = false }
   }
 
@@ -1259,6 +1263,8 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
                 {en ? 'Titles and summaries written by ' : 'Titres et résumés écrits par '}
                 <strong style={{ color: 'rgba(201,168,76,0.8)', fontWeight: 600 }}>{en ? 'VoyagesHalal AI' : 'l\u2019IA VoyagesHalal'}</strong>
                 {en ? ' from reviews.' : ' à partir des avis.'}
+                <br />
+                {en ? 'We set aside places identified as serving alcohol.' : 'Nous écartons les établissements identifiés comme servant de l\u2019alcool.'}
               </p>
             )}
           </div>
