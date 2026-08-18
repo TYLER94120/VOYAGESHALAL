@@ -44,7 +44,7 @@ export default function HubClient() {
     <div style={{ maxWidth: 640, margin: '0 auto', padding: '0 16px 70px' }}>
       {/* CTA dominant */}
       <Link href="/communaute/ajouter" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10, minHeight: 60, borderRadius: 20, background: 'var(--or)', color: '#0b1a0f', fontWeight: 900, fontSize: 17, textDecoration: 'none', margin: '18px 0', boxShadow: '0 8px 26px rgba(201,168,76,0.35)' }}>
-        ➕ {en ? 'Add a spot (30 s)' : 'Ajouter un spot (30 s)'}
+        ➕ {en ? 'Add a find (30 s)' : 'Ajouter une trouvaille (30 s)'}
       </Link>
 
       {/* Mon impact (connecté) */}
@@ -68,7 +68,7 @@ export default function HubClient() {
       {near.length > 0 && (
         <section style={{ marginBottom: 22 }}>
           <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: 20, fontWeight: 900, color: '#0b1a0f', margin: '0 0 10px' }}>
-            📍 {en ? `Shared spots near you${pos ? ` (${pos.label})` : ''}` : `Spots partagés près de toi${pos ? ` (${pos.label})` : ''}`}
+            📍 {en ? `Shared finds near you${pos ? ` (${pos.label})` : ''}` : `Trouvailles partagées près de toi${pos ? ` (${pos.label})` : ''}`}
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
             {near.map((s) => (
@@ -92,7 +92,7 @@ export default function HubClient() {
         </h2>
         {feed.length === 0 ? (
           <div style={{ ...card, textAlign: 'center', color: '#6b7280', fontSize: 14.5, lineHeight: 1.6 }}>
-            {en ? 'Be the FIRST to share a spot — it all starts with you 🌱' : 'Sois le PREMIER à partager un spot — tout commence avec toi 🌱'}
+            {en ? 'Be the first to share a find — it all starts with you' : 'Sois le premier à partager une trouvaille — tout commence avec toi'}
           </div>
         ) : (
           <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
@@ -151,8 +151,8 @@ export default function HubClient() {
         </div>
         <p style={{ fontSize: 13, color: '#6b7280', marginTop: 12, lineHeight: 1.6, textAlign: 'center' }}>
           {en
-            ? 'Spot +10 pts · confirmation +2 pts · your spot confirmed +5 pts. Guides unlock the premium app for free.'
-            : 'Spot +10 pts · confirmation +2 pts · ton spot confirmé +5 pts. Les Guides débloquent l\'app premium gratuitement.'}
+            ? 'Find +10 pts · confirmation +2 pts · your find confirmed +5 pts. Guides unlock the premium app for free.'
+            : 'Trouvaille +10 pts · confirmation +2 pts · ta trouvaille confirmée +5 pts. Les Guides débloquent l\'app premium gratuitement.'}
         </p>
       </section>
     </div>

@@ -250,7 +250,7 @@ export default function RadarPriere() {
             </p>
             <span style={{ display: 'flex', gap: 8 }}>
               <Link href="/communaute/ajouter" style={{ padding: '10px 16px', borderRadius: 999, background: 'var(--or)', color: '#0b1a0f', fontWeight: 800, fontSize: 13.5, textDecoration: 'none' }}>
-                ➕ {en ? 'Share a spot' : 'Partager un spot'}
+                ➕ {en ? 'Share a find' : 'Partager une trouvaille'}
               </Link>
               <Link href="/qibla" style={{ padding: '10px 16px', borderRadius: 999, border: '1.5px solid rgba(201,168,76,0.5)', color: '#fdfaf3', fontWeight: 700, fontSize: 13.5, textDecoration: 'none' }}>
                 🧭 Qibla

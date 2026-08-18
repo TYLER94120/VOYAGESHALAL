@@ -863,7 +863,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
             ? <CitySpots lat={coords.lat} lng={coords.lng} villeNom={ville.nom} slug={ville.slug ?? ''} en={en} />
             : (
               <a href={`/communaute/ajouter?ville=${ville.slug ?? ''}`} style={{ display: 'inline-block', padding: '12px 22px', borderRadius: 999, background: 'var(--or)', color: '#0b1a0f', fontWeight: 800, fontSize: 14, textDecoration: 'none' }}>
-                🤲 {en ? 'Share a spot here' : 'Partager un spot ici'}
+                🤲 {en ? 'Share a find here' : 'Partager une trouvaille ici'}
               </a>
             )}
         </section>

@@ -29,7 +29,7 @@ export default function RecentSpotsHome() {
           <h2 style={{ fontFamily: "'Playfair Display', serif", color: '#fdfaf3', fontSize: 19, fontWeight: 800, margin: 0 }}>
             💎 {en ? 'Latest shared spots' : 'Derniers spots partagés'}
           </h2>
-          <Link href="/spots" style={{ color: 'var(--or)', fontWeight: 800, fontSize: 13.5, textDecoration: 'none', whiteSpace: 'nowrap' }}>
+          <Link href="/trouvailles" style={{ color: 'var(--or)', fontWeight: 800, fontSize: 13.5, textDecoration: 'none', whiteSpace: 'nowrap' }}>
             {en ? 'See all →' : 'Tout voir →'}
           </Link>
         </div>

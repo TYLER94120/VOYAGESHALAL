@@ -18,7 +18,7 @@ export default function HalalGPTFab({ en = false }: { en?: boolean }) {
   // rail et au CTA Itinéraire : la pastille s'efface plutôt que de les
   // recouvrir (elle reste partout ailleurs).
   const pathname = usePathname()
-  if (pathname?.startsWith('/spots')) return null
+  if (pathname?.startsWith('/spots') || pathname?.startsWith('/trouvailles')) return null
   const href = en ? '/halalgpt' : 'https://halalgpt.fr?utm_source=voyageshalal&utm_medium=passerelle&utm_campaign=bouton-flottant'
   const label = en ? 'Halal question? Ask HalalGPT' : 'Question halal ? Demander à HalalGPT'
   return (

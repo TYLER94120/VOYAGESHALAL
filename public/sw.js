@@ -2,8 +2,8 @@
 // s'ouvre SANS connexion. Réseau d'abord partout → jamais de page périmée ;
 // le cache n'est qu'un repli. /api n'est JAMAIS caché (données fraîches ;
 // les favoris vivent dans localStorage → dispo hors-ligne par construction).
-const CACHE = 'vh-v3' // v3 : hors-ligne par URL (Mes spots, Spots, Ajouter)
-const OFFLINE_URLS = ['/', '/carnet', '/spots', '/communaute/ajouter']
+const CACHE = 'vh-v4' // v4 : /spots devient /trouvailles (un seul mot partout)
+const OFFLINE_URLS = ['/', '/carnet', '/trouvailles', '/communaute/ajouter']
 
 self.addEventListener('install', (event) => {
   // Précache best-effort des pages cœur (rafraîchies à chaque visite ensuite)

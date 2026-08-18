@@ -311,7 +311,7 @@ export default function AjouterClient() {
         <div style={{ position: 'fixed', inset: 0, zIndex: 210, background: 'rgba(11,26,15,0.96)', overflowY: 'auto', padding: '30px 18px 60px' }}>
           <div style={{ maxWidth: 480, margin: '0 auto' }}>
             <p style={{ color: '#fdfaf3', fontWeight: 900, fontSize: 19, margin: '0 0 14px', textAlign: 'center' }}>
-              {en ? 'Film your spot 🎥' : 'Filme ton spot 🎥'}
+              {en ? 'Film your find' : 'Filme ta trouvaille'}
             </p>
             <MediaCapture
               onSkip={() => setReelOpen(false)}
@@ -343,7 +343,7 @@ export default function AjouterClient() {
         <div style={{ position: 'fixed', inset: 0, zIndex: 210, background: 'rgba(11,26,15,0.96)', overflowY: 'auto', padding: '30px 18px 60px' }}>
           <div style={{ maxWidth: 480, margin: '0 auto' }}>
             <p style={{ color: '#fdfaf3', fontWeight: 900, fontSize: 19, margin: '0 0 14px', textAlign: 'center' }}>
-              {mediaDone ? (en ? '✓ Added to your spot!' : '✓ Ajouté à ton spot !') : (en ? 'Show your spot 🎥' : 'Fais voir ton spot 🎥')}
+              {mediaDone ? (en ? '✓ Added to your find!' : '✓ Ajouté à ta trouvaille !') : (en ? 'Show your find' : 'Fais voir ta trouvaille')}
             </p>
             {mediaDone ? (
               <button onClick={() => setMediaOpen(false)} style={{ display: 'block', width: '100%', minHeight: 54, borderRadius: 16, border: 'none', background: 'var(--or)', color: '#0b1a0f', fontWeight: 900, fontSize: 15, cursor: 'pointer' }}>
@@ -351,7 +351,7 @@ export default function AjouterClient() {
               </button>
             ) : (
               <MediaCapture
-                skipLabel={en ? 'Skip — my spot is already live' : 'Passer — mon spot est déjà publié'}
+                skipLabel={en ? 'Skip — my find is already live' : 'Passer — ma trouvaille est déjà publiée'}
                 onSkip={() => setMediaOpen(false)}
                 onDone={async (m) => {
                   try {

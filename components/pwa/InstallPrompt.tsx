@@ -20,7 +20,7 @@ export default function InstallPrompt() {
   // (chevauchait les cartes), ni sur l'accueil : le board y affiche les
   // horaires et la page a déjà sa propre section « Installer l'app ».
   const suppressed = pathname === '/' || pathname?.startsWith('/horaires-priere') || pathname?.startsWith('/prayer-times')
-    || pathname === '/spots' || pathname?.startsWith('/spot/')
+    || pathname === '/trouvailles' || pathname?.startsWith('/spot/')
 
   useEffect(() => {
     if (typeof window === 'undefined') return

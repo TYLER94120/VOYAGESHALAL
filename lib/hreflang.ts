@@ -27,7 +27,7 @@ const EN_TO_FR_BLOG = Object.fromEntries(
 /** Routes rendues dans les deux langues à la MÊME adresse. */
 const CHEMINS_BILINGUES = [
   '/', '/destinations', '/blog', '/guides', '/qibla', '/quiz', '/hotels',
-  '/spots', '/audio', '/contact', '/search', '/autour-de-moi', '/communaute',
+  '/trouvailles', '/audio', '/contact', '/search', '/autour-de-moi', '/communaute',
 ]
 
 // Préfixes dont TOUTES les pages sont rendues dans les deux langues à la

@@ -61,7 +61,7 @@ export default async function manifest(): Promise<MetadataRoute.Manifest> {
       {
         name: isEN ? 'Discover spots' : 'Découvrir les spots',
         short_name: 'Spots',
-        url: '/spots',
+        url: '/trouvailles',
         icons: [{ src: '/icon-192', sizes: '192x192' }],
       },
       {

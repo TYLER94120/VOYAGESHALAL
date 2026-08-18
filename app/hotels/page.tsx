@@ -148,7 +148,7 @@ export default async function HotelsPage() {
             : 'Certains liens sont affiliés (aucun surcoût pour toi) — ils financent le projet communautaire gratuit. Nous ne certifions jamais le statut halal d\'un hôtel : vérifie sur place.'}
         </p>
         <p style={{ marginTop: 8, fontSize: 14 }}>
-          <Link href="/spots" style={{ color: 'var(--or)', fontWeight: 800, textDecoration: 'none' }}>
+          <Link href="/trouvailles" style={{ color: 'var(--or)', fontWeight: 800, textDecoration: 'none' }}>
             💎 {en ? 'Hotel gems shared by travelers →' : 'Les pépites hôtel partagées par les voyageurs →'}
           </Link>
         </p>

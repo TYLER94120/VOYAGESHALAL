@@ -350,7 +350,7 @@ export default function FluxPepites({ initialSpots }: { initialSpots?: Spot[] })
           le dock. */}
       <Link href="/communaute/ajouter" className="flux-ajouter"
         style={{ position: 'fixed', bottom: 'calc(84px + env(safe-area-inset-bottom))', left: '50%', transform: 'translateX(-50%)', zIndex: 95, display: 'inline-flex', alignItems: 'center', gap: 8, height: 46, padding: '0 18px', borderRadius: 999, background: '#C9A84C', color: '#0B1A0F', fontWeight: 800, fontSize: 14, textDecoration: 'none', boxShadow: '0 6px 20px rgba(0,0,0,.4)' }}>
-        <Ic d="M12 5v14M5 12h14" size={18} /> {en ? 'Add a spot · 15 s' : 'Ajouter un spot · 15 s'}
+        <Ic d="M12 5v14M5 12h14" size={18} /> {en ? 'Add a find · 15 s' : 'Ajouter une trouvaille · 15 s'}
       </Link>
     </>
   )

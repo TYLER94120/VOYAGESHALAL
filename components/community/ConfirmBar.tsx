@@ -21,7 +21,7 @@ export default function ConfirmBar({ spotId, confirmations }: { spotId: string; 
       const j = await r.json()
       if (!r.ok) throw new Error(j.error || 'Erreur')
       if (action === 'confirm') {
-        if (j.deja) setMsg(en ? 'You already confirmed this spot ✓' : 'Tu as déjà confirmé ce spot ✓')
+        if (j.deja) setMsg(en ? 'You already confirmed this place ✓' : 'Tu as déjà confirmé cette adresse ✓')
         else { setN(j.confirmations ?? n + 1); setMsg(en ? 'Barak Allahou fik ! +2 pts ✨' : 'Barak Allahou fik ! +2 pts ✨') }
       } else {
         setMsg(en ? 'Thanks — our team will check.' : 'Merci — notre équipe va vérifier.')

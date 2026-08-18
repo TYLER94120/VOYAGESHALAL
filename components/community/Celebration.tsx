@@ -54,11 +54,11 @@ export default function Celebration({
         <p style={{ fontSize: 16, color: '#1b4332', lineHeight: 1.6, margin: '0 0 16px' }}>
           {enAttente
             ? (en
-              ? 'Thank you! Your spot is waiting to be checked — we verify every prayer place before showing it. You will find it here once it is live, in shā’ Allāh. 🌱'
-              : 'Merci ! Ton spot est en attente de vérification — on vérifie chaque lieu de prière avant de l’afficher. Tu le retrouveras ici une fois publié, in shā’ Allāh. 🌱')
+              ? 'Thank you! Your find is waiting to be checked — we verify every prayer place before showing it. You will find it here once it is live, in shā’ Allāh. 🌱'
+              : 'Merci ! Ta trouvaille est en attente de vérification — on vérifie chaque lieu de prière avant de l’afficher. Tu le retrouveras ici une fois publié, in shā’ Allāh. 🌱')
             : (en
-              ? 'Your spot is live — it will help dozens of travelers find their way. A sadaqa that keeps giving, in shā’ Allāh. 🌱'
-              : 'Ton spot est en ligne — il va aider des dizaines de voyageurs. Une sadaqa jâriya qui continue, in shā’ Allāh. 🌱')}
+              ? 'Your find is live — it will help dozens of travelers find their way. A sadaqa that keeps giving, in shā’ Allāh. 🌱'
+              : 'Ta trouvaille est en ligne — elle va aider des dizaines de voyageurs. Une sadaqa jâriya qui continue, in shā’ Allāh. 🌱')}
         </p>
         {points > 0 && (
         <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'rgba(201,168,76,0.18)', borderRadius: 999, padding: '10px 18px', marginBottom: 14 }}>
@@ -87,11 +87,11 @@ export default function Celebration({
         <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginTop: 8 }}>
           {!enAttente && (
             <Link href={spotUrl} style={{ display: 'block', minHeight: 56, lineHeight: '56px', borderRadius: 18, background: 'var(--foret, #1B4332)', color: '#fff', fontWeight: 800, fontSize: 16, textDecoration: 'none' }}>
-              {en ? 'See my spot →' : 'Voir mon spot →'}
+              {en ? 'See my find →' : 'Voir ma trouvaille →'}
             </Link>
           )}
           <button onClick={onClose} style={{ minHeight: 56, borderRadius: 18, border: '1.5px solid rgba(27,67,50,0.3)', background: 'transparent', color: '#1b4332', fontWeight: 700, fontSize: 15, cursor: 'pointer' }}>
-            {en ? '+ Add another spot' : '+ Ajouter un autre spot'}
+            {en ? '+ Add another find' : '+ Ajouter une autre trouvaille'}
           </button>
         </div>
       </div>

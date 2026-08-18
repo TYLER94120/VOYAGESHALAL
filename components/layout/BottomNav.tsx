@@ -17,6 +17,30 @@ export default function BottomNav() {
   // Fermer le panneau Outils à chaque navigation
   useEffect(() => { setToolsOpen(false) }, [pathname])
 
+  // 🚪 UNE FEUILLE MODALE SE FERME COMME PARTOUT AILLEURS (correction du
+  // 18 août : « il ne se ferme qu'en réappuyant sur l'onglet ») :
+  // - tap n'importe où dehors : le voile ci-dessous le fait déjà ;
+  // - bouton retour du téléphone/navigateur : on pousse une entrée
+  //   d'historique à l'ouverture, le retour la consomme et ferme le
+  //   panneau au lieu de quitter la page ;
+  // - glissement vers le bas sur la feuille : > 55 px = fermeture.
+  const ouvrirOutils = () => {
+    setToolsOpen(true)
+    try { window.history.pushState({ vhOutils: true }, '') } catch { /* SSR */ }
+  }
+  const fermerOutils = (parHistorique = false) => {
+    setToolsOpen(false)
+    // On retire l'entrée d'historique qu'on avait poussée — sauf si c'est
+    // justement le retour qui vient de la consommer.
+    if (!parHistorique && window.history.state?.vhOutils) window.history.back()
+  }
+  useEffect(() => {
+    const onPop = () => setToolsOpen(false)
+    window.addEventListener('popstate', onPop)
+    return () => window.removeEventListener('popstate', onPop)
+  }, [])
+  const [glisse, setGlisse] = useState<number | null>(null)
+
   const tools = [
     // La ville a quitté cette liste : Mohamed — « je ne vois pas à quoi sert
     // la ville dans Outils ». Il avait raison, elle doublonnait le menu
@@ -42,7 +66,7 @@ export default function BottomNav() {
     // les adresses qu'il a gardées. On l'écrit comme ça.
     { href: localizedHref('/carnet', en), icon: '❤️', label: en ? 'My saved places' : 'Mes adresses gardées' },
     // Descendus du dock : utiles, mais pas ce qu'on vient chercher.
-    { href: '/spots', icon: '💎', label: en ? 'Community finds' : 'Les trouvailles de la communauté' },
+    { href: '/trouvailles', icon: '💎', label: en ? 'Community finds' : 'Les trouvailles de la communauté' },
     { href: '/communaute/ajouter', icon: '➕', label: en ? 'Add a place' : 'Ajouter une adresse' },
   ]
   const toolsActive = tools.some((tl) => isActive(tl.href.split('?')[0]))
@@ -53,12 +77,17 @@ export default function BottomNav() {
       {toolsOpen && (
         <>
           {/* Le voile s'arrête AU-DESSUS de la barre : les 5 onglets restent cliquables */}
-          <div onClick={() => setToolsOpen(false)} style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 'calc(86px + env(safe-area-inset-bottom, 0px))', background: 'rgba(0,0,0,0.45)', zIndex: 98 }} />
-          <div style={{ position: 'fixed', left: 10, right: 10, bottom: 'calc(86px + env(safe-area-inset-bottom, 0px))', zIndex: 99, background: '#fff', borderRadius: 22, padding: '14px 14px calc(10px)', boxShadow: '0 -10px 40px rgba(0,0,0,0.2)' }}>
+          <div onClick={() => fermerOutils()} style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 'calc(86px + env(safe-area-inset-bottom, 0px))', background: 'rgba(0,0,0,0.45)', zIndex: 98 }} />
+          <div
+            onTouchStart={(e) => setGlisse(e.touches[0].clientY)}
+            onTouchMove={(e) => { if (glisse != null && e.touches[0].clientY - glisse > 55) { setGlisse(null); fermerOutils() } }}
+            onTouchEnd={() => setGlisse(null)}
+            style={{ position: 'fixed', left: 10, right: 10, bottom: 'calc(86px + env(safe-area-inset-bottom, 0px))', zIndex: 99, background: '#fff', borderRadius: 22, padding: '14px 14px calc(10px)', boxShadow: '0 -10px 40px rgba(0,0,0,0.2)' }}>
+            <div aria-hidden style={{ width: 44, height: 4, borderRadius: 99, background: 'rgba(11,26,15,0.25)', margin: '0 auto 10px' }} />
             <p style={{ margin: '2px 4px 10px', fontWeight: 900, fontSize: 15, color: '#0b1a0f' }}>🧰 {en ? 'All tools' : 'Tous les outils'}</p>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 }}>
               {tools.map((tl) => (
-                <Link key={tl.href} href={tl.href} onClick={() => setToolsOpen(false)} style={{ display: 'flex', alignItems: 'center', gap: 10, minHeight: 56, padding: '0 14px', borderRadius: 14, background: '#FDFAF3', border: '1px solid rgba(27,67,50,0.12)', textDecoration: 'none', color: '#0b1a0f', fontWeight: 700, fontSize: 14.5 }}>
+                <Link key={tl.href} href={tl.href} onClick={() => fermerOutils()} style={{ display: 'flex', alignItems: 'center', gap: 10, minHeight: 56, padding: '0 14px', borderRadius: 14, background: '#FDFAF3', border: '1px solid rgba(27,67,50,0.12)', textDecoration: 'none', color: '#0b1a0f', fontWeight: 700, fontSize: 14.5 }}>
                   <span style={{ fontSize: 20 }}>{tl.icon}</span> {tl.label}
                 </Link>
               ))}
@@ -86,11 +115,11 @@ export default function BottomNav() {
           <span className="bottom-nav-icon"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" aria-hidden><path d="M21 3 10.5 13.5M21 3l-6.5 18-3-7.5L3 10z" /></svg></span>
           <span className="bottom-nav-label">{en ? 'Around' : 'Autour'}</span>
         </Link>
-        <Link href="/destinations" className={`bottom-nav-item ${isActive('/destinations') || isActive('/spots') || isActive('/spot') ? 'active' : ''}`}>
+        <Link href="/destinations" className={`bottom-nav-item ${isActive('/destinations') || isActive('/trouvailles') || isActive('/spot') ? 'active' : ''}`}>
           <span className="bottom-nav-icon"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3c3.5 3.8 3.5 14.2 0 18M12 3c-3.5 3.8-3.5 14.2 0 18" /></svg></span>
           <span className="bottom-nav-label">{en ? 'Travel' : 'Voyages'}</span>
         </Link>
-        <button type="button" onClick={() => setToolsOpen(!toolsOpen)} className={`bottom-nav-item ${toolsOpen || toolsActive ? 'active' : ''}`} style={{ background: 'none', border: 'none', cursor: 'pointer', font: 'inherit' }}>
+        <button type="button" onClick={() => (toolsOpen ? fermerOutils() : ouvrirOutils())} className={`bottom-nav-item ${toolsOpen || toolsActive ? 'active' : ''}`} style={{ background: 'none', border: 'none', cursor: 'pointer', font: 'inherit' }}>
           <span className="bottom-nav-icon"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" aria-hidden><rect x="4" y="4" width="6.5" height="6.5" rx="1.5" /><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5" /><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5" /><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.5" /></svg></span>
           <span className="bottom-nav-label">{en ? 'Tools' : 'Outils'}</span>
         </button>
