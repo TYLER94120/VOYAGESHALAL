@@ -298,7 +298,8 @@ export default function AutourDeMoiPage() {
       {vue === 'carte' ? (
         <button onClick={() => setVue('liste')} className="autour-retour" aria-label="Revenir à la liste des adresses">‹ Liste</button>
       ) : (
-        <a href="/" className="autour-retour" aria-label="Revenir à l'accueil">‹ Accueil</a>
+        <button onClick={() => { if (window.history.length > 1) window.history.back(); else window.location.href = '/' }}
+          className="autour-retour" aria-label="Revenir à l'écran précédent">‹ Retour</button>
       )}
 
       {/* 🧹 15 août — LA POSITION N'EST PLUS AFFICHÉE ICI.

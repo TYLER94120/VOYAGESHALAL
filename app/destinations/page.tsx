@@ -3,6 +3,7 @@ import fs from 'fs'
 import path from 'path'
 import { getDomainSEO, FR_URL, EN_URL } from '@/lib/domain'
 import DestinationsClient, { type VilleCard } from '@/components/destination/DestinationsClient'
+import BoutonRetour from '@/components/layout/BoutonRetour'
 
 const FALLBACK_IMG = 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&q=80'
 
@@ -109,6 +110,8 @@ export default async function DestinationsPage() {
 
   return (
     <main style={{ backgroundColor: '#fdfaf3' }}>
+      {/* ‹ correction 5 : chaque écran secondaire a son retour, pile réelle */}
+      <BoutonRetour clair />
       {/* 🔴 AUCUNE VILLE PAR DÉFAUT — bug du 18 août : « Voyages »,
           « Destinations » et « Choisir une ville » ouvraient tous le guide
           de la DERNIÈRE VILLE MÉMORISÉE (Tirana chez Mohamed). La cause :

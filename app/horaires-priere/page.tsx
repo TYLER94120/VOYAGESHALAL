@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import HorairesClient from './HorairesClient'
 import IslamicPattern from '@/components/ui/IslamicPattern'
 import { getDomainSEO } from '@/lib/domain'
+import BoutonRetour from '@/components/layout/BoutonRetour'
 
 export async function generateMetadata(): Promise<Metadata> {
   const { isEN, siteUrl } = await getDomainSEO()
@@ -28,6 +29,8 @@ export default async function HorairesPrierePage() {
   const { isEN: en } = await getDomainSEO()
   return (
     <main style={{ backgroundColor: '#fdfaf3' }}>
+      {/* ‹ correction 5 : chaque écran secondaire a son retour, pile réelle */}
+      <BoutonRetour clair />
       {/* Bandeau compact : les HORAIRES doivent être visibles sans scroller (mobile-first) */}
       <section className="relative overflow-hidden px-6 pt-6 pb-6 text-center" style={{ backgroundColor: '#0b1a0f' }}>
         <IslamicPattern opacity={0.07} />
