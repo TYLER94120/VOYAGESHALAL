@@ -81,5 +81,14 @@ const ms = readFileSync('components/flux/MySaves.tsx', 'utf8')
 if (!/vh_wishlist_villes/.test(ms) || !/vh_immersion_gardes:/.test(ms)) casse('My saves ne lit plus les deux clés du carnet unique')
 if (!/construire=1/.test(ms)) casse('« Build my days » depuis My saves a perdu sa destination')
 
+// ── 5. mosquées, hôtels Places et recherche de ville ──
+const api2 = readFileSync('app/api/immersion/route.ts', 'utf8')
+if (!/prochesOsm\(l\.lat, l\.lng, 60, 1\)/.test(api2)) casse('les mosquées Places ne sont plus croisées avec notre base OSM')
+if (!/AUCUNE\n    \/\/ promesse « sans alcool »|on ne l'invente/.test(api2)) casse('la garde « pas de promesse sans alcool sur un hôtel Places » a disparu')
+const imm = readFileSync('components/villes/Immersion.tsx', 'utf8')
+if (/hotel: en \? 'ALCOHOL-FREE'|hotel:.*SANS ALCOOL/.test(imm)) casse('« SANS ALCOOL » est redevenu l\'étiquette par défaut des hôtels — invention interdite')
+const wf = readFileSync('components/flux/WorldFeed.tsx', 'utf8')
+if (!/Find a city/.test(wf) || !/index\.filter/.test(wf)) casse('la recherche de ville a disparu du World feed')
+
 if (fautes) { console.error(`${fautes} faute(s) — build arrêté.`); process.exit(1) }
 console.log(`✅ immersion + flux : ${signatures.size} tirages distincts, seuils, Eat/Sleep/Do planchonnés, carnet unique en place.`)

@@ -32,9 +32,16 @@ function IcPartage() {
   return <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden><path d="M12 3v12M8 7l4-4 4 4M5 13v6h14v-6" /></svg>
 }
 
-const ETIQUETTES_DEFAUT: Record<string, string> = {
-  monument: 'LIEU EMBLÉMATIQUE', experience: 'EXPÉRIENCE', joker: 'À NE PAS RATER', hotel: 'SANS ALCOOL', table: 'TABLE HALAL',
-}
+// ⚠️ hotel : « SANS ALCOOL » n'est JAMAIS un défaut — seul un hôtel
+// vérifié de notre base porte cette étiquette (posée par l'API).
+const etiquetteDefaut = (cat: string, en: boolean): string => ({
+  monument: en ? 'LANDMARK' : 'LIEU EMBLÉMATIQUE',
+  experience: en ? 'EXPERIENCE' : 'EXPÉRIENCE',
+  joker: en ? 'DON\u2019T MISS' : 'À NE PAS RATER',
+  hotel: en ? 'HOTEL' : 'HÔTEL',
+  table: en ? 'HALAL TABLE' : 'TABLE HALAL',
+  mosquee: en ? 'MOSQUE' : 'MOSQUÉE',
+}[cat] ?? (en ? 'PLACE' : 'LIEU'))
 
 export default function Immersion({ slug, nom, score, ton, niveau, pool, onOuvrir, en = false }: {
   slug: string; nom: string
@@ -51,7 +58,7 @@ export default function Immersion({ slug, nom, score, ton, niveau, pool, onOuvri
   // (le tirage), Eat, Sleep, Do. Une pilule de flux n'existe que si sa
   // catégorie a au moins 3 lieux au-dessus des seuils : un bouton sans
   // destination n'existe pas.
-  const [fluxActif, setFluxActif] = useState<'gems' | 'eat' | 'sleep' | 'do'>('gems')
+  const [fluxActif, setFluxActif] = useState<'gems' | 'eat' | 'sleep' | 'pray' | 'do'>('gems')
   const [panneaux, setPanneaux] = useState<PanneauImmersion[]>([])
   const [gardes, setGardes] = useState<Garde[]>([])
   const [feuille, setFeuille] = useState(false)
@@ -160,6 +167,7 @@ export default function Immersion({ slug, nom, score, ton, niveau, pool, onOuvri
   const fluxDispo = useMemo(() => ({
     eat: pool.panneaux.filter((p) => p.cat === 'table').sort(parNote),
     sleep: pool.panneaux.filter((p) => p.cat === 'hotel').sort(parNote),
+    pray: pool.panneaux.filter((p) => p.cat === 'mosquee').sort(parNote),
     do: pool.panneaux.filter((p) => p.cat === 'monument' || p.cat === 'experience' || p.cat === 'joker').sort(parNote),
   }), [pool])
   const changerFlux = (f: typeof fluxActif) => {
@@ -176,10 +184,11 @@ export default function Immersion({ slug, nom, score, ton, niveau, pool, onOuvri
   return (
     <div style={{ position: 'relative' }}>
       {/* Sélecteur de flux — domaine anglais (le FR garde son expérience) */}
-      {en && (fluxDispo.eat.length >= 3 || fluxDispo.do.length >= 3 || fluxDispo.sleep.length >= 3) && (
+      {en && (fluxDispo.eat.length >= 3 || fluxDispo.do.length >= 3 || fluxDispo.sleep.length >= 3 || fluxDispo.pray.length >= 3) && (
         <nav className="imm-selecteur" aria-label="Feeds">
           <button className={`imm-sel${fluxActif === 'gems' ? ' on' : ''}`} onClick={() => changerFlux('gems')}>Gems</button>
           {fluxDispo.eat.length >= 3 && <button className={`imm-sel${fluxActif === 'eat' ? ' on' : ''}`} onClick={() => changerFlux('eat')}>Eat</button>}
+          {fluxDispo.pray.length >= 3 && <button className={`imm-sel${fluxActif === 'pray' ? ' on' : ''}`} onClick={() => changerFlux('pray')}>Pray</button>}
           {fluxDispo.sleep.length >= 3 && <button className={`imm-sel${fluxActif === 'sleep' ? ' on' : ''}`} onClick={() => changerFlux('sleep')}>Sleep</button>}
           {fluxDispo.do.length >= 3 && <button className={`imm-sel${fluxActif === 'do' ? ' on' : ''}`} onClick={() => changerFlux('do')}>Do</button>}
         </nav>
@@ -223,7 +232,7 @@ export default function Immersion({ slug, nom, score, ton, niveau, pool, onOuvri
               onError={(e) => e.currentTarget.remove()} />
             <div className="imm-contenu">
               <span className={`imm-etiquette ${p.badge ? 'imm-et-halal' : 'imm-et-type'}`} data-badge={p.badge}>
-                {p.badge ? `✓ ${p.badge === 'vert' ? t('HALAL VÉRIFIÉ', 'VERIFIED HALAL') : t('SIGNALÉ HALAL', 'REPORTED HALAL')}` : (p.etiquette ?? ETIQUETTES_DEFAUT[p.cat])}
+                {p.badge ? `✓ ${p.badge === 'vert' ? t('HALAL VÉRIFIÉ', 'VERIFIED HALAL') : t('SIGNALÉ HALAL', 'REPORTED HALAL')}` : (p.etiquette ?? etiquetteDefaut(p.cat, en))}
               </span>
               <h2 className="imm-h2">{p.nom}</h2>
               {p.conseil && <p className="imm-ia">{p.conseil}</p>}

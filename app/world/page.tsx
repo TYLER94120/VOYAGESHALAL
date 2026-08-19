@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { readFileSync } from 'fs'
 import path from 'path'
 import WorldFeed, { type VillePanneau } from '@/components/flux/WorldFeed'
+import cityCoords from '@/lib/cityCoords.json'
 import { compteurVille } from '@/lib/mosqueesOsm'
 import { getRedis } from '@/lib/pushStore'
 import { EN_URL, FR_URL } from '@/lib/domain'
@@ -81,5 +82,9 @@ export default async function WorldPage() {
       })
     } catch { /* cache muet : la phrase de la base reste */ }
   }
-  return <WorldFeed villes={villes} />
+  // 🔎 L'index de recherche : les 354 villes du guide (slug + nom réels de
+  // la base) — la barre trouve n'importe laquelle, pas que les 10 du flux.
+  const index = (cityCoords as { slug: string; nom: string; pays?: string }[])
+    .map((c) => ({ slug: c.slug, nom: c.nom, pays: c.pays ?? '' }))
+  return <WorldFeed villes={villes} index={index} />
 }

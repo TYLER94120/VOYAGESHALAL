@@ -5,6 +5,7 @@ import path from 'path'
 import { getRedis } from '@/lib/pushStore'
 import { estLatinLisible } from '@/lib/latin.mjs'
 import { conforme } from '@/lib/conformite'
+import { prochesOsm } from '@/lib/mosqueesOsm'
 
 // 🎬 LE POOL IMMERSION D'UNE VILLE — le hall of fame, PAS des adresses
 // quelconques. Construit CÔTÉ SERVEUR, en cache Redis 7 jours par ville
@@ -35,7 +36,7 @@ const DELAI = 8000
 
 export interface PanneauImmersion {
   id: string
-  cat: 'monument' | 'table' | 'experience' | 'hotel' | 'joker'
+  cat: 'monument' | 'table' | 'experience' | 'hotel' | 'joker' | 'mosquee'
   nom: string
   lat: number
   lng: number
@@ -136,10 +137,12 @@ async function construirePool(slug: string, lang: string): Promise<Pool | null> 
 
   if (cle) {
     // ── 3 requêtes Places par ville et par SEMAINE (cache), pas par visite ──
-    const [monuments, experiences, tables] = await Promise.all([
+    const [monuments, experiences, tables, mosquees, hotelsPlaces] = await Promise.all([
       chercher(cle, lang, `monuments et lieux emblématiques incontournables ${nomVille}`, coords.lat, coords.lng),
       chercher(cle, lang, `expérience emblématique croisière hammam marché panorama ${nomVille}`, coords.lat, coords.lng),
       chercher(cle, lang, `restaurant halal ${nomVille}`, coords.lat, coords.lng),
+      chercher(cle, lang, `mosquée ${nomVille}`, coords.lat, coords.lng),
+      chercher(cle, lang, `hôtel ${nomVille}`, coords.lat, coords.lng),
     ])
 
     const pris = new Set<string>()
@@ -184,6 +187,25 @@ async function construirePool(slug: string, lang: string): Promise<Pool | null> 
         sources: base ? ['places', 'base_vh'] : ['places'],
       })
     }
+
+    // 🕌 Mosquées (flux Pray) : ★ ≥ 4,5 (filtré) ET ≥ 100 avis ET photo.
+    // Croisées avec NOTRE base OSM (< 60 m) : l'identifiant OSM est gardé
+    // et la source ajoutée — jamais deux fois le même lieu.
+    for (const l of mosquees) {
+      if ((l.nbAvis ?? 0) < 100) continue
+      if (!/mosque|place_of_worship/i.test(l.type ?? '')) continue
+      const osm = prochesOsm(l.lat, l.lng, 60, 1)[0]
+      pousser(l, 'mosquee', osm ? { osmId: osm.id, sources: ['places', 'osm'] } : {})
+    }
+
+    // 🏨 Hôtels (flux Sleep) : ★ ≥ 4,5 ET ≥ 300 avis ET photo. AUCUNE
+    // promesse « sans alcool » ici — Google ne le dit pas, on ne l'invente
+    // pas : le badge reste réservé aux hôtels vérifiés de notre base.
+    for (const l of hotelsPlaces) {
+      if ((l.nbAvis ?? 0) < 300) continue
+      if (!/hotel|lodging|resort|guest/i.test(l.type ?? '')) continue
+      pousser(l, 'hotel')
+    }
   }
 
   // Hôtels : SANS ALCOOL VÉRIFIÉ dans notre base — et une photo. Notre
@@ -201,7 +223,7 @@ async function construirePool(slug: string, lang: string): Promise<Pool | null> 
 
   // Phase 2 : le pool sert aussi les flux Eat/Sleep/Do — on garde jusqu'à
   // 40 lieux au-dessus des seuils (les flux filtrent par catégorie).
-  return { ville: nomVille, panneaux: panneaux.slice(0, 40), contradictions, genere: new Date().toISOString().slice(0, 10) }
+  return { ville: nomVille, panneaux: panneaux.slice(0, 60), contradictions, genere: new Date().toISOString().slice(0, 10) }
 }
 
 /** Conseils d'initié — Haiku, UNE fois, ≤ 14 mots, actionnables. */
