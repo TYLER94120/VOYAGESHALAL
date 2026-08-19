@@ -174,7 +174,8 @@ export default function PageVille({ ville, en = false }: { ville: VilleData; en?
         <a className="pv-som" href="#savoir"><Ic d={D_AMPOULE} size={17} /> {t('À savoir', 'Good to know')}</a>
       </nav>
 
-      {/* ===== 2. OÙ DORMIR ===== */}
+      {/* ===== 2 + 3 : sur PC, Dormir et Manger vivent côte à côte ===== */}
+      <div className="pv-deux">
       <section className="pv-sec" id="dormir">
         <div className="pv-sec-titre">
           <h2>{t('Où dormir', 'Where to sleep')}</h2>
@@ -225,6 +226,7 @@ export default function PageVille({ ville, en = false }: { ville: VilleData; en?
           <p className="pv-sec-sous">{t('Pas encore d’adresse au nom lisible relevée ici.', 'No place with a readable name listed here yet.')}</p>
         )}
       </section>
+      </div>
 
       {/* ===== 4. MES JOURNÉES ===== */}
       <section className="pv-sec" id="planning">
