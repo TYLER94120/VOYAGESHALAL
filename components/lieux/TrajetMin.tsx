@@ -46,8 +46,11 @@ export default function TrajetMin({ f, en = false }: { f: { distanceM?: number; 
     )
   }
   // Pas de temps réel : des mètres, honnêtes — jamais une minute estimée.
+  // Et on DIT que c'est à vol d'oiseau : « 830 m » nu laisse croire à la
+  // distance par la route (retour de Mohamed, 19 août).
   if (typeof f.distanceM !== 'number') return null
-  return <span>{f.distanceM < 1000 ? `${Math.round(f.distanceM)} m` : `${(f.distanceM / 1000).toFixed(1).replace('.', ',')} km`}</span>
+  const brut = f.distanceM < 1000 ? `${Math.round(f.distanceM)} m` : `${(f.distanceM / 1000).toFixed(1).replace('.', ',')} km`
+  return <span>{brut} {en ? 'as the crow flies' : 'à vol d’oiseau'}</span>
 }
 
 
