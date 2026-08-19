@@ -1,6 +1,7 @@
 'use client'
 import { useEffect, useMemo, useState } from 'react'
 import Immersion, { type Pool } from '@/components/villes/Immersion'
+// (la couche pratique plein écran vit en bas de ce fichier)
 import PageVille from '@/components/villes/PageVille'
 
 // 🎬 LE CHEF D'ORCHESTRE DE LA PAGE VILLE (chantier Immersion).
@@ -53,10 +54,43 @@ export default function VilleExperience({ ville, en = false }: { ville: VilleDat
     )
   }
 
+  return pool
+    ? <ImmersionAvecPratique ville={ville} en={en} pool={pool} score={score} ton={ton} niveau={niveau} />
+    : <PageVille ville={ville} en={en} mode="complet" />
+}
+
+/** L'Immersion EST la page ; la couche pratique (hôtels, adresses,
+ *  planning, à savoir) ne vit plus EN DESSOUS (« ce qui est en dessous,
+ *  on le supprime » — Mohamed, 19 août) : elle s'ouvre PAR-DESSUS le
+ *  flux, en plein écran, depuis la feuille « ☰ Pratique » et depuis
+ *  « Construire mes journées ». Un bouton sans destination n'existe pas. */
+function ImmersionAvecPratique({ ville, en, pool, score, ton, niveau }: {
+  ville: VilleData; en: boolean; pool: Pool
+  score: number | null; ton: string | null; niveau: string | null
+}) {
+  const t = (fr: string, an: string) => (en ? an : fr)
+  const [section, setSection] = useState<string | null>(null)
+
+  // La couche s'ouvre déjà défilée sur la bonne section.
+  useEffect(() => {
+    if (!section) return
+    const id = requestAnimationFrame(() => document.getElementById(`couche-${section}`)?.querySelector(`#${section}`)?.scrollIntoView())
+    document.body.style.overflow = 'hidden'
+    return () => { cancelAnimationFrame(id); document.body.style.overflow = '' }
+  }, [section])
+
   return (
     <>
-      {pool && <Immersion slug={String(ville.slug ?? '')} nom={String(ville.nom ?? '')} score={score} ton={ton} niveau={niveau} pool={pool} en={en} />}
-      <PageVille ville={ville} en={en} mode={pool ? 'pratique' : 'complet'} />
+      <Immersion slug={String(ville.slug ?? '')} nom={String(ville.nom ?? '')} score={score} ton={ton} niveau={niveau} pool={pool} en={en} onOuvrir={setSection} />
+      {section && (
+        <div id={`couche-${section}`} className="imm-couche">
+          <button className="imm-couche-fermer" onClick={() => setSection(null)} aria-label={t('Fermer', 'Close')}>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden><path d="M6 6l12 12M18 6L6 18" /></svg>
+            {t('Retour au flux', 'Back to the feed')}
+          </button>
+          <PageVille ville={ville} en={en} mode="pratique" />
+        </div>
+      )}
     </>
   )
 }
