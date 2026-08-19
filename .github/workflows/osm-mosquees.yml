@@ -1,0 +1,43 @@
+name: Base OSM des mosquées (pays par pays)
+
+# 🕌 Récupère les lieux de culte musulmans d'OpenStreetMap, un pays à la
+# fois — JAMAIS le monde d'un coup. Déclenchement manuel (liste de codes
+# pays) + rafraîchissement MENSUEL en tâche de fond sur les pays
+# prioritaires. Commite data/osm/ sur la branche d'où le workflow part.
+on:
+  workflow_dispatch:
+    inputs:
+      pays:
+        description: "Codes pays ISO séparés par des espaces (ex: FR TR MA)"
+        required: true
+        default: "FR"
+  schedule:
+    - cron: "17 4 3 * *" # le 3 de chaque mois, 04:17 UTC
+
+permissions:
+  contents: write
+
+jobs:
+  recuperer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Récupérer via Overpass
+        run: |
+          PAYS="${{ github.event.inputs.pays }}"
+          if [ -z "$PAYS" ]; then PAYS="FR TR MA AE MY SA AL EG ID TN GB BE DE CA"; fi
+          node scripts/osm-mosquees.mjs $PAYS
+      - name: Commit & push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/osm
+          if git diff --cached --quiet; then echo "Aucun changement."; else
+            git commit -m "data(osm): base des lieux de prière OpenStreetMap (© les contributeurs OpenStreetMap, ODbL)"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi

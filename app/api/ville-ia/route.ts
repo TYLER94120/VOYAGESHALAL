@@ -5,6 +5,7 @@ import path from 'path'
 import { getRedis } from '@/lib/pushStore'
 import { estLatinLisible } from '@/lib/latin.mjs'
 import { conforme } from '@/lib/conformite'
+import { compteurVille } from '@/lib/mosqueesOsm'
 
 // 🧠 LE CONTENU IA DE LA PAGE VILLE — côté serveur, en cache par ville
 // (itération 7). Trois familles de champs, avec leur provenance :
@@ -51,14 +52,26 @@ export async function GET(request: Request) {
   const restos = ((v.restaurants as { nom?: string; type?: string; halalConfidence?: string }[]) ?? [])
     .filter((r) => conforme(r.nom, r.type, r.halalConfidence))
   const nbRestos = restos.length
-  const nbMosquees = ((v.mosqueesPrincipales as unknown[]) ?? []).length
+  // 🕌 Le compteur OSM d'abord (chantier du 17 août) : « X lieux de prière
+  // dans tout Tokyo » — la vue d'ensemble que Google ne vend pas. La base
+  // locale (ODbL, crédit affiché par la page) couvre pays par pays ; sans
+  // elle, le compte de nos mosquées relevées reste la source.
+  const nbOsm = compteurVille(slug)
+  const nbMosquees = nbOsm ?? ((v.mosqueesPrincipales as unknown[]) ?? []).length
   const ip = (v.infos_pratiques as Record<string, string>) ?? {}
 
   const faitManger = nbRestos > 0
     ? { avant: en ? `Halal food: ${nbRestos} listed places` : `Manger halal : ${nbRestos} adresses relevées`, ton: (nbRestos >= 30 ? 'vert' : 'orange') as 'vert' | 'orange' }
     : null
+  // « lieu de prière » quand le compte vient d'OSM : salles de prière et
+  // mausolées y sont mélangés aux mosquées — on ne promet pas plus.
   const faitPrier = nbMosquees > 0
-    ? { avant: en ? `Praying: ${nbMosquees} listed mosques` : `Prier : ${nbMosquees} mosquées relevées`, ton: (nbMosquees >= 5 ? 'vert' : 'orange') as 'vert' | 'orange' }
+    ? {
+        avant: nbOsm != null
+          ? (en ? `Praying: ${nbMosquees} prayer places across the city` : `Prier : ${nbMosquees} lieux de prière dans toute la ville`)
+          : (en ? `Praying: ${nbMosquees} listed mosques` : `Prier : ${nbMosquees} mosquées relevées`),
+        ton: (nbMosquees >= 5 ? 'vert' : 'orange') as 'vert' | 'orange',
+      }
     : null
   const faitAlcool = ip.alcool
     ? { avant: en ? `Alcohol: ${ip.alcool.toLowerCase()}` : `Alcool : ${ip.alcool.toLowerCase()}`, ton: (/rare|interdit|banned|rare/i.test(ip.alcool) ? 'vert' : 'orange') as 'vert' | 'orange' }
@@ -69,7 +82,7 @@ export async function GET(request: Request) {
       ...(ip.monnaie ? { monnaie: ip.monnaie } : {}),
       ...((v.infoPratique as { transport?: string })?.transport ? { transport: (v.infoPratique as { transport: string }).transport } : {}),
     },
-    sources: { faits: 'base_vh', compteurs: 'base_vh', monnaie: 'base_vh', transport: 'base_vh' },
+    sources: { faits: nbOsm != null ? 'base_vh+osm' : 'base_vh', compteurs: nbOsm != null ? 'base_vh+osm' : 'base_vh', monnaie: 'base_vh', transport: 'base_vh' },
   }
 
   const r = getRedis()

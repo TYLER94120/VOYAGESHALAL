@@ -266,7 +266,7 @@ export default function PageVille({ ville, en = false }: { ville: VilleData; en?
       )}
       {restos.length > 0 && <AnnuaireManger restos={restos} noms={noms} en={en} badge={badgeHalal} />}
 
-      <div className="pv-credit">{t('Sources : base VoyagesHalal · Google · OpenStreetMap', 'Sources: VoyagesHalal base · Google · OpenStreetMap')}</div>
+      <div className="pv-credit">{t('Sources : base VoyagesHalal · Google · données cartographiques © les contributeurs OpenStreetMap', 'Sources: VoyagesHalal base · Google · map data © OpenStreetMap contributors')}</div>
     </div>
   )
 }

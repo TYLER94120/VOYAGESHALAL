@@ -11,6 +11,8 @@ import { CRITERES_DEFAUT, type Criteres } from '@/lib/criteres'
 import { minutes, plafondMin, rayonM, RAYON_KM, type Mode } from '@/lib/trajet'
 import { verdictAlcool } from '@/lib/alcool.mjs'
 import { PROFIL_VIDE, profilVide, requeteAvecProfil, criteresRelachables, type Profil } from '@/lib/profil'
+import { prochesOsm, type LieuPriereOsm } from '@/lib/mosqueesOsm'
+import { estLatinLisible } from '@/lib/latin.mjs'
 
 // 🍽 LE SUR MESURE — POST /api/lieux
 //
@@ -177,6 +179,9 @@ export interface Fiche {
   /** 🔴 Ce qu'on SAIT de l'alcool : jamais une supposition. */
   alcool: 'non' | 'inconnu'
   source: 'spot' | 'google' | 'osm'
+  /** L'identifiant OpenStreetMap quand le lieu vient de (ou existe dans)
+   *  notre base OSM — la déduplication le garde même sur une fiche Google. */
+  osmId?: string
   /**
    * 🔴 LE TYPE PRINCIPAL RENDU PAR GOOGLE, tel quel (bakery, cafe,
    * meal_takeaway, restaurant, mosque, museum…). Il sert à construire les
@@ -805,6 +810,106 @@ function heureFermeture(desc?: string[]): string | undefined {
   return m?.[2]
 }
 
+// ─────────────── 🕌 découverte par NOTRE base OSM (17 août) ───────────────
+//
+// OpenStreetMap recense ~286 000 lieux de culte musulmans ; notre base
+// locale (data/osm, lib/mosqueesOsm) rend « les plus proches » en
+// millisecondes, gratuitement. Pour la catégorie mosquée en demande
+// GÉOGRAPHIQUE : la DÉCOUVERTE ne coûte plus AUCUN appel Google — on ne
+// paie que l'ENRICHISSEMENT des fiches réellement affichées (≤ 3 appels).
+// Déduplication obligatoire : un correspondant Google à < 60 m avec un nom
+// semblable REMPLACE la fiche OSM (plus riche), l'identifiant OSM noté à
+// côté. Nos spots vérifiés restent au-dessus. Si la base est muette sur la
+// zone, Google reprend son rôle normal.
+// Licence ODbL : le crédit « © les contributeurs OpenStreetMap » est
+// affiché par l'interface partout où source === 'osm'.
+
+/** Jamais un champ vide : sans nom → « Lieu de prière (nom non
+ *  renseigné) » ; nom en écriture non latine → gardé entre parenthèses. */
+function nomOsmAffichable(o: LieuPriereOsm, lang: string): string {
+  const generique = lang === 'en' ? 'Prayer place' : 'Lieu de prière'
+  const brut = o.nom ?? o.nomAr
+  if (!brut) return lang === 'en' ? `${generique} (name not listed)` : `${generique} (nom non renseigné)`
+  if (!estLatinLisible(brut)) return `${generique} (${brut})`
+  return brut
+}
+
+function ficheDepuisOsm(o: LieuPriereOsm & { distanceM: number }, lang: string): Fiche {
+  return {
+    id: `osm-${o.id}`, osmId: o.id,
+    nom: nomOsmAffichable(o, lang),
+    lat: o.lat, lng: o.lng, distanceM: o.distanceM,
+    // `place_of_worship + muslim` couvre aussi salles de prière, mausolées,
+    // zaouïas : on dit « lieu de prière », jamais « mosquée » sans preuve.
+    statut: CATEGORIE.mosquee.statutOSM,
+    alcool: 'inconnu',
+    source: 'osm',
+    famille: o.type,
+  }
+}
+
+const normNom = (s: string) => s.toLowerCase().normalize('NFD').replace(/\p{M}/gu, '').replace(/[^a-z0-9\s]/g, ' ').replace(/\s+/g, ' ').trim()
+
+/** Deux noms désignent-ils plausiblement le même lieu ? Inclusion après
+ *  normalisation, ou moitié des mots en commun. */
+function nomsSemblables(a?: string, b?: string): boolean {
+  if (!a || !b) return true // sans nom des deux côtés, la distance décide
+  const na = normNom(a), nb = normNom(b)
+  if (!na || !nb) return true
+  if (na.includes(nb) || nb.includes(na)) return true
+  const ta = new Set(na.split(' ')), tb = new Set(nb.split(' '))
+  const commun = [...ta].filter((m) => m.length > 2 && tb.has(m)).length
+  return commun >= Math.ceil(Math.min(ta.size, tb.size) / 2)
+}
+
+/** UN appel Google par fiche affichée — pour la richesse (photos, note,
+ *  horaires), jamais pour la découverte. Rend la fiche Google fusionnée
+ *  (id OSM conservé) si le même lieu y existe, sinon null. */
+async function enrichirOsmParGoogle(o: LieuPriereOsm & { distanceM: number }, cle: string, lang: string): Promise<Fiche | null> {
+  const ac = new AbortController()
+  const t = setTimeout(() => ac.abort(), DELAI)
+  try {
+    const CHAMPS = ['id', 'displayName', 'location', 'formattedAddress', 'rating', 'userRatingCount', 'googleMapsUri', 'currentOpeningHours', 'photos']
+      .map((ch) => `places.${ch}`).join(',')
+    const r = await fetch('https://places.googleapis.com/v1/places:searchNearby', {
+      method: 'POST', signal: ac.signal,
+      headers: { 'Content-Type': 'application/json', 'X-Goog-Api-Key': cle, 'X-Goog-FieldMask': CHAMPS },
+      body: JSON.stringify({
+        languageCode: lang, maxResultCount: 3,
+        includedTypes: ['mosque'],
+        locationRestriction: { circle: { center: { latitude: o.lat, longitude: o.lng }, radius: 60 } },
+        rankPreference: 'DISTANCE',
+      }),
+    })
+    if (!r.ok) { console.error('[lieux] enrichissement OSM→Google refusé', r.status); return null }
+    const j = await r.json() as { places?: Record<string, unknown>[] }
+    for (const p of j.places ?? []) {
+      const nomG = (p.displayName as { text?: string } | undefined)?.text
+      if (!nomsSemblables(o.nom, nomG)) continue
+      const loc = p.location as { latitude?: number; longitude?: number } | undefined
+      const oh = p.currentOpeningHours as { openNow?: boolean; weekdayDescriptions?: string[] } | undefined
+      const photos = (p.photos as { name?: string }[] | undefined) ?? []
+      return {
+        id: p.id as string | undefined, osmId: o.id,
+        nom: nomG && estLatinLisible(nomG) ? nomG : nomOsmAffichable(o, lang),
+        lat: loc?.latitude ?? o.lat, lng: loc?.longitude ?? o.lng,
+        distanceM: o.distanceM,
+        note: p.rating as number | undefined,
+        nbAvis: p.userRatingCount as number | undefined,
+        adresse: p.formattedAddress as string | undefined,
+        mapsUri: p.googleMapsUri as string | undefined,
+        ouvert: oh?.openNow,
+        fermeA: heureFermeture(oh?.weekdayDescriptions),
+        photos: photos.slice(0, 2).map((ph) => `/api/lieux/photo?ref=${encodeURIComponent(ph.name ?? '')}`).filter((u) => !u.endsWith('ref=')),
+        statut: CATEGORIE.mosquee.statut,
+        alcool: 'inconnu',
+        source: 'google',
+      }
+    }
+    return null
+  } catch { return null } finally { clearTimeout(t) }
+}
+
 // ─────────────────────── repli OpenStreetMap ───────────────────────
 
 async function viaOSM(origin: string, lat: number, lng: number, rayon: number, cat: 'manger' | 'mosquee' | 'activite'): Promise<Fiche[]> {
@@ -927,8 +1032,40 @@ export async function POST(req: Request) {
   const relaches: string[] = []
   const bilan: Bilan = {}
 
+  // ═══ 🕌 PRIÈRE : NOTRE BASE OSM D'ABORD (chantier du 17 août) ═══
+  // Demande géographique (bouton, pas de mots tapés) → la découverte sort
+  // de la base locale, gratuite et instantanée. Google ne sert qu'à
+  // enrichir les fiches AFFICHÉES : au plus 3 appels, zéro pour trouver.
+  let decouverteOsmFaite = false
+  if (c.categorie === 'mosquee' && c.exigence !== 'verifies' && !(c.motsCles ?? '').trim()) {
+    const candidatsOsm = prochesOsm(lat, lng, rayon, RETENUS + AUTRES + 10)
+    if (candidatsOsm.length) {
+      decouverteOsmFaite = true
+      // Dédup 1 : nos spots vérifiés à la main restent au-dessus (< 60 m).
+      const libres = candidatsOsm.filter((o) => !spots.some((s) => distM(s.lat, s.lng, o.lat, o.lng) < 60))
+      const aAfficher = libres.slice(0, Math.max(0, RETENUS - spots.length))
+      let appelsGoogle = 0
+      const enrichies = await Promise.all(aAfficher.map(async (o) => {
+        if (!cle) return ficheDepuisOsm(o, lang)
+        appelsGoogle++
+        // Dédup 2 : le correspondant Google (< 60 m + nom semblable)
+        // REMPLACE la fiche OSM — jamais deux fois le même lieu.
+        return (await enrichirOsmParGoogle(o, cle, lang)) ?? ficheDepuisOsm(o, lang)
+      }))
+      fiches = [...spots, ...enrichies].slice(0, RETENUS)
+      autres = libres.slice(aAfficher.length, aAfficher.length + AUTRES).map((o) => ficheDepuisOsm(o, lang))
+      source = 'osm'
+      bilan.rayonAtteintM = rayon
+      // 📊 La mesure exigée : zéro appel de découverte, ≤ 3 d'enrichissement.
+      console.info(`[lieux] mosquée via base OSM : ${candidatsOsm.length} candidats locaux, ${appelsGoogle} appel(s) Google (enrichissement uniquement, 0 pour la découverte)`)
+      await compter('surmesure:osm-base')
+    }
+  }
+
   // « Seulement les adresses vérifiées » : on n'interroge même pas Google.
-  if (c.exigence === 'verifies') {
+  if (decouverteOsmFaite) {
+    // La découverte est faite — rien d'autre à interroger.
+  } else if (c.exigence === 'verifies') {
     fiches = spots.slice(0, RETENUS)
   } else if (cle) {
     // 👤 LE PROFIL AFFINE LA REQUÊTE — jamais les filtres de base. Google
@@ -1018,7 +1155,7 @@ export async function POST(req: Request) {
     }
   }
 
-  if (source !== 'google' && c.exigence !== 'verifies') {
+  if (!decouverteOsmFaite && source !== 'google' && c.exigence !== 'verifies') {
     const osm = await viaOSM(origin, lat, lng, rayon, c.categorie)
     if (osm.length) {
       source = 'osm'

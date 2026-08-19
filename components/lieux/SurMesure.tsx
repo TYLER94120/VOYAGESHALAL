@@ -56,6 +56,7 @@ export interface Fiche {
   marcheMin?: number; voitureMin?: number
   cuisine?: string; cuisineSource?: string
   statut: string; alcool?: 'non' | 'inconnu'; source: 'spot' | 'google' | 'osm'
+  osmId?: string
 }
 
 type Etape = 'question' | 'relance' | 'cherche' | 'resultat' | 'sans-position'
@@ -1371,11 +1372,14 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
             promet plus « les fiches Google arrivent bientôt » quand Google
             n'a simplement pas répondu — c'est une panne du moment, pas une
             fonctionnalité à venir. */}
-        {source === 'osm' && fiches.length > 0 && (
+        {/* ⚖️ Licence ODbL : partout où une donnée OpenStreetMap apparaît
+            (liste ou fiche), le crédit doit être visible. */}
+        {(source === 'osm' || [...fiches, ...autres].some((f) => f.source === 'osm' || f.osmId)) && fiches.length > 0 && (
           <p style={{ color: 'rgba(253,250,243,0.55)', fontSize: 12, marginTop: 10 }}>
-            {etatGoogle === 'muet' || etatGoogle === 'sans-cle'
-              ? t('Google Maps n’a pas répondu — ces adresses viennent d’OpenStreetMap.', 'Google Maps did not respond — these come from OpenStreetMap.')
-              : t('Résultats OpenStreetMap — les fiches Google Maps arrivent bientôt.', 'OpenStreetMap results — Google Maps details coming soon.')}
+            {source === 'osm' && (etatGoogle === 'muet' || etatGoogle === 'sans-cle')
+              ? t('Google Maps n’a pas répondu — ces adresses viennent d’OpenStreetMap. ', 'Google Maps did not respond — these come from OpenStreetMap. ')
+              : ''}
+            {t('Données cartographiques © les contributeurs OpenStreetMap.', 'Map data © OpenStreetMap contributors.')}
           </p>
         )}
     </Cadre>
