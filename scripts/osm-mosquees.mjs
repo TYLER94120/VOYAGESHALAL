@@ -29,18 +29,33 @@ const MIROIRS = [
  *  réelles du site, puis les pays d'où viennent les visiteurs. */
 export const PAYS_PRIORITAIRES = ['FR', 'TR', 'MA', 'AE', 'MY', 'SA', 'AL', 'EG', 'ID', 'TN', 'GB', 'BE', 'DE', 'CA']
 
+const pause = (ms) => new Promise((res) => setTimeout(res, ms))
+
 async function overpass(cc) {
   const data = `[out:json][timeout:180];
 area["ISO3166-1"="${cc}"][admin_level=2]->.z;
 nwr["amenity"="place_of_worship"]["religion"="muslim"](area.z);
 out center tags;`
+  // Les miroirs publics refusent par À-COUPS (429/500 sous charge) : le
+  // premier chargement est tombé en 39 s parce qu'on n'insistait pas.
+  // Trois passes sur les miroirs, pause croissante entre les passes.
   let derniere = null
-  for (const url of MIROIRS) {
-    try {
-      const r = await fetch(url, { method: 'POST', body: new URLSearchParams({ data }) })
-      if (!r.ok) { derniere = new Error(`${url} → ${r.status}`); continue }
-      return await r.json()
-    } catch (e) { derniere = e }
+  for (let passe = 0; passe < 3; passe++) {
+    if (passe) { console.log(`  ${cc} : passe ${passe + 1}, pause ${30 * passe}s…`); await pause(30000 * passe) }
+    for (const url of MIROIRS) {
+      try {
+        // MÊME appel que scripts/bake-mosques.mjs (qui a fait ses preuves) :
+        // corps encodé à la main + Content-Type SANS charset + User-Agent
+        // identifiable — overpass-api.de rend 406 sinon (politique d'usage).
+        const r = await fetch(url, {
+          method: 'POST',
+          body: 'data=' + encodeURIComponent(data),
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'VoyagesHalal/1.0 (https://www.voyageshalal.fr; contact@voyageshalal.fr)' },
+        })
+        if (!r.ok) { derniere = new Error(`${url} → ${r.status}`); console.log(`  ${cc} : ${url} → ${r.status}`); continue }
+        return await r.json()
+      } catch (e) { derniere = e }
+    }
   }
   throw derniere ?? new Error('aucun miroir Overpass ne répond')
 }
@@ -117,11 +132,20 @@ function compteurs() {
 const args = process.argv.slice(2)
 if (!args.length) { console.error('usage : node scripts/osm-mosquees.mjs FR [TR MA…] | --compteurs'); process.exit(1) }
 if (args[0] === '--compteurs') { compteurs() } else {
+  // Un pays qui échoue n'emporte pas les autres : on le note, on continue,
+  // et on ne sort en erreur que si RIEN n'a pu être chargé.
+  const rates = []
+  let reussis = 0
   for (const cc of args) {
     if (!/^[A-Z]{2}$/.test(cc)) { console.error(`code pays invalide : ${cc}`); process.exit(1) }
-    await unPays(cc)
+    try { await unPays(cc); reussis++ } catch (e) {
+      console.error(`✗ ${cc} : ${e instanceof Error ? e.message : e}`)
+      rates.push(cc)
+    }
     // Politesse Overpass : une pause entre deux pays.
-    if (args.length > 1) await new Promise((res) => setTimeout(res, 10000))
+    if (args.length > 1) await pause(10000)
   }
   compteurs()
+  if (rates.length) console.error(`pays non chargés (à relancer) : ${rates.join(' ')}`)
+  if (!reussis) process.exit(1)
 }

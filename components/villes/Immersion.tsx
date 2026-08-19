@@ -36,10 +36,13 @@ const ETIQUETTES_DEFAUT: Record<string, string> = {
   monument: 'LIEU EMBLÉMATIQUE', experience: 'EXPÉRIENCE', joker: 'À NE PAS RATER', hotel: 'SANS ALCOOL', table: 'TABLE HALAL',
 }
 
-export default function Immersion({ slug, nom, score, ton, niveau, pool, en = false }: {
+export default function Immersion({ slug, nom, score, ton, niveau, pool, onOuvrir, en = false }: {
   slug: string; nom: string
   score: number | null; ton: string | null; niveau: string | null
   pool: Pool
+  /** Ouvre une section de la couche pratique PAR-DESSUS le flux
+   *  ('hotels' | 'adresses' | 'planning' | 'savoir'). */
+  onOuvrir: (section: string) => void
   en?: boolean
 }) {
   const t = (fr: string, an: string) => (en ? an : fr)
@@ -160,10 +163,13 @@ export default function Immersion({ slug, nom, score, ton, niveau, pool, en = fa
       </div>
 
       <div className="imm-flux" ref={fluxRef}>
-        {/* ===== 1. LE VERDICT (fixe) ===== */}
-        <section className="imm-panneau">
+        {/* ===== 1. LE VERDICT (fixe) — jamais animé : le premier écran
+            doit être net à 100 % dès la première image (retour du 19 août,
+            « la première page s'affiche mal »). ===== */}
+        <section className="imm-panneau imm-stable">
           <div className="imm-fond" style={{ background: 'linear-gradient(180deg,#0E2A3F,#123227 50%,#060E08)' }} />
-          <div className="imm-contenu">
+          {/* de l'air au-dessus de l'indice « Swipe » : il chevauchait le 3e fait */}
+          <div className="imm-contenu" style={{ paddingBottom: 'calc(148px + env(safe-area-inset-bottom))' }}>
             <span className="imm-etiquette imm-et-type">{t('GUIDE HALAL', 'HALAL GUIDE')}</span>
             <h1 className="imm-h1">{nom}</h1>
             {score != null && (
@@ -220,7 +226,7 @@ export default function Immersion({ slug, nom, score, ton, niveau, pool, en = fa
             <div className="imm-compteur">♡ {gardes.length} {t(`lieu${gardes.length > 1 ? 'x' : ''} gardé${gardes.length > 1 ? 's' : ''}`, `place${gardes.length > 1 ? 's' : ''} saved`)}</div>
             <div className="imm-chips">{gardes.map((g) => <span key={g.id} className="imm-chip">{g.nom}</span>)}</div>
             <div className="imm-actions" style={{ flexDirection: 'column' }}>
-              <a className="imm-b-or" style={{ flex: 'none', width: '100%' }} href="#planning">✦ {t('Construire mes journées', 'Build my days')}</a>
+              <button className="imm-b-or" style={{ flex: 'none', width: '100%' }} onClick={() => onOuvrir('planning')}>✦ {t('Construire mes journées', 'Build my days')}</button>
               <button className="imm-b-verre" style={{ width: '100%', fontSize: 15, fontWeight: 600 }} onClick={() => nouveauTirage(pool)}>↺ {t('Me montrer d’autres pépites', 'Show me other gems')}</button>
             </div>
             {avecOsm && <p style={{ fontSize: 11.5, color: 'rgba(253,250,243,.35)', marginTop: 18 }}>{t('Données cartographiques © les contributeurs OpenStreetMap', 'Map data © OpenStreetMap contributors')}</p>}
@@ -234,10 +240,10 @@ export default function Immersion({ slug, nom, score, ton, niveau, pool, en = fa
           <div className="imm-feuille" onClick={(e) => e.stopPropagation()}>
             <div className="imm-poignee" />
             <h3>{nom} {t('pratique', 'essentials')}</h3>
-            <a className="imm-f-item" href="#hotels" onClick={() => setFeuille(false)}><span>{t('Tous les hôtels', 'All hotels')}<small>{t('choisir par priorité', 'choose by priority')}</small></span></a>
-            <a className="imm-f-item" href="#adresses" onClick={() => setFeuille(false)}><span>{t('Toutes les tables halal', 'All halal tables')}<small>{t('l’annuaire complet', 'the full directory')}</small></span></a>
+            <button className="imm-f-item" onClick={() => { setFeuille(false); onOuvrir('hotels') }}><span>{t('Tous les hôtels', 'All hotels')}<small>{t('choisir par priorité', 'choose by priority')}</small></span></button>
+            <button className="imm-f-item" onClick={() => { setFeuille(false); onOuvrir('adresses') }}><span>{t('Toutes les tables halal', 'All halal tables')}<small>{t('l’annuaire complet', 'the full directory')}</small></span></button>
             <a className="imm-f-item" href={`/priere/${slug}`}><span>{t('Mosquées & horaires de prière', 'Mosques & prayer times')}<small>{t(`calculés pour ${nom}`, `computed for ${nom}`)}</small></span></a>
-            <a className="imm-f-item" href="#savoir" onClick={() => setFeuille(false)}><span>{t('À savoir avant de partir', 'Before you land')}<small>{t('monnaie · transport · mots utiles', 'currency · transit · useful words')}</small></span></a>
+            <button className="imm-f-item" onClick={() => { setFeuille(false); onOuvrir('savoir') }}><span>{t('À savoir avant de partir', 'Before you land')}<small>{t('monnaie · transport · mots utiles', 'currency · transit · useful words')}</small></span></button>
           </div>
         </div>
       )}

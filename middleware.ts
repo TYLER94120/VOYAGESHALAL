@@ -42,6 +42,14 @@ export function middleware(req: NextRequest) {
   }
 
   if (isEN) {
+    // 🌍 GOHALALTRAVEL, PHASE 1 (validée le 20 août) : l'accueil du domaine
+    // anglais EST le World feed — on swipe les villes. L'URL publique reste
+    // « / » (réécriture interne), voyageshalal.fr garde son accueil.
+    if (pathname === '/') {
+      const url = req.nextUrl.clone()
+      url.pathname = '/world'
+      return decorate(NextResponse.rewrite(url))
+    }
     // 1) Ancienne URL FR sur le domaine EN → 301 vers le slug EN (SEO propre)
     if (FR_TO_EN_SLUG[pathname]) {
       const url = req.nextUrl.clone()
@@ -67,6 +75,15 @@ export function middleware(req: NextRequest) {
       url.pathname = EN_TO_FR_SLUG[pathname]
       return decorate(NextResponse.rewrite(url))
     }
+  }
+
+  // /world n'existe que comme accueil du domaine anglais : sur le domaine
+  // FR (ou tapé à la main sur l'EN), on renvoie à l'accueil — pas de
+  // contenu en double.
+  if (pathname === '/world') {
+    const url = req.nextUrl.clone()
+    url.pathname = '/'
+    return decorate(NextResponse.redirect(url, 301))
   }
 
   return decorate(NextResponse.next())

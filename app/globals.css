@@ -1653,7 +1653,10 @@ body:has(.autour-plein[data-vue="carte"]) .bottom-nav { display: none !important
    maquette-immersion.html, préfixe imm- contre les collisions. ═══ */
 /* 86px = la barre prière du site, au-dessus du flux dans la page : sans
    cette soustraction, le bas de chaque panneau sortait de l'écran. */
-.imm-flux { height: calc(100svh - 86px - env(safe-area-inset-top, 0px)); overflow-y: auto; scroll-snap-type: y mandatory; background: #060E08; }
+/* color: crème posée ICI (la maquette la posait sur body) — sans elle,
+   faits et niveau héritaient de la couleur SOMBRE du body du site :
+   texte sombre sur fond sombre, l'effet « délavé » vu le 19 août. */
+.imm-flux { height: calc(100svh - 86px - env(safe-area-inset-top, 0px)); overflow-y: auto; scroll-snap-type: y mandatory; background: #060E08; color: #FDFAF3; font-size: 16px; line-height: 1.5; }
 .imm-panneau { height: calc(100svh - 86px - env(safe-area-inset-top, 0px)); scroll-snap-align: start; position: relative; display: flex; flex-direction: column; justify-content: flex-end; overflow: hidden; content-visibility: auto; contain-intrinsic-size: calc(100svh - 86px); }
 .imm-panneau .imm-fond { position: absolute; inset: 0; }
 .imm-photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; }
@@ -1714,3 +1717,18 @@ body:has(.autour-plein[data-vue="carte"]) .bottom-nav { display: none !important
 .imm-js .imm-panneau.imm-vu .imm-contenu > *:nth-child(4) { transition-delay: .18s }
 .imm-js .imm-panneau.imm-vu .imm-contenu > *:nth-child(5) { transition-delay: .24s }
 .imm-credit { position: absolute; top: 26px; left: 14px; z-index: 5; font-size: 10.5px; letter-spacing: .12em; color: rgba(253,250,243,.4); text-transform: uppercase; }
+
+/* Le panneau Verdict n'entre pas dans la cascade : net dès la 1re image. */
+.imm-js .imm-panneau.imm-stable .imm-contenu > * { opacity: 1 !important; transform: none !important; transition: none !important; }
+
+/* La couche pratique PAR-DESSUS le flux (les listes ne vivent plus sous
+   la page — supprimées le 19 août) : plein écran, défilable, fermable. */
+.imm-couche { position: fixed; inset: 0; z-index: 85; background: #060E08; overflow-y: auto; padding-top: 54px; }
+.imm-couche-fermer { position: fixed; top: calc(92px + env(safe-area-inset-top, 0px)); right: 14px; z-index: 90; min-height: 44px; padding: 0 16px; border-radius: 999px; background: rgba(6,14,8,.8); border: 1px solid rgba(201,168,76,.4); color: #E9D9A6; font-size: 13.5px; font-weight: 600; display: flex; align-items: center; gap: 7px; backdrop-filter: blur(10px); cursor: pointer; }
+
+/* ═══ World feed (GoHalalTravel phase 1) : le sélecteur de flux de la
+   maquette moteur universel. Seul « World » existe en phase 1. ═══ */
+.imm-selecteur { position: fixed; top: calc(92px + env(safe-area-inset-top, 0px)); left: 50%; transform: translateX(-50%); z-index: 60; display: flex; gap: 5px; background: rgba(6,14,8,.78); backdrop-filter: blur(14px); padding: 5px; border-radius: 999px; border: 1px solid rgba(201,168,76,.14); max-width: 96%; overflow-x: auto; scrollbar-width: none; }
+.imm-selecteur::-webkit-scrollbar { display: none; }
+.imm-sel { flex: 0 0 auto; min-height: 46px; padding: 0 15px; border-radius: 999px; display: flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 600; color: rgba(253,250,243,.7); }
+.imm-sel.on { background: linear-gradient(135deg, #D9BE6C, #C9A84C); color: #0A1509; }
