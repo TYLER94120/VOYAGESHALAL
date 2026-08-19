@@ -3,7 +3,7 @@
 // La règle architecturale de Mohamed (16 août) : « une seule source de
 // vérité, aucun chemin parallèle ». Le test scripts/test-un-seul-chemin
 // vérifie que la chaîne '/api/lieux' n'existe QUE dans ce fichier :
-// SurMesure (la recherche) et SectionMagazine (le guide ville) passent
+// SurMesure (la recherche) passe
 // tous les deux par cette porte — même corps, même moteur, mêmes règles.
 export interface CorpsLieux {
   lat: number
