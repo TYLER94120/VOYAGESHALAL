@@ -44,7 +44,14 @@ out center tags;`
     if (passe) { console.log(`  ${cc} : passe ${passe + 1}, pause ${30 * passe}s…`); await pause(30000 * passe) }
     for (const url of MIROIRS) {
       try {
-        const r = await fetch(url, { method: 'POST', body: new URLSearchParams({ data }) })
+        // MÊME appel que scripts/bake-mosques.mjs (qui a fait ses preuves) :
+        // corps encodé à la main + Content-Type SANS charset + User-Agent
+        // identifiable — overpass-api.de rend 406 sinon (politique d'usage).
+        const r = await fetch(url, {
+          method: 'POST',
+          body: 'data=' + encodeURIComponent(data),
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'VoyagesHalal/1.0 (https://www.voyageshalal.fr; contact@voyageshalal.fr)' },
+        })
         if (!r.ok) { derniere = new Error(`${url} → ${r.status}`); console.log(`  ${cc} : ${url} → ${r.status}`); continue }
         return await r.json()
       } catch (e) { derniere = e }
