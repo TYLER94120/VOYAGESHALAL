@@ -62,10 +62,12 @@ try {
   casse('impossible de lire data/villes/tirana.json : ' + e.message)
 }
 
-// ── 6. La page ne doit plus afficher un chiffre non décomposé ──────────
-const page = readFileSync(new URL('../components/villes/VilleDesktop.tsx', import.meta.url), 'utf-8')
+// ── 6. La page ville (PageVille depuis l'itération 7) : le score porte
+//       ses 3 faits sur compteurs réels, jamais un badge nu ─────────────
+const page = readFileSync(new URL('../components/villes/PageVille.tsx', import.meta.url), 'utf-8')
 if (/HalalScoreBadge/.test(page)) casse('le badge de score non décomposé est revenu sur la page destination')
-if (!/VerdictArrivee/.test(page)) casse('le verdict d\'arrivée a disparu de la page destination')
+if (!/pv-verdict/.test(page)) casse('le Verdict a disparu de la page destination')
+if (!/pv-v-faits/.test(page)) casse('les 3 faits du verdict (compteurs réels) ont disparu de la page destination')
 
 if (fautes) { console.error(`\n${fautes} faute(s) — build arrêté.`); process.exit(1) }
 console.log('✅ verdict ville : le vide reste vide, le score se décompose, personne n\'est jugé.')
