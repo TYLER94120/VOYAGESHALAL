@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>VoyagesHalal — Page ville refondée (Tokyo)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --nuit:#0B1A0F; --nuit-profond:#060E08; --foret:#1B4332;
+  --or:#C9A84C; --or-clair:#E9D9A6; --creme:#FDFAF3;
+  --vert-halal:#1F7A4A; --vert-ok:#6FD79C; --orange-attention:#E8B45A;
+  --fil:rgba(201,168,76,.26); --fil-fin:rgba(201,168,76,.14); --verre:rgba(253,250,243,.035);
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+html,body{margin:0;padding:0;background:var(--nuit-profond);}
+body{color:var(--creme);font-family:"DM Sans",system-ui,sans-serif;font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased;}
+h1,h2,h3{font-family:"Playfair Display",serif;margin:0;font-weight:700;}
+button{font-family:inherit;font-size:16px;border:none;background:none;color:inherit;cursor:pointer;}
+.phone{max-width:430px;margin:0 auto;min-height:100svh;background:var(--nuit-profond);padding-bottom:60px;}
+.monte{opacity:0;transform:translateY(8px);animation:monte .22s ease-out forwards;}
+@keyframes monte{to{opacity:1;transform:none}}
+.sur-titre{font-size:12px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(201,168,76,.85);}
+.demo{position:fixed;top:0;left:50%;transform:translateX(-50%);z-index:70;background:var(--or);color:#0A1509;font-size:11px;font-weight:700;padding:3px 14px;border-radius:0 0 10px 10px;letter-spacing:.14em;}
+
+/* ===== 1. LE VERDICT ===== */
+.verdict{
+  padding:54px 22px 24px;
+  background:linear-gradient(180deg,rgba(27,67,50,.55),rgba(6,14,8,0)),
+             linear-gradient(155deg,#2C4F6B,#101F2C);
+}
+.verdict .sur-titre{display:block;}
+.verdict h1{font-size:40px;color:#fff;margin-top:2px;}
+.v-ligne1{display:flex;align-items:center;gap:12px;margin-top:10px;}
+.score-grand{
+  font-family:"Playfair Display",serif;font-size:30px;font-weight:700;
+  padding:4px 18px;border-radius:999px;background:var(--orange-attention);color:#160E03;
+}
+.v-niveau{font-size:15px;color:rgba(253,250,243,.8);font-weight:600;}
+.v-faits{margin-top:18px;display:flex;flex-direction:column;gap:10px;}
+.fait{
+  display:flex;align-items:center;gap:12px;min-height:54px;padding:8px 14px;border-radius:14px;
+  background:rgba(6,14,8,.45);border:1px solid var(--fil-fin);backdrop-filter:blur(6px);
+}
+.fait .pt{flex:none;width:11px;height:11px;border-radius:50%;}
+.pt.vert{background:var(--vert-ok);box-shadow:0 0 8px var(--vert-ok);}
+.pt.orange{background:var(--orange-attention);box-shadow:0 0 8px var(--orange-attention);}
+.fait b{font-weight:700;}
+.fait span{font-size:15px;color:rgba(253,250,243,.85);}
+
+/* ===== sommaire ===== */
+.sommaire{
+  position:sticky;top:0;z-index:20;display:flex;gap:8px;overflow-x:auto;padding:12px 16px;
+  background:rgba(6,14,8,.95);backdrop-filter:blur(14px);border-bottom:1px solid var(--fil-fin);scrollbar-width:none;
+}
+.sommaire::-webkit-scrollbar{display:none;}
+.som{flex:0 0 auto;min-height:48px;padding:0 16px;border-radius:999px;display:flex;align-items:center;gap:6px;
+  font-size:14.5px;font-weight:600;color:rgba(253,250,243,.72);background:var(--verre);border:1px solid var(--fil-fin);text-decoration:none;}
+
+.sec{padding:26px 20px 0;}
+.sec-titre{display:flex;align-items:baseline;justify-content:space-between;}
+.sec-titre h2{font-size:24px;}
+.sec-titre a{font-size:14px;color:var(--or-clair);text-decoration:none;font-weight:600;min-height:44px;display:flex;align-items:center;}
+.sec-sous{font-size:14.5px;color:rgba(253,250,243,.6);margin:4px 0 14px;}
+.sec-sous b{color:var(--or-clair);font-weight:600;}
+
+/* ===== cartes compactes ===== */
+.ligne{
+  display:flex;align-items:center;gap:12px;min-height:74px;padding:10px 14px;border-radius:16px;margin-bottom:10px;
+  background:linear-gradient(165deg,rgba(253,250,243,.05),rgba(253,250,243,.012));border:1px solid var(--fil-fin);
+  text-align:left;width:100%;
+}
+.ligne.premier{border-color:var(--or);}
+.ligne .vign{flex:none;width:54px;height:54px;border-radius:13px;background:linear-gradient(155deg,#2F6349,#0F241A);
+  display:flex;align-items:center;justify-content:center;font-size:22px;}
+.l-txt{flex:1;min-width:0;}
+.l-nom{font-size:16.5px;font-weight:700;display:block;}
+.l-sous{font-size:13.5px;color:rgba(253,250,243,.62);display:block;margin-top:2px;}
+.l-sous b{color:var(--or-clair);font-weight:600;}
+.l-prix{flex:none;font-family:"Playfair Display",serif;font-size:17px;color:var(--or-clair);font-weight:700;}
+
+/* ===== PLANNING RÉPARÉ ===== */
+.jours{display:flex;gap:8px;margin-bottom:14px;}
+.jour{flex:1;min-height:50px;border-radius:14px;font-size:15px;font-weight:600;color:rgba(253,250,243,.7);
+  background:var(--verre);border:1px solid var(--fil-fin);}
+.jour.on{border-color:var(--or);color:var(--or-clair);background:rgba(201,168,76,.1);}
+.tl{position:relative;padding-left:64px;}
+.tl-item{position:relative;margin-bottom:10px;}
+.tl-h{position:absolute;left:-64px;top:14px;width:52px;text-align:right;font-size:14px;font-weight:600;color:rgba(253,250,243,.6);font-variant-numeric:tabular-nums;}
+.tl-h.or{color:var(--or);}
+.tl-card{
+  border-radius:14px;padding:12px 14px;background:linear-gradient(165deg,rgba(253,250,243,.05),rgba(253,250,243,.012));
+  border:1px solid var(--fil-fin);
+}
+.tl-card.priere{border-color:var(--fil);background:linear-gradient(150deg,rgba(27,67,50,.5),rgba(11,26,15,.3));}
+.tl-nom{font-size:16px;font-weight:700;}
+.tl-nom small{font-size:13px;color:rgba(253,250,243,.5);font-weight:400;}
+.tl-sous{font-size:13.5px;color:rgba(253,250,243,.6);margin-top:2px;}
+.tl-lien{font-size:13px;color:rgba(253,250,243,.4);text-align:center;margin:2px 0 8px;}
+.reorg{
+  display:flex;align-items:center;justify-content:center;gap:8px;min-height:54px;width:100%;border-radius:999px;
+  margin-top:6px;background:linear-gradient(135deg,#D9BE6C,var(--or));color:#0A1509;font-size:16px;font-weight:700;
+}
+.reorg-note{font-size:13px;color:rgba(253,250,243,.5);text-align:center;margin-top:8px;}
+
+/* ===== À SAVOIR ===== */
+.savoir{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.sav{min-height:88px;border-radius:16px;padding:12px 14px;background:var(--verre);border:1px solid var(--fil-fin);}
+.sav .t{font-size:13px;color:rgba(201,168,76,.85);font-weight:600;letter-spacing:.08em;text-transform:uppercase;}
+.sav .v{font-size:15.5px;font-weight:600;margin-top:4px;line-height:1.35;}
+.credit{font-size:12.5px;color:rgba(253,250,243,.35);text-align:center;padding:26px 20px 0;}
+</style>
+</head>
+<body>
+<div class="demo">PAGE VILLE · REFONTE</div>
+<div class="phone">
+
+<!-- ===== 1. LE VERDICT — 10 secondes pour savoir ===== -->
+<div class="verdict">
+  <span class="sur-titre">Guide halal</span>
+  <h1>Tokyo</h1>
+  <div class="v-ligne1">
+    <span class="score-grand">✦ 7,2</span>
+    <span class="v-niveau">Acceptable — voyage possible,<br>un peu de préparation</span>
+  </div>
+  <div class="v-faits">
+    <div class="fait monte"><span class="pt orange"></span><span><b>Manger halal :</b> assez facile — 240 restos, concentrés par quartiers</span></div>
+    <div class="fait monte" style="animation-delay:.05s"><span class="pt vert"></span><span><b>Prier :</b> 15 mosquées + salles dans les grands magasins</span></div>
+    <div class="fait monte" style="animation-delay:.1s"><span class="pt orange"></span><span><b>Alcool :</b> présent dans les izakayas — quartiers calmes possibles</span></div>
+  </div>
+</div>
+
+<!-- ===== sommaire ===== -->
+<nav class="sommaire">
+  <a class="som" href="#dormir">🏨 Dormir</a>
+  <a class="som" href="#manger">🍽 Manger</a>
+  <a class="som" href="#planning">🗓 Mes journées</a>
+  <a class="som" href="#savoir">💡 À savoir</a>
+</nav>
+
+<!-- ===== 2. DORMIR ===== -->
+<section class="sec" id="dormir">
+  <div class="sec-titre"><h2>Où dormir</h2><a href="#">Les 38 hôtels →</a></div>
+  <p class="sec-sous">Le bon quartier : <b>Asakusa</b> — mosquée à pied, restos halal, calme le soir.</p>
+  <button class="ligne premier">
+    <span class="vign">🏨</span>
+    <span class="l-txt">
+      <span class="l-nom">Asakusa Tobu Hotel</span>
+      <span class="l-sous"><b>🕌 Mosquée à 400 m</b> · petit-déj halal · ★ 4,5</span>
+    </span>
+    <span class="l-prix">96 €<br><small style="font-size:11px;color:rgba(253,250,243,.5)">/nuit</small></span>
+  </button>
+  <button class="ligne">
+    <span class="vign">🏨</span>
+    <span class="l-txt">
+      <span class="l-nom">Richmond Asakusa</span>
+      <span class="l-sous"><b>💰 Meilleur budget</b> · ★ 4,4 · sans bar</span>
+    </span>
+    <span class="l-prix">64 €</span>
+  </button>
+</section>
+
+<!-- ===== 3. MANGER ===== -->
+<section class="sec" id="manger">
+  <div class="sec-titre"><h2>Manger halal</h2><a href="#">Les 240 adresses →</a></div>
+  <p class="sec-sous">Vise <b>Asakusa, Shinjuku et Ueno</b> — ailleurs, prévois ton adresse à l'avance.</p>
+  <button class="ligne premier">
+    <span class="vign">🍜</span>
+    <span class="l-txt">
+      <span class="l-nom">Narita-ya <small style="color:rgba(253,250,243,.45)">(成田屋)</small></span>
+      <span class="l-sous"><b>Ramen</b> · ✓ halal certifié · ★ 4,6 · Asakusa</span>
+    </span>
+  </button>
+  <button class="ligne">
+    <span class="vign">🍣</span>
+    <span class="l-txt">
+      <span class="l-nom">Sushi Ken</span>
+      <span class="l-sous"><b>Sushi</b> · ✓ halal certifié · ★ 4,7 · Asakusa</span>
+    </span>
+  </button>
+</section>
+
+<!-- ===== 4. MES JOURNÉES — le planning RÉPARÉ ===== -->
+<section class="sec" id="planning">
+  <div class="sec-titre"><h2>Mes journées</h2></div>
+  <p class="sec-sous">Construites autour des <b>5 prières</b> — horaires réels de Tokyo. Tout est en français.</p>
+  <div class="jours">
+    <button class="jour on">Jour 1</button>
+    <button class="jour">Jour 2</button>
+    <button class="jour">Jour 3</button>
+  </div>
+
+  <div class="tl">
+    <div class="tl-item"><span class="tl-h">09:30</span>
+      <div class="tl-card"><div class="tl-nom">Temple Sensō-ji <small>(浅草寺)</small></div>
+      <div class="tl-sous">À voir · gratuit · ≈ 1 h 30 · mieux tôt le matin</div></div>
+    </div>
+    <div class="tl-lien">🚶 12 min</div>
+    <div class="tl-item"><span class="tl-h or">11:44</span>
+      <div class="tl-card priere"><div class="tl-nom">Dhuhr — Mosquée Darul Arqam</div>
+      <div class="tl-sous">Asakusa · espace femmes</div></div>
+    </div>
+    <div class="tl-lien">🚶 6 min</div>
+    <div class="tl-item"><span class="tl-h">13:00</span>
+      <div class="tl-card"><div class="tl-nom">Narita-ya — déjeuner</div>
+      <div class="tl-sous">Ramen halal certifié · ★ 4,6 · €€</div></div>
+    </div>
+    <div class="tl-lien">🚇 18 min</div>
+    <div class="tl-item"><span class="tl-h">15:00</span>
+      <div class="tl-card"><div class="tl-nom">Musée national de Tokyo</div>
+      <div class="tl-sous">Histoire · 8 € · ≈ 2 h</div></div>
+    </div>
+    <div class="tl-item"><span class="tl-h or">15:12</span>
+      <div class="tl-card priere"><div class="tl-nom">ʿAsr — salle de prière du musée</div>
+      <div class="tl-sous">Niveau -1, près des vestiaires</div></div>
+    </div>
+    <div class="tl-item"><span class="tl-h or">18:39</span>
+      <div class="tl-card priere"><div class="tl-nom">Maghrib — Mosquée Camii de Tokyo</div>
+      <div class="tl-sous">La plus grande du Japon · à voir aussi !</div></div>
+    </div>
+    <div class="tl-lien">🚶 9 min</div>
+    <div class="tl-item"><span class="tl-h">19:45</span>
+      <div class="tl-card"><div class="tl-nom">Dîner à Shinjuku</div>
+      <div class="tl-sous">3 options halal notées ≥ 4,5 à moins de 10 min</div></div>
+    </div>
+  </div>
+
+  <button class="reorg">✨ Réorganiser mes journées</button>
+  <p class="reorg-note">Les 5 prières restent fixes — la réorganisation ne les déplace jamais.</p>
+</section>
+
+<!-- ===== 5. À SAVOIR ===== -->
+<section class="sec" id="savoir">
+  <div class="sec-titre"><h2>À savoir avant de partir</h2></div>
+  <div class="savoir">
+    <div class="sav"><div class="t">💴 Monnaie</div><div class="v">Yen · carte OK partout · 1 € ≈ 165 ¥</div></div>
+    <div class="sav"><div class="t">🚇 Transport</div><div class="v">Métro roi · carte Suica dès l'aéroport</div></div>
+    <div class="sav"><div class="t">🥩 Halal</div><div class="v">Cherche le logo halal · attention au mirin (alcool) dans les sauces</div></div>
+    <div class="sav"><div class="t">🗣 Mots utiles</div><div class="v">« Halal desu ka ? » = c'est halal ? · « Butaniku nashi » = sans porc</div></div>
+  </div>
+</section>
+
+<div class="credit">Sources : base VoyagesHalal · Google · OpenStreetMap</div>
+</div>
+</body>
+</html>

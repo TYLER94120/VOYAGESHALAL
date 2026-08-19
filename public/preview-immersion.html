@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Istanbul — Immersion (maquette complète)</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--nuit:#060E08;--or:#C9A84C;--or-clair:#E9D9A6;--creme:#FDFAF3;--vert:#1F7A4A;--fil:rgba(201,168,76,.25);--fil-fin:rgba(201,168,76,.14);}
+*{box-sizing:border-box;margin:0;-webkit-tap-highlight-color:transparent;}
+html,body{background:var(--nuit);color:var(--creme);font-family:"DM Sans",sans-serif;}
+button{font-family:inherit;border:none;background:none;color:inherit;cursor:pointer;font-size:16px;}
+.demo{position:fixed;top:0;left:14px;z-index:70;background:var(--or);color:#0A1509;font-size:10px;font-weight:700;padding:2px 10px;border-radius:0 0 8px 8px;letter-spacing:.14em;}
+.flux{height:100svh;overflow-y:auto;scroll-snap-type:y mandatory;max-width:430px;margin:0 auto;}
+.panneau{height:100svh;scroll-snap-align:start;position:relative;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;}
+.scene{position:absolute;inset:0;}
+.scene svg{width:100%;height:100%;display:block;}
+.panneau::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(6,14,8,.96) 6%,rgba(6,14,8,.1) 48%,rgba(6,14,8,.35) 100%);}
+.contenu{position:relative;z-index:2;padding:0 24px calc(36px + env(safe-area-inset-bottom));}
+.etiquette{display:inline-flex;gap:8px;align-items:center;padding:8px 16px;border-radius:999px;font-size:12.5px;font-weight:700;letter-spacing:.12em;margin-bottom:14px;}
+.et-halal{background:var(--vert);color:#fff;}
+.et-type{background:rgba(6,14,8,.6);border:1px solid rgba(201,168,76,.4);color:var(--or-clair);backdrop-filter:blur(8px);}
+h1{font-family:"Playfair Display",serif;font-size:46px;line-height:1.02;color:#fff;}
+h2{font-family:"Playfair Display",serif;font-size:34px;line-height:1.08;color:#fff;}
+.ia{font-family:"Playfair Display",serif;font-style:italic;font-size:19px;color:var(--or-clair);margin-top:10px;line-height:1.35;}
+.meta{font-size:15.5px;color:rgba(253,250,243,.85);margin-top:8px;}
+.actions{display:flex;gap:12px;margin-top:20px;}
+.b-or{flex:1;min-height:58px;border-radius:16px;background:linear-gradient(135deg,#D9BE6C,var(--or));color:#0A1509;font-size:17px;font-weight:700;display:flex;align-items:center;justify-content:center;gap:8px;}
+.b-verre{flex:none;min-width:58px;min-height:58px;border-radius:16px;background:rgba(6,14,8,.5);border:1px solid rgba(201,168,76,.4);color:var(--or-clair);backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:center;font-size:22px;}
+.indice{position:absolute;bottom:8px;left:50%;transform:translateX(-50%);z-index:3;font-size:11.5px;letter-spacing:.2em;color:rgba(253,250,243,.55);text-transform:uppercase;display:flex;flex-direction:column;align-items:center;}
+.indice svg{animation:fl 2.2s ease-in-out infinite;}
+@keyframes fl{0%,100%{transform:translateY(0);opacity:.5}50%{transform:translateY(4px);opacity:1}}
+.v-faits{margin-top:16px;display:flex;flex-direction:column;gap:8px;}
+.fait{display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:13px;background:rgba(6,14,8,.55);border:1px solid rgba(201,168,76,.18);backdrop-filter:blur(8px);font-size:15px;}
+.pt{flex:none;width:9px;height:9px;border-radius:50%;background:#6FD79C;box-shadow:0 0 8px #6FD79C;}
+.pt.o{background:#E8B45A;box-shadow:0 0 8px #E8B45A;}
+.score{display:inline-flex;align-items:center;gap:10px;margin-top:12px;}
+.score b{font-family:"Playfair Display",serif;font-size:26px;padding:2px 16px;border-radius:999px;background:var(--vert);color:#fff;}
+.note-photo{position:absolute;top:26px;left:14px;z-index:3;font-size:10.5px;letter-spacing:.12em;color:rgba(253,250,243,.4);text-transform:uppercase;}
+/* bouton pratique discret */
+.pratique{position:fixed;top:14px;right:14px;z-index:60;min-height:44px;padding:0 16px;border-radius:999px;
+  background:rgba(6,14,8,.65);border:1px solid var(--fil);color:var(--or-clair);font-size:13.5px;font-weight:600;
+  display:flex;align-items:center;gap:7px;backdrop-filter:blur(10px);}
+/* feuille pratique */
+.voile{position:fixed;inset:0;z-index:80;background:rgba(4,9,5,.65);backdrop-filter:blur(4px);display:none;align-items:flex-end;justify-content:center;}
+.voile.on{display:flex;}
+.feuille{width:100%;max-width:430px;border-radius:24px 24px 0 0;background:#0B1810;border-top:1px solid var(--fil);
+  padding:10px 20px calc(24px + env(safe-area-inset-bottom));}
+.poignee{width:44px;height:4px;border-radius:999px;background:rgba(253,250,243,.25);margin:4px auto 14px;}
+.feuille h3{font-family:"Playfair Display",serif;font-size:22px;margin-bottom:12px;}
+.f-item{display:flex;align-items:center;gap:12px;min-height:60px;width:100%;text-align:left;font-size:16px;font-weight:600;
+  border-top:1px solid rgba(253,250,243,.06);}
+.f-item:first-of-type{border-top:none;}
+.f-item span{font-size:22px;}
+.f-item small{display:block;font-size:13px;color:rgba(253,250,243,.5);font-weight:400;}
+.toast{position:fixed;bottom:100px;left:50%;transform:translateX(-50%);z-index:90;background:var(--or);color:#0A1509;
+  font-size:14.5px;font-weight:700;padding:12px 22px;border-radius:999px;display:none;box-shadow:0 10px 30px rgba(0,0,0,.5);}
+.toast.on{display:block;}
+/* panneau final */
+.final{background:radial-gradient(120% 60% at 50% 20%,rgba(27,67,50,.8),rgba(6,14,8,1) 70%);}
+.final .contenu{padding-bottom:0;position:relative;top:-6svh;}
+.final::after{display:none;}
+.f-centre{text-align:center;}
+.f-centre .orn{font-size:34px;margin-bottom:14px;}
+.f-centre h2{font-size:36px;}
+.f-centre p{font-size:16px;color:rgba(253,250,243,.7);margin-top:10px;line-height:1.55;}
+.compteur{display:inline-flex;align-items:center;gap:8px;margin-top:16px;padding:10px 18px;border-radius:999px;
+  background:rgba(201,168,76,.12);border:1px solid var(--fil);color:var(--or-clair);font-size:15px;font-weight:600;}
+
+/* ===== fil de progression ===== */
+.fil-prog{position:fixed;right:10px;top:50%;transform:translateY(-50%);z-index:55;display:flex;flex-direction:column;gap:7px;}
+.fil-prog i{width:5px;height:5px;border-radius:999px;background:rgba(253,250,243,.28);transition:.2s;}
+.fil-prog i.on{background:var(--or);height:18px;}
+/* ===== cœur double-tap ===== */
+.burst{position:absolute;z-index:9;font-size:84px;pointer-events:none;transform:translate(-50%,-50%) scale(.4);opacity:0;
+  animation:burst .7s cubic-bezier(.2,.8,.3,1) forwards;color:#E9D9A6;text-shadow:0 6px 30px rgba(201,168,76,.6);}
+@keyframes burst{20%{opacity:1;transform:translate(-50%,-50%) scale(1.15)}100%{opacity:0;transform:translate(-50%,-70%) scale(1)}}
+/* ===== entrée du contenu au swipe (SEULEMENT si les scripts tournent) ===== */
+.contenu>*{transition:opacity .35s ease,transform .35s ease;}
+.js .panneau:not(.vu) .contenu>*{opacity:0;transform:translateY(14px);}
+.js .panneau.vu .contenu>*{opacity:1;transform:none;}
+.js .panneau.vu .contenu>*:nth-child(2){transition-delay:.06s}
+.js .panneau.vu .contenu>*:nth-child(3){transition-delay:.12s}
+.js .panneau.vu .contenu>*:nth-child(4){transition-delay:.18s}
+.js .panneau.vu .contenu>*:nth-child(5){transition-delay:.24s}
+/* ===== coups de cœur listés à la fin ===== */
+.chips-gardes{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:14px;min-height:10px;}
+.chip-g{padding:9px 16px;border-radius:999px;font-size:14px;font-weight:600;color:var(--or-clair);
+  background:rgba(201,168,76,.12);border:1px solid var(--fil);}
+/* ===== double-tap indice ===== */
+.tap-indice{font-size:12.5px;color:rgba(253,250,243,.45);margin-top:12px;}
+
+.photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;}
+.panneau::after{z-index:2;}
+.note-photo{z-index:3;}
+.contenu{z-index:4 !important;}
+.demo{left:auto;right:14px;}
+</style>
+</head>
+<body>
+<div class="demo">MAQUETTE · PRÉVISUALISATION — textes = format, photos réelles Wikimedia</div>
+<button class="pratique" onclick="document.getElementById('vp').classList.add('on')">☰ Pratique</button>
+<div class="fil-prog" id="fil"></div>
+<div class="flux" id="flux">
+<!-- ===== FIXE EN PREMIER : LE VERDICT ===== -->
+<section class="panneau" data-fixe="debut">
+  <div class="scene"><svg viewBox="0 0 430 900" preserveAspectRatio="xMidYMid slice">
+    <defs><linearGradient id="c1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0E2A3F"/><stop offset=".5" stop-color="#123227"/><stop offset="1" stop-color="#060E08"/></linearGradient>
+    <radialGradient id="l1" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#E9D9A6"/><stop offset=".6" stop-color="#C9A84C"/><stop offset="1" stop-color="#C9A84C" stop-opacity="0"/></radialGradient></defs>
+    <rect width="430" height="900" fill="url(#c1)"/>
+    <circle cx="330" cy="150" r="90" fill="url(#l1)" opacity=".35"/>
+    <path d="M330 105a48 48 0 1 0 14 92 40 40 0 1 1-14-92z" fill="#E9D9A6"/>
+    <g fill="#FDFAF3" opacity=".8"><circle cx="60" cy="90" r="1.6"/><circle cx="140" cy="60" r="1.2"/><circle cx="210" cy="130" r="1.4"/><circle cx="90" cy="200" r="1.2"/><circle cx="380" cy="70" r="1.3"/></g>
+    <g fill="#04170C"><rect x="0" y="620" width="430" height="280"/>
+    <path d="M60 620v-90l6-14 6 14v90z"/><circle cx="66" cy="510" r="5"/>
+    <path d="M355 620v-100l6-14 6 14v100z"/><circle cx="361" cy="500" r="5"/>
+    <path d="M120 620c0-60 40-88 90-88s90 28 90 88z"/><path d="M175 540c8-22 24-34 35-38 11 4 27 16 35 38z"/>
+    <path d="M203 492l7-22 7 22z"/><path d="M150 620v-64l5-11 5 11v64zM270 620v-64l5-11 5 11v64z"/></g>
+    <g stroke="#C9A84C" stroke-width="1.4" opacity=".5"><path d="M40 720h60M130 745h90M260 725h70M90 780h120M280 790h90"/></g>
+  </svg></div>
+  <span class="note-photo">Photo réelle en prod</span>
+  <div class="contenu">
+    <span class="etiquette et-type">GUIDE HALAL</span>
+    <h1>Istanbul</h1>
+    <div class="score"><b>✦ 8,7</b><span style="font-weight:600">Très bon — tout est facile</span></div>
+    <div class="v-faits">
+      <div class="fait"><span class="pt"></span>Manger halal : partout, sans chercher</div>
+      <div class="fait"><span class="pt"></span>3 500 mosquées — on prie où on veut</div>
+      <div class="fait"><span class="pt o"></span>Alcool : présent côté touristique, facile à éviter</div>
+    </div>
+  </div>
+  <div class="indice">Swipe pour découvrir · double-tap = ♡<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></div>
+</section>
+
+
+
+<section class="panneau" data-cat="monument">
+  <div class="scene" style="background:linear-gradient(180deg,#1B3A5C,#060E08)"></div>
+  <img class="photo" alt="" data-requete="Mosquée bleue" data-fichier="https://commons.wikimedia.org/wiki/Special:FilePath/Sultan%20Ahmed%20Mosque%20Istanbul%20Turkey%20retouched.jpg?width=1000">
+  <span class="note-photo" id="badge0">Photo : Wikimedia Commons</span>
+  <div class="contenu">
+    <span class="etiquette et-type">LIEU CULTE</span>
+    <h2>La Mosquée Bleue</h2>
+    <p class="ia">20 000 carreaux d'Iznik — vas-y au Fajr, tu seras presque seul</p>
+    <p class="meta">Sultanahmet · gratuit · espace femmes · ★ —, prix — <em style="opacity:.6">(format)</em></p>
+    <div class="actions"><button class="b-or">📍 Y aller</button><button class="b-verre" onclick="garder(this)">♡</button></div>
+  </div>
+</section>
+
+<section class="panneau" data-cat="monument">
+  <div class="scene" style="background:linear-gradient(180deg,#3A2A18,#060E08)"></div>
+  <img class="photo" alt="" data-requete="Sainte-Sophie" data-fichier="https://commons.wikimedia.org/wiki/Special:FilePath/Hagia%20Sophia%20Mars%202013.jpg?width=1000">
+  <span class="note-photo" id="badge1">Photo : Wikimedia Commons</span>
+  <div class="contenu">
+    <span class="etiquette et-type">INCONTOURNABLE</span>
+    <h2>Sainte-Sophie</h2>
+    <p class="ia">1 500 ans d’histoire sous une seule coupole — entre tôt, avant les groupes</p>
+    <p class="meta">Sultanahmet · redevenue mosquée · ★ —, prix — <em style="opacity:.6">(format)</em></p>
+    <div class="actions"><button class="b-or">📍 Y aller</button><button class="b-verre" onclick="garder(this)">♡</button></div>
+  </div>
+</section>
+
+<section class="panneau" data-cat="monument">
+  <div class="scene" style="background:linear-gradient(180deg,#14263B,#060E08)"></div>
+  <img class="photo" alt="" data-requete="Mosquée Süleymaniye" data-fichier="https://commons.wikimedia.org/wiki/Special:FilePath/S%C3%BCleymaniye%20Mosque%2C%20Istanbul%2C%20Turkey.jpg?width=1000">
+  <span class="note-photo" id="badge2">Photo : Wikimedia Commons</span>
+  <div class="contenu">
+    <span class="etiquette et-type">LIEU CULTE</span>
+    <h2>Mosquée de Süleymaniye</h2>
+    <p class="ia">Le chef-d’œuvre de Sinan — la terrasse regarde toute la Corne d’Or</p>
+    <p class="meta">Süleymaniye · gratuit · vue panoramique · ★ —, prix — <em style="opacity:.6">(format)</em></p>
+    <div class="actions"><button class="b-or">📍 Y aller</button><button class="b-verre" onclick="garder(this)">♡</button></div>
+  </div>
+</section>
+
+<section class="panneau" data-cat="lieu">
+  <div class="scene" style="background:linear-gradient(180deg,#33200D,#060E08)"></div>
+  <img class="photo" alt="" data-requete="Grand bazar" data-fichier="https://commons.wikimedia.org/wiki/Special:FilePath/Grand%20Bazaar%2C%20Istanbul%20(36132073072).jpg?width=1000">
+  <span class="note-photo" id="badge3">Photo : Wikimedia Commons</span>
+  <div class="contenu">
+    <span class="etiquette et-type">LE PLUS VISITÉ</span>
+    <h2>Le Grand Bazar</h2>
+    <p class="ia">4 000 boutiques sous les voûtes — négocie tout, commence à moitié prix</p>
+    <p class="meta">Beyazıt · entrée libre · fermé dimanche · ★ —, prix — <em style="opacity:.6">(format)</em></p>
+    <div class="actions"><button class="b-or">📍 Y aller</button><button class="b-verre" onclick="garder(this)">♡</button></div>
+  </div>
+</section>
+
+<section class="panneau" data-cat="lieu">
+  <div class="scene" style="background:linear-gradient(180deg,#2E1A08,#060E08)"></div>
+  <img class="photo" alt="" data-requete="Bazar égyptien" data-fichier="https://commons.wikimedia.org/wiki/Special:FilePath/Spice%20Bazaar%2C%20Istanbul%2C%20Turkey%20(37176373095).jpg?width=1000">
+  <span class="note-photo" id="badge4">Photo : Wikimedia Commons</span>
+  <div class="contenu">
+    <span class="etiquette et-type">SENS EN ÉVEIL</span>
+    <h2>Le Bazar égyptien</h2>
+    <p class="ia">Les pyramides d’épices depuis 1664 — goûte avant d’acheter, c’est la règle</p>
+    <p class="meta">Eminönü · entrée libre · ★ —, prix — <em style="opacity:.6">(format)</em></p>
+    <div class="actions"><button class="b-or">📍 Y aller</button><button class="b-verre" onclick="garder(this)">♡</button></div>
+  </div>
+</section>
+
+<section class="panneau" data-cat="monument">
+  <div class="scene" style="background:linear-gradient(180deg,#2E1F3E,#060E08)"></div>
+  <img class="photo" alt="" data-requete="Citerne Basilique" data-fichier="https://commons.wikimedia.org/wiki/Special:FilePath/Basilica%20Cistern%20after%20restoration%202022%20(2).jpg?width=1000">
+  <span class="note-photo" id="badge5">Photo : Wikimedia Commons</span>
+  <div class="contenu">
+    <span class="etiquette et-type">INCONTOURNABLE</span>
+    <h2>La Citerne Basilique</h2>
+    <p class="ia">Un palais sous la ville, 336 colonnes dans la pénombre — magique et frais</p>
+    <p class="meta">Sultanahmet · mieux le matin · ★ —, prix — <em style="opacity:.6">(format)</em></p>
+    <div class="actions"><button class="b-or">📍 Y aller</button><button class="b-verre" onclick="garder(this)">♡</button></div>
+  </div>
+</section>
+
+<section class="panneau" data-cat="monument">
+  <div class="scene" style="background:linear-gradient(180deg,#1E2B1A,#060E08)"></div>
+  <img class="photo" alt="" data-requete="Palais de Topkapı" data-fichier="https://commons.wikimedia.org/wiki/Special:FilePath/Topkapi%20Palace%20Istanbul%202013.jpg?width=1000">
+  <span class="note-photo" id="badge6">Photo : Wikimedia Commons</span>
+  <div class="contenu">
+    <span class="etiquette et-type">INCONTOURNABLE</span>
+    <h2>Le Palais de Topkapı</h2>
+    <p class="ia">Quatre siècles de sultans — vise l’ouverture, le harem d’abord</p>
+    <p class="meta">Sultanahmet · fermé mardi · ★ —, prix — <em style="opacity:.6">(format)</em></p>
+    <div class="actions"><button class="b-or">📍 Y aller</button><button class="b-verre" onclick="garder(this)">♡</button></div>
+  </div>
+</section>
+
+<section class="panneau" data-cat="experience">
+  <div class="scene" style="background:linear-gradient(180deg,#2C1A3E,#060E08)"></div>
+  <img class="photo" alt="" data-requete="Bosphore" data-fichier="https://commons.wikimedia.org/wiki/Special:FilePath/Bosphorus%20sunset%20from%20%C3%9Csk%C3%BCdar.jpg?width=1000">
+  <span class="note-photo" id="badge7">Photo : Wikimedia Commons</span>
+  <div class="contenu">
+    <span class="etiquette et-type">EXPÉRIENCE</span>
+    <h2>Le Bosphore au coucher</h2>
+    <p class="ia">Deux continents en 2 h — vise le départ de 17 h, lumière d’or garantie</p>
+    <p class="meta">Eminönü · en famille · ★ —, prix — <em style="opacity:.6">(format)</em></p>
+    <div class="actions"><button class="b-or">📍 Y aller</button><button class="b-verre" onclick="garder(this)">♡</button></div>
+  </div>
+</section>
+
+<section class="panneau" data-cat="monument">
+  <div class="scene" style="background:linear-gradient(180deg,#231A2E,#060E08)"></div>
+  <img class="photo" alt="" data-requete="Tour de Galata" data-fichier="https://commons.wikimedia.org/wiki/Special:FilePath/Galata%20Tower%202020.jpg?width=1000">
+  <span class="note-photo" id="badge8">Photo : Wikimedia Commons</span>
+  <div class="contenu">
+    <span class="etiquette et-type">POINT DE VUE</span>
+    <h2>La Tour de Galata</h2>
+    <p class="ia">Istanbul à 360° — monte 30 min avant le coucher, redescends de nuit</p>
+    <p class="meta">Galata · file plus courte le matin · ★ —, prix — <em style="opacity:.6">(format)</em></p>
+    <div class="actions"><button class="b-or">📍 Y aller</button><button class="b-verre" onclick="garder(this)">♡</button></div>
+  </div>
+</section>
+
+<section class="panneau" data-cat="monument">
+  <div class="scene" style="background:linear-gradient(180deg,#0E2A3F,#060E08)"></div>
+  <img class="photo" alt="" data-requete="Mosquée Ortaköy" data-fichier="https://commons.wikimedia.org/wiki/Special:FilePath/Ortak%C3%B6y%20Mosque%20and%20Bosphorus%20Bridge.jpg?width=1000">
+  <span class="note-photo" id="badge9">Photo : Wikimedia Commons</span>
+  <div class="contenu">
+    <span class="etiquette et-type">LIEU CULTE</span>
+    <h2>Mosquée Ortaköy</h2>
+    <p class="ia">Posée sur l’eau, le pont en toile de fond — le cliché le plus célèbre de la ville</p>
+    <p class="meta">Ortaköy · gratuit · ★ —, prix — <em style="opacity:.6">(format)</em></p>
+    <div class="actions"><button class="b-or">📍 Y aller</button><button class="b-verre" onclick="garder(this)">♡</button></div>
+  </div>
+</section>
+
+<section class="panneau" data-cat="table">
+  <div class="scene" style="background:linear-gradient(180deg,#3A1F0E,#060E08)"></div>
+  <img class="photo" alt="" data-requete="Hamdi Restaurant" data-fichier="https://commons.wikimedia.org/wiki/Special:FilePath/Emin%C3%B6n%C3%BC%2C%20Istanbul%2C%20Turkey%20-%20panoramio%20(36).jpg?width=1000">
+  <span class="note-photo" id="badge10">Photo : Wikimedia Commons</span>
+  <div class="contenu">
+    <span class="etiquette et-halal">✓ HALAL VÉRIFIÉ</span>
+    <h2>Hamdi Restaurant</h2>
+    <p class="ia">LE kebab d’agneau d’Istanbul — demande la terrasse, Bosphore en contrebas</p>
+    <p class="meta">Turc · Eminönü · ★ —, prix — <em style="opacity:.6">(format)</em></p>
+    <div class="actions"><button class="b-or">📍 Y aller</button><button class="b-verre" onclick="garder(this)">♡</button></div>
+  </div>
+</section>
+
+<section class="panneau" data-cat="table">
+  <div class="scene" style="background:linear-gradient(180deg,#5C2E12,#060E08)"></div>
+  <img class="photo" alt="" data-requete="Sultanahmet Köftecisi" data-fichier="https://commons.wikimedia.org/wiki/Special:FilePath/Sultanahmet%20K%C3%B6ftecisi.jpg?width=1000">
+  <span class="note-photo" id="badge11">Photo : Wikimedia Commons</span>
+  <div class="contenu">
+    <span class="etiquette et-halal">✓ HALAL VÉRIFIÉ</span>
+    <h2>Sultanahmet Köftecisi</h2>
+    <p class="ia">Les köfte d’Istanbul depuis 1920 — la file avance vite, prends l’ayran</p>
+    <p class="meta">Turc · Sultanahmet · ★ —, prix — <em style="opacity:.6">(format)</em></p>
+    <div class="actions"><button class="b-or">📍 Y aller</button><button class="b-verre" onclick="garder(this)">♡</button></div>
+  </div>
+</section>
+
+<section class="panneau" data-cat="table">
+  <div class="scene" style="background:linear-gradient(180deg,#1E2B1A,#060E08)"></div>
+  <img class="photo" alt="" data-requete="Hafız Mustafa" data-fichier="https://commons.wikimedia.org/wiki/Special:FilePath/Haf%C4%B1z%20Mustafa%201864%2C%20Istanbul.jpg?width=1000">
+  <span class="note-photo" id="badge12">Photo : Wikimedia Commons</span>
+  <div class="contenu">
+    <span class="etiquette et-halal">✓ HALAL</span>
+    <h2>Hafız Mustafa 1864</h2>
+    <p class="ia">Çay et baklava à la pistache — l’étage, fenêtre sur la rue, en fin d’après-midi</p>
+    <p class="meta">Salon de thé · Sirkeci · ★ —, prix — <em style="opacity:.6">(format)</em></p>
+    <div class="actions"><button class="b-or">📍 Y aller</button><button class="b-verre" onclick="garder(this)">♡</button></div>
+  </div>
+</section>
+
+<section class="panneau" data-cat="hotel">
+  <div class="scene" style="background:linear-gradient(180deg,#231A2E,#060E08)"></div>
+  <img class="photo" alt="" data-requete="Sultanahmet" data-fichier="https://commons.wikimedia.org/wiki/Special:FilePath/Sultanahmet%20district%2C%20Istanbul.jpg?width=1000">
+  <span class="note-photo" id="badge13">Photo : Wikimedia Commons</span>
+  <div class="contenu">
+    <span class="etiquette et-halal">SANS ALCOOL</span>
+    <h2>Hôtel remarquable (exemple de format)</h2>
+    <p class="ia">Dormir à 100 m de Sainte-Sophie, hammam privé, petit-déj halal</p>
+    <p class="meta">Sultanahmet · dès — € / nuit · ★ —, prix — <em style="opacity:.6">(format)</em></p>
+    <div class="actions"><button class="b-or">📍 Y aller</button><button class="b-verre" onclick="garder(this)">♡</button></div>
+  </div>
+</section>
+<!-- ===== FIXE EN DERNIER : LA SUITE ===== -->
+<section class="panneau final" data-fixe="fin">
+  <div class="contenu f-centre">
+    <div class="orn">۞</div>
+    <h2>Istanbul te plaît ?</h2>
+    <p>Tes coups de cœur sont gardés.<br>On peut maintenant construire tes journées,<br>rythmées par les 5 prières.</p>
+    <div class="compteur" id="compteur">♡ 0 lieu gardé</div>
+    <div class="chips-gardes" id="chips-gardes"></div>
+    <div class="actions" style="flex-direction:column">
+      <button class="b-or" style="flex:none;width:100%">✨ Construire mes journées</button>
+      <button class="b-verre" style="width:100%;font-size:15px;font-weight:600" onclick="melanger()">↺ Me montrer d'autres pépites</button>
+    </div>
+  </div>
+</section>
+
+
+</div>
+<!-- ===== FEUILLE PRATIQUE ===== -->
+<div class="voile" id="vp" onclick="this.classList.remove('on')">
+  <div class="feuille" onclick="event.stopPropagation()">
+    <div class="poignee"></div>
+    <h3>Istanbul pratique</h3>
+    <button class="f-item"><span>🏨</span><span>Tous les hôtels sans alcool<small>110 hôtels · choisir par priorité</small></span></button>
+    <button class="f-item"><span>🍽</span><span>Toutes les tables halal<small>103 adresses · par envie</small></span></button>
+    <button class="f-item"><span>🕌</span><span>Mosquées &amp; horaires de prière<small>calculés pour Istanbul</small></span></button>
+    <button class="f-item"><span>💡</span><span>À savoir avant de partir<small>monnaie · transport · mots utiles</small></span></button>
+  </div>
+</div>
+
+<div class="toast" id="toast">♡ Gardé dans tes coups de cœur</div>
+
+
+<script>
+// 📷 PHOTOS AUTOMATIQUES — comme le futur pipeline, mais côté lecteur :
+// l'API Wikipédia (CORS ouvert) cherche le lieu et rend l'image principale
+// de l'article. Aucun nom de fichier posé à la main — c'est ce qui tient
+// à l'échelle de 300 villes. En échec : dégradé de secours + badge franc.
+async function chargerPhoto(im) {
+  const echec = () => {
+    const badge = im.parentElement.querySelector('.note-photo')
+    if (badge) badge.textContent = 'Photo indisponible — à me signaler'
+    im.remove()
+  }
+  im.addEventListener('error', echec)
+  const q = encodeURIComponent(im.dataset.requete + ' Istanbul')
+  for (const wiki of ['fr.wikipedia.org', 'en.wikipedia.org']) {
+    try {
+      const r = await fetch('https://' + wiki + '/w/api.php?action=query&format=json&origin=*&generator=search&gsrlimit=1&gsrsearch=' + q + '&prop=pageimages&piprop=thumbnail&pithumbsize=1100')
+      const j = await r.json()
+      const pages = Object.values((j.query || {}).pages || {})
+      const src = pages[0] && pages[0].thumbnail && pages[0].thumbnail.source
+      if (src) { im.src = src; return }
+    } catch (e) { /* on tente le wiki suivant */ }
+  }
+  if (im.dataset.fichier) { im.src = im.dataset.fichier; return }
+  echec()
+}
+document.querySelectorAll('.photo').forEach(chargerPhoto)
+</script>
+<script>
+document.documentElement.classList.add("js");
+setTimeout(()=>{if(!document.querySelector(".panneau.vu"))document.documentElement.classList.remove("js");},800);
+/* ===== mélange du pool, jamais 2 catégories identiques de suite ===== */
+function melanger(){
+  const flux=document.getElementById('flux');
+  const pool=[...flux.querySelectorAll('[data-cat]')];
+  const fin=flux.querySelector('[data-fixe="fin"]');
+  let ordre,essais=0;
+  do{ordre=[...pool].sort(()=>Math.random()-.5);essais++;}
+  while(essais<60&&ordre.some((p,i)=>i>0&&p.dataset.cat===ordre[i-1].dataset.cat));
+  ordre.forEach(p=>flux.insertBefore(p,fin));
+  flux.scrollTo({top:0});
+  construireFil();
+}
+
+/* ===== fil de progression ===== */
+function construireFil(){
+  const fil=document.getElementById('fil');
+  const panneaux=[...document.querySelectorAll('.panneau')];
+  fil.innerHTML=panneaux.map((_,i)=>'<i'+(i===0?' class="on"':'')+'></i>').join('');
+}
+const obs=new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add('vu');
+      const panneaux=[...document.querySelectorAll('.panneau')];
+      const i=panneaux.indexOf(e.target);
+      document.querySelectorAll('#fil i').forEach((d,j)=>d.classList.toggle('on',j===i));
+    }
+  });
+},{threshold:.55});
+document.querySelectorAll('.panneau').forEach(p=>obs.observe(p));
+document.querySelector('.panneau').classList.add('vu');
+
+/* ===== partager : injecté sur chaque pépite ===== */
+const SVG_PARTAGE='<svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M8 7l4-4 4 4M5 13v6h14v-6"/></svg>';
+document.querySelectorAll('[data-cat] .actions').forEach(a=>{
+  const b=document.createElement('button');
+  b.className='b-verre';b.innerHTML=SVG_PARTAGE;b.setAttribute('aria-label','Partager');
+  b.onclick=ev=>{ev.stopPropagation();partager(a.closest('.panneau'));};
+  a.appendChild(b);
+});
+function partager(p){
+  const nom=p.querySelector('h2').textContent;
+  if(navigator.share){navigator.share({title:nom+' — VoyagesHalal',text:'Regarde cette pépite à Istanbul : '+nom,url:location.href}).catch(()=>{});}
+  else{toast('Lien de « '+nom+' » copié');}
+}
+
+/* ===== garder (bouton + double-tap) ===== */
+let gardes=[],tm;
+function garder(b){
+  const p=b.closest('.panneau');marquer(p,b);
+}
+function marquer(p,btn){
+  const nom=p.querySelector('h2').textContent;
+  const coeur=btn||p.querySelector('.b-verre');
+  if(!gardes.includes(nom)){
+    gardes.push(nom);
+    if(coeur&&coeur.textContent.includes('♡')){coeur.textContent='♥';coeur.style.color='#E9D9A6';coeur.style.borderColor='#C9A84C';}
+    document.getElementById('compteur').textContent='♡ '+gardes.length+' lieu'+(gardes.length>1?'x':'')+' gardé'+(gardes.length>1?'s':'');
+    document.getElementById('chips-gardes').innerHTML=gardes.map(g=>'<span class="chip-g">'+g+'</span>').join('');
+    toast('♡ '+nom+' gardé');
+  }
+}
+function toast(msg){
+  const t=document.getElementById('toast');t.textContent=msg;t.classList.add('on');
+  clearTimeout(tm);tm=setTimeout(()=>t.classList.remove('on'),1400);
+}
+
+/* ===== double-tap = ♡ avec cœur qui éclot ===== */
+let dernierTap=0;
+document.querySelectorAll('[data-cat]').forEach(p=>{
+  p.addEventListener('pointerup',e=>{
+    if(e.target.closest('button'))return;
+    const now=Date.now();
+    if(now-dernierTap<320){
+      const c=document.createElement('div');c.className='burst';c.textContent='♥';
+      c.style.left=e.clientX+'px';c.style.top=e.clientY+'px';
+      p.appendChild(c);setTimeout(()=>c.remove(),750);
+      marquer(p);
+    }
+    dernierTap=now;
+  });
+});
+
+melanger();
+</script>
+</body>
+</html>

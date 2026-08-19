@@ -2,6 +2,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useMemo, useState } from 'react'
 import SaveButton from '@/components/ui/SaveButton'
+import PlacePhoto from '@/components/ui/PlacePhoto'
 import { favId } from '@/lib/favorites'
 import { useLanguage } from '@/components/i18n/LanguageProvider'
 import {
@@ -156,32 +157,30 @@ export default function HotelFilter({ hotels, mosques, restos, center, en: enPro
       {top3Prio.map((e, i) => {
         const h = e.h
         const lien = h.halalBookingUrl || h.halal_booking_url || h.bookingUrl || h.booking_url
-        const sansAlcool = (EQUIP as any).sansAlcool?.(h)
-        return (
-          <div key={i} style={{ borderRadius: 18, marginBottom: 14, overflow: 'hidden', border: `1px solid ${i === 0 ? 'var(--or)' : 'rgba(27,67,50,0.12)'}`, background: 'rgba(253,250,243,0.06)' }}>
-            <div style={{ padding: '14px 16px 14px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                <span style={{ flexShrink: 0, width: 32, height: 32, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 15, background: i === 0 ? 'linear-gradient(135deg, #D9BE6C, var(--or))' : 'rgba(201,168,76,0.15)', color: i === 0 ? '#0A1509' : '#8A6D1E' }}>{i + 1}</span>
-                <p style={{ flex: 1, fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 19, color: 'var(--texte)', margin: 0 }}>{h.nom}</p>
-                {sansAlcool && <span style={{ flexShrink: 0, fontSize: 11, fontWeight: 700, padding: '5px 10px', borderRadius: 999, background: '#1F7A4A', color: '#fff', letterSpacing: '0.06em' }}>{t('SANS ALCOOL', 'NO ALCOHOL')}</span>}
-              </div>
-              <p style={{ fontSize: 13.5, color: 'var(--texte-2)', margin: '6px 0 0' }}>{noteOf(h) != null ? `★ ${noteOf(h)}` : ''}{categoryOf(h) ? ` · ${categoryOf(h)}` : ''}</p>
-              {atout(e) && (
-                <span style={{ display: 'inline-flex', alignItems: 'center', gap: 7, marginTop: 8, padding: '6px 12px', borderRadius: 999, background: 'rgba(201,168,76,0.13)', border: '1px solid rgba(201,168,76,0.3)', color: '#8A6D1E', fontSize: 13.5, fontWeight: 600 }}>{atout(e)}</span>
+        const equips = equipList.filter((eq) => (EQUIP as any)[eq.id](h)).slice(0, 2).map((eq) => (en ? eq.en : eq.fr))
+        const contenu = (
+          <>
+            <span style={{ flexShrink: 0, width: 28, height: 28, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 14, background: i === 0 ? 'linear-gradient(135deg, #D9BE6C, var(--or))' : 'rgba(201,168,76,0.15)', color: i === 0 ? '#0A1509' : '#C9A84C' }}>{i + 1}</span>
+            <span style={{ flexShrink: 0, width: 96, height: 64, borderRadius: 12, overflow: 'hidden' }}>
+              <PlacePhoto query={`${h.nom} ${villeNom ?? ''} hotel`} height={64} gradient={['#2C4F6B', '#101F2C']} emoji="" emojiSize={0} />
+            </span>
+            <span style={{ flex: 1, minWidth: 0 }}>
+              <span style={{ display: 'block', fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 17, color: 'var(--texte)', lineHeight: 1.2 }}>{h.nom}</span>
+              {atout(e) && <span style={{ display: 'block', fontSize: 13, color: 'rgba(253,250,243,0.72)', marginTop: 2 }}>{atout(e)}</span>}
+              {equips.length > 0 && <span style={{ display: 'block', fontSize: 12.5, color: '#7FBF8F', fontWeight: 600, marginTop: 2 }}>{equips.join(' · ')}</span>}
+            </span>
+            <span style={{ flexShrink: 0, textAlign: 'right' }}>
+              {typeof h.prixNuitEur === 'number' && (
+                <span style={{ display: 'block', fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 17, color: '#C9A84C', whiteSpace: 'nowrap' }}>{en ? 'from' : 'dès'} {h.prixNuitEur} €</span>
               )}
-              <div style={{ display: 'flex', gap: 10, marginTop: 12, alignItems: 'center' }}>
-                {typeof h.prixNuitEur === 'number' && (
-                  <span style={{ fontFamily: "'Playfair Display', serif", fontSize: 19, fontWeight: 700, color: '#8A6D1E', whiteSpace: 'nowrap' }}>
-                    {h.prixNuitEur} € <small style={{ fontFamily: 'inherit', fontSize: 13, color: 'var(--texte-2)', fontWeight: 400 }}>/ {t('nuit', 'night')}</small>
-                  </span>
-                )}
-                {lien
-                  ? <a href={lien} target="_blank" rel="sponsored noopener noreferrer" style={{ flex: 1, minHeight: 52, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', borderRadius: 13, background: 'linear-gradient(135deg, #D9BE6C, var(--or))', color: '#0A1509', fontSize: 15.5, fontWeight: 700, textDecoration: 'none' }}>{t('Réserver', 'Book')}</a>
-                  : (h.mapsUrl || e.c) && <a href={h.mapsUrl || `https://maps.google.com/?q=${e.c!.lat},${e.c!.lng}`} target="_blank" rel="noopener noreferrer" style={{ flex: 1, minHeight: 52, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', borderRadius: 13, background: 'linear-gradient(135deg, #D9BE6C, var(--or))', color: '#0A1509', fontSize: 15.5, fontWeight: 700, textDecoration: 'none' }}>🗺 {t('Voir sur la carte', 'See on the map')}</a>}
-              </div>
-            </div>
-          </div>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden style={{ color: 'rgba(253,250,243,0.4)', marginTop: 2 }}><path d="m9 5 7 7-7 7" /></svg>
+            </span>
+          </>
         )
+        const style: React.CSSProperties = { display: 'flex', alignItems: 'center', gap: 12, width: '100%', padding: '12px 14px', marginBottom: 10, borderRadius: 16, border: `1px solid ${i === 0 ? 'var(--or)' : 'rgba(201,168,76,0.14)'}`, background: 'rgba(253,250,243,0.05)', textDecoration: 'none', cursor: 'pointer', textAlign: 'left' }
+        return lien
+          ? <a key={i} href={lien} target="_blank" rel="sponsored noopener noreferrer" style={style}>{contenu}</a>
+          : <a key={i} href={h.mapsUrl || (e.c ? `https://maps.google.com/?q=${e.c.lat},${e.c.lng}` : '#')} target="_blank" rel="noopener noreferrer" style={style}>{contenu}</a>
       })}
 
       {!voirTous && (

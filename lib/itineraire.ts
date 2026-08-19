@@ -1,24 +1,17 @@
-// 🧭 UN TAP = L'ITINÉRAIRE, dans l'app de cartes du téléphone (itération 2,
-// correction 4). On passe les COORDONNÉES, jamais le nom : la précision
-// chirurgicale de la position vaut aussi pour la destination.
-// `marche` : itinéraire intelligent (itération 4) — à pied si le temps de
-// marche réel est ≤ 15 min, sinon voiture. Le choix vient de l'appelant,
-// qui connaît les minutes réelles ; sans elles, on laisse l'app décider.
+// 🧭 UN TAP = L'ITINÉRAIRE — sans jamais quitter la page.
+//
+// 🔴 Itération 6, correction 3 — LA CAUSE DE LA PAGE BLANCHE : ce module
+// faisait `window.location.href = 'maps://…'` (iOS) ou
+// `'google.navigation:…'` (Android). Remplacer l'URL COURANTE par un schéma
+// externe casse l'état du document : au retour depuis Maps, le navigateur
+// restaure une page morte. Interdit désormais.
+//
+// La bonne voie : le lien UNIVERSEL https de Google Maps, ouvert DANS UN
+// NOUVEL ONGLET (noopener). iOS et Android l'attrapent et ouvrent l'app
+// Plans / Maps ; le site, lui, reste exactement où il était.
+// On passe les COORDONNÉES, jamais le nom — et le mode adapté (à pied si
+// la marche réelle ≤ 15 min) via travelmode.
 export function lancerItineraire(lat: number, lng: number, marche?: boolean): void {
   const web = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}${marche === undefined ? '' : `&travelmode=${marche ? 'walking' : 'driving'}`}`
-  try {
-    const ua = navigator.userAgent
-    const natif = /iPhone|iPad|iPod/.test(ua) ? `maps://?daddr=${lat},${lng}${marche === undefined ? '' : `&dirflg=${marche ? 'w' : 'd'}`}`
-      : /Android/.test(ua) ? `google.navigation:q=${lat},${lng}${marche === undefined ? '' : `&mode=${marche ? 'w' : 'd'}`}` : null
-    if (natif) {
-      // Si l'app native ne s'ouvre pas (schéma inconnu), le repli web part
-      // après un court délai — et il est annulé si la page a été masquée
-      // (signe que l'app s'est bien ouverte).
-      const t = setTimeout(() => { if (!document.hidden) window.open(web, '_blank', 'noopener') }, 900)
-      window.addEventListener('pagehide', () => clearTimeout(t), { once: true })
-      window.location.href = natif
-      return
-    }
-  } catch { /* environnement sans navigator : repli web */ }
   window.open(web, '_blank', 'noopener')
 }

@@ -6,6 +6,7 @@ import { CRITERES_DEFAUT, lireDemande, relance, resumerCriteres, type Categorie,
 import { top3 } from '@/lib/top3.mjs'
 import TrajetMin, { StatutOuverture } from '@/components/lieux/TrajetMin'
 import { lancerItineraire } from '@/lib/itineraire'
+import { appelerLieux } from '@/lib/appelLieux'
 import { lireIntention } from '@/lib/villesIndex'
 import type { VilleLue } from '@/lib/lireVille.mjs'
 import { trajet, type Mode } from '@/lib/trajet'
@@ -49,11 +50,13 @@ export interface Fiche {
   adresse?: string; telephone?: string; mapsUri?: string
   photos?: string[]; attributionsPhotos?: string[]; avis?: Avis[]; resume?: string
   attributs?: Record<string, boolean | undefined>
+  famille?: string
   titreIA?: string
   conseilIA?: string
   marcheMin?: number; voitureMin?: number
   cuisine?: string; cuisineSource?: string
   statut: string; alcool?: 'non' | 'inconnu'; source: 'spot' | 'google' | 'osm'
+  osmId?: string
 }
 
 type Etape = 'question' | 'relance' | 'cherche' | 'resultat' | 'sans-position'
@@ -493,11 +496,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
       const to = setTimeout(() => ac.abort(), 20_000)
       let corps: { fiches?: Fiche[]; autres?: Fiche[]; source?: string; etatGoogle?: 'ok' | 'vide' | 'muet' | 'sans-cle'; mode?: Mode; plafondMin?: number; rayonKm?: number; rayonAtteintKm?: number; ecartesAlcool?: number; relaches?: string[]; motManquant?: string | null } = {}
       try {
-        const r = await fetch('/api/lieux', {
-          method: 'POST', signal: ac.signal,
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ lat: pos.lat, lng: pos.lng, criteres: c, lang: en ? 'en' : 'fr', ecrit, profil }),
-        })
+        const r = await appelerLieux({ lat: pos.lat, lng: pos.lng, criteres: c, lang: en ? 'en' : 'fr', ecrit, profil }, ac.signal)
         if (r.status === 429) {
           // NOTRE plafond, pas celui de Google. On le dit tel quel, avec le
           // délai réel renvoyé par le serveur.
@@ -1318,7 +1317,9 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
             onClick={() => compter('itineraires')}
             style={{ display: 'flex', alignItems: 'center', gap: 8, marginTop: 8, padding: '10px 12px', borderRadius: 12, border: '1px solid rgba(253,250,243,0.14)', textDecoration: 'none' }}>
             <span style={{ flex: 1, color: '#fdfaf3', fontWeight: 700, fontSize: 13.5, overflowWrap: 'anywhere' }}>{f.nom}</span>
-            <span style={{ color: 'rgba(253,250,243,0.6)', fontSize: 12.5, whiteSpace: 'nowrap' }}>{trajet(f.distanceM, mode, en)}</span>
+            {/* Itération 6 : dernière survivance du « ≈ estimé » à l'écran —
+                remplacée par le composant partagé (temps réels ou mètres). */}
+            <span style={{ color: 'rgba(253,250,243,0.6)', fontSize: 12.5, whiteSpace: 'nowrap' }}><TrajetMin f={f} en={en} /></span>
           </a>
         ))}
 
@@ -1371,11 +1372,14 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
             promet plus « les fiches Google arrivent bientôt » quand Google
             n'a simplement pas répondu — c'est une panne du moment, pas une
             fonctionnalité à venir. */}
-        {source === 'osm' && fiches.length > 0 && (
+        {/* ⚖️ Licence ODbL : partout où une donnée OpenStreetMap apparaît
+            (liste ou fiche), le crédit doit être visible. */}
+        {(source === 'osm' || [...fiches, ...autres].some((f) => f.source === 'osm' || f.osmId)) && fiches.length > 0 && (
           <p style={{ color: 'rgba(253,250,243,0.55)', fontSize: 12, marginTop: 10 }}>
-            {etatGoogle === 'muet' || etatGoogle === 'sans-cle'
-              ? t('Google Maps n’a pas répondu — ces adresses viennent d’OpenStreetMap.', 'Google Maps did not respond — these come from OpenStreetMap.')
-              : t('Résultats OpenStreetMap — les fiches Google Maps arrivent bientôt.', 'OpenStreetMap results — Google Maps details coming soon.')}
+            {source === 'osm' && (etatGoogle === 'muet' || etatGoogle === 'sans-cle')
+              ? t('Google Maps n’a pas répondu — ces adresses viennent d’OpenStreetMap. ', 'Google Maps did not respond — these come from OpenStreetMap. ')
+              : ''}
+            {t('Données cartographiques © les contributeurs OpenStreetMap.', 'Map data © OpenStreetMap contributors.')}
           </p>
         )}
     </Cadre>

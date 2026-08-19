@@ -39,7 +39,6 @@ export interface FicheEcran {
 // visible ni cet écran n'avaient atteint la production.
 const SERIF = "Georgia,'Iowan Old Style','Times New Roman',serif"
 
-function minutesAPied(m: number) { return Math.max(1, Math.round(m / 75)) }
 function distanceLisible(m: number) { return m < 1000 ? `${m} m` : `${(m / 1000).toFixed(1)} km` }
 
 /** La fiche compacte du modèle : vignette 48 px coins 13 px, nom 15,5 px,
@@ -55,7 +54,7 @@ function FicheMini({ f }: { f: FicheEcran }) {
         <p style={{ fontFamily: SERIF, fontSize: 16, margin: '0 0 2px', color: '#fff', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{f.nom}</p>
         <p style={{ fontSize: 12.5, margin: 0, color: 'rgba(255,255,255,.82)' }}>
           {f.note != null && <span style={{ color: '#FFC978', fontWeight: 700 }}>★ {f.note} · </span>}
-          {minutesAPied(f.distanceM)} min à pied · {distanceLisible(f.distanceM)}
+          {distanceLisible(f.distanceM)} à vol d’oiseau
           {f.ouvert === true && <span style={{ color: '#4FD69C' }}> · ouvert</span>}
           {f.ouvert === false && <span style={{ color: 'rgba(255,255,255,.6)' }}> · fermé</span>}
         </p>
@@ -205,7 +204,7 @@ export default function EcranCiel({
             <h2 style={{ fontFamily: SERIF, fontSize: 21, fontWeight: 400, lineHeight: 1.18, margin: '0 0 7px', color: '#fff' }}>{tete.nom}</h2>
             <p style={{ fontSize: 13.5, color: 'rgba(255,255,255,.82)', margin: '0 0 3px' }}>
               {tete.note != null && <><span style={{ color: '#FFC978', fontWeight: 700 }}>★ {tete.note}</span>{tete.nbAvis ? ` · ${tete.nbAvis} avis` : ''} · </>}
-              <b>{tete.distanceM < 1000 ? `${tete.distanceM} m` : `${(tete.distanceM / 1000).toFixed(1)} km`}</b> · {minutesAPied(tete.distanceM)} min à pied
+              <b>{tete.distanceM < 1000 ? `${tete.distanceM} m` : `${(tete.distanceM / 1000).toFixed(1)} km`}</b> à vol d’oiseau
               {tete.ouvert === true && <span style={{ color: '#4FD69C', fontWeight: 600 }}> · ouvert</span>}
               {tete.ouvert === false && <span style={{ color: 'rgba(255,255,255,.6)' }}> · fermé</span>}
             </p>
@@ -236,7 +235,7 @@ export default function EcranCiel({
               target="_blank" rel="noopener noreferrer"
               style={{ display: 'block', marginTop: 13, borderRadius: 16, padding: 14, textAlign: 'center', fontSize: 15.5, fontWeight: 700, background: accent, color: '#141018', textDecoration: 'none', minHeight: 56, boxSizing: 'border-box' }}
             >
-              🚶 {mode === 'priere' ? `Y aller — ${minutesAPied(tete.distanceM)} min` : 'Itinéraire'}
+              🚶 {mode === 'priere' ? 'Y aller' : 'Itinéraire'}
             </a>
           </div>
         </article>

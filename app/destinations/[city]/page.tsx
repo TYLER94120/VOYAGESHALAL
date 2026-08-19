@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 import { readdirSync, readFileSync } from 'fs'
 import path from 'path'
 import type { Ville } from '@/lib/villeTypes'
-import VilleDesktop from '@/components/villes/VilleDesktop'
+import VilleExperience from '@/components/villes/VilleExperience'
 import VilleFaq from '@/components/villes/VilleFaq'
 import HotelCTA from '@/components/affiliate/HotelCTA'
 import { DestinationFaqSchema, DestinationSchema } from '@/components/SchemaOrg'
@@ -171,24 +171,15 @@ export default async function DestinationPage({ params }: Props) {
         <CitySync city={{ slug: city, nom: ville.nom, pays: ville.pays, lat: coords.lat, lng: coords.lng }} />
       )}
 
-      {/* 🧹 15 août — LE BLOC « À <VILLE> » A ÉTÉ RETIRÉ D'ICI.
-          Mohamed : « il est placé AVANT le titre de la page ; le visiteur
-          qui arrive de Google voit un moteur de recherche avant de savoir
-          sur quelle page il est ». C'était une nouveauté EMPILÉE : elle
-          refaisait aussi les tuiles Où manger / Où prier / Que faire.
-          Elle est maintenant INTÉGRÉE dans VilleDesktop — la prière en
-          tête, et une seule barre de recherche fondue dans la zone
-          Explorer. Une nouveauté ne se place jamais au-dessus du titre
-          d'une page. */}
-      {/* Design unifié responsive (mobile + desktop : 1 colonne épurée).
-          Perf mobile : seuls 24 restos sont sérialisés — la liste complète se
-          charge à la demande via /api/villes/[slug]/restos. */}
-      <VilleDesktop ville={{
+      {/* 🏙 ITÉRATION 7 — la page ville REPARTIE DE ZÉRO (PageVille) :
+          5 sections (Verdict, Dormir, Manger, Mes journées, À savoir) au
+          CSS contractuel de maquette-page-ville.html. Elle REMPLACE
+          VilleDesktop et ses onglets. Rôle : préparer le voyage chez soi
+          — sur place, c'est Autour de moi.
+          Perf mobile : seuls 24 restos sont sérialisés. */}
+      <VilleExperience en={isEN} ville={{
         ...ville,
-        // Date de dernière modification RÉELLE, lue dans l'historique git.
-        // Une fiche ville n'affichait aucune date : impossible pour le
-        // lecteur (et pour Google) de savoir si l'information est fraîche.
-        misAJour: dateGitVille(city),
+        slug: city,
         // Bars, lounges à chicha et boîtes de nuit sont écartés : le lieu
         // compte autant que la nourriture (lib/conformite.ts)
         restaurants: restaurantsConformes.slice(0, 24),
