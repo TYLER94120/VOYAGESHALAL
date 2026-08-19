@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GoHalalTravel — World feed (phase 0 preview)</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--nuit:#060E08;--or:#C9A84C;--or-clair:#E9D9A6;--creme:#FDFAF3;--vert:#1F7A4A;--fil:rgba(201,168,76,.25);--fil-fin:rgba(201,168,76,.14);}
+*{box-sizing:border-box;margin:0;-webkit-tap-highlight-color:transparent;}
+html,body{background:var(--nuit);color:var(--creme);font-family:"DM Sans",sans-serif;}
+button{font-family:inherit;border:none;background:none;color:inherit;cursor:pointer;font-size:16px;}
+.demo{position:fixed;top:0;left:14px;z-index:70;background:var(--or);color:#0A1509;font-size:10px;font-weight:700;padding:2px 10px;border-radius:0 0 8px 8px;letter-spacing:.14em;}
+/* ===== sélecteur de flux ===== */
+.selecteur{
+  position:fixed;top:12px;left:50%;transform:translateX(-50%);z-index:60;
+  display:flex;gap:5px;background:rgba(6,14,8,.78);backdrop-filter:blur(14px);
+  padding:5px;border-radius:999px;border:1px solid var(--fil-fin);max-width:96%;overflow-x:auto;scrollbar-width:none;
+}
+.selecteur::-webkit-scrollbar{display:none;}
+.sel{flex:0 0 auto;min-height:46px;padding:0 15px;border-radius:999px;display:flex;align-items:center;gap:6px;
+  font-size:14px;font-weight:600;color:rgba(253,250,243,.7);}
+.sel.on{background:linear-gradient(135deg,#D9BE6C,var(--or));color:#0A1509;}
+.flux{height:100svh;overflow-y:auto;scroll-snap-type:y mandatory;max-width:430px;margin:0 auto;display:none;}
+.flux.on{display:block;}
+.panneau{height:100svh;scroll-snap-align:start;position:relative;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;}
+.scene{position:absolute;inset:0;}
+.scene svg{width:100%;height:100%;display:block;}
+.panneau::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(6,14,8,.96) 6%,rgba(6,14,8,.1) 48%,rgba(6,14,8,.35) 100%);}
+.contenu{position:relative;z-index:2;padding:0 24px calc(36px + env(safe-area-inset-bottom));}
+.etiquette{display:inline-flex;gap:8px;align-items:center;padding:8px 16px;border-radius:999px;font-size:12.5px;font-weight:700;letter-spacing:.12em;margin-bottom:14px;}
+.et-halal{background:var(--vert);color:#fff;}
+.et-type{background:rgba(6,14,8,.6);border:1px solid rgba(201,168,76,.4);color:var(--or-clair);backdrop-filter:blur(8px);}
+h1{font-family:"Playfair Display",serif;font-size:46px;line-height:1.02;color:#fff;}
+h2{font-family:"Playfair Display",serif;font-size:34px;line-height:1.08;color:#fff;}
+.ia{font-family:"Playfair Display",serif;font-style:italic;font-size:19px;color:var(--or-clair);margin-top:10px;line-height:1.35;}
+.meta{font-size:15.5px;color:rgba(253,250,243,.85);margin-top:8px;}
+.prix-nuit{font-family:"Playfair Display",serif;font-size:32px;color:var(--or-clair);margin-top:8px;}
+.prix-nuit small{font-family:"DM Sans",sans-serif;font-size:14px;color:rgba(253,250,243,.6);}
+.actions{display:flex;gap:12px;margin-top:20px;}
+.b-or{flex:1;min-height:58px;border-radius:16px;background:linear-gradient(135deg,#D9BE6C,var(--or));color:#0A1509;font-size:17px;font-weight:700;display:flex;align-items:center;justify-content:center;gap:8px;}
+.b-verre{flex:none;min-width:58px;min-height:58px;border-radius:16px;background:rgba(6,14,8,.5);border:1px solid rgba(201,168,76,.4);color:var(--or-clair);backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:center;font-size:22px;}
+.score-pill{font-family:"Playfair Display",serif;font-size:26px;padding:2px 16px;border-radius:999px;background:var(--vert);color:#fff;display:inline-block;}
+.v-faits{margin-top:14px;display:flex;flex-direction:column;gap:8px;}
+.fait{display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:13px;background:rgba(6,14,8,.55);border:1px solid rgba(201,168,76,.18);backdrop-filter:blur(8px);font-size:15px;}
+.pt{flex:none;width:9px;height:9px;border-radius:50%;background:#6FD79C;box-shadow:0 0 8px #6FD79C;}
+.atout{display:inline-flex;align-items:center;gap:8px;margin-top:10px;padding:8px 14px;border-radius:999px;
+  background:rgba(201,168,76,.14);border:1px solid var(--fil);color:var(--or-clair);font-size:14px;font-weight:600;}
+.toast{position:fixed;bottom:100px;left:50%;transform:translateX(-50%);z-index:90;background:var(--or);color:#0A1509;
+  font-size:14.5px;font-weight:700;padding:12px 22px;border-radius:999px;display:none;box-shadow:0 10px 30px rgba(0,0,0,.5);}
+.toast.on{display:block;}
+.burst{position:absolute;z-index:9;font-size:84px;pointer-events:none;transform:translate(-50%,-50%) scale(.4);opacity:0;
+  animation:burst .7s cubic-bezier(.2,.8,.3,1) forwards;color:#E9D9A6;text-shadow:0 6px 30px rgba(201,168,76,.6);}
+@keyframes burst{20%{opacity:1;transform:translate(-50%,-50%) scale(1.15)}100%{opacity:0;transform:translate(-50%,-70%) scale(1)}}
+.note-photo{position:absolute;top:70px;left:14px;z-index:3;font-size:10.5px;letter-spacing:.12em;color:rgba(253,250,243,.4);text-transform:uppercase;}
+
+.photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;}
+.panneau::after{z-index:2;}
+.note-photo{z-index:3;}
+.contenu{z-index:4;}
+</style>
+</head>
+<body>
+<div class="demo">PREVIEW · WORLD FEED — real HalalScores, hooks = format</div>
+<nav class="selecteur">
+  <button class="sel on">World</button><button class="sel">Eat</button><button class="sel">Sleep</button><button class="sel">Do</button>
+</nav>
+<div class="flux on" id="f-monde">
+
+<section class="panneau">
+  <div class="scene" style="background:linear-gradient(180deg,#0E2A3F,#060E08)"></div>
+  <img class="photo" alt="" data-requete="Istanbul" >
+  <span class="note-photo" style="top:70px">Photo: Wikimedia — Google Places in prod</span>
+  <div class="contenu">
+    <span class="etiquette et-type">DESTINATION</span>
+    <h1>Istanbul</h1>
+    <div style="margin-top:10px"><span class="score-pill" style="background:#1F7A4A">✦ 9,6</span></div>
+    <p class="ia">Insider hook — AI-cached in prod <em style="opacity:.55">(format)</em></p>
+    <p class="meta">Turkey</p>
+    <div class="actions">
+      <a class="b-or" href="/preview-city-en.html" style="text-decoration:none">Explore Istanbul</a>
+      <button class="b-verre" onclick="coeur(event)">♡</button>
+    </div>
+  </div>
+</section>
+
+<section class="panneau">
+  <div class="scene" style="background:linear-gradient(180deg,#8C3A1E,#060E08)"></div>
+  <img class="photo" alt="" data-requete="Marrakesh" >
+  <span class="note-photo" style="top:70px">Photo: Wikimedia — Google Places in prod</span>
+  <div class="contenu">
+    <span class="etiquette et-type">DESTINATION</span>
+    <h1>Marrakesh</h1>
+    <div style="margin-top:10px"><span class="score-pill" style="background:#1F7A4A">✦ 9,2</span></div>
+    <p class="ia">Insider hook — AI-cached in prod <em style="opacity:.55">(format)</em></p>
+    <p class="meta">Morocco</p>
+    <div class="actions">
+      <button class="b-or">Explore Marrakesh</button>
+      <button class="b-verre" onclick="coeur(event)">♡</button>
+    </div>
+  </div>
+</section>
+
+<section class="panneau">
+  <div class="scene" style="background:linear-gradient(180deg,#0E3F35,#060E08)"></div>
+  <img class="photo" alt="" data-requete="Kuala Lumpur" loading="lazy">
+  <span class="note-photo" style="top:70px">Photo: Wikimedia — Google Places in prod</span>
+  <div class="contenu">
+    <span class="etiquette et-type">DESTINATION</span>
+    <h1>Kuala Lumpur</h1>
+    <div style="margin-top:10px"><span class="score-pill" style="background:#1F7A4A">✦ 9,4</span></div>
+    <p class="ia">Insider hook — AI-cached in prod <em style="opacity:.55">(format)</em></p>
+    <p class="meta">Malaysia</p>
+    <div class="actions">
+      <button class="b-or">Explore Kuala Lumpur</button>
+      <button class="b-verre" onclick="coeur(event)">♡</button>
+    </div>
+  </div>
+</section>
+
+<section class="panneau">
+  <div class="scene" style="background:linear-gradient(180deg,#231A2E,#060E08)"></div>
+  <img class="photo" alt="" data-requete="Dubai" loading="lazy">
+  <span class="note-photo" style="top:70px">Photo: Wikimedia — Google Places in prod</span>
+  <div class="contenu">
+    <span class="etiquette et-type">DESTINATION</span>
+    <h1>Dubai</h1>
+    <div style="margin-top:10px"><span class="score-pill" style="background:#1F7A4A">✦ 9,3</span></div>
+    <p class="ia">Insider hook — AI-cached in prod <em style="opacity:.55">(format)</em></p>
+    <p class="meta">United Arab Emirates</p>
+    <div class="actions">
+      <button class="b-or">Explore Dubai</button>
+      <button class="b-verre" onclick="coeur(event)">♡</button>
+    </div>
+  </div>
+</section>
+
+<section class="panneau">
+  <div class="scene" style="background:linear-gradient(180deg,#1B3A5C,#060E08)"></div>
+  <img class="photo" alt="" data-requete="Doha" loading="lazy">
+  <span class="note-photo" style="top:70px">Photo: Wikimedia — Google Places in prod</span>
+  <div class="contenu">
+    <span class="etiquette et-type">DESTINATION</span>
+    <h1>Doha</h1>
+    <div style="margin-top:10px"><span class="score-pill" style="background:#1F7A4A">✦ 9</span></div>
+    <p class="ia">Insider hook — AI-cached in prod <em style="opacity:.55">(format)</em></p>
+    <p class="meta">Qatar</p>
+    <div class="actions">
+      <button class="b-or">Explore Doha</button>
+      <button class="b-verre" onclick="coeur(event)">♡</button>
+    </div>
+  </div>
+</section>
+
+<section class="panneau">
+  <div class="scene" style="background:linear-gradient(180deg,#33200D,#060E08)"></div>
+  <img class="photo" alt="" data-requete="Cairo" loading="lazy">
+  <span class="note-photo" style="top:70px">Photo: Wikimedia — Google Places in prod</span>
+  <div class="contenu">
+    <span class="etiquette et-type">DESTINATION</span>
+    <h1>Cairo</h1>
+    <div style="margin-top:10px"><span class="score-pill" style="background:#1F7A4A">✦ 9</span></div>
+    <p class="ia">Insider hook — AI-cached in prod <em style="opacity:.55">(format)</em></p>
+    <p class="meta">Egypt</p>
+    <div class="actions">
+      <button class="b-or">Explore Cairo</button>
+      <button class="b-verre" onclick="coeur(event)">♡</button>
+    </div>
+  </div>
+</section>
+
+<section class="panneau">
+  <div class="scene" style="background:linear-gradient(180deg,#1E2B1A,#060E08)"></div>
+  <img class="photo" alt="" data-requete="Sarajevo" loading="lazy">
+  <span class="note-photo" style="top:70px">Photo: Wikimedia — Google Places in prod</span>
+  <div class="contenu">
+    <span class="etiquette et-type">DESTINATION</span>
+    <h1>Sarajevo</h1>
+    <div style="margin-top:10px"><span class="score-pill" style="background:#6FD79C;color:#0A1509">✦ 8,4</span></div>
+    <p class="ia">Insider hook — AI-cached in prod <em style="opacity:.55">(format)</em></p>
+    <p class="meta">Bosnia</p>
+    <div class="actions">
+      <button class="b-or">Explore Sarajevo</button>
+      <button class="b-verre" onclick="coeur(event)">♡</button>
+    </div>
+  </div>
+</section>
+
+<section class="panneau">
+  <div class="scene" style="background:linear-gradient(180deg,#2E1F3E,#060E08)"></div>
+  <img class="photo" alt="" data-requete="London" loading="lazy">
+  <span class="note-photo" style="top:70px">Photo: Wikimedia — Google Places in prod</span>
+  <div class="contenu">
+    <span class="etiquette et-type">DESTINATION</span>
+    <h1>London</h1>
+    <div style="margin-top:10px"><span class="score-pill" style="background:#E8B45A;color:#160E03">✦ 7,8</span></div>
+    <p class="ia">Insider hook — AI-cached in prod <em style="opacity:.55">(format)</em></p>
+    <p class="meta">United Kingdom</p>
+    <div class="actions">
+      <button class="b-or">Explore London</button>
+      <button class="b-verre" onclick="coeur(event)">♡</button>
+    </div>
+  </div>
+</section>
+
+<section class="panneau">
+  <div class="scene" style="background:linear-gradient(180deg,#14263B,#060E08)"></div>
+  <img class="photo" alt="" data-requete="Paris" loading="lazy">
+  <span class="note-photo" style="top:70px">Photo: Wikimedia — Google Places in prod</span>
+  <div class="contenu">
+    <span class="etiquette et-type">DESTINATION</span>
+    <h1>Paris</h1>
+    <div style="margin-top:10px"><span class="score-pill" style="background:#E8B45A;color:#160E03">✦ 7,5</span></div>
+    <p class="ia">Insider hook — AI-cached in prod <em style="opacity:.55">(format)</em></p>
+    <p class="meta">France</p>
+    <div class="actions">
+      <button class="b-or">Explore Paris</button>
+      <button class="b-verre" onclick="coeur(event)">♡</button>
+    </div>
+  </div>
+</section>
+
+<section class="panneau">
+  <div class="scene" style="background:linear-gradient(180deg,#2C1A3E,#060E08)"></div>
+  <img class="photo" alt="" data-requete="Bangkok" loading="lazy">
+  <span class="note-photo" style="top:70px">Photo: Wikimedia — Google Places in prod</span>
+  <div class="contenu">
+    <span class="etiquette et-type">DESTINATION</span>
+    <h1>Bangkok</h1>
+    <div style="margin-top:10px"><span class="score-pill" style="background:rgba(253,250,243,.25)">✦ 6,6</span></div>
+    <p class="ia">Insider hook — AI-cached in prod <em style="opacity:.55">(format)</em></p>
+    <p class="meta">Thailand</p>
+    <div class="actions">
+      <button class="b-or">Explore Bangkok</button>
+      <button class="b-verre" onclick="coeur(event)">♡</button>
+    </div>
+  </div>
+</section>
+</div>
+<div class="toast" id="toast">♡ Saved to your list</div>
+<script>
+let tm;
+function coeur(e){e.stopPropagation();const b=e.currentTarget;b.textContent='♥';b.style.color='#E9D9A6';
+  const t=document.getElementById('toast');t.classList.add('on');clearTimeout(tm);tm=setTimeout(()=>t.classList.remove('on'),1300);}
+async function chargerPhoto(im){
+  const echec=()=>{const b=im.parentElement.querySelector('.note-photo');if(b)b.textContent='Photo unavailable — tell me';im.remove();}
+  im.addEventListener('error',echec)
+  const q=encodeURIComponent(im.dataset.requete)
+  for(const wiki of ['en.wikipedia.org','fr.wikipedia.org']){
+    try{
+      const r=await fetch('https://'+wiki+'/w/api.php?action=query&format=json&origin=*&generator=search&gsrlimit=1&gsrsearch='+q+'&prop=pageimages&piprop=thumbnail&pithumbsize=1100')
+      const j=await r.json();const pages=Object.values((j.query||{}).pages||{})
+      const src=pages[0]&&pages[0].thumbnail&&pages[0].thumbnail.source
+      if(src){im.src=src;return}
+    }catch(e){}
+  }
+  echec()
+}
+document.querySelectorAll('.photo').forEach(chargerPhoto)
+</script>
+</body>
+</html>
