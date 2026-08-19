@@ -25,6 +25,9 @@ export const dynamic = 'force-dynamic'
 
 interface Sortie {
   faits: { avant: string; nuance?: string; ton: 'vert' | 'orange' }[]
+  /** L'accroche du World feed (≤ 12 mots, ia_cache) — jamais un chiffre
+   *  hors compteurs fournis. */
+  accroche?: string
   quartier?: string
   strategie?: string
   savoir?: { monnaie?: string; transport?: string; piege?: string; mots?: string }
@@ -107,8 +110,9 @@ export async function GET(request: Request) {
 
       const PROMPT = `Ville : ${v.nom} (${v.pays}). Données réelles : ${nbRestos} adresses halal relevées, ${nbMosquees} mosquées relevées, alcool : ${ip.alcool ?? 'inconnu'}.
 Réponds UNIQUEMENT un JSON ${en ? 'en anglais' : 'en français'} :
-{"nuances":{"manger":"...","prier":"...","alcool":"..."},"quartier":"...","strategie":"...","savoir":{"monnaie":"...","transport":"...","piege":"...","mots":"..."},"noms":{${nonLatins.length ? '"nom local":"Romanisation"' : ''}}}
+{"accroche":"...","nuances":{"manger":"...","prier":"...","alcool":"..."},"quartier":"...","strategie":"...","savoir":{"monnaie":"...","transport":"...","piege":"...","mots":"..."},"noms":{${nonLatins.length ? '"nom local":"Romanisation"' : ''}}}
 Règles ABSOLUES :
+- accroche : le rêve de ${v.nom} en ≤ 12 mots, concret et donnant envie (ex. « Deux continents, le halal sans réfléchir ») — JAMAIS un chiffre autre que ceux fournis.
 - nuances : ≤ 8 mots chacune, un complément concret au compteur (ex. « concentrées par quartiers », « salles dans les grands magasins ») — JAMAIS un chiffre autre que ceux fournis ci-dessus.
 - quartier : « Le bon quartier : NOM — pourquoi (mosquée, restos, calme) », ≤ 18 mots, un quartier réel et connu de ${v.nom}.
 - strategie : où viser pour manger halal à ${v.nom}, ≤ 18 mots, quartiers réels.
@@ -120,7 +124,7 @@ Règles ABSOLUES :
       const rep = await client.messages.create({ model: 'claude-haiku-4-5-20251001', max_tokens: 1400, temperature: 0, messages: [{ role: 'user', content: PROMPT }] })
       const brut = (rep.content.find((c) => c.type === 'text')?.text ?? '').trim()
       const j = JSON.parse(brut.match(/\{[\s\S]*\}/)?.[0] ?? 'null') as {
-        nuances?: Record<string, string>; quartier?: string; strategie?: string
+        accroche?: string; nuances?: Record<string, string>; quartier?: string; strategie?: string
         savoir?: Record<string, string>; noms?: Record<string, string>
       } | null
       if (!j) return
@@ -130,6 +134,7 @@ Règles ABSOLUES :
           const th = /halal food|manger/i.test(f.avant) ? 'manger' : /pray|prier/i.test(f.avant) ? 'prier' : 'alcool'
           return { ...f, nuance: prop(j.nuances?.[th]) }
         }),
+        accroche: prop(j.accroche),
         quartier: prop(j.quartier),
         strategie: prop(j.strategie),
         savoir: {

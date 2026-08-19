@@ -3,6 +3,7 @@ import { readFileSync } from 'fs'
 import path from 'path'
 import WorldFeed, { type VillePanneau } from '@/components/flux/WorldFeed'
 import { compteurVille } from '@/lib/mosqueesOsm'
+import { getRedis } from '@/lib/pushStore'
 import { EN_URL, FR_URL } from '@/lib/domain'
 
 // 🌍 GOHALALTRAVEL — L'ACCUEIL EN SWIPE (phase 1, validée le 20 août).
@@ -65,7 +66,20 @@ const PAYS_EN: Record<string, string> = {
   'Bosnie': 'Bosnia', 'Royaume-Uni': 'United Kingdom', 'France': 'France', 'Thaïlande': 'Thailand',
 }
 
-export default function WorldPage() {
+export default async function WorldPage() {
   const villes = lireVilles().map((v) => ({ ...v, pays: PAYS_EN[v.pays] ?? v.pays }))
+  // Phase 2 : l'accroche IA en cache (ia_cache, ≤ 12 mots, calée sur nos
+  // compteurs) REMPLACE la phrase éditoriale de la base quand elle existe —
+  // c'est elle qui règle l'écart « 3,113 mosques » vs compteur OSM.
+  const r = getRedis()
+  if (r) {
+    try {
+      const caches = await r.mget<({ accroche?: string } | null)[]>(...villes.map((v) => `vh:villeia:v1:en:${v.slug}`))
+      villes.forEach((v, i) => {
+        const a = caches[i]?.accroche
+        if (a && a.length <= 120) v.accroche = a
+      })
+    } catch { /* cache muet : la phrase de la base reste */ }
+  }
   return <WorldFeed villes={villes} />
 }

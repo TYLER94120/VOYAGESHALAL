@@ -1728,7 +1728,8 @@ body:has(.autour-plein[data-vue="carte"]) .bottom-nav { display: none !important
 
 /* ═══ World feed (GoHalalTravel phase 1) : le sélecteur de flux de la
    maquette moteur universel. Seul « World » existe en phase 1. ═══ */
-.imm-selecteur { position: fixed; top: calc(92px + env(safe-area-inset-top, 0px)); left: 50%; transform: translateX(-50%); z-index: 60; display: flex; gap: 5px; background: rgba(6,14,8,.78); backdrop-filter: blur(14px); padding: 5px; border-radius: 999px; border: 1px solid rgba(201,168,76,.14); max-width: 96%; overflow-x: auto; scrollbar-width: none; }
+/* À gauche, largeur bornée : « ☰ Essentials » vit à droite au même niveau. */
+.imm-selecteur { position: fixed; top: calc(92px + env(safe-area-inset-top, 0px)); left: 14px; z-index: 60; display: flex; gap: 5px; background: rgba(6,14,8,.78); backdrop-filter: blur(14px); padding: 5px; border-radius: 999px; border: 1px solid rgba(201,168,76,.14); max-width: calc(100% - 168px); overflow-x: auto; scrollbar-width: none; }
 .imm-selecteur::-webkit-scrollbar { display: none; }
 .imm-sel { flex: 0 0 auto; min-height: 46px; padding: 0 15px; border-radius: 999px; display: flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 600; color: rgba(253,250,243,.7); }
 .imm-sel.on { background: linear-gradient(135deg, #D9BE6C, #C9A84C); color: #0A1509; }

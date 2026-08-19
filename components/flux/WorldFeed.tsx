@@ -79,7 +79,10 @@ export default function WorldFeed({ villes }: { villes: VillePanneau[] }) {
   return (
     <div style={{ position: 'relative' }}>
       {/* Seul flux existant en phase 1 : World. */}
-      <nav className="imm-selecteur" aria-label="Feeds"><span className="imm-sel on">World</span></nav>
+      <nav className="imm-selecteur" aria-label="Feeds">
+        <span className="imm-sel on">World</span>
+        <Link className="imm-sel" href="/saves" style={{ textDecoration: 'none' }}>♡ My saves</Link>
+      </nav>
       <div className="imm-fil" aria-hidden>
         {villes.map((v, i) => <i key={v.slug} className={i === actif ? 'on' : undefined} />)}
       </div>

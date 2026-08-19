@@ -77,6 +77,14 @@ export function middleware(req: NextRequest) {
     }
   }
 
+  // /saves (le carnet du moteur Swipe, anglais) : sur le domaine FR, le
+  // carnet s'appelle /carnet — on y renvoie.
+  if (!isEN && pathname === '/saves') {
+    const url = req.nextUrl.clone()
+    url.pathname = '/carnet'
+    return decorate(NextResponse.redirect(url, 301))
+  }
+
   // /world n'existe que comme accueil du domaine anglais : sur le domaine
   // FR (ou tapé à la main sur l'EN), on renvoie à l'accueil — pas de
   // contenu en double.

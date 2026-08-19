@@ -199,7 +199,9 @@ async function construirePool(slug: string, lang: string): Promise<Pool | null> 
     })
   }
 
-  return { ville: nomVille, panneaux: panneaux.slice(0, 30), contradictions, genere: new Date().toISOString().slice(0, 10) }
+  // Phase 2 : le pool sert aussi les flux Eat/Sleep/Do — on garde jusqu'à
+  // 40 lieux au-dessus des seuils (les flux filtrent par catégorie).
+  return { ville: nomVille, panneaux: panneaux.slice(0, 40), contradictions, genere: new Date().toISOString().slice(0, 10) }
 }
 
 /** Conseils d'initié — Haiku, UNE fois, ≤ 14 mots, actionnables. */

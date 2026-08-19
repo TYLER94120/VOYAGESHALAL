@@ -71,5 +71,15 @@ for (const s of ['istanbul', 'marrakech', 'kuala-lumpur', 'dubai', 'doha', 'le-c
   if (!existsSync(`data/villes/${s}.json`)) casse(`ville de lancement absente de la base : ${s}`)
 }
 
+
+// ── 4. phase 2 : flux Eat/Sleep/Do + carnet unique ──
+const comp2 = readFileSync('components/villes/Immersion.tsx', 'utf8')
+if (!/fluxDispo\.eat\.length >= 3/.test(comp2)) casse('la pilule Eat s\'affiche sans le plancher de 3 lieux — bouton sans destination possible')
+if (!/panneauxVisibles/.test(comp2)) casse('les flux Eat/Sleep/Do ne filtrent plus le pool')
+if (!existsSync('app/saves/page.tsx') || !existsSync('components/flux/MySaves.tsx')) casse('le carnet My saves a disparu')
+const ms = readFileSync('components/flux/MySaves.tsx', 'utf8')
+if (!/vh_wishlist_villes/.test(ms) || !/vh_immersion_gardes:/.test(ms)) casse('My saves ne lit plus les deux clés du carnet unique')
+if (!/construire=1/.test(ms)) casse('« Build my days » depuis My saves a perdu sa destination')
+
 if (fautes) { console.error(`${fautes} faute(s) — build arrêté.`); process.exit(1) }
-console.log(`✅ immersion + world feed : 200 tirages conformes (${signatures.size} ordres distincts), seuils, engagements et réécriture EN en place.`)
+console.log(`✅ immersion + flux : ${signatures.size} tirages distincts, seuils, Eat/Sleep/Do planchonnés, carnet unique en place.`)
