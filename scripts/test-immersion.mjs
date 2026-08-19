@@ -8,7 +8,7 @@
 //    présents (4.5 / 1000 / 300), photo obligatoire, écriture latine
 //    obligatoire, aucune donnée métier en dur, jamais « certifié »,
 //    liste de sources extensible, contradictions collectées.
-import { readFileSync } from 'node:fs'
+import { readFileSync, existsSync } from 'node:fs'
 import { tirer, sansDoublonsConsecutifs } from '../lib/immersionTirage.mjs'
 
 let fautes = 0
@@ -60,5 +60,16 @@ if (!/contributeurs OpenStreetMap/.test(comp)) casse('le crédit ODbL a disparu 
 if (!/imm-js/.test(comp) || !/clearTimeout\(filet\)/.test(comp)) casse('le filet de résilience sans JavaScript a disparu')
 if (!/\?lieu=/.test(comp)) casse('le lien profond de partage par lieu a disparu')
 
+// ── 3. le World feed (GoHalalTravel phase 1) ──
+const mw = readFileSync('middleware.ts', 'utf8')
+if (!/pathname === '\/'\s*\)/.test(mw) || !/\/world/.test(mw)) casse('la réécriture accueil EN → /world a disparu du middleware')
+const wp = readFileSync('app/world/page.tsx', 'utf8')
+if (/halalScore\s*[:=]\s*\d/.test(wp) || /score:\s*\d/.test(wp)) casse('un HalalScore en dur dans le World feed — interdit (Règle B)')
+if (!/description_en/.test(wp)) casse('l\'accroche ne vient plus de la base (description_en)')
+if (!/compteurVille/.test(wp)) casse('le compteur OSM de lieux de prière a disparu du World feed')
+for (const s of ['istanbul', 'marrakech', 'kuala-lumpur', 'dubai', 'doha', 'le-caire', 'sarajevo', 'londres', 'paris', 'bangkok']) {
+  if (!existsSync(`data/villes/${s}.json`)) casse(`ville de lancement absente de la base : ${s}`)
+}
+
 if (fautes) { console.error(`${fautes} faute(s) — build arrêté.`); process.exit(1) }
-console.log(`✅ immersion : 200 tirages conformes (${signatures.size} ordres distincts), seuils et engagements en place.`)
+console.log(`✅ immersion + world feed : 200 tirages conformes (${signatures.size} ordres distincts), seuils, engagements et réécriture EN en place.`)

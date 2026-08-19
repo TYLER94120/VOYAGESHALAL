@@ -1,0 +1,71 @@
+import type { Metadata } from 'next'
+import { readFileSync } from 'fs'
+import path from 'path'
+import WorldFeed, { type VillePanneau } from '@/components/flux/WorldFeed'
+import { compteurVille } from '@/lib/mosqueesOsm'
+import { EN_URL, FR_URL } from '@/lib/domain'
+
+// 🌍 GOHALALTRAVEL — L'ACCUEIL EN SWIPE (phase 1, validée le 20 août).
+// Cette page n'est servie QUE sur le domaine anglais (réécriture « / » →
+// /world dans le middleware). Rendu CÔTÉ SERVEUR : le HTML complet des
+// villes (noms, scores, accroches) est indexable sans JavaScript.
+//
+// Règle B — provenance de chaque champ :
+//   nom/pays/score/photo : base_vh (data/villes, HalalScore validé 0–10)
+//   accroche : base_vh (1re phrase éditoriale anglaise de la fiche)
+//   compteur lieux de prière : base OSM précalculée (© contributeurs OSM)
+//   temps de vol / prix : AUCUNE source réelle branchée → absents.
+export const dynamic = 'force-dynamic'
+
+const VILLES_LANCEMENT = ['istanbul', 'marrakech', 'kuala-lumpur', 'dubai', 'doha', 'le-caire', 'sarajevo', 'londres', 'paris', 'bangkok']
+
+export const metadata: Metadata = {
+  title: { absolute: 'GoHalalTravel — Swipe the halal world' },
+  description: 'One city per screen. Real photos, HalalScores, verified halal food and prayer places — swipe to find your next Muslim-friendly trip.',
+  alternates: {
+    canonical: `${EN_URL}/`,
+    languages: { en: `${EN_URL}/`, fr: `${FR_URL}/`, 'x-default': `${EN_URL}/` },
+  },
+}
+
+function lireVilles(): VillePanneau[] {
+  const villes: VillePanneau[] = []
+  for (const slug of VILLES_LANCEMENT) {
+    try {
+      const v = JSON.parse(readFileSync(path.join(process.cwd(), 'data', 'villes', `${slug}.json`), 'utf8')) as Record<string, unknown>
+      const score = typeof v.halalScore === 'number' && v.halalScore > 0 && v.halalScore <= 10 ? v.halalScore : null
+      // L'accroche : la première phrase éditoriale anglaise de la fiche qui
+      // ne cite pas l'ancien « Trust Score » (marque abandonnée) — réelle,
+      // jamais générée à la volée.
+      const phrases = String(v.description_en ?? '').split(/(?<=[.!?])\s+/)
+      const brute = phrases.find((p) => p.length > 30 && !/trust score/i.test(p))?.trim() ?? null
+      // Jamais coupée en plein mot : phrase entière si courte, sinon
+      // tronquée au dernier espace avant 110 caractères + « … ».
+      const accroche = brute == null ? null
+        : brute.length <= 120 ? brute
+        : `${brute.slice(0, 110).replace(/\s+\S*$/, '')}…`
+      villes.push({
+        slug,
+        nom: String(v.nom_en ?? v.nom ?? slug),
+        pays: String((v as { pays_en?: string }).pays_en ?? v.pays ?? ''),
+        score,
+        image: typeof v.image === 'string' ? v.image : null,
+        accroche,
+        lieuxPriere: compteurVille(slug),
+      })
+    } catch { /* ville absente de la base : elle n'entre pas dans le flux */ }
+  }
+  return villes
+}
+
+// Les pays de la base sont en français ; le flux est anglais.
+const PAYS_EN: Record<string, string> = {
+  'Turquie': 'Turkey', 'Maroc': 'Morocco', 'Malaisie': 'Malaysia',
+  'Émirats Arabes Unis': 'United Arab Emirates', 'Qatar': 'Qatar', 'Égypte': 'Egypt',
+  'Bosnie': 'Bosnia', 'Royaume-Uni': 'United Kingdom', 'France': 'France', 'Thaïlande': 'Thailand',
+}
+
+export default function WorldPage() {
+  const villes = lireVilles().map((v) => ({ ...v, pays: PAYS_EN[v.pays] ?? v.pays }))
+  return <WorldFeed villes={villes} />
+}
