@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 import { readdirSync, readFileSync } from 'fs'
 import path from 'path'
 import type { Ville } from '@/lib/villeTypes'
-import PageVille from '@/components/villes/PageVille'
+import VilleExperience from '@/components/villes/VilleExperience'
 import VilleFaq from '@/components/villes/VilleFaq'
 import HotelCTA from '@/components/affiliate/HotelCTA'
 import { DestinationFaqSchema, DestinationSchema } from '@/components/SchemaOrg'
@@ -177,7 +177,7 @@ export default async function DestinationPage({ params }: Props) {
           VilleDesktop et ses onglets. Rôle : préparer le voyage chez soi
           — sur place, c'est Autour de moi.
           Perf mobile : seuls 24 restos sont sérialisés. */}
-      <PageVille en={isEN} ville={{
+      <VilleExperience en={isEN} ville={{
         ...ville,
         slug: city,
         // Bars, lounges à chicha et boîtes de nuit sont écartés : le lieu

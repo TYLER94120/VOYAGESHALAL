@@ -78,7 +78,13 @@ const cuisineMot = (type?: string) => {
   return m ? m.charAt(0).toUpperCase() + m.slice(1) : null
 }
 
-export default function PageVille({ ville, en = false }: { ville: VilleData; en?: boolean }) {
+export default function PageVille({ ville, en = false, mode = 'complet' }: {
+  ville: VilleData; en?: boolean
+  /** 'pratique' : la couche servie par la feuille « ☰ Pratique » de
+   *  l'Immersion — mêmes sections, mais SANS le Verdict ni le sommaire
+   *  (le verdict vit au panneau 1 du flux — remplace, ne juxtapose pas). */
+  mode?: 'complet' | 'pratique'
+}) {
   const t = t2(en)
   const [ia, setIa] = useState<Ia | null>(null)
   useEffect(() => {
@@ -144,7 +150,9 @@ export default function PageVille({ ville, en = false }: { ville: VilleData; en?
 
   return (
     <div className="pv">
-      {/* ===== 1. LE VERDICT ===== */}
+      {/* ===== 1. LE VERDICT ===== (absent en mode pratique : il vit au
+          panneau 1 du flux Immersion — jamais deux fois) */}
+      {mode === 'complet' && (
       <div className="pv-verdict">
         <span className="pv-sur-titre">{t('Guide halal', 'Halal guide')}</span>
         <h1>{ville.nom}</h1>
@@ -165,14 +173,17 @@ export default function PageVille({ ville, en = false }: { ville: VilleData; en?
           </div>
         )}
       </div>
+      )}
 
       {/* ===== sommaire sticky ===== */}
+      {mode === 'complet' && (
       <nav className="pv-sommaire">
         <a className="pv-som" href="#dormir"><Ic d={D_LIT} size={17} /> {t('Dormir', 'Sleep')}</a>
         <a className="pv-som" href="#manger"><Ic d={D_REPAS} size={17} /> {t('Manger', 'Eat')}</a>
         <a className="pv-som" href="#planning"><Ic d={D_AGENDA} size={17} /> {t('Mes journées', 'My days')}</a>
         <a className="pv-som" href="#savoir"><Ic d={D_AMPOULE} size={17} /> {t('À savoir', 'Good to know')}</a>
       </nav>
+      )}
 
       {/* ===== 2 + 3 : sur PC, Dormir et Manger vivent côte à côte ===== */}
       <div className="pv-deux">
@@ -349,7 +360,19 @@ function Planning({ ville, en, noms }: { ville: VilleData; en: boolean; noms?: R
   // proche de l'activité précédente. Nom illisible = lieu exclu.
   const defauts = useMemo<Etape[][]>(() => {
     if (!prieres) return []
-    const acts = (ville.activites ?? []).map((a) => ({ a, aff: nomLisible(a.nom, noms) })).filter((x) => x.aff)
+    // ♡ Les coups de cœur gardés dans le flux Immersion OUVRENT les
+    // journées : le planning démarre avec eux (brief 4 bis), le reste des
+    // activités de la base complète derrière.
+    let gardes: { nom?: string; lat?: number; lng?: number }[] = []
+    try { gardes = JSON.parse(localStorage.getItem(`vh_immersion_gardes:${ville.slug}`) ?? '[]') } catch { /* aucun */ }
+    const actsGardes = gardes
+      .filter((g) => g.nom && estLatinLisible(g.nom))
+      .map((g) => ({ a: { nom: g.nom, lat: g.lat, lng: g.lng, categorie: t('Ton coup de cœur', 'Your pick') } as Activite, aff: { principal: g.nom! } }))
+    const nomsGardes = new Set(actsGardes.map((x) => x.aff.principal))
+    const acts = [
+      ...actsGardes,
+      ...(ville.activites ?? []).map((a) => ({ a, aff: nomLisible(a.nom, noms) })).filter((x) => x.aff && !nomsGardes.has(x.aff!.principal)),
+    ]
     const reps = (ville.restaurants ?? []).map((r) => ({ r, aff: nomLisible(r.nom, noms) })).filter((x) => x.aff)
     const mosqs = (ville.mosqueesPrincipales ?? []).map((m) => ({ m, aff: nomLisible(m.nom, noms) })).filter((x) => x.aff && x.m.lat != null)
     const procheDe = (p?: { lat?: number; lng?: number }) => {
