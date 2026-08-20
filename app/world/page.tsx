@@ -3,6 +3,7 @@ import { readFileSync } from 'fs'
 import path from 'path'
 import WorldFeed, { type VillePanneau } from '@/components/flux/WorldFeed'
 import cityCoords from '@/lib/cityCoords.json'
+import { countryEn } from '@/lib/poiI18n'
 import { compteurVille } from '@/lib/mosqueesOsm'
 import { getRedis } from '@/lib/pushStore'
 import { EN_URL, FR_URL } from '@/lib/domain'
@@ -19,7 +20,11 @@ import { EN_URL, FR_URL } from '@/lib/domain'
 //   temps de vol / prix : AUCUNE source réelle branchée → absents.
 export const dynamic = 'force-dynamic'
 
-const VILLES_LANCEMENT = ['istanbul', 'marrakech', 'kuala-lumpur', 'dubai', 'doha', 'le-caire', 'sarajevo', 'londres', 'paris', 'bangkok']
+// 🌍 TOUTES les villes du guide (ordre du 20 août : « mettre en accueil
+// toutes les villes à swiper ») — triées par HalalScore décroissant : les
+// meilleures d'abord, le flux ne s'arrête jamais. 354 villes, toutes avec
+// score et photo réels de la base.
+import { readdirSync } from 'fs'
 
 export const metadata: Metadata = {
   title: { absolute: 'GoHalalTravel — Swipe the halal world' },
@@ -32,7 +37,9 @@ export const metadata: Metadata = {
 
 function lireVilles(): VillePanneau[] {
   const villes: VillePanneau[] = []
-  for (const slug of VILLES_LANCEMENT) {
+  const slugs = readdirSync(path.join(process.cwd(), 'data', 'villes'))
+    .filter((f) => f.endsWith('.json')).map((f) => f.replace('.json', ''))
+  for (const slug of slugs) {
     try {
       const v = JSON.parse(readFileSync(path.join(process.cwd(), 'data', 'villes', `${slug}.json`), 'utf8')) as Record<string, unknown>
       const score = typeof v.halalScore === 'number' && v.halalScore > 0 && v.halalScore <= 10 ? v.halalScore : null
@@ -46,6 +53,7 @@ function lireVilles(): VillePanneau[] {
       const accroche = brute == null ? null
         : brute.length <= 120 ? brute
         : `${brute.slice(0, 110).replace(/\s+\S*$/, '')}…`
+      if (score == null || typeof v.image !== 'string') continue // sans score ou photo : pas de panneau
       villes.push({
         slug,
         nom: String(v.nom_en ?? v.nom ?? slug),
@@ -55,20 +63,16 @@ function lireVilles(): VillePanneau[] {
         accroche,
         lieuxPriere: compteurVille(slug),
       })
-    } catch { /* ville absente de la base : elle n'entre pas dans le flux */ }
+    } catch { /* ville illisible : elle n'entre pas dans le flux */ }
   }
-  return villes
+  return villes.sort((a, b) => (b.score ?? 0) - (a.score ?? 0))
 }
 
-// Les pays de la base sont en français ; le flux est anglais.
-const PAYS_EN: Record<string, string> = {
-  'Turquie': 'Turkey', 'Maroc': 'Morocco', 'Malaisie': 'Malaysia',
-  'Émirats Arabes Unis': 'United Arab Emirates', 'Qatar': 'Qatar', 'Égypte': 'Egypt',
-  'Bosnie': 'Bosnia', 'Royaume-Uni': 'United Kingdom', 'France': 'France', 'Thaïlande': 'Thailand',
-}
 
 export default async function WorldPage() {
-  const villes = lireVilles().map((v) => ({ ...v, pays: PAYS_EN[v.pays] ?? v.pays }))
+  // Les pays de la base sont en français : countryEn (le même service que
+  // le reste du domaine anglais) les traduit pour les 354 villes.
+  const villes = lireVilles().map((v) => ({ ...v, pays: countryEn(v.pays, true) }))
   // Phase 2 : l'accroche IA en cache (ia_cache, ≤ 12 mots, calée sur nos
   // compteurs) REMPLACE la phrase éditoriale de la base quand elle existe —
   // c'est elle qui règle l'écart « 3,113 mosques » vs compteur OSM.
