@@ -44,8 +44,24 @@ interface Aeroport {
 function lireBase(): Aeroport[] {
   try {
     const j = JSON.parse(readFileSync(path.join(process.cwd(), 'data', 'airports', 'prayer-rooms.json'), 'utf8'))
-    return (j.aeroports ?? []) as Aeroport[]
+    return ((j.aeroports ?? []) as Aeroport[]).filter(estPubliable)
   } catch { return [] }
+}
+
+/** 🚧 LE SEUIL DE PUBLICATION — mesuré le 20 août, après le premier relevé.
+ *  OpenStreetMap ne connaît AUCUNE salle de prière à l'intérieur des dix
+ *  terminaux ciblés : le lieu le plus proche est à 1,3 km (Dubaï, KLIA),
+ *  et Changi, JFK et Schiphol n'ont rien à moins de 3 km. Une page qui
+ *  s'appelle « prayer room » sans savoir où prier dans l'aéroport ne
+ *  répond pas à la question posée — elle ne doit pas exister.
+ *
+ *  Une page n'est donc publiée que si elle a de quoi répondre : une salle
+ *  relevée dans l'enceinte, ou au moins un lieu de prière à 3 km. Le jour
+ *  où un contributeur cartographie la salle du Terminal 2, le relevé
+ *  mensuel la ramasse et la page se remplit toute seule. */
+export function estPubliable(a: Aeroport): boolean {
+  if (a.lieux.some((l) => l.type !== 'mosque')) return true
+  return a.lieux.some((l) => distM(a.lat, a.lng, l.lat, l.lng) <= 3000)
 }
 const lire = (slug: string) => lireBase().find((a) => a.slug === slug) ?? null
 
@@ -59,6 +75,10 @@ export async function generateMetadata({ params }: { params: Promise<{ airport: 
   if (!a) return {}
   const salles = a.lieux.filter((l) => l.type !== 'mosque').length
   // Le besoin d'abord, un chiffre compté, moins de 60 caractères.
+  // Le titre ne promet une salle que s'il y en a une de relevée. Sans
+  // salle, la page répond quand même à la question — « où prier » — avec
+  // les lieux les plus proches, les horaires et la Qibla.
+  const proches = a.lieux.filter((l) => distM(a.lat, a.lng, l.lat, l.lng) <= 3000).length
   const title = salles > 0
     ? titreSeo([
         `Prayer room ${a.nom}: ${salles} rooms and prayer times`,
@@ -66,10 +86,16 @@ export async function generateMetadata({ params }: { params: Promise<{ airport: 
         `Prayer room ${a.nom} (${a.iata})`,
         `Prayer room ${a.iata}`,
       ])
-    : titreSeo([`Where to pray at ${a.nom} (${a.iata})`, `Where to pray at ${a.iata}`])
+    : titreSeo([
+        `Where to pray at ${a.nom}: ${proches} place${proches > 1 ? 's' : ''} within 3 km`,
+        `Where to pray at ${a.nom} (${a.iata})`,
+        `Where to pray at ${a.iata}`,
+      ])
   return {
     title: { absolute: title },
-    description: `Prayer facilities recorded at ${a.nom} (${a.iata}), today's prayer times for the airport and the Qibla direction. Source shown. Free, no account.`.slice(0, 155),
+    description: (salles > 0
+      ? `Prayer facilities recorded at ${a.nom} (${a.iata}), today's prayer times and the Qibla. Source shown. Free, no account.`
+      : `Prayer places closest to ${a.nom} (${a.iata}), today's prayer times for the airport and the Qibla. Source shown. Free, no account.`).slice(0, 155),
     alternates: { canonical: `${EN_URL}/prayer-room/${a.slug}` },
     openGraph: { title, url: `${EN_URL}/prayer-room/${a.slug}` },
   }
@@ -131,12 +157,14 @@ export default async function PrayerRoomPage({ params }: { params: Promise<{ air
 
       <section className="sv">
         <div className="sv-in">
-          <h1 className="sv-h1">Prayer room at {a.nom} ({a.iata})</h1>
+          <h1 className="sv-h1">
+            {salles.length > 0 ? `Prayer room at ${a.nom} (${a.iata})` : `Where to pray at ${a.nom} (${a.iata})`}
+          </h1>
 
           <p className="sv-p">
             {salles.length > 0
               ? `${salles.length} prayer facilit${salles.length > 1 ? 'ies are' : 'y is'} recorded inside ${a.nom}. Each entry below shows only what the map data actually says — where a terminal or a floor is missing, it is missing because nobody has recorded it, not because we guessed.`
-              : `No prayer room inside the terminals is recorded for ${a.nom} yet. That does not mean there is none — it means we will not describe one we cannot show you. Below: today's prayer times for the airport, the Qibla, and the places of worship recorded nearby.`}
+              : `Open map data records no prayer room inside the terminals at ${a.nom}. That does not mean there is none — airports rarely map their own quiet rooms — it means we will not describe one we cannot show you, with a plane to catch. What follows is what we can stand behind: the prayer places closest to the airport, today's prayer times computed for its coordinates, and the Qibla.`}
           </p>
 
           {salles.length > 0 && (
@@ -177,7 +205,7 @@ export default async function PrayerRoomPage({ params }: { params: Promise<{ air
 
           {mosquees.length > 0 && (
             <>
-              <h2 className="sv-h2">Mosques recorded around the airport</h2>
+              <h2 className="sv-h2">Prayer places closest to the airport</h2>
               <p className="sv-p">Distances are straight-line from the airport centre — not walking distance.</p>
               <ul className="sv-liste">
                 {mosquees.slice(0, 10).map((m) => (

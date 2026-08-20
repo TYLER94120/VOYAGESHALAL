@@ -2,6 +2,7 @@ import type { MetadataRoute } from 'next'
 import { readFileSync } from 'fs'
 import path from 'path'
 import { dateGitVille, CONTENT_REVISED_AT } from '@/lib/freshness'
+import { estPubliable } from '@/app/prayer-room/[airport]/page'
 import { guides, blogPosts } from '@/lib/data'
 import { getDomainSEO, FR_URL, EN_URL } from '@/lib/domain'
 import { HALAL_QA_EN } from '@/lib/halalgpt-en'
@@ -97,7 +98,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   if (isEN) {
     try {
       const j = JSON.parse(readFileSync(path.join(process.cwd(), 'data', 'airports', 'prayer-rooms.json'), 'utf8'))
-      aeroportPages = ((j.aeroports ?? []) as { slug: string }[]).map((a) => ({
+      aeroportPages = ((j.aeroports ?? []) as Parameters<typeof estPubliable>[0][]).filter(estPubliable).map((a) => ({
         url: `${SITE_URL}/prayer-room/${a.slug}`,
         lastModified: new Date(j.genere ?? CONTENT_REVISED_AT),
         changeFrequency: 'monthly' as const,

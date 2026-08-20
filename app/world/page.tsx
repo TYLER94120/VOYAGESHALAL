@@ -9,6 +9,7 @@ import { getRedis } from '@/lib/pushStore'
 import { EN_URL } from '@/lib/domain'
 import { titreSeo } from '@/lib/titre-seo'
 import SocleWorld from '@/components/flux/SocleWorld'
+import { estPubliable } from '@/app/prayer-room/[airport]/page'
 import { readFileSync as lireFichier } from 'fs'
 
 // 🌍 GOHALALTRAVEL — L'ACCUEIL EN SWIPE (phase 1, validée le 20 août).
@@ -109,7 +110,9 @@ export default async function WorldPage() {
   let aeroports: { slug: string; nom: string }[] = []
   try {
     const j = JSON.parse(lireFichier(path.join(process.cwd(), 'data', 'airports', 'prayer-rooms.json'), 'utf8'))
-    aeroports = ((j.aeroports ?? []) as { slug: string; nom: string }[]).map((a) => ({ slug: a.slug, nom: a.nom }))
+    // Le MÊME seuil que la route : on ne lie que des pages qui existent.
+    aeroports = ((j.aeroports ?? []) as Parameters<typeof estPubliable>[0][])
+      .filter(estPubliable).map((a) => ({ slug: a.slug, nom: a.nom }))
   } catch { /* pas de relevé : pas de section */ }
 
   const nbLieuxPriere = villes.reduce((n, v) => n + (v.lieuxPriere ?? 0), 0)

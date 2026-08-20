@@ -41,15 +41,16 @@ export default function SocleWorld({ nbVilles, nbLieuxPriere, villes, aeroports 
           paid placement. Nothing here is sponsored.
         </p>
 
-        <h2 className="sv-h2">Prayer rooms in airports</h2>
+        <h2 className="sv-h2">Praying during a layover</h2>
         <p className="sv-p">
-          A layover is where the question gets urgent. These pages give the terminal, what
-          the record says about access, and the prayer times for the airport&apos;s own
-          time zone.
+          A layover is where the question gets urgent. These pages give the prayer places
+          recorded at and around the airport, today&apos;s prayer times computed for its
+          coordinates, and the Qibla — with the source shown, and a blank where the map
+          data is blank.
         </p>
         <ul className="sv-liens">
           {aeroports.map((a) => (
-            <li key={a.slug}><Link href={`/prayer-room/${a.slug}`}>Prayer room at {a.nom}</Link></li>
+            <li key={a.slug}><Link href={`/prayer-room/${a.slug}`}>Where to pray at {a.nom}</Link></li>
           ))}
         </ul>
 
