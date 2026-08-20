@@ -257,9 +257,14 @@ def lecon(num, nom, nom_ar, autre, vs):
     k = len(vs)
     ident = 'sourate-' + re.sub(r'[^a-z0-9]+', '-', sans_accents(nom).lower()).strip('-')
     url = 'lecon-%s.html' % ident
-    titre = 'Sourate %s : le sens, verset par verset' % nom
+    # LE TITRE PORTE UN CHIFFRE. Regle du 17 aout : le besoin en premier, un
+    # chiffre verifiable compte dans nos donnees, moins de 60 caracteres.
+    # Elle vit ICI et nulle part ailleurs : le 18 aout, elle avait ete appliquee
+    # par un script separe, et la premiere regeneration a REVERT LES VINGT
+    # TITRES en silence. Une regle appliquee a cote du generateur ne tient pas.
+    titre = 'Sourate %s : les %d versets expliques' % (nom, k)
     if len(titre) > 60:
-        titre = 'Sourate %s, verset par verset' % nom
+        titre = 'Sourate %s : %d versets' % (nom, k)
     desc = description(nom, num, k)
     if desc is None:
         return None
