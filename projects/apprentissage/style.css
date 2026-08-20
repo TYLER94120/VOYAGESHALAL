@@ -1136,6 +1136,18 @@ a.lien-bas:hover { color: var(--creme); }
 }
 .s-alt { font-size: 13px; color: var(--texte-3); font-weight: 400; }
 
+/* Le compte de versets partage la boite du nom transcrit, qui passe a la
+   ligne toute seule. Il ne doit pas se lire comme un deuxieme nom : chiffres
+   a chasse fixe pour que les colonnes s'alignent a l'oeil sur 114 lignes,
+   et une teinte plus sourde que l'or du nom. */
+.s-nb {
+  font-size: 13px;
+  color: var(--texte-3);
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
 /* 42 px mesures. Sur une liste de 114 lignes, le doigt vise mal : la zone
    passe a 44 px sans changer la taille du texte. */
 .s-lien {
