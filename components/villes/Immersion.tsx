@@ -207,7 +207,9 @@ export default function Immersion({ slug, nom, score, ton, niveau, pool, onOuvri
           {/* de l'air au-dessus de l'indice « Swipe » : il chevauchait le 3e fait */}
           <div className="imm-contenu" style={{ paddingBottom: 'calc(148px + env(safe-area-inset-bottom))' }}>
             <span className="imm-etiquette imm-et-type">{t('GUIDE HALAL', 'HALAL GUIDE')}</span>
-            <h1 className="imm-h1">{nom}</h1>
+            {/* Le <h1> de la page est celui du socle SSR (SocleVille) : ici, le
+                nom de la ville est un titre VISUEL — un seul h1 par page. */}
+            <p className="imm-h1">{nom}</p>
             {score != null && (
               <div className="imm-score"><b data-ton={ton ?? undefined}>✦ {score.toLocaleString(en ? 'en-GB' : 'fr-FR')}</b><span style={{ fontWeight: 600 }}>{niveau}</span></div>
             )}

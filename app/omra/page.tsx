@@ -9,7 +9,7 @@ import { getDomainSEO } from '@/lib/domain'
 export async function generateMetadata(): Promise<Metadata> {
   const { isEN, siteUrl } = await getDomainSEO()
   return buildMetadata({
-    title: isEN ? 'Umrah 2026 — Complete Guide, Packages & Preparation' : 'Omra 2026 — Guide Complet, Forfaits & Préparation',
+    title: isEN ? 'Umrah 2026: Steps, Budget and Best Season' : 'Omra 2026 : étapes, budget et meilleure période',
     description: isEN
       ? 'Everything to prepare your Umrah 2026: visa, packages, budget, rituals, best agencies and practical tips for a successful pilgrimage.'
       : "Préparer son Omra 2026 : visa, forfaits, budget, rituels étape par étape et agences en France. Le guide complet, gratuit.",

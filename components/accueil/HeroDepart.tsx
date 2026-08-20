@@ -36,7 +36,10 @@ export default function HeroDepart() {
           <path d="M39 30v9M31 39h16" /><path d="M2 22h20M56 22h20" />
           <circle cx="26" cy="22" r="2.2" /><circle cx="52" cy="22" r="2.2" />
         </svg>
-        <h1 className="v6-logo">Voyages<em>Halal</em></h1>
+        {/* Le <h1> de l'accueil porte le BESOIN, pas la marque (chantier SEO
+            du 20 août) : il vit dans BlocSeo, juste sous cet écran. Ici, le
+            nom est un titre visuel. */}
+        <p className="v6-logo">Voyages<em>Halal</em></p>
         <p className="v6-tagline">Le guide du voyage halal</p>
       </div>
 

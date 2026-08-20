@@ -1,0 +1,43 @@
+name: Salles de prière des aéroports (OSM)
+
+# ✈️ Relève, dans OpenStreetMap, les salles de prière SITUÉES DANS les
+# terminaux des aéroports ciblés — ce que la base des mosquées ne contient
+# pas (elle n'extrait que amenity=place_of_worship, pas room=prayer).
+# Sans ce relevé, aucune page « prayer room » n'est publiée : nous
+# n'inventons pas un terminal ni un niveau.
+#
+# Déclenchement manuel (codes IATA) + rafraîchissement mensuel.
+on:
+  workflow_dispatch:
+    inputs:
+      aeroports:
+        description: "Codes IATA séparés par des espaces (vide = les dix cibles)"
+        required: false
+        default: ""
+  schedule:
+    - cron: "41 5 5 * *" # le 5 de chaque mois, 05:41 UTC
+
+permissions:
+  contents: write
+
+jobs:
+  relever:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Relever via Overpass
+        run: node scripts/osm-aeroports.mjs ${{ github.event.inputs.aeroports }}
+      - name: Commit & push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/airports
+          if git diff --cached --quiet; then echo "Aucun changement."; else
+            git commit -m "data(osm): salles de prière des aéroports (© les contributeurs OpenStreetMap, ODbL)"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi

@@ -1310,7 +1310,8 @@ body:has(.accueil-ciel) .prayer-bar { display: none !important; }
 .v6-seo { padding: 0 26px; }
 .v6-seo section { padding: 34px 0; border-top: 1px solid rgba(201, 168, 76, .14); }
 .v6-seo section:first-child { border-top: none; }
-.v6-seo h2 { font-family: var(--font-playfair), 'Playfair Display', Georgia, serif; font-size: 26px; line-height: 1.2; margin: 0 0 14px; font-weight: 700; }
+/* Le h1 de l'accueil (le besoin) partage l'allure des titres du bloc. */
+.v6-seo h1, .v6-seo h2 { font-family: var(--font-playfair), 'Playfair Display', Georgia, serif; font-size: 26px; line-height: 1.2; margin: 0 0 14px; font-weight: 700; }
 .v6-seo h3 { font-size: 17px; font-weight: 700; margin: 0 0 6px; color: var(--creme); }
 .v6-seo p { font-size: 16px; line-height: 1.62; color: rgba(253, 250, 243, .74); margin: 0 0 14px; }
 .v6-seo strong { color: var(--or-clair); font-weight: 600; }
@@ -1733,3 +1734,48 @@ body:has(.autour-plein[data-vue="carte"]) .bottom-nav { display: none !important
 .imm-selecteur::-webkit-scrollbar { display: none; }
 .imm-sel { flex: 0 0 auto; min-height: 46px; padding: 0 15px; border-radius: 999px; display: flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 600; color: rgba(253,250,243,.7); }
 .imm-sel.on { background: linear-gradient(135deg, #D9BE6C, #C9A84C); color: #0A1509; }
+
+/* ── 📜 LE SOCLE SSR DES PAGES VILLE (chantier SEO du 20 août) ──────────
+   Le contenu que Google lit : rendu par le SERVEUR, sous le flux, dans le
+   noir du design system. Il n'est pas caché — un contenu masqué ne compte
+   pas — il vit sous l'écran d'immersion, atteignable en continuant de
+   défiler la page. */
+.sv { background: #060E08; color: #FDFAF3; padding: 40px 0 72px; border-top: 1px solid rgba(201,168,76,.22); }
+.sv-in { max-width: 760px; margin: 0 auto; padding: 0 18px; }
+.sv-h1 { font-family: 'Playfair Display', serif; font-size: 30px; line-height: 1.15; font-weight: 700; margin: 0 0 16px; color: #FDFAF3; }
+.sv-h2 { font-family: 'Playfair Display', serif; font-size: 22px; line-height: 1.2; font-weight: 700; margin: 34px 0 12px; color: #C9A84C; }
+.sv-chapeau { font-size: 17px; line-height: 1.6; margin: 0 0 14px; color: rgba(253,250,243,.92); }
+.sv-p { font-size: 16px; line-height: 1.65; margin: 0 0 14px; color: rgba(253,250,243,.82); }
+.sv-liste { list-style: none; padding: 0; margin: 0 0 14px; display: grid; gap: 8px; }
+.sv-liste li { font-size: 15px; line-height: 1.45; padding: 10px 12px; border-radius: 10px; background: rgba(253,250,243,.05); }
+.sv-gris { color: rgba(253,250,243,.55); }
+.sv-faits { display: grid; grid-template-columns: auto 1fr; gap: 8px 16px; margin: 0; font-size: 15px; }
+.sv-faits dt { color: #C9A84C; font-weight: 600; }
+.sv-faits dd { margin: 0; color: rgba(253,250,243,.85); }
+.sv-liens { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+.sv-liens a { display: block; min-height: 56px; display: flex; align-items: center; padding: 10px 14px; border-radius: 12px;
+  border: 1px solid rgba(201,168,76,.3); color: #FDFAF3; text-decoration: none; font-size: 15px; }
+.sv-source { margin: 26px 0 0; font-size: 12px; color: rgba(253,250,243,.5); }
+@media (min-width: 900px) {
+  .sv-h1 { font-size: 40px; }
+  .sv-h2 { font-size: 26px; }
+  .sv-liste { grid-template-columns: 1fr 1fr; }
+  .sv-liens { grid-template-columns: 1fr 1fr; }
+}
+
+/* 🎬 LE FEED ET SON SOCLE — la scène.
+   Le socle SSR vit SOUS le flux, dans le même document. Sans cette règle,
+   la barre de flux et le fil (position: fixed) restaient collés à l'écran
+   par-dessus le texte du socle quand on continuait à défiler. Rendus
+   absolus dans la scène, ils défilent avec le flux et le quittent pour de
+   bon. La couche pratique, elle, reste plein écran. */
+.imm-scene { position: relative; }
+.imm-scene > div > .imm-selecteur,
+.imm-scene > div > .imm-fil,
+.imm-scene > .imm-selecteur,
+.imm-scene > .imm-fil { position: absolute; }
+.imm-scene > div > .imm-fil,
+.imm-scene > .imm-fil { top: 50svh; }
+/* Le fil compte un point par panneau : à 354 villes, il débordait du feed
+   et ses derniers points flottaient sur le socle. Il reste dans l'écran. */
+.imm-fil { max-height: 62svh; overflow: hidden; }

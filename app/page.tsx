@@ -32,10 +32,11 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: { absolute: title },
     description,
-    alternates: {
-      canonical: siteUrl,
-      languages: { fr: FR_URL, en: EN_URL, 'x-default': EN_URL },
-    },
+    // ⚠️ Plus de hreflang ici (20 août) : l'accueil français est un guide,
+    // l'accueil anglais est un feed de 354 villes. Ce ne sont plus deux
+    // traductions d'une même page — l'annoncer ferait passer l'un des deux
+    // pour un doublon secondaire.
+    alternates: { canonical: siteUrl },
     openGraph: { title, description, url: siteUrl },
   }
 }

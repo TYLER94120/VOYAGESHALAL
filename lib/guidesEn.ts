@@ -8,7 +8,7 @@ export const guidesEn: Guide[] = [
   {
     slug: 'halal-travel-for-beginners',
     lang: 'en',
-    title: 'Halal Travel for Beginners: Everything You Need to Know',
+    title: 'Halal Travel for Beginners: Where to Start, Step by Step',
     description: 'What halal travel really means, how to find halal food and prayer spaces abroad, and the easiest destinations to start with. The complete starter guide.',
     coverImage: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&q=80',
     category: 'Practical',
@@ -100,7 +100,7 @@ export const guidesEn: Guide[] = [
   {
     slug: 'halal-hotels-complete-guide',
     lang: 'en',
-    title: 'Halal Hotels: Everything You Need to Know Before Booking',
+    title: 'Halal Hotels: What to Check Before You Book',
     description: 'Fully halal vs halal-friendly, the 7 criteria that matter, the best booking platforms and our recommendations by destination.',
     coverImage: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=80',
     category: 'Accommodation',
@@ -120,7 +120,7 @@ export const guidesEn: Guide[] = [
   {
     slug: 'traveling-during-ramadan',
     lang: 'en',
-    title: 'Traveling During Ramadan: The Complete Guide for Muslims',
+    title: 'Traveling During Ramadan: Fasting on Planes and Time Zones',
     description: 'Is traveling during Ramadan a good idea? The best destinations, fasting travel tips and unique Ramadan experiences around the world.',
     coverImage: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&q=80',
     category: 'Practical',
@@ -140,7 +140,7 @@ export const guidesEn: Guide[] = [
   {
     slug: 'umrah-2026-complete-guide',
     lang: 'en',
-    title: 'Umrah 2026: The Complete Guide to Prepare Your Pilgrimage',
+    title: 'Umrah 2026: How to Prepare Your Pilgrimage, Step by Step',
     description: 'Umrah visa steps, best periods, realistic 2026 budget, the key rituals and essential practical tips for a serene pilgrimage.',
     coverImage: '/guides/medine-j1.jpg',
     category: 'Spirituality',
@@ -220,7 +220,7 @@ export const guidesEn: Guide[] = [
   {
     slug: 'find-a-mosque-anywhere',
     lang: 'en',
-    title: 'Find a Mosque Anywhere in the World: The Complete Guide',
+    title: 'Find a Mosque Anywhere in the World, in Three Taps',
     description: 'Apps, tools and tips to locate the nearest mosque while traveling, in any country — plus what to do when there is no mosque around.',
     coverImage: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&q=80',
     category: 'Practical',
