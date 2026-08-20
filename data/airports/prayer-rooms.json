@@ -1,6 +1,786 @@
 {
- "genere": null,
+ "genere": "2026-08-20",
  "source": "OpenStreetMap (ODbL)",
- "_note": "Rempli par scripts/osm-aeroports.mjs (workflow « Salles de prière des aéroports (OSM) »). Tant qu'un aéroport n'est pas relevé, sa page n'existe pas : nous n'inventons ni terminal ni niveau.",
- "aeroports": []
+ "aeroports": [
+  {
+   "iata": "SIN",
+   "slug": "changi-singapore",
+   "nom": "Singapore Changi Airport",
+   "lat": 1.3510909,
+   "lng": 103.9950913,
+   "pays": null,
+   "osmId": "w174037464",
+   "lieux": [],
+   "releve": "2026-08-20"
+  },
+  {
+   "iata": "DOH",
+   "slug": "doha-hamad",
+   "nom": "Hamad International Airport",
+   "lat": 25.2749704,
+   "lng": 51.6049263,
+   "pays": "QA",
+   "osmId": "r18055231",
+   "lieux": [
+    {
+     "id": "w767359130",
+     "lat": 25.2581668,
+     "lng": 51.6148908,
+     "nom": "Airport Mosque",
+     "type": "mosque",
+     "indoor": false
+    }
+   ],
+   "releve": "2026-08-20"
+  },
+  {
+   "iata": "DXB",
+   "slug": "dubai-airport",
+   "nom": "Dubai International Airport",
+   "lat": 25.251561,
+   "lng": 55.3702009,
+   "pays": null,
+   "osmId": "w1429712446",
+   "lieux": [
+    {
+     "id": "n7245065985",
+     "lat": 25.2194763,
+     "lng": 55.3873494,
+     "nom": "Jassmi Masjid",
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "n12503940950",
+     "lat": 25.2394228,
+     "lng": 55.3595711,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w39492158",
+     "lat": 25.272509,
+     "lng": 55.3442517,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w146036803",
+     "lat": 25.254586,
+     "lng": 55.3989859,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w192462631",
+     "lat": 25.230236,
+     "lng": 55.3600442,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w224202485",
+     "lat": 25.2538689,
+     "lng": 55.3343378,
+     "nom": "Sheikh Hamdan Mosque",
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w244249816",
+     "lat": 25.254615,
+     "lng": 55.3921982,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w244250020",
+     "lat": 25.2456068,
+     "lng": 55.4016175,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w244250021",
+     "lat": 25.2459351,
+     "lng": 55.3942314,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w244250022",
+     "lat": 25.2502495,
+     "lng": 55.4011092,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w244250023",
+     "lat": 25.2424192,
+     "lng": 55.3992897,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w244497634",
+     "lat": 25.2634645,
+     "lng": 55.3834526,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w244497635",
+     "lat": 25.2711064,
+     "lng": 55.370647,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w244497636",
+     "lat": 25.2620457,
+     "lng": 55.3770205,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w244497637",
+     "lat": 25.2664882,
+     "lng": 55.3709638,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w244497638",
+     "lat": 25.2694114,
+     "lng": 55.3612514,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w244497639",
+     "lat": 25.2645532,
+     "lng": 55.3785792,
+     "nom": "Masjed Abullah Bin Omar",
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w244497640",
+     "lat": 25.2572801,
+     "lng": 55.3835675,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w244497641",
+     "lat": 25.2727655,
+     "lng": 55.3629923,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w244497642",
+     "lat": 25.2715953,
+     "lng": 55.3662238,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w244497643",
+     "lat": 25.2676969,
+     "lng": 55.3664275,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w245390213",
+     "lat": 25.262639,
+     "lng": 55.3972732,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w245390214",
+     "lat": 25.2611352,
+     "lng": 55.3935261,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w245390215",
+     "lat": 25.2607407,
+     "lng": 55.4035274,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w245390216",
+     "lat": 25.2591982,
+     "lng": 55.3967237,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w245390217",
+     "lat": 25.2603104,
+     "lng": 55.3948056,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w245390218",
+     "lat": 25.2587876,
+     "lng": 55.399945,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w245390219",
+     "lat": 25.2668031,
+     "lng": 55.394339,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w245394651",
+     "lat": 25.2592754,
+     "lng": 55.4048985,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w245436289",
+     "lat": 25.2663229,
+     "lng": 55.3830608,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w245436291",
+     "lat": 25.2685355,
+     "lng": 55.3895585,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w245436292",
+     "lat": 25.2633733,
+     "lng": 55.3905506,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w245436293",
+     "lat": 25.2707611,
+     "lng": 55.387861,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w245436295",
+     "lat": 25.2685351,
+     "lng": 55.3861105,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w245436296",
+     "lat": 25.2673626,
+     "lng": 55.3919693,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w245925910",
+     "lat": 25.275383,
+     "lng": 55.3720762,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w245925913",
+     "lat": 25.2709293,
+     "lng": 55.3790477,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w245925915",
+     "lat": 25.2732284,
+     "lng": 55.3751492,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w245972399",
+     "lat": 25.2741485,
+     "lng": 55.342405,
+     "nom": "مسجد سلامة صالح بن لوتاه رمز 222",
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w245975341",
+     "lat": 25.2581639,
+     "lng": 55.3902595,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w246257205",
+     "lat": 25.2685807,
+     "lng": 55.4026024,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w246257208",
+     "lat": 25.2762633,
+     "lng": 55.3650637,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w256407003",
+     "lat": 25.2791202,
+     "lng": 55.3465886,
+     "nom": "Masjid Khalifa bin Sultan Mosque",
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w256407054",
+     "lat": 25.282231,
+     "lng": 55.3515852,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w296422645",
+     "lat": 25.2334501,
+     "lng": 55.3829491,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w296422646",
+     "lat": 25.2337874,
+     "lng": 55.3825568,
+     "nom": "Grand Mosque Rashidiya",
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w334192797",
+     "lat": 25.286094,
+     "lng": 55.3691419,
+     "nom": "Burhani / Bohri Masjid",
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w361273393",
+     "lat": 25.2612975,
+     "lng": 55.3797168,
+     "nom": "Masjed Omar Bin Khattab",
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w415832244",
+     "lat": 25.2661562,
+     "lng": 55.3602573,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w437963120",
+     "lat": 25.2447875,
+     "lng": 55.3403116,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w437963197",
+     "lat": 25.282294,
+     "lng": 55.3515009,
+     "nom": "Fathima Al Zarouni Masjid",
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w499329996",
+     "lat": 25.2238643,
+     "lng": 55.3823886,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w499332025",
+     "lat": 25.2235785,
+     "lng": 55.3794159,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w499951888",
+     "lat": 25.2288953,
+     "lng": 55.388368,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w499988584",
+     "lat": 25.2270793,
+     "lng": 55.3831043,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w501820853",
+     "lat": 25.2816653,
+     "lng": 55.3900173,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w502496977",
+     "lat": 25.2337739,
+     "lng": 55.3509123,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w503407205",
+     "lat": 25.2380403,
+     "lng": 55.3514165,
+     "nom": "Sheikh Hamdan Bin Rashid Masjid",
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w503594290",
+     "lat": 25.2419717,
+     "lng": 55.3464386,
+     "nom": "Masjid Bin Darrai",
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w627288034",
+     "lat": 25.2546089,
+     "lng": 55.3850318,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w627292093",
+     "lat": 25.2579066,
+     "lng": 55.3383491,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w1113609946",
+     "lat": 25.2473987,
+     "lng": 55.3506826,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w1115967454",
+     "lat": 25.2483013,
+     "lng": 55.3906483,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w1117790817",
+     "lat": 25.27268,
+     "lng": 55.3630067,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w1117790818",
+     "lat": 25.2726028,
+     "lng": 55.3628789,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w1119541167",
+     "lat": 25.2637551,
+     "lng": 55.3944175,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w1119563227",
+     "lat": 25.2614681,
+     "lng": 55.3917407,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w1125155559",
+     "lat": 25.2573031,
+     "lng": 55.3836984,
+     "type": "mosque",
+     "indoor": false
+    }
+   ],
+   "releve": "2026-08-20"
+  },
+  {
+   "iata": "LGW",
+   "slug": "gatwick",
+   "nom": "London Gatwick Airport",
+   "lat": 51.1540929,
+   "lng": -0.1884007,
+   "pays": null,
+   "osmId": "w260720166",
+   "lieux": [
+    {
+     "id": "n4894142621",
+     "lat": 51.1732336,
+     "lng": -0.1611853,
+     "nom": "Gatwick Muslim Centre",
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w424502143",
+     "lat": 51.1310199,
+     "lng": -0.1864385,
+     "nom": "Langley Green Islamic Centre & Mosque",
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w424606819",
+     "lat": 51.1264477,
+     "lng": -0.1926709,
+     "nom": "Noor Mosque",
+     "type": "mosque",
+     "indoor": false
+    }
+   ],
+   "releve": "2026-08-20"
+  },
+  {
+   "iata": "LHR",
+   "slug": "heathrow",
+   "nom": "Heathrow Airport",
+   "lat": 51.4677522,
+   "lng": -0.4547736,
+   "pays": null,
+   "osmId": "r14001268",
+   "lieux": [
+    {
+     "id": "w23548668",
+     "lat": 51.4430645,
+     "lng": -0.4141668,
+     "nom": "Feltham Masjid",
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w852636676",
+     "lat": 51.5013862,
+     "lng": -0.4405849,
+     "nom": "Hayes Welfare Association & Abdulla Masjid",
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w965357893",
+     "lat": 51.4782978,
+     "lng": -0.4069979,
+     "nom": "Masjid us Sunnah",
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w1172463833",
+     "lat": 51.4811809,
+     "lng": -0.4154874,
+     "nom": "Heathrow Jamia Masjid",
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w1172473257",
+     "lat": 51.4470205,
+     "lng": -0.4583592,
+     "nom": "Ashford & Staines Community Centre",
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w1172473704",
+     "lat": 51.4539735,
+     "lng": -0.4041653,
+     "nom": "Feltham Hira Centre",
+     "type": "mosque",
+     "indoor": false
+    }
+   ],
+   "releve": "2026-08-20"
+  },
+  {
+   "iata": "IST",
+   "slug": "istanbul-airport",
+   "nom": "Istanbul Airport",
+   "lat": 41.2752535,
+   "lng": 28.7521009,
+   "pays": null,
+   "osmId": "w812730062",
+   "lieux": [
+    {
+     "id": "r20962005",
+     "lat": 41.2538717,
+     "lng": 28.745294,
+     "nom": "Ali Kuşçu Camii",
+     "type": "mosque",
+     "indoor": false
+    }
+   ],
+   "releve": "2026-08-20"
+  },
+  {
+   "iata": "JED",
+   "slug": "jeddah",
+   "nom": "King Abdul Aziz International Airport",
+   "lat": 21.6846728,
+   "lng": 39.1615081,
+   "pays": null,
+   "osmId": "r4049921",
+   "lieux": [
+    {
+     "id": "w550729882",
+     "lat": 21.6875152,
+     "lng": 39.180997,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w550729894",
+     "lat": 21.6800426,
+     "lng": 39.1845122,
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w1257624150",
+     "lat": 21.6679551,
+     "lng": 39.1272565,
+     "type": "mosque",
+     "indoor": false
+    }
+   ],
+   "releve": "2026-08-20"
+  },
+  {
+   "iata": "JFK",
+   "slug": "jfk",
+   "nom": "John F. Kennedy International Airport",
+   "lat": 40.6429062,
+   "lng": -73.7858125,
+   "pays": null,
+   "osmId": "w158042008",
+   "lieux": [
+    {
+     "id": "n6243433735",
+     "lat": 40.6771981,
+     "lng": -73.7907266,
+     "nom": "Masjid Al-Hamdililah",
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w282392380",
+     "lat": 40.6688953,
+     "lng": -73.8142421,
+     "nom": "Masjid Ahlul Qur'aan Wa Sunnah",
+     "type": "mosque",
+     "indoor": false
+    }
+   ],
+   "releve": "2026-08-20"
+  },
+  {
+   "iata": "KUL",
+   "slug": "kuala-lumpur-klia",
+   "nom": "Kuala Lumpur International Airport",
+   "lat": 2.7431652,
+   "lng": 101.7004552,
+   "pays": null,
+   "osmId": "r11579113",
+   "lieux": [
+    {
+     "id": "n8462953984",
+     "lat": 2.7550737,
+     "lng": 101.7027596,
+     "nom": "Musolla KLIA",
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "n10127547941",
+     "lat": 2.7588773,
+     "lng": 101.7317963,
+     "nom": "Surau",
+     "mixite": "",
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "n10127547944",
+     "lat": 2.7589313,
+     "lng": 101.7321043,
+     "nom": "Surau",
+     "mixite": "",
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "n13677371452",
+     "lat": 2.7684137,
+     "lng": 101.6812262,
+     "nom": "Surau",
+     "type": "mosque",
+     "indoor": false
+    },
+    {
+     "id": "w1289790878",
+     "lat": 2.7685981,
+     "lng": 101.6981421,
+     "type": "mosque",
+     "indoor": false
+    }
+   ],
+   "releve": "2026-08-20"
+  },
+  {
+   "iata": "AMS",
+   "slug": "schiphol",
+   "nom": "Amsterdam Airport Schiphol",
+   "lat": 52.3267805,
+   "lng": 4.7577653,
+   "pays": null,
+   "osmId": "r12470437",
+   "lieux": [
+    {
+     "id": "w275092636",
+     "lat": 52.3580335,
+     "lng": 4.7867718,
+     "nom": "Rabitha Al Islamia",
+     "type": "mosque",
+     "indoor": false
+    }
+   ],
+   "releve": "2026-08-20"
+  }
+ ]
 }
