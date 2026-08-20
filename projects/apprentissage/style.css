@@ -1408,3 +1408,22 @@ a.lien-bas:hover { color: var(--creme); }
    tournee. On le distingue sans le survendre. */
 .rangee.voix { background: rgba(201, 168, 76, 0.07); }
 .rangee.voix .rl { color: var(--or-clair); }
+
+/* « Continuer avec » : deux lecons voisines, en pied de lecon. Pose le
+   17 aout — sept lecons ne recevaient qu'un seul lien interne, celui de la
+   page des lecons, et Google trouve mal une page citee une seule fois. */
+.suite-lecons {
+  display: flex; flex-direction: column; gap: 8px;
+  margin: 0 0 22px;
+}
+.suite-lecons a {
+  display: flex; align-items: center;
+  min-height: 48px;
+  padding: 10px 14px;
+  background: rgba(201, 168, 76, 0.08);
+  border: 1px solid var(--trait);
+  border-radius: 11px;
+  color: var(--or-clair);
+  font-size: 14px; font-weight: 600;
+  text-decoration: none;
+}

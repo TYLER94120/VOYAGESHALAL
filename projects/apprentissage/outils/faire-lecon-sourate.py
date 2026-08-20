@@ -224,16 +224,31 @@ def carte_question(rang, total, q, etape):
 
 def description(nom, num, k):
     """Entre 150 et 160 caracteres, et rien qui ne soit vrai."""
-    base = ("Comprendre la sourate %s verset par verset : le texte arabe, la "
-            "traduction du sens par Muhammad Hamidullah et la reference de "
-            "chacun des %s versets." % (nom, en_lettres(k)))
+    # Plusieurs bases, de la plus riche a la plus courte : les noms longs
+    # (« At-Takathur », « Az-Zalzala ») faisaient deborder la seule base
+    # d'origine au-dela de 155 caracteres, la ou Google coupe.
+    bases = [
+        "Le sens des %s versets de la sourate %s, verset par verset : texte "
+        "arabe, traduction de Muhammad Hamidullah, et la reference de chacun."
+        % (en_lettres(k), nom),
+        "Le sens de la sourate %s verset par verset : texte arabe, traduction "
+        "de Muhammad Hamidullah, et la reference de chacun des %s versets."
+        % (nom, en_lettres(k)),
+        "Sourate %s expliquee verset par verset : texte arabe, traduction de "
+        "Muhammad Hamidullah, reference de chacun des %s versets."
+        % (nom, en_lettres(k)),
+    ]
+    base = bases[0]
     suites = ['', ' La %de sourate du Coran.' % num,
               ' Sourate %d du Coran, %d versets.' % (num, k),
               ' Une lecon courte, chaque verset avec sa source.',
               ' La %de sourate du Coran, lue et expliquee.' % num]
-    for s in suites:
-        if 150 <= len(base + s) <= 160:
-            return base + s
+    # 155 et non 160 : au-dela, Google coupe la description dans les resultats
+    # (regle du 17 aout). On vise 140-155 pour garder de la marge.
+    for b in bases:
+        for s in suites:
+            if 140 <= len(b + s) <= 155:
+                return b + s
     # Aucun assemblage ne tombe dans la fenetre : on le dit au lieu de tricher.
     return None
 
