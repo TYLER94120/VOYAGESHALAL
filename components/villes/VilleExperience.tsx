@@ -71,6 +71,12 @@ function ImmersionAvecPratique({ ville, en, pool, score, ton, niveau }: {
   const t = (fr: string, an: string) => (en ? an : fr)
   const [section, setSection] = useState<string | null>(null)
 
+  // « Build my days » depuis My saves : ?construire=1 ouvre directement le
+  // planning (qui démarre avec les lieux gardés).
+  useEffect(() => {
+    if (new URLSearchParams(window.location.search).get('construire') === '1') setSection('planning')
+  }, [])
+
   // La couche s'ouvre déjà défilée sur la bonne section.
   useEffect(() => {
     if (!section) return

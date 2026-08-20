@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation'
 import { CRITERES_DEFAUT, lireDemande, relance, resumerCriteres, type Categorie, type Criteres } from '@/lib/criteres'
 import { top3 } from '@/lib/top3.mjs'
 import TrajetMin, { StatutOuverture } from '@/components/lieux/TrajetMin'
+import FluxLieux from '@/components/lieux/FluxLieux'
 import { lancerItineraire } from '@/lib/itineraire'
 import { appelerLieux } from '@/lib/appelLieux'
 import { lireIntention } from '@/lib/villesIndex'
@@ -228,6 +229,11 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
   const [ficheOuverte, setFicheOuverte] = useState<string | null>(null) // 🛵 la fiche dépliée par ℹ
   // 🍣 « Une envie précise ? » — un tap, jamais de clavier (itération 3).
   const [feuilleEnvies, setFeuilleEnvies] = useState(false)
+  // 🎞 Le swipe des résultats (ordre du 20 août) : s'ouvre tout seul quand
+  // les résultats d'un mode arrivent — la liste + la carte restent à un
+  // tap (« Liste & carte »). NOTE : le brief fondateur disait « Around me
+  // reste un top 3 en liste » ; l'ordre du 20 août l'emporte, signalé.
+  const [fluxSwipe, setFluxSwipe] = useState(false)
   const [envie, setEnvie] = useState<{ mot: string; requete: string } | null>(null)
   // Les envies RÉELLEMENT disponibles (compteurs serveur, cache 10 min) —
   // null = comptage indisponible, on retombe sur la grille fixe sans
@@ -698,6 +704,22 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
     if (scooter) return top3(fiches.filter((f) => typeof f.lat === 'number'), crit.categorie ?? 'manger')
     return triActif ? appliquer(toutes, triActif).slice(0, 6) : fiches
   }, [scooter, crit.categorie, triActif, toutes, fiches])
+
+  /** L'ordre du flux swipe (règles du 20 août) : mosquées et activités de
+   *  la plus proche à la moins proche ; restos du mieux noté (avec
+   *  beaucoup d'avis) au moins bien noté. Fiches + autres — rien d'amputé. */
+  const pourFluxSwipe = useMemo(() => {
+    const tous = toutes.filter((f) => typeof f.lat === 'number')
+    if ((crit.categorie ?? 'manger') === 'manger') {
+      return [...tous].sort((a, b) => (b.note ?? 0) - (a.note ?? 0) || (b.nbAvis ?? 0) - (a.nbAvis ?? 0))
+    }
+    return [...tous].sort((a, b) => a.distanceM - b.distanceM)
+  }, [toutes, crit.categorie])
+  // Les résultats arrivent → le swipe s'ouvre (scooter seulement).
+  useEffect(() => {
+    if (scooter && etape === 'resultat' && pourFluxSwipe.length >= 2) setFluxSwipe(true)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [scooter, etape, fiches])
 
   /** Le délai, écrit comme on le dirait. Zéro seconde connue → « bientôt ». */
   function attente(secondes: number | undefined, anglais: boolean): string {
@@ -1237,6 +1259,12 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
         )}
         {!titrePage && aVoir.length > 0 && (
           <div style={{ marginTop: 14, display: 'flex', flexDirection: 'column', gap: 12 }}>
+            {scooter && pourFluxSwipe.length >= 2 && !fluxSwipe && (
+              <button onClick={() => setFluxSwipe(true)}
+                style={{ minHeight: 50, borderRadius: 999, border: '1px solid rgba(201,168,76,0.4)', background: 'rgba(201,168,76,0.1)', color: 'var(--or-clair, #E9D9A6)', fontWeight: 700, fontSize: 15, cursor: 'pointer' }}>
+                {t(`Swiper les ${pourFluxSwipe.length} résultats`, `Swipe the ${pourFluxSwipe.length} results`)}
+              </button>
+            )}
             {aVoir.map((f, i) => (
               scooter ? (
                 <FicheScooter key={f.id ?? i} f={f} i={i} en={en}
@@ -1381,6 +1409,10 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
               : ''}
             {t('Données cartographiques © les contributeurs OpenStreetMap.', 'Map data © OpenStreetMap contributors.')}
           </p>
+        )}
+        {scooter && fluxSwipe && (
+          <FluxLieux fiches={pourFluxSwipe} cat={(crit.categorie ?? 'manger') as 'mosquee' | 'manger' | 'activite'} en={en}
+            onFermer={() => setFluxSwipe(false)} />
         )}
     </Cadre>
   )

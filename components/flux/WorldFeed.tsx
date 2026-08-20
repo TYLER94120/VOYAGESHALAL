@@ -25,7 +25,12 @@ export interface VillePanneau {
 
 const CLE_WISHLIST = 'vh_wishlist_villes'
 
-export default function WorldFeed({ villes }: { villes: VillePanneau[] }) {
+export default function WorldFeed({ villes, index = [] }: {
+  villes: VillePanneau[]
+  /** Les 354 villes du guide (slug + nom réels) pour la recherche. */
+  index?: { slug: string; nom: string; pays: string }[]
+}) {
+  const [recherche, setRecherche] = useState<string | null>(null)
   const [wishlist, setWishlist] = useState<string[]>([])
   const [toast, setToast] = useState('')
   const [actif, setActif] = useState(0)
@@ -79,7 +84,44 @@ export default function WorldFeed({ villes }: { villes: VillePanneau[] }) {
   return (
     <div style={{ position: 'relative' }}>
       {/* Seul flux existant en phase 1 : World. */}
-      <nav className="imm-selecteur" aria-label="Feeds"><span className="imm-sel on">World</span></nav>
+      <nav className="imm-selecteur" aria-label="Feeds">
+        <span className="imm-sel on">World</span>
+        {index.length > 0 && <button className="imm-sel" onClick={() => setRecherche('')} aria-label="Find a city">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden><path d="M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14zM16 16l5 5" /></svg>
+          Find a city
+        </button>}
+        <Link className="imm-sel" href="/saves" style={{ textDecoration: 'none' }}>♡ My saves</Link>
+      </nav>
+
+      {/* 🔎 La recherche de ville : toutes les villes du guide, pas que le
+          flux. Fermeture au tap extérieur (standard). */}
+      {recherche !== null && (
+        <div className="imm-voile" onClick={() => setRecherche(null)}>
+          <div className="imm-feuille" onClick={(e) => e.stopPropagation()}>
+            <div className="imm-poignee" />
+            <h3>Find a city</h3>
+            <input autoFocus value={recherche} onChange={(e) => setRecherche(e.target.value)}
+              placeholder="Istanbul, Marrakesh, Kuala Lumpur…" aria-label="Find a city"
+              style={{ width: '100%', minHeight: 54, borderRadius: 999, border: '1px solid rgba(253,250,243,.16)', background: 'rgba(253,250,243,.05)', color: '#FDFAF3', padding: '0 18px', fontSize: 16 }} />
+            <div style={{ maxHeight: '40svh', overflowY: 'auto', marginTop: 8 }}>
+              {(recherche.trim().length >= 2
+                ? index.filter((c) => {
+                    const q = recherche.trim().toLowerCase()
+                    return c.nom.toLowerCase().includes(q) || c.slug.includes(q)
+                  }).slice(0, 8)
+                : []
+              ).map((c) => (
+                <Link key={c.slug} className="imm-f-item" href={`/destinations/${c.slug}`} style={{ textDecoration: 'none' }}>
+                  <span>{c.nom}<small>{c.pays}</small></span>
+                </Link>
+              ))}
+              {recherche.trim().length >= 2 && !index.some((c) => c.nom.toLowerCase().includes(recherche.trim().toLowerCase()) || c.slug.includes(recherche.trim().toLowerCase())) && (
+                <p style={{ color: 'rgba(253,250,243,.55)', fontSize: 14, margin: '12px 0 4px' }}>Not in the guide yet — {index.length} cities covered so far.</p>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
       <div className="imm-fil" aria-hidden>
         {villes.map((v, i) => <i key={v.slug} className={i === actif ? 'on' : undefined} />)}
       </div>

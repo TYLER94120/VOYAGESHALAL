@@ -32,9 +32,16 @@ function IcPartage() {
   return <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden><path d="M12 3v12M8 7l4-4 4 4M5 13v6h14v-6" /></svg>
 }
 
-const ETIQUETTES_DEFAUT: Record<string, string> = {
-  monument: 'LIEU EMBLÉMATIQUE', experience: 'EXPÉRIENCE', joker: 'À NE PAS RATER', hotel: 'SANS ALCOOL', table: 'TABLE HALAL',
-}
+// ⚠️ hotel : « SANS ALCOOL » n'est JAMAIS un défaut — seul un hôtel
+// vérifié de notre base porte cette étiquette (posée par l'API).
+const etiquetteDefaut = (cat: string, en: boolean): string => ({
+  monument: en ? 'LANDMARK' : 'LIEU EMBLÉMATIQUE',
+  experience: en ? 'EXPERIENCE' : 'EXPÉRIENCE',
+  joker: en ? 'DON\u2019T MISS' : 'À NE PAS RATER',
+  hotel: en ? 'HOTEL' : 'HÔTEL',
+  table: en ? 'HALAL TABLE' : 'TABLE HALAL',
+  mosquee: en ? 'MOSQUE' : 'MOSQUÉE',
+}[cat] ?? (en ? 'PLACE' : 'LIEU'))
 
 export default function Immersion({ slug, nom, score, ton, niveau, pool, onOuvrir, en = false }: {
   slug: string; nom: string
@@ -47,6 +54,11 @@ export default function Immersion({ slug, nom, score, ton, niveau, pool, onOuvri
 }) {
   const t = (fr: string, an: string) => (en ? an : fr)
   const [ia, setIa] = useState<Ia | null>(null)
+  // Phase 2 (GoHalalTravel) : le même moteur porte 4 flux ville — Gems
+  // (le tirage), Eat, Sleep, Do. Une pilule de flux n'existe que si sa
+  // catégorie a au moins 3 lieux au-dessus des seuils : un bouton sans
+  // destination n'existe pas.
+  const [fluxActif, setFluxActif] = useState<'gems' | 'eat' | 'sleep' | 'pray' | 'do'>('gems')
   const [panneaux, setPanneaux] = useState<PanneauImmersion[]>([])
   const [gardes, setGardes] = useState<Garde[]>([])
   const [feuille, setFeuille] = useState(false)
@@ -103,7 +115,7 @@ export default function Immersion({ slug, nom, score, ton, niveau, pool, onOuvri
     sections.forEach((s) => obs.observe(s))
     sections[0]?.classList.add('imm-vu')
     return () => { clearTimeout(filet); obs.disconnect() }
-  }, [panneaux])
+  }, [panneaux, fluxActif])
 
   const direToast = (msg: string) => {
     setToast(msg)
@@ -151,21 +163,45 @@ export default function Immersion({ slug, nom, score, ton, niveau, pool, onOuvri
 
   const avecOsm = useMemo(() => pool.panneaux.some((p) => p.sources.includes('base_vh') || p.osmId), [pool])
 
+  const parNote = (a: PanneauImmersion, b: PanneauImmersion) => (b.note ?? 0) - (a.note ?? 0)
+  const fluxDispo = useMemo(() => ({
+    eat: pool.panneaux.filter((p) => p.cat === 'table').sort(parNote),
+    sleep: pool.panneaux.filter((p) => p.cat === 'hotel').sort(parNote),
+    pray: pool.panneaux.filter((p) => p.cat === 'mosquee').sort(parNote),
+    do: pool.panneaux.filter((p) => p.cat === 'monument' || p.cat === 'experience' || p.cat === 'joker').sort(parNote),
+  }), [pool])
+  const changerFlux = (f: typeof fluxActif) => {
+    setFluxActif(f)
+    fluxRef.current?.scrollTo({ top: 0 })
+    setActif(0)
+  }
+  const panneauxVisibles = fluxActif === 'gems' ? panneaux : fluxDispo[fluxActif]
+
   if (!panneaux.length) return null
 
-  const totalPanneaux = panneaux.length + 2
+  const totalPanneaux = panneauxVisibles.length + (fluxActif === 'gems' ? 2 : 1)
 
   return (
     <div style={{ position: 'relative' }}>
+      {/* Sélecteur de flux — domaine anglais (le FR garde son expérience) */}
+      {en && (fluxDispo.eat.length >= 3 || fluxDispo.do.length >= 3 || fluxDispo.sleep.length >= 3 || fluxDispo.pray.length >= 3) && (
+        <nav className="imm-selecteur" aria-label="Feeds">
+          <button className={`imm-sel${fluxActif === 'gems' ? ' on' : ''}`} onClick={() => changerFlux('gems')}>Gems</button>
+          {fluxDispo.eat.length >= 3 && <button className={`imm-sel${fluxActif === 'eat' ? ' on' : ''}`} onClick={() => changerFlux('eat')}>Eat</button>}
+          {fluxDispo.pray.length >= 3 && <button className={`imm-sel${fluxActif === 'pray' ? ' on' : ''}`} onClick={() => changerFlux('pray')}>Pray</button>}
+          {fluxDispo.sleep.length >= 3 && <button className={`imm-sel${fluxActif === 'sleep' ? ' on' : ''}`} onClick={() => changerFlux('sleep')}>Sleep</button>}
+          {fluxDispo.do.length >= 3 && <button className={`imm-sel${fluxActif === 'do' ? ' on' : ''}`} onClick={() => changerFlux('do')}>Do</button>}
+        </nav>
+      )}
       <button className="imm-pratique" onClick={() => setFeuille(true)}>☰ {t('Pratique', 'Essentials')}</button>
       <div className="imm-fil" aria-hidden>
         {Array.from({ length: totalPanneaux }).map((_, i) => <i key={i} className={i === actif ? 'on' : undefined} />)}
       </div>
 
       <div className="imm-flux" ref={fluxRef}>
-        {/* ===== 1. LE VERDICT (fixe) — jamais animé : le premier écran
-            doit être net à 100 % dès la première image (retour du 19 août,
-            « la première page s'affiche mal »). ===== */}
+        {/* ===== 1. LE VERDICT (fixe, flux Gems seulement) — jamais animé :
+            net à 100 % dès la première image. ===== */}
+        {fluxActif === 'gems' && (
         <section className="imm-panneau imm-stable">
           <div className="imm-fond" style={{ background: 'linear-gradient(180deg,#0E2A3F,#123227 50%,#060E08)' }} />
           {/* de l'air au-dessus de l'indice « Swipe » : il chevauchait le 3e fait */}
@@ -185,16 +221,18 @@ export default function Immersion({ slug, nom, score, ton, niveau, pool, onOuvri
           </div>
           <div className="imm-indice">{t('Swipe pour découvrir · double-tap = ♡', 'Swipe to explore · double-tap = ♡')}<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden><path d="m6 9 6 6 6-6" /></svg></div>
         </section>
+        )}
 
-        {/* ===== 2..N-1 : LE POOL, tiré au sort ===== */}
-        {panneaux.map((p, i) => (
+        {/* ===== 2..N-1 : le flux courant (Gems = tirage, Eat/Sleep/Do = la
+            catégorie triée par note) ===== */}
+        {panneauxVisibles.map((p, i) => (
           <section key={p.id} className="imm-panneau" onPointerUp={(e) => doubleTap(e, p)}>
             <div className="imm-fond" style={{ background: 'linear-gradient(180deg,#14263B,#060E08)' }} />
             <img className="imm-photo" src={p.photo} alt="" loading={i < 2 ? 'eager' : 'lazy'} fetchPriority={i === 0 ? 'high' : i === 1 ? 'auto' : 'low'}
               onError={(e) => e.currentTarget.remove()} />
             <div className="imm-contenu">
               <span className={`imm-etiquette ${p.badge ? 'imm-et-halal' : 'imm-et-type'}`} data-badge={p.badge}>
-                {p.badge ? `✓ ${p.badge === 'vert' ? t('HALAL VÉRIFIÉ', 'VERIFIED HALAL') : t('SIGNALÉ HALAL', 'REPORTED HALAL')}` : (p.etiquette ?? ETIQUETTES_DEFAUT[p.cat])}
+                {p.badge ? `✓ ${p.badge === 'vert' ? t('HALAL VÉRIFIÉ', 'VERIFIED HALAL') : t('SIGNALÉ HALAL', 'REPORTED HALAL')}` : (p.etiquette ?? etiquetteDefaut(p.cat, en))}
               </span>
               <h2 className="imm-h2">{p.nom}</h2>
               {p.conseil && <p className="imm-ia">{p.conseil}</p>}
@@ -244,6 +282,7 @@ export default function Immersion({ slug, nom, score, ton, niveau, pool, onOuvri
             <button className="imm-f-item" onClick={() => { setFeuille(false); onOuvrir('adresses') }}><span>{t('Toutes les tables halal', 'All halal tables')}<small>{t('l’annuaire complet', 'the full directory')}</small></span></button>
             <a className="imm-f-item" href={`/priere/${slug}`}><span>{t('Mosquées & horaires de prière', 'Mosques & prayer times')}<small>{t(`calculés pour ${nom}`, `computed for ${nom}`)}</small></span></a>
             <button className="imm-f-item" onClick={() => { setFeuille(false); onOuvrir('savoir') }}><span>{t('À savoir avant de partir', 'Before you land')}<small>{t('monnaie · transport · mots utiles', 'currency · transit · useful words')}</small></span></button>
+            {en && <a className="imm-f-item" href="/saves"><span>♡ My saves<small>every place you saved, ready to become your days</small></span></a>}
           </div>
         </div>
       )}
