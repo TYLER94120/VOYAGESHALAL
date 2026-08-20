@@ -5,12 +5,14 @@ import { readdirSync, readFileSync } from 'fs'
 import path from 'path'
 import type { Ville } from '@/lib/villeTypes'
 import VilleExperience from '@/components/villes/VilleExperience'
+import SocleVille from '@/components/villes/SocleVille'
 import { DestinationFaqSchema, DestinationSchema } from '@/components/SchemaOrg'
 import CitySync from '@/components/location/CitySync'
 import { cityEn } from '@/lib/poiI18n'
 import cityCoords from '@/lib/cityCoords.json'
 import { getDomainSEO, FR_URL, EN_URL } from '@/lib/domain'
 import { conforme } from '@/lib/conformite'
+import { compteurVille } from '@/lib/mosqueesOsm'
 import { dateGitVille, fmtMonthYear } from '@/lib/freshness'
 
 export const dynamicParams = false
@@ -54,7 +56,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ville.metaDescription ??
     `🕌 Guide halal ${ville.nom} 2026 : Halal Trust Score™ ${ville.score_halal}/5 · ${restos.toLocaleString('fr-FR')} restaurants halal · Horaires de prière en temps réel${mosquees ? ` · ${mosquees.toLocaleString('fr-FR')} mosquées` : ''} · Confirmé par la communauté.`
   const ogImage = ville.image ?? ville.image_hero
-  const nbRestos = ville.restaurants?.length ?? 0
+  // Le chiffre annoncé à Google doit être celui de la page : les bars,
+  // lounges à chicha et boîtes de nuit sont écartés de la liste affichée
+  // (lib/conformite), ils ne doivent pas gonfler le compte du titre.
+  const nbRestos = (ville.restaurants ?? []).filter(
+    (r: { nom?: string; type?: string; halalConfidence?: string }) => conforme(r.nom, r.type, r.halalConfidence),
+  ).length
   const nbMosq = ville.mosqueesPrincipales?.length ?? mosquees ?? 0
   const nbHotels = ville.hotels?.length ?? 0
 
@@ -76,19 +83,31 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const nomLocal = (isEN && ville.nom_en) ? ville.nom_en : ville.nom
   // Se replie sur les noms longs (« Bandar Seri Begawan », « Al-Quds
   // (Jérusalem) », « La Nouvelle-Orléans ») — voir lib/titre-seo.
+  // 🔎 4. LE BESOIN D'ABORD, ET UN CHIFFRE QUI SE VÉRIFIE (ordre du
+  //    20 août). « Marrakech Halal Guide 2026 » décrivait le CATALOGUE ;
+  //    « Où prier à Marrakech : 147 lieux de prière » décrit le BESOIN de
+  //    celui qui tape. Le mot « Guide » est retiré des deux langues : la
+  //    page Marrakech le portait et a fait zéro clic sur 109 affichages
+  //    en première page. Le chiffre est le MÊME que celui du socle rendu
+  //    sur la page — compté, jamais annoncé à l'aveugle.
+  const nbPriere = compteurVille(city) ?? nbMosq
   const title = isEN
-    ? titreSeo([
-        `${nomLocal} Halal Guide 2026: Restaurants, Mosques & Prayer`,
-        `${nomLocal} Halal Guide 2026: Restaurants & Mosques`,
-        `${nomLocal} Halal Guide: Restaurants & Mosques`,
-        `${nomLocal} Halal Guide 2026`,
-      ])
-    : titreSeo([
-        `${nomLocal} Halal 2026 : Restaurants, Mosquées & Prière`,
-        `${nomLocal} Halal 2026 : Restaurants & Mosquées`,
-        `${nomLocal} Halal : Restaurants & Mosquées`,
-        `${nomLocal} Halal 2026`,
-      ])
+    ? (nbPriere > 0
+        ? titreSeo([
+            `Where to pray in ${nomLocal}: ${nbPriere} prayer places, halal food`,
+            `Where to pray in ${nomLocal}: ${nbPriere} prayer places`,
+            `Where to pray in ${nomLocal}: ${nbPriere} mosques`,
+            `Where to pray in ${nomLocal}`,
+          ])
+        : titreSeo([`Halal travel in ${nomLocal}: mosques and halal food`, `Halal travel in ${nomLocal}`]))
+    : (nbPriere > 0
+        ? titreSeo([
+            `Où prier à ${nomLocal} : ${nbPriere} lieux de prière et restos halal`,
+            `Où prier à ${nomLocal} : ${nbPriere} lieux de prière`,
+            `Où prier à ${nomLocal} : ${nbPriere} mosquées`,
+            `Où prier à ${nomLocal}`,
+          ])
+        : titreSeo([`Voyager halal à ${nomLocal} : mosquées et restos`, `Voyager halal à ${nomLocal}`]))
   const chiffresEn = [
     nbRestos > 0 ? `${nbRestos} halal restaurants` : null,
     nbMosq > 0 ? `${nbMosq} mosques` : null,
@@ -99,15 +118,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     nbMosq > 0 ? `${nbMosq} mosquées` : null,
     nbHotels > 0 ? `${nbHotels} hôtels` : null,
   ].filter(Boolean).join(', ')
+  // La description COMPLÈTE le titre (qui porte déjà les lieux de prière)
+  // et annonce la preuve : source affichée, gratuit, sans compte. Sous
+  // 155 caractères, sinon Google la coupe.
   const description = isEN
-    ? `${chiffresEn || 'Halal addresses'} listed in ${nomLocal}, with prayer times, qibla and where to pray. Every listing carries its source.`.slice(0, 300)
-    : `${chiffresFr || 'Adresses halal'} référencés à ${nomLocal} : horaires de prière, qibla et où prier. Chaque adresse porte sa source.`.slice(0, 300)
+    ? `${chiffresEn || 'Halal addresses'} in ${nomLocal}, prayer times in the city's own time zone. Source shown on every listing. Free, no account.`.slice(0, 155)
+    : `${chiffresFr || 'Adresses halal'} à ${nomLocal}, horaires de prière au fuseau de la ville. Source affichée sur chaque adresse. Gratuit, sans compte.`.slice(0, 155)
   const ogTitle = isEN
     ? `${nomLocal} Halal Travel Guide 2026 — Muslim-Friendly`
     : `${nomLocal} Halal 2026 — Guide Voyage Musulman`
   const ogDesc = isEN
-    ? `Halal restaurants, nearby mosques and prayer times in ${nomLocal}. The complete guide for Muslim travel.`
-    : `Restaurants halal, mosquées proches et horaires de prière à ${nomLocal}. Le guide complet pour voyager halal.`
+    ? `Halal restaurants, nearby mosques and prayer times in ${nomLocal}. Every listing carries its source.`
+    : `Restaurants halal, mosquées proches et horaires de prière à ${nomLocal}. Chaque adresse porte sa source.`
 
   // Protection qualité : une fiche sans aucun contenu réel (0 resto, 0 mosquée,
   // 0 hôtel, 0 activité) dilue le domaine → noindex (mais on garde follow pour
@@ -120,14 +142,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: { absolute: title },
     description,
     ...(thin ? { robots: { index: false, follow: true } } : {}),
-    alternates: {
-      canonical: `${siteUrl}/destinations/${city}`,
-      languages: {
-        fr: `${FR_URL}/destinations/${city}`,
-        en: `${EN_URL}/destinations/${city}`,
-        'x-default': `${EN_URL}/destinations/${city}`,
-      },
-    },
+    // ⚠️ Plus de hreflang (20 août) : côté français la page ville prépare
+    // le voyage, côté anglais c'est l'immersion en plein écran avec ses
+    // flux. Même ville, contenus différents : pas une paire de traductions.
+    alternates: { canonical: `${siteUrl}/destinations/${city}` },
     openGraph: {
       title: ogTitle,
       description: ogDesc,
@@ -177,6 +195,15 @@ export default async function DestinationPage({ params }: Props) {
         restaurantsTotal: restaurantsConformes.length,
       }} />
 
+
+      {/* 📜 CHANTIER SEO DU 20 AOÛT — le socle rendu par le SERVEUR.
+          Test JavaScript désactivé sur cette page avant correction :
+          1 092 caractères, aucun <h1>, aucun <h2> — 354 pages invisibles
+          pour Google. Le socle rend ici, en HTML, le <h1> orienté besoin,
+          les compteurs réels, les noms des lieux et le maillage interne.
+          C'est la reprise assumée du « soit on le supprime, soit on le
+          refait » du 19 août : refait, en sombre, sous le flux. */}
+      <SocleVille ville={{ ...ville, restaurants: restaurantsConformes, restaurantsTotal: restaurantsConformes.length }} slug={city} en={isEN} />
 
       {/* 🧹 19 août, ordre de Mohamed après la mise en ligne de l'Immersion :
           « ce qui est en dessous [du flux], on le supprime parce que c'est

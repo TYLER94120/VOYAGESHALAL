@@ -87,8 +87,10 @@ function ImmersionAvecPratique({ ville, en, pool, score, ton, niveau }: {
 
   return (
     <>
-      {/* « La Mecque » sur le site anglais : le nom anglais de la base prime. */}
-    <Immersion slug={String(ville.slug ?? '')} nom={String((en && ville.nom_en) || ville.nom || '')} score={score} ton={ton} niveau={niveau} pool={pool} en={en} onOuvrir={setSection} />
+      {/* « La Mecque » sur le site anglais : le nom anglais de la base prime.
+          La scène garde la barre de flux solidaire du flux : le socle SSR
+          qui suit ne doit rien avoir de collé par-dessus. */}
+    <div className="imm-scene"><Immersion slug={String(ville.slug ?? '')} nom={String((en && ville.nom_en) || ville.nom || '')} score={score} ton={ton} niveau={niveau} pool={pool} en={en} onOuvrir={setSection} /></div>
       {section && (
         <div id={`couche-${section}`} className="imm-couche">
           <button className="imm-couche-fermer" onClick={() => setSection(null)} aria-label={t('Fermer', 'Close')}>

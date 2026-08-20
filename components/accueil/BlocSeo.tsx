@@ -43,7 +43,12 @@ export default function BlocSeo() {
   return (
     <div className="v6-seo">
       <section>
-        <h2>Le guide du voyage halal</h2>
+        {/* 🔴 LE <h1> DE L'ACCUEIL — un seul sur la page, rendu par le
+            serveur, et il dit le besoin de celui qui cherche : où prier,
+            où manger halal. La marque reste au-dessus, en titre visuel.
+            L'accueil est la page la plus affichée du site (2 070
+            impressions sur 3 mois) pour 0,82 % de clics. */}
+        <h1>Où prier et où manger halal, dans {total} villes</h1>
         <p>
           <strong>VoyagesHalal</strong> recense les <strong>restaurants halal</strong>, les <strong>mosquées</strong>,
           les <strong>salles de prière</strong> et les <strong>hébergements sans alcool</strong> dans {total} villes

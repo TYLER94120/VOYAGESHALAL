@@ -49,7 +49,7 @@ export const countries: Country[] = [
       { name: 'Bursa', slug: 'bursa', description: 'Première capitale ottomane, grande mosquée, marché couvert et bains thermaux.' },
     ],
     relatedGuides: [
-      { slug: 'istanbul-guide-halal-complet', title: 'Istanbul halal : guide complet 2026', type: 'guide' },
+      { slug: 'istanbul-guide-halal-complet', title: 'Istanbul halal : où prier, où manger, où dormir', type: 'guide' },
       { slug: 'top-destinations-halal-2026', title: 'Top 10 destinations halal 2026', type: 'guide' },
       { slug: 'lune-de-miel-halal', title: 'Lune de miel halal : destinations romantiques', type: 'guide' },
     ],
@@ -93,7 +93,7 @@ export const countries: Country[] = [
       { name: 'Essaouira', slug: 'essaouira', description: 'Cité des alizés, architecture blanche et bleue, ambiance détendue en bord de mer.' },
     ],
     relatedGuides: [
-      { slug: 'marrakech-guide-halal', title: 'Marrakech halal : guide complet 2026', type: 'guide' },
+      { slug: 'marrakech-guide-halal', title: 'Marrakech halal : où prier, où manger, où dormir', type: 'guide' },
       { slug: 'lune-de-miel-halal', title: 'Lune de miel halal : destinations romantiques', type: 'guide' },
       { slug: 'top-destinations-halal-2026', title: 'Top 10 destinations halal 2026', type: 'guide' },
     ],
@@ -136,7 +136,7 @@ export const countries: Country[] = [
       { name: 'Sharjah', slug: 'sharjah', description: 'L\'Émirat culturel, plus conservateur, avec d\'excellents musées islamiques.' },
     ],
     relatedGuides: [
-      { slug: 'dubai-guide-halal-2026', title: 'Dubai halal : guide complet 2026', type: 'guide' },
+      { slug: 'dubai-guide-halal-2026', title: 'Dubai halal : où prier, où manger, où dormir', type: 'guide' },
       { slug: 'hotel-halal-tout-savoir', title: 'Hôtel halal : tout ce qu\'il faut savoir', type: 'guide' },
       { slug: 'lune-de-miel-halal', title: 'Lune de miel halal : destinations romantiques', type: 'guide' },
     ],
@@ -224,8 +224,8 @@ export const countries: Country[] = [
       { name: 'AlUla', slug: 'alula', description: 'Site archéologique exceptionnel — Hegra classée UNESCO, splendeurs du désert.' },
     ],
     relatedGuides: [
-      { slug: 'omra-2026-guide-complet', title: 'Omra 2026 : guide complet pour préparer votre pèlerinage', type: 'guide' },
-      { slug: 'ramadan-voyage-guide', title: 'Voyager pendant le Ramadan : guide complet', type: 'guide' },
+      { slug: 'omra-2026-guide-complet', title: 'Omra 2026 : préparer son pèlerinage, étape par étape', type: 'guide' },
+      { slug: 'ramadan-voyage-guide', title: 'Voyager pendant le Ramadan : jeûner en avion et en décalage', type: 'guide' },
       { slug: 'top-destinations-halal-2026', title: 'Top 10 destinations halal 2026', type: 'guide' },
     ],
     faqs: [
@@ -474,7 +474,7 @@ export const countries: Country[] = [
     ],
     relatedGuides: [
       { slug: 'top-destinations-halal-2026', title: 'Top 10 destinations halal 2026', type: 'guide' },
-      { slug: 'voyage-halal-debutant', title: 'Voyage halal pour débutants : guide complet', type: 'guide' },
+      { slug: 'voyage-halal-debutant', title: 'Voyage halal : par où commencer, étape par étape', type: 'guide' },
     ],
     faqs: [
       { question: 'La Bosnie est-elle un pays sûr pour les touristes ?', answer: 'Oui, la Bosnie-Herzégovine est un pays sûr. Les incidents majeurs y sont très rares. Sarajevo est une ville accueillante et cosmopolite. À noter : des mines antipersonnel subsistent dans certaines zones rurales isolées hors des sentiers battus — rester sur les chemins balisés.' },
@@ -641,7 +641,7 @@ export const countries: Country[] = [
     ],
     relatedGuides: [
       { slug: 'top-destinations-halal-2026', title: 'Top 10 destinations halal 2026', type: 'guide' },
-      { slug: 'voyage-halal-debutant', title: 'Voyage halal pour débutants : guide complet', type: 'guide' },
+      { slug: 'voyage-halal-debutant', title: 'Voyage halal : par où commencer, étape par étape', type: 'guide' },
     ],
     faqs: [
       { question: 'La nourriture est-elle facilement halal en Albanie ?', answer: 'Globalement oui. La viande d\'agneau et de bœuf, piliers de la cuisine albanaise, est naturellement halal dans la plupart des boucheries et restaurants. Dans les grandes villes, des restaurants halal signalés existent. Dans les zones touristiques, demander confirmation reste conseillé.' },
@@ -766,7 +766,7 @@ export const countries: Country[] = [
       { name: 'Strasbourg', slug: 'strasbourg', description: 'Alsace alsacienne et Grande Mosquée de France, architecture médiévale unique.' },
     ],
     relatedGuides: [
-      { slug: 'voyage-halal-debutant', title: 'Voyage halal pour débutants : guide complet', type: 'guide' },
+      { slug: 'voyage-halal-debutant', title: 'Voyage halal : par où commencer, étape par étape', type: 'guide' },
       { slug: 'trouver-mosquee-en-voyage', title: 'Comment trouver une mosquée en voyage', type: 'guide' },
     ],
     faqs: [
@@ -809,7 +809,7 @@ export const countries: Country[] = [
     ],
     relatedGuides: [
       { slug: 'top-destinations-halal-2026', title: 'Top 10 destinations halal 2026', type: 'guide' },
-      { slug: 'voyage-halal-debutant', title: 'Voyage halal pour débutants : guide complet', type: 'guide' },
+      { slug: 'voyage-halal-debutant', title: 'Voyage halal : par où commencer, étape par étape', type: 'guide' },
     ],
     faqs: [
       { question: 'Le Royaume-Uni nécessite-t-il un visa pour les Français ?', answer: 'Depuis le Brexit, les ressortissants français doivent obtenir une ETA (Electronic Travel Authorisation) pour visiter le Royaume-Uni — environ 10£, demandée en ligne sur gov.uk/etatourist. Le passeport est obligatoire (la carte d\'identité n\'est plus acceptée depuis 2021).' },

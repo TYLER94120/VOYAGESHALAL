@@ -155,7 +155,7 @@ export default function PageVille({ ville, en = false, mode = 'complet' }: {
       {mode === 'complet' && (
       <div className="pv-verdict">
         <span className="pv-sur-titre">{t('Guide halal', 'Halal guide')}</span>
-        <h1>{ville.nom}</h1>
+        <h2>{ville.nom}</h2>
         {score != null && (
           <div className="pv-v-ligne1">
             <span className="pv-score-grand" data-ton={ton}>✦ {score.toLocaleString(en ? 'en-GB' : 'fr-FR')}</span>

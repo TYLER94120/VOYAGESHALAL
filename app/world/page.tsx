@@ -6,7 +6,10 @@ import cityCoords from '@/lib/cityCoords.json'
 import { countryEn } from '@/lib/poiI18n'
 import { compteurVille } from '@/lib/mosqueesOsm'
 import { getRedis } from '@/lib/pushStore'
-import { EN_URL, FR_URL } from '@/lib/domain'
+import { EN_URL } from '@/lib/domain'
+import { titreSeo } from '@/lib/titre-seo'
+import SocleWorld from '@/components/flux/SocleWorld'
+import { readFileSync as lireFichier } from 'fs'
 
 // 🌍 GOHALALTRAVEL — L'ACCUEIL EN SWIPE (phase 1, validée le 20 août).
 // Cette page n'est servie QUE sur le domaine anglais (réécriture « / » →
@@ -26,13 +29,24 @@ export const dynamic = 'force-dynamic'
 // score et photo réels de la base.
 import { readdirSync } from 'fs'
 
-export const metadata: Metadata = {
-  title: { absolute: 'GoHalalTravel — Swipe the halal world' },
-  description: 'One city per screen. Real photos, HalalScores, verified halal food and prayer places — swipe to find your next Muslim-friendly trip.',
-  alternates: {
-    canonical: `${EN_URL}/`,
-    languages: { en: `${EN_URL}/`, fr: `${FR_URL}/`, 'x-default': `${EN_URL}/` },
-  },
+// 🔎 LE TITRE (règle du 20 août) : le BESOIN d'abord, jamais la marque.
+// « GoHalalTravel — Swipe the halal world » vendait le geste ; personne ne
+// tape « swipe the halal world ». 461 impressions, 3 clics, position 21,7.
+export async function generateMetadata(): Promise<Metadata> {
+  const nb = lireVilles().length
+  return {
+  title: { absolute: titreSeo([
+    `Where to pray and eat halal in ${nb} cities`,
+    `Where to pray and eat halal worldwide`,
+  ]) },
+  description: `Prayer places, halal food and prayer times in ${nb} cities. Every listing carries its source. Free, no account needed.`.slice(0, 155),
+  // ⚠️ AUCUN hreflang ici (chantier du 20 août) : gohalaltravel.com n'est
+  // plus la version anglaise de voyageshalal.fr. L'accueil français est
+  // une page de guide, celui-ci est un feed de 354 villes — déclarer que
+  // ce sont deux traductions d'une même page serait faux, et Google
+  // traiterait l'un des deux comme un doublon secondaire.
+  alternates: { canonical: `${EN_URL}/` },
+  }
 }
 
 function lireVilles(): VillePanneau[] {
@@ -90,5 +104,28 @@ export default async function WorldPage() {
   // la base) — la barre trouve n'importe laquelle, pas que les 10 du flux.
   const index = (cityCoords as { slug: string; nom: string; pays?: string }[])
     .map((c) => ({ slug: c.slug, nom: c.nom, pays: c.pays ?? '' }))
-  return <WorldFeed villes={villes} index={index} />
+  // ✈️ Les pages aéroport ne sont listées QUE si elles existent : le
+  // fichier est rempli par le workflow OSM. Un lien sans page n'existe pas.
+  let aeroports: { slug: string; nom: string }[] = []
+  try {
+    const j = JSON.parse(lireFichier(path.join(process.cwd(), 'data', 'airports', 'prayer-rooms.json'), 'utf8'))
+    aeroports = ((j.aeroports ?? []) as { slug: string; nom: string }[]).map((a) => ({ slug: a.slug, nom: a.nom }))
+  } catch { /* pas de relevé : pas de section */ }
+
+  const nbLieuxPriere = villes.reduce((n, v) => n + (v.lieuxPriere ?? 0), 0)
+  return (
+    <>
+      {/* La scène : le feed et sa barre défilent ensemble, le socle vient
+          après — plus de pilule flottante par-dessus le texte. */}
+      <div className="imm-scene"><WorldFeed villes={villes} index={index} /></div>
+      {/* 📜 Le socle que Google lit : un feed n'est pas une page de
+          contenu. Rendu par le serveur, sous le flux, en anglais natif. */}
+      <SocleWorld
+        nbVilles={villes.length}
+        nbLieuxPriere={nbLieuxPriere}
+        villes={villes.slice(0, 12).map((v) => ({ slug: v.slug, nom: v.nom }))}
+        aeroports={aeroports}
+      />
+    </>
+  )
 }

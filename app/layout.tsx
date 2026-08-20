@@ -50,14 +50,12 @@ export async function generateMetadata(): Promise<Metadata> {
     },
     twitter: { card: 'summary_large_image' },
     robots: { index: true, follow: true, googleBot: { index: true, follow: true, 'max-image-preview': 'large' } },
-    // Lien croisé SEO entre les deux domaines (FR ↔ EN)
-    alternates: {
-      languages: {
-        fr: 'https://www.voyageshalal.fr',
-        en: 'https://www.gohalaltravel.com',
-        'x-default': 'https://www.gohalaltravel.com',
-      },
-    },
+    // ⚠️ 20 août : ce hreflang par défaut annonçait les DEUX ACCUEILS comme
+    // traductions l'un de l'autre sur toute page qui ne le remplaçait pas.
+    // Les deux sites ont divergé — l'accueil anglais est un feed. On ne
+    // déclare plus rien globalement ; chaque page qui a un vrai jumeau le
+    // déclare elle-même (lib/hreflang.ts).
+    alternates: {},
     appleWebApp: { capable: true, statusBarStyle: 'black-translucent', title: isEN ? 'GoHalalTravel.com' : 'VoyagesHalal.fr' },
     ...(process.env.NEXT_PUBLIC_GSC_VERIFICATION && {
       verification: { google: process.env.NEXT_PUBLIC_GSC_VERIFICATION },

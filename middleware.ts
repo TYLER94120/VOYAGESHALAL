@@ -85,6 +85,16 @@ export function middleware(req: NextRequest) {
     return decorate(NextResponse.redirect(url, 301))
   }
 
+  // ✈️ /prayer-room/* : les pages aéroport sont une stratégie ANGLAISE
+  // (« prayer room Heathrow » se cherche en anglais, par des voyageurs du
+  // monde entier). Sur voyageshalal.fr, elles n'existent pas — pas de
+  // contenu anglais servi par le domaine français, pas de doublon.
+  if (!isEN && pathname.startsWith('/prayer-room')) {
+    const url = req.nextUrl.clone()
+    url.pathname = '/'
+    return decorate(NextResponse.redirect(url, 301))
+  }
+
   // /world n'existe que comme accueil du domaine anglais : sur le domaine
   // FR (ou tapé à la main sur l'EN), on renvoie à l'accueil — pas de
   // contenu en double.

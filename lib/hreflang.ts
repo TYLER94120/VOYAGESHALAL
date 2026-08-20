@@ -24,15 +24,42 @@ const EN_TO_FR_BLOG = Object.fromEntries(
   Object.entries(BLOG_FR_TO_EN).map(([fr, cheminEn]) => [cheminEn, fr]),
 )
 
-/** Routes rendues dans les deux langues à la MÊME adresse. */
+// 🔴 20 AOÛT — LES HREFLANG ONT COMMENCÉ À MENTIR.
+//
+// Un hreflang déclare « ces deux pages sont le MÊME contenu en deux
+// langues ». C'était vrai quand gohalaltravel.com était la version
+// anglaise de voyageshalal.fr. Ça ne l'est plus : le domaine anglais est
+// devenu un site à part, bâti sur un moteur de swipe vertical.
+//
+// Ce qui a divergé, et perd donc son hreflang :
+//   · « / »            : à gauche un guide, à droite un feed de 354 villes ;
+//   · /destinations/*  : à gauche la page ville, à droite l'immersion en
+//                        plein écran avec ses flux Eat/Pray/Sleep/Do ;
+//   · /autour-de-moi   : à droite le swipe des résultats, à gauche la
+//                        liste et la carte (remis comme avant le 20 août).
+//
+// Déclarer ces paires ferait traiter l'un des deux comme un doublon
+// secondaire — et déclasser celui que Google jugerait redondant. Restent
+// les pages qui sont VRAIMENT la même chose dans deux langues : les
+// outils de calcul, les guides et articles jumelés, les listes.
+
+/** Routes rendues dans les deux langues à la MÊME adresse, avec le MÊME
+ *  contenu — la seule condition qui autorise un hreflang. */
 const CHEMINS_BILINGUES = [
-  '/', '/destinations', '/blog', '/guides', '/qibla', '/quiz', '/hotels',
-  '/trouvailles', '/audio', '/contact', '/search', '/autour-de-moi', '/communaute',
+  '/destinations', '/blog', '/guides', '/qibla', '/quiz', '/hotels',
+  '/trouvailles', '/audio', '/contact', '/search', '/communaute',
 ]
 
 // Préfixes dont TOUTES les pages sont rendues dans les deux langues à la
 // même adresse (le composant lit le domaine et traduit son texte).
-const PREFIXES_BILINGUES = ['/destinations/', '/hotels/', '/priere/', '/guide-vivant/', '/communaute/']
+const PREFIXES_BILINGUES = ['/hotels/', '/priere/', '/guide-vivant/', '/communaute/']
+
+/** Pages devenues spécifiques à un domaine : AUCUN hreflang, jamais.
+ *  (Le canonical, lui, reste sur le domaine qui sert la page.) */
+const DIVERGENTES = ['/', '/autour-de-moi', '/world', '/saves', '/carnet']
+const PREFIXES_DIVERGENTS = ['/destinations/', '/prayer-room/']
+export const aDiverge = (chemin: string) =>
+  DIVERGENTES.includes(chemin) || PREFIXES_DIVERGENTS.some((p) => chemin.startsWith(p))
 
 const estBilingue = (chemin: string) =>
   CHEMINS_BILINGUES.includes(chemin) || PREFIXES_BILINGUES.some((p) => chemin.startsWith(p))
@@ -47,6 +74,9 @@ export interface Paire {
  * `chemin` est le chemin tel qu'il est servi sur le domaine COURANT.
  */
 export function paireLangues(chemin: string): Paire {
+  // 0. Page qui a divergé entre les deux sites : pas de jumeau à déclarer.
+  if (aDiverge(chemin)) return { fr: null, en: null }
+
   // 1. Slugs de section traduits (/horaires-priere ↔ /prayer-times)
   if (FR_TO_EN_SLUG[chemin]) return { fr: FR_URL + chemin, en: EN_URL + FR_TO_EN_SLUG[chemin] }
   const frDepuisEn = Object.entries(FR_TO_EN_SLUG).find(([, en]) => en === chemin)
@@ -88,7 +118,7 @@ export function alternatesFor(chemin: string, isEN: boolean) {
   // Le canonical reste TOUJOURS sur le domaine qui sert la page : une page
   // sans jumeau (communauté, spot contribué) servie sur gohalaltravel.com ne
   // doit pas se déclarer canonique chez voyageshalal.fr.
-  const canonical = (isEN ? en : fr) ?? (isEN ? EN_URL : FR_URL) + chemin
+  const canonical = (isEN ? en : fr) ?? (isEN ? EN_URL : FR_URL) + (chemin === '/' ? '' : chemin)
   const languages: Record<string, string> = {}
   if (fr) languages.fr = fr
   if (en) languages.en = en

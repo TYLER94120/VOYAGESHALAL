@@ -201,7 +201,7 @@ export const destinations: Destination[] = [
       },
     ],
     relatedArticles: [
-      { slug: 'dubai-guide-halal-2026', title: 'Dubai halal : guide complet 2026', type: 'guide' },
+      { slug: 'dubai-guide-halal-2026', title: 'Dubai halal : où prier, où manger, où dormir', type: 'guide' },
       { slug: 'hotel-halal-tout-savoir', title: 'Hôtel halal : tout ce qu\'il faut savoir', type: 'guide' },
     ],
     tips: [
@@ -267,7 +267,7 @@ export const destinations: Destination[] = [
       },
     ],
     relatedArticles: [
-      { slug: 'omra-2026-guide-complet', title: 'Omra 2026 : guide complet, budget et meilleure période', type: 'guide' },
+      { slug: 'omra-2026-guide-complet', title: 'Omra 2026 : étapes, budget et meilleure période', type: 'guide' },
       { slug: 'ramadan-voyage-guide', title: 'Où passer le Ramadan ? Voyager pendant le mois sacré', type: 'guide' },
     ],
     tips: [
@@ -405,7 +405,7 @@ import { guidesEn } from './guidesEn'
 const guidesFr: Guide[] = [
   {
     slug: 'voyage-halal-debutant',
-    title: 'Voyage halal pour débutants : le guide complet',
+    title: 'Voyage halal : par où commencer, étape par étape',
     description:
       'Premier voyage halal ? Ce guide complet vous explique les fondamentaux : nourriture, prière, hébergement, destinations et applications indispensables.',
     coverImage: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&q=80',
@@ -511,7 +511,7 @@ const guidesFr: Guide[] = [
   },
   {
     slug: 'ramadan-voyage-guide',
-    title: 'Voyager pendant le Ramadan : le guide complet',
+    title: 'Voyager pendant le Ramadan : jeûner en avion et en décalage',
     description:
       'Comment organiser et profiter de son voyage pendant le Ramadan ? Destinations, astuces pratiques et les meilleures expériences du mois sacré.',
     coverImage: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&q=80',
@@ -556,7 +556,7 @@ const guidesFr: Guide[] = [
   },
   {
     slug: 'omra-2026-guide-complet',
-    title: 'Omra 2026 : guide complet pour préparer votre pèlerinage',
+    title: 'Omra 2026 : préparer son pèlerinage, étape par étape',
     description: 'Tout ce qu\'il faut savoir pour préparer votre Omra en 2026 : visa, agences, budget, rituels, meilleure période et conseils pratiques.',
     coverImage: '/guides/medine-j1.jpg',
     category: 'Spiritualité',
@@ -644,7 +644,7 @@ const guidesFr: Guide[] = [
   },
   {
     slug: 'trouver-mosquee-en-voyage',
-    title: 'Trouver une mosquée partout dans le monde : le guide complet',
+    title: 'Trouver une mosquée partout dans le monde, en 3 gestes',
     description: 'Applications, astuces et ressources pour localiser la mosquée la plus proche lors de vos voyages, dans n\'importe quel pays du monde.',
     coverImage: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&q=80',
     category: 'Pratique',
@@ -782,7 +782,7 @@ const guidesFr: Guide[] = [
   },
   {
     slug: 'dubai-guide-halal-2026',
-    title: 'Dubaï halal 2026 : le guide complet du voyage',
+    title: 'Dubaï halal : où prier, où manger, où dormir',
     description: 'Guide complet Dubai 2026 pour les voyageurs musulmans : restaurants halal signalés, mosquées, activités famille, budget et meilleures adresses.',
     coverImage: '/guides/dubai-j1.jpg',
     category: 'Destinations',
@@ -3923,7 +3923,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
   },
   {
     slug: "voyage-halal-maroc-2026-guide-complet",
-    title: "Voyage halal au Maroc 2026 : le guide complet",
+    title: "Voyage halal au Maroc : villes, mosquées et tables",
     description: "Tout pour un voyage halal au Maroc en 2026 : restaurants, mosquées, villes à visiter, conseils pratiques et budget. Le guide complet.",
     coverImage: "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1200&q=80",
     category: "Destinations",
@@ -4058,7 +4058,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
   },
   {
     slug: "voyager-pendant-ramadan-guide-complet",
-    title: "Voyager Pendant le Ramadan : Guide Complet 2026",
+    title: "Voyager pendant le Ramadan : jeûner en avion et en décalage",
     description: "Tout savoir pour voyager pendant le Ramadan 2026 : pays idéaux, jeûne et décalage horaire, iftar, suhoor et Tarawih. Conseils pratiques pour un Ramadan serein.",
     coverImage: "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=1200&q=80",
     category: "Pratique",
@@ -4090,7 +4090,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
   {
     slug: "halal-travel-morocco-2026-complete-guide",
     lang: "en",
-    title: "Halal Travel in Morocco 2026: The Complete Guide",
+    title: "Halal Travel in Morocco: Cities, Mosques and Tables",
     description: "Everything you need for halal travel in Morocco 2026: halal restaurants, mosques, best cities and practical tips. Complete guide by GoHalalTravel.",
     coverImage: "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1200&q=80",
     category: "Destinations",
@@ -4310,7 +4310,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
   },
   {
     slug: 'malaisie-voyage-musulman-guide',
-    title: 'Malaisie, voyage musulman 2026 : le guide complet',
+    title: 'Malaisie en musulman : mosquées, tables, transports',
     description: 'Pourquoi la Malaisie est une destination halal idéale : halal partout, mosquées, nature et modernité. Villes, conseils et adresses.',
     coverImage: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=1200&q=80',
     category: 'Destinations',
