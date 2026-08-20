@@ -2726,6 +2726,78 @@ function ippDemarrerDiagnostic(racine, quandFini) {
 
 var IPP_QUIZ_PAR_TOUR = 10;
 
+/* LE TIRAGE D'UN TOUR : IL DOIT RESSEMBLER AU SITE.
+   -------------------------------------------------
+   MESURE DU 20 AOUT. 60 des 83 questions portent sur les sourates, parce que
+   21 des 29 lecons sont des sourates. Un melange au hasard donnait donc, sur
+   200 tours simules : 7,1 questions du meme theme en moyenne, 3,3 themes par
+   tour, et des tours entiers ou LES DIX questions sortaient d'un seul theme.
+   Quelqu'un venu apprendre la priere pouvait jouer dix questions de sourate
+   d'affilee, et ne rien reconnaitre de ce qu'il etait venu chercher.
+
+   On tire donc A TOUR DE ROLE : une question dans chaque parcours, puis on
+   recommence. Meme mesure apres : 7 themes par tour, jamais plus de 2 du
+   meme.
+
+   CE QU'ON NE CASSE PAS AU PASSAGE : les lecons deja faites restent
+   prioritaires. Le tour de role s'applique d'abord a elles, ensuite au reste.
+   Quelqu'un qui n'a fait que des sourates continue donc d'etre interroge sur
+   les sourates — c'est ce qu'il a appris. L'equilibrage ne sert que quand le
+   site choisit a la place de la personne. */
+
+function ippMelangerListe(l) {
+  'use strict';
+  var a = l.slice();
+  for (var i = a.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var t = a[i]; a[i] = a[j]; a[j] = t;
+  }
+  return a;
+}
+
+function ippParcoursDe(id) {
+  'use strict';
+  var c = (typeof IPP !== 'undefined' && IPP.CATALOGUE) ? IPP.CATALOGUE : [];
+  for (var i = 0; i < c.length; i++) {
+    if (c[i].id === id) { return c[i].parcours || '?'; }
+  }
+  return '?';
+}
+
+function ippPuiserATourDeRole(liste, out, combien) {
+  'use strict';
+  var seaux = {}, ordre = [], i, t;
+  for (i = 0; i < liste.length; i++) {
+    t = ippParcoursDe(liste[i].lecon);
+    // hasOwnProperty et pas `!seaux[t]` : un parcours qui s'appellerait
+    // « constructor » trouverait une fonction la ou on attend un tableau.
+    if (!Object.prototype.hasOwnProperty.call(seaux, t)) { seaux[t] = []; ordre.push(t); }
+    seaux[t].push(liste[i]);
+  }
+  while (out.length < combien) {
+    var pris = 0;
+    for (i = 0; i < ordre.length && out.length < combien; i++) {
+      if (seaux[ordre[i]].length) { out.push(seaux[ordre[i]].shift()); pris++; }
+    }
+    if (!pris) { break; }   // plus rien a puiser : on sort, jamais de boucle infinie
+  }
+}
+
+function ippTirerQuiz(banque, combien) {
+  'use strict';
+  var faites = [], reste = [], i, f;
+  for (i = 0; i < banque.length; i++) {
+    f = false;
+    try { f = IPP.estFaite(banque[i].lecon); } catch (e) { f = false; }
+    (f ? faites : reste).push(banque[i]);
+  }
+  var out = [];
+  ippPuiserATourDeRole(ippMelangerListe(faites), out, combien);
+  ippPuiserATourDeRole(ippMelangerListe(reste), out, combien);
+  return out;
+}
+
+
 function ippDemarrerQuiz(racine) {
   'use strict';
   var q = ippViseur(racine);
@@ -2762,16 +2834,11 @@ function ippDemarrerQuiz(racine) {
   }
 
   /* Les questions des lecons faites d'abord, les autres ensuite. Si rien n'a
-     ete fait, tout le site est eligible : la page ne reste jamais vide. */
+     ete fait, tout le site est eligible : la page ne reste jamais vide.
+     Le partage et l'equilibrage vivent dans ippTirerQuiz, hors de cette
+     fonction, pour qu'on puisse les MESURER sans jouer un tour entier. */
   function tirer() {
-    var faites = [], reste = [];
-    for (var i = 0; i < banque.length; i++) {
-      var f = false;
-      try { f = IPP.estFaite(banque[i].lecon); } catch (e) { f = false; }
-      (f ? faites : reste).push(banque[i]);
-    }
-    var l = melanger(faites).concat(melanger(reste));
-    return l.slice(0, Math.min(IPP_QUIZ_PAR_TOUR, l.length));
+    return ippTirerQuiz(banque, IPP_QUIZ_PAR_TOUR);
   }
 
   function afficher() {
