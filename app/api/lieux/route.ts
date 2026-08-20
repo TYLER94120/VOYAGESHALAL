@@ -112,10 +112,15 @@ const CACHE_S = 24 * 3600
  *        demandes écrites. C'est le correctif de la régression du 15 août :
  *        searchText ne sait pas faire « le plus proche »
  */
-const VERSION_MOTEUR = 'v4'
-const CANDIDATS = 15
+// v5 (20 août) : « il faut mettre le maximum » — le swipe d'Autour de
+// moi montre TOUS les candidats déjà payés par la requête, plus
+// seulement 3 + 4. RETENUS (fiches enrichies, payantes) ne bouge pas ;
+// AUTRES passe de 4 à 17 : ces fiches sortent de la même réponse Google,
+// zéro appel de plus — leurs photos ne se paient qu'au swipe.
+const VERSION_MOTEUR = 'v5'
+const CANDIDATS = 20
 const RETENUS = 3
-const AUTRES = 4
+const AUTRES = 17
 /** Pool sur lequel on paie la vérification alcool (§3 de l'alerte). */
 const POOL_ALCOOL = 9
 
