@@ -19,11 +19,14 @@ function IcPin() {
   return <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden style={{ display: 'inline-block' }}><path d="M12 21s7-5.1 7-11a7 7 0 0 0-14 0c0 5.9 7 11 7 11zM12 12.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" /></svg>
 }
 
-export default function FluxLieux({ fiches, cat, en = false, onFermer }: {
+export default function FluxLieux({ fiches, cat, en = false, onFermer, onChangerCat }: {
   fiches: Fiche[]
   cat: 'mosquee' | 'manger' | 'activite'
   en?: boolean
   onFermer: () => void
+  /** Changer de catégorie SANS quitter le swipe (pilules Pray · Eat · Do) :
+   *  relance la recherche du mode — même geste que les cartes de mode. */
+  onChangerCat?: (cat: 'mosquee' | 'manger' | 'activite') => void
 }) {
   const t = (fr: string, an: string) => (en ? an : fr)
   const [extras, setExtras] = useState<Record<string, { photos?: string[]; note?: number; nbAvis?: number; ouvert?: boolean }>>({})
@@ -61,6 +64,16 @@ export default function FluxLieux({ fiches, cat, en = false, onFermer }: {
 
   return (
     <div style={{ position: 'fixed', inset: 0, zIndex: 85, background: '#060E08' }}>
+      {onChangerCat && (
+        <nav className="imm-selecteur" aria-label={t('Modes', 'Feeds')}>
+          {([['mosquee', t('Prier', 'Pray')], ['manger', t('Manger', 'Eat')], ['activite', t('Faire', 'Do')]] as const).map(([v, libelle]) => (
+            <button key={v} className={`imm-sel${cat === v ? ' on' : ''}`}
+              onClick={() => { if (cat !== v) onChangerCat(v) }}>
+              {libelle}
+            </button>
+          ))}
+        </nav>
+      )}
       <button className="imm-couche-fermer" onClick={onFermer} aria-label={t('Fermer', 'Close')}>
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden><path d="M6 6l12 12M18 6L6 18" /></svg>
         {t('Liste & carte', 'List & map')}

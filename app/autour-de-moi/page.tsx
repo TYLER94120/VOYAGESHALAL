@@ -5,6 +5,7 @@ import type { Map as LeafletMap, Marker } from 'leaflet'
 import { useInstantPosition } from '@/lib/useInstantPosition'
 import { computePrayerTimesFull } from '@/lib/prayerCalc'
 import SurMesure, { type Fiche } from '@/components/lieux/SurMesure'
+import { useLanguage } from '@/components/i18n/LanguageProvider'
 import { top3 } from '@/lib/top3.mjs'
 import { typeMot } from '@/lib/typeMot.mjs'
 import TrajetMin, { StatutOuverture } from '@/components/lieux/TrajetMin'
@@ -80,6 +81,7 @@ type Vue = 'liste' | 'carte'
 // et la carte occupe tout. Le partage d'écran ne servait ni l'une ni l'autre.
 
 export default function AutourDeMoiPage() {
+  const { lang: langue } = useLanguage()
   const etatPos = useInstantPosition()
   const { pos } = etatPos
 
@@ -425,8 +427,10 @@ export default function AutourDeMoiPage() {
             qu'il fait — ouvrir la carte en plein écran. */}
         <div className="autour-poignee">
           <p style={{ margin: 0, display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 10, fontWeight: 800, fontSize: 14, color: 'var(--foret)' }}>
-            <span>{fiches.length ? `${fiches.length} adresse${fiches.length > 1 ? 's' : ''} autour de toi` : 'Recherche autour de toi…'}</span>
-            <button onClick={() => setVue('carte')} className="autour-vers-carte">📍 Voir sur la carte</button>
+            {/* Plus de compteur (retour du 20 août : « ce n'est plus le
+                cas ») — un libellé stable, dans la langue du domaine. */}
+            <span>{fiches.length ? (langue === 'en' ? 'Around you' : 'Autour de toi') : (langue === 'en' ? 'Searching around you…' : 'Recherche autour de toi…')}</span>
+            <button onClick={() => setVue('carte')} className="autour-vers-carte">📍 {langue === 'en' ? 'View on the map' : 'Voir sur la carte'}</button>
           </p>
         </div>
         <div className="autour-liste">

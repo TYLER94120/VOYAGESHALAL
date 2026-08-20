@@ -61,7 +61,13 @@ export async function GET(request: Request) {
   // elle, le compte de nos mosquées relevées reste la source.
   const nbOsm = compteurVille(slug)
   const nbMosquees = nbOsm ?? ((v.mosqueesPrincipales as unknown[]) ?? []).length
-  const ip = (v.infos_pratiques as Record<string, string>) ?? {}
+  // 🇬🇧 Sur le domaine anglais : la version ANGLAISE de la base — jamais
+  // un texte français glissé dans un fait anglais (retour du 20 août :
+  // « strictement interdit… » apparaissait sur le site EN). Champ anglais
+  // absent = fait absent, pas de mélange.
+  const ipFr = (v.infos_pratiques as Record<string, string>) ?? {}
+  const ipEn = (v.infos_pratiques_en as Record<string, string>) ?? {}
+  const ip = en ? ipEn : ipFr
 
   const faitManger = nbRestos > 0
     ? { avant: en ? `Halal food: ${nbRestos} listed places` : `Manger halal : ${nbRestos} adresses relevées`, ton: (nbRestos >= 30 ? 'vert' : 'orange') as 'vert' | 'orange' }
