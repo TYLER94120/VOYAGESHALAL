@@ -6,6 +6,7 @@ import { CRITERES_DEFAUT, lireDemande, relance, resumerCriteres, type Categorie,
 import { top3 } from '@/lib/top3.mjs'
 import TrajetMin, { StatutOuverture } from '@/components/lieux/TrajetMin'
 import FluxLieux from '@/components/lieux/FluxLieux'
+import { useLanguage } from '@/components/i18n/LanguageProvider'
 import { lancerItineraire } from '@/lib/itineraire'
 import { appelerLieux } from '@/lib/appelLieux'
 import { lireIntention } from '@/lib/villesIndex'
@@ -123,7 +124,7 @@ function IconeCat({ id }: { id: string }) {
   return <svg {...c} viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="M15.8 8.2l-2.1 5.5-5.5 2.1 2.1-5.5z" /></svg>
 }
 
-export default function SurMesure({ posInitiale, destination: destinationProp, en = false, fondu = false, titrePage = false, onResultats, selectionId, onSelection, phraseInitiale, chercheDesLOuverture, modeDemande, scooter = false }: {
+export default function SurMesure({ posInitiale, destination: destinationProp, en: enProp, fondu = false, titrePage = false, onResultats, selectionId, onSelection, phraseInitiale, chercheDesLOuverture, modeDemande, scooter = false }: {
   posInitiale?: { lat: number; lng: number; ville?: string | null } | null
   destination?: { lat: number; lng: number; nom: string } | null
   en?: boolean
@@ -165,6 +166,10 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
    *  sert plus qu'à PRÉCISER. */
   chercheDesLOuverture?: Categorie
 }) {
+  // La langue : la prop si fournie, sinon celle du fournisseur commun —
+  // c'est elle qui verrouille le swipe d'Autour de moi au domaine anglais.
+  const { lang: langueDomaine } = useLanguage()
+  const en = enProp ?? langueDomaine === 'en'
   const router = useRouter()
   const [phrase, setPhrase] = useState('')
   // 🗺️ UNE SEULE BARRE. Quand la phrase désigne une ville, c'est elle qui
@@ -705,6 +710,20 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
     return triActif ? appliquer(toutes, triActif).slice(0, 6) : fiches
   }, [scooter, crit.categorie, triActif, toutes, fiches])
 
+  /** Choisir un mode : le MÊME geste depuis les cartes et depuis les
+   *  pilules du swipe (Pray · Eat · Do). */
+  const choisirMode = (v: NonNullable<Criteres['categorie']>) => {
+    const c = { ...crit, categorie: v } as Criteres
+    setCrit(c)
+    setAide({ cat: v })
+    setPhrase('') // jamais de reliquat d'une recherche d'un autre mode
+    setEnvie(null)
+    setEnviesDispo(null)
+    setRaisonIA('')
+    compter(`cat-${v}`)
+    if (scooter) lancer(c, false) // scooter : un tap = les meilleurs
+  }
+
   /** L'ordre du flux swipe (règles du 20 août) : mosquées et activités de
    *  la plus proche à la moins proche ; restos du mieux noté (avec
    *  beaucoup d'avis) au moins bien noté. Fiches + autres — rien d'amputé. */
@@ -717,9 +736,9 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
   }, [toutes, crit.categorie])
   // Les résultats arrivent → le swipe s'ouvre (scooter seulement).
   useEffect(() => {
-    if (scooter && etape === 'resultat' && pourFluxSwipe.length >= 2) setFluxSwipe(true)
+    if (en && scooter && etape === 'resultat' && pourFluxSwipe.length >= 2) setFluxSwipe(true)
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [scooter, etape, fiches])
+  }, [en, scooter, etape, fiches])
 
   /** Le délai, écrit comme on le dirait. Zéro seconde connue → « bientôt ». */
   function attente(secondes: number | undefined, anglais: boolean): string {
@@ -784,17 +803,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
           {CAT_OPTS.map(([v, fr, an]) => (
             <button key={v}
               className="surmesure-cat"
-              onClick={() => {
-                const c = { ...crit, categorie: v } as Criteres
-                setCrit(c)
-                setAide({ cat: v })
-                setPhrase('') // jamais de reliquat d'une recherche d'un autre mode
-                setEnvie(null)
-                setEnviesDispo(null)
-                setRaisonIA('')
-                compter(`cat-${v}`)
-                if (scooter) lancer(c, false) // scooter : un tap = les 3 meilleurs
-              }}
+              onClick={() => choisirMode(v)}
               aria-pressed={aide?.cat === v} style={{ ...puce(aide?.cat === v), flex: '1 1 0', minWidth: 0, minHeight: 64, padding: '0 6px', whiteSpace: 'nowrap' }}>
               <IconeCat id={v} /> {t(fr, an)}
             </button>
@@ -1259,7 +1268,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
         )}
         {!titrePage && aVoir.length > 0 && (
           <div style={{ marginTop: 14, display: 'flex', flexDirection: 'column', gap: 12 }}>
-            {scooter && pourFluxSwipe.length >= 2 && !fluxSwipe && (
+            {en && scooter && pourFluxSwipe.length >= 2 && !fluxSwipe && (
               <button onClick={() => setFluxSwipe(true)}
                 style={{ minHeight: 50, borderRadius: 999, border: '1px solid rgba(201,168,76,0.4)', background: 'rgba(201,168,76,0.1)', color: 'var(--or-clair, #E9D9A6)', fontWeight: 700, fontSize: 15, cursor: 'pointer' }}>
                 {t(`Swiper les ${pourFluxSwipe.length} résultats`, `Swipe the ${pourFluxSwipe.length} results`)}
@@ -1410,8 +1419,9 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
             {t('Données cartographiques © les contributeurs OpenStreetMap.', 'Map data © OpenStreetMap contributors.')}
           </p>
         )}
-        {scooter && fluxSwipe && (
+        {en && scooter && fluxSwipe && (
           <FluxLieux fiches={pourFluxSwipe} cat={(crit.categorie ?? 'manger') as 'mosquee' | 'manger' | 'activite'} en={en}
+            onChangerCat={(v) => choisirMode(v)}
             onFermer={() => setFluxSwipe(false)} />
         )}
     </Cadre>

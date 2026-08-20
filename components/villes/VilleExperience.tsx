@@ -87,7 +87,8 @@ function ImmersionAvecPratique({ ville, en, pool, score, ton, niveau }: {
 
   return (
     <>
-      <Immersion slug={String(ville.slug ?? '')} nom={String(ville.nom ?? '')} score={score} ton={ton} niveau={niveau} pool={pool} en={en} onOuvrir={setSection} />
+      {/* « La Mecque » sur le site anglais : le nom anglais de la base prime. */}
+    <Immersion slug={String(ville.slug ?? '')} nom={String((en && ville.nom_en) || ville.nom || '')} score={score} ton={ton} niveau={niveau} pool={pool} en={en} onOuvrir={setSection} />
       {section && (
         <div id={`couche-${section}`} className="imm-couche">
           <button className="imm-couche-fermer" onClick={() => setSection(null)} aria-label={t('Fermer', 'Close')}>
