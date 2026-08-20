@@ -107,7 +107,10 @@ async function lieuxDePriere(lat, lng, etiquette) {
   const j = await overpass(`[out:json][timeout:180];
 (
   nwr["room"="prayer"](around:4000,${lat},${lng});
+  nwr["room"="prayer_room"](around:4000,${lat},${lng});
+  nwr["amenity"="prayer_room"](around:4000,${lat},${lng});
   nwr["prayer_room"="yes"](around:4000,${lat},${lng});
+  nwr["religion"="muslim"]["indoor"="room"](around:4000,${lat},${lng});
   nwr["amenity"="place_of_worship"]["religion"="muslim"](around:4000,${lat},${lng});
   nwr["amenity"="place_of_worship"]["religion"="multifaith"](around:4000,${lat},${lng});
 );
@@ -130,7 +133,7 @@ out center tags;`, etiquette)
       ...(tg.female ?? tg.male ? { mixite: `${tg.female === 'yes' ? 'women' : ''}${tg.female === 'yes' && tg.male === 'yes' ? ' & ' : ''}${tg.male === 'yes' ? 'men' : ''}`.trim() } : {}),
       ...(tg.wudu ?? tg['toilets:wudu'] ? { ablutions: 'yes' } : {}),
       // Le type honnête : une salle de prière n'est pas une mosquée.
-      type: tg.room === 'prayer' || tg.prayer_room === 'yes' ? 'prayer_room'
+      type: /prayer/.test(String(tg.room ?? '')) || tg.prayer_room === 'yes' || tg.amenity === 'prayer_room' ? 'prayer_room'
         : tg.religion === 'multifaith' ? 'multifaith_room' : 'mosque',
       indoor: tg.indoor === 'yes' || tg.room === 'prayer' || tg.prayer_room === 'yes',
     })
