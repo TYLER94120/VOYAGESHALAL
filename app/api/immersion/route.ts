@@ -15,7 +15,7 @@ import { prochesOsm } from '@/lib/mosqueesOsm'
 //
 // Seuils d'entrée, AUCUNE exception (une catégorie vide reste vide) :
 //   monuments/expériences : ★ ≥ 4,5 ET ≥ 1 000 avis
-//   tables : ★ ≥ 4,5 ET ≥ 300 avis ET halal vérifié (base) ou signalé
+//   tables : ★ ≥ 4,5 ET ≥ 120 avis ET halal vérifié (base) ou signalé
 //            (mention Places / OSM diet:halal de notre base)
 //   hôtels : sans alcool VÉRIFIÉ dans notre base
 //   et une PHOTO exploitable obligatoire — sans photo, pas de panneau.
@@ -31,7 +31,9 @@ import { prochesOsm } from '@/lib/mosqueesOsm'
 export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
 
-const CLE_CACHE = (slug: string, lang: string) => `vh:immersion:v1:${lang}:${slug}`
+// v2 : le pool Eat élargi (4 requêtes, seuil 120) doit remplacer les
+// pools v1 en cache, sinon la ville déjà visitée resterait courte 7 jours.
+const CLE_CACHE = (slug: string, lang: string) => `vh:immersion:v2:${lang}:${slug}`
 const DELAI = 8000
 
 export interface PanneauImmersion {
@@ -123,6 +125,20 @@ async function chercher(cle: string, lang: string, texte: string, lat: number, l
 
 const JOKER_TYPES = /market|viewpoint|spa|hammam|garden|park|ferry|observation/i
 
+// 🍽 LE FLUX EAT — retour du 20 août : « on swipe très peu de restos, on
+// peut pas en mettre plus ». La cause n'était pas le halal : c'était UNE
+// seule requête et un seuil d'avis de restaurant de centre-ville (300).
+//   · 4 intentions culinaires distinctes au lieu d'une → jusqu'à 80
+//     candidats dédupliqués (mêmes seuils, même exigence halal) ;
+//   · seuil d'avis des tables ramené à 120 : une bonne table halal de
+//     quartier dépasse rarement 300 avis, la note ★ ≥ 4,5 reste le juge.
+// Rien n'est relâché sur la confiance : halal vérifié (base) ou signalé
+// (mention Places / notre base) reste OBLIGATOIRE, photo obligatoire.
+const SEUIL_AVIS_TABLE = 120
+const REQUETES_MANGER = (ville: string, en: boolean) => en
+  ? [`halal restaurant ${ville}`, `best halal food ${ville}`, `halal street food ${ville}`, `halal grill kebab restaurant ${ville}`]
+  : [`restaurant halal ${ville}`, `meilleur restaurant halal ${ville}`, `street food halal ${ville}`, `grillades kebab halal ${ville}`]
+
 async function construirePool(slug: string, lang: string): Promise<Pool | null> {
   const v = lireVille(slug)
   if (!v) return null
@@ -136,14 +152,21 @@ async function construirePool(slug: string, lang: string): Promise<Pool | null> 
     .filter((r) => conforme(r.nom, r.type, r.halalConfidence))
 
   if (cle) {
-    // ── 3 requêtes Places par ville et par SEMAINE (cache), pas par visite ──
-    const [monuments, experiences, tables, mosquees, hotelsPlaces] = await Promise.all([
-      chercher(cle, lang, `monuments et lieux emblématiques incontournables ${nomVille}`, coords.lat, coords.lng),
-      chercher(cle, lang, `expérience emblématique croisière hammam marché panorama ${nomVille}`, coords.lat, coords.lng),
-      chercher(cle, lang, `restaurant halal ${nomVille}`, coords.lat, coords.lng),
-      chercher(cle, lang, `mosquée ${nomVille}`, coords.lat, coords.lng),
-      chercher(cle, lang, `hôtel ${nomVille}`, coords.lat, coords.lng),
+    const cLat = coords.lat, cLng = coords.lng
+    // ── 8 requêtes Places par ville et par SEMAINE (cache), pas par visite ──
+    const [monuments, experiences, mosquees, hotelsPlaces, ...lotsTables] = await Promise.all([
+      chercher(cle, lang, `monuments et lieux emblématiques incontournables ${nomVille}`, cLat, cLng),
+      chercher(cle, lang, `expérience emblématique croisière hammam marché panorama ${nomVille}`, cLat, cLng),
+      chercher(cle, lang, `mosquée ${nomVille}`, cLat, cLng),
+      chercher(cle, lang, `hôtel ${nomVille}`, cLat, cLng),
+      ...REQUETES_MANGER(nomVille, lang === 'en').map((q) => chercher(cle, lang, q, cLat, cLng)),
     ])
+    // Les 4 intentions se recouvrent : on déduplique par identifiant
+    // Places, puis on classe du mieux noté au moins bien noté.
+    const vusTables = new Set<string>()
+    const tables = lotsTables.flat()
+      .filter((l) => (vusTables.has(l.id) ? false : (vusTables.add(l.id), true)))
+      .sort((a, b) => (b.note ?? 0) - (a.note ?? 0) || (b.nbAvis ?? 0) - (a.nbAvis ?? 0))
 
     const pris = new Set<string>()
     const pousser = (l: Lu, cat: PanneauImmersion['cat'], extra: Partial<PanneauImmersion> = {}) => {
@@ -173,10 +196,10 @@ async function construirePool(slug: string, lang: string): Promise<Pool | null> 
       if (j) j.cat = 'experience'
     }
 
-    // Tables : ★ ≥ 4,5 ET ≥ 300 avis ET halal vérifié/signalé — le
+    // Tables : ★ ≥ 4,5 ET ≥ 120 avis ET halal vérifié/signalé — le
     // croisement fait la confiance (base verte > mention orange).
     for (const l of tables) {
-      if ((l.nbAvis ?? 0) < 300) continue
+      if ((l.nbAvis ?? 0) < SEUIL_AVIS_TABLE) continue
       const base = restosBase.find((r) => r.nom && typeof r.lat === 'number'
         && distM(r.lat!, r.lng!, l.lat, l.lng) < 60 && semblables(r.nom, l.nom))
       const mention = /halal/i.test(l.nom) || /halal/i.test(l.resume ?? '')
@@ -221,9 +244,16 @@ async function construirePool(slug: string, lang: string): Promise<Pool | null> 
     })
   }
 
-  // Phase 2 : le pool sert aussi les flux Eat/Sleep/Do — on garde jusqu'à
-  // 40 lieux au-dessus des seuils (les flux filtrent par catégorie).
-  return { ville: nomVille, panneaux: panneaux.slice(0, 60), contradictions, genere: new Date().toISOString().slice(0, 10) }
+  // Phase 2 : le pool sert aussi les flux Eat/Sleep/Do/Pray. On plafonne
+  // PAR CATÉGORIE et non en bloc : un simple slice(0,60) coupait la fin de
+  // la liste, c'est-à-dire les tables (poussées après les monuments) — le
+  // flux Eat se retrouvait court alors que le pool en avait davantage.
+  const PLAFOND: Record<PanneauImmersion['cat'], number> = {
+    monument: 20, experience: 6, joker: 8, table: 40, mosquee: 15, hotel: 12,
+  }
+  const restants = { ...PLAFOND }
+  const retenus = panneaux.filter((p) => (restants[p.cat] > 0 ? (restants[p.cat]--, true) : false))
+  return { ville: nomVille, panneaux: retenus, contradictions, genere: new Date().toISOString().slice(0, 10) }
 }
 
 /** Conseils d'initié — Haiku, UNE fois, ≤ 14 mots, actionnables. */
@@ -231,14 +261,16 @@ async function genererConseils(pool: Pool, lang: string, r: NonNullable<ReturnTy
   const cle = process.env.ANTHROPIC_API_KEY
   if (!cle || !pool.panneaux.length) return
   try {
-    const lieux = pool.panneaux.map((p) => ({ id: p.id, nom: p.nom, cat: p.cat }))
+    // 60 lieux au plus dans un seul appel : au-delà, la réponse JSON se
+    // ferait tronquer et TOUS les conseils seraient perdus.
+    const lieux = pool.panneaux.slice(0, 60).map((p) => ({ id: p.id, nom: p.nom, cat: p.cat }))
     const PROMPT = `Ville : ${pool.ville}. Pour CHAQUE lieu, un conseil d'initié ${lang === 'en' ? 'en anglais' : 'en français'} de 14 mots MAXIMUM, ACTIONNABLE (« vas-y au Fajr », « vise le départ de 17 h », « commence à moitié prix ») — jamais une description Wikipédia. Et une étiquette COURTE en majuscules (ex. LIEU CULTE, LE PLUS VISITÉ, EXPÉRIENCE, POINT DE VUE, SENS EN ÉVEIL).
 Réponds UNIQUEMENT un JSON : {"<id>":{"c":"conseil","e":"ÉTIQUETTE"}}.
 Si tu ne connais pas un lieu avec certitude, OMETS-le. Jamais le mot « certifié ».
 Lieux : ${JSON.stringify(lieux)}`
     const { default: Anthropic } = await import('@anthropic-ai/sdk')
     const client = new Anthropic({ apiKey: cle })
-    const rep = await client.messages.create({ model: 'claude-haiku-4-5-20251001', max_tokens: 1800, temperature: 0, messages: [{ role: 'user', content: PROMPT }] })
+    const rep = await client.messages.create({ model: 'claude-haiku-4-5-20251001', max_tokens: 3000, temperature: 0, messages: [{ role: 'user', content: PROMPT }] })
     const brut = (rep.content.find((c) => c.type === 'text')?.text ?? '').trim()
     const j = JSON.parse(brut.match(/\{[\s\S]*\}/)?.[0] ?? 'null') as Record<string, { c?: string; e?: string }> | null
     if (!j) return
