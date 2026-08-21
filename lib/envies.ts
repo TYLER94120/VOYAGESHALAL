@@ -4,4 +4,4 @@
 // de tests puisse les importer sans drapeau expérimental (voir l'en-tête
 // de ce fichier). Ici, on ne fait que republier, avec les types.
 export type { Envie } from '@/lib/envies.mjs'
-export { ENVIES, forceEnvie, forceEnvieGoogle, correspondEnvie, envieById, niveauHalal } from '@/lib/envies.mjs'
+export { ENVIES, REQUETES_PLAT, forceEnvie, forceEnvieGoogle, correspondEnvie, envieById, niveauHalal } from '@/lib/envies.mjs'

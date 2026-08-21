@@ -5,7 +5,7 @@ import { ajouterMinutes } from '@/lib/trajets'
 import { motSpecifique } from '@/lib/typeMot.mjs'
 import { Redis } from '@upstash/redis'
 import { requeteGoogle } from '@/lib/requete.mjs'
-import { forceEnvieGoogle } from '@/lib/envies'
+import { forceEnvieGoogle, REQUETES_PLAT } from '@/lib/envies'
 import { accepte } from '@/lib/categorie.mjs'
 import { listAllSpots } from '@/lib/prayerSpots'
 import { CRITERES_DEFAUT, type Criteres } from '@/lib/criteres'
@@ -339,7 +339,15 @@ function cadre(lat: number, lng: number, m: number) {
  */
 type Refus = { statut: number; message: string }
 // Le journal de recherche : ce qui explique un résultat vide (itération 4).
-interface Bilan { rayonAtteintM?: number; ecartesAlcool?: number }
+interface Bilan {
+  rayonAtteintM?: number
+  ecartesAlcool?: number
+  /** 🍣 Combien d'adresses Google a proposées SANS rapport avec l'envie —
+   *  la différence entre « il n'y a rien ici » et « ce n'était pas le bon
+   *  plat » (21 août, envie « Asiatique » à Noisy-le-Grand). */
+  candidatsEnvie?: number
+  ecartesEnvie?: number
+}
 
 function sansSecret(texte: string): string {
   return texte.replace(/key=[^&\s"']+/gi, 'key=***').slice(0, 300)
@@ -671,7 +679,7 @@ async function verifierAlcool(cands: Candidat[], cle: string, bilan?: Bilan): Pr
 }
 
 /** Le tri : c'est lui qui rend le résultat « sur mesure ». */
-function classer(cands: Candidat[], c: Criteres, rayon: number): Candidat[] {
+function classer(cands: Candidat[], c: Criteres, rayon: number, bilan?: Bilan): Candidat[] {
   // ════════ QUI ENTRE, ET DANS QUEL ORDRE — deux questions distinctes ════
   //
   // Ordre de Mohamed, 15 août, en deux phrases qui semblent s'opposer :
@@ -703,6 +711,7 @@ function classer(cands: Candidat[], c: Criteres, rayon: number): Candidat[] {
     : cands.map((x) => ({ x, f: 2 as const }))
   const forces = new Map(avecEnvie.map((e) => [e.x.id, e.f]))
   if (c.envieId) {
+    if (bilan) { bilan.candidatsEnvie = cands.length; bilan.ecartesEnvie = cands.length - avecEnvie.length }
     console.info(`[lieux] envie « ${c.envieId} » : ${cands.length} candidats Google → ${avecEnvie.length} du bon plat`)
   }
 
@@ -1163,9 +1172,30 @@ export async function POST(req: Request) {
       if (encore?.length) cands = encore
     }
 
+    // 🍣 LE REPLI PAR PLAT (21 août). « Il ne trouve jamais asiatique — le
+    // mot clé choisi n'est pas bon je pense, là où je suis il y a plein de
+    // sushi. » L'intuition était juste : « restaurant asiatique » est un
+    // mot de CATÉGORIE, que personne ne met sur sa devanture ; « sushi »,
+    // « chinois », « thaï » sont des mots de PLAT, et ce sont ceux que
+    // Google indexe. On relance donc sur les mots du plat — mais SEULEMENT
+    // si l'écran allait rester vide, et seulement pour compléter : les
+    // adresses déjà trouvées restent, on ajoute celles qui manquaient.
+    if (c.envieId && (cands?.length ?? 0) < RETENUS) {
+      const vus = new Set((cands ?? []).map((x) => x.id))
+      for (const requete of (REQUETES_PLAT[c.envieId] ?? []).slice(0, 4)) {
+        if ((cands?.length ?? 0) >= RETENUS + AUTRES) break
+        const encore = await passe1(lat, lng, c, cle, lang, PALIERS_ENVIE_M[0], requete, journal)
+        if (!encore?.length) continue
+        const neufs = encore.filter((x) => !vus.has(x.id))
+        neufs.forEach((x) => vus.add(x.id))
+        cands = [...(cands ?? []), ...neufs]
+        console.info(`[lieux] repli envie « ${c.envieId} » via « ${requete} » : +${neufs.length} candidat(s)`)
+      }
+    }
+
     if (cands !== null) etatGoogle = cands.length ? 'ok' : 'vide'
     if (cands?.length) {
-      const tries = ecarterLAbsurde(classer(cands, c, rayon)).filter((x) => !spots.some((s) => distM(s.lat, s.lng, x.lat, x.lng) < 60))
+      const tries = ecarterLAbsurde(classer(cands, c, rayon, bilan)).filter((x) => !spots.some((s) => distM(s.lat, s.lng, x.lat, x.lng) < 60))
       // 🔴 BARRAGE 2 — on paie la vérification alcool sur un pool élargi
       // AVANT de choisir les trois. C'est l'ordre inverse qui avait laissé
       // passer un bistrot : on filtrait trop tard, ou pas du tout.
@@ -1269,6 +1299,9 @@ export async function POST(req: Request) {
     // alcool a écarté — pour qu'un écran vide dise la vérité.
     rayonAtteintKm: Math.round((bilan.rayonAtteintM ?? rayonM(c, mode)) / 1000),
     ...(bilan.ecartesAlcool ? { ecartesAlcool: bilan.ecartesAlcool } : {}),
+    // Dire POURQUOI l'écran est vide : « rien ici » et « rien de ce plat »
+    // ne se corrigent pas de la même façon.
+    ...(bilan.ecartesEnvie ? { ecartesEnvie: bilan.ecartesEnvie, candidatsEnvie: bilan.candidatsEnvie } : {}),
     // ⏱️ L'URGENCE PRIME QUAND LA PRIÈRE APPROCHE. Le composant connaît le
     // temps restant (il le calcule sur place, sans réseau) ; on lui donne
     // ici de quoi dire « atteignable avant » : chaque fiche porte déjà sa

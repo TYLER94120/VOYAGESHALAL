@@ -213,6 +213,9 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
   const [plafond, setPlafond] = useState(15)
   const [rayonKm, setRayonKm] = useState(20)
   const [ecartesAlcool, setEcartesAlcool] = useState(0)
+  /** Adresses proposées par Google mais qui ne servaient pas le plat
+   *  demandé — la différence entre « rien ici » et « pas ce plat ». */
+  const [ecartesEnvie, setEcartesEnvie] = useState(0)
   const [posUtilisee, setPosUtilisee] = useState<'gps' | 'ip' | 'ville' | null>(null)
   const [prose, setProse] = useState('')
   const [aEcrit, setAEcrit] = useState(false)
@@ -505,7 +508,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
 
       const ac = new AbortController()
       const to = setTimeout(() => ac.abort(), 20_000)
-      let corps: { fiches?: Fiche[]; autres?: Fiche[]; source?: string; etatGoogle?: 'ok' | 'vide' | 'muet' | 'sans-cle'; mode?: Mode; plafondMin?: number; rayonKm?: number; rayonAtteintKm?: number; ecartesAlcool?: number; relaches?: string[]; motManquant?: string | null } = {}
+      let corps: { fiches?: Fiche[]; autres?: Fiche[]; source?: string; etatGoogle?: 'ok' | 'vide' | 'muet' | 'sans-cle'; mode?: Mode; plafondMin?: number; rayonKm?: number; rayonAtteintKm?: number; ecartesAlcool?: number; ecartesEnvie?: number; relaches?: string[]; motManquant?: string | null } = {}
       try {
         const r = await appelerLieux({ lat: pos.lat, lng: pos.lng, criteres: c, lang: en ? 'en' : 'fr', ecrit, profil }, ac.signal)
         if (r.status === 429) {
@@ -530,7 +533,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
       setFiches(trois); setAutres(corps.autres ?? []); setSource(corps.source ?? ''); setEtatGoogle(corps.etatGoogle ?? '')
       // La carte se peuple d'ici, et de nulle part ailleurs.
       onResultats?.(trois)
-      setMode(corps.mode ?? 'voiture'); setPlafond(corps.plafondMin ?? 15); setRayonKm(corps.rayonAtteintKm ?? corps.rayonKm ?? 20); setEcartesAlcool(corps.ecartesAlcool ?? 0); setRelaches(corps.relaches ?? []); setMotManquant(corps.motManquant ?? null)
+      setMode(corps.mode ?? 'voiture'); setPlafond(corps.plafondMin ?? 15); setRayonKm(corps.rayonAtteintKm ?? corps.rayonKm ?? 20); setEcartesAlcool(corps.ecartesAlcool ?? 0); setEcartesEnvie(corps.ecartesEnvie ?? 0); setRelaches(corps.relaches ?? []); setMotManquant(corps.motManquant ?? null)
       setEtape('resultat')
       // La vue se place sur la réponse, sans que le visiteur ait à la
       // chercher. `requestAnimationFrame` : on attend que les fiches soient
@@ -1192,11 +1195,15 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
                   ? t(`Aucun lieu de prière trouvé jusqu'à ${rayonKm} km — on préfère te le dire plutôt que d'inventer.`,
                       `No prayer place found within ${rayonKm} km — we would rather say so than invent one.`)
                   : envie
-                    /* 🍣 Sur une envie, on nomme le plat cherché : « aucune
-                       adresse » laissait croire que le quartier est vide,
-                       alors qu'il n'y a pas de sushi — il y a autre chose. */
-                    ? t(`Aucun ${envie.mot.toLowerCase()} trouvé jusqu'à ${rayonKm} km. Le reste du quartier ne correspond pas à cette envie, et on ne va pas te servir autre chose à la place — retire le filtre pour voir tout ce qu'il y a.`,
-                        `No ${envie.mot.toLowerCase()} found within ${rayonKm} km. What else is around does not match this craving, and we will not serve you something else instead — clear the filter to see everything.`)
+                    /* 🍣 Sur une envie, on nomme le plat cherché — ET la
+                       vraie raison. Le 21 août, cet écran affirmait « le
+                       reste du quartier ne correspond pas à cette envie »
+                       alors que des adresses avaient pu être écartées pour
+                       service d'alcool : une explication fausse est pire
+                       qu'une explication absente. On dit ce qu'on a compté,
+                       rien d'autre. */
+                    ? t(`Aucun ${envie.mot.toLowerCase()} retenu jusqu'à ${rayonKm} km.${ecartesAlcool ? ` ${ecartesAlcool} adresse${ecartesAlcool > 1 ? 's ont été écartées' : ' a été écartée'} : service d'alcool identifié.` : ''}${ecartesEnvie ? ` ${ecartesEnvie} autre${ecartesEnvie > 1 ? 's' : ''} ne servaient pas ce plat.` : ''} Retire le filtre pour voir tout ce qu'il y a.`,
+                        `No ${envie.mot.toLowerCase()} kept within ${rayonKm} km.${ecartesAlcool ? ` ${ecartesAlcool} set aside: alcohol service identified.` : ''}${ecartesEnvie ? ` ${ecartesEnvie} more did not serve this dish.` : ''} Clear the filter to see everything.`)
                     : t(`Aucune adresse trouvée jusqu'à ${rayonKm} km — on préfère te le dire plutôt que d'inventer.${ecartesAlcool ? ` (${ecartesAlcool} adresse${ecartesAlcool > 1 ? 's' : ''} écartée${ecartesAlcool > 1 ? 's' : ''} : service d'alcool identifié.)` : ''}`,
                         `Nothing found within ${rayonKm} km — we would rather say so than invent an address.${ecartesAlcool ? ` (${ecartesAlcool} set aside: alcohol service identified.)` : ''}`)}
             </p>
