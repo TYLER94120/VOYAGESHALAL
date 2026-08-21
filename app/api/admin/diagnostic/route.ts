@@ -42,6 +42,57 @@ const LIEUX: Record<string, { nom: string; lat: number; lng: number }> = {
 
 const CATEGORIES: Categorie[] = ['mosquee', 'manger', 'activite']
 
+/**
+ * 🍣 LE MODE ENVIE — « on a la clé, implémente-la pour la prévisualisation »
+ * (Mohamed, 20 août).
+ *
+ * Le filtre d'envie (une envie de sushi ne rend jamais une pizza) ne peut
+ * pas être éprouvé depuis l'atelier : il n'y a ni clé Google ni accès au
+ * domaine. Cette route, elle, tourne SUR le déploiement — prévisualisation
+ * comprise — avec la vraie clé, et rend en clair ce qu'il faut voir :
+ * jusqu'où on a cherché, ce que Google a proposé, et ce qui a été retenu
+ * avec son type. S'il reste une pizza dans une demande de sushi, elle est
+ * visible ligne à ligne.
+ *
+ *   /api/admin/diagnostic?token=…&envie=sushi
+ *   /api/admin/diagnostic?token=…&envie=toutes&lieu=paris
+ */
+const REQUETE_ENVIE: Record<string, string> = {
+  sushi: 'sushi', pizza: 'pizza', burger: 'burger', kebab: 'kebab',
+  poulet: 'poulet grillé', indien: 'restaurant indien', turc: 'restaurant turc',
+  maghrebin: 'restaurant marocain', asiatique: 'restaurant asiatique', dessert: 'pâtisserie',
+}
+
+async function testerEnvie(origin: string, depart: { lat: number; lng: number }, envieId: string) {
+  const r = await fetch(`${origin}/api/lieux`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      lat: depart.lat, lng: depart.lng, lang: 'fr', ecrit: false,
+      criteres: { ...CRITERES_DEFAUT, categorie: 'manger', motsCles: REQUETE_ENVIE[envieId] ?? envieId, envieId },
+    }),
+  })
+  const j = await r.json()
+  const toutes = [...(j.fiches ?? []), ...(j.autres ?? [])] as {
+    nom: string; distanceM: number; note?: number; nbAvis?: number; cuisine?: string
+  }[]
+  return {
+    envie: envieId,
+    rayonAtteintKm: j.rayonAtteintKm ?? null,
+    etatGoogle: j.etatGoogle,
+    depuisLeCache: !!j.cache,
+    retenues: toutes.length,
+    // Le contrôle qui compte : lire les noms. Une seule pizza ici sur une
+    // demande de sushi, et le filtre est à revoir.
+    adresses: toutes.slice(0, 20).map((f) => ({
+      nom: f.nom,
+      cuisine: f.cuisine ?? null,
+      note: f.note != null ? `${f.note} · ${f.nbAvis ?? '?'} avis` : null,
+      distance: f.distanceM < 1000 ? `${Math.round(f.distanceM)} m` : `${(f.distanceM / 1000).toFixed(1)} km`,
+    })),
+  }
+}
+
 export async function GET(req: Request) {
   if (!checkAdmin(req)) return NextResponse.json({ error: 'Non autorisé' }, { status: 401 })
   const u = new URL(req.url)
@@ -57,6 +108,25 @@ export async function GET(req: Request) {
 
   const origin = u.origin
   const resultats: Record<string, unknown> = {}
+
+  // ── Mode envie : on éprouve la précision, pas la couverture ──
+  const envie = (u.searchParams.get('envie') ?? '').toLowerCase()
+  if (envie) {
+    const ids = envie === 'toutes' ? Object.keys(REQUETE_ENVIE) : [envie]
+    const essais = []
+    for (const id of ids) {
+      try { essais.push(await testerEnvie(origin, depart, id)) }
+      catch (e) { essais.push({ envie: id, erreur: String(e).slice(0, 160) }) }
+    }
+    return NextResponse.json({
+      depart: depart.nom,
+      coordonnees: `${depart.lat}, ${depart.lng}`,
+      lu: new Date().toISOString(),
+      regle: 'Une envie part à 10 km. Seul le plat demandé est retenu — le reste n\'est pas montré.',
+      essais,
+      aide: 'Ajoute &envie=toutes pour les dix envies, &lieu=paris ou &lat=..&lng=.. pour un autre point.',
+    })
+  }
 
   for (const categorie of CATEGORIES) {
     try {

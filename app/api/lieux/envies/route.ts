@@ -17,10 +17,14 @@ import { Redis } from '@upstash/redis'
 export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
 
-const MANGER: { mot: string; requete: string }[] = [
-  { mot: 'Sushi', requete: 'sushi' }, { mot: 'Burger', requete: 'burger' }, { mot: 'Pizza', requete: 'pizza' },
-  { mot: 'Turc', requete: 'restaurant turc' }, { mot: 'Indien', requete: 'restaurant indien' }, { mot: 'Marocain', requete: 'restaurant marocain' },
-  { mot: 'Asiatique', requete: 'restaurant asiatique' }, { mot: 'Poulet', requete: 'poulet grillé' }, { mot: 'Dessert', requete: 'pâtisserie' },
+// 🍣 Chaque envie porte l'IDENTIFIANT de lib/envies.ts : c'est lui qui
+// permet de relire la réponse de Google et d'écarter ce qui n'est pas le
+// plat demandé (20 août — « quand on veut des sushi on doit pas tomber sur
+// des pizzas »). Une envie sans identifiant filtrerait dans le vide.
+const MANGER: { mot: string; requete: string; id: string }[] = [
+  { mot: 'Sushi', requete: 'sushi', id: 'sushi' }, { mot: 'Burger', requete: 'burger', id: 'burger' }, { mot: 'Pizza', requete: 'pizza', id: 'pizza' },
+  { mot: 'Turc', requete: 'restaurant turc', id: 'turc' }, { mot: 'Indien', requete: 'restaurant indien', id: 'indien' }, { mot: 'Marocain', requete: 'restaurant marocain', id: 'maghrebin' },
+  { mot: 'Asiatique', requete: 'restaurant asiatique', id: 'asiatique' }, { mot: 'Poulet', requete: 'poulet grillé', id: 'poulet' }, { mot: 'Dessert', requete: 'pâtisserie', id: 'dessert' },
 ]
 const FAIRE: { mot: string; type: string }[] = [
   { mot: 'Parc', type: 'park' }, { mot: 'Musée', type: 'museum' }, { mot: 'Piscine', type: 'swimming_pool' },
@@ -66,11 +70,11 @@ export async function POST(request: Request) {
   if (!cle) return NextResponse.json({ envies: null, raison: 'sans-cle' })
 
   // ~500 m : Math.round(x * 200) / 200 = pas de 0,005°.
-  const cleCache = `vh:envies:v1:${mode}:${Math.round(lat * 200) / 200},${Math.round(lng * 200) / 200}`
+  const cleCache = `vh:envies:v2:${mode}:${Math.round(lat * 200) / 200},${Math.round(lng * 200) / 200}`
   const r = getRedis()
   if (r) {
     try {
-      const enCache = await r.get<{ mot: string; requete: string; n: number }[]>(cleCache)
+      const enCache = await r.get<{ mot: string; requete: string; id?: string; n: number }[]>(cleCache)
       if (enCache) return NextResponse.json({ envies: enCache, cache: true })
     } catch { /* le comptage direct suivra */ }
   }
@@ -79,7 +83,7 @@ export async function POST(request: Request) {
   const t = setTimeout(() => ac.abort(), 3500)
   try {
     const envies = mode === 'manger'
-      ? await Promise.all(MANGER.map(async (e) => ({ mot: e.mot, requete: e.requete, n: await compteTexte(cle, lat, lng, e.requete, ac.signal).catch(() => -1) })))
+      ? await Promise.all(MANGER.map(async (e) => ({ mot: e.mot, requete: e.requete, id: e.id, n: await compteTexte(cle, lat, lng, e.requete, ac.signal).catch(() => -1) })))
       : await Promise.all(FAIRE.map(async (e) => ({ mot: e.mot, requete: e.mot.toLowerCase(), type: e.type, n: await compteType(cle, lat, lng, e.type, ac.signal).catch(() => -1) })))
     // -1 = comptage indisponible : on GARDE l'envie sans compteur plutôt que
     // de la cacher à tort. 0 = vraiment rien : la case disparaît.

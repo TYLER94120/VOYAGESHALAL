@@ -73,6 +73,11 @@ export interface Criteres {
    * cocher les boutons de correction et à choisir le rayon.
    */
   motsCles?: string
+  /** 🍣 L'ENVIE CHOISIE D'UN TAP (id de lib/envies.ts) — « sushi »,
+   *  « pizza »… Elle ne sert pas qu'à composer la requête : elle SERT DE
+   *  FILTRE sur la réponse de Google, pour qu'une envie de sushi ne
+   *  ramène jamais une pizzeria (retour du 20 août). */
+  envieId?: string
   /** Ce que la phrase a laissé deviner sans certitude — sert à la relance. */
   moment?: 'maintenant' | 'ce-soir'
   compagnie?: 'seul' | 'famille' | 'amis'

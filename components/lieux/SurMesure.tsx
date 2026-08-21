@@ -239,11 +239,11 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
   // tap (« Liste & carte »). NOTE : le brief fondateur disait « Around me
   // reste un top 3 en liste » ; l'ordre du 20 août l'emporte, signalé.
   const [fluxSwipe, setFluxSwipe] = useState(false)
-  const [envie, setEnvie] = useState<{ mot: string; requete: string } | null>(null)
+  const [envie, setEnvie] = useState<{ mot: string; requete: string; id?: string } | null>(null)
   // Les envies RÉELLEMENT disponibles (compteurs serveur, cache 10 min) —
   // null = comptage indisponible, on retombe sur la grille fixe sans
   // compteurs plutôt que de bloquer (réseau dégradé = le cas normal).
-  const [enviesDispo, setEnviesDispo] = useState<{ mot: string; requete: string; n: number }[] | null>(null)
+  const [enviesDispo, setEnviesDispo] = useState<{ mot: string; requete: string; id?: string; n: number }[] | null>(null)
   const [enviesChargent, setEnviesChargent] = useState(false)
   /** Qui a compris la phrase : Claude, le parseur local, ou personne (rien
    *  tapé). C'est ce qui distingue « Claude a compris : hammam » de la
@@ -665,17 +665,19 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
       })
       clearTimeout(t)
       if (r.ok) {
-        const j = await r.json() as { envies?: { mot: string; requete: string; n: number }[] | null }
+        const j = await r.json() as { envies?: { mot: string; requete: string; id?: string; n: number }[] | null }
         if (Array.isArray(j.envies) && j.envies.length) setEnviesDispo(j.envies)
       }
     } catch { /* la grille fixe suffit */ } finally { setEnviesChargent(false) }
   }
 
-  function lancerEnvie(e: { mot: string; requete: string } | null, bonusKm = 0) {
+  function lancerEnvie(e: { mot: string; requete: string; id?: string } | null, bonusKm = 0) {
     if (!aide?.cat) return
     setEnvie(e)
     setFeuilleEnvies(false)
-    const c = { ...crit, categorie: aide.cat, motsCles: e?.requete ?? '', rayonBonusKm: bonusKm || undefined } as Criteres
+    // 🍣 L'identifiant d'envie part avec la requête : c'est lui qui fait
+    // écarter les pizzas quand on a demandé des sushi (20 août).
+    const c = { ...crit, categorie: aide.cat, motsCles: e?.requete ?? '', envieId: e?.id, rayonBonusKm: bonusKm || undefined } as Criteres
     setCrit(c)
     lancer(c, false)
   }
@@ -1189,8 +1191,14 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
                 : crit.categorie === 'mosquee'
                   ? t(`Aucun lieu de prière trouvé jusqu'à ${rayonKm} km — on préfère te le dire plutôt que d'inventer.`,
                       `No prayer place found within ${rayonKm} km — we would rather say so than invent one.`)
-                  : t(`Aucune adresse trouvée jusqu'à ${rayonKm} km — on préfère te le dire plutôt que d'inventer.${ecartesAlcool ? ` (${ecartesAlcool} adresse${ecartesAlcool > 1 ? 's' : ''} écartée${ecartesAlcool > 1 ? 's' : ''} : service d'alcool identifié.)` : ''}`,
-                      `Nothing found within ${rayonKm} km — we would rather say so than invent an address.${ecartesAlcool ? ` (${ecartesAlcool} set aside: alcohol service identified.)` : ''}`)}
+                  : envie
+                    /* 🍣 Sur une envie, on nomme le plat cherché : « aucune
+                       adresse » laissait croire que le quartier est vide,
+                       alors qu'il n'y a pas de sushi — il y a autre chose. */
+                    ? t(`Aucun ${envie.mot.toLowerCase()} trouvé jusqu'à ${rayonKm} km. Le reste du quartier ne correspond pas à cette envie, et on ne va pas te servir autre chose à la place — retire le filtre pour voir tout ce qu'il y a.`,
+                        `No ${envie.mot.toLowerCase()} found within ${rayonKm} km. What else is around does not match this craving, and we will not serve you something else instead — clear the filter to see everything.`)
+                    : t(`Aucune adresse trouvée jusqu'à ${rayonKm} km — on préfère te le dire plutôt que d'inventer.${ecartesAlcool ? ` (${ecartesAlcool} adresse${ecartesAlcool > 1 ? 's' : ''} écartée${ecartesAlcool > 1 ? 's' : ''} : service d'alcool identifié.)` : ''}`,
+                        `Nothing found within ${rayonKm} km — we would rather say so than invent an address.${ecartesAlcool ? ` (${ecartesAlcool} set aside: alcohol service identified.)` : ''}`)}
             </p>
             <div style={rangee}>
               {crit.budget !== 'peu-importe' && (
