@@ -37,6 +37,11 @@ CLONE = pathlib.Path('/home/user/islampasapas')
 # Ce qui ne traverse pas.
 EXCLUS = {'outils', '.git', '.gitignore', '__pycache__'}
 
+# Les notes de travail non plus. DEPLOIEMENT.md et RECETTE-V2.md sont ecrits
+# pour qui developpe le site, pas pour qui l'utilise : les servir ne rend
+# service a personne et expose des details d'hebergement.
+EXTENSIONS_EXCLUES = {'.md'}
+
 
 def git(dossier, *args, **kw):
     r = subprocess.run(['git'] + list(args), capture_output=True, text=True,
@@ -52,6 +57,8 @@ def a_publier():
     for p in sorted(SOURCE.rglob('*')):
         rel = p.relative_to(SOURCE)
         if any(part in EXCLUS for part in rel.parts):
+            continue
+        if p.suffix.lower() in EXTENSIONS_EXCLUES:
             continue
         if p.is_file():
             out.append(rel)
