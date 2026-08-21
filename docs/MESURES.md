@@ -294,9 +294,9 @@ OpenStreetMap (© contributeurs OSM, ODbL). Pages aéroport : **7 publiées sur
 
 | | |
 |---|---|
-| Fiches | 202 → **218** |
+| Fiches | 202 → **220** |
 | Additifs E couverts | 28 → **37** |
-| Fiches de marques | +7 |
+| Fiches de marques | +9 |
 | Liens morts entre fiches | inconnus → **0, testés** |
 | Fiches orphelines | 3 → **0** |
 
@@ -335,12 +335,50 @@ Les trois glaces (Extrême, Magnum, Häagen-Dazs) forment un groupe sous la
 fiche `glace-halal`, qui nommait déjà les trois pièges — gélatine, alcool,
 E471. Chaque marque en illustre un. La structure était là, il manquait les cas.
 
+**Puis deux chaînes de restauration**, Popeyes et Pizza Hut. Deux seulement,
+parce que les chaînes se ressemblent toutes dès qu'on gratte — « pas de
+certification, du porc en cuisine » — et que trois fiches identiques seraient
+de la quantité. Ces deux-là disent chacune quelque chose de neuf :
+
+- **Popeyes** — l'enseigne a annoncé en juin 2025 la certification halal de
+  toute sa gamme poulet. Piège inverse de l'habituel : **une enseigne
+  certifiée ne veut pas dire une carte entièrement licite** — du bacon reste
+  dans certaines recettes. L'exact opposé de KFC, même créneau.
+- **Pizza Hut** — la distinction que personne ne fait : **un ingrédient peut
+  être certifié sans que la cuisine le soit.** Même four, même plan de travail,
+  pepperoni de porc sur la pizza voisine. La réponse n'est ni oui ni non, elle
+  est : certifié jusqu'où ?
+
+### 🐛 Un défaut invisible trouvé au passage — le gras partait chez Google
+
+Les réponses sont rendues par `<p>{paragraphe}</p>` : React échappe, il n'y a
+jamais eu de moteur markdown. **Trois fiches en ligne** — `riba-interet-islam`,
+`sport-combat-halal`, `ia-halal` — affichaient des astérisques à leurs lecteurs
+depuis leur publication.
+
+Le pire n'était pas la page. Le même texte part à deux autres endroits :
+les **données structurées FAQPage**, donc chez Google, qui recevait
+« \*\*on ne frappe pas le visage\*\* » dans le champ réponse ; et le **mode
+conduite**, qui peut être lu à voix haute.
+
+Corrigé par `lib/emphase.ts` : `enMorceaux` pour ce qui s'affiche,
+`sansEmphase` pour tout ce qui doit rester du texte pur. Limité au gras
+volontairement — chaque syntaxe acceptée est une syntaxe qui peut fuir.
+L'index de recherche n'a pas été touché : il découpe déjà sur `[^a-z0-9]+`.
+
 ### ⚠️ Ce qui contraint la production de fiches de marques
 
-**Open Food Facts est bloqué par la politique réseau de l'environnement**
-(`403 CONNECT`, refus de la passerelle) — donc pas d'accès direct à la base
-ouverte des compositions. **WebSearch fonctionne** : c'est par là que les sept
-compositions ont été relevées.
+**L'accès réseau de la session est restreint par la politique de
+l'environnement** — refus `403` sur le CONNECT pour `openfoodfacts.org`,
+`popeyes.fr`, et **même `halalcheck.fr` et `halalgpt.fr`**. Ce ne sont donc
+pas les API qui sont fermées : c'est le conteneur qui est enfermé. HalalCheck
+interroge bien Open Food Facts en production — ce code tourne sur Vercel ou
+dans le navigateur du visiteur, qui ne passent pas par ce proxy.
+
+**WebSearch fonctionne**, WebFetch non. C'est par là que les compositions ont
+été relevées — donc via des résumés de pages, pas via les pages elles-mêmes.
+C'est une source plus faible que lire la page, et les fiches l'assument dans
+leur formulation.
 
 Conséquence sur la façon d'écrire, et elle est permanente : on écrit
 **« la composition publiée »**, jamais **« ce produit contient »**. Une
@@ -348,10 +386,13 @@ recette change ; une fiche qui apprend à lire l'étiquette reste vraie quand
 la recette a changé. Aucune fiche ne prononce « certifié » sur un produit qui
 ne l'est pas formellement.
 
-**Si l'accès à Open Food Facts était ouvert**, les fiches pourraient porter la
-composition avec sa source et sa date, et un script la revérifierait — le même
-schéma que les salles de prière OpenStreetMap sur VoyagesHalal. C'est une
-décision d'environnement, pas de code.
+**Deux façons de lever la contrainte**, toutes deux du ressort de Mohamed :
+ouvrir la politique réseau de l'environnement
+([doc](https://code.claude.com/docs/en/claude-code-on-the-web)) — les fiches
+porteraient alors la composition avec sa source et sa date, revérifiée par
+script, exactement comme les salles de prière OpenStreetMap ; ou autoriser
+`add_repo` sur **halalcheck**, qui interroge déjà cette API : s'il stocke ce
+qu'il récupère, c'est une source vérifiée disponible sans réseau du tout.
 
 ⚠️ Les titres datent du 20 août. Google met une à deux semaines à recalculer
 l'affichage : **leur effet ne sera lisible qu'au relevé du 1er septembre.**
