@@ -1,0 +1,2198 @@
+<title>Islam pas à pas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Source+Sans+3:wght@400;500;600;700&family=Amiri:wght@400;700&display=swap">
+<style>
+/* ==========================================================================
+   ISLAM PAS A PAS — SYSTEME DE DESIGN
+   --------------------------------------------------------------------------
+   Toutes les valeurs de ce fichier viennent du cahier des charges, section 3.
+   Elles ne sont pas negociables et ne doivent pas etre "ajustees a l'oeil" :
+   si une valeur doit changer, elle change d'abord dans le cahier des charges.
+
+   Dessine pour 390 px de large, une seule main, un pouce. Le bureau est une
+   adaptation (section 12), jamais le point de depart.
+   ========================================================================== */
+
+:root {
+  /* --- Fonds ------------------------------------------------------------ */
+  --fond-app:        #FAF7F0;   /* toutes les pages sauf le QCM */
+  --fond-qcm:        #EFEADF;   /* mode QCM : un ton plus chaud, plus concentre */
+  --papier:          #FFFDF8;   /* cartes, blocs, champs */
+  --papier-arriere:  #FAF5EA;   /* la carte suivante, derriere la carte active */
+
+  /* --- Vert ------------------------------------------------------------- */
+  --vert:            #0F5132;
+  --vert-fonce:      #0B3D26;
+  --vert-juste:      #2F7A52;
+  --vert-voile:      #EAF1EC;
+  --vert-voile-2:    #EFF5F1;
+  --vert-voile-3:    #EAF3ED;
+
+  /* --- Or ---------------------------------------------------------------- */
+  --or:              #C9A227;
+  --or-clair:        #E3C97A;
+  --or-texte:        #7E6A22;
+  --or-texte-2:      #9A7A12;
+  --or-voile:        #FBF2D8;
+  --or-bordure:      #E8D9A6;
+  --sur-or:          #3A2E06;
+  --sur-or-2:        #26200A;
+
+  /* --- Rouge ------------------------------------------------------------- */
+  --rouge:           #A63D40;
+  --rouge-texte:     #7A2A2C;
+  --rouge-voile:     #FBEDED;
+  --rouge-bordure:   #E7C4C5;
+
+  /* --- Texte ------------------------------------------------------------- */
+  --encre:           #1C2620;
+  --encre-titre:     #12211A;
+  --texte-2:         #55635B;
+  --texte-3:         #5F6D66;   /* la limite basse. JAMAIS plus clair sur ivoire. */
+
+  /* --- Traits ------------------------------------------------------------ */
+  --trait:           #E6DFD1;
+  --trait-2:         #E0D8C7;
+  --trait-3:         #DDD6C6;
+  --trait-4:         #D6CEBC;
+  --trait-5:         #DFD7C7;
+
+  /* --- Sur fond vert fonce ----------------------------------------------- */
+  --sur-vert:        #FFFDF8;
+  --sur-vert-2:      #B9D2C4;
+  --sur-vert-3:      #A9C7B6;
+  --sur-vert-4:      #7FA893;
+  --sur-vert-5:      #D8E5DD;
+
+  /* --- Polices ----------------------------------------------------------- */
+  --titre:  'Marcellus', Georgia, serif;
+  --corps:  'Source Sans 3', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --arabe:  'Amiri', 'Scheherazade New', serif;
+
+  /* --- Geometrie (section 3.3) ------------------------------------------- */
+  --marge:        20px;   /* marge laterale de l'ecran */
+  --r-carte:      26px;   /* carte de QCM */
+  --r-bloc:       14px;   /* bloc / champ : 14 a 18 */
+  --r-bloc-2:     18px;
+  --r-pastille:   22px;   /* pastille : 15 a 22 */
+  --r-lettre:     10px;   /* badge de lettre : 8 a 12 */
+  --h-bouton:     56px;
+  --r-bouton:     15px;
+  --h-bouton-2:   52px;
+  --r-bouton-2:   14px;
+  --cible:        44px;   /* toute cible tactile, section 2.6 */
+
+  --ombre-carte:  0 14px 34px rgba(28, 38, 32, 0.12);
+  --ombre-vert:   0 4px 14px rgba(15, 81, 50, 0.22);
+  --ombre-or:     0 4px 14px rgba(201, 162, 39, 0.35);
+}
+
+/* ==========================================================================
+   REMISE A ZERO
+   ========================================================================== */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--fond-app);
+  color: var(--encre);
+  font-family: var(--corps);
+  font-size: 15px;
+  line-height: 1.55;
+  /* Le QCM se joue au doigt : le navigateur ne doit pas interpreter le geste
+     comme un defilement ou un zoom pendant qu'on fait glisser une carte. */
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior-y: none;
+}
+
+/* Le fond passe au ton chaud quand on est dans un QCM. */
+body[data-mode="qcm"] { background: var(--fond-qcm); }
+
+h1, h2, h3, p, figure, ul, ol { margin: 0; padding: 0; }
+ul, ol { list-style: none; }
+
+button, input, select {
+  font: inherit;
+  color: inherit;
+  margin: 0;
+}
+
+button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  /* Une cible tactile ne descend jamais sous 44 px (section 2.6). Le controle
+     automatique de la recette le verifie sur CHAQUE bouton de CHAQUE ecran. */
+  min-height: var(--cible);
+  min-width: var(--cible);
+}
+
+a { color: var(--vert); text-decoration: none; }
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--vert);
+  outline-offset: 2px;
+}
+
+svg { display: block; flex-shrink: 0; }
+
+/* ==========================================================================
+   TYPOGRAPHIE (section 3.2)
+   ========================================================================== */
+
+.t-page   { font-family: var(--titre); font-size: 29px;   line-height: 1.15; color: var(--encre-titre); }
+.t-bandeau{ font-family: var(--titre); font-size: 24px;   line-height: 1.2;  }
+.t-question{font-family: var(--titre); font-size: 21px;   line-height: 1.35; color: var(--encre-titre); text-wrap: pretty; }
+.t-bloc   { font-family: var(--titre); font-size: 17px;   line-height: 1.25; color: var(--vert-fonce); }
+.t-chiffre{ font-family: var(--titre); font-size: 22px;   line-height: 1;    color: var(--vert); }
+
+.c-reponse{ font-size: 14.5px; line-height: 1.3; }
+.c-meta   { font-size: 12.5px; color: var(--texte-2); }
+.c-sur    { font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; }
+
+/* L'arabe : direction droite-a-gauche, jamais deforme, jamais en italique,
+   jamais tronque (section 2.10). */
+.arabe {
+  font-family: var(--arabe);
+  font-size: 26px;
+  line-height: 1.6;
+  direction: rtl;
+  font-style: normal;
+  font-stretch: normal;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+.arabe-grand { font-size: 28px; }
+
+/* ==========================================================================
+   MISE EN PAGE
+   --------------------------------------------------------------------------
+   Section 3.3 : tout groupe d'elements freres se pose en flex ou grid avec
+   gap. Jamais de marges au coup par coup.
+   ========================================================================== */
+
+.ecran {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  /* Rien ne doit jamais elargir la page : une seule main, un pouce, et un
+     ecran qui ne retrecit pas tout seul. */
+  overflow-x: hidden;
+}
+
+.corps {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 26px var(--marge) 0 var(--marge);
+}
+
+.pile      { display: flex; flex-direction: column; }
+.pile-9    { display: flex; flex-direction: column; gap: 9px; }
+.pile-11   { display: flex; flex-direction: column; gap: 11px; }
+.pile-13   { display: flex; flex-direction: column; gap: 13px; }
+.pile-18   { display: flex; flex-direction: column; gap: 18px; }
+.pile-22   { display: flex; flex-direction: column; gap: 22px; }
+.rang      { display: flex; align-items: center; gap: 10px; }
+.rang-entre{ display: flex; align-items: center; justify-content: space-between; }
+.pousse    { flex-grow: 1; }
+
+/* ==========================================================================
+   BLOCS ET BOUTONS
+   ========================================================================== */
+
+.bloc {
+  background: var(--papier);
+  border: 1px solid var(--trait);
+  border-radius: var(--r-bloc);
+}
+
+.bouton {
+  height: var(--h-bouton);
+  border-radius: var(--r-bouton);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 16.5px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  width: 100%;
+}
+.bouton-vert { background: var(--vert); color: var(--sur-vert); box-shadow: var(--ombre-vert); }
+.bouton-or   { background: var(--or);   color: var(--sur-or);   box-shadow: 0 4px 14px rgba(201,162,39,0.28); }
+.bouton-2 {
+  height: var(--h-bouton-2);
+  border-radius: var(--r-bouton-2);
+  background: var(--papier);
+  border: 1px solid var(--trait-2);
+  color: var(--encre);
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.bouton[disabled] { opacity: 0.5; }
+
+/* Pastille ronde d'en-tete : profil, sortie. Toujours 44 px. */
+.pastille {
+  width: var(--cible);
+  height: var(--cible);
+  border-radius: var(--r-pastille);
+  border: 1px solid var(--trait);
+  background: var(--papier);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ==========================================================================
+   ACCESSIBILITE
+   ========================================================================== */
+
+.invisible {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.saut-contenu {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--vert);
+  color: var(--sur-vert);
+  padding: 12px 16px;
+  border-radius: 0 0 var(--r-bloc) 0;
+  z-index: 100;
+}
+.saut-contenu:focus { left: 0; }
+
+/* Section 7.9 : si la personne a demande moins d'animation, plus de rotation
+   ni d'envol. Un simple fondu de 120 ms. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.12s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.12s !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ==========================================================================
+   BUREAU (section 12)
+   --------------------------------------------------------------------------
+   AUCUN element nouveau n'apparait sur grand ecran. On centre, on elargit
+   un peu, c'est tout.
+   ========================================================================== */
+
+@media (min-width: 900px) {
+  .ecran { max-width: 480px; margin: 0 auto; }
+}
+
+/* ==========================================================================
+   LE QCM — LE PRODUIT
+   --------------------------------------------------------------------------
+   Ecrans 4 a 7 du cahier des charges. Les valeurs viennent de l'annexe A ;
+   quand l'annexe et la section 3 disent la meme chose, c'est la section 3 qui
+   est citee (variable). Quand l'annexe donne une valeur qui n'existe pas dans
+   la palette, elle est declaree ici et signalee comme telle.
+   ========================================================================== */
+
+:root {
+  /* Valeur d'annexe A, ecran 4 : fond du badge de lettre au repos. Elle ne
+     figure pas dans la palette de la section 3.1 — on ne l'invente pas
+     ailleurs, on la nomme ici une fois pour toutes. */
+  --badge-repos: #F2EDE2;
+  /* Valeur d'annexe A, ecran 4 : le chevron « Passer », plus sourd que le
+     texte a cote. Idem, absente de la palette. */
+  --chevron-passer: #8A8271;
+}
+
+/* --------------------------------------------------------------------------
+   Barre haute : sortie, compteur, pastille de serie
+   -------------------------------------------------------------------------- */
+
+.qcm-haut {
+  padding: 22px var(--marge) 0 var(--marge);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.qcm-barre {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* La croix de sortie fait bien 44 px de cible (section 2.6) ; les marges
+   negatives la ramenent visuellement au bord sans retrecir la zone du doigt. */
+.qcm-sortir {
+  width: var(--cible);
+  height: var(--cible);
+  margin: -12px 0 -12px -12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.qcm-compte {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--texte-2);
+  font-variant-numeric: tabular-nums;
+}
+
+/* --------------------------------------------------------------------------
+   La serie (section 8)
+   -------------------------------------------------------------------------- */
+
+.serie {
+  height: 30px;
+  border-radius: 15px;
+  background: var(--or-voile);
+  border: 1px solid var(--or-bordure);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 12px;
+  transition: background 200ms, border-color 200ms, box-shadow 200ms;
+}
+.serie span { font-size: 13px; font-weight: 700; color: var(--or-texte); }
+.serie svg path { stroke: var(--or-texte-2); }
+
+/* Bonne reponse : la pastille passe en or plein, avec son ombre. */
+.serie[data-etat="or"] {
+  background: var(--or);
+  border-color: var(--or);
+  box-shadow: var(--ombre-or);
+}
+.serie[data-etat="or"] span { color: var(--sur-or); }
+.serie[data-etat="or"] svg path { stroke: var(--sur-or); }
+
+/* Mauvaise reponse : elle retombe en gris. Sans animation brusque, sans son,
+   sans dramatisation (section 8). */
+.serie[data-etat="gris"] {
+  background: var(--papier);
+  border-color: var(--trait-2);
+  box-shadow: none;
+}
+.serie[data-etat="gris"] span { color: var(--texte-2); font-weight: 600; }
+.serie[data-etat="gris"] svg path { stroke: var(--texte-3); }
+
+/* Le chiffre monte de 8 px en 200 ms quand il s'incremente. */
+@keyframes monte {
+  from { transform: translateY(8px); opacity: 0; }
+  to   { transform: translateY(0);   opacity: 1; }
+}
+.serie[data-anime="oui"] span { animation: monte 200ms ease-out; }
+
+/* La serie est desactivable : la pastille disparait, rien d'autre ne change. */
+.serie[hidden] { display: none; }
+
+/* --------------------------------------------------------------------------
+   La barre segmentee : un segment par question
+   -------------------------------------------------------------------------- */
+
+.segments { display: flex; gap: 3px; }
+.segments i {
+  flex-grow: 1;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--trait-3);          /* a venir */
+  transition: background 160ms;
+}
+.segments i[data-e="juste"]  { background: var(--vert-juste); }
+.segments i[data-e="rate"]   { background: var(--rouge); }
+.segments i[data-e="encours"]{ background: var(--or); }
+
+/* Au-dela de 30 questions les segments s'affinent ; au-dela de 60 on passe a
+   une barre continue avec le compteur chiffre (ecran 4). */
+.segments[data-dense="oui"] { gap: 2px; }
+.segments[data-dense="oui"] i { height: 3px; }
+
+.jauge {
+  height: 4px;
+  border-radius: 2px;
+  background: var(--trait-3);
+  overflow: hidden;
+}
+.jauge i {
+  display: block;
+  height: 100%;
+  background: var(--vert-juste);
+  border-radius: 2px;
+  transition: width 160ms;
+}
+
+/* --------------------------------------------------------------------------
+   La zone des cartes
+   -------------------------------------------------------------------------- */
+
+.zone {
+  flex-grow: 1;
+  position: relative;
+  margin-top: 18px;
+  /* Le geste appartient a la carte : le navigateur ne doit pas le prendre
+     pour un defilement horizontal. */
+  touch-action: pan-y;
+  /* MESURE, PAS PRECAUTION. Sans ce debordement masque, la carte qui s'envole
+     part a 590 px vers la droite et ELARGIT LA PAGE : le navigateur mobile
+     redimensionne alors tout pour faire tenir 1 004 px dans 390, et l'ecran
+     entier retrecit d'un coup au milieu du jeu. L'annexe A porte bien
+     `overflow: hidden` sur l'ecran ; je l'avais laisse tomber en passant aux
+     classes. */
+  overflow: hidden;
+}
+
+/* La carte suivante est DEJA montee dans le DOM (section 7.7) : aucun
+   chargement, aucun scintillement entre deux questions. Elle depasse derriere,
+   centree, plus etroite de 14 px de chaque cote. */
+.carte-arriere {
+  position: absolute;
+  left: 34px; right: 34px;
+  top: 14px; bottom: 24px;
+  background: var(--papier-arriere);
+  border: 1px solid var(--trait-2);
+  border-radius: var(--r-carte);
+}
+
+.carte {
+  position: absolute;
+  left: var(--marge); right: var(--marge);
+  top: 0; bottom: 38px;
+  background: var(--papier);
+  border: 1px solid var(--trait);
+  border-radius: var(--r-carte);
+  box-shadow: 0 16px 36px rgba(28, 38, 32, 0.13);
+  padding: 24px var(--marge);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  /* Pose par le geste. Au repos, rien. */
+  will-change: transform;
+}
+
+.carte-tete {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.carte-surtitre {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--or-texte);
+}
+.carte-arabe {
+  font-family: var(--arabe);
+  font-size: 28px;
+  color: var(--vert-fonce);
+  direction: rtl;
+  text-align: right;
+  line-height: 1.6;
+}
+
+/* --------------------------------------------------------------------------
+   Les quatre reponses, en grille 2 x 2
+   -------------------------------------------------------------------------- */
+
+.reponses {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.reponse {
+  min-height: 96px;
+  border: 1px solid var(--trait);
+  border-radius: 16px;
+  padding: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+  width: 100%;
+  background: transparent;
+  transition: border-color 120ms, background 120ms;
+}
+.reponse .lettre {
+  width: 24px; height: 24px;
+  border-radius: 8px;
+  background: var(--badge-repos);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--texte-2);
+  flex-shrink: 0;
+}
+.reponse .texte { font-size: 14.5px; line-height: 1.3; }
+
+/* Choisie : bordure verte 2 px, fond voile. La bordure passant de 1 a 2 px,
+   on retire 1 px de padding pour que la carte ne bouge pas d'un pixel. */
+.reponse[aria-pressed="true"] {
+  border: 2px solid var(--vert);
+  background: var(--vert-voile-2);
+  padding: 12px;
+}
+.reponse[aria-pressed="true"] .lettre { background: var(--vert); color: var(--sur-vert); }
+.reponse[aria-pressed="true"] .texte  { font-weight: 600; color: var(--vert-fonce); }
+
+/* Correction posee sur place (ecran 7). */
+.reponse[data-corrige="bonne"] {
+  border: 2px solid var(--vert-juste);
+  background: var(--vert-voile-3);
+  padding: 12px;
+}
+.reponse[data-corrige="choix"] {
+  border: 2px solid var(--rouge);
+  background: var(--rouge-voile);
+  padding: 12px;
+}
+.reponse[data-corrige="autre"] { opacity: 0.5; }
+
+.etiquette {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+.etiquette[data-t="bonne"] { color: var(--vert-juste); }
+.etiquette[data-t="choix"] { color: var(--rouge-texte); }
+
+/* --------------------------------------------------------------------------
+   LE GESTE (section 7)
+   -------------------------------------------------------------------------- */
+
+/* Au-dela de 60 px de deplacement, l'indice du cote vise apparait. */
+.carte[data-vise="droite"] { border-color: var(--vert); border-width: 2px; padding: 23px 19px; }
+.carte[data-vise="gauche"] { border-color: var(--texte-3); border-width: 2px; padding: 23px 19px; }
+
+/* Le tampon en travers. Toutes les valeurs viennent de l'annexe A, ecran 5 :
+   position 20/92 dans la carte, rotation -11 deg, cadre 3 px, rayon 12 px,
+   fond ivoire a 92 %, Marcellus 26 px, interlettrage 3 px.
+   Il RECOUVRE volontairement le haut de la carte, comme un tampon sur du
+   papier : a ce moment-la, la personne a deja lu et deja choisi. */
+.tampon {
+  position: absolute;
+  top: 92px;
+  left: 20px;
+  transform: rotate(-11deg);
+  padding: 7px 16px;
+  border-radius: 12px;
+  border: 3px solid var(--vert);
+  background: rgba(255, 253, 248, 0.92);
+  font-family: var(--titre);
+  font-size: 26px;
+  letter-spacing: 3px;
+  color: var(--vert);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 120ms;
+}
+.tampon[data-t="passer"] { border-color: var(--texte-3); color: var(--texte-3); }
+.carte[data-vise] .tampon { opacity: 1; }
+
+/* Retour a sa place quand le seuil n'est pas atteint : 180 ms. */
+.carte[data-anime="retour"] { transition: transform 180ms ease-out; }
+/* Envol hors ecran quand il l'est : 220 ms, courbe imposee. */
+.carte[data-anime="envol"]  { transition: transform 220ms cubic-bezier(.22,.61,.36,1), opacity 220ms; }
+
+/* Droite sans reponse choisie : la carte refuse de partir. Secousse de 6 px,
+   150 ms (section 7.5). Ce n'est pas une punition, c'est une reponse au geste. */
+@keyframes secousse {
+  0%, 100% { transform: translateX(0); }
+  25%      { transform: translateX(-6px); }
+  75%      { transform: translateX(6px); }
+}
+.carte[data-anime="secousse"] { animation: secousse 150ms ease-in-out; }
+
+/* Section 7.9 : sans animation, plus de rotation ni d'envol. Un fondu. */
+@media (prefers-reduced-motion: reduce) {
+  .carte { transform: none !important; }
+  .carte[data-anime="envol"] { transition: opacity 120ms; opacity: 0; }
+  .carte[data-anime="secousse"] { animation: none; }
+  /* le tampon garde son inclinaison : elle n'est pas une animation */
+}
+
+/* --------------------------------------------------------------------------
+   Le pied : legende du geste
+   -------------------------------------------------------------------------- */
+
+.qcm-pied {
+  padding: 0 var(--marge) 26px var(--marge);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.qcm-pied .cotes {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cote { display: flex; align-items: center; gap: 8px; font-size: 13px; }
+.cote-gauche { color: var(--texte-2); }
+.cote-droite { color: var(--vert); font-weight: 700; }
+.cote svg path { stroke: currentColor; }
+.cote-gauche svg path { stroke: var(--chevron-passer); }
+
+/* Le cote vise s'allume en pastille pleine pendant le geste (ecran 5). */
+.cote[data-actif="oui"] {
+  background: var(--vert);
+  color: var(--sur-vert);
+  border-radius: 15px;
+  padding: 5px 12px;
+  margin: -5px -12px;
+}
+.cote[data-actif="oui"] svg path { stroke: var(--sur-vert); }
+/* Le rappel du geste inverse reste visible a 40 % (ecran 5). */
+.cote[data-actif="non"] { opacity: 0.4; }
+
+.poignee {
+  width: 128px;
+  height: 5px;
+  border-radius: 3px;
+  background: var(--trait-4);
+}
+
+/* --------------------------------------------------------------------------
+   La feuille de correction qui monte du bas (ecrans 6 et 7)
+   -------------------------------------------------------------------------- */
+
+.feuille {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  z-index: 20;
+  border-radius: var(--r-carte) var(--r-carte) 0 0;
+  padding: 22px var(--marge) 26px var(--marge);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transform: translateY(100%);
+  transition: transform 260ms cubic-bezier(.22,.61,.36,1);
+  max-height: 78dvh;
+  overflow-y: auto;
+}
+.feuille[data-ouverte="oui"] { transform: translateY(0); }
+
+/* Bonne reponse : feuille vert profond. */
+.feuille[data-t="juste"] { background: var(--vert-fonce); color: var(--sur-vert); }
+.feuille[data-t="juste"] .f-titre { color: var(--sur-vert); }
+.feuille[data-t="juste"] .f-texte { color: var(--sur-vert-5); }
+.feuille[data-t="juste"] .f-source,
+.feuille[data-t="juste"] .f-note { color: var(--sur-vert-3); }
+
+/* Mauvaise reponse : meme structure, feuille ivoire. Ton oppose. */
+.feuille[data-t="rate"] { background: var(--papier); border-top: 1px solid var(--trait); }
+.feuille[data-t="rate"] .f-titre { color: var(--encre-titre); }
+.feuille[data-t="rate"] .f-texte { color: var(--encre); }
+.feuille[data-t="rate"] .f-source,
+.feuille[data-t="rate"] .f-note { color: var(--texte-2); }
+
+.f-titre { font-family: var(--titre); font-size: 24px; }
+.f-texte { font-size: 15px; line-height: 1.55; }
+.f-source { font-size: 12.5px; }
+/* Une note n'est pas une source : le record de serie et la promesse de
+   retour se lisent pareil mais ne citent rien. Les confondre, c'est se
+   priver de tout controle automatique sur la presence des sources. */
+.f-note { font-size: 12.5px; }
+/* Quand les savants divergent, on affiche la phrase telle quelle. On n'arbitre
+   pas (section 5, champ `divergence`). */
+.f-divergence {
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: var(--or-voile);
+  border: 1px solid var(--or-bordure);
+  color: var(--or-texte);
+}
+.feuille[data-t="juste"] .f-divergence {
+  background: rgba(201, 162, 39, 0.14);
+  border-color: rgba(227, 201, 122, 0.4);
+  color: var(--or-clair);
+}
+
+/* ==========================================================================
+   LES PAGES HORS QCM — ecrans 1, 2, 3, 8, 9
+   --------------------------------------------------------------------------
+   Valeurs de l'annexe A. Le fond est ivoire (--fond-app) : seul le QCM passe
+   au ton chaud.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   L'en-tete de page : marque + acces au profil
+   -------------------------------------------------------------------------- */
+
+.tete { display: flex; align-items: center; justify-content: space-between; }
+.marque { display: flex; align-items: center; gap: 9px; color: var(--or); }
+.marque b {
+  font-family: var(--titre);
+  font-size: 19px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  color: var(--vert-fonce);
+}
+
+/* --------------------------------------------------------------------------
+   La carte de reprise (ecran 1)
+   --------------------------------------------------------------------------
+   L'anneau montre l'avancement du QCM EN COURS (question 12 sur 50 = 24 %).
+   Ce n'est PAS la maitrise de la section, qui est une autre mesure et qui
+   s'affiche plus bas en barre. Le cahier des charges insiste : ne pas les
+   confondre.
+   -------------------------------------------------------------------------- */
+
+.reprise {
+  background: var(--vert);
+  border-radius: var(--r-bloc-2);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  box-shadow: 0 8px 24px rgba(15, 81, 50, 0.18);
+  width: 100%;
+  text-align: left;
+}
+.anneau { position: relative; width: 66px; height: 66px; flex-shrink: 0; }
+.anneau-pc {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--sur-vert);
+}
+.reprise .quoi { display: flex; flex-direction: column; gap: 4px; }
+.reprise .sur { font-size: 11px; letter-spacing: 1.4px; text-transform: uppercase; color: var(--sur-vert-3); }
+.reprise .nom { font-family: var(--titre); font-size: 19px; color: var(--sur-vert); }
+.reprise .ou  { font-size: 13.5px; color: var(--sur-vert-2); }
+
+/* --------------------------------------------------------------------------
+   Les trois chiffres (ecran 1)
+   -------------------------------------------------------------------------- */
+
+.chiffres { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.chiffre {
+  background: var(--papier);
+  border: 1px solid var(--trait);
+  border-radius: var(--r-bloc);
+  padding: 13px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+.chiffre b { font-family: var(--titre); font-size: 22px; font-weight: 400; color: var(--vert); }
+.chiffre span { font-size: 11.5px; color: var(--texte-2); text-align: center; }
+
+/* --------------------------------------------------------------------------
+   Une ligne de section, avec sa barre de maitrise
+   -------------------------------------------------------------------------- */
+
+.ligne {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  background: var(--papier);
+  border: 1px solid var(--trait);
+  border-radius: var(--r-bloc);
+  padding: 12px 14px;
+  width: 100%;
+  text-align: left;
+}
+.ligne .rond {
+  width: 38px; height: 38px;
+  border-radius: 11px;
+  background: var(--vert-voile);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--vert);
+}
+.ligne .milieu { flex-grow: 1; display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.ligne .nom { font-size: 15px; font-weight: 600; }
+.ligne .pc { font-size: 12.5px; color: var(--texte-2); flex-shrink: 0; }
+
+.barre { height: 4px; border-radius: 2px; background: var(--trait); }
+.barre i { display: block; height: 4px; border-radius: 2px; background: var(--vert); }
+/* Sous 10 %, la barre passe en or : un trait vert de trois pixels ne se voit
+   pas, et laisser croire a zero quand il y a quelque chose est un mensonge. */
+.barre i[data-faible="oui"] { background: var(--or); }
+
+/* --------------------------------------------------------------------------
+   La grille des 12 sections (ecran 2)
+   -------------------------------------------------------------------------- */
+
+.tuiles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 11px; }
+.tuile {
+  background: var(--papier);
+  border: 1px solid var(--trait);
+  border-radius: var(--r-bloc-2);
+  padding: 15px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  text-align: left;
+  min-height: 132px;
+}
+.tuile .rond {
+  width: 36px; height: 36px;
+  border-radius: 11px;
+  background: var(--vert-voile);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--vert);
+}
+.tuile .nom { font-size: 14.5px; font-weight: 600; line-height: 1.25; }
+.tuile .nb  { font-size: 12px; color: var(--texte-2); }
+
+/* --------------------------------------------------------------------------
+   La barre de navigation basse (ecran 1)
+   -------------------------------------------------------------------------- */
+
+.nav {
+  height: 70px;
+  border-top: 1px solid var(--trait);
+  background: var(--papier);
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: center;
+  padding-bottom: 6px;
+  position: sticky;
+  bottom: 0;
+}
+.nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  color: var(--texte-3);
+  min-height: var(--cible);
+  justify-content: center;
+}
+.nav a[aria-current="page"] { color: var(--vert); font-weight: 600; }
+
+/* --------------------------------------------------------------------------
+   L'ornement en separateur (ecran 8)
+   -------------------------------------------------------------------------- */
+
+.ornement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: var(--or);
+  padding: 8px 0;
+}
+.ornement::before, .ornement::after {
+  content: "";
+  height: 1px;
+  width: 54px;
+  background: var(--or-bordure);
+}
+
+/* ==========================================================================
+   LE RESULTAT — ecran 8 du cahier des charges
+   ========================================================================== */
+
+.bandeau {
+  background: var(--vert-fonce);
+  color: var(--sur-vert);
+  border-radius: 0 0 var(--r-carte) var(--r-carte);
+  padding: 26px var(--marge) 30px var(--marge);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.bandeau .ornement { color: var(--or-clair); }
+.bandeau .ornement::before, .bandeau .ornement::after { background: rgba(227, 201, 122, 0.35); }
+
+.grand-anneau { position: relative; width: 168px; height: 168px; }
+.grand-anneau-pc {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+.grand-anneau-pc b {
+  font-family: var(--titre);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--sur-vert);
+}
+.grand-anneau-pc span { font-size: 13.5px; color: var(--sur-vert-2); }
+
+.bandeau-mot {
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--sur-vert-5);
+  text-align: center;
+  max-width: 300px;
+}
+
+.theme { display: flex; flex-direction: column; gap: 6px; }
+.theme-nom { font-size: 14.5px; font-weight: 600; }
+.barre i[data-ton="vert"]  { background: var(--vert-juste); }
+.barre i[data-ton="or"]    { background: var(--or); }
+.barre i[data-ton="rouge"] { background: var(--rouge); }
+
+
+    body { background: var(--fond-qcm); }
+    .ecran { max-width: 430px; margin: 0 auto; min-height: 100dvh; }
+    #fin[hidden], #ecran-qcm[hidden] { display: none; }
+    #fin .corps { gap: 18px; padding-bottom: 26px; }
+    
+</style>
+<div class="ecran" id="ecran-qcm">
+
+  <!-- Barre haute : sortie, compteur, serie -->
+  <div class="qcm-haut">
+    <div class="qcm-barre">
+      <button type="button" class="qcm-sortir" id="qcm-sortir" aria-label="Quitter le QCM">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="#55635B" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+      <span class="qcm-compte" id="qcm-compte">1 / 20</span>
+      <div class="pousse"></div>
+      <div class="serie" id="qcm-serie" hidden>
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 1.6l2.7 5 5.6-2.5-2.5 5.6 5 2.7-5 2.7 2.5 5.6-5.6-2.5-2.7 5-2.7-5-5.6 2.5 2.5-5.6-5-2.7 5-2.7-2.5-5.6 5.6 2.5z" stroke="#9A7A12" stroke-width="1.4" stroke-linejoin="round"/></svg>
+        <span>0 d'affilée</span>
+      </div>
+    </div>
+    <div id="qcm-progres"></div>
+  </div>
+
+  <!-- La zone des cartes -->
+  <div class="zone" id="zone">
+    <div class="carte-arriere" id="carte-arriere"></div>
+    <div class="carte" id="carte"></div>
+  </div>
+
+  <!-- La legende du geste -->
+  <div class="qcm-pied">
+    <div class="cotes">
+      <div class="cote cote-gauche" id="cote-gauche">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14.5 5.5L8 12l6.5 6.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Passer</span>
+      </div>
+      <div class="cote cote-droite" id="cote-droite">
+        <span>Valider</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9.5 5.5L16 12l-6.5 6.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+    </div>
+    <div class="poignee" aria-hidden="true"></div>
+  </div>
+
+</div>
+
+<!-- La feuille de correction, qui monte du bas -->
+<div class="feuille" id="feuille" data-t="juste"></div>
+
+<!-- Le resultat de chaque question est annonce ici (section 7.9). -->
+<div class="invisible" id="qcm-annonce" role="status" aria-live="polite"></div>
+
+<!-- Sans JavaScript, le geste n'existe pas : on le dit, on ne laisse pas
+     une page vide. -->
+<noscript hidden>
+  <div style="padding:26px 20px">
+    <p class="t-page">Le QCM a besoin de JavaScript</p>
+    <p style="margin-top:12px">Il se joue en faisant glisser des cartes au doigt&nbsp;;
+    sans JavaScript, ce geste n'existe pas. <a href="index.html">Retour à l'accueil</a>.</p>
+  </div>
+</noscript>
+
+
+<div class="ecran" id="fin" hidden></div>
+<script>
+var IPAP_BANQUE = [{"id": "sourates-5d056af0", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["Sur quoi s'interrogent-ils mutuellement", "Il n'y aura qu'une sommation", "Eh bien, rappelle! Tu n'es qu'un rappeleur", "Tu reconnaîtras sur leurs visages, l'éclat de la félicité"], "bonne": 0, "explication": "C'est le verset 1 de la sourate An-Naba (n° 78). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 78, verset 1. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Naba", "arabe": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ عَمَّ يَتَسَاءَلُونَ"}, {"id": "sourates-1aa0685f", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["An-Naba", "Az-Zukhruf", "Ali Imran", "Ash-Shams"], "bonne": 0, "explication": "C'est le verset 15 de la sourate An-Naba. Sa traduction : « pour faire pousser par elle grains et plantes »", "source": "Coran, sourate 78, verset 15.", "divergence": null, "arabe": "لِنُخْرِجَ بِهِ حَبًّا وَنَبَاتًا"}, {"id": "sourates-49d9df70", "section": "sens-des-sourates", "theme": "Reperes", "type": "qcm4", "difficulte": 1, "question": "Combien de versets compte la sourate An-Naba ?", "reponses": ["40 versets", "38 versets", "29 versets", "52 versets"], "bonne": 0, "explication": "La sourate An-Naba porte le numero 78 dans l'ordre du Coran.", "source": "Coran, sourate An-Naba (78).", "divergence": null}, {"id": "sourates-60992aeb", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["à propos de laquelle ils divergent", "et les bêtes farouches, rassemblées", "sur les divans, ils regardent", "il sera dans une vie agréable"], "bonne": 0, "explication": "C'est le verset 3 de la sourate An-Naba (n° 78). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 78, verset 3. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Naba", "arabe": "الَّذِي هُمْ فِيهِ مُخْتَلِفُونَ"}, {"id": "sourates-111807b9", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["Al-Adiyat", "Al-Fath", "Al-Hadid", "An-Naba"], "bonne": 3, "explication": "C'est le verset 3 de la sourate An-Naba. Sa traduction : « à propos de laquelle ils divergent »", "source": "Coran, sourate 78, verset 3.", "divergence": null, "arabe": "الَّذِي هُمْ فِيهِ مُخْتَلِفُونَ"}, {"id": "sourates-fd865660", "section": "sens-des-sourates", "theme": "Reperes", "type": "qcm4", "difficulte": 1, "question": "Combien de versets compte la sourate An-Nazi'at ?", "reponses": ["46 versets", "50 versets", "35 versets", "55 versets"], "bonne": 0, "explication": "La sourate An-Nazi'at porte le numero 79 dans l'ordre du Coran.", "source": "Coran, sourate An-Nazi'at (79).", "divergence": null}, {"id": "sourates-ed7f12c7", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["Par le soleil et par sa clarté", "Eh bien non! Ils sauront bientôt", "et les chamelles à terme, négligées", "Son terme n'est connu que de ton Seigneur"], "bonne": 1, "explication": "C'est le verset 4 de la sourate An-Naba (n° 78). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 78, verset 4. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Naba", "arabe": "كَلَّا سَيَعْلَمُونَ"}, {"id": "sourates-e6c55690", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["An-Nahl", "An-Nazi'at", "Al-Falaq", "Al-Fajr"], "bonne": 1, "explication": "C'est le verset 31 de la sourate An-Nazi'at. Sa traduction : « Il a fait sortir d'elle son eau et son pâturage »", "source": "Coran, sourate 79, verset 31.", "divergence": null, "arabe": "أَخْرَجَ مِنْهَا مَاءَهَا وَمَرْعَاهَا"}, {"id": "sourates-501cd44a", "section": "sens-des-sourates", "theme": "Reperes", "type": "qcm4", "difficulte": 1, "question": "Combien de versets compte la sourate Abasa ?", "reponses": ["45 versets", "31 versets", "50 versets", "42 versets"], "bonne": 3, "explication": "La sourate Abasa porte le numero 80 dans l'ordre du Coran.", "source": "Coran, sourate Abasa (80).", "divergence": null}, {"id": "sourates-223dd12d", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["Et par la nuit quand elle s'écoule", "Encore une fois, non! Ils sauront bientôt", "Au nom d'Allah, le Tout Miséricordieux, le Très Miséricordieux", "Et par la nuit quand elle couvre tout"], "bonne": 1, "explication": "C'est le verset 5 de la sourate An-Naba (n° 78). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 78, verset 5. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Naba", "arabe": "ثُمَّ كَلَّا سَيَعْلَمُونَ"}, {"id": "sourates-6c29b6ab", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["Adh-Dhariyat", "Al-Anbiya", "An-Nazi'at", "Az-Zalzala"], "bonne": 2, "explication": "C'est le verset 33 de la sourate An-Nazi'at. Sa traduction : « pour votre jouissance, vous et vos bestiaux »", "source": "Coran, sourate 79, verset 33.", "divergence": null, "arabe": "مَتَاعًا لَكُمْ وَلِأَنْعَامِكُمْ"}, {"id": "sourates-f6148fa3", "section": "sens-des-sourates", "theme": "Reperes", "type": "qcm4", "difficulte": 1, "question": "Combien de versets compte la sourate At-Takwir ?", "reponses": ["28 versets", "29 versets", "26 versets", "20 versets"], "bonne": 1, "explication": "La sourate At-Takwir porte le numero 81 dans l'ordre du Coran.", "source": "Coran, sourate At-Takwir (81).", "divergence": null}, {"id": "sourates-f1042d9c", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["Pense-t-il que personne ne pourra rien contre lui", "N'avons-Nous pas fait de la terre une couche", "Et par la nuit quand elle couvre tout", "qui n'engraisse, ni n'apaise la faim"], "bonne": 1, "explication": "C'est le verset 6 de la sourate An-Naba (n° 78). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 78, verset 6. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Naba", "arabe": "أَلَمْ نَجْعَلِ الْأَرْضَ مِهَادًا"}, {"id": "sourates-1050f593", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["Maryam", "An-Najm", "At-Tin", "Abasa"], "bonne": 3, "explication": "C'est le verset 37 de la sourate Abasa. Sa traduction : « car chacun d'eux, ce jour-là, aura son propre cas pour l'occuper »", "source": "Coran, sourate 80, verset 37.", "divergence": null, "arabe": "لِكُلِّ امْرِئٍ مِنْهُمْ يَوْمَئِذٍ شَأْنٌ يُغْنِيهِ"}, {"id": "sourates-5acf74aa", "section": "sens-des-sourates", "theme": "Reperes", "type": "qcm4", "difficulte": 1, "question": "Combien de versets compte la sourate Al-Infitar ?", "reponses": ["24 versets", "13 versets", "21 versets", "19 versets"], "bonne": 3, "explication": "La sourate Al-Infitar porte le numero 82 dans l'ordre du Coran.", "source": "Coran, sourate Al-Infitar (82).", "divergence": null}, {"id": "sourates-366b6234", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["Quand la terre tremblera d'un violent tremblement", "puis s'élancent à toute vitesse", "et quiconque fait un mal fût-ce du poids d'un atome, le verra", "et (placé) les montagnes comme des piquets"], "bonne": 3, "explication": "C'est le verset 7 de la sourate An-Naba (n° 78). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 78, verset 7. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Naba", "arabe": "وَالْجِبَالَ أَوْتَادًا"}, {"id": "sourates-0eb6bc55", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["Al-Ma'arij", "Ghafir", "Al-Mujadila", "At-Takwir"], "bonne": 3, "explication": "C'est le verset 2 de la sourate At-Takwir. Sa traduction : « et que les étoiles deviendront ternes »", "source": "Coran, sourate 81, verset 2.", "divergence": null, "arabe": "وَإِذَا النُّجُومُ انْكَدَرَتْ"}, {"id": "sourates-e576b527", "section": "sens-des-sourates", "theme": "Reperes", "type": "qcm4", "difficulte": 1, "question": "Combien de versets compte la sourate Al-Mutaffifin ?", "reponses": ["28 versets", "37 versets", "29 versets", "36 versets"], "bonne": 3, "explication": "La sourate Al-Mutaffifin porte le numero 83 dans l'ordre du Coran.", "source": "Coran, sourate Al-Mutaffifin (83).", "divergence": null}, {"id": "sourates-19e07b98", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["Mais c'est plutôt un Coran glorifié", "quant à celui dont la balance sera lourde", "quand nous serons ossements pourris?»", "Nous vous avons créés en couples"], "bonne": 3, "explication": "C'est le verset 8 de la sourate An-Naba (n° 78). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 78, verset 8. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Naba", "arabe": "وَخَلَقْنَاكُمْ أَزْوَاجًا"}, {"id": "sourates-fa575882", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["An-Najm", "At-Talaq", "Al-Infitar", "Al-Isra"], "bonne": 2, "explication": "C'est le verset 6 de la sourate Al-Infitar. Sa traduction : « O homme! Qu'est-ce qui t'a trompé au sujet de ton Seigneur, le Noble »", "source": "Coran, sourate 82, verset 6.", "divergence": null, "arabe": "يَا أَيُّهَا الْإِنْسَانُ مَا غَرَّكَ بِرَبِّكَ الْكَرِيمِ"}, {"id": "sourates-6603328c", "section": "sens-des-sourates", "theme": "Reperes", "type": "qcm4", "difficulte": 1, "question": "Combien de versets compte la sourate Al-Inshiqaq ?", "reponses": ["20 versets", "25 versets", "21 versets", "28 versets"], "bonne": 1, "explication": "La sourate Al-Inshiqaq porte le numero 84 dans l'ordre du Coran.", "source": "Coran, sourate Al-Inshiqaq (84).", "divergence": null}, {"id": "sourates-25d91d5c", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["et obéira à son Seigneur - et fera ce qu'il doit faire", "pour votre jouissance, vous et vos bestiaux", "Et par la nuit quand elle l'enveloppe", "et désigné votre sommeil pour votre repos"], "bonne": 3, "explication": "C'est le verset 9 de la sourate An-Naba (n° 78). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 78, verset 9. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Naba", "arabe": "وَجَعَلْنَا نَوْمَكُمْ سُبَاتًا"}, {"id": "sourates-0b8e3992", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["Al-Qiyama", "Al-Infitar", "Al-Ma'ida", "Al-Jinn"], "bonne": 1, "explication": "C'est le verset 16 de la sourate Al-Infitar. Sa traduction : « incapables de s'en échapper »", "source": "Coran, sourate 82, verset 16.", "divergence": null, "arabe": "وَمَا هُمْ عَنْهَا بِغَائِبِينَ"}, {"id": "sourates-a24d46c0", "section": "sens-des-sourates", "theme": "Reperes", "type": "qcm4", "difficulte": 1, "question": "Combien de versets compte la sourate Al-Buruj ?", "reponses": ["22 versets", "26 versets", "15 versets", "21 versets"], "bonne": 0, "explication": "La sourate Al-Buruj porte le numero 85 dans l'ordre du Coran.", "source": "Coran, sourate Al-Buruj (85).", "divergence": null}, {"id": "sourates-0a66a6bc", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["Et exalté pour toi ta renommée", "Et par les dix nuits", "qui leur lançaient des pierres d'argile", "et fait de la nuit un vêtement"], "bonne": 3, "explication": "C'est le verset 10 de la sourate An-Naba (n° 78). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 78, verset 10. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Naba", "arabe": "وَجَعَلْنَا اللَّيْلَ لِبَاسًا"}, {"id": "sourates-c561f996", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["Muhammad", "Al-Mutaffifin", "An-Nazi'at", "Al-Kafirun"], "bonne": 1, "explication": "C'est le verset 28 de la sourate Al-Mutaffifin. Sa traduction : « source dont les rapprochés boivent »", "source": "Coran, sourate 83, verset 28.", "divergence": null, "arabe": "عَيْنًا يَشْرَبُ بِهَا الْمُقَرَّبُونَ"}, {"id": "sourates-5fb445ca", "section": "sens-des-sourates", "theme": "Reperes", "type": "qcm4", "difficulte": 1, "question": "Combien de versets compte la sourate At-Tariq ?", "reponses": ["21 versets", "14 versets", "17 versets", "19 versets"], "bonne": 2, "explication": "La sourate At-Tariq porte le numero 86 dans l'ordre du Coran.", "source": "Coran, sourate At-Tariq (86).", "divergence": null}, {"id": "sourates-f8c5a5e7", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["et des (belles) aux seins arrondis, d'une égale jeunesse", "N'est-ce pas là un serment, pour un doué d'intelligence", "Ceux-là ne pensent-ils pas qu'ils seront ressuscités", "et assigné le jour pour les affaires de la vie"], "bonne": 3, "explication": "C'est le verset 11 de la sourate An-Naba (n° 78). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 78, verset 11. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Naba", "arabe": "وَجَعَلْنَا النَّهَارَ مَعَاشًا"}, {"id": "sourates-f909d6dc", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["Al-Balad", "Al-Jinn", "Al-Insan", "Al-Inshiqaq"], "bonne": 3, "explication": "C'est le verset 5 de la sourate Al-Inshiqaq. Sa traduction : « et qu'elle obéira à son Seigneur - et fera ce qu'elle doit faire »", "source": "Coran, sourate 84, verset 5.", "divergence": null, "arabe": "وَأَذِنَتْ لِرَبِّهَا وَحُقَّتْ"}, {"id": "sourates-321997c9", "section": "sens-des-sourates", "theme": "Reperes", "type": "qcm4", "difficulte": 1, "question": "Combien de versets compte la sourate Al-A'la ?", "reponses": ["22 versets", "19 versets", "18 versets", "17 versets"], "bonne": 1, "explication": "La sourate Al-A'la porte le numero 87 dans l'ordre du Coran.", "source": "Coran, sourate Al-A'la (87).", "divergence": null}, {"id": "sourates-b1719b2b", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["et le ciel sera ouvert et [présentera] des portes", "L'homme est certes, en perdition", "Et par le jour quand il l'éclaire", "et construit au-dessus de vous sept (cieux) renforcés"], "bonne": 3, "explication": "C'est le verset 12 de la sourate An-Naba (n° 78). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 78, verset 12. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Naba", "arabe": "وَبَنَيْنَا فَوْقَكُمْ سَبْعًا شِدَادًا"}, {"id": "sourates-1fabf592", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["An-Naml", "Ali Imran", "Al-Layl", "Al-Inshiqaq"], "bonne": 3, "explication": "C'est le verset 2 de la sourate Al-Inshiqaq. Sa traduction : « et obéira à son Seigneur - et fera ce qu'il doit faire »", "source": "Coran, sourate 84, verset 2.", "divergence": null, "arabe": "وَأَذِنَتْ لِرَبِّهَا وَحُقَّتْ"}, {"id": "sourates-c0fc2e08", "section": "sens-des-sourates", "theme": "Reperes", "type": "qcm4", "difficulte": 1, "question": "Combien de versets compte la sourate Al-Ghashiya ?", "reponses": ["19 versets", "21 versets", "26 versets", "29 versets"], "bonne": 2, "explication": "La sourate Al-Ghashiya porte le numero 88 dans l'ordre du Coran.", "source": "Coran, sourate Al-Ghashiya (88).", "divergence": null}, {"id": "sourates-d49e44e7", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["Celui Qui a créé et agencé harmonieusement", "Nous avons, certes, créé l'homme pour une vie de lutte", "et [y] avons placé une lampe (le soleil) très ardente", "Quant au demandeur, ne le repousse pas"], "bonne": 2, "explication": "C'est le verset 13 de la sourate An-Naba (n° 78). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 78, verset 13. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Naba", "arabe": "وَجَعَلْنَا سِرَاجًا وَهَّاجًا"}, {"id": "sourates-69ce7519", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["Adh-Dhariyat", "Ash-Shura", "Al-Buruj", "Al-Mursalat"], "bonne": 2, "explication": "C'est le verset 8 de la sourate Al-Buruj. Sa traduction : « à qui ils ne leur reprochaient que d'avoir cru en Allah, le Puissant, le Digne de louange »", "source": "Coran, sourate 85, verset 8.", "divergence": null, "arabe": "وَمَا نَقَمُوا مِنْهُمْ إِلَّا أَنْ يُؤْمِنُوا بِاللَّهِ الْعَزِيزِ الْحَمِيدِ"}, {"id": "sourates-b64a6bf4", "section": "sens-des-sourates", "theme": "Reperes", "type": "qcm4", "difficulte": 1, "question": "Combien de versets compte la sourate Al-Fajr ?", "reponses": ["37 versets", "26 versets", "30 versets", "25 versets"], "bonne": 2, "explication": "La sourate Al-Fajr porte le numero 89 dans l'ordre du Coran.", "source": "Coran, sourate Al-Fajr (89).", "divergence": null}, {"id": "sourates-1afddf15", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["et fait descendre des nuées une eau abondante", "Quant à l'orphelin, donc, ne le maltraite pas", "Lis, au nom de ton Seigneur qui a créé", "(Encore une fois)! Vous saurez bientôt"], "bonne": 0, "explication": "C'est le verset 14 de la sourate An-Naba (n° 78). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 78, verset 14. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Naba", "arabe": "وَأَنْزَلْنَا مِنَ الْمُعْصِرَاتِ مَاءً ثَجَّاجًا"}, {"id": "sourates-4efe0397", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["As-Sajda", "Al-Jumu'a", "Al-Infitar", "Al-Buruj"], "bonne": 3, "explication": "C'est le verset 19 de la sourate Al-Buruj. Sa traduction : « Mais ceux qui ne croient pas persistent à démentir »", "source": "Coran, sourate 85, verset 19.", "divergence": null, "arabe": "بَلِ الَّذِينَ كَفَرُوا فِي تَكْذِيبٍ"}, {"id": "sourates-80afb705", "section": "sens-des-sourates", "theme": "Reperes", "type": "qcm4", "difficulte": 1, "question": "Combien de versets compte la sourate Al-Balad ?", "reponses": ["17 versets", "14 versets", "19 versets", "20 versets"], "bonne": 3, "explication": "La sourate Al-Balad porte le numero 90 dans l'ordre du Coran.", "source": "Coran, sourate Al-Balad (90).", "divergence": null}, {"id": "sourates-f8d8b79c", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["et pour l'amour des richesses il est certes ardent", "et construit au-dessus de vous sept (cieux) renforcés", "pour faire pousser par elle grains et plantes", "Pense-t-il que nul ne l'a vu"], "bonne": 2, "explication": "C'est le verset 15 de la sourate An-Naba (n° 78). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 78, verset 15. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Naba", "arabe": "لِنُخْرِجَ بِهِ حَبًّا وَنَبَاتًا"}, {"id": "sourates-c3d4a049", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["At-Tariq", "Al-Qari'a", "At-Takathur", "Al-Adiyat"], "bonne": 0, "explication": "C'est le verset 7 de la sourate At-Tariq. Sa traduction : « sortie d'entre les lombes et les côtes »", "source": "Coran, sourate 86, verset 7.", "divergence": null, "arabe": "يَخْرُجُ مِنْ بَيْنِ الصُّلْبِ وَالتَّرَائِبِ"}, {"id": "sourates-b94f4fea", "section": "sens-des-sourates", "theme": "Reperes", "type": "qcm4", "difficulte": 1, "question": "Combien de versets compte la sourate Ash-Shams ?", "reponses": ["15 versets", "17 versets", "12 versets", "18 versets"], "bonne": 0, "explication": "La sourate Ash-Shams porte le numero 91 dans l'ordre du Coran.", "source": "Coran, sourate Ash-Shams (91).", "divergence": null}, {"id": "sourates-f8bedfbc", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["A vous votre religion, et à moi ma religion»", "Sa fortune ne lui sert à rien, ni ce qu'il a acquis", "Le Jour de la Décision [du Jugement] a son terme fixé", "Ensuite, c'est à Nous de leur demander compte"], "bonne": 2, "explication": "C'est le verset 17 de la sourate An-Naba (n° 78). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 78, verset 17. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Naba", "arabe": "إِنَّ يَوْمَ الْفَصْلِ كَانَ مِيقَاتًا"}, {"id": "sourates-5aecdc55", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["Al-Layl", "Al-A'la", "An-Nazi'at", "Al-Qari'a"], "bonne": 1, "explication": "C'est le verset 13 de la sourate Al-A'la. Sa traduction : « où il ne mourra ni ne vivra »", "source": "Coran, sourate 87, verset 13.", "divergence": null, "arabe": "ثُمَّ لَا يَمُوتُ فِيهَا وَلَا يَحْيَىٰ"}, {"id": "sourates-1f30ee1b", "section": "sens-des-sourates", "theme": "Reperes", "type": "qcm4", "difficulte": 1, "question": "Combien de versets compte la sourate Al-Layl ?", "reponses": ["15 versets", "21 versets", "17 versets", "19 versets"], "bonne": 1, "explication": "La sourate Al-Layl porte le numero 92 dans l'ordre du Coran.", "source": "Coran, sourate Al-Layl (92).", "divergence": null}, {"id": "sourates-5596b4cf", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["sa mère [destination] est un abîme très profond", "Nous te ferons réciter (le Coran), de sorte que tu n'oublieras", "Le jour où l'on soufflera dans la Trompe, vous viendrez par troupes", "et quant à celui dont la balance sera légère"], "bonne": 2, "explication": "C'est le verset 18 de la sourate An-Naba (n° 78). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 78, verset 18. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Naba", "arabe": "يَوْمَ يُنْفَخُ فِي الصُّورِ فَتَأْتُونَ أَفْوَاجًا"}, {"id": "sourates-d68a9098", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["Fatir", "Al-Qiyama", "Al-Waqi'a", "Al-Fajr"], "bonne": 3, "explication": "C'est le verset 27 de la sourate Al-Fajr. Sa traduction : « «O toi, âme apaisée »", "source": "Coran, sourate 89, verset 27.", "divergence": null, "arabe": "يَا أَيَّتُهَا النَّفْسُ الْمُطْمَئِنَّةُ"}, {"id": "sourates-c3c127f8", "section": "sens-des-sourates", "theme": "Reperes", "type": "qcm4", "difficulte": 1, "question": "Combien de versets compte la sourate Ad-Duha ?", "reponses": ["9 versets", "15 versets", "11 versets", "7 versets"], "bonne": 2, "explication": "La sourate Ad-Duha porte le numero 93 dans l'ordre du Coran.", "source": "Coran, sourate Ad-Duha (93).", "divergence": null}, {"id": "sourates-c7ede5a5", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["et il brûlera dans un feu ardent", "Que l'homme considère donc de quoi il a été créé", "Il a élevé bien haut sa voûte, puis l'a parfaitement ordonné", "et le ciel sera ouvert et [présentera] des portes"], "bonne": 3, "explication": "C'est le verset 19 de la sourate An-Naba (n° 78). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 78, verset 19. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Naba", "arabe": "وَفُتِحَتِ السَّمَاءُ فَكَانَتْ أَبْوَابًا"}, {"id": "sourates-5c2c12eb", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["At-Taghabun", "Al-Balad", "An-Nasr", "Al-Hujurat"], "bonne": 1, "explication": "C'est le verset 4 de la sourate Al-Balad. Sa traduction : « Nous avons, certes, créé l'homme pour une vie de lutte »", "source": "Coran, sourate 90, verset 4.", "divergence": null, "arabe": "لَقَدْ خَلَقْنَا الْإِنْسَانَ فِي كَبَدٍ"}, {"id": "sourates-b4a558e5", "section": "sens-des-sourates", "theme": "Reperes", "type": "qcm4", "difficulte": 1, "question": "Combien de versets compte la sourate Ash-Sharh ?", "reponses": ["8 versets", "5 versets", "12 versets", "7 versets"], "bonne": 0, "explication": "La sourate Ash-Sharh porte le numero 94 dans l'ordre du Coran.", "source": "Coran, sourate Ash-Sharh (94).", "divergence": null}, {"id": "sourates-6cfaf877", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["a enseigné à l'homme ce qu'il ne savait pas", "Mais vous ne pouvez vouloir, que si Allah veut, [Lui], le Seigneur de l'Univers", "Encore une fois, qui te dira ce qu'est le jour de la Rétribution", "et les montagnes seront mises en marche et deviendront un mirage"], "bonne": 3, "explication": "C'est le verset 20 de la sourate An-Naba (n° 78). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 78, verset 20. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Naba", "arabe": "وَسُيِّرَتِ الْجِبَالُ فَكَانَتْ سَرَابًا"}, {"id": "sourates-72fbe5d6", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["Al-Ankabut", "Al-Layl", "Al-Mursalat", "Ash-Shams"], "bonne": 3, "explication": "C'est le verset 11 de la sourate Ash-Shams. Sa traduction : « Les Thamûd, par leur transgression, ont crié au mensonge »", "source": "Coran, sourate 91, verset 11.", "divergence": null, "arabe": "كَذَّبَتْ ثَمُودُ بِطَغْوَاهَا"}, {"id": "sourates-f327b07d", "section": "sens-des-sourates", "theme": "Reperes", "type": "qcm4", "difficulte": 1, "question": "Combien de versets compte la sourate At-Tin ?", "reponses": ["12 versets", "7 versets", "8 versets", "4 versets"], "bonne": 2, "explication": "La sourate At-Tin porte le numero 95 dans l'ordre du Coran.", "source": "Coran, sourate At-Tin (95).", "divergence": null}, {"id": "sourates-55fbd3a7", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["et des tapis étalés", "et que la terre sera nivelée", "Et par la nuit quand elle couvre tout", "L'Enfer demeure aux aguets"], "bonne": 3, "explication": "C'est le verset 21 de la sourate An-Naba (n° 78). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 78, verset 21. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Naba", "arabe": "إِنَّ جَهَنَّمَ كَانَتْ مِرْصَادًا"}, {"id": "sourates-ddc263d5", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["Al-Inshiqaq", "Al-Layl", "Al-Mujadila", "An-Nahl"], "bonne": 1, "explication": "C'est le verset 13 de la sourate Al-Layl. Sa traduction : « à Nous appartient, certes, la vie dernière et la vie présente »", "source": "Coran, sourate 92, verset 13.", "divergence": null, "arabe": "وَإِنَّ لَنَا لَلْآخِرَةَ وَالْأُولَىٰ"}, {"id": "sourates-47ffb3ec", "section": "sens-des-sourates", "theme": "Reperes", "type": "qcm4", "difficulte": 1, "question": "Combien de versets compte la sourate Al-Alaq ?", "reponses": ["20 versets", "19 versets", "17 versets", "14 versets"], "bonne": 1, "explication": "La sourate Al-Alaq porte le numero 96 dans l'ordre du Coran.", "source": "Coran, sourate Al-Alaq (96).", "divergence": null}, {"id": "sourates-77c53bff", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["Encore une fois, non! Ils sauront bientôt", "et leurs regards se baisseront", "refuge pour les transgresseurs", "et qui n'encourage point à nourrir le pauvre"], "bonne": 2, "explication": "C'est le verset 22 de la sourate An-Naba (n° 78). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 78, verset 22. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Naba", "arabe": "لِلطَّاغِينَ مَآبًا"}, {"id": "sourates-77c122f1", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["Ar-Rum", "Ali Imran", "Ad-Duha", "As-Saff"], "bonne": 2, "explication": "C'est le verset 6 de la sourate Ad-Duha. Sa traduction : « Ne t'a-t-Il pas trouvé orphelin? Alors Il t'a accueilli »", "source": "Coran, sourate 93, verset 6.", "divergence": null, "arabe": "أَلَمْ يَجِدْكَ يَتِيمًا فَآوَىٰ"}, {"id": "sourates-e693246d", "section": "sens-des-sourates", "theme": "Reperes", "type": "qcm4", "difficulte": 1, "question": "Combien de versets compte la sourate Al-Qadr ?", "reponses": ["5 versets", "7 versets", "9 versets", "3 versets"], "bonne": 0, "explication": "La sourate Al-Qadr porte le numero 97 dans l'ordre du Coran.", "source": "Coran, sourate Al-Qadr (97).", "divergence": null}, {"id": "sourates-e7c5807b", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["et (placé) les montagnes comme des piquets", "Et par la nuit quand elle couvre tout", "Ils y demeureront pendant des siècles successifs", "Quelle [science] en as-tu pour le leur dire"], "bonne": 2, "explication": "C'est le verset 23 de la sourate An-Naba (n° 78). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 78, verset 23. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Naba", "arabe": "لَابِثِينَ فِيهَا أَحْقَابًا"}, {"id": "sourates-b0f618f7", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["At-Takwir", "At-Talaq", "Al-Ma'arij", "Ash-Sharh"], "bonne": 3, "explication": "C'est le verset 5 de la sourate Ash-Sharh. Sa traduction : « A côté de la difficulté est, certes, une facilité »", "source": "Coran, sourate 94, verset 5.", "divergence": null, "arabe": "فَإِنَّ مَعَ الْعُسْرِ يُسْرًا"}, {"id": "sourates-413cdb1f", "section": "sens-des-sourates", "theme": "Reperes", "type": "qcm4", "difficulte": 1, "question": "Combien de versets compte la sourate Al-Bayyina ?", "reponses": ["12 versets", "8 versets", "5 versets", "4 versets"], "bonne": 1, "explication": "La sourate Al-Bayyina porte le numero 98 dans l'ordre du Coran.", "source": "Coran, sourate Al-Bayyina (98).", "divergence": null}, {"id": "sourates-ca89b43a", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["Ils n'y goûteront ni fraîcheur ni breuvage", "A titre de récompense de ton Seigneur et à titre de don abondant", "Le Feu se refermera sur eux", "T'est-il parvenu le récit des armées"], "bonne": 0, "explication": "C'est le verset 24 de la sourate An-Naba (n° 78). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 78, verset 24. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Naba", "arabe": "لَا يَذُوقُونَ فِيهَا بَرْدًا وَلَا شَرَابًا"}, {"id": "sourates-f5421463", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["Al-Ikhlas", "Al-Mulk", "Al-Hajj", "At-Tin"], "bonne": 3, "explication": "C'est le verset 4 de la sourate At-Tin. Sa traduction : « Nous avons certes créé l'homme dans la forme la plus parfaite »", "source": "Coran, sourate 95, verset 4.", "divergence": null, "arabe": "لَقَدْ خَلَقْنَا الْإِنْسَانَ فِي أَحْسَنِ تَقْوِيمٍ"}, {"id": "sourates-c86710bc", "section": "sens-des-sourates", "theme": "Reperes", "type": "qcm4", "difficulte": 1, "question": "Combien de versets compte la sourate Az-Zalzala ?", "reponses": ["11 versets", "8 versets", "7 versets", "12 versets"], "bonne": 1, "explication": "La sourate Az-Zalzala porte le numero 99 dans l'ordre du Coran.", "source": "Coran, sourate Az-Zalzala (99).", "divergence": null}, {"id": "sourates-bc15a0ca", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["et [y] avons placé une lampe (le soleil) très ardente", "Hormis une eau bouillante et un pus", "La course aux richesses vous distrait", "Le Feu se refermera sur eux"], "bonne": 1, "explication": "C'est le verset 25 de la sourate An-Naba (n° 78). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 78, verset 25. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Naba", "arabe": "إِلَّا حَمِيمًا وَغَسَّاقًا"}, {"id": "sourates-27a49f6a", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["Al-Qadr", "At-Tin", "Ar-Rahman", "As-Saffat"], "bonne": 0, "explication": "C'est le verset 2 de la sourate Al-Qadr. Sa traduction : « Et qui te dira ce qu'est la nuit d'Al-Qadr »", "source": "Coran, sourate 97, verset 2.", "divergence": null, "arabe": "وَمَا أَدْرَاكَ مَا لَيْلَةُ الْقَدْرِ"}, {"id": "sourates-a0f01710", "section": "sens-des-sourates", "theme": "Reperes", "type": "qcm4", "difficulte": 1, "question": "Combien de versets compte la sourate Al-Adiyat ?", "reponses": ["8 versets", "15 versets", "9 versets", "11 versets"], "bonne": 3, "explication": "La sourate Al-Adiyat porte le numero 100 dans l'ordre du Coran.", "source": "Coran, sourate Al-Adiyat (100).", "divergence": null}, {"id": "sourates-1005a28e", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["Un livre déjà cacheté (achevé)", "Et qui te dira ce qu'est le fracas", "et que la terre fera sortir ses fardeaux", "comme rétribution équitable"], "bonne": 3, "explication": "C'est le verset 26 de la sourate An-Naba (n° 78). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 78, verset 26. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Naba", "arabe": "جَزَاءً وِفَاقًا"}, {"id": "sourates-c41ce130", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["Al-Hadid", "Al-Qadr", "At-Tur", "Al-Kawthar"], "bonne": 1, "explication": "C'est le verset 4 de la sourate Al-Qadr. Sa traduction : « Durant celle-ci descendent les Anges ainsi que l'Esprit, par permission de leur Seigneur pour tout ordre »", "source": "Coran, sourate 97, verset 4.", "divergence": null, "arabe": "تَنَزَّلُ الْمَلَائِكَةُ وَالرُّوحُ فِيهَا بِإِذْنِ رَبِّهِمْ مِنْ كُلِّ أَمْرٍ"}, {"id": "sourates-77d828b3", "section": "sens-des-sourates", "theme": "Reperes", "type": "qcm4", "difficulte": 1, "question": "Combien de versets compte la sourate Al-Qari'a ?", "reponses": ["9 versets", "8 versets", "13 versets", "11 versets"], "bonne": 3, "explication": "La sourate Al-Qari'a porte le numero 101 dans l'ordre du Coran.", "source": "Coran, sourate Al-Qari'a (101).", "divergence": null}, {"id": "sourates-70e726fd", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["C'est l'étoile vivement brillante", "La nuit d'Al-Qadr est meilleure que mille mois", "Car ils ne s'attendaient pas à rendre compte", "quiconque veut, donc, s'en rappelle"], "bonne": 2, "explication": "C'est le verset 27 de la sourate An-Naba (n° 78). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 78, verset 27. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Naba", "arabe": "إِنَّهُمْ كَانُوا لَا يَرْجُونَ حِسَابًا"}, {"id": "sourates-1157fed9", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["At-Tariq", "Ad-Dukhan", "Al-Haqqa", "Al-Bayyina"], "bonne": 3, "explication": "C'est le verset 6 de la sourate Al-Bayyina. Sa traduction : « Les infidèles parmi les gens du Livre, ainsi que les Associateurs iront au feu de l'Enfer, pour y demeurer éternellement. De toute la création, ce sont eux les pires »", "source": "Coran, sourate 98, verset 6.", "divergence": null, "arabe": "إِنَّ الَّذِينَ كَفَرُوا مِنْ أَهْلِ الْكِتَابِ وَالْمُشْرِكِينَ فِي نَارِ جَهَنَّمَ خَالِدِينَ فِيهَا ۚ أُولَٰئِكَ هُمْ شَرُّ الْبَرِيَّةِ"}, {"id": "sourates-0acf0366", "section": "sens-des-sourates", "theme": "Reperes", "type": "qcm4", "difficulte": 1, "question": "Combien de versets compte la sourate At-Takathur ?", "reponses": ["4 versets", "7 versets", "9 versets", "8 versets"], "bonne": 3, "explication": "La sourate At-Takathur porte le numero 102 dans l'ordre du Coran.", "source": "Coran, sourate At-Takathur (102).", "divergence": null}, {"id": "sourates-f52e9b6a", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["et traitaient de mensonges, continuellement, Nos versets", "et par l'aube quand elle exhale son souffle", "et qu'elle rejettera ce qui est en son sein (les morts) et se videra", "le toupet d'un menteur, d'un pécheur"], "bonne": 0, "explication": "C'est le verset 28 de la sourate An-Naba (n° 78). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 78, verset 28. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Naba", "arabe": "وَكَذَّبُوا بِآيَاتِنَا كِذَّابًا"}, {"id": "sourates-b06bd1c1", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["Al-Bayyina", "At-Tin", "Al-Hadid", "An-Nazi'at"], "bonne": 0, "explication": "C'est le verset 8 de la sourate Al-Bayyina. Sa traduction : « Leur récompense auprès d'Allah sera les Jardins de séjour, sous lesquels coulent les ruisseaux, pour y demeurer éternellement. Allah les agrée et ils L'agréent. Telle sera [la récompense] de celui qui craint son Seigneur »", "source": "Coran, sourate 98, verset 8.", "divergence": null, "arabe": "جَزَاؤُهُمْ عِنْدَ رَبِّهِمْ جَنَّاتُ عَدْنٍ تَجْرِي مِنْ تَحْتِهَا الْأَنْهَارُ خَالِدِينَ فِيهَا أَبَدًا ۖ رَضِيَ اللَّهُ عَنْهُمْ وَرَضُوا عَنْهُ ۚ ذَٰلِكَ لِمَنْ خَشِيَ رَبَّهُ"}, {"id": "sourates-f187c300", "section": "sens-des-sourates", "theme": "Reperes", "type": "qcm4", "difficulte": 1, "question": "Combien de versets compte la sourate Al-Asr ?", "reponses": ["5 versets", "3 versets", "6 versets", "4 versets"], "bonne": 1, "explication": "La sourate Al-Asr porte le numero 103 dans l'ordre du Coran.", "source": "Coran, sourate Al-Asr (103).", "divergence": null}, {"id": "sourates-307b3ba4", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["Et par la nuit quand elle s'écoule", "quiconque veut, donc, s'en rappelle", "et voilà qu'ils seront sur la terre (ressuscités)", "alors que Nous avons dénombré toutes choses en écrit"], "bonne": 3, "explication": "C'est le verset 29 de la sourate An-Naba (n° 78). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 78, verset 29. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Naba", "arabe": "وَكُلَّ شَيْءٍ أَحْصَيْنَاهُ كِتَابًا"}, {"id": "sourates-7523a329", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["Al-Qalam", "Al-Mujadila", "Az-Zalzala", "Ar-Rum"], "bonne": 2, "explication": "C'est le verset 7 de la sourate Az-Zalzala. Sa traduction : « Quiconque fait un bien fût-ce du poids d'un atome, le verra »", "source": "Coran, sourate 99, verset 7.", "divergence": null, "arabe": "فَمَنْ يَعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْرًا يَرَهُ"}, {"id": "sourates-7940146a", "section": "sens-des-sourates", "theme": "Reperes", "type": "qcm4", "difficulte": 1, "question": "Combien de versets compte la sourate Al-Humaza ?", "reponses": ["13 versets", "11 versets", "5 versets", "9 versets"], "bonne": 3, "explication": "La sourate Al-Humaza porte le numero 104 dans l'ordre du Coran.", "source": "Coran, sourate Al-Humaza (104).", "divergence": null}, {"id": "sourates-1dd5c8f7", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["Goûtez-donc. Nous n'augmenterons pour vous que le châtiment", "et les montagnes comme de la laine cardée", "et pourtant, il est certes, témoin de cela", "A vous votre religion, et à moi ma religion»"], "bonne": 0, "explication": "C'est le verset 30 de la sourate An-Naba (n° 78). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 78, verset 30. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Naba", "arabe": "فَذُوقُوا فَلَنْ نَزِيدَكُمْ إِلَّا عَذَابًا"}, {"id": "sourates-9b0a9d2c", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["Az-Zalzala", "Al-Hujurat", "Al-Ahqaf", "Ad-Dukhan"], "bonne": 0, "explication": "C'est le verset 3 de la sourate Az-Zalzala. Sa traduction : « et que l'homme dira: «Qu'a-t-elle?» »", "source": "Coran, sourate 99, verset 3.", "divergence": null, "arabe": "وَقَالَ الْإِنْسَانُ مَا لَهَا"}, {"id": "sourates-c701b9ef", "section": "sens-des-sourates", "theme": "Reperes", "type": "qcm4", "difficulte": 1, "question": "Combien de versets compte la sourate Al-Fil ?", "reponses": ["7 versets", "5 versets", "3 versets", "6 versets"], "bonne": 1, "explication": "La sourate Al-Fil porte le numero 105 dans l'ordre du Coran.", "source": "Coran, sourate Al-Fil (105).", "divergence": null}, {"id": "sourates-dfb49d9e", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["Sur quoi s'interrogent-ils mutuellement", "Pour les pieux ce sera une réussite", "et les montagnes comment elles sont dressées", "tu ne t'en soucies pas"], "bonne": 1, "explication": "C'est le verset 31 de la sourate An-Naba (n° 78). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 78, verset 31. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Naba", "arabe": "إِنَّ لِلْمُتَّقِينَ مَفَازًا"}, {"id": "sourates-ec3c612b", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["At-Talaq", "Ghafir", "Al-Adiyat", "Al-Ma'arij"], "bonne": 2, "explication": "C'est le verset 9 de la sourate Al-Adiyat. Sa traduction : « Ne sait-il donc pas que lorsque ce qui est dans les tombes sera bouleversé »", "source": "Coran, sourate 100, verset 9.", "divergence": null, "arabe": "۞ أَفَلَا يَعْلَمُ إِذَا بُعْثِرَ مَا فِي الْقُبُورِ"}, {"id": "sourates-8e94b9f8", "section": "sens-des-sourates", "theme": "Reperes", "type": "qcm4", "difficulte": 1, "question": "Combien de versets compte la sourate Quraysh ?", "reponses": ["4 versets", "5 versets", "6 versets", "8 versets"], "bonne": 0, "explication": "La sourate Quraysh porte le numero 106 dans l'ordre du Coran.", "source": "Coran, sourate Quraysh (106).", "divergence": null}, {"id": "sourates-fd3868b1", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["Non...! Mais en vérité le livre des libertins sera dans le Sijjîn", "Quand la terre tremblera d'un violent tremblement", "Lorsque vient le secours d'Allah ainsi que la victoire", "et des (belles) aux seins arrondis, d'une égale jeunesse"], "bonne": 3, "explication": "C'est le verset 33 de la sourate An-Naba (n° 78). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 78, verset 33. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Naba", "arabe": "وَكَوَاعِبَ أَتْرَابًا"}, {"id": "sourates-c9b4b631", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["Al-Qari'a", "Al-Humaza", "Al-Qadr", "As-Saffat"], "bonne": 0, "explication": "C'est le verset 5 de la sourate Al-Qari'a. Sa traduction : « et les montagnes comme de la laine cardée »", "source": "Coran, sourate 101, verset 5.", "divergence": null, "arabe": "وَتَكُونُ الْجِبَالُ كَالْعِهْنِ الْمَنْفُوشِ"}, {"id": "sourates-d3babc5a", "section": "sens-des-sourates", "theme": "Reperes", "type": "qcm4", "difficulte": 1, "question": "Combien de versets compte la sourate Al-Ma'un ?", "reponses": ["3 versets", "9 versets", "5 versets", "7 versets"], "bonne": 3, "explication": "La sourate Al-Ma'un porte le numero 107 dans l'ordre du Coran.", "source": "Coran, sourate Al-Ma'un (107).", "divergence": null}, {"id": "sourates-6c052aa2", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["Et qui te dira ce qu'est la nuit d'Al-Qadr", "Par le ciel aux constellations", "Ils n'y entendront ni futilités ni mensonges", "pensant que sa fortune l'immortalisera"], "bonne": 2, "explication": "C'est le verset 35 de la sourate An-Naba (n° 78). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 78, verset 35. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Naba", "arabe": "لَا يَسْمَعُونَ فِيهَا لَغْوًا وَلَا كِذَّابًا"}, {"id": "sourates-5c07cdf9", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["Ash-Sharh", "Al-Jumu'a", "Al-Muzzammil", "Al-Qari'a"], "bonne": 3, "explication": "C'est le verset 3 de la sourate Al-Qari'a. Sa traduction : « Et qui te dira ce qu'est le fracas »", "source": "Coran, sourate 101, verset 3.", "divergence": null, "arabe": "وَمَا أَدْرَاكَ مَا الْقَارِعَةُ"}, {"id": "sourates-19355fa7", "section": "sens-des-sourates", "theme": "Reperes", "type": "qcm4", "difficulte": 1, "question": "Combien de versets compte la sourate Al-Kawthar ?", "reponses": ["3 versets", "7 versets", "6 versets", "4 versets"], "bonne": 0, "explication": "La sourate Al-Kawthar porte le numero 108 dans l'ordre du Coran.", "source": "Coran, sourate Al-Kawthar (108).", "divergence": null}, {"id": "sourates-dc2d9e5f", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["et quiconque fait un mal fût-ce du poids d'un atome, le verra", "A titre de récompense de ton Seigneur et à titre de don abondant", "Nous appellerons les gardiens [de l'Enfer]", "Ils y demeureront pendant des siècles successifs"], "bonne": 1, "explication": "C'est le verset 36 de la sourate An-Naba (n° 78). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 78, verset 36. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Naba", "arabe": "جَزَاءً مِنْ رَبِّكَ عَطَاءً حِسَابًا"}, {"id": "sourates-23b51b54", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["Al-Mu'minun", "Al-Buruj", "Az-Zumar", "At-Takathur"], "bonne": 3, "explication": "C'est le verset 5 de la sourate At-Takathur. Sa traduction : « Sûrement! Si vous saviez de science certaine »", "source": "Coran, sourate 102, verset 5.", "divergence": null, "arabe": "كَلَّا لَوْ تَعْلَمُونَ عِلْمَ الْيَقِينِ"}, {"id": "sourates-f9454f6e", "section": "sens-des-sourates", "theme": "Reperes", "type": "qcm4", "difficulte": 1, "question": "Combien de versets compte la sourate Al-Kafirun ?", "reponses": ["6 versets", "4 versets", "8 versets", "3 versets"], "bonne": 0, "explication": "La sourate Al-Kafirun porte le numero 109 dans l'ordre du Coran.", "source": "Coran, sourate Al-Kafirun (109).", "divergence": null}, {"id": "sourates-eb58aa29", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["du Seigneur des cieux et de la terre et de ce qui existe entre eux, le Tout Miséricordieux; ils n'osent nullement Lui adresser la parole", "toute âme saura alors ce qu'elle a accompli et ce qu'elle a remis de faire à plus tard", "Il ne leur a été commandé, cependant, que d'adorer Allah, Lui vouant un culte exclusif, d'accomplir la Salât et d'acquitter la Zakât. Et voilà la religion de droiture", "et que ce jour-là, on amènera l'Enfer; ce jour-là, l'homme se rappellera. Mais à quoi lui servira de se souvenir"], "bonne": 0, "explication": "C'est le verset 37 de la sourate An-Naba (n° 78). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 78, verset 37. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Naba", "arabe": "رَبِّ السَّمَاوَاتِ وَالْأَرْضِ وَمَا بَيْنَهُمَا الرَّحْمَٰنِ ۖ لَا يَمْلِكُونَ مِنْهُ خِطَابًا"}, {"id": "sourates-a0b019bf", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["Ash-Shu'ara", "Al-Qari'a", "At-Takathur", "Al-Ahqaf"], "bonne": 2, "explication": "C'est le verset 8 de la sourate At-Takathur. Sa traduction : « Puis, assurément, vous serez interrogés, ce jour-là, sur les délices »", "source": "Coran, sourate 102, verset 8.", "divergence": null, "arabe": "ثُمَّ لَتُسْأَلُنَّ يَوْمَئِذٍ عَنِ النَّعِيمِ"}, {"id": "sourates-2b9e2975", "section": "sens-des-sourates", "theme": "Reperes", "type": "qcm4", "difficulte": 1, "question": "Combien de versets compte la sourate An-Nasr ?", "reponses": ["5 versets", "3 versets", "7 versets", "6 versets"], "bonne": 1, "explication": "La sourate An-Nasr porte le numero 110 dans l'ordre du Coran.", "source": "Coran, sourate An-Nasr (110).", "divergence": null}, {"id": "sourates-440f8a8c", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["Le jour où aucune âme ne pourra rien en faveur d'une autre âme. Et ce jour-là, le commandement sera à Allah", "laissant un arrière-goût de musc. Que ceux qui la convoitent entrent en compétition [pour l'acquérir]", "Le jour où l'Esprit et les Anges se dresseront en rangs, nul ne saura parler, sauf celui à qui le Tout Miséricordieux aura accordé la permission, et qui dira la vérité", "Mais par contre, quand Il l'éprouve en lui restreignant sa subsistance, il dit: «Mon Seigneur m'a avili»"], "bonne": 2, "explication": "C'est le verset 38 de la sourate An-Naba (n° 78). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 78, verset 38. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Naba", "arabe": "يَوْمَ يَقُومُ الرُّوحُ وَالْمَلَائِكَةُ صَفًّا ۖ لَا يَتَكَلَّمُونَ إِلَّا مَنْ أَذِنَ لَهُ الرَّحْمَٰنُ وَقَالَ صَوَابًا"}, {"id": "sourates-8b053bdc", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["Al-Falaq", "Al-Fatiha", "Al-Asr", "Ghafir"], "bonne": 2, "explication": "C'est le verset 3 de la sourate Al-Asr. Sa traduction : « sauf ceux qui croient et accomplissent les bonnes œuvres, s'enjoignent mutuellement la vérité et s'enjoignent mutuellement l'endurance »", "source": "Coran, sourate 103, verset 3.", "divergence": null, "arabe": "إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ وَتَوَاصَوْا بِالْحَقِّ وَتَوَاصَوْا بِالصَّبْرِ"}, {"id": "sourates-bacb72b2", "section": "sens-des-sourates", "theme": "Reperes", "type": "qcm4", "difficulte": 1, "question": "Combien de versets compte la sourate Al-Masad ?", "reponses": ["9 versets", "5 versets", "6 versets", "4 versets"], "bonne": 1, "explication": "La sourate Al-Masad porte le numero 111 dans l'ordre du Coran.", "source": "Coran, sourate Al-Masad (111).", "divergence": null}, {"id": "sourates-a08e5a20", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["qu'il (le conseiller) soit un djinn, ou un être humain»", "le jour où les gens se tiendront debout devant le Seigneur de l'Univers", "Encore une fois, qui te dira ce qu'est le jour de la Rétribution", "Ce jour-là est inéluctable. Que celui qui veut prenne donc refuge auprès de son Seigneur"], "bonne": 3, "explication": "C'est le verset 39 de la sourate An-Naba (n° 78). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 78, verset 39. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Naba", "arabe": "ذَٰلِكَ الْيَوْمُ الْحَقُّ ۖ فَمَنْ شَاءَ اتَّخَذَ إِلَىٰ رَبِّهِ مَآبًا"}, {"id": "sourates-116367d8", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["Al-Anfal", "Al-Buruj", "Ta-Ha", "Al-Asr"], "bonne": 3, "explication": "C'est le verset 2 de la sourate Al-Asr. Sa traduction : « L'homme est certes, en perdition »", "source": "Coran, sourate 103, verset 2.", "divergence": null, "arabe": "إِنَّ الْإِنْسَانَ لَفِي خُسْرٍ"}, {"id": "sourates-8099ebdf", "section": "sens-des-sourates", "theme": "Reperes", "type": "qcm4", "difficulte": 1, "question": "Combien de versets compte la sourate Al-Ikhlas ?", "reponses": ["5 versets", "7 versets", "3 versets", "4 versets"], "bonne": 3, "explication": "La sourate Al-Ikhlas porte le numero 112 dans l'ordre du Coran.", "source": "Coran, sourate Al-Ikhlas (112).", "divergence": null}, {"id": "sourates-e9a7ed1a", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["Mais, ils le traitèrent de menteur, et la tuèrent. Leur Seigneur les détruisit donc, pour leur péché et étendit Son châtiment sur tous", "Le jour où l'Esprit et les Anges se dresseront en rangs, nul ne saura parler, sauf celui à qui le Tout Miséricordieux aura accordé la permission, et qui dira la vérité", "Quant à l'homme, lorsque son Seigneur l'éprouve en l'honorant et en le comblant de bienfaits, il dit: «Mon Seigneur m'a honoré»", "Nous vous avons avertis d'un châtiment bien proche, le jour où l'homme verra ce que ses deux mains ont préparé; et l'infidèle dira: «Hélas pour moi! Comme j'aurais aimé n'être que poussière»"], "bonne": 3, "explication": "C'est le verset 40 de la sourate An-Naba (n° 78). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 78, verset 40. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Naba", "arabe": "إِنَّا أَنْذَرْنَاكُمْ عَذَابًا قَرِيبًا يَوْمَ يَنْظُرُ الْمَرْءُ مَا قَدَّمَتْ يَدَاهُ وَيَقُولُ الْكَافِرُ يَا لَيْتَنِي كُنْتُ تُرَابًا"}, {"id": "sourates-1f26bd6e", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["Al-Anbiya", "Al-Humaza", "Al-Mutaffifin", "Ali Imran"], "bonne": 1, "explication": "C'est le verset 4 de la sourate Al-Humaza. Sa traduction : « Mais non! Il sera certes, jeté dans la Hutamah »", "source": "Coran, sourate 104, verset 4.", "divergence": null, "arabe": "كَلَّا ۖ لَيُنْبَذَنَّ فِي الْحُطَمَةِ"}, {"id": "sourates-bed8b201", "section": "sens-des-sourates", "theme": "Reperes", "type": "qcm4", "difficulte": 1, "question": "Combien de versets compte la sourate Al-Falaq ?", "reponses": ["5 versets", "7 versets", "9 versets", "3 versets"], "bonne": 0, "explication": "La sourate Al-Falaq porte le numero 113 dans l'ordre du Coran.", "source": "Coran, sourate Al-Falaq (113).", "divergence": null}, {"id": "sourates-926e771f", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["C'est à Nous, certes, de guider", "consigné dans des feuilles honorées", "Et nul n'est égal à Lui»", "Par ceux qui arrachent violemment"], "bonne": 3, "explication": "C'est le verset 1 de la sourate An-Nazi'at (n° 79). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 79, verset 1. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Nazi'at", "arabe": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ وَالنَّازِعَاتِ غَرْقًا"}, {"id": "sourates-5ac889f3", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["Al-Fil", "Al-Kahf", "Al-Hashr", "Al-Qari'a"], "bonne": 0, "explication": "C'est le verset 4 de la sourate Al-Fil. Sa traduction : « qui leur lançaient des pierres d'argile »", "source": "Coran, sourate 105, verset 4.", "divergence": null, "arabe": "تَرْمِيهِمْ بِحِجَارَةٍ مِنْ سِجِّيلٍ"}, {"id": "sourates-6487a03e", "section": "sens-des-sourates", "theme": "Reperes", "type": "qcm4", "difficulte": 1, "question": "Combien de versets compte la sourate An-Nas ?", "reponses": ["3 versets", "6 versets", "7 versets", "4 versets"], "bonne": 1, "explication": "La sourate An-Nas porte le numero 114 dans l'ordre du Coran.", "source": "Coran, sourate An-Nas (114).", "divergence": null}, {"id": "sourates-7c2172e1", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["Accomplis la Salât pour ton Seigneur et sacrifie", "et nul ne saura garrotter comme Lui garrotte", "quant à celui dont la balance sera lourde", "Et par ceux qui recueillent avec douceur"], "bonne": 3, "explication": "C'est le verset 2 de la sourate An-Nazi'at (n° 79). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 79, verset 2. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Nazi'at", "arabe": "وَالنَّاشِطَاتِ نَشْطًا"}, {"id": "sourates-1622fd95", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["Al-Ma'un", "Al-Fil", "Al-Qadr", "Al-Furqan"], "bonne": 1, "explication": "C'est le verset 2 de la sourate Al-Fil. Sa traduction : « N'a-t-Il pas rendu leur ruse complètement vaine »", "source": "Coran, sourate 105, verset 2.", "divergence": null, "arabe": "أَلَمْ يَجْعَلْ كَيْدَهُمْ فِي تَضْلِيلٍ"}, {"id": "sourates-10b3dea1", "section": "sens-des-sourates", "theme": "Reperes", "type": "qcm4", "difficulte": 1, "question": "Combien de versets compte la sourate Al-Fatiha ?", "reponses": ["3 versets", "8 versets", "7 versets", "4 versets"], "bonne": 2, "explication": "La sourate Al-Fatiha porte le numero 1 dans l'ordre du Coran.", "source": "Coran, sourate Al-Fatiha (1).", "divergence": null}, {"id": "sourates-75e63362", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["N'a-t-Il pas rendu leur ruse complètement vaine", "Et par ceux qui voguent librement", "Et quant au bienfait de ton Seigneur, proclame-le", "Et qui te dira ce qu'est la nuit d'Al-Qadr"], "bonne": 1, "explication": "C'est le verset 3 de la sourate An-Nazi'at (n° 79). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 79, verset 3. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Nazi'at", "arabe": "وَالسَّابِحَاتِ سَبْحًا"}, {"id": "sourates-2a8e84ed", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["Quraysh", "Al-Hajj", "Al-A'raf", "Ash-Shu'ara"], "bonne": 0, "explication": "C'est le verset 3 de la sourate Quraysh. Sa traduction : « Qu'ils adorent donc le Seigneur de cette Maison [la Ka'ba] »", "source": "Coran, sourate 106, verset 3.", "divergence": null, "arabe": "فَلْيَعْبُدُوا رَبَّ هَٰذَا الْبَيْتِ"}, {"id": "sourates-9c1b4ddf", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["puis s'élancent à toute vitesse", "qui donne ses biens pour se purifier", "et déclare véridique la plus belle récompense", "qui sont pleins d'ostentation"], "bonne": 0, "explication": "C'est le verset 4 de la sourate An-Nazi'at (n° 79). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 79, verset 4. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Nazi'at", "arabe": "فَالسَّابِقَاتِ سَبْقًا"}, {"id": "sourates-b45844a0", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["At-Tin", "Quraysh", "Al-An'am", "An-Naba"], "bonne": 1, "explication": "C'est le verset 4 de la sourate Quraysh. Sa traduction : « qui les a nourris contre la faim et rassurés de la crainte »", "source": "Coran, sourate 106, verset 4.", "divergence": null, "arabe": "الَّذِي أَطْعَمَهُمْ مِنْ جُوعٍ وَآمَنَهُمْ مِنْ خَوْفٍ"}, {"id": "sourates-11230e6a", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["Celui qui te hait sera certes, sans postérité", "Le jour où [la terre] tremblera [au premier son du clairon]", "Ils n'y goûteront ni fraîcheur ni breuvage", "et par l'aube quand elle exhale son souffle"], "bonne": 1, "explication": "C'est le verset 6 de la sourate An-Nazi'at (n° 79). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 79, verset 6. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Nazi'at", "arabe": "يَوْمَ تَرْجُفُ الرَّاجِفَةُ"}, {"id": "sourates-93ce70cb", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["As-Saff", "Az-Zalzala", "Al-Ma'un", "Al-Hashr"], "bonne": 2, "explication": "C'est le verset 5 de la sourate Al-Ma'un. Sa traduction : « tout en négligeant (et retardant) leur Salât »", "source": "Coran, sourate 107, verset 5.", "divergence": null, "arabe": "الَّذِينَ هُمْ عَنْ صَلَاتِهِمْ سَاهُونَ"}, {"id": "sourates-59a8744e", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["Il a fait sortir d'elle son eau et son pâturage", "Son terme n'est connu que de ton Seigneur", "Vous passerez, certes, par des états successifs", "immédiatement suivi du deuxième"], "bonne": 3, "explication": "C'est le verset 7 de la sourate An-Nazi'at (n° 79). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 79, verset 7. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Nazi'at", "arabe": "تَتْبَعُهَا الرَّادِفَةُ"}, {"id": "sourates-fd6af73a", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["Al-Ma'un", "Quraysh", "An-Nahl", "Al-Mulk"], "bonne": 0, "explication": "C'est le verset 2 de la sourate Al-Ma'un. Sa traduction : « C'est bien lui qui repousse l'orphelin »", "source": "Coran, sourate 107, verset 2.", "divergence": null, "arabe": "فَذَٰلِكَ الَّذِي يَدُعُّ الْيَتِيمَ"}, {"id": "sourates-1ed87575", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["Ton Seigneur ne t'a ni abandonné, ni détesté", "Pense-t-il que personne ne pourra rien contre lui", "Les Thamûd, par leur transgression, ont crié au mensonge", "Ce jour-là, il y aura des cœurs qui seront agités d'effroi"], "bonne": 3, "explication": "C'est le verset 8 de la sourate An-Nazi'at (n° 79). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 79, verset 8. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Nazi'at", "arabe": "قُلُوبٌ يَوْمَئِذٍ وَاجِفَةٌ"}, {"id": "sourates-40d67899", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["Al-Humaza", "Al-Kawthar", "Al-Ma'un", "As-Saff"], "bonne": 1, "explication": "C'est le verset 3 de la sourate Al-Kawthar. Sa traduction : « Celui qui te hait sera certes, sans postérité »", "source": "Coran, sourate 108, verset 3.", "divergence": null, "arabe": "إِنَّ شَانِئَكَ هُوَ الْأَبْتَرُ"}, {"id": "sourates-52e67e6e", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["Celui Qui a créé et agencé harmonieusement", "et par la nuit et ce qu'elle enveloppe", "et leurs regards se baisseront", "et pénètrent au centre de la troupe ennemie"], "bonne": 2, "explication": "C'est le verset 9 de la sourate An-Nazi'at (n° 79). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 79, verset 9. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Nazi'at", "arabe": "أَبْصَارُهَا خَاشِعَةٌ"}, {"id": "sourates-b58e2933", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["An-Nas", "Al-Kafirun", "As-Saffat", "Al-A'la"], "bonne": 1, "explication": "C'est le verset 3 de la sourate Al-Kafirun. Sa traduction : « Et vous n'êtes pas adorateurs de ce que j'adore »", "source": "Coran, sourate 109, verset 3.", "divergence": null, "arabe": "وَلَا أَنْتُمْ عَابِدُونَ مَا أَعْبُدُ"}, {"id": "sourates-37c21137", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["puis Il lui donne la mort et le met au tombeau", "Ils disent: «Quoi! Serons-nous ramenés à notre vie première", "Eh bien, rappelle! Tu n'es qu'un rappeleur", "et nul ne saura garrotter comme Lui garrotte"], "bonne": 1, "explication": "C'est le verset 10 de la sourate An-Nazi'at (n° 79). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 79, verset 10. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Nazi'at", "arabe": "يَقُولُونَ أَإِنَّا لَمَرْدُودُونَ فِي الْحَافِرَةِ"}, {"id": "sourates-fbf83eef", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["Al-Alaq", "Al-Qadr", "Ash-Sharh", "An-Nasr"], "bonne": 3, "explication": "C'est le verset 2 de la sourate An-Nasr. Sa traduction : « et que tu vois les gens entrer en foule dans la religion d'Allah »", "source": "Coran, sourate 110, verset 2.", "divergence": null, "arabe": "وَرَأَيْتَ النَّاسَ يَدْخُلُونَ فِي دِينِ اللَّهِ أَفْوَاجًا"}, {"id": "sourates-3ab5762e", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["alors que Nous avons dénombré toutes choses en écrit", "Louange à Allah, Seigneur de l'univers", "quand nous serons ossements pourris?»", "puis Il le ressuscitera quand Il voudra"], "bonne": 2, "explication": "C'est le verset 11 de la sourate An-Nazi'at (n° 79). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 79, verset 11. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Nazi'at", "arabe": "أَإِذَا كُنَّا عِظَامًا نَخِرَةً"}, {"id": "sourates-2a9187db", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["An-Nasr", "An-Naba", "Al-Infitar", "Al-Isra"], "bonne": 0, "explication": "C'est le verset 3 de la sourate An-Nasr. Sa traduction : « alors, par la louange, célèbre la gloire de ton Seigneur et implore Son pardon. Car c'est Lui le grand Accueillant au repentir »", "source": "Coran, sourate 110, verset 3.", "divergence": null, "arabe": "فَسَبِّحْ بِحَمْدِ رَبِّكَ وَاسْتَغْفِرْهُ ۚ إِنَّهُ كَانَ تَوَّابًا"}, {"id": "sourates-5cc0748d", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["à un serviteur d'Allah [Muhammad] de célébrer la Salât", "Ils disent: «ce sera alors un retour ruineux!»", "Quelle [science] en as-tu pour le leur dire", "Le jour où l'on soufflera dans la Trompe, vous viendrez par troupes"], "bonne": 1, "explication": "C'est le verset 12 de la sourate An-Nazi'at (n° 79). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 79, verset 12. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Nazi'at", "arabe": "قَالُوا تِلْكَ إِذًا كَرَّةٌ خَاسِرَةٌ"}, {"id": "sourates-dabd9b89", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["Al-Infitar", "Al-Masad", "Adh-Dhariyat", "Az-Zukhruf"], "bonne": 1, "explication": "C'est le verset 3 de la sourate Al-Masad. Sa traduction : « Il sera brûlé dans un Feu plein de flammes »", "source": "Coran, sourate 111, verset 3.", "divergence": null, "arabe": "سَيَصْلَىٰ نَارًا ذَاتَ لَهَبٍ"}, {"id": "sourates-4dfd30d5", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["Et certes, il sera bientôt satisfait", "Or, Allah sait bien ce qu'ils dissimulent", "entre donc parmi Mes serviteurs", "Il n'y aura qu'une sommation"], "bonne": 3, "explication": "C'est le verset 13 de la sourate An-Nazi'at (n° 79). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 79, verset 13. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Nazi'at", "arabe": "فَإِنَّمَا هِيَ زَجْرَةٌ وَاحِدَةٌ"}, {"id": "sourates-53cd1618", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["Al-Masad", "Ash-Shu'ara", "Ad-Duha", "An-Naba"], "bonne": 0, "explication": "C'est le verset 5 de la sourate Al-Masad. Sa traduction : « à son cou, une corde de fibres »", "source": "Coran, sourate 111, verset 5.", "divergence": null, "arabe": "فِي جِيدِهَا حَبْلٌ مِنْ مَسَدٍ"}, {"id": "sourates-cf90e98d", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["Et quant à celui qui vient à toi avec empressement", "contre le mal du mauvais conseiller, furtif", "C'est le jour où les gens seront comme des papillons éparpillés", "et voilà qu'ils seront sur la terre (ressuscités)"], "bonne": 3, "explication": "C'est le verset 14 de la sourate An-Nazi'at (n° 79). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 79, verset 14. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Nazi'at", "arabe": "فَإِذَا هُمْ بِالسَّاهِرَةِ"}, {"id": "sourates-c0de580a", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["Al-Ikhlas", "Muhammad", "At-Takathur", "An-Nasr"], "bonne": 0, "explication": "C'est le verset 4 de la sourate Al-Ikhlas. Sa traduction : « Et nul n'est égal à Lui» »", "source": "Coran, sourate 112, verset 4.", "divergence": null, "arabe": "وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ"}, {"id": "sourates-d104b9c9", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["Le récit de Moïse t'est-il parvenu", "pour quel péché elle a été tuée", "Que périsse l'homme! Qu'il est ingrat", "Par la nuit quand elle enveloppe tout"], "bonne": 0, "explication": "C'est le verset 15 de la sourate An-Nazi'at (n° 79). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 79, verset 15. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Nazi'at", "arabe": "هَلْ أَتَاكَ حَدِيثُ مُوسَىٰ"}, {"id": "sourates-1256675b", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["Al-Falaq", "Fatir", "Al-Hadid", "As-Saffat"], "bonne": 0, "explication": "C'est le verset 4 de la sourate Al-Falaq. Sa traduction : « contre le mal de celles qui soufflent [les sorcières] sur les nœuds »", "source": "Coran, sourate 113, verset 4.", "divergence": null, "arabe": "وَمِنْ شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ"}, {"id": "sourates-eadcbde0", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["Quand son Seigneur l'appela, dans Towâ, la vallée sanctifiée", "Quant à l'orphelin, donc, ne le maltraite pas", "Et qui te dira ce qu'est la voie difficile", "A côté de la difficulté est, certes, une facilité"], "bonne": 0, "explication": "C'est le verset 16 de la sourate An-Nazi'at (n° 79). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 79, verset 16. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Nazi'at", "arabe": "إِذْ نَادَاهُ رَبُّهُ بِالْوَادِ الْمُقَدَّسِ طُوًى"}, {"id": "sourates-b646cbd1", "section": "sens-des-sourates", "theme": "Reconnaitre une sourate", "type": "qcm4", "difficulte": 3, "question": "De quelle sourate vient ce verset ?", "reponses": ["Al-Fatiha", "Ash-Shu'ara", "An-Nur", "Al-Masad"], "bonne": 0, "explication": "C'est le verset 2 de la sourate Al-Fatiha. Sa traduction : « Louange à Allah, Seigneur de l'univers »", "source": "Coran, sourate 1, verset 2.", "divergence": null, "arabe": "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ"}, {"id": "sourates-94dce6fa", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["Ils y demeureront pendant des siècles successifs", "de sa compagne et de ses enfants", "«Va vers Pharaon. Vraiment, il s'est rebellé!»", "Il s'est renfrogné et il s'est détourné"], "bonne": 2, "explication": "C'est le verset 17 de la sourate An-Nazi'at (n° 79). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 79, verset 17. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Nazi'at", "arabe": "اذْهَبْ إِلَىٰ فِرْعَوْنَ إِنَّهُ طَغَىٰ"}, {"id": "sourates-7c288273", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["Prenez-garde! Vraiment l'homme devient rebelle", "Puis dis-lui: «Voudrais-tu te purifier", "Tu reconnaîtras sur leurs visages, l'éclat de la félicité", "ou nourrir, en un jour de famine"], "bonne": 1, "explication": "C'est le verset 18 de la sourate An-Nazi'at (n° 79). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 79, verset 18. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Nazi'at", "arabe": "فَقُلْ هَلْ لَكَ إِلَىٰ أَنْ تَزَكَّىٰ"}, {"id": "sourates-337a9c69", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["ou à se rappeler en sorte que le rappel lui profite", "Quant à celui qui se complaît dans sa suffisance (pour sa richesse)", "N'a-t-Il pas rendu leur ruse complètement vaine", "et que je te guide vers ton Seigneur afin que tu Le craignes?»"], "bonne": 3, "explication": "C'est le verset 19 de la sourate An-Nazi'at (n° 79). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 79, verset 19. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Nazi'at", "arabe": "وَأَهْدِيَكَ إِلَىٰ رَبِّكَ فَتَخْشَىٰ"}, {"id": "sourates-2b203e92", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["Il lui fit voir le très grand miracle", "Qu'ils adorent donc le Seigneur de cette Maison [la Ka'ba]", "quand nous serons ossements pourris?»", "et qui te dira ce qu'est l'Illiyûn"], "bonne": 0, "explication": "C'est le verset 20 de la sourate An-Nazi'at (n° 79). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 79, verset 20. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Nazi'at", "arabe": "فَأَرَاهُ الْآيَةَ الْكُبْرَىٰ"}, {"id": "sourates-35fbb1bf", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["Or, il ne s'engage pas dans la voie difficile", "obéi, là-haut, et digne de confiance", "Mais non! S'il ne cesse pas, Nous le saisirons certes, par le toupet", "Mais il le qualifia de mensonge et désobéit"], "bonne": 3, "explication": "C'est le verset 21 de la sourate An-Nazi'at (n° 79). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 79, verset 21. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Nazi'at", "arabe": "فَكَذَّبَ وَعَصَىٰ"}, {"id": "sourates-b371564f", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["et qu'on demandera à la fillette enterrée vivante", "Voilà les infidèles, les libertins", "Ensuite, il tourna le dos, s'en alla précipitamment", "C'est Nous qui versons l'eau abondante"], "bonne": 2, "explication": "C'est le verset 22 de la sourate An-Nazi'at (n° 79). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 79, verset 22. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Nazi'at", "arabe": "ثُمَّ أَدْبَرَ يَسْعَىٰ"}, {"id": "sourates-106c1390", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["et Moi aussi Je me sers de Mon plan", "le jour où l'homme s'enfuira de son frère", "rassembla [les gens] et leur fit une proclamation", "lorsque le plus misérable d'entre eux se leva (pour tuer la chamelle)"], "bonne": 2, "explication": "C'est le verset 23 de la sourate An-Nazi'at (n° 79). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 79, verset 23. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Nazi'at", "arabe": "فَحَشَرَ فَنَادَىٰ"}, {"id": "sourates-03e7bc69", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["Non!... Je jure par les planètes qui gravitent", "et non point une plaisanterie frivole", "et par l'aube quand elle exhale son souffle", "et dit: «C'est moi votre Seigneur, le très haut»"], "bonne": 3, "explication": "C'est le verset 24 de la sourate An-Nazi'at (n° 79). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 79, verset 24. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Nazi'at", "arabe": "فَقَالَ أَنَا رَبُّكُمُ الْأَعْلَىٰ"}, {"id": "sourates-6074e552", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["Sa fortune ne lui sert à rien, ni ce qu'il a acquis", "Elle est paix et salut jusqu'à l'apparition de l'aube", "et qu'elle obéira à son Seigneur - et fera ce qu'elle doit faire", "Alors Allah le saisit de la punition exemplaire de l'au-delà et de celle d'ici-bas"], "bonne": 3, "explication": "C'est le verset 25 de la sourate An-Nazi'at (n° 79). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 79, verset 25. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Nazi'at", "arabe": "فَأَخَذَهُ اللَّهُ نَكَالَ الْآخِرَةِ وَالْأُولَىٰ"}, {"id": "sourates-ba63570e", "section": "sens-des-sourates", "theme": "Le sens des versets", "type": "qcm4", "difficulte": 3, "question": "Ce verset se traduit par :", "reponses": ["Que périssent les deux mains d'Abû-Lahab et que lui-même périsse", "de même sa femme, la porteuse de bois", "Encore une fois, qui te dira ce qu'est le jour de la Rétribution", "Il y a certes là un sujet de réflexion pour celui qui craint"], "bonne": 3, "explication": "C'est le verset 26 de la sourate An-Nazi'at (n° 79). Les trois autres propositions sont des traductions d'autres versets.", "source": "Coran, sourate 79, verset 26. Traduction du sens : Muhammad Hamidullah.", "divergence": null, "surtitre": "Sourate An-Nazi'at", "arabe": "إِنَّ فِي ذَٰلِكَ لَعِبْرَةً لِمَنْ يَخْشَىٰ"}];
+/* ==========================================================================
+   LES ICONES — section 2.4 du cahier des charges
+   --------------------------------------------------------------------------
+   AUCUN emoji dans l'interface. Toutes les icones sont des SVG au trait,
+   dessines sur une grille de 24, dans un style unique.
+
+   Les traces viennent de l'annexe A : ils ne sont pas redessines « a peu
+   pres ». Aucune couleur n'est ecrite ici — elle vient du CSS, pour qu'une
+   meme icone serve sur ivoire comme sur vert fonce.
+
+   NE PAS EDITER A LA MAIN : produit par outils/faire-icones.py.
+   ========================================================================== */
+
+'use strict';
+
+var IPAP_ICONES = {
+ "livre": [
+  {
+   "t": "path",
+   "d": "M12 6.4C10.4 5.1 8.3 4.6 4.8 4.6v13c3.5 0 5.6.5 7.2 1.8 1.6-1.3 3.7-1.8 7.2-1.8v-13c-3.5 0-5.6.5-7.2 1.8zM12 6.4v13",
+   "w": "1.4",
+   "c": "",
+   "j": "round"
+  }
+ ],
+ "calame": [
+  {
+   "t": "path",
+   "d": "M17.5 3.6l3 3-10.4 10.4-4 1 1-4z",
+   "w": "1.4",
+   "c": "",
+   "j": "round"
+  },
+  {
+   "t": "path",
+   "d": "M4 20.4h13",
+   "w": "1.4",
+   "c": "round",
+   "j": ""
+  }
+ ],
+ "colonnes": [
+  {
+   "t": "path",
+   "d": "M4 8.5h16M5.5 8.5V20M10 8.5V20M14 8.5V20M18.5 8.5V20M3.5 20h17",
+   "w": "1.4",
+   "c": "round",
+   "j": ""
+  }
+ ],
+ "mihrab": [
+  {
+   "t": "path",
+   "d": "M6 20V11a6 6 0 0112 0v9",
+   "w": "1.4",
+   "c": "",
+   "j": "round"
+  },
+  {
+   "t": "path",
+   "d": "M3.5 20h17",
+   "w": "1.4",
+   "c": "round",
+   "j": ""
+  }
+ ],
+ "montagnes": [
+  {
+   "t": "path",
+   "d": "M3 18.5l5.5-8 3.5 5 3-4 6 7z",
+   "w": "1.4",
+   "c": "",
+   "j": "round"
+  }
+ ],
+ "boussole": [
+  {
+   "t": "circle",
+   "cx": "12",
+   "cy": "12",
+   "r": "8.5",
+   "w": "1.4"
+  },
+  {
+   "t": "path",
+   "d": "M15.5 8.5l-2 5-5 2 2-5z",
+   "w": "1.4",
+   "c": "",
+   "j": "round"
+  }
+ ],
+ "coeur": [
+  {
+   "t": "path",
+   "d": "M12 20s-7-4.3-7-9a4 4 0 017-2.6A4 4 0 0119 11c0 4.7-7 9-7 9z",
+   "w": "1.4",
+   "c": "",
+   "j": "round"
+  }
+ ],
+ "croissant": [
+  {
+   "t": "path",
+   "d": "M15.8 3.4A9 9 0 1015.8 20.6 7.3 7.3 0 0115.8 3.4z",
+   "w": "1.4",
+   "c": "",
+   "j": "round"
+  }
+ ],
+ "main-piece": [
+  {
+   "t": "circle",
+   "cx": "12",
+   "cy": "7.8",
+   "r": "3.2",
+   "w": "1.4"
+  },
+  {
+   "t": "path",
+   "d": "M5 19.8c1.5-3.2 4-4.8 7-4.8s5.5 1.6 7 4.8",
+   "w": "1.4",
+   "c": "round",
+   "j": ""
+  }
+ ],
+ "cube": [
+  {
+   "t": "path",
+   "d": "M4.5 8L12 4.5 19.5 8v9L12 20.5 4.5 17z",
+   "w": "1.4",
+   "c": "",
+   "j": "round"
+  },
+  {
+   "t": "path",
+   "d": "M4.5 8l7.5 3.5L19.5 8M12 11.5v9",
+   "w": "1.4",
+   "c": "",
+   "j": "round"
+  }
+ ],
+ "bulles": [
+  {
+   "t": "path",
+   "d": "M4 5.5h10v7H8l-4 3z",
+   "w": "1.4",
+   "c": "",
+   "j": "round"
+  },
+  {
+   "t": "path",
+   "d": "M11.5 10h8.5v6h-3.5l-3 2.5V16h-2",
+   "w": "1.4",
+   "c": "",
+   "j": "round"
+  }
+ ],
+ "mains": [
+  {
+   "t": "path",
+   "d": "M6 9.5c0 5 2.7 8.5 6 8.5s6-3.5 6-8.5",
+   "w": "1.4",
+   "c": "round",
+   "j": ""
+  },
+  {
+   "t": "path",
+   "d": "M6 9.5V6M18 9.5V6M9.6 9.5V4.6M14.4 9.5V4.6",
+   "w": "1.4",
+   "c": "round",
+   "j": ""
+  }
+ ],
+ "etoile": [
+  {
+   "t": "path",
+   "d": "M12 1.6l2.7 5 5.6-2.5-2.5 5.6 5 2.7-5 2.7 2.5 5.6-5.6-2.5-2.7 5-2.7-5-5.6 2.5 2.5-5.6-5-2.7 5-2.7-2.5-5.6 5.6 2.5z",
+   "w": "1.1",
+   "c": "",
+   "j": "round"
+  }
+ ],
+ "profil": [
+  {
+   "t": "path",
+   "d": "M12 12a4 4 0 100-8 4 4 0 000 8zM4.5 20a7.5 7.5 0 0115 0",
+   "w": "1.5",
+   "c": "round",
+   "j": ""
+  }
+ ],
+ "croix": [
+  {
+   "t": "path",
+   "d": "M6 6l12 12M18 6L6 18",
+   "w": "1.8",
+   "c": "round",
+   "j": ""
+  }
+ ],
+ "lecture": [
+  {
+   "t": "path",
+   "d": "M5 4.5l13 7.5-13 7.5z",
+   "w": "1.6",
+   "c": "",
+   "j": "round"
+  }
+ ],
+ "signet": [
+  {
+   "t": "path",
+   "d": "M6.5 3.5h11v17l-5.5-4-5.5 4z",
+   "w": "1.5",
+   "c": "",
+   "j": "round"
+  }
+ ],
+ "gauche": [
+  {
+   "t": "path",
+   "d": "M14.5 5.5L8 12l6.5 6.5",
+   "w": "2",
+   "c": "round",
+   "j": "round"
+  }
+ ],
+ "droite": [
+  {
+   "t": "path",
+   "d": "M9.5 5.5L16 12l-6.5 6.5",
+   "w": "2",
+   "c": "round",
+   "j": "round"
+  }
+ ],
+ "accueil": [
+  {
+   "t": "path",
+   "d": "M3.5 10.5L12 4l8.5 6.5V20h-17z",
+   "w": "1.6",
+   "c": "",
+   "j": "round"
+  }
+ ],
+ "grille": [
+  {
+   "t": "path",
+   "d": "M4 4.5h6.5V11H4zM13.5 4.5H20V11h-6.5zM4 13.5h6.5V20H4zM13.5 13.5H20V20h-6.5z",
+   "w": "1.5",
+   "c": "",
+   "j": "round"
+  }
+ ],
+ "progres": [
+  {
+   "t": "path",
+   "d": "M4 19.5V13m5 6.5V8m5 11.5v-9m5 9V5",
+   "w": "1.7",
+   "c": "round",
+   "j": ""
+  }
+ ],
+ "plus": [
+  {
+   "t": "path",
+   "d": "M4 7h16M4 12h16M4 17h16",
+   "w": "1.7",
+   "c": "round",
+   "j": ""
+  }
+ ],
+ "coche": [
+  {
+   "t": "path",
+   "d": "M4.5 12.5l5 5 10-11",
+   "w": "2",
+   "c": "round",
+   "j": "round"
+  }
+ ]
+};
+
+/* Rend une icone. aria-hidden : une icone ne dit jamais rien qu'un texte a
+   cote ne dise deja. */
+function icone(nom, taille, classe) {
+  var parts = IPAP_ICONES[nom];
+  if (!parts) { return ''; }
+  var d = '';
+  for (var i = 0; i < parts.length; i++) {
+    var p = parts[i];
+    if (p.t === 'circle') {
+      d += '<circle cx="' + p.cx + '" cy="' + p.cy + '" r="' + p.r + '"'
+        + ' stroke="currentColor" stroke-width="' + p.w + '" fill="none"/>';
+    } else {
+      d += '<path d="' + p.d + '" stroke="currentColor" stroke-width="' + p.w + '"'
+        + (p.c ? ' stroke-linecap="' + p.c + '"' : '')
+        + (p.j ? ' stroke-linejoin="' + p.j + '"' : '') + '/>';
+    }
+  }
+  return '<svg width="' + taille + '" height="' + taille + '" viewBox="0 0 24 24"'
+    + ' fill="none" aria-hidden="true"' + (classe ? ' class="' + classe + '"' : '')
+    + '>' + d + '</svg>';
+}
+
+/* ==========================================================================
+   MEMOIRE ET REVISION — section 9 du cahier des charges
+   --------------------------------------------------------------------------
+   Tout vit dans le navigateur, sous une cle unique : `ipap.v1`.
+   Pas de compte, pas d'inscription, pas d'e-mail (section 2.2).
+
+   REGLE DE FOND : on ne stocke que des FAITS, jamais un calcul.
+   La serie de jours, la maitrise d'une section, le record : tout cela se
+   recalcule a la lecture. Un chiffre range dans le stockage est un chiffre
+   qui devient faux le jour ou la regle change, sans que personne le voie.
+   ========================================================================== */
+
+'use strict';
+
+var CLE = 'ipap.v1';
+
+/* Nombre de cartes apres lesquelles une question revient dans la session. */
+var RETOUR_RATE = 8;    // section 9 : une question ratee revient 8 cartes plus loin
+var RETOUR_PASSE = 4;   // une question passee, 4 cartes plus loin
+var QCM_PRIORITAIRES = 3;   // une question `aRevoir` est prioritaire 3 QCM durant
+var JUSTES_POUR_SORTIR = 3; // trois bonnes reponses consecutives et elle sort
+var MINI_POUR_LE_JOUR = 10; // un QCM d'au moins 10 questions compte pour la serie
+
+function vide() {
+  return {
+    v: 1,
+    questions: {},   // id -> { vues, justes, suite, derniere, aRevoir, depuis }
+    sessions: [],    // { id, section, jour, total, justes, duree }
+    jours: [],       // 'AAAA-MM-JJ' des jours ou un QCM de 10+ a ete termine
+    reprise: null,   // { section, paquet, pos, reponses, reglages, debut }
+    reglages: null,  // les derniers reglages choisis
+    recordSerie: 0
+  };
+}
+
+function charger() {
+  try {
+    var brut = window.localStorage.getItem(CLE);
+    if (!brut) { return vide(); }
+    var d = JSON.parse(brut);
+    if (!d || typeof d !== 'object') { return vide(); }
+    var v = vide();
+    // On repose chaque champ sur un socle sain : un stockage a moitie ecrit
+    // (onglet ferme au mauvais moment) ne doit pas casser l'application.
+    if (d.questions && typeof d.questions === 'object') { v.questions = d.questions; }
+    if (Array.isArray(d.sessions)) { v.sessions = d.sessions; }
+    if (Array.isArray(d.jours)) { v.jours = d.jours.filter(estUnJour); }
+    if (d.reprise && typeof d.reprise === 'object') { v.reprise = d.reprise; }
+    if (d.reglages && typeof d.reglages === 'object') { v.reglages = d.reglages; }
+    if (typeof d.recordSerie === 'number' && d.recordSerie >= 0) { v.recordSerie = d.recordSerie; }
+    return v;
+  } catch (e) {
+    // Navigation privee, stockage plein, JSON abime : on repart propre plutot
+    // que de planter. La personne perd sa progression, pas l'application.
+    return vide();
+  }
+}
+
+function ranger(d) {
+  try {
+    window.localStorage.setItem(CLE, JSON.stringify(d));
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
+
+function estUnJour(s) { return typeof s === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(s); }
+
+function jourDeAujourdhui() {
+  var d = new Date();
+  var m = String(d.getMonth() + 1);
+  var j = String(d.getDate());
+  return d.getFullYear() + '-' + (m.length < 2 ? '0' + m : m) + '-' + (j.length < 2 ? '0' + j : j);
+}
+
+/* --------------------------------------------------------------------------
+   Ce qu'on sait d'une question
+   -------------------------------------------------------------------------- */
+
+function fiche(d, id) {
+  return d.questions[id] || { vues: 0, justes: 0, suite: 0, derniere: null, aRevoir: false, depuis: 0 };
+}
+
+/* Enregistre une reponse. `juste` vaut true, false, ou null si la question a
+   ete PASSEE — passer n'est ni juste ni faux, et ne casse pas la serie. */
+function noter(d, id, juste) {
+  var f = fiche(d, id);
+  if (juste === null) {
+    // Une question passee ne compte pas comme vue : elle n'a pas ete jugee.
+    d.questions[id] = f;
+    return d;
+  }
+  f.vues += 1;
+  f.derniere = juste;
+  if (juste) {
+    f.justes += 1;
+    f.suite += 1;
+    // Trois bonnes reponses consecutives : elle sort du paquet prioritaire.
+    if (f.suite >= JUSTES_POUR_SORTIR) { f.aRevoir = false; f.depuis = 0; }
+  } else {
+    f.suite = 0;
+    f.aRevoir = true;
+    f.depuis = 0;   // le compteur de QCM prioritaires repart
+  }
+  d.questions[id] = f;
+  return d;
+}
+
+/* --------------------------------------------------------------------------
+   La maitrise d'une section
+   --------------------------------------------------------------------------
+   Pourcentage de ses questions dont la DERNIERE reponse est juste (section 9).
+   Attention : le denominateur est le nombre TOTAL de questions de la section,
+   pas le nombre de questions vues. Sinon quelqu'un qui a repondu juste a une
+   seule question sur quatre cents afficherait 100 % de maitrise.
+   -------------------------------------------------------------------------- */
+function maitrise(d, idsDeLaSection) {
+  if (!idsDeLaSection.length) { return 0; }
+  var n = 0;
+  for (var i = 0; i < idsDeLaSection.length; i++) {
+    if (fiche(d, idsDeLaSection[i]).derniere === true) { n += 1; }
+  }
+  return Math.round(n * 100 / idsDeLaSection.length);
+}
+
+/* --------------------------------------------------------------------------
+   La serie de jours
+   --------------------------------------------------------------------------
+   Elle s'incremente des qu'un QCM d'au moins 10 questions est termine dans la
+   journee. On la RECALCULE a partir de la liste des jours : jamais stockee.
+   -------------------------------------------------------------------------- */
+function serieDeJours(d, aujourdhui) {
+  var jours = {};
+  for (var i = 0; i < d.jours.length; i++) { jours[d.jours[i]] = true; }
+  var n = 0;
+  var curseur = new Date(aujourdhui + 'T12:00:00');
+  // Si rien aujourd'hui, la serie peut quand meme courir jusqu'a hier.
+  if (!jours[aujourdhui]) { curseur.setDate(curseur.getDate() - 1); }
+  for (;;) {
+    var m = String(curseur.getMonth() + 1), j = String(curseur.getDate());
+    var cle = curseur.getFullYear() + '-' + (m.length < 2 ? '0' + m : m) + '-'
+      + (j.length < 2 ? '0' + j : j);
+    if (!jours[cle]) { break; }
+    n += 1;
+    curseur.setDate(curseur.getDate() - 1);
+  }
+  return n;
+}
+
+function marquerLeJour(d, total) {
+  if (total < MINI_POUR_LE_JOUR) { return d; }
+  var j = jourDeAujourdhui();
+  if (d.jours.indexOf(j) < 0) { d.jours.push(j); }
+  return d;
+}
+
+/* --------------------------------------------------------------------------
+   Les questions a revoir, toutes sections confondues
+   -------------------------------------------------------------------------- */
+function aRevoir(d) {
+  var out = [];
+  for (var id in d.questions) {
+    if (Object.prototype.hasOwnProperty.call(d.questions, id) && d.questions[id].aRevoir) {
+      out.push(id);
+    }
+  }
+  return out;
+}
+
+/* Une question `aRevoir` est prioritaire dans les TROIS QCM suivants de sa
+   section. On compte ces QCM ici, a la fin de chaque session. */
+function vieillirLesPriorites(d, idsJoues) {
+  for (var i = 0; i < idsJoues.length; i++) {
+    var f = d.questions[idsJoues[i]];
+    if (f && f.aRevoir) {
+      f.depuis = (f.depuis || 0) + 1;
+      if (f.depuis >= QCM_PRIORITAIRES) { f.aRevoir = false; f.depuis = 0; }
+    }
+  }
+  return d;
+}
+
+/* --------------------------------------------------------------------------
+   Export / import — la seule sauvegarde possible sans compte (section 9)
+   -------------------------------------------------------------------------- */
+function exporter(d) {
+  return JSON.stringify(d, null, 2);
+}
+
+function importer(texte) {
+  var d = JSON.parse(texte);            // laisse remonter l'erreur : l'appelant previent
+  if (!d || typeof d !== 'object') { throw new Error('fichier illisible'); }
+  if (!d.questions || typeof d.questions !== 'object') { throw new Error('ce fichier ne contient pas de progression'); }
+  return d;
+}
+
+window.IPAP_MEMOIRE = {
+  CLE: CLE,
+  RETOUR_RATE: RETOUR_RATE,
+  RETOUR_PASSE: RETOUR_PASSE,
+  MINI_POUR_LE_JOUR: MINI_POUR_LE_JOUR,
+  vide: vide,
+  charger: charger,
+  ranger: ranger,
+  fiche: fiche,
+  noter: noter,
+  maitrise: maitrise,
+  serieDeJours: serieDeJours,
+  marquerLeJour: marquerLeJour,
+  jourDeAujourdhui: jourDeAujourdhui,
+  aRevoir: aRevoir,
+  vieillirLesPriorites: vieillirLesPriorites,
+  exporter: exporter,
+  importer: importer
+};
+
+/* ==========================================================================
+   LE GESTE — section 7 du cahier des charges
+   --------------------------------------------------------------------------
+   C'est le coeur du produit. Chaque valeur ci-dessous vient du cahier des
+   charges et n'est pas a « ajuster au feeling » :
+
+     rotation      deltaX / 18, plafonnee a 8 degres
+     indice        au-dela de 60 px
+     validation    100 px, OU une vitesse de plus de 0,4 px/ms
+     envol         220 ms, cubic-bezier(.22,.61,.36,1)
+     retour        180 ms
+     secousse      6 px, 150 ms
+     vibration     10 ms au seuil, 25 ms sur une bonne reponse
+
+   Droite = je valide ma reponse. Gauche = je passe.
+   ========================================================================== */
+
+'use strict';
+
+var SEUIL_INDICE = 60;      // px : a partir d'ou le tampon apparait
+var SEUIL_VALIDE = 100;     // px : a partir d'ou la carte part
+var VITESSE_VALIDE = 0.4;   // px/ms : un geste rapide suffit, meme court
+var ROTATION_DIV = 18;      // deltaX / 18 degres
+var ROTATION_MAX = 8;       // plafond, en degres
+var VIBRE_SEUIL = 10;       // ms
+var VIBRE_JUSTE = 25;       // ms
+
+/* La vibration ne doit JAMAIS faire planter la page : l'API n'existe pas
+   partout, et sur iOS elle est absente. On l'appelle donc toujours ainsi. */
+function vibrer(ms) {
+  try {
+    if (navigator && typeof navigator.vibrate === 'function') { navigator.vibrate(ms); }
+  } catch (e) { /* silencieux : une vibration ratee n'est pas une erreur */ }
+}
+
+function moinsDAnimation() {
+  try {
+    return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  } catch (e) { return false; }
+}
+
+/* --------------------------------------------------------------------------
+   Attache le geste a une carte.
+
+   options.peutValider()  -> vrai si une reponse est choisie
+   options.onValider()    -> appelee quand la carte part a droite
+   options.onPasser()     -> appelee quand la carte part a gauche
+   options.onRefus()      -> appelee quand on tente de valider sans reponse
+   -------------------------------------------------------------------------- */
+function poserGeste(carte, options) {
+  var enCours = false, depart = 0, departY = 0, dx = 0, t0 = 0, parti = false;
+  var pointeur = null;
+
+  function dessiner(x) {
+    if (moinsDAnimation()) { return; }   // ni rotation ni deplacement
+    var deg = Math.max(-ROTATION_MAX, Math.min(ROTATION_MAX, x / ROTATION_DIV));
+    carte.style.transform = 'translateX(' + x + 'px) rotate(' + deg + 'deg)';
+  }
+
+  function viser(x) {
+    var avant = carte.getAttribute('data-vise');
+    var vise = null;
+    if (x > SEUIL_INDICE) { vise = 'droite'; }
+    else if (x < -SEUIL_INDICE) { vise = 'gauche'; }
+
+    if (vise) { carte.setAttribute('data-vise', vise); }
+    else { carte.removeAttribute('data-vise'); }
+
+    // Vibration au FRANCHISSEMENT du seuil, pas pendant tout le glissement.
+    if (vise && vise !== avant) { vibrer(VIBRE_SEUIL); }
+
+    var g = carte.querySelector('.tampon[data-t="passer"]');
+    var d = carte.querySelector('.tampon[data-t="valider"]');
+    if (g) { g.style.opacity = vise === 'gauche' ? '1' : '0'; }
+    if (d) { d.style.opacity = vise === 'droite' ? '1' : '0'; }
+
+    if (options.onViser) { options.onViser(vise); }
+  }
+
+  function relacher() {
+    carte.removeAttribute('data-vise');
+    var g = carte.querySelector('.tampon[data-t="passer"]');
+    var d = carte.querySelector('.tampon[data-t="valider"]');
+    if (g) { g.style.opacity = '0'; }
+    if (d) { d.style.opacity = '0'; }
+    if (options.onViser) { options.onViser(null); }
+  }
+
+  function revenir() {
+    carte.setAttribute('data-anime', 'retour');
+    carte.style.transform = '';
+    relacher();
+    window.setTimeout(function () { carte.removeAttribute('data-anime'); }, 180);
+  }
+
+  function refuser() {
+    // Droite sans reponse choisie : la carte ne part pas (section 7.5).
+    carte.style.transform = '';
+    relacher();
+    carte.setAttribute('data-anime', 'secousse');
+    window.setTimeout(function () { carte.removeAttribute('data-anime'); }, 150);
+    if (options.onRefus) { options.onRefus(); }
+  }
+
+  function envoler(vers) {
+    if (parti) { return; }
+    parti = true;
+    relacher();
+    carte.setAttribute('data-anime', 'envol');
+    if (!moinsDAnimation()) {
+      var loin = vers === 'droite' ? window.innerWidth + 200 : -(window.innerWidth + 200);
+      carte.style.transform = 'translateX(' + loin + 'px) rotate('
+        + (vers === 'droite' ? ROTATION_MAX : -ROTATION_MAX) + 'deg)';
+    }
+    carte.style.opacity = '0';
+    window.setTimeout(function () {
+      if (vers === 'droite') { options.onValider(); } else { options.onPasser(); }
+    }, moinsDAnimation() ? 120 : 220);
+  }
+
+  /* --- Les pointeurs : doigt, souris, stylet, tous par la meme porte ------ */
+
+  function debut(e) {
+    if (parti) { return; }
+    // On ne demarre pas un glissement depuis un bouton de reponse : on doit
+    // pouvoir toucher une reponse pour la choisir sans lancer la carte.
+    if (e.target.closest && e.target.closest('button')) { return; }
+    enCours = true;
+    pointeur = e.pointerId;
+    depart = e.clientX;
+    departY = e.clientY;
+    dx = 0;
+    t0 = e.timeStamp;
+    carte.removeAttribute('data-anime');
+    try { carte.setPointerCapture(e.pointerId); } catch (err) { /* sans capture, ca marche quand meme */ }
+  }
+
+  function bouge(e) {
+    if (!enCours || e.pointerId !== pointeur) { return; }
+    dx = e.clientX - depart;
+    var dy = e.clientY - departY;
+    // Un geste nettement vertical, c'est un defilement : on rend la main.
+    if (Math.abs(dy) > Math.abs(dx) * 1.6 && Math.abs(dx) < SEUIL_INDICE) { return; }
+    dessiner(dx);
+    viser(dx);
+  }
+
+  function fin(e) {
+    if (!enCours || (e.pointerId !== undefined && e.pointerId !== pointeur)) { return; }
+    enCours = false;
+    var duree = Math.max(1, e.timeStamp - t0);
+    var vitesse = Math.abs(dx) / duree;
+    var assez = Math.abs(dx) >= SEUIL_VALIDE || vitesse > VITESSE_VALIDE;
+
+    // Un geste rapide mais minuscule n'est pas une intention : sous le seuil
+    // de l'indice, on considere que la personne n'a pas voulu lancer la carte.
+    if (assez && Math.abs(dx) >= SEUIL_INDICE) {
+      if (dx > 0) {
+        if (options.peutValider()) { envoler('droite'); } else { refuser(); }
+      } else {
+        envoler('gauche');
+      }
+    } else {
+      revenir();
+    }
+    dx = 0;
+  }
+
+  carte.addEventListener('pointerdown', debut);
+  carte.addEventListener('pointermove', bouge);
+  carte.addEventListener('pointerup', fin);
+  carte.addEventListener('pointercancel', function (e) {
+    if (!enCours) { return; }
+    enCours = false; dx = 0; revenir();
+  });
+
+  /* --- Clavier (section 7.9) --------------------------------------------- */
+  return {
+    valider: function () {
+      if (options.peutValider()) { envoler('droite'); } else { refuser(); }
+    },
+    passer: function () { envoler('gauche'); },
+    detruire: function () {
+      carte.removeEventListener('pointerdown', debut);
+      carte.removeEventListener('pointermove', bouge);
+      carte.removeEventListener('pointerup', fin);
+    }
+  };
+}
+
+window.IPAP_GESTE = { poser: poserGeste, vibrer: vibrer, VIBRE_JUSTE: VIBRE_JUSTE };
+
+/* ==========================================================================
+   LE MOTEUR DU QCM — ecrans 4 a 7 du cahier des charges
+   --------------------------------------------------------------------------
+   Le QCM n'est plus une annexe des lecons. Le QCM EST le produit (section 1).
+
+   Ce fichier tient la session : le paquet de cartes, la carte courante, la
+   serie, la correction, et le passage au resultat. Le geste vit dans
+   geste.js, la memoire dans memoire.js. Ici, on orchestre.
+   ========================================================================== */
+
+'use strict';
+
+var M = window.IPAP_MEMOIRE;
+var G = window.IPAP_GESTE;
+
+var LETTRES = ['A', 'B', 'C', 'D'];
+
+function $(id) { return document.getElementById(id); }
+
+function echapper(s) {
+  return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+function melanger(l, rng) {
+  var a = l.slice();
+  for (var i = a.length - 1; i > 0; i--) {
+    var j = Math.floor((rng ? rng() : Math.random()) * (i + 1));
+    var t = a[i]; a[i] = a[j]; a[j] = t;
+  }
+  return a;
+}
+
+/* ==========================================================================
+   LA SESSION
+   ========================================================================== */
+
+function Session(questions, reglages, section) {
+  this.reglages = reglages;
+  this.section = section;
+  this.paquet = questions.slice();   // ce qui reste a jouer, dans l'ordre
+  this.pos = 0;
+  this.total = questions.length;     // le nombre ANNONCE, celui de la barre
+  this.reponses = [];                // { id, choix, juste, passee }
+  this.serie = 0;
+  this.record = M.charger().recordSerie || 0;
+  this.debut = Date.now();
+  this.vues = {};                    // id -> nombre de passages dans CETTE session
+}
+
+/* Une question ratee revient 8 cartes plus loin ; une question passee, 4
+   (section 9). Si le paquet est plus court que ca, elle revient a la fin :
+   la promesse « cette question reviendra » doit rester vraie, sinon on ment
+   a l'ecran de correction. */
+Session.prototype.remettre = function (q, dans) {
+  var cible = Math.min(this.pos + dans, this.paquet.length);
+  this.paquet.splice(cible, 0, q);
+};
+
+Session.prototype.courante = function () { return this.paquet[this.pos] || null; };
+Session.prototype.suivante = function () { return this.paquet[this.pos + 1] || null; };
+
+Session.prototype.finie = function () { return this.pos >= this.paquet.length; };
+
+/* ==========================================================================
+   L'AFFICHAGE D'UNE CARTE
+   ========================================================================== */
+
+function carteHTML(q, avecTampons) {
+  if (!q) { return ''; }
+  var h = '';
+  h += '<div class="carte-tete">';
+  h += '<span class="carte-surtitre">' + echapper(q.surtitre || q.theme || '') + '</span>';
+  h += icone('signet', 18, 'signet-or');
+  h += '</div>';
+  if (q.arabe) {
+    h += '<div class="carte-arabe" lang="ar" dir="rtl">' + echapper(q.arabe) + '</div>';
+  }
+  h += '<div class="t-question">' + echapper(q.question) + '</div>';
+  h += '<div class="pousse"></div>';
+  h += '<div class="reponses" role="group" aria-label="Les quatre reponses">';
+  for (var i = 0; i < q.reponses.length; i++) {
+    h += '<button type="button" class="reponse" data-i="' + i + '" aria-pressed="false">'
+      + '<span class="lettre" aria-hidden="true">' + LETTRES[i] + '</span>'
+      + '<span class="texte">' + echapper(q.reponses[i]) + '</span>'
+      + '</button>';
+  }
+  h += '</div>';
+  if (avecTampons) {
+    h += '<div class="tampon" data-t="valider">VALIDER</div>';
+    h += '<div class="tampon" data-t="passer">PASSER</div>';
+  }
+  return h;
+}
+
+/* ==========================================================================
+   LE JEU
+   ========================================================================== */
+
+function Jeu(racine, session) {
+  this.r = racine;
+  this.s = session;
+  this.choix = null;      // index choisi sur la carte courante
+  this.geste = null;
+  this.verrou = false;    // vrai pendant une correction : plus rien ne bouge
+}
+
+Jeu.prototype.demarrer = function () {
+  var self = this;
+  document.body.setAttribute('data-mode', 'qcm');
+  this.dessinerSegments();
+  this.dessinerCarte();
+  this.clavier();
+  $('qcm-sortir').addEventListener('click', function () { self.sortir(); });
+};
+
+/* --- La barre segmentee (ecran 4) ------------------------------------- */
+Jeu.prototype.dessinerSegments = function () {
+  var zone = $('qcm-progres');
+  var n = this.s.total;
+  // Au-dela de 60 questions, on passe a une barre continue avec le compteur
+  // chiffre : soixante segments de 4 px ne se lisent plus, ils se devinent.
+  if (n > 60) {
+    zone.innerHTML = '<div class="jauge"><i style="width:' +
+      Math.round(this.s.pos * 100 / n) + '%"></i></div>';
+    return;
+  }
+  var h = '<div class="segments"' + (n > 30 ? ' data-dense="oui"' : '') + '>';
+  for (var i = 0; i < n; i++) { h += '<i></i>'; }
+  zone.innerHTML = h + '</div>';
+  this.majSegments();
+};
+
+Jeu.prototype.majSegments = function () {
+  var n = this.s.total;
+  if (n > 60) {
+    var b = this.r.querySelector('.jauge i');
+    if (b) { b.style.width = Math.round(this.s.pos * 100 / n) + '%'; }
+    return;
+  }
+  var seg = this.r.querySelectorAll('.segments i');
+  for (var i = 0; i < seg.length; i++) {
+    var rep = this.s.reponses[i];
+    if (rep && rep.juste === true) { seg[i].setAttribute('data-e', 'juste'); }
+    else if (rep && rep.juste === false) { seg[i].setAttribute('data-e', 'rate'); }
+    else if (i === this.s.reponses.length) { seg[i].setAttribute('data-e', 'encours'); }
+    else { seg[i].removeAttribute('data-e'); }
+  }
+};
+
+/* --- La serie (section 8) ---------------------------------------------- */
+Jeu.prototype.majSerie = function (etat, anime) {
+  var p = $('qcm-serie');
+  if (!this.s.reglages.serie) { p.hidden = true; return; }
+  p.hidden = false;
+  p.querySelector('span').textContent = this.s.serie + " d'affilée";
+  if (etat) { p.setAttribute('data-etat', etat); } else { p.removeAttribute('data-etat'); }
+  if (anime) {
+    p.setAttribute('data-anime', 'oui');
+    window.setTimeout(function () { p.removeAttribute('data-anime'); }, 220);
+  }
+};
+
+/* --- Poser la carte courante ------------------------------------------- */
+Jeu.prototype.dessinerCarte = function () {
+  var self = this;
+  var q = this.s.courante();
+  if (!q) { this.terminer(); return; }
+
+  this.choix = null;
+  this.verrou = false;
+
+  $('qcm-compte').textContent = (this.s.reponses.length + 1) + ' / ' + this.s.total;
+  this.majSerie(null, false);
+
+  // La carte SUIVANTE est deja montee dans le DOM (section 7.7) : aucun
+  // chargement, aucun scintillement entre deux questions.
+  $('carte-arriere').innerHTML = '';
+
+  var carte = $('carte');
+  carte.style.transform = '';
+  carte.style.opacity = '';
+  carte.removeAttribute('data-anime');
+  carte.removeAttribute('data-vise');
+  carte.innerHTML = carteHTML(q, true);
+
+  var boutons = carte.querySelectorAll('.reponse');
+  for (var i = 0; i < boutons.length; i++) {
+    boutons[i].addEventListener('click', function () {
+      if (self.verrou) { return; }
+      self.choisir(parseInt(this.getAttribute('data-i'), 10));
+    });
+  }
+
+  if (this.geste) { this.geste.detruire(); }
+  this.geste = G.poser(carte, {
+    peutValider: function () { return self.choix !== null; },
+    onValider: function () { self.valider(); },
+    onPasser: function () { self.passer(); },
+    onRefus: function () { self.dire('Choisis une réponse avant de valider.'); },
+    onViser: function (v) { self.viser(v); }
+  });
+
+  this.majSegments();
+};
+
+Jeu.prototype.viser = function (v) {
+  var g = $('cote-gauche'), d = $('cote-droite');
+  if (!v) { g.removeAttribute('data-actif'); d.removeAttribute('data-actif'); return; }
+  g.setAttribute('data-actif', v === 'gauche' ? 'oui' : 'non');
+  d.setAttribute('data-actif', v === 'droite' ? 'oui' : 'non');
+};
+
+Jeu.prototype.choisir = function (i) {
+  this.choix = i;
+  var b = this.r.querySelectorAll('.reponse');
+  for (var k = 0; k < b.length; k++) {
+    b[k].setAttribute('aria-pressed', k === i ? 'true' : 'false');
+  }
+};
+
+/* --- Valider, passer ---------------------------------------------------- */
+
+Jeu.prototype.valider = function () {
+  var q = this.s.courante();
+  var juste = this.choix === q.bonne;
+  this.s.reponses.push({ id: q.id, choix: this.choix, juste: juste, passee: false });
+
+  if (juste) {
+    this.s.serie += 1;
+    if (this.s.serie > this.s.record) { this.s.record = this.s.serie; }
+    G.vibrer(G.VIBRE_JUSTE);
+  } else {
+    this.s.serie = 0;
+    // Une question ratee revient 8 cartes plus loin, dans CETTE session.
+    this.s.remettre(q, M.RETOUR_RATE);
+  }
+
+  var d = M.charger();
+  M.noter(d, q.id, juste);
+  if (this.s.record > (d.recordSerie || 0)) { d.recordSerie = this.s.record; }
+  M.ranger(d);
+
+  this.s.pos += 1;
+  this.majSegments();
+
+  // Mode examen : aucun indice, tout le corrige a la fin (ecran 3).
+  if (this.s.reglages.mode === 'examen') {
+    this.majSerie(juste ? 'or' : 'gris', juste);
+    this.dessinerCarte();
+    return;
+  }
+  this.corriger(q, juste);
+};
+
+Jeu.prototype.passer = function () {
+  var q = this.s.courante();
+  // Passer n'est ni juste ni faux, et ne casse pas la serie (section 7.6).
+  this.s.remettre(q, M.RETOUR_PASSE);
+  this.s.pos += 1;
+  this.dessinerCarte();
+};
+
+/* --- La feuille de correction (ecrans 6 et 7) --------------------------- */
+
+Jeu.prototype.corriger = function (q, juste) {
+  var self = this;
+  this.verrou = true;
+  this.majSerie(juste ? 'or' : 'gris', juste);
+
+  // La grille est corrigee SUR PLACE (ecran 7).
+  var b = this.r.querySelectorAll('.reponse');
+  for (var k = 0; k < b.length; k++) {
+    if (k === q.bonne) {
+      b[k].setAttribute('data-corrige', 'bonne');
+      if (!juste) { b[k].insertAdjacentHTML('beforeend', '<span class="etiquette" data-t="bonne">la bonne</span>'); }
+    } else if (k === this.choix) {
+      b[k].setAttribute('data-corrige', 'choix');
+      b[k].insertAdjacentHTML('beforeend', '<span class="etiquette" data-t="choix">ton choix</span>');
+    } else {
+      b[k].setAttribute('data-corrige', 'autre');
+    }
+  }
+
+  var f = $('feuille');
+  var h = '';
+  h += '<div class="rang" style="gap:10px">';
+  h += juste ? icone('coche', 22, 'coche-or') : '';
+  h += '<span class="f-titre">' + (juste ? 'Bonne réponse' : 'Pas tout à fait') + '</span>';
+  h += '</div>';
+  if (juste && this.s.reglages.serie && this.s.record > 0) {
+    h += '<div class="f-note">Ta meilleure série est de ' + this.s.record + '.</div>';
+  }
+  h += '<div class="f-texte">' + echapper(q.explication) + '</div>';
+  if (q.divergence) {
+    // On affiche la phrase telle quelle. On n'arbitre pas (section 5).
+    h += '<div class="f-divergence">Les savants divergent : ' + echapper(q.divergence) + '</div>';
+  }
+  h += '<div class="f-source">' + echapper(q.source) + '</div>';
+  if (!juste) {
+    // Cette phrase doit etre VRAIE : la question a bien ete remise dans le
+    // paquet, huit cartes plus loin (section 9).
+    h += '<div class="f-note">Cette question reviendra plus tard dans le QCM.</div>';
+  }
+  h += '<button type="button" class="bouton ' + (juste ? 'bouton-or' : 'bouton-vert')
+    + '" id="f-suite">Continuer</button>';
+
+  f.setAttribute('data-t', juste ? 'juste' : 'rate');
+  f.innerHTML = h;
+  f.setAttribute('data-ouverte', 'oui');
+  this.dire(juste ? 'Bonne réponse. ' + q.explication : 'Réponse fausse. ' + q.explication);
+
+  $('f-suite').addEventListener('click', function () { self.continuer(); });
+  $('f-suite').focus();
+};
+
+Jeu.prototype.continuer = function () {
+  var f = $('feuille');
+  f.removeAttribute('data-ouverte');
+  this.dessinerCarte();
+};
+
+/* --- Fin de partie ------------------------------------------------------ */
+
+Jeu.prototype.terminer = function () {
+  var d = M.charger();
+  var joues = [];
+  for (var i = 0; i < this.s.reponses.length; i++) { joues.push(this.s.reponses[i].id); }
+  M.vieillirLesPriorites(d, joues);
+  M.marquerLeJour(d, this.s.reponses.length);
+  d.reprise = null;
+  var id = 's' + Date.now();
+  d.sessions.push({
+    id: id,
+    section: this.s.section,
+    jour: M.jourDeAujourdhui(),
+    total: this.s.reponses.length,
+    justes: this.s.reponses.filter(function (r) { return r.juste; }).length,
+    duree: Math.round((Date.now() - this.s.debut) / 1000),
+    detail: this.s.reponses
+  });
+  M.ranger(d);
+  window.location.href = 'resultat.html?s=' + id;
+};
+
+Jeu.prototype.sortir = function () {
+  // Un QCM interrompu est repris a la question exacte (section 9).
+  var d = M.charger();
+  d.reprise = {
+    section: this.s.section,
+    ids: this.s.paquet.map(function (q) { return q.id; }),
+    pos: this.s.pos,
+    total: this.s.total,
+    reponses: this.s.reponses,
+    reglages: this.s.reglages,
+    debut: this.s.debut
+  };
+  M.ranger(d);
+  window.location.href = 'index.html';
+};
+
+/* --- Clavier et annonces (section 7.9) ---------------------------------- */
+
+Jeu.prototype.dire = function (texte) {
+  var z = $('qcm-annonce');
+  if (z) { z.textContent = texte; }
+};
+
+Jeu.prototype.clavier = function () {
+  var self = this;
+  document.addEventListener('keydown', function (e) {
+    if (self.verrou) {
+      if (e.key === 'Enter') { e.preventDefault(); self.continuer(); }
+      return;
+    }
+    if (e.key >= '1' && e.key <= '4') {
+      e.preventDefault();
+      self.choisir(parseInt(e.key, 10) - 1);
+    } else if (e.key === 'ArrowRight') {
+      e.preventDefault();
+      self.geste.valider();
+    } else if (e.key === 'ArrowLeft') {
+      e.preventDefault();
+      self.geste.passer();
+    }
+  });
+};
+
+window.IPAP_QCM = { Session: Session, Jeu: Jeu, melanger: melanger, carteHTML: carteHTML };
+
+
+(function () {
+  var M = window.IPAP_MEMOIRE, Q = window.IPAP_QCM;
+  var reglages = { nombre: 20, mode: 'apprentissage', melanger: true,
+                   erreurs: true, serie: true, minuteur: false };
+  function demarrer() {
+    var d = M.charger();
+    var revoir = [], reste = [];
+    for (var i = 0; i < IPAP_BANQUE.length; i++) {
+      (M.fiche(d, IPAP_BANQUE[i].id).aRevoir ? revoir : reste).push(IPAP_BANQUE[i]);
+    }
+    var paquet = Q.melanger(revoir).concat(Q.melanger(reste)).slice(0, reglages.nombre);
+    var jeu = new Q.Jeu(document, new Q.Session(paquet, reglages, 'sens-des-sourates'));
+    // Dans la demonstration, la fin de partie ne change pas de page : il n'y
+    // en a qu'une. On pose le resultat par-dessus, et on peut rejouer.
+    jeu.terminer = function () {
+      var s = this.s;
+      var dernier = {}, bute = {}, ordre = [];
+      for (var i = 0; i < s.reponses.length; i++) {
+        var r = s.reponses[i];
+        if (!Object.prototype.hasOwnProperty.call(dernier, r.id)) { ordre.push(r.id); }
+        dernier[r.id] = r;
+        if (r.juste === false) { bute[r.id] = true; }
+      }
+      var justes = 0;
+      for (var k = 0; k < ordre.length; k++) { if (dernier[ordre[k]].juste) { justes += 1; } }
+      var n = ordre.length, pc = n ? Math.round(justes * 100 / n) : 0;
+      var butes = 0;
+      for (var b in bute) { if (Object.prototype.hasOwnProperty.call(bute, b)) { butes += 1; } }
+      var c = 2 * Math.PI * 76, pris = pc / 100 * c;
+      document.getElementById('fin').innerHTML =
+        '<div class="bandeau"><div class="ornement">' + icone('etoile', 16) + '</div>'
+        + '<div class="grand-anneau"><svg width="168" height="168" viewBox="0 0 168 168" aria-hidden="true">'
+        + '<circle cx="84" cy="84" r="76" fill="none" stroke="rgba(255,253,248,0.18)" stroke-width="9"/>'
+        + '<circle cx="84" cy="84" r="76" fill="none" stroke="#C9A227" stroke-width="9" stroke-linecap="round"'
+        + ' stroke-dasharray="' + pris.toFixed(1) + ' ' + c.toFixed(1) + '" transform="rotate(-90 84 84)"/></svg>'
+        + '<div class="grand-anneau-pc"><b>' + pc + '%</b><span>' + justes + ' sur ' + n + '</span></div></div></div>'
+        + '<div class="corps"><div class="chiffres">'
+        + '<div class="chiffre"><b>' + justes + '</b><span>justes</span></div>'
+        + '<div class="chiffre"><b>' + butes + '</b><span>' + (butes > 1 ? 'ont' : 'a')
+        + ' demandé deux essais</span></div>'
+        + '<div class="chiffre"><b>' + n + '</b><span>questions</span></div></div>'
+        + '<button type="button" class="bouton bouton-vert" id="rejouer">Rejouer vingt questions</button>'
+        + '<div class="ornement">' + icone('etoile', 15) + '</div></div>';
+      document.getElementById('fin').hidden = false;
+      document.getElementById('ecran-qcm').hidden = true;
+      document.getElementById('rejouer').addEventListener('click', function () {
+        document.getElementById('fin').hidden = true;
+        document.getElementById('ecran-qcm').hidden = false;
+        demarrer();
+      });
+    };
+    jeu.sortir = function () { jeu.terminer(); };
+    jeu.demarrer();
+  }
+  demarrer();
+}());
+
+</script>
