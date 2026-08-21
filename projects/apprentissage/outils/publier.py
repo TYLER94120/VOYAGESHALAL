@@ -64,6 +64,19 @@ def main():
                  'Cloner d\'abord : git clone https://github.com/TYLER94120/islampasapas %s'
                  % (CLONE, CLONE))
 
+    # LA SOURCE DOIT ETRE COMMITEE AVANT DE PUBLIER.
+    # Le 21 aout, j'ai pose le repere de version, publie, puis oublie de
+    # commiter la source : le depot servi portait un fichier que la source
+    # n'avait pas. C'est precisement la derive que cet outil existe pour
+    # empecher, et je l'avais creee moi-meme en trois commandes.
+    sale = subprocess.run(['git', 'status', '--porcelain', '--', '.'],
+                          capture_output=True, text=True, cwd=str(SOURCE)).stdout.strip()
+    if sale:
+        print('ARRET : la source a des changements non commites.')
+        for l in sale.split('\n')[:8]:
+            print('  ' + l)
+        sys.exit('Commiter d\'abord, publier ensuite — sinon les deux copies divergent.')
+
     fichiers = a_publier()
     if not fichiers:
         sys.exit('ARRET : rien a publier.')
