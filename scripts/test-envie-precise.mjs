@@ -18,7 +18,7 @@
 // à 10 km » qu'un écran qui propose une pizza à quelqu'un qui veut des
 // sushi.
 import { readFileSync } from 'node:fs'
-import { forceEnvieGoogle, ENVIES } from '../lib/envies.ts'
+import { forceEnvieGoogle, ENVIES } from '../lib/envies.mjs'
 
 let fautes = 0
 const casse = (m) => { console.error(`❌ ${m}`); fautes++ }
