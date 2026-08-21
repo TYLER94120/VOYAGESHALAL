@@ -117,7 +117,7 @@ def choisir_leurres(bonne, vivier, combien, rng, exclure=()):
 
 def question(qid, section, theme, question_texte, bonne, leurres, explication,
              source, rng, surtitre=None, arabe=None, translitteration=None,
-             difficulte=2, divergence=None):
+             difficulte=2, divergence=None, type_=None, glyphe=None):
     """Construit une question au format de la section 5, et la controle.
 
     `bonne` est le TEXTE de la bonne reponse. L'ordre est melange ici, et
@@ -139,7 +139,7 @@ def question(qid, section, theme, question_texte, bonne, leurres, explication,
         'id': qid,
         'section': section,
         'theme': theme,
-        'type': 'qcm4',
+        'type': type_ or 'qcm4',
         'difficulte': difficulte,
         'question': question_texte,
         'reponses': reponses,
@@ -154,6 +154,9 @@ def question(qid, section, theme, question_texte, bonne, leurres, explication,
         q['arabe'] = arabe
     if translitteration:
         q['translitteration'] = translitteration
+    if glyphe:
+        # Type « calligraphie » (cahier V2, 7.1) : le glyphe EST la question.
+        q['glyphe'] = glyphe
     return q
 
 

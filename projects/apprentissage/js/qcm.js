@@ -140,6 +140,35 @@ function carteHTML(q, avecTampons) {
   var h = '<div class="carte-dedans">';
   h += bandeauHTML(q);
 
+  if (q.type === 'calligraphie' && q.glyphe) {
+    // LA LETTRE EST LA QUESTION (V2 7.1). Un cadre de 236 px, le carrelage
+    // or a 13 %, la rosace de la section a 16 %, et le glyphe en Amiri
+    // 130 px. Les reponses sont des NOMS SEULS : montrer le glyphe a cote
+    // du nom rendrait la question resoluble par simple appariement de
+    // formes, et on n'aurait rien appris.
+    h += '<div class="cadre-calli">';
+    h += '<div class="fond-motif" data-carrelage="#C9A227" data-op="0.13"'
+      + ' data-tuile="58" data-r="13" aria-hidden="true"></div>';
+    if (SECTION_MOTIF && window.IPAP_GEO) {
+      h += '<div class="calli-rosace" aria-hidden="true">'
+        + window.IPAP_GEO.rosette(200, SECTION_MOTIF.branches, SECTION_MOTIF.ratio, '#C9A227', 1.2)
+        + '</div>';
+    }
+    h += '<div class="calli-glyphe" lang="ar" dir="rtl">' + echapper(q.glyphe) + '</div>';
+    h += '</div>';
+  } else if (q.type === 'photo') {
+    // LE LIEU EST LA QUESTION (V2 7.2). Tant qu'aucune photo sous licence
+    // verifiee n'est fournie, l'emplacement reste un cadre pointille — et
+    // lancer-qcm.js ecarte du tirage les questions dont l'image manque, de
+    // sorte que personne ne rencontre ce cadre en jouant.
+    if (window.IPAP_PHOTO) {
+      h += window.IPAP_PHOTO.bloc({
+        cle: q.image || '', hauteur: 244, rayon: 20,
+        legende: q.legende || 'Photo de la question'
+      });
+    }
+  }
+
   if (q.arabe) {
     // LE BLOC DU VERSET (V2 5.2). Il porte `flex-grow: 1` : c'est lui qui
     // absorbe la hauteur libre quand les reponses sont courtes, et c'est ce
@@ -163,7 +192,14 @@ function carteHTML(q, avecTampons) {
   // Sans verset, rien n'absorbe la hauteur libre : c'est cet espaceur qui
   // pousse les reponses en bas de carte, comme a l'ecran B.
   if (!q.arabe) { h += '<div class="pousse-carte"></div>'; }
-  h += '<div class="reponses" role="group" aria-label="Les quatre reponses">';
+  // UNE COLONNE PAR DEFAUT, UNE GRILLE QUAND LES REPONSES SONT COURTES.
+  // La grille 2x2 de l'annexe C convient a « Sad / Dad / Ta / Za » ; elle
+  // etouffe une traduction de verset de cent trente caracteres, qui n'a
+  // alors que 134 px de large sur un telephone de 360. La forme suit donc
+  // le contenu, et c'est le contenu qui decide.
+  var court = q.reponses.every(function (r) { return r.length <= 24; });
+  h += '<div class="reponses"' + (court ? ' data-forme="grille"' : '')
+    + ' role="group" aria-label="Les quatre reponses">';
   for (var i = 0; i < q.reponses.length; i++) {
     h += '<button type="button" class="reponse" data-i="' + i + '" aria-pressed="false">'
       + '<span class="lettre" aria-hidden="true">' + LETTRES[i] + '</span>'
@@ -357,6 +393,10 @@ Jeu.prototype.dessinerCarte = function () {
   carte.removeAttribute('data-anime');
   carte.removeAttribute('data-vise');
   carte.innerHTML = carteHTML(q, true);
+  // Les marques de carrelage posees DANS la carte (cadre de calligraphie,
+  // emplacement photo) sont neuves a chaque question : elles ont besoin
+  // d'etre remplies ici, pas seulement au demarrage.
+  if (window.IPAP_GEO) { window.IPAP_GEO.poserMotifs(carte); }
   ajusterEchelle(carte);
 
   // Amiri arrive apres coup : mesure faite avant, la hauteur de l'arabe

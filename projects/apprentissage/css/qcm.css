@@ -383,6 +383,43 @@
   text-align: center;
 }
 
+/* --------------------------------------------------------------------------
+   LE CADRE DE CALLIGRAPHIE (cahier V2, section 7.1)
+
+   La lettre EST la question. On lui donne 236 px de haut et on la pose sur
+   le carrelage or a 13 % et la rosace a 16 % : c'est le seul endroit du site
+   ou un glyphe est traite comme une image, et il le merite.
+   -------------------------------------------------------------------------- */
+
+.cadre-calli {
+  position: relative;
+  flex: 1 0 auto;
+  min-height: calc(236px * var(--echelle));
+  max-height: 236px;
+  border: 1px solid var(--or-bordure);
+  border-radius: 20px;
+  background: var(--papier-enlumine);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.calli-rosace {
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: var(--op-rosace-cadre);
+  pointer-events: none;
+}
+.calli-glyphe {
+  position: relative;
+  font-family: var(--arabe);
+  font-size: calc(130px * var(--echelle));
+  line-height: 1;
+  color: var(--vert-fonce);
+  direction: rtl;
+}
+
 /* Le filet dore a ornement, entre le verset et la question (V2 5.3). */
 .separateur {
   display: flex;
@@ -419,6 +456,23 @@
   display: flex;
   flex-direction: column;
   gap: calc(9px * var(--echelle));
+  flex-shrink: 0;
+}
+
+/* LA GRILLE 2 x 2 DE L'ANNEXE C, RESERVEE AUX REPONSES COURTES.
+   « Sâd / Dâd / Tâ' / Zâ' » y tient tres bien. Une traduction de verset,
+   non : elle n'aurait que 134 px de large sur un telephone de 360, et
+   c'est exactement ce que Mohamed a signale le 21 aout. */
+.reponses[data-forme="grille"] {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: calc(10px * var(--echelle));
+}
+.reponses[data-forme="grille"] .reponse {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  min-height: calc(62px * var(--echelle));
 }
 
 .reponse {

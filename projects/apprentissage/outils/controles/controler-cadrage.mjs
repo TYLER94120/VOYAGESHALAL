@@ -15,8 +15,10 @@ const rate = (m,d) => { console.log('  ECHEC  '+m+(d?'  -> '+d:'')); ec++; };
 const ok = (m,d) => console.log('  ok     '+m+(d?'  -> '+d:''));
 const nav = await chromium.launch({ executablePath:'/opt/pw-browsers/chromium-1194/chrome-linux/chrome', args:['--no-sandbox'] });
 
-const SECTIONS = ['sens-des-sourates','histoire-des-prophetes','la-priere',
-                  'les-invocations','piliers-de-la-foi','zakat-et-aumone'];
+// La liste des sections n'est PAS ecrite ici : elle est lue dans la page, au
+// meme endroit que le site. Une liste figee vieillit en silence, et le jour
+// ou une section arrive, le controle ne la voit pas.
+let SECTIONS = null;
 // Le plus petit telephone encore courant, celui de reference, un grand, une tablette.
 const ECRANS = [[360,640,'petit'],[390,844,'reference'],[430,932,'grand'],[820,1180,'tablette']];
 
@@ -38,6 +40,22 @@ for (const [w,h,nom] of ECRANS) {
   const amiri = await p.evaluate(() => document.fonts.check('16px Amiri'));
   if (!amiri) rate('Amiri n est pas chargee : la mesure ne vaudrait rien');
   else ok('Amiri chargee, on mesure sur la vraie police');
+
+  if (!SECTIONS) {
+    // Les sections qui ont vraiment une banque : une section vide n'a rien
+    // a cadrer, et signaler son absence serait un faux positif.
+    SECTIONS = await p.evaluate(async () => {
+      const s = await fetch('data/sections.json').then((r) => r.json());
+      const out = [];
+      for (const x of s) {
+        const b = await fetch('data/questions/' + x.slug + '.json')
+          .then((r) => (r.ok ? r.json() : [])).catch(() => []);
+        if (b.length) out.push(x.slug);
+      }
+      return out;
+    });
+    console.log('  sections a cadrer : ' + SECTIONS.join(', '));
+  }
 
   const bilan = await p.evaluate(async (sections) => {
     const carte = document.getElementById('carte');

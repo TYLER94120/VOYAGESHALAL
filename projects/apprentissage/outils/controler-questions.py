@@ -58,6 +58,48 @@ def _formes_des_prophetes():
 FORMES = _formes_des_prophetes()
 
 
+def _lettres_arabes():
+    """La table (glyphe, nom) du generateur de l'alphabet.
+
+    Lue chez lui, comme celle des prophetes : deux listes finissent toujours
+    par diverger, et c'est ce genre d'ecart qui fait passer une question juste
+    pour fausse.
+    """
+    src = (pathlib.Path(__file__).resolve().parent / 'faire-02-lire-larabe.py')
+    if not src.exists():
+        return {}
+    t = src.read_text(encoding='utf-8')
+    d = t.index('LETTRES = [')
+    f = t.index(']\n', d) + 1
+    return {g: nom for g, nom in eval(t[d:f].split('=', 1)[1])}
+
+
+LETTRES_AR = _lettres_arabes()
+
+POSITIONS_AR = {
+    'initial': 'Au début d\'un mot',
+    'medial': 'Au milieu d\'un mot',
+    'final': 'À la fin d\'un mot',
+    'isolated': 'Seule, sans attache',
+}
+
+
+def _base_et_position(glyphe):
+    """De quel caractere ce glyphe est-il une forme, et dans quelle position ?
+
+    C'est Unicode qui repond, par la decomposition de compatibilite. Un
+    caractere qui n'en a pas est deja une lettre de base, donc « isolated ».
+    """
+    c = glyphe[0]
+    d = unicodedata.decomposition(c)
+    if d.startswith('<'):
+        pos, reste = d[1:].split('>', 1)
+        bases = reste.split()
+        if len(bases) == 1:
+            return chr(int(bases[0], 16)), pos
+    return c, 'isolated'
+
+
 def nu(s):
     """Pour comparer deux textes : accents, ponctuation et espaces ignores."""
     s = unicodedata.normalize('NFD', s)
@@ -84,6 +126,7 @@ def main():
     vus = {}
     total = 0
     verifiables = 0
+    calligraphies = 0
 
     for f in fichiers:
         qs = json.loads(f.read_text(encoding='utf-8'))
@@ -105,6 +148,39 @@ def main():
             if q['id'] in vus:
                 fautes.append('%s : identifiant deja pris par %s' % (ou, vus[q['id']]))
             vus[q['id']] = ou
+
+            # --- le glyphe montre doit etre CELUI qu'on annonce --------
+            # Type « calligraphie » : la seule faute possible, mais grave,
+            # serait d'afficher un glyphe et d'en nommer un autre. On le
+            # confronte a Unicode, pas au generateur.
+            if q.get('type') == 'calligraphie':
+                calligraphies += 1
+                g = q.get('glyphe') or ''
+                if not g:
+                    fautes.append('%s : type calligraphie sans glyphe' % ou); continue
+                base, pos = _base_et_position(g)
+                bonne = q['reponses'][q['bonne']]
+                if q['question'].startswith('Où cette forme'):
+                    if bonne != POSITIONS_AR.get(pos):
+                        fautes.append('%s : « %s » annonce, Unicode dit « %s »'
+                                      % (ou, bonne, POSITIONS_AR.get(pos)))
+                elif q['question'].startswith('Quelle lettre'):
+                    attendu = LETTRES_AR.get(base)
+                    if attendu is None:
+                        fautes.append('%s : le glyphe %r ne vient d\'aucune des '
+                                      '28 lettres' % (ou, g))
+                    elif attendu != bonne:
+                        fautes.append('%s : le glyphe est la lettre « %s », la '
+                                      'reponse dit « %s »' % (ou, attendu, bonne))
+                elif q['question'].startswith('Quel signe'):
+                    marques = [c for c in g if unicodedata.category(c) == 'Mn']
+                    if len(marques) != 1:
+                        fautes.append('%s : %d signe(s) de vocalisation dans le '
+                                      'glyphe, un seul attendu' % (ou, len(marques)))
+                else:
+                    fautes.append('%s : question calligraphie non reconnue par le '
+                                  'controle — elle n\'est donc pas verifiee' % ou)
+                continue
 
             # --- l'arabe montre doit etre CELUI de la source -----------
             m = SOURCE_CORAN.search(q['source'])
@@ -174,6 +250,7 @@ def main():
 
     print('  %d questions dans %d sections.' % (total, len(fichiers)))
     print('  %d citent un verset precis et ont ete confrontees au texte.' % verifiables)
+    print('  %d montrent un glyphe et ont ete confrontees a Unicode.' % calligraphies)
     if fautes:
         print('\n  %d FAUTE(S) :' % len(fautes))
         for x in fautes[:25]:
