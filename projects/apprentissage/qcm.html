@@ -46,14 +46,18 @@
   <!-- La legende du geste -->
   <div class="qcm-pied">
     <div class="cotes">
-      <div class="cote cote-gauche" id="cote-gauche">
+      <!-- Ce sont de VRAIS boutons, pas une legende. Ils etaient des <div> :
+           au doigt on fait glisser la carte, mais a la souris rien ne dit
+           qu'il faut la trainer, et un element qui affiche « Valider » doit
+           valider quand on appuie dessus. -->
+      <button type="button" class="cote cote-gauche" id="cote-gauche">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14.5 5.5L8 12l6.5 6.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         <span>Passer</span>
-      </div>
-      <div class="cote cote-droite" id="cote-droite">
+      </button>
+      <button type="button" class="cote cote-droite" id="cote-droite">
         <span>Valider</span>
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9.5 5.5L16 12l-6.5 6.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </div>
+      </button>
     </div>
     <div class="poignee" aria-hidden="true"></div>
   </div>

@@ -112,6 +112,18 @@ Jeu.prototype.demarrer = function () {
   this.dessinerCarte();
   this.clavier();
   $('qcm-sortir').addEventListener('click', function () { self.sortir(); });
+
+  // Les deux cotes du pied sont des boutons : ils font ce que font la
+  // fleche droite et la fleche gauche. Le geste reste le chemin principal,
+  // ils sont le chemin evident.
+  $('cote-droite').addEventListener('click', function () {
+    if (self.verrou) { return; }
+    self.geste.valider();
+  });
+  $('cote-gauche').addEventListener('click', function () {
+    if (self.verrou) { return; }
+    self.geste.passer();
+  });
 };
 
 /* --- La barre segmentee (ecran 4) ------------------------------------- */
