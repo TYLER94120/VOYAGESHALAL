@@ -14,7 +14,7 @@
 // ⚠️ En .mjs, et c'est délibéré : un garde-fou branché sur le build ne
 // doit jamais dépendre d'un drapeau expérimental de Node.
 
-const { verdictAlcool, ligneAlcool } = await import('../lib/alcool.mjs')
+const { verdictAlcool, ligneAlcool, classerAlcool } = await import('../lib/alcool.mjs')
 
 let echecs = 0
 const rate = (msg) => { echecs++; console.error(`  ✗ ${msg}`) }
@@ -99,3 +99,39 @@ if (echecs) {
   process.exit(1)
 }
 console.log('✅ aucun lieu de boisson ne franchit la porte, et rien de sûr n\'est écarté à tort.\n')
+
+// ═══ 🔄 LA RÈGLE DU 21 AOÛT : MARQUER PLUTÔT QUE CACHER ═══
+//
+// « Tu peux marquer les restaurants et tu stipules qu'il y a de l'alcool.
+//   Comme ça on se décharge de notre responsabilité. » (Mohamed)
+//
+// Ce que ce test tient : la nouvelle règle ne doit pas devenir « tout
+// passe ». Un bar reste un bar, le porc reste un barrage, et un
+// restaurant qui sert de l'alcool n'est jamais présenté comme s'il n'en
+// servait pas.
+const CAS_CLASSEMENT = [
+  // [lieu, affichable, alcool]
+  [{ nom: 'Pub O Malley', primaryType: 'pub', types: ['pub'] }, false, 'oui'],
+  [{ nom: 'Le Comptoir', primaryType: 'bar', types: ['bar'] }, false, 'oui'],
+  [{ nom: 'Night Fever', primaryType: 'night_club', types: ['night_club'] }, false, 'oui'],
+  [{ nom: 'Chez Charcuterie', primaryType: 'restaurant', types: ['restaurant'] }, false, 'oui'],
+  // Restaurants : affichés, avec la mention
+  [{ nom: 'Sushi Yama', primaryType: 'sushi_restaurant', types: ['sushi_restaurant'], servesBeer: true }, true, 'oui'],
+  [{ nom: 'Le Bistrot', primaryType: 'restaurant', types: ['restaurant'] }, true, 'oui'],
+  [{ nom: 'Trattoria', primaryType: 'italian_restaurant', types: ['italian_restaurant'], servesWine: true }, true, 'oui'],
+  // Sans alcool confirmé : inchangé
+  [{ nom: 'Halal Grill', primaryType: 'restaurant', types: ['restaurant'], servesBeer: false, servesWine: false, servesCocktails: false }, true, 'non'],
+  [{ nom: 'Snack du Coin', primaryType: 'restaurant', types: ['restaurant'] }, true, 'inconnu'],
+]
+for (const [lieu, affichable, alcool] of CAS_CLASSEMENT) {
+  const c = classerAlcool(lieu)
+  if (c.affichable !== affichable) rate(`« ${lieu.nom} » : affichable=${c.affichable}, attendu ${affichable}`)
+  if (c.alcool !== alcool) rate(`« ${lieu.nom} » : alcool=${c.alcool}, attendu ${alcool}`)
+}
+
+// La phrase montrée ne doit jamais rassurer à tort.
+if (!/sert de l'alcool/i.test(ligneAlcool('oui', false))) rate('la ligne « oui » ne dit pas que le lieu sert de l\'alcool')
+if (/ne sert pas/i.test(ligneAlcool('oui', false))) rate('la ligne « oui » contient une négation trompeuse')
+if (!/serves alcohol/i.test(ligneAlcool('oui', true))) rate('la ligne anglaise « oui » ne dit pas que le lieu sert de l\'alcool')
+
+console.log(`✅ règle du 21 août : ${CAS_CLASSEMENT.length} cas — bars et porc dehors, restaurants affichés et signalés.`)

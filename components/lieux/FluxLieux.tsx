@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react'
 import type { Fiche } from '@/components/lieux/SurMesure'
 import TrajetMin, { StatutOuverture } from '@/components/lieux/TrajetMin'
 import { lancerItineraire } from '@/lib/itineraire'
+import { ligneAlcool } from '@/lib/alcool.mjs'
 
 // 🎞 LE SWIPE D'AUTOUR DE MOI (ordre du 20 août) : un tap sur un mode →
 // on SWIPE les résultats en plein écran, comme l'accueil monde.
@@ -104,6 +105,13 @@ export default function FluxLieux({ fiches, cat, en = false, onFermer, onChanger
                   ].filter(Boolean)
                   return <p className="imm-meta">{parts.join(' · ')}{parts.length ? ' · ' : ''}<TrajetMin f={f} en={en} /></p>
                 })()}
+                {/* La mention alcool suit le lieu jusque dans le swipe :
+                    elle ne doit jamais dépendre de l'écran où l'on est. */}
+                {f.alcool && (
+                  <p className="imm-meta" style={{ marginTop: 4, color: f.alcool === 'non' ? '#7dd87d' : f.alcool === 'oui' ? '#ffb4a2' : 'rgba(253,250,243,.72)', fontWeight: 700 }}>
+                    {ligneAlcool(f.alcool, en)}
+                  </p>
+                )}
                 <p className="imm-meta" style={{ marginTop: 4 }}><StatutOuverture f={fx} en={en} />{f.conseilIA ? <span style={{ color: 'rgba(253,250,243,.7)' }}>{fx.ouvert !== undefined ? ' · ' : ''}{f.conseilIA}</span> : null}</p>
                 <div className="imm-actions">
                   <button className="imm-b-or" onClick={() => lancerItineraire(f.lat, f.lng, typeof f.marcheMin === 'number' ? f.marcheMin <= 15 : undefined)}>

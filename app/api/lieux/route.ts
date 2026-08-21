@@ -10,7 +10,7 @@ import { accepte } from '@/lib/categorie.mjs'
 import { listAllSpots } from '@/lib/prayerSpots'
 import { CRITERES_DEFAUT, type Criteres } from '@/lib/criteres'
 import { minutes, plafondMin, rayonM, RAYON_KM, type Mode } from '@/lib/trajet'
-import { verdictAlcool } from '@/lib/alcool.mjs'
+import { verdictAlcool, classerAlcool } from '@/lib/alcool.mjs'
 import { PROFIL_VIDE, profilVide, requeteAvecProfil, criteresRelachables, type Profil } from '@/lib/profil'
 import { prochesOsm, type LieuPriereOsm } from '@/lib/mosqueesOsm'
 import { estLatinLisible } from '@/lib/latin.mjs'
@@ -182,8 +182,10 @@ export interface Fiche {
   cuisine?: string
   cuisineSource?: 'base' | 'places' | 'ia' | 'generique'
   statut: string
-  /** 🔴 Ce qu'on SAIT de l'alcool : jamais une supposition. */
-  alcool: 'non' | 'inconnu'
+  /** 🔴 Ce qu'on SAIT de l'alcool : jamais une supposition.
+   *  Depuis le 21 août, « oui » existe et s'affiche : un restaurant qui
+   *  sert de l'alcool est proposé avec sa mention, jamais caché. */
+  alcool: 'oui' | 'non' | 'inconnu'
   source: 'spot' | 'google' | 'osm'
   /** L'identifiant OpenStreetMap quand le lieu vient de (ou existe dans)
    *  notre base OSM — la déduplication le garde même sur une fiche Google. */
@@ -200,9 +202,12 @@ export interface Fiche {
 }
 
 /** L'état alcool d'un candidat, tel que le verdict l'a établi. */
-function alcoolDe(x: { nom: string; primaryType?: string; types?: string[]; servesBeer?: boolean; servesWine?: boolean; servesCocktails?: boolean }): 'non' | 'inconnu' {
+function alcoolDe(x: { nom: string; primaryType?: string; types?: string[]; servesBeer?: boolean; servesWine?: boolean; servesCocktails?: boolean; alcool?: 'oui' | 'non' | 'inconnu' }): 'oui' | 'non' | 'inconnu' {
+  // Le verdict porté par le candidat prime : c'est celui qui a été établi
+  // avec les attributs payés, pas une relecture appauvrie.
+  if (x.alcool) return x.alcool
   const v = verdictAlcool(x)
-  return v.garde ? v.alcool : 'inconnu'
+  return v.garde ? v.alcool : 'oui'
 }
 
 function distM(a: number, b: number, c: number, d: number) {
@@ -305,6 +310,8 @@ interface Candidat {
   primaryType?: string; types?: string[]
   /** Renseigné par la passe intermédiaire. `undefined` = inconnu. */
   servesBeer?: boolean; servesWine?: boolean; servesCocktails?: boolean
+  /** Verdict posé par le barrage, à propager tel quel jusqu'à la fiche. */
+  alcool?: 'oui' | 'non' | 'inconnu'
 }
 
 /** Un rectangle englobant le cercle de rayon `m` — la forme attendue par
@@ -342,6 +349,8 @@ type Refus = { statut: number; message: string }
 interface Bilan {
   rayonAtteintM?: number
   ecartesAlcool?: number
+  /** Restaurants affichés AVEC la mention « sert de l'alcool ». */
+  avecAlcool?: number
   /** 🍣 Combien d'adresses Google a proposées SANS rapport avec l'envie —
    *  la différence entre « il n'y a rien ici » et « ce n'était pas le bon
    *  plat » (21 août, envie « Asiatique » à Noisy-le-Grand). */
@@ -541,7 +550,9 @@ function lireCandidats(places: Record<string, unknown>[], lat: number, lng: numb
     // 🔴🔴 LA PORTE PAR CATÉGORIE (lib/categorie.mjs).
     .filter((x) => accepte(c.categorie, x.primaryType, x.types))
     // 🔴 BARRAGE ALCOOL 1 — par le type, gratuit et immédiat.
-    .filter((x) => verdictAlcool({ nom: x.nom, primaryType: x.primaryType, types: x.types }).garde
+    // 🔄 21 août : la porte ne laisse tomber que ce qui n'est pas un
+    // restaurant (bar, pub, boîte) ou ce qui touche à l'assiette (porc).
+    .filter((x) => classerAlcool({ nom: x.nom, primaryType: x.primaryType, types: x.types }).affichable
       || estRefusPourNomSeul(x))
 }
 
@@ -669,13 +680,20 @@ async function verifierAlcool(cands: Candidat[], cle: string, bilan?: Bilan): Pr
       }
     } catch { return { ...x } } finally { clearTimeout(t) }
   }))
-  const gardes = verifies.filter((x): x is Candidat => !!x && verdictAlcool(x).garde)
-  const ecartes = verifies.filter((x) => x && !verdictAlcool(x).garde)
-  if (bilan) bilan.ecartesAlcool = (bilan.ecartesAlcool ?? 0) + ecartes.length
-  // 🔎 Itération 4, diagnostic : quand le barrage vide la liste, on veut le
-  // VOIR — c'est la première cause suspecte d'un « aucune adresse » à tort.
-  if (ecartes.length) console.warn(`[lieux] barrage alcool : ${ecartes.length}/${verifies.length} écarté(s) — ${ecartes.map((x) => { const v = verdictAlcool(x!); return `${x!.nom} (${'motif' in v ? v.motif : '?'})` }).join(' · ')}`)
-  return gardes
+  // 🔄 21 août : on ne jette plus un RESTAURANT qui sert de l'alcool, on
+  // le marque (lib/alcool.mjs, classerAlcool). Les bars, pubs et boîtes
+  // restent écartés — ce ne sont pas des restaurants — et le porc aussi.
+  const juges = verifies.filter((x): x is Candidat => !!x).map((x) => ({ x, v: classerAlcool(x) }))
+  const gardes = juges.filter((j) => j.v.affichable).map((j) => ({ ...j.x, alcool: j.v.alcool as 'oui' | 'non' | 'inconnu' }))
+  const ecartes = juges.filter((j) => !j.v.affichable)
+  if (bilan) {
+    bilan.ecartesAlcool = (bilan.ecartesAlcool ?? 0) + ecartes.length
+    bilan.avecAlcool = (bilan.avecAlcool ?? 0) + gardes.filter((g) => g.alcool === 'oui').length
+  }
+  if (ecartes.length) console.warn(`[lieux] écartés (bar/pub/porc) : ${ecartes.length}/${juges.length} — ${ecartes.map((j) => `${j.x.nom} (${j.v.motif})`).join(' · ')}`)
+  // 🔻 Un restaurant qui sert de l'alcool ne passe JAMAIS devant un autre :
+  // il est proposé, pas mis en avant.
+  return [...gardes.filter((g) => g.alcool !== 'oui'), ...gardes.filter((g) => g.alcool === 'oui')]
 }
 
 /** Le tri : c'est lui qui rend le résultat « sur mesure ». */
