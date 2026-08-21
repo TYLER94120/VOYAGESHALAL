@@ -1302,29 +1302,44 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
             ))}
             {/* 🍣 Une envie précise ? — pastille pointillée unique, pas en
                 mode Prier. La feuille s'ouvre dessous, sans clavier. */}
-            {scooter && aide?.cat && aide.cat !== 'mosquee' && !envie && (
+            {/* 🔴 20 août : ce bouton disparaissait dès qu'une envie était
+                choisie (`!envie`). Pour passer de Burger à Pizza il fallait
+                donc d'abord retirer Burger par sa croix — « contre
+                intuitif », et c'est vrai : on ne quitte pas un choix pour
+                en faire un autre, on en fait un autre. Le bouton reste, et
+                dit ce qu'il fait. La croix, elle, garde son seul rôle :
+                revenir à tout. */}
+            {scooter && aide?.cat && aide.cat !== 'mosquee' && (
               <button onClick={() => void ouvrirFeuille()}
                 style={{ minHeight: 56, width: '100%', borderRadius: 999, marginTop: 4, border: '1px dashed rgba(201,168,76,0.26)', background: 'transparent', color: 'var(--or-clair, #E9D9A6)', fontSize: 16, fontWeight: 600, cursor: 'pointer' }}>
-                {t('Une envie précise ?', 'Craving something specific?')}
+                {envie ? t('Changer d\u2019envie', 'Change craving') : t('Une envie précise ?', 'Craving something specific?')}
               </button>
             )}
             {/* La seule mention : plus d'adresse postale ni de « trouvée sur
                 Google Maps » sur les cartes — la fiche détail (ℹ) les garde. */}
             {scooter && feuilleEnvies && aide?.cat && (
               <div onClick={() => setFeuilleEnvies(false)}
-                style={{ position: 'fixed', inset: 0, zIndex: 210, background: 'rgba(4,9,5,0.6)', backdropFilter: 'blur(3px)', display: 'flex', alignItems: 'flex-end', justifyContent: 'center' }}>
+                /* 🔴 20 août : « on voit pas tous les onglets ». La barre de
+                   navigation du bas passait par-dessus la feuille et
+                   masquait la troisième rangée d'envies (Asiatique,
+                   Poulet, Dessert). Deux verrous plutôt qu'un, parce que
+                   la cause exacte dépend du contexte d'empilement du
+                   téléphone : la feuille monte au-dessus de TOUTES les
+                   couches du site (barre prière comprise, qui est à 500),
+                   et son contenu réserve en bas la hauteur de la barre. */
+                style={{ position: 'fixed', inset: 0, zIndex: 1200, background: 'rgba(4,9,5,0.6)', backdropFilter: 'blur(3px)', display: 'flex', alignItems: 'flex-end', justifyContent: 'center' }}>
                 <div onClick={(e) => e.stopPropagation()}
                   onTouchStart={(e) => { (e.currentTarget as HTMLElement & { _y?: number })._y = e.touches[0].clientY }}
                   onTouchMove={(e) => { const el = e.currentTarget as HTMLElement & { _y?: number }; if (el._y != null && e.touches[0].clientY - el._y > 55) { setFeuilleEnvies(false); el._y = undefined } }}
-                  style={{ width: '100%', maxWidth: 430, borderRadius: '22px 22px 0 0', background: '#0D1D12', borderTop: '1px solid rgba(201,168,76,0.26)', padding: '10px 18px calc(20px + env(safe-area-inset-bottom))', maxHeight: '72svh', overflowY: 'auto', overscrollBehavior: 'contain' }}>
+                  style={{ width: '100%', maxWidth: 430, borderRadius: '22px 22px 0 0', background: '#0D1D12', borderTop: '1px solid rgba(201,168,76,0.26)', padding: '10px 18px calc(112px + env(safe-area-inset-bottom))', maxHeight: '82svh', overflowY: 'auto', overscrollBehavior: 'contain' }}>
                   <div aria-hidden style={{ width: 42, height: 4, borderRadius: 999, background: 'rgba(253,250,243,0.25)', margin: '3px auto 8px' }} />
                   <h3 style={{ fontFamily: "'Playfair Display', Georgia, serif", color: '#fdfaf3', fontSize: 21, fontWeight: 700, margin: 0, padding: '6px 4px 14px' }}>
                     {t('Une envie précise ?', 'Craving something specific?')}
                   </h3>
                   <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 10 }}>
                     {(enviesDispo ?? ENVIES[aide.cat] ?? []).map((e) => (
-                      <button key={e.mot} onClick={() => lancerEnvie(e)}
-                        style={{ minHeight: 72, borderRadius: 16, border: '1px solid rgba(201,168,76,0.14)', background: 'rgba(253,250,243,0.035)', color: '#FDFAF3', fontSize: 15, fontWeight: 600, cursor: 'pointer', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 4 }}>
+                      <button key={e.mot} onClick={() => lancerEnvie(e)} aria-pressed={envie?.mot === e.mot}
+                        style={{ minHeight: 72, borderRadius: 16, border: `1px solid rgba(201,168,76,${envie?.mot === e.mot ? 0.85 : 0.14})`, background: envie?.mot === e.mot ? 'rgba(201,168,76,0.16)' : 'rgba(253,250,243,0.035)', color: '#FDFAF3', fontSize: 15, fontWeight: 600, cursor: 'pointer', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 4 }}>
                         {e.mot}
                         {'n' in e && (e as { n: number }).n > 0 && (
                           <span style={{ fontSize: 11.5, color: 'rgba(201,168,76,0.75)', fontWeight: 600 }}>{(e as { n: number }).n} dispo</span>
