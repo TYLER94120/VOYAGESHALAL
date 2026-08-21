@@ -17,25 +17,8 @@
   --chevron-passer: #8A8271;
 }
 
-/* --------------------------------------------------------------------------
-   LE FOND CARRELE (cahier V2, section 3.4)
-
-   Vert a 5,5 %, tuile 64, rayon 15. Il est pose en absolu SOUS le contenu,
-   qui passe donc en `position: relative`. Ni le doigt ni les lecteurs
-   d'ecran ne le rencontrent.
-   -------------------------------------------------------------------------- */
-
-body[data-mode="qcm"] .ecran { position: relative; }
-
-.fond-motif {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
-}
-.fond-motif .calque-motif { position: absolute; inset: 0; }
-
-/* Tout ce qui vient apres le fond passe devant lui. */
+/* Le fond carrele est declare dans base.css : il sert sur plusieurs ecrans.
+   Ici on ne fait que remonter le contenu du QCM au-dessus de lui. */
 .qcm-haut, .zone, .qcm-pied { position: relative; z-index: 1; }
 
 /* --------------------------------------------------------------------------
@@ -314,7 +297,7 @@ body[data-mode="qcm"] .ecran { position: relative; }
    « Al-Mursalat » le prouve tout seul.
    -------------------------------------------------------------------------- */
 
-.bandeau {
+.cartouche {
   position: relative;
   border: 1.5px solid var(--or);
   border-radius: 14px;
@@ -326,22 +309,22 @@ body[data-mode="qcm"] .ecran { position: relative; }
   gap: 3px;
   flex-shrink: 0;
 }
-.bandeau-dedans {
+.cartouche-dedans {
   position: absolute;
   inset: 4px;
   border: 1px solid rgba(201, 162, 39, 0.42);
   border-radius: 10px;
   pointer-events: none;
 }
-.bandeau-fleuron {
+.cartouche-fleuron {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
-.bandeau-fleuron[data-cote="g"] { left: 9px; }
-.bandeau-fleuron[data-cote="d"] { right: 9px; }
+.cartouche-fleuron[data-cote="g"] { left: 9px; }
+.cartouche-fleuron[data-cote="d"] { right: 9px; }
 
-.bandeau-ar {
+.cartouche-ar {
   font-family: var(--arabe);
   font-size: calc(21px * var(--echelle));
   color: var(--or-texte);
@@ -349,7 +332,7 @@ body[data-mode="qcm"] .ecran { position: relative; }
   direction: rtl;
   text-align: center;
 }
-.bandeau-fr {
+.cartouche-fr {
   font-size: calc(10.5px * var(--echelle));
   letter-spacing: 1.6px;
   text-transform: uppercase;

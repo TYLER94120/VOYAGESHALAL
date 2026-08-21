@@ -67,9 +67,22 @@
 
       // --- La grille des 12 -------------------------------------------
       var h = '';
+      var GEO = window.IPAP_GEO;
       for (var k = 0; k < lots.length; k++) {
         var l = lots[k], s = l.sec;
-        var dedans = '<span class="rond">' + icone(s.icone, 20) + '</span>'
+        // LA ROSACE REMPLACE L'ICONE (cahier V2, §3.3). Une section se
+        // reconnait desormais a son nombre de branches, pas a un pictogramme :
+        // le meme motif se retrouve derriere le verset de ses cartes, et le
+        // paquet devient reconnaissable sans qu'on ait a lire.
+        var marque = GEO && s.branches
+          ? GEO.rosette(28, s.branches, s.ratio, '#0F5132', 1)
+          : icone(s.icone, 20);
+        var filigrane = GEO && s.branches
+          ? '<span class="filigrane" aria-hidden="true">'
+            + GEO.rosette(118, s.branches, s.ratio, '#0F5132', 1.4) + '</span>'
+          : '';
+        var dedans = filigrane
+          + '<span class="rond">' + marque + '</span>'
           + '<span class="nom">' + ech(s.nom) + '</span>'
           + '<span class="nb">' + (l.n ? espacer(l.n) + ' question' + (l.n > 1 ? 's' : '')
             : 'bientôt') + '</span>'
@@ -83,6 +96,7 @@
         }
       }
       document.getElementById('tuiles').innerHTML = h;
+      if (window.IPAP_GEO) { window.IPAP_GEO.poserMotifs(document); }
     })
     .catch(function () {
       document.getElementById('total').textContent = 'Les sections n\'ont pas pu être chargées.';

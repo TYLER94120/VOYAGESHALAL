@@ -91,7 +91,7 @@ function sourateDe(q) {
   return NOMS_SOURATES[parseInt(m[1], 10)] || null;
 }
 
-/* L'ornement fleuri des deux bouts du bandeau (V2 section 3.5). */
+/* L'ornement fleuri des deux bouts du cartouche (V2 section 3.5). */
 function fleuron() {
   return '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">'
     + '<path d="M12 3l2.4 4.4L19 5.6l-2 4.9 4.4 1.5-4.4 1.5 2 4.9-4.6-1.8L12 21l-2.4-4.4L5 18.4'
@@ -110,12 +110,12 @@ function bandeauHTML(q) {
       + '<span class="carte-surtitre">' + echapper(q.surtitre || q.theme || '') + '</span>'
       + icone('signet', 18, 'signet-or') + '</div>';
   }
-  return '<div class="bandeau">'
-    + '<span class="bandeau-dedans" aria-hidden="true"></span>'
-    + '<span class="bandeau-fleuron" data-cote="g">' + fleuron() + '</span>'
-    + '<span class="bandeau-fleuron" data-cote="d">' + fleuron() + '</span>'
-    + '<span class="bandeau-ar" lang="ar" dir="rtl">سورة ' + echapper(s.ar) + '</span>'
-    + '<span class="bandeau-fr">Sourate ' + echapper(s.tr) + '</span>'
+  return '<div class="cartouche">'
+    + '<span class="cartouche-dedans" aria-hidden="true"></span>'
+    + '<span class="cartouche-fleuron" data-cote="g">' + fleuron() + '</span>'
+    + '<span class="cartouche-fleuron" data-cote="d">' + fleuron() + '</span>'
+    + '<span class="cartouche-ar" lang="ar" dir="rtl">سورة ' + echapper(s.ar) + '</span>'
+    + '<span class="cartouche-fr">Sourate ' + echapper(s.tr) + '</span>'
     + '</div>';
 }
 
@@ -574,7 +574,7 @@ Jeu.prototype.clavier = function () {
   });
 };
 
-/* Le bandeau et la rosace ont besoin de deux tables que le moteur ne charge
+/* Le cartouche et la rosace ont besoin de deux tables que le moteur ne charge
    pas lui-meme : les noms de sourates et le motif de la section. C'est
    lancer-qcm.js qui les pose, avant de demarrer. Sans elles, la carte se
    rend quand meme — sans cartouche et sans rosace — plutot que de refuser

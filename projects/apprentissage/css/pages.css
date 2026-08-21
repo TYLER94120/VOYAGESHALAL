@@ -112,12 +112,14 @@
    La grille des 12 sections (ecran 2)
    -------------------------------------------------------------------------- */
 
-.tuiles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 11px; }
+.tuiles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
 .tuile {
+  position: relative;   /* le filigrane se pose dessus, en absolu */
+  overflow: hidden;     /* et deborde vers le coin sans elargir la page */
   background: var(--papier);
   border: 1px solid var(--trait);
   border-radius: var(--r-bloc-2);
-  padding: 15px 14px;
+  padding: 14px;
   display: flex;
   flex-direction: column;
   gap: 9px;
@@ -125,16 +127,29 @@
   min-height: 132px;
 }
 .tuile .rond {
-  width: 36px; height: 36px;
-  border-radius: 11px;
+  position: relative;
+  width: 40px; height: 40px;
+  border-radius: 12px;
   background: var(--vert-voile);
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--vert);
 }
-.tuile .nom { font-size: 14.5px; font-weight: 600; line-height: 1.25; }
-.tuile .nb  { font-size: 12px; color: var(--texte-2); }
+.tuile .nom { position: relative; font-size: 14.5px; font-weight: 600; line-height: 1.25; min-height: 36px; }
+.tuile .nb  { position: relative; font-size: 12px; color: var(--texte-3); }
+.tuile .barre { position: relative; }
+
+/* LE FILIGRANE (cahier V2, §3.3).
+   La meme rosace que l'icone, en grand, debordant par le coin haut-droit.
+   A 10 % : au-dessus le nom de section devient penible a lire, en dessous
+   on a paye le trace pour rien. */
+.tuile .filigrane {
+  position: absolute;
+  right: -26px; top: -26px;
+  opacity: var(--op-rosace-tuile);
+  pointer-events: none;
+}
 
 /* --------------------------------------------------------------------------
    La barre de navigation basse (ecran 1)

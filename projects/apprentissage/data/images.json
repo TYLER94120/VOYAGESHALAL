@@ -1,0 +1,14 @@
+{
+  "_lisezmoi": {
+    "quoi": "Le catalogue des photos du site. Une image n'est affichee que si son entree est complete : fichier, alt, credit, licence. Sans quoi l'emplacement reste un cadre pointille — c'est voulu (cahier V2, section 6.4).",
+    "interdit": "Aucun etre vivant, aucune representation de prophete, de compagnon ou d'ange, aucune image produite par une machine. Architecture, manuscrits, calligraphie, zellige, paysages, objets.",
+    "forme": {
+      "fichier": "img/questions/exemple  (sans extension : .avif, .webp et @2x sont ajoutes)",
+      "alt": "description en francais, obligatoire",
+      "credit": "nom de l'auteur",
+      "licence": "domaine public, CC BY-SA 4.0, achat...",
+      "source": "adresse d'origine, pour pouvoir reverifier"
+    },
+    "poids": "120 Ko maximum en 2x, AVIF avec repli WebP."
+  }
+}

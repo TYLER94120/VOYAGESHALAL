@@ -95,10 +95,24 @@
   var total = lignes.length;
   var pc = total ? Math.round(justes * 100 / total) : 0;
 
-  fetch('data/questions/' + session.section + '.json')
-    .then(function (x) { return x.ok ? x.json() : []; })
-    .catch(function () { return []; })
-    .then(function (banque) {
+  Promise.all([
+    fetch('data/questions/' + session.section + '.json')
+      .then(function (x) { return x.ok ? x.json() : []; })
+      ['catch'](function () { return []; }),
+    fetch('data/sections.json')
+      .then(function (x) { return x.ok ? x.json() : []; })
+      ['catch'](function () { return []; }),
+    window.IPAP_PHOTO ? window.IPAP_PHOTO.charger() : Promise.resolve({})
+  ])
+    .then(function (tout) {
+      var banque = tout[0], sections = tout[1];
+      // La rosace de la section : le meme motif que sur les cartes jouees.
+      var motif = null;
+      for (var s = 0; s < sections.length; s++) {
+        if (sections[s].slug === session.section && sections[s].branches) {
+          motif = sections[s]; break;
+        }
+      }
       var parId = {};
       for (var i = 0; i < banque.length; i++) { parId[banque[i].id] = banque[i]; }
 
@@ -124,11 +138,21 @@
       }
       var coherent = (sommeN === total && sommeJ === justes);
 
+      var GEO = window.IPAP_GEO;
       var h = '';
       // --- Le bandeau vert fonce --------------------------------------
+      // Il porte le carrelage or a 13 % (V2 §3.4) et, derriere l'anneau, la
+      // rosace de la section a 30 % (§3.3) : c'est le meme motif que sur les
+      // cartes qu'on vient de jouer, et c'est ce qui relie l'ecran au paquet.
       h += '<div class="bandeau">';
-      h += '<div class="ornement">' + icone('etoile', 16) + '</div>';
-      h += '<div class="grand-anneau">' + anneau(pc)
+      h += '<div class="fond-motif" data-carrelage="#E3C97A" data-op="0.13"'
+        + ' data-tuile="72" data-r="17" aria-hidden="true"></div>';
+      h += '<div class="bandeau-sur">' + icone('etoile', 15)
+        + '<span>' + ech(motif ? motif.nom : session.section) + '</span></div>';
+      h += '<div class="grand-anneau">'
+        + (GEO && motif ? '<div class="rosace-score" aria-hidden="true">'
+            + GEO.rosette(186, motif.branches, motif.ratio, '#E3C97A', 1.1) + '</div>' : '')
+        + anneau(pc)
         + '<div class="grand-anneau-pc"><b>' + pc + '%</b><span>'
         + justes + ' sur ' + total + '</span></div></div>';
       h += '<p class="bandeau-mot">' + ech(bilan(pc)) + '</p>';
@@ -144,6 +168,31 @@
         + (butes > 1 ? 'ont demandé' : 'a demandé') + ' deux essais</span></div>'
         + '<div class="chiffre"><b>' + mn + ' min</b><span>de jeu</span></div>'
         + '</div>';
+
+      // --- Le bandeau calligraphie (V2 6.1, troisieme emplacement) -----
+      // Le verset de la session : le premier qu'on a rencontre, avec sa
+      // sourate. Pas un verset choisi pour faire joli — celui qu'on vient
+      // de travailler.
+      var P = window.IPAP_PHOTO;
+      if (P) {
+        var vers = null;
+        for (var v = 0; v < lignes.length && !vers; v++) {
+          var qv = parId[lignes[v].id];
+          if (qv && qv.arabe) { vers = qv; }
+        }
+        if (vers) {
+          h += P.bloc({
+            cle: 'resultat/' + session.section,
+            hauteur: 148,
+            rayon: 18,
+            legende: 'Calligraphie du verset',
+            dessus: '<div class="photo-pied">'
+              + '<span class="photo-sur">Le verset de la session</span>'
+              + '<span class="photo-arabe" lang="ar" dir="rtl">' + ech(vers.arabe) + '</span>'
+              + '</div>'
+          });
+        }
+      }
 
       // --- Ou tu es solide, ou ca glisse ------------------------------
       if (ordre.length > 1) {
@@ -197,5 +246,6 @@
       h += '<div style="height:12px"></div></div>';
 
       document.getElementById('resultat').innerHTML = h;
+      if (window.IPAP_GEO) { window.IPAP_GEO.poserMotifs(document); }
     });
 }());

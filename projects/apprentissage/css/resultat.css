@@ -3,19 +3,49 @@
    ========================================================================== */
 
 .bandeau {
+  position: relative;   /* le carrelage or se pose dessus, en absolu */
+  overflow: hidden;
   background: var(--vert-fonce);
   color: var(--sur-vert);
-  border-radius: 0 0 var(--r-carte) var(--r-carte);
-  padding: 26px var(--marge) 30px var(--marge);
+  border-radius: 0 0 28px 28px;
+  padding: 28px var(--marge) 34px var(--marge);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
 }
-.bandeau .ornement { color: var(--or-clair); }
-.bandeau .ornement::before, .bandeau .ornement::after { background: rgba(227, 201, 122, 0.35); }
+/* Le nom de la section, en tete du bandeau (ecran G). Il dit de quel paquet
+   ce resultat parle — sans lui, deux resultats se ressemblent. */
+.bandeau-sur {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--or-clair);
+}
+.bandeau-sur span {
+  font-size: 11px;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+  color: var(--sur-vert-3);
+}
 
-.grand-anneau { position: relative; width: 168px; height: 168px; }
+.bandeau .ornement { position: relative; color: var(--or-clair); }
+.bandeau .ornement::before, .bandeau .ornement::after { background: rgba(227, 201, 122, 0.35); }
+.bandeau .bandeau-mot, .bandeau .grand-anneau { position: relative; }
+
+/* LA ROSACE DERRIERE L'ANNEAU (cahier V2, §3.3).
+   186 px, or clair, a 30 % : plus soutenue qu'ailleurs parce qu'elle est
+   posee sur du vert fonce, ou un trait a 10 % ne se verrait pas. */
+.grand-anneau { position: relative; width: 186px; height: 186px;
+  display: flex; align-items: center; justify-content: center; }
+.grand-anneau .rosace-score {
+  position: absolute;
+  inset: 0;
+  opacity: var(--op-rosace-score);
+  pointer-events: none;
+}
+.grand-anneau > svg:not(.rosace-score svg) { position: absolute; }
 .grand-anneau-pc {
   position: absolute;
   inset: 0;
@@ -40,6 +70,37 @@
   color: var(--sur-vert-5);
   text-align: center;
   max-width: 300px;
+}
+
+/* Le pied du bandeau calligraphie : le verset de la session, pose sur le
+   voile. Les 18 px de marge et les 16 px du bas viennent de l'ecran G. */
+.photo-pied {
+  position: absolute;
+  left: 18px; right: 18px; bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.photo-sur {
+  font-size: 10.5px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: var(--or-sur-photo);
+}
+.photo-arabe {
+  font-family: var(--arabe);
+  font-size: 22px;
+  color: var(--sur-vert);
+  direction: rtl;
+  text-align: right;
+  line-height: 1.6;
+  /* Un verset long ne doit pas deborder du bandeau : on en montre la
+     premiere ligne, et le texte entier reste sur la carte et dans le
+     corrige. Il n'est ni retreci ni etire — seulement coupe en bas, ce que
+     la section 2.10 autorise la ou une troncature par les cotes serait
+     interdite. */
+  max-height: 36px;
+  overflow: hidden;
 }
 
 .theme { display: flex; flex-direction: column; gap: 6px; }

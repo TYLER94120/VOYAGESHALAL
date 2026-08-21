@@ -32,14 +32,14 @@ await p.waitForSelector('.reponse', { timeout: 8000 });
 // --- 1. La carte est complete -------------------------------------------
 const carte = await p.evaluate(() => {
   const c = document.getElementById('carte');
-  const b = c.querySelector('.bandeau');
+  const b = c.querySelector('.cartouche');
   return {
     reponses: c.querySelectorAll('.reponse').length,
     // Une question tiree d'une sourate porte le bandeau enlumine (V2 §4) ;
     // les autres gardent le surtitre simple. L'une des deux, jamais rien.
-    bandeau: !!b,
-    bandeauAr: b ? (b.querySelector('.bandeau-ar') || {}).textContent || '' : '',
-    bandeauFr: b ? (b.querySelector('.bandeau-fr') || {}).textContent || '' : '',
+    cartouche: !!b,
+    bandeauAr: b ? (b.querySelector('.cartouche-ar') || {}).textContent || '' : '',
+    bandeauFr: b ? (b.querySelector('.cartouche-fr') || {}).textContent || '' : '',
     surtitre: !!c.querySelector('.carte-surtitre'),
     question: !!c.querySelector('.t-question'),
     tampons: c.querySelectorAll('.tampon').length,
@@ -48,11 +48,11 @@ const carte = await p.evaluate(() => {
 });
 if (carte.reponses !== 4) rate('la carte porte 4 reponses', carte.reponses);
 else ok('4 reponses en colonne');
-if (!carte.question || !(carte.bandeau || carte.surtitre)) rate('en-tete et question presents');
+if (!carte.question || !(carte.cartouche || carte.surtitre)) rate('en-tete et question presents');
 else ok('en-tete et question presents');
-if (!carte.bandeau) rate('une question de sourate doit porter le bandeau enlumine');
+if (!carte.cartouche) rate('une question de sourate doit porter le bandeau enlumine');
 else if (!/^سورة .+/.test(carte.bandeauAr.trim()) || !/^Sourate .+/.test(carte.bandeauFr.trim())) {
-  rate('le bandeau ne porte pas les deux noms', carte.bandeauAr + ' | ' + carte.bandeauFr);
+  rate('le cartouche ne porte pas les deux noms', carte.bandeauAr + ' | ' + carte.bandeauFr);
 } else ok('bandeau enlumine complet', carte.bandeauFr);
 if (!carte.rosace) rate('la rosace de section manque derriere le verset');
 else ok('la rosace de section est derriere le verset');
