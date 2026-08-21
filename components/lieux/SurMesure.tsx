@@ -1564,11 +1564,18 @@ function Photos({ photos, nom }: { photos?: string[]; nom: string }) {
 // La requête part chez Google TELLE QUELLE (le type d'abord, jamais
 // « halal » accolé — règle verrouillée par test-requete) ; le filtre
 // alcool et le statut honnête s'appliquent comme partout.
-const ENVIES: Record<string, { mot: string; requete: string }[]> = {
+// 🔴 21 août : cette grille de SECOURS (servie quand /api/lieux/envies n'a
+// pas répondu — réseau lent, quota, hors ligne) n'avait PAS d'identifiant.
+// Résultat : selon le chemin emprunté, taper « Sushi » envoyait le mot mais
+// pas l'envie, et le filtre du plat ne s'appliquait pas. Le même geste ne
+// donnait donc pas le même résultat selon que l'API avait répondu ou non —
+// le genre de défaut qu'on met des semaines à croire. Les identifiants sont
+// ceux de lib/envies.mjs, et un test les vérifie.
+const ENVIES: Record<string, { mot: string; requete: string; id?: string }[]> = {
   manger: [
-    { mot: 'Sushi', requete: 'sushi' }, { mot: 'Burger', requete: 'burger' }, { mot: 'Pizza', requete: 'pizza' },
-    { mot: 'Turc', requete: 'restaurant turc' }, { mot: 'Indien', requete: 'restaurant indien' }, { mot: 'Marocain', requete: 'restaurant marocain' },
-    { mot: 'Asiatique', requete: 'restaurant asiatique' }, { mot: 'Poulet', requete: 'poulet grillé' }, { mot: 'Dessert', requete: 'pâtisserie' },
+    { mot: 'Sushi', requete: 'sushi', id: 'sushi' }, { mot: 'Burger', requete: 'burger', id: 'burger' }, { mot: 'Pizza', requete: 'pizza', id: 'pizza' },
+    { mot: 'Turc', requete: 'restaurant turc', id: 'turc' }, { mot: 'Indien', requete: 'restaurant indien', id: 'indien' }, { mot: 'Marocain', requete: 'restaurant marocain', id: 'maghrebin' },
+    { mot: 'Asiatique', requete: 'restaurant asiatique', id: 'asiatique' }, { mot: 'Poulet', requete: 'poulet grillé', id: 'poulet' }, { mot: 'Dessert', requete: 'pâtisserie', id: 'dessert' },
   ],
   activite: [
     { mot: 'Parc', requete: 'parc' }, { mot: 'Musée', requete: 'musée' }, { mot: 'Piscine', requete: 'piscine' },

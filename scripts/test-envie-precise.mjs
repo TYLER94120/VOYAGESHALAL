@@ -73,6 +73,17 @@ for (const e of ENVIES) {
   }
 }
 
+// ── 3bis. la grille de SECOURS porte les mêmes identifiants ──
+// Sans eux, le filtre du plat s'appliquait ou non selon que l'API des
+// envies avait répondu — deux comportements pour un même geste.
+const surMesureSrc = readFileSync('components/lieux/SurMesure.tsx', 'utf8')
+const grille = surMesureSrc.match(/const ENVIES: Record<[\s\S]*?\n\}/)?.[0] ?? ''
+const mangerBloc = grille.match(/manger: \[([\s\S]*?)\]/)?.[1] ?? ''
+for (const m of mangerBloc.matchAll(/\{ mot: '([^']+)', requete: '[^']*'(, id: '([^']+)')? \}/g)) {
+  if (!m[3]) casse(`la case de secours « ${m[1]} » n'a pas d'identifiant : le filtre du plat serait inerte`)
+  else if (!ENVIES.some((e) => e.id === m[3])) casse(`la case de secours « ${m[1]} » pointe vers une envie inconnue (${m[3]})`)
+}
+
 // ── 4. le moteur applique bien le filtre, le rayon et le tri ──
 const moteur = readFileSync('app/api/lieux/route.ts', 'utf8')
 if (!/forceEnvieGoogle/.test(moteur)) casse('le moteur n\'écarte plus les adresses hors sujet : une envie de sushi pourrait rendre une pizza')
