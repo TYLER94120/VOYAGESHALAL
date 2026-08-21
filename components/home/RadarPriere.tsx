@@ -238,7 +238,7 @@ export default function RadarPriere() {
               🍽 <strong>{resto.nom}</strong>
               <span style={{ color: 'rgba(253,250,243,0.6)' }}> · {Math.max(1, Math.round(resto.distM / 80))} {en ? 'min walk' : 'min à pied'} · {resto.source === 'communaute' ? (en ? 'community · to confirm' : 'communauté · à confirmer') : (en ? 'reported halal · to verify' : 'signalé halal · à vérifier')}</span>
             </p>
-            <a href={`https://www.google.com/maps/dir/?api=1&destination=${resto.lat},${resto.lng}&travelmode=walking`} target="_blank" rel="noopener noreferrer" style={{ padding: '10px 16px', borderRadius: 999, border: '1.5px solid rgba(201,168,76,0.5)', color: '#fdfaf3', fontWeight: 700, fontSize: 13.5, textDecoration: 'none' }}>
+            <a href={`https://www.google.com/maps/dir/?api=1&destination=${resto.lat},${resto.lng}&travelmode=walking`} style={{ padding: '10px 16px', borderRadius: 999, border: '1.5px solid rgba(201,168,76,0.5)', color: '#fdfaf3', fontWeight: 700, fontSize: 13.5, textDecoration: 'none' }}>
               🚶 {en ? 'Directions' : 'Itinéraire'}
             </a>
           </div>

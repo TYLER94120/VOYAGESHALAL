@@ -55,7 +55,7 @@ export default function MySaves() {
             <p className="pv-sec-sous">{nomVille(slug)} — {lieux.length} place{lieux.length > 1 ? 's' : ''} saved</p>
             {lieux.map((l) => (
               <a key={l.id} className="pv-ligne" href={`https://www.google.com/maps/dir/?api=1&destination=${l.lat},${l.lng}`}
-                target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+                style={{ textDecoration: 'none', color: 'inherit' }}>
                 <span className="pv-l-txt"><span className="pv-l-nom">{l.nom}</span><span className="pv-l-sous">Go →</span></span>
               </a>
             ))}
