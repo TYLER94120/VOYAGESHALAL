@@ -62,26 +62,6 @@ input[type="range"]::-moz-range-thumb {
   box-shadow: var(--ombre-vert);
 }
 
-/* Les deux grandes cartes radio. */
-.mode {
-  border: 1px solid var(--trait-2);
-  background: var(--papier);
-  border-radius: var(--r-bloc-2);
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  text-align: left;
-  width: 100%;
-}
-.mode[aria-checked="true"] {
-  border: 2px solid var(--vert);
-  background: var(--vert-voile-2);
-  padding: 14px;
-}
-.mode-nom  { font-family: var(--titre); font-size: 17px; color: var(--vert-fonce); }
-.mode-quoi { font-size: 13.5px; color: var(--texte-2); line-height: 1.4; }
-
 /* Les interrupteurs. */
 .option {
   display: flex;
@@ -157,3 +137,61 @@ input[type="range"]::-moz-range-thumb {
   color: var(--texte-3);
   background: transparent;
 }
+
+/* --------------------------------------------------------------------------
+   LES TROIS NIVEAUX (demande de Mohamed, 21 aout)
+
+   Trois cibles cote a cote, chacune avec le nombre de questions qu'elle
+   contient reellement. Le nombre n'est pas decoratif : il dit tout de suite
+   si le niveau vaut la peine, et il change avec la section.
+   -------------------------------------------------------------------------- */
+
+/* AUTANT DE COLONNES QUE DE BOUTONS, pas trois de force. Avec trois colonnes
+   fixes, la rangee de correction n'en remplissait que deux et « Apprentissage »
+   se serrait dans un tiers de largeur pendant que le dernier tiers restait
+   vide. `grid-auto-flow: column` compte les enfants tout seul. */
+.choix-rangee {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+  gap: 8px;
+}
+.choix {
+  min-height: 62px;
+  border-radius: 14px;
+  border: 1px solid var(--trait-2);
+  background: var(--papier);
+  padding: 9px 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  min-width: 0;
+}
+.choix-nom {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--encre);
+  line-height: 1.2;
+  text-align: center;
+}
+.choix-nb {
+  font-size: 12px;
+  color: var(--texte-3);
+  font-variant-numeric: tabular-nums;
+}
+.choix[aria-checked="true"] {
+  background: var(--vert);
+  border-color: var(--vert);
+  box-shadow: var(--ombre-vert);
+}
+.choix[aria-checked="true"] .choix-nom { color: var(--sur-vert); }
+.choix[aria-checked="true"] .choix-nb  { color: var(--sur-vert-2); }
+
+/* Un niveau vide n'est pas propose — comme un raccourci hors du contenu. */
+.choix[data-hors] {
+  border-style: dashed;
+  background: transparent;
+}
+.choix[data-hors] .choix-nom { color: var(--texte-2); font-weight: 500; }

@@ -35,6 +35,27 @@
       <p class="c-meta" id="sous">Chargement…</p>
     </div>
 
+    <!-- Le niveau. Il vient EN PREMIER parce qu'il change tout le reste :
+         combien de questions sont disponibles, et lesquelles. -->
+    <div class="pile-11">
+      <h2 class="t-bloc">Quel niveau ?</h2>
+      <div class="choix-rangee" id="niveaux" role="radiogroup" aria-label="Niveau des questions">
+        <button type="button" class="choix niveau" data-niveau="1" role="radio" aria-checked="true">
+          <span class="choix-nom">Début</span>
+          <span class="choix-nb" data-n="1">—</span>
+        </button>
+        <button type="button" class="choix niveau" data-niveau="2" role="radio" aria-checked="false">
+          <span class="choix-nom">Intermédiaire</span>
+          <span class="choix-nb" data-n="2">—</span>
+        </button>
+        <button type="button" class="choix niveau" data-niveau="3" role="radio" aria-checked="false">
+          <span class="choix-nom">Expert</span>
+          <span class="choix-nb" data-n="3">—</span>
+        </button>
+      </div>
+      <p class="c-meta" id="dit-niveau">Les questions les plus abordables de cette section.</p>
+    </div>
+
     <!-- Nombre de questions : cinq raccourcis + un curseur libre de 20 a 100,
          les deux synchronises. -->
     <div class="pile-11">
@@ -54,16 +75,19 @@
     <!-- Correction : quand ? -->
     <div class="pile-11">
       <h2 class="t-bloc">La correction, quand ?</h2>
-      <div class="pile-11" id="modes" role="radiogroup" aria-label="Moment de la correction">
-        <button type="button" class="mode" data-mode="apprentissage" role="radio" aria-checked="true">
-          <span class="mode-nom">Mode apprentissage</span>
-          <span class="mode-quoi">La correction tombe après chaque question, avec sa source.</span>
+      <!-- Deux cibles cote a cote, comme les trois niveaux au-dessus : le
+           meme geste pour le meme genre de choix. Les deux grandes cartes
+           empilees prenaient 246 px sur un ecran qui doit tenir en un seul
+           defilement, et l'explication tient sur une ligne. -->
+      <div class="choix-rangee" id="modes" role="radiogroup" aria-label="Moment de la correction">
+        <button type="button" class="choix mode" data-mode="apprentissage" role="radio" aria-checked="true">
+          <span class="choix-nom">Apprentissage</span>
         </button>
-        <button type="button" class="mode" data-mode="examen" role="radio" aria-checked="false">
-          <span class="mode-nom">Mode examen</span>
-          <span class="mode-quoi">Aucun indice pendant le jeu. Tout le corrigé à la fin.</span>
+        <button type="button" class="choix mode" data-mode="examen" role="radio" aria-checked="false">
+          <span class="choix-nom">Examen</span>
         </button>
       </div>
+      <p class="c-meta" id="dit-mode">La correction tombe après chaque question, avec sa source.</p>
     </div>
 
     <!-- Options -->

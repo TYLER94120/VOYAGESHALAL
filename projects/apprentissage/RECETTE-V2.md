@@ -61,6 +61,35 @@ Le verdict est le code de sortie. Jamais le texte, jamais un `grep`.
 
 ---
 
+## Les trois niveaux (demandés le 21 août, après la V2)
+
+- [x] **Début, intermédiaire, expert existent** sur l'écran de réglages, avec
+      le nombre de questions que chacun contient réellement.
+- [x] **Le niveau filtre vraiment le paquet** — `controler-niveaux.mjs` lit le
+      paquet tiré et vérifie qu'il ne contient que le niveau demandé.
+- [x] **Chaque section tient les trois niveaux**, avec au moins 27 questions
+      dans le plus petit. `classer-niveaux.py` refuse d'écrire un lot où un
+      niveau serait vide ou en dessous des 20 questions du QCM minimum.
+- [x] **Le nombre de questions se plafonne au niveau choisi**, pas à la
+      section entière.
+- [x] **Les erreurs à revoir ignorent le niveau** — une question ratée revient
+      parce qu'on l'a ratée, pas parce qu'elle est du bon niveau.
+
+Le niveau n'est **pas déclaré à la main**. Il est calculé à partir de ce qui
+rend une question difficile et qui se mesure : ce qu'il y a à lire, à quel
+point les mauvaises réponses ressemblent à la bonne, si la source est de
+celles qu'on apprend en premier, et — pour l'alphabet — si la lettre est
+montrée seule ou attachée.
+
+« Début » veut dire **le tiers le plus abordable de cette section**. Pas un
+seuil absolu : un seuil absolu laisserait « Le sens des sourates » sans
+débutants et « Lire l'arabe » sans experts, ce qui est exactement le défaut
+qu'on répare. Le champ `difficulte` que les générateurs écrivaient au juge
+existait déjà — mais personne ne le lisait, et il donnait 66 questions faciles
+pour 845 difficiles, avec cinq sections sur sept sans un seul niveau 1.
+
+---
+
 ## Ce que je n'ai pas fait, et pourquoi
 
 ### La grille 2 × 2 des réponses (§5.5)

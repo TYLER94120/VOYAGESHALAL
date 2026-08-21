@@ -20,6 +20,13 @@ installation existante. Le navigateur est celui du poste
 | `controler-defilement.mjs` | sur une carte longue : le glissement lit d'abord et ne lance qu'une fois en bas ; le signe « il y en a plus » apparait et disparait au bon moment |
 | `controler-cadrage.mjs` | les questions de toutes les sections, a quatre largeurs d'ecran : aucune carte ne deborde, chaque reponse est atteignable, les cibles font 44 px |
 | `controler-geometrie.mjs` | cahier V2 §3 : les douze rosaces portent leurs (branches, ratio), une etoile a n branches a 2n sommets, la tuile se raccorde par construction, et les opacites arrivent a l'ecran a la valeur pres |
+| `controler-niveaux.mjs` | les trois niveaux existent, sont choisissables, et FILTRENT vraiment le paquet — un mode qui n'existe qu'a l'ecran ne sert a rien |
+| `controler-photo.mjs` | le type photo dans les deux sens : avec un catalogue complet la question se joue, avec un catalogue incomplet elle est ecartee du tirage |
+| `controler-chaine.mjs` | grille, couverture, reglages, QCM par les vraies adresses — et l'ancienne adresse qui doit continuer de marcher |
+| `controler-recette.mjs` | les treize points du §9 qui ne doivent pas avoir bouge |
+| `controler-contraste.mjs` | le plancher #5F6D66 et le seuil WCAG AA, mesures sur ce que le navigateur calcule |
+| `controler-parcours.mjs` | une partie de bout en bout : la carte, la correction, la source, la serie, le retour d'une question ratee |
+| `controler-boucle.mjs` | la boucle du jeu sur une longue partie |
 
 `controler-cadrage.mjs` laisse passer les polices distantes, exprès :
 mesurer une hauteur de texte arabe avec une police de remplacement ne

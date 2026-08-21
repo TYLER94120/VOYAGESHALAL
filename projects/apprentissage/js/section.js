@@ -121,6 +121,27 @@
       + (banque.length ? pc + '%' : '—') + '</b><span>maîtrisé</span></div>'
       + '</div>';
 
+    // Les trois niveaux, avec ce qu'ils contiennent reellement. On le dit ici
+    // plutot que de laisser la personne le decouvrir a l'ecran suivant.
+    if (banque.length) {
+      var parNiveau = { 1: 0, 2: 0, 3: 0 };
+      for (var m = 0; m < banque.length; m++) {
+        var nv = banque[m].niveau || 2;
+        parNiveau[nv] = (parNiveau[nv] || 0) + 1;
+      }
+      var LIB = { 1: 'Début', 2: 'Intermédiaire', 3: 'Expert' };
+      h += '<div class="pile-11"><h2 class="t-bloc">Les trois niveaux</h2>'
+        + '<div class="couv-niveaux">';
+      for (var v = 1; v <= 3; v++) {
+        h += '<div class="couv-niveau"><b>' + parNiveau[v] + '</b><span>'
+          + LIB[v] + '</span></div>';
+      }
+      h += '</div><p class="c-meta">Le niveau vient de ce qui rend une question '
+        + 'difficile et qui se mesure&nbsp;: ce qu\'il y a à lire, à quel point '
+        + 'les réponses se ressemblent, et si la source est de celles qu\'on '
+        + 'apprend en premier.</p></div>';
+    }
+
     if (themes.length) {
       h += '<div class="pile-11"><h2 class="t-bloc">Les thèmes</h2><div class="pastilles">';
       for (var j = 0; j < themes.length; j++) {

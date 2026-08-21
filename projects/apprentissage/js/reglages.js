@@ -43,9 +43,28 @@
     return param('section') || 'sens-des-sourates';
   }
 
+  /* LES TROIS NIVEAUX (demande de Mohamed, 21 aout).
+     Le niveau d'une question n'est pas declare a la main : il est calcule par
+     outils/classer-niveaux.py, a partir de ce qui rend une question difficile
+     et qui se mesure — ce qu'il faut lire, a quel point les reponses se
+     ressemblent, et si la source est de celles qu'on apprend en premier.
+     « Debut » veut dire le tiers le plus abordable DE CETTE SECTION : c'est
+     la seule promesse tenable, un seuil absolu laisserait des sections sans
+     debutants et d'autres sans experts. */
+  var NIVEAUX = {
+    1: 'Les questions les plus abordables de cette section.',
+    2: 'Le milieu du paquet : il faut connaître, pas seulement reconnaître.',
+    3: 'Les plus exigeantes : longues, ou avec des réponses très proches.'
+  };
+
+  var MODES = {
+    apprentissage: 'La correction tombe après chaque question, avec sa source.',
+    examen: 'Aucun indice pendant le jeu. Tout le corrigé à la fin.'
+  };
+
   var slug = slugDemande();
   var d = M.charger();
-  var r = { nombre: 20, mode: 'apprentissage' };
+  var r = { nombre: 20, mode: 'apprentissage', niveau: 1 };
   for (var i = 0; i < OPTIONS.length; i++) { r[OPTIONS[i].cle] = OPTIONS[i].defaut; }
   if (d.reglages) {
     for (var k in r) {
@@ -54,11 +73,26 @@
   }
 
   var plafond = MAXI;   // ajuste des que la banque est connue
+  var parNiveau = { 1: 0, 2: 0, 3: 0 };
 
   function dire() {
+    // Le plafond depend du NIVEAU choisi, pas de la banque entiere :
+    // proposer 100 questions quand le niveau choisi en compte 27 serait une
+    // promesse qu'on ne tient pas.
+    var dispo = parNiveau[r.niveau] || 0;
+    if (dispo) { plafond = Math.max(MINI, Math.min(MAXI, dispo)); }
+    if (r.nombre > plafond) { r.nombre = plafond; }
+
+    var bn = document.querySelectorAll('.niveau');
+    for (var q = 0; q < bn.length; q++) {
+      var nn = parseInt(bn[q].getAttribute('data-niveau'), 10);
+      bn[q].setAttribute('aria-checked', nn === r.niveau ? 'true' : 'false');
+    }
+    document.getElementById('dit-niveau').textContent = NIVEAUX[r.niveau];
+
     document.getElementById('dit-nombre').textContent =
       r.nombre + ' question' + (r.nombre > 1 ? 's' : '')
-      + (plafond < MAXI ? ' · cette section en compte ' + plafond : '');
+      + (plafond < MAXI ? ' · ce niveau en compte ' + plafond : '');
     document.getElementById('commencer').textContent = 'Commencer les ' + r.nombre + ' questions';
     var min = Math.round(r.nombre * SECONDES_PAR_QUESTION / 60);
     document.getElementById('duree').textContent =
@@ -79,6 +113,7 @@
     for (var j = 0; j < m.length; j++) {
       m[j].setAttribute('aria-checked', m[j].getAttribute('data-mode') === r.mode ? 'true' : 'false');
     }
+    document.getElementById('dit-mode').textContent = MODES[r.mode] || '';
   }
 
   function ranger() {
@@ -109,6 +144,13 @@
     ranger();
   });
 
+  document.getElementById('niveaux').addEventListener('click', function (e) {
+    var b = e.target.closest('.niveau');
+    if (!b || b.disabled) { return; }
+    r.niveau = parseInt(b.getAttribute('data-niveau'), 10);
+    dire(); ranger();
+  });
+
   document.getElementById('raccourcis').addEventListener('click', function (e) {
     var b = e.target.closest('button');
     if (!b || b.disabled) { return; }
@@ -132,7 +174,8 @@
   document.getElementById('commencer').addEventListener('click', function () {
     ranger();
     window.location.href = 'qcm.html?section=' + encodeURIComponent(slug)
-      + '&n=' + r.nombre + '&mode=' + r.mode + (r.serie ? '' : '&serie=0');
+      + '&n=' + r.nombre + '&mode=' + r.mode + '&niveau=' + r.niveau
+      + (r.serie ? '' : '&serie=0');
   });
 
   // --- La banque, pour connaitre le vrai plafond ------------------------
@@ -152,8 +195,25 @@
       document.getElementById('commencer').disabled = true;
       return;
     }
-    plafond = Math.max(MINI, Math.min(MAXI, banque.length));
-    if (r.nombre > plafond) { r.nombre = plafond; }
+    // Le compte par niveau, lu dans la banque : c'est lui qui s'affiche sur
+    // les trois boutons et qui plafonne le curseur.
+    parNiveau = { 1: 0, 2: 0, 3: 0 };
+    for (var b = 0; b < banque.length; b++) {
+      var n = banque[b].niveau || 2;
+      parNiveau[n] = (parNiveau[n] || 0) + 1;
+    }
+    var bn = document.querySelectorAll('.niveau');
+    for (var k = 0; k < bn.length; k++) {
+      var nv = parseInt(bn[k].getAttribute('data-niveau'), 10);
+      bn[k].querySelector('.choix-nb').textContent = parNiveau[nv] || 0;
+      // Un niveau vide n'est pas propose : il ouvrirait sur rien.
+      bn[k].disabled = !parNiveau[nv];
+      if (!parNiveau[nv]) { bn[k].setAttribute('data-hors', 'oui'); }
+    }
+    if (!parNiveau[r.niveau]) {
+      r.niveau = parNiveau[1] ? 1 : (parNiveau[2] ? 2 : 3);
+    }
+
     document.getElementById('sous').textContent =
       banque.length + ' questions dans cette section, toutes sourcées.';
     dire();

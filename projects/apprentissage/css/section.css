@@ -100,3 +100,35 @@
   gap: 9px;
   z-index: 2;
 }
+
+/* Les trois niveaux, sur la couverture. Meme forme que les trois chiffres
+   au-dessus : on lit la section d'un coup d'oeil, du general au precis. */
+.couv-niveaux {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+.couv-niveau {
+  background: var(--papier);
+  border: 1px solid var(--trait);
+  border-radius: 14px;
+  padding: 12px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  min-width: 0;
+}
+.couv-niveau b {
+  font-family: var(--titre);
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--vert);
+  font-variant-numeric: tabular-nums;
+}
+.couv-niveau span {
+  font-size: 11.5px;
+  color: var(--texte-2);
+  text-align: center;
+  line-height: 1.2;
+}

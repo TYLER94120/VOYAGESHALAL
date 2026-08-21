@@ -148,6 +148,13 @@ def main():
             if q['id'] in vus:
                 fautes.append('%s : identifiant deja pris par %s' % (ou, vus[q['id']]))
             vus[q['id']] = ou
+            # Le niveau : pose par outils/classer-niveaux.py, jamais a la
+            # main. Une question sans niveau se joue a tous les niveaux, donc
+            # trois fois trop souvent — c'est visible, mais seulement pour qui
+            # joue longtemps. On le voit ici, tout de suite.
+            if q.get('niveau') not in (1, 2, 3):
+                fautes.append('%s : niveau %r, attendu 1, 2 ou 3 — relancer '
+                              'classer-niveaux.py' % (ou, q.get('niveau')))
 
             # --- le glyphe montre doit etre CELUI qu'on annonce --------
             # Type « calligraphie » : la seule faute possible, mais grave,

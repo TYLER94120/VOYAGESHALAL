@@ -34,7 +34,7 @@
     // Les reglages de l'ecran 3, dans leur etat par defaut du cahier des
     // charges : melanger OUI, inclure les erreurs OUI, serie OUI, minuteur NON.
     var r = { nombre: 20, mode: 'apprentissage', melanger: true,
-              erreurs: true, serie: true, minuteur: false };
+              erreurs: true, serie: true, minuteur: false, niveau: 1 };
     if (d.reglages) {
       for (var k in r) {
         if (Object.prototype.hasOwnProperty.call(d.reglages, k)) { r[k] = d.reglages[k]; }
@@ -53,12 +53,30 @@
     return !!(window.IPAP_PHOTO && window.IPAP_PHOTO.fiche(q.image || ''));
   }
 
+  /* LE NIVEAU FILTRE LE PAQUET, mais PAS les erreurs a revoir.
+     Une question ratee revient parce qu'on l'a ratee, pas parce qu'elle est
+     du bon niveau : l'ecarter du rattrapage sous pretexte qu'elle est
+     « experte » viderait de son sens la promesse « cette question
+     reviendra ». */
+  function auNiveau(q, niveau) {
+    if (!niveau) { return true; }
+    // UNE QUESTION SANS NIVEAU SE JOUE PARTOUT, elle ne disparait pas.
+    // Toutes en portent un — outils/classer-niveaux.py en pose un a chacune,
+    // et le controle des questions refuse un lot ou il en manque. Mais si un
+    // jour il en manque un quand meme, mieux vaut voir la question trois fois
+    // trop souvent que ne plus jamais la voir.
+    if (!q.niveau) { return true; }
+    return q.niveau === niveau;
+  }
+
   function composer(banque, d, reglages, combien) {
     var revoir = [], reste = [];
     for (var i = 0; i < banque.length; i++) {
       if (!jouable(banque[i])) { continue; }
       var f = M.fiche(d, banque[i].id);
-      (reglages.erreurs && f.aRevoir ? revoir : reste).push(banque[i]);
+      if (reglages.erreurs && f.aRevoir) { revoir.push(banque[i]); continue; }
+      if (!auNiveau(banque[i], reglages.niveau)) { continue; }
+      reste.push(banque[i]);
     }
     if (reglages.melanger) {
       revoir = Q.melanger(revoir);
@@ -86,6 +104,9 @@
     if (n >= 20 && n <= 100) { reglages.nombre = n; }
   }
   if (p.mode === 'examen' || p.mode === 'apprentissage') { reglages.mode = p.mode; }
+  if (p.niveau === '1' || p.niveau === '2' || p.niveau === '3') {
+    reglages.niveau = parseInt(p.niveau, 10);
+  }
   if (p.serie === '0') { reglages.serie = false; }
 
   /* Le bandeau enlumine et la rosace de la section (cahier V2, sections 3 et

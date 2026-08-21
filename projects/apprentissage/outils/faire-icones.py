@@ -24,6 +24,7 @@ de la palette.
 
 import json
 import pathlib
+import re
 import sys
 
 RACINE = pathlib.Path(__file__).resolve().parent.parent
@@ -108,6 +109,33 @@ def main():
         ENTETE % json.dumps(ic, ensure_ascii=False, indent=1), encoding='utf-8')
     print('  js/icones.js : %d icones (%d sections + %d interface)'
           % (len(ic), len(SECTIONS), len(INTERFACE)))
+
+    # --- Le catalogue reduit de l'ecran de QCM --------------------------
+    # L'ecran de QCM chargeait les vingt-quatre icones pour en utiliser deux.
+    # C'est 1,6 Ko compresse sur la page la plus lourde du site, et sur celle
+    # dont le cahier fixe le premier rendu utile a moins d'une seconde et
+    # demie. On en tire donc un catalogue reduit — TIRE DE LA MEME SOURCE,
+    # jamais recopie : deux listes finissent toujours par diverger.
+    voulus = icones_du_qcm()
+    absentes = [n for n in voulus if n not in ic]
+    if absentes:
+        sys.exit('ARRET : js/qcm.js demande des icones qui n\'existent pas : %s'
+                 % ', '.join(absentes))
+    petit = {n: ic[n] for n in sorted(voulus)}
+    (RACINE / 'js' / 'icones-qcm.js').write_text(
+        ENTETE % json.dumps(petit, ensure_ascii=False, indent=1), encoding='utf-8')
+    print('  js/icones-qcm.js : %d icones (celles que qcm.js appelle)' % len(petit))
+
+
+def icones_du_qcm():
+    """Les icones que js/qcm.js appelle, relevees dans son code.
+
+    On ne tient pas la liste a la main : le jour ou quelqu'un ajoute un
+    `icone('coche')` dans le moteur, le catalogue reduit doit suivre tout
+    seul, sinon l'icone disparait en silence a l'ecran.
+    """
+    src = (RACINE / 'js' / 'qcm.js').read_text(encoding='utf-8')
+    return sorted(set(re.findall(r"icone\('([a-z-]+)'", src)))
 
 
 if __name__ == '__main__':
