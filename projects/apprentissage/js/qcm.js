@@ -66,9 +66,14 @@ Session.prototype.finie = function () { return this.pos >= this.paquet.length; }
    L'AFFICHAGE D'UNE CARTE
    ========================================================================== */
 
+/* LE DEDANS DE LA CARTE DEFILE, LA CARTE NON.
+   Les tampons VALIDER et PASSER sont poses SUR la carte, pas dans son
+   contenu : s'ils defilaient avec le texte, ils se promeneraient hors de
+   l'ecran des qu'un verset est long. D'ou cette enveloppe : `.carte` tient
+   les tampons et le cadre, `.carte-dedans` tient le texte et defile. */
 function carteHTML(q, avecTampons) {
   if (!q) { return ''; }
-  var h = '';
+  var h = '<div class="carte-dedans">';
   h += '<div class="carte-tete">';
   h += '<span class="carte-surtitre">' + echapper(q.surtitre || q.theme || '') + '</span>';
   h += icone('signet', 18, 'signet-or');
@@ -77,7 +82,8 @@ function carteHTML(q, avecTampons) {
     h += '<div class="carte-arabe" lang="ar" dir="rtl">' + echapper(q.arabe) + '</div>';
   }
   h += '<div class="t-question">' + echapper(q.question) + '</div>';
-  h += '<div class="pousse"></div>';
+  // Plus d'espaceur : la carte epouse desormais son contenu, et pousser les
+  // reponses vers le bas creusait un trou de deux cents pixels au milieu.
   h += '<div class="reponses" role="group" aria-label="Les quatre reponses">';
   for (var i = 0; i < q.reponses.length; i++) {
     h += '<button type="button" class="reponse" data-i="' + i + '" aria-pressed="false">'
@@ -86,6 +92,10 @@ function carteHTML(q, avecTampons) {
       + '</button>';
   }
   h += '</div>';
+  h += '</div>';   // fin de .carte-dedans
+  h += '<svg class="carte-suite" viewBox="0 0 24 24" fill="none" aria-hidden="true">'
+    + '<path d="M5.5 9.5L12 16l6.5-6.5" stroke="currentColor" stroke-width="1.8" '
+    + 'stroke-linecap="round" stroke-linejoin="round"/></svg>';
   if (avecTampons) {
     h += '<div class="tampon" data-t="valider">VALIDER</div>';
     h += '<div class="tampon" data-t="passer">PASSER</div>';
@@ -124,6 +134,21 @@ Jeu.prototype.demarrer = function () {
     if (self.verrou) { return; }
     self.geste.passer();
   });
+
+  // Rotation du telephone, clavier logiciel qui s'ouvre, fenetre
+  // redimensionnee : la hauteur disponible change, l'echelle doit suivre.
+  window.addEventListener('resize', function () {
+    var carte = $('carte');
+    if (carte && carte.firstChild && !carte.getAttribute('data-anime')) {
+      ajusterEchelle(carte);
+    }
+  });
+
+  // La carte est le meme element d'une question a l'autre : un seul
+  // ecouteur suffit pour toute la partie. Le defilement se produit sur son
+  // enfant, qui lui est remplace — d'ou l'ecoute en phase de CAPTURE, la
+  // seule qui remonte : `scroll` ne bouillonne pas.
+  $('carte').addEventListener('scroll', function () { marquerDefilement(this); }, true);
 };
 
 /* --- La barre segmentee (ecran 4) ------------------------------------- */
@@ -174,6 +199,63 @@ Jeu.prototype.majSerie = function (etat, anime) {
 };
 
 /* --- Poser la carte courante ------------------------------------------- */
+/* --------------------------------------------------------------------------
+   LA CARTE DOIT TENIR ENTIERE, TOUJOURS.
+
+   Les versets n'ont pas tous la meme longueur, et les traductions non plus.
+   Sur « Ceux qui croient et accomplissent les bonnes oeuvres… », les quatre
+   reponses et le verset arabe demandaient 633 px la ou la zone en offre 566 :
+   la reponse D passait sous le bord. Elle etait affichee, mais illisible et
+   inchoisissable. Aucun reglage de police fixe ne peut couvrir un texte qui
+   va de dix a quatre cents caracteres.
+
+   On descend donc d'un cran a la fois jusqu'a ce que tout tienne. Le premier
+   cran, 1, est la taille nominale du cahier des charges : l'immense majorite
+   des cartes n'en bougent pas. Le plancher est 0,80 — au-dela, on ne rend
+   plus service a personne, et la carte defile alors comme dernier recours.
+
+   Ce qui NE descend PAS : la hauteur des cibles tactiles (44 px, section 2.6)
+   et la largeur du texte. Seuls le corps et les espaces cedent.
+   -------------------------------------------------------------------------- */
+
+/* Trois crans, et le plancher a 0,88 — pas plus bas.
+   J'etais descendu jusqu'a 0,80 pour eviter le defilement : sur un ecran de
+   360 px, ca donnait un texte de 11,6 px, et il restait quand meme 48 % de
+   cartes a faire glisser. Du texte minuscule ET du defilement : on perdait
+   sur les deux tableaux. On garde donc un corps lisible et on assume le
+   glissement, qui lui ne coute rien a personne. */
+var ECHELLES = [1, 0.94, 0.88];
+
+/* Reste-t-il du texte sous le bord ? Alors on le DIT : un degrade et un
+   chevron au bas de la carte. Sans ce signe, la quatrieme reponse est
+   simplement absente pour qui ne pense pas a faire glisser. */
+function marquerDefilement(carte) {
+  var d = carte.querySelector('.carte-dedans');
+  if (!d) { carte.removeAttribute('data-defile'); return; }
+  var reste = d.scrollHeight - d.clientHeight;
+  if (reste > 1 && d.scrollTop < reste - 1) { carte.setAttribute('data-defile', 'oui'); }
+  else { carte.removeAttribute('data-defile'); }
+  // Et au-dessus : un verset coupe net en plein milieu d'une lettre arabe
+  // ressemble a un defaut d'affichage. Un degrade dit que c'est du texte
+  // qu'on a remonte, pas du texte casse.
+  if (reste > 1 && d.scrollTop > 1) { carte.setAttribute('data-defile-haut', 'oui'); }
+  else { carte.removeAttribute('data-defile-haut'); }
+}
+
+function ajusterEchelle(carte) {
+  var d = carte.querySelector('.carte-dedans');
+  if (!d) { return 1; }
+  var e = ECHELLES[ECHELLES.length - 1];
+  for (var i = 0; i < ECHELLES.length; i++) {
+    carte.style.setProperty('--echelle', ECHELLES[i]);
+    // scrollHeight depasse clientHeight des que le contenu ne tient plus
+    // dans la hauteur offerte a la carte.
+    if (d.scrollHeight <= d.clientHeight + 1) { e = ECHELLES[i]; break; }
+  }
+  marquerDefilement(carte);
+  return e;
+}
+
 Jeu.prototype.dessinerCarte = function () {
   var self = this;
   var q = this.s.courante();
@@ -195,6 +277,18 @@ Jeu.prototype.dessinerCarte = function () {
   carte.removeAttribute('data-anime');
   carte.removeAttribute('data-vise');
   carte.innerHTML = carteHTML(q, true);
+  ajusterEchelle(carte);
+
+  // Amiri arrive apres coup : mesure faite avant, la hauteur de l'arabe
+  // n'est pas la bonne. On remesure quand la police est la — sur CETTE
+  // carte seulement, si elle est encore a l'ecran.
+  this.rendu = (this.rendu || 0) + 1;
+  var rendu = this.rendu;
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(function () {
+      if (self.rendu === rendu) { ajusterEchelle(carte); }
+    })['catch'](function () { /* pas de polices : la mesure de depart fait foi */ });
+  }
 
   var boutons = carte.querySelectorAll('.reponse');
   for (var i = 0; i < boutons.length; i++) {
@@ -388,14 +482,21 @@ Jeu.prototype.clavier = function () {
     if (e.key >= '1' && e.key <= '4') {
       e.preventDefault();
       self.choisir(parseInt(e.key, 10) - 1);
-    } else if (e.key === 'ArrowRight') {
+    } else if (e.key === 'ArrowUp' || e.key === 'ArrowRight') {
+      // HAUT depuis que le geste est vertical. La droite continue de marcher :
+      // elle ne gene personne, et quelqu'un qui a pris l'habitude la garde.
       e.preventDefault();
       self.geste.valider();
-    } else if (e.key === 'ArrowLeft') {
+    } else if (e.key === 'ArrowDown' || e.key === 'ArrowLeft') {
       e.preventDefault();
       self.geste.passer();
     }
   });
 };
 
-window.IPAP_QCM = { Session: Session, Jeu: Jeu, melanger: melanger, carteHTML: carteHTML };
+window.IPAP_QCM = {
+  Session: Session, Jeu: Jeu, melanger: melanger, carteHTML: carteHTML,
+  // Exportee pour que le controle de cadrage puisse passer la banque
+  // entiere en revue sans jouer 1 252 parties.
+  ajusterEchelle: ajusterEchelle,
+};

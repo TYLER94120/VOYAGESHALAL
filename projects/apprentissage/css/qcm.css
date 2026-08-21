@@ -143,9 +143,10 @@
   flex-grow: 1;
   position: relative;
   margin-top: 18px;
-  /* Le geste appartient a la carte : le navigateur ne doit pas le prendre
-     pour un defilement horizontal. */
-  touch-action: pan-y;
+  /* Le geste est VERTICAL et appartient a la carte : sans `none`, le
+     navigateur prend le glissement pour un defilement de page et la carte
+     ne bouge jamais. */
+  touch-action: none;
   /* MESURE, PAS PRECAUTION. Sans ce debordement masque, la carte qui s'envole
      part a 590 px vers la droite et ELARGIT LA PAGE : le navigateur mobile
      redimensionne alors tout pour faire tenir 1 004 px dans 390, et l'ecran
@@ -161,26 +162,116 @@
 .carte-arriere {
   position: absolute;
   left: 34px; right: 34px;
-  top: 14px; bottom: 24px;
+  top: 50%;
+  height: 82%;
+  transform: translateY(-46%);
   background: var(--papier-arriere);
   border: 1px solid var(--trait-2);
   border-radius: var(--r-carte);
 }
 
+/* LA CARTE EPOUSE SON CONTENU, ET SE CENTRE.
+   Elle remplissait toute la zone : sur un verset court, deux cents pixels de
+   blanc separaient la question des reponses, et la carte avait l'air cassee.
+   « inset » plus « margin: auto » la centre verticalement SANS toucher au
+   transform — celui-la appartient au geste, et le lui disputer ferait
+   sauter la carte a chaque glissement. */
 .carte {
   position: absolute;
   left: var(--marge); right: var(--marge);
   top: 0; bottom: 38px;
+  height: fit-content;
+  max-height: calc(100% - 38px);
+  margin: auto 0;
+  overflow: hidden;
   background: var(--papier);
   border: 1px solid var(--trait);
   border-radius: var(--r-carte);
   box-shadow: 0 16px 36px rgba(28, 38, 32, 0.13);
-  padding: 24px var(--marge);
+  /* L'ECHELLE DE LA CARTE.
+     Un verset de trois mots et un verset de quarante ne demandent pas le
+     meme corps. Sans cela, la quatrieme reponse d'une question longue
+     tombait sous le bord de la carte : elle etait la, on ne pouvait ni la
+     lire ni la choisir. C'est ce que Mohamed a vu le 21 aout — « le texte
+     sort du cadre ». Le pas est pose par `ajusterEchelle()`, qui descend
+     jusqu'a ce que tout tienne. La hauteur des cibles, elle, ne descend
+     jamais : 44 px reste 44 px. */
+  --echelle: 1;
+  padding: calc(24px * var(--echelle)) var(--marge);
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  /* On attrape la carte partout, y compris en travers d'un verset. A la
+     souris, cela surlignerait le texte au lieu de deplacer la carte. */
+  -webkit-user-select: none;
+  user-select: none;
   /* Pose par le geste. Au repos, rien. */
   will-change: transform;
+}
+
+/* Le contenu. C'est LUI qui defile quand un verset est trop long — la carte,
+   son cadre et ses tampons restent en place. */
+.carte-dedans {
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--echelle));
+  overflow-y: auto;
+  scrollbar-width: none;            /* la barre du systeme n'a rien a faire la */
+  min-height: 0;                    /* sinon un enfant flex refuse de retrecir */
+}
+.carte-dedans::-webkit-scrollbar { display: none; }
+
+/* IL RESTE DU TEXTE SOUS LE BORD : ON LE DIT.
+   Un degrade court sur les derniers pixels et un chevron descend doucement.
+   Sans ce signe, la quatrieme reponse n'existe pas pour qui ne pense pas a
+   faire glisser — et une reponse qu'on ne voit pas est une reponse qu'on ne
+   peut pas choisir. */
+.carte::after {
+  content: '';
+  position: absolute;
+  left: 1px; right: 1px; bottom: 1px;
+  height: 44px;
+  border-radius: 0 0 var(--r-carte) var(--r-carte);
+  background: linear-gradient(to bottom, rgba(255, 253, 248, 0), var(--papier) 78%);
+  opacity: 0;
+  transition: opacity 160ms;
+  pointer-events: none;
+}
+.carte[data-defile]::after { opacity: 1; }
+
+.carte::before {
+  content: '';
+  position: absolute;
+  left: 1px; right: 1px; top: 1px;
+  height: 34px;
+  border-radius: var(--r-carte) var(--r-carte) 0 0;
+  background: linear-gradient(to top, rgba(255, 253, 248, 0), var(--papier) 78%);
+  opacity: 0;
+  transition: opacity 160ms;
+  pointer-events: none;
+  z-index: 1;
+}
+.carte[data-defile-haut]::before { opacity: 1; }
+
+.carte-suite {
+  position: absolute;
+  left: 50%;
+  bottom: 7px;
+  width: 22px; height: 22px;
+  margin-left: -11px;
+  opacity: 0;
+  transition: opacity 160ms;
+  pointer-events: none;
+  color: var(--texte-3);
+  z-index: 2;   /* au-dessus du degrade, qui est un ::after donc peint apres */
+}
+.carte[data-defile] .carte-suite { opacity: 1; animation: appel 1.6s ease-in-out 3; }
+
+@keyframes appel {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(3px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .carte[data-defile] .carte-suite { animation: none; }
 }
 
 .carte-tete {
@@ -196,7 +287,7 @@
 }
 .carte-arabe {
   font-family: var(--arabe);
-  font-size: 28px;
+  font-size: calc(28px * var(--echelle));
   color: var(--vert-fonce);
   direction: rtl;
   text-align: right;
@@ -207,20 +298,27 @@
    Les quatre reponses, en grille 2 x 2
    -------------------------------------------------------------------------- */
 
+/* UNE COLONNE, PAS DEUX.
+   La grille 2 x 2 donnait 134 px de large par reponse sur un telephone de
+   360 px : « La riposte de ton Seigneur est redoutable » y tenait sur trois
+   lignes serrees. Une reponse est une PHRASE, pas une etiquette — elle a
+   besoin de la largeur. Et le geste etant desormais vertical, une pile
+   verticale de reponses est aussi ce que l'oeil attend. */
 .reponses {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: calc(9px * var(--echelle));
 }
 
 .reponse {
-  min-height: 96px;
+  min-height: var(--cible);
   border: 1px solid var(--trait);
-  border-radius: 16px;
-  padding: 13px;
+  border-radius: 14px;
+  padding: calc(12px * var(--echelle)) 13px;
   display: flex;
-  flex-direction: column;
-  gap: 8px;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
   text-align: left;
   width: 100%;
   background: transparent;
@@ -238,14 +336,14 @@
   color: var(--texte-2);
   flex-shrink: 0;
 }
-.reponse .texte { font-size: 14.5px; line-height: 1.3; }
+.reponse .texte { font-size: calc(14.5px * var(--echelle)); line-height: 1.3; }
 
 /* Choisie : bordure verte 2 px, fond voile. La bordure passant de 1 a 2 px,
    on retire 1 px de padding pour que la carte ne bouge pas d'un pixel. */
 .reponse[aria-pressed="true"] {
   border: 2px solid var(--vert);
   background: var(--vert-voile-2);
-  padding: 12px;
+  padding: calc(12px * var(--echelle) - 1px) 12px;
 }
 .reponse[aria-pressed="true"] .lettre { background: var(--vert); color: var(--sur-vert); }
 .reponse[aria-pressed="true"] .texte  { font-weight: 600; color: var(--vert-fonce); }
@@ -254,12 +352,12 @@
 .reponse[data-corrige="bonne"] {
   border: 2px solid var(--vert-juste);
   background: var(--vert-voile-3);
-  padding: 12px;
+  padding: calc(12px * var(--echelle) - 1px) 12px;
 }
 .reponse[data-corrige="choix"] {
   border: 2px solid var(--rouge);
   background: var(--rouge-voile);
-  padding: 12px;
+  padding: calc(12px * var(--echelle) - 1px) 12px;
 }
 .reponse[data-corrige="autre"] { opacity: 0.5; }
 
@@ -277,8 +375,8 @@
    -------------------------------------------------------------------------- */
 
 /* Au-dela de 60 px de deplacement, l'indice du cote vise apparait. */
-.carte[data-vise="droite"] { border-color: var(--vert); border-width: 2px; padding: 23px 19px; }
-.carte[data-vise="gauche"] { border-color: var(--texte-3); border-width: 2px; padding: 23px 19px; }
+.carte[data-vise="haut"]  { border-color: var(--vert); border-width: 2px; padding: calc(24px * var(--echelle) - 1px) calc(var(--marge) - 1px); }
+.carte[data-vise="bas"]   { border-color: var(--texte-3); border-width: 2px; padding: calc(24px * var(--echelle) - 1px) calc(var(--marge) - 1px); }
 
 /* Le tampon en travers. Toutes les valeurs viennent de l'annexe A, ecran 5 :
    position 20/92 dans la carte, rotation -11 deg, cadre 3 px, rayon 12 px,
@@ -287,9 +385,9 @@
    papier : a ce moment-la, la personne a deja lu et deja choisi. */
 .tampon {
   position: absolute;
-  top: 92px;
-  left: 20px;
-  transform: rotate(-11deg);
+  top: 78px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-11deg);
   padding: 7px 16px;
   border-radius: 12px;
   border: 3px solid var(--vert);
@@ -302,7 +400,12 @@
   opacity: 0;
   transition: opacity 120ms;
 }
-.tampon[data-t="passer"] { border-color: var(--texte-3); color: var(--texte-3); }
+.tampon[data-t="passer"] {
+  border-color: var(--texte-3);
+  color: var(--texte-3);
+  top: auto;
+  bottom: 78px;
+}
 .carte[data-vise] .tampon { opacity: 1; }
 
 /* Retour a sa place quand le seuil n'est pas atteint : 180 ms. */
@@ -313,9 +416,9 @@
 /* Droite sans reponse choisie : la carte refuse de partir. Secousse de 6 px,
    150 ms (section 7.5). Ce n'est pas une punition, c'est une reponse au geste. */
 @keyframes secousse {
-  0%, 100% { transform: translateX(0); }
-  25%      { transform: translateX(-6px); }
-  75%      { transform: translateX(6px); }
+  0%, 100% { transform: translateY(0); }
+  25%      { transform: translateY(6px); }
+  75%      { transform: translateY(-6px); }
 }
 .carte[data-anime="secousse"] { animation: secousse 150ms ease-in-out; }
 
