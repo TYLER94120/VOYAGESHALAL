@@ -1,0 +1,428 @@
+/* ==========================================================================
+   LE QCM — LE PRODUIT
+   --------------------------------------------------------------------------
+   Ecrans 4 a 7 du cahier des charges. Les valeurs viennent de l'annexe A ;
+   quand l'annexe et la section 3 disent la meme chose, c'est la section 3 qui
+   est citee (variable). Quand l'annexe donne une valeur qui n'existe pas dans
+   la palette, elle est declaree ici et signalee comme telle.
+   ========================================================================== */
+
+:root {
+  /* Valeur d'annexe A, ecran 4 : fond du badge de lettre au repos. Elle ne
+     figure pas dans la palette de la section 3.1 — on ne l'invente pas
+     ailleurs, on la nomme ici une fois pour toutes. */
+  --badge-repos: #F2EDE2;
+  /* Valeur d'annexe A, ecran 4 : le chevron « Passer », plus sourd que le
+     texte a cote. Idem, absente de la palette. */
+  --chevron-passer: #8A8271;
+}
+
+/* --------------------------------------------------------------------------
+   Barre haute : sortie, compteur, pastille de serie
+   -------------------------------------------------------------------------- */
+
+.qcm-haut {
+  padding: 22px var(--marge) 0 var(--marge);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.qcm-barre {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* La croix de sortie fait bien 44 px de cible (section 2.6) ; les marges
+   negatives la ramenent visuellement au bord sans retrecir la zone du doigt. */
+.qcm-sortir {
+  width: var(--cible);
+  height: var(--cible);
+  margin: -12px 0 -12px -12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.qcm-compte {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--texte-2);
+  font-variant-numeric: tabular-nums;
+}
+
+/* --------------------------------------------------------------------------
+   La serie (section 8)
+   -------------------------------------------------------------------------- */
+
+.serie {
+  height: 30px;
+  border-radius: 15px;
+  background: var(--or-voile);
+  border: 1px solid var(--or-bordure);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 12px;
+  transition: background 200ms, border-color 200ms, box-shadow 200ms;
+}
+.serie span { font-size: 13px; font-weight: 700; color: var(--or-texte); }
+.serie svg path { stroke: var(--or-texte-2); }
+
+/* Bonne reponse : la pastille passe en or plein, avec son ombre. */
+.serie[data-etat="or"] {
+  background: var(--or);
+  border-color: var(--or);
+  box-shadow: var(--ombre-or);
+}
+.serie[data-etat="or"] span { color: var(--sur-or); }
+.serie[data-etat="or"] svg path { stroke: var(--sur-or); }
+
+/* Mauvaise reponse : elle retombe en gris. Sans animation brusque, sans son,
+   sans dramatisation (section 8). */
+.serie[data-etat="gris"] {
+  background: var(--papier);
+  border-color: var(--trait-2);
+  box-shadow: none;
+}
+.serie[data-etat="gris"] span { color: var(--texte-2); font-weight: 600; }
+.serie[data-etat="gris"] svg path { stroke: var(--texte-3); }
+
+/* Le chiffre monte de 8 px en 200 ms quand il s'incremente. */
+@keyframes monte {
+  from { transform: translateY(8px); opacity: 0; }
+  to   { transform: translateY(0);   opacity: 1; }
+}
+.serie[data-anime="oui"] span { animation: monte 200ms ease-out; }
+
+/* La serie est desactivable : la pastille disparait, rien d'autre ne change. */
+.serie[hidden] { display: none; }
+
+/* --------------------------------------------------------------------------
+   La barre segmentee : un segment par question
+   -------------------------------------------------------------------------- */
+
+.segments { display: flex; gap: 3px; }
+.segments i {
+  flex-grow: 1;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--trait-3);          /* a venir */
+  transition: background 160ms;
+}
+.segments i[data-e="juste"]  { background: var(--vert-juste); }
+.segments i[data-e="rate"]   { background: var(--rouge); }
+.segments i[data-e="encours"]{ background: var(--or); }
+
+/* Au-dela de 30 questions les segments s'affinent ; au-dela de 60 on passe a
+   une barre continue avec le compteur chiffre (ecran 4). */
+.segments[data-dense="oui"] { gap: 2px; }
+.segments[data-dense="oui"] i { height: 3px; }
+
+.jauge {
+  height: 4px;
+  border-radius: 2px;
+  background: var(--trait-3);
+  overflow: hidden;
+}
+.jauge i {
+  display: block;
+  height: 100%;
+  background: var(--vert-juste);
+  border-radius: 2px;
+  transition: width 160ms;
+}
+
+/* --------------------------------------------------------------------------
+   La zone des cartes
+   -------------------------------------------------------------------------- */
+
+.zone {
+  flex-grow: 1;
+  position: relative;
+  margin-top: 18px;
+  /* Le geste appartient a la carte : le navigateur ne doit pas le prendre
+     pour un defilement horizontal. */
+  touch-action: pan-y;
+  /* MESURE, PAS PRECAUTION. Sans ce debordement masque, la carte qui s'envole
+     part a 590 px vers la droite et ELARGIT LA PAGE : le navigateur mobile
+     redimensionne alors tout pour faire tenir 1 004 px dans 390, et l'ecran
+     entier retrecit d'un coup au milieu du jeu. L'annexe A porte bien
+     `overflow: hidden` sur l'ecran ; je l'avais laisse tomber en passant aux
+     classes. */
+  overflow: hidden;
+}
+
+/* La carte suivante est DEJA montee dans le DOM (section 7.7) : aucun
+   chargement, aucun scintillement entre deux questions. Elle depasse derriere,
+   centree, plus etroite de 14 px de chaque cote. */
+.carte-arriere {
+  position: absolute;
+  left: 34px; right: 34px;
+  top: 14px; bottom: 24px;
+  background: var(--papier-arriere);
+  border: 1px solid var(--trait-2);
+  border-radius: var(--r-carte);
+}
+
+.carte {
+  position: absolute;
+  left: var(--marge); right: var(--marge);
+  top: 0; bottom: 38px;
+  background: var(--papier);
+  border: 1px solid var(--trait);
+  border-radius: var(--r-carte);
+  box-shadow: 0 16px 36px rgba(28, 38, 32, 0.13);
+  padding: 24px var(--marge);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  /* Pose par le geste. Au repos, rien. */
+  will-change: transform;
+}
+
+.carte-tete {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.carte-surtitre {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--or-texte);
+}
+.carte-arabe {
+  font-family: var(--arabe);
+  font-size: 28px;
+  color: var(--vert-fonce);
+  direction: rtl;
+  text-align: right;
+  line-height: 1.6;
+}
+
+/* --------------------------------------------------------------------------
+   Les quatre reponses, en grille 2 x 2
+   -------------------------------------------------------------------------- */
+
+.reponses {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.reponse {
+  min-height: 96px;
+  border: 1px solid var(--trait);
+  border-radius: 16px;
+  padding: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+  width: 100%;
+  background: transparent;
+  transition: border-color 120ms, background 120ms;
+}
+.reponse .lettre {
+  width: 24px; height: 24px;
+  border-radius: 8px;
+  background: var(--badge-repos);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--texte-2);
+  flex-shrink: 0;
+}
+.reponse .texte { font-size: 14.5px; line-height: 1.3; }
+
+/* Choisie : bordure verte 2 px, fond voile. La bordure passant de 1 a 2 px,
+   on retire 1 px de padding pour que la carte ne bouge pas d'un pixel. */
+.reponse[aria-pressed="true"] {
+  border: 2px solid var(--vert);
+  background: var(--vert-voile-2);
+  padding: 12px;
+}
+.reponse[aria-pressed="true"] .lettre { background: var(--vert); color: var(--sur-vert); }
+.reponse[aria-pressed="true"] .texte  { font-weight: 600; color: var(--vert-fonce); }
+
+/* Correction posee sur place (ecran 7). */
+.reponse[data-corrige="bonne"] {
+  border: 2px solid var(--vert-juste);
+  background: var(--vert-voile-3);
+  padding: 12px;
+}
+.reponse[data-corrige="choix"] {
+  border: 2px solid var(--rouge);
+  background: var(--rouge-voile);
+  padding: 12px;
+}
+.reponse[data-corrige="autre"] { opacity: 0.5; }
+
+.etiquette {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+.etiquette[data-t="bonne"] { color: var(--vert-juste); }
+.etiquette[data-t="choix"] { color: var(--rouge-texte); }
+
+/* --------------------------------------------------------------------------
+   LE GESTE (section 7)
+   -------------------------------------------------------------------------- */
+
+/* Au-dela de 60 px de deplacement, l'indice du cote vise apparait. */
+.carte[data-vise="droite"] { border-color: var(--vert); border-width: 2px; padding: 23px 19px; }
+.carte[data-vise="gauche"] { border-color: var(--texte-3); border-width: 2px; padding: 23px 19px; }
+
+/* Le tampon en travers. Toutes les valeurs viennent de l'annexe A, ecran 5 :
+   position 20/92 dans la carte, rotation -11 deg, cadre 3 px, rayon 12 px,
+   fond ivoire a 92 %, Marcellus 26 px, interlettrage 3 px.
+   Il RECOUVRE volontairement le haut de la carte, comme un tampon sur du
+   papier : a ce moment-la, la personne a deja lu et deja choisi. */
+.tampon {
+  position: absolute;
+  top: 92px;
+  left: 20px;
+  transform: rotate(-11deg);
+  padding: 7px 16px;
+  border-radius: 12px;
+  border: 3px solid var(--vert);
+  background: rgba(255, 253, 248, 0.92);
+  font-family: var(--titre);
+  font-size: 26px;
+  letter-spacing: 3px;
+  color: var(--vert);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 120ms;
+}
+.tampon[data-t="passer"] { border-color: var(--texte-3); color: var(--texte-3); }
+.carte[data-vise] .tampon { opacity: 1; }
+
+/* Retour a sa place quand le seuil n'est pas atteint : 180 ms. */
+.carte[data-anime="retour"] { transition: transform 180ms ease-out; }
+/* Envol hors ecran quand il l'est : 220 ms, courbe imposee. */
+.carte[data-anime="envol"]  { transition: transform 220ms cubic-bezier(.22,.61,.36,1), opacity 220ms; }
+
+/* Droite sans reponse choisie : la carte refuse de partir. Secousse de 6 px,
+   150 ms (section 7.5). Ce n'est pas une punition, c'est une reponse au geste. */
+@keyframes secousse {
+  0%, 100% { transform: translateX(0); }
+  25%      { transform: translateX(-6px); }
+  75%      { transform: translateX(6px); }
+}
+.carte[data-anime="secousse"] { animation: secousse 150ms ease-in-out; }
+
+/* Section 7.9 : sans animation, plus de rotation ni d'envol. Un fondu. */
+@media (prefers-reduced-motion: reduce) {
+  .carte { transform: none !important; }
+  .carte[data-anime="envol"] { transition: opacity 120ms; opacity: 0; }
+  .carte[data-anime="secousse"] { animation: none; }
+  /* le tampon garde son inclinaison : elle n'est pas une animation */
+}
+
+/* --------------------------------------------------------------------------
+   Le pied : legende du geste
+   -------------------------------------------------------------------------- */
+
+.qcm-pied {
+  padding: 0 var(--marge) 26px var(--marge);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.qcm-pied .cotes {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cote { display: flex; align-items: center; gap: 8px; font-size: 13px; }
+.cote-gauche { color: var(--texte-2); }
+.cote-droite { color: var(--vert); font-weight: 700; }
+.cote svg path { stroke: currentColor; }
+.cote-gauche svg path { stroke: var(--chevron-passer); }
+
+/* Le cote vise s'allume en pastille pleine pendant le geste (ecran 5). */
+.cote[data-actif="oui"] {
+  background: var(--vert);
+  color: var(--sur-vert);
+  border-radius: 15px;
+  padding: 5px 12px;
+  margin: -5px -12px;
+}
+.cote[data-actif="oui"] svg path { stroke: var(--sur-vert); }
+/* Le rappel du geste inverse reste visible a 40 % (ecran 5). */
+.cote[data-actif="non"] { opacity: 0.4; }
+
+.poignee {
+  width: 128px;
+  height: 5px;
+  border-radius: 3px;
+  background: var(--trait-4);
+}
+
+/* --------------------------------------------------------------------------
+   La feuille de correction qui monte du bas (ecrans 6 et 7)
+   -------------------------------------------------------------------------- */
+
+.feuille {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  z-index: 20;
+  border-radius: var(--r-carte) var(--r-carte) 0 0;
+  padding: 22px var(--marge) 26px var(--marge);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transform: translateY(100%);
+  transition: transform 260ms cubic-bezier(.22,.61,.36,1);
+  max-height: 78dvh;
+  overflow-y: auto;
+}
+.feuille[data-ouverte="oui"] { transform: translateY(0); }
+
+/* Bonne reponse : feuille vert profond. */
+.feuille[data-t="juste"] { background: var(--vert-fonce); color: var(--sur-vert); }
+.feuille[data-t="juste"] .f-titre { color: var(--sur-vert); }
+.feuille[data-t="juste"] .f-texte { color: var(--sur-vert-5); }
+.feuille[data-t="juste"] .f-source,
+.feuille[data-t="juste"] .f-note { color: var(--sur-vert-3); }
+
+/* Mauvaise reponse : meme structure, feuille ivoire. Ton oppose. */
+.feuille[data-t="rate"] { background: var(--papier); border-top: 1px solid var(--trait); }
+.feuille[data-t="rate"] .f-titre { color: var(--encre-titre); }
+.feuille[data-t="rate"] .f-texte { color: var(--encre); }
+.feuille[data-t="rate"] .f-source,
+.feuille[data-t="rate"] .f-note { color: var(--texte-2); }
+
+.f-titre { font-family: var(--titre); font-size: 24px; }
+.f-texte { font-size: 15px; line-height: 1.55; }
+.f-source { font-size: 12.5px; }
+/* Une note n'est pas une source : le record de serie et la promesse de
+   retour se lisent pareil mais ne citent rien. Les confondre, c'est se
+   priver de tout controle automatique sur la presence des sources. */
+.f-note { font-size: 12.5px; }
+/* Quand les savants divergent, on affiche la phrase telle quelle. On n'arbitre
+   pas (section 5, champ `divergence`). */
+.f-divergence {
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: var(--or-voile);
+  border: 1px solid var(--or-bordure);
+  color: var(--or-texte);
+}
+.feuille[data-t="juste"] .f-divergence {
+  background: rgba(201, 162, 39, 0.14);
+  border-color: rgba(227, 201, 122, 0.4);
+  color: var(--or-clair);
+}
