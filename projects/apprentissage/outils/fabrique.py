@@ -98,6 +98,16 @@ def choisir_leurres(bonne, vivier, combien, rng, exclure=()):
             continue
         if not (BANDE_BASSE * n <= len(t) <= BANDE_HAUTE * n):
             continue
+        # UN LEURRE NE DOIT JAMAIS ETRE UN MORCEAU DE LA BONNE REPONSE.
+        # Trouve le 21 aout dans les invocations : la bonne reponse etait
+        # « Ils dirent: En verite, c'est vers notre Seigneur que nous
+        # retournerons » et un leurre disait « C'est vers notre Seigneur que
+        # nous retournerons ». La personne qui le choisit donne le meme texte
+        # et s'entend dire qu'elle s'est trompee. C'est le defaut le plus
+        # injuste possible : on repond vrai, le jeu dit faux.
+        a, b2 = normaliser(t), normaliser(bonne)
+        if len(a) > 20 and (a in b2 or b2 in a):
+            continue
         interdits.add(cle)          # jamais deux leurres identiques
         ok.append(t)
     if len(ok) < combien:

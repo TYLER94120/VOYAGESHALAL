@@ -177,7 +177,7 @@ def main():
                 theme='Reconnaitre un prophete',
                 surtitre='Sourate %s' % noms[s]['tr'],
                 arabe=arabe[(s, v)],
-                question_texte='De quel prophète parle ce verset ?',
+                question_texte='Quel prophète ce verset mentionne-t-il ?',
                 bonne=etiquette[nom],
                 leurres=leurres,
                 explication='Traduction du sens : « %s »' % francais[(s, v)],
