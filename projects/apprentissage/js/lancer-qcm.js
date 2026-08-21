@@ -43,9 +43,20 @@
     return r;
   }
 
+  /* UNE QUESTION DONT L'IMAGE MANQUE EST ECARTEE DU TIRAGE (cahier V2, 7.3).
+     Jamais affichee cassee, jamais affichee avec son cadre « photo a
+     sourcer » : ce cadre est fait pour les maquettes et pour dire au
+     proprietaire du site ce qu'il reste a faire, pas pour tomber sur
+     quelqu'un au milieu d'une partie. */
+  function jouable(q) {
+    if (q.type !== 'photo') { return true; }
+    return !!(window.IPAP_PHOTO && window.IPAP_PHOTO.fiche(q.image || ''));
+  }
+
   function composer(banque, d, reglages, combien) {
     var revoir = [], reste = [];
     for (var i = 0; i < banque.length; i++) {
+      if (!jouable(banque[i])) { continue; }
       var f = M.fiche(d, banque[i].id);
       (reglages.erreurs && f.aRevoir ? revoir : reste).push(banque[i]);
     }
@@ -96,7 +107,8 @@
       return r.json();
     }),
     facultatif('data/noms-sourates.json'),
-    facultatif('data/sections.json')
+    facultatif('data/sections.json'),
+    window.IPAP_PHOTO ? window.IPAP_PHOTO.charger() : Promise.resolve({})
   ])
     .then(function (tout) {
       var banque = tout[0], noms = tout[1], sections = tout[2] || [];

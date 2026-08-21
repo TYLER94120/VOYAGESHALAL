@@ -225,8 +225,13 @@ svg { display: block; flex-shrink: 0; }
   inset: 0;
   pointer-events: none;
 }
-/* Le contenu de tout ecran qui porte un fond passe devant lui. */
-.ecran > .corps { position: relative; z-index: 1; }
+/* Le contenu de tout ecran qui porte un fond passe devant lui.
+   PAS DE `z-index` ICI. J'en avais mis un, et il a fait passer le corps
+   AU-DESSUS du pied fixe : le bouton « Commencer les 20 questions » etait
+   visible, et un bouton d'option invisible recevait le clic a sa place.
+   `position: relative` suffit — a niveau egal, l'ordre du document tranche,
+   et le fond est declare avant. */
+.ecran > .corps { position: relative; }
 
 /* --------------------------------------------------------------------------
    LES EMPLACEMENTS PHOTO (cahier V2, section 6)

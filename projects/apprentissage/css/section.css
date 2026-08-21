@@ -1,0 +1,102 @@
+/* ==========================================================================
+   LA COUVERTURE DE SECTION — cahier V2, section 8, annexe C ecran D
+   --------------------------------------------------------------------------
+   Un ecran qui ne demande rien : il montre ce qu'il y a dans la section, et
+   laisse le bouton en bas. On decide en connaissance de cause au lieu de
+   tomber directement dans un reglage.
+   ========================================================================== */
+
+.couv-retour {
+  position: absolute;
+  left: 20px; top: 24px;
+  width: var(--cible); height: var(--cible);
+  border-radius: 14px;
+  background: rgba(11, 61, 38, 0.55);
+  border: 1px solid rgba(227, 201, 122, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.couv-pied {
+  position: absolute;
+  left: 20px; right: 20px; bottom: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.couv-sur {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.couv-sur span {
+  font-size: 10.5px;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+  color: var(--or-sur-photo);
+}
+.couv-titre {
+  font-family: var(--titre);
+  font-size: 31px;
+  font-weight: 400;
+  line-height: 1.12;
+  color: var(--sur-vert);
+}
+.couv-arabe {
+  font-family: var(--arabe);
+  font-size: 19px;
+  color: var(--or-arabe);
+  direction: rtl;
+  text-align: right;
+}
+
+/* Le corps laisse la place au pied fixe : sans cette reserve, le dernier
+   theme se cache derriere le bouton. */
+.couv-corps { padding-bottom: 130px; }
+
+.couv-quoi {
+  font-size: 15px;
+  line-height: 1.55;
+  color: #33413A;
+  text-wrap: pretty;
+}
+
+.pastilles { display: flex; flex-wrap: wrap; gap: 8px; }
+/* HAUTEUR MINIMALE, PAS HAUTEUR FIXE. Avec `height: 34px`, un theme long
+   comme « Reconnaitre une sourate » deborde de sa pastille et se pose sur le
+   titre au-dessus. Le contenu decide, le cadre suit. */
+.pastille {
+  min-height: 34px;
+  border-radius: 17px;
+  background: var(--papier);
+  border: 1px solid var(--trait);
+  display: flex;
+  align-items: center;
+  padding: 6px 13px;
+  font-size: 13px;
+  line-height: 1.25;
+  color: var(--texte-2);
+}
+
+/* La rosace de la section, en clair, comme une signature en bas de page.
+   C'est le meme motif que sur la tuile et derriere les versets : trois
+   endroits, un seul signe. */
+.couv-signature {
+  display: flex;
+  justify-content: center;
+  opacity: 0.22;
+  padding: 4px 0 10px 0;
+}
+
+.couv-fixe {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  border-top: 1px solid var(--trait);
+  background: var(--papier);
+  padding: 16px var(--marge) 24px var(--marge);
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  z-index: 2;
+}

@@ -386,6 +386,10 @@ Jeu.prototype.dessinerCarte = function () {
   // La carte SUIVANTE est deja montee dans le DOM (section 7.7) : aucun
   // chargement, aucun scintillement entre deux questions.
   $('carte-arriere').innerHTML = '';
+  // L'image de la carte SUIVANTE part se charger maintenant (V2 7.3) : sans
+  // ca, elle arriverait pendant le geste et le temps mort qu'on a supprime
+  // reviendrait par la fenetre.
+  if (window.IPAP_PHOTO) { window.IPAP_PHOTO.precharger(this.s.suivante()); }
 
   var carte = $('carte');
   carte.style.transform = '';

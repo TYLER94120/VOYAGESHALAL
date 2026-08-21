@@ -34,7 +34,16 @@
     return m ? decodeURIComponent(m[1]) : null;
   }
 
-  var slug = param('section') || 'sens-des-sourates';
+  /* Deux adresses menent ici : /section/<slug>/qcm, celle du cahier V2, et
+     reglages.html?section=<slug>, celle d'avant. La seconde reste valable —
+     elle est dans des liens deja poses et peut-etre dans un marque-page. */
+  function slugDemande() {
+    var m = /\/section\/([^/?#]+)\/qcm/.exec(window.location.pathname);
+    if (m) { return decodeURIComponent(m[1]); }
+    return param('section') || 'sens-des-sourates';
+  }
+
+  var slug = slugDemande();
   var d = M.charger();
   var r = { nombre: 20, mode: 'apprentissage' };
   for (var i = 0; i < OPTIONS.length; i++) { r[OPTIONS[i].cle] = OPTIONS[i].defaut; }

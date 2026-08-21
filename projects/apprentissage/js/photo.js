@@ -98,5 +98,22 @@
     return out;
   }
 
-  window.IPAP_PHOTO = { charger: charger, bloc: bloc, fiche: fiche, credits: credits };
+  /* PRECHARGER L'IMAGE DE LA CARTE SUIVANTE (cahier V2, 7.3).
+     Le premier atout du produit est qu'il n'y a aucun temps mort au geste :
+     la carte suivante est deja montee dans le DOM. Une image qui commence a
+     se charger au moment ou la carte arrive ruinerait cela. */
+  var DEJA = {};
+
+  function precharger(q) {
+    if (!q || q.type !== 'photo') { return; }
+    var f = fiche(q.image || '');
+    if (!f || DEJA[f.fichier]) { return; }
+    DEJA[f.fichier] = true;
+    var i = new Image();
+    i.decoding = 'async';
+    i.src = f.fichier + '.webp';
+  }
+
+  window.IPAP_PHOTO = { charger: charger, bloc: bloc, fiche: fiche,
+                        credits: credits, precharger: precharger };
 }());

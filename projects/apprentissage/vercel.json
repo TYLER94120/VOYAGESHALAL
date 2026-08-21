@@ -3,5 +3,9 @@
   "framework": null,
   "buildCommand": "",
   "installCommand": "",
-  "outputDirectory": "."
+  "outputDirectory": ".",
+  "rewrites": [
+    { "source": "/section/:slug/qcm", "destination": "/reglages.html" },
+    { "source": "/section/:slug", "destination": "/section.html" }
+  ]
 }

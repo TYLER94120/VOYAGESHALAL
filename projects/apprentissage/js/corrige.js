@@ -78,6 +78,22 @@
           + '<span class="rev-q">' + ech(q.question) + '</span></button>';
         h += '<div class="rev-corps">';
         if (q.arabe) { h += '<div class="carte-arabe" lang="ar" dir="rtl">' + ech(q.arabe) + '</div>'; }
+        // Le glyphe d'une question de calligraphie : la revoir sans lui ne
+        // veut rien dire, on ne saurait pas de quelle lettre on parle.
+        if (q.type === 'calligraphie' && q.glyphe) {
+          h += '<div class="rev-glyphe" lang="ar" dir="rtl">' + ech(q.glyphe) + '</div>';
+        }
+        // Une carte-photo se revoit en VIGNETTE de 64 px (V2 7.3), pas en
+        // pleine image : le corrige est une liste qu'on parcourt, pas une
+        // galerie.
+        if (q.type === 'photo' && window.IPAP_PHOTO) {
+          var fp = window.IPAP_PHOTO.fiche(q.image || '');
+          if (fp) {
+            h += '<div class="rev-vignette">' + window.IPAP_PHOTO.bloc({
+              cle: q.image, hauteur: 64, rayon: 10
+            }) + '</div>';
+          }
+        }
         if (rate && r && typeof r.choix === 'number' && r.choix !== q.bonne) {
           h += '<p class="rev-ligne" data-t="choix"><b>Ta réponse :</b> ' + ech(q.reponses[r.choix]) + '</p>';
         }

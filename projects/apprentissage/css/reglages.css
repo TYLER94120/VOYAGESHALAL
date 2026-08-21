@@ -119,10 +119,14 @@ input[type="range"]::-moz-range-thumb {
 .option[aria-pressed="true"] .bascule { background: var(--vert); }
 .option[aria-pressed="true"] .bascule::after { transform: translateX(20px); }
 
-/* Le pied reste sous le pouce, toujours. */
+/* Le pied reste sous le pouce, toujours — et AU-DESSUS de ce qui defile.
+   Sans le `z-index`, il suffit qu'un jour le corps de la page en recoive un
+   pour que le bouton devienne un decor : visible, mais c'est l'option cachee
+   dessous qui recoit le clic. C'est arrive. */
 .pied-fixe {
   position: fixed;
   left: 0; right: 0; bottom: 0;
+  z-index: 3;
   background: var(--fond-app);
   border-top: 1px solid var(--trait);
   padding: 12px var(--marge) calc(12px + env(safe-area-inset-bottom, 0px)) var(--marge);

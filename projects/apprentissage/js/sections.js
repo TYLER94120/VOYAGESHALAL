@@ -89,7 +89,9 @@
           + (l.n ? '<div class="barre"><i style="width:' + Math.max(2, l.pc) + '%"'
             + (l.pc < 10 ? ' data-faible="oui"' : '') + '></i></div>' : '');
         if (l.n) {
-          h += '<a class="tuile" href="reglages.html?section=' + ech(s.slug) + '">' + dedans + '</a>';
+          // Vers la COUVERTURE (cahier V2, §8), pas directement vers les
+          // reglages : on voit d'abord ce qu'il y a dans la section.
+          h += '<a class="tuile" href="section/' + ech(s.slug) + '">' + dedans + '</a>';
         } else {
           // Pas de lien : une section sans question n'a rien a montrer.
           h += '<div class="tuile" style="opacity:.55">' + dedans + '</div>';
