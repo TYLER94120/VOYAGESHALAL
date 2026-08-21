@@ -18,7 +18,7 @@
 // à 10 km » qu'un écran qui propose une pizza à quelqu'un qui veut des
 // sushi.
 import { readFileSync } from 'node:fs'
-import { forceEnvieGoogle, ENVIES } from '../lib/envies.mjs'
+import { forceEnvieGoogle, ENVIES, REQUETES_PLAT } from '../lib/envies.mjs'
 
 let fautes = 0
 const casse = (m) => { console.error(`❌ ${m}`); fautes++ }
@@ -61,13 +61,29 @@ for (const m of envies.matchAll(/id: '([a-z]+)'/g)) {
   if (!ENVIES.some((e) => e.id === m[1])) casse(`la case d'envie « ${m[1] }» ne correspond à aucune envie de lib/envies.ts`)
 }
 
-// ── 3. le moteur applique bien le filtre, le rayon et le tri ──
+// ── 3. chaque envie a des mots de PLAT pour le repli ──
+// « Restaurant asiatique » ne trouve rien parce que personne n'appelle son
+// enseigne comme ça. Sans mots de plat, l'envie retombe dans l'écran vide
+// du 21 août.
+for (const e of ENVIES) {
+  const r = REQUETES_PLAT[e.id]
+  if (!r?.length) casse(`l'envie « ${e.id} » n'a aucune requête de plat pour le repli`)
+  if (r?.some((q) => /^restaurant [a-zéèê]+$/.test(q) && r.length === 1)) {
+    casse(`l'envie « ${e.id} » ne se replie que sur un mot de catégorie — c'est le défaut d'origine`)
+  }
+}
+
+// ── 4. le moteur applique bien le filtre, le rayon et le tri ──
 const moteur = readFileSync('app/api/lieux/route.ts', 'utf8')
 if (!/forceEnvieGoogle/.test(moteur)) casse('le moteur n\'écarte plus les adresses hors sujet : une envie de sushi pourrait rendre une pizza')
 if (!/PALIERS_ENVIE_M = \[10000/.test(moteur)) casse('une envie précise ne part plus à 10 km — l\'écran vide de Fontenay reviendrait')
 if (!/nbAvis \?\? 0\) >= 20/.test(moteur)) casse('le tri au mérite a disparu : une note sur trois avis pourrait passer en tête')
 const ui = readFileSync('components/lieux/SurMesure.tsx', 'utf8')
 if (!/envieId: e\?\.id/.test(ui)) casse('l\'identifiant d\'envie ne part plus vers l\'API : le filtre serait inerte')
+if (!/REQUETES_PLAT/.test(moteur)) casse('le repli par mots de plat a disparu — « asiatique » redeviendrait introuvable')
+// Un écran vide ne doit JAMAIS affirmer une cause qu'on n'a pas mesurée.
+if (/le reste du quartier ne correspond pas/i.test(ui)) casse('le message d\'écran vide réaffirme une cause non mesurée')
+if (!/ecartesEnvie/.test(ui)) casse('l\'écran vide ne dit plus combien d\'adresses ont été écartées, ni pourquoi')
 
 if (fautes) { console.error(`\n${fautes} faute(s) — build arrêté.`); process.exit(1) }
 console.log(`✅ envie précise : ${CAS.length} cas vérifiés, ${ENVIES.length} envies filtrables, rayon 10 km et tri au mérite en place.`)

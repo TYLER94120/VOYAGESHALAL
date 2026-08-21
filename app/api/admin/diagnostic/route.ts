@@ -81,6 +81,11 @@ async function testerEnvie(origin: string, depart: { lat: number; lng: number },
     rayonAtteintKm: j.rayonAtteintKm ?? null,
     etatGoogle: j.etatGoogle,
     depuisLeCache: !!j.cache,
+    // Chaque étage, en clair : c'est ce qui distingue « Google n'a rien »
+    // de « tout a été écarté », et évite de corriger au jugé.
+    candidatsGoogle: j.candidatsEnvie ?? null,
+    ecartesCarPasLeBonPlat: j.ecartesEnvie ?? 0,
+    ecartesCarAlcool: j.ecartesAlcool ?? 0,
     retenues: toutes.length,
     // Le contrôle qui compte : lire les noms. Une seule pizza ici sur une
     // demande de sushi, et le filtre est à revoir.

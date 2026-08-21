@@ -19,6 +19,7 @@ export interface Envie {
 }
 
 export declare const ENVIES: Envie[]
+export declare const REQUETES_PLAT: Record<string, string[]>
 export declare function forceEnvie(type: string | undefined, nom: string | undefined, envieId: string): 0 | 1 | 2
 export declare function forceEnvieGoogle(primaryType: string | undefined, types: string[] | undefined, nom: string | undefined, envieId: string): 0 | 1 | 2
 export declare function correspondEnvie(type: string | undefined, envieId: string): boolean
