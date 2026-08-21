@@ -94,7 +94,11 @@
           h += '<a class="tuile" href="section/' + ech(s.slug) + '">' + dedans + '</a>';
         } else {
           // Pas de lien : une section sans question n'a rien a montrer.
-          h += '<div class="tuile" style="opacity:.55">' + dedans + '</div>';
+          // PAS D'OPACITE. Elle voilait aussi le TEXTE, qui tombait a
+          // rgb(130,135,129) — plus clair que le plancher #5F6D66 et sous le
+          // seuil WCAG. Une section a venir se signale par son cadre, pas en
+          // rendant son nom penible a lire.
+          h += '<div class="tuile" data-vide="oui">' + dedans + '</div>';
         }
       }
       document.getElementById('tuiles').innerHTML = h;

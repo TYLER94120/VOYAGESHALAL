@@ -140,6 +140,20 @@
 .tuile .nb  { position: relative; font-size: 12px; color: var(--texte-3); }
 .tuile .barre { position: relative; }
 
+/* UNE SECTION QUI N'A PAS ENCORE DE QUESTIONS.
+   Elle se distingue par son fond et son cadre, jamais en voilant son texte :
+   « aucun gris plus clair que #5F6D66 » ne souffre pas d'exception, et une
+   opacite de 55 % s'applique aussi aux lettres. */
+.tuile[data-vide] {
+  background: transparent;
+  border-style: dashed;
+}
+.tuile[data-vide] .rond { background: #EDEFEA; }
+.tuile[data-vide] .rond svg { opacity: 0.45; }
+.tuile[data-vide] .nom { color: var(--texte-2); font-weight: 500; }
+.tuile[data-vide] .nb  { color: var(--texte-3); }
+.tuile[data-vide] .filigrane { opacity: 0.05; }
+
 /* LE FILIGRANE (cahier V2, §3.3).
    La meme rosace que l'icone, en grand, debordant par le coin haut-droit.
    A 10 % : au-dessus le nom de section devient penible a lire, en dessous

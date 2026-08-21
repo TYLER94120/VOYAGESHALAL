@@ -137,3 +137,23 @@ input[type="range"]::-moz-range-thumb {
 @media (min-width: 900px) {
   .pied-fixe { max-width: 480px; margin: 0 auto; }
 }
+
+/* PAS D'OPACITE SUR DU TEXTE.
+   Une option a venir et un raccourci hors du contenu reel etaient voiles a
+   45 % et 40 % : leur texte tombait a rgb(150,153,146) et rgb(176,180,173),
+   plus clair que le plancher #5F6D66 et sous le seuil WCAG. Ils se
+   distinguent maintenant par leur fond et leur cadre, et leur texte reste
+   lisible — un reglage indisponible doit rester comprehensible. */
+.option[data-bientot] {
+  background: transparent;
+  border-style: dashed;
+}
+.option[data-bientot] .nom  { color: var(--texte-2); }
+.option[data-bientot] .note { color: var(--texte-3); }
+.option[data-bientot] .bascule { opacity: 0.4; }
+
+.raccourcis button[data-hors] {
+  border-style: dashed;
+  color: var(--texte-3);
+  background: transparent;
+}

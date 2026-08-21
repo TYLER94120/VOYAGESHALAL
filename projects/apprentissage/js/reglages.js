@@ -69,7 +69,8 @@
       b[i].setAttribute('aria-pressed', n === r.nombre ? 'true' : 'false');
       // Un raccourci au-dela du contenu reel n'est pas propose.
       b[i].disabled = n > plafond;
-      b[i].style.opacity = n > plafond ? '0.4' : '';
+      if (n > plafond) { b[i].setAttribute('data-hors', 'oui'); }
+      else { b[i].removeAttribute('data-hors'); }
     }
     var c = document.getElementById('curseur');
     c.value = r.nombre;
@@ -92,7 +93,7 @@
     var x = OPTIONS[o];
     h += '<button type="button" class="option" data-cle="' + x.cle + '"'
       + ' aria-pressed="' + (r[x.cle] ? 'true' : 'false') + '"'
-      + (x.bientot ? ' disabled style="opacity:.45"' : '') + '>'
+      + (x.bientot ? ' disabled data-bientot="oui"' : '') + '>'
       + '<span class="quoi"><span class="nom">' + ech(x.nom) + '</span>'
       + '<span class="note">' + ech(x.note) + '</span></span>'
       + '<span class="bascule" aria-hidden="true"></span></button>';
