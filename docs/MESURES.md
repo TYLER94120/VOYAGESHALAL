@@ -294,8 +294,9 @@ OpenStreetMap (© contributeurs OSM, ODbL). Pages aéroport : **7 publiées sur
 
 | | |
 |---|---|
-| Fiches | 202 → **211** |
+| Fiches | 202 → **218** |
 | Additifs E couverts | 28 → **37** |
+| Fiches de marques | +7 |
 | Liens morts entre fiches | inconnus → **0, testés** |
 | Fiches orphelines | 3 → **0** |
 
@@ -320,6 +321,38 @@ venaient de changer.** Et `scripts/test-liens.mjs`, écrit après avoir pointé
 un lien vers une fiche inexistante que le site avait avalée en silence : il
 a trouvé trois orphelines dans la foulée.
 
+**Puis sept marques, chacune vérifiée avant d'écrire.** Skittles, glace
+Extrême, Magnum, Häagen-Dazs, Philadelphia, Actimel, Buffalo Grill. Sept
+mécanismes différents — gélatine, enrobage au shellac, émulsifiants, alcool
+comme ingrédient, absence de présure, vitamine D ajoutée, certification d'une
+enseigne. Aucune ne répète une autre.
+
+Une seule est choisie par la mesure : **`glace extreme halal ou pas`** figure
+dans la Search Console, 1 impression, 1 clic, position 27, **sans fiche
+dédiée**. De la demande déjà constatée, pas une intuition.
+
+Les trois glaces (Extrême, Magnum, Häagen-Dazs) forment un groupe sous la
+fiche `glace-halal`, qui nommait déjà les trois pièges — gélatine, alcool,
+E471. Chaque marque en illustre un. La structure était là, il manquait les cas.
+
+### ⚠️ Ce qui contraint la production de fiches de marques
+
+**Open Food Facts est bloqué par la politique réseau de l'environnement**
+(`403 CONNECT`, refus de la passerelle) — donc pas d'accès direct à la base
+ouverte des compositions. **WebSearch fonctionne** : c'est par là que les sept
+compositions ont été relevées.
+
+Conséquence sur la façon d'écrire, et elle est permanente : on écrit
+**« la composition publiée »**, jamais **« ce produit contient »**. Une
+recette change ; une fiche qui apprend à lire l'étiquette reste vraie quand
+la recette a changé. Aucune fiche ne prononce « certifié » sur un produit qui
+ne l'est pas formellement.
+
+**Si l'accès à Open Food Facts était ouvert**, les fiches pourraient porter la
+composition avec sa source et sa date, et un script la revérifierait — le même
+schéma que les salles de prière OpenStreetMap sur VoyagesHalal. C'est une
+décision d'environnement, pas de code.
+
 ⚠️ Les titres datent du 20 août. Google met une à deux semaines à recalculer
 l'affichage : **leur effet ne sera lisible qu'au relevé du 1er septembre.**
 
@@ -332,11 +365,13 @@ l'affichage : **leur effet ne sera lisible qu'au relevé du 1er septembre.**
    que Marrakech français.
 2. **Abandonner /blog/meilleurs-hotels-halal-istanbul** — 181 impressions en
    position 49,6 face aux sites turcs installés. Perdu d'avance.
-3. ~~**Produire sur halalgpt**~~ — ✅ **fait le 21 août**, +9 fiches, branche
-   `claude/verdicts-attribues` à promouvoir. La suite n'est pas « encore des
-   numéros » : les additifs où le doute est réellement fondé sont désormais
-   couverts. Le prochain gisement est ailleurs — les **marques** (format
-   `mentos-halal`, 33 % de clic mesuré) et les **compléments**.
+3. ~~**Produire sur halalgpt**~~ — ✅ **fait le 21 août**, +16 fiches (9
+   additifs puis 7 marques), branche `claude/verdicts-attribues` à promouvoir.
+   Les additifs où le doute est fondé sont couverts ; continuer à numéroter
+   serait produire de la quantité. Suite naturelle : **les chaînes de
+   restauration** (Pizza Hut, Popeyes, Five Guys, Léon…), où la réponse n'existe
+   qu'au niveau du restaurant — c'est le mécanisme de la fiche Buffalo Grill,
+   et il est reproductible. Puis les **compléments alimentaires**.
 4. **Multiplier les leçons de sourates sur islampasapas** — le format marche
    (position 11), il manque du volume.
 5. **Trancher le chevauchement halalcheck / halalgpt.**
