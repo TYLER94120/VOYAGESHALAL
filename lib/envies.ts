@@ -24,20 +24,43 @@ export interface Envie {
   motsSurs: string[]
   /** famille de cuisine : correspondance POSSIBLE, annoncee comme telle */
   motsLarges?: string[]
+  /** 🔴 LES TYPES GOOGLE DU PLAT (20 août, retour de Mohamed : « quand on
+   *  veut des sushi on doit pas tomber sur des pizzas »). Places range les
+   *  restaurants par plat — `sushi_restaurant`, `pizza_restaurant` — et
+   *  c'est le signal le plus fiable dont on dispose : plus sûr qu'un mot
+   *  dans un nom, et disponible sur chaque résultat. */
+  typesSurs?: string[]
+  /** Types d'une famille voisine : acceptés, mais jamais en tête. */
+  typesLarges?: string[]
 }
 
 export const ENVIES: Envie[] = [
-  { id: 'burger', emoji: '🍔', fr: 'Burger', en: 'Burger', motsSurs: ['burger', 'hamburger'], motsLarges: ['american', 'diner', 'fast_food'] },
-  { id: 'kebab', emoji: '🥙', fr: 'Kebab', en: 'Kebab', motsSurs: ['kebab', 'shawarma', 'doner', 'durum'], motsLarges: ['grill', 'turkish'] },
-  { id: 'pizza', emoji: '🍕', fr: 'Pizza', en: 'Pizza', motsSurs: ['pizza'], motsLarges: ['italian', 'pasta'] },
-  { id: 'poulet', emoji: '🍗', fr: 'Poulet', en: 'Chicken', motsSurs: ['chicken', 'poulet'], motsLarges: ['fried', 'wings', 'rotisserie'] },
-  { id: 'indien', emoji: '🍛', fr: 'Indien', en: 'Indian', motsSurs: ['indian', 'pakistani', 'bangladeshi', 'biryani', 'tandoori', 'curry'], motsLarges: ['nepalese', 'sri_lankan'] },
-  { id: 'turc', emoji: '🇹🇷', fr: 'Turc', en: 'Turkish', motsSurs: ['turkish', 'pide', 'lahmacun', 'ottoman'], motsLarges: ['anatolian', 'kebab'] },
-  { id: 'oriental', emoji: '🌯', fr: 'Oriental', en: 'Middle East', motsSurs: ['lebanese', 'syrian', 'falafel', 'mezze', 'yemeni', 'iraqi', 'palestinian', 'egyptian'], motsLarges: ['arab', 'middle eastern', 'oriental'] },
-  { id: 'maghrebin', emoji: '🍲', fr: 'Maghrébin', en: 'Moroccan', motsSurs: ['moroccan', 'tajine', 'tagine', 'couscous', 'algerian', 'tunisian'], motsLarges: ['berber', 'african'] },
-  { id: 'asiatique', emoji: '🍜', fr: 'Asiatique', en: 'Asian', motsSurs: ['chinese', 'vietnamese', 'thai', 'sushi', 'japanese', 'korean', 'ramen', 'noodle', 'malaysian', 'indonesian', 'wok'], motsLarges: ['asian'] },
-  { id: 'poisson', emoji: '🐟', fr: 'Poisson', en: 'Seafood', motsSurs: ['seafood', 'fish', 'poisson'], motsLarges: ['grill'] },
-  { id: 'cafe', emoji: '☕', fr: 'Café · petit-déj', en: 'Coffee · breakfast', motsSurs: ['cafe', 'coffee', 'breakfast', 'bakery', 'pastry', 'crepe', 'ice_cream', 'juice', 'tea'], motsLarges: ['dessert', 'sandwich'] },
+  { id: 'sushi', emoji: '🍣', fr: 'Sushi', en: 'Sushi', motsSurs: ['sushi', 'sashimi', 'maki', 'sushiya'], motsLarges: ['japanese'],
+    typesSurs: ['sushi_restaurant'], typesLarges: ['japanese_restaurant', 'asian_restaurant'] },
+  { id: 'dessert', emoji: '🍰', fr: 'Dessert', en: 'Dessert', motsSurs: ['pastry', 'patisserie', 'dessert', 'cake', 'gateau', 'glace', 'ice_cream', 'crepe'], motsLarges: ['bakery'],
+    typesSurs: ['dessert_shop', 'ice_cream_shop', 'donut_shop', 'bakery'], typesLarges: ['cafe', 'coffee_shop'] },
+  { id: 'burger', emoji: '🍔', fr: 'Burger', en: 'Burger', motsSurs: ['burger', 'hamburger'], motsLarges: ['american', 'diner', 'fast_food'],
+    typesSurs: ['hamburger_restaurant'], typesLarges: ['fast_food_restaurant', 'american_restaurant'] },
+  { id: 'kebab', emoji: '🥙', fr: 'Kebab', en: 'Kebab', motsSurs: ['kebab', 'shawarma', 'doner', 'durum', 'kebap'], motsLarges: ['grill', 'turkish'],
+    typesSurs: ['turkish_restaurant'], typesLarges: ['middle_eastern_restaurant', 'fast_food_restaurant', 'meal_takeaway'] },
+  { id: 'pizza', emoji: '🍕', fr: 'Pizza', en: 'Pizza', motsSurs: ['pizza', 'pizzeria'], motsLarges: ['italian', 'pasta'],
+    typesSurs: ['pizza_restaurant'], typesLarges: ['italian_restaurant'] },
+  { id: 'poulet', emoji: '🍗', fr: 'Poulet', en: 'Chicken', motsSurs: ['chicken', 'poulet'], motsLarges: ['fried', 'wings', 'rotisserie'],
+    typesSurs: ['chicken_restaurant'], typesLarges: ['fast_food_restaurant', 'barbecue_restaurant'] },
+  { id: 'indien', emoji: '🍛', fr: 'Indien', en: 'Indian', motsSurs: ['indian', 'pakistani', 'bangladeshi', 'biryani', 'tandoori', 'curry'], motsLarges: ['nepalese', 'sri_lankan'],
+    typesSurs: ['indian_restaurant'], typesLarges: ['asian_restaurant'] },
+  { id: 'turc', emoji: '🇹🇷', fr: 'Turc', en: 'Turkish', motsSurs: ['turkish', 'pide', 'lahmacun', 'ottoman'], motsLarges: ['anatolian', 'kebab'],
+    typesSurs: ['turkish_restaurant'], typesLarges: ['middle_eastern_restaurant'] },
+  { id: 'oriental', emoji: '🌯', fr: 'Oriental', en: 'Middle East', motsSurs: ['lebanese', 'syrian', 'falafel', 'mezze', 'yemeni', 'iraqi', 'palestinian', 'egyptian'], motsLarges: ['arab', 'middle eastern', 'oriental'],
+    typesSurs: ['middle_eastern_restaurant', 'lebanese_restaurant'], typesLarges: ['mediterranean_restaurant'] },
+  { id: 'maghrebin', emoji: '🍲', fr: 'Maghrébin', en: 'Moroccan', motsSurs: ['moroccan', 'tajine', 'tagine', 'couscous', 'algerian', 'tunisian'], motsLarges: ['berber', 'african'],
+    typesSurs: ['moroccan_restaurant', 'african_restaurant'], typesLarges: ['mediterranean_restaurant', 'middle_eastern_restaurant'] },
+  { id: 'asiatique', emoji: '🍜', fr: 'Asiatique', en: 'Asian', motsSurs: ['chinese', 'vietnamese', 'thai', 'sushi', 'japanese', 'korean', 'ramen', 'noodle', 'malaysian', 'indonesian', 'wok'], motsLarges: ['asian'],
+    typesSurs: ['asian_restaurant', 'chinese_restaurant', 'thai_restaurant', 'vietnamese_restaurant', 'japanese_restaurant', 'korean_restaurant', 'ramen_restaurant', 'sushi_restaurant', 'indonesian_restaurant'], typesLarges: [] },
+  { id: 'poisson', emoji: '🐟', fr: 'Poisson', en: 'Seafood', motsSurs: ['seafood', 'fish', 'poisson'], motsLarges: ['grill'],
+    typesSurs: ['seafood_restaurant'], typesLarges: [] },
+  { id: 'cafe', emoji: '☕', fr: 'Café · petit-déj', en: 'Coffee · breakfast', motsSurs: ['cafe', 'coffee', 'breakfast', 'bakery', 'pastry', 'crepe', 'ice_cream', 'juice', 'tea'], motsLarges: ['dessert', 'sandwich'],
+    typesSurs: ['cafe', 'coffee_shop', 'bakery', 'breakfast_restaurant', 'brunch_restaurant'], typesLarges: ['dessert_shop', 'sandwich_shop'] },
 ]
 
 const sansAccent = (s: string) =>
@@ -63,6 +86,40 @@ export function forceEnvie(type: string | undefined, nom: string | undefined, en
   // Plat en etiquette secondaire, ou seule la famille de cuisine correspond
   if (tags.some((t) => envie.motsSurs.some((m) => t.includes(m)))) return 1
   if (envie.motsLarges?.length && tags.some((t) => envie.motsLarges!.some((m) => t.includes(m)))) return 1
+  return 0
+}
+
+/**
+ * 🔴 LA MÊME QUESTION, POSÉE À UN RÉSULTAT GOOGLE (20 août).
+ *
+ * « Quand on veut des sushi on doit pas tomber sur des pizzas. » Le défaut
+ * venait de ce qu'on envoyait le mot à Google et qu'on affichait TOUT ce
+ * qu'il rendait : sur une envie précise, sa recherche textuelle complète
+ * volontiers une liste courte avec des restaurants du quartier qui n'ont
+ * rien à voir. Rien ne relisait la réponse.
+ *
+ * Ici on la relit, avec ce que Places nous donne de plus solide : le TYPE
+ * du lieu (`pizza_restaurant`, `sushi_restaurant`…).
+ *   2 = le type du plat, ou le plat nommé dans l'enseigne — certain
+ *   1 = une famille voisine (japonais pour des sushi) — possible
+ *   0 = aucun rapport → l'adresse n'est pas montrée
+ */
+export function forceEnvieGoogle(
+  primaryType: string | undefined,
+  types: string[] | undefined,
+  nom: string | undefined,
+  envieId: string,
+): 0 | 1 | 2 {
+  const envie = ENVIES.find((e) => e.id === envieId)
+  if (!envie) return 0
+  const tousTypes = [primaryType, ...(types ?? [])].filter(Boolean) as string[]
+  if (envie.typesSurs?.length && tousTypes.some((t) => envie.typesSurs!.includes(t))) return 2
+  const n = nom ? sansAccent(nom) : ''
+  if (n && envie.motsSurs.some((m) => m.length >= 4 && n.includes(m))) return 2
+  if (envie.typesLarges?.length && tousTypes.some((t) => envie.typesLarges!.includes(t))) return 1
+  // Dernier recours : le mot de la famille dans l'enseigne (« Istanbul
+  // Grill » pour un kebab). Jamais une certitude, donc jamais un 2.
+  if (n && envie.motsLarges?.some((m) => m.length >= 5 && n.includes(m))) return 1
   return 0
 }
 

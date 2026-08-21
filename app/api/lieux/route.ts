@@ -5,6 +5,7 @@ import { ajouterMinutes } from '@/lib/trajets'
 import { motSpecifique } from '@/lib/typeMot.mjs'
 import { Redis } from '@upstash/redis'
 import { requeteGoogle } from '@/lib/requete.mjs'
+import { forceEnvieGoogle } from '@/lib/envies'
 import { accepte } from '@/lib/categorie.mjs'
 import { listAllSpots } from '@/lib/prayerSpots'
 import { CRITERES_DEFAUT, type Criteres } from '@/lib/criteres'
@@ -117,7 +118,7 @@ const CACHE_S = 24 * 3600
 // seulement 3 + 4. RETENUS (fiches enrichies, payantes) ne bouge pas ;
 // AUTRES passe de 4 à 17 : ces fiches sortent de la même réponse Google,
 // zéro appel de plus — leurs photos ne se paient qu'au swipe.
-const VERSION_MOTEUR = 'v5'
+const VERSION_MOTEUR = 'v6'
 const CANDIDATS = 20
 const RETENUS = 3
 const AUTRES = 17
@@ -455,6 +456,22 @@ async function passeProximite(lat: number, lng: number, c: Criteres, cle: string
 const PALIERS_M = [2000, 5000, 10000, 20000]
 
 /**
+ * 📏 UNE ENVIE PRÉCISE NE SE CHERCHE PAS DANS LE QUARTIER (20 août).
+ *
+ * « Au lieu de 2 km élargis à 10, pour proposer plus d'offres. »
+ * Les deux ordres de Mohamed ne se contredisent pas, ils portent sur deux
+ * demandes différentes :
+ *   · « Prier », « Manger », « Que faire » sans mot tapé → c'est une
+ *     question de PROXIMITÉ : 2 km d'abord, le plus proche gagne (son
+ *     retour du 16 août depuis Noisy-le-Grand).
+ *   · « des sushi », « une pizza » → c'est une question d'OFFRE. Il n'y a
+ *     pas un sushi de quartier à Fontenay-sous-Bois ; partir à 2 km, c'est
+ *     rendre l'écran vide qu'il a photographié. On part donc à 10 km, et
+ *     on classe au mérite : la meilleure note avec beaucoup d'avis.
+ */
+const PALIERS_ENVIE_M = [10000, 20000]
+
+/**
  * 🔴 « LE PLUS PROCHE » VEUT DIRE LE PLUS PROCHE — même sur une demande
  * écrite. Mohamed, 16 août, depuis Noisy-le-Grand : « premier résultat à
  * 15 min à pied à Villiers-sur-Marne, deuxième à 19 min EN VOITURE et
@@ -470,7 +487,7 @@ const PALIERS_M = [2000, 5000, 10000, 20000]
  */
 async function chercheParTexte(lat: number, lng: number, c: Criteres, cle: string, lang: string, texte: string, journal?: Journal, bilan?: Bilan): Promise<Candidat[] | null> {
   let dernier: Candidat[] | null = null
-  for (const rayon of PALIERS_M) {
+  for (const rayon of (c.envieId ? PALIERS_ENVIE_M : PALIERS_M)) {
     const trouves = await passe1(lat, lng, c, cle, lang, rayon, texte, journal)
     if (bilan) bilan.rayonAtteintM = rayon
     if (trouves === null) return dernier
@@ -677,7 +694,19 @@ function classer(cands: Candidat[], c: Criteres, rayon: number): Candidat[] {
   // le rang 13 est simplement le treizième plus proche — l'écarter
   // reviendrait à jeter des adresses parce qu'elles sont loin, alors que
   // c'est déjà le rôle du rayon.
-  return [...cands]
+  // 🍣 LE FILTRE D'ENVIE — la réponse de Google est RELUE. Sans lui, une
+  // envie de sushi rendait les restaurants du quartier que Google avait
+  // ajoutés pour compléter sa liste. Une adresse sans rapport n'est pas
+  // reléguée : elle n'est pas montrée.
+  const avecEnvie = c.envieId
+    ? cands.map((x) => ({ x, f: forceEnvieGoogle(x.primaryType, x.types, x.nom, c.envieId!) })).filter((e) => e.f > 0)
+    : cands.map((x) => ({ x, f: 2 as const }))
+  const forces = new Map(avecEnvie.map((e) => [e.x.id, e.f]))
+  if (c.envieId) {
+    console.info(`[lieux] envie « ${c.envieId} » : ${cands.length} candidats Google → ${avecEnvie.length} du bon plat`)
+  }
+
+  return avecEnvie.map((e) => e.x)
     .filter((x) => x.distanceM <= rayon)
     .filter((x) => (c.budget === 'petit' ? (x.prix ?? 2) <= 2 : c.budget === 'moyen' ? (x.prix ?? 2) <= 3 : true))
     // « Ouvert maintenant » reste un filtre dur quand il est demandé : une
@@ -696,6 +725,19 @@ function classer(cands: Candidat[], c: Criteres, rayon: number): Candidat[] {
       const fa = a.ouvert === false ? 1 : 0
       const fb = b.ouvert === false ? 1 : 0
       if (fa !== fb) return fa - fb
+      // 🍣 SUR UNE ENVIE : le mérite avant la distance (20 août — « les
+      // meilleurs notés avec beaucoup de commentaires »). Le plat exact
+      // passe devant la famille voisine ; ensuite la note, ensuite le
+      // nombre d'avis. Une note sur trois avis n'est pas une vérité : en
+      // dessous de 20 avis, l'adresse est jugée sur sa distance.
+      if (c.envieId) {
+        const pa = forces.get(a.id) ?? 0, pb = forces.get(b.id) ?? 0
+        if (pa !== pb) return pb - pa
+        const sa = (a.nbAvis ?? 0) >= 20 ? (a.note ?? 0) : 0
+        const sb = (b.nbAvis ?? 0) >= 20 ? (b.note ?? 0) : 0
+        if (sa !== sb) return sb - sa
+        if ((b.nbAvis ?? 0) !== (a.nbAvis ?? 0)) return (b.nbAvis ?? 0) - (a.nbAvis ?? 0)
+      }
       return a.distanceM - b.distanceM
     })
 }
@@ -968,7 +1010,7 @@ export async function POST(req: Request) {
   // ⚠️ Les mots tapés ENTRENT dans l'empreinte : sans eux, « pizza » se
   // faisait resservir le résultat de « kebab » — le cache reproduisait à
   // lui seul le défaut qu'on vient de corriger.
-  const empreinte = `${VERSION_MOTEUR}:${zone}:${c.categorie}:${c.quoi}:${(c.motsCles ?? '').toLowerCase()}:${profil.regime}:${profil.sansGluten ? 1 : 0}:${profil.sansLactose ? 1 : 0}:${profil.objectif}:${c.mode}:${c.budget}:${c.exigence}:${c.ouvertMaintenant ? 1 : 0}:${lang}`
+  const empreinte = `${VERSION_MOTEUR}:${zone}:${c.categorie}:${c.quoi}:${(c.motsCles ?? '').toLowerCase()}:${c.envieId ?? ''}:${profil.regime}:${profil.sansGluten ? 1 : 0}:${profil.sansLactose ? 1 : 0}:${profil.objectif}:${c.mode}:${c.budget}:${c.exigence}:${c.ouvertMaintenant ? 1 : 0}:${lang}`
   if (r) {
     try {
       const cache = await r.get<{ fiches: Fiche[]; autres: Fiche[]; source: string }>(`surmesure:cache:${empreinte}`)
