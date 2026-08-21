@@ -16,21 +16,43 @@ base de donnees, pas de serveur a regler, aucune cle a saisir.
 
 | | |
 |---|---|
-| depot | `TYLER94120/VOYAGESHALAL` |
-| branche deployee | **`claude/islamic-learning-platform-l7o7to`** |
-| Root Directory | **`projects/apprentissage`** |
-| adresse | **https://islampasapas.fr** (le `www` redirige en 308) |
-| deploiement | **automatique** : un push part en ligne en quelques secondes |
+| depot SERVI | **`TYLER94120/Islampasapas`**, branche `main` |
+| depot SOURCE | `TYLER94120/VOYAGESHALAL`, `projects/apprentissage/` |
+| adresse | **https://islampasapas.fr** |
+| deploiement | automatique quand on pousse sur **Islampasapas** |
 
-Le projet Vercel ne pointe **pas** sur `main`. C'est voulu : `main` porte
-l'application Next.js de VoyagesHalal, et ne contient aucun fichier de ce
-site. Il ne faut donc **jamais** fusionner ce travail dans `main` — le site
-n'en a pas besoin pour etre en ligne.
+### Ce que je croyais, et qui etait faux
 
-Le `vercel.json` du dossier dit « pas de framework, rien a construire, sers le
-dossier ». Sans lui, Vercel essaie de construire l'application Next.js de
-VoyagesHalal et le deploiement echoue. Le reglage vit dans le depot, pas dans
-un ecran qu'on oublie.
+J'ai ecrit ici, le 21 aout au matin, que le projet Vercel ecoutait la branche
+`claude/islamic-learning-platform-l7o7to` du depot `VOYAGESHALAL`. C'etait une
+phrase recopiee d'une ancienne note, que je n'avais pas verifiee.
+
+La verite, constatee en clonant le depot : **`islampasapas.fr` sert
+`Islampasapas`**, qui etait fige au 14 aout avec neuf lecons. Tout le travail
+d'une semaine partait dans `VOYAGESHALAL` et n'arrivait jamais en ligne. On a
+cherche du cote de Vercel pendant une heure, alors que le probleme etait qu'on
+poussait au mauvais endroit.
+
+### Deux copies, une seule commande
+
+Le site vit donc a deux endroits :
+
+- `VOYAGESHALAL/projects/apprentissage/` — la SOURCE : les pages, mais aussi
+  les generateurs de questions et les donnees brutes du Coran ;
+- `Islampasapas` — ce qui est SERVI, et rien d'autre.
+
+Deux copies recopiees a la main derivent toujours. On ne les recopie donc
+jamais a la main :
+
+```
+python3 outils/publier.py
+```
+
+Il vide le clone, recopie, puis **verifie fichier par fichier** que les deux
+copies se recoupent — et refuse de continuer sinon. Il n'envoie rien tout
+seul : il affiche la commande de publication a lancer.
+
+`outils/` et les `.md` ne traversent pas : ils ne servent qu'a fabriquer.
 
 ---
 
