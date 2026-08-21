@@ -332,10 +332,30 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
       navigator.geolocation.getCurrentPosition(
         (p) => { clearTimeout(to); res({ lat: p.coords.latitude, lng: p.coords.longitude }) },
         () => { clearTimeout(to); res(null) },
-        { timeout: delai - 500, maximumAge: 60_000 },
+        { timeout: Math.max(1000, delai - 500), maximumAge: 60_000 },
       )
     })
   }
+
+  /** ⏱ ATTENTE COURTE AVANT DE CHERCHER (21 août — « le temps de recherche,
+   *  ça met trois, quatre secondes »).
+   *
+   *  La cause était ici : la recherche attendait le GPS jusqu'à VINGT
+   *  secondes avant d'appeler quoi que ce soit. Sur un téléphone en 4G, le
+   *  GPS met une à quatre secondes — et pendant ce temps l'écran dit
+   *  « Recherche autour de toi… » sans que rien ne parte.
+   *
+   *  Le hook maison useInstantPosition applique depuis longtemps la bonne
+   *  règle : « un résultat utile s'affiche tout de suite, le GPS ne bloque
+   *  JAMAIS ». Autour de moi était resté en dehors.
+   *
+   *  Désormais : on laisse au GPS 1,2 seconde (souvent suffisant quand une
+   *  position est déjà en cache) ; sinon on part avec la position qu'on a
+   *  déjà (IP ou dernière connue), et le GPS continue en arrière-plan. */
+  const ATTENTE_GPS_MS = 1200
+  /** Une seule relance automatique par recherche : on corrige, on ne boucle
+   *  pas. */
+  const relanceFaite = useRef(false)
 
   /** Le contexte réel : heure, jour, et prochaine prière quand on la sait.
    *  C'est lui qui fait qu'une piste à midi n'est pas celle de 23 h. */
@@ -501,10 +521,35 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
       // `ville` est passée quand la barre unique vient de reconnaître une
       // ville dans la phrase : l'état React n'est pas encore à jour.
       const lieu = ville ?? destination
-      const exacte = lieu ? null : await gps(forcerGPS ? 25_000 : 20_000)
+      // Le bouton « ma position exacte » (forcerGPS) attend vraiment le GPS :
+      // là, c'est ce que la personne a demandé. Une recherche ordinaire,
+      // elle, ne se fait plus attendre.
+      const exacte = lieu ? null : await gps(forcerGPS ? 25_000 : ATTENTE_GPS_MS)
       const pos = lieu ?? exacte ?? posInitiale
       if (!pos) { setEtape('sans-position'); return }
       setPosUtilisee(lieu ? 'ville' : exacte ? 'gps' : 'ip')
+
+      // 🛰 Le GPS continue en arrière-plan. S'il arrive et qu'il nous place
+      // à plus de 300 m de là où on a cherché, la réponse n'est plus la
+      // bonne : on relance en silence, UNE fois. Mieux vaut une liste qui
+      // se corrige seule qu'une liste juste… pour le quartier d'à côté.
+      if (!lieu && !exacte && !relanceFaite.current) {
+        relanceFaite.current = true
+        gps(15_000).then((tardif) => {
+          if (!tardif) return
+          const d = Math.hypot(
+            (tardif.lng - pos.lng) * Math.cos((pos.lat * Math.PI) / 180) * 111_320,
+            (tardif.lat - pos.lat) * 110_570,
+          )
+          if (d > 300) {
+            console.info(`[surmesure] GPS arrivé après coup, ${Math.round(d)} m d'écart — on relance`)
+            setPosUtilisee('gps')
+            // (c, ecrit, forcerGPS, ville, silencieux) — la position GPS
+            // vient d'être obtenue : le cache de 60 s la rend immédiate.
+            lancer(c, ecrit, false, ville, true)
+          }
+        }).catch(() => {})
+      }
 
       const ac = new AbortController()
       const to = setTimeout(() => ac.abort(), 20_000)
@@ -1519,11 +1564,18 @@ function Photos({ photos, nom }: { photos?: string[]; nom: string }) {
 // La requête part chez Google TELLE QUELLE (le type d'abord, jamais
 // « halal » accolé — règle verrouillée par test-requete) ; le filtre
 // alcool et le statut honnête s'appliquent comme partout.
-const ENVIES: Record<string, { mot: string; requete: string }[]> = {
+// 🔴 21 août : cette grille de SECOURS (servie quand /api/lieux/envies n'a
+// pas répondu — réseau lent, quota, hors ligne) n'avait PAS d'identifiant.
+// Résultat : selon le chemin emprunté, taper « Sushi » envoyait le mot mais
+// pas l'envie, et le filtre du plat ne s'appliquait pas. Le même geste ne
+// donnait donc pas le même résultat selon que l'API avait répondu ou non —
+// le genre de défaut qu'on met des semaines à croire. Les identifiants sont
+// ceux de lib/envies.mjs, et un test les vérifie.
+const ENVIES: Record<string, { mot: string; requete: string; id?: string }[]> = {
   manger: [
-    { mot: 'Sushi', requete: 'sushi' }, { mot: 'Burger', requete: 'burger' }, { mot: 'Pizza', requete: 'pizza' },
-    { mot: 'Turc', requete: 'restaurant turc' }, { mot: 'Indien', requete: 'restaurant indien' }, { mot: 'Marocain', requete: 'restaurant marocain' },
-    { mot: 'Asiatique', requete: 'restaurant asiatique' }, { mot: 'Poulet', requete: 'poulet grillé' }, { mot: 'Dessert', requete: 'pâtisserie' },
+    { mot: 'Sushi', requete: 'sushi', id: 'sushi' }, { mot: 'Burger', requete: 'burger', id: 'burger' }, { mot: 'Pizza', requete: 'pizza', id: 'pizza' },
+    { mot: 'Turc', requete: 'restaurant turc', id: 'turc' }, { mot: 'Indien', requete: 'restaurant indien', id: 'indien' }, { mot: 'Marocain', requete: 'restaurant marocain', id: 'maghrebin' },
+    { mot: 'Asiatique', requete: 'restaurant asiatique', id: 'asiatique' }, { mot: 'Poulet', requete: 'poulet grillé', id: 'poulet' }, { mot: 'Dessert', requete: 'pâtisserie', id: 'dessert' },
   ],
   activite: [
     { mot: 'Parc', requete: 'parc' }, { mot: 'Musée', requete: 'musée' }, { mot: 'Piscine', requete: 'piscine' },
