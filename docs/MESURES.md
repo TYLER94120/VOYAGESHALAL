@@ -289,6 +289,37 @@ OpenStreetMap (© contributeurs OSM, ODbL). Pages aéroport : **7 publiées sur
 
 **21 août** — moteur d'envies : rayon 10 km, tri au mérite.
 
+**21 août — halalgpt, priorité n° 3 exécutée.** Branche
+`claude/verdicts-attribues`, non fusionnée, à promouvoir depuis Vercel.
+
+| | |
+|---|---|
+| Fiches | 202 → **211** |
+| Additifs E couverts | 28 → **37** |
+| Liens morts entre fiches | inconnus → **0, testés** |
+| Fiches orphelines | 3 → **0** |
+
+Trois corrections d'abord. Deux fiches prononçaient un verdict religieux au
+nom du site (« ✅ Halal ») : elles l'attribuent désormais aux organismes de
+certification. Un titre a été aligné sur la formulation réellement tapée
+(« glutamate monosodique » plutôt que « E621 »).
+
+Puis neuf additifs, choisis sur un critère : **il y a quelque chose à
+apprendre**, pas « il manque un numéro ». E542 (phosphate d'os — le seul
+d'origine animale par définition), E470, E475, E901 (cire d'abeille), E153
+(charbon végétal — la vraie question est le sucre de canne, pas l'additif),
+E334 (acide tartrique, récupéré sur les cuves à vin), E1510 (éthanol,
+solvant d'arômes, invisible sur l'étiquette), E640 (glycine), E163
+(anthocyanes, marc de raisin). Chacune répond à cinq choses : ce que c'est,
+d'où ça vient, ce qui reste incertain, où on le rencontre, comment vérifier.
+
+Deux outils permanents en sont sortis. `scripts/dates-fiches.mjs` a été
+relancé — il a révélé que les trois fiches corrigées annonçaient encore leur
+date de juillet : **le plan du site disait « rien de neuf » sur des pages qui
+venaient de changer.** Et `scripts/test-liens.mjs`, écrit après avoir pointé
+un lien vers une fiche inexistante que le site avait avalée en silence : il
+a trouvé trois orphelines dans la foulée.
+
 ⚠️ Les titres datent du 20 août. Google met une à deux semaines à recalculer
 l'affichage : **leur effet ne sera lisible qu'au relevé du 1er septembre.**
 
@@ -301,8 +332,11 @@ l'affichage : **leur effet ne sera lisible qu'au relevé du 1er septembre.**
    que Marrakech français.
 2. **Abandonner /blog/meilleurs-hotels-halal-istanbul** — 181 impressions en
    position 49,6 face aux sites turcs installés. Perdu d'avance.
-3. **Produire sur halalgpt** — format « [produit] halal ou pas », le seul
-   où la preuve est faite.
+3. ~~**Produire sur halalgpt**~~ — ✅ **fait le 21 août**, +9 fiches, branche
+   `claude/verdicts-attribues` à promouvoir. La suite n'est pas « encore des
+   numéros » : les additifs où le doute est réellement fondé sont désormais
+   couverts. Le prochain gisement est ailleurs — les **marques** (format
+   `mentos-halal`, 33 % de clic mesuré) et les **compléments**.
 4. **Multiplier les leçons de sourates sur islampasapas** — le format marche
    (position 11), il manque du volume.
 5. **Trancher le chevauchement halalcheck / halalgpt.**
