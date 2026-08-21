@@ -814,7 +814,15 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
   /** Choisir un mode : le MÊME geste depuis les cartes et depuis les
    *  pilules du swipe (Pray · Eat · Do). */
   const choisirMode = (v: NonNullable<Criteres['categorie']>) => {
-    const c = { ...crit, categorie: v } as Criteres
+    // 🔴 21 août — « je mets pizza, il ne trouve rien ; je reviens dans Que
+    // faire et ça me met une pizzeria ». La deuxième moitié venait d'ici :
+    // on ne changeait QUE la catégorie. Les mots de la recherche précédente
+    // (« pizza ») et l'identifiant d'envie restaient dans les critères, et
+    // « Que faire » partait donc chercher… des pizzas.
+    //
+    // Changer de mode, c'est repartir de zéro : la catégorie change, et ce
+    // qu'on cherchait avant s'efface avec elle.
+    const c = { ...crit, categorie: v, motsCles: '', envieId: undefined, rayonBonusKm: undefined } as Criteres
     setCrit(c)
     setAide({ cat: v })
     setPhrase('') // jamais de reliquat d'une recherche d'un autre mode

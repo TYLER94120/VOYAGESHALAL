@@ -55,3 +55,28 @@ if (!/d > 300 && encoreLaMienne\(\)/.test(code)) {
 
 if (fautes) { console.error(`\n${fautes} faute(s) — build arrêté.`); process.exit(1) }
 console.log(`✅ concurrence : aucun geste jeté, ${verifs} gardes sur les écritures — ce qui s'affiche correspond toujours à ce qui est allumé.`)
+
+// ═══ 🔀 CHANGER DE MODE, C'EST REPARTIR DE ZÉRO (21 août) ═══
+//
+// « Je mets pizza, il ne trouve rien. Je reviens dans Que faire et ça me
+// met une pizzeria. » La deuxième moitié venait du changement de mode :
+// on ne remplaçait QUE la catégorie, en gardant les mots de la recherche
+// précédente. « Que faire » partait donc chercher des pizzas.
+if (!/categorie: v, motsCles: '', envieId: undefined/.test(code)) {
+  casse('changer de mode ne remet plus les mots de la recherche à zéro — « Que faire » chercherait encore la dernière envie')
+}
+
+// ═══ 🍶 LE BARRAGE ALCOOL SUIT LE LIEU, PAS L'ONGLET ═══
+//
+// Il portait sur la CATÉGORIE DEMANDÉE : une pizzeria écartée en mode
+// Manger ressortait en mode « Que faire ». Le filtre le plus important du
+// site se contournait en changeant d'onglet.
+const moteurSrc = readFileSync('app/api/lieux/route.ts', 'utf8')
+const moteurCode = moteurSrc.split('\n').filter((l) => !/^\s*(\/\/|\*)/.test(l)).join('\n')
+if (/let classes = c\.categorie === 'manger' \? await verifierAlcool/.test(moteurCode)) {
+  casse('le barrage alcool dépend de nouveau de l\'onglet : il se contournerait via « Que faire »')
+}
+if (!/sertAManger\(x\.primaryType, x\.types\)/.test(moteurCode)) {
+  casse('le barrage alcool ne regarde plus si le LIEU sert à manger')
+}
+console.log('✅ modes : les mots ne débordent plus d\'un onglet à l\'autre, et le barrage alcool suit le lieu.')
