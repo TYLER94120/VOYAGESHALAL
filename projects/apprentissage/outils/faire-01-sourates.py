@@ -93,7 +93,7 @@ def main():
             questions.append(F.question(
                 qid=F.identifiant('sourates', 'A-%d-%d' % (s, v)),
                 section=SECTION,
-                theme='Sourate %s' % nom,
+                theme='Le sens des versets',
                 surtitre='Sourate %s' % nom,
                 arabe=ar,
                 question_texte='Ce verset se traduit par :',
@@ -168,7 +168,7 @@ def main():
     f = F.ecrire(SECTION, questions)
     formes = {}
     for q in questions:
-        formes[q['theme'].split(' ')[0]] = formes.get(q['theme'].split(' ')[0], 0) + 1
+        formes[q['theme']] = formes.get(q['theme'], 0) + 1
     print('  %d questions ecrites dans %s' % (len(questions), f.name))
     for k in sorted(formes):
         print('     %-24s %3d' % (k, formes[k]))

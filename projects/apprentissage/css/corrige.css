@@ -1,0 +1,63 @@
+/* ==========================================================================
+   LE CORRIGE COMPLET — ecran 9
+   ========================================================================== */
+
+.filtres { display: flex; gap: 8px; }
+.filtres button {
+  height: var(--cible);
+  padding: 0 16px;
+  border-radius: 22px;
+  border: 1px solid var(--trait-2);
+  background: var(--papier);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--texte-2);
+  min-width: 0;
+}
+/* « A revoir » actif par defaut, en rouge plein (ecran 9). */
+.filtres button[data-f="revoir"][aria-pressed="true"] {
+  background: var(--rouge); border-color: var(--rouge); color: var(--papier);
+}
+.filtres button[data-f="toutes"][aria-pressed="true"],
+.filtres button[data-f="justes"][aria-pressed="true"] {
+  background: var(--vert); border-color: var(--vert); color: var(--sur-vert);
+}
+
+.rev {
+  background: var(--papier);
+  border: 1px solid var(--trait);
+  border-radius: var(--r-bloc-2);
+  overflow: hidden;
+}
+/* Les questions justes sont la aussi, en retrait. */
+.rev[data-juste="oui"] { opacity: 0.75; }
+
+.rev-tete {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  padding: 13px 15px;
+  text-align: left;
+}
+.rev-etat { font-size: 11px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; }
+.rev-etat[data-t="rate"]  { color: var(--rouge-texte); }
+.rev-etat[data-t="juste"] { color: var(--vert-juste); }
+.rev-q { font-size: 14.5px; line-height: 1.35; }
+
+.rev-corps {
+  display: none;
+  flex-direction: column;
+  gap: 9px;
+  padding: 0 15px 15px 15px;
+}
+.rev[data-ouvert="oui"] .rev-corps { display: flex; }
+.rev[data-ouvert="oui"] .rev-q { font-weight: 600; }
+
+.rev-corps .carte-arabe { font-size: 24px; }
+.rev-ligne { font-size: 14px; line-height: 1.4; padding: 9px 11px; border-radius: 11px; }
+.rev-ligne[data-t="choix"] { background: var(--rouge-voile); border: 1px solid var(--rouge-bordure); color: var(--rouge-texte); }
+.rev-ligne[data-t="bonne"] { background: var(--vert-voile-3); border: 1px solid #CFE0D5; color: var(--vert-fonce); }
+.rev-expl   { font-size: 14px; line-height: 1.5; color: var(--encre); }
+.rev-source { font-size: 12.5px; color: var(--texte-2); }

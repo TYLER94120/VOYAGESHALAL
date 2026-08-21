@@ -1,0 +1,49 @@
+/* ==========================================================================
+   LE RESULTAT — ecran 8 du cahier des charges
+   ========================================================================== */
+
+.bandeau {
+  background: var(--vert-fonce);
+  color: var(--sur-vert);
+  border-radius: 0 0 var(--r-carte) var(--r-carte);
+  padding: 26px var(--marge) 30px var(--marge);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.bandeau .ornement { color: var(--or-clair); }
+.bandeau .ornement::before, .bandeau .ornement::after { background: rgba(227, 201, 122, 0.35); }
+
+.grand-anneau { position: relative; width: 168px; height: 168px; }
+.grand-anneau-pc {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+.grand-anneau-pc b {
+  font-family: var(--titre);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--sur-vert);
+}
+.grand-anneau-pc span { font-size: 13.5px; color: var(--sur-vert-2); }
+
+.bandeau-mot {
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--sur-vert-5);
+  text-align: center;
+  max-width: 300px;
+}
+
+.theme { display: flex; flex-direction: column; gap: 6px; }
+.theme-nom { font-size: 14.5px; font-weight: 600; }
+.barre i[data-ton="vert"]  { background: var(--vert-juste); }
+.barre i[data-ton="or"]    { background: var(--or); }
+.barre i[data-ton="rouge"] { background: var(--rouge); }
