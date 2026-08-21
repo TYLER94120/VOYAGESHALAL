@@ -1,0 +1,183 @@
+/* ==========================================================================
+   LES PAGES HORS QCM — ecrans 1, 2, 3, 8, 9
+   --------------------------------------------------------------------------
+   Valeurs de l'annexe A. Le fond est ivoire (--fond-app) : seul le QCM passe
+   au ton chaud.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   L'en-tete de page : marque + acces au profil
+   -------------------------------------------------------------------------- */
+
+.tete { display: flex; align-items: center; justify-content: space-between; }
+.marque { display: flex; align-items: center; gap: 9px; color: var(--or); }
+.marque b {
+  font-family: var(--titre);
+  font-size: 19px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  color: var(--vert-fonce);
+}
+
+/* --------------------------------------------------------------------------
+   La carte de reprise (ecran 1)
+   --------------------------------------------------------------------------
+   L'anneau montre l'avancement du QCM EN COURS (question 12 sur 50 = 24 %).
+   Ce n'est PAS la maitrise de la section, qui est une autre mesure et qui
+   s'affiche plus bas en barre. Le cahier des charges insiste : ne pas les
+   confondre.
+   -------------------------------------------------------------------------- */
+
+.reprise {
+  background: var(--vert);
+  border-radius: var(--r-bloc-2);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  box-shadow: 0 8px 24px rgba(15, 81, 50, 0.18);
+  width: 100%;
+  text-align: left;
+}
+.anneau { position: relative; width: 66px; height: 66px; flex-shrink: 0; }
+.anneau-pc {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--sur-vert);
+}
+.reprise .quoi { display: flex; flex-direction: column; gap: 4px; }
+.reprise .sur { font-size: 11px; letter-spacing: 1.4px; text-transform: uppercase; color: var(--sur-vert-3); }
+.reprise .nom { font-family: var(--titre); font-size: 19px; color: var(--sur-vert); }
+.reprise .ou  { font-size: 13.5px; color: var(--sur-vert-2); }
+
+/* --------------------------------------------------------------------------
+   Les trois chiffres (ecran 1)
+   -------------------------------------------------------------------------- */
+
+.chiffres { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.chiffre {
+  background: var(--papier);
+  border: 1px solid var(--trait);
+  border-radius: var(--r-bloc);
+  padding: 13px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+.chiffre b { font-family: var(--titre); font-size: 22px; font-weight: 400; color: var(--vert); }
+.chiffre span { font-size: 11.5px; color: var(--texte-2); text-align: center; }
+
+/* --------------------------------------------------------------------------
+   Une ligne de section, avec sa barre de maitrise
+   -------------------------------------------------------------------------- */
+
+.ligne {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  background: var(--papier);
+  border: 1px solid var(--trait);
+  border-radius: var(--r-bloc);
+  padding: 12px 14px;
+  width: 100%;
+  text-align: left;
+}
+.ligne .rond {
+  width: 38px; height: 38px;
+  border-radius: 11px;
+  background: var(--vert-voile);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--vert);
+}
+.ligne .milieu { flex-grow: 1; display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.ligne .nom { font-size: 15px; font-weight: 600; }
+.ligne .pc { font-size: 12.5px; color: var(--texte-2); flex-shrink: 0; }
+
+.barre { height: 4px; border-radius: 2px; background: var(--trait); }
+.barre i { display: block; height: 4px; border-radius: 2px; background: var(--vert); }
+/* Sous 10 %, la barre passe en or : un trait vert de trois pixels ne se voit
+   pas, et laisser croire a zero quand il y a quelque chose est un mensonge. */
+.barre i[data-faible="oui"] { background: var(--or); }
+
+/* --------------------------------------------------------------------------
+   La grille des 12 sections (ecran 2)
+   -------------------------------------------------------------------------- */
+
+.tuiles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 11px; }
+.tuile {
+  background: var(--papier);
+  border: 1px solid var(--trait);
+  border-radius: var(--r-bloc-2);
+  padding: 15px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  text-align: left;
+  min-height: 132px;
+}
+.tuile .rond {
+  width: 36px; height: 36px;
+  border-radius: 11px;
+  background: var(--vert-voile);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--vert);
+}
+.tuile .nom { font-size: 14.5px; font-weight: 600; line-height: 1.25; }
+.tuile .nb  { font-size: 12px; color: var(--texte-2); }
+
+/* --------------------------------------------------------------------------
+   La barre de navigation basse (ecran 1)
+   -------------------------------------------------------------------------- */
+
+.nav {
+  height: 70px;
+  border-top: 1px solid var(--trait);
+  background: var(--papier);
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: center;
+  padding-bottom: 6px;
+  position: sticky;
+  bottom: 0;
+}
+.nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  color: var(--texte-3);
+  min-height: var(--cible);
+  justify-content: center;
+}
+.nav a[aria-current="page"] { color: var(--vert); font-weight: 600; }
+
+/* --------------------------------------------------------------------------
+   L'ornement en separateur (ecran 8)
+   -------------------------------------------------------------------------- */
+
+.ornement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: var(--or);
+  padding: 8px 0;
+}
+.ornement::before, .ornement::after {
+  content: "";
+  height: 1px;
+  width: 54px;
+  background: var(--or-bordure);
+}
