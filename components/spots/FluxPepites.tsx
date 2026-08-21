@@ -153,7 +153,7 @@ function Ecran({ s, en, proche, thanked, confirmed, busy, onUtile, onConfirm, on
           </p>
         )}
         <div className="flux-cta-zone">
-          <a href={`https://www.google.com/maps/dir/?api=1&destination=${s.lat},${s.lng}`} target="_blank" rel="noopener noreferrer" onClick={onItin}
+          <a href={`https://www.google.com/maps/dir/?api=1&destination=${s.lat},${s.lng}`} onClick={onItin}
             style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 9, height: 54, marginTop: 12, borderRadius: 16, background: '#C9A84C', color: '#0B1A0F', fontWeight: 800, fontSize: 16.5, textDecoration: 'none' }}>
             <Ic d={D_ITIN} size={20} /> {en ? 'Directions' : 'Itinéraire'}
           </a>

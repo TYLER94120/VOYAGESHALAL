@@ -4,7 +4,6 @@ export default function ItineraireButton({ spotId, lat, lng, en = false }: { spo
   return (
     <a
       href={`https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`}
-      target="_blank" rel="noopener noreferrer"
       onClick={() => {
         try {
           navigator.sendBeacon?.('/api/community/itineraire', new Blob([JSON.stringify({ spotId })], { type: 'application/json' }))

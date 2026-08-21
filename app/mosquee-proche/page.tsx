@@ -120,7 +120,7 @@ export default function MosqueeProchePage() {
         className: '', iconAnchor: [first ? 18 : 14, first ? 36 : 28],
       })
       const marker = L.marker([m.lat, m.lng], { icon }).addTo(map).bindPopup(
-        `<div style="font-family:'DM Sans',sans-serif;min-width:180px"><strong style="color:#1B4332;font-size:14px">${m.name}</strong><br/><span style="color:#6B7280;font-size:12px">📍 ${fmt(m.distance)}</span>${m.address ? `<br/><span style="color:#6B7280;font-size:12px">${m.address}</span>` : ''}<br/><br/><a href="https://www.google.com/maps/dir/?api=1&destination=${m.lat},${m.lng}" target="_blank" style="background:#1B4332;color:white;padding:6px 12px;border-radius:8px;text-decoration:none;font-size:12px;font-weight:600">🗺️ ${en ? 'Directions' : 'Itinéraire'}</a></div>`
+        `<div style="font-family:'DM Sans',sans-serif;min-width:180px"><strong style="color:#1B4332;font-size:14px">${m.name}</strong><br/><span style="color:#6B7280;font-size:12px">📍 ${fmt(m.distance)}</span>${m.address ? `<br/><span style="color:#6B7280;font-size:12px">${m.address}</span>` : ''}<br/><br/><a href="https://www.google.com/maps/dir/?api=1&destination=${m.lat},${m.lng}" style="background:#1B4332;color:white;padding:6px 12px;border-radius:8px;text-decoration:none;font-size:12px;font-weight:600">🗺️ ${en ? 'Directions' : 'Itinéraire'}</a></div>`
       )
       markersRef.current.push(marker)
     })
@@ -213,7 +213,7 @@ export default function MosqueeProchePage() {
                   </div>
                   <div style={{ textAlign: 'right', flexShrink: 0 }}>
                     <p style={{ fontWeight: 700, color: index === 0 ? 'var(--or)' : 'var(--foret)', fontSize: '14px', margin: 0 }}>{fmt(m.distance)}</p>
-                    <a href={`https://www.google.com/maps/dir/?api=1&destination=${m.lat},${m.lng}`} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} style={{ fontSize: '11px', color: 'var(--foret)', fontWeight: 600, textDecoration: 'none' }}>{en ? 'Directions →' : 'Itinéraire →'}</a>
+                    <a href={`https://www.google.com/maps/dir/?api=1&destination=${m.lat},${m.lng}`} onClick={(e) => e.stopPropagation()} style={{ fontSize: '11px', color: 'var(--foret)', fontWeight: 600, textDecoration: 'none' }}>{en ? 'Directions →' : 'Itinéraire →'}</a>
                   </div>
                 </div>
               ))}

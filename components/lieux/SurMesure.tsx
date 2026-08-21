@@ -1442,7 +1442,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
           </button>
         )}
         {voirAutres && autres.map((f, i) => (
-          <a key={f.id ?? i} href={`https://www.google.com/maps/dir/?api=1&destination=${f.lat},${f.lng}`} target="_blank" rel="noopener noreferrer"
+          <a key={f.id ?? i} href={`https://www.google.com/maps/dir/?api=1&destination=${f.lat},${f.lng}`}
             onClick={() => compter('itineraires')}
             style={{ display: 'flex', alignItems: 'center', gap: 8, marginTop: 8, padding: '10px 12px', borderRadius: 12, border: '1px solid rgba(253,250,243,0.14)', textDecoration: 'none' }}>
             <span style={{ flex: 1, color: '#fdfaf3', fontWeight: 700, fontSize: 13.5, overflowWrap: 'anywhere' }}>{f.nom}</span>
@@ -1693,7 +1693,7 @@ function Carte({ f, en, mode, destination, allergie, choisie = false, onChoisir,
         )}
 
         <div style={{ display: 'flex', gap: 8, marginTop: 10, flexWrap: 'wrap' }}>
-          <a href={`https://www.google.com/maps/dir/?api=1&destination=${f.lat},${f.lng}`} target="_blank" rel="noopener noreferrer" onClick={onItineraire}
+          <a href={`https://www.google.com/maps/dir/?api=1&destination=${f.lat},${f.lng}`} onClick={onItineraire}
             style={{ minHeight: 46, display: 'inline-flex', alignItems: 'center', padding: '0 16px', borderRadius: 999, background: 'var(--or)', color: 'var(--nuit)', fontWeight: 900, fontSize: 13.5, textDecoration: 'none' }}>
             🚶 {t('Itinéraire', 'Directions')}
           </a>

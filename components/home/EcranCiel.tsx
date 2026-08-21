@@ -232,7 +232,6 @@ export default function EcranCiel({
             </p>
             <a
               href={tete.mapsUri ?? `https://www.google.com/maps/dir/?api=1&destination=${tete.lat},${tete.lng}`}
-              target="_blank" rel="noopener noreferrer"
               style={{ display: 'block', marginTop: 13, borderRadius: 16, padding: 14, textAlign: 'center', fontSize: 15.5, fontWeight: 700, background: accent, color: '#141018', textDecoration: 'none', minHeight: 56, boxSizing: 'border-box' }}
             >
               🚶 {mode === 'priere' ? 'Y aller' : 'Itinéraire'}
