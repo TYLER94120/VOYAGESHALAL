@@ -1,0 +1,78 @@
+/* ==========================================================================
+   LA PLANCHE DES MOTIFS — page de controle, cahier V2 section 11.1
+   --------------------------------------------------------------------------
+   Elle sert a voir les douze rosaces d'un coup, et le carrelage a ses
+   quatre opacites reelles sur ses quatre vrais fonds. Une opacite ne se
+   juge pas sur un nombre, elle se juge a l'oeil, sur le fond qui l'attend.
+   ========================================================================== */
+
+.planche {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.jeton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+}
+.jeton-cadre {
+  width: 104px; height: 104px;
+  border-radius: 18px;
+  background: var(--papier);
+  border: 1px solid var(--trait);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.jeton-nom {
+  font-size: 11.5px;
+  line-height: 1.25;
+  text-align: center;
+  color: var(--texte-2);
+  min-height: 28px;
+}
+.jeton-n {
+  font-size: 10px;
+  letter-spacing: 0.6px;
+  color: var(--texte-3);
+}
+
+/* --- Les quatre essais de carrelage ------------------------------------- */
+
+.essais {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.essai {
+  position: relative;   /* le calque de motif se pose dessus en absolu */
+  margin: 0;
+  height: 132px;
+  border-radius: var(--r-bloc-2);
+  border: 1px solid var(--trait);
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+.essai-nom {
+  position: relative;
+  padding: 8px 10px;
+  font-size: 10.5px;
+  line-height: 1.3;
+  color: var(--texte-2);
+}
+.essai-nom[data-sur="vert"] { color: var(--sur-vert-2); }
+
+/* Le calque de fond du §3.4 : pose AVANT le contenu, sous lui, muet pour
+   les lecteurs d'ecran et transparent au doigt. */
+.calque-motif,
+.essai-motif > .calque-motif {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.essai-motif { position: absolute; inset: 0; }

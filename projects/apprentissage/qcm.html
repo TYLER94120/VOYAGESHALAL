@@ -21,6 +21,12 @@
 
 <div class="ecran" id="ecran-qcm">
 
+  <!-- Le fond carrele (V2 section 3.4) : vert a 5,5 %, tuile 64, R 15.
+       Il est pose AVANT le contenu, en absolu sous lui, muet pour les
+       lecteurs d'ecran et transparent au doigt. -->
+  <div class="fond-motif" data-carrelage="#0F5132" data-op="0.055"
+       data-tuile="64" data-r="15" aria-hidden="true"></div>
+
   <!-- Barre haute : sortie, compteur, serie -->
   <div class="qcm-haut">
     <div class="qcm-barre">
@@ -81,6 +87,7 @@
 </noscript>
 
 <script src="js/icones.js"></script>
+<script src="js/geometrie.js"></script>
 <script src="js/memoire.js"></script>
 <script src="js/geste.js"></script>
 <script src="js/qcm.js"></script>

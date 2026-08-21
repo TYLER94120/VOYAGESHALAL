@@ -1,3 +1,7 @@
 # Fichiers produits par Python en important les outils. Rien a versionner.
 __pycache__/
 *.pyc
+
+# Le lien vers playwright-core, pose a la main pour lancer les controles.
+# (sans barre finale : ici c'est un lien symbolique, pas un dossier)
+node_modules

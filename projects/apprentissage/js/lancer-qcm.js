@@ -77,12 +77,35 @@
   if (p.mode === 'examen' || p.mode === 'apprentissage') { reglages.mode = p.mode; }
   if (p.serie === '0') { reglages.serie = false; }
 
-  fetch('data/questions/' + slug + '.json')
-    .then(function (r) {
+  /* Le bandeau enlumine et la rosace de la section (cahier V2, sections 3 et
+     4) demandent deux tables de plus. Elles sont demandees EN MEME TEMPS que
+     la banque, pas apres : trois allers-retours en file d'attente
+     retarderaient la premiere carte, et le cahier fixe le premier rendu utile
+     a moins d'une seconde et demie.
+
+     Si l'une des deux manque, on joue quand meme. Une carte sans cartouche
+     reste une carte ; une carte qui ne s'affiche pas n'est rien. */
+  function facultatif(url) {
+    return fetch(url).then(function (r) { return r.ok ? r.json() : null; })
+      ['catch'](function () { return null; });
+  }
+
+  Promise.all([
+    fetch('data/questions/' + slug + '.json').then(function (r) {
       if (!r.ok) { throw new Error('banque introuvable'); }
       return r.json();
-    })
-    .then(function (banque) {
+    }),
+    facultatif('data/noms-sourates.json'),
+    facultatif('data/sections.json')
+  ])
+    .then(function (tout) {
+      var banque = tout[0], noms = tout[1], sections = tout[2] || [];
+      var section = null;
+      for (var i = 0; i < sections.length; i++) {
+        if (sections[i].slug === slug) { section = sections[i]; break; }
+      }
+      Q.poserTables(noms, section);
+
       if (!banque.length) { return echouer('Cette section n\'a pas encore de questions.'); }
       var paquet = composer(banque, d, reglages, reglages.nombre);
       if (!paquet.length) { return echouer('Cette section n\'a pas encore de questions.'); }

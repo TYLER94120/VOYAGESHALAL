@@ -18,6 +18,27 @@
 }
 
 /* --------------------------------------------------------------------------
+   LE FOND CARRELE (cahier V2, section 3.4)
+
+   Vert a 5,5 %, tuile 64, rayon 15. Il est pose en absolu SOUS le contenu,
+   qui passe donc en `position: relative`. Ni le doigt ni les lecteurs
+   d'ecran ne le rencontrent.
+   -------------------------------------------------------------------------- */
+
+body[data-mode="qcm"] .ecran { position: relative; }
+
+.fond-motif {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+.fond-motif .calque-motif { position: absolute; inset: 0; }
+
+/* Tout ce qui vient apres le fond passe devant lui. */
+.qcm-haut, .zone, .qcm-pied { position: relative; z-index: 1; }
+
+/* --------------------------------------------------------------------------
    Barre haute : sortie, compteur, pastille de serie
    -------------------------------------------------------------------------- */
 
@@ -162,27 +183,22 @@
 .carte-arriere {
   position: absolute;
   left: 34px; right: 34px;
-  top: 50%;
-  height: 82%;
-  transform: translateY(-46%);
+  top: 14px; bottom: 24px;
   background: var(--papier-arriere);
   border: 1px solid var(--trait-2);
   border-radius: var(--r-carte);
 }
 
-/* LA CARTE EPOUSE SON CONTENU, ET SE CENTRE.
-   Elle remplissait toute la zone : sur un verset court, deux cents pixels de
-   blanc separaient la question des reponses, et la carte avait l'air cassee.
-   « inset » plus « margin: auto » la centre verticalement SANS toucher au
-   transform — celui-la appartient au geste, et le lui disputer ferait
-   sauter la carte a chaque glissement. */
+/* LA CARTE TIENT TOUTE LA ZONE, ET C'EST LE VERSET QUI ABSORBE LE VIDE.
+   Elle a d'abord epouse son contenu, pour supprimer les deux cents pixels
+   de blanc qui separaient la question des reponses sur un verset court. Le
+   cahier V2 (section 5.2) regle le meme probleme autrement, et mieux : la
+   carte garde sa hauteur, et c'est le BLOC DU VERSET qui grandit. La
+   calligraphie recoit l'espace au lieu qu'il soit perdu. */
 .carte {
   position: absolute;
   left: var(--marge); right: var(--marge);
   top: 0; bottom: 38px;
-  height: fit-content;
-  max-height: calc(100% - 38px);
-  margin: auto 0;
   overflow: hidden;
   background: var(--papier);
   border: 1px solid var(--trait);
@@ -197,7 +213,7 @@
      jusqu'a ce que tout tienne. La hauteur des cibles, elle, ne descend
      jamais : 44 px reste 44 px. */
   --echelle: 1;
-  padding: calc(24px * var(--echelle)) var(--marge);
+  padding: calc(18px * var(--echelle)) 18px calc(20px * var(--echelle)) 18px;
   display: flex;
   flex-direction: column;
   /* On attrape la carte partout, y compris en travers d'un verset. A la
@@ -211,9 +227,10 @@
 /* Le contenu. C'est LUI qui defile quand un verset est trop long — la carte,
    son cadre et ses tampons restent en place. */
 .carte-dedans {
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
-  gap: calc(16px * var(--echelle));
+  gap: calc(14px * var(--echelle));
   overflow-y: auto;
   scrollbar-width: none;            /* la barre du systeme n'a rien a faire la */
   min-height: 0;                    /* sinon un enfant flex refuse de retrecir */
@@ -285,14 +302,125 @@
   text-transform: uppercase;
   color: var(--or-texte);
 }
-.carte-arabe {
+
+/* --------------------------------------------------------------------------
+   LE BANDEAU ENLUMINE (cahier V2, section 4)
+
+   Le nom de la sourate n'est plus une ligne de texte : c'est un cartouche,
+   comme dans un manuscrit. Deux cadres embortes, un fleuron a chaque bout.
+
+   LES 40 PX LATERAUX NE SE REDUISENT PAS. Ce sont eux qui empechent un nom
+   long de venir toucher les fleurons ; le cahier le dit, et un nom comme
+   « Al-Mursalat » le prouve tout seul.
+   -------------------------------------------------------------------------- */
+
+.bandeau {
+  position: relative;
+  border: 1.5px solid var(--or);
+  border-radius: 14px;
+  background: var(--papier-enlumine);
+  padding: calc(11px * var(--echelle)) 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  flex-shrink: 0;
+}
+.bandeau-dedans {
+  position: absolute;
+  inset: 4px;
+  border: 1px solid rgba(201, 162, 39, 0.42);
+  border-radius: 10px;
+  pointer-events: none;
+}
+.bandeau-fleuron {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.bandeau-fleuron[data-cote="g"] { left: 9px; }
+.bandeau-fleuron[data-cote="d"] { right: 9px; }
+
+.bandeau-ar {
   font-family: var(--arabe);
-  font-size: calc(28px * var(--echelle));
+  font-size: calc(21px * var(--echelle));
+  color: var(--or-texte);
+  line-height: 1.3;
+  direction: rtl;
+  text-align: center;
+}
+.bandeau-fr {
+  font-size: calc(10.5px * var(--echelle));
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: var(--or-texte-2);
+  text-align: center;
+}
+
+/* --------------------------------------------------------------------------
+   LE BLOC DU VERSET (cahier V2, section 5.2)
+
+   `flex: 1 0 auto` : il GRANDIT pour absorber la hauteur libre — c'est ce
+   qui empeche le trou en bas de carte — et il ne RETRECIT jamais. Un verset
+   ecrase pour faire tenir la carte serait pire que du defilement : le texte
+   coranique est ce qu'il y a de plus important sur cet ecran.
+   -------------------------------------------------------------------------- */
+
+.carte-verset {
+  position: relative;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: calc(10px * var(--echelle));
+  padding: 6px 0 2px 0;
+}
+.carte-rosace {
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: var(--op-rosace-carte);
+  pointer-events: none;
+}
+.carte-arabe {
+  position: relative;
+  font-family: var(--arabe);
+  font-size: calc(33px * var(--echelle));
   color: var(--vert-fonce);
   direction: rtl;
-  text-align: right;
-  line-height: 1.6;
+  text-align: center;
+  line-height: 1.75;
 }
+.carte-translit {
+  position: relative;
+  font-size: calc(12.5px * var(--echelle));
+  letter-spacing: 0.3px;
+  color: var(--or-texte);
+  text-align: center;
+}
+
+/* Le filet dore a ornement, entre le verset et la question (V2 5.3). */
+.separateur {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.separateur i:first-child {
+  flex-grow: 1; height: 1px;
+  background: linear-gradient(90deg, rgba(201,162,39,0) 0%, rgba(201,162,39,0.55) 100%);
+}
+.separateur i:last-child {
+  flex-grow: 1; height: 1px;
+  background: linear-gradient(90deg, rgba(201,162,39,0.55) 0%, rgba(201,162,39,0) 100%);
+}
+
+.carte-question { font-size: calc(20px * var(--echelle)); }
+
+/* Sans verset — une lettre de l'alphabet, par exemple — c'est cet espaceur
+   qui pousse les reponses en bas de carte (ecran B de l'annexe C). */
+.pousse-carte { flex-grow: 1; }
 
 /* --------------------------------------------------------------------------
    Les quatre reponses, en grille 2 x 2

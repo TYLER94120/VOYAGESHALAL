@@ -81,6 +81,30 @@
   --ombre-carte:  0 14px 34px rgba(28, 38, 32, 0.12);
   --ombre-vert:   0 4px 14px rgba(15, 81, 50, 0.22);
   --ombre-or:     0 4px 14px rgba(201, 162, 39, 0.35);
+
+  /* --- V2, annexe D : la couche visuelle ---------------------------------
+     Ces valeurs ne se discutent pas et ne s'arrondissent pas. Les opacites
+     surtout : au-dessus, le motif gene la lecture ; en dessous, il
+     disparait et on a paye le poids pour rien. */
+  --papier-enlumine:  #FCF8EC;   /* bandeau enlumine et cadre de calligraphie */
+  --photo-fond:       #123D2B;   /* fond des emplacements photo */
+  --photo-voile:      linear-gradient(180deg, rgba(11,61,38,0.15) 0%, rgba(11,61,38,0.78) 100%);
+  --or-sur-photo:     #E3C97A;
+  --ivoire-sur-photo: #F2E7C8;
+  --or-arabe:         #C7B173;   /* arabe sur fond vert fonce */
+
+  --op-fond-qcm:      0.055;
+  --op-fond-bandeau:  0.13;
+  --op-fond-photo:    0.20;
+  --op-rosace-carte:  0.09;
+  --op-rosace-tuile:  0.10;
+  --op-rosace-cadre:  0.16;
+  --op-rosace-score:  0.30;
+
+  /* L'echelle de la carte de QCM vaut 1 partout ailleurs : le corrige et le
+     resultat reutilisent `.carte-arabe`, et une variable absente rendrait
+     invalide tout `calc()` qui s'en sert. */
+  --echelle: 1;
 }
 
 /* ==========================================================================

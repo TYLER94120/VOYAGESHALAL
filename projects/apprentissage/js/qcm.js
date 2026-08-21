@@ -66,6 +66,70 @@ Session.prototype.finie = function () { return this.pos >= this.paquet.length; }
    L'AFFICHAGE D'UNE CARTE
    ========================================================================== */
 
+/* --------------------------------------------------------------------------
+   CE QUE LA CARTE SAIT DE SA SOURATE ET DE SA SECTION
+
+   Le bandeau enlumine (V2 section 4) porte le nom arabe de la sourate, et la
+   rosace derriere le verset (V2 section 3.3) depend de la section. Ni l'un ni
+   l'autre n'est ecrit dans les questions : on les retrouve.
+
+   Le numero de sourate est lu dans la SOURCE — « Coran, sourate 114, verset
+   1 » — et non dans le surtitre. La source est le champ obligatoire, celui
+   que le controle python confronte deja au texte coranique ; le surtitre,
+   lui, est un libelle d'affichage. On s'appuie sur ce qui est verifie.
+   -------------------------------------------------------------------------- */
+
+var NOMS_SOURATES = null;   // { 114: {ar, tr}, ... }, pose par lancer-qcm.js
+var SECTION_MOTIF = null;   // { branches, ratio }, idem
+
+var SOURCE_SOURATE = /Coran,\s*sourate\s*(\d+)/;
+
+function sourateDe(q) {
+  if (!NOMS_SOURATES || !q || !q.source) { return null; }
+  var m = SOURCE_SOURATE.exec(q.source);
+  if (!m) { return null; }
+  return NOMS_SOURATES[parseInt(m[1], 10)] || null;
+}
+
+/* L'ornement fleuri des deux bouts du bandeau (V2 section 3.5). */
+function fleuron() {
+  return '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">'
+    + '<path d="M12 3l2.4 4.4L19 5.6l-2 4.9 4.4 1.5-4.4 1.5 2 4.9-4.6-1.8L12 21l-2.4-4.4L5 18.4'
+    + 'l2-4.9L2.6 12 7 10.5 5 5.6l4.6 1.8z" stroke="#C9A227" stroke-width="1.1" '
+    + 'stroke-linejoin="round"/></svg>';
+}
+
+/* Le bandeau enlumine : un cartouche de manuscrit, pas une ligne de texte.
+   Quand la question ne vient pas d'une sourate — une lettre de l'alphabet,
+   par exemple — il n'y a pas de cartouche : on garde le surtitre simple de
+   l'ecran B. On n'invente pas un nom arabe pour faire joli. */
+function bandeauHTML(q) {
+  var s = sourateDe(q);
+  if (!s) {
+    return '<div class="carte-tete">'
+      + '<span class="carte-surtitre">' + echapper(q.surtitre || q.theme || '') + '</span>'
+      + icone('signet', 18, 'signet-or') + '</div>';
+  }
+  return '<div class="bandeau">'
+    + '<span class="bandeau-dedans" aria-hidden="true"></span>'
+    + '<span class="bandeau-fleuron" data-cote="g">' + fleuron() + '</span>'
+    + '<span class="bandeau-fleuron" data-cote="d">' + fleuron() + '</span>'
+    + '<span class="bandeau-ar" lang="ar" dir="rtl">سورة ' + echapper(s.ar) + '</span>'
+    + '<span class="bandeau-fr">Sourate ' + echapper(s.tr) + '</span>'
+    + '</div>';
+}
+
+/* Le filet dore a ornement qui separe le verset de la question (V2 5.3). */
+function separateurHTML() {
+  return '<div class="separateur" aria-hidden="true">'
+    + '<i></i>'
+    + '<svg width="13" height="13" viewBox="0 0 24 24" fill="none">'
+    + '<path d="M12 1.6l2.7 5 5.6-2.5-2.5 5.6 5 2.7-5 2.7 2.5 5.6-5.6-2.5-2.7 5-2.7-5-5.6 2.5'
+    + '2.5-5.6-5-2.7 5-2.7-2.5-5.6 5.6 2.5z" stroke="#C9A227" stroke-width="1.3" '
+    + 'stroke-linejoin="round"/></svg>'
+    + '<i></i></div>';
+}
+
 /* LE DEDANS DE LA CARTE DEFILE, LA CARTE NON.
    Les tampons VALIDER et PASSER sont poses SUR la carte, pas dans son
    contenu : s'ils defilaient avec le texte, ils se promeneraient hors de
@@ -74,16 +138,31 @@ Session.prototype.finie = function () { return this.pos >= this.paquet.length; }
 function carteHTML(q, avecTampons) {
   if (!q) { return ''; }
   var h = '<div class="carte-dedans">';
-  h += '<div class="carte-tete">';
-  h += '<span class="carte-surtitre">' + echapper(q.surtitre || q.theme || '') + '</span>';
-  h += icone('signet', 18, 'signet-or');
-  h += '</div>';
+  h += bandeauHTML(q);
+
   if (q.arabe) {
+    // LE BLOC DU VERSET (V2 5.2). Il porte `flex-grow: 1` : c'est lui qui
+    // absorbe la hauteur libre quand les reponses sont courtes, et c'est ce
+    // qui empeche le trou en bas de carte. Il ne retrecit jamais — un verset
+    // ecrase serait pire que du defilement.
+    h += '<div class="carte-verset">';
+    if (SECTION_MOTIF && window.IPAP_GEO) {
+      h += '<div class="carte-rosace" aria-hidden="true">'
+        + window.IPAP_GEO.rosette(190, SECTION_MOTIF.branches, SECTION_MOTIF.ratio, '#0F5132', 1.1)
+        + '</div>';
+    }
     h += '<div class="carte-arabe" lang="ar" dir="rtl">' + echapper(q.arabe) + '</div>';
+    if (q.translitteration) {
+      h += '<div class="carte-translit">' + echapper(q.translitteration) + '</div>';
+    }
+    h += '</div>';
+    h += separateurHTML();
   }
-  h += '<div class="t-question">' + echapper(q.question) + '</div>';
-  // Plus d'espaceur : la carte epouse desormais son contenu, et pousser les
-  // reponses vers le bas creusait un trou de deux cents pixels au milieu.
+
+  h += '<div class="t-question carte-question">' + echapper(q.question) + '</div>';
+  // Sans verset, rien n'absorbe la hauteur libre : c'est cet espaceur qui
+  // pousse les reponses en bas de carte, comme a l'ecran B.
+  if (!q.arabe) { h += '<div class="pousse-carte"></div>'; }
   h += '<div class="reponses" role="group" aria-label="Les quatre reponses">';
   for (var i = 0; i < q.reponses.length; i++) {
     h += '<button type="button" class="reponse" data-i="' + i + '" aria-pressed="false">'
@@ -118,6 +197,7 @@ function Jeu(racine, session) {
 Jeu.prototype.demarrer = function () {
   var self = this;
   document.body.setAttribute('data-mode', 'qcm');
+  if (window.IPAP_GEO) { window.IPAP_GEO.poserMotifs(document); }
   this.dessinerSegments();
   this.dessinerCarte();
   this.clavier();
@@ -494,8 +574,24 @@ Jeu.prototype.clavier = function () {
   });
 };
 
+/* Le bandeau et la rosace ont besoin de deux tables que le moteur ne charge
+   pas lui-meme : les noms de sourates et le motif de la section. C'est
+   lancer-qcm.js qui les pose, avant de demarrer. Sans elles, la carte se
+   rend quand meme — sans cartouche et sans rosace — plutot que de refuser
+   de s'afficher. */
+function poserTables(noms, section) {
+  if (noms) {
+    NOMS_SOURATES = {};
+    for (var i = 0; i < noms.length; i++) { NOMS_SOURATES[noms[i].n] = noms[i]; }
+  }
+  if (section && section.branches) {
+    SECTION_MOTIF = { branches: section.branches, ratio: section.ratio };
+  }
+}
+
 window.IPAP_QCM = {
   Session: Session, Jeu: Jeu, melanger: melanger, carteHTML: carteHTML,
+  poserTables: poserTables,
   // Exportee pour que le controle de cadrage puisse passer la banque
   // entiere en revue sans jouer 1 252 parties.
   ajusterEchelle: ajusterEchelle,
