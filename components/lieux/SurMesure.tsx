@@ -316,6 +316,11 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [modeDemande])
   const enCours = useRef(false)
+  /** 🔢 Le numéro de la recherche courante. Toute écriture à l'écran le
+   *  vérifie : une réponse qui arrive après un autre geste est jetée. */
+  const jetonRecherche = useRef(0)
+  /** L'appel réseau de la recherche courante, pour pouvoir le couper. */
+  const acCourant = useRef<AbortController | null>(null)
   /** 📍 OÙ LA RÉPONSE APPARAÎT. Mohamed, 15 août : « Je clique sur Trouver
    *  et rien ne semble se passer. Il faut que je descende tout en bas de la
    *  page pour trouver la réponse. » Un clic sans effet visible, c'est un
@@ -504,8 +509,42 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
     } else lancer(c, txt.trim().length > 0, false, ville, false, triVoulu)
   }
 
+  /**
+   * 🔴🔴 LE DÉSORDRE, ET SA CAUSE — 21 août, capture à l'appui.
+   *
+   * Mohamed : « je clique sur Que faire, ça me sort des pizzas. Je clique
+   * sur pizza, il ne trouve rien. C'est un peu le désordre. » Sur la
+   * capture, la pilule allumée est « Que faire » et la carte affichée est
+   * « AU FOUR A PIZZA ». Trois semaines qu'on tourne autour.
+   *
+   * LA CAUSE TENAIT EN UNE LIGNE, ici même : `if (enCours.current) return`.
+   *
+   * Une recherche en cours FAISAIT SORTIR la suivante. Une recherche Google
+   * prend deux à quatre secondes ; pendant ce temps :
+   *   · le tap sur « Que faire » allumait bien la pilule (c'est l'interface
+   *     qui répond, immédiatement) ;
+   *   · mais la recherche correspondante ne partait JAMAIS — jetée en
+   *     silence ;
+   *   · et la recherche précédente, « Manger », se terminait et affichait
+   *     ses pizzas SOUS la pilule « Que faire ».
+   *
+   * Même mécanique pour « je clique sur pizza, il ne trouve rien » : le
+   * geste tombait pendant une recherche, il était perdu, l'écran gardait
+   * l'état d'avant. Rien n'était cassé — les gestes étaient ignorés.
+   *
+   * LA RÈGLE, DÉSORMAIS : un geste n'est JAMAIS ignoré. La nouvelle
+   * recherche annule la précédente et prend sa place ; toute réponse qui
+   * revient d'une recherche abandonnée est jetée au lieu d'être affichée.
+   * C'est le seul moyen que ce que montre l'écran corresponde toujours à
+   * ce qui est allumé dessus.
+   */
   async function lancer(c: Criteres, ecrit: boolean, forcerGPS = false, ville?: { lat: number; lng: number; nom: string } | null, silencieux = false, triInitial: string | null = null) {
-    if (enCours.current) return
+    // La recherche précédente perd sa place : on coupe son appel réseau et
+    // on invalide ses réponses à venir.
+    acCourant.current?.abort()
+    const mien = ++jetonRecherche.current
+    /** Cette recherche a-t-elle encore le droit d'écrire à l'écran ? */
+    const encoreLaMienne = () => mien === jetonRecherche.current
     enCours.current = true
     setProse(''); setFiches([]); setAutres([]); setVoirAutres(false); setPanne(null); setTriActif(triInitial); setEtape('cherche')
     // Dès le clic, la vue descend sur la zone de réponse : le squelette y
@@ -541,7 +580,11 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
             (tardif.lng - pos.lng) * Math.cos((pos.lat * Math.PI) / 180) * 111_320,
             (tardif.lat - pos.lat) * 110_570,
           )
-          if (d > 300) {
+          // Elle arrive plusieurs secondes plus tard : entre-temps, la
+          // personne a pu changer de catégorie ou d'envie. Sans cette
+          // garde, on lui réaffichait la recherche qu'elle venait de
+          // quitter.
+          if (d > 300 && encoreLaMienne()) {
             console.info(`[surmesure] GPS arrivé après coup, ${Math.round(d)} m d'écart — on relance`)
             setPosUtilisee('gps')
             // (c, ecrit, forcerGPS, ville, silencieux) — la position GPS
@@ -551,7 +594,9 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
         }).catch(() => {})
       }
 
+      if (!encoreLaMienne()) return
       const ac = new AbortController()
+      acCourant.current = ac
       const to = setTimeout(() => ac.abort(), 20_000)
       let corps: { fiches?: Fiche[]; autres?: Fiche[]; source?: string; etatGoogle?: 'ok' | 'vide' | 'muet' | 'sans-cle'; mode?: Mode; plafondMin?: number; rayonKm?: number; rayonAtteintKm?: number; ecartesAlcool?: number; ecartesEnvie?: number; relaches?: string[]; motManquant?: string | null } = {}
       try {
@@ -561,6 +606,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
           // délai réel renvoyé par le serveur.
           const j = await r.json().catch(() => ({})) as { secondes?: number }
           const dEntete = Number(r.headers.get('Retry-After') ?? 0)
+          if (!encoreLaMienne()) return
           setPanne({ quoi: 'quota', secondes: j.secondes || dEntete || 0 })
           setEtape('resultat')
           return
@@ -569,11 +615,16 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
       } catch {
         // Réseau coupé, requête abandonnée : c'est NOUS qui n'avons pas pu
         // partir, pas Google qui n'a pas répondu.
+        // Une recherche ABANDONNÉE au profit d'une plus récente n'est pas
+        // une panne : elle ne dit rien à l'écran.
+        if (!encoreLaMienne()) return
         setPanne({ quoi: 'reseau' })
         setEtape('resultat')
         return
       } finally { clearTimeout(to) }
 
+      // 🔴 LE POINT QUI FAISAIT APPARAÎTRE DES PIZZAS SOUS « QUE FAIRE ».
+      if (!encoreLaMienne()) return
       const trois = corps.fiches ?? []
       setFiches(trois); setAutres(corps.autres ?? []); setSource(corps.source ?? ''); setEtatGoogle(corps.etatGoogle ?? '')
       // La carte se peuple d'ici, et de nulle part ailleurs.
@@ -600,7 +651,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
       // visiteur » vide et l'IA répondait dans le vide (« votre question
       // n'a pas été complétée »). Le bloc et son appel meurent ici.
       if (trois.length && !scooter) redigerIA(trois, c, corps.mode ?? 'voiture', pr, !!lieu)
-    } finally { enCours.current = false }
+    } finally { if (encoreLaMienne()) enCours.current = false }
   }
 
   /**
@@ -763,7 +814,15 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
   /** Choisir un mode : le MÊME geste depuis les cartes et depuis les
    *  pilules du swipe (Pray · Eat · Do). */
   const choisirMode = (v: NonNullable<Criteres['categorie']>) => {
-    const c = { ...crit, categorie: v } as Criteres
+    // 🔴 21 août — « je mets pizza, il ne trouve rien ; je reviens dans Que
+    // faire et ça me met une pizzeria ». La deuxième moitié venait d'ici :
+    // on ne changeait QUE la catégorie. Les mots de la recherche précédente
+    // (« pizza ») et l'identifiant d'envie restaient dans les critères, et
+    // « Que faire » partait donc chercher… des pizzas.
+    //
+    // Changer de mode, c'est repartir de zéro : la catégorie change, et ce
+    // qu'on cherchait avant s'efface avec elle.
+    const c = { ...crit, categorie: v, motsCles: '', envieId: undefined, rayonBonusKm: undefined } as Criteres
     setCrit(c)
     setAide({ cat: v })
     setPhrase('') // jamais de reliquat d'une recherche d'un autre mode

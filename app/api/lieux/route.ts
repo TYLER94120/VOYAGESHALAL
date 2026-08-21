@@ -6,7 +6,7 @@ import { motSpecifique } from '@/lib/typeMot.mjs'
 import { Redis } from '@upstash/redis'
 import { requeteGoogle } from '@/lib/requete.mjs'
 import { forceEnvieGoogle, REQUETES_PLAT } from '@/lib/envies'
-import { accepte } from '@/lib/categorie.mjs'
+import { accepte, sertAManger } from '@/lib/categorie.mjs'
 import { listAllSpots } from '@/lib/prayerSpots'
 import { CRITERES_DEFAUT, type Criteres } from '@/lib/criteres'
 import { minutes, plafondMin, rayonM, RAYON_KM, type Mode } from '@/lib/trajet'
@@ -1200,10 +1200,29 @@ export async function POST(req: Request) {
       // AVANT de choisir les trois. C'est l'ordre inverse qui avait laissé
       // passer un bistrot : on filtrait trop tard, ou pas du tout.
       // La catégorie « mosquée » n'a pas à passer par là.
-      // Le barrage alcool ne concerne que MANGER : un parc n'est ni halal
-      // ni pas halal (itération 4, correction 3) — et la vérification
-      // payante sur des musées était de l'argent jeté.
-      let classes = c.categorie === 'manger' ? await verifierAlcool(tries, cle, bilan) : tries
+      // Le barrage alcool ne concerne que ce qui SERT À MANGER : un parc
+      // n'est ni halal ni pas halal (itération 4, correction 3) — et la
+      // vérification payante sur des musées était de l'argent jeté.
+      //
+      // 🔴 21 août — LA FAILLE QUE MOHAMED A TROUVÉE SANS LA CHERCHER.
+      // La condition portait sur la CATÉGORIE DEMANDÉE, pas sur la nature
+      // du lieu : « le barrage alcool ne concerne que MANGER ». Résultat,
+      // une pizzeria écartée en mode Manger ressortait en mode « Que
+      // faire » — le filtre le plus important du site se contournait en
+      // changeant d'onglet. Il porte désormais sur le LIEU : dès qu'un
+      // résultat sert à manger, il est vérifié, quel que soit l'onglet.
+      const aVerifier = c.categorie === 'manger'
+        ? tries
+        : tries.filter((x) => sertAManger(x.primaryType, x.types))
+      let classes = tries
+      if (aVerifier.length) {
+        const verifies = await verifierAlcool(aVerifier, cle, bilan)
+        const gardes = new Set(verifies.map((x) => x.id))
+        // Les lieux qui ne servent pas à manger passent sans être payés.
+        classes = c.categorie === 'manger'
+          ? verifies
+          : tries.filter((x) => !sertAManger(x.primaryType, x.types) || gardes.has(x.id))
+      }
 
       // 🍶 QUAND L'ALCOOL A TOUT EMPORTÉ, ON CHERCHE PLUS LOIN (21 août).
       // Mesuré à Noisy-le-Grand sur l'envie « Asiatique » : Google trouvait
