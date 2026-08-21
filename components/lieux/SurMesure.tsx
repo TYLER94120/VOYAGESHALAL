@@ -1258,6 +1258,29 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
             Elles s'affichaient DEUX FOIS : une liste ici, la même adresse en
             carte dominante juste en dessous. Une réponse donnée deux fois
             n'est pas deux fois plus utile — elle fait douter d'avoir compris. */}
+        {/* 🔴🔴 21 août — LE CUL-DE-SAC. « Une fois que ça ne trouve rien,
+            on ne peut pas revenir, ça bug. » Ce n'était pas un bug de
+            navigation : le bouton d'envie et la croix vivaient À
+            L'INTÉRIEUR du bloc qui ne s'affiche que s'il Y A des
+            résultats. Zéro résultat, donc zéro bouton, donc aucun moyen
+            de retirer le filtre ni d'en choisir un autre. Ils sortent
+            d'ici : c'est quand l'écran est vide qu'on en a le plus
+            besoin. */}
+        {scooter && etape === 'resultat' && aide?.cat && aide.cat !== 'mosquee' && (
+          <div style={{ marginTop: 12, display: 'flex', flexDirection: 'column', gap: 10 }}>
+            {envie && fiches.length === 0 && (
+              <button onClick={() => lancerEnvie(null)}
+                style={{ minHeight: 56, width: '100%', borderRadius: 999, border: '1px solid rgba(201,168,76,0.45)', background: 'rgba(201,168,76,0.14)', color: 'var(--or-clair, #E9D9A6)', fontSize: 16, fontWeight: 700, cursor: 'pointer' }}>
+                {t(`← Voir tout, sans le filtre ${envie.mot.toLowerCase()}`, `← See everything, without the ${envie.mot.toLowerCase()} filter`)}
+              </button>
+            )}
+            <button onClick={() => void ouvrirFeuille()}
+              style={{ minHeight: 56, width: '100%', borderRadius: 999, border: '1px dashed rgba(201,168,76,0.26)', background: 'transparent', color: 'var(--or-clair, #E9D9A6)', fontSize: 16, fontWeight: 600, cursor: 'pointer' }}>
+              {envie ? t('Changer d\u2019envie', 'Change craving') : t('Une envie précise ?', 'Craving something specific?')}
+            </button>
+          </div>
+        )}
+
         {scooter && envie && etape === 'resultat' && (
           <div style={{ marginTop: 14 }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
@@ -1316,12 +1339,6 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
                 en faire un autre, on en fait un autre. Le bouton reste, et
                 dit ce qu'il fait. La croix, elle, garde son seul rôle :
                 revenir à tout. */}
-            {scooter && aide?.cat && aide.cat !== 'mosquee' && (
-              <button onClick={() => void ouvrirFeuille()}
-                style={{ minHeight: 56, width: '100%', borderRadius: 999, marginTop: 4, border: '1px dashed rgba(201,168,76,0.26)', background: 'transparent', color: 'var(--or-clair, #E9D9A6)', fontSize: 16, fontWeight: 600, cursor: 'pointer' }}>
-                {envie ? t('Changer d\u2019envie', 'Change craving') : t('Une envie précise ?', 'Craving something specific?')}
-              </button>
-            )}
             {/* La seule mention : plus d'adresse postale ni de « trouvée sur
                 Google Maps » sur les cartes — la fiche détail (ℹ) les garde. */}
             {scooter && feuilleEnvies && aide?.cat && (

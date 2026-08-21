@@ -1181,16 +1181,16 @@ export async function POST(req: Request) {
     // si l'écran allait rester vide, et seulement pour compléter : les
     // adresses déjà trouvées restent, on ajoute celles qui manquaient.
     if (c.envieId && (cands?.length ?? 0) < RETENUS) {
+      // ⏱ EN PARALLÈLE, PAS EN FILE (21 août : « le temps de recherche met
+      // trois, quatre secondes »). Quatre requêtes enchaînées, c'est quatre
+      // allers-retours ajoutés bout à bout ; lancées ensemble, c'est le
+      // temps de la plus lente. Même nombre d'appels, même coût.
+      const requetes = (REQUETES_PLAT[c.envieId] ?? []).slice(0, 4)
+      const lots = await Promise.all(requetes.map((q) => passe1(lat, lng, c, cle, lang, PALIERS_ENVIE_M[0], q, journal)))
       const vus = new Set((cands ?? []).map((x) => x.id))
-      for (const requete of (REQUETES_PLAT[c.envieId] ?? []).slice(0, 4)) {
-        if ((cands?.length ?? 0) >= RETENUS + AUTRES) break
-        const encore = await passe1(lat, lng, c, cle, lang, PALIERS_ENVIE_M[0], requete, journal)
-        if (!encore?.length) continue
-        const neufs = encore.filter((x) => !vus.has(x.id))
-        neufs.forEach((x) => vus.add(x.id))
-        cands = [...(cands ?? []), ...neufs]
-        console.info(`[lieux] repli envie « ${c.envieId} » via « ${requete} » : +${neufs.length} candidat(s)`)
-      }
+      const neufs = lots.flatMap((l) => l ?? []).filter((x) => (vus.has(x.id) ? false : (vus.add(x.id), true)))
+      if (neufs.length) cands = [...(cands ?? []), ...neufs]
+      console.info(`[lieux] repli envie « ${c.envieId} » : ${requetes.length} requêtes de plat en parallèle → +${neufs.length} candidat(s)`)
     }
 
     if (cands !== null) etatGoogle = cands.length ? 'ok' : 'vide'
@@ -1203,7 +1203,26 @@ export async function POST(req: Request) {
       // Le barrage alcool ne concerne que MANGER : un parc n'est ni halal
       // ni pas halal (itération 4, correction 3) — et la vérification
       // payante sur des musées était de l'argent jeté.
-      const classes = c.categorie === 'manger' ? await verifierAlcool(tries, cle, bilan) : tries
+      let classes = c.categorie === 'manger' ? await verifierAlcool(tries, cle, bilan) : tries
+
+      // 🍶 QUAND L'ALCOOL A TOUT EMPORTÉ, ON CHERCHE PLUS LOIN (21 août).
+      // Mesuré à Noisy-le-Grand sur l'envie « Asiatique » : Google trouvait
+      // bien des adresses, et les trois servaient de l'alcool. Le barrage
+      // fait son travail — il ne bougera pas —, mais abandonner à 10 km
+      // n'est pas une réponse : dans une couronne un peu plus large, il y a
+      // des tables sans alcool. On repart donc une fois, jusqu'à 20 km,
+      // AVANT de rendre un écran vide.
+      if (c.envieId && classes.length === 0 && (bilan.ecartesAlcool ?? 0) > 0 && (bilan.rayonAtteintM ?? 0) < PALIERS_ENVIE_M[1]) {
+        const large = await passe1(lat, lng, c, cle, lang, PALIERS_ENVIE_M[1], avecProfil, journal)
+        if (large?.length) {
+          bilan.rayonAtteintM = PALIERS_ENVIE_M[1]
+          const triesLarge = ecarterLAbsurde(classer(large, c, PALIERS_ENVIE_M[1], bilan))
+            .filter((x) => !spots.some((sp) => distM(sp.lat, sp.lng, x.lat, x.lng) < 60))
+          classes = c.categorie === 'manger' ? await verifierAlcool(triesLarge, cle, bilan) : triesLarge
+          console.info(`[lieux] alcool a tout écarté à 10 km — seconde passe à 20 km : ${classes.length} retenue(s)`)
+        }
+      }
+
       const placesRetenues = classes.slice(0, Math.max(0, RETENUS - spots.length))
       // PASSE 2 : uniquement sur les retenues.
       const enrichies = await Promise.all(placesRetenues.map((x) => enrichir(x, cle, lang, origin, c.categorie)))
