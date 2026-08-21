@@ -1,4 +1,5 @@
 import { titreSeo } from '@/lib/titre-seo'
+import { titresVilleEn, titresVilleFr, descriptionVille } from '@/lib/titreVille.mjs'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { readdirSync, readFileSync } from 'fs'
@@ -91,39 +92,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   //    en première page. Le chiffre est le MÊME que celui du socle rendu
   //    sur la page — compté, jamais annoncé à l'aveugle.
   const nbPriere = compteurVille(city) ?? nbMosq
+  const sourceOsm = compteurVille(city) != null
   const title = isEN
-    ? (nbPriere > 0
-        ? titreSeo([
-            `Where to pray in ${nomLocal}: ${nbPriere} prayer places, halal food`,
-            `Where to pray in ${nomLocal}: ${nbPriere} prayer places`,
-            `Where to pray in ${nomLocal}: ${nbPriere} mosques`,
-            `Where to pray in ${nomLocal}`,
-          ])
-        : titreSeo([`Halal travel in ${nomLocal}: mosques and halal food`, `Halal travel in ${nomLocal}`]))
-    : (nbPriere > 0
-        ? titreSeo([
-            `Où prier à ${nomLocal} : ${nbPriere} lieux de prière et restos halal`,
-            `Où prier à ${nomLocal} : ${nbPriere} lieux de prière`,
-            `Où prier à ${nomLocal} : ${nbPriere} mosquées`,
-            `Où prier à ${nomLocal}`,
-          ])
-        : titreSeo([`Voyager halal à ${nomLocal} : mosquées et restos`, `Voyager halal à ${nomLocal}`]))
-  const chiffresEn = [
-    nbRestos > 0 ? `${nbRestos} halal restaurants` : null,
-    nbMosq > 0 ? `${nbMosq} mosques` : null,
-    nbHotels > 0 ? `${nbHotels} hotels` : null,
-  ].filter(Boolean).join(', ')
-  const chiffresFr = [
-    nbRestos > 0 ? `${nbRestos} restaurants halal` : null,
-    nbMosq > 0 ? `${nbMosq} mosquées` : null,
-    nbHotels > 0 ? `${nbHotels} hôtels` : null,
-  ].filter(Boolean).join(', ')
-  // La description COMPLÈTE le titre (qui porte déjà les lieux de prière)
-  // et annonce la preuve : source affichée, gratuit, sans compte. Sous
-  // 155 caractères, sinon Google la coupe.
-  const description = isEN
-    ? `${chiffresEn || 'Halal addresses'} in ${nomLocal}, prayer times in the city's own time zone. Source shown on every listing. Free, no account.`.slice(0, 155)
-    : `${chiffresFr || 'Adresses halal'} à ${nomLocal}, horaires de prière au fuseau de la ville. Source affichée sur chaque adresse. Gratuit, sans compte.`.slice(0, 155)
+    ? titreSeo(titresVilleEn(nomLocal, nbPriere, sourceOsm))
+    : titreSeo(titresVilleFr(nomLocal, nbPriere, sourceOsm))
+
+  const description = descriptionVille({
+    nom: nomLocal,
+    nbRestos,
+    nbHotels,
+    en: isEN,
+  })
+
   const ogTitle = isEN
     ? `${nomLocal} Halal Travel Guide 2026 — Muslim-Friendly`
     : `${nomLocal} Halal 2026 — Guide Voyage Musulman`
