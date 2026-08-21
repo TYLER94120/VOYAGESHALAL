@@ -57,7 +57,7 @@ export interface Fiche {
   conseilIA?: string
   marcheMin?: number; voitureMin?: number
   cuisine?: string; cuisineSource?: string
-  statut: string; alcool?: 'oui' | 'non' | 'inconnu'; source: 'spot' | 'google' | 'osm'
+  statut: string; alcool?: 'non' | 'inconnu'; source: 'spot' | 'google' | 'osm'
   osmId?: string
 }
 
@@ -1628,9 +1628,7 @@ function Carte({ f, en, mode, destination, allergie, choisie = false, onChoisir,
         {/* 🔴 §6 — une ligne alcool sur CHAQUE fiche, jamais optionnelle.
             Verte quand Google l'affirme, ambre quand on ne sait pas : on
             ne rassure jamais à tort. */}
-        {/* 21 août : « oui » se distingue au premier coup d'œil — c'est
-            l'information qui décide, pour beaucoup, d'entrer ou pas. */}
-        <p style={{ color: f.alcool === 'non' ? '#7dd87d' : f.alcool === 'oui' ? '#ffb4a2' : 'rgba(253,250,243,0.72)', fontSize: 12.5, fontWeight: 700, margin: '3px 0 0' }}>
+        <p style={{ color: f.alcool === 'non' ? '#7dd87d' : 'rgba(253,250,243,0.72)', fontSize: 12.5, fontWeight: 700, margin: '3px 0 0' }}>
           {ligneAlcool(f.alcool ?? 'inconnu', en)}
         </p>
         {/* 🔴 LA LIGNE ALLERGIE — fixe, visible, jamais reformulée. Une

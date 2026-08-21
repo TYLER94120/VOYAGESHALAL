@@ -26,15 +26,6 @@ export type Verdict =
   | { garde: true; alcool: 'non' | 'inconnu' }
   | { garde: false; motif: 'type-boisson' | 'sert-alcool' | 'doute-nom' | 'doute-porc' }
 
-/** Ce qu'on FAIT du verdict depuis le 21 août : un bar reste dehors, un
- *  restaurant qui sert de l'alcool entre avec sa mention. */
-export interface Classement {
-  affichable: boolean
-  alcool: 'oui' | 'non' | 'inconnu'
-  motif?: 'type-boisson' | 'sert-alcool' | 'doute-nom' | 'doute-porc'
-}
-
 export function verdictAlcool(l: SignauxLieu): Verdict
-export function classerAlcool(l: SignauxLieu): Classement
-export function ligneAlcool(alcool: 'oui' | 'non' | 'inconnu', en: boolean): string
+export function ligneAlcool(alcool: 'non' | 'inconnu', en: boolean): string
 export function mentionPermanente(en: boolean): string
