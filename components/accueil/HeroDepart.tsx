@@ -18,14 +18,21 @@ export default function HeroDepart() {
   const [etat, setEtat] = useState<'repos' | 'cherche' | 'refus'>('repos')
 
   async function autourDeMoi() {
+    // ⏱ 21 août — « le temps d'ouverture met trois, quatre secondes ».
+    //
+    // Ce bouton attendait le GPS HAUTE PRÉCISION (cache ignoré, jusqu'à
+    // une quinzaine de secondes de marge) avant de seulement CHANGER DE
+    // PAGE. La page suivante refaisait ensuite sa propre demande. On
+    // faisait donc patienter devant un écran qui n'avait pas encore commencé
+    // à travailler.
+    //
+    // Maintenant : la demande de permission part sur le geste — c'est le
+    // bon moment, un navigateur n'accepte qu'un geste — mais on n'attend
+    // pas sa réponse pour ouvrir. « Autour de moi » sait afficher un
+    // résultat avec la position connue et se corriger quand le GPS arrive.
     setEtat('cherche')
-    try {
-      // On demande franchement — et `getPosition` porte déjà son propre
-      // délai maximum : aucun bouton ne tourne indéfiniment.
-      const p = await getPosition({ highAccuracy: true })
-      if (p) { router.push('/autour-de-moi'); return }
-      setEtat('refus')
-    } catch { setEtat('refus') }
+    getPosition().catch(() => { /* la page suivante redemandera */ })
+    router.push('/autour-de-moi')
   }
 
   return (
