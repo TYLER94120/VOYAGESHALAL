@@ -172,6 +172,90 @@ Une seule page visible.
 
 # 🔍 CE QUE CE RELEVÉ RÉVÈLE
 
+## 0. 🔴 CE QUE LE RELEVÉ CONTENAIT SANS LE DIRE — calculs du 22 août
+
+Rien de nouveau n'a été mesuré ici : tout se déduit des chiffres ci-dessus.
+
+### La position desktop, jamais mesurée, toujours déductible
+
+La moyenne tous appareils est la moyenne pondérée du mobile et du reste.
+Deux termes sur trois sont connus, le troisième se résout :
+
+| Site | Pos. mobile | **Pos. desktop** | CTR mobile | **CTR desktop** |
+|---|---|---|---|---|
+| voyageshalal ⁽⁷ʲ⁾ | 11,2 | **49,7** | 2,62 % | **0,08 %** |
+| halalgpt ⁽⁷ʲ⁾ | 9,7 | **40,1** | 1,74 % | **0,83 %** |
+| gohalaltravel ⁽²⁸ʲ⁾ | 24,0 | **36,7** | 0,58 % | **0,23 %** |
+
+Page 4 à page 5 sur les trois sites. Ce n'est pas l'accident de l'un d'eux,
+c'est un état.
+
+### Le « 1 % » n'existe pas : c'est une moyenne entre deux mondes
+
+| | Impressions | Clics | CTR |
+|---|---|---|---|
+| **Mobile** | 4 248 | 98 | **2,31 %** |
+| **Desktop** | 6 972 | 13 | **0,19 %** |
+| Total affiché | 11 220 | 111 | 0,99 % |
+
+**62 % des impressions sont sur un canal qui produit 12 % des clics.**
+Écart mobile/desktop : **×12**.
+
+➡️ **Ne plus mesurer l'empire en « tous appareils ».** Le 1 % qui ressemble
+à un échec est fabriqué en moyennant un canal qui marche avec un canal sans
+audience. Et ne rien dépenser sur le desktop : à la position 40, personne ne
+voit un titre.
+
+⚠️ Le 28 jours mobile de voyageshalal n'a pas été capturé : sa part mobile
+est estimée depuis le 7 jours (420/1 670 pour les impressions, 11/12 pour
+les clics). Les deux autres sites sont mesurés.
+
+### La loi de la précision a un facteur : ×25
+
+halalgpt, 28 jours mobile :
+
+| | Impressions | Clics | CTR |
+|---|---|---|---|
+| Les 9 requêtes nommées plus haut | 67 (**3 %**) | 16 (**46 %**) | **23,9 %** |
+| Tout le reste | 1 993 (97 %) | 19 (54 %) | 0,95 % |
+
+**3 % des impressions produisent 46 % des clics.** Une requête précise
+convertit **25 fois** mieux qu'une requête large. La croissance vient de
+multiplier ce genre de page, jamais de remonter la moyenne.
+
+### Le vrai taux de voyageshalal est 3,2 %, pas 0,7 %
+
+| | Impressions | Clics | CTR |
+|---|---|---|---|
+| L'accueil seul | 156 | 1 | 0,6 % — **position 69,6** |
+| Les 7 autres pages listées | 278 | 9 | **3,2 %** |
+| Tout le reste du site | 1 236 | 2 | 0,16 % |
+
+L'accueil pèse **36 %** des impressions du haut de tableau, en page 7. Ces
+156 impressions ne sont pas un défaut à réparer — elles ne vaudront jamais
+rien. Elles gonflent le dénominateur. Sur les pages qui rankent vraiment, le
+site fait **3,2 %**, et Puy du Fou fait **12,5 % en position 4**.
+
+### 🔴 L'anomalie marocaine — la seule urgence réelle du relevé
+
+**118 impressions du Maroc, position 7,8, zéro clic.**
+
+À cette position, 2 à 3 % est le minimum attendu, soit **~3 clics**. Zéro.
+
+Ce n'est pas de l'invisibilité, c'est un **refus** : des Marocains voient la
+page en première page et choisissent autre chose. C'est le seul endroit de
+l'empire où réécrire un titre est prouvé rentable, parce que c'est le seul
+endroit où le titre est réellement vu.
+
+### Un tiers de gohalaltravel est adossé à une page perdue
+
+Les 5 requêtes turques pèsent 169 impressions — **33 % de tout le mobile du
+site** — toutes en position 45-55, toutes à zéro clic. Elles alimentent
+`/blog/meilleurs-hotels-halal-istanbul` (181 impressions, position 49,6).
+Page à abandonner, pas à réparer.
+
+---
+
 ## 1. 🔴 LA LOI DE LA PRÉCISION — la découverte centrale
 
 Confirmée sur les deux sites qui fonctionnent, et elle vaut pour tout
