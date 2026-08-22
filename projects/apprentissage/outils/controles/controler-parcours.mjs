@@ -24,8 +24,20 @@ const p = await ctx.newPage();
 const erreurs = [];
 p.on('pageerror', (e) => erreurs.push(e.message));
 
+/* LE TIRAGE EST FIGE, SINON CE QUI SUIT EST UN COUP DE DE.
+   Le paquet est melange par defaut. Les assertions ci-dessous portent sur la
+   PREMIERE carte : tant qu'elle est tiree au hasard, le controle passe ou
+   echoue selon la carte du jour. Il est passe au vert le 22 aout, puis au
+   rouge une heure plus tard sans qu'une ligne du rendu ait bouge — il etait
+   simplement tombe sur l'une des trois questions « combien de versets compte
+   la sourate X ? », qui n'ont pas de verset et donc pas de rosace. On coupe
+   donc le melange : la premiere carte est toujours la meme, et un rouge veut
+   enfin dire qu'une chose a casse. */
 await p.goto(B + '/qcm.html?section=sens-des-sourates&n=20', { waitUntil: 'domcontentloaded' });
-await p.evaluate(() => localStorage.clear());
+await p.evaluate(() => {
+  localStorage.clear();
+  localStorage.setItem('ipap.v1', JSON.stringify({ reglages: { melanger: false } }));
+});
 await p.reload({ waitUntil: 'domcontentloaded' });
 await p.waitForSelector('.reponse', { timeout: 8000 });
 

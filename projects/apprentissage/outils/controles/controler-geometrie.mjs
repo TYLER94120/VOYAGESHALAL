@@ -113,8 +113,18 @@ const parlants = await p.evaluate(() => {
 if (parlants.length) rate(parlants.length + ' motif(s) sans aria-hidden', parlants.join(' | '));
 else ok('tous les motifs sont aria-hidden');
 
-// --- 6. Et sur la carte de QCM : la rosace a la bonne opacite ------------
+/* --- 6. Et sur la carte de QCM : la rosace a la bonne opacite ------------
+   ON FIGE LE TIRAGE. La rosace vit DANS le bloc du verset ; une carte sans
+   verset n'en a pas, et c'est normal — les questions « combien de versets
+   compte la sourate X ? » et celles de pratique n'en montrent aucun. Tant que
+   la premiere carte etait tiree au hasard, ce controle repondait a la carte du
+   jour et non au rendu. */
 await p.goto(B+'/qcm.html?section=sens-des-sourates&n=20', { waitUntil:'domcontentloaded' });
+await p.evaluate(() => {
+  localStorage.clear();
+  localStorage.setItem('ipap.v1', JSON.stringify({ reglages: { melanger: false } }));
+});
+await p.reload({ waitUntil:'domcontentloaded' });
 await p.waitForSelector('.reponse');
 const carte = await p.evaluate(() => {
   const r = document.querySelector('.carte-rosace');
@@ -133,6 +143,38 @@ else ok('rosace de carte : 190 px a 9 %');
 if (carte.fond === null) rate('pas de fond carrele sur l ecran de QCM');
 else if (Math.abs(carte.fond - 0.055) > 0.0005) rate('le fond de QCM n est pas a 5,5 %', carte.fond);
 else ok('fond de QCM : 5,5 %');
+
+/* TOUTE QUESTION QUI VIENT D'UNE SOURATE PORTE SON CARTOUCHE — LES 2 524.
+   Une carte a la fois ne suffit pas : les sources s'ecrivent de deux facons
+   (« sourate 78, verset 15 » et « sourate Al-Asr (103) »), et la seconde a
+   passe des semaines a retomber sur le surtitre simple sans que personne le
+   voie. On passe donc la banque entiere, et on nomme les fautives. */
+const bandeaux = await p.evaluate(async () => {
+  const carte = document.getElementById('carte');
+  const secs = await fetch('data/sections.json').then((r) => r.json());
+  const out = { total: 0, sans: [] };
+  for (const s of secs) {
+    const b = await fetch('data/questions/' + s.slug + '.json')
+      .then((r) => (r.ok ? r.json() : [])).catch(() => []);
+    for (const q of b) {
+      if (!/Coran,\s*sourate/.test(q.source || '')) continue;
+      out.total++;
+      carte.innerHTML = window.IPAP_QCM.carteHTML(q, true);
+      const c = carte.querySelector('.cartouche');
+      const ar = c && c.querySelector('.cartouche-ar');
+      const fr = c && c.querySelector('.cartouche-fr');
+      if (!c || !/^سورة .+/.test((ar || {}).textContent || '')
+             || !/^Sourate .+/.test((fr || {}).textContent || '')) {
+        out.sans.push(s.slug + '/' + q.id + ' — ' + q.source);
+      }
+    }
+  }
+  return out;
+});
+if (bandeaux.sans.length) {
+  rate(bandeaux.sans.length + ' question(s) de sourate sans cartouche complet',
+       bandeaux.sans.slice(0, 5).join(' | '));
+} else ok('les ' + bandeaux.total + ' questions de sourate portent leur cartouche');
 
 if (err.length) rate('erreurs JavaScript', err.join(' | ')); else ok('aucune erreur JavaScript');
 await nav.close();

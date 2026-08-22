@@ -100,6 +100,29 @@ def _base_et_position(glyphe):
     return c, 'isolated'
 
 
+def _table_pratique():
+    """La table des questions de pratique, lue chez son generateur.
+
+    Comme pour les prophetes et l'alphabet : on relit la table a la source
+    plutot que d'en tenir une copie. Ce qu'on verifie ici, c'est que les
+    MOTS-CLES annonces se lisent vraiment dans le verset cite — autrement
+    dit, que je n'ai pas attribue au Coran une chose qu'il ne dit pas.
+    """
+    src = (pathlib.Path(__file__).resolve().parent / 'faire-pratique.py')
+    if not src.exists():
+        return {}
+    t = src.read_text(encoding='utf-8')
+    d = t.index('\nQ = [')
+    f = t.index('\n]\n', d) + 3
+    table = {}
+    for sec, theme, texte, bonne, leurres, (s, v), cles in eval(t[d:f].split('=', 1)[1]):
+        table[(texte, s, v)] = (bonne, list(leurres), list(cles))
+    return table
+
+
+PRATIQUE = _table_pratique()
+
+
 def _lexique_et_morphologie():
     """Le lexique publie, et les lemmes presents dans chaque verset.
 
@@ -164,6 +187,7 @@ def main():
     calligraphies = 0
     surlignes = 0
     verifiesVocab = 0
+    pratiques = 0
     nonVerifies = 0
 
     for f in fichiers:
@@ -272,6 +296,36 @@ def main():
                 nonVerifies += 1
                 continue
 
+            # --- pratique : ce que j'affirme doit se lire dans le verset
+            # La reponse n'est pas une traduction du verset entier mais une
+            # phrase courte en francais ; on ne peut donc pas la chercher
+            # telle quelle. Ce sont les MOTS-CLES declares par le generateur
+            # qu'on confronte au texte — et aucune mauvaise reponse ne doit
+            # s'y lire non plus.
+            if q.get('type') == 'pratique':
+                pratiques += 1
+                cle = (q['question'], s, v)
+                if cle not in PRATIQUE:
+                    fautes.append('%s : question de pratique absente de la table '
+                                  'du generateur — elle n\'est donc pas verifiee' % ou)
+                    continue
+                bonneT, leurres, cles = PRATIQUE[cle]
+                verset = nu(francais[(s, v)])
+                if q['reponses'][q['bonne']] != bonneT:
+                    fautes.append('%s : la bonne reponse publiee ne suit plus la '
+                                  'table (« %s » au lieu de « %s »)'
+                                  % (ou, q['reponses'][q['bonne']], bonneT))
+                for c in cles:
+                    if nu(c) not in verset:
+                        fautes.append('%s : « %s » ne se lit pas dans sourate %d '
+                                      'verset %d' % (ou, c, s, v))
+                for l in leurres:
+                    n = nu(l)
+                    if len(n) > 5 and n in verset:
+                        fautes.append('%s : le leurre « %s » se lit dans le verset — '
+                                      'il est defendable' % (ou, l))
+                continue
+
             attendu = francais[(s, v)]
             bonne = q['reponses'][q['bonne']]
 
@@ -333,6 +387,7 @@ def main():
     print('  %d montrent un glyphe et ont ete confrontees a Unicode.' % calligraphies)
     print('  %d designent un mot du verset, %d confrontees au corpus '
           'morphologique.' % (surlignes, verifiesVocab))
+    print('  %d questions de pratique, confrontees mot-cle par mot-cle.' % pratiques)
     if fautes:
         print('\n  %d FAUTE(S) :' % len(fautes))
         for x in fautes[:25]:

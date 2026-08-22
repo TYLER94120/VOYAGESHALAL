@@ -79,8 +79,12 @@
     // Le plafond depend du NIVEAU choisi, pas de la banque entiere :
     // proposer 100 questions quand le niveau choisi en compte 27 serait une
     // promesse qu'on ne tient pas.
+    // UN NIVEAU DE HUIT QUESTIONS SE JOUE EN HUIT.
+    // Le plancher etait de 20 : un niveau qui en comptait 8 se retrouvait
+    // grise, donc inaccessible, alors que ses huit questions sont bonnes.
+    // Mieux vaut un QCM court qu'un niveau qu'on ne peut pas ouvrir.
     var dispo = parNiveau[r.niveau] || 0;
-    if (dispo) { plafond = Math.max(MINI, Math.min(MAXI, dispo)); }
+    if (dispo) { plafond = Math.min(MAXI, dispo); }
     if (r.nombre > plafond) { r.nombre = plafond; }
 
     var bn = document.querySelectorAll('.niveau');
@@ -213,6 +217,9 @@
     if (!parNiveau[r.niveau]) {
       r.niveau = parNiveau[1] ? 1 : (parNiveau[2] ? 2 : 3);
     }
+    // Le curseur ne descend jamais sous 20 dans le HTML : quand un niveau
+    // en compte moins, on le laisse a son maximum et le curseur ne sert plus.
+    document.getElementById('curseur').min = Math.min(MINI, plafond || MINI);
 
     document.getElementById('sous').textContent =
       banque.length + ' questions dans cette section, toutes sourcées.';

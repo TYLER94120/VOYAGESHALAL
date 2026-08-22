@@ -82,13 +82,16 @@ Session.prototype.finie = function () { return this.pos >= this.paquet.length; }
 var NOMS_SOURATES = null;   // { 114: {ar, tr}, ... }, pose par lancer-qcm.js
 var SECTION_MOTIF = null;   // { branches, ratio }, idem
 
-var SOURCE_SOURATE = /Coran,\s*sourate\s*(\d+)/;
+/* DEUX ECRITURES DESIGNENT UNE SOURATE : « sourate 103, verset 1 » et
+   « sourate Al-Asr (103) ». La seconde n'etait pas reconnue, et 48 questions
+   perdaient leur cartouche. Le numero est la, entre parentheses. */
+var SOURCE_SOURATE = /Coran,\s*sourate\s*(?:(\d+)|[^,()]+\((\d+)\))/;
 
 function sourateDe(q) {
   if (!NOMS_SOURATES || !q || !q.source) { return null; }
   var m = SOURCE_SOURATE.exec(q.source);
   if (!m) { return null; }
-  return NOMS_SOURATES[parseInt(m[1], 10)] || null;
+  return NOMS_SOURATES[parseInt(m[1] || m[2], 10)] || null;
 }
 
 /* L'ornement fleuri des deux bouts du cartouche (V2 section 3.5). */
@@ -208,6 +211,15 @@ function carteHTML(q, avecTampons) {
     h += separateurHTML();
   }
 
+  /* UNE CARTE SANS RIEN A MONTRER RESPIRE DES DEUX COTES.
+     Une question de pratique n'a ni verset, ni lettre, ni photo. Avec un seul
+     espaceur, elle restait collee sous le cartouche et 244 px de vide
+     s'ouvraient dessous — un quart de la carte. Un espaceur de CHAQUE cote :
+     le vide se partage, les reponses restent en bas, sous le pouce.
+     Les cartes a glyphe ou a photo n'en recoivent qu'un : leur question
+     commente l'image juste au-dessus et doit lui rester collee. */
+  var nu = !q.arabe && !(q.type === 'calligraphie' && q.glyphe) && q.type !== 'photo';
+  if (nu) { h += '<div class="pousse-carte"></div>'; }
   h += '<div class="t-question carte-question">' + echapper(q.question) + '</div>';
   // Sans verset, rien n'absorbe la hauteur libre : c'est cet espaceur qui
   // pousse les reponses en bas de carte, comme a l'ecran B.

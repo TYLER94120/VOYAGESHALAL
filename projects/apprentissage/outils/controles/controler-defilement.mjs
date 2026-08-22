@@ -22,7 +22,14 @@ await ctx.route('**', (r) => {
 });
 const p = await ctx.newPage();
 const err=[]; p.on('pageerror',(e)=>err.push(e.message));
-await p.goto(B+'/qcm.html?section=la-priere&n=20', { waitUntil:'domcontentloaded' });
+/* ON DEMANDE LE NIVEAU EXPERT, ET C'EST VOULU.
+ * Depuis le 22 aout, le niveau 1 de « La priere » n'est fait que de questions
+ * de pratique : quatre mots de francais, aucun arabe, ca tient a l'ecran et il
+ * n'y a rien a faire defiler. C'est le but. Les cartes longues — un verset
+ * arabe et quatre traductions — sont au niveau 3, et c'est la qu'il faut aller
+ * les chercher pour verifier le defilement. Chercher au niveau 1 ne
+ * prouverait plus rien. */
+await p.goto(B+'/qcm.html?section=la-priere&n=20&niveau=3', { waitUntil:'domcontentloaded' });
 await p.evaluate(() => localStorage.clear());
 await p.reload({ waitUntil:'domcontentloaded' });
 await p.waitForSelector('.reponse');

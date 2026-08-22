@@ -14,6 +14,7 @@ python3 outils/faire-02-lire-larabe.py
 python3 outils/faire-05-prophetes.py
 python3 outils/faire-themes.py
 python3 outils/faire-11-vocabulaire.py   # écrit aussi data/lexique.json
+python3 outils/faire-pratique.py         # les bases de la pratique
 
 python3 outils/enrichir-explications.py  # ← a besoin du lexique ci-dessus
 python3 outils/classer-niveaux.py        # ← APRÈS eux, jamais avant
@@ -34,6 +35,7 @@ précédent.
 | `faire-05-prophetes.py` | l'histoire des prophètes, arabe ET français exigés pour attribuer un verset |
 | `faire-themes.py` | quatre sections thématiques, à partir de mots-clés coraniques |
 | `faire-11-vocabulaire.py` | les mots du Coran : le lexique attesté, et les questions qui l'enseignent |
+| `faire-pratique.py` | les bases de la pratique — ablutions, jeûne, aumône, pèlerinage — chaque affirmation confrontée mot-clé par mot-clé au verset qu'elle cite |
 | `enrichir-explications.py` | ajoute un mot appris à l'explication des questions sur un verset |
 | `faire-icones.py` | `js/icones.js` et le catalogue réduit `js/icones-qcm.js` |
 | `classer-niveaux.py` | range chaque question en début / intermédiaire / expert |

@@ -116,6 +116,14 @@ async function page(opts) {
   const p = await page();
   await p.goto(B+'/section/sens-des-sourates/qcm', { waitUntil:'domcontentloaded' });
   await p.waitForSelector('#curseur');
+  /* LE CURSEUR SE MESURE SUR UN NIVEAU QUI PORTE VRAIMENT CENT QUESTIONS.
+     La regle « on ne promet pas plus de questions qu'il n'en existe » est
+     anterieure aux niveaux ; depuis le 22 aout elle compte le niveau choisi et
+     non plus la banque entiere. Le curseur du cahier — 20 a 100 — est donc
+     celui de l'expert de cette section (545 questions), et le niveau debutant
+     (29) doit, lui, se plafonner a 29. On verifie LES DEUX : la borne du
+     cahier n'a pas bouge, et le plafond dit la verite. */
+  await p.locator('.niveau[data-niveau="3"]').click();
   const r = await p.evaluate(() => {
     const c = document.getElementById('curseur');
     return {
@@ -125,7 +133,15 @@ async function page(opts) {
     };
   });
   if (r.min !== '20' || r.max !== '100') rate('le curseur ne va plus de 20 a 100', r.min + '-' + r.max);
-  else ok('le curseur va de 20 a 100');
+  else ok('le curseur va de 20 a 100', 'sur un niveau qui porte 100 questions');
+
+  await p.locator('.niveau[data-niveau="1"]').click();
+  const plaf = await p.evaluate(() => ({
+    max: document.getElementById('curseur').max,
+    nb: document.querySelector('.niveau[data-niveau="1"] .choix-nb').textContent.trim(),
+  }));
+  if (plaf.max !== plaf.nb) rate('un niveau court ne plafonne pas le curseur', plaf.nb + ' questions, curseur jusqu a ' + plaf.max);
+  else ok('un niveau court plafonne le curseur', plaf.nb + ' questions, curseur jusqu a ' + plaf.max);
   if (r.raccourcis.length !== 5) rate('il n y a pas cinq raccourcis', r.raccourcis.join(', '));
   else ok('cinq raccourcis', r.raccourcis.join(' · '));
   if (r.modes.length !== 2 || r.modes.indexOf('apprentissage') < 0 || r.modes.indexOf('examen') < 0) {

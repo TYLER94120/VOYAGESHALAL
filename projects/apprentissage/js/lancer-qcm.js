@@ -101,7 +101,9 @@
     var n = parseInt(p.n, 10);
     // Le curseur va de 20 a 100 (ecran 3) : on ne sort pas de ces bornes,
     // meme si quelqu'un bricole l'adresse.
-    if (n >= 20 && n <= 100) { reglages.nombre = n; }
+    // Le bas de la fourchette suit le contenu : un niveau de huit questions
+    // se joue en huit, et c'est l'ecran de reglages qui a deja plafonne.
+    if (n >= 1 && n <= 100) { reglages.nombre = n; }
   }
   if (p.mode === 'examen' || p.mode === 'apprentissage') { reglages.mode = p.mode; }
   if (p.niveau === '1' || p.niveau === '2' || p.niveau === '3') {

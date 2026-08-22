@@ -147,17 +147,58 @@ def note(q, rCharge, rProximite):
     return n
 
 
+def traduction(q):
+    """Cette question demande-t-elle de traduire ?
+
+    Decision de Mohamed, le 22 aout : « arrete avec les traductions, trop
+    complique ». Traduire un verset entier, ou reconnaitre un mot au milieu
+    d'un verset, demande de LIRE l'arabe couramment. C'est une competence
+    d'arrivee, pas de depart. Ces questions restent — elles ne sont pas
+    fausses, elles sont difficiles — mais au niveau expert seulement, ou
+    personne ne les rencontre par accident.
+    """
+    if q.get('type') == 'vocabulaire':
+        return True
+    t = q.get('question', '')
+    return (t.startswith('Ce verset se traduit par')
+            or 'comment ce verset continue-t-il' in t)
+
+
 def classer(questions):
-    """Range les questions d'UNE section en trois tiers."""
+    """Range les questions d'UNE section en trois tiers.
+
+    Les questions de traduction sont mises d'office en expert ; les autres se
+    repartissent entre les trois niveaux selon leur score. Une section peut
+    donc n'avoir aucun debutant : c'est le cas du « sens des sourates », qui
+    n'est fait que de traductions. Mieux vaut le dire que de faire passer une
+    traduction de verset pour une question de depart.
+    """
     if not questions:
         return {}
-    rc = rangs([charge(q) for q in questions])
-    rp = rangs([proximite(q) for q in questions])
-    notes = sorted((note(q, rc[i], rp[i]), q['id']) for i, q in enumerate(questions))
+    # LES QUESTIONS DE PRATIQUE SONT DES QUESTIONS DE DEPART, TOUTES.
+    # Les repartir en trois les eparpillerait : six questions deviendraient
+    # deux par niveau, et aucun niveau ne serait jouable. Elles sont simples
+    # par construction — francais court, aucun arabe a lire — et c'est
+    # exactement ce qu'on cherchait en debutant.
+    niveaux = {}
+    simples = []
+    for q in questions:
+        if q.get('type') == 'pratique':
+            niveaux[q['id']] = 1
+        elif traduction(q):
+            niveaux[q['id']] = 3
+        else:
+            simples.append(q)
+
+    if not simples:
+        return niveaux, (0, 0), 0, 0
+
+    rc = rangs([charge(q) for q in simples])
+    rp = rangs([proximite(q) for q in simples])
+    notes = sorted((note(q, rc[i], rp[i]), q['id']) for i, q in enumerate(simples))
 
     n = len(notes)
     seuils = (notes[n // 3][0], notes[2 * n // 3][0])
-    niveaux = {}
     for score, qid in notes:
         niveaux[qid] = 1 if score < seuils[0] else (2 if score < seuils[1] else 3)
     return niveaux, seuils, notes[0][0], notes[-1][0]
@@ -186,18 +227,31 @@ def main():
 
     # CE QUI DOIT ETRE VRAI APRES COUP. Un mode qui ouvre sur rien est pire
     # que pas de mode du tout : on refuse le lot plutot que de le livrer.
-    fautes = []
+    # CE QU'ON EXIGE, ET CE QU'ON SE CONTENTE DE DIRE.
+    # Une section peut legitimement n'avoir aucun debutant : « Le sens des
+    # sourates » n'est fait que de traductions, et les mettre en debutant
+    # serait mentir sur leur difficulte. On le SIGNALE — l'ecran de reglages
+    # grise les niveaux vides — mais on ne refuse plus le lot pour ca.
+    # En revanche, une section sans AUCUN niveau jouable est une section
+    # cassee, et celle-la on la refuse.
+    fautes, maigres = [], []
     for f in fichiers:
         qs = json.loads(f.read_text(encoding='utf-8'))
         if not qs:
             continue
+        pleins = 0
         for n in (1, 2, 3):
             combien = sum(1 for q in qs if q.get('niveau') == n)
-            if combien == 0:
-                fautes.append('%s n\'a aucune question de niveau %s' % (f.stem, NOMS[n]))
-            elif combien < 20:
-                fautes.append('%s n\'a que %d question(s) en %s : le QCM minimum '
-                              'en demande 20' % (f.stem, combien, NOMS[n]))
+            if combien >= 20:
+                pleins += 1
+            elif combien:
+                maigres.append('%s : %d question(s) en %s' % (f.stem, combien, NOMS[n]))
+        if not any(sum(1 for q in qs if q.get('niveau') == n) for n in (1, 2, 3)):
+            fautes.append('%s n\'a aucune question rangee' % f.stem)
+    if maigres:
+        print('\n  Niveaux trop maigres pour un QCM de 20 (ils seront grises) :')
+        for x in maigres:
+            print('    ' + x)
     if fautes:
         print('')
         for x in fautes:
