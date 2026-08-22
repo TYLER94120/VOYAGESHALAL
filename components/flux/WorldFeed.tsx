@@ -2,6 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
+import { useFluxSouris } from '@/lib/fluxSouris'
 
 // 🌍 LE WORLD FEED — on swipe les villes (maquette moteur universel,
 // classes imm- : le MÊME contrat visuel que le City feed). Tout le texte
@@ -37,6 +38,8 @@ export default function WorldFeed({ villes, index = [] }: {
   const fluxRef = useRef<HTMLDivElement>(null)
   const toastTm = useRef<ReturnType<typeof setTimeout> | null>(null)
   const dernierTap = useRef(0)
+  // Molette et flèches : un cran = un panneau (lib/flux.mjs).
+  useFluxSouris(fluxRef)
 
   useEffect(() => {
     try { setWishlist(JSON.parse(localStorage.getItem(CLE_WISHLIST) ?? '[]')) } catch { /* vide */ }
@@ -151,7 +154,7 @@ export default function WorldFeed({ villes, index = [] }: {
               </div>
             </div>
             {i === 0 && (
-              <div className="imm-indice">Swipe to explore · double-tap = ♡<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden><path d="m6 9 6 6 6-6" /></svg></div>
+              <div className="imm-indice"><span className="geste-doigt">Swipe to explore</span><span className="geste-souris">Scroll or press ↓</span> · double-tap = ♡<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden><path d="m6 9 6 6 6-6" /></svg></div>
             )}
           </section>
         ))}

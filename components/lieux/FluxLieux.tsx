@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react'
 import type { Fiche } from '@/components/lieux/SurMesure'
 import TrajetMin, { StatutOuverture } from '@/components/lieux/TrajetMin'
 import { lancerItineraire } from '@/lib/itineraire'
+import { useFluxSouris } from '@/lib/fluxSouris'
 
 // 🎞 LE SWIPE D'AUTOUR DE MOI (ordre du 20 août) : un tap sur un mode →
 // on SWIPE les résultats en plein écran, comme l'accueil monde.
@@ -32,6 +33,8 @@ export default function FluxLieux({ fiches, cat, en = false, onFermer, onChanger
   const [extras, setExtras] = useState<Record<string, { photos?: string[]; note?: number; nbAvis?: number; ouvert?: boolean }>>({})
   const [actif, setActif] = useState(0)
   const fluxRef = useRef<HTMLDivElement>(null)
+  // Molette et flèches : un cran = un panneau (lib/flux.mjs).
+  useFluxSouris(fluxRef)
   const demandes = useRef(new Set<string>())
 
   // Enrichissement à la demande : le panneau courant + le suivant.
@@ -112,7 +115,7 @@ export default function FluxLieux({ fiches, cat, en = false, onFermer, onChanger
                 </div>
               </div>
               {i === 0 && (
-                <div className="imm-indice">{t('Swipe — du plus pertinent au suivant', 'Swipe — best match first')}<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden><path d="m6 9 6 6 6-6" /></svg></div>
+                <div className="imm-indice"><span className="geste-doigt">{t('Swipe — du plus pertinent au suivant', 'Swipe — best match first')}</span><span className="geste-souris">{t('Molette ou flèche ↓ — du plus pertinent au suivant', 'Scroll or press ↓ — best match first')}</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden><path d="m6 9 6 6 6-6" /></svg></div>
               )}
             </section>
           )
