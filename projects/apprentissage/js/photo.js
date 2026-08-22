@@ -11,10 +11,9 @@
    calligraphie illisible — detruit la credibilite d'un site qui cite
    al-Bukhari avec son numero.
 
-   TANT QU'UNE PHOTO N'EST PAS OBTENUE, ON MONTRE L'EMPLACEMENT.
-   Le cahier le demande explicitement (6.4), et c'est la seule chose honnete
-   a faire : le cadre pointille dit ce qui manque, au lieu de faire croire
-   que la page est finie.
+   TANT QU'UNE PHOTO N'EST PAS OBTENUE, ON GARDE SON EMPLACEMENT (6.4) : meme
+   fond, meme carrelage, meme voile, meme hauteur. On y pose la rosace de la
+   section en attendant. Ce qui reste a sourcer se lit dans /motifs.html.
 
    Une image n'entre ici QUE si son origine, sa licence et son auteur sont
    ecrits dans data/images.json. Pas de licence tracee, pas d'image.
@@ -59,19 +58,30 @@
       + '</picture>';
   }
 
-  function manquante(legende) {
-    return '<div class="photo-manque">'
-      + '<span class="photo-manque-t">Photo à sourcer</span>'
-      + (legende ? '<span class="photo-manque-l">' + ech(legende) + '</span>' : '')
+  /* UN PANNEAU ENLUMINE PLUTOT QU'UN PENSE-BETE.
+     Le cahier (6.4) veut qu'on montre l'emplacement tant qu'il n'y a pas de
+     photo : on ne fait pas croire qu'une page est finie. Mais « PHOTO A
+     SOURCER » en pointille est une note de chantier, et elle s'affichait en
+     haut des douze couvertures, pour tout le monde.
+     L'emplacement reste entier — meme fond, meme carrelage, meme voile, meme
+     hauteur : une photo s'y posera sans que rien ne bouge. En attendant, on y
+     met la rosace de la section. L'inventaire de ce qui manque est dans
+     /motifs.html, la ou il sert. */
+  function ornement(motif) {
+    if (!motif || !window.IPAP_GEO) { return ''; }
+    return '<div class="photo-ornement" aria-hidden="true">'
+      + '<span data-rosace="' + motif.branches + '" data-ratio="' + motif.ratio
+      + '" data-taille="300" data-couleur="#E3C97A" data-trait="1.1"></span>'
       + '</div>';
   }
 
   /* o.cle       clef dans data/images.json
-     o.legende   ce qu'on cherche, ecrit dans le cadre pointille
      o.hauteur   en px ; 328 couverture, 244 carte-photo, 148 resultat
      o.rayon     rayon des coins, en px
      o.dessus    HTML pose PAR-DESSUS le voile (titre, verset, bouton retour)
-     o.premiere  vrai si c'est la premiere image visible : pas de `lazy` */
+     o.premiere  vrai si c'est la premiere image visible : pas de `lazy`
+     o.motif     { branches, ratio } de la section : la rosace posee en
+                 attendant la photo. Sans lui, l'emplacement reste nu. */
   function bloc(o) {
     var f = fiche(o.cle);
     var st = 'height:' + (o.hauteur || 244) + 'px'
@@ -79,11 +89,22 @@
     return '<div class="photo"' + (o.dessus ? ' data-dessus="oui"' : '') + ' style="' + st + '">'
       + '<div class="fond-motif" data-carrelage="#E3C97A" data-op="0.20"'
       + ' data-tuile="72" data-r="17" aria-hidden="true"></div>'
-      + (f ? image(f, !o.premiere) : '')
+      + (f ? image(f, !o.premiere) : ornement(o.motif))
       + '<div class="photo-voile" aria-hidden="true"></div>'
-      + (f ? '' : manquante(o.legende))
       + (o.dessus ? '<div class="photo-dessus">' + o.dessus + '</div>' : '')
       + '</div>';
+  }
+
+  /* CE QUI MANQUE ENCORE, pour /motifs.html : les emplacements attendus par
+     le site et qui n'ont pas de photo complete dans le catalogue. C'est la
+     que le proprietaire du site va voir ce qu'il reste a sourcer, plutot que
+     sur chaque couverture. */
+  function manquants(cles) {
+    var out = [];
+    for (var i = 0; i < cles.length; i++) {
+      if (!fiche(cles[i])) { out.push(cles[i]); }
+    }
+    return out;
   }
 
   /* Ce qu'il faut afficher dans /plus : crédit et licence de chaque image
@@ -115,5 +136,6 @@
   }
 
   window.IPAP_PHOTO = { charger: charger, bloc: bloc, fiche: fiche,
-                        credits: credits, precharger: precharger };
+                        credits: credits, precharger: precharger,
+                        manquants: manquants };
 }());

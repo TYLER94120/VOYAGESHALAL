@@ -22,6 +22,8 @@ import re
 import subprocess
 import sys
 
+import alleger
+
 RACINE = pathlib.Path(__file__).resolve().parent.parent
 # Le dernier commit d'avant la couche visuelle V2.
 AVANT_V2 = '90e27be'
@@ -34,10 +36,25 @@ def comprime(octets):
     return len(gzip.compress(octets, 9))
 
 
+def poids_servi(nom, octets):
+    """Ce qu'un visiteur telecharge vraiment pour ce fichier.
+
+    ON PESE CE QUI EST SERVI, PAS CE QUI EST ECRIT. Les commentaires de ce
+    projet sont un cahier de bord, et ils sont retires a la publication
+    (outils/alleger.py) : les compter ici mesurerait un poids que personne ne
+    telecharge, et le budget du cahier porterait sur la mauvaise chose.
+
+    Les deux cotes de la comparaison passent par la meme fonction — le present
+    comme le commit de reference — sinon l'ecart mesurerait l'allegement au
+    lieu de mesurer le travail.
+    """
+    return comprime(alleger.alleger(nom, octets))
+
+
 def poids_js_actuel():
     total, detail = 0, []
     for f in sorted((RACINE / 'js').glob('*.js')):
-        n = comprime(f.read_bytes())
+        n = poids_servi(f.name, f.read_bytes())
         total += n
         detail.append((f.name, n))
     return total, detail
@@ -71,7 +88,7 @@ def poids_par_page(lire):
         for src in scripts_de(b.decode('utf-8', 'replace')):
             o = lire(src)
             if o is not None:
-                total += comprime(o)
+                total += poids_servi(src, o)
         out[nom] = total
     return out
 

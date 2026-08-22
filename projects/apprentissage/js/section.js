@@ -105,7 +105,8 @@
 
     h += P ? P.bloc({
       cle: 'couverture/' + slug, hauteur: 328, rayon: 0, premiere: true,
-      legende: 'Couverture : ' + sec.nom, dessus: dessus
+      legende: 'Couverture : ' + sec.nom, dessus: dessus,
+      motif: { branches: sec.branches, ratio: sec.ratio }
     }) : '';
 
     // --- Le corps ----------------------------------------------------

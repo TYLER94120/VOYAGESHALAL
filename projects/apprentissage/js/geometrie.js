@@ -148,3 +148,19 @@ window.IPAP_GEO = {
   rosaceDeSection: rosaceDeSection,
   poserMotifs: poserMotifs,
 };
+
+/* LES MOTIFS DEJA ECRITS DANS LA PAGE SE POSENT TOUT SEULS.
+   Les ecrans qui construisent leur contenu en JavaScript appellent
+   `poserMotifs` eux-memes, apres l'avoir bati. Mais l'accueil, les progres et
+   « Plus » n'ont rien a batir : leur fond carrele est ecrit dans le HTML, et
+   il fallait quand meme une ligne de script pour le remplir. Trois lignes
+   identiques dans trois pages, c'est trois occasions d'en oublier une — et
+   c'est exactement ce qui laissait ces pages sans fond.
+
+   Sans effet sur les autres : `poserMotifs` ne repasse jamais sur un
+   emplacement deja rempli. */
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', function () { poserMotifs(document); });
+} else {
+  poserMotifs(document);
+}

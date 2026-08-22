@@ -23,13 +23,23 @@ CE QUI NE PART PAS
 `outils/` : les generateurs et les cinq megaoctets de donnees brutes du Coran
 ne servent qu'a FABRIQUER les questions. Le site n'en a pas besoin.
 Les `.md` : ce sont des notes de travail.
+
+CE QUI PART, MAIS ALLEGE
+------------------------
+Le JavaScript et le CSS traversent sans leurs commentaires (outils/alleger.py).
+La source garde son cahier de bord ; le visiteur, lui, ne telecharge pas
+douze kilo-octets d'explications qui ne lui sont pas destinees. Le controle
+d'apres coup compare donc le clone a la source ALLEGEE — la garantie « les
+deux copies ne derivent pas » reste entiere, elle porte simplement sur la
+forme qu'on publie.
 """
 
-import filecmp
 import pathlib
 import shutil
 import subprocess
 import sys
+
+import alleger
 
 SOURCE = pathlib.Path(__file__).resolve().parent.parent
 CLONE = pathlib.Path('/home/user/islampasapas')
@@ -101,7 +111,8 @@ def main():
     for rel in fichiers:
         cible = CLONE / rel
         cible.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copy2(SOURCE / rel, cible)
+        octets = alleger.alleger(rel.name, (SOURCE / rel).read_bytes())
+        cible.write_bytes(octets)
 
     # CONTROLE APRES COUP, PAS AVANT : les deux copies doivent se recouper
     # fichier par fichier. Sans ca, l'outil promet une synchronisation qu'il
@@ -111,7 +122,7 @@ def main():
         cible = CLONE / rel
         if not cible.exists():
             manquants.append(str(rel))
-        elif not filecmp.cmp(SOURCE / rel, cible, shallow=False):
+        elif cible.read_bytes() != alleger.alleger(rel.name, (SOURCE / rel).read_bytes()):
             differents.append(str(rel))
     en_trop = []
     for p in sorted(CLONE.rglob('*')):
@@ -129,7 +140,12 @@ def main():
                 print('  %s : %s' % (nom, ', '.join(liste[:6])))
         sys.exit(1)
 
+    poids = sum((SOURCE / r).stat().st_size for r in fichiers
+                if r.suffix.lower() in ('.js', '.css'))
+    servi = sum(len(alleger.alleger(r.name, (SOURCE / r).read_bytes())) for r in fichiers
+                if r.suffix.lower() in ('.js', '.css'))
     print('  %d fichiers recopies, les deux copies se recoupent.' % len(fichiers))
+    print('  js + css alleges : %.1f Ko -> %.1f Ko servis.' % (poids / 1024, servi / 1024))
 
     etat = git(CLONE, 'status', '--porcelain')
     if not etat:

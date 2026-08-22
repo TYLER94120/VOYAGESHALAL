@@ -5,6 +5,8 @@ Ils se lancent contre un serveur local, a la racine du site :
     python3 outils/servir.py 8899
     node outils/controles/controler-geste.mjs
 
+`servir.py` sert TOUJOURS le dossier du site, d'ou qu'on le lance.
+
 C'est bien `servir.py`, PAS `python3 -m http.server`. Le serveur simple ne
 connait pas les reecritures de `vercel.json` : `/section/<slug>` y repond 404,
 et `controler-chaine.mjs` echoue pour une raison qui n'a rien a voir avec le
@@ -65,3 +67,25 @@ controle des cartouches dans `controler-geometrie`.
 Meme piege avec les niveaux : depuis le 22 aout le niveau 1 de « La priere »
 n'est fait que de questions de pratique, courtes et sans arabe. Un controle du
 DEFILEMENT lance sans `&niveau=3` ne trouve plus une seule carte longue.
+
+## Verifier ce qui est SERVI, pas seulement ce qui est ecrit
+
+Depuis le 22 aout, le JavaScript et le CSS partent sans leurs commentaires
+(`outils/alleger.py`). La recette doit donc tourner au moins une fois contre
+la copie allegee avant une publication qui touche au JS ou au CSS :
+
+    python3 - <<'EOF'
+    import pathlib, sys; sys.path.insert(0, 'outils'); import alleger
+    SRC, DST = pathlib.Path('.').resolve(), pathlib.Path('/tmp/servi')
+    for p in SRC.rglob('*'):
+        rel = p.relative_to(SRC)
+        if any(x in ('outils','.git','node_modules','__pycache__') for x in rel.parts): continue
+        if p.suffix == '.md' or not p.is_file(): continue
+        c = DST/rel; c.parent.mkdir(parents=True, exist_ok=True)
+        c.write_bytes(alleger.alleger(rel.name, p.read_bytes()))
+    EOF
+    cp outils/servir.py vercel.json /tmp/servi/ && python3 /tmp/servi/servir.py 8900
+
+puis les controles avec `8899` remplace par `8900`. Le 22 aout, les onze sont
+passes au vert des deux cotes — c'est ce qui autorise a servir une copie qui
+n'est pas identique a la source.

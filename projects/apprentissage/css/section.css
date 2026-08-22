@@ -101,6 +101,22 @@
   z-index: 2;
 }
 
+/* LE TEXTE S'EFFACE AVANT LE PIED, IL NE SE FAIT PAS COUPER.
+   Le pied est opaque et fixe : le texte qui defile dessous s'arretait net sur
+   son bord, a mi-hauteur des lettres — on lisait « I  l  » et on croyait a un
+   defaut d'affichage. Ce degrade de 34 px, pose juste au-dessus, fait
+   disparaitre la ligne au lieu de la trancher. Il ne prend aucun clic : ce
+   qui est dessous reste atteignable. */
+.couv-fixe::before {
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  bottom: 100%;
+  height: 34px;
+  background: linear-gradient(180deg, rgba(250, 247, 240, 0) 0%, var(--fond-app) 100%);
+  pointer-events: none;
+}
+
 /* Les trois niveaux, sur la couverture. Meme forme que les trois chiffres
    au-dessus : on lit la section d'un coup d'oeil, du general au precis. */
 .couv-niveaux {

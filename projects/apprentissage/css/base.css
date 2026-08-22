@@ -265,39 +265,20 @@ svg { display: block; flex-shrink: 0; }
 }
 .photo-dessus { position: absolute; inset: 0; }
 
-.photo-manque {
+/* LA ROSACE POSEE EN ATTENDANT LA PHOTO.
+   Elle occupe l'emplacement au lieu de le laisser vide, et elle passe SOUS le
+   voile degrade comme le ferait la photo — c'est le voile qui garantit que le
+   titre pose dessus reste lisible, et il doit garantir la meme chose ici. */
+.photo-ornement {
   position: absolute;
-  left: 50%; top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  border: 1px dashed rgba(227, 201, 122, 0.7);
-  border-radius: 10px;
-  padding: 8px 14px;
-  text-align: center;
+  inset: 0;
   display: flex;
-  flex-direction: column;
-  gap: 3px;
-  max-width: 80%;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.34;
+  pointer-events: none;
 }
-.photo-manque-t {
-  font-size: 10px;
-  letter-spacing: 1.6px;
-  text-transform: uppercase;
-  color: var(--or-sur-photo);
-}
-.photo-manque-l { font-size: 12.5px; color: var(--ivoire-sur-photo); }
-
-/* Quand du texte est pose sur l'emplacement — le verset de la session, le
-   titre d'une couverture — le cadre pointille remonte pour ne pas se mettre
-   dessus. Deux textes superposes, c'est deux textes illisibles.
-   L'attribut est pose par photo.js, pas par `:has()` : ce selecteur manque
-   encore sur les telephones un peu anciens, et c'est justement eux qu'on
-   sert. */
-.photo[data-dessus] .photo-manque {
-  top: 12px;
-  transform: translateX(-50%);
-  padding: 6px 12px;
-}
+.photo-ornement > span { display: block; }
 
 .corps {
   flex-grow: 1;
@@ -339,8 +320,36 @@ svg { display: block; flex-shrink: 0; }
   letter-spacing: 0.2px;
   width: 100%;
 }
-.bouton-vert { background: var(--vert); color: var(--sur-vert); box-shadow: var(--ombre-vert); }
-.bouton-or   { background: var(--or);   color: var(--sur-or);   box-shadow: 0 4px 14px rgba(201,162,39,0.28); }
+/* LES DEUX BOUTONS PRINCIPAUX ONT DU RELIEF, PAS SEULEMENT UNE COULEUR.
+   Un aplat uni de 56 px de haut sur un fond ivoire fait un rectangle ; le
+   meme aplat avec un degrade court et un liseret clair en haut fait un
+   bouton qu'on a envie de presser. Les couleurs ne changent pas : --or et
+   --vert restent la teinte de reference, le degrade va vers un ton plus
+   profond de la MEME couleur. */
+/* LA COULEUR DE FOND RESTE DECLAREE SOUS LE DEGRADE, et ce n'est pas une
+   precaution de style : `background: linear-gradient(...)` met la couleur de
+   fond calculee a « transparent ». Le controle de contraste, qui lit cette
+   couleur pour savoir sur quoi le texte se pose, a alors mesure de l'ivoire
+   sur du vide et annonce un rapport de 1 sur les deux boutons principaux.
+   Le fond uni d'abord, le degrade par-dessus : la mesure retrouve le vrai
+   vert, et un navigateur qui ne peindrait pas le degrade garde un bouton
+   lisible. */
+.bouton-vert {
+  background-color: var(--vert);
+  background-image: linear-gradient(180deg, #14603C 0%, var(--vert) 55%, #0C462B 100%);
+  color: var(--sur-vert);
+  box-shadow: var(--ombre-vert), inset 0 1px 0 rgba(255, 253, 248, 0.16);
+}
+.bouton-or {
+  background-color: var(--or);
+  background-image: linear-gradient(180deg, #DCB63C 0%, var(--or) 55%, #B08D1B 100%);
+  color: var(--sur-or);
+  box-shadow: 0 4px 14px rgba(201,162,39,0.28), inset 0 1px 0 rgba(255, 253, 248, 0.35);
+}
+/* On s'enfonce d'un pixel quand on appuie. C'est le seul retour tactile que
+   le navigateur ne donne pas tout seul, et son absence rendait le bouton
+   inerte au doigt. */
+.bouton-vert:active, .bouton-or:active { transform: translateY(1px); }
 .bouton-2 {
   height: var(--h-bouton-2);
   border-radius: var(--r-bouton-2);

@@ -40,6 +40,17 @@ REGLES = regles()
 
 
 class Serveur(http.server.SimpleHTTPRequestHandler):
+    # LA RACINE SE POSE ICI, PAS SUR LA CLASSE DE BASE.
+    # `SimpleHTTPRequestHandler.__init__` ecrit `self.directory` a chaque
+    # requete — depuis son argument `directory`, ou a defaut depuis le dossier
+    # COURANT. L'attribut de classe qu'on posait plus bas etait donc ecrase
+    # aussitot, et le serveur servait le repertoire d'ou on l'avait lance.
+    # Tant qu'on le lancait depuis la racine du site, ca ne se voyait pas ;
+    # lance d'ailleurs, il servait sans rien dire une AUTRE copie du site.
+    def __init__(self, *a, **kw):
+        kw['directory'] = str(RACINE)
+        super().__init__(*a, **kw)
+
     def translate_path(self, path):
         chemin = path.split('?', 1)[0].split('#', 1)[0]
         for motif, cible in REGLES:
@@ -53,7 +64,6 @@ class Serveur(http.server.SimpleHTTPRequestHandler):
 
 def main():
     port = int(sys.argv[1]) if len(sys.argv) > 1 else 8899
-    http.server.SimpleHTTPRequestHandler.directory = str(RACINE)
     srv = http.server.ThreadingHTTPServer(('127.0.0.1', port), Serveur)
     print('  le site est sur http://127.0.0.1:%d/  (%d reecriture(s) actives)'
           % (port, len(REGLES)))

@@ -40,7 +40,8 @@ précédent.
 | `faire-icones.py` | `js/icones.js` et le catalogue réduit `js/icones-qcm.js` |
 | `classer-niveaux.py` | range chaque question en début / intermédiaire / expert |
 | `controler-questions.py` | confronte chaque question à sa source : le Coran, ou Unicode |
-| `peser.py` | les budgets du cahier, mesurés page par page |
+| `alleger.py` | retire les commentaires du JS et du CSS **à la publication** : la source garde son cahier de bord, le visiteur ne le télécharge pas (−29 Ko compressés) |
+| `peser.py` | les budgets du cahier, mesurés page par page — sur ce qui est **servi**, donc allégé, des deux côtés de la comparaison |
 | `poser-version.py` | le repère de version dans `plus.html` |
 | `publier.py` | recopie le site vers le dépôt servi, et vérifie que les deux se recoupent |
 | `servir.py` | le site en local, **avec** les réécritures de `vercel.json` |

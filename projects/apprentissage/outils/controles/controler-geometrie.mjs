@@ -144,37 +144,65 @@ if (carte.fond === null) rate('pas de fond carrele sur l ecran de QCM');
 else if (Math.abs(carte.fond - 0.055) > 0.0005) rate('le fond de QCM n est pas a 5,5 %', carte.fond);
 else ok('fond de QCM : 5,5 %');
 
-/* TOUTE QUESTION QUI VIENT D'UNE SOURATE PORTE SON CARTOUCHE — LES 2 524.
-   Une carte a la fois ne suffit pas : les sources s'ecrivent de deux facons
-   (« sourate 78, verset 15 » et « sourate Al-Asr (103) »), et la seconde a
-   passe des semaines a retomber sur le surtitre simple sans que personne le
-   voie. On passe donc la banque entiere, et on nomme les fautives. */
+/* LE CARTOUCHE, SUR LES 2 681 QUESTIONS, ET SURTOUT : IL NE REPOND JAMAIS.
+   Deux choses a la fois, parce qu'elles se contredisent et que c'est
+   justement la qu'on se trompe :
+
+     1. une question tiree d'une sourate porte son cartouche complet — les
+        sources s'ecrivent de deux facons, et la forme « sourate Al-Asr (103) »
+        a passe des semaines a retomber sur le surtitre simple ;
+     2. SAUF quand le cartouche donnerait la reponse. « De quelle sourate
+        vient ce verset ? » avec SOURATE AT-TAKATHUR ecrit au-dessus et
+        At-Takathur en reponse D : 51 questions etaient dans ce cas, et c'est
+        Mohamed qui l'a vu, pas moi.
+
+   Le point 2 prime. Un cartouche manquant est un decor en moins ; un
+   cartouche qui repond est une question en moins. */
 const bandeaux = await p.evaluate(async () => {
   const carte = document.getElementById('carte');
   const secs = await fetch('data/sections.json').then((r) => r.json());
-  const out = { total: 0, sans: [] };
+  const out = { total: 0, avec: 0, sans: [], fuites: [] };
   for (const s of secs) {
     const b = await fetch('data/questions/' + s.slug + '.json')
       .then((r) => (r.ok ? r.json() : [])).catch(() => []);
     for (const q of b) {
-      if (!/Coran,\s*sourate/.test(q.source || '')) continue;
-      out.total++;
       carte.innerHTML = window.IPAP_QCM.carteHTML(q, true);
       const c = carte.querySelector('.cartouche');
+
+      // 2. AUCUN cartouche affiche ne contient le texte d'une reponse.
+      //    On enleve l'article des noms de sourate (Al-, An-, At-…) : c'est
+      //    « Takathur » qui trahit, meme sans son article.
+      if (c) {
+        const t = (c.textContent || '').toLowerCase();
+        for (const r of q.reponses || []) {
+          const rr = String(r).toLowerCase().replace(/^(al|an|at|as|ash|az)[- ]/, '');
+          if (rr.length >= 4 && t.indexOf(rr) >= 0) {
+            out.fuites.push(s.slug + '/' + q.id + ' : « ' + c.textContent.trim()
+              + ' » donne la reponse « ' + r + ' »');
+          }
+        }
+      }
+
+      // 1. La couverture du cartouche, la ou il n'y a rien a trahir.
+      if (!/Coran,\s*sourate/.test(q.source || '')) continue;
+      out.total++;
       const ar = c && c.querySelector('.cartouche-ar');
       const fr = c && c.querySelector('.cartouche-fr');
-      if (!c || !/^سورة .+/.test((ar || {}).textContent || '')
-             || !/^Sourate .+/.test((fr || {}).textContent || '')) {
-        out.sans.push(s.slug + '/' + q.id + ' — ' + q.source);
-      }
+      if (c && /^سورة .+/.test((ar || {}).textContent || '')
+            && /^Sourate .+/.test((fr || {}).textContent || '')) { out.avec++; }
+      else if (c) { out.sans.push(s.slug + '/' + q.id + ' — cartouche incomplet'); }
     }
   }
   return out;
 });
+if (bandeaux.fuites.length) {
+  rate(bandeaux.fuites.length + ' cartouche(s) donnent la reponse',
+       bandeaux.fuites.slice(0, 3).join(' | '));
+} else ok('aucun cartouche ne donne la reponse', bandeaux.total + ' questions de sourate passees');
 if (bandeaux.sans.length) {
-  rate(bandeaux.sans.length + ' question(s) de sourate sans cartouche complet',
+  rate(bandeaux.sans.length + ' cartouche(s) affiche(s) mais incomplet(s)',
        bandeaux.sans.slice(0, 5).join(' | '));
-} else ok('les ' + bandeaux.total + ' questions de sourate portent leur cartouche');
+} else ok('tout cartouche affiche porte ses deux noms', bandeaux.avec + ' cartouches');
 
 if (err.length) rate('erreurs JavaScript', err.join(' | ')); else ok('aucune erreur JavaScript');
 await nav.close();

@@ -103,10 +103,36 @@
     }
     var zone = document.getElementById('continuer');
     if (!vues.length) {
-      // Rien n'a encore ete joue : on ne montre pas une liste vide, on dit
-      // quoi faire.
-      zone.innerHTML = '<p style="font-size:14px;color:var(--texte-2)">'
-        + 'Tu n\'as pas encore joué. Commence par la section de ton choix.</p>';
+      /* PREMIERE VISITE : ON PROPOSE, ON NE LAISSE PAS DEVANT LE VIDE.
+         Il y avait la une phrase grise — « Tu n'as pas encore joue » — et,
+         dessous, sept cents pixels de rien jusqu'a la barre de navigation.
+         C'est le premier ecran que voit quelqu'un qui arrive : il doit
+         donner envie d'appuyer quelque part, pas ressembler a une page qui
+         n'a pas fini de charger.
+
+         Les trois sections proposees sont les trois PREMIERES du parcours,
+         dans l'ordre du sommaire. Cet ordre n'est pas de moi : il est dans
+         data/sections.json depuis le debut, et il va du plus general au plus
+         precis. Autant s'en servir plutot que d'inventer un classement. */
+      var debut = [];
+      for (var t = 0; t < sections.length && debut.length < 3; t++) {
+        if (sections[t].quoi) { debut.push(sections[t]); }
+      }
+      var hd = '<div class="depart">'
+        + '<span class="depart-rosace" data-rosace="12" data-ratio="0.62"'
+        + ' data-taille="180" data-couleur="#0F5132" data-trait="1" aria-hidden="true"></span>'
+        + '<p class="depart-mot">Rien de commencé pour l\'instant.'
+        + ' Voilà par où beaucoup démarrent&nbsp;:</p>'
+        + '<div class="pile-9">';
+      for (var u = 0; u < debut.length; u++) {
+        hd += '<a class="ligne" href="section/' + ech(debut[u].slug) + '">'
+          + '<span class="rond">' + icone(debut[u].icone, 20) + '</span>'
+          + '<span class="milieu"><span class="nom">' + ech(debut[u].nom) + '</span>'
+          + '<span class="quoi">' + ech(debut[u].quoi) + '</span></span>'
+          + '<span class="pc" aria-hidden="true">&rarr;</span></a>';
+      }
+      zone.innerHTML = hd + '</div></div>';
+      if (window.IPAP_GEO) { window.IPAP_GEO.poserMotifs(zone); }
       return;
     }
     // La maitrise a besoin des identifiants de chaque section : on ne la

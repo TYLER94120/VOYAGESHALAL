@@ -102,12 +102,44 @@ function fleuron() {
     + 'stroke-linejoin="round"/></svg>';
 }
 
+/* LE CARTOUCHE NE DOIT JAMAIS DONNER LA REPONSE.
+   « De quelle sourate vient ce verset ? » sous un bandeau qui annonce SOURATE
+   AT-TAKATHUR, reponse D : 51 questions etaient dans ce cas. La regle est
+   generale — si le nom de la sourate se lit dans une reponse, le cartouche se
+   tait — pour qu'une question ecrite demain y tombe aussi.
+   On compare des MOTS ENTIERS : « Ta » est un bout de « At-Takathur », et la
+   comparaison naive faisait taire le cartouche sur tout l'alphabet. */
+function motsDe(s) {
+  return (' ' + String(s || '').toLowerCase()
+    .normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .replace(/[^a-z0-9ء-ي]+/g, ' ').trim() + ' ');
+}
+
+function nomLache(s, q) {
+  if (!s || !q.reponses) { return false; }
+  var noms = [motsDe(s.tr), motsDe(s.ar)];
+  for (var i = 0; i < q.reponses.length; i++) {
+    var r = motsDe(q.reponses[i]);
+    for (var j = 0; j < noms.length; j++) {
+      var n = noms[j];
+      if (n === '  ') { continue; }
+      // le nom se lit dans la reponse : « la nuit d'Al-Qadr »
+      if (r.indexOf(n) >= 0) { return true; }
+      // ou la reponse EST le nom, a l'article pres : « Takathur »
+      var rr = r.trim();
+      if (rr.length >= 4 && n.indexOf(' ' + rr + ' ') >= 0) { return true; }
+    }
+  }
+  return false;
+}
+
 /* Le bandeau enlumine : un cartouche de manuscrit, pas une ligne de texte.
    Quand la question ne vient pas d'une sourate — une lettre de l'alphabet,
    par exemple — il n'y a pas de cartouche : on garde le surtitre simple de
    l'ecran B. On n'invente pas un nom arabe pour faire joli. */
 function bandeauHTML(q) {
   var s = sourateDe(q);
+  if (s && nomLache(s, q)) { s = null; }
   if (!s) {
     return '<div class="carte-tete">'
       + '<span class="carte-surtitre">' + echapper(q.surtitre || q.theme || '') + '</span>'

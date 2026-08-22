@@ -74,8 +74,12 @@
         // reconnait desormais a son nombre de branches, pas a un pictogramme :
         // le meme motif se retrouve derriere le verset de ses cartes, et le
         // paquet devient reconnaissable sans qu'on ait a lire.
+        // La rosace du JETON est doree : depuis que le jeton est vert profond,
+        // un trace vert dessus ne se voyait plus du tout — douze carres verts
+        // pleins, et le signe de la section perdu. Le FILIGRANE, lui, reste
+        // vert : il se pose sur l'ivoire de la tuile, pas sur le jeton.
         var marque = GEO && s.branches
-          ? GEO.rosette(28, s.branches, s.ratio, '#0F5132', 1)
+          ? GEO.rosette(28, s.branches, s.ratio, '#E3C97A', 1)
           : icone(s.icone, 20);
         var filigrane = GEO && s.branches
           ? '<span class="filigrane" aria-hidden="true">'

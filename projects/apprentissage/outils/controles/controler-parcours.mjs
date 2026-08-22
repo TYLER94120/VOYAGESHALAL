@@ -62,10 +62,12 @@ if (carte.reponses !== 4) rate('la carte porte 4 reponses', carte.reponses);
 else ok('4 reponses en colonne');
 if (!carte.question || !(carte.cartouche || carte.surtitre)) rate('en-tete et question presents');
 else ok('en-tete et question presents');
-if (!carte.cartouche) rate('une question de sourate doit porter le bandeau enlumine');
-else if (!/^سورة .+/.test(carte.bandeauAr.trim()) || !/^Sourate .+/.test(carte.bandeauFr.trim())) {
-  rate('le cartouche ne porte pas les deux noms', carte.bandeauAr + ' | ' + carte.bandeauFr);
-} else ok('bandeau enlumine complet', carte.bandeauFr);
+/* Le CARTOUCHE ne se verifie plus ici : depuis le 22 aout il se tait quand il
+   donnerait la reponse, et la premiere carte de cette section est justement
+   de celles-la (« De quelle sourate vient ce verset ? »). Il a son propre
+   bloc en fin de fichier, sur une page a lui — chercher une carte a cartouche
+   en avancant dans CE paquet fausserait tout ce qui suit, qui compte les
+   cartes. */
 if (!carte.rosace) rate('la rosace de section manque derriere le verset');
 else ok('la rosace de section est derriere le verset');
 if (carte.tampons !== 2) rate('les deux tampons sont montes', carte.tampons);
@@ -185,6 +187,46 @@ const revient = await p.evaluate(() => {
 if (!revient) rate('impossible de verifier le retour de la question ratee');
 else if (revient.dans < 0) rate('la question ratee n a PAS ete remise dans le paquet', revient.id);
 else ok('la question ratee revient bien', revient.dans + ' cartes plus loin');
+
+/* --- 7. Le bandeau enlumine, la ou il a le droit d'exister ---------------
+   Sur une page neuve, pour ne pas deranger le comptage de cartes ci-dessus.
+   On avance jusqu'a la premiere carte qui porte un cartouche et on verifie
+   qu'il est complet. Aucune en vingt cartes voudrait dire que le cartouche a
+   disparu du site — et c'est bien un echec, pas un detail. */
+{
+  /* AU NIVEAU EXPERT, ET C'EST LA QU'IL FAUT REGARDER. Le niveau 1 de cette
+     section est fait a 26/29 de « De quelle sourate vient ce verset ? » : des
+     questions dont le cartouche DOIT se taire. Le niveau 3, lui, n'est que
+     traductions de versets — le cartouche y est chez lui, et son absence
+     serait un vrai defaut. */
+  const q = await ctx.newPage();
+  await q.goto(B + '/qcm.html?section=sens-des-sourates&n=20&niveau=3', { waitUntil: 'domcontentloaded' });
+  await q.evaluate(() => {
+    localStorage.clear();
+    localStorage.setItem('ipap.v1', JSON.stringify({ reglages: { melanger: false } }));
+  });
+  await q.reload({ waitUntil: 'domcontentloaded' });
+  await q.waitForSelector('.reponse', { timeout: 8000 });
+  const lire = () => q.evaluate(() => {
+    const b = document.getElementById('carte').querySelector('.cartouche');
+    return {
+      cartouche: !!b,
+      ar: b ? (b.querySelector('.cartouche-ar') || {}).textContent || '' : '',
+      fr: b ? (b.querySelector('.cartouche-fr') || {}).textContent || '' : '',
+    };
+  });
+  let b = await lire(), sauts = 0;
+  while (!b.cartouche && sauts < 19) {
+    await q.locator('#cote-gauche').click();
+    await q.waitForTimeout(420);
+    b = await lire(); sauts++;
+  }
+  if (!b.cartouche) rate('aucune carte ne porte le bandeau enlumine en 20 cartes');
+  else if (!/^سورة .+/.test(b.ar.trim()) || !/^Sourate .+/.test(b.fr.trim())) {
+    rate('le cartouche ne porte pas les deux noms', b.ar + ' | ' + b.fr);
+  } else ok('bandeau enlumine complet', b.fr + ' (carte ' + (sauts + 1) + ')');
+  await q.close();
+}
 
 if (erreurs.length) rate('erreurs JavaScript', erreurs.join(' | '));
 else ok('aucune erreur JavaScript');
