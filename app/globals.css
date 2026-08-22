@@ -1779,3 +1779,13 @@ body:has(.autour-plein[data-vue="carte"]) .bottom-nav { display: none !important
 /* Le fil compte un point par panneau : à 354 villes, il débordait du feed
    et ses derniers points flottaient sur le socle. Il reste dans l'écran. */
 .imm-fil { max-height: 62svh; overflow: hidden; }
+
+/* 🖱 « LE SWIPE NE MARCHE PAS SUR PC » (22 août). Le geste s'écrit dans la
+   langue de l'appareil : un doigt swipe, une souris a une molette et un
+   clavier. Le mot « Swipe » sur un ordinateur décrivait un geste que le
+   lecteur ne pouvait pas faire. Voir lib/flux.mjs pour la mesure. */
+.geste-souris { display: none; }
+@media (hover: hover) and (pointer: fine) {
+  .geste-doigt { display: none; }
+  .geste-souris { display: inline; }
+}

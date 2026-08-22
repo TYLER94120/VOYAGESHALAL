@@ -3,6 +3,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import Link from 'next/link'
 import { useLanguage } from '@/components/i18n/LanguageProvider'
 import { CATEGORIES, SEUIL_CONFIANCE } from '@/lib/community'
+import { useFluxSouris } from '@/lib/fluxSouris'
 import type { PrayerSpot } from '@/lib/villeTypes'
 
 // 🧿 FLUX « PÉPITES » — un spot = un écran, swipe vertical (brief 2a).
@@ -158,7 +159,8 @@ function Ecran({ s, en, proche, thanked, confirmed, busy, onUtile, onConfirm, on
             <Ic d={D_ITIN} size={20} /> {en ? 'Directions' : 'Itinéraire'}
           </a>
           <p style={{ textAlign: 'center', color: 'rgba(253,250,243,.45)', fontSize: 12, margin: '8px 0 0' }}>
-            {en ? 'swipe up for the next spot' : 'swipe vers le haut pour le spot suivant'}
+            <span className="geste-doigt">{en ? 'swipe up for the next spot' : 'swipe vers le haut pour le spot suivant'}</span>
+            <span className="geste-souris">{en ? 'scroll or press ↓ for the next spot' : 'molette ou flèche ↓ pour le spot suivant'}</span>
           </p>
         </div>
       </div>
@@ -179,6 +181,8 @@ export default function FluxPepites({ initialSpots }: { initialSpots?: Spot[] })
   const [busy, setBusy] = useState<string | null>(null)
   const [pleinDesktop, setPleinDesktop] = useState<number | null>(null)
   const fluxRef = useRef<HTMLDivElement | null>(null)
+  // Molette et flèches : un cran = un panneau (lib/flux.mjs).
+  useFluxSouris(fluxRef)
 
   const charger = async (c: string | null, p: { lat: number; lng: number } | null) => {
     setSpots(null); setHorsZone(false); setIdx(0)
