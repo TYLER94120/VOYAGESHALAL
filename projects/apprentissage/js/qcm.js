@@ -119,6 +119,26 @@ function bandeauHTML(q) {
     + '</div>';
 }
 
+/* LE MOT DONT ON PARLE, MONTRE DANS LE VERSET.
+
+   Les questions de vocabulaire demandent le sens d'UN mot : sans le designer,
+   la question n'a pas de sens. Le mot est donc entoure, pas colore seulement
+   — une couleur seule ne se voit pas de tout le monde (section 2.7).
+
+   On echappe AVANT de couper : le verset entier passe par `echapper`, puis on
+   cherche le mot dans le resultat echappe. Coller du HTML autour d'un texte
+   non echappe serait la porte ouverte, meme si nos versets viennent d'un
+   fichier a nous. */
+function arabeHTML(q) {
+  var t = echapper(q.arabe);
+  if (!q.surligne) { return t; }
+  var m = echapper(q.surligne);
+  var i = t.indexOf(m);
+  if (i < 0) { return t; }   // introuvable : on montre le verset tel quel
+  return t.slice(0, i) + '<mark class="mot-vise">' + m + '</mark>'
+    + t.slice(i + m.length);
+}
+
 /* Le filet dore a ornement qui separe le verset de la question (V2 5.3). */
 function separateurHTML() {
   return '<div class="separateur" aria-hidden="true">'
@@ -180,7 +200,7 @@ function carteHTML(q, avecTampons) {
         + window.IPAP_GEO.rosette(190, SECTION_MOTIF.branches, SECTION_MOTIF.ratio, '#0F5132', 1.1)
         + '</div>';
     }
-    h += '<div class="carte-arabe" lang="ar" dir="rtl">' + echapper(q.arabe) + '</div>';
+    h += '<div class="carte-arabe" lang="ar" dir="rtl">' + arabeHTML(q) + '</div>';
     if (q.translitteration) {
       h += '<div class="carte-translit">' + echapper(q.translitteration) + '</div>';
     }

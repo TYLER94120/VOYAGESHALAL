@@ -77,7 +77,20 @@
           + (rate ? 'Réponse fausse' : 'Juste') + '</span>'
           + '<span class="rev-q">' + ech(q.question) + '</span></button>';
         h += '<div class="rev-corps">';
-        if (q.arabe) { h += '<div class="carte-arabe" lang="ar" dir="rtl">' + ech(q.arabe) + '</div>'; }
+        if (q.arabe) {
+          // Le mot vise doit rester visible dans le corrige : sans lui, on
+          // relit une question de vocabulaire sans savoir de quel mot elle
+          // parlait.
+          var av = ech(q.arabe);
+          if (q.surligne) {
+            var sm = ech(q.surligne), si = av.indexOf(sm);
+            if (si >= 0) {
+              av = av.slice(0, si) + '<mark class="mot-vise">' + sm + '</mark>'
+                + av.slice(si + sm.length);
+            }
+          }
+          h += '<div class="carte-arabe" lang="ar" dir="rtl">' + av + '</div>';
+        }
         // Le glyphe d'une question de calligraphie : la revoir sans lui ne
         // veut rien dire, on ne saurait pas de quelle lettre on parle.
         if (q.type === 'calligraphie' && q.glyphe) {

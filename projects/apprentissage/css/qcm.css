@@ -699,3 +699,15 @@
   border-color: rgba(227, 201, 122, 0.4);
   color: var(--or-clair);
 }
+
+/* LE MOT DONT LA QUESTION PARLE.
+   Entoure ET colore : une couleur seule ne se voit pas de tout le monde
+   (section 2.7). Le fond reste tres clair pour ne pas ecraser la
+   calligraphie — c'est elle qu'on vient lire. */
+.mot-vise {
+  background: var(--vert-voile-2);
+  color: var(--vert);
+  border-bottom: 2px solid var(--vert);
+  border-radius: 6px;
+  padding: 0 4px;
+}

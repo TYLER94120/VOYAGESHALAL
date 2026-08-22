@@ -69,8 +69,15 @@ def sans_accents(s):
 
 
 def normaliser(s):
-    """Pour comparer deux reponses : espaces, accents et ponctuation ignores."""
-    return re.sub(r'[^a-z0-9]+', ' ', sans_accents(s)).strip()
+    """Pour comparer deux reponses : espaces, accents et ponctuation ignores.
+
+    L'ARABE EST GARDE. La premiere version ne retenait que `a-z0-9` : quatre
+    reponses arabes se reduisaient donc a quatre chaines vides, et le controle
+    « deux reponses identiques » refusait toute question dont les reponses
+    sont des mots arabes. Le defaut n'a paru que le jour ou une telle question
+    a existe — les banques francaises ne pouvaient pas le reveler.
+    """
+    return re.sub(r'[^a-z0-9ء-ي]+', ' ', sans_accents(s)).strip()
 
 
 def identifiant(prefixe, graine):

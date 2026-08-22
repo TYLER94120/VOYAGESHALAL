@@ -100,11 +100,46 @@ def _base_et_position(glyphe):
     return c, 'isolated'
 
 
+def _lexique_et_morphologie():
+    """Le lexique publie, et les lemmes presents dans chaque verset.
+
+    On ne demande pas au generateur s'il a bien travaille : on relit le
+    corpus morphologique et le lexique ecrit a cote des questions, et on
+    verifie que le sens annonce appartient bien a un mot PRESENT dans le
+    verset cite. Une question de vocabulaire qui donne le sens d'un mot
+    absent du verset serait invisible a tout autre controle.
+    """
+    lex = RACINE / 'data' / 'lexique.json'
+    morpho = RACINE / 'outils' / 'coran' / 'morphologie.txt'
+    if not lex.exists() or not morpho.exists():
+        return None, None
+    sensDuLemme = {x['lemme']: x['sens'] for x in
+                   json.loads(lex.read_text(encoding='utf-8'))}
+    lemmesDuVerset = {}
+    for ligne in morpho.read_text(encoding='utf-8').splitlines():
+        if not ligne.strip():
+            continue
+        ref, _forme, _pos, tags = ligne.split('\t')
+        s, v = (int(x) for x in ref.split(':')[:2])
+        for t in tags.split('|'):
+            if t.startswith('LEM:'):
+                lemmesDuVerset.setdefault((s, v), set()).add(t[4:])
+    return sensDuLemme, lemmesDuVerset
+
+
+SENS_DU_LEMME, LEMMES_DU_VERSET = _lexique_et_morphologie()
+
+
 def nu(s):
-    """Pour comparer deux textes : accents, ponctuation et espaces ignores."""
+    """Pour comparer deux textes : accents, ponctuation et espaces ignores.
+
+    L'arabe est garde, comme dans fabrique.normaliser : sans lui, quatre
+    reponses arabes se reduisent a quatre chaines vides et le controle
+    « deux reponses identiques » se declenche sur des questions justes.
+    """
     s = unicodedata.normalize('NFD', s)
     s = ''.join(c for c in s if unicodedata.category(c) != 'Mn')
-    return re.sub(r'[^a-z0-9]+', ' ', s.lower()).strip()
+    return re.sub(r'[^a-z0-9ء-ي]+', ' ', s.lower()).strip()
 
 
 def main():
@@ -127,6 +162,9 @@ def main():
     total = 0
     verifiables = 0
     calligraphies = 0
+    surlignes = 0
+    verifiesVocab = 0
+    nonVerifies = 0
 
     for f in fichiers:
         qs = json.loads(f.read_text(encoding='utf-8'))
@@ -189,6 +227,15 @@ def main():
                                   'controle — elle n\'est donc pas verifiee' % ou)
                 continue
 
+            # --- le mot surligne doit etre DANS le verset --------------
+            # Une question de vocabulaire qui designe un mot absent du verset
+            # ne designe rien : la personne cherche un mot qui n'est pas la.
+            if q.get('surligne'):
+                surlignes += 1
+                if q['surligne'] not in (q.get('arabe') or ''):
+                    fautes.append('%s : le mot surligne n\'est pas dans le verset '
+                                  'affiche' % ou)
+
             # --- l'arabe montre doit etre CELUI de la source -----------
             m = SOURCE_CORAN.search(q['source'])
             if not m:
@@ -198,6 +245,32 @@ def main():
                 fautes.append('%s : cite sourate %d verset %d, qui n\'existe pas' % (ou, s, v))
                 continue
             verifiables += 1
+
+            # --- vocabulaire : le sens annonce doit venir d'un mot du verset
+            # On ne croit pas le generateur sur parole : le sens doit etre
+            # celui qu'a lexique.json pour un lemme REELLEMENT present dans
+            # ce verset, d'apres le corpus morphologique.
+            if q.get('type') == 'vocabulaire' and SENS_DU_LEMME and LEMMES_DU_VERSET:
+                verifiesVocab += 1
+                attendus = {SENS_DU_LEMME[l] for l in LEMMES_DU_VERSET.get((s, v), ())
+                            if l in SENS_DU_LEMME}
+                bonneR = q['reponses'][q['bonne']]
+                if q['question'].startswith('Que signifie'):
+                    if bonneR not in attendus:
+                        fautes.append('%s : « %s » n\'est le sens d\'aucun mot '
+                                      'present dans sourate %d verset %d'
+                                      % (ou, bonneR, s, v))
+                elif 'signifie' in q['question']:
+                    voulu = re.search(r'signifie « (.+?) »', q['question'])
+                    if voulu and voulu.group(1) not in attendus:
+                        fautes.append('%s : aucun mot de sourate %d verset %d ne '
+                                      'signifie « %s »' % (ou, s, v, voulu.group(1)))
+                continue
+            if q.get('type') == 'vocabulaire':
+                # Sans corpus sous la main on ne peut rien affirmer : on le
+                # DIT plutot que de laisser croire que c'est verifie.
+                nonVerifies += 1
+                continue
 
             attendu = francais[(s, v)]
             bonne = q['reponses'][q['bonne']]
@@ -258,6 +331,8 @@ def main():
     print('  %d questions dans %d sections.' % (total, len(fichiers)))
     print('  %d citent un verset precis et ont ete confrontees au texte.' % verifiables)
     print('  %d montrent un glyphe et ont ete confrontees a Unicode.' % calligraphies)
+    print('  %d designent un mot du verset, %d confrontees au corpus '
+          'morphologique.' % (surlignes, verifiesVocab))
     if fautes:
         print('\n  %d FAUTE(S) :' % len(fautes))
         for x in fautes[:25]:
