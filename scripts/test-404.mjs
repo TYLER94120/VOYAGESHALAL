@@ -48,7 +48,16 @@ if (!/href="\/contact"/.test(src)) casse('le 404 n\'offre plus de dire que l\'ad
 if (!/index: false/.test(src)) casse('le 404 s\'indexe : Google référencerait une page d\'erreur')
 if (!/follow: true/.test(src)) casse('le 404 coupe le maillage interne (follow)')
 
-// ── 4. le filet d'erreur parle la langue du domaine ──
+// ── 4. l'adresse de démarrage de Mohamed mène à l'accueil ──
+// « Le site s'ouvre sur cette page, c'est pas la bonne page d'accueil » :
+// /accueil-gohalal-travel est sa page d'ouverture de navigateur. Elle doit
+// arriver sur l'accueil, pas sur un 404 — aussi bien fait soit-il.
+const conf = readFileSync('next.config.ts', 'utf8')
+if (!/source: '\/accueil-gohalal-travel'[\s\S]{0,120}destination: '\/'/.test(conf)) {
+  casse('l\'adresse de démarrage /accueil-gohalal-travel ne renvoie plus vers l\'accueil')
+}
+
+// ── 5. le filet d'erreur parle la langue du domaine ──
 const filet = readFileSync('app/error.tsx', 'utf8')
 if (!/gohalaltravel/.test(filet)) casse('le filet d\'erreur parle français sur le site anglais')
 if (!/Try again/.test(filet)) casse('le bouton du filet d\'erreur n\'a pas de version anglaise')
