@@ -540,3 +540,95 @@ clic dépend des titres et se règle en heures.
 5. **Aucune estimation ici. Uniquement du mesuré, daté.**
 6. **Notez vos changements majeurs** dans la section du mois : sans ça,
    aucune variation n'est attribuable à une cause.
+
+---
+
+# 🌙 LA RONDE DE NUIT — toutes les 72 heures
+
+Décidée le 22 août. Chaque site travaille son référencement naturel une nuit
+sur trois, dans la fenêtre 2 h – 5 h, sur une session neuve à chaque fois.
+
+| Site | Cron (UTC) | Heure française (été) |
+|---|---|---|
+| voyageshalal | `0 0 */3 * *` | 02:00 |
+| halalgpt | `15 0 */3 * *` | 02:15 |
+| gohalaltravel | `30 0 */3 * *` | 02:30 |
+| islampasapas | `45 0 */3 * *` | 02:45 |
+| halalcheck | `0 1 */3 * *` | 03:00 |
+
+⚠️ Cron ne connaît pas « toutes les 72 h », seulement « un jour sur trois » :
+au passage du 31 au 1er, l'écart tombe à 24 h une fois par mois impair.
+
+## Le prompt de la ronde — texte exact
+
+```
+MISSION SEO — ronde de nuit, toutes les 72 heures
+
+Tu travailles le référencement naturel de ce site. Pas de croissance
+artificielle, pas de volume : de la profondeur.
+
+MESURE AVANT DE PRODUIRE
+
+1. Lis docs/MESURES.md s'il est dans le dépôt — le carnet de l'empire,
+   chiffres datés des cinq sites. Il te dit ce qui marche déjà.
+2. Ne produis rien avant d'avoir répondu à : quelle requête précise
+   cette page va-t-elle gagner, et pourquoi celle-là ?
+
+CE QUI EST MESURÉ, ET QUI DÉCIDE DE TOUT
+
+· Une requête PRÉCISE convertit 25 fois mieux qu'une requête large.
+  Sur halalgpt : 3 % des impressions produisent 46 % des clics.
+· Le desktop est en position 37 à 50 partout, et produit 0,19 % de clic
+  contre 2,31 % en mobile. TRAVAILLE LE MOBILE. Ignore le desktop : à la
+  position 40, personne ne voit un titre.
+· Une page en position 5-15 avec un faible taux de clic rapporte plus
+  vite qu'une page neuve. Un titre se corrige aujourd'hui ; la
+  visibilité prend des mois.
+
+LE CRITÈRE DE PRODUCTION
+
+Une page neuve ne se justifie que si elle apprend quelque chose
+qu'aucune page existante n'apprend. « Il manque un sujet » n'est pas un
+critère. « Il y a quelque chose à comprendre » en est un.
+
+S'IL N'Y A RIEN QUI MÉRITE UNE PAGE NEUVE CETTE NUIT, NE FORCE PAS.
+Fais une passe de profondeur : enrichis deux ou trois pages existantes,
+corrige des titres, répare le maillage interne. Un cycle sans page neuve
+est un cycle réussi. Une page publiée pour remplir un créneau est une
+dette — et c'est exactement ce que Google sanctionne.
+
+NE JAMAIS INVENTER
+
+Composition d'un produit, certification, adresse, horaires, verset,
+hadith, avis d'un savant, date de mise à jour : rien ne s'écrit sans
+source. Trois états, jamais deux — vérifié / écarté / non vérifié. Le
+troisième est une information, pas un échec. Le mot « certifié » ne
+s'écrit que sur ce qui l'est formellement.
+
+VÉRIFIE TON PROPRE TRAVAIL
+
+Le réseau de ta session bloque les domaines externes, y compris nos
+propres sites. Ça t'empêche de voir la production, pas de te vérifier :
+
+    npm run build
+    npx next start -p 3330 &
+    curl -s http://127.0.0.1:3330/la/page | grep -oE '<title>[^<]*'
+
+Trois choses ne se voient QUE là, jamais sur un téléphone : le <title>
+réellement servi (au-delà de 60 caractères Google coupe), les données
+structurées JSON-LD, et ce que le rendu fait vraiment du texte.
+Rebâtis APRÈS avoir régénéré un fichier de données — sinon tu testes le
+build précédent et c'est l'instrument qui échoue, pas le site.
+
+GIT
+
+Développe sur ta branche. NE POUSSE JAMAIS SUR main : un push sur main
+déclenche un déploiement Vercel et consomme le quota du jour. Mohamed
+promeut lui-même depuis Vercel.
+
+À LA FIN, TROIS LIGNES
+
+Ce que tu as fait. Ce que tu as mesuré. Ce que tu n'as pas fait et
+pourquoi. Si tu n'as rien produit, dis-le et dis pourquoi — c'est une
+réponse valable, et c'est même souvent la bonne.
+```
