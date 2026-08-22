@@ -38,7 +38,11 @@ for (const f of FICHIERS_TITRES) {
 }
 
 // ── 2. le socle SSR des pages ville est bien branché ──
-const pageVille = readFileSync('app/destinations/[city]/page.tsx', 'utf8')
+// Le rendu vit dans components/villes/DestinationRoute depuis le chantier
+// cache du 22 août : les deux routes (FR et EN) l'appellent, le socle doit
+// donc y être — c'est le seul endroit où il peut disparaître pour les deux
+// langues d'un coup.
+const pageVille = readFileSync('components/villes/DestinationRoute.tsx', 'utf8')
 if (!/<SocleVille/.test(pageVille)) casse('le socle SSR a disparu de la page ville — les 354 pages redeviendraient vides pour Google')
 const socle = codeSeul('components/villes/SocleVille.tsx')
 if (!/<h1/.test(socle)) casse('le socle ville n\'a plus de <h1>')

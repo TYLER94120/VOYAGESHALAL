@@ -41,7 +41,30 @@ export function middleware(req: NextRequest) {
     return decorate(NextResponse.redirect(url, 301))
   }
 
+  // 🗄 CHANTIER CACHE DU 22 AOÛT — la fiche de ville vient du cache.
+  //
+  // /en/... est un chemin INTERNE : il porte la version anglaise fabriquée
+  // à la construction. Tapé à la main, il ferait un doublon dans Google.
+  // On le renvoie donc toujours vers l'URL publique correspondante.
+  if (pathname.startsWith('/en/')) {
+    const url = req.nextUrl.clone()
+    url.pathname = pathname.slice(3)
+    return decorate(NextResponse.redirect(url, 301))
+  }
+
   if (isEN) {
+    // 🗄 La fiche de ville anglaise est servie depuis son chemin interne :
+    // l'URL publique ne bouge pas, mais la réponse ne dépend plus de
+    // l'en-tête « Host » — donc le cache est enfin permis, et la page ne
+    // repart plus de notre serveur à chaque visite.
+    // (les listes /destinations et /destinations/pays/... restent hors de
+    // ce chantier : une chose à la fois, mesurée.)
+    if (/^\/destinations\/[^/]+$/.test(pathname) && !pathname.startsWith('/destinations/pays')) {
+      const url = req.nextUrl.clone()
+      url.pathname = `/en${pathname}`
+      return decorate(NextResponse.rewrite(url))
+    }
+
     // 🌍 GOHALALTRAVEL, PHASE 1 (validée le 20 août) : l'accueil du domaine
     // anglais EST le World feed — on swipe les villes. L'URL publique reste
     // « / » (réécriture interne), voyageshalal.fr garde son accueil.

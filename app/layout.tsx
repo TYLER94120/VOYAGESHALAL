@@ -73,6 +73,35 @@ export const viewport: Viewport = {
 // Site bi-domaine : la langue (et la marque) dépend de l'hôte de la requête.
 // On force le rendu dynamique sur TOUTES les routes pour qu'aucune page (dont « / »)
 // ne soit servie depuis un cache edge/build figé sur la mauvaise langue.
+//
+// 🗄 CHANTIER CACHE DU 22 AOÛT — CETTE LIGNE COÛTE LE SITE.
+//
+// La raison qui l'a fait écrire reste vraie : servir une page française à
+// un anglophone serait pire qu'une facture. Mais elle s'applique au site
+// ENTIER, et Next.js écrit alors « no-store » sur chaque page. Mesuré le
+// 22 août : aucune page du site n'a le droit d'être mise en cache, la
+// plus lourde pèse 544 Ko, et le compte Vercel s'est mis en pause à
+// 10,77 Go d'« Origin Transfer » sur 10 Go inclus — les trois sites sont
+// tombés ensemble.
+//
+// LA SORTIE, par étapes (voir scripts/test-cache.mjs) :
+//   ÉTAPE 1 — FAITE : la fiche de ville (354 × 2 langues, la plus grande
+//     surface d'indexation) tire sa langue de la ROUTE et non de
+//     l'en-tête. app/destinations/[city] est française, app/en/... est
+//     anglaise, le middleware réécrit sans changer l'URL publique.
+//   ÉTAPE 2 — À FAIRE : le layout lui-même. Tant qu'il lit l'en-tête
+//     Host, TOUTES les routes restent dynamiques, y compris celles de
+//     l'étape 1. Il faut deux layouts racine — un français, un anglais
+//     sous /en — pour que la langue soit portée par l'adresse de bout en
+//     bout. C'est la seule façon d'être en cache SANS jamais risquer la
+//     mauvaise langue : une page qui ne dépend que de son adresse ne peut
+//     pas se tromper de lecteur.
+//   ÉTAPE 3 — À FAIRE : les listes (/destinations 544 Ko, /guides,
+//     /blog), puis le sitemap.
+//
+// ⚠️ NE PAS retirer cette ligne avant l'étape 2 : sans elle et sans les
+// deux layouts, le site servirait la mauvaise langue. La facture est un
+// problème ; la mauvaise langue en est un plus grave.
 export const dynamic = 'force-dynamic'
 
 export default async function RootLayout({
