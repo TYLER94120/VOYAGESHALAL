@@ -20,6 +20,14 @@ import { useEffect } from 'react'
 //   3. il envoie l'erreur au serveur pour qu'on puisse la LIRE. Un défaut
 //      qu'on ne voit pas est un défaut qui reste.
 export default function Erreur({ error, reset }: { error: Error & { digest?: string }; reset: () => void }) {
+  // 🇬🇧 22 août : ce filet parlait français sur gohalaltravel.com. Un
+  // anglophone tombé sur un écran cassé lisait une excuse dans une langue
+  // qu'il ne demande pas. Le domaine décide, comme partout ailleurs sur le
+  // site (lib/domain.ts) — ici côté navigateur, puisque le filet est un
+  // composant client.
+  const en = typeof window !== 'undefined' && window.location.hostname.includes('gohalaltravel')
+  const t = (fr: string, an: string) => (en ? an : fr)
+
   useEffect(() => {
     // Jamais bloquant, jamais bruyant : si le signalement échoue, la page
     // reste utilisable.
@@ -45,22 +53,24 @@ export default function Erreur({ error, reset }: { error: Error & { digest?: str
       gap: 16, padding: '32px 20px', textAlign: 'center',
     }}>
       <h1 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: 24, fontWeight: 700, margin: 0 }}>
-        Cet écran n&apos;a pas pu s&apos;afficher
+        {t('Cet écran n’a pas pu s’afficher', 'This screen could not be displayed')}
       </h1>
       <p style={{ fontSize: 15.5, lineHeight: 1.6, color: 'rgba(253,250,243,0.8)', margin: 0, maxWidth: 380 }}>
-        Le défaut vient de nous, pas de toi. Il est enregistré et il sera corrigé.
-        En attendant, réessaie — le reste du site fonctionne.
+        {t(
+          'Le défaut vient de nous, pas de toi. Il est enregistré et il sera corrigé. En attendant, réessaie — le reste du site fonctionne.',
+          'The fault is ours, not yours. It has been logged and it will be fixed. In the meantime, try again — the rest of the site works.',
+        )}
       </p>
       <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', justifyContent: 'center', marginTop: 6 }}>
         <button onClick={() => reset()} style={{
           minHeight: 56, padding: '0 22px', borderRadius: 999, border: 'none',
           background: 'linear-gradient(135deg,#D9BE6C,#C9A84C)', color: '#0A1509',
           fontSize: 16, fontWeight: 800, cursor: 'pointer',
-        }}>Réessayer</button>
+        }}>{t('Réessayer', 'Try again')}</button>
         <a href="/" style={{
           minHeight: 56, padding: '0 22px', borderRadius: 999, display: 'inline-flex', alignItems: 'center',
           border: '1px solid rgba(201,168,76,0.4)', color: '#FDFAF3', fontSize: 16, fontWeight: 600, textDecoration: 'none',
-        }}>Retour à l&apos;accueil</a>
+        }}>{t('Retour à l’accueil', 'Back to home')}</a>
       </div>
     </div>
   )
