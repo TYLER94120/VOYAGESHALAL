@@ -569,6 +569,79 @@ indexée, et ça borne ce qu'on peut lui demander.
 
 ---
 
+# 🔥 23 AOÛT, SOIR — L'EMPIRE EST TOMBÉ PENDANT QUELQUES HEURES
+
+L'équipe Vercel est passée en **Paused** et **les cinq sites ont servi
+« This deployment is temporarily paused »** au lieu de leur contenu.
+
+**Cause unique :** `Fast Origin Transfer 10,66 GB / 10 GB` — le seul plafond
+Hobby dépassé. Tout le reste était loin dessous (Fast Data Transfer 19/100 GB,
+Edge Requests 623 K/1 M, ISR Writes 16 K/200 K).
+
+## ⚠️ LE FAIT LE PLUS IMPORTANT À RETENIR
+
+**La page « paused » de Vercel renvoie un code 4xx, pas un 503.**
+
+Mesuré, pas supposé : test en direct de Search Console sur
+`https://www.voyageshalal.fr/` → *« Bloquée en raison d'un autre problème de
+type 4xx »*.
+
+La différence décide de tout :
+
+| Code | Ce que Google en fait |
+|---|---|
+| **503** | « panne temporaire » → il garde les pages et repasse. Inoffensif quelques jours. |
+| **4xx** | « adresse en erreur » → il finit par **retirer les pages de l'index**. |
+
+Autrement dit : **une pause Vercel n'est pas une panne neutre, c'est une
+pression de désindexation.** Un dépassement de quota n'est jamais « on verra
+demain ».
+
+## Ce qui a été fait
+
+- **Passage en Pro** (20 $/mois, 20 $ de crédit inclus). Plafond Fast Origin
+  Transfer : 10 GB → **100 GB**. Sites revenus immédiatement, et test en direct
+  repassé au vert à 21:35 : *« Google a accès à cette URL »*.
+- **Cycle de facturation : 23 août → 23 septembre 2026.** ⏳ **Date limite pour
+  redescendre en Hobby si l'on ne veut payer qu'un mois.**
+- **Alerte de dépense abaissée de 200 $ à 20 $.** En revanche
+  « Pause Production Deployments » laissé **éteint** volontairement : allumé,
+  il remettrait les sites hors ligne — exactement ce qu'on venait de payer pour
+  éviter.
+
+## 🔍 La fuite reste à trouver
+
+**10,66 GB pour 111 clics par mois, c'est absurde.** Le profil :
+
+- **623 000 requêtes edge en 30 jours**, soit ~20 000/jour — alors que le
+  trafic humain depuis Google est de **~4 clics par jour**. Ce ne sont pas des
+  visiteurs.
+- **10,28 GB en « Outgoing » (96,4 %)** — des réponses qui remontent des
+  fonctions vers le CDN. ~16,5 KB par requête en moyenne : une large part
+  descend jusqu'à l'origine au lieu d'être servie par le cache.
+- **Courbe** : quasi nulle jusqu'au 2 août, pic à **1,3 GB le 6-7 août**, puis
+  **plateau stable à ~300 MB/jour**. C'est le plateau qui remplit le seau, pas
+  le pic. Quelque chose s'est mis en route début août.
+
+Écarté à l'examen : `/api/place-photo` (cache Redis 30 jours, ne renvoie
+qu'une URL en JSON, jamais les octets). Aucun cron déclaré dans `vercel.json`.
+Candidat non confirmé : les 4 pages en `force-dynamic` — `guide-vivant/[ville]`,
+`communaute/[pseudo]`, `world`, `plan/[id]`.
+
+➡️ **Prochaine mesure : Usage → Networking → Fast Origin Transfer → onglet
+Projects.** Il dira lequel des trois projets consomme, et c'est de là que part
+la réparation.
+
+## Au passage, réglé le même soir
+
+- **`www.halalgpt.fr`** : enregistrement A ajouté chez OVH. Inspection Search
+  Console avant correction : *« Google ne reconnaît pas cette URL »* — donc
+  **aucune URL en www jamais indexée, aucun lien externe, zéro dégât SEO**.
+  Reste à poser la redirection vers l'apex côté Vercel.
+- **50 clics** relevés sur halalgpt (28 j) — le carnet en estimait ~40.
+
+---
+
 # 🌙 LA RONDE DE NUIT — toutes les 72 heures
 
 Décidée le 22 août. Chaque site travaille son référencement naturel une nuit
