@@ -543,6 +543,32 @@ clic dépend des titres et se règle en heures.
 
 ---
 
+# 🌐 LA CARTE DNS DE L'EMPIRE — relevée le 22 août
+
+| Domaine | apex | www | Hébergeur |
+|---|---|---|---|
+| **halalgpt.fr** | 216.198.79.1 | ❌ **aucun enregistrement** | Vercel |
+| voyageshalal.fr | 216.198.79.1 | ✅ 216.198.79.1 | Vercel |
+| gohalaltravel.com | 216.198.79.1 | ✅ 216.198.79.1 | Vercel |
+| islampasapas.fr | 216.198.79.1 | ✅ 216.198.79.1 | Vercel |
+| **halalcheck.fr** | 185.199.109.153 | ✅ (IPv6) | **GitHub Pages** |
+
+**Le `www` de halalgpt manque** — c'est l'objet de l'alerte Vercel du 22 août.
+Aucun coût en référencement : l'apex est le canonique (`SITE_URL`), Google
+l'indexe, la Search Console y voit du trafic. Le dégât réel est qu'un
+visiteur tapant `www.halalgpt.fr` reçoit une erreur DNS, que le navigateur
+présente comme « site en panne ». Correctif : un enregistrement `A` nommé
+`www` vers `216.198.79.1` — la valeur exacte que portent déjà les quatre
+autres domaines — puis redirection vers l'apex côté Vercel.
+
+⚠️ **halalcheck.fr n'est pas sur Vercel** : `185.199.109.153` est une IP
+GitHub Pages. Conséquence à connaître avant de lui confier un chantier :
+statique pur, pas de rendu serveur, pas de sitemap généré à la
+construction, pas d'API. Ça explique en partie qu'il n'ait qu'une page
+indexée, et ça borne ce qu'on peut lui demander.
+
+---
+
 # 🌙 LA RONDE DE NUIT — toutes les 72 heures
 
 Décidée le 22 août. Chaque site travaille son référencement naturel une nuit
