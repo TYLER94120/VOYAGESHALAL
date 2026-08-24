@@ -21,12 +21,23 @@ export function DestinationSchema({ ville, slug, en = false, siteUrl = FR_SITE }
     image: ville.image ?? ville.image_hero,
     address: { '@type': 'PostalAddress', addressLocality: ville.nom, addressCountry: ville.codeISO ?? ville.pays },
     geo: { '@type': 'GeoCoordinates', latitude: coord.lat, longitude: coord.lng },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: ville.score_halal,
-      bestRating: 5,
-      ratingCount: ville.statistiques?.restaurants_halal ?? ville.restaurants?.length ?? 50,
-    },
+    // Pas d'aggregateRating ici, et c'est delibere.
+    //
+    // Ce bloc annoncait a Google, sur les 354 pages de villes :
+    //   ratingValue : notre propre score_halal — le site se notait lui-meme ;
+    //   ratingCount : le NOMBRE DE RESTAURANTS, presente comme un nombre
+    //                 d'avis, avec un « ?? 50 » quand la donnee manquait.
+    //
+    // Deux choses fausses, pas une imprecision. Google refusait ces elements
+    // — « Extraits d'avis : 88 % de vos elements ne sont pas eligibles »,
+    // recommandation relevee le 24 aout — et il avait raison : une note qu'on
+    // s'attribue soi-meme n'est pas un avis, et un compteur invente est un
+    // chiffre faux publie sous le nom de l'editeur.
+    //
+    // La regle est deja ecrite plus bas, pour les restaurants : une note
+    // UNIQUEMENT si elle vient d'une source reelle avec un vrai nombre d'avis.
+    // Elle vaut ici aussi — et ici il n'existe pas de version honnete de ce
+    // bloc, donc il n'y en a plus.
     touristType: en ? 'Muslim traveler' : 'Voyageur musulman',
   }
   const breadcrumb = {

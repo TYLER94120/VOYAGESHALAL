@@ -7,7 +7,7 @@ import type { Metadata } from 'next'
 import type { Ville } from '@/lib/villeTypes'
 import { getDomainSEO, FR_URL, EN_URL } from '@/lib/domain'
 import { GUIDES_FR_TO_EN } from '@/lib/slugs'
-import { dedupeHotels, noteOf, priceRank } from '@/lib/hotelFilter'
+import { dedupeHotels, noteOf, priceRank, reviewCountOf } from '@/lib/hotelFilter'
 import HotelCTA from '@/components/affiliate/HotelCTA'
 import HotelsSansAlcool from '@/components/hotels/HotelsSansAlcool'
 import JsonLd from '@/components/seo/JsonLd'
@@ -109,7 +109,15 @@ export default async function HotelsVillePage({ params }: Props) {
       item: {
         '@type': 'Hotel', name: h.nom,
         ...(h.adresse ? { address: { '@type': 'PostalAddress', streetAddress: h.adresse, addressLocality: ville.nom } } : {}),
-        ...(noteOf(h) ? { aggregateRating: { '@type': 'AggregateRating', ratingValue: noteOf(h), bestRating: 5, ratingCount: h.avis_count ?? 20 } } : {}),
+        // Une note ne part chez Google que si un VRAI nombre d'avis
+        // l'accompagne. Le « ?? 20 » qui etait ici en inventait un : le champ
+        // `avis_count` est declare dans les types mais n'est rempli nulle
+        // part, donc les 33 322 hotels des donnees annoncaient tous « note par
+        // 20 personnes » — et pas un seul de ces 20 n'existait.
+        // Meme regle que pour les restaurants, quelques lignes plus loin.
+        ...(noteOf(h) && reviewCountOf(h) > 0
+          ? { aggregateRating: { '@type': 'AggregateRating', ratingValue: noteOf(h), bestRating: 5, ratingCount: reviewCountOf(h) } }
+          : {}),
       },
     })),
   }
