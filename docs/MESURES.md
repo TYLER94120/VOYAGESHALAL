@@ -647,16 +647,40 @@ la réparation.
 Décidée le 22 août. Chaque site travaille son référencement naturel une nuit
 sur trois, dans la fenêtre 2 h – 5 h, sur une session neuve à chaque fois.
 
-| Site | Cron (UTC) | Heure française (été) |
-|---|---|---|
-| voyageshalal | `0 0 */3 * *` | 02:00 |
-| halalgpt | `15 0 */3 * *` | 02:15 |
-| gohalaltravel | `30 0 */3 * *` | 02:30 |
-| islampasapas | `45 0 */3 * *` | 02:45 |
-| halalcheck | `0 1 */3 * *` | 03:00 |
+## ✅ CRÉÉES LE 24 AOÛT — trois, pas cinq
+
+| Routine | `trigger_id` | Cron (UTC) | Heure FR | Session liée |
+|---|---|---|---|---|
+| **VoyagesHalal + GoHalalTravel** | `trig_01VomH4vBPRiKB89S5jHUbY2` | `0 0 */3 * *` | 02:05 | `session_01CLJRHQ3FE7inhftPyMCapY` |
+| **HalalGPT** | `trig_01WN2cGr2is6Pm5Lfu2fkrCx` | `15 0 */3 * *` | 02:15 | `session_015u2Dt2UJcCzkhqFQ9h6Wn4` |
+| **IslamPasAPas** | `trig_01Xk2QGoftBex3T4hZPhvAJ1` | `30 0 */3 * *` | 02:35 | `session_015zQR5JMLb16d6zc2DFh681` |
+
+**Trois et non cinq, pour deux raisons de fait :**
+
+1. **gohalaltravel.com n'a pas d'agent à lui.** Il est servi par le projet et la
+   session de voyageshalal — un dépôt, deux domaines. Une seule ronde couvre
+   les deux, et son prompt porte la priorité gohalaltravel (le refus marocain).
+2. 🔴 **La session HALALCHECK n'a pas le dépôt halalcheck.** Elle porte
+   `voyageshalal-app`, `halalgpt` et `voyageshalal`. Elle ne peut pas travailler
+   son propre site. **Aucune ronde créée pour elle** : ce serait brûler du quota
+   à vide. À débloquer en lui attachant son dépôt — et rappel, halalcheck est
+   sur **GitHub Pages**, pas Vercel.
+
+**Deux limites connues :**
+
+- **Pas de connecteurs.** Les Routines créées par cet outil ne transportent pas
+  les connecteurs MCP : les agents pourront lire, mesurer, écrire et pousser,
+  mais **pas interroger Search Console**. Ils travaillent sur les chiffres de ce
+  carnet — d'où l'importance qu'il soit daté et honnête.
+- **Un seul type d'environnement** (`env_01Uc12neFMr81ZjjbzdGVwEK`, « Default »).
+  Impossible de router une session neuve vers le bon dépôt : les rondes sont donc
+  liées aux **sessions persistantes** de chaque site, pas à des sessions neuves.
 
 ⚠️ Cron ne connaît pas « toutes les 72 h », seulement « un jour sur trois » :
 au passage du 31 au 1er, l'écart tombe à 24 h une fois par mois impair.
+
+📌 **Les 21 anciennes Routines restent éteintes**, non supprimées. Ne pas les
+réactiver sans lire leur prompt : elles datent de la mi-août et se chevauchent.
 
 ## Le prompt de la ronde — texte exact
 
