@@ -18,6 +18,10 @@ python3 outils/faire-pratique.py         # les bases de la pratique
 
 python3 outils/enrichir-explications.py  # ← a besoin du lexique ci-dessus
 python3 outils/classer-niveaux.py        # ← APRÈS eux, jamais avant
+
+python3 outils/faire-lecon-sourate.py    # les 20 leçons de sourate
+python3 outils/faire-sourates.py         # l'index des 114 (après les leçons)
+python3 outils/faire-sitemap.py          # ← EN DERNIER : il lit ce qui existe
 python3 outils/controler-questions.py    # ← et le contrôle en dernier
 ```
 
@@ -39,7 +43,11 @@ précédent.
 | `enrichir-explications.py` | ajoute un mot appris à l'explication des questions sur un verset |
 | `faire-icones.py` | `js/icones.js` et le catalogue réduit `js/icones-qcm.js` |
 | `classer-niveaux.py` | range chaque question en début / intermédiaire / expert |
+| `faire-lecon-sourate.py` | les 20 leçons « une sourate, verset par verset » — pages qui se **lisent**, entrée SEO du site |
+| `faire-sourates.py` | `sourates.html`, l'index des 114 et le pivot du maillage interne |
+| `faire-sitemap.py` | `sitemap.xml`, lu sur le site réel : n'annonce jamais une section vide |
 | `controler-questions.py` | confronte chaque question à sa source : le Coran, ou Unicode |
+| `controler-lecons.py` | rouvre les leçons **publiées** et reconfronte chaque verset au Coran, sans faire confiance au générateur |
 | `alleger.py` | retire les commentaires du JS et du CSS **à la publication** : la source garde son cahier de bord, le visiteur ne le télécharge pas (−29 Ko compressés) |
 | `peser.py` | les budgets du cahier, mesurés page par page — sur ce qui est **servi**, donc allégé, des deux côtés de la comparaison |
 | `poser-version.py` | le repère de version dans `plus.html` |

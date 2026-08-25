@@ -1,0 +1,166 @@
+/* ==========================================================================
+   LES LECONS DE SOURATE — des pages qui se LISENT
+   --------------------------------------------------------------------------
+   Le reste du site se joue au pouce, carte par carte. Ces pages-la, non :
+   elles se lisent de haut en bas, elles s'impriment, elles se partagent, et
+   c'est par elles que Google entre. Elles reprennent donc la meme palette et
+   les memes blocs, mais dans une mise en page de texte suivi.
+
+   Le verset arabe n'est jamais rogne, jamais mis en italique, jamais
+   deforme (section 2.10) — la meme regle que sur les cartes.
+   ========================================================================== */
+
+.lecon-corps { padding-bottom: 28px; gap: 22px; }
+
+/* --- L'en-tete de la lecon --------------------------------------------- */
+
+.lecon-tete { display: flex; flex-direction: column; gap: 8px; }
+
+.lecon-sur {
+  font-size: 11px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: var(--or-texte);
+}
+.lecon-ar {
+  font-family: var(--arabe);
+  font-size: 30px;
+  line-height: 1.5;
+  direction: rtl;
+  color: var(--vert);
+}
+.lecon-quoi { font-size: 15px; line-height: 1.55; color: var(--texte-2); }
+.lecon-quoi strong { color: var(--encre); }
+
+/* LA MISE EN GARDE EST UN BLOC, PAS UNE NOTE DE BAS DE PAGE.
+   « La traduction n'est pas le Coran » n'est pas un detail juridique qu'on
+   range en petit : c'est la premiere chose qu'on doit avoir lue avant de
+   parcourir vingt traductions a la suite. */
+.lecon-prudence {
+  background-color: var(--or-voile);
+  border: 1px solid var(--or-bordure);
+  border-radius: var(--r-bloc);
+  padding: 13px 15px;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--sur-or);
+}
+.lecon-prudence strong { font-weight: 700; }
+
+/* --- Les versets -------------------------------------------------------- */
+
+.versets { display: flex; flex-direction: column; gap: 12px; }
+
+.verset {
+  position: relative;
+  background-color: var(--papier);
+  background-image: linear-gradient(180deg, var(--papier) 0%, #FCF9F1 100%);
+  border: 1px solid var(--trait);
+  border-radius: var(--r-bloc-2);
+  padding: 15px 16px 13px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+/* Le filet dore en tete de carte, comme sur les trois compteurs : c'est le
+   signe que ce bloc porte du texte coranique. */
+.verset::before {
+  content: "";
+  position: absolute;
+  left: 16px; right: 16px; top: 0;
+  height: 2px;
+  border-radius: 0 0 2px 2px;
+  background: linear-gradient(90deg, var(--or) 0%, rgba(201,162,39,0) 70%);
+}
+
+.verset-n {
+  font-size: 11px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: var(--texte-3);
+}
+.verset-ar {
+  font-family: var(--arabe);
+  font-size: 26px;
+  line-height: 1.85;
+  direction: rtl;
+  text-align: right;
+  color: var(--vert-fonce);
+  font-style: normal;
+  font-stretch: normal;
+  white-space: normal;
+  overflow-wrap: break-word;
+  margin: 2px 0 4px 0;
+}
+.verset-etiq {
+  font-size: 10.5px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--or-texte);
+}
+.verset-fr {
+  font-family: var(--titre);
+  font-size: 18px;
+  line-height: 1.45;
+  color: var(--encre-titre);
+  text-wrap: pretty;
+}
+.verset-source {
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--texte-3);
+  border-top: 1px solid var(--trait-3);
+  padding-top: 7px;
+  margin-top: 3px;
+}
+
+/* --- Le maillage de fin ------------------------------------------------- */
+
+.lecon-suite { display: flex; flex-direction: column; gap: 10px; }
+.lecon-suite .ligne { gap: 12px; }
+.lecon-suite .pc { color: var(--or-texte); font-size: 16px; }
+
+/* --- La page des 114 sourates ------------------------------------------- */
+
+.srows { display: flex; flex-direction: column; gap: 6px; }
+
+.srow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--papier);
+  border: 1px solid var(--trait);
+  border-radius: var(--r-bloc);
+  padding: 9px 13px;
+  min-height: var(--cible);
+  text-align: left;
+  color: var(--encre);
+}
+/* Une sourate qui a sa lecon est un LIEN, les autres sont des lignes. La
+   difference se voit : le nom passe en vert et la fleche apparait. Sans ca,
+   on cliquerait au hasard sur 114 lignes dont 20 seulement menent quelque
+   part. */
+a.srow .s-tr { color: var(--vert); font-weight: 600; }
+a.srow:hover { border-color: var(--or-bordure); }
+
+.s-num {
+  font-family: var(--titre);
+  font-size: 13px;
+  color: var(--texte-3);
+  min-width: 26px;
+  font-variant-numeric: tabular-nums;
+}
+.s-ar {
+  font-family: var(--arabe);
+  font-size: 19px;
+  direction: rtl;
+  color: var(--vert-fonce);
+  min-width: 92px;
+  text-align: right;
+}
+.s-tr { flex-grow: 1; font-size: 14.5px; min-width: 0; }
+.s-fl { color: var(--or-texte); font-size: 15px; }
+
+@media (max-width: 340px) {
+  .s-ar { min-width: 72px; font-size: 17px; }
+}

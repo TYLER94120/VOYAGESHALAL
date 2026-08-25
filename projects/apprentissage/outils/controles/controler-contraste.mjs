@@ -25,6 +25,10 @@ const PAGES = [
   '/', '/sections.html', '/section/sens-des-sourates', '/section/sens-des-sourates/qcm',
   '/qcm.html?section=sens-des-sourates&n=20', '/qcm.html?section=lire-l-arabe&n=20',
   '/progres.html', '/plus.html', '/motifs.html',
+  // Les pages qui se LISENT sont celles ou le contraste compte le plus : on y
+  // reste, on y lit du francais suivi et de l'arabe, et c'est par elles que
+  // les gens arrivent depuis Google.
+  '/sourates.html', '/lecon-sourate-al-ikhlas.html', '/lecon-sourate-ad-duha.html',
 ];
 
 const nav = await chromium.launch({ executablePath:'/opt/pw-browsers/chromium-1194/chrome-linux/chrome', args:['--no-sandbox'] });
@@ -168,7 +172,7 @@ if (signales.length) {
   console.log('');
 }
 if (err.length) rate('erreurs JavaScript', err.join(' | '));
-else ok('aucune erreur JavaScript sur les neuf ecrans');
+else ok('aucune erreur JavaScript sur les ' + PAGES.length + ' ecrans');
 
 await nav.close();
 console.log(ec===0 ? '\nVERT' : `\nROUGE (${ec})`);

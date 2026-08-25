@@ -1,0 +1,190 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""La page des 114 sourates — l'index, et le pivot du maillage interne.
+
+POURQUOI ELLE REVIENT
+---------------------
+`/sourates.html` etait la page la plus vue du site au releve du 21 aout : sept
+impressions sur douze. La refonte du meme jour l'a supprimee. C'est aussi la
+seule page qui peut relier entre elles les vingt lecons de sourate : sans
+elle, chaque lecon est une impasse que rien n'annonce.
+
+CE QU'ELLE CONTIENT, ET RIEN D'AUTRE
+------------------------------------
+Le numero, le nom arabe, le nom en francais. Ces trois colonnes viennent de
+`outils/coran/noms-sourates.json`, le meme fichier que le QCM. Aucun nombre de
+versets annonce ici : il faudrait le recompter, et un chiffre affiche sans
+etre verifie est exactement ce que ce site s'interdit.
+
+Les sourates qui ont une lecon deviennent des LIENS ; les 94 autres restent
+des lignes. On ne promet pas une page qui n'existe pas.
+"""
+
+import json
+import pathlib
+import re
+import sys
+import unicodedata
+
+RACINE = pathlib.Path(__file__).resolve().parent.parent
+CORAN = RACINE / 'outils' / 'coran'
+
+
+def echapper(s):
+    return (str(s).replace('&', '&amp;').replace('<', '&lt;')
+            .replace('>', '&gt;').replace('"', '&quot;'))
+
+
+def ardoise(nom):
+    s = unicodedata.normalize('NFD', nom.lower())
+    s = ''.join(c for c in s if unicodedata.category(c) != 'Mn')
+    s = s.replace("'", '-').replace(' ', '-')
+    return re.sub(r'-{2,}', '-', re.sub(r'[^a-z0-9-]', '', s)).strip('-')
+
+
+TITRE = 'Les 114 sourates du Coran : noms et numéros'
+DESC = ('La liste des 114 sourates du Coran dans l\'ordre, avec le nom en arabe, '
+        'le nom en français et le numéro de chacune. Vingt sont expliquées '
+        'verset par verset.')
+
+
+def main():
+    noms = json.loads((CORAN / 'noms-sourates.json').read_text(encoding='utf-8'))
+    if len(noms) != 114:
+        sys.exit('ARRET : %d sourates au lieu de 114.' % len(noms))
+
+    # Les lecons REELLEMENT presentes sur le disque. On ne lit pas une liste
+    # ecrite a la main : elle vieillirait des la premiere lecon ajoutee ou
+    # retiree, et la page promettrait des pages absentes.
+    avec = {}
+    for s in noms:
+        f = 'lecon-sourate-%s.html' % ardoise(s['tr'])
+        if (RACINE / f).is_file():
+            avec[s['n']] = f
+    if len(TITRE) > 60:
+        sys.exit('ARRET : titre de %d caracteres.' % len(TITRE))
+    if not 150 <= len(DESC) <= 160:
+        sys.exit('ARRET : description de %d caracteres.' % len(DESC))
+
+    jsonld = json.dumps({
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        'name': 'Les 114 sourates du Coran',
+        'url': 'https://islampasapas.fr/sourates.html',
+        'inLanguage': 'fr',
+        'numberOfItems': 114,
+        'description': DESC,
+    }, ensure_ascii=False, indent=1)
+
+    h = """<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>%(titre)s</title>
+<meta name="description" content="%(desc)s">
+<meta name="theme-color" content="#FAF7F0">
+<link rel="canonical" href="https://islampasapas.fr/sourates.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" media="print" onload="this.media='all';this.onload=null"
+      href="https://fonts.googleapis.com/css2?family=Marcellus&family=Source+Sans+3:wght@400;500;600;700&family=Amiri:wght@400;700&display=swap">
+<noscript><link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Marcellus&family=Source+Sans+3:wght@400;500;600;700&family=Amiri:wght@400;700&display=swap"></noscript>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/pages.css">
+<link rel="stylesheet" href="css/lecon.css">
+<meta property="og:site_name" content="Islam pas à pas">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://islampasapas.fr/sourates.html">
+<meta property="og:title" content="%(titre)s">
+<meta property="og:description" content="%(desc)s">
+<meta property="og:image" content="https://islampasapas.fr/partage.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%%3Csvg xmlns=%%27http://www.w3.org/2000/svg%%27 viewBox=%%270 0 24 24%%27%%3E%%3Crect width=%%2724%%27 height=%%2724%%27 rx=%%274%%27 fill=%%27%%230B3D26%%27/%%3E%%3Cpath d=%%27M12 1.6l2.7 5 5.6-2.5-2.5 5.6 5 2.7-5 2.7 2.5 5.6-5.6-2.5-2.7 5-2.7-5-5.6 2.5 2.5-5.6-5-2.7 5-2.7-2.5-5.6 5.6 2.5z%%27 fill=%%27none%%27 stroke=%%27%%23C9A227%%27 stroke-width=%%271.4%%27/%%3E%%3C/svg%%3E">
+<script type="application/ld+json">
+%(jsonld)s
+</script>
+</head>
+<body>
+
+<a class="saut-contenu" href="#principal">Aller au contenu</a>
+
+<div class="ecran">
+
+  <div class="fond-motif" data-carrelage="#0F5132" data-op="0.035"
+       data-tuile="64" data-r="15" aria-hidden="true"></div>
+
+  <div class="corps lecon-corps" id="principal">
+
+    <div class="tete">
+      <a class="marque" href="index.html">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 1.6l2.7 5 5.6-2.5-2.5 5.6 5 2.7-5 2.7 2.5 5.6-5.6-2.5-2.7 5-2.7-5-5.6 2.5 2.5-5.6-5-2.7 5-2.7-2.5-5.6 5.6 2.5z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/></svg>
+        <b>Islam pas à pas</b>
+      </a>
+    </div>
+
+    <div class="lecon-tete">
+      <h1 class="t-page">%(titre)s</h1>
+      <p class="lecon-quoi">Les 114 sourates dans l'ordre du Coran, avec leur
+        nom en arabe et en français. <strong>%(n)d d'entre elles</strong> sont
+        expliquées verset par verset&nbsp;: leur nom est en vert.</p>
+    </div>
+
+    <ol class="srows">
+""" % {'titre': echapper(TITRE), 'desc': echapper(DESC), 'jsonld': jsonld,
+       'n': len(avec)}
+
+    for s in noms:
+        dedans = ('<span class="s-num">%d</span>'
+                  '<span class="s-ar" lang="ar" dir="rtl">%s</span>'
+                  '<span class="s-tr">%s</span>'
+                  % (s['n'], echapper(s['ar']), echapper(s['tr'])))
+        if s['n'] in avec:
+            h += ('      <li><a class="srow" href="%s">%s'
+                  '<span class="s-fl" aria-hidden="true">&rsaquo;</span></a></li>\n'
+                  % (avec[s['n']], dedans))
+        else:
+            h += '      <li class="srow">%s</li>\n' % dedans
+
+    h += """    </ol>
+
+    <div class="lecon-suite">
+      <h2 class="t-bloc">Continuer</h2>
+      <a class="ligne" href="section/sens-des-sourates">
+        <span class="rond"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4.5h14v15H5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M8.5 9h7M8.5 13h7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+        <span class="milieu"><span class="nom">Le sens des sourates</span>
+          <span class="quoi">Le QCM : reconnaître un verset, retrouver son sens.</span></span>
+        <span class="pc" aria-hidden="true">&rarr;</span>
+      </a>
+      <a class="ligne" href="sections.html">
+        <span class="rond"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 4.5h6.5V11H4zM13.5 4.5H20V11h-6.5zM4 13.5h6.5V20H4zM13.5 13.5H20V20h-6.5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></span>
+        <span class="milieu"><span class="nom">Les 12 sections</span>
+          <span class="quoi">Tout ce qu'on peut travailler sur le site.</span></span>
+        <span class="pc" aria-hidden="true">&rarr;</span>
+      </a>
+    </div>
+
+  </div>
+
+  <nav class="nav" aria-label="Navigation principale">
+    <a href="index.html"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3.5 10.5L12 4l8.5 6.5V20h-17z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><span>Accueil</span></a>
+    <a href="sections.html"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 4.5h6.5V11H4zM13.5 4.5H20V11h-6.5zM4 13.5h6.5V20H4zM13.5 13.5H20V20h-6.5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg><span>Sections</span></a>
+    <a href="progres.html"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 19.5V13m5 6.5V8m5 11.5v-9m5 9V5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><span>Progrès</span></a>
+    <a href="plus.html"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><span>Plus</span></a>
+  </nav>
+
+</div>
+
+<script src="js/geometrie.js"></script>
+</body>
+</html>
+"""
+    (RACINE / 'sourates.html').write_text(h, encoding='utf-8')
+    print('  sourates.html : 114 sourates, %d avec une lecon.' % len(avec))
+    print('  titre %d caracteres, description %d.' % (len(TITRE), len(DESC)))
+
+
+if __name__ == '__main__':
+    main()
