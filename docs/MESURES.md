@@ -346,3 +346,107 @@ clic dépend des titres et se règle en heures.
 5. **Aucune estimation ici. Uniquement du mesuré, daté.**
 6. **Notez vos changements majeurs** dans la section du mois : sans ça,
    aucune variation n'est attribuable à une cause.
+
+---
+
+# 🌙 RONDE DU 25 AOÛT — LA FUITE D'ORIGIN TRANSFER EST TROUVÉE
+
+Ronde de nuit sur VOYAGESHALAL. Rien n'a été produit : **c'était la bonne
+réponse**, et voici les mesures qui l'établissent.
+
+## 1. La priorité n° 1 du brief était déjà livrée
+
+Le brief demandait de réécrire les titres anglais de Marrakech, Almaty et
+Amsterdam (118 impressions du Maroc, position 7,8, zéro clic). Mesuré sur
+le serveur de production local, en-tête `Host: www.gohalaltravel.com` —
+ce que Google reçoit réellement :
+
+| page | titre servi | longueur |
+|---|---|---|
+| /destinations/marrakech | `Where to pray in Marrakesh: 142 prayer places, halal food` | 57 c |
+| /destinations/almaty | `Where to pray in Almaty: 49 mosques, halal food` | 47 c |
+| /destinations/amsterdam | `Where to pray in Amsterdam: 49 mosques, halal food` | 50 c |
+
+Besoin d'abord, chiffre vérifiable, moins de 60 caractères. **Les 118/0
+mesurent l'ANCIEN titre** : le relevé date du 21 août, la réécriture aussi.
+Le carnet le dit déjà — l'effet ne sera lisible qu'au relevé du 1er
+septembre. Réécrire une deuxième fois aurait été du brassage, et une page
+retouchée pour remplir un créneau est une dette.
+
+Maillage vérifié au passage, rien à réparer : sitemap FR 810 URL, sitemap
+EN 831 URL, chacun sur son seul domaine ; les 7 pages aéroport sont dans le
+sitemap EN et liées depuis le socle de l'accueil anglais ; aucune ne
+figure côté français, où elles redirigent.
+
+## 2. 🔴 LA FUITE : ce n'est pas « les 4 pages en force-dynamic »
+
+Le relevé du 23 août laissait la fuite ouverte, avec pour candidat non
+confirmé quatre pages. **Ce n'est pas ça, et c'est bien pire : le site
+ENTIER est concerné.** Mesuré le 22 août, revérifié cette nuit sur le
+build courant.
+
+**Une seule ligne, dans `app/layout.tsx` :**
+
+```ts
+export const dynamic = 'force-dynamic'
+```
+
+Elle a été écrite pour une raison juste — *« qu'aucune page ne soit servie
+depuis un cache figé sur la mauvaise langue »*. Mais elle s'applique à
+toutes les routes, et Next.js écrit alors `no-store` sur chacune.
+
+**Build du 25 août : 117 routes dynamiques, 3 statiques.**
+
+Ce que le serveur répond réellement, en-tête `Host` du domaine anglais :
+
+| page | HTML | Cache-Control |
+|---|---|---|
+| `/` (accueil EN = World feed) | **493 Ko** | `private, no-cache, no-store` |
+| `/destinations` | **543 Ko** | `private, no-cache, no-store` |
+| `/sitemap.xml` | 220 Ko | `public, max-age=0, must-revalidate` |
+| `/blog` | 154 Ko | `private, no-cache, no-store` |
+| `/guides` | 149 Ko | `private, no-cache, no-store` |
+| fiche de ville (moyenne sur 10) | **133 Ko** | `private, no-cache, no-store` |
+
+## 3. L'arithmétique tombe juste
+
+354 fiches × 2 domaines × 133 Ko = **89 Mo par passage complet des robots
+sur les seules fiches de ville**, dont pas un octet n'est mis en cache.
+
+Le relevé du 23 août mesurait un **plateau à ~300 Mo/jour** et
+**623 000 requêtes edge en 30 jours (~20 000/jour) pour ~4 clics humains
+par jour**. Trois passages de robots par jour sur un site où rien n'est
+cachable suffisent à expliquer le plateau. Ce ne sont pas des visiteurs :
+c'est de l'indexation qui paie plein tarif à chaque passage.
+
+## 4. Ce qui est fait, ce qui reste, et l'échéance
+
+**ÉTAPE 1 — FAITE** (branche `claude/intelligent-fermi-fog76k`, non
+fusionnée). La fiche de ville tire sa langue de la ROUTE et non de
+l'en-tête : `app/destinations/[city]` est française,
+`app/en/destinations/[city]` anglaise, le middleware réécrit sans changer
+l'URL publique et renvoie `/en/...` en 301. Vérifié sur les deux domaines :
+bonne langue, bon titre, bon canonique, sitemaps intacts.
+
+**ÉTAPE 2 — À FAIRE, ET ELLE COMMANDE TOUT.** Tant que le layout racine lit
+l'en-tête `Host`, toutes les routes restent dynamiques — **y compris celles
+de l'étape 1**. Il faut deux layouts racine, un par langue, pour que la
+langue soit portée par l'adresse de bout en bout. C'est la seule façon
+d'être en cache sans jamais risquer la mauvaise langue : une page qui ne
+dépend que de son adresse ne peut pas se tromper de lecteur.
+
+Ce n'est pas une nuit de travail : ça touche 45 pages, et une erreur y
+servirait du français à un anglophone. **Décision de Mohamed avant de la
+lancer.** Aucun octet ne sera économisé avant elle.
+
+**ÉTAPE 3** — les listes (`/destinations` 543 Ko, `/` 493 Ko, `/blog`,
+`/guides`), puis le sitemap.
+
+⏳ **Échéance : 23 septembre 2026**, fin du cycle payé. Redescendre en
+Hobby suppose de repasser sous 10 Go d'Origin Transfer — donc l'étape 2
+faite et mesurée avant cette date.
+
+⚠️ Rappel du 23 août, qui donne le vrai enjeu : **une pause Vercel répond
+en 4xx, pas en 503**. Ce n'est pas une panne neutre, c'est une pression de
+désindexation. Cette fuite n'est pas une question de facture, c'est une
+question de survie dans l'index.
