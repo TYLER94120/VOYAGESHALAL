@@ -511,7 +511,12 @@ const guidesFr: Guide[] = [
   },
   {
     slug: 'ramadan-voyage-guide',
-    title: 'Voyager pendant le Ramadan : jeûner en avion et en décalage',
+    // 25 août : ce titre était le MÊME que celui de
+    // /blog/voyager-pendant-ramadan-guide-complet — deux pages du site se
+    // présentaient à Google sous un titre identique. Or « jeûner en avion et
+    // en décalage » décrit l'article, pas ce guide, qui parle de destinations
+    // et d'organisation. Chacun reprend le sien.
+    title: "Où passer le Ramadan : choisir sa destination et s'organiser",
     description:
       'Comment organiser et profiter de son voyage pendant le Ramadan ? Destinations, astuces pratiques et les meilleures expériences du mois sacré.',
     coverImage: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&q=80',
@@ -2915,7 +2920,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
   },
   {
     slug: "ou-prier-parc-asterix",
-    title: "Salle de prière au Parc Astérix : où prier ? — guide 2026",
+    title: "Parc Astérix : pas de salle de prière, où prier sur place",
     tags: ["Parc Astérix", "Famille", "Prière", "Pratique"],
     description: "Pas de salle de prière officielle au Parc Astérix — mais des solutions simples existent. Voici comment font les familles musulmanes, étape par étape.",
     coverImage: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&q=80",
@@ -2933,7 +2938,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
   },
   {
     slug: "ou-prier-puy-du-fou",
-    title: "Salle de prière au Puy du Fou : où prier ? — guide 2026",
+    title: "Puy du Fou : pas de salle de prière, où prier quand même",
     tags: ["Puy du Fou", "Famille", "Prière", "Pratique"],
     description: "Pas de salle de prière officielle au Puy du Fou — voici les solutions concrètes des visiteurs musulmans pour prier sereinement entre deux spectacles.",
     coverImage: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200&q=80",
@@ -2951,7 +2956,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
   },
   {
     slug: "ou-prier-futuroscope",
-    title: "Salle de prière au Futuroscope : où prier ? — guide 2026",
+    title: "Futuroscope : pas de salle de prière, où prier sur place",
     tags: ["Futuroscope", "Famille", "Prière", "Pratique"],
     description: "Pas de salle de prière officielle au Futuroscope — voici les solutions simples pour prier pendant votre journée au parc, étape par étape.",
     coverImage: "https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=1200&q=80",
@@ -3622,7 +3627,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
   },
   {
     slug: "ou-prier-aeroport-cdg",
-    title: "Salle de prière à l'aéroport CDG : où prier en 2026",
+    title: "Salle de prière à l'aéroport CDG : terminaux et accès",
     description: "Paris-CDG a plusieurs espaces de prière aux terminaux 1, 2E et 2F, avec coin musulman et ablutions. Où ils se trouvent, côté ville ou après la sécurité.",
     coverImage: "/guides/blog-cdg.jpg",
     category: 'Pratique',
@@ -3685,7 +3690,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
   },
   {
     slug: "ou-prier-aeroport-orly",
-    title: "Salle de prière à l'aéroport d'Orly : où prier en 2026",
+    title: "Salle de prière à l'aéroport d'Orly : horaires et accès",
     description: "Orly dispose de salles de prière et d'espaces de recueillement, dont une salle de prière musulmane avec espaces séparés hommes / femmes. Voici où les trouver.",
     coverImage: "/guides/blog-orly.jpg",
     category: 'Pratique',
@@ -3850,7 +3855,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
   },
   {
     slug: "ou-prier-disneyland-paris",
-    title: "Salle de prière à Disneyland Paris : où prier en 2026",
+    title: "Disneyland Paris : pas de salle de prière, voir au City Hall",
     description: "Un espace calme est accessible sur demande au City Hall, à l'entrée du parc. Où il se trouve exactement, quoi dire au Cast Member, à quel moment y aller.",
     coverImage: "/guides/blog-disneyland.jpg",
     category: 'Pratique',
@@ -4059,7 +4064,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
   {
     slug: "voyager-pendant-ramadan-guide-complet",
     title: "Voyager pendant le Ramadan : jeûner en avion et en décalage",
-    description: "Tout savoir pour voyager pendant le Ramadan 2026 : pays idéaux, jeûne et décalage horaire, iftar, suhoor et Tarawih. Conseils pratiques pour un Ramadan serein.",
+    description: "Voyager pendant le Ramadan 2026 : pays idéaux, jeûne et décalage horaire, iftar, suhoor et Tarawih. Conseils pratiques pour un Ramadan serein.",
     coverImage: "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=1200&q=80",
     category: "Pratique",
     readTime: "8 min",

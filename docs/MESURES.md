@@ -600,3 +600,100 @@ ne décroche pas, le volume vient d'ailleurs que des pages, et continuer à
 migrer serait travailler à côté.
 
 ⏳ Échéance inchangée : **23 septembre**, fin du cycle payé.
+
+---
+
+# ✍️ 25 AOÛT — LES ARTICLES : LE FORMAT QUI GAGNE, ET QUATRE TITRES QUI MENTAIENT
+
+## 1. Ce que les chiffres disent du blog
+
+Relevé du 21 août, 7 jours, voyageshalal.fr. **Sept des huit meilleures
+pages du site sont des articles « où prier à… »** :
+
+| Article | Impr. | Clics | Taux | Position |
+|---|---|---|---|---|
+| /blog/ou-prier-puy-du-fou | 8 | 1 | **12,5 %** | **4,0** |
+| /blog/ou-prier-disneyland-paris | 73 | 3 | 4,1 % | 8,4 |
+| /blog/ou-prier-gares-paris | 25 | 1 | 4,0 % | 10,8 |
+| /blog/ou-prier-aeroport-orly | 50 | 1 | 2,0 % | 11,2 |
+| /blog/ou-prier-aeroport-cdg | 62 | 1 | 1,6 % | 13,5 |
+
+Moyenne du site : 1,0 %. **Le format « où prier à [lieu de forte
+affluence] » est le format gagnant de voyageshalal**, comme
+« [produit] halal ou pas » l'est de halalgpt. Et ces pages sont en
+position 4 à 13,5 — exactement la bande où réécrire un titre paie le plus
+vite.
+
+## 2. 🔴 Quatre titres promettaient une salle de prière que l'article dit inexistante
+
+En allant les travailler, défaut trouvé :
+
+| | |
+|---|---|
+| titre | « Salle de prière au Futuroscope : où prier ? — guide 2026 » |
+| article | « Pas de salle de prière officielle à notre connaissance. » |
+
+Même contradiction sur **Disneyland Paris, le Puy du Fou et le Parc
+Astérix**. Les descriptions, elles, étaient honnêtes (« Pas de salle de
+prière officielle au Futuroscope — voici les solutions… »). **Seul le titre
+mentait** — c'est-à-dire la seule ligne que Google affiche et la seule sur
+laquelle on clique.
+
+C'est la règle la plus ancienne de la maison prise par la porte de
+derrière : *jamais inventer une salle de prière*. Elle était tenue dans le
+corps du texte et perdue dans le titre. Et elle l'était sur la page n° 1 du
+site (Disneyland, 73 impressions) et sur celle qui convertit le mieux
+(Puy du Fou, 12,5 %).
+
+### Les titres servis aujourd'hui
+
+| Article | Titre | c |
+|---|---|---|
+| disneyland-paris | Disneyland Paris : pas de salle de prière, voir au City Hall | 60 |
+| puy-du-fou | Puy du Fou : pas de salle de prière, où prier quand même | 56 |
+| parc-asterix | Parc Astérix : pas de salle de prière, où prier sur place | 57 |
+| futuroscope | Futuroscope : pas de salle de prière, où prier sur place | 56 |
+
+Ils gardent les deux mots que les gens tapent (« salle de prière » + le
+lieu), disent la vérité, et promettent ce que la page tient. « Pas de salle
+de prière » dans un résultat Google est en outre une phrase que personne
+n'écrit : elle se remarque, et elle est vraie.
+
+## 3. Deux redondances et un doublon corrigés
+
+- **CDG et Orly** : « Salle de prière à l'aéroport CDG : **où prier** en
+  2026 » disait deux fois la même chose. Une quinzaine de caractères
+  gaspillés sur une limite de 60. Devenus « … : terminaux et accès » et
+  « … : horaires et accès » — ce que la page tient vraiment. Ici les salles
+  EXISTENT : le titre reste affirmatif, à raison.
+- **Ramadan** : `/guides/ramadan-voyage-guide` et
+  `/blog/voyager-pendant-ramadan-guide-complet` portaient un titre
+  **identique**. Or « jeûner en avion et en décalage » décrit l'article, pas
+  le guide, qui parle de destinations. Chacun a repris le sien.
+- « Tout savoir » retiré d'une description (mot creux banni le 20 août).
+
+## 4. La règle est maintenant tenue par un test
+
+`scripts/test-articles.mjs`, à chaque construction : aucun article dont le
+texte nie l'existence d'une salle de prière ne peut porter un titre qui
+l'affirme. Plus : aucun mot creux, aucun titre au-dessus de 60 caractères,
+aucun titre en double. 94 articles relus, 6 disent honnêtement qu'il n'y a
+pas de salle.
+
+⚠️ Vérifié qu'il ÉCHOUE quand on remet l'ancien titre du Futuroscope.
+
+## 5. Ce que je n'ai pas fait, et pourquoi
+
+**Aucun article neuf.** Le format gagnant est identifié, mais une page neuve
+ne se justifie que si elle apprend quelque chose qu'aucune page existante
+n'apprend — et publier « où prier à [lieu] » sans relevé vérifié pour ce
+lieu reviendrait à inventer une salle de prière. Le relevé OpenStreetMap ne
+couvre que 10 aéroports internationaux, aucun français.
+
+**Les articles minces** (`/blog/restaurants-halal-paris` 450 mots,
+`manger-halal-lisbonne` 506, `restaurant-halal-barcelone` 527) n'ont pas
+été enrichis : les étoffer suppose des adresses vérifiées, pas de la
+rédaction. C'est un travail de donnée, pas de texte.
+
+**L'effet des titres se lira au relevé du 1er septembre** — Google met une
+à deux semaines à recalculer l'affichage.
