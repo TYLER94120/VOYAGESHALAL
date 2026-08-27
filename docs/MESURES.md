@@ -346,3 +346,354 @@ clic dépend des titres et se règle en heures.
 5. **Aucune estimation ici. Uniquement du mesuré, daté.**
 6. **Notez vos changements majeurs** dans la section du mois : sans ça,
    aucune variation n'est attribuable à une cause.
+
+---
+
+# 🌙 RONDE DU 25 AOÛT — LA FUITE D'ORIGIN TRANSFER EST TROUVÉE
+
+Ronde de nuit sur VOYAGESHALAL. Rien n'a été produit : **c'était la bonne
+réponse**, et voici les mesures qui l'établissent.
+
+## 1. La priorité n° 1 du brief était déjà livrée
+
+Le brief demandait de réécrire les titres anglais de Marrakech, Almaty et
+Amsterdam (118 impressions du Maroc, position 7,8, zéro clic). Mesuré sur
+le serveur de production local, en-tête `Host: www.gohalaltravel.com` —
+ce que Google reçoit réellement :
+
+| page | titre servi | longueur |
+|---|---|---|
+| /destinations/marrakech | `Where to pray in Marrakesh: 142 prayer places, halal food` | 57 c |
+| /destinations/almaty | `Where to pray in Almaty: 49 mosques, halal food` | 47 c |
+| /destinations/amsterdam | `Where to pray in Amsterdam: 49 mosques, halal food` | 50 c |
+
+Besoin d'abord, chiffre vérifiable, moins de 60 caractères. **Les 118/0
+mesurent l'ANCIEN titre** : le relevé date du 21 août, la réécriture aussi.
+Le carnet le dit déjà — l'effet ne sera lisible qu'au relevé du 1er
+septembre. Réécrire une deuxième fois aurait été du brassage, et une page
+retouchée pour remplir un créneau est une dette.
+
+Maillage vérifié au passage, rien à réparer : sitemap FR 810 URL, sitemap
+EN 831 URL, chacun sur son seul domaine ; les 7 pages aéroport sont dans le
+sitemap EN et liées depuis le socle de l'accueil anglais ; aucune ne
+figure côté français, où elles redirigent.
+
+## 2. 🔴 LA FUITE : ce n'est pas « les 4 pages en force-dynamic »
+
+Le relevé du 23 août laissait la fuite ouverte, avec pour candidat non
+confirmé quatre pages. **Ce n'est pas ça, et c'est bien pire : le site
+ENTIER est concerné.** Mesuré le 22 août, revérifié cette nuit sur le
+build courant.
+
+**Une seule ligne, dans `app/layout.tsx` :**
+
+```ts
+export const dynamic = 'force-dynamic'
+```
+
+Elle a été écrite pour une raison juste — *« qu'aucune page ne soit servie
+depuis un cache figé sur la mauvaise langue »*. Mais elle s'applique à
+toutes les routes, et Next.js écrit alors `no-store` sur chacune.
+
+**Build du 25 août : 117 routes dynamiques, 3 statiques.**
+
+Ce que le serveur répond réellement, en-tête `Host` du domaine anglais :
+
+| page | HTML | Cache-Control |
+|---|---|---|
+| `/` (accueil EN = World feed) | **493 Ko** | `private, no-cache, no-store` |
+| `/destinations` | **543 Ko** | `private, no-cache, no-store` |
+| `/sitemap.xml` | 220 Ko | `public, max-age=0, must-revalidate` |
+| `/blog` | 154 Ko | `private, no-cache, no-store` |
+| `/guides` | 149 Ko | `private, no-cache, no-store` |
+| fiche de ville (moyenne sur 10) | **133 Ko** | `private, no-cache, no-store` |
+
+## 3. L'arithmétique tombe juste
+
+354 fiches × 2 domaines × 133 Ko = **89 Mo par passage complet des robots
+sur les seules fiches de ville**, dont pas un octet n'est mis en cache.
+
+Le relevé du 23 août mesurait un **plateau à ~300 Mo/jour** et
+**623 000 requêtes edge en 30 jours (~20 000/jour) pour ~4 clics humains
+par jour**. Trois passages de robots par jour sur un site où rien n'est
+cachable suffisent à expliquer le plateau. Ce ne sont pas des visiteurs :
+c'est de l'indexation qui paie plein tarif à chaque passage.
+
+## 4. Ce qui est fait, ce qui reste, et l'échéance
+
+**ÉTAPE 1 — FAITE** (branche `claude/intelligent-fermi-fog76k`, non
+fusionnée). La fiche de ville tire sa langue de la ROUTE et non de
+l'en-tête : `app/destinations/[city]` est française,
+`app/en/destinations/[city]` anglaise, le middleware réécrit sans changer
+l'URL publique et renvoie `/en/...` en 301. Vérifié sur les deux domaines :
+bonne langue, bon titre, bon canonique, sitemaps intacts.
+
+**ÉTAPE 2 — À FAIRE, ET ELLE COMMANDE TOUT.** Tant que le layout racine lit
+l'en-tête `Host`, toutes les routes restent dynamiques — **y compris celles
+de l'étape 1**. Il faut deux layouts racine, un par langue, pour que la
+langue soit portée par l'adresse de bout en bout. C'est la seule façon
+d'être en cache sans jamais risquer la mauvaise langue : une page qui ne
+dépend que de son adresse ne peut pas se tromper de lecteur.
+
+Ce n'est pas une nuit de travail : ça touche 45 pages, et une erreur y
+servirait du français à un anglophone. **Décision de Mohamed avant de la
+lancer.** Aucun octet ne sera économisé avant elle.
+
+**ÉTAPE 3** — les listes (`/destinations` 543 Ko, `/` 493 Ko, `/blog`,
+`/guides`), puis le sitemap.
+
+⏳ **Échéance : 23 septembre 2026**, fin du cycle payé. Redescendre en
+Hobby suppose de repasser sous 10 Go d'Origin Transfer — donc l'étape 2
+faite et mesurée avant cette date.
+
+⚠️ Rappel du 23 août, qui donne le vrai enjeu : **une pause Vercel répond
+en 4xx, pas en 503**. Ce n'est pas une panne neutre, c'est une pression de
+désindexation. Cette fuite n'est pas une question de facture, c'est une
+question de survie dans l'index.
+
+---
+
+# 🗄 25 AOÛT — ÉTAPE 2 : LA FUITE EST BOUCHÉE SUR LA PLUS GRANDE SURFACE
+
+Suite de la ronde. Feu vert de Mohamed pour lancer l'étape 2.
+
+## Le vrai coupable n'était pas celui du diagnostic
+
+Le diagnostic du matin accusait `export const dynamic = 'force-dynamic'`
+dans le layout racine. C'était un coupable — mais **pas le seul, ni le
+plus discret**.
+
+En isolant fichier par fichier, une page triviale sous un layout qui ne lit
+plus rien restait `ƒ` (dynamique). Le blocage venait de
+**`app/not-found.tsx`** — la page 404 écrite le 22 août, qui lisait
+l'en-tête `Host` pour choisir sa langue.
+
+**Le 404 global appartient à l'arbre de TOUTES les routes.** Une seule
+lecture d'en-tête à cet endroit rendait les 117 routes du site dynamiques
+et non cachables. Mesuré, pas supposé : en neutralisant ce seul fichier,
+la page d'essai passe de `ƒ` à `○`, et les fiches de ville de `ƒ` à `●`.
+
+> Leçon à retenir : dans Next, un fichier partagé par toutes les routes
+> (`not-found`, `layout`, `error`) impose sa contrainte la plus stricte à
+> tout le site. Chercher la fuite page par page ne pouvait pas la trouver.
+
+## Ce qui a été fait
+
+- **Trois layouts racine** au lieu d'un : `app/(fr)` (français),
+  `app/en` (anglais), `app/(dyn)` (les pages pas encore migrées, qui
+  gardent l'ancien layout et restent dynamiques). Le contenu du `<body>`
+  est écrit une fois dans `components/layout/Coque.tsx`.
+- **Le 404 ne lit plus la requête** : il rend les deux langues et un script
+  court, exécuté avant le premier affichage, masque la mauvaise. Sans
+  JavaScript, le français reste.
+- **Les tests apprennent les groupes de routes** (`scripts/_routes.mjs`) :
+  `app/(dyn)/guides` sert bien `/guides`. Sans ça, trois tests annonçaient
+  des liens morts parfaitement vivants.
+
+## Le résultat, mesuré sur le serveur de production local
+
+| | avant | après |
+|---|---|---|
+| pages HTML fabriquées d'avance | **1** | **710** |
+| fiche de ville | `ƒ` dynamique | `●` prégénérée |
+| `Cache-Control` d'une fiche | `private, no-cache, no-store` | `s-maxage=31536000` |
+
+**Les 354 fiches × 2 langues ne repartent plus de notre serveur.** C'est
+89 Mo par passage complet des robots qui disparaissent de la facture — la
+plus grande surface d'indexation du site.
+
+Langue vérifiée sur les deux domaines, page par page : accueil,
+/destinations, fiche de ville, /guides, /blog, /autour-de-moi, /contact,
+/priere/[ville] — `lang="fr"` sur voyageshalal.fr, `lang="en"` sur
+gohalaltravel.com, canoniques justes, sitemaps inchangés (810 et 831 URL),
+`/en/...` tapé à la main toujours renvoyé en 301.
+
+## ⚠️ Ce qui reste à vérifier EN PRODUCTION
+
+Le réseau de la session ne joint pas Vercel. Deux choses ne se voient que
+là, après déploiement :
+
+1. **Une fiche de ville sur chaque domaine** — que l'anglais reste anglais
+   et le français français. La séparation tient par un chemin interne
+   distinct (`/en/...`), pas par une supposition sur le cache de Vercel :
+   c'est fait exprès, mais ça se regarde une fois.
+2. **La courbe d'Origin Transfer** dans les jours qui suivent. Elle doit
+   décrocher. Si elle ne décroche pas, c'est que le gros du volume vient
+   d'ailleurs que des fiches de ville, et l'étape 3 changera de cible.
+
+## ÉTAPE 3 — la suite, par ordre de poids mesuré
+
+`/` (accueil EN, 493 Ko) · `/destinations` (543 Ko) · `/blog` (154 Ko) ·
+`/guides` (149 Ko) · le sitemap (220 Ko). Même méthode : sortir la famille
+de `(dyn)`, lui donner son jumeau sous `app/en`, vérifier les deux langues.
+
+⏳ Échéance inchangée : **23 septembre**, pour redescendre en Hobby.
+
+---
+
+# 🏨 25 AOÛT — ÉTAPE 3 : LES HÔTELS, ET 3 532 AVIS QUI N'EXISTAIENT PAS
+
+## 1. L'audit a corrigé l'ordre des priorités
+
+Audit complet des **1 641 URL** des deux sitemaps, page par page, sur le
+serveur de production. Il a montré que ma liste de l'étape 3 était mal
+classée : je rangeais par poids d'UNE page (`/destinations` 549 Ko contre
+135 Ko pour un hôtel) au lieu du poids de la FAMILLE.
+
+| famille | pages | par passage complet des robots |
+|---|---|---|
+| `/hotels/[ville]` | 354 × 2 | **93 Mo** |
+| `/destinations` + `/destinations/pays` | 40 | 5 Mo |
+| `/blog` | 77 | 7 Mo |
+| accueil anglais | 1 | 0,5 Mo |
+
+Les hôtels pesaient **dix-huit fois** `/destinations`. Migrés en premier.
+
+## 2. 🔴 33 322 hôtels annonçaient une note « notée par 20 personnes »
+
+Trouvé en migrant le fichier. La page hôtels écrivait, en données
+structurées envoyées à Google :
+
+```ts
+ratingCount: h.avis_count ?? 20
+```
+
+**Mesuré sur la base entière : AUCUN des 33 322 hôtels ne porte de nombre
+d'avis réel.** Les 3 532 qui ont une note annonçaient donc tous 20 avis
+imaginaires — sur 354 pages × 2 domaines.
+
+⚠️ Le relevé du 24 août note ce défaut comme « retiré du code ». **Il ne
+l'avait pas été sur ce dépôt** : la correction concernait un autre site.
+Une note portée dans le carnet comme réglée, et qui ne l'est pas, est pire
+qu'une note absente — c'est ce qui l'a laissée vivre un jour de plus.
+
+Corrigé : la note n'est publiée que si un nombre d'avis réel existe. Comme
+aucun n'existe aujourd'hui, plus aucune page hôtel n'envoie
+d'`aggregateRating`. Vérifié sur les 708 pages construites : **0
+`ratingCount`**. Un avis inventé n'est pas une approximation, c'est une
+preuve fabriquée — et Google sanctionne les données structurées qui ne
+correspondent à rien sur la page.
+
+## 3. Le résultat des trois étapes réunies
+
+Mesuré deux fois avec le même instrument, avant et après :
+
+| | avant | après |
+|---|---|---|
+| pages HTML fabriquées d'avance | 1 | **1 418** |
+| pages à la charge du serveur | 933 | **225** |
+| **par passage complet des robots** | **112 Mo** | **20,7 Mo** |
+
+**−82 %.** Le plateau mesuré le 23 août était de ~300 Mo/jour pour un
+plafond Hobby de 10 Go/mois.
+
+## 4. Ce qui reste, et qui décide de la suite
+
+`/blog` (7 Mo) · `/destinations` et ses pages pays (5 Mo) · `/guides`
+(4 Mo) · `/halal-questions` (1,9 Mo) · l'accueil anglais (0,5 Mo).
+
+Aucun de ces postes ne justifie à lui seul une migration : ensemble ils
+font 20 Mo par passage, contre 93 Mo pour les seuls hôtels. **La prochaine
+mesure n'est pas dans le code, elle est dans Vercel** : la courbe d'Origin
+Transfer doit décrocher dans les jours qui suivent le déploiement. Si elle
+ne décroche pas, le volume vient d'ailleurs que des pages, et continuer à
+migrer serait travailler à côté.
+
+⏳ Échéance inchangée : **23 septembre**, fin du cycle payé.
+
+---
+
+# ✍️ 25 AOÛT — LES ARTICLES : LE FORMAT QUI GAGNE, ET QUATRE TITRES QUI MENTAIENT
+
+## 1. Ce que les chiffres disent du blog
+
+Relevé du 21 août, 7 jours, voyageshalal.fr. **Sept des huit meilleures
+pages du site sont des articles « où prier à… »** :
+
+| Article | Impr. | Clics | Taux | Position |
+|---|---|---|---|---|
+| /blog/ou-prier-puy-du-fou | 8 | 1 | **12,5 %** | **4,0** |
+| /blog/ou-prier-disneyland-paris | 73 | 3 | 4,1 % | 8,4 |
+| /blog/ou-prier-gares-paris | 25 | 1 | 4,0 % | 10,8 |
+| /blog/ou-prier-aeroport-orly | 50 | 1 | 2,0 % | 11,2 |
+| /blog/ou-prier-aeroport-cdg | 62 | 1 | 1,6 % | 13,5 |
+
+Moyenne du site : 1,0 %. **Le format « où prier à [lieu de forte
+affluence] » est le format gagnant de voyageshalal**, comme
+« [produit] halal ou pas » l'est de halalgpt. Et ces pages sont en
+position 4 à 13,5 — exactement la bande où réécrire un titre paie le plus
+vite.
+
+## 2. 🔴 Quatre titres promettaient une salle de prière que l'article dit inexistante
+
+En allant les travailler, défaut trouvé :
+
+| | |
+|---|---|
+| titre | « Salle de prière au Futuroscope : où prier ? — guide 2026 » |
+| article | « Pas de salle de prière officielle à notre connaissance. » |
+
+Même contradiction sur **Disneyland Paris, le Puy du Fou et le Parc
+Astérix**. Les descriptions, elles, étaient honnêtes (« Pas de salle de
+prière officielle au Futuroscope — voici les solutions… »). **Seul le titre
+mentait** — c'est-à-dire la seule ligne que Google affiche et la seule sur
+laquelle on clique.
+
+C'est la règle la plus ancienne de la maison prise par la porte de
+derrière : *jamais inventer une salle de prière*. Elle était tenue dans le
+corps du texte et perdue dans le titre. Et elle l'était sur la page n° 1 du
+site (Disneyland, 73 impressions) et sur celle qui convertit le mieux
+(Puy du Fou, 12,5 %).
+
+### Les titres servis aujourd'hui
+
+| Article | Titre | c |
+|---|---|---|
+| disneyland-paris | Disneyland Paris : pas de salle de prière, voir au City Hall | 60 |
+| puy-du-fou | Puy du Fou : pas de salle de prière, où prier quand même | 56 |
+| parc-asterix | Parc Astérix : pas de salle de prière, où prier sur place | 57 |
+| futuroscope | Futuroscope : pas de salle de prière, où prier sur place | 56 |
+
+Ils gardent les deux mots que les gens tapent (« salle de prière » + le
+lieu), disent la vérité, et promettent ce que la page tient. « Pas de salle
+de prière » dans un résultat Google est en outre une phrase que personne
+n'écrit : elle se remarque, et elle est vraie.
+
+## 3. Deux redondances et un doublon corrigés
+
+- **CDG et Orly** : « Salle de prière à l'aéroport CDG : **où prier** en
+  2026 » disait deux fois la même chose. Une quinzaine de caractères
+  gaspillés sur une limite de 60. Devenus « … : terminaux et accès » et
+  « … : horaires et accès » — ce que la page tient vraiment. Ici les salles
+  EXISTENT : le titre reste affirmatif, à raison.
+- **Ramadan** : `/guides/ramadan-voyage-guide` et
+  `/blog/voyager-pendant-ramadan-guide-complet` portaient un titre
+  **identique**. Or « jeûner en avion et en décalage » décrit l'article, pas
+  le guide, qui parle de destinations. Chacun a repris le sien.
+- « Tout savoir » retiré d'une description (mot creux banni le 20 août).
+
+## 4. La règle est maintenant tenue par un test
+
+`scripts/test-articles.mjs`, à chaque construction : aucun article dont le
+texte nie l'existence d'une salle de prière ne peut porter un titre qui
+l'affirme. Plus : aucun mot creux, aucun titre au-dessus de 60 caractères,
+aucun titre en double. 94 articles relus, 6 disent honnêtement qu'il n'y a
+pas de salle.
+
+⚠️ Vérifié qu'il ÉCHOUE quand on remet l'ancien titre du Futuroscope.
+
+## 5. Ce que je n'ai pas fait, et pourquoi
+
+**Aucun article neuf.** Le format gagnant est identifié, mais une page neuve
+ne se justifie que si elle apprend quelque chose qu'aucune page existante
+n'apprend — et publier « où prier à [lieu] » sans relevé vérifié pour ce
+lieu reviendrait à inventer une salle de prière. Le relevé OpenStreetMap ne
+couvre que 10 aéroports internationaux, aucun français.
+
+**Les articles minces** (`/blog/restaurants-halal-paris` 450 mots,
+`manger-halal-lisbonne` 506, `restaurant-halal-barcelone` 527) n'ont pas
+été enrichis : les étoffer suppose des adresses vérifiées, pas de la
+rédaction. C'est un travail de donnée, pas de texte.
+
+**L'effet des titres se lira au relevé du 1er septembre** — Google met une
+à deux semaines à recalculer l'affichage.

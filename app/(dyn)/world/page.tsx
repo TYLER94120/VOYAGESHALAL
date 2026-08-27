@@ -9,7 +9,7 @@ import { getRedis } from '@/lib/pushStore'
 import { EN_URL } from '@/lib/domain'
 import { titreSeo } from '@/lib/titre-seo'
 import SocleWorld from '@/components/flux/SocleWorld'
-import { estPubliable } from '@/app/prayer-room/[airport]/page'
+import { estPubliable } from '@/app/(dyn)/prayer-room/[airport]/page'
 import { readFileSync as lireFichier } from 'fs'
 
 // 🌍 GOHALALTRAVEL — L'ACCUEIL EN SWIPE (phase 1, validée le 20 août).

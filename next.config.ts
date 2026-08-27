@@ -20,6 +20,21 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // 🏠 22 août. « Le site s'ouvre sur cette page, c'est pas la bonne
+      // page d'accueil » : /accueil-gohalal-travel est une adresse de
+      // démarrage — un favori, une page d'ouverture de navigateur. Elle
+      // ne correspond à aucune route du site, elle tombait donc en 404.
+      //
+      // Ce n'est pas une devinette : le mot « accueil » EST dans
+      // l'adresse, et Mohamed a confirmé que c'est là qu'il veut arriver.
+      // 301 vers l'accueil du domaine servi — sur gohalaltravel.com le
+      // middleware sert ensuite le flux World, sur voyageshalal.fr
+      // l'accueil français. Une seule règle, les deux sites justes.
+      {
+        source: '/accueil-gohalal-travel',
+        destination: '/',
+        permanent: true,
+      },
       {
         source: '/villes/:slug',
         destination: '/destinations/:slug',

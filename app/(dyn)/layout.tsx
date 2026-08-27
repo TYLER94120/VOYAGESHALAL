@@ -1,21 +1,8 @@
 import type { Metadata, Viewport } from 'next'
 import { DM_Sans, Playfair_Display } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/react'
-import RegisterSW from '@/components/pwa/RegisterSW'
-import InstallPrompt from '@/components/pwa/InstallPrompt'
-import './globals.css'
-import '../styles/animations.css'
-import { ToastProvider } from '@/components/Toast'
-import Header from '@/components/layout/Header'
-import Footer from '@/components/layout/Footer'
-import BottomNav from '@/components/layout/BottomNav'
-import HalalGPTFab from '@/components/halalgpt/HalalGPTFab'
-import { LanguageProvider } from '@/components/i18n/LanguageProvider'
-import GoogleTranslate from '@/components/i18n/GoogleTranslate'
-import { LocationProvider } from '@/components/location/LocationProvider'
-import { AdhanProvider } from '@/components/adhan/AdhanProvider'
-import PrayerCountdownBar from '@/components/prayer/PrayerCountdownBar'
-import { RamadanBanner } from '@/components/RamadanBanner'
+import Coque from '@/components/layout/Coque'
+import '../globals.css'
+import '../../styles/animations.css'
 import { DEFAULT_DESCRIPTION, EN_DESCRIPTION as EN_DEFAULT_DESCRIPTION } from '@/lib/seo'
 import { getDomainSEO } from '@/lib/domain'
 
@@ -73,35 +60,39 @@ export const viewport: Viewport = {
 // Site bi-domaine : la langue (et la marque) dépend de l'hôte de la requête.
 // On force le rendu dynamique sur TOUTES les routes pour qu'aucune page (dont « / »)
 // ne soit servie depuis un cache edge/build figé sur la mauvaise langue.
+//
+// 🗄 CHANTIER CACHE — CE QUI RESTE ICI EST CE QUI N'EST PAS ENCORE MIGRÉ.
+//
+// La raison qui l'a fait écrire reste vraie : servir une page française à
+// un anglophone serait pire qu'une facture. Mais elle s'applique au site
+// ENTIER, et Next.js écrit alors « no-store » sur chaque page. Mesuré le
+// 22 août : aucune page du site n'a le droit d'être mise en cache, la
+// plus lourde pèse 544 Ko, et le compte Vercel s'est mis en pause à
+// 10,77 Go d'« Origin Transfer » sur 10 Go inclus — les trois sites sont
+// tombés ensemble.
+//
+// LA SORTIE, par étapes (voir scripts/test-cache.mjs) :
+// ÉTAPE 2, FAITE LE 25 AOÛT. Le site a maintenant trois layouts racine :
+//   app/(fr)  — français, ne lit rien de la requête → pages en cache
+//   app/en    — anglais, ne lit rien de la requête → pages en cache
+//   app/(dyn) — CE FICHIER : les pages pas encore migrées. Elles lisent
+//               encore l'en-tête, restent dynamiques, et gardent donc la
+//               bonne langue sur les deux domaines. C'est volontaire :
+//               une page mal migrée servirait du français à un anglophone,
+//               ce qui est plus grave qu'une facture.
+//
+// La ligne ci-dessous ne concerne donc plus QUE ce groupe. Chaque famille
+// de pages qu'on déplacera vers (fr)/en sortira de son périmètre.
+// ÉTAPE 3 — à faire : les listes (/destinations, l'accueil, /blog,
+// /guides), puis le sitemap.
 export const dynamic = 'force-dynamic'
 
-export default async function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const { isEN } = await getDomainSEO()
   return (
     <html lang={isEN ? 'en' : 'fr'}>
       <body className={`${dmSans.variable} ${playfair.variable} font-sans`}>
-        <LanguageProvider initialLang={isEN ? 'en' : 'fr'}>
-          <LocationProvider>
-           <AdhanProvider>
-            <PrayerCountdownBar />
-            <GoogleTranslate />
-            <RamadanBanner />
-            <Header brandEN={isEN} />
-            {children}
-            <Footer brandEN={isEN} />
-            <HalalGPTFab en={isEN} />
-            <BottomNav />
-            <ToastProvider />
-            <RegisterSW />
-            <InstallPrompt />
-           </AdhanProvider>
-          </LocationProvider>
-        </LanguageProvider>
-        <Analytics />
+        <Coque en={isEN}>{children}</Coque>
       </body>
     </html>
   )

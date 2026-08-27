@@ -1,3 +1,32 @@
+// 🗄 LA FICHE DE VILLE, RENDUE UNE FOIS POUR TOUTES.
+//
+// CHANTIER CACHE DU 22 AOÛT. Mesuré sur le serveur de production : cette
+// page sortait avec « private, no-cache, no-store » et pesait 137 à 152 Ko.
+// Interdiction de cache × 354 villes × 2 domaines : chaque passage d'un
+// robot d'indexation retirait ces octets de notre serveur. Le compte
+// Vercel s'est mis en pause à 10,77 Go d'« Origin Transfer » sur 10 Go
+// inclus, et les trois sites sont tombés ensemble.
+//
+// 🔴 LA CAUSE, ET POURQUOI ELLE N'ÉTAIT PAS VISIBLE.
+// La page appelait getDomainSEO(), qui lit l'en-tête « Host » pour savoir
+// si elle parle français ou anglais. Lire un en-tête rend une page
+// dynamique : Next.js la recalcule à chaque visite et interdit alors le
+// cache — c'est lui qui écrit « no-store », pas nous. La fiche d'Istanbul,
+// qui ne change pas du mois, était refabriquée pour chaque visiteur.
+//
+// LA CORRECTION : la langue vient de la ROUTE, plus de l'en-tête.
+//   /destinations/istanbul      → français  (voyageshalal.fr)
+//   /en/destinations/istanbul   → anglais   (réécriture interne du
+//                                 middleware ; l'URL publique reste
+//                                 gohalaltravel.com/destinations/istanbul)
+// La réponse ne dépend plus que de l'adresse. Les deux versions sont donc
+// fabriquées À LA CONSTRUCTION et servies depuis le cache : plus un octet
+// de notre serveur une fois la page en cache.
+//
+// ⚠️ CE QUI NE DOIT PAS BOUGER : l'URL publique et le lien canonique. Le
+// préfixe /en est un chemin INTERNE. Il ne s'affiche jamais dans la barre
+// d'adresse, il ne part jamais dans un sitemap, et le middleware renvoie
+// en 301 quiconque le tape à la main.
 import { titreSeo } from '@/lib/titre-seo'
 import { titresVilleEn, titresVilleFr, descriptionVille } from '@/lib/titreVille.mjs'
 import { notFound } from 'next/navigation'
@@ -11,15 +40,14 @@ import { DestinationFaqSchema, DestinationSchema } from '@/components/SchemaOrg'
 import CitySync from '@/components/location/CitySync'
 import { cityEn } from '@/lib/poiI18n'
 import cityCoords from '@/lib/cityCoords.json'
-import { getDomainSEO, FR_URL, EN_URL } from '@/lib/domain'
+import { FR_URL, EN_URL } from '@/lib/domain'
 import { conforme } from '@/lib/conformite'
 import { compteurVille } from '@/lib/mosqueesOsm'
 import { dateGitVille, fmtMonthYear } from '@/lib/freshness'
 
-export const dynamicParams = false
-
 interface Props {
-  params: Promise<{ city: string }>
+  city: string
+  en: boolean
 }
 
 const villesDir = path.join(process.cwd(), 'data', 'villes')
@@ -43,12 +71,11 @@ function getVille(slug: string): Ville | null {
   }
 }
 
-export async function generateStaticParams() {
+export function paramsVilles() {
   return getVilleSlugs().map((city) => ({ city }))
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { city } = await params
+export async function metadataDestination({ city, en }: Props): Promise<Metadata> {
   const ville = getVille(city)
   if (!ville) return {}
   const restos = ville.statistiques?.restaurants_halal ?? (ville.restaurants?.length ?? 0)
@@ -66,7 +93,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const nbMosq = ville.mosqueesPrincipales?.length ?? mosquees ?? 0
   const nbHotels = ville.hotels?.length ?? 0
 
-  const { isEN, siteUrl } = await getDomainSEO()
+  const isEN = en
+  const siteUrl = en ? EN_URL : FR_URL
 
   // 🔎 CE QUE GOOGLE AFFICHE. Trois corrections mesurees :
   //
@@ -138,12 +166,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
-export default async function DestinationPage({ params }: Props) {
-  const { city } = await params
+export default function DestinationRoute({ city, en }: Props) {
   const ville = getVille(city)
   if (!ville) notFound()
 
-  const { isEN, siteUrl } = await getDomainSEO()
+  const isEN = en
+  const siteUrl = en ? EN_URL : FR_URL
   const all = cityCoords as { slug: string; nom: string; pays?: string; lat?: number; lng?: number }[]
   const coords = all.find((c) => c.slug === city)
   // Restaurants proposes au public : bars, lounges a chicha et boites de
