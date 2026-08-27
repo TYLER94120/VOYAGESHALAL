@@ -29,6 +29,7 @@ export const dynamic = 'force-dynamic'
 // meilleures d'abord, le flux ne s'arrête jamais. 354 villes, toutes avec
 // score et photo réels de la base.
 import { readdirSync } from 'fs'
+import { sansChiffreNonSource } from '@/lib/prose.mjs'
 
 // 🔎 LE TITRE (règle du 20 août) : le BESOIN d'abord, jamais la marque.
 // « GoHalalTravel — Swipe the halal world » vendait le geste ; personne ne
@@ -61,7 +62,11 @@ function lireVilles(): VillePanneau[] {
       // L'accroche : la première phrase éditoriale anglaise de la fiche qui
       // ne cite pas l'ancien « Trust Score » (marque abandonnée) — réelle,
       // jamais générée à la volée.
-      const phrases = String(v.description_en ?? '').split(/(?<=[.!?])\s+/)
+      // 27 août : la première phrase annonçait « 76 halal restaurants,
+      // 400 mosques » à La Mecque, qui en a 26 et 60 — juste au-dessus du
+      // « 739 prayer places » compté par OpenStreetMap. Trois nombres, un
+      // seul comptable. Les phrases qui avancent un compte sont retirées.
+      const phrases = sansChiffreNonSource(String(v.description_en ?? '')).split(/(?<=[.!?])\s+/)
       const brute = phrases.find((p) => p.length > 30 && !/trust score/i.test(p))?.trim() ?? null
       // Jamais coupée en plein mot : phrase entière si courte, sinon
       // tronquée au dernier espace avant 110 caractères + « … ».
