@@ -42,8 +42,13 @@ const routes = new Set(['/'])
 const explore = (dir, base = '') => {
   for (const e of readdirSync(new URL(dir, import.meta.url), { withFileTypes: true })) {
     if (e.isDirectory()) {
-      if (e.name.startsWith('[') || e.name.startsWith('(') || e.name === 'api') continue
-      explore(`${dir}/${e.name}`, `${base}/${e.name}`)
+      if (e.name.startsWith('[') || e.name === 'api') continue
+      // 🗄 Chantier cache du 25 août : les groupes de routes — (dyn), (fr) —
+      // n'existent PAS dans l'URL. app/(dyn)/guides sert bien /guides. Les
+      // ignorer entièrement rendait toutes les pages du site introuvables,
+      // et ce test annonçait 8 liens morts qui marchent très bien.
+      const groupe = e.name.startsWith('(') && e.name.endsWith(')')
+      explore(`${dir}/${e.name}`, groupe ? base : `${base}/${e.name}`)
     } else if (e.name === 'page.tsx') routes.add(base || '/')
   }
 }

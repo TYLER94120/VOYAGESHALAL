@@ -1,21 +1,8 @@
 import type { Metadata, Viewport } from 'next'
 import { DM_Sans, Playfair_Display } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/react'
-import RegisterSW from '@/components/pwa/RegisterSW'
-import InstallPrompt from '@/components/pwa/InstallPrompt'
-import './globals.css'
-import '../styles/animations.css'
-import { ToastProvider } from '@/components/Toast'
-import Header from '@/components/layout/Header'
-import Footer from '@/components/layout/Footer'
-import BottomNav from '@/components/layout/BottomNav'
-import HalalGPTFab from '@/components/halalgpt/HalalGPTFab'
-import { LanguageProvider } from '@/components/i18n/LanguageProvider'
-import GoogleTranslate from '@/components/i18n/GoogleTranslate'
-import { LocationProvider } from '@/components/location/LocationProvider'
-import { AdhanProvider } from '@/components/adhan/AdhanProvider'
-import PrayerCountdownBar from '@/components/prayer/PrayerCountdownBar'
-import { RamadanBanner } from '@/components/RamadanBanner'
+import Coque from '@/components/layout/Coque'
+import '../globals.css'
+import '../../styles/animations.css'
 import { DEFAULT_DESCRIPTION, EN_DESCRIPTION as EN_DEFAULT_DESCRIPTION } from '@/lib/seo'
 import { getDomainSEO } from '@/lib/domain'
 
@@ -74,7 +61,7 @@ export const viewport: Viewport = {
 // On force le rendu dynamique sur TOUTES les routes pour qu'aucune page (dont « / »)
 // ne soit servie depuis un cache edge/build figé sur la mauvaise langue.
 //
-// 🗄 CHANTIER CACHE DU 22 AOÛT — CETTE LIGNE COÛTE LE SITE.
+// 🗄 CHANTIER CACHE — CE QUI RESTE ICI EST CE QUI N'EST PAS ENCORE MIGRÉ.
 //
 // La raison qui l'a fait écrire reste vraie : servir une page française à
 // un anglophone serait pire qu'une facture. Mais elle s'applique au site
@@ -85,52 +72,27 @@ export const viewport: Viewport = {
 // tombés ensemble.
 //
 // LA SORTIE, par étapes (voir scripts/test-cache.mjs) :
-//   ÉTAPE 1 — FAITE : la fiche de ville (354 × 2 langues, la plus grande
-//     surface d'indexation) tire sa langue de la ROUTE et non de
-//     l'en-tête. app/destinations/[city] est française, app/en/... est
-//     anglaise, le middleware réécrit sans changer l'URL publique.
-//   ÉTAPE 2 — À FAIRE : le layout lui-même. Tant qu'il lit l'en-tête
-//     Host, TOUTES les routes restent dynamiques, y compris celles de
-//     l'étape 1. Il faut deux layouts racine — un français, un anglais
-//     sous /en — pour que la langue soit portée par l'adresse de bout en
-//     bout. C'est la seule façon d'être en cache SANS jamais risquer la
-//     mauvaise langue : une page qui ne dépend que de son adresse ne peut
-//     pas se tromper de lecteur.
-//   ÉTAPE 3 — À FAIRE : les listes (/destinations 544 Ko, /guides,
-//     /blog), puis le sitemap.
+// ÉTAPE 2, FAITE LE 25 AOÛT. Le site a maintenant trois layouts racine :
+//   app/(fr)  — français, ne lit rien de la requête → pages en cache
+//   app/en    — anglais, ne lit rien de la requête → pages en cache
+//   app/(dyn) — CE FICHIER : les pages pas encore migrées. Elles lisent
+//               encore l'en-tête, restent dynamiques, et gardent donc la
+//               bonne langue sur les deux domaines. C'est volontaire :
+//               une page mal migrée servirait du français à un anglophone,
+//               ce qui est plus grave qu'une facture.
 //
-// ⚠️ NE PAS retirer cette ligne avant l'étape 2 : sans elle et sans les
-// deux layouts, le site servirait la mauvaise langue. La facture est un
-// problème ; la mauvaise langue en est un plus grave.
+// La ligne ci-dessous ne concerne donc plus QUE ce groupe. Chaque famille
+// de pages qu'on déplacera vers (fr)/en sortira de son périmètre.
+// ÉTAPE 3 — à faire : les listes (/destinations, l'accueil, /blog,
+// /guides), puis le sitemap.
 export const dynamic = 'force-dynamic'
 
-export default async function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const { isEN } = await getDomainSEO()
   return (
     <html lang={isEN ? 'en' : 'fr'}>
       <body className={`${dmSans.variable} ${playfair.variable} font-sans`}>
-        <LanguageProvider initialLang={isEN ? 'en' : 'fr'}>
-          <LocationProvider>
-           <AdhanProvider>
-            <PrayerCountdownBar />
-            <GoogleTranslate />
-            <RamadanBanner />
-            <Header brandEN={isEN} />
-            {children}
-            <Footer brandEN={isEN} />
-            <HalalGPTFab en={isEN} />
-            <BottomNav />
-            <ToastProvider />
-            <RegisterSW />
-            <InstallPrompt />
-           </AdhanProvider>
-          </LocationProvider>
-        </LanguageProvider>
-        <Analytics />
+        <Coque en={isEN}>{children}</Coque>
       </body>
     </html>
   )

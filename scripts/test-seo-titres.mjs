@@ -15,6 +15,7 @@
 //  3. Les hreflang ne déclarent plus les pages qui ont divergé entre les
 //     deux sites — un hreflang qui ment fait déclasser l'une des deux.
 import { readFileSync } from 'node:fs'
+import { fichierRoute } from './_routes.mjs'
 
 /** Le code SANS ses commentaires : un commentaire qui explique « le <h1>
  *  vit ailleurs » ne doit pas être compté comme un <h1>. */
@@ -28,7 +29,7 @@ const casse = (m) => { console.error(`❌ ${m}`); fautes++ }
 
 // ── 1. mots interdits dans les titres servis ──
 const INTERDITS = /guide complet|complete guide|ultimate guide|découvrez|tout savoir|everything you need to know/i
-const FICHIERS_TITRES = ['lib/data.ts', 'lib/guidesEn.ts', 'lib/countriesData.ts', 'app/omra/page.tsx']
+const FICHIERS_TITRES = ['lib/data.ts', 'lib/guidesEn.ts', 'lib/countriesData.ts', fichierRoute('omra/page.tsx')]
 for (const f of FICHIERS_TITRES) {
   const lignes = readFileSync(f, 'utf8').split('\n')
   lignes.forEach((l, i) => {
@@ -65,15 +66,15 @@ if (/<h1/.test(hero)) casse('le hero de l\'accueil a repris un <h1> — deux h1 
 const hre = readFileSync('lib/hreflang.ts', 'utf8')
 if (!/aDiverge/.test(hre)) casse('la liste des pages divergentes a disparu de lib/hreflang.ts')
 for (const [f, motif] of [
-  ['app/page.tsx', /languages: \{ fr: FR_URL/],
-  ['app/destinations/[city]/page.tsx', /languages: \{/],
-  ['app/layout.tsx', /languages: \{\s*\n\s*fr:/],
+  [fichierRoute('page.tsx'), /languages: \{ fr: FR_URL/],
+  [fichierRoute('destinations/[city]/page.tsx'), /languages: \{/],
+  [fichierRoute('layout.tsx'), /languages: \{\s*\n\s*fr:/],
 ]) {
   if (motif.test(readFileSync(f, 'utf8'))) casse(`${f} redéclare un hreflang sur une page qui a divergé`)
 }
 
 // ── 4. les pages aéroport ne s'inventent rien ──
-const aero = readFileSync('app/prayer-room/[airport]/page.tsx', 'utf8')
+const aero = readFileSync(fichierRoute('prayer-room/[airport]/page.tsx'), 'utf8')
 if (!/generateStaticParams/.test(aero) || !/lireBase\(\)\.map/.test(aero)) casse('les pages aéroport ne sont plus générées depuis le relevé — une page pourrait exister sans données')
 if (!/not recorded/.test(aero)) casse('la mention « non relevé » a disparu des pages aéroport : un terminal pourrait être présenté comme connu')
 if (!/OpenStreetMap contributors/.test(aero)) casse('le crédit ODbL a disparu des pages aéroport')

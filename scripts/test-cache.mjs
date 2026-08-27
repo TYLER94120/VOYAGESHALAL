@@ -29,11 +29,12 @@
 //
 // Ce fichier tient la première brique : les 354 fiches de ville.
 import { readFileSync, existsSync } from 'node:fs'
+import { fichierRoute } from './_routes.mjs'
 
 let fautes = 0
 const casse = (m) => { console.error(`❌ ${m}`); fautes++ }
 
-const FR = 'app/destinations/[city]/page.tsx'
+const FR = fichierRoute('destinations/[city]/page.tsx')
 const EN = 'app/en/destinations/[city]/page.tsx'
 const RENDU = 'components/villes/DestinationRoute.tsx'
 
@@ -75,7 +76,7 @@ if (!/pathname\.startsWith\('\/en\/'\)[\s\S]{0,240}redirect\(url, 301\)/.test(mw
 // Tant que cette ligne est là, les fiches restent dynamiques MALGRÉ le
 // travail ci-dessus : le layout racine lit l'en-tête pour toute route.
 // Ce test ne la casse pas — il refuse qu'on l'oublie.
-const layout = readFileSync('app/layout.tsx', 'utf8')
+const layout = readFileSync(fichierRoute('layout.tsx'), 'utf8')
 if (/force-dynamic/.test(layout) && !/CHANTIER CACHE/.test(layout)) {
   casse('app/layout.tsx force le rendu dynamique du site entier sans dire où en est le chantier — la facture reviendra sans que personne sache pourquoi')
 }

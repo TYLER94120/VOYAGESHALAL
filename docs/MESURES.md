@@ -450,3 +450,81 @@ faite et mesurée avant cette date.
 en 4xx, pas en 503**. Ce n'est pas une panne neutre, c'est une pression de
 désindexation. Cette fuite n'est pas une question de facture, c'est une
 question de survie dans l'index.
+
+---
+
+# 🗄 25 AOÛT — ÉTAPE 2 : LA FUITE EST BOUCHÉE SUR LA PLUS GRANDE SURFACE
+
+Suite de la ronde. Feu vert de Mohamed pour lancer l'étape 2.
+
+## Le vrai coupable n'était pas celui du diagnostic
+
+Le diagnostic du matin accusait `export const dynamic = 'force-dynamic'`
+dans le layout racine. C'était un coupable — mais **pas le seul, ni le
+plus discret**.
+
+En isolant fichier par fichier, une page triviale sous un layout qui ne lit
+plus rien restait `ƒ` (dynamique). Le blocage venait de
+**`app/not-found.tsx`** — la page 404 écrite le 22 août, qui lisait
+l'en-tête `Host` pour choisir sa langue.
+
+**Le 404 global appartient à l'arbre de TOUTES les routes.** Une seule
+lecture d'en-tête à cet endroit rendait les 117 routes du site dynamiques
+et non cachables. Mesuré, pas supposé : en neutralisant ce seul fichier,
+la page d'essai passe de `ƒ` à `○`, et les fiches de ville de `ƒ` à `●`.
+
+> Leçon à retenir : dans Next, un fichier partagé par toutes les routes
+> (`not-found`, `layout`, `error`) impose sa contrainte la plus stricte à
+> tout le site. Chercher la fuite page par page ne pouvait pas la trouver.
+
+## Ce qui a été fait
+
+- **Trois layouts racine** au lieu d'un : `app/(fr)` (français),
+  `app/en` (anglais), `app/(dyn)` (les pages pas encore migrées, qui
+  gardent l'ancien layout et restent dynamiques). Le contenu du `<body>`
+  est écrit une fois dans `components/layout/Coque.tsx`.
+- **Le 404 ne lit plus la requête** : il rend les deux langues et un script
+  court, exécuté avant le premier affichage, masque la mauvaise. Sans
+  JavaScript, le français reste.
+- **Les tests apprennent les groupes de routes** (`scripts/_routes.mjs`) :
+  `app/(dyn)/guides` sert bien `/guides`. Sans ça, trois tests annonçaient
+  des liens morts parfaitement vivants.
+
+## Le résultat, mesuré sur le serveur de production local
+
+| | avant | après |
+|---|---|---|
+| pages HTML fabriquées d'avance | **1** | **710** |
+| fiche de ville | `ƒ` dynamique | `●` prégénérée |
+| `Cache-Control` d'une fiche | `private, no-cache, no-store` | `s-maxage=31536000` |
+
+**Les 354 fiches × 2 langues ne repartent plus de notre serveur.** C'est
+89 Mo par passage complet des robots qui disparaissent de la facture — la
+plus grande surface d'indexation du site.
+
+Langue vérifiée sur les deux domaines, page par page : accueil,
+/destinations, fiche de ville, /guides, /blog, /autour-de-moi, /contact,
+/priere/[ville] — `lang="fr"` sur voyageshalal.fr, `lang="en"` sur
+gohalaltravel.com, canoniques justes, sitemaps inchangés (810 et 831 URL),
+`/en/...` tapé à la main toujours renvoyé en 301.
+
+## ⚠️ Ce qui reste à vérifier EN PRODUCTION
+
+Le réseau de la session ne joint pas Vercel. Deux choses ne se voient que
+là, après déploiement :
+
+1. **Une fiche de ville sur chaque domaine** — que l'anglais reste anglais
+   et le français français. La séparation tient par un chemin interne
+   distinct (`/en/...`), pas par une supposition sur le cache de Vercel :
+   c'est fait exprès, mais ça se regarde une fois.
+2. **La courbe d'Origin Transfer** dans les jours qui suivent. Elle doit
+   décrocher. Si elle ne décroche pas, c'est que le gros du volume vient
+   d'ailleurs que des fiches de ville, et l'étape 3 changera de cible.
+
+## ÉTAPE 3 — la suite, par ordre de poids mesuré
+
+`/` (accueil EN, 493 Ko) · `/destinations` (543 Ko) · `/blog` (154 Ko) ·
+`/guides` (149 Ko) · le sitemap (220 Ko). Même méthode : sortir la famille
+de `(dyn)`, lui donner son jumeau sous `app/en`, vérifier les deux langues.
+
+⏳ Échéance inchangée : **23 septembre**, pour redescendre en Hobby.

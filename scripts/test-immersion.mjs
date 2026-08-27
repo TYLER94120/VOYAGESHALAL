@@ -9,6 +9,7 @@
 //    obligatoire, aucune donnée métier en dur, jamais « certifié »,
 //    liste de sources extensible, contradictions collectées.
 import { readFileSync, existsSync } from 'node:fs'
+import { fichierRoute } from './_routes.mjs'
 import { tirer, sansDoublonsConsecutifs } from '../lib/immersionTirage.mjs'
 
 let fautes = 0
@@ -68,7 +69,7 @@ if (!/\?lieu=/.test(comp)) casse('le lien profond de partage par lieu a disparu'
 // ── 3. le World feed (GoHalalTravel phase 1) ──
 const mw = readFileSync('middleware.ts', 'utf8')
 if (!/pathname === '\/'\s*\)/.test(mw) || !/\/world/.test(mw)) casse('la réécriture accueil EN → /world a disparu du middleware')
-const wp = readFileSync('app/world/page.tsx', 'utf8')
+const wp = readFileSync(fichierRoute('world/page.tsx'), 'utf8')
 if (/halalScore\s*[:=]\s*\d/.test(wp) || /score:\s*\d/.test(wp)) casse('un HalalScore en dur dans le World feed — interdit (Règle B)')
 if (!/description_en/.test(wp)) casse('l\'accroche ne vient plus de la base (description_en)')
 if (!/compteurVille/.test(wp)) casse('le compteur OSM de lieux de prière a disparu du World feed')
@@ -81,7 +82,7 @@ for (const s of ['istanbul', 'marrakech', 'kuala-lumpur', 'dubai', 'doha', 'le-c
 const comp2 = readFileSync('components/villes/Immersion.tsx', 'utf8')
 if (!/fluxDispo\.eat\.length >= 3/.test(comp2)) casse('la pilule Eat s\'affiche sans le plancher de 3 lieux — bouton sans destination possible')
 if (!/panneauxVisibles/.test(comp2)) casse('les flux Eat/Sleep/Do ne filtrent plus le pool')
-if (!existsSync('app/saves/page.tsx') || !existsSync('components/flux/MySaves.tsx')) casse('le carnet My saves a disparu')
+if (!existsSync(fichierRoute('saves/page.tsx')) || !existsSync('components/flux/MySaves.tsx')) casse('le carnet My saves a disparu')
 const ms = readFileSync('components/flux/MySaves.tsx', 'utf8')
 if (!/vh_wishlist_villes/.test(ms) || !/vh_immersion_gardes:/.test(ms)) casse('My saves ne lit plus les deux clés du carnet unique')
 if (!/construire=1/.test(ms)) casse('« Build my days » depuis My saves a perdu sa destination')
