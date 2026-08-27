@@ -1,0 +1,160 @@
+/* ==========================================================================
+   LE CHEMIN ET L'ANNEAU DU JOUR
+   --------------------------------------------------------------------------
+   Les deux pieces qui font qu'on ouvre le site demain : ou j'en suis, et ce
+   qu'il me reste a faire aujourd'hui.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   LE BANDEAU DU JOUR : l'anneau, la serie, le record
+   --------------------------------------------------------------------------
+   L'ANNEAU EST VISIBLE AVANT D'AVOIR COMMENCE. C'est son incompletude qui
+   donne envie de le fermer ; un anneau qui n'apparait qu'apres l'effort ne
+   recompense rien.
+   -------------------------------------------------------------------------- */
+
+.jour {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: var(--papier);
+  background-image: linear-gradient(180deg, var(--papier) 0%, #FBF6E9 100%);
+  border: 1px solid var(--trait);
+  border-radius: var(--r-bloc-2);
+  padding: 14px 16px;
+}
+.jour-anneau { position: relative; width: 62px; height: 62px; flex-shrink: 0; }
+.jour-anneau-txt {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--titre);
+  font-size: 17px;
+  color: var(--vert);
+}
+.jour-quoi { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.jour-titre { font-family: var(--titre); font-size: 17px; color: var(--vert-fonce); }
+.jour-note { font-size: 12.5px; line-height: 1.4; color: var(--texte-2); }
+
+/* La serie. Grise tant qu'elle n'a pas commence, or des le premier jour : le
+   changement de couleur EST la recompense, il n'y a rien a ecrire de plus. */
+.jour-serie {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  align-self: flex-start;
+  border-radius: var(--r-pastille);
+  padding: 3px 10px 3px 7px;
+  font-size: 12.5px;
+  font-weight: 600;
+  background: #EFEDE6;
+  color: var(--texte-2);
+  border: 1px solid var(--trait-3);
+}
+.jour-serie[data-vive="oui"] {
+  background: var(--or-voile);
+  border-color: var(--or-bordure);
+  color: var(--sur-or);
+}
+
+/* LE JOUR DE GRACE S'ANNONCE APRES COUP, ET SEULEMENT ALORS. Afficher un
+   stock disponible transformerait le filet en permission. */
+.jour-grace {
+  font-size: 12.5px;
+  line-height: 1.4;
+  color: var(--or-texte);
+}
+
+/* --------------------------------------------------------------------------
+   LE CHEMIN
+   -------------------------------------------------------------------------- */
+
+.chemin {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 4px 0 8px 0;
+}
+
+/* Le trace passe SOUS les medaillons. Il est pose en absolu et ne recoit
+   aucun clic : c'est un decor. */
+.chemin-trait {
+  position: absolute;
+  left: 0; top: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.etape {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-align: left;
+  color: var(--encre);
+  min-height: var(--cible);
+}
+
+/* LA BANDE DU MEDAILLON : largeur FIXE, egale au medaillon plus le plus grand
+   decalage. C'est elle qui garantit que le nom de section commence toujours au
+   meme endroit, quel que soit le serpentement. Sans elle, le medaillon passe
+   par-dessus le texte — on lisait « iliers de la foi ». */
+.etape-bande {
+  width: 116px;
+  flex-shrink: 0;
+  display: flex;
+}
+
+/* LE MEDAILLON. C'est lui qui serpente ; le nom, lui, reste dans sa colonne —
+   un bord gauche en dents de scie se lit comme un defaut d'affichage. */
+.etape-rond {
+  position: relative;
+  width: 58px; height: 58px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background-color: var(--vert-fonce);
+  background-image: linear-gradient(160deg, #14603C 0%, var(--vert-fonce) 100%);
+  box-shadow: 0 3px 10px rgba(11, 61, 38, 0.24);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--or-clair);
+}
+/* Une section sans questions se distingue par sa MATIERE, jamais en voilant
+   son texte : le plancher de contraste ne souffre pas d'exception. */
+.etape[data-etat="bientot"] .etape-rond {
+  background-color: #EDEFEA;
+  background-image: none;
+  border: 1px dashed var(--trait-4);
+  box-shadow: none;
+}
+.etape[data-etat="bientot"] .etape-nom { color: var(--texte-2); }
+
+.etape-pc {
+  position: absolute;
+  right: -4px; bottom: -3px;
+  background: var(--or);
+  color: var(--sur-or);
+  border: 2px solid var(--fond-app);
+  border-radius: 10px;
+  padding: 0 5px;
+  font-size: 10.5px;
+  font-weight: 700;
+  line-height: 17px;
+}
+
+.etape-quoi { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.etape-nom { font-size: 15px; font-weight: 600; line-height: 1.25; }
+.etape-nb { font-size: 12px; color: var(--texte-3); }
+
+/* Le chemin doit rester lisible quand le medaillon part le plus loin a
+   droite : sur un ecran de 360 px, le nom garde alors 150 px. */
+@media (max-width: 359px) {
+  .etape-rond { width: 52px; height: 52px; }
+  .etape-bande { width: 100px; }
+  .etape { gap: 11px; }
+}

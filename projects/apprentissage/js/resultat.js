@@ -73,7 +73,7 @@
     if (pc >= 80) { return 'Solide. Ce qui reste tient en peu de choses.'; }
     if (pc >= 50) { return 'La moitié est acquise. Le reste se revoit.'; }
     if (pc >= 20) { return 'Un début. Les questions ratées reviendront.'; }
-    return 'C\'est un premier passage. Rien n\'est perdu, tout se revoit.';
+    return 'C\'est un premier passage. Tout se revoit.';
   }
 
   var id = param('s');

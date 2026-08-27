@@ -29,7 +29,8 @@ function vide() {
     jours: [],       // 'AAAA-MM-JJ' des jours ou un QCM de 10+ a ete termine
     reprise: null,   // { section, paquet, pos, reponses, reglages, debut }
     reglages: null,  // les derniers reglages choisis
-    recordSerie: 0
+    recordSerie: 0,
+    parJour: {}
   };
 }
 
@@ -48,6 +49,18 @@ function charger() {
     if (d.reprise && typeof d.reprise === 'object') { v.reprise = d.reprise; }
     if (d.reglages && typeof d.reglages === 'object') { v.reglages = d.reglages; }
     if (typeof d.recordSerie === 'number' && d.recordSerie >= 0) { v.recordSerie = d.recordSerie; }
+    // Le compte de questions repondues par jour : c'est lui qui remplit
+    // l'anneau du jour. Il n'existait pas avant le 25 aout, donc une
+    // progression deja enregistree n'en a pas — un objet vide, et l'anneau
+    // repart de zero aujourd'hui plutot que de refuser de s'afficher.
+    if (d.parJour && typeof d.parJour === 'object') {
+      for (var pj in d.parJour) {
+        if (Object.prototype.hasOwnProperty.call(d.parJour, pj)
+            && typeof d.parJour[pj] === 'number' && d.parJour[pj] >= 0) {
+          v.parJour[pj] = d.parJour[pj];
+        }
+      }
+    }
     return v;
   } catch (e) {
     // Navigation privee, stockage plein, JSON abime : on repart propre plutot
@@ -93,6 +106,22 @@ function noter(d, id, juste) {
   }
   f.vues += 1;
   f.derniere = juste;
+  // UNE QUESTION JUGEE COMPTE POUR L'OBJECTIF DU JOUR, juste ou non. On
+  // mesure le travail fait, pas la reussite : un objectif qu'on echoue est un
+  // objectif qu'on n'affronte plus, et les mauvais jours sont justement ceux
+  // ou la serie a besoin qu'on ouvre le site.
+  var jc = jourDeAujourdhui();
+  if (!d.parJour) { d.parJour = {}; }
+  d.parJour[jc] = (d.parJour[jc] || 0) + 1;
+  // ET C'EST LE MEME SEUIL QUI FAIT LA SERIE.
+  // L'anneau se remplissait a dix questions repondues, mais la serie
+  // attendait qu'une PARTIE soit terminee : on pouvait donc lire « objectif
+  // du jour atteint » a cote d'une serie qui n'avait pas demarre. Deux
+  // declencheurs pour une seule promesse, c'est une promesse qu'on ne tient
+  // pas. Le compteur du jour est desormais la seule source.
+  if (d.parJour[jc] >= MINI_POUR_LE_JOUR && d.jours.indexOf(jc) < 0) {
+    d.jours.push(jc);
+  }
   if (juste) {
     f.justes += 1;
     f.suite += 1;
@@ -146,6 +175,76 @@ function serieDeJours(d, aujourdhui) {
     curseur.setDate(curseur.getDate() - 1);
   }
   return n;
+}
+
+/* --------------------------------------------------------------------------
+   LE JOUR DE GRACE — le filet sous la serie
+   --------------------------------------------------------------------------
+   UNE SERIE NUE EST UN PIEGE. Un jour manque, le compteur tombe a zero,
+   « j'ai perdu mes 40 jours, j'arrete » : le mecanisme cense faire revenir
+   devient la raison de partir. C'est le defaut connu de toutes les series du
+   marche, et il est plus grave ici qu'ailleurs — quelqu'un qui vient
+   travailler sa pratique et qui recoit de la pression ne revient pas.
+
+   La regle : on gagne UN jour de grace tous les cinq jours de serie, on n'en
+   stocke JAMAIS plus de deux (sinon un absent de trois semaines garde sa
+   serie, et le compteur ne veut plus rien dire), et il se consomme tout seul.
+
+   IL S'ANNONCE APRES COUP, JAMAIS AVANT. Afficher « il te reste 2 jours de
+   grace » transforme le filet en permission, et la permission en calcul.
+   Decouvert apres, il produit du soulagement — l'emotion exacte qui fait
+   revenir demain. C'est pour ca que `sauvee` est renvoye, et que le stock
+   restant ne l'est pas.
+
+   RIEN N'EST STOCKE : ni la serie, ni le stock, ni le record. Tout se
+   recalcule depuis la seule liste des jours de visite. Un compteur ecrit
+   quelque part derive — un fuseau horaire, un double appel, une navigation
+   privee — et il afficherait un chiffre faux sur le seul chiffre auquel la
+   personne fait confiance. Une valeur recalculee ne peut pas mentir.
+   -------------------------------------------------------------------------- */
+
+var GRACE_TOUS_LES = 5;   // un jour de grace gagne tous les cinq jours
+var GRACE_MAXI = 2;       // jamais plus de deux en reserve
+
+function cleDuJour(dt) {
+  var m = String(dt.getMonth() + 1), j = String(dt.getDate());
+  return dt.getFullYear() + '-' + (m.length < 2 ? '0' + m : m) + '-'
+    + (j.length < 2 ? '0' + j : j);
+}
+
+/* Renvoie { serie, record, sauvee }.
+   `sauvee` vaut vrai quand un jour de grace vient de rattraper le DERNIER
+   trou : c'est la seule chose qu'on a le droit d'annoncer. */
+function serieComplete(d, aujourdhui) {
+  var jours = {};
+  for (var i = 0; i < d.jours.length; i++) { jours[d.jours[i]] = true; }
+  var liste = Object.keys(jours).sort();
+  if (!liste.length) { return { serie: 0, record: 0, sauvee: false }; }
+
+  var curseur = new Date(liste[0] + 'T12:00:00');
+  var fin = new Date(aujourdhui + 'T12:00:00');
+  var serie = 0, record = 0, stock = 0, sauvee = false;
+
+  while (curseur <= fin) {
+    var cle = cleDuJour(curseur);
+    if (jours[cle]) {
+      serie += 1;
+      if (serie > record) { record = serie; }
+      if (serie % GRACE_TOUS_LES === 0 && stock < GRACE_MAXI) { stock += 1; }
+      sauvee = false;
+    } else if (cle !== aujourdhui) {
+      // LA JOURNEE EN COURS NE COMPTE JAMAIS COMME MANQUEE : elle n'est pas
+      // finie. Sans cette exception, ouvrir le site le matin afficherait une
+      // serie cassee que la visite du soir aurait sauvee.
+      if (stock > 0) { stock -= 1; sauvee = true; }
+      else { serie = 0; sauvee = false; }
+    }
+    curseur.setDate(curseur.getDate() + 1);
+  }
+  // LE RECORD SURVIT A LA CASSURE. Une serie de 7 cassee laisse un record de
+  // 7 : c'est tout ce qui reste quand la chaine tombe, et c'est ce qui fait
+  // recommencer.
+  return { serie: serie, record: record, sauvee: sauvee };
 }
 
 function marquerLeJour(d, total) {
@@ -207,6 +306,9 @@ window.IPAP_MEMOIRE = {
   noter: noter,
   maitrise: maitrise,
   serieDeJours: serieDeJours,
+  serieComplete: serieComplete,
+  GRACE_TOUS_LES: GRACE_TOUS_LES,
+  GRACE_MAXI: GRACE_MAXI,
   marquerLeJour: marquerLeJour,
   jourDeAujourdhui: jourDeAujourdhui,
   aRevoir: aRevoir,

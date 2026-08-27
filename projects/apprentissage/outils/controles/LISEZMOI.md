@@ -34,6 +34,8 @@ installation existante. Le navigateur est celui du poste
 | `controler-contraste.mjs` | le plancher #5F6D66 et le seuil WCAG AA, mesures sur ce que le navigateur calcule |
 | `controler-parcours.mjs` | une partie de bout en bout : la carte, la correction, la source, la serie, le retour d'une question ratee |
 | `controler-boucle.mjs` | la boucle du jeu sur une longue partie |
+| `controler-serie.mjs` | **sans navigateur** : le comptage de la série et son jour de grâce, sur 18 calendriers écrits à la main — plus le verrou de ton, vérifié dans les deux sens |
+| `controler-jour.mjs` | la chaîne complète : l'anneau part de zéro, se remplit en jouant, et la série démarre **avec lui** |
 
 `controler-cadrage.mjs` laisse passer les polices distantes, exprès :
 mesurer une hauteur de texte arabe avec une police de remplacement ne
@@ -89,3 +91,15 @@ la copie allegee avant une publication qui touche au JS ou au CSS :
 puis les controles avec `8899` remplace par `8900`. Le 22 aout, les onze sont
 passes au vert des deux cotes — c'est ce qui autorise a servir une copie qui
 n'est pas identique a la source.
+
+## Une promesse, un seul declencheur
+
+L'anneau du jour comptait les questions repondues ; la serie, elle, attendait
+qu'une PARTIE soit terminee. On pouvait donc lire « objectif du jour atteint »
+juste a cote d'une serie qui n'avait pas demarre. Rien n'etait faux
+separement, et l'ensemble mentait.
+
+Quand deux affichages promettent la meme chose, ils doivent lire le MEME
+compteur. `controler-jour.mjs` verifie exactement ce point, et le sabotage
+correspondant — rendre son ancien declencheur a la serie — le fait passer au
+rouge en deux lignes.

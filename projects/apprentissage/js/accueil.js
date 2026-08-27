@@ -41,6 +41,59 @@
       + ' transform="rotate(-90 33 33)"/></svg>';
   }
 
+  /* L'ANNEAU DU JOUR.
+     A ZERO, ON NE DESSINE PAS L'ARC DU TOUT. Un trait arrondi de longueur
+     nulle laisse un point dore au sommet du cercle, qui ressemble a une
+     salissure et non a un depart. */
+  function anneauDuJour(fait, but) {
+    var c = 2 * Math.PI * 26;
+    var pris = but ? Math.max(0, Math.min(1, fait / but)) * c : 0;
+    var h = '<svg width="62" height="62" viewBox="0 0 62 62" aria-hidden="true">'
+      + '<circle cx="31" cy="31" r="26" fill="none" stroke="#E6DFD1" stroke-width="5"/>';
+    if (pris > 0.5) {
+      h += '<circle cx="31" cy="31" r="26" fill="none" stroke="'
+        + (fait >= but ? '#C9A227' : '#2F7A52') + '" stroke-width="5"'
+        + ' stroke-linecap="round" stroke-dasharray="' + pris.toFixed(1) + ' '
+        + c.toFixed(1) + '" transform="rotate(-90 31 31)"/>';
+    }
+    return h + '</svg>';
+  }
+
+  /* CE QU'ON ECRIT AUTOUR DU COMPTEUR.
+     Un compteur est un compteur, pas un jugement : il compte des questions
+     repondues, il ne dit rien de la pratique de personne. On enonce donc le
+     FAIT, sec et exact, et jamais un merite. */
+  function noteDuJour(fait, but) {
+    if (fait >= but) { return 'Tu peux continuer autant que tu veux.'; }
+    if (fait === 0) { return but + ' questions, environ trois minutes.'; }
+    return 'Encore ' + (but - fait) + ' question' + (but - fait > 1 ? 's' : '') + '.';
+  }
+
+  /* LA SERIE, ET LE FILET.
+     Une serie qui repart de zero repart SANS UN MOT : le message est une
+     invitation, jamais un constat de perte. Et le jour de grace ne s'annonce
+     qu'APRES avoir servi — afficher un stock disponible en ferait une
+     permission, et la permission un calcul. */
+  function phraseDeSerie(s) {
+    var h = '';
+    if (s.sauvee) {
+      h += '<span class="jour-grace">Ton jour de grâce a gardé ta série.</span>';
+    }
+    var mot = s.serie > 0
+      ? s.serie + ' jour' + (s.serie > 1 ? 's' : '') + " d'affilée"
+      : 'Ta série commence aujourd\'hui';
+    if (s.serie > 0 && s.serie === s.record && s.record > 1) {
+      mot += ' — c\'est ton record';
+    } else if (s.serie === 0 && s.record > 1) {
+      mot = 'Ton record est de ' + s.record + ' jours';
+    }
+    return h + '<span class="jour-serie" data-vive="' + (s.serie > 0 ? 'oui' : 'non') + '">'
+      + '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true">'
+      + '<path d="M12 1.6l2.7 5 5.6-2.5-2.5 5.6 5 2.7-5 2.7 2.5 5.6-5.6-2.5-2.7 5-2.7-5-5.6 2.5'
+      + '2.5-5.6-5-2.7 5-2.7-2.5-5.6 5.6 2.5z" stroke="currentColor" stroke-width="1.4" '
+      + 'stroke-linejoin="round"/></svg>' + mot + '</span>';
+  }
+
   function barre(pc) {
     // Sous 10 %, un trait vert de trois pixels ne se voit pas. On le passe en
     // or : afficher « 8 % » a cote d'une barre invisible revient a dire zero.
@@ -55,23 +108,26 @@
     var sections = res[0];
     var d = res[1];
 
-    // --- Les trois chiffres --------------------------------------------
-    var justes = 0;
-    for (var id in d.questions) {
-      if (Object.prototype.hasOwnProperty.call(d.questions, id)) {
-        justes += d.questions[id].justes || 0;
-      }
-    }
-    var ouvertes = {};
-    for (var i = 0; i < d.sessions.length; i++) { ouvertes[d.sessions[i].section] = true; }
-    var nbOuvertes = 0;
-    for (var s in ouvertes) { if (Object.prototype.hasOwnProperty.call(ouvertes, s)) { nbOuvertes += 1; } }
+    // --- L'ANNEAU DU JOUR ----------------------------------------------
+    // L'objectif vaut DIX QUESTIONS, juste ou non. On mesure le travail fait,
+    // pas la reussite : un objectif qu'on peut echouer est un objectif qu'on
+    // n'affronte plus, et les jours de fatigue sont exactement ceux ou la
+    // serie a besoin qu'on ouvre le site.
+    var jour = M.jourDeAujourdhui();
+    var fait = Math.min(M.MINI_POUR_LE_JOUR, (d.parJour && d.parJour[jour]) || 0);
+    var but = M.MINI_POUR_LE_JOUR;
+    var serie = M.serieComplete(d, jour);
 
-    var c = document.getElementById('chiffres');
-    c.innerHTML =
-      '<div class="chiffre"><b>' + M.serieDeJours(d, M.jourDeAujourdhui()) + '</b><span>jours de suite</span></div>'
-      + '<div class="chiffre"><b>' + justes + '</b><span>bonnes réponses</span></div>'
-      + '<div class="chiffre"><b>' + nbOuvertes + '/' + sections.length + '</b><span>sections ouvertes</span></div>';
+    document.getElementById('zone-jour').innerHTML =
+      '<div class="jour">'
+      + '<div class="jour-anneau">' + anneauDuJour(fait, but)
+      + '<div class="jour-anneau-txt">' + fait + '/' + but + '</div></div>'
+      + '<div class="jour-quoi">'
+      + '<span class="jour-titre">' + (fait >= but ? 'Objectif du jour atteint'
+                                                   : "L'objectif du jour") + '</span>'
+      + '<span class="jour-note">' + noteDuJour(fait, but) + '</span>'
+      + phraseDeSerie(serie)
+      + '</div></div>';
 
     // --- La carte de reprise, seulement si un QCM est vraiment en cours -
     if (d.reprise && d.reprise.ids && d.reprise.ids.length) {
@@ -91,71 +147,24 @@
         + '</div></a>';
     }
 
-    // --- « Continuer » : les 3 dernieres sections jouees ----------------
-    var vues = [], dedans = {};
-    for (var j = d.sessions.length - 1; j >= 0 && vues.length < 3; j--) {
-      var sl = d.sessions[j].section;
-      if (dedans[sl]) { continue; }
-      dedans[sl] = true;
-      for (var m = 0; m < sections.length; m++) {
-        if (sections[m].slug === sl) { vues.push(sections[m]); }
-      }
-    }
-    var zone = document.getElementById('continuer');
-    if (!vues.length) {
-      /* PREMIERE VISITE : ON PROPOSE, ON NE LAISSE PAS DEVANT LE VIDE.
-         Il y avait la une phrase grise — « Tu n'as pas encore joue » — et,
-         dessous, sept cents pixels de rien jusqu'a la barre de navigation.
-         C'est le premier ecran que voit quelqu'un qui arrive : il doit
-         donner envie d'appuyer quelque part, pas ressembler a une page qui
-         n'a pas fini de charger.
-
-         Les trois sections proposees sont les trois PREMIERES du parcours,
-         dans l'ordre du sommaire. Cet ordre n'est pas de moi : il est dans
-         data/sections.json depuis le debut, et il va du plus general au plus
-         precis. Autant s'en servir plutot que d'inventer un classement. */
-      var debut = [];
-      for (var t = 0; t < sections.length && debut.length < 3; t++) {
-        if (sections[t].quoi) { debut.push(sections[t]); }
-      }
-      var hd = '<div class="depart">'
-        + '<span class="depart-rosace" data-rosace="12" data-ratio="0.62"'
-        + ' data-taille="180" data-couleur="#0F5132" data-trait="1" aria-hidden="true"></span>'
-        + '<p class="depart-mot">Rien de commencé pour l\'instant.'
-        + ' Voilà par où beaucoup démarrent&nbsp;:</p>'
-        + '<div class="pile-9">';
-      for (var u = 0; u < debut.length; u++) {
-        hd += '<a class="ligne" href="section/' + ech(debut[u].slug) + '">'
-          + '<span class="rond">' + icone(debut[u].icone, 20) + '</span>'
-          + '<span class="milieu"><span class="nom">' + ech(debut[u].nom) + '</span>'
-          + '<span class="quoi">' + ech(debut[u].quoi) + '</span></span>'
-          + '<span class="pc" aria-hidden="true">&rarr;</span></a>';
-      }
-      zone.innerHTML = hd + '</div></div>';
-      if (window.IPAP_GEO) { window.IPAP_GEO.poserMotifs(zone); }
-      return;
-    }
-    // La maitrise a besoin des identifiants de chaque section : on ne la
-    // devine pas, on charge la banque.
-    Promise.all(vues.map(function (sec) {
+    // --- LE CHEMIN ------------------------------------------------------
+    // Les douze sections dans l'ordre CONSEILLE — celui de data/sections.json,
+    // du plus general au plus precis. Une page qui montrerait une etape faite
+    // apres deux etapes a venir donnerait un chemin troue : rien ne serait
+    // faux, et ca suffirait a detruire la lecture du trajet.
+    var ordre = sections.slice().sort(function (a, b) { return (a.num || 99) - (b.num || 99); });
+    Promise.all(ordre.map(function (sec) {
       return fetch('data/questions/' + sec.slug + '.json')
         .then(function (x) { return x.ok ? x.json() : []; })
-        .then(function (b) { return { sec: sec, ids: b.map(function (q) { return q.id; }) }; })
-        .catch(function () { return { sec: sec, ids: [] }; });
+        .then(function (b) { return { ids: b.map(function (q) { return q.id; }) }; })
+        ['catch'](function () { return { ids: [] }; });
     })).then(function (lots) {
-      var h = '';
-      for (var i = 0; i < lots.length; i++) {
-        var pc = M.maitrise(d, lots[i].ids);
-        h += '<a class="ligne" href="reglages.html?section=' + ech(lots[i].sec.slug) + '">'
-          + '<span class="rond">' + icone(lots[i].sec.icone, 20) + '</span>'
-          + '<span class="milieu"><span class="nom">' + ech(lots[i].sec.nom) + '</span>'
-          + barre(pc) + '</span>'
-          + '<span class="pc">' + pc + '%</span></a>';
+      if (window.IPAP_CHEMIN) {
+        window.IPAP_CHEMIN.poser(document.getElementById('chemin'), ordre, lots, d);
       }
-      zone.innerHTML = h;
     });
   }).catch(function () {
-    document.getElementById('continuer').innerHTML =
+    document.getElementById('chemin').innerHTML =
       '<p style="font-size:14px;color:var(--texte-2)">Les sections n\'ont pas pu être chargées.</p>';
   });
 }());
