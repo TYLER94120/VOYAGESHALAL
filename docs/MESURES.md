@@ -647,6 +647,42 @@ la réparation.
 Décidée le 22 août. Chaque site travaille son référencement naturel une nuit
 sur trois, dans la fenêtre 2 h – 5 h, sur une session neuve à chaque fois.
 
+## ✅ TROIS RONDES, QUOTIDIENNES DEPUIS LE 27 AOÛT
+
+Créées le 24 août à raison d'une nuit sur trois, passées en **quotidien** le
+27 à la demande de Mohamed.
+
+| Routine | `trigger_id` | Heure FR | Session liée |
+|---|---|---|---|
+| **VoyagesHalal + GoHalalTravel** | `trig_016xNjYpqaYeS9toxevrHrvL` | 02:07 | `session_01CLJRHQ3FE7inhftPyMCapY` |
+| **HalalGPT** | `trig_01WN2cGr2is6Pm5Lfu2fkrCx` | 02:37 | `session_015u2Dt2UJcCzkhqFQ9h6Wn4` |
+| **IslamPasAPas** | `trig_01TUruQc3gs7d9KmQPYoGrEA` | 02:22 | `session_015zQR5JMLb16d6zc2DFh681` |
+
+⚠️ Deux Routines ont dû être **supprimées et recréées** : `update_trigger`
+refuse de modifier le prompt d'une Routine liée à une session qui n'est pas la
+sienne. Seule celle de HalalGPT a pu être éditée en place. Si un prompt doit
+changer sur les deux autres, c'est delete + create, et l'historique de runs
+est perdu.
+
+### Ce que le passage au quotidien a ajouté aux prompts
+
+Le risque d'une cadence quotidienne est connu et nommé dans chaque prompt :
+**une ronde par jour ne veut pas dire une page par jour.** C'est écrit en tête,
+avec la raison — une page publiée pour remplir un créneau est une ferme de
+contenu, et Google sanctionne exactement ça. La plupart des nuits, le bon
+travail est petit : deux titres, un maillage, une page enrichie.
+
+Et un garde-fou nouveau, tiré de la question de Mohamed du 27 août :
+
+> ⛔ **NE JUGE JAMAIS SUR UN CHIFFRE QUOTIDIEN.** À 4 clics par jour, la
+> variation entre 3 et 16 est du bruit, pas un signal. Le signal est dans les
+> fenêtres de 7 et 28 jours, et dans le détail par requête.
+
+Les prompts portent désormais **l'ordre des leviers**, du rendement prouvé au
+spéculatif : (1) les titres des pages en position 5-15 — seul levier à effet
+immédiat, prouvé le 20 août ; (2) une page précise, et seulement si elle
+apprend quelque chose ; (3) rien sur le desktop ni sur les requêtes larges.
+
 ## ✅ CRÉÉES LE 24 AOÛT — trois, pas cinq
 
 | Routine | `trigger_id` | Cron (UTC) | Heure FR | Session liée |
