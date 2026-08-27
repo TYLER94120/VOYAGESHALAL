@@ -59,7 +59,11 @@ export function middleware(req: NextRequest) {
     // repart plus de notre serveur à chaque visite.
     // (les listes /destinations et /destinations/pays/... restent hors de
     // ce chantier : une chose à la fois, mesurée.)
-    if (/^\/destinations\/[^/]+$/.test(pathname) && !pathname.startsWith('/destinations/pays')) {
+    // ÉTAPE 3 (25 août) : les 354 pages d'hôtels rejoignent les fiches de
+    // ville. Mesuré par l'audit des 1 641 pages — c'était le plus gros
+    // poste restant à la charge du serveur, 93 Mo par passage complet des
+    // robots sur les deux domaines.
+    if (/^\/(destinations|hotels)\/[^/]+$/.test(pathname) && !pathname.startsWith('/destinations/pays')) {
       const url = req.nextUrl.clone()
       url.pathname = `/en${pathname}`
       return decorate(NextResponse.rewrite(url))

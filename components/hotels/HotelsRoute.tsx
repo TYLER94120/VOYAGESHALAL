@@ -5,7 +5,7 @@ import { readFileSync } from 'fs'
 import path from 'path'
 import type { Metadata } from 'next'
 import type { Ville } from '@/lib/villeTypes'
-import { getDomainSEO, FR_URL, EN_URL } from '@/lib/domain'
+import { FR_URL, EN_URL } from '@/lib/domain'
 import { GUIDES_FR_TO_EN } from '@/lib/slugs'
 import { dedupeHotels, noteOf, priceRank } from '@/lib/hotelFilter'
 import HotelCTA from '@/components/affiliate/HotelCTA'
@@ -17,14 +17,26 @@ import cityCoords from '@/lib/cityCoords.json'
 // (« hotel halal marrakech », « hotel islamique dubai »…). SSR indexable,
 // réutilise les hôtels des fiches villes + le tri de lib/hotelFilter.
 // Jamais « certifié » : on parle d'hôtels « sans alcool / halal-friendly ».
+//
+// 🗄 CHANTIER CACHE, ÉTAPE 3 (25 août). Mesuré par l'audit des 1 641 pages :
+// cette famille est le plus gros poste restant à la charge du serveur —
+// 354 villes × 2 domaines = 93 Mo à chaque passage complet des robots,
+// dix-huit fois plus que /destinations. Elle était classée après lui parce
+// qu'on comparait le poids d'UNE page (135 Ko contre 549) au lieu du poids
+// de la famille.
+//
+// Même correction que la fiche de ville : la langue vient de la ROUTE, plus
+// de l'en-tête « Host ». Ce fichier ne lit donc rien de la requête, et les
+// deux versions sont fabriquées à la construction.
+//   /hotels/marrakech      → français  (app/(fr))
+//   /en/hotels/marrakech   → anglais   (chemin INTERNE ; l'URL publique
+//                            reste gohalaltravel.com/hotels/marrakech)
 
-export const dynamicParams = false
-
-interface Props { params: Promise<{ ville: string }> }
+interface Props { ville: string; en: boolean }
 interface CityRef { slug: string; nom: string; pays?: string }
 const CITIES = cityCoords as CityRef[]
 
-export function generateStaticParams() {
+export function paramsHotels() {
   return CITIES.map((c) => ({ ville: c.slug }))
 }
 
@@ -43,10 +55,10 @@ function sortedHotels(ville: any) {
   })
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { ville: slug } = await params
+export async function metadataHotels({ ville: slug, en }: Props): Promise<Metadata> {
   const ville = getVille(slug)
-  const { isEN, siteUrl } = await getDomainSEO()
+  const isEN = en
+  const siteUrl = en ? EN_URL : FR_URL
   if (!ville) return { title: isEN ? 'Halal hotels' : 'Hôtels halal' }
   const n = (ville.hotels?.length ?? 0)
   // 91 caracteres sur les 354 pages hotels : Google coupait tout apres
@@ -93,11 +105,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
-export default async function HotelsVillePage({ params }: Props) {
-  const { ville: slug } = await params
+export default function HotelsRoute({ ville: slug, en }: Props) {
   const ville = getVille(slug)
   if (!ville) notFound()
-  const { isEN, siteUrl } = await getDomainSEO()
+  const isEN = en
+  const siteUrl = en ? EN_URL : FR_URL
   const hotels = sortedHotels(ville)
 
   const itemList = {
@@ -109,7 +121,24 @@ export default async function HotelsVillePage({ params }: Props) {
       item: {
         '@type': 'Hotel', name: h.nom,
         ...(h.adresse ? { address: { '@type': 'PostalAddress', streetAddress: h.adresse, addressLocality: ville.nom } } : {}),
-        ...(noteOf(h) ? { aggregateRating: { '@type': 'AggregateRating', ratingValue: noteOf(h), bestRating: 5, ratingCount: h.avis_count ?? 20 } } : {}),
+        // 🔴 JAMAIS D'AVIS INVENTÉS. Cette ligne écrivait
+        //     ratingCount: h.avis_count ?? 20
+        // c'est-à-dire « noté par 20 personnes » pour tout hôtel dont on
+        // ignore le nombre d'avis. Mesuré le 25 août : sur 33 322 hôtels de
+        // la base, AUCUN ne porte de nombre d'avis réel — les 3 532 qui ont
+        // une note annonçaient donc tous 20 avis imaginaires à Google, en
+        // données structurées, sur les 354 pages × 2 domaines.
+        //
+        // Un avis inventé n'est pas une approximation : c'est une preuve
+        // fabriquée, exactement ce que la règle « vérifié / écarté / non
+        // vérifié » interdit — et Google sanctionne les données structurées
+        // qui ne correspondent à rien sur la page.
+        //
+        // La note seule ne peut pas être publiée : le format exige un
+        // nombre d'avis. Sans compte réel, on ne déclare rien.
+        ...(noteOf(h) && Number(h.avis_count) > 0
+          ? { aggregateRating: { '@type': 'AggregateRating', ratingValue: noteOf(h), bestRating: 5, ratingCount: Number(h.avis_count) } }
+          : {}),
       },
     })),
   }

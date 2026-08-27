@@ -528,3 +528,75 @@ là, après déploiement :
 de `(dyn)`, lui donner son jumeau sous `app/en`, vérifier les deux langues.
 
 ⏳ Échéance inchangée : **23 septembre**, pour redescendre en Hobby.
+
+---
+
+# 🏨 25 AOÛT — ÉTAPE 3 : LES HÔTELS, ET 3 532 AVIS QUI N'EXISTAIENT PAS
+
+## 1. L'audit a corrigé l'ordre des priorités
+
+Audit complet des **1 641 URL** des deux sitemaps, page par page, sur le
+serveur de production. Il a montré que ma liste de l'étape 3 était mal
+classée : je rangeais par poids d'UNE page (`/destinations` 549 Ko contre
+135 Ko pour un hôtel) au lieu du poids de la FAMILLE.
+
+| famille | pages | par passage complet des robots |
+|---|---|---|
+| `/hotels/[ville]` | 354 × 2 | **93 Mo** |
+| `/destinations` + `/destinations/pays` | 40 | 5 Mo |
+| `/blog` | 77 | 7 Mo |
+| accueil anglais | 1 | 0,5 Mo |
+
+Les hôtels pesaient **dix-huit fois** `/destinations`. Migrés en premier.
+
+## 2. 🔴 33 322 hôtels annonçaient une note « notée par 20 personnes »
+
+Trouvé en migrant le fichier. La page hôtels écrivait, en données
+structurées envoyées à Google :
+
+```ts
+ratingCount: h.avis_count ?? 20
+```
+
+**Mesuré sur la base entière : AUCUN des 33 322 hôtels ne porte de nombre
+d'avis réel.** Les 3 532 qui ont une note annonçaient donc tous 20 avis
+imaginaires — sur 354 pages × 2 domaines.
+
+⚠️ Le relevé du 24 août note ce défaut comme « retiré du code ». **Il ne
+l'avait pas été sur ce dépôt** : la correction concernait un autre site.
+Une note portée dans le carnet comme réglée, et qui ne l'est pas, est pire
+qu'une note absente — c'est ce qui l'a laissée vivre un jour de plus.
+
+Corrigé : la note n'est publiée que si un nombre d'avis réel existe. Comme
+aucun n'existe aujourd'hui, plus aucune page hôtel n'envoie
+d'`aggregateRating`. Vérifié sur les 708 pages construites : **0
+`ratingCount`**. Un avis inventé n'est pas une approximation, c'est une
+preuve fabriquée — et Google sanctionne les données structurées qui ne
+correspondent à rien sur la page.
+
+## 3. Le résultat des trois étapes réunies
+
+Mesuré deux fois avec le même instrument, avant et après :
+
+| | avant | après |
+|---|---|---|
+| pages HTML fabriquées d'avance | 1 | **1 418** |
+| pages à la charge du serveur | 933 | **225** |
+| **par passage complet des robots** | **112 Mo** | **20,7 Mo** |
+
+**−82 %.** Le plateau mesuré le 23 août était de ~300 Mo/jour pour un
+plafond Hobby de 10 Go/mois.
+
+## 4. Ce qui reste, et qui décide de la suite
+
+`/blog` (7 Mo) · `/destinations` et ses pages pays (5 Mo) · `/guides`
+(4 Mo) · `/halal-questions` (1,9 Mo) · l'accueil anglais (0,5 Mo).
+
+Aucun de ces postes ne justifie à lui seul une migration : ensemble ils
+font 20 Mo par passage, contre 93 Mo pour les seuls hôtels. **La prochaine
+mesure n'est pas dans le code, elle est dans Vercel** : la courbe d'Origin
+Transfer doit décrocher dans les jours qui suivent le déploiement. Si elle
+ne décroche pas, le volume vient d'ailleurs que des pages, et continuer à
+migrer serait travailler à côté.
+
+⏳ Échéance inchangée : **23 septembre**, fin du cycle payé.
