@@ -3,6 +3,7 @@ import { compteurVille } from '@/lib/mosqueesOsm'
 import { conforme } from '@/lib/conformite'
 import { estLatinLisible } from '@/lib/latin.mjs'
 import { countryEn } from '@/lib/poiI18n'
+import { sansChiffreNonSource } from '@/lib/prose.mjs'
 
 // 📜 LE SOCLE — LA PAGE VILLE TELLE QUE GOOGLE LA LIT.
 //
@@ -34,8 +35,14 @@ type VilleData = any
 const MOTS_FR = /\b(certains?|certaines?|dans|les|des|touristiques?|hôtels?|quartiers?|toutes?|tous|selon|avec|pour|sur|très|plupart)\b/i
 const anglaisPropre = (s?: string) => (typeof s === 'string' && s.trim() && !MOTS_FR.test(s) ? s.trim() : undefined)
 
-const nettoyer = (s?: string) =>
-  typeof s === 'string' && s.trim() ? s.replace(/Halal Trust Score[^.]*\.\s*/gi, '').trim() : undefined
+// 27 août : ce nettoyage coupait à l'intérieur des phrases et produisait
+// « with a 9/5 » sur 172 descriptions (voir lib/prose.mjs). Le retrait se
+// fait maintenant phrase par phrase, avec le retrait des comptes non
+// sourcés — une seule porte, une seule règle.
+const nettoyer = (s?: string) => {
+  const t = sansChiffreNonSource(s)
+  return t || undefined
+}
 
 export default function SocleVille({ ville, slug, en }: { ville: VilleData; slug: string; en: boolean }) {
   const t = (fr: string, an: string) => (en ? an : fr)
@@ -75,6 +82,9 @@ export default function SocleVille({ ville, slug, en }: { ville: VilleData; slug
 
   const ouPrier = nettoyer(en ? ville.sectionOuPrier_en : ville.sectionOuPrier)
   const ouManger = nettoyer(en ? ville.sectionMangerHalal_en : ville.sectionMangerHalal)
+  // 27 août : ce chapeau portait des comptes que la fiche dément (347 sur
+  // 354 villes). Les phrases qui avancent un chiffre de lieux sont retirées
+  // — les vrais comptes sont juste en dessous, et ceux-là sont comptés.
   const chapeau = nettoyer(en ? ville.description_en : ville.description)
 
   const proches = ((ville.villes_proches as { slug?: string; nom?: string }[]) ?? [])

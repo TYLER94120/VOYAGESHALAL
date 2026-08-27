@@ -697,3 +697,78 @@ rédaction. C'est un travail de donnée, pas de texte.
 
 **L'effet des titres se lira au relevé du 1er septembre** — Google met une
 à deux semaines à recalculer l'affichage.
+
+---
+
+# 🔢 27 AOÛT — TROIS NOMBRES SUR UN ÉCRAN, UN SEUL COMPTABLE
+
+Capture de Mohamed, accueil anglais sur iPhone, panneau de La Mecque :
+
+> « Muslim travelers will find **76 halal restaurants** listed, **400
+> mosques**, real-time prayer times… »
+> « Saudi Arabia · **739 prayer places** across the city »
+
+La fiche contient **26 restaurants et 60 mosquées** ; le 739 vient
+d'OpenStreetMap. Deux des trois nombres ne sont comptables nulle part.
+
+## L'ampleur, mesurée sur toute la base
+
+**347 chiffres démentis par la fiche qui les porte, sur 354 villes.**
+« 1 mosque » à Agra (elle en a 15), « 0 mosques » à Alexandrie (60),
+« 1 halal restaurant » à Ahmedabad (16). Ces phrases éditoriales ont été
+écrites une fois et n'ont jamais suivi les données.
+
+Ce n'est pas un défaut d'affichage : ce texte est rendu par le SERVEUR dans
+le socle des **354 fiches, dans les deux langues**, et sur l'accueil
+anglais. C'est ce que Google lit. Une page dont le titre annonce 739 lieux
+de prière, le socle 400 mosquées et la FAQ 60 ne se contredit pas un peu :
+elle se disqualifie.
+
+**La règle appliquée** (`lib/prose.mjs`) : dans une phrase éditoriale, un
+compte de restaurants, de mosquées ou de lieux de prière ne s'affiche pas.
+Les vrais comptes existent déjà sur la page — titre, compteurs du socle,
+FAQ — et ceux-là sont comptés. On ne cherche pas à deviner si le chiffre du
+texte est juste : on ne peut pas le savoir, donc on ne le montre pas.
+
+## 🔴 Ce que le retrait a découvert : « with a 9/5 »
+
+Une fois les comptes retirés, le chapeau de La Mecque disait :
+
+> « Mecca … is a halal-friendly destination **with a 9/5**. »
+
+Une note de neuf sur cinq. La cause, dans le socle :
+
+```ts
+s.replace(/Halal Trust Score[^.]*\./gi, '')
+```
+
+`[^.]*` s'arrête au **premier point**. La phrase dit « …with a Halal Trust
+Score of **4.9**/5. » : ce premier point est celui du décimal. Le nettoyage
+emportait « Halal Trust Score of 4. » et laissait « with a 9/5 ».
+
+**Mesuré : 172 descriptions sur 699 ressortaient mutilées.** Le défaut était
+invisible parce qu'il était caché derrière la phrase de comptes, plus
+voyante.
+
+Corrigé : on ne découpe plus à l'intérieur d'une phrase. La clause de la
+marque abandonnée est retirée jusqu'à une ponctuation **suivie d'une
+espace** — celle qui termine vraiment une phrase, que « 4.9 » n'a pas.
+Réparer plutôt que jeter : supprimer la phrase entière aurait vidé
+**158 chapeaux sur 354**.
+
+## Au passage
+
+« Hajj : date fixe du calendrier islamique. » sur le domaine anglais →
+traduit. Deux fiches seulement portaient du français dans leur texte
+anglais.
+
+## Le résultat servi
+
+| | avant | après |
+|---|---|---|
+| accueil EN, La Mecque | « 76 halal restaurants, 400 mosques… » | « Mecca, in Saudi Arabia, is a halal-friendly destination. » |
+| socle, note | « with a 9/5 » | (retiré) |
+| nombres sur l'écran | 3, dont 2 invérifiables | 1, compté par OpenStreetMap |
+
+`scripts/test-prose.mjs` tient la règle à chaque construction, y compris le
+piège du point décimal.
