@@ -1,4 +1,6 @@
-import { descriptionSeo } from '@/lib/titre-seo'
+import { readdirSync } from 'fs'
+import path from 'path'
+import { descriptionSeo, titreSeo } from '@/lib/titre-seo'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Image from 'next/image'
@@ -28,9 +30,29 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { isEN } = await getDomainSEO()
   const nomEN = countryEn(country.name, true)
   return buildMetadata({
+    // 🔎 28 août. « Complete Guide » / « Guide Complet » : les mots que
+    // l'audit a trouvés sur 51 pages, et exactement ceux qui ont fait ZÉRO
+    // clic sur Marrakech en première page. Ils décrivent le catalogue ; le
+    // lecteur cherche une réponse.
+    //
+    // Pas de chiffre ici, volontairement : la page n'affiche que 3 ou 4
+    // villes, annoncer « 34 villes » serait une promesse qu'elle ne tient
+    // pas. Le besoin suffit.
+    //
+    // Le nom du pays vient EN TÊTE côté français : on tape « voyage halal
+    // maroc », pas « voyage halal en Maroc » — et la préposition « en »
+    // était fausse sur la moitié des pays (en Maroc, en Qatar, en Japon).
     title: isEN
-      ? `Halal Travel in ${nomEN} — Complete Guide ${new Date().getFullYear()}`
-      : `Voyage Halal en ${country.name} — Guide Complet ${new Date().getFullYear()}`,
+      ? titreSeo([
+          `Halal travel in ${nomEN}: where to pray, eat and sleep`,
+          `Halal travel in ${nomEN}: where to pray and eat`,
+          `Halal travel in ${nomEN}`,
+        ])
+      : titreSeo([
+          `Voyage halal ${country.name} : où prier, manger et dormir`,
+          `Voyage halal ${country.name} : où prier et manger`,
+          `Voyage halal ${country.name}`,
+        ]),
     // La phrase d'accroche du pays est de longueur libre : collée devant, elle
     // faisait dépasser 27 pages. Elle saute quand elle ne tient pas.
     description: isEN
@@ -68,6 +90,28 @@ function InfoBadge({ label, value, color }: { label: string; value: string; colo
   )
 }
 
+/** Une ville citée sur la page pays. Elle n'est cliquable que si sa fiche
+ *  existe : « un bouton sans destination n'existe pas ». */
+function CarteVille({ city, en, aUneFiche }: {
+  city: { name: string; slug: string; description: string }
+  en: boolean
+  aUneFiche: boolean
+}) {
+  const corps = (
+    <>
+      <h3 className="font-bold text-gray-900 mb-2">{city.name}</h3>
+      {!en && <p className="text-sm text-gray-500 leading-relaxed">{city.description}</p>}
+    </>
+  )
+  if (!aUneFiche) return corps
+  return (
+    <Link href={`/destinations/${city.slug}`} className="group">
+      {corps}
+      <span style={{ color: '#c9a870' }} className="text-xs font-medium mt-3 block">{en ? 'See the guide →' : 'Voir le guide →'}</span>
+    </Link>
+  )
+}
+
 export default async function CountryPage({ params }: Props) {
   const { pays } = await params
   const country = getCountryBySlug(pays)
@@ -93,6 +137,14 @@ export default async function CountryPage({ params }: Props) {
     .filter((c) => (c.pays || '').toLowerCase() === country.name.toLowerCase())
     .sort((a, b) => a.nom.localeCompare(b.nom))
   const paysContent = relatedForCountry(en ? countryEn(country.name, true) : country.name, 6, en ? 'en' : 'fr')
+
+  // Les fiches de ville réellement présentes : la page ne peut pas lier ce
+  // qui n'existe pas (`dynamicParams = false` rendrait un 404).
+  const fichesExistantes = new Set(
+    readdirSync(path.join(process.cwd(), 'data', 'villes'))
+      .filter((f) => f.endsWith('.json'))
+      .map((f) => f.replace('.json', '')),
+  )
 
   const alcoholColor = country.alcoholPolicy === 'Interdit' ? '#16a34a' : country.alcoholPolicy === 'Rare' ? '#ca8a04' : '#6b7280'
   const foodColor = country.halalFoodAvailability === 'Excellent' ? '#16a34a' : country.halalFoodAvailability === 'Bon' ? '#ca8a04' : '#dc2626'
@@ -188,11 +240,16 @@ export default async function CountryPage({ params }: Props) {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {country.mainCities.map((city) => (
                   <div key={city.slug} className="bg-white rounded-2xl p-5 border border-gray-100 hover:border-[#c9a870]/40 hover:shadow-sm transition-all">
-                    <Link href={`/destinations/${city.slug}`} className="group">
-                      <h3 className="font-bold text-gray-900 mb-2 group-hover:text-[#1a3a2a] transition-colors">{city.name}</h3>
-                      {!en && <p className="text-sm text-gray-500 leading-relaxed">{city.description}</p>}
-                      <span style={{ color: '#c9a870' }} className="text-xs font-medium mt-3 block">{en ? 'See the guide →' : 'Voir le guide →'}</span>
-                    </Link>
+                    {/* 🔗 « Un bouton sans destination n'existe pas. » Mesuré le
+                        28 août : 21 des 70 villes citées sur les pages pays
+                        renvoyaient vers une fiche inexistante — Pétra, Wadi Rum,
+                        les trois villes des Maldives, les trois de Zanzibar…
+                        `dynamicParams = false` sur la fiche de ville : ces
+                        liens rendaient un 404. Le nom et le texte restent (ce
+                        sont de vraies villes) ; seul le lien disparaît quand
+                        la fiche n'existe pas. Il reviendra tout seul le jour
+                        où elle sera écrite. */}
+                    <CarteVille city={city} en={en} aUneFiche={fichesExistantes.has(city.slug)} />
                   </div>
                 ))}
               </div>

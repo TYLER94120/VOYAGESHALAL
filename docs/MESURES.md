@@ -772,3 +772,71 @@ anglais.
 
 `scripts/test-prose.mjs` tient la règle à chaque construction, y compris le
 piège du point décimal.
+
+---
+
+# 🌍 28 AOÛT — LES PAGES PAYS : 21 LIENS MORTS ET LES DERNIERS « GUIDE COMPLET »
+
+Ronde quotidienne. Rien de neuf publié — les 19 pages pays × 2 domaines
+étaient passées à côté des deux passes précédentes, et elles portaient les
+deux défauts qu'on croyait réglés.
+
+## 1. « Un bouton sans destination n'existe pas » — 21 fois
+
+Mesuré : **21 des 70 villes citées sur les pages pays renvoyaient vers une
+fiche inexistante.** Pétra, Wadi Rum, les trois villes des Maldives, les
+trois de Zanzibar, Krabi, Koh Lanta, Berat… La fiche de ville a
+`dynamicParams = false` : chacun de ces liens rendait un **404**.
+
+L'audit du 25 août ne les avait pas vus : il échantillonnait six pages par
+famille, et ces pays n'en faisaient pas partie. Un échantillon trouve les
+défauts répandus, pas les défauts localisés.
+
+- **3 n'étaient que des identifiants mal orthographiés** — `riyad` →
+  `riyadh`, `charm-el-cheikh` → `sharm-el-sheikh`, `edinburgh` →
+  `edimbourg`. Réparés : la fiche existait, le lien pointait à côté.
+- **18 n'ont pas de fiche du tout.** Leur nom et leur description restent —
+  ce sont de vraies villes, le texte est utile — mais le lien disparaît
+  tant que la fiche n'existe pas. Il reviendra tout seul le jour où elle
+  sera écrite : la page lit les fiches réellement présentes, elle ne porte
+  pas une liste figée.
+
+**Vérifié : 350 liens de ville testés sur les 19 pages × 2 domaines, 0 mort.**
+
+## 2. Les derniers « guide complet » du site
+
+| | avant | après |
+|---|---|---|
+| FR | Voyage Halal en Maroc — **Guide Complet** 2026 | Voyage halal Maroc : où prier, manger et dormir |
+| EN | Halal Travel in Türkiye — **Complete Guide** 2026 | Halal travel in Türkiye: where to pray, eat and sleep |
+
+Ce sont exactement les mots qui ont fait **zéro clic sur Marrakech en
+première page** pendant trois mois. Ils étaient restés ici parce qu'ils
+viennent d'un **gabarit** et non d'un fichier de titres : la vérification du
+20 août lisait quatre fichiers, pas les gabarits.
+
+Deux décisions à noter :
+
+- **Pas de chiffre dans ces titres, volontairement.** La page n'affiche que
+  3 ou 4 villes ; annoncer « 34 villes » (ce que contient la base pour le
+  Maroc) serait une promesse qu'elle ne tient pas. Le besoin suffit.
+- **Le nom du pays passe en tête côté français.** On tape « voyage halal
+  maroc », pas « voyage halal en Maroc » — et la préposition « en » était
+  fausse sur la moitié des pays (en Maroc, en Qatar, en Japon, en
+  Royaume-Uni). Le défaut disparaît en même temps.
+
+Tous les titres servis font 47 à 59 caractères, vérifiés sur les deux
+domaines.
+
+## 3. Ce que la ronde n'a pas fait
+
+**Aucune page neuve** — et la cible n° 1 du brief (les titres anglais de
+Marrakech, Almaty, Amsterdam) **était déjà livrée le 21 août**, servie et
+vérifiée le 25. La réécrire aurait été du brassage.
+
+Le brief demandait aussi de relancer Mohamed sur la stratégie de cache :
+**c'est fait et en production depuis le 27 au soir** — 1 418 pages
+fabriquées d'avance, 112 Mo → 20,7 Mo par passage de robot. Reste à lire la
+courbe d'Origin Transfer dans les jours qui viennent.
+
+`scripts/test-pays.mjs` tient les deux règles à chaque construction.
