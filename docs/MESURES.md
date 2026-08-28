@@ -543,6 +543,85 @@ clic dépend des titres et se règle en heures.
 
 ---
 
+# 💀 23-28 AOÛT — halalgpt a disparu du DNS pendant CINQ JOURS
+
+**Le site le plus prometteur de l'empire est tombé à zéro impression du 23 au
+28 août, et personne ne l'a vu pendant cinq jours.**
+
+## La cause, prouvée deux fois
+
+`halalgpt.fr` — l'adresse **canonique**, celle que Google a indexée, celle qui
+figure dans chaque ligne du sitemap — **n'avait plus d'enregistrement DNS**.
+
+| Vérification | Résultat |
+|---|---|
+| Zone OVH, 28 août | 9 enregistrements, **aucun `A` pour `@`** |
+| Résolution depuis le conteneur | `halalgpt.fr` → **AUCUN ENREGISTREMENT** |
+| Le 23 août au matin | `halalgpt.fr` → 216.198.79.1 (résolvait encore) |
+
+L'enregistrement a disparu pendant la manipulation du 23 au soir — celle où
+l'on ajoutait un `A` pour `www` afin de faire taire une alerte Vercel.
+
+**Résultat : Google ne pouvait atteindre AUCUNE page.** D'où zéro impression du
+jour au lendemain, et aucune reprise. Ce n'était ni un problème de contenu, ni
+un problème de classement, ni une pénalité.
+
+## ⚠️ La leçon la plus chère : l'instrument a menti
+
+Le 28 août, le **test en direct de Search Console** sur `https://halalgpt.fr/`
+a répondu :
+
+> ✅ « Google a accès à cette URL » · « La page peut être indexée »
+
+**Alors que le domaine ne résolvait pas.** Cette réponse a écarté la bonne
+piste et fait perdre plusieurs heures.
+
+➡️ **Devant un effondrement, résoudre le DNS AVANT toute chose.** Une commande,
+deux secondes, aucune interprétation possible :
+
+```bash
+getent hosts mon-domaine.fr     # ou dig +short mon-domaine.fr
+```
+
+Search Console, le code, les rapports d'indexation : tout ça vient après. Ils
+décrivent ce que Google *croit*, pas ce qui *existe*.
+
+## Le second défaut, et le piège technique à retenir
+
+`www.halalgpt.fr` affichait **« Failed To Generate Cert »** dans Vercel.
+Cause : on lui avait créé un enregistrement **`A`**, alors que **Vercel exige
+un `CNAME` pour un sous-domaine** — vers une cible propre au projet
+(`aa6a18ce96688f26.vercel-dns-017.com.` ici). Sans le bon type
+d'enregistrement, Vercel ne peut pas valider la propriété et n'émet pas de
+certificat. Le `www` renvoyait donc « Votre connexion n'est pas privée ».
+
+📌 **Règle : ne jamais deviner un enregistrement DNS Vercel en copiant un
+domaine voisin.** Le tableau de bord donne le type ET la valeur exacts, par
+domaine. C'est cette copie approximative qui a tout déclenché.
+
+## L'état après réparation, 28 août
+
+```
+halalgpt.fr       →  216.150.1.1      ✅ apex rétabli
+www.halalgpt.fr   →  216.150.1.193    ✅ CNAME actif via Vercel
+```
+
+Site vérifié en ligne par Mohamed. Reste à faire : renvoyer le sitemap dans
+Search Console — c'est ce qui fait repasser Google sur les **222 fiches**, et
+non seulement sur l'accueil.
+
+## Trois hypothèses fausses avant la bonne — pour mémoire
+
+1. **« Données incomplètes »** (24 août) — écartée par la fenêtre 28 jours.
+2. **« Le site n'est jamais revenu après la panne Vercel »** — écartée par
+   Mohamed, qui avait vérifié le 23 au soir.
+3. **« Signal de qualité, contenu à l'échelle »** — écartée : aucune action
+   manuelle, aucune notification, et la cause était mécanique.
+
+Aucune de ces trois n'aurait survécu à trente secondes de résolution DNS.
+
+---
+
 # 🌐 LA CARTE DNS DE L'EMPIRE — relevée le 22 août
 
 | Domaine | apex | www | Hébergeur |
