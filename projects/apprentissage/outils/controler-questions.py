@@ -165,6 +165,17 @@ def nu(s):
     return re.sub(r'[^a-z0-9ء-ي]+', ' ', s.lower()).strip()
 
 
+# On reutilise le generateur plutot que de recopier sa logique : deux copies
+# d'une meme regle divergent, et c'est alors le controle qui a tort sans
+# qu'on s'en apercoive.
+import importlib.util as _iu
+_spec = _iu.spec_from_file_location(
+    'claude_q', pathlib.Path(__file__).resolve().parent / 'faire-questions-claude.py')
+CLAUDE = _iu.module_from_spec(_spec)
+_spec.loader.exec_module(CLAUDE)
+FICHE = CLAUDE.fiche()
+
+
 def main():
     ar = json.loads((RACINE / 'outils' / 'coran' / 'ara-quransimple.json')
                     .read_text(encoding='utf-8'))['quran']
@@ -188,6 +199,7 @@ def main():
     surlignes = 0
     verifiesVocab = 0
     pratiques = 0
+    faits_vus = 0
     nonVerifies = 0
 
     for f in fichiers:
@@ -217,6 +229,39 @@ def main():
             if q.get('niveau') not in (1, 2, 3):
                 fautes.append('%s : niveau %r, attendu 1, 2 ou 3 — relancer '
                               'classer-niveaux.py' % (ou, q.get('niveau')))
+
+            # LES QUESTIONS DE FAIT SE REVERIFIENT DEPUIS LE CORPUS.
+            # Elles ne citent aucun verset : ce qu'elles affirment, ce sont des
+            # comptages — combien de fois un mot revient, combien de versets
+            # compte une sourate. On recalcule la fiche et on refait la MEME
+            # verification que le generateur, mais sur ce qui est publie.
+            # Sans ca, ce type de question serait le seul du site que personne
+            # ne confronte a rien.
+            if q.get('type') == 'fait':
+                faits_vus += 1
+                meta = q.get('faits') or {}
+                if not meta.get('bonne'):
+                    fautes.append('%s : question de fait sans ses cles — elle ne '
+                                  'peut pas etre reverifiee' % ou)
+                    continue
+                mauvais = CLAUDE.valider([{
+                    'question': q['question'], 'forme': meta.get('forme'),
+                    'bonne': meta['bonne'], 'leurres': meta.get('leurres') or [],
+                    'racine': meta.get('racine'),
+                }], FICHE)
+                for m in mauvais:
+                    fautes.append('%s : %s' % (ou, m.split(' : ', 1)[-1]))
+                # Et ce qui s'AFFICHE doit etre ce que la cle designe : une
+                # bonne reponse juste dans les donnees mais mal recopiee a
+                # l'ecran serait invisible autrement.
+                attendu = CLAUDE.etiquette(FICHE[meta['bonne']]) \
+                    if meta['bonne'] in FICHE else None
+                if attendu and q['reponses'][q['bonne']] != attendu:
+                    fautes.append('%s : la bonne reponse affichee est « %s », le '
+                                  'fait dit « %s »'
+                                  % (ou, q['reponses'][q['bonne']], attendu))
+                continue
+
 
             # --- le glyphe montre doit etre CELUI qu'on annonce --------
             # Type « calligraphie » : la seule faute possible, mais grave,
@@ -388,6 +433,8 @@ def main():
     print('  %d designent un mot du verset, %d confrontees au corpus '
           'morphologique.' % (surlignes, verifiesVocab))
     print('  %d questions de pratique, confrontees mot-cle par mot-cle.' % pratiques)
+    print('  %d questions de fait, recalculees depuis le corpus '
+          '(%d faits).' % (faits_vus, len(FICHE)))
     if fautes:
         print('\n  %d FAUTE(S) :' % len(fautes))
         for x in fautes[:25]:

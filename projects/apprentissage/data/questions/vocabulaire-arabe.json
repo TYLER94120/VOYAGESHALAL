@@ -26851,5 +26851,386 @@
   "surtitre": "Vocabulaire · retrouver un mot",
   "arabe": "إِنْ يَشَأْ يُسْكِنِ الرِّيحَ فَيَظْلَلْنَ رَوَاكِدَ عَلَىٰ ظَهْرِهِ ۚ إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِكُلِّ صَبَّارٍ شَكُورٍ",
   "niveau": 3
+ },
+ {
+  "id": "claude-423b6b83",
+  "section": "vocabulaire-arabe",
+  "theme": "Le Coran en chiffres",
+  "type": "fait",
+  "difficulte": 1,
+  "question": "Lequel de ces mots revient le plus souvent dans le Coran ?",
+  "reponses": [
+   "homme",
+   "jour",
+   "nuit",
+   "Coran"
+  ],
+  "bonne": 1,
+  "explication": "« Jour » est l'un des mots les plus fréquents du Coran, très loin devant « nuit ».",
+  "source": "Compté dans le texte coranique (édition ara-quransimple) et dans le lexique attesté du site.",
+  "divergence": null,
+  "surtitre": "Le Coran en chiffres",
+  "faits": {
+   "forme": "extremum",
+   "bonne": "mot:يَوْم",
+   "leurres": [
+    "mot:لَيْل",
+    "mot:قُرْءان",
+    "mot:إِنسان"
+   ]
+  },
+  "niveau": 2
+ },
+ {
+  "id": "claude-9dfad2cc",
+  "section": "vocabulaire-arabe",
+  "theme": "Le Coran en chiffres",
+  "type": "fait",
+  "difficulte": 1,
+  "question": "Un de ces mots apparaît plus de quatre cents fois. Lequel ?",
+  "reponses": [
+   "prophète",
+   "terre",
+   "biens",
+   "anges"
+  ],
+  "bonne": 1,
+  "explication": "« Terre » revient dans des centaines de versets.",
+  "source": "Compté dans le texte coranique (édition ara-quransimple) et dans le lexique attesté du site.",
+  "divergence": null,
+  "surtitre": "Le Coran en chiffres",
+  "faits": {
+   "forme": "extremum",
+   "bonne": "mot:أَرْض",
+   "leurres": [
+    "mot:مال",
+    "mot:مَلَك",
+    "mot:نَبِيّ"
+   ]
+  },
+  "niveau": 2
+ },
+ {
+  "id": "claude-b6ae53e0",
+  "section": "vocabulaire-arabe",
+  "theme": "Le Coran en chiffres",
+  "type": "fait",
+  "difficulte": 1,
+  "question": "Lequel de ces quatre mots est le plus rare dans le Coran ?",
+  "reponses": [
+   "communauté",
+   "Enfer",
+   "Diable",
+   "veau"
+  ],
+  "bonne": 3,
+  "explication": "« Veau » n'apparaît qu'une dizaine de fois ; les trois autres sont bien plus fréquents.",
+  "source": "Compté dans le texte coranique (édition ara-quransimple) et dans le lexique attesté du site.",
+  "divergence": null,
+  "surtitre": "Le Coran en chiffres",
+  "faits": {
+   "forme": "extremum",
+   "bonne": "mot:عِجْل",
+   "leurres": [
+    "mot:شَيْطان",
+    "mot:جَهَنَّم",
+    "mot:أُمَّة"
+   ]
+  },
+  "niveau": 2
+ },
+ {
+  "id": "claude-457d488e",
+  "section": "vocabulaire-arabe",
+  "theme": "Le Coran en chiffres",
+  "type": "fait",
+  "difficulte": 1,
+  "question": "Entre ces quatre-là, lequel le Coran nomme-t-il le plus ?",
+  "reponses": [
+   "Pharaon",
+   "Moïse",
+   "Abraham",
+   "Madyan"
+  ],
+  "bonne": 1,
+  "explication": "Moïse est le personnage le plus nommé du Coran.",
+  "source": "Compté dans le texte coranique (édition ara-quransimple) et dans le lexique attesté du site.",
+  "divergence": null,
+  "surtitre": "Le Coran en chiffres",
+  "faits": {
+   "forme": "extremum",
+   "bonne": "mot:مُوسَى",
+   "leurres": [
+    "mot:إِبْراهِيم",
+    "mot:فِرْعَوْن",
+    "mot:مَدْيَن"
+   ]
+  },
+  "niveau": 1
+ },
+ {
+  "id": "claude-8e857b61",
+  "section": "vocabulaire-arabe",
+  "theme": "Le Coran en chiffres",
+  "type": "fait",
+  "difficulte": 1,
+  "question": "Lequel de ces mots le Coran emploie-t-il le moins ?",
+  "reponses": [
+   "serviteurs",
+   "châtiment",
+   "injustes",
+   "mont"
+  ],
+  "bonne": 3,
+  "explication": "« Mont » est rare ; les trois autres reviennent des centaines de fois.",
+  "source": "Compté dans le texte coranique (édition ara-quransimple) et dans le lexique attesté du site.",
+  "divergence": null,
+  "surtitre": "Le Coran en chiffres",
+  "faits": {
+   "forme": "extremum",
+   "bonne": "mot:طُور",
+   "leurres": [
+    "mot:عَبْد",
+    "mot:ظالِم",
+    "mot:عَذاب"
+   ]
+  },
+  "niveau": 3
+ },
+ {
+  "id": "claude-e2e50a23",
+  "section": "vocabulaire-arabe",
+  "theme": "Le Coran en chiffres",
+  "type": "fait",
+  "difficulte": 1,
+  "question": "Lequel de ces mots revient le plus dans le Coran ?",
+  "reponses": [
+   "gens",
+   "prophète",
+   "anges",
+   "messager"
+  ],
+  "bonne": 3,
+  "explication": "« Messager » est bien plus fréquent que « prophète ».",
+  "source": "Compté dans le texte coranique (édition ara-quransimple) et dans le lexique attesté du site.",
+  "divergence": null,
+  "surtitre": "Le Coran en chiffres",
+  "faits": {
+   "forme": "extremum",
+   "bonne": "mot:رَسُول",
+   "leurres": [
+    "mot:نَبِيّ",
+    "mot:مَلَك",
+    "mot:أَصْحاب"
+   ]
+  },
+  "niveau": 2
+ },
+ {
+  "id": "claude-ccfa7d72",
+  "section": "vocabulaire-arabe",
+  "theme": "Le Coran en chiffres",
+  "type": "fait",
+  "difficulte": 1,
+  "question": "Trois de ces mots dépassent la centaine d'emplois. Lequel reste en dessous ?",
+  "reponses": [
+   "divinité",
+   "livre",
+   "nuit",
+   "croyants"
+  ],
+  "bonne": 2,
+  "explication": "« Nuit » reste sous la centaine, contrairement aux trois autres.",
+  "source": "Compté dans le texte coranique (édition ara-quransimple) et dans le lexique attesté du site.",
+  "divergence": null,
+  "surtitre": "Le Coran en chiffres",
+  "faits": {
+   "forme": "extremum",
+   "bonne": "mot:لَيْل",
+   "leurres": [
+    "mot:كِتاب",
+    "mot:مُؤْمِن",
+    "mot:إِلٰه"
+   ]
+  },
+  "niveau": 3
+ },
+ {
+  "id": "claude-eefa3efd",
+  "section": "vocabulaire-arabe",
+  "theme": "Le Coran en chiffres",
+  "type": "fait",
+  "difficulte": 1,
+  "question": "Lequel de ces mots apparaît dans le plus grand nombre de versets ?",
+  "reponses": [
+   "messager",
+   "terre",
+   "livre",
+   "châtiment"
+  ],
+  "bonne": 1,
+  "explication": "« Terre » est présent dans plus de quatre cents versets différents.",
+  "source": "Compté dans le texte coranique (édition ara-quransimple) et dans le lexique attesté du site.",
+  "divergence": null,
+  "surtitre": "Le Coran en chiffres",
+  "faits": {
+   "forme": "extremum",
+   "bonne": "mot:أَرْض",
+   "leurres": [
+    "mot:رَسُول",
+    "mot:عَذاب",
+    "mot:كِتاب"
+   ]
+  },
+  "niveau": 3
+ },
+ {
+  "id": "claude-d9e4ace1",
+  "section": "vocabulaire-arabe",
+  "theme": "Le Coran en chiffres",
+  "type": "fait",
+  "difficulte": 1,
+  "question": "Lequel de ces quatre mots le Coran emploie-t-il le plus ?",
+  "reponses": [
+   "biens",
+   "Enfer",
+   "nuit",
+   "châtiment"
+  ],
+  "bonne": 3,
+  "explication": "« Châtiment » revient bien plus souvent que « enfer », qui est pourtant le mot auquel on pense d'abord.",
+  "source": "Compté dans le texte coranique (édition ara-quransimple) et dans le lexique attesté du site.",
+  "divergence": null,
+  "surtitre": "Le Coran en chiffres",
+  "faits": {
+   "forme": "extremum",
+   "bonne": "mot:عَذاب",
+   "leurres": [
+    "mot:جَهَنَّم",
+    "mot:مال",
+    "mot:لَيْل"
+   ]
+  },
+  "niveau": 3
+ },
+ {
+  "id": "claude-e3954262",
+  "section": "vocabulaire-arabe",
+  "theme": "Les racines de l'arabe",
+  "type": "fait",
+  "difficulte": 1,
+  "question": "En arabe, les mots poussent sur des racines de trois lettres. Lequel de ces mots vient de la même racine que « injustes » ?",
+  "reponses": [
+   "mont",
+   "ténèbres",
+   "serviteurs",
+   "biens"
+  ],
+  "bonne": 1,
+  "explication": "« Ténèbres » et « injustes » viennent tous deux de la racine ظ ل م : ce qui est sombre et ce qui est injuste s'y rejoignent.",
+  "source": "Compté dans le texte coranique (édition ara-quransimple) et dans le lexique attesté du site.",
+  "divergence": null,
+  "surtitre": "Les racines de l'arabe",
+  "faits": {
+   "forme": "racine",
+   "bonne": "mot:ظُلُمَة",
+   "leurres": [
+    "mot:عَبْد",
+    "mot:مال",
+    "mot:طُور"
+   ],
+   "racine": "ظلم"
+  },
+  "niveau": 3
+ },
+ {
+  "id": "claude-bca0179b",
+  "section": "vocabulaire-arabe",
+  "theme": "Les racines de l'arabe",
+  "type": "fait",
+  "difficulte": 1,
+  "question": "Quel mot vient de la même racine que « pardonneur » ?",
+  "reponses": [
+   "nuit",
+   "veau",
+   "biens",
+   "pardon"
+  ],
+  "bonne": 3,
+  "explication": "« Pardon » et « pardonneur » viennent tous deux de la racine غ ف ر.",
+  "source": "Compté dans le texte coranique (édition ara-quransimple) et dans le lexique attesté du site.",
+  "divergence": null,
+  "surtitre": "Les racines de l'arabe",
+  "faits": {
+   "forme": "racine",
+   "bonne": "mot:مَغْفِرَة",
+   "leurres": [
+    "mot:لَيْل",
+    "mot:مال",
+    "mot:عِجْل"
+   ],
+   "racine": "غفر"
+  },
+  "niveau": 1
+ },
+ {
+  "id": "claude-b7037acc",
+  "section": "vocabulaire-arabe",
+  "theme": "Les racines de l'arabe",
+  "type": "fait",
+  "difficulte": 1,
+  "question": "Quel mot vient de la même racine que « père » ?",
+  "reponses": [
+   "livre",
+   "mont",
+   "veau",
+   "ancêtres"
+  ],
+  "bonne": 3,
+  "explication": "« Ancêtres » est le pluriel bâti sur la même racine أ ب و que « père ».",
+  "source": "Compté dans le texte coranique (édition ara-quransimple) et dans le lexique attesté du site.",
+  "divergence": null,
+  "surtitre": "Les racines de l'arabe",
+  "faits": {
+   "forme": "racine",
+   "bonne": "mot:آباء",
+   "leurres": [
+    "mot:كِتاب",
+    "mot:طُور",
+    "mot:عِجْل"
+   ],
+   "racine": "أبو"
+  },
+  "niveau": 1
+ },
+ {
+  "id": "claude-f86adeb1",
+  "section": "vocabulaire-arabe",
+  "theme": "Les racines de l'arabe",
+  "type": "fait",
+  "difficulte": 1,
+  "question": "Quel mot vient de la même racine que « gens » ?",
+  "reponses": [
+   "jour",
+   "biens",
+   "terre",
+   "compagnie"
+  ],
+  "bonne": 3,
+  "explication": "« Compagnie » et « gens » viennent de la racine ص ح ب, celle du compagnonnage.",
+  "source": "Compté dans le texte coranique (édition ara-quransimple) et dans le lexique attesté du site.",
+  "divergence": null,
+  "surtitre": "Les racines de l'arabe",
+  "faits": {
+   "forme": "racine",
+   "bonne": "mot:صاحِب",
+   "leurres": [
+    "mot:يَوْم",
+    "mot:أَرْض",
+    "mot:مال"
+   ],
+   "racine": "صحب"
+  },
+  "niveau": 1
  }
 ]

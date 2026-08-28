@@ -21,6 +21,7 @@ python3 outils/classer-niveaux.py        # ← APRÈS eux, jamais avant
 
 python3 outils/faire-lecon-sourate.py    # les 20 leçons de sourate
 python3 outils/faire-sourates.py         # l'index des 114 (après les leçons)
+python3 outils/faire-questions-claude.py --lot outils/lots/lot-01-chiffres.json
 python3 outils/faire-sitemap.py          # ← EN DERNIER : il lit ce qui existe
 python3 outils/controler-questions.py    # ← et le contrôle en dernier
 ```
@@ -47,6 +48,7 @@ précédent.
 | `faire-sourates.py` | `sourates.html`, l'index des 114 et le pivot du maillage interne |
 | `faire-sitemap.py` | `sitemap.xml`, lu sur le site réel : n'annonce jamais une section vide |
 | `controler-questions.py` | confronte chaque question à sa source : le Coran, ou Unicode |
+| `faire-questions-claude.py` | **Claude écrit les questions, sur des faits qu'il n'a pas le droit d'écrire.** Calcule une fiche de faits depuis le corpus ; Claude choisit parmi eux et formule ; le validateur refuse tout ce qui n'est pas dans la fiche. `--fiche` sort la fiche, `--lot` valide un lot écrit sans l'API |
 | `controler-liens.py` | chaque lien interne de chaque page mène quelque part — fichier, réécriture `vercel.json`, ou ancre (y compris posée par le script de la page) |
 | `controler-lecons.py` | rouvre les leçons **publiées** et reconfronte chaque verset au Coran, sans faire confiance au générateur |
 | `alleger.py` | retire les commentaires du JS et du CSS **à la publication** : la source garde son cahier de bord, le visiteur ne le télécharge pas (−29 Ko compressés) |

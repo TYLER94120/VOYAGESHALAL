@@ -11012,7 +11012,7 @@
   "source": "Coran, sourate 84, verset 5.",
   "divergence": null,
   "arabe": "وَأَذِنَتْ لِرَبِّهَا وَحُقَّتْ",
-  "niveau": 1
+  "niveau": 2
  },
  {
   "id": "sourates-1fabf592",
@@ -11812,7 +11812,7 @@
   "source": "Coran, sourate 113, verset 4.",
   "divergence": null,
   "arabe": "وَمِنْ شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ",
-  "niveau": 2
+  "niveau": 1
  },
  {
   "id": "sourates-b646cbd1",
@@ -12555,5 +12555,208 @@
   "source": "Coran, sourate Al-Fatiha (1).",
   "divergence": null,
   "niveau": 2
+ },
+ {
+  "id": "claude-7d957de2",
+  "section": "sens-des-sourates",
+  "theme": "Le Coran en chiffres",
+  "type": "fait",
+  "difficulte": 1,
+  "question": "Quelle est la plus longue sourate du Coran ?",
+  "reponses": [
+   "Al-Baqara",
+   "An-Nisa",
+   "Ali Imran",
+   "Al-A'raf"
+  ],
+  "bonne": 0,
+  "explication": "Al-Baqara est de loin la plus longue du Coran.",
+  "source": "Compté dans le texte coranique (édition ara-quransimple) et dans le lexique attesté du site.",
+  "divergence": null,
+  "surtitre": "Le Coran en chiffres",
+  "faits": {
+   "forme": "extremum",
+   "bonne": "sourate:2",
+   "leurres": [
+    "sourate:3",
+    "sourate:4",
+    "sourate:7"
+   ]
+  },
+  "niveau": 1
+ },
+ {
+  "id": "claude-f66c1d46",
+  "section": "sens-des-sourates",
+  "theme": "Le Coran en chiffres",
+  "type": "fait",
+  "difficulte": 1,
+  "question": "Laquelle de ces sourates compte le plus de versets ?",
+  "reponses": [
+   "Ash-Shu'ara",
+   "Ali Imran",
+   "As-Saffat",
+   "Al-A'raf"
+  ],
+  "bonne": 0,
+  "explication": "Ash-Shu'ara dépasse les deux cents versets.",
+  "source": "Compté dans le texte coranique (édition ara-quransimple) et dans le lexique attesté du site.",
+  "divergence": null,
+  "surtitre": "Le Coran en chiffres",
+  "faits": {
+   "forme": "extremum",
+   "bonne": "sourate:26",
+   "leurres": [
+    "sourate:7",
+    "sourate:3",
+    "sourate:37"
+   ]
+  },
+  "niveau": 2
+ },
+ {
+  "id": "claude-d0ad781e",
+  "section": "sens-des-sourates",
+  "theme": "Le Coran en chiffres",
+  "type": "fait",
+  "difficulte": 1,
+  "question": "On récite souvent ces quatre sourates courtes. Laquelle est la plus longue ?",
+  "reponses": [
+   "Al-Falaq",
+   "An-Nas",
+   "Al-Ikhlas",
+   "Al-Asr"
+  ],
+  "bonne": 1,
+  "explication": "An-Nas compte six versets, une de plus qu'Al-Falaq.",
+  "source": "Compté dans le texte coranique (édition ara-quransimple) et dans le lexique attesté du site.",
+  "divergence": null,
+  "surtitre": "Le Coran en chiffres",
+  "faits": {
+   "forme": "extremum",
+   "bonne": "sourate:114",
+   "leurres": [
+    "sourate:113",
+    "sourate:112",
+    "sourate:103"
+   ]
+  },
+  "niveau": 3
+ },
+ {
+  "id": "claude-e132b0a9",
+  "section": "sens-des-sourates",
+  "theme": "Le Coran en chiffres",
+  "type": "fait",
+  "difficulte": 1,
+  "question": "Laquelle de ces sourates est la plus courte ?",
+  "reponses": [
+   "Al-Fil",
+   "An-Nas",
+   "Quraysh",
+   "Al-Kawthar"
+  ],
+  "bonne": 3,
+  "explication": "Al-Kawthar ne compte que trois versets.",
+  "source": "Compté dans le texte coranique (édition ara-quransimple) et dans le lexique attesté du site.",
+  "divergence": null,
+  "surtitre": "Le Coran en chiffres",
+  "faits": {
+   "forme": "extremum",
+   "bonne": "sourate:108",
+   "leurres": [
+    "sourate:106",
+    "sourate:105",
+    "sourate:114"
+   ]
+  },
+  "niveau": 1
+ },
+ {
+  "id": "claude-29901ce6",
+  "section": "sens-des-sourates",
+  "theme": "Le Coran en chiffres",
+  "type": "fait",
+  "difficulte": 1,
+  "question": "Trois de ces sourates ont exactement le même nombre de versets. Laquelle fait exception ?",
+  "reponses": [
+   "Al-Kawthar",
+   "Quraysh",
+   "Al-Asr",
+   "An-Nasr"
+  ],
+  "bonne": 1,
+  "explication": "Al-Asr, Al-Kawthar et An-Nasr comptent trois versets chacune ; Quraysh en compte une de plus.",
+  "source": "Compté dans le texte coranique (édition ara-quransimple) et dans le lexique attesté du site.",
+  "divergence": null,
+  "surtitre": "Le Coran en chiffres",
+  "faits": {
+   "forme": "intrus",
+   "bonne": "sourate:106",
+   "leurres": [
+    "sourate:103",
+    "sourate:108",
+    "sourate:110"
+   ]
+  },
+  "niveau": 1
+ },
+ {
+  "id": "claude-9a8a275f",
+  "section": "sens-des-sourates",
+  "theme": "Le Coran en chiffres",
+  "type": "fait",
+  "difficulte": 1,
+  "question": "Trois de ces sourates sont de même longueur. Laquelle est différente ?",
+  "reponses": [
+   "Al-Masad",
+   "Al-Falaq",
+   "Al-Ikhlas",
+   "Al-Fil"
+  ],
+  "bonne": 2,
+  "explication": "Al-Fil, Al-Masad et Al-Falaq comptent cinq versets ; Al-Ikhlas en compte quatre.",
+  "source": "Compté dans le texte coranique (édition ara-quransimple) et dans le lexique attesté du site.",
+  "divergence": null,
+  "surtitre": "Le Coran en chiffres",
+  "faits": {
+   "forme": "intrus",
+   "bonne": "sourate:112",
+   "leurres": [
+    "sourate:105",
+    "sourate:111",
+    "sourate:113"
+   ]
+  },
+  "niveau": 3
+ },
+ {
+  "id": "claude-5a06f9e8",
+  "section": "sens-des-sourates",
+  "theme": "Le Coran en chiffres",
+  "type": "fait",
+  "difficulte": 1,
+  "question": "Laquelle de ces sourates compte le moins de versets ?",
+  "reponses": [
+   "Quraysh",
+   "Al-Masad",
+   "An-Nasr",
+   "An-Nas"
+  ],
+  "bonne": 2,
+  "explication": "An-Nasr en compte trois ; les trois autres en ont davantage.",
+  "source": "Compté dans le texte coranique (édition ara-quransimple) et dans le lexique attesté du site.",
+  "divergence": null,
+  "surtitre": "Le Coran en chiffres",
+  "faits": {
+   "forme": "extremum",
+   "bonne": "sourate:110",
+   "leurres": [
+    "sourate:111",
+    "sourate:114",
+    "sourate:106"
+   ]
+  },
+  "niveau": 3
  }
 ]
