@@ -284,9 +284,19 @@ def page(num, nom, nom_ar, vs, voisins):
     k = len(vs)
     slug = 'lecon-sourate-%s.html' % ardoise(nom)
     url = 'https://islampasapas.fr/' + slug
-    titre = 'Sourate %s : les %d versets expliqués' % (nom, k)
-    if k == 1:
-        titre = 'Sourate %s : le verset expliqué' % nom
+    # LE TITRE MENE PAR LA REQUETE, ET IL NOMME CE QUE LA PAGE CONTIENT.
+    # « les 4 versets expliques » decrivait la page honnetement, mais
+    # « explique » ne se cherche pas. Ce qu'on tape apres un nom de sourate,
+    # c'est « traduction », « arabe », « francais ». La page a exactement
+    # cela — le texte arabe et la traduction de Hamidullah — donc on peut
+    # l'annoncer sans rien promettre de plus.
+    #
+    # Ce qu'on n'ecrit PAS : « bienfaits », « merites », « vertus ». Ces
+    # mots-la sont tres cherches, et ils viennent de hadiths dont le projet
+    # n'a aucune traduction francaise sourcee. Un titre qui les promettrait
+    # ferait venir des gens sur une page qui ne repond pas, et il engagerait
+    # Mohamed sur un contenu qui n'existe pas.
+    titre = 'Sourate %s : traduction et texte arabe' % nom
     desc = description(num, nom, k)
 
     h = entete(titre, desc, url, nom, num, k)
