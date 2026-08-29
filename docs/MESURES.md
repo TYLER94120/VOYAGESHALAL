@@ -1050,3 +1050,56 @@ l'écart de longueur entre les deux langues qui a créé le défaut.
 `scripts/test-titres-villes.mjs` refuse désormais qu'une douzaine de titres
 retombent sous 46 caractères sans seconde promesse — un titre court n'est
 pas un défaut, un titre court **parce qu'un palier manque** en est un.
+
+---
+
+# 🍽 30 AOÛT — « ON A DES ADRESSES EN PLUS DES 3 MAIS ELLES NE SERVENT À RIEN »
+
+Capture de Mohamed, écran « Autour de toi », liste dépliée. Il a raison, et
+la cause n'était pas dans le moteur.
+
+## Ce que l'API envoie, et ce que l'écran montrait
+
+Pour **chacune** de ces adresses, `app/api/lieux/route.ts` envoie :
+
+```ts
+{ id, nom, distanceM, lat, lng, note, nbAvis, prix, ouvert, adresse,
+  statut, alcool, source, famille }
+```
+
+L'écran n'en affichait que **deux** : le nom, et la distance à vol
+d'oiseau. Pas la note, pas les avis, pas le prix, pas l'ouverture. On ne
+peut rien décider avec « Square Micheline Charle · 493 m ».
+
+## 🔴 Et surtout : la ligne alcool disparaissait
+
+La fiche du haut porte, en toutes lettres dans le code :
+
+> « §6 — une ligne alcool sur CHAQUE fiche, jamais optionnelle. Verte quand
+> Google l'affirme, ambre quand on ne sait pas : on ne rassure jamais à
+> tort. »
+
+Les trois premières adresses la portent. **Les suivantes, non.** Il
+suffisait de toucher « voir 9 autres adresses » pour que la garantie sur
+laquelle tout le site est bâti disparaisse — au deuxième écran, en silence.
+
+Ce n'est pas un défaut d'ergonomie. C'est la règle du 16 août qui sautait
+dès qu'on dépliait la liste.
+
+## Corrigé
+
+Chaque adresse de la liste porte maintenant ce que les cartes du haut
+portent : note et nombre d'avis, prix, ouverture, **et la ligne alcool**.
+Rien n'est inventé — chaque segment n'apparaît que si la donnée existe,
+exactement comme en haut.
+
+`scripts/test-alcool.mjs` refuse désormais que la liste dépliée perde la
+ligne alcool, la note, les avis ou l'ouverture. ⚠️ Vérifié qu'il ÉCHOUE
+quand on retire la ligne alcool de la liste.
+
+## La leçon
+
+Une règle vérifiée à un endroit de l'écran n'est pas une règle vérifiée.
+Le test du 16 août éprouvait le **filtre** (aucun bistrot ne passe) — il ne
+regardait pas si l'écran le **disait** partout. Les deux comptent : le
+filtre protège, la ligne informe.

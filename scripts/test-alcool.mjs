@@ -15,6 +15,7 @@
 // doit jamais dépendre d'un drapeau expérimental de Node.
 
 const { verdictAlcool, ligneAlcool } = await import('../lib/alcool.mjs')
+const { readFileSync } = await import('node:fs')
 
 let echecs = 0
 const rate = (msg) => { echecs++; console.error(`  ✗ ${msg}`) }
@@ -91,6 +92,32 @@ if (!flou.garde || flou.alcool !== 'inconnu') rate('sans information, l\'état d
 for (const en of [false, true]) {
   if (!ligneAlcool('inconnu', en).includes('⚠')) rate('la ligne « inconnu » doit porter un avertissement visible')
   if (!ligneAlcool('non', en).includes('✓')) rate('la ligne « non » doit porter une confirmation visible')
+}
+
+// ── §6 : LA LIGNE ALCOOL EST SUR CHAQUE ADRESSE MONTRÉE ──────────────
+//
+// Mohamed, 30 août : « on a des adresses en plus des 3 mais elles ne
+// servent à rien ». Mesuré dans le code : la liste « voir N autres
+// adresses » n'affichait qu'un nom et une distance à vol d'oiseau, alors
+// que l'API envoie pour chacune la note, les avis, le prix, l'ouverture ET
+// le verdict alcool.
+//
+// La fiche du haut porte le commentaire « une ligne alcool sur CHAQUE
+// fiche, jamais optionnelle ». La liste dépliée y échappait : la garantie
+// sur laquelle tout le site est bâti disparaissait au deuxième écran.
+{
+  const ui = readFileSync('components/lieux/SurMesure.tsx', 'utf8')
+  const i = ui.indexOf('{voirAutres && autres.map')
+  if (i < 0) rate("la liste des autres adresses a disparu de l'écran")
+  else {
+    const bloc = ui.slice(i, ui.indexOf('})}', i))
+    if (!/ligneAlcool/.test(bloc)) {
+      rate('les adresses au-dela des trois premieres n affichent pas la ligne alcool — la regle §6 saute au deuxieme ecran')
+    }
+    for (const [motif, quoi] of [[/f\.note/, 'la note'], [/f\.nbAvis/, "le nombre d'avis"], [/StatutOuverture/, "l'ouverture"]]) {
+      if (!motif.test(bloc)) rate(`les autres adresses n affichent pas ${quoi} : on ne decide rien avec un nom et une distance`)
+    }
+  }
 }
 
 console.log(`\nFiltre alcool & porc — ${INTERDITS.length} cas interdits, ${AUTORISES.length} cas autorisés`)
