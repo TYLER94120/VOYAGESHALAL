@@ -407,7 +407,7 @@ const guidesFr: Guide[] = [
     slug: 'voyage-halal-debutant',
     title: 'Voyage halal : par où commencer, étape par étape',
     description:
-      'Premier voyage halal ? Ce guide complet vous explique les fondamentaux : nourriture, prière, hébergement, destinations et applications indispensables.',
+      "Premier voyage halal ? L'essentiel, dans l'ordre : nourriture, prière, hébergement, destinations et applications indispensables.",
     coverImage: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&q=80',
     category: 'Pratique',
     readTime: '8 min',
@@ -788,7 +788,7 @@ const guidesFr: Guide[] = [
   {
     slug: 'dubai-guide-halal-2026',
     title: 'Dubaï halal : où prier, où manger, où dormir',
-    description: 'Guide complet Dubai 2026 pour les voyageurs musulmans : restaurants halal signalés, mosquées, activités famille, budget et meilleures adresses.',
+    description: 'Dubaï 2026 pour les voyageurs musulmans : restaurants halal signalés, mosquées, activités famille, budget et meilleures adresses.',
     coverImage: '/guides/dubai-j1.jpg',
     category: 'Destinations',
     readTime: '9 min',
@@ -843,7 +843,7 @@ const guidesFr: Guide[] = [
   {
     slug: 'marrakech-guide-halal',
     title: 'Marrakech halal 2026 : le guide de la ville ocre',
-    description: 'Tout savoir pour visiter Marrakech en famille ou en couple : mosquées, restaurants halal, riads, souks et conseils pratiques pour un séjour parfait.',
+    description: 'Visiter Marrakech en famille ou en couple : mosquées, restaurants halal, riads, souks et conseils pratiques pour un séjour parfait.',
     coverImage: '/guides/marrakech-j1.jpg',
     category: 'Destinations',
     readTime: '8 min',
@@ -931,7 +931,7 @@ const guidesFr: Guide[] = [
   {
     slug: 'malaisie-halal-destination',
     title: 'Malaisie : la destination halal n°1 mondiale',
-    description: 'Pourquoi la Malaisie est régulièrement élue meilleure destination halal mondiale ? JAKIM, gastronomie, nature — notre guide complet.',
+    description: 'Pourquoi la Malaisie est régulièrement élue meilleure destination halal mondiale ? JAKIM, gastronomie, nature — ce qui la distingue.',
     coverImage: '/guides/kuala-lumpur-j1.jpg',
     category: 'Destinations',
     readTime: '8 min',
@@ -1042,7 +1042,7 @@ const guidesFr: Guide[] = [
   {
     slug: 'voyage-halal-solo-femme',
     title: 'Femme musulmane seule : 8 destinations sûres',
-    description: 'Guide complet pour les femmes musulmanes souhaitant voyager seules : destinations les plus sûres, conseils de sécurité, question du mahram et communautés.',
+    description: 'Pour les femmes musulmanes qui voyagent seules : destinations les plus sûres, conseils de sécurité, question du mahram et communautés.',
     coverImage: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&q=80',
     category: 'Pratique',
     readTime: '8 min',
@@ -1195,7 +1195,7 @@ const guidesFr: Guide[] = [
   {
     slug: 'voyage-halal-japon-guide',
     title: 'Voyage halal au Japon : Tokyo, Osaka, Kyoto 2026',
-    description: 'Le Japon en voyageur musulman : restaurants halal à Tokyo et Osaka, ramen et wagyu halal, mosquées, salles de prière et conseils concrets pour un séjour serein.',
+    description: 'Le Japon en voyageur musulman : restaurants halal à Tokyo et Osaka, ramen et wagyu halal, mosquées, salles de prière et conseils pour un séjour serein.',
     coverImage: 'https://images.unsplash.com/photo-1557672172-298e090bd0f1?w=1200&q=80',
     category: 'Destinations',
     readTime: '7 min',
@@ -1654,7 +1654,7 @@ Si un ajustement est nécessaire, il est presque toujours possible de le faire s
   {
     slug: "heure-priere-avion-fuseaux",
     title: "Heure de prière en avion : quel fuseau suivre ?",
-    description: "Trois fuseaux traversés, le soleil qui se lève à 3 h du matin : comment savoir où vous êtes et quelle heure il y est. Écran de bord, GPS sans réseau, hublot.",
+    description: "Trois fuseaux traversés, le soleil qui se lève à 3 h du matin : comment savoir où vous êtes et quelle heure il y est. Écran de bord, GPS sans réseau.",
     coverImage: "/guides/blog-aeroports.jpg",
     category: 'Pratique',
     readTime: "6 min",
@@ -1981,7 +1981,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
   {
     slug: "prayer-times-on-a-plane-time-zones",
     title: "Prayer Times on a Plane: Which Time Zone?",
-    description: "Three time zones crossed, sunrise at 3am through the window: how to know where you are and what time it is there. Flight screen, GPS without signal, window.",
+    description: "Three time zones crossed, sunrise at 3am through the window: how to know where you are and what time it is there. Flight screen, GPS without signal.",
     coverImage: "/guides/blog-aeroports.jpg",
     category: 'Practical',
     readTime: "6 min",
@@ -2037,7 +2037,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
   {
     slug: "is-this-restaurant-really-halal",
     title: "Is This Restaurant Really Halal? 7 Checks to Make",
-    description: "A halal logo proves nothing on its own. Here are the 7 practical checks, the questions to ask the staff, and the warning signs — for Muslim travellers anywhere.",
+    description: "A halal logo proves nothing on its own. Here are the 7 practical checks, the questions to ask the staff, and the warning signs — for Muslim travellers.",
     coverImage: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&q=80",
     category: 'Practical',
     readTime: "6 min",
@@ -3377,7 +3377,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
   {
     slug: "ou-prier-aeroport-geneve",
     title: "Où prier à l'aéroport de Genève — guide 2026",
-    description: "Genève-Cointrin a un espace de recueillement partagé, après les contrôles, sur la mezzanine. Où le trouver, ce qu'on y trouve, et quoi faire s'il est occupé.",
+    description: "Genève-Cointrin a un espace de recueillement partagé, après les contrôles, sur la mezzanine. Où le trouver, et quoi faire s'il est occupé.",
     coverImage: "/guides/blog-geneve.jpg",
     category: 'Pratique',
     readTime: "7 min",
@@ -3537,7 +3537,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
   {
     slug: "ou-prier-centre-commercial",
     title: "Où prier dans un centre commercial : guide pratique (2026)",
-    description: "Certains grands centres ont une salle de prière souvent méconnue : demande à l'accueil. Sinon, un coin calme après ablutions. Voici comment prier discrètement.",
+    description: "Certains grands centres ont une salle de prière souvent méconnue : demande à l'accueil. Sinon, un coin calme après ablutions. Comment prier discrètement.",
     coverImage: "/guides/blog-centrecommercial.jpg",
     category: 'Pratique',
     readTime: "4 min",
@@ -3691,7 +3691,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
   {
     slug: "ou-prier-aeroport-orly",
     title: "Salle de prière à l'aéroport d'Orly : horaires et accès",
-    description: "Orly dispose de salles de prière et d'espaces de recueillement, dont une salle de prière musulmane avec espaces séparés hommes / femmes. Voici où les trouver.",
+    description: "Orly dispose de salles de prière et d'espaces de recueillement, dont une salle musulmane avec espaces séparés hommes / femmes. Voici où les trouver.",
     coverImage: "/guides/blog-orly.jpg",
     category: 'Pratique',
     readTime: "7 min",
@@ -3808,7 +3808,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
   {
     slug: "ou-prier-aeroport-marseille",
     title: "Où prier à l'aéroport de Marseille-Provence — guide 2026",
-    description: "Soyons honnêtes : à ce jour, l'aéroport de Marseille-Provence (Marignane) ne dispose pas d'un espace de prière dédié. Voici comment prier quand même sur place.",
+    description: "Soyons honnêtes : à ce jour, l'aéroport de Marseille-Provence ne dispose pas d'un espace de prière dédié. Voici comment prier quand même sur place.",
     coverImage: "/guides/blog-marseille.jpg",
     category: 'Pratique',
     readTime: "7 min",
@@ -3929,7 +3929,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
   {
     slug: "voyage-halal-maroc-2026-guide-complet",
     title: "Voyage halal au Maroc : villes, mosquées et tables",
-    description: "Tout pour un voyage halal au Maroc en 2026 : restaurants, mosquées, villes à visiter, conseils pratiques et budget. Le guide complet.",
+    description: "Tout pour un voyage halal au Maroc en 2026 : restaurants, mosquées, villes à visiter, conseils pratiques et budget.",
     coverImage: "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1200&q=80",
     category: "Destinations",
     readTime: "9 min",
@@ -3967,7 +3967,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
   {
     slug: "restaurants-halal-berkane-guide",
     title: "Les Meilleurs Restaurants Halal à Berkane — Guide 2026",
-    description: "Découvrez les meilleurs restaurants halal à Berkane, Maroc. Adresses, spécialités locales, prix et conseils. Guide complet 2026 par VoyagesHalal.fr.",
+    description: "Les restaurants halal de Berkane, au Maroc. Adresses, spécialités locales, prix et conseils pratiques.",
     coverImage: "https://images.unsplash.com/photo-1547514701-42782101795e?w=1200&q=80",
     category: "Gastronomie",
     readTime: "7 min",
@@ -4000,7 +4000,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
   {
     slug: "horaires-priere-voyage-guide-musulman",
     title: "Horaires de prière en voyage : ne plus en rater",
-    description: "Guide complet pour gérer les horaires de prière en voyage : décalage horaire, prière en avion, qasr, jam' et outils gratuits pour le voyageur musulman.",
+    description: "Gérer ses horaires de prière en voyage : décalage horaire, prière en avion, qasr, jam' et outils gratuits pour le voyageur musulman.",
     coverImage: "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&q=80",
     category: "Pratique",
     readTime: "8 min",
@@ -4096,7 +4096,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     slug: "halal-travel-morocco-2026-complete-guide",
     lang: "en",
     title: "Halal Travel in Morocco: Cities, Mosques and Tables",
-    description: "Everything you need for halal travel in Morocco 2026: halal restaurants, mosques, best cities and practical tips. Complete guide by GoHalalTravel.",
+    description: "Everything you need for halal travel in Morocco 2026: halal restaurants, mosques, best cities and practical tips.",
     coverImage: "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1200&q=80",
     category: "Destinations",
     readTime: "9 min",
@@ -4193,7 +4193,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     slug: "prayer-times-while-traveling-muslim-guide",
     lang: "en",
     title: "Prayer Times While Traveling: How to Never Miss a Prayer",
-    description: "Complete guide to managing prayer times while traveling: shortening and combining prayers, praying on planes, finding the Qibla and mosques worldwide.",
+    description: "Managing prayer times while traveling: shortening and combining prayers, praying on planes, finding the Qibla and mosques worldwide.",
     coverImage: "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&q=80",
     category: "Practical",
     readTime: "8 min",
@@ -4278,7 +4278,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
   {
     slug: 'muslim-friendly-dubai-2026',
     title: 'Muslim-Friendly Dubai 2026: The Complete Halal Travel Guide',
-    description: 'Everything Muslim travelers need for Dubai: halal food everywhere, mosques, prayer facilities, family activities and where to stay. A stress-free destination.',
+    description: 'Everything Muslim travelers need for Dubai: halal food everywhere, mosques, prayer facilities, family activities and where to stay. A stress-free trip.',
     coverImage: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&q=80',
     category: 'Destinations',
     readTime: '7 min',
@@ -4375,7 +4375,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
   {
     slug: 'manger-halal-bali',
     title: 'Manger halal à Bali : le guide du voyageur musulman',
-    description: 'Bali est hindouiste mais manger halal y est simple : warungs musulmans, padang halal, quartiers de Denpasar et Kuta, et nos réflexes pour éviter les pièges.',
+    description: 'Bali est hindouiste mais manger halal y est simple : warungs musulmans, padang halal, quartiers de Denpasar et Kuta, et comment éviter les pièges.',
     coverImage: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1200&q=80',
     category: 'Gastronomie', readTime: '5 min', publishedAt: '2026-04-21',
     tags: ['Bali', 'Indonésie', 'Manger halal'],
@@ -4409,7 +4409,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
   {
     slug: 'manger-halal-new-york',
     title: 'Manger halal à New York : du street cart au steakhouse',
-    description: 'Manger halal à New York : halal carts légendaires, quartiers de Jackson Heights et Bay Ridge, burgers et steakhouses. Le guide complet.',
+    description: 'Manger halal à New York : halal carts légendaires, quartiers de Jackson Heights et Bay Ridge, burgers et steakhouses.',
     coverImage: 'https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=1200&q=80',
     category: 'Gastronomie', readTime: '5 min', publishedAt: '2026-04-29',
     tags: ['New York', 'USA', 'Manger halal'],
@@ -4444,7 +4444,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     slug: 'halal-food-seoul-guide',
     lang: 'en',
     title: 'Halal Food in Seoul: Itaewon, BBQ and Where to Eat',
-    description: 'Finding halal food in Seoul is easier than you think: the Itaewon mosque district, halal Korean BBQ and fried chicken, KMF-labelled spots and practical tips.',
+    description: 'Finding halal food in Seoul is easier than you think: the Itaewon mosque district, halal Korean BBQ and fried chicken, KMF-labelled spots.',
     coverImage: 'https://images.unsplash.com/photo-1538485399081-7191377e8241?w=1200&q=80',
     category: 'Food', readTime: '5 min', publishedAt: '2026-05-07',
     tags: ['Seoul', 'South Korea', 'Halal food'],

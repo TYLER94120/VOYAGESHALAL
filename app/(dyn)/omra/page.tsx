@@ -12,7 +12,7 @@ export async function generateMetadata(): Promise<Metadata> {
     title: isEN ? 'Umrah 2026: Steps, Budget and Best Season' : 'Omra 2026 : étapes, budget et meilleure période',
     description: isEN
       ? 'Everything to prepare your Umrah 2026: visa, packages, budget, rituals, best agencies and practical tips for a successful pilgrimage.'
-      : "Préparer son Omra 2026 : visa, forfaits, budget, rituels étape par étape et agences en France. Le guide complet, gratuit.",
+      : "Préparer son Omra 2026 : visa, forfaits, budget, rituels étape par étape et agences en France. Gratuit, sans compte.",
     type: 'article',
     canonical: `${siteUrl}${isEN ? '/umrah' : '/omra'}`,
     languages: {
@@ -87,7 +87,7 @@ export default async function OmraPage() {
         '@context': 'https://schema.org',
         '@type': 'WebPage',
         name: en ? 'Umrah 2026 Guide' : 'Guide Omra 2026',
-        description: en ? 'Complete guide to prepare your Umrah 2026.' : 'Guide complet pour préparer votre Omra 2026 depuis la France',
+        description: en ? 'How to prepare your Umrah 2026, step by step.' : 'Préparer son Omra 2026 depuis la France, étape par étape',
         url: `${SITE_URL}/omra`,
         publisher: { '@type': 'Organization', name: 'VoyagesHalal.fr', url: SITE_URL },
       }} />

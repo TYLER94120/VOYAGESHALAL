@@ -840,3 +840,65 @@ fabriquées d'avance, 112 Mo → 20,7 Mo par passage de robot. Reste à lire la
 courbe d'Origin Transfer dans les jours qui viennent.
 
 `scripts/test-pays.mjs` tient les deux règles à chaque construction.
+
+---
+
+# 🧹 29 AOÛT — LA RONDE QUI REMET TOUT À ZÉRO
+
+Ronde quotidienne. Aucune page neuve. J'ai commencé par vérifier que les
+deux gros chantiers de la semaine (cache, chiffres non sourcés) n'avaient
+rien cassé, en re-passant les **1 641 URL** des deux sitemaps.
+
+## Aucune régression
+
+810 et 831 pages répondent, 0 erreur, 0 mauvaise langue, 0 titre trop long,
+0 page sans `h1`, et les 20,7 Mo par passage de robot tiennent.
+
+## Ce que la comparaison a laissé voir
+
+| | 25 août | avant ce soir | après |
+|---|---|---|---|
+| mot creux dans ce que Google affiche | 51 | 12 | **0** |
+| pages sans lien canonique | 4 | 4 | **0** |
+| descriptions coupées à l'affichage | 37 | 36 | **0** |
+
+### 1. Les mots creux étaient passés du titre à la description
+
+Les 12 restants n'étaient plus dans des titres — ils étaient dans des
+**descriptions** : « Découvrez les meilleurs restaurants halal à Berkane »,
+« Tout savoir pour visiter Marrakech », « Le guide complet, gratuit ». La
+règle du 20 août ne portait que sur les titres, et la description est la
+deuxième ligne que Google affiche. `scripts/test-seo-titres.mjs` la
+surveille désormais aussi.
+
+### 2. Deux limites pour une seule règle
+
+`lib/titre-seo.ts` autorisait **160** caractères, `lib/titreVille.mjs`
+**155**, et Google en montre ~155. C'est la plus permissive qui gagnait :
+36 descriptions servies se faisaient couper, dont **20 pages d'hôtels** qui
+partagent le même gabarit. Une seule limite désormais — la vraie. Les 15
+descriptions écrites à la main qui dépassaient encore ont été raccourcies
+d'un mot ou deux, sans rien perdre.
+
+### 3. Deux pages n'avaient ni titre propre ni canonique
+
+- **`/contact`** servait une description **française** sur
+  gohalaltravel.com, sous la marque française en plus.
+- **`/autour-de-moi`** n'avait **aucun titre à elle** : elle servait celui
+  de l'accueil, sur les deux domaines. Deux adresses se présentaient à
+  Google sous le même titre et se faisaient concurrence. C'est une page
+  cliente (carte, géolocalisation) : elle ne peut pas porter ses propres
+  métadonnées, un `layout.tsx` les porte pour elle.
+
+⚠️ Son titre ne vise **pas** « mosquée près de moi » : cette requête
+appartient à `/mosquee-proche`, qui la travaille déjà. Ce qu'Autour de moi
+fait et qu'aucune autre page ne fait, c'est les trois à la fois — prier,
+manger, sortir — là où l'on est.
+
+## Ce qui reste ouvert, et qui n'est pas de mon ressort
+
+**Samarcande existe toujours en double** (`samarcande.json` et
+`samarkand.json`), et sur le site anglais les deux pages d'hôtels portent
+un titre strictement identique. Fusionner suppose de choisir quelles
+adresses survivent : c'est une décision de donnée, elle attend Mohamed.
+C'est le dernier titre en double du site.
