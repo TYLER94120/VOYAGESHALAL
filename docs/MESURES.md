@@ -902,3 +902,74 @@ manger, sortir — là où l'on est.
 un titre strictement identique. Fusionner suppose de choisir quelles
 adresses survivent : c'est une décision de donnée, elle attend Mohamed.
 C'est le dernier titre en double du site.
+
+---
+
+# 📈 29 AOÛT — SEARCH CONSOLE INSIGHTS, 28 JOURS : LE FORMAT EST CONFIRMÉ
+
+Capture de Mohamed, voyageshalal.fr, 28 derniers jours.
+
+| Page | Clics | Évolution |
+|---|---|---|
+| /blog/ou-prier-disneyland-paris | **47** | **↑ 1 075 %** |
+| /blog/ou-prier-parc-asterix | **23** | précédent : 0 |
+| /blog/ou-prier-gares-paris | 7 | précédent : 0 |
+| /blog/ou-prier-aeroport-orly | 4 | précédent : 0 |
+| /blog/ou-prier-puy-du-fou | 3 | précédent : 0 |
+
+**84 clics sur ces cinq pages seulement.** Le relevé du 21 août mesurait
+**65 clics pour le site entier** sur 28 jours. Les cinq premières pages du
+site sont toutes des articles « où prier à [lieu] » : le format est
+confirmé, ce n'est plus une hypothèse.
+
+## ⚠️ Ce que ces chiffres ne disent PAS
+
+**Les 1 075 % de Disneyland ne viennent pas du nouveau titre.** La capture
+montre l'ANCIEN — « Salle de prière à Disneyland Paris : où p… ». Google
+n'avait pas encore recrawlé la page. Cette croissance vient d'ailleurs
+(saison, indexation), et se l'attribuer serait une faute de mesure.
+
+En revanche, **Parc Astérix affiche bien le nouveau titre** — « Parc
+Astérix : pas de salle de prière, où… » — et fait 23 clics. C'est la seule
+page où le titre honnête est réellement en ligne, et elle ne s'est pas
+effondrée : dire « il n'y a pas de salle de prière » dans un résultat
+Google fait cliquer.
+
+## 🔴 CE QUE LA CAPTURE A RÉVÉLÉ : le sitemap ne signalait aucune modification
+
+Pourquoi Parc Astérix a-t-il été recrawlé et pas Disneyland ? Les titres
+ont été réécrits le même jour, le 27 août.
+
+| Article | Publié le | Titre servi dans Google |
+|---|---|---|
+| Parc Astérix | 6 août | **le nouveau** |
+| Puy du Fou, Futuroscope | 6 août | — |
+| Disneyland, Orly, CDG | 20 juillet | **l'ancien** |
+
+La cause, dans `app/sitemap.ts` :
+
+```ts
+lastModified: new Date(p.publishedAt)
+```
+
+**Le sitemap annonçait la date de PUBLICATION.** Un titre réécrit ne
+produisait donc aucun signal de fraîcheur : Google repassait à son rythme —
+vite sur les pages récentes (6 août), lentement sur les autres
+(20 juillet). Les quatre titres qui promettaient une salle de prière
+inexistante seraient restés en ligne des semaines de plus.
+
+**Corrigé** : un champ `updatedAt`, posé sur les **29 articles réellement
+modifiés** ces trois derniers jours, et servi par le sitemap.
+
+⚠️ La règle qui va avec, tenue par `scripts/test-fraicheur.mjs` : une date
+de modification ne s'écrit que sur un article réellement modifié. La poser
+partout « pour faire remonter » serait inventer une date — Google mesure la
+constance de ces annonces, et une page déclarée modifiée sans l'être perd
+sa crédibilité de fraîcheur, en emportant les autres. Le test refuse une
+date antérieure à la publication, une date dans le futur, et un dépôt où
+plus de 60 % des articles se déclareraient modifiés.
+
+## Ce qu'il faudra regarder au prochain relevé
+
+Disneyland, Orly, CDG et Puy du Fou avec leur **nouveau** titre. C'est là
+que se lira l'effet réel du chantier du 27 — pas avant.

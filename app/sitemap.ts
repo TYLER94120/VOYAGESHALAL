@@ -114,7 +114,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         url: `${SITE_URL}/guides/${g.slug}`,
         changeFrequency: 'monthly' as const,
         priority: 0.7,
-        lastModified: new Date(g.publishedAt),
+        lastModified: new Date(g.updatedAt ?? g.publishedAt),
       }))
 
   // Blog : chaque domaine ne liste que les articles rédigés dans sa langue
@@ -124,7 +124,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: `${SITE_URL}/blog/${p.slug}`,
       changeFrequency: 'monthly' as const,
       priority: 0.7,
-      lastModified: new Date(p.publishedAt),
+      // La date de MODIFICATION quand il y en a eu une, sinon celle de
+      // publication. Voir lib/types.ts : un titre réécrit ne donnait aucun
+      // signal de fraîcheur, et Google repassait des semaines plus tard.
+      lastModified: new Date(p.updatedAt ?? p.publishedAt),
     }))
 
   // Coins prière (spots seed) : page index par ville + page détail par spot.

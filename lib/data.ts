@@ -412,6 +412,7 @@ const guidesFr: Guide[] = [
     category: 'Pratique',
     readTime: '8 min',
     publishedAt: '2026-01-01',
+    updatedAt: '2026-08-29',
     tags: ['Débutant', 'Guide pratique', 'Conseils'],
     content: `<h2>Qu'est-ce que le voyage halal ?</h2>
 <p>Le voyage halal désigne simplement un voyage organisé en tenant compte des préceptes islamiques. Pas d'alcool, nourriture halal, possibilité de prier, tenue modeste dans les lieux de culte — voici les quatre piliers d'un voyage halal réussi.</p>
@@ -523,6 +524,7 @@ const guidesFr: Guide[] = [
     category: 'Pratique',
     readTime: '7 min',
     publishedAt: '2026-02-01',
+    updatedAt: '2026-08-29',
     tags: ['Ramadan', 'Jeûne', 'Spiritualité', 'Pratique'],
     content: `<h2>Voyager pendant le Ramadan : bonne ou mauvaise idée ?</h2>
 <p>Le Ramadan est le mois le plus sacré de l'islam, et voyager pendant cette période peut être une expérience spirituellement intense et culturellement unique — à condition de bien choisir sa destination et de préparer son séjour en conséquence.</p>
@@ -793,6 +795,7 @@ const guidesFr: Guide[] = [
     category: 'Destinations',
     readTime: '9 min',
     publishedAt: '2026-06-22',
+    updatedAt: '2026-08-29',
     tags: ['Dubai', 'EAU', 'Guide', 'Luxe', 'Famille'],
     content: `<h2>Dubai : la destination halal de luxe par excellence</h2>
 <p>Dubaï est l'une des villes les plus simples au monde pour un voyageur musulman : la viande vendue et servie dans le circuit courant est halal, encadrée par la réglementation des Émirats. La question « où manger halal » ne se pose donc presque jamais. Celle qui se pose vraiment est différente, et c'est l'objet de ce guide.</p>
@@ -848,6 +851,7 @@ const guidesFr: Guide[] = [
     category: 'Destinations',
     readTime: '8 min',
     publishedAt: '2026-06-20',
+    updatedAt: '2026-08-29',
     tags: ['Marrakech', 'Maroc', 'Guide', 'Famille', 'Médina'],
     content: `<h2>Marrakech : destination halal naturelle</h2>
 <p>À Marrakech, la question « est-ce halal ? » ne se pose pratiquement pas dans la médina : le Maroc est un pays très majoritairement musulman, l'islam y est religion d'État, et la viande du circuit courant est halal sans qu'aucune étiquette ne soit nécessaire. Ne cherchez donc pas de logo, il n'y en aura pas. <strong>Ce qui demande de l'attention est ailleurs</strong> : l'alcool, servi dans une partie des hôtels et des restaurants de Guéliz, la ville nouvelle — et c'est à peu près tout ce que ce guide vous demandera de surveiller.</p>
@@ -936,6 +940,7 @@ const guidesFr: Guide[] = [
     category: 'Destinations',
     readTime: '8 min',
     publishedAt: '2026-06-15',
+    updatedAt: '2026-08-29',
     tags: ['Malaisie', 'JAKIM', 'Halal partout', 'Asie', 'Gastronomie'],
     content: `<h2>La Malaisie : 10 fois élue meilleure destination halal mondiale</h2>
 <p>Le Global Muslim Travel Index (GMTI) couronne la Malaisie meilleure destination halal mondiale pour la 10e année consécutive. Ce n'est pas un hasard : la Malaisie a construit un écosystème halal complet, rigoureux et accessible qui n'a pas d'équivalent sur la planète.</p>
@@ -1047,6 +1052,7 @@ const guidesFr: Guide[] = [
     category: 'Pratique',
     readTime: '8 min',
     publishedAt: '2026-06-08',
+    updatedAt: '2026-08-29',
     tags: ['Femmes', 'Solo', 'Sécurité', 'Halal', 'Voyage'],
     content: `<h2>La femme musulmane voyageuse : une réalité croissante</h2>
 <p>De plus en plus de femmes musulmanes voyagent seules — que ce soit pour des raisons professionnelles, pour explorer le monde ou pour accomplir l'Omra. L'industrie du tourisme halal répond à cette demande avec des offres spécifiques. Ce guide vous donne toutes les clés pour voyager seule en toute sérénité.</p>
@@ -1200,6 +1206,7 @@ const guidesFr: Guide[] = [
     category: 'Destinations',
     readTime: '7 min',
     publishedAt: '2026-03-28',
+    updatedAt: '2026-08-29',
     tags: ['Japon', 'Tokyo', 'Osaka', 'Manger halal', 'Asie'],
     content: `<p>Le <strong>voyage halal au Japon</strong> n\'est plus un défi : la scène halal de Tokyo et d\'Osaka a explosé, portée par le tourisme musulman d\'Asie du Sud-Est. Voici comment en profiter.</p>
 <h2>Manger halal à Tokyo</h2>
@@ -1659,6 +1666,7 @@ Si un ajustement est nécessaire, il est presque toujours possible de le faire s
     category: 'Pratique',
     readTime: "6 min",
     publishedAt: '2026-08-10',
+    updatedAt: '2026-08-29',
     tags: ['avion', 'prière', 'horaires', 'pratique'],
     content: `<p>Vous décollez de Paris à 22 h, vous atterrissez à Dubaï à 6 h 30, et pendant le vol le soleil se lève à 3 h du matin par le hublot. Quelle heure suivez-vous ? C'est l'une des questions les plus posées par les voyageurs musulmans, et elle mélange deux choses très différentes : <strong>ce qu'on peut mesurer</strong>, et <strong>ce que dit la jurisprudence</strong>. Voici la première partie, honnêtement séparée de la seconde.</p>
 
@@ -1986,6 +1994,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Practical',
     readTime: "6 min",
     publishedAt: '2026-08-10',
+    updatedAt: '2026-08-29',
     lang: 'en',
     tags: ['flight', 'prayer', 'times', 'practical'],
     content: `<p>You take off from London at 10pm, you land in Dubai at 6.30am, and during the flight the sun rises at 3am through the window. Which time do you follow? It is one of the most asked questions by Muslim travellers, and it mixes two very different things: <strong>what can be measured</strong>, and <strong>what jurisprudence says</strong>. Here is the first part, honestly separated from the second.</p>
@@ -2042,6 +2051,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Practical',
     readTime: "6 min",
     publishedAt: '2026-08-10',
+    updatedAt: '2026-08-29',
     lang: 'en',
     tags: ['halal', 'restaurant', 'practical', 'certification'],
     content: `<p>A shopfront says "HALAL" in big green letters. Is that enough? No. In most countries the word "halal" is not a protected term: anyone can paint it on a window. Here is how to actually check, in a couple of minutes, without being rude to anyone.</p>
@@ -2927,6 +2937,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Pratique',
     readTime: "3 min",
     publishedAt: '2026-08-06',
+    updatedAt: '2026-08-29',
     content: `<p>Journée au Parc Astérix et l'heure de la prière approche ? Voici la situation réelle et les solutions qui marchent.</p>
 <h2>L'essentiel en 30 secondes</h2><p>À notre connaissance, le Parc Astérix ne dispose pas de salle de prière officielle. Les solutions : demander un espace calme aux services visiteurs, utiliser un coin tranquille du parc (zones pique-nique, pelouses en retrait), ou la voiture au parking. Les facilités du voyageur (regrouper les prières) simplifient tout.</p>
 <h2>1. Demande aux services visiteurs</h2><p>Comme à <a href="/blog/ou-prier-disneyland-paris">Disneyland (où ça fonctionne très bien)</a>, le bon réflexe est de demander poliment à l'accueil ou à un membre du personnel un endroit calme et discret. Le personnel des parcs est habitué aux demandes particulières.</p>
@@ -2945,6 +2956,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Pratique',
     readTime: "3 min",
     publishedAt: '2026-08-06',
+    updatedAt: '2026-08-29',
     content: `<p>Le Puy du Fou se visite au rythme des spectacles — et caser ses prières demande un peu d'organisation. Voici comment faire simplement.</p>
 <h2>L'essentiel en 30 secondes</h2><p>Pas de salle de prière officielle à notre connaissance. Mais le parc est vaste et boisé : les coins calmes ne manquent pas entre les villages d'époque. Ajoute les facilités du voyageur et une bonne lecture du programme des spectacles, et tout tient.</p>
 <h2>1. Planifie autour des spectacles</h2><p>Le piège du Puy du Fou, c'est l'enchaînement des horaires de spectacles. Dès l'arrivée, compare le programme du jour avec <a href="/horaires-priere">les horaires de prière</a> et repère ton créneau — souvent en début d'après-midi ou entre deux grands shows.</p>
@@ -2963,6 +2975,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Pratique',
     readTime: "3 min",
     publishedAt: '2026-08-06',
+    updatedAt: '2026-08-29',
     content: `<p>Journée au Futuroscope en famille ? Voici comment gérer les prières sans stress dans le parc poitevin.</p>
 <h2>L'essentiel en 30 secondes</h2><p>Pas de salle de prière officielle à notre connaissance. Les solutions : les espaces verts et coins calmes du parc, une demande à l'accueil, ou la voiture — le parking est juste à côté de l'entrée, un vrai plus ici. Les hôtels du parc, à quelques minutes à pied, simplifient tout pour ceux qui dorment sur place.</p>
 <h2>1. L'atout du Futuroscope : le parking tout proche</h2><p>Contrairement à d'autres parcs, la voiture est à quelques minutes de l'entrée. En milieu de journée, un aller-retour discret au parking est la solution la plus simple — vérifie juste les conditions de ré-entrée à l'accueil.</p>
@@ -3382,6 +3395,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Pratique',
     readTime: "7 min",
     publishedAt: '2026-07-20',
+    updatedAt: '2026-08-29',
     tags: ["Genève", "Aéroports", "Prière"],
     content: `<p>Tu transites par Genève-Cointrin et tu cherches où prier ? Il y a un espace, il est bien situé, et il a une particularité : <strong>c'est une salle de recueillement partagée, pas une salle de prière musulmane</strong>. Voici ce que ça change concrètement.</p>
 
@@ -3542,6 +3556,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Pratique',
     readTime: "4 min",
     publishedAt: '2026-07-20',
+    updatedAt: '2026-08-29',
     tags: ["Centre commercial", "Prière", "Pratique"],
     content: `<p>Une journée shopping et l'heure de la prière qui approche ? Voici où prier dans un centre commercial discrètement.</p>
 <h2>L'essentiel en 30 secondes</h2><p>Certains grands centres ont une salle de prière (souvent méconnue) : demande à l'accueil ou à la sécurité. Sinon, prie dans un coin calme (parking couvert, palier peu fréquenté), après ablutions aux toilettes.</p>
@@ -3633,6 +3648,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Pratique',
     readTime: "7 min",
     publishedAt: '2026-07-20',
+    updatedAt: '2026-08-29',
     tags: ["CDG", "Paris", "Aéroports", "Prière"],
     content: `<p>Tu transites par Roissy et tu cherches où prier à l'aéroport CDG ? Voici ce qu'on sait, d'où ça vient, ce qu'on ignore, et surtout comment t'organiser pour ne pas passer ta correspondance à chercher.</p>
 
@@ -3696,6 +3712,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Pratique',
     readTime: "7 min",
     publishedAt: '2026-07-20',
+    updatedAt: '2026-08-29',
     tags: ["Orly", "Paris", "Aéroports", "Prière"],
     content: `<p>Tu voyages depuis Orly et tu cherches où prier ? Voici ce qu'on sait, d'où ça vient, ce qu'on ignore, et surtout comment t'organiser — parce qu'à Orly le vrai problème n'est pas de trouver la salle, c'est de la trouver <strong>ouverte</strong>.</p>
 
@@ -3813,6 +3830,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Pratique',
     readTime: "7 min",
     publishedAt: '2026-07-20',
+    updatedAt: '2026-08-29',
     tags: ["Marseille", "Aéroports", "Prière"],
     content: `<p>Tu pars de Marseille et tu cherches une salle de prière à l'aéroport Marseille-Provence ? Disons-le tout de suite : <strong>il n'y en a pas</strong>. C'est la seule page de notre série où la réponse est non — et c'est justement pour ça qu'elle mérite d'être précise sur ce qu'on peut faire à la place.</p>
 
@@ -3861,6 +3879,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Pratique',
     readTime: "3 min",
     publishedAt: '2026-07-20',
+    updatedAt: '2026-08-29',
     tags: ["Disneyland", "Paris", "Famille", "Prière"],
     content: `<p>Tu passes une journée à Disneyland Paris et tu te demandes où prier ? Voici ce qu'on sait, ce qu'on ne sait pas, et surtout comment t'organiser pour ne pas te retrouver coincé entre deux attractions à l'heure du ʿAsr.</p>
 
@@ -3934,6 +3953,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: "Destinations",
     readTime: "9 min",
     publishedAt: "2026-02-02",
+    updatedAt: '2026-08-29',
     tags: ["Maroc", "Voyage halal", "2026"],
     content: `<p>Le <strong>voyage halal au Maroc en 2026</strong> est sans doute l'expérience la plus simple et la plus apaisante qui soit pour un voyageur musulman. Pays à 99 % musulman, le Maroc rend le quotidien naturellement conforme : la nourriture est halal par défaut, l'appel à la prière rythme les journées, et les mosquées sont partout. Vous n'avez pas à chercher : vous n'avez qu'à profiter.</p>
 <h2>Pourquoi le Maroc est une destination halal idéale</h2>
@@ -3972,6 +3992,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: "Gastronomie",
     readTime: "7 min",
     publishedAt: "2026-02-03",
+    updatedAt: '2026-08-29',
     tags: ["Berkane", "Restaurants", "Maroc"],
     content: `<p>Capitale de l'orange et joyau de la région de l'Oriental, <strong>Berkane</strong> est une ville 100 % halal par défaut, où la cuisine du terroir se déguste dans une ambiance familiale et chaleureuse. Voici notre guide des <strong>meilleurs restaurants halal à Berkane</strong> en 2026.</p>
 <h2>Berkane, terre d'agrumes et de saveurs</h2>
@@ -4005,6 +4026,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: "Pratique",
     readTime: "8 min",
     publishedAt: "2026-02-04",
+    updatedAt: '2026-08-29',
     tags: ["Prière", "Voyage", "Qibla"],
     content: `<p>Voyager ne dispense pas de la prière, mais l'islam prévoit des facilités précieuses pour le voyageur. Décalage horaire, vols longs, escales : voici comment <strong>ne jamais rater une prière en voyage</strong>, sereinement.</p>
 <h2>La prière du voyageur : une obligation allégée</h2>
@@ -4069,6 +4091,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: "Pratique",
     readTime: "8 min",
     publishedAt: "2026-02-06",
+    updatedAt: '2026-08-29',
     tags: ["Ramadan", "Voyage", "2026"],
     content: `<p>Voyager pendant le <strong>Ramadan 2026</strong> est une expérience spirituelle intense, à condition de bien s'organiser. Entre choix de la destination, gestion du jeûne et recherche d'un iftar, voici notre guide complet pour un Ramadan en voyage serein.</p>
 <h2>Les pays idéaux pendant le Ramadan</h2>
@@ -4101,6 +4124,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: "Destinations",
     readTime: "9 min",
     publishedAt: "2026-02-02",
+    updatedAt: '2026-08-29',
     tags: ["Morocco", "Halal travel", "2026"],
     content: `<p><strong>Halal travel in Morocco in 2026</strong> is one of the easiest and most peaceful experiences a Muslim traveler can have. A country that is 99% Muslim, Morocco makes daily life effortlessly compliant: food is halal by default, the call to prayer shapes the day, and mosques are everywhere.</p>
 <h2>Why Morocco is an ideal halal destination</h2>
@@ -4198,6 +4222,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: "Practical",
     readTime: "8 min",
     publishedAt: "2026-02-05",
+    updatedAt: '2026-08-29',
     tags: ["Prayer", "Travel", "Qibla"],
     content: `<p>Traveling does not exempt you from prayer, but Islam offers valuable facilities for the traveler. Time-zone changes, long flights, layovers: here is how to <strong>never miss a prayer while traveling</strong>.</p>
 <h2>The traveler's prayer: an eased obligation</h2>
@@ -4283,6 +4308,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Destinations',
     readTime: '7 min',
     publishedAt: '2026-03-08',
+    updatedAt: '2026-08-29',
     lang: 'en',
     tags: ['Dubai', 'UAE', 'Muslim-friendly', 'Family'],
     content: `<p>Dubai is one of the most comfortable destinations in the world for Muslim travelers. Halal food is the norm across restaurants and malls, mosques and prayer rooms are everywhere, and the whole city is built around a Muslim-friendly lifestyle.</p>
@@ -4377,7 +4403,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     title: 'Manger halal à Bali : le guide du voyageur musulman',
     description: 'Bali est hindouiste mais manger halal y est simple : warungs musulmans, padang halal, quartiers de Denpasar et Kuta, et comment éviter les pièges.',
     coverImage: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1200&q=80',
-    category: 'Gastronomie', readTime: '5 min', publishedAt: '2026-04-21',
+    category: 'Gastronomie', readTime: '5 min', publishedAt: '2026-04-21', updatedAt: '2026-08-29',
     tags: ['Bali', 'Indonésie', 'Manger halal'],
     content: `<p>Bali est l\'île hindouiste d\'un pays musulman : résultat, <strong>manger halal à Bali</strong> demande un peu d\'attention — mais les options sont partout.</p>
 <h2>Le réflexe n°1 : les warungs padang</h2>
@@ -4411,7 +4437,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     title: 'Manger halal à New York : du street cart au steakhouse',
     description: 'Manger halal à New York : halal carts légendaires, quartiers de Jackson Heights et Bay Ridge, burgers et steakhouses.',
     coverImage: 'https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=1200&q=80',
-    category: 'Gastronomie', readTime: '5 min', publishedAt: '2026-04-29',
+    category: 'Gastronomie', readTime: '5 min', publishedAt: '2026-04-29', updatedAt: '2026-08-29',
     tags: ['New York', 'USA', 'Manger halal'],
     content: `<p>Bonne nouvelle : <strong>manger halal à New York</strong> est l\'une des choses les plus faciles au monde. La ville compte près d\'un million de musulmans et le halal fait partie du paysage.</p>
 <h2>Les halal carts : une institution</h2>
@@ -4446,7 +4472,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     title: 'Halal Food in Seoul: Itaewon, BBQ and Where to Eat',
     description: 'Finding halal food in Seoul is easier than you think: the Itaewon mosque district, halal Korean BBQ and fried chicken, KMF-labelled spots.',
     coverImage: 'https://images.unsplash.com/photo-1538485399081-7191377e8241?w=1200&q=80',
-    category: 'Food', readTime: '5 min', publishedAt: '2026-05-07',
+    category: 'Food', readTime: '5 min', publishedAt: '2026-05-07', updatedAt: '2026-08-29',
     tags: ['Seoul', 'South Korea', 'Halal food'],
     content: `<p><strong>Halal food in Seoul</strong> has boomed with Muslim tourism: from the mosque district of Itaewon to halal Korean BBQ, here is where Muslims actually eat.</p>
 <h2>Itaewon: the Muslim heart of Seoul</h2>
