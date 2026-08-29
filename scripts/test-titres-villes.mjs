@@ -99,5 +99,18 @@ if (!/meilleurs-hotels-halal-istanbul/.test(data)) {
   casse('la page hôtels halal Istanbul a disparu de lib/data.ts — elle devait rester telle quelle')
 }
 
+// ── 6. le titre ne gaspille pas la place dont il dispose ──
+// 29 août : /destinations/marrakech servait 42 caractères sur 60 — la
+// version complète dépassait d'UN caractère et le repli sautait à la
+// version nue, perdant « et les restos halal ». 45 titres français
+// tombaient ainsi. Un titre court n'est pas un défaut en soi ; un titre
+// court PARCE QU'UN PALIER MANQUE en est un.
+{
+  const COURTS = [...vus.keys()].filter((t) => /^Où prier à /.test(t) && t.length < 46 && !/restos halal/.test(t))
+  if (COURTS.length > 12) {
+    casse(`${COURTS.length} titres français tombent sous 46 caractères sans seconde promesse — un palier de repli manque (ex. « ${COURTS[0]} »)`)
+  }
+}
+
 if (fautes) { console.error(`\n${fautes} faute(s) — build arrêté.`); process.exit(1) }
 console.log(`✅ titres villes : ${nbVilles} villes × 2 langues, tous < ${MAX_TITRE} c, chiffres vérifiés (${nbAvecOsm} comptés par OpenStreetMap, ${nbPlafond} au plafond donc en « 60+ »), aucun doublon. Plus long : ${plusLong.n} c.`)

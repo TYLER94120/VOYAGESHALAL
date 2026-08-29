@@ -973,3 +973,80 @@ plus de 60 % des articles se déclareraient modifiés.
 
 Disneyland, Orly, CDG et Puy du Fou avec leur **nouveau** titre. C'est là
 que se lira l'effet réel du chantier du 27 — pas avant.
+
+---
+
+# 📊 29 AOÛT — SEARCH CONSOLE, PAGES, 3 MOIS, MOBILE
+
+Export demandé, reçu. voyageshalal.fr — **128 clics · 3 560 impressions ·
+CTR 3,6 % · position 12,3**.
+
+## 1. Le taux de clic n'est plus le problème
+
+3,6 % en mobile, contre 1,0 % tous appareils au relevé du 21 août. À la
+position 12,3, c'est un bon taux. Le syndrome Marrakech — « ils nous voient
+et ne cliquent pas » — n'est plus le sujet principal.
+
+## 2. 🔴 LE PLAFOND : ~30 PAGES SUR 810 EXISTENT POUR GOOGLE
+
+L'onglet Pages ne liste que celles qui ont eu au moins un affichage. Il en
+compte **une trentaine** — sur **810 URL au sitemap**. Autrement dit,
+**96 % du site n'a jamais été montré à personne** en trois mois.
+
+Ce n'est plus un problème de titre : c'est un problème de **couverture**.
+Gagner encore un point de taux de clic rapporterait ~35 clics par
+trimestre ; doubler les affichages en rapporterait 128.
+
+➡️ **Prochaine mesure : Search Console → Indexation → Pages.** Combien de
+pages indexées, combien exclues, et pour quel motif. C'est là que se joue
+le prochain gain.
+
+## 3. Le classement des pages
+
+| Page | Clics | Impr. | CTR | Position |
+|---|---|---|---|---|
+| /blog/ou-prier-disneyland-paris | 7 | 255 | 2,7 % | 7,7 |
+| /blog/ou-prier-parc-asterix | 5 | 14 | **35,7 %** | **2,3** |
+| /guides/ou-prier-aeroport-guide *(301)* | 3 | 195 | 1,5 % | 9,5 |
+| /blog/ou-prier-aeroport-orly | 2 | 95 | 2,1 % | 10,8 |
+| /guides/ou-prier-disneyland-paris *(301)* | 2 | 24 | 8,3 % | 8,0 |
+| /hotels/istanbul | 1 | 181 | 0,6 % | **67,5** |
+| **/destinations/marrakech** | **0** | **146** | **0 %** | **8,2** |
+
+Trois lectures :
+
+- **Parc Astérix : 35,7 % de clic en position 2,3.** Le titre honnête
+  (« pas de salle de prière ») est en ligne sur cette page, et c'est le
+  meilleur taux du site. Petit volume, mais la preuve tient.
+- **Les deux anciennes URL redirigées portent encore 219 affichages.** Les
+  301 font leur travail ; rien à corriger.
+- **/hotels/istanbul, position 67,5** : confirmé perdu, comme dit le
+  21 août. Ne pas y toucher.
+
+## 4. 🔴 CE QUE LES CHIFFRES ONT FAIT TROUVER : un titre amputé pour UN caractère
+
+`/destinations/marrakech` : 146 affichages, position 8,2, zéro clic — la
+deuxième réserve du site. Son titre servi ne faisait que **42 caractères
+sur les 60 disponibles** :
+
+> « Où prier à Marrakech : 142 lieux de prière »
+
+La version complète — « … et les restos halal » — en fait **62**. Elle
+dépasse d'**un caractère**, et le repli sautait directement à la version
+nue : dix-huit caractères de promesse perdus pour un de trop.
+
+**Mesuré sur les 343 villes qui ont un compte : 45 titres français
+tombaient ainsi.** Un palier intermédiaire — la même promesse écrite court,
+« , restos halal » — en récupère **42**. L'anglais n'en perdait que 4,
+parce qu'il utilisait déjà la forme courte (« , halal food ») : c'est
+l'écart de longueur entre les deux langues qui a créé le défaut.
+
+| | avant | après |
+|---|---|---|
+| Marrakech | 42 c — Où prier à Marrakech : 142 lieux de prière | 56 c — …, restos halal |
+| Abu Dhabi | 42 c | 56 c |
+| Alexandrie | 43 c | 57 c |
+
+`scripts/test-titres-villes.mjs` refuse désormais qu'une douzaine de titres
+retombent sous 46 caractères sans seconde promesse — un titre court n'est
+pas un défaut, un titre court **parce qu'un palier manque** en est un.
