@@ -159,8 +159,18 @@ a.srow:hover { border-color: var(--or-bordure); }
   text-align: right;
 }
 .s-tr { flex-grow: 1; font-size: 14.5px; min-width: 0; }
+/* Le nombre de versets. Chiffres a chasse fixe : sur 114 lignes empilees, des
+   chiffres de largeurs differentes font onduler la colonne. */
+.s-nb {
+  font-size: 12px;
+  color: var(--texte-3);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
 .s-fl { color: var(--or-texte); font-size: 15px; }
 
 @media (max-width: 340px) {
   .s-ar { min-width: 72px; font-size: 17px; }
+  .s-nb { font-size: 11px; }
 }

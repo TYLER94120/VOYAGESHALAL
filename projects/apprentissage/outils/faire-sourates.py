@@ -11,10 +11,18 @@ elle, chaque lecon est une impasse que rien n'annonce.
 
 CE QU'ELLE CONTIENT, ET RIEN D'AUTRE
 ------------------------------------
-Le numero, le nom arabe, le nom en francais. Ces trois colonnes viennent de
-`outils/coran/noms-sourates.json`, le meme fichier que le QCM. Aucun nombre de
-versets annonce ici : il faudrait le recompter, et un chiffre affiche sans
-etre verifie est exactement ce que ce site s'interdit.
+Le numero, le nom arabe, le nom en francais, et le nombre de versets.
+
+LE NOMBRE DE VERSETS A LONGTEMPS MANQUE, et pour une bonne raison : il aurait
+fallu le recopier d'ailleurs, et un chiffre affiche sans etre verifie est
+exactement ce que ce site s'interdit. Il est desormais COMPTE dans
+`ara-quransimple.json`, la meme edition que celle des lecons, et
+`controler-lecons.py` recompte deja ces memes nombres sur les vingt lecons
+publiees. La raison de l'omettre a disparu ; la colonne arrive.
+
+Elle sert aussi a quelque chose de precis : « combien de versets dans la
+sourate X » est une question que les gens posent vraiment, et cette page n'y
+repondait pas alors qu'elle en avait les moyens.
 
 Les sourates qui ont une lecon deviennent des LIENS ; les 94 autres restent
 des lignes. On ne promet pas une page qui n'existe pas.
@@ -42,16 +50,21 @@ def ardoise(nom):
     return re.sub(r'-{2,}', '-', re.sub(r'[^a-z0-9-]', '', s)).strip('-')
 
 
-TITRE = 'Les 114 sourates du Coran : noms et numéros'
-DESC = ('La liste des 114 sourates du Coran dans l\'ordre, avec le nom en arabe, '
-        'le nom en français et le numéro de chacune. Vingt sont expliquées '
-        'verset par verset.')
+TITRE = 'Les 114 sourates du Coran : noms et nombre de versets'
+DESC = ("Les 114 sourates du Coran dans l'ordre : nom en arabe, nom en français, numéro et nombre de versets. Vingt d'entre elles sont expliquées verset par verset.")
 
 
 def main():
     noms = json.loads((CORAN / 'noms-sourates.json').read_text(encoding='utf-8'))
     if len(noms) != 114:
         sys.exit('ARRET : %d sourates au lieu de 114.' % len(noms))
+
+    # Les versets, COMPTES et non recopies.
+    from collections import Counter
+    ar = json.loads((CORAN / 'ara-quransimple.json').read_text(encoding='utf-8'))['quran']
+    versets = Counter(v['chapter'] for v in ar)
+    if len(versets) != 114 or sum(versets.values()) != len(ar):
+        sys.exit('ARRET : le comptage des versets ne couvre pas les 114 sourates.')
 
     # Les lecons REELLEMENT presentes sur le disque. On ne lit pas une liste
     # ecrite a la main : elle vieillirait des la premiere lecon ajoutee ou
@@ -128,8 +141,9 @@ def main():
     <div class="lecon-tete">
       <h1 class="t-page">%(titre)s</h1>
       <p class="lecon-quoi">Les 114 sourates dans l'ordre du Coran, avec leur
-        nom en arabe et en français. <strong>%(n)d d'entre elles</strong> sont
-        expliquées verset par verset&nbsp;: leur nom est en vert.</p>
+        nom en arabe, en français, et leur nombre de versets.
+        <strong>%(n)d d'entre elles</strong> sont expliquées verset par
+        verset&nbsp;: leur nom est en vert.</p>
     </div>
 
     <ol class="srows">
@@ -140,7 +154,8 @@ def main():
         dedans = ('<span class="s-num">%d</span>'
                   '<span class="s-ar" lang="ar" dir="rtl">%s</span>'
                   '<span class="s-tr">%s</span>'
-                  % (s['n'], echapper(s['ar']), echapper(s['tr'])))
+                  '<span class="s-nb">%d&nbsp;v.</span>'
+                  % (s['n'], echapper(s['ar']), echapper(s['tr']), versets[s['n']]))
         if s['n'] in avec:
             h += ('      <li><a class="srow" href="%s">%s'
                   '<span class="s-fl" aria-hidden="true">&rsaquo;</span></a></li>\n'

@@ -164,6 +164,26 @@ def main():
         if not entrants.get(nom_page):
             fautes.append('%s : aucune page du site n\'y mene' % nom_page)
 
+    # LES 114 NOMBRES DE VERSETS DE sourates.html SE RECOMPTENT.
+    # Ils sont affiches sur une page indexee ; un chiffre faux y serait une
+    # affirmation fausse sur le Coran, sur une page publique, au nom de
+    # l'editeur. On ne fait donc pas confiance au generateur : on relit la
+    # page telle qu'elle est ecrite et on recompte depuis le corpus.
+    index = RACINE / 'sourates.html'
+    if index.is_file():
+        t = index.read_text(encoding='utf-8')
+        lignes = re.findall(
+            r'<span class="s-num">(\d+)</span>.*?<span class="s-nb">(\d+)&nbsp;v\.</span>',
+            t, re.S)
+        if len(lignes) != 114:
+            fautes.append('sourates.html : %d lignes avec un nombre de versets, '
+                          'attendu 114' % len(lignes))
+        for num, dit in lignes:
+            vrai = max((v for (c, v) in ar if c == int(num)), default=0)
+            if int(dit) != vrai:
+                fautes.append('sourates.html : sourate %s annoncee a %s versets, '
+                              'le corpus en compte %d' % (num, dit, vrai))
+
     if fautes:
         print('  %d FAUTE(S) — le lot est refuse :' % len(fautes))
         for x in fautes[:25]:
@@ -176,6 +196,7 @@ def main():
           % (len(pages), versets_lus))
     print('  Texte arabe, traduction, reference et compte : conformes au Coran.')
     print('  Titres, descriptions, canonical, sitemap et maillage : conformes.')
+    print('  Les 114 nombres de versets de sourates.html ont ete recomptes.')
 
 
 if __name__ == '__main__':
