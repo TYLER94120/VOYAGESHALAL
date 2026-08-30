@@ -2697,7 +2697,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <p><strong>Is there a prayer room at Disneyland Paris?</strong> No official signposted room. Travellers report a quiet space offered on request at City Hall; we have not verified it.<br/>
 <strong>Does it cost anything?</strong> No, requests of this kind are not charged for.<br/>
 <strong>Can you pray outdoors in the park?</strong> Nothing forbids it somewhere that does not block the way. The far ends of the lands are the quietest.<br/>
-<strong>What about halal food there?</strong> See our <a href="/destinations/paris">halal guide to Paris</a> and our <a href="/spots">traveller-shared spots</a>.<br/>
+<strong>What about halal food there?</strong> See our <a href="/destinations/paris">halal guide to Paris</a> and our <a href="/trouvailles">traveller-shared spots</a>.<br/>
 <strong>And at the airport before or after?</strong> See <a href="/blog/where-to-pray-paris-airports">airport prayer rooms</a>.</p>
 
 <h2>Help the community</h2>
@@ -3170,7 +3170,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <p><strong>10. <a href="/destinations/bruxelles">Bruxelles</a></strong> — 1 h 25 de train : gaufres, Grand-Place et une vraie densité de restos halal. Le week-end musulman le plus simple de la liste. Et si tu passes par l'aéroport : <a href="/blog/ou-prier-aeroport-bruxelles">où prier à Bruxelles-Zaventem</a>.</p>
 
 <h2>Les 3 réflexes avant de partir</h2>
-<p>1) Vérifie les horaires de prière de ta destination avec notre outil <a href="/horaires-priere">horaires de prière</a>. 2) Repère un <a href="/spots">spot confirmé par la communauté</a> près de ton hôtel. 3) En déplacement, tu peux <a href="/blog/prier-en-avion">raccourcir et regrouper tes prières</a> — les facilités du voyageur existent pour ça.</p>
+<p>1) Vérifie les horaires de prière de ta destination avec notre outil <a href="/horaires-priere">horaires de prière</a>. 2) Repère un <a href="/trouvailles">spot confirmé par la communauté</a> près de ton hôtel. 3) En déplacement, tu peux <a href="/blog/prier-en-avion">raccourcir et regrouper tes prières</a> — les facilités du voyageur existent pour ça.</p>
 
 <h2>Aide le prochain voyageur</h2>
 <p>Tu pars ce week-end ? Si tu découvres un coin prière, un resto halal ou une pépite, <a href="/communaute/ajouter">partage-la en 15 secondes</a> — une sadaqa jâriya qui servira à tous ceux qui partiront après toi.</p>
@@ -3915,7 +3915,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <p><strong>Y a-t-il une salle de prière à Disneyland Paris ?</strong> Pas de salle officielle signalée. Des voyageurs rapportent qu'un espace calme est proposé sur demande au City Hall ; nous ne l'avons pas vérifié.<br/>
 <strong>Est-ce payant ?</strong> Non, aucune demande de ce type n'est facturée.<br/>
 <strong>Peut-on prier dehors dans le parc ?</strong> Rien ne l'interdit dans un endroit qui ne gêne pas le passage. Les extrémités des zones sont les plus tranquilles.<br/>
-<strong>Et pour manger halal sur place ?</strong> Voir notre <a href="/destinations/paris">guide halal de Paris</a> et nos <a href="/spots">spots partagés par des voyageurs</a>.<br/>
+<strong>Et pour manger halal sur place ?</strong> Voir notre <a href="/destinations/paris">guide halal de Paris</a> et nos <a href="/trouvailles">spots partagés par des voyageurs</a>.<br/>
 <strong>Et à l'aéroport avant ou après ?</strong> Voir <a href="/blog/ou-prier-aeroports">les salles de prière des aéroports</a>.</p>
 
 <h2>Aide la communauté</h2>

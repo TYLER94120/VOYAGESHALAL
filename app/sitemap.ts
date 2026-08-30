@@ -40,6 +40,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticPages: MetadataRoute.Sitemap = [
     { url: SITE_URL, lastModified: now, changeFrequency: 'weekly', priority: 1 },
     { url: `${SITE_URL}/destinations`, lastModified: now, changeFrequency: 'weekly', priority: 0.9, alternates: { languages: { fr: `${FR_URL}/destinations`, en: `${EN_URL}/destinations` } } },
+    // 🕸 30 août : le hub /hotels était servi en 200, portait 333 pages villes
+    //    sous lui — et n'était annoncé nulle part. Il est la seule porte
+    //    d'entrée de cette famille : il doit être au sitemap.
+    { url: `${SITE_URL}/hotels`, lastModified: now, changeFrequency: 'weekly', priority: 0.9, alternates: { languages: { fr: `${FR_URL}/hotels`, en: `${EN_URL}/hotels` } } },
     { url: `${SITE_URL}/guides`, lastModified: now, changeFrequency: 'weekly', priority: 0.8 },
     { url: `${SITE_URL}/blog`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
     { url: L('/application'), lastModified: revision, changeFrequency: 'monthly', priority: 0.7, alternates: pageAlternates('/application') },

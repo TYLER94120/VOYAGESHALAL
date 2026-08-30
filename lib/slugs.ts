@@ -93,3 +93,48 @@ export const BLOG_FR_TO_EN: Record<string, string> = {
   'ablutions-avion-train': '/blog/wudu-on-a-plane-or-train',
   'heure-priere-avion-fuseaux': '/blog/prayer-times-on-a-plane-time-zones',
 }
+
+// 🇬🇧 UN LIEN INTERNE NE DOIT JAMAIS FAIRE UNE 301.
+//
+// Mesuré le 30 août sur gohalaltravel.com (scratchpad/maillage.mjs) : au moins
+// 75 liens internes du site ANGLAIS pointaient vers un slug FRANÇAIS et
+// partaient donc en redirection —
+//   /guides/top-destinations-halal-2026 ×16, /guides/lune-de-miel-halal ×7,
+//   /horaires-priere ×8, /mosquee-proche ×6, /application ×20…
+// Une 301 sur un lien interne coûte deux passages de robot au lieu d'un, dilue
+// ce que le lien transmet, et affiche une URL française à un lecteur anglais.
+//
+// Cette fonction rend le chemin ANGLAIS quand le jumeau existe, et `null`
+// quand il n'existe pas : la règle de la maison (slugs.ts, en tête de fichier)
+// est qu'un guide FR sans jumeau EN n'est pas listé sur le domaine EN. On
+// n'invente pas une traduction pour garder un lien.
+export function lienGuideLocalise(
+  slug: string,
+  type: 'guide' | 'blog' | string,
+  isEN: boolean,
+): string | null {
+  const frPath = `/${type === 'blog' ? 'blog' : 'guides'}/${slug}`
+  if (!isEN) return frPath
+  if (type === 'blog') return BLOG_FR_TO_EN[slug] ?? null
+  const en = GUIDES_FR_TO_EN[slug]
+  return en ? `/guides/${en}` : null
+}
+
+/** Réécrit les liens internes d'un corps d'article pour le domaine servi.
+ *
+ *  30 août : 14 articles ANGLAIS écrivaient en dur des chemins FRANÇAIS —
+ *  texte anglais, URL française : « Our <a href="/horaires-priere">prayer
+ *  times</a> tool ». Chacun de ces liens partait en 301.
+ *
+ *  Le correctif vit ici, au RENDU, et non dans les 14 corps d'articles :
+ *  corriger les textes laisserait la faute revenir au prochain article écrit.
+ *  Seuls les chemins de SECTION sont traduits (table FR_TO_EN_SLUG) — un
+ *  article dont il n'existe pas de jumeau n'est pas réécrit au hasard.
+ */
+export function liensArticleLocalises(html: string, isEN: boolean): string {
+  if (!isEN) return html
+  return html.replace(/href="(\/[a-z0-9-]+)"/g, (tout, chemin) => {
+    const en = FR_TO_EN_SLUG[chemin]
+    return en ? `href="${en}"` : tout
+  })
+}

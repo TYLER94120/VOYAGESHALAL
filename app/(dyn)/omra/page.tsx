@@ -5,6 +5,7 @@ import JsonLd from '@/components/seo/JsonLd'
 import EmailCapture from '@/components/ui/EmailCapture'
 import OmraLeadForm from '@/components/omra/OmraLeadForm'
 import { getDomainSEO } from '@/lib/domain'
+import { lienGuideLocalise } from '@/lib/slugs'
 
 export async function generateMetadata(): Promise<Metadata> {
   const { isEN, siteUrl } = await getDomainSEO()
@@ -122,7 +123,7 @@ export default async function OmraPage() {
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
-                href="/guides/omra-2026-guide-complet"
+                href={lienGuideLocalise('omra-2026-guide-complet', 'guide', en) ?? '/guides'}
                 style={{ backgroundColor: '#c9a870', color: '#1a3a2a' }}
                 className="font-bold text-sm px-8 py-3.5 rounded-full hover:opacity-90 transition-opacity"
               >
@@ -165,9 +166,9 @@ export default async function OmraPage() {
         <section className="max-w-5xl mx-auto px-4 sm:px-8 py-14">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
-              { icon: '📋', title: en ? 'Preparation' : 'Préparation', desc: en ? 'Visa, documents, vaccines and full checklist.' : 'Visa, documents, vaccins et check-list complète.', href: '/guides/omra-2026-guide-complet' },
-              { icon: '💰', title: en ? 'Packages & Budget' : 'Forfaits & Budget', desc: en ? 'Price comparison by season and standard.' : 'Comparatif prix selon période et standing.', href: '/guides/omra-2026-guide-complet' },
-              { icon: '🕌', title: en ? 'Rituals' : 'Rituels', desc: en ? 'The 5 steps of Umrah explained simply.' : 'Les 5 étapes de l\'Omra expliquées simplement.', href: '/guides/omra-2026-guide-complet' },
+              { icon: '📋', title: en ? 'Preparation' : 'Préparation', desc: en ? 'Visa, documents, vaccines and full checklist.' : 'Visa, documents, vaccins et check-list complète.', href: lienGuideLocalise('omra-2026-guide-complet', 'guide', en) ?? '/guides' },
+              { icon: '💰', title: en ? 'Packages & Budget' : 'Forfaits & Budget', desc: en ? 'Price comparison by season and standard.' : 'Comparatif prix selon période et standing.', href: lienGuideLocalise('omra-2026-guide-complet', 'guide', en) ?? '/guides' },
+              { icon: '🕌', title: en ? 'Rituals' : 'Rituels', desc: en ? 'The 5 steps of Umrah explained simply.' : 'Les 5 étapes de l\'Omra expliquées simplement.', href: lienGuideLocalise('omra-2026-guide-complet', 'guide', en) ?? '/guides' },
               { icon: '🧭', title: en ? 'Practical guides' : 'Guides pratiques', desc: en ? 'Accommodation, transport, food in Mecca.' : 'Hébergement, transport, nourriture à La Mecque.', href: '/destinations/medine' },
             ].map((block) => (
               <Link

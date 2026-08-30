@@ -31,16 +31,16 @@ export default function AppCTA({ variant = 'section' }: Props) {
       </p>
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
         <Link href={localizedHref('/application', en)} className="bg-white text-emerald-700 px-8 py-3 rounded-full font-bold hover:bg-emerald-50 transition-colors">
-          Découvrir l&apos;application
+          {en ? 'Discover the app' : 'Découvrir l\u2019application'}
         </Link>
-        <Link href="/application#waitlist" className="border-2 border-white/50 text-white px-8 py-3 rounded-full font-semibold hover:border-white transition-colors">
-          Rejoindre la liste d&apos;attente
+        <Link href={`${localizedHref('/application', en)}#waitlist`} className="border-2 border-white/50 text-white px-8 py-3 rounded-full font-semibold hover:border-white transition-colors">
+          {en ? 'Join the waiting list' : 'Rejoindre la liste d\u2019attente'}
         </Link>
       </div>
       <div className="mt-8 flex justify-center gap-8 text-sm text-emerald-200">
         <span>✓ {en ? '100% free' : '100% gratuit'}</span>
         <span>✓ iOS & Android</span>
-        <span>✓ Sans publicité</span>
+        <span>✓ {en ? 'No ads' : 'Sans publicité'}</span>
       </div>
     </section>
   )

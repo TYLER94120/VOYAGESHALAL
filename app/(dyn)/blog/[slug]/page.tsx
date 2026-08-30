@@ -8,6 +8,7 @@ import EmailCapture from '@/components/ui/EmailCapture'
 import { ShareButtons } from '@/components/ShareButtons'
 import { getDomainSEO } from '@/lib/domain'
 import { alternatesFor } from '@/lib/hreflang'
+import { liensArticleLocalises } from '@/lib/slugs'
 import { updatedAtOf, fmtMonthYear, cityOfArticle } from '@/lib/freshness'
 import CommunityCTA from '@/components/blog/CommunityCTA'
 import GarderSpot from '@/components/blog/GarderSpot'
@@ -119,7 +120,7 @@ export default async function BlogPostPage({ params }: Props) {
           <article
             className="prose prose-lg max-w-none text-gray-700 leading-relaxed"
             style={{ '--tw-prose-headings': '#1a3a2a', '--tw-prose-links': '#c9a870' } as React.CSSProperties}
-            dangerouslySetInnerHTML={{ __html: post.content }}
+            dangerouslySetInnerHTML={{ __html: liensArticleLocalises(post.content, isEN) }}
           />
 
           {/* ⭐ Garder l'adresse — placé juste après le contenu, avant le

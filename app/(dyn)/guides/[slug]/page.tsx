@@ -13,6 +13,7 @@ import CommunityCTA from '@/components/blog/CommunityCTA'
 import GuideHero from '@/components/guides/GuideHero'
 import Sommaire from '@/components/guides/Sommaire'
 import { preparerGuide } from '@/lib/guideHtml'
+import { liensArticleLocalises } from '@/lib/slugs'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -105,7 +106,7 @@ export default async function GuidePage({ params }: Props) {
 
         <article
           className="prose prose-lg prose-emerald max-w-none guide-prose"
-          dangerouslySetInnerHTML={{ __html: contenu }}
+          dangerouslySetInnerHTML={{ __html: liensArticleLocalises(contenu, isEN) }}
         />
 
         {guide.faq?.length ? (

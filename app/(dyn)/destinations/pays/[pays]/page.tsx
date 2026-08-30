@@ -6,6 +6,9 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { countries, getCountryBySlug, continentLabel } from '@/lib/countriesData'
+import { lienGuideLocalise } from '@/lib/slugs'
+import { guidesEn } from '@/lib/guidesEn'
+import { blogPosts } from '@/lib/data'
 import { buildMetadata, buildBreadcrumbSchema, buildFAQSchema } from '@/lib/seo'
 import JsonLd from '@/components/seo/JsonLd'
 import EmailCapture from '@/components/ui/EmailCapture'
@@ -123,6 +126,24 @@ export default async function CountryPage({ params }: Props) {
     .filter((c) => c.continent === country.continent && c.slug !== country.slug)
     .slice(0, 8)
   const nomLoc = countryEn(country.name, en)
+
+  // Guides liés, résolus DANS LA LANGUE DU DOMAINE : chemin anglais et titre
+  // anglais sur gohalaltravel.com, rien du tout si le guide n'a pas de jumeau.
+  const guidesLies = country.relatedGuides
+    .map((g) => {
+      const href = lienGuideLocalise(g.slug, g.type, en)
+      if (!href) return null
+      if (!en) return { href, title: g.title }
+      // Le titre vient du jumeau anglais, jamais du gabarit français : un
+      // titre FR sur le domaine EN est la même faute que l'URL FR.
+      const jg = guidesEn.find((x) => href === `/guides/${x.slug}`)
+      if (jg) return { href, title: jg.title }
+      const jb = blogPosts.find((x) => href === `/blog/${x.slug}`)
+      if (jb) return { href, title: jb.title }
+      // Sans titre anglais, pas de lien : on ne traduit rien à la volée.
+      return null
+    })
+    .filter((g): g is { href: string; title: string } => g !== null)
 
   const breadcrumbSchema = buildBreadcrumbSchema([
     { name: 'Accueil', url: '/' },
@@ -372,14 +393,22 @@ export default async function CountryPage({ params }: Props) {
               </div>
             </div>
 
-            {/* Guides liés */}
-            {country.relatedGuides.length > 0 && (
+            {/* 🔗 Guides liés.
+                30 août : sur le domaine ANGLAIS, ces liens sortaient en slug
+                FRANÇAIS — 16 pages pays pointaient vers
+                /guides/top-destinations-halal-2026, qui répond 301. Un lien
+                interne qui redirige coûte deux passages de robot et affiche
+                une URL française à un lecteur anglais. Le titre venait du
+                même endroit et restait français lui aussi.
+                Un guide sans jumeau anglais n'est PAS listé sur le domaine EN :
+                on ne fabrique pas une traduction pour sauver un lien. */}
+            {guidesLies.length > 0 && (
               <div className="bg-white rounded-2xl p-5 border border-gray-100">
-                <h2 className="font-bold text-xs text-gray-500 uppercase tracking-[0.15em] mb-3">Nos guides</h2>
+                <h2 className="font-bold text-xs text-gray-500 uppercase tracking-[0.15em] mb-3">{en ? 'Our guides' : 'Nos guides'}</h2>
                 <ul className="space-y-3">
-                  {country.relatedGuides.map((g) => (
-                    <li key={g.slug}>
-                      <Link href={`/${g.type === 'blog' ? 'blog' : 'guides'}/${g.slug}`} className="flex items-start gap-2 group">
+                  {guidesLies.map((g) => (
+                    <li key={g.href}>
+                      <Link href={g.href} className="flex items-start gap-2 group">
                         <span style={{ color: '#c9a870' }} className="shrink-0 font-bold text-sm">→</span>
                         <span className="text-sm text-gray-700 group-hover:text-[#1a3a2a] transition-colors leading-snug">{g.title}</span>
                       </Link>

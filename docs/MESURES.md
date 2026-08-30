@@ -1257,3 +1257,95 @@ chiffre du site est **6,5 %**.
 ⚠️ Position du 27 août : **22,3 en mobile, 39,5 tous appareils.** Le même
 site, le même jour. Toute décision prise sur la seconde serait prise sur du
 bruit.
+
+---
+
+## 30 août — le maillage interne : 561 pages orphelines, 925 inatteignables
+
+Mohamed : « Le problème n'est pas l'indexation. Il y a beaucoup
+d'impressions. Le problème, c'est le taux de clic. » Sa moyenne dit
+l'inverse : **6,5 % de CTR à la position 22,3**, six fois au-dessus du
+normal pour cette position — un taux anormalement HAUT, tenu par cinq pages
+en position 1-5. Mais la moyenne ne peut pas répondre page par page, et je
+lui ai demandé le relevé qui tranche (Performances → Pages, mobile, avec les
+colonnes CTR et Position). En attendant, j'ai mesuré ce qui ne dépend
+d'aucun relevé.
+
+**L'instrument.** `scratchpad/maillage.mjs` : les deux sitemaps, chaque page
+demandée au serveur de production, les `<a href>` du HTML servi (hors
+`<script>` : un chemin cité dans du JSON-LD n'est pas un lien). En-tête
+`Host` transmis par `node:http`, `fetch` le refusant. Le sitemap doit
+annoncer le bon domaine, sinon le script s'arrête — sans quoi on mesure deux
+fois le site français.
+
+⚠️ **Et l'instrument m'a menti une fois.** Après le premier correctif, la
+mesure a rendu des chiffres RIGOUREUSEMENT identiques. Le `pkill` avait
+échoué, l'ancien serveur tenait toujours le port 3400, et je mesurais
+l'ancien build. Le signe qui l'a trahi : le sitemap annonçait encore 806 URL
+au lieu de 807. **Vérifier l'instrument, pas seulement avant la première
+mesure — avant chaque mesure.**
+
+### Ce qui a été trouvé
+
+| | voyageshalal.fr | gohalaltravel.com |
+|---|---|---|
+| orphelines (aucun lien entrant) | 281 | 280 |
+| inatteignables depuis l'accueil | 581 | 344 |
+
+Une page ORPHELINE ne reçoit aucun lien d'une autre page. Une page
+INATTEIGNABLE n'a aucun chemin de liens depuis l'accueil. Elles sont au
+sitemap, servies en 200 — mais un robot arrive par les liens. C'est
+l'explication la plus probable des ~30 pages sur 810 qui obtiennent un
+affichage.
+
+Trois causes, toutes mesurées :
+
+1. **Le hub /hotels ne liait AUCUNE page hôtel.** Tous ses liens sortants
+   partaient chez HalalBooking : 333 pages `/hotels/[ville]` orphelines. Et
+   le hub lui-même, servi en 200, n'était annoncé à aucun sitemap.
+2. **La grille des destinations est rendue par le client.** 111 liens dans
+   le HTML servi sur 354 villes : 248 fiches sans chemin depuis l'accueil.
+   *Un lien que seul le navigateur écrit ne raccroche rien.*
+3. **Les 19 pages pays formaient un îlot.** Elles se lient entre elles
+   (bloc « aussi en Asie ») et rien ne pointait dedans.
+
+Plus, sur le domaine anglais : **75 liens internes au moins partaient en
+301** vers un slug français — `/guides/top-destinations-halal-2026` ×16,
+`/application` ×20, `/horaires-priere` ×8. Quatorze articles ANGLAIS
+écrivaient en dur des chemins FRANÇAIS : texte anglais, URL française
+(« Our `<a href="/horaires-priere">`prayer times`</a>` tool »). Et les pages
+pays affichaient à des lecteurs anglais des titres de guides en français.
+
+### Ce qui a été fait
+
+`components/maillage/IndexLiens.tsx` — un index **rendu par le serveur**,
+sans `use client` : c'est toute sa raison d'être. Posé sur `/hotels` (villes
+au-dessus de `HOTELS_MIN_INDEX`, le même seuil que le sitemap : sous ce
+nombre la page se déclare noindex et la lier enverrait Google dans le vide)
+et sur `/destinations` (toutes les villes, puis tous les pays). `/hotels`
+ajouté au sitemap et au socle de l'accueil anglais — le pied de page qui le
+citait vivait dans l'accueil FRANÇAIS, une autre route.
+
+Les liens FR sur le domaine EN sont réparés **au rendu** (`lienGuideLocalise`,
+`liensArticleLocalises`), pas dans les 14 corps d'articles : corriger les
+textes aurait laissé la faute revenir au prochain article écrit. Un guide
+sans jumeau anglais n'est pas listé sur le domaine EN — on ne fabrique pas
+une traduction pour sauver un lien.
+
+### Après (même instrument, build vérifié)
+
+| | voyageshalal.fr | gohalaltravel.com |
+|---|---|---|
+| orphelines | **0** | **0** |
+| inatteignables | **0** | **0** |
+| profondeur maximale | 2 clics | 3 clics |
+| liens internes qui redirigent | 0 | 0 |
+
+`scripts/test-maillage.mjs` tient les mécanismes (il tourne à la
+construction, sans serveur : il ne peut pas compter les orphelines). Chaque
+contrôle a été vérifié en réintroduisant la faute — dont un qui passait à
+tort, `<IndexLiens` acceptant `<IndexLiensX`.
+
+🔴 **Ce que cela ne prouve pas.** Le maillage était cassé, il ne l'est plus.
+Que ce soit LA cause des 780 pages sans affichage reste une hypothèse tant
+que le relevé Performances → Pages n'est pas arrivé.

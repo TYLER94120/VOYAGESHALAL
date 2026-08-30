@@ -5,7 +5,10 @@ import path from 'path'
 import { getDomainSEO, FR_URL, EN_URL } from '@/lib/domain'
 import PepiteFinder from '@/components/hotels/PepiteFinder'
 import ReleveForm from '@/components/hotels/ReleveForm'
+import IndexLiens, { type LienIndex } from '@/components/maillage/IndexLiens'
+import { HOTELS_MIN_INDEX } from '@/components/hotels/HotelsRoute'
 import { hotelBookingUrl } from '@/lib/affiliate'
+import { cityEn, countryEn } from '@/lib/poiI18n'
 
 // 🏨 Hub Hôtels — 100 % HALALBOOKING (décision produit : Booking & co ne sont
 // pas orientés halal). Honnêteté : équipements « vérifiés » = listes
@@ -54,10 +57,33 @@ function loadVerifies() {
   return out
 }
 
+// 🕸 Les villes qui ONT une page hôtel indexable — mesure du 30 août : ce hub
+// n'en liait aucune (tous ses liens sortants partaient chez HalalBooking), et
+// les 333 pages /hotels/[ville] étaient orphelines. Le seuil est le MÊME que
+// celui du sitemap et de la page (HOTELS_MIN_INDEX) : sous ce nombre d'hôtels
+// la page se déclare noindex, la lier ici enverrait Google dans le vide.
+function loadVillesHotels(en: boolean): LienIndex[] {
+  const out: LienIndex[] = []
+  try {
+    for (const f of readdirSync(path.join(process.cwd(), 'data', 'villes'))) {
+      if (!f.endsWith('.json')) continue
+      try {
+        const d = JSON.parse(readFileSync(path.join(process.cwd(), 'data', 'villes', f), 'utf8'))
+        if ((d.hotels?.length ?? 0) < HOTELS_MIN_INDEX) continue
+        const slug = d.slug ?? f.replace('.json', '')
+        // Noms traduits par le MÊME service que le reste du site.
+        out.push({ href: `/hotels/${slug}`, nom: cityEn(d.nom ?? slug, en), groupe: countryEn(d.pays ?? '', en) })
+      } catch { /* fiche illisible : on ne devine pas */ }
+    }
+  } catch { /* dossier absent */ }
+  return out.sort((a, b) => a.nom.localeCompare(b.nom, 'fr'))
+}
+
 export default async function HotelsPage() {
   const { isEN: en } = await getDomainSEO()
   const releves = loadReleves()
   const verifies = loadVerifies()
+  const villesHotels = loadVillesHotels(en)
 
   return (
     <main style={{ background: 'var(--nuit)', minHeight: '100dvh', padding: '26px 16px 80px' }}>
@@ -147,7 +173,18 @@ export default async function HotelsPage() {
             ? 'Some links are affiliate links (no extra cost to you) — they fund the free community project. We never certify a hotel\'s halal status: verify on site.'
             : 'Certains liens sont affiliés (aucun surcoût pour toi) — ils financent le projet communautaire gratuit. Nous ne certifions jamais le statut halal d\'un hôtel : vérifie sur place.'}
         </p>
-        <p style={{ marginTop: 8, fontSize: 14 }}>
+        {/* 🕸 L'index qui rattache les pages hôtel — voir IndexLiens. */}
+        <div style={{ color: '#fdfaf3' }}>
+          <IndexLiens
+            titre={en ? 'Halal hotels city by city' : 'Les hôtels halal ville par ville'}
+            intro={en
+              ? `${villesHotels.length} cities where we list at least ${HOTELS_MIN_INDEX} hotels.`
+              : `${villesHotels.length} villes où nous listons au moins ${HOTELS_MIN_INDEX} hôtels.`}
+            liens={villesHotels}
+          />
+        </div>
+
+        <p style={{ marginTop: 22, fontSize: 14 }}>
           <Link href="/trouvailles" style={{ color: 'var(--or)', fontWeight: 800, textDecoration: 'none' }}>
             💎 {en ? 'Hotel gems shared by travelers →' : 'Les pépites hôtel partagées par les voyageurs →'}
           </Link>
