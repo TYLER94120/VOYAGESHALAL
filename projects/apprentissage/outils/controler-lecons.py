@@ -123,13 +123,19 @@ def main():
                               'attribuee' % (ref, s_trad.strip()))
 
             # 1. L'arabe, caractere pour caractere.
+            # DANS AL-FATIHA, LE VERSET 1 EST LA BASMALA.
+            # Partout ailleurs elle est collee en tete du verset 1 par
+            # l'edition et doit etre retiree ; ici elle EST le verset. Sans
+            # cette exception, le controle retirait la basmala de 1:1, se
+            # retrouvait avec une chaine vide, et refusait la sourate la plus
+            # recitee de toutes. On nomme le cas, on ne desarme pas la regle.
             attendu_ar = unicodedata.normalize('NFC', ar.get((num, i), ''))
-            if i == 1 and attendu_ar.startswith(basmala):
+            if i == 1 and num != 1 and attendu_ar.startswith(basmala):
                 attendu_ar = attendu_ar[len(basmala):].strip()
             lu = unicodedata.normalize('NFC', desechapper(a).strip())
             if lu != attendu_ar:
                 fautes.append('%s : le texte arabe ne correspond pas au Coran' % ref)
-            if basmala and basmala in lu:
+            if basmala and basmala in lu and not (num == 1 and i == 1):
                 fautes.append('%s : basmala restee dans le verset' % ref)
             versets_lus += 1
 

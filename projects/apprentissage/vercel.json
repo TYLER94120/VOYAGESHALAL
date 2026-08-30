@@ -5,7 +5,20 @@
   "installCommand": "",
   "outputDirectory": ".",
   "rewrites": [
-    { "source": "/section/:slug/qcm", "destination": "/reglages.html" },
-    { "source": "/section/:slug", "destination": "/section.html" }
+    {
+      "source": "/section/:slug/qcm",
+      "destination": "/reglages.html"
+    },
+    {
+      "source": "/section/:slug",
+      "destination": "/section.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/lecon-al-fatiha.html",
+      "destination": "/lecon-sourate-al-fatiha.html",
+      "permanent": true
+    }
   ]
 }

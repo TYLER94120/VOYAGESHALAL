@@ -73,7 +73,17 @@ TRADUCTEUR = 'Muhammad Hamidullah'
 # Les vingt sourates qui avaient une lecon avant le 21 aout. On rend EXACTEMENT
 # les memes adresses : ce sont celles que Google connait, et une adresse qui
 # revient vaut mieux qu'une adresse neuve.
-LOT = [93, 94, 95, 97, 99, 100, 101, 102, 103, 104,
+#
+# AL-FATIHA (1) S'AJOUTE LE 30 AOUT, et elle manquait cruellement : c'est la
+# sourate recitee a chaque unite de chaque priere, la plus lue de toutes, et
+# les vingt autres couvraient 93 a 114 sans elle. Elle a aussi une propriete
+# que nulle autre n'a ici : ses sept versets sont le TEMOIN contre lequel le
+# jeu de donnees est verifie a chaque execution. Sa page et son temoin
+# disent donc forcement la meme chose, ou rien ne s'ecrit.
+#
+# Son verset 1 EST la basmala : `versets()` ne la retire que pour n != 1,
+# ce qui est la regle correcte et non une exception taillee pour elle.
+LOT = [1, 93, 94, 95, 97, 99, 100, 101, 102, 103, 104,
        105, 106, 107, 108, 109, 110, 111, 112, 113, 114]
 
 # La section de QCM vers laquelle chaque lecon renvoie. Le sens des sourates
@@ -121,7 +131,13 @@ def versets(ar, fr, n):
         a = unicodedata.normalize('NFC', ar[(n, i)])
         if i == 1 and n != 1 and a.startswith(bas):
             a = a[len(bas):].strip()
-        if bas in a:
+        # LA SEULE PLACE OU LA BASMALA EST A SA PLACE, C'EST 1:1.
+        # Le garde-fou existe pour attraper une basmala restee collee en tete
+        # d'un verset auquel elle n'appartient pas — le cas de 112 sourates
+        # sur 114 dans cette edition. Mais dans Al-Fatiha, elle EST le verset
+        # 1 : la refuser reviendrait a s'interdire la sourate la plus recitee
+        # de toutes. On nomme donc l'exception au lieu de desarmer le controle.
+        if bas in a and not (n == 1 and i == 1):
             sys.exit('ARRET : basmala encore presente dans %d:%d.' % (n, i))
         if (n, i) not in fr:
             sys.exit('ARRET : pas de traduction pour %d:%d.' % (n, i))
