@@ -194,7 +194,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
   // 15 min ») alors que la vraie raison était qu'on n'avait pas pu
   // interroger Google. Dire « il n'y a rien » quand on veut dire « nous
   // n'avons pas pu demander » est un mensonge par raccourci.
-  const [etatGoogle, setEtatGoogle] = useState<'ok' | 'vide' | 'muet' | 'sans-cle' | ''>('')
+  const [etatGoogle, setEtatGoogle] = useState<'ok' | 'vide' | 'muet' | 'sans-cle' | 'non-sollicite' | ''>('')
   /**
    * 🔴🔴 CHAQUE PANNE NOMME SA VRAIE CAUSE.
    *
@@ -598,7 +598,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
       const ac = new AbortController()
       acCourant.current = ac
       const to = setTimeout(() => ac.abort(), 20_000)
-      let corps: { fiches?: Fiche[]; autres?: Fiche[]; source?: string; etatGoogle?: 'ok' | 'vide' | 'muet' | 'sans-cle'; mode?: Mode; plafondMin?: number; rayonKm?: number; rayonAtteintKm?: number; ecartesAlcool?: number; ecartesEnvie?: number; relaches?: string[]; motManquant?: string | null } = {}
+      let corps: { fiches?: Fiche[]; autres?: Fiche[]; source?: string; etatGoogle?: 'ok' | 'vide' | 'muet' | 'sans-cle' | 'non-sollicite'; mode?: Mode; plafondMin?: number; rayonKm?: number; rayonAtteintKm?: number; ecartesAlcool?: number; ecartesEnvie?: number; relaches?: string[]; motManquant?: string | null } = {}
       try {
         const r = await appelerLieux({ lat: pos.lat, lng: pos.lng, criteres: c, lang: en ? 'en' : 'fr', ecrit, profil }, ac.signal)
         if (r.status === 429) {

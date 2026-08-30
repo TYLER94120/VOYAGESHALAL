@@ -1349,3 +1349,78 @@ tort, `<IndexLiens` acceptant `<IndexLiensX`.
 🔴 **Ce que cela ne prouve pas.** Le maillage était cassé, il ne l'est plus.
 Que ce soit LA cause des 780 pages sans affichage reste une hypothèse tant
 que le relevé Performances → Pages n'est pas arrivé.
+
+---
+
+## 30 août — « manger » ne cherchait pas du halal
+
+Mohamed, à Val d'Europe : « Le Brandy's est très connu là-bas, un restaurant
+halal, et il n'était pas affiché autour de moi. Je trouve ça moyen en termes
+de proposition. »
+
+Il avait raison, et le défaut était **structurel**. Lu dans
+`app/api/lieux/route.ts`, pas supposé :
+
+```
+includedTypes: ['restaurant', 'meal_takeaway', 'bakery']
+maxResultCount: 20
+rankPreference: 'DISTANCE'
+```
+puis arrêt au premier rayon donnant `POOL_ALCOOL` (9) survivants, pour n'en
+garder que `RETENUS` (3). **Le mot « halal » n'était jamais dans la question
+posée à Google.** On demandait « les restaurants les plus proches » et on
+triait le halal APRÈS, en cherchant le mot dans le nom, le résumé ou les
+avis — sur une liste de vingt.
+
+Dans un centre commercial qui compte bien plus de vingt restaurants, une
+adresse halal un peu plus loin n'était pas écartée : **elle n'était jamais
+candidate.** Ce n'était pas de la malchance, c'était le fonctionnement.
+
+### Ce qui a été fait
+
+La règle du **17 août** — notre base trouve, Google enrichit ce qui est
+affiché — existait pour les mosquées et n'avait jamais été étendue à la
+nourriture. Elle l'est. `/api/osm-restos` interroge OpenStreetMap en direct
+et filtre sur l'étiquette `diet:halal` : **il cherche du halal**, il ne
+l'espère pas. Google ne sert plus qu'à enrichir les trois fiches affichées
+(note, horaires, photos), plafonné à `MAX_ENRICHISSEMENTS` appels.
+
+Le barrage alcool s'applique à cette voie aussi : l'enrichissement demande
+`servesBeer / servesWine / servesCocktails` et rend `'alcool'` — une valeur
+DISTINCTE de `null`. Sans cette distinction, un refus alcool aurait été lu
+comme « Google ne l'a pas reconnue » et la fiche OSM se serait affichée
+quand même : le barrage se serait contourné tout seul.
+
+### ⚠️ Une idée à moi, retirée parce que le dépôt avait la mesure
+
+J'avais proposé, en repli, une recherche Google **par texte** sur « halal »
+quand OSM ne trouve rien. `lib/requete.mjs` et `scripts/test-requete.mjs`
+disent non, avec la mesure du **16 août** :
+
+> « "café halal" ne cherche plus un café : le mot halal écrase le type et
+> Google remonte tout ce qui est oriental — traiteurs, pâtisseries,
+> épiceries. Le visiteur demande un café, on lui répond "établissement
+> musulman". »
+
+Le repli Google reste donc **inchangé** : par type, halal qualifié sur les
+résultats. `scripts/test-manger-osm.mjs` vérifie en plus que « halal » n'est
+pas revenu se coller à la requête par une autre porte.
+
+### Un mensonge évité au passage
+
+Quand notre base répond, Google n'est pas interrogé pour découvrir — mais
+`etatGoogle` restait à `'muet'`, et l'interface écrivait **« Google Maps n'a
+pas répondu »**. Faux : on ne lui avait rien demandé. L'état
+`'non-sollicite'` existe maintenant, et le défaut existait **déjà** sur les
+mosquées depuis le 17 août. Le crédit ODbL, lui, reste affiché partout où
+une donnée OpenStreetMap apparaît.
+
+### 🔴 Ce que je n'ai PAS mesuré
+
+**Je n'ai pas pu vérifier que le Brandy's remonte.** Overpass est bloqué
+depuis cette session : les quatre miroirs répondent `000`. Si OpenStreetMap
+ne connaît pas cette adresse, ce correctif ne la fera pas apparaître non
+plus — il faudra alors un relevé de la communauté. Le compteur
+`surmesure:osm-manger` (lisible dans `/api/admin/surmesure`) dira en
+production combien de recherches « manger » sont désormais servies par cette
+voie ; c'est la mesure qui manque, et elle ne peut se faire qu'en ligne.

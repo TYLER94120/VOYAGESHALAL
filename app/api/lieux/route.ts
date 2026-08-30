@@ -124,6 +124,10 @@ const RETENUS = 3
 const AUTRES = 17
 /** Pool sur lequel on paie la vérification alcool (§3 de l'alerte). */
 const POOL_ALCOOL = 9
+/** Combien d'appels Google au maximum pour ENRICHIR une découverte OSM.
+ *  La découverte, elle, n'en coûte aucun. Au-delà, on affiche la fiche OSM
+ *  telle quelle plutôt que de payer pour une quatrième vérification. */
+const MAX_ENRICHISSEMENTS = 6
 
 let redis: Redis | null | undefined
 function getRedis(): Redis | null {
@@ -882,7 +886,7 @@ function heureFermeture(desc?: string[]): string | undefined {
 
 /** Jamais un champ vide : sans nom → « Lieu de prière (nom non
  *  renseigné) » ; nom en écriture non latine → gardé entre parenthèses. */
-function nomOsmAffichable(o: LieuPriereOsm, lang: string): string {
+function nomOsmAffichable(o: Pick<LieuPriereOsm, 'nom' | 'nomAr'>, lang: string): string {
   const generique = lang === 'en' ? 'Prayer place' : 'Lieu de prière'
   const brut = o.nom ?? o.nomAr
   if (!brut) return lang === 'en' ? `${generique} (name not listed)` : `${generique} (nom non renseigné)`
@@ -921,18 +925,34 @@ function nomsSemblables(a?: string, b?: string): boolean {
 /** UN appel Google par fiche affichée — pour la richesse (photos, note,
  *  horaires), jamais pour la découverte. Rend la fiche Google fusionnée
  *  (id OSM conservé) si le même lieu y existe, sinon null. */
-async function enrichirOsmParGoogle(o: LieuPriereOsm & { distanceM: number }, cle: string, lang: string): Promise<Fiche | null> {
+/** Ce dont l'enrichissement a besoin, et rien de plus : un nom et un point.
+ *  Les restaurants découverts par `/api/osm-restos` n'ont pas la forme
+ *  complète d'un lieu de prière — les forcer dans ce moule aurait voulu dire
+ *  inventer un pays et un identifiant. */
+type LieuOsmAEnrichir = Pick<LieuPriereOsm, 'nom' | 'nomAr'> & { id?: string; lat: number; lng: number; distanceM: number }
+
+async function enrichirOsmParGoogle(
+  o: LieuOsmAEnrichir,
+  cle: string,
+  lang: string,
+  cat: 'manger' | 'mosquee' = 'mosquee',
+): Promise<Fiche | null | 'alcool'> {
   const ac = new AbortController()
   const t = setTimeout(() => ac.abort(), DELAI)
   try {
-    const CHAMPS = ['id', 'displayName', 'location', 'formattedAddress', 'rating', 'userRatingCount', 'googleMapsUri', 'currentOpeningHours', 'photos']
+    // Pour « manger », on demande EN PLUS les attributs de boisson : le
+    // barrage alcool doit pouvoir se prononcer sur la fiche enrichie, sinon
+    // la découverte OSM ferait entrer par la fenêtre ce que le barrage
+    // écarte par la porte.
+    const CHAMPS = ['id', 'displayName', 'location', 'formattedAddress', 'rating', 'userRatingCount', 'googleMapsUri', 'currentOpeningHours', 'photos',
+      ...(cat === 'manger' ? ['primaryType', 'types', 'servesBeer', 'servesWine', 'servesCocktails'] : [])]
       .map((ch) => `places.${ch}`).join(',')
     const r = await fetch('https://places.googleapis.com/v1/places:searchNearby', {
       method: 'POST', signal: ac.signal,
       headers: { 'Content-Type': 'application/json', 'X-Goog-Api-Key': cle, 'X-Goog-FieldMask': CHAMPS },
       body: JSON.stringify({
         languageCode: lang, maxResultCount: 3,
-        includedTypes: ['mosque'],
+        includedTypes: cat === 'manger' ? TYPES_DEMANDES.manger : ['mosque'],
         locationRestriction: { circle: { center: { latitude: o.lat, longitude: o.lng }, radius: 60 } },
         rankPreference: 'DISTANCE',
       }),
@@ -945,6 +965,23 @@ async function enrichirOsmParGoogle(o: LieuPriereOsm & { distanceM: number }, cl
       const loc = p.location as { latitude?: number; longitude?: number } | undefined
       const oh = p.currentOpeningHours as { openNow?: boolean; weekdayDescriptions?: string[] } | undefined
       const photos = (p.photos as { name?: string }[] | undefined) ?? []
+      // 🔴 LE BARRAGE ALCOOL S'APPLIQUE AUSSI À LA DÉCOUVERTE OSM. Une
+      // adresse étiquetée `diet:halal` dont le jumeau Google sert de la
+      // bière est écartée — pas affichée en « inconnu ». `null` voudrait
+      // dire « Google ne l'a pas reconnue » et laisserait la fiche OSM
+      // s'afficher : ce refus-là doit être distinct, sinon le barrage se
+      // contourne tout seul.
+      const verdict = cat === 'manger'
+        ? verdictAlcool({
+          nom: nomG ?? o.nom ?? '',
+          primaryType: p.primaryType as string | undefined,
+          types: p.types as string[] | undefined,
+          servesBeer: p.servesBeer as boolean | undefined,
+          servesWine: p.servesWine as boolean | undefined,
+          servesCocktails: p.servesCocktails as boolean | undefined,
+        })
+        : { garde: true as const, alcool: 'inconnu' as const }
+      if (!verdict.garde) return 'alcool'
       return {
         id: p.id as string | undefined, osmId: o.id,
         nom: nomG && estLatinLisible(nomG) ? nomG : nomOsmAffichable(o, lang),
@@ -957,8 +994,12 @@ async function enrichirOsmParGoogle(o: LieuPriereOsm & { distanceM: number }, cl
         ouvert: oh?.openNow,
         fermeA: heureFermeture(oh?.weekdayDescriptions),
         photos: photos.slice(0, 2).map((ph) => `/api/lieux/photo?ref=${encodeURIComponent(ph.name ?? '')}`).filter((u) => !u.endsWith('ref=')),
-        statut: CATEGORIE.mosquee.statut,
-        alcool: 'inconnu',
+        // Le lieu vient d'OSM (étiquette `diet:halal`), pas d'une mention
+        // Google : le statut reste celui d'OSM même quand Google fournit la
+        // note et les horaires. On ne change pas la source d'une affirmation
+        // parce qu'on a enrichi la fiche.
+        statut: cat === 'manger' ? CATEGORIE.manger.statutOSM : CATEGORIE.mosquee.statut,
+        alcool: cat === 'manger' ? verdict.alcool : 'inconnu',
         source: 'google',
       }
     }
@@ -1081,7 +1122,11 @@ export async function POST(req: Request) {
   let fiches: Fiche[] = []
   let autres: Fiche[] = []
   let source: 'google' | 'osm' | 'spots-seulement' = 'spots-seulement'
-  let etatGoogle: 'ok' | 'vide' | 'muet' | 'sans-cle' = cle ? 'muet' : 'sans-cle'
+  // 🔵 « non-sollicite » : Google n'a pas été interrogé pour DÉCOUVRIR,
+  // parce que notre base OSM a répondu. Sans cet état, l'interface écrivait
+  // « Google Maps n'a pas répondu » alors qu'on ne lui avait rien demandé —
+  // une phrase fausse, et exactement le genre qu'on ne se permet pas.
+  let etatGoogle: 'ok' | 'vide' | 'muet' | 'sans-cle' | 'non-sollicite' = cle ? 'muet' : 'sans-cle'
   // « muet » ne suffit pas à réparer : on garde CE QUE Google a répondu.
   const journal: Journal = {}
   /** Les critères de profil qu'on a dû relâcher — affichés tels quels. */
@@ -1106,15 +1151,77 @@ export async function POST(req: Request) {
         appelsGoogle++
         // Dédup 2 : le correspondant Google (< 60 m + nom semblable)
         // REMPLACE la fiche OSM — jamais deux fois le même lieu.
-        return (await enrichirOsmParGoogle(o, cle, lang)) ?? ficheDepuisOsm(o, lang)
+        const e = await enrichirOsmParGoogle(o, cle, lang)
+        return e && e !== 'alcool' ? e : ficheDepuisOsm(o, lang)
       }))
       fiches = [...spots, ...enrichies].slice(0, RETENUS)
       autres = libres.slice(aAfficher.length, aAfficher.length + AUTRES).map((o) => ficheDepuisOsm(o, lang))
       source = 'osm'
       bilan.rayonAtteintM = rayon
       // 📊 La mesure exigée : zéro appel de découverte, ≤ 3 d'enrichissement.
+      if (cle) etatGoogle = 'non-sollicite'
       console.info(`[lieux] mosquée via base OSM : ${candidatsOsm.length} candidats locaux, ${appelsGoogle} appel(s) Google (enrichissement uniquement, 0 pour la découverte)`)
       await compter('surmesure:osm-base')
+    }
+  }
+
+  // ═══ 🍽 MANGER : NOTRE DÉCOUVERTE OSM D'ABORD (30 août) ═══
+  //
+  // Mohamed, à Val d'Europe : « Le Brandy's est très connu là-bas, un
+  // restaurant halal, et il n'était pas affiché autour de moi. »
+  //
+  // Il avait raison, et le défaut était structurel. La passe géographique
+  // demandait à Google les types `restaurant / meal_takeaway / bakery`,
+  // 20 au maximum, `rankPreference: DISTANCE` — puis s'arrêtait au premier
+  // rayon donnant 9 survivants, pour n'en garder que 3. **Le mot « halal »
+  // n'était jamais dans la question.** On cherchait « les restaurants les
+  // plus proches » et on triait le halal après coup, sur une liste de vingt.
+  // Dans un centre commercial qui compte bien plus de vingt restaurants,
+  // une adresse halal un peu plus loin ne pouvait pas entrer : elle n'était
+  // pas écartée, elle n'était jamais candidate.
+  //
+  // La règle du 17 août — notre base trouve, Google enrichit ce qui est
+  // affiché — existait pour les mosquées et n'avait jamais été étendue ici.
+  // C'est ce que fait ce bloc : `/api/osm-restos` interroge OpenStreetMap
+  // en direct et filtre sur l'étiquette `diet:halal`, donc il CHERCHE du
+  // halal au lieu d'en espérer. Google ne sert plus qu'à enrichir les
+  // fiches affichées — et le barrage alcool s'applique toujours, sur la
+  // fiche enrichie (voir enrichirOsmParGoogle).
+  //
+  // ⚠️ Ce que ce correctif ne garantit pas : si OpenStreetMap ne connaît
+  // pas une adresse, elle ne remontera pas davantage. Le repli Google reste
+  // donc en place derrière — il n'a pas été supprimé, il a été déclassé.
+  if (!decouverteOsmFaite && c.categorie === 'manger' && c.exigence !== 'verifies'
+      && !(c.motsCles ?? '').trim() && !c.envieId) {
+    const candidatsOsm = await viaOSM(origin, lat, lng, rayon, 'manger')
+    // Nos spots vérifiés à la main restent au-dessus (< 60 m).
+    const libres = candidatsOsm.filter((o) => !spots.some((s) => distM(s.lat, s.lng, o.lat, o.lng) < 60))
+    if (libres.length) {
+      const voulues = Math.max(0, RETENUS - spots.length)
+      const retenues: Fiche[] = []
+      let appelsGoogle = 0, ecartesAlcool = 0, i = 0
+      // On descend la liste jusqu'à remplir les places : une adresse
+      // écartée par l'alcool laisse la sienne à la suivante, elle ne la
+      // laisse pas vide.
+      for (; i < libres.length && retenues.length < voulues; i++) {
+        const o = libres[i]
+        if (!cle) { retenues.push(o); continue }
+        if (appelsGoogle >= MAX_ENRICHISSEMENTS) { retenues.push(o); continue }
+        appelsGoogle++
+        const e = await enrichirOsmParGoogle({ nom: o.nom, lat: o.lat, lng: o.lng, distanceM: o.distanceM }, cle, lang, 'manger')
+        if (e === 'alcool') { ecartesAlcool++; continue }
+        retenues.push(e ?? o)
+      }
+      if (retenues.length) {
+        decouverteOsmFaite = true
+        fiches = [...spots, ...retenues].slice(0, RETENUS)
+        autres = libres.slice(i, i + AUTRES)
+        source = 'osm'
+        bilan.rayonAtteintM = rayon
+        if (cle) etatGoogle = 'non-sollicite'
+        console.info(`[lieux] manger via OSM : ${candidatsOsm.length} candidats halal, ${appelsGoogle} appel(s) Google (enrichissement seul), ${ecartesAlcool} écarté(s) par le barrage alcool`)
+        await compter('surmesure:osm-manger')
+      }
     }
   }
 
