@@ -2,6 +2,7 @@ import type { MetadataRoute } from 'next'
 import { readFileSync } from 'fs'
 import path from 'path'
 import { dateGitVille, CONTENT_REVISED_AT } from '@/lib/freshness'
+import { HOTELS_MIN_INDEX } from '@/components/hotels/HotelsRoute'
 import { estPubliable } from '@/app/(dyn)/prayer-room/[airport]/page'
 import { guides, blogPosts } from '@/lib/data'
 import { getDomainSEO, FR_URL, EN_URL } from '@/lib/domain'
@@ -54,7 +55,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: L('/a-propos'), lastModified: revision, changeFrequency: 'monthly', priority: 0.6, alternates: pageAlternates('/a-propos') },
     { url: `${SITE_URL}/contact`, lastModified: revision, changeFrequency: 'yearly', priority: 0.4 },
     { url: L('/confidentialite'), lastModified: revision, changeFrequency: 'yearly', priority: 0.3, alternates: pageAlternates('/confidentialite') },
-    { url: L('/mentions-legales'), lastModified: revision, changeFrequency: 'yearly', priority: 0.3, alternates: pageAlternates('/mentions-legales') },
+    // ⚠️ /mentions-legales était ici ET se déclarait `noindex`. Le sitemap
+    //    disait « indexe-moi », la page « surtout pas ». Google compte ça
+    //    comme une erreur et dépense du budget de crawl pour rien. Une page
+    //    en noindex ne s'envoie pas au sitemap — elle reste accessible par
+    //    le pied de page, ce qui est son rôle.
   ]
 
   // 📅 LA VRAIE DATE, PAS CELLE DU JOUR (chantier SEO du 20 août).
@@ -83,7 +88,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }))
 
   // Pages « Hôtels halal à {ville} » — cible « hotel halal {ville} » (requêtes GSC)
-  const hotelPages: MetadataRoute.Sitemap = CITY_SLUGS.map((slug) => ({
+  // 30 août : Berkane, Fezouane et Tafoughalt étaient envoyées ici alors
+  // qu'elles se déclarent `noindex` (moins de HOTELS_MIN_INDEX hôtels). Le
+  // sitemap applique désormais la MÊME règle que la page — une constante,
+  // deux lecteurs, aucune contradiction possible.
+  const hotelPages: MetadataRoute.Sitemap = CITY_SLUGS.filter((slug) => {
+    try {
+      const v = JSON.parse(readFileSync(path.join(process.cwd(), 'data', 'villes', `${slug}.json`), 'utf-8'))
+      return (v.hotels?.length ?? 0) >= HOTELS_MIN_INDEX
+    } catch { return false }
+  }).map((slug) => ({
     url: `${SITE_URL}/hotels/${slug}`,
     lastModified: dateVille(slug),
     changeFrequency: 'weekly',

@@ -1103,3 +1103,69 @@ Une règle vérifiée à un endroit de l'écran n'est pas une règle vérifiée.
 Le test du 16 août éprouvait le **filtre** (aucun bistrot ne passe) — il ne
 regardait pas si l'écran le **disait** partout. Les deux comptent : le
 filtre protège, la ligne informe.
+
+---
+
+# 🗺 30 AOÛT — UNE HYPOTHÈSE FAUSSE, ET CE QU'ELLE A TROUVÉ
+
+Ronde quotidienne. Aucune page neuve.
+
+## L'hypothèse que j'ai tuée avant d'agir dessus
+
+Le 29 août j'ai établi que le plafond du site est la **couverture** :
+~30 pages sur 810 obtiennent un affichage. Hypothèse la plus naturelle :
+beaucoup de pages se déclarent `noindex` (les fiches minces, les pages
+hôtels sans hôtels).
+
+**Mesuré sur les 1 641 URL servies : 4 par domaine. 0 %.** L'hypothèse
+était fausse, et il valait mieux le savoir avant de « corriger » des seuils
+qui n'étaient pour rien dans l'affaire.
+
+## ⚠️ Une correction à ce que j'ai écrit hier
+
+J'ai écrit « 96 % du site n'a jamais été montré à personne » et laissé
+entendre un problème d'**indexation**. C'est une inférence, pas une mesure :
+zéro affichage peut aussi vouloir dire *indexée mais jamais dans les
+résultats que quelqu'un consulte*. Les deux se distinguent dans
+**Indexation → Pages**, et ce relevé n'a pas encore été fait. En attendant,
+la seule chose établie est : zéro affichage sur ~780 pages.
+
+## Ce que la mesure a quand même trouvé
+
+Les 4 pages en `noindex` étaient **dans le sitemap** :
+
+| Page | hôtels | ce qu'elle déclare |
+|---|---|---|
+| /mentions-legales | — | noindex, follow |
+| /hotels/berkane | 2 | noindex, follow |
+| /hotels/tafoughalt | 2 | noindex, follow |
+| /hotels/fezouane | **0** | noindex, follow |
+
+Le sitemap dit « indexe-moi », la page dit « surtout pas ». Google le compte
+comme une erreur (« Page envoyée avec balise noindex ») et dépense du budget
+de crawl pour rien — sur un site dont on cherche précisément à faire baisser
+les passages de robots.
+
+**La cause** : la règle du seuil vivait dans la page hôtels (`n < 3`), et le
+sitemap listait les 354 villes sans la connaître. Deux endroits, une seule
+règle, aucune communication entre eux.
+
+**Corrigé** : une constante partagée, `HOTELS_MIN_INDEX`, lue par la page ET
+par le sitemap. La page légale sort du sitemap — elle reste accessible par
+le pied de page, ce qui est son rôle.
+
+| | avant | après |
+|---|---|---|
+| URL au sitemap FR | 810 | 806 |
+| URL au sitemap EN | 831 | 827 |
+| **pages annoncées ET en noindex** | **4 + 4** | **0** |
+
+`scripts/test-sitemap.mjs` refuse désormais qu'une page qui se déclare
+`noindex` soit annoncée au sitemap, et que le seuil soit réécrit en dur
+d'un côté sans l'autre.
+
+## Ce que la ronde n'a pas fait
+
+Aucune page neuve : rien n'apprenait ce qu'aucune page n'apprend.
+Et je n'ai pas touché à la couverture — **le relevé Indexation → Pages
+manque toujours**, et sans lui je choisirais une cible au hasard.
