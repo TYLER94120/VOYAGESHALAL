@@ -1211,10 +1211,49 @@ d'expansion, pas de recul** : le site apparaît sur PLUS de requêtes, donc
 aussi sur des requêtes plus dures, ce qui tire la moyenne vers le bas. Ce
 qui compte est que les pages qui rangent bien convertissent — 6,5 %.
 
-## Ce qu'il reste à savoir
+## ⚠️ CORRECTION — la question est tranchée, et j'avais tort
 
-Une seule question : **le filtre d'appareil de ce relevé**. S'il est en
-mobile, la comparaison honnête est 420 → 694 impressions (+65 %) et
-11 → 45 clics ; s'il est en tous appareils, c'est l'échange décrit plus
-haut. Les deux sont de bonnes nouvelles, mais ce ne sont pas les mêmes
-nouvelles, et le carnet ne consigne pas d'à-peu-près.
+Mohamed a envoyé le second relevé : le premier était bien **mobile**, et le
+total tous appareils fait **49 clics · 1 980 impressions · CTR 2,5 %**.
+
+**La lecture « on échange des affichages contre des clics » est fausse.**
+Je comparais 694 (mobile) à 1 670 (tous appareils) — deux périmètres
+différents, exactement l'erreur contre laquelle j'avais mis en garde deux
+paragraphes plus haut. À périmètre égal, **les affichages MONTENT** :
+
+| périmètre | 21 août | 30 août | |
+|---|---|---|---|
+| mobile — impressions | 420 | **694** | +65 % |
+| mobile — clics | 11 | **45** | ×4,1 |
+| mobile — CTR | 2,6 % | **6,5 %** | ×2,5 |
+| tous appareils — impressions | 1 670 | **1 980** | +19 % |
+| tous appareils — clics | 12 | **49** | ×4,1 |
+| tous appareils — CTR | 0,7 % | **2,5 %** | ×3,6 |
+
+Rien n'a été échangé : les affichages, les clics et le taux montent
+ensemble, sur les deux périmètres. C'est meilleur que ce que j'annonçais.
+
+## 🔴 LA RÉPARTITION PAR APPAREIL, ENFIN CHIFFRÉE
+
+Par soustraction entre les deux relevés :
+
+| | clics | impressions | CTR |
+|---|---|---|---|
+| **mobile** | **45** | 694 | **6,48 %** |
+| hors mobile | 4 | **1 286** | **0,31 %** |
+| tous | 49 | 1 980 | 2,47 % |
+
+**Le mobile fait 92 % des clics avec 35 % des affichages.** Le reste —
+desktop et tablette — représente **65 % des affichages pour 8 % des
+clics**, à un taux de 0,31 %. La loi du 21 août (« 0,19 % contre 2,31 % »)
+est confirmée, avec neuf jours de recul et des volumes plus grands.
+
+**Ce qu'il faut en tirer, et qui vaut règle :** les chiffres « tous
+appareils » ne servent à RIEN pour piloter. Ils mélangent 1 286 affichages
+en position ~39 qui ne produisent rien avec 694 affichages qui produisent
+tout. Le CTR global de 2,5 % est un artefact de cette moyenne — le vrai
+chiffre du site est **6,5 %**.
+
+⚠️ Position du 27 août : **22,3 en mobile, 39,5 tous appareils.** Le même
+site, le même jour. Toute décision prise sur la seconde serait prise sur du
+bruit.
