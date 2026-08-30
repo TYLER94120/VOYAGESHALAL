@@ -1424,3 +1424,91 @@ plus — il faudra alors un relevé de la communauté. Le compteur
 `surmesure:osm-manger` (lisible dans `/api/admin/surmesure`) dira en
 production combien de recherches « manger » sont désormais servies par cette
 voie ; c'est la mesure qui manque, et elle ne peut se faire qu'en ligne.
+
+---
+
+## 30 août (soir) — le relevé Performances → Pages, et trois chantiers qui n'en étaient pas
+
+Mohamed a fourni le relevé que je réclamais : Performances → Pages,
+3 mois, voyageshalal.fr, avec CTR et Position.
+
+| page | impressions | clics | CTR | position |
+|---|---|---|---|---|
+| /blog/ou-prier-disneyland-paris | 1 066 | 53 | 5,0 % | 6,9 |
+| /blog/ou-prier-parc-asterix | 83 | 29 | 34,9 % | 2,8 |
+| **/** (accueil) | **2 392** | 18 | 0,8 % | **62,5** |
+| /guides/ou-prier-disneyland-paris | 139 | 10 | 7,2 % | 7,1 |
+| /guides/ou-prier-aeroport-guide | **722** | 9 | **1,2 %** | 10,1 |
+| /blog/ou-prier-gares-paris | 72 | 9 | 12,5 % | 8,6 |
+| /blog/ou-prier-aeroport-orly | 280 | 4 | **1,4 %** | 10,9 |
+| /hotels/paris | 118 | 4 | 3,4 % | 34,5 |
+| /blog/ou-prier-puy-du-fou | 19 | 3 | 15,8 % | 7,1 |
+| /hotels/istanbul | **916** | 2 | 0,2 % | 53,7 |
+
+### Le désaccord, tranché
+
+Mohamed disait « le problème c'est le taux de clic », je disais « c'est la
+couverture ». **Le relevé nous donne raison à tous les deux, sur des pages
+différentes**, et c'est pour ça que la moyenne du site ne pouvait pas
+trancher.
+
+· **Sa thèse tient** sur deux pages : 1,2 % et 1,4 % en position 10-11,
+  quand le site fait **12,5 %** en position 8,6 et **15,8 %** en 7,1. Même
+  site, même format, position voisine — dix fois moins de clics.
+· **La mienne tient** sur le volume : 3 426 des 5 807 affichages visibles
+  (59 %) sont en position 34 à 62. Aucun titre ne rattrape la page 4.
+
+⚠️ Le relevé est trié par CLICS, pas par impressions : les pages à fort
+affichage et zéro clic sont plus bas, invisibles. Et il est « tous
+appareils ». Les positions n'y sont donc pas comparables à celles du mobile.
+
+### Les trois chantiers, mesurés — et aucun n'a de défaut de code
+
+Avant d'écrire quoi que ce soit, j'ai relevé ce qui est RÉELLEMENT servi
+(règle de la skill `ce-que-google-affiche` : le titre du code n'est pas le
+titre servi) :
+
+| contrôle | résultat |
+|---|---|
+| titres servis | 53 à 58 c, sous la limite, chiffre concret, **aucun suffixe de marque** |
+| descriptions | présentes, spécifiques, dans la limite |
+| canoniques | correctes, auto-référencées |
+| 301 des anciennes URL | correctes, vers la bonne cible |
+| pages au sitemap | oui |
+| maillage de la famille « où prier » | le hub lie ses 18 articles, les articles lient le hub |
+
+**Il n'y avait rien à corriger.** Réécrire ces titres aurait été casser ce
+qui marche pour se donner l'air d'agir.
+
+### ⚠️ Une faute de mesure que j'ai failli publier
+
+Mon premier relevé a compté **zéro hreflang sur tout le site** — 11 pages,
+toutes les familles. J'allais l'annoncer comme un défaut majeur. En vidant
+les balises `<link>` brutes plutôt qu'en faisant confiance à mon filtre,
+j'ai vu la vérité : **Next.js écrit `hrefLang`, avec un L majuscule**, et
+mon filtre cherchait `hreflang`. Les hreflang sont tous là.
+
+L'accueil est la seule page qui n'en a pas — et c'est **voulu** : les deux
+accueils ont divergé, et `test-seo-titres.mjs` interdit justement d'en
+redéclarer un (« un hreflang qui ment fait déclasser l'une des deux »).
+
+Deuxième fois en un jour qu'un instrument me ment. Le remède est le même :
+**regarder la sortie brute avant de croire un filtre.**
+
+### Ce qui reste, et qui n'est pas de mon ressort
+
+1. **722 impressions sur une URL qui n'existe plus.**
+   `/guides/ou-prier-aeroport-guide` est une redirection 301 (middleware.ts)
+   vers `/blog/ou-prier-aeroports`. Elle est correcte depuis trois mois et
+   Google montre toujours l'ancienne. Il ne manque aucun code : il manque
+   que Google repasse dessus. → Search Console, Inspection de l'URL,
+   « Demander une indexation », sur les deux anciennes URL. Même cas pour
+   `/guides/ou-prier-disneyland-paris` (139 affichages).
+2. **Pourquoi 1,2 % en position 10.** Non tranché. Il me manque l'onglet
+   **Requêtes**. Ça peut être une requête où un site officiel occupe tout le
+   haut — auquel cas aucun titre ne rattrape, et le réécrire serait du
+   travail perdu.
+3. **L'accueil à 62,5.** La skill le dit sans détour : « un beau titre à la
+   position 22 reste invisible ». Ce n'est pas un chantier de titre. Le
+   levier est le maillage et le crawl — **déjà écrit, et toujours dans la
+   PR #124 non fusionnée.**
