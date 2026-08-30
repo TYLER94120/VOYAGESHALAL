@@ -1169,3 +1169,52 @@ d'un côté sans l'autre.
 Aucune page neuve : rien n'apprenait ce qu'aucune page n'apprend.
 Et je n'ai pas touché à la couverture — **le relevé Indexation → Pages
 manque toujours**, et sans lui je choisirais une cible au hasard.
+
+---
+
+# 📈 30 AOÛT — 7 JOURS : CTR 6,5 %, LE PLUS HAUT JAMAIS RELEVÉ
+
+Capture de Mohamed. voyageshalal.fr, 7 derniers jours :
+**45 clics · 694 impressions · CTR 6,5 %.**
+Point du 27 août : 7 clics, 100 impressions, 7 %, position 22,3.
+
+⚠️ **Le filtre d'appareil n'est pas visible sur la capture.** Les deux
+lectures ci-dessous en dépendent, et je le dis avant de comparer.
+
+## Les repères du carnet, pour la même fenêtre
+
+| relevé | impressions | clics | CTR | position |
+|---|---|---|---|---|
+| 21 août — 7 j, tous appareils | 1 670 | 12 | 0,7 % | 40 |
+| 21 août — 7 j, mobile | 420 | 11 | 2,6 % | 11,2 |
+| **30 août — 7 j** | **694** | **45** | **6,5 %** | — |
+
+**Le CTR de 6,5 % est le plus haut jamais relevé sur l'empire**, quelle que
+soit la fenêtre : le précédent record était 3,6 % (3 mois, mobile).
+
+## La lecture qui compte : on échange des affichages inutiles contre des clics
+
+Si le relevé est en « tous appareils », alors sur neuf jours :
+**impressions ÷ 2,4, CTR × 9, clics × 3,75.**
+
+Perdre la moitié des affichages en quadruplant les clics n'est pas une
+perte — c'est exactement la loi mesurée le 21 août : *3 % des impressions
+font 46 % des clics*. Les affichages perdus sont selon toute vraisemblance
+ceux du desktop en position 37-50, qui rapportent 0,19 % de clic. On ne
+perd pas de l'audience, on perd du bruit.
+
+## Ce que la position dit, et qu'il ne faut pas lire à l'envers
+
+Position 22,3 le 27 août, contre 12,3 en moyenne sur 3 mois. **Une position
+moyenne qui se dégrade pendant que les clics montent est un signe
+d'expansion, pas de recul** : le site apparaît sur PLUS de requêtes, donc
+aussi sur des requêtes plus dures, ce qui tire la moyenne vers le bas. Ce
+qui compte est que les pages qui rangent bien convertissent — 6,5 %.
+
+## Ce qu'il reste à savoir
+
+Une seule question : **le filtre d'appareil de ce relevé**. S'il est en
+mobile, la comparaison honnête est 420 → 694 impressions (+65 %) et
+11 → 45 clics ; s'il est en tous appareils, c'est l'échange décrit plus
+haut. Les deux sont de bonnes nouvelles, mais ce ne sont pas les mêmes
+nouvelles, et le carnet ne consigne pas d'à-peu-près.
