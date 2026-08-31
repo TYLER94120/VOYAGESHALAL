@@ -70,6 +70,15 @@ export const BLOG_FR_TO_EN: Record<string, string> = {
   'prier-en-train': '/blog/praying-on-a-train',
   'ou-prier-aeroports': '/blog/where-to-pray-paris-airports',
   'ou-prier-gares-paris': '/blog/where-to-pray-paris-stations',
+  // 31 août : les deux pages qui convertissent le MIEUX du site n'avaient
+  // aucune version anglaise. Relevé 3 mois, voyageshalal.fr :
+  //   ou-prier-parc-asterix  34,9 % de clics en position 2,8
+  //   ou-prier-puy-du-fou    15,8 % en position 7,1
+  // Le site fait 1,2 % ailleurs. Disneyland avait déjà son jumeau anglais —
+  // ces deux-là étaient restés derrière. Rien n'est inventé : le relevé
+  // existait, seule la langue manquait.
+  'ou-prier-parc-asterix': '/blog/where-to-pray-parc-asterix',
+  'ou-prier-puy-du-fou': '/blog/where-to-pray-puy-du-fou',
   'ou-prier-aeroport-marseille': '/blog/where-to-pray-marseille-airport',
   'ou-prier-aeroport-toulouse': '/blog/where-to-pray-toulouse-airport',
   'ou-prier-aeroport-cdg': '/blog/where-to-pray-cdg-airport',

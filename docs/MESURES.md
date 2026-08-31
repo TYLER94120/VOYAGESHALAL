@@ -1512,3 +1512,79 @@ Deuxième fois en un jour qu'un instrument me ment. Le remède est le même :
    position 22 reste invisible ». Ce n'est pas un chantier de titre. Le
    levier est le maillage et le crawl — **déjà écrit, et toujours dans la
    PR #124 non fusionnée.**
+
+---
+
+## 31 août — les deux meilleures pages du site n'existaient pas en anglais
+
+Ronde de nuit. **La cible n° 1 du brief (titres anglais de Marrakech,
+Almaty, Amsterdam) est livrée depuis le 21 août** et vérifiée le 25 et le
+27 : le brief ne se met pas à jour, le carnet si. Refaire aurait été du
+brassage.
+
+Je suis donc parti du relevé frais d'hier soir (Performances → Pages,
+3 mois, voyageshalal.fr). Deux pages y écrasent tout :
+
+| page | affichages | clics | CTR | position |
+|---|---|---|---|---|
+| /blog/ou-prier-parc-asterix | 83 | 29 | **34,9 %** | 2,8 |
+| /blog/ou-prier-puy-du-fou | 19 | 3 | **15,8 %** | 7,1 |
+
+Le site fait 1,2 % ailleurs. Ce sont les deux meilleurs taux jamais
+mesurés ici.
+
+**Mesure : sur les 19 articles de la famille « où prier », 6 n'ont aucun
+jumeau anglais** — et les deux meilleurs en font partie. Disneyland Paris,
+lui, avait déjà le sien : la décision éditoriale de traiter les
+destinations françaises en anglais était donc déjà prise, ces deux-là
+étaient simplement restés derrière.
+
+Écrit : `where-to-pray-parc-asterix` et `where-to-pray-puy-du-fou`.
+**Rien n'est inventé** — le relevé existait dans l'article français, seule
+la langue manquait, et les deux disent ce que disent les originaux : pas
+de salle de prière officielle à notre connaissance. Jumelés dans
+`lib/slugs.ts` (sans quoi les deux versions se concurrenceraient).
+
+Vérifié servi, en-tête `Host` des deux domaines : 200, `lang="en"`,
+hreflang dans les deux sens, présence au sitemap EN, slug FR sur domaine EN
+en 301, slug EN sur domaine FR en `noindex`.
+
+### 🇬🇧 Ce que l'écriture a découvert : la règle d'honnêteté ne valait qu'en français
+
+`scripts/test-articles.mjs` interdit depuis le 27 août qu'un titre promette
+une salle de prière que l'article dit inexistante. **Ses deux expressions
+étaient françaises.** Le site anglais — 831 pages — n'était donc tenu par
+rien, alors que c'est exactement le même piège.
+
+Règle étendue à l'anglais. Elle a immédiatement trouvé **deux pages
+servies** :
+
+| page | avant | après |
+|---|---|---|
+| where-to-pray-disneyland-paris | `Prayer Room at Disneyland Paris: Where to Pray in 2026` | `Disneyland Paris: no prayer room, ask at City Hall` |
+| where-to-pray-marseille-airport | `Prayer Room at Marseille Airport: The Honest Answer` | `Marseille Airport: no prayer room, where to pray` |
+
+Les deux corps disent noir sur blanc qu'il n'y a pas de salle ; les deux
+descriptions étaient honnêtes. **Seul le titre mentait — la seule ligne que
+Google affiche.** C'est mot pour mot le défaut corrigé côté français le
+27 août, resté six jours de plus côté anglais parce que le test ne savait
+pas lire l'anglais.
+
+⚠️ **Un titre avec du trafic a été changé** (Disneyland EN). C'est une
+correction de véracité, pas une optimisation — mais l'effet sera lisible
+dans sept à dix jours, et il ne faudra pas le confondre avec autre chose.
+
+Vérifié que le test ÉCHOUE si l'on remet l'ancien titre de Marseille.
+
+### Ce que la ronde n'a pas fait
+
+**Aucun titre français retouché.** Les pages en position 5-15 ont été
+relevées hier soir sur le serveur réel : 53 à 58 c, sans suffixe de marque,
+avec un chiffre concret. Il n'y avait rien à réparer, et réécrire aurait
+été casser ce qui marche.
+
+**Le 1,2 % de la page aéroport reste non expliqué** — il me manque l'onglet
+Requêtes.
+
+**PR #124 toujours pas fusionnée** : le maillage, la découverte OSM des
+restaurants et ces deux pages attendent tous là.

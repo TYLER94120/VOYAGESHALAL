@@ -2655,7 +2655,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
   },
   {
     slug: "where-to-pray-disneyland-paris",
-    title: "Prayer Room at Disneyland Paris: Where to Pray in 2026",
+    title: "Disneyland Paris: no prayer room, ask at City Hall",
     description: "A quiet space is offered on request at City Hall, by the park entrance. Exactly where it is, what to ask a Cast Member, and the best time of day.",
     coverImage: "/guides/blog-disneyland.jpg",
     category: 'Practical',
@@ -2702,6 +2702,86 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 
 <h2>Help the community</h2>
 <p>Have you prayed at Disneyland recently? Tell us <strong>what City Hall said and where they sent you</strong>. That is exactly the information this page is missing, and it will serve dozens of families. <a href="/communaute/ajouter">→ Add the place</a> · <a href="/communaute">→ Join the community</a></p>`,
+  },
+  {
+    slug: "where-to-pray-parc-asterix",
+    title: "Parc Astérix: no prayer room, where to pray on site",
+    description: "There is no official prayer room at Parc Astérix. What Muslim families actually do: guest services, the quiet corners, the car park, and combining prayers.",
+    coverImage: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&q=80",
+    category: 'Practical',
+    readTime: "3 min",
+    publishedAt: '2026-08-31',
+    lang: 'en',
+    tags: ['prayer', 'parc asterix', 'france', 'family', 'muslim travel'],
+    content: `<p>A day at Parc Astérix with a prayer window closing? Here is the real situation and what works.</p>
+
+<h2>The short version</h2>
+<p>To our knowledge, Parc Astérix has <strong>no official prayer room</strong>. We will not write that one exists until it has been verified — that is the rule we hold across the site, and it applies when it suits us least. What works instead: ask guest services for a quiet space, use one of the park's own quiet corners, or your car in the car park. Combining prayers removes most of the difficulty.</p>
+
+<h2>1. Ask guest services</h2>
+<p>As at <a href="/blog/where-to-pray-disneyland-paris">Disneyland Paris, where this works well</a>, the first move is simply to ask at guest services, or any member of staff, for somewhere quiet and out of the way. Park staff deal with unusual requests every day and the question is not an odd one.</p>
+
+<h2>2. Find a quiet corner</h2>
+<p>The picnic areas and the paths set back from the big rides are your friends, especially in the early afternoon when everyone is in the queues. A pocket mat, the direction from our <a href="/qibla">qibla tool</a>, and it is done.</p>
+
+<h2>3. Your car in the car park</h2>
+<p>If you drove, the car is a real option on arrival or on the way out. For a mid-day trip out, <strong>check the re-entry rule at the gate before you leave</strong> — everything else depends on it.</p>
+
+<h2>4. Combining, if you have come a long way</h2>
+<p>Combining dhuhr and asr reduces the whole day to a single prayer stop. Check the day's times with our <a href="/prayer-times">prayer times</a> in the morning, not when the call arrives, and place your stop deliberately.</p>
+<p>On what is permitted when travelling — shortening, combining, making up — <strong>we do not rule</strong>: that is a religious question, and it is not ours to answer.</p>
+
+<h2>Wudu</h2>
+<p>This is the real obstacle, more than the prayer itself. Two habits change everything: filling <strong>a small squeezable bottle</strong> at the basin before going into the cubicle, and keeping a <strong>microfibre towel</strong> in your bag. The full method is in our guide: <a href="/blog/wudu-on-a-plane-or-train">making wudu while travelling</a>.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Is there a prayer room at Parc Astérix?</strong> Not to our knowledge — ask staff for a quiet space.<br/>
+<strong>Where can I make wudu?</strong> At the park toilets; a small kit in your bag helps.<br/>
+<strong>What is the simplest approach?</strong> Combine prayers and aim for a quiet window.<br/>
+<strong>Can I bring a prayer mat?</strong> Bags are opened at the entrance check; a pocket mat is an ordinary item.</p>
+
+<h2>Help the community</h2>
+<p>Were you pointed to a specific spot at Parc Astérix, or did staff tell you something useful? Share it — that is exactly the information this page is missing. <a href="/communaute/ajouter">→ Add the place</a> · <a href="/communaute">→ Join the community</a></p>`,
+  },
+  {
+    slug: "where-to-pray-puy-du-fou",
+    title: "Puy du Fou: no prayer room, where to pray anyway",
+    description: "No official prayer room at Puy du Fou — but the park is large and wooded. How Muslim visitors fit prayers around the show times, step by step.",
+    coverImage: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200&q=80",
+    category: 'Practical',
+    readTime: "3 min",
+    publishedAt: '2026-08-31',
+    lang: 'en',
+    tags: ['prayer', 'puy du fou', 'france', 'family', 'muslim travel'],
+    content: `<p>Puy du Fou is visited to the rhythm of its shows — and fitting prayers around them takes a little planning. Here is how to do it simply.</p>
+
+<h2>The short version</h2>
+<p>To our knowledge there is <strong>no official prayer room</strong>, and we will not write that one exists until it has been verified. But the park is large and wooded: quiet corners are not in short supply between the period villages. Add the traveller's concessions and a careful read of the day's show programme, and it holds together.</p>
+
+<h2>1. Plan around the shows</h2>
+<p>The trap at Puy du Fou is the run of show times. On arrival, compare the day's programme with our <a href="/prayer-times">prayer times</a> and pick your window — usually early afternoon, or between two of the big shows.</p>
+
+<h2>2. Find your quiet corner</h2>
+<p>Between the reconstructed villages, the woodland and the side paths, quiet space is plentiful. A pocket mat, the direction from our <a href="/qibla">qibla tool</a>, and a discreet spot: nobody pays attention.</p>
+
+<h2>3. Ask a member of staff</h2>
+<p>At guest services or from any member of staff, ask for somewhere quiet. It is a simple request and a well-received one at most large parks. If you are staying at one of the park hotels, your room settles the evening and morning prayers.</p>
+
+<h2>4. Combining, if you need it</h2>
+<p>When travelling, combining dhuhr with asr and maghrib with isha is a real help — particularly with the Cinéscénie, which finishes late.</p>
+<p>On what is permitted in those situations, <strong>we do not rule</strong>: that is a religious question, and it is not ours to answer.</p>
+
+<h2>The prayer that causes trouble</h2>
+<p>It is Maghrib. In summer it falls in the middle of the evening programme; the window is short and you may be seated in a show. Checking the day's times <em>in the morning</em> rather than when the call arrives is the habit that fixes it.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Is there an official prayer room?</strong> Not to our knowledge — quiet corners and helpful staff do the job.<br/>
+<strong>Where can I make wudu?</strong> At the park's washrooms.<br/>
+<strong>And with the Cinéscénie in the evening?</strong> Pray maghrib before the show, or combine it with isha.<br/>
+<strong>Is a pocket prayer mat a problem at the entrance check?</strong> It is an ordinary item.</p>
+
+<h2>Help the community</h2>
+<p>Do you know a good spot at Puy du Fou, or has staff told you something useful? Share it — it will serve other families. <a href="/communaute/ajouter">→ Add the place</a> · <a href="/communaute">→ Join the community</a></p>`,
   },
   {
     slug: "where-to-pray-paris-airports",
@@ -3773,7 +3853,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
   },
   {
     slug: "where-to-pray-marseille-airport",
-    title: "Prayer Room at Marseille Airport: The Honest Answer",
+    title: "Marseille Airport: no prayer room, where to pray",
     description: "Marseille-Provence has no prayer room. Where to pray anyway, why praying before you arrive is the real answer, and where to make wudu.",
     coverImage: "/guides/blog-marseille.jpg",
     category: 'Practical',
