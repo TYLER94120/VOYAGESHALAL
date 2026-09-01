@@ -12,6 +12,7 @@
 //   4. une phrase tranche une question religieuse ou pousse à se presser ;
 //   5. une mosquée se voit compter un trajet retour qu'elle n'a pas.
 
+import { readFileSync } from 'node:fs'
 import { croisement, phraseCroisement } from '../lib/croisementPriere.mjs'
 
 let fautes = 0
@@ -48,11 +49,42 @@ const loin = croisement({ distanceM: 3200, mode: 'pied', finPriere: t(21, 6), ma
 if (!/trop tard/i.test(phraseCroisement(loin, 'Maghrib'))) casse('une adresse hors d\'atteinte n\'est pas signalée comme telle')
 
 // ── 4. Aucune phrase ne tranche, aucune ne presse ──────────────────────
+//
+// 🇬🇧 1er septembre : CETTE RÈGLE NE VOYAIT QUE LE FRANÇAIS.
+// `phraseCroisement(c, nom, en)` a une branche anglaise complète — et les
+// quatre appels de ce test l'omettaient, donc `en` valait toujours false.
+// La branche anglaise n'a JAMAIS été vérifiée. Elle portait deux fautes :
+//
+//   « 15 min left to DECIDE »      le nombre est une heure de DÉPART ;
+//                                   la branche voisine disait « to leave ».
+//   « Maghrib is SAFE »            « est large » parle de l'horloge ;
+//                                   « safe » se lit comme un verdict sur la
+//                                   prière — ce que cette règle interdit.
+//
+// On teste donc les DEUX langues, avec la liste de mots de chacune. Une
+// règle écrite dans une seule langue ne protège qu'un seul site.
 const INTERDIT = /dépêche|vite|cours\b|tu dois|il faut absolument|valide|invalide|péché|obligatoire|tu peux prier plus tard/i
-for (const cas of [m, proche, loin, croisement({ distanceM: 900, mode: 'voiture', finPriere: t(21, 6), maintenant: t(21, 0), categorie: 'manger' })]) {
-  for (const p of ['Maghrib', 'Asr'].map((n) => phraseCroisement(cas, n))) {
-    if (p && INTERDIT.test(p)) casse(`une phrase donne un ordre ou tranche une question religieuse : « ${p} »`)
-    if (p && !/\d/.test(p)) casse(`une phrase sans aucun chiffre : « ${p} » — on donne des faits, pas des impressions`)
+const INTERDIT_EN = /\bhurry|\brush\b|\brun\b|you must\b|you have to\b|obligatory|mandatory|sinful|\bsin\b|invalid|\bvalid\b|\bsafe\b|pray later/i
+const CAS = [m, proche, loin, croisement({ distanceM: 900, mode: 'voiture', finPriere: t(21, 6), maintenant: t(21, 0), categorie: 'manger' })]
+for (const cas of CAS) {
+  for (const nom of ['Maghrib', 'Asr']) {
+    for (const en of [false, true]) {
+      const p = phraseCroisement(cas, nom, en)
+      if (!p) continue
+      const interdit = en ? INTERDIT_EN : INTERDIT
+      if (interdit.test(p)) casse(`(${en ? 'EN' : 'FR'}) une phrase donne un ordre ou tranche une question religieuse : « ${p} »`)
+      if (!/\d/.test(p)) casse(`(${en ? 'EN' : 'FR'}) une phrase sans aucun chiffre : « ${p} » — on donne des faits, pas des impressions`)
+    }
+  }
+}
+
+// ── 6. Le même chiffre dit la même chose dans les deux langues ─────────
+// `partirAvantMin` est une heure de DÉPART. Une traduction qui le présente
+// comme un délai « pour décider » ne dit pas la même chose au lecteur.
+for (const cas of [m, croisement({ distanceM: 2600, mode: 'pied', finPriere: t(21, 6), maintenant: t(20, 35), categorie: 'manger' })]) {
+  const en = phraseCroisement(cas, 'Maghrib', true)
+  if (en && /min left/.test(en) && !/left to leave/.test(en)) {
+    casse(`(EN) le délai de départ est présenté autrement que comme un départ : « ${en} »`)
   }
 }
 
@@ -61,5 +93,34 @@ const pied = croisement({ distanceM: 3000, mode: 'pied', finPriere: t(21, 6), ma
 const auto = croisement({ distanceM: 3000, mode: 'voiture', finPriere: t(21, 6), maintenant: t(20, 35) })
 if (!(auto.trajetMin < pied.trajetMin)) casse('la voiture ne va pas plus vite que la marche dans notre calcul')
 
+// ── 7. ⚠️ CE TEST GARDE-T-IL QUELQUE CHOSE DE SERVI ? ──────────────────
+// Mesuré le 1er septembre : `phraseCroisement` n'est appelée que par
+// components/home/EcranCiel.tsx, monté par components/home/AccueilCiel.tsx,
+// que PLUS AUCUNE ROUTE n'importe. La fonctionnalité que ce fichier appelle
+// « ce que personne d'autre ne peut écrire » n'est donc servie à personne,
+// et ce test passe à chaque construction en donnant l'apparence d'une
+// garantie. On ne casse pas le build pour autant — rebrancher ou retirer
+// l'écran est une décision de produit, pas de test — mais on le DIT, fort,
+// à chaque passage. Un test muet sur son inutilité est un test qui ment.
+import { readdirSync, statSync } from 'node:fs'
+import { join } from 'node:path'
+const fichiers = []
+const parcourir = (d) => {
+  for (const f of readdirSync(d)) {
+    if (f === 'node_modules' || f.startsWith('.')) continue
+    const p = join(d, f)
+    if (statSync(p).isDirectory()) parcourir(p)
+    else if (/\.(tsx?|mjs)$/.test(f)) fichiers.push(p)
+  }
+}
+for (const racine of ['app', 'components']) { try { parcourir(racine) } catch { /* absent */ } }
+const importeParUneRoute = fichiers.some((f) => {
+  if (f.includes('AccueilCiel') || f.includes('EcranCiel')) return false
+  return /AccueilCiel/.test(readFileSync(f, 'utf8'))
+})
+if (!importeParUneRoute) {
+  console.warn('⚠️  croisement : AccueilCiel n\'est importé par AUCUN fichier — l\'écran « croisement prière × distance » n\'est servi à personne. Ce test vérifie du code que les visiteurs ne voient pas. À rebrancher ou à retirer : décision de Mohamed.')
+}
+
 if (fautes) { console.error(`\n${fautes} faute(s) — build arrêté.`); process.exit(1) }
-console.log('✅ croisement : la soustraction est juste, et aucune phrase ne tranche à la place du visiteur.')
+console.log('✅ croisement : la soustraction est juste, et aucune phrase ne tranche à la place du visiteur — vérifié en français ET en anglais.')

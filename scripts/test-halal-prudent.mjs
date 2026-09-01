@@ -87,6 +87,59 @@ for (const f of readdirSync('data/villes').filter((x) => x.endsWith('.json'))) {
   }
 }
 
+// ══════════════════════════════════════════════════════════════════════
+// 🔌 1er SEPTEMBRE — LA RÈGLE ÉTAIT TESTÉE, ELLE NE TOURNAIT NULLE PART.
+//
+// Mesure de la ronde : `lib/halalPrudent.mjs` n'est importé par AUCUNE
+// route. Seulement par ce test. La règle dictée par Mohamed le 15 août
+// était écrite, vérifiée, verte à chaque construction — et absente du
+// produit servi. Rejouée dans le filtre RÉELLEMENT branché
+// (`lib/conformite.ts`, appelé par /api/osm-restos) :
+//
+//     GARDÉ   Grill & Souvlaki Stop   [cuisine: souvlaki;pizza;burger]
+//
+// Le cas exact du 15 août passait encore. Et il comptait davantage depuis
+// le 30 août : la découverte « manger » passe désormais par cette route.
+//
+// Les mots ont donc rejoint la liste qui tourne. Ce contrôle-ci vérifie le
+// FILTRE SERVI, pas le module de côté — un test qui garde du code que
+// personne n'atteint donne l'apparence d'une garantie, et c'est pire que
+// pas de test du tout.
+//
+// ⚠️ Lecture de la SOURCE et non import : `conformite.ts` est du TypeScript,
+// et l'importer ici exigerait --experimental-strip-types, qui a déjà cassé
+// un déploiement Vercel. On vérifie donc où vivent les mots.
+const conformite = readFileSync(new URL('../lib/conformite.ts', import.meta.url), 'utf8')
+const debutExclus = conformite.indexOf('const MOTS_EXCLUS')
+const finExclus = conformite.indexOf(']', debutExclus)
+const blocExclus = conformite.slice(debutExclus, finExclus)
+
+// Ces plats sont du porc par définition dans la cuisine où ils apparaissent.
+for (const mot of ['souvlaki', 'gyros', 'prosciutto', 'pancetta', 'saucisson', 'bratwurst', 'schnitzel', 'taverna', 'jambon']) {
+  if (!new RegExp(`'${mot}'`).test(blocExclus)) {
+    fautes.push(`« ${mot} » n'est plus dans MOTS_EXCLUS de lib/conformite.ts — le filtre qui tourne réellement laisserait passer le cas du 15 août`)
+  }
+}
+
+// Ils doivent être dans MOTS_EXCLUS et NON dans MOTS_DOUTE : une étiquette
+// halal affirmée annule MOTS_DOUTE, or c'est précisément cette étiquette
+// OpenStreetMap qu'on ne croit pas sur ces plats-là.
+const debutDoute = conformite.indexOf('const MOTS_DOUTE')
+const blocDoute = conformite.slice(debutDoute, conformite.indexOf(']', debutDoute))
+for (const mot of ['souvlaki', 'gyros']) {
+  if (new RegExp(`'${mot}'`).test(blocDoute)) {
+    fautes.push(`« ${mot} » est passé dans MOTS_DOUTE : une étiquette halal OSM suffirait à l'annuler — c'est exactement l'étiquette qu'on ne croit pas ici`)
+  }
+}
+
+// Et les mots volontairement ÉPARGNÉS le restent : des versions halal
+// existent sous ces noms, les exclure écarterait de vraies adresses.
+for (const mot of ['sausage', 'chorizo', 'salami']) {
+  if (new RegExp(`'${mot}'`).test(blocExclus)) {
+    fautes.push(`« ${mot} » a été ajouté aux exclusions : des adresses halal se vendent sous ce nom — le doute joue dans les deux sens`)
+  }
+}
+
 if (fautes.length) {
   console.error(`\n❌ HALAL PRUDENT — ${fautes.length} faute(s) :\n`)
   for (const f of fautes.slice(0, 25)) console.error('   · ' + f)

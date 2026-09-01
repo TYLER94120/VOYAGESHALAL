@@ -1588,3 +1588,105 @@ Requêtes.
 
 **PR #124 toujours pas fusionnée** : le maillage, la découverte OSM des
 restaurants et ces deux pages attendent tous là.
+
+---
+
+## 1er septembre — une règle écrite, testée, verte à chaque build… et qui ne tournait nulle part
+
+Hier j'ai trouvé que la règle d'honnêteté des titres était écrite **en
+français seulement**, laissant 831 pages anglaises sans garde-fou. Ce soir
+j'ai cherché si c'était un cas isolé. Ça ne l'était pas — et le vrai
+problème est plus grave que la langue.
+
+### La mesure : 5 modules gardés par un test, atteints par aucune route
+
+`scratchpad/atteignable.mjs` part des 126 routes réelles (`app/**/page.tsx`,
+`layout`, `route.ts`, `middleware`), suit les imports de proche en proche, et
+regarde qui reste dehors. **283 fichiers sur 342 sont atteints.** Parmi les
+59 autres, cinq sont gardés par un test de construction :
+
+| module | gardé par | servi ? |
+|---|---|---|
+| `lib/halalPrudent.mjs` | test-halal-prudent | **non** |
+| `lib/croisementPriere.mjs` | test-croisement | **non** |
+| `lib/verdictVille.mjs` | test-verdict-ville | **non** |
+| `lib/cielDuMoment.mjs` | test-ciel | **non** |
+| `lib/infoPratiqueEn.ts` | test-info-pratique-en | **non** |
+
+Cinq tests passent au vert à chaque construction et **ne garantissent rien
+de ce que les visiteurs voient**. Un test qui garde du code inatteignable
+donne l'apparence d'une garantie : c'est pire qu'un test absent, parce qu'on
+cesse de regarder.
+
+### 🔴 Le plus grave : le défaut de Tirana était revenu
+
+`lib/halalPrudent.mjs` porte en tête le défaut trouvé par Mohamed le 15 août :
+
+> « "Grill & Souvlaki Stop" est marqué "✓ signalé halal · OSM". Le souvlaki,
+> dans les Balkans et en Grèce, est traditionnellement du PORC. »
+
+Le correctif a été écrit dans ce fichier. **Aucune route ne l'importe.** J'ai
+donc rejoué le cas dans le filtre qui tourne réellement (`lib/conformite.ts`,
+appelé par huit endroits dont `/api/osm-restos`, `SocleVille` et
+`DestinationRoute`) :
+
+```
+GARDÉ   Grill & Souvlaki Stop   [cuisine: souvlaki;pizza;burger;chicken]
+GARDÉ   Gyros Express           [cuisine: gyros;greek]
+GARDÉ   Taverna Mykonos         [cuisine: greek]
+```
+
+Le cas exact du 15 août passait encore, seize jours plus tard. Et il pesait
+**davantage depuis avant-hier** : la découverte « manger » passe désormais
+par `/api/osm-restos`.
+
+`conformite.ts` couvrait bien le porc (`pork`, `porc`, `bacon`, `ham`…) mais
+pas les PLATS. Les mots manquants l'ont rejoint — dans `MOTS_EXCLUS` et non
+`MOTS_DOUTE`, parce qu'une étiquette halal affirmée annule `MOTS_DOUTE`, et
+c'est précisément cette étiquette OpenStreetMap qu'on ne croit pas ici. La
+règle « porc : jamais, quelle que soit l'étiquette » existait déjà deux
+lignes plus haut.
+
+**Effet mesuré : 80 adresses sur 16 512 (0,48 %) disparaissent** de
+l'affichage. Ce sont des grecs et des balkaniques étiquetés halal par OSM.
+
+⚠️ **Certaines sont sans doute vraiment halal** (« Gyros & Kebab [arab] », un
+stand libanais qui fait des gyros). Les écarter est une perte. Le choix suit
+la règle du 15 août — l'adresse peut rester, la promesse part — et là où
+l'on ne sait pas exprimer le troisième état, on s'abstient.
+Volontairement **épargnés** : `sausage`, `chorizo`, `salami`, `tapas`. Des
+adresses halal se vendent sous ces noms ; le doute joue dans les deux sens.
+
+### Deux fautes anglaises dans le croisement prière × distance
+
+`phraseCroisement(c, nom, en)` a une branche anglaise complète que les
+quatre appels du test omettaient — `en` valait toujours `false`. Jamais
+vérifiée, elle portait :
+
+| | français | anglais |
+|---|---|---|
+| le chiffre | « il te reste 11 min **pour partir** » | « 11 min left **to decide** » |
+| la marge | « Maghrib **est large** » (l'horloge) | « Maghrib **is safe** » (la prière) |
+
+« To decide » n'est pas la même consigne : le nombre est une heure de
+départ, calculée par soustraction — et la branche voisine disait déjà « to
+leave ». Quant à « safe », il se lit comme un verdict sur la prière
+elle-même : exactement ce que la règle « aucune phrase ne tranche une
+question religieuse » interdit — et elle ne pouvait pas le voir, étant
+écrite en français.
+
+Corrigé, et le test tourne désormais **dans les deux langues**, avec la
+liste de mots interdits de chacune. Vérifié qu'il échoue si l'on remet
+l'ancienne phrase.
+
+### Ce que je n'ai pas fait, et pourquoi
+
+**Je n'ai ni rebranché ni supprimé les cinq modules orphelins.** Le
+croisement prière × distance est décrit dans son propre code comme « ce que
+personne d'autre ne peut écrire » ; le rebrancher voudrait dire revenir sur
+la refonte de l'accueil (HeroDepart + BlocSeo), et le supprimer voudrait
+dire jeter une fonctionnalité. **C'est une décision de produit, pas de
+test.** `test-croisement.mjs` le dit maintenant à voix haute à chaque
+construction plutôt que de passer en silence.
+
+**Aucune page neuve.** Aucun titre français retouché.
