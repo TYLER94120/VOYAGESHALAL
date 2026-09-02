@@ -1690,3 +1690,76 @@ test.** `test-croisement.mjs` le dit maintenant à voix haute à chaque
 construction plutôt que de passer en silence.
 
 **Aucune page neuve.** Aucun titre français retouché.
+
+---
+
+## 2 septembre — ce qu'on déclarait à Google, et que personne ne relit jamais
+
+La donnée structurée (JSON-LD) ne s'affiche nulle part. C'est pourtant ce
+que Google lit en premier, et c'est le seul endroit du site que personne ne
+relit. Trois défauts y vivaient, sur les 354 fiches ville × 2 domaines.
+
+### 1. Une note d'utilisateurs qui n'existent pas
+
+```
+ratingValue : ville.score_halal        → NOTRE score, calculé par nous
+ratingCount : restaurants_halal ?? 50  → un nombre de RESTAURANTS
+```
+
+`ratingCount` désigne un nombre d'**avis**. Vérifié sur les 354 fiches :
+**aucune ne porte le moindre champ d'avis ou de note d'utilisateur.** On
+présentait donc notre propre note éditoriale à Google comme la moyenne
+d'avis inexistants, et on comptait ces avis en restaurants.
+
+Le repli `?? 50` est le jumeau exact du `ratingCount: h.avis_count ?? 20`
+retiré des hôtels le **24 août**. Il ne s'est jamais déclenché — les 354
+villes ont la statistique — mais il attendait la première ville publiée
+sans elle. La correction du 24 août portait sur un fichier ; celui-ci n'a
+jamais été relu.
+
+Retiré. Le score reste **affiché sur la page**, où il est expliqué ; il ne
+part plus en donnée structurée se faire passer pour autre chose.
+
+### 2. 150 adresses refusées à l'écran, annoncées à Google
+
+`restaurantSchemas` prenait les 20 premiers restaurants **sans passer par
+`conforme()`** — le filtre que `SocleVille` et `DestinationRoute`
+appliquent, et qui est branché en huit endroits.
+
+**Mesure : 150 restaurants sur 5 276 (2,8 %)** partaient chez Google alors
+que le site refuse de les montrer : un « Fugo Bar And Restaurant » à Accra,
+des adresses à tapas à Addis-Abeba. Le site n'osait pas les afficher et
+disait quand même à Google qu'elles sont dans son guide halal.
+
+Le filtre s'applique **avant** la coupe à 20, sinon les adresses écartées
+mangeraient des places au lieu d'être remplacées.
+
+**Vérifié servi**, JSON-LD lu sur le serveur de production local :
+
+| fiche | restaurants en JSON-LD | aggregateRating |
+|---|---|---|
+| /destinations/accra | 17 | **0** |
+| /destinations/addis-abeba | 15 | **0** |
+| /destinations/tirana | 20 | **0** |
+
+### Comment ces défauts survivent
+
+Les trois se ressemblent, et ressemblent à ceux des deux nuits
+précédentes : **une règle appliquée à un endroit et pas à l'autre.**
+
+· 27 août — l'honnêteté des titres, en français seulement (831 pages EN
+  libres) ;
+· 1er sept. — la règle du souvlaki, écrite dans un module qu'aucune route
+  n'importe ;
+· 2 sept. — le filtre de conformité, appliqué à l'affichage mais pas à la
+  donnée structurée ; la correction des faux avis, portée aux hôtels mais
+  pas aux villes.
+
+Le point commun n'est pas la négligence : c'est qu'**une règle vraie dans un
+fichier paraît vraie partout**. Les trois tests écrits ces trois nuits
+vérifient désormais chacun le chemin RÉELLEMENT servi, pas l'intention.
+
+⚠️ `scripts/test-donnees-structurees.mjs` a d'abord échoué sur son propre
+commentaire — il lisait l'explication « ce bloc envoyait score_halal »
+comme un bloc qui l'envoie. Même piège que le 29 août avec `'use client'`.
+Les commentaires sont retirés avant lecture.

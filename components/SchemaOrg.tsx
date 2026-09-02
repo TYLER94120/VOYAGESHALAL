@@ -1,5 +1,6 @@
 import type { Ville } from '@/lib/villeTypes'
 import { buildVilleFaq } from '@/lib/villeFaq'
+import { conforme } from '@/lib/conformite'
 
 function descText(ville: Ville): string {
   if (typeof ville.description === 'string') return ville.description
@@ -21,12 +22,20 @@ export function DestinationSchema({ ville, slug, en = false, siteUrl = FR_SITE }
     image: ville.image ?? ville.image_hero,
     address: { '@type': 'PostalAddress', addressLocality: ville.nom, addressCountry: ville.codeISO ?? ville.pays },
     geo: { '@type': 'GeoCoordinates', latitude: coord.lat, longitude: coord.lng },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: ville.score_halal,
-      bestRating: 5,
-      ratingCount: ville.statistiques?.restaurants_halal ?? ville.restaurants?.length ?? 50,
-    },
+    // 🔴 2 septembre — AUCUN aggregateRating ICI. Ce bloc annonçait à Google :
+    //     ratingValue : ville.score_halal        → NOTRE score éditorial, calculé
+    //     ratingCount : restaurants_halal ?? 50  → un nombre de RESTAURANTS
+    //
+    // Deux affirmations fausses dans la même balise. `ratingCount` désigne un
+    // nombre d'AVIS ; aucune fiche ville ne porte le moindre champ d'avis ou de
+    // note d'utilisateur (vérifié sur les 354). On présentait donc notre propre
+    // note comme la moyenne d'avis qui n'existent pas, sur 354 pages × 2 domaines.
+    // Et le repli `?? 50` était le jumeau exact du `ratingCount: h.avis_count ?? 20`
+    // retiré des hôtels le 24 août : il ne s'est jamais déclenché (les 354 villes
+    // ont la statistique), mais il attendait la première ville publiée sans elle.
+    //
+    // Le score reste affiché SUR LA PAGE, où il est expliqué. Il ne part pas en
+    // donnée structurée se faire passer pour autre chose.
     touristType: en ? 'Muslim traveler' : 'Voyageur musulman',
   }
   const breadcrumb = {
@@ -52,7 +61,18 @@ export function DestinationFaqSchema({ ville, en = false }: { ville: Ville; en?:
   // Cap à 20 : aligné sur les restaurants rendus en SSR (pagination) — évite
   // 150 blocs JSON-LD par page (poids inutile, Google n'en exploite que peu).
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const restaurantSchemas = (ville.restaurants ?? []).slice(0, 20).map((r: any) => ({
+  // 🔴 2 septembre — LE MÊME FILTRE QUE L'AFFICHAGE, PAS UN AUTRE.
+  // Mesure : 150 restaurants sur 5 276 (2,8 %) partaient dans ce JSON-LD alors
+  // que `conforme()` les refuse à l'écran — un « Bar And Restaurant » à Accra,
+  // des adresses à tapas à Addis-Abeba. Le site refusait de les montrer et
+  // annonçait quand même à Google qu'ils sont dans son guide halal.
+  // SocleVille et DestinationRoute appliquent ce filtre ; la donnée structurée
+  // l'ignorait. Ce qu'on déclare à Google ne peut pas être plus permissif que
+  // ce qu'on ose afficher.
+  const restaurantSchemas = (ville.restaurants ?? [])
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    .filter((r: any) => conforme(r.nom, r.cuisine ?? r.type, r.halalConfidence))
+    .slice(0, 20).map((r: any) => ({
     '@context': 'https://schema.org',
     '@type': 'Restaurant',
     name: r.nom,
