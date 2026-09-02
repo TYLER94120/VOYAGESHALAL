@@ -190,6 +190,40 @@ def main():
                 fautes.append('sourates.html : sourate %s annoncee a %s versets, '
                               'le corpus en compte %d' % (num, dit, vrai))
 
+        # LE NOMBRE DE LECONS ANNONCE DOIT ETRE LE NOMBRE DE LECONS.
+        #
+        # La description de cette page a annonce « Vingt » pendant deux jours
+        # alors que le corps de la MEME page annoncait vingt et un. Le second
+        # etait compte, le premier ecrit a la main dans une constante, et
+        # l'ajout d'Al-Fatiha n'avait touche que ce qui se compte. Rien ne
+        # l'a signale : les deux nombres vivaient a dix lignes l'un de
+        # l'autre sans que quoi que ce soit les confronte.
+        #
+        # On ne verifie donc pas une formulation, qui changera : on releve
+        # TOUS les nombres annonces dans la description et dans le chapeau,
+        # on met 114 de cote — c'est le nombre de sourates, pas de lecons —
+        # et on exige que tout le reste soit egal au nombre de fichiers de
+        # lecon reellement poses sur le disque. Une phrase reecrite passe ;
+        # un nombre faux, non.
+        vrai_lecons = len(pages)
+        annonces = []
+        d = DESC.search(t)
+        if d:
+            annonces += [(int(x), 'la description')
+                         for x in re.findall(r'\d+', desechapper(d.group(1)))]
+        chapeau = re.search(r'<p class="lecon-quoi">(.*?)</p>', t, re.S)
+        if chapeau:
+            annonces += [(int(x), 'le chapeau')
+                         for x in re.findall(r'\d+', desechapper(chapeau.group(1)))]
+        if not annonces:
+            fautes.append('sourates.html : ni description ni chapeau lisibles')
+        for n, ou in annonces:
+            if n == 114:
+                continue
+            if n != vrai_lecons:
+                fautes.append('sourates.html : %s annonce %d lecons, il y en a %d'
+                              % (ou, n, vrai_lecons))
+
     if fautes:
         print('  %d FAUTE(S) — le lot est refuse :' % len(fautes))
         for x in fautes[:25]:

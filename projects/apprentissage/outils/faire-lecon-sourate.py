@@ -83,7 +83,21 @@ TRADUCTEUR = 'Muhammad Hamidullah'
 #
 # Son verset 1 EST la basmala : `versets()` ne la retire que pour n != 1,
 # ce qui est la regle correcte et non une exception taillee pour elle.
-LOT = [1, 93, 94, 95, 97, 99, 100, 101, 102, 103, 104,
+#
+# AL-ALAQ (96) ET AL-BAYYINA (98) S'AJOUTENT LE 2 SEPTEMBRE. Elles ne
+# manquaient pour aucune raison editoriale : elles n'etaient simplement pas
+# dans le lot d'avant le 21 aout, et leur absence faisait deux trous au milieu
+# d'une suite. Le critere n'est donc pas « il manque une sourate » — ce n'en
+# est pas un — mais celui-ci : DE 93 A 114, PLUS AUCUN TROU. Qui arrive par
+# une sourate de ce bloc trouve toutes ses voisines, et la page des 114 cesse
+# d'alterner lien, ligne, lien sans logique visible.
+#
+# Al-Alaq porte en plus quelque chose qu'aucune autre page du site ne porte :
+# ses cinq premiers versets sont la premiere revelation. La page ne le DIT
+# pas — ce fait vient du hadith, et le projet n'a aucune traduction francaise
+# sourcee de ces recueils (voir « CE QU'ON N'ECRIT PAS »). Elle se contente
+# du texte, de sa traduction attribuee et de sa reference, comme les autres.
+LOT = [1, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104,
        105, 106, 107, 108, 109, 110, 111, 112, 113, 114]
 
 # La section de QCM vers laquelle chaque lecon renvoie. Le sens des sourates

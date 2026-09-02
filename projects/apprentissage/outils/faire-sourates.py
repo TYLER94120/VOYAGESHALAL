@@ -51,7 +51,43 @@ def ardoise(nom):
 
 
 TITRE = 'Les 114 sourates du Coran : noms et nombre de versets'
-DESC = ("Les 114 sourates du Coran dans l'ordre : nom en arabe, nom en français, numéro et nombre de versets. Vingt d'entre elles sont expliquées verset par verset.")
+
+# LA DESCRIPTION COMPTE LES LECONS, ELLE NE LES ANNONCE PLUS DE MEMOIRE.
+#
+# Elle a dit « Vingt d'entre elles sont expliquees » pendant deux jours alors
+# qu'il y en avait vingt et une : le nombre etait ecrit a la main dans une
+# constante, le corps de la page le calculait, et l'ajout d'Al-Fatiha n'a
+# touche que le second. La page affichait donc deux nombres differents pour
+# la meme chose, dont un faux, sur celle qui recoit le plus d'impressions du
+# site — et une affirmation fausse sur le Coran, publique, au nom de
+# l'editeur, est precisement ce que ce projet s'interdit.
+#
+# La faute n'etait pas d'avoir mal recopie : c'etait d'avoir recopie. Le
+# nombre se COMPTE maintenant, au meme endroit et au meme moment que celui du
+# corps de la page, et `controler-lecons.py` verifie que les deux se
+# recoupent et qu'ils correspondent aux fichiers reellement sur le disque.
+#
+# Les variantes existent parce que la description doit tenir entre 150 et 160
+# caracteres : selon que le nombre s'ecrit sur un ou trois chiffres, la phrase
+# gagne ou perd deux caracteres et peut sortir de la fenetre. On en propose
+# donc plusieurs, toutes vraies, et on garde la premiere qui tient.
+def description(n):
+    variantes = [
+        "Les 114 sourates du Coran dans l'ordre : nom en arabe, nom en français,"
+        " numéro et nombre de versets. %d d'entre elles sont expliquées verset"
+        " par verset." % n,
+        "Les 114 sourates du Coran dans l'ordre : nom en arabe, nom en français,"
+        " numéro et nombre de versets. %d sont expliquées verset par verset." % n,
+        "Les 114 sourates du Coran dans l'ordre, avec leur nom en arabe, leur nom"
+        " en français, leur numéro et leur nombre de versets. %d ont une leçon."
+        % n,
+    ]
+    for v in variantes:
+        if 150 <= len(v) <= 160:
+            return v
+    sys.exit('ARRET : aucune description entre 150 et 160 caracteres pour '
+             '%d lecons (longueurs : %s).'
+             % (n, ', '.join(str(len(v)) for v in variantes)))
 
 
 def main():
@@ -76,8 +112,7 @@ def main():
             avec[s['n']] = f
     if len(TITRE) > 60:
         sys.exit('ARRET : titre de %d caracteres.' % len(TITRE))
-    if not 150 <= len(DESC) <= 160:
-        sys.exit('ARRET : description de %d caracteres.' % len(DESC))
+    DESC = description(len(avec))
 
     jsonld = json.dumps({
         '@context': 'https://schema.org',
@@ -199,6 +234,7 @@ def main():
     (RACINE / 'sourates.html').write_text(h, encoding='utf-8')
     print('  sourates.html : 114 sourates, %d avec une lecon.' % len(avec))
     print('  titre %d caracteres, description %d.' % (len(TITRE), len(DESC)))
+    print('  le nombre de lecons annonce est compte, pas recopie.')
 
 
 if __name__ == '__main__':
