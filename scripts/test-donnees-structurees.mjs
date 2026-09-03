@@ -86,5 +86,37 @@ if (iFiltre > 0 && iSlice > 0 && iSlice < iFiltre) {
   casse('le JSON-LD coupe à 20 AVANT de filtrer : les adresses écartées mangeraient des places au lieu d\'être remplacées')
 }
 
+// ── 3. LA FAQ NE PEUT PAS CONTREDIRE LA PAGE ──────────────────────────
+// Ronde du 3 septembre. `DestinationSchema` et `DestinationFaqSchema`
+// recevaient la ville BRUTE, quand l'affichage reçoit `restaurantsConformes`.
+// Mesuré sur les 354 fiches :
+//   · 159 villes (45 %) annonçaient un nombre de restaurants supérieur à ce
+//     que la page montre — 407 de trop au total ;
+//   · 27 villes NOMMAIENT dans leur réponse FAQ une adresse que la page
+//     refuse — « Chicha Châtelet » (Annaba), « Cloud Lounge » (Bagdad),
+//     « 114 Group Tea & Lounge » (Bakou). Des lounges à chicha, écartés de
+//     l'écran par lib/conformite.ts, et cités à Google comme nos adresses.
+// Une seule ville part maintenant partout : celle qu'on affiche.
+const route = readFileSync('components/villes/DestinationRoute.tsx', 'utf8')
+  .replace(/\{\/\*[\s\S]*?\*\/\}/g, '')
+  .split('\n').filter((l) => !/^\s*(\/\/|\*)/.test(l)).join('\n')
+
+if (!/const villeAffichee = \{ \.\.\.ville, restaurants: restaurantsConformes/.test(route)) {
+  casse('la ville affichée n\'est plus construite en un seul endroit : les compteurs de la FAQ vont redivergér de la page')
+}
+for (const [balise, quoi] of [['DestinationSchema', 'le schéma ville'], ['DestinationFaqSchema', 'la FAQ envoyée à Google']]) {
+  const m = route.match(new RegExp(`<${balise} ville=\\{([a-zA-Z]+)\\}`))
+  if (!m) { casse(`${balise} a disparu de la page ville, ou son appel a changé de forme`); continue }
+  if (m[1] !== 'villeAffichee') {
+    casse(`${quoi} reçoit « ${m[1] === 'ville' ? 'ville' : m[1]} » et non la ville affichée — il annoncerait à Google des adresses et des comptes que la page ne montre pas`)
+  }
+}
+// La FAQ tire ses chiffres ET ses noms de la même liste : si elle allait les
+// chercher ailleurs, filtrer la ville ne servirait plus à rien.
+const faq = readFileSync('lib/villeFaq.ts', 'utf8')
+if (!/ville\.restaurants\?\.length/.test(faq) || !/\(ville\.restaurants \?\? \[\]\)\.slice\(0, 3\)/.test(faq)) {
+  casse('lib/villeFaq.ts ne compte plus depuis ville.restaurants : le filtre appliqué en amont ne l\'atteindrait plus')
+}
+
 if (fautes) { console.error(`\n${fautes} faute(s) — build arrêté.`); process.exit(1) }
 console.log(`✅ données structurées : aucune note ni aucun compte d'avis inventés (${villes} fiches ville relues), et le JSON-LD n'annonce que ce que le site ose afficher.`)

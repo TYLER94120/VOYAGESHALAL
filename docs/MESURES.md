@@ -1763,3 +1763,76 @@ vérifient désormais chacun le chemin RÉELLEMENT servi, pas l'intention.
 commentaire — il lisait l'explication « ce bloc envoyait score_halal »
 comme un bloc qui l'envoie. Même piège que le 29 août avec `'use client'`.
 Les commentaires sont retirés avant lecture.
+
+---
+
+## 3 septembre — la FAQ envoyée à Google contredisait la page
+
+Suite directe des trois nuits précédentes, et cette fois **une part du défaut
+est de ma main.**
+
+`DestinationSchema` et `DestinationFaqSchema` recevaient la ville **brute**,
+alors que l'affichage (`VilleExperience`, `SocleVille`) reçoit
+`restaurantsConformes`. Deux listes, une seule page.
+
+### Ce que ça donnait, mesuré sur les 354 fiches
+
+| | |
+|---|---|
+| villes dont la FAQ annonce un nombre FAUX | **159 sur 354 (45 %)** |
+| restaurants annoncés en trop | **407** (16 512 annoncés, 16 105 affichés) |
+| villes qui NOMMENT une adresse que la page refuse | **27** |
+
+Les noms cités sont le vrai problème :
+
+```
+Annaba  → « Chicha Châtelet »
+Bagdad  → « Cloud Lounge »
+Bakou   → « 114 Group Tea & Lounge »
+```
+
+Des lounges à chicha — exactement ce que `lib/conformite.ts` existe pour
+écarter — retirés de l'écran, et cités à Google comme nos adresses halal.
+
+🔴 **80 des 407 viennent de moi.** Les mots de porc ajoutés au filtre le
+1er septembre ont resserré l'affichage sans resserrer la FAQ. Le reste
+préexistait. Une correction qui ne suit pas tous les chemins d'une donnée
+en ouvre un nouveau.
+
+**Corrigé** : une seule ville, `villeAffichee`, construite une fois et
+passée à l'écran comme aux schémas. **Vérifié servi** :
+
+| fiche | avant | après |
+|---|---|---|
+| Annaba | « dont **Chicha Châtelet** » | « 1 restaurant halal, dont Le Castanea » |
+| Bagdad | « dont **Cloud Lounge** » | « 51 restaurants, dont Arif, Asayel… » |
+| Accra | « 21 restaurants » | « **17** restaurants » (= ce que la page montre) |
+
+### 🔴 Ce que je n'ai PAS corrigé, et qui demande ta décision
+
+**Les 5 questions du schéma FAQPage ne sont visibles nulle part sur la page.**
+Mesuré sur /destinations/accra : 5 questions déclarées à Google, **0 présente
+dans le HTML visible**. Sur 354 villes × 2 domaines.
+
+Google demande que le contenu d'un `FAQPage` soit **visible par le
+visiteur**. Ici il ne l'est pas — et ce n'est pas un oubli : la FAQ visible a
+été retirée le 19 août, et le commentaire de `DestinationRoute` dit
+explicitement « Les schémas JSON-LD (invisibles, SEO) restent ». **C'est une
+décision déjà prise, pas un défaut**, donc je ne la renverse pas seul.
+
+Ce que je dois te dire quand même : depuis 2023, les résultats enrichis FAQ
+ne s'affichent plus que pour les sites gouvernementaux et de santé. Ce schéma
+ne rapporte donc probablement rien aujourd'hui, tout en déclarant à Google un
+contenu que le visiteur ne voit pas. Deux issues : **remettre une FAQ
+visible** (ce que le même commentaire prévoyait, « à refaire plus tard »), ou
+**retirer le schéma**. Dis-moi laquelle.
+
+### Le fil des quatre nuits
+
+27 août, la règle d'honnêteté en français seulement · 1er sept., la règle du
+souvlaki dans un module qu'aucune route n'importe · 2 sept., le filtre
+appliqué à l'écran mais pas à Google · 3 sept., le filtre appliqué à l'écran
+mais pas à la FAQ.
+
+**Quatre fois la même forme : une règle vraie quelque part, fausse ailleurs.**
+Et ce soir, la preuve que ça vaut aussi pour mes propres corrections.

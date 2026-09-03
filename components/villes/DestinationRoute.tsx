@@ -181,6 +181,11 @@ export default function DestinationRoute({ city, en }: Props) {
     (r: { nom?: string; type?: string; halalConfidence?: string }) => conforme(r.nom, r.type, r.halalConfidence),
   )
 
+  // La ville TELLE QU'ON L'AFFICHE — une seule source pour l'écran et pour
+  // ce qu'on déclare à Google. Les compteurs de la FAQ et les noms qu'elle
+  // cite en découlent, donc ils ne peuvent plus diverger de la page.
+  const villeAffichee = { ...ville, restaurants: restaurantsConformes, restaurantsTotal: restaurantsConformes.length }
+
   return (
     <>
       {/* Mémorise automatiquement cette ville pour tout le site si aucune n'est encore choisie */}
@@ -211,7 +216,7 @@ export default function DestinationRoute({ city, en }: Props) {
           les compteurs réels, les noms des lieux et le maillage interne.
           C'est la reprise assumée du « soit on le supprime, soit on le
           refait » du 19 août : refait, en sombre, sous le flux. */}
-      <SocleVille ville={{ ...ville, restaurants: restaurantsConformes, restaurantsTotal: restaurantsConformes.length }} slug={city} en={isEN} />
+      <SocleVille ville={villeAffichee} slug={city} en={isEN} />
 
       {/* 🧹 19 août, ordre de Mohamed après la mise en ligne de l'Immersion :
           « ce qui est en dessous [du flux], on le supprime parce que c'est
@@ -223,8 +228,25 @@ export default function DestinationRoute({ city, en }: Props) {
           plus tard dans le style sombre si on veut récupérer le maillage
           interne — la suppression a un coût SEO, dit et assumé. */}
 
-      <DestinationSchema ville={ville} slug={city} en={isEN} siteUrl={siteUrl} />
-      <DestinationFaqSchema ville={ville} en={isEN} />
+      {/* 🔴 3 septembre — LA FAQ ENVOYÉE À GOOGLE CONTREDISAIT LA PAGE.
+          Ces deux schémas recevaient la ville BRUTE, alors que l'affichage
+          (VilleExperience, SocleVille) reçoit `restaurantsConformes`. Mesuré
+          sur les 354 fiches :
+
+            · 159 villes (45 %) annonçaient dans leur FAQ un nombre de
+              restaurants supérieur à ce que la page montre — 407 de trop.
+            · 27 villes NOMMAIENT une adresse que la page refuse : « Chicha
+              Châtelet » à Annaba, « Cloud Lounge » à Bagdad, « 114 Group Tea
+              & Lounge » à Bakou. Des lounges à chicha, écartés de l'écran
+              par lib/conformite.ts — et cités à Google comme nos adresses.
+
+          Une partie de l'écart est de ma main : les mots de porc ajoutés au
+          filtre le 1er septembre ont resserré l'affichage sans resserrer la
+          FAQ (80 des 407). Le reste préexistait.
+
+          Une seule ville part maintenant partout : celle qu'on affiche. */}
+      <DestinationSchema ville={villeAffichee} slug={city} en={isEN} siteUrl={siteUrl} />
+      <DestinationFaqSchema ville={villeAffichee} en={isEN} />
     </>
   )
 }
