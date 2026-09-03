@@ -122,6 +122,72 @@
 
 /* --- La page des 114 sourates ------------------------------------------- */
 
+/* LE CHAMP « TROUVER UNE SOURATE »
+   Mesure : a 360 px, cette page fait 6 973 px de haut — onze ecrans — et la
+   114e sourate commence a 6 588 px du haut. Le champ est cree par
+   `trouver-sourate.js` et n'existe pas sans JavaScript : la page reste alors
+   celle d'avant, ses 114 rangs visibles.
+
+   IL A D'ABORD ETE ECRIT COLLANT (position: sticky), ET CA NE COLLAIT PAS.
+   `.ecran`, deux niveaux au-dessus, porte `overflow-y: auto` : il devient le
+   contexte de defilement du sticky, mais il ne defile jamais lui-meme — sa
+   hauteur suit son contenu, c'est le document qui defile. Le champ partait
+   donc vers le haut comme n'importe quel bloc, en silence, pendant que le
+   commentaire d'a cote affirmait le contraire. Regarder une capture d'ecran
+   l'a montre ; aucune mesure de hauteur ne l'aurait dit.
+
+   Le rendre collant demanderait de toucher `.ecran`, c'est-a-dire le
+   defilement de TOUTES les pages du site, pour un gain qui ne vaut pas ce
+   risque : on arrive ici par Google, en haut de page, et le champ y est
+   immediatement sous le chapeau. Une recherche ramene ensuite la page de
+   6 940 px a 861 px — elle tient dans un ecran, il n'y a plus rien a
+   remonter. On enleve donc le `sticky` plutot que de garder une propriete
+   qui ne fait rien et une explication qui ment. */
+.strouve {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 2px 0 3px 0;
+}
+.strouve-etiq {
+  font-size: 11px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: var(--or-texte);
+}
+.strouve-champ {
+  width: 100%;
+  min-height: var(--cible);
+  box-sizing: border-box;
+  background-color: var(--papier);
+  border: 1px solid var(--trait-2);
+  border-radius: var(--r-bloc);
+  padding: 9px 13px;
+  font-family: inherit;
+  font-size: 16px;   /* en dessous de 16, l'iPhone zoome a la mise au point */
+  color: var(--encre);
+  -webkit-appearance: none;
+  appearance: none;
+}
+.strouve-champ::placeholder { color: var(--texte-3); opacity: 1; }
+.strouve-champ:focus {
+  outline: 2px solid var(--vert);
+  outline-offset: 1px;
+  border-color: var(--vert);
+}
+.strouve-compte, .strouve-vide {
+  font-size: 12.5px;
+  line-height: 1.45;
+  color: var(--texte-2);
+}
+.strouve-compte:empty { display: none; }
+.strouve-vide { padding: 10px 2px; }
+
+/* Un rang filtre disparait vraiment. `.srow` porte `display: flex`, qui
+   l'emporte sur le `display: none` que le navigateur attache a [hidden] :
+   sans cette regle, masquer un rang ne le masquerait pas. */
+.srows li[hidden], li.srow[hidden] { display: none; }
+
 .srows { display: flex; flex-direction: column; gap: 6px; }
 
 .srow {

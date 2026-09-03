@@ -228,6 +228,7 @@ def main():
 </div>
 
 <script src="js/geometrie.js"></script>
+<script src="js/trouver-sourate.js"></script>
 </body>
 </html>
 """
