@@ -40,6 +40,32 @@ RACINE = pathlib.Path(__file__).resolve().parent.parent
 CORAN = RACINE / 'outils' / 'coran'
 SITE = 'https://islampasapas.fr'
 
+
+def seuil_index():
+    """Le seuil du generateur, lu chez lui — jamais recopie ici.
+
+    Deux fois le meme nombre dans deux fichiers, c'est deux nombres : le jour
+    ou l'un bouge, l'autre reste, et le controle valide le contraire de ce que
+    la page fait. On lit donc la constante a la source.
+
+    On la BORNE quand meme. La valeur est un choix editorial, mais elle ne
+    peut pas etre n'importe quoi : la mettre a 999 desarmerait la regle « une
+    longue lecon doit avoir un index » sans qu'aucun controle ne bronche, et
+    la mettre a 1 collerait un index a une sourate de trois versets.
+    """
+    import importlib.util
+    src = pathlib.Path(__file__).with_name('faire-lecon-sourate.py')
+    spec = importlib.util.spec_from_file_location('faire_lecon_sourate', src)
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    s = getattr(mod, 'SEUIL_INDEX', None)
+    if not isinstance(s, int) or not 3 <= s <= 15:
+        sys.exit('ARRET : SEUIL_INDEX vaut %r ; attendu un entier de 3 a 15.' % s)
+    return s
+
+
+SEUIL_INDEX = seuil_index()
+
 AR = re.compile(r'<p class="verset-ar" lang="ar" dir="rtl">(.*?)</p>', re.S)
 FR = re.compile(r'<p class="verset-fr">(.*?)</p>', re.S)
 SRC = re.compile(r'<p class="verset-source">Coran, sourate ([^(]+) \((\d+)\), '
@@ -144,6 +170,43 @@ def main():
             if desechapper(f).strip() != attendu_fr:
                 fautes.append('%s : la traduction ne correspond pas a Hamidullah' % ref)
 
+        # 11. LES ANCRES DE VERSET, ET L'INDEX QUI Y MENE.
+        #
+        # Une ancre fausse est pire que pas d'ancre : on clique « verset 5 »
+        # et on atterrit sur le 4, sans que rien ne le signale — la page a
+        # l'air d'avoir obei. On verifie donc les trois choses qui peuvent
+        # se decaler independamment : que chaque bloc porte l'ancre de SON
+        # numero, qu'aucune ne se repete, et que chaque numero de l'index
+        # designe une ancre qui existe vraiment.
+        ids = re.findall(r'<li class="verset" id="verset-(\d+)">', t)
+        if len(ids) != len(srcs):
+            fautes.append('%s : %d ancres de verset pour %d versets'
+                          % (nom_page, len(ids), len(srcs)))
+        for rang, got in enumerate(ids, 1):
+            if int(got) != rang:
+                fautes.append('%s : le %de bloc porte l\'ancre verset-%s'
+                              % (nom_page, rang, got))
+        if len(set(ids)) != len(ids):
+            fautes.append('%s : deux versets portent la meme ancre' % nom_page)
+
+        index = re.search(r'<nav class="vindex"[^>]*>(.*?)</nav>', t, re.S)
+        vises = re.findall(r'href="#verset-(\d+)"', index.group(1)) if index else []
+        if index:
+            if [int(x) for x in vises] != list(range(1, len(srcs) + 1)):
+                fautes.append('%s : l\'index vise %s, il faut 1 a %d dans '
+                              'l\'ordre' % (nom_page, vises or '—', len(srcs)))
+            manquantes = [x for x in vises if x not in ids]
+            if manquantes:
+                fautes.append('%s : l\'index mene a des ancres absentes (%s)'
+                              % (nom_page, ', '.join(manquantes)))
+        if index and len(srcs) < SEUIL_INDEX:
+            fautes.append('%s : %d versets seulement, l\'index encombre'
+                          % (nom_page, len(srcs)))
+        if not index and len(srcs) >= SEUIL_INDEX:
+            fautes.append('%s : %d versets et aucun index — a partir de %d, '
+                          'la liste depasse deux ecrans'
+                          % (nom_page, len(srcs), SEUIL_INDEX))
+
         # 7-8. Les balises qui decident du referencement.
         m = TITRE.search(t)
         if not m:
@@ -236,6 +299,8 @@ def main():
           % (len(pages), versets_lus))
     print('  Texte arabe, traduction, reference et compte : conformes au Coran.')
     print('  Titres, descriptions, canonical, sitemap et maillage : conformes.')
+    print('  %d ancres de verset relues, et les index (des %d versets) y menent.'
+          % (versets_lus, SEUIL_INDEX))
     print('  Les 114 nombres de versets de sourates.html ont ete recomptes.')
 
 

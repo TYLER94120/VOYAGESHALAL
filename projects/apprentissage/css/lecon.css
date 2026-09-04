@@ -47,11 +47,44 @@
 }
 .lecon-prudence strong { font-weight: 700; }
 
+/* --- L'index des versets ------------------------------------------------ */
+
+/* Il n'apparait qu'a partir de sept versets — le seuil est mesure, voir
+   `faire-lecon-sourate.py`. Ce sont les numeros deja imprimes en tete de
+   chaque bloc, rendus cliquables : rien n'y est nomme, resume ni classe. */
+.vindex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.vindex a {
+  min-width: var(--cible);
+  min-height: var(--cible);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 6px;
+  background-color: var(--papier);
+  border: 1px solid var(--trait);
+  border-radius: var(--r-bloc);
+  font-family: var(--titre);
+  font-size: 15px;
+  font-variant-numeric: tabular-nums;
+  color: var(--vert);
+  text-decoration: none;
+}
+.vindex a:hover { border-color: var(--or-bordure); }
+.vindex a:focus-visible { outline: 2px solid var(--vert); outline-offset: 1px; }
+
 /* --- Les versets -------------------------------------------------------- */
 
 .versets { display: flex; flex-direction: column; gap: 12px; }
 
 .verset {
+  /* Le verset vise depuis l'index ne doit pas se coller au bord haut de
+     l'ecran : on lui laisse de l'air, sinon on croit etre tombe au milieu
+     d'un bloc. */
+  scroll-margin-top: 14px;
   position: relative;
   background-color: var(--papier);
   background-image: linear-gradient(180deg, var(--papier) 0%, #FCF9F1 100%);

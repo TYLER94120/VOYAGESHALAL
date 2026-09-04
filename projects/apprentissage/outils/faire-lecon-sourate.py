@@ -104,6 +104,12 @@ LOT = [1, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104,
 # est la seule section qui porte ces versets.
 SECTION = ('sens-des-sourates', 'Le sens des sourates')
 
+# A partir de combien de versets la lecon porte un index cliquable. Le nombre
+# vient d'une mesure, pas d'une preference : voir le commentaire au-dessus de
+# l'index, dans `page()`. `controler-lecons.py` lit cette meme constante, pour
+# qu'il n'y ait jamais deux seuils a garder d'accord.
+SEUIL_INDEX = 7
+
 
 # ---------------------------------------------------------------- les sources
 
@@ -360,9 +366,30 @@ def page(num, nom, nom_ar, vs, voisins):
 """ % {'num': num, 'titre': echapper(titre), 'nom_ar': echapper(nom_ar),
        'k': en_lettres(k)}
 
+    # L'INDEX DES VERSETS, ET LE SEUIL A PARTIR DUQUEL IL SERT
+    #
+    # Mesure faite dans un navigateur a 390 x 844 px, sur treize lecons : la
+    # liste des versets depasse deux hauteurs d'ecran a partir de SEPT versets
+    # (Al-Fatiha : 1 763 px, soit 2,1 ecrans). En dessous, elle en occupe
+    # moins de deux — An-Nas, six versets, 1 483 px — et l'index serait un
+    # controle qui fait gagner une chiquenaude.
+    #
+    # Au-dessus, il n'y a plus de fin visible : Al-Alaq etale ses dix-neuf
+    # versets sur 4 478 px, soit cinq ecrans et demi. Quelqu'un qui vient
+    # relire un verset precis n'a aujourd'hui que le defilement.
+    #
+    # L'index n'affirme rien. Il ne nomme pas les versets, ne les resume pas,
+    # ne les classe pas : ce sont les numeros deja imprimes en tete de chaque
+    # bloc, rendus cliquables. Aucun sens n'y est ajoute.
+    if k >= SEUIL_INDEX:
+        h += '\n    <nav class="vindex" aria-label="Aller à un verset">\n'
+        for i in range(1, k + 1):
+            h += '      <a href="#verset-%d">%d</a>\n' % (i, i)
+        h += '    </nav>\n'
+
     h += '\n    <ol class="versets">\n'
     for i, (a, f) in enumerate(vs, 1):
-        h += """      <li class="verset">
+        h += """      <li class="verset" id="verset-%d">
         <span class="verset-n">Verset %d sur %d</span>
         <p class="verset-ar" lang="ar" dir="rtl">%s</p>
         <span class="verset-etiq">Traduction du sens</span>
@@ -370,7 +397,7 @@ def page(num, nom, nom_ar, vs, voisins):
         <p class="verset-source">Coran, sourate %s (%d), verset %d.
           Traduction&nbsp;: %s.</p>
       </li>
-""" % (i, k, echapper(a), citation(f), echapper(nom), num, i, TRADUCTEUR)
+""" % (i, i, k, echapper(a), citation(f), echapper(nom), num, i, TRADUCTEUR)
     h += '    </ol>\n'
 
     # LE MAILLAGE. Une page seule ne se transmet pas : elle renvoie vers le
