@@ -1,4 +1,5 @@
 import type { Ville } from '@/lib/villeTypes'
+import { aVille } from '@/lib/prepositionVille.mjs'
 
 export interface FaqItem { q: string; a: string }
 
@@ -44,11 +45,11 @@ export function buildVilleFaq(ville: Ville, en: boolean): FaqItem[] {
 
   const mosqTxt = mosqCount > 0 ? plFr(mosqCount, 'mosquée') : 'plusieurs mosquées'
   const items: FaqItem[] = [
-    { q: `La nourriture est-elle halal à ${nom} ?`, a: `${nom} affiche un score halal de ${score}/5. ${descText(ville).slice(0, 200)}`.trim() },
-    { q: `Où trouver une mosquée à ${nom} ?`, a: `Notre guide recense ${mosqTxt} à ${nom}, avec leurs adresses et leurs horaires.` },
-    { q: `Quelles sont les heures de prière à ${nom} ?`, a: `Les horaires de prière à ${nom} varient selon la saison. Utilisez le widget en temps réel sur cette page pour Fajr, Dhuhr, Asr, Maghrib et Isha.` },
+    { q: `La nourriture est-elle halal ${aVille(nom)} ?`, a: `${nom} affiche un score halal de ${score}/5. ${descText(ville).slice(0, 200)}`.trim() },
+    { q: `Où trouver une mosquée ${aVille(nom)} ?`, a: `Notre guide recense ${mosqTxt} ${aVille(nom)}, avec leurs adresses et leurs horaires.` },
+    { q: `Quelles sont les heures de prière ${aVille(nom)} ?`, a: `Les horaires de prière ${aVille(nom)} varient selon la saison. Utilisez le widget en temps réel sur cette page pour Fajr, Dhuhr, Asr, Maghrib et Isha.` },
   ]
-  if (restoCount > 0) items.push({ q: `Y a-t-il beaucoup de restaurants halal à ${nom} ?`, a: `Nous listons ${restoCount.toLocaleString('fr-FR')} restaurant${restoCount > 1 ? 's' : ''} halal${topRestos.length ? `, dont ${topRestos.join(', ')}` : ''}. Chaque adresse indique sa localisation et un niveau de confiance halal.` })
+  if (restoCount > 0) items.push({ q: `Y a-t-il beaucoup de restaurants halal ${aVille(nom)} ?`, a: `Nous listons ${restoCount.toLocaleString('fr-FR')} restaurant${restoCount > 1 ? 's' : ''} halal${topRestos.length ? `, dont ${topRestos.join(', ')}` : ''}. Chaque adresse indique sa localisation et un niveau de confiance halal.` })
   if (periode) items.push({ q: `Quelle est la meilleure période pour visiter ${nom} ?`, a: `La meilleure période pour visiter ${nom} est ${periode}.` })
   return items
 }

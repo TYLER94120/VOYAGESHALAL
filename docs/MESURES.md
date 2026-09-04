@@ -1836,3 +1836,73 @@ mais pas à la FAQ.
 
 **Quatre fois la même forme : une règle vraie quelque part, fausse ailleurs.**
 Et ce soir, la preuve que ça vaut aussi pour mes propres corrections.
+
+---
+
+## 4 septembre — « Où prier à Le Caire »
+
+La routine GitHub a rafraîchi la base OSM des lieux de prière dans la nuit
+(`data(osm)`, 3 septembre). Premier réflexe : vérifier qu'un rafraîchissement
+automatique ne rend pas faux un chiffre annoncé dans un titre.
+
+**Il ne l'a pas fait** — et c'est une bonne nouvelle qu'il fallait établir.
+`compteurVille(slug)` est lu par le titre ET par le socle, depuis le même
+fichier : Alexandrie 210 → 199, Le Caire 479 → 463, Paris 103 → 102, et les
+titres servis suivent exactement. Rien à réparer de ce côté.
+
+### Mais la vérification a montré autre chose
+
+```
+titre  Où prier à Le Caire : 463 lieux de prière, restos halal
+desc   33 adresses halal et 106 hôtels à Le Caire, horaires…
+h1     Où prier à Le Caire : 463 lieux de prière et 33 adresses halal
+```
+
+Trois surfaces servies, la même faute d'accord. En français, « à » se
+contracte avec l'article masculin : **au Caire, au Cap**. Le site anglais,
+lui, était juste (« in Cairo », « in Cape Town ») : la faute n'existait qu'en
+français.
+
+Deux villes sur 354 — mais Le Caire est une destination majeure, et la faute
+était dans le **titre**, la seule ligne que Google affiche.
+
+**Le féminin ne se contracte pas** : « à La Mecque », « à La Havane », « à La
+Haye » sont corrects. Une règle trop large aurait cassé la ville la plus
+importante du site. Et « Lahore », « Lagos », « Larache », « Laâyoune »,
+« Las Vegas » ne portent pas d'article du tout.
+
+`lib/prepositionVille.mjs` — un seul endroit, parce que « à ${nom} » était
+écrit dans **quinze gabarits** (titre, description, h1, h2, FAQ, liens
+internes). Corriger deux noms dans les données aurait laissé la faute revenir
+au premier gabarit ajouté. C'est la forme de défaut trouvée quatre nuits
+d'affilée, et le 28 août sur les PAYS (« en Maroc ») — réglée là-bas en
+retirant la préposition, impossible ici : « Où prier Le Caire » ne se dit pas.
+
+**Vérifié servi**, build de 00:17, en-tête `Host` des deux domaines :
+
+| | |
+|---|---|
+| Le Caire | `Où prier au Caire : 463 lieux de prière et les restos halal` |
+| Le Cap | `Où prier au Cap : 41 mosquées et les restos halal` |
+| La Mecque | `Où prier à La Mecque : 739 lieux…` (intact) |
+| La Havane | `Où prier à La Havane : 3 mosquées…` (intact) |
+| Cairo (EN) | `Where to pray in Cairo: 463 prayer places` (inchangé) |
+
+### ⚠️ Trois fautes de MESURE dans la même nuit
+
+**1. `\b` ne voit pas les accents.** Le contrôle « aucun gabarit n'écrit
+`à ${nom}` à la main » ne s'est jamais déclenché : en JavaScript, `\b` est
+ASCII et ne reconnaît aucune frontière de mot avant « à ». Trouvé en
+réintroduisant la faute — le test passait au vert sur du code fautif.
+
+**2 et 3. J'ai mesuré deux fois un build périmé.** `pkill` enchaîné dans une
+commande composée tue le shell : le `npm run build` qui suivait n'a jamais
+tourné. J'ai lu « à Le Caire » sur la page servie et j'ai cru que mon
+correctif ne marchait pas, alors que la fonction rendait bien « au Caire ».
+`.next/BUILD_ID` datait d'avant mes modifications.
+
+C'est la **troisième fois** (30 août : ancien serveur sur le port 3400). La
+règle est écrite depuis le 30 août et je ne l'ai pas appliquée :
+
+> 🔴 **Avant de lire une page servie, vérifier l'heure de `.next/BUILD_ID`.**
+> Et ne jamais enchaîner un `kill` avec la commande suivante.
