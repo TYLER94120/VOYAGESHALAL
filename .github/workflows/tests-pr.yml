@@ -1,0 +1,60 @@
+name: tests
+
+# 🚦 LE GARDE-FOU DE LA FUSION AUTOMATIQUE.
+#
+# 5 septembre. Mohamed n'a plus le temps de relire les PR et m'a demandé
+# d'activer la fusion automatique. Avant de l'activer, j'ai regardé ce qui
+# gardait réellement la porte : **un seul contrôle sur la PR #124, « Vercel
+# Preview Comments », terminé en zéro seconde.** Il ne vérifie rien. Aucun
+# des 23 workflows du dépôt ne se déclenche sur une pull request.
+#
+# Autrement dit, activer la fusion automatique telle quelle aurait fusionné
+# sur un feu vert qui ne regarde pas la route. Ce fichier est la route.
+#
+# `npm run build` enchaîne les 46 tests de la maison AVANT `next build` :
+# alcool, titres, prose, maillage, données structurées, préposition, accord,
+# honnêteté des articles… Si l'un d'eux casse, la construction s'arrête et
+# la PR ne peut pas être fusionnée. C'est exactement la garantie qu'il faut
+# pour que personne n'ait à relire.
+#
+# ⚠️ Ce workflow ne remplace PAS la vérification sur page servie. Les tests
+# lisent la source ; le <title> réellement rendu, le JSON-LD et le texte ne
+# se voient qu'en démarrant le serveur. Ça, ça reste le travail de la ronde.
+
+on:
+  pull_request:
+    branches: [main]
+  # Utile pour vérifier que main lui-même reste vert après une fusion.
+  push:
+    branches: [main]
+
+# Une PR poussée deux fois de suite n'a pas besoin de deux constructions :
+# la précédente est annulée, on ne paie que la dernière.
+concurrency:
+  group: tests-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: 46 tests + construction
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      # `npm ci` et pas `npm install` : la construction doit être celle du
+      # verrou, pas celle du jour.
+      - name: Installer les dépendances
+        run: npm ci
+
+      # C'est ici que tout se joue : le script `build` du package.json lance
+      # les 46 tests puis `next build`. Un seul ❌ et le job échoue.
+      - name: Tests de la maison, puis construction
+        run: npm run build
+        env:
+          NEXT_TELEMETRY_DISABLED: '1'
