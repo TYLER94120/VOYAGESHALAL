@@ -1906,3 +1906,61 @@ règle est écrite depuis le 30 août et je ne l'ai pas appliquée :
 
 > 🔴 **Avant de lire une page servie, vérifier l'heure de `.next/BUILD_ID`.**
 > Et ne jamais enchaîner un `kill` avec la commande suivante.
+
+---
+
+## 5 septembre — « 1 mosquées », dans le titre, sur 28 villes
+
+Cinq nuits de suite j'ai trouvé la même forme de défaut en la cherchant à
+l'endroit où je la soupçonnais. Ce soir j'ai fait l'inverse : **balayer ce que
+les gabarits produisent vraiment**, sans hypothèse.
+
+`scratchpad/grammaire.mjs` appelle les fonctions qui écrivent les titres et
+les descriptions, pour les 354 villes × 2 langues — **3 153 phrases** — et
+passe dessus une liste de soupçons (préposition non contractée, pluriel après
+« 1 », mot doublé, ponctuation orpheline, `undefined`, double espace).
+
+### Ce qu'il a trouvé
+
+```
+Où prier à Alicante : 1 mosquées et les restos halal
+Where to pray in Alicante: 1 mosques, halal food
+```
+
+**92 phrases, 28 villes, les deux langues.** Dans le titre.
+
+🔴 **Et la règle existait déjà.** `lib/villeFaq.ts` la tenait depuis toujours
+(`plFr`, `plEn`, avec `n > 1`) et écrivait correctement « 1 mosque » ;
+`lib/titreVille.mjs` ne l'avait pas. **Sixième nuit d'affilée avec la même
+forme** — une règle vraie quelque part, fausse ailleurs.
+
+`lib/accordFr.mjs` : les deux fichiers l'appellent, aucun ne peut plus
+diverger. Les paires sont **explicites**, jamais devinées — « lieux de
+prière » ne se met pas au singulier en retirant un « s », c'est « lieu de
+prière ». Une règle naïve aurait écrit « 1 lieux de prière » ou « 1 lieu de
+prières ». Et un compte plafonné (« 60+ ») reste toujours pluriel.
+
+**Vérifié servi**, build du 05/00:12, `BUILD_ID` contrôlé avant lecture :
+
+| ville | français | anglais |
+|---|---|---|
+| Alicante | `1 mosquée et les restos halal` | `1 mosque, halal food` |
+| Québec | `1 lieu de prière et les restos halal` | `1 prayer place, halal food` |
+| Le Caire | `au Caire : 463 lieux de prière` | `in Cairo: 463 prayer places` |
+
+Québec est le seul cas réel à 1 dans le compteur OSM — et c'est le piège du
+pluriel interne.
+
+### Un faux positif, dit plutôt que tu
+
+Mon balayage a aussi signalé « Where to pray in **The Hague** » comme un
+article anglais mal placé. **C'est correct** : The Hague est le nom anglais de
+La Haye. Le soupçon était le mien, pas une faute du site. Une liste de
+soupçons rend des soupçons — elle ne remplace pas la lecture.
+
+### Ce que la méthode change
+
+Chercher là où l'on soupçonne trouve ce qu'on imagine. Lire ce que la machine
+écrit trouve ce qu'on n'imagine pas — 92 phrases fausses que six nuits de
+recherche ciblée n'avaient pas vues, parce que je n'avais jamais pensé à une
+ville qui n'a qu'une seule mosquée.
