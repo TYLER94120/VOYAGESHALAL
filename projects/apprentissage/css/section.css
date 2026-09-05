@@ -63,10 +63,23 @@
 }
 
 .pastilles { display: flex; flex-wrap: wrap; gap: 8px; }
-/* HAUTEUR MINIMALE, PAS HAUTEUR FIXE. Avec `height: 34px`, un theme long
-   comme « Reconnaitre une sourate » deborde de sa pastille et se pose sur le
-   titre au-dessus. Le contenu decide, le cadre suit. */
-.pastille {
+/* LA PASTILLE DE THEME EST UNE ETIQUETTE DE TEXTE, PAS UN BOUTON ROND.
+   `base.css` definit deja `.pastille` : le bouton rond de --cible x --cible
+   des en-tetes. Cette regle-ci, ecrite avec la meme specificite, redefinissait
+   le fond, le rayon et le rembourrage — mais PAS `width` ni `height`, qui
+   n'y figuraient pas. Les valeurs de base restaient donc en place, et chaque
+   etiquette etait enfermee dans un carre de 44 x 44 px pendant que son texte
+   debordait par-dessus : « Reconnaitre une sourate » s'ecrivait a cheval sur
+   la bordure. Mesure : les quatre themes de la section des sourates
+   debordaient, avec ou sans JavaScript, depuis que cet ecran existe.
+
+   On monte donc d'un cran en specificite — `.pastilles .pastille`, l'etiquette
+   dans son conteneur — et on rend explicitement la taille au contenu. Le
+   bouton rond de `base.css` n'est pas touche : il ne vit jamais dans un
+   `.pastilles`. */
+.pastilles .pastille {
+  width: auto;
+  height: auto;
   min-height: 34px;
   border-radius: 17px;
   background: var(--papier);
@@ -78,6 +91,9 @@
   line-height: 1.25;
   color: var(--texte-2);
 }
+/* Les sourates de la section « sens des sourates » sont des LIENS. */
+a.pastille { text-decoration: none; color: var(--vert); }
+a.pastille:hover { border-color: var(--or-bordure); }
 
 /* La rosace de la section, en clair, comme une signature en bas de page.
    C'est le meme motif que sur la tuile et derriere les versets : trois

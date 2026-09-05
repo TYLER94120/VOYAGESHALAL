@@ -54,8 +54,23 @@ class Serveur(http.server.SimpleHTTPRequestHandler):
     def translate_path(self, path):
         chemin = path.split('?', 1)[0].split('#', 1)[0]
         for motif, cible in REGLES:
-            if motif.match(chemin):
-                return str(RACINE / cible.lstrip('/'))
+            m = motif.match(chemin)
+            if m:
+                # LE PARAMETRE SE REPORTE DANS LA DESTINATION.
+                # Vercel accepte `/section/:slug` -> `/section-:slug.html` et
+                # remplace `:slug` par ce qu'il a capture. Ici, la destination
+                # etait rendue telle quelle : `:slug` restait dans le nom de
+                # fichier et le serveur local cherchait « section-:slug.html ».
+                # Tant qu'aucune regle n'utilisait son parametre, ca ne se
+                # voyait pas — et le jour ou l'une le fait, le serveur d'essai
+                # dit « introuvable » sur une adresse qui marche en ligne,
+                # c'est-a-dire exactement l'ecart que ce fichier existe pour
+                # ne plus avoir.
+                out = cible
+                for nom, val in (m.groupdict() or {}).items():
+                    if val is not None:
+                        out = out.replace(':' + nom, val)
+                return str(RACINE / out.lstrip('/'))
         return super().translate_path(path)
 
     def log_message(self, *a):

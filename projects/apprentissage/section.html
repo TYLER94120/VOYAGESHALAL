@@ -6,6 +6,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Section — Islam pas à pas</title>
 <meta name="description" content="Ce que contient cette section, et de quoi elle parle, avant de lancer un QCM.">
+<!-- CETTE PAGE N'EST PLUS CELLE QUE SERT /section/<slug>.
+     Depuis le 5 septembre, chaque section a son propre fichier
+     `section-<slug>.html`, avec son titre, sa description et son canonical ;
+     `vercel.json` y mene nommement. Ce fichier-ci ne reste que pour l'ancienne
+     forme `section.html?section=<slug>`, que `section.js` sait encore lire :
+     un lien depose ailleurs doit continuer de mener quelque part.
+     Il porte noindex parce qu'il n'a, lui, aucun contenu propre — il serait
+     un doublon vide de douze pages qui, elles, en ont un. -->
+<meta name="robots" content="noindex, follow">
 <meta name="theme-color" content="#FAF7F0">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

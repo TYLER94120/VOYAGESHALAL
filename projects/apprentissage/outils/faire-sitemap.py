@@ -77,9 +77,19 @@ def main():
             lecons += 1
 
     # 4. Le reste des pages du dossier, si elles ne sont pas deja la.
+    #
+    #    LES FICHIERS `section-<slug>.html` N'EN SONT PAS. Ce sont les CIBLES
+    #    des reecritures, pas des adresses : l'adresse d'une section est
+    #    `/section/<slug>`, deja annoncee au point 2, et c'est elle que chaque
+    #    page designe comme canonique. Les ajouter ici mettait la meme page
+    #    deux fois dans le sitemap, sous deux adresses — exactement le doublon
+    #    que ces pages viennent de supprimer. Le balayage du dossier les a
+    #    ramassees des leur premiere fabrication : 40 adresses sont devenues
+    #    52, dont douze doublons.
     deja = {u for u, _ in urls}
     for p in sorted(RACINE.glob('*.html')):
-        if p.name in HORS or p.name.startswith('google') or p.name.startswith('lecon-'):
+        if (p.name in HORS or p.name.startswith('google')
+                or p.name.startswith('lecon-') or p.name.startswith('section-')):
             continue
         if '/' + p.name not in deja:
             urls.append(('/' + p.name, '0.5'))
