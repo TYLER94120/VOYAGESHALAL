@@ -79,6 +79,13 @@ export const BLOG_FR_TO_EN: Record<string, string> = {
   // existait, seule la langue manquait.
   'ou-prier-parc-asterix': '/blog/where-to-pray-parc-asterix',
   'ou-prier-puy-du-fou': '/blog/where-to-pray-puy-du-fou',
+  // 5 septembre : premier article du cycle « création ». Le français faisait
+  // 235 mots ; l'anglais explique ce qu'un conducteur étranger ne sait pas —
+  // la différence aire de repos / aire de service, et pourquoi la première
+  // est la bonne. Sourcé sur les références d'auto-écoles françaises
+  // (10-20 km contre 50-60 km). Aucune aire nommée : nous n'en avons vérifié
+  // aucune, et la page le dit.
+  'ou-prier-aire-autoroute': '/blog/where-to-pray-french-motorway',
   'ou-prier-aeroport-marseille': '/blog/where-to-pray-marseille-airport',
   'ou-prier-aeroport-toulouse': '/blog/where-to-pray-toulouse-airport',
   'ou-prier-aeroport-cdg': '/blog/where-to-pray-cdg-airport',

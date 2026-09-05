@@ -1964,3 +1964,74 @@ Chercher là où l'on soupçonne trouve ce qu'on imagine. Lire ce que la machine
 écrit trouve ce qu'on n'imagine pas — 92 phrases fausses que six nuits de
 recherche ciblée n'avaient pas vues, parce que je n'avais jamais pensé à une
 ville qui n'a qu'une seule mosquée.
+
+---
+
+## 5 septembre (jour) — Mohamed passe la main : un jour on crée, un jour on approfondit
+
+« Vu que je n'ai pas le temps en ce moment, j'aimerais que tu travailles
+seul. Un jour sur deux tu crées des articles, un jour sur deux tu
+approfondis les articles. »
+
+La ronde de nuit est réécrite dans ce sens : **jour impair = création, jour
+pair = approfondissement**. Avec une clause qui prime sur le rythme, écrite
+noir sur blanc dans le brief :
+
+> Un article « où prier à [lieu] » sans relevé vérifié reviendrait à inventer
+> une salle de prière. C'est interdit, même pour tenir le rythme. **Un cycle
+> sans article est un cycle réussi** si la seule alternative était d'inventer.
+
+Trois gisements sûrs pour les jours de création : traduire un article déjà
+vérifié, écrire depuis nos propres données comptables, ou traiter un sujet
+pratique qui n'affirme rien sur un lieu précis.
+
+### Premier cycle : l'aire d'autoroute, pour un lecteur anglophone
+
+**La mesure d'abord.** 14 articles français n'ont aucun jumeau anglais. J'ai
+choisi `ou-prier-aire-autoroute` — pas le plus long (235 mots, l'un des plus
+minces), mais celui dont la demande anglaise est réelle et non servie : les
+familles britanniques qui traversent la France vers l'Espagne ou les ferries
+du Maroc.
+
+⚠️ **Traduire un article de 235 mots aurait donné une page mince.** La
+question du brief — « qu'apprend cette page que personne n'apprend
+ailleurs ? » — appelait autre chose.
+
+**Ce que la page enseigne, et qui est sourcé :** les autoroutes françaises
+ont deux sortes d'arrêts, et les panneaux le disent avant qu'on s'engage.
+
+| | fréquence | ce qu'on y trouve |
+|---|---|---|
+| aire de **service** | tous les 50-60 km | carburant, restauration, boutique — tout le monde s'y arrête |
+| aire de **repos** | tous les 10-20 km | parking, point d'eau, toilettes, herbe — presque personne |
+
+Autrement dit **l'arrêt calme revient trois à cinq fois plus souvent que
+l'autre**, et il se reconnaît à l'absence de pictogramme « pompe » sur le
+panneau bleu. Un conducteur étranger ne le sait pas. C'est un mécanisme, pas
+une liste — exactement le critère du brief.
+
+Sources : références concordantes d'auto-écoles françaises
+([Ornikar](https://www.ornikar.com/code/cours/route/autoroute/aires-service),
+[Vroomvroom](https://www.vroomvroom.fr/code/cours/route/autoroute/aire-repos),
+[En Voiture Simone](https://www.envoituresimone.com/code-de-la-route/cours/route/voies/regles-de-circulation-sur-autoroute/aire-de-repos)).
+
+**Ce que la page refuse de dire**, et qui y figure sous ce titre : elle ne
+nomme **aucune** aire équipée d'une salle de prière. Certaines grandes aires
+de service en ont peut-être une ; nous n'en avons vérifié aucune, donc nous
+n'en listons aucune. La page le dit au lecteur plutôt que de le taire.
+
+Elle ne tranche pas non plus la question religieuse (raccourcir, regrouper) :
+elle renvoie. L'article français, plus ancien que cette règle, le fait encore
+— c'est un candidat pour un jour d'approfondissement.
+
+**Vérifié servi**, build du 05/10:49, `BUILD_ID` contrôlé avant lecture :
+200, `lang="en"`, titre 51 c, description 152 c, 1 063 mots rendus, hreflang
+dans les deux sens, au sitemap anglais, et le slug anglais sur le domaine
+français répond `noindex, follow`.
+
+### ⚠️ Le point qui décide de tout
+
+**18 commits attendent dans la PR #124, dont cet article.** Tant qu'elle
+n'est pas fusionnée, rien de ce travail n'est en ligne — et le rythme d'un
+article tous les deux jours ne produira rien du tout. C'est la seule chose
+que je ne peux pas faire à sa place.

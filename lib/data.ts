@@ -2704,6 +2704,50 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <p>Have you prayed at Disneyland recently? Tell us <strong>what City Hall said and where they sent you</strong>. That is exactly the information this page is missing, and it will serve dozens of families. <a href="/communaute/ajouter">→ Add the place</a> · <a href="/communaute">→ Join the community</a></p>`,
   },
   {
+    slug: "where-to-pray-french-motorway",
+    title: "Where to pray on a French motorway: the quiet stops",
+    description: "French motorways have two kinds of stop, and only one is quiet. Aires de repos come every 10-20 km; the busy service areas every 50-60. How to use that.",
+    coverImage: "/guides/blog-autoroute.jpg",
+    category: 'Practical',
+    readTime: "4 min",
+    publishedAt: '2026-09-05',
+    lang: 'en',
+    tags: ['prayer', 'road trip', 'france', 'driving', 'muslim travel'],
+    content: `<p>Driving through France to Spain, Italy or the Morocco ferries, and a prayer window is closing? There is one thing about French motorways that changes this completely, and most foreign drivers never learn it.</p>
+
+<h2>The short version</h2>
+<p>French motorways have <strong>two different kinds of stop</strong>, and the signs tell you which is which before you commit. The busy one with fuel and a shop is not the one you want. The quiet one is far more common — and almost nobody stops there.</p>
+
+<h2>Aire de service vs aire de repos</h2>
+<p>Both are signposted on the same blue boards, with the name of the aire, the distance to it, and a row of pictograms. Those pictograms are the whole trick:</p>
+<p><strong>Aire de service</strong> — fuel pump, cutlery, shop symbols. Petrol station, restaurant, shop, cash machine. This is where everyone stops. Roughly every <strong>50 to 60 km</strong>.<br/>
+<strong>Aire de repos</strong> — parking and toilet symbols only, no fuel pump. A car park, a water point, toilets, usually grass and trees. Nothing to buy, so most drivers roll past. Roughly every <strong>10 to 20 km</strong>.</p>
+<p>So the quiet stop comes <strong>three to five times more often</strong> than the busy one. If you are watching for a place to pray, you are looking for the sign <em>without</em> the fuel pump — and you will not wait long for one. Aires de repos are announced up to 2 km ahead, which is enough time to move across.</p>
+
+<h2>Once you are parked</h2>
+<p>Aim for the far end of the car park, away from the lorry bays and the toilet block. The grass strips at the edge of an aire de repos are usually empty. A pocket mat and the direction from our <a href="/qibla">qibla tool</a> are all it takes, and nobody pays attention — people stretch, walk dogs and nap on these aires all day.</p>
+<p>If the weather or the ground is against you, praying seated in the car is what many families do.</p>
+
+<h2>Wudu</h2>
+<p>Every aire de repos has a water point and toilets — that is the one thing they are guaranteed to have. The basins are shallow and public, so the habits that work at an airport work here: fill <strong>a small squeezable bottle</strong> at the basin and use it inside the cubicle, and keep a <strong>microfibre towel</strong> in the door pocket rather than the boot. The full method is in our guide: <a href="/blog/wudu-on-a-plane-or-train">making wudu while travelling</a>.</p>
+
+<h2>Planning the drive around it</h2>
+<p>The useful habit is to check the day's times <em>before you set off</em>, not when the call arrives — our <a href="/prayer-times">prayer times</a> give them for wherever you are, and the page keeps working without a signal once opened, which matters on a motorway in the middle of nowhere.</p>
+<p>On what is permitted while travelling — shortening, combining, making up — <strong>we do not rule</strong>: that is a religious question, and it is not ours to answer. But it is worth settling before you leave, because it decides how many stops you need.</p>
+
+<h2>What we will not tell you</h2>
+<p>We will not name an aire with a prayer room. Some large aires de service have a quiet room, and we have not verified a single one — so we do not list any. If you find one, tell us and we will check it.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Do French motorway stops have prayer rooms?</strong> Not as a rule, and we have verified none. Plan for a quiet corner instead.<br/>
+<strong>Which stop should I aim for?</strong> An aire de repos — the sign without the fuel pump. They are far more frequent and far quieter.<br/>
+<strong>Where can I make wudu?</strong> The toilets and water point of any aire de repos.<br/>
+<strong>Can I pray in the car?</strong> Many families do when there is nowhere suitable outside.</p>
+
+<h2>Help the community</h2>
+<p>Do you know an aire with a good quiet corner — in France, Spain or on the Morocco route? Share it. That is exactly the information this page cannot invent. <a href="/communaute/ajouter">→ Add the place</a> · <a href="/communaute">→ Join the community</a></p>`,
+  },
+  {
     slug: "where-to-pray-parc-asterix",
     title: "Parc Astérix: no prayer room, where to pray on site",
     description: "There is no official prayer room at Parc Astérix. What Muslim families actually do: guest services, the quiet corners, the car park, and combining prayers.",
