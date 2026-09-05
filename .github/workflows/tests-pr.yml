@@ -58,3 +58,44 @@ jobs:
         run: npm run build
         env:
           NEXT_TELEMETRY_DISABLED: '1'
+
+  fusion:
+    name: Fusion automatique si tout est vert
+    needs: build
+    runs-on: ubuntu-latest
+    # 🔐 LES QUATRE GARDES. Mohamed a demandé la fusion automatique le
+    # 5 septembre — il n'a plus le temps de relire, et sans ça la PR #124
+    # s'accumulait depuis neuf jours sans que rien n'atteigne le site.
+    #
+    # La fusion automatique NATIVE de GitHub ne convenait pas : elle attend
+    # les contrôles « obligatoires », et ce dépôt n'en a aucun (pas de
+    # protection de branche). Elle aurait donc fusionné sans rien attendre.
+    # La fusion se fait donc ICI, après le job `build` — c'est-à-dire après
+    # les 46 tests ET la construction complète.
+    #
+    #  1. `needs: build`   — un seul test rouge et ce job ne démarre jamais.
+    #  2. même dépôt       — une PR venant d'un fork ne se fusionne pas elle-même
+    #                        (son jeton est en lecture seule, mais on le dit).
+    #  3. auteur           — seules les PR ouvertes par le propriétaire passent.
+    #  4. pas un brouillon — une PR marquée « draft » attend une main humaine.
+    #
+    # ⚠️ La branche n'est PAS supprimée : la ronde de nuit continue de
+    # travailler dessus. Après une fusion, elle repart de `main` et ouvre une
+    # nouvelle PR — c'est la marche à suivre inscrite dans son brief.
+    if: >-
+      github.event_name == 'pull_request' &&
+      github.event.pull_request.head.repo.full_name == github.repository &&
+      github.event.pull_request.user.login == 'TYLER94120' &&
+      github.event.pull_request.draft == false
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Fusionner
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NUM: ${{ github.event.pull_request.number }}
+          DEPOT: ${{ github.repository }}
+        run: |
+          echo "Les 46 tests et la construction sont passés — fusion de la PR #$NUM."
+          gh pr merge "$NUM" --repo "$DEPOT" --merge
