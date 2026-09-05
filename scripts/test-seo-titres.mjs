@@ -29,12 +29,18 @@ const casse = (m) => { console.error(`❌ ${m}`); fautes++ }
 
 // ── 1. mots interdits dans les titres servis ──
 const INTERDITS = /guide complet|complete guide|ultimate guide|découvrez|tout savoir|everything you need to know/i
-const FICHIERS_TITRES = ['lib/data.ts', 'lib/guidesEn.ts', 'lib/countriesData.ts', fichierRoute('omra/page.tsx')]
+const FICHIERS_TITRES = ['lib/data.ts', 'lib/guidesEn.ts', 'lib/countriesData.ts', fichierRoute('omra/page.tsx'), fichierRoute('destinations/pays/[pays]/page.tsx')]
 for (const f of FICHIERS_TITRES) {
   const lignes = readFileSync(f, 'utf8').split('\n')
   lignes.forEach((l, i) => {
     // On ne juge que les TITRES (title:), pas le corps des articles.
-    if (/^\s*(meta)?[Tt]itle:/.test(l) && INTERDITS.test(l)) casse(`${f}:${i + 1} — titre avec un mot creux : ${l.trim().slice(0, 90)}`)
+    // 29 août : la règle ne portait que sur les TITRES. Mesuré sur les
+    // 1 641 pages servies, douze DESCRIPTIONS ouvraient encore sur
+    // « Découvrez », « Tout savoir », « Guide complet » — et la description
+    // est la deuxième ligne que Google affiche.
+    if (/^\s*(meta)?[Tt]itle:|^\s*description:/.test(l) && INTERDITS.test(l)) {
+      casse(`${f}:${i + 1} — mot creux dans ce que Google affiche : ${l.trim().slice(0, 90)}`)
+    }
   })
 }
 

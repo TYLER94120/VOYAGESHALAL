@@ -2,9 +2,19 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { getDomainSEO } from '@/lib/domain'
 
-export const metadata: Metadata = {
-  title: 'Contact',
-  description: 'Contactez l\'équipe Voyages Halal : questions, partenariats, signaler un restaurant ou une mosquée.',
+// 29 août : cette page servait une description FRANÇAISE sur
+// gohalaltravel.com — et sous la marque française, en plus. Elle n'avait
+// pas non plus de lien canonique. La langue vient du domaine, comme
+// partout ailleurs.
+export async function generateMetadata(): Promise<Metadata> {
+  const { isEN, siteUrl } = await getDomainSEO()
+  return {
+    title: { absolute: isEN ? 'Contact GoHalalTravel' : 'Contact VoyagesHalal' },
+    description: isEN
+      ? 'Contact the GoHalalTravel team: questions, partnerships, or report a restaurant or a mosque.'
+      : 'Contactez l\'équipe VoyagesHalal : questions, partenariats, signaler un restaurant ou une mosquée.',
+    alternates: { canonical: `${siteUrl}/contact` },
+  }
 }
 
 export default async function ContactPage() {

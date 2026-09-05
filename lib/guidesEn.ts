@@ -288,7 +288,7 @@ export const guidesEn: Guide[] = [
     slug: 'what-is-halal-tourism',
     lang: 'en',
     title: 'What Is Halal Tourism? Definition, Numbers & Meaning',
-    description: 'Halal tourism explained: what it covers (food, prayer, environment), what it does not, the market numbers, and how to travel halal without over-complicating.',
+    description: 'Halal tourism explained: what it covers (food, prayer, environment), what it does not, the market numbers, and how to travel halal without overthinking.',
     coverImage: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&q=80',
     category: 'Practical',
     readTime: '5 min',

@@ -29,6 +29,7 @@ const COMPTEURS: [string, string][] = [
   ['surmesure:vides', 'recherches qui n’ont rien rendu'],
   ['surmesure:quota-atteint', 'recherches refusées par NOTRE plafond anti-robot (Google non appelé)'],
   ['surmesure:osm-base', 'recherches prière servies par NOTRE base OSM (découverte gratuite, 0 appel Google)'],
+  ['surmesure:osm-manger', 'recherches MANGER servies par OpenStreetMap (diet:halal) — découverte gratuite, Google en enrichissement seul'],
   ['surmesure:relache', 'recherches où il a fallu relâcher un critère'],
   ['surmesure:avec-profil', 'recherches affinées par un profil alimentaire'],
   ['surmesure:itineraires', 'appuis sur « Itinéraire » — le geste qui compte'],

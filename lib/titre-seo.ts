@@ -20,7 +20,12 @@
 // les mots larges. Au-delà, on joue.
 
 export const TITRE_MAX = 60
-export const DESCRIPTION_MAX = 160
+// 29 août : la cascade autorisait 160 caractères quand Google en montre
+// ~155. Les descriptions de 156 à 160 passaient donc le repli et se
+// faisaient couper à l'affichage — 36 pages mesurées, dont 20 pages
+// d'hôtels. Le reste du dépôt (lib/titreVille.mjs) utilisait déjà 155 :
+// deux limites pour une même règle, c'est la plus permissive qui gagnait.
+export const DESCRIPTION_MAX = 155
 
 /**
  * Rend la première version qui tient dans la limite d'affichage de Google.

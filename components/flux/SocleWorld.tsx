@@ -64,6 +64,11 @@ export default function SocleWorld({ nbVilles, nbLieuxPriere, villes, aeroports 
 
         <h2 className="sv-h2">Tools</h2>
         <ul className="sv-liens">
+          {/* 🕸 30 août : /hotels était la SEULE porte d'entrée de 331 pages
+              hôtel, et aucune page du site anglais ne la liait — le pied de
+              page qui la cite vit dans l'accueil FRANÇAIS, une autre route.
+              Les 331 pages restaient donc sans chemin depuis l'accueil. */}
+          <li><Link href="/hotels">Halal hotels city by city</Link></li>
           <li><Link href="/prayer-times">Prayer times anywhere</Link></li>
           <li><Link href="/qibla">Qibla direction</Link></li>
           <li><Link href="/autour-de-moi">Prayer places and halal food around me</Link></li>

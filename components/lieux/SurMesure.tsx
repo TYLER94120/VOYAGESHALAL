@@ -194,7 +194,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
   // 15 min ») alors que la vraie raison était qu'on n'avait pas pu
   // interroger Google. Dire « il n'y a rien » quand on veut dire « nous
   // n'avons pas pu demander » est un mensonge par raccourci.
-  const [etatGoogle, setEtatGoogle] = useState<'ok' | 'vide' | 'muet' | 'sans-cle' | ''>('')
+  const [etatGoogle, setEtatGoogle] = useState<'ok' | 'vide' | 'muet' | 'sans-cle' | 'non-sollicite' | ''>('')
   /**
    * 🔴🔴 CHAQUE PANNE NOMME SA VRAIE CAUSE.
    *
@@ -598,7 +598,7 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
       const ac = new AbortController()
       acCourant.current = ac
       const to = setTimeout(() => ac.abort(), 20_000)
-      let corps: { fiches?: Fiche[]; autres?: Fiche[]; source?: string; etatGoogle?: 'ok' | 'vide' | 'muet' | 'sans-cle'; mode?: Mode; plafondMin?: number; rayonKm?: number; rayonAtteintKm?: number; ecartesAlcool?: number; ecartesEnvie?: number; relaches?: string[]; motManquant?: string | null } = {}
+      let corps: { fiches?: Fiche[]; autres?: Fiche[]; source?: string; etatGoogle?: 'ok' | 'vide' | 'muet' | 'sans-cle' | 'non-sollicite'; mode?: Mode; plafondMin?: number; rayonKm?: number; rayonAtteintKm?: number; ecartesAlcool?: number; ecartesEnvie?: number; relaches?: string[]; motManquant?: string | null } = {}
       try {
         const r = await appelerLieux({ lat: pos.lat, lng: pos.lng, criteres: c, lang: en ? 'en' : 'fr', ecrit, profil }, ac.signal)
         if (r.status === 429) {
@@ -1500,16 +1500,46 @@ export default function SurMesure({ posInitiale, destination: destinationProp, e
             {t(`voir ${autres.length} autres adresses`, `see ${autres.length} more places`)}
           </button>
         )}
-        {voirAutres && autres.map((f, i) => (
-          <a key={f.id ?? i} href={`https://www.google.com/maps/dir/?api=1&destination=${f.lat},${f.lng}`}
-            onClick={() => compter('itineraires')}
-            style={{ display: 'flex', alignItems: 'center', gap: 8, marginTop: 8, padding: '10px 12px', borderRadius: 12, border: '1px solid rgba(253,250,243,0.14)', textDecoration: 'none' }}>
-            <span style={{ flex: 1, color: '#fdfaf3', fontWeight: 700, fontSize: 13.5, overflowWrap: 'anywhere' }}>{f.nom}</span>
-            {/* Itération 6 : dernière survivance du « ≈ estimé » à l'écran —
-                remplacée par le composant partagé (temps réels ou mètres). */}
-            <span style={{ color: 'rgba(253,250,243,0.6)', fontSize: 12.5, whiteSpace: 'nowrap' }}><TrajetMin f={f} en={en} /></span>
-          </a>
-        ))}
+        {/* 🔴 30 AOÛT — « on a des adresses en plus des 3 mais elles ne
+            servent à rien ». C'était vrai, et la cause n'était pas dans le
+            moteur : l'API envoie pour CHACUNE de ces adresses la note, le
+            nombre d'avis, le prix, l'ouverture et le verdict alcool — cette
+            liste n'affichait qu'un nom et une distance à vol d'oiseau. On ne
+            pouvait rien décider avec ça.
+
+            Plus grave : la ligne alcool manquait. Le code de la fiche du
+            haut dit « une ligne alcool sur CHAQUE fiche, jamais
+            optionnelle » — et neuf adresses sur douze y échappaient dès
+            qu'on dépliait la liste. La garantie sur laquelle tout le site
+            est bâti disparaissait au deuxième écran.
+
+            Rien n'est inventé ici : chaque segment n'apparaît que si la
+            donnée existe, exactement comme sur les cartes du haut. */}
+        {voirAutres && autres.map((f, i) => {
+          const meta = [
+            typeof f.note === 'number' ? `★ ${f.note.toLocaleString(en ? 'en-GB' : 'fr-FR')}${typeof f.nbAvis === 'number' ? ` (${f.nbAvis})` : ''}` : '',
+            typeof f.prix === 'number' && f.prix > 0 ? '€'.repeat(f.prix) : '',
+          ].filter(Boolean).join(' · ')
+          return (
+            <a key={f.id ?? i} href={`https://www.google.com/maps/dir/?api=1&destination=${f.lat},${f.lng}`}
+              onClick={() => compter('itineraires')}
+              style={{ display: 'block', marginTop: 8, padding: '10px 12px', borderRadius: 12, border: '1px solid rgba(253,250,243,0.14)', textDecoration: 'none' }}>
+              <span style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                <span style={{ flex: 1, color: '#fdfaf3', fontWeight: 700, fontSize: 13.5, overflowWrap: 'anywhere' }}>{f.nom}</span>
+                {/* Itération 6 : dernière survivance du « ≈ estimé » à l'écran —
+                    remplacée par le composant partagé (temps réels ou mètres). */}
+                <span style={{ color: 'rgba(253,250,243,0.6)', fontSize: 12.5, whiteSpace: 'nowrap' }}><TrajetMin f={f} en={en} /></span>
+              </span>
+              <span style={{ display: 'block', color: 'rgba(253,250,243,0.72)', fontSize: 12.5, marginTop: 3 }}>
+                {meta}{meta && ' · '}<StatutOuverture f={f} en={en} />
+              </span>
+              {/* §6 — jamais optionnelle, ici comme sur les fiches du haut. */}
+              <span style={{ display: 'block', color: f.alcool === 'non' ? '#7dd87d' : 'rgba(253,250,243,0.72)', fontSize: 12, fontWeight: 700, marginTop: 2 }}>
+                {ligneAlcool(f.alcool ?? 'inconnu', en)}
+              </span>
+            </a>
+          )
+        })}
 
         {/* ── 6. CE QUE L'IA AJOUTE, mot à mot ──────────────────── */}
         {prose && (

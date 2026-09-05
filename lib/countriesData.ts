@@ -220,7 +220,7 @@ export const countries: Country[] = [
     mainCities: [
       { name: 'La Mecque', slug: 'la-mecque', description: 'La ville la plus sainte de l\'islam — accessible uniquement aux musulmans.' },
       { name: 'Médine', slug: 'medine', description: 'Ville du Prophète ﷺ et de la Mosquée an-Nabawi — deuxième lieu saint de l\'islam.' },
-      { name: 'Riyad', slug: 'riyad', description: 'Capitale moderne en pleine transformation, musées et centres commerciaux de classe mondiale.' },
+      { name: 'Riyad', slug: 'riyadh', description: 'Capitale moderne en pleine transformation, musées et centres commerciaux de classe mondiale.' },
       { name: 'AlUla', slug: 'alula', description: 'Site archéologique exceptionnel — Hegra classée UNESCO, splendeurs du désert.' },
     ],
     relatedGuides: [
@@ -265,7 +265,7 @@ export const countries: Country[] = [
       { name: 'Le Caire', slug: 'le-caire', description: 'La mère du monde — pyramides, Al-Azhar, khan el-Khalili et une énergie unique.' },
       { name: 'Louxor', slug: 'louxor', description: 'La plus grande ville-musée à ciel ouvert du monde, temple de Karnak, Vallée des Rois.' },
       { name: 'Alexandrie', slug: 'alexandrie', description: 'Perle méditerranéenne, bibliothèque, gastronomie de fruits de mer, ambiance cosmopolite.' },
-      { name: 'Charm el-Cheikh', slug: 'charm-el-cheikh', description: 'Plongée en mer Rouge, complexes hôteliers halal, coraux exceptionnels.' },
+      { name: 'Charm el-Cheikh', slug: 'sharm-el-sheikh', description: 'Plongée en mer Rouge, complexes hôteliers halal, coraux exceptionnels.' },
     ],
     relatedGuides: [
       { slug: 'top-destinations-halal-2026', title: 'Top 10 destinations halal 2026', type: 'guide' },
@@ -805,7 +805,7 @@ export const countries: Country[] = [
       { name: 'Londres', slug: 'londres', description: 'Capitale mondiale du halal en Europe — Brick Lane, Edgware Road, East End.' },
       { name: 'Birmingham', slug: 'birmingham', description: 'Deuxième ville du pays, communauté musulmane importante, Balti Triangle (cuisine pakistanaise).' },
       { name: 'Manchester', slug: 'manchester', description: 'Curry Mile de Rusholme, football, architecture victorienne et scène halal animée.' },
-      { name: 'Édimbourg', slug: 'edinburgh', description: 'Capitale écossaise avec château médiéval, whisky (évitable) et mosquée centrale.' },
+      { name: 'Édimbourg', slug: 'edimbourg', description: 'Capitale écossaise avec château médiéval, whisky (évitable) et mosquée centrale.' },
     ],
     relatedGuides: [
       { slug: 'top-destinations-halal-2026', title: 'Top 10 destinations halal 2026', type: 'guide' },

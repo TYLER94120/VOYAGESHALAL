@@ -28,6 +28,14 @@ const src = readFileSync('lib/data.ts', 'utf8')
 const NIE = /(pas de salle de pri[èe]re|n'existe pas de salle de pri[èe]re|n'ont pas de salle de pri[èe]re|ne dispose pas de salle de pri[èe]re|aucune salle de pri[èe]re)/i
 /** Le titre AFFIRME qu'il y en a une (« Salle de prière à X : … »). */
 const AFFIRME = /^\s*Salle de pri[èe]re (à|au|aux|en|dans)\b/i
+
+// 🇬🇧 31 août : LA RÈGLE NE VALAIT QU'EN FRANÇAIS.
+// Les deux expressions ci-dessus sont françaises. Le site anglais compte
+// 831 pages et n'était donc tenu par rien — alors que c'est exactement le
+// même piège : un titre qui promet une salle que l'article dit inexistante.
+// Trouvé en écrivant les jumeaux anglais de Parc Astérix et du Puy du Fou.
+const NIE_EN = /(no official,? (signposted )?prayer room|there is no prayer room|has no prayer room|no official prayer room)/i
+const AFFIRME_EN = /^\s*Prayer Rooms? (at|in)\b/i
 /** Les mots qui ne donnent aucune raison de cliquer (règle du 20 août). */
 const CREUX = /guide complet|complete guide|ultimate guide|tout savoir|découvrez|everything you need to know/i
 
@@ -56,6 +64,12 @@ for (const b of blocs) {
     nies++
     if (AFFIRME.test(titre)) {
       casse(`« ${slug} » : le titre annonce une salle de prière que l'article dit inexistante — « ${titre} »`)
+    }
+  }
+  if (NIE_EN.test(corps)) {
+    nies++
+    if (AFFIRME_EN.test(titre)) {
+      casse(`« ${slug} » : the title promises a prayer room the article says does not exist — « ${titre} »`)
     }
   }
 

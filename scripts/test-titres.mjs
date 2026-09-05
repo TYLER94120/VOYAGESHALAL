@@ -23,7 +23,11 @@
 import { readFileSync, readdirSync } from 'node:fs'
 
 const TITRE_MAX = 60
-const DESCRIPTION_MAX = 160
+// 29 août : ce test tolérait 160 caractères quand Google en montre ~155 —
+// et lib/titre-seo.ts autorisait la même chose. Deux limites pour une seule
+// règle : c'est la plus permissive qui gagnait, et 36 descriptions servies
+// se faisaient couper à l'affichage. Une seule limite désormais, la vraie.
+const DESCRIPTION_MAX = 155
 
 let echecs = 0
 const rate = (quoi, longueur, max, texte) => {

@@ -1,0 +1,101 @@
+name: tests
+
+# 🚦 LE GARDE-FOU DE LA FUSION AUTOMATIQUE.
+#
+# 5 septembre. Mohamed n'a plus le temps de relire les PR et m'a demandé
+# d'activer la fusion automatique. Avant de l'activer, j'ai regardé ce qui
+# gardait réellement la porte : **un seul contrôle sur la PR #124, « Vercel
+# Preview Comments », terminé en zéro seconde.** Il ne vérifie rien. Aucun
+# des 23 workflows du dépôt ne se déclenche sur une pull request.
+#
+# Autrement dit, activer la fusion automatique telle quelle aurait fusionné
+# sur un feu vert qui ne regarde pas la route. Ce fichier est la route.
+#
+# `npm run build` enchaîne les 46 tests de la maison AVANT `next build` :
+# alcool, titres, prose, maillage, données structurées, préposition, accord,
+# honnêteté des articles… Si l'un d'eux casse, la construction s'arrête et
+# la PR ne peut pas être fusionnée. C'est exactement la garantie qu'il faut
+# pour que personne n'ait à relire.
+#
+# ⚠️ Ce workflow ne remplace PAS la vérification sur page servie. Les tests
+# lisent la source ; le <title> réellement rendu, le JSON-LD et le texte ne
+# se voient qu'en démarrant le serveur. Ça, ça reste le travail de la ronde.
+
+on:
+  pull_request:
+    branches: [main]
+  # Utile pour vérifier que main lui-même reste vert après une fusion.
+  push:
+    branches: [main]
+
+# Une PR poussée deux fois de suite n'a pas besoin de deux constructions :
+# la précédente est annulée, on ne paie que la dernière.
+concurrency:
+  group: tests-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: 46 tests + construction
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      # `npm ci` et pas `npm install` : la construction doit être celle du
+      # verrou, pas celle du jour.
+      - name: Installer les dépendances
+        run: npm ci
+
+      # C'est ici que tout se joue : le script `build` du package.json lance
+      # les 46 tests puis `next build`. Un seul ❌ et le job échoue.
+      - name: Tests de la maison, puis construction
+        run: npm run build
+        env:
+          NEXT_TELEMETRY_DISABLED: '1'
+
+  fusion:
+    name: Fusion automatique si tout est vert
+    needs: build
+    runs-on: ubuntu-latest
+    # 🔐 LES QUATRE GARDES. Mohamed a demandé la fusion automatique le
+    # 5 septembre — il n'a plus le temps de relire, et sans ça la PR #124
+    # s'accumulait depuis neuf jours sans que rien n'atteigne le site.
+    #
+    # La fusion automatique NATIVE de GitHub ne convenait pas : elle attend
+    # les contrôles « obligatoires », et ce dépôt n'en a aucun (pas de
+    # protection de branche). Elle aurait donc fusionné sans rien attendre.
+    # La fusion se fait donc ICI, après le job `build` — c'est-à-dire après
+    # les 46 tests ET la construction complète.
+    #
+    #  1. `needs: build`   — un seul test rouge et ce job ne démarre jamais.
+    #  2. même dépôt       — une PR venant d'un fork ne se fusionne pas elle-même
+    #                        (son jeton est en lecture seule, mais on le dit).
+    #  3. auteur           — seules les PR ouvertes par le propriétaire passent.
+    #  4. pas un brouillon — une PR marquée « draft » attend une main humaine.
+    #
+    # ⚠️ La branche n'est PAS supprimée : la ronde de nuit continue de
+    # travailler dessus. Après une fusion, elle repart de `main` et ouvre une
+    # nouvelle PR — c'est la marche à suivre inscrite dans son brief.
+    if: >-
+      github.event_name == 'pull_request' &&
+      github.event.pull_request.head.repo.full_name == github.repository &&
+      github.event.pull_request.user.login == 'TYLER94120' &&
+      github.event.pull_request.draft == false
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Fusionner
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NUM: ${{ github.event.pull_request.number }}
+          DEPOT: ${{ github.repository }}
+        run: |
+          echo "Les 46 tests et la construction sont passés — fusion de la PR #$NUM."
+          gh pr merge "$NUM" --repo "$DEPOT" --merge

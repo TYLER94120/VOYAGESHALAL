@@ -772,3 +772,1266 @@ anglais.
 
 `scripts/test-prose.mjs` tient la règle à chaque construction, y compris le
 piège du point décimal.
+
+---
+
+# 🌍 28 AOÛT — LES PAGES PAYS : 21 LIENS MORTS ET LES DERNIERS « GUIDE COMPLET »
+
+Ronde quotidienne. Rien de neuf publié — les 19 pages pays × 2 domaines
+étaient passées à côté des deux passes précédentes, et elles portaient les
+deux défauts qu'on croyait réglés.
+
+## 1. « Un bouton sans destination n'existe pas » — 21 fois
+
+Mesuré : **21 des 70 villes citées sur les pages pays renvoyaient vers une
+fiche inexistante.** Pétra, Wadi Rum, les trois villes des Maldives, les
+trois de Zanzibar, Krabi, Koh Lanta, Berat… La fiche de ville a
+`dynamicParams = false` : chacun de ces liens rendait un **404**.
+
+L'audit du 25 août ne les avait pas vus : il échantillonnait six pages par
+famille, et ces pays n'en faisaient pas partie. Un échantillon trouve les
+défauts répandus, pas les défauts localisés.
+
+- **3 n'étaient que des identifiants mal orthographiés** — `riyad` →
+  `riyadh`, `charm-el-cheikh` → `sharm-el-sheikh`, `edinburgh` →
+  `edimbourg`. Réparés : la fiche existait, le lien pointait à côté.
+- **18 n'ont pas de fiche du tout.** Leur nom et leur description restent —
+  ce sont de vraies villes, le texte est utile — mais le lien disparaît
+  tant que la fiche n'existe pas. Il reviendra tout seul le jour où elle
+  sera écrite : la page lit les fiches réellement présentes, elle ne porte
+  pas une liste figée.
+
+**Vérifié : 350 liens de ville testés sur les 19 pages × 2 domaines, 0 mort.**
+
+## 2. Les derniers « guide complet » du site
+
+| | avant | après |
+|---|---|---|
+| FR | Voyage Halal en Maroc — **Guide Complet** 2026 | Voyage halal Maroc : où prier, manger et dormir |
+| EN | Halal Travel in Türkiye — **Complete Guide** 2026 | Halal travel in Türkiye: where to pray, eat and sleep |
+
+Ce sont exactement les mots qui ont fait **zéro clic sur Marrakech en
+première page** pendant trois mois. Ils étaient restés ici parce qu'ils
+viennent d'un **gabarit** et non d'un fichier de titres : la vérification du
+20 août lisait quatre fichiers, pas les gabarits.
+
+Deux décisions à noter :
+
+- **Pas de chiffre dans ces titres, volontairement.** La page n'affiche que
+  3 ou 4 villes ; annoncer « 34 villes » (ce que contient la base pour le
+  Maroc) serait une promesse qu'elle ne tient pas. Le besoin suffit.
+- **Le nom du pays passe en tête côté français.** On tape « voyage halal
+  maroc », pas « voyage halal en Maroc » — et la préposition « en » était
+  fausse sur la moitié des pays (en Maroc, en Qatar, en Japon, en
+  Royaume-Uni). Le défaut disparaît en même temps.
+
+Tous les titres servis font 47 à 59 caractères, vérifiés sur les deux
+domaines.
+
+## 3. Ce que la ronde n'a pas fait
+
+**Aucune page neuve** — et la cible n° 1 du brief (les titres anglais de
+Marrakech, Almaty, Amsterdam) **était déjà livrée le 21 août**, servie et
+vérifiée le 25. La réécrire aurait été du brassage.
+
+Le brief demandait aussi de relancer Mohamed sur la stratégie de cache :
+**c'est fait et en production depuis le 27 au soir** — 1 418 pages
+fabriquées d'avance, 112 Mo → 20,7 Mo par passage de robot. Reste à lire la
+courbe d'Origin Transfer dans les jours qui viennent.
+
+`scripts/test-pays.mjs` tient les deux règles à chaque construction.
+
+---
+
+# 🧹 29 AOÛT — LA RONDE QUI REMET TOUT À ZÉRO
+
+Ronde quotidienne. Aucune page neuve. J'ai commencé par vérifier que les
+deux gros chantiers de la semaine (cache, chiffres non sourcés) n'avaient
+rien cassé, en re-passant les **1 641 URL** des deux sitemaps.
+
+## Aucune régression
+
+810 et 831 pages répondent, 0 erreur, 0 mauvaise langue, 0 titre trop long,
+0 page sans `h1`, et les 20,7 Mo par passage de robot tiennent.
+
+## Ce que la comparaison a laissé voir
+
+| | 25 août | avant ce soir | après |
+|---|---|---|---|
+| mot creux dans ce que Google affiche | 51 | 12 | **0** |
+| pages sans lien canonique | 4 | 4 | **0** |
+| descriptions coupées à l'affichage | 37 | 36 | **0** |
+
+### 1. Les mots creux étaient passés du titre à la description
+
+Les 12 restants n'étaient plus dans des titres — ils étaient dans des
+**descriptions** : « Découvrez les meilleurs restaurants halal à Berkane »,
+« Tout savoir pour visiter Marrakech », « Le guide complet, gratuit ». La
+règle du 20 août ne portait que sur les titres, et la description est la
+deuxième ligne que Google affiche. `scripts/test-seo-titres.mjs` la
+surveille désormais aussi.
+
+### 2. Deux limites pour une seule règle
+
+`lib/titre-seo.ts` autorisait **160** caractères, `lib/titreVille.mjs`
+**155**, et Google en montre ~155. C'est la plus permissive qui gagnait :
+36 descriptions servies se faisaient couper, dont **20 pages d'hôtels** qui
+partagent le même gabarit. Une seule limite désormais — la vraie. Les 15
+descriptions écrites à la main qui dépassaient encore ont été raccourcies
+d'un mot ou deux, sans rien perdre.
+
+### 3. Deux pages n'avaient ni titre propre ni canonique
+
+- **`/contact`** servait une description **française** sur
+  gohalaltravel.com, sous la marque française en plus.
+- **`/autour-de-moi`** n'avait **aucun titre à elle** : elle servait celui
+  de l'accueil, sur les deux domaines. Deux adresses se présentaient à
+  Google sous le même titre et se faisaient concurrence. C'est une page
+  cliente (carte, géolocalisation) : elle ne peut pas porter ses propres
+  métadonnées, un `layout.tsx` les porte pour elle.
+
+⚠️ Son titre ne vise **pas** « mosquée près de moi » : cette requête
+appartient à `/mosquee-proche`, qui la travaille déjà. Ce qu'Autour de moi
+fait et qu'aucune autre page ne fait, c'est les trois à la fois — prier,
+manger, sortir — là où l'on est.
+
+## Ce qui reste ouvert, et qui n'est pas de mon ressort
+
+**Samarcande existe toujours en double** (`samarcande.json` et
+`samarkand.json`), et sur le site anglais les deux pages d'hôtels portent
+un titre strictement identique. Fusionner suppose de choisir quelles
+adresses survivent : c'est une décision de donnée, elle attend Mohamed.
+C'est le dernier titre en double du site.
+
+---
+
+# 📈 29 AOÛT — SEARCH CONSOLE INSIGHTS, 28 JOURS : LE FORMAT EST CONFIRMÉ
+
+Capture de Mohamed, voyageshalal.fr, 28 derniers jours.
+
+| Page | Clics | Évolution |
+|---|---|---|
+| /blog/ou-prier-disneyland-paris | **47** | **↑ 1 075 %** |
+| /blog/ou-prier-parc-asterix | **23** | précédent : 0 |
+| /blog/ou-prier-gares-paris | 7 | précédent : 0 |
+| /blog/ou-prier-aeroport-orly | 4 | précédent : 0 |
+| /blog/ou-prier-puy-du-fou | 3 | précédent : 0 |
+
+**84 clics sur ces cinq pages seulement.** Le relevé du 21 août mesurait
+**65 clics pour le site entier** sur 28 jours. Les cinq premières pages du
+site sont toutes des articles « où prier à [lieu] » : le format est
+confirmé, ce n'est plus une hypothèse.
+
+## ⚠️ Ce que ces chiffres ne disent PAS
+
+**Les 1 075 % de Disneyland ne viennent pas du nouveau titre.** La capture
+montre l'ANCIEN — « Salle de prière à Disneyland Paris : où p… ». Google
+n'avait pas encore recrawlé la page. Cette croissance vient d'ailleurs
+(saison, indexation), et se l'attribuer serait une faute de mesure.
+
+En revanche, **Parc Astérix affiche bien le nouveau titre** — « Parc
+Astérix : pas de salle de prière, où… » — et fait 23 clics. C'est la seule
+page où le titre honnête est réellement en ligne, et elle ne s'est pas
+effondrée : dire « il n'y a pas de salle de prière » dans un résultat
+Google fait cliquer.
+
+## 🔴 CE QUE LA CAPTURE A RÉVÉLÉ : le sitemap ne signalait aucune modification
+
+Pourquoi Parc Astérix a-t-il été recrawlé et pas Disneyland ? Les titres
+ont été réécrits le même jour, le 27 août.
+
+| Article | Publié le | Titre servi dans Google |
+|---|---|---|
+| Parc Astérix | 6 août | **le nouveau** |
+| Puy du Fou, Futuroscope | 6 août | — |
+| Disneyland, Orly, CDG | 20 juillet | **l'ancien** |
+
+La cause, dans `app/sitemap.ts` :
+
+```ts
+lastModified: new Date(p.publishedAt)
+```
+
+**Le sitemap annonçait la date de PUBLICATION.** Un titre réécrit ne
+produisait donc aucun signal de fraîcheur : Google repassait à son rythme —
+vite sur les pages récentes (6 août), lentement sur les autres
+(20 juillet). Les quatre titres qui promettaient une salle de prière
+inexistante seraient restés en ligne des semaines de plus.
+
+**Corrigé** : un champ `updatedAt`, posé sur les **29 articles réellement
+modifiés** ces trois derniers jours, et servi par le sitemap.
+
+⚠️ La règle qui va avec, tenue par `scripts/test-fraicheur.mjs` : une date
+de modification ne s'écrit que sur un article réellement modifié. La poser
+partout « pour faire remonter » serait inventer une date — Google mesure la
+constance de ces annonces, et une page déclarée modifiée sans l'être perd
+sa crédibilité de fraîcheur, en emportant les autres. Le test refuse une
+date antérieure à la publication, une date dans le futur, et un dépôt où
+plus de 60 % des articles se déclareraient modifiés.
+
+## Ce qu'il faudra regarder au prochain relevé
+
+Disneyland, Orly, CDG et Puy du Fou avec leur **nouveau** titre. C'est là
+que se lira l'effet réel du chantier du 27 — pas avant.
+
+---
+
+# 📊 29 AOÛT — SEARCH CONSOLE, PAGES, 3 MOIS, MOBILE
+
+Export demandé, reçu. voyageshalal.fr — **128 clics · 3 560 impressions ·
+CTR 3,6 % · position 12,3**.
+
+## 1. Le taux de clic n'est plus le problème
+
+3,6 % en mobile, contre 1,0 % tous appareils au relevé du 21 août. À la
+position 12,3, c'est un bon taux. Le syndrome Marrakech — « ils nous voient
+et ne cliquent pas » — n'est plus le sujet principal.
+
+## 2. 🔴 LE PLAFOND : ~30 PAGES SUR 810 EXISTENT POUR GOOGLE
+
+L'onglet Pages ne liste que celles qui ont eu au moins un affichage. Il en
+compte **une trentaine** — sur **810 URL au sitemap**. Autrement dit,
+**96 % du site n'a jamais été montré à personne** en trois mois.
+
+Ce n'est plus un problème de titre : c'est un problème de **couverture**.
+Gagner encore un point de taux de clic rapporterait ~35 clics par
+trimestre ; doubler les affichages en rapporterait 128.
+
+➡️ **Prochaine mesure : Search Console → Indexation → Pages.** Combien de
+pages indexées, combien exclues, et pour quel motif. C'est là que se joue
+le prochain gain.
+
+## 3. Le classement des pages
+
+| Page | Clics | Impr. | CTR | Position |
+|---|---|---|---|---|
+| /blog/ou-prier-disneyland-paris | 7 | 255 | 2,7 % | 7,7 |
+| /blog/ou-prier-parc-asterix | 5 | 14 | **35,7 %** | **2,3** |
+| /guides/ou-prier-aeroport-guide *(301)* | 3 | 195 | 1,5 % | 9,5 |
+| /blog/ou-prier-aeroport-orly | 2 | 95 | 2,1 % | 10,8 |
+| /guides/ou-prier-disneyland-paris *(301)* | 2 | 24 | 8,3 % | 8,0 |
+| /hotels/istanbul | 1 | 181 | 0,6 % | **67,5** |
+| **/destinations/marrakech** | **0** | **146** | **0 %** | **8,2** |
+
+Trois lectures :
+
+- **Parc Astérix : 35,7 % de clic en position 2,3.** Le titre honnête
+  (« pas de salle de prière ») est en ligne sur cette page, et c'est le
+  meilleur taux du site. Petit volume, mais la preuve tient.
+- **Les deux anciennes URL redirigées portent encore 219 affichages.** Les
+  301 font leur travail ; rien à corriger.
+- **/hotels/istanbul, position 67,5** : confirmé perdu, comme dit le
+  21 août. Ne pas y toucher.
+
+## 4. 🔴 CE QUE LES CHIFFRES ONT FAIT TROUVER : un titre amputé pour UN caractère
+
+`/destinations/marrakech` : 146 affichages, position 8,2, zéro clic — la
+deuxième réserve du site. Son titre servi ne faisait que **42 caractères
+sur les 60 disponibles** :
+
+> « Où prier à Marrakech : 142 lieux de prière »
+
+La version complète — « … et les restos halal » — en fait **62**. Elle
+dépasse d'**un caractère**, et le repli sautait directement à la version
+nue : dix-huit caractères de promesse perdus pour un de trop.
+
+**Mesuré sur les 343 villes qui ont un compte : 45 titres français
+tombaient ainsi.** Un palier intermédiaire — la même promesse écrite court,
+« , restos halal » — en récupère **42**. L'anglais n'en perdait que 4,
+parce qu'il utilisait déjà la forme courte (« , halal food ») : c'est
+l'écart de longueur entre les deux langues qui a créé le défaut.
+
+| | avant | après |
+|---|---|---|
+| Marrakech | 42 c — Où prier à Marrakech : 142 lieux de prière | 56 c — …, restos halal |
+| Abu Dhabi | 42 c | 56 c |
+| Alexandrie | 43 c | 57 c |
+
+`scripts/test-titres-villes.mjs` refuse désormais qu'une douzaine de titres
+retombent sous 46 caractères sans seconde promesse — un titre court n'est
+pas un défaut, un titre court **parce qu'un palier manque** en est un.
+
+---
+
+# 🍽 30 AOÛT — « ON A DES ADRESSES EN PLUS DES 3 MAIS ELLES NE SERVENT À RIEN »
+
+Capture de Mohamed, écran « Autour de toi », liste dépliée. Il a raison, et
+la cause n'était pas dans le moteur.
+
+## Ce que l'API envoie, et ce que l'écran montrait
+
+Pour **chacune** de ces adresses, `app/api/lieux/route.ts` envoie :
+
+```ts
+{ id, nom, distanceM, lat, lng, note, nbAvis, prix, ouvert, adresse,
+  statut, alcool, source, famille }
+```
+
+L'écran n'en affichait que **deux** : le nom, et la distance à vol
+d'oiseau. Pas la note, pas les avis, pas le prix, pas l'ouverture. On ne
+peut rien décider avec « Square Micheline Charle · 493 m ».
+
+## 🔴 Et surtout : la ligne alcool disparaissait
+
+La fiche du haut porte, en toutes lettres dans le code :
+
+> « §6 — une ligne alcool sur CHAQUE fiche, jamais optionnelle. Verte quand
+> Google l'affirme, ambre quand on ne sait pas : on ne rassure jamais à
+> tort. »
+
+Les trois premières adresses la portent. **Les suivantes, non.** Il
+suffisait de toucher « voir 9 autres adresses » pour que la garantie sur
+laquelle tout le site est bâti disparaisse — au deuxième écran, en silence.
+
+Ce n'est pas un défaut d'ergonomie. C'est la règle du 16 août qui sautait
+dès qu'on dépliait la liste.
+
+## Corrigé
+
+Chaque adresse de la liste porte maintenant ce que les cartes du haut
+portent : note et nombre d'avis, prix, ouverture, **et la ligne alcool**.
+Rien n'est inventé — chaque segment n'apparaît que si la donnée existe,
+exactement comme en haut.
+
+`scripts/test-alcool.mjs` refuse désormais que la liste dépliée perde la
+ligne alcool, la note, les avis ou l'ouverture. ⚠️ Vérifié qu'il ÉCHOUE
+quand on retire la ligne alcool de la liste.
+
+## La leçon
+
+Une règle vérifiée à un endroit de l'écran n'est pas une règle vérifiée.
+Le test du 16 août éprouvait le **filtre** (aucun bistrot ne passe) — il ne
+regardait pas si l'écran le **disait** partout. Les deux comptent : le
+filtre protège, la ligne informe.
+
+---
+
+# 🗺 30 AOÛT — UNE HYPOTHÈSE FAUSSE, ET CE QU'ELLE A TROUVÉ
+
+Ronde quotidienne. Aucune page neuve.
+
+## L'hypothèse que j'ai tuée avant d'agir dessus
+
+Le 29 août j'ai établi que le plafond du site est la **couverture** :
+~30 pages sur 810 obtiennent un affichage. Hypothèse la plus naturelle :
+beaucoup de pages se déclarent `noindex` (les fiches minces, les pages
+hôtels sans hôtels).
+
+**Mesuré sur les 1 641 URL servies : 4 par domaine. 0 %.** L'hypothèse
+était fausse, et il valait mieux le savoir avant de « corriger » des seuils
+qui n'étaient pour rien dans l'affaire.
+
+## ⚠️ Une correction à ce que j'ai écrit hier
+
+J'ai écrit « 96 % du site n'a jamais été montré à personne » et laissé
+entendre un problème d'**indexation**. C'est une inférence, pas une mesure :
+zéro affichage peut aussi vouloir dire *indexée mais jamais dans les
+résultats que quelqu'un consulte*. Les deux se distinguent dans
+**Indexation → Pages**, et ce relevé n'a pas encore été fait. En attendant,
+la seule chose établie est : zéro affichage sur ~780 pages.
+
+## Ce que la mesure a quand même trouvé
+
+Les 4 pages en `noindex` étaient **dans le sitemap** :
+
+| Page | hôtels | ce qu'elle déclare |
+|---|---|---|
+| /mentions-legales | — | noindex, follow |
+| /hotels/berkane | 2 | noindex, follow |
+| /hotels/tafoughalt | 2 | noindex, follow |
+| /hotels/fezouane | **0** | noindex, follow |
+
+Le sitemap dit « indexe-moi », la page dit « surtout pas ». Google le compte
+comme une erreur (« Page envoyée avec balise noindex ») et dépense du budget
+de crawl pour rien — sur un site dont on cherche précisément à faire baisser
+les passages de robots.
+
+**La cause** : la règle du seuil vivait dans la page hôtels (`n < 3`), et le
+sitemap listait les 354 villes sans la connaître. Deux endroits, une seule
+règle, aucune communication entre eux.
+
+**Corrigé** : une constante partagée, `HOTELS_MIN_INDEX`, lue par la page ET
+par le sitemap. La page légale sort du sitemap — elle reste accessible par
+le pied de page, ce qui est son rôle.
+
+| | avant | après |
+|---|---|---|
+| URL au sitemap FR | 810 | 806 |
+| URL au sitemap EN | 831 | 827 |
+| **pages annoncées ET en noindex** | **4 + 4** | **0** |
+
+`scripts/test-sitemap.mjs` refuse désormais qu'une page qui se déclare
+`noindex` soit annoncée au sitemap, et que le seuil soit réécrit en dur
+d'un côté sans l'autre.
+
+## Ce que la ronde n'a pas fait
+
+Aucune page neuve : rien n'apprenait ce qu'aucune page n'apprend.
+Et je n'ai pas touché à la couverture — **le relevé Indexation → Pages
+manque toujours**, et sans lui je choisirais une cible au hasard.
+
+---
+
+# 📈 30 AOÛT — 7 JOURS : CTR 6,5 %, LE PLUS HAUT JAMAIS RELEVÉ
+
+Capture de Mohamed. voyageshalal.fr, 7 derniers jours :
+**45 clics · 694 impressions · CTR 6,5 %.**
+Point du 27 août : 7 clics, 100 impressions, 7 %, position 22,3.
+
+⚠️ **Le filtre d'appareil n'est pas visible sur la capture.** Les deux
+lectures ci-dessous en dépendent, et je le dis avant de comparer.
+
+## Les repères du carnet, pour la même fenêtre
+
+| relevé | impressions | clics | CTR | position |
+|---|---|---|---|---|
+| 21 août — 7 j, tous appareils | 1 670 | 12 | 0,7 % | 40 |
+| 21 août — 7 j, mobile | 420 | 11 | 2,6 % | 11,2 |
+| **30 août — 7 j** | **694** | **45** | **6,5 %** | — |
+
+**Le CTR de 6,5 % est le plus haut jamais relevé sur l'empire**, quelle que
+soit la fenêtre : le précédent record était 3,6 % (3 mois, mobile).
+
+## La lecture qui compte : on échange des affichages inutiles contre des clics
+
+Si le relevé est en « tous appareils », alors sur neuf jours :
+**impressions ÷ 2,4, CTR × 9, clics × 3,75.**
+
+Perdre la moitié des affichages en quadruplant les clics n'est pas une
+perte — c'est exactement la loi mesurée le 21 août : *3 % des impressions
+font 46 % des clics*. Les affichages perdus sont selon toute vraisemblance
+ceux du desktop en position 37-50, qui rapportent 0,19 % de clic. On ne
+perd pas de l'audience, on perd du bruit.
+
+## Ce que la position dit, et qu'il ne faut pas lire à l'envers
+
+Position 22,3 le 27 août, contre 12,3 en moyenne sur 3 mois. **Une position
+moyenne qui se dégrade pendant que les clics montent est un signe
+d'expansion, pas de recul** : le site apparaît sur PLUS de requêtes, donc
+aussi sur des requêtes plus dures, ce qui tire la moyenne vers le bas. Ce
+qui compte est que les pages qui rangent bien convertissent — 6,5 %.
+
+## ⚠️ CORRECTION — la question est tranchée, et j'avais tort
+
+Mohamed a envoyé le second relevé : le premier était bien **mobile**, et le
+total tous appareils fait **49 clics · 1 980 impressions · CTR 2,5 %**.
+
+**La lecture « on échange des affichages contre des clics » est fausse.**
+Je comparais 694 (mobile) à 1 670 (tous appareils) — deux périmètres
+différents, exactement l'erreur contre laquelle j'avais mis en garde deux
+paragraphes plus haut. À périmètre égal, **les affichages MONTENT** :
+
+| périmètre | 21 août | 30 août | |
+|---|---|---|---|
+| mobile — impressions | 420 | **694** | +65 % |
+| mobile — clics | 11 | **45** | ×4,1 |
+| mobile — CTR | 2,6 % | **6,5 %** | ×2,5 |
+| tous appareils — impressions | 1 670 | **1 980** | +19 % |
+| tous appareils — clics | 12 | **49** | ×4,1 |
+| tous appareils — CTR | 0,7 % | **2,5 %** | ×3,6 |
+
+Rien n'a été échangé : les affichages, les clics et le taux montent
+ensemble, sur les deux périmètres. C'est meilleur que ce que j'annonçais.
+
+## 🔴 LA RÉPARTITION PAR APPAREIL, ENFIN CHIFFRÉE
+
+Par soustraction entre les deux relevés :
+
+| | clics | impressions | CTR |
+|---|---|---|---|
+| **mobile** | **45** | 694 | **6,48 %** |
+| hors mobile | 4 | **1 286** | **0,31 %** |
+| tous | 49 | 1 980 | 2,47 % |
+
+**Le mobile fait 92 % des clics avec 35 % des affichages.** Le reste —
+desktop et tablette — représente **65 % des affichages pour 8 % des
+clics**, à un taux de 0,31 %. La loi du 21 août (« 0,19 % contre 2,31 % »)
+est confirmée, avec neuf jours de recul et des volumes plus grands.
+
+**Ce qu'il faut en tirer, et qui vaut règle :** les chiffres « tous
+appareils » ne servent à RIEN pour piloter. Ils mélangent 1 286 affichages
+en position ~39 qui ne produisent rien avec 694 affichages qui produisent
+tout. Le CTR global de 2,5 % est un artefact de cette moyenne — le vrai
+chiffre du site est **6,5 %**.
+
+⚠️ Position du 27 août : **22,3 en mobile, 39,5 tous appareils.** Le même
+site, le même jour. Toute décision prise sur la seconde serait prise sur du
+bruit.
+
+---
+
+## 30 août — le maillage interne : 561 pages orphelines, 925 inatteignables
+
+Mohamed : « Le problème n'est pas l'indexation. Il y a beaucoup
+d'impressions. Le problème, c'est le taux de clic. » Sa moyenne dit
+l'inverse : **6,5 % de CTR à la position 22,3**, six fois au-dessus du
+normal pour cette position — un taux anormalement HAUT, tenu par cinq pages
+en position 1-5. Mais la moyenne ne peut pas répondre page par page, et je
+lui ai demandé le relevé qui tranche (Performances → Pages, mobile, avec les
+colonnes CTR et Position). En attendant, j'ai mesuré ce qui ne dépend
+d'aucun relevé.
+
+**L'instrument.** `scratchpad/maillage.mjs` : les deux sitemaps, chaque page
+demandée au serveur de production, les `<a href>` du HTML servi (hors
+`<script>` : un chemin cité dans du JSON-LD n'est pas un lien). En-tête
+`Host` transmis par `node:http`, `fetch` le refusant. Le sitemap doit
+annoncer le bon domaine, sinon le script s'arrête — sans quoi on mesure deux
+fois le site français.
+
+⚠️ **Et l'instrument m'a menti une fois.** Après le premier correctif, la
+mesure a rendu des chiffres RIGOUREUSEMENT identiques. Le `pkill` avait
+échoué, l'ancien serveur tenait toujours le port 3400, et je mesurais
+l'ancien build. Le signe qui l'a trahi : le sitemap annonçait encore 806 URL
+au lieu de 807. **Vérifier l'instrument, pas seulement avant la première
+mesure — avant chaque mesure.**
+
+### Ce qui a été trouvé
+
+| | voyageshalal.fr | gohalaltravel.com |
+|---|---|---|
+| orphelines (aucun lien entrant) | 281 | 280 |
+| inatteignables depuis l'accueil | 581 | 344 |
+
+Une page ORPHELINE ne reçoit aucun lien d'une autre page. Une page
+INATTEIGNABLE n'a aucun chemin de liens depuis l'accueil. Elles sont au
+sitemap, servies en 200 — mais un robot arrive par les liens. C'est
+l'explication la plus probable des ~30 pages sur 810 qui obtiennent un
+affichage.
+
+Trois causes, toutes mesurées :
+
+1. **Le hub /hotels ne liait AUCUNE page hôtel.** Tous ses liens sortants
+   partaient chez HalalBooking : 333 pages `/hotels/[ville]` orphelines. Et
+   le hub lui-même, servi en 200, n'était annoncé à aucun sitemap.
+2. **La grille des destinations est rendue par le client.** 111 liens dans
+   le HTML servi sur 354 villes : 248 fiches sans chemin depuis l'accueil.
+   *Un lien que seul le navigateur écrit ne raccroche rien.*
+3. **Les 19 pages pays formaient un îlot.** Elles se lient entre elles
+   (bloc « aussi en Asie ») et rien ne pointait dedans.
+
+Plus, sur le domaine anglais : **75 liens internes au moins partaient en
+301** vers un slug français — `/guides/top-destinations-halal-2026` ×16,
+`/application` ×20, `/horaires-priere` ×8. Quatorze articles ANGLAIS
+écrivaient en dur des chemins FRANÇAIS : texte anglais, URL française
+(« Our `<a href="/horaires-priere">`prayer times`</a>` tool »). Et les pages
+pays affichaient à des lecteurs anglais des titres de guides en français.
+
+### Ce qui a été fait
+
+`components/maillage/IndexLiens.tsx` — un index **rendu par le serveur**,
+sans `use client` : c'est toute sa raison d'être. Posé sur `/hotels` (villes
+au-dessus de `HOTELS_MIN_INDEX`, le même seuil que le sitemap : sous ce
+nombre la page se déclare noindex et la lier enverrait Google dans le vide)
+et sur `/destinations` (toutes les villes, puis tous les pays). `/hotels`
+ajouté au sitemap et au socle de l'accueil anglais — le pied de page qui le
+citait vivait dans l'accueil FRANÇAIS, une autre route.
+
+Les liens FR sur le domaine EN sont réparés **au rendu** (`lienGuideLocalise`,
+`liensArticleLocalises`), pas dans les 14 corps d'articles : corriger les
+textes aurait laissé la faute revenir au prochain article écrit. Un guide
+sans jumeau anglais n'est pas listé sur le domaine EN — on ne fabrique pas
+une traduction pour sauver un lien.
+
+### Après (même instrument, build vérifié)
+
+| | voyageshalal.fr | gohalaltravel.com |
+|---|---|---|
+| orphelines | **0** | **0** |
+| inatteignables | **0** | **0** |
+| profondeur maximale | 2 clics | 3 clics |
+| liens internes qui redirigent | 0 | 0 |
+
+`scripts/test-maillage.mjs` tient les mécanismes (il tourne à la
+construction, sans serveur : il ne peut pas compter les orphelines). Chaque
+contrôle a été vérifié en réintroduisant la faute — dont un qui passait à
+tort, `<IndexLiens` acceptant `<IndexLiensX`.
+
+🔴 **Ce que cela ne prouve pas.** Le maillage était cassé, il ne l'est plus.
+Que ce soit LA cause des 780 pages sans affichage reste une hypothèse tant
+que le relevé Performances → Pages n'est pas arrivé.
+
+---
+
+## 30 août — « manger » ne cherchait pas du halal
+
+Mohamed, à Val d'Europe : « Le Brandy's est très connu là-bas, un restaurant
+halal, et il n'était pas affiché autour de moi. Je trouve ça moyen en termes
+de proposition. »
+
+Il avait raison, et le défaut était **structurel**. Lu dans
+`app/api/lieux/route.ts`, pas supposé :
+
+```
+includedTypes: ['restaurant', 'meal_takeaway', 'bakery']
+maxResultCount: 20
+rankPreference: 'DISTANCE'
+```
+puis arrêt au premier rayon donnant `POOL_ALCOOL` (9) survivants, pour n'en
+garder que `RETENUS` (3). **Le mot « halal » n'était jamais dans la question
+posée à Google.** On demandait « les restaurants les plus proches » et on
+triait le halal APRÈS, en cherchant le mot dans le nom, le résumé ou les
+avis — sur une liste de vingt.
+
+Dans un centre commercial qui compte bien plus de vingt restaurants, une
+adresse halal un peu plus loin n'était pas écartée : **elle n'était jamais
+candidate.** Ce n'était pas de la malchance, c'était le fonctionnement.
+
+### Ce qui a été fait
+
+La règle du **17 août** — notre base trouve, Google enrichit ce qui est
+affiché — existait pour les mosquées et n'avait jamais été étendue à la
+nourriture. Elle l'est. `/api/osm-restos` interroge OpenStreetMap en direct
+et filtre sur l'étiquette `diet:halal` : **il cherche du halal**, il ne
+l'espère pas. Google ne sert plus qu'à enrichir les trois fiches affichées
+(note, horaires, photos), plafonné à `MAX_ENRICHISSEMENTS` appels.
+
+Le barrage alcool s'applique à cette voie aussi : l'enrichissement demande
+`servesBeer / servesWine / servesCocktails` et rend `'alcool'` — une valeur
+DISTINCTE de `null`. Sans cette distinction, un refus alcool aurait été lu
+comme « Google ne l'a pas reconnue » et la fiche OSM se serait affichée
+quand même : le barrage se serait contourné tout seul.
+
+### ⚠️ Une idée à moi, retirée parce que le dépôt avait la mesure
+
+J'avais proposé, en repli, une recherche Google **par texte** sur « halal »
+quand OSM ne trouve rien. `lib/requete.mjs` et `scripts/test-requete.mjs`
+disent non, avec la mesure du **16 août** :
+
+> « "café halal" ne cherche plus un café : le mot halal écrase le type et
+> Google remonte tout ce qui est oriental — traiteurs, pâtisseries,
+> épiceries. Le visiteur demande un café, on lui répond "établissement
+> musulman". »
+
+Le repli Google reste donc **inchangé** : par type, halal qualifié sur les
+résultats. `scripts/test-manger-osm.mjs` vérifie en plus que « halal » n'est
+pas revenu se coller à la requête par une autre porte.
+
+### Un mensonge évité au passage
+
+Quand notre base répond, Google n'est pas interrogé pour découvrir — mais
+`etatGoogle` restait à `'muet'`, et l'interface écrivait **« Google Maps n'a
+pas répondu »**. Faux : on ne lui avait rien demandé. L'état
+`'non-sollicite'` existe maintenant, et le défaut existait **déjà** sur les
+mosquées depuis le 17 août. Le crédit ODbL, lui, reste affiché partout où
+une donnée OpenStreetMap apparaît.
+
+### 🔴 Ce que je n'ai PAS mesuré
+
+**Je n'ai pas pu vérifier que le Brandy's remonte.** Overpass est bloqué
+depuis cette session : les quatre miroirs répondent `000`. Si OpenStreetMap
+ne connaît pas cette adresse, ce correctif ne la fera pas apparaître non
+plus — il faudra alors un relevé de la communauté. Le compteur
+`surmesure:osm-manger` (lisible dans `/api/admin/surmesure`) dira en
+production combien de recherches « manger » sont désormais servies par cette
+voie ; c'est la mesure qui manque, et elle ne peut se faire qu'en ligne.
+
+---
+
+## 30 août (soir) — le relevé Performances → Pages, et trois chantiers qui n'en étaient pas
+
+Mohamed a fourni le relevé que je réclamais : Performances → Pages,
+3 mois, voyageshalal.fr, avec CTR et Position.
+
+| page | impressions | clics | CTR | position |
+|---|---|---|---|---|
+| /blog/ou-prier-disneyland-paris | 1 066 | 53 | 5,0 % | 6,9 |
+| /blog/ou-prier-parc-asterix | 83 | 29 | 34,9 % | 2,8 |
+| **/** (accueil) | **2 392** | 18 | 0,8 % | **62,5** |
+| /guides/ou-prier-disneyland-paris | 139 | 10 | 7,2 % | 7,1 |
+| /guides/ou-prier-aeroport-guide | **722** | 9 | **1,2 %** | 10,1 |
+| /blog/ou-prier-gares-paris | 72 | 9 | 12,5 % | 8,6 |
+| /blog/ou-prier-aeroport-orly | 280 | 4 | **1,4 %** | 10,9 |
+| /hotels/paris | 118 | 4 | 3,4 % | 34,5 |
+| /blog/ou-prier-puy-du-fou | 19 | 3 | 15,8 % | 7,1 |
+| /hotels/istanbul | **916** | 2 | 0,2 % | 53,7 |
+
+### Le désaccord, tranché
+
+Mohamed disait « le problème c'est le taux de clic », je disais « c'est la
+couverture ». **Le relevé nous donne raison à tous les deux, sur des pages
+différentes**, et c'est pour ça que la moyenne du site ne pouvait pas
+trancher.
+
+· **Sa thèse tient** sur deux pages : 1,2 % et 1,4 % en position 10-11,
+  quand le site fait **12,5 %** en position 8,6 et **15,8 %** en 7,1. Même
+  site, même format, position voisine — dix fois moins de clics.
+· **La mienne tient** sur le volume : 3 426 des 5 807 affichages visibles
+  (59 %) sont en position 34 à 62. Aucun titre ne rattrape la page 4.
+
+⚠️ Le relevé est trié par CLICS, pas par impressions : les pages à fort
+affichage et zéro clic sont plus bas, invisibles. Et il est « tous
+appareils ». Les positions n'y sont donc pas comparables à celles du mobile.
+
+### Les trois chantiers, mesurés — et aucun n'a de défaut de code
+
+Avant d'écrire quoi que ce soit, j'ai relevé ce qui est RÉELLEMENT servi
+(règle de la skill `ce-que-google-affiche` : le titre du code n'est pas le
+titre servi) :
+
+| contrôle | résultat |
+|---|---|
+| titres servis | 53 à 58 c, sous la limite, chiffre concret, **aucun suffixe de marque** |
+| descriptions | présentes, spécifiques, dans la limite |
+| canoniques | correctes, auto-référencées |
+| 301 des anciennes URL | correctes, vers la bonne cible |
+| pages au sitemap | oui |
+| maillage de la famille « où prier » | le hub lie ses 18 articles, les articles lient le hub |
+
+**Il n'y avait rien à corriger.** Réécrire ces titres aurait été casser ce
+qui marche pour se donner l'air d'agir.
+
+### ⚠️ Une faute de mesure que j'ai failli publier
+
+Mon premier relevé a compté **zéro hreflang sur tout le site** — 11 pages,
+toutes les familles. J'allais l'annoncer comme un défaut majeur. En vidant
+les balises `<link>` brutes plutôt qu'en faisant confiance à mon filtre,
+j'ai vu la vérité : **Next.js écrit `hrefLang`, avec un L majuscule**, et
+mon filtre cherchait `hreflang`. Les hreflang sont tous là.
+
+L'accueil est la seule page qui n'en a pas — et c'est **voulu** : les deux
+accueils ont divergé, et `test-seo-titres.mjs` interdit justement d'en
+redéclarer un (« un hreflang qui ment fait déclasser l'une des deux »).
+
+Deuxième fois en un jour qu'un instrument me ment. Le remède est le même :
+**regarder la sortie brute avant de croire un filtre.**
+
+### Ce qui reste, et qui n'est pas de mon ressort
+
+1. **722 impressions sur une URL qui n'existe plus.**
+   `/guides/ou-prier-aeroport-guide` est une redirection 301 (middleware.ts)
+   vers `/blog/ou-prier-aeroports`. Elle est correcte depuis trois mois et
+   Google montre toujours l'ancienne. Il ne manque aucun code : il manque
+   que Google repasse dessus. → Search Console, Inspection de l'URL,
+   « Demander une indexation », sur les deux anciennes URL. Même cas pour
+   `/guides/ou-prier-disneyland-paris` (139 affichages).
+2. **Pourquoi 1,2 % en position 10.** Non tranché. Il me manque l'onglet
+   **Requêtes**. Ça peut être une requête où un site officiel occupe tout le
+   haut — auquel cas aucun titre ne rattrape, et le réécrire serait du
+   travail perdu.
+3. **L'accueil à 62,5.** La skill le dit sans détour : « un beau titre à la
+   position 22 reste invisible ». Ce n'est pas un chantier de titre. Le
+   levier est le maillage et le crawl — **déjà écrit, et toujours dans la
+   PR #124 non fusionnée.**
+
+---
+
+## 31 août — les deux meilleures pages du site n'existaient pas en anglais
+
+Ronde de nuit. **La cible n° 1 du brief (titres anglais de Marrakech,
+Almaty, Amsterdam) est livrée depuis le 21 août** et vérifiée le 25 et le
+27 : le brief ne se met pas à jour, le carnet si. Refaire aurait été du
+brassage.
+
+Je suis donc parti du relevé frais d'hier soir (Performances → Pages,
+3 mois, voyageshalal.fr). Deux pages y écrasent tout :
+
+| page | affichages | clics | CTR | position |
+|---|---|---|---|---|
+| /blog/ou-prier-parc-asterix | 83 | 29 | **34,9 %** | 2,8 |
+| /blog/ou-prier-puy-du-fou | 19 | 3 | **15,8 %** | 7,1 |
+
+Le site fait 1,2 % ailleurs. Ce sont les deux meilleurs taux jamais
+mesurés ici.
+
+**Mesure : sur les 19 articles de la famille « où prier », 6 n'ont aucun
+jumeau anglais** — et les deux meilleurs en font partie. Disneyland Paris,
+lui, avait déjà le sien : la décision éditoriale de traiter les
+destinations françaises en anglais était donc déjà prise, ces deux-là
+étaient simplement restés derrière.
+
+Écrit : `where-to-pray-parc-asterix` et `where-to-pray-puy-du-fou`.
+**Rien n'est inventé** — le relevé existait dans l'article français, seule
+la langue manquait, et les deux disent ce que disent les originaux : pas
+de salle de prière officielle à notre connaissance. Jumelés dans
+`lib/slugs.ts` (sans quoi les deux versions se concurrenceraient).
+
+Vérifié servi, en-tête `Host` des deux domaines : 200, `lang="en"`,
+hreflang dans les deux sens, présence au sitemap EN, slug FR sur domaine EN
+en 301, slug EN sur domaine FR en `noindex`.
+
+### 🇬🇧 Ce que l'écriture a découvert : la règle d'honnêteté ne valait qu'en français
+
+`scripts/test-articles.mjs` interdit depuis le 27 août qu'un titre promette
+une salle de prière que l'article dit inexistante. **Ses deux expressions
+étaient françaises.** Le site anglais — 831 pages — n'était donc tenu par
+rien, alors que c'est exactement le même piège.
+
+Règle étendue à l'anglais. Elle a immédiatement trouvé **deux pages
+servies** :
+
+| page | avant | après |
+|---|---|---|
+| where-to-pray-disneyland-paris | `Prayer Room at Disneyland Paris: Where to Pray in 2026` | `Disneyland Paris: no prayer room, ask at City Hall` |
+| where-to-pray-marseille-airport | `Prayer Room at Marseille Airport: The Honest Answer` | `Marseille Airport: no prayer room, where to pray` |
+
+Les deux corps disent noir sur blanc qu'il n'y a pas de salle ; les deux
+descriptions étaient honnêtes. **Seul le titre mentait — la seule ligne que
+Google affiche.** C'est mot pour mot le défaut corrigé côté français le
+27 août, resté six jours de plus côté anglais parce que le test ne savait
+pas lire l'anglais.
+
+⚠️ **Un titre avec du trafic a été changé** (Disneyland EN). C'est une
+correction de véracité, pas une optimisation — mais l'effet sera lisible
+dans sept à dix jours, et il ne faudra pas le confondre avec autre chose.
+
+Vérifié que le test ÉCHOUE si l'on remet l'ancien titre de Marseille.
+
+### Ce que la ronde n'a pas fait
+
+**Aucun titre français retouché.** Les pages en position 5-15 ont été
+relevées hier soir sur le serveur réel : 53 à 58 c, sans suffixe de marque,
+avec un chiffre concret. Il n'y avait rien à réparer, et réécrire aurait
+été casser ce qui marche.
+
+**Le 1,2 % de la page aéroport reste non expliqué** — il me manque l'onglet
+Requêtes.
+
+**PR #124 toujours pas fusionnée** : le maillage, la découverte OSM des
+restaurants et ces deux pages attendent tous là.
+
+---
+
+## 1er septembre — une règle écrite, testée, verte à chaque build… et qui ne tournait nulle part
+
+Hier j'ai trouvé que la règle d'honnêteté des titres était écrite **en
+français seulement**, laissant 831 pages anglaises sans garde-fou. Ce soir
+j'ai cherché si c'était un cas isolé. Ça ne l'était pas — et le vrai
+problème est plus grave que la langue.
+
+### La mesure : 5 modules gardés par un test, atteints par aucune route
+
+`scratchpad/atteignable.mjs` part des 126 routes réelles (`app/**/page.tsx`,
+`layout`, `route.ts`, `middleware`), suit les imports de proche en proche, et
+regarde qui reste dehors. **283 fichiers sur 342 sont atteints.** Parmi les
+59 autres, cinq sont gardés par un test de construction :
+
+| module | gardé par | servi ? |
+|---|---|---|
+| `lib/halalPrudent.mjs` | test-halal-prudent | **non** |
+| `lib/croisementPriere.mjs` | test-croisement | **non** |
+| `lib/verdictVille.mjs` | test-verdict-ville | **non** |
+| `lib/cielDuMoment.mjs` | test-ciel | **non** |
+| `lib/infoPratiqueEn.ts` | test-info-pratique-en | **non** |
+
+Cinq tests passent au vert à chaque construction et **ne garantissent rien
+de ce que les visiteurs voient**. Un test qui garde du code inatteignable
+donne l'apparence d'une garantie : c'est pire qu'un test absent, parce qu'on
+cesse de regarder.
+
+### 🔴 Le plus grave : le défaut de Tirana était revenu
+
+`lib/halalPrudent.mjs` porte en tête le défaut trouvé par Mohamed le 15 août :
+
+> « "Grill & Souvlaki Stop" est marqué "✓ signalé halal · OSM". Le souvlaki,
+> dans les Balkans et en Grèce, est traditionnellement du PORC. »
+
+Le correctif a été écrit dans ce fichier. **Aucune route ne l'importe.** J'ai
+donc rejoué le cas dans le filtre qui tourne réellement (`lib/conformite.ts`,
+appelé par huit endroits dont `/api/osm-restos`, `SocleVille` et
+`DestinationRoute`) :
+
+```
+GARDÉ   Grill & Souvlaki Stop   [cuisine: souvlaki;pizza;burger;chicken]
+GARDÉ   Gyros Express           [cuisine: gyros;greek]
+GARDÉ   Taverna Mykonos         [cuisine: greek]
+```
+
+Le cas exact du 15 août passait encore, seize jours plus tard. Et il pesait
+**davantage depuis avant-hier** : la découverte « manger » passe désormais
+par `/api/osm-restos`.
+
+`conformite.ts` couvrait bien le porc (`pork`, `porc`, `bacon`, `ham`…) mais
+pas les PLATS. Les mots manquants l'ont rejoint — dans `MOTS_EXCLUS` et non
+`MOTS_DOUTE`, parce qu'une étiquette halal affirmée annule `MOTS_DOUTE`, et
+c'est précisément cette étiquette OpenStreetMap qu'on ne croit pas ici. La
+règle « porc : jamais, quelle que soit l'étiquette » existait déjà deux
+lignes plus haut.
+
+**Effet mesuré : 80 adresses sur 16 512 (0,48 %) disparaissent** de
+l'affichage. Ce sont des grecs et des balkaniques étiquetés halal par OSM.
+
+⚠️ **Certaines sont sans doute vraiment halal** (« Gyros & Kebab [arab] », un
+stand libanais qui fait des gyros). Les écarter est une perte. Le choix suit
+la règle du 15 août — l'adresse peut rester, la promesse part — et là où
+l'on ne sait pas exprimer le troisième état, on s'abstient.
+Volontairement **épargnés** : `sausage`, `chorizo`, `salami`, `tapas`. Des
+adresses halal se vendent sous ces noms ; le doute joue dans les deux sens.
+
+### Deux fautes anglaises dans le croisement prière × distance
+
+`phraseCroisement(c, nom, en)` a une branche anglaise complète que les
+quatre appels du test omettaient — `en` valait toujours `false`. Jamais
+vérifiée, elle portait :
+
+| | français | anglais |
+|---|---|---|
+| le chiffre | « il te reste 11 min **pour partir** » | « 11 min left **to decide** » |
+| la marge | « Maghrib **est large** » (l'horloge) | « Maghrib **is safe** » (la prière) |
+
+« To decide » n'est pas la même consigne : le nombre est une heure de
+départ, calculée par soustraction — et la branche voisine disait déjà « to
+leave ». Quant à « safe », il se lit comme un verdict sur la prière
+elle-même : exactement ce que la règle « aucune phrase ne tranche une
+question religieuse » interdit — et elle ne pouvait pas le voir, étant
+écrite en français.
+
+Corrigé, et le test tourne désormais **dans les deux langues**, avec la
+liste de mots interdits de chacune. Vérifié qu'il échoue si l'on remet
+l'ancienne phrase.
+
+### Ce que je n'ai pas fait, et pourquoi
+
+**Je n'ai ni rebranché ni supprimé les cinq modules orphelins.** Le
+croisement prière × distance est décrit dans son propre code comme « ce que
+personne d'autre ne peut écrire » ; le rebrancher voudrait dire revenir sur
+la refonte de l'accueil (HeroDepart + BlocSeo), et le supprimer voudrait
+dire jeter une fonctionnalité. **C'est une décision de produit, pas de
+test.** `test-croisement.mjs` le dit maintenant à voix haute à chaque
+construction plutôt que de passer en silence.
+
+**Aucune page neuve.** Aucun titre français retouché.
+
+---
+
+## 2 septembre — ce qu'on déclarait à Google, et que personne ne relit jamais
+
+La donnée structurée (JSON-LD) ne s'affiche nulle part. C'est pourtant ce
+que Google lit en premier, et c'est le seul endroit du site que personne ne
+relit. Trois défauts y vivaient, sur les 354 fiches ville × 2 domaines.
+
+### 1. Une note d'utilisateurs qui n'existent pas
+
+```
+ratingValue : ville.score_halal        → NOTRE score, calculé par nous
+ratingCount : restaurants_halal ?? 50  → un nombre de RESTAURANTS
+```
+
+`ratingCount` désigne un nombre d'**avis**. Vérifié sur les 354 fiches :
+**aucune ne porte le moindre champ d'avis ou de note d'utilisateur.** On
+présentait donc notre propre note éditoriale à Google comme la moyenne
+d'avis inexistants, et on comptait ces avis en restaurants.
+
+Le repli `?? 50` est le jumeau exact du `ratingCount: h.avis_count ?? 20`
+retiré des hôtels le **24 août**. Il ne s'est jamais déclenché — les 354
+villes ont la statistique — mais il attendait la première ville publiée
+sans elle. La correction du 24 août portait sur un fichier ; celui-ci n'a
+jamais été relu.
+
+Retiré. Le score reste **affiché sur la page**, où il est expliqué ; il ne
+part plus en donnée structurée se faire passer pour autre chose.
+
+### 2. 150 adresses refusées à l'écran, annoncées à Google
+
+`restaurantSchemas` prenait les 20 premiers restaurants **sans passer par
+`conforme()`** — le filtre que `SocleVille` et `DestinationRoute`
+appliquent, et qui est branché en huit endroits.
+
+**Mesure : 150 restaurants sur 5 276 (2,8 %)** partaient chez Google alors
+que le site refuse de les montrer : un « Fugo Bar And Restaurant » à Accra,
+des adresses à tapas à Addis-Abeba. Le site n'osait pas les afficher et
+disait quand même à Google qu'elles sont dans son guide halal.
+
+Le filtre s'applique **avant** la coupe à 20, sinon les adresses écartées
+mangeraient des places au lieu d'être remplacées.
+
+**Vérifié servi**, JSON-LD lu sur le serveur de production local :
+
+| fiche | restaurants en JSON-LD | aggregateRating |
+|---|---|---|
+| /destinations/accra | 17 | **0** |
+| /destinations/addis-abeba | 15 | **0** |
+| /destinations/tirana | 20 | **0** |
+
+### Comment ces défauts survivent
+
+Les trois se ressemblent, et ressemblent à ceux des deux nuits
+précédentes : **une règle appliquée à un endroit et pas à l'autre.**
+
+· 27 août — l'honnêteté des titres, en français seulement (831 pages EN
+  libres) ;
+· 1er sept. — la règle du souvlaki, écrite dans un module qu'aucune route
+  n'importe ;
+· 2 sept. — le filtre de conformité, appliqué à l'affichage mais pas à la
+  donnée structurée ; la correction des faux avis, portée aux hôtels mais
+  pas aux villes.
+
+Le point commun n'est pas la négligence : c'est qu'**une règle vraie dans un
+fichier paraît vraie partout**. Les trois tests écrits ces trois nuits
+vérifient désormais chacun le chemin RÉELLEMENT servi, pas l'intention.
+
+⚠️ `scripts/test-donnees-structurees.mjs` a d'abord échoué sur son propre
+commentaire — il lisait l'explication « ce bloc envoyait score_halal »
+comme un bloc qui l'envoie. Même piège que le 29 août avec `'use client'`.
+Les commentaires sont retirés avant lecture.
+
+---
+
+## 3 septembre — la FAQ envoyée à Google contredisait la page
+
+Suite directe des trois nuits précédentes, et cette fois **une part du défaut
+est de ma main.**
+
+`DestinationSchema` et `DestinationFaqSchema` recevaient la ville **brute**,
+alors que l'affichage (`VilleExperience`, `SocleVille`) reçoit
+`restaurantsConformes`. Deux listes, une seule page.
+
+### Ce que ça donnait, mesuré sur les 354 fiches
+
+| | |
+|---|---|
+| villes dont la FAQ annonce un nombre FAUX | **159 sur 354 (45 %)** |
+| restaurants annoncés en trop | **407** (16 512 annoncés, 16 105 affichés) |
+| villes qui NOMMENT une adresse que la page refuse | **27** |
+
+Les noms cités sont le vrai problème :
+
+```
+Annaba  → « Chicha Châtelet »
+Bagdad  → « Cloud Lounge »
+Bakou   → « 114 Group Tea & Lounge »
+```
+
+Des lounges à chicha — exactement ce que `lib/conformite.ts` existe pour
+écarter — retirés de l'écran, et cités à Google comme nos adresses halal.
+
+🔴 **80 des 407 viennent de moi.** Les mots de porc ajoutés au filtre le
+1er septembre ont resserré l'affichage sans resserrer la FAQ. Le reste
+préexistait. Une correction qui ne suit pas tous les chemins d'une donnée
+en ouvre un nouveau.
+
+**Corrigé** : une seule ville, `villeAffichee`, construite une fois et
+passée à l'écran comme aux schémas. **Vérifié servi** :
+
+| fiche | avant | après |
+|---|---|---|
+| Annaba | « dont **Chicha Châtelet** » | « 1 restaurant halal, dont Le Castanea » |
+| Bagdad | « dont **Cloud Lounge** » | « 51 restaurants, dont Arif, Asayel… » |
+| Accra | « 21 restaurants » | « **17** restaurants » (= ce que la page montre) |
+
+### 🔴 Ce que je n'ai PAS corrigé, et qui demande ta décision
+
+**Les 5 questions du schéma FAQPage ne sont visibles nulle part sur la page.**
+Mesuré sur /destinations/accra : 5 questions déclarées à Google, **0 présente
+dans le HTML visible**. Sur 354 villes × 2 domaines.
+
+Google demande que le contenu d'un `FAQPage` soit **visible par le
+visiteur**. Ici il ne l'est pas — et ce n'est pas un oubli : la FAQ visible a
+été retirée le 19 août, et le commentaire de `DestinationRoute` dit
+explicitement « Les schémas JSON-LD (invisibles, SEO) restent ». **C'est une
+décision déjà prise, pas un défaut**, donc je ne la renverse pas seul.
+
+Ce que je dois te dire quand même : depuis 2023, les résultats enrichis FAQ
+ne s'affichent plus que pour les sites gouvernementaux et de santé. Ce schéma
+ne rapporte donc probablement rien aujourd'hui, tout en déclarant à Google un
+contenu que le visiteur ne voit pas. Deux issues : **remettre une FAQ
+visible** (ce que le même commentaire prévoyait, « à refaire plus tard »), ou
+**retirer le schéma**. Dis-moi laquelle.
+
+### Le fil des quatre nuits
+
+27 août, la règle d'honnêteté en français seulement · 1er sept., la règle du
+souvlaki dans un module qu'aucune route n'importe · 2 sept., le filtre
+appliqué à l'écran mais pas à Google · 3 sept., le filtre appliqué à l'écran
+mais pas à la FAQ.
+
+**Quatre fois la même forme : une règle vraie quelque part, fausse ailleurs.**
+Et ce soir, la preuve que ça vaut aussi pour mes propres corrections.
+
+---
+
+## 4 septembre — « Où prier à Le Caire »
+
+La routine GitHub a rafraîchi la base OSM des lieux de prière dans la nuit
+(`data(osm)`, 3 septembre). Premier réflexe : vérifier qu'un rafraîchissement
+automatique ne rend pas faux un chiffre annoncé dans un titre.
+
+**Il ne l'a pas fait** — et c'est une bonne nouvelle qu'il fallait établir.
+`compteurVille(slug)` est lu par le titre ET par le socle, depuis le même
+fichier : Alexandrie 210 → 199, Le Caire 479 → 463, Paris 103 → 102, et les
+titres servis suivent exactement. Rien à réparer de ce côté.
+
+### Mais la vérification a montré autre chose
+
+```
+titre  Où prier à Le Caire : 463 lieux de prière, restos halal
+desc   33 adresses halal et 106 hôtels à Le Caire, horaires…
+h1     Où prier à Le Caire : 463 lieux de prière et 33 adresses halal
+```
+
+Trois surfaces servies, la même faute d'accord. En français, « à » se
+contracte avec l'article masculin : **au Caire, au Cap**. Le site anglais,
+lui, était juste (« in Cairo », « in Cape Town ») : la faute n'existait qu'en
+français.
+
+Deux villes sur 354 — mais Le Caire est une destination majeure, et la faute
+était dans le **titre**, la seule ligne que Google affiche.
+
+**Le féminin ne se contracte pas** : « à La Mecque », « à La Havane », « à La
+Haye » sont corrects. Une règle trop large aurait cassé la ville la plus
+importante du site. Et « Lahore », « Lagos », « Larache », « Laâyoune »,
+« Las Vegas » ne portent pas d'article du tout.
+
+`lib/prepositionVille.mjs` — un seul endroit, parce que « à ${nom} » était
+écrit dans **quinze gabarits** (titre, description, h1, h2, FAQ, liens
+internes). Corriger deux noms dans les données aurait laissé la faute revenir
+au premier gabarit ajouté. C'est la forme de défaut trouvée quatre nuits
+d'affilée, et le 28 août sur les PAYS (« en Maroc ») — réglée là-bas en
+retirant la préposition, impossible ici : « Où prier Le Caire » ne se dit pas.
+
+**Vérifié servi**, build de 00:17, en-tête `Host` des deux domaines :
+
+| | |
+|---|---|
+| Le Caire | `Où prier au Caire : 463 lieux de prière et les restos halal` |
+| Le Cap | `Où prier au Cap : 41 mosquées et les restos halal` |
+| La Mecque | `Où prier à La Mecque : 739 lieux…` (intact) |
+| La Havane | `Où prier à La Havane : 3 mosquées…` (intact) |
+| Cairo (EN) | `Where to pray in Cairo: 463 prayer places` (inchangé) |
+
+### ⚠️ Trois fautes de MESURE dans la même nuit
+
+**1. `\b` ne voit pas les accents.** Le contrôle « aucun gabarit n'écrit
+`à ${nom}` à la main » ne s'est jamais déclenché : en JavaScript, `\b` est
+ASCII et ne reconnaît aucune frontière de mot avant « à ». Trouvé en
+réintroduisant la faute — le test passait au vert sur du code fautif.
+
+**2 et 3. J'ai mesuré deux fois un build périmé.** `pkill` enchaîné dans une
+commande composée tue le shell : le `npm run build` qui suivait n'a jamais
+tourné. J'ai lu « à Le Caire » sur la page servie et j'ai cru que mon
+correctif ne marchait pas, alors que la fonction rendait bien « au Caire ».
+`.next/BUILD_ID` datait d'avant mes modifications.
+
+C'est la **troisième fois** (30 août : ancien serveur sur le port 3400). La
+règle est écrite depuis le 30 août et je ne l'ai pas appliquée :
+
+> 🔴 **Avant de lire une page servie, vérifier l'heure de `.next/BUILD_ID`.**
+> Et ne jamais enchaîner un `kill` avec la commande suivante.
+
+---
+
+## 5 septembre — « 1 mosquées », dans le titre, sur 28 villes
+
+Cinq nuits de suite j'ai trouvé la même forme de défaut en la cherchant à
+l'endroit où je la soupçonnais. Ce soir j'ai fait l'inverse : **balayer ce que
+les gabarits produisent vraiment**, sans hypothèse.
+
+`scratchpad/grammaire.mjs` appelle les fonctions qui écrivent les titres et
+les descriptions, pour les 354 villes × 2 langues — **3 153 phrases** — et
+passe dessus une liste de soupçons (préposition non contractée, pluriel après
+« 1 », mot doublé, ponctuation orpheline, `undefined`, double espace).
+
+### Ce qu'il a trouvé
+
+```
+Où prier à Alicante : 1 mosquées et les restos halal
+Where to pray in Alicante: 1 mosques, halal food
+```
+
+**92 phrases, 28 villes, les deux langues.** Dans le titre.
+
+🔴 **Et la règle existait déjà.** `lib/villeFaq.ts` la tenait depuis toujours
+(`plFr`, `plEn`, avec `n > 1`) et écrivait correctement « 1 mosque » ;
+`lib/titreVille.mjs` ne l'avait pas. **Sixième nuit d'affilée avec la même
+forme** — une règle vraie quelque part, fausse ailleurs.
+
+`lib/accordFr.mjs` : les deux fichiers l'appellent, aucun ne peut plus
+diverger. Les paires sont **explicites**, jamais devinées — « lieux de
+prière » ne se met pas au singulier en retirant un « s », c'est « lieu de
+prière ». Une règle naïve aurait écrit « 1 lieux de prière » ou « 1 lieu de
+prières ». Et un compte plafonné (« 60+ ») reste toujours pluriel.
+
+**Vérifié servi**, build du 05/00:12, `BUILD_ID` contrôlé avant lecture :
+
+| ville | français | anglais |
+|---|---|---|
+| Alicante | `1 mosquée et les restos halal` | `1 mosque, halal food` |
+| Québec | `1 lieu de prière et les restos halal` | `1 prayer place, halal food` |
+| Le Caire | `au Caire : 463 lieux de prière` | `in Cairo: 463 prayer places` |
+
+Québec est le seul cas réel à 1 dans le compteur OSM — et c'est le piège du
+pluriel interne.
+
+### Un faux positif, dit plutôt que tu
+
+Mon balayage a aussi signalé « Where to pray in **The Hague** » comme un
+article anglais mal placé. **C'est correct** : The Hague est le nom anglais de
+La Haye. Le soupçon était le mien, pas une faute du site. Une liste de
+soupçons rend des soupçons — elle ne remplace pas la lecture.
+
+### Ce que la méthode change
+
+Chercher là où l'on soupçonne trouve ce qu'on imagine. Lire ce que la machine
+écrit trouve ce qu'on n'imagine pas — 92 phrases fausses que six nuits de
+recherche ciblée n'avaient pas vues, parce que je n'avais jamais pensé à une
+ville qui n'a qu'une seule mosquée.
+
+---
+
+## 5 septembre (jour) — Mohamed passe la main : un jour on crée, un jour on approfondit
+
+« Vu que je n'ai pas le temps en ce moment, j'aimerais que tu travailles
+seul. Un jour sur deux tu crées des articles, un jour sur deux tu
+approfondis les articles. »
+
+La ronde de nuit est réécrite dans ce sens : **jour impair = création, jour
+pair = approfondissement**. Avec une clause qui prime sur le rythme, écrite
+noir sur blanc dans le brief :
+
+> Un article « où prier à [lieu] » sans relevé vérifié reviendrait à inventer
+> une salle de prière. C'est interdit, même pour tenir le rythme. **Un cycle
+> sans article est un cycle réussi** si la seule alternative était d'inventer.
+
+Trois gisements sûrs pour les jours de création : traduire un article déjà
+vérifié, écrire depuis nos propres données comptables, ou traiter un sujet
+pratique qui n'affirme rien sur un lieu précis.
+
+### Premier cycle : l'aire d'autoroute, pour un lecteur anglophone
+
+**La mesure d'abord.** 14 articles français n'ont aucun jumeau anglais. J'ai
+choisi `ou-prier-aire-autoroute` — pas le plus long (235 mots, l'un des plus
+minces), mais celui dont la demande anglaise est réelle et non servie : les
+familles britanniques qui traversent la France vers l'Espagne ou les ferries
+du Maroc.
+
+⚠️ **Traduire un article de 235 mots aurait donné une page mince.** La
+question du brief — « qu'apprend cette page que personne n'apprend
+ailleurs ? » — appelait autre chose.
+
+**Ce que la page enseigne, et qui est sourcé :** les autoroutes françaises
+ont deux sortes d'arrêts, et les panneaux le disent avant qu'on s'engage.
+
+| | fréquence | ce qu'on y trouve |
+|---|---|---|
+| aire de **service** | tous les 50-60 km | carburant, restauration, boutique — tout le monde s'y arrête |
+| aire de **repos** | tous les 10-20 km | parking, point d'eau, toilettes, herbe — presque personne |
+
+Autrement dit **l'arrêt calme revient trois à cinq fois plus souvent que
+l'autre**, et il se reconnaît à l'absence de pictogramme « pompe » sur le
+panneau bleu. Un conducteur étranger ne le sait pas. C'est un mécanisme, pas
+une liste — exactement le critère du brief.
+
+Sources : références concordantes d'auto-écoles françaises
+([Ornikar](https://www.ornikar.com/code/cours/route/autoroute/aires-service),
+[Vroomvroom](https://www.vroomvroom.fr/code/cours/route/autoroute/aire-repos),
+[En Voiture Simone](https://www.envoituresimone.com/code-de-la-route/cours/route/voies/regles-de-circulation-sur-autoroute/aire-de-repos)).
+
+**Ce que la page refuse de dire**, et qui y figure sous ce titre : elle ne
+nomme **aucune** aire équipée d'une salle de prière. Certaines grandes aires
+de service en ont peut-être une ; nous n'en avons vérifié aucune, donc nous
+n'en listons aucune. La page le dit au lecteur plutôt que de le taire.
+
+Elle ne tranche pas non plus la question religieuse (raccourcir, regrouper) :
+elle renvoie. L'article français, plus ancien que cette règle, le fait encore
+— c'est un candidat pour un jour d'approfondissement.
+
+**Vérifié servi**, build du 05/10:49, `BUILD_ID` contrôlé avant lecture :
+200, `lang="en"`, titre 51 c, description 152 c, 1 063 mots rendus, hreflang
+dans les deux sens, au sitemap anglais, et le slug anglais sur le domaine
+français répond `noindex, follow`.
+
+### ⚠️ Le point qui décide de tout
+
+**18 commits attendent dans la PR #124, dont cet article.** Tant qu'elle
+n'est pas fusionnée, rien de ce travail n'est en ligne — et le rythme d'un
+article tous les deux jours ne produira rien du tout. C'est la seule chose
+que je ne peux pas faire à sa place.

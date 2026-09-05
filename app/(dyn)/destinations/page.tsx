@@ -4,6 +4,9 @@ import path from 'path'
 import { getDomainSEO, FR_URL, EN_URL } from '@/lib/domain'
 import DestinationsClient, { type VilleCard } from '@/components/destination/DestinationsClient'
 import BoutonRetour from '@/components/layout/BoutonRetour'
+import IndexLiens from '@/components/maillage/IndexLiens'
+import { countries, continentLabel } from '@/lib/countriesData'
+import { cityEn, countryEn } from '@/lib/poiI18n'
 
 const FALLBACK_IMG = 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&q=80'
 
@@ -103,6 +106,7 @@ const CONTINENT_ORDER = ['Asie', 'Afrique', 'Europe', 'Amérique du Nord', 'Amé
 
 export default async function DestinationsPage() {
   const villes = getAllVilles()
+  const { isEN } = await getDomainSEO()
 
   // Filtres dérivés dynamiquement des continents réellement présents dans data/villes/
   const presents = new Set(villes.map((v) => v.continent).filter(Boolean) as string[])
@@ -122,6 +126,42 @@ export default async function DestinationsPage() {
       {/* Hero de recherche + étagères + grille : rendus par le client (refonte
           « étagères » façon Netflix — voir DestinationsClient) */}
       <DestinationsClient villes={villes} continents={continents} />
+
+      {/* 🕸 L'index SERVEUR de toutes les villes. Mesuré le 30 août : la grille
+          ci-dessus est rendue par le client et ne posait que 111 liens dans le
+          HTML servi — 248 fiches ville n'étaient donc reliées à l'accueil par
+          aucun chemin. Ce bloc ne change rien pour le visiteur qui fait défiler ;
+          il change tout pour le robot qui lit le HTML.
+          Les noms passent par cityEn / countryEn — le MÊME service que le reste
+          du site : un index en français sur le domaine anglais serait un index
+          anglais raté. */}
+      <div style={{ maxWidth: 900, margin: '0 auto', padding: '0 16px 60px', color: '#14210f' }}>
+        <IndexLiens
+          titre={isEN ? 'All destinations, city by city' : 'Toutes les destinations, ville par ville'}
+          intro={isEN
+            ? `${villes.length} cities with a halal guide: mosques, reported restaurants, prayer spots.`
+            : `${villes.length} villes avec un guide halal : mosquées, restaurants signalés, lieux de prière.`}
+          liens={villes.map((v) => ({
+            href: `/destinations/${v.slug}`,
+            nom: cityEn(v.nom, isEN),
+            groupe: countryEn(v.pays, isEN),
+          }))}
+        />
+
+        {/* 🕸 Les 19 pages pays formaient un ÎLOT : elles se lient entre elles
+            (bloc « aussi en Asie ») mais rien ne pointait dedans depuis le
+            reste du site — 14 d'entre elles n'avaient aucun chemin depuis
+            l'accueil, 3 aucun lien du tout. Elles s'ouvrent ici. */}
+        <IndexLiens
+          titre={isEN ? 'Halal travel country by country' : 'Le voyage halal pays par pays'}
+          intro={isEN
+            ? `${countries.length} countries with a halal travel guide.`
+            : `${countries.length} pays avec un guide du voyage halal.`}
+          liens={countries
+            .map((c) => ({ href: `/destinations/pays/${c.slug}`, nom: countryEn(c.name, isEN), groupe: continentLabel(c.continent, isEN) }))
+            .sort((a, b) => a.nom.localeCompare(b.nom, 'fr'))}
+        />
+      </div>
     </main>
   )
 }

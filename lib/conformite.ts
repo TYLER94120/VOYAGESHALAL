@@ -26,6 +26,27 @@ const MOTS_EXCLUS = [
   'brewpub', 'winery', 'cave a vin', 'aperitif', 'happy hour',
   // porc : jamais, quelle que soit l'etiquette halal
   'pork', 'porc', 'bacon', 'ham', 'jamon', 'charcuterie', 'schweine',
+  // 🔴 1er septembre — LES PLATS DE PORC QUI MANQUAIENT ICI.
+  // Le defaut trouve par Mohamed sur Tirana le 15 aout (« "Grill & Souvlaki
+  // Stop" est marque signale halal · OSM ; le souvlaki, dans les Balkans et
+  // en Grece, est traditionnellement du PORC ») avait recu son correctif
+  // dans lib/halalPrudent.mjs. Mesure du 1er septembre : ce fichier n'est
+  // importe par AUCUNE route — seulement par son propre test. La regle etait
+  // ecrite, testee, verte a chaque construction, et ne tournait nulle part.
+  // Rejoue dans le filtre REELLEMENT branche : « Grill & Souvlaki Stop »
+  // etait GARDE. Ces mots rejoignent donc la liste qui tourne.
+  //
+  // Ils sont ici et non dans MOTS_DOUTE parce que MOTS_DOUTE est annule par
+  // une etiquette halal affirmee — or c'est precisement cette etiquette
+  // OpenStreetMap qu'on ne croit pas sur ces plats-la. C'est deja la regle
+  // admise pour « porc » deux lignes plus haut.
+  //
+  // ⚠️ Volontairement ABSENTS : sausage, saucisse, hot dog, salami, chorizo,
+  // tapas. Des versions halal existent et se vendent sous ces noms — les
+  // exclure ecarterait de vraies adresses. Le doute joue dans les deux sens.
+  'souvlaki', 'gyros', 'prosciutto', 'pancetta', 'lardon', 'lardons',
+  'saucisson', 'bratwurst', 'schnitzel', 'taverna', 'jambon', 'speck',
+  'mortadelle', 'guanciale',
   // chicha / narguile
   'shisha', 'chicha', 'hookah', 'narguile', 'narghile', 'sheesha',
   // nuit / jeux

@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { compteurVille } from '@/lib/mosqueesOsm'
+import { aVille } from '@/lib/prepositionVille.mjs'
 import { conforme } from '@/lib/conformite'
 import { estLatinLisible } from '@/lib/latin.mjs'
 import { countryEn } from '@/lib/poiI18n'
@@ -67,11 +68,11 @@ export default function SocleVille({ ville, slug, en }: { ville: VilleData; slug
 
   // ── Le titre : le besoin, puis le chiffre qui prouve ──
   const h1 = nbMosquees > 0 && nbRestos > 0
-    ? t(`Où prier à ${nom} : ${nbMosquees} lieux de prière et ${nbRestos} adresses halal`,
+    ? t(`Où prier ${aVille(nom)} : ${nbMosquees} lieux de prière et ${nbRestos} adresses halal`,
         `Where to pray in ${nom}: ${nbMosquees} prayer places and ${nbRestos} halal addresses`)
     : nbMosquees > 0
-      ? t(`Où prier à ${nom} : ${nbMosquees} lieux de prière relevés`, `Where to pray in ${nom}: ${nbMosquees} prayer places listed`)
-      : t(`Voyager halal à ${nom}`, `Halal travel in ${nom}`)
+      ? t(`Où prier ${aVille(nom)} : ${nbMosquees} lieux de prière relevés`, `Where to pray in ${nom}: ${nbMosquees} prayer places listed`)
+      : t(`Voyager halal ${aVille(nom)}`, `Halal travel in ${nom}`)
 
   const ip = (en ? (ville.infos_pratiques_en as Record<string, string>) : (ville.infos_pratiques as Record<string, string>)) ?? {}
   const champ = (c: string) => (en ? anglaisPropre(ip[c]) : (typeof ip[c] === 'string' && ip[c].trim() ? ip[c].trim() : undefined))
@@ -103,7 +104,7 @@ export default function SocleVille({ ville, slug, en }: { ville: VilleData; slug
           )}
         </p>
 
-        <h2 className="sv-h2">{t(`Où prier à ${nom}`, `Where to pray in ${nom}`)}</h2>
+        <h2 className="sv-h2">{t(`Où prier ${aVille(nom)}`, `Where to pray in ${nom}`)}</h2>
         {ouPrier && <p className="sv-p">{ouPrier}</p>}
         <p className="sv-p">
           {t(
@@ -117,13 +118,13 @@ export default function SocleVille({ ville, slug, en }: { ville: VilleData; slug
           </ul>
         )}
 
-        <h2 className="sv-h2">{t(`Où manger halal à ${nom}`, `Where to eat halal in ${nom}`)}</h2>
+        <h2 className="sv-h2">{t(`Où manger halal ${aVille(nom)}`, `Where to eat halal in ${nom}`)}</h2>
         {ouManger && <p className="sv-p">{ouManger}</p>}
         {restos.length > 0 && (
           <>
             <p className="sv-p">
               {t(
-                `Voici des adresses relevées à ${nom}. Le statut halal est indiqué comme vérifié ou signalé selon la source — jamais annoncé comme certifié.`,
+                `Voici des adresses relevées ${aVille(nom)}. Le statut halal est indiqué comme vérifié ou signalé selon la source — jamais annoncé comme certifié.`,
                 `Here are addresses recorded in ${nom}. Halal status is shown as verified or reported depending on the source — never announced as certified.`,
               )}
             </p>
@@ -137,7 +138,7 @@ export default function SocleVille({ ville, slug, en }: { ville: VilleData; slug
 
         {activites.length > 0 && (
           <>
-            <h2 className="sv-h2">{t(`À faire à ${nom}`, `Things to do in ${nom}`)}</h2>
+            <h2 className="sv-h2">{t(`À faire ${aVille(nom)}`, `Things to do in ${nom}`)}</h2>
             <ul className="sv-liste">
               {activites.slice(0, 8).map((a, i) => <li key={i}>{a.nom}</li>)}
             </ul>
@@ -158,12 +159,12 @@ export default function SocleVille({ ville, slug, en }: { ville: VilleData; slug
 
         <h2 className="sv-h2">{t('Continuer', 'Keep going')}</h2>
         <ul className="sv-liens">
-          <li><Link href={`/priere/${slug}`}>{t(`Horaires de prière à ${nom}`, `Prayer times in ${nom}`)}</Link></li>
+          <li><Link href={`/priere/${slug}`}>{t(`Horaires de prière ${aVille(nom)}`, `Prayer times in ${nom}`)}</Link></li>
           <li><Link href="/qibla">{t('Trouver la Qibla', 'Find the Qibla')}</Link></li>
           <li><Link href="/autour-de-moi">{t('Lieux de prière et restaurants autour de moi', 'Prayer places and restaurants around me')}</Link></li>
           <li><Link href="/destinations">{t('Toutes les destinations', 'All destinations')}</Link></li>
           {proches.map((p) => (
-            <li key={p.slug}><Link href={`/destinations/${p.slug}`}>{t(`Voyager halal à ${p.nom}`, `Halal travel in ${p.nom}`)}</Link></li>
+            <li key={p.slug}><Link href={`/destinations/${p.slug}`}>{t(`Voyager halal ${aVille(p.nom ?? '')}`, `Halal travel in ${p.nom}`)}</Link></li>
           ))}
         </ul>
 

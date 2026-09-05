@@ -11,8 +11,8 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: isEN ? 'Community — share prayer spots & halal gems' : 'Communauté — partage coins prière & bonnes adresses halal',
     description: isEN
-      ? 'The network where Muslim travelers share real knowledge: prayer spots, halal restaurants, hidden gems. Every contribution helps travelers — a sadaqa jariya.'
-      : 'Le réseau où les voyageurs musulmans partagent le vrai savoir : coins prière, restos halal, pépites. Chaque contribution aide des voyageurs — une sadaqa jâriya.',
+      ? 'The network where Muslim travelers share knowledge: prayer spots, halal restaurants, hidden gems. Every contribution helps travelers — a sadaqa jariya.'
+      : 'Le réseau où les voyageurs musulmans partagent le savoir : coins prière, restos halal, pépites. Chaque contribution aide des voyageurs — une sadaqa jâriya.',
     alternates: alternatesFor('/communaute', isEN),
   }
 }

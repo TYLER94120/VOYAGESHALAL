@@ -32,6 +32,16 @@ import cityCoords from '@/lib/cityCoords.json'
 //   /en/hotels/marrakech   → anglais   (chemin INTERNE ; l'URL publique
 //                            reste gohalaltravel.com/hotels/marrakech)
 
+/** 📉 En dessous de ce nombre d'hôtels, la page se déclare `noindex`.
+ *
+ *  Exporté parce que le SITEMAP doit appliquer exactement la même règle :
+ *  mesuré le 30 août, trois pages (Berkane, Fezouane, Tafoughalt) étaient
+ *  envoyées à Google par le sitemap ET se déclaraient noindex. Le sitemap
+ *  dit « indexe-moi », la page dit « surtout pas » : Google le compte comme
+ *  une erreur, et chaque passage dessus est du budget de crawl dépensé pour
+ *  rien. Une seule constante, deux endroits qui la lisent. */
+export const HOTELS_MIN_INDEX = 3
+
 interface Props { ville: string; en: boolean }
 interface CityRef { slug: string; nom: string; pays?: string }
 const CITIES = cityCoords as CityRef[]
@@ -96,7 +106,9 @@ export async function metadataHotels({ ville: slug, en }: Props): Promise<Metada
       ])
   return {
     title: { absolute: title }, description,
-    ...(n < 3 ? { robots: { index: false, follow: true } } : {}),
+    // Sous ce seuil, la page n'a pas de quoi mériter l'index — et le
+    // sitemap ne doit alors PAS l'y envoyer (voir HOTELS_MIN_INDEX).
+    ...(n < HOTELS_MIN_INDEX ? { robots: { index: false, follow: true } } : {}),
     alternates: {
       canonical: `${siteUrl}/hotels/${slug}`,
       languages: { fr: `${FR_URL}/hotels/${slug}`, en: `${EN_URL}/hotels/${slug}`, 'x-default': `${EN_URL}/hotels/${slug}` },

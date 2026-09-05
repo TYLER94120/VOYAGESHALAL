@@ -25,7 +25,7 @@ export async function generateMetadata(): Promise<Metadata> {
     title: isEN ? 'Privacy policy' : 'Politique de confidentialité',
     description: isEN
       ? 'GoHalalTravel privacy policy: no personal data collected, location never stored, favorites and settings kept only on your device.'
-      : "Aucune donnée personnelle collectée, position jamais enregistrée : vos favoris et réglages restent sur votre appareil. La politique de confidentialité en clair.",
+      : "Aucune donnée personnelle collectée, position jamais enregistrée : vos favoris et réglages restent sur votre appareil. Notre politique, en clair.",
     alternates: {
       canonical: `${siteUrl}${isEN ? '/privacy' : '/confidentialite'}`,
       languages: {

@@ -2,6 +2,7 @@ import type { MetadataRoute } from 'next'
 import { readFileSync } from 'fs'
 import path from 'path'
 import { dateGitVille, CONTENT_REVISED_AT } from '@/lib/freshness'
+import { HOTELS_MIN_INDEX } from '@/components/hotels/HotelsRoute'
 import { estPubliable } from '@/app/(dyn)/prayer-room/[airport]/page'
 import { guides, blogPosts } from '@/lib/data'
 import { getDomainSEO, FR_URL, EN_URL } from '@/lib/domain'
@@ -39,6 +40,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticPages: MetadataRoute.Sitemap = [
     { url: SITE_URL, lastModified: now, changeFrequency: 'weekly', priority: 1 },
     { url: `${SITE_URL}/destinations`, lastModified: now, changeFrequency: 'weekly', priority: 0.9, alternates: { languages: { fr: `${FR_URL}/destinations`, en: `${EN_URL}/destinations` } } },
+    // 🕸 30 août : le hub /hotels était servi en 200, portait 333 pages villes
+    //    sous lui — et n'était annoncé nulle part. Il est la seule porte
+    //    d'entrée de cette famille : il doit être au sitemap.
+    { url: `${SITE_URL}/hotels`, lastModified: now, changeFrequency: 'weekly', priority: 0.9, alternates: { languages: { fr: `${FR_URL}/hotels`, en: `${EN_URL}/hotels` } } },
     { url: `${SITE_URL}/guides`, lastModified: now, changeFrequency: 'weekly', priority: 0.8 },
     { url: `${SITE_URL}/blog`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
     { url: L('/application'), lastModified: revision, changeFrequency: 'monthly', priority: 0.7, alternates: pageAlternates('/application') },
@@ -54,7 +59,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: L('/a-propos'), lastModified: revision, changeFrequency: 'monthly', priority: 0.6, alternates: pageAlternates('/a-propos') },
     { url: `${SITE_URL}/contact`, lastModified: revision, changeFrequency: 'yearly', priority: 0.4 },
     { url: L('/confidentialite'), lastModified: revision, changeFrequency: 'yearly', priority: 0.3, alternates: pageAlternates('/confidentialite') },
-    { url: L('/mentions-legales'), lastModified: revision, changeFrequency: 'yearly', priority: 0.3, alternates: pageAlternates('/mentions-legales') },
+    // ⚠️ /mentions-legales était ici ET se déclarait `noindex`. Le sitemap
+    //    disait « indexe-moi », la page « surtout pas ». Google compte ça
+    //    comme une erreur et dépense du budget de crawl pour rien. Une page
+    //    en noindex ne s'envoie pas au sitemap — elle reste accessible par
+    //    le pied de page, ce qui est son rôle.
   ]
 
   // 📅 LA VRAIE DATE, PAS CELLE DU JOUR (chantier SEO du 20 août).
@@ -83,7 +92,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }))
 
   // Pages « Hôtels halal à {ville} » — cible « hotel halal {ville} » (requêtes GSC)
-  const hotelPages: MetadataRoute.Sitemap = CITY_SLUGS.map((slug) => ({
+  // 30 août : Berkane, Fezouane et Tafoughalt étaient envoyées ici alors
+  // qu'elles se déclarent `noindex` (moins de HOTELS_MIN_INDEX hôtels). Le
+  // sitemap applique désormais la MÊME règle que la page — une constante,
+  // deux lecteurs, aucune contradiction possible.
+  const hotelPages: MetadataRoute.Sitemap = CITY_SLUGS.filter((slug) => {
+    try {
+      const v = JSON.parse(readFileSync(path.join(process.cwd(), 'data', 'villes', `${slug}.json`), 'utf-8'))
+      return (v.hotels?.length ?? 0) >= HOTELS_MIN_INDEX
+    } catch { return false }
+  }).map((slug) => ({
     url: `${SITE_URL}/hotels/${slug}`,
     lastModified: dateVille(slug),
     changeFrequency: 'weekly',
@@ -114,7 +132,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         url: `${SITE_URL}/guides/${g.slug}`,
         changeFrequency: 'monthly' as const,
         priority: 0.7,
-        lastModified: new Date(g.publishedAt),
+        lastModified: new Date(g.updatedAt ?? g.publishedAt),
       }))
 
   // Blog : chaque domaine ne liste que les articles rédigés dans sa langue
@@ -124,7 +142,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: `${SITE_URL}/blog/${p.slug}`,
       changeFrequency: 'monthly' as const,
       priority: 0.7,
-      lastModified: new Date(p.publishedAt),
+      // La date de MODIFICATION quand il y en a eu une, sinon celle de
+      // publication. Voir lib/types.ts : un titre réécrit ne donnait aucun
+      // signal de fraîcheur, et Google repassait des semaines plus tard.
+      lastModified: new Date(p.updatedAt ?? p.publishedAt),
     }))
 
   // Coins prière (spots seed) : page index par ville + page détail par spot.
