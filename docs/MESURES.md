@@ -2035,3 +2035,73 @@ français répond `noindex, follow`.
 n'est pas fusionnée, rien de ce travail n'est en ligne — et le rythme d'un
 article tous les deux jours ne produira rien du tout. C'est la seule chose
 que je ne peux pas faire à sa place.
+
+---
+
+## 6 septembre (jour pair) — approfondissement : la page France anglaise
+
+Mohamed la veille, capture de gohalaltravel : « Il n'y a plus d'impression
+sur gotravel. » **Faux, et je le lui ai dit** : 2 440 impressions sur
+28 jours, 83 le 31 août, et la chute au bord droit de la courbe est le
+retard de comptage habituel. Les impressions **montent** même (+38 % contre
+fin août).
+
+Le vrai chiffre est ailleurs : **10 clics pour 2 440 affichages, 0,4 %**,
+quand le site français fait 6,5 % en mobile. C'est pourquoi cette ronde
+d'approfondissement va au site anglais.
+
+### Le choix, par la mesure
+
+Je n'ai aucun relevé Search Console par page pour le domaine anglais — je
+l'ai redemandé. J'ai donc choisi sur ce que je peux compter dans le dépôt :
+
+**11 des 34 articles anglais font moins de 400 mots.** Le plus mince,
+`halal-travel-france-2026`, faisait **139 mots pour 3 sections** — un
+brouillon, pas un article.
+
+Et le constat qui décide :
+
+> **Douze pages anglaises expliquent où prier en France. La seule page
+> anglaise *sur* le voyage halal en France n'en liait aucune.**
+
+C'est la page d'entrée naturelle du visiteur anglophone, et elle ne menait
+nulle part. Approfondir ne voulait donc pas dire rallonger : il fallait la
+transformer en aiguillage.
+
+### Ce que la page apprend maintenant, et que rien d'autre ne dit
+
+Le fait différenciant, tiré de nos propres articles vérifiés — pas d'une
+supposition :
+
+| ont une salle de prière | n'en a pas |
+|---|---|
+| CDG, Orly, Lyon, Nice, Toulouse *(3e étage, hall C)* | **Marseille-Provence** |
+
+Un voyageur qui transite par Marseille doit le savoir avant de partir.
+Aucune autre page, chez nous ou ailleurs, ne met les six côte à côte.
+
+S'y ajoutent les gares parisiennes, les aires d'autoroute (l'article
+d'hier), et les trois parcs où la réponse est honnêtement « non ».
+
+**Sur le halal en France, la page dit ce qu'il faut dire :** le mot
+« Halal » sur une devanture est *une affirmation du commerçant, pas une
+certification*, et il n'existe aucun label national unique. C'est la règle
+de la maison — jamais « certifié » — appliquée à un pays entier.
+
+### Ce que j'ai refusé d'écrire
+
+**Aucun chiffre de lieux de prière dans le texte.** La base OSM en compte
+1 092 en France, mais un nombre figé dans un corps d'article pourrit à la
+première mise à jour de la routine — et on l'a déjà payé le 27 août avec
+347 chiffres démentis par leur propre fiche. La page renvoie donc vers les
+outils qui portent le compte **vivant**, elle ne le recopie pas.
+
+### Vérifié servi
+
+Build du 06/00:11, `BUILD_ID` contrôlé avant lecture. Titre 51 c,
+description 136 c, **139 → 1 051 mots**, une FAQ là où il n'y en avait
+aucune, et **27 liens internes, tous testés un par un : 200**.
+
+⚠️ Le test de la maison m'a arrêté au passage : ma description faisait
+**156 caractères, une de trop**. Corrigée à 136. C'est exactement le rôle
+de ces tests maintenant que personne ne relit derrière moi.
