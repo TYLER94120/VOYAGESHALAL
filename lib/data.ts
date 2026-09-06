@@ -4447,21 +4447,51 @@ If an adjustment is required, it is almost always possible to do it yourself rat
   },
   {
     slug: 'halal-travel-france-2026',
-    title: 'Halal Travel in France 2026: Cities, Food and Practical Tips',
-    description: 'Halal travel in France: where to find halal restaurants, mosques and prayer spaces in Paris, Lyon, Marseille and beyond.',
+    title: 'Halal travel in France: where to pray, city by city',
+    description: 'Which French airports have a prayer room and which do not, plus where to pray at Paris stations, on the motorway and at the theme parks.',
     coverImage: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&q=80',
     category: 'Destinations',
-    readTime: '7 min',
+    // Recalculé sur le texte réel par avecTempsReel — la valeur écrite ici
+    // n'est qu'un repli exigé par le type.
+    readTime: '6 min',
     publishedAt: '2026-03-11',
+    updatedAt: '2026-09-06',
     lang: 'en',
-    tags: ['France', 'Paris', 'Halal food', 'Muslim-friendly'],
-    content: `<p>France has one of the largest Muslim communities in Europe, which means halal food, mosques and prayer spaces are widely available — especially in the big cities.</p>
-<h2>Paris and the big cities</h2>
-<p>Paris offers an exceptional range of halal restaurants across nearly every neighborhood, from artisan kebabs to fine dining. Lyon, Marseille, Lille and Strasbourg all have vibrant halal food scenes and central mosques.</p>
-<h2>Finding halal and prayer</h2>
-<p>Look for the "Halal" sign, or restaurants run by Muslim families. Prayer spaces exist in and around mosques and some transport hubs — find the closest with our <a href="/mosquee-proche">nearest mosque</a> tool and check <a href="/horaires-priere">prayer times</a>.</p>
-<h2>Where to stay and explore</h2>
-<p>Choose accommodation near neighborhoods with strong halal options. Explore city guides such as <a href="/destinations/paris">Paris</a>, and browse all our <a href="/destinations">destinations</a>. We inform on halal availability — always confirm locally.</p>`,
+    tags: ['France', 'Paris', 'prayer', 'halal food', 'muslim travel'],
+    content: `<p>France has one of the largest Muslim communities in Europe, so halal food and mosques are easy to find in the cities. What is harder to find is the practical answer to the question you actually have on the day: <strong>where do I pray, right here, right now?</strong></p>
+<p>We have written that answer for twelve places in France, one at a time. This page puts them in the order you meet them on a trip.</p>
+
+<h2>Arriving: the airports are not equal</h2>
+<p>This is the thing worth knowing before you book. <strong>Five French airports we have covered have a prayer space. One does not.</strong></p>
+<p><strong>Yes:</strong> <a href="/blog/where-to-pray-cdg-airport">Paris-Charles de Gaulle</a> · <a href="/blog/where-to-pray-orly-airport">Paris-Orly</a> · <a href="/blog/where-to-pray-lyon-airport">Lyon-Saint-Exupéry</a> · <a href="/blog/where-to-pray-nice-airport">Nice-Côte d'Azur</a> · <a href="/blog/where-to-pray-toulouse-airport">Toulouse</a>, where it is on the 3rd floor of Hall C.<br/>
+<strong>No:</strong> <a href="/blog/where-to-pray-marseille-airport">Marseille-Provence</a> — there is no prayer space and no multi-faith room. If you fly through Marseille, pray before you get to the airport.</p>
+<p>Each guide says where the room is and whether it sits before or after security — which matters more than anything else, because a room on the wrong side of the checkpoint is a room you cannot reach. If you are connecting through Paris, the <a href="/blog/where-to-pray-paris-airports">CDG and Orly overview</a> compares both.</p>
+
+<h2>Moving around: trains and the motorway</h2>
+<p><a href="/blog/where-to-pray-paris-stations">Paris main-line stations</a> — Nord, Est, Lyon, Montparnasse, Saint-Lazare, Austerlitz — have no prayer rooms of their own, but each sits in a neighbourhood that does. The guide explains what to do with a connection of twenty minutes and what to do with two hours.</p>
+<p>Driving is the case most visitors get wrong. French motorways have <strong>two kinds of stop</strong>, and only one is quiet: the <em>aires de repos</em> come every 10-20 km and almost nobody uses them, while the <em>aires de service</em> everyone pulls into come every 50-60 km. <a href="/blog/where-to-pray-french-motorway">How to read the signs and pick the right one</a>.</p>
+
+<h2>Days out with children</h2>
+<p>The big French attractions are honest cases where the answer is often no, and knowing that in advance saves the afternoon.</p>
+<p><a href="/blog/where-to-pray-disneyland-paris">Disneyland Paris</a> — no signposted room, but travellers are directed to a quiet space when they ask at City Hall.<br/>
+<a href="/blog/where-to-pray-parc-asterix">Parc Astérix</a> and <a href="/blog/where-to-pray-puy-du-fou">Puy du Fou</a> — no official prayer room to our knowledge. Both guides give what families actually do instead.</p>
+
+<h2>Eating</h2>
+<p>In the cities you will see "Halal" on shopfronts constantly, and the range is wide — from kebab counters to full restaurants. <strong>The word on the window is a claim by the owner, not a certification</strong>, and there is no single national label to look for. Ask, and decide for yourself: that is how residents do it too.</p>
+<p>Our city guides list the addresses we hold with the source shown on each one — start with <a href="/destinations/paris">Paris</a>, or browse <a href="/destinations">all destinations</a>. And <a href="/autour-de-moi">Around me</a> finds what is near you wherever you are standing.</p>
+
+<h2>Prayer times and direction</h2>
+<p>France runs from Lille to Nice, so the times shift noticeably from north to south, and a lot across the year. Our <a href="/prayer-times">prayer times</a> use your position rather than a fixed city, and the page keeps working without a signal once it is open — which is the case that matters on a motorway or in an underground station. The <a href="/qibla">qibla tool</a> works the same way.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Which French airports have a prayer room?</strong> Of those we have checked: CDG, Orly, Lyon, Nice and Toulouse. Marseille-Provence does not.<br/>
+<strong>Are there prayer rooms in Paris train stations?</strong> Not inside the stations. The surrounding neighbourhoods have prayer spaces — see the stations guide.<br/>
+<strong>Where do I pray on a French motorway?</strong> At an <em>aire de repos</em>, the quiet stop without a fuel pump on the sign.<br/>
+<strong>Is "Halal" on a French shopfront reliable?</strong> It is the owner's claim, not a certification. There is no single national label. Ask on site.<br/>
+<strong>Is there a prayer room at Disneyland Paris?</strong> No signposted room; ask at City Hall, where travellers report being given a quiet space.</p>
+
+<h2>Help the community</h2>
+<p>Prayed somewhere in France we have not covered — an airport, a station, a service area, a park? Tell us where and what you found. That is exactly what this page cannot invent. <a href="/communaute/ajouter">→ Add the place</a> · <a href="/communaute">→ Join the community</a></p>`,
   },
   {
     slug: 'malaisie-voyage-musulman-guide',
