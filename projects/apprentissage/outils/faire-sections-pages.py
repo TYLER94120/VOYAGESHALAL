@@ -357,9 +357,23 @@ def poser_les_routes(slugs):
     autres = [r for r in gardees if not r.get('source', '').endswith('/qcm')]
 
     # `/section/<slug>/qcm` d'abord : la plus specifique passe en premier.
+    #
+    # ET UN FILET EN DERNIER. Les douze regles nommees ne sont pas verifiables
+    # d'ici — islampasapas.fr n'est pas joignable depuis cet environnement, et
+    # le serveur local est ma propre implementation, pas Vercel. Si elles ne
+    # prenaient pas, les douze adresses rendraient 404 alors qu'elles sont
+    # dans le sitemap. Vercel retient la PREMIERE regle qui correspond : cette
+    # derniere ne sert donc que si aucune des douze n'a repondu, et elle rend
+    # alors l'ancienne application, qui affiche encore la section correctement
+    # une fois le JavaScript execute. Le pire cas redevient l'etat d'avant-hier
+    # au lieu d'une page introuvable.
+    #
+    # `section.html` porte noindex : ce filet ne peut pas ramener le doublon
+    # qu'on vient de supprimer.
     conf['rewrites'] = routes + [
         {'source': '/section/%s' % s, 'destination': '/section-%s.html' % s}
-        for s in slugs] + autres
+        for s in slugs] + autres + [
+        {'source': '/section/:slug', 'destination': '/section.html'}]
 
     conf_f.write_text(json.dumps(conf, ensure_ascii=False, indent=2) + '\n',
                       encoding='utf-8')

@@ -47,23 +47,50 @@
 
     <div class="pile-9">
       <h1 class="t-page">Les 12 sections</h1>
-      <p class="c-meta" id="total">Chargement…</p>
+      <!-- TOTAL:DEBUT --><p class="c-meta" id="total">2 701 questions, dans 11 sections sur 12</p><!-- TOTAL:FIN -->
     </div>
 
     <!-- Mes erreurs a revoir. Le script la retire s'il n'y a rien a revoir :
          proposer de reviser zero erreur n'a aucun sens. -->
     <div id="zone-erreurs"></div>
 
-    <div class="tuiles" id="tuiles"></div>
+    <!-- LES DOUZE TUILES SONT ECRITES ICI, PAS SEULEMENT PAR LE SCRIPT.
+         `sections.js` remplace ce bloc au chargement par la version
+         interactive — rosace, barre de maitrise, erreurs a revoir. Mais cette
+         page etait, dans le HTML servi, une grille VIDE sous un « Chargement… » :
+         269 caracteres de texte, zero lien vers une section. C'est pourtant
+         la page qui doit mener aux douze, et elle est dans le sitemap.
+         Le contenu entre les deux marques est pose par `garnir-sections.py`,
+         qui compte les questions dans les banques. Ne rien ecrire a la main
+         entre elles : la prochaine execution l'effacerait. -->
+    <!-- TUILES:DEBUT -->
+    <div class="tuiles" id="tuiles">
+      <a class="tuile" href="section/sens-des-sourates"><span class="nom">Le sens des sourates</span><span class="nb">611 questions</span></a>
+      <a class="tuile" href="section/lire-l-arabe"><span class="nom">Lire l'arabe</span><span class="nb">136 questions</span></a>
+      <a class="tuile" href="section/piliers-de-la-foi"><span class="nom">Les piliers de la foi</span><span class="nb">89 questions</span></a>
+      <a class="tuile" href="section/la-priere"><span class="nom">La prière</span><span class="nb">125 questions</span></a>
+      <a class="tuile" href="section/histoire-des-prophetes"><span class="nom">Histoire des prophètes</span><span class="nb">163 questions</span></a>
+      <div class="tuile" data-vide="oui"><span class="nom">La vie du Prophète</span><span class="nb">bientôt</span></div>
+      <a class="tuile" href="section/le-comportement"><span class="nom">Le comportement</span><span class="nb">11 questions</span></a>
+      <a class="tuile" href="section/jeune-et-ramadan"><span class="nom">Le jeûne et le Ramadan</span><span class="nb">8 questions</span></a>
+      <a class="tuile" href="section/zakat-et-aumone"><span class="nom">La zakât et l'aumône</span><span class="nb">116 questions</span></a>
+      <a class="tuile" href="section/le-pelerinage"><span class="nom">Le pèlerinage</span><span class="nb">7 questions</span></a>
+      <a class="tuile" href="section/vocabulaire-arabe"><span class="nom">Vocabulaire arabe</span><span class="nb">1 259 questions</span></a>
+      <a class="tuile" href="section/les-invocations"><span class="nom">Les invocations</span><span class="nb">176 questions</span></a>
+    </div>
+    <!-- TUILES:FIN -->
 
     <!-- LES LECONS DE SOURATE, la porte d'entree des pages qui se lisent.
-         Sans ce lien, les vingt lecons et l'index des 114 seraient des pages
-         que rien du site n'annonce : Google les connait par leurs anciennes
-         adresses, mais un visiteur, lui, ne pourrait jamais y arriver. -->
+         Sans ce lien, les lecons et l'index des 114 seraient des pages que
+         rien du site n'annonce : Google les connait par leurs anciennes
+         adresses, mais un visiteur, lui, ne pourrait jamais y arriver.
+         Le compte de la ligne est pose par `garnir-sections.py`, qui lit les
+         fichiers presents — il disait « vingt » alors qu'il y en avait
+         vingt-trois. -->
     <a class="ligne" href="sourates.html" style="margin-top:2px">
       <span class="rond"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 5.5h16M4 12h16M4 18.5h16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
       <span class="milieu"><span class="nom">Les 114 sourates</span>
-        <span class="quoi">Vingt d'entre elles, expliquées verset par verset.</span></span>
+        <!-- LECONS:DEBUT --><span class="quoi">Vingt-trois d'entre elles, expliquées verset par verset.</span><!-- LECONS:FIN --></span>
       <span class="pc" aria-hidden="true">&rarr;</span>
     </a>
 

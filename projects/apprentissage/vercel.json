@@ -56,6 +56,10 @@
     {
       "source": "/section/les-invocations",
       "destination": "/section-les-invocations.html"
+    },
+    {
+      "source": "/section/:slug",
+      "destination": "/section.html"
     }
   ],
   "redirects": [
