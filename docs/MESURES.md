@@ -2105,3 +2105,67 @@ aucune, et **27 liens internes, tous testés un par un : 200**.
 ⚠️ Le test de la maison m'a arrêté au passage : ma description faisait
 **156 caractères, une de trop**. Corrigée à 136. C'est exactement le rôle
 de ces tests maintenant que personne ne relit derrière moi.
+
+---
+
+## 7 septembre (jour impair) — création : le Stade de France, et ce que notre base dit vraiment
+
+Le cycle fonctionne : **PR #125 fusionnée automatiquement** dans la nuit,
+après le vert des 46 tests. Personne n'a eu à cliquer.
+
+### Le choix
+
+Le hub France anglais écrit hier lie Disneyland, Parc Astérix et le Puy du
+Fou — mais **pas le Stade de France**, parce que la page anglaise n'existait
+pas. Créer ce jumeau bouche le trou du hub, et la demande anglophone est
+réelle : rugby, football, concerts internationaux.
+
+### 🔴 Ce que la mesure a trouvé, et qui contredit l'article français
+
+Le français dit :
+
+> « Saint-Denis — quartier de la basilique et du marché — **compte plusieurs
+> salles de prière accessibles** : l'outil mosquée la plus proche te guide
+> depuis le RER. »
+
+J'ai mesuré la distance sur **notre propre base** (`data/osm/mosquees/fr.json`,
+1 092 lieux, relevé du 3 septembre) depuis les coordonnées du stade :
+
+| rayon | lieux de prière |
+|---|---|
+| 1 000 m | **0** |
+| 1 500 m | **0** |
+| 2 000 m | **0** |
+| 3 000 m | 7 |
+
+Le plus proche est la **Grande Mosquée de Villeneuve-la-Garenne, à 2,1 km** —
+25 à 30 minutes de marche aller, un soir de match, avant les files et les
+contrôles.
+
+La phrase française n'était pas fausse : il y a bien des salles de prière à
+Saint-Denis. Mais **sans la distance, elle envoie le lecteur dans un plan qui
+ne tient pas**. C'est exactement le genre de vérité incomplète qui coûte une
+prière à quelqu'un.
+
+**Les deux articles sont corrigés** : l'anglais le dit dès le chapeau, le
+français porte maintenant le relevé et un `updatedAt` au 7 septembre.
+
+### La règle sur les chiffres, appliquée autrement qu'hier
+
+Hier j'ai refusé d'écrire un compte dans un corps d'article parce qu'il
+pourrit. Ici je l'écris — et la différence tient en deux points :
+
+· le fait est **structurel** (il n'y a rien autour du stade), pas conjoncturel :
+  une mosquée qui ouvrirait à 500 m ne rendrait pas la page fausse, elle la
+  rendrait périmée dans le bon sens ;
+· il est **daté et crédité** : « relevé du 3 septembre 2026 », distances à vol
+  d'oiseau, « notre relevé n'est pas exhaustif », © les contributeurs
+  OpenStreetMap.
+
+Un chiffre qui porte sa date et ses limites n'est pas un chiffre inventé.
+
+### Vérifié servi
+
+Build du 07/00:12, `BUILD_ID` contrôlé. Titre 54 c, description 147 c,
+1 068 mots, crédit ODbL présent, hreflang dans les deux sens, au sitemap
+anglais, et le hub France le lie désormais.

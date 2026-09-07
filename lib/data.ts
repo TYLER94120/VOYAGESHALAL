@@ -2704,6 +2704,51 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <p>Have you prayed at Disneyland recently? Tell us <strong>what City Hall said and where they sent you</strong>. That is exactly the information this page is missing, and it will serve dozens of families. <a href="/communaute/ajouter">→ Add the place</a> · <a href="/communaute">→ Join the community</a></p>`,
   },
   {
+    slug: "where-to-pray-stade-de-france",
+    title: "Stade de France: no prayer room, where to pray instead",
+    description: "No permanent prayer room, and our OpenStreetMap data lists nothing within 2 km of the turnstiles. Why that changes the plan for an evening fixture.",
+    coverImage: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&q=80",
+    category: 'Practical',
+    readTime: "4 min",
+    publishedAt: '2026-09-07',
+    lang: 'en',
+    tags: ['prayer', 'stade de france', 'paris', 'football', 'rugby', 'muslim travel'],
+    content: `<p>A ticket for the Stade de France, gates at 7pm, and Maghrib landing somewhere in the middle of it. Here is the plan — and one fact that decides the whole thing.</p>
+
+<h2>The short version</h2>
+<p>There is <strong>no permanent prayer room</strong> at the Stade de France. Temporary spaces have existed for particular events; do not count on one. And the part most guides leave out: <strong>there is nothing within walking distance of the turnstiles either.</strong></p>
+
+<h2>The fact that changes the plan</h2>
+<p>We hold a listing of prayer places in France built from OpenStreetMap. Measured against the stadium's own coordinates, in our snapshot of 3 September 2026:</p>
+<p><strong>Nothing at all within 2 km.</strong> The nearest listed place is the Grande Mosquée de Villeneuve-la-Garenne, about 2.1 km away, and there are seven within 3 km — all of them on the far side of a walk of 25 to 30 minutes, each way, in the middle of a match-day crowd.</p>
+<p>That is why the usual advice — "find a mosque nearby" — does not work here. Saint-Denis genuinely has prayer spaces, but not next to the ground. Between arriving, queueing and security, a round trip on foot is not something you fit into the hour before kick-off.</p>
+<p><em>Prayer place data © OpenStreetMap contributors. Distances are straight-line from the stadium; walking takes longer. Our listing is not exhaustive — a place we do not hold may well exist.</em></p>
+
+<h2>So: pray before you travel</h2>
+<p>This is the whole trick, and it is not a compromise — it is simply the right order. Pray where you are staying, before you get on the RER. Once you are on the concourse you are committed.</p>
+<p>Check the day's times in the morning with our <a href="/prayer-times">prayer times</a>, then read them against the kick-off and, for an evening fixture, the likely finish. That is a two-minute job that saves the evening.</p>
+
+<h2>If the window falls during the event</h2>
+<p>Inside the ground, the upper concourses and the areas around the kiosks empty out once play is under way — the opposite of half-time, when everything fills. Early in the second half is the calm moment. A pocket mat and the direction from our <a href="/qibla">qibla tool</a> are enough; nobody pays attention.</p>
+<p>On what is permitted while travelling — shortening, combining, making up — <strong>we do not rule</strong>: that is a religious question, and it is not ours to answer. It is worth settling before you go, because it decides whether you need one stop or two.</p>
+
+<h2>Wudu</h2>
+<p>The stadium toilets, or before you leave. The same habits that work at an airport work here: a small squeezable bottle filled at the basin, and a microfibre towel in your bag rather than in the car. The full method: <a href="/blog/wudu-on-a-plane-or-train">making wudu while travelling</a>.</p>
+
+<h2>Getting there and away</h2>
+<p>The stadium sits in Saint-Denis, north of Paris, on the RER B and RER D. If you are coming from a Paris hotel, the useful thing to know is that praying at the hotel costs you nothing in time, while praying near the stadium costs you an hour you do not have. Our <a href="/destinations/paris">Paris guide</a> covers the neighbourhoods, and <a href="/autour-de-moi">Around me</a> finds what is near you wherever you are standing.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Is there a prayer room at the Stade de France?</strong> No permanent one. Temporary spaces have existed for some events — do not plan around one.<br/>
+<strong>Is there a mosque near the stadium?</strong> Not within walking distance. Our listing shows nothing inside 2 km; the nearest is about 2.1 km away.<br/>
+<strong>What is the simplest plan?</strong> Pray before you get on the RER.<br/>
+<strong>Where can I make wudu?</strong> The stadium toilets, or before you leave.<br/>
+<strong>When is it quietest inside?</strong> Early in the second half. Half-time is the worst moment.</p>
+
+<h2>Help the community</h2>
+<p>Have you prayed at the Stade de France, or do you know a spot in Saint-Denis that works on a match day? Tell us. Our listing is not exhaustive, and this is exactly what it cannot invent. <a href="/communaute/ajouter">→ Add the place</a> · <a href="/communaute">→ Join the community</a></p>`,
+  },
+  {
     slug: "where-to-pray-french-motorway",
     title: "Where to pray on a French motorway: the quiet stops",
     description: "French motorways have two kinds of stop, and only one is quiet. Aires de repos come every 10-20 km; the busy service areas every 50-60. How to use that.",
@@ -3223,9 +3268,11 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Pratique',
     readTime: "3 min",
     publishedAt: '2026-08-06',
+    updatedAt: '2026-09-07',
     content: `<p>Billet pour le Stade de France, portes qui ouvrent à 19h, maghreb à 21h30 en plein show ? Voici le plan qui évite le casse-tête.</p>
 <h2>L'essentiel en 30 secondes</h2><p>Pas de salle de prière permanente au Stade de France (des espaces éphémères ont pu exister lors de certains événements — ne compte pas dessus). La stratégie gagnante tient en un mot : ANTICIPER. Prier avant d'entrer, regrouper les prières, et connaître le coin Saint-Denis.</p>
-<h2>1. Avant d'entrer : le meilleur moment</h2><p>Les files d'attente et contrôles engloutissent une heure facile. Prie AVANT de rejoindre la file : le parvis et les abords offrent des recoins calmes, et Saint-Denis — quartier de la basilique et du marché — compte plusieurs salles de prière accessibles : <a href="/mosquee-proche">l'outil mosquée la plus proche</a> te guide depuis le RER.</p>
+<h2>1. Avant d'entrer : le meilleur moment</h2><p>Les files d'attente et contrôles engloutissent une heure facile. Prie AVANT de rejoindre la file : le parvis et les abords offrent des recoins calmes.</p>
+<p><strong>Ne compte pas marcher jusqu'à une mosquée.</strong> Mesuré sur notre relevé OpenStreetMap du 3 septembre 2026 : <strong>aucun lieu de prière à moins de 2 km du stade</strong>. Le plus proche, la Grande Mosquée de Villeneuve-la-Garenne, est à environ 2,1 km — sept sont à moins de 3 km, tous à 25-30 minutes de marche aller, un soir de match. Saint-Denis a bien des salles de prière, mais pas à côté de l'enceinte. <a href="/mosquee-proche">L'outil mosquée la plus proche</a> te donne les distances réelles depuis là où tu es. <em>Données des lieux de prière © les contributeurs OpenStreetMap ; distances à vol d'oiseau, notre relevé n'est pas exhaustif.</em></p>
 <h2>2. Le regroupement, ton meilleur allié</h2><p>Événement le soir = maghrib+isha regroupées, soit avant l'entrée, soit au retour. Consulte <a href="/horaires-priere">les horaires du jour</a> et cale ton plan : c'est exactement le type de situation pour lequel cette facilité existe.</p>
 <h2>3. Sur place, si nécessaire</h2><p>Dans l'enceinte, les coursives hautes et les abords des buvettes en dehors des pics offrent des recoins possibles — discrétion, tapis de poche et <a href="/qibla">outil qibla</a>. À la mi-temps, c'est la cohue : préfère le début de seconde période.</p>
 <h2>Questions fréquentes</h2><p><strong>Salle de prière au Stade de France ?</strong> Pas de salle permanente.<br/><strong>Le plus simple ?</strong> Prier avant d'entrer (ou regrouper après).<br/><strong>Ablutions ?</strong> Sanitaires du stade ou avant de venir — nécessaire de poche conseillé.</p>
@@ -4475,6 +4522,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <p>The big French attractions are honest cases where the answer is often no, and knowing that in advance saves the afternoon.</p>
 <p><a href="/blog/where-to-pray-disneyland-paris">Disneyland Paris</a> — no signposted room, but travellers are directed to a quiet space when they ask at City Hall.<br/>
 <a href="/blog/where-to-pray-parc-asterix">Parc Astérix</a> and <a href="/blog/where-to-pray-puy-du-fou">Puy du Fou</a> — no official prayer room to our knowledge. Both guides give what families actually do instead.</p>
+<p>Same for a match or a concert at the <a href="/blog/where-to-pray-stade-de-france">Stade de France</a> — no permanent room, and nothing within 2 km of the turnstiles, which is why the plan there starts before you get on the train.</p>
 
 <h2>Eating</h2>
 <p>In the cities you will see "Halal" on shopfronts constantly, and the range is wide — from kebab counters to full restaurants. <strong>The word on the window is a claim by the owner, not a certification</strong>, and there is no single national label to look for. Ask, and decide for yourself: that is how residents do it too.</p>
