@@ -86,6 +86,11 @@ export const BLOG_FR_TO_EN: Record<string, string> = {
   // (10-20 km contre 50-60 km). Aucune aire nommée : nous n'en avons vérifié
   // aucune, et la page le dit.
   'ou-prier-aire-autoroute': '/blog/where-to-pray-french-motorway',
+  // 7 septembre. Le jumeau anglais dit une chose que le francais ne dit pas :
+  // mesure sur notre base OSM, il n'y a AUCUN lieu de priere a moins de 2 km
+  // du stade — le plus proche est a 2,1 km. « Trouve une mosquee a cote » ne
+  // marche donc pas ici, et ca change tout le plan de la soiree.
+  'ou-prier-stade-de-france': '/blog/where-to-pray-stade-de-france',
   'ou-prier-aeroport-marseille': '/blog/where-to-pray-marseille-airport',
   'ou-prier-aeroport-toulouse': '/blog/where-to-pray-toulouse-airport',
   'ou-prier-aeroport-cdg': '/blog/where-to-pray-cdg-airport',
