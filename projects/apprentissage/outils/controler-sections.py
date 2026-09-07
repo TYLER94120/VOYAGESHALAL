@@ -172,55 +172,60 @@ def main():
             fautes.append('sitemap.xml annonce le fichier %s ; il doit '
                           'annoncer l\'adresse /section/<slug>' % f.name)
 
-    # LA PAGE QUI MENE AUX DOUZE DOIT Y MENER SANS JAVASCRIPT.
+    # LES PAGES QUI MENENT AUX DOUZE DOIVENT Y MENER SANS JAVASCRIPT.
     #
-    # `sections.html` est dans le sitemap en priorite 0,9 et n'avait, dans le
-    # HTML servi, aucun lien vers une section : la grille etait un div vide
-    # rempli au chargement, et le seul texte descriptif de la page etait
-    # « Chargement… ». Le robot atteignait les couvertures par les lecons de
-    # sourate, jamais par la page faite pour ca.
-    code, t = prendre('%s/sections.html' % BASE)
-    if code != 200:
-        fautes.append('sections.html : le serveur repond %s' % code)
-    else:
+    # `sections.html` (priorite 0,9 dans le sitemap) et `index.html` (la page
+    # la mieux placee du site) n'avaient, dans le HTML servi, aucun lien vers
+    # une section : la grille et le chemin sont des div vides remplis au
+    # chargement. Le robot atteignait les couvertures par les lecons de
+    # sourate, jamais par les deux pages faites pour ca.
+    lecons = len(list(RACINE.glob('lecon-sourate-*.html')))
+    mots = {20: 'Vingt', 21: 'Vingt et une', 22: 'Vingt-deux',
+            23: 'Vingt-trois', 24: 'Vingt-quatre', 25: 'Vingt-cinq'}
+    attendu_l = mots.get(lecons, str(lecons))
+
+    for page in ('index.html', 'sections.html'):
+        code, t = prendre('%s/%s' % (BASE, page))
+        if code != 200:
+            fautes.append('%s : le serveur repond %s' % (page, code))
+            continue
         corps = t[t.find('<body>'):]
         vises = set(re.findall(r'href="section/([^"]+)"', corps))
         for sec in secs:
             f = RACINE / 'data' / 'questions' / ('%s.json' % sec['slug'])
             plein = bool(f.is_file() and json.loads(f.read_text(encoding='utf-8')))
             if plein and sec['slug'] not in vises:
-                fautes.append('sections.html : aucun lien vers /section/%s dans '
-                              'le HTML servi' % sec['slug'])
+                fautes.append('%s : aucun lien vers /section/%s dans le HTML '
+                              'servi' % (page, sec['slug']))
             if not plein and sec['slug'] in vises:
-                fautes.append('sections.html : lien vers /section/%s, qui n\'a '
-                              'aucune question' % sec['slug'])
+                fautes.append('%s : lien vers /section/%s, qui n\'a aucune '
+                              'question' % (page, sec['slug']))
 
-        # Les nombres annonces sur cette page se recomptent aussi. Elle a
-        # annonce « Vingt d'entre elles » pendant que vingt-trois lecons
-        # existaient — la meme faute que sourates.html le 2 septembre.
-        lecons = len(list(RACINE.glob('lecon-sourate-*.html')))
+        # Le nombre de lecons annonce se recompte sur les deux pages. Elles
+        # ont annonce « Vingt d\'entre elles » pendant que vingt-trois lecons
+        # existaient — la meme faute que sourates.html le 2 septembre, dans
+        # deux fichiers de plus.
         m = re.search(r'LECONS:DEBUT -->(.*?)<!--', corps, re.S)
-        mots = {20: 'Vingt', 21: 'Vingt et une', 22: 'Vingt-deux',
-                23: 'Vingt-trois', 24: 'Vingt-quatre', 25: 'Vingt-cinq'}
-        attendu_l = mots.get(lecons, str(lecons))
         if not m:
-            fautes.append('sections.html : la marque LECONS a disparu')
+            fautes.append('%s : la marque LECONS a disparu' % page)
         elif attendu_l not in m.group(1):
-            fautes.append('sections.html : la ligne des sourates annonce « %s », '
-                          'il y a %d lecons sur le disque'
-                          % (sans_balises(m.group(1))[:40], lecons))
+            fautes.append('%s : la ligne des sourates annonce « %s », il y a '
+                          '%d lecons sur le disque'
+                          % (page, sans_balises(m.group(1))[:40], lecons))
 
-        total = 0
-        for sec in secs:
-            f = RACINE / 'data' / 'questions' / ('%s.json' % sec['slug'])
-            total += len(json.loads(f.read_text(encoding='utf-8'))) if f.is_file() else 0
-        attendu_t = re.sub(r'\B(?=(\d{3})+(?!\d))', ' ', str(total))
-        d = re.search(r'id="total">(.*?)</p>', corps, re.S)
-        if not d:
-            fautes.append('sections.html : le total a disparu')
-        elif attendu_t not in d.group(1).replace(' ', ' '):
-            fautes.append('sections.html : total annonce « %s », %s questions '
-                          'comptees' % (sans_balises(d.group(1)), attendu_t))
+    # Le total de questions n'est annonce que sur la grille.
+    total = 0
+    for sec in secs:
+        f = RACINE / 'data' / 'questions' / ('%s.json' % sec['slug'])
+        total += len(json.loads(f.read_text(encoding='utf-8'))) if f.is_file() else 0
+    attendu_t = re.sub(r'\B(?=(\d{3})+(?!\d))', ' ', str(total))
+    code, t = prendre('%s/sections.html' % BASE)
+    d = re.search(r'id="total">(.*?)</p>', t, re.S)
+    if not d:
+        fautes.append('sections.html : le total a disparu')
+    elif attendu_t not in sans_balises(d.group(1)).replace('\u00a0', ' '):
+        fautes.append('sections.html : total annonce « %s », %s questions '
+                      'comptees' % (sans_balises(d.group(1)), attendu_t))
 
     # 9. Une regle par section, et chaque regle vise un fichier present.
     regles = {r['source']: r['destination'] for r in conf.get('rewrites', [])}
@@ -245,8 +250,8 @@ def main():
           'un canonical par page.' % (len(titres), len(descs)))
     print('  Corps rendu avant JavaScript, nombres de questions recomptes,')
     print('  noindex sur la seule section vide, et une reecriture par section.')
-    print('  sections.html mene aux 11 sections pleines sans JavaScript, et ses')
-    print('  deux nombres — questions et lecons — ont ete recomptes.')
+    print('  index.html et sections.html menent aux 11 sections pleines sans')
+    print('  JavaScript, et leurs nombres — questions et lecons — sont recomptes.')
 
 
 if __name__ == '__main__':

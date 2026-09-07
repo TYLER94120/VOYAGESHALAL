@@ -1,33 +1,38 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Ecrit dans sections.html ce que le JavaScript y mettait tout seul.
+"""Ecrit dans l'accueil et la grille des sections ce que le JavaScript y
+mettait tout seul.
 
 CE QUI ETAIT CASSE
 ------------------
-`sections.html` est la page qui doit mener aux douze sections. Elle est dans
-le sitemap, en priorite 0,9. Demandee au serveur, elle rendait :
+Les deux pages par lesquelles on entre sur le site rendaient, dans leur HTML,
+une liste VIDE de sections. Mesure faite en les demandant au serveur :
 
-  * ZERO lien vers une section — la grille `#tuiles` est un div vide que
-    `sections.js` remplit au chargement ;
-  * 269 caracteres de texte, dont « Chargement… » comme seule phrase
-    descriptive.
+  * `sections.html` — la page qui doit mener aux douze, en priorite 0,9 dans
+    le sitemap — rendait ZERO lien vers une section et 269 caracteres de
+    texte, dont « Chargement… » comme seule phrase descriptive. La grille
+    `#tuiles` est un div que `sections.js` remplit au chargement.
+  * `index.html` — l'accueil, la page LA MIEUX PLACEE du site (position 6,5
+    au releve) — rendait 417 caracteres et, la aussi, aucun lien vers une
+    section : le chemin `#chemin` est un div que `chemin.js` remplit.
 
-Le seul chemin par lequel un robot atteignait les couvertures de section
-passait donc par les vingt-trois lecons de sourate et par `sourates.html`.
-La page faite pour y mener n'y menait pas.
+Le seul trajet par lequel un robot atteignait les couvertures de section
+passait donc par les lecons de sourate et par `sourates.html`. Les deux pages
+faites pour y mener n'y menaient pas. Et l'accueil est justement l'endroit
+d'ou un lien transmet le plus.
 
-Elle annoncait en plus « Vingt d'entre elles, expliquees verset par verset »
-alors qu'il y en a vingt-trois : le nombre etait ecrit a la main, comme
-celui de `sourates.html` corrige le 2 septembre. Meme faute, autre fichier.
+Les deux annoncaient en plus « Vingt d'entre elles, expliquees verset par
+verset » alors qu'il y en a vingt-trois : nombre ecrit a la main, comme celui
+de `sourates.html` corrige le 2 septembre. Meme faute, trois fichiers.
 
 CE QU'IL FAIT, ET CE QU'IL NE FAIT PAS
 --------------------------------------
-Il ne regenere pas la page : elle reste ecrite a la main, avec sa navigation,
-son fond et ses commentaires. Il remplace le contenu de TROIS zones bornees
-par des marques HTML — la grille, le total, et la ligne des sourates — et
-refuse de travailler si une marque manque. Recopier les soixante lignes de
-cette page dans un gabarit Python pour en changer trois aurait cree une
-deuxieme version a tenir a jour.
+Il ne regenere pas les pages : elles restent ecrites a la main, avec leur
+navigation, leur fond et leurs commentaires. Il remplace le contenu de zones
+bornees par des marques HTML — la grille, le chemin, le total, la ligne des
+sourates — et refuse de travailler si une marque manque. Recopier soixante
+lignes de balisage dans un gabarit Python pour en changer trois aurait cree
+une deuxieme version a tenir a jour.
 
 TOUS LES NOMBRES SONT COMPTES dans les banques et sur le disque au moment de
 l'execution. Aucun n'est ecrit ici.
@@ -45,7 +50,8 @@ import sys
 import unicodedata
 
 RACINE = pathlib.Path(__file__).resolve().parent.parent
-PAGE = RACINE / 'sections.html'
+GRILLE = RACINE / 'sections.html'
+ACCUEIL = RACINE / 'index.html'
 
 
 def echapper(s):
@@ -75,14 +81,14 @@ def ardoise(nom):
     return re.sub(r'-{2,}', '-', re.sub(r'[^a-z0-9-]', '', s)).strip('-')
 
 
-def remplacer(t, marque, neuf):
+def remplacer(t, marque, neuf, ou):
     """Remplace ce qui est entre <!-- X:DEBUT --> et <!-- X:FIN -->."""
     motif = re.compile(r'(<!-- %s:DEBUT -->)(.*?)(<!-- %s:FIN -->)'
                        % (marque, marque), re.S)
     if not motif.search(t):
-        sys.exit('ARRET : la marque %s est absente de sections.html.\n'
+        sys.exit('ARRET : la marque %s est absente de %s.\n'
                  '        Sans elle, on ne sait pas quoi remplacer, et on ne '
-                 'devine pas.' % marque)
+                 'devine pas.' % (marque, ou))
     return motif.sub(lambda m: m.group(1) + neuf + m.group(3), t)
 
 
@@ -91,19 +97,18 @@ def main():
     if len(secs) != 12:
         sys.exit('ARRET : %d sections au lieu de 12.' % len(secs))
 
-    total, ouvertes, tuiles = 0, 0, ''
+    total, ouvertes, tuiles, etapes = 0, 0, '', ''
     for s in secs:
         f = RACINE / 'data' / 'questions' / ('%s.json' % s['slug'])
         n = len(json.loads(f.read_text(encoding='utf-8'))) if f.is_file() else 0
         total += n
         if n:
             ouvertes += 1
+        combien = ('%s question%s' % (espacer(n), 's' if n > 1 else '')
+                   if n else 'bientôt')
 
-        dedans = ('<span class="nom">%s</span>'
-                  '<span class="nb">%s</span>'
-                  % (echapper(s['nom']),
-                     ('%s question%s' % (espacer(n), 's' if n > 1 else ''))
-                     if n else 'bientôt'))
+        dedans = ('<span class="nom">%s</span><span class="nb">%s</span>'
+                  % (echapper(s['nom']), combien))
         if n:
             # Vers la COUVERTURE, comme le fait le script : on voit ce qu'il y
             # a dans la section avant d'en regler un QCM.
@@ -115,25 +120,53 @@ def main():
             tuiles += ('\n      <div class="tuile" data-vide="oui">%s</div>'
                        % dedans)
 
+        # L'ETAPE DU CHEMIN, sur l'accueil. Meme balisage que `chemin.js`,
+        # moins la rosace et le pourcentage de maitrise : la premiere est
+        # calculee par la geometrie, le second lu dans le telephone. Ni l'une
+        # ni l'autre n'existe avant que les scripts tournent, et aucune des
+        # deux n'est vraie pour tout le monde.
+        quoi = ('<span class="etape-bande"><span class="etape-rond"></span></span>'
+                '<span class="etape-quoi"><span class="etape-nom">%s</span>'
+                '<span class="etape-nb">%s</span></span>'
+                % (echapper(s['nom']), combien))
+        if n:
+            etapes += ('\n      <a class="etape" href="section/%s" '
+                       'data-etat="ouvert">%s</a>'
+                       % (echapper(s['slug']), quoi))
+        else:
+            etapes += ('\n      <div class="etape" data-etat="bientot">%s</div>'
+                       % quoi)
+
     # Les lecons REELLEMENT sur le disque, comme partout ailleurs.
     noms = json.loads((RACINE / 'outils' / 'coran' / 'noms-sourates.json')
                       .read_text(encoding='utf-8'))
     lecons = sum(1 for s in noms
                  if (RACINE / ('lecon-sourate-%s.html' % ardoise(s['tr']))).is_file())
 
-    t = PAGE.read_text(encoding='utf-8')
+    ligne_lecons = ('<span class="quoi">%s d\'entre elles, expliquées verset '
+                    'par verset.</span>' % en_lettres(lecons))
+
+    t = GRILLE.read_text(encoding='utf-8')
     t = remplacer(t, 'TUILES',
                   '\n    <div class="tuiles" id="tuiles">%s\n    </div>\n    '
-                  % tuiles)
+                  % tuiles, GRILLE.name)
     t = remplacer(t, 'TOTAL',
                   '<p class="c-meta" id="total">%s questions, dans %d sections '
-                  'sur %d</p>' % (espacer(total), ouvertes, len(secs)))
-    t = remplacer(t, 'LECONS',
-                  '<span class="quoi">%s d\'entre elles, expliquées verset par '
-                  'verset.</span>' % en_lettres(lecons))
-    PAGE.write_text(t, encoding='utf-8')
+                  'sur %d</p>' % (espacer(total), ouvertes, len(secs)),
+                  GRILLE.name)
+    t = remplacer(t, 'LECONS', ligne_lecons, GRILLE.name)
+    GRILLE.write_text(t, encoding='utf-8')
+
+    a = ACCUEIL.read_text(encoding='utf-8')
+    a = remplacer(a, 'CHEMIN',
+                  '\n    <div class="chemin" id="chemin">%s\n    </div>\n    '
+                  % etapes, ACCUEIL.name)
+    a = remplacer(a, 'LECONS', ligne_lecons, ACCUEIL.name)
+    ACCUEIL.write_text(a, encoding='utf-8')
 
     print('  sections.html : %d tuiles ecrites, %d menent quelque part.'
+          % (len(secs), ouvertes))
+    print('  index.html    : %d etapes de chemin ecrites, %d cliquables.'
           % (len(secs), ouvertes))
     print('  %s questions comptees, %d lecons de sourate comptees.'
           % (espacer(total).replace(' ', ' '), lecons))

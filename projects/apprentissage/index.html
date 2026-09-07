@@ -80,14 +80,39 @@
       <h2 class="t-bloc">Ton chemin</h2>
       <a href="sections.html" style="font-size:13.5px; font-weight:600">Tout voir &rarr;</a>
     </div>
-    <div class="chemin" id="chemin"></div>
+    <!-- LES DOUZE ETAPES SONT ECRITES ICI, PAS SEULEMENT PAR LE SCRIPT.
+         `chemin.js` remplace ce bloc au chargement par le trajet serpentin —
+         medaillons decales, trace SVG mesure, pourcentage de maitrise lu dans
+         le telephone. Mais dans le HTML servi, ce chemin etait un div VIDE :
+         l'accueil, la page la mieux placee du site, ne portait aucun lien
+         vers une section. Ce qui est pose ici est ce qui est vrai pour tout
+         le monde — le nom, le nombre de questions, le lien — et c'est le seul
+         chemin que suit un robot d'indexation.
+         Pose par `garnir-sections.py` : ne rien ecrire a la main entre les
+         deux marques, la prochaine execution l'effacerait. -->
+    <!-- CHEMIN:DEBUT -->
+    <div class="chemin" id="chemin">
+      <a class="etape" href="section/sens-des-sourates" data-etat="ouvert"><span class="etape-bande"><span class="etape-rond"></span></span><span class="etape-quoi"><span class="etape-nom">Le sens des sourates</span><span class="etape-nb">611 questions</span></span></a>
+      <a class="etape" href="section/lire-l-arabe" data-etat="ouvert"><span class="etape-bande"><span class="etape-rond"></span></span><span class="etape-quoi"><span class="etape-nom">Lire l'arabe</span><span class="etape-nb">136 questions</span></span></a>
+      <a class="etape" href="section/piliers-de-la-foi" data-etat="ouvert"><span class="etape-bande"><span class="etape-rond"></span></span><span class="etape-quoi"><span class="etape-nom">Les piliers de la foi</span><span class="etape-nb">89 questions</span></span></a>
+      <a class="etape" href="section/la-priere" data-etat="ouvert"><span class="etape-bande"><span class="etape-rond"></span></span><span class="etape-quoi"><span class="etape-nom">La prière</span><span class="etape-nb">125 questions</span></span></a>
+      <a class="etape" href="section/histoire-des-prophetes" data-etat="ouvert"><span class="etape-bande"><span class="etape-rond"></span></span><span class="etape-quoi"><span class="etape-nom">Histoire des prophètes</span><span class="etape-nb">163 questions</span></span></a>
+      <div class="etape" data-etat="bientot"><span class="etape-bande"><span class="etape-rond"></span></span><span class="etape-quoi"><span class="etape-nom">La vie du Prophète</span><span class="etape-nb">bientôt</span></span></div>
+      <a class="etape" href="section/le-comportement" data-etat="ouvert"><span class="etape-bande"><span class="etape-rond"></span></span><span class="etape-quoi"><span class="etape-nom">Le comportement</span><span class="etape-nb">11 questions</span></span></a>
+      <a class="etape" href="section/jeune-et-ramadan" data-etat="ouvert"><span class="etape-bande"><span class="etape-rond"></span></span><span class="etape-quoi"><span class="etape-nom">Le jeûne et le Ramadan</span><span class="etape-nb">8 questions</span></span></a>
+      <a class="etape" href="section/zakat-et-aumone" data-etat="ouvert"><span class="etape-bande"><span class="etape-rond"></span></span><span class="etape-quoi"><span class="etape-nom">La zakât et l'aumône</span><span class="etape-nb">116 questions</span></span></a>
+      <a class="etape" href="section/le-pelerinage" data-etat="ouvert"><span class="etape-bande"><span class="etape-rond"></span></span><span class="etape-quoi"><span class="etape-nom">Le pèlerinage</span><span class="etape-nb">7 questions</span></span></a>
+      <a class="etape" href="section/vocabulaire-arabe" data-etat="ouvert"><span class="etape-bande"><span class="etape-rond"></span></span><span class="etape-quoi"><span class="etape-nom">Vocabulaire arabe</span><span class="etape-nb">1 259 questions</span></span></a>
+      <a class="etape" href="section/les-invocations" data-etat="ouvert"><span class="etape-bande"><span class="etape-rond"></span></span><span class="etape-quoi"><span class="etape-nom">Les invocations</span><span class="etape-nb">176 questions</span></span></a>
+    </div>
+    <!-- CHEMIN:FIN -->
 
     <!-- Les pages qui se LISENT. L'accueil est la page la mieux placee du
          site : c'est de la qu'un lien transmet le plus. -->
     <a class="ligne" href="sourates.html">
       <span class="rond"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 5.5h16M4 12h16M4 18.5h16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
       <span class="milieu"><span class="nom">Les 114 sourates</span>
-        <span class="quoi">Vingt d'entre elles, expliquées verset par verset.</span></span>
+        <!-- LECONS:DEBUT --><span class="quoi">Vingt-trois d'entre elles, expliquées verset par verset.</span><!-- LECONS:FIN --></span>
       <span class="pc" aria-hidden="true">&rarr;</span>
     </a>
 
