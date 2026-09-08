@@ -81,6 +81,40 @@ def ardoise(nom):
     return re.sub(r'-{2,}', '-', re.sub(r'[^a-z0-9-]', '', s)).strip('-')
 
 
+def titre_grille(total, nb_sections):
+    """Le titre de la grille — sans la marque, avec les nombres comptes.
+
+    IL DISAIT « Les 12 sections — Islam pas a pas », et les deux moities
+    etaient mauvaises. « Les 12 sections » ne dit rien a qui ne connait pas
+    encore le site : douze sections de quoi ? Et la marque mangeait dix-huit
+    caracteres sur trente-trois, a l'endroit meme — le debut du titre — que
+    Google met en gras quand il correspond a la requete. La methode maison
+    est explicite : la marque n'est pas dans le titre.
+
+    Le titre pose ici dit ce que la page contient, avec deux nombres reels :
+    le nombre de sections et le nombre de questions, tous deux comptes a la
+    fabrication. Un nombre promet un contenu qui existe.
+
+    Plusieurs formulations, toutes vraies, parce que le total grossit et que
+    la limite est de soixante caracteres : on garde la premiere qui tient.
+    Corrige le 8 septembre 2026 — Google met sept a dix jours a rafraichir
+    ses affichages, ne pas rejuger ce titre avant le 18.
+    """
+    n = espacer(total)
+    essais = [
+        "QCM d'islam : %d sections, %s questions sourcées" % (nb_sections, n),
+        "QCM d'islam : %s questions sourcées, en %d sections" % (n, nb_sections),
+        "QCM pour apprendre l'islam : %s questions sourcées" % n,
+        "QCM d'islam : %s questions sourcées" % n,
+        "QCM d'islam, %s questions" % n,
+    ]
+    for x in essais:
+        if len(x) <= 60:
+            return x
+    sys.exit('ARRET : aucun titre de grille sous 60 caracteres (%s).'
+             % ', '.join(str(len(x)) for x in essais))
+
+
 def remplacer(t, marque, neuf, ou):
     """Remplace ce qui est entre <!-- X:DEBUT --> et <!-- X:FIN -->."""
     motif = re.compile(r'(<!-- %s:DEBUT -->)(.*?)(<!-- %s:FIN -->)'
@@ -145,6 +179,7 @@ def main():
 
     ligne_lecons = ('<span class="quoi">%s d\'entre elles, expliquées verset '
                     'par verset.</span>' % en_lettres(lecons))
+    titre = titre_grille(total, len(secs))
 
     t = GRILLE.read_text(encoding='utf-8')
     t = remplacer(t, 'TUILES',
@@ -155,6 +190,10 @@ def main():
                   'sur %d</p>' % (espacer(total), ouvertes, len(secs)),
                   GRILLE.name)
     t = remplacer(t, 'LECONS', ligne_lecons, GRILLE.name)
+    t = remplacer(t, 'TITRE', '<title>%s</title>' % echapper(titre), GRILLE.name)
+    t = remplacer(t, 'OGTITRE',
+                  '<meta property="og:title" content="%s">' % echapper(titre),
+                  GRILLE.name)
     GRILLE.write_text(t, encoding='utf-8')
 
     a = ACCUEIL.read_text(encoding='utf-8')

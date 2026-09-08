@@ -91,11 +91,17 @@ def titre_de(sec):
     et moins de 60 caracteres marque comprise ; le nom de la section est
     justement ce qu'on tape, il vient donc en premier.
 
-    QUAND L'ASSEMBLAGE DEPASSE, on retombe sur la forme que `section.js` pose
-    deja au chargement — « <nom> — Islam pas a pas » — plutot que de tronquer
-    `quoi`. Couper « la parole, la colere, les parents, les voisins » apres
-    deux elements donnerait un titre qui annonce moins que la section ne
-    contient : plus court, mais faux.
+    QUAND L'ASSEMBLAGE DEPASSE, on retombe sur le NOM SEUL, et surtout pas sur
+    « <nom> — Islam pas a pas ». C'est ce que ce generateur faisait jusqu'au
+    8 septembre, et c'etait une faute au regard de la methode maison : la
+    marque mange des caracteres et n'apporte rien a quelqu'un qui ne la
+    connait pas encore, alors que les premiers mots du titre sont justement
+    ceux que Google met en gras. « Le comportement — Islam pas a pas » gaspille
+    dix-huit caracteres sur trente-trois pour ne rien dire de la page.
+
+    On ne tronque pas `quoi` non plus. Couper « la parole, la colere, les
+    parents, les voisins » apres deux elements donnerait un titre qui annonce
+    moins que la section ne contient : plus court, mais faux.
 
     Deux sections y tombent aujourd'hui, « Le comportement » et « Vocabulaire
     arabe », a trois et quatre caracteres pres. Leur titre gagnerait a etre
@@ -112,7 +118,7 @@ def titre_de(sec):
     long = sec['nom'] + joint + quoi
     if len(long) <= 60:
         return long
-    return '%s — Islam pas à pas' % sec['nom']
+    return sec['nom']
 
 
 def description_de(sec, n, t):

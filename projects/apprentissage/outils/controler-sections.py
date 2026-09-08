@@ -213,6 +213,36 @@ def main():
                           '%d lecons sur le disque'
                           % (page, sans_balises(m.group(1))[:40], lecons))
 
+    # LA MARQUE N'EST PAS DANS LE TITRE.
+    #
+    # Regle de la methode maison, et elle a une raison chiffree : la marque
+    # mange des caracteres sur une limite d'environ soixante, a l'endroit
+    # meme — le debut du titre — que Google met en gras quand il correspond a
+    # la requete, et elle n'apporte rien a quelqu'un qui ne connait pas encore
+    # le site. Ailleurs dans l'empire, un suffixe de marque faisait couper 383
+    # titres sur 809.
+    #
+    # Le generateur des pages de section retombait sur « <nom> — Islam pas a
+    # pas » quand le titre long depassait, et la grille s'appelait « Les 12
+    # sections — Islam pas a pas » : dix-huit caracteres sur trente-trois pour
+    # ne rien dire de la page. Corrige le 8 septembre 2026.
+    #
+    # L'ACCUEIL EST L'EXCEPTION, ET ELLE EST NOMMEE. C'est la seule page dont
+    # la requete EST la marque, et la seule bien placee du site (position 6,5
+    # au releve du 21 aout, sur douze impressions). Lui retirer son nom, c'est
+    # risquer la seule chose qui marche pour appliquer une regle ecrite pour
+    # les pages profondes.
+    MARQUE = 'Islam pas à pas'
+    for page in ['sections.html'] + ['section/%s' % s['slug'] for s in secs]:
+        code, t = prendre('%s/%s' % (BASE, page))
+        if code != 200:
+            continue
+        m = TITRE.search(t)
+        if m and MARQUE in desechapper(m.group(1)):
+            fautes.append('%s : la marque est dans le titre « %s » — elle mange '
+                          '%d caracteres pour rien'
+                          % (page, desechapper(m.group(1)), len(MARQUE) + 3))
+
     # Le total de questions n'est annonce que sur la grille.
     total = 0
     for sec in secs:
@@ -220,6 +250,18 @@ def main():
         total += len(json.loads(f.read_text(encoding='utf-8'))) if f.is_file() else 0
     attendu_t = re.sub(r'\B(?=(\d{3})+(?!\d))', ' ', str(total))
     code, t = prendre('%s/sections.html' % BASE)
+
+    # Le titre de la grille porte lui aussi le total : il doit se recompter,
+    # sinon il vieillira comme « Vingt d'entre elles » l'a fait trois fois.
+    mt = TITRE.search(t)
+    titre_grille = desechapper(mt.group(1)) if mt else ''
+    if attendu_t not in titre_grille.replace('\u00a0', ' '):
+        fautes.append('sections.html : le titre « %s » n\'annonce pas les %s '
+                      'questions comptees' % (titre_grille, attendu_t))
+    if len(titre_grille) > 60:
+        fautes.append('sections.html : titre de %d caracteres (60 au plus)'
+                      % len(titre_grille))
+
     d = re.search(r'id="total">(.*?)</p>', t, re.S)
     if not d:
         fautes.append('sections.html : le total a disparu')
