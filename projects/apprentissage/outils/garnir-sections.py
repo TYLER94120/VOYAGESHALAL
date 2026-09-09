@@ -69,9 +69,19 @@ def espacer(n):
 
 
 def en_lettres(n):
-    mots = {20: 'Vingt', 21: 'Vingt et une', 22: 'Vingt-deux',
-            23: 'Vingt-trois', 24: 'Vingt-quatre', 25: 'Vingt-cinq'}
-    return mots.get(n, str(n))
+    """Le nombre de lecons, EN CHIFFRES, et une seule facon de l'ecrire.
+
+    Une table « vingt, vingt et une, vingt-deux… » s'arretait a vingt-cinq et
+    retombait sur les chiffres au-dela. La ligne a donc change de style toute
+    seule en passant de 25 a 26 lecons — sans que personne le decide, et sans
+    qu'aucun controle s'en apercoive, puisque les deux formes sont vraies.
+
+    Une table qui couvre une plage est une table qui finit par en sortir. Les
+    chiffres n'ont pas de plage, se lisent aussi bien, et se reperent mieux
+    dans une ligne de liste. On garde le nom de la fonction : c'est ce qu'on
+    lui demande — donner le nombre a ecrire — pas comment elle l'ecrit.
+    """
+    return str(n)
 
 
 def ardoise(nom):

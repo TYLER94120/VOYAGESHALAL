@@ -180,9 +180,7 @@ def main():
     # chargement. Le robot atteignait les couvertures par les lecons de
     # sourate, jamais par les deux pages faites pour ca.
     lecons = len(list(RACINE.glob('lecon-sourate-*.html')))
-    mots = {20: 'Vingt', 21: 'Vingt et une', 22: 'Vingt-deux',
-            23: 'Vingt-trois', 24: 'Vingt-quatre', 25: 'Vingt-cinq'}
-    attendu_l = mots.get(lecons, str(lecons))
+    attendu_l = str(lecons)
 
     for page in ('index.html', 'sections.html'):
         code, t = prendre('%s/%s' % (BASE, page))

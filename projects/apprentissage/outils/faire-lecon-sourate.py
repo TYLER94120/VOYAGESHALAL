@@ -97,7 +97,22 @@ TRADUCTEUR = 'Muhammad Hamidullah'
 # pas — ce fait vient du hadith, et le projet n'a aucune traduction francaise
 # sourcee de ces recueils (voir « CE QU'ON N'ECRIT PAS »). Elle se contente
 # du texte, de sa traduction attribuee et de sa reference, comme les autres.
-LOT = [1, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104,
+#
+# AL-BALAD (90), ASH-SHAMS (91) ET AL-LAYL (92) S'AJOUTENT LE 9 SEPTEMBRE, et
+# le critere n'a pas change : ON DESCEND SANS LAISSER DE TROU. Le bloc allait
+# de 93 a 114 ; il va maintenant de 90 a 114. A chaque etape, qui arrive sur
+# une sourate de ce bloc trouve toutes ses voisines — c'est ce qui distingue
+# une progression d'un remplissage.
+#
+# LA DIRECTION, elle, est le juz Amma : la trentieme et derniere partie du
+# Coran, de la sourate 78 a la 114. Ce n'est pas une preference, c'est une
+# division du mushaf, et c'est la partie qu'on apprend en premier parce que
+# ses sourates sont courtes. Il reste 78 a 89 apres celles-ci.
+#
+# TROIS PAR NUIT ET PAS QUINZE. Quinze d'un coup serait une ferme de contenu,
+# et sur un site qui enseigne le Coran ce serait pire qu'ailleurs. La ronde
+# le dit : la plupart des nuits, le bon travail est petit.
+LOT = [1, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104,
        105, 106, 107, 108, 109, 110, 111, 112, 113, 114]
 
 # La section de QCM vers laquelle chaque lecon renvoie. Le sens des sourates
