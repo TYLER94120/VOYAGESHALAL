@@ -3746,6 +3746,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Pratique',
     readTime: "8 min",
     publishedAt: '2026-07-20',
+    updatedAt: '2026-09-09',
     tags: ["Aéroports", "Prière", "Voyage"],
     content: `<p>Prendre l'avion ne devrait jamais t'obliger à sauter une prière. La plupart des grands aéroports ont aujourd'hui un espace de recueillement — encore faut-il savoir le trouver, savoir s'il est ouvert, et savoir quoi faire quand il n'y en a pas. Ce guide donne la méthode ; nos fiches par aéroport donnent les emplacements.</p>
 
@@ -3768,6 +3769,20 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <p><strong>1. Un coin calme près de ta porte.</strong> Les extrémités de jetée, les salles d'embarquement des vols suivants et les couloirs de correspondance se vident entre deux départs. Un tapis de poche et deux minutes suffisent, et personne ne s'en étonne.<br/>
 <strong>2. Le côté ville, si tu n'as pas encore passé les contrôles.</strong> Les zones d'enregistrement en heures creuses sont souvent plus tranquilles que les salles d'embarquement.<br/>
 <strong>3. Prier assis, en salle ou dans l'avion.</strong> Quand il ne reste que quelques minutes de créneau, c'est ce que font beaucoup de voyageurs.</p>
+
+<h2>Sortir chercher une mosquée ? La distance change tout</h2>
+<p>C'est l'idée qui vient naturellement, et selon l'aéroport elle est excellente ou totalement irréaliste. Nous avons mesuré la distance entre chaque aéroport et le lieu de prière le plus proche de <strong>notre relevé OpenStreetMap</strong> (1 092 lieux en France, relevé du 3 septembre 2026) :</p>
+<table><thead><tr><th>Aéroport</th><th>Le plus proche</th><th>Dans un rayon de 3 km</th></tr></thead><tbody>
+<tr><td>Paris-Orly</td><td>2,3 km</td><td><strong>5</strong></td></tr>
+<tr><td>Nice-Côte d'Azur</td><td>2,3 km</td><td>1</td></tr>
+<tr><td>Paris-Charles de Gaulle</td><td>6,4 km</td><td>0</td></tr>
+<tr><td>Toulouse-Blagnac</td><td>6,5 km</td><td>0</td></tr>
+<tr><td>Lyon-Saint-Exupéry</td><td>6,5 km</td><td>0</td></tr>
+<tr><td>Marseille-Provence</td><td><strong>11,6 km</strong></td><td>0</td></tr>
+</tbody></table>
+<p><strong>À Orly, sortir a du sens</strong> si tu es côté ville avec du temps devant toi : cinq lieux à moins de 3 km. À Nice, il y en a un, à la même distance.</p>
+<p><strong>Ailleurs, oublie.</strong> À Roissy, Lyon et Toulouse, le premier lieu est à plus de six kilomètres — c'est un aller-retour en transport, pas une promenade entre deux portes. Et <strong>Marseille-Provence cumule les deux difficultés</strong> : c'est le seul des huit aéroports de ce guide où aucun espace de prière n'est signalé, et le lieu le plus proche de notre relevé est à <strong>11,6 km</strong>. Rien dans un rayon de dix kilomètres. Si tu passes par Marseille, la seule stratégie qui tient est de prier <em>avant</em> d'arriver à l'aéroport, ou d'appliquer les trois solutions ci-dessus.</p>
+<p><em>Distances à vol d'oiseau depuis le point de référence de chaque aéroport ; à pied ou en transport, comptez davantage. Notre relevé n'est pas exhaustif : un lieu que nous ne connaissons pas peut exister. Données des lieux de prière © les contributeurs OpenStreetMap.</em></p>
 
 <h2>Ce que nous ne tranchons pas</h2>
 <p>Raccourcir, regrouper, rattraper plus tard, prier assis, faire le tayammoum quand l'eau manque : ce sont des <strong>questions religieuses</strong>, avec des avis et des conditions, et <strong>nous n'y répondons pas</strong>. Ce n'est pas notre rôle et ce serait malhonnête de le faire au détour d'un guide pratique. Pose-les à <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&amp;utm_medium=passerelle&amp;utm_campaign=aeroports" target="_blank" rel="noopener noreferrer">HalalGPT</a>, qui est fait pour ça, ou à l'imam de ta mosquée.</p>

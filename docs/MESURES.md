@@ -2169,3 +2169,81 @@ Un chiffre qui porte sa date et ses limites n'est pas un chiffre inventé.
 Build du 07/00:12, `BUILD_ID` contrôlé. Titre 54 c, description 147 c,
 1 068 mots, crédit ODbL présent, hreflang dans les deux sens, au sitemap
 anglais, et le hub France le lie désormais.
+
+---
+
+## 9 septembre — le cycle du 8 n'avait pas abouti, je l'ai repris
+
+⚠️ **La ronde du 8 septembre s'est arrêtée après la vérification d'état.**
+J'ai constaté que la PR #126 était fusionnée, et je n'ai rien produit. Le
+brief prévoit ce cas — « si le cycle de la veille n'a pas abouti, reprends-le
+au lieu d'enchaîner » — donc ce soir est un **approfondissement**, pas une
+création.
+
+### Le choix, par la mesure
+
+Le relevé Search Console (3 mois, FR) donne la bande 5-15 avec des
+affichages acquis. En tête : `/guides/ou-prier-aeroport-guide`, **722
+affichages en position 10,1** — une redirection 301 dont la vraie cible est
+`/blog/ou-prier-aeroports`. C'est donc ce hub qu'on approfondit.
+
+### Ce qui manquait, et que notre base sait dire
+
+L'article a une section « Si l'aéroport n'a rien » avec trois solutions —
+toutes **dans** l'aéroport. Il ne répond pas à l'idée qui vient
+naturellement au lecteur : **sortir chercher une mosquée.**
+
+Mesuré depuis `data/osm/mosquees/fr.json` (1 092 lieux, relevé du
+3 septembre) :
+
+| aéroport | le plus proche | dans 3 km |
+|---|---|---|
+| Paris-Orly | 2,3 km | **5** |
+| Nice-Côte d'Azur | 2,3 km | 1 |
+| Paris-Charles de Gaulle | 6,4 km | 0 |
+| Toulouse-Blagnac | 6,5 km | 0 |
+| Lyon-Saint-Exupéry | 6,5 km | 0 |
+| **Marseille-Provence** | **11,6 km** | 0 |
+
+À Orly l'idée est bonne ; ailleurs c'est un aller-retour en transport. Et
+**Marseille cumule** : c'est le seul des huit où aucun espace de prière
+n'est signalé, *et* le plus éloigné de tout — rien dans un rayon de dix
+kilomètres. Pour ce seul aéroport, « prier avant d'arriver » n'est pas un
+conseil de confort, c'est la seule option.
+
+139 mots ajoutés à un article de 1 135, avec la date du relevé, les
+distances à vol d'oiseau annoncées comme telles, la non-exhaustivité dite,
+et le crédit ODbL.
+
+### 🔴 Le test m'a arrêté, et j'ai corrigé MA phrase, pas le test
+
+J'avais écrit « Marseille-Provence **n'a aucune salle de prière** ».
+`test-articles.mjs` a cassé le build : le titre de l'article commence par
+« Salle de prière en aéroport », et la règle du 27 août interdit qu'un titre
+promette une salle que le texte dit inexistante.
+
+C'est un **faux positif** du test — l'article couvre huit aéroports, sept en
+ont une, et signaler l'exception ne contredit pas le titre. La tentation
+était d'assouplir la règle. Je ne l'ai pas fait : j'ai réécrit la phrase en
+« **le seul où aucun espace de prière n'est signalé** ».
+
+Et c'est plus juste de toute façon. Nous savons qu'il n'est **pas signalé**
+dans nos sources ; nous ne savons pas qu'il **n'existe pas**. Le test m'a
+poussé vers la formulation exacte — c'est exactement ce qu'on lui demande
+quand personne ne relit derrière moi.
+
+### Autre chose vérifiée, et qui ne donne rien
+
+Le jeu de données `data/airports/prayer-rooms.json` a été rafraîchi le
+5 septembre (10 aéroports internationaux, OSM). Mesure : **toujours aucune
+salle relevée à l'intérieur d'un seul des dix terminaux** — DXB, LHR, KUL et
+les autres n'ont que des mosquées alentour, la plus proche à 1 349 m (KUL).
+Les pages `/prayer-room/[airport]` se replient donc encore sur « où prier »
+plutôt que « prayer room », ce qui est le comportement correct. Rien à
+changer, et c'est une bonne nouvelle : le seuil de publication du 20 août
+tient tout seul.
+
+### Vérifié servi
+
+Build du 09/00:13, `BUILD_ID` contrôlé. 1 135 → **1 790 mots rendus**,
+tableau présent, crédit ODbL présent, `updatedAt` au 9 septembre.
