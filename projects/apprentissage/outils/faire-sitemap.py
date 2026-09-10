@@ -32,7 +32,10 @@ SITE = 'https://islampasapas.fr'
 
 # Ce qui ne s'indexe pas, et pourquoi c'est une liste courte et explicite.
 HORS = {'qcm.html', 'corrige.html', 'resultat.html', 'reglages.html',
-        'motifs.html', 'section.html'}
+        'motifs.html', 'section.html',
+        # La page d'erreur porte noindex : l'annoncer serait demander a
+        # Google d'indexer le message qui dit qu'il n'y a rien.
+        '404.html'}
 
 
 def ardoise(nom):
