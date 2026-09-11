@@ -112,8 +112,12 @@ TRADUCTEUR = 'Muhammad Hamidullah'
 # TROIS PAR NUIT ET PAS QUINZE. Quinze d'un coup serait une ferme de contenu,
 # et sur un site qui enseigne le Coran ce serait pire qu'ailleurs. La ronde
 # le dit : la plupart des nuits, le bon travail est petit.
-LOT = [1, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104,
-       105, 106, 107, 108, 109, 110, 111, 112, 113, 114]
+#
+# AL-A'LA (87), AL-GHASHIYA (88) ET AL-FAJR (89) S'AJOUTENT LE 11 SEPTEMBRE.
+# Le bloc va desormais de 87 a 114 : toujours sans trou, toujours vers le
+# haut du juz Amma. Il reste 78 a 86.
+LOT = [1, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102,
+       103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]
 
 # La section de QCM vers laquelle chaque lecon renvoie. Le sens des sourates
 # est la seule section qui porte ces versets.
