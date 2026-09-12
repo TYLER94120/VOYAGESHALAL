@@ -11,6 +11,28 @@
 
 .tete { display: flex; align-items: center; justify-content: space-between; }
 .marque { display: flex; align-items: center; gap: 9px; color: var(--or); }
+
+/* LA ZONE TOUCHEE EST PLUS GRANDE QUE CE QU'ON VOIT.
+   Mesure du 12 septembre a 360 px : le lien de marque fait 147 x 29 px, et la
+   cible tactile que le site s'est fixee — `--cible` — vaut 44. Vingt-neuf
+   pixels de haut, c'est un lien qu'on rate au pouce, sur quatre des six pages
+   mesurees.
+
+   On ne l'AGRANDIT pas : lui donner `min-height: var(--cible)` pousserait
+   l'en-tete de quinze pixels sur trente-cinq pages, pour un defaut qui n'est
+   pas visuel. On etend seulement la ZONE QUI RECOIT LE TOUCHER, avec un bloc
+   invisible centre sur le lien. Rien ne bouge a l'ecran, et le pouce trouve.
+
+   Le bloc ne depasse pas la largeur du lien : dans `.tete`, la pastille de
+   droite garde donc la sienne intacte. */
+a.marque, .rang-entre > a { position: relative; }
+a.marque::after, .rang-entre > a::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; top: 50%;
+  height: var(--cible);
+  transform: translateY(-50%);
+}
 .marque b {
   font-family: var(--titre);
   font-size: 19px;
