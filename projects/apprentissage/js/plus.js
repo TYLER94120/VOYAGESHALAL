@@ -10,32 +10,22 @@
 (function () {
   var M = window.IPAP_MEMOIRE;
 
-  var h = '';
-  h += '<div class="pile-11"><h2 class="t-bloc">Comment c\'est fait</h2>'
-    + '<p>Chaque question sort d\'une source vérifiable : un verset avec sa sourate '
-    + 'et son numéro, ou un hadith avec son recueil, son rapporteur et son numéro. '
-    + 'Sans source, la question ne sort pas.</p>'
-    + '<p>Les traductions en français sont des <strong>traductions du sens</strong>, '
-    + 'pas le Coran lui-même. Celle utilisée ici est celle de Muhammad Hamidullah.</p>'
-    + '<p>Quand les savants divergent, la question le dit et ne tranche pas. '
-    + 'Pour un cas personnel, adresse-toi à un savant.</p></div>';
-
-  h += '<div class="pile-11"><h2 class="t-bloc">Ta progression</h2>'
-    + '<p>Elle reste sur ce téléphone, dans ce navigateur. Il n\'y a pas de compte, '
-    + 'pas d\'inscription, pas d\'adresse e-mail, et rien n\'est envoyé nulle part.</p>'
-    + '<p>C\'est pratique, et ça a une conséquence : si tu changes de téléphone ou '
-    + 'que tu effaces les données du navigateur, ta progression part avec. '
-    + 'Le fichier ci-dessous est la seule façon de la garder.</p>'
-    + '<button type="button" class="bouton-2" id="exporter">Enregistrer ma progression</button>'
+  // LE TEXTE DE LA PAGE N'EST PLUS ICI. Il est ecrit dans `plus.html`, ou
+  // un robot d'indexation et un navigateur sans JavaScript le lisent : c'est
+  // la page qui dit d'ou vient ce que le site affirme, et elle ne rendait que
+  // 216 caracteres. Ce fichier ne pose plus que ce qui a besoin de lui.
+  //
+  // LES DEUX BOUTONS SONT CREES ICI, PAS ECRITS DANS LA PAGE. Sans JavaScript
+  // ils ne feraient rien ; un bouton qui ne fait rien est pire que pas de
+  // bouton. Les deux paragraphes qui les expliquent, eux, restent vrais dans
+  // tous les cas et sont donc dans le HTML.
+  var zone = document.getElementById('sauvegarde');
+  if (!zone) { return; }
+  zone.innerHTML =
+    '<button type="button" class="bouton-2" id="exporter">Enregistrer ma progression</button>'
     + '<label class="bouton-2" for="fichier" style="cursor:pointer">Recharger une progression</label>'
     + '<input type="file" id="fichier" accept="application/json" class="invisible">'
-    + '<p class="c-meta" id="dit"></p></div>';
-
-  h += '<div class="pile-11"><h2 class="t-bloc">Ce qu\'on ne fait pas</h2>'
-    + '<p>Aucune publicité, aucun traceur, aucun cookie de mesure. '
-    + 'Aucun classement entre utilisateurs, aucune notification de rappel.</p></div>';
-
-  document.getElementById('plus').innerHTML = h;
+    + '<p class="c-meta" id="dit"></p>';
 
   document.getElementById('exporter').addEventListener('click', function () {
     var texte = M.exporter(M.charger());

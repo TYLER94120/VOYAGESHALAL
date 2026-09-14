@@ -33,6 +33,10 @@ SITE = 'https://islampasapas.fr'
 # Ce qui ne s'indexe pas, et pourquoi c'est une liste courte et explicite.
 HORS = {'qcm.html', 'corrige.html', 'resultat.html', 'reglages.html',
         'motifs.html', 'section.html',
+        # La progression est celle d'une personne, lue sur son telephone :
+        # pour tout autre visiteur la page est vide. Meme raison que les
+        # ecrans de jeu ci-dessus.
+        'progres.html',
         # La page d'erreur porte noindex : l'annoncer serait demander a
         # Google d'indexer le message qui dit qu'il n'y a rien.
         '404.html'}
@@ -89,7 +93,15 @@ def main():
     #    que ces pages viennent de supprimer. Le balayage du dossier les a
     #    ramassees des leur premiere fabrication : 40 adresses sont devenues
     #    52, dont douze doublons.
-    deja = {u for u, _ in urls}
+    # L'ACCUEIL EST DEJA ANNONCE, SOUS L'ADRESSE `/`.
+    #
+    # Le balayage qui suit ajoutait `/index.html` par-dessus : la meme page,
+    # sous deux adresses, dans le meme sitemap — et celle des deux que la page
+    # designe comme canonique est `/`. C'est le doublon qu'on a retire pour les
+    # fichiers `section-<slug>.html` le 5 septembre ; celui-ci etait la depuis
+    # le premier jour, et il touchait l'accueil, la page la mieux placee du
+    # site. On declare donc `/index.html` comme deja vu.
+    deja = {u for u, _ in urls} | {'/index.html'}
     for p in sorted(RACINE.glob('*.html')):
         if (p.name in HORS or p.name.startswith('google')
                 or p.name.startswith('lecon-') or p.name.startswith('section-')):

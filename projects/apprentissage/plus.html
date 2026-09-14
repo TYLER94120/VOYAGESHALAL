@@ -34,7 +34,46 @@
       </a>
     </div>
     <h1 class="t-page">À propos</h1>
-    <div class="pile-18" id="plus"></div>
+
+    <!-- CE TEXTE EST ECRIT ICI, ET PLUS DANS `plus.js`.
+         C'est la page qui dit D'OU VIENT ce que le site affirme : la source de
+         chaque question, le nom du traducteur, ce qu'on fait quand les savants
+         divergent. Sur un site qui enseigne le Coran, c'est la page qui porte
+         le plus de confiance — et elle etait invisible : le HTML servi faisait
+         216 caracteres, tout le reste etant pose par le script au chargement.
+
+         Le texte ne vit qu'ICI desormais, et le script ne pose plus que les
+         deux boutons de sauvegarde, dans `#sauvegarde`. Une prose recopiee a
+         deux endroits finit toujours par differer de l'autre ; et des boutons
+         ecrits dans le HTML resteraient affiches sans JavaScript alors qu'ils
+         ne feraient rien. Chacun a sa place. -->
+    <div class="pile-18" id="plus">
+
+      <div class="pile-11"><h2 class="t-bloc">Comment c'est fait</h2>
+        <p>Chaque question sort d'une source vérifiable&nbsp;: un verset avec sa
+          sourate et son numéro, ou un hadith avec son recueil, son rapporteur
+          et son numéro. Sans source, la question ne sort pas.</p>
+        <p>Les traductions en français sont des <strong>traductions du
+          sens</strong>, pas le Coran lui-même. Celle utilisée ici est celle de
+          Muhammad Hamidullah.</p>
+        <p>Quand les savants divergent, la question le dit et ne tranche pas.
+          Pour un cas personnel, adresse-toi à un savant.</p></div>
+
+      <div class="pile-11"><h2 class="t-bloc">Ta progression</h2>
+        <p>Elle reste sur ce téléphone, dans ce navigateur. Il n'y a pas de
+          compte, pas d'inscription, pas d'adresse e-mail, et rien n'est envoyé
+          nulle part.</p>
+        <p>C'est pratique, et ça a une conséquence&nbsp;: si tu changes de
+          téléphone ou que tu effaces les données du navigateur, ta progression
+          part avec. Le fichier à enregistrer est la seule façon de la
+          garder.</p>
+        <div id="sauvegarde"></div></div>
+
+      <div class="pile-11"><h2 class="t-bloc">Ce qu'on ne fait pas</h2>
+        <p>Aucune publicité, aucun traceur, aucun cookie de mesure. Aucun
+          classement entre utilisateurs, aucune notification de rappel.</p></div>
+
+    </div>
 <!-- repere de version : pose par outils/poser-version.py -->
     <p class="c-meta">Version du site&nbsp;: <strong>13/09/2026 a 00h32</strong> (1c681d2).<br>Si cette date est ancienne, c'est que la page affichee ne vient pas du dernier deploiement.</p>
 <!-- fin du repere -->
