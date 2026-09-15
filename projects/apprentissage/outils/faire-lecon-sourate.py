@@ -119,8 +119,13 @@ TRADUCTEUR = 'Muhammad Hamidullah'
 #
 # AL-INSHIQAQ (84), AL-BURUJ (85) ET AT-TARIQ (86) S'AJOUTENT LE 13 SEPTEMBRE.
 # Le bloc va de 84 a 114. Il reste 78 a 83.
-LOT = [1, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100,
-       101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]
+#
+# AT-TAKWIR (81), AL-INFITAR (82) ET AL-MUTAFFIFIN (83) S'AJOUTENT LE
+# 15 SEPTEMBRE. Le bloc va de 81 a 114. Il reste 78, 79 et 80 — An-Naba,
+# An-Nazi'at et Abasa — pour que le juz Amma soit complet.
+LOT = [1, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97,
+       98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111,
+       112, 113, 114]
 
 # La section de QCM vers laquelle chaque lecon renvoie. Le sens des sourates
 # est la seule section qui porte ces versets.
