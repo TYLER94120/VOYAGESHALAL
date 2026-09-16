@@ -123,9 +123,25 @@ TRADUCTEUR = 'Muhammad Hamidullah'
 # AT-TAKWIR (81), AL-INFITAR (82) ET AL-MUTAFFIFIN (83) S'AJOUTENT LE
 # 15 SEPTEMBRE. Le bloc va de 81 a 114. Il reste 78, 79 et 80 — An-Naba,
 # An-Nazi'at et Abasa — pour que le juz Amma soit complet.
-LOT = [1, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97,
-       98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111,
-       112, 113, 114]
+#
+# AN-NABA (78), AN-NAZI'AT (79) ET ABASA (80) S'AJOUTENT LE 16 SEPTEMBRE, ET
+# LE PLAN COMMENCE LE 2 SEPTEMBRE EST TERMINE : le juz Amma, de la 78e a la
+# 114e sourate, est complet, sans un seul trou, plus Al-Fatiha.
+#
+# CE QUI SUIT N'EST PLUS AUTOMATIQUE, et c'est voulu. « On descend sans
+# laisser de trou » etait un critere parce qu'il avait une FIN : une division
+# du mushaf, atteinte ce soir. Appliquee au-dela, la meme regle deviendrait
+# « on continue parce qu'on continuait », c'est-a-dire du volume — et quinze
+# nuits de suite sur un site qui enseigne le Coran, ce serait exactement la
+# ferme de contenu qu'on s'interdit.
+#
+# La sourate 77 ne s'ajoutera donc pas d'elle-meme. Ajouter quoi que ce soit
+# ici demande desormais un critere NEUF, ecrit, et qui reponde a la question
+# que la ronde pose : qu'est-ce que cette page apprend, que le site ne dit
+# pas deja ? « Il manque une sourate » n'en est pas un.
+LOT = [1, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94,
+       95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109,
+       110, 111, 112, 113, 114]
 
 # La section de QCM vers laquelle chaque lecon renvoie. Le sens des sourates
 # est la seule section qui porte ces versets.
