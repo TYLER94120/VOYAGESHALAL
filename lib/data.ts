@@ -4065,7 +4065,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Pratique',
     readTime: "3 min",
     publishedAt: '2026-07-20',
-    updatedAt: '2026-08-29',
+    updatedAt: '2026-09-16',
     tags: ["Disneyland", "Paris", "Famille", "Prière"],
     content: `<p>Tu passes une journée à Disneyland Paris et tu te demandes où prier ? Voici ce qu'on sait, ce qu'on ne sait pas, et surtout comment t'organiser pour ne pas te retrouver coincé entre deux attractions à l'heure du ʿAsr.</p>
 
@@ -4083,6 +4083,13 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <strong>3. Un coin tranquille du parc.</strong> Les extrémités des zones thématiques, les allées derrière les grandes attractions et les espaces de restauration en dehors des heures de repas se vident. Un tapis de poche et deux minutes suffisent.<br/>
 <strong>4. Prier assis, dans une file ou un spectacle.</strong> Quand il ne reste que quelques minutes avant la fin du créneau, c'est ce que font beaucoup de familles.</p>
 <p>Sur ce qu'on a le droit de faire dans ces situations — raccourcir, regrouper, rattraper — <strong>nous ne tranchons pas</strong> : c'est une question religieuse. Pose-la à <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&amp;utm_medium=passerelle&amp;utm_campaign=disneyland" target="_blank" rel="noopener noreferrer">HalalGPT</a>, qui est fait pour ça.</p>
+
+<h2>Et une mosquée dans le coin ? Non.</h2>
+<p>C'est la question qui vient ensuite, et la réponse évite de perdre une demi-journée. Mesuré sur <strong>notre relevé OpenStreetMap</strong> (1 092 lieux de prière en France, relevé du 3 septembre 2026), depuis le parc :</p>
+<p><strong>Aucun lieu de prière à moins de 5 kilomètres.</strong> Le plus proche est à environ 5,1 km, et il n'y en a que deux dans un rayon de dix kilomètres. À Marne-la-Vallée, sortir chercher une mosquée veut dire un aller-retour en transport, pas une marche entre deux attractions.</p>
+<p>La conséquence est simple, et elle vaut pour toute la journée : <strong>ce qui se règle avant de venir se règle bien, ce qui se reporte sur place se règle mal.</strong> Si tu dors dans un hôtel du complexe, ta chambre reste la meilleure option de la journée.</p>
+<p>Les autres grands parcs français sont logés à la même enseigne, et c'est encore plus net : <a href="/blog/ou-prier-parc-asterix">Parc Astérix</a> (le plus proche à 14,3 km), <a href="/blog/ou-prier-puy-du-fou">Puy du Fou</a> (13,9 km), <a href="/blog/ou-prier-futuroscope">Futuroscope</a> (8,2 km). Aucun des quatre n'a de lieu de prière à distance de marche.</p>
+<p><em>Distances à vol d'oiseau depuis le parc ; à pied ou en transport, comptez davantage. Notre relevé n'est pas exhaustif : un lieu que nous ne connaissons pas peut exister. Données des lieux de prière © les contributeurs OpenStreetMap.</em></p>
 
 <h2>Les ablutions</h2>
 <p>C'est le vrai obstacle, plus que la prière elle-même : les toilettes du parc sont fréquentées et les lavabos sont hauts. Deux habitudes qui changent tout : remplir <strong>une petite bouteille souple</strong> au lavabo avant d'entrer dans la cabine, et garder une <strong>serviette microfibre</strong> dans le sac. La cabine pour personnes handicapées, quand elle est libre, dispose d'un lavabo à l'intérieur — laisse-la immédiatement si quelqu'un en a besoin. Le détail de la méthode est dans notre guide : <a href="/blog/ablutions-avion-train">faire ses ablutions en voyage</a>.</p>
