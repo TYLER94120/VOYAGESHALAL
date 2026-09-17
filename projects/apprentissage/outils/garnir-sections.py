@@ -199,6 +199,32 @@ def main():
                   '<p class="c-meta" id="total">%s questions, dans %d sections '
                   'sur %d</p>' % (espacer(total), ouvertes, len(secs)),
                   GRILLE.name)
+    # LA DESCRIPTION DE LA PAGE SERT AUSSI AU PARTAGE ET AUX DONNEES
+    # STRUCTUREES, et elle n'est ecrite qu'une fois. Mesure du 17 septembre :
+    # `og:description` manquait — partagee dans une conversation, la page
+    # n'affichait que son titre. Plutot que de recopier la phrase a trois
+    # endroits, on la LIT dans la balise qui fait foi et on la reporte.
+    m = re.search(r'<meta name="description" content="(.*?)">', t, re.S)
+    if not m:
+        sys.exit('ARRET : %s n\'a pas de meta description.' % GRILLE.name)
+    desc = m.group(1)
+
+    t = remplacer(t, 'OGDESC',
+                  '<meta property="og:description" content="%s">' % desc,
+                  GRILLE.name)
+    t = remplacer(t, 'JSONLD',
+                  '<script type="application/ld+json">\n'
+                  + json.dumps({
+                      '@context': 'https://schema.org',
+                      '@type': 'ItemList',
+                      'name': 'Les %d sections d\'Islam pas a pas' % len(secs),
+                      'url': 'https://islampasapas.fr/sections.html',
+                      'inLanguage': 'fr',
+                      'numberOfItems': len(secs),
+                      'description': desc.replace('&quot;', '"'),
+                  }, ensure_ascii=False, indent=1)
+                  + '\n</script>', GRILLE.name)
+
     t = remplacer(t, 'LECONS', ligne_lecons, GRILLE.name)
     t = remplacer(t, 'TITRE', '<title>%s</title>' % echapper(titre), GRILLE.name)
     t = remplacer(t, 'OGTITRE',

@@ -30,7 +30,11 @@ CE QU'IL VERIFIE
  3. aucune n'est marquee noindex ;
  4. chacune rend un minimum de texte AVANT JavaScript ;
  5. le canonical de chaque page designe bien l'adresse annoncee ;
- 6. aucune page portant noindex ne figure dans le sitemap.
+ 6. aucune page portant noindex ne figure dans le sitemap ;
+ 7. les quatre balises de partage sont la, et og:image designe un
+    fichier qui existe ;
+ 8. les donnees structurees se PARSENT — un JSON-LD mal forme est
+    ignore en silence par Google.
 
     lancer d'abord :  python3 outils/servir.py 8899
 """
@@ -123,6 +127,44 @@ def main():
             fautes.append('%s : annoncee ici, mais son canonical designe %s'
                           % (u, c.group(1)))
 
+        # 7. LES BALISES DE PARTAGE, LES QUATRE.
+        #    Mesure du 17 septembre : `plus.html` n'en avait AUCUNE, et
+        #    `sections.html` pas de description. Partagees dans une
+        #    conversation — et c'est ainsi qu'un site comme celui-ci circule —
+        #    elles n'affichaient qu'une adresse nue. Ca ne se voit jamais en
+        #    naviguant : il faut regarder l'en-tete.
+        tete = t[:t.find('</head>')]
+        for cle in ('og:title', 'og:description', 'og:image', 'og:url'):
+            if not re.search(r'property="%s"' % cle, tete):
+                fautes.append('%s : pas de %s — partagee, elle n\'affiche '
+                              'qu\'une adresse' % (chemin, cle))
+        img = re.search(r'property="og:image" content="([^"]+)"', tete)
+        if img:
+            f_img = img.group(1)
+            if f_img.startswith(SITE):
+                if not (RACINE / f_img[len(SITE):].lstrip('/')).is_file():
+                    fautes.append('%s : og:image designe %s, qui n\'existe pas'
+                                  % (chemin, f_img))
+
+        # 8. LES DONNEES STRUCTUREES DOIVENT SE LIRE.
+        #    Un JSON-LD mal forme est ignore en silence par Google : la page
+        #    croit le porter, il ne compte pas. On le PARSE plutot que de
+        #    verifier sa presence. L'accueil n'en avait aucune alors que les
+        #    38 lecons et les 12 couvertures en portent une.
+        blocs = re.findall(r'<script type="application/ld\+json">(.*?)</script>',
+                           tete, re.S)
+        if not blocs:
+            fautes.append('%s : aucune donnee structuree' % chemin)
+        for bloc in blocs:
+            try:
+                d = json.loads(bloc)
+            except Exception as e:
+                fautes.append('%s : JSON-LD illisible (%s)' % (chemin, e))
+                continue
+            for cle in ('@context', '@type'):
+                if cle not in d:
+                    fautes.append('%s : JSON-LD sans %s' % (chemin, cle))
+
     # 6. L'inverse : rien de ce qui porte noindex ne doit etre annonce.
     for p in sorted(RACINE.glob('*.html')):
         t = p.read_text(encoding='utf-8')
@@ -141,6 +183,7 @@ def main():
 
     print('  %d adresses annoncees, toutes demandees au serveur.' % len(adresses))
     print('  Aucun doublon, aucun noindex, aucune page vide, canonicals conformes.')
+    print('  Balises de partage completes et donnees structurees lisibles.')
 
 
 if __name__ == '__main__':
