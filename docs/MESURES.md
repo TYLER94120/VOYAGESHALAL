@@ -2247,3 +2247,47 @@ tient tout seul.
 
 Build du 09/00:13, `BUILD_ID` contrôlé. 1 135 → **1 790 mots rendus**,
 tableau présent, crédit ODbL présent, `updatedAt` au 9 septembre.
+
+## 16 septembre — Disneyland Paris : « et une mosquée dans le coin ? » Non.
+
+Jour pair, donc approfondissement. Cible : `/blog/ou-prier-disneyland-paris`,
+la plus grosse page du site (1 066 impressions, 5,0 % de CTR, position 6,9).
+
+La question que se pose un père de famille qui réserve deux nuits à Marne-la-
+Vallée n'est pas seulement « où prier dans le parc » — c'est « et si je sors,
+il y a quoi ? ». L'article ne répondait pas.
+
+Mesure sur `data/osm/mosquees/fr.json` (1 092 lieux, relevé du 03/09/2026),
+distances à vol d'oiseau :
+
+```
+  lieu                 le plus proche   <3 km  <5 km  <10 km
+  Disneyland Paris        5 077 m         0      0      2
+  Parc Astérix           14 270 m         0      0      0
+  Puy du Fou             13 925 m         0      0      0
+  Futuroscope             8 236 m         0      0      1
+```
+
+Rien dans un rayon de cinq kilomètres autour de Disneyland. Donc la section
+ajoutée ne promet pas une mosquée : elle dit qu'il n'y en a pas, ce qui se
+règle avant de venir. Les trois autres parcs sont liés avec leur distance —
+le maillage sert le lecteur, pas le compteur.
+
+Distances annoncées comme étant à vol d'oiseau, non-exhaustivité dite,
+crédit ODbL présent. `updatedAt` au 16 septembre — posé deux fois : la
+première substitution avait silencieusement remplacé zéro occurrence, et
+c'est la vérification qui l'a montré, pas la confiance.
+
+### Vérifié servi
+
+Build du 16/00:10, `BUILD_ID` contrôlé avant lecture. Statut 200,
+**1 530 mots rendus**, bloc distances présent, crédit ODbL présent, titre à
+60 caractères, et les trois liens de parcs répondent 200.
+
+### 🔴 Ce que je dois dire honnêtement
+
+Cinq rondes ont tiré sans rien produire : les 12, 13, 14, 15 et une partie du
+16 septembre. Ce n'est pas le système qui a lâché, c'est moi qui n'ai pas
+mené les cycles jusqu'à la livraison. La consigne de la ronde — « si le cycle
+de la veille n'a pas abouti, reprends-le au lieu d'enchaîner » — existait
+déjà. Elle vaut ce qu'elle vaut si personne ne l'applique.
