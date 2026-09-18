@@ -32,8 +32,12 @@
       .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
   }
 
+  // 1259 -> « 1 259 », avec une espace INSECABLE. `sections.js` en posait
+  // une, celle-ci une espace ordinaire : le meme nombre pouvait donc se
+  // couper en fin de ligne sur la couverture et pas sur la grille. Un
+  // nombre ne se coupe jamais.
   function espacer(n) {
-    return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+    return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
   }
 
   /* Le slug vient soit de /section/<slug>, soit de ?section=<slug>. Les deux
@@ -58,12 +62,19 @@
 
   Promise.all([
     fetch('data/sections.json').then(function (r) { return r.json(); }),
-    fetch('data/questions/' + slug + '.json')
-      .then(function (r) { return r.ok ? r.json() : []; })
-      ['catch'](function () { return []; }),
+    // L'INDEX PLUTOT QUE LA BANQUE. Cette couverture ne fait que COMPTER :
+    // le nombre de questions, les themes, la repartition par niveau et le
+    // pourcentage de maitrise. Elle telechargeait pourtant la banque entiere
+    // — 1 031 Ko pour « Vocabulaire arabe », enonces et explications compris —
+    // pour n'en tirer que ces quatre choses. L'index les porte toutes, en
+    // 53 Ko pour les douze sections reunies.
+    fetch('data/index-sections.json')
+      .then(function (r) { return r.ok ? r.json() : {}; })
+      ['catch'](function () { return {}; }),
     P ? P.charger() : Promise.resolve({})
   ]).then(function (tout) {
-    var sections = tout[0], banque = tout[1];
+    var sections = tout[0], index = tout[1];
+    var e = index[slug] || { n: 0, themes: [], niveaux: {}, ids: [] };
     var sec = null;
     for (var i = 0; i < sections.length; i++) {
       if (sections[i].slug === slug) { sec = sections[i]; }
@@ -73,15 +84,12 @@
     document.title = sec.nom + ' — Islam pas à pas';
 
     var d = M.charger();
-    var ids = banque.map(function (q) { return q.id; });
-    var pc = M.maitrise(d, ids);
+    var pc = M.maitrise(d, e.ids);
 
-    // Les themes, dans l'ordre ou ils apparaissent dans la banque.
-    var themes = [], vus = {};
-    for (var k = 0; k < banque.length; k++) {
-      var t = banque[k].theme;
-      if (t && !Object.prototype.hasOwnProperty.call(vus, t)) { vus[t] = 1; themes.push(t); }
-    }
+    // Les themes, dans l'ordre ou ils apparaissent dans la banque : l'index
+    // les a releves dans cet ordre-la a la fabrication.
+    var themes = e.themes || [];
+    var combien = e.n;
 
     var h = '';
 
@@ -114,22 +122,22 @@
     h += '<p class="couv-quoi">' + ech(sec.quoi || '') + '</p>';
 
     h += '<div class="chiffres">'
-      + '<div class="chiffre"><b>' + (banque.length ? espacer(banque.length) : '—')
-      + '</b><span>question' + (banque.length > 1 ? 's' : '') + '</span></div>'
+      + '<div class="chiffre"><b>' + (combien ? espacer(combien) : '—')
+      + '</b><span>question' + (combien > 1 ? 's' : '') + '</span></div>'
       + '<div class="chiffre"><b>' + (themes.length || '—') + '</b><span>thème'
       + (themes.length > 1 ? 's' : '') + '</span></div>'
       + '<div class="chiffre"><b' + (pc ? ' data-ton="or"' : '') + '>'
-      + (banque.length ? pc + '%' : '—') + '</b><span>maîtrisé</span></div>'
+      + (combien ? pc + '%' : '—') + '</b><span>maîtrisé</span></div>'
       + '</div>';
 
     // Les trois niveaux, avec ce qu'ils contiennent reellement. On le dit ici
     // plutot que de laisser la personne le decouvrir a l'ecran suivant.
-    if (banque.length) {
-      var parNiveau = { 1: 0, 2: 0, 3: 0 };
-      for (var m = 0; m < banque.length; m++) {
-        var nv = banque[m].niveau || 2;
-        parNiveau[nv] = (parNiveau[nv] || 0) + 1;
-      }
+    if (combien) {
+      var parNiveau = {
+        1: (e.niveaux && e.niveaux['1']) || 0,
+        2: (e.niveaux && e.niveaux['2']) || 0,
+        3: (e.niveaux && e.niveaux['3']) || 0
+      };
       var LIB = { 1: 'Début', 2: 'Intermédiaire', 3: 'Expert' };
       h += '<div class="pile-11"><h2 class="t-bloc">Les trois niveaux</h2>'
         + '<div class="couv-niveaux">';
@@ -161,7 +169,7 @@
     h += '</div>';
 
     // --- Le pied fixe ------------------------------------------------
-    if (banque.length) {
+    if (combien) {
       h += '<div class="couv-fixe">'
         + '<a class="bouton bouton-vert" href="section/' + ech(slug) + '/qcm">'
         + 'Préparer un QCM</a>'

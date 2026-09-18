@@ -18,14 +18,24 @@
   }
 
   var d = M.charger();
-  fetch('data/sections.json').then(function (r) { return r.json(); })
-    .then(function (sections) {
-      return Promise.all(sections.map(function (s) {
-        return fetch('data/questions/' + s.slug + '.json')
-          .then(function (x) { return x.ok ? x.json() : []; })
-          .catch(function () { return []; })
-          .then(function (b) { return { s: s, ids: b.map(function (q) { return q.id; }) }; });
-      }));
+  // L'INDEX PLUTOT QUE LES ONZE BANQUES.
+  // Mesure du 18 septembre : cette page telechargeait 2 490 Ko de banques
+  // entieres — tous les enonces, toutes les reponses, toutes les explications
+  // — pour n'en tirer que des nombres et des identifiants. L'index en porte
+  // 53 Ko. La methode maison sur les conditions degradees le dit : le reseau
+  // n'est presque jamais absent, il est lent, et la meilleure facon de tenir
+  // dans un reseau lent est de ne pas demander ce dont on n'a pas besoin.
+  // `reglages.js` et `qcm.js` chargent toujours la banque de la section
+  // qu'on joue : il leur faut les questions, pas seulement leur nombre.
+  Promise.all([
+    fetch('data/sections.json').then(function (r) { return r.json(); }),
+    fetch('data/index-sections.json').then(function (r) { return r.json(); })
+  ])
+    .then(function (tout) {
+      var sections = tout[0], index = tout[1];
+      return sections.map(function (s) {
+        return { s: s, ids: (index[s.slug] || { ids: [] }).ids };
+      });
     })
     .then(function (lots) {
       var vues = 0, acquises = 0, total = 0;

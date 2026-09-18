@@ -153,16 +153,30 @@
     // apres deux etapes a venir donnerait un chemin troue : rien ne serait
     // faux, et ca suffirait a detruire la lecture du trajet.
     var ordre = sections.slice().sort(function (a, b) { return (a.num || 99) - (b.num || 99); });
-    Promise.all(ordre.map(function (sec) {
-      return fetch('data/questions/' + sec.slug + '.json')
-        .then(function (x) { return x.ok ? x.json() : []; })
-        .then(function (b) { return { ids: b.map(function (q) { return q.id; }) }; })
-        ['catch'](function () { return { ids: [] }; });
-    })).then(function (lots) {
-      if (window.IPAP_CHEMIN) {
-        window.IPAP_CHEMIN.poser(document.getElementById('chemin'), ordre, lots, d);
-      }
-    });
+
+    // L'INDEX PLUTOT QUE LES ONZE BANQUES.
+    // Mesure du 18 septembre : l'accueil telechargeait 2 490 Ko de banques
+    // entieres — enonces, reponses, explications, references — pour n'en
+    // tirer que des identifiants, le temps de colorer douze medaillons.
+    // L'index en porte 53 Ko. La methode maison sur les conditions
+    // degradees le dit : le reseau n'est presque jamais absent, il est lent,
+    // et la meilleure facon de tenir dans un reseau lent est de ne pas
+    // demander ce dont on n'a pas besoin.
+    //
+    // Le chemin est pose MEME SI l'index ne vient pas : on retombe alors sur
+    // des etapes sans pourcentage, ce qui reste un chemin lisible et
+    // cliquable. Un ecran de chargement qui tourne serait pire.
+    fetch('data/index-sections.json')
+      .then(function (x) { return x.ok ? x.json() : {}; })
+      ['catch'](function () { return {}; })
+      .then(function (index) {
+        var lots = ordre.map(function (sec) {
+          return { ids: (index[sec.slug] || { ids: [] }).ids };
+        });
+        if (window.IPAP_CHEMIN) {
+          window.IPAP_CHEMIN.poser(document.getElementById('chemin'), ordre, lots, d);
+        }
+      });
   }).catch(function () {
     document.getElementById('chemin').innerHTML =
       '<p style="font-size:14px;color:var(--texte-2)">Les sections n\'ont pas pu être chargées.</p>';

@@ -25,21 +25,27 @@
     return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
   }
 
-  fetch('data/sections.json').then(function (r) { return r.json(); })
-    .then(function (sections) {
+  // L'INDEX PLUTOT QUE LES ONZE BANQUES.
+  // Mesure du 18 septembre : cette page telechargeait 2 490 Ko de banques
+  // entieres — tous les enonces, toutes les reponses, toutes les explications
+  // — pour n'en tirer que des nombres et des identifiants. L'index en porte
+  // 53 Ko. La methode maison sur les conditions degradees le dit : le reseau
+  // n'est presque jamais absent, il est lent, et la meilleure facon de tenir
+  // dans un reseau lent est de ne pas demander ce dont on n'a pas besoin.
+  // `reglages.js` et `qcm.js` chargent toujours la banque de la section
+  // qu'on joue : il leur faut les questions, pas seulement leur nombre.
+  Promise.all([
+    fetch('data/sections.json').then(function (r) { return r.json(); }),
+    fetch('data/index-sections.json').then(function (r) { return r.json(); })
+  ])
+    .then(function (tout) {
+      var sections = tout[0], index = tout[1];
       var d = M.charger();
-      return Promise.all(sections.map(function (sec) {
-        return fetch('data/questions/' + sec.slug + '.json')
-          .then(function (x) { return x.ok ? x.json() : []; })
-          .catch(function () { return []; })
-          .then(function (b) {
-            return {
-              sec: sec,
-              n: b.length,
-              pc: M.maitrise(d, b.map(function (q) { return q.id; }))
-            };
-          });
-      })).then(function (lots) { return { lots: lots, d: d }; });
+      var lots = sections.map(function (sec) {
+        var e = index[sec.slug] || { n: 0, ids: [] };
+        return { sec: sec, n: e.n, pc: M.maitrise(d, e.ids) };
+      });
+      return { lots: lots, d: d };
     })
     .then(function (res) {
       var lots = res.lots, d = res.d;
