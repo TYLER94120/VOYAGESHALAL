@@ -43,6 +43,13 @@ const PAGES = [
   ['sections.html', 400],
   ['progres.html', 400],
   ['section/vocabulaire-arabe', 400],
+  // L'ECRAN DE REGLAGE EN FAIT PARTIE depuis le 19 septembre. Il ne fait que
+  // compter lui aussi — le total de la section et la repartition par niveau —
+  // et il telechargeait 1 107 Ko pour « Vocabulaire arabe ». C'est l'ecran
+  // d'avant de jouer : celui ou l'on attend deja, le doigt sur le bouton.
+  // `qcm.html`, lui, n'est PAS dans cette liste : il lui faut les questions.
+  ['section/vocabulaire-arabe/qcm', 400],
+  ['section/sens-des-sourates/qcm', 400],
 ];
 
 const fautes = [];

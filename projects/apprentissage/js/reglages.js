@@ -182,30 +182,49 @@
       + (r.serie ? '' : '&serie=0');
   });
 
-  // --- La banque, pour connaitre le vrai plafond ------------------------
+  // 1259 -> « 1 259 », avec une espace INSECABLE, comme la grille des
+  // sections et la couverture. Cet ecran ecrivait « 1259 questions » d'une
+  // seule traite : le meme nombre s'ecrivait de deux facons selon l'ecran
+  // ou on le lisait.
+  function espacer(n) {
+    return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+  }
+
+  // --- L'INDEX, POUR CONNAITRE LE VRAI PLAFOND --------------------------
+  //
+  // Cet ecran ne fait que COMPTER : le total de la section et la repartition
+  // par niveau, qui plafonnent le curseur et s'affichent sur les trois
+  // boutons. Il telechargeait pourtant la banque entiere — mesure du
+  // 19 septembre : 1 107 Ko pour « Vocabulaire arabe », dont 1 031 Ko de
+  // questions, juste pour afficher trois nombres et un curseur.
+  //
+  // C'est l'ecran d'AVANT de jouer : celui ou l'on attend deja, le doigt
+  // sur le bouton. `qcm.js` chargera la banque quand on commencera — la,
+  // elle sert vraiment.
   Promise.all([
     fetch('data/sections.json').then(function (x) { return x.json(); }),
-    fetch('data/questions/' + slug + '.json').then(function (x) { return x.ok ? x.json() : []; })
-      .catch(function () { return []; })
+    fetch('data/index-sections.json').then(function (x) { return x.ok ? x.json() : {}; })
+      .catch(function () { return {}; })
   ]).then(function (res) {
     var sec = null;
     for (var i = 0; i < res[0].length; i++) { if (res[0][i].slug === slug) { sec = res[0][i]; } }
-    var banque = res[1];
+    var e = res[1][slug] || { n: 0, niveaux: {} };
     document.getElementById('titre').textContent = sec ? sec.nom : 'Régler ton QCM';
 
-    if (!banque.length) {
+    if (!e.n) {
       document.getElementById('sous').textContent =
         "Cette section n'a pas encore de questions.";
       document.getElementById('commencer').disabled = true;
       return;
     }
-    // Le compte par niveau, lu dans la banque : c'est lui qui s'affiche sur
-    // les trois boutons et qui plafonne le curseur.
-    parNiveau = { 1: 0, 2: 0, 3: 0 };
-    for (var b = 0; b < banque.length; b++) {
-      var n = banque[b].niveau || 2;
-      parNiveau[n] = (parNiveau[n] || 0) + 1;
-    }
+    // Le compte par niveau, lu dans l'index : c'est lui qui s'affiche sur
+    // les trois boutons et qui plafonne le curseur. `controler-index.py`
+    // le reconfronte a la banque a chaque publication.
+    parNiveau = {
+      1: (e.niveaux && e.niveaux['1']) || 0,
+      2: (e.niveaux && e.niveaux['2']) || 0,
+      3: (e.niveaux && e.niveaux['3']) || 0
+    };
     var bn = document.querySelectorAll('.niveau');
     for (var k = 0; k < bn.length; k++) {
       var nv = parseInt(bn[k].getAttribute('data-niveau'), 10);
@@ -222,7 +241,7 @@
     document.getElementById('curseur').min = Math.min(MINI, plafond || MINI);
 
     document.getElementById('sous').textContent =
-      banque.length + ' questions dans cette section, toutes sourcées.';
+      espacer(e.n) + ' questions dans cette section, toutes sourcées.';
     dire();
   }).catch(function () {
     document.getElementById('sous').textContent = 'La section n\'a pas pu être chargée.';
