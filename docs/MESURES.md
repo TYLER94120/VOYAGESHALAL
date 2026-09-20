@@ -2291,3 +2291,63 @@ Cinq rondes ont tiré sans rien produire : les 12, 13, 14, 15 et une partie du
 mené les cycles jusqu'à la livraison. La consigne de la ronde — « si le cycle
 de la veille n'a pas abouti, reprends-le au lieu d'enchaîner » — existait
 déjà. Elle vaut ce qu'elle vaut si personne ne l'applique.
+
+## 20 septembre — Orly : la salle ouvre à 7h, et l'avion part à 6h
+
+Jour pair, approfondissement. Cible choisie par la mesure, pas par le goût :
+`/blog/ou-prier-aeroport-orly` — **280 affichages, 1,4 % de CTR, position
+10,9**. C'est l'une des deux pages sur lesquelles la thèse de Mohamed tient
+(relevé du 30 août) : même site, même format, position voisine de pages qui
+font 12,5 % et 15,8 %, et dix fois moins de clics.
+
+L'article disait déjà, honnêtement, que **Fajr est structurellement perdu à
+Orly** : la salle n'ouvre qu'à 7h, les vols partent à 6h. Il ne disait pas
+quoi faire de cette phrase. C'est le trou.
+
+### La mesure
+
+`data/osm/mosquees/fr.json` (1 092 lieux, relevé du 03/09/2026), distances à
+vol d'oiseau depuis le terminal :
+
+```
+  aéroport     <3 km  <5 km  <10 km   le plus proche
+  Orly            5      6     24     2 321 m
+  CDG             0      0      9     6 397 m (Villepinte)
+  Beauvais        1      2      2     2 567 m
+```
+
+**Orly est un aéroport de ville, Roissy est entouré de pistes et de fret.**
+Cinq lieux de prière à moins de trois kilomètres d'Orly, aucun à moins de
+cinq de CDG. Ce n'est pas une nuance : ça change la décision de l'heure
+d'arrivée pour un vol matinal. Pour Orly, Fajr se règle *sur la route*, pas
+dans le terminal.
+
+Trois des cinq portent un nom dans nos données — ABPE à Athis-Mons (2,5 km),
+Vigneux-sur-Seine (3,0 km), mosquée d'Orly (4,0 km). Les deux autres sont
+comptés, pas nommés : **nous ne nommons pas ce que la base ne nomme pas.**
+Aucun horaire d'ouverture n'est écrit : nous ne les avons pas. Le lecteur
+est renvoyé vers `/mosquee-proche`, qui donne les lieux à jour.
+
+### 🔴 Le bloc a d'abord atterri dans le MAUVAIS article
+
+Mon insertion cherchait l'ancre après la première occurrence de
+`ou-prier-aeroport-orly` dans `lib/data.ts` — sauf que cette première
+occurrence est **un lien vers Orly à l'intérieur de l'article CDG**. Le bloc
+s'est donc écrit dans CDG, où il affirmait exactement l'inverse de la vérité
+mesurée : « cinq lieux à moins de trois kilomètres » autour d'un aéroport
+qui n'en a aucun à moins de cinq.
+
+C'est la vérification sur page servie qui l'a montré — « bloc mosquées :
+ABSENT » sur Orly, alors que le fichier contenait bien le texte. Sans elle,
+je publiais une fausse affirmation sur la page la plus lue de la série
+aéroports. **Un `indexOf` sur un slug trouve les liens avant la fiche.**
+
+### Vérifié servi
+
+Build du 20/00:11, `BUILD_ID` contrôlé avant lecture. Orly : 200, 1 647 →
+**1 940 mots rendus**, bloc présent, comparaison CDG présente, crédit ODbL
+présent, `/mosquee-proche` répond 200. CDG : 200, bloc bien **absent**.
+
+⚠️ Le lien pointait d'abord vers `/mosquee-pres-de-moi`, qui n'existe pas.
+La route est `/mosquee-proche`. Corrigé avant le build — « un bouton sans
+destination n'existe pas ».
