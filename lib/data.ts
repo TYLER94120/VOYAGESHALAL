@@ -3898,7 +3898,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Pratique',
     readTime: "7 min",
     publishedAt: '2026-07-20',
-    updatedAt: '2026-08-29',
+    updatedAt: '2026-09-20',
     tags: ["Orly", "Paris", "Aéroports", "Prière"],
     content: `<p>Tu voyages depuis Orly et tu cherches où prier ? Voici ce qu'on sait, d'où ça vient, ce qu'on ignore, et surtout comment t'organiser — parce qu'à Orly le vrai problème n'est pas de trouver la salle, c'est de la trouver <strong>ouverte</strong>.</p>
 
@@ -3942,6 +3942,14 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <h2>La prière qui pose problème</h2>
 <p>À Orly, c'est <strong>Fajr</strong>, et c'est structurel : l'aéroport enchaîne les départs matinaux, la salle n'ouvre qu'à 7h, et le créneau de Fajr se termine au lever du soleil — donc avant l'ouverture pendant une grande partie de l'année. En hiver, <strong>Isha</strong> pose le problème symétrique : elle tombe après la fermeture pour un vol du soir.</p>
 <p>Le réflexe qui règle ça : regarder les horaires du jour <em>avant de partir de chez toi</em>. Nos <a href="/horaires-priere">horaires de prière</a> les donnent pour Paris et sa banlieue sud, et la page fonctionne encore sans réseau une fois ouverte. Retiens aussi que <strong>l'embarquement ferme environ 20 minutes avant le décollage</strong> : c'est cette heure-là qui décide si tu pries maintenant ou à la porte, pas l'heure de départ affichée.</p>
+
+<h2>Et une mosquée à côté de l'aéroport ? Oui — et c'est la réponse au vol de 6h</h2>
+<p>C'est la suite logique du problème ci-dessus : si la salle n'ouvre qu'à 7h, la vraie question n'est pas « où prier <em>dans</em> Orly » mais « où prier <em>autour</em> d'Orly ». Et là, la réponse change tout — <strong>Orly est un aéroport de ville</strong>.</p>
+<p>Relevé dans notre base OpenStreetMap des lieux de prière en France (1 092 lieux, relevé du 3 septembre 2026), distances à vol d'oiseau depuis le terminal :</p>
+<p><strong>5 lieux de prière à moins de 3 km d'Orly</strong>, 6 à moins de 5 km, 24 à moins de 10 km. Trois portent un nom dans nos données : la <strong>salle de prière ABPE à Athis-Mons (2,5 km)</strong>, la <strong>mosquée de Vigneux-sur-Seine (3,0 km)</strong>, la <strong>mosquée d'Orly (4,0 km)</strong>.</p>
+<p>La comparaison avec Roissy est frappante, et elle vaut d'être connue avant de choisir son heure d'arrivée : <strong>autour de CDG, aucun lieu de prière à moins de 5 km</strong> dans le même relevé — le plus proche est à 6,4 km, à Villepinte. Orly est entouré de communes denses, Roissy est entouré de pistes et de fret.</p>
+<p>Concrètement : pour un vol matinal à Orly, <strong>Fajr se règle avant l'aéroport, pas dedans</strong>, et pas forcément chez toi — il y a des lieux sur la route. <a href="/mosquee-proche">Notre outil « mosquée près de moi »</a> te géolocalise et donne les lieux à jour ; nous préférons t'y envoyer plutôt que de citer un horaire d'ouverture que nous n'avons pas vérifié.</p>
+<p><em>Distances à vol d'oiseau, donc plus courtes que le trajet réel. Relevé non exhaustif : une salle non cartographiée n'y figure pas. Données © les contributeurs OpenStreetMap.</em></p>
 
 <h2>Avec des enfants, une poussette, un bagage cabine</h2>
 <p>Un <strong>tapis de prière de poche ne pose aucun problème au contrôle</strong> : c'est un objet courant et personne ne s'en étonne. Range-le sur le côté du sac plutôt qu'au fond, tu le sortiras plus vite. Avec une poussette, descendre au niveau -1 puis remonter coûte cher en temps : si ton vol part d'un autre bâtiment, le coin calme près de la porte est souvent le choix raisonnable.</p>
