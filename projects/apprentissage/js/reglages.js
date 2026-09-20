@@ -228,7 +228,9 @@
     var bn = document.querySelectorAll('.niveau');
     for (var k = 0; k < bn.length; k++) {
       var nv = parseInt(bn[k].getAttribute('data-niveau'), 10);
-      bn[k].querySelector('.choix-nb').textContent = parNiveau[nv] || 0;
+      // Espacer : le bouton « Expert » de Vocabulaire arabe affichait 1251
+      // pendant que la phrase du dessus disait « 1 259 questions ».
+      bn[k].querySelector('.choix-nb').textContent = espacer(parNiveau[nv] || 0);
       // Un niveau vide n'est pas propose : il ouvrirait sur rien.
       bn[k].disabled = !parNiveau[nv];
       if (!parNiveau[nv]) { bn[k].setAttribute('data-hors', 'oui'); }

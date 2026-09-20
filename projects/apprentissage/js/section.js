@@ -75,6 +75,23 @@
   ]).then(function (tout) {
     var sections = tout[0], index = tout[1];
     var e = index[slug] || { n: 0, themes: [], niveaux: {}, ids: [] };
+
+    // CE BLOC ETAIT DEJA ECRIT DANS LA PAGE, ET CE SCRIPT L'EFFACAIT.
+    //
+    // Mesure du 20 septembre, en ouvrant les deux rendus de
+    // /section/sens-des-sourates : le HTML servi portait 38 liens vers les
+    // lecons de sourates ; une fois le script passe, il en restait trois,
+    // dont le logo et le bouton de QCM. La couverture de la section qui
+    // PARLE des sourates expliquees verset par verset n'en proposait
+    // aucune au visiteur. Elles restaient joignables par sourates.html,
+    // mais pas depuis la page qui les annonce.
+    //
+    // On le releve tel quel plutot que de le reecrire ici : une prose
+    // recopiee a deux endroits finit toujours par differer de l'autre, et
+    // celle-ci porte 38 noms de sourates. Le generateur reste seul maitre
+    // de la liste.
+    var garde = document.getElementById('lecons-sourates');
+    var dejaEcrit = garde ? garde.outerHTML : '';
     var sec = null;
     for (var i = 0; i < sections.length; i++) {
       if (sections[i].slug === slug) { sec = sections[i]; }
@@ -141,8 +158,10 @@
       var LIB = { 1: 'Début', 2: 'Intermédiaire', 3: 'Expert' };
       h += '<div class="pile-11"><h2 class="t-bloc">Les trois niveaux</h2>'
         + '<div class="couv-niveaux">';
+      // Espacer ici aussi : cette couverture ecrivait « 1 259 » en haut et
+      // « 1251 » huit lignes plus bas, sur le meme ecran.
       for (var v = 1; v <= 3; v++) {
-        h += '<div class="couv-niveau"><b>' + parNiveau[v] + '</b><span>'
+        h += '<div class="couv-niveau"><b>' + espacer(parNiveau[v]) + '</b><span>'
           + LIB[v] + '</span></div>';
       }
       h += '</div><p class="c-meta">Le niveau vient de ce qui rend une question '
@@ -158,6 +177,10 @@
       }
       h += '</div></div>';
     }
+
+    // Les lecons, reposees a la place qu'elles avaient dans le HTML servi :
+    // apres les themes, avant la rosace.
+    h += dejaEcrit;
 
     // La rosace de la section, en grand et en clair : la meme que sur la
     // tuile et derriere les versets de ses cartes.

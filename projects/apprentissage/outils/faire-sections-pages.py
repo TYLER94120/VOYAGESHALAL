@@ -278,9 +278,13 @@ def corps_de(sec, total, banque, themes, par_niveau, lecons):
 
         h += '    <div class="pile-11"><h2 class="t-bloc">Les trois niveaux</h2>\n'
         h += '      <div class="couv-niveaux">\n'
+        # ESPACER ICI AUSSI. La couverture de « Vocabulaire arabe » ecrivait
+        # « 1 259 » en haut et « 1251 » huit lignes plus bas, sur le meme
+        # ecran : le grand nombre passait par espacer(), les trois nombres
+        # des niveaux non. Un nombre s'ecrit de la meme facon partout.
         for v in (1, 2, 3):
-            h += ('        <div class="couv-niveau"><b>%d</b><span>%s</span></div>\n'
-                  % (par_niveau.get(v, 0), NIVEAUX[v]))
+            h += ('        <div class="couv-niveau"><b>%s</b><span>%s</span></div>\n'
+                  % (espacer(par_niveau.get(v, 0)), NIVEAUX[v]))
         h += '      </div>\n    </div>\n'
 
         if themes:
@@ -294,8 +298,18 @@ def corps_de(sec, total, banque, themes, par_niveau, lecons):
         # versets ; sans ce bloc, la couverture est un cul-de-sac vers un
         # bouton, et les vingt-trois lecons n'ont qu'une seule page qui y
         # mene. Aucune autre section n'a d'equivalent a proposer.
+        #
+        # L'IDENTIFIANT SERT A `section.js`. Mesure du 20 septembre : ce bloc
+        # etait bien servi — 38 liens de lecons dans le HTML — et le script
+        # l'effacait en reconstruisant la couverture. Sans JavaScript on
+        # lisait 38 liens ; avec, il en restait trois, dont un logo. La page
+        # qui PARLE des sourates expliquees n'en proposait aucune au
+        # visiteur. `section.js` releve donc ce bloc par son identifiant et
+        # le repose tel quel : le texte ne vit qu'a un endroit, et les deux
+        # rendus ne peuvent plus diverger.
         if lecons:
-            h += ('    <div class="pile-11"><h2 class="t-bloc">Les sourates '
+            h += ('    <div class="pile-11" id="lecons-sourates">'
+                  '<h2 class="t-bloc">Les sourates '
                   'expliquées verset par verset</h2>\n')
             h += '      <div class="pastilles">\n'
             for num, tr, f in lecons:

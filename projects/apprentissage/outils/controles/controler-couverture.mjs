@@ -20,11 +20,27 @@
       present dans le fichier : du texte pose dans un conteneur masque ne
       servirait ni au lecteur ni au robot.
 
+   Une troisieme, le 20 septembre, ne se voyait qu'en comparant les deux
+   rendus l'un a l'autre :
+
+   3. Le bloc « Les sourates expliquées verset par verset » — 38 liens vers
+      les lecons — etait servi dans le HTML et EFFACE par `section.js`, qui
+      reconstruit toute la couverture. Sans JavaScript, 38 liens ; avec, il
+      en restait trois, dont le logo et le bouton de QCM. Le controle
+      d'alors exigeait ces liens UNIQUEMENT sans JavaScript : il constatait
+      donc la faute sans la voir. Ce qu'on montre au robot et ce qu'on
+      montre au visiteur doivent etre la meme chose ; c'est desormais exige
+      dans les deux rendus.
+
    CE QU'IL VERIFIE, sur trois sections choisies pour leurs cas limites
    -------------------------------------------------------------------
-   PLEINE   : la plus fournie, avec les liens vers les 23 lecons ;
+   PLEINE   : la plus fournie, avec les liens vers les lecons de sourates ;
    COURTE   : une section a peine remplie ;
    VIDE     : la seule sans question, qui ne doit offrir aucun bouton de QCM.
+
+   Et sur la plus grosse section, que TOUT nombre affiche a quatre chiffres
+   porte son separateur : « Vocabulaire arabe » ecrivait « 1 259 » en haut
+   de sa couverture et « 1251 » huit lignes plus bas.
    ========================================================================== */
 
 import { chromium } from 'playwright-core';
@@ -35,9 +51,13 @@ const BASE = 'http://127.0.0.1:8899/section/';
 const PLEINE = 'sens-des-sourates';
 const COURTE = 'le-pelerinage';
 const VIDE = 'vie-du-prophete';
+// La seule section qui depasse mille questions : c'est la seule ou un
+// separateur manquant se voit.
+const GROSSE = 'vocabulaire-arabe';
 
 const fautes = [];
 const verifier = (ok, quoi) => { if (!ok) fautes.push(quoi); };
+const lecoParRendu = {};
 
 const navigateur = await chromium.launch({ executablePath: EXE });
 
@@ -47,7 +67,7 @@ for (const avecJS of [true, false]) {
     javaScriptEnabled: avecJS });
   const quand = avecJS ? 'avec JS' : 'sans JS';
 
-  for (const slug of [PLEINE, COURTE, VIDE]) {
+  for (const slug of [PLEINE, COURTE, VIDE, GROSSE]) {
     const p = await c.newPage();
     await p.goto(BASE + slug,
       { waitUntil: avecJS ? 'networkidle' : 'domcontentloaded' });
@@ -93,27 +113,81 @@ for (const avecJS of [true, false]) {
         `${slug} ${quand} : aucun lien vers le QCM de la section`);
     }
 
+    // LES LECONS, DANS LES DEUX RENDUS, ET LES MEMES.
+    // Exiger ces liens seulement sans JavaScript revenait a accepter que le
+    // visiteur voie moins que le robot. On compte les deux et on compare.
     if (slug === PLEINE) {
       const lecons = await p.evaluate(() =>
-        document.querySelectorAll('a[href^="lecon-sourate-"]').length);
-      if (!avecJS) {
-        verifier(lecons >= 20,
-          `${slug} sans JS : ${lecons} liens vers des lecons, attendu au `
-          + 'moins 20 — c\'est le seul maillage que le robot voit');
-      }
+        [...document.querySelectorAll('a[href^="lecon-sourate-"]')]
+          .map((a) => a.getAttribute('href')));
+      verifier(lecons.length >= 20,
+        `${slug} ${quand} : ${lecons.length} liens vers des lecons, attendu au `
+        + 'moins 20 — la couverture de la section qui parle des sourates '
+        + 'expliquees doit y mener');
+      lecoParRendu[quand] = lecons;
+    }
+
+    // TOUT NOMBRE AFFICHE A QUATRE CHIFFRES PORTE SON SEPARATEUR.
+    // On ne regarde pas le texte de la page au hasard — une date en
+    // porterait un a tort — mais les cases qui affichent un COMPTE.
+    if (slug === GROSSE) {
+      const bruts = await p.evaluate(() =>
+        [...document.querySelectorAll('.chiffre b, .couv-niveau b')]
+          .map((e) => e.textContent.trim())
+          .filter((t) => /^\d{4,}$/.test(t)));
+      verifier(bruts.length === 0,
+        `${slug} ${quand} : ${bruts.length} nombre(s) affiche(s) sans `
+        + `separateur — ${bruts.join(', ')} — alors que la meme page ecrit `
+        + 'les autres avec');
     }
     await p.close();
   }
   await c.close();
 }
 
+// LES MEMES TROIS NOMBRES, UN ECRAN PLUS LOIN.
+// La couverture annonce « 4 · 4 · 1 251 » et l'ecran de reglages reaffiche
+// exactement ces trois nombres sur ses trois boutons de niveau. Ils sont
+// lus dans le meme index ; ils doivent s'ecrire pareil.
+{
+  const c = await navigateur.newContext({ viewport: { width: 390, height: 844 } });
+  const p = await c.newPage();
+  await p.goto(`http://127.0.0.1:8899/section/${GROSSE}/qcm`, { waitUntil: 'networkidle' });
+  await p.waitForSelector('.niveau');
+  await p.waitForTimeout(400);
+  const bruts = await p.evaluate(() =>
+    [...document.querySelectorAll('.choix-nb')]
+      .map((e) => e.textContent.trim()).filter((t) => /^\d{4,}$/.test(t)));
+  verifier(bruts.length === 0,
+    `${GROSSE}/qcm : ${bruts.length} nombre(s) affiche(s) sans separateur `
+    + `— ${bruts.join(', ')} — sous une phrase qui dit « 1 259 questions »`);
+  await c.close();
+}
+
 await navigateur.close();
+
+// LA MEME LISTE, DANS LE MEME ORDRE. Un nombre egal de liens ne suffirait
+// pas : c'est de montrer au robot autre chose qu'au visiteur qui serait
+// fautif, pas d'en montrer autant.
+const a = lecoParRendu['avec JS'] || [];
+const s = lecoParRendu['sans JS'] || [];
+if (a.join('|') !== s.join('|')) {
+  const manque = s.filter((x) => a.indexOf(x) < 0);
+  const enTrop = a.filter((x) => s.indexOf(x) < 0);
+  fautes.push(`${PLEINE} : la liste des lecons differe entre les deux rendus `
+    + `— ${manque.length} absente(s) avec JavaScript (${manque.slice(0, 4).join(', ')}), `
+    + `${enTrop.length} en trop`);
+}
 
 if (fautes.length) {
   console.log(`  ${fautes.length} FAUTE(S) :`);
   fautes.forEach((f) => console.log('    ' + f));
   process.exit(1);
 }
-console.log('  Trois couvertures relues avec et sans JavaScript : du texte');
-console.log('  visible dans les six cas, aucune etiquette qui deborde,');
+console.log('  Quatre couvertures relues avec et sans JavaScript : du texte');
+console.log('  visible dans les huit cas, aucune etiquette qui deborde,');
 console.log('  aucun defilement lateral, et pas de QCM promis sur du vide.');
+console.log(`  Les ${a.length} lecons de sourates sont proposees dans les deux`);
+console.log('  rendus, les memes et dans le meme ordre ; et les nombres a');
+console.log('  quatre chiffres portent leur separateur sur la couverture');
+console.log('  comme sur l\'ecran de reglages qui les reaffiche.');
