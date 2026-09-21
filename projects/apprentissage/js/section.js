@@ -57,6 +57,42 @@
       + ' <a href="sections.html">Voir les sections</a>.</p></div>';
   }
 
+  /* UNE PANNE DE RESEAU N'EFFACE PAS UNE PAGE DEJA ARRIVEE.
+     -------------------------------------------------------
+     Mesure du 21 septembre, en coupant `data/sections.json` sur
+     /section/sens-des-sourates : la page servie portait 940 caracteres, son
+     titre, ses comptes, ses themes et ses 38 liens de lecons — tout etait
+     deja la, lu, affiche. Le `catch` appelait `echouer()`, qui remplacait
+     l'ensemble par 96 caracteres : « Section introuvable — Les sections
+     n'ont pas pu etre chargees. »
+
+     Deux fautes dans le meme geste. On detruit un contenu complet pour
+     l'echec d'un fichier de 4 Ko ; et on annonce au lecteur que la section
+     n'existe pas alors que c'est le reseau qui n'a pas repondu. La methode
+     maison sur les conditions degradees dit l'inverse : le reseau est
+     rarement absent, il est lent ou capricieux, et ce qui est deja affiche
+     doit le rester.
+
+     On ne garde ce qui est ecrit que si quelque chose est vraiment ecrit :
+     `section.html`, la page generique, sert un `#couverture` VIDE et a
+     besoin, elle, du message d'erreur. */
+  function dejaLisible() {
+    var t = document.querySelector('#couverture h1');
+    return !!(t && t.textContent.trim());
+  }
+
+  function panneReseau(message) {
+    if (!dejaLisible()) { return echouer(message); }
+    var ou = document.querySelector('#couverture .couv-corps')
+      || document.getElementById('couverture');
+    var p = document.createElement('p');
+    p.className = 'c-meta';
+    p.setAttribute('role', 'status');
+    p.textContent = "Le réseau n'a pas répondu : l'image de couverture et ton "
+      + 'pourcentage de maîtrise manquent. Tout le reste de cette page est là.';
+    ou.insertBefore(p, ou.firstChild);
+  }
+
   var slug = slugDemande();
   if (!slug) { echouer('Aucune section n\'est demandée.'); return; }
 
@@ -207,6 +243,6 @@
     document.getElementById('couverture').innerHTML = h;
     if (GEO) { GEO.poserMotifs(document); }
   })['catch'](function () {
-    echouer('Les sections n\'ont pas pu être chargées.');
+    panneReseau('Les sections n\'ont pas pu être chargées.');
   });
 }());
