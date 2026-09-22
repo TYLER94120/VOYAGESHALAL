@@ -9,11 +9,37 @@ RESULTAT, toutes sections confondues, et il ne fait confiance a aucun d'eux :
 
   * chaque question qui cite « Coran, sourate S, verset V » doit avoir une
     bonne reponse qui se retrouve DANS ce verset — pas dans un autre ;
+  * chaque question qui affirme un COMPTE sur le Coran entier est recomptee
+    dans le texte ;
   * aucune mauvaise reponse ne doit etre, elle aussi, juste ;
   * aucune question ne doit exister sans source, sans explication, ou avec
     deux reponses identiques ;
   * un identifiant ne doit jamais servir deux fois : deux questions de meme
-    identifiant se remplacent l'une l'autre dans la progression des gens.
+    identifiant se remplacent l'une l'autre dans la progression des gens ;
+  * et une question que rien ici ne sait confronter est une FAUTE.
+
+LE TROU QU'IL AVAIT, ET QUE LA MESURE DU 22 SEPTEMBRE A MONTRE
+--------------------------------------------------------------
+Cet en-tete promettait « CHAQUE question » depuis le premier jour. C'etait
+faux pour 69 d'entre elles sur 2 701.
+
+Elles ne citent aucun verset — elles affirment un compte sur le Coran
+entier : « Combien de versets compte la sourate Al-Fajr ? », « Dans combien
+de versets le nom de Moussa apparait-il ? », « Dans quelle sourate le nom de
+Adam revient-il le plus souvent ? ». Elles arrivaient au test « la source
+cite-t-elle sourate S verset V ? », ne le passaient pas, et un `continue` nu
+les laissait sortir sans qu'aucun controle ne les ait regardees.
+
+Ce sont pourtant les plus exposees du site. Un chiffre faux la-dedans se
+publie au nom de Mohamed et ne se voit nulle part : il n'y a pas de verset a
+cote pour le dementir, et personne ne compte les versets d'une sourate pour
+verifier. Recomptees depuis le texte le 22 septembre, les 69 disent vrai —
+mais elles le disaient sans que rien ne l'ait etabli, et c'est cela qui
+n'allait pas.
+
+Le `continue` silencieux est donc devenu une faute. Une question qu'aucun
+controle ne sait confronter n'est pas une question verifiee : c'est une
+question dont personne ne repond.
 
 POURQUOI CONTRE LA SOURCE, ET PAS CONTRE LE GENERATEUR
 ------------------------------------------------------
@@ -39,23 +65,43 @@ SOURCE_CORAN = re.compile(r'Coran, sourate (\d+), verset (\d+)')
 
 # Les graphies francaises retenues par le generateur des prophetes. Lues chez
 # lui pour ne pas en tenir une deuxieme liste : deux listes divergent toujours.
-def _formes_des_prophetes():
-    """Les graphies francaises retenues par le generateur des prophetes.
+def _prophetes():
+    """La liste (arabe, nom francais, graphies) du generateur des prophetes.
 
-    Lues chez lui plutot que recopiees : deux listes finissent toujours par
+    Lue chez lui plutot que recopiee : deux listes finissent toujours par
     diverger, et c'est precisement ce genre d'ecart qui fait passer une
     question juste pour fausse.
+
+    On lui prend ses DECLARATIONS — quel nom arabe, quelles graphies chez
+    Hamidullah — et rien d'autre. Le comptage, lui, est refait ici (voir
+    `squelette` plus bas) : s'il etait emprunte au generateur, une erreur
+    dans sa regle passerait ce controle sans broncher.
     """
     src = (pathlib.Path(__file__).resolve().parent / 'faire-05-prophetes.py')
     if not src.exists():
-        return {}
+        return []
     t = src.read_text(encoding='utf-8')
     d = t.index('PROPHETES = [')
     f = t.index(']\n', d) + 1
-    return {nom: formes for _, nom, formes in eval(t[d:f].split('=', 1)[1])}
+    return list(eval(t[d:f].split('=', 1)[1]))
 
 
-FORMES = _formes_des_prophetes()
+PROPHETES = _prophetes()
+FORMES = {nom: formes for _, nom, formes in PROPHETES}
+
+# Les signes de vocalisation varient d'une graphie a l'autre : on cherche sur
+# les consonnes seules, sinon un nom present passe pour absent. Ecrit ici
+# d'apres la regle ENONCEE par le generateur, pas importe de lui.
+_DIACRITIQUES = re.compile(r'[ً-ِّ-ْٓ-ٰٕ'
+                           r'ۖ-ۭـ]')
+
+
+def squelette(s):
+    """Le mot sans ses voyelles ni ses signes, alifs et ya unifies."""
+    s = _DIACRITIQUES.sub('', s)
+    return (s.replace('أ', 'ا').replace('إ', 'ا')
+             .replace('آ', 'ا')
+             .replace('ى', 'ي').replace('ة', 'ه'))
 
 
 def _lettres_arabes():
@@ -176,6 +222,102 @@ _spec.loader.exec_module(CLAUDE)
 FICHE = CLAUDE.fiche()
 
 
+def _nombre(x):
+    m = re.search(r'\d+', str(x))
+    return int(m.group()) if m else None
+
+
+# Les trois formes de question qui affirment un compte sur le Coran entier.
+VERSETS_DE = re.compile(r'Combien de versets compte la sourate ([^?]+)\?')
+VERSETS_DU_NOM = re.compile(r'Dans combien de versets le nom de (\S+) ')
+SOURATE_DU_NOM = re.compile(r'Dans quelle sourate le nom de (\S+) ')
+
+
+def _famille_de_compte(question):
+    if VERSETS_DE.search(question):
+        return 'versets d\'une sourate'
+    if VERSETS_DU_NOM.search(question):
+        return 'versets qui nomment un prophete'
+    if SOURATE_DU_NOM.search(question):
+        return 'sourate ou un prophete revient le plus'
+    return None
+
+
+def _versets_du_prophete(nom, arabe, francais):
+    """Les versets ou l'arabe ET le francais nomment ce prophete.
+
+    La regle est celle du cahier : un seul des deux ne suffit pas. C'est elle
+    qui avait revele, le 21 aout, quarante-trois attributions fausses — le
+    mot « صالح » ramenait aussi les versets sur les bonnes oeuvres.
+    Recomptee ici, depuis le texte, sans rien demander au generateur.
+    """
+    trouve = next(((c, f) for c, n, f in PROPHETES if n == nom), None)
+    if not trouve:
+        return None
+    cle, formes = trouve
+    k = squelette(cle)
+    return [(s, v) for (s, v) in sorted(arabe)
+            if k in squelette(arabe[(s, v)])
+            and any(x in francais.get((s, v), '') for x in formes)]
+
+
+def _verifier_compte(fam, q, arabe, francais, noms):
+    """Recompte ce que la question affirme. Rend la liste de ses fautes."""
+    dits = []
+    bonne = q['reponses'][q['bonne']]
+    autres = [r for i, r in enumerate(q['reponses']) if i != q['bonne']]
+
+    if fam == 'versets d\'une sourate':
+        nom = VERSETS_DE.search(q['question']).group(1).strip()
+        num = next((n for n, x in noms.items() if x.get('tr') == nom), None)
+        if num is None:
+            return ['« %s » n\'est le nom d\'aucune sourate' % nom]
+        vrai = sum(1 for (s, _) in arabe if s == num)
+        if _nombre(bonne) != vrai:
+            dits.append('annonce %s versets pour %s, le texte en compte %d'
+                        % (_nombre(bonne), nom, vrai))
+        for r in autres:
+            if _nombre(r) == vrai:
+                dits.append('le leurre « %s » est juste lui aussi' % r)
+        ref = re.search(r'\((\d+)\)', q['source'] or '')
+        if not ref or int(ref.group(1)) != num:
+            dits.append('la source ne renvoie pas a la sourate %d' % num)
+        return dits
+
+    nom = (VERSETS_DU_NOM if fam.startswith('versets qui') else SOURATE_DU_NOM) \
+        .search(q['question']).group(1).strip(' ,?')
+    vs = _versets_du_prophete(nom, arabe, francais)
+    if vs is None:
+        return ['« %s » n\'est dans la liste d\'aucun prophete' % nom]
+    if not vs:
+        return ['« %s » ne se trouve dans aucun verset' % nom]
+
+    if fam == 'versets qui nomment un prophete':
+        if _nombre(bonne) != len(vs):
+            dits.append('annonce %s versets pour %s, le texte en donne %d'
+                        % (_nombre(bonne), nom, len(vs)))
+        for r in autres:
+            if _nombre(r) == len(vs):
+                dits.append('le leurre « %s » est juste lui aussi' % r)
+        return dits
+
+    # « Dans quelle sourate revient-il le plus souvent » : on accepte toute
+    # sourate qui atteint le maximum. Trancher entre deux ex aequo serait
+    # une invention, et le generateur ne doit pas en produire.
+    par_sourate = {}
+    for s, _ in vs:
+        par_sourate[s] = par_sourate.get(s, 0) + 1
+    haut = max(par_sourate.values())
+    gagnantes = {noms[s]['tr'] for s, n in par_sourate.items() if n == haut}
+    if str(bonne).strip() not in gagnantes:
+        dits.append('annonce « %s » pour %s, le texte donne %s (%d versets)'
+                    % (bonne, nom, ' ou '.join(sorted(gagnantes)), haut))
+    for r in autres:
+        if str(r).strip() in gagnantes:
+            dits.append('le leurre « %s » est juste lui aussi' % r)
+    return dits
+
+
 def main():
     ar = json.loads((RACINE / 'outils' / 'coran' / 'ara-quransimple.json')
                     .read_text(encoding='utf-8'))['quran']
@@ -201,6 +343,7 @@ def main():
     pratiques = 0
     faits_vus = 0
     nonVerifies = 0
+    comptes = {}
 
     for f in fichiers:
         qs = json.loads(f.read_text(encoding='utf-8'))
@@ -305,9 +448,44 @@ def main():
                     fautes.append('%s : le mot surligne n\'est pas dans le verset '
                                   'affiche' % ou)
 
+            # --- LES QUESTIONS QUI COMPTENT, ET QUE PERSONNE NE COMPTAIT
+            #
+            # Mesure du 22 septembre : sur 2 701 questions, 69 ne citaient
+            # aucun verset et n'etaient d'aucun des types reverifies plus
+            # haut. Elles arrivaient ici, ne trouvaient pas de « sourate S,
+            # verset V » dans leur source, et le `continue` ci-dessous les
+            # laissait partir sans qu'AUCUN controle ne les ait regardees.
+            #
+            # Ce sont pourtant les plus exposees. Elles n'affirment pas un
+            # verset, elles affirment un COMPTE sur le Coran entier :
+            # « Combien de versets compte la sourate Al-Fajr ? », « Dans
+            # combien de versets le nom de Moussa apparait-il ? », « Dans
+            # quelle sourate le nom de Adam revient-il le plus souvent ? ».
+            # Un chiffre faux la-dedans se publie au nom de Mohamed et ne se
+            # voit nulle part — il n'y a pas de verset a cote pour le
+            # dementir.
+            #
+            # Le generateur, lui, verifiait ses comptes a la fabrication.
+            # Mais ce controle-ci relit ce qui est PUBLIE, et l'en-tete de ce
+            # fichier promet « CHAQUE question » : pour ces 69, ce n'etait
+            # pas vrai. On les recompte donc ici, depuis le texte.
+            fam = _famille_de_compte(q['question'])
+            if fam:
+                comptes[fam] = comptes.get(fam, 0) + 1
+                for m2 in _verifier_compte(fam, q, arabe, francais, noms):
+                    fautes.append('%s : %s' % (ou, m2))
+                continue
+
             # --- l'arabe montre doit etre CELUI de la source -----------
             m = SOURCE_CORAN.search(q['source'])
             if not m:
+                # PLUS DE SORTIE SILENCIEUSE. C'est ce `continue` nu qui
+                # cachait les 69. Une question que rien ne sait confronter
+                # n'est pas une question verifiee : elle est une question
+                # dont personne ne repond, et elle doit le dire.
+                fautes.append('%s : aucun controle ne sait la confronter a '
+                              'quoi que ce soit — source « %s »'
+                              % (ou, q['source'][:70]))
                 continue
             s, v = int(m.group(1)), int(m.group(2))
             if (s, v) not in francais:
@@ -435,6 +613,9 @@ def main():
     print('  %d questions de pratique, confrontees mot-cle par mot-cle.' % pratiques)
     print('  %d questions de fait, recalculees depuis le corpus '
           '(%d faits).' % (faits_vus, len(FICHE)))
+    for fam in sorted(comptes):
+        print('  %d questions « %s », recomptees dans le texte.'
+              % (comptes[fam], fam))
     if fautes:
         print('\n  %d FAUTE(S) :' % len(fautes))
         for x in fautes[:25]:
