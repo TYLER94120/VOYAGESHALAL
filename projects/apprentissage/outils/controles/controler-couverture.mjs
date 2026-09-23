@@ -67,10 +67,26 @@ for (const avecJS of [true, false]) {
     javaScriptEnabled: avecJS });
   const quand = avecJS ? 'avec JS' : 'sans JS';
 
+  /* CE CONTROLE ETAIT INSTABLE, ET C'EST PIRE QU'UN CONTROLE ABSENT.
+     Le 23 septembre il a signale 41 etiquettes debordantes sur
+     sens-des-sourates, puis il est repasse au vert trois fois de suite sans
+     qu'une ligne ait bouge. La cause : il ne coupait rien et attendait
+     `domcontentloaded` dans la passe sans JavaScript. Les polices partent
+     chez Google, echouent (elles ne sont pas joignables d'ici), et selon le
+     moment ou cet echec tombe la mesure se fait avec une police de secours
+     differente — donc avec d'autres largeurs.
+
+     On coupe donc tout ce qui n'est pas le site, et on attend que la mise en
+     page se pose. La mesure se fait ainsi toujours avec la MEME police de
+     secours. C'est deja ce qui arrivait a chaque fois ici ; simplement, ce
+     n'etait pas ecrit, et ca ne tombait pas toujours au meme instant. */
+  await c.route('**', (r) => (r.request().url().startsWith('http://127.0.0.1:8899')
+    ? r.continue() : r.abort()));
+
   for (const slug of [PLEINE, COURTE, VIDE, GROSSE]) {
     const p = await c.newPage();
-    await p.goto(BASE + slug,
-      { waitUntil: avecJS ? 'networkidle' : 'domcontentloaded' });
+    await p.goto(BASE + slug, { waitUntil: 'load' });
+    await p.waitForTimeout(500);
 
     const r = await p.evaluate(() => {
       const de = document.documentElement;

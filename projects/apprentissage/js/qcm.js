@@ -557,6 +557,65 @@ Jeu.prototype.passer = function () {
 
 /* --- La feuille de correction (ecrans 6 et 7) --------------------------- */
 
+/* CE QUI EST SOUS LA FEUILLE N'EST PLUS ACTIONNABLE.
+   ---------------------------------------------------
+   Mesure du 23 septembre, au clavier seul sur un QCM. La feuille de
+   correction monte du bas et recouvre « Passer » et « Valider ». Ils
+   restaient pourtant focalisables et annonces comme des boutons ordinaires,
+   et ils ne faisaient plus rien : presses apres la correction, ni la
+   question, ni l'ecran, ni le score ne bougeaient. Les quatre reponses
+   aussi restaient pressables sans effet.
+
+   Le clavier s'en tire : `corriger()` pose deja le focus sur « Continuer ».
+   Mais sur un telephone, un lecteur d'ecran ne se deplace pas au Tab, il
+   BALAIE tous les elements l'un apres l'autre. Quelqu'un qui balaie apres la
+   correction entendait donc « Valider, bouton » — couvert, mort, et rien ne
+   le disait. Sur un site dont tout le public est sur telephone, c'est la
+   forme de navigation qui compte.
+
+   `disabled` sur les boutons : ils sont annonces comme indisponibles et
+   sortent de l'ordre de parcours. Ce qui est vrai — ils ont fait leur
+   travail.
+
+   ET LA ZONE DES CARTES AVEC. La carte repondue ne reste pas a l'ecran :
+   chronometree, elle est a opacite 0 et 958 px au-dessus de la fenetre
+   257 ms apres le geste, et la carte d'arriere est vide en attendant la
+   suivante. Il n'y a donc rien a lire la — mais un lecteur d'ecran y
+   arrivait quand meme, et Chrome donne le focus a une carte dont le
+   contenu deborde. `aria-hidden` et `inert` la retirent des deux ; le
+   `tabindex` explicite fait le meme travail la ou `inert` n'existe pas.
+
+   La barre du haut, elle, n'est pas touchee : la feuille ne la couvre pas,
+   et « Quitter le QCM » doit rester joignable pendant qu'on lit une
+   correction. On ne fige que ce qui est a la fois couvert et mort. */
+Jeu.prototype.figer = function (oui) {
+  var b = this.r.querySelectorAll('.reponse');
+  for (var k = 0; k < b.length; k++) { b[k].disabled = !!oui; }
+  var g = $('cote-gauche'), d = $('cote-droite');
+  if (g) { g.disabled = !!oui; }
+  if (d) { d.disabled = !!oui; }
+
+  var z = $('zone');
+  if (!z) { return; }
+  var cartes = [z, $('carte'), $('carte-arriere')];
+  for (var i = 0; i < cartes.length; i++) {
+    if (!cartes[i]) { continue; }
+    if (oui) {
+      cartes[i].setAttribute('tabindex', '-1');
+      if (cartes[i] === z) {
+        z.setAttribute('aria-hidden', 'true');
+        z.setAttribute('inert', '');
+      }
+    } else {
+      cartes[i].removeAttribute('tabindex');
+      if (cartes[i] === z) {
+        z.removeAttribute('aria-hidden');
+        z.removeAttribute('inert');
+      }
+    }
+  }
+};
+
 Jeu.prototype.corriger = function (q, juste) {
   var self = this;
   this.verrou = true;
@@ -582,6 +641,29 @@ Jeu.prototype.corriger = function (q, juste) {
   h += juste ? icone('coche', 22, 'coche-or') : '';
   h += '<span class="f-titre">' + (juste ? 'Bonne réponse' : 'Pas tout à fait') + '</span>';
   h += '</div>';
+
+  // QUAND ON S'EST TROMPE, ON DIT CE QUI ETAIT JUSTE.
+  //
+  // Mesure du 23 septembre : sur 2 701 questions, 1 418 — 52 % — ont une
+  // explication et une source qui ne redisent nulle part la bonne reponse.
+  // « Dans combien de versets le nom de Adam apparait-il ? » repondait
+  // « Pas tout a fait. Compte sur les 6 236 versets du Coran. Les autres
+  // propositions sont les comptes d'autres prophetes. » On ne savait
+  // toujours pas que c'etait 25.
+  //
+  // La grille EST corrigee sur place, quelques lignes plus haut, avec une
+  // etiquette « la bonne » sur le bon bouton. Mais la carte s'envole a la
+  // validation : chronometre, elle est a opacite 0 et a 958 px au-dessus de
+  // l'ecran 257 ms apres le geste, et les etiquettes sont posees APRES.
+  // Personne ne les a jamais vues, pas une image.
+  //
+  // Sur un site qui enseigne, ne pas donner la reponse a quelqu'un qui s'est
+  // trompe est la seule chose qu'on ne peut pas se permettre. Le texte vient
+  // du paquet, tel quel : rien n'est reformule.
+  if (!juste) {
+    h += '<div class="f-bonne">La bonne réponse&nbsp;: <b>'
+      + echapper(q.reponses[q.bonne]) + '</b></div>';
+  }
   if (juste && this.s.reglages.serie && this.s.record > 0) {
     h += '<div class="f-note">Ta meilleure série est de ' + this.s.record + '.</div>';
   }
@@ -602,7 +684,13 @@ Jeu.prototype.corriger = function (q, juste) {
   f.setAttribute('data-t', juste ? 'juste' : 'rate');
   f.innerHTML = h;
   f.setAttribute('data-ouverte', 'oui');
-  this.dire(juste ? 'Bonne réponse. ' + q.explication : 'Réponse fausse. ' + q.explication);
+  this.figer(true);
+  // Ce qui est annonce a une synthese vocale dit la meme chose, et dans le
+  // meme ordre, que ce qui est ecrit sur la feuille.
+  this.dire(juste
+    ? 'Bonne réponse. ' + q.explication
+    : 'Réponse fausse. La bonne réponse : ' + q.reponses[q.bonne] + '. '
+      + q.explication);
 
   $('f-suite').addEventListener('click', function () { self.continuer(); });
   $('f-suite').focus();
@@ -611,6 +699,11 @@ Jeu.prototype.corriger = function (q, juste) {
 Jeu.prototype.continuer = function () {
   var f = $('feuille');
   f.removeAttribute('data-ouverte');
+  // On degele AVANT de redessiner : la carte suivante refait ses reponses,
+  // mais les deux boutons du pied, eux, sont les memes d'un bout a l'autre
+  // de la partie. Oublier de les reactiver les laisserait morts jusqu'a la
+  // fin du QCM.
+  this.figer(false);
   this.dessinerCarte();
 };
 

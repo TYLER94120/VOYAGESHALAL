@@ -677,6 +677,20 @@
 .feuille[data-t="rate"] .f-note { color: var(--texte-2); }
 
 .f-titre { font-family: var(--titre); font-size: 24px; }
+/* LA BONNE REPONSE, quand on s'est trompe. Elle n'apparait que sur la
+   feuille ivoire : quand la reponse etait juste, la personne l'a sous les
+   yeux, la redire serait du bruit. Encadree comme la divergence — c'est la
+   ligne qu'on vient chercher, elle ne doit pas se lire comme une note. */
+.f-bonne {
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: var(--or-voile);
+  border: 1px solid var(--or-bordure);
+  color: var(--encre);
+}
+.f-bonne b { color: var(--encre-titre); }
 .f-texte { font-size: 15px; line-height: 1.55; }
 .f-source { font-size: 12.5px; }
 /* Une note n'est pas une source : le record de serie et la promesse de
