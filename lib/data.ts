@@ -3746,7 +3746,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Pratique',
     readTime: "8 min",
     publishedAt: '2026-07-20',
-    updatedAt: '2026-09-09',
+    updatedAt: '2026-09-24',
     tags: ["Aéroports", "Prière", "Voyage"],
     content: `<p>Prendre l'avion ne devrait jamais t'obliger à sauter une prière. La plupart des grands aéroports ont aujourd'hui un espace de recueillement — encore faut-il savoir le trouver, savoir s'il est ouvert, et savoir quoi faire quand il n'y en a pas. Ce guide donne la méthode ; nos fiches par aéroport donnent les emplacements.</p>
 
@@ -3771,17 +3771,22 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <strong>3. Prier assis, en salle ou dans l'avion.</strong> Quand il ne reste que quelques minutes de créneau, c'est ce que font beaucoup de voyageurs.</p>
 
 <h2>Sortir chercher une mosquée ? La distance change tout</h2>
-<p>C'est l'idée qui vient naturellement, et selon l'aéroport elle est excellente ou totalement irréaliste. Nous avons mesuré la distance entre chaque aéroport et le lieu de prière le plus proche de <strong>notre relevé OpenStreetMap</strong> (1 092 lieux en France, relevé du 3 septembre 2026) :</p>
+<p>C'est l'idée qui vient naturellement, et selon l'aéroport elle est excellente ou totalement irréaliste. Nous avons mesuré la distance entre chaque aéroport et le lieu de prière le plus proche de <strong>notre relevé OpenStreetMap</strong> (1 092 lieux en France et 228 en Belgique, relevé du 3 septembre 2026) :</p>
 <table><thead><tr><th>Aéroport</th><th>Le plus proche</th><th>Dans un rayon de 3 km</th></tr></thead><tbody>
+<tr><td><strong>Bruxelles-Zaventem</strong></td><td><strong>1,9 km</strong></td><td>2</td></tr>
 <tr><td>Paris-Orly</td><td>2,3 km</td><td><strong>5</strong></td></tr>
 <tr><td>Nice-Côte d'Azur</td><td>2,3 km</td><td>1</td></tr>
+<tr><td>Paris-Beauvais</td><td>2,6 km</td><td>1</td></tr>
+<tr><td>Bruxelles-Charleroi</td><td>4,3 km</td><td>0</td></tr>
 <tr><td>Paris-Charles de Gaulle</td><td>6,4 km</td><td>0</td></tr>
 <tr><td>Toulouse-Blagnac</td><td>6,5 km</td><td>0</td></tr>
 <tr><td>Lyon-Saint-Exupéry</td><td>6,5 km</td><td>0</td></tr>
 <tr><td>Marseille-Provence</td><td><strong>11,6 km</strong></td><td>0</td></tr>
 </tbody></table>
-<p><strong>À Orly, sortir a du sens</strong> si tu es côté ville avec du temps devant toi : cinq lieux à moins de 3 km. À Nice, il y en a un, à la même distance.</p>
-<p><strong>Ailleurs, oublie.</strong> À Roissy, Lyon et Toulouse, le premier lieu est à plus de six kilomètres — c'est un aller-retour en transport, pas une promenade entre deux portes. Et <strong>Marseille-Provence cumule les deux difficultés</strong> : c'est le seul des huit aéroports de ce guide où aucun espace de prière n'est signalé, et le lieu le plus proche de notre relevé est à <strong>11,6 km</strong>. Rien dans un rayon de dix kilomètres. Si tu passes par Marseille, la seule stratégie qui tient est de prier <em>avant</em> d'arriver à l'aéroport, ou d'appliquer les trois solutions ci-dessus.</p>
+<p><strong>Le mieux servi n'est pas français : c'est Bruxelles-Zaventem</strong>, avec un lieu de prière à 1,9 km — la BIF Zaventem Camii — et deux dans un rayon de 3 km. Si tu as une correspondance longue à Bruxelles et que tu es côté ville, c'est le seul aéroport de ce guide où sortir prier ressemble à une vraie option.</p>
+<p><strong>À Orly, sortir a du sens</strong> si tu es côté ville avec du temps devant toi : cinq lieux à moins de 3 km, le plus grand nombre du tableau. À Nice et à Beauvais, il y en a un, à la même distance — <strong>et Beauvais compte double</strong> : c'est un aéroport low-cost très utilisé vers le Maghreb et la Turquie, avec des vols très matinaux.</p>
+<p><strong>Ailleurs, oublie.</strong> À Charleroi le premier lieu est déjà à plus de quatre kilomètres ; à Roissy, Lyon et Toulouse, le premier lieu est à plus de six kilomètres — c'est un aller-retour en transport, pas une promenade entre deux portes. Et <strong>Marseille-Provence cumule les deux difficultés</strong> : c'est le seul des huit aéroports de ce guide où aucun espace de prière n'est signalé, et le lieu le plus proche de notre relevé est à <strong>11,6 km</strong>. Rien dans un rayon de dix kilomètres. Si tu passes par Marseille, la seule stratégie qui tient est de prier <em>avant</em> d'arriver à l'aéroport, ou d'appliquer les trois solutions ci-dessus.</p>
+<p><strong>Genève ne figure pas dans ce tableau</strong>, et ce n'est pas un oubli : notre relevé OpenStreetMap ne couvre pas encore la Suisse. Nous ne mettrons pas un chiffre là où nous n'avons pas de donnée.</p>
 <p><em>Distances à vol d'oiseau depuis le point de référence de chaque aéroport ; à pied ou en transport, comptez davantage. Notre relevé n'est pas exhaustif : un lieu que nous ne connaissons pas peut exister. Données des lieux de prière © les contributeurs OpenStreetMap.</em></p>
 
 <h2>Ce que nous ne tranchons pas</h2>
