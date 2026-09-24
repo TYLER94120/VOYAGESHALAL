@@ -17,6 +17,27 @@ var CLE = 'ipap.v1';
 /* Nombre de cartes apres lesquelles une question revient dans la session. */
 var RETOUR_RATE = 8;    // section 9 : une question ratee revient 8 cartes plus loin
 var RETOUR_PASSE = 4;   // une question passee, 4 cartes plus loin
+
+/* COMBIEN DE FOIS UNE MEME QUESTION PEUT REVENIR DANS UNE SEULE PARTIE.
+   ---------------------------------------------------------------------
+   Il n'y avait pas de limite. Mesure du 24 septembre, en repondant faux a
+   chaque carte d'un QCM annonce a 20 questions : au bout de 70 reponses le
+   jeu tournait toujours, et le compteur affichait « 71 / 20 ». Chaque carte
+   ratee etait remise dans le paquet, donc le paquet ne se vidait jamais.
+
+   Cela ne touche que ceux qui se trompent beaucoup — c'est-a-dire ceux pour
+   qui le site existe. L'ecran de reglages leur promet « Commencer les 20
+   questions » et « Environ 3 minutes ».
+
+   Rien n'est perdu a s'arreter : rater une question pose `aRevoir` sur sa
+   fiche, et elle revient en priorite au QCM SUIVANT. La question revient
+   donc bien — un cran plus loin, par le mecanisme prevu pour ca.
+
+   VALEUR A REGARDER, MOHAMED : j'ai mis 1, c'est-a-dire qu'une question peut
+   revenir une fois dans la partie, pas deux. Une partie de 20 ne peut donc
+   plus depasser 40 cartes. Si tu preferes 2, c'est ici et nulle part
+   ailleurs. */
+var RETOURS_MAX = 1;
 var QCM_PRIORITAIRES = 3;   // une question `aRevoir` est prioritaire 3 QCM durant
 var JUSTES_POUR_SORTIR = 3; // trois bonnes reponses consecutives et elle sort
 var MINI_POUR_LE_JOUR = 10; // un QCM d'au moins 10 questions compte pour la serie
@@ -298,6 +319,7 @@ window.IPAP_MEMOIRE = {
   CLE: CLE,
   RETOUR_RATE: RETOUR_RATE,
   RETOUR_PASSE: RETOUR_PASSE,
+  RETOURS_MAX: RETOURS_MAX,
   MINI_POUR_LE_JOUR: MINI_POUR_LE_JOUR,
   vide: vide,
   charger: charger,

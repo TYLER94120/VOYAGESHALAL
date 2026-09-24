@@ -51,10 +51,34 @@ function Session(questions, reglages, section) {
 /* Une question ratee revient 8 cartes plus loin ; une question passee, 4
    (section 9). Si le paquet est plus court que ca, elle revient a la fin :
    la promesse « cette question reviendra » doit rester vraie, sinon on ment
-   a l'ecran de correction. */
+   a l'ecran de correction.
+
+   MAIS PAS INDEFINIMENT. Mesure du 24 septembre : en repondant faux a chaque
+   carte d'un QCM annonce a 20 questions, le jeu tournait encore apres 70
+   reponses, compteur « 71 / 20 ». Chaque rate remettait une carte, donc le
+   paquet ne se vidait jamais. C'est `M.RETOURS_MAX` qui borne maintenant le
+   nombre de retours d'une MEME question dans une meme partie — le champ
+   `vues` etait declare pour ca depuis le debut et n'avait jamais servi.
+
+   Rend `true` si la carte a bien ete remise : l'ecran de correction ne
+   promet « elle reviendra » que dans ce cas. */
 Session.prototype.remettre = function (q, dans) {
+  var deja = this.vues[q.id] || 0;
+  if (deja >= M.RETOURS_MAX) { return false; }
+  this.vues[q.id] = deja + 1;
   var cible = Math.min(this.pos + dans, this.paquet.length);
   this.paquet.splice(cible, 0, q);
+  return true;
+};
+
+/* COMBIEN DE CARTES CETTE PARTIE VA MONTRER, a cet instant.
+   `total` reste le nombre ANNONCE au depart : c'est lui qu'on inscrit dans
+   l'historique et qu'on lit sur l'ecran de fin, « 14 sur 20 ». Mais le
+   compteur du haut, lui, doit dire ou on en est dans ce qui reste a jouer.
+   Il affichait « 40 / 20 », et la barre segmentee s'arretait de bouger a la
+   vingtieme : elle ne dessinait que 20 segments pour 40 cartes. */
+Session.prototype.aMontrer = function () {
+  return Math.max(this.total, this.paquet.length);
 };
 
 Session.prototype.courante = function () { return this.paquet[this.pos] || null; };
@@ -334,7 +358,7 @@ Jeu.prototype.demarrer = function () {
 /* --- La barre segmentee (ecran 4) ------------------------------------- */
 Jeu.prototype.dessinerSegments = function () {
   var zone = $('qcm-progres');
-  var n = this.s.total;
+  var n = this.s.aMontrer();
   // Au-dela de 60 questions, on passe a une barre continue avec le compteur
   // chiffre : soixante segments de 4 px ne se lisent plus, ils se devinent.
   if (n > 60) {
@@ -349,7 +373,7 @@ Jeu.prototype.dessinerSegments = function () {
 };
 
 Jeu.prototype.majSegments = function () {
-  var n = this.s.total;
+  var n = this.s.aMontrer();
   if (n > 60) {
     var b = this.r.querySelector('.jauge i');
     if (b) { b.style.width = Math.round(this.s.pos * 100 / n) + '%'; }
@@ -444,7 +468,7 @@ Jeu.prototype.dessinerCarte = function () {
   this.choix = null;
   this.verrou = false;
 
-  $('qcm-compte').textContent = (this.s.reponses.length + 1) + ' / ' + this.s.total;
+  $('qcm-compte').textContent = (this.s.pos + 1) + ' / ' + this.s.aMontrer();
   this.majSerie(null, false);
 
   // La carte SUIVANTE est deja montee dans le DOM (section 7.7) : aucun
@@ -520,14 +544,16 @@ Jeu.prototype.valider = function () {
   var juste = this.choix === q.bonne;
   this.s.reponses.push({ id: q.id, choix: this.choix, juste: juste, passee: false });
 
+  var revient = false;
   if (juste) {
     this.s.serie += 1;
     if (this.s.serie > this.s.record) { this.s.record = this.s.serie; }
     G.vibrer(G.VIBRE_JUSTE);
   } else {
     this.s.serie = 0;
-    // Une question ratee revient 8 cartes plus loin, dans CETTE session.
-    this.s.remettre(q, M.RETOUR_RATE);
+    // Une question ratee revient 8 cartes plus loin, dans CETTE session —
+    // tant qu'elle n'y est pas deja revenue M.RETOURS_MAX fois.
+    revient = this.s.remettre(q, M.RETOUR_RATE);
   }
 
   var d = M.charger();
@@ -544,7 +570,7 @@ Jeu.prototype.valider = function () {
     this.dessinerCarte();
     return;
   }
-  this.corriger(q, juste);
+  this.corriger(q, juste, revient);
 };
 
 Jeu.prototype.passer = function () {
@@ -616,7 +642,7 @@ Jeu.prototype.figer = function (oui) {
   }
 };
 
-Jeu.prototype.corriger = function (q, juste) {
+Jeu.prototype.corriger = function (q, juste, revient) {
   var self = this;
   this.verrou = true;
   this.majSerie(juste ? 'or' : 'gris', juste);
@@ -673,10 +699,16 @@ Jeu.prototype.corriger = function (q, juste) {
     h += '<div class="f-divergence">Les savants divergent : ' + echapper(q.divergence) + '</div>';
   }
   h += '<div class="f-source">' + echapper(q.source) + '</div>';
+  // CETTE PHRASE DOIT ETRE VRAIE, et elle ne l'est plus toujours.
+  // La question est remise dans le paquet huit cartes plus loin (section 9),
+  // mais plus au-dela de M.RETOURS_MAX retours : sinon une partie de 20
+  // n'avait pas de fin pour qui se trompe. On ne promet donc le retour que
+  // quand il a eu lieu, et sinon on dit ou elle revient vraiment — au QCM
+  // suivant, par `aRevoir`, ce que la memoire fait deja.
   if (!juste) {
-    // Cette phrase doit etre VRAIE : la question a bien ete remise dans le
-    // paquet, huit cartes plus loin (section 9).
-    h += '<div class="f-note">Cette question reviendra plus tard dans le QCM.</div>';
+    h += '<div class="f-note">' + (revient
+      ? 'Cette question reviendra plus tard dans le QCM.'
+      : 'Tu la reverras dans un prochain QCM de cette section.') + '</div>';
   }
   h += '<button type="button" class="bouton ' + (juste ? 'bouton-or' : 'bouton-vert')
     + '" id="f-suite">Continuer</button>';
