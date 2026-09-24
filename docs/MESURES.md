@@ -2351,3 +2351,68 @@ présent, `/mosquee-proche` répond 200. CDG : 200, bloc bien **absent**.
 ⚠️ Le lien pointait d'abord vers `/mosquee-pres-de-moi`, qui n'existe pas.
 La route est `/mosquee-proche`. Corrigé avant le build — « un bouton sans
 destination n'existe pas ».
+
+## 24 septembre — le hub aéroports : le mieux servi n'est pas français
+
+Jour pair, approfondissement. Cible choisie par la mesure :
+**`/guides/ou-prier-aeroport-guide`, 722 affichages, 1,2 % de CTR,
+position 10,1** — le plus gros gisement de la bande 5-15 après Disneyland.
+
+⚠️ Cette URL **redirige en 301** vers `/blog/ou-prier-aeroports`
+(`middleware.ts`). Les 722 affichages appartiennent à l'ancienne adresse ;
+la page à approfondir est le hub. Vérifié : `/guides/ou-prier-aeroport-guide`
+répond bien 301.
+
+### Ce que la page avait déjà, et ce qui manquait
+
+Le tableau des distances existait depuis le 9 septembre — mais **sur six
+aéroports français seulement**, alors que le guide en couvre huit. Genève et
+Bruxelles manquaient. Or la base OSM du dépôt couvre la Belgique
+(`be.json`, 228 lieux).
+
+### La mesure
+
+Distances à vol d'oiseau, `data/osm/mosquees/` (relevé du 03/09/2026) :
+
+```
+  aéroport               le plus proche   <3 km
+  Bruxelles-Zaventem        1 941 m         2      ← le mieux servi
+  Paris-Orly                2 321 m         5
+  Nice-Côte d'Azur          2 3xx m         1
+  Paris-Beauvais            2 567 m         1
+  Bruxelles-Charleroi       4 265 m         0
+  Paris-CDG                 6 397 m         0
+```
+
+**Le mieux servi des huit n'est pas français.** Zaventem a un lieu de prière
+à 1,9 km — la BIF Zaventem Camii, nommée dans la base — soit plus près que
+n'importe quel aéroport français. Et **Beauvais entre dans le tableau à
+2,6 km**, ce qui compte double : c'est un aéroport low-cost très utilisé
+vers le Maghreb et la Turquie, avec des vols très matinaux — donc le même
+problème de Fajr qu'à Orly, avec la même issue possible.
+
+La conclusion de la section a donc changé, pas seulement sa longueur : elle
+disait « Orly et Nice, sinon oublie ». Elle dit maintenant que Zaventem
+passe devant, que Beauvais rejoint le groupe, et que Charleroi n'y est pas.
+
+### Genève : dit, pas deviné
+
+Genève ne figure pas au tableau et **la page le dit** : notre relevé ne
+couvre pas la Suisse. Un chiffre manquant s'annonce, il ne se comble pas.
+
+### Vérifié servi
+
+Build du 24/00:09, `BUILD_ID` contrôlé avant lecture. 200, **1 949 mots
+rendus**, les cinq nouvelles mentions présentes, crédit ODbL présent,
+`/guides/ou-prier-aeroport-guide` → 301, `/blog/ou-prier-aeroport-bruxelles`
+→ 200.
+
+⚠️ `npm run build` a d'abord échoué sur `next: not found` — conteneur neuf,
+`node_modules` absent. Les 46 tests, eux, étaient passés : ils ne dépendent
+pas de Next. `npm ci` d'abord.
+
+### 🔴 Les rondes perdues
+
+Les 21, 22 et 23 septembre ont tiré sans rien produire, après les 12-15.
+C'est la même défaillance que celle déjà écrite le 16 : je lis la consigne,
+je mesure, et je ne livre pas. Ce soir la chaîne est allée jusqu'au bout.
