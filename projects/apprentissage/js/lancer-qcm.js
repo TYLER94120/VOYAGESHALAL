@@ -85,6 +85,56 @@
     return revoir.concat(reste).slice(0, Math.min(combien, banque.length));
   }
 
+  /* REPRENDRE UN QCM INTERROMPU.
+     -----------------------------
+     Mesure du 25 septembre. En quittant un QCM a la quinzieme question,
+     l'accueil proposait bien une carte :
+
+       75 %  TU EN ETAIS LA  ·  Le sens des sourates
+       question 16 sur 20 · reprendre
+
+     Elle menait a `qcm.html?section=...&reprise=1`. Ce fichier ne lisait
+     NI le parametre `reprise`, NI `d.reprise` : il composait un paquet neuf
+     et la partie rouvrait a « 1 / 20 ». Le mot « reprendre » etait faux, et
+     le « question 16 sur 20 » juste au-dessus le rendait pire — on croyait
+     revenir a sa place, on recommencait a zero.
+
+     Tout ce qu'il faut etait pourtant range par `sortir()` : les
+     identifiants du paquet DANS L'ORDRE, la position, les reponses deja
+     donnees, les reglages et l'heure de depart.
+
+     Ce qui est recompose ici, et pourquoi :
+      · le paquet, en relisant les identifiants dans la banque d'aujourd'hui.
+        Une question supprimee entre-temps est sautee, et la position recule
+        d'autant — sinon on rouvrirait sur la mauvaise carte ;
+      · `vues`, le compteur des retours pose le 24 septembre : un identifiant
+        qui figure deux fois dans le paquet est deja revenu une fois. Sans
+        ca, une reprise redonnerait droit a un retour de plus et la borne
+        fuirait a chaque interruption ;
+      · `total`, le nombre ANNONCE au depart. Le constructeur le deduit de la
+        longueur du paquet, qui a grandi avec les retours : on le repose. */
+  function reprendre(d, banque, slug) {
+    var r = d.reprise;
+    if (!r || r.section !== slug || !r.ids || !r.ids.length) { return null; }
+    var parId = {};
+    for (var i = 0; i < banque.length; i++) { parId[banque[i].id] = banque[i]; }
+
+    var paquet = [], vues = {}, pos = 0;
+    for (var k = 0; k < r.ids.length; k++) {
+      var q = parId[r.ids[k]];
+      if (!q) { continue; }   // question retiree de la banque depuis
+      if (k < r.pos) { pos += 1; }
+      // Deuxieme apparition et suivantes : c'est un retour deja accorde.
+      vues[q.id] = paquet.filter(function (x) { return x.id === q.id; }).length;
+      paquet.push(q);
+    }
+    if (!paquet.length) { return null; }
+    return { paquet: paquet, pos: Math.min(pos, paquet.length), vues: vues,
+             reglages: r.reglages || reglagesParDefaut(d),
+             reponses: r.reponses || [], total: r.total || paquet.length,
+             debut: r.debut || Date.now() };
+  }
+
   function echouer(message) {
     document.getElementById('zone').innerHTML =
       '<div style="padding:0 20px"><p class="t-page">Rien à jouer</p>'
@@ -142,9 +192,28 @@
       Q.poserTables(noms, section);
 
       if (!banque.length) { return echouer('Cette section n\'a pas encore de questions.'); }
-      var paquet = composer(banque, d, reglages, reglages.nombre);
+
+      // La reprise passe AVANT la composition d'un paquet neuf : c'est tout
+      // l'objet du parametre. Si elle n'aboutit pas — partie d'une autre
+      // section, questions disparues — on compose normalement plutot que de
+      // laisser la personne devant un ecran vide.
+      var repris = (p.reprise === '1') ? reprendre(d, banque, slug) : null;
+      var paquet = repris ? repris.paquet : composer(banque, d, reglages, reglages.nombre);
       if (!paquet.length) { return echouer('Cette section n\'a pas encore de questions.'); }
-      var session = new Q.Session(paquet, reglages, slug);
+
+      var session = new Q.Session(paquet, repris ? repris.reglages : reglages, slug);
+      if (repris) {
+        session.pos = repris.pos;
+        session.reponses = repris.reponses;
+        session.total = repris.total;
+        session.vues = repris.vues;
+        session.debut = repris.debut;
+        // La partie est reprise : elle n'est plus « en attente ». La laisser
+        // dans la memoire ferait proposer a l'accueil de reprendre celle
+        // qu'on est en train de jouer.
+        d.reprise = null;
+        M.ranger(d);
+      }
       var jeu = new Q.Jeu(document, session);
       jeu.demarrer();
       // Expose pour les controles automatiques : ils doivent pouvoir verifier

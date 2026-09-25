@@ -136,14 +136,21 @@
       for (var k = 0; k < sections.length; k++) {
         if (sections[k].slug === r.section) { sec = sections[k]; }
       }
+      // LA CARTE DOIT ANNONCER CE QUE LE COMPTEUR AFFICHERA.
+      // Elle disait « question 16 sur 20 » et le QCM rouvrait sur « 16 / 25 » :
+      // le paquet avait grandi des questions ratees qui reviennent. Deux
+      // nombres pour la meme chose, a deux secondes d'intervalle. On prend
+      // le meme que le jeu, c'est-a-dire le nombre de cartes a jouer.
       var fait = (r.reponses || []).length;
-      var pc = r.total ? Math.round(fait * 100 / r.total) : 0;
+      var aJouer = Math.max(r.total || 0, r.ids.length);
+      var pc = aJouer ? Math.round(fait * 100 / aJouer) : 0;
       document.getElementById('zone-reprise').innerHTML =
         '<a class="reprise" href="qcm.html?section=' + ech(r.section) + '&reprise=1">'
         + '<div class="anneau">' + anneau(pc) + '<div class="anneau-pc">' + pc + '%</div></div>'
         + '<div class="quoi"><span class="sur">Tu en étais là</span>'
         + '<span class="nom">' + ech(sec ? sec.nom : r.section) + '</span>'
-        + '<span class="ou">question ' + (fait + 1) + ' sur ' + r.total + ' · reprendre</span>'
+        + '<span class="ou">question ' + ((r.pos || fait) + 1) + ' sur ' + aJouer
+        + ' · reprendre</span>'
         + '</div></a>';
     }
 
