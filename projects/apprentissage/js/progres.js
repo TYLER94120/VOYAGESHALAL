@@ -47,11 +47,29 @@
           if (f.derniere === true) { acquises += 1; }
         }
       }
+      // LES ACCORDS. Cette page ecrivait « 1 jours de suite » et
+      // « 1 questions vues ». Mesure du 26 septembre en forcant la memoire a
+      // 0, 1 puis 2 : c'etait la SEULE page du site a se tromper. L'accueil
+      // ecrit bien « 1 jour d'affilée », la grille « 1 section », la
+      // couverture « 1 question » — onze endroits font l'accord, celui-ci
+      // ecrivait ses libelles en dur.
+      //
+      // Et c'est la page ou ca se voit le plus : elle n'existe que pour
+      // montrer ces trois nombres, et ils sont petits au debut. Quelqu'un
+      // qui vient de commencer lit « 1 jours de suite » a son premier
+      // passage — le moment ou l'on decide si le site est serieux.
+      //
+      // En francais zero prend le singulier : « 0 jour », « 0 question ».
+      // C'est la regle qu'appliquent deja les dix autres endroits.
+      var serie = M.serieDeJours(d, M.jourDeAujourdhui());
       var h = '';
       h += '<div class="chiffres">'
-        + '<div class="chiffre"><b>' + M.serieDeJours(d, M.jourDeAujourdhui()) + '</b><span>jours de suite</span></div>'
-        + '<div class="chiffre"><b>' + vues + '</b><span>questions vues</span></div>'
-        + '<div class="chiffre"><b>' + acquises + '</b><span>acquises</span></div>'
+        + '<div class="chiffre"><b>' + serie + '</b><span>'
+        + (serie > 1 ? 'jours de suite' : 'jour de suite') + '</span></div>'
+        + '<div class="chiffre"><b>' + vues + '</b><span>'
+        + (vues > 1 ? 'questions vues' : 'question vue') + '</span></div>'
+        + '<div class="chiffre"><b>' + acquises + '</b><span>'
+        + (acquises > 1 ? 'acquises' : 'acquise') + '</span></div>'
         + '</div>';
 
       if (!vues) {
