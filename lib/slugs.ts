@@ -92,6 +92,14 @@ export const BLOG_FR_TO_EN: Record<string, string> = {
   // marche donc pas ici, et ca change tout le plan de la soiree.
   'ou-prier-stade-de-france': '/blog/where-to-pray-stade-de-france',
   'ou-prier-aeroport-marseille': '/blog/where-to-pray-marseille-airport',
+  // 27 septembre. Des quatre articles de parcs, le Futuroscope était le seul
+  // resté sans jumeau anglais — alors que ce format est le mieux converti du
+  // site (Parc Astérix 34,9 % de clics, Puy du Fou 15,8 %). L'anglais dit
+  // deux choses que le français ne dit pas : la mesure sur notre base OSM
+  // (aucun lieu de prière à moins de 5 km, le plus proche à 8,3 km), et le
+  // cas du visiteur arrivé SANS voiture — pour qui la solution principale du
+  // texte français, l'aller-retour au parking, n'existe pas.
+  'ou-prier-futuroscope': '/blog/where-to-pray-futuroscope',
   'ou-prier-aeroport-toulouse': '/blog/where-to-pray-toulouse-airport',
   'ou-prier-aeroport-cdg': '/blog/where-to-pray-cdg-airport',
   'ou-prier-aeroport-orly': '/blog/where-to-pray-orly-airport',

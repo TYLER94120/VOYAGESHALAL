@@ -2833,6 +2833,59 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <p>Were you pointed to a specific spot at Parc Astérix, or did staff tell you something useful? Share it — that is exactly the information this page is missing. <a href="/communaute/ajouter">→ Add the place</a> · <a href="/communaute">→ Join the community</a></p>`,
   },
   {
+    slug: "where-to-pray-futuroscope",
+    title: "Futuroscope: no prayer room, where to pray on site",
+    description: "No prayer room at Futuroscope, and the nearest mosque is 8 km away. What actually works inside the park, and why arriving by train changes the whole plan.",
+    coverImage: "https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=1200&q=80",
+    category: 'Practical',
+    readTime: "4 min",
+    publishedAt: '2026-09-27',
+    lang: 'en',
+    tags: ['prayer', 'futuroscope', 'france', 'family', 'muslim travel'],
+    content: `<p>A day at Futuroscope, near Poitiers, with prayers to fit in? Here is what works, what does not, and the one thing most guides get wrong for visitors arriving without a car.</p>
+
+<h2>The short version</h2>
+<p>There is <strong>no official prayer room</strong> that we know of. What works: a quiet corner of the grounds, a request at guest services, or your car — the car park is unusually close to the entrance here. What does not work: <strong>counting on a mosque nearby</strong>. There is none within walking distance, and the numbers below say how far.</p>
+
+<h2>No mosque within 5 km — the measurement</h2>
+<p>From our OpenStreetMap survey of prayer places in France (1 092 places, surveyed 3 September 2026), straight-line distances from the park:</p>
+<p><strong>Nothing within 5 km. One place within 10 km</strong> — the Poitiers mosque, at 8,3 km. The next one after that is 20 km away.</p>
+<p>So "I will find a mosque nearby" is not a plan at Futuroscope. It is a 20-minute drive each way, plus parking, in the middle of a paid day out. That is worth knowing <em>before</em> you arrive, not at Dhuhr.</p>
+<p><em>Straight-line distances, so shorter than the real journey. Our survey is not exhaustive: a place we do not know about may exist. Prayer place data © OpenStreetMap contributors.</em></p>
+
+<h2>1. The car park is the real advantage here</h2>
+<p>Unlike most large parks, the car park sits a few minutes from the entrance. A discreet return trip mid-afternoon is the simplest solution of all — <strong>check the re-entry rules at guest services first</strong>, since they are what decides whether this works.</p>
+
+<h2>2. If you came by train, the plan changes</h2>
+<p>This is the part the French-language advice skips. Futuroscope is easy to reach without a car, and plenty of visitors do exactly that — which means <strong>the car solution above is not available to them</strong>, and neither is the mosque. If that is you, plan on a quiet corner inside the park and bring what you need with you: there is no fallback to fall back on.</p>
+
+<h2>3. Quiet corners inside the park</h2>
+<p>The lawns and the set-back areas between pavilions are calm, especially while a big show is running — the crowd is indoors. A pocket mat and our <a href="/qibla">qibla tool</a> are enough. Keep to the edges rather than a walkway, and take your things with you.</p>
+
+<h2>4. Ask at guest services</h2>
+<p>Staff can point you to a quiet space; the request is a common one and is taken well. Ask for a <strong>quiet room</strong> or <strong>quiet area</strong> rather than a prayer room — that is the vocabulary a French park uses, and it gets an answer instead of a shrug.</p>
+<p>If you are staying at one of the hotels beside the park, your room covers Fajr and the evening prayers, which removes most of the problem.</p>
+
+<h2>5. Group what can be grouped</h2>
+<p>With <a href="/prayer-times">the day's times</a>, a single Dhuhr and Asr stop covers the afternoon, and the evening show is easier with Maghrib and Isha handled together. On what may and may not be combined or shortened, <strong>we do not rule</strong>: that is a religious question, not a travel one.</p>
+
+<h2>Wudu</h2>
+<p>Park toilets, with the usual difficulties — busy, high basins, sensor taps. A small soft bottle filled at the basin beforehand and a microfibre towel in the bag solve most of it. Our guide on <a href="/blog/wudu-on-a-plane-or-train">making wudu while travelling</a> has the method.</p>
+
+<h2>What we do not know</h2>
+<p>Whether a small quiet room exists that is not signposted, and whether the re-entry rules change in high season. We have not verified either on site. If you go, <strong>tell us what you found</strong> — that is exactly what this page is missing.</p>
+
+<h2>The other French parks</h2>
+<ul>
+<li><a href="/blog/where-to-pray-disneyland-paris">Disneyland Paris</a> — no prayer room, ask at City Hall; nothing within 5 km either</li>
+<li><a href="/blog/where-to-pray-parc-asterix">Parc Astérix</a> — nearest prayer place 14,3 km</li>
+<li><a href="/blog/where-to-pray-puy-du-fou">Puy du Fou</a> — nearest prayer place 13,9 km</li>
+</ul>
+
+<h2>Help the community</h2>
+<p>Prayed at Futuroscope recently? Tell us <strong>where, and whether anyone minded</strong>. <a href="/communaute">→ Join the community</a></p>`,
+  },
+  {
     slug: "where-to-pray-puy-du-fou",
     title: "Puy du Fou: no prayer room, where to pray anyway",
     description: "No official prayer room at Puy du Fou — but the park is large and wooded. How Muslim visitors fit prayers around the show times, step by step.",
