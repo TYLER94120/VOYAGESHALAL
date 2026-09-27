@@ -174,29 +174,6 @@ function maitrise(d, idsDeLaSection) {
   return Math.round(n * 100 / idsDeLaSection.length);
 }
 
-/* --------------------------------------------------------------------------
-   La serie de jours
-   --------------------------------------------------------------------------
-   Elle s'incremente des qu'un QCM d'au moins 10 questions est termine dans la
-   journee. On la RECALCULE a partir de la liste des jours : jamais stockee.
-   -------------------------------------------------------------------------- */
-function serieDeJours(d, aujourdhui) {
-  var jours = {};
-  for (var i = 0; i < d.jours.length; i++) { jours[d.jours[i]] = true; }
-  var n = 0;
-  var curseur = new Date(aujourdhui + 'T12:00:00');
-  // Si rien aujourd'hui, la serie peut quand meme courir jusqu'a hier.
-  if (!jours[aujourdhui]) { curseur.setDate(curseur.getDate() - 1); }
-  for (;;) {
-    var m = String(curseur.getMonth() + 1), j = String(curseur.getDate());
-    var cle = curseur.getFullYear() + '-' + (m.length < 2 ? '0' + m : m) + '-'
-      + (j.length < 2 ? '0' + j : j);
-    if (!jours[cle]) { break; }
-    n += 1;
-    curseur.setDate(curseur.getDate() - 1);
-  }
-  return n;
-}
 
 /* --------------------------------------------------------------------------
    LE JOUR DE GRACE — le filet sous la serie
@@ -327,7 +304,6 @@ window.IPAP_MEMOIRE = {
   fiche: fiche,
   noter: noter,
   maitrise: maitrise,
-  serieDeJours: serieDeJours,
   serieComplete: serieComplete,
   GRACE_TOUS_LES: GRACE_TOUS_LES,
   GRACE_MAXI: GRACE_MAXI,

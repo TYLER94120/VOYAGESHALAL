@@ -61,7 +61,32 @@
       //
       // En francais zero prend le singulier : « 0 jour », « 0 question ».
       // C'est la regle qu'appliquent deja les dix autres endroits.
-      var serie = M.serieDeJours(d, M.jourDeAujourdhui());
+      // LA MEME SERIE QUE L'ACCUEIL, calculee par la meme fonction.
+      //
+      // Mesure du 27 septembre, memoire fabriquee : sept jours de suite puis
+      // un trou hier.
+      //
+      //   accueil        « 7 jours d'affilée »
+      //   cette page     « 1 jour de suite »
+      //
+      // Et avec douze jours et deux trous : 11 contre 1.
+      //
+      // Il existait deux comptages. `serieComplete` tient compte du JOUR DE
+      // GRACE — le filet qui rattrape un jour manque, un gagne tous les cinq
+      // jours, deux au maximum. `serieDeJours` ne le connaissait pas : il
+      // remontait bêtement jusqu'au premier trou.
+      //
+      // Le filet existe pour une raison ecrite noir sur blanc dans la methode
+      // maison : une serie nue est un piege, « j'ai perdu mes 40 jours,
+      // j'arrete », et le mecanisme cense faire revenir devient la raison de
+      // partir. Le rattrapage marchait — et la page qu'on ouvre justement
+      // pour regarder ses progres annoncait quand meme la cassure. Elle
+      // defaisait le filet a elle seule.
+      //
+      // `serieDeJours` a ete retiree de memoire.js : deux facons de compter
+      // la meme chose, c'est une de trop, et c'est toujours la mauvaise qui
+      // finit par etre appelee.
+      var serie = M.serieComplete(d, M.jourDeAujourdhui()).serie;
       var h = '';
       h += '<div class="chiffres">'
         + '<div class="chiffre"><b>' + serie + '</b><span>'
