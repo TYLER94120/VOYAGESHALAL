@@ -153,19 +153,22 @@ export default async function BlogPostPage({ params }: Props) {
             <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">Destinations à explorer</p>
             <div className="flex flex-wrap gap-2">
               {[
-                { slug: 'istanbul', label: 'Istanbul' },
-                { slug: 'marrakech', label: 'Marrakech' },
-                { slug: 'dubai', label: 'Dubaï' },
-                { slug: 'kuala-lumpur', label: 'Kuala Lumpur' },
-                { slug: 'le-caire', label: 'Le Caire' },
-                { slug: 'medine', label: 'Médine' },
+                // 27 septembre : ces pastilles écrivaient « Dubaï », « Le Caire »,
+                // « Médine » sur le domaine ANGLAIS. Le nom de la ville se
+                // traduit, comme le reste de la page.
+                { slug: 'istanbul', label: 'Istanbul', labelEn: 'Istanbul' },
+                { slug: 'marrakech', label: 'Marrakech', labelEn: 'Marrakesh' },
+                { slug: 'dubai', label: 'Dubaï', labelEn: 'Dubai' },
+                { slug: 'kuala-lumpur', label: 'Kuala Lumpur', labelEn: 'Kuala Lumpur' },
+                { slug: 'le-caire', label: 'Le Caire', labelEn: 'Cairo' },
+                { slug: 'medine', label: 'Médine', labelEn: 'Medina' },
               ].map((d) => (
                 <Link
                   key={d.slug}
                   href={`/destinations/${d.slug}`}
                   className="bg-[#faf8f4] border border-gray-200 hover:border-[#c9a870] text-gray-700 hover:text-[#1a3a2a] px-3 py-1.5 rounded-full text-xs font-medium transition-all"
                 >
-                  {d.label} →
+                  {isEN ? d.labelEn : d.label} →
                 </Link>
               ))}
             </div>
@@ -176,8 +179,11 @@ export default async function BlogPostPage({ params }: Props) {
 
         {/* Email capture */}
         <EmailCapture
-          title="Recevez nos prochains guides en avant-première"
-          subtitle="Destinations, conseils pratiques, mosquées et restaurants — dans votre boîte mail."
+          // 27 septembre : ce bloc était écrit en FRANÇAIS sur les deux
+          // domaines — trouvé en relisant une page anglaise servie. `isEN`
+          // était déjà en portée deux lignes plus haut (CommunityCTA).
+          title={isEN ? 'Get our next guides before anyone else' : 'Recevez nos prochains guides en avant-première'}
+          subtitle={isEN ? 'Destinations, practical advice, mosques and halal places to eat — straight to your inbox.' : 'Destinations, conseils pratiques, mosquées et restaurants — dans votre boîte mail.'}
           source={`blog-${post.slug}`}
         />
       </main>

@@ -2416,3 +2416,75 @@ pas de Next. `npm ci` d'abord.
 Les 21, 22 et 23 septembre ont tiré sans rien produire, après les 12-15.
 C'est la même défaillance que celle déjà écrite le 16 : je lis la consigne,
 je mesure, et je ne livre pas. Ce soir la chaîne est allée jusqu'au bout.
+
+## 27 septembre — le Futuroscope en anglais, et un bloc français sur tout le site anglais
+
+Jour impair, création. Gisement n° 1 du brief : traduire un article français
+vérifié. Encore fallait-il savoir lesquels n'ont pas de jumeau.
+
+### La mesure, et le piège dans ma propre mesure
+
+Premier balayage : **« 35 articles FR sur 35 sans jumeau anglais »**. Un
+résultat qui vaut « tous » est presque toujours un instrument cassé, pas une
+découverte. C'en était un : ma regex lisait les tables de `lib/slugs.ts` en
+cherchant `'clé': 'valeur'` où la valeur n'a ni barre oblique ni chiffre —
+or les valeurs s'écrivent `'/blog/where-to-pray-…'`. Corrigée, la réponse
+est **5 articles FR sans jumeau sur 35**, 55 jumeaux déclarés.
+
+```
+  ou-prier-futuroscope            (318 mots)
+  voyage-halal-france             (653)
+  week-end-musulman               (512)
+  ou-prier-centre-commercial      (292)
+  restaurants-halal-berkane-guide (428)
+```
+
+### Pourquoi le Futuroscope
+
+Des quatre articles de parcs, c'est **le seul resté sans version anglaise** —
+alors que ce format est le mieux converti du site : Parc Astérix 34,9 % de
+clics en position 2,8, Puy du Fou 15,8 % en 7,1, quand le site fait 1,2 %
+ailleurs. Les trois autres ont leur jumeau depuis le 31 août.
+
+L'anglais dit **deux choses que le français ne dit pas** :
+
+1. La mesure sur `data/osm/mosquees/fr.json` : **aucun lieu de prière à
+   moins de 5 km du parc**, un seul à moins de 10 — la mosquée de Poitiers,
+   à 8,3 km. Donc « je trouverai une mosquée à côté » n'est pas un plan ici.
+2. **Le visiteur arrivé sans voiture.** La solution principale du texte
+   français est l'aller-retour au parking, tout proche. Pour qui arrive
+   autrement, cette solution n'existe pas — et la mosquée non plus. Le
+   français ne le dit nulle part.
+
+Rien d'inventé : aucune salle affirmée, aucun horaire, la non-exhaustivité
+dite, crédit ODbL, et la question religieuse du regroupement renvoyée.
+
+### 🔴 Et pendant la vérification : tout le site anglais parlait français
+
+En relevant les liens de la page servie sur `gohalaltravel.com`, trois mots
+accentués sont ressortis d'un texte censé être 100 % anglais. Ils ne
+venaient pas de mon article :
+
+> Recevez nos prochains guides en avant-première
+> Destinations, conseils pratiques, mosquées et restaurants — dans votre boîte mail.
+
+Le bloc d'inscription à la lettre d'information de `app/(dyn)/blog/[slug]`
+était **écrit en dur en français, servi sur les deux domaines**, sur CHAQUE
+article. Et les pastilles de destinations écrivaient « Dubaï », « Le Caire »,
+« Médine » à des lecteurs anglophones.
+
+`isEN` était déjà en portée **deux lignes plus haut** (`<CommunityCTA
+en={isEN}>`). C'est encore la même forme de défaut que les nuits
+précédentes : une règle vraie à deux lignes de là, fausse ici.
+
+### Vérifié servi
+
+Build du 27/00:12, `BUILD_ID` contrôlé avant lecture.
+· EN `/blog/where-to-pray-futuroscope` : 200, titre 50 c, description 154 c,
+  **1 057 mots**, mesure et crédit ODbL présents, **35 liens testés un par un,
+  tous 200** (deux étaient morts au premier jet : `/blog/wudu-plane-train` et
+  `/community` — les bons slugs sont `/blog/wudu-on-a-plane-or-train` et
+  `/communaute`, que le réécriveur traduit au rendu).
+· EN Disneyland et FR Disneyland : bloc email dans la bonne langue de chaque
+  côté, pastilles « Marrakesh / Cairo / Medina » en anglais, « Marrakech /
+  Le Caire / Médine » en français.
