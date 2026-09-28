@@ -3210,11 +3210,12 @@ If an adjustment is required, it is almost always possible to do it yourself rat
   {
     slug: "where-to-pray-paris-stations",
     title: "Where to Pray at Paris Train Stations (2026)",
-    description: "French railway stations have no prayer room — but a solution under 15 minutes away almost always exists. The honest station-by-station guide.",
+    description: "No prayer room in French railway stations. Measured: four of the six Paris stations have one within a kilometre, and two have nothing within two.",
     coverImage: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&q=80",
     category: 'Practical',
     readTime: "7 min",
     publishedAt: '2026-08-11',
+    updatedAt: '2026-09-28',
     lang: 'en',
     tags: ['prayer', 'train station', 'paris', 'muslim travel'],
     content: `
@@ -3231,10 +3232,19 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <strong>Under 20 minutes</strong>: do not move. Plan to pray on board or on arrival.</p>
 
 <h2>Finding the neighbourhood prayer space</h2>
-<p>Every major station — Nord, Est, Lyon, Montparnasse, Saint-Lazare, Austerlitz — sits in a lively district where prayer spaces exist. <a href="/mosque-near-me">Our nearest-mosque tool</a> locates you and gives you the closest one in two seconds, with directions.</p>
-<p>One reliable landmark for south-east Paris: the <strong>Grande Mosquée de Paris</strong>, in the 5th arrondissement, is roughly a fifteen-minute walk from Gare d'Austerlitz — a public, open, easy-to-find place, which makes it the safe option in that area when you do not know the neighbourhood.</p>
-<p>For the other stations, <strong>we will not publish an address we have not verified</strong>. Neighbourhood prayer rooms open, move and close; quoting one from memory would send someone to a locked door with a train to catch. The tool relies on continuously updated data instead.</p>
-
+<p>The six main stations are nothing like each other on this point, and it is worth knowing before you walk out. We measured the distance from each station to the nearest prayer place in our OpenStreetMap survey (1,092 places in France, surveyed 3 September 2026):</p>
+<table><thead><tr><th>Station</th><th>Nearest</th><th>Within 1 km</th><th>Within 2 km</th></tr></thead><tbody>
+<tr><td><strong>Gare de l'Est</strong></td><td><strong>330 m</strong></td><td>3</td><td>8</td></tr>
+<tr><td>Gare du Nord</td><td>710 m</td><td><strong>5</strong></td><td>7</td></tr>
+<tr><td>Austerlitz</td><td>800 m</td><td>1</td><td>3</td></tr>
+<tr><td>Gare de Lyon</td><td>800 m</td><td>1</td><td>4</td></tr>
+<tr><td>Saint-Lazare</td><td><strong>2.1 km</strong></td><td>0</td><td>0</td></tr>
+<tr><td>Montparnasse</td><td><strong>2.6 km</strong></td><td>0</td><td>0</td></tr>
+</tbody></table>
+<p><strong>The 45-minute rule holds at four stations out of six.</strong> Gare de l'Est has three places within a kilometre and the first at 330 metres — by far the best served station in Paris. Gare du Nord has five within the kilometre.</p>
+<p><strong>At Montparnasse and Saint-Lazare it does not hold.</strong> Nothing within two kilometres in our survey: going out would cost a metro round trip, not a walk. At those two, go straight to the in-station solutions below rather than hoping for something better outside.</p>
+<p><a href="/mosque-near-me">Our nearest-mosque tool</a> locates you and gives the current list — we would rather send you to live data than quote an address from memory.</p>
+<p><em>Straight-line distances; on foot, count more. Our survey is not exhaustive: a place we do not know about may exist. Prayer place data © OpenStreetMap contributors.</em></p>
 <h2>Inside the station: what works, what does not</h2>
 <p>What works: <strong>the far ends of the platforms</strong>, very quiet once you are a hundred metres from the concourse; <strong>lower levels</strong> and connecting corridors off-peak; the area around the left-luggage lockers.</p>
 <p>What does not: the main concourse, the flow zones in front of the departure boards, and platforms at departure time. It is not about being seen, it is about traffic: you do not pray in the middle of a corridor where three hundred people are walking fast with suitcases.</p>
@@ -3270,6 +3280,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Pratique',
     readTime: "8 min",
     publishedAt: '2026-08-06',
+    updatedAt: '2026-09-28',
     content: `<p>Correspondance à Paris, train dans deux heures, et l'heure de la prière qui tourne ? Voici la réalité des gares parisiennes — y compris ce qu'elles n'ont pas — et les solutions qui marchent vraiment selon le temps qu'il te reste.</p>
 
 <h2>L'essentiel en 30 secondes</h2>
@@ -3283,8 +3294,20 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <strong>Moins de 20 minutes</strong> : ne bouge pas. Prépare-toi à prier à bord ou à l'arrivée.</p>
 
 <h2>Trouver la salle de prière du quartier</h2>
-<p>Chaque grande gare — Nord, Est, Lyon, Montparnasse, Saint-Lazare, Austerlitz — est entourée de quartiers vivants où des salles existent. <a href="/mosquee-proche">Notre outil mosquée la plus proche</a> te géolocalise et te donne la plus proche en deux secondes, avec l'itinéraire.</p>
-<p>Un repère utile pour le sud-est de Paris : la <strong>Grande Mosquée de Paris</strong>, dans le 5<sup>e</sup> arrondissement, est à une quinzaine de minutes de marche de la gare d'Austerlitz — c'est un lieu public, ouvert et facile à trouver, ce qui en fait la valeur sûre du secteur quand on ne connaît pas le quartier.</p>
+<p>Les six grandes gares ne se valent pas du tout sur ce point, et il vaut mieux le savoir avant de sortir. Nous avons mesuré la distance entre chaque gare et le lieu de prière le plus proche de notre relevé OpenStreetMap (1 092 lieux en France, relevé du 3 septembre 2026) :</p>
+<table><thead><tr><th>Gare</th><th>Le plus proche</th><th>Dans 1 km</th><th>Dans 2 km</th></tr></thead><tbody>
+<tr><td><strong>Paris-Est</strong></td><td><strong>330 m</strong></td><td>3</td><td>8</td></tr>
+<tr><td>Paris-Nord</td><td>710 m</td><td><strong>5</strong></td><td>7</td></tr>
+<tr><td>Austerlitz</td><td>800 m</td><td>1</td><td>3</td></tr>
+<tr><td>Paris-Lyon</td><td>800 m</td><td>1</td><td>4</td></tr>
+<tr><td>Saint-Lazare</td><td><strong>2,1 km</strong></td><td>0</td><td>0</td></tr>
+<tr><td>Montparnasse</td><td><strong>2,6 km</strong></td><td>0</td><td>0</td></tr>
+</tbody></table>
+<p><strong>La règle des 45 minutes tient à quatre gares sur six.</strong> À Paris-Est, il y a trois lieux à moins d'un kilomètre et le premier est à 330 mètres — c'est la gare la mieux servie de Paris, et de loin. À Paris-Nord, cinq lieux dans le kilomètre.</p>
+<p><strong>À Montparnasse et Saint-Lazare, elle ne tient pas.</strong> Rien dans un rayon de deux kilomètres de notre relevé : sortir chercher coûterait un aller-retour en métro, pas une marche. Dans ces deux gares, applique directement les solutions « dans la gare » ci-dessous plutôt que d'espérer trouver mieux dehors.</p>
+<p><em>Distances à vol d'oiseau ; à pied, compte davantage. Relevé non exhaustif : une salle que nous ne connaissons pas peut exister. Données © les contributeurs OpenStreetMap.</em></p>
+<p> <a href="/mosquee-proche">Notre outil mosquée la plus proche</a> te géolocalise et te donne la plus proche en deux secondes, avec l'itinéraire.</p>
+<p>Un repère utile pour le sud-est de Paris : la <strong>Grande Mosquée de Paris</strong>, dans le 5<sup>e</sup> arrondissement, est le lieu le plus proche d'Austerlitz dans notre relevé — 800 mètres à vol d'oiseau, une quinzaine de minutes à pied — c'est un lieu public, ouvert et facile à trouver, ce qui en fait la valeur sûre du secteur quand on ne connaît pas le quartier.</p>
 <p>Pour les autres gares, <strong>nous ne publierons pas d'adresse que nous n'avons pas vérifiée</strong>. Les salles de quartier ouvrent, déménagent et ferment ; en citer une de mémoire enverrait quelqu'un devant une porte close avec un train à prendre. L'outil, lui, s'appuie sur des données mises à jour en continu.</p>
 
 <h2>Dans la gare : où ça marche, où ça ne marche pas</h2>
