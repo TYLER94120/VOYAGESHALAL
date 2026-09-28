@@ -2488,3 +2488,64 @@ Build du 27/00:12, `BUILD_ID` contrôlé avant lecture.
 · EN Disneyland et FR Disneyland : bloc email dans la bonne langue de chaque
   côté, pastilles « Marrakesh / Cairo / Medina » en anglais, « Marrakech /
   Le Caire / Médine » en français.
+
+## 28 septembre — les gares de Paris : notre propre phrase était fausse pour deux gares sur six
+
+Jour pair, approfondissement. Cible par la mesure :
+`/blog/ou-prier-gares-paris` — **72 affichages, 12,5 % de CTR, position
+8,6**. Peu de volume, mais l'un des meilleurs taux du site : la page
+convainc quand elle est vue.
+
+### Ce que l'article affirmait sans le mesurer
+
+> « Chaque grande gare — Nord, Est, Lyon, Montparnasse, Saint-Lazare,
+> Austerlitz — est entourée de quartiers vivants où des salles existent. »
+
+Et la description anglaise allait plus loin : « a solution under 15 minutes
+away **almost always exists** ». Personne n'avait vérifié.
+
+### La mesure
+
+`data/osm/mosquees/fr.json` (1 092 lieux, relevé du 03/09/2026), distances à
+vol d'oiseau depuis chaque gare :
+
+```
+  gare            le plus proche   <1 km  <2 km
+  Paris-Est            331 m         3      8
+  Paris-Nord           710 m         5      7
+  Austerlitz           796 m         1      3
+  Paris-Lyon           803 m         1      4
+  Saint-Lazare       2 092 m         0      0
+  Montparnasse       2 580 m         0      0
+```
+
+**La règle des 45 minutes tient à quatre gares sur six. Pas aux deux
+autres.** Rien dans un rayon de deux kilomètres de Montparnasse ni de
+Saint-Lazare : sortir y coûte un aller-retour en métro, pas une marche. Nos
+deux pages disaient l'inverse, en français comme en anglais.
+
+À l'opposé, **Paris-Est est la gare la mieux servie de Paris, et de loin** —
+331 mètres, trois lieux dans le kilomètre, huit dans les deux. Ce chiffre
+n'était nulle part sur le site.
+
+### Un détail vérifié plutôt que répété
+
+L'article disait que la Grande Mosquée de Paris est « à une quinzaine de
+minutes de marche d'Austerlitz ». Le relevé le confirme et le précise : elle
+**est** le lieu le plus proche d'Austerlitz, à 796 m. La phrase dit
+maintenant les deux — le rang et la distance.
+
+### Les deux langues, ensemble
+
+Le jumeau anglais a reçu le même tableau et la même correction de
+description. C'est la leçon du 27 : corriger une seule langue recrée
+l'asymétrie qu'on vient de combler ailleurs.
+
+### Vérifié servi
+
+Build du 28/00:11, `BUILD_ID` contrôlé avant lecture.
+· FR : 200, **1 550 mots**, tableau présent, « tient à quatre gares sur six »
+  présent, **ancienne phrase générale absente**, ODbL présent, desc 139 c.
+· EN : 200, **1 323 mots**, tableau présent, « holds at four stations out of
+  six » présent, **ancienne description absente**, ODbL présent, desc 145 c.
+· `/mosquee-proche` → 200, `/mosque-near-me` → 200.
