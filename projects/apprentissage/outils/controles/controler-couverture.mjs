@@ -96,9 +96,23 @@ for (const avecJS of [true, false]) {
         texte: (document.body.innerText || '').trim().length,
         titre: (document.querySelector('h1, .couv-titre') || {}).textContent || '',
         pastilles: past.length,
-        deborde: past.filter((e) => e.scrollWidth > e.clientWidth + 1
-                                 || e.scrollHeight > e.clientHeight + 1)
-                     .map((e) => e.textContent.trim().slice(0, 30)),
+        // ON MESURE LE TEXTE, PAS LA BOITE DE DEFILEMENT.
+        // `scrollHeight` comptait aussi les enfants en position absolue. Le
+        // 28 septembre, les pastilles de lecons ont recu un `::after` de
+        // 44 px — la zone tactile, invisible, qui ne deborde de rien — et ce
+        // controle a signale 38 etiquettes debordantes qui allaient tres
+        // bien. Il mesurait un pseudo-element au lieu de mesurer des lettres.
+        // Un Range donne la boite des CARACTERES, et rien d'autre.
+        deborde: past.filter((e) => {
+          const r = document.createRange();
+          r.selectNodeContents(e);
+          const t = r.getBoundingClientRect();
+          const b = e.getBoundingClientRect();
+          const s = getComputedStyle(e);
+          const g = (x) => parseFloat(s[x]) || 0;
+          return t.width > b.width - g('paddingLeft') - g('paddingRight') + 1
+              || t.height > b.height - g('paddingTop') - g('paddingBottom') + 1;
+        }).map((e) => e.textContent.trim().slice(0, 30)),
         horsCadre: past.filter((e) => e.getBoundingClientRect().right
                                     > de.clientWidth + 1).length,
         defileH: de.scrollWidth > de.clientWidth,

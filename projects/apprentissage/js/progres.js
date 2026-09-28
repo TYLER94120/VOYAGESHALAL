@@ -99,7 +99,7 @@
 
       if (!vues) {
         h += '<p class="c-meta">Tu n\'as pas encore joué. Il n\'y a donc rien à montrer ici — '
-          + '<a href="sections.html">commence une section</a>.</p>';
+          + '<a class="cible-etendue" href="sections.html">commence une section</a>.</p>';
         document.getElementById('progres').innerHTML = h;
         return;
       }

@@ -25,14 +25,27 @@
 
    Le bloc ne depasse pas la largeur du lien : dans `.tete`, la pastille de
    droite garde donc la sienne intacte. */
-a.marque, .rang-entre > a { position: relative; }
-a.marque::after, .rang-entre > a::after {
+a.marque, .rang-entre > a, a.cible-etendue { position: relative; }
+a.marque::after, .rang-entre > a::after, a.cible-etendue::after {
   content: "";
   position: absolute;
   left: 0; right: 0; top: 50%;
   height: var(--cible);
   transform: translateY(-50%);
 }
+
+/* `cible-etendue` EST LA FORME PARTAGEE DE CE MEME GESTE.
+   C'est la troisieme fois qu'on a besoin d'etendre la zone d'un lien sans
+   toucher a son dessin — la marque, « Tout voir », et maintenant le
+   « commence une section » de la page des progres, mesure du 28 septembre a
+   146 x 15 px. C'est le SEUL lien offert a quelqu'un qui ouvre cette page
+   pour la premiere fois, et il faisait un tiers de la cible du site.
+
+   Une classe plutot qu'un quatrieme selecteur : la regle est deja ecrite,
+   autant qu'elle soit reutilisable. A poser sur un lien ISOLE dans du texte.
+   Pas dans un paragraphe qui en contient plusieurs a la suite : deux zones
+   de 44 px sur des lignes espacees de 24 finiraient par se mordre, et
+   `controler-cibles.mjs` refuse desormais ce cas-la. */
 .marque b {
   font-family: var(--titre);
   font-size: 19px;

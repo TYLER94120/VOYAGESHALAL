@@ -62,7 +62,40 @@
   text-wrap: pretty;
 }
 
-.pastilles { display: flex; flex-wrap: wrap; gap: 8px; }
+/* L'ECART EST PASSE DE 8 A 10 PX, et ce n'est pas une question de gout.
+   Les pastilles de lecons sont des LIENS de 34 px de haut ; la zone touchee
+   de chacune est etendue a 44 px par le `::after` ci-dessous. Avec 8 px
+   d'ecart, deux rangs sont distants de 42 px : les zones de 44 px se
+   chevaucheraient de 2 px, et le haut d'une pastille volerait le toucher de
+   celle du dessus. Deux cibles qui se recouvrent sont pires qu'une cible
+   trop petite — on ne rate plus, on se trompe.
+   34 + 10 = 44 : elles se touchent sans jamais se mordre. */
+.pastilles { display: flex; flex-wrap: wrap; gap: 10px; }
+
+/* LA ZONE TOUCHEE DES PASTILLES QUI SONT DES LIENS.
+   ------------------------------------------------
+   Mesure du 28 septembre, a 360 px, sur /section/sens-des-sourates : les
+   38 pastilles de lecons faisaient 34 px de haut, contre une cible de 44.
+   Elles ont ete posees la le 20 septembre — par moi — et elles sont passees
+   au travers parce que `controler-cibles.mjs` visitait `section/la-priere`,
+   une section qui n'a pas de lecons. Le seul ecran qui porte ces 38 liens
+   n'etait pas dans la liste.
+
+   On etend la zone, on ne deplace rien : c'est exactement la technique deja
+   employee pour le lien de marque et pour « Tout voir » dans `pages.css`.
+   La pastille garde ses 34 px a l'ecran, son dessin ne bouge pas d'un pixel.
+
+   Seulement `a.pastille` : les pastilles de themes sont des `<span>`, des
+   etiquettes qu'on ne touche pas. Leur donner une zone de 44 px poserait des
+   pieges invisibles entre les vraies cibles. */
+.pastilles a.pastille { position: relative; }
+.pastilles a.pastille::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; top: 50%;
+  height: var(--cible);
+  transform: translateY(-50%);
+}
 /* LA PASTILLE DE THEME EST UNE ETIQUETTE DE TEXTE, PAS UN BOUTON ROND.
    `base.css` definit deja `.pastille` : le bouton rond de --cible x --cible
    des en-tetes. Cette regle-ci, ecrite avec la meme specificite, redefinissait
