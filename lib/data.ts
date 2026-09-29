@@ -3208,6 +3208,50 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <h2>Aide la communauté</h2><p>Un spot testé au Futuroscope, une info fraîche ? Partage-la — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
   },
   {
+    slug: "where-to-pray-shopping-mall-france",
+    title: "Prayer room in a French mall: the words that work",
+    description: "Some French shopping centres have a quiet room they never signpost. The exact French words to ask for it, and what to do when the answer is no.",
+    coverImage: "/guides/blog-centrecommercial.jpg",
+    category: 'Practical',
+    readTime: "4 min",
+    publishedAt: '2026-09-29',
+    lang: 'en',
+    tags: ['prayer', 'shopping mall', 'france', 'muslim travel'],
+    content: `<p>Shopping in France with a prayer window closing? Some large centres do have a quiet room — and almost none of them signpost it. The difference between finding it and not finding it is usually <strong>which words you use at the desk</strong>.</p>
+
+<h2>The short version</h2>
+<p>Ask at the information desk, and ask in the right words. If the answer is no, a quiet landing or the covered car park works, after wudu in the toilets. Do not expect a sign: <strong>where these rooms exist, they are generally not advertised</strong>.</p>
+
+<h2>The words that get an answer</h2>
+<p>This is the part no English-language guide tells you, and it is the whole game. Asking a French member of staff for a <em>prayer room</em> — or worse, a <em>mosque</em> — often gets a blank look or a no. Asking for one of these usually gets a real answer:</p>
+<ul>
+<li><strong>« un lieu de culte »</strong> — a place of worship. This is the phrase on French signage.</li>
+<li><strong>« une salle de recueillement »</strong> — a quiet/contemplation room. The official term, and the one staff recognise.</li>
+<li><strong>« un endroit calme »</strong> — a quiet spot. The fallback when the first two draw nothing; it asks for a place, not a facility, and people can usually point to one.</li>
+</ul>
+<p>We use the same vocabulary in our French airport guides for the same reason: it is the wording the building itself uses, so it gets an answer instead of a shrug. Ask at the <strong>information desk</strong> (« accueil ») or a <strong>security guard</strong> (« la sécurité ») — the guards know the building better than anyone.</p>
+
+<h2>What we do not claim</h2>
+<p>We are <strong>not going to name a mall and promise you a room</strong>. These spaces open, move and close without announcement, and we have not verified any of them on site. A page that sends you to a specific door that turns out not to exist, with a car park ticket running, is worse than a page that teaches you how to ask.</p>
+<p>If you find one, <strong>tell us where</strong> — that is the information this page is missing, and it is the kind that cannot be looked up.</p>
+
+<h2>If the answer is no</h2>
+<p>Usually it will be. What works, in order of how comfortable it is:</p>
+<p><strong>1. A quiet landing or upper level.</strong> The floors furthest from the food court empty out, especially mid-afternoon on a weekday.<br/>
+<strong>2. The covered car park.</strong> Beside your own car is the most private option in the whole building, and nobody is watching. This is the equivalent of the car-park solution that works so well at French theme parks.<br/>
+<strong>3. Your car itself</strong>, if you drove.</p>
+<p>What does not work: the main concourse, the walkways in front of the big stores, and anywhere near a fire exit. Use our <a href="/qibla">qibla tool</a> to orient yourself, and keep your bags with you.</p>
+
+<h2>Wudu</h2>
+<p>The mall toilets, with the usual obstacles — sensor taps, high basins, someone waiting. A small soft bottle filled at the basin before you go into the cubicle solves most of it, and a microfibre towel in the bag does the rest. The method is in our guide on <a href="/blog/wudu-on-a-plane-or-train">making wudu while travelling</a>.</p>
+
+<h2>What we do not rule on</h2>
+<p>Whether prayers may be shortened or combined while out, and whether a fitting room is an acceptable place — <strong>these are religious questions, not travel ones, and we do not answer them</strong>. Ask someone qualified. What we can say is the practical half: praying at the start of the window rather than the end removes most of the pressure.</p>
+
+<h2>Help the community</h2>
+<p>Know a French mall with a quiet room, or a good discreet corner in one? Share it. <a href="/communaute">→ Join the community</a></p>`,
+  },
+  {
     slug: "where-to-pray-paris-stations",
     title: "Where to Pray at Paris Train Stations (2026)",
     description: "No prayer room in French railway stations. Measured: four of the six Paris stations have one within a kilometre, and two have nothing within two.",
@@ -3803,14 +3847,14 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Pratique',
     readTime: "4 min",
     publishedAt: '2026-07-20',
-    updatedAt: '2026-08-29',
+    updatedAt: '2026-09-29',
     tags: ["Centre commercial", "Prière", "Pratique"],
     content: `<p>Une journée shopping et l'heure de la prière qui approche ? Voici où prier dans un centre commercial discrètement.</p>
 <h2>L'essentiel en 30 secondes</h2><p>Certains grands centres ont une salle de prière (souvent méconnue) : demande à l'accueil ou à la sécurité. Sinon, prie dans un coin calme (parking couvert, palier peu fréquenté), après ablutions aux toilettes.</p>
 <h2>1. Demande à l'accueil — le bon réflexe</h2><p>De plus en plus de grands centres aménagent une salle de prière ou un espace multiconfessionnel sans le signaler. Demande au comptoir d'accueil ou à un agent de sécurité.</p>
 <h2>2. Repère un coin calme</h2><p>Cherche un palier peu fréquenté, un coin près des toilettes/ascenseurs, ou le parking couvert. Pose une veste ou un petit tapis, oriente-toi vers la qibla (<a href="/qibla">notre outil qibla</a>).</p>
 <h2>3. Les ablutions</h2><p>Les toilettes permettent les ablutions avec discrétion. Un petit nécessaire dans le sac aide.</p>
-<h2>4. Gagne du temps avec les facilités</h2><p>En déplacement, raccourcis et regroupe. Sinon, prie dès l'entrée du temps de prière pour éviter de courir.</p>
+<h2>4. Le réflexe qui enlève la pression</h2><p><strong>Prie dès l'entrée du temps de prière</strong> plutôt qu'à la fin : c'est ce qui évite de courir, et ça ne dépend de personne d'autre que toi. Sur ce qui est permis en déplacement — raccourcir, regrouper — <strong>nous ne tranchons pas</strong> : c'est une question religieuse, pas une question de voyage. Pose-la à quelqu'un de qualifié.</p>
 <h2>Questions fréquentes</h2><p><strong>Salle de prière en centre commercial ?</strong> Certains oui, souvent sans l'afficher : demande à l'accueil.<br/><strong>S'il n'y en a pas ?</strong> Un coin calme (palier, parking couvert) après ablutions.<br/><strong>Cabine d'essayage ?</strong> En dépannage éventuellement, un coin calme et propre est préférable.</p>
 <h2>Aide la communauté</h2><p>Tu connais un centre commercial avec salle de prière (ou un bon coin discret) ? Introuvable sur Maps, Partage-le — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
   },

@@ -100,6 +100,14 @@ export const BLOG_FR_TO_EN: Record<string, string> = {
   // cas du visiteur arrivé SANS voiture — pour qui la solution principale du
   // texte français, l'aller-retour au parking, n'existe pas.
   'ou-prier-futuroscope': '/blog/where-to-pray-futuroscope',
+  // 29 septembre. Le français faisait 292 mots. L'anglais dit la chose qui
+  // décide vraiment du résultat pour un visiteur étranger : les MOTS
+  // FRANÇAIS à employer au comptoir — « lieu de culte », « salle de
+  // recueillement », « un endroit calme ». C'est la même règle que nos
+  // guides d'aéroport : on demande avec le vocabulaire du bâtiment, sinon on
+  // obtient un non. Aucun centre commercial nommé : nous n'en avons vérifié
+  // aucun, et la page le dit.
+  'ou-prier-centre-commercial': '/blog/where-to-pray-shopping-mall-france',
   'ou-prier-aeroport-toulouse': '/blog/where-to-pray-toulouse-airport',
   'ou-prier-aeroport-cdg': '/blog/where-to-pray-cdg-airport',
   'ou-prier-aeroport-orly': '/blog/where-to-pray-orly-airport',
