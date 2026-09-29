@@ -237,6 +237,39 @@ def main():
     # Ils sont affiches sur une page indexee ; un chiffre faux y serait une
     # affirmation fausse sur le Coran, sur une page publique, au nom de
     # l'editeur. On ne fait donc pas confiance au generateur : on relit la
+    # LA LISTE DES NOMS SERVIE AUX TELEPHONES EST-ELLE CELLE QUI A FAIT LES
+    # PAGES ?
+    #
+    # `data/noms-sourates.json` est servi au navigateur : `lancer-qcm.js` le
+    # passe a `poserTables`, et c'est lui qui ecrit « SOURATE AT-TIN » sur le
+    # cartouche de chaque carte de QCM. `outils/coran/noms-sourates.json`,
+    # lui, a fabrique les 38 lecons, les questions, le sitemap et la liste des
+    # 114.
+    #
+    # Ils etaient identiques le 29 septembre — et maintenus par personne :
+    # aucun outil n'ecrivait le second, aucun controle ne les comparait. Le
+    # jour ou une translitteration est corrigee d'un cote, les pages suivent
+    # et les cartes gardent l'ancienne. Deux orthographes pour une meme
+    # sourate selon l'ecran, sur un site qui enseigne le Coran.
+    #
+    # `faire-sourates.py` refabrique desormais la copie servie. Ce controle
+    # verifie qu'elle n'a pas ete touchee a la main depuis.
+    servi = RACINE / 'data' / 'noms-sourates.json'
+    source = CORAN / 'noms-sourates.json'
+    if not servi.is_file():
+        fautes.append('data/noms-sourates.json est absent : les cartes de QCM '
+                      'n\'auront pas de nom de sourate. Lancer faire-sourates.py')
+    elif servi.read_bytes() != source.read_bytes():
+        a = json.loads(source.read_text(encoding='utf-8'))
+        b = json.loads(servi.read_text(encoding='utf-8'))
+        pa = {x['n']: x for x in a}
+        pb = {x['n']: x for x in b}
+        ecarts = [str(n) for n in sorted(set(pa) | set(pb)) if pa.get(n) != pb.get(n)]
+        fautes.append('data/noms-sourates.json differe de outils/coran/ sur %d '
+                      'sourate(s) (%s). Les pages sont faites avec l\'une et les '
+                      'cartes de QCM affichent l\'autre. Lancer faire-sourates.py'
+                      % (len(ecarts), ', '.join(ecarts[:8]) or 'mise en forme'))
+
     # page telle qu'elle est ecrite et on recompte depuis le corpus.
     index = RACINE / 'sourates.html'
     if index.is_file():

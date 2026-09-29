@@ -233,9 +233,36 @@ def main():
 </html>
 """
     (RACINE / 'sourates.html').write_text(h, encoding='utf-8')
+
+    # LA COPIE SERVIE AUX TELEPHONES EST FABRIQUEE ICI, PLUS RECOPIEE.
+    #
+    # `data/noms-sourates.json` existait a cote de `outils/coran/
+    # noms-sourates.json` : les memes 114 noms, deux fois. Mesure du
+    # 29 septembre : identiques octet pour octet — et maintenus par personne.
+    # Aucun outil n'ecrivait la copie servie, aucun controle ne la comparait.
+    #
+    # Les deux ne servent pourtant pas au meme endroit. Tous les generateurs
+    # lisent celle d'outils : les lecons, les questions, le sitemap, cette
+    # page. Le navigateur, lui, lit celle de data — `lancer-qcm.js` la passe
+    # a `poserTables`, et c'est elle qui ecrit « SOURATE AT-TIN » sur le
+    # cartouche de chaque carte de QCM.
+    #
+    # Le jour ou une translitteration est corrigee dans la source, les pages
+    # suivent et les cartes gardent l'ancienne. Sur un site qui enseigne le
+    # Coran, deux orthographes pour une meme sourate selon l'ecran, sans que
+    # rien ne sonne. C'est exactement ce que le projet se repete depuis le
+    # debut : deux listes finissent toujours par diverger.
+    #
+    # On ne garde donc plus une copie, on en fabrique une. Meme texte, meme
+    # ordre, meme octets ; et `controler-lecons.py` refuse le lot si les deux
+    # different.
+    (RACINE / 'data' / 'noms-sourates.json').write_text(
+        (CORAN / 'noms-sourates.json').read_text(encoding='utf-8'), encoding='utf-8')
+
     print('  sourates.html : 114 sourates, %d avec une lecon.' % len(avec))
     print('  titre %d caracteres, description %d.' % (len(TITRE), len(DESC)))
     print('  le nombre de lecons annonce est compte, pas recopie.')
+    print('  data/noms-sourates.json refabrique depuis outils/coran/.')
 
 
 if __name__ == '__main__':
