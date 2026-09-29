@@ -2549,3 +2549,51 @@ Build du 28/00:11, `BUILD_ID` contrôlé avant lecture.
 · EN : 200, **1 323 mots**, tableau présent, « holds at four stations out of
   six » présent, **ancienne description absente**, ODbL présent, desc 145 c.
 · `/mosquee-proche` → 200, `/mosque-near-me` → 200.
+
+## 29 septembre — le centre commercial en anglais, et une question religieuse retirée du français
+
+Jour impair, création. Gisement n° 1 : traduire un article français vérifié.
+Après le Futuroscope, il restait quatre articles FR sans jumeau. Choisi :
+`ou-prier-centre-commercial` (292 mots).
+
+### Ce que l'anglais dit et que le français ne dit pas
+
+Le français conseille « demande à l'accueil ». Pour un visiteur étranger,
+**ça ne suffit pas — il faut savoir avec quels mots demander.** C'est la
+règle que nos guides d'aéroport ont établie depuis août : on demande avec le
+vocabulaire du bâtiment, sinon on obtient un non.
+
+L'article anglais donne donc les trois formulations françaises :
+« un lieu de culte », « une salle de recueillement », « un endroit calme ».
+C'est le cœur de la page, et aucun guide anglophone ne le dit.
+
+**Aucun centre commercial n'est nommé**, et la page explique pourquoi :
+ces espaces ouvrent, déménagent et ferment sans annonce, nous n'en avons
+vérifié aucun, et envoyer quelqu'un devant une porte inexistante avec un
+ticket de parking qui tourne est pire que de ne rien promettre.
+
+### 🔴 Et le français tranchait une question religieuse
+
+En relisant l'original pour le traduire, cette phrase :
+
+> « En déplacement, raccourcis et regroupe. »
+
+C'est un **avis religieux**, à l'impératif, sur notre propre site — exactement
+ce que le protocole interdit depuis le début. Personne ne l'avait vu parce
+que personne ne relisait ce petit article.
+
+Remplacée par la moitié pratique, qui est la nôtre (« prie dès l'entrée du
+temps de prière plutôt qu'à la fin »), et le renvoi explicite : *sur ce qui
+est permis en déplacement — raccourcir, regrouper — nous ne tranchons pas.*
+
+C'est le meilleur argument pour le cycle de traduction : **traduire oblige à
+relire**, et relire trouve ce que personne ne cherchait.
+
+### Vérifié servi
+
+Build du 29/00:10, `BUILD_ID` contrôlé avant lecture.
+· EN `/blog/where-to-pray-shopping-mall-france` : 200, titre 49 c,
+  description 143 c, **1 014 mots**, vocabulaire français présent, refus de
+  nommer présent, refus de trancher présent, **32 liens testés, 0 cassé**.
+· FR : 200, l'impératif religieux est **parti**, le renvoi est en place.
+· Jumelé dans `lib/slugs.ts`.
