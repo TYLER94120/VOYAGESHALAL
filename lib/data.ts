@@ -2415,6 +2415,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Practical',
     readTime: "6 min",
     publishedAt: '2026-08-01',
+    updatedAt: '2026-09-30',
     lang: 'en',
     tags: ['prayer', 'airport', 'lyon'],
     content: `
@@ -2441,6 +2442,10 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <strong>3. Praying seated at the gate.</strong> When only a few minutes of the window are left, this is what many travellers do.</p>
 <p>A <strong>pocket prayer mat is no problem at security</strong>: it is an ordinary item. Pack it along the side of your bag so you can get it out faster.</p>
 
+<h2>Go out and find a mosque? Not here</h2>
+<p>The question comes up naturally when the room is closed or on the wrong side of security. Measured against our OpenStreetMap survey (1,092 places in France, surveyed 3 September 2026): the nearest prayer place to Lyon-Saint-Exupéry is <strong>6.5 km</strong> away, and there is <strong>nothing within 5 km</strong>. Six within ten kilometres, all out towards Charvieu-Chavagneux.</p>
+<p>In other words: that is a round trip by road, not a walk between gates. At Lyon, <strong>the decision is made before you reach the airport</strong>, or it is handled inside the terminal with the options above.</p>
+<p><em>Straight-line distance from the airport reference point; on foot or by transport, count more. Our survey is not exhaustive: a place we do not know about may exist. Prayer place data © OpenStreetMap contributors.</em></p>
 <h2>Wudu</h2>
 <p>The spiritual centre is the best place if you go there; elsewhere it is the toilets, with high basins and sensor taps that cut the water every three seconds. Two habits change everything: filling <strong>a small squeezable bottle</strong> before going into the cubicle, and keeping a <strong>microfibre towel</strong> in your cabin bag. The full method is in our guide: <a href="/blog/wudu-on-a-plane-or-train">making wudu while travelling</a>.</p>
 
@@ -2470,6 +2475,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Practical',
     readTime: "6 min",
     publishedAt: '2026-08-01',
+    updatedAt: '2026-09-30',
     lang: 'en',
     tags: ['prayer', 'airport', 'nice'],
     content: `
@@ -2494,6 +2500,10 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <h2>What we know, and what we do not</h2>
 <p>The location comes from the <strong>airport's public information</strong> — <strong>we have not verified it ourselves on site</strong>. We publish <strong>no opening hours</strong>: we have none we trust, and an invented window would do more harm than good to someone with a 6 a.m. flight. We also have no trace of a dedicated <strong>wudu area</strong>.</p>
 
+<h2>Go out and find a mosque? At Nice, it is doable</h2>
+<p>Nice is one of the few French airports where the question is worth asking. Measured against our OpenStreetMap survey (1,092 places in France, surveyed 3 September 2026): the nearest prayer place is <strong>2.3 km</strong> away — one within three kilometres, two within ten. The airport sits in the city, right at the end of the Promenade des Anglais.</p>
+<p><strong>If you are landside with an hour to spare</strong>, going out is a real option here, which it is not at Lyon or Toulouse (6.5 km each). <a href="/mosque-near-me">Our nearest-mosque tool</a> locates you and gives the current list — we would rather send you to live data than quote an address from memory.</p>
+<p><em>Straight-line distance from the airport reference point; on foot or by transport, count more. Our survey is not exhaustive: a place we do not know about may exist. Prayer place data © OpenStreetMap contributors.</em></p>
 <h2>Wudu</h2>
 <p>In the toilets, then, until proven otherwise — high basins and sensor taps that cut the water every three seconds. Two habits change everything: filling <strong>a small squeezable bottle</strong> before going into the cubicle, and keeping a <strong>microfibre towel</strong> in your cabin bag. The full method is in our guide: <a href="/blog/wudu-on-a-plane-or-train">making wudu while travelling</a>.</p>
 
@@ -2578,6 +2588,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Practical',
     readTime: "6 min",
     publishedAt: '2026-08-01',
+    updatedAt: '2026-09-30',
     lang: 'en',
     tags: ['prayer', 'airport', 'brussels'],
     content: `
@@ -2601,6 +2612,10 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <p>These locations come from the <strong>airport's public information</strong>. <strong>We have not verified them ourselves on site</strong>, and airports get rebuilt. Zaventem publishes a <strong>contact address dedicated to the prayer rooms</strong>: <a href="mailto:prayerrooms@brusselsairport.be">prayerrooms@brusselsairport.be</a>. That is rare, and it is the best way to get an up-to-date answer before you travel.</p>
 <p>What we will not claim: that there is a dedicated wudu area. We have no trace of one, so we do not write it.</p>
 
+<h2>Go out and find a mosque? Zaventem is the best placed</h2>
+<p>This is the most favourable figure in any of our airport guides. Measured against our OpenStreetMap survey (228 places in Belgium, surveyed 3 September 2026): the nearest prayer place to Brussels-Zaventem is <strong>1.9 km</strong> away — the <strong>BIF Zaventem Camii</strong> — with two places within three kilometres and three within five.</p>
+<p><strong>No French airport does better</strong>: Orly is 2.3 km out, Paris-CDG 6.4 km. For a long landside connection, going out to pray is a genuine option here. For comparison, Brussels-Charleroi is 4.3 km out, with nothing within three kilometres.</p>
+<p><em>Straight-line distance from the airport reference point; on foot or by transport, count more. Our survey is not exhaustive: a place we do not know about may exist. Prayer place data © OpenStreetMap contributors.</em></p>
 <h2>Wudu</h2>
 <p>In the toilets, then, until proven otherwise. Two habits change everything against high basins and sensor taps: filling <strong>a small squeezable bottle</strong> before going into the cubicle, and keeping a <strong>microfibre towel</strong> in your cabin bag. The full method is in our guide: <a href="/blog/wudu-on-a-plane-or-train">making wudu while travelling</a>.</p>
 
@@ -3475,6 +3490,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Pratique',
     readTime: "7 min",
     publishedAt: '2026-07-20',
+    updatedAt: '2026-09-30',
     tags: ["Lyon", "Aéroports", "Prière"],
     content: `<p>Tu voyages depuis Lyon et tu cherches une salle de prière à l'aéroport Saint-Exupéry ? Bonne nouvelle : il y en a une. Mauvaise nouvelle : <strong>elle est côté ville</strong>, et si tu as déjà passé les contrôles, elle ne te sert plus à rien. Voici comment t'organiser en conséquence.</p>
 
@@ -3499,6 +3515,10 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <strong>3. Prier assis, en salle d'embarquement.</strong> Quand il ne reste que quelques minutes de créneau, c'est ce que font beaucoup de voyageurs.</p>
 <p>Un <strong>tapis de prière de poche ne pose aucun problème au contrôle</strong> : c'est un objet courant. Range-le sur le côté du sac, tu le sortiras plus vite.</p>
 
+<h2>Sortir chercher une mosquée ? Non, pas ici</h2>
+<p>La question vient naturellement quand la salle est fermée ou du mauvais côté des contrôles. Mesure sur notre relevé OpenStreetMap (1 092 lieux en France, relevé du 3 septembre 2026) : le lieu de prière le plus proche de Lyon-Saint-Exupéry est à <strong>6,5 km</strong>, et il n'y en a <strong>aucun dans un rayon de 5 km</strong>. Six dans les dix kilomètres, tous du côté de Charvieu-Chavagneux.</p>
+<p>Autrement dit : c'est un aller-retour en transport, pas une marche entre deux portes. À Lyon, <strong>la bonne décision se prend avant d'arriver à l'aéroport</strong>, ou se règle dans le terminal avec les solutions ci-dessus.</p>
+<p><em>Distance à vol d'oiseau depuis le point de référence de l'aéroport ; à pied ou en transport, compte davantage. Relevé non exhaustif : un lieu que nous ne connaissons pas peut exister. Données © les contributeurs OpenStreetMap.</em></p>
 <h2>Les ablutions</h2>
 <p>Le centre spirituel est le meilleur endroit si tu y vas ; ailleurs, ce sont les toilettes, avec des lavabos hauts et des robinets à capteur qui coupent l'eau toutes les trois secondes. Deux habitudes qui changent tout : remplir <strong>une petite bouteille souple</strong> avant d'entrer dans la cabine, et garder une <strong>serviette microfibre</strong> dans le bagage cabine. La méthode complète est dans notre guide : <a href="/blog/ablutions-avion-train">faire ses ablutions en voyage</a>.</p>
 
@@ -3527,6 +3547,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Pratique',
     readTime: "7 min",
     publishedAt: '2026-07-20',
+    updatedAt: '2026-09-30',
     tags: ["Nice", "Aéroports", "Prière"],
     content: `<p>Tu pars de Nice-Côte d'Azur et tu cherches où prier ? Il y a mieux qu'un coin calme : une <strong>salle réservée aux musulmans</strong>, ce qui est rare. Mais elle est au <strong>Terminal 2</strong> — et si ton vol part du Terminal 1, ça change tout.</p>
 
@@ -3549,6 +3570,10 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <h2>Ce que nous savons, et ce que nous ne savons pas</h2>
 <p>L'emplacement vient des <strong>informations publiques de l'aéroport</strong> — <strong>nous ne l'avons pas vérifié nous-mêmes sur place</strong>. Nous ne publions <strong>aucun horaire</strong> : nous n'en avons pas de fiables, et une plage inventée ferait plus de mal que de bien à quelqu'un qui a un vol à 6 h. Nous n'avons pas non plus trace d'un <strong>espace d'ablutions</strong> dédié.</p>
 
+<h2>Sortir chercher une mosquée ? À Nice, c'est jouable</h2>
+<p>Nice est l'un des rares aéroports français où la question mérite d'être posée. Mesure sur notre relevé OpenStreetMap (1 092 lieux en France, relevé du 3 septembre 2026) : le lieu de prière le plus proche est à <strong>2,3 km</strong> — un seul dans les trois kilomètres, deux dans les dix. L'aéroport est en ville, littéralement au bord de la Promenade des Anglais.</p>
+<p><strong>Si tu es côté ville avec une heure devant toi</strong>, sortir est une option réelle ici, ce qui n'est pas vrai à Lyon ni à Toulouse (6,5 km chacun). <a href="/mosquee-proche">Notre outil mosquée la plus proche</a> te géolocalise et donne les lieux à jour — nous préférons t'y envoyer plutôt que de citer une adresse de mémoire.</p>
+<p><em>Distance à vol d'oiseau depuis le point de référence de l'aéroport ; à pied ou en transport, compte davantage. Relevé non exhaustif : un lieu que nous ne connaissons pas peut exister. Données © les contributeurs OpenStreetMap.</em></p>
 <h2>Les ablutions</h2>
 <p>Aux toilettes, donc, jusqu'à preuve du contraire — lavabos hauts et robinets à capteur qui coupent l'eau toutes les trois secondes. Deux habitudes qui changent tout : remplir <strong>une petite bouteille souple</strong> avant d'entrer dans la cabine, et garder une <strong>serviette microfibre</strong> dans le bagage cabine. La méthode complète est dans notre guide : <a href="/blog/ablutions-avion-train">faire ses ablutions en voyage</a>.</p>
 
@@ -3579,6 +3604,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Practical',
     readTime: "6 min",
     publishedAt: '2026-08-11',
+    updatedAt: '2026-09-30',
     lang: 'en',
     tags: ['prayer', 'airport', 'toulouse', 'muslim travel'],
     content: `
@@ -3607,6 +3633,10 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <strong>3. Praying seated at the gate.</strong> When only a few minutes of the window are left, this is what many travellers do.</p>
 <p>A <strong>pocket prayer mat is no problem at security</strong>: it is an ordinary item and nobody blinks. Pack it along the side of your bag so you can get it out faster.</p>
 
+<h2>Go out and find a mosque? Not here</h2>
+<p>Measured against our OpenStreetMap survey (1,092 places in France, surveyed 3 September 2026): the nearest prayer place to Toulouse-Blagnac is <strong>6.5 km</strong> away, with <strong>nothing within 5 km</strong> — eight within ten kilometres, over towards the city.</p>
+<p>So that is a round trip by road, not a walk. As at Lyon, <strong>the question is settled before you arrive</strong> or inside the terminal. The contrast with Nice is stark: 2.3 km there, 6.5 km here.</p>
+<p><em>Straight-line distance from the airport reference point; on foot or by transport, count more. Our survey is not exhaustive: a place we do not know about may exist. Prayer place data © OpenStreetMap contributors.</em></p>
 <h2>Wudu</h2>
 <p>In the toilets, until proven otherwise — high basins and sensor taps that cut the water every three seconds. Two habits change everything: filling <strong>a small squeezable bottle</strong> before going into the cubicle, and keeping a <strong>microfibre towel</strong> in your cabin bag. The full method is in our guide: <a href="/blog/wudu-on-a-plane-or-train">making wudu while travelling</a>.</p>
 
@@ -3634,6 +3664,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Pratique',
     readTime: "7 min",
     publishedAt: '2026-07-20',
+    updatedAt: '2026-09-30',
     tags: ["Toulouse", "Aéroports", "Prière"],
     content: `<p>Tu voyages depuis Toulouse-Blagnac et tu cherches où prier ? Il y a un espace, il est bien identifié — et il a une contrainte que personne ne mentionne : <strong>il faut monter au 3<sup>e</sup> étage</strong>. Voici ce que ça change quand l'embarquement approche.</p>
 
@@ -3660,6 +3691,10 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <strong>3. Prier assis, en salle d'embarquement.</strong> Quand il ne reste que quelques minutes de créneau, c'est ce que font beaucoup de voyageurs.</p>
 <p>Un <strong>tapis de prière de poche ne pose aucun problème au contrôle</strong> : c'est un objet courant et personne ne s'en étonne. Range-le sur le côté du sac, tu le sortiras plus vite.</p>
 
+<h2>Sortir chercher une mosquée ? Non, pas ici</h2>
+<p>Mesure sur notre relevé OpenStreetMap (1 092 lieux en France, relevé du 3 septembre 2026) : le lieu de prière le plus proche de Toulouse-Blagnac est à <strong>6,5 km</strong>, et il n'y en a <strong>aucun dans un rayon de 5 km</strong> — huit dans les dix kilomètres, du côté de la ville.</p>
+<p>C'est donc un aller-retour en transport, pas une marche. Comme à Lyon, <strong>la question se règle avant d'arriver</strong> ou dans le terminal. Le contraste avec Nice est net : 2,3 km là-bas, 6,5 km ici.</p>
+<p><em>Distance à vol d'oiseau depuis le point de référence de l'aéroport ; à pied ou en transport, compte davantage. Relevé non exhaustif : un lieu que nous ne connaissons pas peut exister. Données © les contributeurs OpenStreetMap.</em></p>
 <h2>Les ablutions</h2>
 <p>Aux toilettes, jusqu'à preuve du contraire — lavabos hauts et robinets à capteur qui coupent l'eau toutes les trois secondes. Deux habitudes qui changent tout : remplir <strong>une petite bouteille souple</strong> avant d'entrer dans la cabine, et garder une <strong>serviette microfibre</strong> dans le bagage cabine. La méthode complète est dans notre guide : <a href="/blog/ablutions-avion-train">faire ses ablutions en voyage</a>.</p>
 
@@ -3737,6 +3772,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Pratique',
     readTime: "7 min",
     publishedAt: '2026-07-20',
+    updatedAt: '2026-09-30',
     tags: ["Bruxelles", "Aéroports", "Prière"],
     content: `<p>Tu voyages via Bruxelles-Zaventem et tu cherches où prier ? C'est, de toute notre série, l'aéroport le mieux équipé — et pour une fois, <strong>c'est le voyageur pressé qui est le mieux servi</strong>. Voici pourquoi, et comment t'organiser.</p>
 
@@ -3758,6 +3794,10 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <p>Ces emplacements viennent des <strong>informations publiques de l'aéroport</strong>. <strong>Nous ne les avons pas vérifiés nous-mêmes sur place</strong>, et un aéroport se réaménage. Zaventem publie une <strong>adresse de contact dédiée aux salles de prière</strong> : <a href="mailto:prayerrooms@brusselsairport.be">prayerrooms@brusselsairport.be</a>. C'est rare, et c'est le meilleur moyen d'avoir une réponse à jour avant de partir.</p>
 <p>Ce que nous n'affirmerons pas : la présence d'un espace d'ablutions dédié. Nous n'en avons pas trace, donc nous ne l'écrivons pas.</p>
 
+<h2>Sortir chercher une mosquée ? Zaventem est le mieux placé</h2>
+<p>C'est le chiffre le plus favorable de tous nos guides d'aéroport. Mesure sur notre relevé OpenStreetMap (228 lieux en Belgique, relevé du 3 septembre 2026) : le lieu de prière le plus proche de Bruxelles-Zaventem est à <strong>1,9 km</strong> — la <strong>BIF Zaventem Camii</strong> — avec deux lieux dans les trois kilomètres et trois dans les cinq.</p>
+<p><strong>Aucun aéroport français ne fait mieux</strong> : Orly est à 2,3 km, Roissy à 6,4 km. Pour une correspondance longue côté ville, sortir prier est ici une vraie option. À titre de comparaison, Bruxelles-Charleroi est à 4,3 km, sans rien dans les trois kilomètres.</p>
+<p><em>Distance à vol d'oiseau depuis le point de référence de l'aéroport ; à pied ou en transport, compte davantage. Relevé non exhaustif : un lieu que nous ne connaissons pas peut exister. Données © les contributeurs OpenStreetMap.</em></p>
 <h2>Les ablutions</h2>
 <p>Aux toilettes, donc, jusqu'à preuve du contraire. Deux habitudes qui changent tout face aux lavabos hauts et aux robinets à capteur : remplir <strong>une petite bouteille souple</strong> avant d'entrer dans la cabine, et garder une <strong>serviette microfibre</strong> dans le bagage cabine. La méthode complète est dans notre guide : <a href="/blog/ablutions-avion-train">faire ses ablutions en voyage</a>.</p>
 

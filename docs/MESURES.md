@@ -2597,3 +2597,68 @@ Build du 29/00:10, `BUILD_ID` contrôlé avant lecture.
   nommer présent, refus de trancher présent, **32 liens testés, 0 cassé**.
 · FR : 200, l'impératif religieux est **parti**, le renvoi est en place.
 · Jumelé dans `lib/slugs.ts`.
+
+## 30 septembre — le hub savait, les pages d'arrivée ne disaient rien
+
+Jour pair, approfondissement. Le relevé Search Console du 30 août est
+maintenant épuisé pour la bande 5-15 : Disneyland, Orly, le hub aéroports et
+les gares de Paris sont traités. Plutôt que de choisir au goût, j'ai cherché
+un **écart interne** — et il y en avait un, gros.
+
+### L'écart
+
+Le hub `/blog/ou-prier-aeroports` porte depuis le 9 septembre un tableau des
+distances jusqu'au lieu de prière le plus proche, enrichi le 24. Mais
+**aucune des cinq pages par aéroport ne contenait ce chiffre.** Mesuré :
+
+```
+  ou-prier-aeroport-lyon        903 mots   distance : non
+  ou-prier-aeroport-nice        887 mots   distance : non
+  ou-prier-aeroport-toulouse    861 mots   distance : non
+  ou-prier-aeroport-geneve      838 mots   distance : non
+  ou-prier-aeroport-bruxelles   811 mots   distance : non
+```
+
+Or c'est sur la page de l'aéroport que Google fait atterrir quelqu'un qui
+cherche « où prier aéroport Lyon » — pas sur le hub. **L'information vivait
+à l'endroit où on ne la cherche pas.** Encore la même forme de défaut que
+les nuits précédentes, sous un autre jour : une donnée vraie quelque part,
+absente là où elle sert.
+
+### Ce que chaque page dit maintenant
+
+```
+  aéroport             le plus proche   <3 km  <5 km   verdict
+  Bruxelles-Zaventem      1 941 m         2      3     sortir : oui
+  Nice-Côte d'Azur        2 252 m         1      1     sortir : jouable
+  Toulouse-Blagnac        6 451 m         0      0     sortir : non
+  Lyon-Saint-Exupéry      6 525 m         0      0     sortir : non
+```
+
+Chaque section conclut, elle ne se contente pas d'aligner un nombre : à Nice
+et à Zaventem sortir est une option réelle ; à Lyon et Toulouse c'est un
+aller-retour en transport, donc la question se règle avant d'arriver. Et
+chaque page se compare aux autres, ce qui donne au lecteur l'échelle qu'un
+chiffre seul ne donne pas.
+
+**Genève n'a rien reçu** : notre relevé ne couvre pas la Suisse. Une page
+sans chiffre valait mieux qu'un chiffre inventé.
+
+### Les deux langues, ensemble
+
+Quatre pages françaises et leurs quatre jumelles anglaises, dans le même
+commit. La leçon du 27 tient : corriger une seule langue recrée l'asymétrie
+qu'on vient de combler ailleurs.
+
+### Vérifié servi
+
+Build du 30/00:11, `BUILD_ID` contrôlé avant lecture. **8 pages sur 8
+conformes** — statut 200, le chiffre attendu présent dans la bonne
+typographie (virgule en français, point en anglais), crédit ODbL présent :
+
+```
+  ou-prier-aeroport-lyon        1 397 mots      where-to-pray-lyon-airport      1 280
+  ou-prier-aeroport-nice        1 400           where-to-pray-nice-airport      1 311
+  ou-prier-aeroport-toulouse    1 344           where-to-pray-toulouse-airport  1 251
+  ou-prier-aeroport-bruxelles   1 304           where-to-pray-brussels-airport  1 241
+```
