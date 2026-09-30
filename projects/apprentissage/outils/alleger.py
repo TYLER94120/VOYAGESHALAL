@@ -31,9 +31,30 @@ oblique au milieu d'une ligne peut etre dans une chaine (« https:// ») ou dans
 une expression reguliere ; en debut de ligne, non. C'est volontairement
 prudent : on economise un peu moins, et on ne peut pas se tromper.
 
-Et on ne se contente pas de le croire : `controler-allege.mjs` relit chaque
-fichier allege avec `node --check`, et la recette complete tourne contre la
-copie allegee avant publication.
+CE QUI LE VERIFIE — ET CE QUI NE LE VERIFIAIT PAS
+-------------------------------------------------
+Cet en-tete a longtemps affirme : « on ne se contente pas de le croire :
+`controler-allege.mjs` relit chaque fichier allege avec `node --check`, et la
+recette complete tourne contre la copie allegee avant publication. »
+
+C'etait faux des deux cotes. `controler-allege.mjs` n'existait pas, et
+`publier.py` ne lance aucun controle. Constate le 30 septembre. La phrase la
+plus rassurante du projet etait posee sur le seul endroit que rien ne
+regardait — et elle a tenu pendant des semaines precisement parce qu'elle
+rassurait.
+
+Ce qui existe maintenant, et qui est vrai :
+
+  `outils/controler-allege.py` verifie, pour chaque .js et chaque .css, que
+  la sortie est la source MOINS des lignes de commentaire — chaque ligne
+  gardee identique et dans l'ordre, chaque ligne retiree reellement un
+  commentaire ou du vide — relit chaque .js allege par `node --check`, et
+  compare la copie publiee a ce qu'on produit aujourd'hui.
+
+Et une fois, le 30 septembre, les vingt-quatre controles navigateur ont ete
+lances contre la copie allegee servie sur le port habituel : tous au vert.
+C'est une mesure, pas une garantie ; elle est refaite a la main quand
+l'allegement change, et le controle ci-dessus tourne, lui, a chaque ronde.
 """
 
 import re
