@@ -73,6 +73,41 @@ class Serveur(http.server.SimpleHTTPRequestHandler):
                 return str(RACINE / out.lstrip('/'))
         return super().translate_path(path)
 
+    def send_error(self, code, message=None, explain=None):
+        """UNE ADRESSE INCONNUE TOMBE SUR `404.html`, comme en ligne.
+
+        Ce serveur existe pour que l'essai local ressemble a la production :
+        il lit deja les reecritures et les redirections de `vercel.json`. Il
+        divergeait pourtant a l'endroit exact ou arrive quelqu'un qui s'est
+        perdu — une adresse morte rendait la page d'erreur de Python,
+        « Error response », et pas `404.html`.
+
+        Consequence mesurable, le 1er octobre : aucun controle navigateur
+        n'avait jamais ouvert cette page. `controler-redirections.py` en
+        relit le FICHIER — noindex, sorties vivantes, absente du sitemap —
+        mais personne ne l'avait vue s'afficher. Une feuille de style
+        oubliee, un lien casse, un debordement : rien ne l'aurait dit.
+
+        On garde le code 404 : c'est lui qui compte pour un robot. Seul le
+        corps change.
+
+        NON VERIFIE D'ICI : que Vercel serve bien `404.html` pour une adresse
+        inconnue. Le fichier est a la racine publiee et `vercel.json` ne
+        configure rien d'autre, mais le site en ligne n'est pas joignable
+        depuis cette machine. Ce qui est verifie, c'est le serveur local.
+        """
+        page = RACINE / '404.html'
+        if code == 404 and page.is_file():
+            corps = page.read_bytes()
+            self.send_response(404)
+            self.send_header('Content-Type', 'text/html; charset=utf-8')
+            self.send_header('Content-Length', str(len(corps)))
+            self.end_headers()
+            if self.command != 'HEAD':
+                self.wfile.write(corps)
+            return
+        super().send_error(code, message, explain)
+
     def log_message(self, *a):
         pass   # un serveur d'essai n'a pas a bavarder
 

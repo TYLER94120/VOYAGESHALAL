@@ -93,6 +93,41 @@ def main():
         if '%s/404.html' % SITE in sitemap:
             fautes.append('404.html est annoncee dans sitemap.xml')
 
+        # 6. ET LE SERVEUR LA SERT-IL VRAIMENT ?
+        #
+        # Tout ce qui precede relit le FICHIER. C'est necessaire et ca ne dit
+        # rien de ce qui arrive a quelqu'un qui se trompe d'adresse : encore
+        # faut-il que le serveur reponde cette page-la, et avec le bon code.
+        #
+        # Jusqu'au 1er octobre, `servir.py` rendait la page d'erreur de
+        # Python — « Error response » — pour toute adresse morte. L'ecart
+        # etait exactement a l'endroit ou arrive quelqu'un qui s'est perdu,
+        # et aucun controle navigateur n'avait donc jamais ouvert 404.html.
+        #
+        # Le code compte autant que le corps : une page d'erreur rendue en
+        # 200 est un « soft 404 », que Google traite comme une page morte
+        # qu'on lui presente comme vivante.
+        try:
+            import urllib.error
+            import urllib.request
+            adresse = 'http://127.0.0.1:8899/une-adresse-qui-n-existe-pas'
+            try:
+                r = urllib.request.urlopen(adresse, timeout=10)
+                code, corps = r.getcode(), r.read().decode('utf-8', 'replace')
+            except urllib.error.HTTPError as e:
+                code, corps = e.code, e.read().decode('utf-8', 'replace')
+            if code != 404:
+                fautes.append('une adresse inconnue repond %d et non 404 : pour '
+                              'un robot, la page morte est vivante' % code)
+            if 'Cette page n\'existe pas' not in corps:
+                fautes.append('une adresse inconnue ne renvoie pas 404.html — '
+                              'le corps recu commence par « %s »'
+                              % corps.strip()[:60].replace('\n', ' '))
+        except Exception as e:   # serveur eteint : on le dit, on n'invente pas
+            fautes.append('le serveur local ne repond pas (%s) — lancer '
+                          'outils/servir.py 8899 pour verifier la page 404'
+                          % type(e).__name__)
+
     if fautes:
         print('  %d FAUTE(S) — le lot est refuse :' % len(fautes))
         for x in fautes:
@@ -103,6 +138,7 @@ def main():
           % len(redirections))
     print('  Aucune ancienne adresse ne subsiste, aucune chaine, aucun doublon.')
     print('  404.html : noindex, absente du sitemap, et elle propose des sorties.')
+    print('  Une adresse inconnue repond bien 404, et avec cette page-la.')
 
 
 if __name__ == '__main__':

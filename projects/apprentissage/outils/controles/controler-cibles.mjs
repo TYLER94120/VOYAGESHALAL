@@ -46,7 +46,12 @@ const EXE = '/opt/pw-browsers/chromium-1194/chrome-linux/chrome';
 const PAGES = ['index.html', 'sections.html', 'sourates.html',
                'lecon-sourate-al-ikhlas.html', 'section/la-priere', 'plus.html',
                // La seule couverture qui porte les 38 pastilles de lecons.
-               'section/sens-des-sourates', 'progres.html'];
+               'section/sens-des-sourates', 'progres.html',
+               // LA PAGE 404, enfin joignable : `servir.py` la sert depuis
+               // le 1er octobre, comme le fait la production. Personne ne
+               // l'avait jamais vue s'afficher — c'est pourtant la page sur
+               // laquelle tombe quelqu'un qui s'est perdu.
+               'une-adresse-qui-n-existe-pas'];
 
 const fautes = [];
 const navigateur = await chromium.launch({ executablePath: EXE });
