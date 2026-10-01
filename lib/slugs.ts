@@ -108,6 +108,14 @@ export const BLOG_FR_TO_EN: Record<string, string> = {
   // obtient un non. Aucun centre commercial nommé : nous n'en avons vérifié
   // aucun, et la page le dit.
   'ou-prier-centre-commercial': '/blog/where-to-pray-shopping-mall-france',
+  // 1er octobre. Le français part de « 4 h de vol DE LA FRANCE » — une
+  // prémisse qui ne se traduit pas. L'anglais ne traduit donc pas la liste :
+  // il COMPTE, dans notre base OSM, les lieux de prière autour de ces neuf
+  // villes. Istanbul 523 dans 5 km, Londres 35 — autant qu'Agadir, et le
+  // plus proche du centre à 803 m. Un chiffre que personne d'autre ne publie,
+  // avec ce qu'il ne dit pas écrit noir sur blanc. Sarajevo est absente : la
+  // Bosnie n'est pas couverte, et une ligne vide vaut mieux qu'une devinette.
+  'week-end-musulman': '/blog/weekend-city-breaks-mosque-count',
   'ou-prier-aeroport-toulouse': '/blog/where-to-pray-toulouse-airport',
   'ou-prier-aeroport-cdg': '/blog/where-to-pray-cdg-airport',
   'ou-prier-aeroport-orly': '/blog/where-to-pray-orly-airport',

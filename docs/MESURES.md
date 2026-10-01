@@ -2662,3 +2662,80 @@ typographie (virgule en français, point en anglais), crédit ODbL présent :
   ou-prier-aeroport-toulouse    1 344           where-to-pray-toulouse-airport  1 251
   ou-prier-aeroport-bruxelles   1 304           where-to-pray-brussels-airport  1 241
 ```
+
+## 1er octobre — compter les mosquées au lieu de dire « facile pour les musulmans »
+
+Jour impair, création. Article français choisi : `week-end-musulman`
+(10 destinations à 4 h de vol de la France).
+
+### Pourquoi ce n'est PAS une traduction
+
+La prémisse française est « à 4 h de vol **de la France** ». Elle ne se
+traduit pas : un lecteur anglophone ne part pas de France. Traduire la liste
+telle quelle aurait produit une page fausse dès sa première phrase.
+
+L'anglais fait donc autre chose avec les mêmes villes — il les **compte**.
+Chaque liste de voyage halal du web affirme qu'une ville est « facile pour
+les musulmans » ; aucune ne donne de chiffre. Nous en avons un.
+
+### La mesure
+
+Lieux de prière de notre relevé OpenStreetMap (relevé du 03/09/2026) dans un
+rayon de 5 et 10 km du point central de chaque ville :
+
+```
+  ville         <5 km   <10 km   le plus proche du centre
+  Istanbul        523    1 045       127 m
+  Tanger          137      166       278 m
+  Fès             106      119       356 m
+  Casablanca      101      229       262 m
+  Tunis            84      225       135 m
+  Marrakech        70      130       155 m
+  Bruxelles        67       76       724 m
+  Agadir           35       77       528 m
+  Londres          35      113       803 m
+```
+
+**Londres compte autant de lieux à moins de 5 km de son centre qu'Agadir**,
+et le plus proche du centre est à 803 m — le plus éloigné des neuf villes.
+Ce n'est pas un reproche fait à Londres, dont l'offre halal alimentaire est
+l'une des plus riches d'Europe : c'est un autre sujet. À Londres, **la prière
+est une question de quartier d'hébergement**, et le compte triple quand on
+élargit à 10 km, parce que les mosquées sont à Whitechapel et Edgware Road,
+pas à côté de Trafalgar Square.
+
+### Ce que l'article dit que le tableau NE dit pas
+
+Quatre limites écrites noir sur blanc, parce qu'un tableau fait autorité tout
+seul : la mesure part d'un point central et non d'une ville (c'est exactement
+le biais qui pénalise Londres, d'où la colonne 10 km) ; le relevé n'est pas
+exhaustif ; un compte ne dit rien de la taille, des horaires, d'un espace
+femmes ni d'une porte ouverte. **Sarajevo est absente du tableau** : la
+Bosnie n'est pas couverte par notre relevé, et une ligne manquante vaut mieux
+qu'une devinette.
+
+### 🔴 Deuxième avis religieux trouvé en deux jours
+
+Le français écrivait :
+
+> « En déplacement, tu peux raccourcir et regrouper tes prières — les
+> facilités du voyageur existent pour ça. »
+
+Comme hier pour le centre commercial, c'est **un avis religieux rendu par le
+site**. Deux en deux nuits, tous deux dans de vieux articles courts que
+personne ne relisait. Remplacé par la moitié pratique (où se trouve l'hôtel
+par rapport aux lieux de prière) et le renvoi explicite.
+
+**Il faut un balayage systématique** de tous les articles à la recherche de
+l'impératif religieux. Deux trouvailles fortuites en deux jours ne sont pas
+un hasard, et je ne veux pas dépendre de la chance pour les suivantes.
+
+### Vérifié servi
+
+Build du 01/10 00:11, `BUILD_ID` contrôlé avant lecture.
+· EN `/blog/weekend-city-breaks-mosque-count` : 200, titre 46 c,
+  description 147 c, **916 mots**, les chiffres présents, les quatre limites
+  présentes, refus de trancher présent, ODbL présent, **38 liens testés,
+  0 cassé**.
+· FR : 200, l'impératif religieux est **parti**, le renvoi est en place.
+· Jumelé dans `lib/slugs.ts`.
