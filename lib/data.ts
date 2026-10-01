@@ -3448,6 +3448,65 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <p>Tu as un bon plan vacances halal en France — un gîte en or, un resto de bord de mer, un camping tranquille ? Partage-le, des centaines de familles en profiteront. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
   },
   {
+    slug: "weekend-city-breaks-mosque-count",
+    title: "Weekend breaks: how many mosques each city has",
+    description: "We counted the prayer places around nine weekend destinations in our OpenStreetMap data. Istanbul has 523 within 5 km of the centre. London has 35.",
+    coverImage: "/guides/marrakech-j1.jpg",
+    category: 'Destinations',
+    readTime: "5 min",
+    publishedAt: '2026-10-01',
+    lang: 'en',
+    tags: ['weekend', 'destinations', 'mosques', 'muslim travel'],
+    content: `
+<p>Every halal travel list tells you a city is &laquo;&nbsp;easy for Muslims&nbsp;&raquo;. None of them give you a number. So we counted &mdash; in our own data, which you can check.</p>
+
+<h2>What we counted, and how</h2>
+<p>Prayer places recorded in our OpenStreetMap survey (surveyed 3 September 2026), within <strong>5 km and 10 km straight-line of each city's central point</strong>. Nine weekend destinations, all a short hop from western Europe.</p>
+
+<table><thead><tr><th>City</th><th>Within 5 km</th><th>Within 10 km</th><th>Nearest to centre</th></tr></thead><tbody>
+<tr><td><strong>Istanbul</strong></td><td><strong>523</strong></td><td>1 045</td><td>127 m</td></tr>
+<tr><td>Tangier</td><td>137</td><td>166</td><td>278 m</td></tr>
+<tr><td>Fez</td><td>106</td><td>119</td><td>356 m</td></tr>
+<tr><td>Casablanca</td><td>101</td><td>229</td><td>262 m</td></tr>
+<tr><td>Tunis</td><td>84</td><td>225</td><td>135 m</td></tr>
+<tr><td>Marrakesh</td><td>70</td><td>130</td><td>155 m</td></tr>
+<tr><td>Brussels</td><td>67</td><td>76</td><td>724 m</td></tr>
+<tr><td>Agadir</td><td>35</td><td>77</td><td>528 m</td></tr>
+<tr><td>London</td><td>35</td><td>113</td><td><strong>803 m</strong></td></tr>
+</tbody></table>
+
+<h2>The number that surprised us</h2>
+<p><strong>London has as few prayer places within 5 km of its centre as Agadir</strong> &mdash; and the nearest one to the centre is 803 metres away, the furthest of all nine cities. That is not a knock on London, which has one of the richest halal food scenes in Europe. It is a different point: <strong>in London, prayer is a question of which neighbourhood you stay in.</strong> The count triples when you widen to 10 km, because the mosques are in Whitechapel, Edgware Road and further out &mdash; not beside Trafalgar Square.</p>
+<p>Book a hotel in the centre of Istanbul or Tunis and you will walk past a mosque without looking for one. Book one in central London and you will plan.</p>
+
+<h2>What a count like this cannot tell you</h2>
+<p>Quite a lot, and we would rather say so than let a table pretend otherwise.</p>
+<ul>
+<li><strong>It measures distance from one central point, not a city.</strong> A city whose Muslim neighbourhoods sit outside the ring scores low even when it is well served &mdash; London is exactly that case, which is why the 10 km column is here.</li>
+<li><strong>It is not exhaustive.</strong> OpenStreetMap records what contributors have mapped. A prayer room inside a building, a small musalla above a shop, a space with no sign: often absent.</li>
+<li><strong>It says nothing about size, opening hours, whether there is a women's section, or whether the door is open when you arrive.</strong> A count is a count.</li>
+<li><strong>Sarajevo is missing</strong> from the table: our survey does not cover Bosnia-Herzegovina. We left the row out rather than guess at it.</li>
+</ul>
+<p>So read the table as what it is: a measure of how much <em>planning</em> a weekend will need, not a ranking of cities.</p>
+
+<h2>Before you book</h2>
+<p>Two things that actually change the trip. Check <a href="/prayer-times">prayer times</a> for the destination &mdash; a January city break in Europe has a Maghrib at half past four, which decides your afternoon. And look at where your hotel sits relative to the places above: <a href="/mosque-near-me">our nearest-mosque tool</a> works on the map, which is more useful than any list once you have an address in mind.</p>
+<p>On what is permitted while travelling &mdash; shortening prayers, combining them &mdash; <strong>we do not rule</strong>. That is a religious question, not a travel one.</p>
+
+<h2>Our guides to these cities</h2>
+<ul>
+<li><a href="/destinations/istanbul">Istanbul</a> &middot; <a href="/destinations/marrakech">Marrakesh</a> &middot; <a href="/destinations/fes">Fez</a></li>
+<li><a href="/destinations/casablanca">Casablanca</a> &middot; <a href="/destinations/tanger">Tangier</a> &middot; <a href="/destinations/tunis">Tunis</a></li>
+<li><a href="/destinations/agadir">Agadir</a> &middot; <a href="/destinations/londres">London</a> &middot; <a href="/destinations/bruxelles">Brussels</a></li>
+</ul>
+
+<p><em>Counts from our OpenStreetMap survey, surveyed 3 September 2026; straight-line distances from each city's central point. Not exhaustive. Prayer place data &copy; OpenStreetMap contributors.</em></p>
+
+<h2>Help the next traveller</h2>
+<p>Found a prayer space that is not on any map? That is exactly what a survey like this misses. <a href="/communaute/ajouter">Add it in fifteen seconds</a>.</p>
+`,
+  },
+  {
     slug: "week-end-musulman",
     title: "Week-end musulman : 10 destinations à 4 h de vol",
     tags: ['week-end', 'destinations', 'halal', 'france'],
@@ -3456,6 +3515,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Destinations',
     readTime: "6 min",
     publishedAt: '2026-07-20',
+    updatedAt: '2026-10-01',
     content: `
 <p>Deux ou trois jours devant toi, l'envie de souffler, et une seule exigence : pouvoir <strong>manger halal et prier sans organisation militaire</strong>. Voici 10 destinations testées et documentées dans nos guides, classées par simplicité — toutes à moins de 4 h de vol de la France.</p>
 
@@ -3476,7 +3536,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <p><strong>10. <a href="/destinations/bruxelles">Bruxelles</a></strong> — 1 h 25 de train : gaufres, Grand-Place et une vraie densité de restos halal. Le week-end musulman le plus simple de la liste. Et si tu passes par l'aéroport : <a href="/blog/ou-prier-aeroport-bruxelles">où prier à Bruxelles-Zaventem</a>.</p>
 
 <h2>Les 3 réflexes avant de partir</h2>
-<p>1) Vérifie les horaires de prière de ta destination avec notre outil <a href="/horaires-priere">horaires de prière</a>. 2) Repère un <a href="/trouvailles">spot confirmé par la communauté</a> près de ton hôtel. 3) En déplacement, tu peux <a href="/blog/prier-en-avion">raccourcir et regrouper tes prières</a> — les facilités du voyageur existent pour ça.</p>
+<p>1) Vérifie les horaires de prière de ta destination avec notre outil <a href="/horaires-priere">horaires de prière</a>. 2) Repère un <a href="/trouvailles">spot confirmé par la communauté</a> près de ton hôtel. 3) Regarde où se trouve ton hôtel par rapport aux lieux de prière : notre <a href="/mosquee-proche">outil mosquée la plus proche</a> travaille sur la carte, ce qui sert plus qu’une liste quand on a une adresse en tête. Sur ce qui est permis en déplacement — raccourcir, regrouper — <strong>nous ne tranchons pas</strong> : c’est une question religieuse, pas une question de voyage.</p>
 
 <h2>Aide le prochain voyageur</h2>
 <p>Tu pars ce week-end ? Si tu découvres un coin prière, un resto halal ou une pépite, <a href="/communaute/ajouter">partage-la en 15 secondes</a> — une sadaqa jâriya qui servira à tous ceux qui partiront après toi.</p>
