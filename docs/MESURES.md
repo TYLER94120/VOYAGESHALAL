@@ -2739,3 +2739,91 @@ Build du 01/10 00:11, `BUILD_ID` contrôlé avant lecture.
   0 cassé**.
 · FR : 200, l'impératif religieux est **parti**, le renvoi est en place.
 · Jumelé dans `lib/slugs.ts`.
+
+## 2 octobre — le site rendait QUARANTE avis religieux
+
+Jour pair, approfondissement. Pas le choix de la cible : hier soir j'ai écrit
+qu'il fallait un balayage systématique, parce que deux avis religieux trouvés
+par hasard en deux nuits ne sont pas un hasard. Voici le balayage.
+
+### Le chiffre
+
+**40 passages, dans 9 articles, dans les deux langues.** Aucun ne portait de
+renvoi. Le protocole l'interdit depuis le premier jour — « Ne rends jamais un
+avis religieux : renvoie la question, ne la tranche pas. »
+
+Les deux trouvailles fortuites des 29 septembre et 1er octobre étaient la
+pointe d'un iceberg que personne n'avait sondé. Ce qui dormait dessous :
+
+· `prier-en-avion` portait une section entière, **« Les facilités du
+  voyageur »**, qui prescrivait « raccourcir les prières de 4 à 2 rakats ».
+· `ou-prier-aire-autoroute` : neuf passages, dont un titre de section
+  « Regroupe tes prières pour la route » et « raccourcis de 4 à 2 rakats ».
+· Six FAQ répondaient **« Oui, en cas de nécessité »**, « la prière reste
+  valable », « le tayammoum est permis ».
+· Et les deux pires, que mon PREMIER balayage a entièrement manqués :
+  `horaires-priere-voyage-guide-musulman` et son jumeau anglais portaient
+  **deux sections de fiqh complètes** — « Le qasr : raccourcir les prières »,
+  « Le jam' : regrouper les prières », avec « il est également permis de
+  regrouper Dhuhr et Asr » et « valable dès lors que l'on s'éloigne
+  suffisamment de son lieu de résidence ».
+
+### 🔴 Mon premier instrument était trop étroit
+
+Premier balayage : 8 passages. Deuxième : 40. L'écart vient d'une erreur de
+méthode que je dois écrire : **je cherchais un vocabulaire, pas une posture.**
+Mes motifs connaissaient « raccourcir » et « regrouper » en français courant,
+et ignoraient **« qasr »** et **« jam' »** — donc les deux articles les plus
+prescriptifs du dépôt passaient à travers.
+
+Ce qui les a attrapés, c'est le SECOND contrôle, celui que j'avais ajouté
+sans y croire : *un article qui aborde le sujet sans porter le renvoi*. Il ne
+cherche pas une faute, il cherche une absence. C'est ce contrôle-là qui a
+trouvé ce que la liste de motifs ne pouvait pas trouver.
+
+### La frontière, écrite une fois
+
+Chaque page concernée porte désormais le même partage : **la moitié pratique
+est à nous** — où, quand, comment s'organiser, l'horloge, le fuseau, la
+géographie. **La moitié religieuse ne l'est pas** et se renvoie à quelqu'un
+de qualifié.
+
+Les deux articles de fiqh ne sont pas vidés : ils **nomment** qasr et jam'
+(connaître le mot rend la question posable), disent que nous ne tranchons
+pas, et consacrent la place reprise à ce qui est réellement difficile en
+voyage — le décalage horaire, et non la règle.
+
+### Le garde-fou
+
+`scripts/test-avis-religieux.mjs`, branché dans `npm run build`, donc dans la
+CI et donc dans la fusion automatique. Deux contrôles :
+
+1. **aucun verdict** — 18 motifs de posture : impératif, « tu peux… »,
+   « oui, en cas de nécessité », « la prière reste valable », un nombre de
+   rakats prescrit, « les facilités du voyageur » invoquées comme argument,
+   et leurs équivalents anglais, qasr et jam' compris.
+2. **aucune absence de renvoi** — un article qui aborde le regroupement ou le
+   tayammoum sans dire qu'il ne tranche pas laisse croire que le site a
+   répondu.
+
+Le test lit le contenu servi et **retire les commentaires de code** : sans ça
+il se déclencherait sur les exemples de son propre en-tête, comme deux tests
+l'ont déjà fait cette année.
+
+**Vérifié en réintroduisant la faute** : remis « En voyageur, raccourcis et
+regroupe tes prières » dans l'article autoroute → le test casse, le build
+s'arrête. Restauré → vert.
+
+### Au passage
+
+`tests-pr.yml` annonçait « 46 tests » en dur, à trois endroits, et le script
+en compte 45 (dont un qui affiche deux lignes). Un nombre écrit à la main
+dans un nom de job vieillit mal : il est retiré.
+
+### Vérifié servi
+
+Build du 02/10 00:15, `BUILD_ID` contrôlé avant lecture. Les 14 pages
+touchées relues sur le domaine correspondant : **aucun verdict sur aucune**,
+et le renvoi présent sur les 10 qui abordent encore le sujet. Les 4 autres
+(Astérix, Puy du Fou, Futuroscope, vacances en France) ne le mentionnent
+plus du tout — elles n'ont donc rien à renvoyer, ce que le test sait.

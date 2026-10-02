@@ -2648,12 +2648,13 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Practical',
     readTime: "4 min",
     publishedAt: '2026-08-01',
+    updatedAt: '2026-10-02',
     lang: 'en',
     tags: ['prayer', 'train', 'muslim travel'],
     content: `
 <p>A long train journey and prayer time approaching? Here is how to pray on the train, simply.</p>
 <h2>The essentials in 30 seconds</h2>
-<p>Pray at your seat, sitting, with slight head bows if you cannot stand — or, if you find a quiet spot, standing discreetly. As a traveler, you may shorten and combine your prayers.</p>
+<p>Pray at your seat, sitting, with slight head bows if you cannot stand — or, if you find a quiet spot, standing discreetly. What we can tell you is the practical half: a train journey almost always leaves time to pray at the station before boarding, and that settles most of it.</p>
 <h2>1. Plan before boarding</h2>
 <p>Pray at the station before departure (some large stations have quiet areas) or on arrival within the prayer's window. Combine dhuhr/asr or maghrib/isha for a long trip.</p>
 <h2>2. Praying seated at your place</h2>
@@ -2663,8 +2664,8 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <h2>4. Wudu</h2>
 <p>Do your wudu before boarding if possible. Otherwise the on-board restrooms; if genuinely impossible, tayammum.</p>
 <h2>Frequently asked questions</h2>
-<p><strong>Can I pray sitting on the train?</strong> Yes, when necessary.<br/><strong>Facing the qibla?</strong> As best you can; the prayer remains valid while traveling.<br/><strong>Combining prayers?</strong> Yes, dhuhr/asr and maghrib/isha.</p>
-<h2>Help the community</h2>
+<p><strong>Where can I pray on a train?</strong> At your seat, or in a quiet space at the end of a carriage — see above.<br/><strong>How do I face the qibla?</strong> Our <a href="/qibla">qibla tool</a> works offline once open.<br/><strong>What about combining prayers?</strong> That is a religious question: see the section below.</p>
+<h2>What we do not rule on</h2><p>Shortening prayers, combining them, praying seated, tayammum, which way to face when you cannot tell: <strong>these are religious questions and we do not answer them</strong>. Ask someone qualified. Our job stops at the practical half — where, when, and how to organise yourself.</p><h2>Help the community</h2>
 <p>A quiet corner in a station, a good place to pray before a train? Share it — an ongoing sadaqa. <a href="/communaute">→ Join the community</a></p>
 `,
   },
@@ -2913,7 +2914,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     content: `<p>Puy du Fou is visited to the rhythm of its shows — and fitting prayers around them takes a little planning. Here is how to do it simply.</p>
 
 <h2>The short version</h2>
-<p>To our knowledge there is <strong>no official prayer room</strong>, and we will not write that one exists until it has been verified. But the park is large and wooded: quiet corners are not in short supply between the period villages. Add the traveller's concessions and a careful read of the day's show programme, and it holds together.</p>
+<p>To our knowledge there is <strong>no official prayer room</strong>, and we will not write that one exists until it has been verified. But the park is large and wooded: quiet corners are not in short supply between the period villages. Add a careful read of the day's show programme, and it holds together.</p>
 
 <h2>1. Plan around the shows</h2>
 <p>The trap at Puy du Fou is the run of show times. On arrival, compare the day's programme with our <a href="/prayer-times">prayer times</a> and pick your window — usually early afternoon, or between two of the big shows.</p>
@@ -3143,12 +3144,13 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Practical',
     readTime: "5 min",
     publishedAt: '2026-08-01',
+    updatedAt: '2026-10-02',
     lang: 'en',
     tags: ['prayer', 'plane', 'muslim travel'],
     content: `
 <p>Your flight falls over prayer time and you are not sure how to pray on a plane? Here is how to do it, calmly and discreetly.</p>
 <h2>The essentials in 30 seconds</h2>
-<p>If you can pray on the ground before or after the flight within the prayer's time window, that is best. Otherwise, pray in your seat, sitting, bowing your head slightly for ruku and a little more for sujud. As a traveler, you may shorten and combine your prayers.</p>
+<p>If you can pray on the ground before or after the flight within the prayer's time window, that is best. Otherwise, pray in your seat, sitting, bowing your head slightly for ruku and a little more for sujud. What we can tell you is the practical half: praying on the ground before boarding is almost always easier than praying in a seat.</p>
 <h2>1. The best option: pray on the ground</h2>
 <p>Pray at the airport before takeoff, or on arrival before the prayer time ends. Our "where to pray at the airport" guides show you the rooms. Combine dhuhr/asr or maghrib/isha for a long flight.</p>
 <h2>2. Doing wudu</h2>
@@ -3157,10 +3159,9 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <p>Pray sitting, facing the qibla at the start if possible (our <a href="/qibla">qibla tool</a> or the crew can help), then continue even if the plane changes course. Movements are slight head bows (a little for ruku, more for sujud).</p>
 <h2>4. Standing, if space allows</h2>
 <p>On some flights, a free area may allow praying standing if the crew permits and outside turbulence / seatbelt times. Stay discreet; flight safety comes first.</p>
-<h2>The traveler's facilities</h2>
-<p>Shortening 4-rakat prayers to 2 (dhuhr, asr, isha) and combining dhuhr/asr, maghrib/isha solves most situations.</p>
+<h2>What we do not rule on</h2><p>Shortening prayers, combining them, praying seated, tayammum, which way to face when you cannot tell: <strong>these are religious questions and we do not answer them</strong>. Ask someone qualified. Our job stops at the practical half — where, when, and how to organise yourself.</p>
 <h2>Frequently asked questions</h2>
-<p><strong>Can I pray sitting on a plane?</strong> Yes, when necessary.<br/><strong>How do I find the qibla?</strong> Face it as best you can at the start; the prayer remains valid if the course changes.<br/><strong>No water?</strong> Tayammum is permitted when necessary.</p>
+<p><strong>Where can I pray on a plane?</strong> At your seat, or near the rear galleys between services — see above.<br/><strong>How do I find the qibla in flight?</strong> Our <a href="/qibla">qibla tool</a> works offline once open; the aircraft's heading changes en route.<br/><strong>And if there is no water?</strong> That is a religious question: see the section above.</p>
 <h2>Help the community</h2>
 <p>A tip, a good place to pray before a flight? Share it — an ongoing sadaqa. <a href="/communaute">→ Join the community</a></p>
 `,
@@ -3174,14 +3175,14 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Pratique',
     readTime: "3 min",
     publishedAt: '2026-08-06',
-    updatedAt: '2026-08-29',
+    updatedAt: '2026-10-02',
     content: `<p>Journée au Parc Astérix et l'heure de la prière approche ? Voici la situation réelle et les solutions qui marchent.</p>
-<h2>L'essentiel en 30 secondes</h2><p>À notre connaissance, le Parc Astérix ne dispose pas de salle de prière officielle. Les solutions : demander un espace calme aux services visiteurs, utiliser un coin tranquille du parc (zones pique-nique, pelouses en retrait), ou la voiture au parking. Les facilités du voyageur (regrouper les prières) simplifient tout.</p>
+<h2>L'essentiel en 30 secondes</h2><p>À notre connaissance, le Parc Astérix ne dispose pas de salle de prière officielle. Les solutions : demander un espace calme aux services visiteurs, utiliser un coin tranquille du parc (zones pique-nique, pelouses en retrait), ou la voiture au parking. Avec <a href="/horaires-priere">les horaires du jour</a> regardés le matin, une pause bien placée suffit souvent.</p>
 <h2>1. Demande aux services visiteurs</h2><p>Comme à <a href="/blog/ou-prier-disneyland-paris">Disneyland (où ça fonctionne très bien)</a>, le bon réflexe est de demander poliment à l'accueil ou à un membre du personnel un endroit calme et discret. Le personnel des parcs est habitué aux demandes particulières.</p>
 <h2>2. Repère un coin calme</h2><p>Les zones de pique-nique et les allées en retrait des grandes attractions sont vos alliées, surtout en début d'après-midi quand tout le monde est dans les files. Petit tapis de poche, orientation avec <a href="/qibla">notre outil qibla</a>, et c'est réglé.</p>
 <h2>3. La voiture au parking</h2><p>Si tu es venu en voiture, elle reste une option en arrivant ou en repartant. Pour une sortie temporaire en cours de journée, vérifie les conditions de ré-entrée à l'accueil avant de sortir.</p>
-<h2>4. Utilise les facilités du voyageur</h2><p>Si tu viens de loin, le regroupement (dhuhr+asr) réduit la journée à une seule pause prière — consulte <a href="/horaires-priere">les horaires du jour</a> pour bien la placer.</p>
-<h2>Questions fréquentes</h2><p><strong>Salle de prière officielle au Parc Astérix ?</strong> Pas à notre connaissance — demande un espace calme au personnel.<br/><strong>Les ablutions ?</strong> Aux toilettes du parc, un petit nécessaire dans le sac aide.<br/><strong>Le plus simple ?</strong> Regrouper les prières et viser un créneau calme.</p>
+<h2>4. Caler la pause sur la journée</h2><p>Si tu viens de loin, une seule pause bien placée dans l’après-midi réduit la journée à une seule pause prière — consulte <a href="/horaires-priere">les horaires du jour</a> pour bien la placer.</p>
+<h2>Questions fréquentes</h2><p><strong>Salle de prière officielle au Parc Astérix ?</strong> Pas à notre connaissance — demande un espace calme au personnel.<br/><strong>Les ablutions ?</strong> Aux toilettes du parc, un petit nécessaire dans le sac aide.<br/><strong>Le plus simple ?</strong> Viser un créneau calme, avec les horaires du jour regardés le matin.</p>
 <h2>Aide la communauté</h2><p>On t'a indiqué un endroit précis au Parc Astérix, ou tu as un bon spot testé ? Partage-le — une sadaqa jâriya pour toutes les familles. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
   },
   {
@@ -3193,14 +3194,14 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Pratique',
     readTime: "3 min",
     publishedAt: '2026-08-06',
-    updatedAt: '2026-08-29',
+    updatedAt: '2026-10-02',
     content: `<p>Le Puy du Fou se visite au rythme des spectacles — et caser ses prières demande un peu d'organisation. Voici comment faire simplement.</p>
-<h2>L'essentiel en 30 secondes</h2><p>Pas de salle de prière officielle à notre connaissance. Mais le parc est vaste et boisé : les coins calmes ne manquent pas entre les villages d'époque. Ajoute les facilités du voyageur et une bonne lecture du programme des spectacles, et tout tient.</p>
+<h2>L'essentiel en 30 secondes</h2><p>Pas de salle de prière officielle à notre connaissance. Mais le parc est vaste et boisé : les coins calmes ne manquent pas entre les villages d'époque. Ajoute une bonne lecture du programme des spectacles, et tout tient.</p>
 <h2>1. Planifie autour des spectacles</h2><p>Le piège du Puy du Fou, c'est l'enchaînement des horaires de spectacles. Dès l'arrivée, compare le programme du jour avec <a href="/horaires-priere">les horaires de prière</a> et repère ton créneau — souvent en début d'après-midi ou entre deux grands shows.</p>
 <h2>2. Trouve ton coin tranquille</h2><p>Entre les bourgs reconstitués, les sous-bois et les allées secondaires, les espaces calmes sont nombreux. Un tapis de poche, <a href="/qibla">l'outil qibla</a>, et une orientation discrète : personne n'y prête attention.</p>
 <h2>3. Demande au personnel</h2><p>À l'accueil ou auprès d'un membre du personnel, demande un endroit calme — la démarche est simple et bien accueillie dans la plupart des grands parcs. Si tu loges dans un hôtel du parc, ta chambre règle la question du soir et du matin.</p>
-<h2>4. Regroupe si besoin</h2><p>En déplacement, le regroupement dhuhr+asr et maghrib+isha est une facilité précieuse — surtout avec la Cinéscénie qui finit tard.</p>
-<h2>Questions fréquentes</h2><p><strong>Salle officielle ?</strong> Pas à notre connaissance — coins calmes et personnel bienveillant font l'affaire.<br/><strong>Ablutions ?</strong> Aux sanitaires du parc.<br/><strong>Avec la Cinéscénie le soir ?</strong> Prie maghrib avant le spectacle ou regroupe avec isha.</p>
+<h2>4. Caler les prières sur les spectacles</h2><p>Le piège, c’est la Cinéscénie, qui finit tard. Regarde <a href="/horaires-priere">les horaires du jour</a> dès l’arrivée : ce sont eux qui décident du moment où tu t’arrêtes, et une pause placée avant le spectacle plutôt qu’après change toute la soirée.</p>
+<h2>Questions fréquentes</h2><p><strong>Salle officielle ?</strong> Pas à notre connaissance — coins calmes et personnel bienveillant font l'affaire.<br/><strong>Ablutions ?</strong> Aux sanitaires du parc.<br/><strong>Avec la Cinéscénie le soir ?</strong> Le spectacle finit tard : regarde l’heure de maghrib avant de t’installer.</p>
 <h2>Aide la communauté</h2><p>Tu as un bon spot au Puy du Fou ou une info du personnel ? Partage — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
   },
   {
@@ -3212,13 +3213,13 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Pratique',
     readTime: "3 min",
     publishedAt: '2026-08-06',
-    updatedAt: '2026-08-29',
+    updatedAt: '2026-10-02',
     content: `<p>Journée au Futuroscope en famille ? Voici comment gérer les prières sans stress dans le parc poitevin.</p>
 <h2>L'essentiel en 30 secondes</h2><p>Pas de salle de prière officielle à notre connaissance. Les solutions : les espaces verts et coins calmes du parc, une demande à l'accueil, ou la voiture — le parking est juste à côté de l'entrée, un vrai plus ici. Les hôtels du parc, à quelques minutes à pied, simplifient tout pour ceux qui dorment sur place.</p>
 <h2>1. L'atout du Futuroscope : le parking tout proche</h2><p>Contrairement à d'autres parcs, la voiture est à quelques minutes de l'entrée. En milieu de journée, un aller-retour discret au parking est la solution la plus simple — vérifie juste les conditions de ré-entrée à l'accueil.</p>
 <h2>2. Coins calmes dans le parc</h2><p>Les pelouses et zones en retrait des pavillons offrent des espaces tranquilles, surtout pendant les grandes séances. Tapis de poche + <a href="/qibla">outil qibla</a> = affaire réglée.</p>
 <h2>3. Demande à l'accueil</h2><p>Le personnel peut t'indiquer un espace calme — la demande est courante et bien reçue. Si tu loges dans un des hôtels attenants, ta chambre couvre fajr et les prières du soir.</p>
-<h2>4. Pense au regroupement</h2><p>Avec <a href="/horaires-priere">les horaires du jour</a>, place une pause unique dhuhr+asr — et profite du spectacle nocturne l'esprit tranquille en regroupant maghrib+isha.</p>
+<h2>4. Caler la pause sur la journée</h2><p>Avec <a href="/horaires-priere">les horaires du jour</a>, place une pause unique dhuhr+asr — et regarde l’heure de maghrib avant de t’installer pour le spectacle nocturne.</p>
 <h2>Questions fréquentes</h2><p><strong>Salle officielle ?</strong> Pas à notre connaissance.<br/><strong>Meilleure option ?</strong> La voiture (parking proche) ou un coin calme.<br/><strong>Ablutions ?</strong> Sanitaires du parc, nécessaire de poche recommandé.</p>
 <h2>Aide la communauté</h2><p>Un spot testé au Futuroscope, une info fraîche ? Partage-la — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
   },
@@ -3403,14 +3404,15 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Pratique',
     readTime: "3 min",
     publishedAt: '2026-08-06',
-    updatedAt: '2026-09-07',
+    updatedAt: '2026-10-02',
     content: `<p>Billet pour le Stade de France, portes qui ouvrent à 19h, maghreb à 21h30 en plein show ? Voici le plan qui évite le casse-tête.</p>
 <h2>L'essentiel en 30 secondes</h2><p>Pas de salle de prière permanente au Stade de France (des espaces éphémères ont pu exister lors de certains événements — ne compte pas dessus). La stratégie gagnante tient en un mot : ANTICIPER. Prier avant d'entrer, regrouper les prières, et connaître le coin Saint-Denis.</p>
 <h2>1. Avant d'entrer : le meilleur moment</h2><p>Les files d'attente et contrôles engloutissent une heure facile. Prie AVANT de rejoindre la file : le parvis et les abords offrent des recoins calmes.</p>
 <p><strong>Ne compte pas marcher jusqu'à une mosquée.</strong> Mesuré sur notre relevé OpenStreetMap du 3 septembre 2026 : <strong>aucun lieu de prière à moins de 2 km du stade</strong>. Le plus proche, la Grande Mosquée de Villeneuve-la-Garenne, est à environ 2,1 km — sept sont à moins de 3 km, tous à 25-30 minutes de marche aller, un soir de match. Saint-Denis a bien des salles de prière, mais pas à côté de l'enceinte. <a href="/mosquee-proche">L'outil mosquée la plus proche</a> te donne les distances réelles depuis là où tu es. <em>Données des lieux de prière © les contributeurs OpenStreetMap ; distances à vol d'oiseau, notre relevé n'est pas exhaustif.</em></p>
 <h2>2. Le regroupement, ton meilleur allié</h2><p>Événement le soir = maghrib+isha regroupées, soit avant l'entrée, soit au retour. Consulte <a href="/horaires-priere">les horaires du jour</a> et cale ton plan : c'est exactement le type de situation pour lequel cette facilité existe.</p>
 <h2>3. Sur place, si nécessaire</h2><p>Dans l'enceinte, les coursives hautes et les abords des buvettes en dehors des pics offrent des recoins possibles — discrétion, tapis de poche et <a href="/qibla">outil qibla</a>. À la mi-temps, c'est la cohue : préfère le début de seconde période.</p>
-<h2>Questions fréquentes</h2><p><strong>Salle de prière au Stade de France ?</strong> Pas de salle permanente.<br/><strong>Le plus simple ?</strong> Prier avant d'entrer (ou regrouper après).<br/><strong>Ablutions ?</strong> Sanitaires du stade ou avant de venir — nécessaire de poche conseillé.</p>
+<p>Sur ce qui est permis en déplacement — raccourcir, regrouper, le tayammoum — <strong>nous ne tranchons pas</strong> : c’est une question religieuse, pas une question de voyage. Elle se pose à quelqu’un de qualifié.</p>
+<h2>Questions fréquentes</h2><p><strong>Salle de prière au Stade de France ?</strong> Pas de salle permanente.<br/><strong>Le plus simple ?</strong> Prier avant d’entrer : c’est ce qui se règle le mieux, et ça ne dépend de personne.<br/><strong>Ablutions ?</strong> Sanitaires du stade ou avant de venir — nécessaire de poche conseillé.</p>
 <h2>Aide la communauté</h2><p>Tu as prié au Stade de France ou tu connais les bons coins de Saint-Denis ? Partage — une sadaqa jâriya pour tous les supporters. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
   },
   {
@@ -3422,6 +3424,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Destinations',
     readTime: "7 min",
     publishedAt: '2026-08-06',
+    updatedAt: '2026-10-02',
     content: `<p>Pas besoin de prendre l'avion pour des vacances sereines : la France est l'une des destinations halal les plus sous-cotées d'Europe. Des milliers de restaurants halal, des mosquées dans chaque grande ville, et des paysages pour tous les goûts. Voici comment organiser un <strong>voyage halal en France</strong> qui coche toutes les cases — manger, prier, souffler.</p>
 
 <h2>Pourquoi la France est une excellente destination halal</h2>
@@ -3439,7 +3442,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <p>Hors des grandes villes, l'offre de restaurants halal se raréfie. La parade des familles qui voyagent halal depuis des années : <strong>louer un gîte ou un appartement avec cuisine</strong>. Vous faites le plein dans une boucherie halal en ville (ou au marché pour poisson et légumes), et vous cuisinez tranquille. Zéro stress, budget divisé, et les enfants mangent ce qu'ils aiment. Pour les hôtels, les bons réflexes : petit-déjeuner avec options sans porc, mini-bar vidable sur demande, et proximité d'une mosquée — <a href="/mosquee-proche">notre outil mosquée la plus proche</a> fait le tri.</p>
 
 <h2>Prier partout en France</h2>
-<p>Entre les mosquées des villes, <a href="/blog/ou-prier-aeroports">les salles de prière des aéroports</a> et les solutions discrètes en déplacement, on prie sereinement partout — le tapis de poche dans le sac reste le meilleur ami du voyageur. Pensez aux <a href="/horaires-priere">horaires de prière de votre ville de vacances</a> (ils changent vite en été !) et aux facilités du voyageur pour regrouper.</p>
+<p>Entre les mosquées des villes, <a href="/blog/ou-prier-aeroports">les salles de prière des aéroports</a> et les solutions discrètes en déplacement, on prie sereinement partout — le tapis de poche dans le sac reste le meilleur ami du voyageur. Pensez aux <a href="/horaires-priere">horaires de prière de votre ville de vacances</a> (ils changent vite en été !) avant de partir : ils changent vite en été, et ce sont eux qui décident de tes pauses.</p>
 
 <h2>Questions fréquentes</h2>
 <p><strong>Peut-on passer des vacances 100 % halal en France ?</strong> Oui, facilement dans les grandes villes ; à la campagne, le gîte avec cuisine est la solution reine.<br/><strong>Quelle est la meilleure région ?</strong> Pour la facilité : Île-de-France et la région marseillaise. Pour le dépaysement : la montagne l'été.<br/><strong>Et pour une question halal précise en voyage ?</strong> Posez-la à <a href="https://halalgpt.fr?utm_source=voyageshalal&utm_medium=passerelle&utm_campaign=vacances-france">HalalGPT</a>, notre IA répond en quelques secondes.</p>
@@ -3889,15 +3892,16 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Pratique',
     readTime: "5 min",
     publishedAt: '2026-07-20',
+    updatedAt: '2026-10-02',
     tags: ["Avion", "Prière", "Voyage"],
     content: `<p>Ton vol tombe sur l'heure de la prière et tu ne sais pas comment prier en avion ? Voici comment faire, sereinement et discrètement.</p>
-<h2>L'essentiel en 30 secondes</h2><p>Si tu peux prier au sol avant/après le vol dans le temps imparti, c'est le mieux. Sinon, prie à ta place, assis, en inclinant la tête pour le roukou' et la sujoud. En voyageur, tu peux raccourcir et regrouper tes prières.</p>
-<h2>1. La meilleure option : prier au sol</h2><p>Prie à l'aéroport avant le décollage, ou à l'arrivée avant la fin du temps de la prière. <a href="/blog/ou-prier-aeroports">Nos guides « où prier à l'aéroport »</a> indiquent les salles. Regroupe dhuhr/asr, maghrib/isha pour un long vol.</p>
+<h2>L'essentiel en 30 secondes</h2><p>Si tu peux prier au sol avant/après le vol dans le temps imparti, c'est le mieux. Sinon, prie à ta place, assis, en inclinant la tête pour le roukou' et la sujoud. Ce que nous pouvons dire, c’est la moitié pratique : prier au sol avant l’embarquement est presque toujours plus simple que prier à sa place.</p>
+<h2>1. La meilleure option : prier au sol</h2><p>Prie à l'aéroport avant le décollage, ou à l'arrivée avant la fin du temps de la prière. <a href="/blog/ou-prier-aeroports">Nos guides « où prier à l'aéroport »</a> indiquent les salles. Pour un vol long, regarde <a href="/horaires-priere">les horaires du jour</a> avant de partir : ce sont eux qui décident de ce qui peut se faire au sol et de ce qui tombera en vol.</p>
 <h2>2. Faire les ablutions</h2><p>Fais tes ablutions à l'aéroport avant d'embarquer. À bord, les toilettes permettent le minimum. En cas d'impossibilité réelle, le tayammoum (ablution sèche) est une option reconnue.</p>
 <h2>3. Prier assis à sa place</h2><p>Prie assis, orienté vers la qibla au début si possible (<a href="/qibla">notre outil qibla</a> / aide de l'équipage), puis poursuis même si l'avion change de cap. Mouvements par légères inclinaisons de la tête (un peu pour le roukou', plus pour la sujoud).</p>
 <h2>4. Debout, si l'espace le permet</h2><p>Sur certains vols, un espace peut permettre de prier debout si l'équipage l'autorise et hors turbulences/ceinture obligatoire. Reste discret ; la sécurité du vol prime.</p>
-<h2>Les facilités du voyageur</h2><p>Raccourcir les prières de 4 à 2 rakats (dhuhr, asr, isha) et regrouper dhuhr/asr, maghrib/isha règle la plupart des situations.</p>
-<h2>Questions fréquentes</h2><p><strong>Prier assis en avion ?</strong> Oui, en cas de nécessité.<br/><strong>Trouver la qibla ?</strong> Oriente-toi au mieux au départ ; la prière reste valable si le cap change.<br/><strong>Pas d'eau ?</strong> Le tayammoum est permis en cas de nécessité.</p>
+<h2>Ce que nous ne tranchons pas</h2><p>Raccourcir les prières, les regrouper, prier assis, le tayammoum, l’orientation quand on ne sait plus où est la qibla : <strong>ce sont des questions religieuses, et nous n’y répondons pas</strong>. Elles se posent à quelqu’un de qualifié — <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&amp;utm_medium=passerelle&amp;utm_campaign=avion" target="_blank" rel="noopener noreferrer">HalalGPT</a> est fait pour ça. Notre travail s’arrête à la moitié pratique : où, quand, et comment s’organiser.</p>
+<h2>Questions fréquentes</h2><p><strong>Où prier dans un avion ?</strong> À sa place, ou près des galleys arrière entre deux services — voir ci-dessus.<br/><strong>Comment trouver la qibla en vol ?</strong> Notre <a href="/qibla">outil qibla</a> fonctionne hors réseau une fois ouvert ; le cap de l’avion change en route.<br/><strong>Et s’il n’y a pas d’eau ?</strong> C’est une question religieuse : voir la section ci-dessus.</p>
 <h2>Aide la communauté</h2><p>Une astuce, un endroit où prier avant un vol ? Partage-le — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>
 <p><strong>À lire aussi :</strong> <a href="/blog/heure-priere-avion-fuseaux">quelle heure de prière suivre en vol</a> · <a href="/blog/ablutions-avion-train">faire ses ablutions à bord</a> · <a href="/blog/repas-halal-avion-moml">commander le repas halal (MOML)</a>.</p>`,
   },
@@ -3909,15 +3913,16 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Pratique',
     readTime: "4 min",
     publishedAt: '2026-07-20',
+    updatedAt: '2026-10-02',
     tags: ["Train", "Prière", "Voyage"],
     content: `<p>Un long trajet en TGV et l'heure de la prière qui approche ? Voici comment prier dans le train simplement.</p>
-<h2>L'essentiel en 30 secondes</h2><p>Prie à ta place, assis, avec inclinaisons de la tête si tu ne peux pas te lever — ou, si tu trouves un espace calme, debout discrètement. En voyageur, tu peux raccourcir et regrouper tes prières.</p>
-<h2>1. Anticipe avant de monter</h2><p>Prie en gare avant le départ (certaines grandes gares ont des espaces calmes) ou à l'arrivée dans le temps imparti. Regroupe dhuhr/asr ou maghrib/isha pour un long trajet.</p>
+<h2>L'essentiel en 30 secondes</h2><p>Prie à ta place, assis, avec inclinaisons de la tête si tu ne peux pas te lever — ou, si tu trouves un espace calme, debout discrètement. Ce que nous pouvons dire, c’est la moitié pratique : un trajet en train laisse presque toujours le temps de prier en gare avant de monter, et ça règle l’essentiel.</p>
+<h2>1. Anticipe avant de monter</h2><p>Prie en gare avant le départ (certaines grandes gares ont des espaces calmes) ou à l'arrivée dans le temps imparti. Pour un long trajet, regarde <a href="/horaires-priere">les horaires du jour</a> avant de partir : ce sont eux qui décident de ce qui peut se faire en gare et de ce qui tombera à bord.</p>
 <h2>2. Prier assis à ta place</h2><p>Prie assis, orienté au mieux vers la qibla (<a href="/qibla">notre outil qibla</a>), mouvements par légères inclinaisons de la tête.</p>
 <h2>3. Prier debout dans un espace calme</h2><p>Si le train est peu rempli ou dans un espace entre les voitures, prie debout discrètement, en veillant à ta sécurité. Pose une veste ou un petit tapis.</p>
-<h2>4. Les ablutions</h2><p>Fais tes ablutions avant de monter si possible. Sinon les toilettes ; en cas d'impossibilité, le tayammoum.</p>
-<h2>Questions fréquentes</h2><p><strong>Prier assis dans le train ?</strong> Oui, en cas de nécessité.<br/><strong>S'orienter ?</strong> Au mieux ; la prière reste valable en déplacement.<br/><strong>Regrouper ?</strong> Oui, dhuhr/asr et maghrib/isha.</p>
-<p>Voir aussi <a href="/blog/prier-en-avion">comment prier en avion</a> et <a href="/blog/ou-prier-aire-autoroute">sur une aire d'autoroute</a>.</p>
+<h2>4. Les ablutions</h2><p>Fais tes ablutions avant de monter si possible. Sinon les toilettes du train, avec une petite bouteille souple remplie au lavabo. Le détail est dans notre guide : <a href="/blog/ablutions-avion-train">faire ses ablutions en voyage</a>.</p>
+<h2>Questions fréquentes</h2><p><strong>Où prier dans un train ?</strong> À sa place, ou dans un espace calme en bout de voiture — voir ci-dessus.<br/><strong>Comment s’orienter ?</strong> Notre <a href="/qibla">outil qibla</a> fonctionne hors réseau une fois ouvert.<br/><strong>Et le regroupement ?</strong> C’est une question religieuse : voir la section ci-dessous.</p>
+<h2>Ce que nous ne tranchons pas</h2><p>Raccourcir les prières, les regrouper, prier assis, le tayammoum, l’orientation quand on ne sait plus où est la qibla : <strong>ce sont des questions religieuses, et nous n’y répondons pas</strong>. Elles se posent à quelqu’un de qualifié — <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&amp;utm_medium=passerelle&amp;utm_campaign=train" target="_blank" rel="noopener noreferrer">HalalGPT</a> est fait pour ça. Notre travail s’arrête à la moitié pratique : où, quand, et comment s’organiser.</p><p>Voir aussi <a href="/blog/prier-en-avion">comment prier en avion</a> et <a href="/blog/ou-prier-aire-autoroute">sur une aire d'autoroute</a>.</p>
 <h2>Aide la communauté</h2><p>Un espace calme en gare, un coin pour prier avant un train ? Partage-le — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>
 <p><strong>À lire aussi :</strong> <a href="/blog/ablutions-avion-train">faire ses ablutions dans un train</a>.</p>`,
   },
@@ -3929,15 +3934,16 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Pratique',
     readTime: "4 min",
     publishedAt: '2026-07-20',
+    updatedAt: '2026-10-02',
     tags: ["Road trip", "Prière", "Voyage"],
     content: `<p>En plein road trip, où prier sur une aire d'autoroute ? Rares sont les aires équipées, mais prier en route est faisable avec un peu d'organisation.</p>
-<h2>L'essentiel en 30 secondes</h2><p>La plupart des aires n'ont pas de salle : prie dans un coin calme (zone d'herbe, ou dans ta voiture), après ablutions aux toilettes. En voyageur, raccourcis et regroupe tes prières.</p>
-<h2>1. Regroupe tes prières pour la route</h2><p>Regroupe dhuhr/asr et maghrib/isha, raccourcis de 4 à 2 rakats. Un seul arrêt suffit souvent pour deux prières.</p>
+<h2>L'essentiel en 30 secondes</h2><p>La plupart des aires n'ont pas de salle : prie dans un coin calme (zone d'herbe, ou dans ta voiture), après ablutions aux toilettes. Ce que nous pouvons dire, c’est la moitié pratique : une aire de repos est bien plus calme qu’une aire de service, et c’est là que ça se passe le mieux.</p>
+<h2>1. Organiser les pauses avant de partir</h2><p>Regarde <a href="/horaires-priere">les horaires du jour</a> avant de prendre la route : ce sont eux qui décident où tu t’arrêteras, et une pause décidée à l’avance vaut mieux qu’une aire choisie dans l’urgence.</p>
 <h2>2. Trouve ton coin sur l'aire</h2><p>Vise une zone d'herbe à l'écart des flux. Pose un tapis, oriente-toi vers la qibla (<a href="/qibla">notre outil qibla</a>). Sinon, prier dans la voiture, assis, reste valable.</p>
-<h2>3. Les ablutions</h2><p>Les toilettes de l'aire permettent les ablutions. Garde un petit nécessaire dans la voiture. En cas d'impossibilité, le tayammoum.</p>
+<h2>3. Les ablutions</h2><p>Les toilettes de l'aire permettent les ablutions. Garde un petit nécessaire dans la voiture — une bouteille souple et une serviette microfibre changent tout. Le détail est dans notre guide : <a href="/blog/ablutions-avion-train">faire ses ablutions en voyage</a>.</p>
 <h2>4. Prépare ton trajet</h2><p>Repère les grandes aires et cale tes pauses prière avec essence/repas. Certaines grandes aires proposent un espace calme, mais ne compte pas dessus par défaut.</p>
-<h2>Questions fréquentes</h2><p><strong>Salles de prière sur les aires ?</strong> Rare en France ; prévois un coin calme ou ta voiture.<br/><strong>Prier dans la voiture ?</strong> Oui, en cas de nécessité.<br/><strong>Limiter les arrêts ?</strong> En regroupant dhuhr/asr et maghrib/isha.</p>
-<h2>Aide la communauté</h2><p>Tu connais une aire avec un bon coin prière (France, Espagne, Maroc…) ? Partage-le — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
+<h2>Questions fréquentes</h2><p><strong>Salles de prière sur les aires ?</strong> Rare en France ; prévois un coin calme ou ta voiture.<br/><strong>Prier dans la voiture ?</strong> C’est ce que font beaucoup de conducteurs, et c’est l’endroit le plus tranquille d’une aire.<br/><strong>Limiter les arrêts ?</strong> Place tes pauses avec les horaires du jour en main, avant de partir.</p>
+<h2>Ce que nous ne tranchons pas</h2><p>Raccourcir les prières, les regrouper, prier assis, le tayammoum, l’orientation quand on ne sait plus où est la qibla : <strong>ce sont des questions religieuses, et nous n’y répondons pas</strong>. Elles se posent à quelqu’un de qualifié — <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&amp;utm_medium=passerelle&amp;utm_campaign=autoroute" target="_blank" rel="noopener noreferrer">HalalGPT</a> est fait pour ça. Notre travail s’arrête à la moitié pratique : où, quand, et comment s’organiser.</p><h2>Aide la communauté</h2><p>Tu connais une aire avec un bon coin prière (France, Espagne, Maroc…) ? Partage-le — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
   },
   {
     slug: "ou-prier-centre-commercial",
@@ -4452,17 +4458,15 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: "Pratique",
     readTime: "8 min",
     publishedAt: "2026-02-04",
-    updatedAt: '2026-08-29',
+    updatedAt: '2026-10-02',
     tags: ["Prière", "Voyage", "Qibla"],
     content: `<p>Voyager ne dispense pas de la prière, mais l'islam prévoit des facilités précieuses pour le voyageur. Décalage horaire, vols longs, escales : voici comment <strong>ne jamais rater une prière en voyage</strong>, sereinement.</p>
-<h2>La prière du voyageur : une obligation allégée</h2>
-<p>Le voyageur (musafir) bénéficie de deux facilités principales accordées par la tradition prophétique : le <strong>qasr</strong> et le <strong>jam'</strong>. Loin d'être une contrainte, ce sont des miséricordes qui rendent la pratique aisée même en déplacement.</p>
-<h2>Le qasr : raccourcir les prières</h2>
-<p>En voyage, les prières de quatre unités (Dhuhr, Asr, Isha) peuvent être raccourcies à deux unités. C'est une pratique bien établie, valable dès lors que l'on s'éloigne suffisamment de son lieu de résidence. Maghrib (trois unités) et Fajr (deux unités) restent inchangées.</p>
-<h2>Le jam' : regrouper les prières</h2>
-<p>Il est également permis de regrouper Dhuhr et Asr, ainsi que Maghrib et Isha, soit en avançant, soit en retardant l'une des deux. C'est particulièrement utile lors d'un vol, d'un long trajet en train ou d'un programme touristique chargé.</p>
+<h2>Deux mots que tu verras partout : qasr et jam'</h2>
+<p>Si tu as déjà cherché le sujet, tu es tombé sur ces deux termes — le <strong>qasr</strong> et le <strong>jam’</strong>, les noms arabes du raccourcissement et du regroupement des prières. Nous les nommons parce qu’ils sont partout, et parce que connaître le mot rend la question posable.</p>
+<p>Sur ce qui est permis, à partir de quelle distance, et dans quelles conditions : <strong>nous ne tranchons pas</strong>. C’est une question religieuse, pas une question de voyage, et elle se pose à quelqu’un de qualifié — <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&amp;utm_medium=passerelle&amp;utm_campaign=horaires" target="_blank" rel="noopener noreferrer">HalalGPT</a> est fait pour ça.</p>
+<p>Ce qui suit est la moitié qui est la nôtre : la moitié pratique. Et sur un voyage, la vraie difficulté n’est presque jamais la règle — c’est l’horloge, le fuseau et la géographie.</p>
 <h2>Prier en avion</h2>
-<p>En vol, faites de votre mieux : accomplissez les ablutions avant l'embarquement (ou le tayammum si l'eau manque), orientez-vous vers la Qibla autant que possible au début de la prière, et priez assis si vous ne pouvez pas vous lever. L'intention et l'effort priment. Notre <a href="/qibla">calculateur de Qibla</a> vous aide à trouver la direction de La Mecque où que vous soyez.</p>
+<p>En vol, faites de votre mieux : faites vos ablutions <strong>avant l’embarquement</strong>, dans le terminal, où les lavabos sont bien plus pratiques qu’à bord. Notre <a href="/qibla">outil qibla</a> fonctionne hors réseau une fois la page ouverte, et priez assis si vous ne pouvez pas vous lever. L'intention et l'effort priment. Notre <a href="/qibla">calculateur de Qibla</a> vous aide à trouver la direction de La Mecque où que vous soyez.</p>
 <h2>Gérer le décalage horaire</h2>
 <p>Le piège du voyage, c'est le décalage horaire : les horaires de prière changent avec la longitude et la latitude. Ne vous fiez pas à l'heure de votre ville de départ. Calculez toujours les horaires <strong>en fonction de votre position réelle</strong>. Notre outil <a href="/horaires-priere">horaires de prière</a> se base sur votre position GPS pour un résultat précis, à la minute près, avec choix de la méthode de calcul et de l'école juridique.</p>
 <h2>Trouver une mosquée sur place</h2>
@@ -4627,7 +4631,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <h2>Finding halal food abroad</h2>
 <p>In Muslim-majority countries, food is halal by default. Elsewhere, look for halal restaurants, Turkish, Pakistani, Lebanese or Malaysian eateries, and vegetarian or seafood options when in doubt. Always check the halal label and, if unsure, ask. Our destination guides list verified halal spots in 157+ cities.</p>
 <h2>Praying while traveling</h2>
-<p>Islam grants the traveler real facilities: you may <strong>shorten</strong> (qasr) and <strong>combine</strong> (jam') prayers. Always calculate prayer times based on your real location, not your home city. Use our <a href="/horaires-priere">prayer times</a> tool, powered by GPS, and our <a href="/qibla">Qibla compass</a> to find the direction of Mecca.</p>
+<p>The practical rule, and the one people get wrong: <strong>always compute prayer times from where you actually are</strong>, not from your home city. A three-hour time difference moves Maghrib by three hours, and that is what makes people miss it. On what is permitted while travelling — shortening, combining — <strong>we do not rule</strong>: that is a religious question, not a travel one, and it goes to someone qualified. Use our <a href="/horaires-priere">prayer times</a> tool, powered by GPS, and our <a href="/qibla">Qibla compass</a> to find the direction of Mecca.</p>
 <h2>Finding a mosque</h2>
 <p>In an unfamiliar city, our <a href="/mosquee-proche">Nearest Mosque</a> tool detects your location and lists nearby mosques sorted by distance, with directions.</p>
 <h2>Choosing Muslim-friendly hotels</h2>
@@ -4648,17 +4652,15 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: "Practical",
     readTime: "8 min",
     publishedAt: "2026-02-05",
-    updatedAt: '2026-08-29',
+    updatedAt: '2026-10-02',
     tags: ["Prayer", "Travel", "Qibla"],
     content: `<p>Traveling does not exempt you from prayer, but Islam offers valuable facilities for the traveler. Time-zone changes, long flights, layovers: here is how to <strong>never miss a prayer while traveling</strong>.</p>
-<h2>The traveler's prayer: an eased obligation</h2>
-<p>The traveler (musafir) benefits from two main facilities rooted in the Prophetic tradition: <strong>qasr</strong> and <strong>jam'</strong>. These are mercies that make worship easy on the move.</p>
-<h2>Qasr: shortening prayers</h2>
-<p>While traveling, the four-unit prayers (Dhuhr, Asr, Isha) may be shortened to two units. Maghrib (three units) and Fajr (two units) remain unchanged.</p>
-<h2>Jam': combining prayers</h2>
-<p>You may also combine Dhuhr with Asr, and Maghrib with Isha, either earlier or later. This is especially useful during flights, long train rides or busy sightseeing days.</p>
+<h2>Two words you will see searched: qasr and jam'</h2>
+<p>If you have looked this up before, you have met these two terms — <strong>qasr</strong> and <strong>jam'</strong>, the Arabic names for shortening and for combining prayers. We name them because you will see them everywhere, and because knowing the word makes the question askable.</p>
+<p>On what is permitted while travelling — shortening, combining, tayammum — <strong>we do not rule</strong>: that is a religious question, not a travel one. Ask someone qualified.</p>
+<p>What follows is the half that <em>is</em> ours: the practical one. Where the real difficulty lies on a journey is almost never the rule — it is the clock, the time zone and the geography.</p>
 <h2>Praying on a plane</h2>
-<p>On board, do your best: perform ablutions before boarding (or tayammum if water is unavailable), face the Qibla as much as possible at the start, and pray seated if you cannot stand. Intention and effort come first. Our <a href="/qibla">Qibla calculator</a> helps you find the direction of Mecca anywhere.</p>
+<p>The practical sequence: make wudu <strong>before boarding</strong>, in the terminal, where the basins are easier than in an aircraft lavatory. Our <a href="/qibla">Qibla calculator</a> works offline once the page is open, which matters at 10,000 metres. The rear galleys are the one place with floor space, and they are quietest between services. The detail is in our guide on <a href="/blog/praying-on-a-plane">praying on a plane</a>.</p>
 <h2>Handling time-zone changes</h2>
 <p>The biggest pitfall is the time difference: prayer times change with longitude and latitude. Never rely on your home city's schedule. Always calculate based on your <strong>real position</strong>. Our <a href="/horaires-priere">prayer times</a> tool uses your GPS location for minute-accurate results, with method and school selectors.</p>
 <h2>Finding a mosque worldwide</h2>
