@@ -11,7 +11,7 @@ name: tests
 # Autrement dit, activer la fusion automatique telle quelle aurait fusionné
 # sur un feu vert qui ne regarde pas la route. Ce fichier est la route.
 #
-# `npm run build` enchaîne les 46 tests de la maison AVANT `next build` :
+# `npm run build` enchaîne TOUS les tests de la maison AVANT `next build` :
 # alcool, titres, prose, maillage, données structurées, préposition, accord,
 # honnêteté des articles… Si l'un d'eux casse, la construction s'arrête et
 # la PR ne peut pas être fusionnée. C'est exactement la garantie qu'il faut
@@ -36,7 +36,7 @@ concurrency:
 
 jobs:
   build:
-    name: 46 tests + construction
+    name: Tests de la maison + construction
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
@@ -53,7 +53,7 @@ jobs:
         run: npm ci
 
       # C'est ici que tout se joue : le script `build` du package.json lance
-      # les 46 tests puis `next build`. Un seul ❌ et le job échoue.
+      # tous les tests puis `next build`. Un seul ❌ et le job échoue.
       - name: Tests de la maison, puis construction
         run: npm run build
         env:
@@ -71,7 +71,7 @@ jobs:
     # les contrôles « obligatoires », et ce dépôt n'en a aucun (pas de
     # protection de branche). Elle aurait donc fusionné sans rien attendre.
     # La fusion se fait donc ICI, après le job `build` — c'est-à-dire après
-    # les 46 tests ET la construction complète.
+    # tous les tests ET la construction complète.
     #
     #  1. `needs: build`   — un seul test rouge et ce job ne démarre jamais.
     #  2. même dépôt       — une PR venant d'un fork ne se fusionne pas elle-même
@@ -97,5 +97,5 @@ jobs:
           NUM: ${{ github.event.pull_request.number }}
           DEPOT: ${{ github.repository }}
         run: |
-          echo "Les 46 tests et la construction sont passés — fusion de la PR #$NUM."
+          echo "Les tests de la maison et la construction sont passés — fusion de la PR #$NUM."
           gh pr merge "$NUM" --repo "$DEPOT" --merge
