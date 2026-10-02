@@ -74,6 +74,7 @@
 
   var plafond = MAXI;   // ajuste des que la banque est connue
   var parNiveau = { 1: 0, 2: 0, 3: 0 };
+  var aRevoirIci = 0;   // questions de CETTE section marquees a revoir
 
   function dire() {
     // Le plafond depend du NIVEAU choisi, pas de la banque entiere :
@@ -94,9 +95,38 @@
     }
     document.getElementById('dit-niveau').textContent = NIVEAUX[r.niveau];
 
+    /* CE QUE LE NIVEAU CHOISI NE DIT PAS TOUT SEUL.
+       -------------------------------------------
+       Mesure du 2 octobre. Memoire d'une personne qui a joue en expert et
+       s'est trompee quarante fois, puis qui revient et choisit « Début » :
+
+         l'ecran promettait   « Début · 32 »
+                              « Les questions les plus abordables »
+                              « Commencer les 20 questions »
+         le paquet contenait  20 questions, toutes de niveau EXPERT.
+
+       Zero sur vingt au niveau demande. C'est le debutant exact — celui qui
+       a trouve ca trop dur et qui revient au plus facile — qui recevait les
+       vingt questions les plus dures, celles-la memes qu'il venait de rater.
+
+       La REGLE est voulue et je n'y touche pas : une question ratee revient
+       parce qu'on l'a ratee, pas parce qu'elle est du bon niveau, sinon la
+       promesse « cette question reviendra » ne vaut plus rien. C'est ecrit
+       dans `lancer-qcm.js` et c'est juste.
+
+       Ce qui n'allait pas, c'est que l'ecran n'en disait rien. Il annoncait
+       un niveau et un nombre, et donnait autre chose. On le dit donc, avec
+       le compte exact — et quand les rattrapages remplissent tout le paquet,
+       « dont 20 a revoir » se lit tout seul comme « le niveau ne
+       s'appliquera pas ».
+
+       L'option, elle, dit deja « Elles passent devant dans le tirage ». Elle
+       ne disait pas qu'elles passent AUSSI devant le niveau. */
+    var rattrapage = r.erreurs ? Math.min(aRevoirIci, r.nombre) : 0;
     document.getElementById('dit-nombre').textContent =
       r.nombre + ' question' + (r.nombre > 1 ? 's' : '')
-      + (plafond < MAXI ? ' · ce niveau en compte ' + plafond : '');
+      + (plafond < MAXI ? ' · ce niveau en compte ' + plafond : '')
+      + (rattrapage ? ' · dont ' + rattrapage + ' à revoir, tous niveaux' : '');
     document.getElementById('commencer').textContent = 'Commencer les ' + r.nombre + ' questions';
     var min = Math.round(r.nombre * SECONDES_PAR_QUESTION / 60);
     document.getElementById('duree').textContent =
@@ -225,6 +255,17 @@
       2: (e.niveaux && e.niveaux['2']) || 0,
       3: (e.niveaux && e.niveaux['3']) || 0
     };
+
+    // COMBIEN DE QUESTIONS DE CETTE SECTION SONT A REVOIR.
+    // Les identifiants viennent de l'index — il les porte justement pour que
+    // cet ecran n'ait pas a telecharger la banque — et l'etat `aRevoir` de
+    // la memoire du telephone. C'est ce compte qui rend la phrase du bas
+    // vraie : ces questions-la passent devant, et devant le niveau.
+    aRevoirIci = 0;
+    var ids = e.ids || [];
+    for (var z = 0; z < ids.length; z++) {
+      if (M.fiche(d, ids[z]).aRevoir) { aRevoirIci += 1; }
+    }
     var bn = document.querySelectorAll('.niveau');
     for (var k = 0; k < bn.length; k++) {
       var nv = parseInt(bn[k].getAttribute('data-niveau'), 10);

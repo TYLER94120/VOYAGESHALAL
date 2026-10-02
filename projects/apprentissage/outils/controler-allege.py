@@ -41,9 +41,22 @@ CE QU'IL VERIFIE, POUR CHAQUE .js ET CHAQUE .css
  3. LE JAVASCRIPT ALLEGE S'ANALYSE ENCORE, par `node --check`. Un bloc de
     commentaire mal referme emporterait la suite du fichier : le controle
     d'apres, en navigateur, verrait une page morte sans savoir pourquoi.
- 4. CE QUI EST DANS LE DEPOT DE PUBLICATION, quand il est la, est exactement
-    ce qu'`alleger.py` produit aujourd'hui. Un fichier retouche a la main de
-    ce cote-la ne reviendrait jamais dans la source.
+ 4. CE QUI EST DANS LE DEPOT DE PUBLICATION, quand il est la ET qu'il vient
+    du meme commit que la source, est exactement ce qu'`alleger.py` produit.
+    Un fichier retouche a la main de ce cote-la ne reviendrait jamais dans la
+    source.
+
+    LA CONDITION « MEME COMMIT » A ETE AJOUTEE LE 2 OCTOBRE, et elle n'est
+    pas un assouplissement : c'est une correction. La premiere version
+    comparait sans condition, et elle a sorti une faute des la premiere nuit
+    ou la branche a pris de l'avance sur la mise en ligne — « js/reglages.js
+    differe ». C'etait vrai, et ce n'etait pas une faute : Mohamed promeut
+    quand il veut, donc la production EN RETARD est l'etat normal, pas un
+    accident.
+
+    Un controle qui se declenche sur l'etat normal apprend a etre ignore.
+    On compare donc seulement quand les deux reperes de version portent le
+    meme commit — et quand ils different, on le DIT, sans refuser le lot.
 """
 
 import pathlib
@@ -54,6 +67,16 @@ import tempfile
 
 RACINE = pathlib.Path(__file__).resolve().parent.parent
 PUBLICATION = pathlib.Path('/home/user/islampasapas')
+REPERE = re.compile(r'Version du site[^<]*<strong>[^<]*</strong>\s*\((\w+)\)')
+
+
+def commit_de(dossier):
+    """Le commit de source que le repere de version d'un arbre annonce."""
+    page = dossier / 'plus.html'
+    if not page.is_file():
+        return None
+    m = REPERE.search(page.read_text(encoding='utf-8'))
+    return m.group(1) if m else None
 
 sys.path.insert(0, str(RACINE / 'outils'))
 import alleger  # noqa: E402  (apres sys.path, volontairement)
@@ -102,6 +125,9 @@ def main():
     fautes = []
     octets_source = octets_servi = 0
     verifies_node = 0
+    # On ne compare a la publication que si elle vient du MEME commit.
+    ici, la_bas = commit_de(RACINE), commit_de(PUBLICATION)
+    comparable = bool(ici and la_bas and ici == la_bas)
 
     for f in fichiers:
         rel = f.relative_to(RACINE)
@@ -148,12 +174,12 @@ def main():
                               % (rel, (r.stderr or '').strip().split('\n')[-1][:90]))
 
         # 4. Ce qui est publie est-il bien ce qu'on produit ?
-        if PUBLICATION.is_dir():
+        if comparable:
             cible = PUBLICATION / rel
             if cible.is_file() and cible.read_bytes() != servi.encode('utf-8'):
-                fautes.append('%s : la copie publiee differe de ce qu\'alleger.py '
-                              'produit aujourd\'hui — elle a ete retouchee a la '
-                              'main, ou elle est en retard' % rel)
+                fautes.append('%s : la copie publiee vient du meme commit (%s) et '
+                              'differe pourtant de ce qu\'alleger.py produit — elle '
+                              'a ete retouchee a la main' % (rel, ici))
 
     if fautes:
         print('  %d FAUTE(S) — le lot est refuse :' % len(fautes))
@@ -168,8 +194,16 @@ def main():
     print('  Chaque ligne gardee est identique et dans l\'ordre ; chaque ligne')
     print('  retiree est un commentaire ou du vide.')
     print('  %d fichiers JavaScript alleges relus par node --check.' % verifies_node)
-    if PUBLICATION.is_dir():
-        print('  La copie publiee est exactement ce qu\'alleger.py produit.')
+    if comparable:
+        print('  La copie publiee (%s) est exactement ce qu\'alleger.py produit.'
+              % ici)
+    elif ici and la_bas:
+        print('  Mise en ligne sur %s, source sur %s : rien a comparer, et c\'est'
+              % (la_bas, ici))
+        print('  normal — Mohamed promeut quand il veut.')
+    else:
+        print('  Pas de repere de version lisible des deux cotes : comparaison'
+              ' avec la publication sautee.')
 
 
 if __name__ == '__main__':
