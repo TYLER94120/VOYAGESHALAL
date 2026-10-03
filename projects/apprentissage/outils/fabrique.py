@@ -80,6 +80,27 @@ def normaliser(s):
     return re.sub(r'[^a-z0-9ء-ي]+', ' ', sans_accents(s)).strip()
 
 
+def de(nom):
+    """« de Adam » -> « d\'Adam ». L'elision, qui n'est pas une coquetterie.
+
+    Le francais elide « de » devant une voyelle. « de Adam », « de Issa »,
+    « de Ibrahim » se lisent comme une faute d'ecolier, et sur un site qui
+    enseigne — et dont les enonces sont lus par des gens qui apprennent le
+    francais autant que l'arabe — c'est la derniere chose a laisser passer.
+
+    LE Y NE S'ELIDE PAS. « Yahya », « Yaqoub », « Younous » commencent par un
+    son de consonne : on dit « de Yahya », comme « de Yann » ou « de York ».
+    Ma premiere mesure les comptait comme fautifs et annoncait dix-neuf
+    fautes ; il y en avait douze. Le H non plus : l'usage garde « de Haroun ».
+
+    Mesure du 3 octobre : douze enonces de la section des prophetes
+    ecrivaient « le nom de Adam », « de Ishaq », « de Issa »… et
+    `data/sections.json` annoncait la section par « De Adam a Muhammad »,
+    qui finissait dans le <title> de la page et dans sa description.
+    """
+    return ("d'" if nom[:1] in 'AEIOUÀÂÉÈÊÎÔÛaeiou' else 'de ') + nom
+
+
 def identifiant(prefixe, graine):
     """Un identifiant stable : la meme question garde le meme id d'un lot a
     l'autre, sinon la progression des gens se perd a chaque regeneration."""

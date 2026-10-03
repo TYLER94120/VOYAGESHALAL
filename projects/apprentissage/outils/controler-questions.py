@@ -63,6 +63,11 @@ DONNEES = RACINE / 'data' / 'questions'
 
 SOURCE_CORAN = re.compile(r'Coran, sourate (\d+), verset (\d+)')
 
+# « de » devant une voyelle : il faut elider. On ne retient que A, E, I, O,
+# U et leurs accentuees — ni le Y, qui sonne consonne, ni le H, que l'usage
+# garde plein dans « de Haroun ».
+ELISION = re.compile(r'\bde ([AEIOU\u00c0\u00c2\u00c9\u00c8\u00ca\u00ce\u00d4\u00db][^\s,.;:!?)]*)')
+
 # Les graphies francaises retenues par le generateur des prophetes. Lues chez
 # lui pour ne pas en tenir une deuxieme liste : deux listes divergent toujours.
 def _prophetes():
@@ -229,8 +234,13 @@ def _nombre(x):
 
 # Les trois formes de question qui affirment un compte sur le Coran entier.
 VERSETS_DE = re.compile(r'Combien de versets compte la sourate ([^?]+)\?')
-VERSETS_DU_NOM = re.compile(r'Dans combien de versets le nom de (\S+) ')
-SOURATE_DU_NOM = re.compile(r'Dans quelle sourate le nom de (\S+) ')
+# « le nom de Moussa » ou « le nom d'Adam » : depuis le 3 octobre les enonces
+# elident devant une voyelle, comme le francais l'exige. Le controle doit lire
+# les deux formes — sinon il ne reconnaitrait plus douze questions et les
+# refuserait comme « inclassables », ce qui serait sa facon a lui de ne pas
+# suivre une correction de langue.
+VERSETS_DU_NOM = re.compile(r"Dans combien de versets le nom (?:d'|de )([^\s?]+)")
+SOURATE_DU_NOM = re.compile(r"Dans quelle sourate le nom (?:d'|de )([^\s?]+)")
 
 
 def _famille_de_compte(question):
@@ -369,6 +379,24 @@ def main():
             # main. Une question sans niveau se joue a tous les niveaux, donc
             # trois fois trop souvent — c'est visible, mais seulement pour qui
             # joue longtemps. On le voit ici, tout de suite.
+            # L'ELISION. « de Adam », « de Issa », « de Ibrahim » se lisent
+            # comme une faute d'ecolier, et sur un site qui enseigne — dont
+            # les enonces sont lus par des gens qui apprennent le francais
+            # autant que l'arabe — c'est la derniere chose a laisser passer.
+            # Mesure du 3 octobre : douze enonces de la section des prophetes.
+            # Le Y ne s'elide pas (« de Yahya », comme « de Yann »), le H non
+            # plus par l'usage (« de Haroun ») : ma premiere mesure les
+            # comptait a tort et annoncait dix-neuf fautes au lieu de douze.
+            for champ in ('question', 'explication', 'source'):
+                for mot in ELISION.findall(str(q.get(champ) or '')):
+                    fautes.append('%s : « de %s » dans %s — le francais elide '
+                                  'devant une voyelle, il faut « d\'%s »'
+                                  % (ou, mot, champ, mot))
+            for r in q.get('reponses') or []:
+                for mot in ELISION.findall(str(r)):
+                    fautes.append('%s : « de %s » dans une reponse — il faut '
+                                  '« d\'%s »' % (ou, mot, mot))
+
             if q.get('niveau') not in (1, 2, 3):
                 fautes.append('%s : niveau %r, attendu 1, 2 ou 3 — relancer '
                               'classer-niveaux.py' % (ou, q.get('niveau')))

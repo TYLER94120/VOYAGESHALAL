@@ -208,7 +208,8 @@ def main():
             qid=F.identifiant('prophetes', 'B-%s' % nom),
             section=SECTION,
             theme='Ou les trouver',
-            question_texte='Dans quelle sourate le nom de %s revient-il le plus souvent ?' % nom,
+            question_texte='Dans quelle sourate le nom %s revient-il le plus souvent ?'
+                         % F.de(nom),
             bonne=noms[gagnante]['tr'],
             leurres=leurres,
             explication='Son nom y apparaît dans %d versets, plus que dans '
@@ -231,7 +232,7 @@ def main():
             qid=F.identifiant('prophetes', 'C-%s' % nom),
             section=SECTION,
             theme='Reperes',
-            question_texte='Dans combien de versets le nom de %s apparaît-il ?' % nom,
+            question_texte='Dans combien de versets le nom %s apparaît-il ?' % F.de(nom),
             bonne='%d versets' % n,
             leurres=leurres,
             explication='Compté sur les 6 236 versets du Coran. Les autres '
