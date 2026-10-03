@@ -174,9 +174,45 @@ def batir_lexique(ar, fr, morpho):
     # Le mot francais ENTIER, avec ses accents : le radical de sept lettres
     # sert a compter, pas a afficher. « chatime » ne se montre pas.
     entier = collections.defaultdict(collections.Counter)
+    # ET SA CASSE. Le `.lower()` ci-dessous ecrasait les majuscules, et le
+    # lexique publiait « moïse », « abraham », « coran ». Mesure du 3 octobre :
+    # 371 occurrences dans le site, dont 214 sur des BOUTONS DE REPONSE — on
+    # appuyait sur « moïse » pour repondre juste. Sur un site qui enseigne le
+    # Coran, au nom de Mohamed.
+    #
+    # On ne decide pas nous-memes ce qui est un nom propre : on suit le
+    # traducteur. Pour chaque mot, on compte comment Hamidullah l'ecrit AU
+    # MILIEU d'une phrase — une majuscule en debut de phrase ne prouve rien.
+    #
+    # Et on n'applique la majuscule que s'il ne l'omet JAMAIS, sur au moins
+    # cinq occurrences. La mesure dit pourquoi cette severite :
+    #
+    #   Moïse 151 / 0   Coran 153 / 0   Pharaon 79 / 0   Abraham 45 / 0
+    #   Diable 63 / 8          <- il hesite, on laisse « diable »
+    #   Jardins 42 / 39        <- « jardins » est un nom commun, on y touche pas
+    #   Enfer   1 / 0          <- une seule occurrence ne prouve rien
+    #
+    # Une regle « la majorite l'emporte » aurait capitalise « Jardins ». Le
+    # corpus marque pourtant son lemme comme nom propre : c'est la preuve que
+    # ce drapeau-la ne suffit pas, et qu'il fallait aller voir le francais.
+    casse = collections.defaultdict(collections.Counter)
     for t in fr.values():
-        for w in re.findall(r"[A-Za-zÀ-ÿ']{4,}", t):
+        for m in re.finditer(r"[A-Za-zÀ-ÿ']{4,}", t):
+            w = m.group(0)
             entier[nu_fr(w)[:7]][w.lower()] += 1
+            avant = t[:m.start()].rstrip()
+            if avant and avant[-1] not in '.!?»:':
+                casse[w.lower()][w] += 1
+
+    def forme_affichee(mot):
+        """Le mot tel que Hamidullah l'ecrit, quand il est categorique."""
+        vues = casse.get(mot)
+        if not vues or sum(vues.values()) < 5:
+            return mot
+        majuscules = {w: n for w, n in vues.items() if w[:1].isupper()}
+        if not majuscules or sum(n for w, n in vues.items() if w[:1].islower()):
+            return mot
+        return max(majuscules, key=majuscules.get)
 
     lexique, ecartes = [], collections.Counter()
     for lem, vs in versetsDuLemme.items():
@@ -204,7 +240,7 @@ def batir_lexique(ar, fr, morpho):
 
         lexique.append({
             'lemme': lem,
-            'sens': entier[radical].most_common(1)[0][0],
+            'sens': forme_affichee(entier[radical].most_common(1)[0][0]),
             'occurrences': occurrences[lem],
             'versets': len(vs),
             'accord': round(p, 3),
