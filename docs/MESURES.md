@@ -2827,3 +2827,94 @@ touchées relues sur le domaine correspondant : **aucun verdict sur aucune**,
 et le renvoi présent sur les 10 qui abordent encore le sujet. Les 4 autres
 (Astérix, Puy du Fou, Futuroscope, vacances en France) ne le mentionnent
 plus du tout — elles n'ont donc rien à renvoyer, ce que le test sait.
+
+## 3 octobre — un hreflang est une bijection, et trois guides anglais avaient deux versions françaises
+
+Jour impair, création. Je n'ai pas écrit d'article, et c'est le bon choix :
+en cherchant quel article français n'avait pas de jumeau, j'ai trouvé que la
+table des jumeaux elle-même était fausse en quatre endroits. Écrire un
+dixième article au-dessus d'un maillage faux n'aurait rien valu.
+
+### 🔴 Deux fausses pistes, écartées par la mesure — avant toute correction
+
+Il faut les écrire, parce que j'ai failli publier les deux.
+
+**Fausse piste n° 1.** Mon balayage annonçait *six* articles français sans
+jumeau, dont quatre aux titres manifestement anglais (`halal-travel-guide-
+beginners`, `best-halal-restaurants-istanbul-2026`…). J'ai cru tenir un gros
+défaut : des pages anglaises servies comme françaises. **C'était faux.** Ces
+quatre articles portent `lang: "en"` — **avec des guillemets**, là où ma
+regex ne connaissait que `lang: 'en'`. C'est exactement le piège noté au
+carnet le 1er septembre, et j'y suis retombé un mois plus tard.
+
+**Fausse piste n° 2.** J'avais ensuite relevé que, sur le domaine français,
+ces pages se déclarent canoniques en `voyageshalal.fr` — donc du contenu
+dupliqué entre les deux domaines. **Faux aussi** : relevé sur page servie,
+elles sortent toutes en `noindex, follow` sur le mauvais domaine. Le code le
+fait déjà (`generateMetadata` compare la langue de l'article à celle du
+domaine). La machinerie des deux domaines fonctionne.
+
+Le vrai défaut était ailleurs, et c'est en voulant *garder* ces fausses
+pistes que je l'ai trouvé.
+
+### Défaut n° 1 : trois guides anglais, deux « versions françaises » chacun
+
+```
+  voyage-halal-istanbul-guide-2026   -> istanbul-halal-travel-guide
+  voyage-halal-dubai-guide-2026      -> dubai-halal-travel-guide-2026
+  voyage-halal-marrakech-guide-2026  -> marrakech-halal-travel-guide
+```
+
+**Aucune de ces trois pages françaises n'existe** — ni dans `lib/data.ts`,
+ni dans `lib/guidesEn.ts`, nulle part dans le dépôt. Et chacune de leurs
+cibles anglaises était déjà, légitimement, le jumeau d'une page française
+réelle (`istanbul-guide-halal-complet`, `dubai-guide-halal-2026`,
+`marrakech-guide-halal`).
+
+Un hreflang est une **bijection**. Annoncer deux « versions françaises » de
+la même page anglaise fait précisément ce que cette table sert à empêcher :
+mettre deux de nos pages en concurrence. Les trois clés mortes sont retirées.
+
+### Défaut n° 2 : un annuaire de restaurants appairé avec un guide national
+
+```
+  'restaurants-halal-paris': '/blog/halal-travel-france-2026'
+```
+
+· FR : « Restaurants halal à Paris 2026 : par arrondissement » — **157 mots**,
+  Paris seulement, un annuaire.
+· EN : « Halal travel in France: where to pray, city by city » — **843 mots**,
+  la France entière, où prier.
+
+Ce ne sont pas les mêmes pages, et **le hreflang partait bien** : vérifié
+servi sur les deux domaines avant toute modification.
+
+Pendant ce temps, « Vacances halal en France : le guide 2026 » — où partir,
+où manger, où prier, la France entière — **n'avait aucun jumeau déclaré**.
+Les deux erreurs se corrigeaient l'une par l'autre. Ré-appairé.
+
+### Le garde-fou
+
+`scripts/test-jumeaux.mjs`, branché dans `npm run build`. Trois propriétés,
+toutes mécaniques : **la cible existe**, **la clé existe**, **c'est une
+bijection**. Et dans la bonne langue de chaque côté.
+
+Ce qu'il ne tient pas, et que j'écris pour ne pas me croire couvert : **il ne
+juge pas si les deux pages parlent du même sujet.** Le défaut n° 1 se garde ;
+le défaut n° 2 a demandé de comparer deux titres à la main.
+
+⚠️ Et ce test m'a lui-même piégé une fois : sa première version ne lisait que
+`lib/data.ts` et déclarait **21 cibles inexistantes** — toutes réelles, mais
+rangées dans `lib/guidesEn.ts`. *Une mesure qui accuse tout un bloc d'un coup
+accuse d'abord son instrument.* C'est la troisième fois ce mois-ci.
+
+**Vérifié en réintroduisant la faute** : remis une des trois clés mortes → le
+test casse sur les deux motifs (doublon de cible ET clé morte). Restauré → vert.
+
+### Vérifié servi
+
+Build du 03/10 00:16, `BUILD_ID` contrôlé avant lecture. 47 contrôles verts.
+· `voyage-halal-france` (FR) et `halal-travel-france-2026` (EN) s'annoncent
+  mutuellement, à leur URL finale, sur les deux domaines.
+· `restaurants-halal-paris` : **plus aucun hreflang** — pas de faux jumeau.
+· Les trois guides anglais répondent toujours 200.
