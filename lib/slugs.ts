@@ -41,9 +41,16 @@ export const GUIDES_FR_TO_EN: Record<string, string> = {
   'ramadan-voyage-guide': 'traveling-during-ramadan',
   'omra-2026-guide-complet': 'umrah-2026-complete-guide',
   'malaisie-halal-destination': 'malaysia-halal-destination-guide',
-  'voyage-halal-istanbul-guide-2026': 'istanbul-halal-travel-guide',
-  'voyage-halal-dubai-guide-2026': 'dubai-halal-travel-guide-2026',
-  'voyage-halal-marrakech-guide-2026': 'marrakech-halal-travel-guide',
+  // 3 octobre : trois clés RETIRÉES ici — 'voyage-halal-istanbul-guide-2026',
+  // 'voyage-halal-dubai-guide-2026' et 'voyage-halal-marrakech-guide-2026'.
+  // Aucune de ces trois pages françaises n'existe dans `lib/data.ts`, et
+  // elles n'apparaissent nulle part ailleurs dans le dépôt. Elles faisaient
+  // de chaque guide anglais la traduction déclarée de DEUX pages françaises
+  // (avec istanbul-guide-halal-complet, dubai-guide-halal-2026 et
+  // marrakech-guide-halal, qui existent, elles). Or un hreflang est une
+  // bijection : annoncer deux « versions françaises » de la même page
+  // anglaise fait exactement ce que cette table sert à empêcher — mettre
+  // deux de nos pages en concurrence. `scripts/test-jumeaux.mjs` le garde.
   'top-destinations-halal-2026': 'top-halal-destinations-2026',
   'lune-de-miel-halal': 'halal-honeymoon-guide',
   'trouver-mosquee-en-voyage': 'find-a-mosque-anywhere',
@@ -124,7 +131,15 @@ export const BLOG_FR_TO_EN: Record<string, string> = {
   'top-10-destinations-halal-2026': '/blog/top-10-halal-destinations-2026',
   'horaires-priere-voyage-guide-musulman': '/blog/prayer-times-while-traveling-muslim-guide',
   'voyager-pendant-ramadan-guide-complet': '/guides/traveling-during-ramadan',
-  'restaurants-halal-paris': '/blog/halal-travel-france-2026',
+  // 3 octobre : RÉ-APPAIRÉ. Cette ligne déclarait que « Restaurants halal à
+  // Paris 2026 : par arrondissement » (157 mots, Paris seulement) et « Halal
+  // travel in France: where to pray, city by city » (843 mots, la France
+  // entière) sont la même page en deux langues. Vérifié servi des deux
+  // côtés : le hreflang partait bien. Ce ne sont pas les mêmes pages.
+  // Le vrai pendant français du guide anglais est « Vacances halal en France :
+  // le guide 2026 » — où partir, où manger, où prier — qui, lui, n'avait
+  // aucun jumeau déclaré. Les deux erreurs se corrigeaient l'une par l'autre.
+  'voyage-halal-france': '/blog/halal-travel-france-2026',
   'meilleurs-hotels-halal-istanbul': '/hotels/istanbul',
   // Bloc « manger » (aout 2026)
   'restaurant-vraiment-halal-verifier': '/blog/is-this-restaurant-really-halal',
