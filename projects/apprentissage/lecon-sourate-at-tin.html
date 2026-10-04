@@ -63,18 +63,41 @@
 
     <div class="lecon-tete">
       <span class="lecon-sur">Sourate 95 sur 114</span>
-      <h1 class="t-page">Sourate At-Tin : traduction et texte arabe</h1>
+      <!-- Le meme deux-points insecable que plus bas : a 320 px,
+           « Sourate Al-Mutaffifin : traduction et texte arabe » laissait
+           le deux-points seul en tete de ligne. Le <title> du <head>,
+           lui, garde une espace ordinaire : il n'est pas mis en page,
+           et une entite y compliquerait les controles de longueur. -->
+      <h1 class="t-page">Sourate At-Tin&nbsp;: traduction et texte arabe</h1>
       <p class="lecon-ar" lang="ar" dir="rtl">التين</p>
       <p class="lecon-quoi">La <strong>95e sourate</strong> du Coran,
         <strong>huit versets</strong>. Chaque verset est donné en arabe, puis
         dans la traduction de son sens, avec sa référence.</p>
     </div>
 
+    <!-- L'ESPACE INSECABLE AVANT LES DEUX-POINTS.
+         Mesure du 4 octobre, a 320 px — l'iPhone SE et les Android d'entree
+         de gamme — sur les 55 pages du site : 776 ponctuations doubles, et
+         39 qui tombent SEULES en tete de ligne. Les 39 sont ici, dans cette
+         phrase, sur les 38 lecons :
+
+             Le Coran, c'est l'arabe
+             : une traduction en approche, elle ne le remplace pas.
+
+         Un deux-points orphelin en haut d'une ligne. A 360 px, aucune : le
+         defaut n'apparait que sur le plus petit ecran, celui qu'on ne
+         regarde jamais. C'est la phrase qui dit qu'une traduction ne
+         remplace pas le Coran — celle qu'on a le moins envie de voir mal
+         composee.
+
+         Le reste du site le fait deja dans son HTML ecrit a la main
+         (« Version du site&nbsp;: ») ; cette phrase-la, generee, ne le
+         faisait pas. -->
     <p class="lecon-prudence">La traduction est une <strong>traduction du
       sens</strong>, celle de <strong>Muhammad Hamidullah</strong>. Le Coran,
-      c'est l'arabe : une traduction en approche, elle ne le remplace pas.
-      Cette page ne donne <strong>ni prononciation ni commentaire</strong> —
-      pour l'un comme pour l'autre, adresse-toi à quelqu'un qui enseigne.</p>
+      c'est l'arabe&nbsp;: une traduction en approche, elle ne le remplace
+      pas. Cette page ne donne <strong>ni prononciation ni commentaire</strong>
+      — pour l'un comme pour l'autre, adresse-toi à quelqu'un qui enseigne.</p>
 
     <nav class="vindex" aria-label="Aller à un verset">
       <a href="#verset-1">1</a>
