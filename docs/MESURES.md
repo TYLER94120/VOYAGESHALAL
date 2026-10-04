@@ -2918,3 +2918,70 @@ Build du 03/10 00:16, `BUILD_ID` contrôlé avant lecture. 47 contrôles verts.
   mutuellement, à leur URL finale, sur les deux domaines.
 · `restaurants-halal-paris` : **plus aucun hreflang** — pas de faux jumeau.
 · Les trois guides anglais répondent toujours 200.
+
+## 4 octobre — les quatre parcs : la mesure existait, six pages sur huit l'ignoraient
+
+Jour pair, approfondissement. Le relevé Search Console du 30 août est épuisé
+pour la bande 5-15, donc j'ai repris la méthode qui a marché les 30 septembre
+et 3 octobre : **chercher un écart interne** plutôt que choisir au goût.
+
+### L'écart
+
+La distance au lieu de prière le plus proche a été mesurée le 16 septembre
+pour les quatre parcs. Elle n'a jamais été écrite que sur deux des huit pages
+concernées :
+
+```
+  ou-prier-disneyland-paris       1 172 mots   distance : OUI
+  ou-prier-parc-asterix             380        non
+  ou-prier-puy-du-fou               363        non
+  ou-prier-futuroscope              323        non
+  where-to-pray-disneyland-paris    862        non
+  where-to-pray-parc-asterix        530        non
+  where-to-pray-puy-du-fou          483        non
+  where-to-pray-futuroscope         745        OUI
+```
+
+Le même défaut qu'aux aéroports le 30 septembre : **la donnée existait, mais
+pas là où le lecteur arrive.** Et ici elle manquait sur la page la mieux
+convertie du site — **Parc Astérix, 34,9 % de clics en position 2,8**.
+
+### La mesure
+
+`data/osm/mosquees/fr.json` (1 092 lieux, relevé du 03/09/2026), à vol
+d'oiseau depuis le parc :
+
+```
+  parc                le plus proche   <5 km  <10 km  <15 km
+  Disneyland Paris        5 077 m        0       2       9
+  Futuroscope             8 294 m        0       1       1
+  Puy du Fou             13 855 m        0       0       1
+  Parc Astérix           14 230 m        0       0       5
+```
+
+**Aucun des quatre n'a un lieu de prière à moins de cinq kilomètres.** Le
+Parc Astérix est le plus isolé — rien à moins de dix kilomètres — et c'était
+la page qui n'en disait rien. Chaque section conclut, et chaque page cite les
+trois autres avec leur distance : le lecteur a l'échelle, pas juste un chiffre.
+
+Deux noms seulement sont cités (mosquée Tawba près de Disneyland, mosquée de
+Poitiers) : **nous ne nommons pas ce que la base ne nomme pas**, et le plus
+proche du Puy du Fou est sans nom dans nos données.
+
+### Vérifié servi
+
+Build du 04/10 00:10, `BUILD_ID` contrôlé avant lecture. **6 pages sur 6
+conformes** — 200, le chiffre dans la bonne typographie de chaque langue
+(virgule en français, point en anglais), crédit ODbL présent :
+
+```
+  ou-prier-parc-asterix            380 ->   894 mots
+  ou-prier-puy-du-fou              363 ->   861
+  ou-prier-futuroscope             323 ->   813
+  where-to-pray-disneyland-paris   862 -> 1 341
+  where-to-pray-parc-asterix       530 ->   985
+  where-to-pray-puy-du-fou         483 ->   925
+```
+
+Et **21 liens d'article testés un par un sur les six pages, 0 cassé** — les
+renvois croisés entre parcs répondent dans les deux langues.
