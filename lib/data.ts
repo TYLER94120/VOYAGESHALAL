@@ -2677,6 +2677,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Practical',
     readTime: "3 min",
     publishedAt: '2026-08-01',
+    updatedAt: '2026-10-04',
     lang: 'en',
     tags: ['prayer', 'disneyland', 'paris', 'muslim travel'],
     content: `<p>Spending a day at Disneyland Paris and wondering where to pray? Here is what we know, what we do not, and above all how to plan so you are not stuck between two rides when ʿAsr comes in.</p>
@@ -2709,6 +2710,10 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <h2>At Walt Disney Studios</h2>
 <p>The equivalent guest services point is <strong>Studio Services</strong>, just past the entrance. Same approach, same uncertainty about availability.</p>
 
+<h2>A mosque nearby? Not within 5 km</h2>
+<p>From our OpenStreetMap survey of prayer places in France (1,092 places, surveyed 3 September 2026): the nearest to Disneyland Paris is <strong>5.1 km</strong> away, and there is <strong>nothing within 5 km</strong>. Two places within ten kilometres, nine within fifteen.</p>
+<p>That still makes it the best served of the four French parks we cover — and it is not saying much. Going out to pray means a drive, not a walk, so <strong>what gets settled before you arrive gets settled well</strong>. For comparison: <a href="/blog/where-to-pray-parc-asterix">Parc Astérix</a> (14.2 km), <a href="/blog/where-to-pray-puy-du-fou">Puy du Fou</a> (13.9 km), <a href="/blog/where-to-pray-futuroscope">Futuroscope</a> (8.3 km).</p>
+<p><em>Straight-line distances from the park; by road, count more. Our survey is not exhaustive: a place we do not know about may exist. Prayer place data © OpenStreetMap contributors.</em></p>
 <h2>Frequently asked questions</h2>
 <p><strong>Is there a prayer room at Disneyland Paris?</strong> No official signposted room. Travellers report a quiet space offered on request at City Hall; we have not verified it.<br/>
 <strong>Does it cost anything?</strong> No, requests of this kind are not charged for.<br/>
@@ -2816,6 +2821,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Practical',
     readTime: "3 min",
     publishedAt: '2026-08-31',
+    updatedAt: '2026-10-04',
     lang: 'en',
     tags: ['prayer', 'parc asterix', 'france', 'family', 'muslim travel'],
     content: `<p>A day at Parc Astérix with a prayer window closing? Here is the real situation and what works.</p>
@@ -2839,6 +2845,10 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <h2>Wudu</h2>
 <p>This is the real obstacle, more than the prayer itself. Two habits change everything: filling <strong>a small squeezable bottle</strong> at the basin before going into the cubicle, and keeping a <strong>microfibre towel</strong> in your bag. The full method is in our guide: <a href="/blog/wudu-on-a-plane-or-train">making wudu while travelling</a>.</p>
 
+<h2>A mosque nearby? No — and not close</h2>
+<p>From our OpenStreetMap survey of prayer places in France (1,092 places, surveyed 3 September 2026): the nearest to Parc Astérix is <strong>14.2 km</strong> away, and there is <strong>nothing within ten kilometres</strong>. Five places between ten and fifteen.</p>
+<p>It is the most isolated of the four French parks we cover — Disneyland has two within ten kilometres, Futuroscope one. So going out is not an option: <strong>what gets settled before you arrive gets settled well</strong>, and on site it is the solutions above. For comparison: <a href="/blog/where-to-pray-disneyland-paris">Disneyland Paris</a> (5.1 km), <a href="/blog/where-to-pray-puy-du-fou">Puy du Fou</a> (13.9 km), <a href="/blog/where-to-pray-futuroscope">Futuroscope</a> (8.3 km).</p>
+<p><em>Straight-line distances from the park; by road, count more. Our survey is not exhaustive: a place we do not know about may exist. Prayer place data © OpenStreetMap contributors.</em></p>
 <h2>Frequently asked questions</h2>
 <p><strong>Is there a prayer room at Parc Astérix?</strong> Not to our knowledge — ask staff for a quiet space.<br/>
 <strong>Where can I make wudu?</strong> At the park toilets; a small kit in your bag helps.<br/>
@@ -2909,6 +2919,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Practical',
     readTime: "3 min",
     publishedAt: '2026-08-31',
+    updatedAt: '2026-10-04',
     lang: 'en',
     tags: ['prayer', 'puy du fou', 'france', 'family', 'muslim travel'],
     content: `<p>Puy du Fou is visited to the rhythm of its shows — and fitting prayers around them takes a little planning. Here is how to do it simply.</p>
@@ -2932,6 +2943,10 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <h2>The prayer that causes trouble</h2>
 <p>It is Maghrib. In summer it falls in the middle of the evening programme; the window is short and you may be seated in a show. Checking the day's times <em>in the morning</em> rather than when the call arrives is the habit that fixes it.</p>
 
+<h2>A mosque nearby? No</h2>
+<p>From our OpenStreetMap survey of prayer places in France (1,092 places, surveyed 3 September 2026): the nearest to Puy du Fou is <strong>13.9 km</strong> away, out towards Pouzauges, and there is <strong>nothing within ten kilometres</strong>. Only one place within fifteen.</p>
+<p>The park sits in open Vendée countryside, and the numbers say so. Going out would cost half an hour of driving on a Cinéscénie evening: <strong>what gets settled before you arrive gets settled well</strong>. For comparison: <a href="/blog/where-to-pray-disneyland-paris">Disneyland Paris</a> (5.1 km), <a href="/blog/where-to-pray-parc-asterix">Parc Astérix</a> (14.2 km), <a href="/blog/where-to-pray-futuroscope">Futuroscope</a> (8.3 km).</p>
+<p><em>Straight-line distances from the park; by road, count more. Our survey is not exhaustive: a place we do not know about may exist. Prayer place data © OpenStreetMap contributors.</em></p>
 <h2>Frequently asked questions</h2>
 <p><strong>Is there an official prayer room?</strong> Not to our knowledge — quiet corners and helpful staff do the job.<br/>
 <strong>Where can I make wudu?</strong> At the park's washrooms.<br/>
@@ -3175,13 +3190,17 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Pratique',
     readTime: "3 min",
     publishedAt: '2026-08-06',
-    updatedAt: '2026-10-02',
+    updatedAt: '2026-10-04',
     content: `<p>Journée au Parc Astérix et l'heure de la prière approche ? Voici la situation réelle et les solutions qui marchent.</p>
 <h2>L'essentiel en 30 secondes</h2><p>À notre connaissance, le Parc Astérix ne dispose pas de salle de prière officielle. Les solutions : demander un espace calme aux services visiteurs, utiliser un coin tranquille du parc (zones pique-nique, pelouses en retrait), ou la voiture au parking. Avec <a href="/horaires-priere">les horaires du jour</a> regardés le matin, une pause bien placée suffit souvent.</p>
 <h2>1. Demande aux services visiteurs</h2><p>Comme à <a href="/blog/ou-prier-disneyland-paris">Disneyland (où ça fonctionne très bien)</a>, le bon réflexe est de demander poliment à l'accueil ou à un membre du personnel un endroit calme et discret. Le personnel des parcs est habitué aux demandes particulières.</p>
 <h2>2. Repère un coin calme</h2><p>Les zones de pique-nique et les allées en retrait des grandes attractions sont vos alliées, surtout en début d'après-midi quand tout le monde est dans les files. Petit tapis de poche, orientation avec <a href="/qibla">notre outil qibla</a>, et c'est réglé.</p>
 <h2>3. La voiture au parking</h2><p>Si tu es venu en voiture, elle reste une option en arrivant ou en repartant. Pour une sortie temporaire en cours de journée, vérifie les conditions de ré-entrée à l'accueil avant de sortir.</p>
 <h2>4. Caler la pause sur la journée</h2><p>Si tu viens de loin, une seule pause bien placée dans l’après-midi réduit la journée à une seule pause prière — consulte <a href="/horaires-priere">les horaires du jour</a> pour bien la placer.</p>
+<h2>Et une mosquée dans le coin ? Non, et de loin</h2>
+<p>C'est la question qui vient ensuite, et la réponse ici est nette. Relevé dans notre base OpenStreetMap des lieux de prière en France (1 092 lieux, relevé du 3 septembre 2026) : le plus proche du Parc Astérix est à <strong>14,2 km</strong>. <strong>Rien dans un rayon de dix kilomètres.</strong> Cinq lieux entre dix et quinze kilomètres.</p>
+<p>C'est le parc le plus isolé des quatre que nous couvrons — Disneyland a deux lieux à moins de dix kilomètres, le Futuroscope un. Sortir prier n'est donc pas une option : <strong>ce qui se règle avant de venir se règle bien</strong>, et sur place ce sont les solutions ci-dessus. Pour comparer : <a href="/blog/ou-prier-disneyland-paris">Disneyland Paris</a> (5,1 km), <a href="/blog/ou-prier-puy-du-fou">Puy du Fou</a> (13,9 km), <a href="/blog/ou-prier-futuroscope">Futuroscope</a> (8,3 km).</p>
+<p><em>Distances à vol d'oiseau depuis le parc ; par la route, compte davantage. Relevé non exhaustif : un lieu que nous ne connaissons pas peut exister. Données © les contributeurs OpenStreetMap.</em></p>
 <h2>Questions fréquentes</h2><p><strong>Salle de prière officielle au Parc Astérix ?</strong> Pas à notre connaissance — demande un espace calme au personnel.<br/><strong>Les ablutions ?</strong> Aux toilettes du parc, un petit nécessaire dans le sac aide.<br/><strong>Le plus simple ?</strong> Viser un créneau calme, avec les horaires du jour regardés le matin.</p>
 <h2>Aide la communauté</h2><p>On t'a indiqué un endroit précis au Parc Astérix, ou tu as un bon spot testé ? Partage-le — une sadaqa jâriya pour toutes les familles. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
   },
@@ -3194,13 +3213,17 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Pratique',
     readTime: "3 min",
     publishedAt: '2026-08-06',
-    updatedAt: '2026-10-02',
+    updatedAt: '2026-10-04',
     content: `<p>Le Puy du Fou se visite au rythme des spectacles — et caser ses prières demande un peu d'organisation. Voici comment faire simplement.</p>
 <h2>L'essentiel en 30 secondes</h2><p>Pas de salle de prière officielle à notre connaissance. Mais le parc est vaste et boisé : les coins calmes ne manquent pas entre les villages d'époque. Ajoute une bonne lecture du programme des spectacles, et tout tient.</p>
 <h2>1. Planifie autour des spectacles</h2><p>Le piège du Puy du Fou, c'est l'enchaînement des horaires de spectacles. Dès l'arrivée, compare le programme du jour avec <a href="/horaires-priere">les horaires de prière</a> et repère ton créneau — souvent en début d'après-midi ou entre deux grands shows.</p>
 <h2>2. Trouve ton coin tranquille</h2><p>Entre les bourgs reconstitués, les sous-bois et les allées secondaires, les espaces calmes sont nombreux. Un tapis de poche, <a href="/qibla">l'outil qibla</a>, et une orientation discrète : personne n'y prête attention.</p>
 <h2>3. Demande au personnel</h2><p>À l'accueil ou auprès d'un membre du personnel, demande un endroit calme — la démarche est simple et bien accueillie dans la plupart des grands parcs. Si tu loges dans un hôtel du parc, ta chambre règle la question du soir et du matin.</p>
 <h2>4. Caler les prières sur les spectacles</h2><p>Le piège, c’est la Cinéscénie, qui finit tard. Regarde <a href="/horaires-priere">les horaires du jour</a> dès l’arrivée : ce sont eux qui décident du moment où tu t’arrêtes, et une pause placée avant le spectacle plutôt qu’après change toute la soirée.</p>
+<h2>Et une mosquée dans le coin ? Non</h2>
+<p>Relevé dans notre base OpenStreetMap des lieux de prière en France (1 092 lieux, relevé du 3 septembre 2026) : le plus proche du Puy du Fou est à <strong>13,9 km</strong>, du côté de Pouzauges, et <strong>il n'y a rien dans un rayon de dix kilomètres</strong>. Un seul lieu à moins de quinze.</p>
+<p>Le parc est en pleine campagne vendéenne, et ça s'entend dans les chiffres. Sortir prier coûterait une demi-heure de route aller-retour, un soir de Cinéscénie : <strong>ce qui se règle avant de venir se règle bien</strong>. Pour comparer : <a href="/blog/ou-prier-disneyland-paris">Disneyland Paris</a> (5,1 km), <a href="/blog/ou-prier-parc-asterix">Parc Astérix</a> (14,2 km), <a href="/blog/ou-prier-futuroscope">Futuroscope</a> (8,3 km).</p>
+<p><em>Distances à vol d'oiseau depuis le parc ; par la route, compte davantage. Relevé non exhaustif : un lieu que nous ne connaissons pas peut exister. Données © les contributeurs OpenStreetMap.</em></p>
 <h2>Questions fréquentes</h2><p><strong>Salle officielle ?</strong> Pas à notre connaissance — coins calmes et personnel bienveillant font l'affaire.<br/><strong>Ablutions ?</strong> Aux sanitaires du parc.<br/><strong>Avec la Cinéscénie le soir ?</strong> Le spectacle finit tard : regarde l’heure de maghrib avant de t’installer.</p>
 <h2>Aide la communauté</h2><p>Tu as un bon spot au Puy du Fou ou une info du personnel ? Partage — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
   },
@@ -3213,13 +3236,17 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Pratique',
     readTime: "3 min",
     publishedAt: '2026-08-06',
-    updatedAt: '2026-10-02',
+    updatedAt: '2026-10-04',
     content: `<p>Journée au Futuroscope en famille ? Voici comment gérer les prières sans stress dans le parc poitevin.</p>
 <h2>L'essentiel en 30 secondes</h2><p>Pas de salle de prière officielle à notre connaissance. Les solutions : les espaces verts et coins calmes du parc, une demande à l'accueil, ou la voiture — le parking est juste à côté de l'entrée, un vrai plus ici. Les hôtels du parc, à quelques minutes à pied, simplifient tout pour ceux qui dorment sur place.</p>
 <h2>1. L'atout du Futuroscope : le parking tout proche</h2><p>Contrairement à d'autres parcs, la voiture est à quelques minutes de l'entrée. En milieu de journée, un aller-retour discret au parking est la solution la plus simple — vérifie juste les conditions de ré-entrée à l'accueil.</p>
 <h2>2. Coins calmes dans le parc</h2><p>Les pelouses et zones en retrait des pavillons offrent des espaces tranquilles, surtout pendant les grandes séances. Tapis de poche + <a href="/qibla">outil qibla</a> = affaire réglée.</p>
 <h2>3. Demande à l'accueil</h2><p>Le personnel peut t'indiquer un espace calme — la demande est courante et bien reçue. Si tu loges dans un des hôtels attenants, ta chambre couvre fajr et les prières du soir.</p>
 <h2>4. Caler la pause sur la journée</h2><p>Avec <a href="/horaires-priere">les horaires du jour</a>, place une pause unique dhuhr+asr — et regarde l’heure de maghrib avant de t’installer pour le spectacle nocturne.</p>
+<h2>Et une mosquée dans le coin ? Pas à pied</h2>
+<p>Relevé dans notre base OpenStreetMap des lieux de prière en France (1 092 lieux, relevé du 3 septembre 2026) : <strong>rien dans un rayon de cinq kilomètres</strong> du parc. Un seul lieu à moins de dix — la mosquée de Poitiers, à <strong>8,3 km</strong>. Le suivant est à 20 km.</p>
+<p>« Je trouverai une mosquée à côté » n'est donc pas un plan ici : c'est un aller-retour en voiture au milieu d'une journée payée. À savoir <em>avant</em> d'arriver, pas à l'heure de dhuhr. Pour comparer : <a href="/blog/ou-prier-disneyland-paris">Disneyland Paris</a> (5,1 km), <a href="/blog/ou-prier-parc-asterix">Parc Astérix</a> (14,2 km), <a href="/blog/ou-prier-puy-du-fou">Puy du Fou</a> (13,9 km).</p>
+<p><em>Distances à vol d'oiseau depuis le parc ; par la route, compte davantage. Relevé non exhaustif : un lieu que nous ne connaissons pas peut exister. Données © les contributeurs OpenStreetMap.</em></p>
 <h2>Questions fréquentes</h2><p><strong>Salle officielle ?</strong> Pas à notre connaissance.<br/><strong>Meilleure option ?</strong> La voiture (parking proche) ou un coin calme.<br/><strong>Ablutions ?</strong> Sanitaires du parc, nécessaire de poche recommandé.</p>
 <h2>Aide la communauté</h2><p>Un spot testé au Futuroscope, une info fraîche ? Partage-la — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
   },
