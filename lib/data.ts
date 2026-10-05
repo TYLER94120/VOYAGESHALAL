@@ -3992,6 +3992,113 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <h2>Aide la communauté</h2><p>Tu connais un centre commercial avec salle de prière (ou un bon coin discret) ? Introuvable sur Maps, Partage-le — une sadaqa jâriya. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
   },
   {
+    slug: "pourquoi-aucune-carte-ne-montre-salle-priere-aeroport",
+    title: "Pourquoi aucune carte ne montre la salle de prière",
+    description: "Relevé sur 10 grands aéroports : 90 lieux de prière cartographiés autour, zéro à l'intérieur des terminaux. Ce que ça dit, et comment chercher autrement.",
+    coverImage: "/guides/blog-aeroport.jpg",
+    category: 'Pratique',
+    readTime: "5 min",
+    publishedAt: '2026-10-05',
+    updatedAt: '2026-10-05',
+    tags: ["Aéroports", "Prière", "Pratique", "Méthode"],
+    content: `<p>Tu es dans un terminal, l'heure tourne, tu ouvres l'application de cartes — et il n'y a rien. Ce n'est pas toi qui cherches mal. Nous avons mesuré, et le résultat explique tout.</p>
+
+<h2>Le relevé</h2>
+<p>Notre base <strong>data/airports/prayer-rooms.json</strong> interroge OpenStreetMap autour de dix grands aéroports internationaux (relevé du 5 septembre 2026). Voici ce qu'elle trouve :</p>
+<table><thead><tr><th>Aéroport</th><th>Lieux relevés autour</th><th>Dont à l'intérieur</th><th>Le plus proche</th></tr></thead><tbody>
+<tr><td>Dubaï (DXB)</td><td><strong>68</strong></td><td><strong>0</strong></td><td>1 353 m</td></tr>
+<tr><td>Londres-Heathrow (LHR)</td><td>6</td><td><strong>0</strong></td><td>2 319 m</td></tr>
+<tr><td>Kuala Lumpur (KUL)</td><td>5</td><td><strong>0</strong></td><td>1 349 m</td></tr>
+<tr><td>Londres-Gatwick (LGW)</td><td>3</td><td><strong>0</strong></td><td>2 569 m</td></tr>
+<tr><td>Djeddah (JED)</td><td>3</td><td><strong>0</strong></td><td>2 038 m</td></tr>
+<tr><td>New York-JFK (JFK)</td><td>2</td><td><strong>0</strong></td><td>3 755 m</td></tr>
+<tr><td>Istanbul (IST)</td><td>1</td><td><strong>0</strong></td><td>2 445 m</td></tr>
+<tr><td>Doha (DOH)</td><td>1</td><td><strong>0</strong></td><td>2 120 m</td></tr>
+<tr><td>Amsterdam (AMS)</td><td>1</td><td><strong>0</strong></td><td>3 995 m</td></tr>
+<tr><td>Singapour (SIN)</td><td>0</td><td><strong>0</strong></td><td>—</td></tr>
+</tbody></table>
+<p><strong>90 lieux de prière cartographiés autour de ces dix aéroports. Zéro à l'intérieur d'un terminal.</strong></p>
+
+<h2>Ce que ce zéro dit — et ce qu'il ne dit pas</h2>
+<p>Voici le point important, et il faut le dire franchement : <strong>ce zéro ne veut pas dire que ces aéroports n'ont pas de salle de prière.</strong> Djeddah est l'aéroport du pèlerinage. Istanbul, Dubaï, Kuala Lumpur sont dans des pays musulmans. Il serait absurde d'en conclure quoi que ce soit sur ces bâtiments.</p>
+<p>Ce zéro dit quelque chose sur <strong>les cartes</strong>, pas sur les aéroports. OpenStreetMap — comme les autres fonds de carte — cartographie très bien <em>les mosquées de ville</em> : un bâtiment, une adresse, une entrée sur la rue. Il cartographie très mal <em>une pièce à l'intérieur d'un bâtiment privé</em> : il faudrait qu'un contributeur entre dans la zone d'embarquement, relève la pièce, et la saisisse avec les bons attributs. Presque personne ne le fait.</p>
+<p>D'où la conclusion pratique : <strong>l'absence sur la carte n'est pas une information sur le lieu.</strong> C'est une information sur ce que la carte couvre.</p>
+
+<h2>Pourquoi ça change ta façon de chercher</h2>
+<p>Si tu attends de l'application qu'elle te réponde, tu perds dix minutes et tu finis par croire qu'il n'y a rien. Trois conséquences concrètes :</p>
+<p><strong>1. À l'intérieur, demande — ne cherche pas sur un écran.</strong> Le comptoir d'information et les agents de sécurité connaissent le bâtiment mieux que n'importe quelle base de données. C'est la seule source à jour.</p>
+<p><strong>2. Emploie les mots du bâtiment.</strong> En France, demande <strong>« un lieu de culte »</strong> ou <strong>« une salle de recueillement »</strong> plutôt qu'une « salle de prière » : c'est le vocabulaire de la signalétique, et il obtient une réponse au lieu d'un haussement d'épaules. En anglais, <em>quiet room</em> ou <em>multi-faith room</em> marchent mieux que <em>prayer room</em> dans beaucoup d'aéroports européens.</p>
+<p><strong>3. Pour l'extérieur, en revanche, la carte est excellente.</strong> C'est exactement l'inverse : les mosquées alentour, elle les connaît. <a href="/mosquee-proche">Notre outil mosquée la plus proche</a> s'appuie sur ces données-là, qui sont bonnes. Mais regarde la colonne « le plus proche » ci-dessus : <strong>1,3 km au mieux</strong>, et souvent plus de 2 km. Sortir d'un terminal pour y aller n'est jamais une promenade.</p>
+
+<h2>Ce que nous faisons de ce constat sur ce site</h2>
+<p>Nous ne publions pas une salle de prière que nous n'avons pas vérifiée — c'est la règle de la maison, et ce relevé montre pourquoi elle compte : une base de données silencieuse n'est pas une base de données qui dit non. Nos guides par aéroport disent donc, à chaque fois, <strong>d'où vient l'information et ce que nous ignorons</strong>.</p>
+<p>Et quand nous mesurons une distance jusqu'à une mosquée alentour, c'est avec ces données-là, en l'annonçant comme telles : <a href="/blog/ou-prier-aeroports">notre guide des salles de prière en aéroport</a> en donne le tableau pour huit aéroports européens.</p>
+
+<h2>Questions fréquentes</h2>
+<p><strong>Mon application ne montre rien, il n'y a donc pas de salle ?</strong> Non — c'est précisément la confusion que ce relevé défait. Zéro sur la carte ne veut pas dire zéro dans le terminal.<br/>
+<strong>Et les applications spécialisées ?</strong> Elles s'appuient souvent sur les mêmes fonds de carte, plus des contributions d'utilisateurs. Utiles, mais sujettes au même angle mort.<br/>
+<strong>Quel est le réflexe le plus fiable ?</strong> Le comptoir d'information, avec les mots de la signalétique.</p>
+
+<h2>Aide la communauté</h2>
+<p>Tu as trouvé une salle de prière dans un terminal ? <strong>Dis-nous dans quel aéroport, quel terminal, et de quel côté des contrôles.</strong> C'est exactement l'information qu'aucune carte ne contient. <a href="/communaute/ajouter">→ Ajouter le lieu</a></p>
+
+<p><em>Relevé du 5 septembre 2026 sur dix aéroports, données © les contributeurs OpenStreetMap. Distances à vol d'oiseau depuis le point de référence de l'aéroport. Un relevé n'est pas un inventaire : il dit ce qui est cartographié, pas ce qui existe.</em></p>`,
+  },
+  {
+    slug: "why-no-map-shows-airport-prayer-rooms",
+    title: "Why no map shows the airport prayer room",
+    description: "We checked 10 major airports: 90 prayer places mapped around them, zero inside the terminals. What that proves, and how to search instead.",
+    coverImage: "/guides/blog-aeroport.jpg",
+    category: 'Practical',
+    readTime: "5 min",
+    publishedAt: '2026-10-05',
+    updatedAt: '2026-10-05',
+    lang: 'en',
+    tags: ['airport', 'prayer', 'method', 'muslim travel'],
+    content: `<p>You are in a terminal, the window is closing, you open the maps app — and there is nothing. You are not searching badly. We measured it, and the result explains everything.</p>
+
+<h2>The survey</h2>
+<p>Our dataset <strong>data/airports/prayer-rooms.json</strong> queries OpenStreetMap around ten major international airports (surveyed 5 September 2026). Here is what it finds:</p>
+<table><thead><tr><th>Airport</th><th>Places mapped around</th><th>Of which indoor</th><th>Nearest</th></tr></thead><tbody>
+<tr><td>Dubai (DXB)</td><td><strong>68</strong></td><td><strong>0</strong></td><td>1,353 m</td></tr>
+<tr><td>London Heathrow (LHR)</td><td>6</td><td><strong>0</strong></td><td>2,319 m</td></tr>
+<tr><td>Kuala Lumpur (KUL)</td><td>5</td><td><strong>0</strong></td><td>1,349 m</td></tr>
+<tr><td>London Gatwick (LGW)</td><td>3</td><td><strong>0</strong></td><td>2,569 m</td></tr>
+<tr><td>Jeddah (JED)</td><td>3</td><td><strong>0</strong></td><td>2,038 m</td></tr>
+<tr><td>New York JFK</td><td>2</td><td><strong>0</strong></td><td>3,755 m</td></tr>
+<tr><td>Istanbul (IST)</td><td>1</td><td><strong>0</strong></td><td>2,445 m</td></tr>
+<tr><td>Doha (DOH)</td><td>1</td><td><strong>0</strong></td><td>2,120 m</td></tr>
+<tr><td>Amsterdam (AMS)</td><td>1</td><td><strong>0</strong></td><td>3,995 m</td></tr>
+<tr><td>Singapore (SIN)</td><td>0</td><td><strong>0</strong></td><td>—</td></tr>
+</tbody></table>
+<p><strong>90 prayer places mapped around these ten airports. Zero inside a terminal.</strong></p>
+
+<h2>What that zero means — and what it does not</h2>
+<p>Here is the important part, said plainly: <strong>that zero does not mean these airports have no prayer room.</strong> Jeddah is the hajj airport. Istanbul, Dubai and Kuala Lumpur are in Muslim-majority countries. It would be absurd to conclude anything about those buildings.</p>
+<p>The zero says something about <strong>maps</strong>, not about airports. OpenStreetMap — like every other basemap — is very good at <em>city mosques</em>: a building, an address, a door onto the street. It is very bad at <em>a room inside a private building</em>: a contributor would have to walk into the departures area, survey the room and tag it correctly. Almost nobody does.</p>
+<p>Hence the practical conclusion: <strong>absence from a map is not information about the place.</strong> It is information about what the map covers.</p>
+
+<h2>Why this changes how you search</h2>
+<p>If you expect the app to answer, you lose ten minutes and end up believing there is nothing. Three concrete consequences:</p>
+<p><strong>1. Inside, ask — do not search a screen.</strong> The information desk and the security staff know the building better than any database, and they are the only source that is current.</p>
+<p><strong>2. Use the building's own words.</strong> In many European airports, <em>quiet room</em> or <em>multi-faith room</em> gets an answer where <em>prayer room</em> gets a blank look. In France, ask for <strong>« un lieu de culte »</strong> or <strong>« une salle de recueillement »</strong> — that is what the signage says.</p>
+<p><strong>3. For outside, by contrast, the map is excellent.</strong> It is exactly the other way round: the mosques around an airport, it knows. <a href="/mosque-near-me">Our nearest-mosque tool</a> runs on that data, which is good. But look at the "nearest" column above: <strong>1.3 km at best</strong>, and usually over 2 km. Leaving a terminal for one is never a stroll.</p>
+
+<h2>What we do with this on this site</h2>
+<p>We do not publish a prayer room we have not verified — that is the house rule, and this survey shows why it matters: <strong>a silent database is not a database saying no.</strong> So our airport guides always say where the information comes from and what we do not know.</p>
+<p>And when we measure a distance to a mosque nearby, it is with this data, announced as such: <a href="/blog/where-to-pray-paris-airports">our guide to airport prayer rooms</a> has the table for eight European airports.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>My app shows nothing, so there is no room?</strong> No — that is exactly the confusion this survey undoes. Zero on the map does not mean zero in the terminal.<br/>
+<strong>What about specialised apps?</strong> They often run on the same basemaps plus user contributions. Useful, but subject to the same blind spot.<br/>
+<strong>What is the most reliable move?</strong> The information desk, using the words on the signage.</p>
+
+<h2>Help the community</h2>
+<p>Found a prayer room inside a terminal? <strong>Tell us which airport, which terminal, and which side of security.</strong> That is precisely the information no map holds. <a href="/communaute/ajouter">→ Add the place</a></p>
+
+<p><em>Surveyed 5 September 2026 across ten airports; prayer place data © OpenStreetMap contributors. Straight-line distances from the airport reference point. A survey is not an inventory: it says what is mapped, not what exists.</em></p>`,
+  },
+  {
     slug: "ou-prier-aeroports",
     title: "Salle de prière en aéroport : 8 aéroports détaillés (2026)",
     description: "CDG, Orly, Lyon, Nice, Marseille, Toulouse, Genève, Bruxelles : où se trouve la salle de prière de chaque aéroport, avant ou après les contrôles.",

@@ -76,6 +76,15 @@ export const BLOG_FR_TO_EN: Record<string, string> = {
   'ou-prier-aeroport-bruxelles': '/blog/where-to-pray-brussels-airport',
   'prier-en-train': '/blog/praying-on-a-train',
   'ou-prier-aeroports': '/blog/where-to-pray-paris-airports',
+  // 5 octobre. Article écrit depuis NOS DONNÉES (gisement n° 2) :
+  // `data/airports/prayer-rooms.json` relève 90 lieux de prière autour de dix
+  // grands aéroports et **zéro à l'intérieur d'un terminal** — Djeddah et
+  // Istanbul compris. Le sujet n'est donc pas « ces aéroports n'ont pas de
+  // salle » (ce serait faux et nous ne l'écrivons pas) mais « l'absence sur
+  // une carte n'est pas une information sur le lieu ». Personne n'écrit ça,
+  // et ça justifie la méthode que nos guides emploient déjà.
+  // Les deux langues publiées ensemble — leçon des 27 et 28 septembre.
+  'pourquoi-aucune-carte-ne-montre-salle-priere-aeroport': '/blog/why-no-map-shows-airport-prayer-rooms',
   'ou-prier-gares-paris': '/blog/where-to-pray-paris-stations',
   // 31 août : les deux pages qui convertissent le MIEUX du site n'avaient
   // aucune version anglaise. Relevé 3 mois, voyageshalal.fr :
