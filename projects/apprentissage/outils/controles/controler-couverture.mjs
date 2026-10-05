@@ -44,6 +44,7 @@
    ========================================================================== */
 
 import { chromium } from 'playwright-core';
+import { brancherPolices, attendrePolices } from './polices.mjs';
 
 const EXE = '/opt/pw-browsers/chromium-1194/chrome-linux/chrome';
 const BASE = 'http://127.0.0.1:8899/section/';
@@ -82,10 +83,14 @@ for (const avecJS of [true, false]) {
      n'etait pas ecrit, et ca ne tombait pas toujours au meme instant. */
   await c.route('**', (r) => (r.request().url().startsWith('http://127.0.0.1:8899')
     ? r.continue() : r.abort()));
+  // Les largeurs de pastille se mesurent avec Marcellus et Source Sans 3, pas
+  // avec la police de secours : 19 % d'ecart sur la largeur d'un mot.
+  await brancherPolices(c);
 
   for (const slug of [PLEINE, COURTE, VIDE, GROSSE]) {
     const p = await c.newPage();
     await p.goto(BASE + slug, { waitUntil: 'load' });
+    await attendrePolices(p);
     await p.waitForTimeout(500);
 
     const r = await p.evaluate(() => {
@@ -181,8 +186,13 @@ for (const avecJS of [true, false]) {
 // lus dans le meme index ; ils doivent s'ecrire pareil.
 {
   const c = await navigateur.newContext({ viewport: { width: 390, height: 844 } });
+  // Ce bloc ne lit que du texte, mais il tourne avec les memes polices que le
+  // reste : un contexte sans elles mesure autre chose que le precedent, et le
+  // garde-fou l'a signale des la premiere execution.
+  await brancherPolices(c);
   const p = await c.newPage();
   await p.goto(`http://127.0.0.1:8899/section/${GROSSE}/qcm`, { waitUntil: 'networkidle' });
+  await attendrePolices(p);
   await p.waitForSelector('.niveau');
   await p.waitForTimeout(400);
   const bruts = await p.evaluate(() =>

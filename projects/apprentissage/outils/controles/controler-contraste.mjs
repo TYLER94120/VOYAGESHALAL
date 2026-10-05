@@ -16,6 +16,7 @@
  *
  * Verdict par code de sortie. */
 import { chromium } from 'playwright-core';
+import { brancherPolices, attendrePolices } from './polices.mjs';
 const B = 'http://127.0.0.1:8899';
 let ec = 0;
 const rate = (m,d) => { console.log('  ECHEC  '+m+(d?'  -> '+d:'')); ec++; };
@@ -34,6 +35,7 @@ const PAGES = [
 const nav = await chromium.launch({ executablePath:'/opt/pw-browsers/chromium-1194/chrome-linux/chrome', args:['--no-sandbox'] });
 const ctx = await nav.newContext({ viewport:{width:390,height:844}, isMobile:true, hasTouch:true });
 await ctx.route('**', (r) => r.request().url().startsWith(B) ? r.continue() : r.abort());
+await brancherPolices(ctx);
 const p = await ctx.newPage();
 const err = []; p.on('pageerror', (e) => err.push(e.message));
 
@@ -142,6 +144,7 @@ const tropClair = [], sousSeuil = [], signales = [];
 
 for (const url of PAGES) {
   await p.goto(B + url, { waitUntil: 'domcontentloaded' });
+  await attendrePolices(p);
   await p.waitForTimeout(900);
   const mesures = await p.evaluate(MESURE);
   vus += mesures.length;

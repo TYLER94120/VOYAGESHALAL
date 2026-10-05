@@ -2,6 +2,7 @@
  * Verifie les points de la recette (section 13) qui concernent le jeu.
  * Verdict par code de sortie. */
 import { chromium } from 'playwright-core';
+import { brancherPolices, attendrePolices } from './polices.mjs';
 
 const B = 'http://127.0.0.1:8899';
 let echecs = 0;
@@ -18,8 +19,10 @@ const ctx = await nav.newContext({
 await ctx.route('**', (r) => {
   const u = r.request().url();
   if (u.startsWith(B)) return r.continue();
-  return r.abort();   // pas de polices distantes : le test ne depend pas du reseau
+  return r.abort();   // rien ne sort : le test ne depend pas du reseau
 });
+// Les vraies polices, servies du disque : le reseau reste coupe.
+await brancherPolices(ctx);
 const p = await ctx.newPage();
 const erreurs = [];
 p.on('pageerror', (e) => erreurs.push(e.message));
@@ -34,6 +37,7 @@ p.on('pageerror', (e) => erreurs.push(e.message));
    donc le melange : la premiere carte est toujours la meme, et un rouge veut
    enfin dire qu'une chose a casse. */
 await p.goto(B + '/qcm.html?section=sens-des-sourates&n=20', { waitUntil: 'domcontentloaded' });
+await attendrePolices(p);
 await p.evaluate(() => {
   localStorage.clear();
   localStorage.setItem('ipap.v1', JSON.stringify({ reglages: { melanger: false } }));

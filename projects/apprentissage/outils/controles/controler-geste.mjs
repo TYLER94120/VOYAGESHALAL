@@ -5,6 +5,7 @@
  *
  * Teste au doigt (390) ET a la souris (1280). Verdict par code de sortie. */
 import { chromium } from 'playwright-core';
+import { brancherPolices, attendrePolices } from './polices.mjs';
 const B = 'http://127.0.0.1:8899';
 let ec = 0;
 const rate = (m,d) => { console.log('  ECHEC  '+m+(d?'  -> '+d:'')); ec++; };
@@ -14,9 +15,11 @@ const nav = await chromium.launch({ executablePath:'/opt/pw-browsers/chromium-11
 for (const [w,h,mob,nom] of [[390,844,true,'telephone'],[1280,900,false,'bureau']]) {
   const ctx = await nav.newContext({ viewport:{width:w,height:h}, isMobile:mob, hasTouch:mob });
   await ctx.route('**', (r) => r.request().url().startsWith(B) ? r.continue() : r.abort());
+  await brancherPolices(ctx);
   const p = await ctx.newPage();
   const err=[]; p.on('pageerror',(e)=>err.push(e.message));
   await p.goto(B+'/qcm.html?section=sens-des-sourates&n=20', { waitUntil:'domcontentloaded' });
+  await attendrePolices(p);
   await p.evaluate(() => localStorage.clear());
   await p.reload({ waitUntil:'domcontentloaded' });
   await p.waitForSelector('.reponse');

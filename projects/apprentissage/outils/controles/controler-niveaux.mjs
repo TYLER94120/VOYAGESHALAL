@@ -1,18 +1,21 @@
 /* LES TROIS NIVEAUX : sont-ils choisissables, et changent-ils vraiment le
  * paquet ? Un mode qui n existe qu a l ecran ne sert a rien. */
 import { chromium } from 'playwright-core';
+import { brancherPolices, attendrePolices } from './polices.mjs';
 const B = 'http://127.0.0.1:8899';
 let ec = 0;
 const rate=(m,d)=>{console.log('  ECHEC  '+m+(d?'  -> '+d:''));ec++;};
 const ok=(m,d)=>console.log('  ok     '+m+(d?'  -> '+d:''));
 const nav = await chromium.launch({ executablePath:'/opt/pw-browsers/chromium-1194/chrome-linux/chrome', args:['--no-sandbox'] });
 const ctx = await nav.newContext({ viewport:{width:390,height:900}, isMobile:true, hasTouch:true, deviceScaleFactor:2 });
-await ctx.route('**', (r) => { const u=r.request().url();
-  return (u.startsWith(B) || /fonts\.(googleapis|gstatic)\.com/.test(u)) ? r.continue() : r.abort(); });
+// Les polices ne sortent plus vers Google : elles n'y arrivaient jamais.
+await ctx.route('**', (r) => (r.request().url().startsWith(B) ? r.continue() : r.abort()));
+await brancherPolices(ctx);
 const p = await ctx.newPage();
 const err=[]; p.on('pageerror',(e)=>err.push(e.message));
 
 await p.goto(B+'/section/sens-des-sourates/qcm', { waitUntil:'domcontentloaded' });
+await attendrePolices(p);
 await p.evaluate(() => localStorage.clear());
 await p.reload({ waitUntil:'domcontentloaded' });
 await p.waitForSelector('.niveau');

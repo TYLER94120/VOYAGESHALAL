@@ -25,7 +25,7 @@ installation existante. Le navigateur est celui du poste
 |---|---|
 | `controler-geste.mjs` | le geste vertical : haut valide, bas passe, le lateral ne fait rien, on attrape la carte depuis une reponse sans la choisir, les deux boutons du pied, le clavier |
 | `controler-defilement.mjs` | sur une carte longue : le glissement lit d'abord et ne lance qu'une fois en bas ; le signe « il y en a plus » apparait et disparait au bon moment |
-| `controler-cadrage.mjs` | les questions de toutes les sections, a quatre largeurs d'ecran : aucune carte ne deborde, chaque reponse est atteignable, les cibles font 44 px |
+| `controler-cadrage.mjs` | les questions de toutes les sections, a **cinq** largeurs d'ecran — 320 ajoute le 5 octobre : aucune carte ne deborde, chaque reponse est atteignable, les cibles font 44 px |
 | `controler-geometrie.mjs` | cahier V2 §3 : les douze rosaces portent leurs (branches, ratio), une etoile a n branches a 2n sommets, la tuile se raccorde par construction, et les opacites arrivent a l'ecran a la valeur pres |
 | `controler-niveaux.mjs` | les trois niveaux existent, sont choisissables, et FILTRENT vraiment le paquet — un mode qui n'existe qu'a l'ecran ne sert a rien |
 | `controler-photo.mjs` | le type photo dans les deux sens : avec un catalogue complet la question se joue, avec un catalogue incomplet elle est ecartee du tirage |
@@ -37,9 +37,76 @@ installation existante. Le navigateur est celui du poste
 | `controler-serie.mjs` | **sans navigateur** : le comptage de la série et son jour de grâce, sur 18 calendriers écrits à la main — plus le verrou de ton, vérifié dans les deux sens |
 | `controler-jour.mjs` | la chaîne complète : l'anneau part de zéro, se remplit en jouant, et la série démarre **avec lui** |
 
-`controler-cadrage.mjs` laisse passer les polices distantes, exprès :
-mesurer une hauteur de texte arabe avec une police de remplacement ne
-mesure pas ce que les gens voient.
+## Les polices : ce que le navigateur mesurait vraiment
+
+Jusqu'au 5 octobre, **aucun contrôle n'a jamais vu les polices du site.**
+
+La règle est bonne : un contrôle coupe le réseau extérieur, sinon il dépend
+de Google pour dire si le site va bien. Mais les trois polices du site
+viennent de Google. Chromium mesurait donc avec les polices de secours de
+`base.css` — et dans ce conteneur sans bureau, Georgia n'existe pas non
+plus : les trois familles tombaient sur **une seule et même police**, 19 %
+plus large que Source Sans 3.
+
+Deux contrôles, `cadrage` et `niveaux`, laissaient sortir les requêtes de
+police exprès, avec un commentaire qui disait pourquoi. Elles échouaient
+toutes sur `ERR_CERT_AUTHORITY_INVALID`. Et `cadrage` affirmait à chaque
+exécution « Amiri chargée, on mesure sur la vraie police », sur la foi de
+
+    document.fonts.check('16px Amiri')
+
+qui répond **vrai avec zéro règle `@font-face` chargée** : sans
+déclaration, le navigateur répond pour la police de secours, qui sait
+toujours dessiner le texte. Cette assertion ne pouvait pas échouer. Elle a
+rassuré pendant des semaines sans rien vérifier.
+
+Ce que ça a coûté : la ronde du 4 octobre a annoncé 39 ponctuations
+orphelines à 320 px. Avec les vraies polices, le site du 3 octobre en avait
+**une**. Trente-huit cas sur trente-neuf étaient un artefact de ma police
+de secours.
+
+Depuis, `outils/polices/` garde la feuille de style de Google et ses six
+`.woff2` (latin et arabe, 285 Ko, hors publication), et
+`outils/controles/polices.mjs` les sert au navigateur :
+
+    await ctx.route('**', ...);      // le réseau reste coupé
+    await brancherPolices(ctx);      // APRÈS : le dernier posé passe en tête
+    ...
+    await attendrePolices(p);        // jette si une police manque
+
+`attendrePolices` ne fait pas confiance à `document.fonts.check` seul : il
+mesure la largeur d'un mot avec la police, puis sans, et exige que les deux
+diffèrent. Lui, il peut échouer — vérifié en retirant Marcellus de
+`carte.json` : `cibles` et `cadrage` passent au rouge.
+
+Les douze contrôles qui mesurent une géométrie l'utilisent. Les quatorze
+autres mesurent une logique, que la police ne change pas ; les y brancher
+les ferait échouer pour une raison qui ne les regarde pas.
+
+Si Google change de version (`amiri/v30` → `v31`), les anciennes adresses
+cessent d'être servies : relancer `python3 outils/polices/preparer.py`.
+
+## 320 px, la largeur qu'on ne regardait pas
+
+`cadrage` commençait à 360. La ponctuation orpheline du 4 octobre ne se
+voyait qu'à 320 : la largeur où le défaut vivait n'était pas mesurée. Elle
+l'est depuis le 5, et elle est propre — rien ne déborde, les quatre
+réponses sont atteignables, les cibles tiennent leurs 44 px. Mais elle dit
+une chose que les autres largeurs cachaient :
+
+| écran | cartes à faire glisser | sur 2 701 |
+|---|---|---|
+| 320 × 568 | 2 596 | **96 %** |
+| 360 × 640 | 2 124 | 79 % |
+| 390 × 844 | 264 | 10 % |
+| 430 × 932 | 142 | 5 % |
+| 820 × 1180 | 0 | 0 % |
+
+Sur le plus petit téléphone encore en service, presque aucune carte ne tient
+à l'écran, et 2 651 sur 2 701 sont déjà à la plus petite échelle : il n'y a
+plus de marge à prendre. Ce n'est pas une faute au sens du contrôle — le
+signe « il y en a plus » est bien là — c'est un fait de conception. Signalé,
+pas touché.
 
 ## Comment savoir qu'un controle controle quelque chose
 

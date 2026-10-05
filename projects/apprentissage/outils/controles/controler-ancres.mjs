@@ -29,6 +29,7 @@
    ========================================================================== */
 
 import { chromium } from 'playwright-core';
+import { brancherPolices, attendrePolices } from './polices.mjs';
 
 const EXE = '/opt/pw-browsers/chromium-1194/chrome-linux/chrome';
 const BASE = 'http://127.0.0.1:8899/';
@@ -44,10 +45,12 @@ const verifier = (ok, quoi) => { if (!ok) fautes.push(quoi); };
 const navigateur = await chromium.launch({ executablePath: EXE });
 const contexte = await navigateur.newContext({
   viewport: { width: 360, height: 640 }, deviceScaleFactor: 2 });
+await brancherPolices(contexte);
 const p = await contexte.newPage();
 
 for (const page of [LONGUE, MOYENNE]) {
   await p.goto(BASE + page, { waitUntil: 'networkidle' });
+  await attendrePolices(p);
 
   const k = await p.evaluate(() => document.querySelectorAll('.verset').length);
   const index = p.locator('.vindex a');
@@ -100,6 +103,7 @@ for (const page of [LONGUE, MOYENNE]) {
 
 // 4. La lecon courte n'a pas d'index.
 await p.goto(BASE + COURTE, { waitUntil: 'networkidle' });
+await attendrePolices(p);
 const court = await p.evaluate(() => ({
   k: document.querySelectorAll('.verset').length,
   index: document.querySelectorAll('.vindex').length,

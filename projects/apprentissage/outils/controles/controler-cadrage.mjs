@@ -7,8 +7,28 @@
  *   2. les QUATRE reponses sont entierement dans la carte ;
  *   3. les cibles tactiles font toujours 44 px, meme a l'echelle la plus basse.
  *
+ * CE CONTROLE A MENTI PENDANT DES SEMAINES — corrige le 5 octobre
+ * ---------------------------------------------------------------
+ * Il laissait sortir les requetes de police vers Google, expres, et annoncait
+ * a chaque execution « Amiri chargee, on mesure sur la vraie police ». Les
+ * requetes echouaient toutes sur ERR_CERT_AUTHORITY_INVALID, et
+ *
+ *     document.fonts.check('16px Amiri')
+ *
+ * repondait VRAI avec ZERO regle @font-face : sans declaration, le navigateur
+ * repond pour la police de secours, qui sait toujours dessiner le texte.
+ * L'assertion ne pouvait pas echouer. Toutes les hauteurs mesurees ici
+ * l'etaient avec une police 19 % plus large que Source Sans 3.
+ *
+ * Les polices viennent maintenant du disque (outils/polices/) et
+ * attendrePolices() compare une largeur mesuree : lui, il echoue.
+ * Resultat : les conclusions n'ont pas bouge — aucune carte ne deborde,
+ * les cibles font 44 px — mais elles sont enfin mesurees sur ce que les
+ * gens voient.
+ *
  * Verdict par code de sortie. */
 import { chromium } from 'playwright-core';
+import { brancherPolices, attendrePolices } from './polices.mjs';
 const B = 'http://127.0.0.1:8899';
 let ec = 0;
 const rate = (m,d) => { console.log('  ECHEC  '+m+(d?'  -> '+d:'')); ec++; };
@@ -19,27 +39,47 @@ const nav = await chromium.launch({ executablePath:'/opt/pw-browsers/chromium-11
 // meme endroit que le site. Une liste figee vieillit en silence, et le jour
 // ou une section arrive, le controle ne la voit pas.
 let SECTIONS = null;
-// Le plus petit telephone encore courant, celui de reference, un grand, une tablette.
-const ECRANS = [[360,640,'petit'],[390,844,'reference'],[430,932,'grand'],[820,1180,'tablette']];
+/* 320 AJOUTE LE 5 OCTOBRE, parce qu'il manquait.
+ * La ponctuation orpheline du 4 octobre ne se voyait qu'a 320 px, et ce
+ * controle commencait a 360 : la largeur ou le defaut vivait n'etait pas
+ * regardee. Elle est propre — rien ne deborde, les quatre reponses sont
+ * atteignables, les cibles tiennent leurs 44 px — mais elle dit une chose
+ * que les autres largeurs cachaient :
+ *
+ *     320 x 568   2 596 cartes sur 2 701 demandent de faire glisser   96 %
+ *     360 x 640   2 124                                              79 %
+ *     390 x 844     264                                              10 %
+ *     430 x 932     142                                               5 %
+ *     820 x 1180      0                                               0 %
+ *
+ * Sur le plus petit telephone encore en service, presque aucune carte ne
+ * tient a l'ecran, et 2 651 sur 2 701 sont deja a la plus petite echelle :
+ * il n'y a plus de marge a prendre. Ce n'est pas une faute au sens de ce
+ * controle — le signe « il y en a plus » est bien la — c'est un fait de
+ * conception, et il se decide en haut, pas ici. SIGNALE, PAS TOUCHE. */
+const ECRANS = [[320,568,'minuscule'],[360,640,'petit'],[390,844,'reference'],[430,932,'grand'],[820,1180,'tablette']];
 
 for (const [w,h,nom] of ECRANS) {
   const ctx = await nav.newContext({ viewport:{width:w,height:h}, isMobile:w<800, hasTouch:w<800 });
-  // ICI, ET ICI SEULEMENT, on laisse passer les polices : mesurer le cadrage
-  // avec une police de remplacement ne mesure pas ce que les gens voient.
-  // Amiri ne fait pas la meme hauteur que la police par defaut.
-  await ctx.route('**', (r) => {
-    const u = r.request().url();
-    if (u.startsWith(B) || /fonts\.(googleapis|gstatic)\.com/.test(u)) return r.continue();
-    return r.abort();
-  });
+  // Mesurer le cadrage avec une police de remplacement ne mesure pas ce que
+  // les gens voient : Amiri ne fait pas la meme hauteur que la police par
+  // defaut. Ce controle laissait donc sortir les requetes vers Google — et
+  // elles echouaient toutes, ici, sur ERR_CERT_AUTHORITY_INVALID. Les vraies
+  // polices arrivent maintenant du disque, sans sortir du conteneur.
+  await ctx.route('**', (r) => (r.request().url().startsWith(B) ? r.continue() : r.abort()));
+  await brancherPolices(ctx);
   const p = await ctx.newPage();
   const err=[]; p.on('pageerror',(e)=>err.push(e.message));
   await p.goto(B+'/qcm.html?section=sens-des-sourates&n=20', { waitUntil:'domcontentloaded' });
   await p.waitForSelector('.reponse');
-  await p.evaluate(() => document.fonts.ready);
-  const amiri = await p.evaluate(() => document.fonts.check('16px Amiri'));
-  if (!amiri) rate('Amiri n est pas chargee : la mesure ne vaudrait rien');
-  else ok('Amiri chargee, on mesure sur la vraie police');
+  // document.fonts.check('16px Amiri') repondait VRAI avec ZERO regle
+  // @font-face chargee : sans declaration, le navigateur repond pour la police
+  // de secours, qui sait toujours dessiner le texte. Cette ligne a donc affiche
+  // « on mesure sur la vraie police » a chaque execution pendant des semaines,
+  // sans qu'elle puisse echouer une seule fois. attendrePolices compare une
+  // largeur mesuree : elle, elle peut echouer.
+  try { await attendrePolices(p); ok('les trois polices du site sont en place'); }
+  catch (e) { rate(e.message); }
 
   if (!SECTIONS) {
     // Les sections qui ont vraiment une banque : une section vide n'a rien

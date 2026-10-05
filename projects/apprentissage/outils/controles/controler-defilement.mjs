@@ -9,17 +9,18 @@
  *
  * Verdict par code de sortie. */
 import { chromium } from 'playwright-core';
+import { brancherPolices, attendrePolices } from './polices.mjs';
 const B = 'http://127.0.0.1:8899';
 let ec = 0;
 const rate = (m,d) => { console.log('  ECHEC  '+m+(d?'  -> '+d:'')); ec++; };
 const ok = (m,d) => console.log('  ok     '+m+(d?'  -> '+d:''));
 const nav = await chromium.launch({ executablePath:'/opt/pw-browsers/chromium-1194/chrome-linux/chrome', args:['--no-sandbox'] });
 const ctx = await nav.newContext({ viewport:{width:360,height:640}, isMobile:true, hasTouch:true });
-await ctx.route('**', (r) => {
-  const u = r.request().url();
-  if (u.startsWith(B) || /fonts\.(googleapis|gstatic)\.com/.test(u)) return r.continue();
-  return r.abort();
-});
+// Les polices etaient laissees sortir vers Google, et n'arrivaient jamais
+// (ERR_CERT_AUTHORITY_INVALID) : ce controle mesurait des hauteurs de carte
+// avec une police de secours. Elles viennent du disque maintenant.
+await ctx.route('**', (r) => (r.request().url().startsWith(B) ? r.continue() : r.abort()));
+await brancherPolices(ctx);
 const p = await ctx.newPage();
 const err=[]; p.on('pageerror',(e)=>err.push(e.message));
 /* ON DEMANDE LE NIVEAU EXPERT, ET C'EST VOULU.
@@ -33,6 +34,7 @@ await p.goto(B+'/qcm.html?section=la-priere&n=20&niveau=3', { waitUntil:'domcont
 await p.evaluate(() => localStorage.clear());
 await p.reload({ waitUntil:'domcontentloaded' });
 await p.waitForSelector('.reponse');
+await attendrePolices(p);
 await p.evaluate(() => document.fonts.ready);
 await p.waitForTimeout(300);
 

@@ -48,6 +48,7 @@
    ========================================================================== */
 
 import { chromium } from 'playwright-core';
+import { brancherPolices, attendrePolices } from './polices.mjs';
 
 const EXE = '/opt/pw-browsers/chromium-1194/chrome-linux/chrome';
 const B = 'http://127.0.0.1:8899';
@@ -60,10 +61,12 @@ const navigateur = await chromium.launch({ executablePath: EXE, args: ['--no-san
 async function jouer(w, h, juste) {
   const c = await navigateur.newContext({ viewport: { width: w, height: h }, deviceScaleFactor: 2 });
   await c.route('**', (r) => (r.request().url().startsWith(B) ? r.continue() : r.abort()));
+  await brancherPolices(c);
   const p = await c.newPage();
   const err = [];
   p.on('pageerror', (e) => err.push(e.message));
   await p.goto(URL, { waitUntil: 'networkidle' });
+  await attendrePolices(p);
   await p.waitForSelector('.reponse');
   await p.waitForTimeout(400);
   // On choisit exprès juste ou faux : les deux feuilles n'ont pas le meme

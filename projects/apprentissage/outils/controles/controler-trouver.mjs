@@ -24,6 +24,7 @@
    ========================================================================== */
 
 import { chromium } from 'playwright-core';
+import { brancherPolices, attendrePolices } from './polices.mjs';
 
 const EXE = '/opt/pw-browsers/chromium-1194/chrome-linux/chrome';
 const URL = 'http://127.0.0.1:8899/sourates.html';
@@ -37,6 +38,7 @@ const navigateur = await chromium.launch({ executablePath: EXE });
 {
   const c = await navigateur.newContext({
     viewport: { width: 360, height: 640 }, javaScriptEnabled: false });
+  await brancherPolices(c);
   const p = await c.newPage();
   await p.goto(URL, { waitUntil: 'domcontentloaded' });
   const r = await p.evaluate(() => ({
@@ -59,8 +61,10 @@ const navigateur = await chromium.launch({ executablePath: EXE });
 {
   const c = await navigateur.newContext({
     viewport: { width: 360, height: 640 }, deviceScaleFactor: 2 });
+  await brancherPolices(c);
   const p = await c.newPage();
   await p.goto(URL, { waitUntil: 'networkidle' });
+  await attendrePolices(p);
 
   const champ = p.locator('.strouve-champ');
   verifier(await champ.count() === 1, 'avec JS : le champ n\'a pas ete cree');

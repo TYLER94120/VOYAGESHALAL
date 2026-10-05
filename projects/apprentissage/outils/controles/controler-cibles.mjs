@@ -41,6 +41,7 @@
    ========================================================================== */
 
 import { chromium } from 'playwright-core';
+import { brancherPolices, attendrePolices } from './polices.mjs';
 
 const EXE = '/opt/pw-browsers/chromium-1194/chrome-linux/chrome';
 const PAGES = ['index.html', 'sections.html', 'sourates.html',
@@ -56,11 +57,13 @@ const PAGES = ['index.html', 'sections.html', 'sourates.html',
 const fautes = [];
 const navigateur = await chromium.launch({ executablePath: EXE });
 const contexte = await navigateur.newContext({ viewport: { width: 360, height: 640 } });
+await brancherPolices(contexte);
 const p = await contexte.newPage();
 
 let cible = 0;
 for (const u of PAGES) {
   await p.goto(`http://127.0.0.1:8899/${u}`, { waitUntil: 'networkidle' });
+  await attendrePolices(p);
   const r = await p.evaluate(() => {
     const de = document.documentElement;
     const c = parseFloat(getComputedStyle(de).getPropertyValue('--cible')) || 0;
