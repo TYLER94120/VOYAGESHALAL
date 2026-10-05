@@ -2985,3 +2985,83 @@ conformes** — 200, le chiffre dans la bonne typographie de chaque langue
 
 Et **21 liens d'article testés un par un sur les six pages, 0 cassé** — les
 renvois croisés entre parcs répondent dans les deux langues.
+
+## 5 octobre — « aucune carte ne montre la salle de prière » : 90 lieux autour, zéro dedans
+
+Jour impair, création. Gisement n° 2 du brief : **écrire depuis nos données**,
+avec un chiffre comptable dans le dépôt.
+
+### Le relevé
+
+`data/airports/prayer-rooms.json` (généré le 05/09/2026, source OSM)
+interroge dix grands aéroports internationaux :
+
+```
+  DXB Dubaï            68 lieux autour   dont indoor 0   le plus proche 1 353 m
+  LHR Heathrow          6                            0                  2 319 m
+  KUL Kuala Lumpur      5                            0                  1 349 m
+  LGW Gatwick           3                            0                  2 569 m
+  JED Djeddah           3                            0                  2 038 m
+  JFK New York          2                            0                  3 755 m
+  IST Istanbul          1                            0                  2 445 m
+  DOH Doha              1                            0                  2 120 m
+  AMS Schiphol          1                            0                  3 995 m
+  SIN Changi            0                            0                      —
+  ─────────────────────────────────────────────────────────────────────────────
+                       90 lieux relevés              0 à l'intérieur
+```
+
+### 🔴 Le piège de ce chiffre, et pourquoi il fait un bon article
+
+La lecture paresseuse serait : « dix grands aéroports sans salle de prière ».
+**C'est faux, et nous ne l'écrivons pas.** Djeddah est l'aéroport du
+pèlerinage ; Istanbul, Dubaï et Kuala Lumpur sont dans des pays musulmans.
+Conclure quoi que ce soit sur ces bâtiments serait absurde.
+
+Ce zéro ne dit rien des aéroports. Il dit quelque chose **des cartes** :
+OpenStreetMap cartographie très bien une mosquée de ville — un bâtiment, une
+adresse, une porte sur la rue — et très mal **une pièce à l'intérieur d'un
+bâtiment privé**, qu'il faudrait relever côté embarquement.
+
+D'où la phrase que l'article porte, et qui est la vraie trouvaille :
+**l'absence sur une carte n'est pas une information sur le lieu.** Ou, dit
+autrement : *une base de données silencieuse n'est pas une base de données
+qui dit non.*
+
+C'est aussi la justification de notre propre règle. Nous ne publions pas une
+salle que nous n'avons pas vérifiée — et ce relevé montre pourquoi le
+contraire, « rien sur la carte donc rien sur place », serait un mensonge
+commode.
+
+### Ce que l'article apprend, et que personne n'écrit
+
+Trois conséquences pratiques, dont deux déjà établies par nos guides et une
+nouvelle :
+1. **à l'intérieur, demander** — le comptoir d'information est la seule
+   source à jour ;
+2. **employer les mots du bâtiment** — « lieu de culte », « salle de
+   recueillement », *quiet room*, *multi-faith room* ;
+3. **à l'extérieur, la carte est excellente** — c'est exactement l'inverse,
+   et c'est sur ces données que tourne `/mosquee-proche`. Mais la colonne
+   « le plus proche » dit la vérité du terrain : **1,3 km au mieux**, souvent
+   plus de 2 km. Sortir d'un terminal n'est jamais une promenade.
+
+### Les deux langues, publiées ensemble
+
+Leçon des 27 et 28 septembre : corriger ou publier une seule langue recrée
+l'asymétrie qu'on vient de combler ailleurs. Les deux articles sont dans le
+même commit, jumelés dans `lib/slugs.ts`.
+
+### Vérifié servi
+
+Build du 05/10 00:11, `BUILD_ID` contrôlé avant lecture.
+
+```
+  FR  200   titre  50 c   description 158 c   1 115 mots   31 liens, 0 cassé
+  EN  200   titre  40 c   description 138 c     997 mots   32 liens, 0 cassé
+```
+
+Les cinq marqueurs de chaque langue présents (le chiffre, le démenti
+explicite, le vocabulaire, le crédit ODbL, « un relevé n'est pas un
+inventaire »). **Paire hreflang correcte dans les deux sens**, à l'URL
+finale, et chaque article dans le sitemap de son domaine — pas dans l'autre.
