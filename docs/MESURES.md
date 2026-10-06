@@ -3065,3 +3065,83 @@ Les cinq marqueurs de chaque langue présents (le chiffre, le démenti
 explicite, le vocabulaire, le crédit ODbL, « un relevé n'est pas un
 inventaire »). **Paire hreflang correcte dans les deux sens**, à l'URL
 finale, et chaque article dans le sitemap de son domaine — pas dans l'autre.
+
+## 6 octobre — 1 409 titres servis relus : un seul doublon, et il attend une décision
+
+Jour pair, approfondissement. Faute de relevé Search Console frais, j'ai
+cherché un écart interne — et cette fois en relisant **tout ce que les deux
+domaines servent réellement**.
+
+### La mesure, exhaustive
+
+354 villes × `/hotels` et `/destinations` × 2 domaines, titres lus sur page
+servie, pages `noindex` écartées :
+
+```
+  www.voyageshalal.fr     705 titres indexables   0 en double
+  www.gohalaltravel.com   704 titres indexables   1 en double
+```
+
+Le doublon, mot pour mot :
+
+```
+  « Halal Hotels in Samarkand 2026: Alcohol-Free, Near a Mosque »
+    /hotels/samarcande  +  /hotels/samarkand
+```
+
+Et les fiches destinations de la même ville, côté anglais, ne diffèrent que
+par le compte : « Where to pray in Samarkand: **41** mosques » contre
+« … **42** mosques ». Deux comptes pour une ville. Les quatre URL répondent
+200 et sont **toutes `index, follow`** — vérifié avant d'écrire quoi que ce
+soit. Ce ne sont pas des pages fantômes.
+
+### La cause est dans les données, pas dans les gabarits
+
+`samarcande.json` porte `nom: "Samarcande"` + `nom_en: "Samarkand"` ;
+`samarkand.json` porte `nom: "Samarkand"`. Le titre anglais prend
+`nom_en ?? nom` — les deux fiches rendent donc le même nom, donc le même
+titre. En français elles se distinguent, ce qui explique que **le défaut ne
+se voie que sur le site anglais**. Mon relevé du 29 août l'avait noté en
+passant ; personne ne l'avait quantifié.
+
+### Ce que je n'ai pas fait, et pourquoi
+
+**Je n'ai pas fusionné.** Choisir quelles adresses survivent — 50 restaurants
+et 120 hôtels d'un côté, 40 et 117 de l'autre — est une décision de donnée,
+pas une correction de code. Elle appartient à Mohamed, et c'est déjà écrit
+au carnet depuis le 29 août.
+
+Ce que j'ai fait à la place : **inscrire la dette dans un test** plutôt que
+la laisser dormir. `scripts/test-noms-villes-uniques.mjs` interdit toute
+collision NOUVELLE de nom affiché, dans les deux langues, et imprime le
+doublon connu à **chaque construction** :
+
+```
+  ⏳ dette connue : « Samarkand » (en) est rendu par samarcande et samarkand
+     — fusion en attente de décision
+```
+
+Le test refuse aussi une dette **périmée** : si la fusion est faite et que
+l'entrée reste, il casse. Une liste d'exceptions qu'on n'élague jamais
+devient un cimetière où un vrai doublon se cache.
+
+**Vérifié en réintroduisant la faute** : fiche supplémentaire au nom d'une
+ville existante → le test casse. Retirée → vert.
+
+### Le maillage, lui, manquait vraiment
+
+L'article d'hier (« pourquoi aucune carte ne montre la salle de prière »)
+n'était lié depuis **aucun** des deux hubs aéroports — les pages où Google
+fait atterrir le plus de monde sur ce sujet. Un article que personne
+n'atteint n'existe pas. Les deux hubs portent maintenant le chiffre et le
+lien, dans leur section « ce que nous ne savons pas », qui est exactement
+l'endroit où la question se pose.
+
+### Vérifié servi
+
+Build du 06/10 00:15, `BUILD_ID` contrôlé avant lecture. 48 contrôles verts.
+
+```
+  /blog/ou-prier-aeroports             200   2 028 mots   bloc + lien présents, cible 200
+  /blog/where-to-pray-paris-airports   200   1 363 mots   bloc + lien présents, cible 200
+```

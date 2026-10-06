@@ -2964,6 +2964,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Practical',
     readTime: "7 min",
     publishedAt: '2026-08-01',
+    updatedAt: '2026-10-06',
     lang: 'en',
     tags: ['prayer', 'airport', 'paris', 'muslim travel'],
     content: `
@@ -3006,6 +3007,8 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <p>A <strong>pocket prayer mat is no problem at security</strong>: it is an ordinary item. Pack it along the side of the bag rather than at the bottom. And with a pushchair, crossing two terminals for a room you are not sure to find costs more than the quiet corner near your gate.</p>
 
 <h2>What we do not know</h2>
+<p><strong>And why your maps app does not know either.</strong> We measured it: across ten major international airports, OpenStreetMap records <strong>90 prayer places around them and zero inside a terminal</strong> — Jeddah and Istanbul included. Absence from a map is not information about the place, which is why this guide always says where its claims come from. The full survey: <a href="/blog/why-no-map-shows-airport-prayer-rooms">why no map shows the airport prayer room</a>.</p>
+
 <p>The locations we publish come from airports' public information and from traveller reports — <strong>we have not verified them ourselves on site</strong>, and airports are permanently under works. We will never publish a prayer room we have no trace of, even when an airport “ought” to have one. When we do not know, we write it.</p>
 
 <h2>Our airport guides</h2>
@@ -4106,7 +4109,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Pratique',
     readTime: "8 min",
     publishedAt: '2026-07-20',
-    updatedAt: '2026-09-24',
+    updatedAt: '2026-10-06',
     tags: ["Aéroports", "Prière", "Voyage"],
     content: `<p>Prendre l'avion ne devrait jamais t'obliger à sauter une prière. La plupart des grands aéroports ont aujourd'hui un espace de recueillement — encore faut-il savoir le trouver, savoir s'il est ouvert, et savoir quoi faire quand il n'y en a pas. Ce guide donne la méthode ; nos fiches par aéroport donnent les emplacements.</p>
 
@@ -4166,6 +4169,8 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <p>Un <strong>tapis de prière de poche ne pose aucun problème au contrôle</strong> : c'est un objet courant. Range-le sur le côté du sac plutôt qu'au fond. Et avec une poussette, traverser deux terminaux pour une salle qu'on n'est pas sûr de trouver coûte plus cher que le coin calme près de la porte.</p>
 
 <h2>Ce que nous ne savons pas</h2>
+<p><strong>Et pourquoi ton application de cartes ne le sait pas non plus.</strong> Nous avons mesuré : sur dix grands aéroports internationaux, OpenStreetMap recense <strong>90 lieux de prière autour et zéro à l'intérieur d'un terminal</strong> — Djeddah et Istanbul compris. L'absence sur une carte n'est donc pas une information sur le lieu, et c'est pour ça que ce guide dit toujours d'où vient ce qu'il affirme. Le relevé complet : <a href="/blog/pourquoi-aucune-carte-ne-montre-salle-priere-aeroport">pourquoi aucune carte ne montre la salle de prière</a>.</p>
+
 <p>Les emplacements que nous publions viennent des informations publiques des aéroports et de témoignages de voyageurs — <strong>nous ne les avons pas vérifiés nous-mêmes sur place</strong>, et un aéroport est en travaux permanents. Nous ne publierons jamais une salle de prière dont nous n'avons pas trace, même si l'aéroport « devrait » en avoir une. Quand nous ne savons pas, nous l'écrivons.</p>
 
 <h2>Nos guides par aéroport</h2>
