@@ -267,6 +267,43 @@ def main():
         fautes.append('sections.html : total annonce « %s », %s questions '
                       'comptees' % (sans_balises(d.group(1)), attendu_t))
 
+    # 10. LES DEUX TITRES QUI RETOMBENT SUR LE NOM SEUL, NOMMES ET CHIFFRES.
+    #
+    # `titre_de` assemble « <nom> : <quoi> » et, quand ca depasse 60, rend le
+    # nom seul. Deux sections y tombent : « Le comportement » (64) et
+    # « Vocabulaire arabe » (65). Le generateur l'expliquait en annoncant
+    # « trois et quatre caracteres » de trop — c'etait quatre et cinq, du
+    # 8 septembre au 6 octobre, et rien ne pouvait le dire.
+    #
+    # On ne verifie pas la regle des 60 caracteres, c'est deja fait plus haut.
+    # On verifie le COMMENTAIRE : que ces deux-la soient exactement celles qui
+    # tombent, et de ce nombre-la. Si un `quoi` du cahier raccourcit, ou si une
+    # treizieme section arrive avec une phrase trop longue, ce controle passe au
+    # rouge et la page de documentation est corrigee avec lui.
+    #
+    # L'assemblage est IMPORTE du generateur, pas recopie ici : deux copies
+    # d'une meme regle finissent toujours par differer.
+    ATTENDUS = {'le-comportement': 64, 'vocabulaire-arabe': 65}
+    import importlib.util
+    chemin = RACINE / 'outils' / 'faire-sections-pages.py'
+    spec = importlib.util.spec_from_file_location('faire_sections_pages', chemin)
+    gen = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(gen)
+
+    retombees = {}
+    for sec in secs:
+        quoi = gen.sans_point(gen.minuscule(sec['quoi']))
+        joint = ' — ' if ':' in quoi else ' : '
+        entier = sec['nom'] + joint + quoi
+        if gen.titre_de(sec) != entier:
+            retombees[sec['slug']] = len(entier)
+
+    if retombees != ATTENDUS:
+        fautes.append(
+            'titres retombes sur le nom seul : %s ; la documentation de '
+            'faire-sections-pages.py annonce %s'
+            % (sorted(retombees.items()), sorted(ATTENDUS.items())))
+
     # 9. Une regle par section, et chaque regle vise un fichier present.
     regles = {r['source']: r['destination'] for r in conf.get('rewrites', [])}
     for sec in secs:
@@ -292,6 +329,8 @@ def main():
     print('  noindex sur la seule section vide, et une reecriture par section.')
     print('  index.html et sections.html menent aux 11 sections pleines sans')
     print('  JavaScript, et leurs nombres — questions et lecons — sont recomptes.')
+    print('  Deux titres retombent sur le nom seul, « Le comportement » (64 car.)')
+    print('  et « Vocabulaire arabe » (65) : les memes deux que la documentation.')
 
 
 if __name__ == '__main__':

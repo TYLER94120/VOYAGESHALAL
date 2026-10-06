@@ -139,6 +139,42 @@ TRADUCTEUR = 'Muhammad Hamidullah'
 # ici demande desormais un critere NEUF, ecrit, et qui reponde a la question
 # que la ronde pose : qu'est-ce que cette page apprend, que le site ne dit
 # pas deja ? « Il manque une sourate » n'en est pas un.
+#
+# CE QUE COUTERAIT LA SUITE — MESURE LE 6 OCTOBRE, PAS DECIDEE
+# ------------------------------------------------------------
+# La ronde redemande le levier 2 chaque nuit : multiplier les lecons de
+# sourate, le seul format dont la preuve est faite ici (Al-Ikhlas sort en
+# position 11). Mais le juz Amma est complet, et la seule unite suivante qui
+# soit une division du mushaf — donc un critere et pas une pente — est le
+# JUZ 29 : les sourates 67 a 77, prises en entier ou pas du tout.
+#
+# Voila ce qu'elle pese, compte dans outils/coran/ et non estime :
+#
+#     67 Al-Mulk          30 versets      73 Al-Muzzammil   20
+#     68 Al-Qalam         52              74 Al-Muddaththir 56
+#     69 Al-Haqqa         52              75 Al-Qiyama      40
+#     70 Al-Ma'arij       44              76 Al-Insan       31
+#     71 Nuh              28              77 Al-Mursalat    50
+#     72 Al-Jinn          28
+#
+#     11 sourates, 431 versets.
+#
+# A comparer aux 38 lecons actuelles : 571 versets. Le juz 29 ajouterait donc
+# 29 % de pages pour 75 % de versets. La lecon mediane passe de 11 versets a
+# 40 ; la plus longue du site passe de 46 (An-Nazi'at, 1 518 mots) a 56
+# (Al-Muddaththir) — au rythme de mots par verset d'An-Nazi'at, environ
+# 1 800 mots, pas 2 000 : le chiffre est deduit, pas mesure. Ce n'est pas la
+# meme page, et a 320 px ou 96 % des cartes demandent deja de faire glisser,
+# ce n'est pas un detail.
+#
+# Le texte arabe et la traduction de Hamidullah sont presents pour les onze,
+# verset pour verset, sans trou : rien ne manque techniquement.
+#
+# CE N'EST PAS UNE PROPOSITION DE LE FAIRE. Ouvrir un juz, sur un site qui
+# enseigne le Coran, est une decision d'editeur, et l'editeur est Mohamed —
+# il a dit lui-meme que cette responsabilite le preoccupe. Ce bloc existe
+# pour qu'il decide avec des nombres au lieu d'une intuition. Tant qu'il n'a
+# pas tranche, LOT ne bouge pas.
 LOT = [1, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94,
        95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109,
        110, 111, 112, 113, 114]

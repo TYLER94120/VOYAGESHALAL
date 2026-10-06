@@ -103,10 +103,20 @@ def titre_de(sec):
     parents, les voisins » apres deux elements donnerait un titre qui annonce
     moins que la section ne contient : plus court, mais faux.
 
-    Deux sections y tombent aujourd'hui, « Le comportement » et « Vocabulaire
-    arabe », a trois et quatre caracteres pres. Leur titre gagnerait a etre
-    plus precis, mais cela se joue dans `data/sections.json`, en raccourcissant
-    leur champ `quoi` — c'est une decision de redaction, pas de generateur.
+    Deux sections y tombent aujourd'hui :
+
+        Le comportement : la parole, la colere, les parents, les voisins   64
+        Vocabulaire arabe : les mots qui reviennent le plus dans le Coran  65
+
+    soit QUATRE et CINQ caracteres de trop — pas trois et quatre, comme cette
+    page l'a dit du 8 septembre au 6 octobre. Un chiffre dans un commentaire
+    vieillit sans prevenir ; `controler-sections.py` les compte maintenant et
+    s'arrete si ces deux-la ne sont plus exactement celles qui tombent.
+
+    Leur titre gagnerait a etre plus precis, mais cela se joue dans
+    `data/sections.json`, en raccourcissant leur champ `quoi` — et `quoi` est
+    une valeur du cahier V2. On la SIGNALE, on ne la change pas : c'est une
+    decision de redaction, pas de generateur.
     """
     # DEUX-POINTS UNE SEULE FOIS PAR TITRE. « La zakat et l'aumone » a pour
     # phrase « Donner : a qui, combien, quand » : le joint habituel donnait
