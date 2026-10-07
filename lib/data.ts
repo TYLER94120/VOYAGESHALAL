@@ -4102,6 +4102,117 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <p><em>Surveyed 5 September 2026 across ten airports; prayer place data © OpenStreetMap contributors. Straight-line distances from the airport reference point. A survey is not an inventory: it says what is mapped, not what exists.</em></p>`,
   },
   {
+    slug: "hotel-halal-ce-qui-est-verifie",
+    title: "Hôtel halal : ce qui est vérifié, et ce qui ne l'est pas",
+    description: "Nos chiffres, sans arrondi : 33 322 hôtels dans notre base, la politique alcool confirmée pour 0. Pourquoi, ce que ça change, et les 6 questions à poser.",
+    coverImage: "/guides/blog-hotel.jpg",
+    category: 'Pratique',
+    readTime: "5 min",
+    publishedAt: '2026-10-07',
+    updatedAt: '2026-10-07',
+    tags: ["Hôtels", "Méthode", "Pratique"],
+    content: `<p>« Hôtel halal », « hôtel sans alcool », « hôtel muslim-friendly » : ces mots sont partout, et presque personne ne dit d'où vient l'information. Voici nos chiffres à nous, sans arrondi, y compris ceux qui ne nous arrangent pas.</p>
+
+<h2>Le relevé</h2>
+<p>Notre base d'hôtels, telle qu'elle est dans le dépôt :</p>
+<table><thead><tr><th>Ce qu'on compte</th><th>Combien</th></tr></thead><tbody>
+<tr><td>Villes avec au moins un hôtel</td><td>353</td></tr>
+<tr><td>Hôtels recensés</td><td><strong>33 322</strong></td></tr>
+<tr><td>Dont la <strong>politique alcool</strong> est confirmée par une source</td><td><strong>0</strong></td></tr>
+<tr><td>Dont la <strong>restauration halal</strong> est confirmée par une source</td><td><strong>0</strong></td></tr>
+<tr><td>Dont la distance à une mosquée est <em>mesurée</em></td><td>222 (0,7 %)</td></tr>
+</tbody></table>
+<p>Les 222 distances mesurées se concentrent sur <strong>deux villes seulement</strong>. Là où elles existent, la médiane est de <strong>228 m</strong> (de 28 m à 3,1 km).</p>
+
+<h2>Pourquoi zéro — et pourquoi nous l'écrivons</h2>
+<p>Ces hôtels viennent d'OpenStreetMap, qui cartographie remarquablement bien <em>où est un hôtel</em> et pas du tout <em>ce qu'on y sert</em>. L'attribut « alcool » existe dans le schéma OSM ; presque personne ne le renseigne pour un hôtel. Résultat : nous avons 33 322 emplacements fiables et <strong>zéro politique alcool sourcée</strong>.</p>
+<p>Deux manières de traiter ça. La première : écrire « hôtel halal » partout et laisser le lecteur supposer. La seconde : écrire <strong>« non vérifié »</strong> sur chaque ligne. Nous faisons la seconde, et c'est visible sur chaque fiche — <a href="/hotels">nos pages hôtels</a> affichent « Alcool : non vérifié · Restauration halal : non vérifié », et annoncent en tête que la politique alcool est confirmée pour 0 des hôtels listés.</p>
+<p>Ce n'est pas de la modestie : <strong>un hôtel annoncé sans alcool qui en sert, c'est une soirée gâchée et une confiance perdue.</strong> Trois états, jamais deux — vérifié, écarté, non vérifié.</p>
+
+<h2>Ce que notre base sait vraiment bien faire</h2>
+<p>Le même relevé a un côté solide, et il vaut la peine de le dire aussi : <strong>la géographie</strong>. Un emplacement d'hôtel dans OpenStreetMap est fiable, et une mosquée cartographiée l'est aussi. Croiser les deux donne une information réelle, calculable, que personne ne nous fournit : <strong>la distance à pied entre cet hôtel et le lieu de prière le plus proche</strong>.</p>
+<p>C'est ce que font nos fiches quand la donnée existe (« 🕌 1 min à pied · Zeynep Sultan Camii »), et c'est pour ça que ce chiffre de 222 va augmenter : il dépend de nos propres relevés, pas du bon vouloir d'un hôtelier.</p>
+
+<h2>Les 6 questions à poser, puisque la base ne répond pas</h2>
+<p>Un appel ou un courriel à l'hôtel règle en trois minutes ce qu'aucune base de données ne sait. Les questions qui servent, dans cet ordre :</p>
+<p><strong>1.</strong> L'alcool est-il servi au bar, au restaurant, dans le minibar de la chambre ?<br/>
+<strong>2.</strong> Le petit-déjeuner comprend-il de la charcuterie de porc, et la viande est-elle halal ?<br/>
+<strong>3.</strong> Y a-t-il un créneau ou un espace non mixte à la piscine ou au spa ?<br/>
+<strong>4.</strong> La chambre dispose-t-elle d'un tapis de prière et d'une indication de la qibla ? (sinon, apporte les deux)<br/>
+<strong>5.</strong> Quelle est la mosquée la plus proche, et à quelle distance à pied ?<br/>
+<strong>6.</strong> Pendant le Ramadan, le petit-déjeuner peut-il être servi avant l'aube ?</p>
+<p>Un hôtel qui répond précisément à ces six questions t'en dit plus que n'importe quel label. Un hôtel qui élude en dit aussi beaucoup.</p>
+
+<h2>Sur le mot « certifié »</h2>
+<p>Nous ne l'employons jamais pour un hôtel. Une certification halal concerne une cuisine, un abattoir, un produit — pas un bâtiment entier, et jamais sur la foi d'une base de données. Quand une page de ce site dit <em>vérifié</em>, c'est qu'une source existe et qu'elle est nommée. Notre méthode complète est là : <a href="/a-propos#donnees">comment nous vérifions</a>.</p>
+
+<h2>Questions fréquentes</h2>
+<p><strong>Vos 33 322 hôtels sont-ils halal ?</strong> Non, et nous ne le disons nulle part. Ce sont des hôtels dont nous connaissons l'emplacement ; ce qui s'y passe reste à confirmer.<br/>
+<strong>Pourquoi les lister, alors ?</strong> Parce que l'emplacement est une vraie information : la distance à une mosquée, le quartier, le prix. Et parce que les six questions ci-dessus font le reste.<br/>
+<strong>Comment aider ?</strong> Si tu as appelé un hôtel et obtenu une réponse claire, dis-la-nous — c'est exactement ce qui transforme un « non vérifié » en « vérifié ».</p>
+
+<h2>Aide la communauté</h2>
+<p>Tu as séjourné dans un hôtel sans alcool, avec un vrai petit-déjeuner halal ou un créneau piscine non mixte ? <strong>Dis-nous lequel et ce que tu as constaté toi-même.</strong> <a href="/communaute/ajouter">→ Ajouter le lieu</a></p>
+
+<p><em>Chiffres relevés dans le dépôt le 7 octobre 2026 sur les 354 fiches de villes. Emplacements d'hôtels et lieux de prière © les contributeurs OpenStreetMap. Un compte n'est pas un jugement : il dit ce que nous savons, pas ce qui existe.</em></p>`,
+  },
+  {
+    slug: "halal-hotel-what-is-actually-verified",
+    title: "Halal hotel: what is verified, and what is not",
+    description: "Our own numbers, unrounded: 33,322 hotels in our data, alcohol policy confirmed for 0 of them. Why, what it changes, and the 6 questions to ask.",
+    coverImage: "/guides/blog-hotel.jpg",
+    category: 'Practical',
+    readTime: "5 min",
+    publishedAt: '2026-10-07',
+    updatedAt: '2026-10-07',
+    lang: 'en',
+    tags: ['hotels', 'method', 'muslim travel'],
+    content: `<p>"Halal hotel", "alcohol-free hotel", "Muslim-friendly hotel": the words are everywhere, and almost nobody says where the information comes from. Here are our own numbers, unrounded, including the ones that do not flatter us.</p>
+
+<h2>The survey</h2>
+<p>Our hotel data, exactly as it sits in the repository:</p>
+<table><thead><tr><th>What we count</th><th>How many</th></tr></thead><tbody>
+<tr><td>Cities with at least one hotel</td><td>353</td></tr>
+<tr><td>Hotels recorded</td><td><strong>33,322</strong></td></tr>
+<tr><td>With a sourced <strong>alcohol policy</strong></td><td><strong>0</strong></td></tr>
+<tr><td>With sourced <strong>halal catering</strong></td><td><strong>0</strong></td></tr>
+<tr><td>With a <em>measured</em> distance to a mosque</td><td>222 (0.7 %)</td></tr>
+</tbody></table>
+<p>Those 222 measured distances sit in <strong>two cities only</strong>. Where they exist, the median is <strong>228 m</strong> (from 28 m to 3.1 km).</p>
+
+<h2>Why zero — and why we print it</h2>
+<p>These hotels come from OpenStreetMap, which maps <em>where a hotel is</em> remarkably well and <em>what is served inside</em> not at all. The alcohol attribute exists in the OSM schema; almost nobody fills it in for a hotel. So we have 33,322 reliable locations and <strong>zero sourced alcohol policies</strong>.</p>
+<p>Two ways to handle that. The first: write "halal hotel" everywhere and let the reader assume. The second: write <strong>"not verified"</strong> on every line. We do the second, and it is visible on every card — <a href="/hotels">our hotel pages</a> show "Alcohol: not verified · Halal catering: not verified", and say at the top that the alcohol policy is confirmed for 0 of the hotels listed.</p>
+<p>This is not modesty: <strong>a hotel announced as alcohol-free that serves alcohol is a ruined evening and a lost trust.</strong> Three states, never two — verified, ruled out, not verified.</p>
+
+<h2>What our data is genuinely good at</h2>
+<p>The same survey has a solid side, worth saying too: <strong>geography</strong>. A hotel location in OpenStreetMap is reliable, and so is a mapped mosque. Crossing the two gives real, computable information that nobody hands us: <strong>the walking distance between this hotel and the nearest prayer place</strong>.</p>
+<p>That is what our cards do where the data exists ("🕌 1 min walk · Zeynep Sultan Camii"), and it is why that figure of 222 will grow: it depends on our own surveys, not on a hotelier's goodwill.</p>
+
+<h2>The 6 questions to ask, since the data cannot answer</h2>
+<p>One call or email settles in three minutes what no database knows. The questions that matter, in this order:</p>
+<p><strong>1.</strong> Is alcohol served at the bar, in the restaurant, in the room minibar?<br/>
+<strong>2.</strong> Does breakfast include pork products, and is the meat halal?<br/>
+<strong>3.</strong> Is there a women-only slot or area at the pool or spa?<br/>
+<strong>4.</strong> Does the room have a prayer mat and a qibla marker? (if not, bring both)<br/>
+<strong>5.</strong> Which is the nearest mosque, and how far on foot?<br/>
+<strong>6.</strong> During Ramadan, can breakfast be served before dawn?</p>
+<p>A hotel that answers those six precisely tells you more than any label. A hotel that dodges them tells you a lot as well.</p>
+
+<h2>On the word "certified"</h2>
+<p>We never use it for a hotel. A halal certification covers a kitchen, an abattoir, a product — not a whole building, and never on the strength of a database. When a page on this site says <em>verified</em>, a source exists and it is named.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Are your 33,322 hotels halal?</strong> No, and we say that nowhere. They are hotels whose location we know; what happens inside remains to be confirmed.<br/>
+<strong>Then why list them?</strong> Because location is real information: distance to a mosque, the neighbourhood, the price. And because the six questions above do the rest.<br/>
+<strong>How can I help?</strong> If you called a hotel and got a clear answer, tell us — that is exactly what turns a "not verified" into "verified".</p>
+
+<h2>Help the community</h2>
+<p>Stayed somewhere alcohol-free, with a genuinely halal breakfast or a women-only pool slot? <strong>Tell us which, and what you saw yourself.</strong> <a href="/communaute/ajouter">→ Add the place</a></p>
+
+<p><em>Figures taken from the repository on 7 October 2026 across all 354 city files. Hotel locations and prayer places © OpenStreetMap contributors. A count is not a judgement: it says what we know, not what exists.</em></p>`,
+  },
+  {
     slug: "ou-prier-aeroports",
     title: "Salle de prière en aéroport : 8 aéroports détaillés (2026)",
     description: "CDG, Orly, Lyon, Nice, Marseille, Toulouse, Genève, Bruxelles : où se trouve la salle de prière de chaque aéroport, avant ou après les contrôles.",

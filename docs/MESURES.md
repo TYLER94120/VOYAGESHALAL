@@ -3145,3 +3145,82 @@ Build du 06/10 00:15, `BUILD_ID` contrôlé avant lecture. 48 contrôles verts.
   /blog/ou-prier-aeroports             200   2 028 mots   bloc + lien présents, cible 200
   /blog/where-to-pray-paris-airports   200   1 363 mots   bloc + lien présents, cible 200
 ```
+
+## 7 octobre — 33 322 hôtels, politique alcool confirmée pour zéro
+
+Jour impair, création. Gisement n° 2 : écrire depuis nos données. Et le
+relevé le plus inconfortable du dépôt.
+
+### Le relevé
+
+Compté sur les 354 fiches de villes :
+
+```
+  villes avec au moins un hôtel                         353
+  hôtels recensés                                    33 322
+  dont politique alcool confirmée par une source          0
+  dont restauration halal confirmée par une source        0
+  dont distance à une mosquée mesurée                   222   (0,7 %)
+  source : osm 33 309 · halalbooking 4 · aucune 9
+```
+
+Les 222 distances mesurées se concentrent sur **deux villes seulement**.
+Médiane 228 m, de 28 m à 3,1 km.
+
+### 🔴 Ce que j'ai vérifié AVANT de crier au défaut
+
+Un zéro pareil sous des titres qui disent « Hôtels halal … : sans alcool,
+mosquée proche » sur 354 villes ressemble à une promesse non tenue. J'ai donc
+lu la page servie avant d'écrire une ligne — et **il n'y avait pas de
+défaut** :
+
+> « 113 hôtels sur 113 affichés. La politique alcool est confirmée par
+> OpenStreetMap pour **0** d'entre eux — pour les autres nous écrivons
+> « non vérifié » plutôt que de supposer. »
+
+Et chaque fiche porte « ⚪ Alcool : non vérifié · ⚪ Restauration halal : non
+vérifié ». Sur Paris, où aucune distance n'est mesurée, **aucune mention
+« à pied » n'apparaît** : la page ne promet pas ce qu'elle n'a pas. Le
+titre annonce ce que la page aide à chercher, le corps dit ce qui est su.
+
+C'est la quatrième fois ce mois-ci qu'une alerte de ma part s'est dissoute à
+la lecture de la page servie. Je la note quand même, parce que l'absence de
+défaut est elle aussi un résultat — et parce que cette honnêteté-là méritait
+d'être écrite quelque part de lisible.
+
+### Donc l'article : publier ses propres chiffres négatifs
+
+Personne ne fait ça. Les pages « hôtel halal » du web affirment ; la nôtre
+compte, et dit zéro là où c'est zéro. L'article explique :
+
+· **pourquoi zéro** — OSM cartographie très bien *où est un hôtel* et pas du
+  tout *ce qu'on y sert* ; l'attribut alcool existe dans le schéma et n'est
+  presque jamais renseigné pour un hôtel ;
+· **ce que la base sait vraiment faire** — la géographie. Croiser un
+  emplacement d'hôtel fiable avec une mosquée cartographiée donne une
+  information réelle que personne ne nous fournit, et qui ne dépend pas du
+  bon vouloir d'un hôtelier : c'est pour ça que les 222 augmenteront ;
+· **les six questions à poser à l'hôtel**, puisque la base ne répond pas ;
+· **le mot « certifié »**, que nous n'employons jamais pour un bâtiment.
+
+### Un point à décider, pas un défaut
+
+Les pages hôtels proposent un filtre « 🕌 Mosquée < 10 min » et un tri « par
+distance mosquée ». Sur 351 villes sur 353, aucune distance n'est mesurée :
+ces deux commandes ne peuvent rien trier. Ce n'est pas une fausse
+affirmation, donc je n'y touche pas seul — mais un filtre qui ne filtre
+jamais mérite une décision.
+
+### Vérifié servi
+
+Build du 07/10 00:14, `BUILD_ID` contrôlé avant lecture. 48 contrôles verts.
+
+```
+  FR  200   titre 55 c   description 153 c   1 156 mots   31 liens, 0 cassé
+  EN  200   titre 46 c   description 144 c   1 007 mots   32 liens, 0 cassé
+```
+
+Les cinq marqueurs de chaque langue présents (33 322, le zéro dans le
+tableau, les 222, le refus du mot « certifié », le crédit ODbL). **Paire
+hreflang correcte dans les deux sens**, et chaque article dans le sitemap de
+son domaine **seulement** — contrôlé dans les deux directions.

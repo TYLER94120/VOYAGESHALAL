@@ -85,6 +85,14 @@ export const BLOG_FR_TO_EN: Record<string, string> = {
   // et ça justifie la méthode que nos guides emploient déjà.
   // Les deux langues publiées ensemble — leçon des 27 et 28 septembre.
   'pourquoi-aucune-carte-ne-montre-salle-priere-aeroport': '/blog/why-no-map-shows-airport-prayer-rooms',
+  // 7 octobre. Gisement n° 2 encore, et le relevé le plus inconfortable du
+  // dépôt : 33 322 hôtels, politique alcool confirmée pour **0**, distance à
+  // une mosquée mesurée pour 222 (0,7 %), concentrés sur deux villes.
+  // Vérifié sur page servie avant d'écrire : les fiches hôtels disent déjà
+  // « Alcool : non vérifié » sur chaque ligne et annoncent le zéro en tête.
+  // Il n'y avait donc aucun défaut à corriger — mais un article que personne
+  // n'écrit, parce qu'il faut publier ses propres chiffres négatifs.
+  'hotel-halal-ce-qui-est-verifie': '/blog/halal-hotel-what-is-actually-verified',
   'ou-prier-gares-paris': '/blog/where-to-pray-paris-stations',
   // 31 août : les deux pages qui convertissent le MIEUX du site n'avaient
   // aucune version anglaise. Relevé 3 mois, voyageshalal.fr :
