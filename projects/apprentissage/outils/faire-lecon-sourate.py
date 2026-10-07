@@ -411,7 +411,21 @@ def page(num, nom, nom_ar, vs, voisins):
     # n'a aucune traduction francaise sourcee. Un titre qui les promettrait
     # ferait venir des gens sur une page qui ne repond pas, et il engagerait
     # Mohamed sur un contenu qui n'existe pas.
-    titre = 'Sourate %s : traduction et texte arabe' % nom
+    # LE NOMBRE DE VERSETS, AJOUTE LE 7 OCTOBRE. La methode maison a une regle
+    # que ce titre ne suivait pas : « du concret, un nombre — 12 salles de
+    # priere a Disneyland bat ou prier a Disneyland. Un nombre promet un
+    # contenu reel. » Le raisonnement de septembre reste entier : on ne retire
+    # aucun mot qui se cherche. « traduction » et « texte arabe » gardent leur
+    # place juste apres le nom, la ou Google met en gras ; seul « et » devient
+    # une virgule, et « N versets » s'ajoute a la fin. C'est strictement additif.
+    #
+    # Le plus long des 38 — Al-Mutaffifin, 36 versets — fait 59 caracteres. La
+    # marge est donc d'un caractere, et c'est pour cela que l'arret ci-dessous
+    # existe plutot qu'un commentaire disant « ca tient ».
+    titre = 'Sourate %s : traduction, texte arabe, %d versets' % (nom, k)
+    if len(titre) > 60:
+        sys.exit('ARRET : titre de %d caracteres pour « %s ». Google coupera.'
+                 % (len(titre), titre))
     desc = description(num, nom, k)
 
     h = entete(titre, desc, url, nom, num, k)

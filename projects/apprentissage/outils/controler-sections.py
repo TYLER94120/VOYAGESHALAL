@@ -211,6 +211,65 @@ def main():
                           '%d lecons sur le disque'
                           % (page, sans_balises(m.group(1))[:40], lecons))
 
+    # 11. LA DESCRIPTION DE L'ACCUEIL : SA FENETRE, SES NOMBRES, SES TROIS COPIES.
+    #
+    # index.html est ecrit a la main — aucun generateur ne le produit. Sa
+    # description echappait donc a tout : elle faisait 132 caracteres quand les
+    # douze pages de section sont tenues entre 150 et 160, et personne ne l'avait
+    # mesuree. Reecrite le 7 octobre, elle annonce deux nombres, et un nombre
+    # ecrit a la main dans un fichier qu'aucun generateur ne relit vieillit en
+    # silence. C'est la faute que la methode maison nomme : « la description
+    # annonce un chiffre faux », et le lecteur qui ne trouve pas repart.
+    #
+    # On recompte donc les deux, et on exige que les TROIS copies — <meta
+    # name="description">, og:description et la donnee structuree — soient le
+    # meme texte. Trois copies qui divergent, c'est trois descriptions, et celle
+    # que Google retient n'est pas forcement celle qu'on a relue.
+    code, t = prendre('%s/index.html' % BASE)
+    if code != 200:
+        fautes.append('index.html : le serveur repond %s' % code)
+    else:
+        trois = [desechapper(x) for x in (
+            re.findall(r'<meta name="description" content="([^"]+)"', t)
+            + re.findall(r'<meta property="og:description" content="([^"]+)"', t)
+            + re.findall(r'"description":\s*"([^"]+)"', t))]
+        if len(trois) != 3:
+            fautes.append('index.html : %d description(s) trouvee(s), 3 attendues '
+                          '(meta, og, donnee structuree)' % len(trois))
+        elif len(set(trois)) != 1:
+            # On montre l'endroit ou elles se separent, pas leurs 48 premiers
+            # caracteres : ils sont identiques, et le message ne disait rien.
+            commun = 0
+            while all(len(x) > commun and x[commun] == trois[0][commun]
+                      for x in trois):
+                commun += 1
+            fautes.append(
+                'index.html : les trois descriptions divergent au caractere %d '
+                '— %s' % (commun + 1, ' | '.join(
+                    '%s:« …%s »' % (nom, x[max(0, commun - 12):commun + 24])
+                    for nom, x in zip(('meta', 'og', 'ld+json'), trois))))
+        if trois:
+            d = trois[0]
+            if not 150 <= len(d) <= 160:
+                fautes.append('index.html : description de %d caracteres '
+                              '(150 a 160)' % len(d))
+            # Les milliers peuvent etre separes par une espace ordinaire ou une
+            # insecable ; on compare sur un texte ou les deux sont devenues la
+            # meme chose, sinon « 2 701 » et « 2 701 » seraient deux nombres.
+            plat = d.replace('\u00a0', ' ')
+            total_banques = sum(
+                len(json.loads(f.read_text(encoding='utf-8')))
+                for f in sorted((RACINE / 'data' / 'questions').glob('*.json')))
+            attendu_banques = re.sub(r'\B(?=(\d{3})+(?!\d))', ' ',
+                                     str(total_banques))
+            if attendu_banques not in plat:
+                fautes.append('index.html : la description annonce « %s », il y a '
+                              '%s questions dans les banques'
+                              % (plat[:46], attendu_banques))
+            if '%d sourates' % lecons not in plat:
+                fautes.append('index.html : la description n\'annonce pas les '
+                              '%d lecons de sourate du disque' % lecons)
+
     # LA MARQUE N'EST PAS DANS LE TITRE.
     #
     # Regle de la methode maison, et elle a une raison chiffree : la marque
@@ -329,6 +388,9 @@ def main():
     print('  noindex sur la seule section vide, et une reecriture par section.')
     print('  index.html et sections.html menent aux 11 sections pleines sans')
     print('  JavaScript, et leurs nombres — questions et lecons — sont recomptes.')
+    print('  Description de l\'accueil : 153 caracteres, ses deux nombres'
+          ' recomptes,')
+    print('  et le meme texte dans ses trois copies — meta, og, donnee structuree.')
     print('  Deux titres retombent sur le nom seul, « Le comportement » (64 car.)')
     print('  et « Vocabulaire arabe » (65) : les memes deux que la documentation.')
 
