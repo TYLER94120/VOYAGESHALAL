@@ -1,0 +1,8 @@
+{
+  "name": "islampasapas-controles",
+  "private": true,
+  "description": "Isole npm des controles : sans ce fichier, npm remonte jusqu'au package.json de VoyagesHalal a la racine du depot et y ajoute playwright-core comme dependance de l'application. C'est arrive le 7 octobre 2026. Voir LISEZMOI.md.",
+  "devDependencies": {
+    "playwright-core": "^1.63.0"
+  }
+}

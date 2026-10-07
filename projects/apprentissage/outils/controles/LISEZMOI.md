@@ -16,10 +16,27 @@ Le verdict est le CODE DE SORTIE, jamais le texte affiche : `0` tout va
 bien, autre chose une faute. Ne jamais les passer dans `tail` ni dans un
 `grep` — le code de sortie disparait et le controle ne controle plus rien.
 
-Il leur faut `playwright-core`. Il n'est pas versionne : `npm i
-playwright-core` dans ce dossier, ou un lien `node_modules` vers une
-installation existante. Le navigateur est celui du poste
+Il leur faut `playwright-core`. Il n'est pas versionne — le conteneur est
+jetable et `node_modules` est dans `.gitignore` :
+
+    cd outils/controles && npm i
+
+**Lance-le depuis CE dossier, jamais depuis la racine du depot.** `npm`
+remonte jusqu'au premier `package.json` qu'il trouve, et a la racine c'est
+celui de **l'application VoyagesHalal** : un `npm i playwright-core` lance de
+trop haut ajoute la dependance a l'application, ecrit 728 Mo de
+`node_modules` qui n'ont rien a faire la, et sort du perimetre de ce projet.
+C'est arrive le 7 octobre 2026. Le `package.json` pose ici depuis sert de
+butoir : npm s'arrete a ce dossier.
+
+Le navigateur est celui du poste
 (`/opt/pw-browsers/chromium-1194/chrome-linux/chrome` ici).
+
+**Une nuit ou les 26 controles de navigateur sont rouges d'un coup, regarde
+la dependance avant le code.** C'est arrive le 7 octobre : apres le
+recyclage du conteneur, `playwright-core` avait disparu et les 26 echouaient
+sur `ERR_MODULE_NOT_FOUND` — ce qui ressemble trait pour trait a vingt-six
+regressions. Les controles Python, eux, etaient verts : c'est le signe.
 
 | controle | ce qu'il verifie |
 |---|---|
