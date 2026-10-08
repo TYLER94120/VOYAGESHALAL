@@ -30,9 +30,31 @@ const ENDPOINTS = [
   'https://overpass.kumi.systems/api/interpreter',
 ]
 
-const villes = process.argv.slice(2)
+// 8 octobre : deux ajouts, et aucun ne change ce qui est écrit dans les fiches.
+//
+// `--sans-overpass` saute l'appel réseau et ne calcule QUE les distances
+// mosquée, qui se font avec NOS données. Le script savait déjà continuer
+// quand Overpass tombe ; le drapeau évite seulement 354 appels voués à
+// échouer (le proxy de cette machine bloque les quatre miroirs Overpass).
+//
+// `--toutes` passe sur toutes les fiches de `data/villes` au lieu d'exiger
+// la liste à la main. Mesuré ce soir : le script n'avait jamais tourné que
+// sur istanbul et dubai, donc **222 hôtels sur 33 322 portaient une distance
+// mosquée** — et le filtre « Mosquée < 10 min » des pages hôtels ne pouvait
+// rien trier sur 351 villes sur 353. 31 979 hôtels étaient calculables
+// immédiatement, sans réseau, à partir de `mosqueesPrincipales`.
+const args = process.argv.slice(2)
+const SANS_OVERPASS = args.includes('--sans-overpass')
+const TOUTES = args.includes('--toutes')
+let villes = args.filter((a) => !a.startsWith('--'))
+if (TOUTES) {
+  villes = fs.readdirSync(path.join(process.cwd(), 'data', 'villes'))
+    .filter((f) => f.endsWith('.json'))
+    .map((f) => f.replace(/\.json$/, ''))
+    .sort()
+}
 if (!villes.length) {
-  console.error('Usage : node scripts/enrich-hotels-osm.mjs <slug> [slug…]')
+  console.error('Usage : node scripts/enrich-hotels-osm.mjs <slug> [slug…] | --toutes [--sans-overpass]')
   process.exit(1)
 }
 
@@ -78,8 +100,8 @@ for (const slug of villes) {
 );out center tags;`
   // Overpass peut être indisponible (ou le réseau coupé) : on continue quand
   // même, car la distance à la mosquée se calcule avec NOS données.
-  const data = await overpass(q)
-  if (!data?.elements) console.error(`  ⚠ ${slug} : Overpass indisponible — seules les distances mosquée seront calculées`)
+  const data = SANS_OVERPASS ? null : await overpass(q)
+  if (!SANS_OVERPASS && !data?.elements) console.error(`  ⚠ ${slug} : Overpass indisponible — seules les distances mosquée seront calculées`)
 
   const osm = (data?.elements ?? []).map((e) => ({
     nom: e.tags?.name || '',

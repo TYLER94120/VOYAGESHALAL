@@ -4109,7 +4109,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Pratique',
     readTime: "5 min",
     publishedAt: '2026-10-07',
-    updatedAt: '2026-10-07',
+    updatedAt: '2026-10-08',
     tags: ["Hôtels", "Méthode", "Pratique"],
     content: `<p>« Hôtel halal », « hôtel sans alcool », « hôtel muslim-friendly » : ces mots sont partout, et presque personne ne dit d'où vient l'information. Voici nos chiffres à nous, sans arrondi, y compris ceux qui ne nous arrangent pas.</p>
 
@@ -4120,9 +4120,10 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <tr><td>Hôtels recensés</td><td><strong>33 322</strong></td></tr>
 <tr><td>Dont la <strong>politique alcool</strong> est confirmée par une source</td><td><strong>0</strong></td></tr>
 <tr><td>Dont la <strong>restauration halal</strong> est confirmée par une source</td><td><strong>0</strong></td></tr>
-<tr><td>Dont la distance à une mosquée est <em>mesurée</em></td><td>222 (0,7 %)</td></tr>
+<tr><td>Dont la distance à une mosquée est <em>mesurée</em></td><td><strong>30 280 (90,9 %)</strong></td></tr>
 </tbody></table>
-<p>Les 222 distances mesurées se concentrent sur <strong>deux villes seulement</strong>. Là où elles existent, la médiane est de <strong>228 m</strong> (de 28 m à 3,1 km).</p>
+<p>Les distances couvrent <strong>339 villes</strong>, avec une médiane de <strong>857 m</strong> — et <strong>17 025 hôtels à moins d’un kilomètre à pied</strong> d’un lieu de prière.</p>
+<p><strong>Ce chiffre valait 222 (0,7 %) la veille.</strong> Il ne vient d’aucune nouvelle source : le calcul croise des coordonnées d’hôtels et des mosquées déjà présentes dans nos fiches, et il n’avait simplement jamais été lancé ailleurs qu’à Istanbul et Dubaï. Nous le disons parce qu’un chiffre qui saute de 222 à 30 280 mérite son explication.</p>
 
 <h2>Pourquoi zéro — et pourquoi nous l'écrivons</h2>
 <p>Ces hôtels viennent d'OpenStreetMap, qui cartographie remarquablement bien <em>où est un hôtel</em> et pas du tout <em>ce qu'on y sert</em>. L'attribut « alcool » existe dans le schéma OSM ; presque personne ne le renseigne pour un hôtel. Résultat : nous avons 33 322 emplacements fiables et <strong>zéro politique alcool sourcée</strong>.</p>
@@ -4131,7 +4132,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 
 <h2>Ce que notre base sait vraiment bien faire</h2>
 <p>Le même relevé a un côté solide, et il vaut la peine de le dire aussi : <strong>la géographie</strong>. Un emplacement d'hôtel dans OpenStreetMap est fiable, et une mosquée cartographiée l'est aussi. Croiser les deux donne une information réelle, calculable, que personne ne nous fournit : <strong>la distance à pied entre cet hôtel et le lieu de prière le plus proche</strong>.</p>
-<p>C'est ce que font nos fiches quand la donnée existe (« 🕌 1 min à pied · Zeynep Sultan Camii »), et c'est pour ça que ce chiffre de 222 va augmenter : il dépend de nos propres relevés, pas du bon vouloir d'un hôtelier.</p>
+<p>C'est ce que font nos fiches quand la donnée existe (« 🕌 1 min à pied · Zeynep Sultan Camii »), et c'est pour ça que ce chiffre a pu passer de 222 à 30 280 en une soirée, sans appeler personne : il dépend de nos propres relevés, pas du bon vouloir d'un hôtelier.</p>
 
 <h2>Les 6 questions à poser, puisque la base ne répond pas</h2>
 <p>Un appel ou un courriel à l'hôtel règle en trois minutes ce qu'aucune base de données ne sait. Les questions qui servent, dans cet ordre :</p>
@@ -4164,7 +4165,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Practical',
     readTime: "5 min",
     publishedAt: '2026-10-07',
-    updatedAt: '2026-10-07',
+    updatedAt: '2026-10-08',
     lang: 'en',
     tags: ['hotels', 'method', 'muslim travel'],
     content: `<p>"Halal hotel", "alcohol-free hotel", "Muslim-friendly hotel": the words are everywhere, and almost nobody says where the information comes from. Here are our own numbers, unrounded, including the ones that do not flatter us.</p>
@@ -4176,9 +4177,10 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <tr><td>Hotels recorded</td><td><strong>33,322</strong></td></tr>
 <tr><td>With a sourced <strong>alcohol policy</strong></td><td><strong>0</strong></td></tr>
 <tr><td>With sourced <strong>halal catering</strong></td><td><strong>0</strong></td></tr>
-<tr><td>With a <em>measured</em> distance to a mosque</td><td>222 (0.7 %)</td></tr>
+<tr><td>With a <em>measured</em> distance to a mosque</td><td><strong>30,280 (90.9 %)</strong></td></tr>
 </tbody></table>
-<p>Those 222 measured distances sit in <strong>two cities only</strong>. Where they exist, the median is <strong>228 m</strong> (from 28 m to 3.1 km).</p>
+<p>The distances now cover <strong>339 cities</strong>, with a median of <strong>857 m</strong> — and <strong>17,025 hotels within a kilometre’s walk</strong> of a prayer place.</p>
+<p><strong>That figure was 222 (0.7 %) the day before.</strong> It comes from no new source: the calculation crosses hotel coordinates with mosques already in our city files, and it had simply never been run outside Istanbul and Dubai. We say so because a number that jumps from 222 to 30,280 owes you an explanation.</p>
 
 <h2>Why zero — and why we print it</h2>
 <p>These hotels come from OpenStreetMap, which maps <em>where a hotel is</em> remarkably well and <em>what is served inside</em> not at all. The alcohol attribute exists in the OSM schema; almost nobody fills it in for a hotel. So we have 33,322 reliable locations and <strong>zero sourced alcohol policies</strong>.</p>
@@ -4187,7 +4189,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 
 <h2>What our data is genuinely good at</h2>
 <p>The same survey has a solid side, worth saying too: <strong>geography</strong>. A hotel location in OpenStreetMap is reliable, and so is a mapped mosque. Crossing the two gives real, computable information that nobody hands us: <strong>the walking distance between this hotel and the nearest prayer place</strong>.</p>
-<p>That is what our cards do where the data exists ("🕌 1 min walk · Zeynep Sultan Camii"), and it is why that figure of 222 will grow: it depends on our own surveys, not on a hotelier's goodwill.</p>
+<p>That is what our cards do where the data exists ("🕌 1 min walk · Zeynep Sultan Camii"), and it is why that figure went from 222 to 30,280 in one evening without calling anyone: it depends on our own surveys, not on a hotelier's goodwill.</p>
 
 <h2>The 6 questions to ask, since the data cannot answer</h2>
 <p>One call or email settles in three minutes what no database knows. The questions that matter, in this order:</p>
