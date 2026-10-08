@@ -160,6 +160,32 @@ svg { display: block; flex-shrink: 0; }
 
 /* ==========================================================================
    TYPOGRAPHIE (section 3.2)
+
+   TOUT EST EN PIXELS, ET LE REGLAGE DE TAILLE DE TEXTE DU TELEPHONE N'A DONC
+   AUCUN EFFET. Mesure refaite le 8 octobre 2026, chiffree cette fois :
+
+     102 declarations de font-size dans css/, 28 valeurs distinctes,
+     ZERO en rem, em ou pourcentage.
+     27 d'entre elles sont a 12 px ou moins, dont une a 10 px.
+
+   Un reglage « texte plus grand » agit sur la taille de reference du
+   navigateur ; une valeur en px l'ignore par definition. Quelqu'un qui a
+   besoin de plus gros — et sur un site de lecture du Coran, ce n'est pas
+   rare — ne peut rien obtenir. Mesure du 3 octobre : rendu identique a 100,
+   150 et 200 %.
+
+   POURQUOI LA CONVERSION EN rem NE SUFFIRAIT PAS, ET C'EST MESURE.
+   Passer ces 102 valeurs en rem garderait l'allure actuelle a l'identique
+   (1 rem = 16 px) tout en rendant le reglage effectif. Mais les cartes de
+   QCM s'adaptent par ECHELLE — 1, 0,94, puis 0,88 — et a 320 px cette
+   echelle a deja touche le fond : 2 651 cartes sur 2 701 sont a 0,88, et
+   96 % demandent de faire glisser (controler-cadrage.mjs, 5 largeurs).
+   Il n'y a plus de marge a prendre. A 200 % de texte, il faudrait que les
+   cartes s'ALLONGENT au lieu de se reduire — c'est-a-dire changer la facon
+   dont une carte repond a un debordement, pas changer une unite.
+
+   C'est donc une decision d'architecture, pas une correction. SIGNALE,
+   PAS TOUCHE : la mesure est ici pour qu'elle se prenne avec des nombres.
    ========================================================================== */
 
 .t-page   { font-family: var(--titre); font-size: 29px;   line-height: 1.15; color: var(--encre-titre); }

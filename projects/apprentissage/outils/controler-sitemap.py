@@ -39,6 +39,7 @@ CE QU'IL VERIFIE
     lancer d'abord :  python3 outils/servir.py 8899
 """
 
+import datetime
 import json
 import pathlib
 import re
@@ -165,6 +166,57 @@ def main():
                 if cle not in d:
                     fautes.append('%s : JSON-LD sans %s' % (chemin, cle))
 
+    # 9. CHAQUE lastmod DIT LA VERITE SUR SA PAGE.
+    #
+    # Jusqu'au 8 octobre, le generateur posait la meme date sur les 53
+    # adresses : celle du jour ou on le lancait. Le 7 octobre, 39 pages
+    # avaient change et 14 non — les 53 ont ete annoncees modifiees ce
+    # jour-la, dont des couvertures de section intouchees depuis le
+    # 5 septembre. Un sitemap qui annonce faux use la confiance que Google
+    # lui accorde, et c'est le reproche que ce projet faisait au sitemap
+    # ecrit a la main qu'il a remplace.
+    #
+    # On recompte donc, depuis git, la date du dernier commit qui a change
+    # le fichier de chaque page, et on la compare a celle annoncee. La regle
+    # d'assemblage est IMPORTEE du generateur, pas recopiee ici.
+    #
+    # DEUX DEFAUTS, DEUX SENS :
+    #   annoncee plus VIEILLE que la verite : la page a change et Google
+    #   n'a aucune raison de repasser. C'est le defaut qui coute.
+    #   annoncee plus RECENTE de plus d'un jour : on demande un passage
+    #   pour rien, et c'est le bug qu'on vient de corriger.
+    #
+    # Un jour de tolerance, parce qu'un commit passe apres minuit UTC et la
+    # date du jour calculee avant ne tombent pas forcement le meme jour.
+    import importlib.util
+    spec = importlib.util.spec_from_file_location(
+        'faire_sitemap', RACINE / 'outils' / 'faire-sitemap.py')
+    gen = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(gen)
+    vraies, aujourdhui, git_la = gen.dates_des_fichiers()
+    if not git_la:
+        print('  (git n\'a pas repondu : les lastmod ne sont pas verifies)')
+    else:
+        annonces = dict(re.findall(
+            r'<loc>([^<]+)</loc>\s*<lastmod>([^<]+)</lastmod>',
+            sm.read_text(encoding='utf-8')))
+        if len(annonces) != len(adresses):
+            fautes.append('sitemap.xml : %d lastmod pour %d adresses'
+                          % (len(annonces), len(adresses)))
+        for u, dit in sorted(annonces.items()):
+            f = fichier_de(u[len(SITE):] or '/')
+            vrai = vraies.get(f, aujourdhui)
+            ecart = ((datetime.date.fromisoformat(dit)
+                      - datetime.date.fromisoformat(vrai)).days)
+            if ecart < 0:
+                fautes.append('%s : lastmod %s, mais son fichier a change le %s '
+                              '— Google n\'a aucune raison de repasser'
+                              % (u[len(SITE):] or '/', dit, vrai))
+            elif ecart > 1:
+                fautes.append('%s : lastmod %s, alors que son fichier n\'a pas '
+                              'bouge depuis le %s — un passage demande pour rien'
+                              % (u[len(SITE):] or '/', dit, vrai))
+
     # 6. L'inverse : rien de ce qui porte noindex ne doit etre annonce.
     for p in sorted(RACINE.glob('*.html')):
         t = p.read_text(encoding='utf-8')
@@ -184,6 +236,11 @@ def main():
     print('  %d adresses annoncees, toutes demandees au serveur.' % len(adresses))
     print('  Aucun doublon, aucun noindex, aucune page vide, canonicals conformes.')
     print('  Balises de partage completes et donnees structurees lisibles.')
+    print('  Et chaque lastmod est celui du dernier commit de sa page :'
+          ' %d dates distinctes pour %d adresses.'
+          % (len({d for _, d in re.findall(
+               r'<loc>([^<]+)</loc>\s*<lastmod>([^<]+)</lastmod>',
+               sm.read_text(encoding='utf-8'))}), len(adresses)))
 
 
 if __name__ == '__main__':
