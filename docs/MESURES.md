@@ -3224,3 +3224,82 @@ Les cinq marqueurs de chaque langue présents (33 322, le zéro dans le
 tableau, les 222, le refus du mot « certifié », le crédit ODbL). **Paire
 hreflang correcte dans les deux sens**, et chaque article dans le sitemap de
 son domaine **seulement** — contrôlé dans les deux directions.
+
+## 8 octobre — 222 → 30 280 : le calcul existait, il n'avait jamais tourné
+
+Jour pair, approfondissement. Et le meilleur gain lecteur du mois, obtenu
+sans écrire une ligne d'article et sans appeler personne.
+
+### Le point de départ : hier soir
+
+Le relevé du 7 octobre disait : 33 322 hôtels, distance à une mosquée mesurée
+pour **222 (0,7 %)**, concentrés sur deux villes. J'avais aussi noté que le
+filtre « 🕌 Mosquée < 10 min » et le tri « par distance mosquée » des pages
+hôtels ne pouvaient donc rien trier sur 351 villes sur 353.
+
+Ce soir j'ai cherché pourquoi. Réponse : **`scripts/enrich-hotels-osm.mjs`
+calcule déjà exactement cette distance — il n'avait simplement jamais été
+lancé ailleurs qu'à Istanbul et Dubaï.** Son en-tête le dit même :
+« la distance à la mosquée la plus proche, à partir des mosquées déjà
+présentes dans la fiche ». Aucun réseau nécessaire.
+
+### Deux lignes de drapeau, et le calcul couvre le monde
+
+`--toutes` (toutes les fiches au lieu d'une liste à la main) et
+`--sans-overpass` (sauter l'appel réseau, que le proxy de cette machine
+bloque de toute façon). Le script savait déjà continuer sans Overpass ; le
+drapeau évite seulement 354 appels voués à échouer.
+
+```
+  avant : 222 hôtels sur 33 322   (0,7 %)   sur   2 villes
+  après : 30 280 hôtels           (90,9 %)  sur 339 villes
+  médiane 857 m · 17 025 hôtels à moins d'un kilomètre à pied
+```
+
+**Rien d'inventé, et c'est vérifiable** : les compteurs « politique alcool
+sourcée » et « restauration halal sourcée » restent à **0** après le passage,
+puisque ces deux-là demandent Overpass. Le diff est purement additif — trois
+champs ajoutés par hôtel, aucune valeur existante modifiée.
+
+### Ce que la page gagne vraiment
+
+Le tri par distance fonctionne (12, 13, 13, 14… minutes à pied dans l'ordre
+d'affichage sur Paris), et une phrase que la page ne pouvait pas produire
+apparaît d'elle-même :
+
+```
+  Istanbul    « La moitié de ces hôtels sont à  2 min à pied ou moins »
+  Zurich                                       11 min
+  Lagos                                        19 min
+  Reykjavik                                    19 min
+  Paris                                        22 min
+  Tokyo                                        35 min
+```
+
+Six villes, six vérités différentes. C'est le genre d'information que
+personne d'autre ne publie, et elle était à deux lignes de commande.
+
+### 🔴 Et ça rendait FAUX l'article d'hier
+
+L'article publié hier affichait « 222 (0,7 %) » dans son tableau. Mon propre
+travail de ce soir l'a périmé en une heure. Les deux versions sont corrigées,
+et elles **expliquent le saut** au lieu de le lisser :
+
+> « Ce chiffre valait 222 (0,7 %) la veille. Il ne vient d'aucune nouvelle
+> source : le calcul croise des coordonnées d'hôtels et des mosquées déjà
+> présentes dans nos fiches, et il n'avait simplement jamais été lancé
+> ailleurs qu'à Istanbul et Dubaï. »
+
+C'est la règle du 3 septembre, appliquée à moi-même : **une correction qui ne
+suit pas tous les chemins d'une donnée en ouvre un nouveau.** Un chiffre
+publié hier fait partie de ces chemins.
+
+### Vérifié servi
+
+Build du 08/10 00:16, `BUILD_ID` contrôlé avant lecture. 48 contrôles verts.
+· `/hotels/paris` : de **0 à 21** mentions de distance à pied, médiane
+  affichée, tri croissant.
+· La phrase d'honnêteté est intacte partout : « La politique alcool est
+  confirmée par OpenStreetMap pour 0 d'entre eux ». Vérifié sur les deux
+  domaines.
+· Les deux articles portent le nouveau chiffre **et** l'explication du saut.
