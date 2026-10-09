@@ -504,7 +504,21 @@ def page(num, nom, nom_ar, vs, voisins):
             h += '      <a href="#verset-%d">%d</a>\n' % (i, i)
         h += '    </nav>\n'
 
-    h += '\n    <ol class="versets">\n'
+    # UN TITRE SUR LE BLOC DES VERSETS. Mesure du 9 octobre : sur les
+    # 38 lecons, le SEUL <h2> de la page etait « Continuer », celui du bloc
+    # de maillage. Les versets — jusqu'a 46, jusqu'a 1 518 mots, et toute la
+    # substance de la page — n'etaient sous aucun titre. Quelqu'un qui
+    # parcourt la page par ses titres, au lecteur d'ecran, s'entendait
+    # annoncer « Sourate An-Nazi'at » puis « Continuer », et rien entre les
+    # deux. Le plan que Google lit disait la meme chose.
+    #
+    # LE TITRE N'AJOUTE AUCUN SENS, et c'est la meme regle que l'index des
+    # versets juste au-dessus : il nomme le bloc, il ne nomme pas les
+    # versets, ne les resume pas, ne les classe pas. Il ne reprend meme pas
+    # le nombre — le <h1> et la phrase de presentation le disent deja, et
+    # le repeter une troisieme fois n'apprendrait rien.
+    h += '\n    <h2 class="t-bloc">Le texte, verset par verset</h2>\n'
+    h += '    <ol class="versets">\n'
     for i, (a, f) in enumerate(vs, 1):
         h += """      <li class="verset" id="verset-%d">
         <span class="verset-n">Verset %d sur %d</span>

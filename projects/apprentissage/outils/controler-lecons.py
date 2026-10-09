@@ -244,6 +244,35 @@ def main():
     # passe a `poserTables`, et c'est lui qui ecrit « SOURATE AT-TIN » sur le
     # cartouche de chaque carte de QCM. `outils/coran/noms-sourates.json`,
     # lui, a fabrique les 38 lecons, les questions, le sitemap et la liste des
+    # LE BLOC DES VERSETS PORTE UN TITRE, ET C'EST LE PREMIER APRES LE <h1>.
+    #
+    # Mesure du 9 octobre : le seul <h2> d'une lecon etait « Continuer »,
+    # celui du bloc de maillage. Les versets — jusqu'a 46, jusqu'a 1 518 mots,
+    # toute la substance de la page — n'etaient sous aucun titre. Au lecteur
+    # d'ecran qui parcourt par les titres, la page annoncait « Sourate
+    # An-Nazi'at » puis « Continuer », et rien entre les deux.
+    #
+    # On verifie l'ORDRE, pas seulement la presence : un titre pose apres le
+    # bloc de maillage ne labelliserait rien. Et on verifie qu'il arrive AVANT
+    # le premier verset.
+    for f in sorted(RACINE.glob('lecon-sourate-*.html')):
+        h = f.read_text(encoding='utf-8')
+        titres = re.findall(r'<h([12])[^>]*>(.*?)</h\1>', h, re.S)
+        suite = [x[1] for x in titres if x[0] == '2']
+        if not suite:
+            fautes.append('%s : aucun <h2> — le texte n\'est sous aucun titre'
+                          % f.name)
+            continue
+        if 'verset par verset' not in suite[0]:
+            fautes.append('%s : le premier <h2> est « %s » ; le bloc des '
+                          'versets n\'est donc sous aucun titre'
+                          % (f.name, re.sub(r'<[^>]+>', '', suite[0]).strip()[:40]))
+        ou_titre = h.find('verset par verset</h2>')
+        ou_premier = h.find('<ol class="versets">')
+        if ou_titre < 0 or ou_premier < 0 or ou_titre > ou_premier:
+            fautes.append('%s : le titre du bloc n\'est pas pose avant les '
+                          'versets' % f.name)
+
     # 114.
     #
     # Ils etaient identiques le 29 septembre — et maintenus par personne :
@@ -335,6 +364,7 @@ def main():
     print('  %d ancres de verset relues, et les index (des %d versets) y menent.'
           % (versets_lus, SEUIL_INDEX))
     print('  Les 114 nombres de versets de sourates.html ont ete recomptes.')
+    print('  Chaque lecon titre son bloc de versets, avant le premier verset.')
 
 
 if __name__ == '__main__':
