@@ -141,6 +141,15 @@ for (const slug of villes) {
     }
 
     // ── Distance à la mosquée la plus proche (donnée maison) ──
+    // 9 octobre : on EFFACE avant de recalculer. Sans ça, un hôtel dont la
+    // mosquée de référence vient de disparaître de la fiche (purge des 158
+    // églises listées comme mosquées) gardait l'ancien nom — « Iglesia del
+    // Sagrado Corazón de Jesús » restait affiché comme mosquée la plus proche
+    // sur 183 hôtels. Un recalcul qui n'écrase que les cas trouvés laisse
+    // vivre les cas disparus.
+    delete h.mosqueeProcheM
+    delete h.mosqueeProcheNom
+    delete h.mosqueeProcheMin
     if (h.lat != null && mosquees.length) {
       let d = Infinity, nom = null
       for (const m of mosquees) {

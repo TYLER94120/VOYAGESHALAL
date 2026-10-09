@@ -3303,3 +3303,107 @@ Build du 08/10 00:16, `BUILD_ID` contrôlé avant lecture. 48 contrôles verts.
   confirmée par OpenStreetMap pour 0 d'entre eux ». Vérifié sur les deux
   domaines.
 · Les deux articles portent le nouveau chiffre **et** l'explication du saut.
+
+## 9 octobre — la basilique Saint-Marc était listée comme mosquée
+
+Jour impair, création. **Je n'ai pas écrit d'article, et c'est heureux :
+l'article que je préparais aurait publié une fausseté grave.**
+
+### Comment c'est arrivé
+
+L'enrichissement de la veille rendait possible un classement inédit : les
+villes par temps de marche jusqu'à un lieu de prière, depuis les hôtels.
+Calculé sur 306 villes, le haut du tableau sortait :
+
+```
+   1 min  Chefchaouen     Maroc
+   2 min  Boukhara, Mostar, Essaouira, Penang, Istanbul, Marrakech
+   3 min  Machhad, **Milan**, Nadjaf, **Florence**, Ispahan, **Malaga**
+```
+
+Milan et Florence à égalité avec Ispahan et Nadjaf. **Un résultat
+invraisemblable est un résultat à vérifier.** `milan.json` :
+
+```json
+  { "nom": "Chiesa di San Gottardo in Corte", "type": "Mosquée",
+    "description": "Lieu de prière (OpenStreetMap)." }
+  { "nom": "Cattedrale di Santa Maria del Fiore", "type": "Mosquée" }
+  { "nom": "Iglesia del Santo Cristo de la Salud", "type": "Mosquée" }
+```
+
+Un import en amont avait pris `amenity=place_of_worship` **sans filtrer
+`religion=muslim`**.
+
+### L'étendue
+
+**168 entrées dans 55 villes**, toutes marquées `"type": "Mosquée"` :
+
+```
+  Venise          14 sur 17      Basilica di San Marco, Chiesa del Redentore…
+  Milan           19 sur 39
+  Malaga          12 sur 17
+  Rio de Janeiro  10 sur 10      (la totalité de la liste)
+  Toulouse        10 sur 20      Basilique Saint-Sernin, Cathédrale Saint-Étienne
+  Florence         9 sur 11      Cattedrale di Santa Maria del Fiore
+  Rangoun          1             Naung Taw Gyi Pagoda
+```
+
+Ces lieux étaient **comptés dans les titres servis** — « Où prier à Venise :
+17 mosquées » — et, depuis la veille, **nommés sur les fiches d'hôtels** comme
+mosquée la plus proche. Mon enrichissement du 8 octobre n'a pas créé la
+faute : il l'a propagée sur un deuxième chemin, et c'est ce qui l'a rendue
+visible.
+
+### Ce qui est corrigé
+
+```
+  avant : 10 159 lieux de prière en fiche
+  après :  9 991   (168 retirés, trace dans data/purge-non-mosquees.json)
+
+  titres servis, vérifiés après coup :
+    Venise     « 17 mosquées »  →  « 1 mosquée »
+    Florence                    →  « 2 mosquées »
+    Milan                       →  « 17 mosquées »
+    /hotels/milan : médiane 3 min → 33 min
+```
+
+Rien n'est supprimé sans trace : les 168 entrées sont écrites avec leur ville
+et leur identifiant OSM, pour qu'un relevé ultérieur les réexamine une par une.
+
+### 🔴 Trois pièges dans ma propre correction
+
+**1. La règle naïve effaçait huit vraies mosquées.** « Kerk Street Mosque »
+(Johannesburg), « Mosquée de Saint-Fons » (Lyon), « Ermita Mosque »
+(Manille), « Église musulmane » (Kinshasa). D'où la double condition : un
+marqueur musulman **prime** sur le motif d'église. Vérifié en listant les
+gardes avant d'écrire la règle.
+
+**2. Le recalcul n'effaçait pas les valeurs périmées.** Après la purge,
+183 hôtels affichaient toujours « Iglesia del Sagrado Corazón de Jesús »
+comme mosquée la plus proche : l'enrichissement n'écrit que lorsqu'il trouve
+une mosquée à moins de 5 km, et laissait l'ancienne valeur quand la mosquée
+de référence venait de disparaître. Corrigé en effaçant les trois champs
+avant de recalculer. *Un recalcul qui n'écrase que les cas trouvés laisse
+vivre les cas disparus.*
+
+**3. Le test modifiait les données qu'il contrôle.** `test-non-mosquees.mjs`
+importe la règle depuis le script de purge — et l'import exécutait la purge à
+chaque construction. Corrigé par une garde « lancé directement ». Trouvé en
+lançant le test juste après l'avoir écrit.
+
+### Le garde-fou
+
+`scripts/test-non-mosquees.mjs`, dans `npm run build`. Il contrôle **les deux
+chemins** — les fiches et les hôtels — et commence par vérifier **sa propre
+règle** sur douze noms, dont les sept qui ne doivent jamais être écartés.
+La règle vit à un seul endroit, dans le script de purge, et le test l'importe :
+une règle à deux endroits est une règle qui divergera.
+
+**Vérifié en réintroduisant la faute** : « Basilica di San Marco » remise
+dans Venise → le test casse en nommant la ville et le lieu. Retirée → vert.
+
+### Et l'article ?
+
+Il attendra. Le classement par temps de marche est juste maintenant que les
+données le sont — mais je ne publie pas un palmarès le soir où j'en corrige
+la source. Il sera écrit sur des données reposées.
