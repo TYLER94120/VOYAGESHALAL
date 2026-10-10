@@ -4002,7 +4002,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Pratique',
     readTime: "5 min",
     publishedAt: '2026-10-05',
-    updatedAt: '2026-10-05',
+    updatedAt: '2026-10-10',
     tags: ["Aéroports", "Prière", "Pratique", "Méthode"],
     content: `<p>Tu es dans un terminal, l'heure tourne, tu ouvres l'application de cartes — et il n'y a rien. Ce n'est pas toi qui cherches mal. Nous avons mesuré, et le résultat explique tout.</p>
 
@@ -4033,6 +4033,13 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <p><strong>2. Emploie les mots du bâtiment.</strong> En France, demande <strong>« un lieu de culte »</strong> ou <strong>« une salle de recueillement »</strong> plutôt qu'une « salle de prière » : c'est le vocabulaire de la signalétique, et il obtient une réponse au lieu d'un haussement d'épaules. En anglais, <em>quiet room</em> ou <em>multi-faith room</em> marchent mieux que <em>prayer room</em> dans beaucoup d'aéroports européens.</p>
 <p><strong>3. Pour l'extérieur, en revanche, la carte est excellente.</strong> C'est exactement l'inverse : les mosquées alentour, elle les connaît. <a href="/mosquee-proche">Notre outil mosquée la plus proche</a> s'appuie sur ces données-là, qui sont bonnes. Mais regarde la colonne « le plus proche » ci-dessus : <strong>1,3 km au mieux</strong>, et souvent plus de 2 km. Sortir d'un terminal pour y aller n'est jamais une promenade.</p>
 
+<h2>L'autre moitié du problème : la carte se trompe aussi sur ce qu'elle montre</h2>
+<p>Jusqu'ici nous parlions d'absence. Il y a pire, et nous en avons fait les frais : <strong>un lieu de culte cartographié peut être rangé dans la mauvaise religion</strong>.</p>
+<p>Le 9 octobre, en préparant un classement des villes par temps de marche jusqu'à une mosquée, nos propres chiffres ont sorti <strong>Milan, Florence et Malaga à trois minutes</strong>, à égalité avec Ispahan et Nadjaf. Un résultat invraisemblable est un résultat à vérifier. Nos données contenaient :</p>
+<p><em>« Cattedrale di Santa Maria del Fiore » · « Chiesa di San Gottardo in Corte » · « Basilica di San Marco » — chacune enregistrée chez nous comme lieu de prière musulman.</em></p>
+<p>Au total <strong>168 églises, cathédrales, synagogues et une pagode</strong> dans 55 villes, dont <strong>Venise 14 sur 17</strong> et <strong>Rio de Janeiro 10 sur 10</strong>. La cause : un import qui avait pris l'étiquette générique « lieu de culte » <strong>sans filtrer la religion</strong>. Elles sont retirées, et un contrôle automatique empêche désormais leur retour — <a href="/a-propos#donnees">notre méthode</a>.</p>
+<p><strong>Pourquoi te le dire ?</strong> Parce que la leçon vaut pour toi comme pour nous : sur une carte, un repère « lieu de culte » n'est pas une promesse de mosquée. Si tu te déplaces vers un point trouvé sur une application, <strong>vérifie le nom avant de marcher vingt minutes</strong>. Et si le nom ne dit rien, c'est qu'il ne dit rien.</p>
+
 <h2>Ce que nous faisons de ce constat sur ce site</h2>
 <p>Nous ne publions pas une salle de prière que nous n'avons pas vérifiée — c'est la règle de la maison, et ce relevé montre pourquoi elle compte : une base de données silencieuse n'est pas une base de données qui dit non. Nos guides par aéroport disent donc, à chaque fois, <strong>d'où vient l'information et ce que nous ignorons</strong>.</p>
 <p>Et quand nous mesurons une distance jusqu'à une mosquée alentour, c'est avec ces données-là, en l'annonçant comme telles : <a href="/blog/ou-prier-aeroports">notre guide des salles de prière en aéroport</a> en donne le tableau pour huit aéroports européens.</p>
@@ -4055,7 +4062,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Practical',
     readTime: "5 min",
     publishedAt: '2026-10-05',
-    updatedAt: '2026-10-05',
+    updatedAt: '2026-10-10',
     lang: 'en',
     tags: ['airport', 'prayer', 'method', 'muslim travel'],
     content: `<p>You are in a terminal, the window is closing, you open the maps app — and there is nothing. You are not searching badly. We measured it, and the result explains everything.</p>
@@ -4086,6 +4093,13 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <p><strong>1. Inside, ask — do not search a screen.</strong> The information desk and the security staff know the building better than any database, and they are the only source that is current.</p>
 <p><strong>2. Use the building's own words.</strong> In many European airports, <em>quiet room</em> or <em>multi-faith room</em> gets an answer where <em>prayer room</em> gets a blank look. In France, ask for <strong>« un lieu de culte »</strong> or <strong>« une salle de recueillement »</strong> — that is what the signage says.</p>
 <p><strong>3. For outside, by contrast, the map is excellent.</strong> It is exactly the other way round: the mosques around an airport, it knows. <a href="/mosque-near-me">Our nearest-mosque tool</a> runs on that data, which is good. But look at the "nearest" column above: <strong>1.3 km at best</strong>, and usually over 2 km. Leaving a terminal for one is never a stroll.</p>
+
+<h2>The other half of the problem: the map also gets wrong what it does show</h2>
+<p>So far we have talked about absence. There is worse, and it bit us: <strong>a mapped place of worship can be filed under the wrong religion</strong>.</p>
+<p>On 9 October, while preparing a ranking of cities by walking time to a mosque, our own figures put <strong>Milan, Florence and Malaga at three minutes</strong>, level with Isfahan and Najaf. An implausible result is a result to check. Our data contained:</p>
+<p><em>"Cattedrale di Santa Maria del Fiore" · "Chiesa di San Gottardo in Corte" · "Basilica di San Marco" — each recorded by us as a Muslim prayer place.</em></p>
+<p>In total <strong>168 churches, cathedrals, synagogues and one pagoda</strong> across 55 cities, including <strong>Venice 14 out of 17</strong> and <strong>Rio de Janeiro 10 out of 10</strong>. The cause: an import that took the generic "place of worship" tag <strong>without filtering by religion</strong>. They are removed, and an automated check now blocks their return.</p>
+<p><strong>Why tell you?</strong> Because the lesson applies to you as much as to us: on a map, a "place of worship" pin is not a promise of a mosque. If you are heading for a point found in an app, <strong>check the name before walking twenty minutes</strong>. And if the name tells you nothing, then it tells you nothing.</p>
 
 <h2>What we do with this on this site</h2>
 <p>We do not publish a prayer room we have not verified — that is the house rule, and this survey shows why it matters: <strong>a silent database is not a database saying no.</strong> So our airport guides always say where the information comes from and what we do not know.</p>

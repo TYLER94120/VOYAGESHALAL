@@ -3407,3 +3407,83 @@ dans Venise → le test casse en nommant la ville et le lieu. Retirée → vert.
 Il attendra. Le classement par temps de marche est juste maintenant que les
 données le sont — mais je ne publie pas un palmarès le soir où j'en corrige
 la source. Il sera écrit sur des données reposées.
+
+## 10 octobre — la bonne nouvelle vérifiée, et la leçon rendue au lecteur
+
+Jour pair, approfondissement. Suite directe de la veille, en deux temps.
+
+### 1. Le troisième chemin : vérifié, et il était propre
+
+Après la purge des 168 églises dans `mosqueesPrincipales`, la question qui
+s'imposait : **le même import non filtré a-t-il contaminé la base OSM par
+pays** (`data/osm/mosquees/*.json`), celle qui alimente les compteurs de
+titres et `/mosquee-proche` ?
+
+```
+  159 150 lieux relus sur 14 pays
+        2 suspects   (0,00 %)
+          gb.json : « Bethel Chapel »
+          sa.json : « Lihyanite temple »
+```
+
+**Non.** Cet import-là filtrait bien `religion=muslim`. C'est une bonne
+nouvelle, et elle méritait d'être **mesurée plutôt que supposée** — surtout
+la veille d'une nuit où j'ai découvert l'inverse ailleurs. Les deux entrées
+restantes sont retirées, et le test garde désormais ce chemin aussi :
+
+```
+  ✅ 9 991 en fiche · 159 148 dans les bases pays · 30 086 hôtels
+```
+
+### 🔴 Un test de la maison m'a arrêté, et il avait raison
+
+Le build a cassé immédiatement après la purge :
+
+```
+  ❌ compteurs.json : GB annonce 1411, les fichiers contiennent 1410
+  ❌ compteurs.json : SA annonce 13000, les fichiers contiennent 12999
+```
+
+`data/osm/compteurs.json` tient les totaux par pays et par ville, et
+`test-mosquees-osm.mjs` vérifie qu'ils correspondent aux fichiers. Retirer
+deux lieux sans recalculer les compteurs laissait le site annoncer deux
+lieux de prière qui n'existent plus dans ses propres données.
+
+C'est exactement la forme de défaut de cette semaine — **une correction qui
+ne suit pas tous les chemins d'une donnée en ouvre un nouveau** — sauf que
+cette fois un garde-fou écrit avant moi l'a attrapée. `--compteurs` relancé,
+build vert.
+
+### 2. L'approfondissement : rendre la leçon au lecteur
+
+L'article du 5 octobre expliquait pourquoi **aucune carte ne montre** la
+salle de prière d'un terminal. Il lui manquait l'autre moitié, que nous
+venions d'apprendre à nos frais : **une carte se trompe aussi sur ce qu'elle
+montre.** Un repère « lieu de culte » n'est pas une promesse de mosquée.
+
+Les deux langues portent maintenant le récit complet — le classement
+invraisemblable, les trois noms (« Cattedrale di Santa Maria del Fiore »,
+« Basilica di San Marco »), les 168 entrées dans 55 villes, Venise 14 sur 17,
+Rio 10 sur 10, la cause (étiquette générique sans filtre de religion), la
+correction et le contrôle automatique.
+
+Et la conséquence pratique, qui est le vrai cadeau au lecteur :
+**si tu te déplaces vers un point trouvé dans une application, vérifie le nom
+avant de marcher vingt minutes. Et si le nom ne dit rien, c'est qu'il ne dit
+rien.**
+
+Raconter notre propre faute sur la page qui traite des limites des cartes
+vaut mieux que la ranger dans un carnet : c'est là qu'elle sert.
+
+### Vérifié servi
+
+Build du 10/10 00:13, `BUILD_ID` contrôlé avant lecture. 49 contrôles verts.
+
+```
+  FR  200   1 363 mots   31 liens testés, 0 cassé
+  EN  200   1 225 mots   32 liens testés, 0 cassé
+```
+
+Les quatre marqueurs de chaque langue présents. Et les titres de villes
+restent justes après recalcul des compteurs : Venise « 1 mosquée »,
+Florence « 2 mosquées », Milan « 17 mosquées ».
