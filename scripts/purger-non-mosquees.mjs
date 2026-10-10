@@ -110,7 +110,37 @@ if (!DRY) {
   fs.writeFileSync(f, JSON.stringify({ purgeLe: new Date().toISOString().slice(0, 10), combien: fusion.length, entrees: fusion }, null, 2))
 }
 
-console.log(`\n${retires} entrée(s) retirée(s) dans ${villesTouchees} ville(s)${DRY ? ' (essai à blanc)' : ''}.`)
+
+// ── Second chemin : la base OSM par pays ──
+// 10 octobre. Après la purge des fiches, j'ai vérifié si le même import non
+// filtré avait contaminé `data/osm/mosquees/*.json`, qui alimente les
+// compteurs de titres et /mosquee-proche. **Bonne nouvelle mesurée : non.**
+// 2 suspects sur 159 150 lieux (0,00 %) — cet import-là filtrait bien
+// `religion=muslim`. Les deux restants sont retirés ici, et le test garde
+// désormais ce chemin aussi.
+let paysTouches = 0, retiresPays = 0
+const dossierPays = path.join(process.cwd(), 'data', 'osm', 'mosquees')
+if (fs.existsSync(dossierPays)) {
+  for (const f of fs.readdirSync(dossierPays).filter((x) => x.endsWith('.json'))) {
+    const chemin = path.join(dossierPays, f)
+    const base = JSON.parse(fs.readFileSync(chemin, 'utf8'))
+    const liste = Array.isArray(base) ? base : base.lieux
+    if (!Array.isArray(liste)) continue
+    const jete = liste.filter((p) => estNonMusulman(p.nom))
+    if (!jete.length) continue
+    paysTouches++
+    retiresPays += jete.length
+    for (const m of jete) trace.push({ ville: `osm:${f.replace(/\.json$/, '')}`, nom: m.nom, id: m.id ?? null, lat: m.lat, lng: m.lng })
+    console.log(`${DRY ? '·' : '✓'} ${('osm/' + f).padEnd(22)} ${liste.length} → ${liste.length - jete.length}  (retirés : ${jete.map((m) => m.nom).join(' · ')})`)
+    if (!DRY) {
+      const garde = liste.filter((p) => !estNonMusulman(p.nom))
+      if (Array.isArray(base)) fs.writeFileSync(chemin, JSON.stringify(garde, null, 2))
+      else { base.lieux = garde; base.total = garde.length; fs.writeFileSync(chemin, JSON.stringify(base, null, 2)) }
+    }
+  }
+}
+
+console.log(`\n${retires} entrée(s) retirée(s) dans ${villesTouchees} ville(s) et ${retiresPays} dans ${paysTouches} base(s) pays${DRY ? ' (essai à blanc)' : ''}.`)
 if (!DRY) console.log('Trace conservée dans data/purge-non-mosquees.json — rien n\'est perdu.')
 
 }

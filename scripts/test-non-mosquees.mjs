@@ -78,5 +78,24 @@ for (const f of readdirSync('data/villes').filter((x) => x.endsWith('.json'))) {
   }
 }
 
+// ── Troisième chemin : la base OSM par pays ──
+// 10 octobre. Ce sont ces fichiers qui alimentent les compteurs de titres
+// (« Istanbul : 1 493 lieux de prière ») et /mosquee-proche. Mesuré après la
+// purge des fiches : 2 suspects sur 159 150 lieux — cet import-là filtrait
+// bien `religion=muslim`, et c'est une bonne nouvelle qui méritait d'être
+// vérifiée plutôt que supposée. Le chemin est gardé quand même.
+let lieuxPays = 0
+for (const f of readdirSync('data/osm/mosquees').filter((x) => x.endsWith('.json'))) {
+  const base = JSON.parse(readFileSync(`data/osm/mosquees/${f}`, 'utf8'))
+  const liste = Array.isArray(base) ? base : base.lieux
+  if (!Array.isArray(liste)) continue
+  for (const m of liste) {
+    lieuxPays++
+    if (estNonMusulman(m.nom)) {
+      casse(`data/osm/mosquees/${f} contient « ${m.nom} » — un import de lieux de culte sans filtre religion=muslim.`)
+    }
+  }
+}
+
 if (fautes) { console.error(`\n${fautes} faute(s) — build arrêté.`); process.exit(1) }
-console.log(`✅ lieux de prière : ${lieux} relus et ${hotels} hôtels, aucune église, synagogue ni pagode annoncée comme mosquée.`)
+console.log(`✅ lieux de prière : ${lieux} en fiche, ${lieuxPays} dans les bases pays et ${hotels} hôtels — aucune église, synagogue ni pagode annoncée comme mosquée.`)
