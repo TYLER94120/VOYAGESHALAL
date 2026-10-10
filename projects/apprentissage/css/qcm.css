@@ -104,6 +104,25 @@
 /* La serie est desactivable : la pastille disparait, rien d'autre ne change. */
 .serie[hidden] { display: none; }
 
+/* ON NE CACHE PAS UN `display: flex` AVEC L'ATTRIBUT `hidden` SEUL.
+   Mesure du 10 octobre. `lancer-qcm.js` posait bien `pied.hidden = true` sur
+   ses ecrans d'erreur depuis le premier jour, et le pied restait a l'ecran :
+   la regle `[hidden] { display: none }` du navigateur est ecrasee par
+   `.qcm-pied { display: flex }`, qui vient de cette feuille. Une page qui
+   n'avait rien a jouer affichait donc encore « Passer » et « Valider », et
+   son compteur annoncait « 1 / 20 » sans une seule carte.
+
+   UNE SEULE ligne manquait, celle du pied — verifie en la retirant : le
+   compteur et la barre, eux, n'ont pas de `display` dans cette feuille et
+   l'attribut `hidden` suffit a les faire disparaitre. Les deux lignes qui
+   suivent la premiere ne reparent donc rien aujourd'hui ; elles sont la pour
+   que poser un `display` sur l'un ou l'autre plus tard ne rouvre pas la meme
+   faute en silence. */
+.qcm-pied[hidden] { display: none; }
+/* Celles-ci ne changent rien aujourd'hui. Voir ci-dessus. */
+.qcm-compte[hidden] { display: none; }
+#qcm-progres[hidden] { display: none; }
+
 /* --------------------------------------------------------------------------
    La barre segmentee : un segment par question
    -------------------------------------------------------------------------- */

@@ -441,7 +441,29 @@ def main():
         desc = description_de(sec, total, len(themes))
         canon = '%s/section/%s' % (SITE, sec['slug'])
 
-        jsonld = json.dumps({
+        # LES NIVEAUX QUI EXISTENT VRAIMENT, PAS « debutant » POUR LES ONZE.
+        #
+        # Les onze pages pleines declaraient toutes « educationalLevel:
+        # debutant » dans leurs donnees structurees. Comptage du 10 octobre,
+        # dans data/index-sections.json :
+        #
+        #     les-invocations      0 / 0 / 176     100 % de niveau 3
+        #     vocabulaire-arabe    4 / 4 / 1 251    99 %
+        #     zakat-et-aumone      5 / 0 / 111      96 %
+        #     piliers-de-la-foi    6 / 0 / 83       93 %
+        #     la-priere           10 / 0 / 115      92 %
+        #     sens-des-sourates   32 / 31 / 548     90 %
+        #
+        # « Les invocations » n'a PAS UNE SEULE question de niveau 1 ou 2, et
+        # annoncait « debutant » a Google dans un format qu'il lit
+        # litteralement. C'est la faute que index.html se refuse pour son
+        # SearchAction : declarer une chose que le site n'a pas.
+        #
+        # On declare donc les niveaux QUI ONT des questions, avec les noms que
+        # le site emploie a l'ecran. Une seule liste, recomptee a chaque
+        # fabrication : elle ne peut pas vieillir.
+        niveaux_pleins = [NIVEAUX[v] for v in (1, 2, 3) if par_niveau.get(v)]
+        corps_jsonld = {
             '@context': 'https://schema.org',
             '@type': 'LearningResource',
             'name': sec['nom'],
@@ -449,9 +471,15 @@ def main():
             'inLanguage': 'fr',
             'description': desc,
             'learningResourceType': 'qcm',
-            'educationalLevel': 'debutant',
             'isAccessibleForFree': True,
-        }, ensure_ascii=False, indent=1)
+        }
+        # Une section vide ne declare aucun niveau : elle n'en a aucun. Elle
+        # porte deja noindex, mais une donnee structuree fausse resterait
+        # fausse.
+        if niveaux_pleins:
+            corps_jsonld['educationalLevel'] = (
+                niveaux_pleins[0] if len(niveaux_pleins) == 1 else niveaux_pleins)
+        jsonld = json.dumps(corps_jsonld, ensure_ascii=False, indent=1)
 
         page = TETE % {
             'titre': echapper(titre),

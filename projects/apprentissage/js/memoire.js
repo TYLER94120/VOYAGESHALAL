@@ -38,6 +38,12 @@ var RETOUR_PASSE = 4;   // une question passee, 4 cartes plus loin
    plus depasser 40 cartes. Si tu preferes 2, c'est ici et nulle part
    ailleurs. */
 var RETOURS_MAX = 1;
+/* LES NOMS DES TROIS NIVEAUX, A UN SEUL ENDROIT.
+   Ils etaient ecrits dans section.js, dans faire-sections-pages.py, et il
+   fallait les reecrire une troisieme fois dans lancer-qcm.js le 10 octobre
+   pour nommer un niveau vide. Trois copies d'une meme table finissent
+   toujours par differer : celle-ci est la seule du JavaScript. */
+var NOMS_NIVEAU = { 1: 'Début', 2: 'Intermédiaire', 3: 'Expert' };
 var QCM_PRIORITAIRES = 3;   // une question `aRevoir` est prioritaire 3 QCM durant
 var JUSTES_POUR_SORTIR = 3; // trois bonnes reponses consecutives et elle sort
 var MINI_POUR_LE_JOUR = 10; // un QCM d'au moins 10 questions compte pour la serie
@@ -297,6 +303,7 @@ window.IPAP_MEMOIRE = {
   RETOUR_RATE: RETOUR_RATE,
   RETOUR_PASSE: RETOUR_PASSE,
   RETOURS_MAX: RETOURS_MAX,
+  NOMS_NIVEAU: NOMS_NIVEAU,
   MINI_POUR_LE_JOUR: MINI_POUR_LE_JOUR,
   vide: vide,
   charger: charger,

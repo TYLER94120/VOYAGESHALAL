@@ -135,12 +135,80 @@
              debut: r.debut || Date.now() };
   }
 
+  /* UN ECRAN QUI N'A RIEN A JOUER NE GARDE NI COMPTEUR NI BOUTONS.
+     Le pied etait deja masque — `pied.hidden = true` est la depuis le premier
+     jour — mais `.qcm-pied { display: flex }` ecrasait la regle du navigateur
+     et il restait a l'ecran : « Passer » et « Valider » sous un message qui
+     dit qu'il n'y a rien, et « 1 / 20 » en haut sans une seule carte. Les
+     ligne qui manquait est dans css/qcm.css — une seule, mesuree : le
+     compteur et la barre obeissaient deja a `hidden`.
+     La croix de sortie, elle, RESTE : c'est le chemin pour s'en aller. */
+  function deshabiller() {
+    var pied = document.querySelector('.qcm-pied');
+    if (pied) { pied.hidden = true; }
+    var compte = document.getElementById('qcm-compte');
+    if (compte) { compte.hidden = true; }
+    var progres = document.getElementById('qcm-progres');
+    if (progres) { progres.hidden = true; }
+  }
+
   function echouer(message) {
     document.getElementById('zone').innerHTML =
       '<div style="padding:0 20px"><p class="t-page">Rien à jouer</p>'
       + '<p style="margin-top:12px">' + message + ' '
       + '<a href="sections.html">Choisir une autre section</a>.</p></div>';
-    document.querySelector('.qcm-pied').hidden = true;
+    deshabiller();
+  }
+
+  /* UN PAQUET VIDE ALORS QUE LA BANQUE NE L'EST PAS : CE N'EST PAS LA MEME
+     FAUTE, ET CE N'ETAIT PAS LE MEME MESSAGE QU'IL FALLAIT.
+
+     Mesure du 10 octobre. `qcm.html?section=les-invocations&niveau=1`
+     affichait « Cette section n'a pas encore de questions. » — sur une
+     section qui en a 176. Le niveau d'une question est RECALCULE a chaque
+     fabrication par outils/classer-niveaux.py, et il se trouve que les 176
+     sont toutes au niveau 3. Onze couples (section, niveau) sur trente-trois
+     sont dans ce cas aujourd'hui, de « Le comportement » qui n'a que du
+     niveau 1 aux « Invocations » qui n'ont que du niveau 3.
+
+     L'ecran de reglages, lui, fait les choses bien : il desactive un niveau
+     vide et preselectionne un niveau qui a des questions, meme quand la
+     memoire du telephone en demandait un autre. On n'arrive donc ici que par
+     une adresse tapee ou gardee ailleurs — et sur ce chemin-la, le site
+     disait quelque chose de faux.
+
+     On nomme maintenant la vraie raison, et on propose les niveaux QUI ONT
+     des questions plutot que d'envoyer la personne ailleurs : elle etait au
+     bon endroit. */
+  function echouerNiveau(banque, niveau) {
+    var compte = {};
+    var i;
+    for (i = 0; i < banque.length; i++) {
+      var v = banque[i].niveau || 0;
+      compte[v] = (compte[v] || 0) + 1;
+    }
+    var pleins = [];
+    for (v = 1; v <= 3; v++) {
+      if (compte[v]) { pleins.push(v); }
+    }
+    if (!niveau || !pleins.length) {
+      return echouer('Cette section n\'a pas encore de questions.');
+    }
+    var liens = [];
+    for (i = 0; i < pleins.length; i++) {
+      liens.push('<a href="qcm.html?section=' + encodeURIComponent(slug)
+        + '&niveau=' + pleins[i] + '">' + M.NOMS_NIVEAU[pleins[i]]
+        + '</a> (' + compte[pleins[i]] + ')');
+    }
+    document.getElementById('zone').innerHTML =
+      '<div style="padding:0 20px"><p class="t-page">Rien à ce niveau</p>'
+      + '<p style="margin-top:12px">Cette section a bien '
+      + banque.length + ' questions, mais aucune au niveau «&nbsp;'
+      + M.NOMS_NIVEAU[niveau] + '&nbsp;». Le niveau est recalculé à chaque mise '
+      + 'à jour : celui-ci est vide pour le moment.</p>'
+      + '<p style="margin-top:12px">Ce qui se joue ici&nbsp;: '
+      + liens.join(', ') + '.</p></div>';
+    deshabiller();
   }
 
   var p = parametres();
@@ -199,7 +267,7 @@
       // laisser la personne devant un ecran vide.
       var repris = (p.reprise === '1') ? reprendre(d, banque, slug) : null;
       var paquet = repris ? repris.paquet : composer(banque, d, reglages, reglages.nombre);
-      if (!paquet.length) { return echouer('Cette section n\'a pas encore de questions.'); }
+      if (!paquet.length) { return echouerNiveau(banque, reglages.niveau); }
 
       var session = new Q.Session(paquet, repris ? repris.reglages : reglages, slug);
       if (repris) {

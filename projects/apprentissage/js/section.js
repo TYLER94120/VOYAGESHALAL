@@ -191,7 +191,7 @@
         2: (e.niveaux && e.niveaux['2']) || 0,
         3: (e.niveaux && e.niveaux['3']) || 0
       };
-      var LIB = { 1: 'Début', 2: 'Intermédiaire', 3: 'Expert' };
+      var LIB = M.NOMS_NIVEAU;
       h += '<div class="pile-11"><h2 class="t-bloc">Les trois niveaux</h2>'
         + '<div class="couv-niveaux">';
       // Espacer ici aussi : cette couverture ecrivait « 1 259 » en haut et

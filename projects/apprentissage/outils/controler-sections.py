@@ -211,6 +211,41 @@ def main():
                           '%d lecons sur le disque'
                           % (page, sans_balises(m.group(1))[:40], lecons))
 
+    # 12. educationalLevel DECLARE LES NIVEAUX QUI EXISTENT, PAS « debutant ».
+    #
+    # Les onze pages pleines annoncaient toutes « debutant » dans leurs
+    # donnees structurees. Comptage du 10 octobre : « Les invocations » n'a
+    # pas une seule question de niveau 1 ou 2 — 176 sur 176 sont au niveau 3 —
+    # et huit sections sur onze sont a plus de 90 % de niveau 3. Declarer
+    # « debutant » a Google, dans un format qu'il lit litteralement, est la
+    # faute meme que index.html se refuse pour son SearchAction.
+    #
+    # On recompte les niveaux dans les BANQUES, et on exige que la liste
+    # declaree soit exactement celle des niveaux qui ont des questions, dans
+    # l'ordre. Une section vide ne declare rien : elle n'a aucun niveau.
+    NOMS_NIVEAU = {1: 'Début', 2: 'Intermédiaire', 3: 'Expert'}
+    for sec in secs:
+        f = RACINE / 'data' / 'questions' / ('%s.json' % sec['slug'])
+        banque = json.loads(f.read_text(encoding='utf-8')) if f.is_file() else []
+        pleins = [NOMS_NIVEAU[v] for v in (1, 2, 3)
+                  if any(q.get('niveau') == v for q in banque)]
+        attendu = (None if not pleins
+                   else pleins[0] if len(pleins) == 1 else pleins)
+        code, t_sec = prendre('%s/section/%s' % (BASE, sec['slug']))
+        if code != 200:
+            continue
+        m = re.search(r'<script type="application/ld\+json">(.*?)</script>',
+                      t_sec, re.S)
+        if not m:
+            fautes.append('/section/%s : aucune donnee structuree' % sec['slug'])
+            continue
+        dit = json.loads(m.group(1)).get('educationalLevel')
+        if dit != attendu:
+            fautes.append('/section/%s : educationalLevel annonce %s, les '
+                          'banques donnent %s'
+                          % (sec['slug'], json.dumps(dit, ensure_ascii=False),
+                             json.dumps(attendu, ensure_ascii=False)))
+
     # 11. LA DESCRIPTION DE L'ACCUEIL : SA FENETRE, SES NOMBRES, SES TROIS COPIES.
     #
     # index.html est ecrit a la main — aucun generateur ne le produit. Sa
@@ -391,6 +426,8 @@ def main():
     print('  Description de l\'accueil : 153 caracteres, ses deux nombres'
           ' recomptes,')
     print('  et le meme texte dans ses trois copies — meta, og, donnee structuree.')
+    print('  Chaque educationalLevel liste les niveaux que sa banque contient'
+          ' vraiment.')
     print('  Deux titres retombent sur le nom seul, « Le comportement » (64 car.)')
     print('  et « Vocabulaire arabe » (65) : les memes deux que la documentation.')
 

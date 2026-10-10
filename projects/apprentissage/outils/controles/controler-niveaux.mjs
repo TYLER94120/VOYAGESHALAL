@@ -74,6 +74,66 @@ if (p1['1'] !== 20) rate('le niveau 1 ne donne pas un paquet de niveau 1', JSON.
 else ok('le niveau 1 donne bien un paquet de niveau 1');
 
 if (err.length) rate('erreurs JavaScript', err.join(' | ')); else ok('aucune erreur JavaScript');
+
+/* UN NIVEAU VIDE SUR UNE SECTION QUI N'EST PAS VIDE.
+ *
+ * Mesure du 10 octobre : `qcm.html?section=les-invocations&niveau=1`
+ * affichait « Cette section n'a pas encore de questions. » — sur une section
+ * qui en a 176, toutes au niveau 3. Onze couples (section, niveau) sur
+ * trente-trois sont dans ce cas. L'ecran de reglages, lui, desactive un
+ * niveau vide et en preselectionne un autre : on n'arrive la que par une
+ * adresse tapee ou gardee ailleurs. Le message n'en etait pas moins faux.
+ *
+ * Et l'ecran gardait son compteur « 1 / 20 » et ses boutons « Passer » et
+ * « Valider » : `pied.hidden = true` etait bien pose, mais
+ * `.qcm-pied { display: flex }` ecrasait la regle du navigateur.
+ *
+ * On verifie les trois choses sur un cas de chaque sorte : le niveau vide
+ * d'une section pleine, et la section vraiment vide. */
+for (const [slug, niveau, pleine] of [['les-invocations', 1, 176],
+                                      ['le-comportement', 3, 11],
+                                      ['vie-du-prophete', 1, 0]]) {
+  const q = await ctx.newPage();
+  const e2 = []; q.on('pageerror', (x) => e2.push(x.message));
+  await q.goto(`${B}/qcm.html?section=${slug}&niveau=${niveau}`,
+    { waitUntil: 'domcontentloaded' });
+  await attendrePolices(q);
+  await q.waitForTimeout(800);
+  const r = await q.evaluate(() => {
+    const vu = (s) => [...document.querySelectorAll(s)]
+      .filter((x) => x.offsetParent !== null).length;
+    return {
+      texte: document.body.innerText.replace(/\s+/g, ' '),
+      liens: [...document.querySelectorAll('#zone a')].map((a) => a.textContent.trim()),
+      pied: vu('.qcm-pied'), compte: vu('.qcm-compte'), barre: vu('#qcm-progres'),
+      cartes: vu('.reponse'),
+    };
+  });
+  const quoi = `${slug} niveau ${niveau}`;
+  if (r.cartes) { rate(`${quoi} : des cartes s'affichent alors que le niveau est vide`); }
+  if (r.pied || r.compte || r.barre) {
+    rate(`${quoi} : l'ecran garde son pied, son compteur ou sa barre`,
+      `pied ${r.pied}, compteur ${r.compte}, barre ${r.barre}`);
+  } else { ok(`${quoi} : ni compteur ni boutons sur un ecran sans carte`); }
+  if (pleine) {
+    if (/pas encore de questions|pas encore ouverte/.test(r.texte)) {
+      rate(`${quoi} : le site dit la section vide, elle a ${pleine} questions`);
+    } else if (!r.texte.includes(String(pleine))) {
+      rate(`${quoi} : le message ne dit pas combien la section en a`, r.texte.slice(0, 70));
+    } else if (!r.liens.length) {
+      rate(`${quoi} : aucun niveau de rechange propose`);
+    } else {
+      ok(`${quoi} : le message dit vrai et propose ${r.liens.join(', ')}`);
+    }
+  } else if (!/pas encore/.test(r.texte)) {
+    rate(`${quoi} : une section vraiment vide doit le dire`, r.texte.slice(0, 70));
+  } else {
+    ok(`${quoi} : une section vraiment vide le dit`);
+  }
+  if (e2.length) { rate(`${quoi} : erreur JavaScript`, e2[0].slice(0, 70)); }
+  await q.close();
+}
+
 await nav.close();
 console.log(ec===0 ? '\nVERT' : `\nROUGE (${ec})`);
 process.exit(ec===0?0:1);
