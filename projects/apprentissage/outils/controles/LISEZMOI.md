@@ -48,6 +48,7 @@ regressions. Les controles Python, eux, etaient verts : c'est le signe.
 | `controler-photo.mjs` | le type photo dans les deux sens : avec un catalogue complet la question se joue, avec un catalogue incomplet elle est ecartee du tirage |
 | `controler-chaine.mjs` | grille, couverture, reglages, QCM par les vraies adresses — et l'ancienne adresse qui doit continuer de marcher |
 | `controler-recette.mjs` | les treize points du §9 qui ne doivent pas avoir bouge |
+| `controler-sauvegarde.mjs` | **la seule sauvegarde qui existe**, par le chemin du lecteur : le bouton télécharge, le fichier contient la progression, le champ de fichier la rend à l'identique, et un fichier illisible n'écrase rien |
 | `controler-contraste.mjs` | le plancher #5F6D66 et le seuil WCAG AA, mesures sur ce que le navigateur calcule |
 | `controler-parcours.mjs` | une partie de bout en bout : la carte, la correction, la source, la serie, le retour d'une question ratee |
 | `controler-boucle.mjs` | la boucle du jeu sur une longue partie |
