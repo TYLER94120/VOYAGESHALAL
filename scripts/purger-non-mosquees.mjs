@@ -44,22 +44,43 @@ const DRY = process.argv.includes('--dry')
 
 /** Noms qui désignent un lieu de culte NON musulman. Liste volontairement
  *  conservatrice : on préfère laisser passer un doute que retirer une mosquée. */
-const NON_MUSULMAN = /\b(chiesa|iglesia|igreja|cattedrale|catedral|cathedral|cath[ée]drale|basilica|basilique|duomo|battistero|baptistery|[ée]glise|church|chapel|chapelle|cappella|kapelle|kerk|kirche|kirke|kyrka|synagogue|sinagoga|temple|temppeli|pagoda|pagode|wat |monast|abbey|abbaye|abbazia|convent|couvent|santuario|sanctuaire|ermita|parroquia|paroisse|notre-dame|saint-|sankt |st\.? mary|our lady|sacre[- ]coeur|sacro|basilika)\b/i
+// 11 octobre : élargi après un contrôle par échantillon AVANT publication.
+// Le classement prêt à publier donnait « Venise : 1 mosquée » — et cette
+// unique entrée restante était l'« Oratorio di Santa Maria Assunta e
+// Sant'Eurosia ». Un oratoire. Le balayage complet a alors sorti 42 autres
+// cas dans d'autres langues : `templom` (Budapest, 12), `kościół` et
+// `kaplica` (Cracovie 9, Gdańsk 8), `oratorio` (Florence 2, Venise 1),
+// `basílica`, `biserica`, `paróquia`, `abadía`, `stupa` (Katmandou 2).
+// Ma première liste ne connaissait que les langues romanes et germaniques.
+const NON_MUSULMAN = /\b(chiesa|iglesia|igreja|cattedrale|catedral|cathedral|cath[ée]drale|bas[ií]lica|basilique|duomo|battistero|baptistery|[ée]glise|church|chapel|chapelle|cappella|kapelle|kaplica|kaplnka|kapela|kerk|kirche|kirke|kyrka|ko[sś]ci[oó][lł]|templom|sziklatemplom|biseric[aă]|cerkwa|cerkev|crkva|kostel|synagogue|sinagoga|temple|temppeli|tempio|pagoda|pagode|stupa|vihara|gurdwara|mandir|wat |monast|abbey|abbaye|abbazia|abad[ií]a|convent|couvent|klooster|klasztor|oratorio|oratoire|oratory|par[oó]quia|santuario|sanctuaire|ermita|parroquia|paroisse|notre-dame|saint-|sankt |st\.? mary|our lady|sacre[- ]coeur|sacro|basilika)\b/i
 
 /** Marqueurs qui prouvent qu'on a bien affaire à un lieu musulman : ils
  *  PRIMENT sur la liste ci-dessus. */
-const MUSULMAN = /(mosqu|masjid|masged|mescit|cami|camii|jami|jame|jumu|musalla|musallah|moskee|moschee|mezquita|mesquita|moschea|islam|muslim|musulman|imam|zaouia|zawiya|madrasa|medersa|salle de pri[eè]re|prayer room|namaz)/i
+// 11 octobre : élargi aussi, et c'est le plus important des deux. Cinq
+// entrées légitimes seraient tombées sans ça — quatre « Comunitat Islámica …
+// de **Santa Coloma** » (Barcelone : Santa Coloma est un nom de commune) et
+// le « Centre De Mémorisation Du **Saint** Coran » d'Abidjan. « islam » ne
+// couvre pas « Islámica » (l'accent casse le motif), et « Coran » n'y était
+// pas du tout.
+const MUSULMAN = /(mosqu|masjid|masdjid|masjeed|mesjid|mescit|m[eé]scid|cami|camii|jami|jame|jumu|jamaa|jamat|musalla|musallah|mushola|musholla|surau|d[žz]amija|xhamia|msikiti|dargah|moskee|moschee|mezquita|mesquita|moschea|meskita|isl[aá]m|muslim|musulman|imam|zaouia|zawiya|madrasa|medersa|cor[aâ]n|qur.?an|koran|salle de pri[eè]re|prayer room|namaz|مسجد|جامع)/i
 
 /** Un nom qui COMMENCE par « San / Santa / São / Sant' / St. » désigne en
  *  pratique un saint chrétien. Relevé avant d'ajouter cette règle : 10 entrées
  *  concernées (« San Pedro de Abrisketa », « Santa Maria della Salute »…) et
  *  **zéro** mosquée parmi elles. Le marqueur musulman prime quand même. */
+/** ⚠️ Les mots à lettres non-ASCII ont leur propre motif, SANS `\b`.
+ *  En JavaScript, `\b` est ASCII : il ne voit aucune frontière de mot après
+ *  un « ł », donc `\bkościół\b` ne se déclenchait jamais et les sept églises
+ *  de Cracovie survivaient à la purge. C'est exactement le piège noté au
+ *  carnet le 4 septembre, à propos de « à Le Caire ». Troisième fois. */
+const NON_MUSULMAN_SANS_FRONTIERE = /(ko[sś]ci[oó][lł]|templom|sziklatemplom|kaplnka|kaplica)/i
+
 const SAINT_EN_TETE = /^(san|santa|santo|s[ãa]o|sant'|sankt|st\.?)\s/i
 
 export function estNonMusulman(nom) {
   const n = String(nom ?? '')
   if (MUSULMAN.test(n)) return false
-  return NON_MUSULMAN.test(n) || SAINT_EN_TETE.test(n)
+  return NON_MUSULMAN.test(n) || NON_MUSULMAN_SANS_FRONTIERE.test(n) || SAINT_EN_TETE.test(n)
 }
 
 // ⚠️ Ce fichier est IMPORTÉ par scripts/test-non-mosquees.mjs, qui ne veut

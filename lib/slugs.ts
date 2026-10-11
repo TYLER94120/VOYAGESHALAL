@@ -93,6 +93,14 @@ export const BLOG_FR_TO_EN: Record<string, string> = {
   // Il n'y avait donc aucun défaut à corriger — mais un article que personne
   // n'écrit, parce qu'il faut publier ses propres chiffres négatifs.
   'hotel-halal-ce-qui-est-verifie': '/blog/halal-hotel-what-is-actually-verified',
+  // 11 octobre. Le classement que le 9 avait fait reporter : 29 838 hôtels
+  // dans 292 villes, médiane du trajet à pied jusqu'au lieu de prière le plus
+  // proche. Chefchaouen 1 min, Madrid 7, Paris 22, Lima 57. La trouvaille
+  // n'est pas le haut du tableau (prévisible) mais le milieu : **Madrid 92 %
+  // des hôtels à dix minutes, Paris 0 %** — affaire de géographie, pas de
+  // taille de communauté. L'article dit aussi pourquoi il a deux jours de
+  // retard : les 206 églises retirées entre-temps.
+  'villes-hotel-a-pied-mosquee': '/blog/cities-where-hotels-are-a-walk-from-a-mosque',
   'ou-prier-gares-paris': '/blog/where-to-pray-paris-stations',
   // 31 août : les deux pages qui convertissent le MIEUX du site n'avaient
   // aucune version anglaise. Relevé 3 mois, voyageshalal.fr :
