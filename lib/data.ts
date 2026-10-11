@@ -4229,6 +4229,159 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <p><em>Figures taken from the repository on 7 October 2026 across all 354 city files. Hotel locations and prayer places © OpenStreetMap contributors. A count is not a judgement: it says what we know, not what exists.</em></p>`,
   },
   {
+    slug: "villes-hotel-a-pied-mosquee",
+    title: "Quelles villes ont un hôtel à pied d'une mosquée ?",
+    description: "Mesuré sur 29 838 hôtels dans 292 villes : la médiane du trajet à pied jusqu'au lieu de prière le plus proche. Chefchaouen 1 min, Paris 22, Lima 57.",
+    coverImage: "/guides/blog-hotel.jpg",
+    category: 'Destinations',
+    readTime: "6 min",
+    publishedAt: '2026-10-11',
+    updatedAt: '2026-10-11',
+    tags: ["Hôtels", "Destinations", "Méthode", "Prière"],
+    content: `<p>« Est-ce que je pourrai prier facilement ? » se décide souvent au moment de réserver l'hôtel, pas en arrivant. Nous avons mis un chiffre dessus, pour 292 villes, à partir de nos propres données.</p>
+
+<h2>Comment c'est mesuré</h2>
+<p>Pour chaque hôtel de nos fiches, nous calculons la distance jusqu'au lieu de prière le plus proche de notre relevé OpenStreetMap, puis le temps de marche à <strong>80 mètres par minute</strong> — une allure ordinaire. Le chiffre donné ci-dessous est la <strong>médiane</strong> de la ville : la moitié des hôtels sont plus près, l'autre moitié plus loin.</p>
+<p><strong>29 838 hôtels mesurés dans 292 villes</strong> (celles où au moins 30 hôtels ont une distance calculable). La médiane dit mieux la réalité qu'une moyenne : un seul hôtel collé à une grande mosquée ne déplace pas le résultat.</p>
+
+<h2>Les villes où la question ne se pose pas</h2>
+<table><thead><tr><th>Ville</th><th>Pays</th><th>Médiane à pied</th><th>À 10 min ou moins</th></tr></thead><tbody>
+<tr><td><strong>Chefchaouen</strong></td><td>Maroc</td><td><strong>1 min</strong></td><td>100 %</td></tr>
+<tr><td>Boukhara</td><td>Ouzbékistan</td><td>2 min</td><td>100 %</td></tr>
+<tr><td>Essaouira</td><td>Maroc</td><td>2 min</td><td>100 %</td></tr>
+<tr><td>Istanbul</td><td>Turquie</td><td>2 min</td><td>100 %</td></tr>
+<tr><td>Marrakech</td><td>Maroc</td><td>2 min</td><td>100 %</td></tr>
+<tr><td>Penang</td><td>Malaisie</td><td>2 min</td><td>100 %</td></tr>
+<tr><td>Mostar</td><td>Bosnie-Herzégovine</td><td>2 min</td><td>99 %</td></tr>
+<tr><td>Ispahan</td><td>Iran</td><td>3 min</td><td>100 %</td></tr>
+</tbody></table>
+<p>Dans ces villes, <strong>n'importe quel hôtel du centre fait l'affaire</strong> : l'appel à la prière arrive avant la carte. Le critère de réservation redevient le prix et l'emplacement touristique, ce qui est confortable.</p>
+
+<h2>La vraie surprise est européenne</h2>
+<table><thead><tr><th>Ville</th><th>Médiane à pied</th><th>À 10 min ou moins</th></tr></thead><tbody>
+<tr><td><strong>Madrid</strong></td><td><strong>7 min</strong></td><td><strong>92 %</strong></td></tr>
+<tr><td><strong>Bruxelles</strong></td><td><strong>8 min</strong></td><td>79 %</td></tr>
+<tr><td>Vienne</td><td>14 min</td><td>32 %</td></tr>
+<tr><td>Londres</td><td>15 min</td><td>28 %</td></tr>
+<tr><td>Amsterdam</td><td>15 min</td><td>8 %</td></tr>
+<tr><td>Berlin</td><td>22 min</td><td>0 %</td></tr>
+<tr><td>Paris</td><td>22 min</td><td>0 %</td></tr>
+<tr><td>Milan</td><td>33 min</td><td>0 %</td></tr>
+<tr><td>Rome</td><td>44 min</td><td>0 %</td></tr>
+</tbody></table>
+<p><strong>Madrid et Bruxelles font mieux que Vienne, Londres et Paris — de très loin.</strong> À Madrid, 92 % des hôtels de notre base sont à dix minutes de marche ou moins d'un lieu de prière ; à Paris, aucun. Ce n'est pas une question de taille de communauté musulmane : c'est une question de <strong>géographie</strong>. À Paris et à Berlin, les lieux de prière sont dans des quartiers où les hôtels touristiques ne sont pas. À Madrid et à Bruxelles, les deux se superposent.</p>
+<p>Conséquence pratique : <strong>à Paris, le quartier de l'hôtel compte plus que l'hôtel.</strong> Dans nos <a href="/hotels">pages hôtels</a>, chaque fiche affiche sa distance à pied — c'est le critère à regarder avant le prix si la prière décide de ta journée.</p>
+
+<h2>Les villes où il faut organiser</h2>
+<table><thead><tr><th>Ville</th><th>Pays</th><th>Médiane à pied</th></tr></thead><tbody>
+<tr><td>Lima</td><td>Pérou</td><td><strong>57 min</strong></td></tr>
+<tr><td>Hô Chi Minh-Ville</td><td>Vietnam</td><td>55 min</td></tr>
+<tr><td>Salvador de Bahia</td><td>Brésil</td><td>53 min</td></tr>
+<tr><td>Cannes</td><td>France</td><td>51 min</td></tr>
+<tr><td>Las Vegas</td><td>États-Unis</td><td>50 min</td></tr>
+<tr><td>Kaohsiung</td><td>Taïwan</td><td>49 min</td></tr>
+<tr><td>Bologne</td><td>Italie</td><td>47 min</td></tr>
+<tr><td>Fukuoka</td><td>Japon</td><td>46 min</td></tr>
+</tbody></table>
+<p>Une médiane à 50 minutes ne veut pas dire « impossible » : elle veut dire <strong>« ça se prépare »</strong>. Prier dans la chambre, regarder <a href="/horaires-priere">les horaires du jour</a> avant de sortir, et ne pas compter sur un détour improvisé. À Lima, 41 hôtels sur 117 seulement ont un lieu de prière à moins de cinq kilomètres — pour les autres, notre calcul ne donne rien du tout, ce qui est déjà une réponse.</p>
+
+<h2>Ce que ce classement ne dit pas</h2>
+<p>Un tableau fait autorité tout seul. Donc les limites, écrites noir sur blanc :</p>
+<ul>
+<li><strong>C'est une distance à vol d'oiseau</strong>, convertie en minutes. À pied, compte davantage : un fleuve, une voie ferrée ou une colline ne se traversent pas en diagonale.</li>
+<li><strong>Notre relevé n'est pas exhaustif.</strong> Une salle de prière non cartographiée ne compte pas. Les villes mal cartographiées sont donc pénalisées à tort.</li>
+<li><strong>Ça ne dit rien de la mosquée elle-même</strong> : ni sa taille, ni ses horaires, ni s'il y a un espace femmes, ni si la porte sera ouverte à ton arrivée.</li>
+<li><strong>Ça ne dit rien de l'hôtel</strong> : la politique alcool reste « non vérifiée » pour la totalité de notre base, et nous l'écrivons sur chaque fiche. Voir <a href="/blog/hotel-halal-ce-qui-est-verifie">hôtel halal : ce qui est vérifié</a>.</li>
+<li><strong>Les villes de moins de 30 hôtels mesurés sont absentes</strong> du classement — pas disqualifiées, juste trop peu nombreuses pour qu'une médiane veuille dire quelque chose.</li>
+</ul>
+
+<h2>🔴 Pourquoi ce classement a deux jours de retard</h2>
+<p>Il était prêt le 9 octobre, et nous ne l'avons pas publié. En le relisant, il plaçait <strong>Milan et Florence à trois minutes</strong>, devant Ispahan et Nadjaf. Un résultat invraisemblable est un résultat à vérifier : nos données listaient la <strong>cathédrale de Florence</strong> et la <strong>basilique Saint-Marc</strong> comme lieux de prière musulmans — 206 cas au total, à cause d'un import qui n'avait pas filtré la religion.</p>
+<p>Tout est corrigé, et un contrôle automatique empêche le retour du défaut. Nous le racontons parce qu'un classement publié sans ce contrôle aurait été faux, et parce que <strong>l'avoir trouvé en vérifiant plutôt qu'en étant corrigé</strong> est exactement ce que nous te demandons de nous accorder comme confiance.</p>
+
+<h2>Aide la communauté</h2>
+<p>Tu connais une salle de prière qui n'est sur aucune carte ? C'est précisément ce que ce relevé ne peut pas voir. <a href="/communaute/ajouter">→ Ajouter le lieu</a></p>
+
+<p><em>29 838 hôtels dans 292 villes, relevé du 11 octobre 2026. Marche estimée à 80 m/min depuis une distance à vol d'oiseau. Emplacements d'hôtels et lieux de prière © les contributeurs OpenStreetMap. Un relevé dit ce qui est cartographié, pas ce qui existe.</em></p>`,
+  },
+  {
+    slug: "cities-where-hotels-are-a-walk-from-a-mosque",
+    title: "Which cities put a mosque within walking distance?",
+    description: "Measured across 29,838 hotels in 292 cities: the median walk to the nearest prayer place. Chefchaouen 1 min, Madrid 7, Paris 22, Lima 57.",
+    coverImage: "/guides/blog-hotel.jpg",
+    category: 'Destinations',
+    readTime: "6 min",
+    publishedAt: '2026-10-11',
+    updatedAt: '2026-10-11',
+    lang: 'en',
+    tags: ['hotels', 'destinations', 'method', 'muslim travel'],
+    content: `<p>"Will praying be easy there?" is usually decided when you book the hotel, not when you arrive. We put a number on it, for 292 cities, from our own data.</p>
+
+<h2>How it is measured</h2>
+<p>For every hotel in our city files we compute the distance to the nearest prayer place in our OpenStreetMap survey, then the walk at <strong>80 metres per minute</strong> — an ordinary pace. The figure below is the city's <strong>median</strong>: half the hotels are closer, half are further.</p>
+<p><strong>29,838 hotels measured across 292 cities</strong> (those with at least 30 hotels we can compute). A median beats an average here: one hotel next door to a great mosque does not move the result.</p>
+
+<h2>Cities where the question does not arise</h2>
+<table><thead><tr><th>City</th><th>Country</th><th>Median walk</th><th>Within 10 min</th></tr></thead><tbody>
+<tr><td><strong>Chefchaouen</strong></td><td>Morocco</td><td><strong>1 min</strong></td><td>100 %</td></tr>
+<tr><td>Bukhara</td><td>Uzbekistan</td><td>2 min</td><td>100 %</td></tr>
+<tr><td>Essaouira</td><td>Morocco</td><td>2 min</td><td>100 %</td></tr>
+<tr><td>Istanbul</td><td>Türkiye</td><td>2 min</td><td>100 %</td></tr>
+<tr><td>Marrakesh</td><td>Morocco</td><td>2 min</td><td>100 %</td></tr>
+<tr><td>Penang</td><td>Malaysia</td><td>2 min</td><td>100 %</td></tr>
+<tr><td>Mostar</td><td>Bosnia-Herzegovina</td><td>2 min</td><td>99 %</td></tr>
+<tr><td>Isfahan</td><td>Iran</td><td>3 min</td><td>100 %</td></tr>
+</tbody></table>
+<p>In these cities <strong>any central hotel will do</strong>: the call to prayer reaches you before the map does. Booking goes back to being about price and location, which is restful.</p>
+
+<h2>The real surprise is European</h2>
+<table><thead><tr><th>City</th><th>Median walk</th><th>Within 10 min</th></tr></thead><tbody>
+<tr><td><strong>Madrid</strong></td><td><strong>7 min</strong></td><td><strong>92 %</strong></td></tr>
+<tr><td><strong>Brussels</strong></td><td><strong>8 min</strong></td><td>79 %</td></tr>
+<tr><td>Vienna</td><td>14 min</td><td>32 %</td></tr>
+<tr><td>London</td><td>15 min</td><td>28 %</td></tr>
+<tr><td>Amsterdam</td><td>15 min</td><td>8 %</td></tr>
+<tr><td>Berlin</td><td>22 min</td><td>0 %</td></tr>
+<tr><td>Paris</td><td>22 min</td><td>0 %</td></tr>
+<tr><td>Milan</td><td>33 min</td><td>0 %</td></tr>
+<tr><td>Rome</td><td>44 min</td><td>0 %</td></tr>
+</tbody></table>
+<p><strong>Madrid and Brussels beat Vienna, London and Paris by a wide margin.</strong> In Madrid, 92 % of the hotels in our data are a ten-minute walk or less from a prayer place; in Paris, none are. This is not about the size of the Muslim community — it is about <strong>geography</strong>. In Paris and Berlin the prayer places are in districts where tourist hotels are not. In Madrid and Brussels the two overlap.</p>
+<p>Practical upshot: <strong>in Paris, the district matters more than the hotel.</strong> Our <a href="/hotels">hotel pages</a> show each one's walking distance — that is the figure to read before the price if prayer shapes your day.</p>
+
+<h2>Cities where you plan ahead</h2>
+<table><thead><tr><th>City</th><th>Country</th><th>Median walk</th></tr></thead><tbody>
+<tr><td>Lima</td><td>Peru</td><td><strong>57 min</strong></td></tr>
+<tr><td>Ho Chi Minh City</td><td>Vietnam</td><td>55 min</td></tr>
+<tr><td>Salvador de Bahia</td><td>Brazil</td><td>53 min</td></tr>
+<tr><td>Cannes</td><td>France</td><td>51 min</td></tr>
+<tr><td>Las Vegas</td><td>United States</td><td>50 min</td></tr>
+<tr><td>Kaohsiung</td><td>Taiwan</td><td>49 min</td></tr>
+<tr><td>Bologna</td><td>Italy</td><td>47 min</td></tr>
+<tr><td>Fukuoka</td><td>Japan</td><td>46 min</td></tr>
+</tbody></table>
+<p>A 50-minute median does not mean "impossible" — it means <strong>"prepare"</strong>. Pray in the room, check <a href="/prayer-times">the day's times</a> before going out, and do not count on an improvised detour. In Lima, only 41 of 117 hotels have a prayer place within five kilometres at all; for the rest our calculation returns nothing, which is itself an answer.</p>
+
+<h2>What this ranking does not tell you</h2>
+<p>A table carries authority on its own. So, the limits, in plain sight:</p>
+<ul>
+<li><strong>It is a straight-line distance</strong> turned into minutes. On foot, count more: a river, a railway or a hill is not crossed diagonally.</li>
+<li><strong>Our survey is not exhaustive.</strong> An unmapped prayer room does not count, so poorly mapped cities are penalised unfairly.</li>
+<li><strong>It says nothing about the mosque itself</strong>: not its size, its hours, whether there is a women's section, or whether the door will be open when you arrive.</li>
+<li><strong>It says nothing about the hotel</strong>: the alcohol policy is "not verified" for our entire database, and we print that on every card. See <a href="/blog/halal-hotel-what-is-actually-verified">halal hotel: what is verified</a>.</li>
+<li><strong>Cities with fewer than 30 measured hotels are absent</strong> — not disqualified, just too few for a median to mean anything.</li>
+</ul>
+
+<h2>🔴 Why this ranking is two days late</h2>
+<p>It was ready on 9 October and we did not publish it. On re-reading, it placed <strong>Milan and Florence at three minutes</strong>, ahead of Isfahan and Najaf. An implausible result is a result to check: our data listed <strong>Florence cathedral</strong> and <strong>St Mark's Basilica</strong> as Muslim prayer places — 206 cases in all, from an import that had not filtered by religion.</p>
+<p>It is fixed, and an automated check now blocks the defect from returning. We tell you because a ranking published without that check would have been wrong, and because <strong>finding it by checking rather than by being corrected</strong> is exactly the trust we are asking you for.</p>
+
+<h2>Help the community</h2>
+<p>Know a prayer space that is on no map? That is precisely what this survey cannot see. <a href="/communaute/ajouter">→ Add the place</a></p>
+
+<p><em>29,838 hotels across 292 cities, surveyed 11 October 2026. Walk estimated at 80 m/min from a straight-line distance. Hotel locations and prayer places © OpenStreetMap contributors. A survey says what is mapped, not what exists.</em></p>`,
+  },
+  {
     slug: "ou-prier-aeroports",
     title: "Salle de prière en aéroport : 8 aéroports détaillés (2026)",
     description: "CDG, Orly, Lyon, Nice, Marseille, Toulouse, Genève, Bruxelles : où se trouve la salle de prière de chaque aéroport, avant ou après les contrôles.",

@@ -3487,3 +3487,102 @@ Build du 10/10 00:13, `BUILD_ID` contrôlé avant lecture. 49 contrôles verts.
 Les quatre marqueurs de chaque langue présents. Et les titres de villes
 restent justes après recalcul des compteurs : Venise « 1 mosquée »,
 Florence « 2 mosquées », Milan « 17 mosquées ».
+
+## 11 octobre — le classement publié, et 38 églises de plus trouvées en le relisant
+
+Jour impair, création. L'article reporté du 9 octobre est publié, dans les
+deux langues — mais pas avant d'avoir trouvé une troisième vague du même
+défaut.
+
+### 🔴 Le contrôle par échantillon qui a tout rouvert
+
+Avant de publier, j'ai vérifié à la main les villes aux résultats surprenants
+— la discipline exacte qui avait sauvé la mise le 9. `venise.json`, après la
+purge de l'avant-veille, contenait **un seul** lieu de prière :
+
+```
+  « Oratorio di Santa Maria Assunta e Sant'Eurosia »
+```
+
+Un oratoire. Et le titre servi annonçait « Où prier à Venise : 1 mosquée ».
+Ma règle ne connaissait ni `oratorio`, ni les langues non romanes. Balayage
+complet des entrées sans aucun marqueur musulman, regroupées par premier mot :
+
+```
+  Budapest    12  « …-templom »        (église, en hongrois)
+  Cracovie     9  « Kościół… », « Kaplica… »
+  Gdańsk       8  idem
+  Katmandou    2  « Boudhanāth Stupa », « Northern Ashok Stupa »
+  Florence     2  « Oratorio di… »     Venise 1
+  Mexico, Santiago, Malaga, Bucarest, Curitiba   1 chacune
+```
+
+**38 entrées de plus**, soit **206 au total** depuis le 9 octobre.
+
+### 🔴 Et dans ma règle élargie, deux pièges encore
+
+**1. `\b` est ASCII — pour la troisième fois.** `\bkościół\b` ne se
+déclenchait jamais : en JavaScript, `\b` ne voit aucune frontière de mot
+après un « ł ». Les sept églises de Cracovie survivaient à une règle écrite
+exprès pour elles. Même piège qu'au carnet du 4 septembre (« à Le Caire »).
+Les mots à lettres non-ASCII ont désormais leur propre motif, sans `\b`.
+
+**2. Cinq entrées légitimes allaient tomber.** Quatre « Comunitat Islámica …
+de **Santa Coloma** » à Barcelone — Santa Coloma est une commune — et le
+« Centre De Mémorisation Du **Saint** Coran » d'Abidjan. `islam` ne couvre
+pas `Islámica` (l'accent casse le motif) et `Coran` n'était pas dans la liste
+des marqueurs. Vérifié en listant les gardes avant d'écrire la règle, comme
+le 9.
+
+### Après correction
+
+```
+  lieux de prière en fiche   9 991 → 9 953
+  hôtels avec distance      30 086 → 29 838
+  compteurs recalculés, trace à 206 entrées
+
+  titres servis, vérifiés :
+    Venise    « 1 mosquée »   → « Où prier et manger halal à Venise »
+    Florence  « 2 mosquées »  → idem (plus aucun compte annoncé)
+    Budapest   27 → 15 mosquées
+    Cracovie   11 → 3 mosquées
+```
+
+Une ville à zéro lieu relevé **n'annonce plus de compte du tout** : le gabarit
+se replie seul. C'est la bonne réponse — mieux vaut ne rien promettre que
+promettre une basilique.
+
+### L'article
+
+292 villes, 29 838 hôtels, médiane du trajet à pied. Le haut du tableau est
+prévisible (Chefchaouen 1 min, Istanbul et Marrakech 2 min). **La trouvaille
+est au milieu :**
+
+```
+  Madrid       7 min   92 % des hôtels à 10 min ou moins
+  Bruxelles    8 min   79 %
+  Londres     15 min   28 %
+  Paris       22 min    0 %
+  Rome        44 min    0 %
+```
+
+**Madrid et Bruxelles écrasent Paris, Londres et Vienne.** Ce n'est pas une
+question de taille de communauté : à Paris et Berlin, les lieux de prière
+sont dans des quartiers où les hôtels touristiques ne sont pas ; à Madrid et
+Bruxelles, les deux se superposent. D'où le conseil utile : **à Paris, le
+quartier compte plus que l'hôtel.**
+
+Cinq limites écrites noir sur blanc, dont deux qui coûtent au classement : le
+relevé n'est pas exhaustif (les villes mal cartographiées sont pénalisées à
+tort), et la politique alcool reste « non vérifiée » sur la totalité de la
+base. Et les deux articles racontent **pourquoi ils ont deux jours de
+retard** — les 206 églises.
+
+### Vérifié servi
+
+Build du 11/10 00:14, `BUILD_ID` contrôlé avant lecture. 49 contrôles verts.
+
+```
+  FR  200   titre 50 c   description 153 c   1 258 mots   32 liens, 0 cassé
+  EN  200   titre 50 c   description 137 c   1 130 mots   33 liens, 0 cassé
+```
