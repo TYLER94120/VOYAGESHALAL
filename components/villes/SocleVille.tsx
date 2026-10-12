@@ -117,6 +117,28 @@ export default function SocleVille({ ville, slug, en }: { ville: VilleData; slug
             {mosquees.slice(0, 12).map((m, i) => <li key={i}>{m.nom}</li>)}
           </ul>
         )}
+        {/* 12 octobre : le cas ZÉRO se disait par son silence.
+         *
+         *  Après la purge des 206 lieux de culte non musulmans (9-11 octobre),
+         *  15 villes se retrouvent sans aucun lieu de prière relevé — Venise,
+         *  Florence, Rio de Janeiro, Séville, Miami, les Maldives… La section
+         *  « Où prier » y affichait alors UNIQUEMENT le paragraphe générique
+         *  sur le fuseau horaire et la qibla : 272 caractères qui n'affirment
+         *  rien de faux, mais qui ne disent pas non plus la seule chose que
+         *  nous ayons mesurée.
+         *
+         *  C'est la règle des trois états appliquée à l'absence : « rien dans
+         *  notre relevé » est une information, et elle vaut mieux qu'un blanc.
+         *  Dit explicitement, avec ce que ça ne signifie PAS — un lieu non
+         *  cartographié n'est pas un lieu inexistant — et la sortie utile. */}
+        {mosquees.length === 0 && (
+          <p className="sv-p">
+            {t(
+              `À être franc : notre relevé ne contient aucun lieu de prière ${aVille(nom)}. Cela ne veut pas dire qu'il n'y en a pas — une salle non cartographiée n'apparaît pas chez nous, et nous ne publions pas une adresse que nous n'avons pas. Deux choses à faire, dans cet ordre : prépare ta journée avec les horaires ci-dessus, et utilise l'outil « mosquée la plus proche », qui te géolocalise et travaille sur des données mises à jour en continu. Si tu trouves un lieu sur place, dis-le-nous : c'est exactement ce qui manque à cette page.`,
+              `To be straight with you: our survey contains no prayer place in ${nom}. That does not mean there is none — an unmapped room does not appear in our data, and we do not publish an address we do not have. Two things to do, in this order: plan your day around the times above, and use the nearest-mosque tool, which locates you and runs on continuously updated data. If you find a place while you are there, tell us: that is exactly what this page is missing.`,
+            )}
+          </p>
+        )}
 
         <h2 className="sv-h2">{t(`Où manger halal ${aVille(nom)}`, `Where to eat halal in ${nom}`)}</h2>
         {ouManger && <p className="sv-p">{ouManger}</p>}
