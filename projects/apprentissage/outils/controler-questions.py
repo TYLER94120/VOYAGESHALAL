@@ -18,6 +18,21 @@ RESULTAT, toutes sections confondues, et il ne fait confiance a aucun d'eux :
     identifiant se remplacent l'une l'autre dans la progression des gens ;
   * et une question que rien ici ne sait confronter est une FAUTE.
 
+AJOUTE LE 12 OCTOBRE — deux choses qu'il ne regardait pas
+
+  * un meme verset pose dans PLUSIEURS sections. 65 aujourd'hui, 138 cartes,
+    5,1 % du paquet : des versets qui parlent de la priere et de l'aumone a
+    la fois. Ce n'est pas une faute — un verset a deux sujets appartient aux
+    deux sections — mais le nombre est plafonne, pour qu'un generateur qui se
+    met a recopier une section dans une autre se voie avant la publication.
+    A savoir : « 2 701 questions », le nombre que l'accueil annonce, compte
+    ces versets deux ou trois fois. En les comptant une fois, 2 628.
+
+  * la LONGUEUR de la bonne reponse. Un QCM dont la bonne reponse est
+    toujours la plus longue se joue a l'oeil et n'apprend rien. Le controle
+    pose une fourchette de 12 a 40 % par section, pas le chiffre du jour :
+    un chiffre exact echouerait a chaque regeneration pour du bruit.
+
 LE TROU QU'IL AVAIT, ET QUE LA MESURE DU 22 SEPTEMBRE A MONTRE
 --------------------------------------------------------------
 Cet en-tete promettait « CHAQUE question » depuis le premier jour. C'etait
@@ -644,6 +659,116 @@ def main():
     for fam in sorted(comptes):
         print('  %d questions « %s », recomptees dans le texte.'
               % (comptes[fam], fam))
+    # ================================================================
+    # DEUX MESURES AJOUTEES LE 12 OCTOBRE
+    # ================================================================
+
+    # A. UN MEME VERSET POSE DANS PLUSIEURS SECTIONS.
+    #
+    # L'identifiant d'une question se termine par un hachage du verset. Un
+    # verset qui parle de la priere ET de l'aumone — le Coran les associe sans
+    # cesse — produit donc une carte dans « La priere » et une dans « Zakat et
+    # aumone », avec le meme enonce et la meme bonne reponse, seuls les leurres
+    # changeant.
+    #
+    # Mesure du 12 octobre : 65 versets, 138 cartes, 5,1 % du paquet. Dans 61
+    # cas sur 65, l'enonce ET la bonne reponse sont identiques. Huit versets
+    # sont dans TROIS sections.
+    #
+    # CE N'EST PAS DECLARE COMME UNE FAUTE, et c'est un choix qu'il faut dire :
+    # un verset qui traite de deux sujets appartient aux deux sections, les
+    # deux cartes ont des identifiants distincts, et la progression les suit
+    # separement. Mais « 2 701 questions » — le nombre que l'accueil annonce —
+    # compte ces versets deux ou trois fois. En les comptant une seule fois,
+    # le site aurait 2 628 questions distinctes.
+    #
+    # On SURVEILLE donc le nombre au lieu de l'interdire : si un generateur se
+    # met a reposer des centaines de versets d'une section a l'autre, cela doit
+    # se voir avant la publication, pas apres.
+    PLAFOND_CROISES = 90
+    # On relit les banques depuis le disque : le corps de ce controle n'en
+    # garde pas la liste complete, et la relecture coute une fraction de
+    # seconde.
+    par_section = {}
+    for chemin in fichiers:
+        par_section[chemin.stem] = json.loads(chemin.read_text(encoding='utf-8'))
+    croises = {}
+    for sec in sorted(par_section):
+        for q in par_section[sec]:
+            croises.setdefault(q['id'].rsplit('-', 1)[-1], set()).add(sec)
+    croises = {h: s for h, s in croises.items() if len(s) > 1}
+    cartes_croisees = sum(len(s) for s in croises.values())
+    if len(croises) > PLAFOND_CROISES:
+        fautes.append('%d versets sont poses dans plusieurs sections (%d cartes) '
+                      '; le plafond est %d. Un generateur recopie-t-il une '
+                      'section dans une autre ?'
+                      % (len(croises), cartes_croisees, PLAFOND_CROISES))
+
+    # B. LA LONGUEUR DE LA BONNE REPONSE NE DOIT PAS LA DESIGNER.
+    #
+    # Un QCM dont la bonne reponse est toujours la plus longue n'apprend rien :
+    # il se joue a l'oeil. Mesure du 12 octobre, par section, sur les quatre
+    # reponses de chaque carte :
+    #
+    #                          la + longue   la + courte     (hasard : 25 %)
+    #     vocabulaire-arabe       30,1 %        17,6 %
+    #     histoire-des-prophetes  27,6 %        26,4 %
+    #     sens-des-sourates       26,7 %        15,7 %
+    #     lire-l-arabe            25,0 %        25,7 %
+    #     zakat-et-aumone         20,7 %        22,4 %
+    #     la-priere               17,6 %        14,4 %
+    #     piliers-de-la-foi       14,6 %        15,7 %
+    #     les-invocations         14,8 %        14,2 %
+    #
+    # L'ecart existe et il est FAIBLE : la bonne reponse mesure en moyenne
+    # 1,1 caractere de plus que les autres. Le plus net est « sens des
+    # sourates », ou elle n'est la plus courte que dans 15,7 % des cas au lieu
+    # de 25 — « ne prends jamais la plus courte » y gagnerait neuf points.
+    # Ce n'est pas exploitable a l'oeil nu, et corriger cela voudrait dire
+    # choisir les leurres par longueur sur 1 246 cartes de vocabulaire : une
+    # refonte du tirage pour une finesse statistique. SIGNALE, PAS TOUCHE.
+    #
+    # Le controle pose une FOURCHETTE, pas le chiffre du jour : un chiffre
+    # exact echouerait a chaque regeneration pour du bruit. Entre 12 et 40 %,
+    # on est dans le bruit ; au-dela, un generateur designe ses reponses.
+    BAS, HAUT = 12.0, 40.0
+    pire, ecart_max = None, 0.0
+    for sec in sorted(par_section):
+        rangs = {1: 0, 4: 0}
+        total_rangs = 0
+        for q in par_section[sec]:
+            reps = q.get('reponses') or []
+            if len(reps) != 4:
+                continue
+            longueurs = [len(str(r)) for r in reps]
+            rang = sorted(range(4), key=lambda i: -longueurs[i]).index(q['bonne']) + 1
+            total_rangs += 1
+            if rang in rangs:
+                rangs[rang] += 1
+        # Sous cent cartes, le bruit depasse le signal : on ne juge pas.
+        if total_rangs < 100:
+            continue
+        for rang, quoi in ((1, 'la plus longue'), (4, 'la plus courte')):
+            part = 100.0 * rangs[rang] / total_rangs
+            if abs(part - 25.0) > ecart_max:
+                ecart_max = abs(part - 25.0)
+                pire = '%s, %s dans %.1f %% des cas' % (sec, quoi, part)
+            if not BAS <= part <= HAUT:
+                fautes.append('%s : la bonne reponse est %s dans %.1f %% des '
+                              '%d cartes (fourchette %.0f-%.0f %%) — la longueur '
+                              'la designe' % (sec, quoi, part, total_rangs, BAS, HAUT))
+
+    # CES DEUX LIGNES DISENT CE QUI A ETE MESURE, PAS UN VERDICT.
+    # Premier jet : « Dans aucune section la longueur de la bonne reponse ne
+    # la designe. » Elle s'affichait AUSSI quand le controle venait d'en
+    # trouver une — le sabotage du 12 octobre l'a montre. Une ligne de bilan
+    # qui ne peut pas se taire est une ligne qui ne dit rien.
+    print('  %d versets poses dans plusieurs sections (%d cartes, plafond %d).'
+          % (len(croises), cartes_croisees, PLAFOND_CROISES))
+    print('  Longueur de la bonne reponse, l\'ecart le plus net : %s '
+          '(fourchette %.0f-%.0f %%).'
+          % (pire or 'aucun', BAS, HAUT))
+
     if fautes:
         print('\n  %d FAUTE(S) :' % len(fautes))
         for x in fautes[:25]:
