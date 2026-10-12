@@ -3586,3 +3586,58 @@ Build du 11/10 00:14, `BUILD_ID` contrôlé avant lecture. 49 contrôles verts.
   FR  200   titre 50 c   description 153 c   1 258 mots   32 liens, 0 cassé
   EN  200   titre 50 c   description 137 c   1 130 mots   33 liens, 0 cassé
 ```
+
+## 12 octobre — le cas « zéro » se disait par son silence
+
+Jour pair, approfondissement. Conséquence directe de la purge des 206 lieux
+de culte non musulmans : il fallait regarder ce que les pages concernées
+disent maintenant.
+
+### La mesure
+
+**15 villes se retrouvent sans aucun lieu de prière relevé** :
+
+```
+  Venise · Florence · Séville · Santorin
+  Rio de Janeiro · Montevideo · Medellín · Guayaquil · Cusco
+  Miami · La Nouvelle-Orléans · Cancún · Monterrey
+  Daegu · Maldives
+```
+
+Sur ces pages, la section « Où prier » n'affichait plus qu'un paragraphe
+générique de **272 caractères** — fuseau horaire, qibla, « Autour de moi ».
+Rien de faux. Mais rien non plus sur la seule chose que nous ayons mesurée.
+
+Vérifié aussi : les champs de texte stockés (`sectionOuPrier`) de ces 15
+fiches sont **vides**, donc aucune affirmation ancienne ne survivait. Deux
+descriptions ressortaient à mon détecteur — Cologne (« ville de la
+cathédrale ») et Moscou (« grande mosquée-cathédrale ») : **aucune faute**,
+la mosquée-cathédrale de Moscou s'appelle bien ainsi. Lues avant de conclure.
+
+### Ce que ça change
+
+La règle des trois états s'applique aussi à l'absence : **« rien dans notre
+relevé » est une information**, et elle vaut mieux qu'un blanc. Les 15 pages
+portent maintenant, dans les deux langues :
+
+> À être franc : notre relevé ne contient aucun lieu de prière à Venise. Cela
+> ne veut pas dire qu'il n'y en a pas — une salle non cartographiée
+> n'apparaît pas chez nous, et nous ne publions pas une adresse que nous
+> n'avons pas. Deux choses à faire, dans cet ordre : prépare ta journée avec
+> les horaires ci-dessus, et utilise l'outil « mosquée la plus proche », qui
+> te géolocalise et travaille sur des données mises à jour en continu.
+
+Trois choses y tiennent ensemble : le fait, **ce que le fait ne signifie
+pas**, et la sortie utile. C'est la même forme que les articles de parcs et
+d'aéroports — dire « non » proprement vaut mieux que ne rien dire.
+
+### Vérifié servi
+
+Build du 12/10 00:13, `BUILD_ID` contrôlé avant lecture. 49 contrôles verts.
+
+**15 villes sur 15 conformes**, sur les deux domaines — bloc présent en
+français et en anglais, statut 200, lien `/mosquee-proche` présent.
+
+Et le **témoin** : Istanbul, qui a 1 493 lieux relevés, **ne porte pas** le
+bloc. Un message d'absence qui s'afficherait partout serait pire que pas de
+message du tout.
