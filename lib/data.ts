@@ -4382,6 +4382,111 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <p><em>29,838 hotels across 292 cities, surveyed 11 October 2026. Walk estimated at 80 m/min from a straight-line distance. Hotel locations and prayer places © OpenStreetMap contributors. A survey says what is mapped, not what exists.</em></p>`,
   },
   {
+    slug: "restaurant-halal-signale-ou-deduit",
+    title: "« Halal » sur une carte : signalé, ou juste déduit ?",
+    description: "Sur nos 16 512 adresses halal, 2 344 sont déclarées par une source et 14 168 déduites du type de cuisine. La différence, et les 3 questions à poser.",
+    coverImage: "/guides/blog-manger.jpg",
+    category: 'Pratique',
+    readTime: "5 min",
+    publishedAt: '2026-10-13',
+    updatedAt: '2026-10-13',
+    tags: ["Manger halal", "Méthode", "Pratique"],
+    content: `<p>Une application affiche un restaurant « halal ». D'où sort cette étiquette ? Dans la plupart des cas — y compris chez nous — <strong>personne ne l'a dit : c'est une déduction</strong>. Voici nos chiffres et ce qu'il faut en faire.</p>
+
+<h2>Nos 16 512 adresses, triées par ce qui les justifie</h2>
+<table><thead><tr><th>Ce qui fonde l'étiquette</th><th>Adresses</th><th>Part</th></tr></thead><tbody>
+<tr><td><strong>Déduit du type de cuisine</strong> (kebab, indien, turc…)</td><td><strong>14 168</strong></td><td><strong>85,8 %</strong></td></tr>
+<tr><td>Tag explicite d'un contributeur (<code>diet:halal=yes</code>)</td><td>1 425</td><td>8,6 %</td></tr>
+<tr><td>Tag « forte probabilité »</td><td>692</td><td>4,2 %</td></tr>
+<tr><td>Tag « exclusivement halal »</td><td>167</td><td>1,0 %</td></tr>
+<tr><td>Tag mentionnant une certification</td><td>60</td><td>0,4 %</td></tr>
+</tbody></table>
+<p>Autrement dit : <strong>2 344 adresses reposent sur quelqu'un qui l'a écrit, et 14 168 sur un raisonnement.</strong> Le raisonnement est le suivant : un kebab, un restaurant indien ou turc sert très souvent halal. C'est souvent vrai. Ce n'est pas une information.</p>
+
+<h2>Les trois mots que nous employons, et pourquoi</h2>
+<p><strong>« Signalé halal »</strong> — une source l'a déclaré. Un contributeur a posé le tag, nous l'affichons en le disant. Nous n'écrivons pas « vérifié » : <em>nous</em> ne l'avons pas vérifié, et un tag peut dater.</p>
+<p><strong>« À confirmer »</strong> — c'est nous qui l'avons déduit du type de cuisine. Personne ne l'a affirmé. C'est le cas de 85,8 % de nos adresses, et la page le dit sur chaque ligne.</p>
+<p><strong>« Certifié »</strong> — <strong>nous ne l'écrivons jamais pour un restaurant.</strong> Une certification porte sur une cuisine, une chaîne d'approvisionnement, un produit — pas sur un établissement vu depuis une base de données. Même les 60 adresses dont le tag mentionne une certification sortent chez nous en « signalé ».</p>
+
+<h2>🔴 Et ce libellé était à l'envers chez nous</h2>
+<p>En comptant pour cet article, nous avons trouvé notre propre faute : le code comparait l'étiquette à une valeur — <code>verified</code> — <strong>qui n'existe dans aucune de nos données</strong>. Résultat exactement inversé : les <strong>2 344 adresses les mieux sourcées s'affichaient « à vérifier »</strong>, et les <strong>14 168 déductions s'affichaient « signalé halal »</strong>, le libellé le plus fort. Le tri « les mieux sourcées d'abord » ne déplaçait rien non plus.</p>
+<p>C'est corrigé, et un contrôle automatique vérifie désormais <strong>qu'aucune valeur présente dans les données n'est inconnue du libellé</strong> — c'est ce contrôle-là qui aurait trouvé la faute plus tôt. Nous le racontons parce qu'une page qui explique comment lire une étiquette doit commencer par la lire correctement elle-même.</p>
+
+<h2>Les 3 questions qui tranchent, sur place</h2>
+<p>Trente secondes au comptoir valent mieux que n'importe quelle base de données :</p>
+<p><strong>1. « La viande est halal ? »</strong> — question ouverte, et la réponse compte moins que la facilité avec laquelle elle vient. Une hésitation est une réponse.<br/>
+<strong>2. « Vous servez de l'alcool ? »</strong> — utile même si la viande est halal : ça change l'endroit, et c'est souvent le vrai critère pour une famille.<br/>
+<strong>3. « Vous avez un certificat ? »</strong> — s'il existe, il est souvent affiché près de la caisse. S'il n'existe pas, ce n'est pas disqualifiant, mais tu sais sur quoi tu t'appuies.</p>
+<p>Sur ce qui est permis quand le doute subsiste, <strong>nous ne tranchons pas</strong> : c'est une question religieuse, pas une question de voyage. Elle se pose à quelqu'un de qualifié.</p>
+
+<h2>Pourquoi garder les 14 168 déductions, alors ?</h2>
+<p>Parce qu'une déduction annoncée comme telle reste utile : elle te dit <strong>où regarder</strong> dans une ville inconnue. Les supprimer laisserait 335 villes avec deux ou trois adresses — et la vraie question d'un voyageur n'est pas « donne-moi la certitude », c'est « par où je commence ».</p>
+<p>Ce que nous refusons, c'est de faire passer la déduction pour une confirmation. D'où le libellé sur chaque ligne, et cet article.</p>
+
+<h2>Questions fréquentes</h2>
+<p><strong>« Signalé halal » veut dire que vous l'avez vérifié ?</strong> Non. Ça veut dire qu'une source l'a déclaré. Nous n'avons visité aucun de ces 16 512 établissements.<br/>
+<strong>Pourquoi ne pas écrire « certifié » pour les 60 ?</strong> Parce qu'un tag de base de données n'est pas un certificat, et qu'une certification peut avoir expiré.<br/>
+<strong>Comment aider ?</strong> Si tu as posé les trois questions et obtenu une réponse claire, dis-la-nous. C'est exactement ce qui transforme une déduction en information.</p>
+
+<h2>Aide la communauté</h2>
+<p>Un restaurant où tu as vérifié toi-même ? <strong>Dis-nous lequel, et ce que le personnel t'a répondu.</strong> <a href="/communaute/ajouter">→ Ajouter l'adresse</a></p>
+
+<p><em>16 512 adresses dans 335 villes, comptées dans le dépôt le 13 octobre 2026. Données © les contributeurs OpenStreetMap. Un compte dit ce que nous savons, pas ce qui existe.</em></p>`,
+  },
+  {
+    slug: "halal-on-a-map-reported-or-just-inferred",
+    title: "'Halal' on a map: reported, or just inferred?",
+    description: "Of our 16,512 halal listings, 2,344 are declared by a source and 14,168 inferred from the cuisine type. The difference, and the 3 questions to ask.",
+    coverImage: "/guides/blog-manger.jpg",
+    category: 'Practical',
+    readTime: "5 min",
+    publishedAt: '2026-10-13',
+    updatedAt: '2026-10-13',
+    lang: 'en',
+    tags: ['halal food', 'method', 'muslim travel'],
+    content: `<p>An app shows a restaurant as "halal". Where does that label come from? In most cases — ours included — <strong>nobody said so: it was inferred</strong>. Here are our numbers and what to do with them.</p>
+
+<h2>Our 16,512 listings, sorted by what justifies them</h2>
+<table><thead><tr><th>What the label rests on</th><th>Listings</th><th>Share</th></tr></thead><tbody>
+<tr><td><strong>Inferred from the cuisine type</strong> (kebab, Indian, Turkish…)</td><td><strong>14,168</strong></td><td><strong>85.8 %</strong></td></tr>
+<tr><td>Explicit contributor tag (<code>diet:halal=yes</code>)</td><td>1,425</td><td>8.6 %</td></tr>
+<tr><td>Tag marked "high confidence"</td><td>692</td><td>4.2 %</td></tr>
+<tr><td>Tag marked "halal only"</td><td>167</td><td>1.0 %</td></tr>
+<tr><td>Tag mentioning a certification</td><td>60</td><td>0.4 %</td></tr>
+</tbody></table>
+<p>In other words: <strong>2,344 listings rest on someone having written it down, and 14,168 on a piece of reasoning.</strong> The reasoning goes: a kebab shop, an Indian or a Turkish restaurant very often serves halal. That is often true. It is not information.</p>
+
+<h2>The words we use, and why</h2>
+<p><strong>"Reported halal"</strong> — a source declared it. A contributor set the tag and we show it, saying so. We do not write "verified": <em>we</em> have not verified it, and a tag can be old.</p>
+<p><strong>"To confirm"</strong> — we inferred it from the cuisine type. Nobody asserted it. That covers 85.8 % of our listings, and the page says so on every line.</p>
+<p><strong>"Certified"</strong> — <strong>we never write it for a restaurant.</strong> A certification covers a kitchen, a supply chain, a product — not an establishment seen through a database. Even the 60 listings whose tag mentions a certification come out as "reported" with us.</p>
+
+<h2>🔴 And our own label was back to front</h2>
+<p>While counting for this article we found our own bug: the code compared the label against a value — <code>verified</code> — <strong>that exists in none of our data</strong>. The result was exactly inverted: the <strong>2,344 best-sourced listings displayed as "to check"</strong>, while the <strong>14,168 inferences displayed as "reported halal"</strong>, the stronger wording. The "best-sourced first" sort moved nothing either.</p>
+<p>It is fixed, and an automated check now verifies <strong>that no value present in the data is unknown to the label</strong> — that is the check that would have caught it sooner. We tell you because a page explaining how to read a label should start by reading it correctly itself.</p>
+
+<h2>The 3 questions that settle it, on the spot</h2>
+<p>Thirty seconds at the counter beats any database:</p>
+<p><strong>1. "Is the meat halal?"</strong> — an open question, and the answer matters less than how easily it comes. Hesitation is an answer.<br/>
+<strong>2. "Do you serve alcohol?"</strong> — useful even when the meat is halal: it changes the room, and it is often the real criterion for a family.<br/>
+<strong>3. "Do you have a certificate?"</strong> — if one exists it is often displayed near the till. If not, that is not disqualifying, but you know what you are relying on.</p>
+<p>On what is permitted when doubt remains, <strong>we do not rule</strong>: that is a religious question, not a travel one. Ask someone qualified.</p>
+
+<h2>So why keep the 14,168 inferences?</h2>
+<p>Because an inference announced as such is still useful: it tells you <strong>where to look</strong> in an unfamiliar city. Removing them would leave 335 cities with two or three listings — and a traveller's real question is not "give me certainty", it is "where do I start".</p>
+<p>What we refuse is to pass an inference off as a confirmation. Hence the label on every line, and this article.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Does "reported halal" mean you checked?</strong> No. It means a source declared it. We have visited none of these 16,512 establishments.<br/>
+<strong>Why not write "certified" for the 60?</strong> Because a database tag is not a certificate, and a certification can have expired.<br/>
+<strong>How can I help?</strong> If you asked the three questions and got a clear answer, tell us. That is exactly what turns an inference into information.</p>
+
+<h2>Help the community</h2>
+<p>A restaurant you checked yourself? <strong>Tell us which, and what the staff said.</strong> <a href="/communaute/ajouter">→ Add the place</a></p>
+
+<p><em>16,512 listings across 335 cities, counted in the repository on 13 October 2026. Data © OpenStreetMap contributors. A count says what we know, not what exists.</em></p>`,
+  },
+  {
     slug: "ou-prier-aeroports",
     title: "Salle de prière en aéroport : 8 aéroports détaillés (2026)",
     description: "CDG, Orly, Lyon, Nice, Marseille, Toulouse, Genève, Bruxelles : où se trouve la salle de prière de chaque aéroport, avant ou après les contrôles.",

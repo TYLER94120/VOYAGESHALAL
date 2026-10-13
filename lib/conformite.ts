@@ -134,3 +134,9 @@ export function estConforme(nom?: string, cuisine?: string, halal?: string): Ver
 export function conforme(nom?: string, cuisine?: string, halal?: string): boolean {
   return estConforme(nom, cuisine, halal).ok
 }
+
+// 🏷️ Le libellé halal vit dans `lib/libelleHalal.mjs` — un `.mjs` pour que
+// les tests de la maison l'importent sans `--experimental-strip-types`, qui
+// a déjà cassé un déploiement Vercel une fois. Ré-exporté ici pour que le
+// reste du code n'ait qu'un seul point d'entrée sur la conformité.
+export { HALAL_DECLARE, halalDeclare, libelleHalal, rangHalal } from './libelleHalal.mjs'

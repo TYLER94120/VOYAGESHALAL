@@ -3641,3 +3641,101 @@ français et en anglais, statut 200, lien `/mosquee-proche` présent.
 Et le **témoin** : Istanbul, qui a 1 493 lieux relevés, **ne porte pas** le
 bloc. Un message d'absence qui s'afficherait partout serait pire que pas de
 message du tout.
+
+## 13 octobre — 85,8 % de nos adresses halal sont une déduction, et le libellé était à l'envers
+
+Jour impair, création. L'autre moitié du site — manger — reçoit le traitement
+donné aux hôtels le 7 octobre : publier nos propres chiffres, surtout les
+mauvais. Et en les comptant, j'ai trouvé une faute.
+
+### Le relevé
+
+16 512 adresses dans 335 villes, par ce qui fonde l'étiquette « halal » :
+
+```
+  likely       14 168   85,8 %   déduit du type de cuisine (kebab, indian, turkish…)
+  yes           1 425    8,6 %   tag explicite d'un contributeur OSM
+  high            692    4,2 %
+  only            167    1,0 %
+  certified        60    0,4 %
+  ───────────────────────────
+  déclarées     2 344   14,2 %   quelqu'un l'a écrit
+  déduites     14 168   85,8 %   nous l'avons raisonné
+```
+
+Le raisonnement — « un kebab sert très souvent halal » — est souvent vrai.
+**Ce n'est pas une information.**
+
+### 🔴 Et notre libellé était exactement à l'envers
+
+`components/villes/PageVille.tsx` comparait `halalConfidence === 'verified'`
+en **quatre endroits**. Cette valeur n'existe dans aucune de nos données :
+`lib/conformite.ts` documente lui-même `only | yes | high | certified |
+likely`. Conséquence :
+
+```
+  2 344 adresses DÉCLARÉES   → dernier cas du ternaire → « à vérifier »
+  14 168 DÉDUCTIONS          → cas 'likely'            → « signalé halal »
+```
+
+**Les mieux sourcées étaient présentées plus faiblement que les déductions.**
+Et le tri « vérifiées d'abord » ne déplaçait jamais rien, puisque aucune
+fiche n'est `verified`.
+
+Corrigé par un service unique, `lib/libelleHalal.mjs`, en deux états
+honnêtes : **« signalé halal »** quand une source l'a déclaré, **« à
+confirmer »** quand nous l'avons déduit. Jamais « certifié » (une
+certification porte sur une cuisine ou un produit, pas sur une ligne de base
+de données), jamais « vérifié » pour un tag OSM — *nous* ne l'avons pas
+vérifié.
+
+⚠️ `.mjs` + `.d.mts` + ré-export depuis `conformite.ts` : le test l'importe
+sans `--experimental-strip-types`, qui a déjà cassé un déploiement Vercel.
+
+### Le contrôle qui compte
+
+`scripts/test-libelle-halal.mjs` tient quatre choses, et c'est la quatrième
+qui vaut : **aucune valeur présente dans les données n'est inconnue du
+libellé.** Une liste de valeurs écrite à la main vieillit ; les données, non.
+C'est ce contrôle-là qui aurait trouvé la faute en août.
+
+Les trois autres : le libellé dans les deux langues, l'interdiction des mots
+« certifié » et « vérifié », et le retour de la valeur fantôme dans le code.
+**Vérifié en réintroduisant la faute** — `=== 'verified'` remis → le test
+casse. Retiré → vert.
+
+### Une phrase devenue fausse par ma faute, corrigée aussi
+
+`SocleVille` annonçait : « le statut halal est indiqué comme **vérifié** ou
+signalé selon la source ». Avec deux états réels qui sont « signalé » et « à
+confirmer », cette phrase ne décrivait plus la page. Réécrite, et vérifiée
+servie sur les deux domaines.
+
+### ⚠️ Ce que je n'ai PAS pu vérifier sur page servie
+
+`PageVille` est un composant client : ses tables « manger » se rendent après
+hydratation, et le badge n'apparaît dans aucun HTML servi que je puisse lire
+avec `node:http`. **Je ne revendique donc pas « vérifié servi » pour le
+badge** — il est vérifié par le test unitaire sur la fonction et par la
+source. La phrase de `SocleVille` et les deux articles, eux, sont vérifiés
+servis.
+
+### Les deux articles
+
+« Halal sur une carte : signalé, ou juste déduit ? » — le tableau, les trois
+mots que nous employons et pourquoi, **notre propre faute racontée**, les
+trois questions qui tranchent au comptoir, et la raison de garder les 14 168
+déductions : *une déduction annoncée comme telle dit où regarder ; la
+supprimer laisserait 335 villes avec trois adresses.*
+
+### Vérifié servi
+
+Build du 13/10 00:16, `BUILD_ID` contrôlé avant lecture. 50 contrôles verts.
+
+```
+  FR  200   titre 52 c   description 148 c   1 123 mots   30 liens, 0 cassé
+  EN  200   titre 45 c   description 147 c   1 013 mots   31 liens, 0 cassé
+```
+
+Et contrôlé au passage : le mot « certifié » n'apparaît sur les fiches ville
+que dans la phrase *« jamais annoncé comme certifié »*. Lu avant de conclure.
