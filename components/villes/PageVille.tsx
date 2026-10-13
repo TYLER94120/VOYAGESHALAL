@@ -6,6 +6,7 @@ import { coordsOf, distanceKm, type HotelLike, type LatLng } from '@/lib/hotelFi
 import { computePrayerTimesFull } from '@/lib/prayerCalc'
 import { fuseauDe, formaterHeureVille } from '@/lib/fuseaux.mjs'
 import { estLatinLisible } from '@/lib/latin.mjs'
+import { libelleHalal, rangHalal } from '@/lib/conformite'
 
 // 🏙 LA PAGE VILLE, REPARTIE DE ZÉRO (itération 7).
 //
@@ -135,7 +136,8 @@ export default function PageVille({ ville, en = false, mode = 'complet' }: {
 
   // ── MANGER — 2 tables : vérifiées d'abord, nom lisible obligatoire. ──
   const tables = useMemo(() => {
-    const ordre = (r: Resto) => (r.halalConfidence === 'verified' ? 0 : 1)
+    // 13 octobre : triait sur une valeur qui n'existe pas dans les données.
+    const ordre = (r: Resto) => rangHalal(r.halalConfidence)
     return restos
       .map((r) => ({ r, aff: nomLisible(r.nom, noms) }))
       .filter((x) => x.aff)
@@ -143,10 +145,10 @@ export default function PageVille({ ville, en = false, mode = 'complet' }: {
       .slice(0, 2)
   }, [restos, noms])
 
-  const badgeHalal = (r: Resto) =>
-    r.halalConfidence === 'verified' ? t('vérifié', 'verified')
-    : r.halalConfidence === 'likely' ? t('signalé halal', 'reported halal')
-    : t('à vérifier', 'to check')
+  // 13 octobre : « verified » n'existe pas dans les données, donc les 2 344
+  // adresses explicitement taguées sortaient « à vérifier » et les 14 168
+  // déductions sortaient « signalé halal ». Exactement à l'envers.
+  const badgeHalal = (r: Resto) => libelleHalal(r.halalConfidence, en)
 
   return (
     <div className="pv">
@@ -391,12 +393,12 @@ function Planning({ ville, en, noms }: { ville: VilleData; en: boolean; noms?: R
       if (a1) e.push({ t: '09:30', type: 'visit', title: nomDe(a1.aff!), sub: [a1.a.categorie, a1.a.prix, a1.a.duree].filter(Boolean).join(' · ') || undefined, lat: a1.a.lat, lng: a1.a.lng })
       const m1 = procheDe(a1?.a)
       if (m1) e.push({ t: prieres.Dhuhr, type: 'prayer', title: `Dhuhr — ${nomDe(m1.aff!)}`, sub: t('Mosquée relevée dans la ville', 'Mosque listed in the city'), lat: m1.m.lat, lng: m1.m.lng })
-      if (dej) e.push({ t: '13:00', type: 'meal', title: `${nomDe(dej.aff!)} — ${t('déjeuner', 'lunch')}`, sub: `${cuisineMot(dej.r.type) ?? 'Table'} · ✓ ${dej.r.halalConfidence === 'verified' ? t('vérifié', 'verified') : t('signalé halal', 'reported halal')}`, lat: dej.r.lat, lng: dej.r.lng })
+      if (dej) e.push({ t: '13:00', type: 'meal', title: `${nomDe(dej.aff!)} — ${t('déjeuner', 'lunch')}`, sub: `${cuisineMot(dej.r.type) ?? 'Table'} · ${libelleHalal(dej.r.halalConfidence, en)}`, lat: dej.r.lat, lng: dej.r.lng })
       if (a2) e.push({ t: '15:00', type: 'visit', title: nomDe(a2.aff!), sub: [a2.a.categorie, a2.a.prix, a2.a.duree].filter(Boolean).join(' · ') || undefined, lat: a2.a.lat, lng: a2.a.lng })
       const m2 = procheDe(a2?.a ?? a1?.a)
       if (m2) e.push({ t: prieres.Asr, type: 'prayer', title: `ʿAsr — ${nomDe(m2.aff!)}`, sub: t('Mosquée relevée dans la ville', 'Mosque listed in the city'), lat: m2.m.lat, lng: m2.m.lng })
       if (m2) e.push({ t: prieres.Maghrib, type: 'prayer', title: `Maghrib — ${nomDe(m2.aff!)}`, sub: t('Mosquée relevée dans la ville', 'Mosque listed in the city'), lat: m2.m.lat, lng: m2.m.lng })
-      if (din) e.push({ t: '20:00', type: 'meal', title: `${nomDe(din.aff!)} — ${t('dîner', 'dinner')}`, sub: `${cuisineMot(din.r.type) ?? 'Table'} · ✓ ${din.r.halalConfidence === 'verified' ? t('vérifié', 'verified') : t('signalé halal', 'reported halal')}`, lat: din.r.lat, lng: din.r.lng })
+      if (din) e.push({ t: '20:00', type: 'meal', title: `${nomDe(din.aff!)} — ${t('dîner', 'dinner')}`, sub: `${cuisineMot(din.r.type) ?? 'Table'} · ${libelleHalal(din.r.halalConfidence, en)}`, lat: din.r.lat, lng: din.r.lng })
       else if (a3) e.push({ t: '20:30', type: 'visit', title: nomDe(a3.aff!), sub: [a3.a.categorie, a3.a.prix, a3.a.duree].filter(Boolean).join(' · ') || undefined, lat: a3.a.lat, lng: a3.a.lng })
       jours.push(e.sort((x, y) => x.t.localeCompare(y.t)))
     }

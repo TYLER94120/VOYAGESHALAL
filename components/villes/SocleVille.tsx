@@ -146,8 +146,13 @@ export default function SocleVille({ ville, slug, en }: { ville: VilleData; slug
           <>
             <p className="sv-p">
               {t(
-                `Voici des adresses relevées ${aVille(nom)}. Le statut halal est indiqué comme vérifié ou signalé selon la source — jamais annoncé comme certifié.`,
-                `Here are addresses recorded in ${nom}. Halal status is shown as verified or reported depending on the source — never announced as certified.`,
+                // 13 octobre : cette phrase annonçait « vérifié ou signalé »,
+                // alors qu'aucune adresse n'est vérifiée par nous. Les deux
+                // états réels sont « signalé » (une source l'a déclaré, 2 344
+                // adresses) et « à confirmer » (déduit du type de cuisine,
+                // 14 168). La phrase dit maintenant ce que la page montre.
+                `Voici des adresses relevées ${aVille(nom)}. Le statut halal est indiqué comme signalé quand une source l'a déclaré, et à confirmer quand nous l'avons déduit du type de cuisine — jamais annoncé comme certifié, et jamais comme vérifié par nous.`,
+                `Here are addresses recorded in ${nom}. Halal status is shown as reported when a source declared it, and to confirm when we inferred it from the cuisine type — never announced as certified, and never as verified by us.`,
               )}
             </p>
             <ul className="sv-liste">

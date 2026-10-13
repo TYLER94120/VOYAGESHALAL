@@ -101,6 +101,14 @@ export const BLOG_FR_TO_EN: Record<string, string> = {
   // taille de communauté. L'article dit aussi pourquoi il a deux jours de
   // retard : les 206 églises retirées entre-temps.
   'villes-hotel-a-pied-mosquee': '/blog/cities-where-hotels-are-a-walk-from-a-mosque',
+  // 13 octobre. L'autre moitié du site — manger — reçoit le même traitement
+  // que les hôtels le 7 : publier nos propres chiffres, y compris le mauvais.
+  // Sur 16 512 adresses halal, **14 168 (85,8 %) sont une DÉDUCTION** faite
+  // par nous à partir du type de cuisine ; 2 344 seulement reposent sur un
+  // tag de contributeur. Et en comptant pour l'article, trouvé que notre
+  // libellé était à l'envers : les mieux sourcées sortaient « à vérifier »,
+  // les déductions « signalé halal ». Corrigé le même soir.
+  'restaurant-halal-signale-ou-deduit': '/blog/halal-on-a-map-reported-or-just-inferred',
   'ou-prier-gares-paris': '/blog/where-to-pray-paris-stations',
   // 31 août : les deux pages qui convertissent le MIEUX du site n'avaient
   // aucune version anglaise. Relevé 3 mois, voyageshalal.fr :
