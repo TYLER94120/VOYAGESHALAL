@@ -140,6 +140,19 @@ TRADUCTEUR = 'Muhammad Hamidullah'
 # que la ronde pose : qu'est-ce que cette page apprend, que le site ne dit
 # pas deja ? « Il manque une sourate » n'en est pas un.
 #
+# LA FORME DE CE CRITERE EST CONNUE DEPUIS LE 13 OCTOBRE, et elle vient du
+# carnet de mesures de l'empire (docs/MESURES.md, depot VOYAGESHALAL) :
+# « plus une requete est precise, plus le clic nous appartient ». Une lecon
+# vaut d'etre faite quand la requete qu'elle vise est PRECISE et PAS DEJA
+# TENUE. C'est exactement pourquoi Al-Ikhlas sort en position 11 et pourquoi
+# /sourates.html, precis mais dispute par tous les sites du Coran, reste en
+# position 49.
+#
+# Ce qui manque pour appliquer ce critere, c'est un chiffre par sourate :
+# combien de gens tapent « sourate al-mulk ». Il est dans Search Console, et
+# le carnet n'a aucune table Requetes pour ce site. Voir
+# outils/LISEZMOI.md, section « la loi de precision ».
+#
 # CE QUE COUTERAIT LA SUITE — MESURE LE 6 OCTOBRE, PAS DECIDEE
 # ------------------------------------------------------------
 # La ronde redemande le levier 2 chaque nuit : multiplier les lecons de

@@ -84,6 +84,14 @@ def minuscule(s):
 def titre_de(sec):
     """Le nom de la section, puis ce qu'elle couvre — les deux deja ecrits.
 
+    AVANT DE RETOUCHER CES TITRES, LIRE outils/LISEZMOI.md, section « la loi
+    de precision ». Mesure du 13 octobre : ces onze titres visent tous une
+    requete LARGE — « La priere », « Le pelerinage », « Vocabulaire arabe » —
+    et ces onze pages ont zero impression. La loi mesuree sur les deux sites
+    qui marchent dit qu'aucune reecriture n'y changera rien : le defaut n'est
+    pas le libelle, c'est la requete visee. Soigner ces titres est du travail
+    propre qui ne rapportera rien ; le savoir evite de le refaire.
+
     ON NE REDIGE PAS UN TITRE ICI, on assemble deux champs releves depuis le
     cahier V2 : `nom` et `quoi`. Ecrire douze titres a la main serait ecrire
     douze fois ce que le site dit deja ailleurs, et prendre le risque que les

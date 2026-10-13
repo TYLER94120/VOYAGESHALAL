@@ -67,3 +67,82 @@ python3 outils/servir.py &
 Pas `python3 -m http.server` : il ne connaît pas `/section/<slug>`, qui n'est
 pas un fichier mais une réécriture. Tester avec lui, c'est tester un autre
 site que celui qui est en ligne.
+
+## Avant d'écrire un titre : la loi de précision
+
+**Lue le 12 octobre 2026 dans `docs/MESURES.md` du dépôt VOYAGESHALAL**, le
+carnet de mesures de l'empire. La ronde nocturne dit de le lire depuis des
+semaines ; je ne l'avais jamais ouvert. Il contient une loi mesurée sur les
+deux sites qui fonctionnent, et elle change la façon de juger un titre :
+
+> **Plus une requête est précise, plus le clic nous appartient.**
+>
+> | requête large | position | clics | | requête précise | position | taux |
+> |---|---|---|---|---|---|---|
+> | voyage halal | 54,8 | **0** | | salle de prière orly | 12,0 | **12,5 %** |
+> | vacances islam | 69,8 | **0** | | mentos halal ou pas | 7,3 | **33,3 %** |
+> | hôtel pour musulman | 37,1 | **0** | | levure de bière halal | 5,0 | **16,7 %** |
+>
+> ➡️ **Ne jamais viser une requête large.**
+
+La règle maison sur les titres — moins de 60 caractères, les mots de la
+requête en début, un nombre — dit comment ÉCRIRE un titre. Celle-ci dit
+quelle requête VISER, et c'est elle qui décide si la page sortira un jour.
+Un titre impeccable sur une requête large reste en page 5.
+
+### Ce que ça donne ici, mesuré le 13 octobre
+
+La tête du titre — ce que Google met en gras — sur les 53 pages :
+
+| | pages | ce qu'on mesure |
+|---|---|---|
+| **nomme une chose précise** | 39 | les 38 leçons de sourate + `/sourates.html` |
+| **vise un sujet large** | 14 | l'accueil, `sections.html`, les 11 couvertures, `plus.html` |
+
+Et le relevé colle :
+
+- **les 38 leçons** — « Sourate Al-Ikhlas », précis : c'est la seule page du
+  site bien placée quand elle paraît (**position 11**). C'est aussi, dit le
+  carnet, « le format qui marche ».
+- **les 11 couvertures de section** — « La prière », « Le pèlerinage » : zéro
+  impression. La loi l'avait prédit, et **aucune réécriture de titre n'y
+  changera rien** : le défaut n'est pas le libellé, c'est la requête visée.
+- **`/sourates.html`** — « Les 114 sourates du Coran » : précis, et pourtant
+  **position 49** avec 7 impressions, le maximum du site. Précis ne suffit
+  pas : il faut aussi que la requête ne soit pas déjà tenue. Le carnet dit la
+  même chose d'une page d'hôtels à Istanbul — « 181 impressions en position
+  49,6 face aux sites turcs installés. Perdu d'avance. »
+
+**Donc : précis ET pas déjà tenu.** Les deux, sinon rien.
+
+### Ce que cette loi fait au levier 2
+
+Le levier 2 demande de multiplier les leçons de sourate, et le carnet en fait
+sa priorité n° 4 : « le format marche, il manque du volume ». Le plan est
+fermé depuis le 16 septembre, quand le juz Amma a été complet, et
+`faire-lecon-sourate.py` exige un critère NEUF et écrit pour aller plus loin
+— « il manque une sourate » n'en est pas un.
+
+La loi de précision donne la forme de ce critère : **une leçon vaut d'être
+faite quand la requête qu'elle vise est précise et pas déjà tenue.**
+
+Elle ne donne pas le critère lui-même, parce qu'il faut un chiffre par
+sourate — combien de gens tapent « sourate al-mulk » — et ce chiffre est
+dans Search Console. Le carnet n'a **aucune table Requêtes** pour
+islampasapas.fr : vérifié le 13 octobre, il n'y a que les quatre pages.
+
+La propriété Search Console en « préfixe d'URL » ne bloque donc pas
+seulement le levier 1. Elle bloque aussi le CRITÈRE du levier 2. C'est la
+même demande, et elle compte double.
+
+### La question que le carnet laisse ouverte
+
+> « À vérifier au prochain relevé : Indexation → Pages sur les deux sites,
+> pour distinguer « peu de pages au total » de « pages découvertes mais non
+> indexées ». »
+
+Écrite le 21 août, toujours sans réponse. De ce côté-ci, le site présente
+53 adresses indexables, un `robots.txt` qui n'interdit rien, un sitemap à
+jour et un `noindex` sur les seuls écrans de jeu — tout est vérifié par
+`controler-sitemap.py` et `controler-sections.py`. La distinction que le
+carnet demande se lit dans Search Console, pas ici.
