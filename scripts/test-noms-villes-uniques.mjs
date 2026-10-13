@@ -35,14 +35,9 @@ const casse = (m) => { console.error(`❌ ${m}`); fautes++ }
 
 // La dette connue, nommée. Retirer cette entrée le jour où la fusion est
 // faite — et le test vérifiera alors qu'elle l'est vraiment.
-const DETTE = [
-  {
-    nom: 'Samarkand',
-    langue: 'en',
-    fiches: ['samarcande', 'samarkand'],
-    pourquoi: 'fusion en attente de décision : quelles adresses survivent (50 restos + 120 hôtels contre 40 + 117)',
-  },
-]
+// 14 octobre : la dette « Samarkand » est RÉGLÉE — une seule fiche garde ce
+// nom. La liste est vide ; le test échouera si une nouvelle dette apparaît.
+const DETTE = []
 
 const fiches = readdirSync('data/villes').filter((f) => f.endsWith('.json'))
 const vus = { fr: new Map(), en: new Map() }

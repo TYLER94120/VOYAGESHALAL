@@ -34,6 +34,20 @@ export function middleware(req: NextRequest) {
     return decorate(NextResponse.redirect(url, 301))
   }
 
+  // Samarcande : deux fiches portaient la même ville (« samarkand » et
+  // « samarcande »), et titre identique côté anglais. 14 octobre : la fiche
+  // française est gardée, l'autre part en 301 — y compris ses anciennes URL.
+  const DOUBLON_SAMARCANDE: Record<string, string> = {
+    '/destinations/samarkand': '/destinations/samarcande',
+    '/hotels/samarkand': '/hotels/samarcande',
+    '/guides/samarkand': '/guides/samarcande',
+  }
+  if (DOUBLON_SAMARCANDE[pathname]) {
+    const url = req.nextUrl.clone()
+    url.pathname = DOUBLON_SAMARCANDE[pathname]
+    return decorate(NextResponse.redirect(url, 301))
+  }
+
   // Ancien slug pays accentué (« thaïlande ») → 301 vers le slug ASCII
   if (decodeURIComponent(pathname) === '/destinations/pays/thaïlande') {
     const url = req.nextUrl.clone()
