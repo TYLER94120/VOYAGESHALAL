@@ -3757,3 +3757,5 @@ fait / mesuré / pas fait et pourquoi
 **Bloqué.** Relevé Search Console 3 mois : pas d'accès, pas d'export déposé dans `docs/`. Consigné à la date du 14 octobre.
 
 **Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
+
+**Incident de la nuit, consigné.** Mon premier push a été forcé (`--force-with-lease`) : ma branche locale avait été recalée sur `main` avant la fusion de Samarcande, et le commit `19775d8` (fusion Samarcande, demandée par Mohamed) n'était donc plus sur le branch. Un seul commit a été perdu, aucun autre. Il a été restauré par cherry-pick (`0330e9d`) et poussé sans force. Vérifié : les contrôles Samarcande et données structurées passent. Règle retenue : ne jamais recaler la branche de travail sur `main` avant d'avoir vérifié que tous ses commits y sont ou sont sauvegardés.
