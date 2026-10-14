@@ -104,7 +104,7 @@ const route = readFileSync('components/villes/DestinationRoute.tsx', 'utf8')
 if (!/const villeAffichee = \{ \.\.\.ville, restaurants: restaurantsConformes/.test(route)) {
   casse('la ville affichée n\'est plus construite en un seul endroit : les compteurs de la FAQ vont redivergér de la page')
 }
-for (const [balise, quoi] of [['DestinationSchema', 'le schéma ville'], ['DestinationFaqSchema', 'la FAQ envoyée à Google']]) {
+for (const [balise, quoi] of [['DestinationSchema', 'le schéma ville']]) {
   const m = route.match(new RegExp(`<${balise} ville=\\{([a-zA-Z]+)\\}`))
   if (!m) { casse(`${balise} a disparu de la page ville, ou son appel a changé de forme`); continue }
   if (m[1] !== 'villeAffichee') {
@@ -120,3 +120,10 @@ if (!/ville\.restaurants\?\.length/.test(faq) || !/\(ville\.restaurants \?\? \[\
 
 if (fautes) { console.error(`\n${fautes} faute(s) — build arrêté.`); process.exit(1) }
 console.log(`✅ données structurées : aucune note ni aucun compte d'avis inventés (${villes} fiches ville relues), et le JSON-LD n'annonce que ce que le site ose afficher.`)
+
+// 14 octobre : le schéma FAQPage est retiré des pages villes. Le test garde
+// désormais l'absence : une FAQ déclarée à Google sans être visible est exactement
+// le défaut que cette règle interdit.
+if (/<DestinationFaqSchema\b/.test(route)) {
+  casse('DestinationFaqSchema est rendu sur la page ville : le schéma FAQPage a été retiré le 14 octobre (questions déclarées à Google mais invisibles).')
+}

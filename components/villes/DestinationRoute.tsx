@@ -36,7 +36,7 @@ import path from 'path'
 import type { Ville } from '@/lib/villeTypes'
 import VilleExperience from '@/components/villes/VilleExperience'
 import SocleVille from '@/components/villes/SocleVille'
-import { DestinationFaqSchema, DestinationSchema } from '@/components/SchemaOrg'
+import { DestinationSchema } from '@/components/SchemaOrg'
 import CitySync from '@/components/location/CitySync'
 import { cityEn } from '@/lib/poiI18n'
 import cityCoords from '@/lib/cityCoords.json'
@@ -246,7 +246,9 @@ export default function DestinationRoute({ city, en }: Props) {
 
           Une seule ville part maintenant partout : celle qu'on affiche. */}
       <DestinationSchema ville={villeAffichee} slug={city} en={isEN} siteUrl={siteUrl} />
-      <DestinationFaqSchema ville={villeAffichee} en={isEN} />
+      {/* 14 octobre : schéma FAQPage retiré. Les résultats enrichis FAQ ne sont
+          plus affichés que pour les sites gouvernementaux et de santé, et le
+          schéma déclarait 5 questions que le visiteur ne voit pas. */}
     </>
   )
 }
