@@ -3739,3 +3739,23 @@ Build du 13/10 00:16, `BUILD_ID` contrôlé avant lecture. 50 contrôles verts.
 
 Et contrôlé au passage : le mot « certifié » n'apparaît sur les fiches ville
 que dans la phrase *« jamais annoncé comme certifié »*. Lu avant de conclure.
+
+## 14 octobre — nuit 1 de la routine autonome
+
+fait / mesuré / pas fait et pourquoi
+
+**Fait — décision B : schéma FAQPage retiré des pages villes.**
+- `DestinationFaqSchema` n'est plus rendu dans `components/villes/DestinationRoute.tsx`.
+- `scripts/test-donnees-structurees.mjs` garde désormais l'absence : le test casse si le schéma reviendrait.
+- Vérifié servi (HTML, JSON-LD) sur `voyageshalal.fr` et `gohalaltravel.com` : `/destinations/istanbul` et `/destinations/venise` ne portent plus de `FAQPage` ; le schéma ville est toujours présent. 2 blocs JSON-LD au lieu de 3.
+- Le composant `DestinationFaqSchema` est conservé dans `SchemaOrg.tsx` (non utilisé). Sa suppression ne change rien au rendu.
+
+**Mesuré.** Aucune nouvelle mesure ce soir. La chaîne de contrôle reste verte : 50 contrôles au build.
+
+**Pas fait — approfondissement de la nuit.** Nuit paire : l'approfondissement d'un article n'a pas été livré. Raison : la décision B a demandé de retirer le schéma sur toutes les pages villes et de faire évoluer son garde-fou. Je la reprends la nuit suivante, en choisissant l'article par écart interne prouvé.
+
+**Bloqué.** Relevé Search Console 3 mois : pas d'accès, pas d'export déposé dans `docs/`. Consigné à la date du 14 octobre.
+
+**Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
+
+**Incident de la nuit, consigné.** Mon premier push a été forcé (`--force-with-lease`) : ma branche locale avait été recalée sur `main` avant la fusion de Samarcande, et le commit `19775d8` (fusion Samarcande, demandée par Mohamed) n'était donc plus sur le branch. Un seul commit a été perdu, aucun autre. Il a été restauré par cherry-pick (`0330e9d`) et poussé sans force. Vérifié : les contrôles Samarcande et données structurées passent. Règle retenue : ne jamais recaler la branche de travail sur `main` avant d'avoir vérifié que tous ses commits y sont ou sont sauvegardés.
