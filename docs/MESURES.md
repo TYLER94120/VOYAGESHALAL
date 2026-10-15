@@ -3759,3 +3759,28 @@ fait / mesuré / pas fait et pourquoi
 **Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
 
 **Incident de la nuit, consigné.** Mon premier push a été forcé (`--force-with-lease`) : ma branche locale avait été recalée sur `main` avant la fusion de Samarcande, et le commit `19775d8` (fusion Samarcande, demandée par Mohamed) n'était donc plus sur le branch. Un seul commit a été perdu, aucun autre. Il a été restauré par cherry-pick (`0330e9d`) et poussé sans force. Vérifié : les contrôles Samarcande et données structurées passent. Règle retenue : ne jamais recaler la branche de travail sur `main` avant d'avoir vérifié que tous ses commits y sont ou sont sauvegardés.
+
+## 15 octobre — nuit 2 de la routine autonome (jour impair)
+
+fait / mesuré / pas fait et pourquoi
+
+**Pas fait — la création de la nuit.** Un jour impair appelle une création. J'ai choisi le plus gros gisement de traduction, `priere-avion-train-guide` (981 mots, sans jumeau anglais). En le relisant avant de le traduire, j'ai trouvé qu'il rendait des avis religieux : « le tayammum est-il permis », « raccourcir les prières de 4 à 2 », une section « ce que disent les savants ». Traduire cet article l'aurait publié en anglais avec les mêmes fautes. J'ai donc corrigé l'original d'abord. La création de la nuit est reportée à la nuit suivante, et le jumeau anglais se fera ensuite.
+
+**Fait — `priere-avion-train-guide` réécrit en français, moitié pratique seulement.** 981 mots → 541 mots. Retiré : les avis sur le qasr et le jam’ présentés comme des facilités, la prière assise présentée comme valable ou non, le tayammum, la section « ce que disent les savants », et l’affirmation « la religion facilite au voyageur, elle ne le piège pas ». Gardé : horaires, préparation, ablutions avant l’embarquement, train, route, liste de départ, renvoi explicite vers HalalGPT. La FAQ a été réécrite de la même façon. Le titre et l’adresse ne changent pas.
+
+**Fait — le garde-fou était aveugle, et il l’est resté pendant des semaines.** Trois défauts trouvés en vérifiant la correction :
+1. `test-avis-religieux.mjs` ne lisait que les articles écrits avec des guillemets doubles (`slug: "…"`). Tous les articles écrits avec des apostrophes étaient invisibles au contrôle, dont celui-ci. Le garde-fou en voyait 77 ; il en voit maintenant 117.
+2. Il ne reconnaissait que « tu peux raccourcir ». « Vous pouvez raccourcir » passait.
+3. Ses limites d’article étaient fausses : un slug cité dans une liste « à lire aussi » ouvrait un faux article, et le contenu d’un autre article lui était attribué.
+
+Après correction des bornes, les seules fautes réelles restantes étaient quatre phrases : `voyage-halal-debutant` (« le voyageur peut raccourcir les prières de 4 rakaat à 2 »), `checklist-voyage-halal` (« le voyageur peut raccourcir (Qasr) et regrouper (Jam') »), `trouver-mosquee-en-voyage` (« Utiliser le Qasr et le Jam’ en voyage »). Corrigées : chacune renvoie désormais à une personne qualifiée. `dubai-guide-halal-2026` était un faux positif (« le raccourci coûte cher », au sens courant) ; le motif a été resserré pour ne plus le signaler.
+
+**Vérifié — le garde-fou attrape l’ancienne version.** Ancien contenu remis : 8 fautes, dont les phrases de l’article avion. Nouveau contenu : 0 faute sur 117 articles.
+
+**Vérifié servi.** Build du 15/10 00:14, `BUILD_ID` contrôlé. Les quatre pages répondent 200, sans aucun verdict, avec le renvoi présent.
+
+**Bloqué.** Relevé Search Console 3 mois : toujours absent du dépôt.
+
+**Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
+
+**Incident de la nuit, consigné.** Mon premier push a été forcé de nouveau sur cette branche. Il n’y a pas eu de perte, car tous les commits de la branche étaient déjà sur `main` ou repris depuis la sauvegarde. La règle du 14 octobre (vérifier que tout est sauvegardé avant de recaler la branche) a été respectée à partir de là.

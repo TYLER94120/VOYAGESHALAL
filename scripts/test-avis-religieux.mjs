@@ -37,7 +37,14 @@ const casse = (m) => { console.error(`❌ ${m}`); fautes++ }
 const src = readFileSync('lib/data.ts', 'utf8')
 
 // Un article = du slug au slug suivant.
-const reperes = [...src.matchAll(/slug: "([a-z0-9-]+)"/g)].map((m) => ({ slug: m[1], i: m.index }))
+// 15 octobre : le motif ne lisait que `slug: "…"`. Les articles écrits avec
+// des apostrophes (`slug: '…'`) étaient INVISIBLES à ce contrôle — dont
+// priere-avion-train-guide, qui rendait des avis religieux et passait.
+// 15 octobre : un slug cité dans une liste « à lire aussi » (sur une seule
+// ligne, `{ slug: 'x', title: … }`) n'ouvre PAS un article. Seule une
+// définition — `slug:` en début de ligne, suivi d'un saut de ligne — compte.
+// Sinon le bloc d'un article absorbait le contenu d'un autre (faux positifs).
+const reperes = [...src.matchAll(/\n\s{2,}slug: ["']([a-z0-9-]+)["'],\n/g)].map((m) => ({ slug: m[1], i: m.index }))
 const articles = reperes.map((a, k) => ({
   slug: a.slug,
   // on retire les commentaires de ligne : ce test parle du texte publié
@@ -46,7 +53,11 @@ const articles = reperes.map((a, k) => ({
 
 // Le site tranche-t-il ? Chaque motif est une POSTURE, pas un mot.
 const VERDICTS = [
-  [/\btu peux (raccourcir|regrouper|rassembler|rattraper|omettre|sauter)/i, 'dit au lecteur ce qu’il PEUT faire'],
+  [/\b(tu|vous|on) peux? (raccourcir|regrouper|rassembler|rattraper|omettre|sauter)/i, 'dit au lecteur ce qu’il PEUT faire'],
+  // 15 octobre : « vous pouvez raccourcir » passait. Le garde-fou ne connaissait que « tu ».
+  [/\b(vous|tu) pouvez? (raccourcir|regrouper|prier assis|prier debout)/i, 'dit au lecteur ce qu’il PEUT faire (vouvoiement)'],
+  [/\bcertains savants recommandent|d'autres la (jugent|considèrent) pleinement valable|les deux positions existent\b/i, 'rapporte un avis de savants comme une réponse'],
+  [/\bla religion facilite au voyageur, elle ne le piège pas\b/i, 'affirme un jugement religieux'],
   [/\b(raccourcis|regroupe|rassemble|rattrape)\b(?![a-zà-ÿ])/i, 'impératif religieux'],
   [/raccourci[rs]? (les prières )?de 4 à 2|de quatre à deux rakat/i, 'prescrit un nombre de rakats'],
   [/shortening 4-rakat prayers to 2|shorten(ing)? (your )?prayers to two/i, 'prescribes a number of rakats'],
@@ -78,7 +89,9 @@ for (const a of articles) {
 // Les articles qui PARLENT de ces sujets doivent porter le renvoi explicite.
 // Un article qui mentionne le regroupement ou le tayammoum sans dire qu'il ne
 // tranche pas laisse le lecteur croire que le site a répondu.
-const SUJETS = /regroup|raccourci|tayammoum|tayammum|shorten|combin(e|ing) (dhuhr|prayers)/i
+// 15 octobre : resserré. « raccourci » seul désignait un raccourci, et « combine
+// mosquées » n'a rien de religieux : seules les formes qui parlent de prière comptent.
+const SUJETS = /regroup\w* (les |tes |vos |dhuhr|maghrib|prières)|raccourci\w* (les |tes |vos )?prières|\bqasr\b|\bjam['’]\b|tayammu[mm]|shorten|combin(e|ing) (dhuhr|prayers)/i
 const RENVOI = /nous ne tranchons pas|n(?:'|’)y répondons pas|we do not rule|we do not answer them|pas une question de voyage|not a travel one|question religieuse|religious question/i
 for (const a of articles) {
   // le corps d'article seulement : un slug sans contenu n'est pas concerné

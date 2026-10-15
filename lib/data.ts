@@ -428,7 +428,7 @@ const guidesFr: Guide[] = [
 <h2>Comment prier en voyage ?</h2>
 <p>L'islam facilite la prière pour le voyageur :</p>
 <ul>
-<li><strong>Qasr</strong> : le voyageur peut raccourcir les prières de 4 rakaat à 2.</li>
+<li><strong>Qasr et Jam’</strong> : raccourcir ou regrouper la prière en voyage est une question religieuse — pose-la à quelqu’un de qualifié.</li>
 <li><strong>Jam'</strong> : il peut regrouper Dhuhr + Asr ensemble, et Maghrib + Isha ensemble.</li>
 <li>Utilisez <strong>Muslim Pro</strong> pour les horaires de prière et la direction de la Qibla.</li>
 <li>Les aéroports internationaux disposent presque tous de salles de prière multireligieuses.</li>
@@ -683,7 +683,7 @@ const guidesFr: Guide[] = [
 <li>Prier dans votre chambre d'hôtel (les hôtels Muslim-friendly fournissent un tapis de prière et l'indication de la Qibla)</li>
 <li>Prier dans les aéroports (salles de prière disponibles dans la plupart des grands aéroports internationaux)</li>
 <li>Prier dans les parcs ou espaces verts propres</li>
-<li>Utiliser le Qasr (raccourcissement) et le Jam' (regroupement) en voyage</li>
+<li>Demander à quelqu’un de qualifié si le Qasr et le Jam’ s’appliquent à ton trajet : question religieuse.</li>
 </ul>`,
   },
   {
@@ -1016,7 +1016,7 @@ const guidesFr: Guide[] = [
 <ul>
 <li>Tapis de prière léger et pliable (existe en version compact 200g)</li>
 <li>Boussole (ou utiliser l'application Qibla dans Muslim Pro)</li>
-<li>Rappel : le voyageur peut raccourcir (Qasr) et regrouper (Jam') les prières</li>
+<li>Rappel : Qasr et Jam’ sont une question religieuse — pose-la à quelqu’un de qualifié.</li>
 <li>Identifier les salles de prière dans les aéroports de transit</li>
 </ul>
 
@@ -1165,38 +1165,40 @@ const guidesFr: Guide[] = [
     {
     slug: 'priere-avion-train-guide',
     title: 'Prière en avion et en train : comment faire, concrètement',
-    description: 'Peut-on prier dans l\'avion ou le train ? Oui — assis, par gestes, en regroupant les prières. Le guide pratique du voyageur musulman.',
+    description: 'Comment prier en avion et en train, concrètement : la préparation, le lieu, le temps. Ce que nous ne tranchons pas, et où le demander.',
     coverImage: '/guides/blog-avion.jpg',
     category: 'Pratique',
     readTime: '5 min',
     publishedAt: '2026-03-24',
+    updatedAt: '2026-10-15',
     tags: ['Avion', 'Train', 'Prière', 'Pratique'],
-    content: `<p>Vol long-courrier, TGV, correspondances : comment ne pas manquer la prière quand on est en déplacement ? Bonne nouvelle : l\'islam a tout prévu pour le voyageur.</p>
-<h2>Les facilités du voyageur (musafir)</h2>
-<p>En voyage, vous pouvez <strong>raccourcir</strong> les prières de 4 unités à 2 (qasr) et <strong>regrouper</strong> Dhuhr avec Asr, et Maghrib avec Isha (jam\'). Ces facilités sont une miséricorde — les utiliser n\'est pas un manque de piété.</p>
-<h2>Prier en avion</h2>
-<p>Si vous pouvez vous tenir debout sans gêner (fond de cabine sur certains gros porteurs), faites-le. Sinon, <strong>priez assis à votre place</strong>, par gestes : inclinez le buste pour le rukû, davantage pour le sujûd. Pour la direction, orientez-vous vers la Qibla au takbir initial si possible ; en avion, la direction évolue — faire de son mieux suffit. Calculez les horaires selon votre position avec <a href="/horaires-priere">nos horaires</a> et la <a href="/qibla">Qibla</a>.</p>
-<h2>Prier dans le train</h2>
-<p>Le train est plus simple : espaces entre voitures, ou prière assise à votre place. Dans les grandes gares, des salles d\'attente calmes font l\'affaire ; certaines gares internationales ont des espaces multiconfessionnels. Regrouper les prières évite de prier dans de mauvaises conditions.</p>
-<h2>Le kit qui change tout</h2>
-<p>Tapis de poche, écharpe propre, chaussettes (ablutions simplifiées par khuff/masah si vous les avez enfilées en état de pureté), gourde pour les ablutions. Voir notre <a href="/guides/checklist-voyage-halal">checklist voyage halal</a> complète.</p>
-<h2>Prier en avion : ce que disent les savants</h2>
-<p>Deux points font consensus : la prière ne se reporte pas au-delà de son temps quand le vol couvre tout le créneau (les vols long-courriers traversent souvent deux ou trois prières), et la validité de la prière assise <strong>quand on ne peut pas se tenir debout</strong>. Les avis divergent sur la préférence : certains recommandent de refaire la prière à l'arrivée si elle a été accomplie assise sans nécessité absolue ; d'autres la considèrent pleinement valable vu les contraintes du vol. Le plus sûr : se lever si un espace le permet (fond de cabine des gros porteurs, hors turbulences et consignes), sinon prier assis sans scrupule excessif.</p>
-<h2>Les ablutions en vol : eau ou tayammum</h2>
-<p>Les toilettes d'avion permettent des ablutions complètes avec un peu de méthode (un gobelet aide). Si l'eau est inaccessible ou que la file s'éternise à l'heure de la prière, le <strong>tayammum</strong> est prévu exactement pour cela : frapper légèrement les paumes sur une surface naturelle propre (dossier en tissu, accoudoir non métallique — les avis divergent sur les surfaces synthétiques, d'où l'intérêt d'anticiper les ablutions avant l'embarquement), puis passer les mains sur le visage et les mains. Astuce simple : faites vos ablutions en salle d'embarquement, elles tiennent tout le vol si rien ne les rompt.</p>
-<h2>Cas concret : Paris → Kuala Lumpur (13 h de vol)</h2>
-<p>Départ 11 h : priez Dhuhr avancé avec Asr regroupés avant l'embarquement (jam' taqdim) — ablutions faites à la maison. En vol, Maghrib tombe au-dessus de l'Inde : priez assis à votre place, buste incliné, direction estimée au mieux ; regroupez Isha dans la foulée. Atterrissage 6 h locale : Fajr à la prayer room de KLIA (indiquée partout), fraîchement rasé d'ablutions refaites. Bilan : cinq prières, zéro stress, aucun rattrapage. Ce schéma se transpose à tout long-courrier — seul change le créneau à regrouper.</p>
-<h2>La check-list du voyageur priant</h2>
-<p>Bagage cabine : tapis de poche (moins de 100 g), chaussettes propres enfilées après ablutions (permet le masah en escale), petite gourde vide à remplir après la sécurité, boussole <a href="/qibla">Qibla</a> vérifiée avant le mode avion, horaires du jour de la destination en capture d'écran. Au retour : notez les coins prière découverts — ils serviront à d'autres.</p>
-<h2>Et les longs trajets en bus ou en voiture ?</h2>
-<p>Mêmes principes : regroupement des prières aux pauses (les bus longue distance du Maghreb et de Turquie s'arrêtent d'ailleurs souvent près d'une mosquée d'aire d'autoroute — les stations-service turques ont presque toutes leur mescid), tapis de poche sur le bas-côté propre en voiture, et tayammum en ultime recours. Le principe directeur ne change jamais : la religion facilite au voyageur, elle ne le piège pas.</p>`,
+    content: `<p>Vol long-courrier, TGV, correspondances : comment ne pas manquer la prière quand on est en déplacement ? La réponse pratique tient en trois gestes : <strong>prévoir</strong>, <strong>choisir le bon moment</strong>, <strong>se préparer avant de monter</strong>.</p>
+<h2>Avant de partir : regarder les horaires du jour</h2>
+<p>Les horaires changent avec le fuseau et la route. Regarde <a href="/horaires-priere">les horaires du jour</a> avant de quitter la maison, puis à chaque changement de fuseau. Sur un long vol, c'est l'heure de l'embarquement qui décide souvent de ce que tu peux faire au sol, pas l'heure du décollage.</p>
+<h2>En avion</h2>
+<p>Dans la plupart des avions, la place est trop étroite pour une prière debout. Beaucoup de voyageurs prient donc à leur place. Quelques gros porteurs ont un espace debout au fond de la cabine : demande à l'équipage si c'est possible, en particulier pendant un service calme. Pour la direction, notre <a href="/qibla">outil qibla</a> fonctionne une fois la page ouverte ; le cap de l'avion change en route, donc l'estimation reste approximative.</p>
+<p>Ce que nous ne tranchons pas : la manière exacte de prier assis, la validité d'une prière faite assise, et ce qu'il faut faire quand la prière ne peut pas être accomplie dans son temps. <strong>Ce sont des questions religieuses, pas des questions de voyage.</strong> Pose-les à quelqu'un de qualifié, par exemple via <a href="https://halalgpt.fr/questions?utm_source=voyageshalal&amp;utm_medium=passerelle&amp;utm_campaign=avion" target="_blank" rel="noopener noreferrer">HalalGPT</a>.</p>
+<h2>Les ablutions en vol</h2>
+<p>Les lavabos d'avion sont étroits. Le plus simple est de faire tes ablutions <strong>avant l'embarquement</strong>, dans le terminal, où les lavabos sont bien plus pratiques. Garde une petite bouteille souple et une serviette microfibre dans le bagage cabine. Pour le cas où l'eau manque, la règle est une question religieuse : renvoie-la à la même personne qualifiée.</p>
+<h2>Dans le train</h2>
+<p>Le train est souvent plus simple que l'avion. Tu peux prier debout entre deux voitures quand c'est stable, ou assis à ta place. Dans les grandes gares, certains espaces d'attente sont calmes ; les gares internationales ont parfois des espaces multiconfessionnels. Renseigne-toi auprès du personnel. Voir aussi notre guide <a href="/blog/ou-prier-gares-paris">où prier dans les gares de Paris</a>.</p>
+<h2>Les longs trajets en bus ou en voiture</h2>
+<p>Pour la route, le plus utile est de placer les pauses. Regarde les horaires du jour avant de partir, et repère les aires avec un coin calme. Voir <a href="/blog/ou-prier-aire-autoroute">où prier sur une aire d'autoroute</a>.</p>
+<h2>La liste de départ</h2>
+<p>Un tapis de poche, une petite bouteille pour les ablutions, une serviette microfibre, et un contact qualifié pour les questions religieuses. Le reste est de la préparation : des horaires vérifiés, et une pause pensée à l'avance.</p>
+<h2>Questions fréquentes</h2>
+<p><strong>Puis-je prier dans l'avion ?</strong> Oui, à ta place si tu ne peux pas te lever ; la manière est une question religieuse, voir ci-dessus.<br/>
+<strong>Comment trouver la qibla en vol ?</strong> Notre <a href="/qibla">outil qibla</a>, une fois la page ouverte. Le cap change, donc c'est une estimation.<br/>
+<strong>Puis-je prier dans le train ?</strong> Oui, debout entre deux voitures ou assis à ta place.<br/>
+<strong>Et si je n'ai pas d'eau ?</strong> C'est une question religieuse : pose-la à quelqu'un de qualifié.</p>
+<h2>Aide la communauté</h2>
+<p>Un endroit calme dans un aéroport ou une gare que tu as trouvé ? Dis-le-nous, avec l'endroit et le moment. <a href="/communaute">→ Rejoindre la communauté</a></p>`,
     faq: [
-      { q: "Peut-on prier assis dans l'avion ?", a: "Oui quand on ne peut pas se tenir debout : on incline le buste pour le rukû et davantage pour le sujûd. Certains savants recommandent de refaire la prière à l'arrivée par précaution, d'autres la jugent pleinement valable — les deux positions existent." },
-      { q: "Comment connaître la direction de la Qibla en vol ?", a: "Orientez-vous vers la Qibla au takbir initial si votre siège le permet ; la direction évoluant avec l'avion, la jurisprudence retient que le voyageur fait de son mieux. Notre boussole Qibla fonctionne au sol à chaque escale." },
-      { q: "Le tayammum est-il permis en avion ?", a: "Oui, si l'eau est réellement inaccessible. Frappez légèrement les paumes sur une surface naturelle propre puis passez-les sur le visage et les mains. Le plus simple reste de faire ses ablutions avant l'embarquement." },
-      { q: "Faut-il rattraper les prières manquées en vol ?", a: "Une prière dont le temps est entièrement passé pendant le vol sans avoir pu la faire se rattrape dès que possible. Mais avec le regroupement (jam') et la prière assise, on peut presque toujours prier dans les temps." },
-      { q: "Peut-on prier dans le train ou le TGV ?", a: "Oui, c'est même plus simple : debout entre deux voitures quand c'est stable, ou assis à sa place. Les grandes gares offrent des salons calmes, et certaines des espaces multiconfessionnels." }
-    ],
+    { q: "Puis-je prier dans l’avion ?", a: "Oui, à ta place si tu ne peux pas te lever. La manière de prier assis est une question religieuse : pose-la à quelqu’un de qualifié." },
+    { q: "Comment trouver la qibla en vol ?", a: "Notre outil qibla fonctionne une fois la page ouverte. Le cap de l’avion change en route : c’est une estimation." },
+    { q: "Puis-je prier dans le train ?", a: "Oui, debout entre deux voitures quand c’est stable, ou assis à ta place." },
+    { q: "Et s’il n’y a pas d’eau pour les ablutions ?", a: "C’est une question religieuse : pose-la à quelqu’un de qualifié." },
+  ],
   },
   {
     slug: 'voyage-halal-japon-guide',
