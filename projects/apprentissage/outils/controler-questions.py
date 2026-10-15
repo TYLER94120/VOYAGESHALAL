@@ -660,6 +660,87 @@ def main():
         print('  %d questions « %s », recomptees dans le texte.'
               % (comptes[fam], fam))
     # ================================================================
+    # LE SITE NE PROMET AUCUN MERITE — AJOUTE LE 15 OCTOBRE
+    # ================================================================
+    #
+    # Regle du carnet de l'empire, section « LES ARTICLES » du 25 aout :
+    # quatre titres de voyageshalal promettaient une salle de priere que
+    # l'article declarait inexistante. « Les descriptions, elles, etaient
+    # honnetes. Seul le titre mentait — c'est-a-dire la seule ligne que Google
+    # affiche et la seule sur laquelle on clique. » Ils l'ont reparee, puis
+    # tenue par un test.
+    #
+    # Ici, la promesse qu'on ne peut pas tenir n'est pas une salle de priere,
+    # c'est un MERITE attache a une sourate : « celui qui la recite… »,
+    # « elle protege de… », « les vertus de… ». Ces mots-la sont tres
+    # cherches, et ils viennent de hadiths dont ce projet n'a AUCUNE
+    # traduction francaise sourcee. Les promettre ferait venir des gens sur
+    # une page qui ne repond pas, et engagerait Mohamed sur un contenu qui
+    # n'existe pas. faire-lecon-sourate.py le dit depuis septembre — dans un
+    # commentaire. Un commentaire n'arrete personne.
+    #
+    # LE PIEGE, ET POURQUOI UNE VERSION NAIVE DE CE CONTROLE SERAIT JETEE.
+    # « recompense », « bienfait », « protection » sont des mots du CORAN :
+    # Hamidullah les emploie 375 fois dans les versets que le site cite. Un
+    # controle qui les cherche partout trouve 375 fautes, toutes fausses, et
+    # finit desactive. On ne regarde donc que LA VOIX DU SITE : l'enonce, et
+    # l'explication hors citation. Les reponses d'une question « continuer un
+    # verset » sont du texte coranique, pas la voix du site.
+    #
+    # Le depouillement des citations est fait large, et c'est voulu :
+    # Hamidullah emboite les guillemets — « … lorsqu'il dit: «Le Diable…» » —
+    # et un depouillement naif laisse ressortir le texte cite comme s'il
+    # etait de nous. C'est l'erreur exacte qui a fausse la premiere mesure de
+    # typographie, le 4 octobre.
+    #
+    # Mesure du 15 octobre : 5 014 champs de la voix du site, ZERO promesse.
+    # La regle etait tenue. Elle est maintenant tenue par un controle.
+    # On relit les banques depuis le disque : le corps de ce controle n'en
+    # garde pas la liste complete, et la relecture coute une fraction de
+    # seconde. Elle sert aussi aux deux mesures du 12 octobre, plus bas.
+    par_section = {}
+    for chemin in fichiers:
+        par_section[chemin.stem] = json.loads(chemin.read_text(encoding='utf-8'))
+
+    MERITES = ('bienfait', 'merite', 'vertu', 'recompense', 'protege',
+               'protection', 'guerit', 'guerison', 'exauce', 'benediction',
+               'baraka', 'efface les peches', 'equivaut',
+               'celui qui la recite', 'celui qui le recite')
+
+    def voix_du_site(v):
+        """Ce que le site dit EN SON NOM : tout le reste est cite."""
+        v = str(v or '')
+        v = re.sub(r'«.*?»', ' ', v, flags=re.S)
+        v = re.sub(r'«.*', ' ', v, flags=re.S)        # guillemet jamais ferme
+        v = re.sub(r'Traduction du sens\s*:.*', ' ', v, flags=re.S)
+        v = re.sub(r'Le verset entier\s*:.*', ' ', v, flags=re.S)
+        return v
+
+    champs_voix = 0
+    for sec in sorted(par_section):
+        for q in par_section[sec]:
+            for champ in ('question', 'explication'):
+                v = voix_du_site(q.get(champ))
+                if not v.strip():
+                    continue
+                champs_voix += 1
+                plat = nu(v)
+                for mot in MERITES:
+                    if mot in plat:
+                        fautes.append(
+                            '%s/%s : le site promet « %s » en son nom (%s) — '
+                            'aucun hadith source ne le porte ici : « %s »'
+                            % (sec, q['id'], mot, champ,
+                               re.sub(r'\s+', ' ', v).strip()[:70]))
+
+    # Comme la ligne du 12 octobre : on dit le MESURE, pas un verdict. Une
+    # ligne de bilan s'imprime avant le bloc des fautes ; si elle affirme
+    # « aucune promesse », elle l'affirmera aussi quand il y en a une.
+    promesses = sum(1 for x in fautes if 'en son nom' in x)
+    print('  %d champs de la voix du site examines, %d promesse(s) de merite.'
+          % (champs_voix, promesses))
+
+    # ================================================================
     # DEUX MESURES AJOUTEES LE 12 OCTOBRE
     # ================================================================
 
@@ -686,12 +767,6 @@ def main():
     # met a reposer des centaines de versets d'une section a l'autre, cela doit
     # se voir avant la publication, pas apres.
     PLAFOND_CROISES = 90
-    # On relit les banques depuis le disque : le corps de ce controle n'en
-    # garde pas la liste complete, et la relecture coute une fraction de
-    # seconde.
-    par_section = {}
-    for chemin in fichiers:
-        par_section[chemin.stem] = json.loads(chemin.read_text(encoding='utf-8'))
     croises = {}
     for sec in sorted(par_section):
         for q in par_section[sec]:

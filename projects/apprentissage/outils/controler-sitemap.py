@@ -44,6 +44,7 @@ import json
 import pathlib
 import re
 import sys
+import unicodedata
 import urllib.error
 import urllib.request
 
@@ -73,6 +74,14 @@ def sans_balises(h):
     corps = h[h.find('<body>'):]
     corps = re.sub(r'<script.*?</script>', ' ', corps, flags=re.S)
     return re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', ' ', corps)).strip()
+
+
+def desechapper(s):
+    """Les entites HTML des titres : &nbsp; et &#39; surtout."""
+    for avant, apres in (('&amp;', '&'), ('&nbsp;', ' '), ('&#39;', "'"),
+                         ('&quot;', '"'), ('&lt;', '<'), ('&gt;', '>')):
+        s = s.replace(avant, apres)
+    return s.replace('\u00a0', ' ')
 
 
 def main():
@@ -166,6 +175,65 @@ def main():
                 if cle not in d:
                     fautes.append('%s : JSON-LD sans %s' % (chemin, cle))
 
+    # 10. AUCUN TITRE, AUCUNE DESCRIPTION NE PROMET UN MERITE.
+    #
+    # Le carnet de l'empire, 25 aout : quatre titres de voyageshalal
+    # promettaient une salle de priere que l'article declarait inexistante.
+    # « Les descriptions, elles, etaient honnetes. SEUL LE TITRE MENTAIT —
+    # c'est-a-dire la seule ligne que Google affiche et la seule sur laquelle
+    # on clique. »
+    #
+    # Ici la promesse intenable est le merite d'une sourate : « les vertus
+    # de… », « celui qui la recite… », « elle protege de… ». Tres cherche, et
+    # ce projet n'a aucune traduction francaise sourcee des hadiths qui le
+    # portent. Un titre qui le promettrait engagerait Mohamed sur un contenu
+    # qui n'existe pas.
+    #
+    # controler-questions.py tient la meme regle dans les 2 701 questions.
+    # Celui-ci la tient sur les deux lignes que Google AFFICHE, et c'est la
+    # qu'elle avait casse ailleurs.
+    #
+    # Pas de depouillement de citation ici : un titre ou une description ne
+    # cite jamais un verset. Les 53 pages sont la voix du site, entiere.
+    #
+    # Mesure du 15 octobre : 53 titres, 53 descriptions, zero promesse.
+    # « recite » TOUT SEUL NE VA PAS, et le premier jet de ce controle l'a
+    # montre en refusant « Le sens des sourates : comprendre ce qu'on
+    # recite ». Ce titre ne promet rien : il dit ce que la section enseigne.
+    # Ce qui est intenable, c'est le MERITE attache a l'acte de reciter —
+    # « celui qui la recite… » — pas le verbe. On garde donc la locution
+    # entiere. Meme regle, deux surfaces, deux pieges differents : ici le mot
+    # trop large, dans les questions le texte cite.
+    MERITES = ('bienfait', 'merite', 'vertu', 'recompense', 'protege',
+               'protection', 'guerit', 'guerison', 'exauce', 'benediction',
+               'baraka', 'equivaut',
+               'celui qui la recite', 'celui qui le recite',
+               'celle qui la recite', 'quiconque la recite')
+
+    def aplatir(s):
+        s = unicodedata.normalize('NFD', desechapper(s))
+        s = ''.join(c for c in s if unicodedata.category(c) != 'Mn')
+        return re.sub(r'[^a-z0-9]+', ' ', s.lower()).strip()
+
+    for u in adresses:
+        chemin = u[len(SITE):] or '/'
+        code, page = prendre(BASE + chemin)
+        if code != 200 or not page:
+            continue
+        for quoi, motif in (('titre', r'<title>(.*?)</title>'),
+                            ('description',
+                             r'<meta name="description" content="(.*?)"')):
+            m = re.search(motif, page, re.S)
+            if not m:
+                continue
+            plat = aplatir(m.group(1))
+            for mot in MERITES:
+                if mot in plat:
+                    fautes.append(
+                        '%s : le %s promet « %s » — aucun hadith source ne le '
+                        'porte sur ce site : « %s »'
+                        % (chemin, quoi, mot, desechapper(m.group(1))[:60]))
+
     # 9. CHAQUE lastmod DIT LA VERITE SUR SA PAGE.
     #
     # Jusqu'au 8 octobre, le generateur posait la meme date sur les 53
@@ -236,6 +304,8 @@ def main():
     print('  %d adresses annoncees, toutes demandees au serveur.' % len(adresses))
     print('  Aucun doublon, aucun noindex, aucune page vide, canonicals conformes.')
     print('  Balises de partage completes et donnees structurees lisibles.')
+    print('  %d titres et %d descriptions relus : aucune promesse de merite.'
+          % (len(adresses), len(adresses)))
     print('  Et chaque lastmod est celui du dernier commit de sa page :'
           ' %d dates distinctes pour %d adresses.'
           % (len({d for _, d in re.findall(
