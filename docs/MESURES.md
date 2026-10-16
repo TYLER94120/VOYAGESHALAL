@@ -3798,3 +3798,30 @@ fait / mesuré / pas fait et pourquoi
 **Bloqué.** Relevé Search Console 3 mois : toujours absent du dépôt. Consigné.
 
 **Interdits respectés.** Aucune fusion par mes soins, aucun push sur `main`, aucune dépense.
+## 16 octobre — relevé Search Console 3 mois reçu : la voie « où prier » dans les parcs et les transports
+
+fait / mesuré / pas fait et pourquoi
+
+**Mesuré — premier relevé Search Console 3 mois, pages les plus populaires (clics), reçu par capture le 16 octobre (13:49) :**
+
+```
+  /blog/ou-prier-disneyland-paris       137 clics   (août : 53)
+  /blog/ou-prier-parc-asterix            56 clics   (août : 29)
+  /blog/ou-prier-gares-paris             18 clics   (août : 9)
+  /blog/ou-prier-aeroports (tronqué)     13 clics
+  /blog/ou-prier-aeroport-orly           10 clics   (août : 4)
+  /                                       9 clics   (août : 18)
+  /guides/ou-prier-aeroport-guide         8 clics   (ancienne URL en 301)
+```
+
+La voie qui porte le trafic est donc claire : les pages « où prier » dans les grands parcs, les gares et les aéroports. Les parcs progressent nettement (Disneyland de 53 à 137, Parc Astérix de 29 à 56). L'accueil recule (de 18 à 9). La colonne des impressions est coupée sur la capture, donc je ne compare pas les impressions.
+
+**Fait — maillage de la voie.** Les pages de la voie se citaient peu : les gares ne renvoyaient vers aucun parc, Orly vers aucun des deux. Ajout d'une section « Les autres lieux de la voie » sur `ou-prier-gares-paris` et `ou-prier-aeroport-orly`. Les liens vers les parcs reprennent les distances déjà mesurées le 3 septembre. Aucune affirmation de transport n'a été ajoutée : je ne sais pas quelle ligne relie quel lieu, et je ne l'écris pas.
+
+**Vérifié servi.** Build du 16/10, `BUILD_ID` contrôlé. Les deux pages répondent 200, les cinq liens de la voie sont présents sur chacune, et les 8 liens internes de chaque page répondent 200.
+
+**Pas fait.** Pas de nouvel article ce soir : le gisement le plus fort est déjà traité (Disneyland, 1 172 mots, mesuré). Ce qui reste à faire sur la voie est une décision éditoriale sur les parcs secondaires, et une vraie mesure de la position pour savoir quel article améliorer.
+
+**Consigné.** L'ancienne URL `/guides/ou-prier-aeroport-guide` reçoit encore 8 clics en 3 mois : elle redirige en 301 vers `/blog/ou-prier-aeroports`. Le trafic est donc bien suivi par le nouvel hub, à condition que Google suive la redirection.
+
+**Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
