@@ -3372,7 +3372,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Pratique',
     readTime: "8 min",
     publishedAt: '2026-08-06',
-    updatedAt: '2026-09-28',
+    updatedAt: '2026-10-16',
     content: `<p>Correspondance à Paris, train dans deux heures, et l'heure de la prière qui tourne ? Voici la réalité des gares parisiennes — y compris ce qu'elles n'ont pas — et les solutions qui marchent vraiment selon le temps qu'il te reste.</p>
 
 <h2>L'essentiel en 30 secondes</h2>
@@ -3424,6 +3424,8 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <strong>Et dans le train ?</strong> Voir notre guide <a href="/blog/prier-en-train">prier dans le train</a>.<br/>
 <strong>Et dans les aéroports ?</strong> Là, il y a des espaces : voir <a href="/blog/ou-prier-aeroports">les salles de prière des aéroports</a>.</p>
 
+<h2>Les autres lieux de la voie</h2>
+<p>Si ton trajet passe aussi par un parc : <a href="/blog/ou-prier-disneyland-paris">Disneyland Paris</a> (mosquée la plus proche à 5,1 km, mesure du 3 septembre), <a href="/blog/ou-prier-parc-asterix">Parc Astérix</a> (14,2 km), <a href="/blog/ou-prier-futuroscope">Futuroscope</a> (8,3 km), <a href="/blog/ou-prier-puy-du-fou">Puy du Fou</a> (13,9 km). Et pour les aéroports, <a href="/blog/ou-prier-aeroport-orly">Orly</a>.</p>
 <h2>Aide la communauté</h2>
 <p>Tu connais <strong>la salle de prière discrète près d'une gare parisienne</strong> ? C'est l'information la plus précieuse de cette page, et la seule que nous ne pouvons pas produire seuls. Dis-nous laquelle, près de quelle gare, et combien de minutes de marche. <a href="/communaute/ajouter">→ Ajouter le lieu</a> · <a href="/communaute">→ Rejoindre la communauté</a></p>`,
   },
@@ -4655,7 +4657,7 @@ If an adjustment is required, it is almost always possible to do it yourself rat
     category: 'Pratique',
     readTime: "7 min",
     publishedAt: '2026-07-20',
-    updatedAt: '2026-09-20',
+    updatedAt: '2026-10-16',
     tags: ["Orly", "Paris", "Aéroports", "Prière"],
     content: `<p>Tu voyages depuis Orly et tu cherches où prier ? Voici ce qu'on sait, d'où ça vient, ce qu'on ignore, et surtout comment t'organiser — parce qu'à Orly le vrai problème n'est pas de trouver la salle, c'est de la trouver <strong>ouverte</strong>.</p>
 
@@ -4719,6 +4721,8 @@ If an adjustment is required, it is almost always possible to do it yourself rat
 <strong>Et à Roissy ?</strong> Voir <a href="/blog/ou-prier-aeroport-cdg">où prier à l'aéroport CDG</a>.<br/>
 <strong>Et les autres aéroports ?</strong> Voir <a href="/blog/ou-prier-aeroports">notre guide complet des salles de prière d'aéroport</a>.</p>
 
+<h2>Les autres lieux de la voie</h2>
+<p>Pour les gares parisiennes, voir <a href="/blog/ou-prier-gares-paris">où prier dans les gares de Paris</a>. Pour les parcs, les distances mesurées sont dans chaque guide : <a href="/blog/ou-prier-disneyland-paris">Disneyland Paris</a>, <a href="/blog/ou-prier-parc-asterix">Parc Astérix</a>, <a href="/blog/ou-prier-futuroscope">Futuroscope</a>, <a href="/blog/ou-prier-puy-du-fou">Puy du Fou</a>.</p>
 <h2>Aide la communauté</h2>
 <p>Tu as prié à Orly récemment ? Dis-nous <strong>dans quel bâtiment, à quelle heure, si c'était ouvert, et de quel côté des contrôles</strong>. Les horaires réels sont exactement ce qui manque à cette page, et c'est ce qui servira le plus aux vols de nuit. <a href="/communaute/ajouter">→ Ajouter le lieu</a> · <a href="/communaute">→ Rejoindre la communauté</a></p>`,
   },
