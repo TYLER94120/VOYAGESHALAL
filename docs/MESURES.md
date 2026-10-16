@@ -3784,3 +3784,17 @@ Après correction des bornes, les seules fautes réelles restantes étaient quat
 **Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
 
 **Incident de la nuit, consigné.** Mon premier push a été forcé de nouveau sur cette branche. Il n’y a pas eu de perte, car tous les commits de la branche étaient déjà sur `main` ou repris depuis la sauvegarde. La règle du 14 octobre (vérifier que tout est sauvegardé avant de recaler la branche) a été respectée à partir de là.
+
+## 16 octobre — nuit 3 de la routine autonome (jour pair)
+
+fait / mesuré / pas fait et pourquoi
+
+**Fait — vérification de la fusion de la nuit précédente.** La PR #149 (avis religieux retirés de 4 articles, garde-fou corrigé) est fusionnée sur `main` (`715ec2a`). Avant de recaler la branche de travail, j'ai vérifié que tous ses commits sont dans `main`, pour éviter la perte de la veille.
+
+**Pas fait — l'approfondissement de la nuit.** Nuit paire : je n'ai pas trouvé d'écart interne assez net pour livrer un approfondissement de qualité, et je ne publie pas un article pour tenir le rythme. Le travail de la nuit a été la vérification, pas une production. Je reprends le prochain jour pair en partant de la même liste : les articles qui ont une affirmation chiffrée non reliée à une source dans le dépôt.
+
+**Gisement en attente, consigné.** Le jumeau anglais de `priere-avion-train-guide` (article corrigé le 15 octobre, sans équivalent anglais) reste à écrire. C'est la création du prochain jour impair (17 octobre), à partir de la version française corrigée.
+
+**Bloqué.** Relevé Search Console 3 mois : toujours absent du dépôt. Consigné.
+
+**Interdits respectés.** Aucune fusion par mes soins, aucun push sur `main`, aucune dépense.
