@@ -3844,3 +3844,24 @@ fait / mesuré / pas fait et pourquoi
 **Bloqué.** Relevé Search Console 3 mois : toujours absent du dépôt. Consigné.
 
 **Interdits respectés.** Aucune fusion par mes soins, aucun push sur `main`, aucune dépense.
+
+## 17 octobre — relevé Search Console déposé dans le dépôt (transcription manuelle)
+
+fait / mesuré / pas fait et pourquoi
+
+**Fait — dépôt du relevé.** Les captures d'écran du relevé 3 mois sont transcrites dans `docs/search-console/` : `pages.csv` (26 lignes), `requetes.csv` (26 lignes), `jours.csv` (75 lignes quotidiennes, du 15 juillet au 27 septembre), `appareils.csv`, `pays.csv`, avec un `README.md` qui décrit la source et les limites. Ce sont des transcriptions à la main, pas des exports Google : le fichier d'origine n'a pas été reçu.
+
+**Mesuré dans le relevé.**
+- Appareils : mobile 315 clics-impressions à position 10,34 ; ordinateur 48 à position 46,68. L'écart de position est le signal le plus net.
+- Position quotidienne : environ 36 à 40 en juillet, 11 à 18 fin septembre. La série quotidienne s'arrête au 27 septembre, donc les semaines suivantes ne sont pas couvertes.
+- Pays : Belgique (2 471 impressions) et Suisse (2 363) pour un clic chacune. Ce sont des impressions sans clic, pas une audience.
+- Requêtes à fort volume sans clic : « voyage halal » (452 impressions, position 51,9), « voyage halal en France » (299, 50,2), « hôtel musulman à Dubaï » (274, 37,2).
+- Pages : Orly (688 impressions, CTR 1,45 %, position 9,97), CDG (600, 0,83 %, 12,42), « mosquée autour de moi » (191 impressions, position 12,3, zéro clic).
+
+**Pas fait et pourquoi.**
+- Pas de conclusion sur l'accueil (2 981 impressions à position 63,8, 5 clics) : la cause n'est pas dans le relevé, elle reste ouverte.
+- Pas d'article nouveau sur la base de ces chiffres seuls : le relevé est une transcription partielle (lignes tronquées sur les captures), donc les chiffres servent à choisir l'ordre des travaux, pas à les prouver.
+
+**Limites à garder en tête.** Transcription à la main, donc erreurs possibles de lecture. Les lignes tronquées sur les captures ne sont pas reconstituées. L'export original (avec les positions complètes) reste souhaitable.
+
+**Interdits respectés.** Aucun accès à Search Console tenté au-delà des captures reçues ; aucune fusion, aucun push sur `main`, aucune dépense.
