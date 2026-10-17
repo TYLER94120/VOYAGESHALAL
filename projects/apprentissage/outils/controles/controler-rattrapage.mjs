@@ -139,6 +139,91 @@ verifier(c.rattrapages === COMBIEN,
   `plus que le paquet : les ${COMBIEN} cartes devraient toutes etre du `
   + `rattrapage, ${c.rattrapages} le sont`);
 
+/* ==========================================================================
+   LES DEUX SORTIES DU RATTRAPAGE — ajoutees le 17 octobre
+
+   Le site promet au lecteur qui se trompe : « Tu la reverras dans un prochain
+   QCM de cette section. » memoire.js borne cette promesse :
+
+       QCM_PRIORITAIRES = 3    prioritaire trois QCM durant
+       JUSTES_POUR_SORTIR = 3  trois bonnes reponses d'affilee et elle sort
+
+   Ce qui precede verifie la COMPOSITION du paquet sur des memoires
+   fabriquees. Personne ne verifiait les deux sorties, c'est-a-dire ce qui
+   fait qu'une question ratee finit par ne plus revenir. Sans elles, les vieux
+   echecs rempliraient le paquet pour toujours et le lecteur ne verrait plus
+   de questions neuves.
+
+   POURQUOI PAR APPEL ET PAS AU NAVIGATEUR. Conduire une partie entiere depuis
+   un controle s'est revele fragile, et pour deux raisons qui valent d'etre
+   ecrites : rater une carte la REINSERE dans le paquet (RETOURS_MAX = 1),
+   donc une partie d'une carte en compte deux ; et il n'y a pas de bouton
+   « Suivante » — la carte suivante arrive d'elle-meme, et « Valider » est
+   desactive entre les deux. J'ai conclu trois fois de travers avant de
+   mesurer au bon endroit : que la fonction etait morte (mon grep l'avait
+   manquee), que le compteur etait bloque (je n'avais jamais TERMINE une
+   partie — vieillirLesPriorites est appele dans Jeu.prototype.terminer), et
+   que la question revenait pour toujours (elle ne revient pas).
+
+   On verifie donc la REGLE par appel, comme controler-recette.mjs le fait
+   pour l'export. Le cablage, lui, se lit dans qcm.js : terminer() appelle
+   vieillirLesPriorites avec les identifiants joues.
+   ========================================================================== */
+{
+  const q = await navigateur.newPage();
+  await q.goto(`${B}/plus.html`, { waitUntil: 'networkidle' });
+  const r = await q.evaluate(() => {
+    const M = window.IPAP_MEMOIRE;
+    const ID = 'q-temoin';
+    const copie = (d) => JSON.parse(JSON.stringify(d.questions[ID]));
+
+    let d = M.vide();
+    M.noter(d, ID, false);
+    const parQCM = [copie(d)];
+    for (let n = 0; n < 4; n += 1) {
+      M.vieillirLesPriorites(d, [ID]);
+      parQCM.push(copie(d));
+    }
+
+    d = M.vide();
+    M.noter(d, ID, false);
+    const parJustes = [copie(d)];
+    for (let n = 0; n < 3; n += 1) { M.noter(d, ID, true); parJustes.push(copie(d)); }
+
+    d = M.vide();
+    M.noter(d, ID, false);
+    M.noter(d, ID, true);
+    M.noter(d, ID, true);
+    M.noter(d, ID, false);
+    return { parQCM, parJustes, coupee: copie(d), borne: M.QCM_PRIORITAIRES };
+  });
+  await q.close();
+
+  // la borne : prioritaire aux QCM 1 et 2, relachee au troisieme
+  verifier(r.borne === 3, `QCM_PRIORITAIRES vaut ${r.borne}, attendu 3`);
+  verifier(r.parQCM[0].aRevoir === true && r.parQCM[0].depuis === 0,
+    'une question ratee doit etre marquee a revoir');
+  verifier(r.parQCM[1].depuis === 1 && r.parQCM[1].aRevoir === true,
+    `apres une partie, depuis=${r.parQCM[1].depuis} aRevoir=${r.parQCM[1].aRevoir}`);
+  verifier(r.parQCM[2].depuis === 2 && r.parQCM[2].aRevoir === true,
+    `apres deux parties, depuis=${r.parQCM[2].depuis}`);
+  verifier(r.parQCM[3].aRevoir === false,
+    'apres trois parties, la question doit cesser d\'etre prioritaire '
+    + `(aRevoir=${r.parQCM[3].aRevoir})`);
+
+  // l'autre sortie : trois bonnes reponses d'affilee
+  verifier(r.parJustes[1].suite === 1 && r.parJustes[1].aRevoir === true,
+    'une bonne reponse ne suffit pas a la sortir');
+  verifier(r.parJustes[2].suite === 2 && r.parJustes[2].aRevoir === true,
+    'deux bonnes reponses ne suffisent pas non plus');
+  verifier(r.parJustes[3].suite === 3 && r.parJustes[3].aRevoir === false,
+    `a la troisieme bonne reponse elle doit sortir (aRevoir=${r.parJustes[3].aRevoir})`);
+
+  // et une mauvaise au milieu remet le compteur a zero
+  verifier(r.coupee.suite === 0 && r.coupee.aRevoir === true,
+    `une mauvaise reponse doit relancer la serie (suite=${r.coupee.suite})`);
+}
+
 await navigateur.close();
 
 if (fautes.length) {
@@ -149,3 +234,6 @@ if (fautes.length) {
 console.log('  Le nombre de questions a revoir annonce par l\'ecran est celui');
 console.log('  que le paquet contient, dans les trois cas ; et rien d\'un autre');
 console.log('  niveau n\'entre en dehors du rattrapage.');
+console.log('  Et les deux sorties du rattrapage tiennent : prioritaire trois');
+console.log('  parties durant, ou trois bonnes reponses d\'affilee, la mauvaise');
+console.log('  reponse relancant la serie.');
