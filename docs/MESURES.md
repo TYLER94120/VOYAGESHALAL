@@ -3825,3 +3825,22 @@ La voie qui porte le trafic est donc claire : les pages « où prier » dans les
 **Consigné.** L'ancienne URL `/guides/ou-prier-aeroport-guide` reçoit encore 8 clics en 3 mois : elle redirige en 301 vers `/blog/ou-prier-aeroports`. Le trafic est donc bien suivi par le nouvel hub, à condition que Google suive la redirection.
 
 **Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
+
+## 17 octobre — nuit 4 de la routine autonome (jour impair) : jumeau anglais de la version française corrigée
+
+fait / mesuré / pas fait et pourquoi
+
+**Mesuré.** Le gisement annoncé la veille existe toujours : `priere-avion-train-guide` (version française corrigée le 15 octobre, 541 mots de texte utile) n'a pas de jumeau anglais. PR #150 est fusionnée, sa branche est dans `main`.
+
+**Fait — jumeau anglais, `praying-on-a-plane-and-train-guide`.** Traduction fidèle de la version française corrigée : mêmes affirmations, aucune information ajoutée, même renvoi religieux (« these are religious questions, not travel questions »). Déclaré dans `lib/slugs.ts` (BLOG_FR_TO_EN), `lang: 'en'`, titre de 57 caractères.
+
+**Pas fait — rien d'autre.** Une seule création par nuit.
+
+**Vérifié servi.** Build du 17/10, `BUILD_ID` contrôlé avant lecture.
+- Domaine anglais : 200, 846 mots rendus, renvoi présent, aucun mot français résiduel, hreflang correct dans les deux sens (fr ↔ en).
+- 33 liens internes testés : 0 cassé, après correction de trois liens (deux adresses françaises qui redirigeaient en 301, et `/community` qui répondait 404 ; remplacés par les adresses anglaises réelles).
+- Garde-fou avis religieux : 118 articles relus, aucun verdict. Garde-fou jumeaux : vert.
+
+**Bloqué.** Relevé Search Console 3 mois : toujours absent du dépôt. Consigné.
+
+**Interdits respectés.** Aucune fusion par mes soins, aucun push sur `main`, aucune dépense.

@@ -1201,6 +1201,39 @@ const guidesFr: Guide[] = [
   ],
   },
   {
+    slug: 'praying-on-a-plane-and-train-guide',
+    lang: 'en',
+    title: 'Praying on a plane and a train: how to do it, in practice',
+    description: 'How to pray on a plane and a train, in practice: preparation, the place, the timing. What we do not rule on, and where to ask.',
+    coverImage: '/guides/blog-avion.jpg',
+    category: 'Practical',
+    readTime: '4 min',
+    publishedAt: '2026-10-17',
+    updatedAt: '2026-10-17',
+    tags: ['plane', 'train', 'prayer', 'practical'],
+    content: `<p>Long-haul flight, high-speed train, connections: how do you avoid missing prayer while travelling? The practical answer comes down to three things: <strong>plan ahead</strong>, <strong>choose the right moment</strong>, <strong>prepare before you board</strong>.</p>
+<h2>Before you leave: check the day's times</h2>
+<p>Times change with the time zone and the route. Check <a href="/prayer-times">today's prayer times</a> before leaving home, then again at every time-zone change. On a long flight, the boarding time often decides what you can do on the ground, not the take-off time.</p>
+<h2>On a plane</h2>
+<p>On most aircraft there is too little room to pray standing, so many travellers pray in their seat. Some wide-body aircraft have standing space at the back of the cabin: ask the crew whether it is possible, especially during a quiet service. For the direction, our <a href="/qibla">qibla tool</a> works once the page is open; the aircraft's heading changes en route, so the result is an estimate.</p>
+<p>What we do not rule on: exactly how to pray seated, whether a prayer made seated is valid, and what to do when a prayer cannot be completed in its time. <strong>These are religious questions, not travel questions.</strong> Put them to someone qualified, for example through <a href="https://halalgpt.fr/questions?utm_source=gohalaltravel&amp;utm_medium=passerelle&amp;utm_campaign=avion" target="_blank" rel="noopener noreferrer">HalalGPT</a>.</p>
+<h2>Ablutions on board</h2>
+<p>Aircraft washrooms are narrow. The simplest is to make your ablutions <strong>before boarding</strong>, in the terminal, where the basins are far more practical. Keep a small soft bottle and a microfibre towel in your hand luggage. For the case where water is unavailable, the ruling is a religious question: refer it to the same qualified person.</p>
+<h2>On a train</h2>
+<p>A train is often simpler than a plane. You can pray standing between two carriages when it is steady, or seated in your place. In large stations, some waiting areas are quiet; international stations sometimes have multi-faith spaces. Ask the staff. See also our guide to <a href="/blog/where-to-pray-paris-stations">where to pray in Paris stations</a>.</p>
+<h2>Long journeys by bus or car</h2>
+<p>On the road, the most useful thing is to plan the stops. Check the day's times before you set off, and identify rest areas with a quiet corner. See <a href="/blog/where-to-pray-french-motorway">where to pray at a French motorway rest area</a>.</p>
+<h2>The departure checklist</h2>
+<p>A pocket mat, a small bottle for ablutions, a microfibre towel, and a qualified contact for religious questions. The rest is preparation: verified times, and a stop planned in advance.</p>
+<h2>Frequently asked questions</h2>
+<p><strong>Can I pray on a plane?</strong> Yes, in your seat if you cannot stand; how to do so is a religious question, see above.<br/>
+<strong>How do I find the qibla in flight?</strong> Our <a href="/qibla">qibla tool</a>, once the page is open. The heading changes, so it is an estimate.<br/>
+<strong>Can I pray on a train?</strong> Yes, standing between two carriages or seated in your place.<br/>
+<strong>What if there is no water?</strong> That is a religious question: put it to someone qualified.</p>
+<h2>Help the community</h2>
+<p>Found a quiet spot in an airport or a station? Tell us where and when. <a href="/communaute">→ Join the community</a></p>`,
+  },
+  {
     slug: 'voyage-halal-japon-guide',
     title: 'Voyage halal au Japon : Tokyo, Osaka, Kyoto 2026',
     description: 'Le Japon en voyageur musulman : restaurants halal à Tokyo et Osaka, ramen et wagyu halal, mosquées, salles de prière et conseils pour un séjour serein.',

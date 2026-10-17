@@ -110,6 +110,9 @@ export const BLOG_FR_TO_EN: Record<string, string> = {
   // les déductions « signalé halal ». Corrigé le même soir.
   'restaurant-halal-signale-ou-deduit': '/blog/halal-on-a-map-reported-or-just-inferred',
   'ou-prier-gares-paris': '/blog/where-to-pray-paris-stations',
+  // 17 octobre. Jumeau anglais de la version française corrigée le 15 octobre :
+  // mêmes affirmations, aucune information ajoutée, même renvoi religieux.
+  'priere-avion-train-guide': '/blog/praying-on-a-plane-and-train-guide',
   // 31 août : les deux pages qui convertissent le MIEUX du site n'avaient
   // aucune version anglaise. Relevé 3 mois, voyageshalal.fr :
   //   ou-prier-parc-asterix  34,9 % de clics en position 2,8
