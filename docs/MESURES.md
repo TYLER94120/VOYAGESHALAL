@@ -3865,3 +3865,26 @@ fait / mesuré / pas fait et pourquoi
 **Limites à garder en tête.** Transcription à la main, donc erreurs possibles de lecture. Les lignes tronquées sur les captures ne sont pas reconstituées. L'export original (avec les positions complètes) reste souhaitable.
 
 **Interdits respectés.** Aucun accès à Search Console tenté au-delà des captures reçues ; aucune fusion, aucun push sur `main`, aucune dépense.
+
+## 18 octobre — nuit 5 de la routine autonome (jour pair : approfondissement)
+
+fait / mesuré / pas fait et pourquoi
+
+**Mesuré.**
+- Schéma FAQPage : `DestinationFaqSchema` existe encore dans `components/SchemaOrg.tsx` mais n'est rendu nulle part dans `components/villes/DestinationRoute.tsx` ni dans `app/`. Le retrait demandé le 13 octobre est en place ; le garde-fou `test-donnees-structurees.mjs` l'interdit.
+- Titre d'Orly (`ou-prier-aeroport-orly`, 688 impressions, CTR 1,45 %) : « Salle de prière à l'aéroport d'Orly : horaires et accès ». Le mot « horaires » promet une information que nous n'avons pas : `data/airports/prayer-rooms.json` ne contient aucun horaire, et le corps de l'article n'en donne pas non plus.
+
+**Fait.** Rien de modifié dans le code cette nuit.
+
+**Pas fait et pourquoi.**
+- Pas de réécriture du titre d'Orly. Pour gagner en clics sur « Orly », la première idée serait de retirer « horaires » ou de le remplacer par une promesse plus forte. Mais le titre actuel promet des horaires que le site ne vérifie pas, et les titres sont la partie du site la plus visible. Décision : ne pas changer le titre tant qu'une source d'horaires n'est pas vérifiée, et changer le titre pour une promesse que le corps de l'article tient.
+- Pas d'article nouveau : le jour pair est réservé à l'approfondissement, et le seul écart prouvé ce soir est le titre ci-dessus, qui demande une décision éditoriale plus qu'un ajout.
+- Le mot « salle musulmane avec espaces séparés hommes / femmes » dans la description d'Orly n'a pas été relu contre une source cette nuit ; à vérifier avant tout nouveau texte sur cette page.
+
+**Vérifié servi.** Non fait cette nuit : aucune modification publiée, donc rien à vérifier sur la page servie.
+
+**Ouvert.**
+- Trouver une source vérifiée des horaires d'Orly, ou retirer définitivement le mot des titres de la voie aéroports.
+- Relire la description d'Orly contre une source.
+
+**Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
