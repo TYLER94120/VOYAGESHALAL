@@ -168,6 +168,17 @@ verifier(c.rattrapages === COMBIEN,
    On verifie donc la REGLE par appel, comme controler-recette.mjs le fait
    pour l'export. Le cablage, lui, se lit dans qcm.js : terminer() appelle
    vieillirLesPriorites avec les identifiants joues.
+
+   CORRECTION DU 18 OCTOBRE — ce paragraphe disait une chose fausse.
+   J'avais ecrit ici que la chaine entiere n'etait « pas verifiee d'un seul
+   tenant ». C'etait faux : controler-boucle.mjs joue une partie entiere
+   jusqu'au resultat depuis des semaines, et sa premiere ligne le dit. La
+   recette que je n'arrivais pas a trouver etait dans ce fichier-la : on
+   valide AU CLAVIER (ArrowRight), pas en cliquant « Valider », qui est
+   desactive entre deux cartes. J'ai declare un trou dans la suite au lieu de
+   lire la suite.
+   Et depuis, controler-deux-parties.mjs couvre ce que boucle ne peut pas
+   voir : ce qui se passe D'UNE PARTIE A L'AUTRE.
    ========================================================================== */
 {
   const q = await navigateur.newPage();

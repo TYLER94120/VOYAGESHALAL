@@ -53,6 +53,7 @@ regressions. Les controles Python, eux, etaient verts : c'est le signe.
 | `controler-contraste.mjs` | le plancher #5F6D66 et le seuil WCAG AA, mesures sur ce que le navigateur calcule |
 | `controler-parcours.mjs` | une partie de bout en bout : la carte, la correction, la source, la serie, le retour d'une question ratee |
 | `controler-boucle.mjs` | la boucle du jeu sur une longue partie |
+| `controler-deux-parties.mjs` | **ce qui se passe D'UNE PARTIE À L'AUTRE** : la partie se termine, elle est enregistrée, trois cartes ne marquent pas le jour, et la question ratée ouvre la partie suivante avec son compteur de priorité à jour |
 | `controler-serie.mjs` | **sans navigateur** : le comptage de la série et son jour de grâce, sur 18 calendriers écrits à la main — plus le verrou de ton, vérifié dans les deux sens |
 | `controler-jour.mjs` | la chaîne complète : l'anneau part de zéro, se remplit en jouant, et la série démarre **avec lui** |
 
@@ -189,3 +190,37 @@ Quand deux affichages promettent la meme chose, ils doivent lire le MEME
 compteur. `controler-jour.mjs` verifie exactement ce point, et le sabotage
 correspondant — rendre son ancien declencheur a la serie — le fait passer au
 rouge en deux lignes.
+
+## Comment on conduit une partie depuis un contrôle
+
+Écrit le 18 octobre, après avoir perdu deux nuits à le redécouvrir alors que
+`controler-boucle.mjs` le faisait déjà. **Lire cette section avant d'écrire
+un contrôle qui joue.**
+
+```js
+await p.locator('.reponse').nth(i).click();   // choisir
+await p.keyboard.press('ArrowRight');         // VALIDER — au clavier
+await p.waitForTimeout(320);
+if (await p.locator('#f-suite').count()) {    // la feuille de correction
+  await p.locator('#f-suite').click();        // avancer
+}
+if (/resultat\.html/.test(p.url())) break;    // la fin se lit dans l'adresse
+```
+
+Les trois pièges, mesurés :
+
+- **Ne pas cliquer « Valider ».** Le bouton du pied est **désactivé** entre
+  deux cartes : le clic attend indéfiniment et le contrôle meurt sur un
+  timeout. C'est `ArrowRight` qui valide.
+- **Il n'y a pas de bouton « Suivante ».** La carte suivante arrive d'elle-même
+  après la validation ; sur la feuille de correction, c'est `#f-suite`.
+- **La fin ne se lit pas à un libellé.** `qcm.js` part sur
+  `resultat.html?s=<id>` quand le paquet est épuisé.
+
+Et deux choses qui faussent les comptes si on l'ignore :
+
+- **Rater une carte la RÉINSÈRE** (`RETOUR_RATE`). Une partie de trois cartes
+  dont une est ratée en joue **quatre**, et la question ratée figure **deux
+  fois** dans les identifiants joués.
+- **Trois cartes ne marquent pas le jour.** `MINI_POUR_LE_JOUR = 10` : pour
+  tester la série, il faut une partie d'au moins dix cartes.

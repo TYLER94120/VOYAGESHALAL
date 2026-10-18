@@ -272,8 +272,28 @@ function aRevoir(d) {
 }
 
 /* Une question `aRevoir` est prioritaire dans les TROIS QCM suivants de sa
-   section. On compte ces QCM ici, a la fin de chaque session. */
+   section. On compte ces QCM ici, a la fin de chaque session.
+
+   UNE PARTIE COMPTE POUR UNE, MEME SI LA QUESTION Y PASSE DEUX FOIS.
+   Mesure du 18 octobre. Rater une carte la REINSERE dans le paquet
+   (RETOUR_RATE), donc elle figure DEUX FOIS dans les identifiants joues de
+   cette partie-la :
+
+       partie de 3 cartes, la premiere ratee
+       identifiants joues : [A, B, C, A]
+       depuis apres la partie : 2
+
+   Deux des trois QCM de priorite etaient donc brules dans la partie meme ou
+   la question avait ete ratee, et il n'en restait qu'un. La promesse faite au
+   lecteur — « tu la reverras dans un prochain QCM » — et le commentaire
+   ci-dessus disent QCM, pas « reponses ». On dedoublonne. */
 function vieillirLesPriorites(d, idsJoues) {
+  var vus = {};
+  var ids = [];
+  for (var k = 0; k < idsJoues.length; k++) {
+    if (!vus[idsJoues[k]]) { vus[idsJoues[k]] = true; ids.push(idsJoues[k]); }
+  }
+  idsJoues = ids;
   for (var i = 0; i < idsJoues.length; i++) {
     var f = d.questions[idsJoues[i]];
     if (f && f.aRevoir) {
