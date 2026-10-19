@@ -54,6 +54,7 @@ regressions. Les controles Python, eux, etaient verts : c'est le signe.
 | `controler-parcours.mjs` | une partie de bout en bout : la carte, la correction, la source, la serie, le retour d'une question ratee |
 | `controler-boucle.mjs` | la boucle du jeu sur une longue partie |
 | `controler-deux-parties.mjs` | **ce qui se passe D'UNE PARTIE À L'AUTRE** : la partie se termine, elle est enregistrée, trois cartes ne marquent pas le jour, et la question ratée ouvre la partie suivante avec son compteur de priorité à jour |
+| `controler-donnees.mjs` | **`data/` ne contient que ce que le site télécharge** : il ouvre les 53 adresses et un QCM par section pleine, puis compare les requêtes observées au contenu du dossier. `publier.py` emporte `data/` ; un fichier que personne ne demande s'y publie pour rien |
 | `controler-serie.mjs` | **sans navigateur** : le comptage de la série et son jour de grâce, sur 18 calendriers écrits à la main — plus le verrou de ton, vérifié dans les deux sens |
 | `controler-jour.mjs` | la chaîne complète : l'anneau part de zéro, se remplit en jouant, et la série démarre **avec lui** |
 

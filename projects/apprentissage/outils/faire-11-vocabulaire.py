@@ -361,7 +361,15 @@ def main():
 
     # Le lexique est ecrit a cote des questions : il se relit, se verifie, et
     # servira le jour ou on voudra montrer « les mots que tu connais ».
-    (RACINE / 'data' / 'lexique.json').write_text(
+    # LE LEXIQUE N'EST PAS UNE DONNEE DU SITE, C'EST UNE DONNEE D'OUTIL.
+    # Mesure du 19 octobre : sur les 53 pages et tous les ecrans de jeu,
+    # AUCUNE page ne telecharge ce fichier. Il est lu par deux generateurs —
+    # enrichir-explications.py et faire-questions-claude.py — au moment de la
+    # fabrication, jamais par un navigateur. Pose dans data/, il partait donc
+    # en production : 19 Ko publies pour personne, et surtout un fichier qui
+    # avait l'air d'etre une donnee du site sans en etre une.
+    # data/ veut dire « ce que le site telecharge ». Celui-ci va dans outils/.
+    (RACINE / 'outils' / 'lexique.json').write_text(
         json.dumps(lexique, ensure_ascii=False, indent=1), encoding='utf-8')
 
     f = F.ecrire(SECTION, questions)
@@ -369,7 +377,7 @@ def main():
     print('  %d questions ecrites dans %s' % (len(questions), f.name))
     for t, n in parTheme.most_common():
         print('    %-28s %4d' % (t, n))
-    print('  lexique : data/lexique.json (%d mots)' % len(lexique))
+    print('  lexique : outils/lexique.json (%d mots)' % len(lexique))
 
 
 if __name__ == '__main__':

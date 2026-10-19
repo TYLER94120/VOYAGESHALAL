@@ -58,10 +58,10 @@ CREUX = re.compile(r'\s*Les trois autres propositions sont des traductions '
 
 
 def charger():
-    lex = RACINE / 'data' / 'lexique.json'
+    lex = RACINE / 'outils' / 'lexique.json'
     morpho = CORAN / 'morphologie.txt'
     if not lex.exists():
-        sys.exit('ARRET : data/lexique.json manquant. Lancer d\'abord '
+        sys.exit('ARRET : outils/lexique.json manquant. Lancer d\'abord '
                  'faire-11-vocabulaire.py — c\'est lui qui atteste les sens.')
     if not morpho.exists():
         sys.exit('ARRET : le corpus morphologique manque.')

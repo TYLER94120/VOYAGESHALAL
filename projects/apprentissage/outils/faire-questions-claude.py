@@ -96,7 +96,10 @@ def fiche():
     ar = json.loads((CORAN / 'ara-quransimple.json').read_text(encoding='utf-8'))['quran']
     noms = {s['n']: s['tr'] for s in
             json.loads((CORAN / 'noms-sourates.json').read_text(encoding='utf-8'))}
-    lex = json.loads((RACINE / 'data' / 'lexique.json').read_text(encoding='utf-8'))
+    # outils/ et non data/ : le lexique est une donnee d'outil, lue a la
+    # fabrication, jamais telechargee par une page. Voir
+    # faire-11-vocabulaire.py.
+    lex = json.loads((RACINE / 'outils' / 'lexique.json').read_text(encoding='utf-8'))
 
     faits = {}
 
