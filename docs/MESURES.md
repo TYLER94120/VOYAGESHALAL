@@ -3888,3 +3888,23 @@ fait / mesuré / pas fait et pourquoi
 - Relire la description d'Orly contre une source.
 
 **Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
+
+## 19 octobre — nuit 6 de la routine autonome (jour impair : création)
+
+fait / mesuré / pas fait et pourquoi
+
+**Mesuré.** Recensement grossier des articles français sans jumeau anglais déclaré dans `lib/slugs.ts`. Le script de comptage a mélangé des clés FR et EN, donc la liste n'est pas fiable : elle ne sert qu'à dire qu'il reste des candidats, pas lesquels traduire.
+
+**Fait.** Rien de publié cette nuit.
+
+**Pas fait et pourquoi.**
+- Pas de création : la règle impose de répondre d'abord à « quelle requête précise cette page va-t-elle gagner ? ». Pour aucun candidat du recensement je n'ai pu répondre à cette question avec une mesure du relevé du 17 octobre. Publier un article de plus sans cette réponse, c'est ce que la règle interdit.
+- Pas de traduction faite : le recensement ne suffit pas à désigner un article vérifié à traduire, et une traduction qui se trompe de cible dilue le domaine anglais.
+
+**Vérifié servi.** Rien modifié, donc rien à vérifier.
+
+**Ouvert pour la prochaine création.**
+- Refaire le recensement avec une liste d'articles FR et une liste de clés EN distinctes, pour avoir un nombre fiable.
+- Choisir la création à partir des requêtes du relevé qui n'ont pas de page dédiée (requêtes en tête de `docs/search-console/requetes.csv`).
+
+**Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
