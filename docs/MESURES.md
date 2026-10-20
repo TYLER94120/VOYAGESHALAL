@@ -3908,3 +3908,22 @@ fait / mesuré / pas fait et pourquoi
 - Choisir la création à partir des requêtes du relevé qui n'ont pas de page dédiée (requêtes en tête de `docs/search-console/requetes.csv`).
 
 **Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
+
+## 20 octobre — nuit 7 de la routine autonome (jour pair : approfondissement)
+
+fait / mesuré / pas fait et pourquoi
+
+**Mesuré.** Requête « mosquée autour de moi » : 191 impressions, position 12,3, zéro clic (relevé du 17 octobre). Le titre servi de `/mosquee-proche` était « Mosquée la plus proche — Trouvez une mosquée autour de vous » : il ne contient pas la requête exacte.
+
+**Fait.** Titre FR de `/mosquee-proche` changé pour « Mosquée autour de moi — la plus proche de vous » (`app/(dyn)/mosquee-proche/layout.tsx`). La description FR n'a pas été touchée.
+
+**Vérifié servi.** Build exit 0. `next start` sur le port 3917, requête avec `Host: www.voyageshalal.fr` : `<title>Mosquée autour de moi — la plus proche de vous</title>`.
+
+**Pas fait et pourquoi.**
+- Pas de mesure du résultat : le relevé Search Console s'arrête au 27 septembre, donc l'effet du nouveau titre ne se lira pas avant un nouveau relevé.
+- La description FR promet « horaires » et « itinéraire » sur l'outil : non relu contre le code cette nuit, à vérifier avant tout nouveau texte.
+- Pas de changement sur le titre EN (`Nearest mosque — Find a mosque around you`) : aucune requête anglaise de ce type dans le relevé.
+
+**Ouvert.** Relire la description FR de `/mosquee-proche` ; même question que pour le titre d'Orly sur les horaires.
+
+**Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
