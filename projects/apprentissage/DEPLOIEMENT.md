@@ -70,8 +70,18 @@ a faire.
 Sur vercel.com, projet du site, onglet **Deployments**. Il doit y avoir une
 ligne recente avec le numero du dernier commit. Trois cas :
 
-- *aucune ligne recente* : Vercel n'ecoute pas la bonne branche. Settings →
-  Git → **Production Branch** doit valoir `claude/islamic-learning-platform-l7o7to`.
+- *aucune ligne recente* : Vercel n'ecoute pas la bonne branche.
+  ⚠️ **ATTENTION, CE DOCUMENT SE CONTREDIT ICI.** Le haut de la page dit —
+  et dit l'avoir CONSTATE en clonant — que `islampasapas.fr` sert le depot
+  **`Islampasapas`**, branche `main`, et que « le deploiement est automatique
+  quand on pousse sur Islampasapas ». Cette ligne-ci disait l'inverse :
+  qu'il faut regler la Production Branch sur
+  `claude/islamic-learning-platform-l7o7to`, une branche de l'AUTRE depot.
+  C'est exactement la croyance que la section « Ce que je croyais, et qui
+  etait faux » raconte avoir coute une heure de recherche.
+  Le reglage Vercel reel n'est pas verifiable depuis l'environnement des
+  rondes : **non verifie**. Si le site ne se met pas a jour, regarde d'abord
+  le projet qui ecoute `Islampasapas`.
 - *ligne en rouge (Error)* : ouvre-la, le journal dit ce qui a echoue.
 - *ligne « Skipped »* : le reglage **Ignored Build Step** annule la
   construction. Il doit etre vide, ou rendre `exit 1` pour construire.
@@ -92,11 +102,63 @@ Rare, mais deja arrive : `islampasapas.fr` doit resoudre vers Vercel
 
 ---
 
-## L'etat du site
+## L'etat du site — au 20 octobre 2026
 
-Au 21 aout, apres la refonte : le QCM est le produit. Une section remplie sur
-douze (`Le sens des sourates`, 604 questions sourcees), les onze autres
-affichent « bientot » et ne sont pas cliquables.
+> Ce qui suit remplace un paragraphe du 21 aout qui disait « une section
+> remplie sur douze, 604 questions ». Il avait deux mois et il etait faux.
 
-Le cahier des charges demande **cent questions minimum par section** avant la
-mise en ligne complete, soit mille deux cents. C'est le chantier en cours.
+Compte dans les banques ce soir :
+
+| | |
+|---|---|
+| sections remplies | **11 sur 12** (`La vie du Prophete` est encore vide) |
+| questions sourcees | **2 701** |
+| lecons de sourate | **38** — Al-Fatiha, et le juz Amma complet (78 a 114) |
+| adresses au sitemap | 53 |
+
+**L'objectif des mille deux cents questions est depasse** : il y en a 2 701.
+
+### Mais le plancher par section ne l'est pas
+
+Le cahier demande **cent questions minimum par section**. Quatre sections
+sont en dessous, et elles sont EN LIGNE, cliquables :
+
+| section | questions |
+|---|---|
+| Les piliers de la foi | 89 |
+| Le comportement | **11** |
+| Le jeune et le Ramadan | **8** |
+| Le pelerinage | **7** |
+
+Rien ne ment : la couverture de chaque section annonce son nombre exact, et
+l'ecran de reglages plafonne la partie a ce qu'elle contient. Mais une
+section de sept questions ouverte au public n'est pas ce que le cahier
+prevoyait. **C'est une decision d'editeur** : les ouvrir quand meme, ou les
+refermer jusqu'a cent. Je ne la prends pas.
+
+---
+
+## Ce qui attend d'etre publie — au 20 octobre 2026
+
+**Derniere publication : le 29 septembre** (repere de version `386566f`,
+commit `59e67ae`). Vingt rondes depuis, aucune publiee : la consigne est que
+tu promeus toi-meme.
+
+Ce qu'un `publier.py` enverrait, compte entre `59e67ae` et la branche :
+
+| | fichiers |
+|---|---|
+| pages (`.html` a la racine) | 52 |
+| donnees (`data/`) | 12 |
+| JavaScript | 4 |
+| CSS | 2 |
+| **total en ligne** | **70** |
+| restent au depot (`outils/`, `.md`) | 49 |
+
+Les 39 controles sont verts. Le detail de ce que chaque ronde a change est
+dans les messages de commit, et le resume dans `docs/POUR-LE-CARNET.md`.
+
+`data/lexique.json` a ete retire de `data/` le 19 octobre : il ne servait
+qu'aux generateurs. Il disparaitra bien de la production, parce que
+`publier.py` VIDE le clone avant de recopier — il ne se contente pas
+d'ecraser.

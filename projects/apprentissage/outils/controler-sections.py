@@ -426,6 +426,27 @@ def main():
     print('  Description de l\'accueil : 153 caracteres, ses deux nombres'
           ' recomptes,')
     print('  et le meme texte dans ses trois copies — meta, og, donnee structuree.')
+    # LE PLANCHER DU CAHIER, DIT A CHAQUE PASSAGE ET JAMAIS TRANCHE.
+    #
+    # Le cahier demande cent questions minimum par section avant la mise en
+    # ligne. Quatre sections sont en dessous et sont EN LIGNE : rien ne mente
+    # — chaque couverture annonce son nombre exact — mais la condition du
+    # cahier n'est pas tenue. Ouvrir une section de sept questions ou la
+    # refermer est une decision d'editeur, pas de controle : on ne la
+    # transforme donc PAS en faute. On l'affiche, pour qu'elle ne s'oublie
+    # pas dans un fichier que personne ne relit.
+    PLANCHER = 100
+    courtes = []
+    for sec in secs:
+        f = RACINE / 'data' / 'questions' / ('%s.json' % sec['slug'])
+        n = len(json.loads(f.read_text(encoding='utf-8'))) if f.is_file() else 0
+        if 0 < n < PLANCHER:
+            courtes.append('%s %d' % (sec['slug'], n))
+    if courtes:
+        print('  Sous le plancher de %d questions du cahier, et en ligne : %s.'
+              % (PLANCHER, ', '.join(courtes)))
+        print('  (information, pas une faute : ouvrir ou refermer se decide en haut)')
+
     print('  Chaque educationalLevel liste les niveaux que sa banque contient'
           ' vraiment.')
     print('  Deux titres retombent sur le nom seul, « Le comportement » (64 car.)')
