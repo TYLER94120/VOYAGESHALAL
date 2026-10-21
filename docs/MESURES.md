@@ -3927,3 +3927,19 @@ fait / mesuré / pas fait et pourquoi
 **Ouvert.** Relire la description FR de `/mosquee-proche` ; même question que pour le titre d'Orly sur les horaires.
 
 **Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
+
+## 21 octobre — nuit 8 de la routine autonome (jour impair : création)
+
+fait / mesuré / pas fait et pourquoi
+
+**Mesuré.** Aucune nouvelle donnée : le relevé Search Console est toujours celui du 17 octobre (série quotidienne jusqu'au 27 septembre). Le titre de `/mosquee-proche` modifié le 20 octobre n'a encore aucun résultat mesurable.
+
+**Fait.** Rien de publié cette nuit.
+
+**Pas fait et pourquoi.** Pas de création : la règle demande de nommer la requête que la page va gagner, et le recensement des jumeaux anglais à refaire (nuit du 19 octobre) n'a pas été fait. Une création sans cette base reviendrait à deviner la cible.
+
+**Vérifié servi.** Rien modifié, donc rien à vérifier.
+
+**Ouvert.** Refaire le recensement des jumeaux, puis choisir la création à partir des requêtes sans page dédiée du relevé.
+
+**Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
