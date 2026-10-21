@@ -26,6 +26,17 @@ prieres, la liste des cinq piliers telle qu'on l'enonce. Cela vient de
 hadiths, et je n'ai aucune traduction francaise sourcee. Ces questions-la ne
 sont pas ecrites — pas approximees, pas devinees : absentes, et signalees.
 
+« AUCUNE TRADUCTION SOURCEE » NE VEUT PAS DIRE « AUCUN FICHIER ». Il faut le
+preciser, sinon la phrase du dessus passe pour perimee : `outils/coran/`
+contient 20 426 hadiths EN FRANCAIS — Boukhari 7 589, Mouslim 7 563, Abou
+Dawoud 5 274. Mesure du 21 octobre, et c'est pour cela qu'ils restent
+inutilisables : leurs metadonnees n'ont que `name`, `sections`,
+`section_details`, et AUCUN champ n'y nomme un traducteur ; leurs titres de
+chapitres sont mot pour mot ceux du fichier anglais — « Revelation »,
+« Belief », « Knowledge ». Les textes ont ete traduits, les titres non. C'est
+une traduction de traduction, sans traducteur nomme. `controler-questions.py`
+le tient maintenant par un controle, pas par ce commentaire.
+
 CE QUI EMPECHE DE ME TROMPER
 ----------------------------
 Chaque question porte des MOTS-CLES, et l'outil verifie qu'ils figurent tous

@@ -13,7 +13,7 @@ python3 outils/faire-01-sourates.py      # les banques, une par générateur
 python3 outils/faire-02-lire-larabe.py
 python3 outils/faire-05-prophetes.py
 python3 outils/faire-themes.py
-python3 outils/faire-11-vocabulaire.py   # écrit aussi data/lexique.json
+python3 outils/faire-11-vocabulaire.py   # écrit aussi outils/lexique.json
 python3 outils/faire-pratique.py         # les bases de la pratique
 
 python3 outils/enrichir-explications.py  # ← a besoin du lexique ci-dessus
@@ -29,6 +29,26 @@ python3 outils/controler-questions.py    # ← et le contrôle en dernier
 `classer-niveaux.py` relit les banques et recalcule tout : on peut le
 relancer autant de fois qu'on veut, il ne dépend pas de son propre passage
 précédent.
+
+### Ce que « un état faux » veut dire, mesuré
+
+Le 21 octobre j'ai relancé `faire-pratique.py` seul, pour vérifier qu'une
+modification de son en-tête n'avait rien cassé. Il a affiché « 47 questions
+écrites, toutes vérifiées contre leur verset », code de sortie 0 — et il
+avait **réécrit six banques en les appauvrissant** :
+
+- la phrase du lexique disparaissait des explications (« Dans ce verset,
+  إِبْرَٰهِيمَ vient d'un mot qui revient 69 fois dans le Coran… ») ;
+- **la clé `niveau` disparaissait de chaque carte.**
+
+C'est normal et c'est le piège : un générateur écrit la carte nue.
+`enrichir-explications.py` ajoute la phrase du lexique, `classer-niveaux.py`
+ajoute le niveau, et **aucun des deux ne se relance tout seul**. Un
+générateur lancé seul ne signale rien : il réussit, et il défait les deux
+étapes suivantes. Repéré au `git status`, annulé au `git checkout`.
+
+**Donc : relancer un générateur, c'est relancer les deux étapes d'après.**
+Ou ne pas le relancer du tout, si on n'a touché qu'un commentaire.
 
 ## Ce que fait chacun
 

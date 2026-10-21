@@ -136,6 +136,111 @@ section de sept questions ouverte au public n'est pas ce que le cahier
 prevoyait. **C'est une decision d'editeur** : les ouvrir quand meme, ou les
 refermer jusqu'a cent. Je ne la prends pas.
 
+### Mesure du 21 octobre : deux d'entre elles ne POURRONT jamais atteindre cent
+
+Le 20 octobre j'ai pose la question sans la mesurer. Mesure faite.
+
+**La methode est celle du projet, pas une autre.** `faire-themes.py` definit un
+domaine par des mots ARABES et des mots FRANCAIS, et un verset n'y entre que
+si **les deux** le designent. C'est la lecon de la section des prophetes :
+cherche sur l'arabe seul, « صالح » ramenait les versets sur les bonnes
+oeuvres. Les deux jeux de donnees se controlent l'un l'autre. J'ai reutilise
+sa fonction `versets_du_theme`, et sa fonction `couper` pour savoir quels
+versets admettent la deuxieme forme de question.
+
+Le site n'a que deux formes de carte tirees d'un verset : **A**, on montre
+l'arabe et on demande la traduction du sens ; **B**, on montre le debut de la
+traduction et on demande la suite. La forme A marche sur tout verset, la
+forme B seulement sur ceux qui se coupent a une virgule sans devenir une
+devinette. Le plafond d'un domaine est donc : *versets + versets coupables*.
+
+| section | aujourd'hui | versets du domaine dans TOUT le Coran | dont forme B | plafond A+B | plafond total | plancher |
+|---|---|---|---|---|---|---|
+| Les piliers de la foi | 89 | 53 | 47 | 100 | **106** | 100 |
+| Le comportement | 11 | 57 | 47 | 104 | **115** | 100 |
+| Le jeune et le Ramadan | 8 | 9 | 9 | 18 | **26** | 100 |
+| Le pelerinage | 7 | 18 | 16 | 34 | **41** | 100 |
+
+Lecture, et elle coupe la decision en deux :
+
+- **Le jeune et le Ramadan (26) et Le pelerinage (41) ne peuvent pas
+  atteindre cent.** Pas « ne l'ont pas encore atteint » : ne peuvent pas. Il
+  y a neuf versets sur le jeune et dix-huit sur le pelerinage dans le Coran
+  entier. Aucun travail n'en fera cent. Le choix n'est donc pas « les remplir
+  ou les refermer » : c'est **les garder petites, ou les refermer**.
+- **Les piliers de la foi (106) et Le comportement (115) peuvent passer
+  cent** — mais en CHANGEANT DE NATURE. Leurs cartes actuelles sont des
+  questions de pratique ; les cent qui manquent seraient des cartes de
+  reconnaissance de verset. « Le comportement » passerait de onze questions
+  sur la conduite a onze questions sur la conduite plus cent exercices de
+  traduction. C'est encore une decision d'editeur, et elle n'est pas la meme
+  que la premiere.
+
+**Ce que ce compte EST et N'EST PAS.** C'est une borne superieure sur la
+matiere documentaire. Les quatre themes deja generes ecrivent chacun une
+quinzaine de cartes de MOINS que leurs deux formes autorisent — les piliers
+83 sur 100 possibles, la priere 115 sur 133, la zakat 111 sur 127, les
+invocations 176 sur 193. Le plafond reel est donc un peu plus bas que le
+chiffre du tableau, jamais plus haut.
+
+**Et les quatre themes generes sont a leur plafond de versets** : ils ont
+utilise 53 versets sur 53, 70 sur 72, 65 sur 67, 105 sur 105. **La voie
+coranique est epuisee.** Ce qui reste a prendre, ce sont des cartes sur des
+versets deja pris, pas des versets neufs.
+
+> **Ce qui bouge dans ce tableau, et il faut le dire.** Les listes de mots
+> des trois sections ecrites a la main sont de moi, posees ce soir ; celles
+> des quatre themes generes sont dans `faire-themes.py` depuis aout. Pour
+> « pelerinage » et « jeune » le domaine se nomme — Hajj, Omra, Kaaba,
+> jeune, Ramadan — et le chiffre est solide : l'arabe seul ramenait 90 et 12
+> versets, le francais seul 20 et 18, les deux 18 et 9. Pour
+> « comportement » le domaine ne se nomme pas : **le francais seul ramene
+> 349 versets, l'arabe seul 70, les deux 57.** Un comptage a une seule
+> langue y gonfle le resultat de six fois. Le 57 depend donc de ma liste —
+> parents, medire, mensonge, justice, depot, engagement, balance. Elargie,
+> elle ramene « n'importe quoi », ce que `faire-themes.py` dit en toutes
+> lettres. **Le plafond du comportement est editorial, pas documentaire.**
+
+### Ce qui leverait le plancher, et pourquoi c'est ferme
+
+Ces quatre sections sont exactement celles qui devaient reposer sur des
+**hadiths**. Le depot en contient trois recueils en francais, et je les ai
+regardes ce soir au lieu de recopier ce qu'on en dit depuis aout :
+
+| `outils/coran/` | hadiths |
+|---|---|
+| `h-fra-bukhari.json` | 7 589 |
+| `h-fra-muslim.json` | 7 563 |
+| `h-fra-abudawud.json` | 5 274 |
+| **total** | **20 426** |
+
+Vingt mille hadiths en francais dorment dans le depot. Et **aucun n'est
+citable**, pour une raison qui se mesure :
+
+- leurs metadonnees ne contiennent que `name`, `sections`,
+  `section_details` — **aucun champ ne nomme un traducteur**, nulle part ;
+- leurs titres de chapitres sont **mot pour mot ceux du fichier anglais** :
+  « Revelation », « Belief », « Knowledge ». Les textes ont ete traduits, les
+  titres non.
+
+C'est la preuve mesurable d'une traduction de traduction, sans traducteur
+nomme. Publier cela comme « Sahih al-Boukhari n° X » donnerait pour sure une
+parole du Prophete deux fois eloignee de l'arabe. La regle du site est
+claire : en cas de doute sur une source, on ne publie pas.
+
+**La seule chose qui ouvrirait ces quatre sections est donc un achat ou une
+autorisation, pas du travail de nuit** : une traduction francaise de hadiths
+avec un traducteur nomme. C'est la premiere fois que le blocage se formule
+comme quelque chose que tu peux lever.
+
+**Et la tentation est maintenant tenue par un controle.** Rien n'empechait un
+generateur presse de citer « Boukhari n° 1513 » sous une carte :
+`faire-05-prophetes.py` l'interdisait dans un commentaire, et un commentaire
+n'arrete personne. `controler-questions.py` cherche desormais treize noms de
+recueils dans les six champs de chaque carte, et huit formes d'attribution
+dans la voix du site. Mesure du 21 octobre : **2 701 sources, 21 488 champs,
+zero motif**.
+
 ---
 
 ## Ce qui attend d'etre publie — au 20 octobre 2026

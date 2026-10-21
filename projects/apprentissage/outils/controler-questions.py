@@ -833,7 +833,99 @@ def main():
                               '%d cartes (fourchette %.0f-%.0f %%) — la longueur '
                               'la designe' % (sec, quoi, part, total_rangs, BAS, HAUT))
 
-    # CES DEUX LIGNES DISENT CE QUI A ETE MESURE, PAS UN VERDICT.
+    # ================================================================
+    # AUCUNE QUESTION NE CITE UN HADITH — AJOUTE LE 21 OCTOBRE
+    # ================================================================
+    #
+    # LA REGLE DU SITE : un hadith se cite avec son recueil, ou ne se cite
+    # pas. Le projet n'a aucune traduction francaise de hadith qui soit
+    # SOURCEE — et c'est mesure, pas repete. `outils/coran/` en contient
+    # trois : Boukhari 7 589, Mouslim 7 563, Abou Dawoud 5 274, soit 20 426
+    # hadiths en francais. Aucune ne nomme son traducteur : leurs
+    # metadonnees n'ont que `name`, `sections`, `section_details`. Et leurs
+    # titres de chapitres sont encore EN ANGLAIS, mot pour mot ceux du
+    # fichier anglais — « Revelation », « Belief », « Knowledge ». C'est la
+    # preuve mesurable d'une traduction de traduction, sans traducteur
+    # nomme. faire-05-prophetes.py l'ecrivait des le 21 aout. Un commentaire
+    # n'arrete personne : d'ou ce controle.
+    #
+    # LA TENTATION EST DATEE ET LOCALISEE. Quatre sections sont sous le
+    # plancher de cent questions du cahier — piliers 89, comportement 11,
+    # jeune 8, pelerinage 7 — et ce sont precisement celles qui devaient
+    # reposer sur des hadiths. 20 426 hadiths dorment dans le depot, a un
+    # import de distance. Il suffit d'un generateur presse pour que « Sahih
+    # al-Boukhari n° 1 » apparaisse sous une carte : le site donnerait alors
+    # pour sure une parole du Prophete deux fois eloignee de l'arabe.
+    #
+    # LE PIEGE D'UNE VERSION NAIVE, ET IL EST GROS. « prophete » est dans la
+    # VOIX DU SITE 153 fois : la section des prophetes demande « de quel
+    # prophete parle ce verset ». « messager » apparait 180 fois dans les
+    # textes et ZERO fois dans la voix du site — c'est un mot de Hamidullah.
+    # Un controle qui cherche ces deux mots leve 153 fautes, toutes fausses,
+    # et finit desactive comme tout controle qui crie. On ne cherche donc pas
+    # des mots du domaine : on cherche l'ATTRIBUTION d'une parole et les NOMS
+    # DE RECUEILS. « recueil » tout court est d'ailleurs ecarte — Hamidullah
+    # ecrit « afin que quelque caravane le recueille » : on cherche
+    # « recueil de ».
+    #
+    # Mesure du 21 octobre : 2 701 sources, 2 545 nomment le Coran, 156
+    # nomment l'alphabet arabe ou le texte coranique. Les 21 motifs cherches
+    # sont a ZERO dans les six champs des 2 701 cartes.
+    RECUEILS = ('boukhari', 'bukhari', 'mouslim', 'sahih muslim', 'abou dawoud',
+                'abu dawud', 'tirmidhi', 'ibn maja', 'nasai', 'ahmad ibn hanbal',
+                'sahih al', 'sunan', 'muwatta')
+    ATTRIBUTIONS = ('le prophete a dit', 'le messager a dit',
+                    'messager d\'allah a dit', 'rapporte par', 'hadith',
+                    'sunna', 'recueil de', 'd\'apres abou')
+    # Ce qu'une source EST autorisee a nommer. Les quatre formes mesurees le
+    # 21 octobre : le Coran, le texte coranique, l'alphabet arabe, les signes
+    # de l'ecriture arabe. Une cinquieme forme fera echouer ce controle, et
+    # c'est voulu : une source neuve se regarde avant de se publier.
+    SOURCES_PERMISES = ('coran', 'alphabet arabe', 'ecriture arabe')
+
+    CHAMPS_TOUS = ('question', 'explication', 'source', 'divergence', 'surtitre')
+    motifs_vus, champs_lus, sources_lues = 0, 0, 0
+    for sec in sorted(par_section):
+        for q in par_section[sec]:
+            src = nu(q.get('source'))
+            sources_lues += 1
+            if not any(p in src for p in SOURCES_PERMISES):
+                fautes.append('%s/%s : la source ne nomme ni le Coran ni '
+                              'l\'alphabet arabe — « %s »'
+                              % (sec, q['id'], str(q.get('source'))[:70]))
+            for champ in CHAMPS_TOUS:
+                valeurs = [q.get(champ)]
+                if champ == 'question':
+                    valeurs += list(q.get('reponses') or [])
+                for val in valeurs:
+                    if val is None or not str(val).strip():
+                        continue
+                    champs_lus += 1
+                    # Un nom de recueil est une faute OU QU'IL SOIT, meme
+                    # entre guillemets : rien dans le Coran ne le porte.
+                    plat = nu(val)
+                    for mot in RECUEILS:
+                        if mot in plat:
+                            motifs_vus += 1
+                            fautes.append(
+                                '%s/%s : un recueil de hadith est cite (%s, '
+                                'champ %s) — le projet n\'a aucune traduction '
+                                'francaise sourcee de ces recueils : « %s »'
+                                % (sec, q['id'], mot, champ,
+                                   re.sub(r'\s+', ' ', str(val)).strip()[:70]))
+                    # Une attribution, elle, ne se juge que sur la voix du
+                    # site : « Dis: » et « Prophete » sont du texte cite.
+                    plat_voix = nu(voix_du_site(val))
+                    for mot in ATTRIBUTIONS:
+                        if mot in plat_voix:
+                            motifs_vus += 1
+                            fautes.append(
+                                '%s/%s : le site attribue une parole en son '
+                                'nom (%s, champ %s) — « %s »'
+                                % (sec, q['id'], mot, champ,
+                                   re.sub(r'\s+', ' ', str(val)).strip()[:70]))
+
+    # CES TROIS LIGNES DISENT CE QUI A ETE MESURE, PAS UN VERDICT.
     # Premier jet : « Dans aucune section la longueur de la bonne reponse ne
     # la designe. » Elle s'affichait AUSSI quand le controle venait d'en
     # trouver une — le sabotage du 12 octobre l'a montre. Une ligne de bilan
@@ -843,6 +935,10 @@ def main():
     print('  Longueur de la bonne reponse, l\'ecart le plus net : %s '
           '(fourchette %.0f-%.0f %%).'
           % (pire or 'aucun', BAS, HAUT))
+    print('  %d sources lues, %d champs relus : %d motif(s) de hadith '
+          '(%d recueils, %d attributions cherches).'
+          % (sources_lues, champs_lus, motifs_vus,
+             len(RECUEILS), len(ATTRIBUTIONS)))
 
     if fautes:
         print('\n  %d FAUTE(S) :' % len(fautes))
