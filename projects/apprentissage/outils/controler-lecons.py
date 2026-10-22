@@ -113,6 +113,7 @@ def main():
             entrants.setdefault(cible, set()).add(p.name)
 
     fautes, versets_lus = [], 0
+    avec_numero, longueurs_desc = 0, []
     for p in pages:
         t = p.read_text(encoding='utf-8')
         nom_page = p.name
@@ -220,6 +221,43 @@ def main():
         elif not 150 <= len(desechapper(d.group(1))) <= 160:
             fautes.append('%s : description de %d caracteres (150 a 160)'
                           % (nom_page, len(desechapper(d.group(1)))))
+        # 8 bis. LA DESCRIPTION DIT LE NUMERO DE LA SOURATE — 22 OCTOBRE
+        #
+        # « sourate 112 » est exactement le genre de requete que la loi de la
+        # precision designe comme le terrain de ce site. Une page qui n'ecrit
+        # jamais « 112 » dans sa description ne peut pas y repondre, et la
+        # description est la seule ligne que Google affiche sous le titre.
+        #
+        # Le titre ne peut pas prendre ce numero : celui d'Al-Mutaffifin fait
+        # deja 59 caracteres et la regle est 60. Le corps de la page le dit
+        # — « La 112e sourate du Coran » — mais pas la description.
+        #
+        # Mesure du 22 octobre, avant correction : 20 descriptions sur 38 ne
+        # portaient pas le numero, dont celle d'AL-IKHLAS, la seule page du
+        # site qui ressorte en position 11. `faire-lecon-sourate.py` ecrit
+        # cinq formulations et retient la premiere qui tient dans la fenetre
+        # de 150 a 160 ; deux d'entre elles ne disent pas le numero et elles
+        # etaient en tete. Elles sont passees en secours, et les 38 portent
+        # le numero.
+        #
+        # LE NUMERO EST CELUI QUE LA PAGE REVENDIQUE ELLE-MEME, lu dans la
+        # reference de son premier verset : si la description annonce une
+        # autre sourate que les versets publies, c'est cela qu'il faut voir.
+        #
+        # PAS D'AMBIGUITE POSSIBLE AVEC LE NOMBRE DE VERSETS, qui figure dans
+        # la meme phrase : AUCUNE des 114 sourates du Coran n'a un nombre de
+        # versets egal a son numero. Verifie sur les 114, pas suppose.
+        if d:
+            texte_desc = desechapper(d.group(1))
+            longueurs_desc.append(len(texte_desc))
+            if re.search(r'(?<![0-9])%d(?![0-9])' % num, texte_desc):
+                avec_numero += 1
+            else:
+                fautes.append('%s : la description ne dit pas que c\'est la '
+                              '%de sourate — « sourate %d » est une requete '
+                              'precise, et cette ligne est la seule que '
+                              'Google affiche sous le titre : « %s »'
+                              % (nom_page, num, num, texte_desc[:70]))
         c = CANON.search(t)
         if not c or c.group(1) != '%s/%s' % (SITE, nom_page):
             fautes.append('%s : canonical absent ou faux (%s)'
@@ -348,6 +386,15 @@ def main():
             if n != vrai_lecons:
                 fautes.append('sourates.html : %s annonce %d lecons, il y en a %d'
                               % (ou, n, vrai_lecons))
+
+    # CETTE LIGNE DIT LE MESURE, PAS UN VERDICT, et elle s'imprime que le
+    # lot passe ou non : une ligne de bilan qui ne peut pas se taire est une
+    # ligne qui ne dit rien.
+    print('  %d/%d descriptions disent le numero de leur sourate (%d a %d '
+          'caracteres).'
+          % (avec_numero, len(pages),
+             min(longueurs_desc) if longueurs_desc else 0,
+             max(longueurs_desc) if longueurs_desc else 0))
 
     if fautes:
         print('  %d FAUTE(S) — le lot est refuse :' % len(fautes))

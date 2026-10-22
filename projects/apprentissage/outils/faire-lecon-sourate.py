@@ -377,19 +377,32 @@ def description(num, nom, k):
     On n'allonge jamais avec du remplissage ni avec une affirmation qu'on ne
     peut pas tenir : chaque variante ne parle que de ce que la page contient
     reellement — le texte arabe, la traduction attribuee, la reference.
+
+    L'ORDRE N'EST PAS INDIFFERENT — MESURE DU 22 OCTOBRE
+    ---------------------------------------------------
+    Deux des cinq variantes ne disent pas le NUMERO de la sourate, et elles
+    etaient en tete : elles gagnaient donc des que leur longueur tombait dans
+    la fenetre. Resultat mesure sur les 38 pages servies : 20 descriptions
+    sur 38 ne portaient pas le numero, dont celle d'AL-IKHLAS — la seule page
+    du site qui ressorte en position 11, celle dont le releve de l'empire dit
+    « le format qui marche ».
+
+    « sourate 112 » est exactement le genre de requete que la loi de la
+    precision designe comme le terrain du site. Une page qui n'ecrit jamais
+    « 112 » dans sa description ne peut pas y repondre. Le corps de la page
+    le dit bien — « La 112e sourate du Coran » — mais la description est la
+    seule ligne que Google affiche sous le titre.
+
+    Les PORTEUSES DU NUMERO passent donc devant, et les deux autres restent
+    en secours. Mesure apres : 38 sur 38 portent le numero, et aucune ne sort
+    de la fenetre de 150 a 160. Le titre, lui, ne peut pas le prendre : il
+    est deja a 59 caracteres pour Al-Mutaffifin, et la regle est 60.
     """
     v, s = en_lettres(k), nom
     essais = [
-        'Le sens des %s versets de la sourate %s, verset par verset : texte '
-        'arabe, traduction de Muhammad Hamidullah et référence de chacun.' % (v, s),
-
         'Le sens des %s versets de la sourate %s (%de du Coran), verset par '
         'verset : texte arabe, traduction de Muhammad Hamidullah et référence.'
         % (v, s, num),
-
-        'Les %s versets de la sourate %s, un par un : le texte arabe, la '
-        'traduction du sens par Muhammad Hamidullah, et la référence de chaque '
-        'verset.' % (v, s),
 
         'Sourate %s, %de du Coran : ses %s versets un par un, avec le texte '
         'arabe, la traduction du sens de Muhammad Hamidullah et la référence '
@@ -398,6 +411,16 @@ def description(num, nom, k):
         'Sourate %s (%de du Coran), ses %s versets un par un : texte arabe et '
         'traduction du sens par Muhammad Hamidullah, avec la référence de '
         'chaque verset cité.' % (s, num, v),
+
+        # Les deux suivantes ne portent pas le numero : elles ne servent que
+        # si aucune des trois premieres ne tient dans la fenetre. Aucune des
+        # 38 sourates du lot n'en a eu besoin le 22 octobre.
+        'Le sens des %s versets de la sourate %s, verset par verset : texte '
+        'arabe, traduction de Muhammad Hamidullah et référence de chacun.' % (v, s),
+
+        'Les %s versets de la sourate %s, un par un : le texte arabe, la '
+        'traduction du sens par Muhammad Hamidullah, et la référence de chaque '
+        'verset.' % (v, s),
     ]
     for d in essais:
         if 150 <= len(d) <= 160:
