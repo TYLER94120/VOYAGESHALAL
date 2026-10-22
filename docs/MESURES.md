@@ -3943,3 +3943,21 @@ fait / mesuré / pas fait et pourquoi
 **Ouvert.** Refaire le recensement des jumeaux, puis choisir la création à partir des requêtes sans page dédiée du relevé.
 
 **Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
+
+## 22 octobre — nuit 9 de la routine autonome (jour pair : approfondissement)
+
+fait / mesuré / pas fait et pourquoi
+
+**Mesuré (priorité 3).** La requête « salle de prière Disneyland Paris » doit arriver sur `ou-prier-disneyland-paris`. Le titre de cette page est « Disneyland Paris : pas de salle de prière, voir au City Hall » et la description renvoie au City Hall. Le contenu répond donc directement à la requête. Aucune autre page du dépôt ne vise ce terme (recherche dans `lib/data.ts` et `app/`). Le relevé Search Console ne dit pas quelle page Google affiche réellement pour cette requête : cette partie reste non vérifiée.
+
+**Fait.** Rien modifié. Le titre est déjà aligné sur la requête, donc pas de changement justifié.
+
+**Pas fait et pourquoi.**
+- Pas de nouvel approfondissement : la mesure interne ne montre aucun écart prouvé sur les pages de la voie aujourd'hui.
+- La priorité 1 (Orly, CDG) reste bloquée : le titre d'Orly promet des horaires non sourcés, et je n'ai pas de source pour les remplacer.
+
+**Vérifié servi.** Rien publié cette nuit, donc rien à vérifier.
+
+**Ouvert.** Vérifier la page réellement affichée par Google pour « salle de prière Disneyland Paris » dès qu'un export Search Console avec les URL est déposé dans `docs/`.
+
+**Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
