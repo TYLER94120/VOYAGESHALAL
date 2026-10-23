@@ -234,6 +234,72 @@ def main():
                         'porte sur ce site : « %s »'
                         % (chemin, quoi, mot, desechapper(m.group(1))[:60]))
 
+    # ================================================================
+    # 11. AUCUNE PAGE N'ANNONCE UNE SORTE DE SOURCE QUE LES BANQUES
+    #     NE PORTENT PAS — AJOUTE LE 23 OCTOBRE
+    # ================================================================
+    #
+    # CE QUE LA MESURE DU 23 OCTOBRE A TROUVE. `plus.html` — la page « A
+    # propos », celle ou un lecteur attentif va voir si le site est serieux —
+    # annoncait : « Chaque question sort d'une source verifiable : un verset
+    # avec sa sourate et son numero, OU UN HADITH AVEC SON RECUEIL, SON
+    # RAPPORTEUR ET SON NUMERO. »
+    #
+    # Compte le meme soir : sur 2 701 questions, ZERO cite un hadith, un
+    # recueil ou un rapporteur. Le projet n'a aucune traduction francaise de
+    # hadith qui soit sourcee — mesure du 21 octobre — et depuis le 21 octobre
+    # `controler-questions.py` INTERDIT d'en citer un. La page decrivait donc
+    # une pratique que le projet a formellement ecartee.
+    #
+    # Ce n'est pas une phrase fausse sur les questions : toutes satisfont la
+    # premiere branche. C'est une phrase qui annonce au lecteur qu'il va
+    # rencontrer des hadiths sources, et il n'en rencontrera aucun. C'est le
+    # meme defaut que les quatre titres de voyageshalal qui promettaient une
+    # salle de priere que l'article declarait inexistante.
+    #
+    # LA REGLE SE LIE AUX BANQUES, PAS A UN MOT. On compte d'abord combien de
+    # questions citent reellement un hadith. Si c'est zero, aucune page
+    # indexable ne doit en parler. Si Mohamed obtient un jour une traduction
+    # avec un traducteur nomme et que des questions en citent, ce controle se
+    # taira de lui-meme : il interdit de promettre PLUS que ce que les banques
+    # tiennent, pas de prononcer un mot.
+    #
+    # LE PIEGE, MESURE AVANT D'ECRIRE LA REGLE. « recueil » tout court est
+    # dans DEUX pages : plus.html et lecon-sourate-an-nazi-at.html, ou
+    # Hamidullah ecrit « Et par ceux qui recueillent avec douceur ». Un
+    # controle sur « recueil » accuserait donc un verset du Coran. On cherche
+    # « recueil de ». Meme famille de piege que le point 10 au-dessus.
+    SOURCES_HADITH = re.compile(
+        r'hadith|recueil de|rapporteur|sunna|boukhari|bukhari|mouslim'
+        r'|sahih|abou dawoud|abu dawud|tirmidhi|ibn maja|sunan|muwatta')
+    questions_hadith = 0
+    for banque in sorted((RACINE / 'data' / 'questions').glob('*.json')):
+        for q in json.loads(banque.read_text(encoding='utf-8')):
+            if SOURCES_HADITH.search(aplatir(q.get('source') or '')):
+                questions_hadith += 1
+
+    pages_qui_annoncent = []
+    if questions_hadith == 0:
+        for u in adresses:
+            chemin = u[len(SITE):] or '/'
+            code, page = prendre(BASE + chemin)
+            if code != 200 or not page:
+                continue
+            plat = aplatir(sans_balises(page))
+            vus = sorted({m.group(0) for m in SOURCES_HADITH.finditer(plat)})
+            if vus:
+                pages_qui_annoncent.append(chemin)
+                fautes.append(
+                    '%s : la page parle de %s alors qu\'AUCUNE des %d questions '
+                    'ne cite un hadith. Le projet n\'a pas de traduction '
+                    'francaise sourcee de hadith, et controler-questions.py '
+                    'interdit d\'en citer une : une page qui en annonce fait '
+                    'attendre au lecteur ce qu\'il ne trouvera pas.'
+                    % (chemin, ', '.join('« %s »' % v for v in vus),
+                       sum(len(json.loads(b.read_text(encoding='utf-8')))
+                           for b in sorted((RACINE / 'data' / 'questions')
+                                           .glob('*.json')))))
+
     # 9. CHAQUE lastmod DIT LA VERITE SUR SA PAGE.
     #
     # Jusqu'au 8 octobre, le generateur posait la meme date sur les 53
@@ -306,6 +372,9 @@ def main():
     print('  Balises de partage completes et donnees structurees lisibles.')
     print('  %d titres et %d descriptions relus : aucune promesse de merite.'
           % (len(adresses), len(adresses)))
+    # Le MESURE, pas un verdict : les deux nombres se lisent ensemble.
+    print('  %d question(s) citent un hadith ; %d page(s) indexable(s) en '
+          'parlent.' % (questions_hadith, len(pages_qui_annoncent)))
     print('  Et chaque lastmod est celui du dernier commit de sa page :'
           ' %d dates distinctes pour %d adresses.'
           % (len({d for _, d in re.findall(

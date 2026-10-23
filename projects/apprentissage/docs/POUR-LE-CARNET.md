@@ -107,6 +107,7 @@ La propriété est en « préfixe d'URL » et pas en « Domaine ». Elle bloque 
 | sujet | la mesure | ce qu'il faut trancher |
 |---|---|---|
 | **juz 29** (sourates 67 à 77) | 11 sourates, 431 versets. Les 38 leçons actuelles en font 571. +29 % de pages pour +75 % de versets. Leçon médiane : de 11 versets à 40. Texte arabe et traduction Hamidullah présents pour les onze, sans trou. | ouvrir ou non une nouvelle unité du mushaf |
+| **ou neuf sourates courtes** (22 oct.) | Le levier 2 dit « une leçon par sourate **courte** ». Mesuré : **9 sourates hors du lot ont 20 versets ou moins** — Al-Jumu'a 11, Al-Munafiqun 11, At-Talaq 12, At-Tahrim 12, Al-Mumtahana 13, As-Saff 14, Al-Hujurat 18, At-Taghabun 18, Al-Muzzammil 20. **129 versets en tout**, contre 431 pour le juz 29 : +24 % de pages pour +23 % de versets, au lieu de +29 % pour +75 %. Les deux jeux de données (arabe et Hamidullah) concordent sur les neuf, sans trou. Une seule, Al-Muzzammil, appartient au juz 29 : les deux options ne se recouvrent presque pas. | **Le coût n'est pas le même, et la cohérence non plus.** Le lot actuel a un nom — Al-Fatiha et le juz Amma, une unité reconnue. Neuf sourates dispersées (49, 60-66, 73) n'en forment aucune : un lecteur verrait un ensemble arbitraire. C'est ce choix-là qui est à toi, pas le volume |
 | **taille du texte** | 102 `font-size` en px, 27 à 12 px ou moins, zéro en rem. Le réglage du téléphone n'a aucun effet. Passer en rem ne suffirait pas : à 320 px, 2 651 cartes sur 2 701 sont déjà à la plus petite échelle et 96 % demandent de faire glisser. Il faudrait que les cartes s'allongent au lieu de se réduire. | une refonte de la façon dont une carte répond à un débordement |
 | **deux titres de section** | « Le comportement » (64 car.) et « Vocabulaire arabe » (65) dépassent 60 et retombent sur le nom seul. Raccourcir leur champ `quoi` de 5 caractères les ferait tenir. `quoi` est une valeur du cahier V2. | raccourcir ou non deux phrases du cahier |
 | **« 2 701 questions »** | 65 versets produisent une carte dans deux ou trois sections — la prière et l'aumône, que le Coran associe sans cesse. 138 cartes, 5,1 % du paquet. En comptant chaque verset une fois : 2 628. | garder 2 701, qui est le nombre de cartes, ou annoncer 2 628 |
@@ -179,3 +180,41 @@ Un numéro présent mais faux est donc attrapé aussi. Et il n'y a aucune
 ambiguïté possible avec le nombre de versets, qui figure dans la même
 phrase : **aucune des 114 sourates du Coran n'a un nombre de versets égal à
 son numéro** — vérifié sur les 114.
+
+## 🔴 UNE LEÇON DU 23 OCTOBRE, DE LA MÊME FAMILLE
+
+**La page qui explique ta méthode est celle que personne ne contrôle.**
+
+Sur les 53 adresses indexables d'islampasapas, **52 sortent d'un
+générateur** — leurs titres et leurs descriptions sont tenus par un
+`sys.exit` et par deux contrôles. **Une seule est écrite à la main :
+`plus.html`, la page « À propos ».** C'est-à-dire précisément la page où un
+lecteur attentif va voir si le site est sérieux.
+
+Et c'est la seule qui portait une affirmation que le site ne tient pas :
+
+> « Chaque question sort d'une source vérifiable : un verset avec sa sourate
+> et son numéro, **ou un hadith avec son recueil, son rapporteur et son
+> numéro.** »
+
+Compte le même soir : sur **2 701 questions, zéro** cite un hadith, un
+recueil ou un rapporteur — et depuis le 21 octobre un contrôle **interdit**
+d'en citer un, faute de traduction française sourcée. La page annonçait donc
+une pratique que le projet avait formellement écartée. Même défaut que les
+quatre titres de voyageshalal qui promettaient une salle de prière que
+l'article déclarait inexistante : **la description était honnête, c'est la
+promesse qui ne l'était pas.**
+
+La clause a été retirée ; ce qui reste est mesuré vrai pour les 2 701. Et le
+contrôle ne surveille pas un mot, il **lie la page aux banques** : si aucune
+question ne cite de hadith, aucune page indexable ne doit en parler ; si des
+questions en citent un jour, le contrôle se tait de lui-même.
+
+**À emporter sur les cinq sites :** faire la liste des pages indexables qui
+ne sortent pas d'un générateur. Elles sont peu nombreuses, elles sont
+souvent les plus anciennes, et ce sont elles qui portent les promesses que
+plus personne ne vérifie.
+
+*(Le piège, pour mémoire : un contrôle sur le mot « recueil » accuse un
+verset du Coran — Hamidullah écrit « Et par ceux qui recueillent avec
+douceur », sur la page d'An-Nazi'at. On cherche « recueil de ».)*
