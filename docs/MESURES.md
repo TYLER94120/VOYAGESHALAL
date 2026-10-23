@@ -3844,3 +3844,21 @@ fait / mesuré / pas fait et pourquoi
 **Bloqué.** Relevé Search Console 3 mois : toujours absent du dépôt. Consigné.
 
 **Interdits respectés.** Aucune fusion par mes soins, aucun push sur `main`, aucune dépense.
+
+## 23 octobre — nuit 10 de la routine autonome (jour impair : création)
+
+fait / mesuré / pas fait et pourquoi
+
+**Mesuré.** Recensement refait, cette fois en séparant les articles FR (95) et EN (15) du fichier `lib/data.ts`. Articles FR sans jumeau anglais déclaré dans `lib/slugs.ts` : 31. Liste dans le carnet de la session, par slug ; `voyage-halal-debutant` est la seule dont le terme recoupe une requête du relevé (« voyage halal », 452 impressions, position 51,9), et cette requête relève de la priorité 6 (page-hub seulement si elle apporte quelque chose de nouveau).
+
+**Fait.** Rien publié.
+
+**Pas fait et pourquoi.**
+- Pas de traduction : le recensement dit combien d'articles n'ont pas de jumeau, pas lequel vaut la traduction. Pour aucun des 31, je ne peux nommer la requête gagnée à partir du relevé du 17 octobre.
+- Pas de création originale : même raison.
+
+**Vérifié servi.** Rien modifié.
+
+**Ouvert.** Choisir la prochaine traduction à partir d'un export Search Console avec les URL, et non à partir des requêtes seules.
+
+**Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
