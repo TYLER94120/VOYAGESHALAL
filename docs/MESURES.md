@@ -3860,5 +3860,119 @@ fait / mesuré / pas fait et pourquoi
 **Vérifié servi.** Rien modifié.
 
 **Ouvert.** Choisir la prochaine traduction à partir d'un export Search Console avec les URL, et non à partir des requêtes seules.
+## 17 octobre — relevé Search Console déposé dans le dépôt (transcription manuelle)
+
+fait / mesuré / pas fait et pourquoi
+
+**Fait — dépôt du relevé.** Les captures d'écran du relevé 3 mois sont transcrites dans `docs/search-console/` : `pages.csv` (26 lignes), `requetes.csv` (26 lignes), `jours.csv` (75 lignes quotidiennes, du 15 juillet au 27 septembre), `appareils.csv`, `pays.csv`, avec un `README.md` qui décrit la source et les limites. Ce sont des transcriptions à la main, pas des exports Google : le fichier d'origine n'a pas été reçu.
+
+**Mesuré dans le relevé.**
+- Appareils : mobile 315 clics-impressions à position 10,34 ; ordinateur 48 à position 46,68. L'écart de position est le signal le plus net.
+- Position quotidienne : environ 36 à 40 en juillet, 11 à 18 fin septembre. La série quotidienne s'arrête au 27 septembre, donc les semaines suivantes ne sont pas couvertes.
+- Pays : Belgique (2 471 impressions) et Suisse (2 363) pour un clic chacune. Ce sont des impressions sans clic, pas une audience.
+- Requêtes à fort volume sans clic : « voyage halal » (452 impressions, position 51,9), « voyage halal en France » (299, 50,2), « hôtel musulman à Dubaï » (274, 37,2).
+- Pages : Orly (688 impressions, CTR 1,45 %, position 9,97), CDG (600, 0,83 %, 12,42), « mosquée autour de moi » (191 impressions, position 12,3, zéro clic).
+
+**Pas fait et pourquoi.**
+- Pas de conclusion sur l'accueil (2 981 impressions à position 63,8, 5 clics) : la cause n'est pas dans le relevé, elle reste ouverte.
+- Pas d'article nouveau sur la base de ces chiffres seuls : le relevé est une transcription partielle (lignes tronquées sur les captures), donc les chiffres servent à choisir l'ordre des travaux, pas à les prouver.
+
+**Limites à garder en tête.** Transcription à la main, donc erreurs possibles de lecture. Les lignes tronquées sur les captures ne sont pas reconstituées. L'export original (avec les positions complètes) reste souhaitable.
+
+**Interdits respectés.** Aucun accès à Search Console tenté au-delà des captures reçues ; aucune fusion, aucun push sur `main`, aucune dépense.
+
+## 18 octobre — nuit 5 de la routine autonome (jour pair : approfondissement)
+
+fait / mesuré / pas fait et pourquoi
+
+**Mesuré.**
+- Schéma FAQPage : `DestinationFaqSchema` existe encore dans `components/SchemaOrg.tsx` mais n'est rendu nulle part dans `components/villes/DestinationRoute.tsx` ni dans `app/`. Le retrait demandé le 13 octobre est en place ; le garde-fou `test-donnees-structurees.mjs` l'interdit.
+- Titre d'Orly (`ou-prier-aeroport-orly`, 688 impressions, CTR 1,45 %) : « Salle de prière à l'aéroport d'Orly : horaires et accès ». Le mot « horaires » promet une information que nous n'avons pas : `data/airports/prayer-rooms.json` ne contient aucun horaire, et le corps de l'article n'en donne pas non plus.
+
+**Fait.** Rien de modifié dans le code cette nuit.
+
+**Pas fait et pourquoi.**
+- Pas de réécriture du titre d'Orly. Pour gagner en clics sur « Orly », la première idée serait de retirer « horaires » ou de le remplacer par une promesse plus forte. Mais le titre actuel promet des horaires que le site ne vérifie pas, et les titres sont la partie du site la plus visible. Décision : ne pas changer le titre tant qu'une source d'horaires n'est pas vérifiée, et changer le titre pour une promesse que le corps de l'article tient.
+- Pas d'article nouveau : le jour pair est réservé à l'approfondissement, et le seul écart prouvé ce soir est le titre ci-dessus, qui demande une décision éditoriale plus qu'un ajout.
+- Le mot « salle musulmane avec espaces séparés hommes / femmes » dans la description d'Orly n'a pas été relu contre une source cette nuit ; à vérifier avant tout nouveau texte sur cette page.
+
+**Vérifié servi.** Non fait cette nuit : aucune modification publiée, donc rien à vérifier sur la page servie.
+
+**Ouvert.**
+- Trouver une source vérifiée des horaires d'Orly, ou retirer définitivement le mot des titres de la voie aéroports.
+- Relire la description d'Orly contre une source.
+
+**Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
+
+## 19 octobre — nuit 6 de la routine autonome (jour impair : création)
+
+fait / mesuré / pas fait et pourquoi
+
+**Mesuré.** Recensement grossier des articles français sans jumeau anglais déclaré dans `lib/slugs.ts`. Le script de comptage a mélangé des clés FR et EN, donc la liste n'est pas fiable : elle ne sert qu'à dire qu'il reste des candidats, pas lesquels traduire.
+
+**Fait.** Rien de publié cette nuit.
+
+**Pas fait et pourquoi.**
+- Pas de création : la règle impose de répondre d'abord à « quelle requête précise cette page va-t-elle gagner ? ». Pour aucun candidat du recensement je n'ai pu répondre à cette question avec une mesure du relevé du 17 octobre. Publier un article de plus sans cette réponse, c'est ce que la règle interdit.
+- Pas de traduction faite : le recensement ne suffit pas à désigner un article vérifié à traduire, et une traduction qui se trompe de cible dilue le domaine anglais.
+
+**Vérifié servi.** Rien modifié, donc rien à vérifier.
+
+**Ouvert pour la prochaine création.**
+- Refaire le recensement avec une liste d'articles FR et une liste de clés EN distinctes, pour avoir un nombre fiable.
+- Choisir la création à partir des requêtes du relevé qui n'ont pas de page dédiée (requêtes en tête de `docs/search-console/requetes.csv`).
+
+**Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
+
+## 20 octobre — nuit 7 de la routine autonome (jour pair : approfondissement)
+
+fait / mesuré / pas fait et pourquoi
+
+**Mesuré.** Requête « mosquée autour de moi » : 191 impressions, position 12,3, zéro clic (relevé du 17 octobre). Le titre servi de `/mosquee-proche` était « Mosquée la plus proche — Trouvez une mosquée autour de vous » : il ne contient pas la requête exacte.
+
+**Fait.** Titre FR de `/mosquee-proche` changé pour « Mosquée autour de moi — la plus proche de vous » (`app/(dyn)/mosquee-proche/layout.tsx`). La description FR n'a pas été touchée.
+
+**Vérifié servi.** Build exit 0. `next start` sur le port 3917, requête avec `Host: www.voyageshalal.fr` : `<title>Mosquée autour de moi — la plus proche de vous</title>`.
+
+**Pas fait et pourquoi.**
+- Pas de mesure du résultat : le relevé Search Console s'arrête au 27 septembre, donc l'effet du nouveau titre ne se lira pas avant un nouveau relevé.
+- La description FR promet « horaires » et « itinéraire » sur l'outil : non relu contre le code cette nuit, à vérifier avant tout nouveau texte.
+- Pas de changement sur le titre EN (`Nearest mosque — Find a mosque around you`) : aucune requête anglaise de ce type dans le relevé.
+
+**Ouvert.** Relire la description FR de `/mosquee-proche` ; même question que pour le titre d'Orly sur les horaires.
+
+**Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
+
+## 21 octobre — nuit 8 de la routine autonome (jour impair : création)
+
+fait / mesuré / pas fait et pourquoi
+
+**Mesuré.** Aucune nouvelle donnée : le relevé Search Console est toujours celui du 17 octobre (série quotidienne jusqu'au 27 septembre). Le titre de `/mosquee-proche` modifié le 20 octobre n'a encore aucun résultat mesurable.
+
+**Fait.** Rien de publié cette nuit.
+
+**Pas fait et pourquoi.** Pas de création : la règle demande de nommer la requête que la page va gagner, et le recensement des jumeaux anglais à refaire (nuit du 19 octobre) n'a pas été fait. Une création sans cette base reviendrait à deviner la cible.
+
+**Vérifié servi.** Rien modifié, donc rien à vérifier.
+
+**Ouvert.** Refaire le recensement des jumeaux, puis choisir la création à partir des requêtes sans page dédiée du relevé.
+
+**Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
+
+## 22 octobre — nuit 9 de la routine autonome (jour pair : approfondissement)
+
+fait / mesuré / pas fait et pourquoi
+
+**Mesuré (priorité 3).** La requête « salle de prière Disneyland Paris » doit arriver sur `ou-prier-disneyland-paris`. Le titre de cette page est « Disneyland Paris : pas de salle de prière, voir au City Hall » et la description renvoie au City Hall. Le contenu répond donc directement à la requête. Aucune autre page du dépôt ne vise ce terme (recherche dans `lib/data.ts` et `app/`). Le relevé Search Console ne dit pas quelle page Google affiche réellement pour cette requête : cette partie reste non vérifiée.
+
+**Fait.** Rien modifié. Le titre est déjà aligné sur la requête, donc pas de changement justifié.
+
+**Pas fait et pourquoi.**
+- Pas de nouvel approfondissement : la mesure interne ne montre aucun écart prouvé sur les pages de la voie aujourd'hui.
+- La priorité 1 (Orly, CDG) reste bloquée : le titre d'Orly promet des horaires non sourcés, et je n'ai pas de source pour les remplacer.
+
+**Vérifié servi.** Rien publié cette nuit, donc rien à vérifier.
+
+**Ouvert.** Vérifier la page réellement affichée par Google pour « salle de prière Disneyland Paris » dès qu'un export Search Console avec les URL est déposé dans `docs/`.
 
 **Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.

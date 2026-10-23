@@ -6,7 +6,7 @@ import { getDomainSEO } from '@/lib/domain'
 export async function generateMetadata(): Promise<Metadata> {
   const { isEN, siteUrl } = await getDomainSEO()
   return {
-    title: isEN ? 'Nearest mosque — Find a mosque around you' : 'Mosquée la plus proche — Trouvez une mosquée autour de vous',
+    title: isEN ? 'Nearest mosque — Find a mosque around you' : 'Mosquée autour de moi — la plus proche de vous',
     description: isEN
       ? 'Find the nearest mosque anywhere in the world in seconds, with directions and prayer times. Free, based on OpenStreetMap data.'
       : "La mosquée la plus proche en quelques secondes, partout dans le monde, avec itinéraire et horaires. Gratuit, données OpenStreetMap.",
