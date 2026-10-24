@@ -198,7 +198,26 @@ def _lexique_et_morphologie():
     verset cite. Une question de vocabulaire qui donne le sens d'un mot
     absent du verset serait invisible a tout autre controle.
     """
-    lex = RACINE / 'data' / 'lexique.json'
+    # LE 19 OCTOBRE, CE CHEMIN EST DEVENU FAUX, ET CE CONTROLE S'EST TU.
+    #
+    # Le lexique etait dans `data/`. Il n'y avait aucune raison : aucune page
+    # ne le telecharge, il est lu par les generateurs. Il est donc passe dans
+    # `outils/`, que publier.py n'emporte pas — 19 Ko de moins en production.
+    #
+    # Ce chemin-ci n'a pas suivi. `lex.exists()` est devenu faux, la fonction
+    # a renvoye (None, None), et la verification du vocabulaire s'est
+    # DESACTIVEE D'ELLE-MEME pendant cinq nuits : 1 246 cartes de vocabulaire
+    # ont cesse d'etre confrontees au corpus morphologique.
+    #
+    # Le controle ne mentait pas pour autant — il comptait ces cartes comme
+    # NON VERIFIEES et l'imprimait chaque soir : « 687 designent un mot du
+    # verset, 0 confrontees au corpus morphologique ». La ligne etait juste.
+    # Personne ne l'a lue. C'est l'argument meme pour lequel ces lignes de
+    # bilan impriment un CHIFFRE et pas un verdict — a condition de le lire.
+    #
+    # D'OU LE CONTROLE AJOUTE PLUS BAS : un zero a cet endroit est desormais
+    # une FAUTE, pas une information. Un corpus introuvable arrete le lot.
+    lex = RACINE / 'outils' / 'lexique.json'
     morpho = RACINE / 'outils' / 'coran' / 'morphologie.txt'
     if not lex.exists() or not morpho.exists():
         return None, None
@@ -647,6 +666,60 @@ def main():
                 if a and a not in b:
                     fautes.append('%s : l\'arabe montre n\'est pas celui de '
                                   'sourate %d verset %d' % (ou, s, v))
+
+    # ================================================================
+    # UN CORPUS INTROUVABLE EST UNE FAUTE, PLUS UNE INFORMATION
+    # AJOUTE LE 24 OCTOBRE
+    # ================================================================
+    #
+    # Ce controle se desactivait proprement quand le lexique ou le corpus
+    # morphologique manquait : les cartes de vocabulaire passaient en NON
+    # VERIFIE, et il l'imprimait. C'est le bon reflexe — mieux vaut dire « je
+    # n'ai pas verifie » que laisser croire le contraire.
+    #
+    # Mais le 19 octobre le lexique a change de dossier et ce chemin n'a pas
+    # suivi. La verification s'est donc eteinte TOUTE SEULE, et elle est
+    # restee eteinte CINQ NUITS. Chaque soir la ligne de bilan affichait
+    # « 687 designent un mot du verset, 0 confrontees au corpus
+    # morphologique » — exact, honnete, et lu par personne.
+    #
+    # Une degradation silencieuse se remarque quand elle fait rougir le lot,
+    # pas quand elle imprime un zero. Donc : s'il y a des cartes de
+    # vocabulaire et que le corpus manque, LE LOT EST REFUSE. On ne perd pas
+    # l'honnetete du message — on la rend impossible a ignorer.
+    #
+    # Ce que la reparation a mesure, et c'est la vraie nouvelle : 1 246
+    # cartes confrontees, ZERO faute. Les cinq nuits aveugles n'ont rien
+    # laisse passer. Le trou etait dans la verification, pas dans le site.
+    #
+    # LES DEUX MANQUES NE SE SIGNALENT PAS PAREIL, ET IL FAUT LE SAVOIR.
+    # Sabotage du 24 octobre, les deux refusent le lot :
+    #
+    #   lexique introuvable (le defaut reel du 19 octobre)
+    #       la fonction renvoie (None, None), la ligne de bilan affiche son
+    #       zero, et c'est CE controle-ci qui nomme la faute.
+    #   morphologie.txt introuvable
+    #       `faire-questions-claude.py` le lit DES SON IMPORT, ligne 149,
+    #       sans garde. Le controle s'arrete donc sur une pile d'appels avant
+    #       d'avoir rien mesure. Le lot est refuse — bruyamment, mais par un
+    #       plantage et non par une phrase. Repare la ligne 149 si tu veux un
+    #       message ; ce n'est pas un trou, c'est un message laid.
+    # Toute carte de vocabulaire passe par l'un des deux compteurs : celui
+    # des confrontees, ou celui des non verifiees. Leur somme est donc le
+    # nombre de cartes de vocabulaire, sans relire les banques.
+    cartes_vocab = verifiesVocab + nonVerifies
+    if cartes_vocab and SENS_DU_LEMME is None:
+        fautes.append(
+            '%d cartes de vocabulaire et AUCUN corpus charge : outils/'
+            'lexique.json ou outils/coran/morphologie.txt est introuvable. '
+            'Le sens annonce par ces cartes n\'est alors confronte a rien. '
+            'C\'est exactement ce qui est arrive du 19 au 24 octobre.'
+            % cartes_vocab)
+    elif cartes_vocab and verifiesVocab == 0:
+        fautes.append(
+            '%d cartes de vocabulaire et zero confrontee au corpus : le '
+            'corpus est charge mais plus personne ne s\'en sert.'
+            % cartes_vocab)
 
     print('  %d questions dans %d sections.' % (total, len(fichiers)))
     print('  %d citent un verset precis et ont ete confrontees au texte.' % verifiables)

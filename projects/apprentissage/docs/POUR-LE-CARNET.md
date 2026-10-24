@@ -218,3 +218,52 @@ plus personne ne vérifie.
 *(Le piège, pour mémoire : un contrôle sur le mot « recueil » accuse un
 verset du Coran — Hamidullah écrit « Et par ceux qui recueillent avec
 douceur », sur la page d'An-Nazi'at. On cherche « recueil de ».)*
+
+## 🔴 LA LEÇON DU 24 OCTOBRE — LA PLUS IMPORTANTE DES TROIS
+
+**Un contrôle qui sait s'éteindre proprement cache sa propre panne.**
+
+Le carnet retient déjà deux contrôles **menteurs**. En voici un troisième
+cas, et il est différent : **celui-là disait la vérité, et personne ne la
+lisait.**
+
+Le 19 octobre, `lexique.json` a été déplacé de `data/` vers `outils/` — une
+bonne réparation : 19 Ko ne partaient plus en production pour rien. Les
+trois générateurs qui le lisent ont suivi. **Le contrôle, non.** Il
+cherchait l'ancien chemin, ne trouvait rien, et se désactivait proprement.
+
+**Pendant cinq nuits, 1 246 cartes de vocabulaire — celles qui affirment
+« ce mot arabe signifie ceci » — n'ont plus été confrontées au corpus
+morphologique du Coran.**
+
+Et le contrôle l'imprimait chaque soir, exactement :
+
+> `687 désignent un mot du verset, 0 confrontées au corpus morphologique.`
+
+Zéro. La ligne était juste. Elle a été lue cinq fois sans être vue. Le
+contrôle avait même été écrit pour ça : son commentaire dit « sans corpus
+sous la main on ne peut rien affirmer : on le **dit** plutôt que de laisser
+croire que c'est vérifié ». Il a tenu parole ; le lecteur non.
+
+**Réparé, et la mesure est bonne : 1 246 cartes confrontées, zéro faute.**
+Les cinq nuits aveugles n'ont rien laissé passer. Le trou était dans la
+vérification, pas dans le site — mais personne ne pouvait le savoir avant de
+regarder.
+
+**La règle qui en sort, et elle vaut pour les cinq sites :**
+
+> Une dégradation silencieuse se remarque quand elle fait **rougir** le lot,
+> pas quand elle imprime un zéro. Partout où un contrôle peut se désactiver
+> faute de données, **sa désactivation doit être une faute**, pas une
+> information. On ne perd pas l'honnêteté du message : on la rend impossible
+> à ignorer.
+
+Corollaire pour ce carnet : « imprime le chiffre, pas un verdict » reste la
+bonne règle — mais un chiffre n'est honnête que si quelqu'un le lit. Les
+deux doivent aller ensemble.
+
+*(Détail à garder : les deux manques ne se signalent pas pareil. Lexique
+absent → le contrôle nomme la faute. `morphologie.txt` absent →
+`faire-questions-claude.py` le lit dès son import, sans garde, et le
+contrôle s'arrête sur une pile d'appels. Le lot est refusé dans les deux
+cas, mais l'un donne une phrase et l'autre un plantage.)*
