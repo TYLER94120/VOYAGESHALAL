@@ -3976,3 +3976,21 @@ fait / mesuré / pas fait et pourquoi
 **Ouvert.** Vérifier la page réellement affichée par Google pour « salle de prière Disneyland Paris » dès qu'un export Search Console avec les URL est déposé dans `docs/`.
 
 **Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
+
+## 24 octobre — nuit 11 de la routine autonome (jour pair : approfondissement)
+
+fait / mesuré / pas fait et pourquoi
+
+**Mesuré.** Aucune donnée nouvelle : `docs/search-console/` est inchangé (6 fichiers, relevé du 17 octobre), aucun export original n'a été déposé. Branche locale synchronisée avec `origin/claude/intelligent-fermi-fog76k`.
+
+**Fait.** Rien modifié dans le code.
+
+**Pas fait et pourquoi.**
+- Pas d'approfondissement : la règle exige un écart prouvé (position 5-15 avec affichages, ou une donnée du dépôt absente de la page servie). Je n'ai pas relancé ce contrôle cette nuit, donc je n'ai pas d'écart à présenter. Le titre de `/mosquee-proche` modifié le 20 octobre n'a pas encore de résultat mesurable.
+- Priorités 1 et 2 : titres d'Orly et de CDG bloqués par les horaires non sourcés, et titre de `/mosquee-proche` déjà fait le 20 octobre.
+
+**Vérifié servi.** Rien publié, donc rien à vérifier.
+
+**Ouvert.** Export Search Console avec les URL et les clics par mois, pour mesurer les titres déjà modifiés et choisir l'approfondissement.
+
+**Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
