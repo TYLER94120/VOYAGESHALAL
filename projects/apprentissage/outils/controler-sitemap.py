@@ -359,6 +359,92 @@ def main():
                 sm.read_text(encoding='utf-8'):
             fautes.append('%s porte noindex et figure au sitemap' % p.name)
 
+    # ================================================================
+    # 12. robots.txt — AJOUTE LE 25 OCTOBRE
+    # ================================================================
+    #
+    # CE QUE L'AUDIT DU 25 OCTOBRE A TROUVE. En appliquant la regle de la
+    # veille — « partout ou un controle peut se taire, son silence doit etre
+    # une faute » — j'ai essaye d'ecarter onze fichiers un par un et de
+    # relancer la suite entiere a chaque fois.
+    #
+    # Dix d'entre eux font rougir au moins un controle. `data/images.json`,
+    # que douze contrôles Python ignorent, est rattrape par
+    # `controler-donnees.mjs`. UN SEUL ne fait rougir PERSONNE :
+    #
+    #     robots.txt ecarte  ->  9 controles Python verts
+    #                            30 controles de navigateur verts
+    #
+    # Les trente-neuf. C'est verifie en les lancant tous, pas en lisant leur
+    # code : un audit qui ne visite pas tout mesure son propre parcours.
+    #
+    # ET C'EST LE PIRE ENDROIT POUR UN TROU. robots.txt est le seul fichier
+    # du site dont UNE LIGNE peut faire disparaitre les 53 adresses de
+    # Google : « Disallow: / » suffit. C'est aussi lui qui dit ou se trouve
+    # le sitemap. Il est ecrit a la main — comme plus.html, qui portait
+    # avant-hier la seule affirmation fausse du site. Les fichiers ecrits a
+    # la main sont peu nombreux et ce sont eux qui portent les accidents.
+    #
+    # CE QUI EST VERIFIE, ET POURQUOI CHAQUE POINT
+    #   a. il est SERVI, en 200, et non vide — l'absence est une faute ;
+    #   b. aucune regle ne barre tout le site ;
+    #   c. aucune regle ne barre une adresse que le sitemap annonce — la
+    #      contradiction qui tue l'indexation sans rien casser de visible ;
+    #   d. il declare le sitemap UNE fois, a l'adresse canonique absolue,
+    #      et cette adresse-la repond.
+    code_r, robots = prendre(BASE + '/robots.txt')
+    if code_r != 200 or not robots.strip():
+        fautes.append(
+            'robots.txt : servi en %s%s. C\'est le seul fichier dont une '
+            'ligne peut retirer les %d adresses de Google, et le seul que '
+            'les 39 controles laissaient disparaitre sans broncher.'
+            % (code_r, ' et vide' if code_r == 200 else '', len(adresses)))
+    else:
+        # Les regles, groupe par groupe : une regle ne vaut que pour le
+        # `User-agent` qui la precede.
+        agent, interdits, sitemaps = None, [], []
+        for ligne in robots.splitlines():
+            ligne = ligne.split('#')[0].strip()
+            if not ligne or ':' not in ligne:
+                continue
+            cle, _, val = ligne.partition(':')
+            cle, val = cle.strip().lower(), val.strip()
+            if cle == 'user-agent':
+                agent = val
+            elif cle == 'disallow' and val:
+                interdits.append((agent, val))
+            elif cle == 'sitemap':
+                sitemaps.append(val)
+
+        for ag, val in interdits:
+            if val == '/':
+                fautes.append(
+                    'robots.txt : « Disallow: / » pour « User-agent: %s » — '
+                    'le site entier est retire de la recherche' % ag)
+                continue
+            # Une interdiction qui recouvre une adresse annoncee au sitemap :
+            # on annonce la page a Google et on lui defend de la lire.
+            touchees = [u[len(SITE):] or '/' for u in adresses
+                        if (u[len(SITE):] or '/').startswith(val)]
+            if touchees:
+                fautes.append(
+                    'robots.txt : « Disallow: %s » couvre %d adresse(s) que '
+                    'le sitemap annonce (%s%s) — on les montre a Google et '
+                    'on lui defend de les lire'
+                    % (val, len(touchees), ', '.join(touchees[:3]),
+                       ' …' if len(touchees) > 3 else ''))
+
+        attendu = '%s/sitemap.xml' % SITE
+        if sitemaps != [attendu]:
+            fautes.append(
+                'robots.txt : il faut une seule ligne « Sitemap: %s » ; '
+                'trouve %s' % (attendu, sitemaps or 'aucune'))
+        else:
+            code_s, corps_s = prendre(BASE + '/sitemap.xml')
+            if code_s != 200 or '<loc>' not in corps_s:
+                fautes.append('robots.txt annonce %s, qui repond %s'
+                              % (attendu, code_s))
+
     if fautes:
         print('  %d FAUTE(S) — le lot est refuse :' % len(fautes))
         for x in fautes[:25]:
@@ -372,6 +458,9 @@ def main():
     print('  Balises de partage completes et donnees structurees lisibles.')
     print('  %d titres et %d descriptions relus : aucune promesse de merite.'
           % (len(adresses), len(adresses)))
+    print('  robots.txt : %d octets, %d regle(s) Disallow, sitemap declare '
+          'une fois et il repond.'
+          % (len(robots.encode('utf-8')), len(interdits)))
     # Le MESURE, pas un verdict : les deux nombres se lisent ensemble.
     print('  %d question(s) citent un hadith ; %d page(s) indexable(s) en '
           'parlent.' % (questions_hadith, len(pages_qui_annoncent)))

@@ -88,6 +88,29 @@ Pas `python3 -m http.server` : il ne connaît pas `/section/<slug>`, qui n'est
 pas un fichier mais une réécriture. Tester avec lui, c'est tester un autre
 site que celui qui est en ligne.
 
+### `&` ne suffit pas toujours, et l'échec ressemble à une suite cassée
+
+Le 25 octobre, dans le conteneur des rondes, un `nohup … &` lancé depuis un
+appel d'outil **n'a pas survécu à la fin de cet appel**. Le serveur
+répondait 200 pendant la commande qui l'avait lancé, et plus rien ensuite.
+
+Conséquence : `controler-sections`, `controler-redirections` et
+`controler-sitemap` — les trois qui interrogent le serveur — sont passés au
+rouge **tous les trois à la fois**, sur un dépôt propre. Pendant une mesure,
+ça ressemble à trois contrôles cassés ; j'ai failli en tirer des conclusions
+sur onze fichiers avant de relancer la référence à vide.
+
+À leur décharge, les trois le disent clairement :
+
+```
+ARRET : http://127.0.0.1:8899/ est injoignable (Connection refused).
+        Lancer d'abord : python3 outils/servir.py 8899
+```
+
+**Donc : trois rouges d'un coup, et ces trois-là — regarder le serveur avant
+de chercher ailleurs.** Et dans un conteneur où `&` ne tient pas, lancer le
+serveur comme une tâche de fond propre, pas depuis la commande qui mesure.
+
 ## Avant d'écrire un titre : la loi de précision
 
 **Lue le 12 octobre 2026 dans `docs/MESURES.md` du dépôt VOYAGESHALAL**, le

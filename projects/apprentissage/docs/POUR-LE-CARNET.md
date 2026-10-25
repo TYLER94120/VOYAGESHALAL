@@ -267,3 +267,36 @@ absent → le contrôle nomme la faute. `morphologie.txt` absent →
 `faire-questions-claude.py` le lit dès son import, sans garde, et le
 contrôle s'arrête sur une pile d'appels. Le lot est refusé dans les deux
 cas, mais l'un donne une phrase et l'autre un plantage.)*
+
+## 🔴 LE 25 OCTOBRE : LA RÈGLE APPLIQUÉE À TOUT, ET CE QU'ELLE A SORTI
+
+La règle de la veille a été passée sur la suite entière. **Méthode : écarter
+un fichier, relancer les 39 contrôles, le remettre, recommencer.** Onze
+fichiers. Pas lire le code — le lancer : un audit qui ne visite pas tout
+mesure son propre parcours.
+
+Dix des onze font rougir au moins un contrôle. `data/images.json` n'est vu
+par aucun des neuf contrôles Python, mais `controler-donnees.mjs` le
+rattrape. **Un seul ne fait rougir personne :**
+
+> **`robots.txt` écarté → 9 contrôles Python verts, 30 de navigateur verts.**
+
+**Et c'est le pire endroit possible pour un trou.** `robots.txt` est le seul
+fichier d'un site dont **une ligne** peut faire disparaître toutes ses
+adresses de Google — `Disallow: /` suffit — et c'est lui qui dit où se
+trouve le sitemap.
+
+**Il est écrit à la main.** Comme `plus.html`, qui portait la seule
+affirmation fausse du site deux jours plus tôt. **Deux sur deux :** la liste
+des fichiers écrits à la main est courte, et c'est elle qui porte les
+accidents. C'est la leçon du 23 octobre, confirmée par un autre chemin.
+
+Quatre règles posées, chacune cassée séparément pour vérifier qu'elle
+répond : fichier absent · `Disallow: /` · une interdiction qui **couvre une
+adresse annoncée au sitemap** (la contradiction qui tue l'indexation sans
+rien casser de visible — on montre la page à Google et on lui défend de la
+lire) · le sitemap déclaré sur une autre adresse que la canonique.
+
+**À emporter sur les cinq sites :** le même audit, fichier par fichier. Il
+se fait en une soirée et il ne demande aucune donnée extérieure. Commencer
+par `robots.txt`.
