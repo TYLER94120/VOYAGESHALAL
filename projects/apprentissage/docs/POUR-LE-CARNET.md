@@ -300,3 +300,71 @@ lire) · le sitemap déclaré sur une autre adresse que la canonique.
 **À emporter sur les cinq sites :** le même audit, fichier par fichier. Il
 se fait en une soirée et il ne demande aucune donnée extérieure. Commencer
 par `robots.txt`.
+
+## 🔴🔴 LE 26 OCTOBRE — DU CONTENU FAUX, EN LIGNE, ET LE SEUL DE LA SÉRIE
+
+Les quatre leçons précédentes portaient sur l'**appareil de vérification**.
+Celle-ci porte sur le **site lui-même**, et c'est la première.
+
+**Cinq cartes de « Vocabulaire arabe » surlignaient إِنس — *les hommes*, le
+mot que le Coran met en face des djinns — et donnaient « djinns » pour bonne
+réponse.** Sourate 51 verset 56 : « Je n'ai créé les djinns et les hommes
+que pour qu'ils M'adorent » ; le mot en vert était « et les hommes ». Une
+sixième affirmation, dans « Le sens des sourates », disait de ٱلْفَسَادَ — la
+corruption — qu'Hamidullah « le rend par *terre* ».
+
+En ligne depuis avant le 29 septembre.
+
+**Le mécanisme, mesuré, sans aucun jugement de traduction.** Le lexique est
+bâti en comptant le mot français qu'Hamidullah emploie dans les versets de
+chaque mot arabe, avec quatre garde-fous. Pour إِنس :
+
+| candidat | versets | p | lift |
+|---|---|---|---|
+| djinns | 15 / 17 | 0,88 | 204 |
+| hommes | 10 / 17 | 0,59 | 34 |
+
+marge retenue (15−10)/17 = **0,29 > 0,25 → accepté**.
+
+Or « homme **ou** humain » est dans **17 / 17**. Hamidullah alterne les deux
+formes, et le comptage se fait sur un radical de sept lettres : « hommes »
+et « humains » deviennent deux mots. **Le bon sens est coupé en deux — 10 et
+7 — chaque moitié perd, et « djinns », jamais divisé, gagne.** Les quatre
+garde-fous ont tous fonctionné comme écrits ; c'est leur **interaction** qui
+retourne le résultat. Formes réunies, la marge tomberait à 0,12 et le
+garde-fou aurait refusé l'entrée — le bon résultat.
+
+**La règle générale, et elle vaut partout :**
+
+> Quand on mesure un gagnant par sa marge sur le second, **toute forme qui
+> divise le vote d'un candidat le fait perdre au profit d'un rival qui n'est
+> pas divisé.** Avant de croire une marge, vérifier que les candidats sont
+> comptés sur la même unité.
+
+**Ce qui a été fait, et ce qui a été refusé :** aucun sens n'a été corrigé —
+choisir la traduction française d'un mot du Coran n'est pas le travail d'un
+outil. La règle du projet dit « en cas de doute sur une source, on ne publie
+pas » : les trois entrées ont été **retirées**. 2 701 → **2 658** questions.
+
+Un cinquième garde-fou refuse désormais un lemme quand un autre porte le
+même sens, figure dans ≥ 75 % de ses versets et tient sur plus de versets
+que lui. Les dépendances mesurées sont 87, 82, 82, 71, 64 % : la ligne tombe
+dans l'écart entre 82 et 71. **Un seuil posé dans un écart de onze points
+sur cinq cas n'est pas une loi, c'est une borne prudente** — elle est dans
+`faire-11-vocabulaire.py`, `DEPENDANCE_MAXI`.
+
+**Et une découverte en chemin, qui aurait empoisonné toute vérification
+future.** En voulant prouver que seuls ces trois mots avaient changé, trois
+lancements du générateur sans rien toucher ont donné **trois banques
+différentes** (1 217, 1 216, 1 216 cartes). Le lexique était stable : le
+hasard était dans le choix des versets — cinq par mot, triés par longueur,
+les ex æquo laissés dans l'ordre d'un `set`, lequel dépend du hachage des
+chaînes et change à chaque processus. **Le nombre de questions annoncé sur
+la page d'accueil bougeait donc à chaque régénération, sans qu'aucune donnée
+n'ait changé.** Tri rendu total (longueur, sourate, verset) : trois
+lancements, la même banque à l'octet.
+
+**À emporter : un tri partiel sur un ensemble n'est pas reproductible.**
+Partout où un générateur garde « les N premiers », le tri doit être total,
+sinon la sortie change sans raison — et plus aucune vérification par
+empreinte n'est possible.

@@ -74,6 +74,57 @@ MINI_LIFT = 10.0
 MINI_MARGE = 0.25
 PAR_MOT = 5          # questions par mot : assez pour varier, pas pour lasser
 
+# ==========================================================================
+# LE CINQUIEME GARDE-FOU — AJOUTE LE 26 OCTOBRE
+#
+# CE QUE LA MESURE A TROUVE, ET C'ETAIT EN LIGNE
+# ----------------------------------------------
+# Cinq cartes de cette section surlignaient إِنس — « les hommes », le mot
+# que le Coran met en face des djinns — et donnaient pour bonne reponse
+# « djinns ». Sourate 51 verset 56 : « Je n'ai cree les djinns et les hommes
+# que pour qu'ils M'adorent. » Le mot en vert etait « les hommes ».
+#
+# LE MECANISME, MESURE, SANS AUCUN JUGEMENT DE TRADUCTION
+# ------------------------------------------------------
+# إِنس est dans 17 versets. Les candidats francais, comptes sur radical de
+# sept lettres :
+#
+#     djinns   n=15  p=0,882  lift=203,8
+#     hommes   n=10  p=0,588  lift= 34,3
+#     marge retenue : (15-10)/17 = 0,294  >  0,25  ->  ACCEPTE
+#
+# Or « homme ou humain » est dans 17 versets sur 17. Hamidullah alterne
+# « hommes » et « humains », et le radical de sept lettres en fait DEUX mots
+# differents : le bon sens est coupe en deux, chaque moitie perd, et le mot
+# du lemme voisin — « djinns », jamais divise, jamais banal — gagne.
+#
+# Les quatre garde-fous ont tous fonctionne comme ecrit. C'est leur
+# interaction qui retourne le resultat : le vote du bon sens est divise, et
+# MINI_MARGE compare alors le gagnant a une moitie. Si les deux formes
+# etaient comptees ensemble, la marge tomberait a (17-15)/17 = 0,118 et
+# MINI_MARGE aurait REFUSE l'entree — ce qui est le bon resultat : ce lemme
+# n'est pas attestable par cette methode.
+#
+# CE QUE CE GARDE-FOU FAIT, ET CE QU'IL NE FAIT PAS
+# -------------------------------------------------
+# Il REFUSE. Il ne corrige aucun sens, il n'en choisit aucun : choisir la
+# traduction francaise d'un mot du Coran n'est pas le travail d'un outil.
+# La regle du projet dit « en cas de doute sur une source : ne pas la
+# publier ». C'est exactement cela, applique.
+#
+# La regle : un lemme est refuse si un AUTRE lemme du lexique porte le MEME
+# sens, apparait dans au moins 75 % de ses versets, et tient sur plus de
+# versets que lui. Celui qui ne se montre presque jamais seul est celui qui
+# a pris le mot de son voisin.
+#
+# LE SEUIL EST POSE DANS UN ECART MESURE, ET IL FAUT LE DIRE. Les
+# dependances observees le 26 octobre sont 87 %, 82 %, 82 %, 71 %, 64 %. La
+# ligne tombe entre 82 et 71. Elle ecarte إِنس (82 %), أَفْسَدُ (87 %) et
+# فَساد (82 %, « terre » pris a أَرْض dans « corruption sur la terre ») et
+# laisse جِنّ (64 %) et مُؤْمِنَة (71 %). Un seuil pose dans un ecart de
+# onze points sur cinq cas n'est pas une loi : c'est une borne prudente.
+DEPENDANCE_MAXI = 0.75
+
 # Les deux textes ne notent pas l'alef de la meme facon : la morphologie ecrit
 # l'alef wasla et l'alef suscrit, le texte simple les ecrit en toutes lettres.
 TRAD = str.maketrans({'ٱ': 'ا', 'أ': 'ا', 'إ': 'ا', 'آ': 'ا', 'ٰ': 'ا',
@@ -246,6 +297,29 @@ def batir_lexique(ar, fr, morpho):
             'accord': round(p, 3),
             'nomPropre': lem in estPN,
         })
+    # Cinquieme garde-fou : le sens pris au lemme voisin. Voir l'en-tete de
+    # DEPENDANCE_MAXI — on refuse, on ne corrige pas.
+    parSens = collections.defaultdict(list)
+    for x in lexique:
+        parSens[x['sens']].append(x)
+    refuses = set()
+    for x in lexique:
+        va = versetsDuLemme[x['lemme']]
+        for autre in parSens[x['sens']]:
+            if autre['lemme'] == x['lemme']:
+                continue
+            vb = versetsDuLemme[autre['lemme']]
+            if len(vb) <= len(va):
+                continue
+            if len(va & vb) / len(va) >= DEPENDANCE_MAXI:
+                refuses.add(x['lemme'])
+                ecartes['sens pris au lemme voisin'] += 1
+                print('    REFUSE : %s -> « %s ». %s porte le meme sens et '
+                      'figure dans %.0f %% de ses %d versets.'
+                      % (x['lemme'], x['sens'], autre['lemme'],
+                         100 * len(va & vb) / len(va), len(va)))
+                break
+    lexique = [x for x in lexique if x['lemme'] not in refuses]
     lexique.sort(key=lambda x: -x['occurrences'])
     return lexique, ecartes
 
@@ -284,8 +358,28 @@ def main():
         ou = apparitions.get(lem, [])
         # Des versets courts d'abord : on apprend un mot, pas on dechiffre
         # une page. Et jamais deux fois le meme verset.
+        # LE TRI DOIT ETRE TOTAL, ET IL NE L'ETAIT PAS — MESURE DU 26 OCTOBRE
+        #
+        # Trier un ENSEMBLE sur la seule longueur du verset laisse les
+        # ex aequo dans l'ordre du `set`, et cet ordre depend du hachage des
+        # chaines, qui change A CHAQUE PROCESSUS. Trois lancements du
+        # generateur sans rien changer donnaient trois banques differentes :
+        #
+        #     passage 1  0b5038c4…      passage 2  8444b272…
+        #     passage 3  aeec5d91…      et le compte variait : 1 217, 1 216
+        #
+        # Le lexique, lui, etait stable aux trois passages. Le hasard etait
+        # dans le CHOIX DES VERSETS : on en garde cinq par mot, et les cinq
+        # n'etaient pas les memes. Consequence serieuse : le nombre de
+        # questions que l'accueil annonce bougeait a chaque regeneration,
+        # sans qu'aucune donnee ait change.
+        #
+        # Le numero de sourate et de verset rendent le tri total. Ce n'est
+        # pas une regle nouvelle — c'est la meme regle, appliquee de facon
+        # reproductible. `faire-sitemap.py` a ete rendu idempotent le
+        # 8 octobre pour exactement cette raison.
         ou = sorted({(s, v, i, w) for s, v, i, w in ou},
-                    key=lambda t: len(ar[(t[0], t[1])]))
+                    key=lambda t: (len(ar[(t[0], t[1])]), t[0], t[1], t[2]))
         vus = set()
         choisis = []
         for s, v, i, mot in ou:

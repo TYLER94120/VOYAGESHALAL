@@ -707,6 +707,63 @@ def main():
     # Toute carte de vocabulaire passe par l'un des deux compteurs : celui
     # des confrontees, ou celui des non verifiees. Leur somme est donc le
     # nombre de cartes de vocabulaire, sans relire les banques.
+    # ================================================================
+    # AUCUN LEMME NE PUBLIE LE SENS DE SON VOISIN — 26 OCTOBRE
+    # ================================================================
+    #
+    # CE QUI ETAIT EN LIGNE. Cinq cartes surlignaient إِنس — « les hommes »,
+    # le mot que le Coran met EN FACE des djinns — et donnaient « djinns »
+    # pour bonne reponse. Sourate 51 verset 56 : « Je n'ai cree les djinns et
+    # les hommes que pour qu'ils M'adorent », le mot en vert etant « les
+    # hommes ». Et une explication de « sens des sourates » disait de
+    # ٱلْفَسَادَ — la corruption — qu'Hamidullah « le rend par terre ».
+    #
+    # LE MECANISME, MESURE. Hamidullah alterne « hommes » et « humains ». Le
+    # radical de sept lettres en fait deux mots : le bon sens est coupe en
+    # deux (10 versets et 7), chaque moitie perd, et « djinns » — jamais
+    # divise — gagne a 15. Les quatre garde-fous du generateur ont tous
+    # fonctionne ; c'est leur interaction qui retourne le resultat.
+    #
+    # `faire-11-vocabulaire.py` refuse desormais ces entrees. CE CONTROLE-CI
+    # EST LA PARCE QUE LE LEXIQUE EST UN FICHIER : il se modifie a la main,
+    # et le generateur ne tourne pas a chaque publication.
+    #
+    # LA REGLE NE CHOISIT AUCUN SENS, ELLE REFUSE. Un lemme est en faute si
+    # un AUTRE lemme du lexique porte le meme sens, figure dans au moins
+    # 75 % de ses versets, et tient sur plus de versets que lui. Celui qui ne
+    # se montre presque jamais seul est celui qui a pris le mot du voisin.
+    # Mesure du 26 octobre, apres reparation : 140 entrees, zero en faute.
+    voisins_fautifs = 0
+    if SENS_DU_LEMME and LEMMES_DU_VERSET:
+        versets_du_lemme = {}
+        for k, lems in LEMMES_DU_VERSET.items():
+            for l in lems:
+                versets_du_lemme.setdefault(l, set()).add(k)
+        par_sens = {}
+        for l, s in SENS_DU_LEMME.items():
+            par_sens.setdefault(s, []).append(l)
+        for l, s in sorted(SENS_DU_LEMME.items()):
+            va = versets_du_lemme.get(l, set())
+            if not va:
+                continue
+            for autre in par_sens[s]:
+                if autre == l:
+                    continue
+                vb = versets_du_lemme.get(autre, set())
+                if len(vb) <= len(va):
+                    continue
+                part = len(va & vb) / len(va)
+                if part >= 0.75:
+                    fautes.append(
+                        'lexique : %s publie « %s », mais %s porte le meme '
+                        'sens et figure dans %.0f %% de ses %d versets — '
+                        'c\'est le mot du voisin, pas le sien. Le projet ne '
+                        'publie pas une source douteuse ; on retire l\'entree, '
+                        'on ne corrige pas la traduction.'
+                        % (l, s, autre, 100 * part, len(va)))
+                    voisins_fautifs += 1
+                    break
+
     cartes_vocab = verifiesVocab + nonVerifies
     if cartes_vocab and SENS_DU_LEMME is None:
         fautes.append(
@@ -726,6 +783,12 @@ def main():
     print('  %d montrent un glyphe et ont ete confrontees a Unicode.' % calligraphies)
     print('  %d designent un mot du verset, %d confrontees au corpus '
           'morphologique.' % (surlignes, verifiesVocab))
+    # Le chiffre, pas un verdict : la premiere version de cette ligne disait
+    # « aucune ne publie le sens d'un lemme voisin » — elle l'aurait dit
+    # aussi avec trois en faute.
+    print('  %d entrees du lexique relues, %d publient le sens d\'un lemme '
+          'voisin.' % (len(SENS_DU_LEMME) if SENS_DU_LEMME else 0,
+                       voisins_fautifs))
     print('  %d questions de pratique, confrontees mot-cle par mot-cle.' % pratiques)
     print('  %d questions de fait, recalculees depuis le corpus '
           '(%d faits).' % (faits_vus, len(FICHE)))
