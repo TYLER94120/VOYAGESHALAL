@@ -4010,3 +4010,19 @@ fait / mesuré / pas fait et pourquoi
 **Ouvert.** Le blocage est toujours le même : sans export Search Console avec les URL, je ne peux pas choisir la prochaine traduction ni mesurer les titres déjà modifiés (`/mosquee-proche` le 20 octobre, `ou-prier-aeroport-orly` toujours inchangé).
 
 **Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
+
+## 26 octobre — nuit 13 de la routine autonome (jour pair : approfondissement)
+
+fait / mesuré / pas fait et pourquoi
+
+**Mesuré.** Aucune donnée nouvelle : `docs/search-console/` inchangé (relevé du 17 octobre), aucun export original déposé. Branche synchronisée avec `origin`.
+
+**Fait.** Rien modifié dans le code.
+
+**Pas fait et pourquoi.** Aucun écart prouvé : sans les positions et clics récents, je ne peux pas dire qu'une page de la liste en a besoin plus qu'une autre. Les priorités 1 (Orly, CDG) restent bloquées par les horaires non sourcés ; la priorité 2 a déjà reçu son titre le 20 octobre, sans résultat mesurable.
+
+**Vérifié servi.** Rien publié.
+
+**Ouvert.** Le même que la nuit précédente : un export Search Console avec les URL et les clics par période.
+
+**Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
