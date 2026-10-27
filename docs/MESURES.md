@@ -4026,3 +4026,19 @@ fait / mesuré / pas fait et pourquoi
 **Ouvert.** Le même que la nuit précédente : un export Search Console avec les URL et les clics par période.
 
 **Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
+
+## 27 octobre — nuit 14 de la routine autonome (jour impair : création)
+
+fait / mesuré / pas fait et pourquoi
+
+**Mesuré.** Aucune donnée nouvelle : pas d'export Search Console dans `docs/` (seul le relevé transcrit du 17 octobre). Branche synchronisée avec `origin`.
+
+**Fait.** Rien publié.
+
+**Pas fait et pourquoi.** Pas de création ni de traduction : aucun des 31 articles français sans jumeau n'a de requête gagnée identifiée dans le relevé. La règle interdit de publier sans cette réponse.
+
+**Vérifié servi.** Rien modifié.
+
+**Ouvert.** Le même blocage depuis plusieurs nuits : un export Search Console avec les URL et les clics par période permettrait de choisir la traduction et de mesurer les titres déjà modifiés (`/mosquee-proche` le 20 octobre).
+
+**Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
