@@ -733,6 +733,52 @@ def main():
     # 75 % de ses versets, et tient sur plus de versets que lui. Celui qui ne
     # se montre presque jamais seul est celui qui a pris le mot du voisin.
     # Mesure du 26 octobre, apres reparation : 140 entrees, zero en faute.
+    # ================================================================
+    # LE SENS PUBLIE EST UN MOT QUE LE TRADUCTEUR ECRIT POUR CE MOT-LA
+    # AJOUTE LE 27 OCTOBRE
+    # ================================================================
+    #
+    # CE QUE LA MESURE A TROUVE. L'attestation d'un mot se mesurait bien sur
+    # SES versets, mais la forme AFFICHEE etait prise dans un comptage fait
+    # sur le Coran entier. Le lexique publiait donc des formes qu'Hamidullah
+    # n'ecrit jamais pour ce mot :
+    #
+    #   شَفِيع  « intercession »  -> intercesseurs 6, intercesseur 5, et
+    #                               « intercession » ZERO fois
+    #   ذُرِّيَّة « descendre »   -> descendance 17, descendants 11, et
+    #                               « descendre » ZERO fois
+    #   صاحِب   « compagnie »     -> compagnon 7, et « compagnie » ZERO fois
+    #   مُحْسِن  « bienfaits »    -> bienfaisants 32, et « bienfaits » ZERO
+    #   رَحْمَة  « misericordieux » -> misericorde 108 contre 9
+    #
+    # « descendre » et « descendance » partagent le radical de sept lettres,
+    # « intercession » et « intercesseur » aussi : le radical sert a COMPTER,
+    # il ne doit pas servir a CHOISIR. 20 entrees sur 140 etaient dans ce cas.
+    #
+    # CE CONTROLE NE JUGE AUCUNE TRADUCTION. Il verifie une chose factuelle :
+    # le mot francais publie se trouve-t-il dans les versets de ce lemme ?
+    # Un sens absent a 100 % de ses propres versets n'est pas atteste, quelle
+    # que soit sa justesse par ailleurs.
+    sens_absents = 0
+    if SENS_DU_LEMME and LEMMES_DU_VERSET:
+        v_du_lemme = {}
+        for k, lems in LEMMES_DU_VERSET.items():
+            for l in lems:
+                v_du_lemme.setdefault(l, set()).add(k)
+        for l, s in sorted(SENS_DU_LEMME.items()):
+            vs = v_du_lemme.get(l, set())
+            if not vs:
+                continue
+            plat = nu(s)
+            vus = sum(1 for k in vs if plat in nu(francais.get(k, '')))
+            if vus == 0:
+                sens_absents += 1
+                fautes.append(
+                    'lexique : %s publie « %s », mot qui n\'apparait dans '
+                    'AUCUN de ses %d versets chez Hamidullah. Le radical de '
+                    'sept lettres sert a compter, pas a choisir la forme.'
+                    % (l, s, len(vs)))
+
     voisins_fautifs = 0
     if SENS_DU_LEMME and LEMMES_DU_VERSET:
         versets_du_lemme = {}
@@ -787,8 +833,9 @@ def main():
     # « aucune ne publie le sens d'un lemme voisin » — elle l'aurait dit
     # aussi avec trois en faute.
     print('  %d entrees du lexique relues, %d publient le sens d\'un lemme '
-          'voisin.' % (len(SENS_DU_LEMME) if SENS_DU_LEMME else 0,
-                       voisins_fautifs))
+          'voisin, %d un mot absent de leurs versets.'
+          % (len(SENS_DU_LEMME) if SENS_DU_LEMME else 0,
+             voisins_fautifs, sens_absents))
     print('  %d questions de pratique, confrontees mot-cle par mot-cle.' % pratiques)
     print('  %d questions de fait, recalculees depuis le corpus '
           '(%d faits).' % (faits_vus, len(FICHE)))

@@ -273,7 +273,15 @@ def batir_lexique(ar, fr, morpho):
         c = collections.Counter()
         for k in vs:
             c.update(motsDuVerset.get(k, ()))
-        top = c.most_common(2)
+        # A EGALITE, `most_common` suit l'ordre d'insertion — donc l'ordre
+        # d'un `set`, donc le hachage du processus. Mesure du 27 octobre :
+        # quatre passages donnaient le MEME lexique et la MEME banque, mais
+        # des motifs de rejet qui bougeaient (106, 108, 107, 109
+        # « co-occurrence » contre 66, 64, 65, 63 « trop banal »). Aucun
+        # lemme ne passait d'accepte a refuse — seule la RAISON changeait.
+        # Un diagnostic qui bouge sans raison fait douter du reste : le tri
+        # departage maintenant par le mot lui-meme.
+        top = sorted(c.items(), key=lambda kv: (-kv[1], kv[0]))[:2]
         if not top:
             continue
         radical, n = top[0]
@@ -289,9 +297,48 @@ def batir_lexique(ar, fr, morpho):
         if not entier[radical]:
             ecartes['mot francais introuvable en entier'] += 1; continue
 
+        # LA FORME AFFICHEE SE PREND DANS LES VERSETS DU MOT, PAS AILLEURS
+        # MESURE DU 27 OCTOBRE
+        #
+        # L'attestation se mesure sur les versets du lemme — c'est tout
+        # l'interet de la methode. Mais la FORME ENTIERE affichee etait prise
+        # dans `entier`, un comptage fait sur LE CORAN TOUT ENTIER. Le mot
+        # publie pouvait donc etre une forme qu'Hamidullah n'ecrit JAMAIS
+        # pour ce mot-la.
+        #
+        # 21 entrees sur 140 etaient dans ce cas, et cinq publiaient un mot
+        # absent a 100 % de leurs propres versets :
+        #
+        #   مُحْسِن    « bienfaits »    -> localement : bienfaisants 32, zero « bienfaits »
+        #   ذُرِّيَّة  « descendre »    -> descendance 17, descendants 11, zero « descendre »
+        #   شَفِيع     « intercession » -> intercesseurs 6, intercesseur 5, zero « intercession »
+        #   صاحِب      « compagnie »    -> compagnon 7, compagnons 2, zero « compagnie »
+        #   رَحْمَة    « misericordieux »-> misericorde 108 contre misericordieux 9
+        #
+        # « descendre » et « descendance » partagent le radical de sept
+        # lettres ; « intercession » et « intercesseur » aussi. Le radical
+        # sert a COMPTER, il ne doit pas servir a CHOISIR.
+        #
+        # Ce n'est pas choisir une traduction : c'est restreindre le choix
+        # aux mots que le traducteur a ecrits POUR CE MOT. La capitalisation
+        # reste decidee par `forme_affichee`, sur tout le corpus — la lecon
+        # du 3 octobre sur « moise » n'est pas touchee.
+        #
+        # Le tri departage a egalite par ordre alphabetique : sans cela
+        # l'ordre d'un `set` reviendrait, et avec lui la banque qui change a
+        # chaque passage (mesure du 26 octobre).
+        local = collections.Counter()
+        for k in sorted(vs):
+            for mm in re.finditer(r"[A-Za-zÀ-ÿ']{4,}", fr[k]):
+                w = mm.group(0)
+                if nu_fr(w)[:7] == radical:
+                    local[w.lower()] += 1
+        choix = max(sorted(local.items()), key=lambda kv: kv[1])[0] if local \
+            else entier[radical].most_common(1)[0][0]
+
         lexique.append({
             'lemme': lem,
-            'sens': forme_affichee(entier[radical].most_common(1)[0][0]),
+            'sens': forme_affichee(choix),
             'occurrences': occurrences[lem],
             'versets': len(vs),
             'accord': round(p, 3),

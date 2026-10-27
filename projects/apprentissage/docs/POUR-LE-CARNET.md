@@ -368,3 +368,90 @@ lancements, la même banque à l'octet.
 Partout où un générateur garde « les N premiers », le tri doit être total,
 sinon la sortie change sans raison — et plus aucune vérification par
 empreinte n'est possible.
+
+## 🔴 LE 27 OCTOBRE — LA MÊME CAUSE, SOUS UNE AUTRE FORME
+
+La leçon de la veille retournée contre les 140 entrées restantes.
+**L'inversion :** pour chaque couple publié (mot arabe → sens français),
+demander l'inverse — dans tout le Coran, quel mot arabe ce sens français
+désigne-t-il le mieux ? **30 entrées sur 140 sont ressorties.**
+
+Mais une alerte n'est pas une faute, et la plupart ne se tranchent pas sans
+un avis de traducteur : « رَجُل = homme » sonne parce que إِنسان est plus
+fréquent, et les deux veulent bien dire *homme*. **Ce crible sert à
+regarder, pas à juger.** Dedans, une seule faute se prouve mécaniquement :
+
+**L'attestation se mesurait sur les versets du mot ; la FORME AFFICHÉE était
+prise dans un comptage fait sur le Coran entier.** Le mot publié pouvait
+donc être une forme que le traducteur n'écrit jamais pour ce mot-là.
+
+| mot | publiait | dans ses propres versets |
+|---|---|---|
+| شَفِيع | « intercession » | intercesseurs 6, intercesseur 5 — **« intercession » zéro** |
+| ذُرِّيَّة | « descendre » | descendance 17, descendants 11 — **« descendre » zéro** |
+| صاحِب | « compagnie » | compagnon 7 — **« compagnie » zéro** |
+| مُحْسِن | « bienfaits » | bienfaisants 32 — **« bienfaits » zéro** |
+| رَحْمَة | « miséricordieux » | miséricorde 108 contre miséricordieux 9 |
+
+**La cause est celle du 26 octobre sous une autre forme :** « descendre » et
+« descendance » partagent le radical de sept lettres, « intercession » et
+« intercesseur » aussi. **Le radical sert à compter les versets ; il ne doit
+pas servir à choisir le mot qu'on affiche.**
+
+**20 sens corrigés sur 140**, aucune entrée ajoutée ni retirée, 57
+explications de cartes mises à jour. Aucune traduction choisie : la forme se
+prend désormais parmi les mots que le traducteur a écrits **pour ce mot-là**
+— ce que la méthode annonçait depuis août.
+
+**La règle générale :**
+
+> Quand une mesure est faite sur un sous-ensemble, **tout ce qu'on en
+> affiche doit venir du même sous-ensemble.** Mélanger une statistique
+> locale et un libellé global produit une affirmation que rien n'atteste.
+
+### Les 30 alertes, pour qui veut en regarder une
+
+J est l'accord (intersection sur union) entre les versets du mot et ceux où
+le sens apparaît. Une entrée sonne quand un autre mot fait mieux. **Rien
+ici n'est déclaré faux** — c'est une liste à regarder, et seules les cinq du
+tableau ci-dessus ont été corrigées.
+
+| mot | sens publié | mieux porté par | J(l'autre) | J(publié) | versets |
+|---|---|---|---|---|---|
+| رِسالَة | messages | رَسُول | 0,78 | 0,03 | 10 |
+| بَلاغ | message | رَسُول | 0,78 | 0,04 | 15 |
+| مُؤْمِنَة | croyantes | مُؤْمِن | 0,63 | 0,10 | 24 |
+| ذُرِّيَّة | descendance | أَنزَلَ | 0,57 | 0,10 | 30 |
+| عَدْن | jardins | جَنَّة | 0,51 | 0,14 | 11 |
+| مُنذِر | avertisseurs | نَذِير | 0,48 | 0,12 | 15 |
+| رَجُل | homme | إِنسان | 0,46 | 0,15 | 25 |
+| شَكُور | reconnaissant | شَكَرَ | 0,43 | 0,12 | 10 |
+| شَرِيك | associés | أَشْرَكَ | 0,59 | 0,28 | 34 |
+| رَحِمَ | miséricorde | رَحِيم | 0,39 | 0,09 | 28 |
+| مِلَّة | religion | دِين | 0,47 | 0,20 | 15 |
+| شاكِر | reconnaissants | شَكَرَ | 0,43 | 0,17 | 14 |
+| لَقُ | rencontrent | لِقاء | 0,44 | 0,19 | 14 |
+| أَنْعَمَ | bienfait | نِعْمَة | 0,32 | 0,09 | 16 |
+| أَحْسَن | meilleur | خَيْر | 0,43 | 0,22 | 36 |
+| هَواء | passion | أَهْواء | 0,53 | 0,33 | 11 |
+| أَنذَرَ | avertis | نَذِير | 0,48 | 0,30 | 40 |
+| أَصْحاب | gens | ناس | 0,30 | 0,12 | 70 |
+| غَفَرَ | pardonne | غَفُور | 0,52 | 0,35 | 62 |
+| دار | demeure | خالِد | 0,38 | 0,21 | 47 |
+| فاكِهَة | fruits | ثَمَرَة | 0,32 | 0,24 | 11 |
+| شَفِيع | intercesseurs | شَفاعَة | 0,48 | 0,40 | 10 |
+| مُحْسِن | bienfaisants | نِعْمَة | 0,32 | 0,24 | 38 |
+| ساجِد | prosternés | سَجَدَ | 0,48 | 0,41 | 23 |
+| مَغْفِرَة | pardon | اسْتَغْفَرَ | 0,47 | 0,39 | 28 |
+| أَجْمَع | tous | جَمِيع | 0,18 | 0,12 | 26 |
+| أَقْرَب | plus | أَشَدّ | 0,10 | 0,05 | 18 |
+| رَحْمَة | miséricorde | رَحِيم | 0,39 | 0,35 | 112 |
+| كُلَّما | fois | مَرَّة | 0,21 | 0,19 | 15 |
+| نَهَى | interdit | حَرَّمَ | 0,38 | 0,38 | 31 |
+
+Les plus nettes sont les trois premières : رِسالَة et بَلاغ sont des
+*messages*, et c'est رَسُول qui est le *messager*. Les deux publient
+désormais « messages » et « message » — mais l'inversion continue de sonner,
+parce que « message » apparaît surtout là où رَسُول apparaît. **C'est la
+limite de la méthode, et elle doit rester écrite :** un lexique mesuré sur
+une traduction ne distingue pas deux mots qui voyagent toujours ensemble.
