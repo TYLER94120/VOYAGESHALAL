@@ -4042,3 +4042,19 @@ fait / mesuré / pas fait et pourquoi
 **Ouvert.** Le même blocage depuis plusieurs nuits : un export Search Console avec les URL et les clics par période permettrait de choisir la traduction et de mesurer les titres déjà modifiés (`/mosquee-proche` le 20 octobre).
 
 **Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
+
+## 28 octobre — nuit 15 de la routine autonome (jour pair : approfondissement)
+
+fait / mesuré / pas fait et pourquoi
+
+**Mesuré.** Aucune donnée nouvelle : pas d'export Search Console dans `docs/`, relevé transcrit du 17 octobre inchangé. Branche synchronisée avec `origin`.
+
+**Fait.** Rien modifié dans le code.
+
+**Pas fait et pourquoi.** Aucun écart prouvé à présenter : sans positions ni clics récents, je ne peux pas dire qu'une page de la liste en a plus besoin qu'une autre. Priorités 1 et 2 : bloquées ou déjà traitées (voir nuits précédentes).
+
+**Vérifié servi.** Rien publié.
+
+**Ouvert.** Un export Search Console avec les URL et les clics par période.
+
+**Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
