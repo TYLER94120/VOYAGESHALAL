@@ -386,7 +386,10 @@ def main():
     sensConnus = [x['sens'] for x in lexique]
 
     # Ou chaque mot apparait, et a quelle place dans son verset.
+    # Et AUSSI : quels lemmes porte chaque place. Sans cela, un leurre de la
+    # forme B peut etre une autre forme du mot demande — voir plus bas.
     apparitions = collections.defaultdict(list)
+    lemmesALaPlace = collections.defaultdict(lambda: collections.defaultdict(set))
     for (s, v), parMot in morpho.items():
         if (s, v) not in ar:
             continue
@@ -394,6 +397,10 @@ def main():
         entiers = {m: ''.join(g['forme'] for g in segs) for m, segs in parMot.items()}
         place = situer(motsTexte, entiers)
         for m, segs in parMot.items():
+            if m in place:
+                for g in segs:
+                    if g['lem']:
+                        lemmesALaPlace[(s, v)][place[m]].add(g['lem'])
             for g in segs:
                 if g['lem'] in parLemme and m in place:
                     apparitions[g['lem']].append((s, v, place[m], motsTexte[place[m]]))
@@ -474,11 +481,33 @@ def main():
             # parfois que par une voyelle : on ecarte tout ce qui se confond
             # avec la bonne reponse ou avec un autre leurre, sinon la question
             # a deux reponses justes.
+            # LE GARDE-FOU DE LA FORME DE SURFACE NE SUFFIT PAS.
+            # MESURE DU 28 OCTOBRE
+            #
+            # On ecartait les mots dont la forme NORMALISEE egale la bonne
+            # reponse. Mais un verset reprend souvent le MEME MOT sous une
+            # autre flexion, et la flexion change la forme :
+            #
+            #   54:46  « quel mot signifie heure ? »  bonne السَّاعَةُ
+            #          leurre وَالسَّاعَةُ — le meme mot, avec le « et »
+            #   21:92  « communaute »  bonne أُمَّتُكُمْ  leurre أُمَّةً
+            #   61:8   « lumiere »     bonne نُورَ        leurre نُورِهِ
+            #   4:49   « purifie »     bonne يُزَكُّونَ   leurre يُزَكِّي
+            #
+            # Quatre cartes sur 544 : la personne repondait JUSTE et le jeu
+            # lui disait non. Le controle appelle cela « le defaut le plus
+            # injuste possible », et il avait raison.
+            #
+            # La bonne unite n'est pas la forme, c'est LE LEMME : toute forme
+            # du mot demande signifie ce qu'on demande. On ecarte donc toute
+            # place du verset qui porte ce lemme.
             vusMots = {F.normaliser(mot)}
             voisins = []
             for j, w in enumerate(ar[(s, v)].split()):
                 n = F.normaliser(w)
                 if j == i or len(nu_ar(w)) < 3 or n in vusMots:
+                    continue
+                if lem in lemmesALaPlace[(s, v)].get(j, ()):
                     continue
                 vusMots.add(n)
                 voisins.append(w)

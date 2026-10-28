@@ -238,6 +238,56 @@ def _lexique_et_morphologie():
 SENS_DU_LEMME, LEMMES_DU_VERSET = _lexique_et_morphologie()
 
 
+def _lemmes_par_forme():
+    """Pour chaque verset : la forme ENTIERE d'un mot -> ses lemmes.
+
+    Le corpus decoupe un mot en segments (article, radical, suffixe) et les
+    numerote `sourate:verset:mot:segment`. On recolle les segments d'un meme
+    mot : c'est le mot tel qu'il s'affiche sur une carte, donc la seule unite
+    comparable a une reponse.
+    """
+    morpho = RACINE / 'outils' / 'coran' / 'morphologie.txt'
+    if not morpho.exists():
+        return None
+    formes = {}
+    lems = {}
+    for ligne in morpho.read_text(encoding='utf-8').splitlines():
+        if not ligne.strip():
+            continue
+        ref, forme, pos, tags = ligne.split('\t')
+        p = ref.split(':')
+        cle = (int(p[0]), int(p[1]), p[2] if len(p) > 2 else '0')
+        formes[cle] = formes.get(cle, '') + forme
+        # SEULS LES NOMS ET LES VERBES, comme le generateur. Un mot arabe
+        # colle son article, sa conjonction et son pronom au radical, et
+        # chacun porte son propre lemme. Les compter tous ferait partager un
+        # lemme a la moitie du verset : une premiere version de ce controle
+        # annoncait ainsi 55 fautes la ou il y en avait quatre.
+        if pos not in ('N', 'V'):
+            continue
+        for t in tags.split('|'):
+            if t.startswith('LEM:'):
+                lems.setdefault(cle, set()).add(t[4:])
+    out = {}
+    for cle, f in formes.items():
+        out.setdefault(cle[:2], {}).setdefault(_nu_ar(f), set()).update(
+            lems.get(cle, ()))
+    return out
+
+
+def _nu_ar(s):
+    """Le squelette d'un mot arabe : sans voyelles, alifs ramenes a un seul."""
+    s = re.sub(r'[ً-ٰۖ-ۭـ]', '', s or '')
+    for a, b in (('ٱ', 'ا'), ('أ', 'ا'),
+                 ('إ', 'ا'), ('آ', 'ا'),
+                 ('ى', 'ي')):
+        s = s.replace(a, b)
+    return s
+
+
+LEMMES_PAR_FORME = _lemmes_par_forme()
+
+
 def nu(s):
     """Pour comparer deux textes : accents, ponctuation et espaces ignores.
 
@@ -759,6 +809,64 @@ def main():
     # le mot francais publie se trouve-t-il dans les versets de ce lemme ?
     # Un sens absent a 100 % de ses propres versets n'est pas atteste, quelle
     # que soit sa justesse par ailleurs.
+    # ================================================================
+    # DEUX REPONSES D'UNE MEME CARTE NE SONT PAS LE MEME MOT
+    # AJOUTE LE 28 OCTOBRE
+    # ================================================================
+    #
+    # La forme B demande « Dans ce verset, quel mot signifie X ? » et pose
+    # comme leurres les AUTRES MOTS DU MEME VERSET. Le generateur ecartait
+    # ceux dont la forme normalisee egale la bonne reponse — mais un verset
+    # reprend souvent le MEME MOT sous une autre flexion, et la flexion
+    # change la forme :
+    #
+    #   54:46  « heure »      bonne السَّاعَةُ   leurre وَالسَّاعَةُ
+    #   21:92  « communaute » bonne أُمَّتُكُمْ  leurre أُمَّةً
+    #   61:8   « lumiere »    bonne نُورَ        leurre نُورِهِ
+    #   4:49   « purifie »    bonne يُزَكُّونَ   leurre يُزَكِّي
+    #
+    # Quatre cartes sur 544 : la personne repondait JUSTE et le jeu lui
+    # disait non. Plus haut dans ce fichier, un controle appelle cela « le
+    # defaut le plus injuste possible » — il le cherchait dans les reponses
+    # longues, pas dans les mots arabes.
+    #
+    # LA BONNE UNITE N'EST PAS LA FORME, C'EST LE LEMME. Toute forme du mot
+    # demande signifie ce qu'on demande. On compare donc les LEMMES de la
+    # bonne reponse et de chaque leurre, tels que le corpus les donne pour
+    # CE verset — pas une sous-chaine : « جنوده » contient « جن », et une
+    # premiere version de cette mesure avait ainsi annonce neuf fautes au
+    # lieu de quatre.
+    leurres_justes = 0
+    cartes_b = 0
+    if LEMMES_PAR_FORME:
+        # On relit les banques depuis le disque : `par_section` n'est bati
+        # que plus bas, et la relecture coute une fraction de seconde.
+        for chemin in fichiers:
+            sec = chemin.stem
+            for q in json.loads(chemin.read_text(encoding='utf-8')):
+                if not str(q.get('question', '')).startswith(
+                        'Dans ce verset, quel mot signifie'):
+                    continue
+                m = SOURCE_CORAN.search(q['source'])
+                if not m:
+                    continue
+                cle = (int(m.group(1)), int(m.group(2)))
+                index = LEMMES_PAR_FORME.get(cle, {})
+                cartes_b += 1
+                bonne = index.get(_nu_ar(q['reponses'][q['bonne']]), set())
+                if not bonne:
+                    continue
+                for i, r in enumerate(q['reponses']):
+                    if i == q['bonne']:
+                        continue
+                    partages = bonne & index.get(_nu_ar(r), set())
+                    if partages:
+                        leurres_justes += 1
+                        fautes.append(
+                            '%s/%s : « %s » est une autre forme du mot demande '
+                            '(lemme %s) — la reponse est juste et le jeu dit non'
+                            % (sec, q['id'], r, ', '.join(sorted(partages))))
+
     sens_absents = 0
     if SENS_DU_LEMME and LEMMES_DU_VERSET:
         v_du_lemme = {}
@@ -836,6 +944,8 @@ def main():
           'voisin, %d un mot absent de leurs versets.'
           % (len(SENS_DU_LEMME) if SENS_DU_LEMME else 0,
              voisins_fautifs, sens_absents))
+    print('  %d cartes « quel mot signifie » relues, %d leurre(s) qui sont '
+          'une autre forme du mot demande.' % (cartes_b, leurres_justes))
     print('  %d questions de pratique, confrontees mot-cle par mot-cle.' % pratiques)
     print('  %d questions de fait, recalculees depuis le corpus '
           '(%d faits).' % (faits_vus, len(FICHE)))

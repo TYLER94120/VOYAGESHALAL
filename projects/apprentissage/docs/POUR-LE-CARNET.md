@@ -455,3 +455,57 @@ désormais « messages » et « message » — mais l'inversion continue de sonn
 parce que « message » apparaît surtout là où رَسُول apparaît. **C'est la
 limite de la méthode, et elle doit rester écrite :** un lexique mesuré sur
 une traduction ne distingue pas deux mots qui voyagent toujours ensemble.
+
+## 🔴 LE 28 OCTOBRE — DONNER TORT À UNE BONNE RÉPONSE
+
+Le fichier de contrôle portait depuis des semaines cette phrase : « **aucune
+mauvaise réponse ne doit être juste aussi.** C'est le défaut le plus injuste
+possible : la personne répond vrai et le jeu lui dit qu'elle s'est
+trompée. » Elle ne cherchait ce défaut que dans les réponses **longues** —
+des morceaux de traduction. Jamais du côté des mots arabes.
+
+544 cartes demandent « dans ce verset, quel mot signifie X ? », et les
+mauvaises réponses sont les autres mots du même verset — c'est voulu, il
+faut lire le verset. Mais **un verset reprend souvent le même mot sous une
+autre flexion, et la flexion change la forme écrite** :
+
+| verset | on demande | bonne réponse | leurre |
+|---|---|---|---|
+| 54:46 | heure | السَّاعَةُ | وَالسَّاعَةُ — le même mot avec le « et » |
+| 21:92 | communauté | أُمَّتُكُمْ | أُمَّةً |
+| 61:8 | lumière | نُورَ | نُورِهِ |
+| 4:49 | purifie | يُزَكُّونَ | يُزَكِّي |
+
+Un garde-fou existait et son commentaire était juste — « deux mots ne
+diffèrent parfois que par une voyelle : on écarte tout ce qui se confond
+avec la bonne réponse ». Il comparait les **formes normalisées**. Or
+السَّاعَةُ et وَالسَّاعَةُ ne se confondent pas : l'une a une lettre de plus.
+
+**La bonne unité n'était pas la forme, c'était le lemme.** Toute forme du
+mot demandé signifie ce qu'on demande. Après réparation : 544 cartes, zéro
+leurre juste, et **aucune carte perdue** — seul change le mot tiré comme
+leurre.
+
+### Deux mesures fausses avant la bonne, et c'est la leçon
+
+**Ma sonde a d'abord annoncé neuf fautes.** Elle comparait les mots par
+sous-chaîne, et en arabe « جنوده » — *ses troupes* — contient « جن », le mot
+pour *djinns*. Cinq fausses alertes. En comparant les formes entières à
+l'identique : quatre.
+
+**Puis le contrôle a annoncé 55 fautes.** Il comparait les lemmes de la
+bonne réponse à ceux de chaque leurre — mais un mot arabe colle son article,
+sa conjonction et son pronom au radical, et **chaque segment porte son
+propre lemme**. Deux mots ayant tous deux un « et » devant partagent donc un
+lemme. Restreint aux noms et aux verbes, comme le générateur : 55 → 4.
+
+> **À emporter : sur une langue agglutinante, ni la sous-chaîne ni « tous les
+> lemmes du mot » ne sont une unité de comparaison.** La première sur-détecte
+> par hasard graphique, la seconde par les particules collées. L'unité est le
+> lemme **du radical**.
+
+Et un contrôle qui aurait crié 55 fois pour 4 fautes réelles aurait été
+désactivé avant la fin du mois — c'est le même mécanisme que le piège de
+« prophète », de « recueil » et de « récompense » : **un contrôle qui crie
+finit par ne plus être lu.** Les deux chiffres faux sont écrits dans le
+contrôle, avec leur raison.
