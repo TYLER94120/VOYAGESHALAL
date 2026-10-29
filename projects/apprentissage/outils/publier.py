@@ -42,7 +42,30 @@ import sys
 import alleger
 
 SOURCE = pathlib.Path(__file__).resolve().parent.parent
-CLONE = pathlib.Path('/home/user/islampasapas')
+
+# Le clone du depot SERVI. Un chemin peut etre passe en argument pour essayer
+# l'outil sans toucher au depot servi — c'est comme cela que la verification
+# ajoutee le 29 octobre a ete mise a l'epreuve.
+CLONE = pathlib.Path(sys.argv[1] if len(sys.argv) > 1
+                     else '/home/user/islampasapas')
+
+# ==========================================================================
+# LES CONTROLES PASSENT AVANT, SINON ON NE PUBLIE PAS — 29 OCTOBRE
+#
+# Cet outil garantissait une chose : que les deux copies se recoupent. Il ne
+# garantissait pas que ce qu'on recopie soit JUSTE. On pouvait donc publier
+# un arbre rouge, et c'est arrive de fait : les trois dernieres rondes ont
+# retire du site des affirmations fausses sur le sens de mots du Coran, qui
+# etaient en ligne depuis des semaines.
+#
+# Les six controles ci-dessous n'ont besoin de rien d'autre que du disque.
+# Les trois autres — sections, redirections, sitemap — interrogent le serveur
+# local, et on ne veut pas qu'une publication depende d'un serveur allume :
+# ils sont NOMMES comme non lances, pas tus.
+CONTROLES = ('controler-questions', 'controler-lecons', 'controler-liens',
+             'controler-index', 'controler-allege', 'peser')
+CONTROLES_NON_LANCES = ('controler-sections', 'controler-redirections',
+                        'controler-sitemap')
 
 # Ce qui ne traverse pas.
 EXCLUS = {'outils', '.git', '.gitignore', '__pycache__'}
@@ -93,6 +116,20 @@ def main():
         for l in sale.split('\n')[:8]:
             print('  ' + l)
         sys.exit('Commiter d\'abord, publier ensuite — sinon les deux copies divergent.')
+
+    # ON NE PUBLIE PAS UN ARBRE ROUGE. Avant de vider le clone, avant tout.
+    ici = pathlib.Path(__file__).resolve().parent
+    for nom in CONTROLES:
+        r = subprocess.run([sys.executable, '%s.py' % nom],
+                           capture_output=True, text=True, cwd=str(ici))
+        if r.returncode != 0:
+            print('ARRET : %s refuse le lot (code %d).' % (nom, r.returncode))
+            for l in (r.stdout + r.stderr).strip().split('\n')[-12:]:
+                print('  ' + l)
+            sys.exit('On ne publie pas un arbre rouge. Reparer, puis publier.')
+    print('  %d controles passes : %s.' % (len(CONTROLES), ', '.join(CONTROLES)))
+    print('  NON LANCES, ils demandent le serveur local : %s.'
+          % ', '.join(CONTROLES_NON_LANCES))
 
     fichiers = a_publier()
     if not fichiers:

@@ -102,21 +102,28 @@ Rare, mais deja arrive : `islampasapas.fr` doit resoudre vers Vercel
 
 ---
 
-## L'etat du site — au 20 octobre 2026
+## L'etat du site — au 29 octobre 2026
 
 > Ce qui suit remplace un paragraphe du 21 aout qui disait « une section
 > remplie sur douze, 604 questions ». Il avait deux mois et il etait faux.
+> Les chiffres du 20 octobre ont ete recomptes le 29.
 
 Compte dans les banques ce soir :
 
 | | |
 |---|---|
 | sections remplies | **11 sur 12** (`La vie du Prophete` est encore vide) |
-| questions sourcees | **2 701** |
+| questions sourcees | **2 658** |
 | lecons de sourate | **38** — Al-Fatiha, et le juz Amma complet (78 a 114) |
 | adresses au sitemap | 53 |
 
-**L'objectif des mille deux cents questions est depasse** : il y en a 2 701.
+**L'objectif des mille deux cents questions est depasse** : il y en a 2 658.
+
+> **Pourquoi le nombre a BAISSE de 2 701 a 2 658.** Trois mots du lexique ont
+> ete retires le 26 octobre, et leurs cartes avec : ils publiaient le sens de
+> leur voisin. Cinq cartes disaient que إِنس — *les hommes*, le mot que le
+> Coran met en face des djinns — signifie « djinns ». Un nombre qui baisse
+> parce qu'on a retire du faux est une bonne nouvelle, pas une perte.
 
 ### Mais le plancher par section ne l'est pas
 
@@ -243,25 +250,64 @@ zero motif**.
 
 ---
 
-## Ce qui attend d'etre publie — au 20 octobre 2026
+## Ce qui attend d'etre publie — au 29 octobre 2026
 
 **Derniere publication : le 29 septembre** (repere de version `386566f`,
-commit `59e67ae`). Vingt rondes depuis, aucune publiee : la consigne est que
+commit `59e67ae`). Trente rondes depuis, aucune publiee : la consigne est que
 tu promeus toi-meme.
+
+> ⚠️ **CE QUI ATTEND N'EST PLUS SEULEMENT DU MIEUX.** Les rondes du 23, du
+> 26, du 27 et du 28 octobre ont retire du site des affirmations fausses :
+> une page qui annoncait des hadiths sources alors qu'il n'y en a aucun,
+> cinq cartes qui donnaient « djinns » pour le sens de *les hommes*, une
+> explication qui donnait « terre » pour *la corruption*, vingt mots dont la
+> forme publiee n'etait pas celle qu'Hamidullah ecrit, et quatre cartes qui
+> donnaient tort a une bonne reponse. **Tout cela est encore EN LIGNE** : la
+> reparation est sur la branche, pas en production.
 
 Ce qu'un `publier.py` enverrait, compte entre `59e67ae` et la branche :
 
 | | fichiers |
 |---|---|
-| pages (`.html` a la racine) | 52 |
+| pages (`.html`) | 53 |
 | donnees (`data/`) | 12 |
 | JavaScript | 4 |
 | CSS | 2 |
-| **total en ligne** | **70** |
-| restent au depot (`outils/`, `.md`) | 49 |
+| sitemap | 1 |
+| **total en ligne** | **72** |
+| restent au depot (`outils/`, `.md`) | 51 |
+
+Aucun fichier ajoute, aucun supprime : les 72 sont des modifications.
 
 Les 39 controles sont verts. Le detail de ce que chaque ronde a change est
 dans les messages de commit, et le resume dans `docs/POUR-LE-CARNET.md`.
+
+### `publier.py` refuse maintenant un arbre rouge
+
+Jusqu'au 29 octobre, l'outil garantissait **une** chose : que les deux copies
+se recoupent fichier par fichier. Il ne garantissait pas que ce qu'on recopie
+soit juste — on pouvait publier un arbre dont les controles echouent. Vu ce
+que les quatre dernieres rondes ont trouve en ligne, c'etait le dernier trou
+de la chaine.
+
+Il lance donc d'abord les **six controles qui n'ont besoin que du disque** —
+`controler-questions`, `controler-lecons`, `controler-liens`,
+`controler-index`, `controler-allege`, `peser` — et s'arrete au premier qui
+refuse, en montrant ses dernieres lignes.
+
+Les trois autres — `controler-sections`, `controler-redirections`,
+`controler-sitemap` — interrogent le serveur local. Une publication ne doit
+pas dependre d'un serveur allume : **l'outil les NOMME comme non lances** au
+lieu de laisser croire qu'il a tout verifie. Pour les passer aussi :
+
+```
+python3 outils/servir.py 8899 &
+cd outils && python3 controler-sections.py && python3 controler-redirections.py \
+  && python3 controler-sitemap.py
+```
+
+On peut essayer l'outil sans toucher au depot servi en lui passant un autre
+clone en argument : `python3 outils/publier.py /un/clone/a/moi`.
 
 `data/lexique.json` a ete retire de `data/` le 19 octobre : il ne servait
 qu'aux generateurs. Il disparaitra bien de la production, parce que
