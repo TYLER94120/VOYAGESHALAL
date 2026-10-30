@@ -4074,3 +4074,19 @@ fait / mesuré / pas fait et pourquoi
 **Ouvert.** Un export Search Console avec les URL et les clics par période, pour choisir la traduction et mesurer les titres déjà modifiés.
 
 **Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
+
+## 30 octobre — nuit 17 de la routine autonome (jour pair : approfondissement)
+
+fait / mesuré / pas fait et pourquoi
+
+**Mesuré.** Aucune donnée nouvelle : pas d'export Search Console dans `docs/`, relevé transcrit du 17 octobre inchangé. Branche synchronisée avec `origin`.
+
+**Fait.** Rien modifié dans le code.
+
+**Pas fait et pourquoi.** Aucun écart prouvé à présenter, faute de positions et de clics récents. Priorités 1 et 2 : bloquées ou déjà traitées.
+
+**Vérifié servi.** Rien publié.
+
+**Ouvert.** Un export Search Console avec les URL et les clics par période.
+
+**Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
