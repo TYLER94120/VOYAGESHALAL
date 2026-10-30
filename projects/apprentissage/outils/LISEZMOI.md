@@ -72,6 +72,7 @@ Ou ne pas le relancer du tout, si on n'a touché qu'un commentaire.
 | `controler-liens.py` | chaque lien interne de chaque page mène quelque part — fichier, réécriture `vercel.json`, ou ancre (y compris posée par le script de la page) |
 | `controler-lecons.py` | rouvre les leçons **publiées** et reconfronte chaque verset au Coran, sans faire confiance au générateur |
 | `alleger.py` | retire les commentaires du JS et du CSS **à la publication** : la source garde son cahier de bord, le visiteur ne le télécharge pas (−29 Ko compressés) |
+| `essayer-allege.py` | lance les 30 contrôles de navigateur **contre la copie allégée**, celle que les gens téléchargent vraiment. Le port 8899 doit être libre : l'outil refuse plutôt que de mesurer l'autre site |
 | `peser.py` | les budgets du cahier, mesurés page par page — sur ce qui est **servi**, donc allégé, des deux côtés de la comparaison |
 | `poser-version.py` | le repère de version dans `plus.html` |
 | `publier.py` | recopie le site vers le dépôt servi, et vérifie que les deux se recoupent |
@@ -110,6 +111,23 @@ ARRET : http://127.0.0.1:8899/ est injoignable (Connection refused).
 **Donc : trois rouges d'un coup, et ces trois-là — regarder le serveur avant
 de chercher ailleurs.** Et dans un conteneur où `&` ne tient pas, lancer le
 serveur comme une tâche de fond propre, pas depuis la commande qui mesure.
+
+### Servir autre chose que la source
+
+`servir.py` prend un second argument : la racine à servir. Sans lui, c'est la
+source — les contrôles mesurent donc le code **commenté**, qui n'est pas
+celui qui part en ligne.
+
+```
+python3 outils/servir.py 8899                 # la source
+python3 outils/servir.py 8899 /un/clone/pret  # ce qui part en ligne
+python3 outils/essayer-allege.py              # les deux, enchaînés
+```
+
+Le dernier fabrique la copie allégée, la sert et lance les 30 contrôles
+contre elle. **Mesure du 30 octobre : 30 verts, et les 3 contrôles Python qui
+interrogent le serveur aussi.** `js/qcm.js` y fait 19 237 octets contre
+35 189 à la source : 45 % de ce qu'on relit n'est pas ce qu'on sert.
 
 ## Avant d'écrire un titre : la loi de précision
 

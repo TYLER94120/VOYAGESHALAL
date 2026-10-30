@@ -23,7 +23,16 @@ import pathlib
 import re
 import sys
 
-RACINE = pathlib.Path(__file__).resolve().parent.parent
+# La racine servie. Un second argument permet de servir une AUTRE copie que
+# la source — en pratique la copie ALLEGEE, celle que les visiteurs
+# telechargent vraiment. Les trente controles de navigateur tournaient tous
+# contre la source ; sans cet argument, il fallait copier cet outil dans la
+# copie allegee pour l'y faire tourner.
+#
+#     python3 outils/servir.py 8899                 # la source
+#     python3 outils/servir.py 8899 /un/clone/pret  # ce qui part en ligne
+RACINE = (pathlib.Path(sys.argv[2]).resolve() if len(sys.argv) > 2
+          else pathlib.Path(__file__).resolve().parent.parent)
 
 
 def regles():

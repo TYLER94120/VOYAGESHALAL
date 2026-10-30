@@ -28,6 +28,22 @@ fois contre la copie allegee servie sur le port habituel : tous au vert.
 L'allegement ne cassait donc rien ce jour-la. Mais une verification faite une
 fois n'est pas une garantie, et c'est justement ce que la phrase promettait.
 
+CE QUI A CHANGE LE 30 OCTOBRE
+-----------------------------
+Cette objection a tenu un mois. `outils/essayer-allege.py` existe
+maintenant : il fabrique la copie allegee, la sert sur le port 8899 et lance
+les trente controles de navigateur contre elle. Une commande, pas une note.
+
+Mesure du 30 octobre : les 30 controles de navigateur ET les 3 controles
+Python qui interrogent le serveur, tous lances contre la copie allegee —
+TOUS VERTS. `js/qcm.js` y fait 19 237 octets contre 35 189 a la source.
+
+Et l'outil a ete vu echouer : l'allegement sabote pour emporter la regle
+`.qcm-pied[hidden]` — la seule ligne qui comptait, le 11 octobre — rend
+`controler-niveaux` ROUGE sur la copie allegee alors qu'il est VERT sur la
+source. C'est exactement le cas que personne ne voyait : un site qui marche
+ou on le relit, et pas ou les gens le lisent.
+
 CE QU'IL VERIFIE, POUR CHAQUE .js ET CHAQUE .css
 ------------------------------------------------
  1. CHAQUE LIGNE GARDEE EST IDENTIQUE, ET DANS L'ORDRE. `alleger.py` promet
