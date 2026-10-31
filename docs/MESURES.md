@@ -4090,3 +4090,19 @@ fait / mesuré / pas fait et pourquoi
 **Ouvert.** Un export Search Console avec les URL et les clics par période.
 
 **Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
+
+## 31 octobre — nuit 18 de la routine autonome (jour impair : création)
+
+fait / mesuré / pas fait et pourquoi
+
+**Mesuré.** Aucune donnée nouvelle : pas d'export Search Console dans `docs/`, relevé transcrit du 17 octobre inchangé. Branche synchronisée avec `origin`.
+
+**Fait.** Rien publié.
+
+**Pas fait et pourquoi.** Pas de création ni de traduction : aucun des 31 articles français sans jumeau n'a de requête gagnée identifiée. La règle interdit de publier sans cette réponse.
+
+**Vérifié servi.** Rien modifié.
+
+**Ouvert.** Un export Search Console avec les URL et les clics par période.
+
+**Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
