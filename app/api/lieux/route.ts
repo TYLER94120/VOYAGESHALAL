@@ -1365,7 +1365,14 @@ export async function POST(req: Request) {
         }
       }
       source = 'google'
-      fiches = [...spots, ...enrichies].slice(0, RETENUS)
+      // 🚫 Pour « manger », seul un lieu dont une mention halal existe va en tête.
+      // Les autres restent visibles, mais en bas de liste et marqués « non vérifié »
+      // (Hoi An, 17 octobre : un restaurant sans preuve remontait parmi les trois).
+      const signales = c.categorie === 'manger' ? enrichies.filter((f) => f.statut.startsWith('signalé halal')) : enrichies
+      const nonSignales = c.categorie === 'manger'
+        ? enrichies.filter((f) => !f.statut.startsWith('signalé halal')).map((f) => ({ ...f, statut: 'non vérifié — ne le prends pas pour halal' }))
+        : []
+      fiches = [...spots, ...signales].slice(0, RETENUS)
       autres = classes.slice(placesRetenues.length, placesRetenues.length + AUTRES).map((x) => ({
         id: x.id, nom: x.nom, distanceM: x.distanceM, lat: x.lat, lng: x.lng,
         note: x.note, nbAvis: x.nbAvis, prix: x.prix, ouvert: x.ouvert, adresse: x.adresse,
@@ -1374,6 +1381,7 @@ export async function POST(req: Request) {
         source: 'google' as const,
         famille: x.primaryType,
       }))
+      autres = [...nonSignales, ...autres].slice(0, AUTRES)
     }
   }
 
