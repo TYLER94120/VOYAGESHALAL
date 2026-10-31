@@ -115,7 +115,7 @@ l'est depuis le 5, et elle est propre — rien ne déborde, les quatre
 réponses sont atteignables, les cibles tiennent leurs 44 px. Mais elle dit
 une chose que les autres largeurs cachaient :
 
-| écran | cartes à faire glisser | sur 2 701 |
+| écran | cartes à faire glisser | sur les 2 701 du 5 octobre |
 |---|---|---|
 | 320 × 568 | 2 596 | **96 %** |
 | 360 × 640 | 2 124 | 79 % |
@@ -124,10 +124,17 @@ une chose que les autres largeurs cachaient :
 | 820 × 1180 | 0 | 0 % |
 
 Sur le plus petit téléphone encore en service, presque aucune carte ne tient
-à l'écran, et 2 651 sur 2 701 sont déjà à la plus petite échelle : il n'y a
+à l'écran, et 2 651 sur 2 701 étaient déjà à la plus petite échelle : il n'y a
 plus de marge à prendre. Ce n'est pas une faute au sens du contrôle — le
 signe « il y en a plus » est bien là — c'est un fait de conception. Signalé,
 pas touché.
+
+> Les chiffres de ce tableau sont ceux du **5 octobre**, quand le paquet
+> comptait 2 701 cartes. Il en compte 2 658 depuis le 26 octobre — trois mots
+> du lexique retires ont emporté leurs cartes. Les proportions ne bougent
+> pas ; le dénominateur, lui, n'est plus celui du site. **On date une mesure
+> plutôt que de la rafraîchir à l'aveugle** : relancer `controler-cadrage`
+> donne les chiffres du jour.
 
 ## Comment savoir qu'un controle controle quelque chose
 

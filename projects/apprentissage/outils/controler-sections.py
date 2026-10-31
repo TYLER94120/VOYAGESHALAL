@@ -408,6 +408,63 @@ def main():
             fautes.append('vercel.json : %s vise %s, qui n\'existe pas'
                           % (s, regles[s]))
 
+    # ================================================================
+    # LA TABLE D'ETAT DE DEPLOIEMENT.md DIT LES VRAIS CHIFFRES
+    # AJOUTE LE 31 OCTOBRE
+    # ================================================================
+    #
+    # `index.html` et `sections.html` sont recomptes depuis le 5 octobre. Mais
+    # le document que Mohamed OUVRE AVANT DE PUBLIER, lui, ne l'etait pas, et
+    # sa table d'etat a porte « 2 701 questions » pendant trois jours apres
+    # que le compte soit tombe a 2 658. Un chiffre faux dans le mode d'emploi
+    # du deploiement se lit au moment ou l'on decide.
+    #
+    # Mesure du 31 octobre, sur tous les .md du projet : dix mentions de
+    # « 2 701 » et deux de « 2 628 ». La plupart etaient des mesures DATEES —
+    # « 2 651 cartes sur 2 701 », le 5 octobre a 320 px — et celles-la ne se
+    # rafraichissent pas, elles se datent. Une seule ligne affirmait un etat
+    # courant, et une autre posait une question a Mohamed sur des chiffres
+    # perimes : une decision ne se prend pas sur des chiffres faux.
+    #
+    # On ne controle donc QUE la table d'etat, celle qui annonce le present.
+    # Les mesures datees restent libres : les dater est un travail de lecteur,
+    # pas de controle.
+    dep = RACINE / 'DEPLOIEMENT.md'
+    etats_lus = 0
+    if dep.is_file():
+        texte_dep = dep.read_text(encoding='utf-8')
+        total_q = 0
+        for s in secs:
+            f = RACINE / 'data' / 'questions' / ('%s.json' % s['slug'])
+            total_q += len(json.loads(f.read_text(encoding='utf-8'))) \
+                if f.is_file() else 0
+        attendus = {
+            'questions sourcees': total_q,
+            'lecons de sourate': len(list(RACINE.glob('lecon-sourate-*.html'))),
+            'adresses au sitemap': len(re.findall(
+                r'<loc>', (RACINE / 'sitemap.xml').read_text(encoding='utf-8')))
+            if (RACINE / 'sitemap.xml').is_file() else 0,
+        }
+        for etiquette, vrai in attendus.items():
+            m = re.search(r'^\|\s*%s\s*\|([^|]*)\|' % re.escape(etiquette),
+                          texte_dep, re.M)
+            if not m:
+                fautes.append('DEPLOIEMENT.md : sa table d\'etat n\'a plus de '
+                              'ligne « %s »' % etiquette)
+                continue
+            etats_lus += 1
+            chiffres = [int(x.replace(' ', '').replace(' ', ''))
+                        for x in re.findall(r'\d[\d  ]*', m.group(1))]
+            if not chiffres or chiffres[0] != vrai:
+                fautes.append(
+                    'DEPLOIEMENT.md : sa table d\'etat annonce « %s » pour '
+                    '« %s », il y en a %d. C\'est le document qu\'on ouvre '
+                    'avant de publier.'
+                    % (m.group(1).strip(), etiquette, vrai))
+
+    print('  %d ligne(s) de la table d\'etat de DEPLOIEMENT.md recomptees.'
+          % etats_lus)
+
     if fautes:
         print('  %d FAUTE(S) — le lot est refuse :' % len(fautes))
         for x in fautes[:25]:
