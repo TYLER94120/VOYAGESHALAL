@@ -24,12 +24,21 @@ lu par personne et entrerait en conflit à la première fusion.
 
 ## À COLLER DANS LE CARNET, À PARTIR D'ICI
 
-# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 22 OCTOBRE 2026
+# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 1ER NOVEMBRE 2026
 
-> Le corps de cette note a été écrit le 14 octobre. Les ajouts datés des
-> 21 et 22 octobre sont signalés à leur place : deux lignes dans le tableau
-> des décisions, et la dernière section. Le reste n'a pas été revérifié
-> depuis le 14, sauf le nombre de contrôles.
+> **Comment lire cette note.** Son corps a été écrit le 14 octobre. Chaque
+> ajout porte sa date, et **une mesure datée ne se rafraîchit pas : elle se
+> date.** Rafraîchir un dénominateur sans relancer la mesure donnerait un
+> chiffre que personne n'a mesuré.
+>
+> Ce qui a été ajouté depuis le 14 : deux lignes dans le tableau des
+> décisions (21 oct.), et une section par leçon transférable — **22, 23, 24,
+> 25, 26, 27 et 28 octobre**. Les trois dernières portent sur du contenu
+> faux trouvé **en ligne**, et ce sont les plus importantes.
+>
+> Revérifié le 1er novembre : la date de la dernière publication, le nombre
+> de contrôles, et les chiffres du tableau des décisions. Le reste du corps
+> du 14 octobre n'a pas été repassé.
 
 **Aucune donnée nouvelle.** Le dernier relevé de ce site reste celui du
 21 août : 12 impressions, 0 clic, position 38,8, quatre pages visibles.
@@ -44,9 +53,29 @@ n'a donc rien pu voir, et **aucune variation du prochain relevé ne sera
 attribuable à ces changements.** C'est l'inverse de ce que le point 6
 cherche, et il faut le dire avant de lire le prochain relevé.
 
-État de la production : **non vérifié.** Le site n'est pas joignable depuis
-le conteneur des rondes (code 000). Mon propre registre dit que la
-production datait du 28 septembre, mais je ne peux pas le confirmer d'ici.
+> ⚠️ **ET CE N'EST PLUS SEULEMENT DU MIEUX QUI ATTEND.** Les rondes du 23, du
+> 26, du 27 et du 28 octobre ont retiré du site des **affirmations fausses** :
+> une page qui annonçait des hadiths sourcés alors qu'il n'y en a aucun, cinq
+> cartes donnant « djinns » pour le sens de *les hommes*, une explication
+> donnant « terre » pour *la corruption*, vingt mots dont la forme publiée
+> n'était pas celle qu'écrit le traducteur, et quatre cartes donnant tort à
+> une bonne réponse. **Tout cela est encore en ligne.** La réparation est sur
+> la branche, pas en production — c'est la seule chose de cette note qui soit
+> urgente.
+
+**Dernière publication : le 29 septembre à 00 h 32**, repère de version
+`386566f`, commit `59e67ae`. Trouvé dans l'historique le 1er novembre, et
+confirmé par le pied de page du site lui-même, qui affiche ce repère.
+
+> Cette ligne disait « le 28 septembre, mais je ne peux pas le confirmer
+> d'ici ». C'était faux d'un jour, et `DEPLOIEMENT.md` disait déjà 29 au
+> même moment : **deux documents du même dépôt se contredisaient sur la date
+> de la dernière mise en ligne.** Le commit porte sa date, il suffisait de la
+> lire.
+
+État de la production : **non vérifié** au-delà de cela. Le site n'est pas
+joignable depuis le conteneur des rondes (code 000), donc je ne peux pas
+confirmer que ce qui y est servi correspond bien à ce commit.
 
 ## CE QUI TOUCHE À CE QUE GOOGLE VOIT, DATÉ
 
@@ -124,7 +153,7 @@ indexables, `robots.txt` qui n'interdit rien, sitemap à jour avec une date
 par page, `noindex` sur les seuls écrans de jeu. La distinction se lit dans
 Search Console.
 
-## L'ÉTAT DES CONTRÔLES
+## L'ÉTAT DES CONTRÔLES — recompté le 1er novembre
 
 39 contrôles, tous verts : 9 en Python, 30 de navigateur. Chacun a été vu
 échouer volontairement avant d'être gardé.

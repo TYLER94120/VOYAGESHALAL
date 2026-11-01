@@ -32,7 +32,9 @@ CE QU'IL VERIFIE
 import json
 import pathlib
 import re
+import subprocess
 import sys
+import unicodedata
 import urllib.error
 import urllib.request
 
@@ -65,6 +67,12 @@ def prendre(url):
     except Exception as e:
         sys.exit('ARRET : %s est injoignable (%s).\n'
                  '        Lancer d\'abord : python3 outils/servir.py 8899' % (url, e))
+
+
+def nu(s):
+    """Sans accents : les documents ecrivent « aout », git dit « 08 »."""
+    s = unicodedata.normalize('NFD', str(s or '').lower())
+    return ''.join(c for c in s if unicodedata.category(c) != 'Mn')
 
 
 def main():
@@ -464,6 +472,60 @@ def main():
 
     print('  %d ligne(s) de la table d\'etat de DEPLOIEMENT.md recomptees.'
           % etats_lus)
+
+    # ================================================================
+    # LES DOCUMENTS NE SE CONTREDISENT PAS SUR LA DERNIERE PUBLICATION
+    # AJOUTE LE 1er NOVEMBRE
+    # ================================================================
+    #
+    # `DEPLOIEMENT.md` disait « derniere publication : le 29 septembre » et
+    # `docs/POUR-LE-CARNET.md` disait « la production datait du 28 septembre,
+    # mais je ne peux pas le confirmer d'ici ». Les deux nommaient le MEME
+    # commit. Il portait sa date : il suffisait de la lire.
+    #
+    # Deux documents du meme depot qui se contredisent sur la date de la
+    # derniere mise en ligne, c'est exactement ce qui a coute une heure le
+    # 21 aout — et le carnet de l'empire est fait pour etre colle ailleurs.
+    #
+    # On ne juge pas la prose : on prend le commit que le document nomme, on
+    # demande sa date a git, et on verifie que le document dit ce jour-la.
+    MOIS = ('janvier', 'fevrier', 'mars', 'avril', 'mai', 'juin', 'juillet',
+            'aout', 'septembre', 'octobre', 'novembre', 'decembre')
+    dates_lues = 0
+    for nom in ('DEPLOIEMENT.md', 'docs/POUR-LE-CARNET.md'):
+        doc = RACINE / nom
+        if not doc.is_file():
+            continue
+        t = doc.read_text(encoding='utf-8')
+        # LA DATE DOIT ETRE DANS LA MEME PHRASE QUE LE COMMIT, PAS AILLEURS
+        # DANS LE DOCUMENT. Premiere version de ce controle : elle cherchait
+        # la date n'importe ou dans le fichier. Le sabotage — remettre
+        # « 28 septembre » a la place de « 29 » — PASSAIT, parce qu'une autre
+        # section ecrit « en ligne depuis avant le 29 septembre » cent lignes
+        # plus loin. Un controle qui survit a son propre sabotage ne garde
+        # rien : on regarde donc une fenetre autour du commit nomme.
+        FENETRE = 400
+        for m_sha in re.finditer(r'commit `([0-9a-f]{7,12})`', t):
+            sha = m_sha.group(1)
+            autour = t[max(0, m_sha.start() - FENETRE):m_sha.end() + FENETRE]
+            r = subprocess.run(['git', 'log', '-1', '--format=%cs', sha],
+                               capture_output=True, text=True, cwd=str(RACINE))
+            if r.returncode != 0 or not r.stdout.strip():
+                fautes.append('%s : nomme le commit %s, que git ne connait pas'
+                              % (nom, sha))
+                continue
+            an, mo, jo = (int(x) for x in r.stdout.strip().split('-'))
+            jour = '%d%s %s' % (jo, 'er' if jo == 1 else '', MOIS[mo - 1])
+            dates_lues += 1
+            # On cherche le jour SANS accent : les documents ecrivent « aout ».
+            if nu(jour) not in nu(autour):
+                fautes.append(
+                    '%s : nomme le commit %s, date du %s, mais ecrit une autre '
+                    'date autour de lui. Deux documents qui se contredisent sur '
+                    'la derniere mise en ligne, c\'est ce qui a coute une heure '
+                    'le 21 aout.' % (nom, sha, jour))
+    print('  %d date(s) de publication confrontee(s) a l\'historique git.'
+          % dates_lues)
 
     if fautes:
         print('  %d FAUTE(S) — le lot est refuse :' % len(fautes))
