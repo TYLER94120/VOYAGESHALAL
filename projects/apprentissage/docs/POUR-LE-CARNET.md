@@ -136,7 +136,32 @@ La propriété est en « préfixe d'URL » et pas en « Domaine ». Elle bloque 
 | sujet | la mesure | ce qu'il faut trancher |
 |---|---|---|
 | **juz 29** (sourates 67 à 77) | 11 sourates, 431 versets. Les 38 leçons actuelles en font 571. +29 % de pages pour +75 % de versets. Leçon médiane : de 11 versets à 40. Texte arabe et traduction Hamidullah présents pour les onze, sans trou. | ouvrir ou non une nouvelle unité du mushaf |
-| **ou neuf sourates courtes** (22 oct.) | Le levier 2 dit « une leçon par sourate **courte** ». Mesuré : **9 sourates hors du lot ont 20 versets ou moins** — Al-Jumu'a 11, Al-Munafiqun 11, At-Talaq 12, At-Tahrim 12, Al-Mumtahana 13, As-Saff 14, Al-Hujurat 18, At-Taghabun 18, Al-Muzzammil 20. **129 versets en tout**, contre 431 pour le juz 29 : +24 % de pages pour +23 % de versets, au lieu de +29 % pour +75 %. Les deux jeux de données (arabe et Hamidullah) concordent sur les neuf, sans trou. Une seule, Al-Muzzammil, appartient au juz 29 : les deux options ne se recouvrent presque pas. | **Le coût n'est pas le même, et la cohérence non plus.** Le lot actuel a un nom — Al-Fatiha et le juz Amma, une unité reconnue. Neuf sourates dispersées (49, 60-66, 73) n'en forment aucune : un lecteur verrait un ensemble arbitraire. C'est ce choix-là qui est à toi, pas le volume |
+| **ou neuf sourates courtes** (22 oct., **argument corrigé le 2 nov.**) | Le levier 2 dit « une leçon par sourate **courte** ». Mesuré : **9 sourates hors du lot ont 20 versets ou moins** — Al-Jumu'a 11, Al-Munafiqun 11, At-Talaq 12, At-Tahrim 12, Al-Mumtahana 13, As-Saff 14, Al-Hujurat 18, At-Taghabun 18, Al-Muzzammil 20. **129 versets en tout**, contre 431 pour le juz 29 : +24 % de pages pour +23 % de versets, au lieu de +29 % pour +75 %. Les deux jeux de données (arabe et Hamidullah) concordent sur les neuf, sans trou. Une seule, Al-Muzzammil, appartient au juz 29. | **Le coût n'est pas le même. La cohérence, elle, n'était pas l'argument que je croyais** — voir la correction ci-dessous. Reste donc une question de volume et d'ordre, et elle est à toi |
+
+> 🔴 **CE QUE J'AI ÉCRIT LE 22 OCTOBRE ET QUI ÉTAIT FAUX.** J'ai refusé d'agir
+> en disant : « le lot actuel a un nom — Al-Fatiha et le juz Amma, une unité
+> reconnue ; neuf sourates dispersées n'en forment aucune, un lecteur verrait
+> un ensemble arbitraire. »
+>
+> Mesuré le 2 novembre, sur les 63 pages du site : **le mot « juz » n'y
+> apparaît pas une seule fois.** `sourates.html` dit seulement « 38 d'entre
+> elles sont expliquées verset par verset : leur nom est en vert ». **Le
+> lecteur ne peut pas percevoir l'unité que je protégeais** — pour lui, les
+> 38 sont déjà un sous-ensemble arbitraire de 114.
+>
+> Cette cohérence existait dans `DEPLOIEMENT.md`, pas sur le site. J'ai
+> protégé une propriété de ma propre documentation et je te l'ai présentée
+> comme une propriété du produit. **Ta décision est donc moins contrainte que
+> ce que je t'ai dit** : il reste le coût et l'ordre, pas la cohérence.
+>
+> **Et nommer le juz sur le site n'est pas à ma portée non plus**, pour une
+> raison de source : « juz amma » serait une requête précise, exactement le
+> terrain que la loi de la précision désigne — mais **le dépôt n'a aucune
+> donnée de découpage du mushaf**. Les fichiers du Coran ne portent que
+> `chapter`, `verse`, `text` ; les fichiers de noms que `ar`, `n`, `tr`. Dire
+> « les sourates 78 à 114 forment le juz 'Amma » serait l'écrire de mémoire,
+> ce que la règle interdit. **Il faudrait une donnée de juz sourcée** — c'est
+> une acquisition, comme la traduction de hadiths.
 | **taille du texte** | 102 `font-size` en px, 27 à 12 px ou moins, zéro en rem. Le réglage du téléphone n'a aucun effet. Passer en rem ne suffirait pas : à 320 px, **2 651 cartes sur les 2 701 d'alors** (mesure du 5 octobre) étaient déjà à la plus petite échelle et 96 % demandaient de faire glisser. Il faudrait que les cartes s'allongent au lieu de se réduire. | une refonte de la façon dont une carte répond à un débordement |
 | **deux titres de section** | « Le comportement » (64 car.) et « Vocabulaire arabe » (65) dépassent 60 et retombent sur le nom seul. Raccourcir leur champ `quoi` de 5 caractères les ferait tenir. `quoi` est une valeur du cahier V2. | raccourcir ou non deux phrases du cahier |
 | **« 2 658 questions »** (recompté le 31 oct.) | 65 versets produisent une carte dans deux ou trois sections — la prière et l'aumône, que le Coran associe sans cesse. **138 cartes, 5,2 % du paquet** (57 versets dans deux sections, 8 dans trois). En comptant chaque verset une fois : **2 585**. | garder 2 658, qui est le nombre de cartes, ou annoncer 2 585. *La question posée jusqu'ici disait « 2 701 ou 2 628 » : les deux chiffres étaient périmés depuis le 26 octobre, et une décision ne se prend pas sur des chiffres faux.* |

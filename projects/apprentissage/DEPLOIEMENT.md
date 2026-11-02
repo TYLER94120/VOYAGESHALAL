@@ -114,10 +114,21 @@ Compte dans les banques ce soir :
 |---|---|
 | sections remplies | **11 sur 12** (`La vie du Prophete` est encore vide) |
 | questions sourcees | **2 658** |
-| lecons de sourate | **38** — Al-Fatiha, et le juz Amma complet (78 a 114) |
+| lecons de sourate | **38** — Al-Fatiha, et les sourates 78 a 114 |
 | adresses au sitemap | 53 |
 
 **L'objectif des mille deux cents questions est depasse** : il y en a 2 658.
+
+> **Pourquoi cette ligne ne dit plus « le juz Amma complet ».** Elle le disait,
+> et c'est vrai dans le monde — mais **le depot n'a aucune donnee de
+> decoupage du mushaf** : les fichiers du Coran ne portent que `chapter`,
+> `verse`, `text`, et ceux des noms que `ar`, `n`, `tr`. L'ecrire etait donc
+> l'ecrire DE MEMOIRE, ce que la regle du projet interdit. « Les sourates 78
+> a 114 » se recompte, lui, sur les fichiers.
+>
+> Le site, lui, n'a jamais nomme le juz : mesure du 2 novembre, le mot
+> n'apparait sur aucune de ses 63 pages. C'est une requete precise qu'on
+> n'occupe pas — et qu'on n'occupera pas sans une donnee de juz sourcee.
 
 > **Pourquoi le nombre a BAISSE de 2 701 a 2 658.** Trois mots du lexique ont
 > ete retires le 26 octobre, et leurs cartes avec : ils publiaient le sens de

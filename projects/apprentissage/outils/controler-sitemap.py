@@ -300,6 +300,61 @@ def main():
                            for b in sorted((RACINE / 'data' / 'questions')
                                            .glob('*.json')))))
 
+    # ================================================================
+    # 13. AUCUNE PAGE NE NOMME UN DECOUPAGE DU MUSHAF — 2 NOVEMBRE
+    # ================================================================
+    #
+    # MEME REGLE QUE LE POINT 11, AUTRE SOURCE MANQUANTE. Le 22 octobre j'ai
+    # refuse d'etendre les lecons en invoquant la coherence du lot : « Al-
+    # Fatiha et le juz Amma, une unite reconnue ». Mesure du 2 novembre : le
+    # mot « juz » n'apparait sur AUCUNE des 63 pages du site. La coherence
+    # que je protegeais vivait dans DEPLOIEMENT.md, pas sous les yeux du
+    # lecteur.
+    #
+    # Et elle n'est pas publiable en l'etat : LE DEPOT N'A AUCUNE DONNEE DE
+    # DECOUPAGE DU MUSHAF. `fra-muhammadhamidul.json` et
+    # `ara-quransimple.json` ne portent que `chapter`, `verse`, `text` ;
+    # `noms-sourates.json` que `ar`, `n`, `tr`. Ecrire « les sourates 78 a
+    # 114 forment le juz 'Amma » serait l'ecrire de memoire — exactement ce
+    # que la regle du site interdit : « numero de sourate et de verset :
+    # jamais de memoire, toujours verifies ».
+    #
+    # « juz amma » est pourtant une requete precise, le terrain meme de la
+    # loi de la precision. On ne l'occupe pas, et ce controle dit pourquoi
+    # plutot que de laisser quelqu'un l'occuper de memoire. Le jour ou une
+    # donnee de juz sourcee entre au depot, il se taira de lui-meme.
+    DECOUPAGES = re.compile(r'\bjuz\b|\bdjouz\b|\bhizb\b|\bmanzil\b')
+    donnee_juz = False
+    for f in sorted((RACINE / 'outils' / 'coran').glob('*.json')):
+        if f.name.startswith('h-'):
+            continue          # les recueils de hadith, non sources
+        try:
+            d = json.loads(f.read_text(encoding='utf-8'))
+        except Exception:
+            continue
+        ech = d['quran'][0] if isinstance(d, dict) and d.get('quran') else (
+            d[0] if isinstance(d, list) and d else {})
+        if isinstance(ech, dict) and any(DECOUPAGES.search(k.lower())
+                                         for k in ech):
+            donnee_juz = True
+    pages_juz = []
+    if not donnee_juz:
+        for u in adresses:
+            chemin = u[len(SITE):] or '/'
+            code, page = prendre(BASE + chemin)
+            if code != 200 or not page:
+                continue
+            vus = sorted({m.group(0) for m in DECOUPAGES.finditer(
+                aplatir(sans_balises(page)))})
+            if vus:
+                pages_juz.append(chemin)
+                fautes.append(
+                    '%s : la page nomme %s, alors que le depot n\'a aucune '
+                    'donnee de decoupage du mushaf. Un decoupage ecrit de '
+                    'memoire est exactement ce que la regle interdit : il se '
+                    'cite avec sa source, ou il ne se cite pas.'
+                    % (chemin, ', '.join('« %s »' % v for v in vus)))
+
     # 9. CHAQUE lastmod DIT LA VERITE SUR SA PAGE.
     #
     # Jusqu'au 8 octobre, le generateur posait la meme date sur les 53
@@ -464,6 +519,8 @@ def main():
     # Le MESURE, pas un verdict : les deux nombres se lisent ensemble.
     print('  %d question(s) citent un hadith ; %d page(s) indexable(s) en '
           'parlent.' % (questions_hadith, len(pages_qui_annoncent)))
+    print('  donnee de decoupage du mushaf au depot : %s ; %d page(s) en '
+          'parlent.' % ('oui' if donnee_juz else 'non', len(pages_juz)))
     print('  Et chaque lastmod est celui du dernier commit de sa page :'
           ' %d dates distinctes pour %d adresses.'
           % (len({d for _, d in re.findall(
