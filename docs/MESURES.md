@@ -4122,3 +4122,19 @@ fait / mesuré / pas fait et pourquoi
 **Ouvert.** Vérifier la recherche « manger » à Hoi An sur le site déployé. Un export Search Console avec les URL et les clics par période.
 
 **Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
+
+## 2 novembre — nuit 20 de la routine autonome (jour impair : création)
+
+fait / mesuré / pas fait et pourquoi
+
+**Mesuré.** Aucune donnée nouvelle : pas d'export Search Console dans `docs/`, relevé du 17 octobre inchangé.
+
+**Fait.** Rien publié.
+
+**Pas fait et pourquoi.** Pas de création ni de traduction : aucun des 31 articles français sans jumeau n'a de requête gagnée identifiée. La règle interdit de publier sans cette réponse.
+
+**Vérifié servi.** Rien modifié cette nuit. Le correctif « manger » du 31 octobre attend toujours sa vérification sur la page servie (dépend de la clé Google).
+
+**Ouvert.** Un export Search Console avec les URL et les clics par période.
+
+**Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
