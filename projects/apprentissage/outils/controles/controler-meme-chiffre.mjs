@@ -42,8 +42,9 @@
    ========================================================================== */
 
 import { chromium } from 'playwright-core';
+import { EXE as NAVIGATEUR } from './navigateur.mjs';
 
-const EXE = '/opt/pw-browsers/chromium-1194/chrome-linux/chrome';
+const EXE = NAVIGATEUR;
 const B = 'http://127.0.0.1:8899';
 
 const fautes = [];

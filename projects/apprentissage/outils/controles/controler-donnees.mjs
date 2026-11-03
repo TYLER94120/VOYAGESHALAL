@@ -38,6 +38,7 @@
 import { chromium } from 'playwright-core';
 import { brancherPolices, attendrePolices } from './polices.mjs';
 import fs from 'fs';
+import { EXE as NAVIGATEUR } from './navigateur.mjs';
 
 const B = 'http://127.0.0.1:8899';
 let ec = 0;
@@ -64,7 +65,7 @@ const PAGES = [...sm.matchAll(/<loc>([^<]+)<\/loc>/g)]
   .concat(pleines.map((s) => `qcm.html?section=${s}&n=3`));
 
 const nav = await chromium.launch({
-  executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome',
+  executablePath: NAVIGATEUR,
   args: ['--no-sandbox'] });
 const ctx = await nav.newContext({
   viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true });

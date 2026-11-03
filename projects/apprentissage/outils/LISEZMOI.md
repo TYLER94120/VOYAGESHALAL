@@ -176,6 +176,55 @@ Et le relevé colle :
 
 **Donc : précis ET pas déjà tenu.** Les deux, sinon rien.
 
+### Et une troisième condition, lue le 3 novembre : AVOIR DES IMPRESSIONS
+
+La skill `ce-que-google-affiche` de l'empire — que je n'avais jamais ouverte —
+porte une section « Quand ne PAS faire ce travail », et elle tranche la
+question que je reposais tous les soirs :
+
+> « Une page à 88 impressions n'a pas un problème de titre, elle a un problème
+> de visibilité : elle sort trop bas pour que quiconque la voie. Un beau titre
+> à la position 22 reste invisible. Dans ce cas le levier est ailleurs — des
+> liens entrants, de la profondeur, du temps.
+>
+> **Savoir que ce chantier ne sert à rien ici est aussi utile que savoir le
+> mener ailleurs.** »
+
+**islampasapas a 12 impressions en 28 jours.** Le seuil que la skill donne en
+exemple — 88 impressions, « pas un problème de titre » — est **sept fois
+plus haut**. Les deux pages que la ronde désigne comme à traiter en premier,
+l'accueil et al-Ikhlas, en ont **2 et 1**.
+
+Donc, pour ce site et à cette date : **le levier des titres est ÉCARTÉ, pas
+reporté.** Ce n'est plus « il faudrait les requêtes de Search Console pour
+juger » — c'est « il n'y a personne à convaincre ». La nuance compte : la
+première phrase attend une donnée, la seconde dit que la donnée ne changerait
+pas la décision.
+
+### Les trois causes que la skill chiffre, confrontées à ce site
+
+| cause mesurée ailleurs | ici |
+|---|---|
+| un gabarit ajoute un suffixe de marque et **Google coupe** — 383 pages sur 809 chez gohalaltravel | **0 titre sur 53 dépasse 60 caractères** ; le plus long fait 59 (Al-Mutaffifin). Aucun gabarit n'ajoute de suffixe |
+| **le mot reste dans la mauvaise langue** — 34 fiches « Dubaï » sur le domaine anglais | sans objet : une langue, un domaine |
+| **la description annonce un chiffre faux** — « 40+ adresses » pour douze | recompté par contrôle depuis le 5 octobre (accueil, sections) et le 22 (les 38 leçons) |
+
+La marque est dans **2 titres sur 53** : l'accueil (55 car., c'est sa propre
+page) et `plus.html` (« À propos — Islam pas à pas », 26 car.). La skill dit
+de l'enlever ; `plus.html` a **zéro impression**, donc la même section « quand
+ne pas faire ce travail » s'applique. **Mesuré, écarté, pas touché.**
+
+**Ce qui a été fait, en revanche :** la règle des 60 caractères ne tenait que
+les 38 leçons et les 12 pages de section. Les **quatre pages écrites à la
+main** — accueil, `sections.html`, `sourates.html`, `plus.html` — n'étaient
+tenues par personne. Sabotage isolé du 3 novembre : un titre de 82 caractères
+sur `plus.html`, le sitemap remis à jour pour que la règle du `lastmod` ne
+masque pas le résultat, **aucun des neuf contrôles Python ne bronchait**.
+`controler-sitemap.py` relit maintenant les 53 titres servis.
+
+*Troisième fois que les fichiers écrits à la main sont les seuls à échapper à
+une règle : `plus.html` le 23 octobre, `robots.txt` le 25, les titres ce soir.*
+
 ### Ce que cette loi fait au levier 2
 
 Le levier 2 demande de multiplier les leçons de sourate, et le carnet en fait

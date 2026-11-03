@@ -2,11 +2,12 @@
  * paquet ? Un mode qui n existe qu a l ecran ne sert a rien. */
 import { chromium } from 'playwright-core';
 import { brancherPolices, attendrePolices } from './polices.mjs';
+import { EXE as NAVIGATEUR } from './navigateur.mjs';
 const B = 'http://127.0.0.1:8899';
 let ec = 0;
 const rate=(m,d)=>{console.log('  ECHEC  '+m+(d?'  -> '+d:''));ec++;};
 const ok=(m,d)=>console.log('  ok     '+m+(d?'  -> '+d:''));
-const nav = await chromium.launch({ executablePath:'/opt/pw-browsers/chromium-1194/chrome-linux/chrome', args:['--no-sandbox'] });
+const nav = await chromium.launch({ executablePath: NAVIGATEUR, args:['--no-sandbox'] });
 const ctx = await nav.newContext({ viewport:{width:390,height:900}, isMobile:true, hasTouch:true, deviceScaleFactor:2 });
 // Les polices ne sortent plus vers Google : elles n'y arrivaient jamais.
 await ctx.route('**', (r) => (r.request().url().startsWith(B) ? r.continue() : r.abort()));

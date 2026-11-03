@@ -17,6 +17,7 @@
  * Verdict par code de sortie. */
 import { chromium } from 'playwright-core';
 import { brancherPolices, attendrePolices } from './polices.mjs';
+import { EXE as NAVIGATEUR } from './navigateur.mjs';
 const B = 'http://127.0.0.1:8899';
 let ec = 0;
 const rate = (m,d) => { console.log('  ECHEC  '+m+(d?'  -> '+d:'')); ec++; };
@@ -32,7 +33,7 @@ const PAGES = [
   '/sourates.html', '/lecon-sourate-al-ikhlas.html', '/lecon-sourate-ad-duha.html',
 ];
 
-const nav = await chromium.launch({ executablePath:'/opt/pw-browsers/chromium-1194/chrome-linux/chrome', args:['--no-sandbox'] });
+const nav = await chromium.launch({ executablePath: NAVIGATEUR, args:['--no-sandbox'] });
 const ctx = await nav.newContext({ viewport:{width:390,height:844}, isMobile:true, hasTouch:true });
 await ctx.route('**', (r) => r.request().url().startsWith(B) ? r.continue() : r.abort());
 await brancherPolices(ctx);

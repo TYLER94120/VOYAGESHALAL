@@ -74,8 +74,9 @@
 import { chromium } from 'playwright-core';
 import fs from 'fs';
 import { brancherPolices, attendrePolices } from './polices.mjs';
+import { EXE as NAVIGATEUR } from './navigateur.mjs';
 
-const EXE = '/opt/pw-browsers/chromium-1194/chrome-linux/chrome';
+const EXE = NAVIGATEUR;
 const B = 'http://127.0.0.1:8899';
 // 320 px : le plus petit ecran encore en service, et le seul ou le defaut
 // s'est montre. Mesurer a 390 n'aurait rien trouve.

@@ -29,8 +29,31 @@ trop haut ajoute la dependance a l'application, ecrit 728 Mo de
 C'est arrive le 7 octobre 2026. Le `package.json` pose ici depuis sert de
 butoir : npm s'arrete a ce dossier.
 
-Le navigateur est celui du poste
-(`/opt/pw-browsers/chromium-1194/chrome-linux/chrome` ici).
+Le navigateur est celui du poste, et **son chemin n'est plus écrit dans les
+contrôles** : `navigateur.mjs` le résout, et chaque contrôle l'importe.
+
+### Pourquoi, et ce que ça a coûté le 3 novembre
+
+Les trente contrôles portaient chacun la même chaîne :
+`/opt/pw-browsers/chromium-1194/chrome-linux/chrome`. Le conteneur a été
+reconstruit : Chromium y est passé en **1243**, et son dossier s'appelle
+désormais **`chrome-linux64`**, pas `chrome-linux`. Le chemin n'existait plus.
+
+> **29 contrôles sur 30 au rouge, d'un seul coup.** Aucun ne portait sur le
+> site : tous échouaient à lancer le navigateur. Le trentième —
+> `controler-serie` — était vert parce qu'il est le seul à ne pas ouvrir de
+> navigateur du tout.
+
+`navigateur.mjs` cherche, dans l'ordre : `$CHROMIUM`, puis le lien
+`/opt/pw-browsers/chromium` que l'environnement tient à jour, puis le plus
+récent des dossiers `chromium-NNNN` (dans `chrome-linux64` ou `chrome-linux`).
+S'il ne trouve rien il **s'arrête en disant où il a cherché**, et il précise
+que le contrôle ne mesure donc rien — pour qu'on ne cherche pas le défaut
+dans le site.
+
+C'est la deuxième fois qu'une reconstruction de conteneur met la suite au
+rouge sans qu'un octet du site ait changé, et la règle ci-dessous avait déjà
+été écrite pour la première.
 
 **Une nuit ou les 26 controles de navigateur sont rouges d'un coup, regarde
 la dependance avant le code.** C'est arrive le 7 octobre : apres le

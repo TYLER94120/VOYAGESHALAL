@@ -6,11 +6,12 @@
  * Teste au doigt (390) ET a la souris (1280). Verdict par code de sortie. */
 import { chromium } from 'playwright-core';
 import { brancherPolices, attendrePolices } from './polices.mjs';
+import { EXE as NAVIGATEUR } from './navigateur.mjs';
 const B = 'http://127.0.0.1:8899';
 let ec = 0;
 const rate = (m,d) => { console.log('  ECHEC  '+m+(d?'  -> '+d:'')); ec++; };
 const ok = (m,d) => console.log('  ok     '+m+(d?'  -> '+d:''));
-const nav = await chromium.launch({ executablePath:'/opt/pw-browsers/chromium-1194/chrome-linux/chrome', args:['--no-sandbox'] });
+const nav = await chromium.launch({ executablePath: NAVIGATEUR, args:['--no-sandbox'] });
 
 for (const [w,h,mob,nom] of [[390,844,true,'telephone'],[1280,900,false,'bureau']]) {
   const ctx = await nav.newContext({ viewport:{width:w,height:h}, isMobile:mob, hasTouch:mob });

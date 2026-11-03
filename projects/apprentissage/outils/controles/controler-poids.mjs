@@ -33,8 +33,9 @@
    ========================================================================== */
 
 import { chromium } from 'playwright-core';
+import { EXE as NAVIGATEUR } from './navigateur.mjs';
 
-const EXE = '/opt/pw-browsers/chromium-1194/chrome-linux/chrome';
+const EXE = NAVIGATEUR;
 
 // Plafond en kilo-octets, mesure x 2 environ. On veut voir revenir une
 // banque entiere, pas arbitrer 20 Ko.

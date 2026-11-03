@@ -1,12 +1,13 @@
 /* UNE PARTIE ENTIERE, JOUEE JUSQU'AU RESULTAT.
  * Le point qui compte : les sommes doivent tomber juste (section 13). */
 import { chromium } from 'playwright-core';
+import { EXE as NAVIGATEUR } from './navigateur.mjs';
 const B = 'http://127.0.0.1:8899';
 let echecs = 0;
 const rate = (m, d) => { console.log('  ECHEC  ' + m + (d ? '  -> ' + d : '')); echecs++; };
 const ok = (m, d) => console.log('  ok     ' + m + (d ? '  -> ' + d : ''));
 
-const nav = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome', args: ['--no-sandbox'] });
+const nav = await chromium.launch({ executablePath: NAVIGATEUR, args: ['--no-sandbox'] });
 const ctx = await nav.newContext({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true });
 await ctx.route('**', (r) => r.request().url().startsWith(B) ? r.continue() : r.abort());
 const p = await ctx.newPage();

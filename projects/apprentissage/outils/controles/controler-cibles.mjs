@@ -42,8 +42,9 @@
 
 import { chromium } from 'playwright-core';
 import { brancherPolices, attendrePolices } from './polices.mjs';
+import { EXE as NAVIGATEUR } from './navigateur.mjs';
 
-const EXE = '/opt/pw-browsers/chromium-1194/chrome-linux/chrome';
+const EXE = NAVIGATEUR;
 const PAGES = ['index.html', 'sections.html', 'sourates.html',
                'lecon-sourate-al-ikhlas.html', 'section/la-priere', 'plus.html',
                // La seule couverture qui porte les 38 pastilles de lecons.

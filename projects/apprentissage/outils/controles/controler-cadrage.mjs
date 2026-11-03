@@ -29,11 +29,12 @@
  * Verdict par code de sortie. */
 import { chromium } from 'playwright-core';
 import { brancherPolices, attendrePolices } from './polices.mjs';
+import { EXE as NAVIGATEUR } from './navigateur.mjs';
 const B = 'http://127.0.0.1:8899';
 let ec = 0;
 const rate = (m,d) => { console.log('  ECHEC  '+m+(d?'  -> '+d:'')); ec++; };
 const ok = (m,d) => console.log('  ok     '+m+(d?'  -> '+d:''));
-const nav = await chromium.launch({ executablePath:'/opt/pw-browsers/chromium-1194/chrome-linux/chrome', args:['--no-sandbox'] });
+const nav = await chromium.launch({ executablePath: NAVIGATEUR, args:['--no-sandbox'] });
 
 // La liste des sections n'est PAS ecrite ici : elle est lue dans la page, au
 // meme endroit que le site. Une liste figee vieillit en silence, et le jour

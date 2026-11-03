@@ -10,11 +10,12 @@
  * Verdict par code de sortie. */
 import { chromium } from 'playwright-core';
 import { brancherPolices, attendrePolices } from './polices.mjs';
+import { EXE as NAVIGATEUR } from './navigateur.mjs';
 const B = 'http://127.0.0.1:8899';
 let ec = 0;
 const rate = (m,d) => { console.log('  ECHEC  '+m+(d?'  -> '+d:'')); ec++; };
 const ok = (m,d) => console.log('  ok     '+m+(d?'  -> '+d:''));
-const nav = await chromium.launch({ executablePath:'/opt/pw-browsers/chromium-1194/chrome-linux/chrome', args:['--no-sandbox'] });
+const nav = await chromium.launch({ executablePath: NAVIGATEUR, args:['--no-sandbox'] });
 const ctx = await nav.newContext({ viewport:{width:360,height:640}, isMobile:true, hasTouch:true });
 // Les polices etaient laissees sortir vers Google, et n'arrivaient jamais
 // (ERR_CERT_AUTHORITY_INVALID) : ce controle mesurait des hauteurs de carte

@@ -30,8 +30,9 @@
 
 import { chromium } from 'playwright-core';
 import { brancherPolices, attendrePolices } from './polices.mjs';
+import { EXE as NAVIGATEUR } from './navigateur.mjs';
 
-const EXE = '/opt/pw-browsers/chromium-1194/chrome-linux/chrome';
+const EXE = NAVIGATEUR;
 const BASE = 'http://127.0.0.1:8899/';
 
 // Une longue, une moyenne, une courte. La courte ne doit PAS avoir d'index.

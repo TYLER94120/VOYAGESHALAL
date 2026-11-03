@@ -301,6 +301,51 @@ def main():
                                            .glob('*.json')))))
 
     # ================================================================
+    # 14. AUCUN TITRE SERVI NE DEPASSE 60 CARACTERES — 3 NOVEMBRE
+    # ================================================================
+    #
+    # La skill `ce-que-google-affiche` de l'empire chiffre ce que coute cette
+    # regle quand on l'oublie : sur gohalaltravel.com, un gabarit ajoutait
+    # « | GoHalalTravel » a la fin de chaque titre — quinze a dix-neuf
+    # caracteres sur une limite d'environ soixante — et **383 pages sur 809**
+    # etaient coupees par Google au milieu de l'information utile. Le suffixe
+    # n'etait ecrit dans aucune page : il fallait regarder le titre SERVI.
+    #
+    # Ici la regle etait tenue, mais pas PARTOUT. `controler-lecons.py` la
+    # verifie pour les 38 lecons, `controler-sections.py` pour les 12 pages de
+    # section. Les quatre pages ECRITES A LA MAIN — l'accueil, sections.html,
+    # sourates.html, plus.html — n'etaient tenues par personne.
+    #
+    # Mesure du 3 novembre, sabotage isole du reste : un titre de 82
+    # caracteres pose sur `plus.html`, le sitemap remis a jour pour que le
+    # point 9 ne masque pas le resultat — AUCUN des neuf controles Python ne
+    # bronchait. C'est la troisieme fois que les fichiers ecrits a la main
+    # sont les seuls a echapper a une regle : plus.html le 23 octobre,
+    # robots.txt le 25, les titres ce soir.
+    #
+    # Les 53 titres servis font aujourd'hui de 26 a 55 caracteres.
+    LIMITE_TITRE = 60
+    titres_lus, le_plus_long = 0, ('', 0)
+    for u in adresses:
+        chemin = u[len(SITE):] or '/'
+        code, page = prendre(BASE + chemin)
+        if code != 200 or not page:
+            continue
+        m = re.search(r'<title>(.*?)</title>', page, re.S)
+        if not m:
+            fautes.append('%s : pas de <title>' % chemin)
+            continue
+        titre = re.sub(r'\s+', ' ', desechapper(m.group(1))).strip()
+        titres_lus += 1
+        if len(titre) > le_plus_long[1]:
+            le_plus_long = (chemin, len(titre))
+        if len(titre) > LIMITE_TITRE:
+            fautes.append(
+                '%s : titre de %d caracteres, la limite est %d — Google le '
+                'coupera au milieu : « %s »'
+                % (chemin, len(titre), LIMITE_TITRE, titre))
+
+    # ================================================================
     # 13. AUCUNE PAGE NE NOMME UN DECOUPAGE DU MUSHAF — 2 NOVEMBRE
     # ================================================================
     #
@@ -521,6 +566,9 @@ def main():
           'parlent.' % (questions_hadith, len(pages_qui_annoncent)))
     print('  donnee de decoupage du mushaf au depot : %s ; %d page(s) en '
           'parlent.' % ('oui' if donnee_juz else 'non', len(pages_juz)))
+    print('  %d titres servis relus, le plus long fait %d caracteres (%s), '
+          'limite %d.' % (titres_lus, le_plus_long[1], le_plus_long[0],
+                          LIMITE_TITRE))
     print('  Et chaque lastmod est celui du dernier commit de sa page :'
           ' %d dates distinctes pour %d adresses.'
           % (len({d for _, d in re.findall(

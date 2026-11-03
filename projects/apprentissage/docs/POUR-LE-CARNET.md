@@ -178,6 +178,42 @@ indexables, `robots.txt` qui n'interdit rien, sitemap à jour avec une date
 par page, `noindex` sur les seuls écrans de jeu. La distinction se lit dans
 Search Console.
 
+## 🔴 LE 3 NOVEMBRE — LE LEVIER DES TITRES EST ÉCARTÉ, ET C'EST MESURÉ
+
+Pendant soixante-dix nuits, chaque compte rendu a fini par la même phrase :
+« les titres — il faudrait les requêtes de Search Console pour les juger ».
+C'était une attente, pas une décision.
+
+La skill `ce-que-google-affiche` de l'empire porte une section **« Quand ne
+PAS faire ce travail »** :
+
+> « Une page à 88 impressions n'a pas un problème de titre, elle a un problème
+> de **visibilité** : elle sort trop bas pour que quiconque la voie. Un beau
+> titre à la position 22 reste invisible. Dans ce cas le levier est ailleurs —
+> des liens entrants, de la profondeur, du temps. **Savoir que ce chantier ne
+> sert à rien ici est aussi utile que savoir le mener ailleurs.** »
+
+**islampasapas a 12 impressions en 28 jours** — sept fois moins que le seuil
+donné en exemple. Les deux pages que la ronde désigne comme prioritaires,
+l'accueil et al-Ikhlas, en ont **2 et 1**.
+
+➡️ **Le levier 1 est écarté pour ce site, pas reporté.** Non pas « il manque
+une donnée pour juger », mais « il n'y a personne à convaincre ». Les deux
+phrases n'engagent pas la même suite : la première attend, la seconde libère
+l'effort pour le levier qui compte ici — **le volume**.
+
+**Et les trois causes que la skill chiffre sont absentes ici, vérifiées :**
+
+| cause mesurée ailleurs dans l'empire | ici |
+|---|---|
+| un suffixe de marque fait **couper** le titre — 383 pages sur 809 | **0 titre sur 53** dépasse 60 caractères ; le plus long fait 59 |
+| le mot reste dans la **mauvaise langue** — 34 fiches | sans objet : une langue, un domaine |
+| la description annonce un **chiffre faux** | recompté par contrôle depuis le 5 octobre |
+
+**À emporter sur les cinq sites :** avant de réécrire un titre, regarder le
+nombre d'impressions de la page. Sous quelques dizaines, le titre n'est pas le
+problème — et le temps passé là est du temps volé au seul levier qui agisse.
+
 ## L'ÉTAT DES CONTRÔLES — recompté le 1er novembre
 
 39 contrôles, tous verts : 9 en Python, 30 de navigateur. Chacun a été vu
