@@ -24,7 +24,7 @@ lu par personne et entrerait en conflit à la première fusion.
 
 ## À COLLER DANS LE CARNET, À PARTIR D'ICI
 
-# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 1ER NOVEMBRE 2026
+# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 4 NOVEMBRE 2026
 
 > **Comment lire cette note.** Son corps a été écrit le 14 octobre. Chaque
 > ajout porte sa date, et **une mesure datée ne se rafraîchit pas : elle se
@@ -166,6 +166,7 @@ La propriété est en « préfixe d'URL » et pas en « Domaine ». Elle bloque 
 | **deux titres de section** | « Le comportement » (64 car.) et « Vocabulaire arabe » (65) dépassent 60 et retombent sur le nom seul. Raccourcir leur champ `quoi` de 5 caractères les ferait tenir. `quoi` est une valeur du cahier V2. | raccourcir ou non deux phrases du cahier |
 | **« 2 658 questions »** (recompté le 31 oct.) | 65 versets produisent une carte dans deux ou trois sections — la prière et l'aumône, que le Coran associe sans cesse. **138 cartes, 5,2 % du paquet** (57 versets dans deux sections, 8 dans trois). En comptant chaque verset une fois : **2 585**. | garder 2 658, qui est le nombre de cartes, ou annoncer 2 585. *La question posée jusqu'ici disait « 2 701 ou 2 628 » : les deux chiffres étaient périmés depuis le 26 octobre, et une décision ne se prend pas sur des chiffres faux.* |
 | **quatre sections sous le plancher** (21 oct.) | Le cahier demande 100 questions par section. Piliers 89, comportement 11, jeûne 8, pèlerinage 7 — et elles sont en ligne. Mesure par la méthode du projet (un verset n'entre dans un domaine que si l'arabe **et** le français le désignent) : le Coran entier porte **9 versets sur le jeûne et 18 sur le pèlerinage**. Avec les deux formes de carte du site, plafond 26 et 41. **Ces deux-là ne peuvent pas atteindre 100.** Piliers (106) et comportement (115) peuvent, mais en devenant des sections d'exercices de traduction. | garder petites ou refermer — et, pour deux d'entre elles, accepter de changer leur nature |
+| **enrichir les 38 leçons avec le lexique** (4 nov.) | La skill des titres dit que le levier, ici, est « des liens entrants, de la **profondeur**, du temps ». Mesuré : sur les **571 versets** publiés dans les 38 leçons, **186 (33 %)** portent au moins un des 138 mots **attestés** du lexique, et **64 mots distincts** y apparaissent — يَوْم « jour » dans 36 versets, إِنسان « homme » dans 16, كِتاب « livre » dans 11. La phrase existe déjà, mot pour mot, sur 1 197 cartes de QCM — même source, même mesure, déjà vérifiée par `controler-questions.py`. Rien à inventer, rien à traduire. | **Mais cela se heurte à une règle écrite de la page**, et c'est pour ça que je ne le fais pas : `faire-lecon-sourate.py` dit « le verset, sa traduction attribuée, sa référence. **Rien entre les deux.** » La règle a été écrite pour tenir l'exégèse dehors. Une note de vocabulaire mesurée n'est pas de l'exégèse — mais c'est toi qui as posé la barrière, et c'est à toi de dire si elle s'ouvre pour ça. Deux tiers des versets n'auraient aucune note : il faut aussi accepter cette irrégularité |
 | **une traduction de hadiths** (21 oct.) | Ces quatre sections sont celles qui devaient reposer sur des hadiths. Le dépôt en contient 20 426 en français (Boukhari 7 589, Mouslim 7 563, Abou Dawoud 5 274) et **aucun n'est citable** : leurs métadonnées ne nomment aucun traducteur, et leurs titres de chapitres sont restés en anglais — « Revelation », « Belief », « Knowledge ». Traduction de traduction. | acheter ou obtenir une traduction française de hadiths **avec un traducteur nommé**. C'est le seul blocage du site qui se lève par une décision et non par du travail |
 
 ## LA QUESTION QUE LE CARNET POSAIT LE 21 AOÛT
@@ -599,3 +600,96 @@ désactivé avant la fin du mois — c'est le même mécanisme que le piège de
 « prophète », de « recueil » et de « récompense » : **un contrôle qui crie
 finit par ne plus être lu.** Les deux chiffres faux sont écrits dans le
 contrôle, avec leur raison.
+
+## 🔴🔴 LE 4 NOVEMBRE — UN INDICATEUR PARFAIT SUR UNE MESURE VIDE
+
+Dix-neuf cartes du site enseignaient que **أَشَدّ** et **أَقْرَب** signifient
+**« plus »**. Trois explications d'autres sections le répétaient. Vingt-deux
+endroits, **en ligne depuis le 22 août** — soit 74 jours.
+
+La carte montre un verset, surligne le mot, demande « **Que signifie** le mot
+en vert ? » et attend « plus » parmi « femme », « veau », « filles ». Une
+carte surlignait **الْأَقْرَبِينَ** — *les proches parents* — et attendait
+« plus ». L'élève qui répond juste a appris quelque chose de faux.
+
+Ce sont deux élatifs : أَشَدّ est le comparatif de *fort*, أَقْرَب celui de
+*proche*.
+
+### Pourquoi les quatre garde-fous chiffrés ne pouvaient pas le voir
+
+Le lexique de ce site n'invente aucune traduction : il **mesure** celles que
+Hamidullah emploie, et quatre seuils chiffrés écartent les coïncidences. Le
+mot n'est publié que s'il apparaît dans au moins 10 versets, si le mot
+français revient dans au moins 75 % d'entre eux, s'il y est 10 fois plus
+fréquent qu'ailleurs, et s'il se détache nettement du deuxième.
+
+**أَشَدّ avait un accord de 1,000. Le maximum.** Hamidullah écrit bien
+« plus » dans **tous** ses versets. L'alignement était parfait.
+
+Ce que ces quatre seuils mesurent, c'est la **constance du traducteur**.
+Aucun ne demande si le mot français porte un sens **à lui seul**. En français
+le comparatif se fabrique avec « plus » devant un adjectif ; l'arabe le porte
+dans la **forme** du mot. L'alignement ne pouvait donc capturer que le
+marqueur — et un marqueur ne veut rien dire seul.
+
+> **À emporter, et ça vaut pour les cinq sites : un indicateur au maximum ne
+> prouve rien d'autre que ce qu'il mesure.** 1,000 sur 1,000 ne disait pas
+> « cette glose est bonne », il disait « le traducteur est constant ». La
+> question « constant sur quoi ? » n'était posée nulle part. **Quand un
+> chiffre est parfait, demande ce qu'il mesure — pas s'il est bon.** Une
+> mesure juste sur une grandeur vide reste vide.
+
+Le contrôle des questions ne le voyait pas non plus, et pour une raison
+voisine : il vérifiait que le sens annoncé appartient à un mot **présent dans
+le verset**. Il l'était. La faute n'était pas dans le repérage du mot, elle
+était dans la **nature de la glose** — une question que personne ne posait.
+
+### La liste a été mesurée avant d'être écrite
+
+La tentation était d'interdire les mots grammaticaux en bloc. Mesure faite
+**avant** : أَجْمَع publie « tous », une entrée légitime qu'une liste de
+déterminants aurait détruite ; بَيْن « entre » et بَعْد « après » sont des
+**noms** dans le corpus, et une glose prépositionnelle serait pour eux un vrai
+sens. La liste ne retient donc que les mots qui ne portent **aucun** sens
+lexical seuls. Sur 140 entrées, elle en refuse **deux**.
+
+Un sixième garde-fou dans le générateur, et la même règle dans le contrôle —
+avec **sa propre** liste, parce qu'un générateur qui se trompe se trompe aussi
+dans ses propres contrôles. Le contrôle relit en plus les **cartes servies** :
+retirer une entrée du lexique ne retire pas la carte déjà écrite.
+
+### Et un outil qui annonçait « 0 » en réécrivant trois fichiers
+
+`enrichir-explications.py` a retiré les trois explications devenues fausses,
+puis a affiché : « **0 explications enrichies, 0 mises à jour** ». Il comptait
+les ajouts et les remplacements, **jamais les retraits**. J'ai vu le
+changement au `git diff`, pas au compte rendu de l'outil.
+
+> **À emporter : un chiffre qui ne bouge pas quand le fichier bouge est un
+> mensonge.** Un outil qui ne compte que ce qu'il ajoute est aveugle à ce
+> qu'il enlève — et c'est en enlevant qu'on casse.
+
+Il imprime maintenant les trois : enrichies, mises à jour, **retirées**.
+
+### Ce qui reste et qui demande un éditeur, pas un contrôle
+
+La même mesure met en évidence **أَدْرَى**, glosé « dira ». Il tient
+**6 cartes** et **17 explications** en ligne, et c'est le quatrième mot le plus
+fréquent des 38 leçons (11 versets). Les cartes surlignent يُدْرِيكَ et
+attendent « dira ».
+
+Ce n'est **pas** un mot-outil : le sixième garde-fou ne le refuse pas, et son
+accord de 0,765 passe le seuil de 0,75. Ce que je peux montrer **sans aucun
+dictionnaire**, parce que c'est dans le dépôt :
+
+- sur les **17 versets** du mot, **13** portent la même tournure, « et qui te
+  **dira** ce qu'est… » — l'attestation vient donc d'une formule répétée ;
+- dans les quatre autres, **le même traducteur écrit autre chose** :
+  « Il ne vous l'aurait pas non plus **fait connaître** » (10:16), « **Qu'en
+  sais-tu** ? » (33:63 et 42:17), « Qui te **dit** » (80:3).
+
+Je **n'y touche pas**. Trancher demanderait de choisir une traduction, ce que
+ce projet ne fait jamais, et une règle « une glose attestée surtout par une
+formule répétée n'est pas un sens » devrait d'abord être mesurée contre les
+138 entrées pour qu'on sache ce qu'elle détruirait. **Non vérifié, à toi de
+dire.**

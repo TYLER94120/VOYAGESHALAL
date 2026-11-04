@@ -28,7 +28,7 @@ francais revient dans l'immense majorite de ces versets, et presque nulle
 part ailleurs, la correspondance est ATTESTEE par le texte lui-meme — ce
 n'est pas mon avis, c'est un comptage sur l'oeuvre du traducteur.
 
-Quatre garde-fous, et un mot qui en rate un seul n'est pas publie :
+Quatre garde-fous CHIFFRES, et un mot qui en rate un seul n'est pas publie :
 
   au moins 10 versets   sous ce seuil, une coincidence suffit ;
   p >= 0,75             le mot francais doit revenir dans les trois quarts
@@ -40,8 +40,14 @@ Quatre garde-fous, et un mot qui en rate un seul n'est pas publie :
                         passait avec « Jacob » parce que les deux noms
                         voyagent ensemble.
 
-Sur 4 728 lemmes, 143 passent. C'est peu, et c'est voulu : ces 143-la sont
-surs, et l'explication de chaque question montre le comptage qui les fonde.
+Ces quatre-la ne mesurent qu'une chose : la CONSTANCE du traducteur. Deux
+garde-fous de plus disent ce qu'ils ne peuvent pas voir — le cinquieme
+refuse le sens pris au lemme voisin, le sixieme refuse une glose qui est un
+mot-outil du francais. Le second a trouve, le 4 novembre, deux entrees a
+l'accord parfait dont la glose etait « plus ».
+
+C'est peu de mots qui passent, et c'est voulu : ceux-la sont surs, et
+l'explication de chaque question montre le comptage qui les fonde.
 
 CE QUE LA CARTE DEMANDE
 -----------------------
@@ -73,6 +79,49 @@ MINI_P = 0.75
 MINI_LIFT = 10.0
 MINI_MARGE = 0.25
 PAR_MOT = 5          # questions par mot : assez pour varier, pas pour lasser
+
+# ==========================================================================
+# LE SIXIEME GARDE-FOU — AJOUTE LE 4 NOVEMBRE
+#
+# CE QUE LA MESURE A TROUVE, ET C'ETAIT EN LIGNE DEPUIS LE 22 AOUT
+# ----------------------------------------------------------------
+# Dix-neuf cartes de cette section enseignaient que أَشَدّ et أَقْرَب signifient
+# « plus ». Ce sont deux elatifs : « plus fort », « plus proche ». Une carte
+# surlignait الْأَقْرَبِينَ — les proches parents — et attendait « plus ».
+#
+# POURQUOI LES QUATRE PREMIERS GARDE-FOUS LAISSENT PASSER CELA
+# -----------------------------------------------------------
+# أَشَدّ a un accord de 1,000 : Hamidullah ecrit « plus » dans TOUS ses
+# versets. L'alignement est parfait et la glose est vide. Seuil, lift et
+# marge mesurent la constance du traducteur ; aucun ne demande si le mot
+# francais porte un sens a lui seul.
+#
+# En francais le comparatif se fabrique avec « plus » devant un adjectif ;
+# l'arabe le porte dans la forme du mot. L'alignement ne pouvait donc capter
+# que le marqueur. Et le plancher de quatre lettres du releve laisse passer
+# « plus » tout juste — « et », « de », « la » n'y arrivent pas.
+#
+# POURQUOI LA LISTE EST COURTE
+# ----------------------------
+# Mesure faite AVANT de l'ecrire : أَجْمَع publie « tous », une entree
+# legitime qu'une liste de determinants aurait detruite ; بَيْن « entre » et
+# بَعْد « apres » sont des NOMS dans le corpus, et une glose prepositionnelle
+# serait pour eux un vrai sens. On ne retient donc que les mots qui ne
+# portent aucun sens lexical seuls. Sur 140 entrees, cette liste en refuse
+# DEUX.
+#
+# ON REFUSE LE LEMME, ON NE CHERCHE PAS SON DEUXIEME MOT. Le deuxieme mot
+# francais le plus frequent dans les versets de أَشَدّ serait un choix de
+# traduction, et ce projet n'en fait aucun — meme regle que le cinquieme
+# garde-fou.
+# ==========================================================================
+MOTS_OUTILS = {
+    'plus', 'moins', 'tres', 'trop', 'assez', 'autant', 'davantage',
+    'tellement', 'aussi', 'encore', 'ainsi', 'alors', 'donc', 'puis',
+    'cela', 'ceux', 'celui', 'celle', 'celles', 'cette', 'quoi',
+    'dont', 'lequel', 'laquelle', 'pourquoi', 'comment', 'lorsque',
+    'puisque', 'parce', 'quand', 'meme', 'memes',
+}
 
 # ==========================================================================
 # LE CINQUIEME GARDE-FOU — AJOUTE LE 26 OCTOBRE
@@ -335,6 +384,12 @@ def batir_lexique(ar, fr, morpho):
                     local[w.lower()] += 1
         choix = max(sorted(local.items()), key=lambda kv: kv[1])[0] if local \
             else entier[radical].most_common(1)[0][0]
+
+        # SIXIEME GARDE-FOU : un mot-outil n'est pas un sens. Voir l'en-tete
+        # de MOTS_OUTILS. On teste la forme AFFICHEE, celle que la carte
+        # montrera, et non le radical qui a servi a compter.
+        if nu_fr(forme_affichee(choix)) in MOTS_OUTILS:
+            ecartes['mot-outil, pas un sens'] += 1; continue
 
         lexique.append({
             'lemme': lem,

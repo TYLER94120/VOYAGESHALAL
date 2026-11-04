@@ -50,6 +50,47 @@ générateur lancé seul ne signale rien : il réussit, et il défait les deux
 **Donc : relancer un générateur, c'est relancer les deux étapes d'après.**
 Ou ne pas le relancer du tout, si on n'a touché qu'un commentaire.
 
+### Un mot-outil n'est pas un sens — mesuré le 4 novembre
+
+`faire-11-vocabulaire.py` n'invente aucune traduction : il **mesure** celles
+qu'Hamidullah emploie, et quatre seuils chiffrés écartent les coïncidences
+(10 versets, accord ≥ 0,75, lift ≥ 10, marge ≥ 0,25).
+
+**Ces quatre seuils mesurent la constance du traducteur, et rien d'autre.**
+Le 4 novembre, deux entrées glosaient « plus » : أَشَدّ et أَقْرَب, deux
+élatifs. أَشَدّ avait un accord de **1,000** — le maximum. Hamidullah écrit
+bien « plus » dans tous ses versets : l'alignement était parfait et la glose
+était vide, parce que le comparatif français est un marqueur devant un
+adjectif quand l'arabe le porte dans la forme du mot.
+
+Dix-neuf cartes demandaient « que signifie le mot en vert ? » et attendaient
+« plus », dont une sur الْأَقْرَبِينَ, *les proches parents*. Trois explications
+d'autres sections le répétaient. **Vingt-deux endroits, en ligne depuis le
+22 août.**
+
+Un **sixième garde-fou** refuse donc une glose qui est un mot-outil du
+français. La liste a été mesurée avant d'être écrite : bannir les
+déterminants en bloc aurait détruit أَجْمَع « tous », et بَيْن « entre » comme
+بَعْد « après » sont des **noms** dans le corpus, pour qui une glose
+prépositionnelle serait un vrai sens. Sur 140 entrées, la liste en refuse
+deux.
+
+`controler-questions.py` porte la même règle avec **sa propre** liste — un
+générateur qui se trompe se trompe aussi dans ses propres contrôles — et
+relit en plus les **cartes servies** : retirer une entrée du lexique ne
+retire pas la carte déjà écrite.
+
+> **À retenir avant de faire confiance à un seuil : quand un indicateur est
+> au maximum, demande ce qu'il mesure, pas s'il est bon.**
+
+### Un outil qui ne compte que ses ajouts est aveugle à ses retraits
+
+Le même soir, `enrichir-explications.py` a retiré les trois explications
+devenues fausses et affiché « **0 explications enrichies, 0 mises à jour** ».
+Il comptait les ajouts et les remplacements, pas les retraits. Trois banques
+réécrites, un compte rendu à zéro — repéré au `git diff`, pas à la ligne de
+bilan. Il imprime maintenant les trois : enrichies, mises à jour, **retirées**.
+
 ## Ce que fait chacun
 
 | outil | ce qu'il fait |

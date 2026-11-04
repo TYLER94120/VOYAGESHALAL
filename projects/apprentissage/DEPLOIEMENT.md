@@ -113,11 +113,11 @@ Compte dans les banques ce soir :
 | | |
 |---|---|
 | sections remplies | **11 sur 12** (`La vie du Prophete` est encore vide) |
-| questions sourcees | **2 658** |
+| questions sourcees | **2 639** |
 | lecons de sourate | **38** — Al-Fatiha, et les sourates 78 a 114 |
 | adresses au sitemap | 53 |
 
-**L'objectif des mille deux cents questions est depasse** : il y en a 2 658.
+**L'objectif des mille deux cents questions est depasse** : il y en a 2 639.
 
 > **Pourquoi cette ligne ne dit plus « le juz Amma complet ».** Elle le disait,
 > et c'est vrai dans le monde — mais **le depot n'a aucune donnee de
@@ -130,11 +130,21 @@ Compte dans les banques ce soir :
 > n'apparait sur aucune de ses 63 pages. C'est une requete precise qu'on
 > n'occupe pas — et qu'on n'occupera pas sans une donnee de juz sourcee.
 
-> **Pourquoi le nombre a BAISSE de 2 701 a 2 658.** Trois mots du lexique ont
-> ete retires le 26 octobre, et leurs cartes avec : ils publiaient le sens de
+> **Pourquoi le nombre a BAISSE de 2 701 a 2 658, le 26 octobre.** Trois mots
+> du lexique ont ete retires, et leurs cartes avec : ils publiaient le sens de
 > leur voisin. Cinq cartes disaient que إِنس — *les hommes*, le mot que le
 > Coran met en face des djinns — signifie « djinns ». Un nombre qui baisse
 > parce qu'on a retire du faux est une bonne nouvelle, pas une perte.
+
+> **Et de 2 658 a 2 639, le 4 novembre.** Deux mots de plus retires du
+> lexique : أَشَدّ et أَقْرَب, deux elatifs, dont la glose mesuree etait « plus ».
+> Dix-neuf cartes demandaient « que signifie le mot en vert ? » et attendaient
+> « plus » ; trois explications d'autres sections le repetaient. Les quatre
+> garde-fous chiffres ne pouvaient pas le voir : أَشَدّ a un accord de **1,000**
+> — Hamidullah ecrit bien « plus » dans tous ses versets. L'alignement etait
+> parfait et la glose etait vide, parce qu'en francais le comparatif est un
+> marqueur devant un adjectif, quand l'arabe le porte dans la forme du mot.
+> Un sixieme garde-fou refuse desormais une glose qui est un mot-outil.
 
 ### Mais le plancher par section ne l'est pas
 
@@ -268,13 +278,16 @@ commit `59e67ae`). Trente rondes depuis, aucune publiee : la consigne est que
 tu promeus toi-meme.
 
 > ⚠️ **CE QUI ATTEND N'EST PLUS SEULEMENT DU MIEUX.** Les rondes du 23, du
-> 26, du 27 et du 28 octobre ont retire du site des affirmations fausses :
-> une page qui annoncait des hadiths sources alors qu'il n'y en a aucun,
-> cinq cartes qui donnaient « djinns » pour le sens de *les hommes*, une
-> explication qui donnait « terre » pour *la corruption*, vingt mots dont la
-> forme publiee n'etait pas celle qu'Hamidullah ecrit, et quatre cartes qui
-> donnaient tort a une bonne reponse. **Tout cela est encore EN LIGNE** : la
-> reparation est sur la branche, pas en production.
+> 26, du 27 et du 28 octobre, et celle du 4 novembre, ont retire du site des
+> affirmations fausses : une page qui annoncait des hadiths sources alors
+> qu'il n'y en a aucun, cinq cartes qui donnaient « djinns » pour le sens de
+> *les hommes*, une explication qui donnait « terre » pour *la corruption*,
+> vingt mots dont la forme publiee n'etait pas celle qu'Hamidullah ecrit,
+> quatre cartes qui donnaient tort a une bonne reponse, et **vingt-deux
+> endroits qui enseignaient que أَشَدّ et أَقْرَب signifient « plus »** —
+> dix-neuf cartes et trois explications, en ligne depuis le 22 aout.
+> **Tout cela est encore EN LIGNE** : la reparation est sur la branche, pas
+> en production.
 
 Ce qu'un `publier.py` enverrait, compte entre `59e67ae` et la branche :
 
@@ -286,7 +299,7 @@ Ce qu'un `publier.py` enverrait, compte entre `59e67ae` et la branche :
 | CSS | 2 |
 | sitemap | 1 |
 | **total en ligne** | **72** |
-| restent au depot (`outils/`, `.md`) | 51 |
+| restent au depot (`outils/`, `.md`) | 66 |
 
 Aucun fichier ajoute, aucun supprime : les 72 sont des modifications.
 

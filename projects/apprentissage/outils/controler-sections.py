@@ -474,6 +474,88 @@ def main():
           % etats_lus)
 
     # ================================================================
+    # ET LE TABLEAU DE CE QU'UNE PUBLICATION ENVERRAIT
+    # AJOUTE LE 4 NOVEMBRE
+    # ================================================================
+    #
+    # La table d'etat etait recomptee depuis le 31 octobre, mais le tableau
+    # juste en dessous — « ce qu'un publier.py enverrait » — ne l'etait pas.
+    # Il annoncait « restent au depot : 51 » alors qu'il y en avait 66 : les
+    # rondes touchent des outils chaque soir, et ce chiffre-la vieillit tout
+    # seul. Mesure du 4 novembre : il etait deja faux AVANT la ronde du soir.
+    #
+    # C'est le tableau qu'on lit pour decider d'une publication. Il se
+    # recompte, donc, exactement comme la table d'etat.
+    #
+    # LES EXCLUSIONS SE LISENT CHEZ publier.py, PAS ICI. Deux listes
+    # divergent toujours — meme raison que pour la liste des prophetes dans
+    # controler-questions.py. On lit son texte sans l'importer : un controle
+    # n'execute pas l'outil qui publie.
+    livres = 0
+    if dep.is_file():
+        src = (RACINE / 'outils' / 'publier.py').read_text(encoding='utf-8')
+        regles = {}
+        for nom in ('EXCLUS', 'EXTENSIONS_EXCLUES'):
+            mr = re.search(r'^%s = (\{[^}]*\})' % nom, src, re.M)
+            if mr:
+                regles[nom] = eval(mr.group(1))
+        repere = re.search(r'compte entre `([0-9a-f]{7,40})` et la branche',
+                           texte_dep)
+        if len(regles) < 2:
+            fautes.append(
+                'controler-sections : les exclusions de publier.py ne se '
+                'lisent plus (EXCLUS, EXTENSIONS_EXCLUES) — ce controle ne '
+                'mesure donc RIEN sur le tableau de publication.')
+        elif not repere:
+            fautes.append(
+                'DEPLOIEMENT.md : son tableau de publication ne nomme plus '
+                'le commit de reference — on ne peut plus le recompter.')
+        else:
+            r = subprocess.run(
+                ['git', 'diff', '--name-only', '--relative',
+                 repere.group(1), '--', '.'],
+                cwd=str(RACINE), capture_output=True, text=True)
+            if r.returncode != 0:
+                fautes.append(
+                    'DEPLOIEMENT.md : git ne sait pas comparer a %s (%s)'
+                    % (repere.group(1), r.stderr.strip()[:80]))
+            else:
+                envoyes = restent = 0
+                for ligne in r.stdout.splitlines():
+                    ligne = ligne.strip()
+                    if not ligne:
+                        continue
+                    rel = pathlib.PurePosixPath(ligne)
+                    if any(p in regles['EXCLUS'] for p in rel.parts) \
+                            or rel.suffix.lower() in regles['EXTENSIONS_EXCLUES']:
+                        restent += 1
+                    else:
+                        envoyes += 1
+                for motif, vrai, quoi in (
+                        (r'\|\s*\*\*total en ligne\*\*\s*\|\s*\*\*(\d[\d  ]*)\*\*',
+                         envoyes, 'total en ligne'),
+                        (r'\|\s*restent au depot[^|]*\|\s*(\d[\d  ]*)',
+                         restent, 'restent au depot')):
+                    mm = re.search(motif, texte_dep)
+                    if not mm:
+                        fautes.append(
+                            'DEPLOIEMENT.md : son tableau de publication n\'a '
+                            'plus de ligne « %s »' % quoi)
+                        continue
+                    livres += 1
+                    dit = int(mm.group(1).replace(' ', '').replace(' ', ''))
+                    if dit != vrai:
+                        fautes.append(
+                            'DEPLOIEMENT.md : son tableau de publication '
+                            'annonce %d pour « %s », git en compte %d depuis '
+                            '%s. C\'est le tableau qu\'on lit pour decider '
+                            'd\'une publication.'
+                            % (dit, quoi, vrai, repere.group(1)))
+                print('  tableau de publication : %d fichier(s) partiraient, '
+                      '%d resteraient au depot, %d ligne(s) recomptee(s).'
+                      % (envoyes, restent, livres))
+
+    # ================================================================
     # LES DOCUMENTS NE SE CONTREDISENT PAS SUR LA DERNIERE PUBLICATION
     # AJOUTE LE 1er NOVEMBRE
     # ================================================================

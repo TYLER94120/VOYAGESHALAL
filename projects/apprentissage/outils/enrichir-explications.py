@@ -90,7 +90,7 @@ def charger():
 def main():
     mots, parVerset = charger()
     fichiers = sorted(DONNEES.glob('*.json'))
-    ajoutes = remplaces = sansMot = ignores = 0
+    ajoutes = remplaces = sansMot = ignores = retires = 0
 
     for f in fichiers:
         qs = json.loads(f.read_text(encoding='utf-8'))
@@ -112,6 +112,20 @@ def main():
             if not dispo:
                 sansMot += 1
                 if expl != base:
+                    # LE CHIFFRE QUI MANQUAIT, AJOUTE LE 4 NOVEMBRE
+                    #
+                    # Ce passage RETIRE une phrase devenue fausse — c'est
+                    # arrive le soir ou deux entrees du lexique ont ete
+                    # refusees : trois explications annoncaient encore que
+                    # Hamidullah rend أَشَدَّ par « plus ».
+                    #
+                    # Il reecrivait donc trois banques en annonçant
+                    # « 0 explications enrichies, 0 mises a jour ». Un
+                    # chiffre qui ne bouge pas quand le fichier bouge est un
+                    # mensonge, et c'est ce que ce projet refuse partout
+                    # ailleurs. J'ai vu le changement au `git diff`, pas au
+                    # compte rendu de l'outil.
+                    retires += 1
                     q['explication'] = base; change = True
                 continue
 
@@ -133,7 +147,8 @@ def main():
         if change:
             f.write_text(json.dumps(qs, ensure_ascii=False, indent=1), encoding='utf-8')
 
-    print('  %d explications enrichies, %d mises a jour.' % (ajoutes, remplaces))
+    print('  %d explications enrichies, %d mises a jour, %d retirees.'
+          % (ajoutes, remplaces, retires))
     print('  %d versets sans mot du lexique : explication laissee courte.' % sansMot)
     print('  %d questions non concernees (vocabulaire, alphabet, sans verset).' % ignores)
 

@@ -78,6 +78,64 @@ DONNEES = RACINE / 'data' / 'questions'
 
 SOURCE_CORAN = re.compile(r'Coran, sourate (\d+), verset (\d+)')
 
+# ==========================================================================
+# UN MOT-OUTIL N'EST PAS UN SENS — AJOUTE LE 4 NOVEMBRE
+#
+# CE QUI ETAIT EN LIGNE DEPUIS LE 22 AOUT
+# ---------------------------------------
+# DIX-NEUF cartes de vocabulaire enseignaient que أَشَدّ et أَقْرَب signifient
+# « plus ». La carte montre le verset, surligne le mot, demande « Que signifie
+# le mot en vert ? », et attend « plus » parmi « femme », « veau », « filles ».
+#
+#   أَشَدّ  est l'elatif de شديد : « plus fort », « plus intense » ;
+#   أَقْرَب est l'elatif de قريب : « plus proche ».
+#
+# Et الْأَقْرَبِينَ — les proches parents — etait surligne avec « plus » pour
+# bonne reponse. L'eleve qui repond juste a appris quelque chose de faux.
+#
+# POURQUOI LES QUATRE GARDE-FOUS CHIFFRES NE POUVAIENT PAS LE VOIR
+# ---------------------------------------------------------------
+# أَشَدّ a un accord de 1,000. PARFAIT. Hamidullah ecrit bien « plus » dans
+# tous ses versets — l'alignement est exact. Ce que mesurent le seuil, le
+# lift et la marge, c'est la CONSTANCE du traducteur ; aucun ne demande si le
+# mot francais porte un sens a lui seul.
+#
+# En francais le comparatif se fabrique avec « plus » + adjectif. L'arabe le
+# porte dans la FORME du mot. L'alignement ne retient donc que le marqueur,
+# qui ne veut rien dire seul. Un accord parfait sur un mot vide reste vide.
+#
+# POURQUOI CE CONTROLE N'A RIEN VU NON PLUS
+# -----------------------------------------
+# La regle d'a cote verifie que le sens annonce appartient a un mot PRESENT
+# dans le verset. Il l'est. La faute n'est pas dans le reperage du mot, elle
+# est dans la nature de la glose : ce controle demandait « quel mot ? » et
+# jamais « ce mot francais peut-il etre un sens ? ».
+#
+# POURQUOI CETTE LISTE EST COURTE, ET MESUREE
+# -------------------------------------------
+# La tentation etait d'y mettre les mots grammaticaux en bloc. Mesure faite
+# AVANT d'ecrire la liste : بَيْن « entre », بَعْد « apres », مَعَ « avec » sont
+# des NOMS dans le corpus, et une glose prepositionnelle serait pour eux un
+# vrai sens. Surtout, أَجْمَع publie « tous » — une entree legitime qu'une
+# liste de determinants aurait detruite.
+#
+# On ne garde donc que les mots qui ne portent AUCUN sens lexical seuls :
+# marqueurs de degre, demonstratifs, relatifs, connecteurs. Prepositions et
+# determinants sont volontairement epargnes. Sur les 140 entrees du lexique,
+# cette liste en refuse DEUX — celles-la.
+#
+# Le generateur porte la meme regle. Ce controle garde pourtant SA liste :
+# un generateur qui se trompe se trompe aussi dans ses propres controles, et
+# une liste videe chez lui ne doit pas rendre ce controle muet.
+# ==========================================================================
+MOTS_OUTILS = {
+    'plus', 'moins', 'tres', 'trop', 'assez', 'autant', 'davantage',
+    'tellement', 'aussi', 'encore', 'ainsi', 'alors', 'donc', 'puis',
+    'cela', 'ceux', 'celui', 'celle', 'celles', 'cette', 'quoi',
+    'dont', 'lequel', 'laquelle', 'pourquoi', 'comment', 'lorsque',
+    'puisque', 'parce', 'quand', 'meme', 'memes',
+}
+
 # « de » devant une voyelle : il faut elider. On ne retient que A, E, I, O,
 # U et leurs accentuees — ni le Y, qui sonne consonne, ni le H, que l'usage
 # garde plein dans « de Haroun ».
@@ -918,6 +976,48 @@ def main():
                     voisins_fautifs += 1
                     break
 
+    # UN MOT-OUTIL N'EST PAS UN SENS. Voir l'en-tete de MOTS_OUTILS.
+    outils_fautifs = 0
+    if SENS_DU_LEMME:
+        for l, s in sorted(SENS_DU_LEMME.items()):
+            if nu(s) not in MOTS_OUTILS:
+                continue
+            outils_fautifs += 1
+            fautes.append(
+                'lexique : %s publie « %s », un mot-outil du francais, qui '
+                'ne porte aucun sens a lui seul. Le comparatif francais est '
+                'un marqueur devant un adjectif ; l\'arabe le porte dans la '
+                'FORME du mot. Une carte qui demande « que signifie ce mot ? » '
+                'et attend « %s » enseigne une chose fausse. On retire '
+                'l\'entree, on ne choisit pas une traduction a sa place.'
+                % (l, s, s))
+
+    # ET LES CARTES, SEPAREMENT DU LEXIQUE. Retirer une entree ne retire pas
+    # la carte deja ecrite : une banque survit a son generateur, c'est la
+    # lecon du 21 octobre. Ce controle relit donc les cartes servies.
+    cartes_outils = []
+    for chemin in fichiers:
+        for q in json.loads(chemin.read_text(encoding='utf-8')):
+            texte = str(q.get('question', ''))
+            rs = q.get('reponses') or []
+            b = q.get('bonne')
+            fautive = (texte == 'Que signifie le mot en vert ?'
+                       and isinstance(b, int) and 0 <= b < len(rs)
+                       and nu(rs[b]) in MOTS_OUTILS)
+            if not fautive and texte.startswith(
+                    'Dans ce verset, quel mot signifie'):
+                g = re.search(r'signifie\s*«\s*(.+?)\s*»', texte)
+                fautive = bool(g) and nu(g.group(1)) in MOTS_OUTILS
+            if fautive:
+                cartes_outils.append('%s/%s' % (chemin.stem, q['id']))
+    if cartes_outils:
+        fautes.append(
+            '%d cartes de vocabulaire donnent un mot-outil pour sens (%s%s) '
+            '— « plus » n\'est pas ce que signifie un elatif arabe, et la '
+            'carte le presente comme la bonne reponse.'
+            % (len(cartes_outils), ', '.join(cartes_outils[:3]),
+               ', ...' if len(cartes_outils) > 3 else ''))
+
     cartes_vocab = verifiesVocab + nonVerifies
     if cartes_vocab and SENS_DU_LEMME is None:
         fautes.append(
@@ -946,6 +1046,10 @@ def main():
              voisins_fautifs, sens_absents))
     print('  %d cartes « quel mot signifie » relues, %d leurre(s) qui sont '
           'une autre forme du mot demande.' % (cartes_b, leurres_justes))
+    # Le chiffre, pas un verdict. Une ligne « aucun mot-outil » aurait dit la
+    # meme chose les 74 jours ou dix-neuf cartes etaient en ligne.
+    print('  %d gloses du lexique sont un mot-outil, %d carte(s) servie(s) '
+          'le donnent pour sens.' % (outils_fautifs, len(cartes_outils)))
     print('  %d questions de pratique, confrontees mot-cle par mot-cle.' % pratiques)
     print('  %d questions de fait, recalculees depuis le corpus '
           '(%d faits).' % (faits_vus, len(FICHE)))
