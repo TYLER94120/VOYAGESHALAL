@@ -113,11 +113,11 @@ Compte dans les banques ce soir :
 | | |
 |---|---|
 | sections remplies | **11 sur 12** (`La vie du Prophete` est encore vide) |
-| questions sourcees | **2 639** |
+| questions sourcees | **2 623** |
 | lecons de sourate | **38** — Al-Fatiha, et les sourates 78 a 114 |
 | adresses au sitemap | 53 |
 
-**L'objectif des mille deux cents questions est depasse** : il y en a 2 639.
+**L'objectif des mille deux cents questions est depasse** : il y en a 2 623.
 
 > **Pourquoi cette ligne ne dit plus « le juz Amma complet ».** Elle le disait,
 > et c'est vrai dans le monde — mais **le depot n'a aucune donnee de
@@ -145,6 +145,16 @@ Compte dans les banques ce soir :
 > parfait et la glose etait vide, parce qu'en francais le comparatif est un
 > marqueur devant un adjectif, quand l'arabe le porte dans la forme du mot.
 > Un sixieme garde-fou refuse desormais une glose qui est un mot-outil.
+
+> **Et de 2 639 a 2 623, le 5 novembre.** La regle laissee ouverte la veille a
+> ete mesuree contre les 138 entrees : أَعْلَن (« divulguent », 6 versets sur 6
+> apres les memes mots) et أَدْرَى (« dira », 12 sur 13 apres « et qui te »)
+> tenaient leur attestation a UNE TOURNURE. Entre 92 % et 57 % de
+> concentration la distribution ne contient rien : le seuil est lu dans ce
+> trou, il n'est pas choisi. Un septieme garde-fou les refuse. 16 cartes et 11
+> explications retirees. La regle ne dit pas que la glose est fausse — elle dit
+> que la mesure n'etablit pas un sens de mot, et le projet ne publie pas ce
+> qu'il n'a pas verifie.
 
 ### Mais le plancher par section ne l'est pas
 
@@ -283,9 +293,11 @@ tu promeus toi-meme.
 > qu'il n'y en a aucun, cinq cartes qui donnaient « djinns » pour le sens de
 > *les hommes*, une explication qui donnait « terre » pour *la corruption*,
 > vingt mots dont la forme publiee n'etait pas celle qu'Hamidullah ecrit,
-> quatre cartes qui donnaient tort a une bonne reponse, et **vingt-deux
+> quatre cartes qui donnaient tort a une bonne reponse, **vingt-deux
 > endroits qui enseignaient que أَشَدّ et أَقْرَب signifient « plus »** —
-> dix-neuf cartes et trois explications, en ligne depuis le 22 aout.
+> dix-neuf cartes et trois explications, en ligne depuis le 22 aout — et
+> **vingt-sept endroits de plus** dont la glose tenait a une seule
+> tournure (أَدْرَى « dira », أَعْلَن « divulguent »).
 > **Tout cela est encore EN LIGNE** : la reparation est sur la branche, pas
 > en production.
 

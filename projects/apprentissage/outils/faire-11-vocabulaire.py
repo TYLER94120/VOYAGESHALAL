@@ -124,6 +124,92 @@ MOTS_OUTILS = {
 }
 
 # ==========================================================================
+# LE SEPTIEME GARDE-FOU — AJOUTE LE 5 NOVEMBRE
+#
+# CE QUE LA RONDE DU 4 NOVEMBRE AVAIT LAISSE OUVERT
+# -------------------------------------------------
+# Le sixieme garde-fou a retire أَشَدّ et أَقْرَب, dont la glose etait « plus ».
+# La meme mesure avait mis en evidence أَدْرَى, glose « dira » : 6 cartes et
+# 17 explications en ligne. Ce n'est pas un mot-outil, et son accord de 0,765
+# passe le seuil. Le compte rendu de ce soir-la disait qu'une regle « une
+# glose attestee surtout par une formule repetee n'est pas un sens » devrait
+# d'abord etre MESUREE contre les 138 entrees. C'est fait.
+#
+# L'EPISTEMOLOGIE, EN UNE PHRASE
+# ------------------------------
+# Si un mot n'apparait que dans une seule tournure, on ne peut pas distinguer
+# « ce mot veut dire X » de « cette tournure se traduit comme ca ». Les
+# versets de أَدْرَى sont tous « et qui te DIRA ce qu'est... » : on apprend
+# comment Hamidullah rend la formule, pas ce que porte le mot.
+#
+# LA MESURE, ET LE TROU QUI DONNE LE SEUIL
+# ----------------------------------------
+# Pour chaque entree : les versets ou le mot francais de la glose apparait,
+# puis les TROIS MOTS QUI LE PRECEDENT. Si un meme contexte revient dans la
+# plupart de ces versets, l'attestation tient a une formule.
+#
+#   أَعْلَن   « divulguent »  6/6  apres « ce qu ils »    100 %
+#   أَدْرَى   « dira »       12/13 apres « et qui te »     92 %
+#   ------------------------------------------------ le trou -----
+#   وِزْر     « fardeau »     4/7  apres « ne portera le »  57 %
+#   صادِق     « veridiques » 26/51 apres « si vous etes »   51 %
+#   قَمَر     « lune »       13/26 apres « soleil et la »   50 %
+#
+# Entre 92 % et 57 % il n'y a RIEN. Tout seuil pose dans ce trou refuse les
+# deux memes entrees — mesure faite a 60, 75, 80 et 90 %. A 50 % on perdrait
+# « lune » et « veridiques », deux gloses manifestement justes : c'est la
+# preuve que le seuil ne doit pas descendre.
+#
+# 0,75 est pris parce qu'il est au milieu du trou, et parce que c'est deja le
+# chiffre de MINI_P et de DEPENDANCE_MAXI — un seuil de plus, pas une
+# troisieme valeur a retenir.
+#
+# CE QUE CETTE REGLE NE DIT PAS
+# -----------------------------
+# Elle ne dit pas que la glose est FAUSSE. « divulguent » pour أَعْلَن est
+# probablement juste. Elle dit que la MESURE n'etablit pas un sens de mot :
+# c'est le troisieme etat, « non verifie », et le projet ne publie pas ce
+# qu'il n'a pas verifie. On refuse l'entree, on ne la corrige pas.
+#
+# L'APOSTROPHE SEPARE LES MOTS, ET C'EST UNE MESURE FAUSSE DE PLUS
+# ---------------------------------------------------------------
+# Ma premiere sonde gardait l'apostrophe dans le mot : « l'enfer » ne
+# correspondait donc pas a « enfer », et DEUX entrees sur 138 comptaient zero
+# verset attestant alors qu'elles en ont 77 et 9 (جَهَنَّم « enfer »,
+# طِين « argile »). Corrige : 137 entrees sur 138 sont mesurables.
+# ==========================================================================
+CONCENTRATION_MAXI = 0.75
+MINI_ATTESTANTS = 5
+
+
+def mots_entiers(t):
+    """Les mots d'une traduction, entiers. L'APOSTROPHE SEPARE."""
+    return [m for m in re.split(r'[^a-z0-9]+', nu_fr(t or '')) if m]
+
+
+def concentration(sens, versets, fr):
+    """(part du contexte le plus frequent, nombre de versets attestants).
+
+    Le contexte est les trois mots qui precedent la glose. Une part elevee
+    veut dire que la glose ne s'atteste que dans une tournure.
+    """
+    cible = mots_entiers(sens)
+    cible = cible[-1] if cible else ''
+    contextes = collections.Counter()
+    attestants = 0
+    for k in sorted(versets):
+        ms = mots_entiers(fr.get(k, ''))
+        ou = [i for i, m in enumerate(ms) if m == cible]
+        if not ou:
+            continue
+        attestants += 1
+        i = ou[0]
+        contextes[' '.join(ms[max(0, i - 3):i])] += 1
+    if attestants < MINI_ATTESTANTS:
+        return None, attestants
+    return contextes.most_common(1)[0][1] / attestants, attestants
+
+# ==========================================================================
 # LE CINQUIEME GARDE-FOU — AJOUTE LE 26 OCTOBRE
 #
 # CE QUE LA MESURE A TROUVE, ET C'ETAIT EN LIGNE
@@ -315,6 +401,9 @@ def batir_lexique(ar, fr, morpho):
         return max(majuscules, key=majuscules.get)
 
     lexique, ecartes = [], collections.Counter()
+    # Les entrees GARDEES que la mesure n'a pas pu juger. Un compte separe :
+    # ce ne sont pas des rejets, c'est le troisieme etat rendu visible.
+    ecartes_mous = collections.Counter()
     for lem, vs in versetsDuLemme.items():
         if len(vs) < MINI_VERSETS:
             ecartes['moins de %d versets' % MINI_VERSETS] += 1
@@ -391,6 +480,15 @@ def batir_lexique(ar, fr, morpho):
         if nu_fr(forme_affichee(choix)) in MOTS_OUTILS:
             ecartes['mot-outil, pas un sens'] += 1; continue
 
+        # SEPTIEME GARDE-FOU : la glose attestee par une seule tournure.
+        # Voir l'en-tete de CONCENTRATION_MAXI.
+        part, attestants = concentration(forme_affichee(choix), vs, fr)
+        if part is not None and part >= CONCENTRATION_MAXI:
+            ecartes['glose attestee par une formule'] += 1; continue
+        if part is None:
+            ecartes_mous['forme affichee attestee par moins de %d versets'
+                         % MINI_ATTESTANTS] += 1
+
         lexique.append({
             'lemme': lem,
             'sens': forme_affichee(choix),
@@ -423,19 +521,22 @@ def batir_lexique(ar, fr, morpho):
                 break
     lexique = [x for x in lexique if x['lemme'] not in refuses]
     lexique.sort(key=lambda x: -x['occurrences'])
-    return lexique, ecartes
+    return lexique, ecartes, ecartes_mous
 
 
 def main():
     rng = random.Random(20260822)
     ar, fr = charger()
     morpho = lire_morphologie()
-    lexique, ecartes = batir_lexique(ar, fr, morpho)
+    lexique, ecartes, ecartes_mous = batir_lexique(ar, fr, morpho)
 
     print('  %d mots attestes sur %d lemmes examines.'
           % (len(lexique), len(lexique) + sum(ecartes.values())))
     for k, v in ecartes.most_common():
         print('    ecartes : %-32s %5d' % (k, v))
+    # GARDEES mais non jugees : le chiffre est imprime, pas tu.
+    for k, v in ecartes_mous.most_common():
+        print('    gardees, non mesurables : %-20s %5d' % (k, v))
 
     parLemme = {x['lemme']: x for x in lexique}
     sensConnus = [x['sens'] for x in lexique]

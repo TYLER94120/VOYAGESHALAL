@@ -24,7 +24,7 @@ lu par personne et entrerait en conflit à la première fusion.
 
 ## À COLLER DANS LE CARNET, À PARTIR D'ICI
 
-# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 4 NOVEMBRE 2026
+# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 5 NOVEMBRE 2026
 
 > **Comment lire cette note.** Son corps a été écrit le 14 octobre. Chaque
 > ajout porte sa date, et **une mesure datée ne se rafraîchit pas : elle se
@@ -693,3 +693,95 @@ ce projet ne fait jamais, et une règle « une glose attestée surtout par une
 formule répétée n'est pas un sens » devrait d'abord être mesurée contre les
 138 entrées pour qu'on sache ce qu'elle détruirait. **Non vérifié, à toi de
 dire.**
+
+## 🔴 LE 5 NOVEMBRE — LA RÈGLE PROMISE, MESURÉE : ELLE TIENT
+
+La veille, j'avais écrit qu'une règle « une glose attestée surtout par une
+formule répétée n'est pas un sens » devait **d'abord être mesurée** contre les
+138 entrées. Mesure faite, et c'est le résultat qui décide, pas moi.
+
+### Le trou qui donne le seuil
+
+Pour chaque entrée : les versets où le mot français de la glose apparaît, puis
+les **trois mots qui le précèdent**. Si un même contexte revient dans la
+plupart de ces versets, l'attestation tient à une tournure, pas au mot.
+
+| part | lemme | glose | la formule |
+|---|---|---|---|
+| **100 %** | أَعْلَن | divulguent | 6/6 après « ce qu'ils » |
+| **92 %** | أَدْرَى | dira | 12/13 après « et qui te » |
+| | | | ← **le trou** |
+| 57 % | وِزْر | fardeau | 4/7 |
+| 51 % | صادِق | véridiques | 26/51 |
+| 50 % | قَمَر | lune | 13/26 |
+
+**Entre 92 % et 57 %, il n'y a rien.** Tout seuil posé dans ce trou refuse les
+deux mêmes entrées — vérifié à 60, 75, 80 et 90 %. À 50 % on perdrait « lune »
+et « véridiques », deux gloses manifestement justes : c'est la preuve que le
+seuil ne doit pas descendre, et pas une opinion sur l'arabe.
+
+> **À emporter : un seuil qui tombe dans un trou de la distribution n'est pas
+> un choix, c'est une lecture.** Quand on doit en inventer un, la question
+> n'est pas « quelle valeur me paraît juste » mais « où la distribution
+> change-t-elle de régime ». Et si elle ne change nulle part, il n'y a pas de
+> règle à écrire.
+
+0,75 est pris parce qu'il est au milieu du trou, et parce que c'est déjà le
+chiffre de deux autres seuils du générateur — un seuil de plus, pas une
+troisième valeur à retenir.
+
+### Ce que la règle ne dit pas
+
+Elle ne dit pas que la glose est **fausse**. « divulguent » pour أَعْلَن est
+probablement juste. Elle dit que **la mesure n'établit pas un sens de mot** :
+si un mot n'apparaît que dans une tournure, on ne peut pas distinguer « ce mot
+veut dire X » de « cette tournure se traduit comme ça ». C'est le troisième
+état, *non vérifié*, et le projet ne publie pas ce qu'il n'a pas vérifié. On
+refuse l'entrée, on ne la corrige pas — même règle que le cinquième garde-fou.
+
+Coût mesuré : lexique 138 → 136, cartes 1 197 → 1 181, questions 2 639 →
+2 623. Et **11 explications** d'autres sections ont perdu la phrase devenue
+fausse — comptées par la ligne de bilan ajoutée la veille, qui aurait dit
+« 0 » l'avant-veille.
+
+### Une troisième mesure fausse avant la bonne
+
+Ma première sonde gardait l'apostrophe à l'intérieur du mot. « l'enfer » ne
+correspondait donc pas à « enfer », et **deux entrées sur 138 comptaient zéro
+verset attestant** alors qu'elles en ont 77 et 9 (جَهَنَّم « enfer », طِين
+« argile »). Corrigé : 137 entrées sur 138 mesurables, une seule hors de
+portée.
+
+> **À emporter : en français, l'apostrophe sépare deux mots.** Une
+> tokenisation qui la garde fait disparaître tout mot que la langue élide —
+> et ce sont les plus courants. C'est la troisième unité de comparaison fausse
+> de ce projet, après la sous-chaîne arabe et « tous les lemmes du mot ».
+
+## CE QUE LE 5 NOVEMBRE MET SUR TA TABLE, ET QUI N'EST PAS DE MON RESSORT
+
+La carte de vocabulaire demande : « **Que signifie** le mot en vert ? »
+
+Ta propre règle, celle que la ronde me répète chaque nuit, dit : *« Un sens ou
+un commentaire s'**attribue** — il ne s'affirme jamais au nom du site. »*
+
+Mesuré à l'écran, pas dans le code : au moment où l'élève lit la question,
+**rien n'attribue ce sens à personne**. Le nom de Hamidullah et la référence
+du verset sont dans le panneau de correction, qui n'apparaît qu'**après** la
+réponse. La carte affirme donc un sens au nom du site, puis cite sa source une
+fois la réponse donnée.
+
+Deux formulations possibles, et c'est un choix d'éditeur :
+
+| | aujourd'hui | attribué |
+|---|---|---|
+| forme A, 654 cartes | « Que signifie le mot en vert ? » | « Par quel mot Hamidullah traduit-il le mot en vert ? » |
+| forme B, 527 cartes | « Dans ce verset, quel mot signifie « X » ? » | « Dans ce verset, quel mot Hamidullah rend-il par « X » ? » |
+
+**Le gabarit n'est pas un obstacle, et c'est mesuré** : la plus longue question
+servie aujourd'hui fait **485 caractères** et passe les trente contrôles de
+navigateur à 320 px. La formulation attribuée la plus longue en ferait **68**.
+
+Ce que ça change vraiment : l'exercice ne demande plus « que veut dire ce
+mot » mais « comment ce traducteur le rend ». C'est plus honnête et c'est un
+peu plus abstrait. **Je ne le fais pas de moi-même** — c'est la voix du site
+sur 1 181 cartes, et la voix du site est à toi. Un mot de ta part suffit.

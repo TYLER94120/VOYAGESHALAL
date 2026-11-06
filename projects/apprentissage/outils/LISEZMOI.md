@@ -83,6 +83,47 @@ retire pas la carte déjà écrite.
 > **À retenir avant de faire confiance à un seuil : quand un indicateur est
 > au maximum, demande ce qu'il mesure, pas s'il est bon.**
 
+### Une glose attestée par une seule tournure — mesuré le 5 novembre
+
+Le septième garde-fou. Si un mot n'apparaît que dans **une seule tournure**, on
+ne peut pas distinguer « ce mot veut dire X » de « cette tournure se traduit
+comme ça ». Les versets de أَدْرَى étaient tous « et qui te **dira** ce
+qu'est… » : 6 cartes et 17 explications en ligne enseignaient « dira » pour
+sens, et aucun des six garde-fous d'alors ne le voyait.
+
+Mesure : les versets où le mot français de la glose apparaît, puis les **trois
+mots qui le précèdent**. Sur les 138 entrées du 4 novembre :
+
+```
+100 %  أَعْلَن  « divulguent »   6/6  après « ce qu'ils »
+ 92 %  أَدْرَى  « dira »        12/13 après « et qui te »
+       ------------------------------------------- le trou
+ 57 %  وِزْر    « fardeau »      4/7
+ 51 %  صادِق    « véridiques »  26/51
+ 50 %  قَمَر    « lune »        13/26
+```
+
+**Le seuil est lu dans le trou, pas choisi** : tout seuil entre 60 et 90 %
+refuse les deux mêmes entrées. À 50 % on perdrait « lune » et « véridiques ».
+`CONCENTRATION_MAXI = 0.75` est au milieu du trou, et c'est déjà le chiffre de
+`MINI_P` et de `DEPENDANCE_MAXI`.
+
+La règle ne dit pas que la glose est fausse — « divulguent » pour أَعْلَن est
+probablement juste. Elle dit que la mesure n'établit pas un sens de mot : c'est
+*non vérifié*, et on refuse l'entrée, on ne la corrige pas.
+
+**Une entrée reste non mesurable** (moins de 5 versets attestent sa forme
+affichée). Le générateur l'imprime sur sa propre ligne, « gardées, non
+mesurables » : ce n'est pas un rejet, c'est le troisième état rendu visible.
+
+### L'apostrophe sépare deux mots, et c'est une mesure fausse de plus
+
+Ma première sonde gardait l'apostrophe **dans** le mot : « l'enfer » ne
+correspondait donc pas à « enfer », et deux entrées sur 138 comptaient **zéro**
+verset attestant alors qu'elles en ont 77 et 9 (جَهَنَّم, طِين). Une
+tokenisation qui garde l'apostrophe fait disparaître tout mot que le français
+élide — et ce sont les plus courants.
+
 ### Un outil qui ne compte que ses ajouts est aveugle à ses retraits
 
 Le même soir, `enrichir-explications.py` a retiré les trois explications

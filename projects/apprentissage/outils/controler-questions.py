@@ -1018,6 +1018,75 @@ def main():
             % (len(cartes_outils), ', '.join(cartes_outils[:3]),
                ', ...' if len(cartes_outils) > 3 else ''))
 
+    # ================================================================
+    # UNE GLOSE ATTESTEE PAR UNE SEULE TOURNURE N'EST PAS UN SENS
+    # AJOUTE LE 5 NOVEMBRE
+    # ================================================================
+    #
+    # Si un mot n'apparait que dans une seule tournure, on ne peut pas
+    # distinguer « ce mot veut dire X » de « cette tournure se traduit comme
+    # ca ». Les versets de أَدْرَى etaient tous « et qui te DIRA ce
+    # qu'est... » : 6 cartes et 17 explications en ligne enseignaient « dira »
+    # pour sens, et aucun des six garde-fous d'alors ne le voyait.
+    #
+    # LE SEUIL VIENT D'UN TROU MESURE, PAS D'UN CHOIX. Sur les 138 entrees du
+    # 4 novembre : أَعْلَن 100 %, أَدْرَى 92 %, puis RIEN jusqu'a وِزْر 57 %,
+    # صادِق 51 %, قَمَر 50 %. Tout seuil entre 60 et 90 % refuse les deux
+    # memes. A 50 % on perdrait « lune » et « veridiques », deux gloses
+    # justes.
+    #
+    # Elle ne dit pas que la glose est fausse — « divulguent » pour أَعْلَن est
+    # probablement juste. Elle dit que la mesure n'etablit pas un sens de mot.
+    #
+    # L'APOSTROPHE SEPARE. Une premiere sonde la gardait dans le mot, et
+    # « l'enfer » ne correspondait pas a « enfer » : deux entrees comptaient
+    # alors zero verset attestant alors qu'elles en ont 77 et 9.
+    CONCENTRATION_MAXI = 0.75
+    MINI_ATTESTANTS = 5
+    formules = 0
+    non_mesurables = 0
+    if SENS_DU_LEMME and LEMMES_DU_VERSET:
+        vl = {}
+        for k, lems in LEMMES_DU_VERSET.items():
+            for l in lems:
+                vl.setdefault(l, set()).add(k)
+
+        def _mots(t):
+            return [m for m in re.split(r'[^a-z0-9]+',
+                                        nu(t or '').replace(' ', ' ')) if m]
+
+        for l, s in sorted(SENS_DU_LEMME.items()):
+            vs = vl.get(l, set())
+            if not vs:
+                continue
+            cible = _mots(s)
+            cible = cible[-1] if cible else ''
+            ctx = {}
+            attestants = 0
+            for k in sorted(vs):
+                ms = _mots(francais.get(k, ''))
+                ou = [i for i, m in enumerate(ms) if m == cible]
+                if not ou:
+                    continue
+                attestants += 1
+                i = ou[0]
+                cle = ' '.join(ms[max(0, i - 3):i])
+                ctx[cle] = ctx.get(cle, 0) + 1
+            if attestants < MINI_ATTESTANTS:
+                non_mesurables += 1
+                continue
+            part = max(ctx.values()) / attestants
+            if part >= CONCENTRATION_MAXI:
+                formules += 1
+                formule = max(ctx, key=ctx.get)
+                fautes.append(
+                    'lexique : %s publie « %s », mais %.0f %% de ses %d '
+                    'versets attestants le placent apres les memes mots '
+                    '(« %s »). On ne peut pas distinguer le sens du mot de '
+                    'la traduction de la tournure : c\'est « non verifie », '
+                    'et le projet ne publie pas ce qu\'il n\'a pas verifie.'
+                    % (l, s, 100 * part, attestants, formule))
+
     cartes_vocab = verifiesVocab + nonVerifies
     if cartes_vocab and SENS_DU_LEMME is None:
         fautes.append(
@@ -1050,6 +1119,9 @@ def main():
     # meme chose les 74 jours ou dix-neuf cartes etaient en ligne.
     print('  %d gloses du lexique sont un mot-outil, %d carte(s) servie(s) '
           'le donnent pour sens.' % (outils_fautifs, len(cartes_outils)))
+    print('  %d glose(s) attestee(s) par une seule tournure (seuil %d %%), '
+          '%d non mesurable(s).'
+          % (formules, 100 * CONCENTRATION_MAXI, non_mesurables))
     print('  %d questions de pratique, confrontees mot-cle par mot-cle.' % pratiques)
     print('  %d questions de fait, recalculees depuis le corpus '
           '(%d faits).' % (faits_vus, len(FICHE)))
