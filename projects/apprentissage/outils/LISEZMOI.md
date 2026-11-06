@@ -116,6 +116,53 @@ probablement juste. Elle dit que la mesure n'établit pas un sens de mot : c'est
 affichée). Le générateur l'imprime sur sa propre ligne, « gardées, non
 mesurables » : ce n'est pas un rejet, c'est le troisième état rendu visible.
 
+### L'égalité ne décide pas — mesuré le 6 novembre
+
+Le huitième garde-fou. `max(sorted(...))` rend le **premier** maximum de la
+liste triée : à égalité, c'est **l'alphabet** qui choisissait la forme
+publiée. Le tri a été ajouté le 26 octobre pour tuer un non-déterminisme, et
+il le fait très bien — mais **rendre un choix arbitraire reproductible ne le
+rend pas justifié.** La sortie était stable, et personne ne décidait.
+
+Deux égalités sur 136 entrées :
+
+```
+بَلاغ  publiait « message »      10, à égalité avec « messager »   10
+لَقُ   publiait « rencontrent »   3, à égalité avec « rencontrez »  3
+```
+
+Pour بَلاغ, de l'autre côté de l'alphabet ce lemme aurait publié **le sens de
+رسول**. La glose était juste par chance. La marge du quatrième garde-fou
+protège contre la co-occurrence **entre** radicaux ; elle ne voit rien à
+l'intérieur d'un radical, où « message » et « messager » sont deux mots.
+
+**Aucun seuil à choisir : l'égalité est l'égalité.** On refuse, on ne
+départage pas.
+
+### Ce que l'apostrophe cassait DANS LE GÉNÉRATEUR — mesuré le 6 novembre
+
+La leçon de la veille portait sur ma sonde. Elle était aussi dans le
+générateur : les deux compteurs de **forme affichée** relevaient les mots avec
+`[A-Za-zÀ-ÿ']{4,}`, apostrophe comprise. « l'Enfer » formait donc un seul mot,
+de radical `l enfer`. Deux garanties tombaient en silence :
+
+- **جَهَنَّم « enfer »** : compteur local **vide** sur ses 77 versets, donc
+  repli sur le comptage **global** — exactement ce que la règle du 27 octobre
+  interdit, et rien ne le disait. Corrigé, Hamidullah écrit « l'Enfer » : la
+  glose devient « **Enfer** », ce que veut aussi la règle du 3 octobre.
+- **أَعْمَى « aveugles »** : « aveugle » au singulier est la forme de ses
+  propres versets, 13 contre 8. Le pluriel était publié.
+
+`mots_fr`, qui mesure l'**accord**, employait déjà `[a-z]{4,}` : l'apostrophe y
+séparait. Les quatre garde-fous chiffrés n'étaient donc pas touchés, et c'est
+vérifié. Mesure avant correction : sur 136 entrées, **deux** gloses changent,
+aucune autre ne bouge.
+
+> **À retenir : une garantie qui ne se vérifie pas ne tient pas.** Celle du
+> 27 octobre était écrite, commentée, et fausse pour deux entrées pendant dix
+> jours. `controler-questions.py` relit maintenant l'invariante entière — la
+> glose est la forme **strictement** la plus fréquente des versets du lemme.
+
 ### L'apostrophe sépare deux mots, et c'est une mesure fausse de plus
 
 Ma première sonde gardait l'apostrophe **dans** le mot : « l'enfer » ne

@@ -113,11 +113,11 @@ Compte dans les banques ce soir :
 | | |
 |---|---|
 | sections remplies | **11 sur 12** (`La vie du Prophete` est encore vide) |
-| questions sourcees | **2 623** |
+| questions sourcees | **2 603** |
 | lecons de sourate | **38** — Al-Fatiha, et les sourates 78 a 114 |
 | adresses au sitemap | 53 |
 
-**L'objectif des mille deux cents questions est depasse** : il y en a 2 623.
+**L'objectif des mille deux cents questions est depasse** : il y en a 2 603.
 
 > **Pourquoi cette ligne ne dit plus « le juz Amma complet ».** Elle le disait,
 > et c'est vrai dans le monde — mais **le depot n'a aucune donnee de
@@ -155,6 +155,19 @@ Compte dans les banques ce soir :
 > explications retirees. La regle ne dit pas que la glose est fausse — elle dit
 > que la mesure n'etablit pas un sens de mot, et le projet ne publie pas ce
 > qu'il n'a pas verifie.
+
+> **Et de 2 623 a 2 603, le 6 novembre.** Deux causes de la meme famille, sur
+> la facon dont la forme publiee etait DECIDEE. (1) `max(sorted(...))` rend le
+> premier maximum de la liste triee : a egalite, l'ALPHABET choisissait. بَلاغ
+> publiait « message » 10 contre « messager » 10 — de l'autre cote de
+> l'alphabet, ce lemme aurait publie le sens de رسول. Deux entrees refusees ;
+> aucun seuil a choisir, l'egalite est l'egalite. (2) Le releve des mots
+> gardait l'APOSTROPHE dans le mot : « l'Enfer » formait un seul mot, le
+> compteur local de جَهَنَّم etait vide sur ses 77 versets, et le code se
+> repliait sur le comptage global — ce que la regle du 27 octobre interdit.
+> Corrige : « enfer » devient « Enfer » et « aveugles » devient « aveugle »,
+> deux gloses plus proches de ce qu'ecrit le traducteur. L'accord n'etait pas
+> touche, son tokeniseur separait deja l'apostrophe.
 
 ### Mais le plancher par section ne l'est pas
 
@@ -297,7 +310,9 @@ tu promeus toi-meme.
 > endroits qui enseignaient que أَشَدّ et أَقْرَب signifient « plus »** —
 > dix-neuf cartes et trois explications, en ligne depuis le 22 aout — et
 > **vingt-sept endroits de plus** dont la glose tenait a une seule
-> tournure (أَدْرَى « dira », أَعْلَن « divulguent »).
+> tournure (أَدْرَى « dira », أَعْلَن « divulguent »), et **quarante et un
+> endroits** dont la forme publiee etait decidee par l'alphabet ou prise
+> hors des versets du mot.
 > **Tout cela est encore EN LIGNE** : la reparation est sur la branche, pas
 > en production.
 

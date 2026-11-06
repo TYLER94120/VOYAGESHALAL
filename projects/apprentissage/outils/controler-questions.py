@@ -1087,6 +1087,79 @@ def main():
                     'et le projet ne publie pas ce qu\'il n\'a pas verifie.'
                     % (l, s, 100 * part, attestants, formule))
 
+    # ================================================================
+    # LA GLOSE EST-ELLE LA FORME QUE LE TRADUCTEUR ECRIT LE PLUS SOUVENT
+    # POUR CE MOT-LA ? — AJOUTE LE 6 NOVEMBRE
+    # ================================================================
+    #
+    # La regle du 27 octobre dit que la forme affichee se prend dans les
+    # versets DU MOT, jamais dans un comptage global. Le 6 novembre, mesure :
+    # elle ne tenait pas pour deux entrees, et rien ne le disait.
+    #
+    # La cause est une unite de comparaison fausse. Le generateur relevait les
+    # mots avec `[A-Za-zÀ-ÿ']{4,}` — L'APOSTROPHE DANS LE MOT. « l'Enfer »
+    # formait donc un seul mot, de radical « l enfer » :
+    #
+    #   جَهَنَّم « enfer »   : compteur local VIDE sur ses 77 versets, donc
+    #       repli silencieux sur le comptage global — ce que la regle
+    #       interdit. Corrige, le traducteur ecrit « l'Enfer » : la glose
+    #       devient « Enfer », ce que veut aussi la regle du 3 octobre.
+    #   أَعْمَى « aveugles » : « aveugle » au singulier est la forme de ses
+    #       propres versets, 13 contre 8. Le pluriel etait publie.
+    #
+    # ET L'EGALITE NE DECIDE PAS. `max(sorted(...))` rend le premier maximum
+    # de la liste triee : a egalite, l'ALPHABET choisissait. Le tri a ete
+    # ajoute le 26 octobre pour tuer un non-determinisme, et il le fait — mais
+    # rendre un choix arbitraire REPRODUCTIBLE ne le rend pas JUSTIFIE.
+    #
+    #   بَلاغ publiait « message » 10, a egalite avec « messager » 10. De
+    #       l'autre cote de l'alphabet, ce lemme aurait publie le sens de
+    #       رسول. La glose etait juste par chance.
+    #   لَقُ  publiait « rencontrent » 3, a egalite avec « rencontrez ».
+    #
+    # Ce controle relit donc l'invariante entiere : la glose publiee est la
+    # forme la PLUS FREQUENTE, et STRICTEMENT la plus frequente, parmi les
+    # mots de son radical dans les versets du lemme. La capitalisation reste
+    # libre : c'est `forme_affichee` qui la decide, sur tout le corpus.
+    glose_locale = 0
+    glose_egalite = 0
+    if SENS_DU_LEMME and LEMMES_DU_VERSET:
+        vg = {}
+        for k, lems in LEMMES_DU_VERSET.items():
+            for l in lems:
+                vg.setdefault(l, set()).add(k)
+        for l, s in sorted(SENS_DU_LEMME.items()):
+            vs = vg.get(l, set())
+            if not vs:
+                continue
+            rad = nu(s)[:7]
+            local = {}
+            for k in sorted(vs):
+                for w in re.split(r'[^A-Za-zÀ-ÿ]+',
+                                  francais.get(k, '')):
+                    if len(w) >= 4 and nu(w)[:7] == rad:
+                        local[w.lower()] = local.get(w.lower(), 0) + 1
+            if not local:
+                continue
+            ordre = sorted(local.items(), key=lambda kv: (-kv[1], kv[0]))
+            if len(ordre) > 1 and ordre[0][1] == ordre[1][1]:
+                glose_egalite += 1
+                fautes.append(
+                    'lexique : %s publie « %s », mais « %s » et « %s » sont a '
+                    'EGALITE dans ses versets (%d partout) — c\'est l\'ordre '
+                    'alphabetique qui a choisi, pas la mesure. Un choix '
+                    'reproductible n\'est pas un choix justifie.'
+                    % (l, s, ordre[0][0], ordre[1][0], ordre[0][1]))
+                continue
+            if nu(s) != nu(ordre[0][0]):
+                glose_locale += 1
+                fautes.append(
+                    'lexique : %s publie « %s », mais la forme que Hamidullah '
+                    'ecrit le plus souvent POUR CE MOT est « %s » (%d contre '
+                    '%d). Le radical sert a compter, pas a choisir la forme.'
+                    % (l, s, ordre[0][0], ordre[0][1],
+                       local.get(nu(s), 0)))
+
     cartes_vocab = verifiesVocab + nonVerifies
     if cartes_vocab and SENS_DU_LEMME is None:
         fautes.append(
@@ -1122,6 +1195,9 @@ def main():
     print('  %d glose(s) attestee(s) par une seule tournure (seuil %d %%), '
           '%d non mesurable(s).'
           % (formules, 100 * CONCENTRATION_MAXI, non_mesurables))
+    print('  %d glose(s) qui ne sont pas la forme la plus frequente de leurs '
+          'versets, %d departagee(s) par l\'alphabet.'
+          % (glose_locale, glose_egalite))
     print('  %d questions de pratique, confrontees mot-cle par mot-cle.' % pratiques)
     print('  %d questions de fait, recalculees depuis le corpus '
           '(%d faits).' % (faits_vus, len(FICHE)))

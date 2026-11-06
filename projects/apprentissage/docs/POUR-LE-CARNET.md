@@ -24,7 +24,7 @@ lu par personne et entrerait en conflit à la première fusion.
 
 ## À COLLER DANS LE CARNET, À PARTIR D'ICI
 
-# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 5 NOVEMBRE 2026
+# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 6 NOVEMBRE 2026
 
 > **Comment lire cette note.** Son corps a été écrit le 14 octobre. Chaque
 > ajout porte sa date, et **une mesure datée ne se rafraîchit pas : elle se
@@ -785,3 +785,92 @@ Ce que ça change vraiment : l'exercice ne demande plus « que veut dire ce
 mot » mais « comment ce traducteur le rend ». C'est plus honnête et c'est un
 peu plus abstrait. **Je ne le fais pas de moi-même** — c'est la voix du site
 sur 1 181 cartes, et la voix du site est à toi. Un mot de ta part suffit.
+
+## 🔴🔴 LE 6 NOVEMBRE — UN CHOIX REPRODUCTIBLE N'EST PAS UN CHOIX JUSTIFIÉ
+
+Deux trouvailles de la même famille : **comment la forme publiée était
+décidée**. Et une règle écartée, parce que la mesure a dit non.
+
+### 1. L'alphabet décidait, et la sortie était stable
+
+Le générateur prend la forme française la plus fréquente avec
+`max(sorted(...))`. Or `max` rend le **premier** maximum de la liste triée :
+**à égalité, c'est l'ordre alphabétique qui choisit.**
+
+Le tri a été ajouté le 26 octobre pour tuer un non-déterminisme — la banque
+changeait à chaque passage — et il le fait parfaitement. Mais la stabilité
+qu'il a achetée a été prise pour une décision.
+
+| lemme | glose publiée | ex æquo | comptes |
+|---|---|---|---|
+| بَلاغ | « message » | « messager » | **10 = 10** |
+| لَقُ | « rencontrent » | « rencontrez » | **3 = 3** |
+
+Pour **بَلاغ**, de l'autre côté de l'alphabet ce lemme aurait publié
+« messager » — **le sens de رسول, pas le sien**. La glose était juste par
+chance. Deux entrées sur 136.
+
+> **À emporter, et ça vaut partout : rendre un choix arbitraire reproductible
+> ne le rend pas justifié.** Un `sorted()` posé pour stabiliser une sortie
+> règle le symptôme — la sortie qui bouge — et laisse l'arbitraire intact,
+> maintenant invisible parce que constant. Quand on ajoute un tri pour tuer
+> un non-déterminisme, il faut regarder **ce que le tri tranche**.
+
+Aucun seuil à choisir ici : l'égalité est l'égalité. On refuse l'entrée.
+
+### 2. Une garantie écrite, commentée, et fausse pendant dix jours
+
+La règle du 27 octobre dit : *la forme affichée se prend dans les versets du
+mot, jamais dans un comptage global.* Elle est écrite, elle a son commentaire,
+elle a sa mesure. **Elle ne tenait pas pour deux entrées**, et rien ne le
+disait.
+
+La cause est l'unité de comparaison, encore : les deux compteurs de forme
+affichée relevaient les mots avec `[A-Za-zÀ-ÿ']{4,}` — **l'apostrophe dans le
+mot**. « l'Enfer » formait un seul mot, de radical `l enfer` :
+
+- **جَهَنَّم « enfer »** : compteur local **vide** sur ses 77 versets, donc
+  repli silencieux sur le comptage **global**, ce que la règle interdit.
+  Corrigé, Hamidullah écrit « l'Enfer » dans tous : la glose devient
+  « **Enfer** » — ce que demandait aussi la règle du 3 octobre, suivre la
+  capitalisation du traducteur.
+- **أَعْمَى « aveugles »** : « aveugle » au singulier est la forme de ses
+  propres versets, 13 contre 8. Le pluriel était publié.
+
+L'**accord**, lui, n'était pas touché : son tokeniseur employait déjà
+`[a-z]{4,}`. Vérifié avant de corriger, et c'est pour ça que les quatre
+garde-fous chiffrés n'ont pas bougé. Sur 136 entrées, **deux** gloses
+changent, aucune autre.
+
+> **À emporter : une garantie qui ne se vérifie pas ne tient pas.** Celle-là
+> était juste dans son intention, documentée dans le code, et fausse en
+> pratique pour deux entrées. Un commentaire n'est pas un contrôle. Le
+> contrôle relit maintenant l'invariante entière.
+
+### 3. Et une règle ÉCARTÉE, parce que la distribution a dit non
+
+J'ai aussi mesuré une troisième règle candidate : *la glose affichée est-elle
+une forme minoritaire parmi les formes françaises du même radical ?*
+
+```
+25 %  سَجَدَ « prosternez »      27 %  لَقُ « rencontrent »
+38 %  أَعْمَى « aveugles »        38 %  حَشَرَ « rassemblés »
+41 %  مُصَدِّق  43 %  بَلاغ  44 %  مُؤْمِنَة  46 %  أَنذَرَ
+50 %  شَفِيع  51 %  غَفَرَ  53 %  أَحْسَن  54 %  (quatre entrées)
+```
+
+**Aucun trou.** La distribution monte sans rupture — l'inverse exact de la
+veille. Tout seuil y serait arbitraire, et détruirait des gloses justes :
+سَجَدَ « prosternez » est à 25 % parce que le verset emploie huit formes du
+même verbe, et أَعْمَى à 38 % parce que l'autre forme est le même mot au
+singulier. **La règle est écartée, et c'est la mesure qui l'écarte, pas mon
+avis.**
+
+> C'est l'application de la leçon de la veille dans l'autre sens : si la
+> distribution ne change nulle part de régime, **il n'y a pas de règle à
+> écrire**. Savoir qu'un chantier n'en est pas un est un résultat.
+
+### Les chiffres
+
+Lexique 136 → **134**. Cartes 1 181 → **1 161**. Questions 2 623 → **2 603**.
+Deux gloses corrigées, deux entrées refusées. 39 contrôles verts.

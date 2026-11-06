@@ -275,6 +275,42 @@ def nu_fr(s):
     return ''.join(c for c in s if unicodedata.category(c) != 'Mn').lower()
 
 
+# ==========================================================================
+# L'APOSTROPHE SEPARE DEUX MOTS — CORRIGE LE 6 NOVEMBRE
+#
+# CE REGEX GARDAIT L'APOSTROPHE DANS LE MOT
+# -----------------------------------------
+#     re.finditer(r"[A-Za-zÀ-ÿ']{4,}", t)
+#
+# « l'Enfer » formait donc UN seul mot, dont le radical de sept lettres est
+# « l enfer » et non « enfer ». Les deux compteurs de FORME AFFICHEE s'en
+# servaient, et deux garanties du projet tombaient en silence :
+#
+#   جَهَنَّم « enfer »  : son compteur LOCAL etait VIDE — Hamidullah ecrit
+#       « l'Enfer » dans ses 77 versets. Le code se repliait donc sur le
+#       comptage GLOBAL, qui est exactement ce que la regle du 27 octobre
+#       interdit. La garantie « la forme affichee se prend dans les versets
+#       du mot » ne tenait pas pour cette entree, et rien ne le disait.
+#   أَعْمَى « aveugles » : la forme la plus frequente de ses propres versets
+#       est « aveugle » au singulier (13 contre 8). Le pluriel etait publie.
+#   جَهَنَّم encore : le comptage des MAJUSCULES ne voyait jamais « Enfer »,
+#       toujours colle a son article. La regle du 3 octobre — suivre la
+#       capitalisation du traducteur — ne s'appliquait donc pas a lui.
+#
+# Mesure avant correction : sur les 136 entrees, DEUX gloses changent,
+# « enfer » -> « Enfer » et « aveugles » -> « aveugle ». Les deux rapprochent
+# la glose de ce qu'ecrit le traducteur ; aucune autre entree ne bouge.
+#
+# `mots_fr`, qui mesure l'ACCORD, employait deja `[a-z]{4,}` : l'apostrophe y
+# separait. Les quatre garde-fous chiffres ne sont donc pas touches, et c'est
+# verifie — seule la forme affichee l'etait.
+#
+# C'est la troisieme unite de comparaison fausse de ce projet, apres la
+# sous-chaine arabe et « tous les lemmes du mot ».
+# ==========================================================================
+MOT_FR = re.compile(r'[A-Za-zÀ-ÿ]{4,}')
+
+
 def mots_fr(t):
     """Les mots d'une traduction, ramenes a un radical de 7 lettres.
 
@@ -383,7 +419,7 @@ def batir_lexique(ar, fr, morpho):
     # ce drapeau-la ne suffit pas, et qu'il fallait aller voir le francais.
     casse = collections.defaultdict(collections.Counter)
     for t in fr.values():
-        for m in re.finditer(r"[A-Za-zÀ-ÿ']{4,}", t):
+        for m in MOT_FR.finditer(t):
             w = m.group(0)
             entier[nu_fr(w)[:7]][w.lower()] += 1
             avant = t[:m.start()].rstrip()
@@ -467,12 +503,42 @@ def batir_lexique(ar, fr, morpho):
         # chaque passage (mesure du 26 octobre).
         local = collections.Counter()
         for k in sorted(vs):
-            for mm in re.finditer(r"[A-Za-zÀ-ÿ']{4,}", fr[k]):
+            for mm in MOT_FR.finditer(fr[k]):
                 w = mm.group(0)
                 if nu_fr(w)[:7] == radical:
                     local[w.lower()] += 1
-        choix = max(sorted(local.items()), key=lambda kv: kv[1])[0] if local \
-            else entier[radical].most_common(1)[0][0]
+        # ==============================================================
+        # HUITIEME GARDE-FOU : L'EGALITE NE DECIDE PAS — 6 NOVEMBRE
+        #
+        # `max(sorted(...))` rend le PREMIER maximum dans l'ordre de la
+        # liste triee : a egalite, c'est donc l'ALPHABET qui choisit la
+        # forme publiee. Le tri a ete ajoute le 26 octobre pour tuer un
+        # non-determinisme, et il le fait tres bien. Mais rendre un choix
+        # arbitraire REPRODUCTIBLE ne le rend pas JUSTIFIE : la sortie
+        # etait stable, et personne ne decidait.
+        #
+        # Mesure du 6 novembre, sur les 136 entrees — DEUX egalites :
+        #
+        #   بَلاغ   publie « message » 10, a egalite avec « messager » 10.
+        #       Si l'alphabet avait penche de l'autre cote, ce lemme
+        #       publierait « messager » — le sens de رسول, pas le sien. La
+        #       glose est juste PAR CHANCE.
+        #   لَقُ    publie « rencontrent » 3, a egalite avec « rencontrez ».
+        #
+        # La marge du quatrieme garde-fou protege contre la co-occurrence
+        # ENTRE radicaux ; elle ne voit rien a l'interieur d'un radical,
+        # ou « message » et « messager » sont deux mots differents.
+        #
+        # Pas de seuil a choisir ici : l'egalite est l'egalite. On refuse,
+        # on ne departage pas.
+        # ==============================================================
+        if local:
+            ordre = sorted(local.items(), key=lambda kv: (-kv[1], kv[0]))
+            if len(ordre) > 1 and ordre[0][1] == ordre[1][1]:
+                ecartes['egalite : l\'alphabet aurait choisi'] += 1; continue
+            choix = ordre[0][0]
+        else:
+            choix = entier[radical].most_common(1)[0][0]
 
         # SIXIEME GARDE-FOU : un mot-outil n'est pas un sens. Voir l'en-tete
         # de MOTS_OUTILS. On teste la forme AFFICHEE, celle que la carte
