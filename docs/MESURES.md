@@ -4186,3 +4186,19 @@ fait / mesuré / pas fait et pourquoi
 **Ouvert.** Un export Search Console avec les URL et les clics par période.
 
 **Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
+
+## 6 novembre — nuit 24 de la routine autonome (jour pair : approfondissement)
+
+fait / mesuré / pas fait et pourquoi
+
+**Mesuré.** Aucune donnée nouvelle : pas d'export Search Console dans `docs/`, relevé du 17 octobre inchangé.
+
+**Fait.** Rien modifié cette nuit.
+
+**Pas fait et pourquoi.** Aucun écart prouvé à présenter, faute de positions et de clics récents.
+
+**Vérifié servi.** Rien publié. Le correctif « manger » du 31 octobre attend toujours sa vérification sur la page servie (dépend de la clé Google).
+
+**Ouvert.** Un export Search Console avec les URL et les clics par période.
+
+**Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
