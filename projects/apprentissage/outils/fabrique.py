@@ -57,6 +57,82 @@ def charger_coran():
     return arabe, francais
 
 
+# ==========================================================================
+# LE CORAN REPETE DES VERSETS — AJOUTE LE 7 NOVEMBRE
+#
+# CE QUI ETAIT EN LIGNE DEPUIS LE 29 SEPTEMBRE
+# --------------------------------------------
+# Une carte de « zakat-et-aumone » montrait l'arabe de 27:3 et demandait sa
+# traduction. L'un de ses leurres etait la traduction de 31:4 — dont l'arabe
+# est IDENTIQUE, caractere pour caractere. Les deux reponses :
+#
+#     bonne  : « ... acquittent la Zakat et croient avec certitude... »
+#     leurre : « ... acquittent la Zakat et qui croient avec certitude... »
+#
+# Un mot d'ecart, « qui ». L'eleve lit l'arabe, choisit le leurre, et le jeu
+# lui dit qu'il s'est trompe — alors qu'il vient de donner la traduction
+# qu'Hamidullah ecrit POUR CE MEME TEXTE. C'est le defaut le plus injuste
+# possible, et c'est la troisieme fois que ce projet le rencontre : les
+# invocations le 21 aout, quatre cartes de vocabulaire le 28 octobre, celle-ci.
+#
+# POURQUOI LE GARDE-FOU EXISTANT NE L'A PAS VU
+# --------------------------------------------
+# `choisir_leurres` refuse un leurre qui est un MORCEAU de la bonne reponse.
+# Ici « qui » est insere AU MILIEU : aucune des deux chaines n'est contenue
+# dans l'autre. Le test de sous-chaine ne pouvait pas le voir.
+#
+# Et le vivier de leurres, ce sont les traductions des versets du MEME theme.
+# Deux versets identiques parlent forcement du meme sujet : ils tombent donc
+# dans le meme vivier, et c'est le cas le plus probable, pas le plus rare.
+#
+# L'AMPLEUR, MESUREE
+# ------------------
+# 98 groupes de versets a l'arabe identique, 279 versets concernes. Les plus
+# gros sont des refrains : « Lequel donc des bienfaits de votre Seigneur
+# nierez-vous ? » 31 fois dans la sourate 55, « Malheur, ce jour-la, a ceux
+# qui criaient au mensonge » 11 fois dans la 77.
+#
+# Sur les 744 questions « Ce verset se traduit par : » du site, UNE etait en
+# faute. Une seule — mais le vivier se retire a chaque passage du generateur,
+# et rien n'empechait les autres.
+# ==========================================================================
+_DIACRITIQUES_AR = re.compile(r'[ً-ْٰۖ-ۭـ]')
+
+
+def _squelette_ar(s):
+    """Le texte arabe sans voyelles ni allongements, alifs ramenes a un seul.
+
+    Deux versets que le mushaf ecrit pareil doivent se reconnaitre meme si
+    leur vocalisation differe d'un signe.
+    """
+    s = _DIACRITIQUES_AR.sub('', s or '')
+    for a, b in (('ٱ', 'ا'), ('أ', 'ا'),
+                 ('إ', 'ا'), ('آ', 'ا'),
+                 ('ى', 'ي')):
+        s = s.replace(a, b)
+    return re.sub(r'\s+', ' ', s).strip()
+
+
+def traductions_jumelles(arabe, francais):
+    """Pour chaque verset : les traductions des versets au MEME arabe.
+
+    A passer en `exclure` a `choisir_leurres`. Une de ces traductions est une
+    REPONSE JUSTE a la question posee sur ce verset-la, quoi qu'en dise la
+    reference citee.
+    """
+    par_texte = {}
+    for k, t in arabe.items():
+        par_texte.setdefault(_squelette_ar(t), []).append(k)
+    out = {}
+    for ks in par_texte.values():
+        if len(ks) < 2:
+            continue
+        for k in ks:
+            out[k] = [francais[j] for j in ks
+                      if j != k and j in francais and francais[j]]
+    return out
+
+
 def noms_sourates():
     """Les 114 noms, verifies au moment ou ils ont ete publies."""
     f = CORAN / 'noms-sourates.json'

@@ -24,7 +24,7 @@ lu par personne et entrerait en conflit à la première fusion.
 
 ## À COLLER DANS LE CARNET, À PARTIR D'ICI
 
-# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 6 NOVEMBRE 2026
+# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 7 NOVEMBRE 2026
 
 > **Comment lire cette note.** Son corps a été écrit le 14 octobre. Chaque
 > ajout porte sa date, et **une mesure datée ne se rafraîchit pas : elle se
@@ -874,3 +874,99 @@ avis.**
 
 Lexique 136 → **134**. Cartes 1 181 → **1 161**. Questions 2 623 → **2 603**.
 Deux gloses corrigées, deux entrées refusées. 39 contrôles verts.
+
+## 🔴🔴 LE 7 NOVEMBRE — TREIZE QUESTIONS AVAIENT DISPARU, ET MES PROPRES CHIFFRES LE CACHAIENT
+
+Ce soir est le plus désagréable de la série, parce que la faute est la mienne
+et que **mes comptes rendus l'ont masquée pendant douze jours**.
+
+### Ce qui s'est passé le 26 octobre
+
+`faire-questions-claude.py --lot` **ajoute** ses questions à une banque déjà
+écrite — vingt questions « Le Coran en chiffres », écrites à la main et
+vérifiées contre 266 faits calculés. Un générateur relancé **écrase** cette
+banque.
+
+Le 26 octobre, la ronde a relancé `faire-11-vocabulaire.py` sans relancer le
+lot. La banque est passée de **1 259 à 1 216** cartes, et j'ai écrit que la
+baisse venait du retrait de trois entrées du lexique.
+
+La vraie arithmétique était **1 259 − 13 − 30**.
+
+### Pourquoi aucun contrôle ne pouvait le voir — et c'est le pire
+
+- `controler-index.py` compare l'index à la banque. **Les deux étaient refaits
+  ensemble**, donc parfaitement d'accord entre eux.
+- `controler-sections.py` recompte la table d'état de `DEPLOIEMENT.md`. **Et je
+  mettais cette table à jour chaque soir** sur le nouveau total.
+
+> **À emporter, et c'est la leçon la plus dure de ce carnet : un chiffre qu'on
+> justifie est un chiffre qu'on ne vérifie plus.** Chaque soir j'écrivais
+> « 1 259 → 1 216, voici pourquoi », et l'explication absorbait une perte que
+> je n'avais pas vue. Un contrôle qui compare deux choses produites par le même
+> passage ne contrôle rien : il constate qu'un outil est d'accord avec
+> lui-même. Il faut une **source extérieure au passage** — ici, le fichier de
+> lot.
+
+### Ce qui est réparé
+
+Les 13 questions sont revenues, **mêmes identifiants, même contenu** que dans
+le lot publié le 29 septembre, à un leurre près qui suit la correction du
+lexique du 27 octobre (« compagnie » → « compagnon »).
+
+`controler-questions.py` relit maintenant les fichiers de lot et vérifie que
+chaque question déclarée est **servie**. Le sabotage reproduit la faute
+historique — relancer `faire-11-vocabulaire.py` seul — et le contrôle répond :
+« 20 questions écrites à la main dans les lots, **13 absentes** des banques
+servies ».
+
+Et la consigne du mode d'emploi disait **« relancer un générateur, c'est
+relancer les deux étapes d'après »**. Il y en a cinq. Corrigée, et
+`classer-niveaux.py` passe désormais **après le lot** — l'ordre le mettait
+avant, donc les questions du lot sortaient sans niveau.
+
+> **Un pipeline dont une étape AJOUTE à ce qu'une autre ÉCRASE n'a pas d'ordre
+> partiel.** Il faut tout rejouer depuis l'étape touchée, *et* vérifier que
+> l'ajout est encore là.
+
+## 🔴 LE MÊME SOIR — LE CORAN RÉPÈTE DES VERSETS, ET DEUX CARTES EN LIGNE DONNAIENT TORT
+
+Une carte de *zakat-et-aumone* montrait l'arabe de **27:3** et demandait sa
+traduction. Un de ses leurres était la traduction de **31:4** — dont l'arabe
+est identique, caractère pour caractère :
+
+```
+bonne  : ... acquittent la Zakât et croient avec certitude en l'au-delà
+leurre : ... acquittent la Zakât et qui croient avec certitude en l'au-delà
+```
+
+**Un mot d'écart, « qui ».** L'élève lit l'arabe, choisit le leurre, et le jeu
+lui dit qu'il s'est trompé — alors qu'il vient de donner la traduction
+qu'Hamidullah écrit pour ce même texte. Une seconde carte, dans *la-priere*,
+faisait l'inverse sur la forme « continuer un verset ».
+
+Le garde-fou existant refuse un leurre qui est un **morceau** de la bonne
+réponse. Ici « qui » est inséré **au milieu** : aucune des deux chaînes n'est
+contenue dans l'autre.
+
+Et le vivier de leurres, ce sont les traductions des versets du **même
+thème** : deux versets identiques parlent forcément du même sujet, donc ils
+tombent dans le même vivier. **C'est le cas le plus probable, pas le plus
+rare.**
+
+Mesuré : **98 groupes** de versets à l'arabe identique, **279 versets**
+concernés. Les plus gros sont des refrains — 31 fois dans la sourate 55, 11
+fois dans la 77. Sur les 744 questions « Ce verset se traduit par : » et les
+256 « Continuer un verset », **deux** étaient en faute. Deux seulement — mais
+le vivier se retire à chaque passage du générateur, et rien n'empêchait les
+autres.
+
+> **À emporter : quand on fabrique des mauvaises réponses à partir de vrai
+> texte, il faut savoir ce que le texte répète.** Le piège n'est pas la
+> coïncidence rare, c'est la structure : ce qui se ressemble se range ensemble,
+> et le vivier des leurres est précisément un paquet de choses qui se
+> ressemblent.
+
+Réparé dans `fabrique.py`, donc d'un seul endroit pour les deux générateurs qui
+écrivent ce thème. Les chiffres : questions 2 603 → **2 616** (+13 restaurées,
+et deux cartes dont les leurres changent). 39 contrôles verts.

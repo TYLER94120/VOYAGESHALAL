@@ -1160,6 +1160,63 @@ def main():
                     % (l, s, ordre[0][0], ordre[0][1],
                        local.get(nu(s), 0)))
 
+    # ================================================================
+    # LES QUESTIONS ECRITES A LA MAIN SONT-ELLES ENCORE LA ?
+    # AJOUTE LE 7 NOVEMBRE
+    # ================================================================
+    #
+    # TREIZE QUESTIONS ONT DISPARU DE LA BRANCHE PENDANT DOUZE JOURS.
+    #
+    # `faire-questions-claude.py --lot` AJOUTE ses questions a une banque deja
+    # ecrite. Un generateur relance ECRASE cette banque. Le 26 octobre, la
+    # ronde a relance faire-11-vocabulaire.py sans relancer le lot : la banque
+    # est passee de 1 259 a 1 216 cartes, et j'ai attribue la baisse entiere
+    # au retrait de trois entrees du lexique. En verite c'etait
+    # 1 259 - 13 (perdues en silence) - 30 (les trois entrees).
+    #
+    # AUCUN CONTROLE NE POUVAIT LE VOIR, et c'est le pire du defaut :
+    # controler-index.py compare l'index a la banque — les deux etaient
+    # refaits ensemble, donc d'accord entre eux. controler-sections.py
+    # recompte la table d'etat de DEPLOIEMENT.md — et je mettais cette table
+    # a jour chaque soir sur le nouveau total. Chaque chiffre que je
+    # « justifiais » absorbait une perte que je n'avais pas vue.
+    #
+    # Le fichier de lot est la SOURCE : ce qu'il declare doit se retrouver
+    # servi. Si une entree est legitimement refusee par le generateur, ce
+    # controle rougit — et c'est le bon comportement : on retire l'entree du
+    # lot, on ne la laisse pas disparaitre en silence.
+    #
+    # La comparaison se fait sur le TEXTE de la question : le lot ne porte pas
+    # d'identifiant, il est calcule par le generateur.
+    lots_lus = 0
+    lots_absents = 0
+    dossier_lots = RACINE / 'outils' / 'lots'
+    if dossier_lots.is_dir():
+        servies = {}
+        for chemin in fichiers:
+            servies[chemin.stem] = {nu(q.get('question', ''))
+                                    for q in json.loads(
+                                        chemin.read_text(encoding='utf-8'))}
+        for lot in sorted(dossier_lots.glob('*.json')):
+            try:
+                entrees = json.loads(lot.read_text(encoding='utf-8'))
+            except Exception as e:
+                fautes.append('lots/%s : illisible (%s)' % (lot.name, e))
+                continue
+            for e in entrees:
+                lots_lus += 1
+                sec = e.get('section') or ''
+                texte = nu(e.get('question', ''))
+                if texte and texte in servies.get(sec, ()):
+                    continue
+                lots_absents += 1
+                fautes.append(
+                    'lots/%s : « %s » declare pour la section %s et ABSENT '
+                    'des questions servies. Un generateur relance ecrase la '
+                    'banque ; le lot doit etre relance apres lui, et '
+                    'classer-niveaux.py apres le lot.'
+                    % (lot.name, str(e.get('question', ''))[:60], sec))
+
     cartes_vocab = verifiesVocab + nonVerifies
     if cartes_vocab and SENS_DU_LEMME is None:
         fautes.append(
@@ -1198,6 +1255,8 @@ def main():
     print('  %d glose(s) qui ne sont pas la forme la plus frequente de leurs '
           'versets, %d departagee(s) par l\'alphabet.'
           % (glose_locale, glose_egalite))
+    print('  %d question(s) ecrite(s) a la main dans les lots, %d absente(s) '
+          'des banques servies.' % (lots_lus, lots_absents))
     print('  %d questions de pratique, confrontees mot-cle par mot-cle.' % pratiques)
     print('  %d questions de fait, recalculees depuis le corpus '
           '(%d faits).' % (faits_vus, len(FICHE)))

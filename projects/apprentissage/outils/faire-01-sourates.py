@@ -76,6 +76,7 @@ def main():
     # ou le registre de langue est homogene.
     vivier = [francais[(s, v)] for s in COURTES for v in range(1, compte[s] + 1)
               if (s, v) in francais]
+    jumeaux = F.traductions_jumelles(arabe, francais)
 
     questions = []
 
@@ -87,7 +88,11 @@ def main():
             ar = nettoyer_arabe(s, v, arabe.get((s, v), ''))
             if not fr or not ar or len(fr) < 25:
                 continue        # un verset tres court ne se distingue pas assez
-            leurres = F.choisir_leurres(fr, vivier, 3, rng)
+            # LE CORAN REPETE DES VERSETS : la traduction d'un verset
+            # au meme arabe est une reponse JUSTE ici. Voir l'en-tete de
+            # `traductions_jumelles` dans fabrique.py.
+            leurres = F.choisir_leurres(fr, vivier, 3, rng,
+                                        exclure=jumeaux.get((s, v), ()))
             if not leurres:
                 continue
             questions.append(F.question(

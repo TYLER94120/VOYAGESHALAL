@@ -17,11 +17,14 @@ python3 outils/faire-11-vocabulaire.py   # écrit aussi outils/lexique.json
 python3 outils/faire-pratique.py         # les bases de la pratique
 
 python3 outils/enrichir-explications.py  # ← a besoin du lexique ci-dessus
-python3 outils/classer-niveaux.py        # ← APRÈS eux, jamais avant
 
-python3 outils/faire-lecon-sourate.py    # les 20 leçons de sourate
+python3 outils/faire-lecon-sourate.py    # les 38 leçons de sourate
 python3 outils/faire-sourates.py         # l'index des 114 (après les leçons)
 python3 outils/faire-questions-claude.py --lot outils/lots/lot-01-chiffres.json
+python3 outils/classer-niveaux.py        # ← APRÈS TOUT CE QUI ÉCRIT (voir plus bas)
+
+python3 outils/faire-index-sections.py   # l'index allégé des banques
+python3 outils/faire-sections-pages.py   # les 12 pages de section
 python3 outils/faire-sitemap.py          # ← EN DERNIER : il lit ce qui existe
 python3 outils/controler-questions.py    # ← et le contrôle en dernier
 ```
@@ -29,6 +32,42 @@ python3 outils/controler-questions.py    # ← et le contrôle en dernier
 `classer-niveaux.py` relit les banques et recalcule tout : on peut le
 relancer autant de fois qu'on veut, il ne dépend pas de son propre passage
 précédent.
+
+### « Les deux étapes d'après » était faux : c'est TOUT ce qui vient après
+
+La phrase ci-dessous disait **« relancer un générateur, c'est relancer les deux
+étapes d'après »**. Il y en a cinq, et la phrase a coûté treize questions
+pendant douze jours.
+
+`faire-questions-claude.py --lot` **ajoute** ses questions à une banque déjà
+écrite. Un générateur relancé **écrase** cette banque. Le 26 octobre, la ronde
+a relancé `faire-11-vocabulaire.py` sans relancer le lot :
+
+```
+1 259 cartes  ->  1 216
+```
+
+et j'ai attribué la baisse entière au retrait de trois entrées du lexique. La
+vraie arithmétique était **1 259 − 13 − 30**.
+
+**Aucun contrôle ne pouvait le voir**, et c'est le pire du défaut :
+`controler-index.py` compare l'index à la banque — les deux étaient refaits
+ensemble, donc d'accord entre eux. `controler-sections.py` recompte la table
+d'état de `DEPLOIEMENT.md` — et je mettais cette table à jour chaque soir sur
+le nouveau total. **Chaque chiffre que je « justifiais » absorbait une perte
+que je n'avais pas vue.**
+
+`controler-questions.py` relit maintenant les fichiers de lot et vérifie que
+chaque question déclarée est **servie**. Sabotage : relancer
+`faire-11-vocabulaire.py` seul, et le contrôle dit « 20 questions écrites à la
+main dans les lots, **13 absentes** des banques servies ».
+
+Et `classer-niveaux.py` passe désormais **après le lot** : l'ordre le mettait
+avant, donc les questions du lot sortaient sans `niveau`.
+
+> **À retenir : un pipeline dont une étape AJOUTE à ce qu'une autre ÉCRASE n'a
+> pas d'ordre partiel.** Il faut tout rejouer depuis l'étape touchée, ou
+> vérifier que l'ajout est encore là. Les deux, de préférence.
 
 ### Ce que « un état faux » veut dire, mesuré
 
@@ -47,7 +86,9 @@ ajoute le niveau, et **aucun des deux ne se relance tout seul**. Un
 générateur lancé seul ne signale rien : il réussit, et il défait les deux
 étapes suivantes. Repéré au `git status`, annulé au `git checkout`.
 
-**Donc : relancer un générateur, c'est relancer les deux étapes d'après.**
+**Donc : relancer un générateur, c'est relancer TOUT CE QUI VIENT APRÈS.**
+Cette phrase disait « les deux étapes d'après » — c'était faux, et ça a
+coûté treize questions pendant douze jours. Voir la section ci-dessus.
 Ou ne pas le relancer du tout, si on n'a touché qu'un commentaire.
 
 ### Un mot-outil n'est pas un sens — mesuré le 4 novembre

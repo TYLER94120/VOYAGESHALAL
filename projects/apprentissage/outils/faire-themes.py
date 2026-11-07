@@ -117,6 +117,11 @@ def main():
         # Un debutant hesite alors entre quatre phrases qui parlent toutes du
         # meme sujet — c'est la difficulte voulue, et rien n'est invente.
         vivier = [francais[(s, v)] for (s, v) in versets]
+        # LE CORAN REPETE DES VERSETS. Deux versets au meme arabe parlent
+        # forcement du meme sujet : ils tombent donc dans le MEME vivier, et
+        # la traduction de l'un est une reponse JUSTE a la question posee sur
+        # l'autre. Voir l'en-tete de `traductions_jumelles` dans fabrique.py.
+        jumeaux = F.traductions_jumelles(arabe, francais)
         questions = []
 
         # ---- Forme A : la traduction du sens --------------------------
@@ -124,7 +129,8 @@ def main():
             fr = francais[(s, v)]
             if not (45 <= len(fr) <= 300):
                 continue
-            leurres = F.choisir_leurres(fr, vivier, 3, rng)
+            leurres = F.choisir_leurres(fr, vivier, 3, rng,
+                                        exclure=jumeaux.get((s, v), ()))
             if not leurres:
                 continue
             questions.append(F.question(
@@ -153,7 +159,17 @@ def main():
                 suites.append((s, v, c[0], c[1]))
         vivier_suites = [x[3] for x in suites]
         for (s, v, debut, suite) in suites:
-            leurres = F.choisir_leurres(suite, vivier_suites, 3, rng)
+            # La MEME cause sur la forme B : la seconde moitie de la
+            # traduction d'un verset jumeau continue aussi bien le
+            # debut montre. Mesure du 7 novembre : une carte de
+            # « la-priere » proposait la suite de 27:3 pour 31:4.
+            jum_suites = []
+            for tj in jumeaux.get((s, v), ()):
+                cj = couper(tj)
+                if cj:
+                    jum_suites.append(cj[1])
+            leurres = F.choisir_leurres(suite, vivier_suites, 3, rng,
+                                        exclure=jum_suites)
             if not leurres:
                 continue
             questions.append(F.question(

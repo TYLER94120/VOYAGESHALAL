@@ -113,11 +113,11 @@ Compte dans les banques ce soir :
 | | |
 |---|---|
 | sections remplies | **11 sur 12** (`La vie du Prophete` est encore vide) |
-| questions sourcees | **2 603** |
+| questions sourcees | **2 616** |
 | lecons de sourate | **38** — Al-Fatiha, et les sourates 78 a 114 |
 | adresses au sitemap | 53 |
 
-**L'objectif des mille deux cents questions est depasse** : il y en a 2 603.
+**L'objectif des mille deux cents questions est depasse** : il y en a 2 616.
 
 > **Pourquoi cette ligne ne dit plus « le juz Amma complet ».** Elle le disait,
 > et c'est vrai dans le monde — mais **le depot n'a aucune donnee de
@@ -168,6 +168,21 @@ Compte dans les banques ce soir :
 > Corrige : « enfer » devient « Enfer » et « aveugles » devient « aveugle »,
 > deux gloses plus proches de ce qu'ecrit le traducteur. L'accord n'etait pas
 > touche, son tokeniseur separait deja l'apostrophe.
+
+> **Et de 2 603 a 2 616, le 7 novembre — un nombre qui REMONTE.** TREIZE
+> questions ecrites a la main avaient disparu de la branche depuis le
+> 26 octobre. `faire-questions-claude.py --lot` AJOUTE ses questions a une
+> banque deja ecrite ; un generateur relance l'ECRASE. Ce soir-la la banque du
+> vocabulaire est passee de 1 259 a 1 216 cartes et j'ai attribue la baisse au
+> retrait de trois entrees du lexique : la vraie arithmetique etait
+> 1 259 - 13 - 30. Aucun controle ne pouvait le voir — l'index et la banque
+> etaient refaits ensemble, et je mettais cette table d'etat a jour chaque soir
+> sur le nouveau total. Les 13 sont revenues avec leurs identifiants, et
+> controler-questions.py relit maintenant les fichiers de lot.
+>
+> Le meme soir, DEUX cartes en ligne donnaient tort a une bonne reponse : le
+> Coran repete des versets (98 groupes, 279 versets), et la traduction d'un
+> verset jumeau servait de leurre. Corrige dans fabrique.py.
 
 ### Mais le plancher par section ne l'est pas
 
@@ -312,7 +327,8 @@ tu promeus toi-meme.
 > **vingt-sept endroits de plus** dont la glose tenait a une seule
 > tournure (أَدْرَى « dira », أَعْلَن « divulguent »), et **quarante et un
 > endroits** dont la forme publiee etait decidee par l'alphabet ou prise
-> hors des versets du mot.
+> hors des versets du mot, et **deux cartes qui donnaient tort a une bonne
+> reponse** parce que le leurre traduisait un verset jumeau.
 > **Tout cela est encore EN LIGNE** : la reparation est sur la branche, pas
 > en production.
 
@@ -326,7 +342,7 @@ Ce qu'un `publier.py` enverrait, compte entre `59e67ae` et la branche :
 | CSS | 2 |
 | sitemap | 1 |
 | **total en ligne** | **72** |
-| restent au depot (`outils/`, `.md`) | 66 |
+| restent au depot (`outils/`, `.md`) | 68 |
 
 Aucun fichier ajoute, aucun supprime : les 72 sont des modifications.
 
