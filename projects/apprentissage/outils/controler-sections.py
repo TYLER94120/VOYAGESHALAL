@@ -474,6 +474,75 @@ def main():
           % etats_lus)
 
     # ================================================================
+    # LES VALEURS DU CAHIER NE SE CHANGENT PAS — AJOUTE LE 8 NOVEMBRE
+    # ================================================================
+    #
+    # `data/sections.json` porte les decisions de Mohamed : le numero d'ordre
+    # d'une section, sa cible de questions, le nombre de branches et le ratio
+    # de sa geometrie. Sa consigne est explicite : « si tu penses qu'une
+    # valeur est mauvaise, tu la SIGNALES, tu ne la changes pas. »
+    #
+    # Rien ne le verifiait. Ce fichier est lu par sept outils, cinq controles
+    # de navigateur et neuf fichiers du site — et aucun ne demandait si ses
+    # valeurs sont toujours celles qu'il a posees.
+    #
+    # L'ANCRE EST GIT, et c'est le point. La lecon du 7 novembre : un controle
+    # qui compare deux choses produites par le meme passage ne controle rien,
+    # il constate qu'un outil est d'accord avec lui-meme. Treize questions
+    # avaient disparu sans qu'aucun controle bronche, parce que l'index et la
+    # banque etaient refaits ensemble. Ici la reference est HORS du passage :
+    # c'est le commit ou la couche V2 a pose ces valeurs.
+    #
+    # Mesure du 8 novembre : depuis le 21 aout, les 12 slugs sont identiques
+    # et AUCUNE valeur chiffree n'a bouge. Un seul champ de texte a change, le
+    # 3 octobre — « De Adam a Muhammad. » est devenu « D'Adam a Muhammad. »,
+    # l'elision que le controle des questions exige par ailleurs. Les champs
+    # de texte restent donc libres : une faute de francais se corrige. Les
+    # DECISIONS, non.
+    REPERE_CAHIER = '92b001a'      # 21 aout : « La couche visuelle V2 »
+    DECISIONS = ('num', 'cible', 'branches', 'ratio')
+    cahier_lus = 0
+    r = subprocess.run(
+        ['git', 'show', '%s:./data/sections.json' % REPERE_CAHIER],
+        cwd=str(RACINE), capture_output=True, text=True)
+    if r.returncode != 0:
+        fautes.append(
+            'cahier : git ne connait pas %s, le commit ou les valeurs de '
+            'section ont ete posees. Ce controle NE MESURE DONC RIEN sur '
+            'elles — ce n\'est pas une faute du site. Le depot est '
+            'superficiel : `git fetch --unshallow` le repare.'
+            % REPERE_CAHIER)
+    else:
+        try:
+            base = {x['slug']: x for x in json.loads(r.stdout)}
+        except Exception as e:
+            base = None
+            fautes.append('cahier : %s:data/sections.json est illisible (%s)'
+                          % (REPERE_CAHIER, e))
+        if base is not None:
+            vus = {s['slug']: s for s in secs}
+            if set(base) != set(vus):
+                fautes.append(
+                    'cahier : les sections ne sont plus les memes qu\'au '
+                    'repere %s — partie(s) : %s ; ajoutee(s) : %s. Ajouter ou '
+                    'retirer une section est une decision d\'editeur.'
+                    % (REPERE_CAHIER,
+                       ', '.join(sorted(set(base) - set(vus))) or 'aucune',
+                       ', '.join(sorted(set(vus) - set(base))) or 'aucune'))
+            for s in sorted(set(base) & set(vus)):
+                for k in DECISIONS:
+                    cahier_lus += 1
+                    if base[s].get(k) != vus[s].get(k):
+                        fautes.append(
+                            'cahier : %s, « %s » vaut %r et valait %r au '
+                            'repere %s. C\'est une valeur du cahier : on la '
+                            'signale, on ne la change pas.'
+                            % (s, k, vus[s].get(k), base[s].get(k),
+                               REPERE_CAHIER))
+    print('  %d valeur(s) de decision du cahier confrontee(s) au commit %s.'
+          % (cahier_lus, REPERE_CAHIER))
+
+    # ================================================================
     # ET LE TABLEAU DE CE QU'UNE PUBLICATION ENVERRAIT
     # AJOUTE LE 4 NOVEMBRE
     # ================================================================

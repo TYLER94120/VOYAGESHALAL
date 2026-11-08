@@ -331,6 +331,15 @@ tu promeus toi-meme.
 > reponse** parce que le leurre traduisait un verset jumeau.
 > **Tout cela est encore EN LIGNE** : la reparation est sur la branche, pas
 > en production.
+>
+> Precision du 8 novembre, parce que ce « en ligne » est une DEDUCTION et
+> pas une observation : le site n'est pas joignable depuis le conteneur
+> (code 000 sur les trois URL, verifie ce soir). Ce qui est verifie, c'est
+> le depot : AUCUN commit de `main` ne touche `projects/apprentissage/`
+> depuis le repere de publication, et aucune de mes corrections n'est un
+> ancetre de `main`. La production ne peut donc servir que l'etat du
+> 29 septembre — sauf si quelqu'un a publie depuis un autre arbre, ce que
+> je ne peux pas voir d'ici. VERIFIE AU DEPOT, NON VERIFIE EN LIGNE.
 
 Ce qu'un `publier.py` enverrait, compte entre `59e67ae` et la branche :
 
@@ -342,7 +351,7 @@ Ce qu'un `publier.py` enverrait, compte entre `59e67ae` et la branche :
 | CSS | 2 |
 | sitemap | 1 |
 | **total en ligne** | **72** |
-| restent au depot (`outils/`, `.md`) | 68 |
+| restent au depot (`outils/`, `.md`) | 69 |
 
 Aucun fichier ajoute, aucun supprime : les 72 sont des modifications.
 

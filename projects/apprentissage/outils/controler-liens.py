@@ -64,6 +64,7 @@ def main():
         sys.exit('ARRET : aucune page a controler.')
 
     morts, externes, verifies = [], set(), 0
+    embarques = 0        # data:, mailto:, tel: — ne sortent pas du site
     for p in pages:
         t = p.read_text(encoding='utf-8')
         ancres = set(re.findall(r'id="([^"]+)"', t))
@@ -77,8 +78,30 @@ def main():
             if f.is_file():
                 ancres |= set(re.findall(r'id=\\?"([^"\\]+)', f.read_text(encoding='utf-8')))
         for lien in HREF.findall(t):
-            if lien.startswith(('http://', 'https://', 'mailto:', 'data:', '//')):
-                externes.add(lien.split('/')[2] if '//' in lien else lien)
+            # UN « data: » N'EST PAS UN DOMAINE — CORRIGE LE 8 NOVEMBRE
+            #
+            # La ligne de bilan annoncait « 4 domaine(s) externe(s), non
+            # suivis : , fonts.googleapis.com, fonts.gstatic.com,
+            # islampasapas.fr ». Le premier etait VIDE.
+            #
+            # C'est le favicon, une image SVG posee en clair dans l'attribut :
+            # `href='data:image/svg+xml,...xmlns=%27http://www.w3.org/2000/
+            # svg%27...'`. Le `//` du xmlns tombait dans `split('/')[2]`, qui
+            # rendait une chaine vide. Le compte etait donc faux de un, et le
+            # bilan imprimait un nom de domaine qui n'existe pas.
+            #
+            # Un contenu embarque ne sort pas du site : il n'a pas de domaine
+            # et n'a rien a faire dans ce compte. On les compte a part.
+            if lien.startswith(('data:', 'mailto:', 'tel:')):
+                embarques += 1
+                continue
+            if lien.startswith(('http://', 'https://', '//')):
+                morceaux = lien.split('//', 1)[1].split('/')
+                if morceaux and morceaux[0]:
+                    externes.add(morceaux[0])
+                else:
+                    morts.append('%s : lien externe sans domaine, %r'
+                                 % (p.name, lien[:60]))
                 continue
             if lien.startswith('#'):
                 if lien[1:] and lien[1:] not in ancres:
@@ -120,6 +143,8 @@ def main():
 
     print('  %d liens internes verifies dans %d pages, aucun mort.'
           % (verifies, len(pages)))
+    print('  %d lien(s) embarque(s) (data:, mailto:, tel:) — pas un domaine.'
+          % embarques)
     if externes:
         print('  %d domaine(s) externe(s), non suivis : %s'
               % (len(externes), ', '.join(sorted(externes)[:6])))

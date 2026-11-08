@@ -33,6 +33,54 @@ python3 outils/controler-questions.py    # ← et le contrôle en dernier
 relancer autant de fois qu'on veut, il ne dépend pas de son propre passage
 précédent.
 
+### Contre quoi chaque contrôle s'ancre — audit du 8 novembre
+
+La leçon du 7 novembre — *un contrôle qui compare deux choses produites par le
+même passage ne contrôle rien* — appliquée aux neuf contrôles Python. Pour
+chacun : **quelle source extérieure au pipeline** lui sert de référence.
+
+| contrôle | son ancre |
+|---|---|
+| `controler-lecons` | le corpus coranique, les noms, Unicode |
+| `controler-questions` | le corpus, la morphologie, le lexique, **les fichiers de lot** |
+| `controler-sections` | le site servi, **git** (dates, delta de publication, valeurs du cahier) |
+| `controler-sitemap` | le site servi, Unicode, git (lastmod) |
+| `controler-redirections` | le site servi |
+| `controler-allege`, `peser` | git |
+| `controler-liens` | le système de fichiers et `vercel.json` — la résolution réelle du serveur |
+| `controler-index` | **aucune.** Il compare l'index aux banques, deux artefacts du même passage |
+
+`controler-index` est exactement celui qui était aveugle le 7 novembre. Il
+reste utile — une divergence entre l'index et les banques est une vraie faute —
+mais il ne peut pas voir une **omission commune**. C'est `controler-questions`
+qui porte désormais l'ancre extérieure, par les fichiers de lot.
+
+> **À retenir : la question à poser d'un contrôle n'est pas « que compare-t-il »
+> mais « contre quoi s'ancre-t-il ».** Deux artefacts d'un même passage sont
+> toujours d'accord sur ce qu'ils ont tous les deux oublié.
+
+### Les valeurs du cahier sont ancrées à git — ajouté le 8 novembre
+
+`data/sections.json` porte les décisions de Mohamed : numéro d'ordre, cible de
+questions, branches et ratio de la géométrie. Sa consigne : *« si tu penses
+qu'une valeur est mauvaise, tu la signales, tu ne la changes pas. »* Rien ne le
+vérifiait, alors que ce fichier est lu par sept outils, cinq contrôles de
+navigateur et neuf fichiers du site.
+
+`controler-sections.py` confronte maintenant les **48** valeurs de décision
+(12 sections × 4 champs) au commit `92b001a` du 21 août, celui où la couche V2
+les a posées. L'ancre est **git**, donc hors du pipeline.
+
+Mesure du 8 novembre : depuis le 21 août, les 12 slugs sont identiques et
+**aucune valeur chiffrée n'a bougé**. Un seul champ de texte a changé, le
+3 octobre — « De Adam à Muhammad. » est devenu « D'Adam à Muhammad. », l'élision
+que `controler-questions.py` exige par ailleurs. Les champs de texte restent
+donc libres ; une faute de français se corrige. **Les décisions, non.**
+
+Si git ne connaît pas le commit — dépôt superficiel — le contrôle le **dit** et
+refuse le lot, au lieu de passer en silence. Sa ligne de bilan tombe alors à
+zéro valeur confrontée.
+
 ### « Les deux étapes d'après » était faux : c'est TOUT ce qui vient après
 
 La phrase ci-dessous disait **« relancer un générateur, c'est relancer les deux

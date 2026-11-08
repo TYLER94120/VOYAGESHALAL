@@ -24,7 +24,7 @@ lu par personne et entrerait en conflit à la première fusion.
 
 ## À COLLER DANS LE CARNET, À PARTIR D'ICI
 
-# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 7 NOVEMBRE 2026
+# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 8 NOVEMBRE 2026
 
 > **Comment lire cette note.** Son corps a été écrit le 14 octobre. Chaque
 > ajout porte sa date, et **une mesure datée ne se rafraîchit pas : elle se
@@ -970,3 +970,83 @@ autres.
 Réparé dans `fabrique.py`, donc d'un seul endroit pour les deux générateurs qui
 écrivent ce thème. Les chiffres : questions 2 603 → **2 616** (+13 restaurées,
 et deux cartes dont les leurres changent). 39 contrôles verts.
+
+## LE 8 NOVEMBRE — LA QUESTION À POSER D'UN CONTRÔLE
+
+La leçon de la veille généralisée : *un contrôle qui compare deux choses
+produites par le même passage ne contrôle rien.* Appliquée aux neuf contrôles
+Python, et la question n'est pas **que compare-t-il** mais **contre quoi
+s'ancre-t-il**.
+
+| contrôle | son ancre, extérieure au pipeline |
+|---|---|
+| `controler-lecons` | le corpus coranique, les noms, Unicode |
+| `controler-questions` | le corpus, la morphologie, le lexique, les fichiers de lot |
+| `controler-sections` | le site servi, **git** |
+| `controler-sitemap` | le site servi, Unicode, git |
+| `controler-redirections` | le site servi |
+| `controler-allege`, `peser` | git |
+| `controler-liens` | le système de fichiers et `vercel.json` |
+| `controler-index` | **aucune** |
+
+`controler-index` est exactement celui qui était aveugle le 7 novembre. Il
+reste utile, mais il ne peut pas voir une **omission commune**.
+
+> **À emporter, et ça vaut pour les cinq sites : deux artefacts d'un même
+> passage sont toujours d'accord sur ce qu'ils ont tous les deux oublié.** Un
+> tableau de bord qui lit la même base que le script qui l'alimente ne
+> surveille rien. Il faut au moins une référence que le passage ne produit
+> pas : une source amont, un fichier écrit à la main, ou l'historique git.
+
+### Ce que l'audit a trouvé : les valeurs de ton cahier n'étaient ancrées à rien
+
+`data/sections.json` porte **tes** décisions — numéro d'ordre d'une section, sa
+cible de questions, les branches et le ratio de sa géométrie. Ta consigne est
+explicite : *« si tu penses qu'une valeur est mauvaise, tu la signales, tu ne la
+changes pas. »* Ce fichier est lu par sept outils, cinq contrôles de navigateur
+et neuf fichiers du site — et **rien ne vérifiait que ses valeurs étaient
+encore les tiennes.**
+
+`controler-sections.py` confronte maintenant les **48** valeurs de décision au
+commit du 21 août qui les a posées. L'ancre est git.
+
+Mesure : depuis le 21 août, les 12 sections sont les mêmes et **aucune valeur
+chiffrée n'a bougé.** Un seul champ de texte a changé, et c'était moi, le
+3 octobre : « De Adam à Muhammad. » est devenu « **D'Adam à Muhammad.** » —
+l'élision que le contrôle des questions exige partout ailleurs. Je te le signale
+parce que c'est une de tes phrases : ce n'était pas une décision ni un chiffre,
+mais c'était ton texte.
+
+### Quatre pistes ouvertes et refermées, mesurées
+
+- **Le texte coranique des 38 leçons** : déjà vérifié caractère pour caractère
+  contre le corpus, traductions comprises, **et le nombre de versets de chaque
+  sourate**. Rien à ajouter.
+- **Le défaut d'apostrophe** trouvé le 6 novembre dans le générateur du
+  vocabulaire : aucun autre outil du dépôt ne garde l'apostrophe dans un mot.
+  Vérifié sur tous les relevés de mots français. Piste close.
+- **Les polices** : 62 pages sur 63 chargent les trois polices depuis Google.
+  J'ai cru à une incohérence avec `outils/polices/`, qui contient les mêmes
+  polices en local. Lu : ce dossier existe **uniquement pour que les contrôles
+  de navigateur mesurent avec les vraies polices**, puisqu'ils coupent le
+  réseau. C'est de l'outillage, pas un hébergement. Pas de défaut.
+- **La 63ᵉ page**, la seule sans polices, est `google460d2c815736f50e.html` : le
+  fichier de validation Search Console. Normal.
+
+### Un petit mensonge dans un bilan, réparé
+
+`controler-liens.py` annonçait « **4** domaine(s) externe(s) : *(vide)*,
+fonts.googleapis.com, fonts.gstatic.com, islampasapas.fr ». Le premier était
+vide : c'est le favicon, une image SVG posée en clair dans l'attribut, dont le
+`//` de `xmlns=http://www.w3.org/2000/svg` tombait dans le découpage du
+domaine. Le compte était faux de un et le bilan imprimait un domaine qui
+n'existe pas. Il dit maintenant **3 domaines** et compte à part les **62** liens
+embarqués.
+
+### Et une information utile pour ta Search Console
+
+Le dépôt contient `google460d2c815736f50e.html`, un fichier de validation par
+upload HTML. **C'est pour ça que ta propriété est en « préfixe d'URL »** : une
+propriété de type **Domaine** ne se valide pas par fichier, elle se valide par
+un **enregistrement DNS TXT** chez ton registrar. Le fichier actuel ne suffira
+pas — c'est une manipulation DNS, pas un fichier à déposer.
