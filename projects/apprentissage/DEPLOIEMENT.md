@@ -119,6 +119,18 @@ Compte dans les banques ce soir :
 
 **L'objectif des mille deux cents questions est depasse** : il y en a 2 616.
 
+> **Et 2 479 d'entre elles sont DISTINCTES.** Mesure du 9 novembre : 2 616 est
+> la somme honnete des douze banques, mais une question posee dans deux
+> sections y compte deux fois. En comptant un enonce une seule fois : 2 479,
+> soit 137 de moins. 133 versets sont poses dans plusieurs sections, portant
+> 409 cartes, 15,6 % du paquet — le Coran associe sans cesse la priere et
+> l'aumone, et un verset qui traite de deux sujets appartient aux deux
+> sections. Le controle imprime les deux nombres chaque soir. QUEL NOMBRE LA
+> PAGE D'ACCUEIL DOIT ANNONCER EST UNE DECISION D'EDITEUR : je n'y touche pas.
+>
+> La note du 12 octobre annoncait « 2 628 questions distinctes » : ce chiffre
+> venait d'une jauge qui comptait moitie, et il etait faux de 149.
+
 > **Pourquoi cette ligne ne dit plus « le juz Amma complet ».** Elle le disait,
 > et c'est vrai dans le monde — mais **le depot n'a aucune donnee de
 > decoupage du mushaf** : les fichiers du Coran ne portent que `chapter`,

@@ -33,6 +33,74 @@ python3 outils/controler-questions.py    # ← et le contrôle en dernier
 relancer autant de fois qu'on veut, il ne dépend pas de son propre passage
 précédent.
 
+### Une jauge bâtie sur un identifiant — mesuré le 9 novembre
+
+Le contrôle qui surveille les versets posés dans **plusieurs** sections
+regroupait par le hachage au bout de l'identifiant, en s'appuyant sur une
+phrase de son propre commentaire : « l'identifiant d'une question se termine
+par un hachage du verset ». **C'est faux** — le hachage est calculé par
+générateur. La sourate 1 verset 1 porte trois hachages différents.
+
+```
+par hachage d'identifiant    65 versets, 138 cartes,  5,1 %
+par référence du verset     133 versets, 409 cartes, 15,6 %
+```
+
+Le plafond de 90 était donc comparé à la moitié du vrai : avec la bonne
+mesure il était **déjà franchi**, et le contrôle était vert par sous-comptage.
+
+> **Une jauge bâtie sur un identifiant mesure l'identifiant, pas la chose.**
+> Un hachage, un slug, une clé technique sont des commodités du producteur. La
+> référence du verset était en clair dans le champ `source` de chaque carte.
+
+### Et un compte absolu ne pouvait pas servir d'alarme
+
+Mesure faite en recopiant 40 cartes d'une section dans une autre — la dérive
+que le contrôle prétend surveiller :
+
+```
+l'ancienne jauge   65 -> 65     elle ne bouge pas d'un
+la jauge réparée  133 -> 155    elle voit, mais sous tout plafond vivable
+```
+
+Un compte absolu monte aussi quand on remplit légitimement une section : il
+faudrait le desserrer, et il ne surveillerait plus rien. La vraie signature
+d'une section recopiée est une **paire** dont la petite est presque
+entièrement contenue dans la grande :
+
+```
+état propre, pire recoupement légitime   47 %   (la prière et l'aumône)
+avec 40 cartes recopiées                 91 %
+```
+
+`PART_MAXI_PAIRE = 0.75`, pris dans ce trou. Une **part** ne dérive pas quand
+les sections grossissent. Une paire dont la petite section a moins de 10
+versets n'est pas jugée, et ce compte s'imprime.
+
+> **Avant de desserrer un seuil, demander si c'est la bonne grandeur.** Un
+> seuil qu'il faut relâcher chaque fois que le produit grandit n'est pas un
+> seuil, c'est un retard à l'allumage.
+
+### Ce que le Coran peut donner aux sections sous le plancher — 9 novembre
+
+Mesuré depuis les mots du cahier, avec le double test du générateur :
+
+```
+le-comportement   « La parole, la colère, les parents, les voisins. »   80 versets
+jeune-et-ramadan  « Le mois, ses règles, ses nuits. »                   10 versets
+le-pelerinage     « Les étapes du hajj et de la 'umra. »                11 versets
+```
+
+`faire-themes.py` refuse une section sous **20 versets**. Le jeûne et le
+pèlerinage ne peuvent donc pas venir du Coran — ils reposent sur des hadiths,
+et le dépôt n'en a aucun de citable. **« Le comportement » tient** : 80
+versets, dont 65 qu'aucune section n'utilise. Le thème n'est pas écrit : c'est
+du contenu de section, donc une décision d'éditeur.
+
+Et pour mémoire : le squelette arabe « حج » seul ramène **41** versets, dont
+« pierres » et « le rocher ». Le double test — un mot arabe **et** un mot
+français — le ramène à 11. C'est exactement pour ça qu'il existe.
+
 ### Contre quoi chaque contrôle s'ancre — audit du 8 novembre
 
 La leçon du 7 novembre — *un contrôle qui compare deux choses produites par le

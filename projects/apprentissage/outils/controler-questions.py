@@ -67,6 +67,7 @@ Seule une confrontation au texte le revele.
 Ce controle relit donc le Coran et compare, ligne par ligne.
 """
 
+import itertools
 import json
 import pathlib
 import re
@@ -1350,15 +1351,24 @@ def main():
 
     # A. UN MEME VERSET POSE DANS PLUSIEURS SECTIONS.
     #
-    # L'identifiant d'une question se termine par un hachage du verset. Un
-    # verset qui parle de la priere ET de l'aumone — le Coran les associe sans
-    # cesse — produit donc une carte dans « La priere » et une dans « Zakat et
+    # Un verset qui parle de la priere ET de l'aumone — le Coran les associe
+    # sans cesse — produit une carte dans « La priere » et une dans « Zakat et
     # aumone », avec le meme enonce et la meme bonne reponse, seuls les leurres
     # changeant.
+    #
+    # CETTE PHRASE DISAIT, ET C'ETAIT FAUX : « l'identifiant d'une question se
+    # termine par un hachage du verset ». Le hachage est calcule PAR
+    # GENERATEUR, et la jauge batie dessus comptait moitie. Voir plus bas,
+    # mesure du 8 novembre.
     #
     # Mesure du 12 octobre : 65 versets, 138 cartes, 5,1 % du paquet. Dans 61
     # cas sur 65, l'enonce ET la bonne reponse sont identiques. Huit versets
     # sont dans TROIS sections.
+    #
+    # CES TROIS CHIFFRES SONT CEUX DE LA JAUGE FAUSSE. Ils restent dates, comme
+    # toute mesure de ce depot. La vraie mesure du 8 novembre, par reference de
+    # verset : 133 versets, 409 cartes, 15,6 % du paquet, dont 125 dans deux
+    # sections et 8 dans trois.
     #
     # CE N'EST PAS DECLARE COMME UNE FAUTE, et c'est un choix qu'il faut dire :
     # un verset qui traite de deux sujets appartient aux deux sections, les
@@ -1370,18 +1380,128 @@ def main():
     # On SURVEILLE donc le nombre au lieu de l'interdire : si un generateur se
     # met a reposer des centaines de versets d'une section a l'autre, cela doit
     # se voir avant la publication, pas apres.
-    PLAFOND_CROISES = 90
+    # LA JAUGE MESURAIT UN SUBSTITUT, ET ELLE COMPTAIT MOITIE — 8 NOVEMBRE
+    #
+    # Elle regroupait par `q['id'].rsplit('-', 1)[-1]`, le hachage au bout de
+    # l'identifiant, en s'appuyant sur le commentaire ci-dessus : « l'
+    # identifiant d'une question se termine par un hachage du verset ».
+    #
+    # CE N'EST PAS VRAI. Le hachage est calcule PAR GENERATEUR. Preuve, la
+    # sourate 1 verset 1 :
+    #
+    #     sens-des-sourates   sourates-777b4c5a
+    #     vocabulaire-arabe   vocab-625966c2
+    #     vocabulaire-arabe   vocab-9aeefb5d
+    #
+    # Trois hachages pour un seul verset. La jauge voyait trois groupes sans
+    # rapport et ne comptait rien. Elle ne reperait donc que les doublons
+    # produits par UN MEME generateur — la sourate 2 verset 3, posee dans
+    # trois sections par faire-themes.py, porte bien le meme hachage partout.
+    #
+    # L'ECART, MESURE LE 8 NOVEMBRE
+    #
+    #     par hachage d'identifiant (l'ancienne jauge)   65 versets
+    #     par REFERENCE DU VERSET (la chose mesuree)    133 versets
+    #
+    # Et les cartes portees : 138 annoncees, 409 en verite. 15,6 % du paquet
+    # et non 5,1 %. Le plafond de 90 etait donc compare a un nombre valant la
+    # moitie du vrai : la surveillance que le commentaire promet — « si un
+    # generateur se met a reposer des centaines de versets d'une section a
+    # l'autre, cela doit se voir avant la publication » — ne tenait pas.
+    #
+    # LE PLAFOND EST RECALIBRE, ET IL FAUT LE DIRE : il passe de 90 a 160 non
+    # parce que le site s'est degrade, mais parce que la jauge etait fausse.
+    # 133 est l'etat mesure ce soir ; 160 laisse la marge d'une section de
+    # plus sans masquer une derive de generateur.
+    PLAFOND_CROISES = 160
     croises = {}
     for sec in sorted(par_section):
         for q in par_section[sec]:
-            croises.setdefault(q['id'].rsplit('-', 1)[-1], set()).add(sec)
-    croises = {h: s for h, s in croises.items() if len(s) > 1}
-    cartes_croisees = sum(len(s) for s in croises.values())
+            m = SOURCE_CORAN.search(q.get('source') or '')
+            if not m:
+                continue
+            croises.setdefault((int(m.group(1)), int(m.group(2))), set()).add(sec)
+    croises = {k: s for k, s in croises.items() if len(s) > 1}
+    cartes_croisees = 0
+    for sec in sorted(par_section):
+        for q in par_section[sec]:
+            m = SOURCE_CORAN.search(q.get('source') or '')
+            if m and (int(m.group(1)), int(m.group(2))) in croises:
+                cartes_croisees += 1
     if len(croises) > PLAFOND_CROISES:
         fautes.append('%d versets sont poses dans plusieurs sections (%d cartes) '
                       '; le plafond est %d. Un generateur recopie-t-il une '
                       'section dans une autre ?'
                       % (len(croises), cartes_croisees, PLAFOND_CROISES))
+
+    # ET LA VRAIE SIGNATURE D'UNE SECTION RECOPIEE — AJOUTE LE 8 NOVEMBRE
+    #
+    # Le nombre total de versets croises est une mauvaise alarme : il monte
+    # aussi quand on remplit legitimement une section, et le plafond doit
+    # alors etre desserre, ce qui l'affaiblit. Mesure du 8 novembre : 40
+    # cartes recopiees d'une section a l'autre ne font passer le total que de
+    # 133 a 155 — sous n'importe quel plafond vivable.
+    #
+    # Ce que la peur du commentaire decrit vraiment, c'est une PAIRE de
+    # sections dont la petite est presque entierement contenue dans la
+    # grande. Cette grandeur-la separe net :
+    #
+    #     etat propre, le pire recoupement legitime   47 %  (la priere et
+    #         l'aumone : le Coran les associe sans cesse)
+    #     puis 36 %, 16 %, 12 %, 12 %, 7 %...
+    #     avec 40 cartes recopiees                    91 %
+    #
+    # Entre 47 % et 91 % il y a de la place. 0,75 est pris dans ce trou, et
+    # c'est une PART : elle ne derive pas quand les sections grossissent,
+    # contrairement a un compte absolu.
+    #
+    # Une paire dont la petite section a moins de 10 versets n'est pas jugee :
+    # une part sur quatre versets ne veut rien dire. Le compte des paires non
+    # jugees s'imprime — c'est le troisieme etat, rendu visible.
+    PART_MAXI_PAIRE = 0.75
+    MINI_VERSETS_PAIRE = 10
+    versets_par_section = {}
+    for sec in sorted(par_section):
+        vs = set()
+        for q in par_section[sec]:
+            m = SOURCE_CORAN.search(q.get('source') or '')
+            if m:
+                vs.add((int(m.group(1)), int(m.group(2))))
+        versets_par_section[sec] = vs
+    paires_jugees = paires_non_jugees = 0
+    pire_part = 0.0
+    for a, b in itertools.combinations(sorted(versets_par_section), 2):
+        va, vb = versets_par_section[a], versets_par_section[b]
+        communs = va & vb
+        if not communs:
+            continue
+        petite = min(len(va), len(vb))
+        if petite < MINI_VERSETS_PAIRE:
+            paires_non_jugees += 1
+            continue
+        paires_jugees += 1
+        part = len(communs) / petite
+        pire_part = max(pire_part, part)
+        if part >= PART_MAXI_PAIRE:
+            fautes.append(
+                '%s et %s partagent %d versets, soit %.0f %% de la plus '
+                'petite des deux (%d versets). Au-dela de %.0f %%, ce n\'est '
+                'plus un sujet commun : une section est recopiee dans '
+                'l\'autre.'
+                % (a, b, len(communs), 100 * part, petite,
+                   100 * PART_MAXI_PAIRE))
+
+    # ET LE NOMBRE DE QUESTIONS DISTINCTES, QUI N'ETAIT NULLE PART.
+    # Le site annonce la somme des banques. Une question posee dans deux
+    # sections y compte deux fois. L'ecart se mesure, donc il s'imprime.
+    distinctes = set()
+    for sec in sorted(par_section):
+        for q in par_section[sec]:
+            rs = q.get('reponses') or []
+            b = q.get('bonne')
+            bonne = rs[b] if isinstance(b, int) and 0 <= b < len(rs) else ''
+            distinctes.add((str(q.get('question', '')), bonne,
+                            str(q.get('source', ''))))
 
     # B. LA LONGUEUR DE LA BONNE REPONSE NE DOIT PAS LA DESIGNER.
     #
@@ -1534,8 +1654,18 @@ def main():
     # la designe. » Elle s'affichait AUSSI quand le controle venait d'en
     # trouver une — le sabotage du 12 octobre l'a montre. Une ligne de bilan
     # qui ne peut pas se taire est une ligne qui ne dit rien.
-    print('  %d versets poses dans plusieurs sections (%d cartes, plafond %d).'
-          % (len(croises), cartes_croisees, PLAFOND_CROISES))
+    print('  %d versets poses dans plusieurs sections (%d cartes, %.1f %% du '
+          'paquet, plafond %d).'
+          % (len(croises), cartes_croisees, 100 * cartes_croisees / total,
+             PLAFOND_CROISES))
+    print('  %d questions distinctes sur %d annoncees : %d carte(s) reposent '
+          'un enonce deja pose ailleurs.'
+          % (len(distinctes), total, total - len(distinctes)))
+    print('  %d paire(s) de sections jugees sur leur recoupement, la pire a '
+          '%.0f %% (plafond %.0f %%) ; %d paire(s) trop petites pour etre '
+          'jugees.'
+          % (paires_jugees, 100 * pire_part, 100 * PART_MAXI_PAIRE,
+             paires_non_jugees))
     print('  Longueur de la bonne reponse, l\'ecart le plus net : %s '
           '(fourchette %.0f-%.0f %%).'
           % (pire or 'aucun', BAS, HAUT))

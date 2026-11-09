@@ -24,7 +24,7 @@ lu par personne et entrerait en conflit à la première fusion.
 
 ## À COLLER DANS LE CARNET, À PARTIR D'ICI
 
-# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 8 NOVEMBRE 2026
+# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 9 NOVEMBRE 2026
 
 > **Comment lire cette note.** Son corps a été écrit le 14 octobre. Chaque
 > ajout porte sa date, et **une mesure datée ne se rafraîchit pas : elle se
@@ -1050,3 +1050,131 @@ upload HTML. **C'est pour ça que ta propriété est en « préfixe d'URL »** :
 propriété de type **Domaine** ne se valide pas par fichier, elle se valide par
 un **enregistrement DNS TXT** chez ton registrar. Le fichier actuel ne suffira
 pas — c'est une manipulation DNS, pas un fichier à déposer.
+
+## 🔴🔴 LE 9 NOVEMBRE — UNE JAUGE QUI COMPTAIT MOITIÉ, ET UN PLAFOND DÉJÀ FRANCHI
+
+Un contrôle surveillait depuis le 12 octobre les versets posés dans
+**plusieurs** sections — le Coran associe sans cesse la prière et l'aumône, et
+un même verset peut légitimement nourrir deux sections. Son commentaire disait
+pourquoi : *« si un générateur se met à reposer des centaines de versets d'une
+section à l'autre, cela doit se voir avant la publication, pas après. »*
+
+**Il ne le voyait pas.**
+
+### La cause : la jauge mesurait un substitut
+
+Elle regroupait les questions par le **hachage au bout de l'identifiant**, en
+s'appuyant sur une phrase de son propre commentaire : « l'identifiant d'une
+question se termine par un hachage du verset. »
+
+C'est faux. Le hachage est calculé **par générateur**. La sourate 1 verset 1 :
+
+```
+sens-des-sourates   sourates-777b4c5a
+vocabulaire-arabe   vocab-625966c2
+vocabulaire-arabe   vocab-9aeefb5d
+```
+
+Trois hachages pour un verset. La jauge voyait trois groupes sans rapport et
+ne comptait rien. Elle ne repérait que les doublons produits par **un même**
+générateur.
+
+| | la jauge | la vérité |
+|---|---|---|
+| versets dans plusieurs sections | 65 | **133** |
+| cartes portées | 138 | **409** |
+| part du paquet | 5,1 % | **15,6 %** |
+
+**Le plafond de 90 était donc comparé à un nombre valant la moitié du vrai.**
+Avec la vraie mesure, il était déjà franchi — le contrôle était vert par
+sous-comptage.
+
+> **À emporter : une jauge bâtie sur un identifiant mesure l'identifiant, pas
+> la chose.** Un hachage, un slug, une clé technique sont des commodités du
+> producteur ; ils ne sont pas la grandeur. La référence du verset était là,
+> en clair, dans le champ `source` de chaque carte. C'est la cinquième fois
+> cette année que l'unité de comparaison est la faute de ce projet.
+
+### Et le plafond lui-même était la mauvaise grandeur
+
+Première réaction : desserrer le plafond à 160. Mesure faite ensuite, en
+recopiant 40 cartes d'une section dans une autre — la dérive exacte que le
+contrôle prétend surveiller :
+
+```
+l'ancienne jauge   65 -> 65    elle ne bouge PAS D'UN
+la jauge réparée  133 -> 155   elle voit, mais reste sous 160
+```
+
+**Un compte absolu ne peut pas servir d'alarme ici**, parce qu'il monte aussi
+quand on remplit légitimement une section : il faudrait alors le desserrer
+encore, et il ne surveillerait plus rien.
+
+Ce que la phrase du commentaire décrit vraiment, c'est une **paire** de
+sections dont la petite est presque entièrement contenue dans la grande. Cette
+grandeur-là sépare net :
+
+```
+état propre, pire recoupement légitime   47 %   (la prière et l'aumône)
+puis 36 %, 16 %, 12 %, 12 %, 7 %...
+avec 40 cartes recopiées                 91 %
+```
+
+Le plafond est désormais une **part**, 75 %, prise dans le trou entre 47 et
+91 %. Une part ne dérive pas quand les sections grossissent. Une paire dont la
+petite section a moins de 10 versets n'est pas jugée, et ce compte s'imprime.
+
+> **À emporter : avant de desserrer un seuil, demander si c'est la bonne
+> grandeur qu'on mesure.** Un seuil qu'il faut relâcher à chaque fois que le
+> produit grandit n'est pas un seuil, c'est un retard à l'allumage. Le passage
+> d'un compte à une **proportion** l'a réglé.
+
+### Ce que ça change à ton nombre affiché
+
+Le site annonce **2 616 questions**, et c'est la somme honnête des douze
+banques. Mais une question posée dans deux sections y compte deux fois. Mesuré
+ce soir, pour la première fois :
+
+**2 479 questions distinctes** (énoncé + bonne réponse + source), soit **137
+de moins** que le nombre affiché.
+
+La note du 12 octobre le disait déjà — « en les comptant une seule fois, le
+site aurait 2 628 questions distinctes » — avec un chiffre faux de 149, puisqu'
+il venait de la jauge fausse. Le contrôle imprime maintenant les deux nombres
+chaque soir. **C'est à toi de dire lequel la page d'accueil doit annoncer** :
+je ne touche pas à ce que le site revendique.
+
+## CE QUE J'AI MESURÉ POUR TES QUATRE SECTIONS SOUS LE PLANCHER
+
+Elles attendent depuis des semaines dans ce carnet. Ce soir j'ai mesuré ce que
+le **Coran seul** peut leur donner, en partant de tes propres mots dans le
+cahier, et le résultat les sépare en deux.
+
+| section | ce que tu en dis | versets du Coran | verdict |
+|---|---|---|---|
+| **le-comportement** (11) | « La parole, la colère, les parents, les voisins. » | **80** | **le Coran suffit** |
+| jeune-et-ramadan (8) | « Le mois, ses règles, ses nuits. » | **10** | sous le seuil de 20 |
+| le-pelerinage (7) | « Les **étapes** du hajj et de la 'umra. » | **11** | sous le seuil de 20 |
+
+`faire-themes.py` refuse d'écrire une section sous **20 versets**, et le
+plancher du cahier est de 100 questions.
+
+- **Le jeûne et le pèlerinage ne peuvent pas venir du Coran** : 10 et 11
+  versets. Et ta phrase sur le pèlerinage dit pourquoi — tu demandes « les
+  **étapes** », et le Coran ne les expose pas en séquence. Ces deux sections
+  reposent sur des hadiths, et c'est exactement le blocage que le carnet
+  nomme depuis le 21 octobre : **aucune traduction française citable** dans le
+  dépôt. Mesuré, écarté, la décision reste la tienne.
+- **« Le comportement », en revanche, tient** : les quatre sujets que tu nommes
+  ramènent **80 versets**, dont **65 que personne n'utilise encore**. C'est
+  quatre fois le seuil du générateur. Je ne l'ai pas écrit ce soir : ajouter un
+  thème, c'est écrire du contenu de section, et je préfère te donner le chiffre
+  avant. **Dis-le et c'est fait.**
+
+### Une sixième unité de comparaison fausse, dans la même soirée
+
+Pour compter les versets du pèlerinage, le squelette arabe « حج » seul en
+ramène **41** — dont « pierres » (حجارة) et « le rocher » (الحجر), où « hj »
+n'est qu'une sous-chaîne. Le double test du générateur, un mot arabe **et** un
+mot français, le ramène à 11. C'est pour cette raison que ce double test
+existe, et ce soir il a servi.
