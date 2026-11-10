@@ -33,6 +33,21 @@ python3 outils/controler-questions.py    # ← et le contrôle en dernier
 relancer autant de fois qu'on veut, il ne dépend pas de son propre passage
 précédent.
 
+### Un journal de requêtes, à la demande — ajouté le 10 novembre
+
+`servir.py` accepte `JOURNAL_REQUETES=<fichier>` et écrit une ligne par requête,
+code et chemin. **Sans la variable il se comporte exactement comme avant** :
+vérifié, 0 octet écrit après quatre requêtes sur un serveur sans la variable,
+deux lignes avec.
+
+Il sert à répondre à une question que l'analyse statique ne peut pas trancher —
+les adresses des contrôles sont construites à l'exécution : **quelles pages les
+trente contrôles de navigateur ouvrent-ils réellement ?** Mesure du 10 novembre,
+sur 3 702 requêtes : 61 des 63 pages, et les 53 adresses du sitemap toutes.
+Détail dans `outils/controles/LISEZMOI.md`.
+
+Aucun contrôle ne dépend de ce journal, et aucun ne doit en dépendre.
+
 ### Une jauge bâtie sur un identifiant — mesuré le 9 novembre
 
 Le contrôle qui surveille les versets posés dans **plusieurs** sections

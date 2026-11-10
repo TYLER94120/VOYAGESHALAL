@@ -19,6 +19,7 @@ passer un site casse pour un site qui marche.
 
 import http.server
 import json
+import os
 import pathlib
 import re
 import sys
@@ -119,6 +120,42 @@ class Serveur(http.server.SimpleHTTPRequestHandler):
 
     def log_message(self, *a):
         pass   # un serveur d'essai n'a pas a bavarder
+
+    # ======================================================================
+    # UN JOURNAL, SEULEMENT SI ON LE DEMANDE — AJOUTE LE 10 NOVEMBRE
+    #
+    # POURQUOI
+    # --------
+    # Les trente controles de navigateur ouvrent des pages. Lesquelles ?
+    # Personne ne le savait : certains lisent le sitemap et parcourent ses 53
+    # adresses, d'autres visent deux ou trois pages en dur. Une page que
+    # AUCUN controle n'ouvre n'a sa mise en page verifiee par personne, et
+    # rien ne le disait.
+    #
+    # L'analyse statique ne repond pas : les adresses sont construites a
+    # l'execution, depuis le sitemap ou depuis des listes. Il faut regarder ce
+    # qui est REELLEMENT demande — la meme regle que pour les titres.
+    #
+    # CE QUE CA NE CHANGE PAS
+    # -----------------------
+    # Sans la variable d'environnement, ce serveur se comporte exactement
+    # comme avant : `log_message` ne dit rien, et cette methode n'ecrit nulle
+    # part. Un controle ne doit pas dependre d'un journal, et aucun n'en
+    # depend.
+    #
+    #     JOURNAL_REQUETES=/chemin/du/journal python3 outils/servir.py 8899
+    #
+    # Une ligne par requete : le chemin demande, tel qu'il arrive.
+    # ======================================================================
+    def log_request(self, code='-', size='-'):
+        journal = os.environ.get('JOURNAL_REQUETES')
+        if not journal:
+            return
+        try:
+            with open(journal, 'a', encoding='utf-8') as f:
+                f.write('%s %s\n' % (code, self.path))
+        except OSError:
+            pass   # un journal qui ne s'ecrit pas ne doit pas casser le serveur
 
 
 def main():

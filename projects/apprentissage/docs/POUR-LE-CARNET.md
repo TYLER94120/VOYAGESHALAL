@@ -24,7 +24,7 @@ lu par personne et entrerait en conflit à la première fusion.
 
 ## À COLLER DANS LE CARNET, À PARTIR D'ICI
 
-# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 9 NOVEMBRE 2026
+# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 10 NOVEMBRE 2026
 
 > **Comment lire cette note.** Son corps a été écrit le 14 octobre. Chaque
 > ajout porte sa date, et **une mesure datée ne se rafraîchit pas : elle se
@@ -1178,3 +1178,63 @@ ramène **41** — dont « pierres » (حجارة) et « le rocher » (الحج�
 n'est qu'une sous-chaîne. Le double test du générateur, un mot arabe **et** un
 mot français, le ramène à 11. C'est pour cette raison que ce double test
 existe, et ce soir il a servi.
+
+## LE 10 NOVEMBRE — LA PAGE QUE PERSONNE NE REGARDAIT
+
+Les trente contrôles de navigateur ouvrent des pages du site et mesurent ce
+qu'ils y voient. **Lesquelles ?** Personne ne le savait : certains lisent le
+sitemap et parcourent ses 53 adresses, d'autres visent deux ou trois pages
+écrites en dur. Une page qu'aucun contrôle n'ouvre n'a sa mise en page vérifiée
+par personne, et rien ne le disait.
+
+L'analyse du code ne répond pas — les adresses sont construites à l'exécution.
+Il fallait regarder **ce qui est réellement demandé**, la même règle que pour
+les titres. Le serveur local accepte donc maintenant un journal, à la demande,
+et sans la variable d'environnement il se comporte exactement comme avant
+(vérifié : 0 octet écrit).
+
+Mesure sur les **3 702 requêtes** d'un passage complet :
+
+| | |
+|---|---|
+| pages HTML du site | 63 |
+| ouvertes par au moins un contrôle | **61** |
+| adresses du sitemap jamais demandées | **0 sur 53** |
+| contrôles qui n'ouvrent aucune page | 0 |
+
+**La couverture est bonne** : tout ce qui est indexé est regardé. Deux pages ne
+l'étaient jamais — le fichier de validation Search Console, qui n'a rien à
+afficher, et **`404.html`**.
+
+Celle-là compte : c'est une page que les visiteurs atteignent, et Google aussi.
+Elle n'est pas dans le sitemap, et c'est juste — on n'indexe pas sa page
+d'erreur. Mais **c'est précisément ce qui la rendait invisible** : tous les
+balayages partent du sitemap.
+
+Elle est maintenant dans trois contrôles — lecture d'écran, ponctuation,
+contraste. Les trois passent : la page était bonne, elle n'était pas *vérifiée*.
+Sabotage pour le prouver : un texte en `#cfd8d4` posé dessus, et le contrôle
+répond « /404.html … **1.36 pour 4.5** ».
+
+> **À emporter, et ça vaut pour les cinq sites : une liste de pages bâtie sur
+> le sitemap couvre ce qui est indexé, pas ce qui est servi.** Les deux
+> ensembles ne coïncident jamais tout à fait — page d'erreur, pages de
+> réglages, écrans de jeu, fichiers de validation — et la différence est
+> exactement là où personne ne regarde. La question à se poser n'est pas
+> « est-ce que mes contrôles passent » mais « sur quoi passent-ils ».
+
+### Deux fois où ma sonde s'est trompée avant de dire vrai
+
+La première version annonçait **14 pages** non couvertes, dont les douze pages
+de section. Elle rangeait `/section/x` sur un fichier `section.html` et
+`x/qcm` sur `qcm.html`. Les deux étaient faux : le dépôt a **douze** pages
+`section-*.html`, une par section, et `/section/:slug/qcm` mène à
+`reglages.html`. Les règles se lisent dans `vercel.json`, et la sonde les lit
+maintenant là.
+
+Et un premier essai de vérification du journal a conclu « ÉCART » à tort : je
+comparais la taille d'un fichier que les trente contrôles étaient en train de
+remplir. Refait avec un fichier témoin distinct.
+
+> C'est la même leçon que les cinq précédentes de ce carnet, sous une autre
+> forme : **une sonde qui n'est pas elle-même vérifiée raconte ce qu'elle veut.**

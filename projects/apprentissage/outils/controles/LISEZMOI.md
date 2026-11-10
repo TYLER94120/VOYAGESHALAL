@@ -255,3 +255,42 @@ Et deux choses qui faussent les comptes si on l'ignore :
   fois** dans les identifiants joués.
 - **Trois cartes ne marquent pas le jour.** `MINI_POUR_LE_JOUR = 10` : pour
   tester la série, il faut une partie d'au moins dix cartes.
+
+## Quelles pages les trente contrôles ouvrent-ils ? — mesuré le 10 novembre
+
+Personne ne le savait. Certains contrôles lisent le sitemap et parcourent ses
+53 adresses, d'autres visent deux ou trois pages en dur. **Une page qu'aucun
+contrôle n'ouvre n'a sa mise en page vérifiée par personne**, et rien ne le
+disait.
+
+L'analyse statique ne répond pas : les adresses sont construites à l'exécution.
+`servir.py` accepte donc désormais une variable d'environnement, et sans elle il
+se comporte exactement comme avant :
+
+```
+JOURNAL_REQUETES=/chemin/du/journal python3 outils/servir.py 8899
+```
+
+Mesure sur les **3 702 requêtes** d'un passage complet :
+
+| | |
+|---|---|
+| pages HTML du site | 63 |
+| ouvertes par au moins un contrôle | **61** |
+| adresses du sitemap jamais demandées | **0 sur 53** |
+| contrôles qui n'ouvrent aucune page | 0 |
+
+Les deux pages jamais ouvertes : le fichier de validation Search Console, qui
+n'a rien à afficher — et **`404.html`**, une page que les visiteurs et Google
+atteignent vraiment. Elle n'est pas dans le sitemap, et c'est juste : on
+n'indexe pas sa page d'erreur. **Les balayages pilotés par le sitemap ne
+pouvaient donc jamais l'atteindre.**
+
+Elle est maintenant dans `controler-lecture-ecran`, `controler-ponctuation` et
+`controler-contraste` — l'idiome existait déjà, chacun concatène les écrans
+absents du sitemap. Les trois passent. Sabotage : un texte en `#cfd8d4` posé
+sur la page, et le contraste répond « /404.html … 1.36 pour 4.5 ».
+
+> **À retenir : une liste de pages bâtie sur le sitemap couvre ce qui est
+> indexé, pas ce qui est servi.** Les deux ensembles ne coïncident jamais tout
+> à fait, et la différence est exactement là où personne ne regarde.

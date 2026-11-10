@@ -31,6 +31,9 @@ const PAGES = [
   // reste, on y lit du francais suivi et de l'arabe, et c'est par elles que
   // les gens arrivent depuis Google.
   '/sourates.html', '/lecon-sourate-al-ikhlas.html', '/lecon-sourate-ad-duha.html',
+  // La page d'erreur se lit aussi, et personne ne l'ouvrait : hors sitemap
+  // par construction, donc hors de tout balayage. Mesure du 10 novembre.
+  '/404.html',
 ];
 
 const nav = await chromium.launch({ executablePath: NAVIGATEUR, args:['--no-sandbox'] });

@@ -64,7 +64,11 @@ const PAGES = [...sm.matchAll(/<loc>([^<]+)<\/loc>/g)]
   .map((m) => m[1].replace('https://islampasapas.fr/', ''))
   .concat(['progres.html', 'section/sens-des-sourates/qcm',
     'qcm.html?section=lire-l-arabe&n=20',
-    'qcm.html?section=vocabulaire-arabe&n=20']);
+    'qcm.html?section=vocabulaire-arabe&n=20',
+    // Hors sitemap par construction — on n'indexe pas sa page d'erreur —
+    // et pourtant servie aux visiteurs. Mesure du 10 novembre : aucun des
+    // trente controles ne l'ouvrait.
+    '404.html']);
 
 const nav = await chromium.launch({
   executablePath: NAVIGATEUR,

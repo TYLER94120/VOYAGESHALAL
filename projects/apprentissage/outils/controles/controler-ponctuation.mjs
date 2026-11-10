@@ -86,7 +86,10 @@ const HAUTEUR = 568;
 const sm = fs.readFileSync(new URL('../../sitemap.xml', import.meta.url), 'utf8');
 const PAGES = [...sm.matchAll(/<loc>([^<]+)<\/loc>/g)]
   .map((m) => m[1].replace('https://islampasapas.fr/', ''))
-  .concat(['progres.html', 'section/sens-des-sourates/qcm']);
+  .concat(['progres.html', 'section/sens-des-sourates/qcm',
+    // Hors sitemap par construction, et servie aux visiteurs. Aucun des
+    // trente controles ne l'ouvrait avant le 10 novembre.
+    '404.html']);
 
 const fautes = [];
 const navigateur = await chromium.launch({ executablePath: EXE, args: ['--no-sandbox'] });
