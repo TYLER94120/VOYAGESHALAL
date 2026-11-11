@@ -157,6 +157,80 @@ verifier(/sur \d+/.test(fin.texte),
 verifier(err.length === 0, `erreur JavaScript — ${err[0]}`);
 console.log(`  ${encore} cartes de plus, puis « ${(/(\d+ sur \d+)/.exec(fin.texte) || ['?'])[0]} »`);
 
+// --- 4. UNE REPRISE ABIMEE NE DOIT RIEN COUTER ---------------------------
+//
+// AJOUTE LE 11 NOVEMBRE. Les trois blocs ci-dessus mesurent le chemin
+// heureux. Mesure du 11 novembre : `memoire.js` repose chaque champ du
+// stockage sur un socle sain, mais `reprise` est accepte EN BLOC des qu'il
+// est un objet — son contenu n'est pas verifie, contrairement a `jours`
+// (filtre) et `parJour` (valide cle par cle).
+//
+// Teste a l'ecran, la robustesse etait LA : aucune erreur JavaScript, pas de
+// carte de reprise offerte, et une reprise sur une section vide affiche
+// « Rien a jouer — cette section n'est pas encore ouverte » avec une sortie.
+// Surtout, LE RESTE DE LA PROGRESSION SURVIT : questions, jours et record
+// intacts.
+//
+// Rien n'etait donc a reparer. Mais cette garantie tenait par SOIN et non
+// par controle : une simplification de `charger()` la casserait en silence,
+// et un lecteur perdrait des semaines sans que rien ne l'avertisse. C'est
+// exactement le cas que ce fichier existe pour tenir.
+const PROGRES = {
+  questions: { 'sourates-777b4c5a': { vues: 3, justes: 2 } },
+  jours: ['2026-11-08', '2026-11-09', '2026-11-10'],
+  recordSerie: 7,
+  parJour: { '2026-11-10': 20 },
+};
+let survivantes = 0;
+let sansErreur = 0;
+const ABIMEES = [
+  ['paquet absent', { section: 'sens-des-sourates', paquet: null, pos: 5 }],
+  ['pos hors du paquet', { section: 'sens-des-sourates', paquet: ['a', 'b'], pos: 99 }],
+  ['reprise = une chaine', 'abime'],
+  ['reprise = un tableau', [1, 2, 3]],
+];
+for (const [nom, reprise] of ABIMEES) {
+  const errAbime = [];
+  const pa = await ctx.newPage();
+  pa.on('pageerror', (e) => errAbime.push(String(e.message).split('\n')[0]));
+  await pa.goto(`${B}/`, { waitUntil: 'domcontentloaded' });
+  await pa.evaluate((e) => localStorage.setItem('ipap.v1', JSON.stringify(e)),
+    { ...PROGRES, reprise });
+  await pa.goto(`${B}/`, { waitUntil: 'networkidle' });
+  await pa.waitForTimeout(500);
+  const vu = await pa.evaluate(() => {
+    // CE QUE L'APPLICATION CHARGE, pas ce que le stockage contient. La
+    // premiere version de ce bloc relisait localStorage directement : le
+    // sabotage ne reecrit pas le stockage, donc l'assertion passait quoi
+    // qu'il arrive. Une assertion qui ne peut pas echouer est interdite ici.
+    const M = window.IPAP_MEMOIRE;
+    const d = M ? M.charger() : null;
+    return {
+      rendu: (document.body.innerText || '').trim().length,
+      module: !!M,
+      questions: d ? Object.keys(d.questions || {}).length : -1,
+      jours: d ? (d.jours || []).length : -1,
+      record: d ? d.recordSerie : -1,
+    };
+  });
+  verifier(vu.module,
+    `reprise abimee (${nom}) : window.IPAP_MEMOIRE est introuvable — ce bloc `
+    + 'ne mesure donc RIEN');
+  verifier(errAbime.length === 0,
+    `reprise abimee (${nom}) : erreur JavaScript — ${errAbime[0]}`);
+  verifier(vu.rendu > 200,
+    `reprise abimee (${nom}) : l'accueil ne s'affiche plus (${vu.rendu} car.)`);
+  if (errAbime.length === 0) { sansErreur += 1; }
+  if (vu.questions === 1 && vu.jours === 3 && vu.record === 7) { survivantes += 1; }
+  verifier(vu.questions === 1 && vu.jours === 3 && vu.record === 7,
+    `reprise abimee (${nom}) : LA PROGRESSION EST PERDUE — `
+    + `${vu.questions} question(s), ${vu.jours} jour(s), record ${vu.record} ; `
+    + 'attendu 1, 3 et 7');
+  await pa.close();
+}
+console.log(`  ${ABIMEES.length} reprises abimees : ${survivantes} ou la `
+  + `progression est intacte, ${sansErreur} sans erreur JavaScript.`);
+
 await navigateur.close();
 
 if (fautes.length) {

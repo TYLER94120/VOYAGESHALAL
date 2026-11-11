@@ -24,7 +24,7 @@ lu par personne et entrerait en conflit à la première fusion.
 
 ## À COLLER DANS LE CARNET, À PARTIR D'ICI
 
-# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 10 NOVEMBRE 2026
+# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 11 NOVEMBRE 2026
 
 > **Comment lire cette note.** Son corps a été écrit le 14 octobre. Chaque
 > ajout porte sa date, et **une mesure datée ne se rafraîchit pas : elle se
@@ -1238,3 +1238,64 @@ remplir. Refait avec un fichier témoin distinct.
 
 > C'est la même leçon que les cinq précédentes de ce carnet, sous une autre
 > forme : **une sonde qui n'est pas elle-même vérifiée raconte ce qu'elle veut.**
+
+## LE 11 NOVEMBRE — UNE GARANTIE QUI TENAIT PAR SOIN, ET MON CONTRÔLE QUI NE POUVAIT PAS ÉCHOUER
+
+Ton site n'a pas de comptes : la progression d'un lecteur vit dans le
+`localStorage` de son téléphone. J'ai regardé ce qui arrive quand cet état est
+**abîmé** — un onglet fermé au mauvais moment, une version plus ancienne, un
+stockage à moitié écrit.
+
+`memoire.js` repose chaque champ sur un socle sain, mais `reprise` est accepté
+**en bloc** dès qu'il est un objet : son contenu n'est pas vérifié, contrairement
+à `jours` (filtré) et `parJour` (validé clé par clé). Il y avait donc une
+question ouverte.
+
+### Mesuré à l'écran, et la robustesse était là
+
+Cinq états abîmés, injectés puis chargés dans un vrai navigateur :
+
+| état | ce que le lecteur voit |
+|---|---|
+| `paquet` absent | pas de carte de reprise, l'accueil s'affiche |
+| `pos` hors du paquet | pas de carte, une partie neuve si on force l'adresse |
+| `reprise` = une chaîne | pas de carte, l'accueil s'affiche |
+| section inexistante | « **Rien à jouer** — cette section n'est pas encore ouverte. Choisir une autre » |
+| section vidée (`vie-du-prophete`) | le même message, avec une sortie |
+
+**Aucune erreur JavaScript, dans aucun cas.** Et surtout : avec une progression
+réelle à côté — questions vues, trois jours, record de 7 — **le reste survit
+intact** quand la reprise est abîmée. Le lecteur perd l'offre de reprendre, pas
+ses semaines.
+
+**Rien n'était donc à réparer.** Mais cette garantie tenait par **soin** et pas
+par contrôle : `controler-reprise.mjs` ne mesurait que le chemin heureux. Une
+simplification de `charger()` la casserait en silence, et un lecteur perdrait
+des semaines sans que rien ne l'avertisse. Le bloc est maintenant dans le
+contrôle.
+
+### Et mon propre contrôle ne pouvait pas échouer
+
+Première version du bloc : elle relisait la progression **dans
+`localStorage`**. J'ai saboté `charger()` pour qu'une reprise mal formée fasse
+tout jeter — et le bloc a **passé**, en affichant « la progression survit ».
+
+Évidemment : le sabotage ne réécrit pas le stockage. Mon assertion mesurait ce
+que le stockage **contient**, pas ce que l'application **charge**. Elle ne
+pouvait pas échouer.
+
+Corrigé : le bloc lit `M.charger()`, par où passe l'application. Et il vérifie
+d'abord que le module est joignable — sinon il le dit, au lieu de mesurer le
+vide. Sous sabotage il nomme maintenant les cas : « **LA PROGRESSION EST
+PERDUE — 0 question(s), 0 jour(s), record 0 ; attendu 1, 3 et 7** ».
+
+Sa ligne de bilan disait aussi « la progression survit » quoi qu'il arrive. Sous
+sabotage, elle l'affichait alors que trois cas sur quatre avaient perdu la
+progression. Elle imprime désormais **le chiffre** : « 4 reprises abîmées :
+4 où la progression est intacte, 4 sans erreur JavaScript ».
+
+> **À emporter : un contrôle écrit pour une régression doit être essayé CONTRE
+> cette régression, pas seulement sur l'état sain.** Le mien passait dans les
+> deux cas, ce qui est pire qu'aucun contrôle — il aurait rassuré. Et la cause
+> est la même que les six fois précédentes de ce carnet : **je mesurais à côté
+> de la chose**, le stockage au lieu du chargement.

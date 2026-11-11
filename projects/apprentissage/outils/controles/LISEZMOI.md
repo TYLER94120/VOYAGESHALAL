@@ -294,3 +294,25 @@ sur la page, et le contraste répond « /404.html … 1.36 pour 4.5 ».
 > **À retenir : une liste de pages bâtie sur le sitemap couvre ce qui est
 > indexé, pas ce qui est servi.** Les deux ensembles ne coïncident jamais tout
 > à fait, et la différence est exactement là où personne ne regarde.
+
+## Une reprise abîmée ne doit rien coûter — ajouté le 11 novembre
+
+`memoire.js` repose chaque champ du stockage sur un socle sain, mais `reprise`
+est accepté **en bloc** dès qu'il est un objet. Mesuré à l'écran sur cinq états
+abîmés : aucune erreur JavaScript, pas de carte de reprise offerte, un message
+« Rien à jouer » avec une sortie quand la section n'existe plus — et **le reste
+de la progression survit intact**.
+
+Rien n'était à réparer. Mais `controler-reprise.mjs` ne mesurait que le chemin
+heureux : la garantie tenait par soin, pas par contrôle. Elle y est maintenant,
+quatrième bloc.
+
+**Et ma première version ne pouvait pas échouer.** Elle relisait la progression
+dans `localStorage` ; le sabotage de `charger()` ne réécrit pas le stockage,
+donc l'assertion passait quoi qu'il arrive. Le bloc lit désormais
+`M.charger()` — par où passe l'application — et vérifie d'abord que
+`window.IPAP_MEMOIRE` est joignable, sinon il dit qu'il ne mesure rien.
+
+> **Un contrôle écrit pour une régression doit être essayé CONTRE cette
+> régression.** Un contrôle qui passe dans les deux cas est pire qu'aucun : il
+> rassure.
