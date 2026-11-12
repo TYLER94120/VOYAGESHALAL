@@ -24,7 +24,7 @@ lu par personne et entrerait en conflit à la première fusion.
 
 ## À COLLER DANS LE CARNET, À PARTIR D'ICI
 
-# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 11 NOVEMBRE 2026
+# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 12 NOVEMBRE 2026
 
 > **Comment lire cette note.** Son corps a été écrit le 14 octobre. Chaque
 > ajout porte sa date, et **une mesure datée ne se rafraîchit pas : elle se
@@ -1171,6 +1171,12 @@ plancher du cahier est de 100 questions.
   thème, c'est écrire du contenu de section, et je préfère te donner le chiffre
   avant. **Dis-le et c'est fait.**
 
+  > ⛔ **CECI EST RETIRÉ — voir la ronde du 12 novembre, plus bas.** Les 80
+  > étaient un compte de correspondances de mots, pas de versets pertinents :
+  > sur les 15 de « la colère », **treize parlent de la colère d'Allah**. Le
+  > total pertinent est d'une quinzaine, sous le seuil. **Ne réponds pas
+  > « vas-y » à cette phrase.**
+
 ### Une sixième unité de comparaison fausse, dans la même soirée
 
 Pour compter les versets du pèlerinage, le squelette arabe « حج » seul en
@@ -1299,3 +1305,120 @@ progression. Elle imprime désormais **le chiffre** : « 4 reprises abîmées :
 > deux cas, ce qui est pire qu'aucun contrôle — il aurait rassuré. Et la cause
 > est la même que les six fois précédentes de ce carnet : **je mesurais à côté
 > de la chose**, le stockage au lieu du chargement.
+
+## 🔴🔴 LE 12 NOVEMBRE — JE RETIRE CE QUE JE T'AI DIT LE 9 NOVEMBRE
+
+Le 9 novembre je t'ai écrit ceci, sur la section « le comportement » :
+
+> « **Le comportement », en revanche, TIENT** : les quatre sujets que tu nommes
+> ramènent **80 versets**, dont **65 que personne n'utilise encore**. C'est
+> quatre fois le seuil du générateur. **Dis-le et c'est fait.**
+
+**C'était faux, et il faut que tu saches exactement de quoi.** Les 80 étaient
+un compte de **correspondances de mots**, pas un compte de versets qui parlent
+de tes sujets. Je ne les avais pas lus.
+
+Lecture faite ce soir, verset par verset :
+
+| ton sujet | correspondances | ce qu'elles sont vraiment |
+|---|---|---|
+| **la colère** | 15 | **TREIZE parlent de la colère d'ALLAH.** Deux parlent de la colère d'un homme : 7:154, celle de Moïse qui se calme, et 42:37, « qui pardonnent après s'être mis en colère » |
+| **la parole** | 37 | la plupart sont « dites » ou « parole » en contexte théologique ou juridique : un mot substitué (2:59), une proposition de mariage (2:235), l'héritage (4:9), la parole ferme d'Allah (14:27) |
+| **les parents** | 31 | et l'arabe seul en ramenait **711** — « ام » est une sous-chaîne de dizaines de mots. Huit parlent de bonté ou d'obéissance ; les autres de parts d'héritage et de mariages interdits |
+| **les voisins** | 1 | 4:36, et celle-là est juste |
+
+Le total pertinent est de l'ordre de **quinze** versets — **sous le seuil de 20**
+du générateur, et très loin de ton plancher de 100.
+
+### Et le risque n'était pas un chiffre faux
+
+Si tu m'avais répondu « vas-y », le site aurait publié une section
+**« le comportement »** qui enseigne **« la colère »** à travers **treize
+versets sur le courroux divin**. Dans ton nom, sur le site le plus exposé de
+l'empire. C'est exactement ce que ta règle éditoriale existe pour empêcher, et
+j'en étais à un mot.
+
+> **À emporter, et c'est la septième fois dans ce carnet que c'est la même
+> cause : j'ai mesuré le MOT-CLÉ, pas le SUJET.** Un compte de
+> correspondances ressemble à une mesure, se calcule en une seconde, et ne dit
+> rien de ce qu'on croit lui faire dire. Les six fois précédentes c'était la
+> sous-chaîne arabe, « tous les lemmes du mot », l'apostrophe, le hachage de
+> l'identifiant, le stockage au lieu du chargement. Ici c'est le mot au lieu
+> du sens. **Le remède est toujours le même et il est bête : lire ce qu'on a
+> compté.**
+
+### Ce que ça règle, définitivement
+
+Les trois sections sous ton plancher ne peuvent **pas** être nourries par un
+balayage de mots-clés, et ce n'est plus une impression mais un compte :
+
+- **le jeûne** (10 versets) et **le pèlerinage** (11) : le Coran n'en a pas
+  assez, mesuré le 9 novembre et toujours vrai. Et pour le pèlerinage, ta
+  phrase disait déjà pourquoi — tu demandes « les **étapes** », que le Coran
+  n'expose pas en séquence.
+- **le comportement** : le Coran en a, mais **son vocabulaire pour ces sujets
+  ne sépare pas le comportement humain des attributs divins.** Aucune liste de
+  mots ne fait cette distinction — il faut un lecteur.
+
+Ces trois sections reposent donc sur des hadiths, et le seul blocage reste
+celui que ce carnet nomme depuis le 21 octobre : **aucune traduction française
+citable** dans le dépôt. Rien de ce que je peux faire ne le lève.
+
+La leçon est écrite dans l'en-tête de `faire-themes.py`, à l'endroit où la
+prochaine personne qui choisira des mots-clés la lira — avec la phrase qui
+manquait : « mesurée » veut dire **relue**, pas **comptée**.
+
+## 🔴 LE MÊME SOIR — J'AI REFAIT LA FAUTE DU 26 OCTOBRE, CINQ JOURS APRÈS AVOIR ÉCRIT COMMENT L'ÉVITER
+
+Pour vérifier que le générateur des thèmes était déterministe, je l'ai relancé
+seul. **Vingt-et-une questions de pratique ont disparu.**
+
+`faire-pratique.py` **ajoute** ses 47 questions aux banques de thème, et
+`faire-themes.py` **réécrit** ces banques en entier. C'est exactement le
+mécanisme qui avait fait disparaître treize questions pendant douze jours, le
+26 octobre. Le 7 novembre j'ai posé un garde-fou — **pour les fichiers de lot
+seulement.** J'avais oublié que `faire-pratique.py` est additif de la même
+façon.
+
+### Et la suite ne l'a presque pas vu
+
+Avec le pipeline complet **moins** `faire-pratique.py`, les contrôles ont rendu
+**une seule faute** :
+
+> `la-priere : la bonne reponse est la plus courte dans 11.3 % des 115 cartes
+> (fourchette 12-40 %) — la longueur la designe`
+
+Un hasard statistique, provoqué par l'absence des cartes — **pas la perte
+elle-même**. Sans ce hasard, la suite était **verte**. Et un lecteur de ce
+rapport serait parti chercher un problème de longueur de réponses.
+
+La ligne de bilan, elle, affichait « **26** questions de pratique » au lieu de
+47 — un nombre que **rien ne comparait à rien**.
+
+### Le garde-fou, symétrique de celui du 7 novembre
+
+La table de `faire-pratique.py` est la source, comme les fichiers de lot : ce
+qu'elle déclare doit se retrouver servi. Le contrôle imprime maintenant les
+deux côtés et nomme chaque manquante :
+
+```
+47 question(s) de pratique declarees dans la table, 21 absente(s)
+   pratique : « Avant la Salât, que faut-il laver en premier ? »
+              (sourate 5 verset 6) est declaree ... et ABSENTE
+```
+
+Après le pipeline complet : **47 déclarées, 0 absente**, et l'arbre revient
+**exactement** à son état commité — les banques, les pages, le sitemap, à
+l'octet. Le pipeline est donc bien reproductible ; ce qui ne l'était pas, c'est
+ma façon de le lancer.
+
+> **À emporter : quand on trouve un mécanisme de perte, il faut chercher TOUS
+> ses exemplaires, pas réparer celui qu'on a sous les yeux.** Le 7 novembre
+> j'avais le lot sous les yeux et j'ai écrit « un pipeline dont une étape
+> AJOUTE à ce qu'une autre ÉCRASE n'a pas d'ordre partiel » — sans aller
+> compter combien d'étapes ajoutent. Il y en avait deux. J'en ai gardé une.
+
+Et la preuve que la leçon ne suffit pas à protéger : **c'est moi qui ai refait
+la faute, cinq jours après l'avoir écrite**, en lançant un générateur seul pour
+une raison parfaitement légitime. Un garde-fou vaut mieux qu'une phrase dans un
+mode d'emploi.

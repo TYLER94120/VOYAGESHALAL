@@ -1218,6 +1218,50 @@ def main():
                     'classer-niveaux.py apres le lot.'
                     % (lot.name, str(e.get('question', ''))[:60], sec))
 
+    # ================================================================
+    # ET LES QUESTIONS DE PRATIQUE SONT-ELLES ENCORE LA ?
+    # AJOUTE LE 12 NOVEMBRE
+    # ================================================================
+    #
+    # LE 7 NOVEMBRE J'AI POSE CE GARDE-FOU POUR LES LOTS, ET J'AI OUBLIE QUE
+    # `faire-pratique.py` EST ADDITIF DE LA MEME FACON. Il ajoute ses 47
+    # questions aux banques de theme, que `faire-themes.py` REECRIT en entier.
+    #
+    # Le 12 novembre j'ai relance faire-themes.py seul, pour verifier qu'il
+    # etait deterministe. VINGT-ET-UNE questions de pratique ont disparu — la
+    # faute du 26 octobre, refaite par moi, cinq jours apres avoir ecrit
+    # qu'il fallait « relancer TOUT CE QUI VIENT APRES ».
+    #
+    # ET LA SUITE NE L'A PRESQUE PAS VU. Avec le pipeline complet moins
+    # faire-pratique, le lot de controles rendait UNE SEULE faute, portant sur
+    # la longueur des reponses de « la-priere » — un hasard statistique, pas
+    # la perte. Sans ce hasard la suite etait VERTE, et la ligne de bilan
+    # affichait « 26 questions de pratique » au lieu de 47 : un nombre que
+    # rien ne comparait a rien.
+    #
+    # La table de `faire-pratique.py` est la source, comme les fichiers de
+    # lot. Ce qu'elle declare doit se retrouver servi.
+    pratique_absentes = 0
+    if PRATIQUE:
+        servies_pratique = set()
+        for chemin in fichiers:
+            for q in json.loads(chemin.read_text(encoding='utf-8')):
+                m = SOURCE_CORAN.search(q.get('source') or '')
+                if m:
+                    servies_pratique.add((str(q.get('question', '')),
+                                          int(m.group(1)), int(m.group(2))))
+        for (texte, s, v) in sorted(PRATIQUE):
+            if (texte, s, v) in servies_pratique:
+                continue
+            pratique_absentes += 1
+            fautes.append(
+                'pratique : « %s » (sourate %d verset %d) est declaree dans la '
+                'table de faire-pratique.py et ABSENTE des questions servies. '
+                'Ce generateur AJOUTE a des banques que faire-themes.py '
+                'reecrit : il doit etre relance apres lui, et '
+                'classer-niveaux.py apres lui.'
+                % (texte[:60], s, v))
+
     cartes_vocab = verifiesVocab + nonVerifies
     if cartes_vocab and SENS_DU_LEMME is None:
         fautes.append(
@@ -1258,6 +1302,8 @@ def main():
           % (glose_locale, glose_egalite))
     print('  %d question(s) ecrite(s) a la main dans les lots, %d absente(s) '
           'des banques servies.' % (lots_lus, lots_absents))
+    print('  %d question(s) de pratique declarees dans la table, %d absente(s) '
+          'des banques servies.' % (len(PRATIQUE), pratique_absentes))
     print('  %d questions de pratique, confrontees mot-cle par mot-cle.' % pratiques)
     print('  %d questions de fait, recalculees depuis le corpus '
           '(%d faits).' % (faits_vus, len(FICHE)))

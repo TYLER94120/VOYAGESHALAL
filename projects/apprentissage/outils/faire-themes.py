@@ -42,6 +42,46 @@ DIACRITIQUES = re.compile(r'[ً-ٰٟۖ-ۭـ]')
 # mots francais. Les listes ont ete MESUREES avant d'etre retenues — une liste
 # trop etroite laissait la prière a 61 versets, une liste trop large ramenait
 # n'importe quoi.
+#
+# ==========================================================================
+# CE QUE « MESUREE » DOIT VOULOIR DIRE — 12 NOVEMBRE
+#
+# Mesurer le NOMBRE DE CORRESPONDANCES ne suffit pas. Il faut lire les
+# versets et mesurer la PERTINENCE, et les deux chiffres n'ont rien a voir.
+#
+# Le 9 novembre j'ai propose un theme « le comportement » pour les quatre
+# sujets du cahier — la parole, la colere, les parents, les voisins — en
+# annoncant 80 VERSETS, quatre fois le seuil de 20. Le 12 novembre, lecture
+# faite verset par verset :
+#
+#   la colere   15 correspondances, dont TREIZE parlent de la colere
+#       D'ALLAH (2:90, 7:71, 7:152, 42:16, 3:112, 4:93, 5:60, 8:16,
+#       16:106, 20:81, 20:86, 24:9, 42:16). DEUX parlent de la colere d'un
+#       homme : 7:154, celle de Moise qui se calme, et 42:37, « qui
+#       pardonnent apres s'etre mis en colere ».
+#   la parole   37 correspondances, dont la plupart sont « dites » ou
+#       « parole » dans un contexte theologique ou juridique : un mot
+#       substitue (2:59), une proposition de mariage (2:235), l'heritage
+#       (4:9), la parole ferme d'Allah (14:27).
+#   les parents 31 correspondances, et l'arabe seul en ramenait SEPT CENT
+#       ONZE — « ام » est une sous-chaine de dizaines de mots. Huit parlent
+#       de bonte ou d'obeissance ; les autres de parts d'heritage et de
+#       mariages interdits.
+#   les voisins  1 correspondance, 4:36, et celle-la est juste.
+#
+# Le total pertinent est de l'ordre de QUINZE versets, sous le seuil de 20.
+#
+# ET LE RISQUE N'ETAIT PAS UN CHIFFRE FAUX. Si ce theme avait ete ecrit, le
+# site aurait enseigne « la colere » par treize versets sur le courroux
+# divin, dans une section de comportement, au nom de l'editeur. C'est
+# exactement ce que la regle editoriale interdit.
+#
+# Le vocabulaire coranique de ces sujets NE SEPARE PAS le comportement
+# humain des attributs divins. Aucune liste de mots-cles ne fait cette
+# distinction : il faut un lecteur. C'est pour cela que ce theme n'existe
+# pas, et pour cela que les quatre themes ci-dessous ont ete relus un par
+# un avant d'etre retenus.
+# ==========================================================================
 THEMES = [
     ('piliers-de-la-foi', 'Les piliers de la foi',
      ['الملائكة', 'اليوم الاخر', 'رسله', 'كتبه', 'بالغيب'],

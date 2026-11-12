@@ -108,9 +108,13 @@ le-pelerinage     « Les étapes du hajj et de la 'umra. »                11 ve
 
 `faire-themes.py` refuse une section sous **20 versets**. Le jeûne et le
 pèlerinage ne peuvent donc pas venir du Coran — ils reposent sur des hadiths,
-et le dépôt n'en a aucun de citable. **« Le comportement » tient** : 80
-versets, dont 65 qu'aucune section n'utilise. Le thème n'est pas écrit : c'est
-du contenu de section, donc une décision d'éditeur.
+et le dépôt n'en a aucun de citable.
+
+> ⛔ **La suite de ce paragraphe disait « Le comportement tient : 80 versets ».
+> C'EST RETIRÉ, le 12 novembre.** Les 80 étaient des correspondances de mots,
+> pas des versets pertinents : sur les 15 de « la colère », **treize parlent de
+> la colère d'Allah**. Le total pertinent est d'une quinzaine, sous le seuil.
+> Le détail et la leçon sont dans l'en-tête de `faire-themes.py`.
 
 Et pour mémoire : le squelette arabe « حج » seul ramène **41** versets, dont
 « pierres » et « le rocher ». Le double test — un mot arabe **et** un mot
@@ -199,6 +203,20 @@ avant, donc les questions du lot sortaient sans `niveau`.
 > **À retenir : un pipeline dont une étape AJOUTE à ce qu'une autre ÉCRASE n'a
 > pas d'ordre partiel.** Il faut tout rejouer depuis l'étape touchée, ou
 > vérifier que l'ajout est encore là. Les deux, de préférence.
+
+**IL Y A DEUX ÉTAPES ADDITIVES, PAS UNE — mesuré le 12 novembre.** Le garde-fou
+ci-dessus ne couvrait que les fichiers de lot. `faire-pratique.py` ajoute aussi
+ses **47** questions aux banques de thème, que `faire-themes.py` réécrit en
+entier. Le 12 novembre j'ai relancé `faire-themes.py` seul pour tester son
+déterminisme : **21 questions de pratique ont disparu**, et le lot de contrôles
+n'a rendu qu'une faute sans rapport (un hasard sur la longueur des réponses).
+Sans ce hasard, la suite était verte.
+
+`controler-questions.py` confronte maintenant les deux sources — les lots **et**
+la table de pratique — à ce qui est servi, et nomme chaque manquante.
+
+> **Quand on trouve un mécanisme de perte, chercher tous ses exemplaires, pas
+> réparer celui qu'on a sous les yeux.**
 
 ### Ce que « un état faux » veut dire, mesuré
 
