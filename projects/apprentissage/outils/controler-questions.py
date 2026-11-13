@@ -1720,6 +1720,170 @@ def main():
           % (sources_lues, champs_lus, motifs_vus,
              len(RECUEILS), len(ATTRIBUTIONS)))
 
+    # ================================================================
+    # CE QUE LE LECTEUR VOIT — AJOUTE LE 13 NOVEMBRE
+    # ================================================================
+    #
+    # Tout ce qui precede confronte des CHAMPS au corpus. Ce bloc confronte
+    # ce que la CARTE MONTRE, tel que js/qcm.js le pose a l'ecran : le
+    # surtitre, le verset, le mot en vert, le glyphe, l'enonce, les quatre
+    # reponses. RIEN D'AUTRE n'est sous les yeux du lecteur au moment ou il
+    # repond — ni la source, ni l'explication, ni la section, ni
+    # l'identifiant. Deux fautes se cachent dans cet ecart.
+    #
+    # ---- A. LE VERT TOMBE-T-IL SUR LE MOT ENTIER ? ------------------
+    #
+    #     js/qcm.js:195     var i = t.indexOf(m);
+    #
+    # `indexOf` cherche une SOUS-CHAINE. Si le mot vise est une sous-chaine
+    # d'un mot plus long place avant lui dans le verset, le vert se pose sur
+    # un MORCEAU DU MAUVAIS MOT, et la carte demande le sens d'un fragment.
+    # Le controle ecrit plus haut dit `q['surligne'] not in q['arabe']` : la
+    # meme recherche de sous-chaine, donc il ne peut pas voir cette faute.
+    # Un generateur qui surlignerait le RADICAL au lieu de la forme flechie
+    # — ce que faire-11-vocabulaire.py manipule a longueur de code — les
+    # produirait toutes d'un coup, et la suite resterait verte.
+    #
+    # C'est la famille de faute de ce carnet, la huitieme : « ام » qui
+    # ramenait 711 versets, l'apostrophe de « l'enfer », le mot-cle au lieu
+    # du sujet. Chaque fois, une correspondance approximative prise pour une
+    # identite.
+    #
+    # LA REGLE DE BORD EST MESUREE, PAS SUPPOSEE. Dans le corpus arabe de ce
+    # depot, le seul separateur de mots est l'espace U+0020 (76 587
+    # occurrences) ; tous les autres caracteres non-lettres sont des signes
+    # combinants, qui s'attachent A L'INTERIEUR d'un mot. Un signe combinant
+    # juste apres la correspondance prouve donc qu'elle a coupe un mot.
+    # L'echappement HTML de js/qcm.js ne touche ni les lettres arabes ni
+    # l'espace : les positions sont les memes dans le navigateur et ici.
+    verts = 0
+    verts_entiers = 0
+    for sec in sorted(par_section):
+        for q in par_section[sec]:
+            mot = q.get('surligne')
+            if not mot:
+                continue
+            verts += 1
+            ar = q.get('arabe') or ''
+            i = ar.find(mot)          # exactement ce que fait le navigateur
+            if i < 0:
+                continue              # deja dit plus haut, et sans vert
+            j = i + len(mot)
+            debut_ok = (i == 0 or ar[i - 1] == ' ')
+            fin_ok = (j == len(ar) or ar[j] == ' ')
+            if debut_ok and fin_ok:
+                verts_entiers += 1
+                continue
+            fautes.append(
+                '%s/%s : le vert ne tombe pas sur un mot entier. Le '
+                'navigateur cherche « %s » et le trouve d\'abord DANS '
+                '« …%s… », a la position %d. La carte demande le sens d\'un '
+                'fragment, ou d\'un autre mot que celui qu\'on a glose.'
+                % (sec, q['id'], mot,
+                   ar[max(0, i - 12):j + 12], i))
+
+    # ---- B. DEUX CARTES QUI MONTRENT LA MEME CHOSE ------------------
+    #
+    # Le 7 novembre, deux cartes marquaient faux une reponse juste : le Coran
+    # repete des versets, deux versets au meme arabe tombaient dans le meme
+    # vivier, et la traduction de l'un servait de LEURRE a la question posee
+    # sur l'autre. Repare dans faire-themes.py et faire-01-sourates.py avec
+    # `traductions_jumelles`, indexe sur l'ARABE IDENTIQUE.
+    #
+    # Mais la reparation vit dans DEUX generateurs, et son effet n'etait
+    # mesure nulle part. Un troisieme generateur, ou une forme de question
+    # dont l'enonce ne montre pas d'arabe — la forme B montre une moitie de
+    # traduction FRANCAISE — refait la faute sans que rien ne la voie. La
+    # lecon du 12 novembre etait exactement celle-la : chercher TOUS les
+    # exemplaires d'un mecanisme, pas reparer celui qu'on a sous les yeux.
+    #
+    # Ce controle-ci ne regarde aucun generateur. Il groupe les cartes
+    # SERVIES par ce qu'elles montrent, et il couvre donc toutes les formes
+    # et tous les generateurs, y compris ceux qui n'existent pas encore.
+    def montre(q):
+        """La cle de ce que le lecteur VOIT, hors reponses (js/qcm.js)."""
+        return (q.get('surtitre') or q.get('theme') or '',
+                q.get('arabe') or '',
+                q.get('surligne') or '',
+                q.get('glyphe') or '',
+                q.get('image') or '',
+                q.get('question') or '')
+
+    def juste(q):
+        r = q.get('reponses') or []
+        i = q.get('bonne')
+        return r[i] if isinstance(i, int) and 0 <= i < len(r) else None
+
+    memes = {}
+    for sec in sorted(par_section):
+        for q in par_section[sec]:
+            memes.setdefault(montre(q), []).append((sec, q))
+
+    # Le cas NUISIBLE : la carte marque faux une reponse qui est la bonne
+    # d'une carte au meme enonce visible. C'est la faute du 7 novembre.
+    justes_par_vue = {}
+    for vue, lot in memes.items():
+        justes_par_vue[vue] = {j for (_, q) in lot for j in [juste(q)] if j}
+
+    enonces_partages = 0
+    enonces_ambigus = []
+    for vue, lot in memes.items():
+        if len(lot) < 2:
+            continue
+        enonces_partages += 1
+        legitimes = justes_par_vue[vue]
+        if len(legitimes) > 1:
+            enonces_ambigus.append((vue, lot, legitimes))
+        for sec, q in lot:
+            b = juste(q)
+            for i, r in enumerate(q.get('reponses') or []):
+                if i == q.get('bonne') or r == b:
+                    continue
+                if r in legitimes:
+                    fautes.append(
+                        '%s/%s : cette carte marque FAUX une reponse JUSTE. '
+                        'Elle montre exactement ce que montre une autre '
+                        'carte, dont la bonne reponse est « %s » — proposee '
+                        'ici comme leurre. C\'est la faute du 7 novembre.'
+                        % (sec, q['id'], r[:90]))
+
+    # LE RESTE EST SIGNALE, PAS CORRIGE. Deux cartes peuvent montrer la meme
+    # chose et avoir deux bonnes reponses differentes sans tromper personne,
+    # a condition que ni l'une ni l'autre ne propose la reponse de sa jumelle
+    # — ce que le bloc ci-dessus garantit. Le cas lu le 13 novembre :
+    #
+    #   sourate 84, versets 2 et 5, arabe IDENTIQUE
+    #     « وَأَذِنَتْ لِرَبِّهَا وَحُقَّتْ »
+    #   v. 2  « et obeira a son Seigneur - et fera ce qu'il doit faire »
+    #   v. 5  « et qu'elle obeira a son Seigneur - et fera ce qu'elle doit faire »
+    #
+    # La difference est un PRONOM : le verset 2 parle du ciel, le verset 5 de
+    # la terre, et Hamidullah accorde au sujet. Les deux traductions sont
+    # justes, chacune a sa place. Le lecteur n'est pas lese : la jumelle
+    # n'est pas dans les leurres, il repond sur le sens et il a juste.
+    # Ce n'est donc pas une faute, et on ne touche pas au texte traduit.
+    #
+    # Mais le nombre est FIGE ici : un cas de plus devra etre LU avant d'etre
+    # accepte. Un chiffre qui monte tout seul est un chiffre qui ne dit rien.
+    AMBIGUS_LUS = 1
+    if len(enonces_ambigus) > AMBIGUS_LUS:
+        for vue, lot, legitimes in enonces_ambigus:
+            fautes.append(
+                'enonce visible partage par %d cartes (%s) avec %d bonnes '
+                'reponses differentes : %s. Il y en a %d au lieu des %d '
+                'relus le 13 novembre — a LIRE avant d\'etre accepte.'
+                % (len(lot), ', '.join('%s/%s' % (s, q['id']) for s, q in lot),
+                   len(legitimes), ' | '.join(sorted(x[:60] for x in legitimes)),
+                   len(enonces_ambigus), AMBIGUS_LUS))
+
+    # Les chiffres, pas un verdict. Une ligne « le vert tombe toujours juste »
+    # s'afficherait aussi le jour ou il tombe a cote.
+    print('  %d mot(s) en vert, %d pose(s) sur un mot entier par le '
+          'navigateur.' % (verts, verts_entiers))
+    print('  %d enonce(s) visibles partages par plusieurs cartes, %d a bonnes '
+          'reponses differentes (relus : %d).'
+          % (enonces_partages, len(enonces_ambigus), AMBIGUS_LUS))
+
     if fautes:
         print('\n  %d FAUTE(S) :' % len(fautes))
         for x in fautes[:25]:

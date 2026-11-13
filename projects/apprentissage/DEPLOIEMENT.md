@@ -367,6 +367,16 @@ Ce qu'un `publier.py` enverrait, compte entre `59e67ae` et la branche :
 
 Aucun fichier ajoute, aucun supprime : les 72 sont des modifications.
 
+**Note du 13 novembre.** La ronde de ce soir n'a touche que quatre fichiers, et
+les quatre RESTENT AU DEPOT : `outils/controler-questions.py`,
+`outils/LISEZMOI.md`, `docs/POUR-LE-CARNET.md` et ce fichier-ci. Les quatre
+etaient deja dans les 69. Le compte de ce qui partirait en ligne est donc INCHANGE — 72 fichiers,
+69 au depot, remesure ce soir entre `59e67ae` et l'arbre de travail. Une ronde
+qui n'ajoute rien a la file de publication est le cas normal, pas un echec :
+elle a ajoute deux mesures sur ce que la carte MONTRE (le mot en vert tombe sur
+un mot entier 644 fois sur 644 ; 0 carte marque faux une reponse juste) et
+n'avait rien a reparer.
+
 Les 39 controles sont verts. Le detail de ce que chaque ronde a change est
 dans les messages de commit, et le resume dans `docs/POUR-LE-CARNET.md`.
 

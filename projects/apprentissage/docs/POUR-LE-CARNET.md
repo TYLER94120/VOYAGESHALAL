@@ -24,7 +24,7 @@ lu par personne et entrerait en conflit à la première fusion.
 
 ## À COLLER DANS LE CARNET, À PARTIR D'ICI
 
-# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 12 NOVEMBRE 2026
+# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 13 NOVEMBRE 2026
 
 > **Comment lire cette note.** Son corps a été écrit le 14 octobre. Chaque
 > ajout porte sa date, et **une mesure datée ne se rafraîchit pas : elle se
@@ -1422,3 +1422,137 @@ Et la preuve que la leçon ne suffit pas à protéger : **c'est moi qui ai refai
 la faute, cinq jours après l'avoir écrite**, en lançant un générateur seul pour
 une raison parfaitement légitime. Un garde-fou vaut mieux qu'une phrase dans un
 mode d'emploi.
+
+---
+
+## LE 13 NOVEMBRE — CE QUE LA CARTE MONTRE, ET CE QUE LE CONTRÔLE REGARDAIT
+
+### La question de ce soir
+
+Tous les contrôles de ce projet confrontent des **champs** au corpus : la
+source dit sourate 2 verset 3, le texte arabe est-il bien celui de 2:3 ; la
+glose dit « croyants », le corpus morphologique la confirme-t-il. Aucun ne
+regardait **ce que la carte met sous les yeux du lecteur**.
+
+Or `js/qcm.js` n'affiche que six choses : le surtitre, le verset, le mot en
+vert, le glyphe, l'énoncé, les quatre réponses. **Ni la source, ni
+l'explication, ni la section, ni l'identifiant** — tout ce sur quoi les
+contrôles s'appuient est invisible au moment où la personne répond. Deux
+fautes se cachent dans cet écart.
+
+### A. LE VERT TOMBE-T-IL SUR LE BON MOT ?
+
+Les 1 161 cartes de vocabulaire montrent un verset entier et surlignent le mot
+dont on demande le sens. Le navigateur le pose ainsi :
+
+```js
+js/qcm.js:195     var i = t.indexOf(m);
+```
+
+`indexOf` cherche une **sous-chaîne**. Si le mot visé est une sous-chaîne d'un
+mot plus long placé avant lui dans le verset, **le vert se pose sur un morceau
+du mauvais mot**, et la carte demande le sens d'un fragment.
+
+Et le contrôle qui existait depuis septembre écrit :
+
+```python
+if q['surligne'] not in (q.get('arabe') or ''):
+```
+
+**La même recherche de sous-chaîne.** Il ne pouvait pas voir cette faute. Un
+générateur qui surlignerait le **radical** au lieu de la forme fléchie — et
+`faire-11-vocabulaire.py` manipule des radicaux à longueur de code — les
+produirait toutes d'un coup, la suite restant verte.
+
+C'est la **huitième** fois que ce carnet trouve la même cause : une
+correspondance approximative prise pour une identité. Les sept précédentes : la
+sous-chaîne arabe « ام » qui ramenait 711 versets, « tous les lemmes du mot »,
+l'apostrophe de « l'enfer », le hachage de l'identifiant, le stockage au lieu
+du chargement, le sitemap au lieu du servi, le mot-clé au lieu du sujet.
+
+**La règle de bord est mesurée, pas supposée.** J'ai compté les caractères du
+corpus arabe de ce dépôt : le seul séparateur de mots est l'espace U+0020
+(76 587 occurrences). Tous les autres caractères non-lettres sont des signes
+combinants, qui s'attachent **à l'intérieur** d'un mot. Un signe combinant
+juste après la correspondance prouve donc qu'elle a coupé un mot en deux.
+
+**Résultat de la mesure : 644 mots en vert, 644 posés sur un mot entier.**
+Rien à réparer. La garantie tenait — par le soin du générateur, pas par un
+contrôle. Elle est maintenant tenue par un contrôle.
+
+### B. DEUX CARTES QUI MONTRENT LA MÊME CHOSE
+
+Le 7 novembre, deux cartes en ligne **donnaient tort à une bonne réponse** : le
+Coran répète des versets, deux versets au même arabe tombaient dans le même
+vivier de leurres, et la traduction de l'un servait de leurre à la question
+posée sur l'autre. Réparé dans `faire-themes.py` et `faire-01-sourates.py` avec
+`traductions_jumelles`, **indexé sur l'arabe identique**.
+
+Mais la réparation vit dans **deux générateurs**, et son effet n'était mesuré
+nulle part. Un troisième générateur, ou une forme de question dont l'énoncé ne
+montre **pas** d'arabe — la forme B montre une moitié de traduction française —
+refait la faute sans que rien ne la voie.
+
+Le nouveau contrôle **ne regarde aucun générateur**. Il groupe les cartes
+**servies** par ce qu'elles montrent, et couvre donc toutes les formes et tous
+les générateurs, y compris ceux qui n'existent pas encore.
+
+| Mesure | Chiffre |
+|---|---|
+| énoncés visibles partagés par plusieurs cartes | **90** |
+| … dont les bonnes réponses diffèrent | **1** |
+| cartes qui marquent faux une réponse juste | **0** |
+
+Le zéro est la preuve indépendante que la réparation du 7 novembre tient sur ce
+qui est servi — pas seulement dans le code des générateurs.
+
+### Le cas unique, lu
+
+Sourate 84, **versets 2 et 5, arabe identique** :
+
+> « وَأَذِنَتْ لِرَبِّهَا وَحُقَّتْ »
+>
+> v. 2 — « et obéira à son Seigneur - et fera ce qu'il doit faire »
+> v. 5 — « et qu'elle obéira à son Seigneur - et fera ce qu'elle doit faire »
+
+La différence est **un pronom** : le verset 2 parle du **ciel**, le verset 5 de
+la **terre**, et Hamidullah accorde au sujet. Les deux traductions sont justes,
+chacune à sa place. Le lecteur n'est pas lésé : la jumelle n'est pas dans les
+leurres, il répond sur le sens et il a juste.
+
+**Ce n'est donc pas une faute, et je n'ai pas touché au texte traduit.** Mais
+le nombre est figé dans le contrôle à 1 : un cas de plus devra être **lu** avant
+d'être accepté. Un chiffre qui monte tout seul est un chiffre qui ne dit rien.
+
+### Les trois sabotages
+
+La leçon du 11 novembre — *un contrôle écrit pour une régression doit être
+essayé contre cette régression* — appliquée avant de committer :
+
+| Sabotage | Ce que le contrôle a fait |
+|---|---|
+| `surligne` tronqué de deux caractères (le radical au lieu de la forme) | **sortie 1**, carte nommée, bilan passé de 644 à **643** |
+| la traduction de 84:5 remise dans les leurres de 84:2 | **sortie 1**, « cette carte marque FAUX une réponse JUSTE » |
+| un arabe rendu identique à celui d'un autre verset | **sortie 1**, bilan passé de 1 à **2** ambigus, « à LIRE » |
+
+Et dans le premier cas, **le contrôle d'origine est resté muet** : une seule
+faute remontée, la mienne. La preuve qu'il ne pouvait pas la voir.
+
+### Les chiffres
+
+```
+questions                2 616, inchangé
+mots en vert             644 mesurés, 644 sur un mot entier
+énoncés partagés         90, dont 1 à bonnes réponses différentes
+réponses justes          0 marquée fausse
+contrôles               39 verts (9 python + 30 navigateur)
+```
+
+### Ce que je n'ai pas fait
+
+Aucune page neuve, aucune leçon, aucun titre réécrit, aucune question touchée.
+Le levier 1 — les titres — reste écarté pour la raison mesurée du 21 octobre :
+**12 impressions**, alors que la compétence de l'empire demande **88**
+impressions avant de juger un titre. Et le site reste injoignable depuis ce
+conteneur (`000` sur les trois adresses), donc tout ce qui précède est
+**vérifié au dépôt, non vérifié en ligne**.

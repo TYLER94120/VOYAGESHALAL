@@ -448,6 +448,39 @@ contre elle. **Mesure du 30 octobre : 30 verts, et les 3 contrôles Python qui
 interrogent le serveur aussi.** `js/qcm.js` y fait 19 237 octets contre
 35 189 à la source : 45 % de ce qu'on relit n'est pas ce qu'on sert.
 
+### Un contrôle qui lit un champ ne mesure pas ce que la carte montre
+
+Ajouté le 13 novembre. `js/qcm.js` n'affiche que **six** choses : le surtitre,
+le verset, le mot en vert, le glyphe, l'énoncé, les quatre réponses. Ni la
+source, ni l'explication, ni la section, ni l'identifiant — **tout ce sur quoi
+les contrôles s'appuient est invisible** au moment où la personne répond.
+
+Deux conséquences, vérifiées :
+
+1. **`in` n'est pas « ce mot-là ».** Le contrôle disait
+   `q['surligne'] not in q['arabe']` et le navigateur fait `t.indexOf(m)` : les
+   deux cherchent une **sous-chaîne**. Un mot visé qui est une sous-chaîne d'un
+   mot plus long placé avant lui fait tomber le vert sur un morceau du mauvais
+   mot, et les deux restent muets. Le contrôle vérifie maintenant le **bord**
+   du mot — espace ou bord de chaîne, la seule séparation qui existe dans ce
+   corpus (76 587 espaces, tout le reste étant des signes combinants).
+   Mesure : **644 mots en vert, 644 sur un mot entier**.
+
+2. **Un garde-fou posé dans un générateur ne couvre que ce générateur.** La
+   réparation des jumeaux du 7 novembre vit dans `faire-themes.py` et
+   `faire-01-sourates.py`. Le contrôle ajouté le 13 novembre groupe les cartes
+   **servies** par ce qu'elles montrent : il ne regarde aucun générateur, donc
+   il couvre aussi ceux qui n'existent pas encore, et les formes de question
+   dont l'énoncé ne montre pas d'arabe. Mesure : **90 énoncés visibles partagés
+   par plusieurs cartes, 1 à bonnes réponses différentes** (sourate 84 versets
+   2 et 5, arabe identique, le pronom accordé au ciel puis à la terre — juste
+   des deux côtés, et lu), **0 carte qui marque faux une réponse juste**.
+
+> **La règle : écrire le contrôle sur ce que le lecteur VOIT, et le poser sur
+> les banques servies plutôt que dans le générateur.** Un contrôle placé dans
+> le générateur protège un chemin ; un contrôle placé sur le servi protège
+> tous les chemins, présents et futurs.
+
 ## Avant d'écrire un titre : la loi de précision
 
 **Lue le 12 octobre 2026 dans `docs/MESURES.md` du dépôt VOYAGESHALAL**, le
