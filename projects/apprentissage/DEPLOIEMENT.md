@@ -367,6 +367,16 @@ Ce qu'un `publier.py` enverrait, compte entre `59e67ae` et la branche :
 
 Aucun fichier ajoute, aucun supprime : les 72 sont des modifications.
 
+**Note du 14 novembre.** Meme cas : la ronde n'a touche que des fichiers qui
+RESTENT AU DEPOT — `outils/controler-questions.py`, `outils/LISEZMOI.md`,
+`docs/POUR-LE-CARNET.md` et ce fichier-ci, tous deja dans les 69. Le compte de
+ce qui partirait en ligne est donc INCHANGE : 72 fichiers, 69 au depot. La
+regle editoriale — aucune promesse de merite, aucune parole attribuee au
+Prophete au nom du site — ne couvrait que les 2 616 questions ; elle couvre
+maintenant aussi les 63 pages HTML. Mesure avant ecriture : 4 089 morceaux de
+texte dans la voix du site, ZERO promesse. Rien a reparer, mais la garantie ne
+tient plus par soin seul.
+
 **Note du 13 novembre.** La ronde de ce soir n'a touche que quatre fichiers, et
 les quatre RESTENT AU DEPOT : `outils/controler-questions.py`,
 `outils/LISEZMOI.md`, `docs/POUR-LE-CARNET.md` et ce fichier-ci. Les quatre

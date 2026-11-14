@@ -24,7 +24,7 @@ lu par personne et entrerait en conflit à la première fusion.
 
 ## À COLLER DANS LE CARNET, À PARTIR D'ICI
 
-# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 13 NOVEMBRE 2026
+# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 14 NOVEMBRE 2026
 
 > **Comment lire cette note.** Son corps a été écrit le 14 octobre. Chaque
 > ajout porte sa date, et **une mesure datée ne se rafraîchit pas : elle se
@@ -1556,3 +1556,163 @@ Le levier 1 — les titres — reste écarté pour la raison mesurée du 21 octo
 impressions avant de juger un titre. Et le site reste injoignable depuis ce
 conteneur (`000` sur les trois adresses), donc tout ce qui précède est
 **vérifié au dépôt, non vérifié en ligne**.
+
+---
+
+## LE 14 NOVEMBRE — LA RÈGLE LA PLUS IMPORTANTE DU SITE NE COUVRAIT QUE LA MOITIÉ DU SITE
+
+### Ce que j'ai cherché
+
+La règle éditoriale que tu as posée toi-même : **on ne promet aucun mérite**
+(« celui qui la récite… », « elle protège de… », « les vertus de… ») et **on
+n'attribue aucune parole au Prophète** au nom du site, parce que ce projet n'a
+**aucune traduction française sourcée** de hadiths.
+
+`controler-questions.py` la fait respecter depuis le 15 octobre. J'ai regardé
+où elle s'applique :
+
+| fichier | `MERITES` | `RECUEILS` | voix du site |
+|---|---|---|---|
+| `controler-questions.py` | ✅ | ✅ | ✅ |
+| `controler-lecons.py` | — | — | — |
+| `controler-sections.py` | — | — | — |
+| `controler-index.py` | — | — | — |
+
+**Elle ne s'appliquait qu'aux 2 616 questions. À aucune des 63 pages HTML.**
+
+Et les pages sont la surface exposée : la **leçon de sourate est le seul format
+qui classe** sur ce site — al-Ikhlas sort en position 11 — et les mots de mérite
+sont précisément les plus cherchés. Une promesse posée là ferait venir des gens
+sur une page qui ne répond pas, et t'engagerait sur un contenu qui n'existe pas.
+
+C'est la **même forme de faute que les deux nuits précédentes** : un garde-fou
+posé sur un chemin pendant que l'autre passe à côté. Le 12 novembre c'étaient
+les lots et la pratique ; le 13, les générateurs et le servi ; ce soir, les
+questions et les pages.
+
+### Ce que la mesure a donné
+
+```
+63 pages, 4 089 morceaux de texte dans la voix du site
+0 promesse de mérite, 0 attribution, 0 recueil nommé
+```
+
+**Rien à réparer.** La règle tenait — par soin, pas par contrôle.
+
+### Et j'ai vérifié que la sonde pouvait trouver
+
+Un zéro rendu par une sonde incapable de rendre autre chose ne mesure rien
+(leçon du 11 novembre). J'ai donc planté à la main, dans la leçon d'al-Ikhlas :
+
+> `<p class="lecon-quoi">Celui qui la recite trois fois a la recompense du
+> Coran entier.</p>`
+
+La sonde l'a nommée deux fois — sur « recompense » et sur « celui qui la
+recite ». Le zéro est donc un vrai zéro.
+
+### Le choix de conception qui porte tout le poids
+
+La règle porte sur **qui parle**, pas sur les mots employés. Le site peut citer
+« récompense » ; il ne peut pas en promettre une. Le contrôle écarte donc le
+texte cité — les classes `verset-ar`, `verset-fr`, `verset-source`, `lecon-ar`,
+et tout ce qui est entre guillemets.
+
+**Ce n'est pas une précaution théorique.** Mesure :
+
+```
+571 traductions de versets publiées sur les pages
+ 12 contiennent un mot de la liste des mérites
+```
+
+Parmi elles, **« Dis: "Je cherche protection auprès du Seigneur de l'aube
+naissante" »** — Al-Falaq, verset 1. Sans cette exclusion, le contrôle aurait
+levé douze fautes **sur le Coran lui-même**, et la réparation évidente aurait
+été d'affaiblir la liste des mots — c'est-à-dire de détruire le garde-fou pour
+faire taire une fausse alerte.
+
+### Une seule liste, pas deux
+
+Les trois listes de mots étaient écrites **dans** `main()`. Un second endroit en
+avait besoin, et la tentation était de les recopier. **C'est exactement la faute
+du 12 novembre** — deux exemplaires d'une règle dérivent toujours. Elles sont
+donc remontées au module, et les deux surfaces lisent **les mêmes tuples**.
+
+### Ce que les pages disent à Google
+
+54 des 63 pages portent un bloc `application/ld+json` : la déclaration que
+Google lit sur la page elle-même. **Un seul contrôle le regardait** — celui
+d'`index.html`. Les 53 autres n'étaient lus par personne.
+
+Trois accords sont maintenant vérifiés, et seulement trois, parce que ce sont
+les seuls qui rendent une page **menteuse** si on les casse : l'adresse déclarée
+doit être l'adresse canonique, la description déclarée doit être la meta
+description, la langue déclarée doit être le français.
+
+| mesure | chiffre |
+|---|---|
+| blocs `ld+json` relus | **54** |
+| JSON invalide | **0** |
+| adresse déclarée ≠ canonique | **0** |
+| description déclarée ≠ meta | **0** |
+| pages sans bloc | **9** — les écrans non indexables et le fichier de vérification Google |
+
+### Ce que j'ai failli te raconter, et qui était faux
+
+Ma première version comparait aussi le `name` du bloc au `<title>` de la page,
+et sortait **39 « écarts »** :
+
+> `name` « Sourate Abasa, verset par verset » absent du `<title>` « Sourate
+> Abasa : traduction, texte arabe, 42 versets »
+
+**Ce n'étaient pas des fautes.** schema.org n'a jamais demandé que `name`
+recopie le titre : le titre porte les mots de la requête, le nom porte celui de
+la ressource. **Le critère était de moi, pas de la norme.** Trente-neuf lignes
+rouges inventées — et si je les avais « réparées », j'aurais aligné 38 titres de
+leçon sur un texte sans mots de requête, c'est-à-dire cassé le seul levier qui
+marche ici. Il n'est pas dans le contrôle.
+
+### Les quatre sabotages
+
+| Sabotage | Ce que le contrôle a fait |
+|---|---|
+| une promesse de mérite plantée dans al-Ikhlas | **sortie 1**, 2 fautes, élément nommé |
+| l'adresse `ld+json` d'al-Falaq pointée sur al-Fatiha | **sortie 1**, les deux adresses citées |
+| un bloc `ld+json` rendu invalide | **sortie 1**, « Google ne lit alors RIEN » |
+| la langue déclarée passée à `en` | **sortie 1**, langue citée |
+
+### Ce que j'ai aussi vérifié, et laissé tel quel
+
+- **Les titres réellement servis** (lever 1), mesurés sur le serveur local et
+  non dans la source : 63 pages, **0 titre en double**, **0 description en
+  double**, **0 titre de plus de 60 caractères**. Seuls `404.html` (qui porte
+  `noindex` et n'est pas au sitemap) et le fichier de vérification Google n'ont
+  pas de description — c'est correct.
+- **Les commentaires du code** contiennent « merite », « recompense »,
+  « vertu », « al-Bukhari » — tous lus un par un : ce sont **la règle
+  elle-même**, écrite en commentaire (« FAIT, sec et exact, et jamais un
+  merite »), et ils sont retirés par `alleger.py` avant la mise en ligne. Plus
+  joli encore : **« couverture » contient « vertu »**. Une recherche de mots
+  seule aurait rendu dix faux positifs. Il faut lire.
+- **Les 55 scripts en ligne** des pages : ce sont les blocs `ld+json`, aucun mot
+  interdit.
+- **Pas de translittération** sur les leçons : la règle « translittération
+  toujours vérifiée » n'a donc rien à mordre ici.
+
+### Les chiffres
+
+```
+questions                2 616, inchangé
+pages relues                63, 4 089 morceaux de la voix du site
+promesses, attributions      0
+blocs ld+json               54, 0 écart
+traductions citées         571, dont 12 portant un mot de mérite — écartées
+contrôles                   39 verts (9 python + 30 navigateur)
+```
+
+### Ce que je n'ai pas fait
+
+Aucune page neuve, aucune leçon, aucun titre réécrit, aucune question touchée.
+Le lever 1 reste écarté pour la raison mesurée du 21 octobre : **12
+impressions**, contre les **88** que demande la compétence de l'empire avant de
+juger un titre. Et le site reste injoignable depuis ce conteneur : **vérifié au
+dépôt, non vérifié en ligne.**

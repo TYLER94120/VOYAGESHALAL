@@ -481,6 +481,40 @@ Deux conséquences, vérifiées :
 > le générateur protège un chemin ; un contrôle placé sur le servi protège
 > tous les chemins, présents et futurs.
 
+### La règle éditoriale s'applique aux PAGES autant qu'aux questions
+
+Ajouté le 14 novembre. `controler-questions.py` ne s'appelle plus ainsi par
+hasard : il porte la règle éditoriale, et il la fait respecter sur **deux**
+surfaces, pas une.
+
+1. **Les 2 616 questions** (`data/questions/*.json`), depuis le 15 octobre.
+2. **Les 63 pages HTML**, depuis le 14 novembre. Elles n'étaient couvertes par
+   aucun contrôle — ni mérite, ni attribution de hadith — alors que ce sont
+   elles que Google montre, et que la leçon de sourate est le seul format qui
+   classe ici. Mesure : **4 089 morceaux de texte dans la voix du site, 0
+   promesse, 0 attribution.**
+
+**Les listes `MERITES`, `RECUEILS` et `ATTRIBUTIONS` sont au niveau du module,
+pas dans `main()`.** Elles y sont remontées le 14 novembre précisément parce
+qu'un deuxième endroit en avait besoin : deux copies d'une règle dérivent
+toujours, et c'est la faute du 12 novembre. **Ne les recopie pas ailleurs — si
+une troisième surface en a besoin, importe-les.**
+
+> **La règle porte sur QUI PARLE, pas sur les mots.** Le contrôle écarte le
+> texte cité — classes `verset-ar`, `verset-fr`, `verset-source`, `lecon-ar`,
+> et tout ce qui est entre guillemets. Ce n'est pas une précaution théorique :
+> **571 traductions de versets sont publiées sur les pages, et 12 contiennent
+> un mot de la liste**, dont « Je cherche protection auprès du Seigneur de
+> l'aube naissante » (Al-Falaq 1). Sans cette exclusion, le contrôle lèverait
+> douze fautes sur le Coran — et la réparation évidente serait d'affaiblir la
+> liste, c'est-à-dire de détruire le garde-fou.
+
+Le même bloc relit les **54 blocs `application/ld+json`** : adresse déclarée =
+canonique, description déclarée = meta description, langue = français. Rien
+d'autre. En particulier **le `name` du bloc n'a pas à recopier le `<title>`** :
+j'ai écrit ce critère, il a sorti 39 faux écarts, et l'« aligner » aurait cassé
+les titres qui portent les mots de la requête.
+
 ## Avant d'écrire un titre : la loi de précision
 
 **Lue le 12 octobre 2026 dans `docs/MESURES.md` du dépôt VOYAGESHALAL**, le

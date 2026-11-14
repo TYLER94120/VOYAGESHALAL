@@ -67,6 +67,7 @@ Seule une confrontation au texte le revele.
 Ce controle relit donc le Coran et compare, ligne par ligne.
 """
 
+import html.parser
 import itertools
 import json
 import pathlib
@@ -77,7 +78,99 @@ import unicodedata
 RACINE = pathlib.Path(__file__).resolve().parent.parent
 DONNEES = RACINE / 'data' / 'questions'
 
+# ====================================================================
+# LA REGLE EDITORIALE, EN UN SEUL ENDROIT — DEPLACEE ICI LE 14 NOVEMBRE
+# ====================================================================
+#
+# Ces trois listes etaient ecrites DANS main(), parce qu'un seul endroit
+# s'en servait : les banques de questions. Le 14 novembre, un second
+# endroit en a eu besoin — les 63 pages HTML — et la tentation etait de
+# les recopier.
+#
+# C'est exactement la faute du 12 novembre : le garde-fou des lots avait
+# ete pose a un endroit et pas a l'autre, et vingt-et-une questions ont
+# disparu sans que la suite le voie. Deux copies d'une regle derivent
+# toujours. Elles sont donc ici, au module, et les deux surfaces lisent
+# LES MEMES TUPLES.
+MERITES = ('bienfait', 'merite', 'vertu', 'recompense', 'protege',
+           'protection', 'guerit', 'guerison', 'exauce', 'benediction',
+           'baraka', 'efface les peches', 'equivaut',
+           'celui qui la recite', 'celui qui le recite')
+RECUEILS = ('boukhari', 'bukhari', 'mouslim', 'sahih muslim', 'abou dawoud',
+            'abu dawud', 'tirmidhi', 'ibn maja', 'nasai', 'ahmad ibn hanbal',
+            'sahih al', 'sunan', 'muwatta')
+ATTRIBUTIONS = ('le prophete a dit', 'le messager a dit',
+                'messager d\'allah a dit', 'rapporte par', 'hadith',
+                'sunna', 'recueil de', 'd\'apres abou')
+
 SOURCE_CORAN = re.compile(r'Coran, sourate (\d+), verset (\d+)')
+
+# Les classes qui portent du texte CITE sur une page : le verset arabe, la
+# traduction, la ligne de source, le nom arabe de la sourate. Tout le reste
+# d'une page est la voix du site. Mesure du 14 novembre : en les retirant, il
+# reste 4 089 morceaux de texte sur les 63 pages.
+CITANTES = ('verset-ar', 'verset-fr', 'verset-source', 'lecon-ar')
+
+
+class VoixDeLaPage(html.parser.HTMLParser):
+    """Le texte qu'une page dit EN SON NOM, et l'element d'ou il vient.
+
+    On ecarte `script`, `style` et `svg` — ce n'est pas de la prose lue par
+    quelqu'un —, et les elements des classes CITANTES, qui portent du texte
+    coranique. Ce qui reste est affirme par le site.
+
+    Le `<title>` et la meta description y sont, et ils comptent double : ce
+    sont les seules lignes que Google affiche. La regle du carnet de l'empire,
+    au 25 aout : « Les descriptions, elles, etaient honnetes. Seul le titre
+    mentait — c'est-a-dire la seule ligne que Google affiche. »
+    """
+
+    MUETTES = ('script', 'style', 'svg')
+    # Les elements qui n'ont PAS de balise fermante. Sans cette liste ils
+    # restent sur la pile pour toujours, et le texte qui suit se voit
+    # attribuer a `<meta>` ou `<img>` au lieu du `<p>` qui le porte : le
+    # controle dirait vrai mais designerait le mauvais endroit.
+    VIDES = ('area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input',
+             'link', 'meta', 'param', 'source', 'track', 'wbr')
+
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.morceaux = []        # (balise, classe, texte)
+        self.pile = []
+        self.muet = 0
+        self.cite = 0
+
+    def handle_starttag(self, tag, attrs):
+        d = dict(attrs)
+        cls = d.get('class') or ''
+        if tag in self.VIDES:
+            if tag == 'meta' and d.get('name') == 'description':
+                self.morceaux.append(('meta description', '',
+                                      d.get('content', '')))
+            return
+        self.pile.append((tag, cls))
+        if tag in self.MUETTES:
+            self.muet += 1
+        if any(c in cls.split() for c in CITANTES):
+            self.cite += 1
+
+    def handle_endtag(self, tag):
+        if tag in self.VIDES:
+            return
+        for i in range(len(self.pile) - 1, -1, -1):
+            if self.pile[i][0] == tag:
+                t, cls = self.pile.pop(i)
+                if t in self.MUETTES:
+                    self.muet = max(0, self.muet - 1)
+                if any(c in cls.split() for c in CITANTES):
+                    self.cite = max(0, self.cite - 1)
+                break
+
+    def handle_data(self, data):
+        if self.muet or self.cite or not data.strip():
+            return
+        bal, cls = self.pile[-1] if self.pile else ('?', '')
+        self.morceaux.append((bal, cls, data))
 
 # ==========================================================================
 # UN MOT-OUTIL N'EST PAS UN SENS — AJOUTE LE 4 NOVEMBRE
@@ -1353,10 +1446,8 @@ def main():
     for chemin in fichiers:
         par_section[chemin.stem] = json.loads(chemin.read_text(encoding='utf-8'))
 
-    MERITES = ('bienfait', 'merite', 'vertu', 'recompense', 'protege',
-               'protection', 'guerit', 'guerison', 'exauce', 'benediction',
-               'baraka', 'efface les peches', 'equivaut',
-               'celui qui la recite', 'celui qui le recite')
+    # MERITES est au module depuis le 14 novembre : les pages s'en servent
+    # aussi, et deux copies d'une regle derivent toujours.
 
     def voix_du_site(v):
         """Ce que le site dit EN SON NOM : tout le reste est cite."""
@@ -1641,12 +1732,8 @@ def main():
     # Mesure du 21 octobre : 2 701 sources, 2 545 nomment le Coran, 156
     # nomment l'alphabet arabe ou le texte coranique. Les 21 motifs cherches
     # sont a ZERO dans les six champs des 2 701 cartes.
-    RECUEILS = ('boukhari', 'bukhari', 'mouslim', 'sahih muslim', 'abou dawoud',
-                'abu dawud', 'tirmidhi', 'ibn maja', 'nasai', 'ahmad ibn hanbal',
-                'sahih al', 'sunan', 'muwatta')
-    ATTRIBUTIONS = ('le prophete a dit', 'le messager a dit',
-                    'messager d\'allah a dit', 'rapporte par', 'hadith',
-                    'sunna', 'recueil de', 'd\'apres abou')
+    # RECUEILS et ATTRIBUTIONS sont au module depuis le 14 novembre, pour la
+    # meme raison que MERITES : les pages les lisent aussi.
     # Ce qu'une source EST autorisee a nommer. Les quatre formes mesurees le
     # 21 octobre : le Coran, le texte coranique, l'alphabet arabe, les signes
     # de l'ecriture arabe. Une cinquieme forme fera echouer ce controle, et
@@ -1883,6 +1970,132 @@ def main():
     print('  %d enonce(s) visibles partages par plusieurs cartes, %d a bonnes '
           'reponses differentes (relus : %d).'
           % (enonces_partages, len(enonces_ambigus), AMBIGUS_LUS))
+
+    # ================================================================
+    # LA MEME REGLE, SUR LES PAGES — AJOUTE LE 14 NOVEMBRE
+    # ================================================================
+    #
+    # Tout ce qui precede lit `data/questions/*.json`. La regle du merite et
+    # celle du hadith n'etaient donc appliquees qu'aux 2 616 questions, et a
+    # AUCUNE des 63 pages HTML. Mesure : `MERITES`, `RECUEILS` et
+    # `ATTRIBUTIONS` n'apparaissaient dans aucun autre controle.
+    #
+    # Or les pages sont la surface EXPOSEE. La lecon de sourate est le seul
+    # format qui classe sur ce site — al-Ikhlas sort en position 11 — et les
+    # mots de merite (« celui qui la recite… », « les vertus de… ») sont
+    # precisement les plus cherches. Les promettre ferait venir des gens sur
+    # une page qui ne repond pas, et engagerait Mohamed sur un contenu dont ce
+    # projet n'a AUCUNE traduction francaise sourcee.
+    #
+    # C'est la meme forme de faute que les deux nuits precedentes : un
+    # garde-fou pose sur un chemin, pendant que l'autre chemin passe a cote.
+    # Le 12 novembre c'etaient les lots et la pratique ; le 13, les
+    # generateurs et le servi ; ce soir, les questions et les pages.
+    #
+    # Mesure du 14 novembre AVANT d'ecrire ce bloc : 4 089 morceaux de texte
+    # dans la voix du site sur les 63 pages, ZERO promesse, ZERO attribution.
+    # La regle tenait — par soin, pas par controle. Et la sonde a ete essayee
+    # contre une promesse plantee a la main dans la lecon d'al-Ikhlas : elle
+    # l'a nommee. Un controle qui rend zero sans avoir pu rendre autre chose
+    # ne mesure rien.
+    pages = sorted(RACINE.glob('*.html'))
+    morceaux_pages = 0
+    promesses_pages = 0
+    for page in pages:
+        v = VoixDeLaPage()
+        v.feed(page.read_text(encoding='utf-8'))
+        for bal, cls, txt in v.morceaux:
+            propre = voix_du_site(txt)
+            if not propre.strip():
+                continue
+            morceaux_pages += 1
+            plat = nu(propre)
+            for fam, mots in (('promet un merite', MERITES),
+                              ('nomme un recueil de hadith', RECUEILS),
+                              ('attribue une parole', ATTRIBUTIONS)):
+                for mot in mots:
+                    if mot not in plat:
+                        continue
+                    promesses_pages += 1
+                    fautes.append(
+                        '%s : la page %s en son nom (« %s », dans <%s '
+                        'class="%s">) — aucune source citable ne le porte '
+                        'ici : « %s »'
+                        % (page.name, fam, mot, bal, cls,
+                           re.sub(r'\s+', ' ', propre).strip()[:70]))
+
+    # ---- CE QUE LES PAGES DISENT A GOOGLE ---------------------------
+    #
+    # 54 des 63 pages portent un bloc `application/ld+json` : c'est ce que
+    # Google lit comme une declaration du site sur lui-meme. Un seul controle
+    # le regardait — celui de `index.html`, qui compare ses trois descriptions
+    # entre elles. Les 53 autres blocs n'etaient lus par personne.
+    #
+    # Trois accords sont verifies ici, et seulement trois, parce que ce sont
+    # les seuls qui rendent une page MENTEUSE si on les casse : l'adresse
+    # declaree doit etre l'adresse canonique, la description declaree doit
+    # etre la meta description, la langue declaree doit etre le francais.
+    #
+    # CE QUI N'EST PAS VERIFIE, ET POURQUOI. J'ai d'abord compare le `name`
+    # du bloc au `<title>` de la page, et obtenu 39 « ecarts » — « Sourate
+    # Abasa, verset par verset » contre « Sourate Abasa : traduction, texte
+    # arabe, 42 versets ». Ce n'etaient pas des fautes : schema.org n'a jamais
+    # demande que `name` recopie le titre, et le titre porte les mots de la
+    # requete tandis que le nom porte celui de la ressource. Le critere etait
+    # de moi, pas de la norme. Il n'est donc pas ici.
+    LD = re.compile(r'<script[^>]*type="application/ld\+json"[^>]*>(.*?)</script>',
+                    re.S)
+    CANON = re.compile(r'<link[^>]*rel="canonical"[^>]*href="([^"]*)"')
+    META_D = re.compile(r'<meta\s+name="description"\s+content="([^"]*)"')
+    blocs_ld = 0
+    pages_sans_ld = []
+    for page in pages:
+        s = page.read_text(encoding='utf-8')
+        blocs = LD.findall(s)
+        if not blocs:
+            pages_sans_ld.append(page.name)
+            continue
+        m = CANON.search(s)
+        canonique = m.group(1) if m else None
+        m = META_D.search(s)
+        meta_desc = m.group(1).strip() if m else None
+        for b in blocs:
+            blocs_ld += 1
+            try:
+                d = json.loads(b)
+            except ValueError as e:
+                fautes.append('%s : le bloc ld+json n\'est pas du JSON valide '
+                              '(%s) — Google ne lit alors RIEN de ce que la '
+                              'page declare sur elle-meme' % (page.name, e))
+                continue
+            if not isinstance(d, dict):
+                continue
+            adresse = d.get('url')
+            if adresse and canonique and adresse != canonique:
+                fautes.append('%s : le bloc ld+json se declare a « %s », la '
+                              'page se declare canonique a « %s » — deux '
+                              'adresses pour une page'
+                              % (page.name, adresse, canonique))
+            elif adresse and not canonique:
+                fautes.append('%s : le bloc ld+json donne une adresse et la '
+                              'page n\'a pas de canonical' % page.name)
+            decrite = d.get('description')
+            if decrite and meta_desc and decrite.strip() != meta_desc:
+                fautes.append('%s : la description du bloc ld+json et la meta '
+                              'description ne disent pas la meme chose'
+                              % page.name)
+            if d.get('inLanguage') not in (None, 'fr', 'fr-FR'):
+                fautes.append('%s : le bloc ld+json declare la langue « %s »'
+                              % (page.name, d.get('inLanguage')))
+
+    # Les chiffres, pas un verdict. Une ligne « aucune promesse sur les
+    # pages » s'afficherait aussi le jour ou il y en a une.
+    print('  %d pages relues, %d morceaux de la voix du site, %d promesse(s) '
+          'ou attribution(s).'
+          % (len(pages), morceaux_pages, promesses_pages))
+    print('  %d bloc(s) ld+json confrontes au canonical et a la meta '
+          'description, %d page(s) sans bloc.'
+          % (blocs_ld, len(pages_sans_ld)))
 
     if fautes:
         print('\n  %d FAUTE(S) :' % len(fautes))
