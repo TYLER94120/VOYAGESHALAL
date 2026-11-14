@@ -1716,3 +1716,19 @@ Le lever 1 reste écarté pour la raison mesurée du 21 octobre : **12
 impressions**, contre les **88** que demande la compétence de l'empire avant de
 juger un titre. Et le site reste injoignable depuis ce conteneur : **vérifié au
 dépôt, non vérifié en ligne.**
+
+### Une note sur le chiffre ci-dessus, ajoutée après coup
+
+La ligne « **39 verts (9 python + 30 navigateur)** » a été écrite dans ce
+fichier **pendant que les 30 contrôles navigateur tournaient encore**. Ils ont
+rendu `30 verts, 0 rouges` quelques minutes plus tard, donc le chiffre est
+exact — mais je l'avais posé **avant de l'avoir mesuré**.
+
+C'est, en petit, exactement la faute que ce carnet passe son temps à trouver :
+un nombre qui a l'air d'une mesure et qui est une attente. Il se trouve qu'il
+était juste ; il aurait pu ne pas l'être, et rien dans la phrase ne l'aurait
+signalé. Le message de commit, lui, dit ce qui était vrai à l'heure du commit :
+« 9 python verts ; les 30 navigateur tournaient encore ».
+
+> **À emporter : un chiffre s'écrit après la mesure, pas avant — même quand on
+> est sûr, et surtout quand on est sûr.**
