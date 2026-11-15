@@ -1880,3 +1880,11 @@ Aucune page neuve, aucune leçon, aucun titre réécrit, aucune question touché
 
 Et le site reste injoignable depuis ce conteneur : **vérifié au dépôt, non
 vérifié en ligne.**
+
+### Le verdict des contrôles, écrit après la mesure
+
+**39 verts : 9 python, 30 navigateur, 0 rouge.** Les 30 ont rendu leur réponse
+après le commit, et le message de commit dit ce qui était vrai à son heure —
+« 9 python verts ; les 30 navigateur tournaient encore ». Le chiffre est écrit
+ici parce qu'il est maintenant mesuré, pas parce qu'il était attendu. C'est la
+leçon de la veille, appliquée le lendemain.
