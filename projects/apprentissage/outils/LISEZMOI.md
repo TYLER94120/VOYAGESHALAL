@@ -515,6 +515,41 @@ d'autre. En particulier **le `name` du bloc n'a pas à recopier le `<title>`** :
 j'ai écrit ce critère, il a sorti 39 faux écarts, et l'« aligner » aurait cassé
 les titres qui portent les mots de la requête.
 
+## Un lien mort et une page orpheline sont deux défauts opposés
+
+`controler-liens.py` posait une seule question : **« ce lien arrive-t-il
+quelque part ? »** Depuis le 15 novembre il pose aussi l'inverse : **« un lien
+arrive-t-il SUR cette page ? »** Ce ne sont pas deux degrés d'une même mesure,
+ce sont deux sens d'une flèche — une page que personne ne lie a **zéro lien
+mort** et reste invisible pour un robot qui suit les liens.
+
+La faute est posée là où elle est réelle et sans faux positif : **une page que
+`sitemap.xml` déclare et qu'aucun lien interne n'atteint depuis l'accueil.**
+Déclarer une page à Google sans lui donner un lien vers elle, c'est envoyer
+deux signaux contraires.
+
+**La profondeur est mesurée et dite, jamais jugée.** 53 pages du sitemap, 2
+clics au plus. Une page à trois clics n'est pas un défaut, et ce fichier-là
+porte sa propre mise en garde : « un contrôle qui se trompe est pire qu'un
+contrôle absent ». Si tu veux un plafond, c'est une décision d'éditeur, pas une
+réparation.
+
+Trois choses à ne pas défaire :
+
+- **La résolution des chemins est une fonction, `servi()`, pas du code recopié.**
+  Les deux questions doivent répondre pareil : si l'une résout un chemin que
+  l'autre ignore, la seconde déclare injoignable une page qui répond 200. Sortie
+  de `main()` le 15 novembre, pour la raison du 12 novembre.
+- **Le maillage suit les `<a>` écrits en absolu, le contrôle des liens morts
+  non.** Mesuré : 55 href absolus sur le site, **tous des
+  `<link rel="canonical">`**, aucun n'est une navigation. Sabotage : les quatre
+  liens vers al-Ikhlas passés en absolu font tomber le compte des liens suivis
+  de 1 464 à 1 460, et sans cette branche la page en position 11 serait
+  annoncée injoignable **sur un site correct**.
+- **Les pages hors sitemap sans lien entrant ne sont pas une faute.** Sept
+  écrans internes en `noindex`, et `google460d2c815736f50e.html` qui doit
+  rester sans lien. Un rouge permanent ne se lit plus.
+
 ## Avant d'écrire un titre : la loi de précision
 
 **Lue le 12 octobre 2026 dans `docs/MESURES.md` du dépôt VOYAGESHALAL**, le

@@ -24,7 +24,7 @@ lu par personne et entrerait en conflit à la première fusion.
 
 ## À COLLER DANS LE CARNET, À PARTIR D'ICI
 
-# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 14 NOVEMBRE 2026
+# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 15 NOVEMBRE 2026
 
 > **Comment lire cette note.** Son corps a été écrit le 14 octobre. Chaque
 > ajout porte sa date, et **une mesure datée ne se rafraîchit pas : elle se
@@ -1732,3 +1732,151 @@ signalé. Le message de commit, lui, dit ce qui était vrai à l'heure du commit
 
 > **À emporter : un chiffre s'écrit après la mesure, pas avant — même quand on
 > est sûr, et surtout quand on est sûr.**
+
+---
+
+## LE 15 NOVEMBRE — LE CONTRÔLE DU MAILLAGE NE MESURAIT PAS LE MAILLAGE
+
+### Ce que j'ai cherché
+
+Le brief range « un maillage réparé » parmi les trois formes de bon petit
+travail, à côté de « deux titres » et « une leçon enrichie ». J'ai donc ouvert
+`controler-liens.py` pour voir ce qu'il mesure. Son propre en-tête dit :
+
+> « Le maillage interne est justement le levier qu'on est en train de
+> reconstruire — le mesurer coûte une minute. »
+
+Il ne mesurait pas le maillage. Il mesurait les **liens morts** — ce qui n'est
+pas la même question, c'est **la question inverse** :
+
+| la question | ce qu'elle trouve |
+|---|---|
+| ce lien **arrive-t-il** quelque part ? | une flèche qui tombe à côté |
+| un lien **arrive-t-il sur** cette page ? | une flèche qui manque |
+
+Une page que personne ne lie a **zéro lien mort**. Elle est irréprochable pour
+ce contrôle, et invisible pour un robot qui arrive sur le domaine et suit les
+liens. Les 1 464 liens que ce contrôle vérifie chaque nuit ne disaient rien de
+cela.
+
+### Ce que la mesure a donné
+
+```
+63 pages, 451 liens <a> internes
+53 pages déclarées dans sitemap.xml
+53 atteintes depuis l'accueil — 1 à 0 clic, 14 à 1 clic, 38 à 2 clics
+profondeur maximale                 2
+page indexable orpheline            0
+```
+
+**RIEN À RÉPARER.** Les 38 leçons sont à deux clics, avec 3 ou 4 liens
+entrants chacune : `sourates.html`, `section-sens-des-sourates.html`, et la
+leçon précédente et suivante. Les deux extrémités de la chaîne — Al-Fatiha et
+An-Nas — en ont 3 au lieu de 4, parce qu'une chaîne a deux bouts.
+
+Huit pages ne reçoivent aucun lien : sept écrans internes en `noindex`, et
+`google460d2c815736f50e.html`, qui **doit** rester sans lien — c'est un fichier
+de vérification, pas une page du site. Faire rouge sur ces huit serait un rouge
+permanent, et un rouge permanent ne se lit plus.
+
+### Et j'ai vérifié que la sonde n'était pas aveugle au JavaScript
+
+Mon graphe lit le HTML. Si un lien entrant n'existait qu'après exécution du
+JavaScript, j'aurais annoncé orpheline une page que le robot atteint. Ce
+fichier connaît déjà le piège : il lit les scripts des pages parce que l'ancre
+de `section.html` est posée par `section.js`.
+
+J'ai donc rendu les **63 pages dans Chromium** et comparé les `<a href>` du
+HTML à ceux de la page rendue. **Une seule page ajoute un lien par
+JavaScript** : `resultat.html` vers `sections.html` — une page en `noindex`,
+hors sitemap, pointant vers une page déjà à 1 clic. Le graphe du HTML est donc
+un plancher exact pour tout ce qui est indexable.
+
+### LE CHOIX DE CONCEPTION QUI PORTE LE POIDS : LES LIENS ÉCRITS EN ABSOLU
+
+Le contrôle des liens morts ne suit **pas** les liens absolus, et range
+`islampasapas.fr` parmi ses trois domaines externes. C'est juste pour chercher
+un lien mort — cette session n'a pas de réseau. C'est **faux** pour
+l'atteignabilité : un `<a href="https://islampasapas.fr/...">` est un lien
+interne, le robot arrive sur la page.
+
+Mesuré : le site porte **55 href absolus vers lui-même, et les 55 sont des
+`<link rel="canonical">`** — aucun n'est une navigation. La branche qui les
+suit ne change donc rien aujourd'hui. Le sabotage 4 montre pourquoi elle est
+là quand même : en passant les quatre liens vers al-Ikhlas en absolu, **le
+compte des liens suivis tombe de 1 464 à 1 460** — le contrôle des liens morts
+cesse de les voir — et le maillage les suit. Sans cette branche, un contrôle
+réutilisant la même logique aurait déclaré **al-Ikhlas injoignable sur un site
+correct** : la page qui sort en position 11, la seule preuve que ce format
+marche.
+
+### UNE SEULE COPIE, PAS DEUX
+
+La résolution des chemins — fichier du dossier, réécriture de `vercel.json`,
+`/` qui désigne l'index — était écrite **dans `main()`**. Il m'en fallait une
+seconde utilisation, et la tentation était de la recopier. C'est la faute du
+12 novembre. Je l'ai **sortie en fonction**, et les deux questions lisent la
+même.
+
+Preuve que l'extraction n'a rien changé : la version du dépôt et la version
+modifiée impriment les mêmes trois lignes — **1 464 liens vérifiés, 62 liens
+embarqués, 3 domaines externes**.
+
+### LA RÈGLE QUE JE N'AI PAS ÉCRITE, ET POURQUOI
+
+La profondeur est **mesurée et dite, jamais jugée**. J'ai failli poser « pas
+plus de deux clics », parce que c'est ce que mesure le site aujourd'hui. Une
+page à trois clics n'est pas un défaut. Et ce fichier porte, vingt lignes plus
+bas que son en-tête, à propos du deux-points de `re.escape` :
+
+> « Un contrôle qui se trompe est pire qu'un contrôle absent : on apprend à
+> ignorer ce qu'il dit. »
+
+La faute, elle, est posée là où elle est réelle et sans faux positif : **une
+page que `sitemap.xml` déclare et qu'aucun lien interne n'atteint.** Dire à
+Google « indexe cette page » sans lui donner un seul lien vers elle, c'est
+envoyer deux signaux contraires.
+
+### LES QUATRE SABOTAGES
+
+| sabotage | attendu | obtenu |
+|---|---|---|
+| le sitemap déclare `motifs.html`, que rien ne lie | rouge | sortie 1, page nommée |
+| al-Ikhlas perd ses 4 liens entrants (redirigés vers une page qui existe, donc aucun lien mort) | rouge | sortie 1, page nommée |
+| un lien mort — la partie d'origine répond-elle encore après l'extraction ? | rouge | sortie 1, lien nommé |
+| les 4 liens vers al-Ikhlas passés en absolu | **vert** | sortie 0, 53 pages atteintes |
+
+### Ce que cette règle garde aussi
+
+`controler-liens` est l'un des **six** contrôles que `publier.py` exige avant
+d'expédier quoi que ce soit. La règle ne garde donc pas seulement la nuit : elle
+garde la porte de sortie.
+
+### Ce que j'ai vérifié et laissé tel quel
+
+J'ai rouvert la question des hadiths, parce qu'un blocage majeur du site repose
+sur « ce projet n'a aucune traduction française sourcée » alors que
+`outils/coran/` contient trois recueils **en français** — Boukhari, Mouslim,
+Abou Dawoud. Vérifié : leur `metadata` ne porte que `name`, `sections`,
+`section_details`. **Aucun traducteur nommé.** Le carnet avait déjà tranché le
+21 octobre, dans les mêmes termes et avec les mêmes chiffres : 20 426 hadiths,
+aucun citable, « traduction de traduction ». La mesure n'a rien appris de neuf
+— c'est exactement ce qu'on attend d'une prémisse qui tient.
+
+### Ce que je n'ai pas fait
+
+Aucune page neuve, aucune leçon, aucun titre réécrit, aucune question touchée.
+
+- **Levier 1** écarté pour la raison mesurée du 21 octobre : **12 impressions**,
+  contre les **88** que la compétence de l'empire demande avant de juger un
+  titre. Et sans les requêtes, « mettre les mots exacts de la requête en début »
+  n'est pas applicable : on ne les connaît pas.
+- **Levier 2** reste bloqué par une mesure qui n'est pas dans ce dépôt. Le juz
+  'Amma est complet depuis le 16 septembre — 37 sourates plus Al-Fatiha. Aller
+  plus loin demande un chiffre par sourate, combien de gens tapent « sourate
+  al-mulk », et il est dans Search Console. Le choix entre le **juz 29** et les
+  **neuf sourates courtes** est à toi ; il est posé plus haut dans ce fichier,
+  avec son coût mesuré.
+
+Et le site reste injoignable depuis ce conteneur : **vérifié au dépôt, non
+vérifié en ligne.**

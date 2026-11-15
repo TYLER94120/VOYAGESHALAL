@@ -367,6 +367,19 @@ Ce qu'un `publier.py` enverrait, compte entre `59e67ae` et la branche :
 
 Aucun fichier ajoute, aucun supprime : les 72 sont des modifications.
 
+**Note du 15 novembre.** Meme cas : quatre fichiers touches, les quatre
+RESTENT AU DEPOT — `outils/controler-liens.py`, `outils/LISEZMOI.md`,
+`docs/POUR-LE-CARNET.md` et ce fichier-ci. `.vercelignore` exclut `*.md` et
+`outils/`, et les quatre etaient DEJA dans les 69 — `controler-liens.py` avait
+bouge avant ce soir. Remesure entre `59e67ae` et l'arbre de travail : **141 fichiers
+modifies, 69 au depot, 72 en ligne. INCHANGE.** `controler-liens.py` posait une
+seule question, « ce lien arrive-t-il quelque part ? » ; il pose maintenant
+aussi l'inverse, « un lien arrive-t-il SUR cette page ? ». Mesure avant
+ecriture : 451 liens internes, les 53 pages du sitemap toutes atteintes depuis
+l'accueil, 2 clics au plus, ZERO page indexable orpheline. Rien a reparer.
+**Et ce controle est l'un des six que `publier.py` exige** : la regle garde
+donc aussi la porte de sortie.
+
 **Note du 14 novembre.** Meme cas : la ronde n'a touche que des fichiers qui
 RESTENT AU DEPOT — `outils/controler-questions.py`, `outils/LISEZMOI.md`,
 `docs/POUR-LE-CARNET.md` et ce fichier-ci, tous deja dans les 69. Le compte de
