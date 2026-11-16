@@ -646,6 +646,50 @@ masque pas le résultat, **aucun des neuf contrôles Python ne bronchait**.
 *Troisième fois que les fichiers écrits à la main sont les seuls à échapper à
 une règle : `plus.html` le 23 octobre, `robots.txt` le 25, les titres ce soir.*
 
+### La description est l'autre moitié du même résultat — 16 novembre
+
+Google affiche **deux** lignes : le titre, et la description sous lui. Le
+3 novembre, la règle des 60 caractères a été étendue aux 53 titres servis.
+**Sa jumelle ne l'avait pas été.**
+
+| | tenue par | pages |
+|---|---|---|
+| titre ≤ 60 car. | `controler-lecons`, `controler-sections`, **`controler-sitemap` depuis le 3 nov.** | 53 / 53 |
+| description 150–160 car. | `controler-lecons` (38 leçons), `controler-sections` (11 sections + l'accueil) | **50 / 53** |
+
+Les trois qui échappaient sont, encore, des pages **écrites à la main** :
+`sections.html`, `sourates.html`, `plus.html`. Mesuré par sabotage, les
+chiffres annoncés laissés exacts pour que la règle des nombres ne masque pas
+celle de la longueur :
+
+| sabotage | résultat |
+|---|---|
+| `sections.html` 159 → 50 car., ses trois copies | 8 verts, 1 rouge — et c'était le `lastmod` |
+| `sourates.html` 152 → 46 car., ses trois copies | 7 verts, 2 rouges — le tableau de `DEPLOIEMENT.md` et le `lastmod` |
+| `plus.html` : aucun sabotage nécessaire | il portait **91 caractères** avec les neuf contrôles verts |
+
+**Ce que ça coûtait.** `sourates.html` porte 7 des 12 impressions du site —
+la page la plus vue. La seule ligne que Google affiche sous son titre
+n'était tenue par personne.
+
+*Quatrième fois que les fichiers écrits à la main sont les seuls à échapper à
+une règle : `plus.html` le 23 octobre, `robots.txt` le 25, les titres le
+3 novembre, les descriptions ce soir.*
+
+**Deux choses à ne pas défaire.**
+
+1. **La borne est volontairement en double, et ce n'est pas la faute du
+   12 novembre.** `controler-lecons` et `controler-sections` vérifient ce
+   qu'un **générateur a produit** ; `controler-sitemap` vérifie ce que le
+   **serveur rend** pour les 53 adresses déclarées. Deux questions
+   différentes sur deux objets différents — pas un même code recopié. Si un
+   générateur change, ou si une page sort de son générateur, le filet de
+   derrière tient encore.
+2. **La règle a un plancher ET un plafond, et les deux comptent.** Trop
+   longue, Google coupe au milieu ; trop courte, il écrit sa propre phrase à
+   la place et on perd la main sur ce qui s'affiche. Un plafond seul aurait
+   laissé passer les deux sabotages ci-dessus.
+
 ### Ce que cette loi fait au levier 2
 
 Le levier 2 demande de multiplier les leçons de sourate, et le carnet en fait

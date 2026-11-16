@@ -367,6 +367,22 @@ Ce qu'un `publier.py` enverrait, compte entre `59e67ae` et la branche :
 
 Aucun fichier ajoute, aucun supprime : les 72 sont des modifications.
 
+**Note du 16 novembre.** Cette fois **deux des fichiers touches PARTENT en
+ligne** — `plus.html` (sa description) et `sitemap.xml` (le `lastmod` de cette
+page) — et le troisieme, `outils/controler-sitemap.py`, reste au depot. Le
+compte ne bouge pourtant pas : les trois etaient DEJA dans la file, les deux
+premiers parmi les 72, le troisieme parmi les 69. Remesure entre `59e67ae` et
+l'arbre de travail : **141 fichiers modifies, 72 en ligne, 69 au depot.
+INCHANGE** — et `controler-sections.py`, qui relit le tableau ci-dessus et le
+compare a `git`, est reste vert sans qu'on y touche. Ce qui a change ce soir :
+la regle des 60 caracteres avait ete etendue aux 53 titres servis le
+3 novembre ; **sa jumelle, la description, ne tenait que 50 pages sur 53.**
+`sections.html`, `sourates.html` et `plus.html` y echappaient — sabotages a
+l'appui, 159 -> 50 et 152 -> 46 caracteres sans qu'aucun des neuf controles ne
+le nomme. `plus.html` portait 91 caracteres quand la fourchette maison est
+150 a 160 : **c'est la seule correction de contenu de la nuit**, et elle part
+en ligne a la prochaine publication.
+
 **Note du 15 novembre.** Meme cas : quatre fichiers touches, les quatre
 RESTENT AU DEPOT — `outils/controler-liens.py`, `outils/LISEZMOI.md`,
 `docs/POUR-LE-CARNET.md` et ce fichier-ci. `.vercelignore` exclut `*.md` et

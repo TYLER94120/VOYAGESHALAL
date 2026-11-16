@@ -324,8 +324,58 @@ def main():
     # robots.txt le 25, les titres ce soir.
     #
     # Les 53 titres servis font aujourd'hui de 26 a 55 caracteres.
+    #
+    # ----------------------------------------------------------------
+    # ET LA DESCRIPTION, L'AUTRE MOITIE DU MEME RESULTAT — 16 NOVEMBRE
+    # ----------------------------------------------------------------
+    #
+    # Le 3 novembre, la regle des 60 caracteres a ete etendue aux 53 pages
+    # servies. SA JUMELLE NE L'A PAS ETE. Google affiche DEUX lignes : le
+    # titre, et la description juste dessous. Le controle des questions le
+    # dit lui-meme — « le <title> et la meta description y sont, et ils
+    # comptent double ». Une seule des deux etait tenue partout.
+    #
+    # MESURE DU 16 NOVEMBRE. La regle maison — entre 150 et 160 caracteres —
+    # tient 50 pages sur 53 : les 38 lecons (controler-lecons), les 11
+    # sections (controler-sections) et l'accueil (controler-sections, dans
+    # le bloc ecrit pour lui parce qu'il est fait a la main). TROIS pages y
+    # echappaient : sections.html, sourates.html, plus.html.
+    #
+    # Deux sabotages isoles, les chiffres annonces laisses exacts pour que
+    # la regle des nombres ne masque pas celle de la longueur :
+    #
+    #   sections.html   159 -> 50 car., ses 3 copies : 8 verts, 1 rouge
+    #   sourates.html   152 -> 46 car., ses 3 copies : 7 verts, 2 rouges
+    #
+    # Dans les deux cas les rouges etaient AILLEURS — le lastmod du point 9,
+    # le tableau de publication de DEPLOIEMENT.md — jamais la description.
+    # Les causes ont ete LUES, pas deduites : l'ancienne version de ce fichier
+    # a ete rejouee contre le sabotage de sections.html pour l'etablir.
+    # `plus.html` n'a meme pas eu besoin d'un sabotage : il portait 91
+    # caracteres quand les neuf controles etaient verts, et c'est ce soir
+    # qu'il entre dans la fourchette.
+    #
+    # CE QUE CA COUTAIT. `sourates.html` porte 7 des 12 impressions du site —
+    # la page la plus vue. Sa description, la seule ligne que Google affiche
+    # sous son titre, n'etait tenue par personne.
+    #
+    # Quatrieme fois que les fichiers ecrits a la main sont les seuls a
+    # echapper a une regle : plus.html le 23 octobre, robots.txt le 25, les
+    # titres le 3 novembre, les descriptions ce soir.
+    #
+    # POURQUOI UNE SECONDE COPIE DE LA BORNE, ET PAS UNE SEULE. Elle est
+    # volontaire, et c'est deja la forme que la maison a donnee aux titres :
+    # controler-lecons et controler-sections verifient CE QU'UN GENERATEUR A
+    # PRODUIT, page par page ; ce controle-ci verifie CE QUE LE SERVEUR REND
+    # pour les 53 adresses declarees. Si un generateur change, si une page
+    # sort de son generateur, ou si un de ces deux controles se trompe, le
+    # filet de derriere tient encore. Ce n'est pas la faute du 12 novembre :
+    # la, c'etait un MEME code recopie ; ici, ce sont deux questions
+    # differentes posees sur deux objets differents.
     LIMITE_TITRE = 60
+    DESC_MIN, DESC_MAX = 150, 160
     titres_lus, le_plus_long = 0, ('', 0)
+    descs_lues, la_plus_courte, la_plus_longue = 0, ('', 10 ** 6), ('', 0)
     for u in adresses:
         chemin = u[len(SITE):] or '/'
         code, page = prendre(BASE + chemin)
@@ -344,6 +394,27 @@ def main():
                 '%s : titre de %d caracteres, la limite est %d — Google le '
                 'coupera au milieu : « %s »'
                 % (chemin, len(titre), LIMITE_TITRE, titre))
+
+        d = re.search(r'<meta name="description" content="(.*?)"', page, re.S)
+        if not d:
+            fautes.append('%s : pas de meta description' % chemin)
+            continue
+        desc = re.sub(r'\s+', ' ', desechapper(d.group(1))).strip()
+        descs_lues += 1
+        if len(desc) < la_plus_courte[1]:
+            la_plus_courte = (chemin, len(desc))
+        if len(desc) > la_plus_longue[1]:
+            la_plus_longue = (chemin, len(desc))
+        if len(desc) > DESC_MAX:
+            fautes.append(
+                '%s : description de %d caracteres, le maximum est %d — '
+                'Google la coupera au milieu : « %s »'
+                % (chemin, len(desc), DESC_MAX, desc))
+        elif len(desc) < DESC_MIN:
+            fautes.append(
+                '%s : description de %d caracteres, le minimum est %d — trop '
+                'courte, Google ecrira sa propre phrase a la place : « %s »'
+                % (chemin, len(desc), DESC_MIN, desc))
 
     # ================================================================
     # 13. AUCUNE PAGE NE NOMME UN DECOUPAGE DU MUSHAF — 2 NOVEMBRE
@@ -569,6 +640,10 @@ def main():
     print('  %d titres servis relus, le plus long fait %d caracteres (%s), '
           'limite %d.' % (titres_lus, le_plus_long[1], le_plus_long[0],
                           LIMITE_TITRE))
+    print('  %d descriptions servies relues, de %d (%s) a %d caracteres (%s), '
+          'fourchette %d a %d.'
+          % (descs_lues, la_plus_courte[1], la_plus_courte[0],
+             la_plus_longue[1], la_plus_longue[0], DESC_MIN, DESC_MAX))
     print('  Et chaque lastmod est celui du dernier commit de sa page :'
           ' %d dates distinctes pour %d adresses.'
           % (len({d for _, d in re.findall(

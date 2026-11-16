@@ -24,7 +24,7 @@ lu par personne et entrerait en conflit à la première fusion.
 
 ## À COLLER DANS LE CARNET, À PARTIR D'ICI
 
-# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 15 NOVEMBRE 2026
+# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 16 NOVEMBRE 2026
 
 > **Comment lire cette note.** Son corps a été écrit le 14 octobre. Chaque
 > ajout porte sa date, et **une mesure datée ne se rafraîchit pas : elle se
@@ -1888,3 +1888,160 @@ après le commit, et le message de commit dit ce qui était vrai à son heure �
 « 9 python verts ; les 30 navigateur tournaient encore ». Le chiffre est écrit
 ici parce qu'il est maintenant mesuré, pas parce qu'il était attendu. C'est la
 leçon de la veille, appliquée le lendemain.
+
+---
+
+## LE 16 NOVEMBRE — LA MOITIÉ DU RÉSULTAT DE RECHERCHE QUE PERSONNE NE TENAIT
+
+### Ce que j'ai cherché, dans l'ordre du brief
+
+Le levier 1 est le premier, et il demande deux choses : les mots de la requête
+en début de titre — **impossible, les requêtes ne sont pas dans le carnet** —
+et **moins de 60 caractères**, qui ne demande aucune requête. J'ai donc vérifié
+celle-là d'abord.
+
+Elle est tenue, et gardée : `controler-sitemap.py` relit les 53 titres servis
+depuis le 3 novembre. **Rien à trouver de ce côté. C'est une confirmation, pas
+une découverte**, et c'est ce qu'on attend d'une règle qui tient.
+
+Alors j'ai regardé l'autre ligne. Google en affiche **deux** : le titre, et la
+description sous lui. `controler-questions.py` l'écrit depuis longtemps — « le
+`<title>` et la meta description y sont, et **ils comptent double** ». Une
+seule des deux était tenue partout.
+
+### La mesure
+
+| règle | tenue par | pages |
+|---|---|---|
+| titre ≤ 60 car. | `controler-lecons`, `controler-sections`, **`controler-sitemap` (3 nov.)** | **53 / 53** |
+| description 150–160 car. | `controler-lecons` (38 leçons), `controler-sections` (11 sections + l'accueil) | **50 / 53** |
+
+Les descriptions servies, mesurées sur le site servi en local, jamais sur la
+source :
+
+| famille | pages | longueurs | hors fourchette |
+|---|---|---|---|
+| leçons | 38 | 150 à 157 | 0 |
+| sections | 11 | 150 à 159 | 0 |
+| **écrites à la main** | 4 | **91 à 159** | **1** |
+
+### Les trois pages, et la preuve que personne ne les tenait
+
+| sabotage, chiffres annoncés laissés exacts | résultat |
+|---|---|
+| `sections.html` 159 → 50 car., ses trois copies | **8 verts, 1 rouge** — et ce rouge était le `lastmod` |
+| `sourates.html` 152 → 46 car., ses trois copies | **7 verts, 2 rouges** — le tableau de `DEPLOIEMENT.md` et le `lastmod` |
+| `plus.html` : aucun sabotage nécessaire | il portait **91 caractères** avec les **neuf contrôles verts** |
+
+Les chiffres annoncés ont été laissés exacts dans les deux sabotages — sinon
+la règle des nombres aurait bronché à la place de celle de la longueur, et
+j'aurais cru la description tenue. C'est le piège que la note du 3 novembre
+nomme pour le `lastmod` : **un masquage donne un rouge, et un rouge est une
+mauvaise preuve quand il parle d'autre chose.**
+
+**Ce que ça coûtait.** `sourates.html` porte **7 des 12 impressions du site** —
+la page la plus vue. La seule ligne que Google affiche sous son titre n'était
+tenue par personne.
+
+*Quatrième fois que les fichiers écrits à la main sont les seuls à échapper à
+une règle : `plus.html` le 23 octobre, `robots.txt` le 25, les titres le
+3 novembre, les descriptions ce soir.*
+
+### La seule correction de contenu de la nuit
+
+`plus.html`, la page « À propos » — celle où un lecteur attentif va voir si le
+site est sérieux — portait 91 caractères quand la fourchette maison est 150 à
+160. Ses **trois copies** (`<meta name="description">`, `og:description` et la
+donnée structurée) ont reçu le même texte de **151 caractères** :
+
+> Comment ce site est fait : chaque question avec sa source, la traduction du
+> sens de Muhammad Hamidullah, aucun compte, aucune publicité, aucun traceur.
+
+Chaque affirmation est dans le corps de la page, et vérifiable là :
+
+| ce que la description dit | ce que la page dit |
+|---|---|
+| « comment ce site est fait » | son titre de section : « Comment c'est fait » |
+| « chaque question avec sa source » | « Chaque question sort d'une source vérifiable » |
+| « la traduction du sens de Muhammad Hamidullah » | « des traductions **du sens**, pas le Coran lui-même. Celle utilisée ici est celle de Muhammad Hamidullah » |
+| « aucun compte » | « Il n'y a pas de compte, pas d'inscription, pas d'adresse e-mail » |
+| « aucune publicité, aucun traceur » | « Aucune publicité, aucun traceur, aucun cookie de mesure » |
+
+**La règle religieuse, appliquée à une meta description.** Le traducteur est
+**nommé**, et la traduction est dite traduction **du sens** — pas le Coran.
+Aucun mot de la liste que `controler-sitemap.py` interdit dans un titre ou une
+description (`bienfait`, `mérite`, `vertu`, `récompense`, `protection`,
+`baraka`…) : ce contrôle a relu les 53 titres et les 53 descriptions après la
+correction et il est resté vert. Et **aucune promesse de hadith** : le site
+n'en porte pas, et sa page « À propos » a déjà été corrigée le 23 octobre pour
+avoir annoncé le contraire.
+
+### La règle, écrite là où vit déjà celle des titres
+
+Une seule boucle lit maintenant **les deux moitiés du même résultat** : un
+`GET` par adresse, le titre et la description dans la même passe.
+
+| branche | message |
+|---|---|
+| > 160 car. | « Google la coupera au milieu » |
+| < 150 car. | « trop courte, Google écrira sa propre phrase à la place » |
+| absente | « pas de meta description » |
+
+**Le plancher compte autant que le plafond.** Un plafond seul — le miroir
+exact de la règle des titres, qui n'a pas de plancher — aurait laissé passer
+les deux sabotages ci-dessus. Trop longue, Google coupe ; trop courte, il
+écrit sa propre phrase et on perd la main sur ce qui s'affiche.
+
+### Les quatre sabotages contre la règle neuve
+
+| sabotage | ce que le contrôle a dit |
+|---|---|
+| `sections.html` 159 → 50 | sortie 1, « description de 50 caractères, le minimum est 150 » |
+| `sourates.html` 152 → 46 | sortie 1, « description de 46 caractères, le minimum est 150 » |
+| `sourates.html` → 226 car. | sortie 1, « le maximum est 160 — Google la coupera au milieu » |
+| description supprimée | sortie 1, « pas de meta description » |
+| arbre restauré | **sortie 0, zéro ligne de description** |
+
+### La borne est en double, et c'est voulu
+
+La veille, la leçon était « une seule copie, pas deux ». Ici il y en a deux, et
+ce n'est pas la même chose : `controler-lecons` et `controler-sections`
+vérifient **ce qu'un générateur a produit**, page par page ; `controler-sitemap`
+vérifie **ce que le serveur rend** pour les 53 adresses déclarées. Deux
+questions différentes posées sur deux objets différents — pas un même code
+recopié. Si un générateur change, ou si une page sort de son générateur, le
+filet de derrière tient encore. C'est déjà la forme que la maison a donnée au
+titre : le 60 vit dans trois fichiers depuis le 3 novembre.
+
+### Ce que je n'ai pas écrit
+
+La règle des **trois copies identiques** (`<meta>`, `og:description`, donnée
+structurée) n'est vérifiée que sur l'accueil, depuis le 5 octobre. Elle ne
+l'est pas sur les 52 autres. Je l'ai respectée à la main sur `plus.html` et je
+ne l'ai **pas** transformée en contrôle ce soir : une règle par nuit, mesurée,
+sabotée, documentée. C'est **non vérifié**, pas écarté — et c'est le candidat
+le plus propre pour la prochaine ronde.
+
+### Ce que je n'ai pas fait, et pourquoi
+
+Aucune page neuve, aucune leçon, aucun titre réécrit, aucune question touchée.
+
+- **Levier 1, les mots de la requête en début de titre** : il faut les
+  requêtes, et le carnet n'a aucune table Requêtes pour ce site — vérifié à
+  nouveau ce soir dans `docs/MESURES.md`, **toujours le relevé du 21 août, rien
+  depuis.** Les **quatre** pages qui ont des impressions ont été remesurées
+  servies, titre et description : accueil 55 / 153, al-Ikhlas 54 / 157,
+  `sourates.html` 53 / 152, al-Falaq 53 / 154. **Les huit sont dans les
+  règles** — il n'y a rien à corriger là, seulement des mots à mettre en tête
+  quand on saura lesquels.
+- **Levier 2, multiplier les leçons** : le juz 'Amma est complet depuis le
+  16 septembre, et aller plus loin demande un chiffre par sourate qui est dans
+  Search Console. Le choix entre le juz 29 et les neuf sourates courtes reste
+  à Mohamed.
+- **File de publication inchangée** : 141 fichiers modifiés depuis `59e67ae`,
+  **72 en ligne, 69 au dépôt**. Les trois fichiers touchés ce soir y étaient
+  déjà — et cette fois **deux partent en ligne** (`plus.html`, `sitemap.xml`),
+  ce qui n'était pas arrivé depuis plusieurs nuits.
+
+Et le site reste injoignable depuis ce conteneur : **vérifié au dépôt, non
+vérifié en ligne.**
