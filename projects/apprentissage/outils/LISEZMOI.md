@@ -690,6 +690,45 @@ une règle : `plus.html` le 23 octobre, `robots.txt` le 25, les titres le
    la place et on perd la main sur ce qui s'affiche. Un plafond seul aurait
    laissé passer les deux sabotages ci-dessus.
 
+### Les balises de partage étaient présentes, jamais lues — 17 novembre
+
+`controler-sitemap.py` vérifie depuis le 17 septembre que les quatre `og:`
+existent et que `og:image` désigne un fichier réel. **Présentes, jamais
+lues.** Et le lecteur de « la voix du site » — celui sur lequel reposent la
+règle du mérite, celle des recueils de hadith et celle des attributions — ne
+regardait que `name="description"`. Les balises de partage s'écrivent avec
+`property=` : elles passaient à travers.
+
+| sabotage isolé sur la leçon d'al-Ikhlas | résultat |
+|---|---|
+| `og:description` divergente | 8 verts, l'unique rouge était le `lastmod` |
+| `og:description` qui **promet un mérite** | 8 verts, l'unique rouge était le `lastmod` |
+| `og:title` divergent du `<title>` | 8 verts, l'unique rouge était le `lastmod` |
+
+Ce que Google affiche était tenu. **Ce qu'une conversation affiche ne l'était
+pas** — et c'est par là que ce site circule, comme le dit la note du
+17 septembre.
+
+**Trois choses à ne pas défaire.**
+
+1. **Le lecteur de la voix du site voit `og:title` et `og:description`.** Trois
+   règles éditoriales s'appliquent d'un coup, sur les 63 pages. Preuve que le
+   lecteur les voit : les morceaux relus passent de **4 089 à 4 197**, soit
+   **+108 = 54 × 2**.
+2. **`og:description` doit être la meta description.** C'est la troisième
+   paire ; les deux autres étaient déjà tenues (ld+json ↔ meta sur les
+   63 pages depuis le 14 novembre, les trois ensemble sur l'accueil depuis le
+   5 octobre).
+3. **`og:title` n'est PAS obligé d'égaler le `<title>`.** OpenGraph ne le
+   demande pas, et le dépôt a déjà payé cette erreur sur le champ voisin : la
+   comparaison `name` ↔ `<title>` avait rendu **39 faux écarts**. `"name"`
+   diffère du titre sur 50 pages sur 53, et c'est normal. `og:title` est
+   **lu** par la règle éditoriale et **libre** quant à sa forme. Un sabotage
+   le vérifie en exigeant qu'il reste **vert**.
+
+*Un sabotage qui doit rester vert vaut autant que les trois qui doivent rougir :
+c'est lui qui empêche d'écrire une règle qui n'est que de nous.*
+
 ### Ce que cette loi fait au levier 2
 
 Le levier 2 demande de multiplier les leçons de sourate, et le carnet en fait

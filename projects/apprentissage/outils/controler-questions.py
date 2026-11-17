@@ -123,6 +123,18 @@ class VoixDeLaPage(html.parser.HTMLParser):
     sont les seules lignes que Google affiche. La regle du carnet de l'empire,
     au 25 aout : « Les descriptions, elles, etaient honnetes. Seul le titre
     mentait — c'est-a-dire la seule ligne que Google affiche. »
+
+    ET `og:title` ET `og:description`, DEPUIS LE 17 NOVEMBRE. Ce sont les
+    lignes qu'affiche une CONVERSATION, pas Google — et controler-sitemap.py
+    ecrit lui-meme, au 17 septembre, que « c'est ainsi qu'un site comme
+    celui-ci circule ». Elles echappaient a tout : ce lecteur ne regardait que
+    `name="description"`, et les balises de partage s'ecrivent avec
+    `property=`. Trois sabotages isoles du 17 novembre sur la lecon
+    d'al-Ikhlas — og:description divergente, og:description PROMETTANT UN
+    MERITE (« celui qui la recite dix fois obtient la recompense… »), og:title
+    divergent du titre — ont donne chaque fois 8 verts sur 9, et l'unique
+    rouge etait le `lastmod`. La regle que le brief appelle celle qui compte
+    le plus ici ne lisait pas le champ par lequel le site se partage.
     """
 
     MUETTES = ('script', 'style', 'svg')
@@ -147,6 +159,11 @@ class VoixDeLaPage(html.parser.HTMLParser):
             if tag == 'meta' and d.get('name') == 'description':
                 self.morceaux.append(('meta description', '',
                                       d.get('content', '')))
+            # Les balises de partage s'ecrivent avec `property=`, pas `name=` :
+            # c'est par la qu'elles echappaient a ce lecteur.
+            elif tag == 'meta' and d.get('property') in ('og:title',
+                                                         'og:description'):
+                self.morceaux.append((d['property'], '', d.get('content', '')))
             return
         self.pile.append((tag, cls))
         if tag in self.MUETTES:
@@ -2047,18 +2064,53 @@ def main():
                     re.S)
     CANON = re.compile(r'<link[^>]*rel="canonical"[^>]*href="([^"]*)"')
     META_D = re.compile(r'<meta\s+name="description"\s+content="([^"]*)"')
+    OG_D = re.compile(r'<meta[^>]*property="og:description"[^>]*'
+                      r'content="([^"]*)"')
     blocs_ld = 0
     pages_sans_ld = []
+    og_confrontes = 0
     for page in pages:
         s = page.read_text(encoding='utf-8')
-        blocs = LD.findall(s)
-        if not blocs:
-            pages_sans_ld.append(page.name)
-            continue
         m = CANON.search(s)
         canonique = m.group(1) if m else None
         m = META_D.search(s)
         meta_desc = m.group(1).strip() if m else None
+
+        # LA TROISIEME COPIE DE LA DESCRIPTION — AJOUTE LE 17 NOVEMBRE
+        #
+        # Une description existe en TROIS exemplaires sur ce site : la meta,
+        # `og:description` et celle du bloc ld+json. Le bloc 11 de
+        # controler-sections.py exige depuis le 5 octobre que les trois soient
+        # le meme texte — SUR L'ACCUEIL SEULEMENT. Et la comparaison ld+json
+        # <-> meta, juste en dessous, tient les 63 pages depuis le 14 novembre.
+        # La paire qui restait libre partout ailleurs, c'est og <-> meta.
+        #
+        # « Trois copies qui divergent, c'est trois descriptions, et celle que
+        # Google retient n'est pas forcement celle qu'on a relue » — le
+        # raisonnement est deja ecrit, il manquait un champ.
+        #
+        # Mesure du 17 novembre, avant d'ecrire ce bloc : 54 pages portent
+        # `og:description`, les 54 disent exactement la meta, au caractere, et
+        # aucun des deux champs ne contient d'entite HTML. La regle tenait par
+        # soin. Elle est verifiee maintenant.
+        og = OG_D.search(s)
+        if og and meta_desc:
+            og_confrontes += 1
+            if html.unescape(og.group(1)).strip() \
+                    != html.unescape(meta_desc).strip():
+                fautes.append(
+                    '%s : og:description et la meta description ne disent pas '
+                    'la meme chose — la premiere est ce qu\'une conversation '
+                    'affiche, la seconde ce que Google affiche, et une seule '
+                    'des deux a ete relue' % page.name)
+        elif og and not meta_desc:
+            fautes.append('%s : og:description sans meta description'
+                          % page.name)
+
+        blocs = LD.findall(s)
+        if not blocs:
+            pages_sans_ld.append(page.name)
+            continue
         for b in blocs:
             blocs_ld += 1
             try:
@@ -2096,6 +2148,9 @@ def main():
     print('  %d bloc(s) ld+json confrontes au canonical et a la meta '
           'description, %d page(s) sans bloc.'
           % (blocs_ld, len(pages_sans_ld)))
+    print('  %d og:description confrontees a leur meta description : la '
+          'troisieme copie est tenue partout, plus seulement sur l accueil.'
+          % og_confrontes)
 
     if fautes:
         print('\n  %d FAUTE(S) :' % len(fautes))

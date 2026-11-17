@@ -24,7 +24,7 @@ lu par personne et entrerait en conflit à la première fusion.
 
 ## À COLLER DANS LE CARNET, À PARTIR D'ICI
 
-# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 16 NOVEMBRE 2026
+# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 17 NOVEMBRE 2026
 
 > **Comment lire cette note.** Son corps a été écrit le 14 octobre. Chaque
 > ajout porte sa date, et **une mesure datée ne se rafraîchit pas : elle se
@@ -2022,6 +2022,15 @@ ne l'ai **pas** transformée en contrôle ce soir : une règle par nuit, mesuré
 sabotée, documentée. C'est **non vérifié**, pas écarté — et c'est le candidat
 le plus propre pour la prochaine ronde.
 
+> ⚠️ **Ce paragraphe était faux, et c'est la ronde du 17 novembre qui l'a
+> mesuré.** La paire ld+json ↔ meta description était **déjà tenue sur les
+> 63 pages** depuis le 14 novembre, par `controler-questions.py`. Une seule
+> des trois paires était libre : **og ↔ meta**. Je l'avais écrit par déduction
+> — « le bloc 11 ne regarde que l'accueil, donc rien d'autre ne regarde » —
+> sans ouvrir les autres contrôles. La correction est dans la section du
+> 17 novembre, et la leçon est la même que celle du 14 et du 15 : **une
+> affirmation sur l'état du dépôt se mesure, même quand elle paraît évidente.**
+
 ### Ce que je n'ai pas fait, et pourquoi
 
 Aucune page neuve, aucune leçon, aucun titre réécrit, aucune question touchée.
@@ -2053,3 +2062,149 @@ l'heure du commit, et son message le dit ainsi — « 9 python verts ; les 30
 navigateur TOURNENT ENCORE ». Le chiffre est écrit ici parce qu'il est
 maintenant mesuré. Deuxième nuit de suite que l'ordre est respecté : la mesure,
 puis le chiffre.
+
+---
+
+## LE 17 NOVEMBRE — LA RÈGLE RELIGIEUSE NE LISAIT PAS LE CHAMP PAR LEQUEL LE SITE SE PARTAGE
+
+### Ce que j'ai cherché
+
+Hier soir j'avais écrit que la règle des trois copies de la description
+n'était tenue que sur l'accueil, et que c'était le candidat de cette nuit.
+**C'était faux.** La paire ld+json ↔ meta était déjà tenue sur les 63 pages
+depuis le 14 novembre. Je l'avais déduite au lieu de la mesurer. La mesure de
+ce soir a donc commencé par corriger ma propre note — puis elle a trouvé
+autre chose, et de plus grave.
+
+| paire | tenue ? |
+|---|---|
+| meta ↔ ld+json | **oui, les 63 pages**, depuis le 14 novembre |
+| les trois, ensemble | oui, **sur l'accueil seulement**, depuis le 5 octobre |
+| **meta ↔ `og:description`** | **non. Nulle part.** |
+
+### Ce que la mesure a donné d'abord
+
+| mesuré sur les 53 pages servies | résultat |
+|---|---|
+| copies de la description (meta / og / ld+json) | **1 / 1 / 1 sur les 53** |
+| les trois disent-elles la même chose ? | **oui, les 53** |
+| `canonical` vs `og:url` | 0 écart |
+| `og:image` | une seule valeur, le fichier existe |
+| `lang` | `fr` sur les 53 |
+| `<title>` vs `og:title` | 0 écart |
+
+Rien à réparer. **Tout était vrai — et deux champs n'étaient tenus par
+personne.**
+
+### Le trou, et pourquoi il était invisible
+
+`controler-sitemap.py` vérifie depuis le 17 septembre que les quatre balises
+de partage sont **présentes**, et que `og:image` désigne un fichier qui
+existe. Sa propre note dit pourquoi : « Partagées dans une conversation — et
+c'est ainsi qu'un site comme celui-ci circule. »
+
+**Présentes, jamais lues.** Et le lecteur qui recueille « la voix du site » —
+le texte qu'une page affirme en son nom, sur lequel s'appliquent la règle du
+mérite, celle des recueils de hadith et celle des attributions — ne regardait
+que `name="description"`. Les balises de partage s'écrivent avec `property=`.
+Elles passaient à travers.
+
+**Trois sabotages isolés sur la leçon d'al-Ikhlas, la page en position 11 :**
+
+| sabotage | résultat |
+|---|---|
+| `og:description` divergente, longueur valide | **8 verts** — l'unique rouge était le `lastmod` |
+| `og:description` qui **PROMET UN MÉRITE** | **8 verts** — l'unique rouge était le `lastmod` |
+| `og:title` divergent du `<title>` | **8 verts** — l'unique rouge était le `lastmod` |
+
+Le texte planté au deuxième essai était : « Celui qui la récite dix fois
+obtient la récompense d'une lecture entière du Coran, et une protection pour
+la nuit entière. » **Trois des locutions que le site s'interdit**, dans le
+champ qu'affiche WhatsApp, sur la seule page dont le brief dit qu'elle prouve
+que le format marche. Zéro contrôle.
+
+Le brief appelle la règle religieuse « LA RÈGLE QUI COMPTE LE PLUS ICI ». Elle
+ne lisait pas le champ par lequel le site se partage.
+
+### Mon premier sabotage ne prouvait rien, et je l'ai refait
+
+Le premier essai a remplacé le texte d'`og:description` par un
+`str.replace()` — or `og:description` porte **le même texte** que la meta
+description, donc les deux ont changé d'un coup. Trois contrôles sont passés
+au rouge et j'ai failli conclure que le champ était tenu : ils parlaient de
+la **meta**. Refait avec une substitution ciblée sur la seule balise visée,
+un remplacement, vérifié — et là, 8 verts.
+
+*La même forme d'erreur que la veille, à l'envers : un rouge obtenu pour une
+autre cause est une aussi mauvaise preuve qu'un vert obtenu par masquage.*
+
+### La règle, écrite à UN seul endroit
+
+Le lecteur de la voix du site voit maintenant `og:title` et
+`og:description`. **Trois règles s'appliquent d'un coup**, et sur les
+63 pages, pas sur 53 : le mérite promis, le recueil de hadith nommé, la
+parole attribuée.
+
+Effet mesuré, et c'est la preuve que le lecteur les voit vraiment :
+
+> morceaux de la voix du site : **4 089 le 14 novembre → 4 197 ce soir.**
+> Soit **+108 = 54 × 2**, les deux champs des 54 pages qui en portent.
+
+Et une deuxième règle, à côté de celle qui lie déjà le ld+json : **`og:description` doit être la meta description.** 54 confrontées, 54 d'accord.
+
+### Les quatre sabotages contre les règles neuves
+
+| sabotage | attendu | obtenu |
+|---|---|---|
+| `og:description` divergente, honnête | nommée | sortie 1, « ne disent pas la même chose » |
+| `og:description` qui promet un mérite | nommée **plusieurs fois** | sortie 1, **4 lignes** : `récompense`, `protection`, `celui qui la récite`, + la divergence |
+| **`og:title` divergent mais honnête** | **reste vert** | **sortie 0** |
+| `og:title` qui promet un mérite | nommée | sortie 1, « `vertu`, dans `<og:title>` » |
+
+### La règle que je n'ai PAS écrite, et le dépôt l'avait déjà apprise
+
+Je n'ai **pas** exigé `og:title` == `<title>`. OpenGraph ne le demande pas, et
+`controler-questions.py` porte depuis le 14 novembre la trace d'exactement
+cette erreur, sur le champ voisin :
+
+> « J'ai d'abord comparé le `name` du bloc au `<title>` de la page, et obtenu
+> **39 « écarts »** […] Ce n'étaient pas des fautes : schema.org n'a jamais
+> demandé que `name` recopie le titre […] **Le critère était de moi, pas de la
+> norme.** »
+
+Mesuré ce soir : `"name"` diffère du `<title>` sur **50 pages sur 53**, et
+c'est normal — « Sourate Al-Ikhlas » contre « Sourate Al-Ikhlas :
+traduction, texte arabe, 4 versets ». Le titre porte les mots de la requête,
+le nom porte celui de la ressource.
+
+Donc : `og:title` est **lu** par la règle éditoriale, et **libre** quant à sa
+forme. C'est le troisième sabotage, celui qui doit rester vert.
+
+### Ce que j'ai mesuré et laissé tel quel
+
+- Les **38 leçons** font de 252 à 1 566 mots, et la longueur suit le nombre de
+  versets de la sourate — pas un défaut, une conséquence. Chacune a les mêmes
+  deux sections, chaque verset portant son arabe, sa « traduction du sens » et
+  sa référence exacte : « Coran, sourate Al-Ikhlas (112), verset 1.
+  Traduction : Muhammad Hamidullah. »
+- **Aucune translittération** sur le site. Ce n'est pas un manque caché : c'est
+  un état, et il est noté ici pour qu'on ne le redécouvre pas.
+- Les **12 pages de section** hors sitemap portent aussi leurs `og:`, et elles
+  concordent. La règle neuve les couvre, parce qu'elle lit les 63 pages et non
+  les 53 adresses.
+
+### Ce que je n'ai pas fait, et pourquoi
+
+Aucune page neuve, aucune leçon, aucun titre réécrit, aucune question touchée.
+
+- **Levier 1** : les titres sont dans les règles (remesuré hier, les huit
+  champs des quatre pages vues). Mettre les mots de la requête en tête demande
+  les requêtes, et `docs/MESURES.md` n'a **toujours rien depuis le 21 août** —
+  revérifié ce soir sur `origin/main`.
+- **Levier 2** : inchangé, et le choix reste à Mohamed.
+- **File de publication** : les fichiers touchés ce soir
+  (`outils/controler-questions.py` et la documentation) **restent tous au
+  dépôt**. 72 en ligne / 69 au dépôt, inchangé.
+
+Et le site reste injoignable depuis ce conteneur : **vérifié au dépôt, non
+vérifié en ligne.**

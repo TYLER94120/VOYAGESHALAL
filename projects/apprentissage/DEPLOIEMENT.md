@@ -367,6 +367,18 @@ Ce qu'un `publier.py` enverrait, compte entre `59e67ae` et la branche :
 
 Aucun fichier ajoute, aucun supprime : les 72 sont des modifications.
 
+**Note du 17 novembre.** Retour au cas ordinaire : les fichiers touches
+RESTENT TOUS AU DEPOT — `outils/controler-questions.py`, `outils/LISEZMOI.md`,
+`docs/POUR-LE-CARNET.md` et ce fichier-ci, les quatre deja dans les 69.
+Remesure entre `59e67ae` et l'arbre de travail : **141 fichiers modifies,
+72 en ligne, 69 au depot. INCHANGE.** Ce qui a change ce soir ne touche aucune
+page : les balises de partage `og:title` et `og:description` etaient verifiees
+PRESENTES depuis le 17 septembre et n'etaient LUES par personne. Trois
+sabotages isoles sur la lecon d'al-Ikhlas — dont un `og:description`
+PROMETTANT UN MERITE — ont donne 8 verts sur 9, l'unique rouge etant le
+`lastmod`. Le lecteur de la voix du site ne regardait que `name="description"`
+et les balises de partage s'ecrivent avec `property=`.
+
 **Note du 16 novembre.** Cette fois **deux des fichiers touches PARTENT en
 ligne** — `plus.html` (sa description) et `sitemap.xml` (le `lastmod` de cette
 page) — et le troisieme, `outils/controler-sitemap.py`, reste au depot. Le
