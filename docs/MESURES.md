@@ -4378,3 +4378,24 @@ fait / mesuré / pas fait et pourquoi
 **Ouvert.** Un export Search Console avec les URL et les clics par période.
 
 **Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
+
+## 18 novembre — nuit 36 de la routine autonome (jour pair : approfondissement)
+
+fait / mesuré / pas fait et pourquoi
+
+**Mesuré.** Captures Search Console reçues de Mohamed (pas d'export CSV) : sur 3 mois, 501 clics et 27,8 k impressions, CTR 1,8 %, impressions en forte hausse sur les derniers jours (environ 850 par jour contre 200 à 400 en septembre-octobre). Sur 28 jours, pages : `ou-prier-disneyland-paris` 49 clics / 842 impressions (CTR ≈ 5,8 %) ; `ou-prier-parc-asterix` 36 / 167 (≈ 22 %) ; une page `ou-prier-aeroport-…` (URL coupée sur la capture) 4 / 770 (≈ 0,5 %) ; `ou-prier-gares-paris` 9 / 196 ; `destinations/lisbonne` 6 / 423 (≈ 1,4 %). Requêtes : « salle de prière disneyland » et variantes en tête, plus quelques requêtes de restaurants halal à Naples et Ljubljana, un clic chacune.
+
+**Fait.** Rien modifié dans le code cette nuit.
+
+**Pas fait et pourquoi.**
+- L'écart le plus net est la page aéroport à 770 impressions pour 4 clics. Son URL exacte (Orly ou CDG) n'est pas lisible sur la capture : je ne change pas son titre sans savoir laquelle c'est.
+- Titre d'Orly : toujours bloqué par la promesse « horaires » non sourcée.
+- Les captures ne sont pas comparables aux 3 mois du relevé du 17 octobre (périodes différentes) : je n'en tire pas de tendance chiffrée.
+
+**Vérifié servi.** Rien publié cette nuit.
+
+**Ouvert.**
+- URL complète de la page aéroport à 770 impressions (onglet Pages, export CSV dans `docs/search-console/`).
+- Décision sur la promesse « horaires » d'Orly.
+
+**Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
