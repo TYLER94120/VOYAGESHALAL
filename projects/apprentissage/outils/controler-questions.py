@@ -2060,8 +2060,69 @@ def main():
     # demande que `name` recopie le titre, et le titre porte les mots de la
     # requete tandis que le nom porte celui de la ressource. Le critere etait
     # de moi, pas de la norme. Il n'est donc pas ici.
+    #
+    # MAIS NE PAS JUGER LA FORME D'UN CHAMP N'EST PAS NE PAS LIRE CE QU'IL
+    # DIT — 18 NOVEMBRE
+    #
+    # C'est la distinction que le 17 novembre avait tiree sur `og:title` :
+    # « LU par la regle editoriale et LIBRE quant a sa forme. » Elle valait
+    # mot pour mot ici, et personne ne l'avait appliquee : la phrase ci-dessus
+    # a ecarte un critere de FORME, et le champ est reparti sans qu'aucune
+    # regle de FOND ne le lise.
+    #
+    # Le lecteur de la voix du site, lui, ne pouvait pas le voir : `MUETTES`
+    # ecarte `script`, avec ce motif — « ce n'est pas de la prose lue par
+    # quelqu'un ». Vrai d'un script. Faux d'un bloc `application/ld+json`,
+    # qui n'existe que pour etre lu — par Google, comme une declaration du
+    # site sur lui-meme. Troisieme fois de suite que le trou a cette forme :
+    # un garde-fou pose sur un chemin, et le texte passe par l'autre.
+    #
+    # Mesure du 18 novembre, AVANT d'ecrire la regle : 54 blocs, 256 valeurs
+    # de texte, et trois champs de prose — `name` (54 valeurs, 54 distinctes),
+    # `description` (54) et `teaches` (38). Les trois regles editoriales
+    # appliquees a ces 256 valeurs : ZERO touche. La regle tenait par soin.
+    # Et un sabotage isole le prouve lisible : « Celui qui recite Al-Ikhlas
+    # dix fois obtient la recompense d'une lecture entiere du Coran » plante
+    # dans le `name` de la lecon d'al-Ikhlas a rendu HUIT CONTROLES VERTS, le
+    # seul rouge etant le lastmod — c'est-a-dire une promesse de merite
+    # declaree a Google sur la page qui classe le mieux du site.
+    #
+    # POURQUOI UNE LISTE DE CE QU'ON ECARTE, ET PAS UNE LISTE DE CE QU'ON LIT.
+    # Trois champs nommes, c'est exactement la faute du 17 novembre a l'envers :
+    # le lecteur regardait `name="description"` et les balises de partage
+    # s'ecrivaient `property=`. Un champ ajoute demain par un generateur serait
+    # muet le jour de son ajout. On lit donc TOUTES les valeurs de texte du
+    # bloc sauf quatre, chacune ecartee pour une raison dite : `@context` et
+    # `@type` sont des identifiants de schema.org, `url` est une adresse et
+    # `inLanguage` un code de langue — aucune des quatre n'est une phrase, et
+    # les trois premieres sont deja confrontees plus bas a ce que la page
+    # declare par ailleurs.
+    #
+    # `description` est relue ici alors que la meta description l'est deja
+    # au-dessus : c'est volontaire. Le jour ou l'egalite des trois copies
+    # serait assouplie, le texte resterait lu.
     LD = re.compile(r'<script[^>]*type="application/ld\+json"[^>]*>(.*?)</script>',
                     re.S)
+    LD_MACHINE = ('@context', '@type', 'url', 'inLanguage')
+
+    def textes_du_bloc(valeur, chemin=''):
+        """Les valeurs de TEXTE du bloc, avec le chemin de leur champ.
+
+        On descend dans les objets et les listes : schema.org autorise les
+        deux a n'importe quelle profondeur, et `educationalLevel` est deja
+        une chaine sur 42 pages et une liste sur 18.
+        """
+        if isinstance(valeur, dict):
+            for cle, v in valeur.items():
+                for x in textes_du_bloc(v, chemin + '.' + cle if chemin
+                                        else cle):
+                    yield x
+        elif isinstance(valeur, list):
+            for v in valeur:
+                for x in textes_du_bloc(v, chemin + '[]'):
+                    yield x
+        elif isinstance(valeur, str):
+            yield chemin, valeur
     CANON = re.compile(r'<link[^>]*rel="canonical"[^>]*href="([^"]*)"')
     META_D = re.compile(r'<meta\s+name="description"\s+content="([^"]*)"')
     OG_D = re.compile(r'<meta[^>]*property="og:description"[^>]*'
@@ -2069,6 +2130,8 @@ def main():
     blocs_ld = 0
     pages_sans_ld = []
     og_confrontes = 0
+    valeurs_ld = 0
+    promesses_ld = 0
     for page in pages:
         s = page.read_text(encoding='utf-8')
         m = CANON.search(s)
@@ -2140,6 +2203,33 @@ def main():
                 fautes.append('%s : le bloc ld+json declare la langue « %s »'
                               % (page.name, d.get('inLanguage')))
 
+            # LES TROIS REGLES EDITORIALES SUR CE QUE LA PAGE DECLARE —
+            # 18 NOVEMBRE. Meme famille de mots, meme `voix_du_site` que sur
+            # la prose visible : un sens cite entre guillemets reste cite,
+            # ici comme ailleurs.
+            for champ, val in textes_du_bloc(d):
+                if champ.split('.')[-1].replace('[]', '') in LD_MACHINE:
+                    continue
+                propre = voix_du_site(val)
+                if not propre.strip():
+                    continue
+                valeurs_ld += 1
+                plat = nu(propre)
+                for fam, mots in (('promet un merite', MERITES),
+                                  ('nomme un recueil de hadith', RECUEILS),
+                                  ('attribue une parole', ATTRIBUTIONS)):
+                    for mot in mots:
+                        if mot not in plat:
+                            continue
+                        promesses_ld += 1
+                        fautes.append(
+                            '%s : le bloc ld+json %s (« %s ») dans son champ '
+                            '`%s` — c\'est ce que la page declare a Google sur '
+                            'elle-meme, et aucune source citable ne le porte '
+                            'ici : « %s »'
+                            % (page.name, fam, mot, champ,
+                               re.sub(r'\s+', ' ', propre).strip()[:70]))
+
     # Les chiffres, pas un verdict. Une ligne « aucune promesse sur les
     # pages » s'afficherait aussi le jour ou il y en a une.
     print('  %d pages relues, %d morceaux de la voix du site, %d promesse(s) '
@@ -2151,6 +2241,10 @@ def main():
     print('  %d og:description confrontees a leur meta description : la '
           'troisieme copie est tenue partout, plus seulement sur l accueil.'
           % og_confrontes)
+    print('  %d valeur(s) de texte des blocs ld+json passees aux trois regles '
+          'editoriales, %d touche(s) — ce que la page declare a Google est '
+          'maintenant lu comme ce qu elle affiche.'
+          % (valeurs_ld, promesses_ld))
 
     if fautes:
         print('\n  %d FAUTE(S) :' % len(fautes))

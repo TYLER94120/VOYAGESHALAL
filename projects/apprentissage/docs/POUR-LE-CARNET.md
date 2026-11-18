@@ -24,7 +24,7 @@ lu par personne et entrerait en conflit à la première fusion.
 
 ## À COLLER DANS LE CARNET, À PARTIR D'ICI
 
-# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 17 NOVEMBRE 2026
+# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 18 NOVEMBRE 2026
 
 > **Comment lire cette note.** Son corps a été écrit le 14 octobre. Chaque
 > ajout porte sa date, et **une mesure datée ne se rafraîchit pas : elle se
@@ -2214,3 +2214,156 @@ vérifié en ligne.**
 **39 verts : 9 python, 30 navigateur, 0 rouge.** Les 30 tournaient encore à
 l'heure du commit, et son message le dit ainsi. Troisième nuit de suite que
 l'ordre est respecté : la mesure, puis le chiffre.
+
+---
+
+## LE 18 NOVEMBRE — « NE PAS JUGER LA FORME » AVAIT ÉTÉ LU COMME « NE PAS LIRE »
+
+### D'abord, les deux leviers, mesurés avant d'écrire une ligne
+
+**Levier 1, remesuré sur les 53 titres réellement servis** — serveur local, pas
+le code source. Le tableau complet :
+
+| famille | nombre | longueurs | forme |
+|---|---|---|---|
+| leçons de sourate | 38 | 51 à 59 | `Sourate X : traduction, texte arabe, N versets` |
+| sections | 11 | **15 à 55** | `Nom : ce qu'elle couvre` |
+| accueil, sections.html, sourates.html | 3 | 51 à 55 | descriptif |
+| plus.html | 1 | 26 | `À propos — Islam pas à pas` |
+
+Les 38 leçons mettent **les mots de la requête en tête**, exactement comme la
+ronde le demande : le nom de la sourate est le premier mot du titre. Rien à
+réécrire.
+
+Deux sections tombent à **15 et 17 caractères** — `/section/le-comportement`
+(« Le comportement ») et `/section/vocabulaire-arabe` (« Vocabulaire arabe ») —
+là où leurs neuf sœurs utilisent 42 à 55. J'ai cru avoir trouvé le travail de
+la nuit. **C'était déjà écrit, daté et décidé** dans
+`outils/faire-sections-pages.py` :
+
+> « Mesure du 13 octobre : ces onze titres visent tous une requête LARGE […] et
+> ces onze pages ont zéro impression. […] Soigner ces titres est du travail
+> propre qui ne rapportera rien ; le savoir évite de le refaire. »
+
+Et le repli sur le nom seul est **voulu** : l'assemblage complet ferait 64 et
+65 caractères, `controler-sections.py` compte déjà ces deux-là et s'arrête si
+ce ne sont plus exactement elles, et raccourcir leur champ `quoi` est **une
+décision de rédaction, pas de générateur** — on la signale, on ne la change
+pas. J'ai donc lu avant de corriger, et il n'y avait rien à corriger.
+
+**Levier 2** : `docs/MESURES.md` relu sur `origin/main` — **toujours aucun
+relevé depuis le 21 août**, dernière modification du fichier le 17 octobre.
+Sans requêtes, pas de chiffre par sourate, donc pas de critère pour la leçon
+suivante. Quatrième nuit que je l'écris.
+
+**Maillage** : `controler-liens.py` rend 53 pages du sitemap toutes atteintes
+depuis l'accueil — 1 à 0 clic, 14 à 1 clic, 38 à 2 clics. Rien à réparer.
+
+### La phrase qui a créé le trou
+
+Le 17 novembre, j'avais écrit dans `controler-questions.py` que la comparaison
+`name` ↔ `<title>` n'y serait pas :
+
+> « schema.org n'a jamais demandé que `name` recopie le titre […] Le critère
+> était de moi, pas de la norme. Il n'est donc pas ici. »
+
+C'est juste. Mais la même nuit, sur le champ voisin, j'avais tiré la
+distinction qui manquait ici :
+
+> « `og:title` est donc **LU** par la règle éditoriale et **LIBRE** quant à sa
+> forme. »
+
+**Écarter un critère de forme n'est pas renoncer à lire le fond.** Le champ est
+reparti sans qu'aucune règle de fond ne le lise — et le lecteur de la voix du
+site ne pouvait pas le rattraper, parce que `MUETTES` écarte `script` avec ce
+motif : « ce n'est pas de la prose lue par quelqu'un ». Vrai d'un script. Faux
+d'un bloc `application/ld+json`, qui **n'existe que pour être lu**.
+
+Troisième fois de suite que le trou a cette forme : un garde-fou posé sur un
+chemin, et le texte qui passe par l'autre.
+
+### La mesure, avant la règle
+
+| | |
+|---|---|
+| blocs `ld+json` | **54** sur 63 pages |
+| valeurs de texte dedans | **472**, dont 256 hors identifiants de machine |
+| champs de prose | `name` (54 valeurs, **54 distinctes**), `description` (54), `teaches` (38) |
+| les trois règles éditoriales sur ces 256 valeurs | **ZÉRO touche** |
+
+La règle tenait. Par soin, pas par contrôle.
+
+### Le sabotage qui le prouve
+
+Dans le `name` du bloc de la leçon d'al-Ikhlas — **la page qui classe le mieux
+du site, position 11** :
+
+> « Celui qui recite Al-Ikhlas dix fois obtient la recompense d'une lecture
+> entiere du Coran »
+
+**HUIT CONTRÔLES VERTS.** Le seul rouge était le `lastmod` du sitemap, cause
+**lue** dans la sortie, pas déduite. Une promesse de mérite déclarée à Google,
+sur la page la mieux classée, invisible aux neuf contrôles.
+
+La substitution a visé le seul champ voulu, à l'intérieur du seul bloc, avec
+vérification qu'il y avait **exactement un** remplacement — la leçon du
+17 novembre, où un `str.replace()` avait touché deux champs portant le même
+texte et où les rouges obtenus parlaient de l'autre.
+
+### Pourquoi une liste de ce qu'on écarte, et pas de ce qu'on lit
+
+Nommer `name`, `description` et `teaches` serait **la faute du 17 novembre à
+l'envers** : ce soir-là, le lecteur regardait `name="description"` et les
+balises de partage s'écrivaient `property=`. Un champ ajouté demain par un
+générateur serait muet le jour de son ajout.
+
+On lit donc **toutes** les valeurs de texte du bloc sauf quatre, chacune
+écartée pour une raison dite : `@context` et `@type` sont des identifiants de
+schema.org, `url` est une adresse, `inLanguage` un code de langue. Aucune n'est
+une phrase, et les trois premières sont déjà confrontées ailleurs à ce que la
+page déclare. C'est la forme que ce dépôt emploie déjà — `MUETTES`, `CITANTES` :
+une liste d'exclusions, et tout le reste est lu.
+
+`description` est relue ici alors que la meta l'est déjà au-dessus. C'est
+volontaire : le jour où l'égalité des trois copies serait assouplie, le texte
+resterait lu.
+
+### Quatre sabotages, dont deux qui doivent rester verts
+
+| sabotage | attendu | obtenu |
+|---|---|---|
+| mérite dans `name` | rouge | **sortie 1**, « promet un mérite (« recompense ») dans son champ `name` » |
+| recueil de hadith dans `teaches` | rouge | **sortie 1**, et **trois** lignes : « boukhari », « rapporte par », « hadith » |
+| `name` honnête, différent du `<title>` | **vert** | **sortie 0** — la forme reste libre |
+| mérite **entre guillemets** dans `name` | **vert** | **sortie 0** — un sens cité reste cité |
+
+Les deux derniers comptent autant que les deux premiers. Le troisième empêche
+de réécrire le critère que ce dépôt a déjà retiré une fois — 39 faux écarts le
+17 novembre. Le quatrième prouve que `voix_du_site` s'applique **ici aussi** :
+la règle lit ce que le site affirme, pas ce qu'il rapporte.
+
+### Preuve mesurée que le contrôle voit bien le champ
+
+`256 valeur(s) de texte des blocs ld+json passees aux trois regles
+editoriales, 0 touche(s)` — le chiffre du contrôle est exactement celui de la
+sonde écrite avant la règle. Un contrôle qui rend zéro sans avoir pu rendre
+autre chose ne mesure rien ; celui-ci a rendu autre chose quatre fois.
+
+### Ce que je n'ai pas fait, et pourquoi
+
+Aucune page neuve, aucune leçon, aucun titre réécrit, aucune question touchée,
+**et aucun des deux titres courts corrigé** — la mesure du 13 octobre dit que
+ce serait du travail propre sans effet, et le champ à raccourcir appartient au
+cahier V2.
+
+- **Levier 1** : les 53 titres sont dans les règles, les 38 leçons portent déjà
+  les mots de la requête en tête. La suite demande les requêtes.
+- **Levier 2** : inchangé, le choix reste à Mohamed — juz 29 ou les neuf
+  sourates courtes.
+- **File de publication** : le seul fichier de code touché ce soir
+  (`outils/controler-questions.py`) et la documentation **restent tous au
+  dépôt** — `.vercelignore` écarte `outils/` et `*.md`. 72 en ligne / 69 au
+  dépôt, **inchangé**.
+
+Et le site reste injoignable depuis ce conteneur : **vérifié au dépôt, non
+vérifié en ligne.**

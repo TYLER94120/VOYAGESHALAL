@@ -729,6 +729,43 @@ pas** — et c'est par là que ce site circule, comme le dit la note du
 *Un sabotage qui doit rester vert vaut autant que les trois qui doivent rougir :
 c'est lui qui empêche d'écrire une règle qui n'est que de nous.*
 
+### « Ne pas juger la forme » n'est pas « ne pas lire » — 18 novembre
+
+Le point 3 ci-dessus dit la bonne chose de `og:title` : **lu** quant au fond,
+**libre** quant à la forme. La même nuit, la note jumelle de
+`controler-questions.py` a écarté la comparaison `name` ↔ `<title>` par
+« le critère était de moi, pas de la norme » — exact — **et le champ est
+reparti sans qu'aucune règle de fond ne le lise.**
+
+Le lecteur de la voix du site ne pouvait pas le rattraper : `MUETTES` écarte
+`script`, au motif que « ce n'est pas de la prose lue par quelqu'un ». Vrai
+d'un script. **Faux d'un bloc `application/ld+json`, qui n'existe que pour
+être lu.** 54 blocs, 92 valeurs de prose (`name` 54, `teaches` 38) déclarées à
+Google et lues par personne.
+
+Preuve, dans le `name` de la leçon d'al-Ikhlas — la page la mieux classée du
+site, position 11 : « Celui qui recite Al-Ikhlas dix fois obtient la
+recompense d'une lecture entiere du Coran » → **8 verts**, l'unique rouge étant
+le `lastmod`.
+
+**Trois choses à ne pas défaire.**
+
+1. **Les trois règles éditoriales lisent les valeurs de texte des blocs
+   `ld+json`.** Chiffre du contrôle : **256 valeurs relues, 0 touche** — le
+   même que la sonde écrite avant la règle.
+2. **La portée est une liste d'EXCLUSIONS, pas une liste de champs.** Quatre
+   écartés, chacun pour une raison dite : `@context`, `@type`, `url`,
+   `inLanguage`. Nommer `name`, `description` et `teaches` serait la faute du
+   17 novembre à l'envers — un champ ajouté demain serait muet le jour de son
+   ajout. C'est la forme que ce dépôt emploie déjà : `MUETTES`, `CITANTES`.
+3. **`voix_du_site` s'applique ici aussi.** Un mérite **entre guillemets** dans
+   `name` doit rester **vert** : la règle lit ce que le site affirme, pas ce
+   qu'il rapporte. Et le `name` reste **libre** de différer du `<title>` — un
+   second sabotage l'exige vert.
+
+*Deux sabotages verts sur quatre, cette fois. Ils ne gardent pas la règle : ils
+gardent la frontière de la règle.*
+
 ### Ce que cette loi fait au levier 2
 
 Le levier 2 demande de multiplier les leçons de sourate, et le carnet en fait

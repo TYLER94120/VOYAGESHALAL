@@ -367,6 +367,21 @@ Ce qu'un `publier.py` enverrait, compte entre `59e67ae` et la branche :
 
 Aucun fichier ajoute, aucun supprime : les 72 sont des modifications.
 
+**Note du 18 novembre.** Les fichiers touches RESTENT TOUS AU DEPOT —
+`outils/controler-questions.py`, `outils/LISEZMOI.md`,
+`docs/POUR-LE-CARNET.md` et ce fichier-ci, les quatre deja dans les 69.
+Remesure entre `59e67ae` et l'arbre de travail : **141 fichiers modifies,
+72 en ligne, 69 au depot. INCHANGE.** Ce qui a change ce soir ne touche aucune
+page : les blocs `application/ld+json` — 54 pages, 92 valeurs de prose dont
+`name` et `teaches` — etaient declares a Google et lus par AUCUNE regle
+editoriale. La note du 17 novembre avait ecarte un critere de FORME sur `name`
+(« schema.org n'a jamais demande que `name` recopie le titre »), ce qui etait
+juste, et le champ est reparti sans qu'aucune regle de FOND ne le lise ; le
+lecteur de la voix du site ecarte `script`, au motif que « ce n'est pas de la
+prose lue par quelqu'un » — vrai d'un script, faux d'un bloc ld+json. Un
+sabotage isole dans le `name` de la lecon d'al-Ikhlas, la page la mieux classee
+du site, a donne **8 verts sur 9**, l'unique rouge etant le `lastmod`.
+
 **Note du 17 novembre.** Retour au cas ordinaire : les fichiers touches
 RESTENT TOUS AU DEPOT — `outils/controler-questions.py`, `outils/LISEZMOI.md`,
 `docs/POUR-LE-CARNET.md` et ce fichier-ci, les quatre deja dans les 69.
