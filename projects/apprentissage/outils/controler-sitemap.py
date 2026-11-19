@@ -204,11 +204,24 @@ def main():
     # « celui qui la recite… » — pas le verbe. On garde donc la locution
     # entiere. Meme regle, deux surfaces, deux pieges differents : ici le mot
     # trop large, dans les questions le texte cite.
-    MERITES = ('bienfait', 'merite', 'vertu', 'recompense', 'protege',
-               'protection', 'guerit', 'guerison', 'exauce', 'benediction',
-               'baraka', 'equivaut',
-               'celui qui la recite', 'celui qui le recite',
-               'celle qui la recite', 'quiconque la recite')
+    # CETTE LISTE A VECU ICI DU 13 OCTOBRE AU 19 NOVEMBRE, ET ELLE AVAIT
+    # DERIVE. Le 14 novembre, `controler-questions.py` passait la sienne au
+    # niveau module avec ce motif : « deux copies d'une regle derivent
+    # toujours. » La copie etait CELLE-CI, et personne ne l'a vue. Mesure du
+    # 19 novembre : « efface les peches » n'etait que la-bas, « celle qui la
+    # recite » et « quiconque la recite » n'etaient qu'ici. Un titre pouvait
+    # donc promettre d'effacer les peches et passer.
+    #
+    # Les deux listes sont fondues dans `outils/regles-editoriales.py`, qui
+    # porte aussi l'appariement — parce que le mot « vertu » cherche comme
+    # sous-chaine touche « COUVERTURE », 35 fois sur ce site.
+    import importlib.util as _iur
+    _specr = _iur.spec_from_file_location(
+        'regles_edito',
+        pathlib.Path(__file__).resolve().parent / 'regles-editoriales.py')
+    REGLES = _iur.module_from_spec(_specr)
+    _specr.loader.exec_module(REGLES)
+    MERITES = REGLES.MERITES
 
     def aplatir(s):
         s = unicodedata.normalize('NFD', desechapper(s))
@@ -228,7 +241,7 @@ def main():
                 continue
             plat = aplatir(m.group(1))
             for mot in MERITES:
-                if mot in plat:
+                if REGLES.porte(plat, mot):
                     fautes.append(
                         '%s : le %s promet « %s » — aucun hadith source ne le '
                         'porte sur ce site : « %s »'

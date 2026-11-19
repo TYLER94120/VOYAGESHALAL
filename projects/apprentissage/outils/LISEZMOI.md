@@ -766,6 +766,63 @@ le `lastmod`.
 *Deux sabotages verts sur quatre, cette fois. Ils ne gardent pas la règle : ils
 gardent la frontière de la règle.*
 
+### La règle existait en deux exemplaires, et son mot le plus large visait « couverture » — 19 novembre
+
+Trois choses d'un coup, parce qu'elles se tenaient : on ne pouvait pas pointer
+la règle vers une surface neuve sans d'abord réparer la règle.
+
+**1. Les deux listes avaient dérivé, dans les deux sens.** La note du
+14 novembre disait « deux copies d'une règle dérivent toujours » et parlait de
+**deux** surfaces. Il y en avait **trois** : `controler-sitemap.py` portait sa
+propre copie de `MERITES` depuis le 13 octobre.
+
+| | |
+|---|---|
+| dans `controler-questions` seul | `efface les peches` |
+| dans `controler-sitemap` seul | `celle qui la recite`, `quiconque la recite` |
+
+Un `<title>` promettant d'« effacer les péchés » passait. Un `<h1>` disant
+« quiconque la récite » passait. **Deux sabotages, un dans chaque sens, le
+prouvent — sortie 1 des deux côtés maintenant.**
+
+**2. « vertu » cherché comme sous-chaîne touche « COUVERTURE » — 35 fois sur
+ce site.** C'est le mot le plus souvent touché de toute la règle, et c'est un
+faux. Il n'avait rougi nulle part par chance. *Un faux rouge est pire qu'un
+trou : il apprend à ne plus lire les rouges.*
+
+**3. Le site parle en JavaScript**, et `js/` **part en ligne** —
+`.vercelignore` n'écarte que `*.md` et `outils/`. **435 phrases françaises**
+dans 18 fichiers, lues par aucune règle. Et `MUETTES` écarte `script`, donc
+même le texte qu'un script *insère* dans la page échappait au lecteur.
+
+**Quatre choses à ne pas défaire.**
+
+1. **Un seul fichier : `outils/regles-editoriales.py`.** Les trois listes,
+   l'appariement, et la boucle des trois familles. Chargé par `importlib`
+   depuis les deux contrôles, comme `faire-questions-claude.py` l'est depuis
+   octobre, et pour la raison écrite au même endroit. Ne pas recopier une
+   liste « juste pour ce contrôle-ci ».
+2. **La frontière est à GAUCHE seulement : début de mot, suffixes admis.**
+   C'est ce qui garde `vertus`, `vertueux`, `recompensera`, `protegent`,
+   `benedictions`, `meritent` — tous mesurés présents — tout en refusant
+   `couverture`. Une frontière des deux côtés perd les six. Deux sabotages à
+   suffixe l'exigent rouges, un sabotage « couverture » l'exige **vert**.
+3. **`ahadith` est inscrit en clair.** La sous-chaîne le rattrapait par
+   accident ; la frontière ne le rattrape plus. *Ce qu'une règle attrape par
+   accident, elle le lâche sans prévenir.*
+4. **On lit TOUS les littéraux de `js/`, pas ceux qui « ressemblent à du
+   français ».** 1 661 littéraux non vides, 1 661 relus, zéro touche. Le tri
+   par ressemblance était un critère de nous, et un critère de nous devient
+   aveugle sans prévenir.
+
+**Pas fondue, et c'est voulu** : `SOURCES_HADITH` dans `controler-sitemap.py`
+est une règle **différente** — elle ne juge pas la voix du site, elle interdit
+à une page d'**annoncer** des hadiths quand les banques n'en citent aucun.
+Vérifiée ce soir : zéro touche, aucun faux positif latent.
+
+*Une règle partagée à moitié — les mots oui, l'appariement non — n'est pas
+partagée. C'est deux règles qui se ressemblent.*
+
 ### Ce que cette loi fait au levier 2
 
 Le levier 2 demande de multiplier les leçons de sourate, et le carnet en fait

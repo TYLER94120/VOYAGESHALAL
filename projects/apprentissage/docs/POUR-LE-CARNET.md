@@ -24,7 +24,7 @@ lu par personne et entrerait en conflit à la première fusion.
 
 ## À COLLER DANS LE CARNET, À PARTIR D'ICI
 
-# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 18 NOVEMBRE 2026
+# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 19 NOVEMBRE 2026
 
 > **Comment lire cette note.** Son corps a été écrit le 14 octobre. Chaque
 > ajout porte sa date, et **une mesure datée ne se rafraîchit pas : elle se
@@ -2373,3 +2373,162 @@ vérifié en ligne.**
 **39 verts : 9 python, 30 navigateur, 0 rouge.** Les 30 tournaient encore à
 l'heure du commit, et son message le dit ainsi. Quatrième nuit de suite que
 l'ordre est respecté : la mesure, puis le chiffre.
+
+---
+
+## LE 19 NOVEMBRE — LA RÈGLE QUI COMPTE LE PLUS EXISTAIT EN DEUX EXEMPLAIRES QUI AVAIENT DIVERGÉ
+
+### D'abord les deux leviers, et ils n'ont pas bougé
+
+`docs/MESURES.md` relu sur `origin/main` : dernière modification **17 octobre**,
+relevé islampasapas toujours celui du 21 août — 12 impressions, 4 jours de
+données. **Cinquième nuit sans requêtes.** `main` n'a pas bougé non plus
+(`f1623ba`).
+
+### Ce que la mesure a trouvé, dans l'ordre
+
+Je cherchais la surface suivante que les règles éditoriales ne lisaient pas.
+J'en ai trouvé une — et, en route, **deux défauts dans la règle elle-même**.
+
+#### 1. Les deux listes avaient dérivé, dans les deux sens
+
+Le 14 novembre, `MERITES` est passé au niveau module de
+`controler-questions.py`, avec ce motif écrit noir sur blanc :
+
+> « les pages s'en servent aussi, et **deux copies d'une règle dérivent
+> toujours.** »
+
+La phrase était juste. Elle parlait de **deux** surfaces — les banques et les
+pages. Il y en avait **trois** : `controler-sitemap.py` portait depuis le
+13 octobre sa propre copie, pour les titres et descriptions servis. Mesure :
+
+| | |
+|---|---|
+| dans `controler-questions` seul | `efface les peches` |
+| dans `controler-sitemap` seul | `celle qui la recite`, `quiconque la recite` |
+| communs | **14** |
+
+Conséquence, **prouvée par deux sabotages, un dans chaque sens** :
+
+- un `<title>` disant « Sourate Al-Ikhlas efface les peches » → avec la liste
+  fondue, `controler-sitemap` **sortie 1**. Avec l'ancienne, le mot n'y était
+  pas : il passait.
+- un `<h1>` disant « Quiconque la recite sera comble. » → `controler-questions`
+  **sortie 1**. Avec l'ancienne, le mot n'y était pas : il passait.
+
+#### 2. « vertu » cherché comme sous-chaîne touche « COUVERTURE »
+
+Les listes étaient partagées, **l'appariement ne l'était pas** : six
+`if mot in plat` recopiés dans deux fichiers. Or une sous-chaîne ne sait pas où
+commence un mot. Mesure sur **tout** le texte du site :
+
+| mot | touches | dont |
+|---|---|---|
+| `vertu` | **40** | **35 dans « couverture » / « couvertures »** |
+| `recompense` | 40 | 34 le mot lui-même, puis `recompensee`, `recompenses`, `recompensera` |
+| `bienfait` | 47 | 43 le mot lui-même, puis `bienfaits`, `bienfaiteurs` |
+| `protege` | 8 | `protegent`, `proteger`, `protege-nous`, `protege-les` |
+
+`vertu` est **le mot le plus souvent touché de toute la règle, et c'est un
+faux.** Il n'avait rougi nulle part **par chance** : « couverture »
+n'apparaissait dans aucune surface déjà lue. Il apparaît **quatre fois** dans
+`js/section.js` — dont deux dans un sélecteur CSS — c'est-à-dire précisément
+dans le fichier que j'allais faire lire.
+
+**Un faux rouge est pire qu'un trou : il apprend à ne plus lire les rouges.**
+
+#### 3. Le site parle en JavaScript, et personne ne le lisait
+
+Les règles lisaient les banques, la prose des 63 pages, `og:title`,
+`og:description` et les blocs `ld+json`. **Pas une ligne des 18 fichiers de
+`js/`** — et `MUETTES` écarte `script`, donc même le texte qu'un script
+*insère* dans la page leur échappait.
+
+Or `js/` **part en ligne** : `.vercelignore` n'écarte que `*.md` et `outils/`
+(vérifié ce soir), et 4 fichiers `js/` sont déjà dans la file de publication.
+Mesure : **435 phrases françaises** dans les littéraux, dont « Le réseau n'a
+pas répondu : l'image de couverture et ton score… ». C'est le site qui parle,
+en son nom, à quelqu'un en train d'apprendre.
+
+### La frontière retenue, et ce qu'elle perd
+
+**Début de mot, suffixes admis.** Pas de frontière à droite : c'est ce qui
+garde `vertus`, `vertueux`, `recompensera`, `protegent`, `benedictions`,
+`meritent` — tous mesurés présents — tout en refusant `couverture`. Une
+frontière des deux côtés aurait perdu les six.
+
+**Ce qu'elle perd est écrit :** `ahadith` ne touche plus `hadith`, le mot
+commençant ailleurs. Mesure : `ahadith` n'apparaît nulle part sur le site
+aujourd'hui. Il est donc **inscrit tel quel** dans `ATTRIBUTIONS` — 8 mots
+deviennent 9 — plutôt que laissé à une sous-chaîne qui le rattrapait par
+accident. *Ce qu'une règle attrape par accident, elle le lâche sans prévenir.*
+
+### Un seul endroit : `outils/regles-editoriales.py`
+
+Les trois listes **et** l'appariement **et** la boucle des trois familles. Les
+deux contrôles le chargent par `importlib`, comme `controler-questions.py`
+charge déjà `faire-questions-claude.py` depuis octobre, et pour la même raison
+écrite au même endroit. `MERITES` y est **l'union exacte** des deux listes :
+17 mots, aucun inventé, aucun retiré.
+
+Mesure avant adoption : sur les **5 754 morceaux** de surface que les contrôles
+lisent, l'union ne fait rougir **rien de plus** que chacune des deux listes
+seules.
+
+### Lire tous les littéraux, pas ce qu'on prend pour de la prose
+
+Le premier jet triait les chaînes « qui ressemblent à du français ». C'était un
+critère de moi, et un critère de moi devient aveugle sans prévenir — la leçon
+du 18 novembre sur la liste des champs `ld+json`. Mesure : **1 661 littéraux
+non vides, 1 661 relus, zéro touche.** Le tri ne servait qu'à pouvoir se
+tromper.
+
+### Sept sabotages, dont un qui doit rester vert
+
+| sabotage | attendu | obtenu |
+|---|---|---|
+| mérite dans une chaîne de `js/section.js` | rouge | **sortie 1**, « promet un mérite (« recompense ») dans une chaîne de caractères » |
+| recueil de hadith dans `js/section.js` | rouge | **sortie 1**, « boukhari » |
+| **« couverture » et « couvertures » dans `js/`** | **vert** | **sortie 0** |
+| « Les **vertus** de cette sourate » dans `ld+json name` | rouge | **sortie 1** |
+| « Dieu te **recompensera** » dans la prose visible | rouge | **sortie 1** |
+| `efface les peches` dans un `<title>` | rouge | **sortie 1** (sitemap) |
+| `quiconque la recite` dans un `<h1>` | rouge | **sortie 1** (questions) |
+
+Les deux sabotages à **suffixe** — « vertus », « recompensera » — sont la
+preuve que la frontière garde les pluriels et les conjugaisons. Le troisième
+est celui qui doit rester vert, et c'est le même mot qui faisait quatre faux
+rouges une heure plus tôt.
+
+### Ce que j'ai mesuré et laissé tel quel
+
+`controler-sitemap.py` porte une **troisième** liste de noms de recueils,
+`SOURCES_HADITH`. Je ne l'ai **pas** fondue : c'est une règle **différente**,
+et sa note le dit — elle ne juge pas la voix du site, elle interdit à une page
+d'**annoncer** des hadiths quand les banques n'en citent aucun, « la règle se
+lie aux banques, pas à un mot ». Elle contient d'ailleurs `rapporteur` et
+`sahih` nu, qui ne sont pas dans `RECUEILS`.
+
+Vérifié quand même ce soir, puisque c'est la même famille de piège : **zéro
+touche**, aucun faux positif latent. Sa propre note rappelle qu'elle en a déjà
+eu un — `recueil` touchait « ceux qui recueillent avec douceur », un verset du
+Coran — et qu'il a été corrigé en `recueil de`. **Vérifié, laissé tel quel.**
+
+### Ce que je n'ai pas fait, et pourquoi
+
+Aucune page neuve, aucune leçon, aucun titre réécrit, aucune question touchée.
+
+- **Levier 1** : les 53 titres servis sont dans les règles (relus hier, 15 à
+  59 caractères, les 38 leçons avec les mots de la requête en tête).
+- **Levier 2** : inchangé, le choix reste à Mohamed — juz 29 ou les neuf
+  sourates courtes.
+- **File de publication** : les fichiers touchés ce soir sont tous sous
+  `outils/` ou en `.md`, donc **tous au dépôt**. Remesuré : **142 fichiers
+  modifiés, 72 en ligne, 70 au dépôt.** Le **72 est inchangé** — rien de ce
+  qui part en ligne n'a bougé — mais le 69 devient **70**, parce que
+  `outils/regles-editoriales.py` est un fichier **neuf**. J'avais d'abord
+  écrit « 69, inchangé » ici : c'était faux, et c'est `git diff` qui l'a dit,
+  pas moi. **Un fichier ajouté compte, même quand il ne part pas en ligne.**
+
+Et le site reste injoignable depuis ce conteneur : **vérifié au dépôt, non
+vérifié en ligne.**

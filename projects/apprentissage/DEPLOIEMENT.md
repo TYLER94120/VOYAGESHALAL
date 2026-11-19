@@ -363,9 +363,27 @@ Ce qu'un `publier.py` enverrait, compte entre `59e67ae` et la branche :
 | CSS | 2 |
 | sitemap | 1 |
 | **total en ligne** | **72** |
-| restent au depot (`outils/`, `.md`) | 69 |
+| restent au depot (`outils/`, `.md`) | 70 |
 
-Aucun fichier ajoute, aucun supprime : les 72 sont des modifications.
+Les 72 qui partent sont TOUS des modifications : aucun fichier ajoute, aucun
+supprime parmi eux. Le seul fichier AJOUTE depuis `59e67ae` est
+`outils/regles-editoriales.py`, le 19 novembre, et `.vercelignore` ecarte
+`outils/` : il reste au depot. C'est lui qui fait passer la seconde ligne de
+69 a 70.
+
+**Note du 19 novembre.** Les fichiers touches RESTENT TOUS AU DEPOT —
+`outils/regles-editoriales.py` (NEUF), `outils/controler-questions.py`,
+`outils/controler-sitemap.py`, `outils/LISEZMOI.md`, `docs/POUR-LE-CARNET.md`
+et ce fichier-ci. Remesure entre `59e67ae` et l'arbre de travail :
+**142 fichiers modifies, 72 en ligne, 70 au depot** — le 72 est INCHANGE, le
+69 devient 70 a cause du fichier neuf. RIEN DE CE QUI PART EN LIGNE N'A CHANGE
+CE SOIR. Ce qui a change : la regle la plus importante du site existait en
+DEUX exemplaires qui avaient derive (« efface les peches » d'un cote,
+« quiconque la recite » de l'autre), son mot le plus large — « vertu » —
+touchait « COUVERTURE » 35 fois sur ce site, et elle ne lisait pas une ligne
+des 18 fichiers de `js/`, qui PARTENT EN LIGNE et portent 435 phrases
+francaises. Les trois listes et l'appariement vivent maintenant dans un seul
+fichier.
 
 **Note du 18 novembre.** Les fichiers touches RESTENT TOUS AU DEPOT —
 `outils/controler-questions.py`, `outils/LISEZMOI.md`,

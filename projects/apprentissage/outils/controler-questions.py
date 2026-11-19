@@ -92,16 +92,30 @@ DONNEES = RACINE / 'data' / 'questions'
 # disparu sans que la suite le voie. Deux copies d'une regle derivent
 # toujours. Elles sont donc ici, au module, et les deux surfaces lisent
 # LES MEMES TUPLES.
-MERITES = ('bienfait', 'merite', 'vertu', 'recompense', 'protege',
-           'protection', 'guerit', 'guerison', 'exauce', 'benediction',
-           'baraka', 'efface les peches', 'equivaut',
-           'celui qui la recite', 'celui qui le recite')
-RECUEILS = ('boukhari', 'bukhari', 'mouslim', 'sahih muslim', 'abou dawoud',
-            'abu dawud', 'tirmidhi', 'ibn maja', 'nasai', 'ahmad ibn hanbal',
-            'sahih al', 'sunan', 'muwatta')
-ATTRIBUTIONS = ('le prophete a dit', 'le messager a dit',
-                'messager d\'allah a dit', 'rapporte par', 'hadith',
-                'sunna', 'recueil de', 'd\'apres abou')
+#
+# ET AU DEPOT DEPUIS LE 19 NOVEMBRE, PARCE QUE LE « DONC » CI-DESSUS ETAIT
+# TROP COURT D'UN FICHIER. Ce commentaire a ete ecrit le 14 novembre en
+# parlant de DEUX surfaces — les banques et les pages. Il y en avait TROIS :
+# `controler-sitemap.py` portait depuis le 13 octobre sa propre copie de
+# MERITES, pour les titres et les descriptions servis. Mesure du 19 novembre :
+# les deux listes avaient derive dans les deux sens, « efface les peches »
+# d'un cote, « celle qui la recite » et « quiconque la recite » de l'autre.
+# La phrase etait juste, elle n'avait simplement pas ete appliquee jusqu'au
+# bout. Les listes — et l'appariement, qui etait recopie six fois — vivent
+# maintenant dans `outils/regles-editoriales.py`, que les deux fichiers
+# chargent. Lire son en-tete avant d'y toucher.
+import importlib.util as _iur
+_specr = _iur.spec_from_file_location(
+    'regles_edito',
+    pathlib.Path(__file__).resolve().parent / 'regles-editoriales.py')
+REGLES = _iur.module_from_spec(_specr)
+_specr.loader.exec_module(REGLES)
+MERITES = REGLES.MERITES
+RECUEILS = REGLES.RECUEILS
+ATTRIBUTIONS = REGLES.ATTRIBUTIONS
+FAMILLES = REGLES.FAMILLES
+porte = REGLES.porte
+touches = REGLES.touches
 
 SOURCE_CORAN = re.compile(r'Coran, sourate (\d+), verset (\d+)')
 
@@ -1485,7 +1499,7 @@ def main():
                 champs_voix += 1
                 plat = nu(v)
                 for mot in MERITES:
-                    if mot in plat:
+                    if porte(plat, mot):
                         fautes.append(
                             '%s/%s : le site promet « %s » en son nom (%s) — '
                             'aucun hadith source ne le porte ici : « %s »'
@@ -1779,7 +1793,7 @@ def main():
                     # entre guillemets : rien dans le Coran ne le porte.
                     plat = nu(val)
                     for mot in RECUEILS:
-                        if mot in plat:
+                        if porte(plat, mot):
                             motifs_vus += 1
                             fautes.append(
                                 '%s/%s : un recueil de hadith est cite (%s, '
@@ -1791,7 +1805,7 @@ def main():
                     # site : « Dis: » et « Prophete » sont du texte cite.
                     plat_voix = nu(voix_du_site(val))
                     for mot in ATTRIBUTIONS:
-                        if mot in plat_voix:
+                        if porte(plat_voix, mot):
                             motifs_vus += 1
                             fautes.append(
                                 '%s/%s : le site attribue une parole en son '
@@ -2027,19 +2041,14 @@ def main():
                 continue
             morceaux_pages += 1
             plat = nu(propre)
-            for fam, mots in (('promet un merite', MERITES),
-                              ('nomme un recueil de hadith', RECUEILS),
-                              ('attribue une parole', ATTRIBUTIONS)):
-                for mot in mots:
-                    if mot not in plat:
-                        continue
-                    promesses_pages += 1
-                    fautes.append(
-                        '%s : la page %s en son nom (« %s », dans <%s '
-                        'class="%s">) — aucune source citable ne le porte '
-                        'ici : « %s »'
-                        % (page.name, fam, mot, bal, cls,
-                           re.sub(r'\s+', ' ', propre).strip()[:70]))
+            for fam, mot in touches(plat):
+                promesses_pages += 1
+                fautes.append(
+                    '%s : la page %s en son nom (« %s », dans <%s '
+                    'class="%s">) — aucune source citable ne le porte '
+                    'ici : « %s »'
+                    % (page.name, fam, mot, bal, cls,
+                       re.sub(r'\s+', ' ', propre).strip()[:70]))
 
     # ---- CE QUE LES PAGES DISENT A GOOGLE ---------------------------
     #
@@ -2215,20 +2224,64 @@ def main():
                     continue
                 valeurs_ld += 1
                 plat = nu(propre)
-                for fam, mots in (('promet un merite', MERITES),
-                                  ('nomme un recueil de hadith', RECUEILS),
-                                  ('attribue une parole', ATTRIBUTIONS)):
-                    for mot in mots:
-                        if mot not in plat:
-                            continue
-                        promesses_ld += 1
-                        fautes.append(
-                            '%s : le bloc ld+json %s (« %s ») dans son champ '
-                            '`%s` — c\'est ce que la page declare a Google sur '
-                            'elle-meme, et aucune source citable ne le porte '
-                            'ici : « %s »'
-                            % (page.name, fam, mot, champ,
-                               re.sub(r'\s+', ' ', propre).strip()[:70]))
+                for fam, mot in touches(plat):
+                    promesses_ld += 1
+                    fautes.append(
+                        '%s : le bloc ld+json %s (« %s ») dans son champ '
+                        '`%s` — c\'est ce que la page declare a Google sur '
+                        'elle-meme, et aucune source citable ne le porte '
+                        'ici : « %s »'
+                        % (page.name, fam, mot, champ,
+                           re.sub(r'\s+', ' ', propre).strip()[:70]))
+
+    # ---- CE QUE LE SITE DIT EN JAVASCRIPT — 19 NOVEMBRE --------------
+    #
+    # Les trois regles lisaient les banques, la prose des 63 pages, les deux
+    # balises de partage et les blocs ld+json. Elles ne lisaient pas une
+    # ligne des 18 fichiers de `js/`, et `MUETTES` ecarte `script` — donc
+    # meme le texte qu'un script INSERE dans la page leur echappait, puisque
+    # le lecteur ne voit que le HTML servi, pas ce que le navigateur y ajoute.
+    #
+    # Or `js/` PART EN LIGNE : `.vercelignore` n'ecarte que `*.md` et
+    # `outils/`. Et ces fichiers parlent : mesure du 19 novembre, 435 phrases
+    # francaises dans les litteraux de `js/`, dont « Le reseau n'a pas
+    # repondu : l'image de couverture et ton score… ». C'est le site qui
+    # parle, en son nom, a quelqu'un qui est en train d'apprendre.
+    #
+    # ON LIT TOUS LES LITTERAUX, PAS SEULEMENT CE QU'ON PREND POUR DE LA
+    # PROSE. Le premier jet triait les chaines « qui ressemblent a du
+    # francais » : c'etait un critere de moi, et un critere de moi devient
+    # aveugle sans prevenir — la lecon du 18 novembre sur la liste des champs
+    # ld+json. Mesure : 1 661 litteraux non vides, 1 661 relus, ZERO touche.
+    # Le tri ne servait a rien d'autre qu'a pouvoir se tromper.
+    #
+    # CE BLOC N'AURAIT PAS PU ETRE ECRIT AVANT CE SOIR. Avec l'ancien
+    # appariement par sous-chaine, `js/section.js` rendait QUATRE fautes,
+    # toutes fausses, toutes « vertu » dans « couverture » — dont deux dans
+    # un selecteur CSS. Un controle qui crie au loup quatre fois le premier
+    # soir est un controle qu'on desactive le deuxieme.
+    LITTERAUX = re.compile(r"'((?:[^'\\\n]|\\.)*)'"
+                           r'|"((?:[^"\\\n]|\\.)*)"'
+                           r'|`((?:[^`\\]|\\.)*)`', re.S)
+    scripts = sorted((RACINE / 'js').glob('*.js'))
+    litteraux_lus = 0
+    promesses_js = 0
+    for fichier in scripts:
+        for m in LITTERAUX.finditer(fichier.read_text(encoding='utf-8')):
+            val = next(g for g in m.groups() if g is not None)
+            propre = voix_du_site(val)
+            plat = nu(propre)
+            if not plat:
+                continue
+            litteraux_lus += 1
+            for fam, mot in touches(plat):
+                promesses_js += 1
+                fautes.append(
+                    'js/%s : le site %s en son nom (« %s ») dans une chaine '
+                    'de caracteres — ce fichier part en ligne et ce texte '
+                    's\'affiche a quelqu\'un qui apprend : « %s »'
+                    % (fichier.name, fam, mot,
+                       re.sub(r'\s+', ' ', propre).strip()[:70]))
 
     # Les chiffres, pas un verdict. Une ligne « aucune promesse sur les
     # pages » s'afficherait aussi le jour ou il y en a une.
@@ -2245,6 +2298,9 @@ def main():
           'editoriales, %d touche(s) — ce que la page declare a Google est '
           'maintenant lu comme ce qu elle affiche.'
           % (valeurs_ld, promesses_ld))
+    print('  %d litteral(aux) des %d fichiers js/ passes aux memes regles, '
+          '%d touche(s) — ce que le site dit en javascript part en ligne '
+          'comme le reste.' % (litteraux_lus, len(scripts), promesses_js))
 
     if fautes:
         print('\n  %d FAUTE(S) :' % len(fautes))
