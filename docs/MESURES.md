@@ -4399,3 +4399,19 @@ fait / mesuré / pas fait et pourquoi
 - Décision sur la promesse « horaires » d'Orly.
 
 **Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
+
+## 19 novembre — nuit 37 de la routine autonome (jour impair : création)
+
+fait / mesuré / pas fait et pourquoi
+
+**Mesuré.** Rien de nouveau depuis les captures du 18 novembre : `docs/search-console/` n'a pas reçu d'export CSV.
+
+**Fait.** Rien publié.
+
+**Pas fait et pourquoi.** Pas de création ni de traduction : aucun des 31 articles français sans jumeau n'a de requête gagnée identifiée. Une page « où prier aéroport » à 770 impressions pour 4 clics existe, mais son URL exacte reste illisible, donc je ne sais pas si c'est Orly ou CDG. Je n'écris rien sur un titre que je n'ai pas identifié.
+
+**Vérifié servi.** Rien modifié cette nuit.
+
+**Ouvert.** Export CSV de l'onglet Pages (28 jours) dans `docs/search-console/`, pour identifier la page aéroport et décider de son titre.
+
+**Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
