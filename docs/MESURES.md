@@ -4415,3 +4415,19 @@ fait / mesuré / pas fait et pourquoi
 **Ouvert.** Export CSV de l'onglet Pages (28 jours) dans `docs/search-console/`, pour identifier la page aéroport et décider de son titre.
 
 **Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
+
+## 20 novembre — nuit 38 de la routine autonome (jour pair : approfondissement)
+
+fait / mesuré / pas fait et pourquoi
+
+**Mesuré.** Aucune donnée nouvelle : `docs/search-console/` inchangé (6 fichiers), aucun export CSV déposé depuis les captures du 18 novembre.
+
+**Fait.** Rien modifié cette nuit.
+
+**Pas fait et pourquoi.** Pas d'approfondissement : l'écart le plus net (une page aéroport à 770 impressions pour 4 clics) n'a pas d'URL identifiée, donc je ne sais pas quel article améliorer. Je n'ajoute pas de contenu sur une page non identifiée.
+
+**Vérifié servi.** Rien publié.
+
+**Ouvert.** Export CSV de l'onglet Pages (28 jours), pour identifier la page aéroport.
+
+**Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
