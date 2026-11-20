@@ -2695,3 +2695,9 @@ Aucune page neuve, aucune leçon, aucun titre réécrit, aucune question touché
 
 Et le site reste injoignable depuis ce conteneur : **vérifié au dépôt, non
 vérifié en ligne.**
+
+### Le verdict des contrôles, écrit après la mesure
+
+**39 verts : 9 python, 30 navigateur, 0 rouge.** Les 30 tournaient encore à
+l'heure du commit, et son message le dit ainsi. **Sixième nuit de suite** que
+l'ordre est respecté : la mesure, puis le chiffre.
