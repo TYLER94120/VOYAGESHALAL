@@ -24,7 +24,7 @@ lu par personne et entrerait en conflit à la première fusion.
 
 ## À COLLER DANS LE CARNET, À PARTIR D'ICI
 
-# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 19 NOVEMBRE 2026
+# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 20 NOVEMBRE 2026
 
 > **Comment lire cette note.** Son corps a été écrit le 14 octobre. Chaque
 > ajout porte sa date, et **une mesure datée ne se rafraîchit pas : elle se
@@ -2538,3 +2538,160 @@ vérifié en ligne.**
 **39 verts : 9 python, 30 navigateur, 0 rouge.** Les 30 tournaient encore à
 l'heure du commit, et son message le dit ainsi. Cinquième nuit de suite que
 l'ordre est respecté : la mesure, puis le chiffre.
+
+---
+
+## LE 20 NOVEMBRE — LE SITE PARLE À QUI NE LE VOIT PAS, ET PERSONNE NE RELISAIT CE QU'IL DIT
+
+### Les deux leviers, remesurés d'abord
+
+`docs/MESURES.md` relu sur `origin/main` : dernière modification le
+**17 octobre**, relevé islampasapas toujours celui du **21 août**. **Sixième
+nuit sans requêtes.** Le protocole du carnet dit « une fois par mois, le
+premier du mois » : il manque septembre, octobre et novembre. `main` n'a pas
+bougé non plus (`f1623ba`).
+
+**Levier 1, vérifié sur le site servi en local, pas dans le code source** —
+les quatre pages que Google voit :
+
+| page servie | titre | car. |
+|---|---|---|
+| `/` | Islam pas à pas — apprendre l'islam par des QCM sourcés | 55 |
+| `/lecon-sourate-al-ikhlas.html` | Sourate Al-Ikhlas : traduction, texte arabe, 4 versets | 54 |
+| `/sourates.html` | Les 114 sourates du Coran : noms et nombre de versets | 53 |
+| `/lecon-sourate-al-falaq.html` | Sourate Al-Falaq : traduction, texte arabe, 5 versets | 53 |
+
+Les quatre sont sous 60 caractères et portent leurs mots en tête. **Rien à
+corriger**, et sans table Requêtes il n'y a aucun mot exact à y mettre.
+
+### Levier 2 : CE N'EST PAS LA DONNÉE QUI MANQUE, MOHAMED — C'EST TA DÉCISION
+
+J'ai relu `outils/faire-lecon-sourate.py` avant de rien proposer, et il faut
+que ce soit dit clairement parce que la liste des choses en attente le disait
+mal :
+
+- le **texte arabe des 114 sourates** est au dépôt
+  (`outils/coran/ara-quransimple.json`), et il est confronté à chaque
+  exécution aux sept versets d'Al-Fatiha **relus à la main** avant tout
+  script — si le témoin tombe, rien ne s'écrit ;
+- la **traduction de Muhammad Hamidullah** est au dépôt aussi, verset par
+  verset, citée à son nom ;
+- pour les onze sourates du **juz 29**, le texte et la traduction sont
+  présents **sans un seul trou**.
+
+**Techniquement, rien ne manque.** Ce qui manque est une décision d'éditeur,
+et le fichier l'écrit lui-même : « *Ouvrir un juz, sur un site qui enseigne le
+Coran, est une décision d'éditeur, et l'éditeur est Mohamed. […] Tant qu'il
+n'a pas tranché, LOT ne bouge pas.* » Je ne l'ai pas touché.
+
+**Et je corrige mes propres comptes rendus**, qui listaient « un jeu de
+données du juz, sourcé » parmi les choses en attente de toi. C'était inexact :
+les données sont au dépôt depuis le début, vérifiées contre un témoin relu à
+la main. Il ne reste qu'**une** chose en attente sur ce levier, et c'est ta
+décision — pas un fichier à trouver.
+
+### Ce que j'ai trouvé en cherchant la surface suivante
+
+Les trois règles éditoriales lisent les banques, la prose des 63 pages,
+`og:title`, `og:description`, les blocs `ld+json` et, depuis hier, les
+littéraux de `js/`. **Toutes ces surfaces ont une chose en commun : un être
+humain peut les voir.** Un titre s'affiche dans Google, un `og:` dans une
+conversation, un `ld+json` dans un résultat enrichi, une chaîne de `js/` sur
+l'écran. Une faute y est rattrapable à l'œil.
+
+Restait celle qui ne s'affiche **nulle part** : ce que la page dit à qui
+l'**écoute**.
+
+    aria-label sur les 63 pages        117, pour 10 valeurs distinctes
+    <title> / <desc> de svg              0 aujourd'hui
+    alt, title, placeholder              0 aujourd'hui
+
+Un `aria-label` qui promettrait un mérite serait **dit** à quelqu'un qui
+apprend et n'apparaîtrait sur **aucun écran**. Aucune relecture à l'œil ne
+peut l'attraper — par construction.
+
+### UN NOM QUI EXISTE N'EST PAS UN NOM QU'ON A LU
+
+`aria-label` était déjà touché par un contrôle : `controler-lecture-ecran.mjs`,
+point 4, « aucun lien ni bouton sans nom accessible ». Il demande si le nom
+**existe**. Il ne lit pas ce que le nom **dit**.
+
+C'est mot pour mot la distinction du 18 novembre — « ne pas juger la forme
+d'un champ n'est pas ne pas lire ce qu'il dit » — tombée une case plus loin.
+Et c'est la **deuxième fois** que `MUETTES` est en cause pour le même motif
+trop largement appliqué : « *ce n'est pas de la prose lue par quelqu'un* » est
+vrai du dessin d'un `svg`, **faux de son `<title>`**, exactement comme c'était
+vrai d'un `script` et faux d'un `application/ld+json`. Le dessin reste muet ;
+son titre en sort nommément.
+
+### La liste de ce qu'on écarte a été bâtie par INVENTAIRE, pas de mémoire
+
+Une liste de ce qu'on lit serait aveugle le jour où un générateur ajoute un
+`aria-description` — la faute du 17 novembre, où le lecteur regardait `name=`
+et les balises de partage s'écrivaient `property=`. J'ai donc listé les
+**49 noms d'attributs réellement présents** sur le site, un exemple de valeur
+sous les yeux pour chacun, et écarté les machines : adresses, identifiants,
+géométrie des svg, codes de langue, états d'ARIA, bornes de curseur, `data-*`.
+
+Cette liste **ne protège pas la règle** : un `d="M12 1.6l2.7…"` ne peut porter
+aucun des 39 mots. Elle sert à ce que le **chiffre veuille dire quelque
+chose** — relire les 463 chemins de svg donnerait un total de 17 135 qui ne
+mesurerait plus rien.
+
+**744 valeurs d'attribut relues, dont 117 que personne ne peut voir. Zéro
+touche.**
+
+### La moitié faible, et elle est écrite comme telle
+
+`data/` contient quatre fichiers **hors des banques**, et `.vercelignore`
+n'écarte que `*.md` et `outils/` : ils partent en ligne. Personne ne les
+relisait. Mesure : 2 935 valeurs de texte, dont **2 616 identifiants** de
+questions et **228 noms de sourates** ; restent 91, et la plupart sont déjà
+lues ailleurs (le `nom` et le `quoi` des 12 sections repartent dans les titres
+et les pages de section, les 35 libellés de thème viennent du champ `theme`
+des banques).
+
+Ce qui n'est lu nulle part ailleurs est petit et se nomme : **`images.json`**,
+qui ne contient **aucune photo** à ce jour — seulement la description de la
+forme d'une entrée, dont le champ `alt`. Le jour où une entrée sera complète,
+ce `alt` s'écrira dans une page, et ce sera encore un texte dit à qui ne voit
+pas l'image.
+
+**293 valeurs relues, zéro touche.** Ce que ça apporte n'est pas une faute
+trouvée : c'est qu'après ce soir, **plus aucun fichier qui part en ligne
+n'échappe aux trois règles**.
+
+### Sept sabotages, dont deux qui doivent rester verts
+
+    promesse de mérite dans un aria-label        sortie 1
+    « rapporté par Boukhari » dans un aria-label sortie 1
+    promesse dans un <title> de svg              sortie 1  (la carve-out)
+    promesse dans le « quoi » d'une section      sortie 1
+    promesse dans le « alt » de images.json      sortie 1
+    « couverture » et « couvertures » en aria    SORTIE 0 — DOIT RESTER VERT
+    « les-merites-… » dans un href               SORTIE 0 — DOIT RESTER VERT
+
+Le sixième est le mot qui faisait quatre faux rouges avant-hier : la surface
+neuve hérite bien de la frontière de mot du 19 novembre au lieu de rouvrir le
+piège. Le septième dit la limite assumée : **une adresse n'est pas une
+phrase** — et la prose de la page, elle, est lue.
+
+**Et le cinquième ne s'est pas posé du premier coup** : j'avais écrit le
+chemin `_lisezmoi.alt` alors que le champ est sous `_lisezmoi.forme.alt`. Le
+script a dit « sabotage raté » et s'est arrêté au lieu de laisser croire à un
+vert. Chemin corrigé, sabotage reposé, sortie 1.
+
+### Ce que je n'ai pas fait, et pourquoi
+
+Aucune page neuve, aucune leçon, aucun titre réécrit, aucune question touchée.
+
+- **Levier 1** : les quatre titres servis sont dans les règles, mesurés ce
+  soir sur le site servi.
+- **Levier 2** : `LOT` ne bouge pas — c'est la décision de Mohamed, et la
+  donnée est prête quand il tranchera.
+- **File de publication** : le seul fichier de code touché ce soir est sous
+  `outils/`. Remesuré : **142 modifiés, 72 en ligne, 70 au dépôt** — les
+  **deux** chiffres inchangés, aucun fichier ajouté cette nuit.
+
+Et le site reste injoignable depuis ce conteneur : **vérifié au dépôt, non
+vérifié en ligne.**

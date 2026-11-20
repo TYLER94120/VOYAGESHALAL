@@ -371,6 +371,22 @@ supprime parmi eux. Le seul fichier AJOUTE depuis `59e67ae` est
 `outils/` : il reste au depot. C'est lui qui fait passer la seconde ligne de
 69 a 70.
 
+**Note du 20 novembre.** Les fichiers touches RESTENT TOUS AU DEPOT —
+`outils/controler-questions.py`, `outils/LISEZMOI.md`,
+`docs/POUR-LE-CARNET.md` et ce fichier-ci, les quatre deja dans les 70.
+Remesure entre `59e67ae` et l'arbre de travail : **142 fichiers modifies,
+72 en ligne, 70 au depot. LES DEUX CHIFFRES INCHANGES**, aucun fichier ajoute
+cette nuit. Ce qui a change : la regle editoriale ne lisait rien de ce que le
+site dit a qui ne le VOIT pas. 117 `aria-label` sur les 63 pages, pour 10
+valeurs distinctes, relus par personne — et `controler-lecture-ecran.mjs`
+demandait seulement si un nom accessible EXISTE, pas ce qu'il dit. Le
+`<title>` d'un svg sort du silence nommement, le dessin y reste : deuxieme
+fois que le motif de `MUETTES` — « ce n'est pas de la prose lue par
+quelqu'un » — est applique trop largement. Les quatre `data/*.json` hors des
+banques, qui partent en ligne eux aussi, sont relus de meme. 744 valeurs
+d'attribut et 293 valeurs de donnees passees aux trois regles, ZERO touche,
+sept sabotages conformes dont deux qui doivent rester verts.
+
 **Note du 19 novembre.** Les fichiers touches RESTENT TOUS AU DEPOT —
 `outils/regles-editoriales.py` (NEUF), `outils/controler-questions.py`,
 `outils/controler-sitemap.py`, `outils/LISEZMOI.md`, `docs/POUR-LE-CARNET.md`

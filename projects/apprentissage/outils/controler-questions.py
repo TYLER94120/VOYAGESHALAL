@@ -159,16 +159,48 @@ class VoixDeLaPage(html.parser.HTMLParser):
     VIDES = ('area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input',
              'link', 'meta', 'param', 'source', 'track', 'wbr')
 
+    # Les attributs qui ne sont PAS adresses a un etre humain. Tout le reste
+    # est collecte dans `self.nommes` et relu par la regle editoriale : voir
+    # le bloc « CE QUE LE SITE DIT A QUI NE LE VOIT PAS », 20 novembre, qui
+    # dit pourquoi c'est une liste de ce qu'on ECARTE et comment elle a ete
+    # batie — par inventaire des 49 noms d'attributs du site, pas de memoire.
+    ATTR_MACHINE = (
+        # identite, style, structure
+        'class', 'id', 'style', 'type', 'charset', 'role', 'hidden',
+        # adresses, references, code
+        'href', 'src', 'rel', 'crossorigin', 'media', 'for', 'onload',
+        # langue et sens d'ecriture : des codes, pas des phrases
+        'lang', 'dir',
+        # la geometrie des dessins
+        'd', 'width', 'height', 'viewbox', 'fill', 'stroke', 'stroke-width',
+        'stroke-linecap', 'stroke-linejoin',
+        # la CLEF d'une balise meta, jamais son `content`
+        'name', 'property',
+        # les etats d'ARIA : des mots-clefs enumeres par la norme
+        'aria-hidden', 'aria-checked', 'aria-current', 'aria-pressed',
+        'aria-live',
+        # les bornes d'un curseur
+        'min', 'max', 'step')
+
     def __init__(self):
         super().__init__(convert_charrefs=True)
         self.morceaux = []        # (balise, classe, texte)
+        self.nommes = []          # (balise, attribut, texte dit a qui ecoute)
         self.pile = []
         self.muet = 0
         self.cite = 0
 
+    def _attributs_qui_parlent(self, tag, d):
+        for nom, val in d.items():
+            if nom in self.ATTR_MACHINE or nom.startswith('data-'):
+                continue
+            if val and val.strip():
+                self.nommes.append((tag, nom, val))
+
     def handle_starttag(self, tag, attrs):
         d = dict(attrs)
         cls = d.get('class') or ''
+        self._attributs_qui_parlent(tag, d)
         if tag in self.VIDES:
             if tag == 'meta' and d.get('name') == 'description':
                 self.morceaux.append(('meta description', '',
@@ -198,7 +230,19 @@ class VoixDeLaPage(html.parser.HTMLParser):
                 break
 
     def handle_data(self, data):
-        if self.muet or self.cite or not data.strip():
+        if not data.strip():
+            return
+        # `MUETTES` ecarte `svg` en entier. Vrai du dessin ; FAUX de son
+        # `<title>` et de son `<desc>`, qui n'existent que pour etre DITS a
+        # qui ne voit pas la page — `controler-lecture-ecran.mjs` accepte
+        # d'ailleurs un `<title>` de svg comme nom accessible. On les sort
+        # donc du silence nommement, sans demuter le dessin : meme geste que
+        # le 18 novembre pour `application/ld+json` dans `script`.
+        if (self.muet and self.pile and self.pile[-1][0] in ('title', 'desc')
+                and any(t == 'svg' for t, _ in self.pile)):
+            self.nommes.append(('svg', '<%s>' % self.pile[-1][0], data))
+            return
+        if self.muet or self.cite:
             return
         bal, cls = self.pile[-1] if self.pile else ('?', '')
         self.morceaux.append((bal, cls, data))
@@ -2032,9 +2076,15 @@ def main():
     pages = sorted(RACINE.glob('*.html'))
     morceaux_pages = 0
     promesses_pages = 0
+    noms_dits = []
     for page in pages:
         v = VoixDeLaPage()
         v.feed(page.read_text(encoding='utf-8'))
+        # Ce que la page dit a qui ne la VOIT pas — collecte ici pour ne pas
+        # analyser les 63 pages une seconde fois, relu par le bloc du
+        # 20 novembre, plus bas, ou se trouve la raison.
+        noms_dits.extend((page.name, bal, attr, txt)
+                         for bal, attr, txt in v.nommes)
         for bal, cls, txt in v.morceaux:
             propre = voix_du_site(txt)
             if not propre.strip():
@@ -2283,6 +2333,128 @@ def main():
                     % (fichier.name, fam, mot,
                        re.sub(r'\s+', ' ', propre).strip()[:70]))
 
+    # ---- CE QUE LE SITE DIT A QUI NE LE VOIT PAS — 20 NOVEMBRE --------
+    #
+    # Les trois regles lisent maintenant les banques, la prose des 63 pages,
+    # les deux balises de partage, les blocs ld+json et les litteraux de
+    # `js/`. Toutes ces surfaces ont une chose en commun : UN ETRE HUMAIN
+    # PEUT LES VOIR. Un titre s'affiche dans Google, un og: dans une
+    # conversation, un ld+json dans un resultat enrichi, une chaine de `js/`
+    # sur l'ecran. Une faute y est rattrapable a l'oeil.
+    #
+    # Restait la surface qui ne s'affiche NULLE PART : ce que la page dit a
+    # qui l'ECOUTE. Mesure du 20 novembre sur les 63 pages : 117 `aria-label`
+    # pour 10 valeurs distinctes — « Navigation principale », « Aller a un
+    # verset », « Les 114 sourates », « Ma progression et mes reglages »… —
+    # et aucun `alt`, `title`, `placeholder` ni `<title>` de svg aujourd'hui.
+    # Un `aria-label` qui promettrait un merite serait DIT a quelqu'un qui
+    # apprend et n'apparaitrait sur aucun ecran : aucune relecture a l'oeil ne
+    # peut l'attraper, par construction.
+    #
+    # UN NOM QUI EXISTE N'EST PAS UN NOM QU'ON A LU. `aria-label` etait deja
+    # touche par un controle — `controler-lecture-ecran.mjs`, point 4,
+    # « aucun lien ni bouton sans nom accessible ». Il demande si le nom
+    # EXISTE ; il ne lit pas ce que le nom DIT. C'est mot pour mot la
+    # distinction du 18 novembre — « ne pas juger la forme d'un champ n'est
+    # pas ne pas lire ce qu'il dit » — tombee une case plus loin. Et c'est la
+    # deuxieme fois que `MUETTES` est en cause pour le meme motif mal
+    # generalise : « ce n'est pas de la prose lue par quelqu'un » est vrai du
+    # dessin d'un svg, faux de son `<title>`, comme il etait vrai d'un script
+    # et faux d'un `application/ld+json`.
+    #
+    # POURQUOI UNE LISTE DE CE QU'ON ECARTE, ET BATIE PAR INVENTAIRE. Une
+    # liste de ce qu'on lit serait aveugle le jour ou un generateur ajoute un
+    # `aria-description` ou un `placeholder` — exactement la faute du
+    # 17 novembre, ou le lecteur regardait `name=` et les balises de partage
+    # s'ecrivaient `property=`. `ATTR_MACHINE` a donc ete batie sur
+    # l'inventaire des 49 noms d'attributs REELLEMENT presents sur le site,
+    # un exemple de valeur sous les yeux pour chacun, et non de memoire.
+    #
+    # Elle n'est pas la pour proteger la regle — un `d="M12 1.6l2.7…"` ou une
+    # adresse ne peuvent porter aucun des 39 mots des trois familles. Elle est
+    # la pour que le CHIFFRE veuille dire quelque chose : relire les 463
+    # chemins de svg ferait un total de 17 135 qui ne mesurerait plus rien.
+    #
+    # Le `content` d'une meta y reste lu, donc la meta description est relue
+    # deux fois — une fois par le lecteur de la voix, une fois ici. C'est le
+    # meme choix qu'au-dessus pour `description` dans le ld+json, et pour la
+    # meme raison : le jour ou l'egalite des copies serait assouplie, le texte
+    # resterait lu. Un `twitter:description` ajoute demain serait lu le jour
+    # de son ajout, sans que personne y pense.
+    noms_lus = 0
+    # Parmi ces valeurs, celles dont le SEUL destinataire est un lecteur
+    # d'ecran. Ce n'est pas une liste blanche : c'est un compte, tenu a part
+    # pour que la ligne de resume ne dise pas d'une meta description qu'elle
+    # est invisible. Un `alt` ou un `title` d'attribut n'y sont pas — ils
+    # s'affichent aussi, dans certains cas.
+    dits_seulement = 0
+    promesses_noms = 0
+    for nom_page, bal, attr, txt in noms_dits:
+        propre = voix_du_site(txt)
+        plat = nu(propre)
+        if not plat:
+            continue
+        noms_lus += 1
+        if attr.startswith('aria-') or attr in ('<title>', '<desc>'):
+            dits_seulement += 1
+        for fam, mot in touches(plat):
+            promesses_noms += 1
+            fautes.append(
+                '%s : le site %s en son nom (« %s ») dans `%s` sur <%s> — ce '
+                'texte ne s\'affiche sur AUCUN ecran, il est DIT a qui '
+                'ecoute la page : « %s »'
+                % (nom_page, fam, mot, attr, bal,
+                   re.sub(r'\s+', ' ', propre).strip()[:70]))
+
+    # ---- LES DONNEES QUI PARTENT EN LIGNE HORS DES BANQUES ------------
+    #
+    # Tout ce qui precede lit `data/questions/*.json`. Or `data/` contient
+    # QUATRE autres fichiers, et `.vercelignore` n'ecarte que `*.md` et
+    # `outils/` : ils partent en ligne et le navigateur les lit. Personne ne
+    # les relisait.
+    #
+    # Mesure du 20 novembre : 2 935 valeurs de texte, dont 2 616 identifiants
+    # de questions et 228 noms de sourates. Restent 91 valeurs, et la plupart
+    # sont deja lues AILLEURS — le `nom` et le `quoi` des 12 sections
+    # repartent dans les titres et les pages de section, les 35 libelles de
+    # theme viennent du champ `theme` des banques. Ce qui n'est lu nulle part
+    # ailleurs est petit et se nomme : `images.json`. Il ne contient AUCUNE
+    # photo a ce jour — seulement la description de la forme d'une entree,
+    # dont le champ `alt`. Le jour ou une entree sera complete, ce `alt`
+    # s'ecrira dans une page, et ce sera encore un texte dit a qui ne voit
+    # pas l'image.
+    #
+    # C'est donc la moitie faible de ce bloc, et elle est ecrite comme telle.
+    # Ce qu'elle apporte n'est pas une faute trouvee : c'est qu'apres ce soir
+    # plus AUCUN fichier qui part en ligne n'echappe aux trois regles.
+    DONNEES_MACHINE = ('ids', 'slug', 'icone', 'fichier', 'poids')
+    donnees = sorted((RACINE / 'data').glob('*.json'))
+    valeurs_donnees = 0
+    promesses_donnees = 0
+    for fichier in donnees:
+        try:
+            brut = json.loads(fichier.read_text(encoding='utf-8'))
+        except ValueError as e:
+            fautes.append('data/%s n\'est pas du JSON valide (%s) — ce '
+                          'fichier part en ligne' % (fichier.name, e))
+            continue
+        for champ, val in textes_du_bloc(brut):
+            if champ.split('.')[-1].replace('[]', '') in DONNEES_MACHINE:
+                continue
+            propre = voix_du_site(val)
+            plat = nu(propre)
+            if not plat:
+                continue
+            valeurs_donnees += 1
+            for fam, mot in touches(plat):
+                promesses_donnees += 1
+                fautes.append(
+                    'data/%s : le site %s en son nom (« %s ») dans son champ '
+                    '`%s` — ce fichier part en ligne et le navigateur '
+                    'l\'affiche : « %s »'
+                    % (fichier.name, fam, mot, champ,
+                       re.sub(r'\s+', ' ', propre).strip()[:70]))
+
     # Les chiffres, pas un verdict. Une ligne « aucune promesse sur les
     # pages » s'afficherait aussi le jour ou il y en a une.
     print('  %d pages relues, %d morceaux de la voix du site, %d promesse(s) '
@@ -2301,6 +2473,13 @@ def main():
     print('  %d litteral(aux) des %d fichiers js/ passes aux memes regles, '
           '%d touche(s) — ce que le site dit en javascript part en ligne '
           'comme le reste.' % (litteraux_lus, len(scripts), promesses_js))
+    print('  %d valeur(s) d attribut des 63 pages passees aux memes regles, '
+          'dont %d que personne ne peut voir — un nom accessible qui existe '
+          'n est pas un nom qu on a lu ; %d touche(s).'
+          % (noms_lus, dits_seulement, promesses_noms))
+    print('  %d valeur(s) des %d fichiers data/ hors des banques, %d '
+          'touche(s) — plus aucun fichier qui part en ligne n y echappe.'
+          % (valeurs_donnees, len(donnees), promesses_donnees))
 
     if fautes:
         print('\n  %d FAUTE(S) :' % len(fautes))

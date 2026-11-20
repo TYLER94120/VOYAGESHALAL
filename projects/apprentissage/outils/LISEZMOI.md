@@ -823,6 +823,48 @@ Vérifiée ce soir : zéro touche, aucun faux positif latent.
 *Une règle partagée à moitié — les mots oui, l'appariement non — n'est pas
 partagée. C'est deux règles qui se ressemblent.*
 
+### Un nom accessible qui existe n'est pas un nom qu'on a lu — 20 novembre
+
+Toutes les surfaces que la règle éditoriale lisait au 19 novembre ont une
+propriété commune : **un être humain peut les voir.** Le titre dans Google,
+l'`og:` dans une conversation, le `ld+json` dans un résultat enrichi, la
+chaîne de `js/` sur l'écran. Une faute y est rattrapable à l'œil.
+
+Restait la surface qui ne s'affiche nulle part : **ce que la page dit à qui
+l'écoute.** 117 `aria-label` sur les 63 pages, pour 10 valeurs distinctes ;
+aucun `alt`, `title`, `placeholder` ni `<title>` de svg aujourd'hui. Un
+`aria-label` qui promettrait un mérite serait **dit** à quelqu'un qui apprend
+et n'apparaîtrait sur aucun écran.
+
+Quatre choses à ne pas défaire :
+
+1. **`aria-label` était déjà touché par un contrôle, et ça ne suffisait pas.**
+   `controler-lecture-ecran.mjs`, point 4, demande si le nom **existe** ; il
+   ne lit pas ce qu'il **dit**. C'est la distinction du 18 novembre une case
+   plus loin.
+2. **Le `<title>` d'un svg sort du silence nommément, et le dessin y reste.**
+   `MUETTES` écarte `svg` au motif que « ce n'est pas de la prose lue par
+   quelqu'un » : vrai du dessin, faux de son titre, qui n'existe que pour être
+   dit. **Deuxième fois** que ce motif est trop largement appliqué — la
+   première était `script` et `application/ld+json`.
+3. **`ATTR_MACHINE` est une liste de ce qu'on ÉCARTE, bâtie par inventaire.**
+   Les 49 noms d'attributs réellement présents sur le site ont été listés, un
+   exemple de valeur sous les yeux, avant d'écarter les machines. Une liste de
+   ce qu'on lit serait muette le jour où un générateur ajoute un
+   `aria-description`.
+4. **Elle ne protège pas la règle, elle protège le CHIFFRE.** Un
+   `d="M12 1.6l2.7…"` ne peut porter aucun des 39 mots : relire la géométrie
+   serait inoffensif, mais « 17 135 valeurs relues » ne mesurerait plus rien.
+   **744 relues, dont 117 que personne ne peut voir, zéro touche.**
+
+**Et les quatre `data/*.json` hors des banques** partent en ligne eux aussi.
+293 valeurs relues, zéro touche. La plupart sont déjà lues ailleurs ; ce qui
+ne l'est nulle part est `images.json`, qui ne contient aucune photo à ce jour
+— seulement la forme d'une entrée, dont le champ `alt`.
+
+*Une surface qu'aucun œil ne peut relire est celle où un contrôle vaut le
+plus, pas le moins.*
+
 ### Ce que cette loi fait au levier 2
 
 Le levier 2 demande de multiplier les leçons de sourate, et le carnet en fait
