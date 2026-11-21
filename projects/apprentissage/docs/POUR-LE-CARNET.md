@@ -24,7 +24,7 @@ lu par personne et entrerait en conflit à la première fusion.
 
 ## À COLLER DANS LE CARNET, À PARTIR D'ICI
 
-# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 20 NOVEMBRE 2026
+# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 21 NOVEMBRE 2026
 
 > **Comment lire cette note.** Son corps a été écrit le 14 octobre. Chaque
 > ajout porte sa date, et **une mesure datée ne se rafraîchit pas : elle se
@@ -2701,3 +2701,130 @@ vérifié en ligne.**
 **39 verts : 9 python, 30 navigateur, 0 rouge.** Les 30 tournaient encore à
 l'heure du commit, et son message le dit ainsi. **Sixième nuit de suite** que
 l'ordre est respecté : la mesure, puis le chiffre.
+
+---
+
+## LE 21 NOVEMBRE — ON VÉRIFIAIT LA COPIE SUR LE BROUILLON
+
+### Les deux leviers, remesurés d'abord
+
+`docs/MESURES.md` relu sur `origin/main` : dernière modification le
+**17 octobre**, relevé toujours celui du **21 août**. **Septième nuit sans
+requêtes**, et il manque septembre, octobre et novembre au protocole mensuel.
+`main` n'a pas bougé (`f1623ba`).
+
+Levier 1 : les quatre titres servis sont ceux mesurés hier, inchangés et dans
+les règles. Levier 2 : `LOT` ne bouge pas, c'est ta décision.
+
+### Ce que j'ai cherché, et ce que j'ai trouvé à la place
+
+Je suis allé voir si les trois recueils de hadiths du dépôt pouvaient enfin
+servir — 20 426 hadiths en français qui y dorment. **Non, et c'était déjà
+mesuré** : `DEPLOIEMENT.md` l'a écrit le 21 octobre. Aucun champ ne nomme un
+traducteur, et leurs titres de chapitres sont mot pour mot ceux du fichier
+anglais : c'est une traduction de traduction. **Rien à refaire, rien à
+corriger.** La règle du site tient : une source qu'on ne peut pas citer
+exactement ne se cite pas.
+
+Mais en relisant `outils/coran/`, j'ai vu autre chose.
+
+### `controler-lecons.py` ne faisait confiance à personne — sauf à ses sources
+
+Ce contrôle est le plus sérieux du dépôt sur le texte coranique : il ouvre les
+38 pages publiées et compare **571 versets** caractère pour caractère au jeu de
+données, la traduction mot pour mot, les numéros, les comptes.
+
+**Mais il ne vérifiait jamais le jeu de données lui-même.** Le seul témoin non
+circulaire était Al-Fatiha : **sept versets relus à la main. Sept sur 571.**
+
+Deux fautes graves pouvaient donc passer sans qu'aucun contrôle bronche, et
+**aucune des deux ne se voit à l'œil** :
+
+1. **Un sens sous le mauvais verset.** Une leçon apparie l'arabe et la
+   traduction par la clef (sourate, verset). Si l'un des deux fichiers
+   numérotait une sourate autrement que l'autre, la page afficherait le sens
+   d'un verset sous le texte d'un autre — et **les deux moitiés seraient
+   « conformes » à leur propre fichier**. C'est exactement ce que ce site
+   s'interdit : attribuer un sens à la mauvaise parole. Et ce n'est pas
+   théorique : il suffit de remplacer une traduction.
+2. **La basmala.** Le générateur la retire du verset 1 de toutes les sourates
+   sauf la première. S'y tromper donne un « verset 1 » **faux sur 112
+   sourates**. Cette décision reposait sur un **raisonnement écrit dans un
+   commentaire**.
+
+### UN SECOND TÉMOIN DORMAIT DANS LE DÉPÔT
+
+`outils/coran/morphologie.txt` — 6,3 Mo — vient d'une autre provenance et
+porte une référence `sourate:verset:mot:segment` sur chacune de ses lignes.
+Il servait au lexique depuis des mois. **Personne ne s'en était servi comme
+témoin.**
+
+Ce qu'il dit, mesuré ce soir :
+
+| | sourates | versets |
+|---|---|---|
+| `ara-quransimple.json` | 114 | 6 236 |
+| `fra-muhammadhamidul.json` | 114 | 6 236 |
+| `morphologie.txt` | 114 | 6 236 |
+
+**Les trois portent exactement les mêmes versets.** Aucune clef en double,
+aucun trou, chaque sourate numérotée de 1 à n. Et sur la basmala :
+
+- le verset 1 commence par elle dans **113 sourates sur 114** — la seule
+  exception est la **sourate 9**, exactement ce que le dépôt affirme ;
+- le témoin compte le verset 1 comme le texte publié pour **exactement deux
+  sourates : la 1 et la 9** — la première parce que la basmala **est** son
+  verset 1, la neuvième parce qu'elle n'en a pas.
+
+**La décision la plus délicate de la chaîne cesse d'être un raisonnement : elle
+est mesurée, par une source qui ne descend pas de l'autre.**
+
+### Ce que j'ai mesuré puis ÉCARTÉ, pour que personne ne le retente
+
+Le **compte de mots par verset**. C'était le critère évident, et il est faux :
+
+    brut                          2 946 versets sur 6 236 en désaccord
+    marques de pause filtrées       465 encore
+
+La cause est **mesurée, pas supposée** : la morphologie écrit le vocatif en
+**un** mot (`يَٰٓأَيُّهَا`) là où le texte publié en écrit deux (`يَا` `أَيُّهَا`).
+C'est aussi ce qui explique les onze sourates où l'écart du verset 1 vaut 5 et
+non 4. **Ce témoin vaut pour la structure, pas pour l'orthographe** — le dépôt
+avait déjà mesuré que les deux textes ne notent pas l'alef de la même façon.
+
+### CE QUI RESTE NON VÉRIFIÉ, ET LE RESTERA
+
+**Que ces comptes soient les BONS.** Deux fichiers qui s'accordent valent mieux
+qu'un seul ; ce n'est pas la même chose qu'une vérification contre le monde.
+La seule ancre hors du dépôt reste Al-Fatiha, sept versets relus à la main.
+Le contrôle **l'imprime à chaque exécution** au lieu de laisser croire que
+tout est vérifié. Vérifié / écarté / **non vérifié** : le troisième est une
+information, pas un échec.
+
+### Sept sabotages dans les SOURCES, dont un qui doit rester vert
+
+    un verset retiré de la traduction            sortie 1
+    la sourate 112 décalée de +1                 sortie 1
+    un trou dans la numérotation de l'arabe      sortie 1
+    un verset effacé du témoin morphologique     sortie 1
+    une basmala collée à la sourate 9            sortie 1
+    la basmala retirée de la sourate 78          sortie 1
+    une marque de pause ajoutée (sourate 50)     SORTIE 0 — DOIT RESTER VERT
+
+**Le dernier a d'abord échoué, et pour une raison qui mérite d'être écrite.**
+Je l'avais posé sur la sourate 78 : rouge. Ce n'était pas la règle de ce soir
+qui criait, c'était la comparaison caractère pour caractère entre la page
+publiée et le jeu de données — un **vrai** rouge, qui ne disait rien de la
+nouvelle règle. Reposé sur la sourate **50**, qui n'a pas de leçon : vert.
+Au passage, ça dit une bonne propriété du dépôt : **le texte des 38 sourates
+publiées est épinglé deux fois.**
+
+### Ce que je n'ai pas fait, et pourquoi
+
+Aucune page neuve, aucune leçon, aucun titre réécrit, aucune question touchée.
+Rien de ce qui part en ligne n'a changé : le seul fichier de code touché est
+sous `outils/`. Remesuré : **142 modifiés, 72 en ligne, 70 au dépôt** — les
+deux chiffres inchangés.
+
+Et le site reste injoignable depuis ce conteneur : **vérifié au dépôt, non
+vérifié en ligne.**

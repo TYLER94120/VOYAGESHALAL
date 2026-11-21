@@ -15,8 +15,19 @@ et chaque reference, et compare le tout au jeu de donnees. Un seul ecart, et
 le lot entier est refuse : sur du texte coranique, une faute n'est jamais
 isolee, elle est le signe qu'on s'est relu trop vite.
 
+ET DEPUIS LE 21 NOVEMBRE, IL NE CROIT PLUS LES SOURCES NON PLUS
+---------------------------------------------------------------
+Confronter une page a un jeu de donnees qu'on n'a confronte a rien, c'est
+relire la copie sur le brouillon. Les trois fichiers de `outils/coran/` sont
+donc confrontes ENTRE EUX avant que la moindre page soit ouverte : voir
+`confronter_les_sources`, qui dit ce qu'elle couvre, ce qui a ete mesure puis
+ECARTE, et ce qui reste NON VERIFIE.
+
 CE QU'IL VERIFIE
 ----------------
+ 0. que les sources s'accordent : memes versets dans l'arabe, dans la
+    traduction et dans le temoin morphologique, chaque sourate numerotee de
+    1 a n sans trou, et la basmala la ou le generateur la croit ;
  1. le texte arabe de chaque verset, caractere pour caractere ;
  2. la traduction, mot pour mot (la reparation typographique des guillemets
     de Hamidullah est la seule difference toleree) ;
@@ -75,6 +86,137 @@ DESC = re.compile(r'<meta name="description" content="(.*?)">', re.S)
 CANON = re.compile(r'<link rel="canonical" href="([^"]+)">')
 
 
+LETTRE_AR = re.compile(r'[ؠ-يٱ-ۓ]')
+
+
+def mots_lettres(texte):
+    """Les mots du verset, sans les marques de pause.
+
+    Le texte publie separe par des espaces des signes qui ne sont pas des
+    mots — les marques de pause du mushaf. Les compter comme des mots fausse
+    toute comparaison : voir la mesure dans `confronter_les_sources`.
+    """
+    return [m for m in texte.split() if LETTRE_AR.search(m)]
+
+
+def confronter_les_sources(ar, fr):
+    """LES SOURCES, CONFRONTEES ENTRE ELLES — 21 NOVEMBRE
+
+    POURQUOI CE BLOC MANQUAIT, ET CE QU'IL COUVRE
+
+    Tout ce fichier confronte les PAGES au jeu de donnees. Le jeu de donnees,
+    lui, n'etait confronte qu'a un seul temoin non circulaire : les sept
+    versets d'Al-Fatiha relus a la main. Sept sur les 571 publies.
+
+    Deux fautes graves pouvaient donc passer sans qu'aucun controle bronche,
+    et aucune ne se voit a l'oeil :
+
+    1. UN SENS SOUS LE MAUVAIS VERSET. Une lecon apparie l'arabe et la
+       traduction par la clef (sourate, verset). Si l'un des deux fichiers
+       numerotait une sourate autrement que l'autre, la page afficherait le
+       sens d'un verset sous le texte d'un autre — et les deux moities
+       seraient « conformes » a leur propre fichier. C'est exactement ce que
+       ce site s'interdit : attribuer un sens a la mauvaise parole. Le risque
+       n'est pas theorique ; il suffit de remplacer une traduction.
+    2. LA BASMALA. `faire-lecon-sourate.py` la retire du verset 1 de toutes
+       les sourates sauf la premiere, et c'est la decision la plus delicate
+       de la chaine — s'y tromper donne un « verset 1 » faux sur 112
+       sourates. Elle reposait sur un RAISONNEMENT ecrit dans un commentaire.
+
+    UN SECOND TEMOIN DORMAIT DANS LE DEPOT
+
+    `outils/coran/morphologie.txt` vient d'une autre provenance et porte une
+    reference `sourate:verset:mot:segment` sur chacune de ses lignes. Il ne
+    peut pas servir a verifier les LETTRES — le depot a deja mesure que les
+    deux textes ne notent pas l'alef de la meme facon
+    (`faire-11-vocabulaire.py`). Mais la STRUCTURE ne depend d'aucune
+    orthographe, et c'est elle qui portait les deux risques ci-dessus.
+
+    CE QUI A ETE MESURE ET ECARTE, POUR QUE PERSONNE NE LE RETENTE
+
+    Le compte de MOTS par verset. Brut : 2 946 versets sur 6 236 en
+    desaccord, parce que le texte publie compte les marques de pause comme
+    des mots. Marques filtrees : encore 465. La cause est mesuree et non
+    supposee — la morphologie ecrit le vocatif en UN mot la ou le texte
+    publie en ecrit deux, ce qui explique aussi les onze sourates ou l'ecart
+    du verset 1 vaut 5 et non 4. Ce temoin vaut pour la structure, pas pour
+    l'orthographe : aucun compte de mots n'est donc exige ici.
+
+    CE QUI RESTE NON VERIFIE, ET LE RESTERA
+
+    Que ces comptes soient les BONS. Deux fichiers qui s'accordent valent
+    mieux qu'un seul, et ce n'est pas la meme chose qu'une verification
+    contre le monde. La seule ancre non circulaire du depot reste Al-Fatiha,
+    sept versets relus a la main. Verifie / ecarte / NON VERIFIE : le
+    troisieme est une information, pas un echec.
+    """
+    # 1. les deux jeux de donnees publies portent-ils les memes versets ?
+    if set(ar) != set(fr):
+        manque_fr = sorted(set(ar) - set(fr))[:5]
+        manque_ar = sorted(set(fr) - set(ar))[:5]
+        sys.exit('ARRET : les deux jeux de donnees du Coran ne portent pas '
+                 'les memes versets. Absents de la traduction : %s. Absents '
+                 'de l arabe : %s. Une lecon apparie les deux par (sourate, '
+                 'verset) : un seul ecart afficherait un sens sous le '
+                 'mauvais verset.' % (manque_fr, manque_ar))
+
+    # 2. chaque sourate numerote 1..n, sans trou ni doublon
+    par_sourate = {}
+    for s, v in ar:
+        par_sourate.setdefault(s, []).append(v)
+    for s in sorted(par_sourate):
+        suite = sorted(par_sourate[s])
+        if suite != list(range(1, len(suite) + 1)):
+            sys.exit('ARRET : la sourate %d ne numerote pas ses versets de 1 '
+                     'a %d sans trou : %s…' % (s, len(suite), suite[:6]))
+
+    # 3. le temoin morphologique couvre-t-il les memes versets ?
+    temoin = {}
+    for ligne in (CORAN / 'morphologie.txt').read_text(
+            encoding='utf-8').split('\n'):
+        if not ligne.strip():
+            continue
+        bouts = ligne.split('\t', 1)[0].split(':')
+        if len(bouts) != 4:
+            continue
+        s, v, m, _segment = (int(x) for x in bouts)
+        temoin.setdefault((s, v), set()).add(m)
+
+    if set(ar) != set(temoin):
+        sys.exit('ARRET : le temoin morphologique et le jeu de donnees ne '
+                 'portent pas les memes versets (%d contre %d). L un des '
+                 'deux a change de decoupage.' % (len(temoin), len(ar)))
+
+    # 4. la basmala, la ou le generateur croit qu'elle est, et nulle part
+    #    ailleurs. Deux criteres qui se tiennent l'un l'autre : le texte
+    #    publie commence par elle partout sauf a la sourate 9 ; et le temoin
+    #    compte le MEME nombre de mots que le publie pour exactement deux
+    #    sourates — la premiere, ou la basmala EST le verset 1, et la
+    #    neuvieme, qui n'en a pas.
+    basmala = mots_lettres(ar[(1, 1)])
+    if len(basmala) != 4:
+        sys.exit('ARRET : le verset 1:1 ne fait pas quatre mots (%d) — la '
+                 'basmala du jeu de donnees a change de forme.'
+                 % len(basmala))
+
+    sans_basmala = [s for s in range(1, 115)
+                    if mots_lettres(ar[(s, 1)])[:4] != basmala]
+    if sans_basmala != [9]:
+        sys.exit('ARRET : les sourates dont le verset 1 ne commence PAS par '
+                 'la basmala devraient etre la seule sourate 9 ; mesure : %s.'
+                 % sans_basmala)
+
+    meme_etendue = [s for s in range(1, 115)
+                    if len(mots_lettres(ar[(s, 1)])) == len(temoin[(s, 1)])]
+    if meme_etendue != [1, 9]:
+        sys.exit('ARRET : le temoin devrait compter le verset 1 comme le '
+                 'texte publie pour les seules sourates 1 et 9 ; mesure : '
+                 '%s. La regle de retrait de la basmala ne tient plus.'
+                 % meme_etendue)
+
+    return len(ar), len(temoin), len(par_sourate)
+
+
 def desechapper(s):
     return (s.replace('&amp;', '&').replace('&lt;', '<').replace('&gt;', '>')
             .replace('&quot;', '"').replace('&nbsp;', ' '))
@@ -98,6 +240,11 @@ def main():
     noms = {s['n']: s['tr'] for s in
             json.loads((CORAN / 'noms-sourates.json').read_text(encoding='utf-8'))}
     basmala = unicodedata.normalize('NFC', ar[(1, 1)])
+
+    # Les sources d'abord, les pages ensuite. Confronter une page a un jeu de
+    # donnees qu'on n'a pas confronte a autre chose, c'est verifier la copie
+    # sur le brouillon.
+    n_versets, n_temoin, n_sourates = confronter_les_sources(ar, fr)
 
     pages = sorted(RACINE.glob('lecon-sourate-*.html'))
     if not pages:
@@ -406,6 +553,13 @@ def main():
 
     print('  %d lecons de sourate, %d versets relus dans les pages publiees.'
           % (len(pages), versets_lus))
+    print('  Les sources confrontees entre elles : %d sourates, %d versets, '
+          'les memes dans l arabe, la traduction et le temoin morphologique '
+          '(%d).' % (n_sourates, n_versets, n_temoin))
+    print('  La basmala : debut du verset 1 partout sauf a la sourate 9 ; '
+          'comptee DANS le verset 1 par le temoin aux seules sourates 1 et 9.')
+    print('  NON VERIFIE, et ca se dit : que ces comptes soient les bons. '
+          'La seule ancre hors du depot reste Al-Fatiha, 7 versets relus.')
     print('  Texte arabe, traduction, reference et compte : conformes au Coran.')
     print('  Titres, descriptions, canonical, sitemap et maillage : conformes.')
     print('  %d ancres de verset relues, et les index (des %d versets) y menent.'

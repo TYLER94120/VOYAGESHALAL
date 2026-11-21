@@ -371,6 +371,24 @@ supprime parmi eux. Le seul fichier AJOUTE depuis `59e67ae` est
 `outils/` : il reste au depot. C'est lui qui fait passer la seconde ligne de
 69 a 70.
 
+**Note du 21 novembre.** Les fichiers touches RESTENT TOUS AU DEPOT —
+`outils/controler-lecons.py`, `outils/LISEZMOI.md`, `docs/POUR-LE-CARNET.md`
+et ce fichier-ci, les quatre deja dans les 70. Remesure entre `59e67ae` et
+l'arbre de travail : **142 fichiers modifies, 72 en ligne, 70 au depot. LES
+DEUX CHIFFRES INCHANGES.** Ce qui a change : `controler-lecons.py` comparait
+les 571 versets publies au jeu de donnees caractere pour caractere, mais ne
+verifiait PAS le jeu de donnees — le seul temoin non circulaire etait
+Al-Fatiha, sept versets relus a la main. Deux fautes invisibles a l'oeil
+pouvaient passer : un sens affiche sous le mauvais verset si les deux fichiers
+numerotaient une sourate differemment, et la basmala, dont le retrait repose
+sur une regle fausse sur 112 sourates si on s'y trompe. `morphologie.txt`,
+d'une autre provenance, sert desormais de SECOND TEMOIN : les trois fichiers
+portent les memes 6 236 versets dans les memes 114 sourates, et la basmala est
+la ou le generateur la croit. Mesure ecartee et ecrite comme telle : le compte
+de mots par verset (2 946 desaccords sur 6 236, 465 apres filtrage des marques
+de pause — la morphologie ecrit le vocatif en un mot). Sept sabotages dans les
+sources, tous conformes, dont un qui doit rester vert.
+
 **Note du 20 novembre.** Les fichiers touches RESTENT TOUS AU DEPOT —
 `outils/controler-questions.py`, `outils/LISEZMOI.md`,
 `docs/POUR-LE-CARNET.md` et ce fichier-ci, les quatre deja dans les 70.

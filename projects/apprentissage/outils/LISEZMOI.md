@@ -865,6 +865,45 @@ ne l'est nulle part est `images.json`, qui ne contient aucune photo à ce jour
 *Une surface qu'aucun œil ne peut relire est celle où un contrôle vaut le
 plus, pas le moins.*
 
+### On vérifiait la copie sur le brouillon — 21 novembre
+
+`controler-lecons.py` compare les 571 versets des 38 pages publiées au jeu de
+données, caractère pour caractère. **Il ne vérifiait pas le jeu de données.**
+Le seul témoin non circulaire était Al-Fatiha : sept versets relus à la main,
+sept sur 571.
+
+Deux fautes pouvaient passer, et **aucune ne se voit à l'œil** : un sens
+affiché sous le mauvais verset si les deux fichiers numérotaient une sourate
+différemment (les deux moitiés resteraient « conformes » à leur propre
+fichier) ; et la basmala, dont le retrait du verset 1 — faux sur 112 sourates
+si on s'y trompe — reposait sur un raisonnement écrit dans un commentaire.
+
+Quatre choses à ne pas défaire :
+
+1. **Les sources se confrontent AVANT les pages.** `confronter_les_sources`
+   tourne en tête de `main()`. Les trois fichiers de `outils/coran/` portent
+   les mêmes 6 236 versets dans les mêmes 114 sourates, chacune numérotée de
+   1 à n sans trou.
+2. **Le témoin est `morphologie.txt`, et il vaut pour la STRUCTURE.** Il vient
+   d'une autre provenance ; il servait au lexique depuis des mois sans que
+   personne s'en serve comme témoin. Il ne peut pas vérifier les lettres : les
+   deux textes ne notent pas l'alef de la même façon.
+3. **Le compte de mots par verset a été mesuré puis ÉCARTÉ.** 2 946 versets en
+   désaccord sur 6 236, 465 encore après filtrage des marques de pause, parce
+   que la morphologie écrit le vocatif en un mot et le texte publié en deux.
+   La cause est mesurée, pas supposée. Ne pas le retenter.
+4. **La basmala est pinée par deux critères qui se tiennent.** Le verset 1
+   commence par elle partout sauf à la sourate 9 ; et le témoin compte le
+   verset 1 comme le texte publié pour exactement les sourates 1 et 9. Aucun
+   nombre magique : pas de « écart de 4 », que des ensembles.
+
+**Et ce que ça ne vérifie pas est imprimé à chaque exécution** : que ces
+comptes soient les bons. Deux fichiers qui s'accordent valent mieux qu'un
+seul, et ce n'est pas une vérification contre le monde.
+
+*Un contrôle qui ne doute que de ce qu'il relit, et jamais de ce avec quoi il
+relit, mesure la ressemblance et pas la justesse.*
+
 ### Ce que cette loi fait au levier 2
 
 Le levier 2 demande de multiplier les leçons de sourate, et le carnet en fait
