@@ -2968,3 +2968,11 @@ a changé (les 51 cartes), et le 70 devient **71** à cause du fichier neuf.
 Et le site reste injoignable depuis ce conteneur : **vérifié au dépôt, non
 vérifié en ligne** — les 51 cartes sont corrigées au dépôt et **encore fausses
 en ligne** jusqu'à ce que tu promeuves.
+
+### Le verdict des contrôles, écrit après la mesure
+
+**39 verts : 9 python, 30 navigateur, 0 rouge.** Les 30 tournaient encore à
+l'heure du commit, et son message le dit ainsi. **Huitième nuit de suite** que
+l'ordre est respecté : la mesure, puis le chiffre. Et c'est la première de ces
+huit nuits où un fichier qui part en ligne a changé : les 51 cartes ont donc
+traversé les 39 contrôles, pas seulement le mien.
