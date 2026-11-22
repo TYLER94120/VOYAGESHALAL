@@ -363,13 +363,34 @@ Ce qu'un `publier.py` enverrait, compte entre `59e67ae` et la branche :
 | CSS | 2 |
 | sitemap | 1 |
 | **total en ligne** | **72** |
-| restent au depot (`outils/`, `.md`) | 70 |
+| restent au depot (`outils/`, `.md`) | 71 |
 
 Les 72 qui partent sont TOUS des modifications : aucun fichier ajoute, aucun
-supprime parmi eux. Le seul fichier AJOUTE depuis `59e67ae` est
-`outils/regles-editoriales.py`, le 19 novembre, et `.vercelignore` ecarte
-`outils/` : il reste au depot. C'est lui qui fait passer la seconde ligne de
-69 a 70.
+supprime parmi eux. DEUX fichiers ont ete AJOUTES depuis `59e67ae`, et
+`.vercelignore` ecarte `outils/`, donc les deux restent au depot :
+`outils/regles-editoriales.py` le 19 novembre, qui a fait passer la seconde
+ligne de 69 a 70, et `outils/coran/LISEZMOI.md` le 22 novembre, qui la fait
+passer a 71.
+
+**Note du 22 novembre.** UN FICHIER QUI PART EN LIGNE A CHANGE CE SOIR, et
+c'est la premiere fois depuis des semaines :
+`data/questions/sens-des-sourates.json`, deja dans les 72, voit 51 de ses
+cartes corrigees. Elles AFFICHAIENT la
+traduction d'un verset sans nommer de traducteur — « Sa traduction : « … » »
+avec pour seule source « Coran, sourate 78, verset 15. ». Les 51 traductions
+ont ete confrontees une a une a `fra-muhammadhamidul.json` AVANT toute
+ecriture : conformes mot pour mot, donc le nom qui manquait est le bon et il
+est verifie. Le defaut venait d'une seule forme d'un seul generateur
+(`faire-01-sourates.py`, forme B), dont la forme A attribuait correctement :
+un oubli de recopie. Le generateur est corrige, les cartes aussi, et
+`controler-questions.py` l'exige desormais — une carte qui montre la
+traduction du verset qu'elle cite doit nommer le traducteur. Le nom lui-meme
+vit maintenant a UN seul endroit (`outils/regles-editoriales.py`) : il etait
+ecrit a la main dans six fichiers, dont le controle qui le verifiait. Et
+`outils/coran/LISEZMOI.md` ecrit ce qui est verifie, ecarte et NON VERIFIE
+dans ces sources — dont ceci : `fra-muhammadhamidul.json` ne porte aucune
+metadonnee, et le seul element interne qui nomme Hamidullah est LE NOM DU
+FICHIER. Remesure : **143 fichiers modifies, 72 en ligne, 71 au depot.**
 
 **Note du 21 novembre.** Les fichiers touches RESTENT TOUS AU DEPOT —
 `outils/controler-lecons.py`, `outils/LISEZMOI.md`, `docs/POUR-LE-CARNET.md`

@@ -904,6 +904,48 @@ seul, et ce n'est pas une vérification contre le monde.
 *Un contrôle qui ne doute que de ce qu'il relit, et jamais de ce avec quoi il
 relit, mesure la ressemblance et pas la justesse.*
 
+### Un sens montré s'attribue — 22 novembre
+
+La ronde le dit : « un sens ou un commentaire s'ATTRIBUE, il ne s'affirme
+jamais au nom du site ». Les leçons le tenaient, et un contrôle le vérifiait
+verset par verset. **Les cartes, non.** Mesure : 2 340 des 2 616 nommaient le
+traducteur ; **51 affichaient la traduction d'un verset sans nommer
+personne** — « Sa traduction : « … » » avec, pour seule source, « Coran,
+sourate 78, verset 15. »
+
+Cinq choses à ne pas défaire :
+
+1. **Les 51 traductions ont été confrontées à `fra-muhammadhamidul.json`
+   AVANT qu'un nom soit écrit** — 51 conformes mot pour mot, et le script
+   refusait d'écrire sur une seule divergence. Une attribution ne se pose
+   jamais sur un texte non confronté.
+2. **Le défaut était dans le générateur, pas seulement dans les données.**
+   `faire-01-sourates.py` forme B oubliait ce que sa forme A écrivait vingt
+   lignes plus haut. Corriger les cartes sans corriger le générateur aurait
+   laissé le défaut revenir au prochain lot.
+3. **Les cartes ont été corrigées À LA MAIN, et c'est voulu.** Le hasard de
+   ces générateurs n'est pas semé : les relancer réécrirait tout le lot.
+   L'écriture est donc chirurgicale — 51 lignes, toutes des champs `source`,
+   vérifié au diff.
+4. **Le nom du traducteur vit à UN seul endroit**
+   (`outils/regles-editoriales.py`). Il était à la main dans six fichiers,
+   dont `controler-lecons.py` qui RETAPAIT la valeur attendue — alors que ce
+   même fichier lit `SEUIL_INDEX` chez le générateur en expliquant pourquoi.
+   Changer la déclaration fait rougir les deux contrôles : c'est la preuve
+   qu'elle est la seule source.
+5. **Le critère n'est pas une tournure, c'est le texte.** On ne cherche pas le
+   mot « traduction » : on regarde si une citation de la carte se retrouve
+   dans la traduction du verset que la carte elle-même référence. Aucun seuil
+   de longueur.
+
+**Et ce sur quoi l'attribution repose est maintenant écrit** —
+`outils/coran/LISEZMOI.md`. `fra-muhammadhamidul.json` ne porte **aucune
+métadonnée** : le seul élément interne qui nomme Hamidullah est le nom du
+fichier. Cohérent partout, **non vérifié** à la racine.
+
+*Un sens exact et non attribué reste une faute : ce n'est pas le texte qui est
+faux, c'est le site qui s'en donne l'autorité.*
+
 ### Ce que cette loi fait au levier 2
 
 Le levier 2 demande de multiplier les leçons de sourate, et le carnet en fait

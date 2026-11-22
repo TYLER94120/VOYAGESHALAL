@@ -110,6 +110,7 @@ _specr = _iur.spec_from_file_location(
     pathlib.Path(__file__).resolve().parent / 'regles-editoriales.py')
 REGLES = _iur.module_from_spec(_specr)
 _specr.loader.exec_module(REGLES)
+TRADUCTEUR = REGLES.TRADUCTEUR
 MERITES = REGLES.MERITES
 RECUEILS = REGLES.RECUEILS
 ATTRIBUTIONS = REGLES.ATTRIBUTIONS
@@ -1815,8 +1816,42 @@ def main():
     # c'est voulu : une source neuve se regarde avant de se publier.
     SOURCES_PERMISES = ('coran', 'alphabet arabe', 'ecriture arabe')
 
+    # ---- UN SENS MONTRE S'ATTRIBUE — 22 NOVEMBRE ----------------------
+    #
+    # La ronde le demande dans ces termes : « un sens ou un commentaire
+    # s'ATTRIBUE — il ne s'affirme jamais au nom du site ». Les lecons le
+    # tiennent, et `controler-lecons.py` le verifie verset par verset depuis
+    # le debut. Les CARTES, non : rien ne l'exigeait d'elles.
+    #
+    # Mesure du 22 novembre : 2 340 des 2 616 cartes nomment le traducteur et
+    # l'ecrivent toutes de la meme facon. CINQUANTE ET UNE ne le nommaient
+    # pas, tout en AFFICHANT la traduction du verset — « C'est le verset 15
+    # de la sourate An-Naba. Sa traduction : « pour faire pousser par elle
+    # grains… » » avec, pour seule source, « Coran, sourate 78, verset 15. »
+    # Le sens paraissait donc etre celui du site.
+    #
+    # Toutes venaient de la meme forme du meme generateur
+    # (`faire-01-sourates.py`, forme B) ; sa forme A, juste au-dessus dans le
+    # meme fichier, attribuait correctement. Un oubli de recopie, pas une
+    # decision. Les 51 traductions ont ete confrontees une a une a
+    # `fra-muhammadhamidul.json` AVANT d'ecrire quoi que ce soit : conformes
+    # mot pour mot, donc le nom qui manquait etait le bon et il est verifie.
+    #
+    # LE CRITERE N'EST PAS UNE TOURNURE, C'EST LE TEXTE. On ne cherche pas le
+    # mot « traduction » — une tournure se contourne sans le vouloir, et le
+    # 19 novembre a montre ce que vaut un critere de nous. On regarde si une
+    # citation entre guillemets de la carte se retrouve DANS la traduction du
+    # verset QUE LA CARTE ELLE-MEME REFERENCE. Si oui, la carte montre ce
+    # sens, et elle doit le nommer. Aucun seuil de longueur : si la citation
+    # est dans ce verset-la, c'est ce verset-la qu'elle cite.
+    CITATION = re.compile(r'«\s*(.+?)\s*»', re.S)
+    REF_VERSET = re.compile(r'sourate (\d+), verset (\d+)')
+    NOMME = re.compile(r'Traduction du sens\s*:\s*([^.]*)\.')
+    CHAMPS_CITANTS = ('explication', 'question', 'divergence')
+
     CHAMPS_TOUS = ('question', 'explication', 'source', 'divergence', 'surtitre')
     motifs_vus, champs_lus, sources_lues = 0, 0, 0
+    sens_montres, attributions_lues = 0, 0
     for sec in sorted(par_section):
         for q in par_section[sec]:
             src = nu(q.get('source'))
@@ -1825,6 +1860,41 @@ def main():
                 fautes.append('%s/%s : la source ne nomme ni le Coran ni '
                               'l\'alphabet arabe — « %s »'
                               % (sec, q['id'], str(q.get('source'))[:70]))
+
+            brut_src = str(q.get('source') or '')
+            nomme = NOMME.search(brut_src)
+            if nomme:
+                attributions_lues += 1
+                if nomme.group(1).strip() != TRADUCTEUR:
+                    fautes.append(
+                        '%s/%s : la traduction est attribuee a « %s », et le '
+                        'site n\'en declare qu\'un : « %s ». Deux noms pour '
+                        'une meme traduction, c\'est une source de moins.'
+                        % (sec, q['id'], nomme.group(1).strip(), TRADUCTEUR))
+            ref = REF_VERSET.search(brut_src)
+            if ref:
+                verset = nu(francais.get((int(ref.group(1)),
+                                          int(ref.group(2))), ''))
+                montre = False
+                for champ in CHAMPS_CITANTS:
+                    for bout in CITATION.findall(str(q.get(champ) or '')):
+                        aplati = nu(bout)
+                        if verset and aplati and aplati in verset:
+                            montre = True
+                            break
+                    if montre:
+                        break
+                if montre:
+                    sens_montres += 1
+                    if not nomme:
+                        fautes.append(
+                            '%s/%s : la carte AFFICHE la traduction du verset '
+                            '%s:%s et ne nomme aucun traducteur — un sens '
+                            's\'attribue, il ne s\'affirme pas au nom du '
+                            'site : « %s »'
+                            % (sec, q['id'], ref.group(1), ref.group(2),
+                               re.sub(r'\s+', ' ',
+                                      str(q.get('explication') or ''))[:70]))
             for champ in CHAMPS_TOUS:
                 valeurs = [q.get(champ)]
                 if champ == 'question':
@@ -1881,6 +1951,9 @@ def main():
           '(%d recueils, %d attributions cherches).'
           % (sources_lues, champs_lus, motifs_vus,
              len(RECUEILS), len(ATTRIBUTIONS)))
+    print('  %d carte(s) affichent la traduction du verset qu elles citent, '
+          '%d nomment un traducteur, et c est le seul que le site declare '
+          '(« %s »).' % (sens_montres, attributions_lues, TRADUCTEUR))
 
     # ================================================================
     # CE QUE LE LECTEUR VOIT — AJOUTE LE 13 NOVEMBRE

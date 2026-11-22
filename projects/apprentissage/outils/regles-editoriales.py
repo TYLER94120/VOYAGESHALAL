@@ -69,6 +69,35 @@ couvre pas n'est pas « propre » : il est NON VERIFIE, et ca s'ecrit.
 """
 import re
 
+# LE NOM DU TRADUCTEUR — AJOUTE LE 22 NOVEMBRE
+#
+# C'est la chaine la plus engageante du site. Elle s'affiche 728 fois sur
+# 40 pages et accompagne 2 391 des 2 616 cartes : chaque fois qu'un sens est
+# montre, il est ATTRIBUE a cette personne. La regle de la ronde le demande —
+# « un sens s'attribue, il ne s'affirme jamais au nom du site ».
+#
+# POURQUOI ELLE ARRIVE ICI. Mesure du 22 novembre : elle etait ECRITE A LA
+# MAIN dans six fichiers — `faire-lecon-sourate.py` (une constante),
+# `faire-01-sourates.py`, `faire-05-prophetes.py`, `faire-pratique.py`,
+# `faire-themes.py` (des litteraux dans le champ `source` des cartes qu'ils
+# fabriquent) et `controler-lecons.py`, qui RETAPAIT la valeur attendue au
+# lieu de la lire. Ce dernier point est le plus parlant : ce meme fichier lit
+# `SEUIL_INDEX` chez le generateur en expliquant que « deux fois le meme
+# nombre dans deux fichiers, c'est deux nombres ». Le principe etait applique
+# au seuil d'un index et pas au nom d'un traducteur.
+#
+# Les cartes l'ecrivaient toutes de la meme facon, mesure faite avant d'y
+# toucher : la regle est posee avant la divergence, pas apres.
+#
+# CE QUE CETTE ATTRIBUTION NE REPOSE PAS SUR — ET IL FAUT LE SAVOIR
+#
+# `fra-muhammadhamidul.json` ne contient AUCUNE metadonnee : ni traducteur,
+# ni edition, ni source, ni licence. Rien que `chapter`, `verse`, `text`. Le
+# seul element interne qui porte ce nom est LE NOM DU FICHIER. Voir
+# `outils/coran/LISEZMOI.md` : verifie / ecarte / NON VERIFIE, et celui-ci
+# est non verifie.
+TRADUCTEUR = 'Muhammad Hamidullah'
+
 # L'UNION des deux listes du 19 novembre. Un mot ne se retire pas d'ici sans
 # une mesure ecrite : chacun est la parce qu'une phrase qui le porte engage
 # Mohamed sur un contenu que ce projet ne peut pas sourcer.

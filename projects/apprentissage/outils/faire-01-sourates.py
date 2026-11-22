@@ -32,10 +32,21 @@ la basmala collee au texte. On la retire — sinon on publierait un faux verset 
 sur 112 pages, defaut deja rencontre et corrige une fois sur ce site.
 """
 
+import importlib.util as _iur
+import pathlib
 import random
 import sys
 
 import fabrique as F
+
+# Le nom du traducteur est LU, jamais retape : voir le motif ecrit dans
+# `regles-editoriales.py`, qui l'heberge depuis le 22 novembre.
+_specr = _iur.spec_from_file_location(
+    'regles_edito',
+    pathlib.Path(__file__).resolve().parent / 'regles-editoriales.py')
+_REGLES = _iur.module_from_spec(_specr)
+_specr.loader.exec_module(_REGLES)
+TRADUCTEUR = _REGLES.TRADUCTEUR
 
 BASMALA = 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ'
 SECTION = 'sens-des-sourates'
@@ -108,7 +119,7 @@ def main():
                             'Les trois autres propositions sont des traductions '
                             'd\'autres versets.' % (v, nom, s),
                 source='Coran, sourate %d, verset %d. Traduction du sens : '
-                       'Muhammad Hamidullah.' % (s, v),
+                       '%s.' % (s, v, TRADUCTEUR),
                 difficulte=2 if s >= 100 else 3,
                 rng=rng,
             ))
@@ -140,7 +151,19 @@ def main():
                 leurres=leurres,
                 explication='C\'est le verset %d de la sourate %s. Sa traduction : '
                             '« %s »' % (v, nom, fr),
-                source='Coran, sourate %d, verset %d.' % (s, v),
+                # LA FORME B MONTRAIT UN SENS SANS L'ATTRIBUER — CORRIGE LE
+                # 22 NOVEMBRE. Son `explication` affiche la traduction du
+                # verset, exactement comme la forme A ci-dessus, et sa source
+                # ne nommait que le Coran : le sens paraissait etre celui du
+                # site. Mesure du 22 novembre : 49 cartes publiees dans ce
+                # cas, et les 49 traductions confrontees une a une a
+                # `fra-muhammadhamidul.json` — conformes mot pour mot. Le nom
+                # qui manquait est donc le bon, et il est VERIFIE, pas
+                # suppose. Les 49 cartes des banques ont ete corrigees a la
+                # main, parce que relancer ce generateur — dont le hasard
+                # n'est pas seme — reecrirait tout le lot.
+                source='Coran, sourate %d, verset %d. Traduction du sens : '
+                       '%s.' % (s, v, TRADUCTEUR),
                 difficulte=3,
                 rng=rng,
             ))

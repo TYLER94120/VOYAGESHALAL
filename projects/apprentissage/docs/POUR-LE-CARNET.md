@@ -24,7 +24,7 @@ lu par personne et entrerait en conflit à la première fusion.
 
 ## À COLLER DANS LE CARNET, À PARTIR D'ICI
 
-# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 21 NOVEMBRE 2026
+# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 22 NOVEMBRE 2026
 
 > **Comment lire cette note.** Son corps a été écrit le 14 octobre. Chaque
 > ajout porte sa date, et **une mesure datée ne se rafraîchit pas : elle se
@@ -2834,3 +2834,137 @@ vérifié en ligne.**
 **39 verts : 9 python, 30 navigateur, 0 rouge.** Les 30 tournaient encore à
 l'heure du commit, et son message le dit ainsi. **Septième nuit de suite** que
 l'ordre est respecté : la mesure, puis le chiffre.
+
+---
+
+## LE 22 NOVEMBRE — CINQUANTE ET UNE CARTES MONTRAIENT UN SENS SANS L'ATTRIBUER
+
+### Les deux leviers, remesurés d'abord
+
+`docs/MESURES.md` relu sur `origin/main` : dernière modification le
+**17 octobre**, relevé toujours celui du **21 août**. **Huitième nuit sans
+requêtes.** `main` n'a pas bougé (`f1623ba`). Levier 1 : titres inchangés et
+dans les règles. Levier 2 : `LOT` ne bouge pas, c'est ta décision.
+
+### Ce soir, UN FICHIER QUI PART EN LIGNE A CHANGÉ
+
+C'est la première fois depuis des semaines, et c'est une correction de fond.
+
+La règle de la ronde dit : « **un sens ou un commentaire s'ATTRIBUE** — il ne
+s'affirme jamais au nom du site. » Les leçons la tiennent, verset par verset,
+et un contrôle le vérifie depuis le début. **Les cartes, non : rien ne
+l'exigeait d'elles.**
+
+Mesure du 22 novembre sur les 2 616 cartes :
+
+| | cartes |
+|---|---|
+| nomment le traducteur | 2 340 |
+| **affichent une traduction SANS le nommer** | **51** |
+
+Les 51 disaient, par exemple : « C'est le verset 15 de la sourate An-Naba.
+**Sa traduction** : « pour faire pousser par elle grains… » » — et pour seule
+source, « Coran, sourate 78, verset 15. » **Le sens paraissait donc être celui
+du site.**
+
+### D'où ça venait : un oubli de recopie, mesurable
+
+Les 51 venaient de **la même forme du même générateur**.
+`faire-01-sourates.py` fabrique trois formes de carte ; sa **forme A** écrit
+`source='Coran, sourate %d, verset %d. Traduction du sens : Muhammad
+Hamidullah.'`, et sa **forme B**, vingt lignes plus bas dans le même fichier,
+écrit `source='Coran, sourate %d, verset %d.'` — alors que son explication
+affiche la traduction. Pas une décision : une ligne recopiée à moitié.
+
+### Ce qui a été vérifié AVANT d'écrire un seul nom
+
+**Les 51 traductions ont été confrontées une à une à
+`fra-muhammadhamidul.json`** pour le verset que chaque carte référence :
+**51 conformes mot pour mot, 0 divergente.** Le script refusait d'écrire si une
+seule ne correspondait pas. Ajouter une attribution à un texte qu'on n'a pas
+confronté serait exactement la faute qu'on prétend corriger.
+
+Le nom qui manquait est donc **le bon, et il est vérifié** — pas supposé.
+
+**Correction d'un chiffre que j'ai annoncé trop tôt** : ma première sonde
+disait **49**. Elle exigeait une citation de 25 caractères au moins, seuil
+arbitraire de ma part. Le critère juste — « la source ne nomme personne et
+l'explication cite la traduction » — en trouve **51**. C'est 51.
+
+### Le nom du traducteur existait en six copies
+
+C'est la chaîne la plus engageante du site : **728 fois sur 40 pages**, et
+maintenant 2 391 cartes. Elle était écrite **à la main dans six fichiers** —
+quatre générateurs, une constante, et `controler-lecons.py`, **qui retapait la
+valeur attendue au lieu de la lire**.
+
+Ce dernier point est le plus parlant : ce même fichier lit `SEUIL_INDEX` chez
+le générateur, en expliquant que « deux fois le même nombre dans deux
+fichiers, c'est deux nombres ». **Le principe était appliqué au seuil d'un
+index et pas au nom d'un traducteur.** Il vit maintenant dans
+`outils/regles-editoriales.py`, à côté des trois familles de mots.
+
+### Le critère du contrôle n'est pas une tournure, c'est le texte
+
+On ne cherche pas le mot « traduction » : une tournure se contourne sans le
+vouloir. Le contrôle regarde si **une citation entre guillemets de la carte se
+retrouve dans la traduction du verset que la carte elle-même référence**. Si
+oui, elle montre ce sens, et elle doit le nommer. **Aucun seuil de longueur**
+— si la citation est dans ce verset-là, c'est ce verset-là qu'elle cite.
+
+Mesure : **1 769 cartes affichent la traduction du verset qu'elles citent, les
+2 391 qui nomment un traducteur nomment le seul que le site déclare.**
+
+### Et ce que ces sources ne disent pas : `outils/coran/LISEZMOI.md`
+
+En cherchant sur quoi l'attribution repose, j'ai trouvé qu'elle ne repose sur
+**rien d'interne** : `fra-muhammadhamidul.json` ne contient **aucune
+métadonnée** — ni traducteur, ni édition, ni source, ni licence. Rien que
+`chapter`, `verse`, `text`. **Le seul élément qui porte le nom de Hamidullah
+est le nom du fichier.** Aucun des fichiers de `outils/coran/` ne dit d'où il
+vient ; ils sont entrés au dépôt le 14 août dans un commit qui parle d'autre
+chose.
+
+J'ai donc écrit `outils/coran/LISEZMOI.md` : ce qui est **vérifié** (la
+structure, la basmala, les sept versets relus, les pages conformes), ce qui est
+**écarté** et pourquoi (les 20 426 hadiths sans traducteur nommé ; le compte de
+mots par verset), et ce qui est **non vérifié** — dont la provenance.
+
+**Ce que tu peux faire et que je ne peux pas** : écrire d'où viennent ces
+fichiers, quelle édition, quelle licence. Une ligne par fichier. **Je ne
+l'invente pas** — une source qu'on ne peut pas citer exactement ne se cite
+pas, et ça vaut aussi pour la source d'une source.
+
+### Six sabotages, dont un qui doit rester vert
+
+    l'attribution retirée d'une carte            sortie 1
+    le nom mal orthographié sur une carte        sortie 1
+    la constante changée → controler-questions   sortie 1
+    la constante changée → controler-lecons      sortie 1
+    un verset de leçon sans traducteur           sortie 1
+    une citation ÉTRANGÈRE au verset, sans nom   SORTIE 0 — DOIT RESTER VERT
+
+Le quatrième et le troisième comptent ensemble : changer **la seule
+déclaration** fait rougir **les deux** contrôles. C'est la preuve qu'elle est
+bien la seule source du nom. Le dernier prouve que la règle ne crie pas au
+loup : une carte qui cite du français qui n'est pas la traduction de son
+verset n'a rien à attribuer.
+
+**Et une erreur de méthode de ma part, qui mérite d'être écrite.** Mon script
+de sabotage restaurait les fichiers avec `git checkout --`, alors que mon
+propre travail de la soirée n'était pas encore en réserve : il a **effacé
+l'ajout de la constante** dans `regles-editoriales.py`. Trois verdicts de la
+première série étaient donc faux — rouges pour une raison qui n'était pas
+celle testée. Constante réécrite, **tout mis en réserve d'abord**, série
+relancée : six sur six conformes. Un sabotage qui détruit ce qu'il teste ne
+teste rien.
+
+### Ce que je n'ai pas fait, et pourquoi
+
+Aucune page neuve, aucune leçon, aucun titre réécrit. Remesuré : **143
+modifiés, 72 en ligne, 71 au dépôt** — le 72 est **inchangé** mais son contenu
+a changé (les 51 cartes), et le 70 devient **71** à cause du fichier neuf.
+
+Et le site reste injoignable depuis ce conteneur : **vérifié au dépôt, non
+vérifié en ligne** — les 51 cartes sont corrigées au dépôt et **encore fausses
+en ligne** jusqu'à ce que tu promeuves.

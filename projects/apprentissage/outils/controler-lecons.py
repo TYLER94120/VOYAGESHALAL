@@ -51,6 +51,15 @@ RACINE = pathlib.Path(__file__).resolve().parent.parent
 CORAN = RACINE / 'outils' / 'coran'
 SITE = 'https://islampasapas.fr'
 
+# La regle editoriale vit a un seul endroit depuis le 19 novembre, et le nom
+# du traducteur y a rejoint les trois familles de mots le 22.
+import importlib.util as _iur
+_specr = _iur.spec_from_file_location(
+    'regles_edito', pathlib.Path(__file__).resolve().parent
+    / 'regles-editoriales.py')
+REGLES = _iur.module_from_spec(_specr)
+_specr.loader.exec_module(REGLES)
+
 
 def seuil_index():
     """Le seuil du generateur, lu chez lui — jamais recopie ici.
@@ -292,9 +301,15 @@ def main():
             if s_nom.strip() != noms.get(num, ''):
                 fautes.append('%s : nom « %s », attendu « %s »'
                               % (ref, s_nom.strip(), noms.get(num, '?')))
-            if s_trad.strip() != 'Muhammad Hamidullah':
-                fautes.append('%s : traducteur « %s » — la traduction doit etre '
-                              'attribuee' % (ref, s_trad.strip()))
+            # Le nom attendu est LU, plus retape : ce fichier lit deja
+            # `SEUIL_INDEX` chez le generateur, en expliquant que deux fois le
+            # meme nombre dans deux fichiers, c'est deux nombres. Le nom d'un
+            # traducteur merite au moins autant.
+            if s_trad.strip() != REGLES.TRADUCTEUR:
+                fautes.append('%s : traducteur « %s », attendu « %s » — la '
+                              'traduction doit etre attribuee, et a la meme '
+                              'personne partout'
+                              % (ref, s_trad.strip(), REGLES.TRADUCTEUR))
 
             # 1. L'arabe, caractere pour caractere.
             # DANS AL-FATIHA, LE VERSET 1 EST LA BASMALA.

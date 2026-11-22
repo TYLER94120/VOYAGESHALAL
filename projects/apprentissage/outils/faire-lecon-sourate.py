@@ -68,7 +68,17 @@ RACINE = pathlib.Path(__file__).resolve().parent.parent
 CORAN = RACINE / 'outils' / 'coran'
 TEMOIN = RACINE / 'outils' / 'temoins' / 'al-fatiha-relue.txt'
 
-TRADUCTEUR = 'Muhammad Hamidullah'
+# Le nom du traducteur est LU dans `regles-editoriales.py` depuis le
+# 22 novembre, et plus ecrit ici : il etait a la main dans six fichiers, dont
+# le controle qui le verifie. Une attribution qui existe en six copies est
+# six attributions qui se ressemblent.
+import importlib.util as _iur
+_specr = _iur.spec_from_file_location(
+    'regles_edito',
+    pathlib.Path(__file__).resolve().parent / 'regles-editoriales.py')
+_REGLES = _iur.module_from_spec(_specr)
+_specr.loader.exec_module(_REGLES)
+TRADUCTEUR = _REGLES.TRADUCTEUR
 
 # Les vingt sourates qui avaient une lecon avant le 21 aout. On rend EXACTEMENT
 # les memes adresses : ce sont celles que Google connait, et une adresse qui
