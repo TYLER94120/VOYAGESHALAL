@@ -24,7 +24,7 @@ lu par personne et entrerait en conflit à la première fusion.
 
 ## À COLLER DANS LE CARNET, À PARTIR D'ICI
 
-# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 22 NOVEMBRE 2026
+# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 23 NOVEMBRE 2026
 
 > **Comment lire cette note.** Son corps a été écrit le 14 octobre. Chaque
 > ajout porte sa date, et **une mesure datée ne se rafraîchit pas : elle se
@@ -2976,3 +2976,111 @@ l'heure du commit, et son message le dit ainsi. **Huitième nuit de suite** que
 l'ordre est respecté : la mesure, puis le chiffre. Et c'est la première de ces
 huit nuits où un fichier qui part en ligne a changé : les 51 cartes ont donc
 traversé les 39 contrôles, pas seulement le mien.
+
+---
+
+## LE 23 NOVEMBRE — LA QUATRIÈME RÈGLE DE LA RONDE N'AVAIT AUCUN INSTRUMENT
+
+### Les deux leviers, remesurés d'abord
+
+`docs/MESURES.md` relu sur `origin/main` : dernière modification le
+**17 octobre**, relevé toujours celui du **21 août**. **Neuvième nuit sans
+requêtes.** `main` n'a pas bougé (`f1623ba`). Levier 1 : titres inchangés.
+Levier 2 : `LOT` ne bouge pas, c'est ta décision.
+
+### La règle qui compte le plus a quatre points. Trois avaient un contrôle
+
+    · texte coranique vérifié, jamais de mémoire     → controler-lecons.py
+    · un sens s'ATTRIBUE                             → fait hier soir
+    · une source non citable ne se cite pas          → les trois familles
+    · JAMAIS DE FATWA PERSONNELLE                    → rien
+
+Le quatrième est celui dont les conséquences sont les plus lourdes, et c'est
+le seul que rien ne mesurait. Une carte qui dit « il faut faire X » ou « X est
+interdit » **en son nom** tranche un cas — au nom de Mohamed. Une carte qui
+dit « le Coran l'énonce en sourate 2, verset 173 : « … » » explique un
+principe et le source.
+
+### Ce que j'ai mesuré AVANT d'écrire la moindre liste
+
+Sur les **20 808 champs** des cartes, voix du site seulement (le texte entre
+guillemets reste du texte cité, comme pour les trois autres familles) :
+**dix touches.** Toutes examinées une par une :
+
+| ce qui est ressorti | combien | ce que c'était |
+|---|---|---|
+| « est interdit » | 6 | le **surtitre** « Ce qui est interdit », et les 6 cartes citent le verset qui l'énonce, référence exacte et traduction attribuée |
+| « est nulle » | 4 | **FAUX** — « Votre compagnon n'est nullement fou », de Hamidullah |
+
+Sur les **4 028 morceaux** de la voix du site des 63 pages : **quinze
+touches** — treize fois « on peut », toutes dans « Tout ce qu'on peut
+travailler sur le site » (du français ordinaire sur l'usage du site), et deux
+fois le libellé de thème « Ce qui est interdit ».
+
+**La règle était donc tenue — par soin, pas par contrôle.** Et deux des mots
+que j'allais écrire étaient des faux : `est nulle` attrape « nullement »
+exactement comme `vertu` attrapait « couverture » le 19 novembre, et
+`on peut` / `tu peux` attrapent du français ordinaire. **Écartés, avec la
+mesure écrite à côté.**
+
+### La règle est CONDITIONNELLE, et c'est tout le point
+
+Les trois premières familles sont des interdits **absolus** : aucune surface
+de ce site ne doit promettre un mérite, nommer un recueil, attribuer une
+parole. La quatrième ne peut pas l'être — **le site peut rapporter un
+interdit, à condition de montrer qui l'énonce et où.**
+
+C'est pourquoi `TRANCHANTES` **n'est pas dans `FAMILLES`** : y mettre ces mots
+les ferait rougir partout, y compris là où ils sont légitimes. La règle
+écrite est donc :
+
+> **Si la voix du site tranche, la carte doit montrer le verset qui tranche** —
+> référence exacte, et une citation qui est bien celle de ce verset-là.
+
+Le second critère réutilise l'instrument d'hier soir : on ne cherche pas un
+mot, on vérifie que la citation se retrouve dans la traduction du verset que
+la carte elle-même référence.
+
+**Mesure : 6 cartes emploient une tournure qui tranche (36 cherchées), 0 sans
+montrer le verset.**
+
+### Ce que la règle NE couvre pas, et c'est écrit
+
+**La prose des pages.** Les deux seules occurrences y sont des libellés de
+thème dont le verset vit dans la carte ; les faire rougir serait un faux
+rouge. Une phrase normative ajoutée demain dans la prose d'une page **ne
+serait pas attrapée**. Vérifié sur les cartes, **non vérifié sur les pages**,
+et mesuré propre aujourd'hui.
+
+### Les sabotages, et deux que j'avais mal conçus
+
+    « il faut faire les ablutions », sans verset      sortie 1
+    « Fumer est interdit », sans verset               sortie 1
+    « est nulle » REMIS dans la liste                 sortie 1
+
+Le troisième est le plus utile : il prouve que **l'exclusion était
+nécessaire** et pas cosmétique. Avec `est nulle` dans la liste, une carte qui
+porte la traduction de Hamidullah « n'est nullement fou » **rougit à tort**,
+sur du contenu réel et publié. Retiré : vert.
+
+**Et les deux cas « doivent rester verts » étaient mal conçus.** Je les avais
+plantés dans une carte de la section *pratique* — or ces cartes sont déclarées
+une par une dans une table de `faire-pratique.py`, et en réécrire une fait
+rougir ce contrôle-là, pour une raison qui n'a rien à voir avec la règle de ce
+soir. **Le cas vert n'avait pas besoin d'un sabotage : il est déjà dans le
+dépôt.** Six cartes emploient une tournure qui tranche et montrent leur
+verset ; quatre portent « n'est nullement fou ». La suite est verte avec elles
+dedans. Du contenu réel vaut mieux qu'un sabotage.
+
+### Ce que je n'ai pas fait, et pourquoi
+
+Aucune page neuve, aucune leçon, aucun titre, **et aucune correction de
+contenu : il n'y en avait pas à faire.** Les 10 touches mesurées sont 6
+libellés correctement sourcés et 4 faux positifs de ma propre sonde. Un cycle
+qui ne trouve rien à corriger et le dit est un cycle honnête.
+
+Rien de ce qui part en ligne n'a changé : les deux fichiers touchés sont sous
+`outils/`. Remesuré : **143 modifiés, 72 en ligne, 71 au dépôt** — inchangé.
+
+Et le site reste injoignable depuis ce conteneur : **vérifié au dépôt, non
+vérifié en ligne** — les 51 cartes d'hier sont toujours fausses en ligne.

@@ -372,6 +372,23 @@ supprime parmi eux. DEUX fichiers ont ete AJOUTES depuis `59e67ae`, et
 ligne de 69 a 70, et `outils/coran/LISEZMOI.md` le 22 novembre, qui la fait
 passer a 71.
 
+**Note du 23 novembre.** Les fichiers touches RESTENT TOUS AU DEPOT —
+`outils/regles-editoriales.py`, `outils/controler-questions.py`,
+`outils/LISEZMOI.md`, `docs/POUR-LE-CARNET.md` et ce fichier-ci, les cinq
+deja dans les 71. Remesure : **143 fichiers modifies, 72 en ligne, 71 au
+depot. INCHANGE.** Ce qui a change : la regle de la ronde a QUATRE points et
+trois seulement avaient un instrument. Le quatrieme — « jamais de fatwa
+personnelle : on explique un principe, on ne tranche pas un cas » — n'etait
+mesure par rien. Il l'est maintenant, et la regle est CONDITIONNELLE, pas
+absolue : le site peut rapporter un interdit a condition de montrer le verset
+qui l'enonce. Mesure avant d'ecrire la liste : 10 touches sur 20 808 champs,
+dont 6 libelles « Ce qui est interdit » dont les cartes citent toutes leur
+verset, et 4 FAUX — « n'est nullement fou », de Hamidullah. Deux tournures
+ecartees sur mesure (`est nulle`, `on peut`), et l'exclusion est prouvee
+necessaire : remise dans la liste, `est nulle` fait rougir du contenu reel.
+Ce que la regle ne couvre pas est ecrit : la prose des pages. AUCUNE
+correction de contenu ce soir, parce qu'il n'y en avait pas a faire.
+
 **Note du 22 novembre.** UN FICHIER QUI PART EN LIGNE A CHANGE CE SOIR, et
 c'est la premiere fois depuis des semaines :
 `data/questions/sens-des-sourates.json`, deja dans les 72, voit 51 de ses

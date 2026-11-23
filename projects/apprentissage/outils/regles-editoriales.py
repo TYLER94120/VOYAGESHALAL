@@ -121,12 +121,71 @@ FAMILLES = (('promet un merite', MERITES),
             ('nomme un recueil de hadith', RECUEILS),
             ('attribue une parole', ATTRIBUTIONS))
 
+# ======================================================================
+# LA QUATRIEME REGLE DE LA RONDE — AJOUTEE LE 23 NOVEMBRE
+#
+# La ronde en demande quatre, et trois seulement avaient un instrument :
+#
+#     « Jamais de fatwa personnelle : on explique un principe, on ne
+#       tranche pas un cas. »
+#
+# ELLE N'EST PAS DANS `FAMILLES`, ET C'EST LE POINT IMPORTANT. Les trois
+# premieres sont des interdits ABSOLUS sur ce site : aucune surface ne doit
+# promettre un merite, nommer un recueil, attribuer une parole. Celle-ci est
+# CONDITIONNELLE — le site PEUT rapporter un interdit, a condition de montrer
+# qui l'enonce et ou. « Ce qui est interdit », avec le verset 2:173 cite
+# dessous, explique un principe ; la meme phrase sans le verset tranche un
+# cas. Mettre ces mots dans `FAMILLES` les ferait rougir partout, y compris
+# la ou ils sont legitimes : la regle ne vit donc pas dans le meme outil.
+#
+# CE QUI A ETE MESURE AVANT D'ECRIRE CETTE LISTE — 23 NOVEMBRE
+#
+# Sur les 20 808 champs des cartes, voix du site seulement : DIX touches.
+#   · six fois « est interdit », toutes dans le `surtitre` « Ce qui est
+#     interdit », et les six cartes citent le verset qui l'enonce, reference
+#     exacte et traduction attribuee. La regle etait tenue — par soin.
+#   · quatre fois « est nulle », TOUTES FAUSSES : la traduction de Hamidullah
+#     « Votre compagnon n'est nullement fou ». La frontiere de debut de mot
+#     laisse passer « nullement », comme elle laissait passer « couverture »
+#     le 19 novembre. `est nulle` est donc ECARTE.
+#
+# Sur les 4 028 morceaux de la voix du site des 63 pages : quinze touches.
+#   · treize fois « on peut », toutes dans « Tout ce qu'on peut travailler
+#     sur le site » — du francais ordinaire sur l'usage du site, pas une
+#     permission religieuse. `on peut` et `tu peux` sont donc ECARTES.
+#   · deux fois le libelle de theme « Ce qui est interdit », dont le verset
+#     vit dans la carte et pas sur la page.
+#
+# CE QUE CETTE REGLE NE COUVRE PAS, ET IL FAUT LE DIRE. Elle s'applique aux
+# CARTES, pas a la prose des pages : les deux seules occurrences des pages
+# sont des libelles de theme dont la source est dans la carte, et les faire
+# rougir serait un faux rouge. Une phrase normative ajoutee demain dans la
+# prose d'une page ne serait donc PAS attrapee. NON VERIFIE, et c'est ecrit.
+TRANCHANTES = (
+    # imposer
+    'il faut', 'il faudra', 'tu dois', 'vous devez', 'on doit',
+    'il est obligatoire', 'est obligatoire', 'obligation de',
+    'il est requis', 'tu es tenu', 'on est tenu',
+    # interdire
+    'il est interdit', 'est interdit', 'est illicite', 'il ne faut',
+    'tu ne dois', 'on ne doit', 'est haram', 'est un peche', 'defense de',
+    # permettre — sans « on peut » ni « tu peux », mesures faux
+    'il est permis', 'est permis', 'est licite', 'est halal',
+    'il est autorise',
+    # recommander
+    'il est recommande', 'est recommande', 'il est preferable',
+    'est preferable', 'il vaut mieux', 'il suffit de', 'est meritoire',
+    # juger une pratique — sans « est nulle » ni « ne compte pas », le
+    # premier mesure faux, le second est le registre du score du jeu
+    'est valide', 'est invalide', 'annule la priere', 'doit etre refait')
+
 # `(?:^| )` et pas `\b` : le texte arrive DEJA aplati — accents retires,
 # ponctuation remplacee par des espaces — donc un debut de mot y est toujours
 # le debut de la chaine ou un espace. `\b` serait vrai apres un chiffre, et
 # « 10vertu » n'est pas un mot francais.
 _DEBUTS = {mot: re.compile(r'(?:^| )' + re.escape(mot))
-           for _, mots in FAMILLES for mot in mots}
+           for mots in [m for _, m in FAMILLES] + [TRANCHANTES]
+           for mot in mots}
 
 
 def porte(plat, mot):
@@ -144,8 +203,21 @@ def porte(plat, mot):
 def touches(plat):
     """Chaque (famille, mot) que `plat` porte. La boucle des trois familles
     est ici pour qu'elle ne soit pas recopiee non plus.
+
+    Les mots de `TRANCHANTES` n'y sont PAS : leur regle est conditionnelle,
+    pas absolue. Voir `tranche` et la note au-dessus de la liste.
     """
     for famille, mots in FAMILLES:
         for mot in mots:
             if porte(plat, mot):
                 yield famille, mot
+
+
+def tranche(plat):
+    """Les tournures de `TRANCHANTES` que `plat` porte.
+
+    Rendre une liste et pas un booleen : un controle qui dit « cette carte
+    tranche » sans dire PAR QUEL MOT oblige a relire la carte entiere pour
+    comprendre, et on finit par ne plus la relire.
+    """
+    return [mot for mot in TRANCHANTES if porte(plat, mot)]

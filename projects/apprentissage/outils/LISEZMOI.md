@@ -946,6 +946,40 @@ fichier. Cohérent partout, **non vérifié** à la racine.
 *Un sens exact et non attribué reste une faute : ce n'est pas le texte qui est
 faux, c'est le site qui s'en donne l'autorité.*
 
+### On explique un principe, on ne tranche pas un cas — 23 novembre
+
+La règle de la ronde a quatre points ; trois avaient un contrôle. Le
+quatrième — « **jamais de fatwa personnelle** » — n'en avait aucun, et c'est
+celui dont les conséquences sont les plus lourdes.
+
+Quatre choses à ne pas défaire :
+
+1. **`TRANCHANTES` n'est PAS dans `FAMILLES`, et ce n'est pas un oubli.** Les
+   trois premières familles sont des interdits **absolus**. Celle-ci est
+   **conditionnelle** : le site peut rapporter un interdit s'il montre qui
+   l'énonce et où. « Ce qui est interdit » avec le verset 2:173 cité dessous
+   explique un principe ; la même phrase sans le verset tranche un cas. Mettre
+   ces mots dans `FAMILLES` les ferait rougir là où ils sont légitimes.
+2. **Le second critère n'est pas une tournure, c'est le texte** — on vérifie
+   que la citation de la carte se retrouve dans la traduction du verset que la
+   carte elle-même référence. Même instrument que la veille.
+3. **Deux mots ont été écartés sur mesure, et l'exclusion est prouvée
+   nécessaire.** `est nulle` attrape « n'est nullement fou » (Hamidullah),
+   comme `vertu` attrapait « couverture » ; `on peut` et `tu peux` attrapent
+   « tout ce qu'on peut travailler sur le site ». Remettre `est nulle` dans la
+   liste fait rougir du contenu réel et publié : essayé, mesuré, retiré.
+4. **La règle s'applique aux CARTES, pas à la prose des pages.** Les deux
+   occurrences des pages sont des libellés de thème dont le verset vit dans la
+   carte. Une phrase normative ajoutée demain dans la prose d'une page **ne
+   serait pas attrapée** — non vérifié, et mesuré propre aujourd'hui.
+
+**Mesure du 23 novembre** : 20 808 champs, 6 cartes emploient une tournure qui
+tranche, **0 sans montrer le verset**. La règle était tenue par soin ; elle
+l'est maintenant par contrôle.
+
+*Un interdit rapporté avec sa source enseigne. Le même interdit sans sa source
+fait du site une autorité qu'il n'est pas.*
+
 ### Ce que cette loi fait au levier 2
 
 Le levier 2 demande de multiplier les leçons de sourate, et le carnet en fait

@@ -1851,7 +1851,8 @@ def main():
 
     CHAMPS_TOUS = ('question', 'explication', 'source', 'divergence', 'surtitre')
     motifs_vus, champs_lus, sources_lues = 0, 0, 0
-    sens_montres, attributions_lues = 0, 0
+    sens_montres, attributions_lues, cartes_tranchantes = 0, 0, 0
+    tranchantes_nues = 0
     for sec in sorted(par_section):
         for q in par_section[sec]:
             src = nu(q.get('source'))
@@ -1871,11 +1872,22 @@ def main():
                         'site n\'en declare qu\'un : « %s ». Deux noms pour '
                         'une meme traduction, c\'est une source de moins.'
                         % (sec, q['id'], nomme.group(1).strip(), TRADUCTEUR))
+            # La carte tranche-t-elle, et dans quels mots ? Mesure faite sur
+            # la VOIX DU SITE : un verset qui interdit quelque chose est du
+            # texte cite, et il reste cite.
+            tranchants = []
+            for champ in CHAMPS_TOUS:
+                for val in [q.get(champ)] + (list(q.get('reponses') or [])
+                                             if champ == 'question' else []):
+                    if val is None or not str(val).strip():
+                        continue
+                    tranchants += REGLES.tranche(nu(voix_du_site(val)))
+
             ref = REF_VERSET.search(brut_src)
+            montre = False
             if ref:
                 verset = nu(francais.get((int(ref.group(1)),
                                           int(ref.group(2))), ''))
-                montre = False
                 for champ in CHAMPS_CITANTS:
                     for bout in CITATION.findall(str(q.get(champ) or '')):
                         aplati = nu(bout)
@@ -1884,17 +1896,37 @@ def main():
                             break
                     if montre:
                         break
-                if montre:
-                    sens_montres += 1
-                    if not nomme:
-                        fautes.append(
-                            '%s/%s : la carte AFFICHE la traduction du verset '
-                            '%s:%s et ne nomme aucun traducteur — un sens '
-                            's\'attribue, il ne s\'affirme pas au nom du '
-                            'site : « %s »'
-                            % (sec, q['id'], ref.group(1), ref.group(2),
-                               re.sub(r'\s+', ' ',
-                                      str(q.get('explication') or ''))[:70]))
+
+            # ---- ON EXPLIQUE UN PRINCIPE, ON NE TRANCHE PAS UN CAS ----
+            # La quatrieme regle de la ronde, qui n'avait aucun instrument
+            # jusqu'au 23 novembre. Elle est CONDITIONNELLE : rapporter un
+            # interdit est permis, a condition de montrer le verset qui
+            # l'enonce. Sans le verset, c'est le site qui tranche — au nom de
+            # Mohamed. La note au-dessus de `TRANCHANTES`, dans
+            # `regles-editoriales.py`, dit ce qui a ete mesure et ecarte.
+            if tranchants:
+                cartes_tranchantes += 1
+                if not montre:
+                    tranchantes_nues += 1
+                    fautes.append(
+                        '%s/%s : la carte TRANCHE en son nom (« %s ») et ne '
+                        'montre pas le verset qui l\'enonce — on explique un '
+                        'principe, on ne tranche pas un cas : « %s »'
+                        % (sec, q['id'], tranchants[0],
+                           re.sub(r'\s+', ' ',
+                                  str(q.get('explication') or ''))[:70]))
+
+            if montre:
+                sens_montres += 1
+                if not nomme:
+                    fautes.append(
+                        '%s/%s : la carte AFFICHE la traduction du verset '
+                        '%s:%s et ne nomme aucun traducteur — un sens '
+                        's\'attribue, il ne s\'affirme pas au nom du '
+                        'site : « %s »'
+                        % (sec, q['id'], ref.group(1), ref.group(2),
+                           re.sub(r'\s+', ' ',
+                                  str(q.get('explication') or ''))[:70]))
             for champ in CHAMPS_TOUS:
                 valeurs = [q.get(champ)]
                 if champ == 'question':
@@ -1954,6 +1986,13 @@ def main():
     print('  %d carte(s) affichent la traduction du verset qu elles citent, '
           '%d nomment un traducteur, et c est le seul que le site declare '
           '(« %s »).' % (sens_montres, attributions_lues, TRADUCTEUR))
+    # Le chiffre, pas un verdict : « toutes montrent le verset » est une
+    # phrase qui ne peut pas se taire, donc une phrase qui ne dit rien.
+    print('  %d carte(s) emploient une tournure qui tranche (%d '
+          'cherchees), dont %d sans montrer le verset qui l enonce — on '
+          'explique un principe, on ne tranche pas un cas.'
+          % (cartes_tranchantes, len(REGLES.TRANCHANTES),
+             tranchantes_nues))
 
     # ================================================================
     # CE QUE LE LECTEUR VOIT — AJOUTE LE 13 NOVEMBRE
