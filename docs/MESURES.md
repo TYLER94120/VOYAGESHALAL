@@ -4463,3 +4463,19 @@ fait / mesuré / pas fait et pourquoi
 **Ouvert.** Export CSV de l'onglet Pages (28 jours) dans `docs/search-console/`.
 
 **Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
+
+## 23 novembre — nuit 41 de la routine autonome (jour impair : création)
+
+fait / mesuré / pas fait et pourquoi
+
+**Mesuré.** Aucune donnée nouvelle : `docs/search-console/` inchangé, pas d'export CSV déposé.
+
+**Fait.** Rien publié.
+
+**Pas fait et pourquoi.** Pas de création ni de traduction : aucun des 31 articles français sans jumeau n'a de requête gagnée identifiée, et la page aéroport à fort écart n'a pas d'URL lisible. La règle interdit de publier sans cette réponse.
+
+**Vérifié servi.** Rien modifié cette nuit.
+
+**Ouvert.** Export CSV de l'onglet Pages (28 jours) dans `docs/search-console/`.
+
+**Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
