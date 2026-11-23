@@ -3084,3 +3084,9 @@ Rien de ce qui part en ligne n'a changé : les deux fichiers touchés sont sous
 
 Et le site reste injoignable depuis ce conteneur : **vérifié au dépôt, non
 vérifié en ligne** — les 51 cartes d'hier sont toujours fausses en ligne.
+
+### Le verdict des contrôles, écrit après la mesure
+
+**39 verts : 9 python, 30 navigateur, 0 rouge.** Les 30 tournaient encore à
+l'heure du commit, et son message le dit ainsi. **Neuvième nuit de suite** que
+l'ordre est respecté : la mesure, puis le chiffre.
