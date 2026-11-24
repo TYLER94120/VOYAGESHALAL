@@ -3199,3 +3199,14 @@ n'a changé. Remesuré : **143 modifiés, 72 en ligne, 71 au dépôt** — incha
 
 Et les 51 cartes du 22 novembre sont toujours fausses **en ligne** :
 **vérifié au dépôt, non vérifié en ligne.**
+
+### Le verdict des contrôles, écrit après la mesure
+
+**39 verts : 9 python, 30 navigateur, 0 rouge.** Les 30 tournaient encore à
+l'heure du commit, et son message le dit ainsi. **Dixième nuit de suite** que
+l'ordre est respecté : la mesure, puis le chiffre.
+
+**Et une ligne du message de ce commit fait 80 caractères au lieu de 79.** Je
+l'ai vue après le push. Je ne réécris pas de l'historique publié pour un
+caractère : la correction coûterait plus que le défaut. C'est écrit ici plutôt
+que caché.
