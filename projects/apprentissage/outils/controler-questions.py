@@ -118,6 +118,39 @@ FAMILLES = REGLES.FAMILLES
 porte = REGLES.porte
 touches = REGLES.touches
 
+# Les champs d'une carte qui ne sont PAS de la prose. Liste de ce qu'on
+# ECARTE, parce qu'une liste de ce qu'on lit devient aveugle le jour ou un
+# generateur ajoute un champ — la lecon du 18 novembre, qui etait ecrite dans
+# ce fichier et pas appliquee a ses propres cartes. `arabe`, `surligne` et
+# `glyphe` portent du texte coranique ou des lettres isolees : les juger
+# serait juger le Coran et non la voix du site. `id`, `section` et `type` sont
+# des codes. Les entiers ne sont pas des chaines, `textes_du_bloc` ne les rend
+# pas, et il n'y a donc rien a en dire ici.
+CHAMPS_MACHINE = ('id', 'section', 'type', 'arabe', 'surligne', 'glyphe')
+
+
+def textes_du_bloc(valeur, chemin=''):
+    """Chaque valeur de TEXTE d'une structure, avec le chemin de son champ.
+
+    On descend dans les objets et les listes, a n'importe quelle profondeur.
+    Ecrit le 18 novembre pour les blocs `ld+json` — schema.org autorise les
+    deux formes, et `educationalLevel` est deja une chaine sur 42 pages et
+    une liste sur 18. Passe au niveau module le 24 novembre, quand les CARTES
+    ont eu besoin du meme parcours : une carte porte 17 champs, dont un
+    dictionnaire.
+    """
+    if isinstance(valeur, dict):
+        for cle, v in valeur.items():
+            for x in textes_du_bloc(v, chemin + '.' + cle if chemin else cle):
+                yield x
+    elif isinstance(valeur, list):
+        for v in valeur:
+            for x in textes_du_bloc(v, chemin + '[]'):
+                yield x
+    elif isinstance(valeur, str):
+        yield chemin, valeur
+
+
 SOURCE_CORAN = re.compile(r'Coran, sourate (\d+), verset (\d+)')
 
 # Les classes qui portent du texte CITE sur une page : le verset arabe, la
@@ -1534,11 +1567,36 @@ def main():
         v = re.sub(r'Le verset entier\s*:.*', ' ', v, flags=re.S)
         return v
 
+    # DEUX CHAMPS SUR DIX-SEPT, JUSQU'AU 24 NOVEMBRE
+    #
+    # Ce bloc ne lisait que `question` et `explication`. Une carte en porte
+    # dix-sept champs, et quatre d'entre eux s'affichent a qui apprend :
+    # `theme`, `surtitre`, `source`, `divergence`. Un « Les bienfaits de
+    # l'invocation du matin » ecrit dans un `theme` passait donc devant la
+    # famille que la ronde place le plus haut, sur la plus grande surface du
+    # site. Mesure : en lisant tous les champs sauf ceux dits ci-dessous,
+    # 5 014 champs deviennent 12 676, et les fautes restent a ZERO.
+    #
+    # MAIS `reponses` RESTE ECARTE, ET C'EST MESURE. La note ci-dessus prevoit
+    # le piege ; voici son chiffre pour aujourd'hui : en incluant les
+    # reponses, ce controle rend 238 FAUTES, toutes fausses. Dans une question
+    # « quelle est la traduction de ce verset ? », les quatre propositions
+    # SONT des traductions de Hamidullah — « O mon Seigneur ! […] exauce ma
+    # priere » porte `exauce`, et ce n'est pas le site qui promet. Un controle
+    # qui crie au loup 238 fois est un controle qu'on desactive.
+    #
+    # Les trois autres familles, elles, lisent bien `reponses` : un nom de
+    # recueil est une faute ou qu'il soit, meme entre guillemets. Les deux
+    # portees sont differentes PARCE QUE les regles sont differentes.
+    CHAMPS_CITANTS_CARTE = ('reponses',)
     champs_voix = 0
     for sec in sorted(par_section):
         for q in par_section[sec]:
-            for champ in ('question', 'explication'):
-                v = voix_du_site(q.get(champ))
+            for champ, val in textes_du_bloc(q):
+                base = champ.split('.')[0].replace('[]', '')
+                if base in CHAMPS_MACHINE or base in CHAMPS_CITANTS_CARTE:
+                    continue
+                v = voix_du_site(val)
                 if not v.strip():
                     continue
                 champs_voix += 1
@@ -1849,10 +1907,34 @@ def main():
     NOMME = re.compile(r'Traduction du sens\s*:\s*([^.]*)\.')
     CHAMPS_CITANTS = ('explication', 'question', 'divergence')
 
-    CHAMPS_TOUS = ('question', 'explication', 'source', 'divergence', 'surtitre')
+    # ---- CE QU'UNE CARTE DIT, ET QUI N'ETAIT PAS LU — 24 NOVEMBRE ----
+    #
+    # `CHAMPS_TOUS` etait une LISTE BLANCHE de cinq champs. Une carte en porte
+    # DIX-SEPT. C'est exactement la faute que la note du 18 novembre dit de ne
+    # pas commettre — « un champ ajoute demain par un generateur serait muet
+    # le jour de son ajout » — et elle etait ici, dans le meme fichier, sur la
+    # surface la plus lue du site.
+    #
+    # MESURE DU 24 NOVEMBRE, avant de changer quoi que ce soit : 2 720 valeurs
+    # de texte que ces cinq champs ne lisaient pas, dont les 2 616 `theme` —
+    # 25 libelles francais distincts, affiches sur les pages de section et
+    # dans le corrige. Les trois familles sur ces 2 720 valeurs : ZERO touche.
+    # Rien ne s'y cachait. Mais six d'entre elles portent une tournure qui
+    # tranche, et c'est ce qui a mis le trou en evidence : la regle d'hier
+    # soir voyait SIX cartes la ou le libelle existe sur douze champs. Ce sont
+    # les memes six cartes — elles portent « Ce qui est interdit » DEUX fois,
+    # en `surtitre` et en `theme` — donc le compte ne bouge pas. Le trou etait
+    # reel et sans consequence aujourd'hui : les deux se disent.
+    #
+    # ON ECARTE DONC, ET ON LIT LE RESTE. `arabe`, `surligne` et `glyphe`
+    # portent du texte CORANIQUE ou des lettres isolees : les juger serait
+    # juger le Coran, pas la voix du site. `id`, `section` et `type` sont des
+    # codes. Les entiers (`difficulte`, `bonne`, `niveau`) ne sont pas des
+    # chaines et `textes_du_bloc` ne les rend pas.
     motifs_vus, champs_lus, sources_lues = 0, 0, 0
     sens_montres, attributions_lues, cartes_tranchantes = 0, 0, 0
     tranchantes_nues = 0
+    libelles_cartes = set()
     for sec in sorted(par_section):
         for q in par_section[sec]:
             src = nu(q.get('source'))
@@ -1876,12 +1958,18 @@ def main():
             # la VOIX DU SITE : un verset qui interdit quelque chose est du
             # texte cite, et il reste cite.
             tranchants = []
-            for champ in CHAMPS_TOUS:
-                for val in [q.get(champ)] + (list(q.get('reponses') or [])
-                                             if champ == 'question' else []):
-                    if val is None or not str(val).strip():
-                        continue
-                    tranchants += REGLES.tranche(nu(voix_du_site(val)))
+            for champ, val in textes_du_bloc(q):
+                if champ.split('.')[0].replace('[]', '') in CHAMPS_MACHINE:
+                    continue
+                if not val.strip():
+                    continue
+                tranchants += REGLES.tranche(nu(voix_du_site(val)))
+                # Les libelles que les banques portent, pour la prose des
+                # pages, plus bas : une page qui affiche un libelle de theme
+                # n'enonce rien, elle nomme un chapitre — et la carte derriere
+                # ce libelle est tenue par la regle juste au-dessus.
+                if champ in ('surtitre', 'theme'):
+                    libelles_cartes.add(nu(val))
 
             ref = REF_VERSET.search(brut_src)
             montre = False
@@ -1927,37 +2015,35 @@ def main():
                         % (sec, q['id'], ref.group(1), ref.group(2),
                            re.sub(r'\s+', ' ',
                                   str(q.get('explication') or ''))[:70]))
-            for champ in CHAMPS_TOUS:
-                valeurs = [q.get(champ)]
-                if champ == 'question':
-                    valeurs += list(q.get('reponses') or [])
-                for val in valeurs:
-                    if val is None or not str(val).strip():
-                        continue
-                    champs_lus += 1
-                    # Un nom de recueil est une faute OU QU'IL SOIT, meme
-                    # entre guillemets : rien dans le Coran ne le porte.
-                    plat = nu(val)
-                    for mot in RECUEILS:
-                        if porte(plat, mot):
-                            motifs_vus += 1
-                            fautes.append(
-                                '%s/%s : un recueil de hadith est cite (%s, '
-                                'champ %s) — le projet n\'a aucune traduction '
-                                'francaise sourcee de ces recueils : « %s »'
-                                % (sec, q['id'], mot, champ,
-                                   re.sub(r'\s+', ' ', str(val)).strip()[:70]))
-                    # Une attribution, elle, ne se juge que sur la voix du
-                    # site : « Dis: » et « Prophete » sont du texte cite.
-                    plat_voix = nu(voix_du_site(val))
-                    for mot in ATTRIBUTIONS:
-                        if porte(plat_voix, mot):
-                            motifs_vus += 1
-                            fautes.append(
-                                '%s/%s : le site attribue une parole en son '
-                                'nom (%s, champ %s) — « %s »'
-                                % (sec, q['id'], mot, champ,
-                                   re.sub(r'\s+', ' ', str(val)).strip()[:70]))
+            for champ, val in textes_du_bloc(q):
+                if champ.split('.')[0].replace('[]', '') in CHAMPS_MACHINE:
+                    continue
+                if not val.strip():
+                    continue
+                champs_lus += 1
+                # Un nom de recueil est une faute OU QU'IL SOIT, meme
+                # entre guillemets : rien dans le Coran ne le porte.
+                plat = nu(val)
+                for mot in RECUEILS:
+                    if porte(plat, mot):
+                        motifs_vus += 1
+                        fautes.append(
+                            '%s/%s : un recueil de hadith est cite (%s, '
+                            'champ %s) — le projet n\'a aucune traduction '
+                            'francaise sourcee de ces recueils : « %s »'
+                            % (sec, q['id'], mot, champ,
+                               re.sub(r'\s+', ' ', str(val)).strip()[:70]))
+                # Une attribution, elle, ne se juge que sur la voix du
+                # site : « Dis: » et « Prophete » sont du texte cite.
+                plat_voix = nu(voix_du_site(val))
+                for mot in ATTRIBUTIONS:
+                    if porte(plat_voix, mot):
+                        motifs_vus += 1
+                        fautes.append(
+                            '%s/%s : le site attribue une parole en son '
+                            'nom (%s, champ %s) — « %s »'
+                            % (sec, q['id'], mot, champ,
+                               re.sub(r'\s+', ' ', str(val)).strip()[:70]))
 
     # CES TROIS LIGNES DISENT CE QUI A ETE MESURE, PAS UN VERDICT.
     # Premier jet : « Dans aucune section la longueur de la bonne reponse ne
@@ -2188,6 +2274,8 @@ def main():
     pages = sorted(RACINE.glob('*.html'))
     morceaux_pages = 0
     promesses_pages = 0
+    tranchants_pages = 0
+    tranchants_pages_nus = 0
     noms_dits = []
     for page in pages:
         v = VoixDeLaPage()
@@ -2211,6 +2299,39 @@ def main():
                     'ici : « %s »'
                     % (page.name, fam, mot, bal, cls,
                        re.sub(r'\s+', ' ', propre).strip()[:70]))
+
+            # ---- ET LA PROSE DES PAGES TRANCHE-T-ELLE ? — 24 NOVEMBRE ----
+            #
+            # Hier soir, la quatrieme regle a ete posee sur les cartes et PAS
+            # sur les pages, avec cette raison ecrite : les deux seules
+            # occurrences des pages sont des libelles de theme dont le verset
+            # vit dans la carte, et les faire rougir serait un faux rouge. Le
+            # trou etait donc NOMME, et il restait un trou.
+            #
+            # Il se ferme sans exception a la main : l'exemption est TIREE DES
+            # DONNEES. Une tournure qui tranche dans la prose d'une page est
+            # une faute SAUF si ce texte est, mot pour mot, un libelle que les
+            # banques portent — et dans ce cas la carte derriere ce libelle est
+            # deja tenue par la regle du dessus.
+            #
+            # Mesure du 24 novembre : 132 libelles distincts dans les banques,
+            # UN SEUL porte une tournure qui tranche (« Ce qui est interdit »),
+            # et les deux occurrences des pages sont exactement celui-la, dans
+            # un `<span class="pastille">`. Zero tournure non couverte. Une
+            # phrase normative ecrite demain dans la prose d'une page ne
+            # ressemblera a aucun libelle : elle rougira.
+            mots_tranchants = REGLES.tranche(plat)
+            if mots_tranchants:
+                tranchants_pages += 1
+                if plat not in libelles_cartes:
+                    tranchants_pages_nus += 1
+                    fautes.append(
+                        '%s : la page TRANCHE en son nom (« %s », dans <%s '
+                        'class="%s">) et ce texte n\'est pas un libelle des '
+                        'banques — on explique un principe, on ne tranche '
+                        'pas un cas : « %s »'
+                        % (page.name, mots_tranchants[0], bal, cls,
+                           re.sub(r'\s+', ' ', propre).strip()[:70]))
 
     # ---- CE QUE LES PAGES DISENT A GOOGLE ---------------------------
     #
@@ -2276,24 +2397,8 @@ def main():
                     re.S)
     LD_MACHINE = ('@context', '@type', 'url', 'inLanguage')
 
-    def textes_du_bloc(valeur, chemin=''):
-        """Les valeurs de TEXTE du bloc, avec le chemin de leur champ.
-
-        On descend dans les objets et les listes : schema.org autorise les
-        deux a n'importe quelle profondeur, et `educationalLevel` est deja
-        une chaine sur 42 pages et une liste sur 18.
-        """
-        if isinstance(valeur, dict):
-            for cle, v in valeur.items():
-                for x in textes_du_bloc(v, chemin + '.' + cle if chemin
-                                        else cle):
-                    yield x
-        elif isinstance(valeur, list):
-            for v in valeur:
-                for x in textes_du_bloc(v, chemin + '[]'):
-                    yield x
-        elif isinstance(valeur, str):
-            yield chemin, valeur
+    # `textes_du_bloc` est passe au niveau module le 24 novembre : les cartes
+    # s'en servent aussi, et deux copies d'un meme parcours divergent.
     CANON = re.compile(r'<link[^>]*rel="canonical"[^>]*href="([^"]*)"')
     META_D = re.compile(r'<meta\s+name="description"\s+content="([^"]*)"')
     OG_D = re.compile(r'<meta[^>]*property="og:description"[^>]*'
@@ -2572,6 +2677,10 @@ def main():
     print('  %d pages relues, %d morceaux de la voix du site, %d promesse(s) '
           'ou attribution(s).'
           % (len(pages), morceaux_pages, promesses_pages))
+    print('  %d morceau(x) de la prose des pages emploient une tournure '
+          'qui tranche, dont %d qui ne sont pas un libelle des banques — '
+          'le trou nomme hier soir est ferme, et par les donnees.'
+          % (tranchants_pages, tranchants_pages_nus))
     print('  %d bloc(s) ld+json confrontes au canonical et a la meta '
           'description, %d page(s) sans bloc.'
           % (blocs_ld, len(pages_sans_ld)))

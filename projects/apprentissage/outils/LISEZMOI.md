@@ -980,6 +980,41 @@ l'est maintenant par contrôle.
 *Un interdit rapporté avec sa source enseigne. Le même interdit sans sa source
 fait du site une autorité qu'il n'est pas.*
 
+### Cinq champs sur dix-sept, et deux pour les mérites — 24 novembre
+
+La note du 18 novembre dit de ne jamais faire de liste blanche : « un champ
+ajouté demain par un générateur serait muet le jour de son ajout ». **Elle
+était dans ce fichier, et elle n'était pas appliquée aux cartes elles-mêmes.**
+
+| | champs lus | après |
+|---|---|---|
+| recueils, attributions, tournures qui tranchent | 5 | **17** |
+| **promesses de mérite** | **2** | **15** |
+
+Quatre choses à ne pas défaire :
+
+1. **`CHAMPS_MACHINE` est au niveau module, et c'est une liste de ce qu'on
+   ÉCARTE.** `arabe`, `surligne`, `glyphe` portent du texte coranique ou des
+   lettres isolées — les juger serait juger le Coran ; `id`, `section`, `type`
+   sont des codes. Tout le reste est lu, y compris un champ ajouté demain.
+2. **`reponses` reste écarté POUR LES MÉRITES, et seulement pour elles.**
+   Mesure du 24 novembre : en l'incluant, ce contrôle rend **238 fautes,
+   toutes fausses** — les quatre propositions d'une question « quelle est la
+   traduction ? » SONT des traductions de Hamidullah, et « exauce ma prière »
+   n'est pas le site qui promet. Les trois autres familles lisent `reponses` :
+   un nom de recueil est une faute où qu'il soit. **Deux portées différentes
+   parce que deux règles différentes** — ce n'est pas une incohérence.
+3. **`textes_du_bloc` est au niveau module.** Écrit pour les blocs `ld+json`,
+   il sert aux cartes depuis ce soir : une carte porte dix-sept champs, dont un
+   dictionnaire. Deux copies d'un même parcours divergent.
+4. **La prose des pages est couverte, et par les DONNÉES.** Une tournure qui
+   tranche y est une faute sauf si le texte est, mot pour mot, un libellé que
+   les banques portent — la carte derrière ce libellé étant déjà tenue. 132
+   libellés, un seul tranche. Pas une liste d'exceptions : une jointure.
+
+*Dénoncer une liste blanche dans un commentaire et en garder deux dans le même
+fichier, c'est ce que fait un garde-fou posé sur un seul chemin.*
+
 ### Ce que cette loi fait au levier 2
 
 Le levier 2 demande de multiplier les leçons de sourate, et le carnet en fait

@@ -372,6 +372,26 @@ supprime parmi eux. DEUX fichiers ont ete AJOUTES depuis `59e67ae`, et
 ligne de 69 a 70, et `outils/coran/LISEZMOI.md` le 22 novembre, qui la fait
 passer a 71.
 
+**Note du 24 novembre.** Les fichiers touches RESTENT TOUS AU DEPOT —
+`outils/controler-questions.py`, `outils/LISEZMOI.md`,
+`docs/POUR-LE-CARNET.md` et ce fichier-ci, les quatre deja dans les 71.
+Remesure : **143 fichiers modifies, 72 en ligne, 71 au depot. INCHANGE.** Ce
+qui a change : `controler-questions.py` lisait les cartes par LISTE BLANCHE.
+Cinq champs sur dix-sept pour les recueils, les attributions et les tournures
+qui tranchent ; DEUX sur dix-sept pour les promesses de merite, la famille que
+la ronde place le plus haut. Un « Les bienfaits de l'invocation du matin »
+ecrit dans le champ `theme` — affiche sur la page de section et dans le
+corrige — passait devant elle. Les deux listes blanches sont devenues une
+liste de ce qu'on ECARTE, au niveau module : 20 808 champs relus deviennent
+23 528, et 5 014 deviennent 12 676. ZERO faute dans les 2 720 valeurs qui
+n'etaient pas lues. `reponses` reste ecarte pour les seules promesses de
+merite, et c'est mesure : en l'incluant, 238 fautes, toutes fausses, parce que
+les propositions d'une question « quelle est la traduction ? » SONT des
+traductions de Hamidullah. Le trou nomme hier soir — la prose des pages — est
+ferme par les donnees : une tournure qui tranche y est une faute sauf si le
+texte est un libelle que les banques portent. Quatre sabotages, dont un qui
+doit rester vert ; les deux sabotages sur `theme` etaient VERTS avant ce soir.
+
 **Note du 23 novembre.** Les fichiers touches RESTENT TOUS AU DEPOT —
 `outils/regles-editoriales.py`, `outils/controler-questions.py`,
 `outils/LISEZMOI.md`, `docs/POUR-LE-CARNET.md` et ce fichier-ci, les cinq

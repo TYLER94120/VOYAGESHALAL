@@ -24,7 +24,7 @@ lu par personne et entrerait en conflit à la première fusion.
 
 ## À COLLER DANS LE CARNET, À PARTIR D'ICI
 
-# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 23 NOVEMBRE 2026
+# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 24 NOVEMBRE 2026
 
 > **Comment lire cette note.** Son corps a été écrit le 14 octobre. Chaque
 > ajout porte sa date, et **une mesure datée ne se rafraîchit pas : elle se
@@ -3090,3 +3090,112 @@ vérifié en ligne** — les 51 cartes d'hier sont toujours fausses en ligne.
 **39 verts : 9 python, 30 navigateur, 0 rouge.** Les 30 tournaient encore à
 l'heure du commit, et son message le dit ainsi. **Neuvième nuit de suite** que
 l'ordre est respecté : la mesure, puis le chiffre.
+
+---
+
+## LE 24 NOVEMBRE — LA LISTE BLANCHE QUE J'AVAIS DÉNONCÉE ÉTAIT ICI MÊME
+
+### Les deux leviers, remesurés d'abord
+
+`docs/MESURES.md` relu sur `origin/main` : dernière modification le
+**17 octobre**, relevé toujours celui du **21 août**. **Dixième nuit sans
+requêtes.** Titres servis inchangés et dans les règles ; `LOT` ne bouge pas.
+
+**`main` A BOUGÉ, et il ne faut pas se tromper sur la raison.** Il passe de
+`f1623ba` à `7bf5158f` — **un seul commit, de `github-actions[bot]`**, sur
+`data/dates-contenu.json` **à la racine du dépôt**, c'est-à-dire le site
+voyageshalal et pas le mien. Aucune promotion, aucun relevé neuf, rien qui
+touche `projects/apprentissage/`. Je le dis parce qu'un `main` qui bouge après
+dix nuits ressemble à une bonne nouvelle, et ce n'en est pas une.
+
+### Je venais de fermer un trou en en nommant un autre
+
+Hier soir, j'ai posé la quatrième règle sur les cartes et **pas** sur la prose
+des pages, en écrivant pourquoi : les deux occurrences des pages sont des
+libellés de thème dont le verset vit dans la carte. C'était un trou **nommé**,
+donc un trou. Je suis allé le fermer.
+
+**Il se ferme sans exception à la main.** L'exemption est tirée des données :
+une tournure qui tranche dans la prose d'une page est une faute **sauf si ce
+texte est, mot pour mot, un libellé que les banques portent** — et dans ce cas
+la carte derrière ce libellé est déjà tenue par la règle d'hier.
+
+Mesure : **132 libellés distincts dans les banques, un seul porte une tournure
+qui tranche** (« Ce qui est interdit »), et les deux occurrences des pages sont
+exactement celui-là. **Zéro tournure non couverte.**
+
+### Et en mesurant ça, j'ai trouvé pire
+
+Les banques portent ce libellé sur **douze** champs, alors que la règle d'hier
+voyait **six** cartes. L'écart avait une cause : le champ **`theme` n'était lu
+par personne.**
+
+`CHAMPS_TOUS` était une **liste blanche de cinq champs**. Une carte en porte
+**dix-sept**. C'est mot pour mot la faute que la note du 18 novembre dit de ne
+pas commettre — « *un champ ajouté demain par un générateur serait muet le jour
+de son ajout* » — et elle était **dans le même fichier**, sur la plus grande
+surface du site.
+
+| | champs lus | après |
+|---|---|---|
+| recueils de hadith, attributions, tournures qui tranchent | 5 | **17** |
+| **promesses de mérite** | **2** | **15** |
+
+**Le pire était la famille que la ronde place le plus haut.** Le bloc des
+mérites ne lisait que `question` et `explication`. Un « Les bienfaits de
+l'invocation du matin » écrit dans un `theme` — affiché sur la page de section
+et dans le corrigé — passait devant elle sans rien déclencher.
+
+    champs relus, trois familles      20 808  →  23 528
+    champs relus, promesses de mérite  5 014  →  12 676
+    fautes trouvées                        0  →   0
+
+**Zéro faute dans les 2 720 valeurs qui n'étaient pas lues.** Rien ne s'y
+cachait. Le trou était réel et sans conséquence aujourd'hui, et les six cartes
+qui tranchent sont les mêmes qu'hier : elles portent « Ce qui est interdit »
+**deux fois**, en `surtitre` et en `theme`.
+
+### `reponses` reste écarté pour les mérites, et c'est mesuré
+
+La note du 15 octobre prévoyait le piège ; voici son chiffre pour aujourd'hui.
+En incluant les réponses, le contrôle des mérites rend **238 FAUTES, toutes
+fausses** : dans une question « quelle est la traduction de ce verset ? », les
+quatre propositions **sont** des traductions de Hamidullah — « Ô mon Seigneur !
+[…] **exauce** ma prière » porte `exauce`, et ce n'est pas le site qui promet.
+
+**Les trois autres familles, elles, lisent bien `reponses`** : un nom de
+recueil est une faute où qu'il soit, même entre guillemets. **Les deux portées
+sont différentes parce que les règles sont différentes** — ce n'est pas une
+incohérence, et c'est maintenant écrit à côté des deux.
+
+### Quatre sabotages, dont un qui doit rester vert
+
+    une phrase normative dans la prose de plus.html   sortie 1
+    un `theme` qui tranche, sur une carte sans verset  sortie 1
+    un `theme` qui promet un mérite                    sortie 1
+    « Ce qui est interdit » dans la prose de plus.html SORTIE 0 — RESTE VERT
+
+Les deux sabotages sur `theme` **étaient verts avant ce soir** : c'est la
+meilleure preuve que le champ n'était pas lu.
+
+**Et le vert est le plus instructif** : la même tournure, au même endroit de la
+même page, passe quand le texte est un libellé des banques et rougit quand il
+n'en est pas un. C'est la règle conditionnelle qui fonctionne, pas une liste
+d'exceptions.
+
+**Un sabotage mal visé, encore une fois, et la leçon se répète.** J'avais
+d'abord planté le `theme` normatif dans `les-invocations` : vert — non pas
+parce que la règle est cassée, mais parce que cette carte **cite son verset**,
+donc la règle conditionnelle est satisfaite. Reposé sur `lire-l-arabe`, dont
+les cartes portent sur l'alphabet et ne citent aucun verset : rouge. **Pour
+tester une règle conditionnelle, il faut choisir un cas où la condition ne peut
+pas être remplie.**
+
+### Ce que je n'ai pas fait, et pourquoi
+
+Aucune page neuve, aucune leçon, aucun titre, aucune correction de contenu —
+les 2 720 valeurs nouvellement lues sont propres. Rien de ce qui part en ligne
+n'a changé. Remesuré : **143 modifiés, 72 en ligne, 71 au dépôt** — inchangé.
+
+Et les 51 cartes du 22 novembre sont toujours fausses **en ligne** :
+**vérifié au dépôt, non vérifié en ligne.**
