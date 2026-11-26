@@ -359,10 +359,10 @@ Ce qu'un `publier.py` enverrait, compte entre `59e67ae` et la branche :
 |---|---|
 | pages (`.html`) | 53 |
 | donnees (`data/`) | 12 |
-| JavaScript | 4 |
+| JavaScript | 5 |
 | CSS | 2 |
 | sitemap | 1 |
-| **total en ligne** | **72** |
+| **total en ligne** | **73** |
 | restent au depot (`outils/`, `.md`) | 71 |
 
 Les 72 qui partent sont TOUS des modifications : aucun fichier ajoute, aucun
@@ -371,6 +371,28 @@ supprime parmi eux. DEUX fichiers ont ete AJOUTES depuis `59e67ae`, et
 `outils/regles-editoriales.py` le 19 novembre, qui a fait passer la seconde
 ligne de 69 a 70, et `outils/coran/LISEZMOI.md` le 22 novembre, qui la fait
 passer a 71.
+
+**Note du 26 novembre.** UN FICHIER QUI PART EN LIGNE A CHANGE : `js/qcm.js`,
+qui n'avait pas bouge depuis la publication du 29 septembre. La file passe
+donc de 72 a **73 en ligne** — c'est le cinquieme fichier de `js/` a entrer
+dedans — et le tableau ci-dessus est corrige en consequence ;
+`controler-sections.py` l'a refuse avant moi, ce qui est exactement son
+travail. Au depot : 71, inchange. Remesure : **144 fichiers modifies, 73 en
+ligne, 71 au depot.**
+
+Ce qui a change : `js/qcm.js` ecrivait, au-dessus de son annonce vocale, « ce
+qui est annonce a une synthese vocale dit la meme chose, et dans le meme
+ordre, que ce qui est ecrit sur la feuille ». C'ETAIT FAUX. La feuille ecrit
+l'explication, la divergence, PUIS la source ; l'annonce s'arretait a
+l'explication. Or 121 des 1 769 cartes qui montrent la traduction de leur
+verset portent la formule « Traduction du sens : « … » » dans leur explication
+SANS nommer personne — le nom vit dans `q.source`, affiche a l'ecran juste en
+dessous. Qui regardait lisait l'attribution ; QUI ECOUTAIT entendait un sens
+sans son traducteur. Mesure faite en jouant une question dans un vrai
+navigateur, pas sur le code. L'annonce porte desormais la source, et la
+divergence dans l'ordre de la feuille. `controler-lecture-ecran.mjs` l'exige
+en comparant deux choses de la MEME page — l'annonce et le bloc `.f-source` —
+donc sans recopier le nom du traducteur nulle part.
 
 **Note du 24 novembre.** Les fichiers touches RESTENT TOUS AU DEPOT —
 `outils/controler-questions.py`, `outils/LISEZMOI.md`,

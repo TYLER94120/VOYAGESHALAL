@@ -24,7 +24,7 @@ lu par personne et entrerait en conflit à la première fusion.
 
 ## À COLLER DANS LE CARNET, À PARTIR D'ICI
 
-# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 24 NOVEMBRE 2026
+# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 26 NOVEMBRE 2026
 
 > **Comment lire cette note.** Son corps a été écrit le 14 octobre. Chaque
 > ajout porte sa date, et **une mesure datée ne se rafraîchit pas : elle se
@@ -3210,3 +3210,106 @@ l'ordre est respecté : la mesure, puis le chiffre.
 l'ai vue après le push. Je ne réécris pas de l'historique publié pour un
 caractère : la correction coûterait plus que le défaut. C'est écrit ici plutôt
 que caché.
+
+---
+
+## LE 25 NOVEMBRE — RONDE INTERROMPUE, ET IL FAUT LE DIRE
+
+La ronde du 25 a tourné et **n'a rien produit** : le processus de la session a
+redémarré pendant une sonde, et la soirée s'est arrêtée là. **Aucun commit,
+aucun compte rendu.** Ce qu'elle avait mesuré avant de s'interrompre est
+repris ci-dessous, parce qu'une mesure perdue est une mesure à refaire :
+
+- **`main` n'avait pas bougé**, relevé toujours celui du 21 août.
+- **Le rendu des 63 pages dans un vrai navigateur** : 4 573 morceaux de texte
+  affiché, dont **112 ne figurent pas dans le HTML servi** — ils naissent à
+  l'exécution. **Zéro touche** des trois familles, **zéro** tournure qui
+  tranche. Ce sont des compteurs et des libellés : « 10 branches », « 1 174
+  questions », « L'objectif du jour ». Leurs sources — littéraux de `js/`,
+  valeurs de `data/` — sont déjà relues depuis le 19 et le 20 novembre ; seuls
+  les assemblages « nombre + nom » sont neufs. **Surface mesurée, écartée pour
+  l'instant, et la raison est écrite.**
+- **La chaîne des chiffres est déjà fermée** : `controler-index.py`
+  reconfronte l'index aux banques (compte, identifiants un à un, thèmes,
+  niveaux) et `controler-meme-chiffre.mjs` vérifie que trois écrans annoncent
+  le même nombre. Aucun chiffre affiché n'est annoncé : il est compté.
+
+---
+
+## LE 26 NOVEMBRE — « DIT LA MÊME CHOSE QUE LA FEUILLE » ÉTAIT FAUX
+
+### Les deux leviers, remesurés d'abord
+
+Relevé toujours celui du **21 août** : **douzième nuit sans requêtes.** `main`
+immobile depuis le commit du robot. Titres servis inchangés, `LOT` ne bouge
+pas.
+
+### Ce que j'ai trouvé, en finissant la sonde de la veille
+
+`js/qcm.js` porte cette phrase au-dessus de son annonce vocale :
+
+> « Ce qui est annoncé à une synthèse vocale dit la même chose, et dans le même
+> ordre, que ce qui est écrit sur la feuille. »
+
+**C'était faux.** La feuille écrit l'explication, puis la divergence, **puis la
+source**. L'annonce s'arrêtait à l'explication.
+
+Et ça compte, parce que l'attribution vit dans `q.source` :
+
+| | cartes |
+|---|---|
+| montrent la traduction de leur verset | 1 769 |
+| dont l'explication nomme Hamidullah | 1 648 |
+| **dont l'explication ne nomme personne** | **121** |
+
+Ces 121 portent la formule d'attribution du site — « Traduction du sens :
+« … » » — **tronquée, sans le nom**. À l'écran, le bloc `.f-source` juste en
+dessous répare. **Dans l'annonce, rien ne réparait.**
+
+**Mesuré en jouant une question dans un vrai navigateur, pas sur le code.**
+L'écran recevait « Coran, sourate 91, verset 11. Traduction du sens : Muhammad
+Hamidullah. » ; l'annonce s'arrêtait avant. La règle de la ronde — **un sens
+s'attribue** — tenait pour l'œil et pas pour l'oreille.
+
+### Ce qui a changé
+
+L'annonce dit maintenant ce que la feuille dit, **dans son ordre** :
+explication, divergence, source. La divergence y entre alors qu'elle est vide
+sur les 2 616 cartes — le jour où une carte la portera, « les savants
+divergent » est précisément ce qu'il ne faut pas taire à qui ne voit pas
+l'écran.
+
+**`js/qcm.js` part en ligne**, et il n'avait pas bougé depuis la publication du
+29 septembre : la file passe de **72 à 73 en ligne**.
+
+### Le contrôle ne recopie pas le nom du traducteur
+
+`controler-lecture-ecran.mjs` gagne un septième point, et il compare **deux
+choses de la même page** : ce que l'annonce dit, et ce que le bloc `.f-source`
+affiche. Pas de constante à tenir d'accord, donc rien qui puisse dériver — la
+leçon du 19 novembre.
+
+### Deux sabotages
+
+    l'annonce privée de la source       sortie 1
+    l'annonce privée de la divergence   SORTIE 0 — et c'est une information
+
+Le second est vert **parce que le champ `divergence` est vide sur les 2 616
+cartes** : le contrôle ne peut pas le voir aujourd'hui. Ce n'est pas un défaut
+du contrôle, c'est un trou **nommé** — vérifié pour la source, **non vérifié**
+pour la divergence, jusqu'à ce qu'une carte en porte une.
+
+### Et `controler-sections.py` m'a refusé le lot avant moi
+
+La table de publication de `DEPLOIEMENT.md` annonçait encore 72 en ligne quand
+`git` en comptait 73. **Le contrôle a rougi, et c'est son travail** :
+c'est cette table qu'on lit pour décider d'une publication. Corrigée — 5
+fichiers JavaScript au lieu de 4, total 73.
+
+### Ce que je n'ai pas fait, et pourquoi
+
+Aucune page neuve, aucune leçon, aucun titre. Remesuré : **144 modifiés, 73 en
+ligne, 71 au dépôt.**
+
+Et les 51 cartes du 22 novembre sont toujours fausses **en ligne**, comme cette
+annonce : **vérifié au dépôt, non vérifié en ligne.**

@@ -26,7 +26,10 @@
        choisit porte `aria-pressed="true"`, les autres `false`. C'est ce qui
        dit a qui ecoute CE QU'IL VIENT DE CHOISIR, avant de valider ;
     6. apres validation, la zone `#qcm-annonce` (`aria-live="polite"`,
-       `role="status"`) annonce le verdict, et pas une chaine vide.
+       `role="status"`) annonce le verdict, et pas une chaine vide ;
+    7. cette annonce DIT LA SOURCE que la feuille affiche — sans quoi un sens
+       est annonce sans son traducteur a qui ne voit pas l'ecran. Ajoute le
+       26 novembre ; le detail est a l'endroit du controle.
 
    CE QU'IL A TROUVE, LE 16 OCTOBRE
    --------------------------------
@@ -184,6 +187,37 @@ if (!annonce) {
 } else if (!/bonne réponse|réponse fausse/i.test(annonce)) {
   rate('l\'annonce ne dit pas si la reponse etait juste', annonce.slice(0, 70));
 } else { ok('le verdict est annonce', annonce.slice(0, 58) + '…'); }
+
+/* 7. L'ANNONCE DIT-ELLE LA SOURCE QUE L'ECRAN MONTRE ? — 26 NOVEMBRE
+
+   `js/qcm.js` ecrivait, au-dessus de son annonce : « Ce qui est annonce a
+   une synthese vocale dit la meme chose, et dans le meme ordre, que ce qui
+   est ecrit sur la feuille. » C'etait faux. La feuille ecrit l'explication,
+   la divergence, PUIS la source ; l'annonce s'arretait a l'explication.
+
+   Or 121 des 1 769 cartes qui montrent la traduction de leur verset portent
+   « Traduction du sens : « … » » dans leur explication SANS nommer personne :
+   le nom vit dans `q.source`. Qui regardait l'ecran le lisait ; qui ecoutait
+   la page entendait un sens sans son traducteur. La regle de la ronde — « un
+   sens s'attribue » — tenait pour l'oeil et pas pour l'oreille.
+
+   ON NE RECOPIE PAS LE NOM ICI. Le controle compare deux choses de la MEME
+   page : ce que l'annonce dit, et ce que le bloc `.f-source` affiche. Pas de
+   constante a tenir d'accord, donc rien qui puisse deriver — la lecon du
+   19 novembre sur les deux copies d'une meme regle. */
+const source = (await p.evaluate(() => {
+  const e = document.querySelector('.f-source');
+  return e ? (e.textContent || '').trim() : '';
+})) || '';
+const aplatir = (s) => s.replace(/\s+/g, ' ').replace(/ /g, ' ').trim();
+if (!source) {
+  rate('la feuille n\'affiche aucune source apres validation');
+} else if (!aplatir(annonce).includes(aplatir(source))) {
+  rate('l\'annonce ne dit pas la source que l\'ecran montre : un sens '
+    + 'annonce sans son traducteur', aplatir(source).slice(0, 56));
+} else {
+  ok('l\'annonce porte la source affichee', aplatir(source).slice(0, 52));
+}
 
 await nav.close();
 console.log(ec === 0 ? '\nVERT' : `\nROUGE (${ec})`);

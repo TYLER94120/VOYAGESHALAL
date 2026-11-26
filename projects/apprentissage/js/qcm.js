@@ -719,10 +719,29 @@ Jeu.prototype.corriger = function (q, juste, revient) {
   this.figer(true);
   // Ce qui est annonce a une synthese vocale dit la meme chose, et dans le
   // meme ordre, que ce qui est ecrit sur la feuille.
-  this.dire(juste
-    ? 'Bonne réponse. ' + q.explication
-    : 'Réponse fausse. La bonne réponse : ' + q.reponses[q.bonne] + '. '
-      + q.explication);
+  //
+  // CETTE PHRASE ETAIT FAUSSE JUSQU'AU 26 NOVEMBRE. La feuille ecrit
+  // l'explication, puis la divergence, PUIS LA SOURCE. L'annonce s'arretait a
+  // l'explication. Or 121 des 1 769 cartes qui montrent la traduction de leur
+  // verset portent la formule « Traduction du sens : « … » » dans leur
+  // explication SANS nommer personne — le nom est dans `q.source`, que
+  // l'ecran affiche juste en dessous et que l'annonce taisait. Mesure du
+  // 26 novembre, en jouant une question dans un vrai navigateur : l'ecran
+  // recevait « Coran, sourate 91, verset 11. Traduction du sens : Muhammad
+  // Hamidullah. », et qui ECOUTE n'avait que la traduction, sans son
+  // traducteur. La regle de la ronde — « un sens s'attribue » — tenait pour
+  // l'oeil et pas pour l'oreille.
+  //
+  // La divergence y entre aussi, et dans l'ordre de la feuille : elle est
+  // vide sur les 2 616 cartes d'aujourd'hui, mais le jour ou une carte la
+  // portera, « les savants divergent » est precisement ce qu'il ne faut pas
+  // taire a qui ne voit pas l'ecran.
+  this.dire((juste
+    ? 'Bonne réponse. '
+    : 'Réponse fausse. La bonne réponse : ' + q.reponses[q.bonne] + '. ')
+    + q.explication
+    + (q.divergence ? ' Les savants divergent : ' + q.divergence : '')
+    + ' ' + q.source);
 
   $('f-suite').addEventListener('click', function () { self.continuer(); });
   $('f-suite').focus();

@@ -1015,6 +1015,40 @@ Quatre choses à ne pas défaire :
 *Dénoncer une liste blanche dans un commentaire et en garder deux dans le même
 fichier, c'est ce que fait un garde-fou posé sur un seul chemin.*
 
+### L'annonce vocale ne disait pas la source — 26 novembre
+
+`js/qcm.js` écrivait, au-dessus de son annonce : « ce qui est annoncé à une
+synthèse vocale dit la même chose, et dans le même ordre, que ce qui est écrit
+sur la feuille ». **C'était faux** : la feuille écrit l'explication, la
+divergence, **puis la source**, et l'annonce s'arrêtait à l'explication.
+
+**121 des 1 769 cartes** qui montrent la traduction de leur verset portent la
+formule « Traduction du sens : « … » » dans leur explication **sans nommer
+personne** — le nom vit dans `q.source`. Qui regardait l'écran lisait
+l'attribution ; qui écoutait la page entendait un sens sans son traducteur.
+
+Trois choses à ne pas défaire :
+
+1. **L'annonce suit l'ordre de la feuille** : explication, divergence, source.
+   La divergence y est alors qu'elle est vide partout — le jour où une carte
+   la portera, « les savants divergent » est ce qu'il ne faut pas taire à qui
+   ne voit pas l'écran.
+2. **Le contrôle ne recopie PAS le nom du traducteur.** Point 7 de
+   `controler-lecture-ecran.mjs` : il compare l'annonce au bloc `.f-source`
+   **de la même page**. Pas de constante à tenir d'accord, donc rien qui
+   puisse dériver.
+3. **Ça s'est mesuré dans un navigateur, en jouant une question**, pas sur le
+   code. Le code disait qu'il disait la même chose ; seule l'exécution l'a
+   démenti.
+
+**Et un trou nommé :** le sabotage qui retire la divergence de l'annonce reste
+**vert**, parce que le champ est vide sur les 2 616 cartes. Vérifié pour la
+source, **non vérifié** pour la divergence.
+
+*Un commentaire qui affirme une propriété n'est pas la propriété. Celui-ci
+l'affirmait depuis des mois, et c'est le seul endroit où personne n'avait
+regardé.*
+
 ### Ce que cette loi fait au levier 2
 
 Le levier 2 demande de multiplier les leçons de sourate, et le carnet en fait
