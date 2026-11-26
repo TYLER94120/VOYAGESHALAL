@@ -4511,3 +4511,19 @@ fait / mesuré / pas fait et pourquoi
 **Ouvert.** Export CSV de l'onglet Pages (28 jours) dans `docs/search-console/`.
 
 **Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
+
+## 26 novembre — nuit 44 de la routine autonome (jour pair : approfondissement)
+
+fait / mesuré / pas fait et pourquoi
+
+**Mesuré.** Aucune donnée nouvelle : `docs/search-console/` inchangé, pas d'export CSV déposé.
+
+**Fait.** Rien modifié cette nuit.
+
+**Pas fait et pourquoi.** Aucun écart prouvé à présenter : la page aéroport à fort écart n'a pas d'URL lisible, donc je ne sais pas quel article améliorer.
+
+**Vérifié servi.** Rien publié.
+
+**Ouvert.** Export CSV de l'onglet Pages (28 jours) dans `docs/search-console/`.
+
+**Interdits respectés.** Aucune fusion, aucun push sur `main`, aucune dépense.
