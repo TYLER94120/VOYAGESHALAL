@@ -3313,3 +3313,13 @@ ligne, 71 au dépôt.**
 
 Et les 51 cartes du 22 novembre sont toujours fausses **en ligne**, comme cette
 annonce : **vérifié au dépôt, non vérifié en ligne.**
+
+### Le verdict des contrôles, écrit après la mesure
+
+**39 verts : 9 python, 30 navigateur, 0 rouge.** Les 30 tournaient encore à
+l'heure du commit, et son message le dit ainsi. **Onzième ronde de suite** que
+l'ordre est respecté : la mesure, puis le chiffre.
+
+Et ce soir les 30 ont relu un `js/qcm.js` modifié **et** un
+`controler-lecture-ecran.mjs` d'un point plus long : le changement qui part en
+ligne a traversé toute la suite, pas seulement le contrôle qui l'exige.
