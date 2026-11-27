@@ -3415,3 +3415,13 @@ carte déborde déjà de 164 px avec elle. Le glissement est assumé depuis le
 
 Les 51 cartes du 22 novembre et l'annonce d'hier sont toujours fausses **en
 ligne** : **vérifié au dépôt, non vérifié en ligne.**
+
+### Le verdict des contrôles, écrit après la mesure
+
+**39 verts : 9 python, 30 navigateur, 0 rouge.** Les 30 tournaient encore à
+l'heure du commit, et son message le dit ainsi.
+
+**Et la fixture a été vérifiée absente du commit**, pas seulement retirée : les
+2 616 cartes portent **zéro** divergence, et le commit ne touche que quatre
+fichiers, aucun sous `data/`. Une répétition générale qui laisse son décor sur
+scène aurait planté un faux avis religieux dans les banques.
