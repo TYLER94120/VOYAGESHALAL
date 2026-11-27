@@ -1049,6 +1049,34 @@ source, **non vérifié** pour la divergence.
 l'affirmait depuis des mois, et c'est le seul endroit où personne n'avait
 regardé.*
 
+### Le champ `divergence` et son chemin jamais parcouru — 27 novembre
+
+Il est vide sur les 2 616 cartes, et ses trois chemins d'affichage — feuille
+du QCM, corrigé, annonce vocale — **n'avaient jamais vu de contenu**. C'est le
+champ qui servira quand les écoles divergent, donc quand les enjeux seront les
+plus hauts.
+
+Trois choses à ne pas défaire :
+
+1. **Le point 7 nomme TROIS blocs**, pas un : l'annonce doit contenir chaque
+   bloc que la feuille affiche — `.f-texte`, `.f-divergence`, `.f-source`. La
+   première version ne comparait que la source, et ne pouvait donc pas voir la
+   divergence. Nommer les blocs la couvre le jour où une carte en portera une,
+   sans que personne y repense.
+2. **La répétition générale a été faite, et elle passe** : divergence plantée
+   à la main, l'écran l'affiche, l'annonce la dit dans l'ordre de la feuille,
+   aucune erreur javascript. Mesuré à 320 × 568 — et **la carte déborde**,
+   606 px pour 442 disponibles.
+3. **Un sabotage doit être posé LÀ OÙ LE CONTRÔLE REGARDE.** Premier essai :
+   divergence plantée dans `le-comportement`, vert dans les deux sens, parce
+   que `controler-lecture-ecran.mjs` joue `sens-des-sourates`. C'est la ligne
+   de bilan — « `.f-texte .f-source` », sans `.f-divergence` — qui l'a dit.
+   Replanté sur les 611 cartes de la bonne section : les deux sabotages
+   rougissent en nommant le bloc manquant.
+
+*Un chemin de code qui n'a jamais tourné n'est pas du code qui marche : c'est
+du code dont personne ne sait rien.*
+
 ### Ce que cette loi fait au levier 2
 
 Le levier 2 demande de multiplier les leçons de sourate, et le carnet en fait

@@ -24,7 +24,7 @@ lu par personne et entrerait en conflit à la première fusion.
 
 ## À COLLER DANS LE CARNET, À PARTIR D'ICI
 
-# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 26 NOVEMBRE 2026
+# 📖 islampasapas.fr — RONDES DU 26 SEPTEMBRE AU 27 NOVEMBRE 2026
 
 > **Comment lire cette note.** Son corps a été écrit le 14 octobre. Chaque
 > ajout porte sa date, et **une mesure datée ne se rafraîchit pas : elle se
@@ -3323,3 +3323,95 @@ l'ordre est respecté : la mesure, puis le chiffre.
 Et ce soir les 30 ont relu un `js/qcm.js` modifié **et** un
 `controler-lecture-ecran.mjs` d'un point plus long : le changement qui part en
 ligne a traversé toute la suite, pas seulement le contrôle qui l'exige.
+
+---
+
+## LE 27 NOVEMBRE — RÉPÉTITION GÉNÉRALE DU CHAMP QUI N'A JAMAIS SERVI
+
+### Les deux leviers, remesurés d'abord
+
+Relevé toujours celui du **21 août** : **treizième nuit sans requêtes.** `main`
+immobile. Titres servis inchangés, `LOT` ne bouge pas.
+
+### Deux affirmations vérifiées, et rien à corriger
+
+J'ai cherché ce que le code affirme de lui-même sans que personne le mesure —
+c'est ce qui a donné la trouvaille d'hier.
+
+- **`js/qcm.js` : « LA CARTE DOIT TENIR ENTIÈRE, TOUJOURS. »** Le bloc en
+  dessous nuance déjà, et avec ses chiffres : descendre à 0,80 donnait du
+  texte de 11,6 px sur un écran de 360 px *et* laissait 48 % de cartes à faire
+  glisser, donc « on garde un corps lisible et **on assume le glissement** ».
+  L'affirmation est un titre, pas une promesse tenue en silence. **Rien à
+  corriger.**
+- **La taille du texte en px.** Remesuré ce soir : **102 `font-size` en px,
+  dont 27 à 12 px ou moins, zéro en rem** — *exactement* les chiffres du
+  5 octobre. **Aucune dérive en sept semaines.** Et la raison du report tient
+  toujours : passer en rem ne suffirait pas, il faudrait refondre la façon
+  dont une carte répond à un débordement.
+
+  **Je me corrige** : j'avais compté **107** en première lecture. Mon filtre
+  attrapait les cinq `calc(33px * var(--echelle))`, c'est-à-dire précisément
+  les tailles qui suivent l'échelle. C'est **102**.
+
+### Le champ `divergence` n'avait jamais tourné
+
+Il est vide sur les **2 616 cartes**. Son chemin d'affichage existe depuis des
+mois — feuille du QCM, corrigé — et son annonce vocale depuis hier soir.
+**Aucun de ces trois chemins n'avait jamais vu de contenu.** Or c'est le champ
+qui servira exactement quand les enjeux seront les plus hauts : quand les
+écoles divergent.
+
+J'ai donc fait la répétition, avec un texte de remplissage **neutre** — aucun
+avis religieux n'est inventé ici, et rien de ce qui a été planté n'est commis.
+
+**Ce que ça donne, mesuré à 320 × 568 :**
+
+| | résultat |
+|---|---|
+| `.f-divergence` à l'écran | « Les savants divergent : … » ✅ |
+| l'annonce vocale la dit | ✅ dans l'ordre de la feuille |
+| erreurs javascript | aucune |
+| la carte tient entière | **non** — 606 px pour 442 disponibles |
+
+Le chemin fonctionne. **Et le changement d'hier soir est vérifié avec du
+contenu réel pour la première fois** : hier, le sabotage qui retirait la
+divergence de l'annonce restait vert faute de contenu.
+
+### Mon sabotage ne prouvait rien, et c'est la sortie qui l'a dit
+
+Premier essai : divergence plantée dans `le-comportement`, contrôle vert
+**dans les deux sens**. La ligne du contrôle disait pourquoi —
+`.f-texte .f-source`, **pas de `.f-divergence`**. Or
+`controler-lecture-ecran.mjs` joue `sens-des-sourates` : il n'a jamais croisé
+ma carte. Replanté sur les 611 cartes de la bonne section — le paquet étant
+mélangé, celle qui sort la porte forcément — les deux sabotages rougissent, et
+**en nommant le bloc manquant** :
+
+    l'annonce privée de la divergence   ROUGE  (.f-divergence)
+    l'annonce privée de la source       ROUGE  (.f-source)
+
+**Une ligne de bilan qui nomme ce qu'elle a vu vaut mieux qu'un verdict.**
+C'est elle qui a montré que mon dispositif était faux, pas moi.
+
+### Le contrôle nomme trois blocs au lieu d'un
+
+Point 7 élargi : l'annonce doit contenir **chaque** bloc que la feuille
+affiche — `.f-texte`, `.f-divergence`, `.f-source`. Toujours sans recopier
+quoi que ce soit : il compare deux choses de la **même page**. Le jour où une
+carte portera une divergence, le contrôle la couvrira **sans que personne y
+repense**.
+
+### Ce que je n'ai pas fait, et pourquoi
+
+Aucune page neuve, aucune leçon, aucun titre, **aucune correction de
+contenu** : les deux affirmations que j'ai vérifiées tenaient déjà. Rien de ce
+qui part en ligne n'a changé — le seul fichier touché est sous `outils/`.
+Remesuré : **144 modifiés, 73 en ligne, 71 au dépôt**, inchangé.
+
+⚠️ **Et une chose à savoir avant d'écrire une divergence** : à 320 px, la
+carte déborde déjà de 164 px avec elle. Le glissement est assumé depuis le
+5 octobre, mais une divergence l'allonge encore.
+
+Les 51 cartes du 22 novembre et l'annonce d'hier sont toujours fausses **en
+ligne** : **vérifié au dépôt, non vérifié en ligne.**

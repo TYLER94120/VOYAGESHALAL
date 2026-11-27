@@ -372,6 +372,25 @@ supprime parmi eux. DEUX fichiers ont ete AJOUTES depuis `59e67ae`, et
 ligne de 69 a 70, et `outils/coran/LISEZMOI.md` le 22 novembre, qui la fait
 passer a 71.
 
+**Note du 27 novembre.** Les fichiers touches RESTENT TOUS AU DEPOT —
+`outils/controles/controler-lecture-ecran.mjs`, `outils/LISEZMOI.md`,
+`docs/POUR-LE-CARNET.md` et ce fichier-ci, les quatre deja dans les 71.
+Remesure : **144 fichiers modifies, 73 en ligne, 71 au depot. INCHANGE.** Ce
+qui a change : le point 7 ajoute hier ne comparait que `.f-source`. Il nomme
+desormais TROIS blocs — `.f-texte`, `.f-divergence`, `.f-source` — pour que
+l'annonce vocale soit tenue de dire tout ce que la feuille affiche. Le champ
+`divergence` est vide sur les 2 616 cartes, donc ce controle ne pouvait pas le
+voir ; repetition generale faite ce soir avec une divergence plantee a la main
+sur les 611 cartes de la section que le controle joue : l'ecran l'affiche,
+l'annonce la dit, aucune erreur javascript, et les deux sabotages rougissent
+en nommant le bloc manquant. A savoir avant d'ecrire une vraie divergence : a
+320 px, la carte deborde de 164 px avec elle. Rien plante n'est commis.
+
+Deux affirmations du code ont ete verifiees et tenaient deja : « la carte doit
+tenir entiere, toujours » (nuancee et chiffree juste en dessous d'elle-meme) et
+la taille du texte en px — **102 `font-size`, dont 27 a 12 px ou moins, zero en
+rem, exactement les chiffres du 5 octobre, aucune derive.**
+
 **Note du 26 novembre.** UN FICHIER QUI PART EN LIGNE A CHANGE : `js/qcm.js`,
 qui n'avait pas bouge depuis la publication du 29 septembre. La file passe
 donc de 72 a **73 en ligne** — c'est le cinquieme fichier de `js/` a entrer

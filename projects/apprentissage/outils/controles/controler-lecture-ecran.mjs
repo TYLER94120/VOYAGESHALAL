@@ -201,22 +201,45 @@ if (!annonce) {
    la page entendait un sens sans son traducteur. La regle de la ronde — « un
    sens s'attribue » — tenait pour l'oeil et pas pour l'oreille.
 
-   ON NE RECOPIE PAS LE NOM ICI. Le controle compare deux choses de la MEME
-   page : ce que l'annonce dit, et ce que le bloc `.f-source` affiche. Pas de
+   ON NE RECOPIE RIEN ICI. Le controle compare deux choses de la MEME page :
+   ce que l'annonce dit, et ce que les blocs de la feuille affichent. Pas de
    constante a tenir d'accord, donc rien qui puisse deriver — la lecon du
-   19 novembre sur les deux copies d'une meme regle. */
-const source = (await p.evaluate(() => {
-  const e = document.querySelector('.f-source');
-  return e ? (e.textContent || '').trim() : '';
-})) || '';
+   19 novembre sur les deux copies d'une meme regle.
+
+   TROIS BLOCS, PAS UN — ELARGI LE 27 NOVEMBRE. La premiere version ne
+   comparait que `.f-source`. Or la feuille porte aussi `.f-divergence`,
+   « Les savants divergent : … », et c'est le bloc qui servira exactement
+   quand les enjeux seront les plus hauts. Il est vide sur les 2 616 cartes,
+   donc ce controle ne pouvait pas le voir : en nommant les blocs au lieu d'un
+   seul, il le couvre le jour ou une carte en portera un, sans que personne y
+   repense. Repetition generale du 27 novembre, divergence plantee a la main
+   dans une carte : l'ecran l'affiche, l'annonce la dit, et la retirer de
+   l'annonce fait bien rougir ce controle. */
+const blocs = await p.evaluate(() => {
+  const lire = (s) => {
+    const e = document.querySelector(s);
+    return e ? (e.textContent || '').trim() : null;
+  };
+  return { '.f-texte': lire('.f-texte'),
+    '.f-divergence': lire('.f-divergence'),
+    '.f-source': lire('.f-source') };
+});
 const aplatir = (s) => s.replace(/\s+/g, ' ').replace(/ /g, ' ').trim();
-if (!source) {
+if (!blocs['.f-source']) {
   rate('la feuille n\'affiche aucune source apres validation');
-} else if (!aplatir(annonce).includes(aplatir(source))) {
-  rate('l\'annonce ne dit pas la source que l\'ecran montre : un sens '
-    + 'annonce sans son traducteur', aplatir(source).slice(0, 56));
 } else {
-  ok('l\'annonce porte la source affichee', aplatir(source).slice(0, 52));
+  const vus = Object.entries(blocs).filter(([, v]) => v);
+  const manquants = vus
+    .filter(([, v]) => !aplatir(annonce).includes(aplatir(v)))
+    .map(([k]) => k);
+  if (manquants.length) {
+    rate('l\'annonce ne dit pas tout ce que l\'ecran montre ('
+      + manquants.join(', ') + ') : un sens annonce sans ce qui l\'encadre',
+    aplatir(blocs[manquants[0]]).slice(0, 52));
+  } else {
+    ok('l\'annonce porte chaque bloc affiche',
+      vus.map(([k]) => k).join(' '));
+  }
 }
 
 await nav.close();
